@@ -36,6 +36,12 @@ You should initialize this with a phone number string. This method returns `nil`
 
 - `string`: A string value with which to initializes the phone number object.
 
+## See Also
+
+### Creating a Phone Number Object
+- [+ phoneNumberWithStringValue:](./phonenumberwithstringvalue_.md)
+  Returns a new phone number object initialized with the specified phone number string.
+
 
 ---
 

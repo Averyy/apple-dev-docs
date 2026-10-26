@@ -45,6 +45,10 @@ Use this property to retrieve the settings if your vehicle supports saving named
   The profile index from which to restore the settings.
 - [var profileLabel: String?](./profilelabel.md)
   The name assigned to the profile.
+- [defaultProfile](./defaultprofile-4ztep.md)
+  A Boolean value indicating whether to make the profile the default profile.
+- [profileNumber](./profilenumber-50f30.md)
+  The profile index from which to restore the settings.
 
 
 ---

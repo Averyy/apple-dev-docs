@@ -27,6 +27,7 @@ TKSmartCardPINConfirmationCurrent
 
 ### Type Properties
 - [static var new: TKSmartCardUserInteractionForSecurePINChange.Confirmation](./new.md)
+- [TKSmartCardPINConfirmationNone](../../tksmartcardpinconfirmation/tksmartcardpinconfirmationnone.md)
 
 
 ---

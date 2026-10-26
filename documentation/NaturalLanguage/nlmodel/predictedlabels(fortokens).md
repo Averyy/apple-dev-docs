@@ -42,6 +42,10 @@ The model’s predicted labels for each of the input strings.
   Predicts multiple possible labels for the given input string.
 - [func predictedLabelHypotheses(forTokens: [String], maximumCount: Int) -> [[String : Double]]](./predictedlabelhypotheses%28fortokens,maximumcount%29.md)
   Predicts multiple possible labels for each string in the given array.
+- [- predictedLabelHypothesesForString:maximumCount:](./predictedlabelhypothesesforstring_maximumcount_.md)
+  Predicts multiple possible labels for the given input string.
+- [- predictedLabelHypothesesForTokens:maximumCount:](./predictedlabelhypothesesfortokens_maximumcount_.md)
+  Predicts multiple possible labels for each string in the given array.
 
 
 ---

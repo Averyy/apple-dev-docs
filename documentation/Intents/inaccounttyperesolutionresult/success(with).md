@@ -40,6 +40,8 @@ Use this method to create a result object when you are able to resolve the accou
 ### Creating a Resolution Result Object
 - [class func confirmationRequired(with: INAccountType) -> Self](./confirmationrequired%28with%29.md)
   Creates an object whose resolution requires that the user must confirm the value before proceeding.
+- [+ successWithResolvedValue:](./successwithresolvedvalue_.md)
+- [+ confirmationRequiredWithValueToConfirm:](./confirmationrequiredwithvaluetoconfirm_.md)
 
 
 ---

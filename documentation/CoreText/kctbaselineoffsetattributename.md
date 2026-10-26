@@ -66,6 +66,9 @@ The baseline offset attribute indicates how many points the characters should be
   The glyph info object to apply to the text associated with this attribute.
 - [let kCTRunDelegateAttributeName: CFString](./kctrundelegateattributename.md)
   The run-delegate object to apply to an attribute range of the string.
+### Related Documentation
+- [NSBaselineOffsetAttributeName](../UIKit/nsbaselineoffsetattributename.md)
+  The vertical offset for the position of the text.
 
 
 ---

@@ -36,6 +36,11 @@ When there are no exception handlers in the exception handler stack, unless the 
   Creates and raises an exception with the specified name, reason, and arguments.
 - [init(name: NSExceptionName, reason: String?, userInfo: [AnyHashable : Any]?)](./init%28name,reason,userinfo%29.md)
   Initializes and returns a newly allocated exception object.
+- [+ exceptionWithName:reason:userInfo:](./exceptionwithname_reason_userinfo_.md)
+  Creates and returns an exception object .
+### Related Documentation
+- [+ raise:format:](./raise_format_.md)
+  A convenience method that creates and raises an exception.
 
 
 ---

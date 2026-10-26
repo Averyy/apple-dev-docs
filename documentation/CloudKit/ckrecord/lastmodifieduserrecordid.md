@@ -49,6 +49,8 @@ Use this property’s value to retrieve the user record of the user who most rec
   The server change token for the record.
 - [CKRecord.ID](./id.md)
   An object that uniquely identifies a record in a database.
+- [recordType](./recordtype-9s09b.md)
+  The value that your app defines to identify the type of record.
 
 
 ---

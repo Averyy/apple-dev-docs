@@ -28,6 +28,8 @@ typedef struct IOServiceInterestContent {
 ### Instance Properties
 - [var messageArgument: UnsafeMutableRawPointer?](./ioserviceinterestcontent/api-1455538-messageargument.md)
 - [var messageType: natural_t](./ioserviceinterestcontent/api-1455584-messagetype.md)
+- [messageArgument](./ioserviceinterestcontent/api-1425178-messageargument.md)
+- [messageType](./ioserviceinterestcontent/api-1425239-messagetype.md)
 
 
 ---

@@ -59,6 +59,10 @@ method_setImplementation(m2, imp1);
   Returns a method description structure for a specified method.
 - [func method_setImplementation(Method, IMP) -> IMP](./method_setimplementation%28_,_%29.md)
   Sets the implementation of a method.
+- [method_invoke](./method_invoke.md)
+  Calls the implementation of a specified method.
+- [method_invoke_stret](./method_invoke_stret.md)
+  Calls the implementation of a specified method that returns a data-structure.
 
 
 ---

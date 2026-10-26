@@ -74,6 +74,11 @@ class GKGameActivityDefinition
 ### Loading leaderboards
 - [func loadLeaderboards(completionHandler: ([GKLeaderboard]?, (any Error)?) -> Void)](./gkgameactivitydefinition/loadleaderboards%28completionhandler%29.md)
   Loads all associated leaderboards that have defined deep links to this game activity definition.
+### Instance Properties
+- [maxPlayers](./gkgameactivitydefinition/maxplayers.md)
+  The maximum number of participants that can join the activity. Returns nil when no maximum is set (unlimited players) or when player range is undefined. When not nil, the value is always greater than or equal to `minPlayers`.
+- [minPlayers](./gkgameactivitydefinition/minplayers.md)
+  The minimum number of participants that can join the activity.
 
 ## Relationships
 

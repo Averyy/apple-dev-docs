@@ -32,6 +32,8 @@ An initialized [`NSPDFImageRep`](../nspdfimagerep.md) object, or `nil` if the ob
 ### Related Documentation
 - [var pdfRepresentation: Data](./pdfrepresentation.md)
   The PDF representation of the representation’s image.
+- [+ imageRepWithData:](./imagerepwithdata_.md)
+  Creates and returns a representation of an image initialized with the specified PDF data.
 
 
 ---

@@ -32,6 +32,12 @@ For applications to use the lock, `path` must be accessible to—and writable by
 
 - `path`: All of `path` up to the last component itself must exist. You can use [`FileManager`](../filemanager.md) to create (and set permissions) for any nonexistent intermediate directories.
 
+## See Also
+
+### Related Documentation
+- [+ lockWithPath:](./lockwithpath_.md)
+  Returns an `NSDistributedLock` object initialized to use as the locking object the file-system entry specified by a given path.
+
 
 ---
 

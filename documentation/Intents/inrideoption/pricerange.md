@@ -53,6 +53,8 @@ If the [`usesMeteredFare`](./usesmeteredfare-25g1c.md) property is [`true`](../.
   A Boolean value indicating whether the price uses a metered fare instead of a fixed price.
 - [var fareLineItems: [INRideFareLineItem]?](./farelineitems.md)
   An array of price-related items that break down the costs of the ride.
+- [usesMeteredFare](./usesmeteredfare-25g1c.md)
+  A Boolean value indicating whether the price uses a metered fare instead of a fixed price.
 
 
 ---

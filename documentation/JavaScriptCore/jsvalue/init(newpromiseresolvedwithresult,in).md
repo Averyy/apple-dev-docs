@@ -76,6 +76,12 @@ This method is equivalent to calling the following:
   Creates a JavaScript representation of the specified rectangle.
 - [init!(size: CGSize, inContext: JSContext!)](./init%28size,incontext%29.md)
   Creates a JavaScript representation of the specified width and height.
+- [+ valueWithNewSymbolFromDescription:inContext:](./init%28newsymbolfromdescription,in%29.md)
+  Creates a unique symbol object.
+- [+ valueWithNewPromiseInContext:fromExecutor:](./init%28newpromisein,fromexecutor%29.md)
+  Creates a promise object using the specified executor callback.
+- [+ valueWithNewPromiseRejectedWithReason:inContext:](./init%28newpromiserejectedwithreason,in%29.md)
+  Creates a rejected promise object with the specified value.
 
 
 ---

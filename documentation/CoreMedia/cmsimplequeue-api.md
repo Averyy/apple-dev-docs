@@ -34,6 +34,8 @@ You can reset a simple queue, which returns it to its newly created state, with 
   Returns the number of elements that the queue can hold.
 - [func CMSimpleQueueGetCount(CMSimpleQueue) -> Int32](./cmsimplequeuegetcount%28_%29.md)
   Returns the number of elements currently in the queue.
+- [CMSimpleQueueGetFullness](./cmsimplequeuegetfullness.md)
+  A convenience macro that returns a queue’s fullness as a percentage of its capacity.
 ### Accessing the Type Identifier
 - [func CMSimpleQueueGetTypeID() -> CFTypeID](./cmsimplequeuegettypeid%28%29.md)
   Returns the type identifier of sample buffer objects.

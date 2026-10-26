@@ -51,6 +51,10 @@ builder.insertSibling(refreshMenuItem, beforeMenu: .close)
   Creates a command from data in an unarchiver.
 - [Adding menus and shortcuts to the menu bar and user interface](./adding-menus-and-shortcuts-to-the-menu-bar-and-user-interface.md)
   Provide quick access to useful actions by adding menus and keyboard shortcuts to your Mac app built with Mac Catalyst.
+- [+ commandWithTitle:image:action:propertyList:](./uicommand/commandwithtitle_image_action_propertylist_.md)
+  Creates a command with the specified title, image, action, and property list.
+- [+ commandWithTitle:image:action:propertyList:alternates:](./uicommand/commandwithtitle_image_action_propertylist_alternates_.md)
+  Creates a command with the specified title, image, action, property list, and alternative commands.
 ### Getting information about the command
 - [var title: String](./uicommand/title.md)
   The command’s title.

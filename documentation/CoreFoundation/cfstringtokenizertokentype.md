@@ -44,6 +44,8 @@ See [http://www.unicode.org/reports/tr29/#Word_Boundaries](http://www.unicode.or
   Contains punctuation, symbols, and so on.
 - [static var isCJWordMask: CFStringTokenizerTokenType](./cfstringtokenizertokentype/iscjwordmask.md)
   Contains kana and/or ideographs.
+- [kCFStringTokenizerTokenNone](./cfstringtokenizertokentype/kcfstringtokenizertokennone.md)
+  Has no token.
 ### Initializers
 - [init(rawValue: CFOptionFlags)](./cfstringtokenizertokentype/init%28rawvalue%29.md)
 

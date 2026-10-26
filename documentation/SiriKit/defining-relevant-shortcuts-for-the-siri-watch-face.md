@@ -18,7 +18,7 @@ An iOS app can set relevant shortcuts and display them on the Siri watch face, w
 
 ##### Create a Relevant Shortcut
 
-To let Siri know about relevant shortcuts for your app, start by creating an [`INIntent`](https://developer.apple.com/documentation/intents/inintent) with a system-provided or custom intent, or an [`NSUserActivity`](../Foundation/nsuseractivity.md) object for each action. Next, create an [`INShortcutReference`](https://developer.apple.com/documentation/intents/inshortcutreference) object for each intent and user activity. Use the shortcut to create an [`INRelevantShortcutRole`](https://developer.apple.com/documentation/intents/inrelevantshortcutrole) object, and set the [`shortcutRole`](https://developer.apple.com/documentation/intents/inrelevantshortcut/shortcutrole) to provide a hint to Siri as to the purpose of the shortcut: to perform an action or display information.
+To let Siri know about relevant shortcuts for your app, start by creating an [`INIntent`](../Intents/inintent.md) with a system-provided or custom intent, or an [`NSUserActivity`](../Foundation/nsuseractivity.md) object for each action. Next, create an [`INShortcutReference`](../Intents/inshortcutreference.md) object for each intent and user activity. Use the shortcut to create an [`INRelevantShortcutRole`](../Intents/inrelevantshortcutrole.md) object, and set the [`shortcutRole`](../Intents/inrelevantshortcut/shortcutrole.md) to provide a hint to Siri as to the purpose of the shortcut: to perform an action or display information.
 
 ```swift
 // Add an intent to the list of suggestions. To create
@@ -33,7 +33,7 @@ if let shortcut = INShortcut(intent: startWorkoutIntent) {
 
 ##### Add Relevance Providers
 
-To give Siri a hint about when to suggest the shortcut to the user, add one or more providers to the [`relevanceProviders`](https://developer.apple.com/documentation/intents/inrelevantshortcut/relevanceproviders) property on the relevant shortcut. Relevance providers let you specify parameters such as a particular situation, date, time, and location that indicate the shortcut may be relevant to the user. For example, you can instruct Siri to suggest starting a workout when the user arrives at the gym.
+To give Siri a hint about when to suggest the shortcut to the user, add one or more providers to the [`relevanceProviders`](../Intents/inrelevantshortcut/relevanceproviders.md) property on the relevant shortcut. Relevance providers let you specify parameters such as a particular situation, date, time, and location that indicate the shortcut may be relevant to the user. For example, you can instruct Siri to suggest starting a workout when the user arrives at the gym.
 
 ```swift
 // Add an intent to the list of suggestions. To create
@@ -52,7 +52,7 @@ if let shortcut = INShortcut(intent: startWorkoutIntent) {
 }
 ```
 
-Don’t combine an [`INDailyRoutineRelevanceProvider`](https://developer.apple.com/documentation/intents/indailyroutinerelevanceprovider) for a time-based situation with an [`INDateRelevanceProvider`](https://developer.apple.com/documentation/intents/indaterelevanceprovider), like [`INDailyRoutineRelevanceProvider.Situation.evening`](https://developer.apple.com/documentation/intents/indailyroutinerelevanceprovider/situation-swift.enum/evening) and 8 p.m.; the outcome can be unpredictable. Instead, provide multiple relevant shortcuts for each scenario, that is, provide a relevant shortcut for [`INDailyRoutineRelevanceProvider.Situation.evening`](https://developer.apple.com/documentation/intents/indailyroutinerelevanceprovider/situation-swift.enum/evening) and a second one for 8 p.m.
+Don’t combine an [`INDailyRoutineRelevanceProvider`](../Intents/indailyroutinerelevanceprovider.md) for a time-based situation with an [`INDateRelevanceProvider`](../Intents/indaterelevanceprovider.md), like [`INDailyRoutineRelevanceProvider.Situation.evening`](../Intents/indailyroutinerelevanceprovider/situation-swift.enum/evening.md) and 8 p.m.; the outcome can be unpredictable. Instead, provide multiple relevant shortcuts for each scenario, that is, provide a relevant shortcut for [`INDailyRoutineRelevanceProvider.Situation.evening`](../Intents/indailyroutinerelevanceprovider/situation-swift.enum/evening.md) and a second one for 8 p.m.
 
 Applying multiple locations relevance providers to a relevant shortcut creates similar problems. Instead, provide a relevant shortcut for each location.
 
@@ -60,7 +60,7 @@ Applying multiple locations relevance providers to a relevant shortcut creates s
 
 ##### Set Relevant Shortcuts
 
-Continue creating the relevant shortcuts for your app, storing each one in an array. After you’ve created and stored the shortcuts, inform Siri of the relevant shortcuts by using the [`default`](https://developer.apple.com/documentation/intents/inrelevantshortcutstore/default) relevant shortcut store to call [`setRelevantShortcuts(_:completionHandler:)`](https://developer.apple.com/documentation/intents/inrelevantshortcutstore/setrelevantshortcuts(_:completionhandler:)), passing in the array of relevant shortcuts.
+Continue creating the relevant shortcuts for your app, storing each one in an array. After you’ve created and stored the shortcuts, inform Siri of the relevant shortcuts by using the [`default`](../Intents/inrelevantshortcutstore/default.md) relevant shortcut store to call [`setRelevantShortcuts(_:completionHandler:)`](../Intents/inrelevantshortcutstore/setrelevantshortcuts%28_,completionhandler%29.md), passing in the array of relevant shortcuts.
 
 ```swift
 var relevantShortcuts:[INRelevantShortcut] = []
@@ -94,10 +94,10 @@ INRelevantShortcutStore.default.setRelevantShortcuts(relevantShortcuts) { (error
 
 There isn’t a way to add relevant shortcuts to the list already set by your app. Instead, you must replace the list by following the same steps previously mentioned:
 
-- Gather the actions (as user activities or intents) and create an array of [`INRelevantShortcut`](https://developer.apple.com/documentation/intents/inrelevantshortcut) objects.
-- Pass the array to [`setRelevantShortcuts(_:completionHandler:)`](https://developer.apple.com/documentation/intents/inrelevantshortcutstore/setrelevantshortcuts(_:completionhandler:)).
+- Gather the actions (as user activities or intents) and create an array of [`INRelevantShortcut`](../Intents/inrelevantshortcut.md) objects.
+- Pass the array to [`setRelevantShortcuts(_:completionHandler:)`](../Intents/inrelevantshortcutstore/setrelevantshortcuts%28_,completionhandler%29.md).
 
-When you’ve completed these steps, the new set of relevant shortcuts takes the place of the previous one. If you want to delete all relevant shortcuts defined by your app, call [`setRelevantShortcuts(_:completionHandler:)`](https://developer.apple.com/documentation/intents/inrelevantshortcutstore/setrelevantshortcuts(_:completionhandler:)), passing in an empty array.
+When you’ve completed these steps, the new set of relevant shortcuts takes the place of the previous one. If you want to delete all relevant shortcuts defined by your app, call [`setRelevantShortcuts(_:completionHandler:)`](../Intents/inrelevantshortcutstore/setrelevantshortcuts%28_,completionhandler%29.md), passing in an empty array.
 
 Replace the list when your app needs to add or remove a relevant shortcut. It isn’t necessary to replace the list more than once a day, and resubmitting the same set of relevant shortcuts more often provides no benefits.
 

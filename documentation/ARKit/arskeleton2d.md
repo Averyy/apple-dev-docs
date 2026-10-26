@@ -33,6 +33,10 @@ To access a skeleton’s joints by name, you use [`landmarkForJointNamed:`](./ar
   The joint landmarks in normalized coordinates.
 - [func landmark(for: ARSkeleton.JointName) -> simd_float2?](./arskeleton2d/landmark%28for%29.md)
   Returns the location of a joint with a given name.
+- [jointLandmarks](./arskeleton2d/jointlandmarks-3en0x.md)
+  The joint landmarks in normalized coordinates.
+- [- landmarkForJointNamed:](./arskeleton2d/landmarkforjointnamed_.md)
+  Returns the location of a joint with a given name.
 
 ## Relationships
 

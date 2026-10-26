@@ -48,6 +48,8 @@ typedef enum { ... } JSType;
   Creates a JavaScript type with the specified raw value.
 - [var rawValue: UInt32](./jstype/rawvalue.md)
   The raw value that represents the JavaScript type.
+### Enumeration Cases
+- [kJSTypeBigInt](./kjstypebigint.md)
 
 ## Relationships
 

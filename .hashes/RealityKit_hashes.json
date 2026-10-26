@@ -500,30 +500,90 @@
       "file_path": "documentation/RealityKit/actionhandlerprotocol/actionended(event).md",
       "hash": "99ff8032b352f96badfaf857b4ce34ba42a01afc887e58d840dcfa256ea3e808"
     },
+    "https://developer.apple.com/documentation/realitykit/actionhandlerprotocol/actionended(event:)-1aoge": {
+      "etag": "\"14ec-65d55e6f4dff5-df\"",
+      "file_path": "documentation/RealityKit/actionhandlerprotocol/actionended(event)-1aoge.md",
+      "hash": "a39ae43253803910614590c89fc833f8f2fe80ba879ab24523ab1f4bbbedec36"
+    },
+    "https://developer.apple.com/documentation/realitykit/actionhandlerprotocol/actionended(event:)-4up3w": {
+      "etag": "\"1715-65d55e6f4dff5-df\"",
+      "file_path": "documentation/RealityKit/actionhandlerprotocol/actionended(event)-4up3w.md",
+      "hash": "3e1b2a983209aa1dd0f7f82d39e64a22e6df0bc35daf32362879abb32b02fce1"
+    },
     "https://developer.apple.com/documentation/realitykit/actionhandlerprotocol/actionpaused(event:)": {
       "etag": "\"1ebc-65d55e6f4dff5-df\"",
       "file_path": "documentation/RealityKit/actionhandlerprotocol/actionpaused(event).md",
       "hash": "41a47bf708d71c514c1ffc06314f17212994bc0777c72f807f9dd2f431ca11b4"
+    },
+    "https://developer.apple.com/documentation/realitykit/actionhandlerprotocol/actionpaused(event:)-4491b": {
+      "etag": "\"1678-65d55e6f4dff5-df\"",
+      "file_path": "documentation/RealityKit/actionhandlerprotocol/actionpaused(event)-4491b.md",
+      "hash": "2f425fa83192f753bc12e7c6765903ad54859eca19c77cf29f6109fa690a8fc4"
+    },
+    "https://developer.apple.com/documentation/realitykit/actionhandlerprotocol/actionpaused(event:)-7t4y8": {
+      "etag": "\"14f7-65d55e6f4dff5-df\"",
+      "file_path": "documentation/RealityKit/actionhandlerprotocol/actionpaused(event)-7t4y8.md",
+      "hash": "2bcf7e9aac5e1512103586db82a2f4d760b9507fdaec936f8edd1d801a5db45c"
     },
     "https://developer.apple.com/documentation/realitykit/actionhandlerprotocol/actionresumed(event:)": {
       "etag": "\"1f70-65d55e6f4dff5-df\"",
       "file_path": "documentation/RealityKit/actionhandlerprotocol/actionresumed(event).md",
       "hash": "f3c8b0eedff3eef5fce97e2d7eb38595d7ffc173a1480ee003c1149b407476a3"
     },
+    "https://developer.apple.com/documentation/realitykit/actionhandlerprotocol/actionresumed(event:)-79dv0": {
+      "etag": "\"16b1-65d55e6f4dff5-df\"",
+      "file_path": "documentation/RealityKit/actionhandlerprotocol/actionresumed(event)-79dv0.md",
+      "hash": "fd5cfe9c0f958105e88e04c0e56335fe5e303091efcaed6384e8ed6cb299123a"
+    },
+    "https://developer.apple.com/documentation/realitykit/actionhandlerprotocol/actionresumed(event:)-w4ch": {
+      "etag": "\"14fd-65d55e6f4dff5-df\"",
+      "file_path": "documentation/RealityKit/actionhandlerprotocol/actionresumed(event)-w4ch.md",
+      "hash": "4a70e0741fc94013bec9342c59e3299e96c075d955d28d5fd930a2df53004317"
+    },
     "https://developer.apple.com/documentation/realitykit/actionhandlerprotocol/actionskipped(event:)": {
       "etag": "\"1ef8-65d55e6f4dff5-df\"",
       "file_path": "documentation/RealityKit/actionhandlerprotocol/actionskipped(event).md",
       "hash": "15d111c045bb41eaadeb9c32e0727dd73bf5cab9bc72f91af9e5c86e78b3e430"
+    },
+    "https://developer.apple.com/documentation/realitykit/actionhandlerprotocol/actionskipped(event:)-937ws": {
+      "etag": "\"170a-65d55e6f4dff5-df\"",
+      "file_path": "documentation/RealityKit/actionhandlerprotocol/actionskipped(event)-937ws.md",
+      "hash": "67e7fd39d2c97747cfa9d8c935a45de83ff3157c7b818c1e9a93e041c19012ac"
+    },
+    "https://developer.apple.com/documentation/realitykit/actionhandlerprotocol/actionskipped(event:)-wy3k": {
+      "etag": "\"14fd-65d55e6f4dff5-df\"",
+      "file_path": "documentation/RealityKit/actionhandlerprotocol/actionskipped(event)-wy3k.md",
+      "hash": "ebeaecb9bd47759340932825463e79e8c69c3b275b41ae12647710d95f0b8987"
     },
     "https://developer.apple.com/documentation/realitykit/actionhandlerprotocol/actionstarted(event:)": {
       "etag": "\"1f3b-65d55e6f4dff5-df\"",
       "file_path": "documentation/RealityKit/actionhandlerprotocol/actionstarted(event).md",
       "hash": "0680e6bc2d37d6247050f952159e5342b6c3c78e98f2d95eba9bebc2ae7b47a3"
     },
+    "https://developer.apple.com/documentation/realitykit/actionhandlerprotocol/actionstarted(event:)-75a3q": {
+      "etag": "\"16ea-65d55e6f4dff5-df\"",
+      "file_path": "documentation/RealityKit/actionhandlerprotocol/actionstarted(event)-75a3q.md",
+      "hash": "5b7b90977a6841145dbd0a400b6e6de7e3059026657ae1e552ccc4c23d3b08d9"
+    },
+    "https://developer.apple.com/documentation/realitykit/actionhandlerprotocol/actionstarted(event:)-7h84p": {
+      "etag": "\"1502-65d55e6f4dff5-df\"",
+      "file_path": "documentation/RealityKit/actionhandlerprotocol/actionstarted(event)-7h84p.md",
+      "hash": "c853323f3166452a52edf721aa467ce812b79a00aaefe65ca05bc21920019f49"
+    },
     "https://developer.apple.com/documentation/realitykit/actionhandlerprotocol/actionterminated(event:)": {
       "etag": "\"22f8-65d55e6f4dff5-df\"",
       "file_path": "documentation/RealityKit/actionhandlerprotocol/actionterminated(event).md",
       "hash": "3bd1b74841b01772648a65b2bdca40d8f567d6c818d52bdc40a36a099af5df1f"
+    },
+    "https://developer.apple.com/documentation/realitykit/actionhandlerprotocol/actionterminated(event:)-34zs0": {
+      "etag": "\"16af-65d55e6f4dff5-df\"",
+      "file_path": "documentation/RealityKit/actionhandlerprotocol/actionterminated(event)-34zs0.md",
+      "hash": "eb4e938d3eb657cfcb255b16e0ffb779e9e5bb613ac1a3721ce96afccd208eaf"
+    },
+    "https://developer.apple.com/documentation/realitykit/actionhandlerprotocol/actionterminated(event:)-5pd4o": {
+      "etag": "\"1523-65d55e6f4dff5-df\"",
+      "file_path": "documentation/RealityKit/actionhandlerprotocol/actionterminated(event)-5pd4o.md",
+      "hash": "c31d2804f05c9f44904b51896c732db7eeb7ee80bcf1043ad4f7aac1dbe08283"
     },
     "https://developer.apple.com/documentation/realitykit/actionhandlerprotocol/actiontype": {
       "etag": "\"1288-65d55e6f4dff5-df\"",
@@ -535,6 +595,16 @@
       "file_path": "documentation/RealityKit/actionhandlerprotocol/actionupdated(event).md",
       "hash": "1507ca2b496469f1c454ae3913efce409995f9ad5f73a13e20e3df22fd9d2b30"
     },
+    "https://developer.apple.com/documentation/realitykit/actionhandlerprotocol/actionupdated(event:)-1fr9n": {
+      "etag": "\"16fe-65d55e6f4dff5-df\"",
+      "file_path": "documentation/RealityKit/actionhandlerprotocol/actionupdated(event)-1fr9n.md",
+      "hash": "030a8983e34dcbc7e2def19e44cdb34f62402c7dfba18243e87f8c3c7386e2dc"
+    },
+    "https://developer.apple.com/documentation/realitykit/actionhandlerprotocol/actionupdated(event:)-36f3t": {
+      "etag": "\"1502-65d55e6f4dff5-df\"",
+      "file_path": "documentation/RealityKit/actionhandlerprotocol/actionupdated(event)-36f3t.md",
+      "hash": "70785273d18faddb010b8c688242b7079d9fc77cfe39597e650e7097f87c4b98"
+    },
     "https://developer.apple.com/documentation/realitykit/actionhandlerprotocol/eventtype": {
       "etag": "\"15fa-65d55e6f4dff5-df\"",
       "file_path": "documentation/RealityKit/actionhandlerprotocol/eventtype.md",
@@ -544,6 +614,16 @@
       "etag": "\"2575-65d55e6f4dff5-df\"",
       "file_path": "documentation/RealityKit/actionhandlerprotocol/register(_).md",
       "hash": "3acf183bbefaeac1536e6d987f2efe3671f0ef1d04ce0ac45f9b5505602abd4e"
+    },
+    "https://developer.apple.com/documentation/realitykit/actionhandlerprotocol/register(_:)-1jigj": {
+      "etag": "\"1918-65d55e6f4dff5-df\"",
+      "file_path": "documentation/RealityKit/actionhandlerprotocol/register(_)-1jigj.md",
+      "hash": "519993da18e159b72109a874ede6d2b3009b2006edf515774874bb1ce7c4c0e0"
+    },
+    "https://developer.apple.com/documentation/realitykit/actionhandlerprotocol/register(_:)-1kxs4": {
+      "etag": "\"1dd0-65d55e6f4dff5-df\"",
+      "file_path": "documentation/RealityKit/actionhandlerprotocol/register(_)-1kxs4.md",
+      "hash": "fc3c819af700ca4a3e54527cbecd7d89d8293b16875b6f2e8f1684603549146e"
     },
     "https://developer.apple.com/documentation/realitykit/actionresult": {
       "etag": "\"2ab2-65d55e73695f5-df\"",
@@ -4074,35 +4154,70 @@
       "file_path": "documentation/RealityKit/behaviortreeactionhandler/actionendedwithresult(event).md",
       "hash": "e7632d31017f824eab614fc156b522fefebaef16c22f29e1cfe70b9439e128d4"
     },
+    "https://developer.apple.com/documentation/realitykit/behaviortreeactionhandler/actionendedwithresult(event:)-132bd": {
+      "etag": "\"1a2c-65d55e6c0f8ed-df\"",
+      "file_path": "documentation/RealityKit/behaviortreeactionhandler/actionendedwithresult(event)-132bd.md",
+      "hash": "febf9b2bb07221e03d82528e19dc95e03b76d8a5a5e907ca18206b46eabf28cd"
+    },
     "https://developer.apple.com/documentation/realitykit/behaviortreeactionhandler/actionpausedwithresult(event:)": {
       "etag": "\"2dc4-65d55e6c0f8ed-df\"",
       "file_path": "documentation/RealityKit/behaviortreeactionhandler/actionpausedwithresult(event).md",
       "hash": "e298e12ef79f0c8098998f1ca9fe541a4e504648f48ae494aca8082860f2f75e"
+    },
+    "https://developer.apple.com/documentation/realitykit/behaviortreeactionhandler/actionpausedwithresult(event:)-5m2uk": {
+      "etag": "\"1a37-65d55e6c0f8ed-df\"",
+      "file_path": "documentation/RealityKit/behaviortreeactionhandler/actionpausedwithresult(event)-5m2uk.md",
+      "hash": "e496b4046748c61d2a6d92c26a3160bfcedc16572ff2c4a1c86140fa77c97987"
     },
     "https://developer.apple.com/documentation/realitykit/behaviortreeactionhandler/actionresumedwithresult(event:)": {
       "etag": "\"2dcf-65d55e6c0f8ed-df\"",
       "file_path": "documentation/RealityKit/behaviortreeactionhandler/actionresumedwithresult(event).md",
       "hash": "049ba936a3a6a46e4676287c494745e800b5198bfa79bb403f61254f42e8d47f"
     },
+    "https://developer.apple.com/documentation/realitykit/behaviortreeactionhandler/actionresumedwithresult(event:)-60o3s": {
+      "etag": "\"1a42-65d55e6c0f8ed-df\"",
+      "file_path": "documentation/RealityKit/behaviortreeactionhandler/actionresumedwithresult(event)-60o3s.md",
+      "hash": "2b9a9898be1efa598c110a311e3c0e86a1e225df22c3d64947230ad9fca6b349"
+    },
     "https://developer.apple.com/documentation/realitykit/behaviortreeactionhandler/actionskippedwithresult(event:)": {
       "etag": "\"293e-65d55e6c0f8ed-df\"",
       "file_path": "documentation/RealityKit/behaviortreeactionhandler/actionskippedwithresult(event).md",
       "hash": "2a4e89674a131cfb07184aaba6c4c7231d6ec3cc77b8399cc8d47deaca068e7e"
+    },
+    "https://developer.apple.com/documentation/realitykit/behaviortreeactionhandler/actionskippedwithresult(event:)-4y64m": {
+      "etag": "\"1a42-65d55e6c0f8ed-df\"",
+      "file_path": "documentation/RealityKit/behaviortreeactionhandler/actionskippedwithresult(event)-4y64m.md",
+      "hash": "45340a9c6f6818dad367d399abf7d7dea401d1a5617191ee47796ffa8ca93e0f"
     },
     "https://developer.apple.com/documentation/realitykit/behaviortreeactionhandler/actionstartedwithresult(event:)": {
       "etag": "\"2dcf-65d55e6c0f8ed-df\"",
       "file_path": "documentation/RealityKit/behaviortreeactionhandler/actionstartedwithresult(event).md",
       "hash": "a0e94c51757bb4bcc9073e6033d119e86b96831fdf6bbb7dda7989121d90d645"
     },
+    "https://developer.apple.com/documentation/realitykit/behaviortreeactionhandler/actionstartedwithresult(event:)-6p3bc": {
+      "etag": "\"1a42-65d55e6c0f8ed-df\"",
+      "file_path": "documentation/RealityKit/behaviortreeactionhandler/actionstartedwithresult(event)-6p3bc.md",
+      "hash": "309cd9ae9f3de1a7bde597e193ef23b1915506544756ab716b9de6d4fc08a916"
+    },
     "https://developer.apple.com/documentation/realitykit/behaviortreeactionhandler/actionterminatedwithresult(event:)": {
       "etag": "\"295f-65d55e6c0f8ed-df\"",
       "file_path": "documentation/RealityKit/behaviortreeactionhandler/actionterminatedwithresult(event).md",
       "hash": "b91cb797faadfcb693b5bd35c145e582f6c7cbc90717e6df7f6e272ef9f78268"
     },
+    "https://developer.apple.com/documentation/realitykit/behaviortreeactionhandler/actionterminatedwithresult(event:)-20jf9": {
+      "etag": "\"1a63-65d55e6c0f8ed-df\"",
+      "file_path": "documentation/RealityKit/behaviortreeactionhandler/actionterminatedwithresult(event)-20jf9.md",
+      "hash": "5d5d1300c37dc4e5691686491ef5b6079efea3840f2c350abbaaca46aa276a4c"
+    },
     "https://developer.apple.com/documentation/realitykit/behaviortreeactionhandler/actionupdatedwithresult(event:)": {
       "etag": "\"2dcf-65d55e6c0f8ed-df\"",
       "file_path": "documentation/RealityKit/behaviortreeactionhandler/actionupdatedwithresult(event).md",
       "hash": "0c0f0a3cf7dfb878b886e0ab65d03585b0383ad9b6f5ca57612f20f1e093452a"
+    },
+    "https://developer.apple.com/documentation/realitykit/behaviortreeactionhandler/actionupdatedwithresult(event:)-198m4": {
+      "etag": "\"1a42-65d55e6c0f8ed-df\"",
+      "file_path": "documentation/RealityKit/behaviortreeactionhandler/actionupdatedwithresult(event)-198m4.md",
+      "hash": "688f14fcde5b701dfaad128b0fbc5c5cb780b64863eaab1516408b7682eff872"
     },
     "https://developer.apple.com/documentation/realitykit/behaviortreecomponent": {
       "etag": "\"282a-65d55e6b9f8d7-df\"",
@@ -9792,10 +9907,20 @@
       "file_path": "documentation/RealityKit/entityaction/isadditive.md",
       "hash": "6a082583c355b6ec30d8b943ee6e8db46da2d3ab9fe9859381d024b0a804a54e"
     },
+    "https://developer.apple.com/documentation/realitykit/entityaction/isadditive-7cp6g": {
+      "etag": "\"15f0-65d55e744453b-df\"",
+      "file_path": "documentation/RealityKit/entityaction/isadditive-7cp6g.md",
+      "hash": "732a0d23545563a29a6ecb806e2208c43a77dbe5d3fd684795bcde54338d01a2"
+    },
     "https://developer.apple.com/documentation/realitykit/entityaction/isreversible": {
       "etag": "\"17b6-65d55e744453b-df\"",
       "file_path": "documentation/RealityKit/entityaction/isreversible.md",
       "hash": "a81bd7b1c54d0b3510415f272d2ca9e0e10cc7ede6f74d4ec3480528bf08ce62"
+    },
+    "https://developer.apple.com/documentation/realitykit/entityaction/isreversible-7w6p0": {
+      "etag": "\"13f7-65d55e744453b-df\"",
+      "file_path": "documentation/RealityKit/entityaction/isreversible-7w6p0.md",
+      "hash": "76d892b803df06b9eaabb7b245f468d7886a223401ac86347e2e993802a1c2df"
     },
     "https://developer.apple.com/documentation/realitykit/entityaction/registeraction()": {
       "etag": "\"24ef-65d55e744453b-df\"",
@@ -9827,15 +9952,30 @@
       "file_path": "documentation/RealityKit/entitycollection/append(_).md",
       "hash": "a1835949f7a9f0f2cf92b512add4c13c49fc53eb7375737aa61de752753c18c4"
     },
+    "https://developer.apple.com/documentation/realitykit/entitycollection/append(_:)-8ughl": {
+      "etag": "\"1543-65d55e760bb6a-df\"",
+      "file_path": "documentation/RealityKit/entitycollection/append(_)-8ughl.md",
+      "hash": "dc0e9fcf47b5532b33e0b92f4fc44a6d1255b802df18d7c3139775d7f659e3f4"
+    },
     "https://developer.apple.com/documentation/realitykit/entitycollection/append(contentsof:)": {
       "etag": "\"21ed-65d55e760bb6a-df\"",
       "file_path": "documentation/RealityKit/entitycollection/append(contentsof).md",
       "hash": "3e764a85cd0d07cb4f26ece1ecfa0b19c0099ea44aa77c00f1c20ee6cf907751"
     },
+    "https://developer.apple.com/documentation/realitykit/entitycollection/append(contentsof:)-9g9w5": {
+      "etag": "\"1d87-65d55e760bb6a-df\"",
+      "file_path": "documentation/RealityKit/entitycollection/append(contentsof)-9g9w5.md",
+      "hash": "6f068eb7ebf276e4c9e91340ef0c9ca56c2c872b07b7f347377c697665b0c5e3"
+    },
     "https://developer.apple.com/documentation/realitykit/entitycollection/insert(_:beforeindex:)": {
       "etag": "\"2274-65d55e760bb6a-df\"",
       "file_path": "documentation/RealityKit/entitycollection/insert(_,beforeindex).md",
       "hash": "e9f3461823d1c66a1cc52952b75d026b97d1192439fb7a1cc1c263dc9cf02e5e"
+    },
+    "https://developer.apple.com/documentation/realitykit/entitycollection/insert(_:beforeindex:)-1cpdw": {
+      "etag": "\"1d18-65d55e760bb6a-df\"",
+      "file_path": "documentation/RealityKit/entitycollection/insert(_,beforeindex)-1cpdw.md",
+      "hash": "7d3d3f8d6c12f03db011189fc71de6fb6b0479b417c0ba8cb1c8f467c1ae1c00"
     },
     "https://developer.apple.com/documentation/realitykit/entitycollection/insert(contentsof:beforeindex:)": {
       "etag": "\"23d1-65d55e760bb6a-df\"",
@@ -9847,6 +9987,11 @@
       "file_path": "documentation/RealityKit/entitycollection/remove(_).md",
       "hash": "7d1e9ac27bd7e0a4bb79074d21f685a4d65c62a426706a8a2084b48ee7632c67"
     },
+    "https://developer.apple.com/documentation/realitykit/entitycollection/remove(_:)-8nj5y": {
+      "etag": "\"1529-65d55e760bb6a-df\"",
+      "file_path": "documentation/RealityKit/entitycollection/remove(_)-8nj5y.md",
+      "hash": "28d0fc16ba26da67014fe0a371dd934f912b01315ead952194bf77f7bb56edfe"
+    },
     "https://developer.apple.com/documentation/realitykit/entitycollection/remove(at:)": {
       "etag": "\"14b8-65d55e760bb6a-df\"",
       "file_path": "documentation/RealityKit/entitycollection/remove(at).md",
@@ -9857,15 +10002,30 @@
       "file_path": "documentation/RealityKit/entitycollection/removeall().md",
       "hash": "9ad527ce10683c282fa04ec19fb86cb79f76189e12291036e8f43cb6a39a43e7"
     },
+    "https://developer.apple.com/documentation/realitykit/entitycollection/removeall()-6xkp8": {
+      "etag": "\"ea8-65d55e760bb6a-df\"",
+      "file_path": "documentation/RealityKit/entitycollection/removeall()-6xkp8.md",
+      "hash": "dafa935c6f332053455959186bfa1cdbb19bb47a809dece815be41b03df24db1"
+    },
     "https://developer.apple.com/documentation/realitykit/entitycollection/removeall(where:)": {
       "etag": "\"1f33-65d55e760bb6a-df\"",
       "file_path": "documentation/RealityKit/entitycollection/removeall(where).md",
       "hash": "8120500a5c93ccd46fc4cdea19b5fbde4d6d081141bbf3812b9c56dd1a0b6757"
     },
+    "https://developer.apple.com/documentation/realitykit/entitycollection/removeall(where:)-6pdng": {
+      "etag": "\"1aa2-65d55e760bb6a-df\"",
+      "file_path": "documentation/RealityKit/entitycollection/removeall(where)-6pdng.md",
+      "hash": "e572b2cf1022aa4256cf7405ae4e56c4fb7e3d5b9b8f619b243a6055e4798246"
+    },
     "https://developer.apple.com/documentation/realitykit/entitycollection/replaceall(_:)": {
       "etag": "\"2123-65d55e760bb6a-df\"",
       "file_path": "documentation/RealityKit/entitycollection/replaceall(_).md",
       "hash": "7aa9d8318bc6413f843dd3a85f5b206066a1e61e80d63427e14f6d69f4220aa1"
+    },
+    "https://developer.apple.com/documentation/realitykit/entitycollection/replaceall(_:)-91uho": {
+      "etag": "\"1d1f-65d55e760bb6a-df\"",
+      "file_path": "documentation/RealityKit/entitycollection/replaceall(_)-91uho.md",
+      "hash": "cefb57a00f0934abe6deada5ceaed78efada28a8cc92da9f2229b41b7fdb8fae"
     },
     "https://developer.apple.com/documentation/realitykit/entitygeometricpins": {
       "etag": "\"5ac6-65d55e72b29f0-df\"",
@@ -9946,6 +10106,11 @@
       "etag": "\"2b6c-65d55e768ffae-df\"",
       "file_path": "documentation/RealityKit/entitygesturerecognizer/location(in).md",
       "hash": "26b819b24da8b55169f50577a6031d0769c92bbbadf6fb465dc2f97d0638c9a0"
+    },
+    "https://developer.apple.com/documentation/realitykit/entitygesturerecognizer/location(in:)-2aecy": {
+      "etag": "\"1f50-65d55e768ffae-df\"",
+      "file_path": "documentation/RealityKit/entitygesturerecognizer/location(in)-2aecy.md",
+      "hash": "9a11fc73c24208a82b4179a82a3254c15fb13e3d9a06e0eca5b4ab342ef7fb10"
     },
     "https://developer.apple.com/documentation/realitykit/entityquery": {
       "etag": "\"2b29-65d55e72c8439-df\"",
@@ -10607,6 +10772,11 @@
       "file_path": "documentation/RealityKit/forceeffectprotocol/parametertypes.md",
       "hash": "625e2ded1618a6abe3d9806d23ff38a0024b7fa1e88f5937044c89a463df0da4"
     },
+    "https://developer.apple.com/documentation/realitykit/forceeffectprotocol/parametertypes-whuc": {
+      "etag": "\"13c3-65d55e6caefc4-df\"",
+      "file_path": "documentation/RealityKit/forceeffectprotocol/parametertypes-whuc.md",
+      "hash": "439f5f235aa353981f24c9a1b735850cd70fc676f3aa38a335454ca76188a697"
+    },
     "https://developer.apple.com/documentation/realitykit/forceeffectprotocol/register(_:)": {
       "etag": "\"2a8d-65d55e6c90202-df\"",
       "file_path": "documentation/RealityKit/forceeffectprotocol/register(_).md",
@@ -10621,6 +10791,11 @@
       "etag": "\"2bf9-65d55e6c90202-df\"",
       "file_path": "documentation/RealityKit/forceeffectprotocol/update(parameters).md",
       "hash": "595588b07f10dc93e3e6bbae2912045efaa48ac5502004f85adc11cdb627bdac"
+    },
+    "https://developer.apple.com/documentation/realitykit/forceeffectprotocol/update(parameters:)-3gvs6": {
+      "etag": "\"1503-65d55e6caefc4-df\"",
+      "file_path": "documentation/RealityKit/forceeffectprotocol/update(parameters)-3gvs6.md",
+      "hash": "52e342a2472eaeb84594c25700f6c5a5f5244aa33dcd10be8e25e90cfaef76a3"
     },
     "https://developer.apple.com/documentation/realitykit/forcemode": {
       "etag": "\"34b2-65d55e73a1d8f-df\"",
@@ -18266,6 +18441,11 @@
       "file_path": "documentation/RealityKit/meshdeformer/deform(parameter).md",
       "hash": "d261e03987e9b283c642dde57649ddfd3d1aa3c0ab27da2d4ab8f0c57a9f773d"
     },
+    "https://developer.apple.com/documentation/realitykit/meshdeformer/deform(parameter:)-32cx7": {
+      "etag": "\"168d-65d55e7542280-df\"",
+      "file_path": "documentation/RealityKit/meshdeformer/deform(parameter)-32cx7.md",
+      "hash": "ab7d0d217e44770197e7a0eda13e12418a13d3b5781b85fb91e56cd03c5659fa"
+    },
     "https://developer.apple.com/documentation/realitykit/meshdeformer/deform(parameter:encoder:)": {
       "etag": "\"2058-65d55e7542280-df\"",
       "file_path": "documentation/RealityKit/meshdeformer/deform(parameter,encoder).md",
@@ -18276,10 +18456,20 @@
       "file_path": "documentation/RealityKit/meshdeformer/isdeformerequal(other).md",
       "hash": "6c9b92239fad1002263961d20142fb7de42f1c4fa56fd0dbc3f016af91d1d924"
     },
+    "https://developer.apple.com/documentation/realitykit/meshdeformer/mode-61otn": {
+      "etag": "\"1544-65d55e7542280-df\"",
+      "file_path": "documentation/RealityKit/meshdeformer/mode-61otn.md",
+      "hash": "618fdc953328fb5d538baf2c10a8a939e63e4c5f6503fccf44a52fb060904e91"
+    },
     "https://developer.apple.com/documentation/realitykit/meshdeformer/mode-6ci1w": {
       "etag": "\"1bd9-65d55e7557a58-df\"",
       "file_path": "documentation/RealityKit/meshdeformer/mode-6ci1w.md",
       "hash": "df815262c89ef859af5d1a4215c4d429d73dc3fbdc4f85908aabe242c4c6f84e"
+    },
+    "https://developer.apple.com/documentation/realitykit/meshdeformer/mode-99czy": {
+      "etag": "\"1471-65d55e7542280-df\"",
+      "file_path": "documentation/RealityKit/meshdeformer/mode-99czy.md",
+      "hash": "dcb1d1a1081f6a94bfa396cd009808830e66449f13133918c40a72b6dc179692"
     },
     "https://developer.apple.com/documentation/realitykit/meshdeformer/mode-v9mj": {
       "etag": "\"1c8b-65d55e7557a58-df\"",
@@ -18290,6 +18480,16 @@
       "etag": "\"17b9-65d55e7542280-df\"",
       "file_path": "documentation/RealityKit/meshdeformer/options.md",
       "hash": "88a43a0d240f294eb90eb45034c409a597ccb9fdaf817aabff026bb1a7dc40db"
+    },
+    "https://developer.apple.com/documentation/realitykit/meshdeformer/options-3uibo": {
+      "etag": "\"1437-65d55e7542280-df\"",
+      "file_path": "documentation/RealityKit/meshdeformer/options-3uibo.md",
+      "hash": "25cc55a282aec39d560f544725bdc53c0bb7a43228a2e1679ea1550dcfae73ca"
+    },
+    "https://developer.apple.com/documentation/realitykit/meshdeformer/type-8vjw9": {
+      "etag": "\"1316-65d55e7542280-df\"",
+      "file_path": "documentation/RealityKit/meshdeformer/type-8vjw9.md",
+      "hash": "703d847b58bd10246a5662eca024fc490ec3424183e4d8eaaaf779267db22edb"
     },
     "https://developer.apple.com/documentation/realitykit/meshdeformer/type-nxsx": {
       "etag": "\"1ba9-65d55e7542280-df\"",
@@ -24916,6 +25116,11 @@
       "file_path": "documentation/RealityKit/postprocesseffect/prepare(for).md",
       "hash": "ea32d197fc1c750685c9a8e8d14737b4164ca180d1ad8af1fac32a82a2518fb3"
     },
+    "https://developer.apple.com/documentation/realitykit/postprocesseffect/prepare(for:)-69w45": {
+      "etag": "\"147b-65d55e6d225b9-df\"",
+      "file_path": "documentation/RealityKit/postprocesseffect/prepare(for)-69w45.md",
+      "hash": "6b8de2f486bb010141c74bcf81ae7f9e6b8b4ca04e2839dc621e190fb76c2951"
+    },
     "https://developer.apple.com/documentation/realitykit/postprocesseffectcontext": {
       "etag": "\"6ac2-65d55e71810b4-df\"",
       "file_path": "documentation/RealityKit/postprocesseffectcontext.md",
@@ -29051,6 +29256,11 @@
       "file_path": "documentation/RealityKit/system/dependencies.md",
       "hash": "9662a8f365e4b19efbab120f67d9261742eb51d1739e6b446dbc27f2553358a2"
     },
+    "https://developer.apple.com/documentation/realitykit/system/dependencies-2d7zt": {
+      "etag": "\"1664-65d55e71b8501-df\"",
+      "file_path": "documentation/RealityKit/system/dependencies-2d7zt.md",
+      "hash": "9ebd9c4a0a835b4c645a01f272e0db055a88819d6d6c3fc6d99f2cbad59b915d"
+    },
     "https://developer.apple.com/documentation/realitykit/system/init(scene:)": {
       "etag": "\"1de5-65d55e71b8501-df\"",
       "file_path": "documentation/RealityKit/system/init(scene).md",
@@ -29065,6 +29275,11 @@
       "etag": "\"32f3-65d55e71b8501-df\"",
       "file_path": "documentation/RealityKit/system/update(context).md",
       "hash": "bea578470aa0fda2d89d12d92f8ce212ad0fd095ce5b001371f7aeb31daee4bb"
+    },
+    "https://developer.apple.com/documentation/realitykit/system/update(context:)-3d0qz": {
+      "etag": "\"1482-65d55e71b8501-df\"",
+      "file_path": "documentation/RealityKit/system/update(context)-3d0qz.md",
+      "hash": "ebd6a5d4c9fd30be7ab6d797a39b85bba194bd9e788290159243b98e6218db74"
     },
     "https://developer.apple.com/documentation/realitykit/systemdependency": {
       "etag": "\"271b-65d55e69fe929-df\"",
@@ -31395,30 +31610,90 @@
       "file_path": "documentation/RealityKit/actionhandlerprotocol.md",
       "hash": "b90db6eccdfe3a90878c98f7a0a2fc3078829ece960e80e9c22aee439be6c2ad"
     },
+    "https://developer.apple.com/tutorials/data/documentation/realitykit/actionhandlerprotocol/actionended(event:)-1aoge.json": {
+      "etag": "\"14ec-65d55e6f4dff5-df\"",
+      "file_path": "documentation/RealityKit/actionhandlerprotocol/actionended(event)-1aoge.md",
+      "hash": "a39ae43253803910614590c89fc833f8f2fe80ba879ab24523ab1f4bbbedec36"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/realitykit/actionhandlerprotocol/actionended(event:)-4up3w.json": {
+      "etag": "\"1715-65d55e6f4dff5-df\"",
+      "file_path": "documentation/RealityKit/actionhandlerprotocol/actionended(event)-4up3w.md",
+      "hash": "3e1b2a983209aa1dd0f7f82d39e64a22e6df0bc35daf32362879abb32b02fce1"
+    },
     "https://developer.apple.com/tutorials/data/documentation/realitykit/actionhandlerprotocol/actionended(event:).json": {
       "etag": "\"1f4c-65d55e6f4dff5-df\"",
       "file_path": "documentation/RealityKit/actionhandlerprotocol/actionended(event).md",
       "hash": "99ff8032b352f96badfaf857b4ce34ba42a01afc887e58d840dcfa256ea3e808"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/realitykit/actionhandlerprotocol/actionpaused(event:)-4491b.json": {
+      "etag": "\"1678-65d55e6f4dff5-df\"",
+      "file_path": "documentation/RealityKit/actionhandlerprotocol/actionpaused(event)-4491b.md",
+      "hash": "2f425fa83192f753bc12e7c6765903ad54859eca19c77cf29f6109fa690a8fc4"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/realitykit/actionhandlerprotocol/actionpaused(event:)-7t4y8.json": {
+      "etag": "\"14f7-65d55e6f4dff5-df\"",
+      "file_path": "documentation/RealityKit/actionhandlerprotocol/actionpaused(event)-7t4y8.md",
+      "hash": "2bcf7e9aac5e1512103586db82a2f4d760b9507fdaec936f8edd1d801a5db45c"
     },
     "https://developer.apple.com/tutorials/data/documentation/realitykit/actionhandlerprotocol/actionpaused(event:).json": {
       "etag": "\"1ebc-65d55e6f4dff5-df\"",
       "file_path": "documentation/RealityKit/actionhandlerprotocol/actionpaused(event).md",
       "hash": "41a47bf708d71c514c1ffc06314f17212994bc0777c72f807f9dd2f431ca11b4"
     },
+    "https://developer.apple.com/tutorials/data/documentation/realitykit/actionhandlerprotocol/actionresumed(event:)-79dv0.json": {
+      "etag": "\"16b1-65d55e6f4dff5-df\"",
+      "file_path": "documentation/RealityKit/actionhandlerprotocol/actionresumed(event)-79dv0.md",
+      "hash": "fd5cfe9c0f958105e88e04c0e56335fe5e303091efcaed6384e8ed6cb299123a"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/realitykit/actionhandlerprotocol/actionresumed(event:)-w4ch.json": {
+      "etag": "\"14fd-65d55e6f4dff5-df\"",
+      "file_path": "documentation/RealityKit/actionhandlerprotocol/actionresumed(event)-w4ch.md",
+      "hash": "4a70e0741fc94013bec9342c59e3299e96c075d955d28d5fd930a2df53004317"
+    },
     "https://developer.apple.com/tutorials/data/documentation/realitykit/actionhandlerprotocol/actionresumed(event:).json": {
       "etag": "\"1f70-65d55e6f4dff5-df\"",
       "file_path": "documentation/RealityKit/actionhandlerprotocol/actionresumed(event).md",
       "hash": "f3c8b0eedff3eef5fce97e2d7eb38595d7ffc173a1480ee003c1149b407476a3"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/realitykit/actionhandlerprotocol/actionskipped(event:)-937ws.json": {
+      "etag": "\"170a-65d55e6f4dff5-df\"",
+      "file_path": "documentation/RealityKit/actionhandlerprotocol/actionskipped(event)-937ws.md",
+      "hash": "67e7fd39d2c97747cfa9d8c935a45de83ff3157c7b818c1e9a93e041c19012ac"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/realitykit/actionhandlerprotocol/actionskipped(event:)-wy3k.json": {
+      "etag": "\"14fd-65d55e6f4dff5-df\"",
+      "file_path": "documentation/RealityKit/actionhandlerprotocol/actionskipped(event)-wy3k.md",
+      "hash": "ebeaecb9bd47759340932825463e79e8c69c3b275b41ae12647710d95f0b8987"
     },
     "https://developer.apple.com/tutorials/data/documentation/realitykit/actionhandlerprotocol/actionskipped(event:).json": {
       "etag": "\"1ef8-65d55e6f4dff5-df\"",
       "file_path": "documentation/RealityKit/actionhandlerprotocol/actionskipped(event).md",
       "hash": "15d111c045bb41eaadeb9c32e0727dd73bf5cab9bc72f91af9e5c86e78b3e430"
     },
+    "https://developer.apple.com/tutorials/data/documentation/realitykit/actionhandlerprotocol/actionstarted(event:)-75a3q.json": {
+      "etag": "\"16ea-65d55e6f4dff5-df\"",
+      "file_path": "documentation/RealityKit/actionhandlerprotocol/actionstarted(event)-75a3q.md",
+      "hash": "5b7b90977a6841145dbd0a400b6e6de7e3059026657ae1e552ccc4c23d3b08d9"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/realitykit/actionhandlerprotocol/actionstarted(event:)-7h84p.json": {
+      "etag": "\"1502-65d55e6f4dff5-df\"",
+      "file_path": "documentation/RealityKit/actionhandlerprotocol/actionstarted(event)-7h84p.md",
+      "hash": "c853323f3166452a52edf721aa467ce812b79a00aaefe65ca05bc21920019f49"
+    },
     "https://developer.apple.com/tutorials/data/documentation/realitykit/actionhandlerprotocol/actionstarted(event:).json": {
       "etag": "\"1f3b-65d55e6f4dff5-df\"",
       "file_path": "documentation/RealityKit/actionhandlerprotocol/actionstarted(event).md",
       "hash": "0680e6bc2d37d6247050f952159e5342b6c3c78e98f2d95eba9bebc2ae7b47a3"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/realitykit/actionhandlerprotocol/actionterminated(event:)-34zs0.json": {
+      "etag": "\"16af-65d55e6f4dff5-df\"",
+      "file_path": "documentation/RealityKit/actionhandlerprotocol/actionterminated(event)-34zs0.md",
+      "hash": "eb4e938d3eb657cfcb255b16e0ffb779e9e5bb613ac1a3721ce96afccd208eaf"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/realitykit/actionhandlerprotocol/actionterminated(event:)-5pd4o.json": {
+      "etag": "\"1523-65d55e6f4dff5-df\"",
+      "file_path": "documentation/RealityKit/actionhandlerprotocol/actionterminated(event)-5pd4o.md",
+      "hash": "c31d2804f05c9f44904b51896c732db7eeb7ee80bcf1043ad4f7aac1dbe08283"
     },
     "https://developer.apple.com/tutorials/data/documentation/realitykit/actionhandlerprotocol/actionterminated(event:).json": {
       "etag": "\"22f8-65d55e6f4dff5-df\"",
@@ -31430,6 +31705,16 @@
       "file_path": "documentation/RealityKit/actionhandlerprotocol/actiontype.md",
       "hash": "612335068a07ec64245531ef20d589111f1cc53418239e3384716fdeeaf47808"
     },
+    "https://developer.apple.com/tutorials/data/documentation/realitykit/actionhandlerprotocol/actionupdated(event:)-1fr9n.json": {
+      "etag": "\"16fe-65d55e6f4dff5-df\"",
+      "file_path": "documentation/RealityKit/actionhandlerprotocol/actionupdated(event)-1fr9n.md",
+      "hash": "030a8983e34dcbc7e2def19e44cdb34f62402c7dfba18243e87f8c3c7386e2dc"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/realitykit/actionhandlerprotocol/actionupdated(event:)-36f3t.json": {
+      "etag": "\"1502-65d55e6f4dff5-df\"",
+      "file_path": "documentation/RealityKit/actionhandlerprotocol/actionupdated(event)-36f3t.md",
+      "hash": "70785273d18faddb010b8c688242b7079d9fc77cfe39597e650e7097f87c4b98"
+    },
     "https://developer.apple.com/tutorials/data/documentation/realitykit/actionhandlerprotocol/actionupdated(event:).json": {
       "etag": "\"1f4f-65d55e6f4dff5-df\"",
       "file_path": "documentation/RealityKit/actionhandlerprotocol/actionupdated(event).md",
@@ -31439,6 +31724,16 @@
       "etag": "\"15fa-65d55e6f4dff5-df\"",
       "file_path": "documentation/RealityKit/actionhandlerprotocol/eventtype.md",
       "hash": "a62e5ebd58c6cc63cbb8b0b759410b3e52adb64538ad6c2e0fe76cdc0fa5d845"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/realitykit/actionhandlerprotocol/register(_:)-1jigj.json": {
+      "etag": "\"1918-65d55e6f4dff5-df\"",
+      "file_path": "documentation/RealityKit/actionhandlerprotocol/register(_)-1jigj.md",
+      "hash": "519993da18e159b72109a874ede6d2b3009b2006edf515774874bb1ce7c4c0e0"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/realitykit/actionhandlerprotocol/register(_:)-1kxs4.json": {
+      "etag": "\"1dd0-65d55e6f4dff5-df\"",
+      "file_path": "documentation/RealityKit/actionhandlerprotocol/register(_)-1kxs4.md",
+      "hash": "fc3c819af700ca4a3e54527cbecd7d89d8293b16875b6f2e8f1684603549146e"
     },
     "https://developer.apple.com/tutorials/data/documentation/realitykit/actionhandlerprotocol/register(_:).json": {
       "etag": "\"2575-65d55e6f4dff5-df\"",
@@ -34969,35 +35264,70 @@
       "file_path": "documentation/RealityKit/behaviortreeactionhandler.md",
       "hash": "65c74e3b44a2fa4fd76cb2655b946ff500f5c5dff6bc6a319de3e750262d9e8d"
     },
+    "https://developer.apple.com/tutorials/data/documentation/realitykit/behaviortreeactionhandler/actionendedwithresult(event:)-132bd.json": {
+      "etag": "\"1a2c-65d55e6c0f8ed-df\"",
+      "file_path": "documentation/RealityKit/behaviortreeactionhandler/actionendedwithresult(event)-132bd.md",
+      "hash": "febf9b2bb07221e03d82528e19dc95e03b76d8a5a5e907ca18206b46eabf28cd"
+    },
     "https://developer.apple.com/tutorials/data/documentation/realitykit/behaviortreeactionhandler/actionendedwithresult(event:).json": {
       "etag": "\"2928-65d55e6c0f8ed-df\"",
       "file_path": "documentation/RealityKit/behaviortreeactionhandler/actionendedwithresult(event).md",
       "hash": "e7632d31017f824eab614fc156b522fefebaef16c22f29e1cfe70b9439e128d4"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/realitykit/behaviortreeactionhandler/actionpausedwithresult(event:)-5m2uk.json": {
+      "etag": "\"1a37-65d55e6c0f8ed-df\"",
+      "file_path": "documentation/RealityKit/behaviortreeactionhandler/actionpausedwithresult(event)-5m2uk.md",
+      "hash": "e496b4046748c61d2a6d92c26a3160bfcedc16572ff2c4a1c86140fa77c97987"
     },
     "https://developer.apple.com/tutorials/data/documentation/realitykit/behaviortreeactionhandler/actionpausedwithresult(event:).json": {
       "etag": "\"2dc4-65d55e6c0f8ed-df\"",
       "file_path": "documentation/RealityKit/behaviortreeactionhandler/actionpausedwithresult(event).md",
       "hash": "e298e12ef79f0c8098998f1ca9fe541a4e504648f48ae494aca8082860f2f75e"
     },
+    "https://developer.apple.com/tutorials/data/documentation/realitykit/behaviortreeactionhandler/actionresumedwithresult(event:)-60o3s.json": {
+      "etag": "\"1a42-65d55e6c0f8ed-df\"",
+      "file_path": "documentation/RealityKit/behaviortreeactionhandler/actionresumedwithresult(event)-60o3s.md",
+      "hash": "2b9a9898be1efa598c110a311e3c0e86a1e225df22c3d64947230ad9fca6b349"
+    },
     "https://developer.apple.com/tutorials/data/documentation/realitykit/behaviortreeactionhandler/actionresumedwithresult(event:).json": {
       "etag": "\"2dcf-65d55e6c0f8ed-df\"",
       "file_path": "documentation/RealityKit/behaviortreeactionhandler/actionresumedwithresult(event).md",
       "hash": "049ba936a3a6a46e4676287c494745e800b5198bfa79bb403f61254f42e8d47f"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/realitykit/behaviortreeactionhandler/actionskippedwithresult(event:)-4y64m.json": {
+      "etag": "\"1a42-65d55e6c0f8ed-df\"",
+      "file_path": "documentation/RealityKit/behaviortreeactionhandler/actionskippedwithresult(event)-4y64m.md",
+      "hash": "45340a9c6f6818dad367d399abf7d7dea401d1a5617191ee47796ffa8ca93e0f"
     },
     "https://developer.apple.com/tutorials/data/documentation/realitykit/behaviortreeactionhandler/actionskippedwithresult(event:).json": {
       "etag": "\"293e-65d55e6c0f8ed-df\"",
       "file_path": "documentation/RealityKit/behaviortreeactionhandler/actionskippedwithresult(event).md",
       "hash": "2a4e89674a131cfb07184aaba6c4c7231d6ec3cc77b8399cc8d47deaca068e7e"
     },
+    "https://developer.apple.com/tutorials/data/documentation/realitykit/behaviortreeactionhandler/actionstartedwithresult(event:)-6p3bc.json": {
+      "etag": "\"1a42-65d55e6c0f8ed-df\"",
+      "file_path": "documentation/RealityKit/behaviortreeactionhandler/actionstartedwithresult(event)-6p3bc.md",
+      "hash": "309cd9ae9f3de1a7bde597e193ef23b1915506544756ab716b9de6d4fc08a916"
+    },
     "https://developer.apple.com/tutorials/data/documentation/realitykit/behaviortreeactionhandler/actionstartedwithresult(event:).json": {
       "etag": "\"2dcf-65d55e6c0f8ed-df\"",
       "file_path": "documentation/RealityKit/behaviortreeactionhandler/actionstartedwithresult(event).md",
       "hash": "a0e94c51757bb4bcc9073e6033d119e86b96831fdf6bbb7dda7989121d90d645"
     },
+    "https://developer.apple.com/tutorials/data/documentation/realitykit/behaviortreeactionhandler/actionterminatedwithresult(event:)-20jf9.json": {
+      "etag": "\"1a63-65d55e6c0f8ed-df\"",
+      "file_path": "documentation/RealityKit/behaviortreeactionhandler/actionterminatedwithresult(event)-20jf9.md",
+      "hash": "5d5d1300c37dc4e5691686491ef5b6079efea3840f2c350abbaaca46aa276a4c"
+    },
     "https://developer.apple.com/tutorials/data/documentation/realitykit/behaviortreeactionhandler/actionterminatedwithresult(event:).json": {
       "etag": "\"295f-65d55e6c0f8ed-df\"",
       "file_path": "documentation/RealityKit/behaviortreeactionhandler/actionterminatedwithresult(event).md",
       "hash": "b91cb797faadfcb693b5bd35c145e582f6c7cbc90717e6df7f6e272ef9f78268"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/realitykit/behaviortreeactionhandler/actionupdatedwithresult(event:)-198m4.json": {
+      "etag": "\"1a42-65d55e6c0f8ed-df\"",
+      "file_path": "documentation/RealityKit/behaviortreeactionhandler/actionupdatedwithresult(event)-198m4.md",
+      "hash": "688f14fcde5b701dfaad128b0fbc5c5cb780b64863eaab1516408b7682eff872"
     },
     "https://developer.apple.com/tutorials/data/documentation/realitykit/behaviortreeactionhandler/actionupdatedwithresult(event:).json": {
       "etag": "\"2dcf-65d55e6c0f8ed-df\"",
@@ -40687,10 +41017,20 @@
       "file_path": "documentation/RealityKit/entityaction/eventparametertype.md",
       "hash": "a67f93d5ee14859573727f93ec438144ecc160d1c3b5ebb420202a1d1a770e4a"
     },
+    "https://developer.apple.com/tutorials/data/documentation/realitykit/entityaction/isadditive-7cp6g.json": {
+      "etag": "\"15f0-65d55e744453b-df\"",
+      "file_path": "documentation/RealityKit/entityaction/isadditive-7cp6g.md",
+      "hash": "732a0d23545563a29a6ecb806e2208c43a77dbe5d3fd684795bcde54338d01a2"
+    },
     "https://developer.apple.com/tutorials/data/documentation/realitykit/entityaction/isadditive.json": {
       "etag": "\"1997-65d55e744453b-df\"",
       "file_path": "documentation/RealityKit/entityaction/isadditive.md",
       "hash": "6a082583c355b6ec30d8b943ee6e8db46da2d3ab9fe9859381d024b0a804a54e"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/realitykit/entityaction/isreversible-7w6p0.json": {
+      "etag": "\"13f7-65d55e744453b-df\"",
+      "file_path": "documentation/RealityKit/entityaction/isreversible-7w6p0.md",
+      "hash": "76d892b803df06b9eaabb7b245f468d7886a223401ac86347e2e993802a1c2df"
     },
     "https://developer.apple.com/tutorials/data/documentation/realitykit/entityaction/isreversible.json": {
       "etag": "\"17b6-65d55e744453b-df\"",
@@ -40722,15 +41062,30 @@
       "file_path": "documentation/RealityKit/entitycollection.md",
       "hash": "af0b152742af45af6f5bf93075456a3349fd2904b3a2915db40c820f3564c6ea"
     },
+    "https://developer.apple.com/tutorials/data/documentation/realitykit/entitycollection/append(_:)-8ughl.json": {
+      "etag": "\"1543-65d55e760bb6a-df\"",
+      "file_path": "documentation/RealityKit/entitycollection/append(_)-8ughl.md",
+      "hash": "dc0e9fcf47b5532b33e0b92f4fc44a6d1255b802df18d7c3139775d7f659e3f4"
+    },
     "https://developer.apple.com/tutorials/data/documentation/realitykit/entitycollection/append(_:).json": {
       "etag": "\"18dd-65d55e760bb6a-df\"",
       "file_path": "documentation/RealityKit/entitycollection/append(_).md",
       "hash": "a1835949f7a9f0f2cf92b512add4c13c49fc53eb7375737aa61de752753c18c4"
     },
+    "https://developer.apple.com/tutorials/data/documentation/realitykit/entitycollection/append(contentsof:)-9g9w5.json": {
+      "etag": "\"1d87-65d55e760bb6a-df\"",
+      "file_path": "documentation/RealityKit/entitycollection/append(contentsof)-9g9w5.md",
+      "hash": "6f068eb7ebf276e4c9e91340ef0c9ca56c2c872b07b7f347377c697665b0c5e3"
+    },
     "https://developer.apple.com/tutorials/data/documentation/realitykit/entitycollection/append(contentsof:).json": {
       "etag": "\"21ed-65d55e760bb6a-df\"",
       "file_path": "documentation/RealityKit/entitycollection/append(contentsof).md",
       "hash": "3e764a85cd0d07cb4f26ece1ecfa0b19c0099ea44aa77c00f1c20ee6cf907751"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/realitykit/entitycollection/insert(_:beforeindex:)-1cpdw.json": {
+      "etag": "\"1d18-65d55e760bb6a-df\"",
+      "file_path": "documentation/RealityKit/entitycollection/insert(_,beforeindex)-1cpdw.md",
+      "hash": "7d3d3f8d6c12f03db011189fc71de6fb6b0479b417c0ba8cb1c8f467c1ae1c00"
     },
     "https://developer.apple.com/tutorials/data/documentation/realitykit/entitycollection/insert(_:beforeindex:).json": {
       "etag": "\"2274-65d55e760bb6a-df\"",
@@ -40742,6 +41097,11 @@
       "file_path": "documentation/RealityKit/entitycollection/insert(contentsof,beforeindex).md",
       "hash": "8ead2d5916d99cb2d09896f0939c586ab948f6e393ccb92ac44dd4bd4788a3e1"
     },
+    "https://developer.apple.com/tutorials/data/documentation/realitykit/entitycollection/remove(_:)-8nj5y.json": {
+      "etag": "\"1529-65d55e760bb6a-df\"",
+      "file_path": "documentation/RealityKit/entitycollection/remove(_)-8nj5y.md",
+      "hash": "28d0fc16ba26da67014fe0a371dd934f912b01315ead952194bf77f7bb56edfe"
+    },
     "https://developer.apple.com/tutorials/data/documentation/realitykit/entitycollection/remove(_:).json": {
       "etag": "\"18b2-65d55e760bb6a-df\"",
       "file_path": "documentation/RealityKit/entitycollection/remove(_).md",
@@ -40752,15 +41112,30 @@
       "file_path": "documentation/RealityKit/entitycollection/remove(at).md",
       "hash": "8492f8be509f9731f5c1b8662050848bc981703c8dba3d2da5f519ed77fb70c6"
     },
+    "https://developer.apple.com/tutorials/data/documentation/realitykit/entitycollection/removeall()-6xkp8.json": {
+      "etag": "\"ea8-65d55e760bb6a-df\"",
+      "file_path": "documentation/RealityKit/entitycollection/removeall()-6xkp8.md",
+      "hash": "dafa935c6f332053455959186bfa1cdbb19bb47a809dece815be41b03df24db1"
+    },
     "https://developer.apple.com/tutorials/data/documentation/realitykit/entitycollection/removeall().json": {
       "etag": "\"11c4-65d55e760bb6a-df\"",
       "file_path": "documentation/RealityKit/entitycollection/removeall().md",
       "hash": "9ad527ce10683c282fa04ec19fb86cb79f76189e12291036e8f43cb6a39a43e7"
     },
+    "https://developer.apple.com/tutorials/data/documentation/realitykit/entitycollection/removeall(where:)-6pdng.json": {
+      "etag": "\"1aa2-65d55e760bb6a-df\"",
+      "file_path": "documentation/RealityKit/entitycollection/removeall(where)-6pdng.md",
+      "hash": "e572b2cf1022aa4256cf7405ae4e56c4fb7e3d5b9b8f619b243a6055e4798246"
+    },
     "https://developer.apple.com/tutorials/data/documentation/realitykit/entitycollection/removeall(where:).json": {
       "etag": "\"1f33-65d55e760bb6a-df\"",
       "file_path": "documentation/RealityKit/entitycollection/removeall(where).md",
       "hash": "8120500a5c93ccd46fc4cdea19b5fbde4d6d081141bbf3812b9c56dd1a0b6757"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/realitykit/entitycollection/replaceall(_:)-91uho.json": {
+      "etag": "\"1d1f-65d55e760bb6a-df\"",
+      "file_path": "documentation/RealityKit/entitycollection/replaceall(_)-91uho.md",
+      "hash": "cefb57a00f0934abe6deada5ceaed78efada28a8cc92da9f2229b41b7fdb8fae"
     },
     "https://developer.apple.com/tutorials/data/documentation/realitykit/entitycollection/replaceall(_:).json": {
       "etag": "\"2123-65d55e760bb6a-df\"",
@@ -40841,6 +41216,11 @@
       "etag": "\"17b6-65d55e768ffae-df\"",
       "file_path": "documentation/RealityKit/entitygesturerecognizer/entity.md",
       "hash": "40d583e38ac12822ed7af999df31520361ab13d36bebf2eb380eba7660cec307"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/realitykit/entitygesturerecognizer/location(in:)-2aecy.json": {
+      "etag": "\"1f50-65d55e768ffae-df\"",
+      "file_path": "documentation/RealityKit/entitygesturerecognizer/location(in)-2aecy.md",
+      "hash": "9a11fc73c24208a82b4179a82a3254c15fb13e3d9a06e0eca5b4ab342ef7fb10"
     },
     "https://developer.apple.com/tutorials/data/documentation/realitykit/entitygesturerecognizer/location(in:).json": {
       "etag": "\"2b6c-65d55e768ffae-df\"",
@@ -41502,6 +41882,11 @@
       "file_path": "documentation/RealityKit/forceeffectprotocol/forcemode.md",
       "hash": "6d7c7f67caa5f9064c238784082b6b2ac20a2deb3c289228ca3477c3893d9a79"
     },
+    "https://developer.apple.com/tutorials/data/documentation/realitykit/forceeffectprotocol/parametertypes-whuc.json": {
+      "etag": "\"13c3-65d55e6caefc4-df\"",
+      "file_path": "documentation/RealityKit/forceeffectprotocol/parametertypes-whuc.md",
+      "hash": "439f5f235aa353981f24c9a1b735850cd70fc676f3aa38a335454ca76188a697"
+    },
     "https://developer.apple.com/tutorials/data/documentation/realitykit/forceeffectprotocol/parametertypes.json": {
       "etag": "\"1795-65d55e6c90202-df\"",
       "file_path": "documentation/RealityKit/forceeffectprotocol/parametertypes.md",
@@ -41516,6 +41901,11 @@
       "etag": "\"2a8d-65d55e6c90202-df\"",
       "file_path": "documentation/RealityKit/forceeffectprotocol/register(_).md",
       "hash": "483ce82fb714327d4f622193fa9a2e7f2242f3b84a5236f0ba665956543b79c8"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/realitykit/forceeffectprotocol/update(parameters:)-3gvs6.json": {
+      "etag": "\"1503-65d55e6caefc4-df\"",
+      "file_path": "documentation/RealityKit/forceeffectprotocol/update(parameters)-3gvs6.md",
+      "hash": "52e342a2472eaeb84594c25700f6c5a5f5244aa33dcd10be8e25e90cfaef76a3"
     },
     "https://developer.apple.com/tutorials/data/documentation/realitykit/forceeffectprotocol/update(parameters:).json": {
       "etag": "\"2bf9-65d55e6c90202-df\"",
@@ -49181,6 +49571,11 @@
       "file_path": "documentation/RealityKit/meshdeformer.md",
       "hash": "cbe76536bb38fc22b2f10deecba84c1b458243555c0df2e2592b747fdd8a03a6"
     },
+    "https://developer.apple.com/tutorials/data/documentation/realitykit/meshdeformer/deform(parameter:)-32cx7.json": {
+      "etag": "\"168d-65d55e7542280-df\"",
+      "file_path": "documentation/RealityKit/meshdeformer/deform(parameter)-32cx7.md",
+      "hash": "ab7d0d217e44770197e7a0eda13e12418a13d3b5781b85fb91e56cd03c5659fa"
+    },
     "https://developer.apple.com/tutorials/data/documentation/realitykit/meshdeformer/deform(parameter:).json": {
       "etag": "\"1f6b-65d55e7542280-df\"",
       "file_path": "documentation/RealityKit/meshdeformer/deform(parameter).md",
@@ -49196,20 +49591,40 @@
       "file_path": "documentation/RealityKit/meshdeformer/isdeformerequal(other).md",
       "hash": "6c9b92239fad1002263961d20142fb7de42f1c4fa56fd0dbc3f016af91d1d924"
     },
+    "https://developer.apple.com/tutorials/data/documentation/realitykit/meshdeformer/mode-61otn.json": {
+      "etag": "\"1544-65d55e7542280-df\"",
+      "file_path": "documentation/RealityKit/meshdeformer/mode-61otn.md",
+      "hash": "618fdc953328fb5d538baf2c10a8a939e63e4c5f6503fccf44a52fb060904e91"
+    },
     "https://developer.apple.com/tutorials/data/documentation/realitykit/meshdeformer/mode-6ci1w.json": {
       "etag": "\"1bd9-65d55e7557a58-df\"",
       "file_path": "documentation/RealityKit/meshdeformer/mode-6ci1w.md",
       "hash": "df815262c89ef859af5d1a4215c4d429d73dc3fbdc4f85908aabe242c4c6f84e"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/realitykit/meshdeformer/mode-99czy.json": {
+      "etag": "\"1471-65d55e7542280-df\"",
+      "file_path": "documentation/RealityKit/meshdeformer/mode-99czy.md",
+      "hash": "dcb1d1a1081f6a94bfa396cd009808830e66449f13133918c40a72b6dc179692"
     },
     "https://developer.apple.com/tutorials/data/documentation/realitykit/meshdeformer/mode-v9mj.json": {
       "etag": "\"1c8b-65d55e7557a58-df\"",
       "file_path": "documentation/RealityKit/meshdeformer/mode-v9mj.md",
       "hash": "dde2baf05fb35ad748620991a7f44240418774513f4d7a7d7f3ccb8c17f98cd6"
     },
+    "https://developer.apple.com/tutorials/data/documentation/realitykit/meshdeformer/options-3uibo.json": {
+      "etag": "\"1437-65d55e7542280-df\"",
+      "file_path": "documentation/RealityKit/meshdeformer/options-3uibo.md",
+      "hash": "25cc55a282aec39d560f544725bdc53c0bb7a43228a2e1679ea1550dcfae73ca"
+    },
     "https://developer.apple.com/tutorials/data/documentation/realitykit/meshdeformer/options.json": {
       "etag": "\"17b9-65d55e7542280-df\"",
       "file_path": "documentation/RealityKit/meshdeformer/options.md",
       "hash": "88a43a0d240f294eb90eb45034c409a597ccb9fdaf817aabff026bb1a7dc40db"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/realitykit/meshdeformer/type-8vjw9.json": {
+      "etag": "\"1316-65d55e7542280-df\"",
+      "file_path": "documentation/RealityKit/meshdeformer/type-8vjw9.md",
+      "hash": "703d847b58bd10246a5662eca024fc490ec3424183e4d8eaaaf779267db22edb"
     },
     "https://developer.apple.com/tutorials/data/documentation/realitykit/meshdeformer/type-nxsx.json": {
       "etag": "\"1ba9-65d55e7542280-df\"",
@@ -55831,6 +56246,11 @@
       "file_path": "documentation/RealityKit/postprocesseffect/postprocess(context).md",
       "hash": "97f414f7c5430e3139da0ca542fd6180091186de23883b196fbf378906a15c45"
     },
+    "https://developer.apple.com/tutorials/data/documentation/realitykit/postprocesseffect/prepare(for:)-69w45.json": {
+      "etag": "\"147b-65d55e6d225b9-df\"",
+      "file_path": "documentation/RealityKit/postprocesseffect/prepare(for)-69w45.md",
+      "hash": "6b8de2f486bb010141c74bcf81ae7f9e6b8b4ca04e2839dc621e190fb76c2951"
+    },
     "https://developer.apple.com/tutorials/data/documentation/realitykit/postprocesseffect/prepare(for:).json": {
       "etag": "\"1e98-65d55e6d225b9-df\"",
       "file_path": "documentation/RealityKit/postprocesseffect/prepare(for).md",
@@ -59966,6 +60386,11 @@
       "file_path": "documentation/RealityKit/system.md",
       "hash": "b0e03fdc566dc2bebc467e0ffb14987945edf6e8748961c10ddc9ae6b1cbe6e0"
     },
+    "https://developer.apple.com/tutorials/data/documentation/realitykit/system/dependencies-2d7zt.json": {
+      "etag": "\"1664-65d55e71b8501-df\"",
+      "file_path": "documentation/RealityKit/system/dependencies-2d7zt.md",
+      "hash": "9ebd9c4a0a835b4c645a01f272e0db055a88819d6d6c3fc6d99f2cbad59b915d"
+    },
     "https://developer.apple.com/tutorials/data/documentation/realitykit/system/dependencies.json": {
       "etag": "\"2559-65d55e71b8501-df\"",
       "file_path": "documentation/RealityKit/system/dependencies.md",
@@ -59980,6 +60405,11 @@
       "etag": "\"1c70-65d55e71b8501-df\"",
       "file_path": "documentation/RealityKit/system/registersystem().md",
       "hash": "cca33bf2665f8d3140b167597a05cf5e2f594b307b6a95d76fdbe998d856c081"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/realitykit/system/update(context:)-3d0qz.json": {
+      "etag": "\"1482-65d55e71b8501-df\"",
+      "file_path": "documentation/RealityKit/system/update(context)-3d0qz.md",
+      "hash": "ebd6a5d4c9fd30be7ab6d797a39b85bba194bd9e788290159243b98e6218db74"
     },
     "https://developer.apple.com/tutorials/data/documentation/realitykit/system/update(context:).json": {
       "etag": "\"32f3-65d55e71b8501-df\"",
@@ -61823,8 +62253,8 @@
   },
   "metadata": {
     "render": {
-      "version": 1
+      "version": 2
     },
-    "total_pages": 12367
+    "total_pages": 12453
   }
 }

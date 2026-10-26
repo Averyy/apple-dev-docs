@@ -89,6 +89,9 @@ Note that the composition picker view does not automatically refresh its content
   Sets the number of rows in the composition picker view.
 - [func numberOfRows() -> Int](./qccompositionpickerview/numberofrows%28%29.md)
   Retrieves the number of rows in the composition picker view.
+### Notifications
+- [QCCompositionPickerViewDidSelectCompositionNotification](./qccompositionpickerviewdidselectcompositionnotification.md)
+  Posted when the user selects a composition in the picker view.
 
 ## Relationships
 

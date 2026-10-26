@@ -51,6 +51,8 @@ context.becomeCurrent()
   The user’s current subscription status.
 - [INMediaUserContext.SubscriptionStatus](./inmediausercontext/subscriptionstatus-swift.enum.md)
   Constants that describe the current description status.
+- [numberOfLibraryItems](./inmediausercontext/numberoflibraryitems-881cf.md)
+  An approximate number of relevant items available in the users library.
 
 ## Relationships
 

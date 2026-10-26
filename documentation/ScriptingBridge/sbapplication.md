@@ -65,6 +65,13 @@ You rarely instantiate `SBApplication` objects directly. Instead, you get the sh
 ### Initializers
 - [init?(URL: URL)](./sbapplication/init%28url%29-2kr06.md)
 - [init?(URL: URL)](./sbapplication/init%28url%29-4bno1.md)
+### Getting a Scriptable Application Instance
+- [+ applicationWithBundleIdentifier:](./sbapplication/applicationwithbundleidentifier_.md)
+  Returns the shared instance representing the target application specified by its bundle identifier.
+- [+ applicationWithProcessIdentifier:](./sbapplication/applicationwithprocessidentifier_.md)
+  Returns the shared instance representing a target application specified by its process identifier.
+- [+ applicationWithURL:](./sbapplication/applicationwithurl_.md)
+  Returns the shared instance representing a target application specified by the given URL.
 
 ## Relationships
 

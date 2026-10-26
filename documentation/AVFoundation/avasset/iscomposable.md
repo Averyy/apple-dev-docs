@@ -30,6 +30,20 @@ var isComposable: Bool { get }
 
 This property value is [`true`](../../Swift/true.md) you can use the asset as a segment within an [`AVCompositionTrack`](../avcompositiontrack.md) object.
 
+## See Also
+
+### Accessing suitability
+- [playable](./isplayable.md)
+  A Boolean value that indicates whether the asset has playable content.
+- [exportable](./isexportable.md)
+  A Boolean value that indicates whether you can export this asset using an export session.
+- [readable](./isreadable.md)
+  A Boolean value that indicates whether you can extract the asset’s media data using an asset reader.
+- [compatibleWithAirPlayVideo](./iscompatiblewithairplayvideo.md)
+  A Boolean value that indicates whether the asset is compatible with AirPlay Video.
+- [compatibleWithSavedPhotosAlbum](./iscompatiblewithsavedphotosalbum.md)
+  A Boolean value that indicates whether you can write the asset to the Saved Photos album.
+
 
 ---
 

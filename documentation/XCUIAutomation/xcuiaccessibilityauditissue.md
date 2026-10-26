@@ -50,6 +50,7 @@ class XCUIAccessibilityAuditIssue
 ### Performing an accessibility audit
 - [func performAccessibilityAudit(for: XCUIAccessibilityAuditType, ((XCUIAccessibilityAuditIssue) throws -> Bool)?) throws](./xcuiapplication/performaccessibilityaudit%28for,_%29.md)
 - [struct XCUIAccessibilityAuditType](./xcuiaccessibilityaudittype.md)
+- [- performAccessibilityAuditWithAuditTypes:issueHandler:error:](./xcuiapplication/performaccessibilityauditwithaudittypes_issuehandler_error_.md)
 
 
 ---

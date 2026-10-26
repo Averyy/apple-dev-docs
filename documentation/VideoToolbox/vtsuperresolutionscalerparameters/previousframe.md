@@ -35,6 +35,8 @@ var previousFrame: VTFrameProcessorFrame? { get }
   Ordering of the input frames in this submission relative to the previous submission.
 - [VTSuperResolutionScalerParameters.SubmissionMode](./submissionmode-swift.enum.md)
   Indicates the order of input frames.
+- [destinationFrame](./destinationframe.md)
+  Destination frame that contains user-allocated pixel buffer that receives the results.
 
 
 ---

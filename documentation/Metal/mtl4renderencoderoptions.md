@@ -44,6 +44,9 @@ Use these options to implement parallel encoding of render passes across multipl
   Configures the render pass to as *resuming*.
 - [static var suspending: MTL4RenderEncoderOptions](./mtl4renderencoderoptions/suspending.md)
   Configures the render pass as *suspending*.
+### Enumeration Cases
+- [MTL4RenderEncoderOptionNone](./mtl4renderencoderoptions/mtl4renderencoderoptionnone.md)
+  Declares that this render pass doesn’t suspend nor resume.
 
 ## Relationships
 
@@ -88,6 +91,8 @@ Use these options to implement parallel encoding of render passes across multipl
   Describes an object containing debug information from Metal to your app after completing a workload.
 - [typealias MTL4CommitFeedbackHandler](./mtl4commitfeedbackhandler.md)
   Defines the block signature for a callback Metal invokes to provide your app feedback after completing a workload.
+- [MTL4CounterHeap](./mtl4counterheap.md)
+  Represents an opaque, driver-controlled section of memory that can store GPU counter data.
 
 
 ---

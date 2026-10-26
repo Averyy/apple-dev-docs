@@ -105,11 +105,29 @@ If the behavior you want to add supplements that of the existing class, you coul
 - [class func localizedStringWithFormat(NSString, any CVarArg...) -> Self](./nsstring/localizedstringwithformat%28_,_%29.md)
 - [typealias unichar](./unichar.md)
   Type for UTF-16 code units.
+- [+ string](./nsstring/string.md)
+  Returns an empty string.
+- [- initWithFormat:](./nsstring/initwithformat_.md)
+  Returns an `NSString` object initialized by using a given format string as a template into which the remaining argument values are substituted.
+- [- initWithFormat:locale:](./nsstring/initwithformat_locale_.md)
+  Returns an `NSString` object initialized by using a given format string as a template into which the remaining argument values are substituted according to given locale.
+- [+ stringWithFormat:](./nsstring/stringwithformat_.md)
+  Returns a string created by using a given format string as a template into which the remaining argument values are substituted.
+- [+ localizedStringWithFormat:](./nsstring/localizedstringwithformat_.md)
+  Returns a string created by using a given format string as a template into which the remaining argument values are substituted according to the current locale.
+- [+ stringWithCharacters:length:](./nsstring/stringwithcharacters_length_.md)
+  Returns a string containing a given number of characters taken from a given C array of UTF-16 code units.
+- [+ stringWithString:](./nsstring/stringwithstring_.md)
+  Returns a string created by copying the characters from another given string.
 ### Creating and Initializing a String from a File
 - [convenience init(contentsOfFile: String, encoding: UInt) throws](./nsstring/init%28contentsoffile,encoding%29.md)
   Returns an `NSString` object initialized by reading data from the file at a given path using a given encoding.
 - [convenience init(contentsOfFile: String, usedEncoding: UnsafeMutablePointer<UInt>?) throws](./nsstring/init%28contentsoffile,usedencoding%29.md)
   Returns an `NSString` object initialized by reading data from the file at a given path and returns by reference the encoding used to interpret the characters.
+- [+ stringWithContentsOfFile:encoding:error:](./nsstring/stringwithcontentsoffile_encoding_error_.md)
+  Returns a string created by reading data from the file at a given path interpreted using a given encoding.
+- [+ stringWithContentsOfFile:usedEncoding:error:](./nsstring/stringwithcontentsoffile_usedencoding_error_.md)
+  Returns a string created by reading data from the file at a given path and returns by reference the encoding used to interpret the file.
 ### Getting a String’s Length
 - [var length: Int](./nsstring/length.md)
   The number of UTF-16 code units in the receiver.
@@ -166,6 +184,8 @@ If the behavior you want to add supplements that of the existing class, you coul
   Returns a new string made by appending a given string to the receiver.
 - [func padding(toLength: Int, withPad: String, startingAt: Int) -> String](./nsstring/padding%28tolength,withpad,startingat%29.md)
   Returns a new string formed from the receiver by either removing characters from the end, or by appending as many occurrences as necessary of a given pad string.
+- [- stringByAppendingFormat:](./nsstring/stringbyappendingformat_.md)
+  Returns a string made by appending to the receiver a string constructed from a given format string and the following arguments.
 ### Changing Case
 - [var lowercased: String](./nsstring/lowercased.md)
   A lowercase representation of the string.
@@ -334,6 +354,8 @@ If the behavior you want to add supplements that of the existing class, you coul
 - [struct StringEncodingDetectionOptionsKey](./stringencodingdetectionoptionskey.md)
 - [NSString Handling Exception Names](./nsstring-handling-exception-names.md)
   These constants define the names of exceptions raised if `NSString` cannot represent a string in a given encoding, or parse a string as a property list.
+- [NSStringEncoding](./nsstringencoding.md)
+  The following constants are provided by `NSString` as possible string encodings.
 ### Working with Paths
 - [class func path(withComponents: [String]) -> String](./nsstring/path%28withcomponents%29.md)
   Returns a string built from the strings in a given array by concatenating them with a path separator between each pair.
@@ -419,6 +441,32 @@ If the behavior you want to add supplements that of the existing class, you coul
   Draws the receiver with the specified options and other display characteristics of the given attributes, within the specified rectangle in the current graphics context.
 - [func boundingRect(with: NSSize, options: NSString.DrawingOptions, attributes: [NSAttributedString.Key : Any]?) -> NSRect](./nsstring/boundingrect%28with,options,attributes%29.md)
   Calculates and returns the bounding rect for the receiver drawn using the given options and display characteristics, within the specified rectangle in the current graphics context.
+- [- sizeWithFont:](./nsstring/sizewithfont_.md)
+  Returns the size of the string if it were to be rendered with the specified font on a single line.
+- [- sizeWithFont:forWidth:lineBreakMode:](./nsstring/sizewithfont_forwidth_linebreakmode_.md)
+  Returns the size of the string if it were to be rendered with the specified font and line attributes on a single line.
+- [- sizeWithFont:minFontSize:actualFontSize:forWidth:lineBreakMode:](./nsstring/sizewithfont_minfontsize_actualfontsize_forwidth_linebreakmode_.md)
+  Returns the size of the string if it were rendered with the specified constraints, including a variable font size, on a single line.
+- [- sizeWithFont:constrainedToSize:](./nsstring/sizewithfont_constrainedtosize_.md)
+  Returns the size of the string if it were rendered and constrained to the specified size.
+- [- sizeWithFont:constrainedToSize:lineBreakMode:](./nsstring/sizewithfont_constrainedtosize_linebreakmode_.md)
+  Returns the size of the string if it were rendered with the specified constraints.
+- [- drawAtPoint:withFont:](./nsstring/drawatpoint_withfont_.md)
+  Draws the string in a single line at the specified point in the current graphics context using the specified font.
+- [- drawAtPoint:forWidth:withFont:lineBreakMode:](./nsstring/drawatpoint_forwidth_withfont_linebreakmode_.md)
+  Draws the string in a single line at the specified point in the current graphics context using the specified font and attributes.
+- [- drawAtPoint:forWidth:withFont:fontSize:lineBreakMode:baselineAdjustment:](./nsstring/drawatpoint_forwidth_withfont_fontsize_linebreakmode_baselineadjustment_.md)
+  Draws the string in a single line at the specified point in the current graphics context using the specified font and attributes.
+- [- drawAtPoint:forWidth:withFont:minFontSize:actualFontSize:lineBreakMode:baselineAdjustment:](./nsstring/drawatpoint_forwidth_withfont_minfontsize_actualfontsize_linebreakmode_baselineadjustment_.md)
+  Draws the string in a single line with the specified font and attributes, adjusting the font attributes as needed to render as much of the text as possible.
+- [- drawInRect:withFont:](./nsstring/drawinrect_withfont_.md)
+  Draws the string in the current graphics context using the specified bounding rectangle and font.
+- [- drawInRect:withFont:lineBreakMode:](./nsstring/drawinrect_withfont_linebreakmode_.md)
+  Draws the string in the current graphics context using the specified bounding rectangle, font, and attributes.
+- [- drawInRect:withFont:lineBreakMode:alignment:](./nsstring/drawinrect_withfont_linebreakmode_alignment_.md)
+  Draws the string in the current graphics context using the specified bounding rectangle, font and attributes.
+- [NSMaximumStringLength](./nsmaximumstringlength.md)
+  Maximum number of characters in an `NSString` object.
 ### Structures
 - [NSString.DrawingOptions](./nsstring/drawingoptions.md)
 ### Initializers
@@ -449,10 +497,27 @@ If the behavior you want to add supplements that of the existing class, you coul
 - [func appendingPathComponent(String, conformingTo: UTType) -> String](./nsstring/appendingpathcomponent%28_,conformingto%29.md)
 - [func appendingPathExtension(for: UTType) -> String](./nsstring/appendingpathextension%28for%29.md)
 - [func sr_sensorForDeletionRecordsFromSensor() -> SRSensor?](./nsstring/sr_sensorfordeletionrecordsfromsensor%28%29.md)
+- [- initWithValidatedFormat:validFormatSpecifiers:arguments:error:](./nsstring/initwithvalidatedformat_validformatspecifiers_arguments_error_.md)
+- [- initWithValidatedFormat:validFormatSpecifiers:error:](./nsstring/initwithvalidatedformat_validformatspecifiers_error_.md)
+- [- initWithValidatedFormat:validFormatSpecifiers:locale:arguments:error:](./nsstring/initwithvalidatedformat_validformatspecifiers_locale_arguments_error_.md)
+- [- initWithValidatedFormat:validFormatSpecifiers:locale:error:](./nsstring/initwithvalidatedformat_validformatspecifiers_locale_error_.md)
 ### Type Methods
 - [class func deferredLocalizedIntentsString(with: String, any CVarArg...) -> NSString](./nsstring/deferredlocalizedintentsstring%28with,_%29.md)
 - [class func deferredLocalizedIntentsString(with: String, table: String, any CVarArg...) -> NSString](./nsstring/deferredlocalizedintentsstring%28with,table,_%29.md)
 - [class func deferredLocalizedIntentsString(with: String, table: String, arguments: CVaListPointer) -> NSString](./nsstring/deferredlocalizedintentsstring%28with,table,arguments%29.md)
+- [+ deferredLocalizedIntentsStringWithFormat:](./nsstring/deferredlocalizedintentsstringwithformat_.md)
+- [+ deferredLocalizedIntentsStringWithFormat:fromTable:](./nsstring/deferredlocalizedintentsstringwithformat_fromtable_.md)
+- [+ deferredLocalizedIntentsStringWithFormat:fromTable:arguments:](./nsstring/deferredlocalizedintentsstringwithformat_fromtable_arguments_.md)
+- [+ localizedStringWithValidatedFormat:validFormatSpecifiers:error:](./nsstring/localizedstringwithvalidatedformat_validformatspecifiers_error_.md)
+- [+ stringWithCString:encoding:](./nsstring/stringwithcstring_encoding_.md)
+  Returns a string containing the bytes in a given C array, interpreted according to a given encoding.
+- [+ stringWithContentsOfURL:encoding:error:](./nsstring/stringwithcontentsofurl_encoding_error_.md)
+  Returns a string created by reading data from the file at a given path interpreted using a given encoding.
+- [+ stringWithContentsOfURL:usedEncoding:error:](./nsstring/stringwithcontentsofurl_usedencoding_error_.md)
+  Returns a string created by reading data from the file at a given URL and returns by reference the encoding used to interpret the data.
+- [+ stringWithUTF8String:](./nsstring/stringwithutf8string_.md)
+  Returns a string created by copying the data from a given C array of UTF8-encoded bytes.
+- [+ stringWithValidatedFormat:validFormatSpecifiers:error:](./nsstring/stringwithvalidatedformat_validformatspecifiers_error_.md)
 ### Default Implementations
 - [ExpressibleByStringLiteral Implementations](./nsstring/expressiblebystringliteral-implementations.md)
 - [NSString Implementations](./nsstring/nsstring-implementations.md)
@@ -463,6 +528,7 @@ If the behavior you want to add supplements that of the existing class, you coul
 - [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Inherited By
 - [NSMutableString](./nsmutablestring.md)
+- [NSSimpleCString](./nssimplecstring.md)
 ### Conforms To
 - [CKRecordValue](../CloudKit/ckrecordvalue-c.protocol.md)
 - [CKRecordValueProtocol](../CloudKit/ckrecordvalueprotocol.md)
@@ -486,6 +552,12 @@ If the behavior you want to add supplements that of the existing class, you coul
 - [NSPasteboardReading](../AppKit/nspasteboardreading.md)
 - [NSPasteboardWriting](../AppKit/nspasteboardwriting.md)
 - [NSSecureCoding](./nssecurecoding.md)
+
+## See Also
+
+### Strings
+- [NSMutableString](./nsmutablestring.md)
+  A dynamic plain-text Unicode string object.
 
 
 ---

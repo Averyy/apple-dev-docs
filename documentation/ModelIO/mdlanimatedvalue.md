@@ -35,6 +35,7 @@ class MDLAnimatedValue
 ### Instance Methods
 - [func clear()](./mdlanimatedvalue/clear%28%29.md)
 - [func isAnimated() -> Bool](./mdlanimatedvalue/isanimated%28%29.md)
+- [- getTimes:maxCount:](./mdlanimatedvalue/gettimes_maxcount_.md)
 
 ## Relationships
 

@@ -8,12 +8,12 @@ Incorporate standard buttons and interfaces into your user interface to offer ea
 ## Topics
 
 ### Shortcut Button
-- [class INUIAddVoiceShortcutButton](https://developer.apple.com/documentation/intentsui/inuiaddvoiceshortcutbutton)
+- [class INUIAddVoiceShortcutButton](../IntentsUI/inuiaddvoiceshortcutbutton.md)
   A button that allows the user to add or edit a shortcut.
 ### Shortcut Editors
-- [class INUIAddVoiceShortcutViewController](https://developer.apple.com/documentation/intentsui/inuiaddvoiceshortcutviewcontroller)
+- [class INUIAddVoiceShortcutViewController](../IntentsUI/inuiaddvoiceshortcutviewcontroller.md)
   A view controller that guides the user through the steps for adding a shortcut to Siri.
-- [class INUIEditVoiceShortcutViewController](https://developer.apple.com/documentation/intentsui/inuieditvoiceshortcutviewcontroller)
+- [class INUIEditVoiceShortcutViewController](../IntentsUI/inuieditvoiceshortcutviewcontroller.md)
   A view controller that lets the user edit or remove an existing shortcut.
 
 ## See Also

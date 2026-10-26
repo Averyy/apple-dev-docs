@@ -48,6 +48,8 @@ If the value of this property is [`false`](../../Swift/false.md), players can ea
   A Boolean value that states whether the achievement is initially visible to players.
 - [var rarityPercent: Double?](./raritypercent-4bh6k.md)
   The percentage of players of this game that earned the achievement.
+- [rarityPercent](./raritypercent-3zqw6.md)
+  The percentage of players of this game that earned the achievement.
 
 
 ---

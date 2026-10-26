@@ -44,6 +44,9 @@ class MPSNNForwardLossNode
 - [func gradientFilter(withSources: [MPSNNImageNode]) -> MPSNNLossGradientNode](./mpsnnforwardlossnode/gradientfilter%28withsources%29.md)
 - [func gradientFilters(withSource: MPSNNImageNode) -> [MPSNNLossGradientNode]](./mpsnnforwardlossnode/gradientfilters%28withsource%29.md)
 - [func gradientFilters(withSources: [MPSNNImageNode]) -> [MPSNNLossGradientNode]](./mpsnnforwardlossnode/gradientfilters%28withsources%29.md)
+### Type Methods
+- [+ nodeWithSource:labels:lossDescriptor:](./mpsnnforwardlossnode/nodewithsource_labels_lossdescriptor_.md)
+- [+ nodeWithSources:lossDescriptor:](./mpsnnforwardlossnode/nodewithsources_lossdescriptor_.md)
 
 ## Relationships
 

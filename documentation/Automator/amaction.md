@@ -58,6 +58,8 @@ Subclassing [`AMAction`](./amaction.md) is not recommended. For most situations 
 ### Performing Logging
 - [enum AMLogLevel](./amloglevel.md)
   Logging levels that Automator supports.
+- [- logMessageWithLevel:format:](./amaction/logmessagewithlevel_format_.md)
+  Displays a message in Automator’s log area.
 ### Updating Action Parameters
 - [func parametersUpdated()](./amaction/parametersupdated%28%29.md)
   Requests the action to update its user interface from its stored parameters, which have changed.
@@ -83,6 +85,11 @@ Subclassing [`AMAction`](./amaction.md) is not recommended. For most situations 
   Invoked by Automator when the receiving action is removed from a workflow, allowing it to perform cleanup operations.
 ### Initializers
 - [init(contentsOfURL: URL) throws](./amaction/init%28contentsofurl%29.md)
+### Deprecated
+- [- runWithInput:fromAction:error:](./amaction/runwithinput_fromaction_error_.md)
+  Requests the action to perform its task using the specified input from the specified action.
+- [- didFinishRunningWithError:](./amaction/didfinishrunningwitherror_.md)
+  Sent by the action to itself when it has finished running asynchronously.
 
 ## Relationships
 

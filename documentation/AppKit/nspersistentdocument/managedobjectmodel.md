@@ -43,6 +43,8 @@ In applications built in OS X v10.4, by default the Core Data framework creates 
   Configures the receiver’s persistent store coordinator with the appropriate stores for a given URL.
 - [func persistentStoreType(forFileType: String) -> String](./persistentstoretype%28forfiletype%29.md)
   Returns the type of persistent store associated with the specified file type.
+- [- configurePersistentStoreCoordinatorForURL:ofType:error:](./configurepersistentstorecoordinatorforurl_oftype_error_.md)
+  Configures the receiver’s persistent store coordinator for a given URL and document type.
 
 
 ---

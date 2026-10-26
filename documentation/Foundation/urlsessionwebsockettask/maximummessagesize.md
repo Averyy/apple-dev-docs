@@ -38,6 +38,10 @@ This value includes the sum of all bytes from continuation frames. Receive calls
   An enumeration of the types of messages sent and received.
 - [func receive(completionHandler: (Result<URLSessionWebSocketTask.Message, any Error>) -> Void)](./receive%28completionhandler%29.md)
   Reads a WebSocket message once all the frames of the message are available.
+- [- sendMessage:completionHandler:](../nsurlsessionwebsockettask/sendmessage_completionhandler_.md)
+  Sends a WebSocket message, receiving the result in a completion handler.
+- [- receiveMessageWithCompletionHandler:](../nsurlsessionwebsockettask/receivemessagewithcompletionhandler_.md)
+  Reads a WebSocket message once all the frames of the message are available.
 
 
 ---

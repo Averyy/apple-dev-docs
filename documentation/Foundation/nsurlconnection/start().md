@@ -38,6 +38,8 @@ Calling this method is necessary only if you create a connection with the [`init
   Returns an initialized URL connection and begins to load the data for the URL request, if specified.
 - [class func sendAsynchronousRequest(URLRequest, queue: OperationQueue, completionHandler: (URLResponse?, Data?, (any Error)?) -> Void)](./sendasynchronousrequest%28_,queue,completionhandler%29.md)
   Loads the data for a URL request and executes a handler block on an operation queue when the request completes or fails.
+- [+ connectionWithRequest:delegate:](./connectionwithrequest_delegate_.md)
+  Creates and returns an initialized URL connection and begins to load the data for the URL request.
 
 
 ---

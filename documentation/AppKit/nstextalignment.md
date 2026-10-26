@@ -34,6 +34,17 @@ enum NSTextAlignment : NSInteger;
   Text uses the default alignment for the current localization of the app.
 ### Initializers
 - [init?(rawValue: Int)](./nstextalignment/init%28rawvalue%29.md)
+### Deprecated
+- [NSLeftTextAlignment](./nslefttextalignment.md)
+  Text is visually left-aligned.
+- [NSRightTextAlignment](./nsrighttextalignment.md)
+  Text is visually right-aligned.
+- [NSCenterTextAlignment](./nscentertextalignment.md)
+  Text is visually center-aligned.
+- [NSJustifiedTextAlignment](./nsjustifiedtextalignment.md)
+  Text is justified.
+- [NSNaturalTextAlignment](./nsnaturaltextalignment.md)
+  Text uses the default alignment for the current localization of the app.
 
 ## Relationships
 

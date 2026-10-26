@@ -1,0 +1,20 @@
+# dir
+
+**Framework**: Endpoint Security  
+**Kind**: property  
+**Role**: Instance Property
+
+**Availability**:
+- Mac Catalyst
+- macOS
+
+## Declaration
+
+```c
+es_file_t * dir;
+```
+
+
+---
+
+*[View on Apple Developer](https://developer.apple.com/documentation/endpointsecurity/es_event_rename_t/destination/new_path/dir)*

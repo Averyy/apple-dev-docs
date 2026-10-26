@@ -74,6 +74,13 @@ For apps linked before iOS 17, this method expects `URLString` to contain only c
   Returns a new URL object initialized with a C string representing a local file system path.
 - [func getFileSystemRepresentation(UnsafeMutablePointer<CChar>, maxLength: Int) -> Bool](./getfilesystemrepresentation%28_,maxlength%29.md)
   Fills the provided buffer with a C string representing a local file system path.
+- [+ URLWithString:encodingInvalidCharacters:](./urlwithstring_encodinginvalidcharacters_.md)
+  Creates and returns an instance from the provided string, optionally IDNA- and percent-encoding any invalid characters.
+- [+ URLWithString:relativeToURL:](./urlwithstring_relativetourl_.md)
+  Creates and returns an NSURL object initialized with a base URL and a relative string.
+### Related Documentation
+- [+ URLWithString:](./urlwithstring_.md)
+  Creates and returns an NSURL object initialized with a provided URL string.
 
 
 ---

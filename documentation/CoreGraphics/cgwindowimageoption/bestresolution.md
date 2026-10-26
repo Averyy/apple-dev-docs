@@ -28,6 +28,7 @@ kCGWindowImageBestResolution
   When capturing the window, return the nominal image resolution. The returned image size is the same as the screen size.
 - [static var onlyShadows: CGWindowImageOption](./onlyshadows.md)
 - [static var shouldBeOpaque: CGWindowImageOption](./shouldbeopaque.md)
+- [kCGWindowImageDefault](./kcgwindowimagedefault.md)
 
 
 ---

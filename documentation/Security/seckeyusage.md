@@ -49,6 +49,7 @@ enum SecKeyUsage : uint32_t;
   The `NonRepudiation` bit is set in KeyUsage extension.
 - [static var all: SecKeyUsage](./seckeyusage/all.md)
   All flags set.
+- [kSecKeyUsageUnspecified](./seckeyusage/kseckeyusageunspecified.md)
 
 ## Relationships
 

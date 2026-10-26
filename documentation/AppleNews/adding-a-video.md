@@ -17,7 +17,7 @@ A `video` component allows the user to control playback and hear audio.
 
 To add a video to your article, you simply add a `video` component to a `components` array. Here, you’ll add a `video` component to the `components` array in the `header` component.
 
-> **Note**:  Alternatively, to include a video that plays automatically as the header’s background, you can use a [`VideoFill`](https://developer.apple.com/documentation/applenewsformat/videofill). With a video fill, playback and audio are disabled, but the video can automatically loop. With a video fill, but not a `video` component, you can also use a scene to affect how the opening section or chapter, including the video, comes into view. See [Adding a Scene](./adding-a-scene.md).
+> **Note**:  Alternatively, to include a video that plays automatically as the header’s background, you can use a [`VideoFill`](../AppleNewsFormat/videofill.md). With a video fill, playback and audio are disabled, but the video can automatically loop. With a video fill, but not a `video` component, you can also use a scene to affect how the opening section or chapter, including the video, comes into view. See [Adding a Scene](./adding-a-scene.md).
 
 In [Download the Article Bundle Examples](./setting-up-the-advanced-tutorials.md#Download-the-Article-Bundle-Examples), you downloaded a bundle called `News_Design_Tutorial_Advanced_Article_3` that contains a thumbnail image. Now, you’ll move that image into your working folder and use it as a thumbnail.
 
@@ -94,7 +94,7 @@ Ellipses (`...`) indicate lines of code that have been omitted from this example
 ## See Also
 
 ### Related Documentation
-- [object Video](https://developer.apple.com/documentation/applenewsformat/video)
+- [object Video](../AppleNewsFormat/video.md)
   The component for adding a video.
 - [Preparing Image, Video, Audio, Music, and ARKit Assets](./preparing-image-video-audio-music-and-arkit-assets.md)
   Add media assets to your article.

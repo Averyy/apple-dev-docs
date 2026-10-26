@@ -28,6 +28,12 @@ init(device: AVCaptureDevice) throws
 
 - `device`: A device from which to capture media.
 
+## See Also
+
+### Creating an input
+- [+ deviceInputWithDevice:error:](./deviceinputwithdevice_error_.md)
+  Returns a new input for the specified capture device.
+
 
 ---
 

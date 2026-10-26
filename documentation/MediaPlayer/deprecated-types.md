@@ -50,6 +50,10 @@ Review deprecated symbols and avoid using them in your app.
   A Boolean value that indicates whether the wireless route is active.
 - [Global volume setting methods](./global-volume-setting-methods.md)
   Global functions for setting the volume alert window status.
+- [MPVolumeViewWirelessRouteActiveDidChangeNotification](./mpvolumeviewwirelessrouteactivedidchangenotification.md)
+  Indicates the active wireless route changed.
+- [MPVolumeViewWirelessRoutesAvailableDidChangeNotification](./mpvolumeviewwirelessroutesavailabledidchangenotification.md)
+  Indicates the available wireless routes changed.
 
 
 ---

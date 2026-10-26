@@ -70,6 +70,10 @@ uint16_t destAlpha = alpha;
   Transforms a floating-point 32-bit-per-channel, 4-channel ARGB buffer from nonpremultiplied alpha format to premultiplied alpha format.
 - [func vImagePremultiplyData_RGBAFFFF(UnsafePointer<vImage_Buffer>, UnsafePointer<vImage_Buffer>, vImage_Flags) -> vImage_Error](./vimagepremultiplydata_rgbaffff%28_,_,_%29.md)
   Transforms a floating-point 32-bit-per-channel, 4-channel ARGB buffer from nonpremultiplied alpha format to premultiplied alpha format.
+- [vImagePremultiplyData_BGRA8888](./vimagepremultiplydata_bgra8888.md)
+  Transforms an 8-bit-per-channel, 4-channel BGRA buffer from nonpremultiplied alpha format to premultiplied alpha format.
+- [vImagePremultiplyData_BGRAFFFF](./vimagepremultiplydata_bgraffff.md)
+  Transforms a floating-point 32-bit-per-channel, 4-channel BGRA buffer from nonpremultiplied alpha format to premultiplied alpha format.
 
 
 ---

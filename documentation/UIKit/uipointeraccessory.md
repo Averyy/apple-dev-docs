@@ -30,16 +30,24 @@ class UIPointerAccessory
   Creates a pointer accessory with the specified shape and position.
 - [class func arrow(UIPointerAccessory.Position) -> Self](./uipointeraccessory/arrow%28_%29.md)
   Creates a pointer accessory with an arrow shape at the specified position.
+- [+ accessoryWithShape:position:](./uipointeraccessory/accessorywithshape_position_.md)
+  Creates a pointer accessory with the specified shape and position.
+- [+ arrowAccessoryWithPosition:](./uipointeraccessory/arrowaccessorywithposition_.md)
+  Creates a pointer accessory at the specified position.
 ### Matching the angle
 - [var orientationMatchesAngle: Bool](./uipointeraccessory/orientationmatchesangle.md)
   A Boolean value that indicates whether the system rotates the accessory to match its angle.
 ### Getting the shape
 - [var shape: UIPointerShape](./uipointeraccessory/shape-8pp0a.md)
   The shape of the accessory.
+- [shape](./uipointeraccessory/shape-9jmm8.md)
+  The shape of the accessory.
 ### Getting the position
 - [var position: __UIPointerAccessoryPosition](./uipointeraccessory/position-swift.property.md)
   The position of the accessory relative to the primary pointer.
 - [UIPointerAccessory.Position](./uipointeraccessory/position-swift.struct.md)
+  A structure that specifies the position of the accessory relative to the primary pointer.
+- [UIPointerAccessoryPosition](./uipointeraccessoryposition.md)
   A structure that specifies the position of the accessory relative to the primary pointer.
 
 ## Relationships
@@ -64,6 +72,10 @@ class UIPointerAccessory
 - [enum UIPointerShape](./uipointershape-swift.enum.md)
   An object that defines the shape of custom pointers.
 - [enum UIPointerEffect](./uipointereffect-swift.enum.md)
+  An effect that alters a view’s appearance when a pointer enters the current region.
+- [UIPointerShape](./uipointershape-c.class.md)
+  An object that defines the shape of custom pointers.
+- [UIPointerEffect](./uipointereffect-c.class.md)
   An effect that alters a view’s appearance when a pointer enters the current region.
 
 

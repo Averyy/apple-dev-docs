@@ -30,6 +30,8 @@ UIUserNotificationTypeAlert
   The app badges its icon.
 - [static var sound: UIUserNotificationType](./sound.md)
   The app plays a sound.
+- [UIUserNotificationTypeNone](./uiusernotificationtypenone.md)
+  The app does not present any UI upon receiving a notification.
 
 
 ---

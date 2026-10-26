@@ -22,13 +22,13 @@ func frameDuration(_ duration: UnsafeMutablePointer<CMTime>!)
 
 ## Mentions
 
-- [Understanding time in FxPlug](https://developer.apple.com/documentation/professional-video-applications/understanding-time-in-fxplug)
+- [Understanding time in FxPlug](../../Professional-Video-Applications/understanding-time-in-fxplug.md)
 
 #### Discussion
 
 Motion provides the frame duration of the project. Final Cut Pro provides the frame duration of the clip to which the effect is applied, not the frame duration for the timeline.
 
-> **Note**: The value that the host provides is unaffected by any retiming the host may do and is always the native frame duration (before retiming) of the clip to which the effect is applied. To determine the timeline’s frame duration, divide the value from [`timelineFpsDenominator(for:)`](./timelinefpsdenominator%28for%29.md) by [`timelineFpsNumerator(for:)`](./timelinefpsnumerator%28for%29.md) as shown in [Retiming and frame duration](https://developer.apple.com/documentation/professional-video-applications/understanding-time-in-fxplug#Retiming-and-frame-duration).
+> **Note**: The value that the host provides is unaffected by any retiming the host may do and is always the native frame duration (before retiming) of the clip to which the effect is applied. To determine the timeline’s frame duration, divide the value from [`timelineFpsDenominator(for:)`](./timelinefpsdenominator%28for%29.md) by [`timelineFpsNumerator(for:)`](./timelinefpsnumerator%28for%29.md) as shown in [Retiming and frame duration](../../Professional-Video-Applications/understanding-time-in-fxplug.md#Retiming-and-frame-duration).
 
 ## Parameters
 

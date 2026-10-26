@@ -19,6 +19,12 @@ var allowsCharacterPickerTouchBarItem: Bool { get set }
 @property BOOL allowsCharacterPickerTouchBarItem;
 ```
 
+## See Also
+
+### Using keyboard interface control
+- [- setTitleWithMnemonic:](./settitlewithmnemonic_.md)
+  Sets the text field’s string value using the embedded character as the keyboard mnemonic.
+
 
 ---
 

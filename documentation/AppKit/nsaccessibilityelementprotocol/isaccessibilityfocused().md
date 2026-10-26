@@ -36,6 +36,9 @@ This method is the getter for the [`NSAccessibilityProtocol`](../nsaccessibility
   Returns the accessibility element’s identity.
 - [func accessibilityParent() -> Any?](./accessibilityparent%28%29.md)
   Returns the accessibility element’s parent in the accessibility hierarchy.
+### Related Documentation
+- [accessibilityFocused](../nsaccessibility-c.protocol/accessibilityfocused.md)
+  A Boolean value that determines whether the accessibility element has the keyboard focus.
 
 
 ---

@@ -29,12 +29,16 @@ class AVVideoOutputSpecification
 
 ### Creating a specification
 - [convenience init(tagCollections: [[CMTag]])](./avvideooutputspecification/init%28tagcollections%29.md)
+- [- initWithTagCollections:](./avvideooutputspecification/initwithtagcollections_.md)
 ### Configuring the specification
 - [var defaultOutputSettings: [String : any Sendable]?](./avvideooutputspecification/defaultoutputsettings.md)
 - [func setOutputSettings([String : any Sendable]?, for: [CMTag])](./avvideooutputspecification/setoutputsettings%28_,for%29.md)
 - [var defaultPixelBufferAttributes: [String : Any]?](./avvideooutputspecification/defaultpixelbufferattributes.md)
 - [func setOutputPixelBufferAttributes([String : Any]?, for: [CMTag])](./avvideooutputspecification/setoutputpixelbufferattributes%28_,for%29.md)
 - [var preferredTagCollections: [[CMTag]]](./avvideooutputspecification/preferredtagcollections-3gdo7.md)
+- [- setOutputSettings:forTagCollection:](./avvideooutputspecification/setoutputsettings_fortagcollection_.md)
+- [- setOutputPixelBufferAttributes:forTagCollection:](./avvideooutputspecification/setoutputpixelbufferattributes_fortagcollection_.md)
+- [preferredTagCollections](./avvideooutputspecification/preferredtagcollections-2ikbd.md)
 
 ## Relationships
 
@@ -74,6 +78,12 @@ class AVVideoOutputSpecification
   Configuration options specified when creating an [`AVPlayerItemSampleBufferOutput`](./avplayeritemsamplebufferoutput.md).
 - [class AVPlayerItemSampleBufferOutputAudioConfiguration](./avplayeritemsamplebufferoutputaudioconfiguration.md)
   Audio-specific configuration options specified when creating an [`AVPlayerItemSampleBufferOutput`](./avplayeritemsamplebufferoutput.md).
+- [CMTagCollectionCreateWithVideoOutputPreset](./cmtagcollectioncreatewithvideooutputpreset.md)
+  Creates a collection with the required tags to describe the specified video output requirements.
+- [CMTagCollectionVideoOutputPreset](./cmtagcollectionvideooutputpreset.md)
+  Constants that indicate the type of video content to output.
+- [AVPlayerItemSampleBufferOutputDelegate](./avplayeritemsamplebufferoutputdelegate.md)
+  Defines common delegate methods for objects participating in sample buffer output.
 
 
 ---

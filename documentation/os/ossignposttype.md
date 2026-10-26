@@ -44,6 +44,13 @@ typedef enum { ... } os_signpost_type_t;
 ### Inspecting Signpost Types
 - [var rawValue: UInt8](./ossignposttype/rawvalue.md)
   An integer value that represents the role of a signpost.
+### Enumeration Cases
+- [OS_SIGNPOST_EVENT](./os_signpost_type_t/os_signpost_event.md)
+  A signpost that marks an event in your code.
+- [OS_SIGNPOST_INTERVAL_BEGIN](./os_signpost_type_t/os_signpost_interval_begin.md)
+  A signpost that marks the start of a time interval of interest in your code.
+- [OS_SIGNPOST_INTERVAL_END](./os_signpost_type_t/os_signpost_interval_end.md)
+  A signpost that marks the end of a time interval of interest in your code.
 
 ## Relationships
 
@@ -65,6 +72,14 @@ typedef enum { ... } os_signpost_type_t;
   Migrate your code away from using these legacy symbols.
 - [typealias os_signpost_id_t](./os_signpost_id_t.md)
   An identifier you use to distinguish between signposts that have the same name and destination log.
+- [os_signpost_emit_with_type](./os_signpost_emit_with_type.md)
+  Logs a point of interest in your code as a time interval or as an event for debugging performance in Instruments.
+- [os_signpost_interval_begin](./os_signpost_interval_begin.md)
+  Marks the start of a time interval in your code using a signpost.
+- [os_signpost_interval_end](./os_signpost_interval_end.md)
+  Marks the end of a time interval in your code using a signpost.
+- [os_signpost_event_emit](./os_signpost_event_emit.md)
+  Marks a point of interest in time.
 
 
 ---

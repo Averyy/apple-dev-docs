@@ -24,6 +24,8 @@ The `AudioToolbox.h` header file provides auxiliary functions for obtaining the 
 - [var kInstrumentInfoKey_MSB: String](./kinstrumentinfokey_msb.md)
 - [var kInstrumentInfoKey_Name: String](./kinstrumentinfokey_name.md)
 - [var kInstrumentInfoKey_Program: String](./kinstrumentinfokey_program.md)
+- [GetNameFromSoundBank](./getnamefromsoundbank.md)
+  Gets the name of a sound bank from a sound bank file.
 ### Constants
 - [var AUDIO_TOOLBOX_VERSION: Int32](./audio_toolbox_version.md)
 

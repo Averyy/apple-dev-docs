@@ -58,6 +58,30 @@ This function is the inverse of both [`fileContentsType(forPathExtension:)`](./f
   Returns a pasteboard type based on the passed file type.
 - [static func representedPathExtensions(from: [NSPasteboard.PasteboardType]) -> [String]?](./representedpathextensions%28from%29.md)
   Returns an array of file types based on the passed pasteboard types.
+- [NSOpenGLGetOption](../../nsopenglgetoption.md)
+  Returns global OpenGL options.
+- [NSOpenGLGetVersion](../../nsopenglgetversion.md)
+  Returns the NSOpenGL version numbers.
+- [NSOpenGLSetOption](../../nsopenglsetoption.md)
+  Sets global OpenGL options.
+- [NSBeginAlertSheet](../../nsbeginalertsheet.md)
+  Creates and runs an alert sheet.
+- [NSBeginCriticalAlertSheet](../../nsbegincriticalalertsheet.md)
+  Creates and runs a critical alert sheet.
+- [NSBeginInformationalAlertSheet](../../nsbegininformationalalertsheet.md)
+  Creates and runs an informational alert sheet.
+- [NSGetAlertPanel](../../nsgetalertpanel.md)
+  Returns an alert panel.
+- [NSGetCriticalAlertPanel](../../nsgetcriticalalertpanel.md)
+  Returns an alert panel to display a critical message.
+- [NSGetInformationalAlertPanel](../../nsgetinformationalalertpanel.md)
+  Returns an alert panel to display an informational message.
+- [NSRunAlertPanel](../../nsrunalertpanel.md)
+  Creates an alert panel.
+- [NSRunCriticalAlertPanel](../../nsruncriticalalertpanel.md)
+  Creates and runs a critical alert panel.
+- [NSRunInformationalAlertPanel](../../nsruninformationalalertpanel.md)
+  Creates and runs an informational alert panel.
 
 
 ---

@@ -46,6 +46,13 @@ Read the [`boundingBox`](./scnboundingvolume/boundingbox.md) or [`boundingSphere
   The minimum and maximum corner points of the object’s bounding box.
 - [var boundingSphere: (center: SCNVector3, radius: Float)](./scnboundingvolume/boundingsphere.md)
   The center point and radius of the object’s bounding sphere.
+- [- getBoundingBoxMin:max:](./scnboundingvolume/getboundingboxmin_max_.md)
+  Gets the minimum and maximum corner points of the object’s bounding box.
+- [- getBoundingSphereCenter:radius:](./scnboundingvolume/getboundingspherecenter_radius_.md)
+  Gets the center point and radius of the object’s bounding sphere.
+### Overriding an Object’s Default Bounding Volume
+- [- setBoundingBoxMin:max:](./scnboundingvolume/setboundingboxmin_max_.md)
+  Sets a custom bounding box for the object.
 
 ## Relationships
 

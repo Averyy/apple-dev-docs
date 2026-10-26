@@ -35,6 +35,8 @@ A media item collection can have a wide range of metadata associated with it. Yo
 ### Creating a media item collection
 - [init(items: [MPMediaItem])](./mpmediaitemcollection/init%28items%29.md)
   Initializes a media item collection with an array of media items.
+- [+ collectionWithItems:](./mpmediaitemcollection/collectionwithitems_.md)
+  Creates a media item collection by copying an array of media items.
 ### Using a media item collection
 - [var items: [MPMediaItem]](./mpmediaitemcollection/items.md)
   The media items in a media item collection.

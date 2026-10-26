@@ -32,6 +32,8 @@ typedef CFStringRef VTExtensionPropertiesKey;
   A dictionary key for the localized extension name.
 - [static let extensionURL: VTExtensionPropertiesKey](./vtextensionpropertieskey/extensionurl.md)
   A dictionary key for the URL of the extension.
+- [kVTExtensionProperties_CodecNameKey](./kvtextensionproperties_codecnamekey.md)
+  A dictionary key for the user readable name string of the codec.
 ### Initializers
 - [init(rawValue: CFString)](./vtextensionpropertieskey/init%28rawvalue%29.md)
 
@@ -43,6 +45,12 @@ typedef CFStringRef VTExtensionPropertiesKey;
 - [RawRepresentable](../Swift/rawrepresentable.md)
 - [Sendable](../Swift/sendable.md)
 - [SendableMetatype](../Swift/sendablemetatype.md)
+
+## See Also
+
+### Media Extension
+- [VTCopyVideoDecoderExtensionProperties](./vtcopyvideodecoderextensionproperties.md)
+  Returns information about the Media Extension video decoder required to decode the specified format.
 
 
 ---

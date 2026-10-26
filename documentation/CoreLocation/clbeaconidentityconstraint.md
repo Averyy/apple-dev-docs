@@ -52,6 +52,8 @@ Constraints always specify a UUID value, but the major and minor values are opti
 - [NSSecureCoding](../Foundation/nssecurecoding.md)
 - [Sendable](../Swift/sendable.md)
 - [SendableMetatype](../Swift/sendablemetatype.md)
+### Inherits From
+- [CLBeaconIdentityCondition](./clbeaconidentitycondition.md)
 
 ## See Also
 

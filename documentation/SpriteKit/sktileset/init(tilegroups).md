@@ -38,6 +38,8 @@ A new tile set.
 ### Creating a Tile Set Programmatically
 - [init(tileGroups: [SKTileGroup], tileSetType: SKTileSetType)](./init%28tilegroups,tilesettype%29.md)
   Initializes a new tile set with an array of tile groups and specified layout.
+- [+ tileSetWithTileGroups:](./tilesetwithtilegroups_.md)
+- [+ tileSetWithTileGroups:tileSetType:](./tilesetwithtilegroups_tilesettype_.md)
 
 
 ---

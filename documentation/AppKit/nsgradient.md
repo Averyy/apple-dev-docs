@@ -40,6 +40,8 @@ For more information about gradients and their appearance, see [Gradients](https
   Initializes a newly allocated gradient object with the specified colors, color locations, and color space.
 - [init?(coder: NSCoder)](./nsgradient/init%28coder%29.md)
   Creates a gradient from data in an unarchiver.
+- [- initWithColorsAndLocations:](./nsgradient/initwithcolorsandlocations_.md)
+  Initializes a newly allocated gradient object with a comma-separated list of arguments.
 ### Drawing a Linear Gradient
 - [func draw(from: NSPoint, to: NSPoint, options: NSGradient.DrawingOptions)](./nsgradient/draw%28from,to,options%29.md)
   Draws a linear gradient between the specified start and end points.

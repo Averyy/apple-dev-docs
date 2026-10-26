@@ -41,6 +41,10 @@ convenience init(sequenceLength: Int, featureChannelCount: Int, batchSize: Int, 
   Creates a tensor with the sequence lengths, sorting indicator, number of feature channels, batch size, and data you specify.
 - [convenience init?(sequenceLengths: [Int], sortedSequences: Bool, featureChannelCount: Int, batchSize: Int, randomInitializerType: MLCRandomInitializerType)](./init%28sequencelengths,sortedsequences,featurechannelcount,batchsize,randominitializertype%29.md)
   Creates a tensor with the sequence lengths, sorting indicator, number of feature channels, batch size, and random initializer type you specify.
+- [+ tensorWithSequenceLengths:sortedSequences:featureChannelCount:batchSize:data:](./tensorwithsequencelengths_sortedsequences_featurechannelcount_batchsize_data_.md)
+  Creates a tensor with the sequence lengths, sorting indicator, number of feature channels, batch size, and data you specify.
+- [+ tensorWithSequenceLengths:sortedSequences:featureChannelCount:batchSize:randomInitializerType:](./tensorwithsequencelengths_sortedsequences_featurechannelcount_batchsize_randominitializertype_.md)
+  Creates a tensor with the sequence lengths, sorting indicator, number of feature channels, batch size, and random initializer type you specify.
 
 
 ---

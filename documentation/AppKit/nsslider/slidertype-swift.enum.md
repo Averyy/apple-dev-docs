@@ -26,6 +26,8 @@ enum NSSliderType : NSUInteger;
   A dial representing an angular range.
 - [NSSlider.SliderType.linear](./slidertype-swift.enum/linear.md)
   A bar representing a range, and a knob indicating the currently selected value.
+- [NSLinearSlider](../nslinearslider.md)
+- [NSCircularSlider](../nscircularslider.md)
 ### Initializers
 - [init?(rawValue: UInt)](./slidertype-swift.enum/init%28rawvalue%29.md)
 

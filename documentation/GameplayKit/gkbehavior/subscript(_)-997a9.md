@@ -41,6 +41,8 @@ The order of goals in a behavior is undefined. However, you can use this method 
 ### Working with Goals Using Subscript Syntax
 - [subscript(GKGoal) -> NSNumber!](./subscript%28_%29-2yvko.md)
   Returns the weight associated with the goal specified by subscript syntax.
+- [- setObject:forKeyedSubscript:](./setobject_forkeyedsubscript_.md)
+  Sets the weight for the goal specified by subscript syntax.
 
 
 ---

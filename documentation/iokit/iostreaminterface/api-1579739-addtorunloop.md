@@ -1,0 +1,20 @@
+# AddToRunLoop
+
+**Framework**: IOKit  
+**Kind**: structp  
+**Role**: Instance Property
+
+**Availability**:
+- Mac Catalyst 18.4+
+- macOS 10.5+
+
+## Declaration
+
+```c
+IOReturn (*AddToRunLoop)(IOStreamRef stream, CFRunLoopRef runLoop);
+```
+
+
+---
+
+*[View on Apple Developer](https://developer.apple.com/documentation/iokit/iostreaminterface/1579739-addtorunloop)*

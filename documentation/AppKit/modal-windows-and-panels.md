@@ -26,6 +26,8 @@ Display a modal window or show one of the standard app panels, such as the appâ€
   A set of button return values for modal dialogs.
 - [NSApplication.ModalSession](./nsapplication/modalsession.md)
   Variables of type `NSModalSession` point to information used by the system between `NSApplication`â€™s [`beginModalSession(for:)`](./nsapplication/beginmodalsession%28for%29.md) and [`endModalSession(_:)`](./nsapplication/endmodalsession%28_%29.md) messages.
+- [NSModalPanelRunLoopMode](./nsmodalpanelrunloopmode.md)
+  The mode set when waiting for input from a modal panel, such as a save or open panel.
 ### Managing Panels
 - [func orderFrontColorPanel(Any?)](./nsapplication/orderfrontcolorpanel%28_%29.md)
   Brings up the color panel, an instance of `NSColorPanel`.

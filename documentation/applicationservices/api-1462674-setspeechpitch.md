@@ -39,6 +39,8 @@ The `SetSpeechPitch` functionchanges the current speech pitch on the speech chan
   Sets the value of the specified speech-channel property.
 - [func SetSpeechRate(SpeechChannel, Fixed) -> OSErr](./api-1459896-setspeechrate.md)
   Sets the speech rate of a designated speech channel.
+- [SetSpeechInfo](./api-1552223-setspeechinfo.md)
+  Changes a setting of a particular speech channel.
 
 
 ---

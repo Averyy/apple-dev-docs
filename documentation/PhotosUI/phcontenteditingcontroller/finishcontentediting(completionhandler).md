@@ -33,11 +33,11 @@ func finishContentEditing() async -> PHContentEditingOutput?
 Photos calls this method when the user chooses to end the editing session. Your extension view controller should:
 
 1. Disable UI elements to prevent the user from editing further while you complete the remaining steps on a background queue.
-2. Create a [`PHContentEditingOutput`](https://developer.apple.com/documentation/photos/phcontenteditingoutput) object from the [`PHContentEditingInput`](https://developer.apple.com/documentation/photos/phcontenteditinginput) object that Photos provided to your extension in the [`startContentEditing(with:placeholderImage:)`](./startcontentediting%28with,placeholderimage%29.md) method.
+2. Create a [`PHContentEditingOutput`](../../Photos/phcontenteditingoutput.md) object from the [`PHContentEditingInput`](../../Photos/phcontenteditinginput.md) object that Photos provided to your extension in the [`startContentEditing(with:placeholderImage:)`](./startcontentediting%28with,placeholderimage%29.md) method.
 
-Use the content editing output to store the rendered photo or video data from the user’s edits and a [`PHAdjustmentData`](https://developer.apple.com/documentation/photos/phadjustmentdata) object describing the edits.
+Use the content editing output to store the rendered photo or video data from the user’s edits and a [`PHAdjustmentData`](../../Photos/phadjustmentdata.md) object describing the edits.
 
-> **Note**:  To end editing without committing changes to the asset, leave the content editing output’s [`adjustmentData`](https://developer.apple.com/documentation/photos/phcontenteditingoutput/adjustmentdata) property set to `nil` and do not write to the location specified by its [`renderedContentURL`](https://developer.apple.com/documentation/photos/phcontenteditingoutput/renderedcontenturl) property.
+> **Note**:  To end editing without committing changes to the asset, leave the content editing output’s [`adjustmentData`](../../Photos/phcontenteditingoutput/adjustmentdata.md) property set to `nil` and do not write to the location specified by its [`renderedContentURL`](../../Photos/phcontenteditingoutput/renderedcontenturl.md) property.
 
 1. Call the `completionHandler` block with your content editing output, to notify Photos that the edit is complete.
 2. After the `completionHandler` block finishes executing, you may safely clean up any data or files related to your edit.
@@ -48,7 +48,7 @@ Use the content editing output to store the rendered photo or video data from th
 
   The block takes the following parameter:
 
-  - **output**: The [`PHContentEditingOutput`](https://developer.apple.com/documentation/photos/phcontenteditingoutput) object you created and populated before calling the completion handler.
+  - **output**: The [`PHContentEditingOutput`](../../Photos/phcontenteditingoutput.md) object you created and populated before calling the completion handler.
 
 ## See Also
 

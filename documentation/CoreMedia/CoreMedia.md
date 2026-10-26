@@ -91,6 +91,7 @@ The Core Media framework defines the media pipeline used by AVFoundation and oth
 - [Core Media Constants](./core-media-constants.md)
 - [Core Media Functions](./core-media-functions.md)
 - [Core Media Type Aliases](./core-media-type-aliases.md)
+- [Core Media Macros](./core-media-macros.md)
 ### Structures
 - [struct CMCameraIntrinsicMatrix](./cmcameraintrinsicmatrix.md)
   A matrix that describes the camera’s intrinsic properties.
@@ -110,6 +111,7 @@ The Core Media framework defines the media pipeline used by AVFoundation and oth
 - [let kCMMetadataFormatDescriptionKey_HumanReadableString: CFString](./kcmmetadataformatdescriptionkey_humanreadablestring.md)
 - [let kCMMetadataFormatDescriptionMetadataSpecificationKey_HumanReadableString: CFString](./kcmmetadataformatdescriptionmetadataspecificationkey_humanreadablestring.md)
 - [let kCMMetadataIdentifier_ITUT_T35MetadataSMPTE2094_50: CFString](./kcmmetadataidentifier_itut_t35metadatasmpte2094_50.md)
+- [kCMTagProjectionTypeParametricImmersive](./kcmtagprojectiontypeparametricimmersive.md)
 ### Type Aliases
 - [typealias CMAttachmentAccess](./cmattachmentaccess.md)
 - [typealias CMAttachmentContainer](./cmattachmentcontainer.md)
@@ -124,6 +126,20 @@ The Core Media framework defines the media pipeline used by AVFoundation and oth
 - [enum CMSampleBufferAttachmentKeyDefinitions](./cmsamplebufferattachmentkeydefinitions.md)
   A namespace for sample buffer attachment keys.
 - [enum CMStillImageLensStabilization](./cmstillimagelensstabilization.md)
+### Functions
+- [CMClockCreateGenlockClock](./cmclockcreategenlockclock.md)
+  Returns a clock whose time is based on genlock when the system is synchronized to an external genlock signal, and on host time otherwise.
+- [CMClockGetPreferredStartTimePattern](./cmclockgetpreferredstarttimepattern.md)
+  Retrieves a description of the pattern of preferred start times, such as for synchronization with an external genlock signal.
+- [CMClockImplementsGetPreferredStartTimePattern](./cmclockimplementsgetpreferredstarttimepattern.md)
+  Indicates whether a clock implements the `CMClockGetPreferredStartTimePattern` function.
+- [CMIsAnyDisplaySynchronizedToLockedGenlockSignal](./cmisanydisplaysynchronizedtolockedgenlocksignal.md)
+  Queries whether any display is synchronized to a locked external genlock signal.
+- [CMTaggedBufferGroupFormatDescriptionCreateForTaggedBufferGroupWithExtensions](./cmtaggedbuffergroupformatdescriptioncreatefortaggedbuffergroupwithextensions.md)
+### Macros
+- [CM_BRIDGED_MUTABLE_TYPE](./cm_bridged_mutable_type.md)
+- [CM_REFINED_FOR_SWIFT](./cm_refined_for_swift.md)
+- [CM_RETURNS_NOT_RETAINED](./cm_returns_not_retained.md)
 
 
 ---

@@ -42,6 +42,8 @@ To support accessibility features for a custom user interface element:
   Returns the accessibility element’s frame in its parent’s coordinate system.
 - [func setAccessibilityFrameInParentSpace(NSRect)](./nsaccessibilityelement-swift.class/setaccessibilityframeinparentspace%28_%29.md)
   Sets the accessibility element’s frame in its parent’s coordinate system.
+- [accessibilityFrameInParentSpace](./nsaccessibilityelement-swift.class/accessibilityframeinparentspace.md)
+  The accessibility element’s frame in its parent’s coordinate system.
 
 ## Relationships
 

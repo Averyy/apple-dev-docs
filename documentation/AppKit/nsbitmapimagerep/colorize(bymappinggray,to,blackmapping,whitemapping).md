@@ -55,6 +55,8 @@ It works on images with 8-bit SPP, and thus supports either 8-bit gray or 24-bit
   Initializes a newly allocated bitmap image representation for incremental loading.
 - [init?(focusedViewRect: NSRect)](./init%28focusedviewrect%29.md)
   Initializes a newly allocated bitmap image representation with bitmap data from a rendered image.
+- [+ imageRepWithData:](./imagerepwithdata_.md)
+  Creates and returns a bitmap image representation with the first image in the specified data.
 
 
 ---

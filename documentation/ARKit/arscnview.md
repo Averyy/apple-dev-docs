@@ -69,6 +69,8 @@ Because ARKit requires Metal, use only Metal features of SceneKit. For example:
   Returns the SceneKit node associated with the specified AR anchor, if any.
 - [func unprojectPoint(CGPoint, ontoPlane: simd_float4x4) -> simd_float3?](./arscnview/unprojectpoint%28_,ontoplane%29.md)
   Returns the projection of a point from 2D view onto a plane in the 3D world space detected by ARKit.
+- [- unprojectPoint:ontoPlaneWithTransform:](./arscnview/unprojectpoint_ontoplanewithtransform_.md)
+  Returns the projection of a point from 2D view onto a plane in the 3D world space detected by ARKit.
 ### Managing Lighting
 - [var automaticallyUpdatesLighting: Bool](./arscnview/automaticallyupdateslighting.md)
   A Boolean value that specifies whether ARKit creates and updates SceneKit lights in the view’s scene.

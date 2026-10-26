@@ -25,6 +25,51 @@
       "file_path": "documentation/GameplayKit/gameplaykit-structures.md",
       "hash": "1ab50475fd88b44c1e6575b99337889364a1af213f2b6ee2f684bb5c26b0fa16"
     },
+    "https://developer.apple.com/documentation/gameplaykit/gk_available": {
+      "etag": "\"1e52-65d55df180ba9-df\"",
+      "file_path": "documentation/GameplayKit/gk_available.md",
+      "hash": "c210af4c1494dc8e035a8998d45e0dc587f737bca1a97aec9669ffcd67c82d47"
+    },
+    "https://developer.apple.com/documentation/gameplaykit/gk_base_availability": {
+      "etag": "\"1e82-65d55df08b327-df\"",
+      "file_path": "documentation/GameplayKit/gk_base_availability.md",
+      "hash": "df8714e70c0c5a4a63a28b12affb3f770bdadb2571edd5cd3e05d22342aa0091"
+    },
+    "https://developer.apple.com/documentation/gameplaykit/gk_base_availability_2": {
+      "etag": "\"1e8e-65d55df145c7c-df\"",
+      "file_path": "documentation/GameplayKit/gk_base_availability_2.md",
+      "hash": "64f8aaac26fd68b0f567427528793c0c86dd374bc84fbe5d2731ec1611afdbed"
+    },
+    "https://developer.apple.com/documentation/gameplaykit/gk_base_availability_3": {
+      "etag": "\"1e8e-65d55df145c7c-df\"",
+      "file_path": "documentation/GameplayKit/gk_base_availability_3.md",
+      "hash": "b98ff4783d0662ab485b23d44e960cd185f514aef694d4e6053a03f242dd54e9"
+    },
+    "https://developer.apple.com/documentation/gameplaykit/gk_default": {
+      "etag": "\"1e46-65d55df16396d-df\"",
+      "file_path": "documentation/GameplayKit/gk_default.md",
+      "hash": "ef8ce99df013bc717a1b4de03a64afa1cf36f375f01f2499bb4be8d0481207c9"
+    },
+    "https://developer.apple.com/documentation/gameplaykit/gk_export": {
+      "etag": "\"1e40-65d55df180ba9-df\"",
+      "file_path": "documentation/GameplayKit/gk_export.md",
+      "hash": "8a5cb34ddb88e0b497d3b654c71a4f9afb1d2331872201697bd561a596509ea8"
+    },
+    "https://developer.apple.com/documentation/gameplaykit/gk_force_inline": {
+      "etag": "\"1e64-65d55df0c7f35-df\"",
+      "file_path": "documentation/GameplayKit/gk_force_inline.md",
+      "hash": "d997ed79c3c9358a26fd0e05589fb952aed6fe64effc0058c90bdff066dd1c8d"
+    },
+    "https://developer.apple.com/documentation/gameplaykit/gk_likely": {
+      "etag": "\"1e9a-65d55df0c7f35-df\"",
+      "file_path": "documentation/GameplayKit/gk_likely.md",
+      "hash": "d63ceccb6dc3cf52dc205da288db411cb0e89774c27402e620df4c1b26790b5b"
+    },
+    "https://developer.apple.com/documentation/gameplaykit/gk_unlikely": {
+      "etag": "\"1ea6-65d55df0fb53b-df\"",
+      "file_path": "documentation/GameplayKit/gk_unlikely.md",
+      "hash": "d6f2abea756f2610be94f757b87d7950ef67332b89b04ec57922de1c3574de86"
+    },
     "https://developer.apple.com/documentation/gameplaykit/gk_version": {
       "etag": "\"2781-65d55df0fb53b-df\"",
       "file_path": "documentation/GameplayKit/gk_version.md",
@@ -205,6 +250,11 @@
       "file_path": "documentation/GameplayKit/gkbehavior/removeallgoals().md",
       "hash": "a1e88c1dbd4bbfc07e70a7fabf65e0ec67e9d87f0c5c11709c947edf26ed4d1a"
     },
+    "https://developer.apple.com/documentation/gameplaykit/gkbehavior/setobject:forkeyedsubscript:": {
+      "etag": "\"2e5b-65d55df0e3524-df\"",
+      "file_path": "documentation/GameplayKit/gkbehavior/setobject_forkeyedsubscript_.md",
+      "hash": "e7f6f7c3141590ce8566f74606df47fd13b4842bdacf795598eca9652585215e"
+    },
     "https://developer.apple.com/documentation/gameplaykit/gkbehavior/setweight(_:for:)": {
       "etag": "\"4f7d-65d55df0e3524-df\"",
       "file_path": "documentation/GameplayKit/gkbehavior/setweight(_,for).md",
@@ -229,6 +279,11 @@
       "etag": "\"8184-65d55df0c7f35-df\"",
       "file_path": "documentation/GameplayKit/gkbillownoisesource.md",
       "hash": "d9583780bcf27eb043230ce53e9da02859162dbe211a37d75276663eb53e8355"
+    },
+    "https://developer.apple.com/documentation/gameplaykit/gkbillownoisesource/billownoisesourcewithfrequency:octavecount:persistence:lacunarity:seed:": {
+      "etag": "\"4f3d-65d55df0c7f35-df\"",
+      "file_path": "documentation/GameplayKit/gkbillownoisesource/billownoisesourcewithfrequency_octavecount_persistence_lacunarity_seed_.md",
+      "hash": "09f4c5d0d1f06de979ae511f94077898d5ff36805cef77905c0d51e4032a1162"
     },
     "https://developer.apple.com/documentation/gameplaykit/gkbillownoisesource/init(frequency:octavecount:persistence:lacunarity:seed:)": {
       "etag": "\"6c8e-65d55df0c7f35-df\"",
@@ -294,6 +349,11 @@
       "etag": "\"289b-65d55df16396d-df\"",
       "file_path": "documentation/GameplayKit/gkcircleobstacle/init(radius).md",
       "hash": "4fea787307f74fd3ce96be88e4535f42058aec4821fbeaf9e6ca88c3be5092d2"
+    },
+    "https://developer.apple.com/documentation/gameplaykit/gkcircleobstacle/obstaclewithradius:": {
+      "etag": "\"19e5-65d55df16396d-df\"",
+      "file_path": "documentation/GameplayKit/gkcircleobstacle/obstaclewithradius_.md",
+      "hash": "220f32f018180ab70e71fae4fceb15a9ca41e637a6bb3cdc3f1d4012d8a2e54d"
     },
     "https://developer.apple.com/documentation/gameplaykit/gkcircleobstacle/position": {
       "etag": "\"24d7-65d55df16396d-df\"",
@@ -445,6 +505,11 @@
       "file_path": "documentation/GameplayKit/gkcompositebehavior/removeallbehaviors().md",
       "hash": "0d360075ea546d6b0dd2c88da913d93973abcf87330f250d9dc24f7eddeb45e6"
     },
+    "https://developer.apple.com/documentation/gameplaykit/gkcompositebehavior/setobject:forkeyedsubscript:": {
+      "etag": "\"30a7-65d55df12c1b4-df\"",
+      "file_path": "documentation/GameplayKit/gkcompositebehavior/setobject_forkeyedsubscript_.md",
+      "hash": "e9dc780e178df3f26792813622ef86aec4bc3c36b5d48c5cd7595a303bd43140"
+    },
     "https://developer.apple.com/documentation/gameplaykit/gkcompositebehavior/setweight(_:for:)": {
       "etag": "\"4aa5-65d55df12c1b4-df\"",
       "file_path": "documentation/GameplayKit/gkcompositebehavior/setweight(_,for).md",
@@ -590,10 +655,20 @@
       "file_path": "documentation/GameplayKit/gkentity/component(oftype).md",
       "hash": "6244748f9e7e6b2987ab2a50d182119b0fe9febf1914bfc006c84bea913354e9"
     },
+    "https://developer.apple.com/documentation/gameplaykit/gkentity/componentforclass:": {
+      "etag": "\"299e-65d55df16396d-df\"",
+      "file_path": "documentation/GameplayKit/gkentity/componentforclass_.md",
+      "hash": "de2674d254028b8ce2efe77e37f030948d0a938bfca3f63dd9f90ba6221137af"
+    },
     "https://developer.apple.com/documentation/gameplaykit/gkentity/components": {
       "etag": "\"2af6-65d55df16396d-df\"",
       "file_path": "documentation/GameplayKit/gkentity/components.md",
       "hash": "bc178c360dce9bcc6e62dc0c292df3f41e8224e4d73bcf228642c4b3db80121b"
+    },
+    "https://developer.apple.com/documentation/gameplaykit/gkentity/entity": {
+      "etag": "\"1511-65d55df16396d-df\"",
+      "file_path": "documentation/GameplayKit/gkentity/entity.md",
+      "hash": "ea213cc4b16bc3993bab5d65b33f0e02fd2f9a981b453465af4b6708118a2526"
     },
     "https://developer.apple.com/documentation/gameplaykit/gkentity/init()": {
       "etag": "\"225a-65d55df16396d-df\"",
@@ -609,6 +684,11 @@
       "etag": "\"1d0e-65d55df16396d-df\"",
       "file_path": "documentation/GameplayKit/gkentity/removecomponent(oftype).md",
       "hash": "97841ccbd891ab5c563e40548d6b43ee085f8d638bff0acc659bb0e1dafb061c"
+    },
+    "https://developer.apple.com/documentation/gameplaykit/gkentity/removecomponentforclass:": {
+      "etag": "\"27dd-65d55df16396d-df\"",
+      "file_path": "documentation/GameplayKit/gkentity/removecomponentforclass_.md",
+      "hash": "21f2eedc22a65ab5e91cd6f6550c1ae4e4cfdd9bbb8d250bd771703a0a64b966"
     },
     "https://developer.apple.com/documentation/gameplaykit/gkentity/update(deltatime:)": {
       "etag": "\"4bc2-65d55df16396d-df\"",
@@ -840,6 +920,11 @@
       "file_path": "documentation/GameplayKit/gkgraph/findpath(from,to).md",
       "hash": "3ea24caa9348a0de8a41031b47bb3b65757f7cd48dec4b2d5c3f03ea3b766ebe"
     },
+    "https://developer.apple.com/documentation/gameplaykit/gkgraph/graphwithnodes:": {
+      "etag": "\"2d3b-65d55df0fb53b-df\"",
+      "file_path": "documentation/GameplayKit/gkgraph/graphwithnodes_.md",
+      "hash": "d38eded3b7c017680d08d24ece3a5507903cfe2021dea91636ca0b6ec9ef0da1"
+    },
     "https://developer.apple.com/documentation/gameplaykit/gkgraph/init(_:)": {
       "etag": "\"3b03-65d55df0fb53b-df\"",
       "file_path": "documentation/GameplayKit/gkgraph/init(_).md",
@@ -970,6 +1055,16 @@
       "file_path": "documentation/GameplayKit/gkgridgraph/diagonalsallowed.md",
       "hash": "283e0a3e071dce821a1c63b325f8f4ddd3c004b8588b9c148aa59ec696d5e36b"
     },
+    "https://developer.apple.com/documentation/gameplaykit/gkgridgraph/graphfromgridstartingat:width:height:diagonalsallowed:": {
+      "etag": "\"39d5-65d55df0fb53b-df\"",
+      "file_path": "documentation/GameplayKit/gkgridgraph/graphfromgridstartingat_width_height_diagonalsallowed_.md",
+      "hash": "13cafa3eeceb084b777d6e50ce3ecc3b1fa7fd0187b897a8588ba4590c6321c6"
+    },
+    "https://developer.apple.com/documentation/gameplaykit/gkgridgraph/graphfromgridstartingat:width:height:diagonalsallowed:nodeclass:": {
+      "etag": "\"4a95-65d55df0fb53b-df\"",
+      "file_path": "documentation/GameplayKit/gkgridgraph/graphfromgridstartingat_width_height_diagonalsallowed_nodeclass_.md",
+      "hash": "c5915870297e58f95907c2e49e0c6601a86c7e19cf0ddc109943df17ab1a5e52"
+    },
     "https://developer.apple.com/documentation/gameplaykit/gkgridgraph/gridheight": {
       "etag": "\"3888-65d55df0fb53b-df\"",
       "file_path": "documentation/GameplayKit/gkgridgraph/gridheight.md",
@@ -1019,6 +1114,16 @@
       "etag": "\"28de-65d55df0a7edd-df\"",
       "file_path": "documentation/GameplayKit/gkgridgraphnode/init(gridposition).md",
       "hash": "58ab7957b5c325747a090027be82459d549f8dc8b5e122963e8cbb34d3673fbe"
+    },
+    "https://developer.apple.com/documentation/gameplaykit/gkgridgraphnode/nodewithgridposition:": {
+      "etag": "\"1b1c-65d55df0a7edd-df\"",
+      "file_path": "documentation/GameplayKit/gkgridgraphnode/nodewithgridposition_.md",
+      "hash": "f8d3afbfc644840eb11d22c0d2aec2f04b61ff79455ed98aed519537415b614d"
+    },
+    "https://developer.apple.com/documentation/gameplaykit/gkinspectable": {
+      "etag": "\"1e58-65d55df0fb53b-df\"",
+      "file_path": "documentation/GameplayKit/gkinspectable.md",
+      "hash": "9252f733b3bf20ef39f63484e9b339ebc2fdb731386eec1ec031af36afeb5540"
     },
     "https://developer.apple.com/documentation/gameplaykit/gklinearcongruentialrandomsource": {
       "etag": "\"841b-65d55df180ba9-df\"",
@@ -1084,6 +1189,16 @@
       "etag": "\"28e0-65d55df180ba9-df\"",
       "file_path": "documentation/GameplayKit/gkmeshgraph/connectusingobstacles(node).md",
       "hash": "630a8a6b002088de52d8988c425763eb07f5ca6cc7733b8f937c8ebbfa175b38"
+    },
+    "https://developer.apple.com/documentation/gameplaykit/gkmeshgraph/graphwithbufferradius:mincoordinate:maxcoordinate:": {
+      "etag": "\"4531-65d55df180ba9-df\"",
+      "file_path": "documentation/GameplayKit/gkmeshgraph/graphwithbufferradius_mincoordinate_maxcoordinate_.md",
+      "hash": "c09f2c262c4b026db0f1cc8a12020ed065782213bd4ca89ba818185864c17d60"
+    },
+    "https://developer.apple.com/documentation/gameplaykit/gkmeshgraph/graphwithbufferradius:mincoordinate:maxcoordinate:nodeclass:": {
+      "etag": "\"55c6-65d55df180ba9-df\"",
+      "file_path": "documentation/GameplayKit/gkmeshgraph/graphwithbufferradius_mincoordinate_maxcoordinate_nodeclass_.md",
+      "hash": "34dbde5d9925d7386d4bc8453162e595f1d65af6932a95b9db38ebb9bd2e03ba"
     },
     "https://developer.apple.com/documentation/gameplaykit/gkmeshgraph/init(bufferradius:mincoordinate:maxcoordinate:)": {
       "etag": "\"5735-65d55df180ba9-df\"",
@@ -1285,6 +1400,16 @@
       "file_path": "documentation/GameplayKit/gknoise/multiply(_).md",
       "hash": "b08f1e9c5e10ee7517055c32c21670532ba58fa97c8e144d9ea3a621ec333efd"
     },
+    "https://developer.apple.com/documentation/gameplaykit/gknoise/noisewithnoisesource:": {
+      "etag": "\"2ea1-65d55df112d95-df\"",
+      "file_path": "documentation/GameplayKit/gknoise/noisewithnoisesource_.md",
+      "hash": "7dc3bc6bdb7eabdc24b1d2923b3fb17e13d25957fc27d1ea51a1291217fd006c"
+    },
+    "https://developer.apple.com/documentation/gameplaykit/gknoise/noisewithnoisesource:gradientcolors:": {
+      "etag": "\"4f8d-65d55df112d95-df\"",
+      "file_path": "documentation/GameplayKit/gknoise/noisewithnoisesource_gradientcolors_.md",
+      "hash": "d2a2b1c78be6e8fc400ccd7dbca77e17a5ad93fe2a51c231ac2fcfaab44a81c2"
+    },
     "https://developer.apple.com/documentation/gameplaykit/gknoise/raisetopower(_:)-14715": {
       "etag": "\"432d-65d55df12c1b4-df\"",
       "file_path": "documentation/GameplayKit/gknoise/raisetopower(_)-14715.md",
@@ -1359,6 +1484,16 @@
       "etag": "\"36f6-65d55df0a7edd-df\"",
       "file_path": "documentation/GameplayKit/gknoisemap/isseamless.md",
       "hash": "d65641ddceb2ce5097588f177c396a2eb7a9781fd6cfca28fbab20f721498c77"
+    },
+    "https://developer.apple.com/documentation/gameplaykit/gknoisemap/noisemapwithnoise:": {
+      "etag": "\"3e94-65d55df0a7edd-df\"",
+      "file_path": "documentation/GameplayKit/gknoisemap/noisemapwithnoise_.md",
+      "hash": "8e26043541728f184a9a839b7a653566e3daa72743244d3e66792f790a0c3ea5"
+    },
+    "https://developer.apple.com/documentation/gameplaykit/gknoisemap/noisemapwithnoise:size:origin:samplecount:seamless:": {
+      "etag": "\"5a04-65d55df0a7edd-df\"",
+      "file_path": "documentation/GameplayKit/gknoisemap/noisemapwithnoise_size_origin_samplecount_seamless_.md",
+      "hash": "752522d12373b38280e361a4dabeaf16ab6500cee5057d04a395abab86235be7"
     },
     "https://developer.apple.com/documentation/gameplaykit/gknoisemap/origin": {
       "etag": "\"3557-65d55df0a7edd-df\"",
@@ -1450,6 +1585,16 @@
       "file_path": "documentation/GameplayKit/gkobstaclegraph/connectusingobstacles(node,ignoringbufferradiusof).md",
       "hash": "15c57442c250f9079867bda6a14ebf312f71ca1235a37b97ba71f09c54c70914"
     },
+    "https://developer.apple.com/documentation/gameplaykit/gkobstaclegraph/graphwithobstacles:bufferradius:": {
+      "etag": "\"38e7-65d55df0a7edd-df\"",
+      "file_path": "documentation/GameplayKit/gkobstaclegraph/graphwithobstacles_bufferradius_.md",
+      "hash": "49124f6572e70fe7959f067c8bfa14f4a2dae24cc6409b88296892b2aa3603ab"
+    },
+    "https://developer.apple.com/documentation/gameplaykit/gkobstaclegraph/graphwithobstacles:bufferradius:nodeclass:": {
+      "etag": "\"4348-65d55df0a7edd-df\"",
+      "file_path": "documentation/GameplayKit/gkobstaclegraph/graphwithobstacles_bufferradius_nodeclass_.md",
+      "hash": "83377e08ec57d254f9f07c35fe31e8ae9f941c59e3c2dabb3f66ec0336ab276a"
+    },
     "https://developer.apple.com/documentation/gameplaykit/gkobstaclegraph/init(nodes:)": {
       "etag": "\"174c-65d55df0a7edd-df\"",
       "file_path": "documentation/GameplayKit/gkobstaclegraph/init(nodes).md",
@@ -1530,6 +1675,11 @@
       "file_path": "documentation/GameplayKit/gkoctree/init(boundingbox,minimumcellsize).md",
       "hash": "29d61791b2c461682fa4b81816d4a161da81b87bd5fa512a5913fcd3200335b1"
     },
+    "https://developer.apple.com/documentation/gameplaykit/gkoctree/octreewithboundingbox:minimumcellsize:": {
+      "etag": "\"2393-65d55df0e3524-df\"",
+      "file_path": "documentation/GameplayKit/gkoctree/octreewithboundingbox_minimumcellsize_.md",
+      "hash": "99577c1dae8280da0e06448e62f7f079bcfe1f53ea8a5fbd7a31edda6f352111"
+    },
     "https://developer.apple.com/documentation/gameplaykit/gkoctree/remove(_:)": {
       "etag": "\"4585-65d55df0e3524-df\"",
       "file_path": "documentation/GameplayKit/gkoctree/remove(_).md",
@@ -1580,6 +1730,16 @@
       "file_path": "documentation/GameplayKit/gkpath/init(points,radius,cyclical)-6qqn4.md",
       "hash": "88275251dfe695da50efeb67eedac6e1d62d58b11e9081a29799b0a5a074387d"
     },
+    "https://developer.apple.com/documentation/gameplaykit/gkpath/initwithfloat3points:count:radius:cyclical:": {
+      "etag": "\"49b6-65d55df145c7c-df\"",
+      "file_path": "documentation/GameplayKit/gkpath/initwithfloat3points_count_radius_cyclical_.md",
+      "hash": "a44d90f517cc78768dd4a43f7b130e43c84bc383749ffed43d74ffd8f2518db7"
+    },
+    "https://developer.apple.com/documentation/gameplaykit/gkpath/initwithpoints:count:radius:cyclical:": {
+      "etag": "\"4c09-65d55df145c7c-df\"",
+      "file_path": "documentation/GameplayKit/gkpath/initwithpoints_count_radius_cyclical_.md",
+      "hash": "9c2e3642ae627a0bd1d0f009e02bc7b493b0b28bbdaf3303117e99445f5003db"
+    },
     "https://developer.apple.com/documentation/gameplaykit/gkpath/iscyclical": {
       "etag": "\"2dad-65d55df145c7c-df\"",
       "file_path": "documentation/GameplayKit/gkpath/iscyclical.md",
@@ -1589,6 +1749,21 @@
       "etag": "\"39e3-65d55df145c7c-df\"",
       "file_path": "documentation/GameplayKit/gkpath/numpoints.md",
       "hash": "1933a70f67cb0b2ca9c1151686fe93b19e13db63f4f8f8f25cdab012723d32c4"
+    },
+    "https://developer.apple.com/documentation/gameplaykit/gkpath/pathwithfloat3points:count:radius:cyclical:": {
+      "etag": "\"49ae-65d55df145c7c-df\"",
+      "file_path": "documentation/GameplayKit/gkpath/pathwithfloat3points_count_radius_cyclical_.md",
+      "hash": "e08f4d7f987f84a5cc3631471d070ca95e3911bf39f11dbb6429b479d4dbcb52"
+    },
+    "https://developer.apple.com/documentation/gameplaykit/gkpath/pathwithgraphnodes:radius:": {
+      "etag": "\"4f0c-65d55df145c7c-df\"",
+      "file_path": "documentation/GameplayKit/gkpath/pathwithgraphnodes_radius_.md",
+      "hash": "fb04fc865b4ed02a577ec0be4914e1e84fc9274f0eacd648e383591a0245d616"
+    },
+    "https://developer.apple.com/documentation/gameplaykit/gkpath/pathwithpoints:count:radius:cyclical:": {
+      "etag": "\"4928-65d55df145c7c-df\"",
+      "file_path": "documentation/GameplayKit/gkpath/pathwithpoints_count_radius_cyclical_.md",
+      "hash": "bfbc7d41c2c36c7e262f8ff059fc68d8b16a99984a432b9b8974df63906d0745"
     },
     "https://developer.apple.com/documentation/gameplaykit/gkpath/point(at:)": {
       "etag": "\"3d3d-65d55df145c7c-df\"",
@@ -1610,6 +1785,11 @@
       "file_path": "documentation/GameplayKit/gkperlinnoisesource/init(frequency,octavecount,persistence,lacunarity,seed).md",
       "hash": "79e3720a787ac0ba983010f208e0b84ee5a869c90aa4c23492ce077c47f0e912"
     },
+    "https://developer.apple.com/documentation/gameplaykit/gkperlinnoisesource/perlinnoisesourcewithfrequency:octavecount:persistence:lacunarity:seed:": {
+      "etag": "\"4efe-65d55df12c1b4-df\"",
+      "file_path": "documentation/GameplayKit/gkperlinnoisesource/perlinnoisesourcewithfrequency_octavecount_persistence_lacunarity_seed_.md",
+      "hash": "ed1bc84a8df3f1e8c3e7710b56ce3ac04b1d10f64c18cb3da35b6e0602f8ce6d"
+    },
     "https://developer.apple.com/documentation/gameplaykit/gkperlinnoisesource/persistence": {
       "etag": "\"21a2-65d55df12c1b4-df\"",
       "file_path": "documentation/GameplayKit/gkperlinnoisesource/persistence.md",
@@ -1629,6 +1809,16 @@
       "etag": "\"183c-65d55df08b327-df\"",
       "file_path": "documentation/GameplayKit/gkpolygonobstacle/init(points).md",
       "hash": "8f6ccfcee49edd72b54cc5a2d8f0cbb659288f378bd9bae096eaebed5ede63f8"
+    },
+    "https://developer.apple.com/documentation/gameplaykit/gkpolygonobstacle/initwithpoints:count:": {
+      "etag": "\"2277-65d55df08b327-df\"",
+      "file_path": "documentation/GameplayKit/gkpolygonobstacle/initwithpoints_count_.md",
+      "hash": "a85d3ebece6eb7cd95b19c3106eb5fbfb32d8798558a1b44ca8561b4fddb62bf"
+    },
+    "https://developer.apple.com/documentation/gameplaykit/gkpolygonobstacle/obstaclewithpoints:count:": {
+      "etag": "\"1ef0-65d55df08b327-df\"",
+      "file_path": "documentation/GameplayKit/gkpolygonobstacle/obstaclewithpoints_count_.md",
+      "hash": "60407b5ba35cd02c77d3c66ccbc5c6022ceb94122428ede8fa21bc7ba1ed4287"
     },
     "https://developer.apple.com/documentation/gameplaykit/gkpolygonobstacle/vertex(at:)": {
       "etag": "\"3438-65d55df08b327-df\"",
@@ -1694,6 +1884,11 @@
       "etag": "\"329f-65d55df145c7c-df\"",
       "file_path": "documentation/GameplayKit/gkquadtree/init(boundingquad,minimumcellsize).md",
       "hash": "bd858a15fd2dce2948eeb672f6706018484d9c1278ca17d07eb19164925335dd"
+    },
+    "https://developer.apple.com/documentation/gameplaykit/gkquadtree/quadtreewithboundingquad:minimumcellsize:": {
+      "etag": "\"23ef-65d55df145c7c-df\"",
+      "file_path": "documentation/GameplayKit/gkquadtree/quadtreewithboundingquad_minimumcellsize_.md",
+      "hash": "24cdf8f353e5e845efb4175e8dbaf2f545f8b51b72e7f58ad4574f0ca47928e7"
     },
     "https://developer.apple.com/documentation/gameplaykit/gkquadtree/remove(_:)": {
       "etag": "\"460d-65d55df145c7c-df\"",
@@ -1840,6 +2035,11 @@
       "file_path": "documentation/GameplayKit/gkridgednoisesource/init(frequency,octavecount,lacunarity,seed).md",
       "hash": "cfea452fe47538c36a8cfaa3056f10c40eb44370f77a13278692f4ace633d168"
     },
+    "https://developer.apple.com/documentation/gameplaykit/gkridgednoisesource/ridgednoisesourcewithfrequency:octavecount:lacunarity:seed:": {
+      "etag": "\"4679-65d55df0c7f35-df\"",
+      "file_path": "documentation/GameplayKit/gkridgednoisesource/ridgednoisesourcewithfrequency_octavecount_lacunarity_seed_.md",
+      "hash": "13e201a7b5ae2cdd7c8cb4220ebf702452c34fcb8cc8c7ba556629b40be052d0"
+    },
     "https://developer.apple.com/documentation/gameplaykit/gkrtree": {
       "etag": "\"7f7b-65d55df08b327-df\"",
       "file_path": "documentation/GameplayKit/gkrtree.md",
@@ -1869,6 +2069,11 @@
       "etag": "\"3b15-65d55df12c1b4-df\"",
       "file_path": "documentation/GameplayKit/gkrtree/removeelement(_,boundingrectmin,boundingrectmax).md",
       "hash": "319d83c3ea2e1c0e16001024be56afad393ef2fbfa14d8997ad0f4c9f1518c65"
+    },
+    "https://developer.apple.com/documentation/gameplaykit/gkrtree/treewithmaxnumberofchildren:": {
+      "etag": "\"3084-65d55df12c1b4-df\"",
+      "file_path": "documentation/GameplayKit/gkrtree/treewithmaxnumberofchildren_.md",
+      "hash": "0e31b4404aff640bd0a296fea5cd2209fad0c6a047ebdbf8fa03a8519b331ed8"
     },
     "https://developer.apple.com/documentation/gameplaykit/gkrtreesplitstrategy": {
       "etag": "\"498b-65d55df0c7f35-df\"",
@@ -2095,6 +2300,11 @@
       "file_path": "documentation/GameplayKit/gkscnnodecomponent.md",
       "hash": "bcd6b8a4f9d0e3d591d247cf7370cf0d9f94b023e04b406fb591863ca339b05d"
     },
+    "https://developer.apple.com/documentation/gameplaykit/gkscnnodecomponent/componentwithnode:": {
+      "etag": "\"14d5-65d55df0c7f35-df\"",
+      "file_path": "documentation/GameplayKit/gkscnnodecomponent/componentwithnode_.md",
+      "hash": "fc2e36e8a51e267313deefc8cf1b77ad7fb8024b4a422522c6a27ba628559831"
+    },
     "https://developer.apple.com/documentation/gameplaykit/gkscnnodecomponent/init(node:)": {
       "etag": "\"1eae-65d55df0c7f35-df\"",
       "file_path": "documentation/GameplayKit/gkscnnodecomponent/init(node).md",
@@ -2115,6 +2325,11 @@
       "file_path": "documentation/GameplayKit/gksknodecomponent.md",
       "hash": "79529a1bcdc33a808d9af043866470986b0c52c77b886b2cc3bf1e6105598023"
     },
+    "https://developer.apple.com/documentation/gameplaykit/gksknodecomponent/componentwithnode:": {
+      "etag": "\"29ca-65d55df0a7edd-df\"",
+      "file_path": "documentation/GameplayKit/gksknodecomponent/componentwithnode_.md",
+      "hash": "9b96d0a7d03131c6133738f87042f79986b4ee30cd8b40865163e9baed7b4154"
+    },
     "https://developer.apple.com/documentation/gameplaykit/gksknodecomponent/init(node:)": {
       "etag": "\"2f8a-65d55df0a7edd-df\"",
       "file_path": "documentation/GameplayKit/gksknodecomponent/init(node).md",
@@ -2134,6 +2349,11 @@
       "etag": "\"2512-65d55df193d01-df\"",
       "file_path": "documentation/GameplayKit/gksphereobstacle/init(radius).md",
       "hash": "3ecd3069edb51755f50bd081078c42d28b9ce072a70feda1fcb6226600dc8333"
+    },
+    "https://developer.apple.com/documentation/gameplaykit/gksphereobstacle/obstaclewithradius:": {
+      "etag": "\"19ef-65d55df193d01-df\"",
+      "file_path": "documentation/GameplayKit/gksphereobstacle/obstaclewithradius_.md",
+      "hash": "51d268e0be38321240d2cc9b5e8d6ce7480f7e19d4e94066fdc197ebf975874d"
     },
     "https://developer.apple.com/documentation/gameplaykit/gksphereobstacle/position": {
       "etag": "\"253b-65d55df193d01-df\"",
@@ -2185,6 +2405,11 @@
       "file_path": "documentation/GameplayKit/gkstate/isvalidnextstate(_).md",
       "hash": "95a3ef2a7f40027a4d2349cf3e5b2ca0106074384a5f3554a04926dcd692a2ae"
     },
+    "https://developer.apple.com/documentation/gameplaykit/gkstate/state": {
+      "etag": "\"16f6-65d55df0e3524-df\"",
+      "file_path": "documentation/GameplayKit/gkstate/state.md",
+      "hash": "f95f404376ee0d6ea96e5530a35bfa667cffbd73f769ee640b42f58e91e84acc"
+    },
     "https://developer.apple.com/documentation/gameplaykit/gkstate/statemachine": {
       "etag": "\"28e9-65d55df0e3524-df\"",
       "file_path": "documentation/GameplayKit/gkstate/statemachine.md",
@@ -2229,6 +2454,16 @@
       "etag": "\"19e7-65d55df16396d-df\"",
       "file_path": "documentation/GameplayKit/gkstatemachine/state(forclass).md",
       "hash": "5835529366be839bd946057ccddb76135db70452c3eb990927379c4f148cbd8a"
+    },
+    "https://developer.apple.com/documentation/gameplaykit/gkstatemachine/stateforclass:": {
+      "etag": "\"3549-65d55df16396d-df\"",
+      "file_path": "documentation/GameplayKit/gkstatemachine/stateforclass_.md",
+      "hash": "2b98ed5d31afca2093bf18f2c306c34a9043df6b4b4364404c31a3a3153dcf40"
+    },
+    "https://developer.apple.com/documentation/gameplaykit/gkstatemachine/statemachinewithstates:": {
+      "etag": "\"29b6-65d55df16396d-df\"",
+      "file_path": "documentation/GameplayKit/gkstatemachine/statemachinewithstates_.md",
+      "hash": "41381ea0c6c1b17cb8597f33e9bb224b98377baf5d45de87b7bc47cbbf491f98"
     },
     "https://developer.apple.com/documentation/gameplaykit/gkstatemachine/update(deltatime:)": {
       "etag": "\"686f-65d55df16396d-df\"",
@@ -2334,6 +2569,51 @@
       "etag": "\"2b30-6590267e86951-df\"",
       "file_path": "documentation/GameplayKit/gameplaykit-structures.md",
       "hash": "1ab50475fd88b44c1e6575b99337889364a1af213f2b6ee2f684bb5c26b0fa16"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/gameplaykit/gk_available.json": {
+      "etag": "\"1e52-65d55df180ba9-df\"",
+      "file_path": "documentation/GameplayKit/gk_available.md",
+      "hash": "c210af4c1494dc8e035a8998d45e0dc587f737bca1a97aec9669ffcd67c82d47"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/gameplaykit/gk_base_availability.json": {
+      "etag": "\"1e82-65d55df08b327-df\"",
+      "file_path": "documentation/GameplayKit/gk_base_availability.md",
+      "hash": "df8714e70c0c5a4a63a28b12affb3f770bdadb2571edd5cd3e05d22342aa0091"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/gameplaykit/gk_base_availability_2.json": {
+      "etag": "\"1e8e-65d55df145c7c-df\"",
+      "file_path": "documentation/GameplayKit/gk_base_availability_2.md",
+      "hash": "64f8aaac26fd68b0f567427528793c0c86dd374bc84fbe5d2731ec1611afdbed"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/gameplaykit/gk_base_availability_3.json": {
+      "etag": "\"1e8e-65d55df145c7c-df\"",
+      "file_path": "documentation/GameplayKit/gk_base_availability_3.md",
+      "hash": "b98ff4783d0662ab485b23d44e960cd185f514aef694d4e6053a03f242dd54e9"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/gameplaykit/gk_default.json": {
+      "etag": "\"1e46-65d55df16396d-df\"",
+      "file_path": "documentation/GameplayKit/gk_default.md",
+      "hash": "ef8ce99df013bc717a1b4de03a64afa1cf36f375f01f2499bb4be8d0481207c9"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/gameplaykit/gk_export.json": {
+      "etag": "\"1e40-65d55df180ba9-df\"",
+      "file_path": "documentation/GameplayKit/gk_export.md",
+      "hash": "8a5cb34ddb88e0b497d3b654c71a4f9afb1d2331872201697bd561a596509ea8"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/gameplaykit/gk_force_inline.json": {
+      "etag": "\"1e64-65d55df0c7f35-df\"",
+      "file_path": "documentation/GameplayKit/gk_force_inline.md",
+      "hash": "d997ed79c3c9358a26fd0e05589fb952aed6fe64effc0058c90bdff066dd1c8d"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/gameplaykit/gk_likely.json": {
+      "etag": "\"1e9a-65d55df0c7f35-df\"",
+      "file_path": "documentation/GameplayKit/gk_likely.md",
+      "hash": "d63ceccb6dc3cf52dc205da288db411cb0e89774c27402e620df4c1b26790b5b"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/gameplaykit/gk_unlikely.json": {
+      "etag": "\"1ea6-65d55df0fb53b-df\"",
+      "file_path": "documentation/GameplayKit/gk_unlikely.md",
+      "hash": "d6f2abea756f2610be94f757b87d7950ef67332b89b04ec57922de1c3574de86"
     },
     "https://developer.apple.com/tutorials/data/documentation/gameplaykit/gk_version.json": {
       "etag": "\"2781-65d55df0fb53b-df\"",
@@ -2515,6 +2795,11 @@
       "file_path": "documentation/GameplayKit/gkbehavior/removeallgoals().md",
       "hash": "a1e88c1dbd4bbfc07e70a7fabf65e0ec67e9d87f0c5c11709c947edf26ed4d1a"
     },
+    "https://developer.apple.com/tutorials/data/documentation/gameplaykit/gkbehavior/setobject:forkeyedsubscript:.json": {
+      "etag": "\"2e5b-65d55df0e3524-df\"",
+      "file_path": "documentation/GameplayKit/gkbehavior/setobject_forkeyedsubscript_.md",
+      "hash": "e7f6f7c3141590ce8566f74606df47fd13b4842bdacf795598eca9652585215e"
+    },
     "https://developer.apple.com/tutorials/data/documentation/gameplaykit/gkbehavior/setweight(_:for:).json": {
       "etag": "\"4f7d-65d55df0e3524-df\"",
       "file_path": "documentation/GameplayKit/gkbehavior/setweight(_,for).md",
@@ -2539,6 +2824,11 @@
       "etag": "\"8184-65d55df0c7f35-df\"",
       "file_path": "documentation/GameplayKit/gkbillownoisesource.md",
       "hash": "d9583780bcf27eb043230ce53e9da02859162dbe211a37d75276663eb53e8355"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/gameplaykit/gkbillownoisesource/billownoisesourcewithfrequency:octavecount:persistence:lacunarity:seed:.json": {
+      "etag": "\"4f3d-65d55df0c7f35-df\"",
+      "file_path": "documentation/GameplayKit/gkbillownoisesource/billownoisesourcewithfrequency_octavecount_persistence_lacunarity_seed_.md",
+      "hash": "09f4c5d0d1f06de979ae511f94077898d5ff36805cef77905c0d51e4032a1162"
     },
     "https://developer.apple.com/tutorials/data/documentation/gameplaykit/gkbillownoisesource/init(frequency:octavecount:persistence:lacunarity:seed:).json": {
       "etag": "\"6c8e-65d55df0c7f35-df\"",
@@ -2604,6 +2894,11 @@
       "etag": "\"289b-65d55df16396d-df\"",
       "file_path": "documentation/GameplayKit/gkcircleobstacle/init(radius).md",
       "hash": "4fea787307f74fd3ce96be88e4535f42058aec4821fbeaf9e6ca88c3be5092d2"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/gameplaykit/gkcircleobstacle/obstaclewithradius:.json": {
+      "etag": "\"19e5-65d55df16396d-df\"",
+      "file_path": "documentation/GameplayKit/gkcircleobstacle/obstaclewithradius_.md",
+      "hash": "220f32f018180ab70e71fae4fceb15a9ca41e637a6bb3cdc3f1d4012d8a2e54d"
     },
     "https://developer.apple.com/tutorials/data/documentation/gameplaykit/gkcircleobstacle/position.json": {
       "etag": "\"24d7-65d55df16396d-df\"",
@@ -2755,6 +3050,11 @@
       "file_path": "documentation/GameplayKit/gkcompositebehavior/removeallbehaviors().md",
       "hash": "0d360075ea546d6b0dd2c88da913d93973abcf87330f250d9dc24f7eddeb45e6"
     },
+    "https://developer.apple.com/tutorials/data/documentation/gameplaykit/gkcompositebehavior/setobject:forkeyedsubscript:.json": {
+      "etag": "\"30a7-65d55df12c1b4-df\"",
+      "file_path": "documentation/GameplayKit/gkcompositebehavior/setobject_forkeyedsubscript_.md",
+      "hash": "e9dc780e178df3f26792813622ef86aec4bc3c36b5d48c5cd7595a303bd43140"
+    },
     "https://developer.apple.com/tutorials/data/documentation/gameplaykit/gkcompositebehavior/setweight(_:for:).json": {
       "etag": "\"4aa5-65d55df12c1b4-df\"",
       "file_path": "documentation/GameplayKit/gkcompositebehavior/setweight(_,for).md",
@@ -2900,10 +3200,20 @@
       "file_path": "documentation/GameplayKit/gkentity/component(oftype).md",
       "hash": "6244748f9e7e6b2987ab2a50d182119b0fe9febf1914bfc006c84bea913354e9"
     },
+    "https://developer.apple.com/tutorials/data/documentation/gameplaykit/gkentity/componentforclass:.json": {
+      "etag": "\"299e-65d55df16396d-df\"",
+      "file_path": "documentation/GameplayKit/gkentity/componentforclass_.md",
+      "hash": "de2674d254028b8ce2efe77e37f030948d0a938bfca3f63dd9f90ba6221137af"
+    },
     "https://developer.apple.com/tutorials/data/documentation/gameplaykit/gkentity/components.json": {
       "etag": "\"2af6-65d55df16396d-df\"",
       "file_path": "documentation/GameplayKit/gkentity/components.md",
       "hash": "bc178c360dce9bcc6e62dc0c292df3f41e8224e4d73bcf228642c4b3db80121b"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/gameplaykit/gkentity/entity.json": {
+      "etag": "\"1511-65d55df16396d-df\"",
+      "file_path": "documentation/GameplayKit/gkentity/entity.md",
+      "hash": "ea213cc4b16bc3993bab5d65b33f0e02fd2f9a981b453465af4b6708118a2526"
     },
     "https://developer.apple.com/tutorials/data/documentation/gameplaykit/gkentity/init().json": {
       "etag": "\"225a-65d55df16396d-df\"",
@@ -2919,6 +3229,11 @@
       "etag": "\"1d0e-65d55df16396d-df\"",
       "file_path": "documentation/GameplayKit/gkentity/removecomponent(oftype).md",
       "hash": "97841ccbd891ab5c563e40548d6b43ee085f8d638bff0acc659bb0e1dafb061c"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/gameplaykit/gkentity/removecomponentforclass:.json": {
+      "etag": "\"27dd-65d55df16396d-df\"",
+      "file_path": "documentation/GameplayKit/gkentity/removecomponentforclass_.md",
+      "hash": "21f2eedc22a65ab5e91cd6f6550c1ae4e4cfdd9bbb8d250bd771703a0a64b966"
     },
     "https://developer.apple.com/tutorials/data/documentation/gameplaykit/gkentity/update(deltatime:).json": {
       "etag": "\"4bc2-65d55df16396d-df\"",
@@ -3150,6 +3465,11 @@
       "file_path": "documentation/GameplayKit/gkgraph/findpath(from,to).md",
       "hash": "3ea24caa9348a0de8a41031b47bb3b65757f7cd48dec4b2d5c3f03ea3b766ebe"
     },
+    "https://developer.apple.com/tutorials/data/documentation/gameplaykit/gkgraph/graphwithnodes:.json": {
+      "etag": "\"2d3b-65d55df0fb53b-df\"",
+      "file_path": "documentation/GameplayKit/gkgraph/graphwithnodes_.md",
+      "hash": "d38eded3b7c017680d08d24ece3a5507903cfe2021dea91636ca0b6ec9ef0da1"
+    },
     "https://developer.apple.com/tutorials/data/documentation/gameplaykit/gkgraph/init(_:).json": {
       "etag": "\"3b03-65d55df0fb53b-df\"",
       "file_path": "documentation/GameplayKit/gkgraph/init(_).md",
@@ -3280,6 +3600,16 @@
       "file_path": "documentation/GameplayKit/gkgridgraph/diagonalsallowed.md",
       "hash": "283e0a3e071dce821a1c63b325f8f4ddd3c004b8588b9c148aa59ec696d5e36b"
     },
+    "https://developer.apple.com/tutorials/data/documentation/gameplaykit/gkgridgraph/graphfromgridstartingat:width:height:diagonalsallowed:.json": {
+      "etag": "\"39d5-65d55df0fb53b-df\"",
+      "file_path": "documentation/GameplayKit/gkgridgraph/graphfromgridstartingat_width_height_diagonalsallowed_.md",
+      "hash": "13cafa3eeceb084b777d6e50ce3ecc3b1fa7fd0187b897a8588ba4590c6321c6"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/gameplaykit/gkgridgraph/graphfromgridstartingat:width:height:diagonalsallowed:nodeclass:.json": {
+      "etag": "\"4a95-65d55df0fb53b-df\"",
+      "file_path": "documentation/GameplayKit/gkgridgraph/graphfromgridstartingat_width_height_diagonalsallowed_nodeclass_.md",
+      "hash": "c5915870297e58f95907c2e49e0c6601a86c7e19cf0ddc109943df17ab1a5e52"
+    },
     "https://developer.apple.com/tutorials/data/documentation/gameplaykit/gkgridgraph/gridheight.json": {
       "etag": "\"3888-65d55df0fb53b-df\"",
       "file_path": "documentation/GameplayKit/gkgridgraph/gridheight.md",
@@ -3329,6 +3659,16 @@
       "etag": "\"28de-65d55df0a7edd-df\"",
       "file_path": "documentation/GameplayKit/gkgridgraphnode/init(gridposition).md",
       "hash": "58ab7957b5c325747a090027be82459d549f8dc8b5e122963e8cbb34d3673fbe"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/gameplaykit/gkgridgraphnode/nodewithgridposition:.json": {
+      "etag": "\"1b1c-65d55df0a7edd-df\"",
+      "file_path": "documentation/GameplayKit/gkgridgraphnode/nodewithgridposition_.md",
+      "hash": "f8d3afbfc644840eb11d22c0d2aec2f04b61ff79455ed98aed519537415b614d"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/gameplaykit/gkinspectable.json": {
+      "etag": "\"1e58-65d55df0fb53b-df\"",
+      "file_path": "documentation/GameplayKit/gkinspectable.md",
+      "hash": "9252f733b3bf20ef39f63484e9b339ebc2fdb731386eec1ec031af36afeb5540"
     },
     "https://developer.apple.com/tutorials/data/documentation/gameplaykit/gklinearcongruentialrandomsource.json": {
       "etag": "\"841b-65d55df180ba9-df\"",
@@ -3394,6 +3734,16 @@
       "etag": "\"28e0-65d55df180ba9-df\"",
       "file_path": "documentation/GameplayKit/gkmeshgraph/connectusingobstacles(node).md",
       "hash": "630a8a6b002088de52d8988c425763eb07f5ca6cc7733b8f937c8ebbfa175b38"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/gameplaykit/gkmeshgraph/graphwithbufferradius:mincoordinate:maxcoordinate:.json": {
+      "etag": "\"4531-65d55df180ba9-df\"",
+      "file_path": "documentation/GameplayKit/gkmeshgraph/graphwithbufferradius_mincoordinate_maxcoordinate_.md",
+      "hash": "c09f2c262c4b026db0f1cc8a12020ed065782213bd4ca89ba818185864c17d60"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/gameplaykit/gkmeshgraph/graphwithbufferradius:mincoordinate:maxcoordinate:nodeclass:.json": {
+      "etag": "\"55c6-65d55df180ba9-df\"",
+      "file_path": "documentation/GameplayKit/gkmeshgraph/graphwithbufferradius_mincoordinate_maxcoordinate_nodeclass_.md",
+      "hash": "34dbde5d9925d7386d4bc8453162e595f1d65af6932a95b9db38ebb9bd2e03ba"
     },
     "https://developer.apple.com/tutorials/data/documentation/gameplaykit/gkmeshgraph/init(bufferradius:mincoordinate:maxcoordinate:).json": {
       "etag": "\"5735-65d55df180ba9-df\"",
@@ -3595,6 +3945,16 @@
       "file_path": "documentation/GameplayKit/gknoise/multiply(_).md",
       "hash": "b08f1e9c5e10ee7517055c32c21670532ba58fa97c8e144d9ea3a621ec333efd"
     },
+    "https://developer.apple.com/tutorials/data/documentation/gameplaykit/gknoise/noisewithnoisesource:.json": {
+      "etag": "\"2ea1-65d55df112d95-df\"",
+      "file_path": "documentation/GameplayKit/gknoise/noisewithnoisesource_.md",
+      "hash": "7dc3bc6bdb7eabdc24b1d2923b3fb17e13d25957fc27d1ea51a1291217fd006c"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/gameplaykit/gknoise/noisewithnoisesource:gradientcolors:.json": {
+      "etag": "\"4f8d-65d55df112d95-df\"",
+      "file_path": "documentation/GameplayKit/gknoise/noisewithnoisesource_gradientcolors_.md",
+      "hash": "d2a2b1c78be6e8fc400ccd7dbca77e17a5ad93fe2a51c231ac2fcfaab44a81c2"
+    },
     "https://developer.apple.com/tutorials/data/documentation/gameplaykit/gknoise/raisetopower(_:)-14715.json": {
       "etag": "\"432d-65d55df12c1b4-df\"",
       "file_path": "documentation/GameplayKit/gknoise/raisetopower(_)-14715.md",
@@ -3669,6 +4029,16 @@
       "etag": "\"36f6-65d55df0a7edd-df\"",
       "file_path": "documentation/GameplayKit/gknoisemap/isseamless.md",
       "hash": "d65641ddceb2ce5097588f177c396a2eb7a9781fd6cfca28fbab20f721498c77"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/gameplaykit/gknoisemap/noisemapwithnoise:.json": {
+      "etag": "\"3e94-65d55df0a7edd-df\"",
+      "file_path": "documentation/GameplayKit/gknoisemap/noisemapwithnoise_.md",
+      "hash": "8e26043541728f184a9a839b7a653566e3daa72743244d3e66792f790a0c3ea5"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/gameplaykit/gknoisemap/noisemapwithnoise:size:origin:samplecount:seamless:.json": {
+      "etag": "\"5a04-65d55df0a7edd-df\"",
+      "file_path": "documentation/GameplayKit/gknoisemap/noisemapwithnoise_size_origin_samplecount_seamless_.md",
+      "hash": "752522d12373b38280e361a4dabeaf16ab6500cee5057d04a395abab86235be7"
     },
     "https://developer.apple.com/tutorials/data/documentation/gameplaykit/gknoisemap/origin.json": {
       "etag": "\"3557-65d55df0a7edd-df\"",
@@ -3760,6 +4130,16 @@
       "file_path": "documentation/GameplayKit/gkobstaclegraph/connectusingobstacles(node,ignoringbufferradiusof).md",
       "hash": "15c57442c250f9079867bda6a14ebf312f71ca1235a37b97ba71f09c54c70914"
     },
+    "https://developer.apple.com/tutorials/data/documentation/gameplaykit/gkobstaclegraph/graphwithobstacles:bufferradius:.json": {
+      "etag": "\"38e7-65d55df0a7edd-df\"",
+      "file_path": "documentation/GameplayKit/gkobstaclegraph/graphwithobstacles_bufferradius_.md",
+      "hash": "49124f6572e70fe7959f067c8bfa14f4a2dae24cc6409b88296892b2aa3603ab"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/gameplaykit/gkobstaclegraph/graphwithobstacles:bufferradius:nodeclass:.json": {
+      "etag": "\"4348-65d55df0a7edd-df\"",
+      "file_path": "documentation/GameplayKit/gkobstaclegraph/graphwithobstacles_bufferradius_nodeclass_.md",
+      "hash": "83377e08ec57d254f9f07c35fe31e8ae9f941c59e3c2dabb3f66ec0336ab276a"
+    },
     "https://developer.apple.com/tutorials/data/documentation/gameplaykit/gkobstaclegraph/init(nodes:).json": {
       "etag": "\"174c-65d55df0a7edd-df\"",
       "file_path": "documentation/GameplayKit/gkobstaclegraph/init(nodes).md",
@@ -3840,6 +4220,11 @@
       "file_path": "documentation/GameplayKit/gkoctree/init(boundingbox,minimumcellsize).md",
       "hash": "29d61791b2c461682fa4b81816d4a161da81b87bd5fa512a5913fcd3200335b1"
     },
+    "https://developer.apple.com/tutorials/data/documentation/gameplaykit/gkoctree/octreewithboundingbox:minimumcellsize:.json": {
+      "etag": "\"2393-65d55df0e3524-df\"",
+      "file_path": "documentation/GameplayKit/gkoctree/octreewithboundingbox_minimumcellsize_.md",
+      "hash": "99577c1dae8280da0e06448e62f7f079bcfe1f53ea8a5fbd7a31edda6f352111"
+    },
     "https://developer.apple.com/tutorials/data/documentation/gameplaykit/gkoctree/remove(_:).json": {
       "etag": "\"4585-65d55df0e3524-df\"",
       "file_path": "documentation/GameplayKit/gkoctree/remove(_).md",
@@ -3890,6 +4275,16 @@
       "file_path": "documentation/GameplayKit/gkpath/init(points,radius,cyclical)-6qqn4.md",
       "hash": "88275251dfe695da50efeb67eedac6e1d62d58b11e9081a29799b0a5a074387d"
     },
+    "https://developer.apple.com/tutorials/data/documentation/gameplaykit/gkpath/initwithfloat3points:count:radius:cyclical:.json": {
+      "etag": "\"49b6-65d55df145c7c-df\"",
+      "file_path": "documentation/GameplayKit/gkpath/initwithfloat3points_count_radius_cyclical_.md",
+      "hash": "a44d90f517cc78768dd4a43f7b130e43c84bc383749ffed43d74ffd8f2518db7"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/gameplaykit/gkpath/initwithpoints:count:radius:cyclical:.json": {
+      "etag": "\"4c09-65d55df145c7c-df\"",
+      "file_path": "documentation/GameplayKit/gkpath/initwithpoints_count_radius_cyclical_.md",
+      "hash": "9c2e3642ae627a0bd1d0f009e02bc7b493b0b28bbdaf3303117e99445f5003db"
+    },
     "https://developer.apple.com/tutorials/data/documentation/gameplaykit/gkpath/iscyclical.json": {
       "etag": "\"2dad-65d55df145c7c-df\"",
       "file_path": "documentation/GameplayKit/gkpath/iscyclical.md",
@@ -3899,6 +4294,21 @@
       "etag": "\"39e3-65d55df145c7c-df\"",
       "file_path": "documentation/GameplayKit/gkpath/numpoints.md",
       "hash": "1933a70f67cb0b2ca9c1151686fe93b19e13db63f4f8f8f25cdab012723d32c4"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/gameplaykit/gkpath/pathwithfloat3points:count:radius:cyclical:.json": {
+      "etag": "\"49ae-65d55df145c7c-df\"",
+      "file_path": "documentation/GameplayKit/gkpath/pathwithfloat3points_count_radius_cyclical_.md",
+      "hash": "e08f4d7f987f84a5cc3631471d070ca95e3911bf39f11dbb6429b479d4dbcb52"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/gameplaykit/gkpath/pathwithgraphnodes:radius:.json": {
+      "etag": "\"4f0c-65d55df145c7c-df\"",
+      "file_path": "documentation/GameplayKit/gkpath/pathwithgraphnodes_radius_.md",
+      "hash": "fb04fc865b4ed02a577ec0be4914e1e84fc9274f0eacd648e383591a0245d616"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/gameplaykit/gkpath/pathwithpoints:count:radius:cyclical:.json": {
+      "etag": "\"4928-65d55df145c7c-df\"",
+      "file_path": "documentation/GameplayKit/gkpath/pathwithpoints_count_radius_cyclical_.md",
+      "hash": "bfbc7d41c2c36c7e262f8ff059fc68d8b16a99984a432b9b8974df63906d0745"
     },
     "https://developer.apple.com/tutorials/data/documentation/gameplaykit/gkpath/point(at:).json": {
       "etag": "\"3d3d-65d55df145c7c-df\"",
@@ -3920,6 +4330,11 @@
       "file_path": "documentation/GameplayKit/gkperlinnoisesource/init(frequency,octavecount,persistence,lacunarity,seed).md",
       "hash": "79e3720a787ac0ba983010f208e0b84ee5a869c90aa4c23492ce077c47f0e912"
     },
+    "https://developer.apple.com/tutorials/data/documentation/gameplaykit/gkperlinnoisesource/perlinnoisesourcewithfrequency:octavecount:persistence:lacunarity:seed:.json": {
+      "etag": "\"4efe-65d55df12c1b4-df\"",
+      "file_path": "documentation/GameplayKit/gkperlinnoisesource/perlinnoisesourcewithfrequency_octavecount_persistence_lacunarity_seed_.md",
+      "hash": "ed1bc84a8df3f1e8c3e7710b56ce3ac04b1d10f64c18cb3da35b6e0602f8ce6d"
+    },
     "https://developer.apple.com/tutorials/data/documentation/gameplaykit/gkperlinnoisesource/persistence.json": {
       "etag": "\"21a2-65d55df12c1b4-df\"",
       "file_path": "documentation/GameplayKit/gkperlinnoisesource/persistence.md",
@@ -3939,6 +4354,16 @@
       "etag": "\"183c-65d55df08b327-df\"",
       "file_path": "documentation/GameplayKit/gkpolygonobstacle/init(points).md",
       "hash": "8f6ccfcee49edd72b54cc5a2d8f0cbb659288f378bd9bae096eaebed5ede63f8"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/gameplaykit/gkpolygonobstacle/initwithpoints:count:.json": {
+      "etag": "\"2277-65d55df08b327-df\"",
+      "file_path": "documentation/GameplayKit/gkpolygonobstacle/initwithpoints_count_.md",
+      "hash": "a85d3ebece6eb7cd95b19c3106eb5fbfb32d8798558a1b44ca8561b4fddb62bf"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/gameplaykit/gkpolygonobstacle/obstaclewithpoints:count:.json": {
+      "etag": "\"1ef0-65d55df08b327-df\"",
+      "file_path": "documentation/GameplayKit/gkpolygonobstacle/obstaclewithpoints_count_.md",
+      "hash": "60407b5ba35cd02c77d3c66ccbc5c6022ceb94122428ede8fa21bc7ba1ed4287"
     },
     "https://developer.apple.com/tutorials/data/documentation/gameplaykit/gkpolygonobstacle/vertex(at:).json": {
       "etag": "\"3438-65d55df08b327-df\"",
@@ -4004,6 +4429,11 @@
       "etag": "\"329f-65d55df145c7c-df\"",
       "file_path": "documentation/GameplayKit/gkquadtree/init(boundingquad,minimumcellsize).md",
       "hash": "bd858a15fd2dce2948eeb672f6706018484d9c1278ca17d07eb19164925335dd"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/gameplaykit/gkquadtree/quadtreewithboundingquad:minimumcellsize:.json": {
+      "etag": "\"23ef-65d55df145c7c-df\"",
+      "file_path": "documentation/GameplayKit/gkquadtree/quadtreewithboundingquad_minimumcellsize_.md",
+      "hash": "24cdf8f353e5e845efb4175e8dbaf2f545f8b51b72e7f58ad4574f0ca47928e7"
     },
     "https://developer.apple.com/tutorials/data/documentation/gameplaykit/gkquadtree/remove(_:).json": {
       "etag": "\"460d-65d55df145c7c-df\"",
@@ -4150,6 +4580,11 @@
       "file_path": "documentation/GameplayKit/gkridgednoisesource/init(frequency,octavecount,lacunarity,seed).md",
       "hash": "cfea452fe47538c36a8cfaa3056f10c40eb44370f77a13278692f4ace633d168"
     },
+    "https://developer.apple.com/tutorials/data/documentation/gameplaykit/gkridgednoisesource/ridgednoisesourcewithfrequency:octavecount:lacunarity:seed:.json": {
+      "etag": "\"4679-65d55df0c7f35-df\"",
+      "file_path": "documentation/GameplayKit/gkridgednoisesource/ridgednoisesourcewithfrequency_octavecount_lacunarity_seed_.md",
+      "hash": "13e201a7b5ae2cdd7c8cb4220ebf702452c34fcb8cc8c7ba556629b40be052d0"
+    },
     "https://developer.apple.com/tutorials/data/documentation/gameplaykit/gkrtree.json": {
       "etag": "\"7f7b-65d55df08b327-df\"",
       "file_path": "documentation/GameplayKit/gkrtree.md",
@@ -4179,6 +4614,11 @@
       "etag": "\"3b15-65d55df12c1b4-df\"",
       "file_path": "documentation/GameplayKit/gkrtree/removeelement(_,boundingrectmin,boundingrectmax).md",
       "hash": "319d83c3ea2e1c0e16001024be56afad393ef2fbfa14d8997ad0f4c9f1518c65"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/gameplaykit/gkrtree/treewithmaxnumberofchildren:.json": {
+      "etag": "\"3084-65d55df12c1b4-df\"",
+      "file_path": "documentation/GameplayKit/gkrtree/treewithmaxnumberofchildren_.md",
+      "hash": "0e31b4404aff640bd0a296fea5cd2209fad0c6a047ebdbf8fa03a8519b331ed8"
     },
     "https://developer.apple.com/tutorials/data/documentation/gameplaykit/gkrtreesplitstrategy.json": {
       "etag": "\"498b-65d55df0c7f35-df\"",
@@ -4405,6 +4845,11 @@
       "file_path": "documentation/GameplayKit/gkscnnodecomponent.md",
       "hash": "bcd6b8a4f9d0e3d591d247cf7370cf0d9f94b023e04b406fb591863ca339b05d"
     },
+    "https://developer.apple.com/tutorials/data/documentation/gameplaykit/gkscnnodecomponent/componentwithnode:.json": {
+      "etag": "\"14d5-65d55df0c7f35-df\"",
+      "file_path": "documentation/GameplayKit/gkscnnodecomponent/componentwithnode_.md",
+      "hash": "fc2e36e8a51e267313deefc8cf1b77ad7fb8024b4a422522c6a27ba628559831"
+    },
     "https://developer.apple.com/tutorials/data/documentation/gameplaykit/gkscnnodecomponent/init(node:).json": {
       "etag": "\"1eae-65d55df0c7f35-df\"",
       "file_path": "documentation/GameplayKit/gkscnnodecomponent/init(node).md",
@@ -4425,6 +4870,11 @@
       "file_path": "documentation/GameplayKit/gksknodecomponent.md",
       "hash": "79529a1bcdc33a808d9af043866470986b0c52c77b886b2cc3bf1e6105598023"
     },
+    "https://developer.apple.com/tutorials/data/documentation/gameplaykit/gksknodecomponent/componentwithnode:.json": {
+      "etag": "\"29ca-65d55df0a7edd-df\"",
+      "file_path": "documentation/GameplayKit/gksknodecomponent/componentwithnode_.md",
+      "hash": "9b96d0a7d03131c6133738f87042f79986b4ee30cd8b40865163e9baed7b4154"
+    },
     "https://developer.apple.com/tutorials/data/documentation/gameplaykit/gksknodecomponent/init(node:).json": {
       "etag": "\"2f8a-65d55df0a7edd-df\"",
       "file_path": "documentation/GameplayKit/gksknodecomponent/init(node).md",
@@ -4444,6 +4894,11 @@
       "etag": "\"2512-65d55df193d01-df\"",
       "file_path": "documentation/GameplayKit/gksphereobstacle/init(radius).md",
       "hash": "3ecd3069edb51755f50bd081078c42d28b9ce072a70feda1fcb6226600dc8333"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/gameplaykit/gksphereobstacle/obstaclewithradius:.json": {
+      "etag": "\"19ef-65d55df193d01-df\"",
+      "file_path": "documentation/GameplayKit/gksphereobstacle/obstaclewithradius_.md",
+      "hash": "51d268e0be38321240d2cc9b5e8d6ce7480f7e19d4e94066fdc197ebf975874d"
     },
     "https://developer.apple.com/tutorials/data/documentation/gameplaykit/gksphereobstacle/position.json": {
       "etag": "\"253b-65d55df193d01-df\"",
@@ -4495,6 +4950,11 @@
       "file_path": "documentation/GameplayKit/gkstate/isvalidnextstate(_).md",
       "hash": "95a3ef2a7f40027a4d2349cf3e5b2ca0106074384a5f3554a04926dcd692a2ae"
     },
+    "https://developer.apple.com/tutorials/data/documentation/gameplaykit/gkstate/state.json": {
+      "etag": "\"16f6-65d55df0e3524-df\"",
+      "file_path": "documentation/GameplayKit/gkstate/state.md",
+      "hash": "f95f404376ee0d6ea96e5530a35bfa667cffbd73f769ee640b42f58e91e84acc"
+    },
     "https://developer.apple.com/tutorials/data/documentation/gameplaykit/gkstate/statemachine.json": {
       "etag": "\"28e9-65d55df0e3524-df\"",
       "file_path": "documentation/GameplayKit/gkstate/statemachine.md",
@@ -4539,6 +4999,16 @@
       "etag": "\"19e7-65d55df16396d-df\"",
       "file_path": "documentation/GameplayKit/gkstatemachine/state(forclass).md",
       "hash": "5835529366be839bd946057ccddb76135db70452c3eb990927379c4f148cbd8a"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/gameplaykit/gkstatemachine/stateforclass:.json": {
+      "etag": "\"3549-65d55df16396d-df\"",
+      "file_path": "documentation/GameplayKit/gkstatemachine/stateforclass_.md",
+      "hash": "2b98ed5d31afca2093bf18f2c306c34a9043df6b4b4364404c31a3a3153dcf40"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/gameplaykit/gkstatemachine/statemachinewithstates:.json": {
+      "etag": "\"29b6-65d55df16396d-df\"",
+      "file_path": "documentation/GameplayKit/gkstatemachine/statemachinewithstates_.md",
+      "hash": "41381ea0c6c1b17cb8597f33e9bb224b98377baf5d45de87b7bc47cbbf491f98"
     },
     "https://developer.apple.com/tutorials/data/documentation/gameplaykit/gkstatemachine/update(deltatime:).json": {
       "etag": "\"686f-65d55df16396d-df\"",
@@ -4623,8 +5093,8 @@
   },
   "metadata": {
     "render": {
-      "version": 1
+      "version": 2
     },
-    "total_pages": 924
+    "total_pages": 1018
   }
 }

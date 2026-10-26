@@ -38,6 +38,8 @@ AVAssetReferenceRestrictionForbidCrossSiteReference
   A local asset shouldn’t follow references to local media data stored outside its container file.
 - [static var defaultPolicy: AVAssetReferenceRestrictions](./defaultpolicy.md)
   The asset should use the default reference restrictions policy.
+- [AVAssetReferenceRestrictionForbidNone](./avassetreferencerestrictionforbidnone.md)
+  The asset should follow all media references.
 
 
 ---

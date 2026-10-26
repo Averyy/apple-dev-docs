@@ -54,6 +54,15 @@ NSArray *array = @[@"Hello, world!"];
 ### Creating an Array
 - [convenience init(objects: UnsafePointer<AnyObject>, count: Int)](./init%28objects,count%29-7dct1.md)
   Creates and returns an array that includes a given number of objects from a given C array.
+- [+ arrayWithArray:](./arraywitharray_.md)
+  Creates and returns an array containing the objects in another given array.
+- [+ arrayWithContentsOfFile:](./arraywithcontentsoffile_.md)
+  Creates and returns an array containing the contents of the file specified by a given path.
+### Related Documentation
+- [+ array](./array.md)
+  Creates and returns an empty array.
+- [+ arrayWithObjects:](./arraywithobjects_.md)
+  Creates and returns an array containing the objects in the argument list.
 
 
 ---

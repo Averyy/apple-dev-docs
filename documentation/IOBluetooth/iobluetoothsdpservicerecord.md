@@ -60,6 +60,8 @@ As a service record, an instance of this class has an NSDictionary of service at
   Returns TRUE if ALL of the UUIDs in the given array is found in the target service.
 - [func remove() -> IOReturn](./iobluetoothsdpservicerecord/remove%28%29.md)
   Removes the service from the local SDP server.
+- [- getAttributes](./iobluetoothsdpservicerecord/getattributes.md)
+- [- getDevice](./iobluetoothsdpservicerecord/getdevice.md)
 ### Type Methods
 - [class func publishedServiceRecord(with: [AnyHashable : Any]!) -> Self!](./iobluetoothsdpservicerecord/publishedservicerecord%28with%29.md)
   Adds a service to the local SDP server.
@@ -67,6 +69,10 @@ As a service record, an instance of this class has an NSDictionary of service at
   Method call to convert an IOBluetoothSDPServiceRecordRef into an IOBluetoothSDPServiceRecord *.
 - [class func withServiceDictionary([AnyHashable : Any]!, device: IOBluetoothDevice!) -> Self!](./iobluetoothsdpservicerecord/withservicedictionary%28_,device%29.md)
   Returns an IOBluetoothSDPServiceRecord * with the attributes specified in the provided service dictionary. Provide a pointer to an IOBlueotothDevice if you wish to associate the record to a specific IOBluetoothDevice.
+### Instance Variables
+- [mAttributeDictionary](./iobluetoothsdpservicerecord/mattributedictionary.md)
+- [mDeviceForService](./iobluetoothsdpservicerecord/mdeviceforservice.md)
+- [sortedAttributes](./iobluetoothsdpservicerecord/sortedattributes-c.ivar.md)
 
 ## Relationships
 

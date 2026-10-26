@@ -47,6 +47,22 @@ These flags are passed to the `LSCopyItemInfoForRef` and `LSCopyItemInfoForURL` 
   Requests only the `kLSItemInfoExtensionIsHidden` item-information flag.
 - [static var requestAllInfo: LSRequestedInfo](./lsrequestedinfo/api-1447901-requestallinfo.md)
   Requests all available item information.
+- [kLSRequestExtension](./lsrequestedinfo/klsrequestextension.md)
+  Requests the item’s filename extension.
+- [kLSRequestTypeCreator](./lsrequestedinfo/klsrequesttypecreator.md)
+  Requests the item’s file type and creator signature.
+- [kLSRequestBasicFlagsOnly](./lsrequestedinfo/klsrequestbasicflagsonly.md)
+  Requests all item-information flags that are not application-specific: that is, all except `kLSItemInfoIsNativeApp` through `kLSItemInfoAppIsScriptable`.
+- [kLSRequestAppTypeFlags](./lsrequestedinfo/klsrequestapptypeflags.md)
+  Requests all application-specific item-information flags: that is, `kLSItemInfoIsNativeApp` through `kLSItemInfoAppIsScriptable`.
+- [kLSRequestAllFlags](./lsrequestedinfo/klsrequestallflags.md)
+  Requests all item-information flags.
+- [kLSRequestIconAndKind](./lsrequestedinfo/klsrequesticonandkind.md)
+  Not used.
+- [kLSRequestExtensionFlagsOnly](./lsrequestedinfo/klsrequestextensionflagsonly.md)
+  Requests only the `kLSItemInfoExtensionIsHidden` item-information flag.
+- [kLSRequestAllInfo](./lsrequestedinfo/klsrequestallinfo.md)
+  Requests all available item information.
 
 ## Relationships
 

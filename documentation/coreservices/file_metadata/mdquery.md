@@ -88,6 +88,8 @@ For functions that take CF*Ref parameters, such as CFStringRefand CFArrayRef, if
 ### Miscellaneous
 - [class MDQuery](../mdquery.md)
   A reference to a MDQuery object.
+- [MDQueryRef](../mdqueryref.md)
+  A reference to a MDQuery object.
 ### Query Option Flags
 - [struct MDQueryOptionFlags](../mdqueryoptionflags.md)
   Specify the execution mode for a query.

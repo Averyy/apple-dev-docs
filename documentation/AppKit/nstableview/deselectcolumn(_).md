@@ -38,6 +38,8 @@ This method doesn’t check with the delegate before changing the selection.
 ### Related Documentation
 - [var allowsEmptySelection: Bool](./allowsemptyselection.md)
   A Boolean value indicating whether the table view allows the user to select zero columns or rows.
+- [- selectRow:byExtendingSelection:](./selectrow_byextendingselection_.md)
+  Selects a row at the specified index, optionally extending any existing selection.
 ### Selecting Columns and Rows
 - [func selectColumnIndexes(IndexSet, byExtendingSelection: Bool)](./selectcolumnindexes%28_,byextendingselection%29.md)
   Sets the column selection using `indexes` possibly extending the selection.

@@ -31,6 +31,12 @@ init(forKeySystem keySystem: AVContentKeySystem, identifier contentKeyIdentifier
 - `contentKeyIdentifier`: The container and protocol-specific key identifier.
 - `options`: Additional information necessary to obtain the key. Pass `nil` to indicate no additional options.
 
+## See Also
+
+### Creating a specifier
+- [+ contentKeySpecifierForKeySystem:identifier:options:](./contentkeyspecifierforkeysystem_identifier_options_.md)
+  A convenience initializer to create a content key specifier.
+
 
 ---
 

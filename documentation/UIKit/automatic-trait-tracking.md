@@ -46,6 +46,8 @@ A complete list of APIs that support automatic trait tracking appears below.
   Notifies the view controller when its view needs to update its constraints.
 - [func updateContentUnavailableConfiguration(using: UIContentUnavailableConfigurationState)](./uiviewcontroller/updatecontentunavailableconfiguration%28using%29.md)
   Updates the content-unavailable configuration for the provided state.
+- [- updateContentUnavailableConfigurationUsingState:](./uiviewcontroller/updatecontentunavailableconfigurationusingstate_.md)
+  Updates the content-unavailable configuration for the provided state.
 ### Presentation controllers
 - [func containerViewWillLayoutSubviews()](./uipresentationcontroller/containerviewwilllayoutsubviews%28%29.md)
   Notifies the presentation controller that layout is about to begin on the views of the container view.
@@ -61,15 +63,27 @@ A complete list of APIs that support automatic trait tracking appears below.
   Updates the cell’s configuration using the current state.
 - [var configurationUpdateHandler: UICollectionViewCell.ConfigurationUpdateHandler?](./uicollectionviewcell/configurationupdatehandler-7rqbu.md)
   A block for handling updates to the cell’s configuration using the current state.
+- [- updateConfigurationUsingState:](./uicollectionviewcell/updateconfigurationusingstate_.md)
+  Updates the cell’s configuration using the current state.
+- [configurationUpdateHandler](./uicollectionviewcell/configurationupdatehandler-ajhn.md)
+  A block for handling updates to the cell’s configuration using the current state.
 ### Table view cells
 - [func updateConfiguration(using: UICellConfigurationState)](./uitableviewcell/updateconfiguration%28using%29.md)
   Updates the cell’s configuration using the current state.
 - [var configurationUpdateHandler: UITableViewCell.ConfigurationUpdateHandler?](./uitableviewcell/configurationupdatehandler-974.md)
   A block for handling updates to the cell’s configuration using the current state.
+- [- updateConfigurationUsingState:](./uitableviewcell/updateconfigurationusingstate_.md)
+  Updates the cell’s configuration using the current state.
+- [configurationUpdateHandler](./uitableviewcell/configurationupdatehandler-746ya.md)
+  A block for handling updates to the cell’s configuration using the current state.
 ### Table view headers and footers
 - [func updateConfiguration(using: UIViewConfigurationState)](./uitableviewheaderfooterview/updateconfiguration%28using%29.md)
   Updates the view’s configuration using the current state.
 - [var configurationUpdateHandler: UITableViewHeaderFooterView.ConfigurationUpdateHandler?](./uitableviewheaderfooterview/configurationupdatehandler-49slo.md)
+  A block for handling updates to the view’s configuration using the current state.
+- [- updateConfigurationUsingState:](./uitableviewheaderfooterview/updateconfigurationusingstate_.md)
+  Updates the view’s configuration using the current state.
+- [configurationUpdateHandler](./uitableviewheaderfooterview/configurationupdatehandler-3oji2.md)
   A block for handling updates to the view’s configuration using the current state.
 ### Collection view compositional layouts
 - [typealias UICollectionViewCompositionalLayoutSectionProvider](./uicollectionviewcompositionallayoutsectionprovider.md)

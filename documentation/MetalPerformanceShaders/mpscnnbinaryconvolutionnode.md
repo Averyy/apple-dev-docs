@@ -35,6 +35,9 @@ class MPSCNNBinaryConvolutionNode
 - [enum MPSCNNBinaryConvolutionFlags](./mpscnnbinaryconvolutionflags.md)
   Options used to control binary convolution kernels.
 - [init(source: MPSNNImageNode, weights: any MPSCNNConvolutionDataSource, outputBiasTerms: UnsafePointer<Float>?, outputScaleTerms: UnsafePointer<Float>?, inputBiasTerms: UnsafePointer<Float>?, inputScaleTerms: UnsafePointer<Float>?, type: MPSCNNBinaryConvolutionType, flags: MPSCNNBinaryConvolutionFlags)](./mpscnnbinaryconvolutionnode/init%28source,weights,outputbiasterms,outputscaleterms,inputbiasterms,inputscaleterms,type,flags%29.md)
+### Type Methods
+- [+ nodeWithSource:weights:scaleValue:type:flags:](./mpscnnbinaryconvolutionnode/nodewithsource_weights_scalevalue_type_flags_.md)
+- [+ nodeWithSource:weights:outputBiasTerms:outputScaleTerms:inputBiasTerms:inputScaleTerms:type:flags:](./mpscnnbinaryconvolutionnode/nodewithsource_weights_outputbiasterms_outputscaleterms_inputbiasterms_inputscaleterms_type_flags_.md)
 
 ## Relationships
 

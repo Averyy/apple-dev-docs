@@ -33,6 +33,8 @@ Use the [`try()`](./nsdistributedlock/try%28%29.md) method to attempt to acquire
 ### Creating an NSDistributedLock
 - [init?(path: String)](./nsdistributedlock/init%28path%29.md)
   Initializes an `NSDistributedLock` object to use as the lock the file-system entry specified by a given path.
+- [+ lockWithPath:](./nsdistributedlock/lockwithpath_.md)
+  Returns an `NSDistributedLock` object initialized to use as the locking object the file-system entry specified by a given path.
 ### Acquiring a Lock
 - [func `try`() -> Bool](./nsdistributedlock/try%28%29.md)
   Attempts to acquire the receiver and immediately returns a Boolean value that indicates whether the attempt was successful.

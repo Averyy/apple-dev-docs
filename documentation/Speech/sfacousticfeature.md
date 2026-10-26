@@ -30,6 +30,8 @@ class SFAcousticFeature
   The duration of the audio frame.
 - [var acousticFeatureValuePerFrame: [Double]](./sfacousticfeature/acousticfeaturevalueperframe-5krkk.md)
   An array of feature values, one value per audio frame, corresponding to a transcript segment of recorded audio.
+- [acousticFeatureValuePerFrame](./sfacousticfeature/acousticfeaturevalueperframe-gsz5.md)
+  An array of feature values, one value per audio frame, corresponding to a transcript segment of recorded audio.
 ### Initializers
 - [init?(coder: NSCoder)](./sfacousticfeature/init%28coder%29.md)
 

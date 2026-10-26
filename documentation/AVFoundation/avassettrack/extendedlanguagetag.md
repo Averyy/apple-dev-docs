@@ -31,6 +31,12 @@ var extendedLanguageTag: String? { get }
 
 The value is a [BCP-47](https://tools.ietf.org/html/bcp47) language tag, or `nil` if the track doesn’t specify a language tag.
 
+## See Also
+
+### Accessing language support
+- [languageCode](./languagecode.md)
+  The language code of the track.
+
 
 ---
 

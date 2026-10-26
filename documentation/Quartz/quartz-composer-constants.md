@@ -138,6 +138,16 @@
   No time dependency. The custom patch does not depend on time at all. (It does not use the `time`  parameter of the `execute:atTime:withArguments:` method.)
 - [var kQCPlugInTimeModeTimeBase: QCPlugInTimeMode](./kqcplugintimemodetimebase.md)
   A time base dependency. The custom patch does depend on time explicitly and has a time base defined by the system. (It uses the `time`  parameter of the `execute:atTime:withArguments:` method.)
+- [QCCompositionPickerViewDidSelectCompositionNotification](./qccompositionpickerviewdidselectcompositionnotification.md)
+  Posted when the user selects a composition in the picker view.
+- [QCCompositionPickerPanelDidSelectCompositionNotification](./qccompositionpickerpaneldidselectcompositionnotification.md)
+  Posted when the user chooses a composition.
+- [QCCompositionRepositoryDidUpdateNotification](./qccompositionrepositorydidupdatenotification.md)
+  Posted whenever the list of compositions in the composition repository is updated.
+- [QCViewDidStopRenderingNotification](./qcviewdidstoprenderingnotification.md)
+  Posted when the view stops rendering.
+- [QCViewDidStartRenderingNotification](./qcviewdidstartrenderingnotification.md)
+  Posted when the view starts rendering.
 
 ## See Also
 

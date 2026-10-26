@@ -9,6 +9,10 @@
 - [let kQuartzFilterApplicationDomain: String](./kquartzfilterapplicationdomain.md)
 - [let kQuartzFilterPDFWorkflowDomain: String](./kquartzfilterpdfworkflowdomain.md)
 - [let kQuartzFilterPrintingDomain: String](./kquartzfilterprintingdomain.md)
+- [kQuartzFilterManagerDidAddFilterNotification](./kquartzfiltermanagerdidaddfilternotification.md)
+- [kQuartzFilterManagerDidModifyFilterNotification](./kquartzfiltermanagerdidmodifyfilternotification.md)
+- [kQuartzFilterManagerDidRemoveFilterNotification](./kquartzfiltermanagerdidremovefilternotification.md)
+- [kQuartzFilterManagerDidSelectFilterNotification](./kquartzfiltermanagerdidselectfilternotification.md)
 
 
 ---

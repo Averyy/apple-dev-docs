@@ -340,6 +340,16 @@
       "file_path": "documentation/Hypervisor/distributor-registers.md",
       "hash": "1a75bb5ea08f701152cb09935fdc137d3f22255a583a7c3a04d5e2f548e8b6b7"
     },
+    "https://developer.apple.com/documentation/hypervisor/err_common_hypervisor": {
+      "etag": "\"4297-65d55bfb18e3b-df\"",
+      "file_path": "documentation/Hypervisor/err_common_hypervisor.md",
+      "hash": "85793a66e71b2160dcd8c78464eeda36f389fa6059b6c675ce613a263d861ddb"
+    },
+    "https://developer.apple.com/documentation/hypervisor/err_sub_hypervisor": {
+      "etag": "\"4285-65d55bf90f59e-df\"",
+      "file_path": "documentation/Hypervisor/err_sub_hypervisor.md",
+      "hash": "4d2440c4b5069534f1cae2f3d2e565baac76e38963d104e23100dbc75ec68cca"
+    },
     "https://developer.apple.com/documentation/hypervisor/exits": {
       "etag": "\"44e7-6590247f9eb9f-df\"",
       "file_path": "documentation/Hypervisor/exits.md",
@@ -389,6 +399,16 @@
       "etag": "\"2d37-65d55bf8b1cfc-df\"",
       "file_path": "documentation/Hypervisor/hv_allocate_flags_t.md",
       "hash": "80c054fbabe1109b7fd861f97f9642e1b1b53bd7aa9f9d3a4f0edca12dbdaf0d"
+    },
+    "https://developer.apple.com/documentation/hypervisor/hv_api_available_arm64": {
+      "etag": "\"42bc-65d55bfdd0b66-df\"",
+      "file_path": "documentation/Hypervisor/hv_api_available_arm64.md",
+      "hash": "545075bf8743cae69d78372039f9f581be693dd8df9b220c7a813ebada15d178"
+    },
+    "https://developer.apple.com/documentation/hypervisor/hv_api_available_x86_64": {
+      "etag": "\"42c2-65d55bf97237a-df\"",
+      "file_path": "documentation/Hypervisor/hv_api_available_x86_64.md",
+      "hash": "b98c7dc1421c0073a4c5d9b38af62a4cfbbd082d978e9d0732150b333cd945b1"
     },
     "https://developer.apple.com/documentation/hypervisor/hv_apic_ctrl_default": {
       "etag": "\"60ef-65d55bfa0d9ff-df\"",
@@ -14608,6 +14628,16 @@
       "file_path": "documentation/Hypervisor/distributor-registers.md",
       "hash": "1a75bb5ea08f701152cb09935fdc137d3f22255a583a7c3a04d5e2f548e8b6b7"
     },
+    "https://developer.apple.com/tutorials/data/documentation/hypervisor/err_common_hypervisor.json": {
+      "etag": "\"4297-65d55bfb18e3b-df\"",
+      "file_path": "documentation/Hypervisor/err_common_hypervisor.md",
+      "hash": "85793a66e71b2160dcd8c78464eeda36f389fa6059b6c675ce613a263d861ddb"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/hypervisor/err_sub_hypervisor.json": {
+      "etag": "\"4285-65d55bf90f59e-df\"",
+      "file_path": "documentation/Hypervisor/err_sub_hypervisor.md",
+      "hash": "4d2440c4b5069534f1cae2f3d2e565baac76e38963d104e23100dbc75ec68cca"
+    },
     "https://developer.apple.com/tutorials/data/documentation/hypervisor/exits.json": {
       "etag": "\"44e7-6590247f9eb9f-df\"",
       "file_path": "documentation/Hypervisor/exits.md",
@@ -14657,6 +14687,16 @@
       "etag": "\"2d37-65d55bf8b1cfc-df\"",
       "file_path": "documentation/Hypervisor/hv_allocate_flags_t.md",
       "hash": "80c054fbabe1109b7fd861f97f9642e1b1b53bd7aa9f9d3a4f0edca12dbdaf0d"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/hypervisor/hv_api_available_arm64.json": {
+      "etag": "\"42bc-65d55bfdd0b66-df\"",
+      "file_path": "documentation/Hypervisor/hv_api_available_arm64.md",
+      "hash": "545075bf8743cae69d78372039f9f581be693dd8df9b220c7a813ebada15d178"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/hypervisor/hv_api_available_x86_64.json": {
+      "etag": "\"42c2-65d55bf97237a-df\"",
+      "file_path": "documentation/Hypervisor/hv_api_available_x86_64.md",
+      "hash": "b98c7dc1421c0073a4c5d9b38af62a4cfbbd082d978e9d0732150b333cd945b1"
     },
     "https://developer.apple.com/tutorials/data/documentation/hypervisor/hv_apic_ctrl_default.json": {
       "etag": "\"60ef-65d55bfa0d9ff-df\"",
@@ -28539,8 +28579,8 @@
   },
   "metadata": {
     "render": {
-      "version": 1
+      "version": 2
     },
-    "total_pages": 5708
+    "total_pages": 5716
   }
 }

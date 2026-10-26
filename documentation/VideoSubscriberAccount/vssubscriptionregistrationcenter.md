@@ -56,6 +56,8 @@ Use the methods in this class to retrieve the default registration center object
   An Apple streaming service customer and their subscriptions.
 - [class VSAccountApplicationProvider](./vsaccountapplicationprovider.md)
   An object to display app-specific providers in your app.
+- [VSAppleSubscription](./vsapplesubscription-c.class.md)
+  An Apple streaming service customer and their subscriptions.
 
 
 ---

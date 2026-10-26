@@ -73,6 +73,8 @@ The default implementation of this method returns the app’s default set of sup
   Sets the app’s status bar to the specified orientation, optionally animating the transition.
 - [func registerUserNotificationSettings(UIUserNotificationSettings)](./registerusernotificationsettings%28_%29.md)
   Registers your preferred options for notifying the user.
+- [- setStatusBarHidden:animated:](./setstatusbarhidden_animated_.md)
+  Hides or shows the status bar, optionally animating the transition.
 
 
 ---

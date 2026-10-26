@@ -38,6 +38,10 @@ Use this method to create an image provider with only a one-piece image. The res
 ### Creating an Image Provider
 - [convenience init(onePieceImage: UIImage, twoPieceImageBackground: UIImage?, twoPieceImageForeground: UIImage?)](./init%28onepieceimage,twopieceimagebackground,twopieceimageforeground%29.md)
   Creates and returns an image provider with both one-piece and two-piece images.
+- [- initWithOnePieceImage:](./initwithonepieceimage_.md)
+  Creates and returns an image provider with the specified one-piece image.
+- [- initWithOnePieceImage:twoPieceImageBackground:twoPieceImageForeground:](./initwithonepieceimage_twopieceimagebackground_twopieceimageforeground_.md)
+  Creates and returns an image provider with both one-piece and two-piece images.
 
 
 ---

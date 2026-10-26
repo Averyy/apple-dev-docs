@@ -30,6 +30,8 @@ class AVMutableAudioMixInputParameters
 ### Creating input parameters
 - [convenience init(track: AVAssetTrack?)](./avmutableaudiomixinputparameters/init%28track%29.md)
   Creates a mutable input parameters object for a given track.
+- [+ audioMixInputParameters](./avmutableaudiomixinputparameters/audiomixinputparameters.md)
+  Creates a mutable input parameters object.
 ### Managing the track ID
 - [var trackID: CMPersistentTrackID](./avmutableaudiomixinputparameters/trackid.md)
   The identifier of the audio track to which the parameters should be applied.

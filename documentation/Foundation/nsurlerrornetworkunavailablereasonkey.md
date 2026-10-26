@@ -44,6 +44,8 @@ The value associated with this key is an [`NSNumber`](./nsnumber.md). For possib
   Reasons that indicate why the system canceled a background task.
 - [URLError.NetworkUnavailableReason](./urlerror/networkunavailablereason-swift.enum.md)
   An enumeration of reasons explaining why a task couldn’t satisfy networking constraints.
+- [NSURLErrorNetworkUnavailableReason](./nsurlerrornetworkunavailablereason.md)
+  An enumeration of reasons why a task couldn’t satisfy networking constraints.
 
 
 ---

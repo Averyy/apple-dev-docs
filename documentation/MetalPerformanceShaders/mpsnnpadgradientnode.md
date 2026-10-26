@@ -26,6 +26,8 @@ class MPSNNPadGradientNode
 
 ### Initializers
 - [init(sourceGradient: MPSNNImageNode, sourceImage: MPSNNImageNode, gradientState: MPSNNGradientStateNode)](./mpsnnpadgradientnode/init%28sourcegradient,sourceimage,gradientstate%29.md)
+### Type Methods
+- [+ nodeWithSourceGradient:sourceImage:gradientState:](./mpsnnpadgradientnode/nodewithsourcegradient_sourceimage_gradientstate_.md)
 
 ## Relationships
 

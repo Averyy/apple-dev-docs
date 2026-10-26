@@ -62,6 +62,14 @@ For information on using a custom kernel to enhance Rosetta performance, see [Ac
   Sets the Rosetta caching options using the options you specify.
 - [VZLinuxRosettaDirectoryShare.CachingOptions](./vzlinuxrosettadirectoryshare/cachingoptions-swift.enum.md)
   Socket values you specify to configure Rosetta’s caching capabilities.
+- [options](./vzlinuxrosettadirectoryshare/options.md)
+  The value that enables translation caching and configures the socket communication type for Rosetta.
+- [VZLinuxRosettaAbstractSocketCachingOptions](./vzlinuxrosettaabstractsocketcachingoptions.md)
+  Caching options for an abstract socket.
+- [VZLinuxRosettaCachingOptions](./vzlinuxrosettacachingoptions.md)
+  An abstract class that defines UNIX socket-based caching options for Rosetta.
+- [VZLinuxRosettaUnixSocketCachingOptions](./vzlinuxrosettaunixsocketcachingoptions.md)
+  An object that represents caching options for a UNIX domain socket.
 ### Initializers
 - [init(error: ()) throws](./vzlinuxrosettadirectoryshare/init%28error%29.md)
 

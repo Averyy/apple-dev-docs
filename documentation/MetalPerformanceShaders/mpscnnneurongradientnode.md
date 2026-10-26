@@ -30,6 +30,8 @@ class MPSCNNNeuronGradientNode
 - [init(sourceGradient: MPSNNImageNode, sourceImage: MPSNNImageNode, gradientState: MPSNNGradientStateNode, descriptor: MPSNNNeuronDescriptor)](./mpscnnneurongradientnode/init%28sourcegradient,sourceimage,gradientstate,descriptor%29.md)
 ### Instance Properties
 - [var descriptor: MPSNNNeuronDescriptor](./mpscnnneurongradientnode/descriptor.md)
+### Type Methods
+- [+ nodeWithSourceGradient:sourceImage:gradientState:descriptor:](./mpscnnneurongradientnode/nodewithsourcegradient_sourceimage_gradientstate_descriptor_.md)
 
 ## Relationships
 

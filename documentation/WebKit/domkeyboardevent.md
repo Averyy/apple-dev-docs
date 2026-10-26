@@ -29,10 +29,13 @@ class DOMKeyboardEvent
 - [var location: UInt32](./domkeyboardevent/location.md)
 - [var metaKey: Bool](./domkeyboardevent/metakey.md)
 - [var shiftKey: Bool](./domkeyboardevent/shiftkey.md)
+- [keyLocation](./domkeyboardevent/keylocation.md)
 ### Instance Methods
 - [func getModifierState(String!) -> Bool](./domkeyboardevent/getmodifierstate%28_%29.md)
 - [func initKeyboardEvent(String!, canBubble: Bool, cancelable: Bool, view: DOMAbstractView!, keyIdentifier: String!, location: UInt32, ctrlKey: Bool, altKey: Bool, shiftKey: Bool, metaKey: Bool)](./domkeyboardevent/initkeyboardevent%28_,canbubble,cancelable,view,keyidentifier,location,ctrlkey,altkey,shiftkey,metakey%29.md)
 - [func initKeyboardEvent(String!, canBubble: Bool, cancelable: Bool, view: DOMAbstractView!, keyIdentifier: String!, location: UInt32, ctrlKey: Bool, altKey: Bool, shiftKey: Bool, metaKey: Bool, altGraphKey: Bool)](./domkeyboardevent/initkeyboardevent%28_,canbubble,cancelable,view,keyidentifier,location,ctrlkey,altkey,shiftkey,metakey,altgraphkey%29.md)
+- [- initKeyboardEvent:canBubble:cancelable:view:keyIdentifier:keyLocation:ctrlKey:altKey:shiftKey:metaKey:](./domkeyboardevent/initkeyboardevent_canbubble_cancelable_view_keyidentifier_keylocation_ctrlkey_altkey_shiftkey_metakey_.md)
+- [- initKeyboardEvent:canBubble:cancelable:view:keyIdentifier:keyLocation:ctrlKey:altKey:shiftKey:metaKey:altGraphKey:](./domkeyboardevent/initkeyboardevent_canbubble_cancelable_view_keyidentifier_keylocation_ctrlkey_altkey_shiftkey_metakey_altgraphkey_.md)
 
 ## Relationships
 

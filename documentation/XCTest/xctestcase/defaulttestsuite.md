@@ -33,6 +33,10 @@ class var defaultTestSuite: XCTestSuite { get }
   Records an issue during test execution.
 - [func recordFailure(withDescription: String, inFile: String, atLine: Int, expected: Bool)](./recordfailure%28withdescription,infile,atline,expected%29.md)
   Records a failure during text execution.
+- [+ testCaseWithInvocation:](./testcasewithinvocation_.md)
+  Creates a test case with an invocation.
+- [+ testCaseWithSelector:](./testcasewithselector_.md)
+  Creates a test case with a selector.
 
 
 ---

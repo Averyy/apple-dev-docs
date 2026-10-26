@@ -10,6 +10,10 @@
   AssetsLibrary-related error codes
 - [Types of Asset](./types-of-asset.md)
   Constants to identify types of asset.
+- [ALAssetOrientation](./alassetorientation.md)
+  Constants to indicate the orientation of an asset.
+- [ALAuthorizationStatus](./alauthorizationstatus.md)
+  Constants to indicate authorization status.
 
 ## See Also
 

@@ -44,6 +44,8 @@ Note that the capacity is simply a hint to help initial memory allocation—the 
 ### Related Documentation
 - [init(capacity: Int)](../nsmutableset/init%28capacity%29.md)
   Returns an initialized mutable set with a given initial capacity.
+- [+ setWithCapacity:](../nsmutableset/setwithcapacity_.md)
+  Creates and returns a mutable set with a given initial capacity.
 ### Initializing a Counted Set
 - [convenience init(array: [Any])](./init%28array%29.md)
   Returns a counted set object initialized with the contents of a given array.

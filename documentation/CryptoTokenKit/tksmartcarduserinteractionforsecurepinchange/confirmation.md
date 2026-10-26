@@ -28,6 +28,7 @@ enum TKSmartCardPINConfirmation : NSUInteger;
 ### Type Properties
 - [static var current: TKSmartCardUserInteractionForSecurePINChange.Confirmation](./confirmation/current.md)
 - [static var new: TKSmartCardUserInteractionForSecurePINChange.Confirmation](./confirmation/new.md)
+- [TKSmartCardPINConfirmationNone](../tksmartcardpinconfirmation/tksmartcardpinconfirmationnone.md)
 ### Initializers
 - [init(rawValue: UInt)](./confirmation/init%28rawvalue%29.md)
 

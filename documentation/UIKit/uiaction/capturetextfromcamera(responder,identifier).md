@@ -39,6 +39,10 @@ class func captureTextFromCamera(responder: any UIResponder & UIKeyInput, identi
   A type that represents an action identifier.
 - [typealias UIActionHandler](../uiactionhandler.md)
   A type that defines the closure for an action handler.
+- [+ actionWithTitle:image:identifier:handler:](./actionwithtitle_image_identifier_handler_.md)
+  Creates an action with the specified title, image, identifier, and handler.
+- [+ actionWithHandler:](./actionwithhandler_.md)
+  Creates an action with the specified handler.
 
 
 ---

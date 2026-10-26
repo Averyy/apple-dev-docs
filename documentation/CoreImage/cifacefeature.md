@@ -67,6 +67,23 @@ The properties of a `CIFaceFeature` object provide information about the face’
   A Boolean value that indicates the face object has a tracking frame count.
 - [var trackingFrameCount: Int32](./cifacefeature/trackingframecount-swift.property.md)
   The tracking frame count of the face.
+### Instance Variables
+- [bounds](./cifacefeature/bounds-c.ivar.md)
+- [faceAngle](./cifacefeature/faceangle-c.ivar.md)
+- [hasFaceAngle](./cifacefeature/hasfaceangle-c.ivar.md)
+- [hasLeftEyePosition](./cifacefeature/haslefteyeposition-c.ivar.md)
+- [hasMouthPosition](./cifacefeature/hasmouthposition-c.ivar.md)
+- [hasRightEyePosition](./cifacefeature/hasrighteyeposition-c.ivar.md)
+- [hasSmile](./cifacefeature/hassmile-c.ivar.md)
+- [hasTrackingFrameCount](./cifacefeature/hastrackingframecount-c.ivar.md)
+- [hasTrackingID](./cifacefeature/hastrackingid-c.ivar.md)
+- [leftEyeClosed](./cifacefeature/lefteyeclosed-c.ivar.md)
+- [leftEyePosition](./cifacefeature/lefteyeposition-c.ivar.md)
+- [mouthPosition](./cifacefeature/mouthposition-c.ivar.md)
+- [rightEyeClosed](./cifacefeature/righteyeclosed-c.ivar.md)
+- [rightEyePosition](./cifacefeature/righteyeposition-c.ivar.md)
+- [trackingFrameCount](./cifacefeature/trackingframecount-c.ivar.md)
+- [trackingID](./cifacefeature/trackingid-c.ivar.md)
 
 ## Relationships
 

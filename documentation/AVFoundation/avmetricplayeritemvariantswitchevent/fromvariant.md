@@ -35,6 +35,7 @@ var fromVariant: AVAssetVariant? { get }
   Represents the currently selected video rendition’s identifiers.
 - [var subtitleRendition: AVMetricMediaRendition](./subtitlerendition.md)
   Represents the currently selected audio rendition’s identifiers.
+- [loadedTimeRanges](./loadedtimeranges-4rhjw.md)
 
 
 ---

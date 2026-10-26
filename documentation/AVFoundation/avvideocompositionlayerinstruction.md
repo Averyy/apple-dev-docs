@@ -31,6 +31,8 @@ class AVVideoCompositionLayerInstruction
   Initialize an AVVideoCompositionLayerInstruction with a configuration.
 - [AVVideoCompositionLayerInstruction.Configuration](./avvideocompositionlayerinstruction/configuration.md)
   Configurable properties for initializing a new AVVideoCompositionLayerInstruction instance.
+- [+ videoCompositionLayerInstructionWithLayerInstruction:](./avvideocompositionlayerinstruction/videocompositionlayerinstructionwithlayerinstruction_.md)
+  Pass-through initializer, for internal use in AVFoundation only
 ### Getting the track ID
 - [var trackID: CMPersistentTrackID](./avvideocompositionlayerinstruction/trackid.md)
   The track identifier of the source track to which the compositor will apply the instruction.

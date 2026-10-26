@@ -32,6 +32,8 @@ UIRemoteNotificationTypeSound
   The app accepts alert messages as notifications.
 - [static var newsstandContentAvailability: UIRemoteNotificationType](./newsstandcontentavailability.md)
   The app accepts notifications that start the downloading of issue assets for Newsstand apps.
+- [UIRemoteNotificationTypeNone](./uiremotenotificationtypenone.md)
+  The app accepts no notifications.
 
 
 ---

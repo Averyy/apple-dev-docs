@@ -63,6 +63,10 @@ This function doesn’t work in place.
   Removes the alpha channel from an 8-bit-per-channel RGBA buffer using the specified dithering algorithm to produce an RGB565 result.
 - [func vImageConvert_RGBA8888toRGB565(UnsafePointer<vImage_Buffer>, UnsafePointer<vImage_Buffer>, vImage_Flags) -> vImage_Error](./vimageconvert_rgba8888torgb565%28_,_,_%29.md)
   Removes the alpha channel from an 8-bit-per-channel RGBA buffer to produce an RGB565 result.
+- [vImageConvert_BGRA8888toBGR888](./vimageconvert_bgra8888tobgr888.md)
+  Removes the alpha channel from an 8-bit-per-channel BGRA buffer to produce an 8-bit-per-channel BGR result.
+- [vImageConvert_RGBA8888toBGR888](./vimageconvert_rgba8888tobgr888.md)
+  Removes the alpha channel from an 8-bit-per-channel RGBA buffer to produce an 8-bit-per-channel BGR result.
 
 
 ---

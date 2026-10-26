@@ -69,6 +69,14 @@ This function provides an array of the keys in a print settings object. You coul
   Stores the value of a setting in a print settings object.
 - [func PMPrintSettingsCopyAsDictionary(PMPrintSettings, UnsafeMutablePointer<Unmanaged<CFDictionary>?>) -> OSStatus](./api-1459088-pmprintsettingscopyasdictionary.md)
   Creates a dictionary that contains the settings in a print settings object.
+- [PMGetPrintSettingsExtendedData](./core_printing/api-1805488-pmgetprintsettingsextendeddata.md)
+  Obtains extended print settings data previously stored by your application.
+- [PMSetPrintSettingsExtendedData](./core_printing/api-1805491-pmsetprintsettingsextendeddata.md)
+  Stores your application-specific data in a print settings object.
+- [PMGetJobNameCFString](./core_printing/api-1805513-pmgetjobnamecfstring.md)
+  Obtains the name of the print job.
+- [PMSetJobNameCFString](./core_printing/api-1805515-pmsetjobnamecfstring.md)
+  Specifies the name of a print job.
 
 
 ---

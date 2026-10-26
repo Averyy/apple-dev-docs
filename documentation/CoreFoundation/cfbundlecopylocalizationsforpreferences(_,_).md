@@ -49,6 +49,14 @@ This is not the same as [`CFBundleCopyPreferredLocalizationsFromArray(_:)`](./cf
   Returns an array containing the localizations for a bundle or executable at a particular location.
 - [func CFBundleCopyPreferredLocalizationsFromArray(CFArray!) -> CFArray!](./cfbundlecopypreferredlocalizationsfromarray%28_%29.md)
   Given an array of possible localizations, returns the one or more of them that CFBundle would use in the current application context.
+- [CFCopyLocalizedString](./cfcopylocalizedstring.md)
+  Searches the default strings file `Localizable.strings` for the string associated with the specified key.
+- [CFCopyLocalizedStringFromTable](./cfcopylocalizedstringfromtable.md)
+  Searches the specified strings file for the string associated with the specified key.
+- [CFCopyLocalizedStringFromTableInBundle](./cfcopylocalizedstringfromtableinbundle.md)
+  Returns a localized version of the specified string.
+- [CFCopyLocalizedStringWithDefaultValue](./cfcopylocalizedstringwithdefaultvalue.md)
+  Returns a localized version of a localization string.
 
 
 ---

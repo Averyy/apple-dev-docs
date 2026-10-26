@@ -181,6 +181,64 @@ typedef double __attribute__((ext_vector_type(8))) simd_double8;
   Returns true for each element that is normal in a vector.
 ### Alternative Type Alias
 - [typealias vector_double8](./vector_double8.md)
+### Functions to Create Eight-Element Vectors From Vectors of Other Types
+- [simd_double](./simd_double-62zne.md)
+  Returns a new vector from the specified vector of 8-bit, signed-integer elements.
+- [simd_double](./simd_double-639kq.md)
+  Returns a new vector from the specified vector of 8-bit, unsigned-integer elements.
+- [simd_double](./simd_double-634oq.md)
+  Returns a new vector from the specified vector of 16-bit, signed-integer elements.
+- [simd_double](./simd_double-63eii.md)
+  Returns a new vector from the specified vector of 16-bit, unsigned-integer elements.
+- [simd_double](./simd_double-631ha.md)
+  Returns a new vector from the specified vector of 32-bit, signed-integer elements.
+- [simd_double](./simd_double-63bi6.md)
+  Returns a new vector from the specified vector of 32-bit, unsigned-integer elements.
+- [simd_double](./simd_double-63332.md)
+  Returns a new vector from the specified vector of 64-bit, signed-integer elements.
+- [simd_double](./simd_double-63d26.md)
+  Returns a new vector from the specified vector of 64-bit, unsigned-integer elements.
+- [simd_double](./simd_double-63b6q.md)
+  Returns a new vector from the specified vector of 32-bit, floating-point elements.
+- [simd_double](./simd_double-63agu.md)
+  Returns a new vector from the specified vector of 64-bit, floating-point elements.
+### Geometry Functions
+- [simd_dot](./simd_dot-5vlda.md)
+  Returns the dot product of two vectors.
+- [simd_normalize](./simd_normalize-yjr.md)
+  Returns a vector pointing in the same direction of the supplied vector, with a length of 1.
+- [simd_fast_normalize](./simd_fast_normalize-8x3pc.md)
+  Returns the fast normalized vector.
+- [simd_precise_normalize](./simd_precise_normalize-6237w.md)
+  Returns the precise normalized vector.
+- [simd_project](./simd_project-8o56y.md)
+  Returns the first vector projected onto the second vector.
+- [simd_fast_project](./simd_fast_project-61mm1.md)
+  Returns the fast projected vector.
+- [simd_precise_project](./simd_precise_project-2x3bb.md)
+  Returns the precise projected vector.
+### Vector Norm Functions
+- [simd_norm_one](./simd_norm_one-fgqf.md)
+  Returns the sum of the absolute values of a vector.
+- [simd_norm_inf](./simd_norm_inf-9maca.md)
+  Returns the maximum absolute value of a vector.
+### Length and Distance Functions
+- [simd_length](./simd_length-32x7b.md)
+  Returns the length of a vector.
+- [simd_fast_length](./simd_fast_length-5utvc.md)
+  Returns the fast length of a vector.
+- [simd_precise_length](./simd_precise_length-67k0i.md)
+  Returns the precise length of a vector.
+- [simd_length_squared](./simd_length_squared-3x9ip.md)
+  Returns the square of the length of a vector.
+- [simd_distance](./simd_distance-8f8o.md)
+  Returns the distance between two vectors.
+- [simd_fast_distance](./simd_fast_distance-9mi5e.md)
+  Returns the fast distance between two vectors.
+- [simd_precise_distance](./simd_precise_distance-82p17.md)
+  Returns the precise distance between two vectors.
+- [simd_distance_squared](./simd_distance_squared-4kl6l.md)
+  Returns the square of the distance between two vectors.
 
 ## See Also
 

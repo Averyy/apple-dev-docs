@@ -22,7 +22,7 @@ func sampleDuration(_ duration: UnsafeMutablePointer<CMTime>!)
 
 ## Mentions
 
-- [Understanding time in FxPlug](https://developer.apple.com/documentation/professional-video-applications/understanding-time-in-fxplug)
+- [Understanding time in FxPlug](../../Professional-Video-Applications/understanding-time-in-fxplug.md)
 
 #### Discussion
 

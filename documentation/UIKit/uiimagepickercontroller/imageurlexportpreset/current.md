@@ -12,7 +12,7 @@ A preset for passing image data as-is to the client.
 - Mac Catalyst 13.1+ - Deprecated in 27.2
 - visionOS 1.0+ - Deprecated in 27.2
 
-> **Deprecated**: Use [`PHPickerViewController`](https://developer.apple.com/documentation/photosui/phpickerviewcontroller) instead.
+> **Deprecated**: Use [`PHPickerViewController`](../../../PhotosUI/phpickerviewcontroller.md) instead.
 
 ## Declaration
 

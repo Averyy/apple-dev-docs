@@ -31,7 +31,7 @@ A Photos picker with specified metadata options.
 ## See Also
 
 ### Selecting photos
-- [struct PhotosPicker](https://developer.apple.com/documentation/photosui/photospicker)
+- [struct PhotosPicker](../../PhotosUI/photospicker.md)
   A view that displays a Photos picker for choosing assets from the photo library.
 - [func photosPicker(isPresented: Binding<Bool>, selection: Binding<PhotosPickerItem?>, matching: PHPickerFilter?, preferredItemEncoding: PhotosPickerItem.EncodingDisambiguationPolicy) -> some View](./photospicker%28ispresented,selection,matching,preferreditemencoding%29.md)
   Presents a Photos picker that selects a `PhotosPickerItem`.

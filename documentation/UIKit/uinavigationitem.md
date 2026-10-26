@@ -54,6 +54,8 @@ When specifying buttons for a navigation item, you must use [`UIBarButtonItem`](
   The mode for displaying the title of the navigation bar.
 - [UINavigationItem.LargeTitleDisplayMode](./uinavigationitem/largetitledisplaymode-swift.enum.md)
   Constants that indicate how to size the title of this item.
+- [attributedTitle](./uinavigationitem/attributedtitle-9l8p2.md)
+  An attributed string that is rendered as the title in the navigation bar.
 ### Configuring the subtitle
 - [var subtitle: String?](./uinavigationitem/subtitle.md)
   A string to display as the subtitle in the navigation bar.
@@ -61,6 +63,10 @@ When specifying buttons for a navigation item, you must use [`UIBarButtonItem`](
 - [var largeSubtitle: String?](./uinavigationitem/largesubtitle.md)
   String to be rendered below the large title.
 - [var largeAttributedSubtitle: AttributedString?](./uinavigationitem/largeattributedsubtitle-4z2gx.md)
+- [attributedSubtitle](./uinavigationitem/attributedsubtitle-4474c.md)
+  An attributed string to display as the subtitle in the navigation bar.
+- [largeAttributedSubtitle](./uinavigationitem/largeattributedsubtitle-2c0pk.md)
+  An attributed string to be rendered below the large title.
 ### Configuring the Back button
 - [var backBarButtonItem: UIBarButtonItem?](./uinavigationitem/backbarbuttonitem.md)
   The bar button item for adding a Back button to the navigation bar.
@@ -168,10 +174,16 @@ When specifying buttons for a navigation item, you must use [`UIBarButtonItem`](
   The delegate for renaming the navigation item.
 - [protocol UINavigationItemRenameDelegate](./uinavigationitemrenamedelegate-5j4ws.md)
   Methods an object implements to rename a navigation item.
+- [renameDelegate](./uinavigationitem/renamedelegate-o32h.md)
+  The delegate for renaming the navigation item.
+- [UINavigationItemRenameDelegate](./uinavigationitemrenamedelegate-96g5t.md)
+  Methods an object implements to rename a navigation item.
 ### Instance Properties
 - [var navigationBarMinimization: UIBarMinimization](./uinavigationitem/navigationbarminimization-1kj9z.md)
 - [var titleAlignment: UINavigationItem.TitleAlignment](./uinavigationitem/titlealignment-swift.property.md)
   The preferred alignment of the navigation bar’s title.
+- [navigationBarMinimization](./uinavigationitem/navigationbarminimization-15u99.md)
+  The minimization configuration for the navigation bar.
 ### Enumerations
 - [UINavigationItem.TitleAlignment](./uinavigationitem/titlealignment-swift.enum.md)
 

@@ -36,6 +36,8 @@ var url: URL? { get }
   The MIME type of the response.
 - [var textEncodingName: String?](./textencodingname.md)
   The name of the text encoding provided by the response’s originating source.
+- [NSURLResponseUnknownLength](../nsurlresponseunknownlength.md)
+  The response length cannot be determined in advance of receiving the data from the server.
 
 
 ---

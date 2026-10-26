@@ -18,6 +18,14 @@ Although these symbols are available for use, Apple is no longer actively develo
   Highlights or unhighlights the scroll button the user clicked.
 - [func trackScrollButtons(with: NSEvent)](./nsscroller/trackscrollbuttons%28with%29.md)
   Tracks the scroll buttons and sends action messages to the receiver’s target.
+- [+ scrollerWidth](./nsscroller/scrollerwidth.md)
+  Returns the width for scrollers of the receiving class, assuming a control size [`NSRegularControlSize`](./nsregularcontrolsize.md), and a scroller style of [`NSScrollerStyleLegacy`](./nsscroller/style/legacy.md).
+- [+ scrollerWidthForControlSize:](./nsscroller/scrollerwidthforcontrolsize_.md)
+  Returns the width of the scroller based on `controlSize` and assuming a scroller style of [`NSScrollerStyleLegacy`](./nsscroller/style/legacy.md).
+- [- setFloatValue:knobProportion:](./nsscroller/setfloatvalue_knobproportion_.md)
+  Sets the position of the knob to `aFloat`, which is a value from 0.0 (indicating the top or left end) to 1.0 (the bottom or right end).
+- [- drawParts](./nsscroller/drawparts.md)
+  Caches images for the scroll buttons and knob.
 ### Deprecated properties
 - [var arrowsPosition: NSScroller.ArrowPosition](./nsscroller/arrowsposition.md)
   The location of the scroll buttons within the scroller, as described in [`NSScroller.ArrowPosition`](./nsscroller/arrowposition.md).

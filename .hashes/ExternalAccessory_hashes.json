@@ -5,6 +5,21 @@
       "file_path": "documentation/ExternalAccessory/ExternalAccessory.md",
       "hash": "58b28c88f5744add94bd7d3c14ab8844f31cdc27b9209801c19c97e36f452f07"
     },
+    "https://developer.apple.com/documentation/externalaccessory/ea_extern": {
+      "etag": "\"add-65d5608c9dc74-df\"",
+      "file_path": "documentation/ExternalAccessory/ea_extern.md",
+      "hash": "5997150bea8a37b85c3f82a9d1299b45ffc1c46b5f702c156cf9c703bd0778af"
+    },
+    "https://developer.apple.com/documentation/externalaccessory/ea_extern_class": {
+      "etag": "\"b25-65d5608cb917b-df\"",
+      "file_path": "documentation/ExternalAccessory/ea_extern_class.md",
+      "hash": "f1ebd202fa0f2057df6b3ed88bfcfb01c004852d4ae9a3877fb65c0ecaa66419"
+    },
+    "https://developer.apple.com/documentation/externalaccessory/ea_extern_class_available": {
+      "etag": "\"bfd-65d5608cb917b-df\"",
+      "file_path": "documentation/ExternalAccessory/ea_extern_class_available.md",
+      "hash": "4f16558e822143644df698bab1b72a3098d9963fb84219473bb328dd3b1fc2b3"
+    },
     "https://developer.apple.com/documentation/externalaccessory/eaaccessory": {
       "etag": "\"7e24-65d5608c9dc74-df\"",
       "file_path": "documentation/ExternalAccessory/eaaccessory.md",
@@ -74,6 +89,16 @@
       "etag": "\"302e-65d5608c9dc74-df\"",
       "file_path": "documentation/ExternalAccessory/eaaccessorydelegate/accessorydiddisconnect(_).md",
       "hash": "c200f4ae1cda899ccfdb30155cd1bf887eac26db2edfed82948bc0830c60354b"
+    },
+    "https://developer.apple.com/documentation/externalaccessory/eaaccessorydidconnectnotification": {
+      "etag": "\"3bff-65d5608cb917b-df\"",
+      "file_path": "documentation/ExternalAccessory/eaaccessorydidconnectnotification.md",
+      "hash": "c993fb6c33f3ff43e961c9ebad7e48984aa6fd87f13bcc13f7dc5b8815485860"
+    },
+    "https://developer.apple.com/documentation/externalaccessory/eaaccessorydiddisconnectnotification": {
+      "etag": "\"38ea-65d5608c9dc74-df\"",
+      "file_path": "documentation/ExternalAccessory/eaaccessorydiddisconnectnotification.md",
+      "hash": "33cc42feef81486708a5d24a266c90ec28fc0d1f923f8c13606b659dbea60d51"
     },
     "https://developer.apple.com/documentation/externalaccessory/eaaccessorykey": {
       "etag": "\"43e3-65d5608c9dc74-df\"",
@@ -440,6 +465,21 @@
       "file_path": "documentation/ExternalAccessory/ExternalAccessory.md",
       "hash": "58b28c88f5744add94bd7d3c14ab8844f31cdc27b9209801c19c97e36f452f07"
     },
+    "https://developer.apple.com/tutorials/data/documentation/externalaccessory/ea_extern.json": {
+      "etag": "\"add-65d5608c9dc74-df\"",
+      "file_path": "documentation/ExternalAccessory/ea_extern.md",
+      "hash": "5997150bea8a37b85c3f82a9d1299b45ffc1c46b5f702c156cf9c703bd0778af"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/externalaccessory/ea_extern_class.json": {
+      "etag": "\"b25-65d5608cb917b-df\"",
+      "file_path": "documentation/ExternalAccessory/ea_extern_class.md",
+      "hash": "f1ebd202fa0f2057df6b3ed88bfcfb01c004852d4ae9a3877fb65c0ecaa66419"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/externalaccessory/ea_extern_class_available.json": {
+      "etag": "\"bfd-65d5608cb917b-df\"",
+      "file_path": "documentation/ExternalAccessory/ea_extern_class_available.md",
+      "hash": "4f16558e822143644df698bab1b72a3098d9963fb84219473bb328dd3b1fc2b3"
+    },
     "https://developer.apple.com/tutorials/data/documentation/externalaccessory/eaaccessory.json": {
       "etag": "\"7e24-65d5608c9dc74-df\"",
       "file_path": "documentation/ExternalAccessory/eaaccessory.md",
@@ -509,6 +549,16 @@
       "etag": "\"302e-65d5608c9dc74-df\"",
       "file_path": "documentation/ExternalAccessory/eaaccessorydelegate/accessorydiddisconnect(_).md",
       "hash": "c200f4ae1cda899ccfdb30155cd1bf887eac26db2edfed82948bc0830c60354b"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/externalaccessory/eaaccessorydidconnectnotification.json": {
+      "etag": "\"3bff-65d5608cb917b-df\"",
+      "file_path": "documentation/ExternalAccessory/eaaccessorydidconnectnotification.md",
+      "hash": "c993fb6c33f3ff43e961c9ebad7e48984aa6fd87f13bcc13f7dc5b8815485860"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/externalaccessory/eaaccessorydiddisconnectnotification.json": {
+      "etag": "\"38ea-65d5608c9dc74-df\"",
+      "file_path": "documentation/ExternalAccessory/eaaccessorydiddisconnectnotification.md",
+      "hash": "33cc42feef81486708a5d24a266c90ec28fc0d1f923f8c13606b659dbea60d51"
     },
     "https://developer.apple.com/tutorials/data/documentation/externalaccessory/eaaccessorykey.json": {
       "etag": "\"43e3-65d5608c9dc74-df\"",
@@ -873,8 +923,8 @@
   },
   "metadata": {
     "render": {
-      "version": 1
+      "version": 2
     },
-    "total_pages": 174
+    "total_pages": 184
   }
 }

@@ -53,6 +53,9 @@ class MTLAccelerationStructureTriangleGeometryDescriptor
 - [var transformationMatrixLayout: MTLMatrixLayout](./mtlaccelerationstructuretrianglegeometrydescriptor/transformationmatrixlayout.md)
 - [var transformationMatrixBuffer: (any MTLBuffer)?](./mtlaccelerationstructuretrianglegeometrydescriptor/transformationmatrixbuffer.md)
 - [var transformationMatrixBufferOffset: Int](./mtlaccelerationstructuretrianglegeometrydescriptor/transformationmatrixbufferoffset.md)
+### Creating a triangle geometry descriptor
+- [+ descriptor](./mtlaccelerationstructuretrianglegeometrydescriptor/descriptor.md)
+  Creates a new triangle descriptor.
 
 ## Relationships
 

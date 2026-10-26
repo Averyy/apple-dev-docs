@@ -26,6 +26,9 @@ enum XCTMeasurementInvocationOptions : NSUInteger;
 ### Initializers
 - [init(rawValue: UInt)](./invocationoptions-swift.struct/init%28rawvalue%29.md)
   Creates a new instance with the specified raw value.
+### Enumeration Cases
+- [XCTMeasurementInvocationNone](../xctmeasurementinvocationoptions/xctmeasurementinvocationnone.md)
+  An invocation option that specifies that the test automatically takes measurements at the beginning and ending of a measure block.
 
 ## Relationships
 

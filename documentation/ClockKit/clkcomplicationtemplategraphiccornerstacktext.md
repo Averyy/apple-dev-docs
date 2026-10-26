@@ -34,6 +34,8 @@ The system always displays the outer text as white. The inner text can be multic
 ### Creating the Template
 - [init(innerTextProvider: CLKTextProvider, outerTextProvider: CLKTextProvider)](./clkcomplicationtemplategraphiccornerstacktext/init%28innertextprovider,outertextprovider%29.md)
   Creates a template that has an inner line of text and an outer text element.
+- [+ templateWithInnerTextProvider:outerTextProvider:](./clkcomplicationtemplategraphiccornerstacktext/templatewithinnertextprovider_outertextprovider_.md)
+  Returns a template that has an inner line of text and an outer text element.
 ### Setting the Complication Data
 - [var outerTextProvider: CLKTextProvider](./clkcomplicationtemplategraphiccornerstacktext/outertextprovider.md)
   The outer text to display in the complication.

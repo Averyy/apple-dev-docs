@@ -63,6 +63,8 @@ You can constrain this view’s width anchor or set its frame width to control t
   A width the system uses to constrain the view contents.
 - [var supplementalMenu: UIMenu?](./swattributionview/supplementalmenu.md)
   A supplemental menu to augment the attribution view’s existing menu.
+- [enablesMarquee](./swattributionview/enablesmarquee.md)
+  Automatically enables a marquee effect.
 ### Customizing the view
 - [SWAttributionView.BackgroundStyle](./swattributionview/backgroundstyle-swift.enum.md)
   The background styling of the attribution view’s contents.

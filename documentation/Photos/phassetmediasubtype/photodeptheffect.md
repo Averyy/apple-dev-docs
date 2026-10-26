@@ -43,6 +43,8 @@ PHAssetMediaSubtypePhotoDepthEffect
   The asset is a high-frame-rate video.
 - [static var videoTimelapse: PHAssetMediaSubtype](./videotimelapse.md)
   The asset is a time-lapse video.
+- [PHAssetMediaSubtypeNone](./phassetmediasubtypenone.md)
+  The asset has no subtype.
 
 
 ---

@@ -39,6 +39,8 @@ You configure this object to export an instance of [`AVAsset`](./avasset.md) by 
   Creates an export session with a preset configuration.
 - [Export presets](./export-presets.md)
   Configure an export session to output media in standard sizes and formats.
+- [+ exportSessionWithAsset:presetName:](./avassetexportsession/exportsessionwithasset_presetname_.md)
+  Returns a new asset export session that uses the specified preset.
 ### Accessing export presets
 - [var presetName: String](./avassetexportsession/presetname.md)
   The name of the preset that the asset export session uses.
@@ -63,6 +65,10 @@ You configure this object to export an instance of [`AVAsset`](./avasset.md) by 
   The file length that the output of the session must not exceed.
 - [var directoryForTemporaryFiles: URL?](./avassetexportsession/directoryfortemporaryfiles.md)
   A directory suitable to store temporary files that the export process generates.
+- [outputURL](./avassetexportsession/outputurl.md)
+  A URL where an asset export session writes its output.
+- [outputFileType](./avassetexportsession/outputfiletype.md)
+  The file type of the output an asset export session writes.
 ### Configuring metadata
 - [var metadata: [AVMetadataItem]?](./avassetexportsession/metadata.md)
   The metadata an export session writes to the output container file.
@@ -86,6 +92,10 @@ You configure this object to export an instance of [`AVAsset`](./avasset.md) by 
 ### Exporting media
 - [func export(to: URL, as: AVFileType, isolation: isolated (any Actor)?) async throws](./avassetexportsession/export%28to,as,isolation%29.md)
   Exports the asset to the output location in the specified file type.
+- [- exportAsynchronouslyWithCompletionHandler:](./avassetexportsession/exportasynchronously%28completionhandler%29.md)
+  Starts the asynchronous execution of an export session.
+- [- cancelExport](./avassetexportsession/cancelexport%28%29.md)
+  Cancels the execution of an export session.
 ### Monitoring export progress
 - [func states(updateInterval: TimeInterval) -> some Sendable & AsyncSequence<AVAssetExportSession.State, Never>
 ](./avassetexportsession/states%28updateinterval%29.md)
@@ -94,6 +104,12 @@ You configure this object to export an instance of [`AVAsset`](./avasset.md) by 
   Constants that indicate the state of an export operation.
 - [AVAssetExportSession.Status](./avassetexportsession/status-swift.enum.md)
   Values that indicate the state of an export session.
+- [status](./avassetexportsession/status-swift.property.md)
+  The status of the export session.
+- [progress](./avassetexportsession/progress.md)
+  A value that indicates the progress of the export.
+- [error](./avassetexportsession/error.md)
+  An optional error object.
 ### Estimating file length and duration
 - [func estimateOutputFileLength(completionHandler: (Int64, (any Error)?) -> Void)](./avassetexportsession/estimateoutputfilelength%28completionhandler%29.md)
   Starts estimating the output file length of the export while considering the asset, preset, and time range configuration of the export session.
@@ -110,6 +126,10 @@ You configure this object to export an instance of [`AVAsset`](./avasset.md) by 
   Represents the resumption state of the export session.
 - [AVAssetExportSession.ResumptionFailureReason](./avassetexportsession/resumptionfailurereason.md)
   The reason that configuring the export session for resumption failed.
+- [- configureForResumableExportWithCompletionHandler:](./avassetexportsession/configureforresumableexportwithcompletionhandler_.md)
+  Attempts to configure the export session into resumption mode.
+- [AVAssetExportSessionResumptionState](./avassetexportsessionresumptionstate.md)
+  The current resumption state of the export session.
 ### Deprecated
 - [Deprecated symbols](./avassetexportsession-deprecated-symbols.md)
   Review unsupported symbols and their replacements.

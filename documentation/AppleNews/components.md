@@ -15,16 +15,16 @@ The following table gives you an overview of the components you can use to creat
 
 | **Component category** | **Component types** |
 | --- | --- |
-| Text | [`Body`](https://developer.apple.com/documentation/applenewsformat/body), [`Title`](https://developer.apple.com/documentation/applenewsformat/title), [`Heading`](https://developer.apple.com/documentation/applenewsformat/heading) (heading1, heading2, heading3, heading4, heading5, heading6), [`ArticleTitle`](https://developer.apple.com/documentation/applenewsformat/articletitle), [`Intro`](https://developer.apple.com/documentation/applenewsformat/intro), [`Caption`](https://developer.apple.com/documentation/applenewsformat/caption), [`Author`](https://developer.apple.com/documentation/applenewsformat/author), [`Byline`](https://developer.apple.com/documentation/applenewsformat/byline), [`Illustrator`](https://developer.apple.com/documentation/applenewsformat/illustrator), [`Photographer`](https://developer.apple.com/documentation/applenewsformat/photographer), [`Quote`](https://developer.apple.com/documentation/applenewsformat/quote), [`PullQuote`](https://developer.apple.com/documentation/applenewsformat/pullquote) |
-| Images | [`Image`](https://developer.apple.com/documentation/applenewsformat/image), [`Photo`](https://developer.apple.com/documentation/applenewsformat/photo), [`Figure`](https://developer.apple.com/documentation/applenewsformat/figure), [`Portrait`](https://developer.apple.com/documentation/applenewsformat/portrait), [`Logo`](https://developer.apple.com/documentation/applenewsformat/logo),  [`ArticleThumbnail`](https://developer.apple.com/documentation/applenewsformat/articlethumbnail) |
-| Galleries and Mosaic | [`Gallery`](https://developer.apple.com/documentation/applenewsformat/gallery), [`Mosaic`](https://developer.apple.com/documentation/applenewsformat/mosaic) |
-| Audio and Video | [`Audio`](https://developer.apple.com/documentation/applenewsformat/audio), [`EmbedWebVideo`](https://developer.apple.com/documentation/applenewsformat/embedwebvideo), [`Music`](https://developer.apple.com/documentation/applenewsformat/music), [`Podcast`](https://developer.apple.com/documentation/applenewsformat/podcast), [`Video`](https://developer.apple.com/documentation/applenewsformat/video) |
-| Location | [`Map`](https://developer.apple.com/documentation/applenewsformat/map), [`Place`](https://developer.apple.com/documentation/applenewsformat/place) |
-| Social Media | [`FacebookPost`](https://developer.apple.com/documentation/applenewsformat/facebookpost), [`Instagram`](https://developer.apple.com/documentation/applenewsformat/instagram), [`TikTok`](https://developer.apple.com/documentation/applenewsformat/tiktok), [`Tweet`](https://developer.apple.com/documentation/applenewsformat/tweet) |
-| Tables | [`DataTable`](https://developer.apple.com/documentation/applenewsformat/datatable), [`HTMLTable`](https://developer.apple.com/documentation/applenewsformat/htmltable) |
-| Advertisements | [`ReplicaAdvertisement`](https://developer.apple.com/documentation/applenewsformat/replicaadvertisement) |
-| Article Structure | [`Container`](https://developer.apple.com/documentation/applenewsformat/container), [`Section`](https://developer.apple.com/documentation/applenewsformat/section), [`Chapter`](https://developer.apple.com/documentation/applenewsformat/chapter), [`Aside`](https://developer.apple.com/documentation/applenewsformat/aside), [`Header`](https://developer.apple.com/documentation/applenewsformat/header), [`Divider`](https://developer.apple.com/documentation/applenewsformat/divider), [`ArticleLink`](https://developer.apple.com/documentation/applenewsformat/articlelink), [`LinkButton`](https://developer.apple.com/documentation/applenewsformat/linkbutton) |
-| Augmented Reality | [`ARKit`](https://developer.apple.com/documentation/applenewsformat/arkit) |
+| Text | [`Body`](../AppleNewsFormat/body.md), [`Title`](../AppleNewsFormat/title.md), [`Heading`](../AppleNewsFormat/heading.md) (heading1, heading2, heading3, heading4, heading5, heading6), [`ArticleTitle`](../AppleNewsFormat/articletitle.md), [`Intro`](../AppleNewsFormat/intro.md), [`Caption`](../AppleNewsFormat/caption.md), [`Author`](../AppleNewsFormat/author.md), [`Byline`](../AppleNewsFormat/byline.md), [`Illustrator`](../AppleNewsFormat/illustrator.md), [`Photographer`](../AppleNewsFormat/photographer.md), [`Quote`](../AppleNewsFormat/quote.md), [`PullQuote`](../AppleNewsFormat/pullquote.md) |
+| Images | [`Image`](../AppleNewsFormat/image.md), [`Photo`](../AppleNewsFormat/photo.md), [`Figure`](../AppleNewsFormat/figure.md), [`Portrait`](../AppleNewsFormat/portrait.md), [`Logo`](../AppleNewsFormat/logo.md),  [`ArticleThumbnail`](../AppleNewsFormat/articlethumbnail.md) |
+| Galleries and Mosaic | [`Gallery`](../AppleNewsFormat/gallery.md), [`Mosaic`](../AppleNewsFormat/mosaic.md) |
+| Audio and Video | [`Audio`](../AppleNewsFormat/audio.md), [`EmbedWebVideo`](../AppleNewsFormat/embedwebvideo.md), [`Music`](../AppleNewsFormat/music.md), [`Podcast`](../AppleNewsFormat/podcast.md), [`Video`](../AppleNewsFormat/video.md) |
+| Location | [`Map`](../AppleNewsFormat/map.md), [`Place`](../AppleNewsFormat/place.md) |
+| Social Media | [`FacebookPost`](../AppleNewsFormat/facebookpost.md), [`Instagram`](../AppleNewsFormat/instagram.md), [`TikTok`](../AppleNewsFormat/tiktok.md), [`Tweet`](../AppleNewsFormat/tweet.md) |
+| Tables | [`DataTable`](../AppleNewsFormat/datatable.md), [`HTMLTable`](../AppleNewsFormat/htmltable.md) |
+| Advertisements | [`ReplicaAdvertisement`](../AppleNewsFormat/replicaadvertisement.md) |
+| Article Structure | [`Container`](../AppleNewsFormat/container.md), [`Section`](../AppleNewsFormat/section.md), [`Chapter`](../AppleNewsFormat/chapter.md), [`Aside`](../AppleNewsFormat/aside.md), [`Header`](../AppleNewsFormat/header.md), [`Divider`](../AppleNewsFormat/divider.md), [`ArticleLink`](../AppleNewsFormat/articlelink.md), [`LinkButton`](../AppleNewsFormat/linkbutton.md) |
+| Augmented Reality | [`ARKit`](../AppleNewsFormat/arkit.md) |
 
 > **Note**: Choosing the component `role` that best describes your content is important for better voice-over and for facilitating Siri suggestions. For example, instead of styling text in a `body` component to make it look like a heading, use a `heading` component for that text instead.
 
@@ -33,98 +33,98 @@ The following table gives you an overview of the components you can use to creat
 ### First Steps
 - [Adding Components](./adding-components.md)
   Learn the basics for adding components to your article.
-- [object Component](https://developer.apple.com/documentation/applenewsformat/component)
+- [object Component](../AppleNewsFormat/component.md)
   Properties shared by all component types.
 ### Text
 - [Using HTML with Apple News Format](./using-html-with-apple-news-format.md)
   Use HTML formatting for text components.
 - [Using Markdown with Apple News Format](./using-markdown-with-apple-news-format.md)
   Use Markdown formatting for text components.
-- [object Body](https://developer.apple.com/documentation/applenewsformat/body)
+- [object Body](../AppleNewsFormat/body.md)
   The component for adding body text.
-- [object Title](https://developer.apple.com/documentation/applenewsformat/title)
+- [object Title](../AppleNewsFormat/title.md)
   The component for adding an article title.
-- [object Heading](https://developer.apple.com/documentation/applenewsformat/heading)
+- [object Heading](../AppleNewsFormat/heading.md)
   The text component for adding a heading.
-- [object Intro](https://developer.apple.com/documentation/applenewsformat/intro)
+- [object Intro](../AppleNewsFormat/intro.md)
   The component for adding introductory text.
-- [object Caption](https://developer.apple.com/documentation/applenewsformat/caption)
+- [object Caption](../AppleNewsFormat/caption.md)
   The component for adding caption text.
-- [object Author](https://developer.apple.com/documentation/applenewsformat/author)
+- [object Author](../AppleNewsFormat/author.md)
   The component for adding the name of the author.
-- [object Byline](https://developer.apple.com/documentation/applenewsformat/byline)
+- [object Byline](../AppleNewsFormat/byline.md)
   The component for adding the publication date or contributor credits, especially for articles with multiple contributors.
-- [object Illustrator](https://developer.apple.com/documentation/applenewsformat/illustrator)
+- [object Illustrator](../AppleNewsFormat/illustrator.md)
   The component for adding illustrator credit.
-- [object Photographer](https://developer.apple.com/documentation/applenewsformat/photographer)
+- [object Photographer](../AppleNewsFormat/photographer.md)
   The component for adding a photographer credit.
-- [object Quote](https://developer.apple.com/documentation/applenewsformat/quote)
+- [object Quote](../AppleNewsFormat/quote.md)
   The component for including a quote.
-- [object PullQuote](https://developer.apple.com/documentation/applenewsformat/pullquote)
+- [object PullQuote](../AppleNewsFormat/pullquote.md)
   The component for including a pull quote.
-- [object Text](https://developer.apple.com/documentation/applenewsformat/text)
+- [object Text](../AppleNewsFormat/text.md)
   Properties shared by all text component types.
 ### Images
-- [object Image](https://developer.apple.com/documentation/applenewsformat/image)
+- [object Image](../AppleNewsFormat/image.md)
   The component for displaying JPEG, WebP, PNG, or GIF images.
-- [object Photo](https://developer.apple.com/documentation/applenewsformat/photo)
+- [object Photo](../AppleNewsFormat/photo.md)
   The component for including a photograph.
-- [object Figure](https://developer.apple.com/documentation/applenewsformat/figure)
+- [object Figure](../AppleNewsFormat/figure.md)
   The component for including a figure.
-- [object Portrait](https://developer.apple.com/documentation/applenewsformat/portrait)
+- [object Portrait](../AppleNewsFormat/portrait.md)
   The component for including an image of a person.
-- [object Logo](https://developer.apple.com/documentation/applenewsformat/logo)
+- [object Logo](../AppleNewsFormat/logo.md)
   The component for including a logo image.
-- [object ReplicaAdvertisement](https://developer.apple.com/documentation/applenewsformat/replicaadvertisement)
+- [object ReplicaAdvertisement](../AppleNewsFormat/replicaadvertisement.md)
   The component for delivering digital versions of print advertisements.
-- [object CaptionDescriptor](https://developer.apple.com/documentation/applenewsformat/captiondescriptor)
+- [object CaptionDescriptor](../AppleNewsFormat/captiondescriptor.md)
   The object you use in image components for displaying captions when the image is full-screen.
 ### Galleries and Mosaics
-- [object Gallery](https://developer.apple.com/documentation/applenewsformat/gallery)
+- [object Gallery](../AppleNewsFormat/gallery.md)
   The component for displaying a sequence of images in a specific order as a horizontal strip.
-- [object Mosaic](https://developer.apple.com/documentation/applenewsformat/mosaic)
+- [object Mosaic](../AppleNewsFormat/mosaic.md)
   The component for displaying a set of images as tiles in no particular order.
-- [object GalleryItem](https://developer.apple.com/documentation/applenewsformat/galleryitem)
+- [object GalleryItem](../AppleNewsFormat/galleryitem.md)
   An object used in a gallery or mosaic component for displaying an individual image.
 ### Audio and Video
-- [object Audio](https://developer.apple.com/documentation/applenewsformat/audio)
+- [object Audio](../AppleNewsFormat/audio.md)
   The component for adding a playable audio clip.
-- [object Music](https://developer.apple.com/documentation/applenewsformat/music)
+- [object Music](../AppleNewsFormat/music.md)
   The component for adding a playable music file.
-- [object Podcast](https://developer.apple.com/documentation/applenewsformat/podcast)
+- [object Podcast](../AppleNewsFormat/podcast.md)
   The component for adding a Podcast show or episode.
-- [object Video](https://developer.apple.com/documentation/applenewsformat/video)
+- [object Video](../AppleNewsFormat/video.md)
   The component for adding a video.
-- [object EmbedWebVideo](https://developer.apple.com/documentation/applenewsformat/embedwebvideo)
+- [object EmbedWebVideo](../AppleNewsFormat/embedwebvideo.md)
   The component for adding a web video from Dailymotion, Vimeo, or YouTube.
 ### Location
-- [object Map](https://developer.apple.com/documentation/applenewsformat/map)
+- [object Map](../AppleNewsFormat/map.md)
   The component for adding a map.
-- [object MapItem](https://developer.apple.com/documentation/applenewsformat/mapitem)
+- [object MapItem](../AppleNewsFormat/mapitem.md)
   An object used in a map component for specifying the location of a map pin.
-- [object MapSpan](https://developer.apple.com/documentation/applenewsformat/mapspan)
+- [object MapSpan](../AppleNewsFormat/mapspan.md)
   An object used in a map or place component for defining the visible area of the map.
-- [object Place](https://developer.apple.com/documentation/applenewsformat/place)
+- [object Place](../AppleNewsFormat/place.md)
   The component for adding a map with a specific point of interest.
 ### Social Media
-- [object Instagram](https://developer.apple.com/documentation/applenewsformat/instagram)
+- [object Instagram](../AppleNewsFormat/instagram.md)
   The component for adding an Instagram post.
-- [object FacebookPost](https://developer.apple.com/documentation/applenewsformat/facebookpost)
+- [object FacebookPost](../AppleNewsFormat/facebookpost.md)
   The component for adding a Facebook post.
-- [object TikTok](https://developer.apple.com/documentation/applenewsformat/tiktok)
+- [object TikTok](../AppleNewsFormat/tiktok.md)
   The component for adding a TikTok post.
-- [object Tweet](https://developer.apple.com/documentation/applenewsformat/tweet)
+- [object Tweet](../AppleNewsFormat/tweet.md)
   The component for adding a Tweet that was posted to Twitter.
 ### Augmented Reality
-- [object ARKit](https://developer.apple.com/documentation/applenewsformat/arkit)
+- [object ARKit](../AppleNewsFormat/arkit.md)
   The component for adding an augmented reality (AR) experience to your article.
 ### Tables
 - [Tables in an Article](./tables-in-an-article.md)
   Add a JSON or HTML data table, and understand  the options for changing the look of your table.
 ### Advertisements
-- [object BannerAdvertisement](https://developer.apple.com/documentation/applenewsformat/banneradvertisement)
+- [object BannerAdvertisement](../AppleNewsFormat/banneradvertisement.md)
   The component for adding a full-width banner ad.
-- [object MediumRectangleAdvertisement](https://developer.apple.com/documentation/applenewsformat/mediumrectangleadvertisement)
+- [object MediumRectangleAdvertisement](../AppleNewsFormat/mediumrectangleadvertisement.md)
   The component for adding a medium, fixed-size rectangle ad.
 ### Article Structure
 - [Nesting Components in an Article](./nesting-components-in-an-article.md)
@@ -135,76 +135,76 @@ The following table gives you an overview of the components you can use to creat
   Link to an article by using the article-linking container component.
 - [Displaying Components Side By Side](./displaying-components-side-by-side.md)
   Configure a side-by-side, horizontal arrangement of components for your article.
-- [object Header](https://developer.apple.com/documentation/applenewsformat/header)
+- [object Header](../AppleNewsFormat/header.md)
   The component for defining the top area of an article, chapter, or section.
-- [object Container](https://developer.apple.com/documentation/applenewsformat/container)
+- [object Container](../AppleNewsFormat/container.md)
   Properties shared by all container types.
-- [object Section](https://developer.apple.com/documentation/applenewsformat/section)
+- [object Section](../AppleNewsFormat/section.md)
   The component for organizing an article into sections.
-- [object Chapter](https://developer.apple.com/documentation/applenewsformat/chapter)
+- [object Chapter](../AppleNewsFormat/chapter.md)
   The component for organizing an article into chapters.
-- [object Aside](https://developer.apple.com/documentation/applenewsformat/aside)
+- [object Aside](../AppleNewsFormat/aside.md)
   The component for setting apart content that is not directly related to the article, such as promotional content.
-- [object CollectionDisplay](https://developer.apple.com/documentation/applenewsformat/collectiondisplay)
+- [object CollectionDisplay](../AppleNewsFormat/collectiondisplay.md)
   An object used in any container component type to define how the collection of child components is presented.
-- [object HorizontalStackDisplay](https://developer.apple.com/documentation/applenewsformat/horizontalstackdisplay)
+- [object HorizontalStackDisplay](../AppleNewsFormat/horizontalstackdisplay.md)
   The object for displaying components side by side in a Container component.
-- [object FlexibleSpacer](https://developer.apple.com/documentation/applenewsformat/flexiblespacer)
+- [object FlexibleSpacer](../AppleNewsFormat/flexiblespacer.md)
   The component for redistributing empty space inside a horizontal stack collection.
-- [object Divider](https://developer.apple.com/documentation/applenewsformat/divider)
+- [object Divider](../AppleNewsFormat/divider.md)
   The component for defining a horizontal line to visually divide parts of your article.
-- [object ArticleLink](https://developer.apple.com/documentation/applenewsformat/articlelink)
+- [object ArticleLink](../AppleNewsFormat/articlelink.md)
   The container component for creating a link to an article.
-- [type SupportedArticleIdentifier](https://developer.apple.com/documentation/applenewsformat/supportedarticleidentifier)
+- [type SupportedArticleIdentifier](../AppleNewsFormat/supportedarticleidentifier.md)
   The patterns supported for article identifiers in UUID format.
-- [type PublisherArticleIdentifier](https://developer.apple.com/documentation/applenewsformat/publisherarticleidentifier)
+- [type PublisherArticleIdentifier](../AppleNewsFormat/publisherarticleidentifier.md)
   The identifier provided by the publisher.
-- [object ArticleTitle](https://developer.apple.com/documentation/applenewsformat/articletitle)
+- [object ArticleTitle](../AppleNewsFormat/articletitle.md)
   The component for displaying an article title in the ArticleLink component.
-- [object ArticleThumbnail](https://developer.apple.com/documentation/applenewsformat/articlethumbnail)
+- [object ArticleThumbnail](../AppleNewsFormat/articlethumbnail.md)
   The component for displaying a thumbnail image with an article link.
-- [object LinkButton](https://developer.apple.com/documentation/applenewsformat/linkbutton)
+- [object LinkButton](../AppleNewsFormat/linkbutton.md)
   The component for opening a link in a button.
 ### Animations
 - [About Component Animations](./about-component-animations.md)
   Learn how to affect the way in which components come into view.
-- [object ComponentAnimation](https://developer.apple.com/documentation/applenewsformat/componentanimation)
+- [object ComponentAnimation](../AppleNewsFormat/componentanimation.md)
   Properties that all types of animations share.
-- [object AppearAnimation](https://developer.apple.com/documentation/applenewsformat/appearanimation)
+- [object AppearAnimation](../AppleNewsFormat/appearanimation.md)
   An animation type whereby a component appears on the screen.
-- [object FadeInAnimation](https://developer.apple.com/documentation/applenewsformat/fadeinanimation)
+- [object FadeInAnimation](../AppleNewsFormat/fadeinanimation.md)
   The animation whereby a component fades into view.
-- [object MoveInAnimation](https://developer.apple.com/documentation/applenewsformat/moveinanimation)
+- [object MoveInAnimation](../AppleNewsFormat/moveinanimation.md)
   The animation whereby a component moves in from the side of the screen.
-- [object ScaleFadeAnimation](https://developer.apple.com/documentation/applenewsformat/scalefadeanimation)
+- [object ScaleFadeAnimation](../AppleNewsFormat/scalefadeanimation.md)
   The animation in which a component scales up and fades into view.
 ### Behaviors
 - [About Component Behaviors](./about-component-behaviors.md)
   Learn how to affect components’ reactions to device motion and scrolling.
-- [object Behavior](https://developer.apple.com/documentation/applenewsformat/behavior)
+- [object Behavior](../AppleNewsFormat/behavior.md)
   Properties shared by all the behaviors you can use to affect how components react to device motion and scrolling.
-- [object BackgroundMotion](https://developer.apple.com/documentation/applenewsformat/backgroundmotion)
+- [object BackgroundMotion](../AppleNewsFormat/backgroundmotion.md)
   The behavior whereby the background of a component moves in the opposite direction from the motion of the device.
-- [object BackgroundParallax](https://developer.apple.com/documentation/applenewsformat/backgroundparallax)
+- [object BackgroundParallax](../AppleNewsFormat/backgroundparallax.md)
   The behavior whereby the background of a component moves slightly slower than a person’s scroll speed.
-- [object Motion](https://developer.apple.com/documentation/applenewsformat/motion)
+- [object Motion](../AppleNewsFormat/motion.md)
   The behavior whereby a component reacts to the motion of the person’s device.
-- [object Parallax](https://developer.apple.com/documentation/applenewsformat/parallax)
+- [object Parallax](../AppleNewsFormat/parallax.md)
   The behavior whereby a component moves at a speed different from the scroll speed.
-- [object Springy](https://developer.apple.com/documentation/applenewsformat/springy)
+- [object Springy](../AppleNewsFormat/springy.md)
   The behavior whereby a component acts as if it’s on a short spring.
 ### Links
-- [object LinkAddition](https://developer.apple.com/documentation/applenewsformat/linkaddition)
+- [object LinkAddition](../AppleNewsFormat/linkaddition.md)
   The addition object for defining links in text components that don’t use HTML or Markdown formatting.
-- [object ComponentLink](https://developer.apple.com/documentation/applenewsformat/componentlink)
+- [object ComponentLink](../AppleNewsFormat/componentlink.md)
   The component addition object for making a component interactive and opening a link to another location in News.
-- [object Addition](https://developer.apple.com/documentation/applenewsformat/addition)
+- [object Addition](../AppleNewsFormat/addition.md)
   Properties that all addition types share.
-- [object ComponentAddition](https://developer.apple.com/documentation/applenewsformat/componentaddition)
+- [object ComponentAddition](../AppleNewsFormat/componentaddition.md)
   Properties that all types of component additions share.
-- [type SupportedURLs](https://developer.apple.com/documentation/applenewsformat/supportedurls)
+- [type SupportedURLs](../AppleNewsFormat/supportedurls.md)
   Links that go to Apple News, other Apple apps, and external sites.
-- [type SupportedInternalURLs](https://developer.apple.com/documentation/applenewsformat/supportedinternalurls)
+- [type SupportedInternalURLs](../AppleNewsFormat/supportedinternalurls.md)
   Links that go to Apple News and other Apple apps.
 
 

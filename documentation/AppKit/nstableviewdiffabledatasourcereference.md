@@ -84,6 +84,14 @@ Then, you generate the current state of the data and display the data in the UI 
 - [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 - [NSTableViewDataSource](./nstableviewdatasource.md)
 
+## See Also
+
+### Management
+- [NSTableViewDataSource](./nstableviewdatasource.md)
+  A set of methods that a table view uses to provide data to a table view and to allow the editing of the table view’s data source object.
+- [NSTableViewDelegate](./nstableviewdelegate.md)
+  A set of optional methods you implement in a table view delegate to customize the behavior of the table view.
+
 
 ---
 

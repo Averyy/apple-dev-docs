@@ -81,6 +81,8 @@ typedef struct {
   Copies the value into the specified buffer.
 - [var objCType: UnsafePointer<CChar>](./nsvalue/objctype.md)
   A C string containing the Objective-C type of the data contained in the value object.
+- [+ valueWithBytes:objCType:](./nsvalue/valuewithbytes_objctype_.md)
+  Creates a value object containing the specified value, interpreted with the specified Objective-C type.
 ### Working with Pointer and Object Values
 - [init(pointer: UnsafeRawPointer?)](./nsvalue/init%28pointer%29.md)
   Creates a value object containing the specified pointer.

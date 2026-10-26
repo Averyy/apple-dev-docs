@@ -48,6 +48,8 @@ The value of this attribute is an [`NSArray`](../../../Foundation/nsarray.md) of
   A dictionary that fully describes the font traits.
 - [static let fixedAdvance: NSFontDescriptor.AttributeName](./fixedadvance.md)
   A floating-point value that overrides the glyph advancement specified by the font.
+- [NSFontColorAttribute](../../nsfontcolorattribute.md)
+  An optional `NSData` object that specifies the font color.
 
 
 ---

@@ -21,6 +21,8 @@ var logFileHandle: FileHandle! { get }
 ### Logging Test Results
 - [func testLog(withFormat: String!, arguments: CVaListPointer)](./testlog%28withformat,arguments%29.md)
   Logs test results to the test log.
+- [- testLogWithFormat:](./testlogwithformat_.md)
+  Logs test results to the test log.
 
 
 ---

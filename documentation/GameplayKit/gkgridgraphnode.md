@@ -35,6 +35,8 @@ To learn more about graphs and pathfinding, see [Pathfinding](https://developer.
 ### Creating a Graph Node
 - [init(gridPosition: vector_int2)](./gkgridgraphnode/init%28gridposition%29.md)
   Initializes a graph node with the specified position on a grid.
+- [+ nodeWithGridPosition:](./gkgridgraphnode/nodewithgridposition_.md)
+  Creates a graph node with the specified position on a grid.
 ### Inspecting a Node’s Position
 - [var gridPosition: vector_int2](./gkgridgraphnode/gridposition.md)
   The position of the node on a discrete integer grid.

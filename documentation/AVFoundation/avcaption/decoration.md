@@ -31,6 +31,8 @@ enum AVCaptionDecoration : NSUInteger;
   A decoration representing a line through the text.
 - [static var overline: AVCaption.Decoration](./decoration/overline.md)
   A decoration representing a line over the text.
+- [AVCaptionDecorationNone](../avcaptiondecoration/avcaptiondecorationnone.md)
+  No text decoration.
 ### Initializers
 - [init(rawValue: UInt)](./decoration/init%28rawvalue%29.md)
   Creates a caption decoration by using a string.
@@ -59,6 +61,12 @@ enum AVCaptionDecoration : NSUInteger;
 - [AVCaption.FontWeight](./fontweight.md)
   Font weights for a caption.
 - [func decoration(at: String.Index) -> (AVCaption.Decoration, Range<String.Index>)](./decoration%28at%29.md)
+  Returns the text decoration at the index position.
+- [- fontStyleAtIndex:range:](./fontstyleatindex_range_.md)
+  Returns the font style and range at the index position.
+- [- fontWeightAtIndex:range:](./fontweightatindex_range_.md)
+  Returns the font weight and range at the index position.
+- [- decorationAtIndex:range:](./decorationatindex_range_.md)
   Returns the text decoration at the index position.
 
 

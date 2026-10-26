@@ -40,6 +40,18 @@ typedef NSString * NSNotificationName;
   Posted when the selection in the name list is changed.
 - [static let ABPeoplePickerValueSelectionDidChange: NSNotification.Name](./name-swift.struct/abpeoplepickervalueselectiondidchange.md)
   Posted when the selection in a multivalue property is changed.
+- [kABDatabaseChangedNotification](../../AddressBook/kabdatabasechangednotification.md)
+  Posted when this process has changed the Address Book database.
+- [kABDatabaseChangedExternallyNotification](../../AddressBook/kabdatabasechangedexternallynotification.md)
+  Posted when a process other than the current one has changed the Address Book database.
+- [ABPeoplePickerDisplayedPropertyDidChangeNotification](../../AddressBook/abpeoplepickerdisplayedpropertydidchangenotification.md)
+  Posted when the displayed property in the record list is changed.
+- [ABPeoplePickerGroupSelectionDidChangeNotification](../../AddressBook/abpeoplepickergroupselectiondidchangenotification.md)
+  Posted when the selection in the group list is changed.
+- [ABPeoplePickerNameSelectionDidChangeNotification](../../AddressBook/abpeoplepickernameselectiondidchangenotification.md)
+  Posted when the selection in the name list is changed.
+- [ABPeoplePickerValueSelectionDidChangeNotification](../../AddressBook/abpeoplepickervalueselectiondidchangenotification.md)
+  Posted when the selection in a multivalue property is changed.
 ### AppKit
 - [static let unsupportedAttributeAddedNotification: NSNotification.Name](./name-swift.struct/unsupportedattributeaddednotification.md)
 - [class let didProcessEditingNotification: NSNotification.Name](../../AppKit/nstextstorage/didprocesseditingnotification.md)
@@ -408,6 +420,14 @@ typedef NSString * NSNotificationName;
   Posted after the threshold for antialiasing changes.
 - [class let globalFrameDidChangeNotification: NSNotification.Name](../../AppKit/nsview/globalframedidchangenotification.md)
   Posted whenever an `NSView` object that has attached surfaces (that is, `NSOpenGLContext` objects) moves to a different screen, or other cases where the `NSOpenGLContext` object needs to be updated.
+- [NSTextContentStorageUnsupportedAttributeAddedNotification](../../UIKit/nstextcontentstorageunsupportedattributeaddednotification.md)
+  Posted by `NSTextContentStorage` when a text attribute unsupported by `NSTextContentStorage` is added to the underlying text storage.
+- [NSViewFocusDidChangeNotification](../../AppKit/nsviewfocusdidchangenotification.md)
+  Deprecated in macOS 10.4 and later. Posted for an `NSView` object and each of its descendants (recursively) whenever the frame or bounds geometry of the view changed.
+- [NSApplicationProtectedDataDidBecomeAvailableNotification](../../AppKit/nsapplicationprotecteddatadidbecomeavailablenotification.md)
+  Posted when protected data becomes available.
+- [NSApplicationProtectedDataWillBecomeUnavailableNotification](../../AppKit/nsapplicationprotecteddatawillbecomeunavailablenotification.md)
+  Posted when protected data is about to become unavailable.
 ### AVFAudio
 - [static let AVAudioEngineConfigurationChange: NSNotification.Name](./name-swift.struct/avaudioengineconfigurationchange.md)
   A notification the framework posts when the audio engine configuration changes.
@@ -423,6 +443,10 @@ typedef NSString * NSNotificationName;
   A notification the system posts when its audio route changes.
 - [class let silenceSecondaryAudioHintNotification: NSNotification.Name](../../AVFAudio/avaudiosession/silencesecondaryaudiohintnotification.md)
   A notification the system posts when the primary audio from other apps starts and stops.
+- [AVAudioEngineConfigurationChangeNotification](../../AVFAudio/avaudioengineconfigurationchangenotification.md)
+  A notification the framework posts when the audio engine configuration changes.
+- [AVAudioUnitComponentTagsDidChangeNotification](../../AVFAudio/avaudiounitcomponenttagsdidchangenotification.md)
+  A notification that indicates when component tags change.
 ### AVFoundation
 - [static let AVAssetChapterMetadataGroupsDidChange: NSNotification.Name](./name-swift.struct/avassetchaptermetadatagroupsdidchange.md)
   A notification the system posts when an asset’s chapter metadata groups change.
@@ -502,6 +526,44 @@ typedef NSString * NSNotificationName;
   A notification the system posts to indicate a jump in a player item’s current time.
 - [class let timeJumpedNotification: NSNotification.Name](../../AVFoundation/avplayeritem/timejumpednotification.md)
   A notification the system posts when a player item’s time changes discontinuously.
+- [AVAssetChapterMetadataGroupsDidChangeNotification](../../AVFoundation/avassetchaptermetadatagroupsdidchangenotification.md)
+  Posted when the collection of arrays of timed metadata groups representing chapters of an AVAsset change and when any of the contents of the timed metadata groups change, but only for changes that occur after the status of the value of @“availableChapterLocales” has reached AVKeyValueStatusLoaded.
+- [AVAssetContainsFragmentsDidChangeNotification](../../AVFoundation/avassetcontainsfragmentsdidchangenotification.md)
+  A notification the system posts when an asset’s fragments change.
+- [AVAssetDurationDidChangeNotification](../../AVFoundation/avassetdurationdidchangenotification.md)
+  A notification the system posts when a fragmented asset minder observes a change to a fragmented asset’s duration.
+- [AVAssetMediaSelectionGroupsDidChangeNotification](../../AVFoundation/avassetmediaselectiongroupsdidchangenotification.md)
+  Posted when the collection of media selection groups provided by an AVAsset changes and when any of the contents of its media selection groups change, but only for changes that occur after the status of the value of @“availableMediaCharacteristicsWithMediaSelectionOptions” has reached AVKeyValueStatusLoaded.
+- [AVAssetTrackSegmentsDidChangeNotification](../../AVFoundation/avassettracksegmentsdidchangenotification.md)
+  Posted when the array of segments of an AVFragmentedAssetTrack changes while the associated instance of AVFragmentedAsset is being minded by an AVFragmentedAssetMinder, but only for changes that occur after the status of the value of @“segments” has reached AVKeyValueStatusLoaded.
+- [AVAssetTrackTimeRangeDidChangeNotification](../../AVFoundation/avassettracktimerangedidchangenotification.md)
+  Posted when the timeRange of an AVFragmentedAssetTrack changes while the associated instance of AVFragmentedAsset is being minded by an AVFragmentedAssetMinder, but only for changes that occur after the status of the value of @“timeRange” has reached AVKeyValueStatusLoaded.
+- [AVAssetTrackTrackAssociationsDidChangeNotification](../../AVFoundation/avassettracktrackassociationsdidchangenotification.md)
+  Posted when the collection of track associations of an AVAssetTrack changes, but only for changes that occur after the status of the value of @“availableTrackAssociationTypes” has reached AVKeyValueStatusLoaded.
+- [AVAssetWasDefragmentedNotification](../../AVFoundation/avassetwasdefragmentednotification.md)
+  A notification the system posts when a fragmented asset minder observes that the system defragments the asset on disk.
+- [AVFragmentedMovieContainsMovieFragmentsDidChangeNotification](../../AVFoundation/avfragmentedmoviecontainsmoviefragmentsdidchangenotification.md)
+  Posted after the value of @“containsMovieFragments” has already been loaded and the AVFragmentedMovie is added to an AVFragmentedMovieMinder, either when 1) movie fragments are detected in the movie file on disk after it had previously contained none or when 2) no movie fragments are detected in the movie file on disk after it had previously contained one or more.
+- [AVFragmentedMovieDurationDidChangeNotification](../../AVFoundation/avfragmentedmoviedurationdidchangenotification.md)
+  Posted when the duration of an AVFragmentedMovie changes while it’s being minded by an AVFragmentedMovieMinder, but only for changes that occur after the status of the value of @“duration” has reached AVKeyValueStatusLoaded.
+- [AVFragmentedMovieTrackSegmentsDidChangeNotification](../../AVFoundation/avfragmentedmovietracksegmentsdidchangenotification.md)
+- [AVFragmentedMovieTrackTimeRangeDidChangeNotification](../../AVFoundation/avfragmentedmovietracktimerangedidchangenotification.md)
+- [AVFragmentedMovieWasDefragmentedNotification](../../AVFoundation/avfragmentedmoviewasdefragmentednotification.md)
+  Posted when the movie file on disk is defragmented while an AVFragmentedMovie is being minded by an AVFragmentedMovieMinder, but only if the defragmentation occurs after the status of the value of @“canContainMovieFragments” has reached AVKeyValueStatusLoaded.
+- [AVPlayerAvailableHDRModesDidChangeNotification](../../AVFoundation/avplayeravailablehdrmodesdidchangenotification.md)
+  A notification that fires whenever availableHDRModes changes.
+- [AVRouteDetectorMultipleRoutesDetectedDidChangeNotification](../../AVFoundation/avroutedetectormultipleroutesdetecteddidchangenotification.md)
+  A notification the system posts when changes occur to its detected routes.
+- [AVSampleBufferAudioRendererOutputConfigurationDidChangeNotification](../../AVFoundation/avsamplebufferaudiorendereroutputconfigurationdidchangenotification.md)
+  A notification that indicates the hardware configuration does not match the enqueued data format.
+- [AVSampleBufferAudioRendererWasFlushedAutomaticallyNotification](../../AVFoundation/avsamplebufferaudiorendererwasflushedautomaticallynotification.md)
+  A notification that fires whenever the receiver’s enqueued media data has been flushed for a reason other than a call to the -flush method.
+- [AVSampleBufferDisplayLayerFailedToDecodeNotification](../../AVFoundation/avsamplebufferdisplaylayerfailedtodecodenotification.md)
+  A notification the system posts when a sample buffer display layer fails to decode.
+- [AVSampleBufferDisplayLayerOutputObscuredDueToInsufficientExternalProtectionDidChangeNotification](../../AVFoundation/avsamplebufferdisplaylayeroutputobscuredduetoinsufficientexternalprotectiondidchangenotification.md)
+- [AVSampleBufferDisplayLayerRequiresFlushToResumeDecodingDidChangeNotification](../../AVFoundation/avsamplebufferdisplaylayerrequiresflushtoresumedecodingdidchangenotification.md)
+  A notification the system posts when a sample buffer display layer changes its decoding requirements.
+- [AVFragmentedMovieTrackTotalSampleDataLengthDidChangeNotification](../../AVFoundation/avfragmentedmovietracktotalsampledatalengthdidchangenotification.md)
 ### AVKit
 - [static let AVDisplayManagerModeSwitchSettingsChanged: NSNotification.Name](./name-swift.struct/avdisplaymanagermodeswitchsettingschanged.md)
   A notification the display manager posts when a user changes their Match Content settings in the tvOS Settings app.
@@ -509,14 +571,26 @@ typedef NSString * NSNotificationName;
   A notification the display manager posts when a display begins a mode switch.
 - [static let AVDisplayManagerModeSwitchEnd: NSNotification.Name](./name-swift.struct/avdisplaymanagermodeswitchend.md)
   A notification the display manager posts when a display ends a mode switch.
+- [AVDisplayManagerModeSwitchSettingsChangedNotification](../../AVKit/avdisplaymanagermodeswitchsettingschangednotification.md)
+  Posted when the user settings for display criteria matching have changed.
+- [AVDisplayManagerModeSwitchStartNotification](../../AVKit/avdisplaymanagermodeswitchstartnotification.md)
+  Posted when a display begins a display mode switch.
+- [AVDisplayManagerModeSwitchEndNotification](../../AVKit/avdisplaymanagermodeswitchendnotification.md)
+  Posted when a display mode switch has completed.
 ### ClockKit
 - [static let CLKComplicationServerActiveComplicationsDidChange: NSNotification.Name](./name-swift.struct/clkcomplicationserveractivecomplicationsdidchange.md)
+  Posted when the set of active complications changes.
+- [CLKComplicationServerActiveComplicationsDidChangeNotification](../../ClockKit/clkcomplicationserveractivecomplicationsdidchangenotification.md)
   Posted when the set of active complications changes.
 ### CloudKit
 - [static let CKAccountChanged: NSNotification.Name](./name-swift.struct/ckaccountchanged.md)
   A notification that a container posts when the status of an iCloud account changes.
+- [CKAccountChangedNotification](../../CloudKit/ckaccountchangednotification.md)
+  A notification that a container posts when the status of an iCloud account changes.
 ### Contacts
 - [static let CNContactStoreDidChange: NSNotification.Name](./name-swift.struct/cncontactstoredidchange.md)
+  Posted when changes occur to the contact store.
+- [CNContactStoreDidChangeNotification](../../Contacts/cncontactstoredidchangenotification.md)
   Posted when changes occur to the contact store.
 ### Core Data
 - [static let NSManagedObjectContextDidSave: NSNotification.Name](./name-swift.struct/nsmanagedobjectcontextdidsave.md)
@@ -541,10 +615,32 @@ typedef NSString * NSNotificationName;
   A notification that posts after another process writes to a persistent store.
 - [static let NSPersistentStoreDidImportUbiquitousContentChanges: NSNotification.Name](./name-swift.struct/nspersistentstoredidimportubiquitouscontentchanges.md)
   Posted after records are imported from the ubiquitous content store.
+- [NSManagedObjectContextDidSaveNotification](../../CoreData/nsmanagedobjectcontextdidsavenotification.md)
+  A notification that posts after a context finishes writing unsaved changes.
+- [NSManagedObjectContextObjectsDidChangeNotification](../../CoreData/nsmanagedobjectcontextobjectsdidchangenotification.md)
+  A notification that posts when there are changes to context’s registered managed objects.
+- [NSManagedObjectContextWillSaveNotification](../../CoreData/nsmanagedobjectcontextwillsavenotification.md)
+  A notification that posts before a context writes unsaved changes.
+- [NSPersistentStoreCoordinatorStoresDidChangeNotification](../../CoreData/nspersistentstorecoordinatorstoresdidchangenotification.md)
+  A notification that the coordinator posts after its registered stores change.
+- [NSPersistentStoreCoordinatorStoresWillChangeNotification](../../CoreData/nspersistentstorecoordinatorstoreswillchangenotification.md)
+  A notification that posts before a coordinator changes its registered stores.
+- [NSPersistentStoreCoordinatorWillRemoveStoreNotification](../../CoreData/nspersistentstorecoordinatorwillremovestorenotification.md)
+  A notification that posts before a coordinator removes a store.
+- [NSCoreDataCoreSpotlightDelegateIndexDidUpdateNotification](../../CoreData/nscoredatacorespotlightdelegateindexdidupdatenotification.md)
+- [NSManagedObjectContextDidMergeChangesObjectIDsNotification](../../CoreData/nsmanagedobjectcontextdidmergechangesobjectidsnotification.md)
+- [NSManagedObjectContextDidSaveObjectIDsNotification](../../CoreData/nsmanagedobjectcontextdidsaveobjectidsnotification.md)
+  A notification that posts after a context finishes writing changes.
+- [NSPersistentStoreRemoteChangeNotification](../../CoreData/nspersistentstoreremotechangenotification.md)
+- [NSPersistentStoreDidImportUbiquitousContentChangesNotification](../../CoreData/nspersistentstoredidimportubiquitouscontentchangesnotification.md)
+  Posted after records are imported from the ubiquitous content store.
 ### Core Telephony
 - [static let CTServiceRadioAccessTechnologyDidChange: NSNotification.Name](./name-swift.struct/ctserviceradioaccesstechnologydidchange.md)
   A notification that posts when radio access technology changes.
 - [static let CTRadioAccessTechnologyDidChange: NSNotification.Name](./name-swift.struct/ctradioaccesstechnologydidchange.md)
+  The name of the notification indicating that the radio access technology changed for one of the services.
+- [CTServiceRadioAccessTechnologyDidChangeNotification](../../CoreTelephony/ctserviceradioaccesstechnologydidchangenotification.md)
+- [CTRadioAccessTechnologyDidChangeNotification](../../CoreTelephony/ctradioaccesstechnologydidchangenotification.md)
   The name of the notification indicating that the radio access technology changed for one of the services.
 ### Core WLAN
 - [static let CWBSSIDDidChange: NSNotification.Name](./name-swift.struct/cwbssiddidchange.md)
@@ -555,18 +651,38 @@ typedef NSString * NSNotificationName;
 - [static let CWPowerDidChange: NSNotification.Name](./name-swift.struct/cwpowerdidchange.md)
 - [static let CWSSIDDidChange: NSNotification.Name](./name-swift.struct/cwssiddidchange.md)
 - [static let CWScanCacheDidUpdate: NSNotification.Name](./name-swift.struct/cwscancachedidupdate.md)
+- [CWBSSIDDidChangeNotification](../../CoreWLAN/cwbssiddidchangenotification.md)
+- [CWCountryCodeDidChangeNotification](../../CoreWLAN/cwcountrycodedidchangenotification.md)
+- [CWLinkDidChangeNotification](../../CoreWLAN/cwlinkdidchangenotification.md)
+- [CWLinkQualityDidChangeNotification](../../CoreWLAN/cwlinkqualitydidchangenotification.md)
+- [CWModeDidChangeNotification](../../CoreWLAN/cwmodedidchangenotification.md)
+- [CWPowerDidChangeNotification](../../CoreWLAN/cwpowerdidchangenotification.md)
+- [CWSSIDDidChangeNotification](../../CoreWLAN/cwssiddidchangenotification.md)
+- [CWScanCacheDidUpdateNotification](../../CoreWLAN/cwscancachedidupdatenotification.md)
 ### EventKit
 - [static let EKEventStoreChanged: NSNotification.Name](./name-swift.struct/ekeventstorechanged.md)
+  A notification posted when changes are made to the Calendar database.
+- [EKEventStoreChangedNotification](../../EventKit/ekeventstorechangednotification.md)
   A notification posted when changes are made to the Calendar database.
 ### External Accessory
 - [static let EAAccessoryDidConnect: NSNotification.Name](./name-swift.struct/eaaccessorydidconnect.md)
   A notification that the system sends when an accessory becomes connected and available for your application to use.
 - [static let EAAccessoryDidDisconnect: NSNotification.Name](./name-swift.struct/eaaccessorydiddisconnect.md)
   A notification that is posted when an accessory is disconnected and no longer available for your application to use.
+- [EAAccessoryDidConnectNotification](../../ExternalAccessory/eaaccessorydidconnectnotification.md)
+  A notification that the system sends when an accessory becomes connected and available for your application to use.
+- [EAAccessoryDidDisconnectNotification](../../ExternalAccessory/eaaccessorydiddisconnectnotification.md)
+  A notification that is posted when an accessory is disconnected and no longer available for your application to use.
 ### File Provider
 - [static let fileProviderDomainDidChange: NSNotification.Name](./name-swift.struct/fileproviderdomaindidchange.md)
 - [static let fileProviderMaterializedSetDidChange: NSNotification.Name](./name-swift.struct/fileprovidermaterializedsetdidchange.md)
 - [static let fileProviderPendingSetDidChange: NSNotification.Name](./name-swift.struct/fileproviderpendingsetdidchange.md)
+- [NSFileProviderDomainDidChange](../../FileProvider/nsfileproviderdomaindidchange.md)
+  A notification that posts when a file provider’s domain changes.
+- [NSFileProviderMaterializedSetDidChange](../../FileProvider/nsfileprovidermaterializedsetdidchange.md)
+  A notification that the system posts when the set of materialized items changes for your file provider extension.
+- [NSFileProviderPendingSetDidChange](../../FileProvider/nsfileproviderpendingsetdidchange.md)
+  A notification that the system posts when the set of pending items changes for your file provider extension.
 ### Foundation
 - [static let NSUbiquityIdentityDidChange: NSNotification.Name](./name-swift.struct/nsubiquityidentitydidchange.md)
   Sent after the iCloud (“ubiquity”) identity has changed.
@@ -659,13 +775,45 @@ typedef NSString * NSNotificationName;
   A notification that posts after a racing wheel controller connects to the device.
 - [static let GCRacingWheelDidDisconnect: NSNotification.Name](./name-swift.struct/gcracingwheeldiddisconnect.md)
   A notification that posts after a racing wheel controller disconnects from the device.
+- [GCControllerDidConnectNotification](../../GameController/gccontrollerdidconnectnotification.md)
+  A notification that posts after a controller connects to the device.
+- [GCControllerDidDisconnectNotification](../../GameController/gccontrollerdiddisconnectnotification.md)
+  A notification that posts after a controller disconnects from the device.
+- [GCControllerDidBecomeCurrentNotification](../../GameController/gccontrollerdidbecomecurrentnotification.md)
+  A notification that posts when a controller becomes the current controller.
+- [GCControllerDidStopBeingCurrentNotification](../../GameController/gccontrollerdidstopbeingcurrentnotification.md)
+  A notification that posts when a controller stops being the current controller.
+- [GCControllerUserCustomizationsDidChangeNotification](../../GameController/gccontrollerusercustomizationsdidchangenotification.md)
+  A notification that posts when the user customizes the button mappings or other settings of a controller.
+- [GCKeyboardDidConnectNotification](../../GameController/gckeyboarddidconnectnotification.md)
+  A notification that posts after a keyboard connects to the device.
+- [GCKeyboardDidDisconnectNotification](../../GameController/gckeyboarddiddisconnectnotification.md)
+  A notification that posts after a single keyboard, or the last of multiple keyboards, disconnects from the device.
+- [GCMouseDidBecomeCurrentNotification](../../GameController/gcmousedidbecomecurrentnotification.md)
+  A notification that posts when a mouse becomes the most recent mouse that the user connects.
+- [GCMouseDidConnectNotification](../../GameController/gcmousedidconnectnotification.md)
+  A notification that posts after a mouse connects to the device.
+- [GCMouseDidDisconnectNotification](../../GameController/gcmousediddisconnectnotification.md)
+  A notification that posts after a mouse disconnects from the device.
+- [GCMouseDidStopBeingCurrentNotification](../../GameController/gcmousedidstopbeingcurrentnotification.md)
+  A notification that posts when a mouse stops being the most recent mouse that the user connects.
+- [GCRacingWheelDidConnectNotification](../../GameController/gcracingwheeldidconnectnotification.md)
+  A notification that posts after a racing wheel controller connects to the device.
+- [GCRacingWheelDidDisconnectNotification](../../GameController/gcracingwheeldiddisconnectnotification.md)
+  A notification that posts after a racing wheel controller disconnects from the device.
 ### GameKit
 - [static let GKPlayerAuthenticationDidChangeNotificationName: NSNotification.Name](./name-swift.struct/gkplayerauthenticationdidchangenotificationname.md)
   A notification that posts after GameKit authenticates the local player.
 - [static let GKPlayerDidChangeNotificationName: NSNotification.Name](./name-swift.struct/gkplayerdidchangenotificationname.md)
   A notification that posts when a player object’s data changes.
+- [GKPlayerAuthenticationDidChangeNotificationName](../../GameKit/gkplayerauthenticationdidchangenotificationname.md)
+  A notification that posts after GameKit initializes the local player.
+- [GKPlayerDidChangeNotificationName](../../GameKit/gkplayerdidchangenotificationname.md)
+  A notification that posts when a player object’s data changes.
 ### HealthKit
 - [static let HKUserPreferencesDidChange: NSNotification.Name](./name-swift.struct/hkuserpreferencesdidchange.md)
+  Notifies observers whenever the user changes his or her preferred units.
+- [HKUserPreferencesDidChangeNotification](../../HealthKit/hkuserpreferencesdidchangenotification.md)
   Notifies observers whenever the user changes his or her preferred units.
 ### HomeKit
 - [let HMCharacteristicPropertySupportsEventNotification: String](../../HomeKit/hmcharacteristicpropertysupportseventnotification-2f0ml.md)
@@ -675,11 +823,19 @@ typedef NSString * NSNotificationName;
 - [static let IOBluetoothHostControllerPoweredOn: NSNotification.Name](./name-swift.struct/iobluetoothhostcontrollerpoweredon.md)
 - [static let IOBluetoothL2CAPChannelPublished: NSNotification.Name](./name-swift.struct/iobluetoothl2capchannelpublished.md)
 - [static let IOBluetoothL2CAPChannelTerminated: NSNotification.Name](./name-swift.struct/iobluetoothl2capchannelterminated.md)
+- [IOBluetoothHostControllerPoweredOffNotification](../../IOBluetooth/iobluetoothhostcontrollerpoweredoffnotification.md)
+- [IOBluetoothHostControllerPoweredOnNotification](../../IOBluetooth/iobluetoothhostcontrollerpoweredonnotification.md)
+- [IOBluetoothL2CAPChannelPublishedNotification](../../IOBluetooth/iobluetoothl2capchannelpublishednotification.md)
+- [IOBluetoothL2CAPChannelTerminatedNotification](../../IOBluetooth/iobluetoothl2capchannelterminatednotification.md)
 ### iTunes Library
 - [static let ITLibraryDidChange: NSNotification.Name](./name-swift.struct/itlibrarydidchange.md)
   A notification the system posts when a library change occurs.
+- [ITLibraryDidChangeNotification](../../iTunesLibrary/itlibrarydidchangenotification.md)
+  This notification is sent to NSDistributedNotificationCenter when a change has occurred in the library.
 ### MapKit
 - [static let MKAnnotationCalloutInfoDidChange: NSNotification.Name](./name-swift.struct/mkannotationcalloutinfodidchange.md)
+  A property to observe to determine when the title or subtitle information of an annotation object changes.
+- [MKAnnotationCalloutInfoDidChangeNotification](../../MapKit/mkannotationcalloutinfodidchangenotification.md)
   A property to observe to determine when the title or subtitle information of an annotation object changes.
 ### MediaPlayer
 - [static let MPMusicPlayerControllerQueueDidChange: NSNotification.Name](./name-swift.struct/mpmusicplayercontrollerqueuedidchange.md)
@@ -732,6 +888,56 @@ typedef NSString * NSNotificationName;
   Indicates the active wireless route changed.
 - [static let MPVolumeViewWirelessRoutesAvailableDidChange: NSNotification.Name](./name-swift.struct/mpvolumeviewwirelessroutesavailabledidchange.md)
   Indicates the available wireless routes changed.
+- [MPMusicPlayerControllerQueueDidChangeNotification](../../MediaPlayer/mpmusicplayercontrollerqueuedidchangenotification.md)
+  Indicates the music player’s queue changed.
+- [MPMediaLibraryDidChangeNotification](../../MediaPlayer/mpmedialibrarydidchangenotification.md)
+  Indicates the media library has changed.
+- [MPMediaPlaybackIsPreparedToPlayDidChangeNotification](../../MediaPlayer/mpmediaplaybackispreparedtoplaydidchangenotification.md)
+  Indicates that the prepared to play status of the media player has changed.
+- [MPMusicPlayerControllerNowPlayingItemDidChangeNotification](../../MediaPlayer/mpmusicplayercontrollernowplayingitemdidchangenotification.md)
+  Posted when the currently playing media item has changed.
+- [MPMusicPlayerControllerPlaybackStateDidChangeNotification](../../MediaPlayer/mpmusicplayercontrollerplaybackstatedidchangenotification.md)
+  Posted when the playback state changes programmatically or by user action.
+- [MPMusicPlayerControllerVolumeDidChangeNotification](../../MediaPlayer/mpmusicplayercontrollervolumedidchangenotification.md)
+  Posted when the audio playback volume for the music player has changed.
+- [MPMovieDurationAvailableNotification](../../MediaPlayer/mpmoviedurationavailablenotification.md)
+  Posted when the duration of a movie has been determined. There is no `userInfo` dictionary.
+- [MPMovieMediaTypesAvailableNotification](../../MediaPlayer/mpmoviemediatypesavailablenotification.md)
+  Posted when the available media types in a movie are determined. There is no `userInfo` dictionary.
+- [MPMovieNaturalSizeAvailableNotification](../../MediaPlayer/mpmovienaturalsizeavailablenotification.md)
+  Posted when the natural frame size of a movie is first determined or subsequently changes. There is no `userInfo` dictionary.
+- [MPMoviePlayerDidEnterFullscreenNotification](../../MediaPlayer/mpmovieplayerdidenterfullscreennotification.md)
+  Posted when a movie player has entered full-screen mode. There is no `userInfo` dictionary.
+- [MPMoviePlayerDidExitFullscreenNotification](../../MediaPlayer/mpmovieplayerdidexitfullscreennotification.md)
+  Posted when a movie player has exited full-screen mode. There is no `userInfo` dictionary.
+- [MPMoviePlayerIsAirPlayVideoActiveDidChangeNotification](../../MediaPlayer/mpmovieplayerisairplayvideoactivedidchangenotification.md)
+  Posted when a movie player has started or ended playing a movie via AirPlay. There is no `userInfo` dictionary.
+- [MPMoviePlayerLoadStateDidChangeNotification](../../MediaPlayer/mpmovieplayerloadstatedidchangenotification.md)
+  Posted when a movie player’s network buffering state has changed. There is no `userInfo` dictionary.
+- [MPMoviePlayerNowPlayingMovieDidChangeNotification](../../MediaPlayer/mpmovieplayernowplayingmoviedidchangenotification.md)
+  Posted when the currently playing movie has changed. There is no `userInfo` dictionary.
+- [MPMoviePlayerPlaybackDidFinishNotification](../../MediaPlayer/mpmovieplayerplaybackdidfinishnotification.md)
+  Posted when a movie has finished playing. The `userInfo` dictionary of this notification contains the [`MPMoviePlayerPlaybackDidFinishReasonUserInfoKey`](../../MediaPlayer/mpmovieplayerplaybackdidfinishreasonuserinfokey.md) key, which indicates the reason that playback finished. This notification is also sent when playback fails because of an error.
+- [MPMoviePlayerPlaybackStateDidChangeNotification](../../MediaPlayer/mpmovieplayerplaybackstatedidchangenotification.md)
+  Posted when a movie player’s playback state has changed. There is no `userInfo` dictionary.
+- [MPMoviePlayerReadyForDisplayDidChangeNotification](../../MediaPlayer/mpmovieplayerreadyfordisplaydidchangenotification.md)
+  Posted when the ready for display state changes.
+- [MPMoviePlayerScalingModeDidChangeNotification](../../MediaPlayer/mpmovieplayerscalingmodedidchangenotification.md)
+  Posted when the scaling mode of a movie player has changed. There is no `userInfo` dictionary.
+- [MPMoviePlayerThumbnailImageRequestDidFinishNotification](../../MediaPlayer/mpmovieplayerthumbnailimagerequestdidfinishnotification.md)
+  Posted when a request to capture a thumbnail from a movie has finished whether the request succeeded or failed. Upon successful capture of a thumbnail, the `userInfo` dictionary contains values for the following keys:
+- [MPMoviePlayerTimedMetadataUpdatedNotification](../../MediaPlayer/mpmovieplayertimedmetadataupdatednotification.md)
+  Posted when new timed metadata arrives.
+- [MPMoviePlayerWillEnterFullscreenNotification](../../MediaPlayer/mpmovieplayerwillenterfullscreennotification.md)
+  Posted when a movie player is about to enter full-screen mode.
+- [MPMoviePlayerWillExitFullscreenNotification](../../MediaPlayer/mpmovieplayerwillexitfullscreennotification.md)
+  Posted when a movie player is about to exit full-screen mode.
+- [MPMovieSourceTypeAvailableNotification](../../MediaPlayer/mpmoviesourcetypeavailablenotification.md)
+  Posted when the source type of a movie was previously unknown and is newly available. There is no `userInfo` dictionary.
+- [MPVolumeViewWirelessRouteActiveDidChangeNotification](../../MediaPlayer/mpvolumeviewwirelessrouteactivedidchangenotification.md)
+  Indicates the active wireless route changed.
+- [MPVolumeViewWirelessRoutesAvailableDidChangeNotification](../../MediaPlayer/mpvolumeviewwirelessroutesavailabledidchangenotification.md)
+  Indicates the available wireless routes changed.
 ### MessageUI
 - [static let MFMessageComposeViewControllerTextMessageAvailabilityDidChange: NSNotification.Name](./name-swift.struct/mfmessagecomposeviewcontrollertextmessageavailabilitydidchange.md)
   Posted when the current device’s ability to send text messages changes.
@@ -747,6 +953,15 @@ typedef NSString * NSNotificationName;
 - [static let NEDNSProxyConfigurationDidChange: NSNotification.Name](./name-swift.struct/nednsproxyconfigurationdidchange.md)
   A notification that is posted when the DNS proxy configuration changes.
 - [static let NEDNSSettingsConfigurationDidChange: NSNotification.Name](./name-swift.struct/nednssettingsconfigurationdidchange.md)
+- [NEFilterConfigurationDidChangeNotification](../../NetworkExtension/nefilterconfigurationdidchangenotification.md)
+  Posted after the filter configuration stored in the Network Extension preferences changes.
+- [NEVPNConfigurationChangeNotification](../../NetworkExtension/nevpnconfigurationchangenotification.md)
+  Posted after the VPN configuration stored in the Network Extension preferences changes.
+- [NEVPNStatusDidChangeNotification](../../NetworkExtension/nevpnstatusdidchangenotification.md)
+  Posted when the status of the VPN connection changes.
+- [NEDNSProxyConfigurationDidChangeNotification](../../NetworkExtension/nednsproxyconfigurationdidchangenotification.md)
+  A notification that is posted when the DNS proxy configuration changes.
+- [NEDNSSettingsConfigurationDidChangeNotification](../../NetworkExtension/nednssettingsconfigurationdidchangenotification.md)
 ### PassKit
 - [static let PKPassLibraryDidChange: PKPassLibraryNotificationName](../../PassKit/pkpasslibrarynotificationname/pkpasslibrarydidchange.md)
   A notification that PassKit posts when the pass library changes.
@@ -798,6 +1013,51 @@ typedef NSString * NSNotificationName;
   A notification posted when the current selection has changed.
 - [static let PDFViewVisiblePagesChanged: NSNotification.Name](./name-swift.struct/pdfviewvisiblepageschanged.md)
   A notification posted when the visible pages have changed.
+- [PDFDocumentDidBeginFindNotification](../../PDFKit/pdfdocumentdidbeginfindnotification.md)
+  A notification that the [`beginFindString(_:withOptions:)`](../../PDFKit/pdfdocument/beginfindstring%28_,withoptions%29.md) or [`findString(_:withOptions:)`](../../PDFKit/pdfdocument/findstring%28_,withoptions%29.md) method begins finding.
+- [PDFDocumentDidBeginPageFindNotification](../../PDFKit/pdfdocumentdidbeginpagefindnotification.md)
+  A notification that a find operation begins working on a new page of a document.
+- [PDFDocumentDidBeginPageWriteNotification](../../PDFKit/pdfdocumentdidbeginpagewritenotification.md)
+  A notification that a write operation begins working on a page in a document.
+- [PDFDocumentDidBeginWriteNotification](../../PDFKit/pdfdocumentdidbeginwritenotification.md)
+  A notification that a write operation begins working on a document.
+- [PDFDocumentDidEndFindNotification](../../PDFKit/pdfdocumentdidendfindnotification.md)
+  A notification that the [`beginFindString(_:withOptions:)`](../../PDFKit/pdfdocument/beginfindstring%28_,withoptions%29.md) or [`findString(_:withOptions:)`](../../PDFKit/pdfdocument/findstring%28_,withoptions%29.md) method returns.
+- [PDFDocumentDidEndPageFindNotification](../../PDFKit/pdfdocumentdidendpagefindnotification.md)
+  A notification that a find operation finishes working on a page in a document.
+- [PDFDocumentDidEndPageWriteNotification](../../PDFKit/pdfdocumentdidendpagewritenotification.md)
+  A notification that a write operation finishes working on a page in a document.
+- [PDFDocumentDidEndWriteNotification](../../PDFKit/pdfdocumentdidendwritenotification.md)
+  A notification that a write operation finishes working on a document.
+- [PDFDocumentDidFindMatchNotification](../../PDFKit/pdfdocumentdidfindmatchnotification.md)
+  A notification that a string match is found in a document.
+- [PDFDocumentDidUnlockNotification](../../PDFKit/pdfdocumentdidunlocknotification.md)
+  A notification that a document unlocks after a [`unlock(withPassword:)`](../../PDFKit/pdfdocument/unlock%28withpassword%29.md) message.
+- [PDFThumbnailViewDocumentEditedNotification](../../PDFKit/pdfthumbnailviewdocumenteditednotification.md)
+- [PDFViewAnnotationHitNotification](../../PDFKit/pdfviewannotationhitnotification.md)
+  A notification posted when the user clicks on an annotation.
+- [PDFViewAnnotationWillHitNotification](../../PDFKit/pdfviewannotationwillhitnotification.md)
+  A notification posted before the user clicks an annotation.
+- [PDFViewChangedHistoryNotification](../../PDFKit/pdfviewchangedhistorynotification.md)
+  A notification posted when the page history changes.
+- [PDFViewCopyPermissionNotification](../../PDFKit/pdfviewcopypermissionnotification.md)
+  A notification posted when the user attempts to copy to the pasteboard without the appropriate permissions.
+- [PDFViewDisplayBoxChangedNotification](../../PDFKit/pdfviewdisplayboxchangednotification.md)
+  A notification posted when the display box has changed.
+- [PDFViewDisplayModeChangedNotification](../../PDFKit/pdfviewdisplaymodechangednotification.md)
+  A notification posted when the display mode has changed.
+- [PDFViewDocumentChangedNotification](../../PDFKit/pdfviewdocumentchangednotification.md)
+  A notification posted when a new document is associated with the view.
+- [PDFViewPageChangedNotification](../../PDFKit/pdfviewpagechangednotification.md)
+  A notification posted when a new page becomes the current page.
+- [PDFViewPrintPermissionNotification](../../PDFKit/pdfviewprintpermissionnotification.md)
+  A notification posted when the user attempts to print without the appropriate permissions.
+- [PDFViewScaleChangedNotification](../../PDFKit/pdfviewscalechangednotification.md)
+  A notification posted when the scale factor changes.
+- [PDFViewSelectionChangedNotification](../../PDFKit/pdfviewselectionchangednotification.md)
+  A notification posted when the current selection has changed.
+- [PDFViewVisiblePagesChangedNotification](../../PDFKit/pdfviewvisiblepageschangednotification.md)
+  A notification posted when the visible pages have changed.
 ### PreferencePanes
 - [static let NSPreferencePaneCancelUnselect: NSNotification.Name](./name-swift.struct/nspreferencepanecancelunselect.md)
   Notifies observers that the preference pane should not be deselected.
@@ -808,6 +1068,16 @@ typedef NSString * NSNotificationName;
 - [static let NSPreferencePaneUpdateHelpMenu: NSNotification.Name](./name-swift.struct/nspreferencepaneupdatehelpmenu.md)
   Notifies observers that your help menu content changed.
 - [static let NSPreferencePrefPaneIsAvailable: NSNotification.Name](./name-swift.struct/nspreferenceprefpaneisavailable.md)
+  Notifies observers that the system preferences app is available to display your preferences.
+- [NSPreferencePaneCancelUnselectNotification](../../PreferencePanes/nspreferencepanecancelunselectnotification.md)
+  Notifies observers that the preference pane should not be deselected.
+- [NSPreferencePaneDoUnselectNotification](../../PreferencePanes/nspreferencepanedounselectnotification.md)
+  Notifies observers that the preference pane may be deselected.
+- [NSPreferencePaneSwitchToPaneNotification](../../PreferencePanes/nspreferencepaneswitchtopanenotification.md)
+  Notifies observers that the user selected a new preference pane.
+- [NSPreferencePaneUpdateHelpMenuNotification](../../PreferencePanes/nspreferencepaneupdatehelpmenunotification.md)
+  Notifies observers that your help menu content changed.
+- [NSPreferencePrefPaneIsAvailableNotification](../../PreferencePanes/nspreferenceprefpaneisavailablenotification.md)
   Notifies observers that the system preferences app is available to display your preferences.
 ### Quartz
 - [static let IKFilterBrowserFilterDoubleClick: NSNotification.Name](./name-swift.struct/ikfilterbrowserfilterdoubleclick.md)
@@ -830,6 +1100,26 @@ typedef NSString * NSNotificationName;
   Posted when the view starts rendering.
 - [static let QCViewDidStopRendering: NSNotification.Name](./name-swift.struct/qcviewdidstoprendering.md)
   Posted when the view stops rendering.
+- [IKFilterBrowserFilterDoubleClickNotification](../../Quartz/ikfilterbrowserfilterdoubleclicknotification.md)
+  Posted when the user double-clicks a filter in the filter browser.
+- [IKFilterBrowserFilterSelectedNotification](../../Quartz/ikfilterbrowserfilterselectednotification.md)
+  Posted when the user clicks a filter name in the filter browser.
+- [IKFilterBrowserWillPreviewFilterNotification](../../Quartz/ikfilterbrowserwillpreviewfilternotification.md)
+  Posted before showing a filter preview, allowing an application to set the parameters of a filter.
+- [kQuartzFilterManagerDidAddFilterNotification](../../Quartz/kquartzfiltermanagerdidaddfilternotification.md)
+- [kQuartzFilterManagerDidModifyFilterNotification](../../Quartz/kquartzfiltermanagerdidmodifyfilternotification.md)
+- [kQuartzFilterManagerDidRemoveFilterNotification](../../Quartz/kquartzfiltermanagerdidremovefilternotification.md)
+- [kQuartzFilterManagerDidSelectFilterNotification](../../Quartz/kquartzfiltermanagerdidselectfilternotification.md)
+- [QCCompositionPickerPanelDidSelectCompositionNotification](../../Quartz/qccompositionpickerpaneldidselectcompositionnotification.md)
+  Posted when the user chooses a composition.
+- [QCCompositionPickerViewDidSelectCompositionNotification](../../Quartz/qccompositionpickerviewdidselectcompositionnotification.md)
+  Posted when the user selects a composition in the picker view.
+- [QCCompositionRepositoryDidUpdateNotification](../../Quartz/qccompositionrepositorydidupdatenotification.md)
+  Posted whenever the list of compositions in the composition repository is updated.
+- [QCViewDidStartRenderingNotification](../../Quartz/qcviewdidstartrenderingnotification.md)
+  Posted when the view starts rendering.
+- [QCViewDidStopRenderingNotification](../../Quartz/qcviewdidstoprenderingnotification.md)
+  Posted when the view stops rendering.
 ### StoreKit
 - [static let SKCloudServiceCapabilitiesDidChange: NSNotification.Name](./name-swift.struct/skcloudservicecapabilitiesdidchange.md)
   A notification name for indicating a change in the capabilities associated with the Music library on the device.
@@ -837,8 +1127,16 @@ typedef NSString * NSNotificationName;
   A notification name for indicating a change in the storefront identifier associated with the device.
 - [static let SKStorefrontCountryCodeDidChange: NSNotification.Name](./name-swift.struct/skstorefrontcountrycodedidchange.md)
   A notification name for indicating a change in the storefront country or region code associated with the device.
+- [SKCloudServiceCapabilitiesDidChangeNotification](../../StoreKit/skcloudservicecapabilitiesdidchangenotification.md)
+  A notification name for indicating a change in the capabilities associated with the Music library on the device.
+- [SKStorefrontIdentifierDidChangeNotification](../../StoreKit/skstorefrontidentifierdidchangenotification.md)
+  A notification name for indicating a change in the storefront identifier associated with the device.
+- [SKStorefrontCountryCodeDidChangeNotification](../../StoreKit/skstorefrontcountrycodedidchangenotification.md)
+  A notification name for indicating a change in the storefront country or region code associated with the device.
 ### TV Services
 - [static let TVTopShelfItemsDidChange: NSNotification.Name](./name-swift.struct/tvtopshelfitemsdidchange.md)
+  A notification to post when your app’s Top Shelf content has changed.
+- [TVTopShelfItemsDidChangeNotification](../../TVServices/tvtopshelfitemsdidchangenotification.md)
   A notification to post when your app’s Top Shelf content has changed.
 ### UIKit
 - [static let announcementDidFinishNotification: NSNotification.Name](../../UIKit/uiaccessibility/announcementdidfinishnotification.md)
@@ -988,6 +1286,14 @@ typedef NSString * NSNotificationName;
   A notification that the item failed to play to its end.
 - [static let WKAudioFilePlayerItemTimeJumped: NSNotification.Name](./name-swift.struct/wkaudiofileplayeritemtimejumped.md)
   A notification that the item’s current time has changed discontinuously.
+- [WKAccessibilityReduceMotionStatusDidChangeNotification](../../WatchKit/wkaccessibilityreducemotionstatusdidchangenotification.md)
+  Tells the interface controller that the reduce motion status has changed.
+- [WKAudioFilePlayerItemDidPlayToEndTimeNotification](../../WatchKit/wkaudiofileplayeritemdidplaytoendtimenotification.md)
+  A notification that the item has played successfully to its end.
+- [WKAudioFilePlayerItemFailedToPlayToEndTimeNotification](../../WatchKit/wkaudiofileplayeritemfailedtoplaytoendtimenotification.md)
+  A notification that the item failed to play to its end.
+- [WKAudioFilePlayerItemTimeJumpedNotification](../../WatchKit/wkaudiofileplayeritemtimejumpednotification.md)
+  A notification that the item’s current time has changed discontinuously.
 ### WebKit
 - [static let WebHistoryAllItemsRemoved: NSNotification.Name](./name-swift.struct/webhistoryallitemsremoved.md)
   Posted when all history items have been removed from the web history.
@@ -1019,8 +1325,40 @@ typedef NSString * NSNotificationName;
   Posted by a WebView object when the load has finished.
 - [static let WebViewProgressStarted: NSNotification.Name](./name-swift.struct/webviewprogressstarted.md)
   Posted by a WebView object when a load begins, including a load that is initiated in a subframe.
+- [WebHistoryAllItemsRemovedNotification](../../WebKit/webhistoryallitemsremovednotification.md)
+  Posted when all history items have been removed from the web history.
+- [WebHistoryItemChangedNotification](../../WebKit/webhistoryitemchangednotification.md)
+  Posted by a WebHistoryItem object when the value of the history item’s title, alternate title, URL strings, or last visited interval changes.
+- [WebHistoryItemsAddedNotification](../../WebKit/webhistoryitemsaddednotification.md)
+  Posted when history items have been added to a web history.
+- [WebHistoryItemsRemovedNotification](../../WebKit/webhistoryitemsremovednotification.md)
+  Posted when items have been removed from the web history.
+- [WebHistoryLoadedNotification](../../WebKit/webhistoryloadednotification.md)
+  Posted when web history items have been loaded from a URL.
+- [WebHistorySavedNotification](../../WebKit/webhistorysavednotification.md)
+  Posted when web history items have been saved to a URL.
+- [WebPreferencesChangedNotification](../../WebKit/webpreferenceschangednotification.md)
+  Posted when the web preference settings are changed.
+- [WebViewDidBeginEditingNotification](../../WebKit/webviewdidbegineditingnotification.md)
+  Posted when a web view begins any operation that changes its contents in response to user editing.
+- [WebViewDidChangeNotification](../../WebKit/webviewdidchangenotification.md)
+  Posted when a web view performs any operation that changes its contents in response to user editing.
+- [WebViewDidChangeSelectionNotification](../../WebKit/webviewdidchangeselectionnotification.md)
+  Posted when a web view changes its typing selection.
+- [WebViewDidChangeTypingStyleNotification](../../WebKit/webviewdidchangetypingstylenotification.md)
+  Posted when a web view changes its typing style.
+- [WebViewDidEndEditingNotification](../../WebKit/webviewdidendeditingnotification.md)
+  Posted when a web view ends any operation that changes its contents in response to user editing.
+- [WebViewProgressEstimateChangedNotification](../../WebKit/webviewprogressestimatechangednotification.md)
+  Posted by a WebView object when the estimated progress value of a load changes.
+- [WebViewProgressFinishedNotification](../../WebKit/webviewprogressfinishednotification.md)
+  Posted by a WebView object when the load has finished.
+- [WebViewProgressStartedNotification](../../WebKit/webviewprogressstartednotification.md)
+  Posted by a WebView object when a load begins, including a load that is initiated in a subframe.
 ### Accounts
 - [static let ACAccountStoreDidChange: NSNotification.Name](./name-swift.struct/acaccountstoredidchange.md)
+  Posted when the accounts managed by this account store changed in the database.
+- [ACAccountStoreDidChangeNotification](../../Accounts/acaccountstoredidchangenotification.md)
   Posted when the accounts managed by this account store changed in the database.
 ### Initializers
 - [init(String)](./name-swift.struct/init%28_%29.md)
@@ -1071,6 +1409,9 @@ typedef NSString * NSNotificationName;
 - [static let NSApplicationShouldEndSuppressingHighDynamicRangeContent: NSNotification.Name](./name-swift.struct/nsapplicationshouldendsuppressinghighdynamicrangecontent.md)
 - [static let NSProcessInfoPerformanceProfileDidChange: NSNotification.Name](./name-swift.struct/nsprocessinfoperformanceprofiledidchange.md)
 - [static let NSSpellCheckerDidChangeAutomaticInlinePrediction: NSNotification.Name](./name-swift.struct/nsspellcheckerdidchangeautomaticinlineprediction.md)
+### AssetsLibrary
+- [ALAssetsLibraryChangedNotification](../../AssetsLibrary/alassetslibrarychangednotification.md)
+  Sent when the contents of the assets library have changed from under the app that is using the data.
 
 ## Relationships
 
@@ -1090,6 +1431,10 @@ typedef NSString * NSNotificationName;
   Returns a new notification object with a specified name and object.
 - [init(name: NSNotification.Name, object: Any?, userInfo: [AnyHashable : Any]?)](./init%28name,object,userinfo%29.md)
   Initializes a notification with a specified name, object, and user information.
+- [- init](./init.md)
+  Initializes an empty notification.
+- [+ notificationWithName:object:userInfo:](./notificationwithname_object_userinfo_.md)
+  Returns a notification object with a specified name, object, and user information.
 
 
 ---

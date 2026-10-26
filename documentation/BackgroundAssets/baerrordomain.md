@@ -30,6 +30,12 @@ extern NSString * const BAErrorDomain;
 - [enum BAErrorCode](./baerrorcode.md)
 - [AssetPackManager.LocalAvailabilityError](./assetpackmanager/localavailabilityerror.md)
   An error that provides information about local asset pack availability, distinguishing between successes and failures.
+- [BAAssetPackIdentifierErrorKey](./baassetpackidentifiererrorkey.md)
+  The `-[NSError userInfo]` key for an asset pack’s identifier.
+- [BAManagedErrorDomain](./bamanagederrordomain.md)
+  The error domain for managed asset packs.
+- [BAManagedErrorCode](./bamanagederrorcode.md)
+  An error code for a managed asset pack.
 
 
 ---

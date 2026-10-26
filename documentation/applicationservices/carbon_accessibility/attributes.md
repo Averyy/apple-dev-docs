@@ -168,6 +168,8 @@ See the “Roles and Associated Attributes” appendix in [Accessibility Program
 - [var kAXFocusedApplicationAttribute: String](../kaxfocusedapplicationattribute.md)
 - [var kAXInsertionPointLineNumberAttribute: String](../kaxinsertionpointlinenumberattribute.md)
   The line number of the insertion point in the text associated with this accessibility object.
+- [kAXFocusedUIElemenAttribute](./attributes/kaxfocuseduielemenattribute.md)
+  The accessibility object that represents the currently focused user interface element in this application. This attribute is recommended for all application-level accessibility objects.
 
 ## See Also
 

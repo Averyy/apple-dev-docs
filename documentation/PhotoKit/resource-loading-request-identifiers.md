@@ -3,18 +3,18 @@
 **Framework**: PhotoKit  
 **Role**: API Collection
 
-Special values for the [`PHAssetResourceDataRequestID`](https://developer.apple.com/documentation/photos/phassetresourcedatarequestid) identifier that are returned by asynchronous requests.
+Special values for the [`PHAssetResourceDataRequestID`](../Photos/phassetresourcedatarequestid.md) identifier that are returned by asynchronous requests.
 
 ## Topics
 
 ### Constants
-- [var PHInvalidAssetResourceDataRequestID: PHAssetResourceDataRequestID](https://developer.apple.com/documentation/photos/phinvalidassetresourcedatarequestid)
+- [var PHInvalidAssetResourceDataRequestID: PHAssetResourceDataRequestID](../Photos/phinvalidassetresourcedatarequestid.md)
   The asynchronous resource loading request cannot be canceled.
 
 ## See Also
 
 ### Constants
-- [typealias PHAssetResourceDataRequestID](https://developer.apple.com/documentation/photos/phassetresourcedatarequestid)
+- [typealias PHAssetResourceDataRequestID](../Photos/phassetresourcedatarequestid.md)
   A numeric identifier for an asynchronous asset resource loading request.
 
 

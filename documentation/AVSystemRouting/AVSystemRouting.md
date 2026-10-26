@@ -38,10 +38,18 @@ AVSystemRouting is the app-side counterpart to the [Media Device](../MediaDevice
   An object that manages interaction with system routes.
 - [protocol AVSystemRouteControllerObserver](./avsystemroutecontrollerobserver-5syvg.md)
   A protocol for observers of a system routing controller.
+- [AVSystemRouteController](./avsystemroutecontroller-4teia.md)
+  An object that manages interaction with system routes.
+- [AVSystemRouteControllerObserver](./avsystemroutecontrollerobserver-7p7a5.md)
+  A protocol for observers of a system routing controller.
 ### Routing events
 - [class AVSystemRouteEvent](./avsystemrouteevent-2elr5.md)
   An object that represents an event that occurs on a system route.
 - [AVSystemRouteEvent.Reason](./avsystemrouteevent-2elr5/reason-swift.enum.md)
+  Values that indicate the reason for a routing event.
+- [AVSystemRouteEvent](./avsystemrouteevent-1r0st.md)
+  An object that represents an event that occurs on a system route.
+- [AVSystemRouteEventReason](./avsystemrouteeventreason.md)
   Values that indicate the reason for a routing event.
 ### Routes and sessions
 - [class AVSystemRoute](./avsystemroute-5s2um.md)
@@ -50,6 +58,12 @@ AVSystemRouting is the app-side counterpart to the [Media Device](../MediaDevice
   An object that manages a single media playback session on a remote device.
 - [AVSystemRoute.LaunchMode](./avsystemroute-5s2um/launchmode.md)
   The mode that determines how media playback launches on a remote device.
+- [AVSystemRoute](./avsystemroute-9kkj3.md)
+  An active media route to a remote device that manages connection and communication for media playback and data exchange.
+- [AVSystemRouteSession](./avsystemroutesession-5i6j6.md)
+  An object that manages a single media playback session on a remote device.
+- [AVSystemRouteLaunchMode](./avsystemroutelaunchmode.md)
+  The mode that determines how media playback launches on a remote device.
 ### Playback and communication
 - [class AVSystemRouteMediaSession](./avsystemroutemediasession-98ioq.md)
   An object that provides playback controls and a data channel for a session running on a remote device.
@@ -57,10 +71,23 @@ AVSystemRouting is the app-side counterpart to the [Media Device](../MediaDevice
   An object that manages bidirectional data communication with a remote application.
 - [protocol AVSystemRouteDataDelegate](./avsystemroutedatadelegate-7vt4b.md)
   A protocol for handling data from a remote application.
+- [AVSystemRouteMediaSession](./avsystemroutemediasession-4mo0j.md)
+  An object that provides playback controls and a data channel for a session running on a remote device.
+- [AVSystemRouteDataDelegate](./avsystemroutedatadelegate-3zbcm.md)
+  A protocol for handling data from a remote application.
 ### Errors
 - [struct AVSystemRoutingError](./avsystemroutingerror-7miya.md)
   An error that an AVSystemRouting operation throws when it fails.
 - [struct AVSystemRoutingError](./avsystemroutingerror-19zkj.md)
+### Classes
+- [AVSystemRouteDataChannel](./avsystemroutedatachannel.md)
+  An object that manages bidirectional data communication with a remote application.
+### Variables
+- [AVSystemRoutingErrorDomain](./avsystemroutingerrordomain.md)
+  The error domain for AVSystemRouting errors.
+### Enumerations
+- [AVSystemRoutingError](./avsystemroutingerror-19zkj/code.md)
+  An error that an AVSystemRouting operation throws when it fails.
 
 
 ---

@@ -43,6 +43,12 @@ typedef struct AVCaptionDimension { ... } AVCaptionDimension;
 - [BitwiseCopyable](../Swift/bitwisecopyable.md)
 - [Sendable](../Swift/sendable.md)
 
+## See Also
+
+### Accessing dimensions
+- [AVCaptionDimensionMake](./avcaptiondimensionmake.md)
+  Creates a caption dimension with a value and unit type.
+
 
 ---
 

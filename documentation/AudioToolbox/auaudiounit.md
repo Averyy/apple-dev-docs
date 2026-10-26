@@ -141,6 +141,12 @@ A host does not need to be aware of the concrete [`AUAudioUnit`](./auaudiounit.m
   Removes an observer block previously added to the render cycle.
 - [typealias AURenderObserver](./aurenderobserver.md)
   A block called when an audio unit renders audio.
+- [renderContextObserver](./auaudiounit/rendercontextobserver.md)
+  The block that the system calls when the rendering context changes.
+- [AURenderContextObserver](./aurendercontextobserver.md)
+  A custom block that tells the audio unit which thread context to use for the next render cycle.
+- [AudioUnitRenderContext](./audiounitrendercontext.md)
+  A structure that contains thread context information for a real-time rendering operation.
 ### Messaging Channels
 - [func messageChannel(for: String) -> any AUMessageChannel](./auaudiounit/messagechannel%28for%29.md)
   Returns an object for bidirectional communication between an audio unit and its host.
@@ -159,6 +165,8 @@ A host does not need to be aware of the concrete [`AUAudioUnit`](./auaudiounit.m
   Determines whether an audio unit can process in place.
 - [var isRenderingOffline: Bool](./auaudiounit/isrenderingoffline.md)
   Communicates to an audio unit that it is rendering offline.
+- [osWorkgroup](./auaudiounit/osworkgroup.md)
+  The workgroup associated with the audio device underlying this Audio Unit.
 ### Describing the Audio Unit
 - [var componentDescription: AudioComponentDescription](./auaudiounit/componentdescription.md)
   The component description with which the audio unit was created.
@@ -257,6 +265,8 @@ A host does not need to be aware of the concrete [`AUAudioUnit`](./auaudiounit.m
 ### Instance Properties
 - [var intendedSpatialExperience: any SpatialAudioExperience](./auaudiounit/intendedspatialexperience-7uqrm.md)
   The AUAudioUnit’s intended spatial audio experience.
+- [intendedSpatialExperience](./auaudiounit/intendedspatialexperience-1dvhd.md)
+  The AUAudioUnit’s intended spatial experience.
 
 ## Relationships
 

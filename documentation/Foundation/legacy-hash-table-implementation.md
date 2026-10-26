@@ -62,6 +62,14 @@
   For sets of pointers, with transfer of ownership upon insertion.
 - [let NSPointerToStructHashCallBacks: NSHashTableCallBacks](./nspointertostructhashcallbacks.md)
   For sets of pointers to structs, when the first field of the struct is `int`-sized.
+- [NSIntHashCallBacks](./nsinthashcallbacks.md)
+  For sets of pointer-sized quantities or smaller (for example, `int`, `long`, or `unichar`).
+
+## See Also
+
+### Deprecated
+- [+ hashTableWithWeakObjects](./nshashtable/hashtablewithweakobjects.md)
+  Returns a new hash table for storing weak references to its contents.
 
 
 ---

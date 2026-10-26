@@ -41,6 +41,8 @@ To ensure that the underlying JavaScript value is retained as long as the manage
 ### Creating a Managed Value
 - [init!(value: JSValue!, andOwner: Any!)](./init%28value,andowner%29.md)
   Creates a managed value and associates it with an owner.
+- [+ managedValueWithValue:](./managedvaluewithvalue_.md)
+  Creates a managed value with the specified JavaScript value.
 
 
 ---

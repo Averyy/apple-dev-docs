@@ -28,6 +28,8 @@ class MPSCNNNeuronSigmoidNode
 
 ### Initializers
 - [init(source: MPSNNImageNode)](./mpscnnneuronsigmoidnode/init%28source%29.md)
+### Type Methods
+- [+ nodeWithSource:](./mpscnnneuronsigmoidnode/nodewithsource_.md)
 
 ## Relationships
 

@@ -32,6 +32,7 @@ You can OR the specified constants together to specify a movie.
 ### Constants
 - [static var video: MPMovieMediaTypeMask](./mpmoviemediatypemask/video.md)
 - [static var audio: MPMovieMediaTypeMask](./mpmoviemediatypemask/audio.md)
+- [MPMovieMediaTypeMaskNone](./mpmoviemediatypemask/mpmoviemediatypemasknone.md)
 ### Initializers
 - [init(rawValue: UInt)](./mpmoviemediatypemask/init%28rawvalue%29.md)
   Creates a new instance with the specified raw value.

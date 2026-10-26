@@ -12,6 +12,10 @@ Calculate the complex conjugate of the elements in a vector.
   Calculates the complex conjugate of the values in a single-precision vector.
 - [static func conjugate(DSPDoubleSplitComplex, count: Int, result: inout DSPDoubleSplitComplex)](./vdsp/conjugate%28_,count,result%29-89mrk.md)
   Calculates the complex conjugate of the values in a double-precision vector.
+- [vDSP_zvconj](./vdsp_zvconj.md)
+  Calculates the complex conjugate of the values in a single-precision vector using the specified stride.
+- [vDSP_zvconjD](./vdsp_zvconjd.md)
+  Calculates the complex conjugate of the values in a double-precision vector using the specified stride.
 
 ## See Also
 

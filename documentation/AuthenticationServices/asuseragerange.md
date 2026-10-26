@@ -53,6 +53,10 @@ enum ASUserAgeRange : NSInteger;
 - [ASCredentialIdentityStore.IdentityTypes](./ascredentialidentitystore/identitytypes.md)
   The defined identity types for use in retrieving credentials.
 - [enum ASPublicKeyCredentialClientDataCrossOriginValue](./aspublickeycredentialclientdatacrossoriginvalue.md)
+- [ASAuthorizationPublicKeyCredentialLargeBlobAssertionOperation](./asauthorizationpublickeycredentiallargeblobassertionoperation.md)
+  A type that represents the operation of the large blob assertion.
+- [ASAuthorizationPublicKeyCredentialLargeBlobSupportRequirement](./asauthorizationpublickeycredentiallargeblobsupportrequirement.md)
+  An enumeration of large binary object support requirement values.
 
 
 ---

@@ -94,6 +94,22 @@ struct SharingExample: App {
 
 With this change in place, whenever the user accepts a CloudKit share invitation, SwiftUI notifies the active scene’s delegate where you can process the accepted invitation accordingly.
 
+## See Also
+
+### Sharing Objects
+- [- acceptShareInvitationsFromMetadata:intoPersistentStore:completion:](./nspersistentcloudkitcontainer/acceptshareinvitationsfrommetadata_intopersistentstore_completion_.md)
+  Accepts one or more invitations to participate in sharing using the specified metadata.
+- [- fetchParticipantsMatchingLookupInfos:intoPersistentStore:completion:](./nspersistentcloudkitcontainer/fetchparticipantsmatchinglookupinfos_intopersistentstore_completion_.md)
+  Fetches all participants that match the specified critieria.
+- [- fetchSharesInPersistentStore:error:](./nspersistentcloudkitcontainer/fetchsharesinpersistentstore_error_.md)
+  Returns an array that contains all share records in the specified persistent store.
+- [- fetchSharesMatchingObjectIDs:error:](./nspersistentcloudkitcontainer/fetchsharesmatchingobjectids_error_.md)
+  Returns a dictionary that contains the share records that CloudKit associates with specified managed object IDs.
+- [- persistUpdatedShare:inPersistentStore:completion:](./nspersistentcloudkitcontainer/persistupdatedshare_inpersistentstore_completion_.md)
+  Saves the share record and schedules it for export to iCloud.
+- [- shareManagedObjects:toShare:completion:](./nspersistentcloudkitcontainer/sharemanagedobjects_toshare_completion_.md)
+  Associates the specified managed objects with a new or existing share record.
+
 
 ---
 

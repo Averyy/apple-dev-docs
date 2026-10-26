@@ -43,6 +43,11 @@ The `data` parameter of this method (an [`NSData`](../../Foundation/nsdata.md)) 
 ### Creating a Scene Source
 - [init?(url: URL, options: [SCNSceneSource.LoadingOption : Any]?)](./init%28url,options%29-rw0y.md)
   Initializes a scene source for reading the scene graph from a specified file.
+### Related Documentation
+- [+ sceneSourceWithURL:options:](./scenesourcewithurl_options_.md)
+  Creates a scene source that reads the scene graph from a specified file.
+- [+ sceneSourceWithData:options:](./scenesourcewithdata_options_.md)
+  Creates a scene source that reads the scene graph contained in an `NSData` object.
 
 
 ---

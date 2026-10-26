@@ -28,6 +28,8 @@ enum NSLineBreakStrategy : NSUInteger;
   The text system prohibits breaking between Hangul characters.
 - [static var standard: NSParagraphStyle.LineBreakStrategy](./linebreakstrategy-swift.struct/standard.md)
   The text system uses the same configuration of line-break strategies that it uses for standard UI labels.
+- [NSLineBreakStrategyNone](../nslinebreakstrategy/nslinebreakstrategynone.md)
+  The text system doesn’t use any line-break strategies.
 ### Creating a line-break style
 - [init(rawValue: UInt)](./linebreakstrategy-swift.struct/init%28rawvalue%29.md)
   Creates a line-break strategy with the specified raw value.

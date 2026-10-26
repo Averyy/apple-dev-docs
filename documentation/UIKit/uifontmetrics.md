@@ -41,6 +41,8 @@ Use a [`UIFontMetrics`](./uifontmetrics.md) object to support scalable custom fo
   The default font metrics object for content.
 - [UIFont.TextStyle](./uifont/textstyle.md)
   Constants that describe the preferred styles for fonts.
+- [+ metricsForTextStyle:](./uifontmetrics/metricsfortextstyle_.md)
+  Creates and returns a font metrics object for the specified text style.
 ### Creating Scaled Fonts
 - [Scaling fonts automatically](./scaling-fonts-automatically.md)
   Scale text in your interface automatically using Dynamic Type.

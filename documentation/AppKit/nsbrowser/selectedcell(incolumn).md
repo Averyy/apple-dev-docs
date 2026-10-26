@@ -45,6 +45,8 @@ The last (or lowest) selected cell. Returns `nil` if there is no selection.
   The index path of the item selected in the browser.
 - [var selectionIndexPaths: [IndexPath]](./selectionindexpaths.md)
   An array containing the index paths of all items selected in the browser.
+- [selectedCell](./selectedcell.md)
+  The last (rightmost and lowest) selected cell.
 
 
 ---

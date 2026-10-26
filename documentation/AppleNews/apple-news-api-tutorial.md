@@ -20,7 +20,7 @@ Before beginning the tutorial, make sure you have the following information and 
 - [Python](https://www.python.org). Ensure that you have `PIP` installed. `PIP` is automatically installed if you have Python 3.4+. See [Installing Python Modules](https://docs.python.org/3/installing/index.html#installing-index).
 - Python’s [Requests](https://pypi.org/project/requests/) library.
 
-If you are not familiar with Apple News API endpoints, see [Apple News API](https://developer.apple.com/documentation/applenewsapi) before you get started.
+If you are not familiar with Apple News API endpoints, see [Apple News API](../AppleNewsAPI/AppleNewsAPI.md) before you get started.
 
 ## Topics
 
@@ -35,7 +35,7 @@ If you are not familiar with Apple News API endpoints, see [Apple News API](http
 ## See Also
 
 ### Article Publication and Management
-- [Apple News API](https://developer.apple.com/documentation/applenewsapi)
+- [Apple News API](../AppleNewsAPI/AppleNewsAPI.md)
   Publish and manage Apple News Format articles.
 
 

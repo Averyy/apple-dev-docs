@@ -37,6 +37,7 @@ enum MLCLossType : int32_t;
 - [MLCLossType.softmaxCrossEntropy](./mlclosstype/softmaxcrossentropy.md)
 - [var debugDescription: String](./mlclosstype/debugdescription.md)
   A textual description of the loss type, suitable for debugging.
+- [MLCLossTypeCount](./mlclosstype/mlclosstypecount.md)
 ### Initializers
 - [init?(rawValue: Int32)](./mlclosstype/init%28rawvalue%29.md)
 

@@ -42,6 +42,10 @@ After Photos provides a change object, you use its methods to get a change detai
   Returns detailed change information for the specified asset or collection.
 - [func changeDetails<T>(for: PHFetchResult<T>) -> PHFetchResultChangeDetails<T>?](./phchange/changedetails%28for%29-2fne7.md)
   Returns detailed change information for a fetch result.
+- [- changeDetailsForObject:](./phchange/changedetailsforobject_.md)
+  Returns detailed change information for the specified asset or collection.
+- [- changeDetailsForFetchResult:](./phchange/changedetailsforfetchresult_.md)
+  Returns detailed change information for a fetch result.
 
 ## Relationships
 

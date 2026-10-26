@@ -25,6 +25,7 @@ typedef struct AUDistanceAttenuationData { ... } AUDistanceAttenuationData;
 - [init()](./audistanceattenuationdata/init%28%29.md)
 ### Instance Properties
 - [var inNumberOfPairs: UInt32](./audistanceattenuationdata/innumberofpairs.md)
+- [pairs](./audistanceattenuationdata/pairs.md)
 
 ## Relationships
 

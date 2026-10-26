@@ -51,6 +51,10 @@ enum NEVPNIKEv2DiffieHellmanGroup : NSInteger;
   Diffie Hellman group 32 (Curve 448).
 ### Initializers
 - [init?(rawValue: Int)](./nevpnikev2diffiehellmangroup/init%28rawvalue%29.md)
+### Enumeration Cases
+- [NEVPNIKEv2DiffieHellmanGroup1](./nevpnikev2diffiehellmangroup/nevpnikev2diffiehellmangroup1.md)
+- [NEVPNIKEv2DiffieHellmanGroup2](./nevpnikev2diffiehellmangroup/nevpnikev2diffiehellmangroup2.md)
+- [NEVPNIKEv2DiffieHellmanGroup5](./nevpnikev2diffiehellmangroup/nevpnikev2diffiehellmangroup5.md)
 
 ## Relationships
 
@@ -80,6 +84,8 @@ enum NEVPNIKEv2DiffieHellmanGroup : NSInteger;
   A list of the quantum-secure key exchange methods the Security Association uses.
 - [enum NEVPNIKEv2PostQuantumKeyExchangeMethod](./nevpnikev2postquantumkeyexchangemethod.md)
   Quantum-secure key exchange methods you use with IKEv2 servers.
+- [postQuantumKeyExchangeMethods](./nevpnikev2securityassociationparameters/postquantumkeyexchangemethods-56672.md)
+  A list of the quantum-secure key exchange methods the Security Association uses.
 
 
 ---

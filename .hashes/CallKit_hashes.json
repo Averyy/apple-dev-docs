@@ -15,6 +15,16 @@
       "file_path": "documentation/CallKit/callkit-enumerations.md",
       "hash": "ff9266f968e29594441d058a39f2c0a74ce50d75a63be57cd22973866b80d575"
     },
+    "https://developer.apple.com/documentation/callkit/cx_class_available": {
+      "etag": "\"117e-65d560869c302-df\"",
+      "file_path": "documentation/CallKit/cx_class_available.md",
+      "hash": "2bb768ec3672eafa7c78cf7d394cac6c4d63c03cbdeebd35f9f5c5695ccbd6e6"
+    },
+    "https://developer.apple.com/documentation/callkit/cx_extern": {
+      "etag": "\"1129-65d56086b3059-df\"",
+      "file_path": "documentation/CallKit/cx_extern.md",
+      "hash": "897964b5d276a0256d0adca540ce49fd049cf6aa26979a9b9da3dd9860b91063"
+    },
     "https://developer.apple.com/documentation/callkit/cxaction": {
       "etag": "\"998d-65d56086cd6c8-df\"",
       "file_path": "documentation/CallKit/cxaction.md",
@@ -79,6 +89,11 @@
       "etag": "\"305d-65d56086e43df-df\"",
       "file_path": "documentation/CallKit/cxcall/hasended.md",
       "hash": "80d22ad6fd93b7d2650b49b1cd9770360ad284967885b358990242025c560c3a"
+    },
+    "https://developer.apple.com/documentation/callkit/cxcall/isequaltocall:": {
+      "etag": "\"19ce-65d56086e43df-df\"",
+      "file_path": "documentation/CallKit/cxcall/isequaltocall_.md",
+      "hash": "81884737d0958c117df2a3ff224e3295576a5a2a578f2f6daed971f457a28535"
     },
     "https://developer.apple.com/documentation/callkit/cxcall/isonhold": {
       "etag": "\"310f-65d56086e43df-df\"",
@@ -890,6 +905,11 @@
       "file_path": "documentation/CallKit/cxhandle/init(type,value).md",
       "hash": "4bc84523b7fbd0960d30279066fc4d8a1c2dbb958e340e3611f3f8b82c9042f7"
     },
+    "https://developer.apple.com/documentation/callkit/cxhandle/isequaltohandle:": {
+      "etag": "\"1a56-65d560869c302-df\"",
+      "file_path": "documentation/CallKit/cxhandle/isequaltohandle_.md",
+      "hash": "e4292dd95a9168781459121ba8b51efe84818ff038387362a947784679377523"
+    },
     "https://developer.apple.com/documentation/callkit/cxhandle/type": {
       "etag": "\"2572-65d560869c302-df\"",
       "file_path": "documentation/CallKit/cxhandle/type.md",
@@ -1064,6 +1084,11 @@
       "etag": "\"29dc-65d56086cd6c8-df\"",
       "file_path": "documentation/CallKit/cxproviderconfiguration/ringtonesound.md",
       "hash": "5e97a09e3b5b63ec72f28dd04a6eabeabf0e9f68be43e421e8132fb9ab255d50"
+    },
+    "https://developer.apple.com/documentation/callkit/cxproviderconfiguration/supportedhandletypes-995uh": {
+      "etag": "\"2b26-65d56086cd6c8-df\"",
+      "file_path": "documentation/CallKit/cxproviderconfiguration/supportedhandletypes-995uh.md",
+      "hash": "bedaf1a4b47e849d457d7f9df8108fe42da7041d1df24ed21bfded2e15deb589"
     },
     "https://developer.apple.com/documentation/callkit/cxproviderconfiguration/supportedhandletypes-kd6i": {
       "etag": "\"35e7-65d56086cd6c8-df\"",
@@ -1410,6 +1435,16 @@
       "file_path": "documentation/CallKit/callkit-enumerations.md",
       "hash": "ff9266f968e29594441d058a39f2c0a74ce50d75a63be57cd22973866b80d575"
     },
+    "https://developer.apple.com/tutorials/data/documentation/callkit/cx_class_available.json": {
+      "etag": "\"117e-65d560869c302-df\"",
+      "file_path": "documentation/CallKit/cx_class_available.md",
+      "hash": "2bb768ec3672eafa7c78cf7d394cac6c4d63c03cbdeebd35f9f5c5695ccbd6e6"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/callkit/cx_extern.json": {
+      "etag": "\"1129-65d56086b3059-df\"",
+      "file_path": "documentation/CallKit/cx_extern.md",
+      "hash": "897964b5d276a0256d0adca540ce49fd049cf6aa26979a9b9da3dd9860b91063"
+    },
     "https://developer.apple.com/tutorials/data/documentation/callkit/cxaction.json": {
       "etag": "\"998d-65d56086cd6c8-df\"",
       "file_path": "documentation/CallKit/cxaction.md",
@@ -1474,6 +1509,11 @@
       "etag": "\"305d-65d56086e43df-df\"",
       "file_path": "documentation/CallKit/cxcall/hasended.md",
       "hash": "80d22ad6fd93b7d2650b49b1cd9770360ad284967885b358990242025c560c3a"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/callkit/cxcall/isequaltocall:.json": {
+      "etag": "\"19ce-65d56086e43df-df\"",
+      "file_path": "documentation/CallKit/cxcall/isequaltocall_.md",
+      "hash": "81884737d0958c117df2a3ff224e3295576a5a2a578f2f6daed971f457a28535"
     },
     "https://developer.apple.com/tutorials/data/documentation/callkit/cxcall/isonhold.json": {
       "etag": "\"310f-65d56086e43df-df\"",
@@ -2285,6 +2325,11 @@
       "file_path": "documentation/CallKit/cxhandle/init(type,value).md",
       "hash": "4bc84523b7fbd0960d30279066fc4d8a1c2dbb958e340e3611f3f8b82c9042f7"
     },
+    "https://developer.apple.com/tutorials/data/documentation/callkit/cxhandle/isequaltohandle:.json": {
+      "etag": "\"1a56-65d560869c302-df\"",
+      "file_path": "documentation/CallKit/cxhandle/isequaltohandle_.md",
+      "hash": "e4292dd95a9168781459121ba8b51efe84818ff038387362a947784679377523"
+    },
     "https://developer.apple.com/tutorials/data/documentation/callkit/cxhandle/type.json": {
       "etag": "\"2572-65d560869c302-df\"",
       "file_path": "documentation/CallKit/cxhandle/type.md",
@@ -2459,6 +2504,11 @@
       "etag": "\"29dc-65d56086cd6c8-df\"",
       "file_path": "documentation/CallKit/cxproviderconfiguration/ringtonesound.md",
       "hash": "5e97a09e3b5b63ec72f28dd04a6eabeabf0e9f68be43e421e8132fb9ab255d50"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/callkit/cxproviderconfiguration/supportedhandletypes-995uh.json": {
+      "etag": "\"2b26-65d56086cd6c8-df\"",
+      "file_path": "documentation/CallKit/cxproviderconfiguration/supportedhandletypes-995uh.md",
+      "hash": "bedaf1a4b47e849d457d7f9df8108fe42da7041d1df24ed21bfded2e15deb589"
     },
     "https://developer.apple.com/tutorials/data/documentation/callkit/cxproviderconfiguration/supportedhandletypes-kd6i.json": {
       "etag": "\"35e7-65d56086cd6c8-df\"",
@@ -2793,8 +2843,8 @@
   },
   "metadata": {
     "render": {
-      "version": 1
+      "version": 2
     },
-    "total_pages": 558
+    "total_pages": 568
   }
 }

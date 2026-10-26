@@ -102,6 +102,8 @@ The `NSRegularExpression` block object enumerator is the most general and flexib
 ### Creating data detector instances
 - [init(types: NSTextCheckingTypes) throws](./nsdatadetector/init%28types%29.md)
   Initializes and returns a data detector instance.
+- [+ dataDetectorWithTypes:error:](./nsdatadetector/datadetectorwithtypes_error_.md)
+  Creates and returns a new data detector instance.
 ### Getting the checking types
 - [var checkingTypes: NSTextCheckingTypes](./nsdatadetector/checkingtypes.md)
   Returns the checking types for the data detector.

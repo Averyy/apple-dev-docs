@@ -35,6 +35,10 @@ Use the [`ITLibrary`](./itlibrary.md) properties and methods to retrieve media i
   Initializes an instance of `ITLibrary` that can retrieve media entities.
 - [enum ITLibInitOptions](./itlibinitoptions.md)
   These constants describe initialization options for an iTunes library.
+- [+ libraryWithAPIVersion:error:](./itlibrary/librarywithapiversion_error_.md)
+  Creates and initializes an instance of `ITLibrary` that can retrieve media entities.
+- [+ libraryWithAPIVersion:options:error:](./itlibrary/librarywithapiversion_options_error_.md)
+  Creates and initializes an instance of ITLibrary that can retrieve media entities.
 ### Getting iTunes Library Info
 - [var allMediaItems: [ITLibMediaItem]](./itlibrary/allmediaitems.md)
   All the media items (tracks) in the iTunes library.

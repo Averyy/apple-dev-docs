@@ -43,6 +43,10 @@ By default, the sampler state at each index is `nil`.
   Assigns multiple sampler states to a range of entries in the fragment shader argument table.
 - [func setFragmentSamplerStates([(any MTLSamplerState)?], lodMinClamps: [Float], lodMaxClamps: [Float], range: Range<Int>)](./setfragmentsamplerstates%28_,lodminclamps,lodmaxclamps,range%29.md)
   Assigns multiple sampler states and clamp values to a range of entries in the fragment shader argument table.
+- [- setFragmentSamplerStates:withRange:](./setfragmentsamplerstates_withrange_.md)
+  Assigns multiple sampler states to a range of entries in the fragment shader argument table.
+- [- setFragmentSamplerStates:lodMinClamps:lodMaxClamps:withRange:](./setfragmentsamplerstates_lodminclamps_lodmaxclamps_withrange_.md)
+  Assigns multiple sampler states and clamp values to a range of entries in the fragment shader argument table.
 
 
 ---

@@ -30,6 +30,8 @@ For more information, see [Migrating ClockKit complications to WidgetKit](../Wid
 ### Creating static complication configurations
 - [init(kind: String, extensionBundleIdentifier: String)](./clkcomplicationstaticwidgetmigrationconfiguration/init%28kind,extensionbundleidentifier%29.md)
   Creates an object that describes a static watchOS complication in your WidgetKit extension.
+- [+ staticWidgetMigrationConfigurationWithKind:extensionBundleIdentifier:](./clkcomplicationstaticwidgetmigrationconfiguration/staticwidgetmigrationconfigurationwithkind_extensionbundleidentifier_.md)
+  Creates an object that describes a static watchOS complication in your WidgetKit extension.
 ### Accessing configuration properties
 - [var kind: String](./clkcomplicationstaticwidgetmigrationconfiguration/kind.md)
   A string that uniquely identifies a widget in your WidgetKit extension.

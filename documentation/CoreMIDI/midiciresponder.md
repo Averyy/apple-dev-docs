@@ -80,6 +80,8 @@ class MIDICIResponder
   A mapping of MIDI messages to specific sounds and synthesis behaviors, such as General MIDI, a drawbar organ, and so on.
 - [class MIDICIProfileState](./midiciprofilestate.md)
   An object that provides the enabled and disabled profiles for a MIDI channel or port on a device.
+- [MIDICIProfileStateList](./midiciprofilestatelist.md)
+  An array of profile state objects that describes the profile configuration for all channels of a reachable MIDI-CI node.
 
 
 ---

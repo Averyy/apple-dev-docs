@@ -44,6 +44,9 @@ An [`AVVideoComposition`](./avvideocomposition.md) object maintains an array of 
 ### Configuring source tracks
 - [var requiredSourceSampleDataTrackIDs: [NSNumber]](./avmutablevideocompositioninstruction/requiredsourcesampledatatrackids.md)
   The track identifiers of source sample data that the compositor requires to compose frames for the instruction.
+### Creating an instruction
+- [+ videoCompositionInstruction](./avmutablevideocompositioninstruction/videocompositioninstruction.md)
+  Returns a new mutable video composition instruction.
 
 ## Relationships
 

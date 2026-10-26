@@ -62,6 +62,8 @@ A [`CTCarrier`](./ctcarrier.md) object gives you information about the user’s 
   An object used to identify a cellular call and determine its state.
 - [class CTCallCenter](./ctcallcenter.md)
   An object that provides a list of current cellular calls, and provides the ability to respond to state changes for calls.
+### Reference
+- [Core Telephony Macros](./coretelephony-macros.md)
 
 
 ---

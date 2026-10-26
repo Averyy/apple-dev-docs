@@ -7,6 +7,7 @@
 
 ### Functions
 - [func dispatch_allow_send_signals(Int32) -> Int32](./dispatch_allow_send_signals%28_%29.md)
+- [dispatch_workloop_set_os_workgroup](./dispatch_workloop_set_os_workgroup.md)
 
 ## See Also
 

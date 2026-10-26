@@ -113,6 +113,18 @@ At runtime, [`ComputeGraphSimulation`](./computegraphsimulation.md) drives GPU e
 ### Functions
 - [void filteredLinesFromNeighbors(grid, positions, groupings, outputSegments, maxDistance)](./filteredlinesfromneighbors.md)
 - [void linesFromNeighbors(grid, positions, outputSegments, maxDistance)](./linesfromneighbors.md)
+### Macros
+- [PS_ALWAYS_INLINE](./ps_always_inline.md)
+- [PS_API](./ps_api.md)
+- [PS_AVAILABILE](./ps_availabile.md)
+- [PS_CONSTANT](./ps_constant.md)
+- [PS_DEPRECATED](./ps_deprecated.md)
+- [PS_DEVICE](./ps_device.md)
+- [PS_ENUM](./ps_enum.md)
+- [PS_INTERNAL](./ps_internal.md)
+- [PS_THREAD](./ps_thread.md)
+- [PS_THREADGROUP](./ps_threadgroup.md)
+- [ps_binding_type](./ps_binding_type.md)
 
 
 ---

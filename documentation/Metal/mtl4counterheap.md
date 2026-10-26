@@ -42,6 +42,10 @@ The data instances that this type stores correspond to the [`MTL4CounterHeapType
   Invalidates a range of entries in this counter heap.
 - [func resolveCounterRange(Range<Int>) throws -> Data?](./mtl4counterheap/resolvecounterrange%28_%29.md)
   Resolves heap data on the CPU timeline.
+- [- invalidateCounterRange:](./mtl4counterheap/invalidatecounterrange_.md)
+  Invalidates a range of entries in this counter heap.
+- [- resolveCounterRange:](./mtl4counterheap/resolvecounterrange_.md)
+  Resolves heap data on the CPU timeline.
 
 ## Relationships
 
@@ -79,6 +83,8 @@ The data instances that this type stores correspond to the [`MTL4CounterHeapType
   Represents options to configure a commit operation on a command queue.
 - [protocol MTL4CommitFeedback](./mtl4commitfeedback.md)
   Describes an object containing debug information from Metal to your app after completing a workload.
+- [MTL4CommitFeedbackHandler](./mtl4commitfeedbackhandler.md)
+  Defines the block signature for a callback Metal invokes to provide your app feedback after completing a workload.
 
 
 ---

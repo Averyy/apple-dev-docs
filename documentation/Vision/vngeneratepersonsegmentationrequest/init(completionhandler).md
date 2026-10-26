@@ -33,6 +33,8 @@ init(completionHandler: VNRequestCompletionHandler? = nil)
 ### Creating a Request
 - [init()](./init%28%29.md)
   Creates a generate person segmentation request.
+- [+ new](./new.md)
+  Returns a new generate person segmentation request.
 
 
 ---

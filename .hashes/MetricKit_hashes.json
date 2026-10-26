@@ -2050,6 +2050,11 @@
       "file_path": "documentation/MetricKit/mxmetadata/dictionaryrepresentation().md",
       "hash": "579722287a2b438946ad2fa4b2eac5077cafc0e39bbeae75e7bc4b949eae25c6"
     },
+    "https://developer.apple.com/documentation/metrickit/mxmetadata/dictionaryrepresentation-88u6f": {
+      "etag": "\"15ab-65d55d909c9e0-df\"",
+      "file_path": "documentation/MetricKit/mxmetadata/dictionaryrepresentation-88u6f.md",
+      "hash": "b1cb6ea1a885051b938cb31e0c888f6da30837dd0029df8d66dd15c296275561"
+    },
     "https://developer.apple.com/documentation/metrickit/mxmetadata/init(coder:)": {
       "etag": "\"16c0-65d55d909c9e0-df\"",
       "file_path": "documentation/MetricKit/mxmetadata/init(coder).md",
@@ -2099,6 +2104,11 @@
       "etag": "\"339c-65d55d91942b4-df\"",
       "file_path": "documentation/MetricKit/mxmetric/dictionaryrepresentation().md",
       "hash": "a0d36e92cd00b6d6b0e291b7b3149e2ba977064cf2bb9ebbf385b19f111ee43e"
+    },
+    "https://developer.apple.com/documentation/metrickit/mxmetric/dictionaryrepresentation-4728j": {
+      "etag": "\"1568-65d55d91942b4-df\"",
+      "file_path": "documentation/MetricKit/mxmetric/dictionaryrepresentation-4728j.md",
+      "hash": "09ac519c5fa87f5ed9de48b6009f399736159e346ffa0e482c85ae157306f2b3"
     },
     "https://developer.apple.com/documentation/metrickit/mxmetric/init(coder:)": {
       "etag": "\"1578-65d55d91942b4-df\"",
@@ -2220,6 +2230,11 @@
       "file_path": "documentation/MetricKit/mxmetricpayload/dictionaryrepresentation().md",
       "hash": "7eb7bd19d9d66501138088fc0dcd5d2b6355057b2cef42cbeca296f41711e04e"
     },
+    "https://developer.apple.com/documentation/metrickit/mxmetricpayload/dictionaryrepresentation-1nrgx": {
+      "etag": "\"15fd-65d55d91c2ecc-df\"",
+      "file_path": "documentation/MetricKit/mxmetricpayload/dictionaryrepresentation-1nrgx.md",
+      "hash": "5fdbbaf9fc00ea1dd84bd0aeb7ec8548d0409b17442f10b7f3e79caec40f8ac6"
+    },
     "https://developer.apple.com/documentation/metrickit/mxmetricpayload/diskiometrics": {
       "etag": "\"29b0-65d55d91d1b0c-df\"",
       "file_path": "documentation/MetricKit/mxmetricpayload/diskiometrics.md",
@@ -2325,10 +2340,25 @@
       "file_path": "documentation/MetricKit/mxsignpost(_,dso,log,name,signpostid,_,_).md",
       "hash": "f76350f66e83291c2a379cb5a789135fd279770a01d8cfdbbf11802b74ca6858"
     },
+    "https://developer.apple.com/documentation/metrickit/mxsignpostanimationintervalbegin": {
+      "etag": "\"1c70-65d55d9113690-df\"",
+      "file_path": "documentation/MetricKit/mxsignpostanimationintervalbegin.md",
+      "hash": "80a580f0a7f440d24a47a03ff1d6b4c963a891637b216ede34008b02c560309b"
+    },
     "https://developer.apple.com/documentation/metrickit/mxsignpostanimationintervalbegin(dso:log:name:signpostid:_:_:)": {
       "etag": "\"469f-65d55d90bfd27-df\"",
       "file_path": "documentation/MetricKit/mxsignpostanimationintervalbegin(dso,log,name,signpostid,_,_).md",
       "hash": "7e5fa6c45d03065141f81429bc69047b0966150d818cafe96694952690c18a5e"
+    },
+    "https://developer.apple.com/documentation/metrickit/mxsignposteventemit": {
+      "etag": "\"2a83-65d55d9113690-df\"",
+      "file_path": "documentation/MetricKit/mxsignposteventemit.md",
+      "hash": "8ae4c67f61f8d70713ac1af2d754a04cb087f9891501dde287eaedc869cf96e9"
+    },
+    "https://developer.apple.com/documentation/metrickit/mxsignpostintervalbegin": {
+      "etag": "\"2ae6-65d55d917bbed-df\"",
+      "file_path": "documentation/MetricKit/mxsignpostintervalbegin.md",
+      "hash": "e8b5e203f26a7e8b909d392a0867de004aeea2a0afc1849bc9770b09bb49336a"
     },
     "https://developer.apple.com/documentation/metrickit/mxsignpostintervaldata": {
       "etag": "\"7ac8-65d55d908146a-df\"",
@@ -2364,6 +2394,11 @@
       "etag": "\"16db-65d55d916243b-df\"",
       "file_path": "documentation/MetricKit/mxsignpostintervaldata/init(coder).md",
       "hash": "284509b3eb334f5b9e5fceaa6a59f83053d72d57ec50e3cf628af2580dc09424"
+    },
+    "https://developer.apple.com/documentation/metrickit/mxsignpostintervalend": {
+      "etag": "\"2ada-65d55d90bfd27-df\"",
+      "file_path": "documentation/MetricKit/mxsignpostintervalend.md",
+      "hash": "0f5cbb056b1ec11c0099311a5fb788b54b8ac8f0fbab2534c998a63291610b24"
     },
     "https://developer.apple.com/documentation/metrickit/mxsignpostmetric": {
       "etag": "\"7bf7-65d55d9113690-df\"",
@@ -4820,6 +4855,11 @@
       "file_path": "documentation/MetricKit/mxmetadata/dictionaryrepresentation().md",
       "hash": "579722287a2b438946ad2fa4b2eac5077cafc0e39bbeae75e7bc4b949eae25c6"
     },
+    "https://developer.apple.com/tutorials/data/documentation/metrickit/mxmetadata/dictionaryrepresentation-88u6f.json": {
+      "etag": "\"15ab-65d55d909c9e0-df\"",
+      "file_path": "documentation/MetricKit/mxmetadata/dictionaryrepresentation-88u6f.md",
+      "hash": "b1cb6ea1a885051b938cb31e0c888f6da30837dd0029df8d66dd15c296275561"
+    },
     "https://developer.apple.com/tutorials/data/documentation/metrickit/mxmetadata/init(coder:).json": {
       "etag": "\"16c0-65d55d909c9e0-df\"",
       "file_path": "documentation/MetricKit/mxmetadata/init(coder).md",
@@ -4869,6 +4909,11 @@
       "etag": "\"339c-65d55d91942b4-df\"",
       "file_path": "documentation/MetricKit/mxmetric/dictionaryrepresentation().md",
       "hash": "a0d36e92cd00b6d6b0e291b7b3149e2ba977064cf2bb9ebbf385b19f111ee43e"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/metrickit/mxmetric/dictionaryrepresentation-4728j.json": {
+      "etag": "\"1568-65d55d91942b4-df\"",
+      "file_path": "documentation/MetricKit/mxmetric/dictionaryrepresentation-4728j.md",
+      "hash": "09ac519c5fa87f5ed9de48b6009f399736159e346ffa0e482c85ae157306f2b3"
     },
     "https://developer.apple.com/tutorials/data/documentation/metrickit/mxmetric/init(coder:).json": {
       "etag": "\"1578-65d55d91942b4-df\"",
@@ -4990,6 +5035,11 @@
       "file_path": "documentation/MetricKit/mxmetricpayload/dictionaryrepresentation().md",
       "hash": "7eb7bd19d9d66501138088fc0dcd5d2b6355057b2cef42cbeca296f41711e04e"
     },
+    "https://developer.apple.com/tutorials/data/documentation/metrickit/mxmetricpayload/dictionaryrepresentation-1nrgx.json": {
+      "etag": "\"15fd-65d55d91c2ecc-df\"",
+      "file_path": "documentation/MetricKit/mxmetricpayload/dictionaryrepresentation-1nrgx.md",
+      "hash": "5fdbbaf9fc00ea1dd84bd0aeb7ec8548d0409b17442f10b7f3e79caec40f8ac6"
+    },
     "https://developer.apple.com/tutorials/data/documentation/metrickit/mxmetricpayload/diskiometrics.json": {
       "etag": "\"29b0-65d55d91d1b0c-df\"",
       "file_path": "documentation/MetricKit/mxmetricpayload/diskiometrics.md",
@@ -5100,6 +5150,21 @@
       "file_path": "documentation/MetricKit/mxsignpostanimationintervalbegin(dso,log,name,signpostid,_,_).md",
       "hash": "7e5fa6c45d03065141f81429bc69047b0966150d818cafe96694952690c18a5e"
     },
+    "https://developer.apple.com/tutorials/data/documentation/metrickit/mxsignpostanimationintervalbegin.json": {
+      "etag": "\"1c70-65d55d9113690-df\"",
+      "file_path": "documentation/MetricKit/mxsignpostanimationintervalbegin.md",
+      "hash": "80a580f0a7f440d24a47a03ff1d6b4c963a891637b216ede34008b02c560309b"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/metrickit/mxsignposteventemit.json": {
+      "etag": "\"2a83-65d55d9113690-df\"",
+      "file_path": "documentation/MetricKit/mxsignposteventemit.md",
+      "hash": "8ae4c67f61f8d70713ac1af2d754a04cb087f9891501dde287eaedc869cf96e9"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/metrickit/mxsignpostintervalbegin.json": {
+      "etag": "\"2ae6-65d55d917bbed-df\"",
+      "file_path": "documentation/MetricKit/mxsignpostintervalbegin.md",
+      "hash": "e8b5e203f26a7e8b909d392a0867de004aeea2a0afc1849bc9770b09bb49336a"
+    },
     "https://developer.apple.com/tutorials/data/documentation/metrickit/mxsignpostintervaldata.json": {
       "etag": "\"7ac8-65d55d908146a-df\"",
       "file_path": "documentation/MetricKit/mxsignpostintervaldata.md",
@@ -5134,6 +5199,11 @@
       "etag": "\"16db-65d55d916243b-df\"",
       "file_path": "documentation/MetricKit/mxsignpostintervaldata/init(coder).md",
       "hash": "284509b3eb334f5b9e5fceaa6a59f83053d72d57ec50e3cf628af2580dc09424"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/metrickit/mxsignpostintervalend.json": {
+      "etag": "\"2ada-65d55d90bfd27-df\"",
+      "file_path": "documentation/MetricKit/mxsignpostintervalend.md",
+      "hash": "0f5cbb056b1ec11c0099311a5fb788b54b8ac8f0fbab2534c998a63291610b24"
     },
     "https://developer.apple.com/tutorials/data/documentation/metrickit/mxsignpostmetric.json": {
       "etag": "\"7bf7-65d55d9113690-df\"",
@@ -5543,8 +5613,8 @@
   },
   "metadata": {
     "render": {
-      "version": 1
+      "version": 2
     },
-    "total_pages": 1108
+    "total_pages": 1122
   }
 }

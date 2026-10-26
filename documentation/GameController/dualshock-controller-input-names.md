@@ -18,6 +18,12 @@ Use these constants as the keys when accessing [`GCDualShockGamepad`](./gcdualsh
   The name of the first finger element to touch down on the DualShock 4 touchpad.
 - [var GCInputDualShockTouchpadTwo: String](./gcinputdualshocktouchpadtwo-5f8r9.md)
   The name of the second finger element to touch down on the DualShock 4 touchpad.
+- [GCInputDualShockTouchpadButton](./gcinputdualshocktouchpadbutton-47b5w.md)
+  The name of the button functionality of the DualShock 4 touchpad.
+- [GCInputDualShockTouchpadOne](./gcinputdualshocktouchpadone-5u54s.md)
+  The name of the first finger element to touch down on the DualShock 4 touchpad.
+- [GCInputDualShockTouchpadTwo](./gcinputdualshocktouchpadtwo-38d95.md)
+  The name of the second finger element to touch down on the DualShock 4 touchpad.
 
 ## See Also
 
@@ -42,6 +48,18 @@ Use these constants as the keys when accessing [`GCDualShockGamepad`](./gcdualsh
   Constants for names of micro gamepad elements.
 - [Directional Gamepad Input Names](./directional-gamepad-input-names.md)
   Constants for names of directional pad elements.
+- [GCPhysicalInputElementName](./gcphysicalinputelementname-c.protocol.md)
+  The name of a physical input element.
+- [GCInputElementName](./gcinputelementname.md)
+  The Objective-C type for an input element name.
+- [GCButtonElementName](./gcbuttonelementname-c.protocol.md)
+  The names of the button elements.
+- [GCAxisElementName](./gcaxiselementname-c.protocol.md)
+  The names for the elements that provide values along an axis.
+- [GCSwitchElementName](./gcswitchelementname-c.protocol.md)
+  The name for an element that represents a switch.
+- [GCDirectionPadElementName](./gcdirectionpadelementname-c.protocol.md)
+  The names for directional pad elements.
 
 
 ---

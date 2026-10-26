@@ -33,6 +33,8 @@ MTLAccelerationStructureInstanceOptionNonOpaque
   Specifies that the instance specifies front facing triangles in counter-clockwise order.
 - [static var opaque: MTLAccelerationStructureInstanceOptions](./opaque.md)
   Specifies that intersectors should treat the instance as opaque.
+- [MTLAccelerationStructureInstanceOptionNone](./mtlaccelerationstructureinstanceoptionnone.md)
+  Specifies the default behavior for resulting acceleration structure.
 
 
 ---

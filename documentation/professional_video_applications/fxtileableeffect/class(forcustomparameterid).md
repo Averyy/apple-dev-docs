@@ -21,7 +21,7 @@ optional func `class`(forCustomParameterID parameterID: UInt32) -> AnyClass
 
 ## Mentions
 
-- [Analyzing media](https://developer.apple.com/documentation/professional-video-applications/analyzing-media)
+- [Analyzing media](../../Professional-Video-Applications/analyzing-media.md)
 
 #### Return Value
 

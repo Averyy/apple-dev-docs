@@ -23,6 +23,11 @@ class MTRCluster
 @interface MTRCluster : NSObject
 ```
 
+## Topics
+
+### Instance Properties
+- [endpointID](./mtrcluster/endpointid.md)
+
 ## Relationships
 
 ### Inherits From

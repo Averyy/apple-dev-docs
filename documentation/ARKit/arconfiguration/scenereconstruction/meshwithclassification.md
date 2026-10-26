@@ -27,6 +27,8 @@ ARSceneReconstructionMeshWithClassification
   Initializes a scene-reconstruction object.
 - [static var mesh: ARConfiguration.SceneReconstruction](./mesh.md)
   A polygonal mesh approximation of the physical environment.
+- [ARSceneReconstructionNone](../../arscenereconstruction/arscenereconstructionnone.md)
+  Disables the scene reconstruction feature.
 
 
 ---

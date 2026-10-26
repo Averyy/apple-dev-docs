@@ -45,6 +45,8 @@ class GCSteeringWheelElement
 ### Steering and switch elements
 - [protocol GCSwitchPositionInput](./gcswitchpositioninput.md)
   The common properties of inputs that switch between two or more positions.
+- [GCInputSwitchName](./gcinputswitchname.md)
+  The Objective-C type for an input switch name.
 
 
 ---

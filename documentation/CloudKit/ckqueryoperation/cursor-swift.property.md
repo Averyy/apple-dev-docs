@@ -47,6 +47,8 @@ If you intend to specify or change the value in this property, do so before you 
   A constant value that represents the maximum number of results CloudKit retrieves.
 - [var desiredKeys: [CKRecord.FieldKey]?](./desiredkeys-7qrse.md)
   The fields of the records to fetch.
+- [desiredKeys](./desiredkeys-4a6vy.md)
+  The fields of the records to fetch.
 
 
 ---

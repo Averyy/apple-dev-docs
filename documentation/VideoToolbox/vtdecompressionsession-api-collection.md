@@ -46,6 +46,10 @@ A decompression session supports the decompression of a sequence of video frames
   Returns a Boolean value that indicates whether the system supports MV-HEVC decoding.
 - [typealias VTDecompressionMultiImageCapableOutputHandler](./vtdecompressionmultiimagecapableoutputhandler.md)
   A type alias for callback that the system invokes when it finishes decompressing a frame.
+- [VTDecompressionSessionSetMultiImageCallback](./vtdecompressionsessionsetmultiimagecallback.md)
+  Provides a callback capable of receiving multiple images for individual frame decoding requests.
+- [VTDecompressionSessionDecodeFrameWithMultiImageCapableOutputHandler](./vtdecompressionsessiondecodeframewithmultiimagecapableoutputhandler.md)
+  Decompresses a multi-image frame and calls the specified output handler upon completion.
 ### Invalidating a Session
 - [func VTDecompressionSessionInvalidate(VTDecompressionSession)](./vtdecompressionsessioninvalidate%28_%29.md)
   Tears down a decompression session.

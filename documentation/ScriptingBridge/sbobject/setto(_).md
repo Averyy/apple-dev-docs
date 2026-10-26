@@ -28,6 +28,12 @@ You should not call this method directly.
 
 - `value`: The data the receiver should be set to. It can be an [`NSString`](../../Foundation/nsstring.md), [`NSNumber`](../../Foundation/nsnumber.md), [`NSArray`](../../Foundation/nsarray.md), `SBObject`, or any other type of object supported by the Scripting Bridge framework.
 
+## See Also
+
+### Sending Apple Events
+- [- sendEvent:id:parameters:](./sendevent_id_parameters_.md)
+  Sends an Apple event with the given event class, event ID, and format to the target application.
+
 
 ---
 

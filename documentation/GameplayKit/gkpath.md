@@ -39,6 +39,16 @@ To learn more about using goals and agents, see [Agents, Goals, and Behaviors](h
 ### Creating a Path
 - [init(graphNodes: [GKGraphNode], radius: Float)](./gkpath/init%28graphnodes,radius%29.md)
   Initializes a path using the positions of the specified graph nodes.
+- [- initWithPoints:count:radius:cyclical:](./gkpath/initwithpoints_count_radius_cyclical_.md)
+  Initializes a path with the specified array of 2D points.
+- [+ pathWithPoints:count:radius:cyclical:](./gkpath/pathwithpoints_count_radius_cyclical_.md)
+  Creates a path with the specified array of 2D points.
+- [- initWithFloat3Points:count:radius:cyclical:](./gkpath/initwithfloat3points_count_radius_cyclical_.md)
+  Initializes a path with the specified array of 3D points.
+- [+ pathWithFloat3Points:count:radius:cyclical:](./gkpath/pathwithfloat3points_count_radius_cyclical_.md)
+  Creates a path with the specified array of 3D points.
+- [+ pathWithGraphNodes:radius:](./gkpath/pathwithgraphnodes_radius_.md)
+  Creates a path using the positions of the specified graph nodes.
 ### Managing a Path’s Attributes
 - [var radius: Float](./gkpath/radius.md)
   The radius of the path.

@@ -41,6 +41,9 @@ class WebHistoryItem
   The last time and date the receiver’s page was visited.
 ### Initializers
 - [init!(URLString: String!, title: String!, lastVisitedTimeInterval: TimeInterval)](./webhistoryitem/init%28urlstring,title,lastvisitedtimeinterval%29-d9r0.md)
+### Notifications
+- [WebHistoryItemChangedNotification](./webhistoryitemchangednotification.md)
+  Posted by a WebHistoryItem object when the value of the history item’s title, alternate title, URL strings, or last visited interval changes.
 
 ## Relationships
 

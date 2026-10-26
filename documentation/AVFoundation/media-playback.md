@@ -95,6 +95,8 @@ You create an instance of [`AVPlayerItem`](./avplayeritem.md) to play a media as
   userInfo dictionary key for the AVPlayerInterstitialEventMonitorScheduleRequestCompletedNotification. Value is NSData. Absent if the request failed.
 - [class AVPlayerItemIntegratedTimeline](./avplayeritemintegratedtimeline.md)
   An object that models the timeline and playback sequence of a primary player item and scheduled interstitial events.
+- [AVPlayerInterstitialEventMonitorScheduleRequestCompletedNotification](./avplayerinterstitialeventmonitorschedulerequestcompletednotification.md)
+  A notification that is posted whenever a daterange-schedule request completes.
 ### Metrics
 - [struct AVMetrics](./avmetrics.md)
   An asynchronous stream of metric information.
@@ -109,6 +111,10 @@ You create an instance of [`AVPlayerItem`](./avplayeritem.md) to play a media as
 - [class AVMetricErrorEvent](./avmetricerrorevent.md)
   An object that represents a metric event when an error occurs.
 - [Metric event types](./metric-event-types.md)
+- [AVMetricEventStream](./avmetriceventstream.md)
+  An object that allows clients to add publishers and then subscribe to specific metric event classes from those publishers.
+- [AVMetricEventStreamSubscriber](./avmetriceventstreamsubscriber.md)
+  A type for objects that receive metric events.
 ### Remote controls
 - [Supporting remote interactions in tvOS](./supporting-remote-interactions-in-tvos.md)
   Set up your app to support remote commands and events in a variety of scenarios by using the relevant approach.
@@ -154,6 +160,12 @@ You create an instance of [`AVPlayerItem`](./avplayeritem.md) to play a media as
   Configuration options specified when creating an [`AVPlayerItemSampleBufferOutput`](./avplayeritemsamplebufferoutput.md).
 - [class AVPlayerItemSampleBufferOutputAudioConfiguration](./avplayeritemsamplebufferoutputaudioconfiguration.md)
   Audio-specific configuration options specified when creating an [`AVPlayerItemSampleBufferOutput`](./avplayeritemsamplebufferoutput.md).
+- [CMTagCollectionCreateWithVideoOutputPreset](./cmtagcollectioncreatewithvideooutputpreset.md)
+  Creates a collection with the required tags to describe the specified video output requirements.
+- [CMTagCollectionVideoOutputPreset](./cmtagcollectionvideooutputpreset.md)
+  Constants that indicate the type of video content to output.
+- [AVPlayerItemSampleBufferOutputDelegate](./avplayeritemsamplebufferoutputdelegate.md)
+  Defines common delegate methods for objects participating in sample buffer output.
 ### Utilities
 - [class AVAssetPlaybackAssistant](./avassetplaybackassistant.md)
   An object that provides playback information for an asset.

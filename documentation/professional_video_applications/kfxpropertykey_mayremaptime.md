@@ -21,7 +21,7 @@ var kFxPropertyKey_MayRemapTime: String { get }
 
 ## Mentions
 
-- [Building an FxPlug plug-in manually](https://developer.apple.com/documentation/professional-video-applications/building-an-fxplug-plug-in-manually)
+- [Building an FxPlug plug-in manually](../Professional-Video-Applications/building-an-fxplug-plug-in-manually.md)
 
 #### Discussion
 
@@ -35,6 +35,8 @@ The default value is [`true`](../Swift/true.md).
 - [var kFxPropertyKey_PixelTransformSupport: String](./kfxpropertykey_pixeltransformsupport.md)
   A key in the `properties` dictionary in the `FXBaseEffect` Class that corresponds to an `NSNumber` containing one of the `FxImage` values. The default value is [`kFxPixelTransform_ScaleTranslate`](./kfxpixeltransform_scaletranslate.md)
 - [var kFxPropertyKey_UsesNonmatchingTextureLayout: String](./kfxpropertykey_usesnonmatchingtexturelayout.md)
+- [PluginManagerVersionNumber](./pluginmanagerversionnumber.md)
+- [PluginManagerVersionString](./pluginmanagerversionstring.md)
 
 
 ---

@@ -5,6 +5,12 @@
 
 The version of the AppKit.framework containing a specific bug fix or capability.
 
+## Topics
+
+### Constants
+- [NSAppKitVersionNumberWithCustomSheetPosition](./nsappkitversionnumberwithcustomsheetposition.md)
+  The specific version of the AppKit framework that introduced custom sheet positioning.
+
 ## See Also
 
 ### Constants

@@ -46,6 +46,8 @@ Your app uses `CSSuggestion` objects to populate a contextual menu of suggestion
 - [func compare(byRank: CSSuggestion) -> ComparisonResult](./cssuggestion/compare%28byrank%29.md)
 ### Initializers
 - [init?(coder: NSCoder)](./cssuggestion/init%28coder%29.md)
+### Instance Properties
+- [localizedAttributedSuggestion](./cssuggestion/localizedattributedsuggestion-oq3b.md)
 
 ## Relationships
 

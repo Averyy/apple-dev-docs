@@ -197,6 +197,8 @@ enum AVError : NSInteger;
   Your app requested unsupported output settings.
 - [AVError.Code.videoCompositorFailed](./code/videocompositorfailed.md)
   The compositor couldn’t composite video frames.
+- [AVErrorContentKeyInvalid](../averror-c.enum/averrorcontentkeyinvalid.md)
+- [AVErrorContentKeyRequestPlaybackDestinationDoesNotSupportDeviceIdentifierRandomization](../averror-c.enum/averrorcontentkeyrequestplaybackdestinationdoesnotsupportdeviceidentifierrandomization.md)
 ### Enumeration Cases
 - [AVError.Code.externalSyncDeviceFrequencyHigherThanSpecified](./code/externalsyncdevicefrequencyhigherthanspecified.md)
 - [AVError.Code.externalSyncDeviceFrequencyLowerThanSpecified](./code/externalsyncdevicefrequencylowerthanspecified.md)
@@ -214,6 +216,12 @@ enum AVError : NSInteger;
 - [RawRepresentable](../../Swift/rawrepresentable.md)
 - [Sendable](../../Swift/sendable.md)
 - [SendableMetatype](../../Swift/sendablemetatype.md)
+
+## See Also
+
+### Errors
+- [AVFoundationErrorDomain](../avfoundationerrordomain.md)
+  The error domain of AVFoundation errors.
 
 
 ---

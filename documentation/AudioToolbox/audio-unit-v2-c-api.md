@@ -106,6 +106,12 @@ Configure an Audio Unit and prepare it to render audio.
   The name and number of custom Cocoa views for an audio unit.
 - [func GetAudioUnitParameterDisplayType(AudioUnitParameterOptions) -> AudioUnitParameterOptions](./getaudiounitparameterdisplaytype%28_%29.md)
 - [func SetAudioUnitParameterDisplayType(AudioUnitParameterOptions, AudioUnitParameterOptions) -> AudioUnitParameterOptions](./setaudiounitparameterdisplaytype%28_,_%29.md)
+- [AUCocoaUIBase](./aucocoauibase.md)
+- [AudioUnitCarbonView](./audiounitcarbonview.md)
+- [AudioUnitCarbonViewEventID](./audiounitcarbonvieweventid.md)
+- [Audio Unit Carbon View Events](./api-1579365-audio_unit_carbon_view_events.md)
+- [Audio Unit Carbon View Selectors](./api-1579372-audio_unit_carbon_view_selectors.md)
+- [Audio Unit Carbon View Component Types](./api-1579363-audio_unit_carbon_view_component.md)
 ### Audio Unit Types
 - [struct ScheduledAudioFileRegion](./scheduledaudiofileregion.md)
 - [struct ScheduledAudioSlice](./scheduledaudioslice.md)

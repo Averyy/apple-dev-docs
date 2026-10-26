@@ -42,6 +42,10 @@ The given callback will be called when the L2CAP channel is closed.
   The counterpart to the above IOBluetoothIgnoreHIDDevice() API.
 - [func IOBluetoothUserNotificationUnregister(IOBluetoothUserNotificationRef!)](./iobluetoothusernotificationunregister%28_%29.md)
   Unregisters the target notification.
+- [IOBluetoothAddSCOAudioDevice](./iobluetoothaddscoaudiodevice.md)
+  Creates a persistent audio driver that will route audio data to/from the specified device.
+- [IOBluetoothRemoveSCOAudioDevice](./iobluetoothremovescoaudiodevice.md)
+  Removes a persistent audio driver for a device that had already been added using IOBluetoothAddAudioDevice().
 
 
 ---

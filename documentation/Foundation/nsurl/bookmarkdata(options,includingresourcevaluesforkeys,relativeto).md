@@ -99,6 +99,9 @@ For a document-scoped bookmark, any sandboxed app that has access to the bookmar
   Options used when creating bookmark data.
 - [struct BookmarkResolutionOptions](./bookmarkresolutionoptions.md)
   Options used when resolving bookmark data.
+### Related Documentation
+- [+ URLByResolvingBookmarkData:options:relativeToURL:bookmarkDataIsStale:error:](./urlbyresolvingbookmarkdata_options_relativetourl_bookmarkdataisstale_error_.md)
+  Returns a new URL made by resolving bookmark data.
 
 
 ---

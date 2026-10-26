@@ -21,7 +21,7 @@ var kFxPropertyKey_VariesWhenParamsAreStatic: String { get }
 
 ## Mentions
 
-- [Building an FxPlug plug-in manually](https://developer.apple.com/documentation/professional-video-applications/building-an-fxplug-plug-in-manually)
+- [Building an FxPlug plug-in manually](../Professional-Video-Applications/building-an-fxplug-plug-in-manually.md)
 
 #### Discussion
 

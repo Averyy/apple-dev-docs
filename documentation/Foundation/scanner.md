@@ -42,6 +42,8 @@ To retrieve the unscanned remainder of the string, use `scanner.string.substring
   Returns an `NSScanner` object that scans a given string according to the user’s default locale.
 - [init(string: String)](./scanner/init%28string%29.md)
   Returns an `NSScanner` object initialized to scan a given string.
+- [+ scannerWithString:](./nsscanner/scannerwithstring_.md)
+  Returns an `NSScanner` object that scans a given string.
 ### Getting a Scanner’s String
 - [var string: String](./scanner/string.md)
   The string the scanner will scan.

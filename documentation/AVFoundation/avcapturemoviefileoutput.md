@@ -37,6 +37,8 @@ A movie file output provides a complete file recording interface for writing med
 ### Creating a movie file output
 - [init()](./avcapturemoviefileoutput/init%28%29.md)
   Creates a new of movie file output.
+- [+ new](./avcapturemoviefileoutput/new.md)
+  Returns a new movie file output object.
 ### Configuring movies
 - [var movieFragmentInterval: CMTime](./avcapturemoviefileoutput/moviefragmentinterval.md)
   The number of seconds of output that are written per fragment.

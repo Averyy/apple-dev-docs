@@ -66,6 +66,7 @@ If your file provider loses synchronization, but you aren’t interested in pres
   Returns an enumerator for all the items the system currently stores on disk.
 - [func enumeratorForPendingItems() -> any NSFileProviderPendingSetEnumerator](./enumeratorforpendingitems%28%29.md)
   Returns an enumerator for the set of pending items.
+- [- requestDownloadForItemWithIdentifier:requestedRange:completionHandler:](./requestdownloadforitemwithidentifier_requestedrange_completionhandler_.md)
 
 
 ---

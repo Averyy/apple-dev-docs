@@ -35,6 +35,10 @@
 - [CMIOStream properties](./cmiostream-properties.md)
 - [CMIOSystemObject constants](./cmiosystemobject-constants.md)
 - [CMIOSystemObject properties](./cmiosystemobject-properties.md)
+### Macro-based constants
+- [kCMIOHardwarePlugInInterfaceID](./kcmiohardwareplugininterfaceid.md)
+- [kCMIOHardwarePlugInTypeID](./kcmiohardwareplugintypeid.md)
+- [kCMIOInvalidSequenceNumber](./kcmioinvalidsequencenumber.md)
 
 ## See Also
 

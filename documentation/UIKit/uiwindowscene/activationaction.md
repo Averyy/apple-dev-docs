@@ -33,6 +33,8 @@ Create a [`UIWindowScene.ActivationAction`](./activationaction.md) object to fac
   Creates an activation action using the specified parameters.
 - [UIWindowScene.ActivationAction.ConfigurationProvider](./activationaction/configurationprovider.md)
   A type alias defining a closure that provides an activation configuration for the activation action.
+- [+ actionWithIdentifier:alternateAction:configurationProvider:](../uiwindowsceneactivationaction/actionwithidentifier_alternateaction_configurationprovider_.md)
+  Creates an activation action with the specified parameters.
 ### Getting information about the activation action
 - [var title: String!](./activationaction/title.md)
   The action’s title.

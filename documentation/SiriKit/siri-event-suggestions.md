@@ -7,11 +7,11 @@ Provide users with current, actionable information connected to a reservation.
 
 #### Overview
 
-Siri can expose reservation information from your app in context and at specific times so the user can take relevant actions based on the circumstances. Your app donates an [`INInteraction`](https://developer.apple.com/documentation/intents/ininteraction) object that contains information about the reservation that can be sent to the user to allow them to confirm a hotel reservation, remind them to check in for a flight, help them return a rental car, and several other options.
+Siri can expose reservation information from your app in context and at specific times so the user can take relevant actions based on the circumstances. Your app donates an [`INInteraction`](../Intents/ininteraction.md) object that contains information about the reservation that can be sent to the user to allow them to confirm a hotel reservation, remind them to check in for a flight, help them return a rental car, and several other options.
 
 > 💡 **Tip**:  If you send your users reservation information in email or web pages, use [Siri Event Suggestions Markup](../SiriEventSuggestionsMarkup/SiriEventSuggestionsMarkup.md) to provide the information to Siri as well. Siri uses reservation IDs to prevent duplicate entries.
 
-Apps offering reservations with check-in capabilities can integrate with Shortcuts Suggestions on the Lock Screen and allow users to launch your app to complete checking in for their reservation. Create a new reservation object with an array of [`INReservationAction`](https://developer.apple.com/documentation/intents/inreservationaction) objects that contain a user activity and relevant time frame. Siri provides users with the ability to launch your app with the user activity and time frame information. For instance, a flight reservation app may provide users the ability to check-in for a flight starting 24 hours before the departure time.
+Apps offering reservations with check-in capabilities can integrate with Shortcuts Suggestions on the Lock Screen and allow users to launch your app to complete checking in for their reservation. Create a new reservation object with an array of [`INReservationAction`](../Intents/inreservationaction.md) objects that contain a user activity and relevant time frame. Siri provides users with the ability to launch your app with the user activity and time frame information. For instance, a flight reservation app may provide users the ability to check-in for a flight starting 24 hours before the departure time.
 
 ## Topics
 
@@ -21,36 +21,36 @@ Apps offering reservations with check-in capabilities can integrate with Shortcu
 - [Integrating Your App with Siri Event Suggestions](./integrating-your-app-with-siri-event-suggestions.md)
   Donate reservations and provide quick access to event details throughout the system.
 ### Reservation Details
-- [class INGetReservationDetailsIntent](https://developer.apple.com/documentation/intents/ingetreservationdetailsintent)
+- [class INGetReservationDetailsIntent](../Intents/ingetreservationdetailsintent.md)
   A request for details about one or more reservations.
-- [class INGetReservationDetailsIntentResponse](https://developer.apple.com/documentation/intents/ingetreservationdetailsintentresponse)
+- [class INGetReservationDetailsIntentResponse](../Intents/ingetreservationdetailsintentresponse.md)
   Your app’s response to a request for reservation details.
 ### Common Reservation Data Objects
-- [class INReservation](https://developer.apple.com/documentation/intents/inreservation)
+- [class INReservation](../Intents/inreservation.md)
   An object that describes a reservation.
-- [class INReservationAction](https://developer.apple.com/documentation/intents/inreservationaction)
+- [class INReservationAction](../Intents/inreservationaction.md)
   An action a user can perform that’s relevant to a reservation.
-- [enum INReservationStatus](https://developer.apple.com/documentation/intents/inreservationstatus)
+- [enum INReservationStatus](../Intents/inreservationstatus.md)
   Constants that describe the current status of the reservation.
-- [class INSeat](https://developer.apple.com/documentation/intents/inseat)
+- [class INSeat](../Intents/inseat.md)
   An object containing seat information associated with a reservation.
 ### Travel Reservations
-- [class INFlightReservation](https://developer.apple.com/documentation/intents/inflightreservation)
+- [class INFlightReservation](../Intents/inflightreservation.md)
   The information that describes a flight reservation.
-- [class INTrainReservation](https://developer.apple.com/documentation/intents/intrainreservation)
+- [class INTrainReservation](../Intents/intrainreservation.md)
   The information that describes a train reservation.
-- [class INBoatReservation](https://developer.apple.com/documentation/intents/inboatreservation)
+- [class INBoatReservation](../Intents/inboatreservation.md)
   The information that describes a boat reservation.
-- [class INBusReservation](https://developer.apple.com/documentation/intents/inbusreservation)
+- [class INBusReservation](../Intents/inbusreservation.md)
   The information that describes a bus reservation.
-- [class INRentalCarReservation](https://developer.apple.com/documentation/intents/inrentalcarreservation)
+- [class INRentalCarReservation](../Intents/inrentalcarreservation.md)
   The information that describes a rental car reservation.
 ### Food, Lodging, and Event Reservations
-- [class INRestaurantReservation](https://developer.apple.com/documentation/intents/inrestaurantreservation)
+- [class INRestaurantReservation](../Intents/inrestaurantreservation.md)
   The information that describes a restaurant reservation.
-- [class INLodgingReservation](https://developer.apple.com/documentation/intents/inlodgingreservation)
+- [class INLodgingReservation](../Intents/inlodgingreservation.md)
   The information that describes a lodging reservation.
-- [class INTicketedEventReservation](https://developer.apple.com/documentation/intents/inticketedeventreservation)
+- [class INTicketedEventReservation](../Intents/inticketedeventreservation.md)
   The information that describes a ticketed event reservation.
 
 ## See Also
@@ -70,21 +70,23 @@ Apps offering reservations with check-in capabilities can integrate with Shortcu
   Integrating App Intents to provide your appʼs actions to Siri and Shortcuts.
 - [Adding Shortcuts for Wind Down](./adding-shortcuts-for-wind-down.md)
   Reveal your app’s shortcuts inside the Health app.
-- [class INShortcutReference](https://developer.apple.com/documentation/intents/inshortcutreference)
+- [class INShortcutReference](../Intents/inshortcutreference.md)
   An object representing an action available in your app that the system may suggest to a user or a user may add to Siri.
-- [class INInteraction](https://developer.apple.com/documentation/intents/ininteraction)
+- [class INInteraction](../Intents/ininteraction.md)
   An interaction between the user and your app involving an intent object.
-- [enum INShortcut](https://developer.apple.com/documentation/intents/inshortcut-swift.enum)
+- [enum INShortcut](../Intents/inshortcut-swift.enum.md)
   An action available in your app that the system may suggest to a user or a user may add to Siri.
-- [class INVoiceShortcutCenter](https://developer.apple.com/documentation/intents/invoiceshortcutcenter)
+- [class INVoiceShortcutCenter](../Intents/invoiceshortcutcenter.md)
   Retrieve the user’s shortcuts and make shortcut suggestions.
-- [class INVoiceShortcut](https://developer.apple.com/documentation/intents/invoiceshortcut)
+- [class INVoiceShortcut](../Intents/invoiceshortcut.md)
   A shortcut the user added to Siri.
-- [struct INShortcutAvailabilityOptions](https://developer.apple.com/documentation/intents/inshortcutavailabilityoptions)
+- [struct INShortcutAvailabilityOptions](../Intents/inshortcutavailabilityoptions.md)
   Defined contexts in which an intent or activity might be relevant to a user.
-- [class INShortcutReference](https://developer.apple.com/documentation/intents/inshortcutreference)
+- [class INShortcutReference](../Intents/inshortcutreference.md)
   An object representing an action available in your app that the system may suggest to a user or a user may add to Siri.
-- [class INIntentDonationMetadata](https://developer.apple.com/documentation/intents/inintentdonationmetadata)
+- [class INIntentDonationMetadata](../Intents/inintentdonationmetadata.md)
+- [Apple Watch support](./watch-and-widget-support.md)
+  Display relevant shortcuts on the Siri watch face.
 
 
 ---

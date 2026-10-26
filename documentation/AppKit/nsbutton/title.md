@@ -55,6 +55,9 @@ This property contains the title displayed on the button when it’s in an off s
 - [enum NSTintProminence](../nstintprominence.md)
   Controls how strongly the tint color applies in a view.
 - [var borderShape: NSControl.BorderShape](./bordershape.md)
+### Related Documentation
+- [- setTitleWithMnemonic:](./settitlewithmnemonic_.md)
+  Sets the title of a button with a character denoting an access key.
 
 
 ---

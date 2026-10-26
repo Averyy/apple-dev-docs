@@ -112,6 +112,8 @@ Do not override [`shared`](./nsapplication/shared.md). The default implementatio
   Dispatches an event to other objects.
 - [func postEvent(NSEvent, atStart: Bool)](./nsapplication/postevent%28_,atstart%29.md)
   Adds a given event to the receiver’s event queue.
+- [NSEventTrackingRunLoopMode](./nseventtrackingrunloopmode.md)
+  The mode set when tracking events modally, such as a mouse-dragging loop.
 ### Posting actions
 - [func tryToPerform(Selector, with: Any?) -> Bool](./nsapplication/trytoperform%28_,with%29.md)
   Dispatches an action message to the specified target.
@@ -280,13 +282,21 @@ Do not override [`shared`](./nsapplication/shared.md). The default implementatio
   Posted when the app has finished restoring windows.
 - [class let didChangeOcclusionStateNotification: NSNotification.Name](./nsapplication/didchangeocclusionstatenotification.md)
   Posted when the app’s occlusion state changes.
+- [NSApplicationProtectedDataDidBecomeAvailableNotification](./nsapplicationprotecteddatadidbecomeavailablenotification.md)
+  Posted when protected data becomes available.
+- [NSApplicationProtectedDataWillBecomeUnavailableNotification](./nsapplicationprotecteddatawillbecomeunavailablenotification.md)
+  Posted when protected data is about to become unavailable.
 ### Loading Cocoa bundles
 - [static func loadApplication()](./nsapplication/loadapplication%28%29.md)
+- [NSApplicationLoad](./nsapplicationload.md)
+  Startup function to call when running Cocoa code from a Carbon application.
 ### Displaying high dynamic resolution (HDR) content
 - [var applicationShouldSuppressHighDynamicRangeContent: Bool](./nsapplication/applicationshouldsuppresshighdynamicrangecontent.md)
   A boolean value indicating whether your application should suppress HDR content based on established policy. Built-in AppKit components such as NSImageView will automatically behave correctly with HDR content. You should use this value in conjunction with notifications (`NSApplicationShouldBeginSuppressingHighDynamicRangeContentNotification` and `NSApplicationShouldEndSuppressingHighDynamicRangeContentNotification`) to suppress HDR content in your application when signaled to do so.
 - [NSApplication.ShouldBeginSuppressingHighDynamicRangeContent](./nsapplication/shouldbeginsuppressinghighdynamicrangecontent.md)
 - [NSApplication.ShouldEndSuppressingHighDynamicRangeContent](./nsapplication/shouldendsuppressinghighdynamicrangecontent.md)
+- [NSApplicationShouldBeginSuppressingHighDynamicRangeContentNotification](./nsapplicationshouldbeginsuppressinghighdynamicrangecontentnotification.md)
+- [NSApplicationShouldEndSuppressingHighDynamicRangeContentNotification](./nsapplicationshouldendsuppressinghighdynamicrangecontentnotification.md)
 ### Deprecated
 - [Deprecated symbols](./nsapplication-deprecated-symbols.md)
   Review symbols that are no longer in active development, and their recommended replacements.
@@ -348,6 +358,8 @@ Do not override [`shared`](./nsapplication/shared.md). The default implementatio
   Called by the main function to create and run the application.
 - [Managing ongoing background processes in your Mac](./managing-ongoing-background-processes-in-your-mac.md)
   Configure your app to help people understand when background processes may continue after they close your app.
+- [NSApplicationMain](./nsapplicationmain.md)
+  Called by the main function to create and run the application.
 
 
 ---

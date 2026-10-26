@@ -46,6 +46,10 @@ enum ASAuthorizationProviderExtensionPlatformSSOProtocolVersion : NSInteger;
   The defined identity types for use in retrieving credentials.
 - [enum ASPublicKeyCredentialClientDataCrossOriginValue](./aspublickeycredentialclientdatacrossoriginvalue.md)
 - [enum ASUserAgeRange](./asuseragerange.md)
+- [ASAuthorizationPublicKeyCredentialLargeBlobAssertionOperation](./asauthorizationpublickeycredentiallargeblobassertionoperation.md)
+  A type that represents the operation of the large blob assertion.
+- [ASAuthorizationPublicKeyCredentialLargeBlobSupportRequirement](./asauthorizationpublickeycredentiallargeblobsupportrequirement.md)
+  An enumeration of large binary object support requirement values.
 
 
 ---

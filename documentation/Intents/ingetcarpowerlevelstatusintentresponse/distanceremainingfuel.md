@@ -52,6 +52,10 @@ Due to driving characteristics and fuel consumption, this value changes over tim
   The maximum distance the electric vehicle can travel with the remaining charge.
 - [var maximumDistanceFuel: Measurement<UnitLength>?](./maximumdistancefuel.md)
   The maximum rated distance the fuel-powered vehicle can travel with a full tank of fuel.
+- [chargePercentRemaining](./chargepercentremaining-30zol.md)
+  The percentage of charge that remains for the electric vehicle.
+- [fuelPercentRemaining](./fuelpercentremaining-6mdv4.md)
+  The percentage of fuel remaining for the fuel-powered vehicle.
 
 
 ---

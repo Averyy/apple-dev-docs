@@ -60,6 +60,8 @@ The [`AVCapturePhotoOutput`](./avcapturephotooutput.md) class implicitly support
 ### Creating a photo output
 - [init()](./avcapturephotooutput/init%28%29.md)
   Creates a new photo capture output object.
+- [+ new](./avcapturephotooutput/new.md)
+  Creates a new photo capture output object.
 ### Capturing a photo
 - [func capturePhoto(with: AVCapturePhotoSettings, delegate: any AVCapturePhotoCaptureDelegate)](./avcapturephotooutput/capturephoto%28with,delegate%29.md)
   Initiates a photo capture using the specified settings.
@@ -97,6 +99,14 @@ The [`AVCapturePhotoOutput`](./avcapturephotooutput.md) class implicitly support
   Returns a Boolean value that indicates whether the pixel format is an Apple ProRAW format.
 - [class func isBayerRAWPixelFormat(OSType) -> Bool](./avcapturephotooutput/isbayerrawpixelformat%28_%29.md)
   Returns a Boolean value that indicates whether the pixel format is a Bayer RAW format.
+- [availablePhotoPixelFormatTypes](./avcapturephotooutput/availablephotopixelformattypes-6eyb.md)
+  The pixel formats the capture output supports for photo capture.
+- [availableRawPhotoPixelFormatTypes](./avcapturephotooutput/availablerawphotopixelformattypes-5fatm.md)
+  The pixel formats the capture output supports for RAW photo capture.
+- [- supportedPhotoPixelFormatTypesForFileType:](./avcapturephotooutput/supportedphotopixelformattypesforfiletype_.md)
+  Returns the list of uncompressed pixel formats supported for photo data in the specified file type.
+- [- supportedRawPhotoPixelFormatTypesForFileType:](./avcapturephotooutput/supportedrawphotopixelformattypesforfiletype_.md)
+  Returns the list of Bayer RAW pixel formats supported for photo data in the specified file type.
 ### Determining supported codec types
 - [var availablePhotoCodecTypes: [AVVideoCodecType]](./avcapturephotooutput/availablephotocodectypes.md)
   The compression codecs this capture output currently supports for photo capture.
@@ -128,6 +138,8 @@ The [`AVCapturePhotoOutput`](./avcapturephotooutput.md) class implicitly support
   A Swift array of flash settings this capture output currently supports.
 - [var isAutoRedEyeReductionSupported: Bool](./avcapturephotooutput/isautoredeyereductionsupported.md)
   A Boolean value indicating whether the capture output supports automatic red-eye reduction.
+- [supportedFlashModes](./avcapturephotooutput/supportedflashmodes-4u69s.md)
+  The flash settings this capture output currently supports.
 ### Monitoring the visible scene
 - [var isFlashScene: Bool](./avcapturephotooutput/isflashscene.md)
   A Boolean value indicating whether the scene currently being previewed by the camera warrants use of the flash.

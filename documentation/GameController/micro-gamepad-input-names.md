@@ -41,6 +41,18 @@ Constants for names of micro gamepad elements.
   Constants for names of Xbox elements.
 - [Directional Gamepad Input Names](./directional-gamepad-input-names.md)
   Constants for names of directional pad elements.
+- [GCPhysicalInputElementName](./gcphysicalinputelementname-c.protocol.md)
+  The name of a physical input element.
+- [GCInputElementName](./gcinputelementname.md)
+  The Objective-C type for an input element name.
+- [GCButtonElementName](./gcbuttonelementname-c.protocol.md)
+  The names of the button elements.
+- [GCAxisElementName](./gcaxiselementname-c.protocol.md)
+  The names for the elements that provide values along an axis.
+- [GCSwitchElementName](./gcswitchelementname-c.protocol.md)
+  The name for an element that represents a switch.
+- [GCDirectionPadElementName](./gcdirectionpadelementname-c.protocol.md)
+  The names for directional pad elements.
 
 
 ---

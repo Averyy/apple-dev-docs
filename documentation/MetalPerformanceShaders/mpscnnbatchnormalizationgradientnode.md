@@ -28,6 +28,8 @@ class MPSCNNBatchNormalizationGradientNode
 
 ### Initializers
 - [init(sourceGradient: MPSNNImageNode, sourceImage: MPSNNImageNode, gradientState: MPSNNGradientStateNode)](./mpscnnbatchnormalizationgradientnode/init%28sourcegradient,sourceimage,gradientstate%29.md)
+### Type Methods
+- [+ nodeWithSourceGradient:sourceImage:gradientState:](./mpscnnbatchnormalizationgradientnode/nodewithsourcegradient_sourceimage_gradientstate_.md)
 
 ## Relationships
 

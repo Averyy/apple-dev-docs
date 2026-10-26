@@ -46,6 +46,10 @@ When you measure indoor and outdoor workouts differently, use this property to d
   The units associated with the workout goal.
 - [var isOpenEnded: Bool?](./isopenended-8hecn.md)
   A Boolean value that indicates whether the workout is open ended.
+- [goalValue](./goalvalue-1dzvb.md)
+  The numerical goal of the workout.
+- [isOpenEnded](./isopenended-avvd.md)
+  A Boolean value indicating whether the workout is open ended.
 
 
 ---

@@ -44,6 +44,8 @@ HTTP/2 and later run multiple requests over a single connection and thus ignore 
   An array of proxy configuration objects containing information about the proxies to use within this session.
 - [var connectionProxyDictionary: [AnyHashable : Any]?](./connectionproxydictionary.md)
   A dictionary containing information about the proxy to use within this session.
+- [proxyConfigurations](../nsurlsessionconfiguration/proxyconfigurations.md)
+  An array of proxy configuration objects containing information about the proxies to use within this session.
 
 
 ---

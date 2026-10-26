@@ -31,6 +31,12 @@ var preferredVolume: Float { get }
 
 The preferred volume for an audio track is typically, but not always, `1.0`. For non-audible tracks, the value is `0.0`.
 
+## See Also
+
+### Accessing audible characteristics
+- [hasAudioSampleDependencies](./hasaudiosampledependencies.md)
+  A Boolean value that indicates whether the track has sample dependencies.
+
 
 ---
 

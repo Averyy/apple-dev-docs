@@ -39,6 +39,8 @@ These are the various options you use to configure the parser. An option flag of
   Where the DTD specifies implied attribute-value pairs for a particular element, add those pairs to any occurrences of the element in the element tree. Currently not supported.
 - [static var allOptions: CFXMLParserOptions](./cfxmlparseroptions/alloptions.md)
   Makes the parser do the most work, returning only the pure elementtree.
+- [kCFXMLParserNoOptions](./cfxmlparseroptions/kcfxmlparsernooptions.md)
+  Leaves the XML as “intact” as possible (reports all structures; performs no replacements).
 ### Initializers
 - [init(rawValue: CFOptionFlags)](./cfxmlparseroptions/init%28rawvalue%29.md)
 

@@ -33,6 +33,8 @@ enum MPSAliasingStrategy : NSUInteger;
 - [static var preferTemporaryMemory: MPSAliasingStrategy](./mpsaliasingstrategy/prefertemporarymemory.md)
 - [static var shallAlias: MPSAliasingStrategy](./mpsaliasingstrategy/shallalias.md)
 - [static var shallNotAlias: MPSAliasingStrategy](./mpsaliasingstrategy/shallnotalias.md)
+### Enumeration Cases
+- [MPSAliasingStrategyDontCare](./mpsaliasingstrategy/mpsaliasingstrategydontcare.md)
 
 ## Relationships
 

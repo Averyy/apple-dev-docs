@@ -56,6 +56,8 @@ If you assign a handler to the [`completionBlock`](../Foundation/operation/compl
   The closure to execute after CloudKit retrieves all of the record zones.
 - [var perRecordZoneResultBlock: ((CKRecordZone.ID, Result<CKRecordZone, any Error>) -> Void)?](./ckfetchrecordzonesoperation/perrecordzoneresultblock.md)
   The closure to execute when a record zone becomes available.
+- [perRecordZoneCompletionBlock](./ckfetchrecordzonesoperation/perrecordzonecompletionblock.md)
+  The closure to execute as the operation fetches individual record zones.
 
 ## Relationships
 

@@ -39,6 +39,8 @@ class ASAuthorizationProviderExtensionAuthorizationResult
   The HTTP response for authentications.
 - [var httpBody: Data?](./asauthorizationproviderextensionauthorizationresult/httpbody.md)
   The HTTP response body.
+- [privateKeys](./asauthorizationproviderextensionauthorizationresult/privatekeys.md)
+  An array of private security keys.
 
 ## Relationships
 

@@ -62,6 +62,9 @@ You don’t create scene objects directly. You can programmatically ask UIKit to
   The set of conditions that define when UIKit activates the current scene.
 ### Specifying the scene’s destruction conditions
 - [var destructionConditions: Set<UIScene.DestructionCondition>](./uiscene/destructionconditions-9rfrj.md)
+- [destructionConditions](./uiscene/destructionconditions-1a41l.md)
+- [UISceneDestructionCondition](./uiscenedestructioncondition.md)
+  Specifies when UIKit destroys the current scene.
 ### Responding to life cycle notifications
 - [class let willConnectNotification: NSNotification.Name](./uiscene/willconnectnotification.md)
   A notification that indicates that UIKit added a scene to your app.

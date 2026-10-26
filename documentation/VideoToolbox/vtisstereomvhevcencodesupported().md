@@ -37,6 +37,10 @@ A return value of [`true`](../Swift/true.md) doesn’t guarantee that encoding r
 ### Encoding Multi-Image Frames
 - [func VTCompressionSessionEncodeMultiImageFrame(VTCompressionSession, taggedBuffers: [CMTaggedBuffer], presentationTimeStamp: CMTime, duration: CMTime, frameProperties: CFDictionary?, infoFlagsOut: UnsafeMutablePointer<VTEncodeInfoFlags>?, outputHandler: VTCompressionOutputHandler) -> OSStatus](./vtcompressionsessionencodemultiimageframe%28_,taggedbuffers,presentationtimestamp,duration,frameproperties,infoflagsout,outputhandler%29.md)
   Passes a multi-image frame to a compression session for encoding and provides a callback to handle the output.
+- [VTCompressionSessionEncodeMultiImageFrame](./vtcompressionsessionencodemultiimageframe.md)
+  Passes a multi-image frame to a compression session for encoding.
+- [VTCompressionSessionEncodeMultiImageFrameWithOutputHandler](./vtcompressionsessionencodemultiimageframewithoutputhandler.md)
+  Passes a multi-image frame to a compression session for encoding and provides a callback to handle the output.
 
 
 ---

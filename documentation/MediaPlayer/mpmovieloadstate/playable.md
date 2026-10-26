@@ -30,6 +30,7 @@ The buffer has enough data that playback can begin, but it may run out of data b
 ### Constants
 - [static var playthroughOK: MPMovieLoadState](./playthroughok.md)
 - [static var stalled: MPMovieLoadState](./stalled.md)
+- [MPMovieLoadStateUnknown](./mpmovieloadstateunknown.md)
 
 
 ---

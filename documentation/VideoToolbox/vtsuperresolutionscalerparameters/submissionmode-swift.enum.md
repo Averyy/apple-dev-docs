@@ -61,6 +61,8 @@ Use [`VTSuperResolutionScalerParameters.SubmissionMode.random`](./submissionmode
   Optional object that contains forward and backward optical flow with the previous frame.
 - [var submissionMode: VTSuperResolutionScalerParameters.SubmissionMode](./submissionmode-swift.property.md)
   Ordering of the input frames in this submission relative to the previous submission.
+- [destinationFrame](./destinationframe.md)
+  Destination frame that contains user-allocated pixel buffer that receives the results.
 
 
 ---

@@ -200,10 +200,325 @@
       "file_path": "documentation/hvf/custompartloader.md",
       "hash": "f745ca6d033f73905d3bf4695e6dbe5b245f69dd9310f1b87dc7776135d45676"
     },
+    "https://developer.apple.com/documentation/hvf/hvf_clear_part_cache": {
+      "etag": "\"e65-65d55d98bf9cb-df\"",
+      "file_path": "documentation/hvf/hvf_clear_part_cache.md",
+      "hash": "eb1ce05df54d9a532492f94018e035d2f67486ac27bfc559ce5d68af5b535094"
+    },
+    "https://developer.apple.com/documentation/hvf/hvf_close_part_renderer": {
+      "etag": "\"d08-65d55d98a7bf0-df\"",
+      "file_path": "documentation/hvf/hvf_close_part_renderer.md",
+      "hash": "e4807449e3d817f0137f6de12e6fec1669ef0611ee8543256b3955abf3b1f5d2"
+    },
+    "https://developer.apple.com/documentation/hvf/hvf_glyph_count": {
+      "etag": "\"e82-65d55d988f830-df\"",
+      "file_path": "documentation/hvf/hvf_glyph_count.md",
+      "hash": "811b2114820874219a6f6905a7f6e8cd20b4cc8faee20248126cad5502db30b2"
+    },
+    "https://developer.apple.com/documentation/hvf/hvf_library_version": {
+      "etag": "\"d2c-65d55d98a7bf0-df\"",
+      "file_path": "documentation/hvf/hvf_library_version.md",
+      "hash": "19818e68a1417d15d9f96e9b651d6053b790ed0220b37cea529b0ec61a4bb86e"
+    },
+    "https://developer.apple.com/documentation/hvf/hvf_open_part_renderer": {
+      "etag": "\"14f4-65d55d988f830-df\"",
+      "file_path": "documentation/hvf/hvf_open_part_renderer.md",
+      "hash": "feebe33f86120e6f4b5e4934157595c6ea0a2e4de9d9b4ac678f563541e9b863"
+    },
+    "https://developer.apple.com/documentation/hvf/hvf_part_count": {
+      "etag": "\"e20-65d55d988f830-df\"",
+      "file_path": "documentation/hvf/hvf_part_count.md",
+      "hash": "43f3a8c55f1eac748a01139a35eb95765bb99aaff6c2ffb72286e082d91af17c"
+    },
+    "https://developer.apple.com/documentation/hvf/hvf_part_renderer_storage_size": {
+      "etag": "\"d10-65d55d98bf9cb-df\"",
+      "file_path": "documentation/hvf/hvf_part_renderer_storage_size.md",
+      "hash": "e34955881352fd164150c066b11481e65264355649f0edcc47772cf6ec36eedf"
+    },
+    "https://developer.apple.com/documentation/hvf/hvf_render_current_part": {
+      "etag": "\"112c-65d55d98a7bf0-df\"",
+      "file_path": "documentation/hvf/hvf_render_current_part.md",
+      "hash": "cf4caf4e9206a0c2262863dd735447109a2ca1195d269f9e5962c3b9af0feb87"
+    },
+    "https://developer.apple.com/documentation/hvf/hvf_render_part_axis_count": {
+      "etag": "\"c62-65d55d98a7bf0-df\"",
+      "file_path": "documentation/hvf/hvf_render_part_axis_count.md",
+      "hash": "80818c40b0865b1ab5ff044a6ada2f270d334af12149b4d1abada34d51cc0c10"
+    },
+    "https://developer.apple.com/documentation/hvf/hvf_set_axis_value": {
+      "etag": "\"10b0-65d55d98a7bf0-df\"",
+      "file_path": "documentation/hvf/hvf_set_axis_value.md",
+      "hash": "1249b3de3e51ce7ea69cbf7377ae169445f474493ca9e75d6fdd15008f22a74d"
+    },
+    "https://developer.apple.com/documentation/hvf/hvf_set_render_part": {
+      "etag": "\"1010-65d55d98a7bf0-df\"",
+      "file_path": "documentation/hvf/hvf_set_render_part.md",
+      "hash": "a63457d77656c5534b957a0cfba115534f518792266dc119acc365c187ff023b"
+    },
+    "https://developer.apple.com/documentation/hvf/hvf_table_version": {
+      "etag": "\"e99-65d55d98a7bf0-df\"",
+      "file_path": "documentation/hvf/hvf_table_version.md",
+      "hash": "7bafefd1c5252bbd630b292e5e2a2f76fc8e76353e7ab32d3546eee87d3213a4"
+    },
+    "https://developer.apple.com/documentation/hvf/hvfaxisvalue": {
+      "etag": "\"b33-65d55d98bf9cb-df\"",
+      "file_path": "documentation/hvf/hvfaxisvalue.md",
+      "hash": "b216c571189e31abeb903bd9a3774ca738b1b9c475e7b632cfd77fe29e209205"
+    },
+    "https://developer.apple.com/documentation/hvf/hvflibraryversion-c.struct": {
+      "etag": "\"10af-65d55d98a7bf0-df\"",
+      "file_path": "documentation/hvf/hvflibraryversion-c.struct.md",
+      "hash": "0f6536778d906f0dd6dfcf9ec30117a3a0a3485d0fea77c0af74259a5474dbd7"
+    },
+    "https://developer.apple.com/documentation/hvf/hvflibraryversion-c.struct/major": {
+      "etag": "\"dc1-65d55d988f830-df\"",
+      "file_path": "documentation/hvf/hvflibraryversion-c.struct/major.md",
+      "hash": "c20f7feb29fc99214b83f931a78d61b1837b5c10ca24ed0826a84a9f77230ad0"
+    },
+    "https://developer.apple.com/documentation/hvf/hvflibraryversion-c.struct/minor": {
+      "etag": "\"dc1-65d55d988f830-df\"",
+      "file_path": "documentation/hvf/hvflibraryversion-c.struct/minor.md",
+      "hash": "b17ae03f73b0b81dad97bc8f2d6aa0ceb8be6fee0040fb35ad4c7be7a982e9de"
+    },
+    "https://developer.apple.com/documentation/hvf/hvflibraryversion-c.struct/patch": {
+      "etag": "\"dc1-65d55d988f830-df\"",
+      "file_path": "documentation/hvf/hvflibraryversion-c.struct/patch.md",
+      "hash": "5a018d3c28995aff8df7dca3e89df0ff9351311c1dc6c86bacf6bce7372a484c"
+    },
     "https://developer.apple.com/documentation/hvf/hvflibraryversion-swift.var": {
       "etag": "\"12ad-65d55d98a7bf0-df\"",
       "file_path": "documentation/hvf/hvflibraryversion-swift.var.md",
       "hash": "22f990ca1ca3d18141aceaf5ad65c540dbd98bae6a7151ea8be7076c3755e5df"
+    },
+    "https://developer.apple.com/documentation/hvf/hvfpartindex": {
+      "etag": "\"c43-65d55d98a7bf0-df\"",
+      "file_path": "documentation/hvf/hvfpartindex.md",
+      "hash": "953b26d68d018ae0b0360222bffb5b02065d74ca9e6c432609e2071b19780873"
+    },
+    "https://developer.apple.com/documentation/hvf/hvfpartinfo": {
+      "etag": "\"cb1-65d55d988f830-df\"",
+      "file_path": "documentation/hvf/hvfpartinfo.md",
+      "hash": "450171c596656bf6f113e294ee33ac5c1039e667c2ba31ec88b0366666e1b9cf"
+    },
+    "https://developer.apple.com/documentation/hvf/hvfpartinfo/partid": {
+      "etag": "\"e92-65d55d988f830-df\"",
+      "file_path": "documentation/hvf/hvfpartinfo/partid.md",
+      "hash": "1cca1112c2464a461443251375a513701121a7826d0f9eead3f816eff331571f"
+    },
+    "https://developer.apple.com/documentation/hvf/hvfpartrenderaction": {
+      "etag": "\"1235-65d55d98a7bf0-df\"",
+      "file_path": "documentation/hvf/hvfpartrenderaction.md",
+      "hash": "c6a957d8740638557d6039bec39a0293baec84b289b9d7ad8df9a3524f007b9e"
+    },
+    "https://developer.apple.com/documentation/hvf/hvfpartrenderaction/hvfpartrenderactioncontinue": {
+      "etag": "\"cc6-65d55d988f830-df\"",
+      "file_path": "documentation/hvf/hvfpartrenderaction/hvfpartrenderactioncontinue.md",
+      "hash": "76cfa9cd8e62eaacb38b76d986815f70f6a64972a480ce60f23ad691733d8006"
+    },
+    "https://developer.apple.com/documentation/hvf/hvfpartrenderaction/hvfpartrenderactionskip": {
+      "etag": "\"de1-65d55d988f830-df\"",
+      "file_path": "documentation/hvf/hvfpartrenderaction/hvfpartrenderactionskip.md",
+      "hash": "6ca04115f4995266492106cf76d50cf4b92445248633158e66f19d9eb92fcda8"
+    },
+    "https://developer.apple.com/documentation/hvf/hvfpartrenderaction/hvfpartrenderactionstop": {
+      "etag": "\"c8e-65d55d988f830-df\"",
+      "file_path": "documentation/hvf/hvfpartrenderaction/hvfpartrenderactionstop.md",
+      "hash": "201233f411f076f89b57af107fa045b878ca04782773282c48a889e510d4e938"
+    },
+    "https://developer.apple.com/documentation/hvf/hvfpartrenderinstruction": {
+      "etag": "\"271d-65d55d988f830-df\"",
+      "file_path": "documentation/hvf/hvfpartrenderinstruction.md",
+      "hash": "e82f3207b2c562d6958759ef4c8fd85405d37a09d2ab214e13a293a95cafa452"
+    },
+    "https://developer.apple.com/documentation/hvf/hvfpartrenderinstruction/hvfpartrenderinstructionaddcubic": {
+      "etag": "\"f4f-65d55d988f830-df\"",
+      "file_path": "documentation/hvf/hvfpartrenderinstruction/hvfpartrenderinstructionaddcubic.md",
+      "hash": "520e018bcb8fb1402f97ece0d5a5d29a2d11b83ff9df4dbc43c1921cbd5371af"
+    },
+    "https://developer.apple.com/documentation/hvf/hvfpartrenderinstruction/hvfpartrenderinstructionaddline": {
+      "etag": "\"f5b-65d55d988f830-df\"",
+      "file_path": "documentation/hvf/hvfpartrenderinstruction/hvfpartrenderinstructionaddline.md",
+      "hash": "3ca6c4993eae684759ad6d53622bd9947c950eaaae2155c80c7605c5fefc954d"
+    },
+    "https://developer.apple.com/documentation/hvf/hvfpartrenderinstruction/hvfpartrenderinstructionaddpoint": {
+      "etag": "\"f25-65d55d988f830-df\"",
+      "file_path": "documentation/hvf/hvfpartrenderinstruction/hvfpartrenderinstructionaddpoint.md",
+      "hash": "d1b4efc14c276352adf5dcfd2ffc0cf66791fcb61c5979f97aca019b5f4efc28"
+    },
+    "https://developer.apple.com/documentation/hvf/hvfpartrenderinstruction/hvfpartrenderinstructionaddquad": {
+      "etag": "\"f66-65d55d988f830-df\"",
+      "file_path": "documentation/hvf/hvfpartrenderinstruction/hvfpartrenderinstructionaddquad.md",
+      "hash": "b4f2fa30b98d8c82bb061401549ec7921e7d94dda9693ae479dffffa07f799dd"
+    },
+    "https://developer.apple.com/documentation/hvf/hvfpartrenderinstruction/hvfpartrenderinstructionbeginpart": {
+      "etag": "\"10a5-65d55d988f830-df\"",
+      "file_path": "documentation/hvf/hvfpartrenderinstruction/hvfpartrenderinstructionbeginpart.md",
+      "hash": "73e639ff2eff07df4cf597f1c4001b5254170ebdbc69cd50d6064dcc255cd60c"
+    },
+    "https://developer.apple.com/documentation/hvf/hvfpartrenderinstruction/hvfpartrenderinstructionbeginpath": {
+      "etag": "\"e03-65d55d988f830-df\"",
+      "file_path": "documentation/hvf/hvfpartrenderinstruction/hvfpartrenderinstructionbeginpath.md",
+      "hash": "561e6af46a7b087e8b5648ac87b92e1d1f9f138c1bd630fe8d4a42698154d731"
+    },
+    "https://developer.apple.com/documentation/hvf/hvfpartrenderinstruction/hvfpartrenderinstructionclosepath": {
+      "etag": "\"def-65d55d988f830-df\"",
+      "file_path": "documentation/hvf/hvfpartrenderinstruction/hvfpartrenderinstructionclosepath.md",
+      "hash": "5f4d3d7d7b3b5ad6f65d94f51aed6586aa206e50f6ea44d8c9936a33abdbd796"
+    },
+    "https://developer.apple.com/documentation/hvf/hvfpartrenderinstruction/hvfpartrenderinstructionendpart": {
+      "etag": "\"f64-65d55d988f830-df\"",
+      "file_path": "documentation/hvf/hvfpartrenderinstruction/hvfpartrenderinstructionendpart.md",
+      "hash": "5a960218cd4cffbff0193cbde03ea5cb48c866b32d3c0491ece2394780447e37"
+    },
+    "https://developer.apple.com/documentation/hvf/hvfpartrenderinstruction/hvfpartrenderinstructionendpath": {
+      "etag": "\"df3-65d55d988f830-df\"",
+      "file_path": "documentation/hvf/hvfpartrenderinstruction/hvfpartrenderinstructionendpath.md",
+      "hash": "333b7652d640107b5467eb3646b6a478bef7a05d16fdde288af160b445f153bd"
+    },
+    "https://developer.apple.com/documentation/hvf/hvfpartrenderinstruction/hvfpartrenderinstructionstop": {
+      "etag": "\"f05-65d55d988f830-df\"",
+      "file_path": "documentation/hvf/hvfpartrenderinstruction/hvfpartrenderinstructionstop.md",
+      "hash": "8d7ad28cb580796459dc9a0ff8bdc503084daad7dcac2239f0a10c55a3605f50"
+    },
+    "https://developer.apple.com/documentation/hvf/hvfpartrenderparameters": {
+      "etag": "\"1d9e-65d55d98a7bf0-df\"",
+      "file_path": "documentation/hvf/hvfpartrenderparameters.md",
+      "hash": "fc0c08f33a5804236d80322fd6544c6ef98cc33b8bab00cf281bfda11f0d2806"
+    },
+    "https://developer.apple.com/documentation/hvf/hvfpartrenderparameters/addcubic": {
+      "etag": "\"1424-65d55d98a7bf0-df\"",
+      "file_path": "documentation/hvf/hvfpartrenderparameters/addcubic.md",
+      "hash": "29198ce956d58384713bdd922da27e3ab8d74915374d9dc52f021f2063c25371"
+    },
+    "https://developer.apple.com/documentation/hvf/hvfpartrenderparameters/addcubic/cp1": {
+      "etag": "\"1167-65d55d98a7bf0-df\"",
+      "file_path": "documentation/hvf/hvfpartrenderparameters/addcubic/cp1.md",
+      "hash": "1b220a5f4d6317f9a7788a4e0306053111f5775d02cf64b153c64f3f88767a62"
+    },
+    "https://developer.apple.com/documentation/hvf/hvfpartrenderparameters/addcubic/cp2": {
+      "etag": "\"1169-65d55d98a7bf0-df\"",
+      "file_path": "documentation/hvf/hvfpartrenderparameters/addcubic/cp2.md",
+      "hash": "90ab18ccc726b6aa164d139ef2425f0d07358b31f7226e1092f7fb11994d92dc"
+    },
+    "https://developer.apple.com/documentation/hvf/hvfpartrenderparameters/addcubic/onpt": {
+      "etag": "\"1177-65d55d98a7bf0-df\"",
+      "file_path": "documentation/hvf/hvfpartrenderparameters/addcubic/onpt.md",
+      "hash": "9934faf7b09d61e80b4909b55c743ee533ebc5813a768fb954cdaf4ccd0236b0"
+    },
+    "https://developer.apple.com/documentation/hvf/hvfpartrenderparameters/addpoint": {
+      "etag": "\"1091-65d55d98a7bf0-df\"",
+      "file_path": "documentation/hvf/hvfpartrenderparameters/addpoint.md",
+      "hash": "6acf0c6d14a88ae5e4731599a1ba47f5db9d081cf128ea3fc8068e70905aaa10"
+    },
+    "https://developer.apple.com/documentation/hvf/hvfpartrenderparameters/addpoint/pt": {
+      "etag": "\"1175-65d55d98a7bf0-df\"",
+      "file_path": "documentation/hvf/hvfpartrenderparameters/addpoint/pt.md",
+      "hash": "4b463efe130a70caeb071e16d243e08cff4766fedcf3e676b30b00ea900fcb3a"
+    },
+    "https://developer.apple.com/documentation/hvf/hvfpartrenderparameters/addquad": {
+      "etag": "\"120e-65d55d98a7bf0-df\"",
+      "file_path": "documentation/hvf/hvfpartrenderparameters/addquad.md",
+      "hash": "3a07efa747ef01371692ebf3d7efbff49ddc716ae019a4bb0a0440cb619254be"
+    },
+    "https://developer.apple.com/documentation/hvf/hvfpartrenderparameters/addquad/offpt": {
+      "etag": "\"1173-65d55d98a7bf0-df\"",
+      "file_path": "documentation/hvf/hvfpartrenderparameters/addquad/offpt.md",
+      "hash": "9d6edd18e8fb5767c4cddbb1a7349721c907c164bddd763cca605df284736e4a"
+    },
+    "https://developer.apple.com/documentation/hvf/hvfpartrenderparameters/addquad/onpt": {
+      "etag": "\"1173-65d55d98a7bf0-df\"",
+      "file_path": "documentation/hvf/hvfpartrenderparameters/addquad/onpt.md",
+      "hash": "93310c2b13efbb3dc8474f1f4fed2650b1f1e953d2fbeca2d03f14331eec9f66"
+    },
+    "https://developer.apple.com/documentation/hvf/hvfpartrenderparameters/beginpart": {
+      "etag": "\"1073-65d55d98a7bf0-df\"",
+      "file_path": "documentation/hvf/hvfpartrenderparameters/beginpart.md",
+      "hash": "6d9a5887c8ebcb8bb94c51a84b2dc1abf88d086e710417d543db34bac2988f37"
+    },
+    "https://developer.apple.com/documentation/hvf/hvfpartrenderparameters/beginpart/partinfo": {
+      "etag": "\"1260-65d55d98a7bf0-df\"",
+      "file_path": "documentation/hvf/hvfpartrenderparameters/beginpart/partinfo.md",
+      "hash": "e6d88bd1aeaa93c21c3156a4372611060b85259f592f4de69a4aa2b73f5207da"
+    },
+    "https://developer.apple.com/documentation/hvf/hvfpartrenderparameters/endpart": {
+      "etag": "\"104f-65d55d98a7bf0-df\"",
+      "file_path": "documentation/hvf/hvfpartrenderparameters/endpart.md",
+      "hash": "1d03b76595546fa0b19077053c50f7eace4c331cbc37ffc9eba11061f86c7312"
+    },
+    "https://developer.apple.com/documentation/hvf/hvfpartrenderparameters/endpart/partinfo": {
+      "etag": "\"1248-65d55d98a7bf0-df\"",
+      "file_path": "documentation/hvf/hvfpartrenderparameters/endpart/partinfo.md",
+      "hash": "fca08a2b8fc52389e9aad72c32e5fd54529ac488af43c20babbb2c968f3d7ede"
+    },
+    "https://developer.apple.com/documentation/hvf/hvfpartrenderparameters/partinfo": {
+      "etag": "\"1086-65d55d98a7bf0-df\"",
+      "file_path": "documentation/hvf/hvfpartrenderparameters/partinfo.md",
+      "hash": "adf08c12c5ccfd9b430a57cad11f6edc944a44c70ea3c4278c993e9b37a43cc7"
+    },
+    "https://developer.apple.com/documentation/hvf/hvfpartrenderparameters/point": {
+      "etag": "\"103b-65d55d98a7bf0-df\"",
+      "file_path": "documentation/hvf/hvfpartrenderparameters/point.md",
+      "hash": "347057e978eddf6e504f2639a0326af335731d44f081d041909a3e55ceb863ea"
+    },
+    "https://developer.apple.com/documentation/hvf/hvfpoint": {
+      "etag": "\"d93-65d55d98a7bf0-df\"",
+      "file_path": "documentation/hvf/hvfpoint.md",
+      "hash": "b613a8895f6e9a8d2d163acac8849d6cda6a00248e06e67d76dd3d9f4c2e3f84"
+    },
+    "https://developer.apple.com/documentation/hvf/hvfpoint/x": {
+      "etag": "\"d48-65d55d98a7bf0-df\"",
+      "file_path": "documentation/hvf/hvfpoint/x.md",
+      "hash": "aeb81701a55f9e91fbdd5568824abc2f10a7d131b0643210915d912d87848eb8"
+    },
+    "https://developer.apple.com/documentation/hvf/hvfpoint/y": {
+      "etag": "\"d48-65d55d98a7bf0-df\"",
+      "file_path": "documentation/hvf/hvfpoint/y.md",
+      "hash": "d83270dc0ef193c324ea6fce7b8adce24751e0069427344ed93fdd38832bb0b1"
+    },
+    "https://developer.apple.com/documentation/hvf/hvfrendercontext": {
+      "etag": "\"df2-65d55d98a7bf0-df\"",
+      "file_path": "documentation/hvf/hvfrendercontext.md",
+      "hash": "b89845296f09160fe04d31fcb7865c6348cb0814dcb8c1cbfd6c559c3c15d247"
+    },
+    "https://developer.apple.com/documentation/hvf/hvfrotation": {
+      "etag": "\"b2c-65d55d98a7bf0-df\"",
+      "file_path": "documentation/hvf/hvfrotation.md",
+      "hash": "4bdf9c8222a3cf4904cb74ff4817fcd0d785752578c32c30574684669a6a44a2"
+    },
+    "https://developer.apple.com/documentation/hvf/hvftableversion": {
+      "etag": "\"ee1-65d55d98bf9cb-df\"",
+      "file_path": "documentation/hvf/hvftableversion.md",
+      "hash": "97c9db66b93e7f74c5eb4d0c151cc5c54bbb486e9183732bacbf1592641aa1c0"
+    },
+    "https://developer.apple.com/documentation/hvf/hvftableversion/major": {
+      "etag": "\"db6-65d55d98a7bf0-df\"",
+      "file_path": "documentation/hvf/hvftableversion/major.md",
+      "hash": "820492cb67d9b9e5c83d25de5c192fbeec39f11a78655a27865fdfce53adecaa"
+    },
+    "https://developer.apple.com/documentation/hvf/hvftableversion/minor": {
+      "etag": "\"db6-65d55d98a7bf0-df\"",
+      "file_path": "documentation/hvf/hvftableversion/minor.md",
+      "hash": "c30ef45185eb04e2623994d098bcc35291662d6b9cfffd3227f066941372419b"
+    },
+    "https://developer.apple.com/documentation/hvf/hvftranslation": {
+      "etag": "\"e03-65d55d98bf9cb-df\"",
+      "file_path": "documentation/hvf/hvftranslation.md",
+      "hash": "2bc5085757cb298f1bbabeb0847d42def89bb88512e70ab9f76e2c72c6902ec2"
+    },
+    "https://developer.apple.com/documentation/hvf/hvftranslation/dx": {
+      "etag": "\"d9b-65d55d98a7bf0-df\"",
+      "file_path": "documentation/hvf/hvftranslation/dx.md",
+      "hash": "ccc4c093aaa441ac33ef5cd7c1fa61250a871951e7a9695bf3fdce502edeb9bf"
+    },
+    "https://developer.apple.com/documentation/hvf/hvftranslation/dy": {
+      "etag": "\"d9b-65d55d98a7bf0-df\"",
+      "file_path": "documentation/hvf/hvftranslation/dy.md",
+      "hash": "3f8854880c6fcb5752842760330322600fe2ebaaee48ccd3cde84c6381ddce95"
+    },
+    "https://developer.apple.com/documentation/hvf/hvfxycoord": {
+      "etag": "\"a49-65d55d988f830-df\"",
+      "file_path": "documentation/hvf/hvfxycoord.md",
+      "hash": "fc15e36b28b0a36f9e105d3df9cd3c5d9875069a755416d0856f721f4095791d"
     },
     "https://developer.apple.com/documentation/hvf/hvglpartloader": {
       "etag": "\"194e-65d55d98bf9cb-df\"",
@@ -795,10 +1110,325 @@
       "file_path": "documentation/hvf/custompartloader.md",
       "hash": "f745ca6d033f73905d3bf4695e6dbe5b245f69dd9310f1b87dc7776135d45676"
     },
+    "https://developer.apple.com/tutorials/data/documentation/hvf/hvf_clear_part_cache.json": {
+      "etag": "\"e65-65d55d98bf9cb-df\"",
+      "file_path": "documentation/hvf/hvf_clear_part_cache.md",
+      "hash": "eb1ce05df54d9a532492f94018e035d2f67486ac27bfc559ce5d68af5b535094"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/hvf/hvf_close_part_renderer.json": {
+      "etag": "\"d08-65d55d98a7bf0-df\"",
+      "file_path": "documentation/hvf/hvf_close_part_renderer.md",
+      "hash": "e4807449e3d817f0137f6de12e6fec1669ef0611ee8543256b3955abf3b1f5d2"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/hvf/hvf_glyph_count.json": {
+      "etag": "\"e82-65d55d988f830-df\"",
+      "file_path": "documentation/hvf/hvf_glyph_count.md",
+      "hash": "811b2114820874219a6f6905a7f6e8cd20b4cc8faee20248126cad5502db30b2"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/hvf/hvf_library_version.json": {
+      "etag": "\"d2c-65d55d98a7bf0-df\"",
+      "file_path": "documentation/hvf/hvf_library_version.md",
+      "hash": "19818e68a1417d15d9f96e9b651d6053b790ed0220b37cea529b0ec61a4bb86e"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/hvf/hvf_open_part_renderer.json": {
+      "etag": "\"14f4-65d55d988f830-df\"",
+      "file_path": "documentation/hvf/hvf_open_part_renderer.md",
+      "hash": "feebe33f86120e6f4b5e4934157595c6ea0a2e4de9d9b4ac678f563541e9b863"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/hvf/hvf_part_count.json": {
+      "etag": "\"e20-65d55d988f830-df\"",
+      "file_path": "documentation/hvf/hvf_part_count.md",
+      "hash": "43f3a8c55f1eac748a01139a35eb95765bb99aaff6c2ffb72286e082d91af17c"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/hvf/hvf_part_renderer_storage_size.json": {
+      "etag": "\"d10-65d55d98bf9cb-df\"",
+      "file_path": "documentation/hvf/hvf_part_renderer_storage_size.md",
+      "hash": "e34955881352fd164150c066b11481e65264355649f0edcc47772cf6ec36eedf"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/hvf/hvf_render_current_part.json": {
+      "etag": "\"112c-65d55d98a7bf0-df\"",
+      "file_path": "documentation/hvf/hvf_render_current_part.md",
+      "hash": "cf4caf4e9206a0c2262863dd735447109a2ca1195d269f9e5962c3b9af0feb87"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/hvf/hvf_render_part_axis_count.json": {
+      "etag": "\"c62-65d55d98a7bf0-df\"",
+      "file_path": "documentation/hvf/hvf_render_part_axis_count.md",
+      "hash": "80818c40b0865b1ab5ff044a6ada2f270d334af12149b4d1abada34d51cc0c10"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/hvf/hvf_set_axis_value.json": {
+      "etag": "\"10b0-65d55d98a7bf0-df\"",
+      "file_path": "documentation/hvf/hvf_set_axis_value.md",
+      "hash": "1249b3de3e51ce7ea69cbf7377ae169445f474493ca9e75d6fdd15008f22a74d"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/hvf/hvf_set_render_part.json": {
+      "etag": "\"1010-65d55d98a7bf0-df\"",
+      "file_path": "documentation/hvf/hvf_set_render_part.md",
+      "hash": "a63457d77656c5534b957a0cfba115534f518792266dc119acc365c187ff023b"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/hvf/hvf_table_version.json": {
+      "etag": "\"e99-65d55d98a7bf0-df\"",
+      "file_path": "documentation/hvf/hvf_table_version.md",
+      "hash": "7bafefd1c5252bbd630b292e5e2a2f76fc8e76353e7ab32d3546eee87d3213a4"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/hvf/hvfaxisvalue.json": {
+      "etag": "\"b33-65d55d98bf9cb-df\"",
+      "file_path": "documentation/hvf/hvfaxisvalue.md",
+      "hash": "b216c571189e31abeb903bd9a3774ca738b1b9c475e7b632cfd77fe29e209205"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/hvf/hvflibraryversion-c.struct.json": {
+      "etag": "\"10af-65d55d98a7bf0-df\"",
+      "file_path": "documentation/hvf/hvflibraryversion-c.struct.md",
+      "hash": "0f6536778d906f0dd6dfcf9ec30117a3a0a3485d0fea77c0af74259a5474dbd7"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/hvf/hvflibraryversion-c.struct/major.json": {
+      "etag": "\"dc1-65d55d988f830-df\"",
+      "file_path": "documentation/hvf/hvflibraryversion-c.struct/major.md",
+      "hash": "c20f7feb29fc99214b83f931a78d61b1837b5c10ca24ed0826a84a9f77230ad0"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/hvf/hvflibraryversion-c.struct/minor.json": {
+      "etag": "\"dc1-65d55d988f830-df\"",
+      "file_path": "documentation/hvf/hvflibraryversion-c.struct/minor.md",
+      "hash": "b17ae03f73b0b81dad97bc8f2d6aa0ceb8be6fee0040fb35ad4c7be7a982e9de"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/hvf/hvflibraryversion-c.struct/patch.json": {
+      "etag": "\"dc1-65d55d988f830-df\"",
+      "file_path": "documentation/hvf/hvflibraryversion-c.struct/patch.md",
+      "hash": "5a018d3c28995aff8df7dca3e89df0ff9351311c1dc6c86bacf6bce7372a484c"
+    },
     "https://developer.apple.com/tutorials/data/documentation/hvf/hvflibraryversion-swift.var.json": {
       "etag": "\"12ad-65d55d98a7bf0-df\"",
       "file_path": "documentation/hvf/hvflibraryversion-swift.var.md",
       "hash": "22f990ca1ca3d18141aceaf5ad65c540dbd98bae6a7151ea8be7076c3755e5df"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/hvf/hvfpartindex.json": {
+      "etag": "\"c43-65d55d98a7bf0-df\"",
+      "file_path": "documentation/hvf/hvfpartindex.md",
+      "hash": "953b26d68d018ae0b0360222bffb5b02065d74ca9e6c432609e2071b19780873"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/hvf/hvfpartinfo.json": {
+      "etag": "\"cb1-65d55d988f830-df\"",
+      "file_path": "documentation/hvf/hvfpartinfo.md",
+      "hash": "450171c596656bf6f113e294ee33ac5c1039e667c2ba31ec88b0366666e1b9cf"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/hvf/hvfpartinfo/partid.json": {
+      "etag": "\"e92-65d55d988f830-df\"",
+      "file_path": "documentation/hvf/hvfpartinfo/partid.md",
+      "hash": "1cca1112c2464a461443251375a513701121a7826d0f9eead3f816eff331571f"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/hvf/hvfpartrenderaction.json": {
+      "etag": "\"1235-65d55d98a7bf0-df\"",
+      "file_path": "documentation/hvf/hvfpartrenderaction.md",
+      "hash": "c6a957d8740638557d6039bec39a0293baec84b289b9d7ad8df9a3524f007b9e"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/hvf/hvfpartrenderaction/hvfpartrenderactioncontinue.json": {
+      "etag": "\"cc6-65d55d988f830-df\"",
+      "file_path": "documentation/hvf/hvfpartrenderaction/hvfpartrenderactioncontinue.md",
+      "hash": "76cfa9cd8e62eaacb38b76d986815f70f6a64972a480ce60f23ad691733d8006"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/hvf/hvfpartrenderaction/hvfpartrenderactionskip.json": {
+      "etag": "\"de1-65d55d988f830-df\"",
+      "file_path": "documentation/hvf/hvfpartrenderaction/hvfpartrenderactionskip.md",
+      "hash": "6ca04115f4995266492106cf76d50cf4b92445248633158e66f19d9eb92fcda8"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/hvf/hvfpartrenderaction/hvfpartrenderactionstop.json": {
+      "etag": "\"c8e-65d55d988f830-df\"",
+      "file_path": "documentation/hvf/hvfpartrenderaction/hvfpartrenderactionstop.md",
+      "hash": "201233f411f076f89b57af107fa045b878ca04782773282c48a889e510d4e938"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/hvf/hvfpartrenderinstruction.json": {
+      "etag": "\"271d-65d55d988f830-df\"",
+      "file_path": "documentation/hvf/hvfpartrenderinstruction.md",
+      "hash": "e82f3207b2c562d6958759ef4c8fd85405d37a09d2ab214e13a293a95cafa452"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/hvf/hvfpartrenderinstruction/hvfpartrenderinstructionaddcubic.json": {
+      "etag": "\"f4f-65d55d988f830-df\"",
+      "file_path": "documentation/hvf/hvfpartrenderinstruction/hvfpartrenderinstructionaddcubic.md",
+      "hash": "520e018bcb8fb1402f97ece0d5a5d29a2d11b83ff9df4dbc43c1921cbd5371af"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/hvf/hvfpartrenderinstruction/hvfpartrenderinstructionaddline.json": {
+      "etag": "\"f5b-65d55d988f830-df\"",
+      "file_path": "documentation/hvf/hvfpartrenderinstruction/hvfpartrenderinstructionaddline.md",
+      "hash": "3ca6c4993eae684759ad6d53622bd9947c950eaaae2155c80c7605c5fefc954d"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/hvf/hvfpartrenderinstruction/hvfpartrenderinstructionaddpoint.json": {
+      "etag": "\"f25-65d55d988f830-df\"",
+      "file_path": "documentation/hvf/hvfpartrenderinstruction/hvfpartrenderinstructionaddpoint.md",
+      "hash": "d1b4efc14c276352adf5dcfd2ffc0cf66791fcb61c5979f97aca019b5f4efc28"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/hvf/hvfpartrenderinstruction/hvfpartrenderinstructionaddquad.json": {
+      "etag": "\"f66-65d55d988f830-df\"",
+      "file_path": "documentation/hvf/hvfpartrenderinstruction/hvfpartrenderinstructionaddquad.md",
+      "hash": "b4f2fa30b98d8c82bb061401549ec7921e7d94dda9693ae479dffffa07f799dd"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/hvf/hvfpartrenderinstruction/hvfpartrenderinstructionbeginpart.json": {
+      "etag": "\"10a5-65d55d988f830-df\"",
+      "file_path": "documentation/hvf/hvfpartrenderinstruction/hvfpartrenderinstructionbeginpart.md",
+      "hash": "73e639ff2eff07df4cf597f1c4001b5254170ebdbc69cd50d6064dcc255cd60c"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/hvf/hvfpartrenderinstruction/hvfpartrenderinstructionbeginpath.json": {
+      "etag": "\"e03-65d55d988f830-df\"",
+      "file_path": "documentation/hvf/hvfpartrenderinstruction/hvfpartrenderinstructionbeginpath.md",
+      "hash": "561e6af46a7b087e8b5648ac87b92e1d1f9f138c1bd630fe8d4a42698154d731"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/hvf/hvfpartrenderinstruction/hvfpartrenderinstructionclosepath.json": {
+      "etag": "\"def-65d55d988f830-df\"",
+      "file_path": "documentation/hvf/hvfpartrenderinstruction/hvfpartrenderinstructionclosepath.md",
+      "hash": "5f4d3d7d7b3b5ad6f65d94f51aed6586aa206e50f6ea44d8c9936a33abdbd796"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/hvf/hvfpartrenderinstruction/hvfpartrenderinstructionendpart.json": {
+      "etag": "\"f64-65d55d988f830-df\"",
+      "file_path": "documentation/hvf/hvfpartrenderinstruction/hvfpartrenderinstructionendpart.md",
+      "hash": "5a960218cd4cffbff0193cbde03ea5cb48c866b32d3c0491ece2394780447e37"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/hvf/hvfpartrenderinstruction/hvfpartrenderinstructionendpath.json": {
+      "etag": "\"df3-65d55d988f830-df\"",
+      "file_path": "documentation/hvf/hvfpartrenderinstruction/hvfpartrenderinstructionendpath.md",
+      "hash": "333b7652d640107b5467eb3646b6a478bef7a05d16fdde288af160b445f153bd"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/hvf/hvfpartrenderinstruction/hvfpartrenderinstructionstop.json": {
+      "etag": "\"f05-65d55d988f830-df\"",
+      "file_path": "documentation/hvf/hvfpartrenderinstruction/hvfpartrenderinstructionstop.md",
+      "hash": "8d7ad28cb580796459dc9a0ff8bdc503084daad7dcac2239f0a10c55a3605f50"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/hvf/hvfpartrenderparameters.json": {
+      "etag": "\"1d9e-65d55d98a7bf0-df\"",
+      "file_path": "documentation/hvf/hvfpartrenderparameters.md",
+      "hash": "fc0c08f33a5804236d80322fd6544c6ef98cc33b8bab00cf281bfda11f0d2806"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/hvf/hvfpartrenderparameters/addcubic.json": {
+      "etag": "\"1424-65d55d98a7bf0-df\"",
+      "file_path": "documentation/hvf/hvfpartrenderparameters/addcubic.md",
+      "hash": "29198ce956d58384713bdd922da27e3ab8d74915374d9dc52f021f2063c25371"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/hvf/hvfpartrenderparameters/addcubic/cp1.json": {
+      "etag": "\"1167-65d55d98a7bf0-df\"",
+      "file_path": "documentation/hvf/hvfpartrenderparameters/addcubic/cp1.md",
+      "hash": "1b220a5f4d6317f9a7788a4e0306053111f5775d02cf64b153c64f3f88767a62"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/hvf/hvfpartrenderparameters/addcubic/cp2.json": {
+      "etag": "\"1169-65d55d98a7bf0-df\"",
+      "file_path": "documentation/hvf/hvfpartrenderparameters/addcubic/cp2.md",
+      "hash": "90ab18ccc726b6aa164d139ef2425f0d07358b31f7226e1092f7fb11994d92dc"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/hvf/hvfpartrenderparameters/addcubic/onpt.json": {
+      "etag": "\"1177-65d55d98a7bf0-df\"",
+      "file_path": "documentation/hvf/hvfpartrenderparameters/addcubic/onpt.md",
+      "hash": "9934faf7b09d61e80b4909b55c743ee533ebc5813a768fb954cdaf4ccd0236b0"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/hvf/hvfpartrenderparameters/addpoint.json": {
+      "etag": "\"1091-65d55d98a7bf0-df\"",
+      "file_path": "documentation/hvf/hvfpartrenderparameters/addpoint.md",
+      "hash": "6acf0c6d14a88ae5e4731599a1ba47f5db9d081cf128ea3fc8068e70905aaa10"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/hvf/hvfpartrenderparameters/addpoint/pt.json": {
+      "etag": "\"1175-65d55d98a7bf0-df\"",
+      "file_path": "documentation/hvf/hvfpartrenderparameters/addpoint/pt.md",
+      "hash": "4b463efe130a70caeb071e16d243e08cff4766fedcf3e676b30b00ea900fcb3a"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/hvf/hvfpartrenderparameters/addquad.json": {
+      "etag": "\"120e-65d55d98a7bf0-df\"",
+      "file_path": "documentation/hvf/hvfpartrenderparameters/addquad.md",
+      "hash": "3a07efa747ef01371692ebf3d7efbff49ddc716ae019a4bb0a0440cb619254be"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/hvf/hvfpartrenderparameters/addquad/offpt.json": {
+      "etag": "\"1173-65d55d98a7bf0-df\"",
+      "file_path": "documentation/hvf/hvfpartrenderparameters/addquad/offpt.md",
+      "hash": "9d6edd18e8fb5767c4cddbb1a7349721c907c164bddd763cca605df284736e4a"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/hvf/hvfpartrenderparameters/addquad/onpt.json": {
+      "etag": "\"1173-65d55d98a7bf0-df\"",
+      "file_path": "documentation/hvf/hvfpartrenderparameters/addquad/onpt.md",
+      "hash": "93310c2b13efbb3dc8474f1f4fed2650b1f1e953d2fbeca2d03f14331eec9f66"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/hvf/hvfpartrenderparameters/beginpart.json": {
+      "etag": "\"1073-65d55d98a7bf0-df\"",
+      "file_path": "documentation/hvf/hvfpartrenderparameters/beginpart.md",
+      "hash": "6d9a5887c8ebcb8bb94c51a84b2dc1abf88d086e710417d543db34bac2988f37"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/hvf/hvfpartrenderparameters/beginpart/partinfo.json": {
+      "etag": "\"1260-65d55d98a7bf0-df\"",
+      "file_path": "documentation/hvf/hvfpartrenderparameters/beginpart/partinfo.md",
+      "hash": "e6d88bd1aeaa93c21c3156a4372611060b85259f592f4de69a4aa2b73f5207da"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/hvf/hvfpartrenderparameters/endpart.json": {
+      "etag": "\"104f-65d55d98a7bf0-df\"",
+      "file_path": "documentation/hvf/hvfpartrenderparameters/endpart.md",
+      "hash": "1d03b76595546fa0b19077053c50f7eace4c331cbc37ffc9eba11061f86c7312"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/hvf/hvfpartrenderparameters/endpart/partinfo.json": {
+      "etag": "\"1248-65d55d98a7bf0-df\"",
+      "file_path": "documentation/hvf/hvfpartrenderparameters/endpart/partinfo.md",
+      "hash": "fca08a2b8fc52389e9aad72c32e5fd54529ac488af43c20babbb2c968f3d7ede"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/hvf/hvfpartrenderparameters/partinfo.json": {
+      "etag": "\"1086-65d55d98a7bf0-df\"",
+      "file_path": "documentation/hvf/hvfpartrenderparameters/partinfo.md",
+      "hash": "adf08c12c5ccfd9b430a57cad11f6edc944a44c70ea3c4278c993e9b37a43cc7"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/hvf/hvfpartrenderparameters/point.json": {
+      "etag": "\"103b-65d55d98a7bf0-df\"",
+      "file_path": "documentation/hvf/hvfpartrenderparameters/point.md",
+      "hash": "347057e978eddf6e504f2639a0326af335731d44f081d041909a3e55ceb863ea"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/hvf/hvfpoint.json": {
+      "etag": "\"d93-65d55d98a7bf0-df\"",
+      "file_path": "documentation/hvf/hvfpoint.md",
+      "hash": "b613a8895f6e9a8d2d163acac8849d6cda6a00248e06e67d76dd3d9f4c2e3f84"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/hvf/hvfpoint/x.json": {
+      "etag": "\"d48-65d55d98a7bf0-df\"",
+      "file_path": "documentation/hvf/hvfpoint/x.md",
+      "hash": "aeb81701a55f9e91fbdd5568824abc2f10a7d131b0643210915d912d87848eb8"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/hvf/hvfpoint/y.json": {
+      "etag": "\"d48-65d55d98a7bf0-df\"",
+      "file_path": "documentation/hvf/hvfpoint/y.md",
+      "hash": "d83270dc0ef193c324ea6fce7b8adce24751e0069427344ed93fdd38832bb0b1"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/hvf/hvfrendercontext.json": {
+      "etag": "\"df2-65d55d98a7bf0-df\"",
+      "file_path": "documentation/hvf/hvfrendercontext.md",
+      "hash": "b89845296f09160fe04d31fcb7865c6348cb0814dcb8c1cbfd6c559c3c15d247"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/hvf/hvfrotation.json": {
+      "etag": "\"b2c-65d55d98a7bf0-df\"",
+      "file_path": "documentation/hvf/hvfrotation.md",
+      "hash": "4bdf9c8222a3cf4904cb74ff4817fcd0d785752578c32c30574684669a6a44a2"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/hvf/hvftableversion.json": {
+      "etag": "\"ee1-65d55d98bf9cb-df\"",
+      "file_path": "documentation/hvf/hvftableversion.md",
+      "hash": "97c9db66b93e7f74c5eb4d0c151cc5c54bbb486e9183732bacbf1592641aa1c0"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/hvf/hvftableversion/major.json": {
+      "etag": "\"db6-65d55d98a7bf0-df\"",
+      "file_path": "documentation/hvf/hvftableversion/major.md",
+      "hash": "820492cb67d9b9e5c83d25de5c192fbeec39f11a78655a27865fdfce53adecaa"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/hvf/hvftableversion/minor.json": {
+      "etag": "\"db6-65d55d98a7bf0-df\"",
+      "file_path": "documentation/hvf/hvftableversion/minor.md",
+      "hash": "c30ef45185eb04e2623994d098bcc35291662d6b9cfffd3227f066941372419b"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/hvf/hvftranslation.json": {
+      "etag": "\"e03-65d55d98bf9cb-df\"",
+      "file_path": "documentation/hvf/hvftranslation.md",
+      "hash": "2bc5085757cb298f1bbabeb0847d42def89bb88512e70ab9f76e2c72c6902ec2"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/hvf/hvftranslation/dx.json": {
+      "etag": "\"d9b-65d55d98a7bf0-df\"",
+      "file_path": "documentation/hvf/hvftranslation/dx.md",
+      "hash": "ccc4c093aaa441ac33ef5cd7c1fa61250a871951e7a9695bf3fdce502edeb9bf"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/hvf/hvftranslation/dy.json": {
+      "etag": "\"d9b-65d55d98a7bf0-df\"",
+      "file_path": "documentation/hvf/hvftranslation/dy.md",
+      "hash": "3f8854880c6fcb5752842760330322600fe2ebaaee48ccd3cde84c6381ddce95"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/hvf/hvfxycoord.json": {
+      "etag": "\"a49-65d55d988f830-df\"",
+      "file_path": "documentation/hvf/hvfxycoord.md",
+      "hash": "fc15e36b28b0a36f9e105d3df9cd3c5d9875069a755416d0856f721f4095791d"
     },
     "https://developer.apple.com/tutorials/data/documentation/hvf/hvglpartloader.json": {
       "etag": "\"194e-65d55d98bf9cb-df\"",
@@ -1193,8 +1823,8 @@
   },
   "metadata": {
     "render": {
-      "version": 1
+      "version": 2
     },
-    "total_pages": 238
+    "total_pages": 364
   }
 }

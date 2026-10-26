@@ -27,6 +27,15 @@ protocol NSImageDelegate : NSObjectProtocol
 ### Managing Incremental Loads
 - [NSImage.LoadStatus](./nsimage/loadstatus.md)
   Status values for incremental image loading.
+### Deprecated
+- [- image:didLoadPartOfRepresentation:withValidRows:](./nsimagedelegate/image_didloadpartofrepresentation_withvalidrows_.md)
+  Tells the delegate that part of the incrementally loaded image data is available.
+- [- image:didLoadRepresentation:withStatus:](./nsimagedelegate/image_didloadrepresentation_withstatus_.md)
+  Tells the delegate that an incrementally loaded image has been loaded and decompressed as completely as is possible.
+- [- image:didLoadRepresentationHeader:](./nsimagedelegate/image_didloadrepresentationheader_.md)
+  Tells the delegate that enough data has been read to determine the size of the image.
+- [- image:willLoadRepresentation:](./nsimagedelegate/image_willloadrepresentation_.md)
+  Tells the delegate that the image object is about to access its underlying bitmap data.
 
 ## Relationships
 

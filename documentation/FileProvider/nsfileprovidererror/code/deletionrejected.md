@@ -62,6 +62,8 @@ Call the [`fileProviderErrorForRejectedDeletion(of:)`](../../../Foundation/nserr
   An error indicating that the File Provider extension can’t evict a directory because it contains nonevictable items.
 - [NSFileProviderError.Code.unsyncedEdits](./unsyncededits.md)
   An error indicating that the item contains unsynced changes.
+- [NSFileProviderErrorCannotSynchronize](./cannotsynchronize.md)
+  An error indicating a failed sync attempt.
 
 
 ---

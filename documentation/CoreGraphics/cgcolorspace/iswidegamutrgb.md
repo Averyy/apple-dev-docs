@@ -48,6 +48,10 @@ extern bool CGColorSpaceIsWideGamutRGB(CGColorSpaceRef );
   Returns the name used to create the specified color space.
 - [var supportsOutput: Bool](./supportsoutput.md)
   Returns a Boolean indicating whether the color space can be used as a destination color space.
+- [CGColorSpaceGetColorTable](../cgcolorspacegetcolortable.md)
+  Copies the entries in the color table of an indexed color space.
+- [CGColorSpaceGetColorTableCount](../cgcolorspacegetcolortablecount.md)
+  Returns the number of entries in the color table of an indexed color space.
 
 
 ---

@@ -34,6 +34,8 @@ UIRectEdgeAll
   The bottom edge of the rectangle.
 - [static var right: UIRectEdge](./right.md)
   The right edge of the rectangle.
+- [UIRectEdgeNone](./uirectedgenone.md)
+  No edge.
 
 
 ---

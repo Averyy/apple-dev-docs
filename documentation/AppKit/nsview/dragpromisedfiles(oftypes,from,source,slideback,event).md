@@ -52,6 +52,8 @@ See [Drag and Drop](../drag-and-drop.md) for more information on dragging operat
   Allows the user to drag objects from the view without activating the app or moving the window of the view forward, possibly obscuring the destination.
 - [func beginDraggingSession(with: [NSDraggingItem], event: NSEvent, source: any NSDraggingSource) -> NSDraggingSession](./begindraggingsession%28with,event,source%29.md)
   Initiates a dragging session with a group of dragging items.
+- [- dragImage:at:offset:event:pasteboard:source:slideBack:](./dragimage_at_offset_event_pasteboard_source_slideback_.md)
+  Initiates a dragging operation from the view, allowing the user to drag arbitrary data with a specified icon into any application that has window or view objects that accept dragged data.
 ### Deprecated methods
 - [func lockFocus()](./lockfocus%28%29.md)
   Locks the focus on the view, so subsequent commands take effect in the view’s window and coordinate system.
@@ -77,6 +79,20 @@ See [Drag and Drop](../drag-and-drop.md) for more information on dragging operat
   Frees the view’s graphics state object, if it has one.
 - [func dragFile(String, from: NSRect, slideBack: Bool, event: NSEvent) -> Bool](./dragfile%28_,from,slideback,event%29.md)
   Initiates a dragging operation from the view, allowing the user to drag a file icon to any application that has window or view objects that accept files.
+- [- convertPointToBase:](./convertpointtobase_.md)
+  Converts the point from the view’s coordinate system to the base coordinate system.
+- [- convertPointFromBase:](./convertpointfrombase_.md)
+  Converts the point from the base coordinate system to the view’s coordinate system.
+- [- convertSizeToBase:](./convertsizetobase_.md)
+  Converts the size from the view’s coordinate system to the base coordinate system.
+- [- convertSizeFromBase:](./convertsizefrombase_.md)
+  Converts the size from the base coordinate system to the view’s coordinate system.
+- [- convertRectToBase:](./convertrecttobase_.md)
+  Converts the rectangle from the view’s coordinate system to the base coordinate system.
+- [- convertRectFromBase:](./convertrectfrombase_.md)
+  Converts the rectangle from the base coordinate system to the view’s coordinate system.
+- [- performMnemonic:](./performmnemonic_.md)
+  Implemented by subclasses to respond to mnemonics.
 
 
 ---

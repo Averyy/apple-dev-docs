@@ -47,6 +47,9 @@ Use this descriptor with the following [`MPSGraph`](./mpsgraph.md) methods:
   A parameter that defines time direction of the input sequence.
 - [var training: Bool](./mpsgraphsinglegaternndescriptor/training.md)
   A parameter that makes the RNN layer support training.
+### Type Methods
+- [+ descriptor](./mpsgraphsinglegaternndescriptor/descriptor.md)
+  Creates a single gate RNN descriptor with default values.
 
 ## Relationships
 

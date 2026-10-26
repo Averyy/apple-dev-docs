@@ -37,6 +37,8 @@ Use an image generator to extract images from a video asset at particular times 
 ### Creating an image generator
 - [init(asset: AVAsset)](./avassetimagegenerator/init%28asset%29.md)
   Creates an object that generates images for times within a video asset.
+- [+ assetImageGeneratorWithAsset:](./avassetimagegenerator/assetimagegeneratorwithasset_.md)
+  Returns a new object that generates images for times within a video asset.
 ### Configuring image generation
 - [var maximumSize: CGSize](./avassetimagegenerator/maximumsize.md)
   The maximum size of images to generate.

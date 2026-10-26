@@ -35,6 +35,8 @@ enum {
 ### Constants
 - [var typeIntlText: DescType](../../coreservices/typeintltext.md)
   For important information, see the Version Notes section of the [typeUnicodeText](./api-1542918-typeunicodetext.md) enum.
+- [typeIntlText](../../coreservices/api-1556401-anonymous/typeintltext.md)
+  For important information, see the Version Notes section of the [typeUnicodeText](../../coreservices/api-1542918-typeunicodetext.md) enum.
 
 
 ---

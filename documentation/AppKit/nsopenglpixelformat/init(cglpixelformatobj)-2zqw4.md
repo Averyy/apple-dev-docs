@@ -38,6 +38,8 @@ Your application should not call `CGLDestroyPixelFormat(_:)` to dispose of the C
 ### Creating an OpenGL Pixel Format
 - [convenience init?(attributes: UnsafePointer<NSOpenGLPixelFormatAttribute>)](./init%28attributes%29.md)
   Returns an OpenGL pixel format object initialized with specified pixel format attributes.
+- [- initWithData:](./initwithdata_.md)
+  Returns an OpenGL pixel format object initialized with specified pixel format attribute data.
 
 
 ---

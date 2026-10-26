@@ -2190,6 +2190,61 @@
       "file_path": "documentation/ComputeGraph/portreference/port.md",
       "hash": "04312d13ac02248b4b04f3c10f6faf994efc349761e1497b75b349c2f5c58bd2"
     },
+    "https://developer.apple.com/documentation/computegraph/ps_always_inline": {
+      "etag": "\"a62-65d55e25c1c04-df\"",
+      "file_path": "documentation/ComputeGraph/ps_always_inline.md",
+      "hash": "780e05d9865298991d857104cc45fa78cc60712a4506d6409628dbcc3dfe4831"
+    },
+    "https://developer.apple.com/documentation/computegraph/ps_api": {
+      "etag": "\"9ea-65d55e2604d0e-df\"",
+      "file_path": "documentation/ComputeGraph/ps_api.md",
+      "hash": "f99e0a01b31c8473693e619224fa18fbe9874f93138f6b9604b5a9db52bece18"
+    },
+    "https://developer.apple.com/documentation/computegraph/ps_availabile": {
+      "etag": "\"a98-65d55e2604d0e-df\"",
+      "file_path": "documentation/ComputeGraph/ps_availabile.md",
+      "hash": "a58aa758a33df9c4ea24aa37d87516f0129d33dc4306bfe466aae3a69133a320"
+    },
+    "https://developer.apple.com/documentation/computegraph/ps_binding_type": {
+      "etag": "\"a56-65d55e256bfe9-df\"",
+      "file_path": "documentation/ComputeGraph/ps_binding_type.md",
+      "hash": "c4bda3d9fcee99e30df054958984d92149cd55b0939936b301d28ce2216c6b24"
+    },
+    "https://developer.apple.com/documentation/computegraph/ps_constant": {
+      "etag": "\"a26-65d55e256bfe9-df\"",
+      "file_path": "documentation/ComputeGraph/ps_constant.md",
+      "hash": "a8e37eac3f68752e2c5536c11f2c380b5ce6921fbe5e0c7783a14e72139d5d46"
+    },
+    "https://developer.apple.com/documentation/computegraph/ps_deprecated": {
+      "etag": "\"a9b-65d55e2604d0e-df\"",
+      "file_path": "documentation/ComputeGraph/ps_deprecated.md",
+      "hash": "1732f0b57445e5d25da3f1e1143fc22ca7da72b6b5395e304f1a6b66aa03cb3f"
+    },
+    "https://developer.apple.com/documentation/computegraph/ps_device": {
+      "etag": "\"a0e-65d55e2622182-df\"",
+      "file_path": "documentation/ComputeGraph/ps_device.md",
+      "hash": "5c79c842c130139718c3aa5c093abd8676da648f03ac41dcf0ffc069db92031a"
+    },
+    "https://developer.apple.com/documentation/computegraph/ps_enum": {
+      "etag": "\"a53-65d55e2524a9c-df\"",
+      "file_path": "documentation/ComputeGraph/ps_enum.md",
+      "hash": "beeb7eda85cf279b0eff5567ea0a263254a0a417ab62679d3e67e0ca5e880e47"
+    },
+    "https://developer.apple.com/documentation/computegraph/ps_internal": {
+      "etag": "\"a26-65d55e2555a29-df\"",
+      "file_path": "documentation/ComputeGraph/ps_internal.md",
+      "hash": "bef61b7fb2a470f729f9bff9fb3d39f02204988f6ba939faf8068c490af352c1"
+    },
+    "https://developer.apple.com/documentation/computegraph/ps_thread": {
+      "etag": "\"a0e-65d55e25c1c04-df\"",
+      "file_path": "documentation/ComputeGraph/ps_thread.md",
+      "hash": "3a904b81b907abceedb38bb09a901423ac54425328c34d4610990298cb5c824d"
+    },
+    "https://developer.apple.com/documentation/computegraph/ps_threadgroup": {
+      "etag": "\"a4a-65d55e26d1282-df\"",
+      "file_path": "documentation/ComputeGraph/ps_threadgroup.md",
+      "hash": "52c678ccaf6fb8b56cf6cb1dd5c3c369c608c6926b9e904d44dd1ab0cf61fae3"
+    },
     "https://developer.apple.com/documentation/computegraph/random": {
       "etag": "\"6a5f-65d55e25c1c04-df\"",
       "file_path": "documentation/ComputeGraph/random.md",
@@ -5025,6 +5080,61 @@
       "file_path": "documentation/ComputeGraph/portreference/port.md",
       "hash": "04312d13ac02248b4b04f3c10f6faf994efc349761e1497b75b349c2f5c58bd2"
     },
+    "https://developer.apple.com/tutorials/data/documentation/computegraph/ps_always_inline.json": {
+      "etag": "\"a62-65d55e25c1c04-df\"",
+      "file_path": "documentation/ComputeGraph/ps_always_inline.md",
+      "hash": "780e05d9865298991d857104cc45fa78cc60712a4506d6409628dbcc3dfe4831"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/computegraph/ps_api.json": {
+      "etag": "\"9ea-65d55e2604d0e-df\"",
+      "file_path": "documentation/ComputeGraph/ps_api.md",
+      "hash": "f99e0a01b31c8473693e619224fa18fbe9874f93138f6b9604b5a9db52bece18"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/computegraph/ps_availabile.json": {
+      "etag": "\"a98-65d55e2604d0e-df\"",
+      "file_path": "documentation/ComputeGraph/ps_availabile.md",
+      "hash": "a58aa758a33df9c4ea24aa37d87516f0129d33dc4306bfe466aae3a69133a320"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/computegraph/ps_binding_type.json": {
+      "etag": "\"a56-65d55e256bfe9-df\"",
+      "file_path": "documentation/ComputeGraph/ps_binding_type.md",
+      "hash": "c4bda3d9fcee99e30df054958984d92149cd55b0939936b301d28ce2216c6b24"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/computegraph/ps_constant.json": {
+      "etag": "\"a26-65d55e256bfe9-df\"",
+      "file_path": "documentation/ComputeGraph/ps_constant.md",
+      "hash": "a8e37eac3f68752e2c5536c11f2c380b5ce6921fbe5e0c7783a14e72139d5d46"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/computegraph/ps_deprecated.json": {
+      "etag": "\"a9b-65d55e2604d0e-df\"",
+      "file_path": "documentation/ComputeGraph/ps_deprecated.md",
+      "hash": "1732f0b57445e5d25da3f1e1143fc22ca7da72b6b5395e304f1a6b66aa03cb3f"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/computegraph/ps_device.json": {
+      "etag": "\"a0e-65d55e2622182-df\"",
+      "file_path": "documentation/ComputeGraph/ps_device.md",
+      "hash": "5c79c842c130139718c3aa5c093abd8676da648f03ac41dcf0ffc069db92031a"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/computegraph/ps_enum.json": {
+      "etag": "\"a53-65d55e2524a9c-df\"",
+      "file_path": "documentation/ComputeGraph/ps_enum.md",
+      "hash": "beeb7eda85cf279b0eff5567ea0a263254a0a417ab62679d3e67e0ca5e880e47"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/computegraph/ps_internal.json": {
+      "etag": "\"a26-65d55e2555a29-df\"",
+      "file_path": "documentation/ComputeGraph/ps_internal.md",
+      "hash": "bef61b7fb2a470f729f9bff9fb3d39f02204988f6ba939faf8068c490af352c1"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/computegraph/ps_thread.json": {
+      "etag": "\"a0e-65d55e25c1c04-df\"",
+      "file_path": "documentation/ComputeGraph/ps_thread.md",
+      "hash": "3a904b81b907abceedb38bb09a901423ac54425328c34d4610990298cb5c824d"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/computegraph/ps_threadgroup.json": {
+      "etag": "\"a4a-65d55e26d1282-df\"",
+      "file_path": "documentation/ComputeGraph/ps_threadgroup.md",
+      "hash": "52c678ccaf6fb8b56cf6cb1dd5c3c369c608c6926b9e904d44dd1ab0cf61fae3"
+    },
     "https://developer.apple.com/tutorials/data/documentation/computegraph/random.json": {
       "etag": "\"6a5f-65d55e25c1c04-df\"",
       "file_path": "documentation/ComputeGraph/random.md",
@@ -5673,8 +5783,8 @@
   },
   "metadata": {
     "render": {
-      "version": 1
+      "version": 2
     },
-    "total_pages": 1134
+    "total_pages": 1156
   }
 }

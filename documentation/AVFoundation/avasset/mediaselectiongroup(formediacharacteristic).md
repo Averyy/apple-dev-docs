@@ -50,6 +50,14 @@ You can call this method without blocking the current thread after you’ve asyn
   - Pass [`legible`](../avmediacharacteristic/legible.md) to return the group of available options for subtitles in various languages and for various purposes.
   - Pass [`visual`](../avmediacharacteristic/visual.md) to return the group of available options for video media.
 
+## See Also
+
+### Accessing media selections
+- [allMediaSelections](./allmediaselections.md)
+  The array of available media selections for this asset.
+- [availableMediaCharacteristicsWithMediaSelectionOptions](./availablemediacharacteristicswithmediaselectionoptions.md)
+  An array of media characteristics for which a media selection option is available.
+
 
 ---
 

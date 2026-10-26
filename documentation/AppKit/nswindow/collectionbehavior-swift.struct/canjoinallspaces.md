@@ -28,6 +28,8 @@ The menu bar behaves this way.
 ### Spaces
 - [static var moveToActiveSpace: NSWindow.CollectionBehavior](./movetoactivespace.md)
   When the window becomes active, move it to the active space instead of switching spaces.
+- [NSWindowCollectionBehaviorDefault](../../nswindowcollectionbehavior/nswindowcollectionbehaviordefault.md)
+  The window appears in only one space at a time.
 
 
 ---

@@ -59,6 +59,9 @@ The following strings are unacceptable:
   Initializes a decimal number using the given mantissa, exponent, and sign.
 - [convenience init(string: String?)](./init%28string%29.md)
   Initializes a decimal number so that its value is equivalent to that in a given numeric string.
+### Related Documentation
+- [+ decimalNumberWithString:locale:](./decimalnumberwithstring_locale_.md)
+  Creates a decimal number whose value is equivalent to that in a given numeric string, interpreted using a given locale.
 
 
 ---

@@ -48,6 +48,8 @@ typedef NSString * UITextFormattingViewControllerTextAlignment;
   Text formatting highlight state.
 - [UITextFormattingViewController.TextList](./textlist.md)
   Text formatting text list state.
+- [UITextFormattingViewControllerChangeType](../uitextformattingviewcontrollerchangetype.md)
+  Enumeration of text formatting actions.
 
 
 ---

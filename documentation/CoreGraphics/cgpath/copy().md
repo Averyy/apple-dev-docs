@@ -42,6 +42,10 @@ A new, immutable copy of the specified path. You are responsible for releasing t
   Creates a mutable copy of an existing graphics path.
 - [func mutableCopy(using: UnsafePointer<CGAffineTransform>?) -> CGMutablePath?](./mutablecopy%28using%29.md)
   Creates a mutable copy of a graphics path transformed by a transformation matrix.
+- [CGPathCreateCopyByDashingPath](../cgpathcreatecopybydashingpath.md)
+  Creates a dashed copy of another path.
+- [CGPathCreateCopyByStrokingPath](../cgpathcreatecopybystrokingpath.md)
+  Creates a stroked copy of another path.
 
 
 ---

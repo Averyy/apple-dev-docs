@@ -59,6 +59,8 @@ This call may block if I/O is required to determine values for the requested `pr
   Performs a deep enumeration of the specified directory and returns the paths of all of the contained subdirectories.
 - [func subpaths(atPath: String) -> [String]?](./subpaths%28atpath%29.md)
   Returns an array of strings identifying the paths for all items in the specified directory.
+- [- enumeratorAtURL:includingPropertiesForKeys:options:errorHandler:](../nsfilemanager/enumeratoraturl_includingpropertiesforkeys_options_errorhandler_.md)
+  Returns a directory enumerator object that can be used to perform a deep enumeration of the directory at the specified URL.
 
 
 ---

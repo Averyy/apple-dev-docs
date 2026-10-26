@@ -30,6 +30,13 @@ enum NSLineJoinStyle : NSUInteger;
   Specifies a bevel line shape of the joints between connected segments of a stroked path.
 ### Initializers
 - [init?(rawValue: UInt)](./linejoinstyle-swift.enum/init%28rawvalue%29.md)
+### Deprecated
+- [NSMiterLineJoinStyle](../nsmiterlinejoinstyle.md)
+  Specifies a miter line shape of the joints between connected segments of a stroked path.
+- [NSRoundLineJoinStyle](../nsroundlinejoinstyle.md)
+  Specifies a round line shape of the joints between connected segments of a stroked path.
+- [NSBevelLineJoinStyle](../nsbevellinejoinstyle.md)
+  Specifies a bevel line shape of the joints between connected segments of a stroked path.
 
 ## Relationships
 

@@ -39,6 +39,8 @@ By default, the visible function table at each index is `nil`.
 ### Assigning visible function tables
 - [func setFragmentVisibleFunctionTables([(any MTLVisibleFunctionTable)?], bufferRange: Range<Int>)](./setfragmentvisiblefunctiontables%28_,bufferrange%29.md)
   Assigns multiple visible function tables to a range of entries in the fragment shader argument table.
+- [- setFragmentVisibleFunctionTables:withBufferRange:](./setfragmentvisiblefunctiontables_withbufferrange_.md)
+  Assigns multiple visible function tables to a range of entries in the fragment shader argument table.
 
 
 ---

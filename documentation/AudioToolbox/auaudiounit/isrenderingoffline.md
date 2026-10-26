@@ -51,6 +51,8 @@ This version 3 property is bridged to the version 2 `kAudioUnitProperty_OfflineR
   Determines whether an effect should route input directly to output, without any processing.
 - [var canProcessInPlace: Bool](./canprocessinplace.md)
   Determines whether an audio unit can process in place.
+- [osWorkgroup](./osworkgroup.md)
+  The workgroup associated with the audio device underlying this Audio Unit.
 
 
 ---

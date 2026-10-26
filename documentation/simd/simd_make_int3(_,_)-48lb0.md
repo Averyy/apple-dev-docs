@@ -21,6 +21,8 @@ static simd_int3 simd_make_int3(int x, simd_int2 yz);
 ### Functions to Create Three-Element Vectors From Combinations of Vectors and Scalar Values
 - [func simd_make_int3(simd_int2, Int32) -> simd_int3](./simd_make_int3%28_,_%29-7nox5.md)
   Returns a new vector from a vector and a scalar value.
+- [vector3](./vector3-7wv2r.md)
+  Returns a new vector from a vector and a scalar value.
 
 
 ---

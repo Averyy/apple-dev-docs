@@ -40,6 +40,8 @@ Use this method when you can resolve the parameter to the specified value, but y
 ### Creating a Resolution Result Object
 - [class func success(with: INCarSignalOptions) -> Self](./success%28with%29.md)
   Creates a resolution object that indicates the successful resolution of the provided value.
+- [+ successWithResolvedValue:](./successwithresolvedvalue_.md)
+- [+ confirmationRequiredWithValueToConfirm:](./confirmationrequiredwithvaluetoconfirm_.md)
 
 
 ---

@@ -52,6 +52,8 @@ If set to [`true`](../../Swift/true.md), the receiver keeps strong references to
   Passes a request to the persistent store without affecting the contents of the managed object context, and returns a persistent store result.
 - [func refreshAllObjects()](./refreshallobjects%28%29.md)
   Refreshes all of the registered managed objects in the context.
+- [- executeFetchRequest:error:](./executefetchrequest_error_.md)
+  Returns an array of objects that meet the criteria of the specified fetch request.
 
 
 ---

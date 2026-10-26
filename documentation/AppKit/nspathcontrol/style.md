@@ -24,6 +24,7 @@ enum NSPathStyle : NSInteger;
 ### Constants
 - [NSPathControl.Style.standard](./style/standard.md)
 - [NSPathControl.Style.popUp](./style/popup.md)
+- [NSPathStyleNavigationBar](../nspathstyle/nspathstylenavigationbar.md)
 ### Initializers
 - [init?(rawValue: Int)](./style/init%28rawvalue%29.md)
 

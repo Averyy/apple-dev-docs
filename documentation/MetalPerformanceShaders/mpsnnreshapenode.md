@@ -26,6 +26,8 @@ class MPSNNReshapeNode
 
 ### Initializers
 - [init(source: MPSNNImageNode, resultWidth: Int, resultHeight: Int, resultFeatureChannels: Int)](./mpsnnreshapenode/init%28source,resultwidth,resultheight,resultfeaturechannels%29.md)
+### Type Methods
+- [+ nodeWithSource:resultWidth:resultHeight:resultFeatureChannels:](./mpsnnreshapenode/nodewithsource_resultwidth_resultheight_resultfeaturechannels_.md)
 
 ## Relationships
 

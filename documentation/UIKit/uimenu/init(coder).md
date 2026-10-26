@@ -36,6 +36,12 @@ init?(coder: NSCoder)
   Constants you use to identify an app’s standard menus.
 - [UIMenu.Options](./options-swift.struct.md)
   Options you use to configure a menu’s appearance.
+- [+ menuWithChildren:](./menuwithchildren_.md)
+  Creates a new menu with the specified child elements.
+- [+ menuWithTitle:children:](./menuwithtitle_children_.md)
+  Creates a menu with the specified title and child menu elements.
+- [+ menuWithTitle:image:identifier:options:children:](./menuwithtitle_image_identifier_options_children_.md)
+  Creates a new menu with the specified values.
 
 
 ---

@@ -38,6 +38,15 @@ A new pointer array that maintains strong references to its elements.
   Initializes the receiver to use the given functions.
 - [class func weakObjects() -> NSPointerArray](./weakobjects%28%29.md)
   Returns a new pointer array that maintains weak references to its elements.
+- [+ pointerArrayWithStrongObjects](./pointerarraywithstrongobjects.md)
+  Returns a new pointer array that maintains strong references to its elements.
+### Related Documentation
+- [+ pointerArrayWithOptions:](./pointerarraywithoptions_.md)
+  Returns a new pointer array initialized to use the given options.
+- [+ pointerArrayWithPointerFunctions:](./pointerarraywithpointerfunctions_.md)
+  A new pointer array initialized to use the given functions.
+- [+ pointerArrayWithWeakObjects](./pointerarraywithweakobjects.md)
+  Returns a new pointer array that maintains weak references to its elements.
 
 
 ---

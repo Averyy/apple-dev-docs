@@ -52,6 +52,7 @@ typedef mach_error_t DAReturn;
   Options for DADiskRename().
 - [typealias DADiskUnmountOptions](./dadiskunmountoptions.md)
   Options for DADiskUnmount().
+- [DAApprovalSessionRef](./daapprovalsessionref.md)
 
 
 ---

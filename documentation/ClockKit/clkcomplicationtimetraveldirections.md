@@ -28,6 +28,8 @@ enum CLKComplicationTimeTravelDirections : NSUInteger;
   Future data support. Use this option when it makes sense to provide future data for your complication.
 - [static var backward: CLKComplicationTimeTravelDirections](./clkcomplicationtimetraveldirections/backward.md)
   Past data support. Use this option when it makes sense to provide past data for your complication.
+- [CLKComplicationTimeTravelDirectionNone](./clkcomplicationtimetraveldirections/clkcomplicationtimetraveldirectionnone.md)
+  No past or future data support. Use this option when it doesn’t make sense to provide future or past data for your complication.
 ### Initializers
 - [init(rawValue: UInt)](./clkcomplicationtimetraveldirections/init%28rawvalue%29.md)
   Returns a new [`CLKComplicationTimeTravelDirections`](./clkcomplicationtimetraveldirections.md) instance.

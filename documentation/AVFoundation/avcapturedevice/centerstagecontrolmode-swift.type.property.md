@@ -38,6 +38,7 @@ See Control Modes for details on choosing an appropriate control mode.
   The effective region within the output pixel buffer to perform Center Stage framing.
 - [AVCaptureDevice.CenterStageControlMode](./centerstagecontrolmode-swift.enum.md)
   Constants that indicate the current Center Stage control mode.
+- [centerStageRectOfInterestSupported](./centerstagerectofinterestsupported.md)
 
 
 ---

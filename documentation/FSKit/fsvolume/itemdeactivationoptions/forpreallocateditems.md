@@ -30,6 +30,8 @@ This option facilitates a sort of trim-on-close behavior. It is only meaningful 
   An option to process deactivation for open-unlinked items at the moment of last close.
 - [static var always: FSVolume.ItemDeactivationOptions](./always.md)
   An option to always perform deactivation calls.
+- [FSItemDeactivationNever](../../fsitemdeactivationoptions/fsitemdeactivationnever.md)
+  An option to never perform deactivation.
 
 
 ---

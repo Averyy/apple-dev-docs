@@ -56,6 +56,8 @@ SceneKit uses matrices to represent coordinate space transformations, which in t
   Returns a SceneKit matrix corresponding to a GLKit matrix.
 - [func SCNMatrix4ToGLKMatrix4(SCNMatrix4) -> GLKMatrix4](./scnmatrix4toglkmatrix4%28_%29.md)
   Returns a GLKit matrix corresponding to a SceneKit matrix.
+- [SCNMatrix4FromMat4](./scnmatrix4frommat4.md)
+- [SCNMatrix4ToMat4](./scnmatrix4tomat4.md)
 ### Comparing Matrices
 - [func SCNMatrix4EqualToMatrix4(SCNMatrix4, SCNMatrix4) -> Bool](./scnmatrix4equaltomatrix4%28_,_%29.md)
   Returns a Boolean value that indicates whether the corresponding elements of two matrices are equal.

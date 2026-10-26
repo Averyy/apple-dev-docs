@@ -44,6 +44,11 @@ An initialized set with the contents of `array`. The returned set might be diffe
   Initializes a newly allocated set and adds to it members of another given set.
 - [init()](./init%28%29.md)
   Initializes a newly allocated set.
+### Related Documentation
+- [+ setWithArray:](./setwitharray_.md)
+  Creates and returns a set containing a uniqued collection of the objects contained in a given array.
+- [- initWithObjects:](./initwithobjects_.md)
+  Initializes a newly allocated set with members taken from the specified list of objects.
 
 
 ---

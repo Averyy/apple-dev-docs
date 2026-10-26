@@ -22,9 +22,9 @@ func renderDestinationImage(_ destinationImage: FxImageTile, sourceImages: [FxIm
 
 ## Mentions
 
-- [Migrating FxPlug 3 plug-ins to FxPlug 4](https://developer.apple.com/documentation/professional-video-applications/migrating-fxplug-3-plug-ins-to-fxplug-4)
-- [Rendering in FxPlug](https://developer.apple.com/documentation/professional-video-applications/rendering-in-fxplug)
-- [Thread safety in plug-ins](https://developer.apple.com/documentation/professional-video-applications/thread-safety-in-plug-ins)
+- [Migrating FxPlug 3 plug-ins to FxPlug 4](../../Professional-Video-Applications/migrating-fxplug-3-plug-ins-to-fxplug-4.md)
+- [Rendering in FxPlug](../../Professional-Video-Applications/rendering-in-fxplug.md)
+- [Thread safety in plug-ins](../../Professional-Video-Applications/thread-safety-in-plug-ins.md)
 
 #### Discussion
 

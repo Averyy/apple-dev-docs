@@ -44,6 +44,8 @@ let playerItem = AVPlayerItem(asset: composition)
 ### Creating a composition
 - [convenience init(urlAssetInitializationOptions: [String : Any]?)](./avmutablecomposition/init%28urlassetinitializationoptions%29-rh4y.md)
   Creates a mutable composition that uses the specified initialization options.
+- [+ composition](./avmutablecomposition/composition.md)
+  Returns a new mutable composition.
 ### Loading tracks
 - [static var tracks: AVAsyncProperty<Root, [AVMutableCompositionTrack]>](./avpartialasyncproperty/tracks-92p4a.md)
   The tracks that a composition contains.
@@ -71,6 +73,8 @@ let playerItem = AVPlayerItem(asset: composition)
   Removes a specified track from the composition.
 ### Managing Cinematic tracks
 - [func addTracks(for: CNAssetInfo, preferredStartingTrackID: CMPersistentTrackID) -> CNCompositionInfo](./avmutablecomposition/addtracks%28for,preferredstartingtrackid%29.md)
+- [- addTracksForCinematicAssetInfo:preferredStartingTrackID:](./avmutablecomposition/addtracksforcinematicassetinfo_preferredstartingtrackid_.md)
+  Adds a group of empty tracks associated with a cinematic asset to a mutable composition.
 ### Managing time ranges
 - [func removeTimeRange(CMTimeRange)](./avmutablecomposition/removetimerange%28_%29.md)
   Removes a specified time range from all tracks of the composition.

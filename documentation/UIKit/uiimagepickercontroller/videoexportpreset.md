@@ -12,7 +12,7 @@ The preset to use when preparing video for export to your app.
 - Mac Catalyst 13.1+ - Deprecated in 27.2
 - visionOS 1.0+ - Deprecated in 27.2
 
-> **Deprecated**: Use [`PHPickerViewController`](https://developer.apple.com/documentation/photosui/phpickerviewcontroller) with [`AVAssetExportSession`](../../AVFoundation/avassetexportsession.md) instead.
+> **Deprecated**: Use [`PHPickerViewController`](../../PhotosUI/phpickerviewcontroller.md) with [`AVAssetExportSession`](../../AVFoundation/avassetexportsession.md) instead.
 
 ## Declaration
 
@@ -35,6 +35,8 @@ The value of this key is one of the export presets supported by the [`AVAssetExp
   The preset to use when preparing images for export to your app.
 - [UIImagePickerController.ImageURLExportPreset](./imageurlexportpreset.md)
   Constants that indicate how to export images to the client app.
+- [allowsImageEditing](./allowsimageediting.md)
+  A Boolean value that indicates whether the user is allowed to edit a selected image.
 
 
 ---

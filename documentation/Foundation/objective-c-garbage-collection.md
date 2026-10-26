@@ -10,6 +10,14 @@ Interface with the legacy garbage collection system.
 ### Legacy
 - [Memory Allocation Options](./api-1539826-memory-allocation-options.md)
   Constants used to control behavior when allocating or reallocating collectible memory.
+- [NSGarbageCollector](./nsgarbagecollector.md)
+  A convenient interface to the garbage collection system.
+- [NSAllocateCollectable](./nsallocatecollectable.md)
+  Allocates collectable memory.
+- [NSReallocateCollectable](./nsreallocatecollectable.md)
+  Reallocates collectable memory.
+- [NSMakeCollectable](./nsmakecollectable.md)
+  Makes a newly allocated Core Foundation object eligible for collection.
 
 ## See Also
 

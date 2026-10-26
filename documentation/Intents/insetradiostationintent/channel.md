@@ -49,6 +49,10 @@ When the [`presetNumber`](./presetnumber-20pv7.md) property contains a valid val
   The name associated with the radio station.
 - [var presetNumber: Int?](./presetnumber-2dub4.md)
   The programmable preset assigned to the station.
+- [frequency](./frequency-63rbb.md)
+  The broadcast frequency of the radio station.
+- [presetNumber](./presetnumber-20pv7.md)
+  The programmable preset assigned to the station.
 
 
 ---

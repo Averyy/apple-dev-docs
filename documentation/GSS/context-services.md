@@ -113,6 +113,12 @@ BOOL mutual = (ret_flags & GSS_C_MUTUAL_FLAG) ? YES : NO;
   A pointer to a channel bindings descriptor that specifies the communications channel used to carry a context.
 - [typealias gss_const_channel_bindings_t](./gss_const_channel_bindings_t.md)
   A pointer to an immutable channel bindings descriptor that you use to specify the communications channel used to carry a context.
+- [GSS_C_NO_CHANNEL_BINDINGS](./gss_c_no_channel_bindings.md)
+  Indicates a `NULL` [`gss_channel_bindings_t`](./gss_channel_bindings_t.md) object.
+- [GSS_C_NO_CONTEXT](./gss_c_no_context.md)
+  A macro that indicates an empty context id object.
+- [gss_const_ctx_id_t](./gss_const_ctx_id_t.md)
+  A pointer to an immutable opaque type that you use to communicate context pointers with GSS-API functions.
 ### Creation and Deletion
 - [func gss_init_sec_context(UnsafeMutablePointer<OM_uint32>, gss_cred_id_t?, UnsafeMutablePointer<gss_ctx_id_t?>, gss_name_t, gss_OID?, OM_uint32, OM_uint32, gss_channel_bindings_t?, gss_buffer_t?, UnsafeMutablePointer<gss_OID?>?, gss_buffer_t, UnsafeMutablePointer<OM_uint32>?, UnsafeMutablePointer<OM_uint32>?) -> OM_uint32](./gss_init_sec_context%28_,_,_,_,_,_,_,_,_,_,_,_,_%29.md)
   Initiates a security context with a peer.

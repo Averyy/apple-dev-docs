@@ -35,6 +35,10 @@ A device provides one or more streams of media data to a [`CMIOExtensionProvider
   Creates an extension device.
 - [init(localizedName: String, deviceID: UUID, legacyDeviceID: String?, source: any CMIOExtensionDeviceSource)](./cmioextensiondevice/init%28localizedname,deviceid,legacydeviceid,source%29.md)
   Creates an extension device with an optional legacy device identifier.
+- [+ deviceWithLocalizedName:deviceID:source:](./cmioextensiondevice/devicewithlocalizedname_deviceid_source_.md)
+  Returns a new extension device.
+- [+ deviceWithLocalizedName:deviceID:legacyDeviceID:source:](./cmioextensiondevice/devicewithlocalizedname_deviceid_legacydeviceid_source_.md)
+  Returns a new extension device with an optional legacy device identifier.
 ### Identifying a Device
 - [var localizedName: String](./cmioextensiondevice/localizedname.md)
   A localized name for a device.

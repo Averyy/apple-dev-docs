@@ -65,6 +65,11 @@ You can create a  `CIFilterGenerator` object  programmatically, using the method
 - [init?(coder: NSCoder)](./cifiltergenerator/init%28coder%29.md)
 - [init?(contentsOfURL: URL)](./cifiltergenerator/init%28contentsofurl%29-4nqjf.md)
 - [init?(contentsOfURL: URL)](./cifiltergenerator/init%28contentsofurl%29-8q8ic.md)
+### Creating Filter Generator Objects
+- [+ filterGenerator](./cifiltergenerator/filtergenerator.md)
+  Creates and returns an empty filter generator object.
+- [+ filterGeneratorWithContentsOfURL:](./cifiltergenerator/filtergeneratorwithcontentsofurl_.md)
+  Creates and returns a filter generator object and initializes it with the contents of a filter generator file.
 
 ## Relationships
 

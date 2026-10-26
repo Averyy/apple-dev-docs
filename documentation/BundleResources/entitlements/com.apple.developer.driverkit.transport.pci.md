@@ -59,6 +59,9 @@ Examples:
   A Boolean value that indicates whether to match the driver against devices with serial communication interfaces.
 - [com.apple.developer.driverkit.transport.usb](./com.apple.developer.driverkit.transport.usb.md)
   An array of dictionaries that identify the USB devices the driver supports.
+### Related Documentation
+- [PCIDriverKit](../../PCIDriverKit/PCIDriverKit.md)
+  Develop device drivers for Peripheral Component Interconnect (PCI) accessories.
 
 
 ---

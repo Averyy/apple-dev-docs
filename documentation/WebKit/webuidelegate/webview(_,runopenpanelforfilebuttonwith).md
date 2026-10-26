@@ -41,6 +41,12 @@ This method uses a listener object to set the results of the open panel, instead
   Displays an open panel for a file input control.
 - [func webView(WebView!, runBeforeUnloadConfirmPanelWithMessage: String!, initiatedBy: WebFrame!) -> Bool](./webview%28_,runbeforeunloadconfirmpanelwithmessage,initiatedby%29.md)
   Displays a confirmation panel containing the specified message before a window closes.
+- [- webView:runJavaScriptAlertPanelWithMessage:](./webview_runjavascriptalertpanelwithmessage_.md)
+  Displays a JavaScript alert panel.
+- [- webView:runJavaScriptConfirmPanelWithMessage:](./webview_runjavascriptconfirmpanelwithmessage_.md)
+  Displays a JavaScript confirm panel.
+- [- webView:runJavaScriptTextInputPanelWithPrompt:defaultText:](./webview_runjavascripttextinputpanelwithprompt_defaulttext_.md)
+  Displays a JavaScript text input panel and returns the entered text.
 
 
 ---

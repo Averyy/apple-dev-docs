@@ -39,6 +39,8 @@ By default, Metal compiles the functions for a pipeline state if they aren’t i
   An option instance that provides detailed buffer type information for buffer arguments.
 - [static var argumentInfo: MTLPipelineOption](./argumentinfo.md)
   An option instance that provides argument information for textures and threadgroup memory.
+- [MTLPipelineOptionNone](./mtlpipelineoptionnone.md)
+  Don’t provide any reflection information.
 
 
 ---

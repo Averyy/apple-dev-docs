@@ -27,6 +27,8 @@ class CBGroupIdentity
 ### Group Identity Attributes
 - [var posixGID: gid_t](./cbgroupidentity/posixgid.md)
   Returns the POSIX GID of the identity.
+- [members](./cbgroupidentity/members.md)
+  Returns the members of the group.
 ### Instance Properties
 - [var memberIdentities: [CBIdentity]](./cbgroupidentity/memberidentities.md)
 

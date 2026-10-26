@@ -68,7 +68,7 @@ Finally, workout routes record the user’s path during an outdoor activity (for
   A query interface that reads activity summaries using Swift concurrency.
 - [class HKActivitySummaryQuery](./hkactivitysummaryquery.md)
   A query for reading activity summary objects from the HealthKit store.
-- [class HKActivityRingView](https://developer.apple.com/documentation/healthkitui/hkactivityringview)
+- [class HKActivityRingView](../HealthKitUI/hkactivityringview.md)
   A view that uses the Move, Exercise, and Stand activity rings to display data from a HealthKit activity summary object.
 - [class HKActivityMoveModeObject](./hkactivitymovemodeobject.md)
   An object that contains a movement mode value.

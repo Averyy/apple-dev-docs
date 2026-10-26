@@ -77,6 +77,8 @@ Typically, a region consists of at least two markers designating the beginning a
   A data structure used by the [`kAudioFilePropertyByteToPacket`](./kaudiofilepropertybytetopacket.md) and [`kAudioFilePropertyPacketToByte`](./kaudiofilepropertypackettobyte.md) properties.
 - [struct AudioFilePacketTableInfo](./audiofilepackettableinfo.md)
   Contains information about the number of valid frames in a file and where they begin and end.
+- [AudioFileFDFTable](./audiofilefdftable.md)
+- [AudioFileFDFTableExtended](./audiofilefdftableextended.md)
 
 
 ---

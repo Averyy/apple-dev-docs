@@ -56,6 +56,7 @@ enum AVCaptureCenterStageControlMode : NSInteger;
   The effective region within the output pixel buffer to perform Center Stage framing.
 - [class var centerStageControlMode: AVCaptureDevice.CenterStageControlMode](./centerstagecontrolmode-swift.type.property.md)
   A value that indicates the current mode of Center Stage control.
+- [centerStageRectOfInterestSupported](./centerstagerectofinterestsupported.md)
 
 
 ---

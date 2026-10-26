@@ -59,6 +59,7 @@ The edge style specified is invalid. This usually means that a particular functi
 - [var kvImageInternalError: Int](./kvimageinternalerror.md)
   A serious error occured inside vImage, which prevented vImage from continuing.
 - [var kvImageInvalidCVImageFormat: Int](./kvimageinvalidcvimageformat.md)
+- [kvImageInvalidImageFormat](./kvimageinvalidimageformat.md)
 
 
 ---

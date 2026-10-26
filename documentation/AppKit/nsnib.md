@@ -49,6 +49,13 @@ You can subclass `NSNib` if you want to extend or specialize nib-loading behavio
   The `NSNib` class uses the following constants which are used as keys in the dictionary passed to [`instantiateNibWithExternalNameTable:`](./nsnib/instantiatenibwithexternalnametable_.md).
 ### Initializers
 - [init?(coder: NSCoder)](./nsnib/init%28coder%29.md)
+### Deprecated
+- [- initWithContentsOfURL:](./nsnib/initwithcontentsofurl_.md)
+  Returns an `NSNib` object initialized to the nib file at the specified URL.
+- [- instantiateNibWithOwner:topLevelObjects:](./nsnib/instantiatenibwithowner_toplevelobjects_.md)
+  Unarchives and instantiates the in-memory contents of the receiver’s nib file, creating a distinct object tree and set of top level objects.
+- [- instantiateNibWithExternalNameTable:](./nsnib/instantiatenibwithexternalnametable_.md)
+  Unarchives and instantiates the in-memory contents of the receiver’s nib file, creating a distinct object tree and top level objects.
 
 ## Relationships
 
@@ -62,6 +69,16 @@ You can subclass `NSNib` if you want to extend or specialize nib-loading behavio
 - [Hashable](../Swift/hashable.md)
 - [NSCoding](../Foundation/nscoding.md)
 - [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+
+## See Also
+
+### Nib Files
+- [NSNibConnector](./nsnibconnector.md)
+  A connection between two nibs.
+- [NSNibControlConnector](./nsnibcontrolconnector.md)
+  A control connection between two Interface Builder objects.
+- [NSNibOutletConnector](./nsniboutletconnector.md)
+  An outlet connection between Interface Builder objects.
 
 
 ---

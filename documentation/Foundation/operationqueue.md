@@ -154,6 +154,8 @@ Operation queues use the [Dispatch](../Dispatch/Dispatch.md) framework to initia
   An abstract class that represents the code and data associated with a single task.
 - [class BlockOperation](./blockoperation.md)
   An operation that manages the concurrent execution of one or more blocks.
+- [NSInvocationOperation](./nsinvocationoperation.md)
+  An operation that manages the execution of a single encapsulated task specified as an invocation.
 
 
 ---

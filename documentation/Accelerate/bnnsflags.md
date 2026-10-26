@@ -33,6 +33,8 @@ typedef enum { ... } BNNSFlags;
 ### Raw Values
 - [init(UInt32)](./bnnsflags/init%28_%29.md)
 - [var rawValue: UInt32](./bnnsflags/rawvalue.md)
+- [BNNSFlagsUseClientPtr](./bnnsflags/bnnsflagsuseclientptr.md)
+  A flag that instructs the filter to use pointers to data you provide at creation time.
 
 ## Relationships
 

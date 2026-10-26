@@ -36,6 +36,12 @@ static bool SPRotationAxis3DIsZero(SPRotationAxis3D axis);
   The z-coordinate value.
 - [var vector: simd_double3](./vector.md)
   A simd three-element vector that contains the x-, y-, and z-coordinate values.
+- [x](../sprotationaxis3d/x.md)
+  The x-axis value.
+- [y](../sprotationaxis3d/y.md)
+  The y-axis value.
+- [z](../sprotationaxis3d/z.md)
+  The z-axis value.
 
 
 ---

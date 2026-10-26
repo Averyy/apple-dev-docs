@@ -30,6 +30,20 @@ var preferredMediaSelection: AVMediaSelection { get }
 
 Provides an instance of [`AVMediaSelection`](../avmediaselection.md) with the default selections for each of the assets media selection groups.
 
+## See Also
+
+### Accessing asset preferences
+- [preferredRate](./preferredrate.md)
+  The asset’s rate preference for playing its media.
+- [preferredVolume](./preferredvolume.md)
+  The asset’s volume preference for playing its audible media.
+- [preferredTransform](./preferredtransform.md)
+  The asset’s transform preference to apply to its visual content during presentation or processing.
+- [preferredDisplayCriteria](./preferreddisplaycriteria.md)
+  The asset’s display mode preference for optimal playback of its content.
+- [AVDisplayCriteria](../avdisplaycriteria.md)
+  An object the system uses to guide the selection of a display mode in tvOS.
+
 
 ---
 

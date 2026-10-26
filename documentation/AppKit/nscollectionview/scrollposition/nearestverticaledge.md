@@ -40,6 +40,8 @@ NSCollectionViewScrollPositionNearestVerticalEdge
   Scroll so that the leading edge of the selected items’ bounding box is adjacent to the leading edge of the collection view’s bounds. Use this option to support both left-to-right and right-to-left layouts appropriately. This option must not be combined with the [`left`](./left.md), [`centeredHorizontally`](./centeredhorizontally.md), [`right`](./right.md), [`trailingEdge`](./trailingedge.md), or [`nearestVerticalEdge`](./nearestverticaledge.md) options, but may be combined with other options.
 - [static var trailingEdge: NSCollectionView.ScrollPosition](./trailingedge.md)
   Scroll so that the trailing edge of the selected items’ bounding box is adjacent to the trailing edge of the collection view’s bounds. Use this option to support both left-to-right and right-to-left layouts appropriately. This option must not be combined with the [`left`](./left.md), [`centeredHorizontally`](./centeredhorizontally.md), [`right`](./right.md), [`leadingEdge`](./leadingedge.md), or [`nearestVerticalEdge`](./nearestverticaledge.md) options, but may be combined with other options.
+- [NSCollectionViewScrollPositionNone](../../nscollectionviewscrollposition/nscollectionviewscrollpositionnone.md)
+  Do not scroll.
 
 
 ---

@@ -39,6 +39,12 @@ This is the designated initializer for `NSError`.
 - `code`: The error code for the error.
 - `dict`: The `userInfo` dictionary for the error. `userInfo` may be `nil`.
 
+## See Also
+
+### Related Documentation
+- [+ errorWithDomain:code:userInfo:](./errorwithdomain_code_userinfo_.md)
+  Creates and initializes an `NSError` object for a given domain and code with a given `userInfo` dictionary.
+
 
 ---
 

@@ -89,6 +89,7 @@ FeliCa is a trademark of Sony Corporation.
 - [NSCopying](../Foundation/nscopying.md)
 - [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 - [NSSecureCoding](../Foundation/nssecurecoding.md)
+- [NFCTag](./nfctag-c.protocol.md)
 
 ## See Also
 
@@ -107,6 +108,8 @@ FeliCa is a trademark of Sony Corporation.
   An object that represents an NFC tag object.
 - [class NFCTagCommandConfiguration](./nfctagcommandconfiguration.md)
   A set of parameters you use to define the configuration of an NFC tag command.
+- [NFCTag](./nfctag-c.protocol.md)
+  An interface for interacting with an NFC or RFID tag.
 
 
 ---

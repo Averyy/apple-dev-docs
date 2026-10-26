@@ -54,6 +54,12 @@ For example, a 4-bit mask has values that range from 0 to 15. These values are s
 - `decode`: Typically a decode array is unnecessary, and you should pass `NULL`.
 - `shouldInterpolate`: A Boolean value that specifies whether an edge-smoothing algorithm is applied to the image mask.
 
+## See Also
+
+### Creating image masks
+- [CGImageCreateWithMaskingColors](../cgimagecreatewithmaskingcolors.md)
+  Creates a bitmap image by masking an existing bitmap image with the provided color values.
+
 
 ---
 

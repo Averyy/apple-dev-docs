@@ -37,6 +37,8 @@ static simd_uint16 simd_make_uint16_undef(simd_uint8 other);
   Returns a new vector from the specified three-element vector, and other elements undefined.
 - [func simd_make_uint16_undef(simd_uint4) -> simd_uint16](./simd_make_uint16_undef%28_%29-hcyl.md)
   Returns a new vector from the specified four-element vector, and other elements undefined.
+- [vector16](./vector16-8xs3z.md)
+  Returns a new vector from the specified vectors.
 
 
 ---

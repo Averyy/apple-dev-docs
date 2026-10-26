@@ -49,6 +49,10 @@ When passed a VALID filename and a VALID path, this routine will return you a th
   Returns number of “pointing” HID devices on the system (Bluetooth + USB)
 - [func IOBluetoothNumberOfTabletHIDDevices() -> Int](./iobluetoothnumberoftablethiddevices%28%29.md)
   Returns number of “Tablet” HID devices on the system (Bluetooth + USB)
+- [IOBluetoothPackData](./iobluetoothpackdata.md)
+  Packs a variable amount of parameters into a buffer according to a printf-style format string.
+- [IOBluetoothUnpackData](./iobluetoothunpackdata.md)
+  Unpacks a variable amount of data from a buffer into a variable number of parameters according to a printf-style format string.
 
 
 ---

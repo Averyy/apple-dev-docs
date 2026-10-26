@@ -131,6 +131,11 @@ For more information on the anchor properties, see [`bottomAnchor`](../AppKit/ns
   The layout item used to calculate the anchor’s position.
 ### Initializers
 - [init?(coder: NSCoder)](./nslayoutanchor/init%28coder%29.md)
+### Instance Properties
+- [constraintsAffectingLayout](./nslayoutanchor/constraintsaffectinglayout.md)
+- [hasAmbiguousLayout](./nslayoutanchor/hasambiguouslayout.md)
+- [item](./nslayoutanchor/item.md)
+- [name](./nslayoutanchor/name.md)
 
 ## Relationships
 

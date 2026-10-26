@@ -47,6 +47,19 @@ This method automatically uses percent encoding to escape the `path` and `host` 
 - [File System Programming Guide](https://developer.apple.com/library/archive/documentation/FileManagement/Conceptual/FileSystemProgrammingGuide/Introduction/Introduction.html#//apple_ref/doc/uid/TP40010672)
 - [URL Loading System](../url-loading-system.md)
   Interact with URLs and communicate with servers using standard Internet protocols.
+### Deprecated
+- [- URLHandleUsingCache:](./urlhandleusingcache_.md)
+  Returns a URL handle to service the receiver.
+- [- loadResourceDataNotifyingClient:usingCache:](./loadresourcedatanotifyingclient_usingcache_.md)
+  Loads the receiver’s resource data in the background.
+- [- resourceDataUsingCache:](./resourcedatausingcache_.md)
+  Returns the receiver’s resource data, loading it if necessary.
+- [- setResourceData:](./setresourcedata_.md)
+  Attempts to set the resource data for the receiver.
+- [- propertyForKey:](./propertyforkey_.md)
+  Returns the specified property of the receiver’s resource.
+- [- setProperty:forKey:](./setproperty_forkey_.md)
+  Changes the specified property of the receiver’s resource.
 
 
 ---

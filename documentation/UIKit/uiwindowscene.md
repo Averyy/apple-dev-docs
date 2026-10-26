@@ -56,9 +56,14 @@ Don’t create window scene objects directly. Instead, specify that you want a [
 ### Observing trait changes
 - [protocol UITraitChangeObservable](./uitraitchangeobservable-67e94.md)
   A type that calls your code in reaction to changes in the trait environment.
+- [UITraitChangeObservable](./uitraitchangeobservable-7qoet.md)
+  A type that calls your code in reaction to changes in the trait environment.
 ### Overriding trait values
 - [var traitOverrides: UITraitOverrides](./uiwindowscene/traitoverrides-1klo1.md)
 - [struct UITraitOverrides](./uitraitoverrides-swift.struct.md)
+  A mutable container of traits you use to set trait changes for an object and its descendants.
+- [traitOverrides](./uiwindowscene/traitoverrides-3chp5.md)
+- [UITraitOverrides](./uitraitoverrides-c.protocol.md)
   A mutable container of traits you use to set trait changes for an object and its descendants.
 ### Providing a PDF version of your scene
 - [var screenshotService: UIScreenshotService?](./uiwindowscene/screenshotservice.md)
@@ -163,6 +168,7 @@ Don’t create window scene objects directly. Instead, specify that you want a [
 - [UITraitChangeObservable](./uitraitchangeobservable-67e94.md)
 - [UITraitEnvironment](./uitraitenvironment.md)
 - [UIUserActivityRestoring](./uiuseractivityrestoring.md)
+- [UITraitChangeObservable](./uitraitchangeobservable-7qoet.md)
 
 ## See Also
 

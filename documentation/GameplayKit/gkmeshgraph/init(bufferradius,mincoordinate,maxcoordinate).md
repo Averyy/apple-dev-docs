@@ -45,6 +45,10 @@ Use the `bufferRadius` parameter to take the size of potential travelers into ac
 ### Creating a Graph
 - [init(bufferRadius: Float, minCoordinate: vector_float2, maxCoordinate: vector_float2, nodeClass: AnyClass)](./init%28bufferradius,mincoordinate,maxcoordinate,nodeclass%29.md)
   Initializes a graph to cover the specified area, using the specified node class.
+- [+ graphWithBufferRadius:minCoordinate:maxCoordinate:nodeClass:](./graphwithbufferradius_mincoordinate_maxcoordinate_nodeclass_.md)
+  Creates a graph to cover the specified area, using the specified node class.
+- [+ graphWithBufferRadius:minCoordinate:maxCoordinate:](./graphwithbufferradius_mincoordinate_maxcoordinate_.md)
+  Creates a graph to cover the specified area.
 
 
 ---

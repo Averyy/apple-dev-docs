@@ -23,9 +23,9 @@ PhotoKit is the combination of the Photos and PhotosUI frameworks. Using the cap
 ## Topics
 
 ### Frameworks
-- [Photos](https://developer.apple.com/documentation/photos)
+- [Photos](../Photos/Photos.md)
   Work with image and video assets that the Photos app manages, including those from iCloud Photos and Live Photos.
-- [PhotosUI](https://developer.apple.com/documentation/photosui)
+- [PhotosUI](../PhotosUI/PhotosUI.md)
   Present a person’s photo library using a picker interface, display Live Photos, or extend the Photos app with custom functionality.
 ### Sample code
 - [Browsing and Modifying Photo Albums](./browsing-and-modifying-photo-albums.md)

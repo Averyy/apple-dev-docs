@@ -34,6 +34,8 @@ init(cgColor color: CGColor)
 - [convenience init(color: UIColor)](./init%28color%29.md)
 - [convenience init(red: CGFloat, green: CGFloat, blue: CGFloat, alpha: CGFloat)](./init%28red,green,blue,alpha%29.md)
   Initialize a Core Image color object in the sRGB color space with the specified red, green, blue, and alpha component values.
+- [- initWithRed:green:blue:](./initwithred_green_blue_.md)
+  Initialize a Core Image color object in the sRGB color space with the specified red, green, and blue component values.
 
 
 ---

@@ -55,6 +55,8 @@ The command can also adjust the offset for an entry that you previously set with
   Assigns multiple buffers to a range of entries in the object shader argument table.
 - [func setObjectBytes(UnsafeRawPointer, length: Int, index: Int)](./setobjectbytes%28_,length,index%29.md)
   Creates a buffer from bytes and assigns it to an entry in the object shader argument table.
+- [- setObjectBuffers:offsets:withRange:](./setobjectbuffers_offsets_withrange_.md)
+  Encodes a command that assigns multiple buffers to a range of entries in the object shader argument table.
 
 
 ---

@@ -99,8 +99,31 @@ For more about Core Foundation, see [Core Foundation Design Concepts](https://de
 ### Variables
 - [let kCFURLUbiquitousItemIsSyncPausedKey: CFString!](./kcfurlubiquitousitemissyncpausedkey.md)
 - [let kCFURLUbiquitousItemSupportedSyncControlsKey: CFString!](./kcfurlubiquitousitemsupportedsynccontrolskey.md)
+- [kCFBanglaCalendar](./cfcalendaridentifier/banglacalendar.md)
+- [kCFDangiCalendar](./cfcalendaridentifier/dangicalendar.md)
+- [kCFGujaratiCalendar](./cfcalendaridentifier/gujaraticalendar.md)
+- [kCFKannadaCalendar](./cfcalendaridentifier/kannadacalendar.md)
+- [kCFMalayalamCalendar](./cfcalendaridentifier/malayalamcalendar.md)
+- [kCFMarathiCalendar](./cfcalendaridentifier/marathicalendar.md)
+- [kCFOdiaCalendar](./cfcalendaridentifier/odiacalendar.md)
+- [kCFTamilCalendar](./cfcalendaridentifier/tamilcalendar.md)
+- [kCFTeluguCalendar](./cfcalendaridentifier/telugucalendar.md)
+- [kCFVietnameseCalendar](./cfcalendaridentifier/vietnamesecalendar.md)
+- [kCFVikramCalendar](./cfcalendaridentifier/vikramcalendar.md)
+- [kCFUserNotificationAlertAccessibilityIdentifierKey](./kcfusernotificationalertaccessibilityidentifierkey.md)
+- [kCFUserNotificationAlternateButtonAccessibilityIdentifierKey](./kcfusernotificationalternatebuttonaccessibilityidentifierkey.md)
+- [kCFUserNotificationDefaultButtonAccessibilityIdentifierKey](./kcfusernotificationdefaultbuttonaccessibilityidentifierkey.md)
+- [kCFUserNotificationOtherButtonAccessibilityIdentifierKey](./kcfusernotificationotherbuttonaccessibilityidentifierkey.md)
 ### Functions
 - [func CFAttributedStringGetStatisticalWritingDirections(CFAttributedString!, CFRange, Int8, UnsafeMutablePointer<UInt8>!, UnsafeMutablePointer<UInt8>!) -> Bool](./cfattributedstringgetstatisticalwritingdirections%28_,_,_,_,_%29.md)
+- [CFAllocatorCreateWithZone](./cfallocatorcreatewithzone.md)
+### Macros
+- [CF_HEADER_AUDIT_BEGIN](./cf_header_audit_begin.md)
+- [CF_HEADER_AUDIT_END](./cf_header_audit_end.md)
+- [CF_SWIFT_MAIN_ACTOR](./cf_swift_main_actor.md)
+- [CF_SWIFT_NONISOLATED](./cf_swift_nonisolated.md)
+- [CF_SWIFT_NONSENDABLE](./cf_swift_nonsendable.md)
+- [CF_SWIFT_SENDABLE](./cf_swift_sendable.md)
 
 
 ---

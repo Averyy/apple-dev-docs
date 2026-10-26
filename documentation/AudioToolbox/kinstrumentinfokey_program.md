@@ -31,6 +31,8 @@ var kInstrumentInfoKey_Program: String { get }
 - [var kInstrumentInfoKey_LSB: String](./kinstrumentinfokey_lsb.md)
 - [var kInstrumentInfoKey_MSB: String](./kinstrumentinfokey_msb.md)
 - [var kInstrumentInfoKey_Name: String](./kinstrumentinfokey_name.md)
+- [GetNameFromSoundBank](./getnamefromsoundbank.md)
+  Gets the name of a sound bank from a sound bank file.
 
 
 ---

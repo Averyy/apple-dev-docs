@@ -118,6 +118,8 @@ Accessories provide one or more services, represented by instances of [`HMServic
 - [var isVendorAccessory: Bool](./hmaccessory/isvendoraccessory.md)
 - [var manufacturerFeatures: [HMAccessory.ManufacturerFeature]](./hmaccessory/manufacturerfeatures.md)
   The list of manufacturer-declared extension features available for this accessory.
+- [matterNodeID](./hmaccessory/matternodeid-5zfqo.md)
+- [HAPInstanceID](./hmaccessory/hapinstanceid-667fy.md)
 ### Structures
 - [HMAccessory.ManufacturerFeature](./hmaccessory/manufacturerfeature.md)
   A manufacturer-declared extension feature available for an accessory.

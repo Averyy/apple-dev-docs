@@ -65,10 +65,20 @@
       "file_path": "documentation/Intents/inaccounttyperesolutionresult/confirmationrequired(with).md",
       "hash": "cb052b4126bb7f6463dca2b70c359d8acfb7becdf765ef6e2edc372220d104d5"
     },
+    "https://developer.apple.com/documentation/intents/inaccounttyperesolutionresult/confirmationrequiredwithvaluetoconfirm:": {
+      "etag": "\"2734-65d560a379065-df\"",
+      "file_path": "documentation/Intents/inaccounttyperesolutionresult/confirmationrequiredwithvaluetoconfirm_.md",
+      "hash": "a4aa349a5f7bc239ebc50ab49eacd4c3e0d796f42e3cb467386d5a11ae79cb6b"
+    },
     "https://developer.apple.com/documentation/intents/inaccounttyperesolutionresult/success(with:)": {
       "etag": "\"37b1-65d560a379065-df\"",
       "file_path": "documentation/Intents/inaccounttyperesolutionresult/success(with).md",
       "hash": "32fff328be898be5699507363a92c4876a9542f9740cc6b7dfeb92adc6604e55"
+    },
+    "https://developer.apple.com/documentation/intents/inaccounttyperesolutionresult/successwithresolvedvalue:": {
+      "etag": "\"26df-65d560a379065-df\"",
+      "file_path": "documentation/Intents/inaccounttyperesolutionresult/successwithresolvedvalue_.md",
+      "hash": "a8091f6062c8df3fca5449c855fdbf0496473048e6efae0f5b93deb8604b1ac5"
     },
     "https://developer.apple.com/documentation/intents/inactivatecarsignalintent": {
       "etag": "\"79d5-65d5609f9beca-df\"",
@@ -1280,10 +1290,20 @@
       "file_path": "documentation/Intents/inbilltyperesolutionresult/confirmationrequired(with).md",
       "hash": "8e52f65a831d61c11897727b3eef15c9e34696caa3dc2bf390ec3254b8fc454d"
     },
+    "https://developer.apple.com/documentation/intents/inbilltyperesolutionresult/confirmationrequiredwithvaluetoconfirm:": {
+      "etag": "\"2b0d-65d560a099738-df\"",
+      "file_path": "documentation/Intents/inbilltyperesolutionresult/confirmationrequiredwithvaluetoconfirm_.md",
+      "hash": "1c3384900b4a4bd35a829558317f6b69005e412a9ad6f0fe1e169c9832018988"
+    },
     "https://developer.apple.com/documentation/intents/inbilltyperesolutionresult/success(with:)": {
       "etag": "\"3ea6-65d560a099738-df\"",
       "file_path": "documentation/Intents/inbilltyperesolutionresult/success(with).md",
       "hash": "8dcc65aa19a13080d1ae0452d00e865102596f961f2de630003d755b8685776a"
+    },
+    "https://developer.apple.com/documentation/intents/inbilltyperesolutionresult/successwithresolvedvalue:": {
+      "etag": "\"2ab4-65d560a099738-df\"",
+      "file_path": "documentation/Intents/inbilltyperesolutionresult/successwithresolvedvalue_.md",
+      "hash": "54ac145a45de5cbbf37275d5fb5f38c06e32b59c9df2d057539997b400874578"
     },
     "https://developer.apple.com/documentation/intents/inboatreservation": {
       "etag": "\"75fd-65d560a341df6-df\"",
@@ -1514,6 +1534,11 @@
       "etag": "\"2217-65d560a666fbe-df\"",
       "file_path": "documentation/Intents/inbooleanresolutionresult/confirmationrequired(with).md",
       "hash": "7896e97b9732b288848b88f15f0393c85bda8a3131f30f5fc99bce48a6956ff9"
+    },
+    "https://developer.apple.com/documentation/intents/inbooleanresolutionresult/confirmationrequiredwithvaluetoconfirm:": {
+      "etag": "\"2044-65d560a666fbe-df\"",
+      "file_path": "documentation/Intents/inbooleanresolutionresult/confirmationrequiredwithvaluetoconfirm_.md",
+      "hash": "3a2b719b96c7af87debfd9dbc547463821ca083cb431433b29f00a8627dd9955"
     },
     "https://developer.apple.com/documentation/intents/inbooleanresolutionresult/success(with:)": {
       "etag": "\"3048-65d560a666fbe-df\"",
@@ -1795,6 +1820,11 @@
       "file_path": "documentation/Intents/incallrecord/callcapability.md",
       "hash": "92a58a8ee97e9554a669b082c84bc304ec87cab1b2e23a40f99f3941a0aaa72d"
     },
+    "https://developer.apple.com/documentation/intents/incallrecord/callduration-2d9u1": {
+      "etag": "\"3366-65d560a56e105-df\"",
+      "file_path": "documentation/Intents/incallrecord/callduration-2d9u1.md",
+      "hash": "0c1542aed6e7dc2f87a3e7a88ad3a060d536c4807cb5d4f5c01d20b33bee0925"
+    },
     "https://developer.apple.com/documentation/intents/incallrecord/callduration-47iud": {
       "etag": "\"2fe1-65d560a56e105-df\"",
       "file_path": "documentation/Intents/incallrecord/callduration-47iud.md",
@@ -1830,6 +1860,41 @@
       "file_path": "documentation/Intents/incallrecord/init(identifier,datecreated,caller,callrecordtype,callcapability,callduration,unseen,numberofcalls).md",
       "hash": "95949e5ef00fad56cee054dee4b722befcdc23292519d11c85e0bcfc72f39385"
     },
+    "https://developer.apple.com/documentation/intents/incallrecord/initwithidentifier:datecreated:caller:callrecordtype:callcapability:callduration:unseen:": {
+      "etag": "\"497d-65d560a56e105-df\"",
+      "file_path": "documentation/Intents/incallrecord/initwithidentifier_datecreated_caller_callrecordtype_callcapability_callduration_unseen_.md",
+      "hash": "2300d13360085e42ceff3e74bee5a8a4fbc1bbc58c24122f8c63e24e40f28b19"
+    },
+    "https://developer.apple.com/documentation/intents/incallrecord/initwithidentifier:datecreated:caller:callrecordtype:callcapability:callduration:unseen:numberofcalls:": {
+      "etag": "\"4bb8-65d560a56e105-df\"",
+      "file_path": "documentation/Intents/incallrecord/initwithidentifier_datecreated_caller_callrecordtype_callcapability_callduration_unseen_numberofcalls_.md",
+      "hash": "5fdceccbffc67dd027152244f43933143f1cc68aea049d0a502b5e729f806042"
+    },
+    "https://developer.apple.com/documentation/intents/incallrecord/initwithidentifier:datecreated:callrecordtype:callcapability:callduration:unseen:": {
+      "etag": "\"42e7-65d560a56e105-df\"",
+      "file_path": "documentation/Intents/incallrecord/initwithidentifier_datecreated_callrecordtype_callcapability_callduration_unseen_.md",
+      "hash": "89993cfde4a6688d8bcc4105c72f517b5c2cf08fd382e48e869fb44461696ece"
+    },
+    "https://developer.apple.com/documentation/intents/incallrecord/initwithidentifier:datecreated:callrecordtype:callcapability:callduration:unseen:numberofcalls:": {
+      "etag": "\"4522-65d560a56e105-df\"",
+      "file_path": "documentation/Intents/incallrecord/initwithidentifier_datecreated_callrecordtype_callcapability_callduration_unseen_numberofcalls_.md",
+      "hash": "8a65ba96481bebf65e008abae73a98d6b0561fa2c93be746c415c89cc3238b3a"
+    },
+    "https://developer.apple.com/documentation/intents/incallrecord/initwithidentifier:datecreated:callrecordtype:callcapability:callduration:unseen:participants:numberofcalls:iscalleridblocked:": {
+      "etag": "\"4974-65d560a56e105-df\"",
+      "file_path": "documentation/Intents/incallrecord/initwithidentifier_datecreated_callrecordtype_callcapability_callduration_unseen_participants_numberofcalls_iscalleridblocked_.md",
+      "hash": "70d420f48eba8bebd095487da0766f834f926031a03c139783c38f9bb7162340"
+    },
+    "https://developer.apple.com/documentation/intents/incallrecord/iscalleridblocked": {
+      "etag": "\"339d-65d560a56e105-df\"",
+      "file_path": "documentation/Intents/incallrecord/iscalleridblocked.md",
+      "hash": "fab93053f4212d8bcf09fd8838115c5f6441e5dfb597b8603a34bfb8afa044e8"
+    },
+    "https://developer.apple.com/documentation/intents/incallrecord/numberofcalls-7vv6o": {
+      "etag": "\"3365-65d560a56e105-df\"",
+      "file_path": "documentation/Intents/incallrecord/numberofcalls-7vv6o.md",
+      "hash": "21467d26996c6fa7773c676aca6b8b2f0f99e5d5df5a317b8c62c32b557e453d"
+    },
     "https://developer.apple.com/documentation/intents/incallrecord/numberofcalls-r8kl": {
       "etag": "\"2fa7-65d560a56e105-df\"",
       "file_path": "documentation/Intents/incallrecord/numberofcalls-r8kl.md",
@@ -1844,6 +1909,11 @@
       "etag": "\"3030-65d560a56e105-df\"",
       "file_path": "documentation/Intents/incallrecord/unseen-2m7sz.md",
       "hash": "9e198829462d378d6aacd54f02e80e07528af9828ddd27ffb138975751da066b"
+    },
+    "https://developer.apple.com/documentation/intents/incallrecord/unseen-8qab3": {
+      "etag": "\"334b-65d560a56e105-df\"",
+      "file_path": "documentation/Intents/incallrecord/unseen-8qab3.md",
+      "hash": "da9d5b3ce5532e2eaaf8282f1849c79c735114ebdc1d81dd82b720b509a26af1"
     },
     "https://developer.apple.com/documentation/intents/incallrecordfilter": {
       "etag": "\"6b5c-65d560a809d72-df\"",
@@ -2410,10 +2480,20 @@
       "file_path": "documentation/Intents/incaraircirculationmoderesolutionresult/confirmationrequired(with).md",
       "hash": "bd8559bc83ebb672191ee4bebfaaa3cf9f0acc94610cdd8582aa1fbf03445662"
     },
+    "https://developer.apple.com/documentation/intents/incaraircirculationmoderesolutionresult/confirmationrequiredwithvaluetoconfirm:": {
+      "etag": "\"2dfc-65d560a3c1bad-df\"",
+      "file_path": "documentation/Intents/incaraircirculationmoderesolutionresult/confirmationrequiredwithvaluetoconfirm_.md",
+      "hash": "c224db7d26822cb418f0b616eac67b275ac8d3ae09ba07d1d35e30b1c0540474"
+    },
     "https://developer.apple.com/documentation/intents/incaraircirculationmoderesolutionresult/success(with:)": {
       "etag": "\"4213-65d560a3c1bad-df\"",
       "file_path": "documentation/Intents/incaraircirculationmoderesolutionresult/success(with).md",
       "hash": "7f37407fb48d596ed9c1ca2af441a3d4709906647f39beca4ca3888b56af812c"
+    },
+    "https://developer.apple.com/documentation/intents/incaraircirculationmoderesolutionresult/successwithresolvedvalue:": {
+      "etag": "\"2da3-65d560a3c1bad-df\"",
+      "file_path": "documentation/Intents/incaraircirculationmoderesolutionresult/successwithresolvedvalue_.md",
+      "hash": "09871b8905ee881747423d46441e36a39a3a6225db60361e93350b2060b05dc6"
     },
     "https://developer.apple.com/documentation/intents/incaraudiosource": {
       "etag": "\"7975-65d560a8297e2-df\"",
@@ -2485,10 +2565,20 @@
       "file_path": "documentation/Intents/incaraudiosourceresolutionresult/confirmationrequired(with).md",
       "hash": "9b78b7301980218a91443c57c5d37d2d36220201bc0ff3f562bd812d8370076f"
     },
+    "https://developer.apple.com/documentation/intents/incaraudiosourceresolutionresult/confirmationrequiredwithvaluetoconfirm:": {
+      "etag": "\"2c38-65d560a8297e2-df\"",
+      "file_path": "documentation/Intents/incaraudiosourceresolutionresult/confirmationrequiredwithvaluetoconfirm_.md",
+      "hash": "af4facba22fc409fbdf6c9156c5cadbe23503fe7f40e1ef5901567fe5bcaba66"
+    },
     "https://developer.apple.com/documentation/intents/incaraudiosourceresolutionresult/success(with:)": {
       "etag": "\"3fa9-65d560a8297e2-df\"",
       "file_path": "documentation/Intents/incaraudiosourceresolutionresult/success(with).md",
       "hash": "b423c74914eb8f4cf144781c383be1d0f1d07a0fac75a01c7a04754678032980"
+    },
+    "https://developer.apple.com/documentation/intents/incaraudiosourceresolutionresult/successwithresolvedvalue:": {
+      "etag": "\"2bdf-65d560a8297e2-df\"",
+      "file_path": "documentation/Intents/incaraudiosourceresolutionresult/successwithresolvedvalue_.md",
+      "hash": "17673d48fc1a7e64dd164961e2cc90f5d9e8d3f01d8865fc9fa0eb03d4319ce3"
     },
     "https://developer.apple.com/documentation/intents/incarcommandsdomainhandling": {
       "etag": "\"92a2-65d560a6deb10-df\"",
@@ -2535,10 +2625,20 @@
       "file_path": "documentation/Intents/incardefrosterresolutionresult/confirmationrequired(with).md",
       "hash": "9885d48bba94c0e0f1902d379af2d35d53d5091d37af2e6e8d3a9dcd532c661a"
     },
+    "https://developer.apple.com/documentation/intents/incardefrosterresolutionresult/confirmationrequiredwithvaluetoconfirm:": {
+      "etag": "\"2bbe-65d560a744918-df\"",
+      "file_path": "documentation/Intents/incardefrosterresolutionresult/confirmationrequiredwithvaluetoconfirm_.md",
+      "hash": "c9c4a9bd76dca9af6b4100eda231107b3997191150f98c5a3630be7f18bd0861"
+    },
     "https://developer.apple.com/documentation/intents/incardefrosterresolutionresult/success(with:)": {
       "etag": "\"3f05-65d560a744918-df\"",
       "file_path": "documentation/Intents/incardefrosterresolutionresult/success(with).md",
       "hash": "4ad6c38d3f7f91df7082de319d54ec802cabdcf49ebb95f7374dd3cf57d924da"
+    },
+    "https://developer.apple.com/documentation/intents/incardefrosterresolutionresult/successwithresolvedvalue:": {
+      "etag": "\"2b65-65d560a744918-df\"",
+      "file_path": "documentation/Intents/incardefrosterresolutionresult/successwithresolvedvalue_.md",
+      "hash": "77bd960ff67e407733b637542d9acd99b9f146b551602871001325458c0f10e2"
     },
     "https://developer.apple.com/documentation/intents/incarplaydomainhandling": {
       "etag": "\"b299-65d560a7f0925-df\"",
@@ -2630,10 +2730,20 @@
       "file_path": "documentation/Intents/incarseatresolutionresult/confirmationrequired(with).md",
       "hash": "45257c32f055221dad3af05b53625fb7be53de62f031d240fda9f0f3b61b8ebf"
     },
+    "https://developer.apple.com/documentation/intents/incarseatresolutionresult/confirmationrequiredwithvaluetoconfirm:": {
+      "etag": "\"2a8a-65d560a16e0fb-df\"",
+      "file_path": "documentation/Intents/incarseatresolutionresult/confirmationrequiredwithvaluetoconfirm_.md",
+      "hash": "21740f20b02bac9a10049c030c7d3dc768c08dfddb99ce07b2d73c22822115d0"
+    },
     "https://developer.apple.com/documentation/intents/incarseatresolutionresult/success(with:)": {
       "etag": "\"3d5f-65d560a16e0fb-df\"",
       "file_path": "documentation/Intents/incarseatresolutionresult/success(with).md",
       "hash": "a4425a1d46071d756a276418e52d7ad28147b31d2b0e582bc71e1d448ef9b6c0"
+    },
+    "https://developer.apple.com/documentation/intents/incarseatresolutionresult/successwithresolvedvalue:": {
+      "etag": "\"2a31-65d560a16e0fb-df\"",
+      "file_path": "documentation/Intents/incarseatresolutionresult/successwithresolvedvalue_.md",
+      "hash": "ec62d0563366acb443a35afdb10e0b9246d9b13fb479ba413d114dc6bbf4ade1"
     },
     "https://developer.apple.com/documentation/intents/incarsignaloptions": {
       "etag": "\"381a-65d560a7841b5-df\"",
@@ -2665,10 +2775,20 @@
       "file_path": "documentation/Intents/incarsignaloptionsresolutionresult/confirmationrequired(with).md",
       "hash": "85b264e68a4a76bf971806d78d981ae66395e9d40dcaaa82551009e3f5e5bd01"
     },
+    "https://developer.apple.com/documentation/intents/incarsignaloptionsresolutionresult/confirmationrequiredwithvaluetoconfirm:": {
+      "etag": "\"2844-65d560a43bdf3-df\"",
+      "file_path": "documentation/Intents/incarsignaloptionsresolutionresult/confirmationrequiredwithvaluetoconfirm_.md",
+      "hash": "0c25d51304fc9921138b30c5bbe2a8d5b1f094576af940b344164ce88bc5513a"
+    },
     "https://developer.apple.com/documentation/intents/incarsignaloptionsresolutionresult/success(with:)": {
       "etag": "\"3e59-65d560a43bdf3-df\"",
       "file_path": "documentation/Intents/incarsignaloptionsresolutionresult/success(with).md",
       "hash": "c394e6cb243500ad73f5e0838af8c3344520d53a7a9ba253a4bd90ae1dc8ccd7"
+    },
+    "https://developer.apple.com/documentation/intents/incarsignaloptionsresolutionresult/successwithresolvedvalue:": {
+      "etag": "\"27ef-65d560a43bdf3-df\"",
+      "file_path": "documentation/Intents/incarsignaloptionsresolutionresult/successwithresolvedvalue_.md",
+      "hash": "2877cd633b87ba8f78817d7c7b54ea44ae4ed98803750c2fb85230df2c2af025"
     },
     "https://developer.apple.com/documentation/intents/inconditionaloperator": {
       "etag": "\"385c-65d560a1ebd08-df\"",
@@ -3295,6 +3415,11 @@
       "file_path": "documentation/Intents/indeletetasksintent.md",
       "hash": "948b8a13fdd2fb579713171f82812a6c6229c9a8be70f2eb4e204c8892691310"
     },
+    "https://developer.apple.com/documentation/intents/indeletetasksintent/all-1dt4g": {
+      "etag": "\"2359-65d560a4da26d-df\"",
+      "file_path": "documentation/Intents/indeletetasksintent/all-1dt4g.md",
+      "hash": "f0d8d56b3cdd968c10a5cbc68f3732d57a6583700756d8839b4f9b90ff5eb7ed"
+    },
     "https://developer.apple.com/documentation/intents/indeletetasksintent/all-8gg59": {
       "etag": "\"2253-65d560a4da26d-df\"",
       "file_path": "documentation/Intents/indeletetasksintent/all-8gg59.md",
@@ -3304,6 +3429,11 @@
       "etag": "\"2b83-65d560a4da26d-df\"",
       "file_path": "documentation/Intents/indeletetasksintent/init(tasklist,tasks,all).md",
       "hash": "9079e857fa7ba8ea3e61f5acbe53ae6f26724587b728dc89e094d9113d68b5b3"
+    },
+    "https://developer.apple.com/documentation/intents/indeletetasksintent/initwithtasklist:tasks:all:": {
+      "etag": "\"235a-65d560a4da26d-df\"",
+      "file_path": "documentation/Intents/indeletetasksintent/initwithtasklist_tasks_all_.md",
+      "hash": "90e353aabbdfbfa39ea1f1f7ec28994c328eb3f60a8b1b9f5b3172a975845cad"
     },
     "https://developer.apple.com/documentation/intents/indeletetasksintent/tasklist": {
       "etag": "\"334c-65d560a4da26d-df\"",
@@ -3474,6 +3604,11 @@
       "etag": "\"21a0-65d560a765daf-df\"",
       "file_path": "documentation/Intents/indoubleresolutionresult/confirmationrequired(with).md",
       "hash": "15cb3e19931f2b3232e1d1f5050e3243e425f6122f35c7598d796dc68dccf0fb"
+    },
+    "https://developer.apple.com/documentation/intents/indoubleresolutionresult/confirmationrequiredwithvaluetoconfirm:": {
+      "etag": "\"202a-65d560a765daf-df\"",
+      "file_path": "documentation/Intents/indoubleresolutionresult/confirmationrequiredwithvaluetoconfirm_.md",
+      "hash": "db447894e295842ab4f6aa334c3cd7b02fb81d8b0cf6fc9733127ddb9e20a7ed"
     },
     "https://developer.apple.com/documentation/intents/indoubleresolutionresult/success(with:)": {
       "etag": "\"2fc5-65d560a765daf-df\"",
@@ -3735,6 +3870,16 @@
       "file_path": "documentation/Intents/inenumresolutionresult.md",
       "hash": "6b810d85916b4015bade3c965aa71783e92b4c9e30a0bbaf82ef5968434c91a7"
     },
+    "https://developer.apple.com/documentation/intents/inenumresolutionresult/confirmationrequiredwithvaluetoconfirm:": {
+      "etag": "\"1c95-65d5609ec5ef7-df\"",
+      "file_path": "documentation/Intents/inenumresolutionresult/confirmationrequiredwithvaluetoconfirm_.md",
+      "hash": "da357b6ee0b4c4184ed940bdb17d32cfd38cb2f8b5827c6671ed4984cebca970"
+    },
+    "https://developer.apple.com/documentation/intents/inenumresolutionresult/successwithresolvedvalue:": {
+      "etag": "\"1c8d-65d5609ec5ef7-df\"",
+      "file_path": "documentation/Intents/inenumresolutionresult/successwithresolvedvalue_.md",
+      "hash": "9ae4752173d62b9cbb37807c8b87846140cf9e5e0ff7a322f260b476f9c25cfd"
+    },
     "https://developer.apple.com/documentation/intents/inextension": {
       "etag": "\"4dac-65d560a3e23c3-df\"",
       "file_path": "documentation/Intents/inextension.md",
@@ -3894,6 +4039,16 @@
       "etag": "\"16e4-65d5609fec9ca-df\"",
       "file_path": "documentation/Intents/infocusstatus/init(isfocused).md",
       "hash": "f1686a396330c737202a00244b8d2c3e7394ee7657b385a2e491eeed73de1d74"
+    },
+    "https://developer.apple.com/documentation/intents/infocusstatus/initwithisfocused:": {
+      "etag": "\"1653-65d5609fec9ca-df\"",
+      "file_path": "documentation/Intents/infocusstatus/initwithisfocused_.md",
+      "hash": "e899af728c7eaffdec91e796dedccaffaacf1cbca3cfc89a6bcd26c7f5627f4d"
+    },
+    "https://developer.apple.com/documentation/intents/infocusstatus/isfocused-78wbx": {
+      "etag": "\"1c12-65d5609fec9ca-df\"",
+      "file_path": "documentation/Intents/infocusstatus/isfocused-78wbx.md",
+      "hash": "ce3834d5a4c62e4b4bcdeff618f9087d98b017bff5c94d8d03f357898effd0f1"
     },
     "https://developer.apple.com/documentation/intents/infocusstatus/isfocused-8ytve": {
       "etag": "\"19fd-65d5609fec9ca-df\"",
@@ -4250,6 +4405,11 @@
       "file_path": "documentation/Intents/ingetcarlockstatusintentresponse/init(code,useractivity).md",
       "hash": "af1628f3b3d171cc67d27cd033f6882f648adacb505870e85f1e49db36807586"
     },
+    "https://developer.apple.com/documentation/intents/ingetcarlockstatusintentresponse/locked-1eacd": {
+      "etag": "\"1e33-65d5609fec9ca-df\"",
+      "file_path": "documentation/Intents/ingetcarlockstatusintentresponse/locked-1eacd.md",
+      "hash": "3e2631a1cf51efeced317e95cbf37f402b9b380848030b642e6d475712510581"
+    },
     "https://developer.apple.com/documentation/intents/ingetcarlockstatusintentresponse/locked-357ju": {
       "etag": "\"1c55-65d5609fec9ca-df\"",
       "file_path": "documentation/Intents/ingetcarlockstatusintentresponse/locked-357ju.md",
@@ -4355,6 +4515,11 @@
       "file_path": "documentation/Intents/ingetcarpowerlevelstatusintentresponse/caridentifier.md",
       "hash": "28ce7d1764f0a4d2c7e49bfd705c16e5ac81c726c64ad1b0ec646a347fed4c54"
     },
+    "https://developer.apple.com/documentation/intents/ingetcarpowerlevelstatusintentresponse/chargepercentremaining-30zol": {
+      "etag": "\"413c-65d560a063913-df\"",
+      "file_path": "documentation/Intents/ingetcarpowerlevelstatusintentresponse/chargepercentremaining-30zol.md",
+      "hash": "6c5d84e1fd70dab68f4fd12b6e07a5c8b9de85b2464d4366d3af8a7d141e9a6b"
+    },
     "https://developer.apple.com/documentation/intents/ingetcarpowerlevelstatusintentresponse/chargepercentremaining-51zwv": {
       "etag": "\"3f91-65d560a063913-df\"",
       "file_path": "documentation/Intents/ingetcarpowerlevelstatusintentresponse/chargepercentremaining-51zwv.md",
@@ -4364,6 +4529,11 @@
       "etag": "\"26e7-65d560a063913-df\"",
       "file_path": "documentation/Intents/ingetcarpowerlevelstatusintentresponse/charging-6xnqj.md",
       "hash": "38842d76d116d94ffd61d4d16f1ad52ffbfbeb5b93a0ccb67b8db12436d7eb57"
+    },
+    "https://developer.apple.com/documentation/intents/ingetcarpowerlevelstatusintentresponse/charging-7aamu": {
+      "etag": "\"2819-65d560a063913-df\"",
+      "file_path": "documentation/Intents/ingetcarpowerlevelstatusintentresponse/charging-7aamu.md",
+      "hash": "053c6a2a6f050d0c9689fa8c7d974a4ae0e87a9d41fd76f974162fb85a00e67b"
     },
     "https://developer.apple.com/documentation/intents/ingetcarpowerlevelstatusintentresponse/chargingformulaarguments": {
       "etag": "\"2d6f-65d560a063913-df\"",
@@ -4410,6 +4580,11 @@
       "file_path": "documentation/Intents/ingetcarpowerlevelstatusintentresponse/fuelpercentremaining-56xw3.md",
       "hash": "b07c851fc6220bfa214941fac59b1f4f651c5a797ab1f3b9a46e50be3db600b6"
     },
+    "https://developer.apple.com/documentation/intents/ingetcarpowerlevelstatusintentresponse/fuelpercentremaining-6mdv4": {
+      "etag": "\"412d-65d560a063913-df\"",
+      "file_path": "documentation/Intents/ingetcarpowerlevelstatusintentresponse/fuelpercentremaining-6mdv4.md",
+      "hash": "b5859adb1e5c27947712b3cda97fe40198d97886589b01f8205c18a3c04a5619"
+    },
     "https://developer.apple.com/documentation/intents/ingetcarpowerlevelstatusintentresponse/init(code:useractivity:)": {
       "etag": "\"42b4-65d560a063913-df\"",
       "file_path": "documentation/Intents/ingetcarpowerlevelstatusintentresponse/init(code,useractivity).md",
@@ -4439,6 +4614,11 @@
       "etag": "\"38ff-65d560a063913-df\"",
       "file_path": "documentation/Intents/ingetcarpowerlevelstatusintentresponse/minimumbatterycapacity.md",
       "hash": "1928faf39c0a7c9d434e5751ea3091c758b5efa01b0b6d6a31248731367f9b7f"
+    },
+    "https://developer.apple.com/documentation/intents/ingetcarpowerlevelstatusintentresponse/minutestofull-25vcb": {
+      "etag": "\"283e-65d560a063913-df\"",
+      "file_path": "documentation/Intents/ingetcarpowerlevelstatusintentresponse/minutestofull-25vcb.md",
+      "hash": "e1960f85ebf3d76357992d9f835850f02a67b03ffd9652228e33cdb1510e8754"
     },
     "https://developer.apple.com/documentation/intents/ingetcarpowerlevelstatusintentresponse/minutestofull-2kbt6": {
       "etag": "\"266a-65d560a063913-df\"",
@@ -5155,6 +5335,11 @@
       "file_path": "documentation/Intents/inintegerresolutionresult/confirmationrequired(with).md",
       "hash": "35d3f8b3f908b381564a8372fede28f78c2967c24abb6c5937013b51689ca082"
     },
+    "https://developer.apple.com/documentation/intents/inintegerresolutionresult/confirmationrequiredwithvaluetoconfirm:": {
+      "etag": "\"2043-65d560a56e105-df\"",
+      "file_path": "documentation/Intents/inintegerresolutionresult/confirmationrequiredwithvaluetoconfirm_.md",
+      "hash": "4cc4073ca5f708ed67672ddf6ecebf446ea6e02b8590a807d212b8162d8c4276"
+    },
     "https://developer.apple.com/documentation/intents/inintegerresolutionresult/success(with:)": {
       "etag": "\"32b7-65d560a56e105-df\"",
       "file_path": "documentation/Intents/inintegerresolutionresult/success(with).md",
@@ -5175,6 +5360,11 @@
       "file_path": "documentation/Intents/inintent/identifier.md",
       "hash": "c1325aaaf553dc93bc000d4b18687c28c1ec8bedc297d6c46a2fc70b74f4f9c9"
     },
+    "https://developer.apple.com/documentation/intents/inintent/imageforparameternamed:": {
+      "etag": "\"208f-65d560a0f0aca-df\"",
+      "file_path": "documentation/Intents/inintent/imageforparameternamed_.md",
+      "hash": "cdfe6412cd78107e97ac165d9158a3f306ec58bb388f2c91f3a032bb382094c8"
+    },
     "https://developer.apple.com/documentation/intents/inintent/init(coder:)": {
       "etag": "\"13d6-65d560a0d4888-df\"",
       "file_path": "documentation/Intents/inintent/init(coder).md",
@@ -5189,6 +5379,11 @@
       "etag": "\"2550-65d560a0f0aca-df\"",
       "file_path": "documentation/Intents/inintent/keyimage().md",
       "hash": "a7f963c127b93f2ca86faa68e5943ed34a7ba3eda3e1e766f910e2fa1cf1deda"
+    },
+    "https://developer.apple.com/documentation/intents/inintent/setimage:forparameternamed:": {
+      "etag": "\"2365-65d560a0d4888-df\"",
+      "file_path": "documentation/Intents/inintent/setimage_forparameternamed_.md",
+      "hash": "e2ec917f227b7388853d9014cdf550c612b51ba089edba1f4bfc0513beef3a20"
     },
     "https://developer.apple.com/documentation/intents/inintent/shortcutavailability": {
       "etag": "\"3524-65d560a0f0aca-df\"",
@@ -5635,6 +5830,11 @@
       "file_path": "documentation/Intents/inintentresolutionresult.md",
       "hash": "f58268334c3e46ebfdbe325c49be68a3621aafe468e00057783a6b39ca5e5a62"
     },
+    "https://developer.apple.com/documentation/intents/inintentresolutionresult/confirmationrequiredwithitemtoconfirm:forreason:": {
+      "etag": "\"2e16-65d560a7841b5-df\"",
+      "file_path": "documentation/Intents/inintentresolutionresult/confirmationrequiredwithitemtoconfirm_forreason_.md",
+      "hash": "ddb8e814b148e372c1287d479bbbc8687f64cf6fd4cd543d5f3adb9f00c706bc"
+    },
     "https://developer.apple.com/documentation/intents/inintentresolutionresult/needsvalue()": {
       "etag": "\"30e2-65d560a7841b5-df\"",
       "file_path": "documentation/Intents/inintentresolutionresult/needsvalue().md",
@@ -5649,6 +5849,11 @@
       "etag": "\"30ec-65d560a7841b5-df\"",
       "file_path": "documentation/Intents/inintentresolutionresult/unsupported().md",
       "hash": "a397550ac550cd5d5c759469aa52d1b0d7ef4cf08c2e12d22a67538498d216e1"
+    },
+    "https://developer.apple.com/documentation/intents/inintentresolutionresult/unsupportedwithreason:": {
+      "etag": "\"2c20-65d560a7841b5-df\"",
+      "file_path": "documentation/Intents/inintentresolutionresult/unsupportedwithreason_.md",
+      "hash": "7bc4c1cdacd164d999e919c173af42902a19d6d6b5bd47336fb05df4a1532681"
     },
     "https://developer.apple.com/documentation/intents/inintentresponse": {
       "etag": "\"1aa2f-65d560a0f0aca-df\"",
@@ -6085,6 +6290,16 @@
       "file_path": "documentation/Intents/inlodgingreservation/init(itemreference,reservationnumber,bookingtime,reservationstatus,reservationholdername,actions,url,lodgingbusinesslocation,reservationduration,numberofadults,numberofchildren).md",
       "hash": "ac473f03518f528462838fe4bb466ebc6a5eb6ee1124bbbc7a7569fe0deb0256"
     },
+    "https://developer.apple.com/documentation/intents/inlodgingreservation/initwithitemreference:reservationnumber:bookingtime:reservationstatus:reservationholdername:actions:lodgingbusinesslocation:reservationduration:numberofadults:numberofchildren:": {
+      "etag": "\"4c70-65d560a0d4888-df\"",
+      "file_path": "documentation/Intents/inlodgingreservation/initwithitemreference_reservationnumber_bookingtime_reservationstatus_reservationholdername_actions_lodgingbusinesslocation_reservationduration_numberofadults_numberofchildren_.md",
+      "hash": "b3ab52d9ade66c2c165ab6811f9cd8292e69ae3f47ca9a3bbe2164df8e287979"
+    },
+    "https://developer.apple.com/documentation/intents/inlodgingreservation/initwithitemreference:reservationnumber:bookingtime:reservationstatus:reservationholdername:actions:url:lodgingbusinesslocation:reservationduration:numberofadults:numberofchildren:": {
+      "etag": "\"50ce-65d560a0d4888-df\"",
+      "file_path": "documentation/Intents/inlodgingreservation/initwithitemreference_reservationnumber_bookingtime_reservationstatus_reservationholdername_actions_url_lodgingbusinesslocation_reservationduration_numberofadults_numberofchildren_.md",
+      "hash": "8020d2624324d72dbb6c641969adbd2ec842baa638527fac0ac83be4e0ade53f"
+    },
     "https://developer.apple.com/documentation/intents/inlodgingreservation/lodgingbusinesslocation": {
       "etag": "\"3405-65d560a0d4888-df\"",
       "file_path": "documentation/Intents/inlodgingreservation/lodgingbusinesslocation.md",
@@ -6095,10 +6310,20 @@
       "file_path": "documentation/Intents/inlodgingreservation/numberofadults-6fsnq.md",
       "hash": "5851c52eb4d997536328831ab1f8d0d3f4186060cd4cc5077822e2a363976549"
     },
+    "https://developer.apple.com/documentation/intents/inlodgingreservation/numberofadults-9r4iw": {
+      "etag": "\"2459-65d560a0d4888-df\"",
+      "file_path": "documentation/Intents/inlodgingreservation/numberofadults-9r4iw.md",
+      "hash": "ccf69fd2e3c5eab01b5b4cb65b572ac0b010292acfbb37ee64329e7b120a6d59"
+    },
     "https://developer.apple.com/documentation/intents/inlodgingreservation/numberofchildren-1dm3g": {
       "etag": "\"2236-65d560a0d4888-df\"",
       "file_path": "documentation/Intents/inlodgingreservation/numberofchildren-1dm3g.md",
       "hash": "e9900f412fef82c9b5be14ed8871954469b6f1f8703ae8ce07dc83da0c984e52"
+    },
+    "https://developer.apple.com/documentation/intents/inlodgingreservation/numberofchildren-2n3e2": {
+      "etag": "\"2469-65d560a0d4888-df\"",
+      "file_path": "documentation/Intents/inlodgingreservation/numberofchildren-2n3e2.md",
+      "hash": "6b6c144226d49a762bff73114df18f48d0f0207cc053b2a6d8851dba2cf3dd2a"
     },
     "https://developer.apple.com/documentation/intents/inlodgingreservation/reservationduration": {
       "etag": "\"3669-65d560a0d4888-df\"",
@@ -6505,6 +6730,11 @@
       "file_path": "documentation/Intents/inmediasearch/init(mediatype,sortorder,medianame,artistname,albumname,genrenames,moodnames,releasedate,reference,mediaidentifier).md",
       "hash": "8c6c18c9f3001a8025e3b838b7f697b613571ec14b79d811578136ac337e6b04"
     },
+    "https://developer.apple.com/documentation/intents/inmediasearch/initwithmediatype:sortorder:medianame:artistname:albumname:genrenames:moodnames:releasedate:reference:mediaidentifier:": {
+      "etag": "\"3be1-65d560a60bece-df\"",
+      "file_path": "documentation/Intents/inmediasearch/initwithmediatype_sortorder_medianame_artistname_albumname_genrenames_moodnames_releasedate_reference_mediaidentifier_.md",
+      "hash": "a440506bb3b90f64a1210e42542ad13da2f48ec1d4c7429f5a07fe4bc3d97e54"
+    },
     "https://developer.apple.com/documentation/intents/inmediasearch/mediaidentifier": {
       "etag": "\"5297-65d560a60bece-df\"",
       "file_path": "documentation/Intents/inmediasearch/mediaidentifier.md",
@@ -6604,6 +6834,11 @@
       "etag": "\"1a4d-65d560a744918-df\"",
       "file_path": "documentation/Intents/inmediausercontext/init().md",
       "hash": "329563ec50036ef0a6848de3304e8b373aeb8707b5fc2ada805449004e8f9c4a"
+    },
+    "https://developer.apple.com/documentation/intents/inmediausercontext/numberoflibraryitems-881cf": {
+      "etag": "\"238c-65d560a744918-df\"",
+      "file_path": "documentation/Intents/inmediausercontext/numberoflibraryitems-881cf.md",
+      "hash": "f823d0565d3d79f1ef5989d3dff27e32df60d40c4dc1d42bc51981f9d81d50ca"
     },
     "https://developer.apple.com/documentation/intents/inmediausercontext/numberoflibraryitems-8rnf0": {
       "etag": "\"2104-65d560a744918-df\"",
@@ -6860,10 +7095,20 @@
       "file_path": "documentation/Intents/inmessageattributeoptionsresolutionresult/confirmationrequired(with).md",
       "hash": "416c0abd99ffea0df6958e67f7ecee681537904df07a35f480eb640e6d34147f"
     },
+    "https://developer.apple.com/documentation/intents/inmessageattributeoptionsresolutionresult/confirmationrequiredwithvaluetoconfirm:": {
+      "etag": "\"2a0d-65d560a3e23c3-df\"",
+      "file_path": "documentation/Intents/inmessageattributeoptionsresolutionresult/confirmationrequiredwithvaluetoconfirm_.md",
+      "hash": "914853d9dc9d6f9bb5c5e29630550f338232b5c0732e9389c6f76b344b8d4264"
+    },
     "https://developer.apple.com/documentation/intents/inmessageattributeoptionsresolutionresult/success(with:)": {
       "etag": "\"3b76-65d560a3e23c3-df\"",
       "file_path": "documentation/Intents/inmessageattributeoptionsresolutionresult/success(with).md",
       "hash": "4c1ddc06328821b9439977b478ed7378cb5642f489cc82885245d6168bc9d39d"
+    },
+    "https://developer.apple.com/documentation/intents/inmessageattributeoptionsresolutionresult/successwithresolvedvalue:": {
+      "etag": "\"29b8-65d560a3e23c3-df\"",
+      "file_path": "documentation/Intents/inmessageattributeoptionsresolutionresult/successwithresolvedvalue_.md",
+      "hash": "7b991fd40ead1d7785c1a65d82edf13818dc31201526b0ef2bd6f764a5aa8a25"
     },
     "https://developer.apple.com/documentation/intents/inmessageattributeresolutionresult": {
       "etag": "\"685a-65d5609f489c0-df\"",
@@ -6875,10 +7120,20 @@
       "file_path": "documentation/Intents/inmessageattributeresolutionresult/confirmationrequired(with).md",
       "hash": "ca00d049c7f7832022f21115e6c59e145e2b8a32ace3893f7e1f019d2e7b445e"
     },
+    "https://developer.apple.com/documentation/intents/inmessageattributeresolutionresult/confirmationrequiredwithvaluetoconfirm:": {
+      "etag": "\"2858-65d560a5ef35a-df\"",
+      "file_path": "documentation/Intents/inmessageattributeresolutionresult/confirmationrequiredwithvaluetoconfirm_.md",
+      "hash": "83ea7cdec09b9d03dc7d2505893de059a06443446c531f540fe730635cef7813"
+    },
     "https://developer.apple.com/documentation/intents/inmessageattributeresolutionresult/success(with:)": {
       "etag": "\"3934-65d560a5ef35a-df\"",
       "file_path": "documentation/Intents/inmessageattributeresolutionresult/success(with).md",
       "hash": "d72ee9f8549e49b091b22d4dc61a9817c179b9feebbfee4ad63b376044ffea37"
+    },
+    "https://developer.apple.com/documentation/intents/inmessageattributeresolutionresult/successwithresolvedvalue:": {
+      "etag": "\"2803-65d560a5ef35a-df\"",
+      "file_path": "documentation/Intents/inmessageattributeresolutionresult/successwithresolvedvalue_.md",
+      "hash": "fe23a176c04aa54bb490e49dfe30aed2ca629482632039feab67fadc74f4fcd2"
     },
     "https://developer.apple.com/documentation/intents/inmessagelinkmetadata": {
       "etag": "\"67ae-65d560a0d4888-df\"",
@@ -7229,6 +7484,11 @@
       "etag": "\"2d36-65d560a4ab621-df\"",
       "file_path": "documentation/Intents/innotebookitemtyperesolutionresult/disambiguation(with).md",
       "hash": "45c6ed9582df540a94ad08445c22f2062fbcbf849f54dd16c8a1e39d34246ce7"
+    },
+    "https://developer.apple.com/documentation/intents/innotebookitemtyperesolutionresult/disambiguationwithnotebookitemtypestodisambiguate:": {
+      "etag": "\"2b9a-65d560a4ab621-df\"",
+      "file_path": "documentation/Intents/innotebookitemtyperesolutionresult/disambiguationwithnotebookitemtypestodisambiguate_.md",
+      "hash": "6071b8f19626a4a43eb4984a55ff7802ae50742649622a4568a42ba2d3e4d05c"
     },
     "https://developer.apple.com/documentation/intents/innotebookitemtyperesolutionresult/success(with:)": {
       "etag": "\"40d9-65d560a4ab621-df\"",
@@ -8210,10 +8470,20 @@
       "file_path": "documentation/Intents/inpaymentstatusresolutionresult/confirmationrequired(with).md",
       "hash": "b58721982ce086c2a7fe4700dbea8eec2f963a8225f45152bed41129920b77d8"
     },
+    "https://developer.apple.com/documentation/intents/inpaymentstatusresolutionresult/confirmationrequiredwithvaluetoconfirm:": {
+      "etag": "\"27b1-65d560a07d47e-df\"",
+      "file_path": "documentation/Intents/inpaymentstatusresolutionresult/confirmationrequiredwithvaluetoconfirm_.md",
+      "hash": "38d9d88fe235236411f3dd504493f86832dbf15a40fcd8f8a5eccab50dad58dd"
+    },
     "https://developer.apple.com/documentation/intents/inpaymentstatusresolutionresult/success(with:)": {
       "etag": "\"38a0-65d560a07d47e-df\"",
       "file_path": "documentation/Intents/inpaymentstatusresolutionresult/success(with).md",
       "hash": "1d041cd3f3f07e5c1d714dc7c7ca0ccbf1b5b26a93281a8efe10ddf0063b8498"
+    },
+    "https://developer.apple.com/documentation/intents/inpaymentstatusresolutionresult/successwithresolvedvalue:": {
+      "etag": "\"275c-65d560a07d47e-df\"",
+      "file_path": "documentation/Intents/inpaymentstatusresolutionresult/successwithresolvedvalue_.md",
+      "hash": "0fb2a64d925f61d1b3db9ac6ae3119bb5a245d0891d9dbd3fcc57ae7a4b9bfa1"
     },
     "https://developer.apple.com/documentation/intents/inperson": {
       "etag": "\"1350a-65d560a666fbe-df\"",
@@ -8865,6 +9135,16 @@
       "file_path": "documentation/Intents/inplaymediaintent/init(mediaitems,mediacontainer,playshuffled,playbackrepeatmode,resumeplayback,playbackqueuelocation,playbackspeed,mediasearch).md",
       "hash": "894a2a368ee46eb7cf73bd5c6a96c386eaa40ed568028b8a3b2687e9bcf4b510"
     },
+    "https://developer.apple.com/documentation/intents/inplaymediaintent/initwithmediaitems:mediacontainer:playshuffled:playbackrepeatmode:resumeplayback:": {
+      "etag": "\"36ff-65d560a109b8a-df\"",
+      "file_path": "documentation/Intents/inplaymediaintent/initwithmediaitems_mediacontainer_playshuffled_playbackrepeatmode_resumeplayback_.md",
+      "hash": "f5c276937f2b90a4ad74e07d1944bccb6a2ff6d9c946be6f380000601e4a3b31"
+    },
+    "https://developer.apple.com/documentation/intents/inplaymediaintent/initwithmediaitems:mediacontainer:playshuffled:playbackrepeatmode:resumeplayback:playbackqueuelocation:playbackspeed:mediasearch:": {
+      "etag": "\"4611-65d560a109b8a-df\"",
+      "file_path": "documentation/Intents/inplaymediaintent/initwithmediaitems_mediacontainer_playshuffled_playbackrepeatmode_resumeplayback_playbackqueuelocation_playbackspeed_mediasearch_.md",
+      "hash": "cb3ec81b036af6651e9b6e462559fc139134a8681a9a0889f19f8a4bc11f608f"
+    },
     "https://developer.apple.com/documentation/intents/inplaymediaintent/mediacontainer": {
       "etag": "\"2b90-65d560a109b8a-df\"",
       "file_path": "documentation/Intents/inplaymediaintent/mediacontainer.md",
@@ -8895,15 +9175,30 @@
       "file_path": "documentation/Intents/inplaymediaintent/playbackspeed-17r2t.md",
       "hash": "50c55baf4ae7a2d9404aeb61526e868ad8b6abebb57cfa1013f23ba0815795d1"
     },
+    "https://developer.apple.com/documentation/intents/inplaymediaintent/playbackspeed-6ngbq": {
+      "etag": "\"33dc-65d560a109b8a-df\"",
+      "file_path": "documentation/Intents/inplaymediaintent/playbackspeed-6ngbq.md",
+      "hash": "c3db8b281dffe48661546ea06a2c99a0721e153d7e3510464d741741e771b6ab"
+    },
     "https://developer.apple.com/documentation/intents/inplaymediaintent/playshuffled-2btex": {
       "etag": "\"334d-65d560a109b8a-df\"",
       "file_path": "documentation/Intents/inplaymediaintent/playshuffled-2btex.md",
       "hash": "f059f2731e247f5bdcf9e6d2e087f8bdd453c3b7d525d5d2504e15ef1b56e3c7"
     },
+    "https://developer.apple.com/documentation/intents/inplaymediaintent/playshuffled-93hn1": {
+      "etag": "\"33fc-65d560a109b8a-df\"",
+      "file_path": "documentation/Intents/inplaymediaintent/playshuffled-93hn1.md",
+      "hash": "2ae1949daf5b1d32368f2591bf5a4c654554cd6ff560ae8d3366f9f07f53d569"
+    },
     "https://developer.apple.com/documentation/intents/inplaymediaintent/resumeplayback-1xw6r": {
       "etag": "\"3352-65d560a109b8a-df\"",
       "file_path": "documentation/Intents/inplaymediaintent/resumeplayback-1xw6r.md",
       "hash": "39bc5332cf0e122339f857fc129bb5f1d2c5ef441ef51ece91db871e711a066d"
+    },
+    "https://developer.apple.com/documentation/intents/inplaymediaintent/resumeplayback-9zfyp": {
+      "etag": "\"3405-65d560a109b8a-df\"",
+      "file_path": "documentation/Intents/inplaymediaintent/resumeplayback-9zfyp.md",
+      "hash": "a165e985ca85a81cccbe91fef63af23caa1bd11aba10b9d89e155ae12d633a09"
     },
     "https://developer.apple.com/documentation/intents/inplaymediaintenthandling": {
       "etag": "\"6cd0-65d560a79f92f-df\"",
@@ -9270,10 +9565,20 @@
       "file_path": "documentation/Intents/inradiotyperesolutionresult/confirmationrequired(with).md",
       "hash": "02384510ebfebe5e0ae1259650ce46ba3db585693a066db78f4d5179c63250c3"
     },
+    "https://developer.apple.com/documentation/intents/inradiotyperesolutionresult/confirmationrequiredwithvaluetoconfirm:": {
+      "etag": "\"2b0b-65d560a4ab621-df\"",
+      "file_path": "documentation/Intents/inradiotyperesolutionresult/confirmationrequiredwithvaluetoconfirm_.md",
+      "hash": "c22b4f9103ef55f7a455cd60b45c7c614eb0c73cb00de26e478101864a6fd2b6"
+    },
     "https://developer.apple.com/documentation/intents/inradiotyperesolutionresult/success(with:)": {
       "etag": "\"3e0e-65d560a4ab621-df\"",
       "file_path": "documentation/Intents/inradiotyperesolutionresult/success(with).md",
       "hash": "d8311943150f1e6f8011c6111be9183fcb06ef71e4a3c272c2e53870755938b1"
+    },
+    "https://developer.apple.com/documentation/intents/inradiotyperesolutionresult/successwithresolvedvalue:": {
+      "etag": "\"2ab2-65d560a4ab621-df\"",
+      "file_path": "documentation/Intents/inradiotyperesolutionresult/successwithresolvedvalue_.md",
+      "hash": "18c3595c0c613b953571459bad75836204993cab025cc23660a2cab69121cf7e"
     },
     "https://developer.apple.com/documentation/intents/inrecurrencefrequency": {
       "etag": "\"5401-65d560a3fde47-df\"",
@@ -9390,10 +9695,20 @@
       "file_path": "documentation/Intents/inrelativereferenceresolutionresult/confirmationrequired(with).md",
       "hash": "5d7fbe0fc6a717ad04c95b316f45f75a73d6f3f3f662e1654284b34bb5a855be"
     },
+    "https://developer.apple.com/documentation/intents/inrelativereferenceresolutionresult/confirmationrequiredwithvaluetoconfirm:": {
+      "etag": "\"2cf7-65d5609f9beca-df\"",
+      "file_path": "documentation/Intents/inrelativereferenceresolutionresult/confirmationrequiredwithvaluetoconfirm_.md",
+      "hash": "fe576fd212afc8941b69985384ed9016d69f4d79badf819f8ff3cfdd0db52087"
+    },
     "https://developer.apple.com/documentation/intents/inrelativereferenceresolutionresult/success(with:)": {
       "etag": "\"40bc-65d5609f9beca-df\"",
       "file_path": "documentation/Intents/inrelativereferenceresolutionresult/success(with).md",
       "hash": "b2bdae257d3e1c35752514bde3f1c58aa44a20a82a83dfeb06f68c627aed4736"
+    },
+    "https://developer.apple.com/documentation/intents/inrelativereferenceresolutionresult/successwithresolvedvalue:": {
+      "etag": "\"2c9e-65d5609f9beca-df\"",
+      "file_path": "documentation/Intents/inrelativereferenceresolutionresult/successwithresolvedvalue_.md",
+      "hash": "001c218a7bc4a83246bc84cf01b8635bbb0d6640aeb19afd2847baaf66744e25"
     },
     "https://developer.apple.com/documentation/intents/inrelativesetting": {
       "etag": "\"621c-65d560a89ca18-df\"",
@@ -9440,10 +9755,20 @@
       "file_path": "documentation/Intents/inrelativesettingresolutionresult/confirmationrequired(with).md",
       "hash": "2e396a09f058c4e3cb88c5b3565aaa712de5fb0b2e74d540c8ee2f44b75c6994"
     },
+    "https://developer.apple.com/documentation/intents/inrelativesettingresolutionresult/confirmationrequiredwithvaluetoconfirm:": {
+      "etag": "\"2c8f-65d560a341df6-df\"",
+      "file_path": "documentation/Intents/inrelativesettingresolutionresult/confirmationrequiredwithvaluetoconfirm_.md",
+      "hash": "43da59a20ad61c686c201390bbbb9f14c56266ba2cd3bda4cf82449d57ac427d"
+    },
     "https://developer.apple.com/documentation/intents/inrelativesettingresolutionresult/success(with:)": {
       "etag": "\"4017-65d560a341df6-df\"",
       "file_path": "documentation/Intents/inrelativesettingresolutionresult/success(with).md",
       "hash": "d5222d75f6d3a5edc8d5f63d8c22934bd5a79dc69df7ea4489cee6f5b51e8272"
+    },
+    "https://developer.apple.com/documentation/intents/inrelativesettingresolutionresult/successwithresolvedvalue:": {
+      "etag": "\"2c36-65d560a341df6-df\"",
+      "file_path": "documentation/Intents/inrelativesettingresolutionresult/successwithresolvedvalue_.md",
+      "hash": "52ca333ef607a8651bbd8fd8fcf61a0e2bd4d98d07c11583143abe5b14d135ae"
     },
     "https://developer.apple.com/documentation/intents/inrelevanceprovider": {
       "etag": "\"4cdd-65d5609f489c0-df\"",
@@ -9870,10 +10195,25 @@
       "file_path": "documentation/Intents/inrequestrideintent/init(pickuplocation,dropofflocation,rideoptionname,partysize,paymentmethod,scheduledpickuptime).md",
       "hash": "59dd880aa189ec8c93adaea7cfb5925eb7e898fa6eb352062a646363a9528abf"
     },
+    "https://developer.apple.com/documentation/intents/inrequestrideintent/initwithpickuplocation:dropofflocation:rideoptionname:partysize:paymentmethod:": {
+      "etag": "\"3527-65d560a0b1440-df\"",
+      "file_path": "documentation/Intents/inrequestrideintent/initwithpickuplocation_dropofflocation_rideoptionname_partysize_paymentmethod_.md",
+      "hash": "689696c5f13c11b86621a9d8c1ae047db1b71839eb76ad60f3bc6c2d59eccbbd"
+    },
+    "https://developer.apple.com/documentation/intents/inrequestrideintent/initwithpickuplocation:dropofflocation:rideoptionname:partysize:paymentmethod:scheduledpickuptime:": {
+      "etag": "\"39e0-65d560a0b1440-df\"",
+      "file_path": "documentation/Intents/inrequestrideintent/initwithpickuplocation_dropofflocation_rideoptionname_partysize_paymentmethod_scheduledpickuptime_.md",
+      "hash": "d318e12dda30c3431f9d1e0b4c3def690a6d80af4e9aea7d3b887a52d6a4f10d"
+    },
     "https://developer.apple.com/documentation/intents/inrequestrideintent/partysize-39k7z": {
       "etag": "\"2859-65d560a0b1440-df\"",
       "file_path": "documentation/Intents/inrequestrideintent/partysize-39k7z.md",
       "hash": "c6530ced99f0c0140d1de9961822279850b95ce7750fd9852ef111afdd434ec2"
+    },
+    "https://developer.apple.com/documentation/intents/inrequestrideintent/partysize-64kfc": {
+      "etag": "\"2b0c-65d560a0b1440-df\"",
+      "file_path": "documentation/Intents/inrequestrideintent/partysize-64kfc.md",
+      "hash": "f066233284fe24a6536b2b74697a30eb9aa731e96e60a14b8807b12f2357d2e7"
     },
     "https://developer.apple.com/documentation/intents/inrequestrideintent/paymentmethod": {
       "etag": "\"24b7-65d560a0b1440-df\"",
@@ -10319,6 +10659,21 @@
       "etag": "\"5efb-65d560a023786-df\"",
       "file_path": "documentation/Intents/inrestaurantreservation/init(itemreference,reservationnumber,bookingtime,reservationstatus,reservationholdername,actions,url,reservationduration,partysize,restaurantlocation).md",
       "hash": "c932a18f5662dcc9dd8604c742422ee8ad606e003c560091d208915128257e63"
+    },
+    "https://developer.apple.com/documentation/intents/inrestaurantreservation/initwithitemreference:reservationnumber:bookingtime:reservationstatus:reservationholdername:actions:reservationduration:partysize:restaurantlocation:": {
+      "etag": "\"48d8-65d560a023786-df\"",
+      "file_path": "documentation/Intents/inrestaurantreservation/initwithitemreference_reservationnumber_bookingtime_reservationstatus_reservationholdername_actions_reservationduration_partysize_restaurantlocation_.md",
+      "hash": "191a9723cab7c0184eb634865991bfa5bb16ecfa205755cf2db2f077d03bbe41"
+    },
+    "https://developer.apple.com/documentation/intents/inrestaurantreservation/initwithitemreference:reservationnumber:bookingtime:reservationstatus:reservationholdername:actions:url:reservationduration:partysize:restaurantlocation:": {
+      "etag": "\"4d6b-65d560a023786-df\"",
+      "file_path": "documentation/Intents/inrestaurantreservation/initwithitemreference_reservationnumber_bookingtime_reservationstatus_reservationholdername_actions_url_reservationduration_partysize_restaurantlocation_.md",
+      "hash": "ecd1328375a079029f6124279510d43864b5f2dee97d96c594a00a597ccc6120"
+    },
+    "https://developer.apple.com/documentation/intents/inrestaurantreservation/partysize-9mtpk": {
+      "etag": "\"21b7-65d560a023786-df\"",
+      "file_path": "documentation/Intents/inrestaurantreservation/partysize-9mtpk.md",
+      "hash": "07972e9082513b1dd6711a95634b1f2a336601da5294eb59485687601c78734a"
     },
     "https://developer.apple.com/documentation/intents/inrestaurantreservation/partysize-9ux0p": {
       "etag": "\"1edd-65d560a023786-df\"",
@@ -10850,6 +11205,11 @@
       "file_path": "documentation/Intents/inrideoption/usesmeteredfare-1sig1.md",
       "hash": "dd50746ec9c833316ebf570c5efd0b87b941cc1e3224574decaaae62929490f1"
     },
+    "https://developer.apple.com/documentation/intents/inrideoption/usesmeteredfare-25g1c": {
+      "etag": "\"2f9c-65d560a7f0925-df\"",
+      "file_path": "documentation/Intents/inrideoption/usesmeteredfare-25g1c.md",
+      "hash": "e00b8bae03bcf371d4c990cedae6d5c8c80bc980486436fe5d39e4c126a006b3"
+    },
     "https://developer.apple.com/documentation/intents/inrideoption/usesmeteredfare-2xw1": {
       "etag": "\"148b-65d560a7f0925-df\"",
       "file_path": "documentation/Intents/inrideoption/usesmeteredfare-2xw1.md",
@@ -11065,6 +11425,16 @@
       "file_path": "documentation/Intents/insaveprofileincarintent/init(profilenumber,profilelabel).md",
       "hash": "14b004af7d54d09637385ab6679ce03a54492e59e56ffaf023fa5515af7671a2"
     },
+    "https://developer.apple.com/documentation/intents/insaveprofileincarintent/initwithprofilenumber:profilelabel:": {
+      "etag": "\"25ca-65d5609ea4df2-df\"",
+      "file_path": "documentation/Intents/insaveprofileincarintent/initwithprofilenumber_profilelabel_.md",
+      "hash": "37236a119bbfba16e16ded34a9dd11ff11207dec6dc16e35716bca0283da8b0d"
+    },
+    "https://developer.apple.com/documentation/intents/insaveprofileincarintent/initwithprofilenumber:profilename:": {
+      "etag": "\"2586-65d5609ea4df2-df\"",
+      "file_path": "documentation/Intents/insaveprofileincarintent/initwithprofilenumber_profilename_.md",
+      "hash": "7485ea009030b3abea262e8679d696a2a73bb589e3542680439cd9ce07a67d9d"
+    },
     "https://developer.apple.com/documentation/intents/insaveprofileincarintent/profilelabel": {
       "etag": "\"3571-65d5609ea4df2-df\"",
       "file_path": "documentation/Intents/insaveprofileincarintent/profilelabel.md",
@@ -11079,6 +11449,11 @@
       "etag": "\"238f-65d5609ea4df2-df\"",
       "file_path": "documentation/Intents/insaveprofileincarintent/profilenumber-2q84c.md",
       "hash": "242b71ccdaf789087ce86f1e8528da5dcc897bf881d699ef23116ce73edf96e4"
+    },
+    "https://developer.apple.com/documentation/intents/insaveprofileincarintent/profilenumber-7z4u2": {
+      "etag": "\"25a2-65d5609ea4df2-df\"",
+      "file_path": "documentation/Intents/insaveprofileincarintent/profilenumber-7z4u2.md",
+      "hash": "2652d67d617fbc254718651beeb0cf3416fc5149db8b40161fd6fa1270e87cc3"
     },
     "https://developer.apple.com/documentation/intents/insaveprofileincarintenthandling": {
       "etag": "\"5b93-65d560a25de45-df\"",
@@ -11205,6 +11580,11 @@
       "file_path": "documentation/Intents/insearchcallhistoryintent/init(datecreated,recipient,callcapabilities,calltypes,unseen).md",
       "hash": "6b7053e37aa93f05743b87a4599e77a7b2d637fd6cd7f3ef0e3aa7968ec85c46"
     },
+    "https://developer.apple.com/documentation/intents/insearchcallhistoryintent/initwithdatecreated:recipient:callcapabilities:calltypes:unseen:": {
+      "etag": "\"3957-65d5609f04bbf-df\"",
+      "file_path": "documentation/Intents/insearchcallhistoryintent/initwithdatecreated_recipient_callcapabilities_calltypes_unseen_.md",
+      "hash": "180379a771e8ce2498b463edba542a69444bdfea3a7ea42cb9923c2466a3d878"
+    },
     "https://developer.apple.com/documentation/intents/insearchcallhistoryintent/insearchcallhistoryintent-implementations": {
       "etag": "\"2394-659029a0804ff-df\"",
       "file_path": "documentation/Intents/insearchcallhistoryintent/insearchcallhistoryintent-implementations.md",
@@ -11214,6 +11594,11 @@
       "etag": "\"2a72-65d5609f04bbf-df\"",
       "file_path": "documentation/Intents/insearchcallhistoryintent/recipient.md",
       "hash": "e5207182d82e03e0847dfde11316e7269f17cc4989776ae390defa377ff0124e"
+    },
+    "https://developer.apple.com/documentation/intents/insearchcallhistoryintent/unseen-1mohp": {
+      "etag": "\"2deb-65d5609f04bbf-df\"",
+      "file_path": "documentation/Intents/insearchcallhistoryintent/unseen-1mohp.md",
+      "hash": "461d1f21d3a592bb2a0d20c1e8c9453e5b1b4e95a3d0d2404034f8aafde00fbe"
     },
     "https://developer.apple.com/documentation/intents/insearchcallhistoryintent/unseen-9ua7o": {
       "etag": "\"2d11-65d5609f04bbf-df\"",
@@ -12385,6 +12770,11 @@
       "file_path": "documentation/Intents/insearchforphotosintentresponse/init(code,useractivity).md",
       "hash": "213c51a16e8dfd96f813c7841fb6c81197a9adef7898334730ee9779b12593bf"
     },
+    "https://developer.apple.com/documentation/intents/insearchforphotosintentresponse/searchresultscount-3i5mz": {
+      "etag": "\"1d74-65d560a0d4888-df\"",
+      "file_path": "documentation/Intents/insearchforphotosintentresponse/searchresultscount-3i5mz.md",
+      "hash": "8f71a76045480fd6b3237963ec1c8b469aaa9b8726e5e477adcb7c6ed87fede1"
+    },
     "https://developer.apple.com/documentation/intents/insearchforphotosintentresponse/searchresultscount-82lnb": {
       "etag": "\"1bf0-65d560a0d4888-df\"",
       "file_path": "documentation/Intents/insearchforphotosintentresponse/searchresultscount-82lnb.md",
@@ -13225,6 +13615,16 @@
       "file_path": "documentation/Intents/insetcarlockstatusintent/init(locked,carname).md",
       "hash": "0fc7ec1b11b4d4e133f0521a7db2dca27e1807b9cd84384925b5bb93f101dd38"
     },
+    "https://developer.apple.com/documentation/intents/insetcarlockstatusintent/initwithlocked:carname:": {
+      "etag": "\"2970-65d560a23c423-df\"",
+      "file_path": "documentation/Intents/insetcarlockstatusintent/initwithlocked_carname_.md",
+      "hash": "b0af99f511bd8c421bd752b219f50f7fad4e379f502a6c4babe76a4be8fff576"
+    },
+    "https://developer.apple.com/documentation/intents/insetcarlockstatusintent/locked-61uw4": {
+      "etag": "\"1d31-65d560a23c423-df\"",
+      "file_path": "documentation/Intents/insetcarlockstatusintent/locked-61uw4.md",
+      "hash": "0f63bae0058187f728e295732580d55f21d24e3b00fa1517086fad512bde3fdf"
+    },
     "https://developer.apple.com/documentation/intents/insetcarlockstatusintent/locked-9h0kx": {
       "etag": "\"1b1a-65d560a23c423-df\"",
       "file_path": "documentation/Intents/insetcarlockstatusintent/locked-9h0kx.md",
@@ -13330,6 +13730,11 @@
       "file_path": "documentation/Intents/insetclimatesettingsincarintent/climatezone.md",
       "hash": "bca07c9cc8ac239a67b01ff793953494400062392631f5eec5d9eddce348400f"
     },
+    "https://developer.apple.com/documentation/intents/insetclimatesettingsincarintent/enableairconditioner-3prnk": {
+      "etag": "\"1cee-65d560a626e4f-df\"",
+      "file_path": "documentation/Intents/insetclimatesettingsincarintent/enableairconditioner-3prnk.md",
+      "hash": "bed2b0129079a1f1a7c223688e51acdc6fcdb787a02a27e0ca1c3b2c83b5c955"
+    },
     "https://developer.apple.com/documentation/intents/insetclimatesettingsincarintent/enableairconditioner-9q3dr": {
       "etag": "\"1b78-65d560a626e4f-df\"",
       "file_path": "documentation/Intents/insetclimatesettingsincarintent/enableairconditioner-9q3dr.md",
@@ -13340,15 +13745,35 @@
       "file_path": "documentation/Intents/insetclimatesettingsincarintent/enableautomode-31bzq.md",
       "hash": "176ec48216c2332606e95d9e78c8ed90febb94ab30b0241fe7cebbebe47c47f6"
     },
+    "https://developer.apple.com/documentation/intents/insetclimatesettingsincarintent/enableautomode-6ye2n": {
+      "etag": "\"34de-65d560a626e4f-df\"",
+      "file_path": "documentation/Intents/insetclimatesettingsincarintent/enableautomode-6ye2n.md",
+      "hash": "409e58a3cc13a10a74ed6973bfd8146bf68ebed2b0e919d2b6c5b8d4cf41e8da"
+    },
     "https://developer.apple.com/documentation/intents/insetclimatesettingsincarintent/enableclimatecontrol-4y9iz": {
       "etag": "\"3434-65d560a626e4f-df\"",
       "file_path": "documentation/Intents/insetclimatesettingsincarintent/enableclimatecontrol-4y9iz.md",
       "hash": "9a259a541ba4e305f7b09aa8573cc65e23d85db2d01796ccec5755f730dec5b9"
     },
+    "https://developer.apple.com/documentation/intents/insetclimatesettingsincarintent/enableclimatecontrol-tviy": {
+      "etag": "\"34f5-65d560a626e4f-df\"",
+      "file_path": "documentation/Intents/insetclimatesettingsincarintent/enableclimatecontrol-tviy.md",
+      "hash": "cd3b071b0f73ef67c313f82dd52c97c7bd22dabe1294ceb92701eccee620f17e"
+    },
+    "https://developer.apple.com/documentation/intents/insetclimatesettingsincarintent/enablefan-3bu9e": {
+      "etag": "\"2aba-65d560a626e4f-df\"",
+      "file_path": "documentation/Intents/insetclimatesettingsincarintent/enablefan-3bu9e.md",
+      "hash": "9537c705b934340c5c63a07f1f7e8e85d8817318ef398723b90fb6963d0d2fec"
+    },
     "https://developer.apple.com/documentation/intents/insetclimatesettingsincarintent/enablefan-5srs9": {
       "etag": "\"2f3b-65d560a626e4f-df\"",
       "file_path": "documentation/Intents/insetclimatesettingsincarintent/enablefan-5srs9.md",
       "hash": "73f0ed7600e989698b9485f4cc1950167d00ca263dcc84e5fd173e34db98201b"
+    },
+    "https://developer.apple.com/documentation/intents/insetclimatesettingsincarintent/fanspeedindex-4c1rr": {
+      "etag": "\"2917-65d560a626e4f-df\"",
+      "file_path": "documentation/Intents/insetclimatesettingsincarintent/fanspeedindex-4c1rr.md",
+      "hash": "b18a59119a236c65a378f0606b947d47f91d4170bbee56734bc3788607f366e4"
     },
     "https://developer.apple.com/documentation/intents/insetclimatesettingsincarintent/fanspeedindex-wz49": {
       "etag": "\"286f-65d560a626e4f-df\"",
@@ -13360,10 +13785,25 @@
       "file_path": "documentation/Intents/insetclimatesettingsincarintent/fanspeedpercentage-7i2hq.md",
       "hash": "ee8619cee1f19f798ccda1fa39a9dbefc5011b16a2fd219ae3ae1b394eeb7665"
     },
+    "https://developer.apple.com/documentation/intents/insetclimatesettingsincarintent/fanspeedpercentage-ep0u": {
+      "etag": "\"28f5-65d560a626e4f-df\"",
+      "file_path": "documentation/Intents/insetclimatesettingsincarintent/fanspeedpercentage-ep0u.md",
+      "hash": "64d5c9d6588c9ae74901c241a7ae7ab5b0abe204c2586706b9069867f47c16ca"
+    },
     "https://developer.apple.com/documentation/intents/insetclimatesettingsincarintent/init(enablefan:enableairconditioner:enableclimatecontrol:enableautomode:aircirculationmode:fanspeedindex:fanspeedpercentage:relativefanspeedsetting:temperature:relativetemperaturesetting:climatezone:carname:)": {
       "etag": "\"7708-65d560a626e4f-df\"",
       "file_path": "documentation/Intents/insetclimatesettingsincarintent/init(enablefan,enableairconditioner,enableclimatecontrol,enableautomode,aircirculationmode,fanspeedindex,fanspeedpercentage,relativefanspeedsetting,temperature,relativetemperaturesetting,climatezone,carname).md",
       "hash": "bb24696cb9febf2d6a4dc78757b093e24ab36f87ad87760c66f899110e089c0a"
+    },
+    "https://developer.apple.com/documentation/intents/insetclimatesettingsincarintent/initwithenablefan:enableairconditioner:enableclimatecontrol:enableautomode:aircirculationmode:fanspeedindex:fanspeedpercentage:relativefanspeedsetting:temperature:relativetemperaturesetting:climatezone:": {
+      "etag": "\"5f8e-65d560a626e4f-df\"",
+      "file_path": "documentation/Intents/insetclimatesettingsincarintent/initwithenablefan_enableairconditioner_enableclimatecontrol_enableautomode_aircirculationmode_fanspeedindex_fanspeedpercentage_relativefanspeedsetting_temperature_relativetemperaturesetting_climatezone_.md",
+      "hash": "234eb77d2b8753b0200068cdf62cd0478494f691f4f96d9a1e7719dd3df5747a"
+    },
+    "https://developer.apple.com/documentation/intents/insetclimatesettingsincarintent/initwithenablefan:enableairconditioner:enableclimatecontrol:enableautomode:aircirculationmode:fanspeedindex:fanspeedpercentage:relativefanspeedsetting:temperature:relativetemperaturesetting:climatezone:carname:": {
+      "etag": "\"655b-65d560a626e4f-df\"",
+      "file_path": "documentation/Intents/insetclimatesettingsincarintent/initwithenablefan_enableairconditioner_enableclimatecontrol_enableautomode_aircirculationmode_fanspeedindex_fanspeedpercentage_relativefanspeedsetting_temperature_relativetemperaturesetting_climatezone_carname_.md",
+      "hash": "cf6ab9ccf80c1ee1878a5547ccb22c2a35487d85504ce71383107d1f8cdc0da9"
     },
     "https://developer.apple.com/documentation/intents/insetclimatesettingsincarintent/relativefanspeedsetting": {
       "etag": "\"4279-65d560a626e4f-df\"",
@@ -13530,6 +13970,11 @@
       "file_path": "documentation/Intents/insetdefrostersettingsincarintent/defroster.md",
       "hash": "ea693a5cec6b56a3200083a6a44239df7d76a575d3f4f72a4053c31bd060d8b6"
     },
+    "https://developer.apple.com/documentation/intents/insetdefrostersettingsincarintent/enable-8tf0i": {
+      "etag": "\"207e-65d560a4ab621-df\"",
+      "file_path": "documentation/Intents/insetdefrostersettingsincarintent/enable-8tf0i.md",
+      "hash": "3c0990bd3a1c9b7ef6e9981910f7941d17d5130ddad504ad9b6181f1d4ba9aa5"
+    },
     "https://developer.apple.com/documentation/intents/insetdefrostersettingsincarintent/enable-9xte9": {
       "etag": "\"1ef9-65d560a4ab621-df\"",
       "file_path": "documentation/Intents/insetdefrostersettingsincarintent/enable-9xte9.md",
@@ -13539,6 +13984,16 @@
       "etag": "\"32e8-65d560a4ab621-df\"",
       "file_path": "documentation/Intents/insetdefrostersettingsincarintent/init(enable,defroster,carname).md",
       "hash": "ea1ad1385e55e4c7404453121d619166f3bf3aa3f4942e07d56d328570e6426f"
+    },
+    "https://developer.apple.com/documentation/intents/insetdefrostersettingsincarintent/initwithenable:defroster:": {
+      "etag": "\"2c69-65d560a4ab621-df\"",
+      "file_path": "documentation/Intents/insetdefrostersettingsincarintent/initwithenable_defroster_.md",
+      "hash": "f2083ab86c7eb504015747c0f8302b1f9cbb0d316df4e55839ccaedbf9b7dd7a"
+    },
+    "https://developer.apple.com/documentation/intents/insetdefrostersettingsincarintent/initwithenable:defroster:carname:": {
+      "etag": "\"3224-65d560a4ab621-df\"",
+      "file_path": "documentation/Intents/insetdefrostersettingsincarintent/initwithenable_defroster_carname_.md",
+      "hash": "2aabfb258c9bf5e8bf1f90ed17924eaada69769892af99e3c5f255bb7de0d5f3"
     },
     "https://developer.apple.com/documentation/intents/insetdefrostersettingsincarintenthandling": {
       "etag": "\"6711-65d5609f672f2-df\"",
@@ -13755,6 +14210,11 @@
       "file_path": "documentation/Intents/insetprofileincarintent/defaultprofile-19jwc.md",
       "hash": "3fe5a5ce5f8391b4879ea0b665563b846f5677690237fc0dd55f98cb4e6693eb"
     },
+    "https://developer.apple.com/documentation/intents/insetprofileincarintent/defaultprofile-4ztep": {
+      "etag": "\"2b32-65d560a6bfd47-df\"",
+      "file_path": "documentation/Intents/insetprofileincarintent/defaultprofile-4ztep.md",
+      "hash": "52c357aebc033051017250d3ccb3cdd4c3896a6c86c251ae151d7fb21d009727"
+    },
     "https://developer.apple.com/documentation/intents/insetprofileincarintent/init(defaultprofile:)": {
       "etag": "\"4954-65d560a6bfd47-df\"",
       "file_path": "documentation/Intents/insetprofileincarintent/init(defaultprofile).md",
@@ -13810,6 +14270,21 @@
       "file_path": "documentation/Intents/insetprofileincarintent/init(profilenumber,profilename,isdefaultprofile,carname).md",
       "hash": "27b61a8dc3534cd53b5b226a19887ad0131c1c3bc961cc17863d1bb93389448a"
     },
+    "https://developer.apple.com/documentation/intents/insetprofileincarintent/initwithprofilenumber:profilelabel:defaultprofile:": {
+      "etag": "\"2d12-65d560a6bfd47-df\"",
+      "file_path": "documentation/Intents/insetprofileincarintent/initwithprofilenumber_profilelabel_defaultprofile_.md",
+      "hash": "ffad58c89797f92f670419f14de0a1d61aa913d3cd28cdb0fcccc00b4c777144"
+    },
+    "https://developer.apple.com/documentation/intents/insetprofileincarintent/initwithprofilenumber:profilename:defaultprofile:": {
+      "etag": "\"2d47-65d560a6bfd47-df\"",
+      "file_path": "documentation/Intents/insetprofileincarintent/initwithprofilenumber_profilename_defaultprofile_.md",
+      "hash": "6655fd266fdadc1810e953e505d15f92114af8c994c9003422c89d9e43be020d"
+    },
+    "https://developer.apple.com/documentation/intents/insetprofileincarintent/initwithprofilenumber:profilename:defaultprofile:carname:": {
+      "etag": "\"3317-65d560a6bfd47-df\"",
+      "file_path": "documentation/Intents/insetprofileincarintent/initwithprofilenumber_profilename_defaultprofile_carname_.md",
+      "hash": "4b71ad36bd3b33d78dd4b85c53cfb3705d7523f23e20f7cbdd8210e62ea0a5dd"
+    },
     "https://developer.apple.com/documentation/intents/insetprofileincarintent/isdefaultprofile": {
       "etag": "\"29e4-65d560a6bfd47-df\"",
       "file_path": "documentation/Intents/insetprofileincarintent/isdefaultprofile.md",
@@ -13829,6 +14304,11 @@
       "etag": "\"2692-65d560a6bfd47-df\"",
       "file_path": "documentation/Intents/insetprofileincarintent/profilenumber-37vj8.md",
       "hash": "91262e1cfecc303088701f6d4ab1c01714ce8896a121c144a9b68de4c69bd171"
+    },
+    "https://developer.apple.com/documentation/intents/insetprofileincarintent/profilenumber-50f30": {
+      "etag": "\"2566-65d560a6bfd47-df\"",
+      "file_path": "documentation/Intents/insetprofileincarintent/profilenumber-50f30.md",
+      "hash": "de06bc1b2e33c4ba4a6814ab951b66a133f031e829120b8e5b41a988097f3560"
     },
     "https://developer.apple.com/documentation/intents/insetprofileincarintenthandling": {
       "etag": "\"6bfe-65d560a4ab621-df\"",
@@ -13940,10 +14420,25 @@
       "file_path": "documentation/Intents/insetradiostationintent/frequency-2ctw6.md",
       "hash": "4a2891490b66d82a6e7e45f37cce5ba9851927d5e73caff3f1eda2938f623928"
     },
+    "https://developer.apple.com/documentation/intents/insetradiostationintent/frequency-63rbb": {
+      "etag": "\"2c01-65d560a72c0e2-df\"",
+      "file_path": "documentation/Intents/insetradiostationintent/frequency-63rbb.md",
+      "hash": "389577718b654e01317b3af16659a40212ce3b4d6e670b087262d86ce877ba99"
+    },
     "https://developer.apple.com/documentation/intents/insetradiostationintent/init(radiotype:frequency:stationname:channel:presetnumber:)": {
       "etag": "\"33d3-65d560a72c0e2-df\"",
       "file_path": "documentation/Intents/insetradiostationintent/init(radiotype,frequency,stationname,channel,presetnumber).md",
       "hash": "cfbe3a884f7bd8cd5424aefe4ba0095694b7e298e18eaf64ac5f494f17212296"
+    },
+    "https://developer.apple.com/documentation/intents/insetradiostationintent/initwithradiotype:frequency:stationname:channel:presetnumber:": {
+      "etag": "\"2dc1-65d560a72c0e2-df\"",
+      "file_path": "documentation/Intents/insetradiostationintent/initwithradiotype_frequency_stationname_channel_presetnumber_.md",
+      "hash": "73e43bc36c366f904e4a42f3b0af83a35207a18e0df8fd8d0ae362a334435bb2"
+    },
+    "https://developer.apple.com/documentation/intents/insetradiostationintent/presetnumber-20pv7": {
+      "etag": "\"2daa-65d560a72c0e2-df\"",
+      "file_path": "documentation/Intents/insetradiostationintent/presetnumber-20pv7.md",
+      "hash": "dd58ea2faa2ec4cc1574fe62c31d90e197e01c5a3833f5876f55fe191409b133"
     },
     "https://developer.apple.com/documentation/intents/insetradiostationintent/presetnumber-2dub4": {
       "etag": "\"2c4d-65d560a72c0e2-df\"",
@@ -14075,10 +14570,20 @@
       "file_path": "documentation/Intents/insetseatsettingsincarintent/carname.md",
       "hash": "c9a1617186266852eb8d23107bfc79dd0d5334ddaaa9247071aef0ef68e85ae9"
     },
+    "https://developer.apple.com/documentation/intents/insetseatsettingsincarintent/enablecooling-6bcu7": {
+      "etag": "\"2960-65d560a8d534d-df\"",
+      "file_path": "documentation/Intents/insetseatsettingsincarintent/enablecooling-6bcu7.md",
+      "hash": "4f87efef338984f6571e66bf5230de2af1108468a89826257cd635c2cafd954c"
+    },
     "https://developer.apple.com/documentation/intents/insetseatsettingsincarintent/enablecooling-8qqx3": {
       "etag": "\"2a05-65d560a8d534d-df\"",
       "file_path": "documentation/Intents/insetseatsettingsincarintent/enablecooling-8qqx3.md",
       "hash": "90a8d6ccd506fd146f9061e781c65f073233f994499afdfe470299a4e5550dbe"
+    },
+    "https://developer.apple.com/documentation/intents/insetseatsettingsincarintent/enableheating-5qj7i": {
+      "etag": "\"2960-65d560a8d534d-df\"",
+      "file_path": "documentation/Intents/insetseatsettingsincarintent/enableheating-5qj7i.md",
+      "hash": "5bbe2a08e368f0fe7b0214a4b5bdefdd0f67c9e36f1f7410b74104ed87fed9c8"
     },
     "https://developer.apple.com/documentation/intents/insetseatsettingsincarintent/enableheating-8auz2": {
       "etag": "\"2a05-65d560a8d534d-df\"",
@@ -14090,10 +14595,30 @@
       "file_path": "documentation/Intents/insetseatsettingsincarintent/enablemassage-46ndx.md",
       "hash": "764f1f726cfbea313bea913847f00f701b0b04c632a79a58e16ceec8e2ce3c5e"
     },
+    "https://developer.apple.com/documentation/intents/insetseatsettingsincarintent/enablemassage-5jf2s": {
+      "etag": "\"2960-65d560a8d534d-df\"",
+      "file_path": "documentation/Intents/insetseatsettingsincarintent/enablemassage-5jf2s.md",
+      "hash": "00834cb996b8499c854b334710b170adf19e3d447ed41db13014da68fa8f5699"
+    },
     "https://developer.apple.com/documentation/intents/insetseatsettingsincarintent/init(enableheating:enablecooling:enablemassage:seat:level:relativelevel:carname:)": {
       "etag": "\"438e-65d560a8d534d-df\"",
       "file_path": "documentation/Intents/insetseatsettingsincarintent/init(enableheating,enablecooling,enablemassage,seat,level,relativelevel,carname).md",
       "hash": "2fc50b803ff4008a60d653c1782442483042559c4cc3d4935285046d3d453211"
+    },
+    "https://developer.apple.com/documentation/intents/insetseatsettingsincarintent/initwithenableheating:enablecooling:enablemassage:seat:level:relativelevelsetting:": {
+      "etag": "\"3942-65d560a8d534d-df\"",
+      "file_path": "documentation/Intents/insetseatsettingsincarintent/initwithenableheating_enablecooling_enablemassage_seat_level_relativelevelsetting_.md",
+      "hash": "2c711fc35b5712337f0344f3977135e7e2e61dfd20e442e4eb30588e202e9970"
+    },
+    "https://developer.apple.com/documentation/intents/insetseatsettingsincarintent/initwithenableheating:enablecooling:enablemassage:seat:level:relativelevelsetting:carname:": {
+      "etag": "\"3f0e-65d560a8d534d-df\"",
+      "file_path": "documentation/Intents/insetseatsettingsincarintent/initwithenableheating_enablecooling_enablemassage_seat_level_relativelevelsetting_carname_.md",
+      "hash": "fc98c053651b65f7ae6a9d2149f26e4275ec81277cb72b428f57c56d24663ffa"
+    },
+    "https://developer.apple.com/documentation/intents/insetseatsettingsincarintent/level-5i2i": {
+      "etag": "\"2b3c-65d560a8d534d-df\"",
+      "file_path": "documentation/Intents/insetseatsettingsincarintent/level-5i2i.md",
+      "hash": "e4ba3578ed9e93366903533edde4cef3ada2f74df8043a11e744a53e4c99f07b"
     },
     "https://developer.apple.com/documentation/intents/insetseatsettingsincarintent/level-94975": {
       "etag": "\"2b44-65d560a8d534d-df\"",
@@ -14640,6 +15165,11 @@
       "file_path": "documentation/Intents/insnoozetasksintent.md",
       "hash": "5f69ae6dada6d0b075d37985a394dbb264a741dbafb20b722955fd136d30bf5e"
     },
+    "https://developer.apple.com/documentation/intents/insnoozetasksintent/all-62ujw": {
+      "etag": "\"20dc-65d560a6deb10-df\"",
+      "file_path": "documentation/Intents/insnoozetasksintent/all-62ujw.md",
+      "hash": "ee957d2c9cfba677fb4369e2899ee27f8328a0c0a208769f0b32efaba22efbde"
+    },
     "https://developer.apple.com/documentation/intents/insnoozetasksintent/all-spsb": {
       "etag": "\"1e46-65d560a6deb10-df\"",
       "file_path": "documentation/Intents/insnoozetasksintent/all-spsb.md",
@@ -14649,6 +15179,11 @@
       "etag": "\"281c-65d560a6deb10-df\"",
       "file_path": "documentation/Intents/insnoozetasksintent/init(tasks,nexttriggertime,all).md",
       "hash": "2bdffb8880ac7e51454e59c4e9b5a91a5f500c0f382b9b9690630e216b959e98"
+    },
+    "https://developer.apple.com/documentation/intents/insnoozetasksintent/initwithtasks:nexttriggertime:all:": {
+      "etag": "\"2151-65d560a6deb10-df\"",
+      "file_path": "documentation/Intents/insnoozetasksintent/initwithtasks_nexttriggertime_all_.md",
+      "hash": "fd375d85ea3249944fd638e0c64b6ef099f00a7b4b8f994a770ea5146afaab33"
     },
     "https://developer.apple.com/documentation/intents/insnoozetasksintent/nexttriggertime": {
       "etag": "\"32ce-65d560a6deb10-df\"",
@@ -15390,6 +15925,11 @@
       "file_path": "documentation/Intents/instartcallintentresponsecode/init(rawvalue).md",
       "hash": "e40aa4bbdfa8b8fff01dcc6a3257145d4186ef8531fa675cf5850020521f7bde"
     },
+    "https://developer.apple.com/documentation/intents/instartcallintentresponsecode/instartcallintentresponsecodefailurecallringing": {
+      "etag": "\"1059-659029a3cca48-df\"",
+      "file_path": "documentation/Intents/instartcallintentresponsecode/instartcallintentresponsecodefailurecallringing.md",
+      "hash": "2006992cd64c1f2bdefcc16c9519287b0789e6cac96cd5219b766c99482e01e1"
+    },
     "https://developer.apple.com/documentation/intents/instartcallintentresponsecode/ready": {
       "etag": "\"58ee-65d560a2162de-df\"",
       "file_path": "documentation/Intents/instartcallintentresponsecode/ready.md",
@@ -15519,6 +16059,11 @@
       "etag": "\"1c2c-65d560a64859c-df\"",
       "file_path": "documentation/Intents/instartphotoplaybackintentresponse/searchresultscount-5r7e7.md",
       "hash": "42f2a27aabe791ae65a8c22df7c09376489c3e22fc398e660f382c7e3e6f731c"
+    },
+    "https://developer.apple.com/documentation/intents/instartphotoplaybackintentresponse/searchresultscount-6ns8y": {
+      "etag": "\"1db0-65d560a64859c-df\"",
+      "file_path": "documentation/Intents/instartphotoplaybackintentresponse/searchresultscount-6ns8y.md",
+      "hash": "b4b1544468b7ec4a7d995afa250caee96a1783d15c5dca7ac2bce23d2de80a51"
     },
     "https://developer.apple.com/documentation/intents/instartphotoplaybackintentresponsecode": {
       "etag": "\"5be7-65d560a865db5-df\"",
@@ -15675,6 +16220,11 @@
       "file_path": "documentation/Intents/instartworkoutintent.md",
       "hash": "a4d33d99b065669bb05959fc6e8a0fe65ed7ba4596da720164b7303092235019"
     },
+    "https://developer.apple.com/documentation/intents/instartworkoutintent/goalvalue-1dzvb": {
+      "etag": "\"2989-65d560a881b48-df\"",
+      "file_path": "documentation/Intents/instartworkoutintent/goalvalue-1dzvb.md",
+      "hash": "7818597f491010c385ba8f33f6ff692c079a4b3b470b73a54742fdc6916a982b"
+    },
     "https://developer.apple.com/documentation/intents/instartworkoutintent/goalvalue-5oazy": {
       "etag": "\"287d-65d560a881b48-df\"",
       "file_path": "documentation/Intents/instartworkoutintent/goalvalue-5oazy.md",
@@ -15685,10 +16235,20 @@
       "file_path": "documentation/Intents/instartworkoutintent/init(workoutname,goalvalue,workoutgoalunittype,workoutlocationtype,isopenended).md",
       "hash": "b2dd485ecc0604efec0ab70d2436fb98fa2257d0e1dd7b520f262ec5f5d192b3"
     },
+    "https://developer.apple.com/documentation/intents/instartworkoutintent/initwithworkoutname:goalvalue:workoutgoalunittype:workoutlocationtype:isopenended:": {
+      "etag": "\"34a6-65d560a881b48-df\"",
+      "file_path": "documentation/Intents/instartworkoutintent/initwithworkoutname_goalvalue_workoutgoalunittype_workoutlocationtype_isopenended_.md",
+      "hash": "3be5d66177f6e7f8f9f51975c35df77b57f05d19126bcde9bffdd33e663e0a27"
+    },
     "https://developer.apple.com/documentation/intents/instartworkoutintent/isopenended-8hecn": {
       "etag": "\"2aaf-65d560a881b48-df\"",
       "file_path": "documentation/Intents/instartworkoutintent/isopenended-8hecn.md",
       "hash": "27e565d415833f00e9ec0fefdbeb23e37b5c4831ec0ed099edf033c4b1342cf0"
+    },
+    "https://developer.apple.com/documentation/intents/instartworkoutintent/isopenended-avvd": {
+      "etag": "\"2bfe-65d560a881b48-df\"",
+      "file_path": "documentation/Intents/instartworkoutintent/isopenended-avvd.md",
+      "hash": "ada2d763b3e173d98d249d46907496cc6a6e33f80d2f4a96ddc65a0722912c21"
     },
     "https://developer.apple.com/documentation/intents/instartworkoutintent/workoutgoalunittype": {
       "etag": "\"3a4e-65d560a881b48-df\"",
@@ -16244,6 +16804,21 @@
       "etag": "\"38fc-65d560a005297-df\"",
       "file_path": "documentation/Intents/intemporaleventtriggertypeoptionsresolutionresult/success(with).md",
       "hash": "404effe6685d947bcc948f4cf1cf6d9e4c29a6c2e6f3a8d2f0e92c0ed000b606"
+    },
+    "https://developer.apple.com/documentation/intents/intents_extern": {
+      "etag": "\"900-659029a40a620-df\"",
+      "file_path": "documentation/Intents/intents_extern.md",
+      "hash": "6cd8aae483a8cc559a6f231da30bfcff1b5c1238c1e0d6fc034267223c5609e1"
+    },
+    "https://developer.apple.com/documentation/intents/intentsversionnumber": {
+      "etag": "\"be0-659029a98cd15-df\"",
+      "file_path": "documentation/Intents/intentsversionnumber.md",
+      "hash": "d3ed584b3f1284eed6ecdc14bd1e7368b899888045dfe165ddf1515b352f140f"
+    },
+    "https://developer.apple.com/documentation/intents/intentsversionstring": {
+      "etag": "\"c26-659029a0d85f5-df\"",
+      "file_path": "documentation/Intents/intentsversionstring.md",
+      "hash": "2a041eed2f6fba29afabc72b0c5ff211b4bfb105a5bb7c5934cfd1f50c9f9947"
     },
     "https://developer.apple.com/documentation/intents/intermsandconditions": {
       "etag": "\"83b3-65d560a8297e2-df\"",
@@ -17340,10 +17915,20 @@
       "file_path": "documentation/Intents/inworkoutgoalunittyperesolutionresult/confirmationrequired(with).md",
       "hash": "afe9a381a45ecb72fd72713db4c218f0b383746f76603e40ac6c303ce073f6b9"
     },
+    "https://developer.apple.com/documentation/intents/inworkoutgoalunittyperesolutionresult/confirmationrequiredwithvaluetoconfirm:": {
+      "etag": "\"2a3f-65d560a2f8fea-df\"",
+      "file_path": "documentation/Intents/inworkoutgoalunittyperesolutionresult/confirmationrequiredwithvaluetoconfirm_.md",
+      "hash": "a9100fac7005231c4080c31e4e9d69a87b0cf537f9783d714faef0e5a30fe649"
+    },
     "https://developer.apple.com/documentation/intents/inworkoutgoalunittyperesolutionresult/success(with:)": {
       "etag": "\"3a15-65d560a2f8fea-df\"",
       "file_path": "documentation/Intents/inworkoutgoalunittyperesolutionresult/success(with).md",
       "hash": "75c9f7d7ffae714ba75e29e3b5a229e1aa5d809c311c8e895c35f021d1df82d9"
+    },
+    "https://developer.apple.com/documentation/intents/inworkoutgoalunittyperesolutionresult/successwithresolvedvalue:": {
+      "etag": "\"29dd-65d560a2f8fea-df\"",
+      "file_path": "documentation/Intents/inworkoutgoalunittyperesolutionresult/successwithresolvedvalue_.md",
+      "hash": "abc6b0d13e8359e46f8ed0080987dccd2f954adf930344f859c5002d248cfe8d"
     },
     "https://developer.apple.com/documentation/intents/inworkoutlocationtype": {
       "etag": "\"4296-65d560a51175c-df\"",
@@ -17380,10 +17965,20 @@
       "file_path": "documentation/Intents/inworkoutlocationtyperesolutionresult/confirmationrequired(with).md",
       "hash": "a2b88b1aac2201262d45a88f9cd45beacc0ee909438592f32a31ac026a0a79e0"
     },
+    "https://developer.apple.com/documentation/intents/inworkoutlocationtyperesolutionresult/confirmationrequiredwithvaluetoconfirm:": {
+      "etag": "\"2a31-65d560a379065-df\"",
+      "file_path": "documentation/Intents/inworkoutlocationtyperesolutionresult/confirmationrequiredwithvaluetoconfirm_.md",
+      "hash": "b5815a2a83326d2fc7d5f780473a4b93be38cedfb40a318d5e95fa02c970b7e6"
+    },
     "https://developer.apple.com/documentation/intents/inworkoutlocationtyperesolutionresult/success(with:)": {
       "etag": "\"39f1-65d560a379065-df\"",
       "file_path": "documentation/Intents/inworkoutlocationtyperesolutionresult/success(with).md",
       "hash": "8557d1d859747f5e2ce1b26197de77f81833ef394d680711cc84c42f77144fcc"
+    },
+    "https://developer.apple.com/documentation/intents/inworkoutlocationtyperesolutionresult/successwithresolvedvalue:": {
+      "etag": "\"29cf-65d560a379065-df\"",
+      "file_path": "documentation/Intents/inworkoutlocationtyperesolutionresult/successwithresolvedvalue_.md",
+      "hash": "60101dbbae24d699c25b7c51e19827a537ef0377d1ed41f30d75254fcb0495d1"
     },
     "https://developer.apple.com/documentation/intents/inworkoutnameidentifier": {
       "etag": "\"9fe2-659029a725208-df\"",
@@ -17570,10 +18165,20 @@
       "file_path": "documentation/Intents/inaccounttyperesolutionresult/confirmationrequired(with).md",
       "hash": "cb052b4126bb7f6463dca2b70c359d8acfb7becdf765ef6e2edc372220d104d5"
     },
+    "https://developer.apple.com/tutorials/data/documentation/intents/inaccounttyperesolutionresult/confirmationrequiredwithvaluetoconfirm:.json": {
+      "etag": "\"2734-65d560a379065-df\"",
+      "file_path": "documentation/Intents/inaccounttyperesolutionresult/confirmationrequiredwithvaluetoconfirm_.md",
+      "hash": "a4aa349a5f7bc239ebc50ab49eacd4c3e0d796f42e3cb467386d5a11ae79cb6b"
+    },
     "https://developer.apple.com/tutorials/data/documentation/intents/inaccounttyperesolutionresult/success(with:).json": {
       "etag": "\"37b1-65d560a379065-df\"",
       "file_path": "documentation/Intents/inaccounttyperesolutionresult/success(with).md",
       "hash": "32fff328be898be5699507363a92c4876a9542f9740cc6b7dfeb92adc6604e55"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/intents/inaccounttyperesolutionresult/successwithresolvedvalue:.json": {
+      "etag": "\"26df-65d560a379065-df\"",
+      "file_path": "documentation/Intents/inaccounttyperesolutionresult/successwithresolvedvalue_.md",
+      "hash": "a8091f6062c8df3fca5449c855fdbf0496473048e6efae0f5b93deb8604b1ac5"
     },
     "https://developer.apple.com/tutorials/data/documentation/intents/inactivatecarsignalintent.json": {
       "etag": "\"79d5-65d5609f9beca-df\"",
@@ -18785,10 +19390,20 @@
       "file_path": "documentation/Intents/inbilltyperesolutionresult/confirmationrequired(with).md",
       "hash": "8e52f65a831d61c11897727b3eef15c9e34696caa3dc2bf390ec3254b8fc454d"
     },
+    "https://developer.apple.com/tutorials/data/documentation/intents/inbilltyperesolutionresult/confirmationrequiredwithvaluetoconfirm:.json": {
+      "etag": "\"2b0d-65d560a099738-df\"",
+      "file_path": "documentation/Intents/inbilltyperesolutionresult/confirmationrequiredwithvaluetoconfirm_.md",
+      "hash": "1c3384900b4a4bd35a829558317f6b69005e412a9ad6f0fe1e169c9832018988"
+    },
     "https://developer.apple.com/tutorials/data/documentation/intents/inbilltyperesolutionresult/success(with:).json": {
       "etag": "\"3ea6-65d560a099738-df\"",
       "file_path": "documentation/Intents/inbilltyperesolutionresult/success(with).md",
       "hash": "8dcc65aa19a13080d1ae0452d00e865102596f961f2de630003d755b8685776a"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/intents/inbilltyperesolutionresult/successwithresolvedvalue:.json": {
+      "etag": "\"2ab4-65d560a099738-df\"",
+      "file_path": "documentation/Intents/inbilltyperesolutionresult/successwithresolvedvalue_.md",
+      "hash": "54ac145a45de5cbbf37275d5fb5f38c06e32b59c9df2d057539997b400874578"
     },
     "https://developer.apple.com/tutorials/data/documentation/intents/inboatreservation.json": {
       "etag": "\"75fd-65d560a341df6-df\"",
@@ -19019,6 +19634,11 @@
       "etag": "\"2217-65d560a666fbe-df\"",
       "file_path": "documentation/Intents/inbooleanresolutionresult/confirmationrequired(with).md",
       "hash": "7896e97b9732b288848b88f15f0393c85bda8a3131f30f5fc99bce48a6956ff9"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/intents/inbooleanresolutionresult/confirmationrequiredwithvaluetoconfirm:.json": {
+      "etag": "\"2044-65d560a666fbe-df\"",
+      "file_path": "documentation/Intents/inbooleanresolutionresult/confirmationrequiredwithvaluetoconfirm_.md",
+      "hash": "3a2b719b96c7af87debfd9dbc547463821ca083cb431433b29f00a8627dd9955"
     },
     "https://developer.apple.com/tutorials/data/documentation/intents/inbooleanresolutionresult/success(with:).json": {
       "etag": "\"3048-65d560a666fbe-df\"",
@@ -19300,6 +19920,11 @@
       "file_path": "documentation/Intents/incallrecord/callcapability.md",
       "hash": "92a58a8ee97e9554a669b082c84bc304ec87cab1b2e23a40f99f3941a0aaa72d"
     },
+    "https://developer.apple.com/tutorials/data/documentation/intents/incallrecord/callduration-2d9u1.json": {
+      "etag": "\"3366-65d560a56e105-df\"",
+      "file_path": "documentation/Intents/incallrecord/callduration-2d9u1.md",
+      "hash": "0c1542aed6e7dc2f87a3e7a88ad3a060d536c4807cb5d4f5c01d20b33bee0925"
+    },
     "https://developer.apple.com/tutorials/data/documentation/intents/incallrecord/callduration-47iud.json": {
       "etag": "\"2fe1-65d560a56e105-df\"",
       "file_path": "documentation/Intents/incallrecord/callduration-47iud.md",
@@ -19335,6 +19960,41 @@
       "file_path": "documentation/Intents/incallrecord/init(identifier,datecreated,caller,callrecordtype,callcapability,callduration,unseen,numberofcalls).md",
       "hash": "95949e5ef00fad56cee054dee4b722befcdc23292519d11c85e0bcfc72f39385"
     },
+    "https://developer.apple.com/tutorials/data/documentation/intents/incallrecord/initwithidentifier:datecreated:caller:callrecordtype:callcapability:callduration:unseen:.json": {
+      "etag": "\"497d-65d560a56e105-df\"",
+      "file_path": "documentation/Intents/incallrecord/initwithidentifier_datecreated_caller_callrecordtype_callcapability_callduration_unseen_.md",
+      "hash": "2300d13360085e42ceff3e74bee5a8a4fbc1bbc58c24122f8c63e24e40f28b19"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/intents/incallrecord/initwithidentifier:datecreated:caller:callrecordtype:callcapability:callduration:unseen:numberofcalls:.json": {
+      "etag": "\"4bb8-65d560a56e105-df\"",
+      "file_path": "documentation/Intents/incallrecord/initwithidentifier_datecreated_caller_callrecordtype_callcapability_callduration_unseen_numberofcalls_.md",
+      "hash": "5fdceccbffc67dd027152244f43933143f1cc68aea049d0a502b5e729f806042"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/intents/incallrecord/initwithidentifier:datecreated:callrecordtype:callcapability:callduration:unseen:.json": {
+      "etag": "\"42e7-65d560a56e105-df\"",
+      "file_path": "documentation/Intents/incallrecord/initwithidentifier_datecreated_callrecordtype_callcapability_callduration_unseen_.md",
+      "hash": "89993cfde4a6688d8bcc4105c72f517b5c2cf08fd382e48e869fb44461696ece"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/intents/incallrecord/initwithidentifier:datecreated:callrecordtype:callcapability:callduration:unseen:numberofcalls:.json": {
+      "etag": "\"4522-65d560a56e105-df\"",
+      "file_path": "documentation/Intents/incallrecord/initwithidentifier_datecreated_callrecordtype_callcapability_callduration_unseen_numberofcalls_.md",
+      "hash": "8a65ba96481bebf65e008abae73a98d6b0561fa2c93be746c415c89cc3238b3a"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/intents/incallrecord/initwithidentifier:datecreated:callrecordtype:callcapability:callduration:unseen:participants:numberofcalls:iscalleridblocked:.json": {
+      "etag": "\"4974-65d560a56e105-df\"",
+      "file_path": "documentation/Intents/incallrecord/initwithidentifier_datecreated_callrecordtype_callcapability_callduration_unseen_participants_numberofcalls_iscalleridblocked_.md",
+      "hash": "70d420f48eba8bebd095487da0766f834f926031a03c139783c38f9bb7162340"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/intents/incallrecord/iscalleridblocked.json": {
+      "etag": "\"339d-65d560a56e105-df\"",
+      "file_path": "documentation/Intents/incallrecord/iscalleridblocked.md",
+      "hash": "fab93053f4212d8bcf09fd8838115c5f6441e5dfb597b8603a34bfb8afa044e8"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/intents/incallrecord/numberofcalls-7vv6o.json": {
+      "etag": "\"3365-65d560a56e105-df\"",
+      "file_path": "documentation/Intents/incallrecord/numberofcalls-7vv6o.md",
+      "hash": "21467d26996c6fa7773c676aca6b8b2f0f99e5d5df5a317b8c62c32b557e453d"
+    },
     "https://developer.apple.com/tutorials/data/documentation/intents/incallrecord/numberofcalls-r8kl.json": {
       "etag": "\"2fa7-65d560a56e105-df\"",
       "file_path": "documentation/Intents/incallrecord/numberofcalls-r8kl.md",
@@ -19349,6 +20009,11 @@
       "etag": "\"3030-65d560a56e105-df\"",
       "file_path": "documentation/Intents/incallrecord/unseen-2m7sz.md",
       "hash": "9e198829462d378d6aacd54f02e80e07528af9828ddd27ffb138975751da066b"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/intents/incallrecord/unseen-8qab3.json": {
+      "etag": "\"334b-65d560a56e105-df\"",
+      "file_path": "documentation/Intents/incallrecord/unseen-8qab3.md",
+      "hash": "da9d5b3ce5532e2eaaf8282f1849c79c735114ebdc1d81dd82b720b509a26af1"
     },
     "https://developer.apple.com/tutorials/data/documentation/intents/incallrecordfilter.json": {
       "etag": "\"6b5c-65d560a809d72-df\"",
@@ -19915,10 +20580,20 @@
       "file_path": "documentation/Intents/incaraircirculationmoderesolutionresult/confirmationrequired(with).md",
       "hash": "bd8559bc83ebb672191ee4bebfaaa3cf9f0acc94610cdd8582aa1fbf03445662"
     },
+    "https://developer.apple.com/tutorials/data/documentation/intents/incaraircirculationmoderesolutionresult/confirmationrequiredwithvaluetoconfirm:.json": {
+      "etag": "\"2dfc-65d560a3c1bad-df\"",
+      "file_path": "documentation/Intents/incaraircirculationmoderesolutionresult/confirmationrequiredwithvaluetoconfirm_.md",
+      "hash": "c224db7d26822cb418f0b616eac67b275ac8d3ae09ba07d1d35e30b1c0540474"
+    },
     "https://developer.apple.com/tutorials/data/documentation/intents/incaraircirculationmoderesolutionresult/success(with:).json": {
       "etag": "\"4213-65d560a3c1bad-df\"",
       "file_path": "documentation/Intents/incaraircirculationmoderesolutionresult/success(with).md",
       "hash": "7f37407fb48d596ed9c1ca2af441a3d4709906647f39beca4ca3888b56af812c"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/intents/incaraircirculationmoderesolutionresult/successwithresolvedvalue:.json": {
+      "etag": "\"2da3-65d560a3c1bad-df\"",
+      "file_path": "documentation/Intents/incaraircirculationmoderesolutionresult/successwithresolvedvalue_.md",
+      "hash": "09871b8905ee881747423d46441e36a39a3a6225db60361e93350b2060b05dc6"
     },
     "https://developer.apple.com/tutorials/data/documentation/intents/incaraudiosource.json": {
       "etag": "\"7975-65d560a8297e2-df\"",
@@ -19990,10 +20665,20 @@
       "file_path": "documentation/Intents/incaraudiosourceresolutionresult/confirmationrequired(with).md",
       "hash": "9b78b7301980218a91443c57c5d37d2d36220201bc0ff3f562bd812d8370076f"
     },
+    "https://developer.apple.com/tutorials/data/documentation/intents/incaraudiosourceresolutionresult/confirmationrequiredwithvaluetoconfirm:.json": {
+      "etag": "\"2c38-65d560a8297e2-df\"",
+      "file_path": "documentation/Intents/incaraudiosourceresolutionresult/confirmationrequiredwithvaluetoconfirm_.md",
+      "hash": "af4facba22fc409fbdf6c9156c5cadbe23503fe7f40e1ef5901567fe5bcaba66"
+    },
     "https://developer.apple.com/tutorials/data/documentation/intents/incaraudiosourceresolutionresult/success(with:).json": {
       "etag": "\"3fa9-65d560a8297e2-df\"",
       "file_path": "documentation/Intents/incaraudiosourceresolutionresult/success(with).md",
       "hash": "b423c74914eb8f4cf144781c383be1d0f1d07a0fac75a01c7a04754678032980"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/intents/incaraudiosourceresolutionresult/successwithresolvedvalue:.json": {
+      "etag": "\"2bdf-65d560a8297e2-df\"",
+      "file_path": "documentation/Intents/incaraudiosourceresolutionresult/successwithresolvedvalue_.md",
+      "hash": "17673d48fc1a7e64dd164961e2cc90f5d9e8d3f01d8865fc9fa0eb03d4319ce3"
     },
     "https://developer.apple.com/tutorials/data/documentation/intents/incarcommandsdomainhandling.json": {
       "etag": "\"92a2-65d560a6deb10-df\"",
@@ -20040,10 +20725,20 @@
       "file_path": "documentation/Intents/incardefrosterresolutionresult/confirmationrequired(with).md",
       "hash": "9885d48bba94c0e0f1902d379af2d35d53d5091d37af2e6e8d3a9dcd532c661a"
     },
+    "https://developer.apple.com/tutorials/data/documentation/intents/incardefrosterresolutionresult/confirmationrequiredwithvaluetoconfirm:.json": {
+      "etag": "\"2bbe-65d560a744918-df\"",
+      "file_path": "documentation/Intents/incardefrosterresolutionresult/confirmationrequiredwithvaluetoconfirm_.md",
+      "hash": "c9c4a9bd76dca9af6b4100eda231107b3997191150f98c5a3630be7f18bd0861"
+    },
     "https://developer.apple.com/tutorials/data/documentation/intents/incardefrosterresolutionresult/success(with:).json": {
       "etag": "\"3f05-65d560a744918-df\"",
       "file_path": "documentation/Intents/incardefrosterresolutionresult/success(with).md",
       "hash": "4ad6c38d3f7f91df7082de319d54ec802cabdcf49ebb95f7374dd3cf57d924da"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/intents/incardefrosterresolutionresult/successwithresolvedvalue:.json": {
+      "etag": "\"2b65-65d560a744918-df\"",
+      "file_path": "documentation/Intents/incardefrosterresolutionresult/successwithresolvedvalue_.md",
+      "hash": "77bd960ff67e407733b637542d9acd99b9f146b551602871001325458c0f10e2"
     },
     "https://developer.apple.com/tutorials/data/documentation/intents/incarplaydomainhandling.json": {
       "etag": "\"b299-65d560a7f0925-df\"",
@@ -20135,10 +20830,20 @@
       "file_path": "documentation/Intents/incarseatresolutionresult/confirmationrequired(with).md",
       "hash": "45257c32f055221dad3af05b53625fb7be53de62f031d240fda9f0f3b61b8ebf"
     },
+    "https://developer.apple.com/tutorials/data/documentation/intents/incarseatresolutionresult/confirmationrequiredwithvaluetoconfirm:.json": {
+      "etag": "\"2a8a-65d560a16e0fb-df\"",
+      "file_path": "documentation/Intents/incarseatresolutionresult/confirmationrequiredwithvaluetoconfirm_.md",
+      "hash": "21740f20b02bac9a10049c030c7d3dc768c08dfddb99ce07b2d73c22822115d0"
+    },
     "https://developer.apple.com/tutorials/data/documentation/intents/incarseatresolutionresult/success(with:).json": {
       "etag": "\"3d5f-65d560a16e0fb-df\"",
       "file_path": "documentation/Intents/incarseatresolutionresult/success(with).md",
       "hash": "a4425a1d46071d756a276418e52d7ad28147b31d2b0e582bc71e1d448ef9b6c0"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/intents/incarseatresolutionresult/successwithresolvedvalue:.json": {
+      "etag": "\"2a31-65d560a16e0fb-df\"",
+      "file_path": "documentation/Intents/incarseatresolutionresult/successwithresolvedvalue_.md",
+      "hash": "ec62d0563366acb443a35afdb10e0b9246d9b13fb479ba413d114dc6bbf4ade1"
     },
     "https://developer.apple.com/tutorials/data/documentation/intents/incarsignaloptions.json": {
       "etag": "\"381a-65d560a7841b5-df\"",
@@ -20170,10 +20875,20 @@
       "file_path": "documentation/Intents/incarsignaloptionsresolutionresult/confirmationrequired(with).md",
       "hash": "85b264e68a4a76bf971806d78d981ae66395e9d40dcaaa82551009e3f5e5bd01"
     },
+    "https://developer.apple.com/tutorials/data/documentation/intents/incarsignaloptionsresolutionresult/confirmationrequiredwithvaluetoconfirm:.json": {
+      "etag": "\"2844-65d560a43bdf3-df\"",
+      "file_path": "documentation/Intents/incarsignaloptionsresolutionresult/confirmationrequiredwithvaluetoconfirm_.md",
+      "hash": "0c25d51304fc9921138b30c5bbe2a8d5b1f094576af940b344164ce88bc5513a"
+    },
     "https://developer.apple.com/tutorials/data/documentation/intents/incarsignaloptionsresolutionresult/success(with:).json": {
       "etag": "\"3e59-65d560a43bdf3-df\"",
       "file_path": "documentation/Intents/incarsignaloptionsresolutionresult/success(with).md",
       "hash": "c394e6cb243500ad73f5e0838af8c3344520d53a7a9ba253a4bd90ae1dc8ccd7"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/intents/incarsignaloptionsresolutionresult/successwithresolvedvalue:.json": {
+      "etag": "\"27ef-65d560a43bdf3-df\"",
+      "file_path": "documentation/Intents/incarsignaloptionsresolutionresult/successwithresolvedvalue_.md",
+      "hash": "2877cd633b87ba8f78817d7c7b54ea44ae4ed98803750c2fb85230df2c2af025"
     },
     "https://developer.apple.com/tutorials/data/documentation/intents/inconditionaloperator.json": {
       "etag": "\"385c-65d560a1ebd08-df\"",
@@ -20800,6 +21515,11 @@
       "file_path": "documentation/Intents/indeletetasksintent.md",
       "hash": "948b8a13fdd2fb579713171f82812a6c6229c9a8be70f2eb4e204c8892691310"
     },
+    "https://developer.apple.com/tutorials/data/documentation/intents/indeletetasksintent/all-1dt4g.json": {
+      "etag": "\"2359-65d560a4da26d-df\"",
+      "file_path": "documentation/Intents/indeletetasksintent/all-1dt4g.md",
+      "hash": "f0d8d56b3cdd968c10a5cbc68f3732d57a6583700756d8839b4f9b90ff5eb7ed"
+    },
     "https://developer.apple.com/tutorials/data/documentation/intents/indeletetasksintent/all-8gg59.json": {
       "etag": "\"2253-65d560a4da26d-df\"",
       "file_path": "documentation/Intents/indeletetasksintent/all-8gg59.md",
@@ -20809,6 +21529,11 @@
       "etag": "\"2b83-65d560a4da26d-df\"",
       "file_path": "documentation/Intents/indeletetasksintent/init(tasklist,tasks,all).md",
       "hash": "9079e857fa7ba8ea3e61f5acbe53ae6f26724587b728dc89e094d9113d68b5b3"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/intents/indeletetasksintent/initwithtasklist:tasks:all:.json": {
+      "etag": "\"235a-65d560a4da26d-df\"",
+      "file_path": "documentation/Intents/indeletetasksintent/initwithtasklist_tasks_all_.md",
+      "hash": "90e353aabbdfbfa39ea1f1f7ec28994c328eb3f60a8b1b9f5b3172a975845cad"
     },
     "https://developer.apple.com/tutorials/data/documentation/intents/indeletetasksintent/tasklist.json": {
       "etag": "\"334c-65d560a4da26d-df\"",
@@ -20979,6 +21704,11 @@
       "etag": "\"21a0-65d560a765daf-df\"",
       "file_path": "documentation/Intents/indoubleresolutionresult/confirmationrequired(with).md",
       "hash": "15cb3e19931f2b3232e1d1f5050e3243e425f6122f35c7598d796dc68dccf0fb"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/intents/indoubleresolutionresult/confirmationrequiredwithvaluetoconfirm:.json": {
+      "etag": "\"202a-65d560a765daf-df\"",
+      "file_path": "documentation/Intents/indoubleresolutionresult/confirmationrequiredwithvaluetoconfirm_.md",
+      "hash": "db447894e295842ab4f6aa334c3cd7b02fb81d8b0cf6fc9733127ddb9e20a7ed"
     },
     "https://developer.apple.com/tutorials/data/documentation/intents/indoubleresolutionresult/success(with:).json": {
       "etag": "\"2fc5-65d560a765daf-df\"",
@@ -21240,6 +21970,16 @@
       "file_path": "documentation/Intents/inenumresolutionresult.md",
       "hash": "6b810d85916b4015bade3c965aa71783e92b4c9e30a0bbaf82ef5968434c91a7"
     },
+    "https://developer.apple.com/tutorials/data/documentation/intents/inenumresolutionresult/confirmationrequiredwithvaluetoconfirm:.json": {
+      "etag": "\"1c95-65d5609ec5ef7-df\"",
+      "file_path": "documentation/Intents/inenumresolutionresult/confirmationrequiredwithvaluetoconfirm_.md",
+      "hash": "da357b6ee0b4c4184ed940bdb17d32cfd38cb2f8b5827c6671ed4984cebca970"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/intents/inenumresolutionresult/successwithresolvedvalue:.json": {
+      "etag": "\"1c8d-65d5609ec5ef7-df\"",
+      "file_path": "documentation/Intents/inenumresolutionresult/successwithresolvedvalue_.md",
+      "hash": "9ae4752173d62b9cbb37807c8b87846140cf9e5e0ff7a322f260b476f9c25cfd"
+    },
     "https://developer.apple.com/tutorials/data/documentation/intents/inextension.json": {
       "etag": "\"4dac-65d560a3e23c3-df\"",
       "file_path": "documentation/Intents/inextension.md",
@@ -21399,6 +22139,16 @@
       "etag": "\"16e4-65d5609fec9ca-df\"",
       "file_path": "documentation/Intents/infocusstatus/init(isfocused).md",
       "hash": "f1686a396330c737202a00244b8d2c3e7394ee7657b385a2e491eeed73de1d74"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/intents/infocusstatus/initwithisfocused:.json": {
+      "etag": "\"1653-65d5609fec9ca-df\"",
+      "file_path": "documentation/Intents/infocusstatus/initwithisfocused_.md",
+      "hash": "e899af728c7eaffdec91e796dedccaffaacf1cbca3cfc89a6bcd26c7f5627f4d"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/intents/infocusstatus/isfocused-78wbx.json": {
+      "etag": "\"1c12-65d5609fec9ca-df\"",
+      "file_path": "documentation/Intents/infocusstatus/isfocused-78wbx.md",
+      "hash": "ce3834d5a4c62e4b4bcdeff618f9087d98b017bff5c94d8d03f357898effd0f1"
     },
     "https://developer.apple.com/tutorials/data/documentation/intents/infocusstatus/isfocused-8ytve.json": {
       "etag": "\"19fd-65d5609fec9ca-df\"",
@@ -21755,6 +22505,11 @@
       "file_path": "documentation/Intents/ingetcarlockstatusintentresponse/init(code,useractivity).md",
       "hash": "af1628f3b3d171cc67d27cd033f6882f648adacb505870e85f1e49db36807586"
     },
+    "https://developer.apple.com/tutorials/data/documentation/intents/ingetcarlockstatusintentresponse/locked-1eacd.json": {
+      "etag": "\"1e33-65d5609fec9ca-df\"",
+      "file_path": "documentation/Intents/ingetcarlockstatusintentresponse/locked-1eacd.md",
+      "hash": "3e2631a1cf51efeced317e95cbf37f402b9b380848030b642e6d475712510581"
+    },
     "https://developer.apple.com/tutorials/data/documentation/intents/ingetcarlockstatusintentresponse/locked-357ju.json": {
       "etag": "\"1c55-65d5609fec9ca-df\"",
       "file_path": "documentation/Intents/ingetcarlockstatusintentresponse/locked-357ju.md",
@@ -21860,6 +22615,11 @@
       "file_path": "documentation/Intents/ingetcarpowerlevelstatusintentresponse/caridentifier.md",
       "hash": "28ce7d1764f0a4d2c7e49bfd705c16e5ac81c726c64ad1b0ec646a347fed4c54"
     },
+    "https://developer.apple.com/tutorials/data/documentation/intents/ingetcarpowerlevelstatusintentresponse/chargepercentremaining-30zol.json": {
+      "etag": "\"413c-65d560a063913-df\"",
+      "file_path": "documentation/Intents/ingetcarpowerlevelstatusintentresponse/chargepercentremaining-30zol.md",
+      "hash": "6c5d84e1fd70dab68f4fd12b6e07a5c8b9de85b2464d4366d3af8a7d141e9a6b"
+    },
     "https://developer.apple.com/tutorials/data/documentation/intents/ingetcarpowerlevelstatusintentresponse/chargepercentremaining-51zwv.json": {
       "etag": "\"3f91-65d560a063913-df\"",
       "file_path": "documentation/Intents/ingetcarpowerlevelstatusintentresponse/chargepercentremaining-51zwv.md",
@@ -21869,6 +22629,11 @@
       "etag": "\"26e7-65d560a063913-df\"",
       "file_path": "documentation/Intents/ingetcarpowerlevelstatusintentresponse/charging-6xnqj.md",
       "hash": "38842d76d116d94ffd61d4d16f1ad52ffbfbeb5b93a0ccb67b8db12436d7eb57"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/intents/ingetcarpowerlevelstatusintentresponse/charging-7aamu.json": {
+      "etag": "\"2819-65d560a063913-df\"",
+      "file_path": "documentation/Intents/ingetcarpowerlevelstatusintentresponse/charging-7aamu.md",
+      "hash": "053c6a2a6f050d0c9689fa8c7d974a4ae0e87a9d41fd76f974162fb85a00e67b"
     },
     "https://developer.apple.com/tutorials/data/documentation/intents/ingetcarpowerlevelstatusintentresponse/chargingformulaarguments.json": {
       "etag": "\"2d6f-65d560a063913-df\"",
@@ -21915,6 +22680,11 @@
       "file_path": "documentation/Intents/ingetcarpowerlevelstatusintentresponse/fuelpercentremaining-56xw3.md",
       "hash": "b07c851fc6220bfa214941fac59b1f4f651c5a797ab1f3b9a46e50be3db600b6"
     },
+    "https://developer.apple.com/tutorials/data/documentation/intents/ingetcarpowerlevelstatusintentresponse/fuelpercentremaining-6mdv4.json": {
+      "etag": "\"412d-65d560a063913-df\"",
+      "file_path": "documentation/Intents/ingetcarpowerlevelstatusintentresponse/fuelpercentremaining-6mdv4.md",
+      "hash": "b5859adb1e5c27947712b3cda97fe40198d97886589b01f8205c18a3c04a5619"
+    },
     "https://developer.apple.com/tutorials/data/documentation/intents/ingetcarpowerlevelstatusintentresponse/init(code:useractivity:).json": {
       "etag": "\"42b4-65d560a063913-df\"",
       "file_path": "documentation/Intents/ingetcarpowerlevelstatusintentresponse/init(code,useractivity).md",
@@ -21944,6 +22714,11 @@
       "etag": "\"38ff-65d560a063913-df\"",
       "file_path": "documentation/Intents/ingetcarpowerlevelstatusintentresponse/minimumbatterycapacity.md",
       "hash": "1928faf39c0a7c9d434e5751ea3091c758b5efa01b0b6d6a31248731367f9b7f"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/intents/ingetcarpowerlevelstatusintentresponse/minutestofull-25vcb.json": {
+      "etag": "\"283e-65d560a063913-df\"",
+      "file_path": "documentation/Intents/ingetcarpowerlevelstatusintentresponse/minutestofull-25vcb.md",
+      "hash": "e1960f85ebf3d76357992d9f835850f02a67b03ffd9652228e33cdb1510e8754"
     },
     "https://developer.apple.com/tutorials/data/documentation/intents/ingetcarpowerlevelstatusintentresponse/minutestofull-2kbt6.json": {
       "etag": "\"266a-65d560a063913-df\"",
@@ -22660,6 +23435,11 @@
       "file_path": "documentation/Intents/inintegerresolutionresult/confirmationrequired(with).md",
       "hash": "35d3f8b3f908b381564a8372fede28f78c2967c24abb6c5937013b51689ca082"
     },
+    "https://developer.apple.com/tutorials/data/documentation/intents/inintegerresolutionresult/confirmationrequiredwithvaluetoconfirm:.json": {
+      "etag": "\"2043-65d560a56e105-df\"",
+      "file_path": "documentation/Intents/inintegerresolutionresult/confirmationrequiredwithvaluetoconfirm_.md",
+      "hash": "4cc4073ca5f708ed67672ddf6ecebf446ea6e02b8590a807d212b8162d8c4276"
+    },
     "https://developer.apple.com/tutorials/data/documentation/intents/inintegerresolutionresult/success(with:).json": {
       "etag": "\"32b7-65d560a56e105-df\"",
       "file_path": "documentation/Intents/inintegerresolutionresult/success(with).md",
@@ -22680,6 +23460,11 @@
       "file_path": "documentation/Intents/inintent/identifier.md",
       "hash": "c1325aaaf553dc93bc000d4b18687c28c1ec8bedc297d6c46a2fc70b74f4f9c9"
     },
+    "https://developer.apple.com/tutorials/data/documentation/intents/inintent/imageforparameternamed:.json": {
+      "etag": "\"208f-65d560a0f0aca-df\"",
+      "file_path": "documentation/Intents/inintent/imageforparameternamed_.md",
+      "hash": "cdfe6412cd78107e97ac165d9158a3f306ec58bb388f2c91f3a032bb382094c8"
+    },
     "https://developer.apple.com/tutorials/data/documentation/intents/inintent/init(coder:).json": {
       "etag": "\"13d6-65d560a0d4888-df\"",
       "file_path": "documentation/Intents/inintent/init(coder).md",
@@ -22694,6 +23479,11 @@
       "etag": "\"2550-65d560a0f0aca-df\"",
       "file_path": "documentation/Intents/inintent/keyimage().md",
       "hash": "a7f963c127b93f2ca86faa68e5943ed34a7ba3eda3e1e766f910e2fa1cf1deda"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/intents/inintent/setimage:forparameternamed:.json": {
+      "etag": "\"2365-65d560a0d4888-df\"",
+      "file_path": "documentation/Intents/inintent/setimage_forparameternamed_.md",
+      "hash": "e2ec917f227b7388853d9014cdf550c612b51ba089edba1f4bfc0513beef3a20"
     },
     "https://developer.apple.com/tutorials/data/documentation/intents/inintent/shortcutavailability.json": {
       "etag": "\"3524-65d560a0f0aca-df\"",
@@ -23140,6 +23930,11 @@
       "file_path": "documentation/Intents/inintentresolutionresult.md",
       "hash": "f58268334c3e46ebfdbe325c49be68a3621aafe468e00057783a6b39ca5e5a62"
     },
+    "https://developer.apple.com/tutorials/data/documentation/intents/inintentresolutionresult/confirmationrequiredwithitemtoconfirm:forreason:.json": {
+      "etag": "\"2e16-65d560a7841b5-df\"",
+      "file_path": "documentation/Intents/inintentresolutionresult/confirmationrequiredwithitemtoconfirm_forreason_.md",
+      "hash": "ddb8e814b148e372c1287d479bbbc8687f64cf6fd4cd543d5f3adb9f00c706bc"
+    },
     "https://developer.apple.com/tutorials/data/documentation/intents/inintentresolutionresult/needsvalue().json": {
       "etag": "\"30e2-65d560a7841b5-df\"",
       "file_path": "documentation/Intents/inintentresolutionresult/needsvalue().md",
@@ -23154,6 +23949,11 @@
       "etag": "\"30ec-65d560a7841b5-df\"",
       "file_path": "documentation/Intents/inintentresolutionresult/unsupported().md",
       "hash": "a397550ac550cd5d5c759469aa52d1b0d7ef4cf08c2e12d22a67538498d216e1"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/intents/inintentresolutionresult/unsupportedwithreason:.json": {
+      "etag": "\"2c20-65d560a7841b5-df\"",
+      "file_path": "documentation/Intents/inintentresolutionresult/unsupportedwithreason_.md",
+      "hash": "7bc4c1cdacd164d999e919c173af42902a19d6d6b5bd47336fb05df4a1532681"
     },
     "https://developer.apple.com/tutorials/data/documentation/intents/inintentresponse.json": {
       "etag": "\"1aa2f-65d560a0f0aca-df\"",
@@ -23590,6 +24390,16 @@
       "file_path": "documentation/Intents/inlodgingreservation/init(itemreference,reservationnumber,bookingtime,reservationstatus,reservationholdername,actions,url,lodgingbusinesslocation,reservationduration,numberofadults,numberofchildren).md",
       "hash": "ac473f03518f528462838fe4bb466ebc6a5eb6ee1124bbbc7a7569fe0deb0256"
     },
+    "https://developer.apple.com/tutorials/data/documentation/intents/inlodgingreservation/initwithitemreference:reservationnumber:bookingtime:reservationstatus:reservationholdername:actions:lodgingbusinesslocation:reservationduration:numberofadults:numberofchildren:.json": {
+      "etag": "\"4c70-65d560a0d4888-df\"",
+      "file_path": "documentation/Intents/inlodgingreservation/initwithitemreference_reservationnumber_bookingtime_reservationstatus_reservationholdername_actions_lodgingbusinesslocation_reservationduration_numberofadults_numberofchildren_.md",
+      "hash": "b3ab52d9ade66c2c165ab6811f9cd8292e69ae3f47ca9a3bbe2164df8e287979"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/intents/inlodgingreservation/initwithitemreference:reservationnumber:bookingtime:reservationstatus:reservationholdername:actions:url:lodgingbusinesslocation:reservationduration:numberofadults:numberofchildren:.json": {
+      "etag": "\"50ce-65d560a0d4888-df\"",
+      "file_path": "documentation/Intents/inlodgingreservation/initwithitemreference_reservationnumber_bookingtime_reservationstatus_reservationholdername_actions_url_lodgingbusinesslocation_reservationduration_numberofadults_numberofchildren_.md",
+      "hash": "8020d2624324d72dbb6c641969adbd2ec842baa638527fac0ac83be4e0ade53f"
+    },
     "https://developer.apple.com/tutorials/data/documentation/intents/inlodgingreservation/lodgingbusinesslocation.json": {
       "etag": "\"3405-65d560a0d4888-df\"",
       "file_path": "documentation/Intents/inlodgingreservation/lodgingbusinesslocation.md",
@@ -23600,10 +24410,20 @@
       "file_path": "documentation/Intents/inlodgingreservation/numberofadults-6fsnq.md",
       "hash": "5851c52eb4d997536328831ab1f8d0d3f4186060cd4cc5077822e2a363976549"
     },
+    "https://developer.apple.com/tutorials/data/documentation/intents/inlodgingreservation/numberofadults-9r4iw.json": {
+      "etag": "\"2459-65d560a0d4888-df\"",
+      "file_path": "documentation/Intents/inlodgingreservation/numberofadults-9r4iw.md",
+      "hash": "ccf69fd2e3c5eab01b5b4cb65b572ac0b010292acfbb37ee64329e7b120a6d59"
+    },
     "https://developer.apple.com/tutorials/data/documentation/intents/inlodgingreservation/numberofchildren-1dm3g.json": {
       "etag": "\"2236-65d560a0d4888-df\"",
       "file_path": "documentation/Intents/inlodgingreservation/numberofchildren-1dm3g.md",
       "hash": "e9900f412fef82c9b5be14ed8871954469b6f1f8703ae8ce07dc83da0c984e52"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/intents/inlodgingreservation/numberofchildren-2n3e2.json": {
+      "etag": "\"2469-65d560a0d4888-df\"",
+      "file_path": "documentation/Intents/inlodgingreservation/numberofchildren-2n3e2.md",
+      "hash": "6b6c144226d49a762bff73114df18f48d0f0207cc053b2a6d8851dba2cf3dd2a"
     },
     "https://developer.apple.com/tutorials/data/documentation/intents/inlodgingreservation/reservationduration.json": {
       "etag": "\"3669-65d560a0d4888-df\"",
@@ -24010,6 +24830,11 @@
       "file_path": "documentation/Intents/inmediasearch/init(mediatype,sortorder,medianame,artistname,albumname,genrenames,moodnames,releasedate,reference,mediaidentifier).md",
       "hash": "8c6c18c9f3001a8025e3b838b7f697b613571ec14b79d811578136ac337e6b04"
     },
+    "https://developer.apple.com/tutorials/data/documentation/intents/inmediasearch/initwithmediatype:sortorder:medianame:artistname:albumname:genrenames:moodnames:releasedate:reference:mediaidentifier:.json": {
+      "etag": "\"3be1-65d560a60bece-df\"",
+      "file_path": "documentation/Intents/inmediasearch/initwithmediatype_sortorder_medianame_artistname_albumname_genrenames_moodnames_releasedate_reference_mediaidentifier_.md",
+      "hash": "a440506bb3b90f64a1210e42542ad13da2f48ec1d4c7429f5a07fe4bc3d97e54"
+    },
     "https://developer.apple.com/tutorials/data/documentation/intents/inmediasearch/mediaidentifier.json": {
       "etag": "\"5297-65d560a60bece-df\"",
       "file_path": "documentation/Intents/inmediasearch/mediaidentifier.md",
@@ -24109,6 +24934,11 @@
       "etag": "\"1a4d-65d560a744918-df\"",
       "file_path": "documentation/Intents/inmediausercontext/init().md",
       "hash": "329563ec50036ef0a6848de3304e8b373aeb8707b5fc2ada805449004e8f9c4a"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/intents/inmediausercontext/numberoflibraryitems-881cf.json": {
+      "etag": "\"238c-65d560a744918-df\"",
+      "file_path": "documentation/Intents/inmediausercontext/numberoflibraryitems-881cf.md",
+      "hash": "f823d0565d3d79f1ef5989d3dff27e32df60d40c4dc1d42bc51981f9d81d50ca"
     },
     "https://developer.apple.com/tutorials/data/documentation/intents/inmediausercontext/numberoflibraryitems-8rnf0.json": {
       "etag": "\"2104-65d560a744918-df\"",
@@ -24365,10 +25195,20 @@
       "file_path": "documentation/Intents/inmessageattributeoptionsresolutionresult/confirmationrequired(with).md",
       "hash": "416c0abd99ffea0df6958e67f7ecee681537904df07a35f480eb640e6d34147f"
     },
+    "https://developer.apple.com/tutorials/data/documentation/intents/inmessageattributeoptionsresolutionresult/confirmationrequiredwithvaluetoconfirm:.json": {
+      "etag": "\"2a0d-65d560a3e23c3-df\"",
+      "file_path": "documentation/Intents/inmessageattributeoptionsresolutionresult/confirmationrequiredwithvaluetoconfirm_.md",
+      "hash": "914853d9dc9d6f9bb5c5e29630550f338232b5c0732e9389c6f76b344b8d4264"
+    },
     "https://developer.apple.com/tutorials/data/documentation/intents/inmessageattributeoptionsresolutionresult/success(with:).json": {
       "etag": "\"3b76-65d560a3e23c3-df\"",
       "file_path": "documentation/Intents/inmessageattributeoptionsresolutionresult/success(with).md",
       "hash": "4c1ddc06328821b9439977b478ed7378cb5642f489cc82885245d6168bc9d39d"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/intents/inmessageattributeoptionsresolutionresult/successwithresolvedvalue:.json": {
+      "etag": "\"29b8-65d560a3e23c3-df\"",
+      "file_path": "documentation/Intents/inmessageattributeoptionsresolutionresult/successwithresolvedvalue_.md",
+      "hash": "7b991fd40ead1d7785c1a65d82edf13818dc31201526b0ef2bd6f764a5aa8a25"
     },
     "https://developer.apple.com/tutorials/data/documentation/intents/inmessageattributeresolutionresult.json": {
       "etag": "\"685a-65d5609f489c0-df\"",
@@ -24380,10 +25220,20 @@
       "file_path": "documentation/Intents/inmessageattributeresolutionresult/confirmationrequired(with).md",
       "hash": "ca00d049c7f7832022f21115e6c59e145e2b8a32ace3893f7e1f019d2e7b445e"
     },
+    "https://developer.apple.com/tutorials/data/documentation/intents/inmessageattributeresolutionresult/confirmationrequiredwithvaluetoconfirm:.json": {
+      "etag": "\"2858-65d560a5ef35a-df\"",
+      "file_path": "documentation/Intents/inmessageattributeresolutionresult/confirmationrequiredwithvaluetoconfirm_.md",
+      "hash": "83ea7cdec09b9d03dc7d2505893de059a06443446c531f540fe730635cef7813"
+    },
     "https://developer.apple.com/tutorials/data/documentation/intents/inmessageattributeresolutionresult/success(with:).json": {
       "etag": "\"3934-65d560a5ef35a-df\"",
       "file_path": "documentation/Intents/inmessageattributeresolutionresult/success(with).md",
       "hash": "d72ee9f8549e49b091b22d4dc61a9817c179b9feebbfee4ad63b376044ffea37"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/intents/inmessageattributeresolutionresult/successwithresolvedvalue:.json": {
+      "etag": "\"2803-65d560a5ef35a-df\"",
+      "file_path": "documentation/Intents/inmessageattributeresolutionresult/successwithresolvedvalue_.md",
+      "hash": "fe23a176c04aa54bb490e49dfe30aed2ca629482632039feab67fadc74f4fcd2"
     },
     "https://developer.apple.com/tutorials/data/documentation/intents/inmessagelinkmetadata.json": {
       "etag": "\"67ae-65d560a0d4888-df\"",
@@ -24734,6 +25584,11 @@
       "etag": "\"2d36-65d560a4ab621-df\"",
       "file_path": "documentation/Intents/innotebookitemtyperesolutionresult/disambiguation(with).md",
       "hash": "45c6ed9582df540a94ad08445c22f2062fbcbf849f54dd16c8a1e39d34246ce7"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/intents/innotebookitemtyperesolutionresult/disambiguationwithnotebookitemtypestodisambiguate:.json": {
+      "etag": "\"2b9a-65d560a4ab621-df\"",
+      "file_path": "documentation/Intents/innotebookitemtyperesolutionresult/disambiguationwithnotebookitemtypestodisambiguate_.md",
+      "hash": "6071b8f19626a4a43eb4984a55ff7802ae50742649622a4568a42ba2d3e4d05c"
     },
     "https://developer.apple.com/tutorials/data/documentation/intents/innotebookitemtyperesolutionresult/success(with:).json": {
       "etag": "\"40d9-65d560a4ab621-df\"",
@@ -25715,10 +26570,20 @@
       "file_path": "documentation/Intents/inpaymentstatusresolutionresult/confirmationrequired(with).md",
       "hash": "b58721982ce086c2a7fe4700dbea8eec2f963a8225f45152bed41129920b77d8"
     },
+    "https://developer.apple.com/tutorials/data/documentation/intents/inpaymentstatusresolutionresult/confirmationrequiredwithvaluetoconfirm:.json": {
+      "etag": "\"27b1-65d560a07d47e-df\"",
+      "file_path": "documentation/Intents/inpaymentstatusresolutionresult/confirmationrequiredwithvaluetoconfirm_.md",
+      "hash": "38d9d88fe235236411f3dd504493f86832dbf15a40fcd8f8a5eccab50dad58dd"
+    },
     "https://developer.apple.com/tutorials/data/documentation/intents/inpaymentstatusresolutionresult/success(with:).json": {
       "etag": "\"38a0-65d560a07d47e-df\"",
       "file_path": "documentation/Intents/inpaymentstatusresolutionresult/success(with).md",
       "hash": "1d041cd3f3f07e5c1d714dc7c7ca0ccbf1b5b26a93281a8efe10ddf0063b8498"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/intents/inpaymentstatusresolutionresult/successwithresolvedvalue:.json": {
+      "etag": "\"275c-65d560a07d47e-df\"",
+      "file_path": "documentation/Intents/inpaymentstatusresolutionresult/successwithresolvedvalue_.md",
+      "hash": "0fb2a64d925f61d1b3db9ac6ae3119bb5a245d0891d9dbd3fcc57ae7a4b9bfa1"
     },
     "https://developer.apple.com/tutorials/data/documentation/intents/inperson.json": {
       "etag": "\"1350a-65d560a666fbe-df\"",
@@ -26370,6 +27235,16 @@
       "file_path": "documentation/Intents/inplaymediaintent/init(mediaitems,mediacontainer,playshuffled,playbackrepeatmode,resumeplayback,playbackqueuelocation,playbackspeed,mediasearch).md",
       "hash": "894a2a368ee46eb7cf73bd5c6a96c386eaa40ed568028b8a3b2687e9bcf4b510"
     },
+    "https://developer.apple.com/tutorials/data/documentation/intents/inplaymediaintent/initwithmediaitems:mediacontainer:playshuffled:playbackrepeatmode:resumeplayback:.json": {
+      "etag": "\"36ff-65d560a109b8a-df\"",
+      "file_path": "documentation/Intents/inplaymediaintent/initwithmediaitems_mediacontainer_playshuffled_playbackrepeatmode_resumeplayback_.md",
+      "hash": "f5c276937f2b90a4ad74e07d1944bccb6a2ff6d9c946be6f380000601e4a3b31"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/intents/inplaymediaintent/initwithmediaitems:mediacontainer:playshuffled:playbackrepeatmode:resumeplayback:playbackqueuelocation:playbackspeed:mediasearch:.json": {
+      "etag": "\"4611-65d560a109b8a-df\"",
+      "file_path": "documentation/Intents/inplaymediaintent/initwithmediaitems_mediacontainer_playshuffled_playbackrepeatmode_resumeplayback_playbackqueuelocation_playbackspeed_mediasearch_.md",
+      "hash": "cb3ec81b036af6651e9b6e462559fc139134a8681a9a0889f19f8a4bc11f608f"
+    },
     "https://developer.apple.com/tutorials/data/documentation/intents/inplaymediaintent/mediacontainer.json": {
       "etag": "\"2b90-65d560a109b8a-df\"",
       "file_path": "documentation/Intents/inplaymediaintent/mediacontainer.md",
@@ -26400,15 +27275,30 @@
       "file_path": "documentation/Intents/inplaymediaintent/playbackspeed-17r2t.md",
       "hash": "50c55baf4ae7a2d9404aeb61526e868ad8b6abebb57cfa1013f23ba0815795d1"
     },
+    "https://developer.apple.com/tutorials/data/documentation/intents/inplaymediaintent/playbackspeed-6ngbq.json": {
+      "etag": "\"33dc-65d560a109b8a-df\"",
+      "file_path": "documentation/Intents/inplaymediaintent/playbackspeed-6ngbq.md",
+      "hash": "c3db8b281dffe48661546ea06a2c99a0721e153d7e3510464d741741e771b6ab"
+    },
     "https://developer.apple.com/tutorials/data/documentation/intents/inplaymediaintent/playshuffled-2btex.json": {
       "etag": "\"334d-65d560a109b8a-df\"",
       "file_path": "documentation/Intents/inplaymediaintent/playshuffled-2btex.md",
       "hash": "f059f2731e247f5bdcf9e6d2e087f8bdd453c3b7d525d5d2504e15ef1b56e3c7"
     },
+    "https://developer.apple.com/tutorials/data/documentation/intents/inplaymediaintent/playshuffled-93hn1.json": {
+      "etag": "\"33fc-65d560a109b8a-df\"",
+      "file_path": "documentation/Intents/inplaymediaintent/playshuffled-93hn1.md",
+      "hash": "2ae1949daf5b1d32368f2591bf5a4c654554cd6ff560ae8d3366f9f07f53d569"
+    },
     "https://developer.apple.com/tutorials/data/documentation/intents/inplaymediaintent/resumeplayback-1xw6r.json": {
       "etag": "\"3352-65d560a109b8a-df\"",
       "file_path": "documentation/Intents/inplaymediaintent/resumeplayback-1xw6r.md",
       "hash": "39bc5332cf0e122339f857fc129bb5f1d2c5ef441ef51ece91db871e711a066d"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/intents/inplaymediaintent/resumeplayback-9zfyp.json": {
+      "etag": "\"3405-65d560a109b8a-df\"",
+      "file_path": "documentation/Intents/inplaymediaintent/resumeplayback-9zfyp.md",
+      "hash": "a165e985ca85a81cccbe91fef63af23caa1bd11aba10b9d89e155ae12d633a09"
     },
     "https://developer.apple.com/tutorials/data/documentation/intents/inplaymediaintenthandling.json": {
       "etag": "\"6cd0-65d560a79f92f-df\"",
@@ -26775,10 +27665,20 @@
       "file_path": "documentation/Intents/inradiotyperesolutionresult/confirmationrequired(with).md",
       "hash": "02384510ebfebe5e0ae1259650ce46ba3db585693a066db78f4d5179c63250c3"
     },
+    "https://developer.apple.com/tutorials/data/documentation/intents/inradiotyperesolutionresult/confirmationrequiredwithvaluetoconfirm:.json": {
+      "etag": "\"2b0b-65d560a4ab621-df\"",
+      "file_path": "documentation/Intents/inradiotyperesolutionresult/confirmationrequiredwithvaluetoconfirm_.md",
+      "hash": "c22b4f9103ef55f7a455cd60b45c7c614eb0c73cb00de26e478101864a6fd2b6"
+    },
     "https://developer.apple.com/tutorials/data/documentation/intents/inradiotyperesolutionresult/success(with:).json": {
       "etag": "\"3e0e-65d560a4ab621-df\"",
       "file_path": "documentation/Intents/inradiotyperesolutionresult/success(with).md",
       "hash": "d8311943150f1e6f8011c6111be9183fcb06ef71e4a3c272c2e53870755938b1"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/intents/inradiotyperesolutionresult/successwithresolvedvalue:.json": {
+      "etag": "\"2ab2-65d560a4ab621-df\"",
+      "file_path": "documentation/Intents/inradiotyperesolutionresult/successwithresolvedvalue_.md",
+      "hash": "18c3595c0c613b953571459bad75836204993cab025cc23660a2cab69121cf7e"
     },
     "https://developer.apple.com/tutorials/data/documentation/intents/inrecurrencefrequency.json": {
       "etag": "\"5401-65d560a3fde47-df\"",
@@ -26895,10 +27795,20 @@
       "file_path": "documentation/Intents/inrelativereferenceresolutionresult/confirmationrequired(with).md",
       "hash": "5d7fbe0fc6a717ad04c95b316f45f75a73d6f3f3f662e1654284b34bb5a855be"
     },
+    "https://developer.apple.com/tutorials/data/documentation/intents/inrelativereferenceresolutionresult/confirmationrequiredwithvaluetoconfirm:.json": {
+      "etag": "\"2cf7-65d5609f9beca-df\"",
+      "file_path": "documentation/Intents/inrelativereferenceresolutionresult/confirmationrequiredwithvaluetoconfirm_.md",
+      "hash": "fe576fd212afc8941b69985384ed9016d69f4d79badf819f8ff3cfdd0db52087"
+    },
     "https://developer.apple.com/tutorials/data/documentation/intents/inrelativereferenceresolutionresult/success(with:).json": {
       "etag": "\"40bc-65d5609f9beca-df\"",
       "file_path": "documentation/Intents/inrelativereferenceresolutionresult/success(with).md",
       "hash": "b2bdae257d3e1c35752514bde3f1c58aa44a20a82a83dfeb06f68c627aed4736"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/intents/inrelativereferenceresolutionresult/successwithresolvedvalue:.json": {
+      "etag": "\"2c9e-65d5609f9beca-df\"",
+      "file_path": "documentation/Intents/inrelativereferenceresolutionresult/successwithresolvedvalue_.md",
+      "hash": "001c218a7bc4a83246bc84cf01b8635bbb0d6640aeb19afd2847baaf66744e25"
     },
     "https://developer.apple.com/tutorials/data/documentation/intents/inrelativesetting.json": {
       "etag": "\"621c-65d560a89ca18-df\"",
@@ -26945,10 +27855,20 @@
       "file_path": "documentation/Intents/inrelativesettingresolutionresult/confirmationrequired(with).md",
       "hash": "2e396a09f058c4e3cb88c5b3565aaa712de5fb0b2e74d540c8ee2f44b75c6994"
     },
+    "https://developer.apple.com/tutorials/data/documentation/intents/inrelativesettingresolutionresult/confirmationrequiredwithvaluetoconfirm:.json": {
+      "etag": "\"2c8f-65d560a341df6-df\"",
+      "file_path": "documentation/Intents/inrelativesettingresolutionresult/confirmationrequiredwithvaluetoconfirm_.md",
+      "hash": "43da59a20ad61c686c201390bbbb9f14c56266ba2cd3bda4cf82449d57ac427d"
+    },
     "https://developer.apple.com/tutorials/data/documentation/intents/inrelativesettingresolutionresult/success(with:).json": {
       "etag": "\"4017-65d560a341df6-df\"",
       "file_path": "documentation/Intents/inrelativesettingresolutionresult/success(with).md",
       "hash": "d5222d75f6d3a5edc8d5f63d8c22934bd5a79dc69df7ea4489cee6f5b51e8272"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/intents/inrelativesettingresolutionresult/successwithresolvedvalue:.json": {
+      "etag": "\"2c36-65d560a341df6-df\"",
+      "file_path": "documentation/Intents/inrelativesettingresolutionresult/successwithresolvedvalue_.md",
+      "hash": "52ca333ef607a8651bbd8fd8fcf61a0e2bd4d98d07c11583143abe5b14d135ae"
     },
     "https://developer.apple.com/tutorials/data/documentation/intents/inrelevanceprovider.json": {
       "etag": "\"4cdd-65d5609f489c0-df\"",
@@ -27375,10 +28295,25 @@
       "file_path": "documentation/Intents/inrequestrideintent/init(pickuplocation,dropofflocation,rideoptionname,partysize,paymentmethod,scheduledpickuptime).md",
       "hash": "59dd880aa189ec8c93adaea7cfb5925eb7e898fa6eb352062a646363a9528abf"
     },
+    "https://developer.apple.com/tutorials/data/documentation/intents/inrequestrideintent/initwithpickuplocation:dropofflocation:rideoptionname:partysize:paymentmethod:.json": {
+      "etag": "\"3527-65d560a0b1440-df\"",
+      "file_path": "documentation/Intents/inrequestrideintent/initwithpickuplocation_dropofflocation_rideoptionname_partysize_paymentmethod_.md",
+      "hash": "689696c5f13c11b86621a9d8c1ae047db1b71839eb76ad60f3bc6c2d59eccbbd"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/intents/inrequestrideintent/initwithpickuplocation:dropofflocation:rideoptionname:partysize:paymentmethod:scheduledpickuptime:.json": {
+      "etag": "\"39e0-65d560a0b1440-df\"",
+      "file_path": "documentation/Intents/inrequestrideintent/initwithpickuplocation_dropofflocation_rideoptionname_partysize_paymentmethod_scheduledpickuptime_.md",
+      "hash": "d318e12dda30c3431f9d1e0b4c3def690a6d80af4e9aea7d3b887a52d6a4f10d"
+    },
     "https://developer.apple.com/tutorials/data/documentation/intents/inrequestrideintent/partysize-39k7z.json": {
       "etag": "\"2859-65d560a0b1440-df\"",
       "file_path": "documentation/Intents/inrequestrideintent/partysize-39k7z.md",
       "hash": "c6530ced99f0c0140d1de9961822279850b95ce7750fd9852ef111afdd434ec2"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/intents/inrequestrideintent/partysize-64kfc.json": {
+      "etag": "\"2b0c-65d560a0b1440-df\"",
+      "file_path": "documentation/Intents/inrequestrideintent/partysize-64kfc.md",
+      "hash": "f066233284fe24a6536b2b74697a30eb9aa731e96e60a14b8807b12f2357d2e7"
     },
     "https://developer.apple.com/tutorials/data/documentation/intents/inrequestrideintent/paymentmethod.json": {
       "etag": "\"24b7-65d560a0b1440-df\"",
@@ -27824,6 +28759,21 @@
       "etag": "\"5efb-65d560a023786-df\"",
       "file_path": "documentation/Intents/inrestaurantreservation/init(itemreference,reservationnumber,bookingtime,reservationstatus,reservationholdername,actions,url,reservationduration,partysize,restaurantlocation).md",
       "hash": "c932a18f5662dcc9dd8604c742422ee8ad606e003c560091d208915128257e63"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/intents/inrestaurantreservation/initwithitemreference:reservationnumber:bookingtime:reservationstatus:reservationholdername:actions:reservationduration:partysize:restaurantlocation:.json": {
+      "etag": "\"48d8-65d560a023786-df\"",
+      "file_path": "documentation/Intents/inrestaurantreservation/initwithitemreference_reservationnumber_bookingtime_reservationstatus_reservationholdername_actions_reservationduration_partysize_restaurantlocation_.md",
+      "hash": "191a9723cab7c0184eb634865991bfa5bb16ecfa205755cf2db2f077d03bbe41"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/intents/inrestaurantreservation/initwithitemreference:reservationnumber:bookingtime:reservationstatus:reservationholdername:actions:url:reservationduration:partysize:restaurantlocation:.json": {
+      "etag": "\"4d6b-65d560a023786-df\"",
+      "file_path": "documentation/Intents/inrestaurantreservation/initwithitemreference_reservationnumber_bookingtime_reservationstatus_reservationholdername_actions_url_reservationduration_partysize_restaurantlocation_.md",
+      "hash": "ecd1328375a079029f6124279510d43864b5f2dee97d96c594a00a597ccc6120"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/intents/inrestaurantreservation/partysize-9mtpk.json": {
+      "etag": "\"21b7-65d560a023786-df\"",
+      "file_path": "documentation/Intents/inrestaurantreservation/partysize-9mtpk.md",
+      "hash": "07972e9082513b1dd6711a95634b1f2a336601da5294eb59485687601c78734a"
     },
     "https://developer.apple.com/tutorials/data/documentation/intents/inrestaurantreservation/partysize-9ux0p.json": {
       "etag": "\"1edd-65d560a023786-df\"",
@@ -28355,6 +29305,11 @@
       "file_path": "documentation/Intents/inrideoption/usesmeteredfare-1sig1.md",
       "hash": "dd50746ec9c833316ebf570c5efd0b87b941cc1e3224574decaaae62929490f1"
     },
+    "https://developer.apple.com/tutorials/data/documentation/intents/inrideoption/usesmeteredfare-25g1c.json": {
+      "etag": "\"2f9c-65d560a7f0925-df\"",
+      "file_path": "documentation/Intents/inrideoption/usesmeteredfare-25g1c.md",
+      "hash": "e00b8bae03bcf371d4c990cedae6d5c8c80bc980486436fe5d39e4c126a006b3"
+    },
     "https://developer.apple.com/tutorials/data/documentation/intents/inrideoption/usesmeteredfare-2xw1.json": {
       "etag": "\"148b-65d560a7f0925-df\"",
       "file_path": "documentation/Intents/inrideoption/usesmeteredfare-2xw1.md",
@@ -28570,6 +29525,16 @@
       "file_path": "documentation/Intents/insaveprofileincarintent/init(profilenumber,profilelabel).md",
       "hash": "14b004af7d54d09637385ab6679ce03a54492e59e56ffaf023fa5515af7671a2"
     },
+    "https://developer.apple.com/tutorials/data/documentation/intents/insaveprofileincarintent/initwithprofilenumber:profilelabel:.json": {
+      "etag": "\"25ca-65d5609ea4df2-df\"",
+      "file_path": "documentation/Intents/insaveprofileincarintent/initwithprofilenumber_profilelabel_.md",
+      "hash": "37236a119bbfba16e16ded34a9dd11ff11207dec6dc16e35716bca0283da8b0d"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/intents/insaveprofileincarintent/initwithprofilenumber:profilename:.json": {
+      "etag": "\"2586-65d5609ea4df2-df\"",
+      "file_path": "documentation/Intents/insaveprofileincarintent/initwithprofilenumber_profilename_.md",
+      "hash": "7485ea009030b3abea262e8679d696a2a73bb589e3542680439cd9ce07a67d9d"
+    },
     "https://developer.apple.com/tutorials/data/documentation/intents/insaveprofileincarintent/profilelabel.json": {
       "etag": "\"3571-65d5609ea4df2-df\"",
       "file_path": "documentation/Intents/insaveprofileincarintent/profilelabel.md",
@@ -28584,6 +29549,11 @@
       "etag": "\"238f-65d5609ea4df2-df\"",
       "file_path": "documentation/Intents/insaveprofileincarintent/profilenumber-2q84c.md",
       "hash": "242b71ccdaf789087ce86f1e8528da5dcc897bf881d699ef23116ce73edf96e4"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/intents/insaveprofileincarintent/profilenumber-7z4u2.json": {
+      "etag": "\"25a2-65d5609ea4df2-df\"",
+      "file_path": "documentation/Intents/insaveprofileincarintent/profilenumber-7z4u2.md",
+      "hash": "2652d67d617fbc254718651beeb0cf3416fc5149db8b40161fd6fa1270e87cc3"
     },
     "https://developer.apple.com/tutorials/data/documentation/intents/insaveprofileincarintenthandling.json": {
       "etag": "\"5b93-65d560a25de45-df\"",
@@ -28710,6 +29680,11 @@
       "file_path": "documentation/Intents/insearchcallhistoryintent/init(datecreated,recipient,callcapabilities,calltypes,unseen).md",
       "hash": "6b7053e37aa93f05743b87a4599e77a7b2d637fd6cd7f3ef0e3aa7968ec85c46"
     },
+    "https://developer.apple.com/tutorials/data/documentation/intents/insearchcallhistoryintent/initwithdatecreated:recipient:callcapabilities:calltypes:unseen:.json": {
+      "etag": "\"3957-65d5609f04bbf-df\"",
+      "file_path": "documentation/Intents/insearchcallhistoryintent/initwithdatecreated_recipient_callcapabilities_calltypes_unseen_.md",
+      "hash": "180379a771e8ce2498b463edba542a69444bdfea3a7ea42cb9923c2466a3d878"
+    },
     "https://developer.apple.com/tutorials/data/documentation/intents/insearchcallhistoryintent/insearchcallhistoryintent-implementations.json": {
       "etag": "\"2394-659029a0804ff-df\"",
       "file_path": "documentation/Intents/insearchcallhistoryintent/insearchcallhistoryintent-implementations.md",
@@ -28719,6 +29694,11 @@
       "etag": "\"2a72-65d5609f04bbf-df\"",
       "file_path": "documentation/Intents/insearchcallhistoryintent/recipient.md",
       "hash": "e5207182d82e03e0847dfde11316e7269f17cc4989776ae390defa377ff0124e"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/intents/insearchcallhistoryintent/unseen-1mohp.json": {
+      "etag": "\"2deb-65d5609f04bbf-df\"",
+      "file_path": "documentation/Intents/insearchcallhistoryintent/unseen-1mohp.md",
+      "hash": "461d1f21d3a592bb2a0d20c1e8c9453e5b1b4e95a3d0d2404034f8aafde00fbe"
     },
     "https://developer.apple.com/tutorials/data/documentation/intents/insearchcallhistoryintent/unseen-9ua7o.json": {
       "etag": "\"2d11-65d5609f04bbf-df\"",
@@ -29890,6 +30870,11 @@
       "file_path": "documentation/Intents/insearchforphotosintentresponse/init(code,useractivity).md",
       "hash": "213c51a16e8dfd96f813c7841fb6c81197a9adef7898334730ee9779b12593bf"
     },
+    "https://developer.apple.com/tutorials/data/documentation/intents/insearchforphotosintentresponse/searchresultscount-3i5mz.json": {
+      "etag": "\"1d74-65d560a0d4888-df\"",
+      "file_path": "documentation/Intents/insearchforphotosintentresponse/searchresultscount-3i5mz.md",
+      "hash": "8f71a76045480fd6b3237963ec1c8b469aaa9b8726e5e477adcb7c6ed87fede1"
+    },
     "https://developer.apple.com/tutorials/data/documentation/intents/insearchforphotosintentresponse/searchresultscount-82lnb.json": {
       "etag": "\"1bf0-65d560a0d4888-df\"",
       "file_path": "documentation/Intents/insearchforphotosintentresponse/searchresultscount-82lnb.md",
@@ -30730,6 +31715,16 @@
       "file_path": "documentation/Intents/insetcarlockstatusintent/init(locked,carname).md",
       "hash": "0fc7ec1b11b4d4e133f0521a7db2dca27e1807b9cd84384925b5bb93f101dd38"
     },
+    "https://developer.apple.com/tutorials/data/documentation/intents/insetcarlockstatusintent/initwithlocked:carname:.json": {
+      "etag": "\"2970-65d560a23c423-df\"",
+      "file_path": "documentation/Intents/insetcarlockstatusintent/initwithlocked_carname_.md",
+      "hash": "b0af99f511bd8c421bd752b219f50f7fad4e379f502a6c4babe76a4be8fff576"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/intents/insetcarlockstatusintent/locked-61uw4.json": {
+      "etag": "\"1d31-65d560a23c423-df\"",
+      "file_path": "documentation/Intents/insetcarlockstatusintent/locked-61uw4.md",
+      "hash": "0f63bae0058187f728e295732580d55f21d24e3b00fa1517086fad512bde3fdf"
+    },
     "https://developer.apple.com/tutorials/data/documentation/intents/insetcarlockstatusintent/locked-9h0kx.json": {
       "etag": "\"1b1a-65d560a23c423-df\"",
       "file_path": "documentation/Intents/insetcarlockstatusintent/locked-9h0kx.md",
@@ -30835,6 +31830,11 @@
       "file_path": "documentation/Intents/insetclimatesettingsincarintent/climatezone.md",
       "hash": "bca07c9cc8ac239a67b01ff793953494400062392631f5eec5d9eddce348400f"
     },
+    "https://developer.apple.com/tutorials/data/documentation/intents/insetclimatesettingsincarintent/enableairconditioner-3prnk.json": {
+      "etag": "\"1cee-65d560a626e4f-df\"",
+      "file_path": "documentation/Intents/insetclimatesettingsincarintent/enableairconditioner-3prnk.md",
+      "hash": "bed2b0129079a1f1a7c223688e51acdc6fcdb787a02a27e0ca1c3b2c83b5c955"
+    },
     "https://developer.apple.com/tutorials/data/documentation/intents/insetclimatesettingsincarintent/enableairconditioner-9q3dr.json": {
       "etag": "\"1b78-65d560a626e4f-df\"",
       "file_path": "documentation/Intents/insetclimatesettingsincarintent/enableairconditioner-9q3dr.md",
@@ -30845,15 +31845,35 @@
       "file_path": "documentation/Intents/insetclimatesettingsincarintent/enableautomode-31bzq.md",
       "hash": "176ec48216c2332606e95d9e78c8ed90febb94ab30b0241fe7cebbebe47c47f6"
     },
+    "https://developer.apple.com/tutorials/data/documentation/intents/insetclimatesettingsincarintent/enableautomode-6ye2n.json": {
+      "etag": "\"34de-65d560a626e4f-df\"",
+      "file_path": "documentation/Intents/insetclimatesettingsincarintent/enableautomode-6ye2n.md",
+      "hash": "409e58a3cc13a10a74ed6973bfd8146bf68ebed2b0e919d2b6c5b8d4cf41e8da"
+    },
     "https://developer.apple.com/tutorials/data/documentation/intents/insetclimatesettingsincarintent/enableclimatecontrol-4y9iz.json": {
       "etag": "\"3434-65d560a626e4f-df\"",
       "file_path": "documentation/Intents/insetclimatesettingsincarintent/enableclimatecontrol-4y9iz.md",
       "hash": "9a259a541ba4e305f7b09aa8573cc65e23d85db2d01796ccec5755f730dec5b9"
     },
+    "https://developer.apple.com/tutorials/data/documentation/intents/insetclimatesettingsincarintent/enableclimatecontrol-tviy.json": {
+      "etag": "\"34f5-65d560a626e4f-df\"",
+      "file_path": "documentation/Intents/insetclimatesettingsincarintent/enableclimatecontrol-tviy.md",
+      "hash": "cd3b071b0f73ef67c313f82dd52c97c7bd22dabe1294ceb92701eccee620f17e"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/intents/insetclimatesettingsincarintent/enablefan-3bu9e.json": {
+      "etag": "\"2aba-65d560a626e4f-df\"",
+      "file_path": "documentation/Intents/insetclimatesettingsincarintent/enablefan-3bu9e.md",
+      "hash": "9537c705b934340c5c63a07f1f7e8e85d8817318ef398723b90fb6963d0d2fec"
+    },
     "https://developer.apple.com/tutorials/data/documentation/intents/insetclimatesettingsincarintent/enablefan-5srs9.json": {
       "etag": "\"2f3b-65d560a626e4f-df\"",
       "file_path": "documentation/Intents/insetclimatesettingsincarintent/enablefan-5srs9.md",
       "hash": "73f0ed7600e989698b9485f4cc1950167d00ca263dcc84e5fd173e34db98201b"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/intents/insetclimatesettingsincarintent/fanspeedindex-4c1rr.json": {
+      "etag": "\"2917-65d560a626e4f-df\"",
+      "file_path": "documentation/Intents/insetclimatesettingsincarintent/fanspeedindex-4c1rr.md",
+      "hash": "b18a59119a236c65a378f0606b947d47f91d4170bbee56734bc3788607f366e4"
     },
     "https://developer.apple.com/tutorials/data/documentation/intents/insetclimatesettingsincarintent/fanspeedindex-wz49.json": {
       "etag": "\"286f-65d560a626e4f-df\"",
@@ -30865,10 +31885,25 @@
       "file_path": "documentation/Intents/insetclimatesettingsincarintent/fanspeedpercentage-7i2hq.md",
       "hash": "ee8619cee1f19f798ccda1fa39a9dbefc5011b16a2fd219ae3ae1b394eeb7665"
     },
+    "https://developer.apple.com/tutorials/data/documentation/intents/insetclimatesettingsincarintent/fanspeedpercentage-ep0u.json": {
+      "etag": "\"28f5-65d560a626e4f-df\"",
+      "file_path": "documentation/Intents/insetclimatesettingsincarintent/fanspeedpercentage-ep0u.md",
+      "hash": "64d5c9d6588c9ae74901c241a7ae7ab5b0abe204c2586706b9069867f47c16ca"
+    },
     "https://developer.apple.com/tutorials/data/documentation/intents/insetclimatesettingsincarintent/init(enablefan:enableairconditioner:enableclimatecontrol:enableautomode:aircirculationmode:fanspeedindex:fanspeedpercentage:relativefanspeedsetting:temperature:relativetemperaturesetting:climatezone:carname:).json": {
       "etag": "\"7708-65d560a626e4f-df\"",
       "file_path": "documentation/Intents/insetclimatesettingsincarintent/init(enablefan,enableairconditioner,enableclimatecontrol,enableautomode,aircirculationmode,fanspeedindex,fanspeedpercentage,relativefanspeedsetting,temperature,relativetemperaturesetting,climatezone,carname).md",
       "hash": "bb24696cb9febf2d6a4dc78757b093e24ab36f87ad87760c66f899110e089c0a"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/intents/insetclimatesettingsincarintent/initwithenablefan:enableairconditioner:enableclimatecontrol:enableautomode:aircirculationmode:fanspeedindex:fanspeedpercentage:relativefanspeedsetting:temperature:relativetemperaturesetting:climatezone:.json": {
+      "etag": "\"5f8e-65d560a626e4f-df\"",
+      "file_path": "documentation/Intents/insetclimatesettingsincarintent/initwithenablefan_enableairconditioner_enableclimatecontrol_enableautomode_aircirculationmode_fanspeedindex_fanspeedpercentage_relativefanspeedsetting_temperature_relativetemperaturesetting_climatezone_.md",
+      "hash": "234eb77d2b8753b0200068cdf62cd0478494f691f4f96d9a1e7719dd3df5747a"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/intents/insetclimatesettingsincarintent/initwithenablefan:enableairconditioner:enableclimatecontrol:enableautomode:aircirculationmode:fanspeedindex:fanspeedpercentage:relativefanspeedsetting:temperature:relativetemperaturesetting:climatezone:carname:.json": {
+      "etag": "\"655b-65d560a626e4f-df\"",
+      "file_path": "documentation/Intents/insetclimatesettingsincarintent/initwithenablefan_enableairconditioner_enableclimatecontrol_enableautomode_aircirculationmode_fanspeedindex_fanspeedpercentage_relativefanspeedsetting_temperature_relativetemperaturesetting_climatezone_carname_.md",
+      "hash": "cf6ab9ccf80c1ee1878a5547ccb22c2a35487d85504ce71383107d1f8cdc0da9"
     },
     "https://developer.apple.com/tutorials/data/documentation/intents/insetclimatesettingsincarintent/relativefanspeedsetting.json": {
       "etag": "\"4279-65d560a626e4f-df\"",
@@ -31035,6 +32070,11 @@
       "file_path": "documentation/Intents/insetdefrostersettingsincarintent/defroster.md",
       "hash": "ea693a5cec6b56a3200083a6a44239df7d76a575d3f4f72a4053c31bd060d8b6"
     },
+    "https://developer.apple.com/tutorials/data/documentation/intents/insetdefrostersettingsincarintent/enable-8tf0i.json": {
+      "etag": "\"207e-65d560a4ab621-df\"",
+      "file_path": "documentation/Intents/insetdefrostersettingsincarintent/enable-8tf0i.md",
+      "hash": "3c0990bd3a1c9b7ef6e9981910f7941d17d5130ddad504ad9b6181f1d4ba9aa5"
+    },
     "https://developer.apple.com/tutorials/data/documentation/intents/insetdefrostersettingsincarintent/enable-9xte9.json": {
       "etag": "\"1ef9-65d560a4ab621-df\"",
       "file_path": "documentation/Intents/insetdefrostersettingsincarintent/enable-9xte9.md",
@@ -31044,6 +32084,16 @@
       "etag": "\"32e8-65d560a4ab621-df\"",
       "file_path": "documentation/Intents/insetdefrostersettingsincarintent/init(enable,defroster,carname).md",
       "hash": "ea1ad1385e55e4c7404453121d619166f3bf3aa3f4942e07d56d328570e6426f"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/intents/insetdefrostersettingsincarintent/initwithenable:defroster:.json": {
+      "etag": "\"2c69-65d560a4ab621-df\"",
+      "file_path": "documentation/Intents/insetdefrostersettingsincarintent/initwithenable_defroster_.md",
+      "hash": "f2083ab86c7eb504015747c0f8302b1f9cbb0d316df4e55839ccaedbf9b7dd7a"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/intents/insetdefrostersettingsincarintent/initwithenable:defroster:carname:.json": {
+      "etag": "\"3224-65d560a4ab621-df\"",
+      "file_path": "documentation/Intents/insetdefrostersettingsincarintent/initwithenable_defroster_carname_.md",
+      "hash": "2aabfb258c9bf5e8bf1f90ed17924eaada69769892af99e3c5f255bb7de0d5f3"
     },
     "https://developer.apple.com/tutorials/data/documentation/intents/insetdefrostersettingsincarintenthandling.json": {
       "etag": "\"6711-65d5609f672f2-df\"",
@@ -31260,6 +32310,11 @@
       "file_path": "documentation/Intents/insetprofileincarintent/defaultprofile-19jwc.md",
       "hash": "3fe5a5ce5f8391b4879ea0b665563b846f5677690237fc0dd55f98cb4e6693eb"
     },
+    "https://developer.apple.com/tutorials/data/documentation/intents/insetprofileincarintent/defaultprofile-4ztep.json": {
+      "etag": "\"2b32-65d560a6bfd47-df\"",
+      "file_path": "documentation/Intents/insetprofileincarintent/defaultprofile-4ztep.md",
+      "hash": "52c357aebc033051017250d3ccb3cdd4c3896a6c86c251ae151d7fb21d009727"
+    },
     "https://developer.apple.com/tutorials/data/documentation/intents/insetprofileincarintent/init(defaultprofile:).json": {
       "etag": "\"4954-65d560a6bfd47-df\"",
       "file_path": "documentation/Intents/insetprofileincarintent/init(defaultprofile).md",
@@ -31315,6 +32370,21 @@
       "file_path": "documentation/Intents/insetprofileincarintent/init(profilenumber,profilename,isdefaultprofile,carname).md",
       "hash": "27b61a8dc3534cd53b5b226a19887ad0131c1c3bc961cc17863d1bb93389448a"
     },
+    "https://developer.apple.com/tutorials/data/documentation/intents/insetprofileincarintent/initwithprofilenumber:profilelabel:defaultprofile:.json": {
+      "etag": "\"2d12-65d560a6bfd47-df\"",
+      "file_path": "documentation/Intents/insetprofileincarintent/initwithprofilenumber_profilelabel_defaultprofile_.md",
+      "hash": "ffad58c89797f92f670419f14de0a1d61aa913d3cd28cdb0fcccc00b4c777144"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/intents/insetprofileincarintent/initwithprofilenumber:profilename:defaultprofile:.json": {
+      "etag": "\"2d47-65d560a6bfd47-df\"",
+      "file_path": "documentation/Intents/insetprofileincarintent/initwithprofilenumber_profilename_defaultprofile_.md",
+      "hash": "6655fd266fdadc1810e953e505d15f92114af8c994c9003422c89d9e43be020d"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/intents/insetprofileincarintent/initwithprofilenumber:profilename:defaultprofile:carname:.json": {
+      "etag": "\"3317-65d560a6bfd47-df\"",
+      "file_path": "documentation/Intents/insetprofileincarintent/initwithprofilenumber_profilename_defaultprofile_carname_.md",
+      "hash": "4b71ad36bd3b33d78dd4b85c53cfb3705d7523f23e20f7cbdd8210e62ea0a5dd"
+    },
     "https://developer.apple.com/tutorials/data/documentation/intents/insetprofileincarintent/isdefaultprofile.json": {
       "etag": "\"29e4-65d560a6bfd47-df\"",
       "file_path": "documentation/Intents/insetprofileincarintent/isdefaultprofile.md",
@@ -31334,6 +32404,11 @@
       "etag": "\"2692-65d560a6bfd47-df\"",
       "file_path": "documentation/Intents/insetprofileincarintent/profilenumber-37vj8.md",
       "hash": "91262e1cfecc303088701f6d4ab1c01714ce8896a121c144a9b68de4c69bd171"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/intents/insetprofileincarintent/profilenumber-50f30.json": {
+      "etag": "\"2566-65d560a6bfd47-df\"",
+      "file_path": "documentation/Intents/insetprofileincarintent/profilenumber-50f30.md",
+      "hash": "de06bc1b2e33c4ba4a6814ab951b66a133f031e829120b8e5b41a988097f3560"
     },
     "https://developer.apple.com/tutorials/data/documentation/intents/insetprofileincarintenthandling.json": {
       "etag": "\"6bfe-65d560a4ab621-df\"",
@@ -31445,10 +32520,25 @@
       "file_path": "documentation/Intents/insetradiostationintent/frequency-2ctw6.md",
       "hash": "4a2891490b66d82a6e7e45f37cce5ba9851927d5e73caff3f1eda2938f623928"
     },
+    "https://developer.apple.com/tutorials/data/documentation/intents/insetradiostationintent/frequency-63rbb.json": {
+      "etag": "\"2c01-65d560a72c0e2-df\"",
+      "file_path": "documentation/Intents/insetradiostationintent/frequency-63rbb.md",
+      "hash": "389577718b654e01317b3af16659a40212ce3b4d6e670b087262d86ce877ba99"
+    },
     "https://developer.apple.com/tutorials/data/documentation/intents/insetradiostationintent/init(radiotype:frequency:stationname:channel:presetnumber:).json": {
       "etag": "\"33d3-65d560a72c0e2-df\"",
       "file_path": "documentation/Intents/insetradiostationintent/init(radiotype,frequency,stationname,channel,presetnumber).md",
       "hash": "cfbe3a884f7bd8cd5424aefe4ba0095694b7e298e18eaf64ac5f494f17212296"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/intents/insetradiostationintent/initwithradiotype:frequency:stationname:channel:presetnumber:.json": {
+      "etag": "\"2dc1-65d560a72c0e2-df\"",
+      "file_path": "documentation/Intents/insetradiostationintent/initwithradiotype_frequency_stationname_channel_presetnumber_.md",
+      "hash": "73e43bc36c366f904e4a42f3b0af83a35207a18e0df8fd8d0ae362a334435bb2"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/intents/insetradiostationintent/presetnumber-20pv7.json": {
+      "etag": "\"2daa-65d560a72c0e2-df\"",
+      "file_path": "documentation/Intents/insetradiostationintent/presetnumber-20pv7.md",
+      "hash": "dd58ea2faa2ec4cc1574fe62c31d90e197e01c5a3833f5876f55fe191409b133"
     },
     "https://developer.apple.com/tutorials/data/documentation/intents/insetradiostationintent/presetnumber-2dub4.json": {
       "etag": "\"2c4d-65d560a72c0e2-df\"",
@@ -31580,10 +32670,20 @@
       "file_path": "documentation/Intents/insetseatsettingsincarintent/carname.md",
       "hash": "c9a1617186266852eb8d23107bfc79dd0d5334ddaaa9247071aef0ef68e85ae9"
     },
+    "https://developer.apple.com/tutorials/data/documentation/intents/insetseatsettingsincarintent/enablecooling-6bcu7.json": {
+      "etag": "\"2960-65d560a8d534d-df\"",
+      "file_path": "documentation/Intents/insetseatsettingsincarintent/enablecooling-6bcu7.md",
+      "hash": "4f87efef338984f6571e66bf5230de2af1108468a89826257cd635c2cafd954c"
+    },
     "https://developer.apple.com/tutorials/data/documentation/intents/insetseatsettingsincarintent/enablecooling-8qqx3.json": {
       "etag": "\"2a05-65d560a8d534d-df\"",
       "file_path": "documentation/Intents/insetseatsettingsincarintent/enablecooling-8qqx3.md",
       "hash": "90a8d6ccd506fd146f9061e781c65f073233f994499afdfe470299a4e5550dbe"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/intents/insetseatsettingsincarintent/enableheating-5qj7i.json": {
+      "etag": "\"2960-65d560a8d534d-df\"",
+      "file_path": "documentation/Intents/insetseatsettingsincarintent/enableheating-5qj7i.md",
+      "hash": "5bbe2a08e368f0fe7b0214a4b5bdefdd0f67c9e36f1f7410b74104ed87fed9c8"
     },
     "https://developer.apple.com/tutorials/data/documentation/intents/insetseatsettingsincarintent/enableheating-8auz2.json": {
       "etag": "\"2a05-65d560a8d534d-df\"",
@@ -31595,10 +32695,30 @@
       "file_path": "documentation/Intents/insetseatsettingsincarintent/enablemassage-46ndx.md",
       "hash": "764f1f726cfbea313bea913847f00f701b0b04c632a79a58e16ceec8e2ce3c5e"
     },
+    "https://developer.apple.com/tutorials/data/documentation/intents/insetseatsettingsincarintent/enablemassage-5jf2s.json": {
+      "etag": "\"2960-65d560a8d534d-df\"",
+      "file_path": "documentation/Intents/insetseatsettingsincarintent/enablemassage-5jf2s.md",
+      "hash": "00834cb996b8499c854b334710b170adf19e3d447ed41db13014da68fa8f5699"
+    },
     "https://developer.apple.com/tutorials/data/documentation/intents/insetseatsettingsincarintent/init(enableheating:enablecooling:enablemassage:seat:level:relativelevel:carname:).json": {
       "etag": "\"438e-65d560a8d534d-df\"",
       "file_path": "documentation/Intents/insetseatsettingsincarintent/init(enableheating,enablecooling,enablemassage,seat,level,relativelevel,carname).md",
       "hash": "2fc50b803ff4008a60d653c1782442483042559c4cc3d4935285046d3d453211"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/intents/insetseatsettingsincarintent/initwithenableheating:enablecooling:enablemassage:seat:level:relativelevelsetting:.json": {
+      "etag": "\"3942-65d560a8d534d-df\"",
+      "file_path": "documentation/Intents/insetseatsettingsincarintent/initwithenableheating_enablecooling_enablemassage_seat_level_relativelevelsetting_.md",
+      "hash": "2c711fc35b5712337f0344f3977135e7e2e61dfd20e442e4eb30588e202e9970"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/intents/insetseatsettingsincarintent/initwithenableheating:enablecooling:enablemassage:seat:level:relativelevelsetting:carname:.json": {
+      "etag": "\"3f0e-65d560a8d534d-df\"",
+      "file_path": "documentation/Intents/insetseatsettingsincarintent/initwithenableheating_enablecooling_enablemassage_seat_level_relativelevelsetting_carname_.md",
+      "hash": "fc98c053651b65f7ae6a9d2149f26e4275ec81277cb72b428f57c56d24663ffa"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/intents/insetseatsettingsincarintent/level-5i2i.json": {
+      "etag": "\"2b3c-65d560a8d534d-df\"",
+      "file_path": "documentation/Intents/insetseatsettingsincarintent/level-5i2i.md",
+      "hash": "e4ba3578ed9e93366903533edde4cef3ada2f74df8043a11e744a53e4c99f07b"
     },
     "https://developer.apple.com/tutorials/data/documentation/intents/insetseatsettingsincarintent/level-94975.json": {
       "etag": "\"2b44-65d560a8d534d-df\"",
@@ -32145,6 +33265,11 @@
       "file_path": "documentation/Intents/insnoozetasksintent.md",
       "hash": "5f69ae6dada6d0b075d37985a394dbb264a741dbafb20b722955fd136d30bf5e"
     },
+    "https://developer.apple.com/tutorials/data/documentation/intents/insnoozetasksintent/all-62ujw.json": {
+      "etag": "\"20dc-65d560a6deb10-df\"",
+      "file_path": "documentation/Intents/insnoozetasksintent/all-62ujw.md",
+      "hash": "ee957d2c9cfba677fb4369e2899ee27f8328a0c0a208769f0b32efaba22efbde"
+    },
     "https://developer.apple.com/tutorials/data/documentation/intents/insnoozetasksintent/all-spsb.json": {
       "etag": "\"1e46-65d560a6deb10-df\"",
       "file_path": "documentation/Intents/insnoozetasksintent/all-spsb.md",
@@ -32154,6 +33279,11 @@
       "etag": "\"281c-65d560a6deb10-df\"",
       "file_path": "documentation/Intents/insnoozetasksintent/init(tasks,nexttriggertime,all).md",
       "hash": "2bdffb8880ac7e51454e59c4e9b5a91a5f500c0f382b9b9690630e216b959e98"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/intents/insnoozetasksintent/initwithtasks:nexttriggertime:all:.json": {
+      "etag": "\"2151-65d560a6deb10-df\"",
+      "file_path": "documentation/Intents/insnoozetasksintent/initwithtasks_nexttriggertime_all_.md",
+      "hash": "fd375d85ea3249944fd638e0c64b6ef099f00a7b4b8f994a770ea5146afaab33"
     },
     "https://developer.apple.com/tutorials/data/documentation/intents/insnoozetasksintent/nexttriggertime.json": {
       "etag": "\"32ce-65d560a6deb10-df\"",
@@ -32895,6 +34025,11 @@
       "file_path": "documentation/Intents/instartcallintentresponsecode/init(rawvalue).md",
       "hash": "e40aa4bbdfa8b8fff01dcc6a3257145d4186ef8531fa675cf5850020521f7bde"
     },
+    "https://developer.apple.com/tutorials/data/documentation/intents/instartcallintentresponsecode/instartcallintentresponsecodefailurecallringing.json": {
+      "etag": "\"1059-659029a3cca48-df\"",
+      "file_path": "documentation/Intents/instartcallintentresponsecode/instartcallintentresponsecodefailurecallringing.md",
+      "hash": "2006992cd64c1f2bdefcc16c9519287b0789e6cac96cd5219b766c99482e01e1"
+    },
     "https://developer.apple.com/tutorials/data/documentation/intents/instartcallintentresponsecode/ready.json": {
       "etag": "\"58ee-65d560a2162de-df\"",
       "file_path": "documentation/Intents/instartcallintentresponsecode/ready.md",
@@ -33024,6 +34159,11 @@
       "etag": "\"1c2c-65d560a64859c-df\"",
       "file_path": "documentation/Intents/instartphotoplaybackintentresponse/searchresultscount-5r7e7.md",
       "hash": "42f2a27aabe791ae65a8c22df7c09376489c3e22fc398e660f382c7e3e6f731c"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/intents/instartphotoplaybackintentresponse/searchresultscount-6ns8y.json": {
+      "etag": "\"1db0-65d560a64859c-df\"",
+      "file_path": "documentation/Intents/instartphotoplaybackintentresponse/searchresultscount-6ns8y.md",
+      "hash": "b4b1544468b7ec4a7d995afa250caee96a1783d15c5dca7ac2bce23d2de80a51"
     },
     "https://developer.apple.com/tutorials/data/documentation/intents/instartphotoplaybackintentresponsecode.json": {
       "etag": "\"5be7-65d560a865db5-df\"",
@@ -33180,6 +34320,11 @@
       "file_path": "documentation/Intents/instartworkoutintent.md",
       "hash": "a4d33d99b065669bb05959fc6e8a0fe65ed7ba4596da720164b7303092235019"
     },
+    "https://developer.apple.com/tutorials/data/documentation/intents/instartworkoutintent/goalvalue-1dzvb.json": {
+      "etag": "\"2989-65d560a881b48-df\"",
+      "file_path": "documentation/Intents/instartworkoutintent/goalvalue-1dzvb.md",
+      "hash": "7818597f491010c385ba8f33f6ff692c079a4b3b470b73a54742fdc6916a982b"
+    },
     "https://developer.apple.com/tutorials/data/documentation/intents/instartworkoutintent/goalvalue-5oazy.json": {
       "etag": "\"287d-65d560a881b48-df\"",
       "file_path": "documentation/Intents/instartworkoutintent/goalvalue-5oazy.md",
@@ -33190,10 +34335,20 @@
       "file_path": "documentation/Intents/instartworkoutintent/init(workoutname,goalvalue,workoutgoalunittype,workoutlocationtype,isopenended).md",
       "hash": "b2dd485ecc0604efec0ab70d2436fb98fa2257d0e1dd7b520f262ec5f5d192b3"
     },
+    "https://developer.apple.com/tutorials/data/documentation/intents/instartworkoutintent/initwithworkoutname:goalvalue:workoutgoalunittype:workoutlocationtype:isopenended:.json": {
+      "etag": "\"34a6-65d560a881b48-df\"",
+      "file_path": "documentation/Intents/instartworkoutintent/initwithworkoutname_goalvalue_workoutgoalunittype_workoutlocationtype_isopenended_.md",
+      "hash": "3be5d66177f6e7f8f9f51975c35df77b57f05d19126bcde9bffdd33e663e0a27"
+    },
     "https://developer.apple.com/tutorials/data/documentation/intents/instartworkoutintent/isopenended-8hecn.json": {
       "etag": "\"2aaf-65d560a881b48-df\"",
       "file_path": "documentation/Intents/instartworkoutintent/isopenended-8hecn.md",
       "hash": "27e565d415833f00e9ec0fefdbeb23e37b5c4831ec0ed099edf033c4b1342cf0"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/intents/instartworkoutintent/isopenended-avvd.json": {
+      "etag": "\"2bfe-65d560a881b48-df\"",
+      "file_path": "documentation/Intents/instartworkoutintent/isopenended-avvd.md",
+      "hash": "ada2d763b3e173d98d249d46907496cc6a6e33f80d2f4a96ddc65a0722912c21"
     },
     "https://developer.apple.com/tutorials/data/documentation/intents/instartworkoutintent/workoutgoalunittype.json": {
       "etag": "\"3a4e-65d560a881b48-df\"",
@@ -33749,6 +34904,21 @@
       "etag": "\"38fc-65d560a005297-df\"",
       "file_path": "documentation/Intents/intemporaleventtriggertypeoptionsresolutionresult/success(with).md",
       "hash": "404effe6685d947bcc948f4cf1cf6d9e4c29a6c2e6f3a8d2f0e92c0ed000b606"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/intents/intents_extern.json": {
+      "etag": "\"900-659029a40a620-df\"",
+      "file_path": "documentation/Intents/intents_extern.md",
+      "hash": "6cd8aae483a8cc559a6f231da30bfcff1b5c1238c1e0d6fc034267223c5609e1"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/intents/intentsversionnumber.json": {
+      "etag": "\"be0-659029a98cd15-df\"",
+      "file_path": "documentation/Intents/intentsversionnumber.md",
+      "hash": "d3ed584b3f1284eed6ecdc14bd1e7368b899888045dfe165ddf1515b352f140f"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/intents/intentsversionstring.json": {
+      "etag": "\"c26-659029a0d85f5-df\"",
+      "file_path": "documentation/Intents/intentsversionstring.md",
+      "hash": "2a041eed2f6fba29afabc72b0c5ff211b4bfb105a5bb7c5934cfd1f50c9f9947"
     },
     "https://developer.apple.com/tutorials/data/documentation/intents/intermsandconditions.json": {
       "etag": "\"83b3-65d560a8297e2-df\"",
@@ -34845,10 +36015,20 @@
       "file_path": "documentation/Intents/inworkoutgoalunittyperesolutionresult/confirmationrequired(with).md",
       "hash": "afe9a381a45ecb72fd72713db4c218f0b383746f76603e40ac6c303ce073f6b9"
     },
+    "https://developer.apple.com/tutorials/data/documentation/intents/inworkoutgoalunittyperesolutionresult/confirmationrequiredwithvaluetoconfirm:.json": {
+      "etag": "\"2a3f-65d560a2f8fea-df\"",
+      "file_path": "documentation/Intents/inworkoutgoalunittyperesolutionresult/confirmationrequiredwithvaluetoconfirm_.md",
+      "hash": "a9100fac7005231c4080c31e4e9d69a87b0cf537f9783d714faef0e5a30fe649"
+    },
     "https://developer.apple.com/tutorials/data/documentation/intents/inworkoutgoalunittyperesolutionresult/success(with:).json": {
       "etag": "\"3a15-65d560a2f8fea-df\"",
       "file_path": "documentation/Intents/inworkoutgoalunittyperesolutionresult/success(with).md",
       "hash": "75c9f7d7ffae714ba75e29e3b5a229e1aa5d809c311c8e895c35f021d1df82d9"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/intents/inworkoutgoalunittyperesolutionresult/successwithresolvedvalue:.json": {
+      "etag": "\"29dd-65d560a2f8fea-df\"",
+      "file_path": "documentation/Intents/inworkoutgoalunittyperesolutionresult/successwithresolvedvalue_.md",
+      "hash": "abc6b0d13e8359e46f8ed0080987dccd2f954adf930344f859c5002d248cfe8d"
     },
     "https://developer.apple.com/tutorials/data/documentation/intents/inworkoutlocationtype.json": {
       "etag": "\"4296-65d560a51175c-df\"",
@@ -34885,10 +36065,20 @@
       "file_path": "documentation/Intents/inworkoutlocationtyperesolutionresult/confirmationrequired(with).md",
       "hash": "a2b88b1aac2201262d45a88f9cd45beacc0ee909438592f32a31ac026a0a79e0"
     },
+    "https://developer.apple.com/tutorials/data/documentation/intents/inworkoutlocationtyperesolutionresult/confirmationrequiredwithvaluetoconfirm:.json": {
+      "etag": "\"2a31-65d560a379065-df\"",
+      "file_path": "documentation/Intents/inworkoutlocationtyperesolutionresult/confirmationrequiredwithvaluetoconfirm_.md",
+      "hash": "b5815a2a83326d2fc7d5f780473a4b93be38cedfb40a318d5e95fa02c970b7e6"
+    },
     "https://developer.apple.com/tutorials/data/documentation/intents/inworkoutlocationtyperesolutionresult/success(with:).json": {
       "etag": "\"39f1-65d560a379065-df\"",
       "file_path": "documentation/Intents/inworkoutlocationtyperesolutionresult/success(with).md",
       "hash": "8557d1d859747f5e2ce1b26197de77f81833ef394d680711cc84c42f77144fcc"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/intents/inworkoutlocationtyperesolutionresult/successwithresolvedvalue:.json": {
+      "etag": "\"29cf-65d560a379065-df\"",
+      "file_path": "documentation/Intents/inworkoutlocationtyperesolutionresult/successwithresolvedvalue_.md",
+      "hash": "60101dbbae24d699c25b7c51e19827a537ef0377d1ed41f30d75254fcb0495d1"
     },
     "https://developer.apple.com/tutorials/data/documentation/intents/inworkoutnameidentifier.json": {
       "etag": "\"9fe2-659029a725208-df\"",
@@ -35021,8 +36211,8 @@
       }
     },
     "render": {
-      "version": 1
+      "version": 2
     },
-    "total_pages": 7002
+    "total_pages": 7240
   }
 }

@@ -47,6 +47,10 @@ enum ITLibInitOptions : NSUInteger;
   Initializes an instance of [`ITLibrary`](./itlibrary.md) that can retrieve media entities.
 - [init(apiVersion: String, options: ITLibInitOptions) throws](./itlibrary/init%28apiversion,options%29-9eorg.md)
   Initializes an instance of `ITLibrary` that can retrieve media entities.
+- [+ libraryWithAPIVersion:error:](./itlibrary/librarywithapiversion_error_.md)
+  Creates and initializes an instance of `ITLibrary` that can retrieve media entities.
+- [+ libraryWithAPIVersion:options:error:](./itlibrary/librarywithapiversion_options_error_.md)
+  Creates and initializes an instance of ITLibrary that can retrieve media entities.
 
 
 ---

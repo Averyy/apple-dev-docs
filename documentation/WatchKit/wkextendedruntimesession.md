@@ -39,6 +39,8 @@ For more information, see [Using extended runtime sessions](./using-extended-run
   A delegate object for monitoring the session and responding to state changes and errors.
 - [protocol WKExtendedRuntimeSessionDelegate](./wkextendedruntimesessiondelegate.md)
   A set of optional methods for monitoring an extended runtime session.
+- [+ session](./wkextendedruntimesession/session.md)
+  Instantiates a new session object.
 ### Managing the Session State
 - [func start()](./wkextendedruntimesession/start%28%29.md)
   Starts running the session.

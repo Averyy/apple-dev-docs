@@ -84,6 +84,14 @@ The AudioToolbox framework provides interfaces for recording, playback, and stre
 - [AudioToolbox Data Types](./audiotoolbox-data-types.md)
 ### Macros
 - [Macros](./audiotoolbox-macros.md)
+- [AudioToolbox_AUAudioUnit_h](./audiotoolbox_auaudiounit_h.md)
+- [AudioToolbox_AUHeadTrackingBinauralRenderer_h](./audiotoolbox_auheadtrackingbinauralrenderer_h.md)
+- [AudioToolbox_AUParameters_h](./audiotoolbox_auparameters_h.md)
+- [AudioToolbox_AudioUnitProperties_h](./audiotoolbox_audiounitproperties_h.md)
+- [AudioUnit_AUComponent_h](./audiounit_aucomponent_h.md)
+- [AudioUnit_AudioCodec_h](./audiounit_audiocodec_h.md)
+- [AudioUnit_AudioComponent_h](./audiounit_audiocomponent_h.md)
+- [CASpatialAudioExperience_h](./caspatialaudioexperience_h.md)
 ### Protocols
 - [protocol SpatialAudioExperience](./spatialaudioexperience.md)
   Configure an audio stream for spatial computing.
@@ -136,6 +144,7 @@ The AudioToolbox framework provides interfaces for recording, playback, and stre
 - [var kAudioUnitErr_MultipleVoiceProcessors: OSStatus](./kaudiouniterr_multiplevoiceprocessors.md)
 - [var kAudioUnitSubType_AUAudioMix: UInt32](./kaudiounitsubtype_auaudiomix.md)
 - [var kReverb2Param_LegacyMode: AudioUnitParameterID](./kreverb2param_legacymode.md)
+- [kAudioServicesDetailIntendedSpatialExperience](./kaudioservicesdetailintendedspatialexperience.md)
 ### Functions
 - [func AudioConverterFillComplexBufferRealtimeSafe(AudioConverterRef, AudioConverterComplexInputDataProcRealtimeSafe, UnsafeMutableRawPointer?, UnsafeMutablePointer<UInt32>, UnsafeMutablePointer<AudioBufferList>, UnsafeMutablePointer<AudioStreamPacketDescription>?) -> OSStatus](./audioconverterfillcomplexbufferrealtimesafe%28_,_,_,_,_,_%29.md)
 - [func AudioConverterFillComplexBufferWithPacketDependencies(AudioConverterRef, AudioConverterComplexInputDataProc, UnsafeMutableRawPointer?, UnsafeMutablePointer<UInt32>, UnsafeMutablePointer<AudioBufferList>, UnsafeMutablePointer<AudioStreamPacketDescription>?, UnsafeMutablePointer<AudioStreamPacketDependencyDescription>) -> OSStatus](./audioconverterfillcomplexbufferwithpacketdependencies%28_,_,_,_,_,_,_%29.md)
@@ -144,11 +153,37 @@ The AudioToolbox framework provides interfaces for recording, playback, and stre
   Play an alert sound with the provided spatial audio experience.
 - [func AudioServicesPlaySystemSound(SystemSoundID, spatialExperience: any SpatialAudioExperience) async](./audioservicesplaysystemsound%28_,spatialexperience%29.md)
   Play a system sound with the provided spatial audio experience.
+- [AudioServicesPlayAlertSoundWithDetails](./audioservicesplayalertsoundwithdetails.md)
+- [AudioServicesPlaySystemSoundWithDetails](./audioservicesplaysystemsoundwithdetails.md)
 ### Type Aliases
 - [typealias AudioConverterComplexInputDataProcRealtimeSafe](./audioconvertercomplexinputdataprocrealtimesafe.md)
 ### Enumerations
 - [enum AUAudioMixRenderingStyle](./auaudiomixrenderingstyle.md)
 - [enum SpatialAudioExperiences](./spatialaudioexperiences.md)
+- [CASoundStageSize](./casoundstagesize.md)
+  Configure the distribution of audio channels in 3D space.
+### Classes
+- [CAAnchoringStrategy](./caanchoringstrategy.md)
+  The center of a head-tracked spatial experience.
+- [CAAutomaticAnchoringStrategy](./caautomaticanchoringstrategy.md)
+  A system-defined anchoring strategy.
+- [CAAutomaticSpatialAudio](./caautomaticspatialaudio.md)
+  A spatial audio experience determined by the system.
+- [CABypassedSpatialAudio](./cabypassedspatialaudio.md)
+  An experience in which the system does not apply spatial processing to the audio stream.
+- [CAFixedSpatialAudio](./cafixedspatialaudio.md)
+  A spatial experience that does not take user motion into account.
+- [CAFrontAnchoringStrategy](./cafrontanchoringstrategy.md)
+  Anchor to the front of the user’s space.
+- [CAHeadTrackedSpatialAudio](./caheadtrackedspatialaudio.md)
+  A spatial experience that takes user motion into account.
+- [CASceneAnchoringStrategy](./casceneanchoringstrategy.md)
+  Anchor to the visual center of a particular UIScene.
+- [CASpatialAudioExperience](./caspatialaudioexperience.md)
+  Configure an audio stream for spatial computing.
+### Enumeration Cases
+- [kAudioOutputUnitProperty_IntendedSpatialExperience](./kaudiooutputunitproperty_intendedspatialexperience.md)
+- [kAudioQueueProperty_IntendedSpatialExperience](./kaudioqueueproperty_intendedspatialexperience.md)
 
 
 ---

@@ -64,6 +64,8 @@ enum UIButtonType : NSInteger;
   Creates and returns a new button of the specified type.
 - [convenience init(type: UIButton.ButtonType, primaryAction: UIAction?)](./init%28type,primaryaction%29.md)
   Creates a new button with the specified type, registers the primary action event, and sets the title and image to the action’s title and image.
+- [+ buttonWithType:primaryAction:](./buttonwithtype_primaryaction_.md)
+  Creates a new button with the specified type, registers the primary action event, and sets the title and image to the action’s title and image.
 
 
 ---

@@ -38,6 +38,9 @@ This method is a designated initializer of [`NSDictionary`](../nsdictionary.md).
 ### Related Documentation
 - [init(objects: UnsafePointer<AnyObject>?, forKeys: UnsafePointer<any NSCopying>?, count: Int)](./init%28objects,forkeys,count%29.md)
   Initializes a newly allocated dictionary with the specified number of key-value pairs constructed from the provided C arrays of keys and objects.
+### Creating an Empty Dictionary
+- [+ dictionary](./dictionary.md)
+  Creates an empty dictionary.
 
 
 ---

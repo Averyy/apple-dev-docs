@@ -45,6 +45,8 @@ class AXBrailleTable
   The localized name of the provider of this table for user display.
 - [var providerIdentifier: String](./axbrailletable/provideridentifier.md)
   The identifier of the provider of this table.
+- [language](./axbrailletable/language-3570f.md)
+  The 3-character code from ISO 639-2 for the language this Braille table pertains to.
 ### Type Methods
 - [class func defaultTable(for: Locale) -> AXBrailleTable?](./axbrailletable/defaulttable%28for%29.md)
   The default table that provides translations for the given locale’s language. Returns nil if there is none.

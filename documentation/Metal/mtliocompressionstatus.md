@@ -63,6 +63,8 @@ The [`MTLIOFlushAndDestroyCompressionContext(_:)`](./mtlioflushanddestroycompres
   Adds data to a compression context.
 - [func MTLIOFlushAndDestroyCompressionContext(MTLIOCompressionContext) -> MTLIOCompressionStatus](./mtlioflushanddestroycompressioncontext%28_%29.md)
   Finishes compressing and saves the file that a compression context represents.
+- [MTLIOCreateCompressionContext](./mtliocreatecompressioncontext.md)
+  Creates a compression context that you use to compress data into a single file.
 
 
 ---

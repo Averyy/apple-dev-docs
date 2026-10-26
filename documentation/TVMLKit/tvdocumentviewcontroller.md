@@ -46,6 +46,10 @@ Instances of this class serve as bridges into `TVMLKit JS`’s document life cyc
   The document’s app controller that bridges UI, navigation stack, storage, and event handling from JavaScript.
 - [var documentContext: [String : Any]](./tvdocumentviewcontroller/documentcontext.md)
   The current document context.
+### Instance Methods
+- [- init](./tvdocumentviewcontroller/init.md)
+- [- initWithCoder:](./tvdocumentviewcontroller/initwithcoder_.md)
+- [- initWithNibName:bundle:](./tvdocumentviewcontroller/initwithnibname_bundle_.md)
 
 ## Relationships
 

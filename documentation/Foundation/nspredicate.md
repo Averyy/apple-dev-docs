@@ -59,6 +59,8 @@ You can also create predicates that include variables using the [`evaluate(with:
   Creates a predicate that evaluates using a specified block object and bindings dictionary.
 - [init?(fromMetadataQueryString: String)](./nspredicate/init%28frommetadataquerystring%29.md)
   Creates a predicate with a metadata query string.
+- [+ predicateWithFormat:](./nspredicate/predicatewithformat_.md)
+  Creates and returns a new predicate formed by creating a new string with a specified format and parsing the result.
 ### Evaluating a Predicate
 - [func evaluate(with: Any?) -> Bool](./nspredicate/evaluate%28with%29.md)
   Returns a Boolean value that indicates whether the specified object matches the conditions that the predicate specifies.
@@ -73,6 +75,8 @@ You can also create predicates that include variables using the [`evaluate(with:
 - [init?(coder: NSCoder)](./nspredicate/init%28coder%29.md)
 ### Instance Methods
 - [func allowEvaluation(validator: any NSPredicateValidating) throws](./nspredicate/allowevaluation%28validator%29.md)
+### Instance Variables
+- [reserved](./nspredicate/reserved.md)
 
 ## Relationships
 

@@ -62,6 +62,20 @@ After a new L2CAP channel is opened, the L2CAP configuration process will not be
 - [func writeAsyncTrap(UnsafeMutableRawPointer!, length: UInt16, refcon: UnsafeMutableRawPointer!) -> IOReturn](./iobluetoothl2capchannel/writeasynctrap%28_,length,refcon%29.md)
 - [func writeSync(UnsafeMutableRawPointer!, length: UInt16) -> IOReturn](./iobluetoothl2capchannel/writesync%28_,length%29.md)
   Writes the given data synchronously over the target L2CAP channel to the remote device.
+- [- getDevice](./iobluetoothl2capchannel/getdevice.md)
+  Returns the IOBluetoothDevice to which the target L2CAP channel is open.
+- [- getIncomingMTU](./iobluetoothl2capchannel/getincomingmtu.md)
+  Returns the current incoming MTU for the L2CAP channel.
+- [- getLocalChannelID](./iobluetoothl2capchannel/getlocalchannelid.md)
+  Returns the local L2CAP channel ID for the target L2CAP channel.
+- [- getObjectID](./iobluetoothl2capchannel/getobjectid.md)
+  Returns the IOBluetoothObjectID of the given IOBluetoothL2CAPChannel.
+- [- getOutgoingMTU](./iobluetoothl2capchannel/getoutgoingmtu.md)
+  Returns the current outgoing MTU for the L2CAP channel.
+- [- getPSM](./iobluetoothl2capchannel/getpsm.md)
+  Returns the PSM for the target L2CAP channel.
+- [- getRemoteChannelID](./iobluetoothl2capchannel/getremotechannelid.md)
+  Returns the remote L2CAP channel ID for the target L2CAP channel.
 ### Type Methods
 - [class func register(forChannelOpenNotifications: Any!, selector: Selector!) -> IOBluetoothUserNotification!](./iobluetoothl2capchannel/register%28forchannelopennotifications,selector%29.md)
   Allows a client to register for L2CAP channel open notifications for any L2CAP channel.
@@ -69,6 +83,21 @@ After a new L2CAP channel is opened, the L2CAP configuration process will not be
   Allows a client to register for L2CAP channel open notifications for certain types of L2CAP channels.
 - [class func withObjectID(IOBluetoothObjectID) -> Self!](./iobluetoothl2capchannel/withobjectid%28_%29.md)
   Returns the IObluetoothL2CAPChannel with the given IOBluetoothObjectID.
+### Instance Variables
+- [mChannelPSM](./iobluetoothl2capchannel/mchannelpsm.md)
+- [mDataAvailablePort](./iobluetoothl2capchannel/mdataavailableport.md)
+- [mDevice](./iobluetoothl2capchannel/mdevice.md)
+- [mEventDataListener](./iobluetoothl2capchannel/meventdatalistener.md)
+- [mEventDataListenerRefCon](./iobluetoothl2capchannel/meventdatalistenerrefcon.md)
+- [mIncomingChannel](./iobluetoothl2capchannel/mincomingchannel.md)
+- [mIncomingDataListener](./iobluetoothl2capchannel/mincomingdatalistener.md)
+- [mIncomingDataListenerRefCon](./iobluetoothl2capchannel/mincomingdatalistenerrefcon.md)
+- [mIncomingDataQueue](./iobluetoothl2capchannel/mincomingdataqueue.md)
+- [mIsClosed](./iobluetoothl2capchannel/misclosed.md)
+- [mL2CAPChannelConnectionHandler](./iobluetoothl2capchannel/ml2capchannelconnectionhandler.md)
+- [mLocalChannelID](./iobluetoothl2capchannel/mlocalchannelid.md)
+- [mObjectID](./iobluetoothl2capchannel/mobjectid.md)
+- [mRemoteChannelID](./iobluetoothl2capchannel/mremotechannelid.md)
 
 ## Relationships
 

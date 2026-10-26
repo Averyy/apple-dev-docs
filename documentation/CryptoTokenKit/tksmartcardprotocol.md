@@ -32,6 +32,7 @@ enum TKSmartCardProtocol : NSUInteger;
 - [static var t1: TKSmartCardProtocol](./tksmartcardprotocol/t1.md)
 - [static var t15: TKSmartCardProtocol](./tksmartcardprotocol/t15.md)
 - [static var any: TKSmartCardProtocol](./tksmartcardprotocol/any.md)
+- [TKSmartCardProtocolNone](./tksmartcardprotocol/tksmartcardprotocolnone.md)
 ### Initializers
 - [init(rawValue: UInt)](./tksmartcardprotocol/init%28rawvalue%29.md)
 

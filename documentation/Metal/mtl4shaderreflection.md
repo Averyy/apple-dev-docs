@@ -33,6 +33,9 @@ enum MTL4ShaderReflection : NSUInteger;
   Requests reflection information for bindings.
 - [static var bufferTypeInfo: MTL4ShaderReflection](./mtl4shaderreflection/buffertypeinfo.md)
   Requests reflection information for buffer types.
+### Enumeration Cases
+- [MTL4ShaderReflectionNone](./mtl4shaderreflection/mtl4shaderreflectionnone.md)
+  Requests no information.
 
 ## Relationships
 

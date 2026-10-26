@@ -37,6 +37,10 @@ init(userHandle: Data, relyingParty: String, signature: Data, clientDataHash: Da
 ### Creating a passkey assertion credential
 - [convenience init(userHandle: Data, relyingParty: String, signature: Data, clientDataHash: Data, authenticatorData: Data, credentialID: Data, extensionOutput: ASPasskeyAssertionCredentialExtensionOutput?)](./init%28userhandle,relyingparty,signature,clientdatahash,authenticatordata,credentialid,extensionoutput%29.md)
   Initializes a passkey assertion credential object, optionally specifying an extension output.
+- [+ credentialWithUserHandle:relyingParty:signature:clientDataHash:authenticatorData:credentialID:](./credentialwithuserhandle_relyingparty_signature_clientdatahash_authenticatordata_credentialid_.md)
+  Creates and initializes a new passkey assertion credential.
+- [- initWithUserHandle:relyingParty:signature:clientDataHash:authenticatorData:credentialID:extensionOutput:](./initwithuserhandle_relyingparty_signature_clientdatahash_authenticatordata_credentialid_extensionoutput_.md)
+  Initializes a passkey assertion credential object, optionally specifying an extension output.
 
 
 ---

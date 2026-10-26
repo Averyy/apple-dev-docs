@@ -39,6 +39,10 @@ A compression session supports the compression of a sequence of video frames. He
   Returns a Boolean value that indicates whether the system supports MV-HEVC encoding.
 - [func VTCompressionSessionEncodeMultiImageFrame(VTCompressionSession, taggedBuffers: [CMTaggedBuffer], presentationTimeStamp: CMTime, duration: CMTime, frameProperties: CFDictionary?, infoFlagsOut: UnsafeMutablePointer<VTEncodeInfoFlags>?, outputHandler: VTCompressionOutputHandler) -> OSStatus](./vtcompressionsessionencodemultiimageframe%28_,taggedbuffers,presentationtimestamp,duration,frameproperties,infoflagsout,outputhandler%29.md)
   Passes a multi-image frame to a compression session for encoding and provides a callback to handle the output.
+- [VTCompressionSessionEncodeMultiImageFrame](./vtcompressionsessionencodemultiimageframe.md)
+  Passes a multi-image frame to a compression session for encoding.
+- [VTCompressionSessionEncodeMultiImageFrameWithOutputHandler](./vtcompressionsessionencodemultiimageframewithoutputhandler.md)
+  Passes a multi-image frame to a compression session for encoding and provides a callback to handle the output.
 ### Performing Multiple Passes
 - [func VTCompressionSessionBeginPass(VTCompressionSession, flags: VTCompressionSessionOptionFlags, UnsafeMutablePointer<UInt32>?) -> OSStatus](./vtcompressionsessionbeginpass%28_,flags,_%29.md)
   Marks the start of a specific compression pass.

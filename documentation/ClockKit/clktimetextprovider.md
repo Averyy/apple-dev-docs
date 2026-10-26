@@ -41,6 +41,10 @@ When formatting the time, the time text provider drops the morning/evening indic
   Creates and returns a text provider for displaying the specified time.
 - [convenience init(date: Date, timeZone: TimeZone?)](./clktimetextprovider/init%28date,timezone%29.md)
   Creates and returns a text provider for displaying the specified time.
+- [- initWithDate:](./clktimetextprovider/initwithdate_.md)
+  Creates and returns a text provider for displaying the specified time.
+- [- initWithDate:timeZone:](./clktimetextprovider/initwithdate_timezone_.md)
+  Creates and returns a text provider for displaying the specified time.
 ### Getting the Time Information
 - [var date: Date](./clktimetextprovider/date.md)
   The date object containing the time value.

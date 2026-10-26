@@ -31,6 +31,10 @@ init(gaugeProvider: CLKGaugeProvider, leadingTextProvider: CLKTextProvider?, tra
 ### Creating the Template
 - [init(gaugeProvider: CLKGaugeProvider, outerTextProvider: CLKTextProvider)](./init%28gaugeprovider,outertextprovider%29.md)
   Creates a template that has a gauge and an outer text element.
+- [+ templateWithGaugeProvider:outerTextProvider:](./templatewithgaugeprovider_outertextprovider_.md)
+  Returns a template that has a gauge and an outer text element.
+- [+ templateWithGaugeProvider:leadingTextProvider:trailingTextProvider:outerTextProvider:](./templatewithgaugeprovider_leadingtextprovider_trailingtextprovider_outertextprovider_.md)
+  Returns a template that has a gauge with leading and trailing text, and an outer text element.
 
 
 ---

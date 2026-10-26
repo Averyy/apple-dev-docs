@@ -57,6 +57,21 @@ You create a CFXMLNode object using one of the create or copy functions. Use the
   The version of a CFXMLNode object.
 - [enum CFXMLNodeTypeCode](./cfxmlnodetypecode.md)
   The various XML data type identification codes that the parser uses to describe XML structures.
+### CFXMLNode Miscellaneous Functions
+- [CFXMLNodeCreate](./cfxmlnodecreate.md)
+  Creates a new CFXMLNode.
+- [CFXMLNodeCreateCopy](./cfxmlnodecreatecopy.md)
+  Creates a copy of a CFXMLNode object.
+- [CFXMLNodeGetInfoPtr](./cfxmlnodegetinfoptr.md)
+  Returns the additional information pointer of a CFXMLNode object.
+- [CFXMLNodeGetString](./cfxmlnodegetstring.md)
+  Returns the data string from a CFXMLNode.
+- [CFXMLNodeGetTypeCode](./cfxmlnodegettypecode.md)
+  Returns the XML structure type code for a CFXMLNode object.
+- [CFXMLNodeGetTypeID](./cfxmlnodegettypeid.md)
+  Returns the type identifier code for the CFXMLNode opaque type.
+- [CFXMLNodeGetVersion](./cfxmlnodegetversion.md)
+  Returns the version number for a CFXMLNode object.
 
 ## Relationships
 

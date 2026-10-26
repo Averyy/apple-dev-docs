@@ -44,6 +44,10 @@ This is the designated initializer for `NSURLRequest`.
 ### Creating requests
 - [convenience init(url: URL)](./init%28url%29-7dmpd.md)
   Creates a URL request for a specified URL.
+- [+ requestWithURL:](./requestwithurl_.md)
+  Creates and returns a URL request for a specified URL.
+- [+ requestWithURL:cachePolicy:timeoutInterval:](./requestwithurl_cachepolicy_timeoutinterval_.md)
+  Creates and returns an initialized URL request with specified URL, cache policy, and timeout values.
 
 
 ---

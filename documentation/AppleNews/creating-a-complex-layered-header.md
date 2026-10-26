@@ -473,15 +473,15 @@ Ellipses (`...`) indicate lines of code that have been omitted from this example
   Change the appearance of the backgrounds in your article.
 - [Defining and Applying Text Styles](./defining-and-applying-text-styles.md)
   Define and apply custom, default, and inline text styles, or use HTML tags or Markdown syntax to style your text.
-- [object Header](https://developer.apple.com/documentation/applenewsformat/header)
+- [object Header](../AppleNewsFormat/header.md)
   The component for defining the top area of an article, chapter, or section.
-- [object LinearGradientFill](https://developer.apple.com/documentation/applenewsformat/lineargradientfill)
+- [object LinearGradientFill](../AppleNewsFormat/lineargradientfill.md)
   The object for displaying a linear gradient as a component background.
-- [object ComponentLayout](https://developer.apple.com/documentation/applenewsformat/componentlayout)
+- [object ComponentLayout](../AppleNewsFormat/componentlayout.md)
   The object for defining the positioning for a specific component within the article’s column system.
-- [object ComponentTextStyle](https://developer.apple.com/documentation/applenewsformat/componenttextstyle)
+- [object ComponentTextStyle](../AppleNewsFormat/componenttextstyle.md)
   The object for defining the style for a text component, including spacing, alignment, and drop caps.
-- [object ComponentStyle](https://developer.apple.com/documentation/applenewsformat/componentstyle)
+- [object ComponentStyle](../AppleNewsFormat/componentstyle.md)
   The object for setting style properties for components, including background color and fill, borders, and table styles.
 ### Advanced Design Tutorial 2: Layout and Positioning
 - [Creating a Floating Caption](./creating-a-floating-caption.md)

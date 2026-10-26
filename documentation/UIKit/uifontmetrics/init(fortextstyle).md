@@ -39,6 +39,8 @@ An initialized font metrics object.
   The default font metrics object for content.
 - [UIFont.TextStyle](../uifont/textstyle.md)
   Constants that describe the preferred styles for fonts.
+- [+ metricsForTextStyle:](./metricsfortextstyle_.md)
+  Creates and returns a font metrics object for the specified text style.
 
 
 ---

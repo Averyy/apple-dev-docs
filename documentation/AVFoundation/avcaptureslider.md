@@ -40,9 +40,17 @@ Sliders are appropriate for controls that provide a single float value.
   Creates a discrete slider control that selects a stepped value from a bounded range.
 - [convenience init(String, symbolName: String, values: [Float])](./avcaptureslider/init%28_,symbolname,values%29.md)
   Creates a discrete slider control that selects a value from a list.
+- [- initWithLocalizedTitle:symbolName:minValue:maxValue:](./avcaptureslider/initwithlocalizedtitle_symbolname_minvalue_maxvalue_.md)
+  Creates a continuous slider control that selects a value from a bounded range.
+- [- initWithLocalizedTitle:symbolName:minValue:maxValue:step:](./avcaptureslider/initwithlocalizedtitle_symbolname_minvalue_maxvalue_step_.md)
+  Creates a discrete slider control that selects a stepped value from a bounded range.
+- [- initWithLocalizedTitle:symbolName:values:](./avcaptureslider/initwithlocalizedtitle_symbolname_values_.md)
+  Creates a discrete slider control that selects a value from a list.
 ### Handling interaction
 - [func setActionQueue(DispatchQueue, action: (Float) -> ())](./avcaptureslider/setactionqueue%28_,action%29.md)
   Sets the action to perform on the specified dispatch queue when the control’s value changes.
+- [- setActionQueue:action:](./avcaptureslider/setactionqueue_action_.md)
+  Sets the action to perform on the specified dispatch queue when the slider’s value changes.
 ### Accessing the control value
 - [var value: Float](./avcaptureslider/value.md)
   The current value of the slider.
@@ -50,6 +58,8 @@ Sliders are appropriate for controls that provide a single float value.
   Values in this array may receive unique visual representations or behaviors.
 - [var localizedValueFormat: String?](./avcaptureslider/localizedvalueformat.md)
   A localized string that defines the presentation of the slider’s value.
+- [prominentValues](./avcaptureslider/prominentvalues-7usgc.md)
+  Values in this array may receive unique visual representations or behaviors.
 ### Setting an accessibility identifier
 - [var accessibilityIdentifier: String?](./avcaptureslider/accessibilityidentifier.md)
   A string identifier for the slider.

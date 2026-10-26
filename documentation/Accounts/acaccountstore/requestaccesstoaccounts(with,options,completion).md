@@ -51,6 +51,8 @@ Certain account types (such as Facebook) require an options dictionary. This met
 ### Requesting Access
 - [typealias ACAccountStoreRequestAccessCompletionHandler](../acaccountstorerequestaccesscompletionhandler.md)
   Specifies a handler to call when access is granted or denied.
+- [- requestAccessToAccountsWithType:withCompletionHandler:](./requestaccesstoaccountswithtype_withcompletionhandler_.md)
+  Requests access to accounts of the specified type.
 
 
 ---

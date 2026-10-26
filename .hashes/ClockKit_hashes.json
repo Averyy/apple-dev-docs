@@ -30,6 +30,11 @@
       "file_path": "documentation/ClockKit/circular-small.md",
       "hash": "6fc8b8b430a3c64b7bae9378bd74bccfdbc6d4c896360fa31ff308e17b4533ba"
     },
+    "https://developer.apple.com/documentation/clockkit/clkallcomplicationfamilies": {
+      "etag": "\"1f38-65d55e5c01d2a-df\"",
+      "file_path": "documentation/ClockKit/clkallcomplicationfamilies.md",
+      "hash": "7ad68fb86367440292b0ecf92f10a35bf44d0a21cfb052edceee7012c35aaf4c"
+    },
     "https://developer.apple.com/documentation/clockkit/clkcomplication": {
       "etag": "\"7b6b-65d55e5d2936e-df\"",
       "file_path": "documentation/ClockKit/clkcomplication.md",
@@ -240,10 +245,30 @@
       "file_path": "documentation/ClockKit/clkcomplicationdescriptor/init(identifier,displayname,supportedfamilies,userinfo).md",
       "hash": "0a17356d0c119748391a5eea119a2c8e2c02fccf313050dd9fdaedb9df827cc9"
     },
+    "https://developer.apple.com/documentation/clockkit/clkcomplicationdescriptor/initwithidentifier:displayname:supportedfamilies:": {
+      "etag": "\"2242-65d55e5c57bdf-df\"",
+      "file_path": "documentation/ClockKit/clkcomplicationdescriptor/initwithidentifier_displayname_supportedfamilies_.md",
+      "hash": "a43e6ccf39411f1f4894ad02591f733b7951a8281a81474e8ed973926206416d"
+    },
+    "https://developer.apple.com/documentation/clockkit/clkcomplicationdescriptor/initwithidentifier:displayname:supportedfamilies:useractivity:": {
+      "etag": "\"316b-65d55e5c57bdf-df\"",
+      "file_path": "documentation/ClockKit/clkcomplicationdescriptor/initwithidentifier_displayname_supportedfamilies_useractivity_.md",
+      "hash": "30f3ed1285111479085cee13149176362c5ac85b4e20b780e0105e807db96305"
+    },
+    "https://developer.apple.com/documentation/clockkit/clkcomplicationdescriptor/initwithidentifier:displayname:supportedfamilies:userinfo:": {
+      "etag": "\"3ad4-65d55e5c57bdf-df\"",
+      "file_path": "documentation/ClockKit/clkcomplicationdescriptor/initwithidentifier_displayname_supportedfamilies_userinfo_.md",
+      "hash": "675dfefb222fab5ac746cd89b2294744462d5eb0091cacf078b5056db6da22b6"
+    },
     "https://developer.apple.com/documentation/clockkit/clkcomplicationdescriptor/supportedfamilies-4ckbx": {
       "etag": "\"2b87-65d55e5c57bdf-df\"",
       "file_path": "documentation/ClockKit/clkcomplicationdescriptor/supportedfamilies-4ckbx.md",
       "hash": "6d7936b4c83e860c1992e53627a0082f98bdce34509f20342fef9db92cde493b"
+    },
+    "https://developer.apple.com/documentation/clockkit/clkcomplicationdescriptor/supportedfamilies-50ink": {
+      "etag": "\"2570-65d55e5c57bdf-df\"",
+      "file_path": "documentation/ClockKit/clkcomplicationdescriptor/supportedfamilies-50ink.md",
+      "hash": "55fe5b287d52c5345c5da798fb64ae3cee051cbdb3729ad416563c38563e42a9"
     },
     "https://developer.apple.com/documentation/clockkit/clkcomplicationdescriptor/useractivity": {
       "etag": "\"3d3c-65d55e5c57bdf-df\"",
@@ -345,6 +370,11 @@
       "file_path": "documentation/ClockKit/clkcomplicationintentwidgetmigrationconfiguration/intent.md",
       "hash": "938d637613a20bc8129b690266e667aa9ff777b865a7b9648f0cc8c86fae6ad2"
     },
+    "https://developer.apple.com/documentation/clockkit/clkcomplicationintentwidgetmigrationconfiguration/intentwidgetmigrationconfigurationwithkind:extensionbundleidentifier:intent:localizeddisplayname:": {
+      "etag": "\"2de3-65d55e5cda25f-df\"",
+      "file_path": "documentation/ClockKit/clkcomplicationintentwidgetmigrationconfiguration/intentwidgetmigrationconfigurationwithkind_extensionbundleidentifier_intent_localizeddisplayname_.md",
+      "hash": "016cbb04605044460b0a63b62f2a7d2d67915074b7d1196933c7f05d04b88d2a"
+    },
     "https://developer.apple.com/documentation/clockkit/clkcomplicationintentwidgetmigrationconfiguration/kind": {
       "etag": "\"334d-65d55e5cda25f-df\"",
       "file_path": "documentation/ClockKit/clkcomplicationintentwidgetmigrationconfiguration/kind.md",
@@ -435,6 +465,11 @@
       "file_path": "documentation/ClockKit/clkcomplicationserver/sharedinstance().md",
       "hash": "1fdec68c9f6cb9762bcf060f21200b4f47edd883e9d03ac0841d2bd9d72a6d02"
     },
+    "https://developer.apple.com/documentation/clockkit/clkcomplicationserveractivecomplicationsdidchangenotification": {
+      "etag": "\"1194-65d55e5d2936e-df\"",
+      "file_path": "documentation/ClockKit/clkcomplicationserveractivecomplicationsdidchangenotification.md",
+      "hash": "cfa6789030b4093c3cdbda401fa4af61076abdcf6d4af1ad005699cb33165e31"
+    },
     "https://developer.apple.com/documentation/clockkit/clkcomplicationstaticwidgetmigrationconfiguration": {
       "etag": "\"680b-65d55e5c86ba3-df\"",
       "file_path": "documentation/ClockKit/clkcomplicationstaticwidgetmigrationconfiguration.md",
@@ -454,6 +489,11 @@
       "etag": "\"27ce-65d55e5c1afe1-df\"",
       "file_path": "documentation/ClockKit/clkcomplicationstaticwidgetmigrationconfiguration/kind.md",
       "hash": "30973e1e55d384f2fad5473d6983437b39e25eeee37cd2d1081dd1543b667b3e"
+    },
+    "https://developer.apple.com/documentation/clockkit/clkcomplicationstaticwidgetmigrationconfiguration/staticwidgetmigrationconfigurationwithkind:extensionbundleidentifier:": {
+      "etag": "\"2360-65d55e5c1afe1-df\"",
+      "file_path": "documentation/ClockKit/clkcomplicationstaticwidgetmigrationconfiguration/staticwidgetmigrationconfigurationwithkind_extensionbundleidentifier_.md",
+      "hash": "02b0b7e68ea4ea5471dde032f803dd228df03d59257538e703b1218ef4ac3f34"
     },
     "https://developer.apple.com/documentation/clockkit/clkcomplicationtemplate": {
       "etag": "\"19640-65d55e5c33df2-df\"",
@@ -555,6 +595,11 @@
       "file_path": "documentation/ClockKit/clkcomplicationtemplatecircularsmallringimage/ringstyle.md",
       "hash": "6f01f9bb71362a37a511b2e7cc693614ba51750022355f8d05d069955b090b2e"
     },
+    "https://developer.apple.com/documentation/clockkit/clkcomplicationtemplatecircularsmallringimage/templatewithimageprovider:fillfraction:ringstyle:": {
+      "etag": "\"2f4e-65d55e5d0a413-df\"",
+      "file_path": "documentation/ClockKit/clkcomplicationtemplatecircularsmallringimage/templatewithimageprovider_fillfraction_ringstyle_.md",
+      "hash": "6be2dccd971abc98588fae38a0414efd122aed26644fd8a90fa16ae556a12756"
+    },
     "https://developer.apple.com/documentation/clockkit/clkcomplicationtemplatecircularsmallringtext": {
       "etag": "\"69d4-65d55e5c33df2-df\"",
       "file_path": "documentation/ClockKit/clkcomplicationtemplatecircularsmallringtext.md",
@@ -574,6 +619,11 @@
       "etag": "\"2e61-65d55e5c57bdf-df\"",
       "file_path": "documentation/ClockKit/clkcomplicationtemplatecircularsmallringtext/ringstyle.md",
       "hash": "b8e6614de5254145d840b672d7c9dffa2ee337e4b06351b877c03c1b5abb3b01"
+    },
+    "https://developer.apple.com/documentation/clockkit/clkcomplicationtemplatecircularsmallringtext/templatewithtextprovider:fillfraction:ringstyle:": {
+      "etag": "\"2cbb-65d55e5c57bdf-df\"",
+      "file_path": "documentation/ClockKit/clkcomplicationtemplatecircularsmallringtext/templatewithtextprovider_fillfraction_ringstyle_.md",
+      "hash": "165bede19ee69fb083d533af163abd48138c25b09447a46e927fd8bf599b45aa"
     },
     "https://developer.apple.com/documentation/clockkit/clkcomplicationtemplatecircularsmallringtext/textprovider": {
       "etag": "\"2f74-65d55e5c57bdf-df\"",
@@ -595,6 +645,11 @@
       "file_path": "documentation/ClockKit/clkcomplicationtemplatecircularsmallsimpleimage/init(imageprovider).md",
       "hash": "0b7942ec141c7de1fff392bc97cd7e01d99ddca71d977ac86da7b7d43e3ecfad"
     },
+    "https://developer.apple.com/documentation/clockkit/clkcomplicationtemplatecircularsmallsimpleimage/templatewithimageprovider:": {
+      "etag": "\"224f-65d55e5c01d2a-df\"",
+      "file_path": "documentation/ClockKit/clkcomplicationtemplatecircularsmallsimpleimage/templatewithimageprovider_.md",
+      "hash": "45f4ebf5c9f9a9f631f1bb149ab542ac6c1acb363a2a177eef1ea581cb862c69"
+    },
     "https://developer.apple.com/documentation/clockkit/clkcomplicationtemplatecircularsmallsimpletext": {
       "etag": "\"56dc-65d55e5c1afe1-df\"",
       "file_path": "documentation/ClockKit/clkcomplicationtemplatecircularsmallsimpletext.md",
@@ -604,6 +659,11 @@
       "etag": "\"286c-65d55e5cf1214-df\"",
       "file_path": "documentation/ClockKit/clkcomplicationtemplatecircularsmallsimpletext/init(textprovider).md",
       "hash": "3be3dea2ca3f906810d7765efcf3846800683965f5d987f8ee5133d8b2884a53"
+    },
+    "https://developer.apple.com/documentation/clockkit/clkcomplicationtemplatecircularsmallsimpletext/templatewithtextprovider:": {
+      "etag": "\"1fab-65d55e5cf1214-df\"",
+      "file_path": "documentation/ClockKit/clkcomplicationtemplatecircularsmallsimpletext/templatewithtextprovider_.md",
+      "hash": "1edb7d80aebc3ea7b7743fc9e261fe6a0295d081500c069305f1b7e5cf573373"
     },
     "https://developer.apple.com/documentation/clockkit/clkcomplicationtemplatecircularsmallsimpletext/textprovider": {
       "etag": "\"2391-65d55e5cf1214-df\"",
@@ -630,6 +690,11 @@
       "file_path": "documentation/ClockKit/clkcomplicationtemplatecircularsmallstackimage/line2textprovider.md",
       "hash": "b7615e5d9dc4d68440d0d4ef1cc44c230633bf67236b8cda7f050ee05413f46f"
     },
+    "https://developer.apple.com/documentation/clockkit/clkcomplicationtemplatecircularsmallstackimage/templatewithline1imageprovider:line2textprovider:": {
+      "etag": "\"2c31-65d55e5c1afe1-df\"",
+      "file_path": "documentation/ClockKit/clkcomplicationtemplatecircularsmallstackimage/templatewithline1imageprovider_line2textprovider_.md",
+      "hash": "caa411024df5f5267f9bcaa7a36db2b2256d9132dad7e113c57cc481dbc5ccb5"
+    },
     "https://developer.apple.com/documentation/clockkit/clkcomplicationtemplatecircularsmallstacktext": {
       "etag": "\"643e-65d55e5d0a413-df\"",
       "file_path": "documentation/ClockKit/clkcomplicationtemplatecircularsmallstacktext.md",
@@ -649,6 +714,11 @@
       "etag": "\"2b0b-65d55e5d2936e-df\"",
       "file_path": "documentation/ClockKit/clkcomplicationtemplatecircularsmallstacktext/line2textprovider.md",
       "hash": "8e2ea509202d4ebaee4d43a46d1c08f354675f7590d71804bf58c266866f2213"
+    },
+    "https://developer.apple.com/documentation/clockkit/clkcomplicationtemplatecircularsmallstacktext/templatewithline1textprovider:line2textprovider:": {
+      "etag": "\"253d-65d55e5d2936e-df\"",
+      "file_path": "documentation/ClockKit/clkcomplicationtemplatecircularsmallstacktext/templatewithline1textprovider_line2textprovider_.md",
+      "hash": "253c29218d896b30c939201ee9bc98843e6f99f0b119ba5c3314e833d56f61b8"
     },
     "https://developer.apple.com/documentation/clockkit/clkcomplicationtemplateextralargecolumnstext": {
       "etag": "\"8810-65d55e5cbeb38-df\"",
@@ -690,6 +760,11 @@
       "file_path": "documentation/ClockKit/clkcomplicationtemplateextralargecolumnstext/row2column2textprovider.md",
       "hash": "9de64623fa2b6a9ef049b1379a5acb2a1ae59adc6ee357f2cfb187b264466e20"
     },
+    "https://developer.apple.com/documentation/clockkit/clkcomplicationtemplateextralargecolumnstext/templatewithrow1column1textprovider:row1column2textprovider:row2column1textprovider:row2column2textprovider:": {
+      "etag": "\"31d4-65d55e5c57bdf-df\"",
+      "file_path": "documentation/ClockKit/clkcomplicationtemplateextralargecolumnstext/templatewithrow1column1textprovider_row1column2textprovider_row2column1textprovider_row2column2textprovider_.md",
+      "hash": "61ae23b3b66d9cd8d0a3c116f39bd4e873c04180911d68832ba8af62d76746af"
+    },
     "https://developer.apple.com/documentation/clockkit/clkcomplicationtemplateextralargeringimage": {
       "etag": "\"71d2-65d55e5c6f7cb-df\"",
       "file_path": "documentation/ClockKit/clkcomplicationtemplateextralargeringimage.md",
@@ -715,6 +790,11 @@
       "file_path": "documentation/ClockKit/clkcomplicationtemplateextralargeringimage/ringstyle.md",
       "hash": "3393f73a169149cd4a6451364d994c631c8bfb0b73deb6830192d600e5a9c1c3"
     },
+    "https://developer.apple.com/documentation/clockkit/clkcomplicationtemplateextralargeringimage/templatewithimageprovider:fillfraction:ringstyle:": {
+      "etag": "\"2efc-65d55e5d2936e-df\"",
+      "file_path": "documentation/ClockKit/clkcomplicationtemplateextralargeringimage/templatewithimageprovider_fillfraction_ringstyle_.md",
+      "hash": "80cf22d542ea3d14fdc19e6f422221b8bb2341e8523f9bfc52e73cae34ffd053"
+    },
     "https://developer.apple.com/documentation/clockkit/clkcomplicationtemplateextralargeringtext": {
       "etag": "\"6ecb-65d55e5d0a413-df\"",
       "file_path": "documentation/ClockKit/clkcomplicationtemplateextralargeringtext.md",
@@ -734,6 +814,11 @@
       "etag": "\"2de0-65d55e5be6a26-df\"",
       "file_path": "documentation/ClockKit/clkcomplicationtemplateextralargeringtext/ringstyle.md",
       "hash": "b6d244562ee6e55cb5e082cd454499b4e83ee57998dab8406e67c0572adc3562"
+    },
+    "https://developer.apple.com/documentation/clockkit/clkcomplicationtemplateextralargeringtext/templatewithtextprovider:fillfraction:ringstyle:": {
+      "etag": "\"2c61-65d55e5be6a26-df\"",
+      "file_path": "documentation/ClockKit/clkcomplicationtemplateextralargeringtext/templatewithtextprovider_fillfraction_ringstyle_.md",
+      "hash": "62f27c01ff6c9df3f7eb51aca55d82538e9d493908afa62217ff5d173a994af9"
     },
     "https://developer.apple.com/documentation/clockkit/clkcomplicationtemplateextralargeringtext/textprovider": {
       "etag": "\"2ef3-65d55e5be6a26-df\"",
@@ -755,6 +840,11 @@
       "file_path": "documentation/ClockKit/clkcomplicationtemplateextralargesimpleimage/init(imageprovider).md",
       "hash": "72d43809afa99ee50bd0cbc408b93278533ab4d9d40421e697e480c3bebe2850"
     },
+    "https://developer.apple.com/documentation/clockkit/clkcomplicationtemplateextralargesimpleimage/templatewithimageprovider:": {
+      "etag": "\"21fe-65d55e5c1afe1-df\"",
+      "file_path": "documentation/ClockKit/clkcomplicationtemplateextralargesimpleimage/templatewithimageprovider_.md",
+      "hash": "56571efaae7f31bb3f4153d3c336b7a76ddb09e1c73fa2ea172019c2d39db648"
+    },
     "https://developer.apple.com/documentation/clockkit/clkcomplicationtemplateextralargesimpletext": {
       "etag": "\"60e0-65d55e5be6a26-df\"",
       "file_path": "documentation/ClockKit/clkcomplicationtemplateextralargesimpletext.md",
@@ -764,6 +854,11 @@
       "etag": "\"2800-65d55e5cbeb38-df\"",
       "file_path": "documentation/ClockKit/clkcomplicationtemplateextralargesimpletext/init(textprovider).md",
       "hash": "6fb7f164e2b27e3ec7d13b6b75c6845e9562b11c20f577a112c0e3a598109884"
+    },
+    "https://developer.apple.com/documentation/clockkit/clkcomplicationtemplateextralargesimpletext/templatewithtextprovider:": {
+      "etag": "\"1f54-65d55e5cbeb38-df\"",
+      "file_path": "documentation/ClockKit/clkcomplicationtemplateextralargesimpletext/templatewithtextprovider_.md",
+      "hash": "adbf9229c0077c1668f6071817d80137e7a01acb1971f8bc92ff80993e1c56fc"
     },
     "https://developer.apple.com/documentation/clockkit/clkcomplicationtemplateextralargesimpletext/textprovider": {
       "etag": "\"234f-65d55e5cbeb38-df\"",
@@ -795,6 +890,11 @@
       "file_path": "documentation/ClockKit/clkcomplicationtemplateextralargestackimage/line2textprovider.md",
       "hash": "9d69fce8934a046c736f0baf5b1ea52502b33f871b8e9b905caeea0a0e5724f1"
     },
+    "https://developer.apple.com/documentation/clockkit/clkcomplicationtemplateextralargestackimage/templatewithline1imageprovider:line2textprovider:": {
+      "etag": "\"2bee-65d55e5c1afe1-df\"",
+      "file_path": "documentation/ClockKit/clkcomplicationtemplateextralargestackimage/templatewithline1imageprovider_line2textprovider_.md",
+      "hash": "6d1a3acc0a79c4d9919441142c8dd0576fb320b42e1197277c5ff6af8deebd16"
+    },
     "https://developer.apple.com/documentation/clockkit/clkcomplicationtemplateextralargestacktext": {
       "etag": "\"6f00-65d55e5d2936e-df\"",
       "file_path": "documentation/ClockKit/clkcomplicationtemplateextralargestacktext.md",
@@ -820,6 +920,11 @@
       "file_path": "documentation/ClockKit/clkcomplicationtemplateextralargestacktext/line2textprovider.md",
       "hash": "e70efd1a0beb133d35cb98584b021a1cc9ecf411a9f9a1def36bb10483cc19f5"
     },
+    "https://developer.apple.com/documentation/clockkit/clkcomplicationtemplateextralargestacktext/templatewithline1textprovider:line2textprovider:": {
+      "etag": "\"24eb-65d55e5d2936e-df\"",
+      "file_path": "documentation/ClockKit/clkcomplicationtemplateextralargestacktext/templatewithline1textprovider_line2textprovider_.md",
+      "hash": "64456a42ecd5cb58e7201c8c1652489fada7f8eb632aedade76cdacd41700b40"
+    },
     "https://developer.apple.com/documentation/clockkit/clkcomplicationtemplategraphicbezelcirculartext": {
       "etag": "\"6e7c-65d55e5ca1e99-df\"",
       "file_path": "documentation/ClockKit/clkcomplicationtemplategraphicbezelcirculartext.md",
@@ -839,6 +944,16 @@
       "etag": "\"4331-65d55e5c33df2-df\"",
       "file_path": "documentation/ClockKit/clkcomplicationtemplategraphicbezelcirculartext/init(circulartemplate,textprovider).md",
       "hash": "c9917b1134f999e2b3eaad064199eda307240cca3589dfc4392b99796a079bd1"
+    },
+    "https://developer.apple.com/documentation/clockkit/clkcomplicationtemplategraphicbezelcirculartext/templatewithcirculartemplate:": {
+      "etag": "\"2e82-65d55e5c33df2-df\"",
+      "file_path": "documentation/ClockKit/clkcomplicationtemplategraphicbezelcirculartext/templatewithcirculartemplate_.md",
+      "hash": "704c997a8a11917ee77de5e3bb4ed43cf169a877259782db659e60d9875d45fe"
+    },
+    "https://developer.apple.com/documentation/clockkit/clkcomplicationtemplategraphicbezelcirculartext/templatewithcirculartemplate:textprovider:": {
+      "etag": "\"3589-65d55e5c33df2-df\"",
+      "file_path": "documentation/ClockKit/clkcomplicationtemplategraphicbezelcirculartext/templatewithcirculartemplate_textprovider_.md",
+      "hash": "644196e51f1e369c510b60171d17863e14a3cb8d0f078432346aaa664723de94"
     },
     "https://developer.apple.com/documentation/clockkit/clkcomplicationtemplategraphicbezelcirculartext/textprovider": {
       "etag": "\"2e0d-65d55e5c33df2-df\"",
@@ -870,6 +985,11 @@
       "file_path": "documentation/ClockKit/clkcomplicationtemplategraphiccircularclosedgaugeimage/init(gaugeprovider,imageprovider).md",
       "hash": "6841a436b9d176976a2e397adf0d065db9d8b3b1a83ad171f53ab44fa5a7e593"
     },
+    "https://developer.apple.com/documentation/clockkit/clkcomplicationtemplategraphiccircularclosedgaugeimage/templatewithgaugeprovider:imageprovider:": {
+      "etag": "\"2952-65d55e5c86ba3-df\"",
+      "file_path": "documentation/ClockKit/clkcomplicationtemplategraphiccircularclosedgaugeimage/templatewithgaugeprovider_imageprovider_.md",
+      "hash": "a0cc32892c31b77956f423f72ab7c3d992ebe45f60fc8a1ee7ec0a3c8fca3b33"
+    },
     "https://developer.apple.com/documentation/clockkit/clkcomplicationtemplategraphiccircularclosedgaugetext": {
       "etag": "\"7f47-65d55e5c6f7cb-df\"",
       "file_path": "documentation/ClockKit/clkcomplicationtemplategraphiccircularclosedgaugetext.md",
@@ -889,6 +1009,11 @@
       "etag": "\"342b-65d55e5c6f7cb-df\"",
       "file_path": "documentation/ClockKit/clkcomplicationtemplategraphiccircularclosedgaugetext/init(gaugeprovider,centertextprovider).md",
       "hash": "77a56c02d175ac0a67c73599290ab8468e8ee0e26915587c9b8f78bc25af9436"
+    },
+    "https://developer.apple.com/documentation/clockkit/clkcomplicationtemplategraphiccircularclosedgaugetext/templatewithgaugeprovider:centertextprovider:": {
+      "etag": "\"2947-65d55e5c6f7cb-df\"",
+      "file_path": "documentation/ClockKit/clkcomplicationtemplategraphiccircularclosedgaugetext/templatewithgaugeprovider_centertextprovider_.md",
+      "hash": "de825fe4cc80c5465d12d0cca06b6bef3ecf0203d9e9a65b4fa1220368c5c7f7"
     },
     "https://developer.apple.com/documentation/clockkit/clkcomplicationtemplategraphiccircularclosedgaugeview": {
       "etag": "\"55a6-65d55e5d2936e-df\"",
@@ -925,6 +1050,11 @@
       "file_path": "documentation/ClockKit/clkcomplicationtemplategraphiccircularimage/init(imageprovider).md",
       "hash": "3792cf723136c03cd8f3fab5e2576dbe3c095141783545afbb68955f273b18f0"
     },
+    "https://developer.apple.com/documentation/clockkit/clkcomplicationtemplategraphiccircularimage/templatewithimageprovider:": {
+      "etag": "\"1f29-65d55e5c01d2a-df\"",
+      "file_path": "documentation/ClockKit/clkcomplicationtemplategraphiccircularimage/templatewithimageprovider_.md",
+      "hash": "0078a40e87c11c62b42876508db142e93cbc6802bcb7557ddaa0e979ba3a7966"
+    },
     "https://developer.apple.com/documentation/clockkit/clkcomplicationtemplategraphiccircularopengaugeimage": {
       "etag": "\"8f75-65d55e5cda25f-df\"",
       "file_path": "documentation/ClockKit/clkcomplicationtemplategraphiccircularopengaugeimage.md",
@@ -950,6 +1080,11 @@
       "file_path": "documentation/ClockKit/clkcomplicationtemplategraphiccircularopengaugeimage/init(gaugeprovider,bottomimageprovider,centertextprovider).md",
       "hash": "3395a2aec40b6413a6451e71d092daa1bf4fc8fbc45cdb4a63f37ea584410b53"
     },
+    "https://developer.apple.com/documentation/clockkit/clkcomplicationtemplategraphiccircularopengaugeimage/templatewithgaugeprovider:bottomimageprovider:centertextprovider:": {
+      "etag": "\"3329-65d55e5c1afe1-df\"",
+      "file_path": "documentation/ClockKit/clkcomplicationtemplategraphiccircularopengaugeimage/templatewithgaugeprovider_bottomimageprovider_centertextprovider_.md",
+      "hash": "0b6f1ae77ba530fb36edf871496458460f5a1f7dde1332a19a4bb9d7126c0842"
+    },
     "https://developer.apple.com/documentation/clockkit/clkcomplicationtemplategraphiccircularopengaugerangetext": {
       "etag": "\"911f-65d55e5ca1e99-df\"",
       "file_path": "documentation/ClockKit/clkcomplicationtemplategraphiccircularopengaugerangetext.md",
@@ -974,6 +1109,11 @@
       "etag": "\"38b1-65d55e5c01d2a-df\"",
       "file_path": "documentation/ClockKit/clkcomplicationtemplategraphiccircularopengaugerangetext/leadingtextprovider.md",
       "hash": "f98c5cc61f03caaa7bdaec2c0ab2d3ab037ec74fa1f15fd9885d2f657a126434"
+    },
+    "https://developer.apple.com/documentation/clockkit/clkcomplicationtemplategraphiccircularopengaugerangetext/templatewithgaugeprovider:leadingtextprovider:trailingtextprovider:centertextprovider:": {
+      "etag": "\"3379-65d55e5c01d2a-df\"",
+      "file_path": "documentation/ClockKit/clkcomplicationtemplategraphiccircularopengaugerangetext/templatewithgaugeprovider_leadingtextprovider_trailingtextprovider_centertextprovider_.md",
+      "hash": "bea95398536f1254f1aa6ca81139cf1a10578c35506478c2b6f6acdef269871c"
     },
     "https://developer.apple.com/documentation/clockkit/clkcomplicationtemplategraphiccircularopengaugerangetext/trailingtextprovider": {
       "etag": "\"38bb-65d55e5be6a26-df\"",
@@ -1004,6 +1144,11 @@
       "etag": "\"3ca4-65d55e5c57bdf-df\"",
       "file_path": "documentation/ClockKit/clkcomplicationtemplategraphiccircularopengaugesimpletext/init(gaugeprovider,bottomtextprovider,centertextprovider).md",
       "hash": "de78891606cebb4128181505f426e91cd2194e72286ab6e9f65d85492149eb70"
+    },
+    "https://developer.apple.com/documentation/clockkit/clkcomplicationtemplategraphiccircularopengaugesimpletext/templatewithgaugeprovider:bottomtextprovider:centertextprovider:": {
+      "etag": "\"2ecb-65d55e5c57bdf-df\"",
+      "file_path": "documentation/ClockKit/clkcomplicationtemplategraphiccircularopengaugesimpletext/templatewithgaugeprovider_bottomtextprovider_centertextprovider_.md",
+      "hash": "51633f768eed4cd637a6a6803d46d78073feb38423775f0f7fcac5cdb0d621e9"
     },
     "https://developer.apple.com/documentation/clockkit/clkcomplicationtemplategraphiccircularopengaugeview": {
       "etag": "\"5ac8-65d55e5c01d2a-df\"",
@@ -1050,6 +1195,11 @@
       "file_path": "documentation/ClockKit/clkcomplicationtemplategraphiccircularstackimage/line2textprovider.md",
       "hash": "cf0c1e5c00c48414f35df5ab1fccf497b3f66ff910ece326a1f3eb8d1023aedf"
     },
+    "https://developer.apple.com/documentation/clockkit/clkcomplicationtemplategraphiccircularstackimage/templatewithline1imageprovider:line2textprovider:": {
+      "etag": "\"293c-65d55e5be6a26-df\"",
+      "file_path": "documentation/ClockKit/clkcomplicationtemplategraphiccircularstackimage/templatewithline1imageprovider_line2textprovider_.md",
+      "hash": "d4a3c4ab81af0321732746f145da6c90fb658ac74531ca3fd19cb382ec3a7da1"
+    },
     "https://developer.apple.com/documentation/clockkit/clkcomplicationtemplategraphiccircularstacktext": {
       "etag": "\"6b88-65d55e5d0a413-df\"",
       "file_path": "documentation/ClockKit/clkcomplicationtemplategraphiccircularstacktext.md",
@@ -1069,6 +1219,11 @@
       "etag": "\"2ab7-65d55e5ca1e99-df\"",
       "file_path": "documentation/ClockKit/clkcomplicationtemplategraphiccircularstacktext/line2textprovider.md",
       "hash": "743b5ed0fd8dba8faa4ff4a56fb1df450b1874ed29c8670e44b80bbb6a1db11e"
+    },
+    "https://developer.apple.com/documentation/clockkit/clkcomplicationtemplategraphiccircularstacktext/templatewithline1textprovider:line2textprovider:": {
+      "etag": "\"2451-65d55e5ca1e99-df\"",
+      "file_path": "documentation/ClockKit/clkcomplicationtemplategraphiccircularstacktext/templatewithline1textprovider_line2textprovider_.md",
+      "hash": "ffae0d5fb7bf16f039a1718f31298e3081fbebe128a797603cd788fbe17e4b7e"
     },
     "https://developer.apple.com/documentation/clockkit/clkcomplicationtemplategraphiccircularstackviewtext": {
       "etag": "\"5349-65d55e5cbeb38-df\"",
@@ -1120,6 +1275,11 @@
       "file_path": "documentation/ClockKit/clkcomplicationtemplategraphiccornercircularimage/init(imageprovider).md",
       "hash": "bf26b83289838f4335316946ad176ac00decfaf429cc6f9c723bc64d715ec457"
     },
+    "https://developer.apple.com/documentation/clockkit/clkcomplicationtemplategraphiccornercircularimage/templatewithimageprovider:": {
+      "etag": "\"1fcf-65d55e5c57bdf-df\"",
+      "file_path": "documentation/ClockKit/clkcomplicationtemplategraphiccornercircularimage/templatewithimageprovider_.md",
+      "hash": "6a0bc950ccf4de96dfdacbfe21b9dfb63fdc864bf62821d680ac8239f30a134b"
+    },
     "https://developer.apple.com/documentation/clockkit/clkcomplicationtemplategraphiccornercircularview": {
       "etag": "\"4ba5-65d55e5c6f7cb-df\"",
       "file_path": "documentation/ClockKit/clkcomplicationtemplategraphiccornercircularview.md",
@@ -1165,6 +1325,16 @@
       "file_path": "documentation/ClockKit/clkcomplicationtemplategraphiccornergaugeimage/leadingtextprovider.md",
       "hash": "a3cabc41b5f984b94e1aa88cf08fce31ab1508aeab39e1139beb2095428173e6"
     },
+    "https://developer.apple.com/documentation/clockkit/clkcomplicationtemplategraphiccornergaugeimage/templatewithgaugeprovider:imageprovider:": {
+      "etag": "\"3732-65d55e5d0a413-df\"",
+      "file_path": "documentation/ClockKit/clkcomplicationtemplategraphiccornergaugeimage/templatewithgaugeprovider_imageprovider_.md",
+      "hash": "f667fd2ee0989a8e8f88627823e67f44be8cc923605cb9b95b8022c72329e40a"
+    },
+    "https://developer.apple.com/documentation/clockkit/clkcomplicationtemplategraphiccornergaugeimage/templatewithgaugeprovider:leadingtextprovider:trailingtextprovider:imageprovider:": {
+      "etag": "\"410b-65d55e5d0a413-df\"",
+      "file_path": "documentation/ClockKit/clkcomplicationtemplategraphiccornergaugeimage/templatewithgaugeprovider_leadingtextprovider_trailingtextprovider_imageprovider_.md",
+      "hash": "94d3fe3224e735b5e1d63cb4b1044231b3dc0dd175a4a02027769110d009d193"
+    },
     "https://developer.apple.com/documentation/clockkit/clkcomplicationtemplategraphiccornergaugeimage/trailingtextprovider": {
       "etag": "\"373e-65d55e5cf1214-df\"",
       "file_path": "documentation/ClockKit/clkcomplicationtemplategraphiccornergaugeimage/trailingtextprovider.md",
@@ -1199,6 +1369,16 @@
       "etag": "\"3702-65d55e5d0a413-df\"",
       "file_path": "documentation/ClockKit/clkcomplicationtemplategraphiccornergaugetext/outertextprovider.md",
       "hash": "26d01f8b6f15a9e73c59f9edd119019578b7e37e7030198b42e3c6f4d7c21a8f"
+    },
+    "https://developer.apple.com/documentation/clockkit/clkcomplicationtemplategraphiccornergaugetext/templatewithgaugeprovider:leadingtextprovider:trailingtextprovider:outertextprovider:": {
+      "etag": "\"3d4c-65d55e5d0a413-df\"",
+      "file_path": "documentation/ClockKit/clkcomplicationtemplategraphiccornergaugetext/templatewithgaugeprovider_leadingtextprovider_trailingtextprovider_outertextprovider_.md",
+      "hash": "ba6d277ac8b80e0260ed75e5031b0b417d4a9399bf6b3b27184b032f1a02ff2b"
+    },
+    "https://developer.apple.com/documentation/clockkit/clkcomplicationtemplategraphiccornergaugetext/templatewithgaugeprovider:outertextprovider:": {
+      "etag": "\"37b5-65d55e5d0a413-df\"",
+      "file_path": "documentation/ClockKit/clkcomplicationtemplategraphiccornergaugetext/templatewithgaugeprovider_outertextprovider_.md",
+      "hash": "6e11840390dda4d621d8e0c5ed67cb129621e6a1300ef856d0bcf14d2195e598"
     },
     "https://developer.apple.com/documentation/clockkit/clkcomplicationtemplategraphiccornergaugetext/trailingtextprovider": {
       "etag": "\"3743-65d55e5d0a413-df\"",
@@ -1255,6 +1435,11 @@
       "file_path": "documentation/ClockKit/clkcomplicationtemplategraphiccornerstacktext/outertextprovider.md",
       "hash": "1fa79156f2d41f068a2d55c540eada510615260c744b8375828a0a961121a6c1"
     },
+    "https://developer.apple.com/documentation/clockkit/clkcomplicationtemplategraphiccornerstacktext/templatewithinnertextprovider:outertextprovider:": {
+      "etag": "\"24a3-65d55e5cda25f-df\"",
+      "file_path": "documentation/ClockKit/clkcomplicationtemplategraphiccornerstacktext/templatewithinnertextprovider_outertextprovider_.md",
+      "hash": "ca2a839199388fd88bdd02c316b5975d1208510200b0400b29ae0c1f7f6081ea"
+    },
     "https://developer.apple.com/documentation/clockkit/clkcomplicationtemplategraphiccornertextimage": {
       "etag": "\"7374-65d55e5d3e9e1-df\"",
       "file_path": "documentation/ClockKit/clkcomplicationtemplategraphiccornertextimage.md",
@@ -1269,6 +1454,11 @@
       "etag": "\"32a1-65d55e5d2936e-df\"",
       "file_path": "documentation/ClockKit/clkcomplicationtemplategraphiccornertextimage/init(textprovider,imageprovider).md",
       "hash": "f30e41549b6b0856fed8b0e472e20e3cb7f242c3cb498e47e5f12134f182c647"
+    },
+    "https://developer.apple.com/documentation/clockkit/clkcomplicationtemplategraphiccornertextimage/templatewithtextprovider:imageprovider:": {
+      "etag": "\"27cd-65d55e5d2936e-df\"",
+      "file_path": "documentation/ClockKit/clkcomplicationtemplategraphiccornertextimage/templatewithtextprovider_imageprovider_.md",
+      "hash": "1a8fb8f4086b66e70f2a8c539e3dd82860610de182b15d60bf732fcd549874b7"
     },
     "https://developer.apple.com/documentation/clockkit/clkcomplicationtemplategraphiccornertextimage/textprovider": {
       "etag": "\"2a0a-65d55e5d2936e-df\"",
@@ -1320,6 +1510,11 @@
       "file_path": "documentation/ClockKit/clkcomplicationtemplategraphicextralargecircularclosedgaugeimage/init(gaugeprovider,imageprovider).md",
       "hash": "1e5b830cec54c4c6f89733d7e40c74d26ca2750a65e29aad325aed67b70b3cd5"
     },
+    "https://developer.apple.com/documentation/clockkit/clkcomplicationtemplategraphicextralargecircularclosedgaugeimage/templatewithgaugeprovider:imageprovider:": {
+      "etag": "\"2a5c-65d55e5cbeb38-df\"",
+      "file_path": "documentation/ClockKit/clkcomplicationtemplategraphicextralargecircularclosedgaugeimage/templatewithgaugeprovider_imageprovider_.md",
+      "hash": "88bdae2fe8cf995c6f1b5cc648e58a529e66e700364139874e5fc89cc3f027a8"
+    },
     "https://developer.apple.com/documentation/clockkit/clkcomplicationtemplategraphicextralargecircularclosedgaugetext": {
       "etag": "\"8516-65d55e5cf1214-df\"",
       "file_path": "documentation/ClockKit/clkcomplicationtemplategraphicextralargecircularclosedgaugetext.md",
@@ -1339,6 +1534,11 @@
       "etag": "\"366d-65d55e5d0a413-df\"",
       "file_path": "documentation/ClockKit/clkcomplicationtemplategraphicextralargecircularclosedgaugetext/init(gaugeprovider,centertextprovider).md",
       "hash": "8b66530b87650c708c1c2c3d8ec280876a606736b4993691230924ad82f7a267"
+    },
+    "https://developer.apple.com/documentation/clockkit/clkcomplicationtemplategraphicextralargecircularclosedgaugetext/templatewithgaugeprovider:centertextprovider:": {
+      "etag": "\"2a0c-65d55e5d0a413-df\"",
+      "file_path": "documentation/ClockKit/clkcomplicationtemplategraphicextralargecircularclosedgaugetext/templatewithgaugeprovider_centertextprovider_.md",
+      "hash": "262d3e8e96087f85c66fe2fe1ae876ca78d5db5f3fa5ec5dd025896320b3b4e0"
     },
     "https://developer.apple.com/documentation/clockkit/clkcomplicationtemplategraphicextralargecircularclosedgaugeview": {
       "etag": "\"5849-65d55e5be6a26-df\"",
@@ -1375,6 +1575,11 @@
       "file_path": "documentation/ClockKit/clkcomplicationtemplategraphicextralargecircularimage/init(imageprovider).md",
       "hash": "9c87ab68279d2ca7751ad09cfe770afc37976fb68a94a2c87e298f59c563638c"
     },
+    "https://developer.apple.com/documentation/clockkit/clkcomplicationtemplategraphicextralargecircularimage/templatewithimageprovider:": {
+      "etag": "\"2025-65d55e5ca1e99-df\"",
+      "file_path": "documentation/ClockKit/clkcomplicationtemplategraphicextralargecircularimage/templatewithimageprovider_.md",
+      "hash": "00fff1e60a2988900ed2ec927f6ad3317ca0664a3eb4613eaf795bca6b822087"
+    },
     "https://developer.apple.com/documentation/clockkit/clkcomplicationtemplategraphicextralargecircularopengaugeimage": {
       "etag": "\"9547-65d55e5be6a26-df\"",
       "file_path": "documentation/ClockKit/clkcomplicationtemplategraphicextralargecircularopengaugeimage.md",
@@ -1400,6 +1605,11 @@
       "file_path": "documentation/ClockKit/clkcomplicationtemplategraphicextralargecircularopengaugeimage/init(gaugeprovider,bottomimageprovider,centertextprovider).md",
       "hash": "d371a64b3ac25c8b1c6631a3d8ade44530877f26bb3d68a2f004cecf40fae8ee"
     },
+    "https://developer.apple.com/documentation/clockkit/clkcomplicationtemplategraphicextralargecircularopengaugeimage/templatewithgaugeprovider:bottomimageprovider:centertextprovider:": {
+      "etag": "\"33dd-65d55e5be6a26-df\"",
+      "file_path": "documentation/ClockKit/clkcomplicationtemplategraphicextralargecircularopengaugeimage/templatewithgaugeprovider_bottomimageprovider_centertextprovider_.md",
+      "hash": "b7f8a5ebc0601393668f40112e35337132aed9ecbeef4d2d0f4c1853de10254f"
+    },
     "https://developer.apple.com/documentation/clockkit/clkcomplicationtemplategraphicextralargecircularopengaugerangetext": {
       "etag": "\"97a1-65d55e5c6f7cb-df\"",
       "file_path": "documentation/ClockKit/clkcomplicationtemplategraphicextralargecircularopengaugerangetext.md",
@@ -1424,6 +1634,11 @@
       "etag": "\"3a66-65d55e5cf1214-df\"",
       "file_path": "documentation/ClockKit/clkcomplicationtemplategraphicextralargecircularopengaugerangetext/leadingtextprovider.md",
       "hash": "cc2817dde9c1d8069ab4a035b590620a0106bd1e06113849a472d06e6e674d07"
+    },
+    "https://developer.apple.com/documentation/clockkit/clkcomplicationtemplategraphicextralargecircularopengaugerangetext/templatewithgaugeprovider:leadingtextprovider:trailingtextprovider:centertextprovider:": {
+      "etag": "\"3476-65d55e5cf1214-df\"",
+      "file_path": "documentation/ClockKit/clkcomplicationtemplategraphicextralargecircularopengaugerangetext/templatewithgaugeprovider_leadingtextprovider_trailingtextprovider_centertextprovider_.md",
+      "hash": "735ee696be3b162766bc886ba9d08fd664a16ae49fcf96dcc527a705e5026bd6"
     },
     "https://developer.apple.com/documentation/clockkit/clkcomplicationtemplategraphicextralargecircularopengaugerangetext/trailingtextprovider": {
       "etag": "\"3a70-65d55e5cf1214-df\"",
@@ -1454,6 +1669,11 @@
       "etag": "\"3f1f-65d55e5d2936e-df\"",
       "file_path": "documentation/ClockKit/clkcomplicationtemplategraphicextralargecircularopengaugesimpletext/init(gaugeprovider,bottomtextprovider,centertextprovider).md",
       "hash": "7cb5ab958b5e2304e0e0fb524976d7c690d664fc9025988dd07f5fe11dc6cd31"
+    },
+    "https://developer.apple.com/documentation/clockkit/clkcomplicationtemplategraphicextralargecircularopengaugesimpletext/templatewithgaugeprovider:bottomtextprovider:centertextprovider:": {
+      "etag": "\"2fca-65d55e5d2936e-df\"",
+      "file_path": "documentation/ClockKit/clkcomplicationtemplategraphicextralargecircularopengaugesimpletext/templatewithgaugeprovider_bottomtextprovider_centertextprovider_.md",
+      "hash": "a7bba95ddb97a3b949e777fff26460c7aa6d29348070eb2f317a5dd079e65637"
     },
     "https://developer.apple.com/documentation/clockkit/clkcomplicationtemplategraphicextralargecircularopengaugeview": {
       "etag": "\"5d2e-65d55e5cda25f-df\"",
@@ -1500,6 +1720,11 @@
       "file_path": "documentation/ClockKit/clkcomplicationtemplategraphicextralargecircularstackimage/line2textprovider.md",
       "hash": "c16d0fb75c7ad3800175eeb112fa974bcfa72e3e27fddb3b36b61be1d6a4e038"
     },
+    "https://developer.apple.com/documentation/clockkit/clkcomplicationtemplategraphicextralargecircularstackimage/templatewithline1imageprovider:line2textprovider:": {
+      "etag": "\"2a38-65d55e5cda25f-df\"",
+      "file_path": "documentation/ClockKit/clkcomplicationtemplategraphicextralargecircularstackimage/templatewithline1imageprovider_line2textprovider_.md",
+      "hash": "a6318dadd6f15166d066f4e93766ccd4203743d7c232738cc3c6b9b42f2037cd"
+    },
     "https://developer.apple.com/documentation/clockkit/clkcomplicationtemplategraphicextralargecircularstacktext": {
       "etag": "\"72ce-65d55e5d2936e-df\"",
       "file_path": "documentation/ClockKit/clkcomplicationtemplategraphicextralargecircularstacktext.md",
@@ -1519,6 +1744,11 @@
       "etag": "\"2c0c-65d55e5cf1214-df\"",
       "file_path": "documentation/ClockKit/clkcomplicationtemplategraphicextralargecircularstacktext/line2textprovider.md",
       "hash": "299de7032d852c51c2e46e26d1dd101aad1468e152295274c3012b7300d8553a"
+    },
+    "https://developer.apple.com/documentation/clockkit/clkcomplicationtemplategraphicextralargecircularstacktext/templatewithline1textprovider:line2textprovider:": {
+      "etag": "\"2556-65d55e5cf1214-df\"",
+      "file_path": "documentation/ClockKit/clkcomplicationtemplategraphicextralargecircularstacktext/templatewithline1textprovider_line2textprovider_.md",
+      "hash": "4bb741cc2843e1f449a49e5f465ca41bed37e762450eeb9c354eec891e2ed1bd"
     },
     "https://developer.apple.com/documentation/clockkit/clkcomplicationtemplategraphicextralargecircularstackviewtext": {
       "etag": "\"55dc-65d55e5c57bdf-df\"",
@@ -1570,6 +1800,11 @@
       "file_path": "documentation/ClockKit/clkcomplicationtemplategraphicrectangularfullimage/init(imageprovider).md",
       "hash": "3befa85d89d78259f65e916d7f1d508798f6c51d8ee06e0b9092af3235e77aca"
     },
+    "https://developer.apple.com/documentation/clockkit/clkcomplicationtemplategraphicrectangularfullimage/templatewithimageprovider:": {
+      "etag": "\"1ffa-65d55e5c1afe1-df\"",
+      "file_path": "documentation/ClockKit/clkcomplicationtemplategraphicrectangularfullimage/templatewithimageprovider_.md",
+      "hash": "acc9ac4e3b64a0068f23c6cdd7e8c14bc87ec4fcaf1a8e3b21361e75db7efcbe"
+    },
     "https://developer.apple.com/documentation/clockkit/clkcomplicationtemplategraphicrectangularfullview": {
       "etag": "\"5c6e-65d55e5c01d2a-df\"",
       "file_path": "documentation/ClockKit/clkcomplicationtemplategraphicrectangularfullview.md",
@@ -1599,6 +1834,11 @@
       "etag": "\"337e-65d55e5c86ba3-df\"",
       "file_path": "documentation/ClockKit/clkcomplicationtemplategraphicrectangularlargeimage/init(textprovider,imageprovider).md",
       "hash": "2a90d05647bdc99468bf12fb17640875b1f88eeb3864f3f5496c6b588d35e9fe"
+    },
+    "https://developer.apple.com/documentation/clockkit/clkcomplicationtemplategraphicrectangularlargeimage/templatewithtextprovider:imageprovider:": {
+      "etag": "\"2899-65d55e5c86ba3-df\"",
+      "file_path": "documentation/ClockKit/clkcomplicationtemplategraphicrectangularlargeimage/templatewithtextprovider_imageprovider_.md",
+      "hash": "fd2a79c764f353caee4b952dfceff18e9fa813c7d58f6185c90f87e5463152e9"
     },
     "https://developer.apple.com/documentation/clockkit/clkcomplicationtemplategraphicrectangularlargeimage/textprovider": {
       "etag": "\"2bb3-65d55e5c86ba3-df\"",
@@ -1670,6 +1910,26 @@
       "file_path": "documentation/ClockKit/clkcomplicationtemplategraphicrectangularstandardbody/init(headertextprovider,body1textprovider,body2textprovider).md",
       "hash": "68cf04936b8f13dd2759b28787d97f456f8c23f4ec733bbcd46354407c6c4af3"
     },
+    "https://developer.apple.com/documentation/clockkit/clkcomplicationtemplategraphicrectangularstandardbody/templatewithheaderimageprovider:headertextprovider:body1textprovider:": {
+      "etag": "\"585d-65d55e5c6f7cb-df\"",
+      "file_path": "documentation/ClockKit/clkcomplicationtemplategraphicrectangularstandardbody/templatewithheaderimageprovider_headertextprovider_body1textprovider_.md",
+      "hash": "08eafc385ab10d97582e779eee5330d0d5e9009d4ed3f45177c92afe70cb5f8e"
+    },
+    "https://developer.apple.com/documentation/clockkit/clkcomplicationtemplategraphicrectangularstandardbody/templatewithheaderimageprovider:headertextprovider:body1textprovider:body2textprovider:": {
+      "etag": "\"5b08-65d55e5c6f7cb-df\"",
+      "file_path": "documentation/ClockKit/clkcomplicationtemplategraphicrectangularstandardbody/templatewithheaderimageprovider_headertextprovider_body1textprovider_body2textprovider_.md",
+      "hash": "a17d780bcafb228b29c79583d50a1fee70f39cf9d6bb65537fb796ee3f1f47f4"
+    },
+    "https://developer.apple.com/documentation/clockkit/clkcomplicationtemplategraphicrectangularstandardbody/templatewithheadertextprovider:body1textprovider:": {
+      "etag": "\"511c-65d55e5c6f7cb-df\"",
+      "file_path": "documentation/ClockKit/clkcomplicationtemplategraphicrectangularstandardbody/templatewithheadertextprovider_body1textprovider_.md",
+      "hash": "be41ba3d932b2fb0310eb960e54b77e34cbdbe9b86b9bba45a3f3c8540096b01"
+    },
+    "https://developer.apple.com/documentation/clockkit/clkcomplicationtemplategraphicrectangularstandardbody/templatewithheadertextprovider:body1textprovider:body2textprovider:": {
+      "etag": "\"53d4-65d55e5c6f7cb-df\"",
+      "file_path": "documentation/ClockKit/clkcomplicationtemplategraphicrectangularstandardbody/templatewithheadertextprovider_body1textprovider_body2textprovider_.md",
+      "hash": "847f0635cba2d87e656be472f160ed485aa42708c361430e6a52cb42eeb7771c"
+    },
     "https://developer.apple.com/documentation/clockkit/clkcomplicationtemplategraphicrectangularstandardbodyview": {
       "etag": "\"5e34-65d55e5c1afe1-df\"",
       "file_path": "documentation/ClockKit/clkcomplicationtemplategraphicrectangularstandardbodyview.md",
@@ -1734,6 +1994,16 @@
       "etag": "\"4bcd-65d55e5ca1e99-df\"",
       "file_path": "documentation/ClockKit/clkcomplicationtemplategraphicrectangulartextgauge/init(headertextprovider,body1textprovider,gaugeprovider).md",
       "hash": "f7ce5177436f6524faf30a33e0381139145bad17ca4aa42bdf7780b016e32e8f"
+    },
+    "https://developer.apple.com/documentation/clockkit/clkcomplicationtemplategraphicrectangulartextgauge/templatewithheaderimageprovider:headertextprovider:body1textprovider:gaugeprovider:": {
+      "etag": "\"4411-65d55e5ca1e99-df\"",
+      "file_path": "documentation/ClockKit/clkcomplicationtemplategraphicrectangulartextgauge/templatewithheaderimageprovider_headertextprovider_body1textprovider_gaugeprovider_.md",
+      "hash": "f7befcf824a98ac4ed508ce5151cf96caf42abc26fbef8e4a305d2cbb53f03b4"
+    },
+    "https://developer.apple.com/documentation/clockkit/clkcomplicationtemplategraphicrectangulartextgauge/templatewithheadertextprovider:body1textprovider:gaugeprovider:": {
+      "etag": "\"3cd5-65d55e5ca1e99-df\"",
+      "file_path": "documentation/ClockKit/clkcomplicationtemplategraphicrectangulartextgauge/templatewithheadertextprovider_body1textprovider_gaugeprovider_.md",
+      "hash": "7632f793be91e0fd257f51b3dd2bafde15066d142e2bb7c7adfd3c6ddf56b421"
     },
     "https://developer.apple.com/documentation/clockkit/clkcomplicationtemplategraphicrectangulartextgaugeview": {
       "etag": "\"5fda-65d55e5d3e9e1-df\"",
@@ -1830,6 +2100,16 @@
       "file_path": "documentation/ClockKit/clkcomplicationtemplatemodularlargecolumns/row3imageprovider.md",
       "hash": "752c195cae9ea990eb0c2b24eecd353070be45a4678ea1c3e7ce4bdfd9f5e0d4"
     },
+    "https://developer.apple.com/documentation/clockkit/clkcomplicationtemplatemodularlargecolumns/templatewithrow1column1textprovider:row1column2textprovider:row2column1textprovider:row2column2textprovider:row3column1textprovider:row3column2textprovider:": {
+      "etag": "\"584b-65d55e5cf1214-df\"",
+      "file_path": "documentation/ClockKit/clkcomplicationtemplatemodularlargecolumns/templatewithrow1column1textprovider_row1column2textprovider_row2column1textprovider_row2column2textprovider_row3column1textprovider_row3column2textprovider_.md",
+      "hash": "dcc36e60750017a723d7db7e65b94026d0a8ff9add20b7a418fbc8bf1d281808"
+    },
+    "https://developer.apple.com/documentation/clockkit/clkcomplicationtemplatemodularlargecolumns/templatewithrow1imageprovider:row1column1textprovider:row1column2textprovider:row2imageprovider:row2column1textprovider:row2column2textprovider:row3imageprovider:row3column1textprovider:row3column2textprovider:": {
+      "etag": "\"6994-65d55e5cf1214-df\"",
+      "file_path": "documentation/ClockKit/clkcomplicationtemplatemodularlargecolumns/templatewithrow1imageprovider_row1column1textprovider_row1column2textprovider_row2imageprovider_row2column1textprovider_row2column2textprovider_row3imageprovider_row3column1textprovider_row3column2textprovider_.md",
+      "hash": "6c0e91ffc97a34c25af75e382e02fb38de3770820194ece2f7ecf3aa5c933289"
+    },
     "https://developer.apple.com/documentation/clockkit/clkcomplicationtemplatemodularlargestandardbody": {
       "etag": "\"a334-65d55e5d2936e-df\"",
       "file_path": "documentation/ClockKit/clkcomplicationtemplatemodularlargestandardbody.md",
@@ -1874,6 +2154,26 @@
       "etag": "\"662f-65d55e5c01d2a-df\"",
       "file_path": "documentation/ClockKit/clkcomplicationtemplatemodularlargestandardbody/init(headertextprovider,body1textprovider,body2textprovider).md",
       "hash": "5c7bb9213ac83a7d25c658049d8f145bbd7deec6046420afe3aeb0907ea71834"
+    },
+    "https://developer.apple.com/documentation/clockkit/clkcomplicationtemplatemodularlargestandardbody/templatewithheaderimageprovider:headertextprovider:body1textprovider:": {
+      "etag": "\"5abc-65d55e5c01d2a-df\"",
+      "file_path": "documentation/ClockKit/clkcomplicationtemplatemodularlargestandardbody/templatewithheaderimageprovider_headertextprovider_body1textprovider_.md",
+      "hash": "c6a9215fbbba84012dafbb5162f9e869d552c623486d48a6ef1e463ff5176557"
+    },
+    "https://developer.apple.com/documentation/clockkit/clkcomplicationtemplatemodularlargestandardbody/templatewithheaderimageprovider:headertextprovider:body1textprovider:body2textprovider:": {
+      "etag": "\"5df6-65d55e5c01d2a-df\"",
+      "file_path": "documentation/ClockKit/clkcomplicationtemplatemodularlargestandardbody/templatewithheaderimageprovider_headertextprovider_body1textprovider_body2textprovider_.md",
+      "hash": "1473eb544d3335717a92029f3d23bcebfb5faef4e4be14ddc4e439b9f2305938"
+    },
+    "https://developer.apple.com/documentation/clockkit/clkcomplicationtemplatemodularlargestandardbody/templatewithheadertextprovider:body1textprovider:": {
+      "etag": "\"50c3-65d55e5c01d2a-df\"",
+      "file_path": "documentation/ClockKit/clkcomplicationtemplatemodularlargestandardbody/templatewithheadertextprovider_body1textprovider_.md",
+      "hash": "ae0499742fd357ac049973bca54fc3ccb8d20c7b507a3378b31844db8d52f106"
+    },
+    "https://developer.apple.com/documentation/clockkit/clkcomplicationtemplatemodularlargestandardbody/templatewithheadertextprovider:body1textprovider:body2textprovider:": {
+      "etag": "\"53fd-65d55e5c01d2a-df\"",
+      "file_path": "documentation/ClockKit/clkcomplicationtemplatemodularlargestandardbody/templatewithheadertextprovider_body1textprovider_body2textprovider_.md",
+      "hash": "03e3ad041312d71aa3dcfd3999d0966a4265ae1f1ccb6b2327c7533fc276e66e"
     },
     "https://developer.apple.com/documentation/clockkit/clkcomplicationtemplatemodularlargetable": {
       "etag": "\"a477-65d55e5d3e9e1-df\"",
@@ -1925,6 +2225,16 @@
       "file_path": "documentation/ClockKit/clkcomplicationtemplatemodularlargetable/row2column2textprovider.md",
       "hash": "d24c75d784cbbd4ff6652b20239a481055de7179dd8e8f932d780910ba44999b"
     },
+    "https://developer.apple.com/documentation/clockkit/clkcomplicationtemplatemodularlargetable/templatewithheaderimageprovider:headertextprovider:row1column1textprovider:row1column2textprovider:row2column1textprovider:row2column2textprovider:": {
+      "etag": "\"55a3-65d55e5cbeb38-df\"",
+      "file_path": "documentation/ClockKit/clkcomplicationtemplatemodularlargetable/templatewithheaderimageprovider_headertextprovider_row1column1textprovider_row1column2textprovider_row2column1textprovider_row2column2textprovider_.md",
+      "hash": "989f17aebc477cdbafc18c6f0666b96123574589c778080e58c84c6055ce0e55"
+    },
+    "https://developer.apple.com/documentation/clockkit/clkcomplicationtemplatemodularlargetable/templatewithheadertextprovider:row1column1textprovider:row1column2textprovider:row2column1textprovider:row2column2textprovider:": {
+      "etag": "\"4b93-65d55e5cbeb38-df\"",
+      "file_path": "documentation/ClockKit/clkcomplicationtemplatemodularlargetable/templatewithheadertextprovider_row1column1textprovider_row1column2textprovider_row2column1textprovider_row2column2textprovider_.md",
+      "hash": "4c88c30b74b08eaad481a6800fb53e87a345a2ba57ac1b8c568bc697cbb98f3b"
+    },
     "https://developer.apple.com/documentation/clockkit/clkcomplicationtemplatemodularlargetallbody": {
       "etag": "\"5d67-65d55e5cda25f-df\"",
       "file_path": "documentation/ClockKit/clkcomplicationtemplatemodularlargetallbody.md",
@@ -1944,6 +2254,11 @@
       "etag": "\"313f-65d55e5c6f7cb-df\"",
       "file_path": "documentation/ClockKit/clkcomplicationtemplatemodularlargetallbody/init(headertextprovider,bodytextprovider).md",
       "hash": "1cc9d3b60d85e4c8f371bc8e6b79e1f073cf74e9aca7aac15003f8ec571825bc"
+    },
+    "https://developer.apple.com/documentation/clockkit/clkcomplicationtemplatemodularlargetallbody/templatewithheadertextprovider:bodytextprovider:": {
+      "etag": "\"251c-65d55e5c6f7cb-df\"",
+      "file_path": "documentation/ClockKit/clkcomplicationtemplatemodularlargetallbody/templatewithheadertextprovider_bodytextprovider_.md",
+      "hash": "56765d262629b387607756b173bd8fe23b7949be262c5b4a776cdbc40a24fd03"
     },
     "https://developer.apple.com/documentation/clockkit/clkcomplicationtemplatemodularsmallcolumnstext": {
       "etag": "\"8910-65d55e5c1afe1-df\"",
@@ -1985,6 +2300,11 @@
       "file_path": "documentation/ClockKit/clkcomplicationtemplatemodularsmallcolumnstext/row2column2textprovider.md",
       "hash": "b5ddfa8021badaaf3315338085cbe393c087cb62fe256dc3dc852c322569b752"
     },
+    "https://developer.apple.com/documentation/clockkit/clkcomplicationtemplatemodularsmallcolumnstext/templatewithrow1column1textprovider:row1column2textprovider:row2column1textprovider:row2column2textprovider:": {
+      "etag": "\"3206-65d55e5c33df2-df\"",
+      "file_path": "documentation/ClockKit/clkcomplicationtemplatemodularsmallcolumnstext/templatewithrow1column1textprovider_row1column2textprovider_row2column1textprovider_row2column2textprovider_.md",
+      "hash": "691face3deb7805fbcab473dcfbe60ec47796f528320dfc0f708d6ec58bc0ab6"
+    },
     "https://developer.apple.com/documentation/clockkit/clkcomplicationtemplatemodularsmallringimage": {
       "etag": "\"728c-65d55e5c86ba3-df\"",
       "file_path": "documentation/ClockKit/clkcomplicationtemplatemodularsmallringimage.md",
@@ -2010,6 +2330,11 @@
       "file_path": "documentation/ClockKit/clkcomplicationtemplatemodularsmallringimage/ringstyle.md",
       "hash": "c134ea07ce4c0323bf749ccebda0794957576bbf1b3b53b1eb33659586fd5007"
     },
+    "https://developer.apple.com/documentation/clockkit/clkcomplicationtemplatemodularsmallringimage/templatewithimageprovider:fillfraction:ringstyle:": {
+      "etag": "\"2f30-65d55e5c33df2-df\"",
+      "file_path": "documentation/ClockKit/clkcomplicationtemplatemodularsmallringimage/templatewithimageprovider_fillfraction_ringstyle_.md",
+      "hash": "9ebb998cea29a67abd54ff4b6ffa2288d93c7692f96b9df0b9897d5410aff663"
+    },
     "https://developer.apple.com/documentation/clockkit/clkcomplicationtemplatemodularsmallringtext": {
       "etag": "\"6fb0-65d55e5c86ba3-df\"",
       "file_path": "documentation/ClockKit/clkcomplicationtemplatemodularsmallringtext.md",
@@ -2029,6 +2354,11 @@
       "etag": "\"2e2d-65d55e5d0a413-df\"",
       "file_path": "documentation/ClockKit/clkcomplicationtemplatemodularsmallringtext/ringstyle.md",
       "hash": "77842f6f1d33bf6b99a08687db75e6106fcd5f243175ea8bad10beb59a49cbea"
+    },
+    "https://developer.apple.com/documentation/clockkit/clkcomplicationtemplatemodularsmallringtext/templatewithtextprovider:fillfraction:ringstyle:": {
+      "etag": "\"2c93-65d55e5d0a413-df\"",
+      "file_path": "documentation/ClockKit/clkcomplicationtemplatemodularsmallringtext/templatewithtextprovider_fillfraction_ringstyle_.md",
+      "hash": "4215ae861eae7f2bee65ebb09828dfbb9b5a7048890f049ca7b9d4bc5ffa2304"
     },
     "https://developer.apple.com/documentation/clockkit/clkcomplicationtemplatemodularsmallringtext/textprovider": {
       "etag": "\"2f40-65d55e5d0a413-df\"",
@@ -2050,6 +2380,11 @@
       "file_path": "documentation/ClockKit/clkcomplicationtemplatemodularsmallsimpleimage/init(imageprovider).md",
       "hash": "c9bef5f8dc09abc0b88095e4624d779beaadc923556714994093a98361953891"
     },
+    "https://developer.apple.com/documentation/clockkit/clkcomplicationtemplatemodularsmallsimpleimage/templatewithimageprovider:": {
+      "etag": "\"2230-65d55e5c6f7cb-df\"",
+      "file_path": "documentation/ClockKit/clkcomplicationtemplatemodularsmallsimpleimage/templatewithimageprovider_.md",
+      "hash": "4fc5d6da8b45dde274775ea97c4f30ecdfff71fcb72ae9c84f18337e28dfdeaf"
+    },
     "https://developer.apple.com/documentation/clockkit/clkcomplicationtemplatemodularsmallsimpletext": {
       "etag": "\"61a7-65d55e5d0a413-df\"",
       "file_path": "documentation/ClockKit/clkcomplicationtemplatemodularsmallsimpletext.md",
@@ -2059,6 +2394,11 @@
       "etag": "\"2854-65d55e5c33df2-df\"",
       "file_path": "documentation/ClockKit/clkcomplicationtemplatemodularsmallsimpletext/init(textprovider).md",
       "hash": "8fbb48f207627c57e0a1dfc03bff2600a4d24896d6c0d1b796217d155d42239a"
+    },
+    "https://developer.apple.com/documentation/clockkit/clkcomplicationtemplatemodularsmallsimpletext/templatewithtextprovider:": {
+      "etag": "\"1f95-65d55e5c33df2-df\"",
+      "file_path": "documentation/ClockKit/clkcomplicationtemplatemodularsmallsimpletext/templatewithtextprovider_.md",
+      "hash": "7640d4504e4f48c7549c1831497dc61ea2eeaef51073c962361fecc60cce615d"
     },
     "https://developer.apple.com/documentation/clockkit/clkcomplicationtemplatemodularsmallsimpletext/textprovider": {
       "etag": "\"237d-65d55e5c33df2-df\"",
@@ -2090,6 +2430,11 @@
       "file_path": "documentation/ClockKit/clkcomplicationtemplatemodularsmallstackimage/line2textprovider.md",
       "hash": "b2db40b21c3cb38e081517e441eb751c0bebaa9f4c25f80704c50b2311e94261"
     },
+    "https://developer.apple.com/documentation/clockkit/clkcomplicationtemplatemodularsmallstackimage/templatewithline1imageprovider:line2textprovider:": {
+      "etag": "\"2c24-65d55e5cf1214-df\"",
+      "file_path": "documentation/ClockKit/clkcomplicationtemplatemodularsmallstackimage/templatewithline1imageprovider_line2textprovider_.md",
+      "hash": "22dde2c28a1a8df41591525d0f97dc14e080150078eaefb81c8c3855541246ad"
+    },
     "https://developer.apple.com/documentation/clockkit/clkcomplicationtemplatemodularsmallstacktext": {
       "etag": "\"6fe4-65d55e5d3e9e1-df\"",
       "file_path": "documentation/ClockKit/clkcomplicationtemplatemodularsmallstacktext.md",
@@ -2115,6 +2460,11 @@
       "file_path": "documentation/ClockKit/clkcomplicationtemplatemodularsmallstacktext/line2textprovider.md",
       "hash": "a2b537248ae3fac0941980c0c2638171c7a2433082d437a667dee0e27653e3aa"
     },
+    "https://developer.apple.com/documentation/clockkit/clkcomplicationtemplatemodularsmallstacktext/templatewithline1textprovider:line2textprovider:": {
+      "etag": "\"2522-65d55e5c33df2-df\"",
+      "file_path": "documentation/ClockKit/clkcomplicationtemplatemodularsmallstacktext/templatewithline1textprovider_line2textprovider_.md",
+      "hash": "7d548fa7efa963e1c1215f30fa1e9289b983824981d00e2c357ab31ffc559fa9"
+    },
     "https://developer.apple.com/documentation/clockkit/clkcomplicationtemplateutilitarianlargeflat": {
       "etag": "\"6a67-65d55e5c86ba3-df\"",
       "file_path": "documentation/ClockKit/clkcomplicationtemplateutilitarianlargeflat.md",
@@ -2134,6 +2484,16 @@
       "etag": "\"4191-65d55e5be6a26-df\"",
       "file_path": "documentation/ClockKit/clkcomplicationtemplateutilitarianlargeflat/init(textprovider,imageprovider).md",
       "hash": "7e773d379b142e4518f9a5b36a5c1114a082786a3db0f7a37583f21568d9501e"
+    },
+    "https://developer.apple.com/documentation/clockkit/clkcomplicationtemplateutilitarianlargeflat/templatewithtextprovider:": {
+      "etag": "\"2a3e-65d55e5be6a26-df\"",
+      "file_path": "documentation/ClockKit/clkcomplicationtemplateutilitarianlargeflat/templatewithtextprovider_.md",
+      "hash": "93a9ee75fc16efa38f4900ac24a647b7a84ad734ca48c8c28f9c8d3d9d4647bd"
+    },
+    "https://developer.apple.com/documentation/clockkit/clkcomplicationtemplateutilitarianlargeflat/templatewithtextprovider:imageprovider:": {
+      "etag": "\"341d-65d55e5be6a26-df\"",
+      "file_path": "documentation/ClockKit/clkcomplicationtemplateutilitarianlargeflat/templatewithtextprovider_imageprovider_.md",
+      "hash": "69e0e6ea68b0287b4076b25f2f8d98b234abdbfc9fd344bc5b91363244efdfd9"
     },
     "https://developer.apple.com/documentation/clockkit/clkcomplicationtemplateutilitarianlargeflat/textprovider": {
       "etag": "\"28dc-65d55e5be6a26-df\"",
@@ -2159,6 +2519,16 @@
       "etag": "\"4187-65d55e5c33df2-df\"",
       "file_path": "documentation/ClockKit/clkcomplicationtemplateutilitariansmallflat/init(textprovider,imageprovider).md",
       "hash": "583e15f5a18a2fa70b0691fa1d7c3cfdd4e87f3ec4a955e4d2e05d682d96cb95"
+    },
+    "https://developer.apple.com/documentation/clockkit/clkcomplicationtemplateutilitariansmallflat/templatewithtextprovider:": {
+      "etag": "\"2a3c-65d55e5c33df2-df\"",
+      "file_path": "documentation/ClockKit/clkcomplicationtemplateutilitariansmallflat/templatewithtextprovider_.md",
+      "hash": "c95f3cc3b7ba4312e49da5e00db0b9315171d59b520e992462111233b36ed6c2"
+    },
+    "https://developer.apple.com/documentation/clockkit/clkcomplicationtemplateutilitariansmallflat/templatewithtextprovider:imageprovider:": {
+      "etag": "\"340f-65d55e5c33df2-df\"",
+      "file_path": "documentation/ClockKit/clkcomplicationtemplateutilitariansmallflat/templatewithtextprovider_imageprovider_.md",
+      "hash": "9bfd5093c7ba1b632603096af994119c566765df803ff4a561c32b3b94f2a634"
     },
     "https://developer.apple.com/documentation/clockkit/clkcomplicationtemplateutilitariansmallflat/textprovider": {
       "etag": "\"28d5-65d55e5c33df2-df\"",
@@ -2190,6 +2560,11 @@
       "file_path": "documentation/ClockKit/clkcomplicationtemplateutilitariansmallringimage/ringstyle.md",
       "hash": "effb5172ef31faad22bac3d1fb826f0a6900820f16181f5cd53d5852011ad851"
     },
+    "https://developer.apple.com/documentation/clockkit/clkcomplicationtemplateutilitariansmallringimage/templatewithimageprovider:fillfraction:ringstyle:": {
+      "etag": "\"2f91-65d55e5c86ba3-df\"",
+      "file_path": "documentation/ClockKit/clkcomplicationtemplateutilitariansmallringimage/templatewithimageprovider_fillfraction_ringstyle_.md",
+      "hash": "58c1c55542aadaf5cee6b8a5b0b3bd15afe5c86ef2cce4fbcdfda5bef3d11f5f"
+    },
     "https://developer.apple.com/documentation/clockkit/clkcomplicationtemplateutilitariansmallringtext": {
       "etag": "\"7112-65d55e5cda25f-df\"",
       "file_path": "documentation/ClockKit/clkcomplicationtemplateutilitariansmallringtext.md",
@@ -2210,6 +2585,11 @@
       "file_path": "documentation/ClockKit/clkcomplicationtemplateutilitariansmallringtext/ringstyle.md",
       "hash": "2eaa0ae635564efaf714e46b0d2614cdb830ff996f982eec21db4dfef99f036a"
     },
+    "https://developer.apple.com/documentation/clockkit/clkcomplicationtemplateutilitariansmallringtext/templatewithtextprovider:fillfraction:ringstyle:": {
+      "etag": "\"2cf7-65d55e5be6a26-df\"",
+      "file_path": "documentation/ClockKit/clkcomplicationtemplateutilitariansmallringtext/templatewithtextprovider_fillfraction_ringstyle_.md",
+      "hash": "cfeb7932a1305a399be3a86df9c8b3da49aeb5a2602a5664de6f9153ad204a71"
+    },
     "https://developer.apple.com/documentation/clockkit/clkcomplicationtemplateutilitariansmallringtext/textprovider": {
       "etag": "\"2fd4-65d55e5be6a26-df\"",
       "file_path": "documentation/ClockKit/clkcomplicationtemplateutilitariansmallringtext/textprovider.md",
@@ -2229,6 +2609,11 @@
       "etag": "\"2b61-65d55e5c6f7cb-df\"",
       "file_path": "documentation/ClockKit/clkcomplicationtemplateutilitariansmallsquare/init(imageprovider).md",
       "hash": "1512b5890c66e26e340469b83d3a5bbac85d16356e6f28aeacc025659800b330"
+    },
+    "https://developer.apple.com/documentation/clockkit/clkcomplicationtemplateutilitariansmallsquare/templatewithimageprovider:": {
+      "etag": "\"2224-65d55e5c6f7cb-df\"",
+      "file_path": "documentation/ClockKit/clkcomplicationtemplateutilitariansmallsquare/templatewithimageprovider_.md",
+      "hash": "5159c02bd4233c3c49537380a9f3fad8255499fe78175132e7757e738a429fcf"
     },
     "https://developer.apple.com/documentation/clockkit/clkcomplicationtimelineanimationbehavior": {
       "etag": "\"ae3a-65d55e5c57bdf-df\"",
@@ -2295,6 +2680,11 @@
       "file_path": "documentation/ClockKit/clkcomplicationtimetraveldirections/backward.md",
       "hash": "19ed68e79bad418a0f04c2ea541d67d3812cfb3026bf28e21c62bd7eecd68bbb"
     },
+    "https://developer.apple.com/documentation/clockkit/clkcomplicationtimetraveldirections/clkcomplicationtimetraveldirectionnone": {
+      "etag": "\"1df9-65d55e5c57bdf-df\"",
+      "file_path": "documentation/ClockKit/clkcomplicationtimetraveldirections/clkcomplicationtimetraveldirectionnone.md",
+      "hash": "4283372a4d698111fd1b1a07e52742e54c0bafd45358d54c9198ff971180bfd9"
+    },
     "https://developer.apple.com/documentation/clockkit/clkcomplicationtimetraveldirections/forward": {
       "etag": "\"2a27-65d55e5c57bdf-df\"",
       "file_path": "documentation/ClockKit/clkcomplicationtimetraveldirections/forward.md",
@@ -2345,6 +2735,16 @@
       "file_path": "documentation/ClockKit/clkdatetextprovider/init(date,units,timezone).md",
       "hash": "feee2e1c4dc5f522de942e2bf56d9d4978237376e74ff654e52b9a4df168f6fa"
     },
+    "https://developer.apple.com/documentation/clockkit/clkdatetextprovider/initwithdate:units:": {
+      "etag": "\"31cb-65d55e5d0a413-df\"",
+      "file_path": "documentation/ClockKit/clkdatetextprovider/initwithdate_units_.md",
+      "hash": "be1f70659081b102a3e9005a97c69afe17becf81de172928e5bcb1a93d82a7be"
+    },
+    "https://developer.apple.com/documentation/clockkit/clkdatetextprovider/initwithdate:units:timezone:": {
+      "etag": "\"36f4-65d55e5d0a413-df\"",
+      "file_path": "documentation/ClockKit/clkdatetextprovider/initwithdate_units_timezone_.md",
+      "hash": "5df900eb48afef6920a644004834d108ed0f44e5de38513f6f93bb8247d1220f"
+    },
     "https://developer.apple.com/documentation/clockkit/clkdatetextprovider/timezone": {
       "etag": "\"320d-65d55e5d0a413-df\"",
       "file_path": "documentation/ClockKit/clkdatetextprovider/timezone.md",
@@ -2389,6 +2789,16 @@
       "etag": "\"458f-65d55e5c1afe1-df\"",
       "file_path": "documentation/ClockKit/clkfullcolorimageprovider/init(fullcolorimage,tintedimageprovider).md",
       "hash": "a12c104debe772f34e262e8f6a4f3abe31e94def1cdc9d6971d5ac298691e53e"
+    },
+    "https://developer.apple.com/documentation/clockkit/clkfullcolorimageprovider/initwithfullcolorimage:": {
+      "etag": "\"29b3-65d55e5c1afe1-df\"",
+      "file_path": "documentation/ClockKit/clkfullcolorimageprovider/initwithfullcolorimage_.md",
+      "hash": "9b153edb0d28c4948071788e25c08c061634478c41f0fbe48352ad4797ec038a"
+    },
+    "https://developer.apple.com/documentation/clockkit/clkfullcolorimageprovider/initwithfullcolorimage:tintedimageprovider:": {
+      "etag": "\"373c-65d55e5c1afe1-df\"",
+      "file_path": "documentation/ClockKit/clkfullcolorimageprovider/initwithfullcolorimage_tintedimageprovider_.md",
+      "hash": "b1235e6a3f29d5c2b544592b80c37ac87b2a3bcc8b48fae3b49943314bca58a2"
     },
     "https://developer.apple.com/documentation/clockkit/clkfullcolorimageprovider/new()": {
       "etag": "\"1f2d-65d55e5c1afe1-df\"",
@@ -2469,6 +2879,16 @@
       "etag": "\"4974-65d55e5d2936e-df\"",
       "file_path": "documentation/ClockKit/clkimageprovider/init(onepieceimage,twopieceimagebackground,twopieceimageforeground).md",
       "hash": "8e2de4795ff19db5b53a43672cdfe6ac07dce4cb887e346514aa3ebb8059630f"
+    },
+    "https://developer.apple.com/documentation/clockkit/clkimageprovider/initwithonepieceimage:": {
+      "etag": "\"2f8e-65d55e5d2936e-df\"",
+      "file_path": "documentation/ClockKit/clkimageprovider/initwithonepieceimage_.md",
+      "hash": "d58e05d346e4a50442afb93dcbf38000db6b866b03ae85a53b19e1dc4f70817b"
+    },
+    "https://developer.apple.com/documentation/clockkit/clkimageprovider/initwithonepieceimage:twopieceimagebackground:twopieceimageforeground:": {
+      "etag": "\"3636-65d55e5d2936e-df\"",
+      "file_path": "documentation/ClockKit/clkimageprovider/initwithonepieceimage_twopieceimagebackground_twopieceimageforeground_.md",
+      "hash": "e43150e074c01ab2c6df9eb01679f3bf333cf196a80dd1374f5cf40d43fd13c4"
     },
     "https://developer.apple.com/documentation/clockkit/clkimageprovider/new()": {
       "etag": "\"1df4-65d55e5d2936e-df\"",
@@ -2575,6 +2995,16 @@
       "file_path": "documentation/ClockKit/clkrelativedatetextprovider/init(date,style,units).md",
       "hash": "621a1c89191c3c783cbd9876c3b2fd5c1604c924ba6a13528e86badb03c48c10"
     },
+    "https://developer.apple.com/documentation/clockkit/clkrelativedatetextprovider/initwithdate:relativetodate:style:units:": {
+      "etag": "\"3ef5-65d55e5c57bdf-df\"",
+      "file_path": "documentation/ClockKit/clkrelativedatetextprovider/initwithdate_relativetodate_style_units_.md",
+      "hash": "39cee68437d342ab36f8e514789136ce1d5ae1df4e0218d2f6007ffbc36432fb"
+    },
+    "https://developer.apple.com/documentation/clockkit/clkrelativedatetextprovider/initwithdate:style:units:": {
+      "etag": "\"3e06-65d55e5c33df2-df\"",
+      "file_path": "documentation/ClockKit/clkrelativedatetextprovider/initwithdate_style_units_.md",
+      "hash": "9f3a6adb05e5bcda41c7b296e33c022ea2c2119fcd7dc7c1f30580f040d0c132"
+    },
     "https://developer.apple.com/documentation/clockkit/clkrelativedatetextprovider/relativedatestyle": {
       "etag": "\"3391-65d55e5c33df2-df\"",
       "file_path": "documentation/ClockKit/clkrelativedatetextprovider/relativedatestyle.md",
@@ -2630,6 +3060,21 @@
       "file_path": "documentation/ClockKit/clksimpletextprovider/init(text,shorttext,accessibilitylabel).md",
       "hash": "2f6696e33c01d9123903053d42add89b5dcfc578e825cfac9d51b0a020ade0e1"
     },
+    "https://developer.apple.com/documentation/clockkit/clksimpletextprovider/initwithtext:": {
+      "etag": "\"343c-65d55e5c86ba3-df\"",
+      "file_path": "documentation/ClockKit/clksimpletextprovider/initwithtext_.md",
+      "hash": "09ebf9e77f4417499f4ca08892e94a9c092871c5a3f4d70eba92f84ffd2efbed"
+    },
+    "https://developer.apple.com/documentation/clockkit/clksimpletextprovider/initwithtext:shorttext:": {
+      "etag": "\"36bf-65d55e5c86ba3-df\"",
+      "file_path": "documentation/ClockKit/clksimpletextprovider/initwithtext_shorttext_.md",
+      "hash": "3ddb785d83d00dd96a51bb44c494e42bbfe9c85ea88059f8aa4b13ca604f8662"
+    },
+    "https://developer.apple.com/documentation/clockkit/clksimpletextprovider/initwithtext:shorttext:accessibilitylabel:": {
+      "etag": "\"3467-65d55e5c86ba3-df\"",
+      "file_path": "documentation/ClockKit/clksimpletextprovider/initwithtext_shorttext_accessibilitylabel_.md",
+      "hash": "04079a19ac60b0633592dc17b34df76cae2a9d64717197735dbdd061141b4721"
+    },
     "https://developer.apple.com/documentation/clockkit/clksimpletextprovider/shorttext": {
       "etag": "\"270b-65d55e5c86ba3-df\"",
       "file_path": "documentation/ClockKit/clksimpletextprovider/shorttext.md",
@@ -2679,6 +3124,11 @@
       "etag": "\"1def-65d55e5cf1214-df\"",
       "file_path": "documentation/ClockKit/clktextprovider/new().md",
       "hash": "717a375282afe42718cd80d487a068cb8beb18a2fcf149189fdecb82a53a2381"
+    },
+    "https://developer.apple.com/documentation/clockkit/clktextprovider/textproviderwithformat:": {
+      "etag": "\"25f9-65d55e5cda25f-df\"",
+      "file_path": "documentation/ClockKit/clktextprovider/textproviderwithformat_.md",
+      "hash": "3c1fc32902d91c744e5f58db28375f3f8cde51317968873351e178c920e827e1"
     },
     "https://developer.apple.com/documentation/clockkit/clktextprovider/tintcolor": {
       "etag": "\"1e67-65d55e5cf1214-df\"",
@@ -2760,6 +3210,16 @@
       "file_path": "documentation/ClockKit/clktimeintervaltextprovider/init(startdate,enddate,timezone).md",
       "hash": "5d16790b9223d2caf84e5534f6e30f0618687e62fda0889dd0de2fff3f9ee5b3"
     },
+    "https://developer.apple.com/documentation/clockkit/clktimeintervaltextprovider/initwithstartdate:enddate:": {
+      "etag": "\"2cb9-65d55e5be6a26-df\"",
+      "file_path": "documentation/ClockKit/clktimeintervaltextprovider/initwithstartdate_enddate_.md",
+      "hash": "a0be72ce341773ff06e27edb97a56d9d72a49854edb200bbf35ce3151da254d8"
+    },
+    "https://developer.apple.com/documentation/clockkit/clktimeintervaltextprovider/initwithstartdate:enddate:timezone:": {
+      "etag": "\"32bf-65d55e5be6a26-df\"",
+      "file_path": "documentation/ClockKit/clktimeintervaltextprovider/initwithstartdate_enddate_timezone_.md",
+      "hash": "4b9884d7541a3c9fd3c184446ce639f6249201641e7b5b31796785aea7246a61"
+    },
     "https://developer.apple.com/documentation/clockkit/clktimeintervaltextprovider/startdate": {
       "etag": "\"3ce0-65d55e5be6a26-df\"",
       "file_path": "documentation/ClockKit/clktimeintervaltextprovider/startdate.md",
@@ -2789,6 +3249,16 @@
       "etag": "\"3d7d-65d55e5d3e9e1-df\"",
       "file_path": "documentation/ClockKit/clktimetextprovider/init(date,timezone).md",
       "hash": "1bf915de47432e74c5498671cdb9f5d21aa7a8233d66398b83550ca5cc12b2d9"
+    },
+    "https://developer.apple.com/documentation/clockkit/clktimetextprovider/initwithdate:": {
+      "etag": "\"25d9-65d55e5d3e9e1-df\"",
+      "file_path": "documentation/ClockKit/clktimetextprovider/initwithdate_.md",
+      "hash": "becafa1476dad5fd75c0c9f3a3fb1c16d15b7bc1a0fa50177944505596b5f0be"
+    },
+    "https://developer.apple.com/documentation/clockkit/clktimetextprovider/initwithdate:timezone:": {
+      "etag": "\"2a36-65d55e5d3e9e1-df\"",
+      "file_path": "documentation/ClockKit/clktimetextprovider/initwithdate_timezone_.md",
+      "hash": "c2fc420ed9409afa8e78272670cb0c991f9afc3820119ccd7821223d42ca1c93"
     },
     "https://developer.apple.com/documentation/clockkit/clktimetextprovider/timezone": {
       "etag": "\"2edf-65d55e5d3e9e1-df\"",
@@ -3000,6 +3470,11 @@
       "file_path": "documentation/ClockKit/circular-small.md",
       "hash": "6fc8b8b430a3c64b7bae9378bd74bccfdbc6d4c896360fa31ff308e17b4533ba"
     },
+    "https://developer.apple.com/tutorials/data/documentation/clockkit/clkallcomplicationfamilies.json": {
+      "etag": "\"1f38-65d55e5c01d2a-df\"",
+      "file_path": "documentation/ClockKit/clkallcomplicationfamilies.md",
+      "hash": "7ad68fb86367440292b0ecf92f10a35bf44d0a21cfb052edceee7012c35aaf4c"
+    },
     "https://developer.apple.com/tutorials/data/documentation/clockkit/clkcomplication.json": {
       "etag": "\"7b6b-65d55e5d2936e-df\"",
       "file_path": "documentation/ClockKit/clkcomplication.md",
@@ -3210,10 +3685,30 @@
       "file_path": "documentation/ClockKit/clkcomplicationdescriptor/init(identifier,displayname,supportedfamilies,userinfo).md",
       "hash": "0a17356d0c119748391a5eea119a2c8e2c02fccf313050dd9fdaedb9df827cc9"
     },
+    "https://developer.apple.com/tutorials/data/documentation/clockkit/clkcomplicationdescriptor/initwithidentifier:displayname:supportedfamilies:.json": {
+      "etag": "\"2242-65d55e5c57bdf-df\"",
+      "file_path": "documentation/ClockKit/clkcomplicationdescriptor/initwithidentifier_displayname_supportedfamilies_.md",
+      "hash": "a43e6ccf39411f1f4894ad02591f733b7951a8281a81474e8ed973926206416d"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/clockkit/clkcomplicationdescriptor/initwithidentifier:displayname:supportedfamilies:useractivity:.json": {
+      "etag": "\"316b-65d55e5c57bdf-df\"",
+      "file_path": "documentation/ClockKit/clkcomplicationdescriptor/initwithidentifier_displayname_supportedfamilies_useractivity_.md",
+      "hash": "30f3ed1285111479085cee13149176362c5ac85b4e20b780e0105e807db96305"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/clockkit/clkcomplicationdescriptor/initwithidentifier:displayname:supportedfamilies:userinfo:.json": {
+      "etag": "\"3ad4-65d55e5c57bdf-df\"",
+      "file_path": "documentation/ClockKit/clkcomplicationdescriptor/initwithidentifier_displayname_supportedfamilies_userinfo_.md",
+      "hash": "675dfefb222fab5ac746cd89b2294744462d5eb0091cacf078b5056db6da22b6"
+    },
     "https://developer.apple.com/tutorials/data/documentation/clockkit/clkcomplicationdescriptor/supportedfamilies-4ckbx.json": {
       "etag": "\"2b87-65d55e5c57bdf-df\"",
       "file_path": "documentation/ClockKit/clkcomplicationdescriptor/supportedfamilies-4ckbx.md",
       "hash": "6d7936b4c83e860c1992e53627a0082f98bdce34509f20342fef9db92cde493b"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/clockkit/clkcomplicationdescriptor/supportedfamilies-50ink.json": {
+      "etag": "\"2570-65d55e5c57bdf-df\"",
+      "file_path": "documentation/ClockKit/clkcomplicationdescriptor/supportedfamilies-50ink.md",
+      "hash": "55fe5b287d52c5345c5da798fb64ae3cee051cbdb3729ad416563c38563e42a9"
     },
     "https://developer.apple.com/tutorials/data/documentation/clockkit/clkcomplicationdescriptor/useractivity.json": {
       "etag": "\"3d3c-65d55e5c57bdf-df\"",
@@ -3315,6 +3810,11 @@
       "file_path": "documentation/ClockKit/clkcomplicationintentwidgetmigrationconfiguration/intent.md",
       "hash": "938d637613a20bc8129b690266e667aa9ff777b865a7b9648f0cc8c86fae6ad2"
     },
+    "https://developer.apple.com/tutorials/data/documentation/clockkit/clkcomplicationintentwidgetmigrationconfiguration/intentwidgetmigrationconfigurationwithkind:extensionbundleidentifier:intent:localizeddisplayname:.json": {
+      "etag": "\"2de3-65d55e5cda25f-df\"",
+      "file_path": "documentation/ClockKit/clkcomplicationintentwidgetmigrationconfiguration/intentwidgetmigrationconfigurationwithkind_extensionbundleidentifier_intent_localizeddisplayname_.md",
+      "hash": "016cbb04605044460b0a63b62f2a7d2d67915074b7d1196933c7f05d04b88d2a"
+    },
     "https://developer.apple.com/tutorials/data/documentation/clockkit/clkcomplicationintentwidgetmigrationconfiguration/kind.json": {
       "etag": "\"334d-65d55e5cda25f-df\"",
       "file_path": "documentation/ClockKit/clkcomplicationintentwidgetmigrationconfiguration/kind.md",
@@ -3405,6 +3905,11 @@
       "file_path": "documentation/ClockKit/clkcomplicationserver/sharedinstance().md",
       "hash": "1fdec68c9f6cb9762bcf060f21200b4f47edd883e9d03ac0841d2bd9d72a6d02"
     },
+    "https://developer.apple.com/tutorials/data/documentation/clockkit/clkcomplicationserveractivecomplicationsdidchangenotification.json": {
+      "etag": "\"1194-65d55e5d2936e-df\"",
+      "file_path": "documentation/ClockKit/clkcomplicationserveractivecomplicationsdidchangenotification.md",
+      "hash": "cfa6789030b4093c3cdbda401fa4af61076abdcf6d4af1ad005699cb33165e31"
+    },
     "https://developer.apple.com/tutorials/data/documentation/clockkit/clkcomplicationstaticwidgetmigrationconfiguration.json": {
       "etag": "\"680b-65d55e5c86ba3-df\"",
       "file_path": "documentation/ClockKit/clkcomplicationstaticwidgetmigrationconfiguration.md",
@@ -3424,6 +3929,11 @@
       "etag": "\"27ce-65d55e5c1afe1-df\"",
       "file_path": "documentation/ClockKit/clkcomplicationstaticwidgetmigrationconfiguration/kind.md",
       "hash": "30973e1e55d384f2fad5473d6983437b39e25eeee37cd2d1081dd1543b667b3e"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/clockkit/clkcomplicationstaticwidgetmigrationconfiguration/staticwidgetmigrationconfigurationwithkind:extensionbundleidentifier:.json": {
+      "etag": "\"2360-65d55e5c1afe1-df\"",
+      "file_path": "documentation/ClockKit/clkcomplicationstaticwidgetmigrationconfiguration/staticwidgetmigrationconfigurationwithkind_extensionbundleidentifier_.md",
+      "hash": "02b0b7e68ea4ea5471dde032f803dd228df03d59257538e703b1218ef4ac3f34"
     },
     "https://developer.apple.com/tutorials/data/documentation/clockkit/clkcomplicationtemplate.json": {
       "etag": "\"19640-65d55e5c33df2-df\"",
@@ -3525,6 +4035,11 @@
       "file_path": "documentation/ClockKit/clkcomplicationtemplatecircularsmallringimage/ringstyle.md",
       "hash": "6f01f9bb71362a37a511b2e7cc693614ba51750022355f8d05d069955b090b2e"
     },
+    "https://developer.apple.com/tutorials/data/documentation/clockkit/clkcomplicationtemplatecircularsmallringimage/templatewithimageprovider:fillfraction:ringstyle:.json": {
+      "etag": "\"2f4e-65d55e5d0a413-df\"",
+      "file_path": "documentation/ClockKit/clkcomplicationtemplatecircularsmallringimage/templatewithimageprovider_fillfraction_ringstyle_.md",
+      "hash": "6be2dccd971abc98588fae38a0414efd122aed26644fd8a90fa16ae556a12756"
+    },
     "https://developer.apple.com/tutorials/data/documentation/clockkit/clkcomplicationtemplatecircularsmallringtext.json": {
       "etag": "\"69d4-65d55e5c33df2-df\"",
       "file_path": "documentation/ClockKit/clkcomplicationtemplatecircularsmallringtext.md",
@@ -3544,6 +4059,11 @@
       "etag": "\"2e61-65d55e5c57bdf-df\"",
       "file_path": "documentation/ClockKit/clkcomplicationtemplatecircularsmallringtext/ringstyle.md",
       "hash": "b8e6614de5254145d840b672d7c9dffa2ee337e4b06351b877c03c1b5abb3b01"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/clockkit/clkcomplicationtemplatecircularsmallringtext/templatewithtextprovider:fillfraction:ringstyle:.json": {
+      "etag": "\"2cbb-65d55e5c57bdf-df\"",
+      "file_path": "documentation/ClockKit/clkcomplicationtemplatecircularsmallringtext/templatewithtextprovider_fillfraction_ringstyle_.md",
+      "hash": "165bede19ee69fb083d533af163abd48138c25b09447a46e927fd8bf599b45aa"
     },
     "https://developer.apple.com/tutorials/data/documentation/clockkit/clkcomplicationtemplatecircularsmallringtext/textprovider.json": {
       "etag": "\"2f74-65d55e5c57bdf-df\"",
@@ -3565,6 +4085,11 @@
       "file_path": "documentation/ClockKit/clkcomplicationtemplatecircularsmallsimpleimage/init(imageprovider).md",
       "hash": "0b7942ec141c7de1fff392bc97cd7e01d99ddca71d977ac86da7b7d43e3ecfad"
     },
+    "https://developer.apple.com/tutorials/data/documentation/clockkit/clkcomplicationtemplatecircularsmallsimpleimage/templatewithimageprovider:.json": {
+      "etag": "\"224f-65d55e5c01d2a-df\"",
+      "file_path": "documentation/ClockKit/clkcomplicationtemplatecircularsmallsimpleimage/templatewithimageprovider_.md",
+      "hash": "45f4ebf5c9f9a9f631f1bb149ab542ac6c1acb363a2a177eef1ea581cb862c69"
+    },
     "https://developer.apple.com/tutorials/data/documentation/clockkit/clkcomplicationtemplatecircularsmallsimpletext.json": {
       "etag": "\"56dc-65d55e5c1afe1-df\"",
       "file_path": "documentation/ClockKit/clkcomplicationtemplatecircularsmallsimpletext.md",
@@ -3574,6 +4099,11 @@
       "etag": "\"286c-65d55e5cf1214-df\"",
       "file_path": "documentation/ClockKit/clkcomplicationtemplatecircularsmallsimpletext/init(textprovider).md",
       "hash": "3be3dea2ca3f906810d7765efcf3846800683965f5d987f8ee5133d8b2884a53"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/clockkit/clkcomplicationtemplatecircularsmallsimpletext/templatewithtextprovider:.json": {
+      "etag": "\"1fab-65d55e5cf1214-df\"",
+      "file_path": "documentation/ClockKit/clkcomplicationtemplatecircularsmallsimpletext/templatewithtextprovider_.md",
+      "hash": "1edb7d80aebc3ea7b7743fc9e261fe6a0295d081500c069305f1b7e5cf573373"
     },
     "https://developer.apple.com/tutorials/data/documentation/clockkit/clkcomplicationtemplatecircularsmallsimpletext/textprovider.json": {
       "etag": "\"2391-65d55e5cf1214-df\"",
@@ -3600,6 +4130,11 @@
       "file_path": "documentation/ClockKit/clkcomplicationtemplatecircularsmallstackimage/line2textprovider.md",
       "hash": "b7615e5d9dc4d68440d0d4ef1cc44c230633bf67236b8cda7f050ee05413f46f"
     },
+    "https://developer.apple.com/tutorials/data/documentation/clockkit/clkcomplicationtemplatecircularsmallstackimage/templatewithline1imageprovider:line2textprovider:.json": {
+      "etag": "\"2c31-65d55e5c1afe1-df\"",
+      "file_path": "documentation/ClockKit/clkcomplicationtemplatecircularsmallstackimage/templatewithline1imageprovider_line2textprovider_.md",
+      "hash": "caa411024df5f5267f9bcaa7a36db2b2256d9132dad7e113c57cc481dbc5ccb5"
+    },
     "https://developer.apple.com/tutorials/data/documentation/clockkit/clkcomplicationtemplatecircularsmallstacktext.json": {
       "etag": "\"643e-65d55e5d0a413-df\"",
       "file_path": "documentation/ClockKit/clkcomplicationtemplatecircularsmallstacktext.md",
@@ -3619,6 +4154,11 @@
       "etag": "\"2b0b-65d55e5d2936e-df\"",
       "file_path": "documentation/ClockKit/clkcomplicationtemplatecircularsmallstacktext/line2textprovider.md",
       "hash": "8e2ea509202d4ebaee4d43a46d1c08f354675f7590d71804bf58c266866f2213"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/clockkit/clkcomplicationtemplatecircularsmallstacktext/templatewithline1textprovider:line2textprovider:.json": {
+      "etag": "\"253d-65d55e5d2936e-df\"",
+      "file_path": "documentation/ClockKit/clkcomplicationtemplatecircularsmallstacktext/templatewithline1textprovider_line2textprovider_.md",
+      "hash": "253c29218d896b30c939201ee9bc98843e6f99f0b119ba5c3314e833d56f61b8"
     },
     "https://developer.apple.com/tutorials/data/documentation/clockkit/clkcomplicationtemplateextralargecolumnstext.json": {
       "etag": "\"8810-65d55e5cbeb38-df\"",
@@ -3660,6 +4200,11 @@
       "file_path": "documentation/ClockKit/clkcomplicationtemplateextralargecolumnstext/row2column2textprovider.md",
       "hash": "9de64623fa2b6a9ef049b1379a5acb2a1ae59adc6ee357f2cfb187b264466e20"
     },
+    "https://developer.apple.com/tutorials/data/documentation/clockkit/clkcomplicationtemplateextralargecolumnstext/templatewithrow1column1textprovider:row1column2textprovider:row2column1textprovider:row2column2textprovider:.json": {
+      "etag": "\"31d4-65d55e5c57bdf-df\"",
+      "file_path": "documentation/ClockKit/clkcomplicationtemplateextralargecolumnstext/templatewithrow1column1textprovider_row1column2textprovider_row2column1textprovider_row2column2textprovider_.md",
+      "hash": "61ae23b3b66d9cd8d0a3c116f39bd4e873c04180911d68832ba8af62d76746af"
+    },
     "https://developer.apple.com/tutorials/data/documentation/clockkit/clkcomplicationtemplateextralargeringimage.json": {
       "etag": "\"71d2-65d55e5c6f7cb-df\"",
       "file_path": "documentation/ClockKit/clkcomplicationtemplateextralargeringimage.md",
@@ -3685,6 +4230,11 @@
       "file_path": "documentation/ClockKit/clkcomplicationtemplateextralargeringimage/ringstyle.md",
       "hash": "3393f73a169149cd4a6451364d994c631c8bfb0b73deb6830192d600e5a9c1c3"
     },
+    "https://developer.apple.com/tutorials/data/documentation/clockkit/clkcomplicationtemplateextralargeringimage/templatewithimageprovider:fillfraction:ringstyle:.json": {
+      "etag": "\"2efc-65d55e5d2936e-df\"",
+      "file_path": "documentation/ClockKit/clkcomplicationtemplateextralargeringimage/templatewithimageprovider_fillfraction_ringstyle_.md",
+      "hash": "80cf22d542ea3d14fdc19e6f422221b8bb2341e8523f9bfc52e73cae34ffd053"
+    },
     "https://developer.apple.com/tutorials/data/documentation/clockkit/clkcomplicationtemplateextralargeringtext.json": {
       "etag": "\"6ecb-65d55e5d0a413-df\"",
       "file_path": "documentation/ClockKit/clkcomplicationtemplateextralargeringtext.md",
@@ -3704,6 +4254,11 @@
       "etag": "\"2de0-65d55e5be6a26-df\"",
       "file_path": "documentation/ClockKit/clkcomplicationtemplateextralargeringtext/ringstyle.md",
       "hash": "b6d244562ee6e55cb5e082cd454499b4e83ee57998dab8406e67c0572adc3562"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/clockkit/clkcomplicationtemplateextralargeringtext/templatewithtextprovider:fillfraction:ringstyle:.json": {
+      "etag": "\"2c61-65d55e5be6a26-df\"",
+      "file_path": "documentation/ClockKit/clkcomplicationtemplateextralargeringtext/templatewithtextprovider_fillfraction_ringstyle_.md",
+      "hash": "62f27c01ff6c9df3f7eb51aca55d82538e9d493908afa62217ff5d173a994af9"
     },
     "https://developer.apple.com/tutorials/data/documentation/clockkit/clkcomplicationtemplateextralargeringtext/textprovider.json": {
       "etag": "\"2ef3-65d55e5be6a26-df\"",
@@ -3725,6 +4280,11 @@
       "file_path": "documentation/ClockKit/clkcomplicationtemplateextralargesimpleimage/init(imageprovider).md",
       "hash": "72d43809afa99ee50bd0cbc408b93278533ab4d9d40421e697e480c3bebe2850"
     },
+    "https://developer.apple.com/tutorials/data/documentation/clockkit/clkcomplicationtemplateextralargesimpleimage/templatewithimageprovider:.json": {
+      "etag": "\"21fe-65d55e5c1afe1-df\"",
+      "file_path": "documentation/ClockKit/clkcomplicationtemplateextralargesimpleimage/templatewithimageprovider_.md",
+      "hash": "56571efaae7f31bb3f4153d3c336b7a76ddb09e1c73fa2ea172019c2d39db648"
+    },
     "https://developer.apple.com/tutorials/data/documentation/clockkit/clkcomplicationtemplateextralargesimpletext.json": {
       "etag": "\"60e0-65d55e5be6a26-df\"",
       "file_path": "documentation/ClockKit/clkcomplicationtemplateextralargesimpletext.md",
@@ -3734,6 +4294,11 @@
       "etag": "\"2800-65d55e5cbeb38-df\"",
       "file_path": "documentation/ClockKit/clkcomplicationtemplateextralargesimpletext/init(textprovider).md",
       "hash": "6fb7f164e2b27e3ec7d13b6b75c6845e9562b11c20f577a112c0e3a598109884"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/clockkit/clkcomplicationtemplateextralargesimpletext/templatewithtextprovider:.json": {
+      "etag": "\"1f54-65d55e5cbeb38-df\"",
+      "file_path": "documentation/ClockKit/clkcomplicationtemplateextralargesimpletext/templatewithtextprovider_.md",
+      "hash": "adbf9229c0077c1668f6071817d80137e7a01acb1971f8bc92ff80993e1c56fc"
     },
     "https://developer.apple.com/tutorials/data/documentation/clockkit/clkcomplicationtemplateextralargesimpletext/textprovider.json": {
       "etag": "\"234f-65d55e5cbeb38-df\"",
@@ -3765,6 +4330,11 @@
       "file_path": "documentation/ClockKit/clkcomplicationtemplateextralargestackimage/line2textprovider.md",
       "hash": "9d69fce8934a046c736f0baf5b1ea52502b33f871b8e9b905caeea0a0e5724f1"
     },
+    "https://developer.apple.com/tutorials/data/documentation/clockkit/clkcomplicationtemplateextralargestackimage/templatewithline1imageprovider:line2textprovider:.json": {
+      "etag": "\"2bee-65d55e5c1afe1-df\"",
+      "file_path": "documentation/ClockKit/clkcomplicationtemplateextralargestackimage/templatewithline1imageprovider_line2textprovider_.md",
+      "hash": "6d1a3acc0a79c4d9919441142c8dd0576fb320b42e1197277c5ff6af8deebd16"
+    },
     "https://developer.apple.com/tutorials/data/documentation/clockkit/clkcomplicationtemplateextralargestacktext.json": {
       "etag": "\"6f00-65d55e5d2936e-df\"",
       "file_path": "documentation/ClockKit/clkcomplicationtemplateextralargestacktext.md",
@@ -3790,6 +4360,11 @@
       "file_path": "documentation/ClockKit/clkcomplicationtemplateextralargestacktext/line2textprovider.md",
       "hash": "e70efd1a0beb133d35cb98584b021a1cc9ecf411a9f9a1def36bb10483cc19f5"
     },
+    "https://developer.apple.com/tutorials/data/documentation/clockkit/clkcomplicationtemplateextralargestacktext/templatewithline1textprovider:line2textprovider:.json": {
+      "etag": "\"24eb-65d55e5d2936e-df\"",
+      "file_path": "documentation/ClockKit/clkcomplicationtemplateextralargestacktext/templatewithline1textprovider_line2textprovider_.md",
+      "hash": "64456a42ecd5cb58e7201c8c1652489fada7f8eb632aedade76cdacd41700b40"
+    },
     "https://developer.apple.com/tutorials/data/documentation/clockkit/clkcomplicationtemplategraphicbezelcirculartext.json": {
       "etag": "\"6e7c-65d55e5ca1e99-df\"",
       "file_path": "documentation/ClockKit/clkcomplicationtemplategraphicbezelcirculartext.md",
@@ -3809,6 +4384,16 @@
       "etag": "\"4331-65d55e5c33df2-df\"",
       "file_path": "documentation/ClockKit/clkcomplicationtemplategraphicbezelcirculartext/init(circulartemplate,textprovider).md",
       "hash": "c9917b1134f999e2b3eaad064199eda307240cca3589dfc4392b99796a079bd1"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/clockkit/clkcomplicationtemplategraphicbezelcirculartext/templatewithcirculartemplate:.json": {
+      "etag": "\"2e82-65d55e5c33df2-df\"",
+      "file_path": "documentation/ClockKit/clkcomplicationtemplategraphicbezelcirculartext/templatewithcirculartemplate_.md",
+      "hash": "704c997a8a11917ee77de5e3bb4ed43cf169a877259782db659e60d9875d45fe"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/clockkit/clkcomplicationtemplategraphicbezelcirculartext/templatewithcirculartemplate:textprovider:.json": {
+      "etag": "\"3589-65d55e5c33df2-df\"",
+      "file_path": "documentation/ClockKit/clkcomplicationtemplategraphicbezelcirculartext/templatewithcirculartemplate_textprovider_.md",
+      "hash": "644196e51f1e369c510b60171d17863e14a3cb8d0f078432346aaa664723de94"
     },
     "https://developer.apple.com/tutorials/data/documentation/clockkit/clkcomplicationtemplategraphicbezelcirculartext/textprovider.json": {
       "etag": "\"2e0d-65d55e5c33df2-df\"",
@@ -3840,6 +4425,11 @@
       "file_path": "documentation/ClockKit/clkcomplicationtemplategraphiccircularclosedgaugeimage/init(gaugeprovider,imageprovider).md",
       "hash": "6841a436b9d176976a2e397adf0d065db9d8b3b1a83ad171f53ab44fa5a7e593"
     },
+    "https://developer.apple.com/tutorials/data/documentation/clockkit/clkcomplicationtemplategraphiccircularclosedgaugeimage/templatewithgaugeprovider:imageprovider:.json": {
+      "etag": "\"2952-65d55e5c86ba3-df\"",
+      "file_path": "documentation/ClockKit/clkcomplicationtemplategraphiccircularclosedgaugeimage/templatewithgaugeprovider_imageprovider_.md",
+      "hash": "a0cc32892c31b77956f423f72ab7c3d992ebe45f60fc8a1ee7ec0a3c8fca3b33"
+    },
     "https://developer.apple.com/tutorials/data/documentation/clockkit/clkcomplicationtemplategraphiccircularclosedgaugetext.json": {
       "etag": "\"7f47-65d55e5c6f7cb-df\"",
       "file_path": "documentation/ClockKit/clkcomplicationtemplategraphiccircularclosedgaugetext.md",
@@ -3859,6 +4449,11 @@
       "etag": "\"342b-65d55e5c6f7cb-df\"",
       "file_path": "documentation/ClockKit/clkcomplicationtemplategraphiccircularclosedgaugetext/init(gaugeprovider,centertextprovider).md",
       "hash": "77a56c02d175ac0a67c73599290ab8468e8ee0e26915587c9b8f78bc25af9436"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/clockkit/clkcomplicationtemplategraphiccircularclosedgaugetext/templatewithgaugeprovider:centertextprovider:.json": {
+      "etag": "\"2947-65d55e5c6f7cb-df\"",
+      "file_path": "documentation/ClockKit/clkcomplicationtemplategraphiccircularclosedgaugetext/templatewithgaugeprovider_centertextprovider_.md",
+      "hash": "de825fe4cc80c5465d12d0cca06b6bef3ecf0203d9e9a65b4fa1220368c5c7f7"
     },
     "https://developer.apple.com/tutorials/data/documentation/clockkit/clkcomplicationtemplategraphiccircularclosedgaugeview.json": {
       "etag": "\"55a6-65d55e5d2936e-df\"",
@@ -3895,6 +4490,11 @@
       "file_path": "documentation/ClockKit/clkcomplicationtemplategraphiccircularimage/init(imageprovider).md",
       "hash": "3792cf723136c03cd8f3fab5e2576dbe3c095141783545afbb68955f273b18f0"
     },
+    "https://developer.apple.com/tutorials/data/documentation/clockkit/clkcomplicationtemplategraphiccircularimage/templatewithimageprovider:.json": {
+      "etag": "\"1f29-65d55e5c01d2a-df\"",
+      "file_path": "documentation/ClockKit/clkcomplicationtemplategraphiccircularimage/templatewithimageprovider_.md",
+      "hash": "0078a40e87c11c62b42876508db142e93cbc6802bcb7557ddaa0e979ba3a7966"
+    },
     "https://developer.apple.com/tutorials/data/documentation/clockkit/clkcomplicationtemplategraphiccircularopengaugeimage.json": {
       "etag": "\"8f75-65d55e5cda25f-df\"",
       "file_path": "documentation/ClockKit/clkcomplicationtemplategraphiccircularopengaugeimage.md",
@@ -3920,6 +4520,11 @@
       "file_path": "documentation/ClockKit/clkcomplicationtemplategraphiccircularopengaugeimage/init(gaugeprovider,bottomimageprovider,centertextprovider).md",
       "hash": "3395a2aec40b6413a6451e71d092daa1bf4fc8fbc45cdb4a63f37ea584410b53"
     },
+    "https://developer.apple.com/tutorials/data/documentation/clockkit/clkcomplicationtemplategraphiccircularopengaugeimage/templatewithgaugeprovider:bottomimageprovider:centertextprovider:.json": {
+      "etag": "\"3329-65d55e5c1afe1-df\"",
+      "file_path": "documentation/ClockKit/clkcomplicationtemplategraphiccircularopengaugeimage/templatewithgaugeprovider_bottomimageprovider_centertextprovider_.md",
+      "hash": "0b6f1ae77ba530fb36edf871496458460f5a1f7dde1332a19a4bb9d7126c0842"
+    },
     "https://developer.apple.com/tutorials/data/documentation/clockkit/clkcomplicationtemplategraphiccircularopengaugerangetext.json": {
       "etag": "\"911f-65d55e5ca1e99-df\"",
       "file_path": "documentation/ClockKit/clkcomplicationtemplategraphiccircularopengaugerangetext.md",
@@ -3944,6 +4549,11 @@
       "etag": "\"38b1-65d55e5c01d2a-df\"",
       "file_path": "documentation/ClockKit/clkcomplicationtemplategraphiccircularopengaugerangetext/leadingtextprovider.md",
       "hash": "f98c5cc61f03caaa7bdaec2c0ab2d3ab037ec74fa1f15fd9885d2f657a126434"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/clockkit/clkcomplicationtemplategraphiccircularopengaugerangetext/templatewithgaugeprovider:leadingtextprovider:trailingtextprovider:centertextprovider:.json": {
+      "etag": "\"3379-65d55e5c01d2a-df\"",
+      "file_path": "documentation/ClockKit/clkcomplicationtemplategraphiccircularopengaugerangetext/templatewithgaugeprovider_leadingtextprovider_trailingtextprovider_centertextprovider_.md",
+      "hash": "bea95398536f1254f1aa6ca81139cf1a10578c35506478c2b6f6acdef269871c"
     },
     "https://developer.apple.com/tutorials/data/documentation/clockkit/clkcomplicationtemplategraphiccircularopengaugerangetext/trailingtextprovider.json": {
       "etag": "\"38bb-65d55e5be6a26-df\"",
@@ -3974,6 +4584,11 @@
       "etag": "\"3ca4-65d55e5c57bdf-df\"",
       "file_path": "documentation/ClockKit/clkcomplicationtemplategraphiccircularopengaugesimpletext/init(gaugeprovider,bottomtextprovider,centertextprovider).md",
       "hash": "de78891606cebb4128181505f426e91cd2194e72286ab6e9f65d85492149eb70"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/clockkit/clkcomplicationtemplategraphiccircularopengaugesimpletext/templatewithgaugeprovider:bottomtextprovider:centertextprovider:.json": {
+      "etag": "\"2ecb-65d55e5c57bdf-df\"",
+      "file_path": "documentation/ClockKit/clkcomplicationtemplategraphiccircularopengaugesimpletext/templatewithgaugeprovider_bottomtextprovider_centertextprovider_.md",
+      "hash": "51633f768eed4cd637a6a6803d46d78073feb38423775f0f7fcac5cdb0d621e9"
     },
     "https://developer.apple.com/tutorials/data/documentation/clockkit/clkcomplicationtemplategraphiccircularopengaugeview.json": {
       "etag": "\"5ac8-65d55e5c01d2a-df\"",
@@ -4020,6 +4635,11 @@
       "file_path": "documentation/ClockKit/clkcomplicationtemplategraphiccircularstackimage/line2textprovider.md",
       "hash": "cf0c1e5c00c48414f35df5ab1fccf497b3f66ff910ece326a1f3eb8d1023aedf"
     },
+    "https://developer.apple.com/tutorials/data/documentation/clockkit/clkcomplicationtemplategraphiccircularstackimage/templatewithline1imageprovider:line2textprovider:.json": {
+      "etag": "\"293c-65d55e5be6a26-df\"",
+      "file_path": "documentation/ClockKit/clkcomplicationtemplategraphiccircularstackimage/templatewithline1imageprovider_line2textprovider_.md",
+      "hash": "d4a3c4ab81af0321732746f145da6c90fb658ac74531ca3fd19cb382ec3a7da1"
+    },
     "https://developer.apple.com/tutorials/data/documentation/clockkit/clkcomplicationtemplategraphiccircularstacktext.json": {
       "etag": "\"6b88-65d55e5d0a413-df\"",
       "file_path": "documentation/ClockKit/clkcomplicationtemplategraphiccircularstacktext.md",
@@ -4039,6 +4659,11 @@
       "etag": "\"2ab7-65d55e5ca1e99-df\"",
       "file_path": "documentation/ClockKit/clkcomplicationtemplategraphiccircularstacktext/line2textprovider.md",
       "hash": "743b5ed0fd8dba8faa4ff4a56fb1df450b1874ed29c8670e44b80bbb6a1db11e"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/clockkit/clkcomplicationtemplategraphiccircularstacktext/templatewithline1textprovider:line2textprovider:.json": {
+      "etag": "\"2451-65d55e5ca1e99-df\"",
+      "file_path": "documentation/ClockKit/clkcomplicationtemplategraphiccircularstacktext/templatewithline1textprovider_line2textprovider_.md",
+      "hash": "ffae0d5fb7bf16f039a1718f31298e3081fbebe128a797603cd788fbe17e4b7e"
     },
     "https://developer.apple.com/tutorials/data/documentation/clockkit/clkcomplicationtemplategraphiccircularstackviewtext.json": {
       "etag": "\"5349-65d55e5cbeb38-df\"",
@@ -4090,6 +4715,11 @@
       "file_path": "documentation/ClockKit/clkcomplicationtemplategraphiccornercircularimage/init(imageprovider).md",
       "hash": "bf26b83289838f4335316946ad176ac00decfaf429cc6f9c723bc64d715ec457"
     },
+    "https://developer.apple.com/tutorials/data/documentation/clockkit/clkcomplicationtemplategraphiccornercircularimage/templatewithimageprovider:.json": {
+      "etag": "\"1fcf-65d55e5c57bdf-df\"",
+      "file_path": "documentation/ClockKit/clkcomplicationtemplategraphiccornercircularimage/templatewithimageprovider_.md",
+      "hash": "6a0bc950ccf4de96dfdacbfe21b9dfb63fdc864bf62821d680ac8239f30a134b"
+    },
     "https://developer.apple.com/tutorials/data/documentation/clockkit/clkcomplicationtemplategraphiccornercircularview.json": {
       "etag": "\"4ba5-65d55e5c6f7cb-df\"",
       "file_path": "documentation/ClockKit/clkcomplicationtemplategraphiccornercircularview.md",
@@ -4135,6 +4765,16 @@
       "file_path": "documentation/ClockKit/clkcomplicationtemplategraphiccornergaugeimage/leadingtextprovider.md",
       "hash": "a3cabc41b5f984b94e1aa88cf08fce31ab1508aeab39e1139beb2095428173e6"
     },
+    "https://developer.apple.com/tutorials/data/documentation/clockkit/clkcomplicationtemplategraphiccornergaugeimage/templatewithgaugeprovider:imageprovider:.json": {
+      "etag": "\"3732-65d55e5d0a413-df\"",
+      "file_path": "documentation/ClockKit/clkcomplicationtemplategraphiccornergaugeimage/templatewithgaugeprovider_imageprovider_.md",
+      "hash": "f667fd2ee0989a8e8f88627823e67f44be8cc923605cb9b95b8022c72329e40a"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/clockkit/clkcomplicationtemplategraphiccornergaugeimage/templatewithgaugeprovider:leadingtextprovider:trailingtextprovider:imageprovider:.json": {
+      "etag": "\"410b-65d55e5d0a413-df\"",
+      "file_path": "documentation/ClockKit/clkcomplicationtemplategraphiccornergaugeimage/templatewithgaugeprovider_leadingtextprovider_trailingtextprovider_imageprovider_.md",
+      "hash": "94d3fe3224e735b5e1d63cb4b1044231b3dc0dd175a4a02027769110d009d193"
+    },
     "https://developer.apple.com/tutorials/data/documentation/clockkit/clkcomplicationtemplategraphiccornergaugeimage/trailingtextprovider.json": {
       "etag": "\"373e-65d55e5cf1214-df\"",
       "file_path": "documentation/ClockKit/clkcomplicationtemplategraphiccornergaugeimage/trailingtextprovider.md",
@@ -4169,6 +4809,16 @@
       "etag": "\"3702-65d55e5d0a413-df\"",
       "file_path": "documentation/ClockKit/clkcomplicationtemplategraphiccornergaugetext/outertextprovider.md",
       "hash": "26d01f8b6f15a9e73c59f9edd119019578b7e37e7030198b42e3c6f4d7c21a8f"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/clockkit/clkcomplicationtemplategraphiccornergaugetext/templatewithgaugeprovider:leadingtextprovider:trailingtextprovider:outertextprovider:.json": {
+      "etag": "\"3d4c-65d55e5d0a413-df\"",
+      "file_path": "documentation/ClockKit/clkcomplicationtemplategraphiccornergaugetext/templatewithgaugeprovider_leadingtextprovider_trailingtextprovider_outertextprovider_.md",
+      "hash": "ba6d277ac8b80e0260ed75e5031b0b417d4a9399bf6b3b27184b032f1a02ff2b"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/clockkit/clkcomplicationtemplategraphiccornergaugetext/templatewithgaugeprovider:outertextprovider:.json": {
+      "etag": "\"37b5-65d55e5d0a413-df\"",
+      "file_path": "documentation/ClockKit/clkcomplicationtemplategraphiccornergaugetext/templatewithgaugeprovider_outertextprovider_.md",
+      "hash": "6e11840390dda4d621d8e0c5ed67cb129621e6a1300ef856d0bcf14d2195e598"
     },
     "https://developer.apple.com/tutorials/data/documentation/clockkit/clkcomplicationtemplategraphiccornergaugetext/trailingtextprovider.json": {
       "etag": "\"3743-65d55e5d0a413-df\"",
@@ -4225,6 +4875,11 @@
       "file_path": "documentation/ClockKit/clkcomplicationtemplategraphiccornerstacktext/outertextprovider.md",
       "hash": "1fa79156f2d41f068a2d55c540eada510615260c744b8375828a0a961121a6c1"
     },
+    "https://developer.apple.com/tutorials/data/documentation/clockkit/clkcomplicationtemplategraphiccornerstacktext/templatewithinnertextprovider:outertextprovider:.json": {
+      "etag": "\"24a3-65d55e5cda25f-df\"",
+      "file_path": "documentation/ClockKit/clkcomplicationtemplategraphiccornerstacktext/templatewithinnertextprovider_outertextprovider_.md",
+      "hash": "ca2a839199388fd88bdd02c316b5975d1208510200b0400b29ae0c1f7f6081ea"
+    },
     "https://developer.apple.com/tutorials/data/documentation/clockkit/clkcomplicationtemplategraphiccornertextimage.json": {
       "etag": "\"7374-65d55e5d3e9e1-df\"",
       "file_path": "documentation/ClockKit/clkcomplicationtemplategraphiccornertextimage.md",
@@ -4239,6 +4894,11 @@
       "etag": "\"32a1-65d55e5d2936e-df\"",
       "file_path": "documentation/ClockKit/clkcomplicationtemplategraphiccornertextimage/init(textprovider,imageprovider).md",
       "hash": "f30e41549b6b0856fed8b0e472e20e3cb7f242c3cb498e47e5f12134f182c647"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/clockkit/clkcomplicationtemplategraphiccornertextimage/templatewithtextprovider:imageprovider:.json": {
+      "etag": "\"27cd-65d55e5d2936e-df\"",
+      "file_path": "documentation/ClockKit/clkcomplicationtemplategraphiccornertextimage/templatewithtextprovider_imageprovider_.md",
+      "hash": "1a8fb8f4086b66e70f2a8c539e3dd82860610de182b15d60bf732fcd549874b7"
     },
     "https://developer.apple.com/tutorials/data/documentation/clockkit/clkcomplicationtemplategraphiccornertextimage/textprovider.json": {
       "etag": "\"2a0a-65d55e5d2936e-df\"",
@@ -4290,6 +4950,11 @@
       "file_path": "documentation/ClockKit/clkcomplicationtemplategraphicextralargecircularclosedgaugeimage/init(gaugeprovider,imageprovider).md",
       "hash": "1e5b830cec54c4c6f89733d7e40c74d26ca2750a65e29aad325aed67b70b3cd5"
     },
+    "https://developer.apple.com/tutorials/data/documentation/clockkit/clkcomplicationtemplategraphicextralargecircularclosedgaugeimage/templatewithgaugeprovider:imageprovider:.json": {
+      "etag": "\"2a5c-65d55e5cbeb38-df\"",
+      "file_path": "documentation/ClockKit/clkcomplicationtemplategraphicextralargecircularclosedgaugeimage/templatewithgaugeprovider_imageprovider_.md",
+      "hash": "88bdae2fe8cf995c6f1b5cc648e58a529e66e700364139874e5fc89cc3f027a8"
+    },
     "https://developer.apple.com/tutorials/data/documentation/clockkit/clkcomplicationtemplategraphicextralargecircularclosedgaugetext.json": {
       "etag": "\"8516-65d55e5cf1214-df\"",
       "file_path": "documentation/ClockKit/clkcomplicationtemplategraphicextralargecircularclosedgaugetext.md",
@@ -4309,6 +4974,11 @@
       "etag": "\"366d-65d55e5d0a413-df\"",
       "file_path": "documentation/ClockKit/clkcomplicationtemplategraphicextralargecircularclosedgaugetext/init(gaugeprovider,centertextprovider).md",
       "hash": "8b66530b87650c708c1c2c3d8ec280876a606736b4993691230924ad82f7a267"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/clockkit/clkcomplicationtemplategraphicextralargecircularclosedgaugetext/templatewithgaugeprovider:centertextprovider:.json": {
+      "etag": "\"2a0c-65d55e5d0a413-df\"",
+      "file_path": "documentation/ClockKit/clkcomplicationtemplategraphicextralargecircularclosedgaugetext/templatewithgaugeprovider_centertextprovider_.md",
+      "hash": "262d3e8e96087f85c66fe2fe1ae876ca78d5db5f3fa5ec5dd025896320b3b4e0"
     },
     "https://developer.apple.com/tutorials/data/documentation/clockkit/clkcomplicationtemplategraphicextralargecircularclosedgaugeview.json": {
       "etag": "\"5849-65d55e5be6a26-df\"",
@@ -4345,6 +5015,11 @@
       "file_path": "documentation/ClockKit/clkcomplicationtemplategraphicextralargecircularimage/init(imageprovider).md",
       "hash": "9c87ab68279d2ca7751ad09cfe770afc37976fb68a94a2c87e298f59c563638c"
     },
+    "https://developer.apple.com/tutorials/data/documentation/clockkit/clkcomplicationtemplategraphicextralargecircularimage/templatewithimageprovider:.json": {
+      "etag": "\"2025-65d55e5ca1e99-df\"",
+      "file_path": "documentation/ClockKit/clkcomplicationtemplategraphicextralargecircularimage/templatewithimageprovider_.md",
+      "hash": "00fff1e60a2988900ed2ec927f6ad3317ca0664a3eb4613eaf795bca6b822087"
+    },
     "https://developer.apple.com/tutorials/data/documentation/clockkit/clkcomplicationtemplategraphicextralargecircularopengaugeimage.json": {
       "etag": "\"9547-65d55e5be6a26-df\"",
       "file_path": "documentation/ClockKit/clkcomplicationtemplategraphicextralargecircularopengaugeimage.md",
@@ -4370,6 +5045,11 @@
       "file_path": "documentation/ClockKit/clkcomplicationtemplategraphicextralargecircularopengaugeimage/init(gaugeprovider,bottomimageprovider,centertextprovider).md",
       "hash": "d371a64b3ac25c8b1c6631a3d8ade44530877f26bb3d68a2f004cecf40fae8ee"
     },
+    "https://developer.apple.com/tutorials/data/documentation/clockkit/clkcomplicationtemplategraphicextralargecircularopengaugeimage/templatewithgaugeprovider:bottomimageprovider:centertextprovider:.json": {
+      "etag": "\"33dd-65d55e5be6a26-df\"",
+      "file_path": "documentation/ClockKit/clkcomplicationtemplategraphicextralargecircularopengaugeimage/templatewithgaugeprovider_bottomimageprovider_centertextprovider_.md",
+      "hash": "b7f8a5ebc0601393668f40112e35337132aed9ecbeef4d2d0f4c1853de10254f"
+    },
     "https://developer.apple.com/tutorials/data/documentation/clockkit/clkcomplicationtemplategraphicextralargecircularopengaugerangetext.json": {
       "etag": "\"97a1-65d55e5c6f7cb-df\"",
       "file_path": "documentation/ClockKit/clkcomplicationtemplategraphicextralargecircularopengaugerangetext.md",
@@ -4394,6 +5074,11 @@
       "etag": "\"3a66-65d55e5cf1214-df\"",
       "file_path": "documentation/ClockKit/clkcomplicationtemplategraphicextralargecircularopengaugerangetext/leadingtextprovider.md",
       "hash": "cc2817dde9c1d8069ab4a035b590620a0106bd1e06113849a472d06e6e674d07"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/clockkit/clkcomplicationtemplategraphicextralargecircularopengaugerangetext/templatewithgaugeprovider:leadingtextprovider:trailingtextprovider:centertextprovider:.json": {
+      "etag": "\"3476-65d55e5cf1214-df\"",
+      "file_path": "documentation/ClockKit/clkcomplicationtemplategraphicextralargecircularopengaugerangetext/templatewithgaugeprovider_leadingtextprovider_trailingtextprovider_centertextprovider_.md",
+      "hash": "735ee696be3b162766bc886ba9d08fd664a16ae49fcf96dcc527a705e5026bd6"
     },
     "https://developer.apple.com/tutorials/data/documentation/clockkit/clkcomplicationtemplategraphicextralargecircularopengaugerangetext/trailingtextprovider.json": {
       "etag": "\"3a70-65d55e5cf1214-df\"",
@@ -4424,6 +5109,11 @@
       "etag": "\"3f1f-65d55e5d2936e-df\"",
       "file_path": "documentation/ClockKit/clkcomplicationtemplategraphicextralargecircularopengaugesimpletext/init(gaugeprovider,bottomtextprovider,centertextprovider).md",
       "hash": "7cb5ab958b5e2304e0e0fb524976d7c690d664fc9025988dd07f5fe11dc6cd31"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/clockkit/clkcomplicationtemplategraphicextralargecircularopengaugesimpletext/templatewithgaugeprovider:bottomtextprovider:centertextprovider:.json": {
+      "etag": "\"2fca-65d55e5d2936e-df\"",
+      "file_path": "documentation/ClockKit/clkcomplicationtemplategraphicextralargecircularopengaugesimpletext/templatewithgaugeprovider_bottomtextprovider_centertextprovider_.md",
+      "hash": "a7bba95ddb97a3b949e777fff26460c7aa6d29348070eb2f317a5dd079e65637"
     },
     "https://developer.apple.com/tutorials/data/documentation/clockkit/clkcomplicationtemplategraphicextralargecircularopengaugeview.json": {
       "etag": "\"5d2e-65d55e5cda25f-df\"",
@@ -4470,6 +5160,11 @@
       "file_path": "documentation/ClockKit/clkcomplicationtemplategraphicextralargecircularstackimage/line2textprovider.md",
       "hash": "c16d0fb75c7ad3800175eeb112fa974bcfa72e3e27fddb3b36b61be1d6a4e038"
     },
+    "https://developer.apple.com/tutorials/data/documentation/clockkit/clkcomplicationtemplategraphicextralargecircularstackimage/templatewithline1imageprovider:line2textprovider:.json": {
+      "etag": "\"2a38-65d55e5cda25f-df\"",
+      "file_path": "documentation/ClockKit/clkcomplicationtemplategraphicextralargecircularstackimage/templatewithline1imageprovider_line2textprovider_.md",
+      "hash": "a6318dadd6f15166d066f4e93766ccd4203743d7c232738cc3c6b9b42f2037cd"
+    },
     "https://developer.apple.com/tutorials/data/documentation/clockkit/clkcomplicationtemplategraphicextralargecircularstacktext.json": {
       "etag": "\"72ce-65d55e5d2936e-df\"",
       "file_path": "documentation/ClockKit/clkcomplicationtemplategraphicextralargecircularstacktext.md",
@@ -4489,6 +5184,11 @@
       "etag": "\"2c0c-65d55e5cf1214-df\"",
       "file_path": "documentation/ClockKit/clkcomplicationtemplategraphicextralargecircularstacktext/line2textprovider.md",
       "hash": "299de7032d852c51c2e46e26d1dd101aad1468e152295274c3012b7300d8553a"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/clockkit/clkcomplicationtemplategraphicextralargecircularstacktext/templatewithline1textprovider:line2textprovider:.json": {
+      "etag": "\"2556-65d55e5cf1214-df\"",
+      "file_path": "documentation/ClockKit/clkcomplicationtemplategraphicextralargecircularstacktext/templatewithline1textprovider_line2textprovider_.md",
+      "hash": "4bb741cc2843e1f449a49e5f465ca41bed37e762450eeb9c354eec891e2ed1bd"
     },
     "https://developer.apple.com/tutorials/data/documentation/clockkit/clkcomplicationtemplategraphicextralargecircularstackviewtext.json": {
       "etag": "\"55dc-65d55e5c57bdf-df\"",
@@ -4540,6 +5240,11 @@
       "file_path": "documentation/ClockKit/clkcomplicationtemplategraphicrectangularfullimage/init(imageprovider).md",
       "hash": "3befa85d89d78259f65e916d7f1d508798f6c51d8ee06e0b9092af3235e77aca"
     },
+    "https://developer.apple.com/tutorials/data/documentation/clockkit/clkcomplicationtemplategraphicrectangularfullimage/templatewithimageprovider:.json": {
+      "etag": "\"1ffa-65d55e5c1afe1-df\"",
+      "file_path": "documentation/ClockKit/clkcomplicationtemplategraphicrectangularfullimage/templatewithimageprovider_.md",
+      "hash": "acc9ac4e3b64a0068f23c6cdd7e8c14bc87ec4fcaf1a8e3b21361e75db7efcbe"
+    },
     "https://developer.apple.com/tutorials/data/documentation/clockkit/clkcomplicationtemplategraphicrectangularfullview.json": {
       "etag": "\"5c6e-65d55e5c01d2a-df\"",
       "file_path": "documentation/ClockKit/clkcomplicationtemplategraphicrectangularfullview.md",
@@ -4569,6 +5274,11 @@
       "etag": "\"337e-65d55e5c86ba3-df\"",
       "file_path": "documentation/ClockKit/clkcomplicationtemplategraphicrectangularlargeimage/init(textprovider,imageprovider).md",
       "hash": "2a90d05647bdc99468bf12fb17640875b1f88eeb3864f3f5496c6b588d35e9fe"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/clockkit/clkcomplicationtemplategraphicrectangularlargeimage/templatewithtextprovider:imageprovider:.json": {
+      "etag": "\"2899-65d55e5c86ba3-df\"",
+      "file_path": "documentation/ClockKit/clkcomplicationtemplategraphicrectangularlargeimage/templatewithtextprovider_imageprovider_.md",
+      "hash": "fd2a79c764f353caee4b952dfceff18e9fa813c7d58f6185c90f87e5463152e9"
     },
     "https://developer.apple.com/tutorials/data/documentation/clockkit/clkcomplicationtemplategraphicrectangularlargeimage/textprovider.json": {
       "etag": "\"2bb3-65d55e5c86ba3-df\"",
@@ -4640,6 +5350,26 @@
       "file_path": "documentation/ClockKit/clkcomplicationtemplategraphicrectangularstandardbody/init(headertextprovider,body1textprovider,body2textprovider).md",
       "hash": "68cf04936b8f13dd2759b28787d97f456f8c23f4ec733bbcd46354407c6c4af3"
     },
+    "https://developer.apple.com/tutorials/data/documentation/clockkit/clkcomplicationtemplategraphicrectangularstandardbody/templatewithheaderimageprovider:headertextprovider:body1textprovider:.json": {
+      "etag": "\"585d-65d55e5c6f7cb-df\"",
+      "file_path": "documentation/ClockKit/clkcomplicationtemplategraphicrectangularstandardbody/templatewithheaderimageprovider_headertextprovider_body1textprovider_.md",
+      "hash": "08eafc385ab10d97582e779eee5330d0d5e9009d4ed3f45177c92afe70cb5f8e"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/clockkit/clkcomplicationtemplategraphicrectangularstandardbody/templatewithheaderimageprovider:headertextprovider:body1textprovider:body2textprovider:.json": {
+      "etag": "\"5b08-65d55e5c6f7cb-df\"",
+      "file_path": "documentation/ClockKit/clkcomplicationtemplategraphicrectangularstandardbody/templatewithheaderimageprovider_headertextprovider_body1textprovider_body2textprovider_.md",
+      "hash": "a17d780bcafb228b29c79583d50a1fee70f39cf9d6bb65537fb796ee3f1f47f4"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/clockkit/clkcomplicationtemplategraphicrectangularstandardbody/templatewithheadertextprovider:body1textprovider:.json": {
+      "etag": "\"511c-65d55e5c6f7cb-df\"",
+      "file_path": "documentation/ClockKit/clkcomplicationtemplategraphicrectangularstandardbody/templatewithheadertextprovider_body1textprovider_.md",
+      "hash": "be41ba3d932b2fb0310eb960e54b77e34cbdbe9b86b9bba45a3f3c8540096b01"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/clockkit/clkcomplicationtemplategraphicrectangularstandardbody/templatewithheadertextprovider:body1textprovider:body2textprovider:.json": {
+      "etag": "\"53d4-65d55e5c6f7cb-df\"",
+      "file_path": "documentation/ClockKit/clkcomplicationtemplategraphicrectangularstandardbody/templatewithheadertextprovider_body1textprovider_body2textprovider_.md",
+      "hash": "847f0635cba2d87e656be472f160ed485aa42708c361430e6a52cb42eeb7771c"
+    },
     "https://developer.apple.com/tutorials/data/documentation/clockkit/clkcomplicationtemplategraphicrectangularstandardbodyview.json": {
       "etag": "\"5e34-65d55e5c1afe1-df\"",
       "file_path": "documentation/ClockKit/clkcomplicationtemplategraphicrectangularstandardbodyview.md",
@@ -4704,6 +5434,16 @@
       "etag": "\"4bcd-65d55e5ca1e99-df\"",
       "file_path": "documentation/ClockKit/clkcomplicationtemplategraphicrectangulartextgauge/init(headertextprovider,body1textprovider,gaugeprovider).md",
       "hash": "f7ce5177436f6524faf30a33e0381139145bad17ca4aa42bdf7780b016e32e8f"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/clockkit/clkcomplicationtemplategraphicrectangulartextgauge/templatewithheaderimageprovider:headertextprovider:body1textprovider:gaugeprovider:.json": {
+      "etag": "\"4411-65d55e5ca1e99-df\"",
+      "file_path": "documentation/ClockKit/clkcomplicationtemplategraphicrectangulartextgauge/templatewithheaderimageprovider_headertextprovider_body1textprovider_gaugeprovider_.md",
+      "hash": "f7befcf824a98ac4ed508ce5151cf96caf42abc26fbef8e4a305d2cbb53f03b4"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/clockkit/clkcomplicationtemplategraphicrectangulartextgauge/templatewithheadertextprovider:body1textprovider:gaugeprovider:.json": {
+      "etag": "\"3cd5-65d55e5ca1e99-df\"",
+      "file_path": "documentation/ClockKit/clkcomplicationtemplategraphicrectangulartextgauge/templatewithheadertextprovider_body1textprovider_gaugeprovider_.md",
+      "hash": "7632f793be91e0fd257f51b3dd2bafde15066d142e2bb7c7adfd3c6ddf56b421"
     },
     "https://developer.apple.com/tutorials/data/documentation/clockkit/clkcomplicationtemplategraphicrectangulartextgaugeview.json": {
       "etag": "\"5fda-65d55e5d3e9e1-df\"",
@@ -4800,6 +5540,16 @@
       "file_path": "documentation/ClockKit/clkcomplicationtemplatemodularlargecolumns/row3imageprovider.md",
       "hash": "752c195cae9ea990eb0c2b24eecd353070be45a4678ea1c3e7ce4bdfd9f5e0d4"
     },
+    "https://developer.apple.com/tutorials/data/documentation/clockkit/clkcomplicationtemplatemodularlargecolumns/templatewithrow1column1textprovider:row1column2textprovider:row2column1textprovider:row2column2textprovider:row3column1textprovider:row3column2textprovider:.json": {
+      "etag": "\"584b-65d55e5cf1214-df\"",
+      "file_path": "documentation/ClockKit/clkcomplicationtemplatemodularlargecolumns/templatewithrow1column1textprovider_row1column2textprovider_row2column1textprovider_row2column2textprovider_row3column1textprovider_row3column2textprovider_.md",
+      "hash": "dcc36e60750017a723d7db7e65b94026d0a8ff9add20b7a418fbc8bf1d281808"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/clockkit/clkcomplicationtemplatemodularlargecolumns/templatewithrow1imageprovider:row1column1textprovider:row1column2textprovider:row2imageprovider:row2column1textprovider:row2column2textprovider:row3imageprovider:row3column1textprovider:row3column2textprovider:.json": {
+      "etag": "\"6994-65d55e5cf1214-df\"",
+      "file_path": "documentation/ClockKit/clkcomplicationtemplatemodularlargecolumns/templatewithrow1imageprovider_row1column1textprovider_row1column2textprovider_row2imageprovider_row2column1textprovider_row2column2textprovider_row3imageprovider_row3column1textprovider_row3column2textprovider_.md",
+      "hash": "6c0e91ffc97a34c25af75e382e02fb38de3770820194ece2f7ecf3aa5c933289"
+    },
     "https://developer.apple.com/tutorials/data/documentation/clockkit/clkcomplicationtemplatemodularlargestandardbody.json": {
       "etag": "\"a334-65d55e5d2936e-df\"",
       "file_path": "documentation/ClockKit/clkcomplicationtemplatemodularlargestandardbody.md",
@@ -4844,6 +5594,26 @@
       "etag": "\"662f-65d55e5c01d2a-df\"",
       "file_path": "documentation/ClockKit/clkcomplicationtemplatemodularlargestandardbody/init(headertextprovider,body1textprovider,body2textprovider).md",
       "hash": "5c7bb9213ac83a7d25c658049d8f145bbd7deec6046420afe3aeb0907ea71834"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/clockkit/clkcomplicationtemplatemodularlargestandardbody/templatewithheaderimageprovider:headertextprovider:body1textprovider:.json": {
+      "etag": "\"5abc-65d55e5c01d2a-df\"",
+      "file_path": "documentation/ClockKit/clkcomplicationtemplatemodularlargestandardbody/templatewithheaderimageprovider_headertextprovider_body1textprovider_.md",
+      "hash": "c6a9215fbbba84012dafbb5162f9e869d552c623486d48a6ef1e463ff5176557"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/clockkit/clkcomplicationtemplatemodularlargestandardbody/templatewithheaderimageprovider:headertextprovider:body1textprovider:body2textprovider:.json": {
+      "etag": "\"5df6-65d55e5c01d2a-df\"",
+      "file_path": "documentation/ClockKit/clkcomplicationtemplatemodularlargestandardbody/templatewithheaderimageprovider_headertextprovider_body1textprovider_body2textprovider_.md",
+      "hash": "1473eb544d3335717a92029f3d23bcebfb5faef4e4be14ddc4e439b9f2305938"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/clockkit/clkcomplicationtemplatemodularlargestandardbody/templatewithheadertextprovider:body1textprovider:.json": {
+      "etag": "\"50c3-65d55e5c01d2a-df\"",
+      "file_path": "documentation/ClockKit/clkcomplicationtemplatemodularlargestandardbody/templatewithheadertextprovider_body1textprovider_.md",
+      "hash": "ae0499742fd357ac049973bca54fc3ccb8d20c7b507a3378b31844db8d52f106"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/clockkit/clkcomplicationtemplatemodularlargestandardbody/templatewithheadertextprovider:body1textprovider:body2textprovider:.json": {
+      "etag": "\"53fd-65d55e5c01d2a-df\"",
+      "file_path": "documentation/ClockKit/clkcomplicationtemplatemodularlargestandardbody/templatewithheadertextprovider_body1textprovider_body2textprovider_.md",
+      "hash": "03e3ad041312d71aa3dcfd3999d0966a4265ae1f1ccb6b2327c7533fc276e66e"
     },
     "https://developer.apple.com/tutorials/data/documentation/clockkit/clkcomplicationtemplatemodularlargetable.json": {
       "etag": "\"a477-65d55e5d3e9e1-df\"",
@@ -4895,6 +5665,16 @@
       "file_path": "documentation/ClockKit/clkcomplicationtemplatemodularlargetable/row2column2textprovider.md",
       "hash": "d24c75d784cbbd4ff6652b20239a481055de7179dd8e8f932d780910ba44999b"
     },
+    "https://developer.apple.com/tutorials/data/documentation/clockkit/clkcomplicationtemplatemodularlargetable/templatewithheaderimageprovider:headertextprovider:row1column1textprovider:row1column2textprovider:row2column1textprovider:row2column2textprovider:.json": {
+      "etag": "\"55a3-65d55e5cbeb38-df\"",
+      "file_path": "documentation/ClockKit/clkcomplicationtemplatemodularlargetable/templatewithheaderimageprovider_headertextprovider_row1column1textprovider_row1column2textprovider_row2column1textprovider_row2column2textprovider_.md",
+      "hash": "989f17aebc477cdbafc18c6f0666b96123574589c778080e58c84c6055ce0e55"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/clockkit/clkcomplicationtemplatemodularlargetable/templatewithheadertextprovider:row1column1textprovider:row1column2textprovider:row2column1textprovider:row2column2textprovider:.json": {
+      "etag": "\"4b93-65d55e5cbeb38-df\"",
+      "file_path": "documentation/ClockKit/clkcomplicationtemplatemodularlargetable/templatewithheadertextprovider_row1column1textprovider_row1column2textprovider_row2column1textprovider_row2column2textprovider_.md",
+      "hash": "4c88c30b74b08eaad481a6800fb53e87a345a2ba57ac1b8c568bc697cbb98f3b"
+    },
     "https://developer.apple.com/tutorials/data/documentation/clockkit/clkcomplicationtemplatemodularlargetallbody.json": {
       "etag": "\"5d67-65d55e5cda25f-df\"",
       "file_path": "documentation/ClockKit/clkcomplicationtemplatemodularlargetallbody.md",
@@ -4914,6 +5694,11 @@
       "etag": "\"313f-65d55e5c6f7cb-df\"",
       "file_path": "documentation/ClockKit/clkcomplicationtemplatemodularlargetallbody/init(headertextprovider,bodytextprovider).md",
       "hash": "1cc9d3b60d85e4c8f371bc8e6b79e1f073cf74e9aca7aac15003f8ec571825bc"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/clockkit/clkcomplicationtemplatemodularlargetallbody/templatewithheadertextprovider:bodytextprovider:.json": {
+      "etag": "\"251c-65d55e5c6f7cb-df\"",
+      "file_path": "documentation/ClockKit/clkcomplicationtemplatemodularlargetallbody/templatewithheadertextprovider_bodytextprovider_.md",
+      "hash": "56765d262629b387607756b173bd8fe23b7949be262c5b4a776cdbc40a24fd03"
     },
     "https://developer.apple.com/tutorials/data/documentation/clockkit/clkcomplicationtemplatemodularsmallcolumnstext.json": {
       "etag": "\"8910-65d55e5c1afe1-df\"",
@@ -4955,6 +5740,11 @@
       "file_path": "documentation/ClockKit/clkcomplicationtemplatemodularsmallcolumnstext/row2column2textprovider.md",
       "hash": "b5ddfa8021badaaf3315338085cbe393c087cb62fe256dc3dc852c322569b752"
     },
+    "https://developer.apple.com/tutorials/data/documentation/clockkit/clkcomplicationtemplatemodularsmallcolumnstext/templatewithrow1column1textprovider:row1column2textprovider:row2column1textprovider:row2column2textprovider:.json": {
+      "etag": "\"3206-65d55e5c33df2-df\"",
+      "file_path": "documentation/ClockKit/clkcomplicationtemplatemodularsmallcolumnstext/templatewithrow1column1textprovider_row1column2textprovider_row2column1textprovider_row2column2textprovider_.md",
+      "hash": "691face3deb7805fbcab473dcfbe60ec47796f528320dfc0f708d6ec58bc0ab6"
+    },
     "https://developer.apple.com/tutorials/data/documentation/clockkit/clkcomplicationtemplatemodularsmallringimage.json": {
       "etag": "\"728c-65d55e5c86ba3-df\"",
       "file_path": "documentation/ClockKit/clkcomplicationtemplatemodularsmallringimage.md",
@@ -4980,6 +5770,11 @@
       "file_path": "documentation/ClockKit/clkcomplicationtemplatemodularsmallringimage/ringstyle.md",
       "hash": "c134ea07ce4c0323bf749ccebda0794957576bbf1b3b53b1eb33659586fd5007"
     },
+    "https://developer.apple.com/tutorials/data/documentation/clockkit/clkcomplicationtemplatemodularsmallringimage/templatewithimageprovider:fillfraction:ringstyle:.json": {
+      "etag": "\"2f30-65d55e5c33df2-df\"",
+      "file_path": "documentation/ClockKit/clkcomplicationtemplatemodularsmallringimage/templatewithimageprovider_fillfraction_ringstyle_.md",
+      "hash": "9ebb998cea29a67abd54ff4b6ffa2288d93c7692f96b9df0b9897d5410aff663"
+    },
     "https://developer.apple.com/tutorials/data/documentation/clockkit/clkcomplicationtemplatemodularsmallringtext.json": {
       "etag": "\"6fb0-65d55e5c86ba3-df\"",
       "file_path": "documentation/ClockKit/clkcomplicationtemplatemodularsmallringtext.md",
@@ -4999,6 +5794,11 @@
       "etag": "\"2e2d-65d55e5d0a413-df\"",
       "file_path": "documentation/ClockKit/clkcomplicationtemplatemodularsmallringtext/ringstyle.md",
       "hash": "77842f6f1d33bf6b99a08687db75e6106fcd5f243175ea8bad10beb59a49cbea"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/clockkit/clkcomplicationtemplatemodularsmallringtext/templatewithtextprovider:fillfraction:ringstyle:.json": {
+      "etag": "\"2c93-65d55e5d0a413-df\"",
+      "file_path": "documentation/ClockKit/clkcomplicationtemplatemodularsmallringtext/templatewithtextprovider_fillfraction_ringstyle_.md",
+      "hash": "4215ae861eae7f2bee65ebb09828dfbb9b5a7048890f049ca7b9d4bc5ffa2304"
     },
     "https://developer.apple.com/tutorials/data/documentation/clockkit/clkcomplicationtemplatemodularsmallringtext/textprovider.json": {
       "etag": "\"2f40-65d55e5d0a413-df\"",
@@ -5020,6 +5820,11 @@
       "file_path": "documentation/ClockKit/clkcomplicationtemplatemodularsmallsimpleimage/init(imageprovider).md",
       "hash": "c9bef5f8dc09abc0b88095e4624d779beaadc923556714994093a98361953891"
     },
+    "https://developer.apple.com/tutorials/data/documentation/clockkit/clkcomplicationtemplatemodularsmallsimpleimage/templatewithimageprovider:.json": {
+      "etag": "\"2230-65d55e5c6f7cb-df\"",
+      "file_path": "documentation/ClockKit/clkcomplicationtemplatemodularsmallsimpleimage/templatewithimageprovider_.md",
+      "hash": "4fc5d6da8b45dde274775ea97c4f30ecdfff71fcb72ae9c84f18337e28dfdeaf"
+    },
     "https://developer.apple.com/tutorials/data/documentation/clockkit/clkcomplicationtemplatemodularsmallsimpletext.json": {
       "etag": "\"61a7-65d55e5d0a413-df\"",
       "file_path": "documentation/ClockKit/clkcomplicationtemplatemodularsmallsimpletext.md",
@@ -5029,6 +5834,11 @@
       "etag": "\"2854-65d55e5c33df2-df\"",
       "file_path": "documentation/ClockKit/clkcomplicationtemplatemodularsmallsimpletext/init(textprovider).md",
       "hash": "8fbb48f207627c57e0a1dfc03bff2600a4d24896d6c0d1b796217d155d42239a"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/clockkit/clkcomplicationtemplatemodularsmallsimpletext/templatewithtextprovider:.json": {
+      "etag": "\"1f95-65d55e5c33df2-df\"",
+      "file_path": "documentation/ClockKit/clkcomplicationtemplatemodularsmallsimpletext/templatewithtextprovider_.md",
+      "hash": "7640d4504e4f48c7549c1831497dc61ea2eeaef51073c962361fecc60cce615d"
     },
     "https://developer.apple.com/tutorials/data/documentation/clockkit/clkcomplicationtemplatemodularsmallsimpletext/textprovider.json": {
       "etag": "\"237d-65d55e5c33df2-df\"",
@@ -5060,6 +5870,11 @@
       "file_path": "documentation/ClockKit/clkcomplicationtemplatemodularsmallstackimage/line2textprovider.md",
       "hash": "b2db40b21c3cb38e081517e441eb751c0bebaa9f4c25f80704c50b2311e94261"
     },
+    "https://developer.apple.com/tutorials/data/documentation/clockkit/clkcomplicationtemplatemodularsmallstackimage/templatewithline1imageprovider:line2textprovider:.json": {
+      "etag": "\"2c24-65d55e5cf1214-df\"",
+      "file_path": "documentation/ClockKit/clkcomplicationtemplatemodularsmallstackimage/templatewithline1imageprovider_line2textprovider_.md",
+      "hash": "22dde2c28a1a8df41591525d0f97dc14e080150078eaefb81c8c3855541246ad"
+    },
     "https://developer.apple.com/tutorials/data/documentation/clockkit/clkcomplicationtemplatemodularsmallstacktext.json": {
       "etag": "\"6fe4-65d55e5d3e9e1-df\"",
       "file_path": "documentation/ClockKit/clkcomplicationtemplatemodularsmallstacktext.md",
@@ -5085,6 +5900,11 @@
       "file_path": "documentation/ClockKit/clkcomplicationtemplatemodularsmallstacktext/line2textprovider.md",
       "hash": "a2b537248ae3fac0941980c0c2638171c7a2433082d437a667dee0e27653e3aa"
     },
+    "https://developer.apple.com/tutorials/data/documentation/clockkit/clkcomplicationtemplatemodularsmallstacktext/templatewithline1textprovider:line2textprovider:.json": {
+      "etag": "\"2522-65d55e5c33df2-df\"",
+      "file_path": "documentation/ClockKit/clkcomplicationtemplatemodularsmallstacktext/templatewithline1textprovider_line2textprovider_.md",
+      "hash": "7d548fa7efa963e1c1215f30fa1e9289b983824981d00e2c357ab31ffc559fa9"
+    },
     "https://developer.apple.com/tutorials/data/documentation/clockkit/clkcomplicationtemplateutilitarianlargeflat.json": {
       "etag": "\"6a67-65d55e5c86ba3-df\"",
       "file_path": "documentation/ClockKit/clkcomplicationtemplateutilitarianlargeflat.md",
@@ -5104,6 +5924,16 @@
       "etag": "\"4191-65d55e5be6a26-df\"",
       "file_path": "documentation/ClockKit/clkcomplicationtemplateutilitarianlargeflat/init(textprovider,imageprovider).md",
       "hash": "7e773d379b142e4518f9a5b36a5c1114a082786a3db0f7a37583f21568d9501e"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/clockkit/clkcomplicationtemplateutilitarianlargeflat/templatewithtextprovider:.json": {
+      "etag": "\"2a3e-65d55e5be6a26-df\"",
+      "file_path": "documentation/ClockKit/clkcomplicationtemplateutilitarianlargeflat/templatewithtextprovider_.md",
+      "hash": "93a9ee75fc16efa38f4900ac24a647b7a84ad734ca48c8c28f9c8d3d9d4647bd"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/clockkit/clkcomplicationtemplateutilitarianlargeflat/templatewithtextprovider:imageprovider:.json": {
+      "etag": "\"341d-65d55e5be6a26-df\"",
+      "file_path": "documentation/ClockKit/clkcomplicationtemplateutilitarianlargeflat/templatewithtextprovider_imageprovider_.md",
+      "hash": "69e0e6ea68b0287b4076b25f2f8d98b234abdbfc9fd344bc5b91363244efdfd9"
     },
     "https://developer.apple.com/tutorials/data/documentation/clockkit/clkcomplicationtemplateutilitarianlargeflat/textprovider.json": {
       "etag": "\"28dc-65d55e5be6a26-df\"",
@@ -5129,6 +5959,16 @@
       "etag": "\"4187-65d55e5c33df2-df\"",
       "file_path": "documentation/ClockKit/clkcomplicationtemplateutilitariansmallflat/init(textprovider,imageprovider).md",
       "hash": "583e15f5a18a2fa70b0691fa1d7c3cfdd4e87f3ec4a955e4d2e05d682d96cb95"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/clockkit/clkcomplicationtemplateutilitariansmallflat/templatewithtextprovider:.json": {
+      "etag": "\"2a3c-65d55e5c33df2-df\"",
+      "file_path": "documentation/ClockKit/clkcomplicationtemplateutilitariansmallflat/templatewithtextprovider_.md",
+      "hash": "c95f3cc3b7ba4312e49da5e00db0b9315171d59b520e992462111233b36ed6c2"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/clockkit/clkcomplicationtemplateutilitariansmallflat/templatewithtextprovider:imageprovider:.json": {
+      "etag": "\"340f-65d55e5c33df2-df\"",
+      "file_path": "documentation/ClockKit/clkcomplicationtemplateutilitariansmallflat/templatewithtextprovider_imageprovider_.md",
+      "hash": "9bfd5093c7ba1b632603096af994119c566765df803ff4a561c32b3b94f2a634"
     },
     "https://developer.apple.com/tutorials/data/documentation/clockkit/clkcomplicationtemplateutilitariansmallflat/textprovider.json": {
       "etag": "\"28d5-65d55e5c33df2-df\"",
@@ -5160,6 +6000,11 @@
       "file_path": "documentation/ClockKit/clkcomplicationtemplateutilitariansmallringimage/ringstyle.md",
       "hash": "effb5172ef31faad22bac3d1fb826f0a6900820f16181f5cd53d5852011ad851"
     },
+    "https://developer.apple.com/tutorials/data/documentation/clockkit/clkcomplicationtemplateutilitariansmallringimage/templatewithimageprovider:fillfraction:ringstyle:.json": {
+      "etag": "\"2f91-65d55e5c86ba3-df\"",
+      "file_path": "documentation/ClockKit/clkcomplicationtemplateutilitariansmallringimage/templatewithimageprovider_fillfraction_ringstyle_.md",
+      "hash": "58c1c55542aadaf5cee6b8a5b0b3bd15afe5c86ef2cce4fbcdfda5bef3d11f5f"
+    },
     "https://developer.apple.com/tutorials/data/documentation/clockkit/clkcomplicationtemplateutilitariansmallringtext.json": {
       "etag": "\"7112-65d55e5cda25f-df\"",
       "file_path": "documentation/ClockKit/clkcomplicationtemplateutilitariansmallringtext.md",
@@ -5180,6 +6025,11 @@
       "file_path": "documentation/ClockKit/clkcomplicationtemplateutilitariansmallringtext/ringstyle.md",
       "hash": "2eaa0ae635564efaf714e46b0d2614cdb830ff996f982eec21db4dfef99f036a"
     },
+    "https://developer.apple.com/tutorials/data/documentation/clockkit/clkcomplicationtemplateutilitariansmallringtext/templatewithtextprovider:fillfraction:ringstyle:.json": {
+      "etag": "\"2cf7-65d55e5be6a26-df\"",
+      "file_path": "documentation/ClockKit/clkcomplicationtemplateutilitariansmallringtext/templatewithtextprovider_fillfraction_ringstyle_.md",
+      "hash": "cfeb7932a1305a399be3a86df9c8b3da49aeb5a2602a5664de6f9153ad204a71"
+    },
     "https://developer.apple.com/tutorials/data/documentation/clockkit/clkcomplicationtemplateutilitariansmallringtext/textprovider.json": {
       "etag": "\"2fd4-65d55e5be6a26-df\"",
       "file_path": "documentation/ClockKit/clkcomplicationtemplateutilitariansmallringtext/textprovider.md",
@@ -5199,6 +6049,11 @@
       "etag": "\"2b61-65d55e5c6f7cb-df\"",
       "file_path": "documentation/ClockKit/clkcomplicationtemplateutilitariansmallsquare/init(imageprovider).md",
       "hash": "1512b5890c66e26e340469b83d3a5bbac85d16356e6f28aeacc025659800b330"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/clockkit/clkcomplicationtemplateutilitariansmallsquare/templatewithimageprovider:.json": {
+      "etag": "\"2224-65d55e5c6f7cb-df\"",
+      "file_path": "documentation/ClockKit/clkcomplicationtemplateutilitariansmallsquare/templatewithimageprovider_.md",
+      "hash": "5159c02bd4233c3c49537380a9f3fad8255499fe78175132e7757e738a429fcf"
     },
     "https://developer.apple.com/tutorials/data/documentation/clockkit/clkcomplicationtimelineanimationbehavior.json": {
       "etag": "\"ae3a-65d55e5c57bdf-df\"",
@@ -5265,6 +6120,11 @@
       "file_path": "documentation/ClockKit/clkcomplicationtimetraveldirections/backward.md",
       "hash": "19ed68e79bad418a0f04c2ea541d67d3812cfb3026bf28e21c62bd7eecd68bbb"
     },
+    "https://developer.apple.com/tutorials/data/documentation/clockkit/clkcomplicationtimetraveldirections/clkcomplicationtimetraveldirectionnone.json": {
+      "etag": "\"1df9-65d55e5c57bdf-df\"",
+      "file_path": "documentation/ClockKit/clkcomplicationtimetraveldirections/clkcomplicationtimetraveldirectionnone.md",
+      "hash": "4283372a4d698111fd1b1a07e52742e54c0bafd45358d54c9198ff971180bfd9"
+    },
     "https://developer.apple.com/tutorials/data/documentation/clockkit/clkcomplicationtimetraveldirections/forward.json": {
       "etag": "\"2a27-65d55e5c57bdf-df\"",
       "file_path": "documentation/ClockKit/clkcomplicationtimetraveldirections/forward.md",
@@ -5315,6 +6175,16 @@
       "file_path": "documentation/ClockKit/clkdatetextprovider/init(date,units,timezone).md",
       "hash": "feee2e1c4dc5f522de942e2bf56d9d4978237376e74ff654e52b9a4df168f6fa"
     },
+    "https://developer.apple.com/tutorials/data/documentation/clockkit/clkdatetextprovider/initwithdate:units:.json": {
+      "etag": "\"31cb-65d55e5d0a413-df\"",
+      "file_path": "documentation/ClockKit/clkdatetextprovider/initwithdate_units_.md",
+      "hash": "be1f70659081b102a3e9005a97c69afe17becf81de172928e5bcb1a93d82a7be"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/clockkit/clkdatetextprovider/initwithdate:units:timezone:.json": {
+      "etag": "\"36f4-65d55e5d0a413-df\"",
+      "file_path": "documentation/ClockKit/clkdatetextprovider/initwithdate_units_timezone_.md",
+      "hash": "5df900eb48afef6920a644004834d108ed0f44e5de38513f6f93bb8247d1220f"
+    },
     "https://developer.apple.com/tutorials/data/documentation/clockkit/clkdatetextprovider/timezone.json": {
       "etag": "\"320d-65d55e5d0a413-df\"",
       "file_path": "documentation/ClockKit/clkdatetextprovider/timezone.md",
@@ -5359,6 +6229,16 @@
       "etag": "\"458f-65d55e5c1afe1-df\"",
       "file_path": "documentation/ClockKit/clkfullcolorimageprovider/init(fullcolorimage,tintedimageprovider).md",
       "hash": "a12c104debe772f34e262e8f6a4f3abe31e94def1cdc9d6971d5ac298691e53e"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/clockkit/clkfullcolorimageprovider/initwithfullcolorimage:.json": {
+      "etag": "\"29b3-65d55e5c1afe1-df\"",
+      "file_path": "documentation/ClockKit/clkfullcolorimageprovider/initwithfullcolorimage_.md",
+      "hash": "9b153edb0d28c4948071788e25c08c061634478c41f0fbe48352ad4797ec038a"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/clockkit/clkfullcolorimageprovider/initwithfullcolorimage:tintedimageprovider:.json": {
+      "etag": "\"373c-65d55e5c1afe1-df\"",
+      "file_path": "documentation/ClockKit/clkfullcolorimageprovider/initwithfullcolorimage_tintedimageprovider_.md",
+      "hash": "b1235e6a3f29d5c2b544592b80c37ac87b2a3bcc8b48fae3b49943314bca58a2"
     },
     "https://developer.apple.com/tutorials/data/documentation/clockkit/clkfullcolorimageprovider/new().json": {
       "etag": "\"1f2d-65d55e5c1afe1-df\"",
@@ -5439,6 +6319,16 @@
       "etag": "\"4974-65d55e5d2936e-df\"",
       "file_path": "documentation/ClockKit/clkimageprovider/init(onepieceimage,twopieceimagebackground,twopieceimageforeground).md",
       "hash": "8e2de4795ff19db5b53a43672cdfe6ac07dce4cb887e346514aa3ebb8059630f"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/clockkit/clkimageprovider/initwithonepieceimage:.json": {
+      "etag": "\"2f8e-65d55e5d2936e-df\"",
+      "file_path": "documentation/ClockKit/clkimageprovider/initwithonepieceimage_.md",
+      "hash": "d58e05d346e4a50442afb93dcbf38000db6b866b03ae85a53b19e1dc4f70817b"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/clockkit/clkimageprovider/initwithonepieceimage:twopieceimagebackground:twopieceimageforeground:.json": {
+      "etag": "\"3636-65d55e5d2936e-df\"",
+      "file_path": "documentation/ClockKit/clkimageprovider/initwithonepieceimage_twopieceimagebackground_twopieceimageforeground_.md",
+      "hash": "e43150e074c01ab2c6df9eb01679f3bf333cf196a80dd1374f5cf40d43fd13c4"
     },
     "https://developer.apple.com/tutorials/data/documentation/clockkit/clkimageprovider/new().json": {
       "etag": "\"1df4-65d55e5d2936e-df\"",
@@ -5545,6 +6435,16 @@
       "file_path": "documentation/ClockKit/clkrelativedatetextprovider/init(date,style,units).md",
       "hash": "621a1c89191c3c783cbd9876c3b2fd5c1604c924ba6a13528e86badb03c48c10"
     },
+    "https://developer.apple.com/tutorials/data/documentation/clockkit/clkrelativedatetextprovider/initwithdate:relativetodate:style:units:.json": {
+      "etag": "\"3ef5-65d55e5c57bdf-df\"",
+      "file_path": "documentation/ClockKit/clkrelativedatetextprovider/initwithdate_relativetodate_style_units_.md",
+      "hash": "39cee68437d342ab36f8e514789136ce1d5ae1df4e0218d2f6007ffbc36432fb"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/clockkit/clkrelativedatetextprovider/initwithdate:style:units:.json": {
+      "etag": "\"3e06-65d55e5c33df2-df\"",
+      "file_path": "documentation/ClockKit/clkrelativedatetextprovider/initwithdate_style_units_.md",
+      "hash": "9f3a6adb05e5bcda41c7b296e33c022ea2c2119fcd7dc7c1f30580f040d0c132"
+    },
     "https://developer.apple.com/tutorials/data/documentation/clockkit/clkrelativedatetextprovider/relativedatestyle.json": {
       "etag": "\"3391-65d55e5c33df2-df\"",
       "file_path": "documentation/ClockKit/clkrelativedatetextprovider/relativedatestyle.md",
@@ -5600,6 +6500,21 @@
       "file_path": "documentation/ClockKit/clksimpletextprovider/init(text,shorttext,accessibilitylabel).md",
       "hash": "2f6696e33c01d9123903053d42add89b5dcfc578e825cfac9d51b0a020ade0e1"
     },
+    "https://developer.apple.com/tutorials/data/documentation/clockkit/clksimpletextprovider/initwithtext:.json": {
+      "etag": "\"343c-65d55e5c86ba3-df\"",
+      "file_path": "documentation/ClockKit/clksimpletextprovider/initwithtext_.md",
+      "hash": "09ebf9e77f4417499f4ca08892e94a9c092871c5a3f4d70eba92f84ffd2efbed"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/clockkit/clksimpletextprovider/initwithtext:shorttext:.json": {
+      "etag": "\"36bf-65d55e5c86ba3-df\"",
+      "file_path": "documentation/ClockKit/clksimpletextprovider/initwithtext_shorttext_.md",
+      "hash": "3ddb785d83d00dd96a51bb44c494e42bbfe9c85ea88059f8aa4b13ca604f8662"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/clockkit/clksimpletextprovider/initwithtext:shorttext:accessibilitylabel:.json": {
+      "etag": "\"3467-65d55e5c86ba3-df\"",
+      "file_path": "documentation/ClockKit/clksimpletextprovider/initwithtext_shorttext_accessibilitylabel_.md",
+      "hash": "04079a19ac60b0633592dc17b34df76cae2a9d64717197735dbdd061141b4721"
+    },
     "https://developer.apple.com/tutorials/data/documentation/clockkit/clksimpletextprovider/shorttext.json": {
       "etag": "\"270b-65d55e5c86ba3-df\"",
       "file_path": "documentation/ClockKit/clksimpletextprovider/shorttext.md",
@@ -5649,6 +6564,11 @@
       "etag": "\"1def-65d55e5cf1214-df\"",
       "file_path": "documentation/ClockKit/clktextprovider/new().md",
       "hash": "717a375282afe42718cd80d487a068cb8beb18a2fcf149189fdecb82a53a2381"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/clockkit/clktextprovider/textproviderwithformat:.json": {
+      "etag": "\"25f9-65d55e5cda25f-df\"",
+      "file_path": "documentation/ClockKit/clktextprovider/textproviderwithformat_.md",
+      "hash": "3c1fc32902d91c744e5f58db28375f3f8cde51317968873351e178c920e827e1"
     },
     "https://developer.apple.com/tutorials/data/documentation/clockkit/clktextprovider/tintcolor.json": {
       "etag": "\"1e67-65d55e5cf1214-df\"",
@@ -5730,6 +6650,16 @@
       "file_path": "documentation/ClockKit/clktimeintervaltextprovider/init(startdate,enddate,timezone).md",
       "hash": "5d16790b9223d2caf84e5534f6e30f0618687e62fda0889dd0de2fff3f9ee5b3"
     },
+    "https://developer.apple.com/tutorials/data/documentation/clockkit/clktimeintervaltextprovider/initwithstartdate:enddate:.json": {
+      "etag": "\"2cb9-65d55e5be6a26-df\"",
+      "file_path": "documentation/ClockKit/clktimeintervaltextprovider/initwithstartdate_enddate_.md",
+      "hash": "a0be72ce341773ff06e27edb97a56d9d72a49854edb200bbf35ce3151da254d8"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/clockkit/clktimeintervaltextprovider/initwithstartdate:enddate:timezone:.json": {
+      "etag": "\"32bf-65d55e5be6a26-df\"",
+      "file_path": "documentation/ClockKit/clktimeintervaltextprovider/initwithstartdate_enddate_timezone_.md",
+      "hash": "4b9884d7541a3c9fd3c184446ce639f6249201641e7b5b31796785aea7246a61"
+    },
     "https://developer.apple.com/tutorials/data/documentation/clockkit/clktimeintervaltextprovider/startdate.json": {
       "etag": "\"3ce0-65d55e5be6a26-df\"",
       "file_path": "documentation/ClockKit/clktimeintervaltextprovider/startdate.md",
@@ -5759,6 +6689,16 @@
       "etag": "\"3d7d-65d55e5d3e9e1-df\"",
       "file_path": "documentation/ClockKit/clktimetextprovider/init(date,timezone).md",
       "hash": "1bf915de47432e74c5498671cdb9f5d21aa7a8233d66398b83550ca5cc12b2d9"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/clockkit/clktimetextprovider/initwithdate:.json": {
+      "etag": "\"25d9-65d55e5d3e9e1-df\"",
+      "file_path": "documentation/ClockKit/clktimetextprovider/initwithdate_.md",
+      "hash": "becafa1476dad5fd75c0c9f3a3fb1c16d15b7bc1a0fa50177944505596b5f0be"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/clockkit/clktimetextprovider/initwithdate:timezone:.json": {
+      "etag": "\"2a36-65d55e5d3e9e1-df\"",
+      "file_path": "documentation/ClockKit/clktimetextprovider/initwithdate_timezone_.md",
+      "hash": "c2fc420ed9409afa8e78272670cb0c991f9afc3820119ccd7821223d42ca1c93"
     },
     "https://developer.apple.com/tutorials/data/documentation/clockkit/clktimetextprovider/timezone.json": {
       "etag": "\"2edf-65d55e5d3e9e1-df\"",
@@ -5943,8 +6883,8 @@
   },
   "metadata": {
     "render": {
-      "version": 1
+      "version": 2
     },
-    "total_pages": 1188
+    "total_pages": 1376
   }
 }

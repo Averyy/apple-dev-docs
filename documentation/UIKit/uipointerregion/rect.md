@@ -33,6 +33,8 @@ This rectangle must be in the [`UIPointerInteraction`](../uipointerinteraction.m
   An optional identifier for the region.
 - [var latchingAxes: UIAxis](./latchingaxes.md)
   Axes along which the region latches after a primary click.
+- [identifier](./identifier-9i5wc.md)
+  An optional identifier for the region.
 
 
 ---

@@ -103,6 +103,10 @@ For more information, see [Flashing lights](./flashing-lights.md).
   An object that reports the result of the flashing lights processor.
 - [MAFlashingLightsProcessor.OptionKey](./maflashinglightsprocessor/optionkey.md)
   Options for the flashing lights processor.
+- [- processSurface:outSurface:timestamp:options:](./maflashinglightsprocessor/processsurface_outsurface_timestamp_options_.md)
+  Processes a surface by analyzing pixels for sequences of flashing lights and mitigates them by dimming the content.
+- [MAFlashingLightsProcessorResult](./maflashinglightsprocessorresult.md)
+  An object that reports the result of the flashing lights processor.
 
 ## Relationships
 

@@ -26,6 +26,14 @@ var requiresFrameReordering: Bool { get }
 @property (nonatomic, readonly) BOOL requiresFrameReordering;
 ```
 
+## See Also
+
+### Accessing frame-based characteristics
+- [nominalFrameRate](./nominalframerate.md)
+  The frame rate of the track, in frames per second.
+- [minFrameDuration](./minframeduration.md)
+  The minimum duration of the track’s frames.
+
 
 ---
 

@@ -78,6 +78,8 @@ When managing CarPlay features, users don’t need to include the name of the ap
 ### Initializing the Intent Object
 - [convenience init(radioType: INRadioType, frequency: Double?, stationName: String?, channel: String?, presetNumber: Int?)](./insetradiostationintent/init%28radiotype,frequency,stationname,channel,presetnumber%29.md)
   Initializes the intent object with the specified climate settings information.
+- [- initWithRadioType:frequency:stationName:channel:presetNumber:](./insetradiostationintent/initwithradiotype_frequency_stationname_channel_presetnumber_.md)
+  Initializes the intent object with the specified climate settings information.
 ### Getting Details About the Radio Station to Set
 - [var radioType: INRadioType](./insetradiostationintent/radiotype.md)
   The type of radio tuner to use.
@@ -88,6 +90,10 @@ When managing CarPlay features, users don’t need to include the name of the ap
 - [var channel: String?](./insetradiostationintent/channel.md)
   The channel number of the station.
 - [var presetNumber: Int?](./insetradiostationintent/presetnumber-2dub4.md)
+  The programmable preset assigned to the station.
+- [frequency](./insetradiostationintent/frequency-63rbb.md)
+  The broadcast frequency of the radio station.
+- [presetNumber](./insetradiostationintent/presetnumber-20pv7.md)
   The programmable preset assigned to the station.
 
 ## Relationships

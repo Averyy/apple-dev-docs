@@ -49,6 +49,8 @@ These constants are components of a bit field and may be combined arbitrarily.
   The mouse is over a popup menu.
 - [static var imageArea: PDFAreaOfInterest](./pdfareaofinterest/imagearea.md)
   The mouse is over an image.
+- [kPDFNoArea](./pdfareaofinterest/kpdfnoarea.md)
+  The mouse is over an undefined area.
 ### Initializers
 - [init(rawValue: Int)](./pdfareaofinterest/init%28rawvalue%29.md)
 ### Type Properties

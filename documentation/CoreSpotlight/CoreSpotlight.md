@@ -89,9 +89,21 @@ In addition to indexing content, iOS provides additional strategies for making y
 ### Version
 - [var CoreSpotlightAPIVersion: Int32](./corespotlightapiversion.md)
   The API version number for Core Spotlight.
+- [CoreSpotlightVersionNumber](./corespotlightversionnumber.md)
+  The project version number for Core Spotlight.
+- [CoreSpotlightVersionString](./corespotlightversionstring.md)
+  The project version string for Core Spotlight.
 ### Structures
 - [struct SearchableItem](./searchableitem.md)
   A Swift value type representing a Spotlight search result.
+### Variables
+- [CSSuggestionHighlightAttributeName](./cssuggestionhighlightattributename.md)
+### Macros
+- [CORESPOTLIGHT_EXPORT](./corespotlight_export.md)
+- [CS_AVAILABLE](./cs_available.md)
+- [CS_CLASS_AVAILABLE](./cs_class_available.md)
+- [CS_DEPRECATED](./cs_deprecated.md)
+- [CS_TVOS_UNAVAILABLE](./cs_tvos_unavailable.md)
 
 
 ---

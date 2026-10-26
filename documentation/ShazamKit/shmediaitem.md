@@ -61,6 +61,8 @@ let mediaItem = SHMediaItem(properties: [.episode: 42,
 ### Creating a new media item object
 - [convenience init(properties: [SHMediaItemProperty : Any])](./shmediaitem/init%28properties%29.md)
   Creates a media item object with a dictionary of properties and their associated values.
+- [+ mediaItemWithProperties:](./shmediaitem/mediaitemwithproperties_.md)
+  Creates a media item object with a dictionary of properties and their associated values.
 ### Working with media item properties
 - [subscript(SHMediaItemProperty) -> Any](./shmediaitem/subscript%28_%29.md)
   Accesses the property for the specified key for reading.
@@ -70,6 +72,14 @@ let mediaItem = SHMediaItem(properties: [.episode: 42,
   An array of ranges that indicate the offsets within the reference signature that this media item describes.
 - [var frequencySkewRanges: [Range<Float>]](./shmediaitem/frequencyskewranges-1j7d3.md)
   An array of ranges that indicate the frequency skews in the reference signature that this media item describes.
+- [- valueForProperty:](./shmediaitem/valueforproperty_.md)
+  Accesses the property for the specified key for reading.
+- [timeRanges](./shmediaitem/timeranges-43654.md)
+  An array of ranges that indicate the offsets within the reference signature that this media item describes.
+- [frequencySkewRanges](./shmediaitem/frequencyskewranges-4yqx.md)
+  An array of ranges that indicate the frequency skews in the reference signature that this media item describes.
+- [SHRange](./shrange.md)
+  A half-open interval from a lower bound up to, but not including, an upper bound.
 ### Reading general media item properties
 - [var title: String?](./shmediaitem/title.md)
   A title for the media item.

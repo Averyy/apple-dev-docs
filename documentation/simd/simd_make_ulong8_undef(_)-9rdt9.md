@@ -33,6 +33,8 @@ static simd_ulong8 simd_make_ulong8_undef(simd_ulong2 other);
   Returns a new vector from the specified three-element vector, and other elements undefined.
 - [func simd_make_ulong8_undef(simd_ulong4) -> simd_ulong8](./simd_make_ulong8_undef%28_%29-d5pk.md)
   Returns a new vector from the specified four-element vector, and other elements undefined.
+- [vector8](./vector8-5kkur.md)
+  Returns a new vector from the specified vectors.
 
 
 ---

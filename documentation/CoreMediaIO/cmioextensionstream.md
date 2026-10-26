@@ -35,6 +35,10 @@ A stream delivers media samples to or from a [`CMIOExtensionDevice`](./cmioexten
   Creates a stream.
 - [init(localizedName: String, streamID: UUID, direction: CMIOExtensionStream.Direction, customClockConfiguration: CMIOExtensionStreamCustomClockConfiguration, source: any CMIOExtensionStreamSource)](./cmioextensionstream/init%28localizedname,streamid,direction,customclockconfiguration,source%29.md)
   Creates a stream that uses a custom clock configuration.
+- [+ streamWithLocalizedName:streamID:direction:clockType:source:](./cmioextensionstream/streamwithlocalizedname_streamid_direction_clocktype_source_.md)
+  Returns a new stream.
+- [+ streamWithLocalizedName:streamID:direction:customClockConfiguration:source:](./cmioextensionstream/streamwithlocalizedname_streamid_direction_customclockconfiguration_source_.md)
+  Returns a new stream that uses a custom clock configuration.
 ### Identifying a Stream
 - [var localizedName: String](./cmioextensionstream/localizedname.md)
   A localized name for the stream.

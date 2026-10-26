@@ -57,6 +57,8 @@ AVErrorDecoderNotFound
   The system failed to decode the media.
 - [AVError.Code.decoderTemporarilyUnavailable](./decodertemporarilyunavailable.md)
   A suitable decoder for the media is temporarily available.
+- [AVErrorContentKeyInvalid](../../averror-c.enum/averrorcontentkeyinvalid.md)
+- [AVErrorContentKeyRequestPlaybackDestinationDoesNotSupportDeviceIdentifierRandomization](../../averror-c.enum/averrorcontentkeyrequestplaybackdestinationdoesnotsupportdeviceidentifierrandomization.md)
 
 
 ---

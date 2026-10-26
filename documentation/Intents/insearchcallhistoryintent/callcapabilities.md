@@ -48,6 +48,8 @@ Use this property to limit your search to audio-only calls or video calls. You c
   The call type.
 - [var unseen: Bool?](./unseen-9ua7o.md)
   A Boolean value that indicates whether the user has seen the call yet.
+- [unseen](./unseen-1mohp.md)
+  A Boolean value that indicates whether the user has seen the call yet.
 
 
 ---

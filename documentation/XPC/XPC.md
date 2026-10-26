@@ -75,6 +75,47 @@ You can build an XPC service using C, Swift, or Objective-C. There are both high
 - [struct XPCPeerRequirement](./xpcpeerrequirement.md)
 ### Type Aliases
 - [typealias xpc_peer_requirement_t](./xpc_peer_requirement_t.md)
+### Additional types
+- [launchd](./launchd.md)
+  Browse APIs for interacting with `launchd`.
+### Reference
+- [Macros](./xpc-macros.md)
+  Macros for use with XPC when coding in Objective-C.
+### Protocols
+- [OS_xpc_peer_requirement](./os_xpc_peer_requirement.md)
+- [OS_xpc_session](./os_xpc_session-c.protocol.md)
+### Functions
+- [xpc_connection_set_peer_requirement](./xpc_connection_set_peer_requirement.md)
+- [xpc_listener_set_peer_requirement](./xpc_listener_set_peer_requirement.md)
+- [xpc_peer_requirement_create_entitlement_exists](./xpc_peer_requirement_create_entitlement_exists.md)
+- [xpc_peer_requirement_create_entitlement_matches_value](./xpc_peer_requirement_create_entitlement_matches_value.md)
+- [xpc_peer_requirement_create_lwcr](./xpc_peer_requirement_create_lwcr.md)
+- [xpc_peer_requirement_create_platform_identity](./xpc_peer_requirement_create_platform_identity.md)
+- [xpc_peer_requirement_create_team_identity](./xpc_peer_requirement_create_team_identity.md)
+- [xpc_peer_requirement_match_received_message](./xpc_peer_requirement_match_received_message.md)
+- [xpc_session_set_peer_requirement](./xpc_session_set_peer_requirement.md)
+### Macros
+- [XPC_ABORTLIKE](./xpc_abortlike.md)
+- [XPC_ALLOC_SIZE](./xpc_alloc_size.md)
+- [XPC_ATTRIBUTE](./xpc_attribute.md)
+- [XPC_CONCAT](./xpc_concat.md)
+- [XPC_CONCAT_](./xpc_concat_.md)
+- [XPC_CONST](./xpc_const.md)
+- [XPC_CSTRING](./xpc_cstring.md)
+- [XPC_DIAGNOSE_AS](./xpc_diagnose_as.md)
+- [XPC_GIVES_REFERENCE](./xpc_gives_reference.md)
+- [XPC_NOCONST](./xpc_noconst.md)
+- [XPC_PTR_ASSUMES_SINGLE](./xpc_ptr_assumes_single.md)
+- [XPC_READ_NONE](./xpc_read_none.md)
+- [XPC_RETURNS_ALIGNED](./xpc_returns_aligned.md)
+- [XPC_RETURNS_NONNULL](./xpc_returns_nonnull.md)
+- [XPC_SINGLE](./xpc_single.md)
+- [XPC_SWIFT_SENDABLE](./xpc_swift_sendable.md)
+- [XPC_TESTCONST](./xpc_testconst.md)
+- [XPC_TESTNORETURN](./xpc_testnoreturn.md)
+- [XPC_TRANSACTION_DEPRECATED](./xpc_transaction_deprecated.md)
+- [XPC_UNRETAINED](./xpc_unretained.md)
+- [XPC_UNSAFE_INDEXABLE](./xpc_unsafe_indexable.md)
 
 
 ---

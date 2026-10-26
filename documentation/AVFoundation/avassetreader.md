@@ -33,6 +33,8 @@ Use an asset reader to read media data from instances of [`AVAsset`](./avasset.m
 ### Creating an asset reader
 - [init(asset: AVAsset) throws](./avassetreader/init%28asset%29.md)
   Creates an object to read media data from an asset.
+- [+ assetReaderWithAsset:error:](./avassetreader/assetreaderwithasset_error_.md)
+  Returns a new object to read media data from an asset.
 ### Managing outputs
 - [func canAdd(AVAssetReaderOutput) -> Bool](./avassetreader/canadd%28_%29.md)
   Determines whether you can add the output to the asset reader.

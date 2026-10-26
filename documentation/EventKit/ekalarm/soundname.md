@@ -36,6 +36,8 @@ The value of this property is the name of a system sound that can be used with t
   The type of action to trigger when the alarm fires.
 - [var emailAddress: String?](./emailaddress.md)
   The recipient of an email to send when the alarm triggers.
+- [url](./url.md)
+  The URL to open when the alarm triggers.
 
 
 ---

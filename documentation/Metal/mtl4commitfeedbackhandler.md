@@ -63,6 +63,8 @@ You register a commit feedback block with Metal by providing an instance of [`MT
   Represents options to configure a commit operation on a command queue.
 - [protocol MTL4CommitFeedback](./mtl4commitfeedback.md)
   Describes an object containing debug information from Metal to your app after completing a workload.
+- [MTL4CounterHeap](./mtl4counterheap.md)
+  Represents an opaque, driver-controlled section of memory that can store GPU counter data.
 
 
 ---

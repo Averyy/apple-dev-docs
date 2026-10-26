@@ -47,6 +47,8 @@ If you apply simple transforms to media containing depth data, you can use the [
   Returns a derivative depth data object by converting the depth data map to the specified data type.
 - [var availableDepthDataTypes: [OSType]](./availabledepthdatatypes-3ifx1.md)
   The list of depth data formats to which you can convert this depth data.
+- [availableDepthDataTypes](./availabledepthdatatypes-472g0.md)
+  The list of depth data formats to which you can convert this depth data.
 
 
 ---

@@ -56,6 +56,8 @@ This method sends an asynchronous request on the stream.
   Aborts pending input/output requests.
 - [func abort() throws](./abort%28%29.md)
   Aborts pending input/output requests synchronously.
+- [- sendIORequestWithData:bytesTransferred:error:](./sendiorequestwithdata_bytestransferred_error_.md)
+  Sends an input/output request on the stream.
 
 
 ---

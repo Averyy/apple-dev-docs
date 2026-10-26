@@ -27,6 +27,14 @@ The initialized [`CIFilterGenerator`](../cifiltergenerator.md) object. Returns `
 
 - `aURL`: The location of a filter generator file.
 
+## See Also
+
+### Related Documentation
+- [+ filterGeneratorWithContentsOfURL:](./filtergeneratorwithcontentsofurl_.md)
+  Creates and returns a filter generator object and initializes it with the contents of a filter generator file.
+- [+ filterGenerator](./filtergenerator.md)
+  Creates and returns an empty filter generator object.
+
 
 ---
 

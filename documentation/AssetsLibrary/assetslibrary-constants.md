@@ -3,6 +3,54 @@
 **Framework**: Assets Library  
 **Role**: API Collection
 
+## Topics
+
+### Constants
+- [ALAssetLibraryDeletedAssetGroupsKey](./alassetlibrarydeletedassetgroupskey.md)
+  Value is a set of [`NSURL`](../Foundation/nsurl.md) objects identifying the asset groups that were deleted.
+- [ALAssetLibraryInsertedAssetGroupsKey](./alassetlibraryinsertedassetgroupskey.md)
+  Value is a set of [`NSURL`](../Foundation/nsurl.md) objects identifying the assets that were inserted.
+- [ALAssetLibraryUpdatedAssetGroupsKey](./alassetlibraryupdatedassetgroupskey.md)
+  Value is a set of [`NSURL`](../Foundation/nsurl.md) objects identifying the asset groups that were updated.
+- [ALAssetLibraryUpdatedAssetsKey](./alassetlibraryupdatedassetskey.md)
+  Value is a set of [`NSURL`](../Foundation/nsurl.md) objects identifying the assets that were updated.
+- [ALAssetPropertyAssetURL](./alassetpropertyasseturl.md)
+  The key to retrieve a URL identifier for the asset.
+- [ALAssetPropertyDate](./alassetpropertydate.md)
+  The key to retrieve the creation date of the asset.
+- [ALAssetPropertyDuration](./alassetpropertyduration.md)
+  The key to retrieve the play time duration of a video asset.
+- [ALAssetPropertyLocation](./alassetpropertylocation.md)
+  The key to retrieve the location information of the asset.
+- [ALAssetPropertyOrientation](./alassetpropertyorientation.md)
+  The key to retrieve the orientation of the asset.
+- [ALAssetPropertyRepresentations](./alassetpropertyrepresentations.md)
+  The key to retrieve the representations available for a given asset (for example RAW, JPEG).
+- [ALAssetPropertyType](./alassetpropertytype.md)
+  A key to retrieve the type of the asset.
+- [ALAssetPropertyURLs](./alassetpropertyurls.md)
+  The key to retrieve a dictionary that maps asset representations UTIs to URLs that uniquely identify the asset.
+- [ALAssetTypePhoto](./alassettypephoto.md)
+  Specifies that the asset is a photo.
+- [ALAssetTypeUnknown](./alassettypeunknown.md)
+  Specifies that the asset’s type cannot be determined.
+- [ALAssetTypeVideo](./alassettypevideo.md)
+  Specifies that the asset is a video.
+- [ALAssetsGroupPropertyName](./alassetsgrouppropertyname.md)
+  Key to retrieve the name of the group.
+- [ALAssetsGroupPropertyPersistentID](./alassetsgrouppropertypersistentid.md)
+  Key to retrieve the group’s persistent ID.
+- [ALAssetsGroupPropertyType](./alassetsgrouppropertytype.md)
+  Key to retrieve the group type.
+- [ALAssetsGroupPropertyURL](./alassetsgrouppropertyurl.md)
+  Key to retrieve a URL that uniquely identifies the group.
+- [ALAssetsLibraryChangedNotification](./alassetslibrarychangednotification.md)
+  Sent when the contents of the assets library have changed from under the app that is using the data.
+- [ALAssetsLibraryErrorDomain](./alassetslibraryerrordomain.md)
+  Constant used by [`NSError`](../Foundation/nserror.md) to distinguish errors belonging to the AssetsLibrary domain.
+- [ALErrorInvalidProperty](./alerrorinvalidproperty.md)
+  Value returned by `ALAsset/value(forProperty:)` if the property you tried to access is invalid.
+
 ## See Also
 
 ### Reference

@@ -38,6 +38,10 @@ Use [`NSException`](./nsexception.md) to implement exception handling. An except
   Initializes and returns a newly allocated exception object.
 - [func raise()](./nsexception/raise%28%29.md)
   Raises the receiver, causing program flow to jump to the local exception handler.
+- [+ exceptionWithName:reason:userInfo:](./nsexception/exceptionwithname_reason_userinfo_.md)
+  Creates and returns an exception object .
+- [+ raise:format:](./nsexception/raise_format_.md)
+  A convenience method that creates and raises an exception.
 ### Querying an NSException Object
 - [var name: NSExceptionName](./nsexception/name-swift.property.md)
   A string used to uniquely identify the receiver.
@@ -61,6 +65,22 @@ Use [`NSException`](./nsexception.md) to implement exception handling. An except
   Changes the top-level error handler.
 ### Initializers
 - [init?(coder: NSCoder)](./nsexception/init%28coder%29.md)
+### Legacy Macros
+- [NS_DURING](./ns_during.md)
+  Marks the start of the exception-handling domain.
+- [NS_ENDHANDLER](./ns_endhandler.md)
+  Marks the end of the local event handler.
+- [NS_HANDLER](./ns_handler.md)
+  Marks the end of the exception-handling domain and the start of the local exception handler.
+- [NS_VALUERETURN](./ns_valuereturn.md)
+  Permits program control to exit from an exception-handling domain with a value of a specified type.
+- [NS_VOIDRETURN](./ns_voidreturn.md)
+  Permits program control to exit from an exception-handling domain.
+### Instance Variables
+- [name](./nsexception/name-c.ivar.md)
+- [reason](./nsexception/reason-c.ivar.md)
+- [reserved](./nsexception/reserved.md)
+- [userInfo](./nsexception/userinfo-c.ivar.md)
 
 ## Relationships
 

@@ -68,6 +68,14 @@ The TVMLKit framework enables you to evaluate TVMLKit JS and TVML files from wit
 - [TVMLKit Enumerations](./tvmlkit-enumerations.md)
 - [TVMLKit Constants](./tvmlkit-constants.md)
   This document defines constants in the TVMLKit framework that are not associated with a particular class.
+### Macros
+- [TVML_DEPRECATED](./tvml_deprecated.md)
+- [TVML_DEPRECATED_BEGIN](./tvml_deprecated_begin.md)
+- [TVML_DEPRECATED_END](./tvml_deprecated_end.md)
+- [TVML_DEPRECATED_IOS](./tvml_deprecated_ios.md)
+- [TV_EXTERN](./tv_extern.md)
+- [TV_EXTERN_CLASS](./tv_extern_class.md)
+- [TV_EXTERN_CLASS_AVAILABLE](./tv_extern_class_available.md)
 
 
 ---

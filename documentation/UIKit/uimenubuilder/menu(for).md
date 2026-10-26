@@ -41,6 +41,8 @@ A menu object; otherwise, `nil` if there are no menus with the specified identif
   Gets the action for the specified action identifier.
 - [func command(for: Selector, propertyList: Any?) -> UICommand?](./command%28for,propertylist%29.md)
   Gets the command for the specified selector and property list.
+- [- commandForAction:propertyList:](./commandforaction_propertylist_.md)
+  Gets the command for the specified selector and property list.
 
 
 ---

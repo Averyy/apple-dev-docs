@@ -22,6 +22,14 @@ class var isSupported: Bool { get }
 @property (class, nonatomic, readonly, getter=isSupported) BOOL supported;
 ```
 
+## See Also
+
+### Determining processor availability
+- [maximumDimensions](./maximumdimensions.md)
+  The maximum dimensions of a source frame that the processor supports.
+- [minimumDimensions](./minimumdimensions.md)
+  The minimum dimensions of a source frame that the processor supports.
+
 
 ---
 

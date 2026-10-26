@@ -39,6 +39,8 @@ A new tile set.
 ### Creating a Tile Set Programmatically
 - [init(tileGroups: [SKTileGroup])](./init%28tilegroups%29.md)
   Initializes a new tile set with an array of tile groups and rectangular grid layout.
+- [+ tileSetWithTileGroups:](./tilesetwithtilegroups_.md)
+- [+ tileSetWithTileGroups:tileSetType:](./tilesetwithtilegroups_tilesettype_.md)
 
 
 ---

@@ -34,6 +34,11 @@ UEFI firmware stores the contents of signature lists in the Key Exchange Key (KE
 - [convenience init(signatures: [VZEFISignature])](./vzefisignaturelist/init%28signatures%29.md)
 ### Instance Properties
 - [var signatures: [VZEFISignature]](./vzefisignaturelist/signatures-3cz50.md)
+- [signatures](./vzefisignaturelist/signatures-78pcm.md)
+  An array of EFI signatures this signature list contains.
+### Instance Methods
+- [- initWithSignatures:](./vzefisignaturelist/initwithsignatures_.md)
+  Creates a signature list from the provided signatures.
 
 ## Relationships
 
@@ -59,6 +64,12 @@ UEFI firmware stores the contents of signature lists in the Key Exchange Key (KE
 - [class VZEFISignatureDatabaseConfiguration](./vzefisignaturedatabaseconfiguration.md)
   A container for Unified Extensible Firmware Interface (UEFI) Secure Boot signature lists.
 - [enum VZEFISignature](./vzefisignature-swift.enum.md)
+- [VZEFISignature](./vzefisignature-c.class.md)
+  A base class that represents a Unified Extensible Firmware Interface (UEFI) signature.
+- [VZEFISignatureX509Certificate](./vzefisignaturex509certificate.md)
+  A class that represents a Unified Extensible Firmware Interface (UEFI) signature based on an X.509 certificate.
+- [VZEFISignatureSHA256Hash](./vzefisignaturesha256hash.md)
+  A class that represents a Unified Extensible Firmware Interface (UEFI) signature based on a SHA-256 cryptographic hash.
 
 
 ---

@@ -33,6 +33,8 @@ CEA608 closed captions limit the [`height`](../avcaptionsize/height.md) property
 ### Accessing the size
 - [struct AVCaptionSize](../avcaptionsize.md)
   A structure that defines the height and width of a caption.
+- [AVCaptionSizeMake](../avcaptionsizemake.md)
+  Creates a caption size with the specified width and height.
 
 
 ---

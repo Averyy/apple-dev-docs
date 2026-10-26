@@ -30,6 +30,8 @@ enum IOSurfacePurgeabilityState : uint32_t;
 - [static var purgeableEmpty: IOSurfacePurgeabilityState](./iosurfacepurgeabilitystate/purgeableempty.md)
 - [static var purgeableKeepCurrent: IOSurfacePurgeabilityState](./iosurfacepurgeabilitystate/purgeablekeepcurrent.md)
 - [static var purgeableVolatile: IOSurfacePurgeabilityState](./iosurfacepurgeabilitystate/purgeablevolatile.md)
+### Constants
+- [kIOSurfacePurgeableNonVolatile](./iosurfacepurgeabilitystate/kiosurfacepurgeablenonvolatile.md)
 
 ## Relationships
 

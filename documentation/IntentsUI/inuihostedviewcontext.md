@@ -42,6 +42,12 @@ enum INUIHostedViewContext : NSUInteger;
 - [Sendable](../Swift/sendable.md)
 - [SendableMetatype](../Swift/sendablemetatype.md)
 
+## See Also
+
+### Getting Information
+- [IntentsUIVersionString](./intentsuiversionstring.md)
+- [IntentsUIVersionNumber](./intentsuiversionnumber.md)
+
 
 ---
 

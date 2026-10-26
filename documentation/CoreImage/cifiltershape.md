@@ -49,6 +49,9 @@ You use `CIFilterShape` objects in conjunction with Core Image classes, such as 
   Creates a filter shape that results from the union of the current filter shape and another filter shape object.
 - [func union(with: CGRect) -> CIFilterShape](./cifiltershape/union%28with%29-75ebo.md)
   Creates a filter shape that results from the union of the current filter shape and a rectangle.
+### Creating a Filter Shape
+- [+ shapeWithRect:](./cifiltershape/shapewithrect_.md)
+  Creates a filter shape object and initializes it with a rectangle.
 
 ## Relationships
 

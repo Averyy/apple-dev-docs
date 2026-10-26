@@ -137,6 +137,18 @@ Get the constants you use to specify Address Book information.
   Search for elements that are within a time interval (in seconds) forward from today.
 - [var kABWithinIntervalFromTodayYearless: _ABSearchComparison](./kabwithinintervalfromtodayyearless.md)
   Search for elements that are within a time interval (in seconds) forward from this day in any year.
+- [ABPeoplePickerDisplayedPropertyDidChangeNotification](./abpeoplepickerdisplayedpropertydidchangenotification.md)
+  Posted when the displayed property in the record list is changed.
+- [ABPeoplePickerGroupSelectionDidChangeNotification](./abpeoplepickergroupselectiondidchangenotification.md)
+  Posted when the selection in the group list is changed.
+- [ABPeoplePickerNameSelectionDidChangeNotification](./abpeoplepickernameselectiondidchangenotification.md)
+  Posted when the selection in the name list is changed.
+- [ABPeoplePickerValueSelectionDidChangeNotification](./abpeoplepickervalueselectiondidchangenotification.md)
+  Posted when the selection in a multivalue property is changed.
+- [kABDatabaseChangedExternallyNotification](./kabdatabasechangedexternallynotification.md)
+  Posted when a process other than the current one has changed the Address Book database.
+- [kABDatabaseChangedNotification](./kabdatabasechangednotification.md)
+  Posted when this process has changed the Address Book database.
 ### Deprecated
 - [let kABPersonAddressCityKey: CFString!](./kabpersonaddresscitykey.md)
   City.

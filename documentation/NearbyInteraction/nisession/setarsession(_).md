@@ -37,6 +37,10 @@ Set the [`isCameraAssistanceEnabled`](../ninearbypeerconfiguration/iscameraassis
 ### Utilizing Camera Assistance
 - [func worldTransform(for: NINearbyObject) -> simd_float4x4?](./worldtransform%28for%29.md)
   Returns a world transform to integrate a nearby object in an AR experience.
+- [- worldTransformForObject:](./worldtransformforobject_.md)
+  Returns a world transform to integrate a nearby object in an AR experience.
+- [NINearbyObjectWorldTransformNotAvailable](../ninearbyobjectworldtransformnotavailable.md)
+  A constant that indicates that the framework is unable to provide a world transform for a nearby object.
 
 
 ---

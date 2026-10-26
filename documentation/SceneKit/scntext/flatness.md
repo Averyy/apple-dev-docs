@@ -40,6 +40,8 @@ The default value of this property is `0.6`, specifying that the line segments m
   The width or depth of each chamfered edge. Animatable.
 - [var chamferProfile: UIBezierPath?](./chamferprofile.md)
   A path that determines the cross-sectional contour of each chamfered edge.
+- [chamferSegmentCount](./chamfersegmentcount.md)
+  The number of divisions SceneKit uses to create each chamfered edge of the text geometry. Animatable.
 
 
 ---

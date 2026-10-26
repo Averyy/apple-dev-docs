@@ -80,6 +80,9 @@ The options with “Preserve” in their names are applicable only when external
   Requests that NSXML use single quotes for the value of an attribute or namespace node.
 ### Initializers
 - [init(rawValue: UInt)](./options/init%28rawvalue%29.md)
+### Enumeration Cases
+- [NSXMLNodeOptionsNone](../nsxmlnodeoptions/nsxmlnodeoptionsnone.md)
+  No options are requested for this input or output action.
 
 ## Relationships
 
@@ -98,6 +101,8 @@ The options with “Preserve” in their names are applicable only when external
 ### Constants
 - [XMLNode.Kind](./kind-swift.enum.md)
   `NSXMLNode` declares the following constants of type NSXMLNodeKind for specifying a node’s kind in the initializer methods [`init(kind:)`](./init%28kind%29.md) and [`init(kind:options:)`](./init%28kind,options%29.md):
+- [NSXMLNodeOptionsNone](../nsxmlnodeoptions/nsxmlnodeoptionsnone.md)
+  No options are requested for this input or output action.
 
 
 ---

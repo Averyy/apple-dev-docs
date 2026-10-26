@@ -92,6 +92,8 @@ CIContext *myCIContext = [CIContext contextWithCGLContext: CGLGetCurrentContext(
   Creates a CGLayer object from the provided parameters.
 - [func draw(CIImage, at: CGPoint, from: CGRect)](./draw%28_,at,from%29.md)
   Renders a region of an image to a point in the context destination.
+- [+ contextWithCGLContext:pixelFormat:options:](./contextwithcglcontext_pixelformat_options_.md)
+  Creates a Core Image context from a CGL context, using the specified options and pixel format object.
 
 
 ---

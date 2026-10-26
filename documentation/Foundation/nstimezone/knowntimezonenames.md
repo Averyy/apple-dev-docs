@@ -46,6 +46,10 @@ An array of strings listing the IDs of all the time zones known to the system.
   Returns a time zone object offset from Greenwich Mean Time by a given number of seconds.
 - [class var abbreviationDictionary: [String : String]](./abbreviationdictionary.md)
   Returns a dictionary holding the mappings of time zone abbreviations to time zone names.
+- [+ timeZoneWithName:](./timezonewithname_.md)
+  Returns the time zone object identified by a given identifier.
+- [+ timeZoneWithName:data:](./timezonewithname_data_.md)
+  Returns the time zone with a given identifier whose data has been initialized using given data.
 
 
 ---

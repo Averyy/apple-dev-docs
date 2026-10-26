@@ -30,6 +30,8 @@ var dimension: Int { get }
   The number of splits.
 - [var splitSectionLengths: [Int]?](./splitsectionlengths-5abch.md)
   An array that contains the lengths of each split section.
+- [splitSectionLengths](./splitsectionlengths-32abw.md)
+  An array that contains the lengths of each split section.
 
 
 ---

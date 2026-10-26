@@ -73,6 +73,8 @@ When you’re finished with a match, call the [`disconnect()`](./gkmatch/disconn
   The local player’s properties that matchmaking rules used to find the players with some additions.
 - [var playerProperties: [GKPlayer : [String : Any]]?](./gkmatch/playerproperties.md)
   The properties for other players that matchmaking rules uses to find players, with some additions.
+- [GKMatchProperties](./gkmatchproperties.md)
+  A type for game-specific properties that Game Center uses to find players when using matchmaking rules.
 ### Finishing the match
 - [func disconnect()](./gkmatch/disconnect%28%29.md)
   Disconnects the local player from the match.

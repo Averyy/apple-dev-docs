@@ -53,6 +53,10 @@ Each figure in the graphics path is constructed with a connected set of lines an
   Creates a mutable copy of an existing graphics path.
 - [func mutableCopy(using: UnsafePointer<CGAffineTransform>?) -> CGMutablePath?](./cgpath/mutablecopy%28using%29.md)
   Creates a mutable copy of a graphics path transformed by a transformation matrix.
+- [CGPathCreateCopyByDashingPath](./cgpathcreatecopybydashingpath.md)
+  Creates a dashed copy of another path.
+- [CGPathCreateCopyByStrokingPath](./cgpathcreatecopybystrokingpath.md)
+  Creates a stroked copy of another path.
 ### Examining a Graphics Path
 - [var boundingBox: CGRect](./cgpath/boundingbox.md)
   Returns the bounding box containing all points in a graphics path.
@@ -66,6 +70,10 @@ Each figure in the graphics path is constructed with a connected set of lines an
   Indicates whether or not a graphics path is empty.
 - [func isRect(UnsafeMutablePointer<CGRect>?) -> Bool](./cgpath/isrect%28_%29.md)
   Indicates whether or not a graphics path represents a rectangle.
+- [CGPathEqualToPath](./cgpathequaltopath.md)
+  Indicates whether two graphics paths are equivalent.
+- [CGPathContainsPoint](./cgpathcontainspoint.md)
+  Checks whether a point is contained in a graphics path.
 ### Applying a Function to the Elements of a Path
 - [func apply(info: UnsafeMutableRawPointer?, function: CGPathApplierFunction)](./cgpath/apply%28info,function%29.md)
   For each element in a graphics path, calls a custom applier function.
@@ -90,6 +98,18 @@ Each figure in the graphics path is constructed with a connected set of lines an
 - [func subtracting(CGPath, using: CGPathFillRule) -> CGPath](./cgpath/subtracting%28_,using%29.md)
 - [func symmetricDifference(CGPath, using: CGPathFillRule) -> CGPath](./cgpath/symmetricdifference%28_,using%29.md)
 - [func union(CGPath, using: CGPathFillRule) -> CGPath](./cgpath/union%28_,using%29.md)
+### Retaining and Releasing a Path
+- [CGPathRelease](./cgpathrelease.md)
+  Decrements the retain count of a graphics path.
+- [CGPathRetain](./cgpathretain.md)
+  Increments the retain count of a graphics path.
+### Constants
+- [CGPathDrawingMode](./cgpathdrawingmode.md)
+  Options for rendering a path.
+- [CGLineCap](./cglinecap.md)
+  Styles for rendering the endpoint of a stroked line.
+- [CGLineJoin](./cglinejoin.md)
+  Junction types for stroked lines.
 
 ## Relationships
 
@@ -112,6 +132,31 @@ Each figure in the graphics path is constructed with a connected set of lines an
   A mutable graphics path: a mathematical description of shapes or lines to be drawn in a graphics context.
 - [class CGLayer](./cglayer.md)
   An offscreen context for reusing content drawn with Core Graphics.
+### Opaque Types
+- [CGColorRef](./cgcolor.md)
+  A set of components that define a color, with a color space specifying how to interpret them.
+- [CGColorConversionInfoRef](./cgcolorconversioninfo.md)
+  An object that describes how to convert between color spaces for use by other system services.
+- [CGColorSpaceRef](./cgcolorspace.md)
+  A profile that specifies how to interpret a color value for display.
+- [CGDataConsumerRef](./cgdataconsumer.md)
+  An abstraction for data-writing tasks that eliminates the need to manage a raw memory buffer.
+- [CGDataProviderRef](./cgdataprovider.md)
+  An abstraction for data-reading tasks that eliminates the need to manage a raw memory buffer.
+- [CGFontRef](./cgfont.md)
+  A set of character glyphs and layout information for drawing text.
+- [CGFunctionRef](./cgfunction.md)
+  A general facility for defining and using callback functions.
+- [CGGradientRef](./cggradient.md)
+  A definition for a smooth transition between colors for drawing radial and axial gradient fills.
+- [CGPatternRef](./cgpattern.md)
+  A 2D pattern to be used for drawing graphics paths.
+- [CGPDFArray](./cgpdfarray.md)
+  An array structure within a PDF document.
+- [CGPDFContentStream](./cgpdfcontentstream.md)
+  A representation of one or more content data streams in a PDF page.
+- [CGPDFDictionary](./cgpdfdictionary.md)
+  A dictionary structure within a PDF document.
 
 
 ---

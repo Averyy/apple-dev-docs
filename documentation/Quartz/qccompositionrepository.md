@@ -37,6 +37,11 @@ Compositions in the repository are represented by the [`QCComposition`](./qccomp
   Returns an array of compositions that match a set of criteria.
 - [func allCompositions() -> [Any]!](./qccompositionrepository/allcompositions%28%29.md)
   Returns an array that contains all compositions currently in the composition repository.
+### Notifications
+- [QCCompositionRepositoryDidUpdateNotification](./qccompositionrepositorydidupdatenotification.md)
+  Posted whenever the list of compositions in the composition repository is updated.
+### Instance Variables
+- [cq](./qccompositionrepository/cq.md)
 
 ## Relationships
 

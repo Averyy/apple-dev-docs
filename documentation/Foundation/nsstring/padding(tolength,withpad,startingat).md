@@ -57,6 +57,8 @@ Here are some examples of usage:
 - [func appendingFormat(NSString, any CVarArg...) -> NSString](./appendingformat%28_,_%29.md)
 - [func appending(String) -> String](./appending%28_%29.md)
   Returns a new string made by appending a given string to the receiver.
+- [- stringByAppendingFormat:](./stringbyappendingformat_.md)
+  Returns a string made by appending to the receiver a string constructed from a given format string and the following arguments.
 
 
 ---

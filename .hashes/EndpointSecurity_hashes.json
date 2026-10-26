@@ -465,6 +465,11 @@
       "file_path": "documentation/EndpointSecurity/es_clear_cache_result_t/rawvalue.md",
       "hash": "a5fd6f21dd1385ca673653f2584f6e188e748acfb74dad2aa845dbb68405d9cf"
     },
+    "https://developer.apple.com/documentation/endpointsecurity/es_client_t": {
+      "etag": "\"1c47-65d55d1ea5f96-df\"",
+      "file_path": "documentation/EndpointSecurity/es_client_t.md",
+      "hash": "07734e5d0871891cf3443d29c3f2cb6921acb80354abacfe5d40041ff1cc49f8"
+    },
     "https://developer.apple.com/documentation/endpointsecurity/es_copy_message(_:)": {
       "etag": "\"3d8a-65d55d2008f8b-df\"",
       "file_path": "documentation/EndpointSecurity/es_copy_message(_).md",
@@ -720,6 +725,26 @@
       "file_path": "documentation/EndpointSecurity/es_event_authentication_t/data.md",
       "hash": "995cedc527cd4ea92930a5a591a7fd87c49dfe9d650b69cc626474b8dad9871d"
     },
+    "https://developer.apple.com/documentation/endpointsecurity/es_event_authentication_t/data/auto_unlock": {
+      "etag": "\"1ad3-65d55d205c8f6-df\"",
+      "file_path": "documentation/EndpointSecurity/es_event_authentication_t/data/auto_unlock.md",
+      "hash": "c431e97b3817b3efcae10b12b70c54c19a827fa279df1178a5a95c70c8b4344a"
+    },
+    "https://developer.apple.com/documentation/endpointsecurity/es_event_authentication_t/data/od": {
+      "etag": "\"19e0-65d55d205c8f6-df\"",
+      "file_path": "documentation/EndpointSecurity/es_event_authentication_t/data/od.md",
+      "hash": "b2dbe4d9184bfb1997563d3f4d1ad2fb2d714bbce12f60974df0f152959bd23a"
+    },
+    "https://developer.apple.com/documentation/endpointsecurity/es_event_authentication_t/data/token": {
+      "etag": "\"1a31-65d55d205c8f6-df\"",
+      "file_path": "documentation/EndpointSecurity/es_event_authentication_t/data/token.md",
+      "hash": "9111dc95ad88e8cc449b496f049b980e39dc900919f8bf8a63e3a66522a0fe33"
+    },
+    "https://developer.apple.com/documentation/endpointsecurity/es_event_authentication_t/data/touchid": {
+      "etag": "\"1a67-65d55d205c8f6-df\"",
+      "file_path": "documentation/EndpointSecurity/es_event_authentication_t/data/touchid.md",
+      "hash": "dc378740aff574cf934b9afe1d70dfd853cbaa4796430a8c94571bdc7642f0f6"
+    },
     "https://developer.apple.com/documentation/endpointsecurity/es_event_authentication_t/init()": {
       "etag": "\"f3c-65d55d205c8f6-df\"",
       "file_path": "documentation/EndpointSecurity/es_event_authentication_t/init().md",
@@ -819,6 +844,11 @@
       "etag": "\"1d31-65d55d203cfd1-df\"",
       "file_path": "documentation/EndpointSecurity/es_event_authentication_touchid_t/uid.md",
       "hash": "c87ebcf7731b537c01c1688664be5f1dc626c95b0732d10dc200066431f0addb"
+    },
+    "https://developer.apple.com/documentation/endpointsecurity/es_event_authentication_touchid_t/uid/uid": {
+      "etag": "\"1694-65d55d203cfd1-df\"",
+      "file_path": "documentation/EndpointSecurity/es_event_authentication_touchid_t/uid/uid.md",
+      "hash": "bf32bc69f144deb13e8a6bd7bb59a6647be081ce1a60c6ee6558fa57379beb91"
     },
     "https://developer.apple.com/documentation/endpointsecurity/es_event_authorization_judgement_t": {
       "etag": "\"a0b0-65d55d1dcd148-df\"",
@@ -985,6 +1015,41 @@
       "file_path": "documentation/EndpointSecurity/es_event_bootstrap_look_up_t/target.md",
       "hash": "d06cbe46e09a68538ad1b98af1ba9d557abe5aa6932327a62bfcb4711b7c22b8"
     },
+    "https://developer.apple.com/documentation/endpointsecurity/es_event_bootstrap_look_up_t/target/job": {
+      "etag": "\"19f0-65d55d202127b-df\"",
+      "file_path": "documentation/EndpointSecurity/es_event_bootstrap_look_up_t/target/job.md",
+      "hash": "03dbd02331c22fe44d2f83389155095620310536be127d537c2eed20c43815c1"
+    },
+    "https://developer.apple.com/documentation/endpointsecurity/es_event_bootstrap_look_up_t/target/job/job_label": {
+      "etag": "\"1d84-65d55d202127b-df\"",
+      "file_path": "documentation/EndpointSecurity/es_event_bootstrap_look_up_t/target/job/job_label.md",
+      "hash": "77a4d4b466d983a451c45db74d2495e77351973dc4a070f7af31cfe65b94555b"
+    },
+    "https://developer.apple.com/documentation/endpointsecurity/es_event_bootstrap_look_up_t/target/job/lwcr": {
+      "etag": "\"1d0e-65d55d202127b-df\"",
+      "file_path": "documentation/EndpointSecurity/es_event_bootstrap_look_up_t/target/job/lwcr.md",
+      "hash": "dc35877e0d9bc54bc169b35c8e4811350d7d9f61b80b445083e1abf64e1f8cd7"
+    },
+    "https://developer.apple.com/documentation/endpointsecurity/es_event_bootstrap_look_up_t/target/process": {
+      "etag": "\"1cd1-65d55d202127b-df\"",
+      "file_path": "documentation/EndpointSecurity/es_event_bootstrap_look_up_t/target/process.md",
+      "hash": "feb1e82cf5951c9570ffa8f9ba2979ce2b06d6422ae560f7f7dbf3e03fa44245"
+    },
+    "https://developer.apple.com/documentation/endpointsecurity/es_event_bootstrap_look_up_t/target/process/job_label": {
+      "etag": "\"1db0-65d55d202127b-df\"",
+      "file_path": "documentation/EndpointSecurity/es_event_bootstrap_look_up_t/target/process/job_label.md",
+      "hash": "87edda1d98317de7bfea979e7d7129ec977d7c4fbb8eae5f0847e71e36e9e0f1"
+    },
+    "https://developer.apple.com/documentation/endpointsecurity/es_event_bootstrap_look_up_t/target/process/target": {
+      "etag": "\"1c7e-65d55d202127b-df\"",
+      "file_path": "documentation/EndpointSecurity/es_event_bootstrap_look_up_t/target/process/target.md",
+      "hash": "eb66760f71c99d6ee823eda934a73d4a11d0277f42c3a892c37e687bfd029f50"
+    },
+    "https://developer.apple.com/documentation/endpointsecurity/es_event_bootstrap_look_up_t/target/process/target_token": {
+      "etag": "\"17f6-65d55d202127b-df\"",
+      "file_path": "documentation/EndpointSecurity/es_event_bootstrap_look_up_t/target/process/target_token.md",
+      "hash": "8390b937063952e027a528c1fb29e939beb5163b78b1d2ea22389204d6eb2923"
+    },
     "https://developer.apple.com/documentation/endpointsecurity/es_event_bootstrap_look_up_t/target_type": {
       "etag": "\"2172-65d55d202127b-df\"",
       "file_path": "documentation/EndpointSecurity/es_event_bootstrap_look_up_t/target_type.md",
@@ -1150,6 +1215,11 @@
       "file_path": "documentation/EndpointSecurity/es_event_close_t/reserved-1vkig.md",
       "hash": "1417944ee6858a25bf279d98f3a62fba0c568b9c89610480fbe6a98252f38b85"
     },
+    "https://developer.apple.com/documentation/endpointsecurity/es_event_close_t/reserved-3n62l": {
+      "etag": "\"1124-65d55d1e6df8e-df\"",
+      "file_path": "documentation/EndpointSecurity/es_event_close_t/reserved-3n62l.md",
+      "hash": "3b96aa2c16677ba35e5e5bdb69b122aa3a01cedf0adb6eff937d74bde518307f"
+    },
     "https://developer.apple.com/documentation/endpointsecurity/es_event_close_t/target": {
       "etag": "\"27a5-65d55d1e6df8e-df\"",
       "file_path": "documentation/EndpointSecurity/es_event_close_t/target.md",
@@ -1159,6 +1229,11 @@
       "etag": "\"145b-65d55d1e6df8e-df\"",
       "file_path": "documentation/EndpointSecurity/es_event_close_t/was_mapped_writable-5iaxq.md",
       "hash": "93112b2edc0d73a4a618d7b99dd6f9a1cd1760c702b940f24f145e467a46fe9f"
+    },
+    "https://developer.apple.com/documentation/endpointsecurity/es_event_close_t/was_mapped_writable-75owp": {
+      "etag": "\"1010-65d55d1e6df8e-df\"",
+      "file_path": "documentation/EndpointSecurity/es_event_close_t/was_mapped_writable-75owp.md",
+      "hash": "13dd3a6efcda3b828b51fc07514fccdd2df04824404fac7b68a53a7c149ab16b"
     },
     "https://developer.apple.com/documentation/endpointsecurity/es_event_copyfile_t": {
       "etag": "\"be41-65d55d1d3224f-df\"",
@@ -1210,6 +1285,11 @@
       "file_path": "documentation/EndpointSecurity/es_event_create_t.md",
       "hash": "8841b751c3c320eb95d093680ebd865cb372b9f7976985bac900b87d5abd275c"
     },
+    "https://developer.apple.com/documentation/endpointsecurity/es_event_create_t/acl-2erry": {
+      "etag": "\"f6c-65d55d1e886a4-df\"",
+      "file_path": "documentation/EndpointSecurity/es_event_create_t/acl-2erry.md",
+      "hash": "ec7f9a26b96192419edb7d9a48618e62b9425a5882ea718c5ccb99722df4b026"
+    },
     "https://developer.apple.com/documentation/endpointsecurity/es_event_create_t/acl-6m1ze": {
       "etag": "\"1161-65d55d1e886a4-df\"",
       "file_path": "documentation/EndpointSecurity/es_event_create_t/acl-6m1ze.md",
@@ -1220,6 +1300,31 @@
       "file_path": "documentation/EndpointSecurity/es_event_create_t/destination.md",
       "hash": "1b5c6543975178ade2fb2ee90e7ab86c4826ffceff17e0aab3b9857186a65f57"
     },
+    "https://developer.apple.com/documentation/endpointsecurity/es_event_create_t/destination/existing_file": {
+      "etag": "\"19df-65d55d1e886a4-df\"",
+      "file_path": "documentation/EndpointSecurity/es_event_create_t/destination/existing_file.md",
+      "hash": "0a0d31c75b3c4e455001690bcf1e8672405828efb8339bc69c62651cebe725c0"
+    },
+    "https://developer.apple.com/documentation/endpointsecurity/es_event_create_t/destination/new_path": {
+      "etag": "\"1c21-65d55d1e886a4-df\"",
+      "file_path": "documentation/EndpointSecurity/es_event_create_t/destination/new_path.md",
+      "hash": "62c82c749e8283b95513aee753724edab3ac8696573d18b50224a6db98b1a7a1"
+    },
+    "https://developer.apple.com/documentation/endpointsecurity/es_event_create_t/destination/new_path/dir": {
+      "etag": "\"1bde-65d55d1e886a4-df\"",
+      "file_path": "documentation/EndpointSecurity/es_event_create_t/destination/new_path/dir.md",
+      "hash": "0aee8d946229809a63a384dbdd866978fe5c0f09d72ed63ca8f02646b425b371"
+    },
+    "https://developer.apple.com/documentation/endpointsecurity/es_event_create_t/destination/new_path/filename": {
+      "etag": "\"1d5f-65d55d1e886a4-df\"",
+      "file_path": "documentation/EndpointSecurity/es_event_create_t/destination/new_path/filename.md",
+      "hash": "e7b5b2d24255585f3b23ea98d674a689e1732dd9d24869861116a17cf7b51cd7"
+    },
+    "https://developer.apple.com/documentation/endpointsecurity/es_event_create_t/destination/new_path/mode": {
+      "etag": "\"1892-65d55d1e886a4-df\"",
+      "file_path": "documentation/EndpointSecurity/es_event_create_t/destination/new_path/mode.md",
+      "hash": "14aec9b81e44747f0e0067a9552c18b577a51adf6c3bf019374385653f80f580"
+    },
     "https://developer.apple.com/documentation/endpointsecurity/es_event_create_t/destination_type": {
       "etag": "\"33ee-65d55d1e886a4-df\"",
       "file_path": "documentation/EndpointSecurity/es_event_create_t/destination_type.md",
@@ -1229,6 +1334,11 @@
       "etag": "\"ef7-65d55d1e886a4-df\"",
       "file_path": "documentation/EndpointSecurity/es_event_create_t/init().md",
       "hash": "31a039ed2529d37d1b34a20a198b4c27fe5ad5230fb15b4bd272309a306c9915"
+    },
+    "https://developer.apple.com/documentation/endpointsecurity/es_event_create_t/reserved-4oqh": {
+      "etag": "\"1133-65d55d1e886a4-df\"",
+      "file_path": "documentation/EndpointSecurity/es_event_create_t/reserved-4oqh.md",
+      "hash": "cdaa74e1b1f4c35e7e697e2317117df90b3ba26564374a44acb65dbd0b09ef0c"
     },
     "https://developer.apple.com/documentation/endpointsecurity/es_event_create_t/reserved-fmi7": {
       "etag": "\"5a1a-65d55d1e886a4-df\"",
@@ -1335,6 +1445,11 @@
       "file_path": "documentation/EndpointSecurity/es_event_exec_t.md",
       "hash": "441a15df8f1ccacd3aabe896e6098398b8c55a38f9c416f4e3d2a489db8febe3"
     },
+    "https://developer.apple.com/documentation/endpointsecurity/es_event_exec_t/cwd-2hhbs": {
+      "etag": "\"13f4-65d55d1d9bd60-df\"",
+      "file_path": "documentation/EndpointSecurity/es_event_exec_t/cwd-2hhbs.md",
+      "hash": "e4b656a8975276d17703aaadd4ed9f3830fcc90d4b6aa65aa7be3f9d88e14a4c"
+    },
     "https://developer.apple.com/documentation/endpointsecurity/es_event_exec_t/cwd-7pogi": {
       "etag": "\"1a2a-65d55d1d9bd60-df\"",
       "file_path": "documentation/EndpointSecurity/es_event_exec_t/cwd-7pogi.md",
@@ -1350,10 +1465,25 @@
       "file_path": "documentation/EndpointSecurity/es_event_exec_t/image_cpusubtype-4h1ft.md",
       "hash": "040d4b698deb3e44b83643060280cda80b029722e096edc1b72ba9cf6bb9eb9d"
     },
+    "https://developer.apple.com/documentation/endpointsecurity/es_event_exec_t/image_cpusubtype-y18r": {
+      "etag": "\"1164-65d55d1d9bd60-df\"",
+      "file_path": "documentation/EndpointSecurity/es_event_exec_t/image_cpusubtype-y18r.md",
+      "hash": "c62308b41a54ec2d1b51f88697f69fe64072e661af896853a37d2021a6bf0bed"
+    },
+    "https://developer.apple.com/documentation/endpointsecurity/es_event_exec_t/image_cputype-94648": {
+      "etag": "\"1130-65d55d1d9bd60-df\"",
+      "file_path": "documentation/EndpointSecurity/es_event_exec_t/image_cputype-94648.md",
+      "hash": "12c738b998b62c9ff0b63966457eefc2c47759eb22e2de2c9a99e4e4428fe71a"
+    },
     "https://developer.apple.com/documentation/endpointsecurity/es_event_exec_t/image_cputype-9u2jr": {
       "etag": "\"12f8-65d55d1d9bd60-df\"",
       "file_path": "documentation/EndpointSecurity/es_event_exec_t/image_cputype-9u2jr.md",
       "hash": "428a1798d2cfd14bea4f604924b8c6cf94d937140d960d1d24b1c6dc5599e165"
+    },
+    "https://developer.apple.com/documentation/endpointsecurity/es_event_exec_t/last_fd-4hqd7": {
+      "etag": "\"f71-65d55d1d9bd60-df\"",
+      "file_path": "documentation/EndpointSecurity/es_event_exec_t/last_fd-4hqd7.md",
+      "hash": "8c47aae18570666313524da63e44aad03fc03d68290c348b5b5560ad837fb559"
     },
     "https://developer.apple.com/documentation/endpointsecurity/es_event_exec_t/last_fd-g0rc": {
       "etag": "\"138f-65d55d1d9bd60-df\"",
@@ -1365,10 +1495,20 @@
       "file_path": "documentation/EndpointSecurity/es_event_exec_t/reserved-25qdu.md",
       "hash": "be0bb15b57244d93cfd7bbed5a5643c1876533475c4c7299e9e07e32fb8ce693"
     },
+    "https://developer.apple.com/documentation/endpointsecurity/es_event_exec_t/reserved-5f002": {
+      "etag": "\"1116-65d55d1d9bd60-df\"",
+      "file_path": "documentation/EndpointSecurity/es_event_exec_t/reserved-5f002.md",
+      "hash": "4de9572dc732427e8c0294f8e31db2ed593327183ed87141882429a05897e0a1"
+    },
     "https://developer.apple.com/documentation/endpointsecurity/es_event_exec_t/script-19tlj": {
       "etag": "\"1a4e-65d55d1d9bd60-df\"",
       "file_path": "documentation/EndpointSecurity/es_event_exec_t/script-19tlj.md",
       "hash": "f35b5527bcd6ce8c74ec5bf3150b15b9beaded24710bf1791d49cddf39115b56"
+    },
+    "https://developer.apple.com/documentation/endpointsecurity/es_event_exec_t/script-8c2sm": {
+      "etag": "\"1418-65d55d1d9bd60-df\"",
+      "file_path": "documentation/EndpointSecurity/es_event_exec_t/script-8c2sm.md",
+      "hash": "79a3182cf929dc1b58e9752ad03012420c1d0bfc16d4a148997e50d8863641fb"
     },
     "https://developer.apple.com/documentation/endpointsecurity/es_event_exec_t/target": {
       "etag": "\"239d-65d55d1d9bd60-df\"",
@@ -1534,6 +1674,16 @@
       "etag": "\"1ffb-65d55d1f7abb3-df\"",
       "file_path": "documentation/EndpointSecurity/es_event_gatekeeper_user_override_t/file.md",
       "hash": "d614c725b0bf85feeccb7fbc54fa589ad69ec384faa199d55d897e3e419ae857"
+    },
+    "https://developer.apple.com/documentation/endpointsecurity/es_event_gatekeeper_user_override_t/file/file": {
+      "etag": "\"1a47-65d55d1f7abb3-df\"",
+      "file_path": "documentation/EndpointSecurity/es_event_gatekeeper_user_override_t/file/file.md",
+      "hash": "283189ae822eb3b307acf1d7b547ff80626ca3a0b16548e9028792e2e08fd27f"
+    },
+    "https://developer.apple.com/documentation/endpointsecurity/es_event_gatekeeper_user_override_t/file/file_path": {
+      "etag": "\"1bc8-65d55d1f7abb3-df\"",
+      "file_path": "documentation/EndpointSecurity/es_event_gatekeeper_user_override_t/file/file_path.md",
+      "hash": "8efc8ce8822413781361f5cf08107d9d5e44c3f368c5d87350f75ac7e43dd01f"
     },
     "https://developer.apple.com/documentation/endpointsecurity/es_event_gatekeeper_user_override_t/file_type": {
       "etag": "\"20ad-65d55d1f7abb3-df\"",
@@ -1904,6 +2054,11 @@
       "etag": "\"1bbb-65d55d1e04cd6-df\"",
       "file_path": "documentation/EndpointSecurity/es_event_login_login_t/uid.md",
       "hash": "3401b9ad71098144d4f6531dda355e373ed190f7ec535762f58162fea7835ea0"
+    },
+    "https://developer.apple.com/documentation/endpointsecurity/es_event_login_login_t/uid/uid": {
+      "etag": "\"156b-65d55d1e1f855-df\"",
+      "file_path": "documentation/EndpointSecurity/es_event_login_login_t/uid/uid.md",
+      "hash": "be00e7d8a9f0a2bdd60b746ff2d1120ce2b22bb9e306fe149df3b92b98526ea9"
     },
     "https://developer.apple.com/documentation/endpointsecurity/es_event_login_login_t/username": {
       "etag": "\"1df0-65d55d1e1f855-df\"",
@@ -2870,6 +3025,11 @@
       "file_path": "documentation/EndpointSecurity/es_event_openssh_login_t/uid.md",
       "hash": "61d041fdba1aef0bbe07d70894e46f1b65002c6ea1e8d5f232735c67de9698de"
     },
+    "https://developer.apple.com/documentation/endpointsecurity/es_event_openssh_login_t/uid/uid": {
+      "etag": "\"15a1-65d55d1db30bd-df\"",
+      "file_path": "documentation/EndpointSecurity/es_event_openssh_login_t/uid/uid.md",
+      "hash": "744d700c1a3e17973d607c352e53333c6301a83fc7595c297778fedb1df72bc6"
+    },
     "https://developer.apple.com/documentation/endpointsecurity/es_event_openssh_login_t/username": {
       "etag": "\"1e1e-65d55d1db30bd-df\"",
       "file_path": "documentation/EndpointSecurity/es_event_openssh_login_t/username.md",
@@ -3185,6 +3345,26 @@
       "file_path": "documentation/EndpointSecurity/es_event_rename_t/destination.md",
       "hash": "460935547b7b67773b27d76dc0e06f2b3897139fdef8fa8722c34b241df72934"
     },
+    "https://developer.apple.com/documentation/endpointsecurity/es_event_rename_t/destination/existing_file": {
+      "etag": "\"19d7-65d55d1dcd148-df\"",
+      "file_path": "documentation/EndpointSecurity/es_event_rename_t/destination/existing_file.md",
+      "hash": "204597f828b2b7c5506859d242e4313cdb4d0d26092a5f7275e30c3cba056afe"
+    },
+    "https://developer.apple.com/documentation/endpointsecurity/es_event_rename_t/destination/new_path": {
+      "etag": "\"19d8-65d55d1dcd148-df\"",
+      "file_path": "documentation/EndpointSecurity/es_event_rename_t/destination/new_path.md",
+      "hash": "58ecd59189859cc01eb317b78f3fe01f216b520f32709a8c6b4804afb725b8ea"
+    },
+    "https://developer.apple.com/documentation/endpointsecurity/es_event_rename_t/destination/new_path/dir": {
+      "etag": "\"1bd6-65d55d1dcd148-df\"",
+      "file_path": "documentation/EndpointSecurity/es_event_rename_t/destination/new_path/dir.md",
+      "hash": "f37cccdefbfa172efea2d1cd70c2a7b58cc542f0b722fcc22afa9fc870d33db6"
+    },
+    "https://developer.apple.com/documentation/endpointsecurity/es_event_rename_t/destination/new_path/filename": {
+      "etag": "\"1d57-65d55d1dcd148-df\"",
+      "file_path": "documentation/EndpointSecurity/es_event_rename_t/destination/new_path/filename.md",
+      "hash": "39267f88db5a6c1a8e0cf0d00ae92af9acdd4426f6d97f39dd186aae7698d289"
+    },
     "https://developer.apple.com/documentation/endpointsecurity/es_event_rename_t/destination_type": {
       "etag": "\"4be9-65d55d1dcd148-df\"",
       "file_path": "documentation/EndpointSecurity/es_event_rename_t/destination_type.md",
@@ -3334,6 +3514,11 @@
       "etag": "\"52b7-65d55d1e3bdcf-df\"",
       "file_path": "documentation/EndpointSecurity/es_event_setacl_t/acl.md",
       "hash": "56345a08e90efeccff18e08dd1461232110aaa58f1139e6a42e46e1f053cd96f"
+    },
+    "https://developer.apple.com/documentation/endpointsecurity/es_event_setacl_t/acl/set": {
+      "etag": "\"1458-65d55d1e3bdcf-df\"",
+      "file_path": "documentation/EndpointSecurity/es_event_setacl_t/acl/set.md",
+      "hash": "4006e7889d45ae3de2f492a6a6e5f4f2e318facea5b1dcf95ab46f1ad96d5098"
     },
     "https://developer.apple.com/documentation/endpointsecurity/es_event_setacl_t/init(target:set_or_clear:acl:reserved:)": {
       "etag": "\"88df-65d55d1e3bdcf-df\"",
@@ -3785,6 +3970,11 @@
       "file_path": "documentation/EndpointSecurity/es_event_su_t/to_uid.md",
       "hash": "13b7d36c9e94a55f24190235e569bce0a90a84a0fd5a5492861e80654967fb62"
     },
+    "https://developer.apple.com/documentation/endpointsecurity/es_event_su_t/to_uid/uid": {
+      "etag": "\"14ab-65d55d1e54ae6-df\"",
+      "file_path": "documentation/EndpointSecurity/es_event_su_t/to_uid/uid.md",
+      "hash": "33723cad8e8ff0d0a59ef5685ed004ae4fc6c6bf8fd10323cc438f0cc1320206"
+    },
     "https://developer.apple.com/documentation/endpointsecurity/es_event_su_t/to_username": {
       "etag": "\"1d60-65d55d1e54ae6-df\"",
       "file_path": "documentation/EndpointSecurity/es_event_su_t/to_username.md",
@@ -3804,6 +3994,11 @@
       "etag": "\"1b59-65d55d1f2a94e-df\"",
       "file_path": "documentation/EndpointSecurity/es_event_sudo_t/from_uid.md",
       "hash": "c12403d7a6f8435298a56419e929d9ee66842ca5cd3ba27f0c4d490125173c30"
+    },
+    "https://developer.apple.com/documentation/endpointsecurity/es_event_sudo_t/from_uid/uid": {
+      "etag": "\"1503-65d55d1f2a94e-df\"",
+      "file_path": "documentation/EndpointSecurity/es_event_sudo_t/from_uid/uid.md",
+      "hash": "cd608816ebb501c5faff1edf4648ec1c393ca8f9d7fc407a09f719cb3a39927a"
     },
     "https://developer.apple.com/documentation/endpointsecurity/es_event_sudo_t/from_username": {
       "etag": "\"1db8-65d55d1f2a94e-df\"",
@@ -3844,6 +4039,11 @@
       "etag": "\"1b21-65d55d1f2a94e-df\"",
       "file_path": "documentation/EndpointSecurity/es_event_sudo_t/to_uid.md",
       "hash": "62652e79e133d836818cb44edb5d15d88e17dd80d4cbf5115ee2d09105f8a544"
+    },
+    "https://developer.apple.com/documentation/endpointsecurity/es_event_sudo_t/to_uid/uid": {
+      "etag": "\"14e1-65d55d1f2a94e-df\"",
+      "file_path": "documentation/EndpointSecurity/es_event_sudo_t/to_uid/uid.md",
+      "hash": "8f10fd95975f4d8a70e7e8ac9df6674c4310833dba88b6037bb8c5505419723e"
     },
     "https://developer.apple.com/documentation/endpointsecurity/es_event_sudo_t/to_username": {
       "etag": "\"1d8e-65d55d1f2a94e-df\"",
@@ -6245,6 +6445,16 @@
       "file_path": "documentation/EndpointSecurity/es_fd_t/pipe-1gtm4.md",
       "hash": "bcf3d9ef4309ed9d2a19be5ba3dcf99e3ef5ba6d7862e973722b109f16fccb33"
     },
+    "https://developer.apple.com/documentation/endpointsecurity/es_fd_t/pipe-96tn9": {
+      "etag": "\"1103-65d55d1d9bd60-df\"",
+      "file_path": "documentation/EndpointSecurity/es_fd_t/pipe-96tn9.md",
+      "hash": "49059b1a338b5d0a23a51458f0baa69fda371ac443377c6ba13d2553c4856020"
+    },
+    "https://developer.apple.com/documentation/endpointsecurity/es_fd_t/pipe-96tn9/pipe_id": {
+      "etag": "\"123b-65d55d1d9bd60-df\"",
+      "file_path": "documentation/EndpointSecurity/es_fd_t/pipe-96tn9/pipe_id.md",
+      "hash": "ac81c982e8c92b40d909aa79670d463276b913eb22317e4c1bb716eef16f61ef"
+    },
     "https://developer.apple.com/documentation/endpointsecurity/es_file_t": {
       "etag": "\"76eb-65d55d1dcd148-df\"",
       "file_path": "documentation/EndpointSecurity/es_file_t.md",
@@ -6415,6 +6625,16 @@
       "file_path": "documentation/EndpointSecurity/es_message_t/action.md",
       "hash": "c4306203f4f4be58e7e03e21e13948eada78bab54ee8b4514316cdc3565e20c4"
     },
+    "https://developer.apple.com/documentation/endpointsecurity/es_message_t/action/auth": {
+      "etag": "\"18bd-65d55d2008f8b-df\"",
+      "file_path": "documentation/EndpointSecurity/es_message_t/action/auth.md",
+      "hash": "9e7cbe2b544d954a341e132f52ca54ab5900443fae415a17bac79e580c40bef5"
+    },
+    "https://developer.apple.com/documentation/endpointsecurity/es_message_t/action/notify": {
+      "etag": "\"18db-65d55d2008f8b-df\"",
+      "file_path": "documentation/EndpointSecurity/es_message_t/action/notify.md",
+      "hash": "e3a4855593b78d861d5f86459e9cac5b7e1254250f1dfe252396a0559635d69a"
+    },
     "https://developer.apple.com/documentation/endpointsecurity/es_message_t/action_type": {
       "etag": "\"358e-65d55d2008f8b-df\"",
       "file_path": "documentation/EndpointSecurity/es_message_t/action_type.md",
@@ -6444,6 +6664,11 @@
       "etag": "\"3068-65d55d202127b-df\"",
       "file_path": "documentation/EndpointSecurity/es_message_t/mach_time.md",
       "hash": "f1cd334a9bc082375223476ccbf837922c444ef0d81e278e1e86af4a0bd40b52"
+    },
+    "https://developer.apple.com/documentation/endpointsecurity/es_message_t/opaque": {
+      "etag": "\"11be-65d55d2008f8b-df\"",
+      "file_path": "documentation/EndpointSecurity/es_message_t/opaque.md",
+      "hash": "ede7919a367e424c7b9c88d6f8f4ea7950c696a99fae59d5c6b2362868b4a887"
     },
     "https://developer.apple.com/documentation/endpointsecurity/es_message_t/process": {
       "etag": "\"23d2-65d55d202127b-df\"",
@@ -6915,6 +7140,16 @@
       "file_path": "documentation/EndpointSecurity/es_od_member_id_array_t/member_array.md",
       "hash": "719eb56701dd0de01120b8fa081e20a204a724372f24f1994aad0e8699225a2e"
     },
+    "https://developer.apple.com/documentation/endpointsecurity/es_od_member_id_array_t/member_array/names": {
+      "etag": "\"1a18-65d55d1debadb-df\"",
+      "file_path": "documentation/EndpointSecurity/es_od_member_id_array_t/member_array/names.md",
+      "hash": "05f629856e9fb81fca5e45d472ba588965807929f23e7198d32ed0edd6ed72c6"
+    },
+    "https://developer.apple.com/documentation/endpointsecurity/es_od_member_id_array_t/member_array/uuids": {
+      "etag": "\"1640-65d55d1debadb-df\"",
+      "file_path": "documentation/EndpointSecurity/es_od_member_id_array_t/member_array/uuids.md",
+      "hash": "e2e6cc09496eab60b79d5599fe34f6d1f024fdde35533f90336985f3b4b16fc6"
+    },
     "https://developer.apple.com/documentation/endpointsecurity/es_od_member_id_array_t/member_count": {
       "etag": "\"1a81-65d55d1debadb-df\"",
       "file_path": "documentation/EndpointSecurity/es_od_member_id_array_t/member_count.md",
@@ -6949,6 +7184,16 @@
       "etag": "\"1e31-65d55d2008f8b-df\"",
       "file_path": "documentation/EndpointSecurity/es_od_member_id_t/member_value.md",
       "hash": "bf25a6d654de9be2c466d99108c22bb5239e408b5b80046f20d9d0cff658f7af"
+    },
+    "https://developer.apple.com/documentation/endpointsecurity/es_od_member_id_t/member_value/name": {
+      "etag": "\"1a2d-65d55d2008f8b-df\"",
+      "file_path": "documentation/EndpointSecurity/es_od_member_id_t/member_value/name.md",
+      "hash": "67f6ba009e594be9cf60aabe97adc3d6f83843fb7fbdf70b5f22f8b9b24d7e59"
+    },
+    "https://developer.apple.com/documentation/endpointsecurity/es_od_member_id_t/member_value/uuid": {
+      "etag": "\"1590-65d55d2008f8b-df\"",
+      "file_path": "documentation/EndpointSecurity/es_od_member_id_t/member_value/uuid.md",
+      "hash": "ee259be7da7c24a98338d8d33784ca3adf28108cb5929801890df80db9bbc918"
     },
     "https://developer.apple.com/documentation/endpointsecurity/es_od_member_type_group_uuid": {
       "etag": "\"68d2-65d55d1d826db-df\"",
@@ -7260,6 +7505,11 @@
       "file_path": "documentation/EndpointSecurity/es_process_t/reserved-1o3sp.md",
       "hash": "cd1f5c93783a5a0b472e42723a6ed0b2408569aba4979a86e9c7e77f1058311b"
     },
+    "https://developer.apple.com/documentation/endpointsecurity/es_process_t/reserved-5t1sy": {
+      "etag": "\"10ed-65d55d1d3224f-df\"",
+      "file_path": "documentation/EndpointSecurity/es_process_t/reserved-5t1sy.md",
+      "hash": "a019e84ef7036bc757f0034ca68d3cc3574ccb31ecefa30eff8a02b1006d3e92"
+    },
     "https://developer.apple.com/documentation/endpointsecurity/es_process_t/responsible_audit_token": {
       "etag": "\"268d-65d55d1d3224f-df\"",
       "file_path": "documentation/EndpointSecurity/es_process_t/responsible_audit_token.md",
@@ -7459,6 +7709,21 @@
       "etag": "\"341c-65d55d1f95c8d-df\"",
       "file_path": "documentation/EndpointSecurity/es_result_t/result.md",
       "hash": "87890e976e27f89741a28634f455d8ecca5e40c96d85a70995f3e8d2a47e8b2a"
+    },
+    "https://developer.apple.com/documentation/endpointsecurity/es_result_t/result/auth": {
+      "etag": "\"19ec-65d55d1f95c8d-df\"",
+      "file_path": "documentation/EndpointSecurity/es_result_t/result/auth.md",
+      "hash": "bd64c9be64f603528decf1476c7097bac2e71accdb31cff2115f49abeaf97064"
+    },
+    "https://developer.apple.com/documentation/endpointsecurity/es_result_t/result/flags": {
+      "etag": "\"155c-65d55d1f95c8d-df\"",
+      "file_path": "documentation/EndpointSecurity/es_result_t/result/flags.md",
+      "hash": "a490bd891413d5da33dcc1a70ecf6971265f1485c66b2ca5b9bd8a96bd1b1e5f"
+    },
+    "https://developer.apple.com/documentation/endpointsecurity/es_result_t/result/reserved": {
+      "etag": "\"15b3-65d55d1f95c8d-df\"",
+      "file_path": "documentation/EndpointSecurity/es_result_t/result/reserved.md",
+      "hash": "e09726387c99cce19542fa609944572988dcc857f7f60ec0bef7fe5229fa9380"
     },
     "https://developer.apple.com/documentation/endpointsecurity/es_result_t/result_type": {
       "etag": "\"26fa-65d55d1f95c8d-df\"",
@@ -8160,6 +8425,11 @@
       "file_path": "documentation/EndpointSecurity/message.md",
       "hash": "e962e13787b346f06ea49e626f00a11e647a4595cd19e67beddc5235af5b8711"
     },
+    "https://developer.apple.com/documentation/endpointsecurity/monitoring-system-events-with-endpoint-security": {
+      "etag": "\"2cf4-65d55d1f7abb3-df\"",
+      "file_path": "documentation/EndpointSecurity/monitoring-system-events-with-endpoint-security.md",
+      "hash": "c125439887cd6c01f4cdf97c84c6ce6bb3ec52c3b5d316330d922f5106394569"
+    },
     "https://developer.apple.com/tutorials/data/documentation/EndpointSecurity.json": {
       "etag": "\"20a81-65d55d1d3224f-df\"",
       "file_path": "documentation/EndpointSecurity/EndpointSecurity.md",
@@ -8625,6 +8895,11 @@
       "file_path": "documentation/EndpointSecurity/es_clear_cache_result_t/rawvalue.md",
       "hash": "a5fd6f21dd1385ca673653f2584f6e188e748acfb74dad2aa845dbb68405d9cf"
     },
+    "https://developer.apple.com/tutorials/data/documentation/endpointsecurity/es_client_t.json": {
+      "etag": "\"1c47-65d55d1ea5f96-df\"",
+      "file_path": "documentation/EndpointSecurity/es_client_t.md",
+      "hash": "07734e5d0871891cf3443d29c3f2cb6921acb80354abacfe5d40041ff1cc49f8"
+    },
     "https://developer.apple.com/tutorials/data/documentation/endpointsecurity/es_copy_message(_:).json": {
       "etag": "\"3d8a-65d55d2008f8b-df\"",
       "file_path": "documentation/EndpointSecurity/es_copy_message(_).md",
@@ -8880,6 +9155,26 @@
       "file_path": "documentation/EndpointSecurity/es_event_authentication_t/data.md",
       "hash": "995cedc527cd4ea92930a5a591a7fd87c49dfe9d650b69cc626474b8dad9871d"
     },
+    "https://developer.apple.com/tutorials/data/documentation/endpointsecurity/es_event_authentication_t/data/auto_unlock.json": {
+      "etag": "\"1ad3-65d55d205c8f6-df\"",
+      "file_path": "documentation/EndpointSecurity/es_event_authentication_t/data/auto_unlock.md",
+      "hash": "c431e97b3817b3efcae10b12b70c54c19a827fa279df1178a5a95c70c8b4344a"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/endpointsecurity/es_event_authentication_t/data/od.json": {
+      "etag": "\"19e0-65d55d205c8f6-df\"",
+      "file_path": "documentation/EndpointSecurity/es_event_authentication_t/data/od.md",
+      "hash": "b2dbe4d9184bfb1997563d3f4d1ad2fb2d714bbce12f60974df0f152959bd23a"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/endpointsecurity/es_event_authentication_t/data/token.json": {
+      "etag": "\"1a31-65d55d205c8f6-df\"",
+      "file_path": "documentation/EndpointSecurity/es_event_authentication_t/data/token.md",
+      "hash": "9111dc95ad88e8cc449b496f049b980e39dc900919f8bf8a63e3a66522a0fe33"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/endpointsecurity/es_event_authentication_t/data/touchid.json": {
+      "etag": "\"1a67-65d55d205c8f6-df\"",
+      "file_path": "documentation/EndpointSecurity/es_event_authentication_t/data/touchid.md",
+      "hash": "dc378740aff574cf934b9afe1d70dfd853cbaa4796430a8c94571bdc7642f0f6"
+    },
     "https://developer.apple.com/tutorials/data/documentation/endpointsecurity/es_event_authentication_t/init().json": {
       "etag": "\"f3c-65d55d205c8f6-df\"",
       "file_path": "documentation/EndpointSecurity/es_event_authentication_t/init().md",
@@ -8979,6 +9274,11 @@
       "etag": "\"1d31-65d55d203cfd1-df\"",
       "file_path": "documentation/EndpointSecurity/es_event_authentication_touchid_t/uid.md",
       "hash": "c87ebcf7731b537c01c1688664be5f1dc626c95b0732d10dc200066431f0addb"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/endpointsecurity/es_event_authentication_touchid_t/uid/uid.json": {
+      "etag": "\"1694-65d55d203cfd1-df\"",
+      "file_path": "documentation/EndpointSecurity/es_event_authentication_touchid_t/uid/uid.md",
+      "hash": "bf32bc69f144deb13e8a6bd7bb59a6647be081ce1a60c6ee6558fa57379beb91"
     },
     "https://developer.apple.com/tutorials/data/documentation/endpointsecurity/es_event_authorization_judgement_t.json": {
       "etag": "\"a0b0-65d55d1dcd148-df\"",
@@ -9145,6 +9445,41 @@
       "file_path": "documentation/EndpointSecurity/es_event_bootstrap_look_up_t/target.md",
       "hash": "d06cbe46e09a68538ad1b98af1ba9d557abe5aa6932327a62bfcb4711b7c22b8"
     },
+    "https://developer.apple.com/tutorials/data/documentation/endpointsecurity/es_event_bootstrap_look_up_t/target/job.json": {
+      "etag": "\"19f0-65d55d202127b-df\"",
+      "file_path": "documentation/EndpointSecurity/es_event_bootstrap_look_up_t/target/job.md",
+      "hash": "03dbd02331c22fe44d2f83389155095620310536be127d537c2eed20c43815c1"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/endpointsecurity/es_event_bootstrap_look_up_t/target/job/job_label.json": {
+      "etag": "\"1d84-65d55d202127b-df\"",
+      "file_path": "documentation/EndpointSecurity/es_event_bootstrap_look_up_t/target/job/job_label.md",
+      "hash": "77a4d4b466d983a451c45db74d2495e77351973dc4a070f7af31cfe65b94555b"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/endpointsecurity/es_event_bootstrap_look_up_t/target/job/lwcr.json": {
+      "etag": "\"1d0e-65d55d202127b-df\"",
+      "file_path": "documentation/EndpointSecurity/es_event_bootstrap_look_up_t/target/job/lwcr.md",
+      "hash": "dc35877e0d9bc54bc169b35c8e4811350d7d9f61b80b445083e1abf64e1f8cd7"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/endpointsecurity/es_event_bootstrap_look_up_t/target/process.json": {
+      "etag": "\"1cd1-65d55d202127b-df\"",
+      "file_path": "documentation/EndpointSecurity/es_event_bootstrap_look_up_t/target/process.md",
+      "hash": "feb1e82cf5951c9570ffa8f9ba2979ce2b06d6422ae560f7f7dbf3e03fa44245"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/endpointsecurity/es_event_bootstrap_look_up_t/target/process/job_label.json": {
+      "etag": "\"1db0-65d55d202127b-df\"",
+      "file_path": "documentation/EndpointSecurity/es_event_bootstrap_look_up_t/target/process/job_label.md",
+      "hash": "87edda1d98317de7bfea979e7d7129ec977d7c4fbb8eae5f0847e71e36e9e0f1"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/endpointsecurity/es_event_bootstrap_look_up_t/target/process/target.json": {
+      "etag": "\"1c7e-65d55d202127b-df\"",
+      "file_path": "documentation/EndpointSecurity/es_event_bootstrap_look_up_t/target/process/target.md",
+      "hash": "eb66760f71c99d6ee823eda934a73d4a11d0277f42c3a892c37e687bfd029f50"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/endpointsecurity/es_event_bootstrap_look_up_t/target/process/target_token.json": {
+      "etag": "\"17f6-65d55d202127b-df\"",
+      "file_path": "documentation/EndpointSecurity/es_event_bootstrap_look_up_t/target/process/target_token.md",
+      "hash": "8390b937063952e027a528c1fb29e939beb5163b78b1d2ea22389204d6eb2923"
+    },
     "https://developer.apple.com/tutorials/data/documentation/endpointsecurity/es_event_bootstrap_look_up_t/target_type.json": {
       "etag": "\"2172-65d55d202127b-df\"",
       "file_path": "documentation/EndpointSecurity/es_event_bootstrap_look_up_t/target_type.md",
@@ -9310,6 +9645,11 @@
       "file_path": "documentation/EndpointSecurity/es_event_close_t/reserved-1vkig.md",
       "hash": "1417944ee6858a25bf279d98f3a62fba0c568b9c89610480fbe6a98252f38b85"
     },
+    "https://developer.apple.com/tutorials/data/documentation/endpointsecurity/es_event_close_t/reserved-3n62l.json": {
+      "etag": "\"1124-65d55d1e6df8e-df\"",
+      "file_path": "documentation/EndpointSecurity/es_event_close_t/reserved-3n62l.md",
+      "hash": "3b96aa2c16677ba35e5e5bdb69b122aa3a01cedf0adb6eff937d74bde518307f"
+    },
     "https://developer.apple.com/tutorials/data/documentation/endpointsecurity/es_event_close_t/target.json": {
       "etag": "\"27a5-65d55d1e6df8e-df\"",
       "file_path": "documentation/EndpointSecurity/es_event_close_t/target.md",
@@ -9319,6 +9659,11 @@
       "etag": "\"145b-65d55d1e6df8e-df\"",
       "file_path": "documentation/EndpointSecurity/es_event_close_t/was_mapped_writable-5iaxq.md",
       "hash": "93112b2edc0d73a4a618d7b99dd6f9a1cd1760c702b940f24f145e467a46fe9f"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/endpointsecurity/es_event_close_t/was_mapped_writable-75owp.json": {
+      "etag": "\"1010-65d55d1e6df8e-df\"",
+      "file_path": "documentation/EndpointSecurity/es_event_close_t/was_mapped_writable-75owp.md",
+      "hash": "13dd3a6efcda3b828b51fc07514fccdd2df04824404fac7b68a53a7c149ab16b"
     },
     "https://developer.apple.com/tutorials/data/documentation/endpointsecurity/es_event_copyfile_t.json": {
       "etag": "\"be41-65d55d1d3224f-df\"",
@@ -9370,6 +9715,11 @@
       "file_path": "documentation/EndpointSecurity/es_event_create_t.md",
       "hash": "8841b751c3c320eb95d093680ebd865cb372b9f7976985bac900b87d5abd275c"
     },
+    "https://developer.apple.com/tutorials/data/documentation/endpointsecurity/es_event_create_t/acl-2erry.json": {
+      "etag": "\"f6c-65d55d1e886a4-df\"",
+      "file_path": "documentation/EndpointSecurity/es_event_create_t/acl-2erry.md",
+      "hash": "ec7f9a26b96192419edb7d9a48618e62b9425a5882ea718c5ccb99722df4b026"
+    },
     "https://developer.apple.com/tutorials/data/documentation/endpointsecurity/es_event_create_t/acl-6m1ze.json": {
       "etag": "\"1161-65d55d1e886a4-df\"",
       "file_path": "documentation/EndpointSecurity/es_event_create_t/acl-6m1ze.md",
@@ -9380,6 +9730,31 @@
       "file_path": "documentation/EndpointSecurity/es_event_create_t/destination.md",
       "hash": "1b5c6543975178ade2fb2ee90e7ab86c4826ffceff17e0aab3b9857186a65f57"
     },
+    "https://developer.apple.com/tutorials/data/documentation/endpointsecurity/es_event_create_t/destination/existing_file.json": {
+      "etag": "\"19df-65d55d1e886a4-df\"",
+      "file_path": "documentation/EndpointSecurity/es_event_create_t/destination/existing_file.md",
+      "hash": "0a0d31c75b3c4e455001690bcf1e8672405828efb8339bc69c62651cebe725c0"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/endpointsecurity/es_event_create_t/destination/new_path.json": {
+      "etag": "\"1c21-65d55d1e886a4-df\"",
+      "file_path": "documentation/EndpointSecurity/es_event_create_t/destination/new_path.md",
+      "hash": "62c82c749e8283b95513aee753724edab3ac8696573d18b50224a6db98b1a7a1"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/endpointsecurity/es_event_create_t/destination/new_path/dir.json": {
+      "etag": "\"1bde-65d55d1e886a4-df\"",
+      "file_path": "documentation/EndpointSecurity/es_event_create_t/destination/new_path/dir.md",
+      "hash": "0aee8d946229809a63a384dbdd866978fe5c0f09d72ed63ca8f02646b425b371"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/endpointsecurity/es_event_create_t/destination/new_path/filename.json": {
+      "etag": "\"1d5f-65d55d1e886a4-df\"",
+      "file_path": "documentation/EndpointSecurity/es_event_create_t/destination/new_path/filename.md",
+      "hash": "e7b5b2d24255585f3b23ea98d674a689e1732dd9d24869861116a17cf7b51cd7"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/endpointsecurity/es_event_create_t/destination/new_path/mode.json": {
+      "etag": "\"1892-65d55d1e886a4-df\"",
+      "file_path": "documentation/EndpointSecurity/es_event_create_t/destination/new_path/mode.md",
+      "hash": "14aec9b81e44747f0e0067a9552c18b577a51adf6c3bf019374385653f80f580"
+    },
     "https://developer.apple.com/tutorials/data/documentation/endpointsecurity/es_event_create_t/destination_type.json": {
       "etag": "\"33ee-65d55d1e886a4-df\"",
       "file_path": "documentation/EndpointSecurity/es_event_create_t/destination_type.md",
@@ -9389,6 +9764,11 @@
       "etag": "\"ef7-65d55d1e886a4-df\"",
       "file_path": "documentation/EndpointSecurity/es_event_create_t/init().md",
       "hash": "31a039ed2529d37d1b34a20a198b4c27fe5ad5230fb15b4bd272309a306c9915"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/endpointsecurity/es_event_create_t/reserved-4oqh.json": {
+      "etag": "\"1133-65d55d1e886a4-df\"",
+      "file_path": "documentation/EndpointSecurity/es_event_create_t/reserved-4oqh.md",
+      "hash": "cdaa74e1b1f4c35e7e697e2317117df90b3ba26564374a44acb65dbd0b09ef0c"
     },
     "https://developer.apple.com/tutorials/data/documentation/endpointsecurity/es_event_create_t/reserved-fmi7.json": {
       "etag": "\"5a1a-65d55d1e886a4-df\"",
@@ -9495,6 +9875,11 @@
       "file_path": "documentation/EndpointSecurity/es_event_exec_t.md",
       "hash": "441a15df8f1ccacd3aabe896e6098398b8c55a38f9c416f4e3d2a489db8febe3"
     },
+    "https://developer.apple.com/tutorials/data/documentation/endpointsecurity/es_event_exec_t/cwd-2hhbs.json": {
+      "etag": "\"13f4-65d55d1d9bd60-df\"",
+      "file_path": "documentation/EndpointSecurity/es_event_exec_t/cwd-2hhbs.md",
+      "hash": "e4b656a8975276d17703aaadd4ed9f3830fcc90d4b6aa65aa7be3f9d88e14a4c"
+    },
     "https://developer.apple.com/tutorials/data/documentation/endpointsecurity/es_event_exec_t/cwd-7pogi.json": {
       "etag": "\"1a2a-65d55d1d9bd60-df\"",
       "file_path": "documentation/EndpointSecurity/es_event_exec_t/cwd-7pogi.md",
@@ -9510,10 +9895,25 @@
       "file_path": "documentation/EndpointSecurity/es_event_exec_t/image_cpusubtype-4h1ft.md",
       "hash": "040d4b698deb3e44b83643060280cda80b029722e096edc1b72ba9cf6bb9eb9d"
     },
+    "https://developer.apple.com/tutorials/data/documentation/endpointsecurity/es_event_exec_t/image_cpusubtype-y18r.json": {
+      "etag": "\"1164-65d55d1d9bd60-df\"",
+      "file_path": "documentation/EndpointSecurity/es_event_exec_t/image_cpusubtype-y18r.md",
+      "hash": "c62308b41a54ec2d1b51f88697f69fe64072e661af896853a37d2021a6bf0bed"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/endpointsecurity/es_event_exec_t/image_cputype-94648.json": {
+      "etag": "\"1130-65d55d1d9bd60-df\"",
+      "file_path": "documentation/EndpointSecurity/es_event_exec_t/image_cputype-94648.md",
+      "hash": "12c738b998b62c9ff0b63966457eefc2c47759eb22e2de2c9a99e4e4428fe71a"
+    },
     "https://developer.apple.com/tutorials/data/documentation/endpointsecurity/es_event_exec_t/image_cputype-9u2jr.json": {
       "etag": "\"12f8-65d55d1d9bd60-df\"",
       "file_path": "documentation/EndpointSecurity/es_event_exec_t/image_cputype-9u2jr.md",
       "hash": "428a1798d2cfd14bea4f604924b8c6cf94d937140d960d1d24b1c6dc5599e165"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/endpointsecurity/es_event_exec_t/last_fd-4hqd7.json": {
+      "etag": "\"f71-65d55d1d9bd60-df\"",
+      "file_path": "documentation/EndpointSecurity/es_event_exec_t/last_fd-4hqd7.md",
+      "hash": "8c47aae18570666313524da63e44aad03fc03d68290c348b5b5560ad837fb559"
     },
     "https://developer.apple.com/tutorials/data/documentation/endpointsecurity/es_event_exec_t/last_fd-g0rc.json": {
       "etag": "\"138f-65d55d1d9bd60-df\"",
@@ -9525,10 +9925,20 @@
       "file_path": "documentation/EndpointSecurity/es_event_exec_t/reserved-25qdu.md",
       "hash": "be0bb15b57244d93cfd7bbed5a5643c1876533475c4c7299e9e07e32fb8ce693"
     },
+    "https://developer.apple.com/tutorials/data/documentation/endpointsecurity/es_event_exec_t/reserved-5f002.json": {
+      "etag": "\"1116-65d55d1d9bd60-df\"",
+      "file_path": "documentation/EndpointSecurity/es_event_exec_t/reserved-5f002.md",
+      "hash": "4de9572dc732427e8c0294f8e31db2ed593327183ed87141882429a05897e0a1"
+    },
     "https://developer.apple.com/tutorials/data/documentation/endpointsecurity/es_event_exec_t/script-19tlj.json": {
       "etag": "\"1a4e-65d55d1d9bd60-df\"",
       "file_path": "documentation/EndpointSecurity/es_event_exec_t/script-19tlj.md",
       "hash": "f35b5527bcd6ce8c74ec5bf3150b15b9beaded24710bf1791d49cddf39115b56"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/endpointsecurity/es_event_exec_t/script-8c2sm.json": {
+      "etag": "\"1418-65d55d1d9bd60-df\"",
+      "file_path": "documentation/EndpointSecurity/es_event_exec_t/script-8c2sm.md",
+      "hash": "79a3182cf929dc1b58e9752ad03012420c1d0bfc16d4a148997e50d8863641fb"
     },
     "https://developer.apple.com/tutorials/data/documentation/endpointsecurity/es_event_exec_t/target.json": {
       "etag": "\"239d-65d55d1d9bd60-df\"",
@@ -9694,6 +10104,16 @@
       "etag": "\"1ffb-65d55d1f7abb3-df\"",
       "file_path": "documentation/EndpointSecurity/es_event_gatekeeper_user_override_t/file.md",
       "hash": "d614c725b0bf85feeccb7fbc54fa589ad69ec384faa199d55d897e3e419ae857"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/endpointsecurity/es_event_gatekeeper_user_override_t/file/file.json": {
+      "etag": "\"1a47-65d55d1f7abb3-df\"",
+      "file_path": "documentation/EndpointSecurity/es_event_gatekeeper_user_override_t/file/file.md",
+      "hash": "283189ae822eb3b307acf1d7b547ff80626ca3a0b16548e9028792e2e08fd27f"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/endpointsecurity/es_event_gatekeeper_user_override_t/file/file_path.json": {
+      "etag": "\"1bc8-65d55d1f7abb3-df\"",
+      "file_path": "documentation/EndpointSecurity/es_event_gatekeeper_user_override_t/file/file_path.md",
+      "hash": "8efc8ce8822413781361f5cf08107d9d5e44c3f368c5d87350f75ac7e43dd01f"
     },
     "https://developer.apple.com/tutorials/data/documentation/endpointsecurity/es_event_gatekeeper_user_override_t/file_type.json": {
       "etag": "\"20ad-65d55d1f7abb3-df\"",
@@ -10064,6 +10484,11 @@
       "etag": "\"1bbb-65d55d1e04cd6-df\"",
       "file_path": "documentation/EndpointSecurity/es_event_login_login_t/uid.md",
       "hash": "3401b9ad71098144d4f6531dda355e373ed190f7ec535762f58162fea7835ea0"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/endpointsecurity/es_event_login_login_t/uid/uid.json": {
+      "etag": "\"156b-65d55d1e1f855-df\"",
+      "file_path": "documentation/EndpointSecurity/es_event_login_login_t/uid/uid.md",
+      "hash": "be00e7d8a9f0a2bdd60b746ff2d1120ce2b22bb9e306fe149df3b92b98526ea9"
     },
     "https://developer.apple.com/tutorials/data/documentation/endpointsecurity/es_event_login_login_t/username.json": {
       "etag": "\"1df0-65d55d1e1f855-df\"",
@@ -11030,6 +11455,11 @@
       "file_path": "documentation/EndpointSecurity/es_event_openssh_login_t/uid.md",
       "hash": "61d041fdba1aef0bbe07d70894e46f1b65002c6ea1e8d5f232735c67de9698de"
     },
+    "https://developer.apple.com/tutorials/data/documentation/endpointsecurity/es_event_openssh_login_t/uid/uid.json": {
+      "etag": "\"15a1-65d55d1db30bd-df\"",
+      "file_path": "documentation/EndpointSecurity/es_event_openssh_login_t/uid/uid.md",
+      "hash": "744d700c1a3e17973d607c352e53333c6301a83fc7595c297778fedb1df72bc6"
+    },
     "https://developer.apple.com/tutorials/data/documentation/endpointsecurity/es_event_openssh_login_t/username.json": {
       "etag": "\"1e1e-65d55d1db30bd-df\"",
       "file_path": "documentation/EndpointSecurity/es_event_openssh_login_t/username.md",
@@ -11345,6 +11775,26 @@
       "file_path": "documentation/EndpointSecurity/es_event_rename_t/destination.md",
       "hash": "460935547b7b67773b27d76dc0e06f2b3897139fdef8fa8722c34b241df72934"
     },
+    "https://developer.apple.com/tutorials/data/documentation/endpointsecurity/es_event_rename_t/destination/existing_file.json": {
+      "etag": "\"19d7-65d55d1dcd148-df\"",
+      "file_path": "documentation/EndpointSecurity/es_event_rename_t/destination/existing_file.md",
+      "hash": "204597f828b2b7c5506859d242e4313cdb4d0d26092a5f7275e30c3cba056afe"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/endpointsecurity/es_event_rename_t/destination/new_path.json": {
+      "etag": "\"19d8-65d55d1dcd148-df\"",
+      "file_path": "documentation/EndpointSecurity/es_event_rename_t/destination/new_path.md",
+      "hash": "58ecd59189859cc01eb317b78f3fe01f216b520f32709a8c6b4804afb725b8ea"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/endpointsecurity/es_event_rename_t/destination/new_path/dir.json": {
+      "etag": "\"1bd6-65d55d1dcd148-df\"",
+      "file_path": "documentation/EndpointSecurity/es_event_rename_t/destination/new_path/dir.md",
+      "hash": "f37cccdefbfa172efea2d1cd70c2a7b58cc542f0b722fcc22afa9fc870d33db6"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/endpointsecurity/es_event_rename_t/destination/new_path/filename.json": {
+      "etag": "\"1d57-65d55d1dcd148-df\"",
+      "file_path": "documentation/EndpointSecurity/es_event_rename_t/destination/new_path/filename.md",
+      "hash": "39267f88db5a6c1a8e0cf0d00ae92af9acdd4426f6d97f39dd186aae7698d289"
+    },
     "https://developer.apple.com/tutorials/data/documentation/endpointsecurity/es_event_rename_t/destination_type.json": {
       "etag": "\"4be9-65d55d1dcd148-df\"",
       "file_path": "documentation/EndpointSecurity/es_event_rename_t/destination_type.md",
@@ -11494,6 +11944,11 @@
       "etag": "\"52b7-65d55d1e3bdcf-df\"",
       "file_path": "documentation/EndpointSecurity/es_event_setacl_t/acl.md",
       "hash": "56345a08e90efeccff18e08dd1461232110aaa58f1139e6a42e46e1f053cd96f"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/endpointsecurity/es_event_setacl_t/acl/set.json": {
+      "etag": "\"1458-65d55d1e3bdcf-df\"",
+      "file_path": "documentation/EndpointSecurity/es_event_setacl_t/acl/set.md",
+      "hash": "4006e7889d45ae3de2f492a6a6e5f4f2e318facea5b1dcf95ab46f1ad96d5098"
     },
     "https://developer.apple.com/tutorials/data/documentation/endpointsecurity/es_event_setacl_t/init(target:set_or_clear:acl:reserved:).json": {
       "etag": "\"88df-65d55d1e3bdcf-df\"",
@@ -11945,6 +12400,11 @@
       "file_path": "documentation/EndpointSecurity/es_event_su_t/to_uid.md",
       "hash": "13b7d36c9e94a55f24190235e569bce0a90a84a0fd5a5492861e80654967fb62"
     },
+    "https://developer.apple.com/tutorials/data/documentation/endpointsecurity/es_event_su_t/to_uid/uid.json": {
+      "etag": "\"14ab-65d55d1e54ae6-df\"",
+      "file_path": "documentation/EndpointSecurity/es_event_su_t/to_uid/uid.md",
+      "hash": "33723cad8e8ff0d0a59ef5685ed004ae4fc6c6bf8fd10323cc438f0cc1320206"
+    },
     "https://developer.apple.com/tutorials/data/documentation/endpointsecurity/es_event_su_t/to_username.json": {
       "etag": "\"1d60-65d55d1e54ae6-df\"",
       "file_path": "documentation/EndpointSecurity/es_event_su_t/to_username.md",
@@ -11964,6 +12424,11 @@
       "etag": "\"1b59-65d55d1f2a94e-df\"",
       "file_path": "documentation/EndpointSecurity/es_event_sudo_t/from_uid.md",
       "hash": "c12403d7a6f8435298a56419e929d9ee66842ca5cd3ba27f0c4d490125173c30"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/endpointsecurity/es_event_sudo_t/from_uid/uid.json": {
+      "etag": "\"1503-65d55d1f2a94e-df\"",
+      "file_path": "documentation/EndpointSecurity/es_event_sudo_t/from_uid/uid.md",
+      "hash": "cd608816ebb501c5faff1edf4648ec1c393ca8f9d7fc407a09f719cb3a39927a"
     },
     "https://developer.apple.com/tutorials/data/documentation/endpointsecurity/es_event_sudo_t/from_username.json": {
       "etag": "\"1db8-65d55d1f2a94e-df\"",
@@ -12004,6 +12469,11 @@
       "etag": "\"1b21-65d55d1f2a94e-df\"",
       "file_path": "documentation/EndpointSecurity/es_event_sudo_t/to_uid.md",
       "hash": "62652e79e133d836818cb44edb5d15d88e17dd80d4cbf5115ee2d09105f8a544"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/endpointsecurity/es_event_sudo_t/to_uid/uid.json": {
+      "etag": "\"14e1-65d55d1f2a94e-df\"",
+      "file_path": "documentation/EndpointSecurity/es_event_sudo_t/to_uid/uid.md",
+      "hash": "8f10fd95975f4d8a70e7e8ac9df6674c4310833dba88b6037bb8c5505419723e"
     },
     "https://developer.apple.com/tutorials/data/documentation/endpointsecurity/es_event_sudo_t/to_username.json": {
       "etag": "\"1d8e-65d55d1f2a94e-df\"",
@@ -14405,6 +14875,16 @@
       "file_path": "documentation/EndpointSecurity/es_fd_t/pipe-1gtm4.md",
       "hash": "bcf3d9ef4309ed9d2a19be5ba3dcf99e3ef5ba6d7862e973722b109f16fccb33"
     },
+    "https://developer.apple.com/tutorials/data/documentation/endpointsecurity/es_fd_t/pipe-96tn9.json": {
+      "etag": "\"1103-65d55d1d9bd60-df\"",
+      "file_path": "documentation/EndpointSecurity/es_fd_t/pipe-96tn9.md",
+      "hash": "49059b1a338b5d0a23a51458f0baa69fda371ac443377c6ba13d2553c4856020"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/endpointsecurity/es_fd_t/pipe-96tn9/pipe_id.json": {
+      "etag": "\"123b-65d55d1d9bd60-df\"",
+      "file_path": "documentation/EndpointSecurity/es_fd_t/pipe-96tn9/pipe_id.md",
+      "hash": "ac81c982e8c92b40d909aa79670d463276b913eb22317e4c1bb716eef16f61ef"
+    },
     "https://developer.apple.com/tutorials/data/documentation/endpointsecurity/es_file_t.json": {
       "etag": "\"76eb-65d55d1dcd148-df\"",
       "file_path": "documentation/EndpointSecurity/es_file_t.md",
@@ -14575,6 +15055,16 @@
       "file_path": "documentation/EndpointSecurity/es_message_t/action.md",
       "hash": "c4306203f4f4be58e7e03e21e13948eada78bab54ee8b4514316cdc3565e20c4"
     },
+    "https://developer.apple.com/tutorials/data/documentation/endpointsecurity/es_message_t/action/auth.json": {
+      "etag": "\"18bd-65d55d2008f8b-df\"",
+      "file_path": "documentation/EndpointSecurity/es_message_t/action/auth.md",
+      "hash": "9e7cbe2b544d954a341e132f52ca54ab5900443fae415a17bac79e580c40bef5"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/endpointsecurity/es_message_t/action/notify.json": {
+      "etag": "\"18db-65d55d2008f8b-df\"",
+      "file_path": "documentation/EndpointSecurity/es_message_t/action/notify.md",
+      "hash": "e3a4855593b78d861d5f86459e9cac5b7e1254250f1dfe252396a0559635d69a"
+    },
     "https://developer.apple.com/tutorials/data/documentation/endpointsecurity/es_message_t/action_type.json": {
       "etag": "\"358e-65d55d2008f8b-df\"",
       "file_path": "documentation/EndpointSecurity/es_message_t/action_type.md",
@@ -14604,6 +15094,11 @@
       "etag": "\"3068-65d55d202127b-df\"",
       "file_path": "documentation/EndpointSecurity/es_message_t/mach_time.md",
       "hash": "f1cd334a9bc082375223476ccbf837922c444ef0d81e278e1e86af4a0bd40b52"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/endpointsecurity/es_message_t/opaque.json": {
+      "etag": "\"11be-65d55d2008f8b-df\"",
+      "file_path": "documentation/EndpointSecurity/es_message_t/opaque.md",
+      "hash": "ede7919a367e424c7b9c88d6f8f4ea7950c696a99fae59d5c6b2362868b4a887"
     },
     "https://developer.apple.com/tutorials/data/documentation/endpointsecurity/es_message_t/process.json": {
       "etag": "\"23d2-65d55d202127b-df\"",
@@ -15075,6 +15570,16 @@
       "file_path": "documentation/EndpointSecurity/es_od_member_id_array_t/member_array.md",
       "hash": "719eb56701dd0de01120b8fa081e20a204a724372f24f1994aad0e8699225a2e"
     },
+    "https://developer.apple.com/tutorials/data/documentation/endpointsecurity/es_od_member_id_array_t/member_array/names.json": {
+      "etag": "\"1a18-65d55d1debadb-df\"",
+      "file_path": "documentation/EndpointSecurity/es_od_member_id_array_t/member_array/names.md",
+      "hash": "05f629856e9fb81fca5e45d472ba588965807929f23e7198d32ed0edd6ed72c6"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/endpointsecurity/es_od_member_id_array_t/member_array/uuids.json": {
+      "etag": "\"1640-65d55d1debadb-df\"",
+      "file_path": "documentation/EndpointSecurity/es_od_member_id_array_t/member_array/uuids.md",
+      "hash": "e2e6cc09496eab60b79d5599fe34f6d1f024fdde35533f90336985f3b4b16fc6"
+    },
     "https://developer.apple.com/tutorials/data/documentation/endpointsecurity/es_od_member_id_array_t/member_count.json": {
       "etag": "\"1a81-65d55d1debadb-df\"",
       "file_path": "documentation/EndpointSecurity/es_od_member_id_array_t/member_count.md",
@@ -15109,6 +15614,16 @@
       "etag": "\"1e31-65d55d2008f8b-df\"",
       "file_path": "documentation/EndpointSecurity/es_od_member_id_t/member_value.md",
       "hash": "bf25a6d654de9be2c466d99108c22bb5239e408b5b80046f20d9d0cff658f7af"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/endpointsecurity/es_od_member_id_t/member_value/name.json": {
+      "etag": "\"1a2d-65d55d2008f8b-df\"",
+      "file_path": "documentation/EndpointSecurity/es_od_member_id_t/member_value/name.md",
+      "hash": "67f6ba009e594be9cf60aabe97adc3d6f83843fb7fbdf70b5f22f8b9b24d7e59"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/endpointsecurity/es_od_member_id_t/member_value/uuid.json": {
+      "etag": "\"1590-65d55d2008f8b-df\"",
+      "file_path": "documentation/EndpointSecurity/es_od_member_id_t/member_value/uuid.md",
+      "hash": "ee259be7da7c24a98338d8d33784ca3adf28108cb5929801890df80db9bbc918"
     },
     "https://developer.apple.com/tutorials/data/documentation/endpointsecurity/es_od_member_type_group_uuid.json": {
       "etag": "\"68d2-65d55d1d826db-df\"",
@@ -15420,6 +15935,11 @@
       "file_path": "documentation/EndpointSecurity/es_process_t/reserved-1o3sp.md",
       "hash": "cd1f5c93783a5a0b472e42723a6ed0b2408569aba4979a86e9c7e77f1058311b"
     },
+    "https://developer.apple.com/tutorials/data/documentation/endpointsecurity/es_process_t/reserved-5t1sy.json": {
+      "etag": "\"10ed-65d55d1d3224f-df\"",
+      "file_path": "documentation/EndpointSecurity/es_process_t/reserved-5t1sy.md",
+      "hash": "a019e84ef7036bc757f0034ca68d3cc3574ccb31ecefa30eff8a02b1006d3e92"
+    },
     "https://developer.apple.com/tutorials/data/documentation/endpointsecurity/es_process_t/responsible_audit_token.json": {
       "etag": "\"268d-65d55d1d3224f-df\"",
       "file_path": "documentation/EndpointSecurity/es_process_t/responsible_audit_token.md",
@@ -15619,6 +16139,21 @@
       "etag": "\"341c-65d55d1f95c8d-df\"",
       "file_path": "documentation/EndpointSecurity/es_result_t/result.md",
       "hash": "87890e976e27f89741a28634f455d8ecca5e40c96d85a70995f3e8d2a47e8b2a"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/endpointsecurity/es_result_t/result/auth.json": {
+      "etag": "\"19ec-65d55d1f95c8d-df\"",
+      "file_path": "documentation/EndpointSecurity/es_result_t/result/auth.md",
+      "hash": "bd64c9be64f603528decf1476c7097bac2e71accdb31cff2115f49abeaf97064"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/endpointsecurity/es_result_t/result/flags.json": {
+      "etag": "\"155c-65d55d1f95c8d-df\"",
+      "file_path": "documentation/EndpointSecurity/es_result_t/result/flags.md",
+      "hash": "a490bd891413d5da33dcc1a70ecf6971265f1485c66b2ca5b9bd8a96bd1b1e5f"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/endpointsecurity/es_result_t/result/reserved.json": {
+      "etag": "\"15b3-65d55d1f95c8d-df\"",
+      "file_path": "documentation/EndpointSecurity/es_result_t/result/reserved.md",
+      "hash": "e09726387c99cce19542fa609944572988dcc857f7f60ec0bef7fe5229fa9380"
     },
     "https://developer.apple.com/tutorials/data/documentation/endpointsecurity/es_result_t/result_type.json": {
       "etag": "\"26fa-65d55d1f95c8d-df\"",
@@ -16319,12 +16854,17 @@
       "etag": "\"6464-65d55d209186a-df\"",
       "file_path": "documentation/EndpointSecurity/message.md",
       "hash": "e962e13787b346f06ea49e626f00a11e647a4595cd19e67beddc5235af5b8711"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/endpointsecurity/monitoring-system-events-with-endpoint-security.json": {
+      "etag": "\"2cf4-65d55d1f7abb3-df\"",
+      "file_path": "documentation/EndpointSecurity/monitoring-system-events-with-endpoint-security.md",
+      "hash": "c125439887cd6c01f4cdf97c84c6ce6bb3ec52c3b5d316330d922f5106394569"
     }
   },
   "metadata": {
     "render": {
-      "version": 1
+      "version": 2
     },
-    "total_pages": 3264
+    "total_pages": 3372
   }
 }

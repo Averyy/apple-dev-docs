@@ -47,6 +47,8 @@ When offering special pricing, use this property to specify an image for Maps to
   A Boolean value indicating whether the price uses a metered fare instead of a fixed price.
 - [var fareLineItems: [INRideFareLineItem]?](./farelineitems.md)
   An array of price-related items that break down the costs of the ride.
+- [usesMeteredFare](./usesmeteredfare-25g1c.md)
+  A Boolean value indicating whether the price uses a metered fare instead of a fixed price.
 
 
 ---

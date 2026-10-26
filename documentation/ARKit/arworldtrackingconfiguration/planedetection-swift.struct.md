@@ -40,6 +40,8 @@ Use an empty set literal `[]` to specify no plane detection.
   The session detects planar surfaces that are perpendicular to gravity.
 - [static var vertical: ARWorldTrackingConfiguration.PlaneDetection](./planedetection-swift.struct/vertical.md)
   The session detects surfaces that are parallel to gravity, regardless of other orientation.
+- [ARPlaneDetectionNone](../arplanedetection/arplanedetectionnone.md)
+  Plane detection is disabled.
 
 ## Relationships
 

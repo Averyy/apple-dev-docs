@@ -31,6 +31,8 @@ Use this function to determine which joints ARKit tracks using a particular inde
   The particular configuration of joints that define a body’s current state.
 - [ARSkeleton.JointName](./jointname.md)
   A name identifier for a joint.
+- [jointCount](./jointcount.md)
+  The skeleton’s total number of joints.
 
 
 ---

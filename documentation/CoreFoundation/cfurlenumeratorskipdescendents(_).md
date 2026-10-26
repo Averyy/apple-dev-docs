@@ -60,6 +60,7 @@ A call to this function is ignored in the following cases:
   Copies the group UUID associated with a `CFFileSecurityRef` object.
 - [func CFFileSecurityCopyOwnerUUID(CFFileSecurity!, UnsafeMutablePointer<Unmanaged<CFUUID>?>!) -> Bool](./cffilesecuritycopyowneruuid%28_,_%29.md)
   Copies the owner UUID associated with a `CFFileSecurityRef` object.
+- [CFAutorelease](./cfautorelease.md)
 
 
 ---

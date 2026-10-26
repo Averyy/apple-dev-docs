@@ -30,6 +30,10 @@ AVPlayerInterstitialEventRestrictionRequiresPlaybackAtPreferredRateForAdvancemen
 ### Configure
 - [static var constrainsSeekingForwardInPrimaryContent: AVPlayerInterstitialEvent.Restrictions](./constrainsseekingforwardinprimarycontent.md)
   A restriction that indicates the event doesn’t allow seeking forward within an interstitial item.
+- [AVPlayerInterstitialEventRestrictionDefaultPolicy](../../avplayerinterstitialeventrestrictions/avplayerinterstitialeventrestrictiondefaultpolicy.md)
+  The default restriction policy.
+- [AVPlayerInterstitialEventRestrictionNone](../../avplayerinterstitialeventrestrictions/avplayerinterstitialeventrestrictionnone.md)
+  A value that indicates no restrictions on playback of primary or interstitial content.
 
 
 ---

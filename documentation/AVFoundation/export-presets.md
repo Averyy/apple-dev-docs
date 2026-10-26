@@ -84,6 +84,8 @@ Use the preset name constants to initialize an instance of [`AVAssetExportSessio
 ### Creating an export session
 - [init?(asset: AVAsset, presetName: String)](./avassetexportsession/init%28asset,presetname%29.md)
   Creates an export session with a preset configuration.
+- [+ exportSessionWithAsset:presetName:](./avassetexportsession/exportsessionwithasset_presetname_.md)
+  Returns a new asset export session that uses the specified preset.
 
 
 ---

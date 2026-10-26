@@ -33,6 +33,14 @@ var dataPointer: UnsafeMutableRawPointer { get }
 - [subscript(_:)](./subscript%28_%29.md)
 - [var pixelBuffer: CVPixelBuffer?](./pixelbuffer.md)
   A reference to the multiarray’s underlying pixel buffer.
+- [- setObject:atIndexedSubscript:](./setobject_atindexedsubscript_.md)
+  Assigns a number to the multiarray’s element at the location that the linear offset defines.
+- [- setObject:forKeyedSubscript:](./setobject_forkeyedsubscript_.md)
+  Assigns a number to the multiarray’s element at the location that the number array defines.
+- [- getBytesWithHandler:](./getbyteswithhandler_.md)
+  Get the underlying buffer pointer to read.
+- [- getMutableBytesWithHandler:](./getmutablebyteswithhandler_.md)
+  Get the underlying buffer pointer to mutate.
 
 
 ---

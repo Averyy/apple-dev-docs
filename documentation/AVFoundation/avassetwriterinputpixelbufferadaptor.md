@@ -35,6 +35,8 @@ A pixel buffer adaptor provides a pixel buffer pool that you use to allocate pix
 ### Creating an adaptor
 - [init(assetWriterInput: AVAssetWriterInput, sourcePixelBufferAttributes: [String : Any]?)](./avassetwriterinputpixelbufferadaptor/init%28assetwriterinput,sourcepixelbufferattributes%29.md)
   Creates a new pixel buffer adaptor to receive pixel buffers for writing to the output file.
+- [+ assetWriterInputPixelBufferAdaptorWithAssetWriterInput:sourcePixelBufferAttributes:](./avassetwriterinputpixelbufferadaptor/assetwriterinputpixelbufferadaptorwithassetwriterinput_sourcepixelbufferattributes_.md)
+  Returns a new pixel buffer adaptor that appends pixel buffers to write to the output file.
 ### Appending pixel buffers
 - [func append(CVPixelBuffer, withPresentationTime: CMTime) -> Bool](./avassetwriterinputpixelbufferadaptor/append%28_,withpresentationtime%29.md)
   Appends a pixel buffer to the adaptor.

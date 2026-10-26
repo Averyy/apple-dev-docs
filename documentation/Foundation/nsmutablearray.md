@@ -77,6 +77,14 @@ In a subclass, you must override all these methods. You must also override the p
   Initializes a newly allocated array.
 - [init(capacity: Int)](./nsmutablearray/init%28capacity%29.md)
   Returns an array, initialized with enough memory to initially hold a given number of objects.
+- [+ arrayWithCapacity:](./nsmutablearray/arraywithcapacity_.md)
+  Creates and returns an `NSMutableArray` object with enough allocated memory to initially hold a given number of objects.
+- [+ arrayWithContentsOfFile:](./nsmutablearray/arraywithcontentsoffile_.md)
+  Creates and returns a mutable array containing the contents of the file specified by the given path.
+- [- initWithContentsOfFile:](./nsmutablearray/initwithcontentsoffile_.md)
+  Initializes a newly allocated mutable array with the contents of the file specified by a given path
+- [- initWithContentsOfURL:](./nsmutablearray/initwithcontentsofurl_.md)
+  Initialized a newly allocated mutable array with the contents of the location specified by a given URL.
 ### Adding Objects
 - [func add(Any)](./nsmutablearray/add%28_%29.md)
   Inserts a given object at the end of the array.
@@ -120,6 +128,8 @@ In a subclass, you must override all these methods. You must also override the p
   Replaces the objects in the receiving array specified by a given range with all of the objects from a given array.
 - [func setArray([Any])](./nsmutablearray/setarray%28_%29.md)
   Sets the receiving array’s elements to those in another given array.
+- [- setObject:atIndexedSubscript:](./nsmutablearray/setobject_atindexedsubscript_.md)
+  Replaces the object at the index with the new object, possibly adding the object.
 ### Filtering Content
 - [func filter(using: NSPredicate)](./nsmutablearray/filter%28using%29.md)
   Evaluates a given predicate against the array’s content and leaves only objects that match.
@@ -141,6 +151,11 @@ In a subclass, you must override all these methods. You must also override the p
 - [convenience init(objects: UnsafePointer<AnyObject>, count: Int)](./nsmutablearray/init%28objects,count%29.md)
 ### Default Implementations
 - [NSMutableArray Implementations](./nsmutablearray/nsmutablearray-implementations.md)
+### Instance Methods
+- [- applyDifference:](./nsmutablearray/applydifference_.md)
+### Type Methods
+- [+ arrayWithContentsOfURL:](./nsmutablearray/arraywithcontentsofurl_.md)
+  Creates and returns a mutable array containing the contents specified by a given URL.
 
 ## Relationships
 
@@ -163,6 +178,20 @@ In a subclass, you must override all these methods. You must also override the p
 - [Sendable](../Swift/sendable.md)
 - [SendableMetatype](../Swift/sendablemetatype.md)
 - [Sequence](../Swift/sequence.md)
+
+## See Also
+
+### Basic Collections
+- [NSArray](./nsarray.md)
+  A static ordered collection of objects.
+- [NSDictionary](./nsdictionary.md)
+  A static collection of objects associated with unique keys.
+- [NSMutableDictionary](./nsmutabledictionary.md)
+  A dynamic collection of objects associated with unique keys.
+- [NSSet](./nsset.md)
+  A static, unordered collection of unique objects.
+- [NSMutableSet](./nsmutableset.md)
+  A dynamic unordered collection of unique objects.
 
 
 ---

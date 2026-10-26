@@ -180,6 +180,7 @@ Some AppKit functionality automatically disables sudden termination on a tempora
   Enables automatic termination for the application.
 - [var automaticTerminationSupportEnabled: Bool](./processinfo/automaticterminationsupportenabled.md)
   A Boolean value indicating whether the app supports automatic termination.
+- [automaticTerminationOptOutCounter](./nsprocessinfo/automaticterminationoptoutcounter.md)
 ### Getting host information
 - [var hostName: String](./processinfo/hostname.md)
   The name of the host computer on which the process is executing.
@@ -239,6 +240,11 @@ Some AppKit functionality automatically disables sudden termination on a tempora
   A message the system sends when the device’s power state changes.
 - [ProcessInfo.ThermalStateDidChangeMessage](./processinfo/thermalstatedidchangemessage.md)
   A message the system sends when the device’s thermal state changes.
+### Instance Variables
+- [arguments](./nsprocessinfo/arguments-c.ivar.md)
+- [environment](./nsprocessinfo/environment-c.ivar.md)
+- [hostName](./nsprocessinfo/hostname-c.ivar.md)
+- [name](./nsprocessinfo/name.md)
 
 ## Relationships
 

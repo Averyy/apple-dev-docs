@@ -36,6 +36,8 @@ func reset()
   The most likely language for the processed text.
 - [func languageHypotheses(withMaximum: Int) -> [NLLanguage : Double]](./languagehypotheses%28withmaximum%29.md)
   Generates the probabilities of possible languages for the processed text.
+- [- languageHypothesesWithMaximum:](./languagehypotheseswithmaximum_.md)
+  Generates the probabilities of possible languages for the processed text.
 
 
 ---

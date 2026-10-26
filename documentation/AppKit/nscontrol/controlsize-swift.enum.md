@@ -40,6 +40,13 @@ These constants are used by the [`controlSize`](../nscell/controlsize.md) proper
 - [init?(ControlSize)](./controlsize-swift.enum/init%28_%29.md)
   Creates a control size from its ControlSize equivalent.
 - [init?(rawValue: UInt)](./controlsize-swift.enum/init%28rawvalue%29.md)
+### Deprecated
+- [NSRegularControlSize](../nsregularcontrolsize.md)
+  The default control size.
+- [NSSmallControlSize](../nssmallcontrolsize.md)
+  A size that is smaller than the default control size.
+- [NSMiniControlSize](../nsminicontrolsize.md)
+  The control has a smaller size than `NSSmallControlSize`.
 
 ## Relationships
 

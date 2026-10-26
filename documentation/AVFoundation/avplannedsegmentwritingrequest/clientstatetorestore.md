@@ -24,6 +24,12 @@ var clientStateToRestore: Data? { get }
 @property (readonly, nullable) NSData * clientStateToRestore;
 ```
 
+## See Also
+
+### Managing client state
+- [- finishWithClientState:](./finishwithclientstate_.md)
+  Clients must call this method after all writing activities for the intermediate segment file have successfully completed. If called with nil, this is equivalent to calling finish.
+
 
 ---
 

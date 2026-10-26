@@ -43,6 +43,8 @@ protocol AVRoutePickerViewDelegate : NSObjectProtocol
   A view that presents a list of nearby media receivers.
 - [enum AVRoutePickerViewButtonStyle](./avroutepickerviewbuttonstyle.md)
   Constants that define the button styles a route picker view supports.
+- [AVAudioSessionRouteSelection](./avaudiosessionrouteselection.md)
+  Constants that indicate the audio route selection.
 
 
 ---

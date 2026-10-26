@@ -62,6 +62,10 @@ typedef NSString * AVVideoRange;
   Attributes that describe the layout of the video content.
 - [AVAssetVariant.VideoAttributes.LayoutAttributes](./avassetvariant/videoattributes-swift.class/layoutattributes.md)
   Attributes that describe the layout of video content.
+- [codecTypes](./avassetvariantvideoattributes/codectypes.md)
+  The video sample codec types present in the variant’s renditions.
+- [nominalFrameRate](./avassetvariantvideoattributes/nominalframerate.md)
+  The nominal frame rate of the variant’s renditions.
 
 
 ---

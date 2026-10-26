@@ -44,6 +44,10 @@ When creating a response object, you must set this property to the date and time
   A Boolean value that indicates whether the electric vehicle is currently charging.
 - [var minutesToFull: Int?](./minutestofull-2kbt6.md)
   The number of minutes it takes to fully charge the electric vehicle’s battery.
+- [charging](./charging-7aamu.md)
+  A Boolean value that indicates whether the electric vehicle is currently charging.
+- [minutesToFull](./minutestofull-25vcb.md)
+  The number of minutes it will take to fully charge the electric vehicle’s battery.
 
 
 ---

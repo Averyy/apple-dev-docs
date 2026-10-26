@@ -27,6 +27,8 @@ class ODSession
   Returns a shared instance of the local session.
 - [init(options: [AnyHashable : Any]!) throws](./odsession/init%28options%29.md)
   Creates a session object directed over proxy to another host.
+- [+ sessionWithOptions:error:](./odsession/sessionwithoptions_error_.md)
+  Returns an autoreleased session object directed over proxy to another host.
 ### Accessing Node Information
 - [func nodeNames() throws -> [Any]](./odsession/nodenames%28%29.md)
   Returns the node names that are registered with this session.

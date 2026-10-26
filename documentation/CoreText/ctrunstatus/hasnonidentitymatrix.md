@@ -32,6 +32,8 @@ kCTRunStatusHasNonIdentityMatrix
   The run proceeds from right to left.
 - [static var nonMonotonic: CTRunStatus](./nonmonotonic.md)
   The run isn’t in strictly increasing or decreasing order.
+- [kCTRunStatusNoStatus](./kctrunstatusnostatus.md)
+  The run has no special attributes.
 
 
 ---

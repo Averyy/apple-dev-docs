@@ -82,6 +82,8 @@ Although Core Data supports evaluation of the predefined functions, it doesn’t
   Creates the expression with the expression format and arguments list you specify.
 - [init?(coder: NSCoder)](./nsexpression/init%28coder%29.md)
   Creates an expression by decoding from the coder you specify.
+- [+ expressionWithFormat:](./nsexpression/expressionwithformat_.md)
+  Creates the expression with the specified expression arguments.
 ### Creating an Expression for a Value
 - [init(forConstantValue: Any?)](./nsexpression/init%28forconstantvalue%29.md)
   Creates an expression that represents a specified constant value.
@@ -158,6 +160,8 @@ Although Core Data supports evaluation of the predefined functions, it doesn’t
 ### Initializers
 - [convenience init?<Input, Output>(Expression<Input, Output>)](./nsexpression/init%28_%29.md)
 - [init(forBlock: (Any?, [NSExpression], NSMutableDictionary?) -> Any, arguments: [NSExpression]?)](./nsexpression/init%28forblock,arguments%29.md)
+### Instance Variables
+- [reserved](./nsexpression/reserved.md)
 
 ## Relationships
 

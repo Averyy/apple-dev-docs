@@ -26,6 +26,12 @@ init(row1Column1TextProvider: CLKTextProvider, row1Column2TextProvider: CLKTextP
 - `row2Column1TextProvider`: A text provider for the bottom row of the first column. For multicolor faces, like the Utility face, the system uses the text provider’s tint color for the text. For other faces, the system ignores the provided tint color, and uses a system color instead.
 - `row2Column2TextProvider`: A text provider for the bottom row of the second column. For multicolor faces, like the utility face, the system uses the text provider’s tint color for the text. For other faces, the system ignores the provided tint color, and uses a system color instead.
 
+## See Also
+
+### Creating the Template
+- [+ templateWithRow1Column1TextProvider:row1Column2TextProvider:row2Column1TextProvider:row2Column2TextProvider:](./templatewithrow1column1textprovider_row1column2textprovider_row2column1textprovider_row2column2textprovider_.md)
+  Returns a new template that has two columns of text.
+
 
 ---
 

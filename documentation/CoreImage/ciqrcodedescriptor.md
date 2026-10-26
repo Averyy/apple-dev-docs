@@ -33,6 +33,8 @@ ISO/IEC 18004 defines versions from 1 to 40, where a higher symbol version indic
 ### Creating a Descriptor
 - [init?(payload: Data, symbolVersion: Int, maskPattern: UInt8, errorCorrectionLevel: CIQRCodeDescriptor.ErrorCorrectionLevel)](./ciqrcodedescriptor/init%28payload,symbolversion,maskpattern,errorcorrectionlevel%29.md)
   Initializes a QR code descriptor for the given payload and parameters.
+- [+ descriptorWithPayload:symbolVersion:maskPattern:errorCorrectionLevel:](./ciqrcodedescriptor/descriptorwithpayload_symbolversion_maskpattern_errorcorrectionlevel_.md)
+  Creates a QR code descriptor for the given payload and parameters.
 ### Examining a Descriptor
 - [var errorCorrectedPayload: Data](./ciqrcodedescriptor/errorcorrectedpayload-swift.property.md)
   The error-corrected codeword payload that comprises the QR code symbol.
@@ -45,6 +47,11 @@ ISO/IEC 18004 defines versions from 1 to 40, where a higher symbol version indic
 ### Error Correction Constants
 - [CIQRCodeDescriptor.ErrorCorrectionLevel](./ciqrcodedescriptor/errorcorrectionlevel-swift.enum.md)
   Constants indicating the percentage of the symbol that is dedicated to error correction.
+### Instance Variables
+- [errorCorrectedPayload](./ciqrcodedescriptor/errorcorrectedpayload-c.ivar.md)
+- [errorCorrectionLevel](./ciqrcodedescriptor/errorcorrectionlevel-c.ivar.md)
+- [maskPattern](./ciqrcodedescriptor/maskpattern-c.ivar.md)
+- [symbolVersion](./ciqrcodedescriptor/symbolversion-c.ivar.md)
 
 ## Relationships
 

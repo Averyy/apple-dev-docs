@@ -31,6 +31,8 @@ protocol MTLVisibleFunctionTable : MTLResource
   Sets a table entry to point to a callable function.
 - [func setFunctions([(any MTLFunctionHandle)?], range: Range<Int>)](./mtlvisiblefunctiontable/setfunctions%28_,range%29.md)
   Sets a range of table entries to point to an array of callable functions.
+- [- setFunctions:withRange:](./mtlvisiblefunctiontable/setfunctions_withrange_.md)
+  Sets a range of table entries to point to an array of callable functions.
 ### Instance Properties
 - [var gpuResourceID: MTLResourceID](./mtlvisiblefunctiontable/gpuresourceid.md)
 

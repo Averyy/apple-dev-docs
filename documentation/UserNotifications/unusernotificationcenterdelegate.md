@@ -46,6 +46,8 @@ For information about the shared user notification center object, see [`UNUserNo
   Asks the delegate how to handle a notification that arrived while the app was running in the foreground.
 - [struct UNNotificationPresentationOptions](./unnotificationpresentationoptions.md)
   Constants indicating how to present a notification in a foreground app.
+- [UNNotificationPresentationOptionNone](./unnotificationpresentationoptionnone.md)
+  No alert.
 ### Displaying Notification Settings
 - [func userNotificationCenter(UNUserNotificationCenter, openSettingsFor: UNNotification?)](./unusernotificationcenterdelegate/usernotificationcenter%28_,opensettingsfor%29.md)
   Asks the delegate to display the in-app notification settings.

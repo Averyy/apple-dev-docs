@@ -32,6 +32,7 @@ enum CPPanDirection : NSInteger;
   The user panned the map to the right.
 - [static var up: CPMapTemplate.PanDirection](./pandirection/up.md)
   The user panned the map upward.
+- [CPPanDirectionNone](../cppandirection/cppandirectionnone.md)
 ### Initializers
 - [init(rawValue: Int)](./pandirection/init%28rawvalue%29.md)
   Initializes a pan direction using the specified raw value.

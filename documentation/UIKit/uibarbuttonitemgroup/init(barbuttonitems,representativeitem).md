@@ -49,6 +49,12 @@ When you use this initializer to create a group for the shortcuts bar, use the r
   Creates an optional group that a person can move, add to, or remove from the navigation bar during layout customization.
 - [init?(coder: NSCoder)](./init%28coder%29.md)
   Creates a bar button item group from data in an unarchiver.
+- [+ fixedGroupWithRepresentativeItem:items:](./fixedgroupwithrepresentativeitem_items_.md)
+  Creates a fixed group that a person can’t move or remove from the navigation bar during layout customization.
+- [+ movableGroupWithCustomizationIdentifier:representativeItem:items:](./movablegroupwithcustomizationidentifier_representativeitem_items_.md)
+  Creates a movable group that a person can move but can’t remove from the navigation bar during layout customization.
+- [+ optionalGroupWithCustomizationIdentifier:inDefaultCustomization:representativeItem:items:](./optionalgroupwithcustomizationidentifier_indefaultcustomization_representativeitem_items_.md)
+  Creates an optional group that a person can move, add to, or remove from the navigation bar during layout customization.
 
 
 ---

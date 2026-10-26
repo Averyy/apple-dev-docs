@@ -46,6 +46,9 @@ The values [`red`](./mtlcolorwritemask/red.md), [`green`](./mtlcolorwritemask/gr
   The red color channel is enabled.
 - [static var unspecialized: MTLColorWriteMask](./mtlcolorwritemask/unspecialized.md)
   Defers assigning the color write mask.
+### Enumeration Cases
+- [MTLColorWriteMaskNone](./mtlcolorwritemask/mtlcolorwritemasknone.md)
+  All color channels are disabled.
 
 ## Relationships
 

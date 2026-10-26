@@ -172,6 +172,12 @@ enum SKAdTestErrorCode : NSInteger;
 - [Sendable](../../Swift/sendable.md)
 - [SendableMetatype](../../Swift/sendablemetatype.md)
 
+## See Also
+
+### Ad impression and postback errors
+- [SKAdTestErrorDomain](../skadtesterrordomain.md)
+  A string that identifies the error domain for SKAdNetwork testing in the testing environment.
+
 
 ---
 

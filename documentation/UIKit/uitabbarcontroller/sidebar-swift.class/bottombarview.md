@@ -27,6 +27,10 @@ var bottomBarView: UIView? { get set }
 ### Headers and footers
 - [var footerContentConfiguration: (any UIContentConfiguration)?](./footercontentconfiguration.md)
 - [var headerContentConfiguration: (any UIContentConfiguration)?](./headercontentconfiguration.md)
+- [footerContentConfiguration](../../uitabbarcontrollersidebar/footercontentconfiguration.md)
+  Content configuration for an optional header to display in the sidebar. The footer is displayed below all tab content in the sidebar.
+- [headerContentConfiguration](../../uitabbarcontrollersidebar/headercontentconfiguration.md)
+  Content configuration for an optional header to display in the sidebar. The header is displayed above all tab content in the sidebar.
 
 
 ---

@@ -60,6 +60,8 @@ Apps that adopt App Sandbox cannot access files identified using the [`string`](
   Paragraph formatting information.
 - [static let sound: NSPasteboard.PasteboardType](./sound.md)
   Sound data.
+- [NSPasteboardTypeTabularText](./tabulartext.md)
+  Tab-separated fields of text.
 
 
 ---

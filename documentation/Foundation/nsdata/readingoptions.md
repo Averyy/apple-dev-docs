@@ -67,6 +67,10 @@ enum NSDataReadingOptions : NSUInteger;
   Initializes a data object with the contents of the mapped file specified by a given path.
 - [class func dataWithContentsOfMappedFile(String) -> Any?](./datawithcontentsofmappedfile%28_%29.md)
   Creates a data object from the mapped file at a given path.
+- [+ dataWithContentsOfFile:](./datawithcontentsoffile_.md)
+  Creates a data object by reading every byte from the file at a given path.
+- [+ dataWithContentsOfFile:options:error:](./datawithcontentsoffile_options_error_.md)
+  Creates a data object by reading every byte from the file at a given path.
 
 
 ---

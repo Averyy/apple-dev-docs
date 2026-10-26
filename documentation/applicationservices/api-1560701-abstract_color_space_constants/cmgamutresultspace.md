@@ -1,0 +1,23 @@
+# cmGamutResultSpace
+
+**Framework**: Application Services  
+**Kind**: econst  
+**Role**: Enumeration Case
+
+**Availability**:
+- macOS 10.0+
+
+## Declaration
+
+```c
+cmGamutResultSpace = 0x000C
+```
+
+#### Discussion
+
+A color space for the resulting bitmap pointed to by the `resultBitMap` field of the function [CWMatchColors](../colorsync_manager/api-1805108-cwmatchcolors.md). A bitmap never uses this constant alone. Instead, it uses the constant `cmGamutResult1Space`, which combines `cmGamutResultSpace` and `cmOneBitDirectPacking` to define a bitmap that is 1 bit deep.
+
+
+---
+
+*[View on Apple Developer](https://developer.apple.com/documentation/applicationservices/1560701-abstract_color_space_constants/cmgamutresultspace)*

@@ -43,6 +43,10 @@ You can check for version and feature availabilityinformation by using the Apple
   Inserts a descriptor and a keyword into an Apple event or Apple event record as an Apple event parameter.
 - [func AEPutParamPtr(UnsafeMutablePointer<AppleEvent>!, AEKeyword, DescType, UnsafeRawPointer!, Size) -> OSErr](../coreservices/api-1449263-aeputparamptr.md)
   Inserts data, a descriptor type, and a keyword into an Apple event or Apple event record as an Apple event parameter.
+- [AEPutKeyDesc](./apple_event_manager/api-1805634-aeputkeydesc.md)
+  Inserts a descriptor and a keyword into an Apple event record as an Apple event parameter.
+- [AEPutKeyPtr](./apple_event_manager/api-1805645-aeputkeyptr.md)
+  Inserts data, a descriptor type, and a keyword into an Apple event record as an Apple event parameter.
 ### Coercing Descriptor Types
 - [func AECoerceDesc(UnsafePointer<AEDesc>!, DescType, UnsafeMutablePointer<AEDesc>!) -> OSErr](../coreservices/api-1446519-aecoercedesc.md)
   Coerces the data in a descriptor to another descriptor type and creates a descriptor containing the newly coerced data.
@@ -159,6 +163,8 @@ You can check for version and feature availabilityinformation by using the Apple
   Deletes a descriptor from a descriptor list, causing all subsequent descriptors to move up one place. 
 - [func AEDeleteParam(UnsafeMutablePointer<AppleEvent>!, AEKeyword) -> OSErr](../coreservices/api-1444338-aedeleteparam.md)
   Deletes a keyword-specified parameter from an Apple event record.
+- [AEDeleteKeyDesc](./apple_event_manager/api-1806085-aedeletekeydesc.md)
+  Deletes a keyword-specified parameter from an Apple event record.
 ### Getting, Calling, and Removing Object Accessor Functions
 - [func AECallObjectAccessor(DescType, UnsafePointer<AEDesc>!, DescType, DescType, UnsafePointer<AEDesc>!, UnsafeMutablePointer<AEDesc>!) -> OSErr](../coreservices/api-1447059-aecallobjectaccessor.md)
   Invokes the appropriate object accessor function for a specific desired type and container type. 
@@ -177,6 +183,10 @@ You can check for version and feature availabilityinformation by using the Apple
   Gets a copy of the descriptor for a keyword-specified Apple event parameter from an Apple event or an Apple event record.
 - [func AEGetParamPtr(UnsafePointer<AppleEvent>!, AEKeyword, DescType, UnsafeMutablePointer<DescType>!, UnsafeMutableRawPointer!, Size, UnsafeMutablePointer<Size>!) -> OSErr](../coreservices/api-1444069-aegetparamptr.md)
   Gets a copy of the data for a specified Apple event parameter from an Apple event or an Apple event record.
+- [AEGetKeyDesc](./apple_event_manager/api-1806211-aegetkeydesc.md)
+  Gets a copy of the descriptor for a keyword-specified Apple event parameter from an Apple event record
+- [AEGetKeyPtr](./apple_event_manager/api-1806223-aegetkeyptr.md)
+  Gets a copy of the data for a specified Apple event parameter from an Apple event record.
 ### Getting Information About the Apple Event Manager
 - [func AEManagerInfo(AEKeyword, UnsafeMutablePointer<Int>!) -> OSErr](../coreservices/api-1449373-aemanagerinfo.md)
   Provides information about the version of the Apple Event Manager currently available or the number of processes that are currently recording Apple events.
@@ -194,6 +204,8 @@ You can check for version and feature availabilityinformation by using the Apple
   Gets the data size and descriptor type of the descriptor at a specified position in a descriptor list.
 - [func AESizeOfParam(UnsafePointer<AppleEvent>!, AEKeyword, UnsafeMutablePointer<DescType>!, UnsafeMutablePointer<Size>!) -> OSErr](../coreservices/api-1449998-aesizeofparam.md)
   Gets the size and descriptor type of an Apple event parameter from a descriptor of type `AERecord` or `AppleEvent`.
+- [AESizeOfKeyDesc](./apple_event_manager/api-1806296-aesizeofkeydesc.md)
+  Gets the size and descriptor type of an Apple event parameter from a descriptor of type `AERecord`.
 ### Initializing the Object Support Library
 - [func AEObjectInit() -> OSErr](../coreservices/api-1447372-aeobjectinit.md)
   Initializes the Object Support Library.
@@ -250,6 +262,12 @@ You can check for version and feature availabilityinformation by using the Apple
   Allows you to encapsulate calls to `AEBuildDesc` in your own wrapper routines.
 - [func vAEBuildParameters(UnsafeMutablePointer<AppleEvent>!, UnsafeMutablePointer<AEBuildError>!, UnsafePointer<CChar>!, CVaListPointer) -> OSStatus](../coreservices/api-1448040-vaebuildparameters.md)
   Allows you to encapsulate calls to `AEBuildParameters` in your own `stdarg`-style wrapper routines, using techniques similar to those allowed by vsprintf.
+- [AEBuildAppleEvent](../coreservices/api-1573757-aebuildappleevent.md)
+  Constructs an entire Apple event in a single call.
+- [AEBuildDesc](../coreservices/api-1573758-aebuilddesc.md)
+  Provides a facility for compiling AEBuild descriptor strings into Apple event descriptors (`AEDesc`).
+- [AEBuildParameters](../coreservices/api-1573755-aebuildparameters.md)
+  Adds additional parameters or attributes to an existing Apple event.
 ### Creating Apple Event Structures Using Streams
 - [func AEStreamClose(AEStreamRef!, UnsafeMutablePointer<AEDesc>!) -> OSStatus](../coreservices/api-1449821-aestreamclose.md)
   Closes and deallocates an `AEStreamRef`.
@@ -423,6 +441,10 @@ You can check for version and feature availabilityinformation by using the Apple
   Defines a data type for the universal procedure pointer for the `OSLGetMarkTokenProcPtr` callback function pointer.
 - [typealias OSLMarkUPP](../coreservices/oslmarkupp.md)
   Defines a data type for the universal procedure pointer for the `OSLMarkProcPtr` callback function pointer.
+- [AEArrayData](../coreservices/api-1443170-aearraydata.md)
+  Stores array information to be put into a descriptor listwith the `AEPutArray` functionor extracted from a descriptor list with the `AEGetArray` function.
+- [AESendOptions](./apple_event_manager/aesendoptions.md)
+  This data type is not available.
 ### Constants
 - [typealias AEBuildErrorCode](../coreservices/aebuilderrorcode.md)
   Represents syntax errors found by an Apple Event build routine.
@@ -542,6 +564,108 @@ You can check for version and feature availabilityinformation by using the Apple
 - [typeReplyPortAttr](./apple_event_manager/api-1571649-typereplyportattr.md)
 - [typeTIFF](./apple_event_manager/api-1556405-typetiff.md)
 - [typeUnicodeText](./apple_event_manager/api-1542918-typeunicodetext.md)
+- [Apple Event Recording Event ID Constants](../coreservices/api-1527224-apple_event_recording_event_id_c.md)
+  Specify event IDs for events that deal with Apple event recording.
+- [cAEList](../coreservices/api-1556411-caelist.md)
+- [Callback Constants for the AEResolve Function](../coreservices/api-1572741-callback_constants_for_the_aeres.md)
+  Specify supported callback features to the `AEResolve` function.
+- [cInsertionLoc](../coreservices/api-1556389-cinsertionloc.md)
+- [cKeystroke](../coreservices/api-1556385-ckeystroke.md)
+- [Constants for Object Specifiers, Positions, and Logical and Comparison Operations](../coreservices/api-1572744-constants_for_object_specifiers_.md)
+  Specify the types of the four keyword-specified descriptors that make up the data in an object specifier, as well as constants for position, logical operations, and comparison operations.
+- [cURL](../coreservices/api-1556375-curl.md)
+- [Data Array Constants](../coreservices/api-1542848-data_array_constants.md)
+  Specify an array type for storing or extracting descriptor lists with the `AEPutArray` and `AEGetArray` functions.
+- [Descriptor Type Constants](../coreservices/api-1542788-descriptor_type_constants.md)
+  Specify types for descriptors.
+- [eScheme](../coreservices/api-1556397-escheme.md)
+- [Event Class Constants](../coreservices/api-1527210-event_class_constants.md)
+  Specify the event class for an Apple event.
+- [Event ID Constants](../coreservices/api-1527223-event_id_constants.md)
+  Specify the event ID for an Apple event.
+- [Event Source Constants](../coreservices/api-1527201-event_source_constants.md)
+  Identify how an Apple event was delivered.
+- [Factoring Constants](../coreservices/api-1542928-factoring_constants.md)
+- [ID Constants for the AECreateAppleEvent Function](../coreservices/api-1542799-id_constants_for_the_aecreateapp.md)
+  Specify values for the ID parameters of the `AECreateAppleEvent` function.
+- [Key Form and Descriptor Type Object Specifier Constants](../coreservices/api-1572731-key_form_and_descriptor_type_obj.md)
+  Specify possible values for the `keyAEKeyForm` field of an object specifier, as well as descriptor types used in resolving object specifiers.
+- [Keyword Attribute Constants](../coreservices/api-1542920-keyword_attribute_constants.md)
+  Specify keyword values for Apple event attributes.
+- [Keyword Parameter Constants](../coreservices/api-1527206-keyword_parameter_constants.md)
+  Specify keyword values for Apple event parameters, as well as information for the `AEManagerInfo` function to retrieve. Some common key word values are shown here.
+- [Launch Apple Event Constants](../coreservices/api-1556410-launch_apple_event_constants.md)
+  In a `kAEOpenApplication` event, specify information about how the receiving application was launched.
+- [Numeric Descriptor Type Constants](../coreservices/api-1542872-numeric_descriptor_type_constant.md)
+  Specify types for numeric descriptors.
+- [Object Class ID Constants](../coreservices/api-1556368-object_class_id_constants.md)
+  Specify the object class for an Apple event object.
+- [Other Descriptor Type Constants](../coreservices/api-1542760-other_descriptor_type_constants.md)
+  Specify types for Boolean and character descriptors.
+- [Priority Constants for the AESend Function (Deprecated in macOS)](../coreservices/api-1542840-priority_constants_for_the_aesen.md)
+  Specify a value for the `sendPriority` parameter of the `AESend` function.
+- [Special Handler Callback Constants](../coreservices/api-1572726-special_handler_callback_constan.md)
+  Specify an object callback function to install, get, or remove from the special handler dispatch table.
+- [Timeout Constants](../coreservices/api-1542814-timeout_constants.md)
+  Specify a timeout value.
+- [kAEDebugPOSTHeader](../coreservices/api-1542854-kaedebugpostheader.md)
+- [kAEHandleArray](../coreservices/api-1542886-kaehandlearray.md)
+- [kAEInfo](../coreservices/api-1556393-kaeinfo.md)
+- [kAEInternetSuite](../coreservices/api-1556388-kaeinternetsuite.md)
+- [kAEISGetURL](../coreservices/api-1556362-kaeisgeturl.md)
+- [kAEISHTTPSearchArgs](../coreservices/api-1556404-kaeishttpsearchargs.md)
+- [kAELogOut](../coreservices/api-1556395-kaelogout.md)
+- [kAEMenuClass](../coreservices/api-1556392-kaemenuclass.md)
+- [kAEMouseClass](../coreservices/api-1556409-kaemouseclass.md)
+- [kAENonmodifiable](../coreservices/api-1556386-kaenonmodifiable.md)
+- [kAEQDNotOr](../coreservices/api-1556377-kaeqdnotor.md)
+- [kAESetPosition](../coreservices/api-1556407-kaesetposition.md)
+- [kAESocks4Protocol](../coreservices/api-1542847-kaesocks4protocol.md)
+- [kAEUseHTTPProxyAttr](../coreservices/api-1542824-kaeusehttpproxyattr.md)
+  Web Services Proxy support—these constants should be added as attributes of the event that is being sent (not as part of the direct object).
+- [kAEUserTerminology](../coreservices/api-1457902-kaeuserterminology.md)
+- [kAEUseSocksAttr](../coreservices/api-1542933-kaeusesocksattr.md)
+- [kAEUTHasReturningParam](../coreservices/api-1457911-kaeuthasreturningparam.md)
+- [kAEZoomIn](../coreservices/api-1556365-kaezoomin.md)
+- [kBySmallIcon](../coreservices/api-1556391-kbysmallicon.md)
+- [kConnSuite](../coreservices/api-1556369-kconnsuite.md)
+- [keyAEAngle](../coreservices/api-1556380-keyaeangle.md)
+- [keyAEBaseAddr](../coreservices/api-1556383-keyaebaseaddr.md)
+- [keyAEDoScale](../coreservices/api-1556387-keyaedoscale.md)
+- [keyAEHiliteRange](../coreservices/api-1556379-keyaehiliterange.md)
+- [keyAEKeyword](../coreservices/api-1556374-keyaekeyword.md)
+- [keyAESuiteID](../coreservices/api-1556370-keyaesuiteid.md)
+- [keyMenuID](../coreservices/api-1556381-keymenuid.md)
+- [keyMiscellaneous](../coreservices/api-1556399-keymiscellaneous.md)
+- [keyReplyPortAttr](../coreservices/api-1571648-keyreplyportattr.md)
+- [keySOAPStructureMetaData](../coreservices/api-1542797-keysoapstructuremetadata.md)
+- [keyUserNameAttr](../coreservices/api-1542780-keyusernameattr.md)
+- [kFAServerApp](../coreservices/api-1556384-kfaserverapp.md)
+- [kLaunchToGetTerminology](../coreservices/api-1457909-klaunchtogetterminology.md)
+- [kNextBody](../coreservices/api-1556402-knextbody.md)
+- [kOSIZDontOpenResourceFile](../coreservices/api-1457903-kosizdontopenresourcefile.md)
+- [kReadExtensionTermsMask](../coreservices/api-1457896-kreadextensiontermsmask.md)
+- [kSOAP1999Schema](../coreservices/api-1542943-ksoap1999schema.md)
+- [kTextServiceClass](../coreservices/api-1556406-ktextserviceclass.md)
+- [kTSMHiliteCaretPosition](../coreservices/api-1556398-ktsmhilitecaretposition.md)
+  Specify text highlighting information.
+- [kTSMOutsideOfBody](../coreservices/api-1556371-ktsmoutsideofbody.md)
+- [pArcAngle](../coreservices/api-1556376-parcangle.md)
+- [pFormula](../coreservices/api-1556373-pformula.md)
+- [pNewElementLoc](../coreservices/api-1556400-pnewelementloc.md)
+- [pScheme](../coreservices/api-1556408-pscheme.md)
+- [pTextStyles](../coreservices/api-1556367-ptextstyles.md)
+- [typeAEText](../coreservices/api-1556366-typeaetext.md)
+- [typeApplicationBundleID](../coreservices/api-1542896-typeapplicationbundleid.md)
+  For specifying a target application by bundle ID.
+- [typeHIMenu](../coreservices/api-1556372-typehimenu.md)
+- [typeKernelProcessID](../coreservices/api-1542936-typekernelprocessid.md)
+  For specifying an application by UNIX process ID.
+- [typeMeters](../coreservices/api-1556382-typemeters.md)
+- [typeReplyPortAttr](../coreservices/api-1571649-typereplyportattr.md)
+- [typeSessionID](./apple_event_manager/typesessionid.md)
+- [typeTIFF](../coreservices/api-1556405-typetiff.md)
+- [typeUnicodeText](../coreservices/api-1542918-typeunicodetext.md)
 ### Result Codes
 - [var noPortErr: Int](../coreservices/noporterr.md)
   Client hasn’t set `'SIZE'` resource toindicate awareness of high-level events
@@ -676,6 +800,142 @@ You can check for version and feature availabilityinformation by using the Apple
 - [var errAECantPutThatThere: Int](../coreservices/erraecantputthatthere.md)
   In make new, duplicate, etc. class can'tbe an element of container
 - [var errAEPropertiesClash: Int](../coreservices/erraepropertiesclash.md)
+  Illegal combination of properties settingsfor SetData, make new, or duplicate
+- [noPortErr](../coreservices/api-1560074-anonymous/noporterr.md)
+  Client hasn’t set `'SIZE'` resource toindicate awareness of high-level events
+- [destPortErr](../coreservices/api-1560074-anonymous/destporterr.md)
+  Server hasn’t set `'SIZE'` resource toindicate awareness of high-level events, or else is not present
+- [sessClosedErr](../coreservices/api-1560074-anonymous/sessclosederr.md)
+  The `kAEDontReconnect` flagin the `sendMode` parameterwas set and the server quit, then restarted
+- [errAECoercionFail](../coreservices/api-1560059-anonymous/erraecoercionfail.md)
+  Data could not be coerced to the requesteddescriptor type
+- [errAEDescNotFound](../coreservices/api-1560059-anonymous/erraedescnotfound.md)
+  Descriptor was not found
+- [errAECorruptData](../coreservices/api-1560059-anonymous/erraecorruptdata.md)
+  Data in an Apple event could not be read
+- [errAEWrongDataType](../coreservices/api-1560059-anonymous/erraewrongdatatype.md)
+  Wrong descriptor type
+- [errAENotAEDesc](../coreservices/api-1560059-anonymous/erraenotaedesc.md)
+  Not a valid descriptor
+- [errAEBadListItem](../coreservices/api-1560059-anonymous/erraebadlistitem.md)
+  Operation involving a list item failed
+- [errAENewerVersion](../coreservices/api-1560059-anonymous/erraenewerversion.md)
+  Need a newer version of the Apple EventManager
+- [errAENotAppleEvent](../coreservices/api-1560059-anonymous/erraenotappleevent.md)
+  The event is not in AppleEvent format.
+- [errAEEventNotHandled](../coreservices/api-1560059-anonymous/erraeeventnothandled.md)
+  Event wasn’t handled by an Apple eventhandler
+- [errAEReplyNotValid](../coreservices/api-1560059-anonymous/erraereplynotvalid.md)
+  `AEResetTimer` was passed an invalid reply
+- [errAEUnknownSendMode](../coreservices/api-1560059-anonymous/erraeunknownsendmode.md)
+  Invalid sending mode was passed
+- [errAEWaitCanceled](../coreservices/api-1560059-anonymous/erraewaitcanceled.md)
+  User canceled out of wait loop for replyor receipt
+- [errAETimeout](../coreservices/api-1560059-anonymous/erraetimeout.md)
+  Apple event timed out
+- [errAENoUserInteraction](../coreservices/api-1560059-anonymous/erraenouserinteraction.md)
+  No user interaction allowed
+- [errAENotASpecialFunction](../coreservices/api-1560059-anonymous/erraenotaspecialfunction.md)
+  Wrong keyword for a special function
+- [errAEParamMissed](../coreservices/api-1560059-anonymous/erraeparammissed.md)
+  A required parameter was not accessed.
+- [errAEUnknownAddressType](../coreservices/api-1560059-anonymous/erraeunknownaddresstype.md)
+  Unknown Apple event address type
+- [errAEHandlerNotFound](../coreservices/api-1560059-anonymous/erraehandlernotfound.md)
+  No handler found for an Apple event
+- [errAEReplyNotArrived](../coreservices/api-1560059-anonymous/erraereplynotarrived.md)
+  Reply has not yet arrived
+- [errAEIllegalIndex](../coreservices/api-1560059-anonymous/erraeillegalindex.md)
+  Not a valid list index
+- [errAEImpossibleRange](../coreservices/api-1560059-anonymous/erraeimpossiblerange.md)
+  The range is not valid because it is impossiblefor a range to include the first and last objects that were specified;an example is a range in which the offset of the first object is greaterthan the offset of the last object
+- [errAEWrongNumberArgs](../coreservices/api-1560059-anonymous/erraewrongnumberargs.md)
+  The number of operands provided for the `kAENOT` logicaloperator is not 1
+- [errAEAccessorNotFound](../coreservices/api-1560059-anonymous/erraeaccessornotfound.md)
+  There is no object accessor function forthe specified object class and container type
+- [errAENoSuchLogical](../coreservices/api-1560059-anonymous/erraenosuchlogical.md)
+  The logical operator in a logical descriptoris not `kAEAND`, `kAEOR`,or `kAENOT`
+- [errAEBadTestKey](../coreservices/api-1560059-anonymous/erraebadtestkey.md)
+  The descriptor in a test key is neithera comparison descriptor nor a logical descriptor
+- [errAENotAnObjectSpec](./apple_event_manager/erraenotanobjectspec.md)
+  The `objSpecifier` parameterof `AEResolve` is not anobject specifier
+- [errAENoSuchObject](../coreservices/api-1560059-anonymous/erraenosuchobject.md)
+  Runtime resolution of an object failed.
+- [errAENegativeCount](../coreservices/api-1560059-anonymous/erraenegativecount.md)
+  An object-counting function returned a negativeresult
+- [errAEEmptyListContainer](../coreservices/api-1560059-anonymous/erraeemptylistcontainer.md)
+  The container for an Apple event objectis specified by an empty list
+- [errAEUnknownObjectType](../coreservices/api-1560059-anonymous/erraeunknownobjecttype.md)
+  The object type isn’t recognized
+- [errAERecordingIsAlreadyOn](../coreservices/api-1560059-anonymous/erraerecordingisalreadyon.md)
+  Recording is already on
+- [errAEReceiveTerminate](../coreservices/api-1560059-anonymous/erraereceiveterminate.md)
+  Break out of all levels of `AEReceive` tothe topmost (1.1 or greater)
+- [errAEReceiveEscapeCurrent](../coreservices/api-1560059-anonymous/erraereceiveescapecurrent.md)
+  Break out of lowest level only of `AEReceive` (1.1or greater)
+- [errAEEventFiltered](../coreservices/api-1560059-anonymous/erraeeventfiltered.md)
+  Event has been filtered and should not bepropagated (1.1 or greater)
+- [errAEDuplicateHandler](../coreservices/api-1560059-anonymous/erraeduplicatehandler.md)
+  Attempt to install handler in table foridentical class and ID (1.1 or greater)
+- [errAEStreamBadNesting](../coreservices/api-1560059-anonymous/erraestreambadnesting.md)
+  Nesting violation while streaming
+- [errAEStreamAlreadyConverted](../coreservices/api-1560059-anonymous/erraestreamalreadyconverted.md)
+  Attempt to convert a stream that has alreadybeen converted
+- [errAEDescIsNull](../coreservices/api-1560059-anonymous/erraedescisnull.md)
+  Attempt to perform an invalid operationon a null descriptor
+- [errAEBuildSyntaxError](../coreservices/api-1560059-anonymous/erraebuildsyntaxerror.md)
+  `AEBuildDesc` andrelated functions detected a syntax error
+- [errAEBufferTooSmall](../coreservices/api-1560059-anonymous/erraebuffertoosmall.md)
+  Buffer for `AEFlattenDesc` toosmall
+- [errASCantConsiderAndIgnore](../coreservices/api-1559945-anonymous/errascantconsiderandignore.md)
+  Can’t both consider and ignore <attribute>.
+- [errASCantCompareMoreThan32k](../coreservices/api-1559945-anonymous/errascantcomparemorethan32k.md)
+  Can’t perform operation on text longerthan 32K bytes.
+- [errASTerminologyNestingTooDeep](../coreservices/api-1559945-anonymous/errasterminologynestingtoodeep.md)
+  Tell statements are nested too deeply.
+- [errASIllegalFormalParameter](../coreservices/api-1559945-anonymous/errasillegalformalparameter.md)
+  <name> is illegal as a formal parameter.
+- [errASParameterNotForEvent](../coreservices/api-1559945-anonymous/errasparameternotforevent.md)
+  <name> is not a parameter name for the event <event>.
+- [errASNoResultReturned](../coreservices/api-1559945-anonymous/errasnoresultreturned.md)
+  No result was returned for some argumentof this expression. 
+- [errAEEventFailed](../coreservices/api-1560036-anonymous/erraeeventfailed.md)
+  Apple event handler failed.
+- [errAETypeError](../coreservices/api-1560036-anonymous/erraetypeerror.md)
+  A descriptor type mismatch occurred.
+- [errAEBadKeyForm](../coreservices/api-1560036-anonymous/erraebadkeyform.md)
+  Invalid key form.
+- [errAENotModifiable](../coreservices/api-1560036-anonymous/erraenotmodifiable.md)
+  Can't set <object or data> to <object or data>. Access not allowed.
+- [errAEPrivilegeError](../coreservices/api-1560036-anonymous/erraeprivilegeerror.md)
+  A privilege violation occurred.
+- [errAEReadDenied](../coreservices/api-1560036-anonymous/erraereaddenied.md)
+  The read operation was not allowed.
+- [errAEWriteDenied](../coreservices/api-1560036-anonymous/erraewritedenied.md)
+  Can't set <object or data> to <object or data>. 
+- [errAEIndexTooLarge](../coreservices/api-1560036-anonymous/erraeindextoolarge.md)
+  The index of the event is too large to bevalid.
+- [errAENotAnElement](../coreservices/api-1560036-anonymous/erraenotanelement.md)
+  The specified object is a property, notan element.
+- [errAECantSupplyType](../coreservices/api-1560036-anonymous/erraecantsupplytype.md)
+  Can’t supply the requested descriptortype for the data.
+- [errAECantHandleClass](../coreservices/api-1560036-anonymous/erraecanthandleclass.md)
+  The Apple event handler can’t handle objectsof this class.
+- [errAEInTransaction](../coreservices/api-1560036-anonymous/erraeintransaction.md)
+  Couldn’t handle this command because itwasn’t part of the current transaction.
+- [errAENoSuchTransaction](../coreservices/api-1560036-anonymous/erraenosuchtransaction.md)
+  The transaction to which this command belongedisn’t a valid transaction.
+- [errAENoUserSelection](../coreservices/api-1560036-anonymous/erraenouserselection.md)
+  There is no user selection.
+- [errAENotASingleObject](../coreservices/api-1560036-anonymous/erraenotasingleobject.md)
+  Handler only handles single objects.
+- [errAECantUndo](../coreservices/api-1560036-anonymous/erraecantundo.md)
+  Can’t undo the previous Apple event oruser action.
+- [errAENotAnEnumMember](../coreservices/api-1560036-anonymous/erraenotanenummember.md)
+  Enumerated value in `SetData` is notallowed for this property
+- [errAECantPutThatThere](../coreservices/api-1560036-anonymous/erraecantputthatthere.md)
+  In make new, duplicate, etc. class can'tbe an element of container
+- [errAEPropertiesClash](../coreservices/api-1560036-anonymous/erraepropertiesclash.md)
   Illegal combination of properties settingsfor SetData, make new, or duplicate
 
 ## See Also

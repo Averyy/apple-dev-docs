@@ -35,6 +35,17 @@ This method redisplays the button if necessary. It does nothing if the button do
 ### Related Documentation
 - [var font: NSFont?](../nscell/font.md)
   The font that the cell uses to display text.
+### Deprecated methods
+- [- alternateMnemonic](./alternatemnemonic.md)
+  Returns the character in the alternate title that’s marked as the “keyboard mnemonic.”
+- [- alternateMnemonicLocation](./alternatemnemoniclocation.md)
+  Returns an unsigned integer indicating the character in the alternate title that’s marked as the “keyboard mnemonic.”
+- [- setAlternateMnemonicLocation:](./setalternatemnemoniclocation_.md)
+  Sets the character in the alternate title that should be the “keyboard mnemonic.”
+- [- setAlternateTitleWithMnemonic:](./setalternatetitlewithmnemonic_.md)
+  Sets the title the button displays when it’s in its alternate state to the given string with an embedded mnemonic.
+- [- setTitleWithMnemonic:](./settitlewithmnemonic_.md)
+  Sets the title the button displays when it’s in its normal state to the given string with an embedded mnemonic.
 
 
 ---

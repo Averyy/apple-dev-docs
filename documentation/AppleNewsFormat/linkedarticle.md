@@ -21,7 +21,7 @@ object LinkedArticle
 
 #### Discussion
 
-You can control lists of links that people see in articles by using the `links` array in [`Metadata`](./metadata.md). If you are linking to a sponsored article, ensure that the [`Create an Article`](https://developer.apple.com/documentation/applenewsapi/post-channels-_channelid_-articles) request uses the `isSponsored` flag.
+You can control lists of links that people see in articles by using the `links` array in [`Metadata`](./metadata.md). If you are linking to a sponsored article, ensure that the [`Create an Article`](../AppleNewsAPI/post-channels-_channelid_-articles.md) request uses the `isSponsored` flag.
 
 ##### Example
 

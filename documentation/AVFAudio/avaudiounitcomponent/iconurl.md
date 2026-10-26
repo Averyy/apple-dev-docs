@@ -32,6 +32,8 @@ var iconURL: URL? { get }
   An array of tags the user creates.
 - [AVAudioUnitComponent.TagsDidChangeMessage](./tagsdidchangemessage.md)
   Type-safe notification message for audio unit component tag changes.
+- [AVAudioUnitComponentTagsDidChangeNotification](../avaudiounitcomponenttagsdidchangenotification.md)
+  A notification that indicates when component tags change.
 
 
 ---

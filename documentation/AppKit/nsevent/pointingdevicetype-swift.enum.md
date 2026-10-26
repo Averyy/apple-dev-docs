@@ -36,6 +36,15 @@ The [`pointingDeviceType`](./pointingdevicetype-swift.property.md) property retu
   Represents an unknown type of pointing device.
 ### Initializers
 - [init?(rawValue: UInt)](./pointingdevicetype-swift.enum/init%28rawvalue%29.md)
+### Deprecated
+- [NSCursorPointingDevice](../nscursorpointingdevice.md)
+  Represents a cursor (or puck-like) pointing device.
+- [NSEraserPointingDevice](../nseraserpointingdevice.md)
+  Represents the eraser end of a stylus-like pointing device.
+- [NSPenPointingDevice](../nspenpointingdevice.md)
+  Represents the tip end of a stylus-like pointing device.
+- [NSUnknownPointingDevice](../nsunknownpointingdevice.md)
+  Represents an unknown type of pointing device.
 
 ## Relationships
 

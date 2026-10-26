@@ -64,6 +64,8 @@ extern void xpc_array_set_uint64(xpc_object_t xarray, size_t index, uint64_t val
   Gets a date interval from an array directly.
 - [func xpc_array_get_dictionary(xpc_object_t, Int) -> xpc_object_t?](./xpc_array_get_dictionary%28_,_%29.md)
   Returns the dictionary at the specified index in the array.
+- [xpc_array_get_double](./xpc_array_get_double%28_,_%29.md)
+  Gets a double-precision floating point primitive value from an array directly.
 
 
 ---

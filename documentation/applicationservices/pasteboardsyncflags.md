@@ -26,6 +26,9 @@ typedef enum PasteboardSyncFlags : OptionBits {
 - [static var modified: PasteboardSyncFlags](./pasteboardsyncflags/api-1458804-modified.md)
 ### Initializers
 - [init(rawValue: OptionBits)](./pasteboardsyncflags/api-1644060-init.md)
+### Constants
+- [kPasteboardClientIsOwner](./pasteboardsyncflags/kpasteboardclientisowner.md)
+- [kPasteboardModified](./pasteboardsyncflags/kpasteboardmodified.md)
 
 ## Relationships
 

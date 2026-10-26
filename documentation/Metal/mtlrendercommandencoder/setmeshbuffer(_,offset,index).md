@@ -50,6 +50,8 @@ By default, the texture at each index is `nil`.
   Creates a buffer from bytes and assigns it to an entry in the mesh shader argument table.
 - [func setMeshBufferOffset(Int, index: Int)](./setmeshbufferoffset%28_,index%29.md)
   Updates an entry in the mesh shader argument table with a new location within the entry’s current buffer.
+- [- setMeshBuffers:offsets:withRange:](./setmeshbuffers_offsets_withrange_.md)
+  Assigns multiple buffers to a range of entries in the mesh shader argument table.
 
 
 ---

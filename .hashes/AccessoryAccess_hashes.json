@@ -5,6 +5,11 @@
       "file_path": "documentation/AccessoryAccess/AccessoryAccess.md",
       "hash": "908250e0c14c983457e5abe83572961324cee65be9d6cb40b91c8deea5203a85"
     },
+    "https://developer.apple.com/documentation/accessoryaccess/aa_export": {
+      "etag": "\"955-65d55e4afb596-df\"",
+      "file_path": "documentation/AccessoryAccess/aa_export.md",
+      "hash": "ff72f4b6854c0341e323850fea4f39c2c25f2e6defea87111d76b50627084d93"
+    },
     "https://developer.apple.com/documentation/accessoryaccess/aaerror": {
       "etag": "\"3763-65d55e4aecc7a-df\"",
       "file_path": "documentation/AccessoryAccess/aaerror.md",
@@ -320,6 +325,11 @@
       "file_path": "documentation/AccessoryAccess/AccessoryAccess.md",
       "hash": "908250e0c14c983457e5abe83572961324cee65be9d6cb40b91c8deea5203a85"
     },
+    "https://developer.apple.com/tutorials/data/documentation/accessoryaccess/aa_export.json": {
+      "etag": "\"955-65d55e4afb596-df\"",
+      "file_path": "documentation/AccessoryAccess/aa_export.md",
+      "hash": "ff72f4b6854c0341e323850fea4f39c2c25f2e6defea87111d76b50627084d93"
+    },
     "https://developer.apple.com/tutorials/data/documentation/accessoryaccess/aaerror.json": {
       "etag": "\"3763-65d55e4aecc7a-df\"",
       "file_path": "documentation/AccessoryAccess/aaerror.md",
@@ -633,8 +643,8 @@
   },
   "metadata": {
     "render": {
-      "version": 1
+      "version": 2
     },
-    "total_pages": 126
+    "total_pages": 128
   }
 }

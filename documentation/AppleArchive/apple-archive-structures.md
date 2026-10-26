@@ -9,6 +9,16 @@
 - [struct AEAContextTraits](./aeacontexttraits.md)
 - [struct ArchiveFlags](./archiveflags.md)
 - [struct ArchiveHash](./archivehash.md)
+- [AAAccessControlEntry](./aaaccesscontrolentry.md)
+- [AAFieldKey](./aafieldkey.md)
+- [AAEntryAttributes](./aaentryattributes.md)
+
+## See Also
+
+### Reference
+- [Apple Archive data types](./apple-archive-data-types.md)
+- [Apple Archive functions](./apple-archive-functions.md)
+- [Apple Archive macros](./apple-archive-macros.md)
 
 
 ---

@@ -42,6 +42,14 @@ func pauseAllMediaPlayback() async
   Closes all media the web view is presenting, including picture-in-picture video and fullscreen video.
 - [enum WKMediaPlaybackState](../wkmediaplaybackstate.md)
   An enumeration that describes whether an audio or video presentation is playing, paused, or suspended.
+- [- pauseAllMediaPlayback:](./pauseallmediaplayback_.md)
+  Pauses playback of all media in the web view.
+- [- requestMediaPlaybackState:](./requestmediaplaybackstate_.md)
+  Requests the playback status of media in the web view.
+- [- suspendAllMediaPlayback:](./suspendallmediaplayback_.md)
+  Changes whether the webpage is suspending playback of all media in the page.
+- [- resumeAllMediaPlayback:](./resumeallmediaplayback_.md)
+  Resumes playback of all media in a web view.
 
 
 ---

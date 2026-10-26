@@ -34,6 +34,8 @@ This option is useful for unit testing to ensure your managed object model is va
 ### Constants
 - [static var printSchema: NSPersistentCloudKitContainerSchemaInitializationOptions](./printschema.md)
   Prints the generated records to the console.
+- [NSPersistentCloudKitContainerSchemaInitializationOptionsNone](./nspersistentcloudkitcontainerschemainitializationoptionsnone.md)
+  Indicates there are no specified schema options.
 
 
 ---

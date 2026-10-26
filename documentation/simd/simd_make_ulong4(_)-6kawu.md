@@ -23,6 +23,8 @@ static simd_ulong4 simd_make_ulong4(simd_ulong1 other);
   Returns a new vector from the specified scalar values.
 - [func simd_make_ulong4_undef(simd_ulong1) -> simd_ulong4](./simd_make_ulong4_undef%28_%29-jgtr.md)
   Returns a new vector with the first element set to a scalar value, and other elements undefined.
+- [vector4](./vector4-8yxgu.md)
+  Returns a new vector from the specified scalar values.
 
 
 ---

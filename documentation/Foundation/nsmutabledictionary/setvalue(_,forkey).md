@@ -46,6 +46,8 @@ This method adds `value` and `key` to the dictionary using [`setObject(_:forKey:
   Adds to the receiving dictionary the entries from another dictionary.
 - [func setDictionary([AnyHashable : Any])](./setdictionary%28_%29.md)
   Sets the contents of the receiving dictionary to entries in a given dictionary.
+- [- setObject:forKeyedSubscript:](./setobject_forkeyedsubscript_.md)
+  Adds a given key-value pair to the dictionary.
 
 
 ---

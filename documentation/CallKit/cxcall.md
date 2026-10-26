@@ -44,6 +44,9 @@ You can use the [`CXCallObserver`](./cxcallobserver.md) managed by a [`CXCallCon
   A Boolean value that indicates whether the call has ended.
 - [var isOnHold: Bool](./cxcall/isonhold.md)
   A Boolean value that indicates whether the call is on hold.
+### Comparing Calls
+- [- isEqualToCall:](./cxcall/isequaltocall_.md)
+  Returns a Boolean value that indicates whether a given call is equal to the receiver.
 
 ## Relationships
 

@@ -29,6 +29,11 @@ The NSPrintInfo object is set using the [`beginSheet(with:modalFor:delegate:didE
 - [class NSPrintInfo](../nsprintinfo.md)
   An object that stores information that’s used to generate printed output.
 - [NSPageLayout.Result](./result.md)
+### Related Documentation
+- [- writePrintInfo](./writeprintinfo.md)
+  Writes the page layout’s values to the print info object used when the page layout panel is run.
+- [- readPrintInfo](./readprintinfo.md)
+  Sets the page layout’s values to those stored in the print info object used when the page layout panel is run.
 
 
 ---

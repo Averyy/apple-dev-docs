@@ -14,7 +14,7 @@ Communicate between your app servers and Apple’s authentication servers.
 
 The [Sign in with Apple](../SigninwithApple/SigninwithApple.md) REST API is a web service that connects you to Apple’s authentication servers. Use this service to generate and validate the identity tokens used to verify a user’s identity.
 
-To sign in from a web app or other platform, like Android, use [Sign in with Apple JS](https://developer.apple.com/documentation/signinwithapplejs). Alternatively, to let users set up accounts and sign in to your native iOS, macOS, tvOS, and watchOS apps, use the [Authentication Services](../AuthenticationServices/AuthenticationServices.md) framework.
+To sign in from a web app or other platform, like Android, use [Sign in with Apple JS](../SigninwithAppleJS/SigninwithAppleJS.md). Alternatively, to let users set up accounts and sign in to your native iOS, macOS, tvOS, and watchOS apps, use the [Authentication Services](../AuthenticationServices/AuthenticationServices.md) framework.
 
 ## Topics
 
@@ -56,7 +56,7 @@ To sign in from a web app or other platform, like Android, use [Sign in with App
 ## See Also
 
 ### Web support
-- [Sign in with Apple JS](https://developer.apple.com/documentation/signinwithapplejs)
+- [Sign in with Apple JS](../SigninwithAppleJS/SigninwithAppleJS.md)
   Provide users a fast, secure way to sign in to your web service with their Apple Account.
 - [Displaying Sign in with Apple buttons on the web](../SigninwithApple/displaying-sign-in-with-apple-buttons-on-the-web.md)
   Configure the appearance of Sign in with Apple buttons with CSS styles.

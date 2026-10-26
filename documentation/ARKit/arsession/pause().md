@@ -35,6 +35,8 @@ While paused, the session doesn’t track device motion or capture scene imagery
   Options for transitioning an AR session’s current state when you change its configuration.
 - [var configuration: ARConfiguration?](./configuration.md)
   An object that defines motion and scene tracking behaviors for the session.
+- [- runWithConfiguration:](./runwithconfiguration_.md)
+  Starts AR processing for the session with the specified configuration.
 
 
 ---

@@ -53,6 +53,8 @@ This method throws NSInvalidArgumentException if minimumSegmentDuration is not n
 ### Getting segment boundary guidance
 - [static func segmentBoundaryGuidelinesForVideo(codecType: AVVideoCodecType, encoderSpecification: [String : any Sendable]) -> AVAssetWritingPlanner.SegmentBoundaryGuidelines](./segmentboundaryguidelinesforvideo%28codectype,encoderspecification%29.md)
   Returns segment boundary guidelines that help clients determine how to segment compression video tracks with best results.
+- [+ segmentBoundaryGuidelinesForVideoCodecType:videoEncoderSpecification:](./segmentboundaryguidelinesforvideocodectype_videoencoderspecification_.md)
+  Returns segment boundary guidelines that help clients determine how to segment compression video tracks with best results.
 
 
 ---

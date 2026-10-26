@@ -33,7 +33,7 @@ class INUIEditVoiceShortcutViewController
 
 #### Overview
 
-To let the user edit or remove a shortcut, create an instance of [`INUIEditVoiceShortcutViewController`](./inuieditvoiceshortcutviewcontroller.md) with the [`INVoiceShortcut`](https://developer.apple.com/documentation/intents/invoiceshortcut). Then present the view controller to the user. To receive notifications of changes made to the shortcut, set the controller’s [`delegate`](./inuieditvoiceshortcutviewcontroller/delegate.md) to an object that conforms to the [`INUIEditVoiceShortcutViewControllerDelegate`](./inuieditvoiceshortcutviewcontrollerdelegate.md) protocol.
+To let the user edit or remove a shortcut, create an instance of [`INUIEditVoiceShortcutViewController`](./inuieditvoiceshortcutviewcontroller.md) with the [`INVoiceShortcut`](../Intents/invoiceshortcut.md). Then present the view controller to the user. To receive notifications of changes made to the shortcut, set the controller’s [`delegate`](./inuieditvoiceshortcutviewcontroller/delegate.md) to an object that conforms to the [`INUIEditVoiceShortcutViewControllerDelegate`](./inuieditvoiceshortcutviewcontrollerdelegate.md) protocol.
 
 ## Topics
 

@@ -38,6 +38,8 @@ kCFStringTokenizerTokenHasHasNumbersMask
   Contains punctuation, symbols, and so on.
 - [static var isCJWordMask: CFStringTokenizerTokenType](./iscjwordmask.md)
   Contains kana and/or ideographs.
+- [kCFStringTokenizerTokenNone](./kcfstringtokenizertokennone.md)
+  Has no token.
 
 
 ---

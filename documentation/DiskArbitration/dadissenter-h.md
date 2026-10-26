@@ -37,6 +37,7 @@ See the Overview section above for header-level documentation.
 - [DiskArbitration Enumerations](./diskarbitration-enumerations.md)
 - [DiskArbitration Constants](./diskarbitration-constants.md)
 - [DiskArbitration Data Types](./diskarbitration-data-types.md)
+- [DiskArbitration Functions](./diskarbitration-functions.md)
 
 
 ---

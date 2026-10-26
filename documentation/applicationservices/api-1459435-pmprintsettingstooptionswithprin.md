@@ -51,6 +51,18 @@ This function creates a CUPS options string for the destination printer that cap
   Copies the settings from one print settings object into another. 
 - [func PMPrintSettingsToOptions(PMPrintSettings, UnsafeMutablePointer<UnsafeMutablePointer<CChar>?>) -> OSStatus](./api-1459069-pmprintsettingstooptions.md)
   Converts print settings into a CUPS options string.
+- [PMFlattenPrintSettings](./core_printing/api-1805469-pmflattenprintsettings.md)
+  Flattens a print settings object into a Memory Manager handle for storage in a user document.
+- [PMFlattenPrintSettingsToCFData](./core_printing/api-1805472-pmflattenprintsettingstocfdata.md)
+  Flattens a print settings object into a Core Foundation data object for storage in a user document.
+- [PMFlattenPrintSettingsToURL](./core_printing/api-1805473-pmflattenprintsettingstourl.md)
+  Flattens a print settings object into a URL for storage in a user document.
+- [PMUnflattenPrintSettings](./core_printing/api-1805476-pmunflattenprintsettings.md)
+  Rebuilds a print settings object from a Memory Manager handle that contains flattened print settings data.
+- [PMUnflattenPrintSettingsWithCFData](./core_printing/api-1805479-pmunflattenprintsettingswithcfda.md)
+  Rebuilds a print settings object from a Core Foundation data object that contains flattened print settings data.
+- [PMUnflattenPrintSettingsWithURL](./core_printing/api-1805481-pmunflattenprintsettingswithurl.md)
+  Rebuilds a print settings object from a file that contains flattened print settings data.
 
 
 ---

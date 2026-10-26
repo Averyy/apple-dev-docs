@@ -26,8 +26,12 @@ For functions that expect an MDItemRef parameter, if thisparameter is not a vali
   Returns the values of the specified attributes in the metadata item.
 - [func MDItemCopyAttributeNames(MDItem!) -> CFArray!](../api-1427066-mditemcopyattributenames.md)
   Returns an array containing the attribute names existing in the metadata item.
+- [MDItemCopyAttributeList](../api-1427028-mditemcopyattributelist.md)
+  Returns the values of the specified attributes in the metadata item.
 ### Data Types
 - [class MDItem](../mditem.md)
+  A reference to a MDItem object.
+- [MDItemRef](../mditemref.md)
   A reference to a MDItem object.
 ### Constants
 - [Common Metadata Attribute Keys](./mditem/common_metadata_attribute_keys.md)

@@ -41,6 +41,8 @@ class AVPlayerItemSegment
   The date at which a segment starts.
 - [var interstitialEvent: AVPlayerInterstitialEvent?](./avplayeritemsegment/interstitialevent.md)
   The associated interstitial event for this segment.
+- [loadedTimeRanges](./avplayeritemsegment/loadedtimeranges-2p0fl.md)
+  The time ranges for the segment that have media data is readily available.
 
 ## Relationships
 

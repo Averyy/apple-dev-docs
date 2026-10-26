@@ -36,6 +36,12 @@ To make agents avoid the obstacle, create a goal with the goalToAvoidObstacles:t
 
 - `radius`: The radius for the new obstacle.
 
+## See Also
+
+### Creating an Obstacle
+- [+ obstacleWithRadius:](./obstaclewithradius_.md)
+  Creates a spherical obstacle with the specified radius.
+
 
 ---
 

@@ -44,6 +44,10 @@ If the function `PMSessionBeginPageNoDialog` returns `noErr`, you must later cal
   Ends a print job started by calling the function [`PMSessionBeginCGDocumentNoDialog(_:_:_:)`](./api-1460101-pmsessionbegincgdocumentnodialog.md) or [PMSessionBeginDocumentNoDialog](./core_printing/api-1805538-pmsessionbegindocumentnodialog.md).
 - [func PMSessionBeginPageNoDialog(PMPrintSession, PMPageFormat?, UnsafePointer<PMRect>?) -> OSStatus](./api-1463416-pmsessionbeginpagenodialog.md)
   Starts a new page for printing in the specified printing session and suppresses the printing status dialog.
+- [PMSessionBeginDocumentNoDialog](./core_printing/api-1805538-pmsessionbegindocumentnodialog.md)
+  Begins a print job that, by default, draws into a QuickDraw graphics port, and suppresses the printing status dialog.
+- [PMSessionSetIdleProc](./core_printing/api-1805540-pmsessionsetidleproc.md)
+  Installs an idle callback function in your print loop.
 
 
 ---

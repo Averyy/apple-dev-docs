@@ -60,6 +60,10 @@ enum NSLayoutFormatOptions : NSUInteger;
   Align elements vertically according to their baseline positions.
 - [static var spacingMask: NSLayoutConstraint.FormatOptions](./formatoptions/spacingmask.md)
   A bit mask that can be combined with an [`NSLayoutConstraint.FormatOptions`](./formatoptions.md) variable to yield only the spacing baseline spacing portion of the format options.
+- [NSLayoutFormatAlignAllBaseline](../nslayoutformatoptions/nslayoutformatalignallbaseline.md)
+  Align all specified interface elements using [`NSLayoutAttributeBaseline`](../nslayoutattribute/nslayoutattributebaseline.md) on each.
+- [NSLayoutFormatSpacingEdgeToEdge](../nslayoutformatoptions/nslayoutformatspacingedgetoedge.md)
+  Align the elements using their edges instead of using their baselines.
 ### Initializers
 - [init(rawValue: UInt)](./formatoptions/init%28rawvalue%29.md)
   Creates a formatting-options structure with the specified raw value.

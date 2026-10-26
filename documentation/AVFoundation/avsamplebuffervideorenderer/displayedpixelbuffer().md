@@ -27,6 +27,8 @@ func displayedPixelBuffer() -> CVPixelBuffer?
 ### Accessing the pixel buffer
 - [var recommendedPixelBufferAttributes: CVPixelBufferAttributes](./recommendedpixelbufferattributes-6zrqb.md)
   Recommended pixel buffer attributes for optimal performance when using CMSampleBuffers containing CVPixelbuffers.
+- [recommendedPixelBufferAttributes](./recommendedpixelbufferattributes-6326f.md)
+  Recommended pixel buffer attributes for optimal performance when using CMSampleBuffers containing CVPixelBuffers.
 
 
 ---

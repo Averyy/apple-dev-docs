@@ -63,6 +63,8 @@ enum NLTaggerOptions : NSUInteger;
   Enumerates a block over the tagger’s string, given a range, token unit, and tag scheme.
 - [struct NLTag](../nltag.md)
   A token type, lexical class, name, lemma, language, or script returned by a linguistic tagger for natural language text.
+- [- enumerateTagsInRange:unit:scheme:options:usingBlock:](./enumeratetagsinrange_unit_scheme_options_usingblock_.md)
+  Enumerates a block over the tagger’s string, given a range, token unit, and tag scheme.
 
 
 ---

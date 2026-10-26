@@ -34,6 +34,11 @@ CoreLocationUI provides [`LocationButton`](./locationbutton.md) for SwiftUI apps
   Constants that specify styles for the location arrow icon on the button.
 - [enum CLLocationButtonLabel](./cllocationbuttonlabel.md)
   Constants that specify the text of the button label.
+### Framework version
+- [CoreLocationUIVersionNumber](./corelocationuiversionnumber.md)
+  The project version number for CoreLocationUI.
+- [CoreLocationUIVersionString](./corelocationuiversionstring.md)
+  The project version string for CoreLocationUI.
 
 
 ---

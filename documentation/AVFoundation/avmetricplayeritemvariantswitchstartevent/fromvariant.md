@@ -31,6 +31,7 @@ var fromVariant: AVAssetVariant? { get }
 - [var audioRendition: AVMetricMediaRendition](./audiorendition.md)
 - [var videoRendition: AVMetricMediaRendition](./videorendition.md)
 - [var subtitleRendition: AVMetricMediaRendition](./subtitlerendition.md)
+- [loadedTimeRanges](./loadedtimeranges-3svh3.md)
 
 
 ---

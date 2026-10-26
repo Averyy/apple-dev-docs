@@ -45,6 +45,10 @@ In the example, [`german`](../nllanguage/german.md) is the dominant language, in
   Sets the language for a range of text within the tagger’s string.
 - [func setOrthography(NSOrthography, range: Range<String.Index>)](./setorthography%28_,range%29.md)
   Sets the orthography for the specified range.
+- [- setLanguage:range:](./setlanguage_range_.md)
+  Sets the language for a range of text within the tagger’s string.
+- [- setOrthography:range:](./setorthography_range_.md)
+  Sets the orthography for the specified range.
 
 
 ---

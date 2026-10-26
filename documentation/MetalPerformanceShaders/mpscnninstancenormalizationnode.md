@@ -30,6 +30,8 @@ class MPSCNNInstanceNormalizationNode
 - [init(source: MPSNNImageNode, dataSource: any MPSCNNInstanceNormalizationDataSource)](./mpscnninstancenormalizationnode/init%28source,datasource%29.md)
 ### Instance Properties
 - [var trainingStyle: MPSNNTrainingStyle](./mpscnninstancenormalizationnode/trainingstyle.md)
+### Type Methods
+- [+ nodeWithSource:dataSource:](./mpscnninstancenormalizationnode/nodewithsource_datasource_.md)
 
 ## Relationships
 

@@ -50,6 +50,8 @@ You can retrieve the values for these attributes using [`object(forKey:)`](./obj
   A floating-point value that overrides the glyph advancement specified by the font.
 - [static let featureSettings: NSFontDescriptor.AttributeName](./attributename/featuresettings.md)
   An array of dictionaries representing non-default font feature settings.
+- [NSFontColorAttribute](../nsfontcolorattribute.md)
+  An optional `NSData` object that specifies the font color.
 ### Initializers
 - [init(String)](./attributename/init%28_%29.md)
 - [init(rawValue: String)](./attributename/init%28rawvalue%29.md)

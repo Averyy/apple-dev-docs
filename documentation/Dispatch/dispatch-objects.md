@@ -25,6 +25,26 @@ By default, dispatch objects are declared as Objective-C types when you build th
 ### Changing the Assigned Target Queue
 - [func setTarget(queue: dispatch_queue_t?)](./dispatchobject/settarget%28queue%29.md)
   Specifies the dispatch queue on which to perform work associated with the current object.
+### Updating Contextual Data
+- [dispatch_get_context](./dispatch_get_context.md)
+  Returns the application-defined context of an object.
+- [dispatch_set_context](./dispatch_set_context.md)
+  Associates an application-defined context with the object.
+### Managing Memory
+- [dispatch_retain](./dispatch_retain.md)
+  Increments the reference count (the retain count) of a dispatch object.
+- [dispatch_release](./dispatch_release.md)
+  Decrements the reference count (the retain count) of a dispatch object.
+- [dispatch_set_finalizer_f](./dispatch_set_finalizer_f.md)
+  Sets the finalizer function for a dispatch object.
+### Introspecting a Dispatch Object
+- [dispatch_introspection_hook_queue_create](./dispatch_introspection_hook_queue_create.md)
+- [dispatch_introspection_hook_queue_destroy](./dispatch_introspection_hook_queue_destroy.md)
+- [dispatch_introspection_hook_queue_item_enqueue](./dispatch_introspection_hook_queue_item_enqueue.md)
+- [dispatch_introspection_hook_queue_item_dequeue](./dispatch_introspection_hook_queue_item_dequeue.md)
+- [dispatch_introspection_hook_queue_callout_begin](./dispatch_introspection_hook_queue_callout_begin.md)
+- [dispatch_introspection_hook_queue_callout_end](./dispatch_introspection_hook_queue_callout_end.md)
+- [dispatch_introspection_hook_queue_item_complete](./dispatch_introspection_hook_queue_item_complete.md)
 
 ## See Also
 

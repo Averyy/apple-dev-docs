@@ -69,6 +69,30 @@ All operations are asynchronous and will callback over a respective delegate met
 ### Type Methods
 - [class func withOBEXSession(IOBluetoothOBEXSession!) -> Self!](./obexfiletransferservices/withobexsession%28_%29.md)
   Create a new OBEXFileTransferServices object
+### Instance Variables
+- [mAbortedByOwner](./obexfiletransferservices/mabortedbyowner.md)
+- [mActionArgument1](./obexfiletransferservices/mactionargument1.md)
+- [mActionArgument2](./obexfiletransferservices/mactionargument2.md)
+- [mActionArgument3](./obexfiletransferservices/mactionargument3.md)
+- [mActionCommand](./obexfiletransferservices/mactioncommand.md)
+- [mActionInProgress](./obexfiletransferservices/mactioninprogress.md)
+- [mConnectionID](./obexfiletransferservices/mconnectionid.md)
+- [mCurrentRemoteDirectory](./obexfiletransferservices/mcurrentremotedirectory.md)
+- [mDelegate](./obexfiletransferservices/mdelegate.md)
+- [mFolderListingFileRef](./obexfiletransferservices/mfolderlistingfileref.md)
+- [mGETProgress](./obexfiletransferservices/mgetprogress.md)
+- [mHasTargetHeader](./obexfiletransferservices/mhastargetheader.md)
+- [mInactivityTimer](./obexfiletransferservices/minactivitytimer.md)
+- [mMaxPacketLength](./obexfiletransferservices/mmaxpacketlength.md)
+- [mOBEXFileGet](./obexfiletransferservices/mobexfileget.md)
+- [mOBEXFilePut](./obexfiletransferservices/mobexfileput.md)
+- [mOBEXSession](./obexfiletransferservices/mobexsession.md)
+- [mPUTProgress](./obexfiletransferservices/mputprogress.md)
+- [mReserved1](./obexfiletransferservices/mreserved1.md)
+- [mReserved2](./obexfiletransferservices/mreserved2.md)
+- [mSavedCommand](./obexfiletransferservices/msavedcommand.md)
+- [mWeAreAborting](./obexfiletransferservices/mweareaborting.md)
+- [mWeOpenedTheOBEXConnection](./obexfiletransferservices/mweopenedtheobexconnection.md)
 
 ## Relationships
 

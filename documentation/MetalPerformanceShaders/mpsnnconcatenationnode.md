@@ -28,6 +28,8 @@ class MPSNNConcatenationNode
 
 ### Initializers
 - [init(sources: [MPSNNImageNode])](./mpsnnconcatenationnode/init%28sources%29.md)
+### Type Methods
+- [+ nodeWithSources:](./mpsnnconcatenationnode/nodewithsources_.md)
 
 ## Relationships
 

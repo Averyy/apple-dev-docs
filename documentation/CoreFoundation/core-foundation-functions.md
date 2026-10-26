@@ -71,6 +71,9 @@
 - [func CFURLIsFileReferenceURL(CFURL!) -> Bool](./cfurlisfilereferenceurl%28_%29.md)
 - [func CFWriteStreamCopyDispatchQueue(CFWriteStream!) -> dispatch_queue_t!](./cfwritestreamcopydispatchqueue%28_%29.md)
 - [func CFWriteStreamSetDispatchQueue(CFWriteStream!, dispatch_queue_t!)](./cfwritestreamsetdispatchqueue%28_,_%29.md)
+- [CFAutorelease](./cfautorelease.md)
+- [CFStringCreateStringWithValidatedFormat](./cfstringcreatestringwithvalidatedformat.md)
+- [CFStringCreateStringWithValidatedFormatAndArguments](./cfstringcreatestringwithvalidatedformatandarguments.md)
 
 ## See Also
 

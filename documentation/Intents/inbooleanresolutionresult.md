@@ -38,6 +38,8 @@ For additional resolution options, see [`INIntentResolutionResult`](./inintentre
   Creates an object whose resolution involves the successful matching of the specified value.
 - [static func confirmationRequired(with: Bool?) -> Self](./inbooleanresolutionresult/confirmationrequired%28with%29.md)
   Creates an object whose resolution requires that the user must confirm the value before proceeding.
+- [+ confirmationRequiredWithValueToConfirm:](./inbooleanresolutionresult/confirmationrequiredwithvaluetoconfirm_.md)
+  Creates an object whose resolution requires that the user must confirm the value before proceeding.
 
 ## Relationships
 

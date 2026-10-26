@@ -48,11 +48,17 @@ For visionOS apps, you can load existing storyboards, but you can’t add conten
   Creates the initial view controller and initializes it with the data from the storyboard.
 - [func instantiateInitialViewController<ViewController>(creator: ((NSCoder) -> ViewController?)?) -> ViewController?](./uistoryboard/instantiateinitialviewcontroller%28creator%29.md)
   Creates the initial view controller from the storyboard and initializes it using your custom initialization code.
+- [- instantiateInitialViewControllerWithCreator:](./uistoryboard/instantiateinitialviewcontrollerwithcreator_.md)
+  Creates the initial view controller from the storyboard and initializes it using your custom initialization code.
 ### Instantiating Storyboard View Controllers
 - [func instantiateViewController(withIdentifier: String) -> UIViewController](./uistoryboard/instantiateviewcontroller%28withidentifier%29.md)
   Creates the view controller with the specified identifier and initializes it with the data from the storyboard.
 - [func instantiateViewController<ViewController>(identifier: String, creator: ((NSCoder) -> ViewController?)?) -> ViewController](./uistoryboard/instantiateviewcontroller%28identifier,creator%29.md)
   Creates the specified view controller from the storyboard and initializes it using your custom initialization code.
+- [- instantiateViewControllerWithIdentifier:creator:](./uistoryboard/instantiateviewcontrollerwithidentifier_creator_.md)
+  Creates the specified view controller from the storyboard and initializes it using your custom initialization code.
+- [UIStoryboardViewControllerCreator](./uistoryboardviewcontrollercreator.md)
+  A handler block that contains the custom initialization code for a view controller you instantiate from a storyboard.
 
 ## Relationships
 
@@ -78,6 +84,8 @@ For visionOS apps, you can load existing storyboards, but you can’t add conten
   An object that prepares for and performs the visual transition between two view controllers.
 - [class UIStoryboardUnwindSegueSource](./uistoryboardunwindseguesource.md)
   An encapsulation of information about an unwind segue.
+- [UIStoryboardViewControllerCreator](./uistoryboardviewcontrollercreator.md)
+  A handler block that contains the custom initialization code for a view controller you instantiate from a storyboard.
 
 
 ---

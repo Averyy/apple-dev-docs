@@ -90,6 +90,8 @@ Because this isn’t a document about C, it assumes some prior acquaintance with
   Sets the version number of a class definition.
 - [objc_setFutureClass](./api-1808430-objc_setfutureclass.md)
   Used by CoreFoundation’s toll-free bridging.
+- [objc_getFutureClass](./objc_getfutureclass.md)
+  Used by CoreFoundation’s toll-free bridging.
 ### Adding Classes
 - [func objc_allocateClassPair(AnyClass?, UnsafePointer<CChar>, Int) -> AnyClass?](./objc_allocateclasspair%28_,_,_%29.md)
   Creates a new class and metaclass.
@@ -102,6 +104,10 @@ Because this isn’t a document about C, it assumes some prior acquaintance with
 ### Instantiating Classes
 - [func class_createInstance(AnyClass?, Int) -> Any?](./class_createinstance%28_,_%29.md)
   Creates an instance of a class, allocating memory for the class in the default malloc memory zone.
+- [objc_constructInstance](./objc_constructinstance.md)
+  Creates an instance of a class at the specified location.
+- [objc_destructInstance](./objc_destructinstance.md)
+  Destroys an instance of a class without freeing memory and removes any of its associated references.
 ### Working with Instances
 - [func object_getIndexedIvars(Any?) -> UnsafeMutableRawPointer?](./object_getindexedivars%28_%29.md)
   Returns a pointer to any extra bytes allocated with a instance given object.
@@ -115,6 +121,14 @@ Because this isn’t a document about C, it assumes some prior acquaintance with
   Returns the class of an object.
 - [func object_setClass(Any?, AnyClass) -> AnyClass?](./object_setclass%28_,_%29.md)
   Sets the class of an object.
+- [object_copy](./object_copy.md)
+  Returns a copy of a given object.
+- [object_dispose](./object_dispose.md)
+  Frees the memory occupied by a given object.
+- [object_setInstanceVariable](./object_setinstancevariable.md)
+  Changes the value of an instance variable of a class instance.
+- [object_getInstanceVariable](./object_getinstancevariable.md)
+  Obtains the value of an instance variable of a class instance.
 ### Obtaining Class Definitions
 - [func objc_getClassList(AutoreleasingUnsafeMutablePointer<AnyClass>?, Int32) -> Int32](./objc_getclasslist%28_,_%29.md)
   Obtains the list of registered class definitions.
@@ -165,6 +179,10 @@ Because this isn’t a document about C, it assumes some prior acquaintance with
   Sets the implementation of a method.
 - [func method_exchangeImplementations(Method, Method)](./method_exchangeimplementations%28_,_%29.md)
   Exchanges the implementations of two methods.
+- [method_invoke](./method_invoke.md)
+  Calls the implementation of a specified method.
+- [method_invoke_stret](./method_invoke_stret.md)
+  Calls the implementation of a specified method that returns a data-structure.
 ### Working with Libraries
 - [func objc_copyImageNames(UnsafeMutablePointer<UInt32>?) -> UnsafeMutablePointer<UnsafePointer<CChar>>](./objc_copyimagenames%28_%29.md)
   Returns the names of all the loaded Objective-C frameworks and dynamic libraries.
@@ -253,14 +271,45 @@ Because this isn’t a document about C, it assumes some prior acquaintance with
   Performance optimization for method calls. Contains pointers to recently used methods.
 - [struct objc_property_attribute_t](./objc_property_attribute_t.md)
   Defines a property attribute.
+- [Class](./class.md)
+  An opaque type that represents an Objective-C class.
+- [SEL](./sel.md)
+  Defines an opaque type that represents a method selector.
 ### Instance Data Types
 - [struct objc_object](./objc_object.md)
   Represents an instance of a class.
 - [struct objc_super](./objc_super-swift.struct.md)
   Specifies the superclass of an instance.
+- [id](./id.md)
+  A pointer to an instance of a class.
 ### Associative References
 - [enum objc_AssociationPolicy](./objc_associationpolicy.md)
   Type to specify the behavior of an association.
+### Sending Messages
+- [objc_msgSend](./objc_msgsend.md)
+  Sends a message with a simple return value to an instance of a class.
+- [objc_msgSend_fpret](./objc_msgsend_fpret.md)
+  Sends a message with a floating-point return value to an instance of a class.
+- [objc_msgSend_stret](./objc_msgsend_stret.md)
+  Sends a message with a data-structure return value to an instance of a class.
+- [objc_msgSendSuper](./objc_msgsendsuper.md)
+  Sends a message with a simple return value to the superclass of an instance of a class.
+- [objc_msgSendSuper_stret](./objc_msgsendsuper_stret.md)
+  Sends a message with a data-structure return value to the superclass of an instance of a class.
+### Boolean Value
+- [BOOL](./bool.md)
+  Type to represent a Boolean value.
+### Constants
+- [Boolean Values](./boolean-values.md)
+  These macros define convenient constants to represent Boolean values.
+- [Null Values](./null-values.md)
+  These macros define null values for classes and instances.
+- [Dispatch Function Prototypes](./dispatch-function-prototypes.md)
+  This macro indicates whether dispatch functions must be cast to an appropriate function pointer type.
+- [Objective-C Root Class](./objective-c-root-class.md)
+  This macro annotates a class as being an Objective-C root class.
+- [Local Variable Storage Duration](./local-variable-storage-duration.md)
+  This macro indicates that the values stored in certain local variables should not be aggressively released by the compiler during optimization.
 
 ## See Also
 

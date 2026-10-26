@@ -37,6 +37,8 @@ Get low-level support for basic Objective-C features, Cocoa design patterns, and
 ### Memory Management
 - [Memory Management Functions](./memory-management-functions.md)
   Perform low-level memory management tasks.
+- [NSAutoreleasePool](./nsautoreleasepool.md)
+  An object that supports Cocoa’s reference-counted memory management system.
 ### Objective-C Runtime
 - [Objective-C Runtime Utilities](./objective-c-runtime-utilities.md)
   Interact with the Objective-C runtime.
@@ -48,6 +50,13 @@ Get low-level support for basic Objective-C features, Cocoa design patterns, and
   Enable communication among objects in different processes, both locally and on remote systems.
 - [Objective-C Garbage Collection](./objective-c-garbage-collection.md)
   Interface with the legacy garbage collection system.
+- [NSZone](./nszone.md)
+  A type used to identify and manage memory zones.
+### Invocations
+- [NSInvocation](./nsinvocation.md)
+  An Objective-C message rendered as an object.
+- [NSMethodSignature](./nsmethodsignature.md)
+  A record of the type information for the return value and parameters of a method.
 
 ## See Also
 

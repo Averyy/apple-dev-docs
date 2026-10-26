@@ -118,6 +118,8 @@ For more information about stages and synchronization, see [`MTLStages`](./mtlst
   Configures this encoder with a reference value for stencil testing.
 - [func setStencilReferenceValue(front: UInt32, back: UInt32)](./mtl4rendercommandencoder/setstencilreferencevalue%28front,back%29.md)
   Configures the encoder with different stencil test reference values for front-facing and back-facing primitives.
+- [- setDepthTestMinBound:maxBound:](./mtl4rendercommandencoder/setdepthtestminbound_maxbound_.md)
+  Configures the minimum and maximum bounds for depth bounds testing.
 ### Configuring viewport and scissor behavior
 - [func setViewport(MTLViewport)](./mtl4rendercommandencoder/setviewport%28_%29.md)
   Sets the viewport which that transforms vertices from normalized device coordinates to window coordinates.
@@ -127,6 +129,10 @@ For more information about stages and synchronization, see [`MTLStages`](./mtlst
   Sets a scissor rectangle to discard fragments outside a specific area.
 - [func setScissorRects([MTLScissorRect])](./mtl4rendercommandencoder/setscissorrects%28_%29.md)
   Sets an array of scissor rectangles for a fragment scissor test.
+- [- setViewports:count:](./mtl4rendercommandencoder/setviewports_count_.md)
+  Sets an array of viewports to transform vertices from normalized device coordinates to window coordinates.
+- [- setScissorRects:count:](./mtl4rendercommandencoder/setscissorrects_count_.md)
+  Sets an array of scissor rectangles for a fragment scissor test.
 ### Configuring visibility testing
 - [func setVisibilityResultMode(MTLVisibilityResultMode, offset: Int)](./mtl4rendercommandencoder/setvisibilityresultmode%28_,offset%29.md)
   Configures a visibility test for Metal to run, and the destination for any results it generates.
@@ -134,6 +140,8 @@ For more information about stages and synchronization, see [`MTLStages`](./mtlst
 - [func setVertexAmplificationCount(Int)](./mtl4rendercommandencoder/setvertexamplificationcount%28_%29-85tu1.md)
   Sets the vertex amplification count and its view mapping for each amplification ID.
 - [func setVertexAmplificationCount([MTLVertexAmplificationViewMapping])](./mtl4rendercommandencoder/setvertexamplificationcount%28_%29-911ja.md)
+  Sets the vertex amplification count and its view mapping for each amplification ID.
+- [- setVertexAmplificationCount:viewMappings:](./mtl4rendercommandencoder/setvertexamplificationcount_viewmappings_.md)
   Sets the vertex amplification count and its view mapping for each amplification ID.
 ### Configuring persistent threadgroup memory
 - [func setObjectThreadgroupMemoryLength(Int, index: Int)](./mtl4rendercommandencoder/setobjectthreadgroupmemorylength%28_,index%29.md)
@@ -180,6 +188,8 @@ For more information about stages and synchronization, see [`MTLStages`](./mtlst
   Encodes a command that runs a range of commands from an indirect command buffer.
 - [func executeCommands(buffer: any MTLIndirectCommandBuffer, indirectBuffer: MTLGPUAddress)](./mtl4rendercommandencoder/executecommands%28buffer,indirectbuffer%29.md)
   Encodes a command that runs an indirect range of commands from an indirect command buffer.
+- [- executeCommandsInBuffer:withRange:](./mtl4rendercommandencoder/executecommandsinbuffer_withrange_.md)
+  Encodes a command that runs a range of commands from an indirect command buffer.
 ### Sampling counters
 - [func writeTimestamp(granularity: MTL4TimestampGranularity, after: MTLRenderStages, counterHeap: any MTL4CounterHeap, index: Int)](./mtl4rendercommandencoder/writetimestamp%28granularity,after,counterheap,index%29.md)
   Writes a GPU timestamp into the given [`MTL4CounterHeap`](./mtl4counterheap.md) at `index` after `stage` completes.

@@ -91,6 +91,10 @@ Core Graphics supports several kinds of color spaces:
   Returns a Boolean indicating whether the color space can be used as a destination color space.
 - [var isWideGamutRGB: Bool](./cgcolorspace/iswidegamutrgb.md)
   Returns whether the RGB color space covers a significant portion of the NTSC color gamut.
+- [CGColorSpaceGetColorTable](./cgcolorspacegetcolortable.md)
+  Copies the entries in the color table of an indexed color space.
+- [CGColorSpaceGetColorTableCount](./cgcolorspacegetcolortablecount.md)
+  Returns the number of entries in the color table of an indexed color space.
 ### Accessing System-Defined Color Spaces
 - [class let displayP3: CFString](./cgcolorspace/displayp3.md)
   The Display P3 color space, created by Apple.
@@ -154,6 +158,10 @@ Core Graphics supports several kinds of color spaces:
 - [class let itur_709_PQ: CFString](./cgcolorspace/itur_709_pq.md)
 - [class let linearDisplayP3: CFString](./cgcolorspace/lineardisplayp3.md)
 - [class let linearITUR_2020: CFString](./cgcolorspace/linearitur_2020.md)
+- [kCGColorSpaceGenericRGB](./kcgcolorspacegenericrgb.md)
+  The name of the generic RGB color space.
+- [kCGColorSpaceGenericGray](./kcgcolorspacegenericgray.md)
+  The name of the generic gray color space.
 ### Working with Core Foundation Types
 - [class var typeID: CFTypeID](./cgcolorspace/typeid.md)
   Returns the Core Foundation type identifier for Quartz color spaces.
@@ -162,6 +170,11 @@ Core Graphics supports several kinds of color spaces:
   Handling options for colors that are not located within the destination color space of a graphics context.
 ### Instance Methods
 - [func isHDR() -> Bool](./cgcolorspace/ishdr%28%29.md)
+### Retaining and Releasing Color Spaces
+- [CGColorSpaceRelease](./cgcolorspacerelease.md)
+  Decrements the retain count of a color space.
+- [CGColorSpaceRetain](./cgcolorspaceretain.md)
+  Increments the retain count of a color space.
 
 ## Relationships
 
@@ -187,6 +200,31 @@ Core Graphics supports several kinds of color spaces:
   An object that describes how to convert between color spaces for use by other system services.
 - [class CGFont](./cgfont.md)
   A set of character glyphs and layout information for drawing text.
+### Opaque Types
+- [CGContextRef](./cgcontext.md)
+  A Quartz 2D drawing environment.
+- [CGDataConsumerRef](./cgdataconsumer.md)
+  An abstraction for data-writing tasks that eliminates the need to manage a raw memory buffer.
+- [CGDataProviderRef](./cgdataprovider.md)
+  An abstraction for data-reading tasks that eliminates the need to manage a raw memory buffer.
+- [CGFunctionRef](./cgfunction.md)
+  A general facility for defining and using callback functions.
+- [CGGradientRef](./cggradient.md)
+  A definition for a smooth transition between colors for drawing radial and axial gradient fills.
+- [CGImageRef](./cgimage.md)
+  A bitmap image or image mask.
+- [CGLayerRef](./cglayer.md)
+  An offscreen context for reusing content drawn with Core Graphics.
+- [CGPathRef](./cgpath.md)
+  An immutable graphics path: a mathematical description of shapes or lines to be drawn in a graphics context.
+- [CGPatternRef](./cgpattern.md)
+  A 2D pattern to be used for drawing graphics paths.
+- [CGPDFArray](./cgpdfarray.md)
+  An array structure within a PDF document.
+- [CGPDFContentStream](./cgpdfcontentstream.md)
+  A representation of one or more content data streams in a PDF page.
+- [CGPDFDictionary](./cgpdfdictionary.md)
+  A dictionary structure within a PDF document.
 
 
 ---

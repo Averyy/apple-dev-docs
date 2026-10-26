@@ -24,6 +24,12 @@ init(dictionary propertiesDictionary: [CMIOExtensionProperty : CMIOExtensionProp
 
 - `propertiesDictionary`: A dictionary of property states.
 
+## See Also
+
+### Creating Provider Properties
+- [+ providerPropertiesWithDictionary:](./providerpropertieswithdictionary_.md)
+  Returns a new provider properties object with the specified properties.
+
 
 ---
 

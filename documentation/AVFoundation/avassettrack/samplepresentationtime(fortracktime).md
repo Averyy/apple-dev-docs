@@ -38,6 +38,16 @@ Apple discourages using this method in iOS 15, tvOS 15, macOS 12, and watchOS 8 
 
 - `trackTime`: The track time for which to request the sample presentation time.
 
+## See Also
+
+### Accessing temporal information
+- [timeRange](./timerange.md)
+  The time range of the track within the overall timeline of the asset.
+- [naturalTimeScale](./naturaltimescale.md)
+  The natural time scale of the media that a track references.
+- [estimatedDataRate](./estimateddatarate.md)
+  The estimated data rate, in bits per second, of the media that the track references.
+
 
 ---
 

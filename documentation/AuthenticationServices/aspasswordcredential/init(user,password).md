@@ -30,6 +30,12 @@ init(user: String, password: String)
 - `user`: The username associated with the credential.
 - `password`: The password associated with the credential.
 
+## See Also
+
+### Creating a credential
+- [+ credentialWithUser:password:](./credentialwithuser_password_.md)
+  Creates a password credential instance with a given user name and password.
+
 
 ---
 

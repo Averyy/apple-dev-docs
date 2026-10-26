@@ -32,6 +32,8 @@ class MPSCNNSpatialNormalizationNode
 ### Instance Properties
 - [var kernelHeight: Int](./mpscnnspatialnormalizationnode/kernelheight.md)
 - [var kernelWidth: Int](./mpscnnspatialnormalizationnode/kernelwidth.md)
+### Type Methods
+- [+ nodeWithSource:kernelSize:](./mpscnnspatialnormalizationnode/nodewithsource_kernelsize_.md)
 
 ## Relationships
 

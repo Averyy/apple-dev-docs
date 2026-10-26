@@ -30,6 +30,14 @@ var minimumTimeOffsetFromLive: CMTime { get }
 
 This property value is only valid when working with live streaming content. For non-live assets, this property value is [`invalid`](../../CoreMedia/cmtime/invalid.md).
 
+## See Also
+
+### Accessing duration and timing
+- [duration](./duration.md)
+  A time value that indicates the asset’s duration.
+- [providesPreciseDurationAndTiming](./providesprecisedurationandtiming.md)
+  A Boolean value that indicates whether the asset provides precise duration and timing.
+
 
 ---
 

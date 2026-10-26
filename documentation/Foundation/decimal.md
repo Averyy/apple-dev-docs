@@ -249,6 +249,14 @@ typedef struct { ... } NSDecimal;
   A double-precision (64-bit), floating-point value type.
 - [class NumberFormatter](./numberformatter.md)
   A formatter that converts between numeric values and their textual representations.
+- [NSInteger](../ObjectiveC/nsinteger.md)
+  Describes an integer.
+- [NSUInteger](../ObjectiveC/nsuinteger.md)
+  Describes an unsigned integer.
+- [NSDecimalNumber](./nsdecimalnumber.md)
+  An object for representing and performing arithmetic on base-10 numbers.
+- [NSNumber](./nsnumber.md)
+  An object wrapper for primitive scalar numeric values.
 
 
 ---

@@ -38,6 +38,8 @@ NSDateComponentsFormatterZeroFormattingBehaviorPad
   The drop trailing zero units behavior. Units whose value is 0 are dropped starting at the end of the sequence. For example, when days, hours, minutes, and seconds are allowed, the abbreviated version of one hour is displayed as “0d 1h”.
 - [static var dropAll: DateComponentsFormatter.ZeroFormattingBehavior](./dropall.md)
   The drop all zero units behavior. This behavior drops all units whose values are 0. For example, when days, hours, minutes, and seconds are allowed, the abbreviated version of one hour is displayed as “1h”.
+- [NSDateComponentsFormatterZeroFormattingBehaviorNone](../../nsdatecomponentsformatterzeroformattingbehavior/nsdatecomponentsformatterzeroformattingbehaviornone.md)
+  No formatting behavior. This behavior prevents the dropping of zero values or adding of zeroes for padding. For example, with hours, minutes, and seconds displayed, the abbreviated value for one hour and 10 seconds is “1h 0m 10s”.
 
 
 ---

@@ -32,6 +32,8 @@ NSAutosaveAsOperation
   An operation that writes an autosave version of the file to a different location.
 - [NSDocument.SaveOperationType.autosaveInPlaceOperation](./autosaveinplaceoperation.md)
   An operation that overwrites the document’s current contents with autosave data.
+- [NSAutosaveOperation](../../nssaveoperationtype/nsautosaveoperation.md)
+  Old name for the [`NSAutosaveElsewhereOperation`](./autosaveelsewhereoperation.md) operation type.
 
 
 ---

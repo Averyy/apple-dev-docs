@@ -36,12 +36,16 @@ Use this layer to perform reduction operations on a given dimension. The output 
   Creates a reduction layer using the reduction type and dimensions you specify.
 - [enum MLCReductionType](./mlcreductiontype.md)
   Constants that describe a reduction operation type.
+- [+ layerWithReductionType:dimensions:](./mlcreductionlayer/layerwithreductiontype_dimensions_.md)
+  Creates a reduction layer using the reduction type and dimensions you specify.
 ### Inspecting Reduction Layers
 - [var reductionType: MLCReductionType](./mlcreductionlayer/reductiontype.md)
   The function reduction type the system uses for reduction.
 - [var dimension: Int](./mlcreductionlayer/dimension.md)
   The dimension to perform the reduction operation on.
 - [var dimensions: [Int]](./mlcreductionlayer/dimensions-9oph6.md)
+  The dimensions to perform the reduction operation on.
+- [dimensions](./mlcreductionlayer/dimensions-4359b.md)
   The dimensions to perform the reduction operation on.
 
 ## Relationships

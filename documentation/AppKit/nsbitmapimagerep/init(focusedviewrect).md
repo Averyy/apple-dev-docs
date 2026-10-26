@@ -52,6 +52,8 @@ This method uses imaging operators to read the image data into a buffer; the obj
   Initializes a newly allocated bitmap image representation from the specified data.
 - [init(forIncrementalLoad: ())](./init%28forincrementalload%29.md)
   Initializes a newly allocated bitmap image representation for incremental loading.
+- [+ imageRepWithData:](./imagerepwithdata_.md)
+  Creates and returns a bitmap image representation with the first image in the specified data.
 
 
 ---

@@ -27,6 +27,8 @@ init()
 ### Creating a Default Decoration View
 - [static func `default`(color: UIColor?, size: UICalendarView.DecorationSize) -> UICalendarView.Decoration](./default%28color,size%29.md)
   Creates a default calendar view decoration with a filled circle image, using the color and size you specify.
+- [+ decorationWithColor:size:](../../uicalendarviewdecoration/decorationwithcolor_size_.md)
+  Creates a new calendar view decoration with a filled circle image, using the color and size that you specify.
 
 
 ---

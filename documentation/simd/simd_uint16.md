@@ -39,6 +39,8 @@ typedef unsigned int __attribute__((ext_vector_type(16))) simd_uint16;
   Returns a new vector from the specified four-element vector, and other elements undefined.
 - [func simd_make_uint16_undef(simd_uint8) -> simd_uint16](./simd_make_uint16_undef%28_%29-we1l.md)
   Returns a new vector from the specified eight-element vector, and other elements undefined.
+- [vector16](./vector16-8xs3z.md)
+  Returns a new vector from the specified vectors.
 ### Functions to Create Sixteen-Element Vectors From Scalar Values
 - [func simd_make_uint16(UInt32) -> simd_uint16](./simd_make_uint16%28_%29-3h7ip.md)
   Returns a new vector with the first element set to a scalar value, and other elements set to zero.
@@ -68,6 +70,36 @@ typedef unsigned int __attribute__((ext_vector_type(16))) simd_uint16;
   Returns a vector that contains elements from either the first or second parameter, based on the corresponding element in the third parameter.
 ### Alternative Type Alias
 - [typealias vector_uint16](./vector_uint16.md)
+### Functions to Create Sixteen-Element Vectors From Vectors of Other Types
+- [simd_uint](./simd_uint-19fie.md)
+  Returns a new vector from the specified vector of 8-bit, signed integer elements.
+- [simd_uint](./simd_uint-19pae.md)
+  Returns a new vector from the specified vector of 8-bit, unsigned integer elements.
+- [simd_uint](./simd_uint-19aau.md)
+  Returns a new vector from the specified vector of 16-bit, signed integer elements.
+- [simd_uint](./simd_uint-19kfa.md)
+  Returns a new vector from the specified vector of 16-bit, unsigned integer elements.
+- [simd_uint](./simd_uint-19cb6.md)
+  Returns a new vector from the specified vector of 32-bit, signed integer elements.
+- [simd_uint](./simd_uint-19m36.md)
+  Returns a new vector from the specified vector of 32-bit, unsigned integer elements.
+- [simd_uint](./simd_uint-19qym.md)
+  Returns a new vector from the specified vector of 32-bit, floating-point elements.
+### Functions to Perform Saturating Conversion From Vectors of Other Types
+- [simd_uint_sat](./simd_uint_sat-548q7.md)
+  Returns a new vector from the specified vector of 8-bit, signed integer elements.
+- [simd_uint_sat](./simd_uint_sat-53yzz.md)
+  Returns a new vector from the specified vector of 8-bit, unsigned integer elements.
+- [simd_uint_sat](./simd_uint_sat-543rj.md)
+  Returns a new vector from the specified vector of 16-bit, signed integer elements.
+- [simd_uint_sat](./simd_uint_sat-53tzj.md)
+  Returns a new vector from the specified vector of 16-bit, unsigned integer elements.
+- [simd_uint_sat](./simd_uint_sat-5471v.md)
+  Returns a new vector from the specified vector of 32-bit, signed integer elements.
+- [simd_uint_sat](./simd_uint_sat-53wxf.md)
+  Returns a new vector from the specified vector of 32-bit, unsigned integer elements.
+- [simd_uint_sat](./simd_uint_sat-53x8t.md)
+  Returns a new vector from the specified vector of 32-bit, floating-point elements.
 
 ## See Also
 

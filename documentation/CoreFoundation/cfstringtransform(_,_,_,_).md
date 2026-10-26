@@ -73,6 +73,8 @@ The transformation represented by `transform` is applied to the given range of `
   Changes all uppercase alphabetical characters in a CFMutableString to lowercase.
 - [func CFStringNormalize(CFMutableString!, CFStringNormalizationForm)](./cfstringnormalize%28_,_%29.md)
   Normalizes the string into the specified form as described in Unicode Technical Report #15.
+- [CFStringAppendFormat](./cfstringappendformat.md)
+  Appends a formatted string to the character contents of a CFMutableString object.
 
 
 ---

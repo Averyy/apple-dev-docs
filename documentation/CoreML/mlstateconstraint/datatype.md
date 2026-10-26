@@ -30,6 +30,8 @@ var dataType: MLMultiArrayDataType { get }
 ### Inspecting a state constraint
 - [var bufferShape: [Int]](./buffershape-4zb3w.md)
   The shape of the state buffer.
+- [bufferShape](./buffershape-6o5vn.md)
+  The shape of the state buffer.
 
 
 ---

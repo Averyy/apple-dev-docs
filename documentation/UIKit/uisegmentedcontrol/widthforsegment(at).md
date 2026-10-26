@@ -48,6 +48,10 @@ A float value specifying the width of the segment. If the value is {0.0}, [`UISe
   Sets the width of the segment at the index you specify.
 - [var apportionsSegmentWidthsByContent: Bool](./apportionssegmentwidthsbycontent.md)
   Indicates whether the control attempts to adjust segment widths based on their content widths.
+- [segmentedControlStyle](./segmentedcontrolstyle.md)
+  The style of the segmented control.
+- [UISegmentedControlStyle](../uisegmentedcontrolstyle.md)
+  The styles of the segmented control.
 
 
 ---

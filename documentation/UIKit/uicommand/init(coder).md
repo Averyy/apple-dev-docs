@@ -32,6 +32,10 @@ init?(coder: NSCoder)
   Creates a command with the specified title, image, action, property list, alternative commands, discoverability title, attributes, and state.
 - [Adding menus and shortcuts to the menu bar and user interface](../adding-menus-and-shortcuts-to-the-menu-bar-and-user-interface.md)
   Provide quick access to useful actions by adding menus and keyboard shortcuts to your Mac app built with Mac Catalyst.
+- [+ commandWithTitle:image:action:propertyList:](./commandwithtitle_image_action_propertylist_.md)
+  Creates a command with the specified title, image, action, and property list.
+- [+ commandWithTitle:image:action:propertyList:alternates:](./commandwithtitle_image_action_propertylist_alternates_.md)
+  Creates a command with the specified title, image, action, property list, and alternative commands.
 
 
 ---

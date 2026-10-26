@@ -38,6 +38,11 @@ typedef struct CGLayer * CGLayerRef;
 ### Working with Core Foundation Types
 - [class var typeID: CFTypeID](./cglayer/typeid.md)
   Returns the unique type identifier used for [`CGLayer`](./cglayer.md) objects.
+### Retaining and Releasing Color Objects
+- [CGLayerRetain](./cglayerretain.md)
+  Increments the retain count of a layer object.
+- [CGLayerRelease](./cglayerrelease.md)
+  Decrements the retain count of a layer object.
 
 ## Relationships
 
@@ -56,6 +61,31 @@ typedef struct CGLayer * CGLayerRef;
   An immutable graphics path: a mathematical description of shapes or lines to be drawn in a graphics context.
 - [class CGMutablePath](./cgmutablepath.md)
   A mutable graphics path: a mathematical description of shapes or lines to be drawn in a graphics context.
+### Opaque Types
+- [CGColorRef](./cgcolor.md)
+  A set of components that define a color, with a color space specifying how to interpret them.
+- [CGColorConversionInfoRef](./cgcolorconversioninfo.md)
+  An object that describes how to convert between color spaces for use by other system services.
+- [CGColorSpaceRef](./cgcolorspace.md)
+  A profile that specifies how to interpret a color value for display.
+- [CGDataConsumerRef](./cgdataconsumer.md)
+  An abstraction for data-writing tasks that eliminates the need to manage a raw memory buffer.
+- [CGDataProviderRef](./cgdataprovider.md)
+  An abstraction for data-reading tasks that eliminates the need to manage a raw memory buffer.
+- [CGFontRef](./cgfont.md)
+  A set of character glyphs and layout information for drawing text.
+- [CGFunctionRef](./cgfunction.md)
+  A general facility for defining and using callback functions.
+- [CGGradientRef](./cggradient.md)
+  A definition for a smooth transition between colors for drawing radial and axial gradient fills.
+- [CGPatternRef](./cgpattern.md)
+  A 2D pattern to be used for drawing graphics paths.
+- [CGPDFArray](./cgpdfarray.md)
+  An array structure within a PDF document.
+- [CGPDFContentStream](./cgpdfcontentstream.md)
+  A representation of one or more content data streams in a PDF page.
+- [CGPDFDictionary](./cgpdfdictionary.md)
+  A dictionary structure within a PDF document.
 
 
 ---

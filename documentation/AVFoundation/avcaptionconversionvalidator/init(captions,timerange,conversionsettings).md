@@ -28,6 +28,12 @@ init(captions: [AVCaption], timeRange: CMTimeRange, conversionSettings: [AVCapti
 - `timeRange`: The time range of the media timeline where the captions exist.
 - `conversionSettings`: A dictionary that describes the conversion operation.
 
+## See Also
+
+### Creating a validator
+- [+ captionConversionValidatorWithCaptions:timeRange:conversionSettings:](./captionconversionvalidatorwithcaptions_timerange_conversionsettings_.md)
+  A convenience initializer to create an object that validates captions for a conversion operation.
+
 
 ---
 

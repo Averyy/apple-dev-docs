@@ -40,6 +40,10 @@ double scale;
   A mirror that reflects the notification.
 - [static var identity: ScaledPose3D](./identity.md)
   The identity scaled pose.
+- [SPScaledPose3DGet4x4Matrix](../spscaledpose3dget4x4matrix.md)
+  Returns a 4 x 4 matrix that represents the scaled pose’s translation, rotation, and scale.
+- [SPScaledPose3DGetInverse](../spscaledpose3dgetinverse.md)
+  Returns a new scaled pose with the inverse matrix of the specified scaled pose.
 
 
 ---

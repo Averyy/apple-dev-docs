@@ -38,6 +38,8 @@ When the number of records that CloudKit returns exceeds this limit, the operati
   The token that identifies the starting point for retrieving changes.
 - [var desiredKeys: [CKRecord.FieldKey]?](./desiredkeys.md)
   The fields to fetch for the requested records.
+- [desiredKeys](../../ckfetchrecordzonechangesconfiguration/desiredkeys.md)
+  The fields to fetch for the requested records.
 
 
 ---

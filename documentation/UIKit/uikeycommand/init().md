@@ -38,6 +38,10 @@ init()
   Navigate between user interface elements using a keyboard and focusable UI elements in iPad apps and apps built with Mac Catalyst.
 - [convenience init(input: String, modifierFlags: UIKeyModifierFlags, action: Selector, discoverabilityTitle: String)](./init%28input,modifierflags,action,discoverabilitytitle%29.md)
   Creates a key command object that matches the specified input and has a title.
+- [+ commandWithTitle:image:action:input:modifierFlags:propertyList:](./commandwithtitle_image_action_input_modifierflags_propertylist_.md)
+  Creates a key command that you can use as a menu element with a shortcut key, or a shortcut key only for a view controller.
+- [+ commandWithTitle:image:action:input:modifierFlags:propertyList:alternates:](./commandwithtitle_image_action_input_modifierflags_propertylist_alternates_.md)
+  Creates a key command with alternatives that you can use as a menu element with a shortcut key, or a shortcut key only for a view controller.
 
 
 ---

@@ -38,6 +38,8 @@ NSDragOperationGeneric
   Use [`every`](./every.md) instead.
 - [static var all_Obsolete: NSDragOperation](./all_obsolete.md)
   The `NSDragOperationAll` constant is deprecated. Use [`every`](./every.md) instead.
+- [NSDragOperationNone](./nsdragoperationnone.md)
+  A constant that indicates that the drag cannot perform any operations.
 
 
 ---

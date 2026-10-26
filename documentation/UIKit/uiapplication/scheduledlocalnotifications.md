@@ -58,6 +58,8 @@ This method may be faster than using [`scheduleLocalNotification(_:)`](./schedul
   The current style of the status bar.
 - [var windows: [UIWindow]](./windows.md)
   The app’s visible and hidden windows.
+- [proximitySensingEnabled](./proximitysensingenabled.md)
+  A Boolean value that determines whether proximity sensing is enabled.
 
 
 ---

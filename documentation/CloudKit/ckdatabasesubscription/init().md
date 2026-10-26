@@ -32,6 +32,10 @@ convenience init()
   Creates a named subscription for all records in a database.
 - [init(coder: NSCoder)](./init%28coder%29.md)
   Creates a database subscription from a serialized instance.
+- [- initWithSubscriptionID:](./initwithsubscriptionid_.md)
+  Creates a named subscription for all records in a database.
+- [+ new](./new.md)
+  Creates an empty database subscription.
 
 
 ---

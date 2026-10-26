@@ -43,6 +43,9 @@ You typically use the [`defaultOrthography(forLanguage:)`](./defaultorthography%
 ### Creating Orthography Objects
 - [class func defaultOrthography(forLanguage: String) -> Self](./defaultorthography%28forlanguage%29.md)
   Creates and returns an orthography object with the default language map for the specified language.
+### Related Documentation
+- [+ orthographyWithDominantScript:languageMap:](./orthographywithdominantscript_languagemap_.md)
+  Creates and returns an orthography object with the specified dominant script and language map.
 
 
 ---

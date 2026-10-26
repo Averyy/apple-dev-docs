@@ -45,6 +45,8 @@ Instead of providing multiple images with different resolutions, you can provide
 ### Creating the Template
 - [init(textProvider: CLKTextProvider, imageProvider: CLKFullColorImageProvider)](./clkcomplicationtemplategraphiccornertextimage/init%28textprovider,imageprovider%29.md)
   Creates a template with a line of text and an image.
+- [+ templateWithTextProvider:imageProvider:](./clkcomplicationtemplategraphiccornertextimage/templatewithtextprovider_imageprovider_.md)
+  Creates a template with a line of text and an image.
 ### Setting the Complication Data
 - [var imageProvider: CLKFullColorImageProvider](./clkcomplicationtemplategraphiccornertextimage/imageprovider.md)
   The image to display.

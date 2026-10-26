@@ -7,7 +7,7 @@ Build a URL and article body for the publish-article request.
 
 #### Overview
 
-To publish an article to your channel, you make a multipart POST request consisting of at least one MIME part named `article.json`. You provide additional parts for each resource that uses a URL in the format `bundle:// URL`. See [`Create an Article`](https://developer.apple.com/documentation/applenewsapi/post-channels-_channelid_-articles).
+To publish an article to your channel, you make a multipart POST request consisting of at least one MIME part named `article.json`. You provide additional parts for each resource that uses a URL in the format `bundle:// URL`. See [`Create an Article`](../AppleNewsAPI/post-channels-_channelid_-articles.md).
 
 **On this page, you’ll learn how to:**
 
@@ -163,7 +163,7 @@ if __name__ == '__main__':
 
 This step is optional. You might want to include a metadata file to provide additional data about the article.
 
-To create the metadata file, open any text editor and include optional metadata fields. Save the file as `metadata.json`. For information about supported metadata fields, see [`Create Article Metadata Fields`](https://developer.apple.com/documentation/applenewsapi/create-article-metadata-fields).
+To create the metadata file, open any text editor and include optional metadata fields. Save the file as `metadata.json`. For information about supported metadata fields, see [`Create Article Metadata Fields`](../AppleNewsAPI/create-article-metadata-fields.md).
 
 This is an example `metadata.json` file.
 
@@ -184,7 +184,7 @@ This is an example `metadata.json` file.
 
 ##### Run the Script
 
-Start the command prompt and change to the directory containing `create_article.py`. Run this script to make a [`Create an Article`](https://developer.apple.com/documentation/applenewsapi/post-channels-_channelid_-articles) request to the Apple News API. This script takes five arguments: API URL (https://news-api.apple.com), Channel ID, Key ID, Secret, and the path to the article directory.
+Start the command prompt and change to the directory containing `create_article.py`. Run this script to make a [`Create an Article`](../AppleNewsAPI/post-channels-_channelid_-articles.md) request to the Apple News API. This script takes five arguments: API URL (https://news-api.apple.com), Channel ID, Key ID, Secret, and the path to the article directory.
 
 ```python
 python create_article.py https://news-api.apple.com channel_id key_id key_secret path/to/article/directory/
@@ -192,7 +192,7 @@ python create_article.py https://news-api.apple.com channel_id key_id key_secre
 
 ##### Result
 
-The server returns the `ArticleResponse` object. For more information, see [`Article`](https://developer.apple.com/documentation/applenewsapi/article), `ArticleLinks`, and [`Meta`](https://developer.apple.com/documentation/applenewsapi/meta).
+The server returns the `ArticleResponse` object. For more information, see [`Article`](../AppleNewsAPI/article.md), `ArticleLinks`, and [`Meta`](../AppleNewsAPI/meta.md).
 
 ##### How It Works
 

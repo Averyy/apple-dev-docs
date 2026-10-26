@@ -64,12 +64,20 @@ To define your own types in your app’s `Info.plist`, see [Defining file and da
 ### Identifying a type
 - [var identifier: String](./uttype-swift.struct/identifier.md)
   The string that represents the type.
+- [identifier](./uttypereference/identifier.md)
+  The string that represents the type.
 ### Obtaining tags
 - [var preferredFilenameExtension: String?](./uttype-swift.struct/preferredfilenameextension.md)
   The preferred filename extension for the type.
 - [var preferredMIMEType: String?](./uttype-swift.struct/preferredmimetype.md)
   The preferred MIME type for the type.
 - [var tags: [UTTagClass : [String]]](./uttype-swift.struct/tags.md)
+  The tag specification dictionary of the type.
+- [preferredFilenameExtension](./uttypereference/preferredfilenameextension.md)
+  The preferred filename extension for the type.
+- [preferredMIMEType](./uttypereference/preferredmimetype.md)
+  The preferred MIME type for the type.
+- [tags](./uttypereference/tags.md)
   The tag specification dictionary of the type.
 ### Obtaining additional type information
 - [var isDeclared: Bool](./uttypereference/isdeclared.md)
@@ -82,6 +90,10 @@ To define your own types in your app’s `Info.plist`, see [Defining file and da
   The reference URL for the type.
 - [var version: Int?](./uttype-swift.struct/version.md)
   The type’s version, if available.
+- [referenceURL](./uttypereference/referenceurl.md)
+  The reference URL for the type.
+- [version](./uttypereference/version.md)
+  The type’s version, if available.
 ### Checking a type’s relationship to another type
 - [var supertypes: Set<UTType>](./uttype-swift.struct/supertypes.md)
   The set of types the type directly or indirectly conforms to.
@@ -91,14 +103,22 @@ To define your own types in your app’s `Info.plist`, see [Defining file and da
   Returns a Boolean value that indicates whether a type is higher in a hierarchy than the type.
 - [func isSupertype(of: UTType) -> Bool](./uttypereference/issupertype%28of%29.md)
   Returns a Boolean value that indicates whether a type is lower in a hierarchy than the type.
+- [supertypes](./uttypereference/supertypes.md)
+  The set of types the type directly or indirectly conforms to.
 ### Describing a type
 - [var localizedDescription: String?](./uttype-swift.struct/localizeddescription.md)
+  A localized description of the type.
+- [localizedDescription](./uttypereference/localizeddescription.md)
   A localized description of the type.
 ### Type Properties
 - [static var shazamCustomCatalog: UTType](./uttype-swift.struct/shazamcustomcatalog.md)
   A type that represents a custom catalog.
 - [static var shazamSignature: UTType](./uttype-swift.struct/shazamsignature.md)
   A type that represents a signature.
+- [SHCustomCatalogContentType](./uttype-c.class/shcustomcatalogcontenttype.md)
+  A type representing the @c SHCustomCatalog file format with the .shazamcatalog extension
+- [SHSignatureContentType](./uttype-c.class/shsignaturecontenttype.md)
+  A type representing the @c SHSignature file format with the .shazamsignature extension
 ### Initializers
 - [convenience init?(MIMEType: String)](./uttypereference/init%28mimetype%29-7gu84.md)
 - [convenience init?(MIMEType: String, conformingToType: UTType)](./uttypereference/init%28mimetype,conformingtotype%29.md)

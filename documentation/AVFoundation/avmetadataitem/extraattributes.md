@@ -44,6 +44,10 @@ Extra attributes, when they’re present, are specific to metadata container for
   The value of the metadata item as a date.
 - [var dataValue: Data?](./datavalue.md)
   The value of the metadata item as a data value.
+- [- loadValuesAsynchronouslyForKeys:completionHandler:](./loadvaluesasynchronouslyforkeys_completionhandler_.md)
+  Tells the object to load the values of any of the specified keys that aren’t already loaded.
+- [- statusOfValueForKey:error:](./statusofvalueforkey_error_.md)
+  Reports whether the value for a given key is immediately available without blocking.
 
 
 ---

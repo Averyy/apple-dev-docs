@@ -91,6 +91,11 @@ See [`SRSensor`](./srsensor.md) for the complete list.
   `SRReader` serves as the primary interface for accessing sensor data from various device sensors.
 - [class SRSleepSession](./srsleepsession.md)
 - [class SRSourceDevice](./srsourcedevice.md)
+- [SRAcousticSettingsAccessibility](./sracousticsettings/accessibility.md)
+- [SRAcousticSettingsAccessibilityBackgroundSounds](./sracousticsettings/accessibility/backgroundsounds-swift.class.md)
+- [SRAcousticSettingsAccessibilityHeadphoneAccommodations](./sracousticsettings/accessibility/headphoneaccommodations-swift.class.md)
+- [SRAcousticSettingsMusicEQ](./sracousticsettings/musiceq.md)
+- [SRHeadphoneSettingsHearingAssistance](./srheadphonesettings/hearingassistance-swift.class.md)
 ### Protocols
 - [protocol SRDataSensor](./srdatasensor.md)
   `SRDataSensor` serves as the foundational protocol for all sensor types, providing type safety and consistency across the SensorKit ecosystem. Each conforming sensor type specifies the kind of data it produces, enabling compile-time verification and type-safe data access patterns.
@@ -121,6 +126,23 @@ See [`SRSensor`](./srsensor.md) for the complete list.
 - [struct SRTelephonySpeechMetricsSensor](./srtelephonyspeechmetricssensor.md)
 - [struct SRVisitsSensor](./srvisitssensor.md)
 - [struct SRWristTemperatureSensor](./srwristtemperaturesensor.md)
+### Variables
+- [SRSensorAcousticSettings](./srsensor/acousticsettings.md)
+- [SRSensorHeadphoneMotion](./srsensor/headphonemotion.md)
+- [SRSensorHeadphoneSettings](./srsensor/headphonesettings.md)
+- [SRSensorSleepSessions](./srsensor/sleepsessions.md)
+### Macros
+- [SR_EXTERN](./sr_extern.md)
+- [SR_EXTERN_HIDDEN](./sr_extern_hidden.md)
+### Enumerations
+- [SRAcousticSettingsAccessibilityBackgroundSoundsName](./sracousticsettings/accessibility/backgroundsounds-swift.class/name.md)
+- [SRAcousticSettingsAccessibilityHeadphoneAccommodationsMediaEnhanceApplication](./sracousticsettings/accessibility/headphoneaccommodations-swift.class/mediaenhanceapplication-swift.enum.md)
+- [SRAcousticSettingsAccessibilityHeadphoneAccommodationsMediaEnhanceBoosting](./sracousticsettings/accessibility/headphoneaccommodations-swift.class/mediaenhanceboosting-swift.enum.md)
+- [SRAcousticSettingsAccessibilityHeadphoneAccommodationsMediaEnhanceTuning](./sracousticsettings/accessibility/headphoneaccommodations-swift.class/mediaenhancetuning-swift.enum.md)
+- [SRAcousticSettingsSampleLifetime](./sracousticsettings/samplelifetime.md)
+- [SRHeadphoneSettingsAdaptiveAudioStrength](./srheadphonesettings/adaptiveaudiostrength-swift.enum.md)
+- [SRHeadphoneSettingsListeningMode](./srheadphonesettings/listeningmode-swift.enum.md)
+- [SRHeadphoneSettingsSettingEnablement](./srheadphonesettings/settingenablement.md)
 
 
 ---

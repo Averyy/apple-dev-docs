@@ -74,6 +74,8 @@ To load a particle system from a file you created with Xcode, use the [`init(nam
 ### Creating a Particle System
 - [convenience init?(named: String, inDirectory: String?)](./scnparticlesystem/init%28named,indirectory%29.md)
   Loads a particle system from a file in the app’s bundle resources.
+- [+ particleSystem](./scnparticlesystem/particlesystem.md)
+  Creates a new particle system.
 ### Managing Particle Emission Timing
 - [var emissionDuration: CGFloat](./scnparticlesystem/emissionduration.md)
   The duration, in seconds, over which the system spawns new particles. Animatable.

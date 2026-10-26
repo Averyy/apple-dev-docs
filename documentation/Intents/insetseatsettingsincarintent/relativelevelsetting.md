@@ -49,6 +49,14 @@ The intent object contains a value for this property or the [`level`](./level-5i
   A Boolean value indicating whether to enable the seat massage system.
 - [var level: Int?](./level-94975.md)
   An integer value indicating the desired level for the seat setting.
+- [enableCooling](./enablecooling-6bcu7.md)
+  A Boolean value indicating whether to enable the seat cooling system.
+- [enableHeating](./enableheating-5qj7i.md)
+  A Boolean value indicating whether to enable the seat heating system.
+- [enableMassage](./enablemassage-5jf2s.md)
+  A Boolean value indicating whether to enable the seat massage system.
+- [level](./level-5i2i.md)
+  An integer value indicating the desired level for the seat setting.
 
 
 ---

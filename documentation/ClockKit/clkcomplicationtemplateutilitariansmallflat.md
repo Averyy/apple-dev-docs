@@ -47,6 +47,10 @@ Instead of providing multiple images with different resolutions, you can provide
   Creates a new template that has a single line of text.
 - [init(textProvider: CLKTextProvider, imageProvider: CLKImageProvider?)](./clkcomplicationtemplateutilitariansmallflat/init%28textprovider,imageprovider%29.md)
   Creates a new template that has a single row with an image and a line of text.
+- [+ templateWithTextProvider:](./clkcomplicationtemplateutilitariansmallflat/templatewithtextprovider_.md)
+  Returns a new template that has a single line of text.
+- [+ templateWithTextProvider:imageProvider:](./clkcomplicationtemplateutilitariansmallflat/templatewithtextprovider_imageprovider_.md)
+  Returns a new template that has a single row with an image and a line of text.
 ### Setting the Complication Data
 - [var imageProvider: CLKImageProvider?](./clkcomplicationtemplateutilitariansmallflat/imageprovider.md)
   The image to display.

@@ -37,6 +37,7 @@ Create an instance of this class when registering for a new credential using sec
   The preference that indicates where the resident key resides.
 ### Instance Properties
 - [var prf: ASAuthorizationPublicKeyCredentialPRFRegistrationInput?](./asauthorizationsecuritykeypublickeycredentialregistrationrequest/prf-964zl.md)
+- [prf](./asauthorizationsecuritykeypublickeycredentialregistrationrequest/prf-2ys9l.md)
 
 ## Relationships
 

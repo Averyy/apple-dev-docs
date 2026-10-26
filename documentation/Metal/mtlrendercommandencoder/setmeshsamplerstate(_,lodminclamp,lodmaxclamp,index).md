@@ -47,6 +47,10 @@ By default, the sampler state at each index is `nil`.
   Assigns multiple sampler states to a range of entries in the mesh shader argument table.
 - [func setMeshSamplerStates([(any MTLSamplerState)?], lodMinClamps: [Float], lodMaxClamps: [Float], range: Range<Int>)](./setmeshsamplerstates%28_,lodminclamps,lodmaxclamps,range%29.md)
   Assigns multiple sampler states and clamp values to a range of entries in the mesh shader argument table.
+- [- setMeshSamplerStates:withRange:](./setmeshsamplerstates_withrange_.md)
+  Assigns multiple sampler states to a range of entries in the mesh shader argument table.
+- [- setMeshSamplerStates:lodMinClamps:lodMaxClamps:withRange:](./setmeshsamplerstates_lodminclamps_lodmaxclamps_withrange_.md)
+  Assigns multiple sampler states and clamp values to a range of entries in the mesh shader argument table.
 
 
 ---

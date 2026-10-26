@@ -1,0 +1,20 @@
+# key1Value
+
+**Framework**: IOKit  
+**Kind**: structp  
+**Role**: Instance Property
+
+**Availability**:
+- Mac Catalyst 13.0+
+- macOS 10.1+
+
+## Declaration
+
+```c
+UInt8 key1Value[5];
+```
+
+
+---
+
+*[View on Apple Developer](https://developer.apple.com/documentation/iokit/dvdkey1info/1394221-key1value)*

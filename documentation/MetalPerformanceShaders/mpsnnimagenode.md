@@ -39,6 +39,7 @@ class MPSNNImageNode
 - [var synchronizeResource: Bool](./mpsnnimagenode/synchronizeresource.md)
 ### Type Methods
 - [class func exportedNode(with: (any MPSHandle)?) -> Self](./mpsnnimagenode/exportednode%28with%29.md)
+- [+ nodeWithHandle:](./mpsnnimagenode/nodewithhandle_.md)
 ### Supporting Types
 - [protocol MPSHandle](./mpshandle.md)
   The protocol that provides resource identification.

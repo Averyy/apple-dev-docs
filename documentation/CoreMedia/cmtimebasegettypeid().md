@@ -25,6 +25,14 @@ func CMTimebaseGetTypeID() -> CFTypeID
 extern CFTypeID CMTimebaseGetTypeID();
 ```
 
+## See Also
+
+### Constants
+- [kCMTimebaseVeryLongCFTimeInterval](./kcmtimebaseverylongcftimeinterval.md)
+  A constant that defines a very long elapsed time in seconds.
+- [kCMTimebaseFarFutureCFAbsoluteTime](./kcmtimebasefarfuturecfabsolutetime.md)
+  A constant that defines a point of time in the far, far future.
+
 
 ---
 

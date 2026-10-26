@@ -39,6 +39,8 @@ class MPSNNArithmeticGradientNode
 - [var secondaryStrideInFeatureChannels: Int](./mpsnnarithmeticgradientnode/secondarystrideinfeaturechannels.md)
 - [var secondaryStrideInPixelsX: Int](./mpsnnarithmeticgradientnode/secondarystrideinpixelsx.md)
 - [var secondaryStrideInPixelsY: Int](./mpsnnarithmeticgradientnode/secondarystrideinpixelsy.md)
+### Type Methods
+- [+ nodeWithSourceGradient:sourceImage:gradientState:isSecondarySourceFilter:](./mpsnnarithmeticgradientnode/nodewithsourcegradient_sourceimage_gradientstate_issecondarysourcefilter_.md)
 
 ## Relationships
 

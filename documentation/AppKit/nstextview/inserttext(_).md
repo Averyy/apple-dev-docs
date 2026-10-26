@@ -41,6 +41,8 @@ This method is the entry point for inserting text typed by the user and is gener
 ### Deprecated
 - [func toggleTraditionalCharacterShape(Any?)](./toggletraditionalcharactershape%28_%29.md)
   Toggles the `NSCharacterShapeAttributeName` attribute at the current selection.
+- [- toggleBaseWritingDirection:](./togglebasewritingdirection_.md)
+  Changes the base writing direction of a paragraph between left-to-right and right-to-left.
 
 
 ---

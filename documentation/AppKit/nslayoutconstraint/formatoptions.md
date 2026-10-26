@@ -55,6 +55,8 @@ enum NSLayoutFormatOptions : NSUInteger;
 ### Initializers
 - [init(rawValue: UInt)](./formatoptions/init%28rawvalue%29.md)
   Creates a formatting-options structure with the specified raw value.
+### Enumeration Cases
+- [NSLayoutFormatAlignAllBaseline](../nslayoutformatoptions/nslayoutformatalignallbaseline.md)
 
 ## Relationships
 

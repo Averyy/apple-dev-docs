@@ -19,6 +19,12 @@ var lastNameUpdate: Date! { get }
 @property (copy, readonly) NSDate * lastNameUpdate;
 ```
 
+## See Also
+
+### Related Documentation
+- [- getLastNameUpdate](./getlastnameupdate.md)
+  Get the date/time of the last successful remote name request.
+
 
 ---
 

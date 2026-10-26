@@ -32,6 +32,10 @@ class AXNumericDataAxisDescriptor
   Creates a numeric data axis with the specified title, range, gridline positions, and value description provider closure.
 - [convenience init(attributedTitle: NSAttributedString, range: ClosedRange<Double>, gridlinePositions: [Double], valueDescriptionProvider: (Double) -> String)](./axnumericdataaxisdescriptor/init%28attributedtitle,range,gridlinepositions,valuedescriptionprovider%29.md)
   Creates a numeric data axis with the specified attributed title, range, gridline positions, and value description provider closure.
+- [- initWithTitle:lowerBound:upperBound:gridlinePositions:valueDescriptionProvider:](./axnumericdataaxisdescriptor/initwithtitle_lowerbound_upperbound_gridlinepositions_valuedescriptionprovider_.md)
+  Creates a numeric data axis with the specified title, lower bound value, upper bound value, gridline positions, and value description provider block.
+- [- initWithAttributedTitle:lowerBound:upperBound:gridlinePositions:valueDescriptionProvider:](./axnumericdataaxisdescriptor/initwithattributedtitle_lowerbound_upperbound_gridlinepositions_valuedescriptionprovider_.md)
+  Creates a numeric data axis with the specified attributed title, lower bound value, upper bound value, gridline positions, and value description provider block.
 ### Specifying the value description
 - [var valueDescriptionProvider: (Double) -> String](./axnumericdataaxisdescriptor/valuedescriptionprovider.md)
   A description to speak for a particular data value on the axis.
@@ -43,8 +47,14 @@ class AXNumericDataAxisDescriptor
 ### Configuring the axis range
 - [var range: ClosedRange<Double>](./axnumericdataaxisdescriptor/range.md)
   A range that defines the minimum and maximum displayable values for the axis.
+- [lowerBound](./axnumericdataaxisdescriptor/lowerbound.md)
+  The minimum displayable value for the axis.
+- [upperBound](./axnumericdataaxisdescriptor/upperbound.md)
+  The maximum displayable value for the axis.
 ### Configuring the gridlines
 - [var gridlinePositions: [Double]](./axnumericdataaxisdescriptor/gridlinepositions-5cfmw.md)
+  The positions of the gridlines along the axis.
+- [gridlinePositions](./axnumericdataaxisdescriptor/gridlinepositions-9z10e.md)
   The positions of the gridlines along the axis.
 
 ## Relationships

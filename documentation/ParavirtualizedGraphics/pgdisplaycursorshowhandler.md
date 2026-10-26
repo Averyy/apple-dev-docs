@@ -29,6 +29,10 @@ typedef void (^)(_Bool) PGDisplayCursorShowHandler;
 ### Managing Cursor Events
 - [var cursorShowHandler: PGDisplayCursorShowHandler?](./pgdisplaydescriptor/cursorshowhandler.md)
   A handler that the framework calls to change the cursor’s visibility.
+- [cursorGlyphHandler](./pgdisplaydescriptor/cursorglyphhandler.md)
+  A handler that the framework calls to change the cursor’s appearance.
+- [PGDisplayCursorGlyphHandler](./pgdisplaycursorglyphhandler.md)
+  The block signature for a routine that handles changes to the cursor’s appearance.
 
 
 ---

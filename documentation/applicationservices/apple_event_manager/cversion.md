@@ -35,6 +35,8 @@ enum {
 ### Constants
 - [var formUniqueID: Int](../../coreservices/formuniqueid.md)
   Specifies a value that uniquely identifies an object within its container or across an application.
+- [formUniqueID](../../coreservices/api-1572731-key_form_and_descriptor_type_obj/formuniqueid.md)
+  Specifies a value that uniquely identifies an object within its container or across an application.
 
 
 ---

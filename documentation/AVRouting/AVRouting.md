@@ -63,6 +63,8 @@ If the extension finds the device at runtime, it passes the device to the system
   An object that manages playback routing preferences.
 - [protocol AVRoutingPlaybackParticipant](./avroutingplaybackparticipant.md)
   A protocol for objects that participate in playback routing arbitration.
+### Macros
+- [AVROUTING_EXTERN](./avrouting_extern.md)
 
 
 ---

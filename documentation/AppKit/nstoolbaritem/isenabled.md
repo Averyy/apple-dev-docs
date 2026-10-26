@@ -53,6 +53,10 @@ If the value of this property is [`true`](../../Swift/true.md), the item is enab
   Constants that indicate which toolbar items to keep in the toolbar when space is limited.
 - [var tag: Int](./tag.md)
   An integer tag you can use to identify the toolbar item.
+- [badge](./badge-2b38p.md)
+  A badge that can be attached to an NSToolbarItem. This provides a way to display small visual indicators that can be used to highlight important information, such as unread notifications or status indicators.
+- [NSItemBadge](../nsitembadge-c.class.md)
+  `NSItemBadge` represents a badge that can be attached to an `NSToolbarItem`.
 
 
 ---

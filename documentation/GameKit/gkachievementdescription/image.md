@@ -63,6 +63,8 @@ The value of this property is undefined until you load the image using the [`loa
   A Boolean value that states whether the player can earn the achievement multiple times.
 - [var rarityPercent: Double?](./raritypercent-4bh6k.md)
   The percentage of players of this game that earned the achievement.
+- [rarityPercent](./raritypercent-3zqw6.md)
+  The percentage of players of this game that earned the achievement.
 
 
 ---

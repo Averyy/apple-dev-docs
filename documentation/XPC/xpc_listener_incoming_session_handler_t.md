@@ -36,6 +36,16 @@ When a client connects to your service, the system invokes this block with a ses
 
 When the `incoming_session_handler` returns, the system automatically activates the peer session unless you explicitly cancel it.
 
+## See Also
+
+### Creating a listener
+- [xpc_listener_create](./xpc_listener_create.md)
+  Creates the server side of an XPC service using the specified service name.
+- [xpc_listener_create_flags_t](./xpc_listener_create_flags_t.md)
+  Options that control the listener’s configuration.
+- [xpc_listener_copy_description](./xpc_listener_copy_description.md)
+  Copies the description string of a listener.
+
 
 ---
 

@@ -52,6 +52,8 @@ These methods encode commands that configure the render pass for all subsequent 
   Configures the same comparison value for front- and back-facing primitives.
 - [func setStencilReferenceValues(front: UInt32, back: UInt32)](./mtlrendercommandencoder/setstencilreferencevalues%28front,back%29.md)
   Configures different comparison values for front- and back-facing primitives.
+- [- setDepthTestMinBound:maxBound:](./mtlrendercommandencoder/setdepthtestminbound_maxbound_.md)
+  Configures the minimum and maximum bounds for depth bounds testing.
 ### Configuring viewport and scissor behavior
 - [func setViewport(MTLViewport)](./mtlrendercommandencoder/setviewport%28_%29.md)
   Configures the render pipeline with a viewport that applies a transformation and a clipping rectangle.
@@ -60,6 +62,10 @@ These methods encode commands that configure the render pass for all subsequent 
 - [func setScissorRect(MTLScissorRect)](./mtlrendercommandencoder/setscissorrect%28_%29.md)
   Configures a rectangle for the fragment scissor test.
 - [func setScissorRects([MTLScissorRect])](./mtlrendercommandencoder/setscissorrects%28_%29.md)
+  Configures multiple rectangles for the fragment scissor test.
+- [- setViewports:count:](./mtlrendercommandencoder/setviewports_count_.md)
+  Configures the render pipeline with multiple viewports that apply transformations and clipping rectangles.
+- [- setScissorRects:count:](./mtlrendercommandencoder/setscissorrects_count_.md)
   Configures multiple rectangles for the fragment scissor test.
 ### Configuring visibility testing
 - [func setVisibilityResultMode(MTLVisibilityResultMode, offset: Int)](./mtlrendercommandencoder/setvisibilityresultmode%28_,offset%29.md)

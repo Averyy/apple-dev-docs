@@ -35,6 +35,9 @@ typedef FFPERIODIC * PFFPERIODIC;
 - [typealias PFFEFFESCAPE](./pffeffescape.md)
 - [typealias PFFENVELOPE](./pffenvelope.md)
 - [typealias PFFRAMPFORCE](./pfframpforce.md)
+- [ForceFeedbackDeviceStatePtr](./forcefeedbackdevicestateptr.md)
+- [ForceFeedbackVersionPtr](./forcefeedbackversionptr.md)
+- [IOForceFeedbackDeviceInterfacePtr](./ioforcefeedbackdeviceinterfaceptr.md)
 
 
 ---

@@ -27,6 +27,9 @@ typedef enum MDLabelDomain : unsigned int {
 - [init(rawValue: UInt32)](./mdlabeldomain/api-1445483-init.md)
 ### Instance Properties
 - [var rawValue: UInt32](./mdlabeldomain/api-1447882-rawvalue.md)
+### Constants
+- [kMDLabelLocalDomain](./mdlabeldomain/kmdlabellocaldomain.md)
+- [kMDLabelUserDomain](./mdlabeldomain/kmdlabeluserdomain.md)
 
 ## Relationships
 

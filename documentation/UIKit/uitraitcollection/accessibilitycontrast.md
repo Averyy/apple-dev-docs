@@ -59,6 +59,8 @@ Use this trait to determine whether the user requested a high contrast between f
   Constants that indicate whether the user interface has an active appearance.
 - [var toolbarItemPresentationSize: UINSToolbarItemPresentationSize](./toolbaritempresentationsize.md)
   The presentation size of a toolbar item in an AppKit toolbar.
+- [resolvesNaturalAlignmentWithBaseWritingDirection](./resolvesnaturalalignmentwithbasewritingdirection-97osy.md)
+  Specifies the behavior for resolving `NSTextAlignment.natural` to the visual alignment.
 
 
 ---

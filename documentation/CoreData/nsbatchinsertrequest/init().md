@@ -40,6 +40,8 @@ convenience init()
   Creates a batch-insertion request for a managed entity, and provides an array of data dictionaries for insertion.
 - [init(entityName: String, objects: [[String : Any]])](./init%28entityname,objects%29.md)
   Creates a batch-insertion request for a named managed entity, and provides an array of data dictionaries for insertion.
+- [+ batchInsertRequestWithEntityName:objects:](./batchinsertrequestwithentityname_objects_.md)
+  Creates a batch-insertion request for a named managed entity, and provides an array of data dictionaries for insertion.
 
 
 ---

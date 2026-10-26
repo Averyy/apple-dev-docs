@@ -37,6 +37,8 @@ See also [Initializing offsets](./uioffset.md#Initializing-offsets) and [`zero`]
   Creates an offset structure from the given components.
 - [init()](./uioffset/init%28%29.md)
   Creates an offset structure.
+- [UIOffsetMake](./uioffset/init%28horizontal,vertical%29-2bvnj.md)
+  Returns an offset structure from the given components.
 ### Getting the offset values
 - [var horizontal: CGFloat](./uioffset/horizontal.md)
   The amount of horizontal offset from a position.
@@ -45,10 +47,16 @@ See also [Initializing offsets](./uioffset.md#Initializing-offsets) and [`zero`]
 ### Comparing offsets
 - [func UIOffsetEqualToOffset(UIOffset, UIOffset) -> Bool](./uioffsetequaltooffset%28_,_%29.md)
   Returns a Boolean value that indicates whether two offsets are equal.
+- [UIOffsetEqualToOffset](./uioffsetequaltooffset.md)
+  Returns a Boolean value that indicates whether two offsets are equal.
 ### Converting to and from strings
 - [class func string(for: UIOffset) -> String](../Foundation/nscoder/string%28for%29-454dj.md)
   Returns a string formatted to contain the data from an offset structure.
 - [class func uiOffset(for: String) -> UIOffset](../Foundation/nscoder/uioffset%28for%29.md)
+  Returns a UIKit offset structure corresponding to the data in a given string.
+- [NSStringFromUIOffset](./nsstringfromuioffset.md)
+  Returns a string formatted to contain the data from an offset structure.
+- [UIOffsetFromString](./uioffsetfromstring.md)
   Returns a UIKit offset structure corresponding to the data in a given string.
 ### Getting the empty offset value
 - [static let zero: UIOffset](./uioffset/zero.md)

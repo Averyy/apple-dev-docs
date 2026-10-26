@@ -44,6 +44,8 @@ For details of the format of the query string, see [File Metadata Query Expressi
   Creates and returns a predicate that always evaluates to a specified Boolean value.
 - [init(block: (Any?, [String : Any]?) -> Bool)](./init%28block%29.md)
   Creates a predicate that evaluates using a specified block object and bindings dictionary.
+- [+ predicateWithFormat:](./predicatewithformat_.md)
+  Creates and returns a new predicate formed by creating a new string with a specified format and parsing the result.
 
 
 ---

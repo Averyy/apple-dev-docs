@@ -36,6 +36,12 @@ Note that this method is no longer called on apps that link against macOS 10.11 
 ### Deprecated methods
 - [func endGesture(with: NSEvent)](./endgesture%28with%29.md)
   Informs the receiver that the user has ended a touch gesture.
+- [- performMnemonic:](./performmnemonic_.md)
+  Handle a mnemonic.
+- [- setInterfaceStyle:](./setinterfacestyle_.md)
+  Sets the receiver’s style to the style specified by `interfaceStyle`, such as `NSMacintoshInterfaceStyle` or `NSWindows95InterfaceStyle`.
+- [- interfaceStyle](./interfacestyle.md)
+  Returns the receiver’s interface style.
 
 
 ---

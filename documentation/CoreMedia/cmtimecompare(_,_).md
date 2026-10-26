@@ -57,6 +57,8 @@ Times with numerically larger epochs are greater than those with smaller epochs.
   Returns the greater of two time values.
 - [func CMTimeMinimum(CMTime, CMTime) -> CMTime](./cmtimeminimum%28_,_%29.md)
   Returns the lesser of two time values.
+- [CMTIME_COMPARE_INLINE](./cmtime_compare_inline.md)
+  Returns a Boolean value that indicates whether the specified comparison is true.
 
 
 ---

@@ -32,6 +32,8 @@ enum CPManeuverDisplayStyle : NSInteger;
   Only the instructions appear for the maneuver.
 - [static var symbolOnly: CPManeuverDisplayStyle](./cpmaneuverdisplaystyle/symbolonly.md)
   Only the symbol appears for the maneuver.
+- [CPManeuverDisplayStyleDefault](./cpmaneuverdisplaystyle/cpmaneuverdisplaystyledefault.md)
+  The default display style for the maneuver.
 ### Initializers
 - [init(rawValue: Int)](./cpmaneuverdisplaystyle/init%28rawvalue%29.md)
   Initializes a maneuver display style using the specified raw value.

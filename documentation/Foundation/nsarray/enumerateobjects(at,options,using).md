@@ -52,6 +52,11 @@ This method executes synchronously.
   Executes a given closure or block using each object in the array, starting with the first object and continuing through the array to the last object.
 - [func enumerateObjects(options: NSEnumerationOptions, using: (Any, Int, UnsafeMutablePointer<ObjCBool>) -> Void)](./enumerateobjects%28options,using%29.md)
   Executes a given closure or block using each object in the array with the specified options.
+### Related Documentation
+- [- makeObjectsPerformSelector:](./makeobjectsperformselector_.md)
+  Sends to each object in the array the message identified by a given selector, starting with the first object and continuing through the array to the last object.
+- [- makeObjectsPerformSelector:withObject:](./makeobjectsperformselector_withobject_.md)
+  Sends the `aSelector` message to each object in the array, starting with the first object and continuing through the array to the last object.
 
 
 ---

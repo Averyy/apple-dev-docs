@@ -32,6 +32,8 @@ var containerIdentifier: String { get }
   Initializes container options using the given CloudKit container identifier.
 - [var databaseScope: CKDatabase.Scope](./databasescope-4c72t.md)
   The database scope — public, private, or shared — to use for a specified store in a persistent CloudKit container.
+- [databaseScope](./databasescope-2784h.md)
+  The database scope — public, private, or shared — to use for a specified store in a persistent CloudKit container.
 
 
 ---

@@ -37,6 +37,10 @@ var OBJC_BOOL_IS_BOOL: Int32 { get }
 - [var OBJC_GETCLASSHOOK_DEFINED: Int32](./objc_getclasshook_defined.md)
 - [var OBJC_REALIZECLASSFROMSWIFT_DEFINED: Int32](./objc_realizeclassfromswift_defined.md)
 - [var OBJC_SETHOOK_LAZYCLASSNAMER_DEFINED: Int32](./objc_sethook_lazyclassnamer_defined.md)
+- [NXPtrPrototype](./nxptrprototype.md)
+- [NXPtrStructKeyPrototype](./nxptrstructkeyprototype.md)
+- [NXStrPrototype](./nxstrprototype.md)
+- [NXStrStructKeyPrototype](./nxstrstructkeyprototype.md)
 
 
 ---

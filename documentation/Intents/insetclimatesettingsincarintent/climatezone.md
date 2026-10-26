@@ -51,6 +51,10 @@ The value of this property is [`INCarSeat.unknown`](../incarseat/unknown.md) whe
   The specific temperature to set for the climate control system.
 - [var relativeTemperatureSetting: INRelativeSetting](./relativetemperaturesetting.md)
   A relative temperature setting.
+- [enableClimateControl](./enableclimatecontrol-tviy.md)
+  A Boolean value indicating whether to turn on the climate control system.
+- [enableAutoMode](./enableautomode-6ye2n.md)
+  A Boolean value indicating whether to enable automatic mode for the climate control system.
 
 
 ---

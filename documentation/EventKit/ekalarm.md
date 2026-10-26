@@ -56,6 +56,8 @@ An [`EKAlarm`](./ekalarm.md) object represents an alarm in Event Kit. Use the [`
   The recipient of an email to send when the alarm triggers.
 - [var soundName: String?](./ekalarm/soundname.md)
   The name of the sound to play when the alarm triggers.
+- [url](./ekalarm/url.md)
+  The URL to open when the alarm triggers.
 
 ## Relationships
 

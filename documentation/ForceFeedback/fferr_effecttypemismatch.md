@@ -40,6 +40,7 @@ The IOForceFededbackLib driver has received an effect modification request whose
 - [var FFERR_DEVICEFULL: Int](./fferr_devicefull.md)
 - [var FFERR_DEVICEPAUSED: Int](./fferr_devicepaused.md)
 - [var FFERR_DEVICERELEASED: Int](./fferr_devicereleased.md)
+- [FFERR_DEVICENOTREG](./fferr_devicenotreg.md)
 
 
 ---

@@ -46,7 +46,7 @@ Here are general guidelines for Apple News Format:
 - For articles with a source URL or thumbnail, avoid posting more than one article on the same channel using the same title, source URL, or thumbnail, within a 24-hour period. An article is considered a duplicate if these conditions are met.
 - For articles without a source URL and thumbnail, avoid posting more than one article on same channel, using the same title, within a 24-hour period. An article is considered a duplicate if these conditions are met.
 - When you create an article, be sure to retain the article ID or the self URL that’s returned in the response. You need the article ID to read, update, and delete an article.
-- To publish older articles, use the metadata properties in Apple News Format. If you set an older publication date, the article appears earlier in the feed. See [`Metadata`](https://developer.apple.com/documentation/applenewsformat/metadata) in Apple News Format documentation. Articles are sorted by publication date.
+- To publish older articles, use the metadata properties in Apple News Format. If you set an older publication date, the article appears earlier in the feed. See [`Metadata`](../AppleNewsFormat/metadata.md) in Apple News Format documentation. Articles are sorted by publication date.
 - A canonical URL is required to do data collection and reporting for comScore analytics.
 - Don’t change the canonical URL of the article after it has been set.
 

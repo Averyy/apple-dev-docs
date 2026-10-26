@@ -51,6 +51,12 @@ Associating the player item with an [`AVPlayer`](../avplayer.md) immediately beg
 - [convenience init(asset: any AVAsset & Sendable, automaticallyLoadedAssetKeys: [AVPartialAsyncProperty<AVAsset>])](./init%28asset,automaticallyloadedassetkeys%29-85hal.md)
 - [init(asset: AVAsset, automaticallyLoadedAssetKeys: [String]?)](./init%28asset,automaticallyloadedassetkeys%29-8x4.md)
   Creates a player item with the specified asset and the asset keys to automatically load.
+- [+ playerItemWithURL:](./playeritemwithurl_.md)
+  Returns a new player item with a specified URL.
+- [+ playerItemWithAsset:](./playeritemwithasset_.md)
+  Returns a new player item for a specified asset.
+- [+ playerItemWithAsset:automaticallyLoadedAssetKeys:](./playeritemwithasset_automaticallyloadedassetkeys_.md)
+  Creates a player item with the specified asset and the asset keys to automatically load.
 
 
 ---

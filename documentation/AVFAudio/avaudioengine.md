@@ -155,6 +155,8 @@ audioEngine.stop()
 - [func withMusicSequence<R, E>((borrowing MusicSequence?) throws(E) -> R) throws(E) -> R](./avaudioengine/withmusicsequence%28_%29.md)
   Provides scoped access to the AVAudioEngine’s MusicSequence
 - [var musicSequence: MusicSequence?](./avaudioengine/musicsequence-1z47z.md)
+- [musicSequence](./avaudioengine/musicsequence-3u74x.md)
+  The music sequence instance that you attach to the audio engine, if any.
 ### Rendering audio manually
 - [func enableManualRenderingMode(AVAudioEngineManualRenderingMode, format: AVAudioFormat, maximumFrameCount: AVAudioFrameCount) throws](./avaudioengine/enablemanualrenderingmode%28_,format,maximumframecount%29.md)
   Sets the engine to operate in manual rendering mode with the render format and maximum frame count you specify.
@@ -194,6 +196,9 @@ audioEngine.stop()
   Returns connection information about a node’s input bus.
 - [func outputConnectionPoints(for: AVAudioNode, outputBus: AVAudioNodeBus) -> [AVAudioConnectionPoint]](./avaudioengine/outputconnectionpoints%28for,outputbus%29.md)
   Returns connection information about a node’s output bus.
+### Responding to configuration changes
+- [AVAudioEngineConfigurationChangeNotification](./avaudioengineconfigurationchangenotification.md)
+  A notification the framework posts when the audio engine configuration changes.
 
 ## Relationships
 
@@ -222,6 +227,7 @@ audioEngine.stop()
   An object that performs audio input or output in the engine.
 - [class AVAudioNode](./avaudionode.md)
   An object you use for audio generation, processing, or an I/O block.
+- [AVAudioIONodeInputBlockRealtimeSafe](./avaudioionodeinputblockrealtimesafe.md)
 
 
 ---

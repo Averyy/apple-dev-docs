@@ -69,6 +69,10 @@ Alongside the visual content presented with AVKit or [`AVPlayerLayer`](./avplaye
   Creates a new player to play the specified player item.
 - [init()](./avplayer/init%28%29.md)
   Creates a player object.
+- [+ playerWithURL:](./avplayer/playerwithurl_.md)
+  Returns a new player to play a single audiovisual resource referenced by a given URL.
+- [+ playerWithPlayerItem:](./avplayer/playerwithplayeritem_.md)
+  Returns a new player initialized to play the specified player item.
 ### Managing the player item
 - [var currentItem: AVPlayerItem?](./avplayer/currentitem.md)
   The item for which the player is currently controlling playback.
@@ -159,6 +163,8 @@ Alongside the visual content presented with AVKit or [`AVPlayerLayer`](./avplaye
   Whether the player’s audio output is suppressed due to being on a non-mixable audio route.
 - [var intendedSpatialAudioExperience: any SpatialAudioExperience](./avplayer/intendedspatialaudioexperience-1bd87.md)
   The player’s intended Spatial Audio experience.
+- [intendedSpatialAudioExperience](./avplayer/intendedspatialaudioexperience-3uy8g.md)
+  The AVPlayer’s intended spatial audio experience.
 ### Configuring background playback
 - [var audiovisualBackgroundPlaybackPolicy: AVPlayerAudiovisualBackgroundPlaybackPolicy](./avplayer/audiovisualbackgroundplaybackpolicy.md)
   A policy that determines how playback of audiovisual media continues when the app transitions to the background.
@@ -182,6 +188,8 @@ Alongside the visual content presented with AVKit or [`AVPlayerLayer`](./avplaye
   A bitfield type that specifies an HDR mode.
 - [class let eligibleForHDRPlaybackDidChangeNotification: NSNotification.Name](./avplayer/eligibleforhdrplaybackdidchangenotification.md)
   A notification that’s posted whenever HDR playback eligibility changes.
+- [AVPlayerAvailableHDRModesDidChangeNotification](./avplayeravailablehdrmodesdidchangenotification.md)
+  A notification that fires whenever availableHDRModes changes.
 ### Coordinating playback
 - [var playbackCoordinator: AVPlayerPlaybackCoordinator](./avplayer/playbackcoordinator.md)
   The playback coordinator for the player.
@@ -238,6 +246,8 @@ Alongside the visual content presented with AVKit or [`AVPlayerLayer`](./avplaye
 ### Instance Methods
 - [func setDisconnectedFromSystemAudio(Bool, completionHandler: (() -> Void)?)](./avplayer/setdisconnectedfromsystemaudio%28_,completionhandler%29.md)
   Changes whether the player is disconnected from system audio. This method allows you to dynamically change the player’s system audio connection. The operation is asynchronous. Each call to this method will invoke its own completion handler when the operation completes. When changing from `false` to `true`, you should typically call this method first, then deactivate the `AVAudioSession` to allow other audio to resume.
+- [- setDisconnectedFromSystemAudio:completionHandler:](./avplayer/setdisconnectedfromsystemaudio_completionhandler_.md)
+  Changes whether the player is disconnected from system audio.
 
 ## Relationships
 

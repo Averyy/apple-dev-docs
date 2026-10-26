@@ -28,6 +28,8 @@ var shouldShowHybridTransport: Bool { get set }
   The client data to supply to the relying party.
 - [var excludedCredentials: [ASAuthorizationPlatformPublicKeyCredentialDescriptor]?](./excludedcredentials.md)
   A list of passkeys that the relying party doesn’t accept for resolving the challenge.
+- [clientData](./clientdata-7scep.md)
+  The client data to supply to the relying party.
 
 
 ---

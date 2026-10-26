@@ -58,6 +58,10 @@ You can combine options to have the reader session scan and detect different tag
   Creates an NFC tag reader session.
 - [protocol NFCTagReaderSessionDelegate](../nfctagreadersessiondelegate-2joku.md)
   A protocol that an object implements to receive callbacks sent from an NFC tag reader session.
+- [- initWithPollingOption:delegate:queue:](./initwithpollingoption_delegate_queue_.md)
+  Intializes an NFC tag reader session.
+- [NFCTagReaderSessionDelegate](../nfctagreadersessiondelegate-5gxiw.md)
+  A protocol that an object implements to receive callbacks sent from an NFC tag reader session.
 
 
 ---

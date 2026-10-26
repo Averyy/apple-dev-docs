@@ -60,6 +60,12 @@ protocol MTL4CommandBuffer : NSObjectProtocol
   Applies multiple residency sets to a command buffer.
 - [func writeTimestamp(counterHeap: any MTL4CounterHeap, index: Int)](./mtl4commandbuffer/writetimestamp%28counterheap,index%29.md)
   Writes a GPU timestamp into the given counter heap.
+- [- renderCommandEncoderWithDescriptor:](./mtl4commandbuffer/rendercommandencoderwithdescriptor_.md)
+  Creates a render command encoder from a render pass descriptor.
+- [- resolveCounterHeap:withRange:intoBuffer:waitFence:updateFence:](./mtl4commandbuffer/resolvecounterheap_withrange_intobuffer_waitfence_updatefence_.md)
+  Encodes a command that resolves an opaque counter heap into a buffer.
+- [- useResidencySets:count:](./mtl4commandbuffer/useresidencysets_count_.md)
+  Applies multiple residency sets to a command buffer.
 
 ## Relationships
 
@@ -97,6 +103,8 @@ protocol MTL4CommandBuffer : NSObjectProtocol
   Describes an object containing debug information from Metal to your app after completing a workload.
 - [typealias MTL4CommitFeedbackHandler](./mtl4commitfeedbackhandler.md)
   Defines the block signature for a callback Metal invokes to provide your app feedback after completing a workload.
+- [MTL4CounterHeap](./mtl4counterheap.md)
+  Represents an opaque, driver-controlled section of memory that can store GPU counter data.
 
 
 ---

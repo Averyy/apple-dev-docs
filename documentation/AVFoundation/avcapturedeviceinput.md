@@ -37,6 +37,8 @@ This class is a concrete subclass of [`AVCaptureInput`](./avcaptureinput.md) tha
 ### Creating an input
 - [init(device: AVCaptureDevice) throws](./avcapturedeviceinput/init%28device%29.md)
   Creates an input for the specified capture device.
+- [+ deviceInputWithDevice:error:](./avcapturedeviceinput/deviceinputwithdevice_error_.md)
+  Returns a new input for the specified capture device.
 ### Configuring video properties
 - [var unifiedAutoExposureDefaultsEnabled: Bool](./avcapturedeviceinput/unifiedautoexposuredefaultsenabled.md)
   A Boolean value that indicates whether the input enables unified auto-exposure defaults.

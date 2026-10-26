@@ -48,6 +48,8 @@ enum WKWebExtensionWindowType : NSInteger;
 ### Enumerations
 - [WKWebExtension.WindowState](./windowstate.md)
   Constants used by [`WKWebExtensionWindow`](../wkwebextensionwindow.md) to indicate possible states of a window.
+- [WKWebExtensionTabChangedProperties](./tabchangedproperties.md)
+  Constants the web extension controller and web extension context use to indicate tab changes.
 
 
 ---

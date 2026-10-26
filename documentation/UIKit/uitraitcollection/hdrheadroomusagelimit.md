@@ -55,6 +55,8 @@ var hdrHeadroomUsageLimit: UIHDRHeadroomUsageLimit { get }
   A property that indicates whether a scene has an active appearance.
 - [enum UIUserInterfaceActiveAppearance](../uiuserinterfaceactiveappearance.md)
   Constants that indicate whether the user interface has an active appearance.
+- [resolvesNaturalAlignmentWithBaseWritingDirection](./resolvesnaturalalignmentwithbasewritingdirection-97osy.md)
+  Specifies the behavior for resolving `NSTextAlignment.natural` to the visual alignment.
 
 
 ---

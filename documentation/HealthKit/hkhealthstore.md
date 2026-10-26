@@ -100,6 +100,8 @@ For more information, see [Setting up HealthKit](./setting-up-healthkit.md).
   Returns a person’s preferred zone configuration for a quantity type.
 - [static let HKUserPreferencesDidChange: NSNotification.Name](../Foundation/nsnotification/name-swift.struct/hkuserpreferencesdidchange.md)
   Notifies observers whenever the user changes his or her preferred units.
+- [HKUserPreferencesDidChangeNotification](./hkuserpreferencesdidchangenotification.md)
+  Notifies observers whenever the user changes his or her preferred units.
 ### Managing background delivery
 - [func enableBackgroundDelivery(for: HKObjectType, frequency: HKUpdateFrequency, withCompletion: (Bool, (any Error)?) -> Void)](./hkhealthstore/enablebackgrounddelivery%28for,frequency,withcompletion%29.md)
   Enables the delivery of updates to an app running in the background.

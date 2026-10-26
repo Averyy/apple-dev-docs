@@ -38,6 +38,8 @@ If the [`properties`](./gkmatchedplayers/properties.md) and `playersProperties
   The local player’s properties that matchmaking rules uses to find the players, with some additions.
 - [var playerProperties: [GKPlayer : [String : Any]]?](./gkmatchedplayers/playerproperties.md)
   The properties for other players that matchmaking rules uses to find players, with some additions.
+- [GKMatchProperties](./gkmatchproperties.md)
+  A type for game-specific properties that Game Center uses to find players when using matchmaking rules.
 
 ## Relationships
 

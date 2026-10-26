@@ -51,6 +51,8 @@ On iOS devices, users can change location service settings at any time in the Se
   Simplify location delivery using asynchronous events in Swift.
 - [Monitoring location changes with Core Location](./monitoring-location-changes-with-core-location.md)
   Define boundaries and act on user location updates.
+- [CLBackgroundActivitySession](./clbackgroundactivitysession-4nl4y.md)
+  An object that manages a visual indicator that keeps your app in use in the background, allowing it to receive updates or events.
 ### Authorization
 - [Requesting authorization to use location services](./requesting-authorization-to-use-location-services.md)
   Obtain authorization to use location services and manage changes to your app’s authorization status.
@@ -73,6 +75,10 @@ On iOS devices, users can change location service settings at any time in the Se
 ### Monitoring
 - [actor CLMonitor](./clmonitor-2r51v.md)
   An object that monitors the conditions you add to it.
+- [CLMonitor](./clmonitor-6ynwz.md)
+  An object that monitors the conditions you add to it.
+- [CLUpdate](./clupdate.md)
+  An object that represents a location update.
 ### Location updates
 - [Getting the current location of a device](./getting-the-current-location-of-a-device.md)
   Start location services and provide information the system needs to optimize power usage for those services.
@@ -94,6 +100,11 @@ On iOS devices, users can change location service settings at any time in the Se
   Define boundaries and act on user location updates.
 - [class CLServiceSession](./clservicesession-pt7n.md)
   An object that provides diagnostics about an app’s authorization to use location services.
+- [CLServiceSession](./clservicesession-2ddhd.md)
+- [CLServiceSessionDiagnostic](./clservicesessiondiagnostic.md)
+- [CLBackgroundActivitySessionDiagnostic](./clbackgroundactivitysessiondiagnostic.md)
+- [CLLocationUpdater](./cllocationupdater.md)
+  An object that provides device location updates.
 ### Region monitoring
 - [Monitoring the user’s proximity to geographic regions](./monitoring-the-user-s-proximity-to-geographic-regions.md)
   Use condition monitoring to determine when the user enters or leaves a geographic region.
@@ -110,6 +121,12 @@ On iOS devices, users can change location service settings at any time in the Se
   Information about an observed iBeacon device and its relative distance to a person’s device.
 - [protocol CLCondition](./clcondition-swift.protocol.md)
   The abstract base class for all other monitor conditions.
+- [CLCondition](./clcondition-c.class.md)
+  The abstract base class that all other conditions derive from.
+- [CLBeaconIdentityCondition](./clbeaconidentitycondition.md)
+  A condition that describes the identity characteristics of a beacon.
+- [CLCircularGeographicCondition](./clcirculargeographiccondition.md)
+  A circular geographic condition that a center point and radius define.
 ### Compass headings
 - [Getting heading and course information](./getting-heading-and-course-information.md)
   Use a device’s orientation and course information for navigation.
@@ -151,6 +168,11 @@ On iOS devices, users can change location service settings at any time in the Se
   This document describes the constants found in the Core Location framework.
 - [Core Location Functions](./core-location-functions.md)
   The Core Location framework provides functions to help you work with coordinate values.
+### Macros
+- [CLES_EXPORT](./cles_export.md)
+- [CL_EXTERN](./cl_extern.md)
+### Enumerations
+- [CLServiceSessionAuthorizationRequirement](./clservicesessionauthorizationrequirement.md)
 
 
 ---

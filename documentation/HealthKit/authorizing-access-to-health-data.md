@@ -184,7 +184,7 @@ To protect personal privacy, specify three or more required clinical record type
   Respect and safeguard your user’s privacy.
 - [HealthKit updates](../Updates/healthkit.md)
   Learn about important changes to HealthKit.
-- [HealthKitUI](https://developer.apple.com/documentation/healthkitui)
+- [HealthKitUI](../HealthKitUI/HealthKitUI.md)
   Display user interface that enables a person to view and interact with their health data.
 
 

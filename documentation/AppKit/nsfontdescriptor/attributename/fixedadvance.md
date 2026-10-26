@@ -48,6 +48,8 @@ The value of this attribute is an [`NSNumber`](../../../Foundation/nsnumber.md) 
   A dictionary that fully describes the font traits.
 - [static let featureSettings: NSFontDescriptor.AttributeName](./featuresettings.md)
   An array of dictionaries representing non-default font feature settings.
+- [NSFontColorAttribute](../../nsfontcolorattribute.md)
+  An optional `NSData` object that specifies the font color.
 
 
 ---

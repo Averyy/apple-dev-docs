@@ -24,6 +24,12 @@ init()
 - (instancetype) init;
 ```
 
+## See Also
+
+### Creating video capture output
+- [+ new](./new.md)
+  Creates a new video file output.
+
 
 ---
 

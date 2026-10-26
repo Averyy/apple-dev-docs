@@ -46,7 +46,7 @@ A numeric identifier for the request. If you need to cancel the request before i
 
 #### Discussion
 
-Use this method to load Live Photo objects for display from data files previously exported from a Photos library. For example, a social networking app can use the [`PHAssetResource`](../phassetresource.md) class to retrieve the data files that constitute a Live Photo in one user’s library and upload them to a server. Then, on another user’s device, the app downloads those data files and uses this method to re-create a Live Photo object for display using the [`PHLivePhotoView`](https://developer.apple.com/documentation/photosui/phlivephotoview) class.
+Use this method to load Live Photo objects for display from data files previously exported from a Photos library. For example, a social networking app can use the [`PHAssetResource`](../phassetresource.md) class to retrieve the data files that constitute a Live Photo in one user’s library and upload them to a server. Then, on another user’s device, the app downloads those data files and uses this method to re-create a Live Photo object for display using the [`PHLivePhotoView`](../../PhotosUI/phlivephotoview.md) class.
 
 > **Note**:  To instead obtain a [`PHLivePhoto`](../phlivephoto.md) object representing a Live Photo asset from the user’s Photos library, use the [`PHAsset`](../phasset.md) class to locate the asset and the [`PHImageManager`](../phimagemanager.md) class to fetch the asset’s Live Photo data for display.
 >

@@ -44,6 +44,10 @@ This request generates a collection of [`VNHumanBodyPose3DObservation`](./vnhuma
   Returns the joint names the request supports.
 - [var supportedJointNames: [VNHumanBodyPose3DObservation.JointName]](./vndetecthumanbodypose3drequest/supportedjointnames.md)
   Returns the joint group names the request supports.
+- [- supportedJointNamesAndReturnError:](./vndetecthumanbodypose3drequest/supportedjointnamesandreturnerror_.md)
+  Returns the joint names the request supports.
+- [- supportedJointsGroupNamesAndReturnError:](./vndetecthumanbodypose3drequest/supportedjointsgroupnamesandreturnerror_.md)
+  Returns the joint group names the request supports.
 ### Accessing the Results
 - [var results: [VNHumanBodyPose3DObservation]?](./vndetecthumanbodypose3drequest/results.md)
   The 3D body pose the request observes.

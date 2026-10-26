@@ -103,6 +103,10 @@ operation.qualityOfService = NSQualityOfServiceUtility;
   Creates a named query-based subscription that queries records of a specific type.
 - [init(coder: NSCoder)](./ckquerysubscription/init%28coder%29.md)
   Creates a query-based subscription from a serialized instance.
+- [- initWithRecordType:predicate:options:](./ckquerysubscription/initwithrecordtype_predicate_options_.md)
+  Creates a query-based subscription that queries records of a specific type.
+- [- initWithRecordType:predicate:subscriptionID:options:](./ckquerysubscription/initwithrecordtype_predicate_subscriptionid_options_.md)
+  Creates a named query-based subscription that queries records of a specific type.
 ### Accessing the Subscription Search Parameters
 - [var predicate: NSPredicate](./ckquerysubscription/predicate.md)
   The matching criteria to apply to records.
@@ -115,6 +119,8 @@ operation.qualityOfService = NSQualityOfServiceUtility;
   The type of record that the subscription queries.
 - [var zoneID: CKRecordZone.ID?](./ckquerysubscription/zoneid.md)
   The ID of the record zone that the subscription queries.
+- [recordType](./ckquerysubscription/recordtype-5l3zs.md)
+  The type of record that the subscription queries.
 ### Initializers
 - [convenience init(recordType: CKRecord.RecordType, predicate: NSPredicate, options: CKQuerySubscription.Options)](./ckquerysubscription/init%28recordtype,predicate,options%29.md)
 

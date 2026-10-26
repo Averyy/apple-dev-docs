@@ -25,6 +25,8 @@ class ODQuery
 ### Creating and Initializing a Query
 - [init(node: ODNode!, forRecordTypes: Any!, attribute: String!, matchType: ODMatchType, queryValues: Any!, returnAttributes: Any!, maximumResults: Int) throws](./odquery/init%28node,forrecordtypes,attribute,matchtype,queryvalues,returnattributes,maximumresults%29.md)
   Creates a query object with provided parameters.
+- [+ queryWithNode:forRecordTypes:attribute:matchType:queryValues:returnAttributes:maximumResults:error:](./odquery/querywithnode_forrecordtypes_attribute_matchtype_queryvalues_returnattributes_maximumresults_error_.md)
+  Returns an autoreleased query object created with provided parameters.
 ### Managing Asynchronous Queries
 - [var delegate: (any ODQueryDelegate)!](./odquery/delegate.md)
   The query’s delegate.

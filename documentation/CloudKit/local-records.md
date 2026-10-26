@@ -85,6 +85,8 @@ operation.desiredKeys = [
   An object that manages the synchronization of local and remote record data.
 - [Shared Records](./shared-records.md)
   Share one or more records with other iCloud users.
+- [CKSyncEngine](./cksyncengine-4b4w9.md)
+  An object that manages the synchronization of local and remote record data.
 
 
 ---

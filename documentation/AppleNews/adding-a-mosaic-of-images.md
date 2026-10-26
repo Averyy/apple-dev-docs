@@ -159,13 +159,13 @@ The order of your first and second images has been switched.
 ## See Also
 
 ### Related Documentation
-- [object Mosaic](https://developer.apple.com/documentation/applenewsformat/mosaic)
+- [object Mosaic](../AppleNewsFormat/mosaic.md)
   The component for displaying a set of images as tiles in no particular order.
-- [object GalleryItem](https://developer.apple.com/documentation/applenewsformat/galleryitem)
+- [object GalleryItem](../AppleNewsFormat/galleryitem.md)
   An object used in a gallery or mosaic component for displaying an individual image.
-- [object Caption](https://developer.apple.com/documentation/applenewsformat/caption)
+- [object Caption](../AppleNewsFormat/caption.md)
   The component for adding caption text.
-- [object CaptionDescriptor](https://developer.apple.com/documentation/applenewsformat/captiondescriptor)
+- [object CaptionDescriptor](../AppleNewsFormat/captiondescriptor.md)
   The object you use in image components for displaying captions when the image is full-screen.
 ### Introductory Design Tutorial
 - [Setting Up the Introductory Tutorial](./setting-up-the-introductory-tutorial.md)

@@ -44,6 +44,10 @@ The [`addInput(_:)`](../avcapturesession/addinput%28_%29.md): or [`addOutput(_:)
 ### Creating a connection
 - [init(inputPort: AVCaptureInput.Port, videoPreviewLayer: AVCaptureVideoPreviewLayer)](./init%28inputport,videopreviewlayer%29.md)
   Creates a capture connection that represents a connection between an input port and a video preview layer.
+- [+ connectionWithInputPorts:output:](./connectionwithinputports_output_.md)
+  Returns a capture connection that represents a connection between multiple input ports and an output.
+- [+ connectionWithInputPort:videoPreviewLayer:](./connectionwithinputport_videopreviewlayer_.md)
+  Returns a capture connection that represents a connection between an input port and a video preview layer.
 
 
 ---

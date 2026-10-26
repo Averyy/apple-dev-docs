@@ -32,6 +32,12 @@ Returns the initialized instance of this class.
 
 - `name`: Name of the related contact.
 
+## See Also
+
+### Creating a Contact Relation Object
+- [+ contactRelationWithName:](./contactrelationwithname_.md)
+  Instantiate a class instance with the name of the related contact.
+
 
 ---
 

@@ -30,6 +30,12 @@ func cancelExport()
 
 Apple discourages the use of this symbol. Use [`cancel()`](../../Swift/task/cancel%28%29.md) on the [`Task`](../../Swift/task.md) or parent task that initiated the export instead.
 
+## See Also
+
+### Exporting media
+- [- exportAsynchronouslyWithCompletionHandler:](./exportasynchronously%28completionhandler%29.md)
+  Starts the asynchronous execution of an export session.
+
 
 ---
 

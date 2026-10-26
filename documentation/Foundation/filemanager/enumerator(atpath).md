@@ -65,6 +65,8 @@ The [`FileManager.DirectoryEnumerator`](./directoryenumerator.md) class has meth
   Returns the attributes of the item at a given path.
 - [var currentDirectoryPath: String](./currentdirectorypath.md)
   The path to the program’s current directory.
+- [- enumeratorAtURL:includingPropertiesForKeys:options:errorHandler:](../nsfilemanager/enumeratoraturl_includingpropertiesforkeys_options_errorhandler_.md)
+  Returns a directory enumerator object that can be used to perform a deep enumeration of the directory at the specified URL.
 ### Discovering directory contents
 - [func contentsOfDirectory(at: URL, includingPropertiesForKeys: [URLResourceKey]?, options: FileManager.DirectoryEnumerationOptions) throws -> [URL]](./contentsofdirectory%28at,includingpropertiesforkeys,options%29.md)
   Performs a shallow search of the specified directory and returns URLs for the contained items.

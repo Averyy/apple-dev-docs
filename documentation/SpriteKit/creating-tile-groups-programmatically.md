@@ -84,6 +84,8 @@ With automapping enabled, when an individual tile is placed on the map using  [`
   Creates and initializes a simple tile group with a single tile definition.
 - [init(rules: [SKTileGroupRule])](./sktilegroup/init%28rules%29.md)
   Creates and initializes a tile group with the specified tile group rules.
+- [+ tileGroupWithTileDefinition:](./sktilegroup/tilegroupwithtiledefinition_.md)
+- [+ tileGroupWithRules:](./sktilegroup/tilegroupwithrules_.md)
 
 
 ---

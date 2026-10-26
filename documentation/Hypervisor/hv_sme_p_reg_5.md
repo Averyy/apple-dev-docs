@@ -35,6 +35,7 @@ HV_SME_P_REG_5
 - [var HV_SME_P_REG_6: hv_sme_p_reg_t](./hv_sme_p_reg_6.md)
 - [var HV_SME_P_REG_7: hv_sme_p_reg_t](./hv_sme_p_reg_7.md)
 - [var HV_SME_P_REG_8: hv_sme_p_reg_t](./hv_sme_p_reg_8.md)
+- [HV_SME_P_REG_9](./hv_sme_p_reg_9.md)
 
 
 ---

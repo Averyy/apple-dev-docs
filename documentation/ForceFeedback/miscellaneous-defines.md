@@ -40,6 +40,19 @@
 - [var FFERR_UNSUPPORTEDAXIS: Int](./fferr_unsupportedaxis.md)
 - [FFJOFS_<i>i</i>](./ffjofs_i_i_i.md)
 - [var FFJOFS_X: Int32](./ffjofs_x.md)
+- [FFERR_DEVICENOTREG](./fferr_devicenotreg.md)
+- [kFFEffectType_ConstantForce_ID](./kffeffecttype_constantforce_id.md)
+- [kFFEffectType_CustomForce_ID](./kffeffecttype_customforce_id.md)
+- [kFFEffectType_Damper_ID](./kffeffecttype_damper_id.md)
+- [kFFEffectType_Friction_ID](./kffeffecttype_friction_id.md)
+- [kFFEffectType_Inertia_ID](./kffeffecttype_inertia_id.md)
+- [kFFEffectType_RampForce_ID](./kffeffecttype_rampforce_id.md)
+- [kFFEffectType_SawtoothDown_ID](./kffeffecttype_sawtoothdown_id.md)
+- [kFFEffectType_SawtoothUp_ID](./kffeffecttype_sawtoothup_id.md)
+- [kFFEffectType_Sine_ID](./kffeffecttype_sine_id.md)
+- [kFFEffectType_Spring_ID](./kffeffecttype_spring_id.md)
+- [kFFEffectType_Square_ID](./kffeffecttype_square_id.md)
+- [kFFEffectType_Triangle_ID](./kffeffecttype_triangle_id.md)
 
 ## See Also
 

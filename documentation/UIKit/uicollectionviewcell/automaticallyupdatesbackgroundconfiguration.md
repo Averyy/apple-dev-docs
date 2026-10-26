@@ -40,6 +40,10 @@ If you override [`updateConfiguration(using:)`](./updateconfiguration%28using%29
   The view that displays behind the cell’s other content.
 - [var selectedBackgroundView: UIView?](./selectedbackgroundview.md)
   The view that displays just above the background view for a selected cell.
+- [- defaultBackgroundConfiguration](./defaultbackgroundconfiguration.md)
+  Retrieves a background configuration with system default values.
+- [backgroundConfiguration](./backgroundconfiguration-39dc0.md)
+  The current background configuration of the cell.
 
 
 ---

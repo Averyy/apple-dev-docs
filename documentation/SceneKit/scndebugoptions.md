@@ -63,6 +63,9 @@ Debug options are bit mask patterns. To display multiple debugging overlays, com
   Display a point cloud showing intermediate results of the scene analysis that ARKit uses to track device position.
 - [static let showWorldOrigin: SCNDebugOptions](./scndebugoptions/showworldorigin.md)
   Display a coordinate axis visualization indicating the position and orientation of the AR world coordinate system.
+### Enumeration Cases
+- [SCNDebugOptionNone](./scndebugoptions/scndebugoptionnone.md)
+  Disable all debugging overlays.
 
 ## Relationships
 

@@ -40,6 +40,13 @@ Initialized [`NSIndexSet`](../nsindexset.md) object with `index`.
   Initializes an allocated [`NSIndexSet`](../nsindexset.md) object with an index range.
 - [init(indexSet: IndexSet)](./init%28indexset%29.md)
   Initializes an allocated [`NSIndexSet`](../nsindexset.md) object with an index set.
+- [+ indexSet](./indexset.md)
+  Creates an empty index set.
+- [+ indexSetWithIndexesInRange:](./indexsetwithindexesinrange_.md)
+  Creates an index set with an index range.
+### Related Documentation
+- [+ indexSetWithIndex:](./indexsetwithindex_.md)
+  Creates an index set with an index.
 
 
 ---

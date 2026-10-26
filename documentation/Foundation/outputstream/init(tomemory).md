@@ -46,6 +46,10 @@ The contents of the memory stream are retrieved by passing the constant `NSStrea
   Returns an initialized output stream for writing to a specified file.
 - [init?(url: URL, append: Bool)](./init%28url,append%29-5soau.md)
   Returns an initialized output stream for writing to a specified URL.
+- [+ outputStreamToBuffer:capacity:](../nsoutputstream/outputstreamtobuffer_capacity_.md)
+  Creates and returns an initialized output stream that can write to a provided buffer.
+- [+ outputStreamToFileAtPath:append:](../nsoutputstream/outputstreamtofileatpath_append_.md)
+  Creates and returns an initialized output stream for writing to a specified file.
 
 
 ---

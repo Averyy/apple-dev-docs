@@ -72,6 +72,13 @@ class DOMElement
 - [func setAttributeNode(DOMAttr!) -> DOMAttr!](./domelement/setattributenode%28_%29.md)
 - [func setAttributeNodeNS(DOMAttr!) -> DOMAttr!](./domelement/setattributenodens%28_%29.md)
 - [func webkitRequestFullScreen(UInt16)](./domelement/webkitrequestfullscreen%28_%29.md)
+- [- getAttributeNS::](./domelement/getattributens__.md)
+- [- getAttributeNodeNS::](./domelement/getattributenodens__.md)
+- [- getElementsByTagNameNS::](./domelement/getelementsbytagnamens__.md)
+- [- hasAttributeNS::](./domelement/hasattributens__.md)
+- [- removeAttributeNS::](./domelement/removeattributens__.md)
+- [- setAttribute::](./domelement/setattribute__.md)
+- [- setAttributeNS:::](./domelement/setattributens___.md)
 
 ## Relationships
 

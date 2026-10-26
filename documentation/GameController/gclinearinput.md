@@ -52,6 +52,12 @@ protocol GCLinearInput : NSObjectProtocol
 ### Inherits From
 - [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
+## See Also
+
+### Directional pad elements
+- [GCInputDirectionPadName](./gcinputdirectionpadname.md)
+  The Objective-C type for the name of a directional pad.
+
 
 ---
 

@@ -43,6 +43,9 @@ enum AudioTimeStampFlags : UInt32;
   A flag that indicates that the SMPTE time is valid.
 - [static var wordClockTimeValid: AudioTimeStampFlags](./audiotimestampflags/wordclocktimevalid.md)
   A flag that indicates that the word clock time is valid.
+### Constants
+- [kAudioTimeStampNothingValid](./audiotimestampflags/kaudiotimestampnothingvalid.md)
+  A flag that indicates no fields are valid.
 
 ## Relationships
 

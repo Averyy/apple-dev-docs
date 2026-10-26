@@ -1,0 +1,44 @@
+# buttonWithConfiguration:primaryAction:
+
+**Framework**: UIKit  
+**Kind**: method  
+**Role**: Type Method
+
+Creates a new button with the specified configuration and registers the primary action event.
+
+**Availability**:
+- iOS 15.0+
+- iPadOS 15.0+
+- Mac Catalyst 15.0+
+- tvOS 15.0+
+- visionOS 1.0+
+
+## Declaration
+
+```objc
++ (instancetype) buttonWithConfiguration:(UIButtonConfiguration *) configuration primaryAction:(UIAction *) primaryAction;
+```
+
+#### Return Value
+
+A new button.
+
+#### Discussion
+
+If the primary action contains a title or an image, this method copies them to the configuration and the button displays them.
+
+## Parameters
+
+- `configuration`: The button configuration.
+- `primaryAction`: The action to perform for the [`primaryActionTriggered`](../uicontrol/event/primaryactiontriggered.md) control event.
+
+## See Also
+
+### Creating buttons from a configuration object
+- [UIButtonConfiguration](../uibuttonconfiguration.md)
+  A configuration that specifies the appearance and behavior of a button and its contents.
+
+
+---
+
+*[View on Apple Developer](https://developer.apple.com/documentation/uikit/uibutton/buttonwithconfiguration:primaryaction:)*

@@ -45,6 +45,10 @@ A subclass with explicit opacity components should override this method to retur
   Creates a color object that encapsulates a Core Image color.
 - [init(cgColor: CGColor)](./init%28cgcolor%29-27r9g.md)
   Creates a color object using the specified Quartz color reference.
+- [+ colorWithCIColor:](./colorwithcicolor_.md)
+  Creates a color object that encapsulates a Core Image color.
+- [+ colorWithCGColor:](./colorwithcgcolor_.md)
+  Creates a color object using the specified Quartz color reference.
 
 
 ---

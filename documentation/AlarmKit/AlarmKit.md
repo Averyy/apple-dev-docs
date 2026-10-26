@@ -36,6 +36,11 @@ Use `AlarmKit` to create custom alarms and timers in your app. `AlarmKit` provid
   An object that contains all information necessary for the alarm UI.
 - [protocol AlarmMetadata](./alarmmetadata.md)
   A metadata object that contains information about an alarm.
+### Variables
+- [AlarmKitVersionNumber](./alarmkitversionnumber.md)
+  Project version number for AlarmKit.
+- [AlarmKitVersionString](./alarmkitversionstring.md)
+  Project version string for AlarmKit.
 
 
 ---

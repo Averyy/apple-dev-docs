@@ -78,6 +78,10 @@ When managing CarPlay features, users don’t need to include the name of the ap
 ### Initializing the Intent Object
 - [convenience init(enableFan: Bool?, enableAirConditioner: Bool?, enableClimateControl: Bool?, enableAutoMode: Bool?, airCirculationMode: INCarAirCirculationMode, fanSpeedIndex: Int?, fanSpeedPercentage: Double?, relativeFanSpeedSetting: INRelativeSetting, temperature: Measurement<UnitTemperature>?, relativeTemperatureSetting: INRelativeSetting, climateZone: INCarSeat, carName: INSpeakableString?)](./insetclimatesettingsincarintent/init%28enablefan,enableairconditioner,enableclimatecontrol,enableautomode,aircirculationmode,fanspeedindex,fanspeedpercentage,relativefanspeedsetting,temperature,relativetemperaturesetting,climatezone,carname%29.md)
   Creates the intent object with the specified climate settings information.
+- [- initWithEnableFan:enableAirConditioner:enableClimateControl:enableAutoMode:airCirculationMode:fanSpeedIndex:fanSpeedPercentage:relativeFanSpeedSetting:temperature:relativeTemperatureSetting:climateZone:carName:](./insetclimatesettingsincarintent/initwithenablefan_enableairconditioner_enableclimatecontrol_enableautomode_aircirculationmode_fanspeedindex_fanspeedpercentage_relativefanspeedsetting_temperature_relativetemperaturesetting_climatezone_carname_.md)
+  Initializes the intent object with the specified climate settings information.
+- [- initWithEnableFan:enableAirConditioner:enableClimateControl:enableAutoMode:airCirculationMode:fanSpeedIndex:fanSpeedPercentage:relativeFanSpeedSetting:temperature:relativeTemperatureSetting:climateZone:](./insetclimatesettingsincarintent/initwithenablefan_enableairconditioner_enableclimatecontrol_enableautomode_aircirculationmode_fanspeedindex_fanspeedpercentage_relativefanspeedsetting_temperature_relativetemperaturesetting_climatezone_.md)
+  Initializes the intent object with the specified climate settings information.
 ### Getting the Car Name
 - [var carName: INSpeakableString?](./insetclimatesettingsincarintent/carname.md)
   A name that identifies the user’s car.
@@ -94,6 +98,10 @@ When managing CarPlay features, users don’t need to include the name of the ap
   A relative temperature setting.
 - [var climateZone: INCarSeat](./insetclimatesettingsincarintent/climatezone.md)
   The seat position to have its climate settings modified.
+- [enableClimateControl](./insetclimatesettingsincarintent/enableclimatecontrol-tviy.md)
+  A Boolean value indicating whether to turn on the climate control system.
+- [enableAutoMode](./insetclimatesettingsincarintent/enableautomode-6ye2n.md)
+  A Boolean value indicating whether to enable automatic mode for the climate control system.
 ### Getting the Fan Settings
 - [var enableFan: Bool?](./insetclimatesettingsincarintent/enablefan-5srs9.md)
   A Boolean value indicating whether to turn on the cabin fan system.
@@ -103,8 +111,16 @@ When managing CarPlay features, users don’t need to include the name of the ap
   A floating-point value indicating the requested fan speed specified as a percentage of the maximum speed.
 - [var relativeFanSpeedSetting: INRelativeSetting](./insetclimatesettingsincarintent/relativefanspeedsetting.md)
   A relative fan speed setting.
+- [enableFan](./insetclimatesettingsincarintent/enablefan-3bu9e.md)
+  A Boolean value indicating whether to turn on the cabin fan system.
+- [fanSpeedIndex](./insetclimatesettingsincarintent/fanspeedindex-4c1rr.md)
+  An integer value indicating the desired fan speed position.
+- [fanSpeedPercentage](./insetclimatesettingsincarintent/fanspeedpercentage-ep0u.md)
+  A floating-point value indicating the requested fan speed specified as a percentage of the maximum speed.
 ### Getting the Air Conditioner Settings
 - [var enableAirConditioner: Bool?](./insetclimatesettingsincarintent/enableairconditioner-9q3dr.md)
+  A Boolean value indicating whether to turn on the air conditioner system.
+- [enableAirConditioner](./insetclimatesettingsincarintent/enableairconditioner-3prnk.md)
   A Boolean value indicating whether to turn on the air conditioner system.
 
 ## Relationships

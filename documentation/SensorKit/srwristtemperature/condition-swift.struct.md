@@ -33,6 +33,8 @@ enum SRWristTemperatureCondition : NSUInteger;
 ### Creating conditions
 - [init(rawValue: UInt)](./condition-swift.struct/init%28rawvalue%29.md)
   Creates and returns a new structure with the specified value.
+### Enumeration Cases
+- [SRWristTemperatureConditionNone](../srwristtemperaturecondition/srwristtemperatureconditionnone.md)
 
 ## Relationships
 

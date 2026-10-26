@@ -26,6 +26,8 @@ class MPSNNReductionSpatialMeanGradientNode
 
 ### Initializers
 - [init(sourceGradient: MPSNNImageNode, sourceImage: MPSNNImageNode, gradientState: MPSNNGradientStateNode)](./mpsnnreductionspatialmeangradientnode/init%28sourcegradient,sourceimage,gradientstate%29.md)
+### Type Methods
+- [+ nodeWithSourceGradient:sourceImage:gradientState:](./mpsnnreductionspatialmeangradientnode/nodewithsourcegradient_sourceimage_gradientstate_.md)
 
 ## Relationships
 

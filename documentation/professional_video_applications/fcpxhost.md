@@ -21,7 +21,7 @@ protocol FCPXHost : NSObjectProtocol
 
 ## Mentions
 
-- [Interacting with the Final Cut Pro Timeline](https://developer.apple.com/documentation/professional-video-applications/interacting-with-the-final-cut-pro-timeline)
+- [Interacting with the Final Cut Pro Timeline](../Professional-Video-Applications/interacting-with-the-final-cut-pro-timeline.md)
 
 #### Overview
 
@@ -47,7 +47,7 @@ Workflow extensions can use the [`timeline`](./fcpxhost/timeline.md) property of
 ## See Also
 
 ### FCPX Interactions
-- [Interacting with the Final Cut Pro Timeline](https://developer.apple.com/documentation/professional-video-applications/interacting-with-the-final-cut-pro-timeline)
+- [Interacting with the Final Cut Pro Timeline](../Professional-Video-Applications/interacting-with-the-final-cut-pro-timeline.md)
   Extend your workflows beyond media exchange by enabling a workflow extension to interact with the Final Cut Pro timeline.
 - [func ProExtensionHostSingleton() -> (any NSObjectProtocol)?](./proextensionhostsingleton%28%29.md)
   Returns the singleton proxy instance of the host object.

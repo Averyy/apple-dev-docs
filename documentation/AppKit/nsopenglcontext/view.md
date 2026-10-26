@@ -31,6 +31,11 @@ The view, or `nil` if the receiver has no drawable object, is in full-screen mod
   Disassociates the OpenGL context from its viewport.
 - [func update()](./update%28%29.md)
   Updates the OpenGL context’s drawable object.
+### Related Documentation
+- [- setOffScreen:width:height:rowbytes:](./setoffscreen_width_height_rowbytes_.md)
+  Instructs the OpenGL context to render into an offscreen buffer with the specified attributes.
+- [- setFullScreen](./setfullscreen.md)
+  Sets the OpenGL context to full-screen mode.
 
 
 ---

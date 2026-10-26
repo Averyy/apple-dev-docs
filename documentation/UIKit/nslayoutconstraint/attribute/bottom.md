@@ -56,6 +56,8 @@ NSLayoutAttributeBottom
   The object’s top margin.
 - [NSLayoutConstraint.Attribute.bottomMargin](./bottommargin.md)
   The object’s bottom margin.
+- [NSLayoutAttributeBaseline](../../nslayoutattribute/nslayoutattributebaseline.md)
+  The object’s baseline.
 
 
 ---

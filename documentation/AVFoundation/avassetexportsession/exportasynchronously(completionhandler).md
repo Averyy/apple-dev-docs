@@ -34,6 +34,12 @@ func export() async
 
 - `handler`: A callback the system invokes when it finishes successfully, or in the event of writing failure.
 
+## See Also
+
+### Exporting media
+- [- cancelExport](./cancelexport%28%29.md)
+  Cancels the execution of an export session.
+
 
 ---
 

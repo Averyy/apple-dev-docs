@@ -37,6 +37,8 @@ Use the [`startDate`](./srwristtemperaturesession/startdate.md) and [`duration`]
 ### Getting recorded temperatures
 - [var temperatures: some Sequence<SRWristTemperature>](./srwristtemperaturesession/temperatures-8bqrl.md)
   The wrist temperatures and their accuracies.
+- [temperatures](./srwristtemperaturesession/temperatures-7p7du.md)
+  An enumerator that you use to get the wrist temperatures and their accuracies.
 
 ## Relationships
 

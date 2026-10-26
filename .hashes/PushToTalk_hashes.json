@@ -10,6 +10,11 @@
       "file_path": "documentation/PushToTalk/creating-a-push-to-talk-app.md",
       "hash": "19b48f7dbb0d657bbec31d25c5344fd9b375fedaf9ddd63ba1b265376ba9c008"
     },
+    "https://developer.apple.com/documentation/pushtotalk/pt_extern": {
+      "etag": "\"99c-65d55fa6a8d38-df\"",
+      "file_path": "documentation/PushToTalk/pt_extern.md",
+      "hash": "f6417af223cdff3cebeb4363085e937025a839a8e57614e631ab1b993b6ef422"
+    },
     "https://developer.apple.com/documentation/pushtotalk/ptchanneldescriptor": {
       "etag": "\"4aeb-65d55fa6cf25c-df\"",
       "file_path": "documentation/PushToTalk/ptchanneldescriptor.md",
@@ -565,6 +570,11 @@
       "file_path": "documentation/PushToTalk/creating-a-push-to-talk-app.md",
       "hash": "19b48f7dbb0d657bbec31d25c5344fd9b375fedaf9ddd63ba1b265376ba9c008"
     },
+    "https://developer.apple.com/tutorials/data/documentation/pushtotalk/pt_extern.json": {
+      "etag": "\"99c-65d55fa6a8d38-df\"",
+      "file_path": "documentation/PushToTalk/pt_extern.md",
+      "hash": "f6417af223cdff3cebeb4363085e937025a839a8e57614e631ab1b993b6ef422"
+    },
     "https://developer.apple.com/tutorials/data/documentation/pushtotalk/ptchanneldescriptor.json": {
       "etag": "\"4aeb-65d55fa6cf25c-df\"",
       "file_path": "documentation/PushToTalk/ptchanneldescriptor.md",
@@ -1113,8 +1123,8 @@
   },
   "metadata": {
     "render": {
-      "version": 1
+      "version": 2
     },
-    "total_pages": 222
+    "total_pages": 224
   }
 }

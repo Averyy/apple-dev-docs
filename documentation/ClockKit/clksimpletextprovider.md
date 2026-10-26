@@ -40,6 +40,12 @@ When creating a simple text provider, you can specify both a long version and a 
   Creates and returns a text provider with both long and short versions of the text.
 - [convenience init(text: String, shortText: String?, accessibilityLabel: String?)](./clksimpletextprovider/init%28text,shorttext,accessibilitylabel%29.md)
   Creates and returns a text provider with the text strings and an accessible string.
+- [- initWithText:](./clksimpletextprovider/initwithtext_.md)
+  Creates and returns a text provider with the specified long form text.
+- [- initWithText:shortText:](./clksimpletextprovider/initwithtext_shorttext_.md)
+  Creates and returns a text provider with both long and short versions of the text.
+- [- initWithText:shortText:accessibilityLabel:](./clksimpletextprovider/initwithtext_shorttext_accessibilitylabel_.md)
+  Creates and returns a text provider with the text strings and an accessible string.
 ### Getting the Text
 - [var text: String](./clksimpletextprovider/text.md)
   The long version of text that you want to display.

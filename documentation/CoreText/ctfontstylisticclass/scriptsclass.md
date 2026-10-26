@@ -48,6 +48,8 @@ kCTFontScriptsClass
   The font’s style includes highly decorated or stylized character shapes such as those typically used in headlines.
 - [static var symbolicClass: CTFontStylisticClass](./symbolicclass.md)
   The font’s style is generally design independent.
+- [kCTFontUnknownClass](./kctfontunknownclass.md)
+  The font has no design classification.
 
 
 ---

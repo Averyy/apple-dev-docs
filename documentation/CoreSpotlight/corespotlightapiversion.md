@@ -24,6 +24,14 @@ var CoreSpotlightAPIVersion: Int32 { get }
 #define CoreSpotlightAPIVersion
 ```
 
+## See Also
+
+### Version
+- [CoreSpotlightVersionNumber](./corespotlightversionnumber.md)
+  The project version number for Core Spotlight.
+- [CoreSpotlightVersionString](./corespotlightversionstring.md)
+  The project version string for Core Spotlight.
+
 
 ---
 

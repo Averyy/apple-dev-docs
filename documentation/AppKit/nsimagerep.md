@@ -99,6 +99,8 @@ The [`NSImageRep`](./nsimagerep.md) class is called “semiabstract” because i
 ### Notifications
 - [class let registryDidChangeNotification: NSNotification.Name](./nsimagerep/registrydidchangenotification.md)
   Posted whenever the image representation class registry changes.
+- [NSImageRepRegistryChangedNotification](./nsimagerepregistrychangednotification.md)
+  Posted whenever the image representation class registry changes.
 ### Deprecated
 - [Deprecated symbols](./nsimagerep-deprecated-symbols.md)
   Review symbols that are no longer in active development, and their recommended replacements.
@@ -118,6 +120,7 @@ The [`NSImageRep`](./nsimagerep.md) class is called “semiabstract” because i
 - [NSEPSImageRep](./nsepsimagerep.md)
 - [NSPDFImageRep](./nspdfimagerep.md)
 - [NSPICTImageRep](./nspictimagerep.md)
+- [NSCachedImageRep](./nscachedimagerep.md)
 ### Conforms To
 - [CVarArg](../Swift/cvararg.md)
 - [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)

@@ -21,7 +21,7 @@ var deviceRegistryID: UInt64 { get }
 
 ## Mentions
 
-- [Rendering in FxPlug](https://developer.apple.com/documentation/professional-video-applications/rendering-in-fxplug)
+- [Rendering in FxPlug](../../Professional-Video-Applications/rendering-in-fxplug.md)
 
 ## See Also
 

@@ -1,0 +1,45 @@
+# colorWithDynamicProvider:
+
+**Framework**: UIKit  
+**Kind**: method  
+**Role**: Type Method
+
+Returns a color object that uses the specified block to generate its color data dynamically.
+
+**Availability**:
+- iOS 13.0+
+- iPadOS 13.0+
+- Mac Catalyst 13.1+
+- tvOS 13.0+
+- visionOS 1.0+
+
+## Declaration
+
+```objc
++ (UIColor *) colorWithDynamicProvider:(UIColor * (^)(UITraitCollection *traitCollection)) dynamicProvider;
+```
+
+#### Return Value
+
+A color object whose color information is provided by the specified block.
+
+#### Discussion
+
+Use this method to create a color object whose component values change based on the currently active traits. The block you provide creates a new color object based on the traits in the provided trait collection.
+
+## Parameters
+
+- `dynamicProvider`: A block that determines the appropriate color values based on the specified traits. This block returns a [`UIColor`](../uicolor.md) object and takes a single parameter:
+
+  - **traits**: The trait collection to use when generating the color information. Always use the traits in this collection, and not the traits of the current environment, when determining the color information.
+
+## See Also
+
+### Creating a color dynamically
+- [init(dynamicProvider: (UITraitCollection) -> UIColor)](./init%28dynamicprovider%29.md)
+  Creates a color object that uses the specified block to generate its color data dynamically.
+
+
+---
+
+*[View on Apple Developer](https://developer.apple.com/documentation/uikit/uicolor/colorwithdynamicprovider:)*

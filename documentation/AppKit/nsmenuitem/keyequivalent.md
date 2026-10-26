@@ -28,6 +28,10 @@ If you want to specify the Backspace key as the key equivalent for a menu item, 
 ### Related Documentation
 - [var userKeyEquivalent: String](./userkeyequivalent.md)
   The user-assigned key equivalent for the menu item.
+- [- mnemonic](./mnemonic.md)
+  Returns the character in the menu item title that appears underlined for use as a mnemonic.
+- [- setMnemonicLocation:](./setmnemoniclocation_.md)
+  Sets the character of the menu item title at location that is to be underlined.
 ### Managing key equivalents
 - [var keyEquivalentModifierMask: NSEvent.ModifierFlags](./keyequivalentmodifiermask.md)
   The menu item’s keyboard equivalent modifiers.

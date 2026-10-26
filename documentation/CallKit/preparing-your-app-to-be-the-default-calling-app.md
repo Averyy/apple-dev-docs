@@ -32,7 +32,7 @@ If starting a VoIP conversation fails, you may wish to have the conversation fal
 
 > **Note**: Only use the `telephony:` URL scheme as a fallback behavior in response to a person’s explicit action in your app, such as clicking a call button after your app presents the proposed number to call.
 
-For more information on VoIP calling related intents, see [`INStartCallIntent`](https://developer.apple.com/documentation/intents/instartcallintent).
+For more information on VoIP calling related intents, see [`INStartCallIntent`](../Intents/instartcallintent.md).
 
 ##### Prepare your app for submission to App Store Connect
 

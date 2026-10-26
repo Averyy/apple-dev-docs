@@ -27,6 +27,12 @@ An initialized tree node that represents `modelObject`.
 
 - `modelObject`: The object the tree node represents.
 
+## See Also
+
+### Creating tree nodes
+- [+ treeNodeWithRepresentedObject:](./treenodewithrepresentedobject_.md)
+  Creates and returns a tree node that represents the specified object.
+
 
 ---
 

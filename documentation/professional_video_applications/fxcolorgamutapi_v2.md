@@ -21,7 +21,7 @@ protocol FxColorGamutAPI_v2
 
 ## Mentions
 
-- [Managing color space and gamut in plug-ins](https://developer.apple.com/documentation/professional-video-applications/managing-color-space-and-gamut-in-plug-ins)
+- [Managing color space and gamut in plug-ins](../Professional-Video-Applications/managing-color-space-and-gamut-in-plug-ins.md)
 
 #### Overview
 
@@ -45,7 +45,7 @@ The `FxColorGamutAPI` retrieves the matrices for converting between RGB (in the 
 ## See Also
 
 ### Color
-- [Managing color space and gamut in plug-ins](https://developer.apple.com/documentation/professional-video-applications/managing-color-space-and-gamut-in-plug-ins)
+- [Managing color space and gamut in plug-ins](../Professional-Video-Applications/managing-color-space-and-gamut-in-plug-ins.md)
   Control the appearance of your rendering by using the color gamut API.
 
 

@@ -38,6 +38,8 @@ For example, to support a migration that changes an optional attribute to be non
   Creates a custom migration stage with the specified source and destination model references.
 - [class NSManagedObjectModelReference](./nsmanagedobjectmodelreference.md)
   An object that describes a specific version of an object model.
+- [- initWithCurrentModelReference:nextModelReference:](./nscustommigrationstage/initwithcurrentmodelreference_nextmodelreference_.md)
+  Creates a custom migration stage with the specified source and destination model references.
 ### Accessing model references
 - [var currentModel: NSManagedObjectModelReference](./nscustommigrationstage/currentmodel.md)
   The reference that represents the migration’s source model.
@@ -47,6 +49,10 @@ For example, to support a migration that changes an optional attribute to be non
 - [var willMigrateHandler: ((NSStagedMigrationManager, NSCustomMigrationStage) throws -> Void)?](./nscustommigrationstage/willmigratehandler-5wead.md)
   The handler to execute before the stage runs.
 - [var didMigrateHandler: ((NSStagedMigrationManager, NSCustomMigrationStage) throws -> Void)?](./nscustommigrationstage/didmigratehandler-2zbss.md)
+  The handler to execute after the stage runs.
+- [willMigrateHandler](./nscustommigrationstage/willmigratehandler-72p73.md)
+  The handler to execute before the stage runs.
+- [didMigrateHandler](./nscustommigrationstage/didmigratehandler-36uhx.md)
   The handler to execute after the stage runs.
 
 ## Relationships

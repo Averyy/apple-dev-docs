@@ -51,6 +51,7 @@ NEHotspostHelperCommand objects are passed to the the Hotspot Helper app’s com
   The result of handling a hotspot command.
 ### Instance Properties
 - [var interface: NWInterface](./nehotspothelpercommand/interface-46dq.md)
+- [interface](./nehotspothelpercommand/interface-7rt15.md)
 
 ## Relationships
 

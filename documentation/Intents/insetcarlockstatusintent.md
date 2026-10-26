@@ -75,11 +75,15 @@ Unlike other SiriKit intents, these phrases do not always require your app’s n
 ### Initializing the Intent Object
 - [convenience init(locked: Bool?, carName: INSpeakableString?)](./insetcarlockstatusintent/init%28locked,carname%29.md)
   Initializes an intent to set the lock status of the named car.
+- [- initWithLocked:carName:](./insetcarlockstatusintent/initwithlocked_carname_.md)
+  Initializes an intent to set the lock status of the named car.
 ### Getting the Car Name
 - [var carName: INSpeakableString?](./insetcarlockstatusintent/carname.md)
   A name that identifies the user’s car.
 ### Getting the Locked Status
 - [var locked: Bool?](./insetcarlockstatusintent/locked-9h0kx.md)
+  A Boolean value that indicates whether to lock the car.
+- [locked](./insetcarlockstatusintent/locked-61uw4.md)
   A Boolean value that indicates whether to lock the car.
 
 ## Relationships

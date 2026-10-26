@@ -39,6 +39,11 @@ A utility object for managing a recyclable set of pixel buffer objects.
 ### Notifications
 - [let kCVPixelBufferPoolFreeBufferNotification: CFString](./kcvpixelbufferpoolfreebuffernotification.md)
   A notification that the system posts if a buffer becomes available after it fails to create a pixel buffer with auxiliary attributes because it exceeded the threshold you specified.
+### Retaining and releasing pools
+- [CVPixelBufferPoolRetain](./cvpixelbufferpoolretain.md)
+  Retains the pixel buffer pool that you specify.
+- [CVPixelBufferPoolRelease](./cvpixelbufferpoolrelease.md)
+  Releases a pixel buffer pool.
 
 ## See Also
 

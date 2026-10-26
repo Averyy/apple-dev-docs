@@ -30,6 +30,9 @@ typedef enum { ... } DNSServiceAAAAPolicy;
 - [init(rawValue: UInt32)](./dnsserviceaaaapolicy/init%28rawvalue%29.md)
 ### Instance Properties
 - [var rawValue: UInt32](./dnsserviceaaaapolicy/rawvalue.md)
+### Enumeration Cases
+- [kDNSServiceAAAAPolicyFallback](./kdnsserviceaaaapolicyfallback.md)
+- [kDNSServiceAAAAPolicyNone](./kdnsserviceaaaapolicynone.md)
 
 ## Relationships
 

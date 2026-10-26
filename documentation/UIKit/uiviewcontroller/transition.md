@@ -32,6 +32,8 @@ class Transition
   Options for a zoom transition.
 - [UIViewController.Transition.ZoomSourceViewProviderContext](./transition/zoomsourceviewprovidercontext.md)
   A context object that contains references to the view controllers from a zoom transition.
+- [+ zoomWithOptions:sourceViewProvider:](../uiviewcontrollertransition/zoomwithoptions_sourceviewprovider_.md)
+  Creates a zoom transition from the view specified by the source provider.
 ### Accessing transitions
 - [static var coverVertical: Self](./transition/coververtical.md)
   A transition where the new view slides up from the bottom of the screen.
@@ -41,8 +43,18 @@ class Transition
   A transition where the current view flips horizontally to reveal the new view.
 - [static var partialCurl: Self](./transition/partialcurl.md)
   A transition where one corner of the current view curls up, revealing the new view underneath.
+- [+ coverVerticalTransition](../uiviewcontrollertransition/coververticaltransition.md)
+  A transition where the new view slides up from the bottom of the screen.
+- [+ crossDissolveTransition](../uiviewcontrollertransition/crossdissolvetransition.md)
+  A transition where the current view fades out while the new view fades in at the same time.
+- [+ flipHorizontalTransition](../uiviewcontrollertransition/fliphorizontaltransition.md)
+  A transition where the current view flips horizontally to reveal the new view.
+- [+ partialCurlTransition](../uiviewcontrollertransition/partialcurltransition.md)
+  A transition where one corner of the current view curls up, revealing the new view underneath.
 ### Type Methods
 - [static func zoom(options: UIViewController.Transition.ZoomOptions?, sourceBarButtonItemProvider: (UIViewController.Transition.ZoomSourceViewProviderContext) -> UIBarButtonItem?) -> Self](./transition/zoom%28options,sourcebarbuttonitemprovider%29.md)
+- [+ zoomWithOptions:sourceBarButtonItemProvider:](../uiviewcontrollertransition/zoomwithoptions_sourcebarbuttonitemprovider_.md)
+  Zoom from the `UIBarButtonItem` provided by the `sourceBarButtonItemProvider` to the presented or pushed view controller’s view.
 
 ## Relationships
 

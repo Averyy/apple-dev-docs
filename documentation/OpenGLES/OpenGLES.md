@@ -51,6 +51,9 @@ The Khronos Group maintains the OpenGL ES specifications and references for the
 - [var GL_TIMEOUT_IGNORED: UInt64](./gl_timeout_ignored.md)
 ### Functions
 - [func glFramebufferTextureLayer(GLenum, GLenum, GLuint, GLint, GLint)](./glframebuffertexturelayer%28_,_,_,_,_%29.md)
+### Macros
+- [GLES_API_DEPRICATED](./gles_api_depricated.md)
+- [OPENGLES_DEPRECATED](./opengles_deprecated.md)
 
 ## See Also
 

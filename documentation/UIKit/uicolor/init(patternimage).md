@@ -38,6 +38,12 @@ By default, the phase of the returned color is 0, which causes the top-left corn
 
 - `image`: The image to use when creating the pattern color.
 
+## See Also
+
+### Related Documentation
+- [+ colorWithPatternImage:](./colorwithpatternimage_.md)
+  Creates a color object using the specified image.
+
 
 ---
 

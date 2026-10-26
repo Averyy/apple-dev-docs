@@ -54,6 +54,8 @@ Instances of this class are thread safe.
 ### Notifications
 - [static let NEVPNStatusDidChange: NSNotification.Name](../Foundation/nsnotification/name-swift.struct/nevpnstatusdidchange.md)
   Posted when the status of the VPN connection changes.
+- [NEVPNStatusDidChangeNotification](./nevpnstatusdidchangenotification.md)
+  Posted when the status of the VPN connection changes.
 ### Handling errors
 - [func fetchLastDisconnectError(completionHandler: ((any Error)?) -> Void)](./nevpnconnection/fetchlastdisconnecterror%28completionhandler%29.md)
   Retrives the most recent error that caused the VPN to disconnect.

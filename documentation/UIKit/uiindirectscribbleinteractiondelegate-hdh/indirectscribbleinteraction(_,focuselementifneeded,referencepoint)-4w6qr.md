@@ -1,0 +1,23 @@
+# indirectScribbleInteraction(_:focusElementIfNeeded:referencePoint:)
+
+**Framework**: UIKit  
+**Kind**: method  
+**Role**: Instance Method
+
+**Availability**:
+- iOS 15.0+
+- iPadOS 15.0+
+- Mac Catalyst 15.0+
+- visionOS
+
+## Declaration
+
+```swift
+@MainActor
+func indirectScribbleInteraction(_ interaction: any UIInteraction, focusElementIfNeeded elementIdentifier: Self.ElementIdentifier, referencePoint focusReferencePoint: CGPoint) async -> (any UIResponder & UITextInput)?
+```
+
+
+---
+
+*[View on Apple Developer](https://developer.apple.com/documentation/uikit/uiindirectscribbleinteractiondelegate-hdh/indirectscribbleinteraction(_:focuselementifneeded:referencepoint:)-4w6qr)*

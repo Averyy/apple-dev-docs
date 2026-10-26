@@ -84,6 +84,9 @@ It is an error to store `self` into a new or existing live object (colloquially 
   Sets the value of the specified attribute in the receiver to the specified value.
 - [func fileManager(FileManager, shouldProceedAfterError: [AnyHashable : Any]) -> Bool](./filemanager%28_,shouldproceedaftererror%29.md)
   An `NSFileManager` object sends this message to its handler for each error it encounters when copying, moving, removing, or linking files or directories.
+### Related Documentation
+- [- dealloc](./dealloc.md)
+  Deallocates the memory occupied by the receiver.
 
 
 ---

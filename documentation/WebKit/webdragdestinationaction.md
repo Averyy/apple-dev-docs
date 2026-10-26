@@ -30,6 +30,8 @@ enum WebDragDestinationAction : NSUInteger;
   Allows the drag operation to change the location.
 - [static var any: WebDragDestinationAction](./webdragdestinationaction/any.md)
   Allows any defined action to occur.
+- [WebDragDestinationActionNone](./webdragdestinationaction/webdragdestinationactionnone.md)
+  No action.
 ### Initializers
 - [init(rawValue: UInt)](./webdragdestinationaction/init%28rawvalue%29.md)
 

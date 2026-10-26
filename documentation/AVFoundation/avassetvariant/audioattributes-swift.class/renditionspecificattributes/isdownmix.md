@@ -38,6 +38,8 @@ If the stream provides one or more multichannel variants, the system assumes the
   A Boolean value that indicates the variant is best suited for delivery to headphones.
 - [var isImmersive: Bool](./isimmersive.md)
   A Boolean value that indicates whether this variant contains virtualized or otherwise preprocessed audio content suitable for various purposes.
+- [channelCount](../../../avassetvariantaudiorenditionspecificattributes/channelcount.md)
+  The count of audio channels in the rendition.
 
 
 ---

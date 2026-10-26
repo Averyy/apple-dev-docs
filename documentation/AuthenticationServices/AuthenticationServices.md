@@ -134,6 +134,17 @@ Simple and straightforward sign-up and sign-in flows reduce the burden on the us
 - [class ASGeneratedPassword](./asgeneratedpassword.md)
 - [class ASOneTimeCodeCredentialIdentity](./asonetimecodecredentialidentity.md)
 - [class ASSavePasswordRequest](./assavepasswordrequest.md)
+- [ASAuthorizationPublicKeyCredentialLargeBlobRegistrationInput](./asauthorizationpublickeycredentiallargeblobregistrationinput-c.class.md)
+- [ASAuthorizationPublicKeyCredentialPRFAssertionInputValues](./asauthorizationpublickeycredentialprfassertioninputvalues.md)
+  The values to use as inputs to the salts for deriving the symmetric key.
+- [ASAuthorizationPublicKeyCredentialPRFAssertionOutput](./asauthorizationpublickeycredentialprfassertionoutput-c.class.md)
+  A type to represent outputs of the web authentication PRF extension, when requesting them during an assertion.
+- [ASAuthorizationPublicKeyCredentialPRFRegistrationInput](./asauthorizationpublickeycredentialprfregistrationinput-c.class.md)
+  A type that encapsulates input for PRF extensions during registration.
+- [ASAuthorizationPublicKeyCredentialPRFRegistrationOutput](./asauthorizationpublickeycredentialprfregistrationoutput-c.class.md)
+  A type to represent outputs of the web authentication PRF extension, when requesting them during a registration.
+- [ASPublicKeyCredentialClientData](./aspublickeycredentialclientdata-c.class.md)
+  This object represents the client data for a public key credential request, as defined in the WebAuthentication standard.
 ### Structures
 - [struct ASAuthorizationProviderExtensionEncryptionAlgorithm](./asauthorizationproviderextensionencryptionalgorithm.md)
 - [struct ASAuthorizationProviderExtensionSigningAlgorithm](./asauthorizationproviderextensionsigningalgorithm.md)
@@ -161,11 +172,38 @@ Simple and straightforward sign-up and sign-in flows reduce the burden on the us
   The activity type used in user activity objects sent to importing apps.
 - [let ASCredentialImportToken: String](./ascredentialimporttoken.md)
   The key for the token in the user info dictionary of the user activity sent to importing apps.
+- [ASAuthorizationProviderExtensionEncryptionAlgorithmECDHE_A256GCM](./asauthorizationproviderextensionencryptionalgorithm/ecdhe_a256gcm.md)
+  A encryption algorithm that uses NIST P-256 elliptic curve key agreement, ConcatKDF key derivation with a 256-bit digest, and the Advanced Encryption Standard cipher in Galois/Counter Mode with a key length of 256 bits.
+- [ASAuthorizationProviderExtensionEncryptionAlgorithmHPKE_Curve25519_SHA256_ChachaPoly](./asauthorizationproviderextensionencryptionalgorithm/hpke_curve25519_sha256_chachapoly.md)
+  A cipher suite for HPKE that uses X25519 elliptic curve key agreement, SHA-2 key derivation with a 256-bit digest, and the ChaCha20 stream cipher with the Poly1305 message authentication code.
+- [ASAuthorizationProviderExtensionEncryptionAlgorithmHPKE_P256_SHA256_AES_GCM_256](./asauthorizationproviderextensionencryptionalgorithm/hpke_p256_sha256_aes_gcm_256.md)
+  A cipher suite for HPKE that uses NIST P-256 elliptic curve key agreement, SHA-2 key derivation with a 256-bit digest, and the Advanced Encryption Standard cipher in Galois/Counter Mode with a key length of 256 bits.
+- [ASAuthorizationProviderExtensionEncryptionAlgorithmHPKE_P384_SHA384_AES_GCM_256](./asauthorizationproviderextensionencryptionalgorithm/hpke_p384_sha384_aes_gcm_256.md)
+  A cipher suite that you use for HPKE using NIST P-384 elliptic curve key agreement, SHA-2 key derivation with a 384-bit digest, and the Advanced Encryption Standard cipher in Galois/Counter Mode with a key length of 256 bits.
+- [ASAuthorizationProviderExtensionSigningAlgorithmEd25519](./asauthorizationproviderextensionsigningalgorithm/ed25519.md)
+- [ASAuthorizationProviderExtensionSigningAlgorithmES256](./asauthorizationproviderextensionsigningalgorithm/es256.md)
+- [ASAuthorizationProviderExtensionSigningAlgorithmES384](./asauthorizationproviderextensionsigningalgorithm/es384.md)
+- [ASGeneratedPasswordKindAlphanumeric](./asgeneratedpassword/kind-swift.struct/alphanumeric.md)
+  A password that only contains alphanumeric characters.
+- [ASGeneratedPasswordKindPassphrase](./asgeneratedpassword/kind-swift.struct/passphrase.md)
+  A password that contains multiple words or phrases.
+- [ASGeneratedPasswordKindStrong](./asgeneratedpassword/kind-swift.struct/strong.md)
+  A password that contains alphanumeric characters and special characters.
 ### Enumerations
 - [enum ASContactIdentifier](./ascontactidentifier.md)
 - [enum ASContactIdentifierRequest](./ascontactidentifierrequest.md)
 - [enum ASImportableExtension](./asimportableextension.md)
   A representation of CXF extensions.
+- [ASAuthorizationPlatformPublicKeyCredentialRegistrationRequestStyle](./asauthorizationplatformpublickeycredentialregistrationrequest/requeststyle-swift.enum.md)
+- [ASSavePasswordRequestEvent](./assavepasswordrequest/event-swift.enum.md)
+### Macros
+- [AS_API_AVAILABLE](./as_api_available.md)
+- [AS_EXTERN](./as_extern.md)
+- [AS_HEADER_AUDIT_BEGIN](./as_header_audit_begin.md)
+- [AS_HEADER_AUDIT_END](./as_header_audit_end.md)
+- [AS_SWIFT_SENDABLE](./as_swift_sendable.md)
+### Type Aliases
+- [ASGeneratedPasswordKind](./asgeneratedpassword/kind-swift.struct.md)
 
 
 ---

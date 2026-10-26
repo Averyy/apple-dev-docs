@@ -34,6 +34,8 @@ The value of this property is an `NSString` created by decoding the binary paylo
   A Swift array of corner points.
 - [var descriptor: CIBarcodeDescriptor?](./descriptor.md)
   A barcode description for use in Core Image.
+- [corners](./corners-8f6bv.md)
+  The points defining the (x, 	y) locations of the corners.
 
 
 ---

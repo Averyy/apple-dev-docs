@@ -36,6 +36,8 @@ Options for destroyWithOptions
 - [init(rawValue: UInt)](./iousbhostobjectdestroyoptions/init%28rawvalue%29.md)
 ### Type Properties
 - [static var deviceSurrender: IOUSBHostObjectDestroyOptions](./iousbhostobjectdestroyoptions/devicesurrender.md)
+### Enumeration Cases
+- [IOUSBHostObjectDestroyOptionsNone](./iousbhostobjectdestroyoptions/iousbhostobjectdestroyoptionsnone.md)
 
 ## Relationships
 

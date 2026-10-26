@@ -50,6 +50,8 @@ Use this key with the [`SCDynamicStoreSetNotificationKeys(_:_:_:)`](./scdynamics
   Creates a key that can be used to receive notifications when the `HostNames` entity changes.
 - [func SCDynamicStoreKeyCreateLocation(CFAllocator?) -> CFString](./scdynamicstorekeycreatelocation%28_%29.md)
   Creates a key that can be used to receive notifications when the location identifier changes.
+- [SCDynamicStoreKeyCreate](./scdynamicstorekeycreate.md)
+  Creates a dynamic store key using the specified format.
 
 
 ---

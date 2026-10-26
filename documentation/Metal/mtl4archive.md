@@ -41,6 +41,16 @@ The pipeline states can have intermediate representation (IR) binaries, GPU- and
   Creates a compute pipeline state from the archive with a compute descriptor and a dynamic linking descriptor.
 - [func makeRenderPipelineState(descriptor: MTL4PipelineDescriptor, dynamicLinkingDescriptor: MTL4RenderPipelineDynamicLinkingDescriptor?) throws -> any MTLRenderPipelineState](./mtl4archive/makerenderpipelinestate%28descriptor,dynamiclinkingdescriptor%29.md)
   Creates a render pipeline state from the archive with a render descriptor and a dynamic linking descriptor.
+### Creating compute pipeline states
+- [- newComputePipelineStateWithDescriptor:dynamicLinkingDescriptor:error:](./mtl4archive/newcomputepipelinestatewithdescriptor_dynamiclinkingdescriptor_error_.md)
+  Creates a compute pipeline state from the archive with a compute descriptor and a dynamic linking descriptor.
+- [- newComputePipelineStateWithDescriptor:error:](./mtl4archive/newcomputepipelinestatewithdescriptor_error_.md)
+  Creates a compute pipeline state from the archive with a descriptor.
+### Creating render pipeline states
+- [- newRenderPipelineStateWithDescriptor:dynamicLinkingDescriptor:error:](./mtl4archive/newrenderpipelinestatewithdescriptor_dynamiclinkingdescriptor_error_.md)
+  Creates a render pipeline state from the archive with a render descriptor and a dynamic linking descriptor.
+- [- newRenderPipelineStateWithDescriptor:error:](./mtl4archive/newrenderpipelinestatewithdescriptor_error_.md)
+  Creates a render pipeline state from the archive with a descriptor.
 
 ## Relationships
 
@@ -74,6 +84,8 @@ The pipeline states can have intermediate representation (IR) binaries, GPU- and
   Options for configuring the creation of binary functions.
 - [class MTL4PipelineStageDynamicLinkingDescriptor](./mtl4pipelinestagedynamiclinkingdescriptor.md)
   Groups together properties to drive the dynamic linking process of a pipeline stage.
+- [MTL4CompilerTask](./mtl4compilertask.md)
+  A reference to an asynchronous compilation task that you initiate from a compiler instance.
 
 
 ---

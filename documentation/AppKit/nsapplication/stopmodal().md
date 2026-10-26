@@ -42,6 +42,8 @@ This method should always be paired with a previous invocation of [`runModal(for
   A set of button return values for modal dialogs.
 - [NSApplication.ModalSession](./modalsession.md)
   Variables of type `NSModalSession` point to information used by the system between `NSApplication`’s [`beginModalSession(for:)`](./beginmodalsession%28for%29.md) and [`endModalSession(_:)`](./endmodalsession%28_%29.md) messages.
+- [NSModalPanelRunLoopMode](../nsmodalpanelrunloopmode.md)
+  The mode set when waiting for input from a modal panel, such as a save or open panel.
 
 
 ---

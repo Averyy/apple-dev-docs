@@ -1,0 +1,27 @@
+# Anonymous
+
+**Framework**: IOKit  
+**Kind**: enum  
+**Role**: Enumeration
+
+**Availability**:
+- Mac Catalyst 18.4+
+- macOS 10.0+
+
+## Declaration
+
+```c
+enum : unsigned int {
+    ...
+};
+```
+
+## Topics
+
+### Constants
+- [kVideoDefaultBus](./api-1568079-anonymous/kvideodefaultbus.md)
+
+
+---
+
+*[View on Apple Developer](https://developer.apple.com/documentation/iokit/1568079-anonymous)*

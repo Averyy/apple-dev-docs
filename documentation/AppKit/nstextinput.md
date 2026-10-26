@@ -37,6 +37,7 @@ protocol NSTextInput
 
 ### Conforming Types
 - [NSTextView](./nstextview.md)
+- [NSInputManager](./nsinputmanager.md)
 
 
 ---

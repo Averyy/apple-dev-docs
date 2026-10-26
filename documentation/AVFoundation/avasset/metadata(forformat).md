@@ -40,6 +40,20 @@ You can call this method without blocking the current thread after you’ve asyn
 
 - `format`: The metadata format for which you want items.
 
+## See Also
+
+### Accessing metadata
+- [metadata](./metadata.md)
+  An array of metadata items for all metadata identifiers for which a value is available.
+- [commonMetadata](./commonmetadata.md)
+  The metadata items an asset contains for common metadata identifiers that provide a value.
+- [availableMetadataFormats](./availablemetadataformats.md)
+  The metadata formats this asset contains.
+- [creationDate](./creationdate.md)
+  A metadata item that indicates the asset’s creation date.
+- [lyrics](./lyrics.md)
+  The lyrics of the asset in a language suitable for the current locale.
+
 
 ---
 

@@ -11,6 +11,7 @@ The audio settings that apply to linear PCM audio formats.
 - [let AVLinearPCMIsBigEndianKey: String](../AVFAudio/avlinearpcmisbigendiankey.md)
 - [let AVLinearPCMIsFloatKey: String](../AVFAudio/avlinearpcmisfloatkey.md)
 - [let AVLinearPCMIsNonInterleaved: String](../AVFAudio/avlinearpcmisnoninterleaved.md)
+- [AVLinearPCMIsNonInterleavedKey](../AVFAudio/avlinearpcmisnoninterleavedkey.md)
 
 ## See Also
 

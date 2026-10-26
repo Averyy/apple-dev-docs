@@ -31,11 +31,11 @@ To control the placement of ads in your channel, use News Publisher. For more in
 ## See Also
 
 ### Dynamic Advertising
-- [object AutoPlacement](https://developer.apple.com/documentation/applenewsformat/autoplacement)
+- [object AutoPlacement](../AppleNewsFormat/autoplacement.md)
   The object for automatically placing components within Apple News Format articles.
-- [object AdvertisementAutoPlacement](https://developer.apple.com/documentation/applenewsformat/advertisementautoplacement)
+- [object AdvertisementAutoPlacement](../AppleNewsFormat/advertisementautoplacement.md)
   The object for defining the automatic placement of advertisements.
-- [object AdvertisingSettings](https://developer.apple.com/documentation/applenewsformat/advertisingsettings)
+- [object AdvertisingSettings](../AppleNewsFormat/advertisingsettings.md)
   The object for defining properties that affect the frequency and placement with which banner advertisements and medium rectangle advertisements are automatically placed in your article.
 
 

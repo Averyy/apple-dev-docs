@@ -52,6 +52,8 @@ Requesting both formats adds requirements for other photo settings: see the [`fo
   Creates a photo settings object for capture in both RAW format and a processed format with the specified output file types.
 - [convenience init(from: AVCapturePhotoSettings)](./init%28from%29.md)
   Creates a unique photo settings object, copying all settings values from the specified photo settings object.
+- [+ photoSettings](./photosettings.md)
+  Creates a photo settings object with default settings.
 
 
 ---

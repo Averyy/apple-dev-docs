@@ -38,6 +38,8 @@ You can apply these underline style specifiers to the value that you set with th
   A specifier that indicates to draw an underline consisting of a thick line.
 - [static var double: CTUnderlineStyle](./ctunderlinestyle/double.md)
   A specifier that indicates to draw an underline consisting of a double line.
+- [kCTUnderlineStyleNone](./ctunderlinestyle/kctunderlinestylenone.md)
+  A specifier that indicates not to draw an underline.
 ### Initializers
 - [init(rawValue: Int32)](./ctunderlinestyle/init%28rawvalue%29.md)
   Creates an underline style structure with the specified raw value.

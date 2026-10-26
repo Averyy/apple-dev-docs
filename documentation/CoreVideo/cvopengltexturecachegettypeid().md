@@ -30,6 +30,10 @@ extern CFTypeID CVOpenGLTextureCacheGetTypeID();
   Creates a CVOpenGLTexture object from an existing [CVImageBuffer](./cvimagebuffer-q40.md).
 - [func CVOpenGLTextureCacheFlush(CVOpenGLTextureCache, CVOptionFlags)](./cvopengltexturecacheflush%28_,_%29.md)
   Performs internal housekeeping/recycling operations on the cache.
+- [CVOpenGLTextureCacheRetain](./cvopengltexturecacheretain.md)
+  Retains a texture cache object.
+- [CVOpenGLTextureCacheRelease](./cvopengltexturecacherelease.md)
+  Releases a texture cache object.
 
 
 ---

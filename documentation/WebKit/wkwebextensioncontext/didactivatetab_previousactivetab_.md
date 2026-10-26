@@ -1,0 +1,34 @@
+# didActivateTab:previousActiveTab:
+
+**Framework**: WebKit  
+**Kind**: method  
+**Role**: Instance Method
+
+Called by the app when a tab is activated to notify only this specific extension.
+
+**Availability**:
+- iOS 18.4+
+- iPadOS 18.4+
+- Mac Catalyst 18.4+
+- macOS 15.4+
+- visionOS 2.4+
+
+## Declaration
+
+```objc
+- (void) didActivateTab:(id<WKWebExtensionTab>) activatedTab previousActiveTab:(id<WKWebExtensionTab>) previousTab;
+```
+
+#### Discussion
+
+This method informs only the specific extension of the tab activation. If the intention is to inform all loaded extensions consistently, you should use the respective method on the extension controller instead.
+
+## Parameters
+
+- `activatedTab`: The tab that has become active.
+- `previousTab`: The tab that was active before. This parameter can be `nil` if there was no previously active tab.
+
+
+---
+
+*[View on Apple Developer](https://developer.apple.com/documentation/webkit/wkwebextensioncontext/didactivatetab:previousactivetab:)*

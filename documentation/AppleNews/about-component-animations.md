@@ -9,10 +9,10 @@ Learn how to affect the way in which components come into view.
 
 An animation is an effect, such as a fade-in, that’s applied to an individual component. Apple News Format has these animations for components:
 
-- [`AppearAnimation`](https://developer.apple.com/documentation/applenewsformat/appearanimation). Causes the component to appear.
-- [`FadeInAnimation`](https://developer.apple.com/documentation/applenewsformat/fadeinanimation). Causes the component to fade into view.
-- [`MoveInAnimation`](https://developer.apple.com/documentation/applenewsformat/moveinanimation). Causes the component to move into view from the left or right side of the screen.
-- [`ScaleFadeAnimation`](https://developer.apple.com/documentation/applenewsformat/scalefadeanimation). Causes the component to fade into view and scale up.
+- [`AppearAnimation`](../AppleNewsFormat/appearanimation.md). Causes the component to appear.
+- [`FadeInAnimation`](../AppleNewsFormat/fadeinanimation.md). Causes the component to fade into view.
+- [`MoveInAnimation`](../AppleNewsFormat/moveinanimation.md). Causes the component to move into view from the left or right side of the screen.
+- [`ScaleFadeAnimation`](../AppleNewsFormat/scalefadeanimation.md). Causes the component to fade into view and scale up.
 
 An *animation* is different from a *behavior*. An animation occurs only once each time the user views the article, while a behavior is persistent and always in effect as long as the user is viewing the article. See [About Component Behaviors](./about-component-behaviors.md).
 
@@ -21,15 +21,15 @@ You can apply a combination of animations and behaviors to a `chapter` or `secti
 ## See Also
 
 ### Animations
-- [object ComponentAnimation](https://developer.apple.com/documentation/applenewsformat/componentanimation)
+- [object ComponentAnimation](../AppleNewsFormat/componentanimation.md)
   Properties that all types of animations share.
-- [object AppearAnimation](https://developer.apple.com/documentation/applenewsformat/appearanimation)
+- [object AppearAnimation](../AppleNewsFormat/appearanimation.md)
   An animation type whereby a component appears on the screen.
-- [object FadeInAnimation](https://developer.apple.com/documentation/applenewsformat/fadeinanimation)
+- [object FadeInAnimation](../AppleNewsFormat/fadeinanimation.md)
   The animation whereby a component fades into view.
-- [object MoveInAnimation](https://developer.apple.com/documentation/applenewsformat/moveinanimation)
+- [object MoveInAnimation](../AppleNewsFormat/moveinanimation.md)
   The animation whereby a component moves in from the side of the screen.
-- [object ScaleFadeAnimation](https://developer.apple.com/documentation/applenewsformat/scalefadeanimation)
+- [object ScaleFadeAnimation](../AppleNewsFormat/scalefadeanimation.md)
   The animation in which a component scales up and fades into view.
 
 

@@ -42,6 +42,10 @@ Launch Services eliminates apps having to query the Finder to open an app, docum
   A persistent list of file-system objects.
 - [class LSSharedFileListItem](./lssharedfilelistitem.md)
   A file-system object in the shared file list.
+- [LSSharedFileListRef](./lssharedfilelistref.md)
+  A persistent list of file-system objects.
+- [LSSharedFileListItemRef](./lssharedfilelistitemref.md)
+  A file-system object in the shared file list.
 ### Registering an App
 - [func LSRegisterURL(CFURL, Bool) -> OSStatus](./api-1446350-lsregisterurl.md)
   Registers an app, using a URL, in the Launch Services database.
@@ -95,6 +99,10 @@ Launch Services eliminates apps having to query the Finder to open an app, docum
   The specification that controls which information to obtain about an item.
 - [Unknown Type or Creator](./launch_services/api-1469201-unknown_type_or_creator.md)
   Represents an unknown file type or creator.
+- [Invalid Extension Index](./launch_services/invalid_extension_index.md)
+  Represents an invalid filename extension index.
+- [Unknown Type or Creator](./api-1469201-unknown_type_or_creator.md)
+  Represents an unknown file type or creator.
 ### Result Codes
 - [var kLSAppInTrashErr: OSStatus](./klsappintrasherr.md)
   The app can’t run because it’s inside a Trash folder.
@@ -121,6 +129,32 @@ Launch Services eliminates apps having to query the Finder to open an app, docum
 - [var kLSNoExecutableErr: OSStatus](./klsnoexecutableerr.md)
   The executable file is missing or has an unusable format.
 - [var kLSMultipleSessionsNotSupportedErr: OSStatus](./klsmultiplesessionsnotsupportederr.md)
+  The requested app can’t run simultaneously in two different user sessions.
+- [kLSAppInTrashErr](./api-3074489-anonymous/klsappintrasherr.md)
+  The app can’t run because it’s inside a Trash folder.
+- [kLSUnknownErr](./api-3074489-anonymous/klsunknownerr.md)
+  An unknown error has occurred.
+- [kLSNotAnApplicationErr](./api-3074489-anonymous/klsnotanapplicationerr.md)
+  The item for registration is not an app.
+- [kLSDataUnavailableErr](./api-3074489-anonymous/klsdataunavailableerr.md)
+  Data of the desired type is not available (for example, there is no kind string).
+- [kLSApplicationNotFoundErr](./api-3074489-anonymous/klsapplicationnotfounderr.md)
+  No app in the Launch Services database matches the input criteria.
+- [kLSDataErr](./api-3074489-anonymous/klsdataerr.md)
+  Improper data structure.
+- [kLSLaunchInProgressErr](./api-3074489-anonymous/klslaunchinprogresserr.md)
+  A launch of the app is already in progress.
+- [kLSServerCommunicationErr](./api-3074489-anonymous/klsservercommunicationerr.md)
+  There is a problem communicating with the server process that maintains the Launch Services database. 
+- [kLSCannotSetInfoErr](./api-3074489-anonymous/klscannotsetinfoerr.md)
+  The system can’t hide the filename extension.
+- [kLSIncompatibleSystemVersionErr](./api-3074489-anonymous/klsincompatiblesystemversionerr.md)
+  The requested app can’t run on the current macOS version.
+- [kLSNoLaunchPermissionErr](./api-3074489-anonymous/klsnolaunchpermissionerr.md)
+  The user doesn’t have permission to launch the app on a managed network.
+- [kLSNoExecutableErr](./api-3074489-anonymous/klsnoexecutableerr.md)
+  The executable file is missing or has an unusable format.
+- [kLSMultipleSessionsNotSupportedErr](./api-3074489-anonymous/klsmultiplesessionsnotsupportederr.md)
   The requested app can’t run simultaneously in two different user sessions.
 ### Deprecated
 - [Deprecated Symbols](./launch_services/deprecated_symbols.md)

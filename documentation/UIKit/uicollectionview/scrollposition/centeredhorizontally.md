@@ -40,6 +40,8 @@ This option is mutually exclusive with the [`left`](./left.md) and [`right`](./r
   Scroll so that the item is positioned at the left edge of the collection view’s bounds.
 - [static var right: UICollectionView.ScrollPosition](./right.md)
   Scroll so that the item is positioned at the right edge of the collection view’s bounds.
+- [UICollectionViewScrollPositionNone](../../uicollectionviewscrollposition/uicollectionviewscrollpositionnone.md)
+  Don’t scroll the item into view.
 
 
 ---

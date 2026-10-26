@@ -57,6 +57,13 @@ An initialized ordered set containing the objects in the set.
   Initializes a new ordered set with the contents of a set.
 - [init()](./init%28%29.md)
   Initializes a newly allocated ordered set.
+- [- initWithObjects:](./initwithobjects_.md)
+  Initializes a newly allocated set with members taken from the specified list of objects.
+### Related Documentation
+- [+ orderedSetWithSet:](./orderedsetwithset_.md)
+  Creates and returns an ordered set with the contents of a set.
+- [+ orderedSetWithSet:copyItems:](./orderedsetwithset_copyitems_.md)
+  Creates and returns an ordered set with the contents of a set, optionally copying the items.
 
 
 ---

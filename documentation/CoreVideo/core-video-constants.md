@@ -44,6 +44,24 @@
 - [let kCVPixelBufferVersatileBayerKey_BayerPattern: CFString](./kcvpixelbufferversatilebayerkey_bayerpattern.md)
 - [let kCVPixelFormatContainsGrayscale: CFString](./kcvpixelformatcontainsgrayscale.md)
 - [let kCVPixelFormatContainsSenselArray: CFString](./kcvpixelformatcontainssenselarray.md)
+### Macros
+- [COREVIDEO_GL_DEPRECATED](./corevideo_gl_deprecated.md)
+- [CVDIRECT3D](./cvdirect3d.md)
+- [CVDIRECT3DDEVICE](./cvdirect3ddevice.md)
+- [CVDIRECT3DSURFACE](./cvdirect3dsurface.md)
+- [CVDIRECT3DTEXTURE](./cvdirect3dtexture.md)
+- [CV_BRIDGED_TYPE](./cv_bridged_type.md)
+- [CV_EXPORT](./cv_export.md)
+- [CV_INLINE](./cv_inline.md)
+- [CV_INTERNAL](./cv_internal.md)
+- [CV_NONNULL](./cv_nonnull.md)
+- [CV_NULLABLE](./cv_nullable.md)
+- [CV_RELEASES_ARGUMENT](./cv_releases_argument.md)
+- [CV_RETURNS_NOT_RETAINED](./cv_returns_not_retained.md)
+- [CV_RETURNS_RETAINED](./cv_returns_retained.md)
+- [CV_RETURNS_RETAINED_PARAMETER](./cv_returns_retained_parameter.md)
+- [CV_SWIFT_NONSENDABLE](./cv_swift_nonsendable.md)
+- [CV_SWIFT_SENDABLE](./cv_swift_sendable.md)
 
 ## See Also
 

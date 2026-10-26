@@ -78,6 +78,10 @@ When managing CarPlay features, users don’t need to include the name of the ap
 ### Initializing the Intent Object
 - [convenience init(enableHeating: Bool?, enableCooling: Bool?, enableMassage: Bool?, seat: INCarSeat, level: Int?, relativeLevel: INRelativeSetting, carName: INSpeakableString?)](./insetseatsettingsincarintent/init%28enableheating,enablecooling,enablemassage,seat,level,relativelevel,carname%29.md)
   Initializes the intent object with the specified climate settings information.
+- [- initWithEnableHeating:enableCooling:enableMassage:seat:level:relativeLevelSetting:carName:](./insetseatsettingsincarintent/initwithenableheating_enablecooling_enablemassage_seat_level_relativelevelsetting_carname_.md)
+  Initializes the intent object with the specified climate settings information.
+- [- initWithEnableHeating:enableCooling:enableMassage:seat:level:relativeLevelSetting:](./insetseatsettingsincarintent/initwithenableheating_enablecooling_enablemassage_seat_level_relativelevelsetting_.md)
+  Initializes the intent object with the specified climate settings information.
 ### Getting the Seat Position
 - [var seat: INCarSeat](./insetseatsettingsincarintent/seat.md)
   The seat position whose settings you want to modify.
@@ -92,6 +96,14 @@ When managing CarPlay features, users don’t need to include the name of the ap
   An integer value indicating the desired level for the seat setting.
 - [var relativeLevelSetting: INRelativeSetting](./insetseatsettingsincarintent/relativelevelsetting.md)
   A relative change to the level value.
+- [enableCooling](./insetseatsettingsincarintent/enablecooling-6bcu7.md)
+  A Boolean value indicating whether to enable the seat cooling system.
+- [enableHeating](./insetseatsettingsincarintent/enableheating-5qj7i.md)
+  A Boolean value indicating whether to enable the seat heating system.
+- [enableMassage](./insetseatsettingsincarintent/enablemassage-5jf2s.md)
+  A Boolean value indicating whether to enable the seat massage system.
+- [level](./insetseatsettingsincarintent/level-5i2i.md)
+  An integer value indicating the desired level for the seat setting.
 ### Getting the Car Name
 - [var carName: INSpeakableString?](./insetseatsettingsincarintent/carname.md)
   The name of the car you applied the settings to.

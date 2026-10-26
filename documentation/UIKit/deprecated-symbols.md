@@ -46,6 +46,10 @@ Although these symbols are available for use, Apple is no longer actively develo
   Information about custom actions that your app can perform in response to a local or push notification.
 - [class UIUserNotificationSettings](./uiusernotificationsettings.md)
   The types of notifications that can be displayed to the user by your app.
+- [UIAcceleration](./uiacceleration.md)
+  An acceleration event that represents immediate, three-dimensional acceleration data.
+- [UIAccelerometer](./uiaccelerometer.md)
+  An object that lets you register to receive acceleration-related data from the onboard hardware.
 ### Deprecated protocols
 - [protocol UIActionSheetDelegate](./uiactionsheetdelegate.md)
   The interface for the delegate of an action sheet object.
@@ -59,6 +63,8 @@ Although these symbols are available for use, Apple is no longer actively develo
   A set of methods that define the interface for configuring a previewing view controller on devices that support 3D Touch.
 - [protocol UIViewControllerPreviewingDelegate](./uiviewcontrollerpreviewingdelegate.md)
   A set of methods used by the delegate to respond, with a preview view controller and a commit view controller, to the user pressing a view object on the screen of a device that supports 3D Touch.
+- [UIAccelerometerDelegate](./uiaccelerometerdelegate.md)
+  The interface for receiving acceleration-related data from the system.
 ### Deprecated enumerations
 - [struct UIDirectionalRectEdge](./uidirectionalrectedge.md)
   Constants that specify an edge or a set of edges, taking the user interface layout direction into account.

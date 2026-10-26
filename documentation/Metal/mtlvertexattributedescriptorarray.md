@@ -33,6 +33,8 @@ An [`MTLVertexAttributeDescriptorArray`](./mtlvertexattributedescriptorarray.md)
 ### Accessing a specified vertex attribute
 - [subscript(Int) -> MTLVertexAttributeDescriptor!](./mtlvertexattributedescriptorarray/subscript%28_%29.md)
   Returns the state of the specified vertex attribute.
+- [- setObject:atIndexedSubscript:](./mtlvertexattributedescriptorarray/setobject_atindexedsubscript_.md)
+  Sets state for the specified vertex attribute.
 
 ## Relationships
 

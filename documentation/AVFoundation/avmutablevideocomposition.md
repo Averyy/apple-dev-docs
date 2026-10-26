@@ -47,6 +47,8 @@ You can create a custom video compositor by implementing the [`AVVideoCompositin
   Creates a mutable video composition with the specified asset properties and a prototype video composition instruction.
 - [init(asset: AVAsset, applyingCIFiltersWithHandler: (AVAsynchronousCIImageFilteringRequest) -> Void)](./avmutablevideocomposition/init%28asset,applyingcifilterswithhandler%29.md)
   Creates a mutable video composition configured to apply Core Image filters to each video frame of the specified asset.
+- [+ videoComposition](./avmutablevideocomposition/videocomposition.md)
+  Creates a new mutable video composition.
 ### Configuring video composition properties
 - [var frameDuration: CMTime](./avmutablevideocomposition/frameduration.md)
   A time interval for which the video composition should render composed video frames.
@@ -56,6 +58,8 @@ You can create a custom video compositor by implementing the [`AVVideoCompositin
   The scale at which the video composition should render.
 - [var animationTool: AVVideoCompositionCoreAnimationTool?](./avmutablevideocomposition/animationtool.md)
   A video composition tool to use with Core Animation in offline rendering.
+- [outputBufferDescription](./avmutablevideocomposition/outputbufferdescription.md)
+  The output buffers of the video composition can be specified with the outputBufferDescription. The value is an array of CMTagCollectionRef objects that describes the output buffers.
 ### Specifying composition instructions
 - [var instructions: [any AVVideoCompositionInstructionProtocol]](./avmutablevideocomposition/instructions.md)
   The video composition instructions.
@@ -78,6 +82,8 @@ You can create a custom video compositor by implementing the [`AVVideoCompositin
   An identifier of the source track from which the video composition derives frame timing.
 - [var sourceSampleDataTrackIDs: [CMPersistentTrackID]](./avmutablevideocomposition/sourcesampledatatrackids-7i02t.md)
   The identifiers of source sample data tracks in the composition that the object requires to compose frames.
+- [sourceSampleDataTrackIDs](./avmutablevideocomposition/sourcesampledatatrackids-21o6b.md)
+  The identifiers of source sample data tracks in the composition that the compositor requires to compose frames.
 ### Specifying a custom compositor
 - [var customVideoCompositorClass: (any AVVideoCompositing.Type)?](./avmutablevideocomposition/customvideocompositorclass.md)
   The custom compositor class to use.

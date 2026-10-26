@@ -145,6 +145,11 @@ Avoid using deprecated configuration in your apps.
 ### Variables
 - [let NIErrorDomain: String](./nierrordomain.md)
   A unique error domain for Nearby Interaction.
+### Macros
+- [NI_EXPORT](./ni_export.md)
+### Enumerations
+- [NIAlgorithmConvergenceStatus](./nialgorithmconvergencestatus-2fbmj.md)
+  Expose algorithm state to make it possible for apps to coach users.
 
 
 ---

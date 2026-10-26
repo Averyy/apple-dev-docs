@@ -40,6 +40,8 @@ class MTL4MachineLearningPipelineDescriptor
   Sets the dimension of an input tensor at a buffer index.
 - [func setInputDimensions([MTLTensorExtents], bufferIndex: Int)](./mtl4machinelearningpipelinedescriptor/setinputdimensions%28_,bufferindex%29-8fnq7.md)
   Sets the dimensions of multiple input tensors on a range of buffer bindings.
+- [- setInputDimensions:withRange:](./mtl4machinelearningpipelinedescriptor/setinputdimensions_withrange_.md)
+  Sets the dimensions of multiple input tensors on a range of buffer bindings.
 
 ## Relationships
 

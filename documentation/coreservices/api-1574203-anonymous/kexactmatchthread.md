@@ -1,0 +1,20 @@
+# kExactMatchThread
+
+**Framework**: Core Services  
+**Kind**: econst  
+**Role**: Enumeration Case
+
+**Availability**:
+- Mac Catalyst 13.1+ - Deprecated in 13.1
+- macOS 10.0+ - Deprecated in 10.3
+
+## Declaration
+
+```c
+kExactMatchThread = (1 << 4)
+```
+
+
+---
+
+*[View on Apple Developer](https://developer.apple.com/documentation/coreservices/1574203-anonymous/kexactmatchthread)*

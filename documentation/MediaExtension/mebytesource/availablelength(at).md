@@ -34,6 +34,10 @@ An integer that specifies the number of available bytes.
   Creates a new byte source for a related file.
 - [func read(length: Int, from: Int64, completionHandler: (Data?, (any Error)?) -> Void)](./read%28length,from,completionhandler%29.md)
   Reads bytes from a byte source into a data object.
+- [- readDataOfLength:fromOffset:toDestination:bytesRead:error:](./readdataoflength_fromoffset_todestination_bytesread_error_.md)
+  Reads bytes from a byte source into a buffer.
+- [- readDataOfLength:fromOffset:toDestination:completionHandler:](./readdataoflength_fromoffset_todestination_completionhandler_.md)
+  Reads bytes from a byte source into a buffer.
 
 
 ---

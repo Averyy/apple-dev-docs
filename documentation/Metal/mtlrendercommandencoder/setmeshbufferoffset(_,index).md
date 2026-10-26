@@ -55,6 +55,8 @@ The command can also adjust the offset for an entry that you previously set with
   Assigns multiple buffers to a range of entries in the mesh shader argument table.
 - [func setMeshBytes(UnsafeRawPointer, length: Int, index: Int)](./setmeshbytes%28_,length,index%29.md)
   Creates a buffer from bytes and assigns it to an entry in the mesh shader argument table.
+- [- setMeshBuffers:offsets:withRange:](./setmeshbuffers_offsets_withrange_.md)
+  Assigns multiple buffers to a range of entries in the mesh shader argument table.
 
 
 ---

@@ -47,6 +47,9 @@ Apps use the Open panel as a convenient way to query the user for the name of a 
 ### Deprecated
 - [Deprecated symbols](./nsopenpanel-deprecated-symbols.md)
   Review symbols that are no longer in active development, and their recommended replacements.
+### Creating an Open Panel
+- [+ openPanel](./nsopenpanel/openpanel.md)
+  Creates a new Open panel and initializes it with a default configuration.
 
 ## Relationships
 

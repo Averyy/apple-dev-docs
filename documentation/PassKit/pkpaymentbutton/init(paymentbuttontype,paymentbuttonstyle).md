@@ -32,6 +32,12 @@ Returns a `PKPaymentButton` instance with the specified type and style.
 - `type`: The button’s content. For a complete list of button types, see [`PKPaymentButtonType`](../pkpaymentbuttontype.md).
 - `style`: The button’s appearance. For a complete list of button styles, see [`PKPaymentButtonStyle`](../pkpaymentbuttonstyle.md).
 
+## See Also
+
+### Creating payment buttons
+- [+ buttonWithType:style:](./buttonwithtype_style_.md)
+  Creates a new payment button with the specified type and style.
+
 
 ---
 

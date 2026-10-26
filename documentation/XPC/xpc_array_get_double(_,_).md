@@ -67,6 +67,8 @@ The underlying `double` value at the specified index. NAN if the value at the sp
   Gets a date interval from an array directly.
 - [func xpc_array_get_dictionary(xpc_object_t, Int) -> xpc_object_t?](./xpc_array_get_dictionary%28_,_%29.md)
   Returns the dictionary at the specified index in the array.
+- [xpc_array_get_int64](./xpc_array_get_int64%28_,_%29.md)
+  Gets a 64-bit integer primitive value from an array directly.
 
 
 ---

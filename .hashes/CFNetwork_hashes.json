@@ -335,6 +335,11 @@
       "file_path": "documentation/CFNetwork/cfhttpmessagesetheaderfieldvalue(_,_,_).md",
       "hash": "24701bedd9659df1aa243e956315401ba0ff01c94cb7db7ae9951c32476d465b"
     },
+    "https://developer.apple.com/documentation/cfnetwork/cfn_export": {
+      "etag": "\"a85-65d55ee65aacb-df\"",
+      "file_path": "documentation/CFNetwork/cfn_export.md",
+      "hash": "57cbce1febf93b2a8533b4cdb3914c6f8361f30a9aa1a4f159a5388c6402731f"
+    },
     "https://developer.apple.com/documentation/cfnetwork/cfnetdiagnostic": {
       "etag": "\"4311-65d55ee633066-df\"",
       "file_path": "documentation/CFNetwork/cfnetdiagnostic.md",
@@ -665,6 +670,11 @@
       "file_path": "documentation/CFNetwork/cfnetservicemonitorunschedulefromrunloop(_,_,_).md",
       "hash": "79ef93c7aef39368106a1120ed301a168c0bf49df8851d545143935cda8fa155"
     },
+    "https://developer.apple.com/documentation/cfnetwork/cfnetserviceregister": {
+      "etag": "\"955d-65d55ee71826f-df\"",
+      "file_path": "documentation/CFNetwork/cfnetserviceregister.md",
+      "hash": "f688b468d701334af76f52b02fedfbfebafd0716de2a9d1a1d4b2c818a53238d"
+    },
     "https://developer.apple.com/documentation/cfnetwork/cfnetserviceregisterflags": {
       "etag": "\"92d1-65d55ee71826f-df\"",
       "file_path": "documentation/CFNetwork/cfnetserviceregisterflags.md",
@@ -684,6 +694,11 @@
       "etag": "\"c020-65d55ee65aacb-df\"",
       "file_path": "documentation/CFNetwork/cfnetserviceregisterwithoptions(_,_,_).md",
       "hash": "8b555885eed7979d7b155ed37fd67b94a45e732a8743104beed60825a421b4cf"
+    },
+    "https://developer.apple.com/documentation/cfnetwork/cfnetserviceresolve": {
+      "etag": "\"9397-65d55ee6f7f2e-df\"",
+      "file_path": "documentation/CFNetwork/cfnetserviceresolve.md",
+      "hash": "24035064dac3a687aa5019e1be0d6275682b276d74753617bd23abea0ae9d7f9"
     },
     "https://developer.apple.com/documentation/cfnetwork/cfnetserviceresolvewithtimeout(_:_:_:)": {
       "etag": "\"bb30-65d55ee67cf9d-df\"",
@@ -2415,6 +2430,11 @@
       "file_path": "documentation/CFNetwork/cfhttpmessagesetheaderfieldvalue(_,_,_).md",
       "hash": "24701bedd9659df1aa243e956315401ba0ff01c94cb7db7ae9951c32476d465b"
     },
+    "https://developer.apple.com/tutorials/data/documentation/cfnetwork/cfn_export.json": {
+      "etag": "\"a85-65d55ee65aacb-df\"",
+      "file_path": "documentation/CFNetwork/cfn_export.md",
+      "hash": "57cbce1febf93b2a8533b4cdb3914c6f8361f30a9aa1a4f159a5388c6402731f"
+    },
     "https://developer.apple.com/tutorials/data/documentation/cfnetwork/cfnetdiagnostic.json": {
       "etag": "\"4311-65d55ee633066-df\"",
       "file_path": "documentation/CFNetwork/cfnetdiagnostic.md",
@@ -2745,6 +2765,11 @@
       "file_path": "documentation/CFNetwork/cfnetservicemonitorunschedulefromrunloop(_,_,_).md",
       "hash": "79ef93c7aef39368106a1120ed301a168c0bf49df8851d545143935cda8fa155"
     },
+    "https://developer.apple.com/tutorials/data/documentation/cfnetwork/cfnetserviceregister.json": {
+      "etag": "\"955d-65d55ee71826f-df\"",
+      "file_path": "documentation/CFNetwork/cfnetserviceregister.md",
+      "hash": "f688b468d701334af76f52b02fedfbfebafd0716de2a9d1a1d4b2c818a53238d"
+    },
     "https://developer.apple.com/tutorials/data/documentation/cfnetwork/cfnetserviceregisterflags.json": {
       "etag": "\"92d1-65d55ee71826f-df\"",
       "file_path": "documentation/CFNetwork/cfnetserviceregisterflags.md",
@@ -2764,6 +2789,11 @@
       "etag": "\"c020-65d55ee65aacb-df\"",
       "file_path": "documentation/CFNetwork/cfnetserviceregisterwithoptions(_,_,_).md",
       "hash": "8b555885eed7979d7b155ed37fd67b94a45e732a8743104beed60825a421b4cf"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/cfnetwork/cfnetserviceresolve.json": {
+      "etag": "\"9397-65d55ee6f7f2e-df\"",
+      "file_path": "documentation/CFNetwork/cfnetserviceresolve.md",
+      "hash": "24035064dac3a687aa5019e1be0d6275682b276d74753617bd23abea0ae9d7f9"
     },
     "https://developer.apple.com/tutorials/data/documentation/cfnetwork/cfnetserviceresolvewithtimeout(_:_:_:).json": {
       "etag": "\"bb30-65d55ee67cf9d-df\"",
@@ -4163,8 +4193,8 @@
   },
   "metadata": {
     "render": {
-      "version": 1
+      "version": 2
     },
-    "total_pages": 832
+    "total_pages": 838
   }
 }

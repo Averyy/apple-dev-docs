@@ -32,6 +32,8 @@ class MPSCNNNormalizationNode
 - [var alpha: Float](./mpscnnnormalizationnode/alpha.md)
 - [var beta: Float](./mpscnnnormalizationnode/beta.md)
 - [var delta: Float](./mpscnnnormalizationnode/delta.md)
+### Type Methods
+- [+ nodeWithSource:](./mpscnnnormalizationnode/nodewithsource_.md)
 
 ## Relationships
 

@@ -1,0 +1,31 @@
+# removeObserver:
+
+**Framework**: AVSystemRouting  
+**Kind**: method  
+**Role**: Instance Method
+
+Removes a previously registered observer from the system routing controller.
+
+**Availability**:
+- iOS 27.0+
+- iPadOS 27.0+
+- Mac Catalyst 27.0+
+
+## Declaration
+
+```objc
+- (void) removeObserver:(id<AVSystemRouteControllerObserver>) observer;
+```
+
+#### Discussion
+
+Call this method to unregister an observer when it no longer needs to receive routing event notifications. This is typically done in the observer’s deallocation or when the observer is no longer relevant to avoid memory leaks and unnecessary callbacks.
+
+## Parameters
+
+- `observer`: The observer object to remove. If the observer is not currently registered, this method has no effect.
+
+
+---
+
+*[View on Apple Developer](https://developer.apple.com/documentation/avsystemrouting/avsystemroutecontroller-4teia/removeobserver:)*

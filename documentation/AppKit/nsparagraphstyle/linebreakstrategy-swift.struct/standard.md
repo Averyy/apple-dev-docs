@@ -30,6 +30,8 @@ This strategy optimizes for displaying shorter strings that are common in UI lab
   The text system pushes out individual lines to avoid an orphan word on the last line of the paragraph.
 - [static var hangulWordPriority: NSParagraphStyle.LineBreakStrategy](./hangulwordpriority.md)
   The text system prohibits breaking between Hangul characters.
+- [NSLineBreakStrategyNone](../../nslinebreakstrategy/nslinebreakstrategynone.md)
+  The text system doesn’t use any line-break strategies.
 
 
 ---

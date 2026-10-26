@@ -29,6 +29,8 @@ MPMediaPlaylistAttributeOnTheGo
   A smart playlist includes items that match one or more user-specified rules.
 - [static var genius: MPMediaPlaylistAttribute](./genius.md)
   A Genius playlist includes items related to other items in your Music library.
+- [MPMediaPlaylistAttributeNone](./mpmediaplaylistattributenone.md)
+  A playlist with no attributes.
 
 
 ---

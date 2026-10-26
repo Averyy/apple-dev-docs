@@ -85,6 +85,12 @@ If the smart card is physically removed from its slot, the session object become
   Asynchronously transmits an APDU command to the card, returning the response in a completion handler.
 - [func withSession<T>(() throws -> T) throws -> T](./tksmartcard/withsession%28_%29.md)
   Synchronously begins a session, executes the given closure, and ends the session.
+- [- sendIns:p1:p2:data:le:reply:](./tksmartcard/sendins_p1_p2_data_le_reply_.md)
+  Asynchronously transmits an APDU command to the card, returning the response in a completion handler.
+- [- sendIns:p1:p2:data:le:sw:error:](./tksmartcard/sendins_p1_p2_data_le_sw_error_.md)
+  Synchronously transmits an APDU command to the card and returns the response.
+- [- inSessionWithError:executeBlock:](./tksmartcard/insessionwitherror_executeblock_.md)
+  Synchronously begins a session, executes the given block, and ends the session.
 ### Instance Methods
 - [func send(ins: UInt8, p1: UInt8, p2: UInt8, data: Data?, le: Int?) throws -> (sw: UInt16, response: Data)](./tksmartcard/send%28ins,p1,p2,data,le%29-1kbga.md)
   Synchronously sends an APDU command to the smart card.

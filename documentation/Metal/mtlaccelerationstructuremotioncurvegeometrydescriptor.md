@@ -44,6 +44,8 @@ class MTLAccelerationStructureMotionCurveGeometryDescriptor
 - [var radiusStride: Int](./mtlaccelerationstructuremotioncurvegeometrydescriptor/radiusstride.md)
 - [var segmentControlPointCount: Int](./mtlaccelerationstructuremotioncurvegeometrydescriptor/segmentcontrolpointcount.md)
 - [var segmentCount: Int](./mtlaccelerationstructuremotioncurvegeometrydescriptor/segmentcount.md)
+### Type Methods
+- [+ descriptor](./mtlaccelerationstructuremotioncurvegeometrydescriptor/descriptor.md)
 
 ## Relationships
 

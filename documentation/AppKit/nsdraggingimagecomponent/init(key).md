@@ -36,6 +36,9 @@ This method is the designated initializer.
 ### Related Documentation
 - [Drag and Drop](../drag-and-drop.md)
   Support the direct manipulation of your app’s content using drag and drop.
+### Creating a Dragging Image Component
+- [+ draggingImageComponentWithKey:](./draggingimagecomponentwithkey_.md)
+  Creates and returns a dragging image component with the specified key.
 
 
 ---

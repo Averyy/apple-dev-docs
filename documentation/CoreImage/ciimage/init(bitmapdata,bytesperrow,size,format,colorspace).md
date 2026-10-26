@@ -65,6 +65,20 @@ The initialized image object.
 - [init?(depthData: AVDepthData)](./init%28depthdata%29.md)
 - [init?(depthData: AVDepthData, options: [String : Any]?)](./init%28depthdata,options%29.md)
 - [init?(portaitEffectsMatte: AVPortraitEffectsMatte)](./init%28portaiteffectsmatte%29.md)
+- [+ imageWithContentsOfURL:](./imagewithcontentsofurl_.md)
+  Creates and returns an image object from the contents of a file.
+- [+ imageWithContentsOfURL:options:](./imagewithcontentsofurl_options_.md)
+  Creates and returns an image object from the contents of a file, using the specified options.
+- [+ imageWithCGImage:](./imagewithcgimage_.md)
+  Creates and returns an image object from a Quartz 2D image.
+- [+ imageWithCGImage:options:](./imagewithcgimage_options_.md)
+  Creates and returns an image object from a Quartz 2D image using the specified options.
+- [+ imageWithCGImageSource:index:options:](./imagewithcgimagesource_index_options_.md)
+- [+ imageWithData:](./imagewithdata_.md)
+  Creates and returns an image object initialized with the supplied image data.
+### Related Documentation
+- [+ imageWithBitmapData:bytesPerRow:size:format:colorSpace:](./imagewithbitmapdata_bytesperrow_size_format_colorspace_.md)
+  Creates and returns an image object from bitmap data.
 
 
 ---

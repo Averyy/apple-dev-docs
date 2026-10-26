@@ -49,6 +49,14 @@ var dateCreated: Date? { get }
   The number of calls in the call record.
 - [var participants: [INPerson]?](./participants.md)
   The recipient of the user’s call request.
+- [callDuration](./callduration-2d9u1.md)
+  The duration (measured in seconds) of the call.
+- [unseen](./unseen-8qab3.md)
+  A Boolean value indicating whether the user has seen the call.
+- [numberOfCalls](./numberofcalls-7vv6o.md)
+  The number of calls in the call record.
+- [isCallerIdBlocked](./iscalleridblocked.md)
+  A Boolean value indicating if user’s callerID is showing during a call.
 
 
 ---

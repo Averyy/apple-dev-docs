@@ -86,6 +86,8 @@ If your app integrates AI models using the latest architectures and inference te
   An object that represents a Neural Engine compute device.
 - [protocol MLComputeDeviceProtocol](./mlcomputedeviceprotocol.md)
   An interface that represents a compute device type.
+- [MLAllComputeDevices](./mlallcomputedevices.md)
+  Returns an array that contains all of the compute devices that are accessible.
 ### Compute plan
 - [class MLComputePlan](./mlcomputeplan-1w21n.md)
   A class representing the compute plan of a model.
@@ -97,6 +99,12 @@ If your app integrates AI models using the latest architectures and inference te
   Calls the given closure within a task-local context using the specified compute policy to influence what compute device tensor operations are executed on.
 - [func withMLTensorComputePolicy<Result>(MLComputePolicy, () throws -> Result) rethrows -> Result](./withmltensorcomputepolicy%28_,_%29-6z33x.md)
   Calls the given closure within a task-local context using the specified compute policy to influence what compute device tensor operations are executed on.
+- [MLComputePlan](./mlcomputeplan-85vdw.md)
+  A class describing the plan for executing a model.
+- [MLComputePlanCost](./mlcomputeplancost.md)
+  A class that represents the estimated cost of executing a layer or operation.
+- [MLComputePlanDeviceUsage](./mlcomputeplandeviceusage.md)
+  The anticipated compute devices to use for executing a layer or operation.
 ### Model state
 - [class MLState](./mlstate.md)
   Handle to the state buffers.
@@ -118,6 +126,32 @@ If your app integrates AI models using the latest architectures and inference te
 ### Model structure
 - [enum MLModelStructure](./mlmodelstructure-swift.enum.md)
   An enum representing the structure of a model.
+- [MLModelStructure](./mlmodelstructure-c.class.md)
+  A class representing the structure of a model.
+- [MLModelStructureNeuralNetwork](./mlmodelstructureneuralnetwork.md)
+  A class representing the structure of a NeuralNetwork model.
+- [MLModelStructureNeuralNetworkLayer](./mlmodelstructureneuralnetworklayer.md)
+  A class representing a layer in a NeuralNetwork.
+- [MLModelStructurePipeline](./mlmodelstructurepipeline.md)
+  A class representing the structure of a Pipeline model.
+- [MLModelStructureProgram](./mlmodelstructureprogram.md)
+  A class representing the structure of an ML Program model.
+- [MLModelStructureProgramArgument](./mlmodelstructureprogramargument.md)
+  A class representing an argument in the Program.
+- [MLModelStructureProgramBinding](./mlmodelstructureprogrambinding.md)
+  A class representing a binding in the Program
+- [MLModelStructureProgramBlock](./mlmodelstructureprogramblock.md)
+  A class representing a block in the Program.
+- [MLModelStructureProgramFunction](./mlmodelstructureprogramfunction.md)
+  A class representing a function in the Program.
+- [MLModelStructureProgramNamedValueType](./mlmodelstructureprogramnamedvaluetype.md)
+  A class representing a named value type in a Program.
+- [MLModelStructureProgramOperation](./mlmodelstructureprogramoperation.md)
+  A class representing an Operation in a Program.
+- [MLModelStructureProgramValue](./mlmodelstructureprogramvalue.md)
+  A class representing a constant value in the Program.
+- [MLModelStructureProgramValueType](./mlmodelstructureprogramvaluetype.md)
+  A class representing the type of a value or a variable in the Program.
 ### Model errors
 - [struct MLModelError](./mlmodelerror-swift.struct.md)
   Information about a Core ML model error.
@@ -131,6 +165,8 @@ If your app integrates AI models using the latest architectures and inference te
 ### Optimization
 - [Analyzing a Core ML model’s performance in Xcode](./analyzing-a-core-ml-model-s-performance-in-xcode.md)
   Measure how your model runs on your Mac or a connected device by generating a performance report in Xcode.
+- [MLOptimizationHints](./mloptimizationhints-c.class.md)
+  MLOptimizationHints
 ### Reference
 - [CoreML Enumerations](./coreml-enumerations.md)
 

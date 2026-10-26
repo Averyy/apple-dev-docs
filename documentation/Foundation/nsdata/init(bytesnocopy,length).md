@@ -49,6 +49,17 @@ The returned object takes ownership of the `bytes` pointer and frees it on deall
   Initializes a newly allocated data object by adding the given number of bytes from the given buffer.
 - [init(data: Data)](./init%28data%29.md)
   Initializes a data object with the contents of another data object.
+- [+ data](./data.md)
+  Creates an empty data object.
+- [+ dataWithBytesNoCopy:length:](./datawithbytesnocopy_length_.md)
+  Creates a data object that holds a given number of bytes from a given buffer.
+- [+ dataWithBytesNoCopy:length:freeWhenDone:](./datawithbytesnocopy_length_freewhendone_.md)
+  Creates a data object that holds a given number of bytes from a given buffer.
+- [+ dataWithData:](./datawithdata_.md)
+  Creates a data object containing the contents of another data object.
+### Related Documentation
+- [+ dataWithBytes:length:](./datawithbytes_length_.md)
+  Creates a data object containing a given number of bytes copied from a given buffer.
 
 
 ---

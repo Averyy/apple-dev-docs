@@ -97,6 +97,10 @@ If a timebase has a host timebase, the host timebase’s rate is a factor in det
 ### Constants
 - [func CMTimebaseGetTypeID() -> CFTypeID](./cmtimebasegettypeid%28%29.md)
   Returns the Core Foundation type identifier that identifies a timebase object.
+- [kCMTimebaseVeryLongCFTimeInterval](./kcmtimebaseverylongcftimeinterval.md)
+  A constant that defines a very long elapsed time in seconds.
+- [kCMTimebaseFarFutureCFAbsoluteTime](./kcmtimebasefarfuturecfabsolutetime.md)
+  A constant that defines a point of time in the far, far future.
 ### Notifications
 - [let kCMTimebaseNotificationKey_EventTime: CFString](./kcmtimebasenotificationkey_eventtime.md)
   A notification that a timebase posts after a discontinuous time jump.

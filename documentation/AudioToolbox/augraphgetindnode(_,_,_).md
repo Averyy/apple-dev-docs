@@ -73,6 +73,14 @@ By using AUGraphGetNodeCount in conjunction with this call, you can iterate thro
   Retrieves the number of interactions for an audio processing graph.
 - [func AUGraphInitialize(AUGraph) -> OSStatus](./augraphinitialize%28_%29.md)
   Initializes an audio processing graph.
+- [AUGraphCountNodeConnections](./augraphcountnodeconnections.md)
+  Deprecated in OS X v10.5. Instead, use [`AUGraphCountNodeInteractions`](./augraphcountnodeinteractions%28_,_,_%29.md).
+- [AUGraphGetConnectionInfo](./augraphgetconnectioninfo.md)
+  Deprecated in OS X v10.5. Instead, use [`AUGraphGetInteractionInfo`](./augraphgetinteractioninfo%28_,_,_%29.md).
+- [AUGraphGetNodeConnections](./augraphgetnodeconnections.md)
+  Deprecated in OS X v10.5. Instead, use [`AUGraphGetNodeInteractions`](./augraphgetnodeinteractions%28_,_,_,_%29.md).
+- [AUGraphGetNodeInfo](./augraphgetnodeinfo.md)
+  Deprecated in OS X v10.5. Instead, use [`AUGraphNodeInfo`](./augraphnodeinfo%28_,_,_,_%29.md).
 
 
 ---

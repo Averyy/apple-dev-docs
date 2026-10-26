@@ -26,6 +26,9 @@ typedef UInt32 UCTextBreakOptions;
 - [var kUCTextBreakLeadingEdgeMask: Int](./kuctextbreakleadingedgemask.md)
 - [var kUCTextBreakGoBackwardsMask: Int](./kuctextbreakgobackwardsmask.md)
 - [var kUCTextBreakIterateMask: Int](./kuctextbreakiteratemask.md)
+- [kUCTextBreakLeadingEdgeMask](./api-1390386-anonymous/kuctextbreakleadingedgemask.md)
+- [kUCTextBreakGoBackwardsMask](./api-1390386-anonymous/kuctextbreakgobackwardsmask.md)
+- [kUCTextBreakIterateMask](./api-1390386-anonymous/kuctextbreakiteratemask.md)
 
 
 ---

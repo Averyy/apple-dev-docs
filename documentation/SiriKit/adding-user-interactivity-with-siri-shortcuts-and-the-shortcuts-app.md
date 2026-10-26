@@ -9,7 +9,7 @@ Add custom intents and parameters to help users interact more quickly and effect
 
 You can offer your app’s unique capabilities throughout the system by designing custom intents. You may also want to create a custom intent that provides the same functionality as a system intent, to offer users more flexibility for incorporating that functionality into a multi-step shortcut.
 
-Define custom intents and their parameters in an intents definition file. Xcode uses this file to generate an [`INIntent`](https://developer.apple.com/documentation/intents/inintent) subclass and related data types for each of your intents.
+Define custom intents and their parameters in an intents definition file. Xcode uses this file to generate an [`INIntent`](../Intents/inintent.md) subclass and related data types for each of your intents.
 
 When the user invokes your shortcut with their voice, Siri starts a dialog to collect the additional information needed to complete the shortcut. In the Shortcuts app, the user can make changes to what the shortcut will do when it’s invoked. To get an app that integrates custom intents and parameters, see [Soup Chef: Accelerating App Interactions with Shortcuts](./soup-chef-accelerating-app-interactions-with-shortcuts.md) and download the Soup Chef sample app.
 

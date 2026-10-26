@@ -52,6 +52,8 @@ func refreshAllObjects()
   Passes a request to the persistent store without affecting the contents of the managed object context, and returns a persistent store result.
 - [var retainsRegisteredObjects: Bool](./retainsregisteredobjects.md)
   A Boolean value that indicates whether the context keeps strong references to all registered managed objects.
+- [- executeFetchRequest:error:](./executefetchrequest_error_.md)
+  Returns an array of objects that meet the criteria of the specified fetch request.
 
 
 ---

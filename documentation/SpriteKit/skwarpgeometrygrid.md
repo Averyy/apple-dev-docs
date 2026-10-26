@@ -43,6 +43,11 @@ An `SKWarpGeometryGrid` exposes a 2D array of source positions, and set of desti
   Creates a warp geometry grid of a specific size and warp translation, in point arrays.
 - [init?(coder: NSCoder)](./skwarpgeometrygrid/init%28coder%29.md)
   Tells you when to intialize a grid that was loaded from an archive.
+- [- initWithColumns:rows:sourcePositions:destPositions:](./skwarpgeometrygrid/initwithcolumns_rows_sourcepositions_destpositions_.md)
+  Creates a warp geometry grid of a specific size and warp translation, in pointers to point arrays.
+- [+ gridWithColumns:rows:sourcePositions:destPositions:](./skwarpgeometrygrid/gridwithcolumns_rows_sourcepositions_destpositions_.md)
+- [+ grid](./skwarpgeometrygrid/grid.md)
+  Initializes a new empty grid.
 ### Animating Warping
 - [Animate the Warping of a Sprite](./animate-the-warping-of-a-sprite.md)
   Interpolate warping from source to destination warp geometry grids.
@@ -62,6 +67,10 @@ An `SKWarpGeometryGrid` exposes a 2D array of source positions, and set of desti
   Returns a copy of this grid, updated with the argument source positions.
 - [func sourcePosition(at: Int) -> vector_float2](./skwarpgeometrygrid/sourceposition%28at%29.md)
   Returns the source position of a vertex.
+- [- gridByReplacingDestPositions:](./skwarpgeometrygrid/gridbyreplacingdestpositions_.md)
+  Returns a copy of the receiver with the destination positions replaced by a specified array.
+- [- gridByReplacingSourcePositions:](./skwarpgeometrygrid/gridbyreplacingsourcepositions_.md)
+  Returns a copy of the receiver with the source positions replaced by a specified array.
 
 ## Relationships
 

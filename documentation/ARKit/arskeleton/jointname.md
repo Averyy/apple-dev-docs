@@ -71,6 +71,8 @@ When you’re tracking a body in 3D space, you get a named joint’s position in
   The particular configuration of joints that define a body’s current state.
 - [func isJointTracked(Int) -> Bool](./isjointtracked%28_%29.md)
   Tells you whether ARKit tracks a joint at a particular index.
+- [jointCount](./jointcount.md)
+  The skeleton’s total number of joints.
 
 
 ---

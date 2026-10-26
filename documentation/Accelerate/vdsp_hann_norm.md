@@ -42,6 +42,18 @@ vDSP_HANN_NORM
   Specifies that the window should only contain the bottom half of the values (`0` to `(N+1)/2`).
 - [var vDSP_HANN_DENORM: Int](./vdsp_hann_denorm.md)
   Specifies a denormalized Hann window.
+- [vDSP_blkman_window](./vdsp_blkman_window.md)
+  Creates a single-precision Blackman window.
+- [vDSP_blkman_windowD](./vdsp_blkman_windowd.md)
+  Creates a double-precision Blackman window.
+- [vDSP_hamm_window](./vdsp_hamm_window.md)
+  Creates a single-precision Hamming window.
+- [vDSP_hamm_windowD](./vdsp_hamm_windowd.md)
+  Creates a double-precision Hamming window.
+- [vDSP_hann_window](./vdsp_hann_window.md)
+  Creates a single-precision Hann window.
+- [vDSP_hann_windowD](./vdsp_hann_windowd.md)
+  Creates a double-precision Hann window.
 
 
 ---

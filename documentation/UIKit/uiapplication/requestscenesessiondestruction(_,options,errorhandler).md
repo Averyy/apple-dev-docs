@@ -48,6 +48,10 @@ If the specified scene is onscreen, calling this method dismisses it using the s
   An object that contains information you want the system to use when activating the session associated with a scene.
 - [class UISceneDestructionRequestOptions](../uiscenedestructionrequestoptions.md)
   An object you pass to UIKit to permanently remove a scene and its associated session from your app.
+- [- activateSceneSessionForRequest:errorHandler:](./activatescenesessionforrequest_errorhandler_.md)
+  Asks the system to activate an existing scene or create a new scene and associate it with your app.
+- [UISceneSessionActivationRequest](../uiscenesessionactivationrequest-c.class.md)
+  A collection of properties that you use to request activation of a scene.
 
 
 ---

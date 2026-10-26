@@ -29,6 +29,14 @@ enum NSRectEdge : NSUInteger;
   The minimum X edge.
 - [NSRectEdge.minY](./nsrectedge/miny.md)
   The minimum Y edge.
+- [NSMaxXEdge](./nsrectedge/nsmaxxedge.md)
+  The maximum X edge.
+- [NSMaxYEdge](./nsrectedge/nsmaxyedge.md)
+  The maximum Y edge.
+- [NSMinXEdge](./nsrectedge/nsminxedge.md)
+  The minimum X edge.
+- [NSMinYEdge](./nsrectedge/nsminyedge.md)
+  The minimum Y edge.
 ### Initializers
 - [init?(rawValue: UInt)](./nsrectedge/init%28rawvalue%29.md)
 - [init(rectEdge: CGRectEdge)](./nsrectedge/init%28rectedge%29.md)

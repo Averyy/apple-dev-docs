@@ -61,6 +61,22 @@ The substring specified by the given range.
   Sets the range of characters that the accessibility element displays.
 - [func accessibilitySharedTextUIElements() -> [Any]?](./accessibilitysharedtextuielements%28%29.md)
   Returns the other elements that share text with the accessibility element.
+- [- accessibilityAttributedStringForRange:](./accessibilityattributedstring%28for%29.md)
+  Returns the attributed substring for the specified range of characters.
+- [- accessibilityRTFForRange:](./accessibilityrtf%28for%29.md)
+  Returns the rich text format (RTF) data that describes the specified range of characters.
+- [- accessibilityFrameForRange:](./accessibilityframe%28for%29.md)
+  Returns the rectangle that encloses the specified range of characters.
+- [- accessibilityLineForIndex:](./accessibilityline%28for%29.md)
+  Returns the line number for the line that contains the specified character index.
+- [- accessibilityRangeForIndex:](./accessibilityrange%28for%29-6kv3.md)
+  Returns the range of characters for the glyph that includes the specified character.
+- [- accessibilityStyleRangeForIndex:](./accessibilitystylerange%28for%29.md)
+  Returns a range of characters that all have the same style as the specified character.
+- [- accessibilityRangeForLine:](./accessibilityrange%28forline%29.md)
+  Returns the range of characters in the specified line.
+- [- accessibilityRangeForPosition:](./accessibilityrange%28for%29-1iudm.md)
+  Returns the range of characters for the glyph at the specified point.
 
 
 ---

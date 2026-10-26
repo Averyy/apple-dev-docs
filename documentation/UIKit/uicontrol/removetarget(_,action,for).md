@@ -55,6 +55,8 @@ Although the `action` parameter is not considered when stopping the delivery of 
 - [func enumerateEventHandlers((UIAction?, (Any?, Selector)?, UIControl.Event, inout Bool) -> Void)](./enumerateeventhandlers%28_%29.md)
 - [UIControl.Event](./event.md)
   Constants describing the types of events possible for controls.
+- [- enumerateEventHandlers:](./enumerateeventhandlers_.md)
+  Iterate over the event handlers installed on this control at the time this method is called. For each call, either actionHandler or action will be non-nil. controlEvents is always non-zero. Setting *stop to YES will terminate the enumeration early. It is legal to manipulate the control’s event handlers within the block.
 
 
 ---

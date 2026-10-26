@@ -112,6 +112,8 @@ Using a table view delegate allows you to customize a table view’s behavior wi
   A set of methods that a table view uses to provide data to a table view and to allow the editing of the table view’s data source object.
 - [class NSTableViewDiffableDataSource](./nstableviewdiffabledatasource-c5gl.md)
   The object you use to manage data and provide items for a table view.
+- [NSTableViewDiffableDataSource](./nstableviewdiffabledatasourcereference.md)
+  The object you use to manage data and provide items for a table view.
 
 
 ---

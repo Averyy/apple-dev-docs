@@ -9,7 +9,7 @@ Manage shared content collaboration in your app using CloudKit and iCloud Drive.
 
 Your app can create collaborations and share content in a Messages conversation by leveraging [CloudKit](../CloudKit/CloudKit.md) and iCloud Drive to create and store content on the server. Collaborators add a document to conversations by sharing content using Messages. The system displays collaboration activity in Messages conversations and in active FaceTime calls.
 
-This collaboration process builds on existing technologies, like drag and drop and the system share sheet. If your app doesn’t use [iCloud](../Foundation/icloud.md) for shared content, the [Shared with You](./SharedWithYou.md) framework provides an [`SWCollaborationMetadata`](https://developer.apple.com/documentation/sharedwithyoucore/swcollaborationmetadata) object wrapped in [`NSItemProvider`](../Foundation/nsitemprovider.md) to implement a custom collaboration infrastructure.
+This collaboration process builds on existing technologies, like drag and drop and the system share sheet. If your app doesn’t use [iCloud](../Foundation/icloud.md) for shared content, the [Shared with You](./SharedWithYou.md) framework provides an [`SWCollaborationMetadata`](../SharedWithYouCore/swcollaborationmetadata.md) object wrapped in [`NSItemProvider`](../Foundation/nsitemprovider.md) to implement a custom collaboration infrastructure.
 
 ##### Create a collaboration object
 

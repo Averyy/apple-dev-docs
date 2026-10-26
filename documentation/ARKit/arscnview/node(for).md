@@ -35,6 +35,8 @@ The node whose position in the AR scene the anchor tracks, or `nil` if the ancho
   Returns the AR anchor associated with the specified SceneKit node, if any.
 - [func unprojectPoint(CGPoint, ontoPlane: simd_float4x4) -> simd_float3?](./unprojectpoint%28_,ontoplane%29.md)
   Returns the projection of a point from 2D view onto a plane in the 3D world space detected by ARKit.
+- [- unprojectPoint:ontoPlaneWithTransform:](./unprojectpoint_ontoplanewithtransform_.md)
+  Returns the projection of a point from 2D view onto a plane in the 3D world space detected by ARKit.
 
 
 ---

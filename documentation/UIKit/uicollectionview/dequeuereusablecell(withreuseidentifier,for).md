@@ -51,6 +51,10 @@ If you registered a class for the specified `identifier` and a new cell must be 
   Registers a class for use in creating new collection view cells.
 - [func register(UINib?, forCellWithReuseIdentifier: String)](./register%28_,forcellwithreuseidentifier%29-6z6t4.md)
   Registers a nib file for use in creating new collection view cells.
+- [UICollectionViewCellRegistration](../uicollectionviewcellregistration.md)
+  A registration for the collection view’s cells.
+- [- dequeueConfiguredReusableCellWithRegistration:forIndexPath:item:](./dequeueconfiguredreusablecellwithregistration_forindexpath_item_.md)
+  Dequeues a configured reusable cell object.
 
 
 ---

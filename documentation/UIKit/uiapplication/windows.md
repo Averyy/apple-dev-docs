@@ -60,6 +60,8 @@ The array orders the windows from back to front by window level; thus, the last 
   The animation duration in seconds for the status bar during a 90 degree orientation change.
 - [var statusBarStyle: UIStatusBarStyle](./statusbarstyle.md)
   The current style of the status bar.
+- [proximitySensingEnabled](./proximitysensingenabled.md)
+  A Boolean value that determines whether proximity sensing is enabled.
 
 
 ---

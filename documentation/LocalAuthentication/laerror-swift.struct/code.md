@@ -50,6 +50,12 @@ enum LAError : NSInteger;
   Touch ID is not available on the device.
 - [LAError.Code.touchIDNotEnrolled](./code/touchidnotenrolled.md)
   The user has no enrolled Touch ID fingers.
+- [LAErrorBiometryLockout](../laerror-c.enum/laerrorbiometrylockout.md)
+  Biometry is locked because there were too many failed attempts.
+- [LAErrorBiometryNotAvailable](../laerror-c.enum/laerrorbiometrynotavailable.md)
+  Biometry is not available on the device.
+- [LAErrorBiometryNotEnrolled](../laerror-c.enum/laerrorbiometrynotenrolled.md)
+  The user has no enrolled biometric identities.
 ### Other errors
 - [LAError.Code.authenticationFailed](./code/authenticationfailed.md)
   The user failed to provide valid credentials.

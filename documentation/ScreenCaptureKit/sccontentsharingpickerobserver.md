@@ -49,6 +49,8 @@ protocol SCContentSharingPickerObserver : NSObjectProtocol
   An instance for configuring the system content-sharing picker.
 - [struct SCContentSharingPickerMode](./sccontentsharingpickermode.md)
   Available modes for selecting streaming content from a picker presented by the operating system.
+- [SCContentSharingPickerConfiguration](./sccontentsharingpickerconfiguration-c.class.md)
+  An instance for configuring the system content-sharing picker.
 
 
 ---

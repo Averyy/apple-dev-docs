@@ -36,6 +36,12 @@ CFStringRef cfString = (CFStringRef)CFBridgingRetain(string);
 CFRelease(cfString);
 ```
 
+## See Also
+
+### Related Documentation
+- [CFBridgingRelease](./cfbridgingrelease.md)
+  Moves a non-Objective-C pointer to Objective-C and also transfers ownership to ARC.
+
 
 ---
 

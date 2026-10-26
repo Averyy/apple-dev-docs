@@ -34,6 +34,8 @@ class MXMetric
   Returns the contents of the metric in JSON format.
 ### Initializers
 - [init?(coder: NSCoder)](./mxmetric/init%28coder%29.md)
+### Instance Methods
+- [- DictionaryRepresentation](./mxmetric/dictionaryrepresentation-4728j.md)
 
 ## Relationships
 

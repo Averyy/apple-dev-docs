@@ -1,0 +1,19 @@
+# NewThread
+
+**Framework**: Core Services  
+**Kind**: func  
+**Role**: Function
+
+**Availability**:
+- macOS 10.0+ - Deprecated in 10.7
+
+## Declaration
+
+```c
+OSErr NewThread(ThreadStyle threadStyle, ThreadEntryTPP threadEntry, void *threadParam, Size stackSize, ThreadOptions options, void **threadResult, ThreadID *threadMade);
+```
+
+
+---
+
+*[View on Apple Developer](https://developer.apple.com/documentation/coreservices/1574248-newthread)*

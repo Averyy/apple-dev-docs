@@ -36,6 +36,8 @@ UIViewAutoresizingFlexibleBottomMargin
   Resizing performed by expanding or shrinking a view in the direction of the top margin.
 - [static var flexibleHeight: UIView.AutoresizingMask](./flexibleheight.md)
   Resizing performed by expanding or shrinking a view’s height.
+- [UIViewAutoresizingNone](../../uiviewautoresizing/uiviewautoresizingnone.md)
+  The option for indicating that the view does not resize.
 
 
 ---

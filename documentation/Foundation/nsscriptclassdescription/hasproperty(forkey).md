@@ -40,6 +40,8 @@ func hasProperty(forKey key: String) -> Bool
   Given an Apple event code that identifies a property or element class, returns the key for the corresponding attribute, one-to-one relationship, or one-to-many relationship.
 - [func type(forKey: String) -> String?](./type%28forkey%29.md)
   Returns the name of the declared type of the attribute or relationship identified by the passed key.
+- [- isReadOnlyKey:](./isreadonlykey_.md)
+  Returns a Boolean value indicating whether a specified property in the receiver is read-only.
 
 
 ---

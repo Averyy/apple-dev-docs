@@ -35,6 +35,8 @@ NSDirectionalRectEdgeAll
   The bottom edge.
 - [static var trailing: NSDirectionalRectEdge](./trailing.md)
   The trailing edge.
+- [NSDirectionalRectEdgeNone](./nsdirectionalrectedgenone.md)
+  No specified edge.
 
 
 ---

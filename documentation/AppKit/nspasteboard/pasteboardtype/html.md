@@ -58,6 +58,8 @@ In macOS 10.6 and later, use [`html`](./html.md) instead.
   Sound data.
 - [static let string: NSPasteboard.PasteboardType](./string.md)
   String data.
+- [NSPasteboardTypeTabularText](./tabulartext.md)
+  Tab-separated fields of text.
 
 
 ---

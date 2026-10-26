@@ -68,6 +68,26 @@ Tests assert that certain conditions are satisfied during code execution, and re
 ### Functions
 - [func XCTAssertNoThrow<T>(@autoclosure () throws -> T, @autoclosure () -> String, file: StaticString, line: UInt)](./xctassertnothrow%28_,_,file,line%29.md)
   Asserts that an expression doesn’t throw an error.
+### Macros
+- [XCTEST_SIMULATOR_UNAVAILABLE](./xctest_simulator_unavailable.md)
+- [XCT_DEPRECATED_WITH_DIRECT_REPLACEMENT](./xct_deprecated_with_direct_replacement.md)
+- [XCT_DEPRECATED_WITH_REPLACEMENT](./xct_deprecated_with_replacement.md)
+- [XCT_DEPRECATED_WITH_SWIFT_REPLACEMENT](./xct_deprecated_with_swift_replacement.md)
+- [XCT_EXPORT](./xct_export.md)
+- [XCT_HEADER_AUDIT_BEGIN](./xct_header_audit_begin.md)
+- [XCT_HEADER_AUDIT_END](./xct_header_audit_end.md)
+- [XCT_METRIC_API_AVAILABLE](./xct_metric_api_available.md)
+- [XCT_NOESCAPE](./xct_noescape.md)
+- [XCT_SWIFT_MAIN_ACTOR](./xct_swift_main_actor.md)
+- [XCT_SWIFT_SENDABLE](./xct_swift_sendable.md)
+- [XCT_SWIFT_UNAVAILABLE_FROM_ASYNC](./xct_swift_unavailable_from_async.md)
+- [XCT_TO_BE_DEPRECATED_WITH_SWIFT_REPLACEMENT](./xct_to_be_deprecated_with_swift_replacement.md)
+- [XCT_UNAVAILABLE](./xct_unavailable.md)
+- [XCT_WARN_UNUSED](./xct_warn_unused.md)
+- [XCT_WEAK_EXPORT](./xct_weak_export.md)
+### Enumerations
+- [XCTIssueSeverity](./xctissuereference/severity-swift.enum.md)
+  An enum representing the severity of a test issue.
 
 
 ---

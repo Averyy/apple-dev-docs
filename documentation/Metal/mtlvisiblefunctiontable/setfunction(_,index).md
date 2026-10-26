@@ -35,6 +35,8 @@ func setFunction(_ function: (any MTLFunctionHandle)?, index: Int)
 ### Setting a table entry
 - [func setFunctions([(any MTLFunctionHandle)?], range: Range<Int>)](./setfunctions%28_,range%29.md)
   Sets a range of table entries to point to an array of callable functions.
+- [- setFunctions:withRange:](./setfunctions_withrange_.md)
+  Sets a range of table entries to point to an array of callable functions.
 
 
 ---

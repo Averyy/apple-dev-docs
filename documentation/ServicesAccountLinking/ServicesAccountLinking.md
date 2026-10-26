@@ -36,6 +36,13 @@ If your application isn’t registered as an authorized partner, registration fa
 ### Variables
 - [let RegistrationErrorRetryAfterKey: String](./registrationerrorretryafterkey.md)
   `userInfo` key whose value is an `NSNumber` containing the server-provided retry interval in seconds. Present on [`rateLimited`](./registrationerror/ratelimited.md) errors.
+- [ServicesAccountLinkingVersionNumber](./servicesaccountlinkingversionnumber.md)
+  Framework version number for ServicesAccountLinking.
+- [ServicesAccountLinkingVersionString](./servicesaccountlinkingversionstring.md)
+  Framework version string for ServicesAccountLinking.
+### Enumerations
+- [SALRegistrationError](./registrationerror/code.md)
+  Registration error codes.
 
 
 ---

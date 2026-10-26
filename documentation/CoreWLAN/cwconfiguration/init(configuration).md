@@ -32,6 +32,10 @@ A CWConfiguration object.
 ### Creating a configuration
 - [init()](./init%28%29.md)
   Creates an empty CWConfiguration object.
+- [+ configuration](./configuration.md)
+  Convenience method for getting an empty CWConfiguration object.
+- [+ configurationWithConfiguration:](./configurationwithconfiguration_.md)
+  Convenience method for getting a CWConfiguration object initialized with the given CWConfiguration object.
 
 
 ---

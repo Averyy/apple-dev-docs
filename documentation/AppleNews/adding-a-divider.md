@@ -130,11 +130,11 @@ The divider now ignores the margins on both sides of the document.
 ## See Also
 
 ### Related Documentation
-- [object Divider](https://developer.apple.com/documentation/applenewsformat/divider)
+- [object Divider](../AppleNewsFormat/divider.md)
   The component for defining a horizontal line to visually divide parts of your article.
-- [object ComponentLayout](https://developer.apple.com/documentation/applenewsformat/componentlayout)
+- [object ComponentLayout](../AppleNewsFormat/componentlayout.md)
   The object for defining the positioning for a specific component within the article’s column system.
-- [object StrokeStyle](https://developer.apple.com/documentation/applenewsformat/strokestyle)
+- [object StrokeStyle](../AppleNewsFormat/strokestyle.md)
   The object for defining the color, width, and style of a border or divider.
 ### Introductory Design Tutorial
 - [Setting Up the Introductory Tutorial](./setting-up-the-introductory-tutorial.md)

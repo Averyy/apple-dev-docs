@@ -36,6 +36,8 @@ As a target-action method, [`deselectAll(_:)`](./deselectall%28_%29.md) checks w
   Asks the delegate if the user is allowed to change the selection.
 - [var allowsEmptySelection: Bool](./allowsemptyselection.md)
   A Boolean value indicating whether the table view allows the user to select zero columns or rows.
+- [- selectColumn:byExtendingSelection:](./selectcolumn_byextendingselection_.md)
+  Selects the column at the specified index, optionally extending any existing selection.
 ### Selecting Columns and Rows
 - [func selectColumnIndexes(IndexSet, byExtendingSelection: Bool)](./selectcolumnindexes%28_,byextendingselection%29.md)
   Sets the column selection using `indexes` possibly extending the selection.

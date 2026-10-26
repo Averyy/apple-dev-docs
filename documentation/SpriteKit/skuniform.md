@@ -54,6 +54,24 @@ An [`SKUniform`](./skuniform.md) object is used to hold uniform data for a custo
   Initializes a new uniform object that holds a `4 x 4` matrix of floating-point numbers.
 - [init(name: String, texture: SKTexture?)](./skuniform/init%28name,texture%29.md)
   Initializes a new uniform object that holds a reference to a texture.
+- [+ uniformWithName:](./skuniform/uniformwithname_.md)
+  Creates and initializes a new uniform object.
+- [+ uniformWithName:float:](./skuniform/uniformwithname_float_.md)
+  Creates and initializes a new uniform object that holds a floating-point number.
+- [+ uniformWithName:floatVector2:](./skuniform/uniformwithname_floatvector2_.md)
+  Creates and initializes a new uniform object that holds a vector of two floating-point numbers.
+- [+ uniformWithName:floatVector3:](./skuniform/uniformwithname_floatvector3_.md)
+  Creates and initializes a new uniform object that holds a vector of three floating-point numbers.
+- [+ uniformWithName:floatVector4:](./skuniform/uniformwithname_floatvector4_.md)
+  Creates and initializes a new uniform object that holds a vector of four floating-point numbers.
+- [+ uniformWithName:floatMatrix2:](./skuniform/uniformwithname_floatmatrix2_.md)
+  Creates and initializes a new uniform object that holds a `2 x 2` matrix of floating-point numbers.
+- [+ uniformWithName:floatMatrix3:](./skuniform/uniformwithname_floatmatrix3_.md)
+  Creates and initializes a new uniform object that holds a `3 x 3` matrix of floating-point numbers.
+- [+ uniformWithName:floatMatrix4:](./skuniform/uniformwithname_floatmatrix4_.md)
+  Creates and initializes a new uniform object that holds a `4 x 4` matrix of floating-point numbers.
+- [+ uniformWithName:texture:](./skuniform/uniformwithname_texture_.md)
+  Creates and initializes a new uniform object that holds a reference to a texture.
 ### Reading Information About a Uniform
 - [var name: String](./skuniform/name.md)
   The uniform’s name.
@@ -106,6 +124,13 @@ An [`SKUniform`](./skuniform.md) object is used to hold uniform data for a custo
 - [var vectorFloat2Value: vector_float2](./skuniform/vectorfloat2value.md)
 - [var vectorFloat3Value: vector_float3](./skuniform/vectorfloat3value.md)
 - [var vectorFloat4Value: vector_float4](./skuniform/vectorfloat4value.md)
+### Type Methods
+- [+ uniformWithName:matrixFloat2x2:](./skuniform/uniformwithname_matrixfloat2x2_.md)
+- [+ uniformWithName:matrixFloat3x3:](./skuniform/uniformwithname_matrixfloat3x3_.md)
+- [+ uniformWithName:matrixFloat4x4:](./skuniform/uniformwithname_matrixfloat4x4_.md)
+- [+ uniformWithName:vectorFloat2:](./skuniform/uniformwithname_vectorfloat2_.md)
+- [+ uniformWithName:vectorFloat3:](./skuniform/uniformwithname_vectorfloat3_.md)
+- [+ uniformWithName:vectorFloat4:](./skuniform/uniformwithname_vectorfloat4_.md)
 
 ## Relationships
 

@@ -41,6 +41,8 @@ The Address Book is a centralized database containing contacts and their persona
   An object you use to customize the behavior of people-picker views in an app’s user interface.
 - [class ABPersonView](./abpersonview.md)
   An object that provides a view for displaying and editing contacts.
+- [ABPersonPicker](./abpersonpicker.md)
+  A picker object that you display when you want the user to select contacts.
 ### Search Elements
 - [class ABSearchElement](./absearchelement.md)
   An object you use to specify a search query for records in the Address Book database.
@@ -63,6 +65,9 @@ The Address Book is a centralized database containing contacts and their persona
 ### Deprecated symbols
 - [Deprecated symbols](./deprecated-symbols.md)
   Review unsupported symbols and their replacements.
+### Macros
+- [AB_DEPRECATED](./ab_deprecated.md)
+- [AB_EXTERN](./ab_extern.md)
 
 
 ---

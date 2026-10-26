@@ -34,6 +34,12 @@ A new mutable video composition layer instruction with no transform or opacity r
 
 - `track`: The asset track to which to apply the instruction.
 
+## See Also
+
+### Creating an instruction
+- [+ videoCompositionLayerInstruction](./videocompositionlayerinstruction.md)
+  Returns a new mutable video composition layer instruction.
+
 
 ---
 

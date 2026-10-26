@@ -7,7 +7,7 @@ Allow users to create an account and sign in to your app with their Apple Accoun
 
 #### Overview
 
-Sign in with Apple gives your users the option to sign in to your app with their existing Apple Account instead of creating a separate username and password. All Apple devices support Sign in with Apple. For information about using this feature in the browser, see [Sign in with Apple JS](https://developer.apple.com/documentation/signinwithapplejs).
+Sign in with Apple gives your users the option to sign in to your app with their existing Apple Account instead of creating a separate username and password. All Apple devices support Sign in with Apple. For information about using this feature in the browser, see [Sign in with Apple JS](../SigninwithAppleJS/SigninwithAppleJS.md).
 
 To use Sign in with Apple in your app, add the capability by configuring your app’s target in Xcode, set up the user interface and necessary authorizations, and register your domain with Apple’s relay service to ensure you can send emails to your users’ personal inboxes.
 

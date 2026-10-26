@@ -30,6 +30,8 @@ This object provides a “zero-copy” buffer, for use when reading data from fi
   Performs the given closure with an unsafe pointer to the underlying bytes of the data buffer.
 - [var length: Int](./fsmutablefiledatabuffer/length.md)
   The data length of the buffer.
+- [- mutableBytes](./fsmutablefiledatabuffer/mutablebytes.md)
+  The byte data.
 ### Instance Methods
 - [func createMutableRawSpan() throws -> MutableRawSpan](./fsmutablefiledatabuffer/createmutablerawspan%28%29.md)
   Return a MutableRawSpan to the underlying bytes of the data buffer.

@@ -34,6 +34,11 @@ A common way to use this framework is:
 ### Server Communication
 - [class SLRequest](./slrequest.md)
   An object that you use to assemble an HTTP request for communicating with a social media service.
+### Macros
+- [SOCIAL_CLASS_AVAILABLE](./social_class_available.md)
+- [SOCIAL_CLASS_AVAILABLE_IOS](./social_class_available_ios.md)
+- [SOCIAL_CLASS_AVAILABLE_MAC](./social_class_available_mac.md)
+- [SOCIAL_EXTERN](./social_extern.md)
 
 
 ---

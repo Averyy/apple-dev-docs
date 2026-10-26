@@ -9,7 +9,7 @@ Add a table formatted in HTML to your article.
 
 To add an HTML table to your article, you add a component with the `role` property set to `htmltable`. In the required `html` property, add the coded HTML table consisting of your data and the HTML tags that indicate rows. Make sure that all of your HTML code is enclosed in `<table> </table>` tags.
 
-To change the appearance of an HTML table, you can use any of the HTML tags Apple News Format supports; for more information, see [Using HTML with Apple News Format](./using-html-with-apple-news-format.md). You can also apply c`omponentStyles` from Apple News Format; for more information, see [`TableStyle`](https://developer.apple.com/documentation/applenewsformat/tablestyle).
+To change the appearance of an HTML table, you can use any of the HTML tags Apple News Format supports; for more information, see [Using HTML with Apple News Format](./using-html-with-apple-news-format.md). You can also apply c`omponentStyles` from Apple News Format; for more information, see [`TableStyle`](../AppleNewsFormat/tablestyle.md).
 
 ##### Review the HTML Table Tags
 
@@ -42,7 +42,7 @@ This list describes how to use the basic HTML table tags:
 - Put table data tags (`<td>` and `</td>`) around each element in a row.
 - Enclose a  single row or group of rows in `<thead>`, `<tbody>`, or `<tfoot>` tags.
 - Style your table text using supported HTML tags. See [Using HTML with Apple News Format](./using-html-with-apple-news-format.md).
-- Use a JSON [`ComponentStyle`](https://developer.apple.com/documentation/applenewsformat/componentstyle) that has the `tableStyle` object defined to specify table alignment, table padding, and other, nontextual table styles. Apple News Format ignores any style-related HTML attributes, such as `cellpadding`, `cellspacing`, `width`, and `alignment`.
+- Use a JSON [`ComponentStyle`](../AppleNewsFormat/componentstyle.md) that has the `tableStyle` object defined to specify table alignment, table padding, and other, nontextual table styles. Apple News Format ignores any style-related HTML attributes, such as `cellpadding`, `cellspacing`, `width`, and `alignment`.
 
 Consider the following example HTML code:
 
@@ -60,7 +60,7 @@ This code results in a table with two columns and two rows — one row is for th
 ## See Also
 
 ### Tables with HTML Data
-- [object HTMLTable](https://developer.apple.com/documentation/applenewsformat/htmltable)
+- [object HTMLTable](../AppleNewsFormat/htmltable.md)
   The component for adding tables with HTML data.
 
 

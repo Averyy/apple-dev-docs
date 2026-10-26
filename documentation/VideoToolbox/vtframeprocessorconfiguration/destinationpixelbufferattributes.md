@@ -30,6 +30,8 @@ var destinationPixelBufferAttributes: [String : any Sendable] { get }
 ### Inspecting pixel buffer attributes
 - [var sourcePixelBufferAttributes: [String : any Sendable]](./sourcepixelbufferattributes.md)
   A dictionary of pixel buffer attributes that define what the source and reference frames passed to the processor must conform to.
+- [frameSupportedPixelFormats](./framesupportedpixelformats.md)
+  A list of supported pixel formats for the current configuration.
 
 
 ---

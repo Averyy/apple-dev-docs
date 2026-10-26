@@ -85,6 +85,8 @@ Request screen recording permission from the person before capturing content. In
   Available modes for selecting streaming content from a picker presented by the operating system.
 - [protocol SCContentSharingPickerObserver](./sccontentsharingpickerobserver.md)
   An observer protocol your app implements to receive messages from the operating system’s content picker.
+- [SCContentSharingPickerConfiguration](./sccontentsharingpickerconfiguration-c.class.md)
+  An instance for configuring the system content-sharing picker.
 ### Stream errors (Swift)
 - [let SCStreamErrorDomain: String](./scstreamerrordomain.md)
   A string representation of the error domain.
@@ -95,6 +97,17 @@ Request screen recording permission from the person before capturing content. In
 ### Protocols
 - [protocol SCClipBufferingOutputDelegate](./scclipbufferingoutputdelegate.md)
 - [protocol SCRecordingEditorDelegate](./screcordingeditordelegate.md)
+### Stream errors (Objective-C)
+- [SCStreamErrorCode](./scstreamerror/code.md)
+  Codes for user cancellation events and errors that can occur in ScreenCaptureKit.
+### Variables
+- [SCStreamFrameInfoVideoOrientation](./scstreamframeinfo/videoorientation.md)
+### Enumerations
+- [SCRecordingEditorMode](./screcordingeditor/mode.md)
+- [SCScreenshotDisplayIntent](./scscreenshotconfiguration/displayintent-swift.enum.md)
+  A value that specifies the type of display a screenshot rendering optimizes for.
+- [SCScreenshotDynamicRange](./scscreenshotconfiguration/dynamicrange-swift.enum.md)
+  Specifies the type of images returned to the client; standard dynamic range, high dynamic range, or both.
 
 
 ---

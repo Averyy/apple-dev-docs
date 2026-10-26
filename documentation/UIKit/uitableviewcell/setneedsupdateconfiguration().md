@@ -40,6 +40,14 @@ If you add custom states to the cell’s configuration state, make sure to call 
   A block for handling updates to the cell’s configuration using the current state.
 - [UITableViewCell.ConfigurationUpdateHandler](./configurationupdatehandler-swift.typealias.md)
   The type of block for handling updates to the cell’s configuration using the current state.
+- [configurationState](./configurationstate-5gw4n.md)
+  The current configuration state of the cell.
+- [- updateConfigurationUsingState:](./updateconfigurationusingstate_.md)
+  Updates the cell’s configuration using the current state.
+- [configurationUpdateHandler](./configurationupdatehandler-746ya.md)
+  A block for handling updates to the cell’s configuration using the current state.
+- [UITableViewCellConfigurationUpdateHandler](../uitableviewcellconfigurationupdatehandler.md)
+  The type of block for handling updates to the cell’s configuration using the current state.
 
 
 ---

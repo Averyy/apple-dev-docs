@@ -14,93 +14,93 @@ With the lists and notes domain, people can create to-do lists, mark to-do list 
 ## Topics
 
 ### Note Creation
-- [protocol INCreateNoteIntentHandling](https://developer.apple.com/documentation/intents/increatenoteintenthandling)
+- [protocol INCreateNoteIntentHandling](../Intents/increatenoteintenthandling.md)
   The handler interface for creating notes.
-- [class INCreateNoteIntent](https://developer.apple.com/documentation/intents/increatenoteintent)
+- [class INCreateNoteIntent](../Intents/increatenoteintent.md)
   A request to create a new note.
-- [class INCreateNoteIntentResponse](https://developer.apple.com/documentation/intents/increatenoteintentresponse)
+- [class INCreateNoteIntentResponse](../Intents/increatenoteintentresponse.md)
   Your app’s response to a request to create a note.
 ### Notebook Search
-- [protocol INSearchForNotebookItemsIntentHandling](https://developer.apple.com/documentation/intents/insearchfornotebookitemsintenthandling)
+- [protocol INSearchForNotebookItemsIntentHandling](../Intents/insearchfornotebookitemsintenthandling.md)
   The handler interface for searching for notes, tasks, and reminders.
-- [class INSearchForNotebookItemsIntent](https://developer.apple.com/documentation/intents/insearchfornotebookitemsintent)
+- [class INSearchForNotebookItemsIntent](../Intents/insearchfornotebookitemsintent.md)
   A request to search for notes, tasks, and reminders.
-- [class INSearchForNotebookItemsIntentResponse](https://developer.apple.com/documentation/intents/insearchfornotebookitemsintentresponse)
+- [class INSearchForNotebookItemsIntentResponse](../Intents/insearchfornotebookitemsintentresponse.md)
   Your app’s response to a request to search for notes, tasks, or reminders.
 ### Task Addition
-- [protocol INAddTasksIntentHandling](https://developer.apple.com/documentation/intents/inaddtasksintenthandling)
+- [protocol INAddTasksIntentHandling](../Intents/inaddtasksintenthandling.md)
   The handler interface for adding tasks to a task list.
-- [class INAddTasksIntent](https://developer.apple.com/documentation/intents/inaddtasksintent)
+- [class INAddTasksIntent](../Intents/inaddtasksintent.md)
   A request to add tasks to an existing task list.
-- [class INAddTasksIntentResponse](https://developer.apple.com/documentation/intents/inaddtasksintentresponse)
+- [class INAddTasksIntentResponse](../Intents/inaddtasksintentresponse.md)
   Your response to a request to add tasks to a task list.
 ### Task Attributes
-- [protocol INSetTaskAttributeIntentHandling](https://developer.apple.com/documentation/intents/insettaskattributeintenthandling)
+- [protocol INSetTaskAttributeIntentHandling](../Intents/insettaskattributeintenthandling.md)
   The handler interface for updating the attributes of an existing task.
-- [class INSetTaskAttributeIntent](https://developer.apple.com/documentation/intents/insettaskattributeintent)
+- [class INSetTaskAttributeIntent](../Intents/insettaskattributeintent.md)
   A request to modify the attributes of a task.
-- [class INSetTaskAttributeIntentResponse](https://developer.apple.com/documentation/intents/insettaskattributeintentresponse)
+- [class INSetTaskAttributeIntentResponse](../Intents/insettaskattributeintentresponse.md)
   Your response to a request to modify the attributes of an existing task.
 ### Task Deferral
-- [protocol INSnoozeTasksIntentHandling](https://developer.apple.com/documentation/intents/insnoozetasksintenthandling)
+- [protocol INSnoozeTasksIntentHandling](../Intents/insnoozetasksintenthandling.md)
   The handler interface that snoozes tasks in a task list.
-- [class INSnoozeTasksIntent](https://developer.apple.com/documentation/intents/insnoozetasksintent)
+- [class INSnoozeTasksIntent](../Intents/insnoozetasksintent.md)
   A request to snooze one or more tasks.
-- [class INSnoozeTasksIntentResponse](https://developer.apple.com/documentation/intents/insnoozetasksintentresponse)
+- [class INSnoozeTasksIntentResponse](../Intents/insnoozetasksintentresponse.md)
   Your response to a delete tasks request.
 ### Note Objects
-- [class INNote](https://developer.apple.com/documentation/intents/innote)
+- [class INNote](../Intents/innote.md)
   The content and metadata associated with a single note entry in your app.
-- [class INNoteContent](https://developer.apple.com/documentation/intents/innotecontent)
+- [class INNoteContent](../Intents/innotecontent.md)
   An abstract class that defines the types of content contained in notes.
-- [class INTextNoteContent](https://developer.apple.com/documentation/intents/intextnotecontent)
+- [class INTextNoteContent](../Intents/intextnotecontent.md)
   The textual content of a note.
-- [class INImageNoteContent](https://developer.apple.com/documentation/intents/inimagenotecontent)
+- [class INImageNoteContent](../Intents/inimagenotecontent.md)
   An image contained in a note.
 ### Task Objects
-- [class INTaskList](https://developer.apple.com/documentation/intents/intasklist)
+- [class INTaskList](../Intents/intasklist.md)
   A collection of individual tasks.
-- [class INTask](https://developer.apple.com/documentation/intents/intask)
+- [class INTask](../Intents/intask.md)
   An individual task the user needs to complete.
 ### Event Triggers
-- [class INSpatialEventTrigger](https://developer.apple.com/documentation/intents/inspatialeventtrigger)
+- [class INSpatialEventTrigger](../Intents/inspatialeventtrigger.md)
   A trigger condition based on the user’s arrival or departure from a given location.
-- [class INTemporalEventTrigger](https://developer.apple.com/documentation/intents/intemporaleventtrigger)
+- [class INTemporalEventTrigger](../Intents/intemporaleventtrigger.md)
   A trigger condition based on a date or time.
-- [class INTemporalEventTriggerTypeOptionsResolutionResult](https://developer.apple.com/documentation/intents/intemporaleventtriggertypeoptionsresolutionresult)
+- [class INTemporalEventTriggerTypeOptionsResolutionResult](../Intents/intemporaleventtriggertypeoptionsresolutionresult.md)
   A resolution result that adds a temporal event trigger.
-- [struct INDayOfWeekOptions](https://developer.apple.com/documentation/intents/indayofweekoptions)
+- [struct INDayOfWeekOptions](../Intents/indayofweekoptions.md)
   Days of the week.
 ### Resolution Results
-- [class INAddTasksTargetTaskListResolutionResult](https://developer.apple.com/documentation/intents/inaddtaskstargettasklistresolutionresult)
+- [class INAddTasksTargetTaskListResolutionResult](../Intents/inaddtaskstargettasklistresolutionresult.md)
   A resolution result that adds tasks to a target task list.
-- [class INAddTasksTemporalEventTriggerResolutionResult](https://developer.apple.com/documentation/intents/inaddtaskstemporaleventtriggerresolutionresult)
+- [class INAddTasksTemporalEventTriggerResolutionResult](../Intents/inaddtaskstemporaleventtriggerresolutionresult.md)
   A resolution result for a temporal event trigger.
-- [class INDateSearchTypeResolutionResult](https://developer.apple.com/documentation/intents/indatesearchtyperesolutionresult)
+- [class INDateSearchTypeResolutionResult](../Intents/indatesearchtyperesolutionresult.md)
   A resolution result for the types of dates supported by a search.
-- [class INLocationSearchTypeResolutionResult](https://developer.apple.com/documentation/intents/inlocationsearchtyperesolutionresult)
+- [class INLocationSearchTypeResolutionResult](../Intents/inlocationsearchtyperesolutionresult.md)
   A resolution result for location-based searches.
-- [class INNoteResolutionResult](https://developer.apple.com/documentation/intents/innoteresolutionresult)
+- [class INNoteResolutionResult](../Intents/innoteresolutionresult.md)
   A resolution result for notes.
-- [class INNoteContentResolutionResult](https://developer.apple.com/documentation/intents/innotecontentresolutionresult)
+- [class INNoteContentResolutionResult](../Intents/innotecontentresolutionresult.md)
   A resolution result for the content of notes.
-- [class INNotebookItemTypeResolutionResult](https://developer.apple.com/documentation/intents/innotebookitemtyperesolutionresult)
+- [class INNotebookItemTypeResolutionResult](../Intents/innotebookitemtyperesolutionresult.md)
   A resolution result for the type of items to look for during a search of notes and tasks.
-- [class INSetTaskAttributeTemporalEventTriggerResolutionResult](https://developer.apple.com/documentation/intents/insettaskattributetemporaleventtriggerresolutionresult)
+- [class INSetTaskAttributeTemporalEventTriggerResolutionResult](../Intents/insettaskattributetemporaleventtriggerresolutionresult.md)
   A resolution result for a temporal event trigger.
-- [class INSnoozeTasksTaskResolutionResult](https://developer.apple.com/documentation/intents/insnoozetaskstaskresolutionresult)
+- [class INSnoozeTasksTaskResolutionResult](../Intents/insnoozetaskstaskresolutionresult.md)
   A resolution result for snoozing a task.
-- [class INSpatialEventTriggerResolutionResult](https://developer.apple.com/documentation/intents/inspatialeventtriggerresolutionresult)
+- [class INSpatialEventTriggerResolutionResult](../Intents/inspatialeventtriggerresolutionresult.md)
   A resolution result for the location-based trigger associated with a task.
-- [class INTaskListResolutionResult](https://developer.apple.com/documentation/intents/intasklistresolutionresult)
+- [class INTaskListResolutionResult](../Intents/intasklistresolutionresult.md)
   A resolution result for a list of tasks.
-- [class INTaskResolutionResult](https://developer.apple.com/documentation/intents/intaskresolutionresult)
+- [class INTaskResolutionResult](../Intents/intaskresolutionresult.md)
   A resolution result for a single task within a task list.
-- [class INTaskStatusResolutionResult](https://developer.apple.com/documentation/intents/intaskstatusresolutionresult)
+- [class INTaskStatusResolutionResult](../Intents/intaskstatusresolutionresult.md)
   A resolution result for the status of a task.
-- [class INTemporalEventTriggerResolutionResult](https://developer.apple.com/documentation/intents/intemporaleventtriggerresolutionresult)
+- [class INTemporalEventTriggerResolutionResult](../Intents/intemporaleventtriggerresolutionresult.md)
   A resolution result for the time-based trigger associated with a task.
-- [class INTaskPriorityResolutionResult](https://developer.apple.com/documentation/intents/intaskpriorityresolutionresult)
+- [class INTaskPriorityResolutionResult](../Intents/intaskpriorityresolutionresult.md)
   A resolution result for the priority associated with a task.
 
 ## See Also

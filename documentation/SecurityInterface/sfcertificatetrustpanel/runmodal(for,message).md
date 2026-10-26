@@ -37,6 +37,8 @@ Note that changing the user trust settings does not affect the results of a trus
 ### Related Documentation
 - [func SecTrustCreateWithCertificates(CFTypeRef, CFTypeRef?, UnsafeMutablePointer<SecTrust?>) -> OSStatus](../../Security/sectrustcreatewithcertificates%28_,_,_%29.md)
   Creates a trust management object based on certificates and policies.
+- [SecTrustGetResult](../../Security/sectrustgetresult.md)
+  Retrieves details on the outcome of a call to the function `SecTrustEvaluate`.
 ### Displaying a Sheet or Panel
 - [func beginSheet(for: NSWindow!, modalDelegate: Any!, didEnd: Selector!, contextInfo: UnsafeMutableRawPointer!, trust: SecTrust!, message: String!)](./beginsheet%28for,modaldelegate,didend,contextinfo,trust,message%29.md)
   Displays a modal sheet that shows the results of a certificate trust evaluation and that allows the user to edit trust settings.

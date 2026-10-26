@@ -38,6 +38,8 @@ A message compose button with the custom image.
 ### Creating a Message Compose Bar Button
 - [init()](./init%28%29.md)
   Creates a message compose button with a system-provided image.
+- [+ new](./new.md)
+  Creates a message compose button with a system-provided image.
 
 
 ---

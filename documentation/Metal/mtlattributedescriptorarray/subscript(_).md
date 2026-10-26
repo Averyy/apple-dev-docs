@@ -32,6 +32,12 @@ The attribute descriptor for data bound at this index.
 
 - `index`: A specified index in the argument table bindings.
 
+## See Also
+
+### Accessing attribute state objects
+- [- setObject:atIndexedSubscript:](./setobject_atindexedsubscript_.md)
+  Sets state for the specified attribute.
+
 
 ---
 

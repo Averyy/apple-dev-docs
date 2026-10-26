@@ -32,6 +32,8 @@ var userTagNames: [String] { get set }
   An array of tag names for the audio unit component.
 - [AVAudioUnitComponent.TagsDidChangeMessage](./tagsdidchangemessage.md)
   Type-safe notification message for audio unit component tag changes.
+- [AVAudioUnitComponentTagsDidChangeNotification](../avaudiounitcomponenttagsdidchangenotification.md)
+  A notification that indicates when component tags change.
 
 
 ---

@@ -37,6 +37,10 @@ You use text style objects to format subtitles, closed captions, and other text-
   Creates a text style rule object with the specified style attributes.
 - [init?(textMarkupAttributes: [String : Any], textSelector: String?)](./avtextstylerule/init%28textmarkupattributes,textselector%29.md)
   Creates a text style rule object with the specified style attributes and text range information.
+- [+ textStyleRuleWithTextMarkupAttributes:](./avtextstylerule/textstylerulewithtextmarkupattributes_.md)
+  Creates a new text style rule object using the style attributes in the specified dictionary.
+- [+ textStyleRuleWithTextMarkupAttributes:textSelector:](./avtextstylerule/textstylerulewithtextmarkupattributes_textselector_.md)
+  Creates a new text style rule object using the specified style attributes and text range information.
 ### Accessing the style attributes
 - [var textMarkupAttributes: [String : Any]](./avtextstylerule/textmarkupattributes.md)
   A dictionary of text style attributes to apply to the text.

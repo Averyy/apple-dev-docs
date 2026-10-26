@@ -38,6 +38,20 @@ typedef struct MIDIUniversalMessage { ... } MIDIUniversalMessage;
 - [var type: MIDIMessageType](./midiuniversalmessage/type.md)
 - [var unknown: MIDIUniversalMessage.__Unnamed_union___Anonymous_field3.__Unnamed_struct_unknown](./midiuniversalmessage/unknown-9rrub.md)
 - [var utility: MIDIUniversalMessage.__Unnamed_union___Anonymous_field3.__Unnamed_struct_utility](./midiuniversalmessage/utility-1trwz.md)
+- [channelVoice1](./midiuniversalmessage/channelvoice1-20x9n.md)
+  active when type is kMIDIMessageTypeChannelVoice1
+- [channelVoice2](./midiuniversalmessage/channelvoice2-20x9k.md)
+  active when type is kMIDIMessageTypeChannelVoice2
+- [data128](./midiuniversalmessage/data128-43npl.md)
+  active when type is kMIDIMessageTypeData128
+- [sysEx](./midiuniversalmessage/sysex-13198.md)
+  active when type is kMIDIMessageTypeSysEx
+- [system](./midiuniversalmessage/system-8xb4e.md)
+  active when type is kMIDIMessageTypeSystem
+- [unknown](./midiuniversalmessage/unknown-2egcc.md)
+  active when type is unkown
+- [utility](./midiuniversalmessage/utility-63fq7.md)
+  active when type is kMIDIMessageTypeUtility
 
 ## Relationships
 

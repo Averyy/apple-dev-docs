@@ -36,6 +36,8 @@ This flag is mutually exclusive with [`rectangularCoordinates`](./rectangularcoo
   A flag that indicates that unit values are in meters.
 - [static var rectangularCoordinates: AudioChannelFlags](./rectangularcoordinates.md)
   A flag that indicates the channel uses the speaker position’s cartesian coordinates.
+- [kAudioChannelFlags_AllOff](./kaudiochannelflags_alloff.md)
+  All flags are clear.
 
 
 ---

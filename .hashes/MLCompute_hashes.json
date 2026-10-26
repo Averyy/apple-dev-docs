@@ -275,6 +275,11 @@
       "file_path": "documentation/MLCompute/mlcactivationtype/logsigmoid.md",
       "hash": "2c8a3c3f7da9f498a3b84c0a06e3437d95c64743e96893fabae7d26f2a2ba937"
     },
+    "https://developer.apple.com/documentation/mlcompute/mlcactivationtype/mlcactivationtypecount": {
+      "etag": "\"4fed-65d55df305c87-df\"",
+      "file_path": "documentation/MLCompute/mlcactivationtype/mlcactivationtypecount.md",
+      "hash": "5c2f636647853b4c9e2e14765d0d7e8d16720f916108b19e03a4ffb3e5b87f7f"
+    },
     "https://developer.apple.com/documentation/mlcompute/mlcactivationtype/none": {
       "etag": "\"5daa-65d55df305c87-df\"",
       "file_path": "documentation/MLCompute/mlcactivationtype/none.md",
@@ -540,6 +545,11 @@
       "file_path": "documentation/MLCompute/mlcarithmeticoperation/min.md",
       "hash": "e3d20d44a13b0bb7445fa79619c83dd5adaaa9adc62e104fb7bea038bd6124d6"
     },
+    "https://developer.apple.com/documentation/mlcompute/mlcarithmeticoperation/mlcarithmeticoperationcount": {
+      "etag": "\"1656-65d55df1974bb-df\"",
+      "file_path": "documentation/MLCompute/mlcarithmeticoperation/mlcarithmeticoperationcount.md",
+      "hash": "3f266f3299e33bb91352e433f2a18039279b913a040b618b9f48f4265123d56a"
+    },
     "https://developer.apple.com/documentation/mlcompute/mlcarithmeticoperation/multiply": {
       "etag": "\"3c14-65d55df1974bb-df\"",
       "file_path": "documentation/MLCompute/mlcarithmeticoperation/multiply.md",
@@ -740,6 +750,11 @@
       "file_path": "documentation/MLCompute/mlccomparisonoperation/logicalxor.md",
       "hash": "99131eb266a7a90348c264b00d4abd0712c75a22c7b949e43a6e821de61fe8f7"
     },
+    "https://developer.apple.com/documentation/mlcompute/mlccomparisonoperation/mlccomparisonoperationcount": {
+      "etag": "\"4828-65d55df20fd09-df\"",
+      "file_path": "documentation/MLCompute/mlccomparisonoperation/mlccomparisonoperationcount.md",
+      "hash": "7a4cd2c0b0f2d86d8be5f80280394a102bdc8c6c47ce2bb700e601738cddc228"
+    },
     "https://developer.apple.com/documentation/mlcompute/mlccomparisonoperation/notequal": {
       "etag": "\"5322-65d55df20fd09-df\"",
       "file_path": "documentation/MLCompute/mlccomparisonoperation/notequal.md",
@@ -770,10 +785,60 @@
       "file_path": "documentation/MLCompute/mlcconvolutiondescriptor.md",
       "hash": "51c61023544bd91dff9bd6e685290dce8f7494966c83a33b18d9f1f845c7d490"
     },
+    "https://developer.apple.com/documentation/mlcompute/mlcconvolutiondescriptor/convolutiontransposedescriptorwithkernelsizes:inputfeaturechannelcount:outputfeaturechannelcount:groupcount:strides:dilationrates:paddingpolicy:paddingsizes:": {
+      "etag": "\"6d4a-65d55df25f944-df\"",
+      "file_path": "documentation/MLCompute/mlcconvolutiondescriptor/convolutiontransposedescriptorwithkernelsizes_inputfeaturechannelcount_outputfeaturechannelcount_groupcount_strides_dilationrates_paddingpolicy_paddingsizes_.md",
+      "hash": "fb6467a18bbe132dd34f416b7bd4049193de114a345231184745c03e4e0eb8e5"
+    },
+    "https://developer.apple.com/documentation/mlcompute/mlcconvolutiondescriptor/convolutiontransposedescriptorwithkernelsizes:inputfeaturechannelcount:outputfeaturechannelcount:strides:paddingpolicy:paddingsizes:": {
+      "etag": "\"6a27-65d55df25f944-df\"",
+      "file_path": "documentation/MLCompute/mlcconvolutiondescriptor/convolutiontransposedescriptorwithkernelsizes_inputfeaturechannelcount_outputfeaturechannelcount_strides_paddingpolicy_paddingsizes_.md",
+      "hash": "278fea1f3ccec01a62a63cd676dc17f44f2638ea0bd189a88136f7071047ad6a"
+    },
     "https://developer.apple.com/documentation/mlcompute/mlcconvolutiondescriptor/convolutiontype": {
       "etag": "\"6201-65d55df27df14-df\"",
       "file_path": "documentation/MLCompute/mlcconvolutiondescriptor/convolutiontype.md",
       "hash": "555960c9bc03659049d2d3bf378e62ca681fab555748aef144fa8b79c898e850"
+    },
+    "https://developer.apple.com/documentation/mlcompute/mlcconvolutiondescriptor/depthwiseconvolutiondescriptorwithkernelsizes:inputfeaturechannelcount:channelmultiplier:strides:dilationrates:paddingpolicy:paddingsizes:": {
+      "etag": "\"6ae7-65d55df27df14-df\"",
+      "file_path": "documentation/MLCompute/mlcconvolutiondescriptor/depthwiseconvolutiondescriptorwithkernelsizes_inputfeaturechannelcount_channelmultiplier_strides_dilationrates_paddingpolicy_paddingsizes_.md",
+      "hash": "33d4f175909aa4f1efd6b3da9a26193e433cef62c2fe2d63be5af5ddf1c89b75"
+    },
+    "https://developer.apple.com/documentation/mlcompute/mlcconvolutiondescriptor/depthwiseconvolutiondescriptorwithkernelsizes:inputfeaturechannelcount:channelmultiplier:strides:paddingpolicy:paddingsizes:": {
+      "etag": "\"68f4-65d55df27df14-df\"",
+      "file_path": "documentation/MLCompute/mlcconvolutiondescriptor/depthwiseconvolutiondescriptorwithkernelsizes_inputfeaturechannelcount_channelmultiplier_strides_paddingpolicy_paddingsizes_.md",
+      "hash": "9f080d5f552cb8e08c0c60e3908ddc94330d179a58a8a631559d97171d967130"
+    },
+    "https://developer.apple.com/documentation/mlcompute/mlcconvolutiondescriptor/descriptorwithkernelsizes:inputfeaturechannelcount:outputfeaturechannelcount:groupcount:strides:dilationrates:paddingpolicy:paddingsizes:": {
+      "etag": "\"6cc8-65d55df27df14-df\"",
+      "file_path": "documentation/MLCompute/mlcconvolutiondescriptor/descriptorwithkernelsizes_inputfeaturechannelcount_outputfeaturechannelcount_groupcount_strides_dilationrates_paddingpolicy_paddingsizes_.md",
+      "hash": "db1496d80c0eca5093892082c03df0cb4ffeea5d2a2a945e43778d40bf80d527"
+    },
+    "https://developer.apple.com/documentation/mlcompute/mlcconvolutiondescriptor/descriptorwithkernelsizes:inputfeaturechannelcount:outputfeaturechannelcount:strides:paddingpolicy:paddingsizes:": {
+      "etag": "\"68cc-65d55df27df14-df\"",
+      "file_path": "documentation/MLCompute/mlcconvolutiondescriptor/descriptorwithkernelsizes_inputfeaturechannelcount_outputfeaturechannelcount_strides_paddingpolicy_paddingsizes_.md",
+      "hash": "dd8dff26972b0af58c10d70ac04c573d766ebbc462364c95d819e8ff685c7315"
+    },
+    "https://developer.apple.com/documentation/mlcompute/mlcconvolutiondescriptor/descriptorwithkernelwidth:kernelheight:inputfeaturechannelcount:outputfeaturechannelcount:": {
+      "etag": "\"6239-65d55df27df14-df\"",
+      "file_path": "documentation/MLCompute/mlcconvolutiondescriptor/descriptorwithkernelwidth_kernelheight_inputfeaturechannelcount_outputfeaturechannelcount_.md",
+      "hash": "3fd8204a8ae27434af4593d8d8ba97eb60118da423bc59753daec203c18d7eb0"
+    },
+    "https://developer.apple.com/documentation/mlcompute/mlcconvolutiondescriptor/descriptorwithtype:kernelsizes:inputfeaturechannelcount:outputfeaturechannelcount:groupcount:strides:dilationrates:paddingpolicy:paddingsizes:": {
+      "etag": "\"6ec9-65d55df27df14-df\"",
+      "file_path": "documentation/MLCompute/mlcconvolutiondescriptor/descriptorwithtype_kernelsizes_inputfeaturechannelcount_outputfeaturechannelcount_groupcount_strides_dilationrates_paddingpolicy_paddingsizes_.md",
+      "hash": "526b1c1154f80295550df7c1ad565251e6c6219a778a41dce9876e6543ac3554"
+    },
+    "https://developer.apple.com/documentation/mlcompute/mlcconvolutiondescriptor/dilationrateinx": {
+      "etag": "\"4694-65d55df27df14-df\"",
+      "file_path": "documentation/MLCompute/mlcconvolutiondescriptor/dilationrateinx.md",
+      "hash": "bd83f1a1611eaed1dd4338e686b9a5e45255b009535ba233bd63b9be0ac399f0"
+    },
+    "https://developer.apple.com/documentation/mlcompute/mlcconvolutiondescriptor/dilationrateiny": {
+      "etag": "\"4694-65d55df27df14-df\"",
+      "file_path": "documentation/MLCompute/mlcconvolutiondescriptor/dilationrateiny.md",
+      "hash": "05bdd35dd409caa13f41cf0e840e212bc99acced755cabefcb9ba311e5c34973"
     },
     "https://developer.apple.com/documentation/mlcompute/mlcconvolutiondescriptor/dilationrates": {
       "etag": "\"425d-65d55df27df14-df\"",
@@ -810,10 +875,20 @@
       "file_path": "documentation/MLCompute/mlcconvolutiondescriptor/isconvolutiontranspose.md",
       "hash": "c4e72da0830c84b6edcdf27d4785d06f9058cd2c81032c221e4f51ec007c6306"
     },
+    "https://developer.apple.com/documentation/mlcompute/mlcconvolutiondescriptor/kernelheight": {
+      "etag": "\"465a-65d55df27df14-df\"",
+      "file_path": "documentation/MLCompute/mlcconvolutiondescriptor/kernelheight.md",
+      "hash": "fb9c2dcbee439dca1b182040e16b85fa21be06c8e84d6395b4c2231c00a53ba1"
+    },
     "https://developer.apple.com/documentation/mlcompute/mlcconvolutiondescriptor/kernelsizes": {
       "etag": "\"4275-65d55df25f944-df\"",
       "file_path": "documentation/MLCompute/mlcconvolutiondescriptor/kernelsizes.md",
       "hash": "26683f53e00bd80bfe080880770e69e309ef3eee3ada28f924a8fd5a063875c3"
+    },
+    "https://developer.apple.com/documentation/mlcompute/mlcconvolutiondescriptor/kernelwidth": {
+      "etag": "\"4654-65d55df27df14-df\"",
+      "file_path": "documentation/MLCompute/mlcconvolutiondescriptor/kernelwidth.md",
+      "hash": "c7e4fdfc65fb87abdbb0c8ccafbcb15925def45fb7e9e829faca7b9f5a215115"
     },
     "https://developer.apple.com/documentation/mlcompute/mlcconvolutiondescriptor/outputfeaturechannelcount": {
       "etag": "\"6145-65d55df27df14-df\"",
@@ -824,6 +899,31 @@
       "etag": "\"41b1-65d55df27df14-df\"",
       "file_path": "documentation/MLCompute/mlcconvolutiondescriptor/paddingpolicy-61tq3.md",
       "hash": "8b83efc404ff30a4e51000cc625f44d0a655035b85bd5cf7b837133588ffa777"
+    },
+    "https://developer.apple.com/documentation/mlcompute/mlcconvolutiondescriptor/paddingpolicy-7drfq": {
+      "etag": "\"4686-65d55df27df14-df\"",
+      "file_path": "documentation/MLCompute/mlcconvolutiondescriptor/paddingpolicy-7drfq.md",
+      "hash": "c9bf34f4df46c203a747877debd24fa759f07f1f8555d6b5506aa99aa6e7b20f"
+    },
+    "https://developer.apple.com/documentation/mlcompute/mlcconvolutiondescriptor/paddingsizeinx": {
+      "etag": "\"46ac-65d55df27df14-df\"",
+      "file_path": "documentation/MLCompute/mlcconvolutiondescriptor/paddingsizeinx.md",
+      "hash": "5c40009d34a0e8d0446b83d1fe3dce821855ec24df5236c258ad985ff32eac8c"
+    },
+    "https://developer.apple.com/documentation/mlcompute/mlcconvolutiondescriptor/paddingsizeiny": {
+      "etag": "\"46ac-65d55df27df14-df\"",
+      "file_path": "documentation/MLCompute/mlcconvolutiondescriptor/paddingsizeiny.md",
+      "hash": "060083e82a556b948f138ce7ce8668934a3f24e4c40b62024dde2916d54b0318"
+    },
+    "https://developer.apple.com/documentation/mlcompute/mlcconvolutiondescriptor/strideinx": {
+      "etag": "\"4683-65d55df25f944-df\"",
+      "file_path": "documentation/MLCompute/mlcconvolutiondescriptor/strideinx.md",
+      "hash": "cc4d5a6f57a15e5edc516accd28b87fbbbe30551f4a9f55955b32732a90cd274"
+    },
+    "https://developer.apple.com/documentation/mlcompute/mlcconvolutiondescriptor/strideiny": {
+      "etag": "\"4683-65d55df25f944-df\"",
+      "file_path": "documentation/MLCompute/mlcconvolutiondescriptor/strideiny.md",
+      "hash": "6e582cd24cadbdccffcf6de83820f0341cbf9ac7c1bcd72b4037af04c5e4d889"
     },
     "https://developer.apple.com/documentation/mlcompute/mlcconvolutiondescriptor/strides": {
       "etag": "\"423e-65d55df27df14-df\"",
@@ -940,6 +1040,16 @@
       "file_path": "documentation/MLCompute/mlcdatatype/int8.md",
       "hash": "016aee8a6fae76f365c5bbf5e02f3cf96b27556c5319c1223c8f395f5d2084eb"
     },
+    "https://developer.apple.com/documentation/mlcompute/mlcdatatype/mlcdatatypecount": {
+      "etag": "\"2a52-65d55df2e52ed-df\"",
+      "file_path": "documentation/MLCompute/mlcdatatype/mlcdatatypecount.md",
+      "hash": "9c05e284160f59d019f417155453b7c570211a1a9bbf179727cd918dbcc83ac0"
+    },
+    "https://developer.apple.com/documentation/mlcompute/mlcdatatype/mlcdatatypeinvalid": {
+      "etag": "\"2a5e-65d55df2e52ed-df\"",
+      "file_path": "documentation/MLCompute/mlcdatatype/mlcdatatypeinvalid.md",
+      "hash": "7a3cb959d090677034323416539674dfad2997a184c99224cf8af71b7dd9626a"
+    },
     "https://developer.apple.com/documentation/mlcompute/mlcdatatype/uint8": {
       "etag": "\"32ec-65d55df2e52ed-df\"",
       "file_path": "documentation/MLCompute/mlcdatatype/uint8.md",
@@ -1030,6 +1140,11 @@
       "file_path": "documentation/MLCompute/mlcdevicetype/init(rawvalue).md",
       "hash": "19edf5c1f54de75c7c01037ede72373be041d62a624302024a330dcc9fe3b99c"
     },
+    "https://developer.apple.com/documentation/mlcompute/mlcdevicetype/mlcdevicetypecount": {
+      "etag": "\"1f90-65d55df1b3689-df\"",
+      "file_path": "documentation/MLCompute/mlcdevicetype/mlcdevicetypecount.md",
+      "hash": "f0e2373a645449564668284aefdf060458a362e6237e6b62f6f6e57054adfdde"
+    },
     "https://developer.apple.com/documentation/mlcompute/mlcdropoutlayer": {
       "etag": "\"546b-65d55df371c87-df\"",
       "file_path": "documentation/MLCompute/mlcdropoutlayer.md",
@@ -1055,6 +1170,21 @@
       "file_path": "documentation/MLCompute/mlcembeddingdescriptor.md",
       "hash": "bc602555007c049621cf12e8c30d423bc1810997c394d4d8411d093ce908c0b1"
     },
+    "https://developer.apple.com/documentation/mlcompute/mlcembeddingdescriptor/descriptorwithembeddingcount:embeddingdimension:": {
+      "etag": "\"2079-65d55df328310-df\"",
+      "file_path": "documentation/MLCompute/mlcembeddingdescriptor/descriptorwithembeddingcount_embeddingdimension_.md",
+      "hash": "ee10a2ce9482e3de957e79cb7a24c372c2f1ec1a993b73db35402d3a74af137c"
+    },
+    "https://developer.apple.com/documentation/mlcompute/mlcembeddingdescriptor/descriptorwithembeddingcount:embeddingdimension:paddingindex:maximumnorm:pnorm:scalesgradientbyfrequency:": {
+      "etag": "\"2d84-65d55df328310-df\"",
+      "file_path": "documentation/MLCompute/mlcembeddingdescriptor/descriptorwithembeddingcount_embeddingdimension_paddingindex_maximumnorm_pnorm_scalesgradientbyfrequency_.md",
+      "hash": "857439f1d492b8ac3c927ae13ea1db54553b015da400010488c8a25d16e9d95f"
+    },
+    "https://developer.apple.com/documentation/mlcompute/mlcembeddingdescriptor/embeddingcount-5vs5t": {
+      "etag": "\"256a-65d55df328310-df\"",
+      "file_path": "documentation/MLCompute/mlcembeddingdescriptor/embeddingcount-5vs5t.md",
+      "hash": "d3e0880ab8ec4929bbb8e48c929db20331506822aa139235ebc6f1a4f5f9f65f"
+    },
     "https://developer.apple.com/documentation/mlcompute/mlcembeddingdescriptor/embeddingcount-77gxz": {
       "etag": "\"29b0-65d55df328310-df\"",
       "file_path": "documentation/MLCompute/mlcembeddingdescriptor/embeddingcount-77gxz.md",
@@ -1064,6 +1194,11 @@
       "etag": "\"29cb-65d55df328310-df\"",
       "file_path": "documentation/MLCompute/mlcembeddingdescriptor/embeddingdimension-1u9g.md",
       "hash": "ce1e1b6da1b9247b328c2f00bdce2251b02c0b01a4656de62c2aa35bdf4cfa2a"
+    },
+    "https://developer.apple.com/documentation/mlcompute/mlcembeddingdescriptor/embeddingdimension-3u8w7": {
+      "etag": "\"258a-65d55df328310-df\"",
+      "file_path": "documentation/MLCompute/mlcembeddingdescriptor/embeddingdimension-3u8w7.md",
+      "hash": "0962759570500ee80cf6a6d52e0594a87c180ca4b6b921e248d238806c4442af"
     },
     "https://developer.apple.com/documentation/mlcompute/mlcembeddingdescriptor/init(embeddingcount:embeddingdimension:)": {
       "etag": "\"25d6-65d55df328310-df\"",
@@ -1080,10 +1215,25 @@
       "file_path": "documentation/MLCompute/mlcembeddingdescriptor/maximumnorm-17u0k.md",
       "hash": "6cb5493fb455379735c3095620cf8fb2da752b8dd8de5842a32522b9b005b64c"
     },
+    "https://developer.apple.com/documentation/mlcompute/mlcembeddingdescriptor/maximumnorm-4mrjj": {
+      "etag": "\"2697-65d55df328310-df\"",
+      "file_path": "documentation/MLCompute/mlcembeddingdescriptor/maximumnorm-4mrjj.md",
+      "hash": "ac93f6dcab2b7f2b3c3ac2b790768a183e5659298c8f4140250cd7307dfef3f2"
+    },
+    "https://developer.apple.com/documentation/mlcompute/mlcembeddingdescriptor/paddingindex-50o5o": {
+      "etag": "\"26f0-65d55df328310-df\"",
+      "file_path": "documentation/MLCompute/mlcembeddingdescriptor/paddingindex-50o5o.md",
+      "hash": "7ffa932bf54b059da3630053bfb3565919cc2648838578b23c6d9147acec0021"
+    },
     "https://developer.apple.com/documentation/mlcompute/mlcembeddingdescriptor/paddingindex-pb1e": {
       "etag": "\"2b55-65d55df328310-df\"",
       "file_path": "documentation/MLCompute/mlcembeddingdescriptor/paddingindex-pb1e.md",
       "hash": "f92fa0cbed202577b22e5a47f42f696448fa1cfec4091fd7fa17ec353052e8c4"
+    },
+    "https://developer.apple.com/documentation/mlcompute/mlcembeddingdescriptor/pnorm-8mto8": {
+      "etag": "\"264c-65d55df328310-df\"",
+      "file_path": "documentation/MLCompute/mlcembeddingdescriptor/pnorm-8mto8.md",
+      "hash": "b86b11a1cb4efcda8368e629d7b40d5650e5bb086e063111565cc13806708ed1"
     },
     "https://developer.apple.com/documentation/mlcompute/mlcembeddingdescriptor/pnorm-8vhw1": {
       "etag": "\"2d73-65d55df328310-df\"",
@@ -1134,6 +1284,11 @@
       "etag": "\"313f-65d55df22bc60-df\"",
       "file_path": "documentation/MLCompute/mlcexecutionoptions/init(rawvalue).md",
       "hash": "1b193f594c1d06297043b4d3e2f6f24b78510513a7d329ac8af8b80609f774dc"
+    },
+    "https://developer.apple.com/documentation/mlcompute/mlcexecutionoptions/mlcexecutionoptionsnone": {
+      "etag": "\"10ca-65d55df22bc60-df\"",
+      "file_path": "documentation/MLCompute/mlcexecutionoptions/mlcexecutionoptionsnone.md",
+      "hash": "31e0bfc6267de6c56ae3b3c745bde5e38c2b371cf6162e1d96fd7c8bdb443de7"
     },
     "https://developer.apple.com/documentation/mlcompute/mlcexecutionoptions/perlayerprofiling": {
       "etag": "\"398b-65d55df22bc60-df\"",
@@ -1280,6 +1435,11 @@
       "file_path": "documentation/MLCompute/mlcgraph/gather(withdimension,source,indices).md",
       "hash": "63b41db27c3f2e26591acaf880f979ad79e03555126e95353af7cf14a7dcac1e"
     },
+    "https://developer.apple.com/documentation/mlcompute/mlcgraph/graph": {
+      "etag": "\"10cc-65d55df2e52ed-df\"",
+      "file_path": "documentation/MLCompute/mlcgraph/graph.md",
+      "hash": "7b6441efe50ddc6dcfdb2cbb972b81f124a4faf61d3608721ddd1a167db45d55"
+    },
     "https://developer.apple.com/documentation/mlcompute/mlcgraph/layers": {
       "etag": "\"3571-65d55df2e52ed-df\"",
       "file_path": "documentation/MLCompute/mlcgraph/layers.md",
@@ -1310,6 +1470,11 @@
       "file_path": "documentation/MLCompute/mlcgraph/reshape(shape,source).md",
       "hash": "1c9c937253b1d7691d4efadb780f60e6350916b7bfc5732670172b89db6b8f2c"
     },
+    "https://developer.apple.com/documentation/mlcompute/mlcgraph/reshapewithshape:source:": {
+      "etag": "\"446c-65d55df2e52ed-df\"",
+      "file_path": "documentation/MLCompute/mlcgraph/reshapewithshape_source_.md",
+      "hash": "e1b6ff8ad1307a9add3b43f968822093edd2076b0e99f4618f5412fe60b5b2c2"
+    },
     "https://developer.apple.com/documentation/mlcompute/mlcgraph/resulttensors(for:)": {
       "etag": "\"3f7f-65d55df2e52ed-df\"",
       "file_path": "documentation/MLCompute/mlcgraph/resulttensors(for).md",
@@ -1319,6 +1484,11 @@
       "etag": "\"8315-65d55df2c43a0-df\"",
       "file_path": "documentation/MLCompute/mlcgraph/scatter(withdimension,source,indices,copyfrom,reductiontype).md",
       "hash": "998e322b8ef717bcf214b9ff6758a67d2cbc93d7ee567c5d6eac8cf00d829da5"
+    },
+    "https://developer.apple.com/documentation/mlcompute/mlcgraph/selectwithsources:condition:": {
+      "etag": "\"448d-65d55df2c43a0-df\"",
+      "file_path": "documentation/MLCompute/mlcgraph/selectwithsources_condition_.md",
+      "hash": "8be1d8ea727581298daa1e8504372f7fb8b1676cf6ead8629e0458de55808123"
     },
     "https://developer.apple.com/documentation/mlcompute/mlcgraph/sourcetensors(for:)": {
       "etag": "\"3f7f-65d55df2c43a0-df\"",
@@ -1335,6 +1505,11 @@
       "file_path": "documentation/MLCompute/mlcgraph/split(source,splitsectionlengths,dimension).md",
       "hash": "20e1d2fad05eaf729f9f6c49655018d5106dc1a0d1d265d2e1ae98d2490088bf"
     },
+    "https://developer.apple.com/documentation/mlcompute/mlcgraph/splitwithsource:splitsectionlengths:dimension:": {
+      "etag": "\"48b2-65d55df2e52ed-df\"",
+      "file_path": "documentation/MLCompute/mlcgraph/splitwithsource_splitsectionlengths_dimension_.md",
+      "hash": "61597544f93c8a4fff339fce58b56cdf21bf9e64a16bad86ac651561f791bc33"
+    },
     "https://developer.apple.com/documentation/mlcompute/mlcgraph/summarizeddotdescription": {
       "etag": "\"384e-65d55df2c43a0-df\"",
       "file_path": "documentation/MLCompute/mlcgraph/summarizeddotdescription.md",
@@ -1344,6 +1519,11 @@
       "etag": "\"508c-65d55df2e52ed-df\"",
       "file_path": "documentation/MLCompute/mlcgraph/transpose(dimensions,source).md",
       "hash": "73fd443c83d2dd206f68ac4a79251271ca4c30f35d71012cd0cf22f199c98702"
+    },
+    "https://developer.apple.com/documentation/mlcompute/mlcgraph/transposewithdimensions:source:": {
+      "etag": "\"477e-65d55df2c43a0-df\"",
+      "file_path": "documentation/MLCompute/mlcgraph/transposewithdimensions_source_.md",
+      "hash": "42da05db479d7992995b4b9da694432375fec2d60bc45468a92d17effd173cda"
     },
     "https://developer.apple.com/documentation/mlcompute/mlcgraphcompilationoptions": {
       "etag": "\"77f6-65d55df20fd09-df\"",
@@ -1374,6 +1554,11 @@
       "etag": "\"3648-65d55df27df14-df\"",
       "file_path": "documentation/MLCompute/mlcgraphcompilationoptions/linkgraphs.md",
       "hash": "4f01c4d92b8fe9b699d2380ded1ee042275fed5946c6ec5a0aafaec5e1414960"
+    },
+    "https://developer.apple.com/documentation/mlcompute/mlcgraphcompilationoptions/mlcgraphcompilationoptionsnone": {
+      "etag": "\"116f-65d55df27df14-df\"",
+      "file_path": "documentation/MLCompute/mlcgraphcompilationoptions/mlcgraphcompilationoptionsnone.md",
+      "hash": "8d23c87ea0a18c4c1bca86a1a56b75564e8cc54dfc6c39cc967d2ddff5793e1c"
     },
     "https://developer.apple.com/documentation/mlcompute/mlcgraphcompletionhandler": {
       "etag": "\"6f31-65d55df2a3d84-df\"",
@@ -1630,6 +1815,16 @@
       "file_path": "documentation/MLCompute/mlclayernormalizationlayer/init(normalizedshape,beta,gamma,varianceepsilon)-5i2aa.md",
       "hash": "5338bcfd4973fa703267cb8c608c91f06b8086700da70e24e2ac2da8ebc3aa9a"
     },
+    "https://developer.apple.com/documentation/mlcompute/mlclayernormalizationlayer/layerwithnormalizedshape:beta:gamma:varianceepsilon:": {
+      "etag": "\"1ff1-65d55df1974bb-df\"",
+      "file_path": "documentation/MLCompute/mlclayernormalizationlayer/layerwithnormalizedshape_beta_gamma_varianceepsilon_.md",
+      "hash": "32ff2a898e95ffa18acd08665e4beed53101e5489e727379195fc1bf49ed6848"
+    },
+    "https://developer.apple.com/documentation/mlcompute/mlclayernormalizationlayer/normalizedshape-2cz6k": {
+      "etag": "\"2dd5-65d55df1974bb-df\"",
+      "file_path": "documentation/MLCompute/mlclayernormalizationlayer/normalizedshape-2cz6k.md",
+      "hash": "405bedc7ccdf410e65f490f5307a379f88d6d602b4cc9aa24704b1a5674a096f"
+    },
     "https://developer.apple.com/documentation/mlcompute/mlclayernormalizationlayer/normalizedshape-8ujvv": {
       "etag": "\"326f-65d55df1974bb-df\"",
       "file_path": "documentation/MLCompute/mlclayernormalizationlayer/normalizedshape-8ujvv.md",
@@ -1864,6 +2059,11 @@
       "etag": "\"4154-65d55df25f944-df\"",
       "file_path": "documentation/MLCompute/mlclosstype/meansquarederror.md",
       "hash": "6e106b42e6c7b61dc3132c083af75758c323fdd50a340b6d0b8b85103ba23663"
+    },
+    "https://developer.apple.com/documentation/mlcompute/mlclosstype/mlclosstypecount": {
+      "etag": "\"3721-65d55df25f944-df\"",
+      "file_path": "documentation/MLCompute/mlclosstype/mlclosstypecount.md",
+      "hash": "38fbd79ac3b78088928283f2d989fb8ff545e92fa74a40299ebc1d75e039553c"
     },
     "https://developer.apple.com/documentation/mlcompute/mlclosstype/sigmoidcrossentropy": {
       "etag": "\"416f-65d55df25f944-df\"",
@@ -2190,6 +2390,51 @@
       "file_path": "documentation/MLCompute/mlcmultiheadattentionlayer/weightsparameters.md",
       "hash": "c57cb99b033bccaa3b81ee3a6862f19d5e6e26bfa1cd444c35b3bc7afce72612"
     },
+    "https://developer.apple.com/documentation/mlcompute/mlcompute_available_starting": {
+      "etag": "\"b09-65d55df25f944-df\"",
+      "file_path": "documentation/MLCompute/mlcompute_available_starting.md",
+      "hash": "cdfe217003374e346a30f8c84a9279b71cbc2fa678099b8aa3ec4af6a90d54ab"
+    },
+    "https://developer.apple.com/documentation/mlcompute/mlcompute_available_starting_but_deprecated": {
+      "etag": "\"bbd-65d55df1b3689-df\"",
+      "file_path": "documentation/MLCompute/mlcompute_available_starting_but_deprecated.md",
+      "hash": "341139e7718a9ec87b821df28d09dfefc60f749e563cd5b1e20a39758a8866e5"
+    },
+    "https://developer.apple.com/documentation/mlcompute/mlcompute_available_starting_but_deprecated_macos14": {
+      "etag": "\"ce6-65d55df1cf66e-df\"",
+      "file_path": "documentation/MLCompute/mlcompute_available_starting_but_deprecated_macos14.md",
+      "hash": "8ae6dbf3875a1e2ee2dedeb3c97970cb332a44ea6d651a71dccc3606b2b6e72f"
+    },
+    "https://developer.apple.com/documentation/mlcompute/mlcompute_class_available_starting": {
+      "etag": "\"b51-65d55df2c43a0-df\"",
+      "file_path": "documentation/MLCompute/mlcompute_class_available_starting.md",
+      "hash": "a74ddf93c0b2dc5b2249c7d350297f6a87292d3343b8292db94f0b927f683f31"
+    },
+    "https://developer.apple.com/documentation/mlcompute/mlcompute_enum_available_starting": {
+      "etag": "\"b45-65d55df1b3689-df\"",
+      "file_path": "documentation/MLCompute/mlcompute_enum_available_starting.md",
+      "hash": "08426f6c8a255551b23f801e257655c331149cd3d27e72992d7fffda6797a232"
+    },
+    "https://developer.apple.com/documentation/mlcompute/mlcompute_enum_available_starting_but_deprecated": {
+      "etag": "\"bf9-65d55df22bc60-df\"",
+      "file_path": "documentation/MLCompute/mlcompute_enum_available_starting_but_deprecated.md",
+      "hash": "f18bf8d8c3d8ff58dc25d0291591732fa06418450e919a1e90075ac5b5dac5ca"
+    },
+    "https://developer.apple.com/documentation/mlcompute/mlcompute_protocol_available_starting": {
+      "etag": "\"b75-65d55df248585-df\"",
+      "file_path": "documentation/MLCompute/mlcompute_protocol_available_starting.md",
+      "hash": "a1e45606adca7f3f6076bf64c893a699febe0a10ed073c6b2781d7fbe6fa43ff"
+    },
+    "https://developer.apple.com/documentation/mlcompute/mlcompute_unavailable": {
+      "etag": "\"ab5-65d55df2e52ed-df\"",
+      "file_path": "documentation/MLCompute/mlcompute_unavailable.md",
+      "hash": "9a01672e53e901ea8d293b8c60ea1f62e6b47500a3e0603a1185d67937806eba"
+    },
+    "https://developer.apple.com/documentation/mlcompute/mlcomputetypes_h": {
+      "etag": "\"a5a-65d55df371c87-df\"",
+      "file_path": "documentation/MLCompute/mlcomputetypes_h.md",
+      "hash": "fdd43329fa43c5b5f4f995fba5cbcf4913d80e3a60e97c0ab3e21d327c267335"
+    },
     "https://developer.apple.com/documentation/mlcompute/mlcoptimizer": {
       "etag": "\"7f9c-65d55df305c87-df\"",
       "file_path": "documentation/MLCompute/mlcoptimizer.md",
@@ -2345,6 +2590,26 @@
       "file_path": "documentation/MLCompute/mlcpaddinglayer/init(zeropadding).md",
       "hash": "e94d2b8e5065a2ca148089e1b12753622a83244a561cfa18600ab37b23363c31"
     },
+    "https://developer.apple.com/documentation/mlcompute/mlcpaddinglayer/layerwithconstantpadding:constantvalue:": {
+      "etag": "\"1f03-65d55df328310-df\"",
+      "file_path": "documentation/MLCompute/mlcpaddinglayer/layerwithconstantpadding_constantvalue_.md",
+      "hash": "ef5a243125962605280e010834ce0f28c92b72d3dad0c0ea2fdea08c31ceb045"
+    },
+    "https://developer.apple.com/documentation/mlcompute/mlcpaddinglayer/layerwithreflectionpadding:": {
+      "etag": "\"1d21-65d55df328310-df\"",
+      "file_path": "documentation/MLCompute/mlcpaddinglayer/layerwithreflectionpadding_.md",
+      "hash": "011623f6e63a3432f986afe0121e73c7da8e7c4788edbf2661ba5778de04f424"
+    },
+    "https://developer.apple.com/documentation/mlcompute/mlcpaddinglayer/layerwithsymmetricpadding:": {
+      "etag": "\"1d2f-65d55df328310-df\"",
+      "file_path": "documentation/MLCompute/mlcpaddinglayer/layerwithsymmetricpadding_.md",
+      "hash": "1ea8eefbc8b68693c23f30d54d937457b57c864b505551669fde489c9fc3f7b4"
+    },
+    "https://developer.apple.com/documentation/mlcompute/mlcpaddinglayer/layerwithzeropadding:": {
+      "etag": "\"1d02-65d55df328310-df\"",
+      "file_path": "documentation/MLCompute/mlcpaddinglayer/layerwithzeropadding_.md",
+      "hash": "ea8eb059c5a3ef61be387d509fd8fd1f268ea0a3e8e00075eb208c522470c18d"
+    },
     "https://developer.apple.com/documentation/mlcompute/mlcpaddinglayer/paddingbottom": {
       "etag": "\"37bb-65d55df328310-df\"",
       "file_path": "documentation/MLCompute/mlcpaddinglayer/paddingbottom.md",
@@ -2370,6 +2635,26 @@
       "file_path": "documentation/MLCompute/mlcpaddinglayer/paddingtype.md",
       "hash": "c9f29950c4fbd94cc84f1023b5d72107dda091b86a2afd291d21a088ee7e1d6c"
     },
+    "https://developer.apple.com/documentation/mlcompute/mlcpaddingpolicy-14ba7": {
+      "etag": "\"16a8-65d55df2c43a0-df\"",
+      "file_path": "documentation/MLCompute/mlcpaddingpolicy-14ba7.md",
+      "hash": "2bac4cccb172cd39355903fe88aff2f62e290246dc21293a89d864bd275a5cec"
+    },
+    "https://developer.apple.com/documentation/mlcompute/mlcpaddingpolicy-14ba7/mlcpaddingpolicysame": {
+      "etag": "\"1478-65d55df371c87-df\"",
+      "file_path": "documentation/MLCompute/mlcpaddingpolicy-14ba7/mlcpaddingpolicysame.md",
+      "hash": "d3c9e16d794a920412d006939e8b7bc7f4cc5bf8e842ea1cadb2335d17805c4d"
+    },
+    "https://developer.apple.com/documentation/mlcompute/mlcpaddingpolicy-14ba7/mlcpaddingpolicyusepaddingsize": {
+      "etag": "\"14b4-65d55df371c87-df\"",
+      "file_path": "documentation/MLCompute/mlcpaddingpolicy-14ba7/mlcpaddingpolicyusepaddingsize.md",
+      "hash": "463421301f9333dd8f4e769c6bc3136f8b420b16aaff0f914194a54fd4129480"
+    },
+    "https://developer.apple.com/documentation/mlcompute/mlcpaddingpolicy-14ba7/mlcpaddingpolicyvalid": {
+      "etag": "\"147e-65d55df371c87-df\"",
+      "file_path": "documentation/MLCompute/mlcpaddingpolicy-14ba7/mlcpaddingpolicyvalid.md",
+      "hash": "0c27a106d3be5dbb227d2728a706f0595da688d672c8901de197feeb62f10084"
+    },
     "https://developer.apple.com/documentation/mlcompute/mlcpaddingpolicy-3hic8": {
       "etag": "\"1eff-65d55df371c87-df\"",
       "file_path": "documentation/MLCompute/mlcpaddingpolicy-3hic8.md",
@@ -2394,6 +2679,11 @@
       "etag": "\"1931-65d55df2e52ed-df\"",
       "file_path": "documentation/MLCompute/mlcpaddingpolicy-3hic8/valid.md",
       "hash": "b1da6dd2cb8622ba87e8f872a35f925e49387217b927a946d0aee88448b07c4f"
+    },
+    "https://developer.apple.com/documentation/mlcompute/mlcpaddingpolicydebugdescription": {
+      "etag": "\"19a8-65d55df2c43a0-df\"",
+      "file_path": "documentation/MLCompute/mlcpaddingpolicydebugdescription.md",
+      "hash": "6f99c49aa1c795374de56eb172d22f9a46d5e597c0353b34ae7c4739d244d975"
     },
     "https://developer.apple.com/documentation/mlcompute/mlcpaddingtype": {
       "etag": "\"4239-65d55df1f2971-df\"",
@@ -2450,6 +2740,31 @@
       "file_path": "documentation/MLCompute/mlcpoolingdescriptor.md",
       "hash": "80d6b30ea1aa8a2231efb8866583fddccbe16cab4bff019e2599f43cc310dd81"
     },
+    "https://developer.apple.com/documentation/mlcompute/mlcpoolingdescriptor/averagepoolingdescriptorwithkernelsizes:strides:dilationrates:paddingpolicy:paddingsizes:countincludespadding:": {
+      "etag": "\"3f50-65d55df248585-df\"",
+      "file_path": "documentation/MLCompute/mlcpoolingdescriptor/averagepoolingdescriptorwithkernelsizes_strides_dilationrates_paddingpolicy_paddingsizes_countincludespadding_.md",
+      "hash": "fe9d1b91eda0d828185d9fb93c5e3753124fa68a3187566713bac876c18a5d32"
+    },
+    "https://developer.apple.com/documentation/mlcompute/mlcpoolingdescriptor/averagepoolingdescriptorwithkernelsizes:strides:paddingpolicy:paddingsizes:countincludespadding:": {
+      "etag": "\"3d5e-65d55df25f944-df\"",
+      "file_path": "documentation/MLCompute/mlcpoolingdescriptor/averagepoolingdescriptorwithkernelsizes_strides_paddingpolicy_paddingsizes_countincludespadding_.md",
+      "hash": "1b496a8406736b694ae2c66db2565f6d3d3da86e50a98a65fced44ea64239e5b"
+    },
+    "https://developer.apple.com/documentation/mlcompute/mlcpoolingdescriptor/countincludespadding": {
+      "etag": "\"2d87-65d55df25f944-df\"",
+      "file_path": "documentation/MLCompute/mlcpoolingdescriptor/countincludespadding.md",
+      "hash": "126fca40ec65c0f4b4c1f1b8f894649a1ae05f44fb43830cd4cbb37322ca3951"
+    },
+    "https://developer.apple.com/documentation/mlcompute/mlcpoolingdescriptor/dilationrateinx": {
+      "etag": "\"2c46-65d55df25f944-df\"",
+      "file_path": "documentation/MLCompute/mlcpoolingdescriptor/dilationrateinx.md",
+      "hash": "860b5599605a35a1a8ab062298bfe6dbfbf36ac126166c836b5eddce933daec5"
+    },
+    "https://developer.apple.com/documentation/mlcompute/mlcpoolingdescriptor/dilationrateiny": {
+      "etag": "\"2c46-65d55df25f944-df\"",
+      "file_path": "documentation/MLCompute/mlcpoolingdescriptor/dilationrateiny.md",
+      "hash": "b6ca2d098f6ba7dc9a2b4dfe839ffc48a06e54bd89eef46b7ae808692d1ffa78"
+    },
     "https://developer.apple.com/documentation/mlcompute/mlcpoolingdescriptor/dilationrates": {
       "etag": "\"26e1-65d55df25f944-df\"",
       "file_path": "documentation/MLCompute/mlcpoolingdescriptor/dilationrates.md",
@@ -2460,20 +2775,85 @@
       "file_path": "documentation/MLCompute/mlcpoolingdescriptor/init(type,kernelsizes,strides,dilationrates,paddingpolicy).md",
       "hash": "39c51ee9268e24ed9132ffa2de852d64d66cf2ce3bfcb3e7005c83340f91384e"
     },
+    "https://developer.apple.com/documentation/mlcompute/mlcpoolingdescriptor/kernelheight": {
+      "etag": "\"2c1b-65d55df25f944-df\"",
+      "file_path": "documentation/MLCompute/mlcpoolingdescriptor/kernelheight.md",
+      "hash": "2e70ee29855c1c010146fee80b9b9958500df67d798f30765381d7c401bd6c3f"
+    },
     "https://developer.apple.com/documentation/mlcompute/mlcpoolingdescriptor/kernelsizes": {
       "etag": "\"26f9-65d55df248585-df\"",
       "file_path": "documentation/MLCompute/mlcpoolingdescriptor/kernelsizes.md",
       "hash": "584e76a17b8b327a44af71547c1757725b0d5e0cce14a7ada4d33310e7ea893c"
+    },
+    "https://developer.apple.com/documentation/mlcompute/mlcpoolingdescriptor/kernelwidth": {
+      "etag": "\"2c15-65d55df25f944-df\"",
+      "file_path": "documentation/MLCompute/mlcpoolingdescriptor/kernelwidth.md",
+      "hash": "db869240ff630e7d8c247850fa134bd9a7aa2c5694b815b0eb779d36df5abe18"
+    },
+    "https://developer.apple.com/documentation/mlcompute/mlcpoolingdescriptor/l2normpoolingdescriptorwithkernelsizes:strides:dilationrates:paddingpolicy:paddingsizes:": {
+      "etag": "\"3b25-65d55df25f944-df\"",
+      "file_path": "documentation/MLCompute/mlcpoolingdescriptor/l2normpoolingdescriptorwithkernelsizes_strides_dilationrates_paddingpolicy_paddingsizes_.md",
+      "hash": "d3dce07410585952f973b476b9876c207dfbdf5dec9ab5c45c90e5e24a04efb7"
+    },
+    "https://developer.apple.com/documentation/mlcompute/mlcpoolingdescriptor/l2normpoolingdescriptorwithkernelsizes:strides:paddingpolicy:paddingsizes:": {
+      "etag": "\"3925-65d55df25f944-df\"",
+      "file_path": "documentation/MLCompute/mlcpoolingdescriptor/l2normpoolingdescriptorwithkernelsizes_strides_paddingpolicy_paddingsizes_.md",
+      "hash": "594b997cd0482365eff03b7fedfad1d23da1c769a955b93851e6fd7021a95668"
+    },
+    "https://developer.apple.com/documentation/mlcompute/mlcpoolingdescriptor/maxpoolingdescriptorwithkernelsizes:strides:dilationrates:paddingpolicy:paddingsizes:": {
+      "etag": "\"3b13-65d55df25f944-df\"",
+      "file_path": "documentation/MLCompute/mlcpoolingdescriptor/maxpoolingdescriptorwithkernelsizes_strides_dilationrates_paddingpolicy_paddingsizes_.md",
+      "hash": "b183cc9fed4e02ede05791834a616d877b36adc38d1a601dcecbf58b6a7358b6"
+    },
+    "https://developer.apple.com/documentation/mlcompute/mlcpoolingdescriptor/maxpoolingdescriptorwithkernelsizes:strides:paddingpolicy:paddingsizes:": {
+      "etag": "\"390e-65d55df248585-df\"",
+      "file_path": "documentation/MLCompute/mlcpoolingdescriptor/maxpoolingdescriptorwithkernelsizes_strides_paddingpolicy_paddingsizes_.md",
+      "hash": "14183c568e1d805debccd4ba5060231d4450240884d8b1a3ca441198ed8d46e6"
+    },
+    "https://developer.apple.com/documentation/mlcompute/mlcpoolingdescriptor/paddingpolicy-1e6rg": {
+      "etag": "\"2c3f-65d55df25f944-df\"",
+      "file_path": "documentation/MLCompute/mlcpoolingdescriptor/paddingpolicy-1e6rg.md",
+      "hash": "2e2f5d374772fc564cc28b3598b2f6f9214832d219fb8f8597e86f8b50488578"
     },
     "https://developer.apple.com/documentation/mlcompute/mlcpoolingdescriptor/paddingpolicy-7p8a2": {
       "etag": "\"2635-65d55df25f944-df\"",
       "file_path": "documentation/MLCompute/mlcpoolingdescriptor/paddingpolicy-7p8a2.md",
       "hash": "749ea8aa62e3507cc7098e84b82f68fb47f69a7d014cb88a5f20d81513d93721"
     },
+    "https://developer.apple.com/documentation/mlcompute/mlcpoolingdescriptor/paddingsizeinx": {
+      "etag": "\"2c65-65d55df25f944-df\"",
+      "file_path": "documentation/MLCompute/mlcpoolingdescriptor/paddingsizeinx.md",
+      "hash": "f118fb4ae7afb6ecd6430d25354bf973bafef54ddccb8c94adc8cb57f733f18e"
+    },
+    "https://developer.apple.com/documentation/mlcompute/mlcpoolingdescriptor/paddingsizeiny": {
+      "etag": "\"2c65-65d55df25f944-df\"",
+      "file_path": "documentation/MLCompute/mlcpoolingdescriptor/paddingsizeiny.md",
+      "hash": "b29595eb95684feef27e953c718441e09cbff32e685d8064cf18393dd41b418b"
+    },
+    "https://developer.apple.com/documentation/mlcompute/mlcpoolingdescriptor/poolingdescriptorwithtype:kernelsize:stride:": {
+      "etag": "\"37e5-65d55df248585-df\"",
+      "file_path": "documentation/MLCompute/mlcpoolingdescriptor/poolingdescriptorwithtype_kernelsize_stride_.md",
+      "hash": "8525e4a5fac6bb1fdd89931c7064470d56c78118bddd9795131ff81697f92102"
+    },
     "https://developer.apple.com/documentation/mlcompute/mlcpoolingdescriptor/poolingtype-4ni07": {
       "etag": "\"25f5-65d55df248585-df\"",
       "file_path": "documentation/MLCompute/mlcpoolingdescriptor/poolingtype-4ni07.md",
       "hash": "97a7625e9a60e1a19a8f1f954a92b75ec6730e45040e114751b5da81c25d385f"
+    },
+    "https://developer.apple.com/documentation/mlcompute/mlcpoolingdescriptor/poolingtype-9daku": {
+      "etag": "\"2c12-65d55df248585-df\"",
+      "file_path": "documentation/MLCompute/mlcpoolingdescriptor/poolingtype-9daku.md",
+      "hash": "b2353f7e3549a7b1c0bfa96e1964a0bb865b0b899f8bdff1fa381de046b7002d"
+    },
+    "https://developer.apple.com/documentation/mlcompute/mlcpoolingdescriptor/strideinx": {
+      "etag": "\"2c0a-65d55df248585-df\"",
+      "file_path": "documentation/MLCompute/mlcpoolingdescriptor/strideinx.md",
+      "hash": "f8d9e3567c9149a7192e4de583fe514bd29475414bced5f93252c2f9b66836d0"
+    },
+    "https://developer.apple.com/documentation/mlcompute/mlcpoolingdescriptor/strideiny": {
+      "etag": "\"2c0a-65d55df248585-df\"",
+      "file_path": "documentation/MLCompute/mlcpoolingdescriptor/strideiny.md",
+      "hash": "0b96f0653e3463cd73bfcbc5e802a0c9b425e6d88001876d0cb6e33aeaba64b9"
     },
     "https://developer.apple.com/documentation/mlcompute/mlcpoolingdescriptor/strides": {
       "etag": "\"26c2-65d55df25f944-df\"",
@@ -2494,6 +2874,31 @@
       "etag": "\"2a7e-65d55df1f2971-df\"",
       "file_path": "documentation/MLCompute/mlcpoolinglayer/init(descriptor).md",
       "hash": "7b00a653a637cf48d7d3154cd3e2ce4a4e4a9772e52006d787acc66248be243e"
+    },
+    "https://developer.apple.com/documentation/mlcompute/mlcpoolingtype-8hrit": {
+      "etag": "\"2309-65d55df248585-df\"",
+      "file_path": "documentation/MLCompute/mlcpoolingtype-8hrit.md",
+      "hash": "a882676efd2682179b155fdbd59677ac41f4522fd863a5b6ba6ffce6eccb2f71"
+    },
+    "https://developer.apple.com/documentation/mlcompute/mlcpoolingtype-8hrit/mlcpoolingtypeaverage": {
+      "etag": "\"15fd-65d55df2c43a0-df\"",
+      "file_path": "documentation/MLCompute/mlcpoolingtype-8hrit/mlcpoolingtypeaverage.md",
+      "hash": "547826a56af67bc4d8d7819c7d02a465e283298c2d9e9c45a1f46c6676ceafdf"
+    },
+    "https://developer.apple.com/documentation/mlcompute/mlcpoolingtype-8hrit/mlcpoolingtypecount": {
+      "etag": "\"15f1-65d55df2c43a0-df\"",
+      "file_path": "documentation/MLCompute/mlcpoolingtype-8hrit/mlcpoolingtypecount.md",
+      "hash": "3eac4b3db45af74181eed3929a4b109f2131efdd9a19cc362fc7938439244f52"
+    },
+    "https://developer.apple.com/documentation/mlcompute/mlcpoolingtype-8hrit/mlcpoolingtypel2norm": {
+      "etag": "\"15f7-65d55df2c43a0-df\"",
+      "file_path": "documentation/MLCompute/mlcpoolingtype-8hrit/mlcpoolingtypel2norm.md",
+      "hash": "d4e4ebb58e387d627c0b52e2478e562c926c80b28b9cf26875c83fb25ccbbae1"
+    },
+    "https://developer.apple.com/documentation/mlcompute/mlcpoolingtype-8hrit/mlcpoolingtypemax": {
+      "etag": "\"15e5-65d55df2c43a0-df\"",
+      "file_path": "documentation/MLCompute/mlcpoolingtype-8hrit/mlcpoolingtypemax.md",
+      "hash": "ca42969ee1ecf930c57a218ef5390e0c84bc8109037dcbfd8d03fe6a4473b351"
     },
     "https://developer.apple.com/documentation/mlcompute/mlcpoolingtype-wb8j": {
       "etag": "\"2422-65d55df305c87-df\"",
@@ -2520,6 +2925,11 @@
       "file_path": "documentation/MLCompute/mlcpoolingtype-wb8j/max.md",
       "hash": "9643ed1f28cdee297d94075d221fd078444ec21653c0e8bf3fe02617ef7977a4"
     },
+    "https://developer.apple.com/documentation/mlcompute/mlcpoolingtypedebugdescription": {
+      "etag": "\"1b17-65d55df2e52ed-df\"",
+      "file_path": "documentation/MLCompute/mlcpoolingtypedebugdescription.md",
+      "hash": "bf40ffae2b16d104dbcafbdf7d48777ab3e5b681f4562c31cb9dd3bdf0e4b4ec"
+    },
     "https://developer.apple.com/documentation/mlcompute/mlcrandominitializertype": {
       "etag": "\"6785-65d55df305c87-df\"",
       "file_path": "documentation/MLCompute/mlcrandominitializertype.md",
@@ -2534,6 +2944,16 @@
       "etag": "\"14dc-65d55df27df14-df\"",
       "file_path": "documentation/MLCompute/mlcrandominitializertype/init(rawvalue).md",
       "hash": "252da672d0bbb75f331eeff92a506d7c4c331629e15612b31260238847e9bb06"
+    },
+    "https://developer.apple.com/documentation/mlcompute/mlcrandominitializertype/mlcrandominitializertypecount": {
+      "etag": "\"202c-65d55df27df14-df\"",
+      "file_path": "documentation/MLCompute/mlcrandominitializertype/mlcrandominitializertypecount.md",
+      "hash": "baab3af0cda7cc535e72dd8519debabd1a8dfcc4e5d6d0631f966bbfcc44bc5c"
+    },
+    "https://developer.apple.com/documentation/mlcompute/mlcrandominitializertype/mlcrandominitializertypeinvalid": {
+      "etag": "\"2038-65d55df27df14-df\"",
+      "file_path": "documentation/MLCompute/mlcrandominitializertype/mlcrandominitializertypeinvalid.md",
+      "hash": "df6da62c4e844fe7cad417012fc721bf5b7f6ce8a2f21e552a5e46be65b55aae"
     },
     "https://developer.apple.com/documentation/mlcompute/mlcrandominitializertype/uniform": {
       "etag": "\"27e2-65d55df27df14-df\"",
@@ -2555,6 +2975,11 @@
       "file_path": "documentation/MLCompute/mlcreductionlayer/dimension.md",
       "hash": "ac1eb051fe8ac62aa19ec361b17773fe86bb01ab0e7d2260c9a9ecd44ed91014"
     },
+    "https://developer.apple.com/documentation/mlcompute/mlcreductionlayer/dimensions-4359b": {
+      "etag": "\"1b87-65d55df1f2971-df\"",
+      "file_path": "documentation/MLCompute/mlcreductionlayer/dimensions-4359b.md",
+      "hash": "bb77f2033b0d213e266d1920af828a2878823e2ed3db4f5cdd852a4dde895bb4"
+    },
     "https://developer.apple.com/documentation/mlcompute/mlcreductionlayer/dimensions-9oph6": {
       "etag": "\"2063-65d55df1f2971-df\"",
       "file_path": "documentation/MLCompute/mlcreductionlayer/dimensions-9oph6.md",
@@ -2569,6 +2994,11 @@
       "etag": "\"27e2-65d55df1f2971-df\"",
       "file_path": "documentation/MLCompute/mlcreductionlayer/init(reductiontype,dimensions).md",
       "hash": "21fcd8da184280ffc9f241f91550aeab50bc8db8443514cdf3e6cd84ed11de47"
+    },
+    "https://developer.apple.com/documentation/mlcompute/mlcreductionlayer/layerwithreductiontype:dimensions:": {
+      "etag": "\"22bf-65d55df1f2971-df\"",
+      "file_path": "documentation/MLCompute/mlcreductionlayer/layerwithreductiontype_dimensions_.md",
+      "hash": "1b0f8f517b4634b50103379e443f034f1dfe0415eb1c604805e84168a1c58af0"
     },
     "https://developer.apple.com/documentation/mlcompute/mlcreductionlayer/reductiontype": {
       "etag": "\"2c1d-65d55df1f2971-df\"",
@@ -2630,6 +3060,11 @@
       "file_path": "documentation/MLCompute/mlcreductiontype/min.md",
       "hash": "2b56785a971a7be21dceeab0d92b9f8df3c68f0fd7fe9530f3abb9f427dd07f6"
     },
+    "https://developer.apple.com/documentation/mlcompute/mlcreductiontype/mlcreductiontypecount": {
+      "etag": "\"3ddd-65d55df22bc60-df\"",
+      "file_path": "documentation/MLCompute/mlcreductiontype/mlcreductiontypecount.md",
+      "hash": "1658d0d56ebda72fe8939f4c475eeb6cec14d2601955b7fe5354cb4023e0cfa0"
+    },
     "https://developer.apple.com/documentation/mlcompute/mlcreductiontype/none": {
       "etag": "\"47de-65d55df22bc60-df\"",
       "file_path": "documentation/MLCompute/mlcreductiontype/none.md",
@@ -2674,6 +3109,16 @@
       "etag": "\"17cb-65d55df2a3d84-df\"",
       "file_path": "documentation/MLCompute/mlcreshapelayer/init(shape).md",
       "hash": "6d4efbe0d8a3afc864023d7e4204d0b5967e757bae56600b055118985b87de11"
+    },
+    "https://developer.apple.com/documentation/mlcompute/mlcreshapelayer/layerwithshape:": {
+      "etag": "\"1410-65d55df2a3d84-df\"",
+      "file_path": "documentation/MLCompute/mlcreshapelayer/layerwithshape_.md",
+      "hash": "4b8a5454836ed18f78b4f1f8add073b7b30e8de5400ccdbbb036ddb38d0346d3"
+    },
+    "https://developer.apple.com/documentation/mlcompute/mlcreshapelayer/shape-840ax": {
+      "etag": "\"11bf-65d55df2a3d84-df\"",
+      "file_path": "documentation/MLCompute/mlcreshapelayer/shape-840ax.md",
+      "hash": "b84e4350cedb4c481a532cd1973f65616c55fb8c4759e3e72ce9c25f1e851cc2"
     },
     "https://developer.apple.com/documentation/mlcompute/mlcreshapelayer/shape-8k50y": {
       "etag": "\"1662-65d55df2a3d84-df\"",
@@ -2800,6 +3245,11 @@
       "file_path": "documentation/MLCompute/mlcslicelayer.md",
       "hash": "998a77fed8188a42567f160a461713f511a338ac52998f6d2a511657ffa3d966"
     },
+    "https://developer.apple.com/documentation/mlcompute/mlcslicelayer/end-8z0wi": {
+      "etag": "\"15b0-65d55df248585-df\"",
+      "file_path": "documentation/MLCompute/mlcslicelayer/end-8z0wi.md",
+      "hash": "24d7939e6daa89ba06cb576bdc374a9648c72e915b3576b18057285bed5c4b19"
+    },
     "https://developer.apple.com/documentation/mlcompute/mlcslicelayer/end-9xw91": {
       "etag": "\"1bc0-65d55df248585-df\"",
       "file_path": "documentation/MLCompute/mlcslicelayer/end-9xw91.md",
@@ -2810,6 +3260,16 @@
       "file_path": "documentation/MLCompute/mlcslicelayer/init(start,end,stride).md",
       "hash": "5129cb81a46eddd744406d358c732cfc2d03b174deac92fb1b8dad650062532b"
     },
+    "https://developer.apple.com/documentation/mlcompute/mlcslicelayer/slicelayerwithstart:end:stride:": {
+      "etag": "\"16d3-65d55df248585-df\"",
+      "file_path": "documentation/MLCompute/mlcslicelayer/slicelayerwithstart_end_stride_.md",
+      "hash": "3544ed622dc12d6bb4d28dd68d9875c236d5395483f38118237cabb22a783f39"
+    },
+    "https://developer.apple.com/documentation/mlcompute/mlcslicelayer/start-6dnjn": {
+      "etag": "\"15be-65d55df248585-df\"",
+      "file_path": "documentation/MLCompute/mlcslicelayer/start-6dnjn.md",
+      "hash": "d24b8bc09b00744972e6a1fd673dd9a11e1b4a18a2102232816d308ac1f28205"
+    },
     "https://developer.apple.com/documentation/mlcompute/mlcslicelayer/start-6wsh6": {
       "etag": "\"1bcc-65d55df248585-df\"",
       "file_path": "documentation/MLCompute/mlcslicelayer/start-6wsh6.md",
@@ -2819,6 +3279,11 @@
       "etag": "\"1bd6-65d55df248585-df\"",
       "file_path": "documentation/MLCompute/mlcslicelayer/stride-84fhb.md",
       "hash": "eb66c4d2ee4b31a160358ca6ba673d823fa2bf5806e28a06ee27eff332f710c9"
+    },
+    "https://developer.apple.com/documentation/mlcompute/mlcslicelayer/stride-8dnpu": {
+      "etag": "\"1606-65d55df248585-df\"",
+      "file_path": "documentation/MLCompute/mlcslicelayer/stride-8dnpu.md",
+      "hash": "c709f15da8547278779b43acb66cec4a702ee765084518135e9be772dcee75e6"
     },
     "https://developer.apple.com/documentation/mlcompute/mlcsoftmaxlayer": {
       "etag": "\"5517-65d55df2a3d84-df\"",
@@ -2890,10 +3355,20 @@
       "file_path": "documentation/MLCompute/mlcsplitlayer/init(splitsectionlengths,dimension).md",
       "hash": "d6d2c64b3a9e1b7221a40e9ab3c916bf6367dd00c42066e2d413c463157f8f2c"
     },
+    "https://developer.apple.com/documentation/mlcompute/mlcsplitlayer/layerwithsplitsectionlengths:dimension:": {
+      "etag": "\"1f5b-65d55df305c87-df\"",
+      "file_path": "documentation/MLCompute/mlcsplitlayer/layerwithsplitsectionlengths_dimension_.md",
+      "hash": "145918bf45003f41c8881d91bf31053805d31c1cfa8f171bcbaed51bba15306a"
+    },
     "https://developer.apple.com/documentation/mlcompute/mlcsplitlayer/splitcount": {
       "etag": "\"2b37-65d55df305c87-df\"",
       "file_path": "documentation/MLCompute/mlcsplitlayer/splitcount.md",
       "hash": "a449e40a5e7cec72a8e8a20325624bb809980d6ec76f62591c8e313c326d58e4"
+    },
+    "https://developer.apple.com/documentation/mlcompute/mlcsplitlayer/splitsectionlengths-32abw": {
+      "etag": "\"1cc0-65d55df305c87-df\"",
+      "file_path": "documentation/MLCompute/mlcsplitlayer/splitsectionlengths-32abw.md",
+      "hash": "c658f2838707a3d717de0d7b8bc2cac90dfea03300ef8391bac30d325398d303"
     },
     "https://developer.apple.com/documentation/mlcompute/mlcsplitlayer/splitsectionlengths-5abch": {
       "etag": "\"211a-65d55df305c87-df\"",
@@ -3085,6 +3560,46 @@
       "file_path": "documentation/MLCompute/mlctensor/tensorid.md",
       "hash": "fc2cf0761ee503c0fecc393bc1be4d8b09fb938cb01971998bc16fef4bc0a6c6"
     },
+    "https://developer.apple.com/documentation/mlcompute/mlctensor/tensorwithsequencelengths:sortedsequences:featurechannelcount:batchsize:data:": {
+      "etag": "\"4598-65d55df1cf66e-df\"",
+      "file_path": "documentation/MLCompute/mlctensor/tensorwithsequencelengths_sortedsequences_featurechannelcount_batchsize_data_.md",
+      "hash": "a2fa24da3c2ff6f81ad25094b93389c8b25ba0ba7997e73564a3c3efb5545722"
+    },
+    "https://developer.apple.com/documentation/mlcompute/mlctensor/tensorwithsequencelengths:sortedsequences:featurechannelcount:batchsize:randominitializertype:": {
+      "etag": "\"4705-65d55df1f2971-df\"",
+      "file_path": "documentation/MLCompute/mlctensor/tensorwithsequencelengths_sortedsequences_featurechannelcount_batchsize_randominitializertype_.md",
+      "hash": "ded7f13bd37a70b822bc40042b531aadf9965e4494de2818ea811f744d357447"
+    },
+    "https://developer.apple.com/documentation/mlcompute/mlctensor/tensorwithshape:": {
+      "etag": "\"5855-65d55df1cf66e-df\"",
+      "file_path": "documentation/MLCompute/mlctensor/tensorwithshape_.md",
+      "hash": "06be627186dc944612a7a7cfb3f8fb307dab19dd63ffa7567a70149c364e40b1"
+    },
+    "https://developer.apple.com/documentation/mlcompute/mlctensor/tensorwithshape:data:datatype:": {
+      "etag": "\"5f89-65d55df1cf66e-df\"",
+      "file_path": "documentation/MLCompute/mlctensor/tensorwithshape_data_datatype_.md",
+      "hash": "1dd5fd2cc2fe013dd808ac9f9dbbe91236a632c3cb45aa8f8c8355567f7620f2"
+    },
+    "https://developer.apple.com/documentation/mlcompute/mlctensor/tensorwithshape:datatype:": {
+      "etag": "\"5e3f-65d55df1cf66e-df\"",
+      "file_path": "documentation/MLCompute/mlctensor/tensorwithshape_datatype_.md",
+      "hash": "c243fa0690f4b8983afb51468926424b905ef1c4cd382d3e03675507645f9197"
+    },
+    "https://developer.apple.com/documentation/mlcompute/mlctensor/tensorwithshape:fillwithdata:datatype:": {
+      "etag": "\"5e80-65d55df1cf66e-df\"",
+      "file_path": "documentation/MLCompute/mlctensor/tensorwithshape_fillwithdata_datatype_.md",
+      "hash": "938ae5aa335db669e0d04898649868aa63386423c3aa71574055ba407832298a"
+    },
+    "https://developer.apple.com/documentation/mlcompute/mlctensor/tensorwithshape:randominitializertype:": {
+      "etag": "\"5b10-65d55df1cf66e-df\"",
+      "file_path": "documentation/MLCompute/mlctensor/tensorwithshape_randominitializertype_.md",
+      "hash": "8d6ee790e2a785699275cdbd02e79c46163b8080d15825b499dfce0b1aa43c86"
+    },
+    "https://developer.apple.com/documentation/mlcompute/mlctensor/tensorwithshape:randominitializertype:datatype:": {
+      "etag": "\"6189-65d55df1cf66e-df\"",
+      "file_path": "documentation/MLCompute/mlctensor/tensorwithshape_randominitializertype_datatype_.md",
+      "hash": "778d847796f5f4ce44076c161010baca56eb0e50e2e949b35b4f32684da26f1b"
+    },
     "https://developer.apple.com/documentation/mlcompute/mlctensordata": {
       "etag": "\"7a2d-65d55df27df14-df\"",
       "file_path": "documentation/MLCompute/mlctensordata.md",
@@ -3120,6 +3635,11 @@
       "file_path": "documentation/MLCompute/mlctensordescriptor.md",
       "hash": "421233fbc76be1abbd9f363bea5bb1f9a95e7421192eb9c40e8b388e0dbeb5d7"
     },
+    "https://developer.apple.com/documentation/mlcompute/mlctensordescriptor/batchsizepersequencestep-55mp8": {
+      "etag": "\"30d9-65d55df20fd09-df\"",
+      "file_path": "documentation/MLCompute/mlctensordescriptor/batchsizepersequencestep-55mp8.md",
+      "hash": "9ce9a1284dd3baf14ab2dfa78186ec5861eb2454484cf3045e88e1cb49d4947f"
+    },
     "https://developer.apple.com/documentation/mlcompute/mlctensordescriptor/batchsizepersequencestep-6iz59": {
       "etag": "\"397c-65d55df22bc60-df\"",
       "file_path": "documentation/MLCompute/mlctensordescriptor/batchsizepersequencestep-6iz59.md",
@@ -3129,6 +3649,16 @@
       "etag": "\"46ca-65d55df22bc60-df\"",
       "file_path": "documentation/MLCompute/mlctensordescriptor/datatype.md",
       "hash": "cadb22d107eac5f8859927d612b8b1a379e7c345d6f4038abfa5bb19dda297c6"
+    },
+    "https://developer.apple.com/documentation/mlcompute/mlctensordescriptor/descriptorwithshape:datatype:": {
+      "etag": "\"5407-65d55df20fd09-df\"",
+      "file_path": "documentation/MLCompute/mlctensordescriptor/descriptorwithshape_datatype_.md",
+      "hash": "e0dbdd22c151a92370279e872d12f506d9741914cd34d2c47d345ff81f2f6d9f"
+    },
+    "https://developer.apple.com/documentation/mlcompute/mlctensordescriptor/descriptorwithshape:sequencelengths:sortedsequences:datatype:": {
+      "etag": "\"5b5b-65d55df22bc60-df\"",
+      "file_path": "documentation/MLCompute/mlctensordescriptor/descriptorwithshape_sequencelengths_sortedsequences_datatype_.md",
+      "hash": "b9018a1fa12d79aadb811aabf97102cc11d1e87f36a73296745725848b166eb0"
     },
     "https://developer.apple.com/documentation/mlcompute/mlctensordescriptor/dimensioncount": {
       "etag": "\"4690-65d55df22bc60-df\"",
@@ -3180,15 +3710,30 @@
       "file_path": "documentation/MLCompute/mlctensordescriptor/sequencelengths-3jdab.md",
       "hash": "2bb52e0b126a70c06bbc27208188314966cdcc032cfdf83682c35247d25c97e3"
     },
+    "https://developer.apple.com/documentation/mlcompute/mlctensordescriptor/sequencelengths-3ntsa": {
+      "etag": "\"2d6e-65d55df20fd09-df\"",
+      "file_path": "documentation/MLCompute/mlctensordescriptor/sequencelengths-3ntsa.md",
+      "hash": "dbc61f1c323308eaf387a03171c521a3ec6ab94ab2ab15fbcb8400a24bdfe176"
+    },
     "https://developer.apple.com/documentation/mlcompute/mlctensordescriptor/shape-7i1rw": {
       "etag": "\"3399-65d55df22bc60-df\"",
       "file_path": "documentation/MLCompute/mlctensordescriptor/shape-7i1rw.md",
       "hash": "92bdf2084dfdaeb96433ed0c685e8aca107ac309bae4346847e3c6c2e74cd1ba"
     },
+    "https://developer.apple.com/documentation/mlcompute/mlctensordescriptor/shape-91vng": {
+      "etag": "\"2cd5-65d55df20fd09-df\"",
+      "file_path": "documentation/MLCompute/mlctensordescriptor/shape-91vng.md",
+      "hash": "5161f2e40bc17627ccae4f87da579d0cf748ec114cb5ae497f455f2447bda7df"
+    },
     "https://developer.apple.com/documentation/mlcompute/mlctensordescriptor/sortedsequences": {
       "etag": "\"4733-65d55df22bc60-df\"",
       "file_path": "documentation/MLCompute/mlctensordescriptor/sortedsequences.md",
       "hash": "c56726a420b55820a3cb2f320e66a4bf6e7608a04d6dec2c8a6d04d603ec668b"
+    },
+    "https://developer.apple.com/documentation/mlcompute/mlctensordescriptor/stride-3ydik": {
+      "etag": "\"2ce8-65d55df20fd09-df\"",
+      "file_path": "documentation/MLCompute/mlctensordescriptor/stride-3ydik.md",
+      "hash": "fef072c187fe8ba67b46e2bbdde9fc74f557a19460e9aec6c905ff4906d2ece3"
     },
     "https://developer.apple.com/documentation/mlcompute/mlctensordescriptor/stride-5mzlt": {
       "etag": "\"33ab-65d55df20fd09-df\"",
@@ -3385,6 +3930,11 @@
       "file_path": "documentation/MLCompute/mlctransposelayer.md",
       "hash": "b044423590ddf519755dc776727a4b46c8f7d78f7ed47edc7ab3e91e3786293c"
     },
+    "https://developer.apple.com/documentation/mlcompute/mlctransposelayer/dimensions-1d5nw": {
+      "etag": "\"1454-65d55df20fd09-df\"",
+      "file_path": "documentation/MLCompute/mlctransposelayer/dimensions-1d5nw.md",
+      "hash": "0dae0271eda1bb6313c767dbd09bb3e2098178b0f46a4acd590a7746aa078481"
+    },
     "https://developer.apple.com/documentation/mlcompute/mlctransposelayer/dimensions-71ed6": {
       "etag": "\"18f3-65d55df20fd09-df\"",
       "file_path": "documentation/MLCompute/mlctransposelayer/dimensions-71ed6.md",
@@ -3394,6 +3944,11 @@
       "etag": "\"1a8d-65d55df20fd09-df\"",
       "file_path": "documentation/MLCompute/mlctransposelayer/init(dimensions).md",
       "hash": "a41cb27f3a9ecc4a5f68fd99beafa5944c957905273030419a137cbbbc6f7d48"
+    },
+    "https://developer.apple.com/documentation/mlcompute/mlctransposelayer/layerwithdimensions:": {
+      "etag": "\"1648-65d55df20fd09-df\"",
+      "file_path": "documentation/MLCompute/mlctransposelayer/layerwithdimensions_.md",
+      "hash": "7fcb2ae260fe9f69f540d633b2b03bf589271f605c5c1de8f3642fc2c4ad817f"
     },
     "https://developer.apple.com/documentation/mlcompute/mlcupsamplelayer": {
       "etag": "\"64ec-65d55df2a3d84-df\"",
@@ -3415,6 +3970,16 @@
       "file_path": "documentation/MLCompute/mlcupsamplelayer/init(shape,samplemode,alignscorners).md",
       "hash": "c712e316b2376ec4b95cf266fcf9fb7042c9b7817393e6694df4da1b7b421b20"
     },
+    "https://developer.apple.com/documentation/mlcompute/mlcupsamplelayer/layerwithshape:": {
+      "etag": "\"1bb3-65d55df248585-df\"",
+      "file_path": "documentation/MLCompute/mlcupsamplelayer/layerwithshape_.md",
+      "hash": "70ac7e6d1d375a92e96936bda5ee7b9213970f52ab65f15c4117b77401b05db0"
+    },
+    "https://developer.apple.com/documentation/mlcompute/mlcupsamplelayer/layerwithshape:samplemode:alignscorners:": {
+      "etag": "\"2216-65d55df248585-df\"",
+      "file_path": "documentation/MLCompute/mlcupsamplelayer/layerwithshape_samplemode_alignscorners_.md",
+      "hash": "c7e10e04584512c7bc7b10b3825cb120398602f6fe614868ddfd14c8f6b04474"
+    },
     "https://developer.apple.com/documentation/mlcompute/mlcupsamplelayer/samplemode": {
       "etag": "\"2b48-65d55df248585-df\"",
       "file_path": "documentation/MLCompute/mlcupsamplelayer/samplemode.md",
@@ -3424,6 +3989,11 @@
       "etag": "\"201a-65d55df248585-df\"",
       "file_path": "documentation/MLCompute/mlcupsamplelayer/shape-61n1u.md",
       "hash": "c2806e80d7c63c37cbada63cbbf90bac7d0d0338935e3796bc64d57ffae8d788"
+    },
+    "https://developer.apple.com/documentation/mlcompute/mlcupsamplelayer/shape-7j6sf": {
+      "etag": "\"1b77-65d55df248585-df\"",
+      "file_path": "documentation/MLCompute/mlcupsamplelayer/shape-7j6sf.md",
+      "hash": "7aa16dab97dd64dd8d570c916effebc2847beca9afb987112063de1987f6fd34"
     },
     "https://developer.apple.com/documentation/mlcompute/mlcyololossdescriptor": {
       "etag": "\"7728-65d55df305c87-df\"",
@@ -3790,6 +4360,11 @@
       "file_path": "documentation/MLCompute/mlcactivationtype/logsigmoid.md",
       "hash": "2c8a3c3f7da9f498a3b84c0a06e3437d95c64743e96893fabae7d26f2a2ba937"
     },
+    "https://developer.apple.com/tutorials/data/documentation/mlcompute/mlcactivationtype/mlcactivationtypecount.json": {
+      "etag": "\"4fed-65d55df305c87-df\"",
+      "file_path": "documentation/MLCompute/mlcactivationtype/mlcactivationtypecount.md",
+      "hash": "5c2f636647853b4c9e2e14765d0d7e8d16720f916108b19e03a4ffb3e5b87f7f"
+    },
     "https://developer.apple.com/tutorials/data/documentation/mlcompute/mlcactivationtype/none.json": {
       "etag": "\"5daa-65d55df305c87-df\"",
       "file_path": "documentation/MLCompute/mlcactivationtype/none.md",
@@ -4055,6 +4630,11 @@
       "file_path": "documentation/MLCompute/mlcarithmeticoperation/min.md",
       "hash": "e3d20d44a13b0bb7445fa79619c83dd5adaaa9adc62e104fb7bea038bd6124d6"
     },
+    "https://developer.apple.com/tutorials/data/documentation/mlcompute/mlcarithmeticoperation/mlcarithmeticoperationcount.json": {
+      "etag": "\"1656-65d55df1974bb-df\"",
+      "file_path": "documentation/MLCompute/mlcarithmeticoperation/mlcarithmeticoperationcount.md",
+      "hash": "3f266f3299e33bb91352e433f2a18039279b913a040b618b9f48f4265123d56a"
+    },
     "https://developer.apple.com/tutorials/data/documentation/mlcompute/mlcarithmeticoperation/multiply.json": {
       "etag": "\"3c14-65d55df1974bb-df\"",
       "file_path": "documentation/MLCompute/mlcarithmeticoperation/multiply.md",
@@ -4255,6 +4835,11 @@
       "file_path": "documentation/MLCompute/mlccomparisonoperation/logicalxor.md",
       "hash": "99131eb266a7a90348c264b00d4abd0712c75a22c7b949e43a6e821de61fe8f7"
     },
+    "https://developer.apple.com/tutorials/data/documentation/mlcompute/mlccomparisonoperation/mlccomparisonoperationcount.json": {
+      "etag": "\"4828-65d55df20fd09-df\"",
+      "file_path": "documentation/MLCompute/mlccomparisonoperation/mlccomparisonoperationcount.md",
+      "hash": "7a4cd2c0b0f2d86d8be5f80280394a102bdc8c6c47ce2bb700e601738cddc228"
+    },
     "https://developer.apple.com/tutorials/data/documentation/mlcompute/mlccomparisonoperation/notequal.json": {
       "etag": "\"5322-65d55df20fd09-df\"",
       "file_path": "documentation/MLCompute/mlccomparisonoperation/notequal.md",
@@ -4285,10 +4870,60 @@
       "file_path": "documentation/MLCompute/mlcconvolutiondescriptor.md",
       "hash": "51c61023544bd91dff9bd6e685290dce8f7494966c83a33b18d9f1f845c7d490"
     },
+    "https://developer.apple.com/tutorials/data/documentation/mlcompute/mlcconvolutiondescriptor/convolutiontransposedescriptorwithkernelsizes:inputfeaturechannelcount:outputfeaturechannelcount:groupcount:strides:dilationrates:paddingpolicy:paddingsizes:.json": {
+      "etag": "\"6d4a-65d55df25f944-df\"",
+      "file_path": "documentation/MLCompute/mlcconvolutiondescriptor/convolutiontransposedescriptorwithkernelsizes_inputfeaturechannelcount_outputfeaturechannelcount_groupcount_strides_dilationrates_paddingpolicy_paddingsizes_.md",
+      "hash": "fb6467a18bbe132dd34f416b7bd4049193de114a345231184745c03e4e0eb8e5"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/mlcompute/mlcconvolutiondescriptor/convolutiontransposedescriptorwithkernelsizes:inputfeaturechannelcount:outputfeaturechannelcount:strides:paddingpolicy:paddingsizes:.json": {
+      "etag": "\"6a27-65d55df25f944-df\"",
+      "file_path": "documentation/MLCompute/mlcconvolutiondescriptor/convolutiontransposedescriptorwithkernelsizes_inputfeaturechannelcount_outputfeaturechannelcount_strides_paddingpolicy_paddingsizes_.md",
+      "hash": "278fea1f3ccec01a62a63cd676dc17f44f2638ea0bd189a88136f7071047ad6a"
+    },
     "https://developer.apple.com/tutorials/data/documentation/mlcompute/mlcconvolutiondescriptor/convolutiontype.json": {
       "etag": "\"6201-65d55df27df14-df\"",
       "file_path": "documentation/MLCompute/mlcconvolutiondescriptor/convolutiontype.md",
       "hash": "555960c9bc03659049d2d3bf378e62ca681fab555748aef144fa8b79c898e850"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/mlcompute/mlcconvolutiondescriptor/depthwiseconvolutiondescriptorwithkernelsizes:inputfeaturechannelcount:channelmultiplier:strides:dilationrates:paddingpolicy:paddingsizes:.json": {
+      "etag": "\"6ae7-65d55df27df14-df\"",
+      "file_path": "documentation/MLCompute/mlcconvolutiondescriptor/depthwiseconvolutiondescriptorwithkernelsizes_inputfeaturechannelcount_channelmultiplier_strides_dilationrates_paddingpolicy_paddingsizes_.md",
+      "hash": "33d4f175909aa4f1efd6b3da9a26193e433cef62c2fe2d63be5af5ddf1c89b75"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/mlcompute/mlcconvolutiondescriptor/depthwiseconvolutiondescriptorwithkernelsizes:inputfeaturechannelcount:channelmultiplier:strides:paddingpolicy:paddingsizes:.json": {
+      "etag": "\"68f4-65d55df27df14-df\"",
+      "file_path": "documentation/MLCompute/mlcconvolutiondescriptor/depthwiseconvolutiondescriptorwithkernelsizes_inputfeaturechannelcount_channelmultiplier_strides_paddingpolicy_paddingsizes_.md",
+      "hash": "9f080d5f552cb8e08c0c60e3908ddc94330d179a58a8a631559d97171d967130"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/mlcompute/mlcconvolutiondescriptor/descriptorwithkernelsizes:inputfeaturechannelcount:outputfeaturechannelcount:groupcount:strides:dilationrates:paddingpolicy:paddingsizes:.json": {
+      "etag": "\"6cc8-65d55df27df14-df\"",
+      "file_path": "documentation/MLCompute/mlcconvolutiondescriptor/descriptorwithkernelsizes_inputfeaturechannelcount_outputfeaturechannelcount_groupcount_strides_dilationrates_paddingpolicy_paddingsizes_.md",
+      "hash": "db1496d80c0eca5093892082c03df0cb4ffeea5d2a2a945e43778d40bf80d527"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/mlcompute/mlcconvolutiondescriptor/descriptorwithkernelsizes:inputfeaturechannelcount:outputfeaturechannelcount:strides:paddingpolicy:paddingsizes:.json": {
+      "etag": "\"68cc-65d55df27df14-df\"",
+      "file_path": "documentation/MLCompute/mlcconvolutiondescriptor/descriptorwithkernelsizes_inputfeaturechannelcount_outputfeaturechannelcount_strides_paddingpolicy_paddingsizes_.md",
+      "hash": "dd8dff26972b0af58c10d70ac04c573d766ebbc462364c95d819e8ff685c7315"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/mlcompute/mlcconvolutiondescriptor/descriptorwithkernelwidth:kernelheight:inputfeaturechannelcount:outputfeaturechannelcount:.json": {
+      "etag": "\"6239-65d55df27df14-df\"",
+      "file_path": "documentation/MLCompute/mlcconvolutiondescriptor/descriptorwithkernelwidth_kernelheight_inputfeaturechannelcount_outputfeaturechannelcount_.md",
+      "hash": "3fd8204a8ae27434af4593d8d8ba97eb60118da423bc59753daec203c18d7eb0"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/mlcompute/mlcconvolutiondescriptor/descriptorwithtype:kernelsizes:inputfeaturechannelcount:outputfeaturechannelcount:groupcount:strides:dilationrates:paddingpolicy:paddingsizes:.json": {
+      "etag": "\"6ec9-65d55df27df14-df\"",
+      "file_path": "documentation/MLCompute/mlcconvolutiondescriptor/descriptorwithtype_kernelsizes_inputfeaturechannelcount_outputfeaturechannelcount_groupcount_strides_dilationrates_paddingpolicy_paddingsizes_.md",
+      "hash": "526b1c1154f80295550df7c1ad565251e6c6219a778a41dce9876e6543ac3554"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/mlcompute/mlcconvolutiondescriptor/dilationrateinx.json": {
+      "etag": "\"4694-65d55df27df14-df\"",
+      "file_path": "documentation/MLCompute/mlcconvolutiondescriptor/dilationrateinx.md",
+      "hash": "bd83f1a1611eaed1dd4338e686b9a5e45255b009535ba233bd63b9be0ac399f0"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/mlcompute/mlcconvolutiondescriptor/dilationrateiny.json": {
+      "etag": "\"4694-65d55df27df14-df\"",
+      "file_path": "documentation/MLCompute/mlcconvolutiondescriptor/dilationrateiny.md",
+      "hash": "05bdd35dd409caa13f41cf0e840e212bc99acced755cabefcb9ba311e5c34973"
     },
     "https://developer.apple.com/tutorials/data/documentation/mlcompute/mlcconvolutiondescriptor/dilationrates.json": {
       "etag": "\"425d-65d55df27df14-df\"",
@@ -4325,10 +4960,20 @@
       "file_path": "documentation/MLCompute/mlcconvolutiondescriptor/isconvolutiontranspose.md",
       "hash": "c4e72da0830c84b6edcdf27d4785d06f9058cd2c81032c221e4f51ec007c6306"
     },
+    "https://developer.apple.com/tutorials/data/documentation/mlcompute/mlcconvolutiondescriptor/kernelheight.json": {
+      "etag": "\"465a-65d55df27df14-df\"",
+      "file_path": "documentation/MLCompute/mlcconvolutiondescriptor/kernelheight.md",
+      "hash": "fb9c2dcbee439dca1b182040e16b85fa21be06c8e84d6395b4c2231c00a53ba1"
+    },
     "https://developer.apple.com/tutorials/data/documentation/mlcompute/mlcconvolutiondescriptor/kernelsizes.json": {
       "etag": "\"4275-65d55df25f944-df\"",
       "file_path": "documentation/MLCompute/mlcconvolutiondescriptor/kernelsizes.md",
       "hash": "26683f53e00bd80bfe080880770e69e309ef3eee3ada28f924a8fd5a063875c3"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/mlcompute/mlcconvolutiondescriptor/kernelwidth.json": {
+      "etag": "\"4654-65d55df27df14-df\"",
+      "file_path": "documentation/MLCompute/mlcconvolutiondescriptor/kernelwidth.md",
+      "hash": "c7e4fdfc65fb87abdbb0c8ccafbcb15925def45fb7e9e829faca7b9f5a215115"
     },
     "https://developer.apple.com/tutorials/data/documentation/mlcompute/mlcconvolutiondescriptor/outputfeaturechannelcount.json": {
       "etag": "\"6145-65d55df27df14-df\"",
@@ -4339,6 +4984,31 @@
       "etag": "\"41b1-65d55df27df14-df\"",
       "file_path": "documentation/MLCompute/mlcconvolutiondescriptor/paddingpolicy-61tq3.md",
       "hash": "8b83efc404ff30a4e51000cc625f44d0a655035b85bd5cf7b837133588ffa777"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/mlcompute/mlcconvolutiondescriptor/paddingpolicy-7drfq.json": {
+      "etag": "\"4686-65d55df27df14-df\"",
+      "file_path": "documentation/MLCompute/mlcconvolutiondescriptor/paddingpolicy-7drfq.md",
+      "hash": "c9bf34f4df46c203a747877debd24fa759f07f1f8555d6b5506aa99aa6e7b20f"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/mlcompute/mlcconvolutiondescriptor/paddingsizeinx.json": {
+      "etag": "\"46ac-65d55df27df14-df\"",
+      "file_path": "documentation/MLCompute/mlcconvolutiondescriptor/paddingsizeinx.md",
+      "hash": "5c40009d34a0e8d0446b83d1fe3dce821855ec24df5236c258ad985ff32eac8c"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/mlcompute/mlcconvolutiondescriptor/paddingsizeiny.json": {
+      "etag": "\"46ac-65d55df27df14-df\"",
+      "file_path": "documentation/MLCompute/mlcconvolutiondescriptor/paddingsizeiny.md",
+      "hash": "060083e82a556b948f138ce7ce8668934a3f24e4c40b62024dde2916d54b0318"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/mlcompute/mlcconvolutiondescriptor/strideinx.json": {
+      "etag": "\"4683-65d55df25f944-df\"",
+      "file_path": "documentation/MLCompute/mlcconvolutiondescriptor/strideinx.md",
+      "hash": "cc4d5a6f57a15e5edc516accd28b87fbbbe30551f4a9f55955b32732a90cd274"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/mlcompute/mlcconvolutiondescriptor/strideiny.json": {
+      "etag": "\"4683-65d55df25f944-df\"",
+      "file_path": "documentation/MLCompute/mlcconvolutiondescriptor/strideiny.md",
+      "hash": "6e582cd24cadbdccffcf6de83820f0341cbf9ac7c1bcd72b4037af04c5e4d889"
     },
     "https://developer.apple.com/tutorials/data/documentation/mlcompute/mlcconvolutiondescriptor/strides.json": {
       "etag": "\"423e-65d55df27df14-df\"",
@@ -4455,6 +5125,16 @@
       "file_path": "documentation/MLCompute/mlcdatatype/int8.md",
       "hash": "016aee8a6fae76f365c5bbf5e02f3cf96b27556c5319c1223c8f395f5d2084eb"
     },
+    "https://developer.apple.com/tutorials/data/documentation/mlcompute/mlcdatatype/mlcdatatypecount.json": {
+      "etag": "\"2a52-65d55df2e52ed-df\"",
+      "file_path": "documentation/MLCompute/mlcdatatype/mlcdatatypecount.md",
+      "hash": "9c05e284160f59d019f417155453b7c570211a1a9bbf179727cd918dbcc83ac0"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/mlcompute/mlcdatatype/mlcdatatypeinvalid.json": {
+      "etag": "\"2a5e-65d55df2e52ed-df\"",
+      "file_path": "documentation/MLCompute/mlcdatatype/mlcdatatypeinvalid.md",
+      "hash": "7a3cb959d090677034323416539674dfad2997a184c99224cf8af71b7dd9626a"
+    },
     "https://developer.apple.com/tutorials/data/documentation/mlcompute/mlcdatatype/uint8.json": {
       "etag": "\"32ec-65d55df2e52ed-df\"",
       "file_path": "documentation/MLCompute/mlcdatatype/uint8.md",
@@ -4545,6 +5225,11 @@
       "file_path": "documentation/MLCompute/mlcdevicetype/init(rawvalue).md",
       "hash": "19edf5c1f54de75c7c01037ede72373be041d62a624302024a330dcc9fe3b99c"
     },
+    "https://developer.apple.com/tutorials/data/documentation/mlcompute/mlcdevicetype/mlcdevicetypecount.json": {
+      "etag": "\"1f90-65d55df1b3689-df\"",
+      "file_path": "documentation/MLCompute/mlcdevicetype/mlcdevicetypecount.md",
+      "hash": "f0e2373a645449564668284aefdf060458a362e6237e6b62f6f6e57054adfdde"
+    },
     "https://developer.apple.com/tutorials/data/documentation/mlcompute/mlcdropoutlayer.json": {
       "etag": "\"546b-65d55df371c87-df\"",
       "file_path": "documentation/MLCompute/mlcdropoutlayer.md",
@@ -4570,6 +5255,21 @@
       "file_path": "documentation/MLCompute/mlcembeddingdescriptor.md",
       "hash": "bc602555007c049621cf12e8c30d423bc1810997c394d4d8411d093ce908c0b1"
     },
+    "https://developer.apple.com/tutorials/data/documentation/mlcompute/mlcembeddingdescriptor/descriptorwithembeddingcount:embeddingdimension:.json": {
+      "etag": "\"2079-65d55df328310-df\"",
+      "file_path": "documentation/MLCompute/mlcembeddingdescriptor/descriptorwithembeddingcount_embeddingdimension_.md",
+      "hash": "ee10a2ce9482e3de957e79cb7a24c372c2f1ec1a993b73db35402d3a74af137c"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/mlcompute/mlcembeddingdescriptor/descriptorwithembeddingcount:embeddingdimension:paddingindex:maximumnorm:pnorm:scalesgradientbyfrequency:.json": {
+      "etag": "\"2d84-65d55df328310-df\"",
+      "file_path": "documentation/MLCompute/mlcembeddingdescriptor/descriptorwithembeddingcount_embeddingdimension_paddingindex_maximumnorm_pnorm_scalesgradientbyfrequency_.md",
+      "hash": "857439f1d492b8ac3c927ae13ea1db54553b015da400010488c8a25d16e9d95f"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/mlcompute/mlcembeddingdescriptor/embeddingcount-5vs5t.json": {
+      "etag": "\"256a-65d55df328310-df\"",
+      "file_path": "documentation/MLCompute/mlcembeddingdescriptor/embeddingcount-5vs5t.md",
+      "hash": "d3e0880ab8ec4929bbb8e48c929db20331506822aa139235ebc6f1a4f5f9f65f"
+    },
     "https://developer.apple.com/tutorials/data/documentation/mlcompute/mlcembeddingdescriptor/embeddingcount-77gxz.json": {
       "etag": "\"29b0-65d55df328310-df\"",
       "file_path": "documentation/MLCompute/mlcembeddingdescriptor/embeddingcount-77gxz.md",
@@ -4579,6 +5279,11 @@
       "etag": "\"29cb-65d55df328310-df\"",
       "file_path": "documentation/MLCompute/mlcembeddingdescriptor/embeddingdimension-1u9g.md",
       "hash": "ce1e1b6da1b9247b328c2f00bdce2251b02c0b01a4656de62c2aa35bdf4cfa2a"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/mlcompute/mlcembeddingdescriptor/embeddingdimension-3u8w7.json": {
+      "etag": "\"258a-65d55df328310-df\"",
+      "file_path": "documentation/MLCompute/mlcembeddingdescriptor/embeddingdimension-3u8w7.md",
+      "hash": "0962759570500ee80cf6a6d52e0594a87c180ca4b6b921e248d238806c4442af"
     },
     "https://developer.apple.com/tutorials/data/documentation/mlcompute/mlcembeddingdescriptor/init(embeddingcount:embeddingdimension:).json": {
       "etag": "\"25d6-65d55df328310-df\"",
@@ -4595,10 +5300,25 @@
       "file_path": "documentation/MLCompute/mlcembeddingdescriptor/maximumnorm-17u0k.md",
       "hash": "6cb5493fb455379735c3095620cf8fb2da752b8dd8de5842a32522b9b005b64c"
     },
+    "https://developer.apple.com/tutorials/data/documentation/mlcompute/mlcembeddingdescriptor/maximumnorm-4mrjj.json": {
+      "etag": "\"2697-65d55df328310-df\"",
+      "file_path": "documentation/MLCompute/mlcembeddingdescriptor/maximumnorm-4mrjj.md",
+      "hash": "ac93f6dcab2b7f2b3c3ac2b790768a183e5659298c8f4140250cd7307dfef3f2"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/mlcompute/mlcembeddingdescriptor/paddingindex-50o5o.json": {
+      "etag": "\"26f0-65d55df328310-df\"",
+      "file_path": "documentation/MLCompute/mlcembeddingdescriptor/paddingindex-50o5o.md",
+      "hash": "7ffa932bf54b059da3630053bfb3565919cc2648838578b23c6d9147acec0021"
+    },
     "https://developer.apple.com/tutorials/data/documentation/mlcompute/mlcembeddingdescriptor/paddingindex-pb1e.json": {
       "etag": "\"2b55-65d55df328310-df\"",
       "file_path": "documentation/MLCompute/mlcembeddingdescriptor/paddingindex-pb1e.md",
       "hash": "f92fa0cbed202577b22e5a47f42f696448fa1cfec4091fd7fa17ec353052e8c4"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/mlcompute/mlcembeddingdescriptor/pnorm-8mto8.json": {
+      "etag": "\"264c-65d55df328310-df\"",
+      "file_path": "documentation/MLCompute/mlcembeddingdescriptor/pnorm-8mto8.md",
+      "hash": "b86b11a1cb4efcda8368e629d7b40d5650e5bb086e063111565cc13806708ed1"
     },
     "https://developer.apple.com/tutorials/data/documentation/mlcompute/mlcembeddingdescriptor/pnorm-8vhw1.json": {
       "etag": "\"2d73-65d55df328310-df\"",
@@ -4649,6 +5369,11 @@
       "etag": "\"313f-65d55df22bc60-df\"",
       "file_path": "documentation/MLCompute/mlcexecutionoptions/init(rawvalue).md",
       "hash": "1b193f594c1d06297043b4d3e2f6f24b78510513a7d329ac8af8b80609f774dc"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/mlcompute/mlcexecutionoptions/mlcexecutionoptionsnone.json": {
+      "etag": "\"10ca-65d55df22bc60-df\"",
+      "file_path": "documentation/MLCompute/mlcexecutionoptions/mlcexecutionoptionsnone.md",
+      "hash": "31e0bfc6267de6c56ae3b3c745bde5e38c2b371cf6162e1d96fd7c8bdb443de7"
     },
     "https://developer.apple.com/tutorials/data/documentation/mlcompute/mlcexecutionoptions/perlayerprofiling.json": {
       "etag": "\"398b-65d55df22bc60-df\"",
@@ -4795,6 +5520,11 @@
       "file_path": "documentation/MLCompute/mlcgraph/gather(withdimension,source,indices).md",
       "hash": "63b41db27c3f2e26591acaf880f979ad79e03555126e95353af7cf14a7dcac1e"
     },
+    "https://developer.apple.com/tutorials/data/documentation/mlcompute/mlcgraph/graph.json": {
+      "etag": "\"10cc-65d55df2e52ed-df\"",
+      "file_path": "documentation/MLCompute/mlcgraph/graph.md",
+      "hash": "7b6441efe50ddc6dcfdb2cbb972b81f124a4faf61d3608721ddd1a167db45d55"
+    },
     "https://developer.apple.com/tutorials/data/documentation/mlcompute/mlcgraph/layers.json": {
       "etag": "\"3571-65d55df2e52ed-df\"",
       "file_path": "documentation/MLCompute/mlcgraph/layers.md",
@@ -4825,6 +5555,11 @@
       "file_path": "documentation/MLCompute/mlcgraph/reshape(shape,source).md",
       "hash": "1c9c937253b1d7691d4efadb780f60e6350916b7bfc5732670172b89db6b8f2c"
     },
+    "https://developer.apple.com/tutorials/data/documentation/mlcompute/mlcgraph/reshapewithshape:source:.json": {
+      "etag": "\"446c-65d55df2e52ed-df\"",
+      "file_path": "documentation/MLCompute/mlcgraph/reshapewithshape_source_.md",
+      "hash": "e1b6ff8ad1307a9add3b43f968822093edd2076b0e99f4618f5412fe60b5b2c2"
+    },
     "https://developer.apple.com/tutorials/data/documentation/mlcompute/mlcgraph/resulttensors(for:).json": {
       "etag": "\"3f7f-65d55df2e52ed-df\"",
       "file_path": "documentation/MLCompute/mlcgraph/resulttensors(for).md",
@@ -4834,6 +5569,11 @@
       "etag": "\"8315-65d55df2c43a0-df\"",
       "file_path": "documentation/MLCompute/mlcgraph/scatter(withdimension,source,indices,copyfrom,reductiontype).md",
       "hash": "998e322b8ef717bcf214b9ff6758a67d2cbc93d7ee567c5d6eac8cf00d829da5"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/mlcompute/mlcgraph/selectwithsources:condition:.json": {
+      "etag": "\"448d-65d55df2c43a0-df\"",
+      "file_path": "documentation/MLCompute/mlcgraph/selectwithsources_condition_.md",
+      "hash": "8be1d8ea727581298daa1e8504372f7fb8b1676cf6ead8629e0458de55808123"
     },
     "https://developer.apple.com/tutorials/data/documentation/mlcompute/mlcgraph/sourcetensors(for:).json": {
       "etag": "\"3f7f-65d55df2c43a0-df\"",
@@ -4850,6 +5590,11 @@
       "file_path": "documentation/MLCompute/mlcgraph/split(source,splitsectionlengths,dimension).md",
       "hash": "20e1d2fad05eaf729f9f6c49655018d5106dc1a0d1d265d2e1ae98d2490088bf"
     },
+    "https://developer.apple.com/tutorials/data/documentation/mlcompute/mlcgraph/splitwithsource:splitsectionlengths:dimension:.json": {
+      "etag": "\"48b2-65d55df2e52ed-df\"",
+      "file_path": "documentation/MLCompute/mlcgraph/splitwithsource_splitsectionlengths_dimension_.md",
+      "hash": "61597544f93c8a4fff339fce58b56cdf21bf9e64a16bad86ac651561f791bc33"
+    },
     "https://developer.apple.com/tutorials/data/documentation/mlcompute/mlcgraph/summarizeddotdescription.json": {
       "etag": "\"384e-65d55df2c43a0-df\"",
       "file_path": "documentation/MLCompute/mlcgraph/summarizeddotdescription.md",
@@ -4859,6 +5604,11 @@
       "etag": "\"508c-65d55df2e52ed-df\"",
       "file_path": "documentation/MLCompute/mlcgraph/transpose(dimensions,source).md",
       "hash": "73fd443c83d2dd206f68ac4a79251271ca4c30f35d71012cd0cf22f199c98702"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/mlcompute/mlcgraph/transposewithdimensions:source:.json": {
+      "etag": "\"477e-65d55df2c43a0-df\"",
+      "file_path": "documentation/MLCompute/mlcgraph/transposewithdimensions_source_.md",
+      "hash": "42da05db479d7992995b4b9da694432375fec2d60bc45468a92d17effd173cda"
     },
     "https://developer.apple.com/tutorials/data/documentation/mlcompute/mlcgraphcompilationoptions.json": {
       "etag": "\"77f6-65d55df20fd09-df\"",
@@ -4889,6 +5639,11 @@
       "etag": "\"3648-65d55df27df14-df\"",
       "file_path": "documentation/MLCompute/mlcgraphcompilationoptions/linkgraphs.md",
       "hash": "4f01c4d92b8fe9b699d2380ded1ee042275fed5946c6ec5a0aafaec5e1414960"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/mlcompute/mlcgraphcompilationoptions/mlcgraphcompilationoptionsnone.json": {
+      "etag": "\"116f-65d55df27df14-df\"",
+      "file_path": "documentation/MLCompute/mlcgraphcompilationoptions/mlcgraphcompilationoptionsnone.md",
+      "hash": "8d23c87ea0a18c4c1bca86a1a56b75564e8cc54dfc6c39cc967d2ddff5793e1c"
     },
     "https://developer.apple.com/tutorials/data/documentation/mlcompute/mlcgraphcompletionhandler.json": {
       "etag": "\"6f31-65d55df2a3d84-df\"",
@@ -5145,6 +5900,16 @@
       "file_path": "documentation/MLCompute/mlclayernormalizationlayer/init(normalizedshape,beta,gamma,varianceepsilon)-5i2aa.md",
       "hash": "5338bcfd4973fa703267cb8c608c91f06b8086700da70e24e2ac2da8ebc3aa9a"
     },
+    "https://developer.apple.com/tutorials/data/documentation/mlcompute/mlclayernormalizationlayer/layerwithnormalizedshape:beta:gamma:varianceepsilon:.json": {
+      "etag": "\"1ff1-65d55df1974bb-df\"",
+      "file_path": "documentation/MLCompute/mlclayernormalizationlayer/layerwithnormalizedshape_beta_gamma_varianceepsilon_.md",
+      "hash": "32ff2a898e95ffa18acd08665e4beed53101e5489e727379195fc1bf49ed6848"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/mlcompute/mlclayernormalizationlayer/normalizedshape-2cz6k.json": {
+      "etag": "\"2dd5-65d55df1974bb-df\"",
+      "file_path": "documentation/MLCompute/mlclayernormalizationlayer/normalizedshape-2cz6k.md",
+      "hash": "405bedc7ccdf410e65f490f5307a379f88d6d602b4cc9aa24704b1a5674a096f"
+    },
     "https://developer.apple.com/tutorials/data/documentation/mlcompute/mlclayernormalizationlayer/normalizedshape-8ujvv.json": {
       "etag": "\"326f-65d55df1974bb-df\"",
       "file_path": "documentation/MLCompute/mlclayernormalizationlayer/normalizedshape-8ujvv.md",
@@ -5379,6 +6144,11 @@
       "etag": "\"4154-65d55df25f944-df\"",
       "file_path": "documentation/MLCompute/mlclosstype/meansquarederror.md",
       "hash": "6e106b42e6c7b61dc3132c083af75758c323fdd50a340b6d0b8b85103ba23663"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/mlcompute/mlclosstype/mlclosstypecount.json": {
+      "etag": "\"3721-65d55df25f944-df\"",
+      "file_path": "documentation/MLCompute/mlclosstype/mlclosstypecount.md",
+      "hash": "38fbd79ac3b78088928283f2d989fb8ff545e92fa74a40299ebc1d75e039553c"
     },
     "https://developer.apple.com/tutorials/data/documentation/mlcompute/mlclosstype/sigmoidcrossentropy.json": {
       "etag": "\"416f-65d55df25f944-df\"",
@@ -5705,6 +6475,51 @@
       "file_path": "documentation/MLCompute/mlcmultiheadattentionlayer/weightsparameters.md",
       "hash": "c57cb99b033bccaa3b81ee3a6862f19d5e6e26bfa1cd444c35b3bc7afce72612"
     },
+    "https://developer.apple.com/tutorials/data/documentation/mlcompute/mlcompute_available_starting.json": {
+      "etag": "\"b09-65d55df25f944-df\"",
+      "file_path": "documentation/MLCompute/mlcompute_available_starting.md",
+      "hash": "cdfe217003374e346a30f8c84a9279b71cbc2fa678099b8aa3ec4af6a90d54ab"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/mlcompute/mlcompute_available_starting_but_deprecated.json": {
+      "etag": "\"bbd-65d55df1b3689-df\"",
+      "file_path": "documentation/MLCompute/mlcompute_available_starting_but_deprecated.md",
+      "hash": "341139e7718a9ec87b821df28d09dfefc60f749e563cd5b1e20a39758a8866e5"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/mlcompute/mlcompute_available_starting_but_deprecated_macos14.json": {
+      "etag": "\"ce6-65d55df1cf66e-df\"",
+      "file_path": "documentation/MLCompute/mlcompute_available_starting_but_deprecated_macos14.md",
+      "hash": "8ae6dbf3875a1e2ee2dedeb3c97970cb332a44ea6d651a71dccc3606b2b6e72f"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/mlcompute/mlcompute_class_available_starting.json": {
+      "etag": "\"b51-65d55df2c43a0-df\"",
+      "file_path": "documentation/MLCompute/mlcompute_class_available_starting.md",
+      "hash": "a74ddf93c0b2dc5b2249c7d350297f6a87292d3343b8292db94f0b927f683f31"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/mlcompute/mlcompute_enum_available_starting.json": {
+      "etag": "\"b45-65d55df1b3689-df\"",
+      "file_path": "documentation/MLCompute/mlcompute_enum_available_starting.md",
+      "hash": "08426f6c8a255551b23f801e257655c331149cd3d27e72992d7fffda6797a232"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/mlcompute/mlcompute_enum_available_starting_but_deprecated.json": {
+      "etag": "\"bf9-65d55df22bc60-df\"",
+      "file_path": "documentation/MLCompute/mlcompute_enum_available_starting_but_deprecated.md",
+      "hash": "f18bf8d8c3d8ff58dc25d0291591732fa06418450e919a1e90075ac5b5dac5ca"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/mlcompute/mlcompute_protocol_available_starting.json": {
+      "etag": "\"b75-65d55df248585-df\"",
+      "file_path": "documentation/MLCompute/mlcompute_protocol_available_starting.md",
+      "hash": "a1e45606adca7f3f6076bf64c893a699febe0a10ed073c6b2781d7fbe6fa43ff"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/mlcompute/mlcompute_unavailable.json": {
+      "etag": "\"ab5-65d55df2e52ed-df\"",
+      "file_path": "documentation/MLCompute/mlcompute_unavailable.md",
+      "hash": "9a01672e53e901ea8d293b8c60ea1f62e6b47500a3e0603a1185d67937806eba"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/mlcompute/mlcomputetypes_h.json": {
+      "etag": "\"a5a-65d55df371c87-df\"",
+      "file_path": "documentation/MLCompute/mlcomputetypes_h.md",
+      "hash": "fdd43329fa43c5b5f4f995fba5cbcf4913d80e3a60e97c0ab3e21d327c267335"
+    },
     "https://developer.apple.com/tutorials/data/documentation/mlcompute/mlcoptimizer.json": {
       "etag": "\"7f9c-65d55df305c87-df\"",
       "file_path": "documentation/MLCompute/mlcoptimizer.md",
@@ -5860,6 +6675,26 @@
       "file_path": "documentation/MLCompute/mlcpaddinglayer/init(zeropadding).md",
       "hash": "e94d2b8e5065a2ca148089e1b12753622a83244a561cfa18600ab37b23363c31"
     },
+    "https://developer.apple.com/tutorials/data/documentation/mlcompute/mlcpaddinglayer/layerwithconstantpadding:constantvalue:.json": {
+      "etag": "\"1f03-65d55df328310-df\"",
+      "file_path": "documentation/MLCompute/mlcpaddinglayer/layerwithconstantpadding_constantvalue_.md",
+      "hash": "ef5a243125962605280e010834ce0f28c92b72d3dad0c0ea2fdea08c31ceb045"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/mlcompute/mlcpaddinglayer/layerwithreflectionpadding:.json": {
+      "etag": "\"1d21-65d55df328310-df\"",
+      "file_path": "documentation/MLCompute/mlcpaddinglayer/layerwithreflectionpadding_.md",
+      "hash": "011623f6e63a3432f986afe0121e73c7da8e7c4788edbf2661ba5778de04f424"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/mlcompute/mlcpaddinglayer/layerwithsymmetricpadding:.json": {
+      "etag": "\"1d2f-65d55df328310-df\"",
+      "file_path": "documentation/MLCompute/mlcpaddinglayer/layerwithsymmetricpadding_.md",
+      "hash": "1ea8eefbc8b68693c23f30d54d937457b57c864b505551669fde489c9fc3f7b4"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/mlcompute/mlcpaddinglayer/layerwithzeropadding:.json": {
+      "etag": "\"1d02-65d55df328310-df\"",
+      "file_path": "documentation/MLCompute/mlcpaddinglayer/layerwithzeropadding_.md",
+      "hash": "ea8eb059c5a3ef61be387d509fd8fd1f268ea0a3e8e00075eb208c522470c18d"
+    },
     "https://developer.apple.com/tutorials/data/documentation/mlcompute/mlcpaddinglayer/paddingbottom.json": {
       "etag": "\"37bb-65d55df328310-df\"",
       "file_path": "documentation/MLCompute/mlcpaddinglayer/paddingbottom.md",
@@ -5885,6 +6720,26 @@
       "file_path": "documentation/MLCompute/mlcpaddinglayer/paddingtype.md",
       "hash": "c9f29950c4fbd94cc84f1023b5d72107dda091b86a2afd291d21a088ee7e1d6c"
     },
+    "https://developer.apple.com/tutorials/data/documentation/mlcompute/mlcpaddingpolicy-14ba7.json": {
+      "etag": "\"16a8-65d55df2c43a0-df\"",
+      "file_path": "documentation/MLCompute/mlcpaddingpolicy-14ba7.md",
+      "hash": "2bac4cccb172cd39355903fe88aff2f62e290246dc21293a89d864bd275a5cec"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/mlcompute/mlcpaddingpolicy-14ba7/mlcpaddingpolicysame.json": {
+      "etag": "\"1478-65d55df371c87-df\"",
+      "file_path": "documentation/MLCompute/mlcpaddingpolicy-14ba7/mlcpaddingpolicysame.md",
+      "hash": "d3c9e16d794a920412d006939e8b7bc7f4cc5bf8e842ea1cadb2335d17805c4d"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/mlcompute/mlcpaddingpolicy-14ba7/mlcpaddingpolicyusepaddingsize.json": {
+      "etag": "\"14b4-65d55df371c87-df\"",
+      "file_path": "documentation/MLCompute/mlcpaddingpolicy-14ba7/mlcpaddingpolicyusepaddingsize.md",
+      "hash": "463421301f9333dd8f4e769c6bc3136f8b420b16aaff0f914194a54fd4129480"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/mlcompute/mlcpaddingpolicy-14ba7/mlcpaddingpolicyvalid.json": {
+      "etag": "\"147e-65d55df371c87-df\"",
+      "file_path": "documentation/MLCompute/mlcpaddingpolicy-14ba7/mlcpaddingpolicyvalid.md",
+      "hash": "0c27a106d3be5dbb227d2728a706f0595da688d672c8901de197feeb62f10084"
+    },
     "https://developer.apple.com/tutorials/data/documentation/mlcompute/mlcpaddingpolicy-3hic8.json": {
       "etag": "\"1eff-65d55df371c87-df\"",
       "file_path": "documentation/MLCompute/mlcpaddingpolicy-3hic8.md",
@@ -5909,6 +6764,11 @@
       "etag": "\"1931-65d55df2e52ed-df\"",
       "file_path": "documentation/MLCompute/mlcpaddingpolicy-3hic8/valid.md",
       "hash": "b1da6dd2cb8622ba87e8f872a35f925e49387217b927a946d0aee88448b07c4f"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/mlcompute/mlcpaddingpolicydebugdescription.json": {
+      "etag": "\"19a8-65d55df2c43a0-df\"",
+      "file_path": "documentation/MLCompute/mlcpaddingpolicydebugdescription.md",
+      "hash": "6f99c49aa1c795374de56eb172d22f9a46d5e597c0353b34ae7c4739d244d975"
     },
     "https://developer.apple.com/tutorials/data/documentation/mlcompute/mlcpaddingtype.json": {
       "etag": "\"4239-65d55df1f2971-df\"",
@@ -5965,6 +6825,31 @@
       "file_path": "documentation/MLCompute/mlcpoolingdescriptor.md",
       "hash": "80d6b30ea1aa8a2231efb8866583fddccbe16cab4bff019e2599f43cc310dd81"
     },
+    "https://developer.apple.com/tutorials/data/documentation/mlcompute/mlcpoolingdescriptor/averagepoolingdescriptorwithkernelsizes:strides:dilationrates:paddingpolicy:paddingsizes:countincludespadding:.json": {
+      "etag": "\"3f50-65d55df248585-df\"",
+      "file_path": "documentation/MLCompute/mlcpoolingdescriptor/averagepoolingdescriptorwithkernelsizes_strides_dilationrates_paddingpolicy_paddingsizes_countincludespadding_.md",
+      "hash": "fe9d1b91eda0d828185d9fb93c5e3753124fa68a3187566713bac876c18a5d32"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/mlcompute/mlcpoolingdescriptor/averagepoolingdescriptorwithkernelsizes:strides:paddingpolicy:paddingsizes:countincludespadding:.json": {
+      "etag": "\"3d5e-65d55df25f944-df\"",
+      "file_path": "documentation/MLCompute/mlcpoolingdescriptor/averagepoolingdescriptorwithkernelsizes_strides_paddingpolicy_paddingsizes_countincludespadding_.md",
+      "hash": "1b496a8406736b694ae2c66db2565f6d3d3da86e50a98a65fced44ea64239e5b"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/mlcompute/mlcpoolingdescriptor/countincludespadding.json": {
+      "etag": "\"2d87-65d55df25f944-df\"",
+      "file_path": "documentation/MLCompute/mlcpoolingdescriptor/countincludespadding.md",
+      "hash": "126fca40ec65c0f4b4c1f1b8f894649a1ae05f44fb43830cd4cbb37322ca3951"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/mlcompute/mlcpoolingdescriptor/dilationrateinx.json": {
+      "etag": "\"2c46-65d55df25f944-df\"",
+      "file_path": "documentation/MLCompute/mlcpoolingdescriptor/dilationrateinx.md",
+      "hash": "860b5599605a35a1a8ab062298bfe6dbfbf36ac126166c836b5eddce933daec5"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/mlcompute/mlcpoolingdescriptor/dilationrateiny.json": {
+      "etag": "\"2c46-65d55df25f944-df\"",
+      "file_path": "documentation/MLCompute/mlcpoolingdescriptor/dilationrateiny.md",
+      "hash": "b6ca2d098f6ba7dc9a2b4dfe839ffc48a06e54bd89eef46b7ae808692d1ffa78"
+    },
     "https://developer.apple.com/tutorials/data/documentation/mlcompute/mlcpoolingdescriptor/dilationrates.json": {
       "etag": "\"26e1-65d55df25f944-df\"",
       "file_path": "documentation/MLCompute/mlcpoolingdescriptor/dilationrates.md",
@@ -5975,20 +6860,85 @@
       "file_path": "documentation/MLCompute/mlcpoolingdescriptor/init(type,kernelsizes,strides,dilationrates,paddingpolicy).md",
       "hash": "39c51ee9268e24ed9132ffa2de852d64d66cf2ce3bfcb3e7005c83340f91384e"
     },
+    "https://developer.apple.com/tutorials/data/documentation/mlcompute/mlcpoolingdescriptor/kernelheight.json": {
+      "etag": "\"2c1b-65d55df25f944-df\"",
+      "file_path": "documentation/MLCompute/mlcpoolingdescriptor/kernelheight.md",
+      "hash": "2e70ee29855c1c010146fee80b9b9958500df67d798f30765381d7c401bd6c3f"
+    },
     "https://developer.apple.com/tutorials/data/documentation/mlcompute/mlcpoolingdescriptor/kernelsizes.json": {
       "etag": "\"26f9-65d55df248585-df\"",
       "file_path": "documentation/MLCompute/mlcpoolingdescriptor/kernelsizes.md",
       "hash": "584e76a17b8b327a44af71547c1757725b0d5e0cce14a7ada4d33310e7ea893c"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/mlcompute/mlcpoolingdescriptor/kernelwidth.json": {
+      "etag": "\"2c15-65d55df25f944-df\"",
+      "file_path": "documentation/MLCompute/mlcpoolingdescriptor/kernelwidth.md",
+      "hash": "db869240ff630e7d8c247850fa134bd9a7aa2c5694b815b0eb779d36df5abe18"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/mlcompute/mlcpoolingdescriptor/l2normpoolingdescriptorwithkernelsizes:strides:dilationrates:paddingpolicy:paddingsizes:.json": {
+      "etag": "\"3b25-65d55df25f944-df\"",
+      "file_path": "documentation/MLCompute/mlcpoolingdescriptor/l2normpoolingdescriptorwithkernelsizes_strides_dilationrates_paddingpolicy_paddingsizes_.md",
+      "hash": "d3dce07410585952f973b476b9876c207dfbdf5dec9ab5c45c90e5e24a04efb7"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/mlcompute/mlcpoolingdescriptor/l2normpoolingdescriptorwithkernelsizes:strides:paddingpolicy:paddingsizes:.json": {
+      "etag": "\"3925-65d55df25f944-df\"",
+      "file_path": "documentation/MLCompute/mlcpoolingdescriptor/l2normpoolingdescriptorwithkernelsizes_strides_paddingpolicy_paddingsizes_.md",
+      "hash": "594b997cd0482365eff03b7fedfad1d23da1c769a955b93851e6fd7021a95668"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/mlcompute/mlcpoolingdescriptor/maxpoolingdescriptorwithkernelsizes:strides:dilationrates:paddingpolicy:paddingsizes:.json": {
+      "etag": "\"3b13-65d55df25f944-df\"",
+      "file_path": "documentation/MLCompute/mlcpoolingdescriptor/maxpoolingdescriptorwithkernelsizes_strides_dilationrates_paddingpolicy_paddingsizes_.md",
+      "hash": "b183cc9fed4e02ede05791834a616d877b36adc38d1a601dcecbf58b6a7358b6"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/mlcompute/mlcpoolingdescriptor/maxpoolingdescriptorwithkernelsizes:strides:paddingpolicy:paddingsizes:.json": {
+      "etag": "\"390e-65d55df248585-df\"",
+      "file_path": "documentation/MLCompute/mlcpoolingdescriptor/maxpoolingdescriptorwithkernelsizes_strides_paddingpolicy_paddingsizes_.md",
+      "hash": "14183c568e1d805debccd4ba5060231d4450240884d8b1a3ca441198ed8d46e6"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/mlcompute/mlcpoolingdescriptor/paddingpolicy-1e6rg.json": {
+      "etag": "\"2c3f-65d55df25f944-df\"",
+      "file_path": "documentation/MLCompute/mlcpoolingdescriptor/paddingpolicy-1e6rg.md",
+      "hash": "2e2f5d374772fc564cc28b3598b2f6f9214832d219fb8f8597e86f8b50488578"
     },
     "https://developer.apple.com/tutorials/data/documentation/mlcompute/mlcpoolingdescriptor/paddingpolicy-7p8a2.json": {
       "etag": "\"2635-65d55df25f944-df\"",
       "file_path": "documentation/MLCompute/mlcpoolingdescriptor/paddingpolicy-7p8a2.md",
       "hash": "749ea8aa62e3507cc7098e84b82f68fb47f69a7d014cb88a5f20d81513d93721"
     },
+    "https://developer.apple.com/tutorials/data/documentation/mlcompute/mlcpoolingdescriptor/paddingsizeinx.json": {
+      "etag": "\"2c65-65d55df25f944-df\"",
+      "file_path": "documentation/MLCompute/mlcpoolingdescriptor/paddingsizeinx.md",
+      "hash": "f118fb4ae7afb6ecd6430d25354bf973bafef54ddccb8c94adc8cb57f733f18e"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/mlcompute/mlcpoolingdescriptor/paddingsizeiny.json": {
+      "etag": "\"2c65-65d55df25f944-df\"",
+      "file_path": "documentation/MLCompute/mlcpoolingdescriptor/paddingsizeiny.md",
+      "hash": "b29595eb95684feef27e953c718441e09cbff32e685d8064cf18393dd41b418b"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/mlcompute/mlcpoolingdescriptor/poolingdescriptorwithtype:kernelsize:stride:.json": {
+      "etag": "\"37e5-65d55df248585-df\"",
+      "file_path": "documentation/MLCompute/mlcpoolingdescriptor/poolingdescriptorwithtype_kernelsize_stride_.md",
+      "hash": "8525e4a5fac6bb1fdd89931c7064470d56c78118bddd9795131ff81697f92102"
+    },
     "https://developer.apple.com/tutorials/data/documentation/mlcompute/mlcpoolingdescriptor/poolingtype-4ni07.json": {
       "etag": "\"25f5-65d55df248585-df\"",
       "file_path": "documentation/MLCompute/mlcpoolingdescriptor/poolingtype-4ni07.md",
       "hash": "97a7625e9a60e1a19a8f1f954a92b75ec6730e45040e114751b5da81c25d385f"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/mlcompute/mlcpoolingdescriptor/poolingtype-9daku.json": {
+      "etag": "\"2c12-65d55df248585-df\"",
+      "file_path": "documentation/MLCompute/mlcpoolingdescriptor/poolingtype-9daku.md",
+      "hash": "b2353f7e3549a7b1c0bfa96e1964a0bb865b0b899f8bdff1fa381de046b7002d"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/mlcompute/mlcpoolingdescriptor/strideinx.json": {
+      "etag": "\"2c0a-65d55df248585-df\"",
+      "file_path": "documentation/MLCompute/mlcpoolingdescriptor/strideinx.md",
+      "hash": "f8d9e3567c9149a7192e4de583fe514bd29475414bced5f93252c2f9b66836d0"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/mlcompute/mlcpoolingdescriptor/strideiny.json": {
+      "etag": "\"2c0a-65d55df248585-df\"",
+      "file_path": "documentation/MLCompute/mlcpoolingdescriptor/strideiny.md",
+      "hash": "0b96f0653e3463cd73bfcbc5e802a0c9b425e6d88001876d0cb6e33aeaba64b9"
     },
     "https://developer.apple.com/tutorials/data/documentation/mlcompute/mlcpoolingdescriptor/strides.json": {
       "etag": "\"26c2-65d55df25f944-df\"",
@@ -6009,6 +6959,31 @@
       "etag": "\"2a7e-65d55df1f2971-df\"",
       "file_path": "documentation/MLCompute/mlcpoolinglayer/init(descriptor).md",
       "hash": "7b00a653a637cf48d7d3154cd3e2ce4a4e4a9772e52006d787acc66248be243e"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/mlcompute/mlcpoolingtype-8hrit.json": {
+      "etag": "\"2309-65d55df248585-df\"",
+      "file_path": "documentation/MLCompute/mlcpoolingtype-8hrit.md",
+      "hash": "a882676efd2682179b155fdbd59677ac41f4522fd863a5b6ba6ffce6eccb2f71"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/mlcompute/mlcpoolingtype-8hrit/mlcpoolingtypeaverage.json": {
+      "etag": "\"15fd-65d55df2c43a0-df\"",
+      "file_path": "documentation/MLCompute/mlcpoolingtype-8hrit/mlcpoolingtypeaverage.md",
+      "hash": "547826a56af67bc4d8d7819c7d02a465e283298c2d9e9c45a1f46c6676ceafdf"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/mlcompute/mlcpoolingtype-8hrit/mlcpoolingtypecount.json": {
+      "etag": "\"15f1-65d55df2c43a0-df\"",
+      "file_path": "documentation/MLCompute/mlcpoolingtype-8hrit/mlcpoolingtypecount.md",
+      "hash": "3eac4b3db45af74181eed3929a4b109f2131efdd9a19cc362fc7938439244f52"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/mlcompute/mlcpoolingtype-8hrit/mlcpoolingtypel2norm.json": {
+      "etag": "\"15f7-65d55df2c43a0-df\"",
+      "file_path": "documentation/MLCompute/mlcpoolingtype-8hrit/mlcpoolingtypel2norm.md",
+      "hash": "d4e4ebb58e387d627c0b52e2478e562c926c80b28b9cf26875c83fb25ccbbae1"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/mlcompute/mlcpoolingtype-8hrit/mlcpoolingtypemax.json": {
+      "etag": "\"15e5-65d55df2c43a0-df\"",
+      "file_path": "documentation/MLCompute/mlcpoolingtype-8hrit/mlcpoolingtypemax.md",
+      "hash": "ca42969ee1ecf930c57a218ef5390e0c84bc8109037dcbfd8d03fe6a4473b351"
     },
     "https://developer.apple.com/tutorials/data/documentation/mlcompute/mlcpoolingtype-wb8j.json": {
       "etag": "\"2422-65d55df305c87-df\"",
@@ -6035,6 +7010,11 @@
       "file_path": "documentation/MLCompute/mlcpoolingtype-wb8j/max.md",
       "hash": "9643ed1f28cdee297d94075d221fd078444ec21653c0e8bf3fe02617ef7977a4"
     },
+    "https://developer.apple.com/tutorials/data/documentation/mlcompute/mlcpoolingtypedebugdescription.json": {
+      "etag": "\"1b17-65d55df2e52ed-df\"",
+      "file_path": "documentation/MLCompute/mlcpoolingtypedebugdescription.md",
+      "hash": "bf40ffae2b16d104dbcafbdf7d48777ab3e5b681f4562c31cb9dd3bdf0e4b4ec"
+    },
     "https://developer.apple.com/tutorials/data/documentation/mlcompute/mlcrandominitializertype.json": {
       "etag": "\"6785-65d55df305c87-df\"",
       "file_path": "documentation/MLCompute/mlcrandominitializertype.md",
@@ -6049,6 +7029,16 @@
       "etag": "\"14dc-65d55df27df14-df\"",
       "file_path": "documentation/MLCompute/mlcrandominitializertype/init(rawvalue).md",
       "hash": "252da672d0bbb75f331eeff92a506d7c4c331629e15612b31260238847e9bb06"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/mlcompute/mlcrandominitializertype/mlcrandominitializertypecount.json": {
+      "etag": "\"202c-65d55df27df14-df\"",
+      "file_path": "documentation/MLCompute/mlcrandominitializertype/mlcrandominitializertypecount.md",
+      "hash": "baab3af0cda7cc535e72dd8519debabd1a8dfcc4e5d6d0631f966bbfcc44bc5c"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/mlcompute/mlcrandominitializertype/mlcrandominitializertypeinvalid.json": {
+      "etag": "\"2038-65d55df27df14-df\"",
+      "file_path": "documentation/MLCompute/mlcrandominitializertype/mlcrandominitializertypeinvalid.md",
+      "hash": "df6da62c4e844fe7cad417012fc721bf5b7f6ce8a2f21e552a5e46be65b55aae"
     },
     "https://developer.apple.com/tutorials/data/documentation/mlcompute/mlcrandominitializertype/uniform.json": {
       "etag": "\"27e2-65d55df27df14-df\"",
@@ -6070,6 +7060,11 @@
       "file_path": "documentation/MLCompute/mlcreductionlayer/dimension.md",
       "hash": "ac1eb051fe8ac62aa19ec361b17773fe86bb01ab0e7d2260c9a9ecd44ed91014"
     },
+    "https://developer.apple.com/tutorials/data/documentation/mlcompute/mlcreductionlayer/dimensions-4359b.json": {
+      "etag": "\"1b87-65d55df1f2971-df\"",
+      "file_path": "documentation/MLCompute/mlcreductionlayer/dimensions-4359b.md",
+      "hash": "bb77f2033b0d213e266d1920af828a2878823e2ed3db4f5cdd852a4dde895bb4"
+    },
     "https://developer.apple.com/tutorials/data/documentation/mlcompute/mlcreductionlayer/dimensions-9oph6.json": {
       "etag": "\"2063-65d55df1f2971-df\"",
       "file_path": "documentation/MLCompute/mlcreductionlayer/dimensions-9oph6.md",
@@ -6084,6 +7079,11 @@
       "etag": "\"27e2-65d55df1f2971-df\"",
       "file_path": "documentation/MLCompute/mlcreductionlayer/init(reductiontype,dimensions).md",
       "hash": "21fcd8da184280ffc9f241f91550aeab50bc8db8443514cdf3e6cd84ed11de47"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/mlcompute/mlcreductionlayer/layerwithreductiontype:dimensions:.json": {
+      "etag": "\"22bf-65d55df1f2971-df\"",
+      "file_path": "documentation/MLCompute/mlcreductionlayer/layerwithreductiontype_dimensions_.md",
+      "hash": "1b0f8f517b4634b50103379e443f034f1dfe0415eb1c604805e84168a1c58af0"
     },
     "https://developer.apple.com/tutorials/data/documentation/mlcompute/mlcreductionlayer/reductiontype.json": {
       "etag": "\"2c1d-65d55df1f2971-df\"",
@@ -6145,6 +7145,11 @@
       "file_path": "documentation/MLCompute/mlcreductiontype/min.md",
       "hash": "2b56785a971a7be21dceeab0d92b9f8df3c68f0fd7fe9530f3abb9f427dd07f6"
     },
+    "https://developer.apple.com/tutorials/data/documentation/mlcompute/mlcreductiontype/mlcreductiontypecount.json": {
+      "etag": "\"3ddd-65d55df22bc60-df\"",
+      "file_path": "documentation/MLCompute/mlcreductiontype/mlcreductiontypecount.md",
+      "hash": "1658d0d56ebda72fe8939f4c475eeb6cec14d2601955b7fe5354cb4023e0cfa0"
+    },
     "https://developer.apple.com/tutorials/data/documentation/mlcompute/mlcreductiontype/none.json": {
       "etag": "\"47de-65d55df22bc60-df\"",
       "file_path": "documentation/MLCompute/mlcreductiontype/none.md",
@@ -6189,6 +7194,16 @@
       "etag": "\"17cb-65d55df2a3d84-df\"",
       "file_path": "documentation/MLCompute/mlcreshapelayer/init(shape).md",
       "hash": "6d4efbe0d8a3afc864023d7e4204d0b5967e757bae56600b055118985b87de11"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/mlcompute/mlcreshapelayer/layerwithshape:.json": {
+      "etag": "\"1410-65d55df2a3d84-df\"",
+      "file_path": "documentation/MLCompute/mlcreshapelayer/layerwithshape_.md",
+      "hash": "4b8a5454836ed18f78b4f1f8add073b7b30e8de5400ccdbbb036ddb38d0346d3"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/mlcompute/mlcreshapelayer/shape-840ax.json": {
+      "etag": "\"11bf-65d55df2a3d84-df\"",
+      "file_path": "documentation/MLCompute/mlcreshapelayer/shape-840ax.md",
+      "hash": "b84e4350cedb4c481a532cd1973f65616c55fb8c4759e3e72ce9c25f1e851cc2"
     },
     "https://developer.apple.com/tutorials/data/documentation/mlcompute/mlcreshapelayer/shape-8k50y.json": {
       "etag": "\"1662-65d55df2a3d84-df\"",
@@ -6315,6 +7330,11 @@
       "file_path": "documentation/MLCompute/mlcslicelayer.md",
       "hash": "998a77fed8188a42567f160a461713f511a338ac52998f6d2a511657ffa3d966"
     },
+    "https://developer.apple.com/tutorials/data/documentation/mlcompute/mlcslicelayer/end-8z0wi.json": {
+      "etag": "\"15b0-65d55df248585-df\"",
+      "file_path": "documentation/MLCompute/mlcslicelayer/end-8z0wi.md",
+      "hash": "24d7939e6daa89ba06cb576bdc374a9648c72e915b3576b18057285bed5c4b19"
+    },
     "https://developer.apple.com/tutorials/data/documentation/mlcompute/mlcslicelayer/end-9xw91.json": {
       "etag": "\"1bc0-65d55df248585-df\"",
       "file_path": "documentation/MLCompute/mlcslicelayer/end-9xw91.md",
@@ -6325,6 +7345,16 @@
       "file_path": "documentation/MLCompute/mlcslicelayer/init(start,end,stride).md",
       "hash": "5129cb81a46eddd744406d358c732cfc2d03b174deac92fb1b8dad650062532b"
     },
+    "https://developer.apple.com/tutorials/data/documentation/mlcompute/mlcslicelayer/slicelayerwithstart:end:stride:.json": {
+      "etag": "\"16d3-65d55df248585-df\"",
+      "file_path": "documentation/MLCompute/mlcslicelayer/slicelayerwithstart_end_stride_.md",
+      "hash": "3544ed622dc12d6bb4d28dd68d9875c236d5395483f38118237cabb22a783f39"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/mlcompute/mlcslicelayer/start-6dnjn.json": {
+      "etag": "\"15be-65d55df248585-df\"",
+      "file_path": "documentation/MLCompute/mlcslicelayer/start-6dnjn.md",
+      "hash": "d24b8bc09b00744972e6a1fd673dd9a11e1b4a18a2102232816d308ac1f28205"
+    },
     "https://developer.apple.com/tutorials/data/documentation/mlcompute/mlcslicelayer/start-6wsh6.json": {
       "etag": "\"1bcc-65d55df248585-df\"",
       "file_path": "documentation/MLCompute/mlcslicelayer/start-6wsh6.md",
@@ -6334,6 +7364,11 @@
       "etag": "\"1bd6-65d55df248585-df\"",
       "file_path": "documentation/MLCompute/mlcslicelayer/stride-84fhb.md",
       "hash": "eb66c4d2ee4b31a160358ca6ba673d823fa2bf5806e28a06ee27eff332f710c9"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/mlcompute/mlcslicelayer/stride-8dnpu.json": {
+      "etag": "\"1606-65d55df248585-df\"",
+      "file_path": "documentation/MLCompute/mlcslicelayer/stride-8dnpu.md",
+      "hash": "c709f15da8547278779b43acb66cec4a702ee765084518135e9be772dcee75e6"
     },
     "https://developer.apple.com/tutorials/data/documentation/mlcompute/mlcsoftmaxlayer.json": {
       "etag": "\"5517-65d55df2a3d84-df\"",
@@ -6405,10 +7440,20 @@
       "file_path": "documentation/MLCompute/mlcsplitlayer/init(splitsectionlengths,dimension).md",
       "hash": "d6d2c64b3a9e1b7221a40e9ab3c916bf6367dd00c42066e2d413c463157f8f2c"
     },
+    "https://developer.apple.com/tutorials/data/documentation/mlcompute/mlcsplitlayer/layerwithsplitsectionlengths:dimension:.json": {
+      "etag": "\"1f5b-65d55df305c87-df\"",
+      "file_path": "documentation/MLCompute/mlcsplitlayer/layerwithsplitsectionlengths_dimension_.md",
+      "hash": "145918bf45003f41c8881d91bf31053805d31c1cfa8f171bcbaed51bba15306a"
+    },
     "https://developer.apple.com/tutorials/data/documentation/mlcompute/mlcsplitlayer/splitcount.json": {
       "etag": "\"2b37-65d55df305c87-df\"",
       "file_path": "documentation/MLCompute/mlcsplitlayer/splitcount.md",
       "hash": "a449e40a5e7cec72a8e8a20325624bb809980d6ec76f62591c8e313c326d58e4"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/mlcompute/mlcsplitlayer/splitsectionlengths-32abw.json": {
+      "etag": "\"1cc0-65d55df305c87-df\"",
+      "file_path": "documentation/MLCompute/mlcsplitlayer/splitsectionlengths-32abw.md",
+      "hash": "c658f2838707a3d717de0d7b8bc2cac90dfea03300ef8391bac30d325398d303"
     },
     "https://developer.apple.com/tutorials/data/documentation/mlcompute/mlcsplitlayer/splitsectionlengths-5abch.json": {
       "etag": "\"211a-65d55df305c87-df\"",
@@ -6600,6 +7645,46 @@
       "file_path": "documentation/MLCompute/mlctensor/tensorid.md",
       "hash": "fc2cf0761ee503c0fecc393bc1be4d8b09fb938cb01971998bc16fef4bc0a6c6"
     },
+    "https://developer.apple.com/tutorials/data/documentation/mlcompute/mlctensor/tensorwithsequencelengths:sortedsequences:featurechannelcount:batchsize:data:.json": {
+      "etag": "\"4598-65d55df1cf66e-df\"",
+      "file_path": "documentation/MLCompute/mlctensor/tensorwithsequencelengths_sortedsequences_featurechannelcount_batchsize_data_.md",
+      "hash": "a2fa24da3c2ff6f81ad25094b93389c8b25ba0ba7997e73564a3c3efb5545722"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/mlcompute/mlctensor/tensorwithsequencelengths:sortedsequences:featurechannelcount:batchsize:randominitializertype:.json": {
+      "etag": "\"4705-65d55df1f2971-df\"",
+      "file_path": "documentation/MLCompute/mlctensor/tensorwithsequencelengths_sortedsequences_featurechannelcount_batchsize_randominitializertype_.md",
+      "hash": "ded7f13bd37a70b822bc40042b531aadf9965e4494de2818ea811f744d357447"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/mlcompute/mlctensor/tensorwithshape:.json": {
+      "etag": "\"5855-65d55df1cf66e-df\"",
+      "file_path": "documentation/MLCompute/mlctensor/tensorwithshape_.md",
+      "hash": "06be627186dc944612a7a7cfb3f8fb307dab19dd63ffa7567a70149c364e40b1"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/mlcompute/mlctensor/tensorwithshape:data:datatype:.json": {
+      "etag": "\"5f89-65d55df1cf66e-df\"",
+      "file_path": "documentation/MLCompute/mlctensor/tensorwithshape_data_datatype_.md",
+      "hash": "1dd5fd2cc2fe013dd808ac9f9dbbe91236a632c3cb45aa8f8c8355567f7620f2"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/mlcompute/mlctensor/tensorwithshape:datatype:.json": {
+      "etag": "\"5e3f-65d55df1cf66e-df\"",
+      "file_path": "documentation/MLCompute/mlctensor/tensorwithshape_datatype_.md",
+      "hash": "c243fa0690f4b8983afb51468926424b905ef1c4cd382d3e03675507645f9197"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/mlcompute/mlctensor/tensorwithshape:fillwithdata:datatype:.json": {
+      "etag": "\"5e80-65d55df1cf66e-df\"",
+      "file_path": "documentation/MLCompute/mlctensor/tensorwithshape_fillwithdata_datatype_.md",
+      "hash": "938ae5aa335db669e0d04898649868aa63386423c3aa71574055ba407832298a"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/mlcompute/mlctensor/tensorwithshape:randominitializertype:.json": {
+      "etag": "\"5b10-65d55df1cf66e-df\"",
+      "file_path": "documentation/MLCompute/mlctensor/tensorwithshape_randominitializertype_.md",
+      "hash": "8d6ee790e2a785699275cdbd02e79c46163b8080d15825b499dfce0b1aa43c86"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/mlcompute/mlctensor/tensorwithshape:randominitializertype:datatype:.json": {
+      "etag": "\"6189-65d55df1cf66e-df\"",
+      "file_path": "documentation/MLCompute/mlctensor/tensorwithshape_randominitializertype_datatype_.md",
+      "hash": "778d847796f5f4ce44076c161010baca56eb0e50e2e949b35b4f32684da26f1b"
+    },
     "https://developer.apple.com/tutorials/data/documentation/mlcompute/mlctensordata.json": {
       "etag": "\"7a2d-65d55df27df14-df\"",
       "file_path": "documentation/MLCompute/mlctensordata.md",
@@ -6635,6 +7720,11 @@
       "file_path": "documentation/MLCompute/mlctensordescriptor.md",
       "hash": "421233fbc76be1abbd9f363bea5bb1f9a95e7421192eb9c40e8b388e0dbeb5d7"
     },
+    "https://developer.apple.com/tutorials/data/documentation/mlcompute/mlctensordescriptor/batchsizepersequencestep-55mp8.json": {
+      "etag": "\"30d9-65d55df20fd09-df\"",
+      "file_path": "documentation/MLCompute/mlctensordescriptor/batchsizepersequencestep-55mp8.md",
+      "hash": "9ce9a1284dd3baf14ab2dfa78186ec5861eb2454484cf3045e88e1cb49d4947f"
+    },
     "https://developer.apple.com/tutorials/data/documentation/mlcompute/mlctensordescriptor/batchsizepersequencestep-6iz59.json": {
       "etag": "\"397c-65d55df22bc60-df\"",
       "file_path": "documentation/MLCompute/mlctensordescriptor/batchsizepersequencestep-6iz59.md",
@@ -6644,6 +7734,16 @@
       "etag": "\"46ca-65d55df22bc60-df\"",
       "file_path": "documentation/MLCompute/mlctensordescriptor/datatype.md",
       "hash": "cadb22d107eac5f8859927d612b8b1a379e7c345d6f4038abfa5bb19dda297c6"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/mlcompute/mlctensordescriptor/descriptorwithshape:datatype:.json": {
+      "etag": "\"5407-65d55df20fd09-df\"",
+      "file_path": "documentation/MLCompute/mlctensordescriptor/descriptorwithshape_datatype_.md",
+      "hash": "e0dbdd22c151a92370279e872d12f506d9741914cd34d2c47d345ff81f2f6d9f"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/mlcompute/mlctensordescriptor/descriptorwithshape:sequencelengths:sortedsequences:datatype:.json": {
+      "etag": "\"5b5b-65d55df22bc60-df\"",
+      "file_path": "documentation/MLCompute/mlctensordescriptor/descriptorwithshape_sequencelengths_sortedsequences_datatype_.md",
+      "hash": "b9018a1fa12d79aadb811aabf97102cc11d1e87f36a73296745725848b166eb0"
     },
     "https://developer.apple.com/tutorials/data/documentation/mlcompute/mlctensordescriptor/dimensioncount.json": {
       "etag": "\"4690-65d55df22bc60-df\"",
@@ -6695,15 +7795,30 @@
       "file_path": "documentation/MLCompute/mlctensordescriptor/sequencelengths-3jdab.md",
       "hash": "2bb52e0b126a70c06bbc27208188314966cdcc032cfdf83682c35247d25c97e3"
     },
+    "https://developer.apple.com/tutorials/data/documentation/mlcompute/mlctensordescriptor/sequencelengths-3ntsa.json": {
+      "etag": "\"2d6e-65d55df20fd09-df\"",
+      "file_path": "documentation/MLCompute/mlctensordescriptor/sequencelengths-3ntsa.md",
+      "hash": "dbc61f1c323308eaf387a03171c521a3ec6ab94ab2ab15fbcb8400a24bdfe176"
+    },
     "https://developer.apple.com/tutorials/data/documentation/mlcompute/mlctensordescriptor/shape-7i1rw.json": {
       "etag": "\"3399-65d55df22bc60-df\"",
       "file_path": "documentation/MLCompute/mlctensordescriptor/shape-7i1rw.md",
       "hash": "92bdf2084dfdaeb96433ed0c685e8aca107ac309bae4346847e3c6c2e74cd1ba"
     },
+    "https://developer.apple.com/tutorials/data/documentation/mlcompute/mlctensordescriptor/shape-91vng.json": {
+      "etag": "\"2cd5-65d55df20fd09-df\"",
+      "file_path": "documentation/MLCompute/mlctensordescriptor/shape-91vng.md",
+      "hash": "5161f2e40bc17627ccae4f87da579d0cf748ec114cb5ae497f455f2447bda7df"
+    },
     "https://developer.apple.com/tutorials/data/documentation/mlcompute/mlctensordescriptor/sortedsequences.json": {
       "etag": "\"4733-65d55df22bc60-df\"",
       "file_path": "documentation/MLCompute/mlctensordescriptor/sortedsequences.md",
       "hash": "c56726a420b55820a3cb2f320e66a4bf6e7608a04d6dec2c8a6d04d603ec668b"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/mlcompute/mlctensordescriptor/stride-3ydik.json": {
+      "etag": "\"2ce8-65d55df20fd09-df\"",
+      "file_path": "documentation/MLCompute/mlctensordescriptor/stride-3ydik.md",
+      "hash": "fef072c187fe8ba67b46e2bbdde9fc74f557a19460e9aec6c905ff4906d2ece3"
     },
     "https://developer.apple.com/tutorials/data/documentation/mlcompute/mlctensordescriptor/stride-5mzlt.json": {
       "etag": "\"33ab-65d55df20fd09-df\"",
@@ -6900,6 +8015,11 @@
       "file_path": "documentation/MLCompute/mlctransposelayer.md",
       "hash": "b044423590ddf519755dc776727a4b46c8f7d78f7ed47edc7ab3e91e3786293c"
     },
+    "https://developer.apple.com/tutorials/data/documentation/mlcompute/mlctransposelayer/dimensions-1d5nw.json": {
+      "etag": "\"1454-65d55df20fd09-df\"",
+      "file_path": "documentation/MLCompute/mlctransposelayer/dimensions-1d5nw.md",
+      "hash": "0dae0271eda1bb6313c767dbd09bb3e2098178b0f46a4acd590a7746aa078481"
+    },
     "https://developer.apple.com/tutorials/data/documentation/mlcompute/mlctransposelayer/dimensions-71ed6.json": {
       "etag": "\"18f3-65d55df20fd09-df\"",
       "file_path": "documentation/MLCompute/mlctransposelayer/dimensions-71ed6.md",
@@ -6909,6 +8029,11 @@
       "etag": "\"1a8d-65d55df20fd09-df\"",
       "file_path": "documentation/MLCompute/mlctransposelayer/init(dimensions).md",
       "hash": "a41cb27f3a9ecc4a5f68fd99beafa5944c957905273030419a137cbbbc6f7d48"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/mlcompute/mlctransposelayer/layerwithdimensions:.json": {
+      "etag": "\"1648-65d55df20fd09-df\"",
+      "file_path": "documentation/MLCompute/mlctransposelayer/layerwithdimensions_.md",
+      "hash": "7fcb2ae260fe9f69f540d633b2b03bf589271f605c5c1de8f3642fc2c4ad817f"
     },
     "https://developer.apple.com/tutorials/data/documentation/mlcompute/mlcupsamplelayer.json": {
       "etag": "\"64ec-65d55df2a3d84-df\"",
@@ -6930,6 +8055,16 @@
       "file_path": "documentation/MLCompute/mlcupsamplelayer/init(shape,samplemode,alignscorners).md",
       "hash": "c712e316b2376ec4b95cf266fcf9fb7042c9b7817393e6694df4da1b7b421b20"
     },
+    "https://developer.apple.com/tutorials/data/documentation/mlcompute/mlcupsamplelayer/layerwithshape:.json": {
+      "etag": "\"1bb3-65d55df248585-df\"",
+      "file_path": "documentation/MLCompute/mlcupsamplelayer/layerwithshape_.md",
+      "hash": "70ac7e6d1d375a92e96936bda5ee7b9213970f52ab65f15c4117b77401b05db0"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/mlcompute/mlcupsamplelayer/layerwithshape:samplemode:alignscorners:.json": {
+      "etag": "\"2216-65d55df248585-df\"",
+      "file_path": "documentation/MLCompute/mlcupsamplelayer/layerwithshape_samplemode_alignscorners_.md",
+      "hash": "c7e10e04584512c7bc7b10b3825cb120398602f6fe614868ddfd14c8f6b04474"
+    },
     "https://developer.apple.com/tutorials/data/documentation/mlcompute/mlcupsamplelayer/samplemode.json": {
       "etag": "\"2b48-65d55df248585-df\"",
       "file_path": "documentation/MLCompute/mlcupsamplelayer/samplemode.md",
@@ -6939,6 +8074,11 @@
       "etag": "\"201a-65d55df248585-df\"",
       "file_path": "documentation/MLCompute/mlcupsamplelayer/shape-61n1u.md",
       "hash": "c2806e80d7c63c37cbada63cbbf90bac7d0d0338935e3796bc64d57ffae8d788"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/mlcompute/mlcupsamplelayer/shape-7j6sf.json": {
+      "etag": "\"1b77-65d55df248585-df\"",
+      "file_path": "documentation/MLCompute/mlcupsamplelayer/shape-7j6sf.md",
+      "hash": "7aa16dab97dd64dd8d570c916effebc2847beca9afb987112063de1987f6fd34"
     },
     "https://developer.apple.com/tutorials/data/documentation/mlcompute/mlcyololossdescriptor.json": {
       "etag": "\"7728-65d55df305c87-df\"",
@@ -7033,8 +8173,8 @@
   },
   "metadata": {
     "render": {
-      "version": 1
+      "version": 2
     },
-    "total_pages": 1406
+    "total_pages": 1634
   }
 }

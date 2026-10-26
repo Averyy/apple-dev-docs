@@ -97,6 +97,12 @@ enum UIBarButtonSystemItem : NSInteger;
   Creates an item using the specified system item, primary action, and context menu.
 - [convenience init(barButtonSystemItem: UIBarButtonItem.SystemItem, target: Any?, action: Selector?)](./init%28barbuttonsystemitem,target,action%29.md)
   Creates an item using the specified system item, target, and action.
+- [- initWithBarButtonSystemItem:primaryAction:menu:](./initwithbarbuttonsystemitem_primaryaction_menu_.md)
+  Creates an item using the specified system item, primary action, and context menu.
+- [- initWithBarButtonSystemItem:primaryAction:](./initwithbarbuttonsystemitem_primaryaction_.md)
+  Creates an item using the specified system item and primary action.
+- [- initWithBarButtonSystemItem:menu:](./initwithbarbuttonsystemitem_menu_.md)
+  Creates an item using the specified system item and context menu.
 
 
 ---

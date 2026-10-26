@@ -21,6 +21,11 @@
   Removes the job with the specified label from the specified domain.
 - [func SMJobSubmit(CFString!, CFDictionary, UnsafeMutableRawPointer!, UnsafeMutablePointer<Unmanaged<CFError>?>!) -> Bool](./smjobsubmit%28_,_,_,_%29.md)
   Submits the specified job to the specified domain.
+### Deprecated Property List Keys
+- [kSMInfoKeyAuthorizedClients](./ksminfokeyauthorizedclients.md)
+  The authorized clients property list key.
+- [kSMInfoKeyPrivilegedExecutables](./ksminfokeyprivilegedexecutables.md)
+  The privileged executables property list key.
 
 
 ---

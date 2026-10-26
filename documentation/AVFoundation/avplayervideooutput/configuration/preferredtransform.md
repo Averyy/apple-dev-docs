@@ -38,6 +38,8 @@ The system retrieves the transform from the [`AVAssetTrack`](../../avassettrack.
   An array of data channels selected for this configuration.
 - [var activationTime: CMTime](./activationtime.md)
   The host time this configuration became active on its associated player object.
+- [dataChannelDescriptions](../../avplayervideooutputconfiguration/datachanneldescriptions.md)
+  An array of data channels selected for this configuration.
 
 
 ---

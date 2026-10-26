@@ -47,6 +47,8 @@ The system also gives apps with active complications more opportunities for back
   An identifier representing a default complication.
 - [class CLKComplicationDescriptor](./clkcomplicationdescriptor.md)
   A descriptor that defines a complication and the families that it supports.
+- [CLKAllComplicationFamilies](./clkallcomplicationfamilies.md)
+  Returns an array containing all possible values of the complication family enumeration.
 ### Face Sharing
 - [Sharing an Apple Watch face](./sharing-an-apple-watch-face.md)
   Distribute a customized watch face to Apple Watch users.

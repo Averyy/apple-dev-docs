@@ -39,6 +39,8 @@ By default, the texture at each index is `nil`.
 ### Assigning textures
 - [func setTileTextures([(any MTLTexture)?], range: Range<Int>)](./settiletextures%28_,range%29.md)
   Assigns multiple textures to a range of entries in the tile shader argument table.
+- [- setTileTextures:withRange:](./settiletextures_withrange_.md)
+  Assigns multiple textures to a range of entries in the tile shader argument table.
 
 
 ---

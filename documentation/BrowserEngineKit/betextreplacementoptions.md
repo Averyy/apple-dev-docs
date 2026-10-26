@@ -31,6 +31,8 @@ The [`BETextInput`](./betextinput.md) protocol’s [`replaceText(_:withText:opti
 ### Identifying text-replacement options
 - [static var addUnderline: BETextReplacementOptions](./betextreplacementoptions/addunderline.md)
   An option that processes text by adding an underline to its visual style.
+- [BETextReplacementOptionsNone](./betextreplacementoptions/betextreplacementoptionsnone.md)
+  An option that specifies no processing for the text.
 ### Creating text-replacement options
 - [init(rawValue: UInt)](./betextreplacementoptions/init%28rawvalue%29.md)
   Creates a text-replacement option with the specified underlying value.

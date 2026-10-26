@@ -37,6 +37,8 @@ The delegate can use this message as its cue to initiate a dragging operation.
 ### Related Documentation
 - [func dragFile(String, from: NSRect, slideBack: Bool, event: NSEvent) -> Bool](../nsview/dragfile%28_,from,slideback,event%29.md)
   Initiates a dragging operation from the view, allowing the user to drag a file icon to any application that has window or view objects that accept files.
+- [- dragImage:at:offset:event:pasteboard:source:slideBack:](../nsview/dragimage_at_offset_event_pasteboard_source_slideback_.md)
+  Initiates a dragging operation from the view, allowing the user to drag arbitrary data with a specified icon into any application that has window or view objects that accept dragged data.
 
 
 ---

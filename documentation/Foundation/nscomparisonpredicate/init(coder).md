@@ -38,6 +38,10 @@ init?(coder: NSCoder)
   Creates a predicate that you form by combining specified left and right expressions using a specified selector.
 - [init(leftExpression: NSExpression, rightExpression: NSExpression, modifier: NSComparisonPredicate.Modifier, type: NSComparisonPredicate.Operator, options: NSComparisonPredicate.Options)](./init%28leftexpression,rightexpression,modifier,type,options%29.md)
   Creates a predicate to a specified type that you form by combining specified left and right expressions using a specified modifier and options.
+- [+ predicateWithLeftExpression:rightExpression:customSelector:](./predicatewithleftexpression_rightexpression_customselector_.md)
+  Returns a new predicate formed by combining the left and right expressions using a given selector.
+- [+ predicateWithLeftExpression:rightExpression:modifier:type:options:](./predicatewithleftexpression_rightexpression_modifier_type_options_.md)
+  Creates and returns a predicate of a given type formed by combining given left and right expressions using a given modifier and options.
 
 
 ---

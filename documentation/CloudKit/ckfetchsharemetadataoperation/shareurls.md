@@ -34,6 +34,8 @@ Use this property to view or change the URLs of the shares to fetch. If you inte
 ### Configuring the Operation
 - [var shouldFetchRootRecord: Bool](./shouldfetchrootrecord.md)
   A Boolean value that indicates whether to retrieve the root record.
+- [rootRecordDesiredKeys](./rootrecorddesiredkeys-7gvr5.md)
+  The fields to return when fetching the root record.
 
 
 ---

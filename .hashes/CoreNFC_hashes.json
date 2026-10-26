@@ -575,6 +575,21 @@
       "file_path": "documentation/CoreNFC/nfciso15693multipleblocksecuritystatus/blocksecuritystatus.md",
       "hash": "d8d7a843d92a93e7cf620ad3b13b983b3b0ac5e3ee6890fb405e4df277e7b742"
     },
+    "https://developer.apple.com/documentation/corenfc/nfciso15693readersession": {
+      "etag": "\"19ad-65d55ee64121b-df\"",
+      "file_path": "documentation/CoreNFC/nfciso15693readersession.md",
+      "hash": "fee02ee2b49b2dd3378b6c642fc76854367665b027405631138490c633020ae6"
+    },
+    "https://developer.apple.com/documentation/corenfc/nfciso15693readersession/initwithdelegate:queue:": {
+      "etag": "\"1693-65d55ee65de22-df\"",
+      "file_path": "documentation/CoreNFC/nfciso15693readersession/initwithdelegate_queue_.md",
+      "hash": "4a419256e50b3b0cdccc4a53de5d39c04fe61fe6bce48b20bb4e9ad7380fcbf7"
+    },
+    "https://developer.apple.com/documentation/corenfc/nfciso15693readersession/restartpolling": {
+      "etag": "\"fde-65d55ee65de22-df\"",
+      "file_path": "documentation/CoreNFC/nfciso15693readersession/restartpolling.md",
+      "hash": "02d2aa7f20bbf737091bc797a28f33b4dcfdb79ad74d81e000e0583435d837ee"
+    },
     "https://developer.apple.com/documentation/corenfc/nfciso15693readmultipleblocksconfiguration": {
       "etag": "\"4c98-65d55ee67c1ff-df\"",
       "file_path": "documentation/CoreNFC/nfciso15693readmultipleblocksconfiguration.md",
@@ -770,6 +785,11 @@
       "file_path": "documentation/CoreNFC/nfciso15693tag/authenticate(requestflags,cryptosuiteidentifier,message,resulthandler).md",
       "hash": "a63ce5d49451b5eafb513156f0f8d1ce496dccfafbeab1731c23c1f143b11541"
     },
+    "https://developer.apple.com/documentation/corenfc/nfciso15693tag/authenticatewithrequestflags:cryptosuiteidentifier:message:completionhandler:": {
+      "etag": "\"2aaa-65d55ee67c1ff-df\"",
+      "file_path": "documentation/CoreNFC/nfciso15693tag/authenticatewithrequestflags_cryptosuiteidentifier_message_completionhandler_.md",
+      "hash": "f3cac69a535bc945384edd6a45dc7513b0c1fb7b07af383138e0ae13a2fcc4e3"
+    },
     "https://developer.apple.com/documentation/corenfc/nfciso15693tag/challenge(requestflags:cryptosuiteidentifier:message:)": {
       "etag": "\"2183-65d55ee6945d2-df\"",
       "file_path": "documentation/CoreNFC/nfciso15693tag/challenge(requestflags,cryptosuiteidentifier,message).md",
@@ -779,6 +799,11 @@
       "etag": "\"2a39-65d55ee6945d2-df\"",
       "file_path": "documentation/CoreNFC/nfciso15693tag/challenge(requestflags,cryptosuiteidentifier,message,completionhandler).md",
       "hash": "482542c5cf126644aa35d76d4a15ab4efae9754fe464f49fccb89aae66cf15d9"
+    },
+    "https://developer.apple.com/documentation/corenfc/nfciso15693tag/challengewithrequestflags:cryptosuiteidentifier:message:completionhandler:": {
+      "etag": "\"2429-65d55ee67c1ff-df\"",
+      "file_path": "documentation/CoreNFC/nfciso15693tag/challengewithrequestflags_cryptosuiteidentifier_message_completionhandler_.md",
+      "hash": "626aed674b88b73e7eaaef4a29e101588cb495759effb636794c9d6fd5512393"
     },
     "https://developer.apple.com/documentation/corenfc/nfciso15693tag/customcommand(requestflags:customcommandcode:customrequestparameters:completionhandler:)": {
       "etag": "\"52c9-65d55ee6945d2-df\"",
@@ -800,6 +825,11 @@
       "file_path": "documentation/CoreNFC/nfciso15693tag/extendedfastreadmultipleblocks(requestflags,blockrange,resulthandler).md",
       "hash": "0fc31d7741ce2e89e1ea37430a3d5da179532b2e0e5f980787277f5749b6a67e"
     },
+    "https://developer.apple.com/documentation/corenfc/nfciso15693tag/extendedfastreadmultipleblockswithrequestflag:blockrange:completionhandler:": {
+      "etag": "\"2092-65d55ee6945d2-df\"",
+      "file_path": "documentation/CoreNFC/nfciso15693tag/extendedfastreadmultipleblockswithrequestflag_blockrange_completionhandler_.md",
+      "hash": "855981c685f375beb0866b1977725bbc83d598c76d31edf0051ce55b085d5e4d"
+    },
     "https://developer.apple.com/documentation/corenfc/nfciso15693tag/extendedgetmultipleblocksecuritystatus(requestflags:blockrange:)": {
       "etag": "\"2045-65d55ee67c1ff-df\"",
       "file_path": "documentation/CoreNFC/nfciso15693tag/extendedgetmultipleblocksecuritystatus(requestflags,blockrange).md",
@@ -809,6 +839,11 @@
       "etag": "\"2ca6-65d55ee6945d2-df\"",
       "file_path": "documentation/CoreNFC/nfciso15693tag/extendedgetmultipleblocksecuritystatus(requestflags,blockrange,resulthandler).md",
       "hash": "55dd5ffcddfa3f20ce8c726a679b9332f6575a2c0a4c89bd9c963dd3d2b261b7"
+    },
+    "https://developer.apple.com/documentation/corenfc/nfciso15693tag/extendedgetmultipleblocksecuritystatuswithrequestflag:blockrange:completionhandler:": {
+      "etag": "\"20f8-65d55ee6945d2-df\"",
+      "file_path": "documentation/CoreNFC/nfciso15693tag/extendedgetmultipleblocksecuritystatuswithrequestflag_blockrange_completionhandler_.md",
+      "hash": "747091c42cab4c9bad18b4ebaee722b1d0be4c6a6826f2d775abac082760bde7"
     },
     "https://developer.apple.com/documentation/corenfc/nfciso15693tag/extendedlockblock(requestflags:blocknumber:completionhandler:)": {
       "etag": "\"5ee1-65d55ee6945d2-df\"",
@@ -840,6 +875,11 @@
       "file_path": "documentation/CoreNFC/nfciso15693tag/extendedwritemultipleblocks(requestflags,blockrange,datablocks,completionhandler).md",
       "hash": "f177c76dcb2d552c0ebeb6396050f9dfea50c48a88d02754f0f48fb8dc6dcb4b"
     },
+    "https://developer.apple.com/documentation/corenfc/nfciso15693tag/extendedwritemultipleblockswithrequestflags:blockrange:datablocks:completionhandler:": {
+      "etag": "\"213a-65d55ee6945d2-df\"",
+      "file_path": "documentation/CoreNFC/nfciso15693tag/extendedwritemultipleblockswithrequestflags_blockrange_datablocks_completionhandler_.md",
+      "hash": "f4c86d44bd5dccf0cca41ed8bfc0e4c2597efec9bf5b2b300ac83e908dbd596a"
+    },
     "https://developer.apple.com/documentation/corenfc/nfciso15693tag/extendedwritesingleblock(requestflags:blocknumber:datablock:completionhandler:)": {
       "etag": "\"67ea-65d55ee67c1ff-df\"",
       "file_path": "documentation/CoreNFC/nfciso15693tag/extendedwritesingleblock(requestflags,blocknumber,datablock,completionhandler).md",
@@ -855,6 +895,11 @@
       "file_path": "documentation/CoreNFC/nfciso15693tag/fastreadmultipleblocks(requestflags,blockrange,resulthandler).md",
       "hash": "7d74a97bed6d4f82a527c71b6d7639029fcb9f2cc40046ef1c610b56ad3a7858"
     },
+    "https://developer.apple.com/documentation/corenfc/nfciso15693tag/fastreadmultipleblockswithrequestflag:blockrange:completionhandler:": {
+      "etag": "\"2032-65d55ee6945d2-df\"",
+      "file_path": "documentation/CoreNFC/nfciso15693tag/fastreadmultipleblockswithrequestflag_blockrange_completionhandler_.md",
+      "hash": "2cd43fb3a7f9696a5a07d08a99f1951246ac7b0576cf7c155be3bf24ad4e7931"
+    },
     "https://developer.apple.com/documentation/corenfc/nfciso15693tag/getmultipleblocksecuritystatus(requestflags:blockrange:completionhandler:)": {
       "etag": "\"5780-65d55ee67c1ff-df\"",
       "file_path": "documentation/CoreNFC/nfciso15693tag/getmultipleblocksecuritystatus(requestflags,blockrange,completionhandler).md",
@@ -869,6 +914,11 @@
       "etag": "\"289f-65d55ee6945d2-df\"",
       "file_path": "documentation/CoreNFC/nfciso15693tag/getsysteminfo(requestflags,resulthandler).md",
       "hash": "e574ca079ceef8d11461e976fe5f1c9607d3b7140b584bf40443d99d530de7bb"
+    },
+    "https://developer.apple.com/documentation/corenfc/nfciso15693tag/getsysteminfoanduidwithrequestflag:completionhandler:": {
+      "etag": "\"26c7-65d55ee67c1ff-df\"",
+      "file_path": "documentation/CoreNFC/nfciso15693tag/getsysteminfoanduidwithrequestflag_completionhandler_.md",
+      "hash": "f628712d24bf9f108f8274eb9f2fe5c7250a349e2bae8ca1961ae4cfb2ae0f86"
     },
     "https://developer.apple.com/documentation/corenfc/nfciso15693tag/icmanufacturercode": {
       "etag": "\"29d5-65d55ee6945d2-df\"",
@@ -894,6 +944,11 @@
       "etag": "\"3568-65d55ee6945d2-df\"",
       "file_path": "documentation/CoreNFC/nfciso15693tag/keyupdate(requestflags,keyidentifier,message,resulthandler).md",
       "hash": "013045ca385b3073bffc1a70d87fcb71bdb63ad1784068c93c8abe8a909f34e4"
+    },
+    "https://developer.apple.com/documentation/corenfc/nfciso15693tag/keyupdatewithrequestflags:keyidentifier:message:completionhandler:": {
+      "etag": "\"2a1e-65d55ee67c1ff-df\"",
+      "file_path": "documentation/CoreNFC/nfciso15693tag/keyupdatewithrequestflags_keyidentifier_message_completionhandler_.md",
+      "hash": "2f93527271f2a5e8c46b9b2f454659cc93cf0dcc07947adae7cc104fa9ebaf1f"
     },
     "https://developer.apple.com/documentation/corenfc/nfciso15693tag/lockafi(requestflags:completionhandler:)": {
       "etag": "\"3d17-65d55ee6945d2-df\"",
@@ -924,6 +979,11 @@
       "etag": "\"2e3c-65d55ee67c1ff-df\"",
       "file_path": "documentation/CoreNFC/nfciso15693tag/readbuffer(requestflags,resulthandler).md",
       "hash": "004d00ec12a14392b85988fdbfb54dcd7c48de555d558edd1ea290e66551d269"
+    },
+    "https://developer.apple.com/documentation/corenfc/nfciso15693tag/readbufferwithrequestflags:completionhandler:": {
+      "etag": "\"23ec-65d55ee67c1ff-df\"",
+      "file_path": "documentation/CoreNFC/nfciso15693tag/readbufferwithrequestflags_completionhandler_.md",
+      "hash": "272655b7c9ac079fe1946cee144cc5565d330e679f42edcbaec9aa865fa833f8"
     },
     "https://developer.apple.com/documentation/corenfc/nfciso15693tag/readmultipleblock(readconfiguration:completionhandler:)": {
       "etag": "\"41c8-65d55ee6945d2-df\"",
@@ -974,6 +1034,11 @@
       "etag": "\"309a-65d55ee6945d2-df\"",
       "file_path": "documentation/CoreNFC/nfciso15693tag/sendrequest(requestflags,commandcode,data,resulthandler).md",
       "hash": "86ebb50cff6e795c4d97fb8a8f4cd527983954b8e66bc086440fc72afbe021c9"
+    },
+    "https://developer.apple.com/documentation/corenfc/nfciso15693tag/sendrequestwithflag:commandcode:data:completionhandler:": {
+      "etag": "\"2556-65d55ee6945d2-df\"",
+      "file_path": "documentation/CoreNFC/nfciso15693tag/sendrequestwithflag_commandcode_data_completionhandler_.md",
+      "hash": "fd35d3ec0b0704522b4d2cfcf862293f0a1ff17c17662505a8fb3585e1aa3583"
     },
     "https://developer.apple.com/documentation/corenfc/nfciso15693tag/stayquiet(completionhandler:)": {
       "etag": "\"284c-65d55ee6945d2-df\"",
@@ -1105,6 +1170,11 @@
       "file_path": "documentation/CoreNFC/nfciso7816tag/proprietaryapplicationdatacoding.md",
       "hash": "a410b7aea9a21dac0d8f3f83bcd5785f3df1a2787dd07ac054d0e161a1d47918"
     },
+    "https://developer.apple.com/documentation/corenfc/nfciso7816tag/sendcommand(apdu:)": {
+      "etag": "\"1ba5-65d55ee65de22-df\"",
+      "file_path": "documentation/CoreNFC/nfciso7816tag/sendcommand(apdu).md",
+      "hash": "5f26318872f309236bbf93e7deb1e443e1f0777cd71e75ec9f97db65531c238d"
+    },
     "https://developer.apple.com/documentation/corenfc/nfciso7816tag/sendcommand(apdu:completionhandler:)": {
       "etag": "\"718e-65d55ee65de22-df\"",
       "file_path": "documentation/CoreNFC/nfciso7816tag/sendcommand(apdu,completionhandler).md",
@@ -1179,6 +1249,11 @@
       "etag": "\"23b2-65d55ee5fac67-df\"",
       "file_path": "documentation/CoreNFC/nfcmifaretag/sendmifarecommand(commandpacket,resulthandler).md",
       "hash": "c5b7f635f91dcb6b78a57ae23de66e804019a7c1307655c54ac4e98fc3867634"
+    },
+    "https://developer.apple.com/documentation/corenfc/nfcmifaretag/sendmifareiso7816command(_:)": {
+      "etag": "\"1bc5-65d55ee5fac67-df\"",
+      "file_path": "documentation/CoreNFC/nfcmifaretag/sendmifareiso7816command(_).md",
+      "hash": "0a31d477214b2086fe4c3e2f7a65db406cd4ae0f57ed2d832b79bcbb874fd617"
     },
     "https://developer.apple.com/documentation/corenfc/nfcmifaretag/sendmifareiso7816command(_:completionhandler:)": {
       "etag": "\"71cf-65d55ee5fac67-df\"",
@@ -1264,6 +1339,11 @@
       "etag": "\"58d6-65d55ee64121b-df\"",
       "file_path": "documentation/CoreNFC/nfcndefpayload/wellknowntypetextpayload(string,locale).md",
       "hash": "7889216c13d1f7e7ca5805590444cf4897fe33ceb29b288aa5a0f4b928cdb244"
+    },
+    "https://developer.apple.com/documentation/corenfc/nfcndefpayload/wellknowntypetextpayloadwithlocale:": {
+      "etag": "\"1957-65d55ee64121b-df\"",
+      "file_path": "documentation/CoreNFC/nfcndefpayload/wellknowntypetextpayloadwithlocale_.md",
+      "hash": "29c9642d8f513b805fbc11460013bb6418f22de634ea128f0bd8e33c897517ca"
     },
     "https://developer.apple.com/documentation/corenfc/nfcndefpayload/wellknowntypeuripayload()": {
       "etag": "\"1f38-65d55ee64121b-df\"",
@@ -1394,6 +1474,11 @@
       "etag": "\"3fa0-65d55ee67c1ff-df\"",
       "file_path": "documentation/CoreNFC/nfcpaymenttagreadersession/init(delegate,queue).md",
       "hash": "abf7ef96417a3d8c201668c3ea33b4abc6187632d29ea11883dcb61c4aec6603"
+    },
+    "https://developer.apple.com/documentation/corenfc/nfcpaymenttagreadersession/initwithdelegate:queue:": {
+      "etag": "\"2790-65d55ee67c1ff-df\"",
+      "file_path": "documentation/CoreNFC/nfcpaymenttagreadersession/initwithdelegate_queue_.md",
+      "hash": "d84fd5b973160ef2a9a567688328ba459f23cff2861d937a37ad08e592565059"
     },
     "https://developer.apple.com/documentation/corenfc/nfcpresentmentintentassertion": {
       "etag": "\"2665-65d55ee65de22-df\"",
@@ -1735,6 +1820,26 @@
       "file_path": "documentation/CoreNFC/nfcreadersession-swift.class/sessionqueue.md",
       "hash": "7ab996087fc325050bcbde156b2970693e37df6984d3b13f03782ef2624cf456"
     },
+    "https://developer.apple.com/documentation/corenfc/nfcreadersessiondelegate": {
+      "etag": "\"3ab5-65d55ee64121b-df\"",
+      "file_path": "documentation/CoreNFC/nfcreadersessiondelegate.md",
+      "hash": "6928bdbd355685d8c7d861e28c6d1f340173f057484d57c001a9ae23cbe1b130"
+    },
+    "https://developer.apple.com/documentation/corenfc/nfcreadersessiondelegate/readersession:diddetecttags:": {
+      "etag": "\"2106-65d55ee57553f-df\"",
+      "file_path": "documentation/CoreNFC/nfcreadersessiondelegate/readersession_diddetecttags_.md",
+      "hash": "1139195c24e2340a28dd4da6bb0addee7e307ca2ae872e5cb595e2c1c5aa48bc"
+    },
+    "https://developer.apple.com/documentation/corenfc/nfcreadersessiondelegate/readersession:didinvalidatewitherror:": {
+      "etag": "\"222b-65d55ee57553f-df\"",
+      "file_path": "documentation/CoreNFC/nfcreadersessiondelegate/readersession_didinvalidatewitherror_.md",
+      "hash": "18f8772a3d020418335c2f1a181bcc569f409ecfa4a6a77af470be316ab66ff1"
+    },
+    "https://developer.apple.com/documentation/corenfc/nfcreadersessiondelegate/readersessiondidbecomeactive:": {
+      "etag": "\"1c26-65d55ee57553f-df\"",
+      "file_path": "documentation/CoreNFC/nfcreadersessiondelegate/readersessiondidbecomeactive_.md",
+      "hash": "48900af8c80981677814d18deded85c9aa0d79fd44f3041045f35401c4b2202f"
+    },
     "https://developer.apple.com/documentation/corenfc/nfcreadersessionprotocol": {
       "etag": "\"5c52-65d55ee5de5e1-df\"",
       "file_path": "documentation/CoreNFC/nfcreadersessionprotocol.md",
@@ -1764,6 +1869,46 @@
       "etag": "\"2333-65d55ee57553f-df\"",
       "file_path": "documentation/CoreNFC/nfcreadersessionprotocol/isready.md",
       "hash": "edf7c41b9a4eacc89997cdeaf19a0ca1ebc0160ed5688abc0a7fba12d7e08829"
+    },
+    "https://developer.apple.com/documentation/corenfc/nfctag-c.protocol": {
+      "etag": "\"4936-65d55ee5de5e1-df\"",
+      "file_path": "documentation/CoreNFC/nfctag-c.protocol.md",
+      "hash": "32ee7591f76a83fffddd41ff3e70873d00d0890b3cd4f1a05db9eb4c82dde5f4"
+    },
+    "https://developer.apple.com/documentation/corenfc/nfctag-c.protocol/asnfcfelicatag": {
+      "etag": "\"1e37-65d55ee5c106f-df\"",
+      "file_path": "documentation/CoreNFC/nfctag-c.protocol/asnfcfelicatag.md",
+      "hash": "1a15f1043c4236e73236bd7d69e2b05e3e7115aca5ff0c60d26c33aa685e1ff4"
+    },
+    "https://developer.apple.com/documentation/corenfc/nfctag-c.protocol/asnfciso15693tag": {
+      "etag": "\"1e66-65d55ee5de5e1-df\"",
+      "file_path": "documentation/CoreNFC/nfctag-c.protocol/asnfciso15693tag.md",
+      "hash": "a8d9d3edb912b8722a88b543e20496073fe255b760b9fd217989f2d8f733be56"
+    },
+    "https://developer.apple.com/documentation/corenfc/nfctag-c.protocol/asnfciso7816tag": {
+      "etag": "\"1e4f-65d55ee5de5e1-df\"",
+      "file_path": "documentation/CoreNFC/nfctag-c.protocol/asnfciso7816tag.md",
+      "hash": "538b267fccdf10a86ccf262ef3da92771564206a720a27dc68cf90b9b6b1d761"
+    },
+    "https://developer.apple.com/documentation/corenfc/nfctag-c.protocol/asnfcmifaretag": {
+      "etag": "\"1e36-65d55ee5de5e1-df\"",
+      "file_path": "documentation/CoreNFC/nfctag-c.protocol/asnfcmifaretag.md",
+      "hash": "5f07ed8715372f171f9dc4488b2f36257624656deb3d33e77608e3693b7d6132"
+    },
+    "https://developer.apple.com/documentation/corenfc/nfctag-c.protocol/available": {
+      "etag": "\"16e9-65d55ee5de5e1-df\"",
+      "file_path": "documentation/CoreNFC/nfctag-c.protocol/available.md",
+      "hash": "91df37aa9713661a8d926efd0b0e39f54b67d6a65a774cd88454fc78470be157"
+    },
+    "https://developer.apple.com/documentation/corenfc/nfctag-c.protocol/session": {
+      "etag": "\"1057-65d55ee5c106f-df\"",
+      "file_path": "documentation/CoreNFC/nfctag-c.protocol/session.md",
+      "hash": "0088127dffec9ec971f35f6cac0dbca2d8257c8b86b1b5f0326db44ad933e8ed"
+    },
+    "https://developer.apple.com/documentation/corenfc/nfctag-c.protocol/type": {
+      "etag": "\"1a34-65d55ee5de5e1-df\"",
+      "file_path": "documentation/CoreNFC/nfctag-c.protocol/type.md",
+      "hash": "031eb3d84eb6619b215e04286c4ac5ccf4552d413ed681d30909da126e9ea2f1"
     },
     "https://developer.apple.com/documentation/corenfc/nfctag-swift.enum": {
       "etag": "\"3d24-65d55ee67c1ff-df\"",
@@ -1850,10 +1995,20 @@
       "file_path": "documentation/CoreNFC/nfctagreadersession/connect(to,completionhandler).md",
       "hash": "527d8ebbf3d3a10b269387982f8fb867b4efae38a8caa64158b47fbc019994f3"
     },
+    "https://developer.apple.com/documentation/corenfc/nfctagreadersession/connectedtag-1mnjc": {
+      "etag": "\"1487-65d55ee57553f-df\"",
+      "file_path": "documentation/CoreNFC/nfctagreadersession/connectedtag-1mnjc.md",
+      "hash": "322a47828f8571cddfb4419610d0be4f19f741993cba9b1aa34829090bb8170c"
+    },
     "https://developer.apple.com/documentation/corenfc/nfctagreadersession/connectedtag-3mlqu": {
       "etag": "\"1981-65d55ee57553f-df\"",
       "file_path": "documentation/CoreNFC/nfctagreadersession/connectedtag-3mlqu.md",
       "hash": "e0c297fe594a9350b7b5c41b4cb1b4a52fab857500eebc33cfdf4bdf941cd8b5"
+    },
+    "https://developer.apple.com/documentation/corenfc/nfctagreadersession/connecttotag:completionhandler:": {
+      "etag": "\"1f95-65d55ee57553f-df\"",
+      "file_path": "documentation/CoreNFC/nfctagreadersession/connecttotag_completionhandler_.md",
+      "hash": "f70dc85a75648ec16523880a54916e48fbd01d62c6b442eb1b0721e6adbc4da3"
     },
     "https://developer.apple.com/documentation/corenfc/nfctagreadersession/init(configuration:delegate:queue:)-8g6tm": {
       "etag": "\"336e-65d55ee57553f-df\"",
@@ -1869,6 +2024,11 @@
       "etag": "\"2adc-65d55ee57553f-df\"",
       "file_path": "documentation/CoreNFC/nfctagreadersession/init(pollingoption,delegate,queue).md",
       "hash": "e7f4d74dd999cfc2eda0711475ad221aa0741d684a13762740f56fae076a9415"
+    },
+    "https://developer.apple.com/documentation/corenfc/nfctagreadersession/initwithpollingoption:delegate:queue:": {
+      "etag": "\"23f1-65d55ee57553f-df\"",
+      "file_path": "documentation/CoreNFC/nfctagreadersession/initwithpollingoption_delegate_queue_.md",
+      "hash": "4e15de4f1454f56d8dc0d09789e953500c46630eddd5696b17015facf5753180"
     },
     "https://developer.apple.com/documentation/corenfc/nfctagreadersession/pollingoption": {
       "etag": "\"5c19-65d55ee57553f-df\"",
@@ -1915,6 +2075,31 @@
       "file_path": "documentation/CoreNFC/nfctagreadersession/restartpolling(with).md",
       "hash": "b104063701bc89c916f42ca40ce26a380089b90b533f28e85f3046d090fb438a"
     },
+    "https://developer.apple.com/documentation/corenfc/nfctagreadersessionconfiguration": {
+      "etag": "\"1c92-65d55ee65de22-df\"",
+      "file_path": "documentation/CoreNFC/nfctagreadersessionconfiguration.md",
+      "hash": "1787aa7767d2e7ed5f1f63461b8c562875883c9d99d0ce0fecab84118392ea83"
+    },
+    "https://developer.apple.com/documentation/corenfc/nfctagreadersessionconfiguration/felicasystemcodes": {
+      "etag": "\"f27-65d55ee65de22-df\"",
+      "file_path": "documentation/CoreNFC/nfctagreadersessionconfiguration/felicasystemcodes.md",
+      "hash": "fb12656728e5bcdaec504eb9442a27aaf7a8463f157359566ed2f14588ca5853"
+    },
+    "https://developer.apple.com/documentation/corenfc/nfctagreadersessionconfiguration/initwithpollingoption:iso7816selectidentifiers:felicasystemcodes:": {
+      "etag": "\"1d75-65d55ee65de22-df\"",
+      "file_path": "documentation/CoreNFC/nfctagreadersessionconfiguration/initwithpollingoption_iso7816selectidentifiers_felicasystemcodes_.md",
+      "hash": "c28c689e249a6ff7c8d3b960923beffa94f27c7b91c00aaddc704b776339147c"
+    },
+    "https://developer.apple.com/documentation/corenfc/nfctagreadersessionconfiguration/iso7816selectidentifiers": {
+      "etag": "\"fa3-65d55ee65de22-df\"",
+      "file_path": "documentation/CoreNFC/nfctagreadersessionconfiguration/iso7816selectidentifiers.md",
+      "hash": "427b70d29a355576f99d501b40434a2d670f1f0c34989e3c76f1c3c617ed01ea"
+    },
+    "https://developer.apple.com/documentation/corenfc/nfctagreadersessionconfiguration/polling": {
+      "etag": "\"13f2-65d55ee65de22-df\"",
+      "file_path": "documentation/CoreNFC/nfctagreadersessionconfiguration/polling.md",
+      "hash": "a9e86e6f36f48e60fe36a85ad2df75a2d950adf8855d29d3897e13f8d6882800"
+    },
     "https://developer.apple.com/documentation/corenfc/nfctagreadersessiondelegate-2joku": {
       "etag": "\"2594-65d55ee57553f-df\"",
       "file_path": "documentation/CoreNFC/nfctagreadersessiondelegate-2joku.md",
@@ -1935,10 +2120,55 @@
       "file_path": "documentation/CoreNFC/nfctagreadersessiondelegate-2joku/tagreadersessiondidbecomeactive(_).md",
       "hash": "0e3ae511b31bda67de44e7f724efd44d79815f78c4607f4fd0b035d3450910a0"
     },
+    "https://developer.apple.com/documentation/corenfc/nfctagreadersessiondelegate-5gxiw": {
+      "etag": "\"1f27-65d55ee67c1ff-df\"",
+      "file_path": "documentation/CoreNFC/nfctagreadersessiondelegate-5gxiw.md",
+      "hash": "01f8d911cfc70fd75e541920f324ed8be9376d2ed0f70a559512d01e7468b51d"
+    },
+    "https://developer.apple.com/documentation/corenfc/nfctagreadersessiondelegate-5gxiw/tagreadersession:diddetecttags:": {
+      "etag": "\"18c7-65d55ee64121b-df\"",
+      "file_path": "documentation/CoreNFC/nfctagreadersessiondelegate-5gxiw/tagreadersession_diddetecttags_.md",
+      "hash": "f8876fa46b96e673623fc0256ab5013edea52c57a4c419cb14f6e54c425ecd59"
+    },
+    "https://developer.apple.com/documentation/corenfc/nfctagreadersessiondelegate-5gxiw/tagreadersession:didinvalidatewitherror:": {
+      "etag": "\"1b28-65d55ee64121b-df\"",
+      "file_path": "documentation/CoreNFC/nfctagreadersessiondelegate-5gxiw/tagreadersession_didinvalidatewitherror_.md",
+      "hash": "c7c37696b1456fc319e4922fbce976abf575ad30e09e73f83c14e96ef21d2a65"
+    },
+    "https://developer.apple.com/documentation/corenfc/nfctagreadersessiondelegate-5gxiw/tagreadersessiondidbecomeactive:": {
+      "etag": "\"16b2-65d55ee64121b-df\"",
+      "file_path": "documentation/CoreNFC/nfctagreadersessiondelegate-5gxiw/tagreadersessiondidbecomeactive_.md",
+      "hash": "9f309440777c7669f1d91944ad900c58119bf5f08f613cff3b6ca9cf6335aefc"
+    },
     "https://developer.apple.com/documentation/corenfc/nfctagresponseunexpectedlengtherrorkey": {
       "etag": "\"2d42-65d55ee64121b-df\"",
       "file_path": "documentation/CoreNFC/nfctagresponseunexpectedlengtherrorkey.md",
       "hash": "33abcaae5503818b73cfd2f0170f689d295b6e98d4fde267f750668d60662793"
+    },
+    "https://developer.apple.com/documentation/corenfc/nfctagtype": {
+      "etag": "\"2093-65d55ee67c1ff-df\"",
+      "file_path": "documentation/CoreNFC/nfctagtype.md",
+      "hash": "49b84042604826c018f59041062f41149bf2ead57b11ec0713081cef373bf6cb"
+    },
+    "https://developer.apple.com/documentation/corenfc/nfctagtype/nfctagtypefelica": {
+      "etag": "\"12ce-65d55ee5de5e1-df\"",
+      "file_path": "documentation/CoreNFC/nfctagtype/nfctagtypefelica.md",
+      "hash": "93588bf8affd83283dc0e0d38571c3346f8f53daad67a187753e82920499cb91"
+    },
+    "https://developer.apple.com/documentation/corenfc/nfctagtype/nfctagtypeiso15693": {
+      "etag": "\"17c1-65d55ee5de5e1-df\"",
+      "file_path": "documentation/CoreNFC/nfctagtype/nfctagtypeiso15693.md",
+      "hash": "33df7e186b23f943dcdb39830bf62b24236cb22a09dcefd1dff933b88b5f489f"
+    },
+    "https://developer.apple.com/documentation/corenfc/nfctagtype/nfctagtypeiso7816compatible": {
+      "etag": "\"1312-65d55ee5de5e1-df\"",
+      "file_path": "documentation/CoreNFC/nfctagtype/nfctagtypeiso7816compatible.md",
+      "hash": "b3f83a7b081249178d4c67f09aebbfe1719e2df0ba75753dfc367fb924d66945"
+    },
+    "https://developer.apple.com/documentation/corenfc/nfctagtype/nfctagtypemifare": {
+      "etag": "\"12ce-65d55ee5de5e1-df\"",
+      "file_path": "documentation/CoreNFC/nfctagtype/nfctagtypemifare.md",
+      "hash": "51cd660830cde9bad3cee11dcfe6a7b3155489ed29e634a274b884d76510cb9c"
     },
     "https://developer.apple.com/documentation/corenfc/nfctypenameformat": {
       "etag": "\"5997-65d55ee64121b-df\"",
@@ -2815,6 +3045,21 @@
       "file_path": "documentation/CoreNFC/nfciso15693multipleblocksecuritystatus/blocksecuritystatus.md",
       "hash": "d8d7a843d92a93e7cf620ad3b13b983b3b0ac5e3ee6890fb405e4df277e7b742"
     },
+    "https://developer.apple.com/tutorials/data/documentation/corenfc/nfciso15693readersession.json": {
+      "etag": "\"19ad-65d55ee64121b-df\"",
+      "file_path": "documentation/CoreNFC/nfciso15693readersession.md",
+      "hash": "fee02ee2b49b2dd3378b6c642fc76854367665b027405631138490c633020ae6"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/corenfc/nfciso15693readersession/initwithdelegate:queue:.json": {
+      "etag": "\"1693-65d55ee65de22-df\"",
+      "file_path": "documentation/CoreNFC/nfciso15693readersession/initwithdelegate_queue_.md",
+      "hash": "4a419256e50b3b0cdccc4a53de5d39c04fe61fe6bce48b20bb4e9ad7380fcbf7"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/corenfc/nfciso15693readersession/restartpolling.json": {
+      "etag": "\"fde-65d55ee65de22-df\"",
+      "file_path": "documentation/CoreNFC/nfciso15693readersession/restartpolling.md",
+      "hash": "02d2aa7f20bbf737091bc797a28f33b4dcfdb79ad74d81e000e0583435d837ee"
+    },
     "https://developer.apple.com/tutorials/data/documentation/corenfc/nfciso15693readmultipleblocksconfiguration.json": {
       "etag": "\"4c98-65d55ee67c1ff-df\"",
       "file_path": "documentation/CoreNFC/nfciso15693readmultipleblocksconfiguration.md",
@@ -3010,6 +3255,11 @@
       "file_path": "documentation/CoreNFC/nfciso15693tag/authenticate(requestflags,cryptosuiteidentifier,message,resulthandler).md",
       "hash": "a63ce5d49451b5eafb513156f0f8d1ce496dccfafbeab1731c23c1f143b11541"
     },
+    "https://developer.apple.com/tutorials/data/documentation/corenfc/nfciso15693tag/authenticatewithrequestflags:cryptosuiteidentifier:message:completionhandler:.json": {
+      "etag": "\"2aaa-65d55ee67c1ff-df\"",
+      "file_path": "documentation/CoreNFC/nfciso15693tag/authenticatewithrequestflags_cryptosuiteidentifier_message_completionhandler_.md",
+      "hash": "f3cac69a535bc945384edd6a45dc7513b0c1fb7b07af383138e0ae13a2fcc4e3"
+    },
     "https://developer.apple.com/tutorials/data/documentation/corenfc/nfciso15693tag/challenge(requestflags:cryptosuiteidentifier:message:).json": {
       "etag": "\"2183-65d55ee6945d2-df\"",
       "file_path": "documentation/CoreNFC/nfciso15693tag/challenge(requestflags,cryptosuiteidentifier,message).md",
@@ -3019,6 +3269,11 @@
       "etag": "\"2a39-65d55ee6945d2-df\"",
       "file_path": "documentation/CoreNFC/nfciso15693tag/challenge(requestflags,cryptosuiteidentifier,message,completionhandler).md",
       "hash": "482542c5cf126644aa35d76d4a15ab4efae9754fe464f49fccb89aae66cf15d9"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/corenfc/nfciso15693tag/challengewithrequestflags:cryptosuiteidentifier:message:completionhandler:.json": {
+      "etag": "\"2429-65d55ee67c1ff-df\"",
+      "file_path": "documentation/CoreNFC/nfciso15693tag/challengewithrequestflags_cryptosuiteidentifier_message_completionhandler_.md",
+      "hash": "626aed674b88b73e7eaaef4a29e101588cb495759effb636794c9d6fd5512393"
     },
     "https://developer.apple.com/tutorials/data/documentation/corenfc/nfciso15693tag/customcommand(requestflags:customcommandcode:customrequestparameters:completionhandler:).json": {
       "etag": "\"52c9-65d55ee6945d2-df\"",
@@ -3040,6 +3295,11 @@
       "file_path": "documentation/CoreNFC/nfciso15693tag/extendedfastreadmultipleblocks(requestflags,blockrange,resulthandler).md",
       "hash": "0fc31d7741ce2e89e1ea37430a3d5da179532b2e0e5f980787277f5749b6a67e"
     },
+    "https://developer.apple.com/tutorials/data/documentation/corenfc/nfciso15693tag/extendedfastreadmultipleblockswithrequestflag:blockrange:completionhandler:.json": {
+      "etag": "\"2092-65d55ee6945d2-df\"",
+      "file_path": "documentation/CoreNFC/nfciso15693tag/extendedfastreadmultipleblockswithrequestflag_blockrange_completionhandler_.md",
+      "hash": "855981c685f375beb0866b1977725bbc83d598c76d31edf0051ce55b085d5e4d"
+    },
     "https://developer.apple.com/tutorials/data/documentation/corenfc/nfciso15693tag/extendedgetmultipleblocksecuritystatus(requestflags:blockrange:).json": {
       "etag": "\"2045-65d55ee67c1ff-df\"",
       "file_path": "documentation/CoreNFC/nfciso15693tag/extendedgetmultipleblocksecuritystatus(requestflags,blockrange).md",
@@ -3049,6 +3309,11 @@
       "etag": "\"2ca6-65d55ee6945d2-df\"",
       "file_path": "documentation/CoreNFC/nfciso15693tag/extendedgetmultipleblocksecuritystatus(requestflags,blockrange,resulthandler).md",
       "hash": "55dd5ffcddfa3f20ce8c726a679b9332f6575a2c0a4c89bd9c963dd3d2b261b7"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/corenfc/nfciso15693tag/extendedgetmultipleblocksecuritystatuswithrequestflag:blockrange:completionhandler:.json": {
+      "etag": "\"20f8-65d55ee6945d2-df\"",
+      "file_path": "documentation/CoreNFC/nfciso15693tag/extendedgetmultipleblocksecuritystatuswithrequestflag_blockrange_completionhandler_.md",
+      "hash": "747091c42cab4c9bad18b4ebaee722b1d0be4c6a6826f2d775abac082760bde7"
     },
     "https://developer.apple.com/tutorials/data/documentation/corenfc/nfciso15693tag/extendedlockblock(requestflags:blocknumber:completionhandler:).json": {
       "etag": "\"5ee1-65d55ee6945d2-df\"",
@@ -3080,6 +3345,11 @@
       "file_path": "documentation/CoreNFC/nfciso15693tag/extendedwritemultipleblocks(requestflags,blockrange,datablocks,completionhandler).md",
       "hash": "f177c76dcb2d552c0ebeb6396050f9dfea50c48a88d02754f0f48fb8dc6dcb4b"
     },
+    "https://developer.apple.com/tutorials/data/documentation/corenfc/nfciso15693tag/extendedwritemultipleblockswithrequestflags:blockrange:datablocks:completionhandler:.json": {
+      "etag": "\"213a-65d55ee6945d2-df\"",
+      "file_path": "documentation/CoreNFC/nfciso15693tag/extendedwritemultipleblockswithrequestflags_blockrange_datablocks_completionhandler_.md",
+      "hash": "f4c86d44bd5dccf0cca41ed8bfc0e4c2597efec9bf5b2b300ac83e908dbd596a"
+    },
     "https://developer.apple.com/tutorials/data/documentation/corenfc/nfciso15693tag/extendedwritesingleblock(requestflags:blocknumber:datablock:completionhandler:).json": {
       "etag": "\"67ea-65d55ee67c1ff-df\"",
       "file_path": "documentation/CoreNFC/nfciso15693tag/extendedwritesingleblock(requestflags,blocknumber,datablock,completionhandler).md",
@@ -3095,6 +3365,11 @@
       "file_path": "documentation/CoreNFC/nfciso15693tag/fastreadmultipleblocks(requestflags,blockrange,resulthandler).md",
       "hash": "7d74a97bed6d4f82a527c71b6d7639029fcb9f2cc40046ef1c610b56ad3a7858"
     },
+    "https://developer.apple.com/tutorials/data/documentation/corenfc/nfciso15693tag/fastreadmultipleblockswithrequestflag:blockrange:completionhandler:.json": {
+      "etag": "\"2032-65d55ee6945d2-df\"",
+      "file_path": "documentation/CoreNFC/nfciso15693tag/fastreadmultipleblockswithrequestflag_blockrange_completionhandler_.md",
+      "hash": "2cd43fb3a7f9696a5a07d08a99f1951246ac7b0576cf7c155be3bf24ad4e7931"
+    },
     "https://developer.apple.com/tutorials/data/documentation/corenfc/nfciso15693tag/getmultipleblocksecuritystatus(requestflags:blockrange:completionhandler:).json": {
       "etag": "\"5780-65d55ee67c1ff-df\"",
       "file_path": "documentation/CoreNFC/nfciso15693tag/getmultipleblocksecuritystatus(requestflags,blockrange,completionhandler).md",
@@ -3109,6 +3384,11 @@
       "etag": "\"289f-65d55ee6945d2-df\"",
       "file_path": "documentation/CoreNFC/nfciso15693tag/getsysteminfo(requestflags,resulthandler).md",
       "hash": "e574ca079ceef8d11461e976fe5f1c9607d3b7140b584bf40443d99d530de7bb"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/corenfc/nfciso15693tag/getsysteminfoanduidwithrequestflag:completionhandler:.json": {
+      "etag": "\"26c7-65d55ee67c1ff-df\"",
+      "file_path": "documentation/CoreNFC/nfciso15693tag/getsysteminfoanduidwithrequestflag_completionhandler_.md",
+      "hash": "f628712d24bf9f108f8274eb9f2fe5c7250a349e2bae8ca1961ae4cfb2ae0f86"
     },
     "https://developer.apple.com/tutorials/data/documentation/corenfc/nfciso15693tag/icmanufacturercode.json": {
       "etag": "\"29d5-65d55ee6945d2-df\"",
@@ -3134,6 +3414,11 @@
       "etag": "\"3568-65d55ee6945d2-df\"",
       "file_path": "documentation/CoreNFC/nfciso15693tag/keyupdate(requestflags,keyidentifier,message,resulthandler).md",
       "hash": "013045ca385b3073bffc1a70d87fcb71bdb63ad1784068c93c8abe8a909f34e4"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/corenfc/nfciso15693tag/keyupdatewithrequestflags:keyidentifier:message:completionhandler:.json": {
+      "etag": "\"2a1e-65d55ee67c1ff-df\"",
+      "file_path": "documentation/CoreNFC/nfciso15693tag/keyupdatewithrequestflags_keyidentifier_message_completionhandler_.md",
+      "hash": "2f93527271f2a5e8c46b9b2f454659cc93cf0dcc07947adae7cc104fa9ebaf1f"
     },
     "https://developer.apple.com/tutorials/data/documentation/corenfc/nfciso15693tag/lockafi(requestflags:completionhandler:).json": {
       "etag": "\"3d17-65d55ee6945d2-df\"",
@@ -3164,6 +3449,11 @@
       "etag": "\"2e3c-65d55ee67c1ff-df\"",
       "file_path": "documentation/CoreNFC/nfciso15693tag/readbuffer(requestflags,resulthandler).md",
       "hash": "004d00ec12a14392b85988fdbfb54dcd7c48de555d558edd1ea290e66551d269"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/corenfc/nfciso15693tag/readbufferwithrequestflags:completionhandler:.json": {
+      "etag": "\"23ec-65d55ee67c1ff-df\"",
+      "file_path": "documentation/CoreNFC/nfciso15693tag/readbufferwithrequestflags_completionhandler_.md",
+      "hash": "272655b7c9ac079fe1946cee144cc5565d330e679f42edcbaec9aa865fa833f8"
     },
     "https://developer.apple.com/tutorials/data/documentation/corenfc/nfciso15693tag/readmultipleblock(readconfiguration:completionhandler:).json": {
       "etag": "\"41c8-65d55ee6945d2-df\"",
@@ -3214,6 +3504,11 @@
       "etag": "\"309a-65d55ee6945d2-df\"",
       "file_path": "documentation/CoreNFC/nfciso15693tag/sendrequest(requestflags,commandcode,data,resulthandler).md",
       "hash": "86ebb50cff6e795c4d97fb8a8f4cd527983954b8e66bc086440fc72afbe021c9"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/corenfc/nfciso15693tag/sendrequestwithflag:commandcode:data:completionhandler:.json": {
+      "etag": "\"2556-65d55ee6945d2-df\"",
+      "file_path": "documentation/CoreNFC/nfciso15693tag/sendrequestwithflag_commandcode_data_completionhandler_.md",
+      "hash": "fd35d3ec0b0704522b4d2cfcf862293f0a1ff17c17662505a8fb3585e1aa3583"
     },
     "https://developer.apple.com/tutorials/data/documentation/corenfc/nfciso15693tag/stayquiet(completionhandler:).json": {
       "etag": "\"284c-65d55ee6945d2-df\"",
@@ -3345,6 +3640,11 @@
       "file_path": "documentation/CoreNFC/nfciso7816tag/proprietaryapplicationdatacoding.md",
       "hash": "a410b7aea9a21dac0d8f3f83bcd5785f3df1a2787dd07ac054d0e161a1d47918"
     },
+    "https://developer.apple.com/tutorials/data/documentation/corenfc/nfciso7816tag/sendcommand(apdu:).json": {
+      "etag": "\"1ba5-65d55ee65de22-df\"",
+      "file_path": "documentation/CoreNFC/nfciso7816tag/sendcommand(apdu).md",
+      "hash": "5f26318872f309236bbf93e7deb1e443e1f0777cd71e75ec9f97db65531c238d"
+    },
     "https://developer.apple.com/tutorials/data/documentation/corenfc/nfciso7816tag/sendcommand(apdu:completionhandler:).json": {
       "etag": "\"718e-65d55ee65de22-df\"",
       "file_path": "documentation/CoreNFC/nfciso7816tag/sendcommand(apdu,completionhandler).md",
@@ -3419,6 +3719,11 @@
       "etag": "\"23b2-65d55ee5fac67-df\"",
       "file_path": "documentation/CoreNFC/nfcmifaretag/sendmifarecommand(commandpacket,resulthandler).md",
       "hash": "c5b7f635f91dcb6b78a57ae23de66e804019a7c1307655c54ac4e98fc3867634"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/corenfc/nfcmifaretag/sendmifareiso7816command(_:).json": {
+      "etag": "\"1bc5-65d55ee5fac67-df\"",
+      "file_path": "documentation/CoreNFC/nfcmifaretag/sendmifareiso7816command(_).md",
+      "hash": "0a31d477214b2086fe4c3e2f7a65db406cd4ae0f57ed2d832b79bcbb874fd617"
     },
     "https://developer.apple.com/tutorials/data/documentation/corenfc/nfcmifaretag/sendmifareiso7816command(_:completionhandler:).json": {
       "etag": "\"71cf-65d55ee5fac67-df\"",
@@ -3504,6 +3809,11 @@
       "etag": "\"58d6-65d55ee64121b-df\"",
       "file_path": "documentation/CoreNFC/nfcndefpayload/wellknowntypetextpayload(string,locale).md",
       "hash": "7889216c13d1f7e7ca5805590444cf4897fe33ceb29b288aa5a0f4b928cdb244"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/corenfc/nfcndefpayload/wellknowntypetextpayloadwithlocale:.json": {
+      "etag": "\"1957-65d55ee64121b-df\"",
+      "file_path": "documentation/CoreNFC/nfcndefpayload/wellknowntypetextpayloadwithlocale_.md",
+      "hash": "29c9642d8f513b805fbc11460013bb6418f22de634ea128f0bd8e33c897517ca"
     },
     "https://developer.apple.com/tutorials/data/documentation/corenfc/nfcndefpayload/wellknowntypeuripayload().json": {
       "etag": "\"1f38-65d55ee64121b-df\"",
@@ -3634,6 +3944,11 @@
       "etag": "\"3fa0-65d55ee67c1ff-df\"",
       "file_path": "documentation/CoreNFC/nfcpaymenttagreadersession/init(delegate,queue).md",
       "hash": "abf7ef96417a3d8c201668c3ea33b4abc6187632d29ea11883dcb61c4aec6603"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/corenfc/nfcpaymenttagreadersession/initwithdelegate:queue:.json": {
+      "etag": "\"2790-65d55ee67c1ff-df\"",
+      "file_path": "documentation/CoreNFC/nfcpaymenttagreadersession/initwithdelegate_queue_.md",
+      "hash": "d84fd5b973160ef2a9a567688328ba459f23cff2861d937a37ad08e592565059"
     },
     "https://developer.apple.com/tutorials/data/documentation/corenfc/nfcpresentmentintentassertion.json": {
       "etag": "\"2665-65d55ee65de22-df\"",
@@ -3975,6 +4290,26 @@
       "file_path": "documentation/CoreNFC/nfcreadersession-swift.class/sessionqueue.md",
       "hash": "7ab996087fc325050bcbde156b2970693e37df6984d3b13f03782ef2624cf456"
     },
+    "https://developer.apple.com/tutorials/data/documentation/corenfc/nfcreadersessiondelegate.json": {
+      "etag": "\"3ab5-65d55ee64121b-df\"",
+      "file_path": "documentation/CoreNFC/nfcreadersessiondelegate.md",
+      "hash": "6928bdbd355685d8c7d861e28c6d1f340173f057484d57c001a9ae23cbe1b130"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/corenfc/nfcreadersessiondelegate/readersession:diddetecttags:.json": {
+      "etag": "\"2106-65d55ee57553f-df\"",
+      "file_path": "documentation/CoreNFC/nfcreadersessiondelegate/readersession_diddetecttags_.md",
+      "hash": "1139195c24e2340a28dd4da6bb0addee7e307ca2ae872e5cb595e2c1c5aa48bc"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/corenfc/nfcreadersessiondelegate/readersession:didinvalidatewitherror:.json": {
+      "etag": "\"222b-65d55ee57553f-df\"",
+      "file_path": "documentation/CoreNFC/nfcreadersessiondelegate/readersession_didinvalidatewitherror_.md",
+      "hash": "18f8772a3d020418335c2f1a181bcc569f409ecfa4a6a77af470be316ab66ff1"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/corenfc/nfcreadersessiondelegate/readersessiondidbecomeactive:.json": {
+      "etag": "\"1c26-65d55ee57553f-df\"",
+      "file_path": "documentation/CoreNFC/nfcreadersessiondelegate/readersessiondidbecomeactive_.md",
+      "hash": "48900af8c80981677814d18deded85c9aa0d79fd44f3041045f35401c4b2202f"
+    },
     "https://developer.apple.com/tutorials/data/documentation/corenfc/nfcreadersessionprotocol.json": {
       "etag": "\"5c52-65d55ee5de5e1-df\"",
       "file_path": "documentation/CoreNFC/nfcreadersessionprotocol.md",
@@ -4004,6 +4339,46 @@
       "etag": "\"2333-65d55ee57553f-df\"",
       "file_path": "documentation/CoreNFC/nfcreadersessionprotocol/isready.md",
       "hash": "edf7c41b9a4eacc89997cdeaf19a0ca1ebc0160ed5688abc0a7fba12d7e08829"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/corenfc/nfctag-c.protocol.json": {
+      "etag": "\"4936-65d55ee5de5e1-df\"",
+      "file_path": "documentation/CoreNFC/nfctag-c.protocol.md",
+      "hash": "32ee7591f76a83fffddd41ff3e70873d00d0890b3cd4f1a05db9eb4c82dde5f4"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/corenfc/nfctag-c.protocol/asnfcfelicatag.json": {
+      "etag": "\"1e37-65d55ee5c106f-df\"",
+      "file_path": "documentation/CoreNFC/nfctag-c.protocol/asnfcfelicatag.md",
+      "hash": "1a15f1043c4236e73236bd7d69e2b05e3e7115aca5ff0c60d26c33aa685e1ff4"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/corenfc/nfctag-c.protocol/asnfciso15693tag.json": {
+      "etag": "\"1e66-65d55ee5de5e1-df\"",
+      "file_path": "documentation/CoreNFC/nfctag-c.protocol/asnfciso15693tag.md",
+      "hash": "a8d9d3edb912b8722a88b543e20496073fe255b760b9fd217989f2d8f733be56"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/corenfc/nfctag-c.protocol/asnfciso7816tag.json": {
+      "etag": "\"1e4f-65d55ee5de5e1-df\"",
+      "file_path": "documentation/CoreNFC/nfctag-c.protocol/asnfciso7816tag.md",
+      "hash": "538b267fccdf10a86ccf262ef3da92771564206a720a27dc68cf90b9b6b1d761"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/corenfc/nfctag-c.protocol/asnfcmifaretag.json": {
+      "etag": "\"1e36-65d55ee5de5e1-df\"",
+      "file_path": "documentation/CoreNFC/nfctag-c.protocol/asnfcmifaretag.md",
+      "hash": "5f07ed8715372f171f9dc4488b2f36257624656deb3d33e77608e3693b7d6132"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/corenfc/nfctag-c.protocol/available.json": {
+      "etag": "\"16e9-65d55ee5de5e1-df\"",
+      "file_path": "documentation/CoreNFC/nfctag-c.protocol/available.md",
+      "hash": "91df37aa9713661a8d926efd0b0e39f54b67d6a65a774cd88454fc78470be157"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/corenfc/nfctag-c.protocol/session.json": {
+      "etag": "\"1057-65d55ee5c106f-df\"",
+      "file_path": "documentation/CoreNFC/nfctag-c.protocol/session.md",
+      "hash": "0088127dffec9ec971f35f6cac0dbca2d8257c8b86b1b5f0326db44ad933e8ed"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/corenfc/nfctag-c.protocol/type.json": {
+      "etag": "\"1a34-65d55ee5de5e1-df\"",
+      "file_path": "documentation/CoreNFC/nfctag-c.protocol/type.md",
+      "hash": "031eb3d84eb6619b215e04286c4ac5ccf4552d413ed681d30909da126e9ea2f1"
     },
     "https://developer.apple.com/tutorials/data/documentation/corenfc/nfctag-swift.enum.json": {
       "etag": "\"3d24-65d55ee67c1ff-df\"",
@@ -4090,10 +4465,20 @@
       "file_path": "documentation/CoreNFC/nfctagreadersession/connect(to,completionhandler).md",
       "hash": "527d8ebbf3d3a10b269387982f8fb867b4efae38a8caa64158b47fbc019994f3"
     },
+    "https://developer.apple.com/tutorials/data/documentation/corenfc/nfctagreadersession/connectedtag-1mnjc.json": {
+      "etag": "\"1487-65d55ee57553f-df\"",
+      "file_path": "documentation/CoreNFC/nfctagreadersession/connectedtag-1mnjc.md",
+      "hash": "322a47828f8571cddfb4419610d0be4f19f741993cba9b1aa34829090bb8170c"
+    },
     "https://developer.apple.com/tutorials/data/documentation/corenfc/nfctagreadersession/connectedtag-3mlqu.json": {
       "etag": "\"1981-65d55ee57553f-df\"",
       "file_path": "documentation/CoreNFC/nfctagreadersession/connectedtag-3mlqu.md",
       "hash": "e0c297fe594a9350b7b5c41b4cb1b4a52fab857500eebc33cfdf4bdf941cd8b5"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/corenfc/nfctagreadersession/connecttotag:completionhandler:.json": {
+      "etag": "\"1f95-65d55ee57553f-df\"",
+      "file_path": "documentation/CoreNFC/nfctagreadersession/connecttotag_completionhandler_.md",
+      "hash": "f70dc85a75648ec16523880a54916e48fbd01d62c6b442eb1b0721e6adbc4da3"
     },
     "https://developer.apple.com/tutorials/data/documentation/corenfc/nfctagreadersession/init(configuration:delegate:queue:)-8g6tm.json": {
       "etag": "\"336e-65d55ee57553f-df\"",
@@ -4109,6 +4494,11 @@
       "etag": "\"2adc-65d55ee57553f-df\"",
       "file_path": "documentation/CoreNFC/nfctagreadersession/init(pollingoption,delegate,queue).md",
       "hash": "e7f4d74dd999cfc2eda0711475ad221aa0741d684a13762740f56fae076a9415"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/corenfc/nfctagreadersession/initwithpollingoption:delegate:queue:.json": {
+      "etag": "\"23f1-65d55ee57553f-df\"",
+      "file_path": "documentation/CoreNFC/nfctagreadersession/initwithpollingoption_delegate_queue_.md",
+      "hash": "4e15de4f1454f56d8dc0d09789e953500c46630eddd5696b17015facf5753180"
     },
     "https://developer.apple.com/tutorials/data/documentation/corenfc/nfctagreadersession/pollingoption.json": {
       "etag": "\"5c19-65d55ee57553f-df\"",
@@ -4155,6 +4545,31 @@
       "file_path": "documentation/CoreNFC/nfctagreadersession/restartpolling(with).md",
       "hash": "b104063701bc89c916f42ca40ce26a380089b90b533f28e85f3046d090fb438a"
     },
+    "https://developer.apple.com/tutorials/data/documentation/corenfc/nfctagreadersessionconfiguration.json": {
+      "etag": "\"1c92-65d55ee65de22-df\"",
+      "file_path": "documentation/CoreNFC/nfctagreadersessionconfiguration.md",
+      "hash": "1787aa7767d2e7ed5f1f63461b8c562875883c9d99d0ce0fecab84118392ea83"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/corenfc/nfctagreadersessionconfiguration/felicasystemcodes.json": {
+      "etag": "\"f27-65d55ee65de22-df\"",
+      "file_path": "documentation/CoreNFC/nfctagreadersessionconfiguration/felicasystemcodes.md",
+      "hash": "fb12656728e5bcdaec504eb9442a27aaf7a8463f157359566ed2f14588ca5853"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/corenfc/nfctagreadersessionconfiguration/initwithpollingoption:iso7816selectidentifiers:felicasystemcodes:.json": {
+      "etag": "\"1d75-65d55ee65de22-df\"",
+      "file_path": "documentation/CoreNFC/nfctagreadersessionconfiguration/initwithpollingoption_iso7816selectidentifiers_felicasystemcodes_.md",
+      "hash": "c28c689e249a6ff7c8d3b960923beffa94f27c7b91c00aaddc704b776339147c"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/corenfc/nfctagreadersessionconfiguration/iso7816selectidentifiers.json": {
+      "etag": "\"fa3-65d55ee65de22-df\"",
+      "file_path": "documentation/CoreNFC/nfctagreadersessionconfiguration/iso7816selectidentifiers.md",
+      "hash": "427b70d29a355576f99d501b40434a2d670f1f0c34989e3c76f1c3c617ed01ea"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/corenfc/nfctagreadersessionconfiguration/polling.json": {
+      "etag": "\"13f2-65d55ee65de22-df\"",
+      "file_path": "documentation/CoreNFC/nfctagreadersessionconfiguration/polling.md",
+      "hash": "a9e86e6f36f48e60fe36a85ad2df75a2d950adf8855d29d3897e13f8d6882800"
+    },
     "https://developer.apple.com/tutorials/data/documentation/corenfc/nfctagreadersessiondelegate-2joku.json": {
       "etag": "\"2594-65d55ee57553f-df\"",
       "file_path": "documentation/CoreNFC/nfctagreadersessiondelegate-2joku.md",
@@ -4175,10 +4590,55 @@
       "file_path": "documentation/CoreNFC/nfctagreadersessiondelegate-2joku/tagreadersessiondidbecomeactive(_).md",
       "hash": "0e3ae511b31bda67de44e7f724efd44d79815f78c4607f4fd0b035d3450910a0"
     },
+    "https://developer.apple.com/tutorials/data/documentation/corenfc/nfctagreadersessiondelegate-5gxiw.json": {
+      "etag": "\"1f27-65d55ee67c1ff-df\"",
+      "file_path": "documentation/CoreNFC/nfctagreadersessiondelegate-5gxiw.md",
+      "hash": "01f8d911cfc70fd75e541920f324ed8be9376d2ed0f70a559512d01e7468b51d"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/corenfc/nfctagreadersessiondelegate-5gxiw/tagreadersession:diddetecttags:.json": {
+      "etag": "\"18c7-65d55ee64121b-df\"",
+      "file_path": "documentation/CoreNFC/nfctagreadersessiondelegate-5gxiw/tagreadersession_diddetecttags_.md",
+      "hash": "f8876fa46b96e673623fc0256ab5013edea52c57a4c419cb14f6e54c425ecd59"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/corenfc/nfctagreadersessiondelegate-5gxiw/tagreadersession:didinvalidatewitherror:.json": {
+      "etag": "\"1b28-65d55ee64121b-df\"",
+      "file_path": "documentation/CoreNFC/nfctagreadersessiondelegate-5gxiw/tagreadersession_didinvalidatewitherror_.md",
+      "hash": "c7c37696b1456fc319e4922fbce976abf575ad30e09e73f83c14e96ef21d2a65"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/corenfc/nfctagreadersessiondelegate-5gxiw/tagreadersessiondidbecomeactive:.json": {
+      "etag": "\"16b2-65d55ee64121b-df\"",
+      "file_path": "documentation/CoreNFC/nfctagreadersessiondelegate-5gxiw/tagreadersessiondidbecomeactive_.md",
+      "hash": "9f309440777c7669f1d91944ad900c58119bf5f08f613cff3b6ca9cf6335aefc"
+    },
     "https://developer.apple.com/tutorials/data/documentation/corenfc/nfctagresponseunexpectedlengtherrorkey.json": {
       "etag": "\"2d42-65d55ee64121b-df\"",
       "file_path": "documentation/CoreNFC/nfctagresponseunexpectedlengtherrorkey.md",
       "hash": "33abcaae5503818b73cfd2f0170f689d295b6e98d4fde267f750668d60662793"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/corenfc/nfctagtype.json": {
+      "etag": "\"2093-65d55ee67c1ff-df\"",
+      "file_path": "documentation/CoreNFC/nfctagtype.md",
+      "hash": "49b84042604826c018f59041062f41149bf2ead57b11ec0713081cef373bf6cb"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/corenfc/nfctagtype/nfctagtypefelica.json": {
+      "etag": "\"12ce-65d55ee5de5e1-df\"",
+      "file_path": "documentation/CoreNFC/nfctagtype/nfctagtypefelica.md",
+      "hash": "93588bf8affd83283dc0e0d38571c3346f8f53daad67a187753e82920499cb91"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/corenfc/nfctagtype/nfctagtypeiso15693.json": {
+      "etag": "\"17c1-65d55ee5de5e1-df\"",
+      "file_path": "documentation/CoreNFC/nfctagtype/nfctagtypeiso15693.md",
+      "hash": "33df7e186b23f943dcdb39830bf62b24236cb22a09dcefd1dff933b88b5f489f"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/corenfc/nfctagtype/nfctagtypeiso7816compatible.json": {
+      "etag": "\"1312-65d55ee5de5e1-df\"",
+      "file_path": "documentation/CoreNFC/nfctagtype/nfctagtypeiso7816compatible.md",
+      "hash": "b3f83a7b081249178d4c67f09aebbfe1719e2df0ba75753dfc367fb924d66945"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/corenfc/nfctagtype/nfctagtypemifare.json": {
+      "etag": "\"12ce-65d55ee5de5e1-df\"",
+      "file_path": "documentation/CoreNFC/nfctagtype/nfctagtypemifare.md",
+      "hash": "51cd660830cde9bad3cee11dcfe6a7b3155489ed29e634a274b884d76510cb9c"
     },
     "https://developer.apple.com/tutorials/data/documentation/corenfc/nfctypenameformat.json": {
       "etag": "\"5997-65d55ee64121b-df\"",
@@ -4483,8 +4943,8 @@
   },
   "metadata": {
     "render": {
-      "version": 1
+      "version": 2
     },
-    "total_pages": 896
+    "total_pages": 988
   }
 }

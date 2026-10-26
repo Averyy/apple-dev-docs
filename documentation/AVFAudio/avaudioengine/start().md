@@ -49,6 +49,8 @@ This method calls the [`prepare()`](./prepare%28%29.md) method if you don’t ca
 - [func withMusicSequence<R, E>((borrowing MusicSequence?) throws(E) -> R) throws(E) -> R](./withmusicsequence%28_%29.md)
   Provides scoped access to the AVAudioEngine’s MusicSequence
 - [var musicSequence: MusicSequence?](./musicsequence-1z47z.md)
+- [musicSequence](./musicsequence-3u74x.md)
+  The music sequence instance that you attach to the audio engine, if any.
 
 
 ---

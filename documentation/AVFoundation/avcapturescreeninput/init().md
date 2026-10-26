@@ -28,6 +28,8 @@ Using this initializer is equivalent to calling [`init(displayID:)`](./init%28di
 ### Initializing a capture screen input
 - [init?(displayID: CGDirectDisplayID)](./init%28displayid%29.md)
   Initializes a capture screen input that provides media data from the specified display.
+- [+ new](./new.md)
+  Creates a capture screen input that provides media data from the main screen.
 
 
 ---

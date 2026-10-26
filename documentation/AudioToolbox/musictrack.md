@@ -63,6 +63,7 @@ A music track is a component of a music sequence (of type [`MusicSequence`](./mu
   Adds an event of type `MIDINoteMessage` to a music track.
 - [func MusicTrackNewMIDIRawDataEvent(MusicTrack, MusicTimeStamp, UnsafePointer<MIDIRawData>) -> OSStatus](./musictracknewmidirawdataevent%28_,_,_%29.md)
   Adds an event of type `MIDIRawData` to a music track.
+- [NewMusicTrackFrom](./newmusictrackfrom.md)
 
 
 ---

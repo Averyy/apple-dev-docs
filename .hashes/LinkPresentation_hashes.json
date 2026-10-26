@@ -110,6 +110,26 @@
       "file_path": "documentation/LinkPresentation/linkmetadata/valuetype.md",
       "hash": "7e2089e0e3ea5f7e3136ecc2bfd7a09d9955c9dc14f0595816fef77e405cddef"
     },
+    "https://developer.apple.com/documentation/linkpresentation/lp_extern": {
+      "etag": "\"1094-65d560cb308cd-df\"",
+      "file_path": "documentation/LinkPresentation/lp_extern.md",
+      "hash": "8de48bf0284bd574497a0e724ec8925c51f4570c686fcb4665cdff75f80698c2"
+    },
+    "https://developer.apple.com/documentation/linkpresentation/lp_extern_c": {
+      "etag": "\"10a0-65d560cb308cd-df\"",
+      "file_path": "documentation/LinkPresentation/lp_extern_c.md",
+      "hash": "25d859bad1c71be771968c1acba59ba9d66913127cc8fbc2ca2ba20cb9a02211"
+    },
+    "https://developer.apple.com/documentation/linkpresentation/lp_extern_c_begin": {
+      "etag": "\"10c4-65d560cb308cd-df\"",
+      "file_path": "documentation/LinkPresentation/lp_extern_c_begin.md",
+      "hash": "2377d55a6606050d4331e637b4947bac7b268085e99de383d7e365dd95c99626"
+    },
+    "https://developer.apple.com/documentation/linkpresentation/lp_extern_c_end": {
+      "etag": "\"10b8-65d560cb308cd-df\"",
+      "file_path": "documentation/LinkPresentation/lp_extern_c_end.md",
+      "hash": "9e5c4452a67a836b98732af6208513a738af9cb600eda9155f17ed0480c0349b"
+    },
     "https://developer.apple.com/documentation/linkpresentation/lperror": {
       "etag": "\"41f3-65d560cb308cd-df\"",
       "file_path": "documentation/LinkPresentation/lperror.md",
@@ -410,6 +430,26 @@
       "file_path": "documentation/LinkPresentation/linkmetadata/valuetype.md",
       "hash": "7e2089e0e3ea5f7e3136ecc2bfd7a09d9955c9dc14f0595816fef77e405cddef"
     },
+    "https://developer.apple.com/tutorials/data/documentation/linkpresentation/lp_extern.json": {
+      "etag": "\"1094-65d560cb308cd-df\"",
+      "file_path": "documentation/LinkPresentation/lp_extern.md",
+      "hash": "8de48bf0284bd574497a0e724ec8925c51f4570c686fcb4665cdff75f80698c2"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/linkpresentation/lp_extern_c.json": {
+      "etag": "\"10a0-65d560cb308cd-df\"",
+      "file_path": "documentation/LinkPresentation/lp_extern_c.md",
+      "hash": "25d859bad1c71be771968c1acba59ba9d66913127cc8fbc2ca2ba20cb9a02211"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/linkpresentation/lp_extern_c_begin.json": {
+      "etag": "\"10c4-65d560cb308cd-df\"",
+      "file_path": "documentation/LinkPresentation/lp_extern_c_begin.md",
+      "hash": "2377d55a6606050d4331e637b4947bac7b268085e99de383d7e365dd95c99626"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/linkpresentation/lp_extern_c_end.json": {
+      "etag": "\"10b8-65d560cb308cd-df\"",
+      "file_path": "documentation/LinkPresentation/lp_extern_c_end.md",
+      "hash": "9e5c4452a67a836b98732af6208513a738af9cb600eda9155f17ed0480c0349b"
+    },
     "https://developer.apple.com/tutorials/data/documentation/linkpresentation/lperror.json": {
       "etag": "\"41f3-65d560cb308cd-df\"",
       "file_path": "documentation/LinkPresentation/lperror.md",
@@ -603,8 +643,8 @@
   },
   "metadata": {
     "render": {
-      "version": 1
+      "version": 2
     },
-    "total_pages": 120
+    "total_pages": 128
   }
 }

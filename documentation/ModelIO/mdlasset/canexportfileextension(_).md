@@ -43,6 +43,8 @@ The set of supported formats includes Wavefront Object (`.obj`) and Standard Tes
 ### Exporting an Asset
 - [func export(to: URL) throws](./export%28to%29.md)
   Writes asset data to a file at the specified URL and reports errors that occur during export.
+- [- exportAssetToURL:](./exportassettourl_.md)
+  Writes asset data to a file at the specified URL.
 
 
 ---

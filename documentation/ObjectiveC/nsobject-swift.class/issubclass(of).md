@@ -38,6 +38,8 @@ class func isSubclass(of aClass: AnyClass) -> Bool
 ### Identifying Classes
 - [class func superclass() -> AnyClass?](./superclass%28%29.md)
   Returns the class object for the receiver’s superclass.
+- [+ class](./class.md)
+  Returns the class object.
 
 
 ---

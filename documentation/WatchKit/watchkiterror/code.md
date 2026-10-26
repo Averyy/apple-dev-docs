@@ -59,6 +59,12 @@ enum WatchKitErrorCode : NSInteger;
 - [Sendable](../../Swift/sendable.md)
 - [SendableMetatype](../../Swift/sendablemetatype.md)
 
+## See Also
+
+### Errors
+- [WatchKitErrorDomain](../watchkiterrordomain.md)
+  The domain for WatchKit errors.
+
 
 ---
 

@@ -57,6 +57,9 @@ Metal provides acceleration structures with a two-level hierarchy. The bottom la
 - [var instanceTransformationMatrixLayout: MTLMatrixLayout](./mtlinstanceaccelerationstructuredescriptor/instancetransformationmatrixlayout.md)
 - [var motionTransformStride: Int](./mtlinstanceaccelerationstructuredescriptor/motiontransformstride.md)
 - [var motionTransformType: MTLTransformType](./mtlinstanceaccelerationstructuredescriptor/motiontransformtype.md)
+### Creating a instance geometry descriptor
+- [+ descriptor](./mtlinstanceaccelerationstructuredescriptor/descriptor.md)
+  Creates an instance descriptor.
 
 ## Relationships
 

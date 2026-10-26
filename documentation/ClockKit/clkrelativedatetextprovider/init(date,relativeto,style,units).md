@@ -35,6 +35,10 @@ This initializer creates a text provider that produces a fixed, relative date. I
 ### Creating a Text Provider
 - [convenience init(date: Date, style: CLKRelativeDateStyle, units: NSCalendar.Unit)](./init%28date,style,units%29.md)
   Creates a text provider that shows the difference between the current time and the specified date.
+- [- initWithDate:style:units:](./initwithdate_style_units_.md)
+  Creates a text provider that shows the difference between the current time and the specified date.
+- [- initWithDate:relativeToDate:style:units:](./initwithdate_relativetodate_style_units_.md)
+  Creates a text provider that shows the difference in time between the provided dates.
 
 
 ---

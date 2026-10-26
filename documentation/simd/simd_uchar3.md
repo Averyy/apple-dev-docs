@@ -42,11 +42,15 @@ typedef unsigned char __attribute__((ext_vector_type(3))) simd_uchar3;
   Returns a new vector from the specified scalar values.
 - [func simd_make_uchar3_undef(UInt8) -> simd_uchar3](./simd_make_uchar3_undef%28_%29-562ub.md)
   Returns a new vector with the first element set to a scalar value, and other elements undefined.
+- [vector3](./vector3-9qwfg.md)
+  Returns a new vector from the specified scalar values.
 ### Functions to Create Three-Element Vectors From Combinations of Vectors and Scalar Values
 - [func simd_make_uchar3(simd_uchar2, UInt8) -> simd_uchar3](./simd_make_uchar3%28_,_%29-5tgih.md)
   Returns a new vector from a vector and a scalar value.
 - [func simd_make_uchar3(UInt8, simd_uchar2) -> simd_uchar3](./simd_make_uchar3%28_,_%29-2m5x7.md)
   Returns a new vector from a scalar value and a vector.
+- [vector3](./vector3-9kx6s.md)
+  Returns a new vector from a vector and a scalar value.
 ### Common Functions
 - [func simd_clamp(simd_uchar3, simd_uchar3, simd_uchar3) -> simd_uchar3](./simd_clamp%28_,_,_%29-6h8i3.md)
   Returns each element in a vector clamped to a specified range.
@@ -71,6 +75,48 @@ typedef unsigned char __attribute__((ext_vector_type(3))) simd_uchar3;
   Returns a vector that contains elements from either the first or second parameter, based on the corresponding element in the third parameter.
 ### Alternative Type Alias
 - [typealias vector_uchar3](./vector_uchar3.md)
+### Functions to Create Three-Element Vectors From Vectors of Other Types
+- [simd_uchar](./simd_uchar-8xokr.md)
+  Returns a new vector from the specified vector of 8-bit, signed integer elements.
+- [simd_uchar](./simd_uchar-8xyej.md)
+  Returns a new vector from the specified vector of 8-bit, unsigned integer elements.
+- [simd_uchar](./simd_uchar-8xtjf.md)
+  Returns a new vector from the specified vector of 16-bit, signed integer elements.
+- [simd_uchar](./simd_uchar-8y3bf.md)
+  Returns a new vector from the specified vector of 16-bit, unsigned integer elements.
+- [simd_uchar](./simd_uchar-8xmh3.md)
+  Returns a new vector from the specified vector of 32-bit, signed integer elements.
+- [simd_uchar](./simd_uchar-8xwnb.md)
+  Returns a new vector from the specified vector of 32-bit, unsigned integer elements.
+- [simd_uchar](./simd_uchar-8xnn5.md)
+  Returns a new vector from the specified vector of 64-bit, signed integer elements.
+- [simd_uchar](./simd_uchar-8xxdd.md)
+  Returns a new vector from the specified vector of 64-bit, unsigned integer elements.
+- [simd_uchar](./simd_uchar-8xzfl.md)
+  Returns a new vector from the specified vector of 32-bit, floating-point elements.
+- [simd_uchar](./simd_uchar-8y001.md)
+  Returns a new vector from the specified vector of 64-bit, floating-point elements.
+### Functions to Perform Saturating Conversion From Vectors of Other Types
+- [simd_uchar_sat](./simd_uchar_sat-1x3x1.md)
+  Returns a new vector from the specified vector of 8-bit, signed integer elements.
+- [simd_uchar_sat](./simd_uchar_sat-1xdsl.md)
+  Returns a new vector from the specified vector of 8-bit, unsigned integer elements.
+- [simd_uchar_sat](./simd_uchar_sat-1x905.md)
+  Returns a new vector from the specified vector of 16-bit, signed integer elements.
+- [simd_uchar_sat](./simd_uchar_sat-1xis5.md)
+  Returns a new vector from the specified vector of 16-bit, unsigned integer elements.
+- [simd_uchar_sat](./simd_uchar_sat-1x225.md)
+  Returns a new vector from the specified vector of 32-bit, signed integer elements.
+- [simd_uchar_sat](./simd_uchar_sat-1xc6l.md)
+  Returns a new vector from the specified vector of 32-bit, unsigned integer elements.
+- [simd_uchar_sat](./simd_uchar_sat-1x3m3.md)
+  Returns a new vector from the specified vector of 64-bit, signed integer elements.
+- [simd_uchar_sat](./simd_uchar_sat-1xdor.md)
+  Returns a new vector from the specified vector of 64-bit, unsigned integer elements.
+- [simd_uchar_sat](./simd_uchar_sat-1xfdz.md)
+  Returns a new vector from the specified vector of 32-bit, floating point elements.
+- [simd_uchar_sat](./simd_uchar_sat-1xfyj.md)
+  Returns a new vector from the specified vector of 32-bit, floating point elements.
 
 ## See Also
 

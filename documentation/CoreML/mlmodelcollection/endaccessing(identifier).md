@@ -61,6 +61,12 @@ MLModelCollection.endAccessing(identifier: modelCollectionName) { result in
 
 - `identifier`: The name of the model collection.
 
+## See Also
+
+### Accessing a model collection
+- [+ beginAccessingModelCollectionWithIdentifier:completionHandler:](./beginaccessingmodelcollectionwithidentifier_completionhandler_.md)
+  Requests access to a model collection.
+
 
 ---
 

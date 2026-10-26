@@ -32,6 +32,8 @@ init(containerIdentifier: String)
   The identifier of the CloudKit container associated with a given store description.
 - [var databaseScope: CKDatabase.Scope](./databasescope-4c72t.md)
   The database scope — public, private, or shared — to use for a specified store in a persistent CloudKit container.
+- [databaseScope](./databasescope-2784h.md)
+  The database scope — public, private, or shared — to use for a specified store in a persistent CloudKit container.
 
 
 ---

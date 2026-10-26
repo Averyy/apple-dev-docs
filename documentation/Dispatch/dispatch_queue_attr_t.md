@@ -25,6 +25,11 @@ typealias dispatch_queue_attr_t = __OS_dispatch_queue_attr
 typedef NSObject<OS_dispatch_queue_attr> * dispatch_queue_attr_t;
 ```
 
+## Topics
+
+### Attribute Type
+- [OS_dispatch_queue_attr](./os_dispatch_queue_attr.md)
+
 ## See Also
 
 ### Data Types

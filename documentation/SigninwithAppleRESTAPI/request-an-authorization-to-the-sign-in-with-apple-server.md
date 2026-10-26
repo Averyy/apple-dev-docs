@@ -28,7 +28,7 @@ When the Sign in with Apple UI appears in the opened browser tab, the user can s
 A successful response contains the following parameters:
 
 - **`code`**: A single-use authorization grant code that’s valid for five minutes. To learn how to validate this code to obtain user tokens, see [`Token validation`](./generate-and-validate-tokens.md).
-- **`id_token`**: A JSON web token (JWT) containing the user’s identity information. For more information, see [`id_token`](https://developer.apple.com/documentation/signinwithapplejs/authorizationi/id_token).
+- **`id_token`**: A JSON web token (JWT) containing the user’s identity information. For more information, see [`id_token`](../SigninwithAppleJS/authorizationi/id_token.md).
 - **`state`**: The state contained in the authorization request. Compare against the state value provided in the initial authorization request to help prevent cross-site request forgery attacks.
 - **`user`**: A JSON string containing the data requested in the `scope` property. The returned data is in the following format: `{ "name": { "firstName": string, "lastName": string }, "email": string }`
 

@@ -42,6 +42,8 @@ This method creates a new instance of the specified controller each time you cal
   Creates the specified window controller from the storyboard and initializes it using your custom initialization code.
 - [NSStoryboard.SceneIdentifier](./sceneidentifier.md)
   A string that uniquely identifies a view controller or window controller in your storyboard file.
+- [NSStoryboardControllerCreator](../nsstoryboardcontrollercreator.md)
+  A block that you use to handle the custom creation of controller objects from your storyboard file.
 
 
 ---

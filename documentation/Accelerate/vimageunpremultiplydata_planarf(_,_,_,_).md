@@ -70,6 +70,10 @@ float destColor = destColor / alpha;
   Transforms a 32-bit-per-channel, 4-channel ARGB buffer from premultiplied alpha format to nonpremultiplied alpha format.
 - [func vImageUnpremultiplyData_RGBAFFFF(UnsafePointer<vImage_Buffer>, UnsafePointer<vImage_Buffer>, vImage_Flags) -> vImage_Error](./vimageunpremultiplydata_rgbaffff%28_,_,_%29.md)
   Transforms a 32-bit-per-channel, 4-channel RGBA buffer from premultiplied alpha format to nonpremultiplied alpha format.
+- [vImageUnpremultiplyData_BGRA8888](./vimageunpremultiplydata_bgra8888.md)
+  Transforms an 8-bit-per-channel, 4-channel BGRA buffer from premultiplied alpha format to nonpremultiplied alpha format.
+- [vImageUnpremultiplyData_BGRAFFFF](./vimageunpremultiplydata_bgraffff.md)
+  Transforms a 32-bit-per-channel, 4-channel BGRA buffer from premultiplied alpha format to nonpremultiplied alpha format.
 
 
 ---

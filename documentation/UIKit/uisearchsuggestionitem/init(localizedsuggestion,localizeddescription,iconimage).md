@@ -42,6 +42,18 @@ init(localizedSuggestion suggestion: String, localizedDescription description: S
   Creates a search suggestion with the specified label.
 - [init(localizedAttributedSuggestion: NSAttributedString)](./init%28localizedattributedsuggestion%29.md)
   Creates a search suggestion with the specified attributed label.
+- [+ suggestionWithLocalizedSuggestion:descriptionString:iconImage:](./suggestionwithlocalizedsuggestion_descriptionstring_iconimage_.md)
+  Creates a search suggestion with the specified text and image attributes.
+- [+ suggestionWithLocalizedAttributedSuggestion:descriptionString:iconImage:](./suggestionwithlocalizedattributedsuggestion_descriptionstring_iconimage_.md)
+  Creates a search suggestion with the specified attributed label, accessibility description, and image.
+- [+ suggestionWithLocalizedSuggestion:descriptionString:](./suggestionwithlocalizedsuggestion_descriptionstring_.md)
+  Creates a search suggestion with the specified label and accessibility description.
+- [+ suggestionWithLocalizedAttributedSuggestion:descriptionString:](./suggestionwithlocalizedattributedsuggestion_descriptionstring_.md)
+  Creates a search suggestion with the specified attributed label and accessibility description.
+- [+ suggestionWithLocalizedSuggestion:](./suggestionwithlocalizedsuggestion_.md)
+  Creates a search suggestion with the specified label.
+- [+ suggestionWithLocalizedAttributedSuggestion:](./suggestionwithlocalizedattributedsuggestion_.md)
+  Creates a search suggestion with the specified attributed label.
 
 
 ---

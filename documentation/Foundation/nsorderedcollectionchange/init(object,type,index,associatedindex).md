@@ -52,6 +52,10 @@ A move pair can have a different `object` in its removal and insertion changes, 
 ### Creating a Change
 - [convenience init(object: Any?, type: NSCollectionChangeType, index: Int)](./init%28object,type,index%29.md)
   Creates a change object that represents inserting or removing an object from an ordered collection at a specific index.
+- [+ changeWithObject:type:index:](./changewithobject_type_index_.md)
+  Creates an change object that represents inserting or removing an object from an ordered collection at a specific index.
+- [+ changeWithObject:type:index:associatedIndex:](./changewithobject_type_index_associatedindex_.md)
+  Creates an change object that represents inserting or removing an object from an ordered collection at a specific index, matched with an associated location that infers a move within the collection.
 
 
 ---

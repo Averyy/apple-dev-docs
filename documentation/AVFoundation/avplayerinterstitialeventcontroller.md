@@ -36,6 +36,8 @@ This class is a subclass of [`AVPlayerInterstitialEventMonitor`](./avplayerinter
 ### Creating an event controller
 - [init(primaryPlayer: AVPlayer)](./avplayerinterstitialeventcontroller/init%28primaryplayer%29.md)
   Creates an event controller with a player item.
+- [+ interstitialEventControllerWithPrimaryPlayer:](./avplayerinterstitialeventcontroller/interstitialeventcontrollerwithprimaryplayer_.md)
+  A convenience initializer that creates an event controller with a player item.
 ### Configuring the event schedule
 - [var events: [AVPlayerInterstitialEvent]!](./avplayerinterstitialeventcontroller/events.md)
   The current schedule of interstitial events.
@@ -80,6 +82,8 @@ This class is a subclass of [`AVPlayerInterstitialEventMonitor`](./avplayerinter
   userInfo dictionary key for the AVPlayerInterstitialEventMonitorScheduleRequestCompletedNotification. Value is NSData. Absent if the request failed.
 - [class AVPlayerItemIntegratedTimeline](./avplayeritemintegratedtimeline.md)
   An object that models the timeline and playback sequence of a primary player item and scheduled interstitial events.
+- [AVPlayerInterstitialEventMonitorScheduleRequestCompletedNotification](./avplayerinterstitialeventmonitorschedulerequestcompletednotification.md)
+  A notification that is posted whenever a daterange-schedule request completes.
 
 
 ---

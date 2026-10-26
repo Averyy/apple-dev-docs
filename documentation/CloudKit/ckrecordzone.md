@@ -53,6 +53,8 @@ After creating a `CKRecordZone` object and saving it to the database, you don’
 ### Getting the Default Record Zone
 - [class func `default`() -> CKRecordZone](./ckrecordzone/default%28%29.md)
   Returns the default record zone.
+- [CKRecordZoneDefaultName](./ckrecordzonedefaultname-8mfij.md)
+  The default record zone’s name.
 ### Getting the Zone Attributes
 - [var zoneID: CKRecordZone.ID](./ckrecordzone/zoneid.md)
   The unique ID of the zone.

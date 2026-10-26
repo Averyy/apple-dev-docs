@@ -55,6 +55,8 @@ You configure a virtual controller by specifying the input elements it contains.
 ### Creating virtual controllers
 - [init(configuration: GCVirtualController.Configuration)](./init%28configuration%29.md)
   Creates a new virtual controller using the configuration you specify.
+- [+ virtualControllerWithConfiguration:](./virtualcontrollerwithconfiguration_.md)
+  Creates a new virtual controller using the configuration you specify.
 
 
 ---

@@ -55,6 +55,8 @@ This protocol is implemented by the [`UIViewController`](./uiviewcontroller.md) 
   Position views so that they aren’t obstructed by other content.
 - [class NSLayoutConstraint](./nslayoutconstraint.md)
   The relationship between two user interface objects that must be satisfied by the constraint-based layout system.
+- [NSDictionaryOfVariableBindings](./nsdictionaryofvariablebindings.md)
+  Creates a dictionary wherein the keys are string representations of the corresponding values’ variable names.
 
 
 ---

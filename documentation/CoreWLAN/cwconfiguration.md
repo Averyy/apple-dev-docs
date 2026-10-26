@@ -26,6 +26,10 @@ class CWConfiguration
   Creates an empty CWConfiguration object.
 - [init(configuration: CWConfiguration)](./cwconfiguration/init%28configuration%29.md)
   Creates and returns a CWConfiguration object initialized with the given CWConfiguration object.
+- [+ configuration](./cwconfiguration/configuration.md)
+  Convenience method for getting an empty CWConfiguration object.
+- [+ configurationWithConfiguration:](./cwconfiguration/configurationwithconfiguration_.md)
+  Convenience method for getting a CWConfiguration object initialized with the given CWConfiguration object.
 ### Comparing configurations
 - [func isEqual(to: CWConfiguration) -> Bool](./cwconfiguration/isequal%28to%29.md)
   Determine CWConfiguration object equality.

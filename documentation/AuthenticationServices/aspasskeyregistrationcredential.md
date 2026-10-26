@@ -34,6 +34,10 @@ Create a passkey registration credential to provide a response to a passkey regi
   Initializes a passkey registration credential object.
 - [convenience init(relyingParty: String, clientDataHash: Data, credentialID: Data, attestationObject: Data, extensionOutput: ASPasskeyRegistrationCredentialExtensionOutput?)](./aspasskeyregistrationcredential/init%28relyingparty,clientdatahash,credentialid,attestationobject,extensionoutput%29.md)
   Initializes a passkey registration credential object.
+- [+ credentialWithRelyingParty:clientDataHash:credentialID:attestationObject:](./aspasskeyregistrationcredential/credentialwithrelyingparty_clientdatahash_credentialid_attestationobject_.md)
+  Creates and initializes a new passkey registration credential.
+- [- initWithRelyingParty:clientDataHash:credentialID:attestationObject:extensionOutput:](./aspasskeyregistrationcredential/initwithrelyingparty_clientdatahash_credentialid_attestationobject_extensionoutput_.md)
+  Initializes a passkey registration credential object.
 ### Accessing credential information
 - [var attestationObject: Data](./aspasskeyregistrationcredential/attestationobject.md)
   The attestation object for this passkey.
@@ -48,6 +52,10 @@ Create a passkey registration credential to provide a response to a passkey regi
   An output from WebAuthn extensions.
 - [struct ASPasskeyRegistrationCredentialExtensionOutput](./aspasskeyregistrationcredentialextensionoutput-swift.struct.md)
   A type that encapsulates output for various WebAuthn extensions during passkey assertion.
+- [extensionOutput](./aspasskeyregistrationcredential/extensionoutput-95gvu.md)
+  An output from WebAuthn extensions.
+- [ASPasskeyRegistrationCredentialExtensionOutput](./aspasskeyregistrationcredentialextensionoutput-c.class.md)
+  A class that encapsulates output for various WebAuthn extensions during passkey registration.
 ### Initializers
 - [init?(coder: NSCoder)](./aspasskeyregistrationcredential/init%28coder%29.md)
 

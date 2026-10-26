@@ -77,6 +77,10 @@ class AVMetricEvent
 - [class AVMetricErrorEvent](./avmetricerrorevent.md)
   An object that represents a metric event when an error occurs.
 - [Metric event types](./metric-event-types.md)
+- [AVMetricEventStream](./avmetriceventstream.md)
+  An object that allows clients to add publishers and then subscribe to specific metric event classes from those publishers.
+- [AVMetricEventStreamSubscriber](./avmetriceventstreamsubscriber.md)
+  A type for objects that receive metric events.
 
 
 ---

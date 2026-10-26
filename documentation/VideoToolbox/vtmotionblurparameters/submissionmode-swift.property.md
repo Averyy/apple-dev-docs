@@ -43,6 +43,8 @@ Set to VTMotionBlurParametersSubmissionModeSequential to indicate that the curre
   Optional optical flow object that contains forward and backward optical flow with the previous frame.
 - [VTMotionBlurParameters.SubmissionMode](./submissionmode-swift.enum.md)
   A value describing the processing request in a parameters submission object.
+- [destinationFrame](./destinationframe.md)
+  A user-allocated pixel buffer that receives the results.
 
 
 ---

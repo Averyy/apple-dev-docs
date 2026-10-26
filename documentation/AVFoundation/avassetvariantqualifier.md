@@ -34,6 +34,10 @@ class AVAssetVariantQualifier
   An object that represents a bit rate variant.
 - [convenience init(predicate: NSPredicate)](./avassetvariantqualifier/init%28predicate%29.md)
   Creates a variant qualifier with a predicate.
+- [+ assetVariantQualifierForMaximumValueInKeyPath:](./avassetvariantqualifier/assetvariantqualifierformaximumvalueinkeypath_.md)
+  Returns a qualifer for finding variant with maximum value in the input key path
+- [+ assetVariantQualifierForMinimumValueInKeyPath:](./avassetvariantqualifier/assetvariantqualifierforminimumvalueinkeypath_.md)
+  Returns a qualifer for finding variant with minimum value in the input key path.
 ### Building predicates
 - [class func predicate(forAudioSampleRate: Double, mediaSelectionOption: AVMediaSelectionOption?, operatorType: NSComparisonPredicate.Operator) -> NSPredicate](./avassetvariantqualifier/predicate%28foraudiosamplerate,mediaselectionoption,operatortype%29.md)
   Creates a predicate for audio sample rate.

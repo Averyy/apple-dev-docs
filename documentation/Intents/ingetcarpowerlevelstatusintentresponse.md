@@ -61,6 +61,10 @@ For more information about implementing your intent handler object, see [`INGetC
   The maximum rated distance the fuel-powered vehicle can travel with a full tank of fuel.
 - [var distanceRemainingFuel: Measurement<UnitLength>?](./ingetcarpowerlevelstatusintentresponse/distanceremainingfuel.md)
   The maximum distance the fuel-powered vehicle can travel with the remaining fuel.
+- [chargePercentRemaining](./ingetcarpowerlevelstatusintentresponse/chargepercentremaining-30zol.md)
+  The percentage of charge that remains for the electric vehicle.
+- [fuelPercentRemaining](./ingetcarpowerlevelstatusintentresponse/fuelpercentremaining-6mdv4.md)
+  The percentage of fuel remaining for the fuel-powered vehicle.
 ### Providing the Charge Status
 - [var activeConnector: INCar.ChargingConnectorType?](./ingetcarpowerlevelstatusintentresponse/activeconnector.md)
   The type of connector that’s currently delivering charge to the electric vehicle’s battery.
@@ -70,6 +74,10 @@ For more information about implementing your intent handler object, see [`INGetC
   The number of minutes it takes to fully charge the electric vehicle’s battery.
 - [var dateOfLastStateUpdate: DateComponents?](./ingetcarpowerlevelstatusintentresponse/dateoflaststateupdate.md)
   A timestamp that indicates the most recent charge status for the electric vehicle.
+- [charging](./ingetcarpowerlevelstatusintentresponse/charging-7aamu.md)
+  A Boolean value that indicates whether the electric vehicle is currently charging.
+- [minutesToFull](./ingetcarpowerlevelstatusintentresponse/minutestofull-25vcb.md)
+  The number of minutes it will take to fully charge the electric vehicle’s battery.
 ### Providing Battery Capacity
 - [var minimumBatteryCapacity: Measurement<UnitEnergy>?](./ingetcarpowerlevelstatusintentresponse/minimumbatterycapacity.md)
   A user-facing value that represents the minimum battery capacity of the electric vehicle.

@@ -113,6 +113,8 @@ For more information on connecting tvOS apps to other devices, see [Connecting a
   An environment value that indicates whether the current device supports device discovery.
 - [Connecting a tvOS app to other devices over the local network](./connecting-a-tvos-app-to-other-devices-over-the-local-network.md)
   Display a view in your tvOS app that lists available iOS, iPadOS, and watchOS devices that the user can connect to over their local network.
+### Macros
+- [DeviceDiscoveryUI_EXTERN](./devicediscoveryui_extern.md)
 
 ## See Also
 

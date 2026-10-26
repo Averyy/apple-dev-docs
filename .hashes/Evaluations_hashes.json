@@ -370,6 +370,11 @@
       "file_path": "documentation/Evaluations/evaluation/name.md",
       "hash": "dae732e3aaad16076c51f02c47072281baa794d7ab034efc9f20a07eef035e53"
     },
+    "https://developer.apple.com/documentation/evaluations/evaluation/name-9jrme": {
+      "etag": "\"117f-65d55e58ed2a4-df\"",
+      "file_path": "documentation/Evaluations/evaluation/name-9jrme.md",
+      "hash": "41966b4ad1d42b725597e46d78ce10ae3f265428395d9e8c49d702727962cc47"
+    },
     "https://developer.apple.com/documentation/evaluations/evaluation/responsecolumn": {
       "etag": "\"2645-65d55e58ed2a4-df\"",
       "file_path": "documentation/Evaluations/evaluation/responsecolumn.md",
@@ -609,6 +614,11 @@
       "etag": "\"19d2-65d55e5900bf4-df\"",
       "file_path": "documentation/Evaluations/evaluationsubject/transcript.md",
       "hash": "90307bf8a86f3e731c53a41498d81e994a30c198ee67e844a35a79922919e720"
+    },
+    "https://developer.apple.com/documentation/evaluations/evaluationsubject/transcript-9s3nn": {
+      "etag": "\"134f-65d55e5900bf4-df\"",
+      "file_path": "documentation/Evaluations/evaluationsubject/transcript-9s3nn.md",
+      "hash": "aeb5584fa1ef7622764c2ded7f620bc3e0419093764a98b60f6a4c4ff23a450d"
     },
     "https://developer.apple.com/documentation/evaluations/evaluationsubject/value-swift.associatedtype": {
       "etag": "\"15d9-65d55e5900bf4-df\"",
@@ -1385,6 +1395,11 @@
       "file_path": "documentation/Evaluations/scorelevel/label.md",
       "hash": "5014bc4efa0c3bf1f8ce57d2c946688d33c789a196ac5412862674d67609cd89"
     },
+    "https://developer.apple.com/documentation/evaluations/scorelevel/label-75ocw": {
+      "etag": "\"12d3-65d55e58d879a-df\"",
+      "file_path": "documentation/Evaluations/scorelevel/label-75ocw.md",
+      "hash": "7ac08cd4a8de3755286f1d7f1987e974e801a9624c00791e4c209ca9ed418384"
+    },
     "https://developer.apple.com/documentation/evaluations/scorelevel/value": {
       "etag": "\"11b4-65d55e58d879a-df\"",
       "file_path": "documentation/Evaluations/scorelevel/value.md",
@@ -2085,6 +2100,11 @@
       "file_path": "documentation/Evaluations/evaluation/inputcolumn.md",
       "hash": "0b73dbd1dc71a7cd3d03fca3ea25111d5517e7290936697a1791c6865ce87ba9"
     },
+    "https://developer.apple.com/tutorials/data/documentation/evaluations/evaluation/name-9jrme.json": {
+      "etag": "\"117f-65d55e58ed2a4-df\"",
+      "file_path": "documentation/Evaluations/evaluation/name-9jrme.md",
+      "hash": "41966b4ad1d42b725597e46d78ce10ae3f265428395d9e8c49d702727962cc47"
+    },
     "https://developer.apple.com/tutorials/data/documentation/evaluations/evaluation/name.json": {
       "etag": "\"2241-65d55e58ed2a4-df\"",
       "file_path": "documentation/Evaluations/evaluation/name.md",
@@ -2324,6 +2344,11 @@
       "etag": "\"29d9-65d55e5900bf4-df\"",
       "file_path": "documentation/Evaluations/evaluationsubject.md",
       "hash": "2a55876f6f168d1b8330ce89c5270832199b1294e22db414a1beb0d3d069f463"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/evaluations/evaluationsubject/transcript-9s3nn.json": {
+      "etag": "\"134f-65d55e5900bf4-df\"",
+      "file_path": "documentation/Evaluations/evaluationsubject/transcript-9s3nn.md",
+      "hash": "aeb5584fa1ef7622764c2ded7f620bc3e0419093764a98b60f6a4c4ff23a450d"
     },
     "https://developer.apple.com/tutorials/data/documentation/evaluations/evaluationsubject/transcript.json": {
       "etag": "\"19d2-65d55e5900bf4-df\"",
@@ -3100,6 +3125,11 @@
       "file_path": "documentation/Evaluations/scorelevel/guidedescription.md",
       "hash": "139b0509a573ea72c47dadab27611a35cb3df05e74d4756d897c12a0574672b8"
     },
+    "https://developer.apple.com/tutorials/data/documentation/evaluations/scorelevel/label-75ocw.json": {
+      "etag": "\"12d3-65d55e58d879a-df\"",
+      "file_path": "documentation/Evaluations/scorelevel/label-75ocw.md",
+      "hash": "7ac08cd4a8de3755286f1d7f1987e974e801a9624c00791e4c209ca9ed418384"
+    },
     "https://developer.apple.com/tutorials/data/documentation/evaluations/scorelevel/label.json": {
       "etag": "\"15f3-65d55e58d879a-df\"",
       "file_path": "documentation/Evaluations/scorelevel/label.md",
@@ -3443,8 +3473,8 @@
   },
   "metadata": {
     "render": {
-      "version": 1
+      "version": 2
     },
-    "total_pages": 688
+    "total_pages": 694
   }
 }

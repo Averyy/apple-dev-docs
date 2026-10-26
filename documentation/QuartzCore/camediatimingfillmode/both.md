@@ -33,6 +33,8 @@ extern CAMediaTimingFillMode const kCAFillModeBoth;
   The receiver remains visible in its final state when the animation is completed.
 - [static let backwards: CAMediaTimingFillMode](./backwards.md)
   The receiver clamps values before zero to zero when the animation is completed.
+- [kCAFillModeFrozen](../kcafillmodefrozen.md)
+  The mode was deprecated before OS X v10.5 shipped.
 
 
 ---

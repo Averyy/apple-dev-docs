@@ -100,10 +100,330 @@
       "file_path": "documentation/CoreFoundation/calendar-names.md",
       "hash": "3f8d6df98c5cfaa197e56bbcf4e43fafabf487ef92eb5f87fc5caf59d88be877"
     },
+    "https://developer.apple.com/documentation/corefoundation/cf_assume_nonnull_begin": {
+      "etag": "\"2827-65d5607a1afab-df\"",
+      "file_path": "documentation/CoreFoundation/cf_assume_nonnull_begin.md",
+      "hash": "f50507f4e8f58fd26234664ab5df36b4654a3504ee19a9acc075e7242d28c3d8"
+    },
+    "https://developer.apple.com/documentation/corefoundation/cf_assume_nonnull_end": {
+      "etag": "\"281b-65d5607b61df4-df\"",
+      "file_path": "documentation/CoreFoundation/cf_assume_nonnull_end.md",
+      "hash": "dd947fa90209495cabf8026e758e34742f0c5e1991c4cd6c200ba1112c2d0fe5"
+    },
+    "https://developer.apple.com/documentation/corefoundation/cf_automated_refcount_unavailable": {
+      "etag": "\"2863-65d560783beb3-df\"",
+      "file_path": "documentation/CoreFoundation/cf_automated_refcount_unavailable.md",
+      "hash": "34e0c5fe191fcc0cc74d78e2bcc7da6e5f2458d3dc4c6abe5614c381ebdb872f"
+    },
+    "https://developer.apple.com/documentation/corefoundation/cf_available": {
+      "etag": "\"2885-65d5607826821-df\"",
+      "file_path": "documentation/CoreFoundation/cf_available.md",
+      "hash": "b1468f689c8417bbf9b7a13b906749682622a27d83ce498c65b0c19626c6bb86"
+    },
+    "https://developer.apple.com/documentation/corefoundation/cf_available_ios": {
+      "etag": "\"285a-65d5607cda4ef-df\"",
+      "file_path": "documentation/CoreFoundation/cf_available_ios.md",
+      "hash": "4c29203fad7c7fec191d6adc50468c73502b0f7d8ef4170656de1ad53a3679f1"
+    },
+    "https://developer.apple.com/documentation/corefoundation/cf_available_iphone": {
+      "etag": "\"286c-65d5607777222-df\"",
+      "file_path": "documentation/CoreFoundation/cf_available_iphone.md",
+      "hash": "fd6248313c7e7a10c0f7e08a07128e54e2bed149ec367bfd33ccdc593d533023"
+    },
+    "https://developer.apple.com/documentation/corefoundation/cf_available_mac": {
+      "etag": "\"285a-65d5607dbb155-df\"",
+      "file_path": "documentation/CoreFoundation/cf_available_mac.md",
+      "hash": "385f0b593130ab55ad3ffe37355e7e05716a6a4a4cca30bc4f47bee56879f5f4"
+    },
+    "https://developer.apple.com/documentation/corefoundation/cf_boxable": {
+      "etag": "\"27d9-65d56079a846a-df\"",
+      "file_path": "documentation/CoreFoundation/cf_boxable.md",
+      "hash": "a16deb763c2d8c182b3d4ffea8baf7810c8f65c69d4340f5497682b59457c8b1"
+    },
+    "https://developer.apple.com/documentation/corefoundation/cf_bridged_mutable_type": {
+      "etag": "\"2881-65d5607a73fc7-df\"",
+      "file_path": "documentation/CoreFoundation/cf_bridged_mutable_type.md",
+      "hash": "8df8fc41f7761f8db85f8f0395a24b62b4019ae3279234164488ec69d7e7f6f7"
+    },
+    "https://developer.apple.com/documentation/corefoundation/cf_bridged_type": {
+      "etag": "\"2851-65d560775ade6-df\"",
+      "file_path": "documentation/CoreFoundation/cf_bridged_type.md",
+      "hash": "f097d7955049a8e4d001adfd1720b0986aab719491b9d0fdb645bb26c795b801"
+    },
+    "https://developer.apple.com/documentation/corefoundation/cf_calendar_deprecated": {
+      "etag": "\"2940-65d56079a846a-df\"",
+      "file_path": "documentation/CoreFoundation/cf_calendar_deprecated.md",
+      "hash": "8944672ba673835365b735978147e415fa78710eb9f20ca1a1594ed765330e3b"
+    },
+    "https://developer.apple.com/documentation/corefoundation/cf_calendar_enum_deprecated": {
+      "etag": "\"295e-65d560792c2be-df\"",
+      "file_path": "documentation/CoreFoundation/cf_calendar_enum_deprecated.md",
+      "hash": "b57f708c8cf2258900e1cd1b8f2f3aa382f885b1fa814a2d6ff1fb621c346a96"
+    },
+    "https://developer.apple.com/documentation/corefoundation/cf_closed_enum": {
+      "etag": "\"2893-65d5607c0be4f-df\"",
+      "file_path": "documentation/CoreFoundation/cf_closed_enum.md",
+      "hash": "2c4f2780233603cc2d85752e71b5e7ff62b44f9ae5c680902bef04136af830ef"
+    },
+    "https://developer.apple.com/documentation/corefoundation/cf_consumed": {
+      "etag": "\"27df-65d5607b30e55-df\"",
+      "file_path": "documentation/CoreFoundation/cf_consumed.md",
+      "hash": "c36d35e261e15a084e97caf0128d3269b6b7ecee2cd94dd2802750892bcb1b97"
+    },
+    "https://developer.apple.com/documentation/corefoundation/cf_defines_cg_types": {
+      "etag": "\"280f-65d5607b9e16c-df\"",
+      "file_path": "documentation/CoreFoundation/cf_defines_cg_types.md",
+      "hash": "af265057af935fbc646ad07ca42bf5e1109b77a06348c1977fee886f338b3ce3"
+    },
+    "https://developer.apple.com/documentation/corefoundation/cf_defines_cgaffinetransformcomponents": {
+      "etag": "\"2881-65d56079e2f18-df\"",
+      "file_path": "documentation/CoreFoundation/cf_defines_cgaffinetransformcomponents.md",
+      "hash": "485a5a9356d5a47870771af85d87c57118d3fe915c5a5ffa654f54163f90baa0"
+    },
+    "https://developer.apple.com/documentation/corefoundation/cf_deprecated": {
+      "etag": "\"2890-65d560785788a-df\"",
+      "file_path": "documentation/CoreFoundation/cf_deprecated.md",
+      "hash": "85cf7c7bbe2844ad6ade16099fba25b768860f4bad17831f3462857ba970f43e"
+    },
+    "https://developer.apple.com/documentation/corefoundation/cf_deprecated_ios": {
+      "etag": "\"2832-65d5607793d05-df\"",
+      "file_path": "documentation/CoreFoundation/cf_deprecated_ios.md",
+      "hash": "97e947f971887e55773cb2ba41964d77bb72f38f42ee6a7d1932c2457e37fa34"
+    },
+    "https://developer.apple.com/documentation/corefoundation/cf_deprecated_iphone": {
+      "etag": "\"2851-65d56079454b8-df\"",
+      "file_path": "documentation/CoreFoundation/cf_deprecated_iphone.md",
+      "hash": "7f07cc9f190d0689ab51ea6d01bd7121ca42e90265cb0b7406f2ba2937102666"
+    },
+    "https://developer.apple.com/documentation/corefoundation/cf_deprecated_mac": {
+      "etag": "\"2832-65d560783beb3-df\"",
+      "file_path": "documentation/CoreFoundation/cf_deprecated_mac.md",
+      "hash": "3762e7d7b89a2c61557451f329dd90d73f1d65b070c716454d52bad1837b4fa9"
+    },
+    "https://developer.apple.com/documentation/corefoundation/cf_enum": {
+      "etag": "\"272c-65d56077b10fe-df\"",
+      "file_path": "documentation/CoreFoundation/cf_enum.md",
+      "hash": "e3ed77b46c93d435d1ec0df6902fe3c083b148afc92af8578b80285bc3be8b3a"
+    },
+    "https://developer.apple.com/documentation/corefoundation/cf_enum_available": {
+      "etag": "\"2825-65d5607a91aae-df\"",
+      "file_path": "documentation/CoreFoundation/cf_enum_available.md",
+      "hash": "1e1b7ad9eb4afd9f3e07781c966917c79f6086905919d2b3d3a696967ed2d60a"
+    },
+    "https://developer.apple.com/documentation/corefoundation/cf_enum_available_ios": {
+      "etag": "\"2812-65d5607877c1b-df\"",
+      "file_path": "documentation/CoreFoundation/cf_enum_available_ios.md",
+      "hash": "645ce41c4faf8299301c321f723dfb5e8aef5690deef390d447049e663b8e588"
+    },
+    "https://developer.apple.com/documentation/corefoundation/cf_enum_available_mac": {
+      "etag": "\"2812-65d56077cf962-df\"",
+      "file_path": "documentation/CoreFoundation/cf_enum_available_mac.md",
+      "hash": "ccedf8be1f5daf9f81c1b74eb8cfe0eb216754150c6ebe3ec8e37ab32c9ee730"
+    },
+    "https://developer.apple.com/documentation/corefoundation/cf_enum_deprecated": {
+      "etag": "\"28cc-65d5607bbbae9-df\"",
+      "file_path": "documentation/CoreFoundation/cf_enum_deprecated.md",
+      "hash": "f4463a97f5462747e79e54149e524b6b91ff7bfaeb536bd390d4d2efe823ed54"
+    },
+    "https://developer.apple.com/documentation/corefoundation/cf_enum_deprecated_ios": {
+      "etag": "\"286e-65d5607dad515-df\"",
+      "file_path": "documentation/CoreFoundation/cf_enum_deprecated_ios.md",
+      "hash": "3e2caaa3ae2195b8379407324e5e8911dcb23f98c2df99fd83c2b899252b071d"
+    },
+    "https://developer.apple.com/documentation/corefoundation/cf_enum_deprecated_mac": {
+      "etag": "\"286e-65d5607c7f483-df\"",
+      "file_path": "documentation/CoreFoundation/cf_enum_deprecated_mac.md",
+      "hash": "9e1b85490dc132663d9a43f73c3d6745cd842fe7acbb4f9bcaabcb294a1f610b"
+    },
+    "https://developer.apple.com/documentation/corefoundation/cf_error_enum": {
+      "etag": "\"2774-65d5607cf80f8-df\"",
+      "file_path": "documentation/CoreFoundation/cf_error_enum.md",
+      "hash": "d1086bad85248f6fa1743a051a8eaf5445d601c8f7be5fae361a29ed138a27f8"
+    },
+    "https://developer.apple.com/documentation/corefoundation/cf_export": {
+      "etag": "\"2725-65d5607b30e55-df\"",
+      "file_path": "documentation/CoreFoundation/cf_export.md",
+      "hash": "058943caa993c92fc289e31df36be90e3ed2b479b3fb9d4fc46f510dac3d5085"
+    },
+    "https://developer.apple.com/documentation/corefoundation/cf_extensible_string_enum": {
+      "etag": "\"27e5-65d560799306f-df\"",
+      "file_path": "documentation/CoreFoundation/cf_extensible_string_enum.md",
+      "hash": "5cce2877c7ed5711f037d694cb023b71839680737aadd35df6e509f2c9e04c2c"
+    },
+    "https://developer.apple.com/documentation/corefoundation/cf_extension_unavailable": {
+      "etag": "\"2836-65d5607d61793-df\"",
+      "file_path": "documentation/CoreFoundation/cf_extension_unavailable.md",
+      "hash": "6714fff1cff1898a50276708ca4ee7449faef6e0f1bc245f35f9ea8cc432a4ba"
+    },
+    "https://developer.apple.com/documentation/corefoundation/cf_extension_unavailable_ios": {
+      "etag": "\"2866-65d560789392e-df\"",
+      "file_path": "documentation/CoreFoundation/cf_extension_unavailable_ios.md",
+      "hash": "0772877b351a311995b08935fe81d1fb5b33b969ac26ee3b2b13e1d97a8bc566"
+    },
+    "https://developer.apple.com/documentation/corefoundation/cf_extension_unavailable_mac": {
+      "etag": "\"2866-65d56077cf962-df\"",
+      "file_path": "documentation/CoreFoundation/cf_extension_unavailable_mac.md",
+      "hash": "3fe61b85868eea917e9ab4b12b599bc69e7086e57316fbddd723dae1cd38862c"
+    },
+    "https://developer.apple.com/documentation/corefoundation/cf_extern_c_begin": {
+      "etag": "\"2785-65d560792c2be-df\"",
+      "file_path": "documentation/CoreFoundation/cf_extern_c_begin.md",
+      "hash": "c8f360f19847fbe9b06417f14e19c391145d0c3c807fe14f8d123d4fd82a0166"
+    },
+    "https://developer.apple.com/documentation/corefoundation/cf_extern_c_end": {
+      "etag": "\"276d-65d5607793d05-df\"",
+      "file_path": "documentation/CoreFoundation/cf_extern_c_end.md",
+      "hash": "c8d48cc562cc295a23c14f4694fb4c51682e82e61ccd73eb22008d4887f8732e"
+    },
+    "https://developer.apple.com/documentation/corefoundation/cf_fallthrough": {
+      "etag": "\"2761-65d5607bbbae9-df\"",
+      "file_path": "documentation/CoreFoundation/cf_fallthrough.md",
+      "hash": "d63bc787957cc79b7905ff6c594e51f2921f588868e9358eeab33de7a5069d78"
+    },
+    "https://developer.apple.com/documentation/corefoundation/cf_format_argument": {
+      "etag": "\"27eb-65d5607a5b197-df\"",
+      "file_path": "documentation/CoreFoundation/cf_format_argument.md",
+      "hash": "7acd1de29179109a786cc3a86fdd1efbd0b8eaef1b7c834beaecd5ab07d26602"
+    },
+    "https://developer.apple.com/documentation/corefoundation/cf_format_function": {
+      "etag": "\"282b-65d5607a1afab-df\"",
+      "file_path": "documentation/CoreFoundation/cf_format_function.md",
+      "hash": "dbc7009f47c689ee5e3b3c9990ba93ba3d667d63d83dc72ef8c48c0e73758a70"
+    },
     "https://developer.apple.com/documentation/corefoundation/cf_has_typed_allocator": {
       "etag": "\"3cc4-65d5607aad206-df\"",
       "file_path": "documentation/CoreFoundation/cf_has_typed_allocator.md",
       "hash": "caa18375db86329dbbcba0aa60df7f2ef6b57d5289cf29614d1d94ff3be3c969"
+    },
+    "https://developer.apple.com/documentation/corefoundation/cf_header_audit_begin": {
+      "etag": "\"afa-65d56077eb535-df\"",
+      "file_path": "documentation/CoreFoundation/cf_header_audit_begin.md",
+      "hash": "ed0a75ee950f318c8f79989e1fe0796333421614f9f0b849f5568d2de39bd63d"
+    },
+    "https://developer.apple.com/documentation/corefoundation/cf_header_audit_end": {
+      "etag": "\"ae2-65d5607c0be4f-df\"",
+      "file_path": "documentation/CoreFoundation/cf_header_audit_end.md",
+      "hash": "bfb75cfd9a5d08c66d471c36262eeacd438ce6df21ecb4154a9a7d75009d0fea"
+    },
+    "https://developer.apple.com/documentation/corefoundation/cf_implicit_bridging_disabled": {
+      "etag": "\"2815-65d56079e2f18-df\"",
+      "file_path": "documentation/CoreFoundation/cf_implicit_bridging_disabled.md",
+      "hash": "2a2776590e066da9e454cecb649415063d7ee3b5b451541fac61473ad21d81b8"
+    },
+    "https://developer.apple.com/documentation/corefoundation/cf_implicit_bridging_enabled": {
+      "etag": "\"2809-65d560797a76a-df\"",
+      "file_path": "documentation/CoreFoundation/cf_implicit_bridging_enabled.md",
+      "hash": "644017d3691237c86f9e1bbcec018dc67b6baab3467b9bab194c58f96a3382eb"
+    },
+    "https://developer.apple.com/documentation/corefoundation/cf_inline": {
+      "etag": "\"2725-65d5607c4099a-df\"",
+      "file_path": "documentation/CoreFoundation/cf_inline.md",
+      "hash": "97977fdb576ed23a1966a0adc3976570e3c9fd50551b49d85700050a94903838"
+    },
+    "https://developer.apple.com/documentation/corefoundation/cf_no_tail_call": {
+      "etag": "\"276d-65d5607a91aae-df\"",
+      "file_path": "documentation/CoreFoundation/cf_no_tail_call.md",
+      "hash": "40830747e0f02b71a5f44f77e938b08ab1e5a1d2c553546deb607e6ccac76cc3"
+    },
+    "https://developer.apple.com/documentation/corefoundation/cf_noescape": {
+      "etag": "\"273d-65d5607a73fc7-df\"",
+      "file_path": "documentation/CoreFoundation/cf_noescape.md",
+      "hash": "9c52e75d6c64fb3b1e56c62eed88799b715003dee0001aaf0ce291344de559bc"
+    },
+    "https://developer.apple.com/documentation/corefoundation/cf_options": {
+      "etag": "\"27d3-65d560783beb3-df\"",
+      "file_path": "documentation/CoreFoundation/cf_options.md",
+      "hash": "3b84def9111f7b16a150563ced29127e98a1f71065341d0ef07dbf2de91ced6d"
+    },
+    "https://developer.apple.com/documentation/corefoundation/cf_refined_for_swift": {
+      "etag": "\"27a9-65d5607c4099a-df\"",
+      "file_path": "documentation/CoreFoundation/cf_refined_for_swift.md",
+      "hash": "16afc2092e3b95df9ac7af14394cf8375fac891d1fed03f5dbdaa7c7400f4a3c"
+    },
+    "https://developer.apple.com/documentation/corefoundation/cf_related_type": {
+      "etag": "\"2847-65d56079e2f18-df\"",
+      "file_path": "documentation/CoreFoundation/cf_related_type.md",
+      "hash": "5baae47cafe3b6f61aa03960704de74197b5a44a218fbfe7cc7803c3edb5c842"
+    },
+    "https://developer.apple.com/documentation/corefoundation/cf_releases_argument": {
+      "etag": "\"27a9-65d5607d1831d-df\"",
+      "file_path": "documentation/CoreFoundation/cf_releases_argument.md",
+      "hash": "1d2a9630e738b65055c38b087250d45aa4d739a32b1f84d7517fb0d7cd4b024f"
+    },
+    "https://developer.apple.com/documentation/corefoundation/cf_returns_not_retained": {
+      "etag": "\"27cd-65d5607c5e6c9-df\"",
+      "file_path": "documentation/CoreFoundation/cf_returns_not_retained.md",
+      "hash": "4bdca16189bfcf6b09d43c0da84c0f2671a05f95e098d1832ccab4972c65899d"
+    },
+    "https://developer.apple.com/documentation/corefoundation/cf_returns_retained": {
+      "etag": "\"279d-65d5607cda4ef-df\"",
+      "file_path": "documentation/CoreFoundation/cf_returns_retained.md",
+      "hash": "93bbf7a414838d9c9b6ff78e81e4e16fbde701b226e062e9f1706b44ade68289"
+    },
+    "https://developer.apple.com/documentation/corefoundation/cf_string_enum": {
+      "etag": "\"2761-65d5607d61793-df\"",
+      "file_path": "documentation/CoreFoundation/cf_string_enum.md",
+      "hash": "38d1ae5e3fab2a23af78b37841b8db2eb463d8b88d780734ca63c0c766c30dc9"
+    },
+    "https://developer.apple.com/documentation/corefoundation/cf_swift_bridged_typedef": {
+      "etag": "\"27d9-65d560775ade6-df\"",
+      "file_path": "documentation/CoreFoundation/cf_swift_bridged_typedef.md",
+      "hash": "abac4d897766e590d5c2327a5081f209d014d6f63e2a8ebc8cb6a41b13abf786"
+    },
+    "https://developer.apple.com/documentation/corefoundation/cf_swift_main_actor": {
+      "etag": "\"ac3-65d56079e2f18-df\"",
+      "file_path": "documentation/CoreFoundation/cf_swift_main_actor.md",
+      "hash": "6cf53d6dd1b7500a707117702bea662c937db5ca721e23229557bad403a3b1ca"
+    },
+    "https://developer.apple.com/documentation/corefoundation/cf_swift_name": {
+      "etag": "\"27b3-65d56077cf962-df\"",
+      "file_path": "documentation/CoreFoundation/cf_swift_name.md",
+      "hash": "d815a6f6bb2c73c5eaf38b10e75106898076ef9ab49069617bb8978e6661d89e"
+    },
+    "https://developer.apple.com/documentation/corefoundation/cf_swift_nonisolated": {
+      "etag": "\"acf-65d5607b80185-df\"",
+      "file_path": "documentation/CoreFoundation/cf_swift_nonisolated.md",
+      "hash": "450cb6b1e434864edf7242b4ad877a6ae65be7d437a6db1a592540d471f1a740"
+    },
+    "https://developer.apple.com/documentation/corefoundation/cf_swift_nonsendable": {
+      "etag": "\"acf-65d5607cda4ef-df\"",
+      "file_path": "documentation/CoreFoundation/cf_swift_nonsendable.md",
+      "hash": "eca48fd557e90c036883fc73a029a67ecaf0c88801918fbec1ae2ca09e47dd39"
+    },
+    "https://developer.apple.com/documentation/corefoundation/cf_swift_sendable": {
+      "etag": "\"aab-65d5607a1afab-df\"",
+      "file_path": "documentation/CoreFoundation/cf_swift_sendable.md",
+      "hash": "738915ca773b49893303355aa04461055455889f2338e3a7ad2874a13c29c17c"
+    },
+    "https://developer.apple.com/documentation/corefoundation/cf_swift_unavailable": {
+      "etag": "\"2806-65d560783beb3-df\"",
+      "file_path": "documentation/CoreFoundation/cf_swift_unavailable.md",
+      "hash": "f8766717b04b678bc9337e501b7fa9b6f1c3e6badd28ac270106d8f8b1e0e4a9"
+    },
+    "https://developer.apple.com/documentation/corefoundation/cf_swift_unavailable_from_async": {
+      "etag": "\"2889-65d560783beb3-df\"",
+      "file_path": "documentation/CoreFoundation/cf_swift_unavailable_from_async.md",
+      "hash": "729c1004421d9e15fda01694565b1a091d321b360e157ffba0639f4d20b703d4"
+    },
+    "https://developer.apple.com/documentation/corefoundation/cf_typed_enum": {
+      "etag": "\"2755-65d5607c240ba-df\"",
+      "file_path": "documentation/CoreFoundation/cf_typed_enum.md",
+      "hash": "538152e3a72214cf9ef7e46b3571c40e82eeb77abcd1834011bfc9835e3bc1b3"
+    },
+    "https://developer.apple.com/documentation/corefoundation/cf_typed_extensible_enum": {
+      "etag": "\"27d9-65d5607c0be4f-df\"",
+      "file_path": "documentation/CoreFoundation/cf_typed_extensible_enum.md",
+      "hash": "a1940917cbfb8d5e8bc43f24630f29cd280735cde0eaa3c359dab939380b2366"
+    },
+    "https://developer.apple.com/documentation/corefoundation/cf_use_osbyteorder_h": {
+      "etag": "\"27a9-65d5607aad206-df\"",
+      "file_path": "documentation/CoreFoundation/cf_use_osbyteorder_h.md",
+      "hash": "5ff4f52ec8a52e8b09834e9426af5b8366c3e45ac531b479725856b797ad689f"
+    },
+    "https://developer.apple.com/documentation/corefoundation/cf_warn_unused_result": {
+      "etag": "\"27b5-65d56079c671c-df\"",
+      "file_path": "documentation/CoreFoundation/cf_warn_unused_result.md",
+      "hash": "ea42861eedc802a107be5ea49439549c38fecc0d544b3c5535e1c9f347c68bd7"
     },
     "https://developer.apple.com/documentation/corefoundation/cfabsolutetime": {
       "etag": "\"27ef-65d560783beb3-df\"",
@@ -239,6 +559,11 @@
       "etag": "\"4b29-65d56078cac3f-df\"",
       "file_path": "documentation/CoreFoundation/cfallocatorcreate(_,_).md",
       "hash": "061b7901ad2e3a8a8759c4b9e9dcd0e129b68fc91628d3e075dbf99c96ee8656"
+    },
+    "https://developer.apple.com/documentation/corefoundation/cfallocatorcreatewithzone": {
+      "etag": "\"1196-6590294de6252-df\"",
+      "file_path": "documentation/CoreFoundation/cfallocatorcreatewithzone.md",
+      "hash": "2f6e71d9e78ec9065c0abdc2d370b71469fa0db0643fc19f5fb48bcd6b0d698a"
     },
     "https://developer.apple.com/documentation/corefoundation/cfallocatordeallocate(_:_:)": {
       "etag": "\"3d38-65d5607b47ab0-df\"",
@@ -614,6 +939,11 @@
       "etag": "\"6d1b-65d56079e2f18-df\"",
       "file_path": "documentation/CoreFoundation/cfattributedstringsetattributes(_,_,_,_).md",
       "hash": "c2a7a15a2504beffda7270c8fcca7d656b492baa94ca09b7f1e4e7646075e4e5"
+    },
+    "https://developer.apple.com/documentation/corefoundation/cfautorelease": {
+      "etag": "\"73c1-65d56078e4d85-df\"",
+      "file_path": "documentation/CoreFoundation/cfautorelease.md",
+      "hash": "284f85e4d083abcd92a3c03d992db70ed7f9d898dfd3cb722bc7c86047e5308e"
     },
     "https://developer.apple.com/documentation/corefoundation/cfbag": {
       "etag": "\"dbad-65d5607bbbae9-df\"",
@@ -1375,6 +1705,16 @@
       "file_path": "documentation/CoreFoundation/cfcalendar.md",
       "hash": "91d8f473255ba9f89bb1d7b84c71da7f64f04c10ff6797d9ed245d30c3dd13a2"
     },
+    "https://developer.apple.com/documentation/corefoundation/cfcalendaraddcomponents": {
+      "etag": "\"3949-65d56078cac3f-df\"",
+      "file_path": "documentation/CoreFoundation/cfcalendaraddcomponents.md",
+      "hash": "460285422de406a640b1cbd75c8e70b3c199d975608041ae38c3bb090ba1410b"
+    },
+    "https://developer.apple.com/documentation/corefoundation/cfcalendarcomposeabsolutetime": {
+      "etag": "\"2c20-65d5607d61793-df\"",
+      "file_path": "documentation/CoreFoundation/cfcalendarcomposeabsolutetime.md",
+      "hash": "57c6f096c9c070ce57094a26df62b00f9098443a756ce423efb8067bbe1fce93"
+    },
     "https://developer.apple.com/documentation/corefoundation/cfcalendarcopycurrent()": {
       "etag": "\"2c2b-65d56077b10fe-df\"",
       "file_path": "documentation/CoreFoundation/cfcalendarcopycurrent().md",
@@ -1394,6 +1734,16 @@
       "etag": "\"428c-65d5607a91aae-df\"",
       "file_path": "documentation/CoreFoundation/cfcalendarcreatewithidentifier(_,_).md",
       "hash": "29da258aea7e4da8fec5e09fdded3685c6052e9c3662e697a4eaaafa335b7fc1"
+    },
+    "https://developer.apple.com/documentation/corefoundation/cfcalendardecomposeabsolutetime": {
+      "etag": "\"2ac9-65d56078e4d85-df\"",
+      "file_path": "documentation/CoreFoundation/cfcalendardecomposeabsolutetime.md",
+      "hash": "338f0a8a787c1ecb6a1b070a7989236e3b7c23005fbf10ca47ba70a06dfff768"
+    },
+    "https://developer.apple.com/documentation/corefoundation/cfcalendargetcomponentdifference": {
+      "etag": "\"375a-65d5607b9e16c-df\"",
+      "file_path": "documentation/CoreFoundation/cfcalendargetcomponentdifference.md",
+      "hash": "fc9ebf8155beb4d8c26367338c5dc8d861bc0b68012b1fa8e6bc8ee4283180f9"
     },
     "https://developer.apple.com/documentation/corefoundation/cfcalendargetfirstweekday(_:)": {
       "etag": "\"38b5-65d5607a91aae-df\"",
@@ -1944,6 +2294,26 @@
       "etag": "\"8552-65d5607d61793-df\"",
       "file_path": "documentation/CoreFoundation/cfcopyhomedirectoryurl().md",
       "hash": "23c734ef3697ed364d1be940edf63bf32d9c083039917eef66d647fc095280d8"
+    },
+    "https://developer.apple.com/documentation/corefoundation/cfcopylocalizedstring": {
+      "etag": "\"3e7f-65d560783beb3-df\"",
+      "file_path": "documentation/CoreFoundation/cfcopylocalizedstring.md",
+      "hash": "5e17eabf571fa47fa112d6942b0d7c60f8bcb886c5a74142e7672b1570624ef1"
+    },
+    "https://developer.apple.com/documentation/corefoundation/cfcopylocalizedstringfromtable": {
+      "etag": "\"4033-65d5607c5e6c9-df\"",
+      "file_path": "documentation/CoreFoundation/cfcopylocalizedstringfromtable.md",
+      "hash": "fbfef36c00e7bd2bed49087ca6fc2ed028449a17fb3fa0b471983107afdfa183"
+    },
+    "https://developer.apple.com/documentation/corefoundation/cfcopylocalizedstringfromtableinbundle": {
+      "etag": "\"40fc-65d5607c4099a-df\"",
+      "file_path": "documentation/CoreFoundation/cfcopylocalizedstringfromtableinbundle.md",
+      "hash": "239269d0218b40a8817b1b7d61d7b5485b22a65bc5a2cadd30a0b733319c7837"
+    },
+    "https://developer.apple.com/documentation/corefoundation/cfcopylocalizedstringwithdefaultvalue": {
+      "etag": "\"4240-65d5607c240ba-df\"",
+      "file_path": "documentation/CoreFoundation/cfcopylocalizedstringwithdefaultvalue.md",
+      "hash": "1c616b21d5e31132844aa71c5aa2d1374dc603f50d4c6266d8052469cbbea2a8"
     },
     "https://developer.apple.com/documentation/corefoundation/cfcopytypeiddescription(_:)": {
       "etag": "\"3e10-65d56077cf962-df\"",
@@ -3505,6 +3875,11 @@
       "file_path": "documentation/CoreFoundation/cfmachportsetinvalidationcallback(_,_).md",
       "hash": "ab87ba996b7bdbe95412282269c3c8bedc4e9e67d491c2fdc50f051ab7193352"
     },
+    "https://developer.apple.com/documentation/corefoundation/cfmakecollectable": {
+      "etag": "\"242b-65d560783beb3-df\"",
+      "file_path": "documentation/CoreFoundation/cfmakecollectable.md",
+      "hash": "97d1f14287c8e52b05bf0f96add2bcf8168ed05d5d22f2fb83bd6d7781129597"
+    },
     "https://developer.apple.com/documentation/corefoundation/cfmessageport": {
       "etag": "\"e7c4-65d56079454b8-df\"",
       "file_path": "documentation/CoreFoundation/cfmessageport.md",
@@ -4655,6 +5030,11 @@
       "file_path": "documentation/CoreFoundation/cfpropertylistmutabilityoptions/init(rawvalue).md",
       "hash": "a30cc1ea348c68583a553b4bbedc525f6a71843a4fd8d50913ab43cfc71e58c3"
     },
+    "https://developer.apple.com/documentation/corefoundation/cfpropertylistmutabilityoptions/kcfpropertylistimmutable": {
+      "etag": "\"1eca-65d560785788a-df\"",
+      "file_path": "documentation/CoreFoundation/cfpropertylistmutabilityoptions/kcfpropertylistimmutable.md",
+      "hash": "8ef9e308b2385ab0b57ff76bb86c292c9e571790b4c7b93aaf6c70994d6f6adc"
+    },
     "https://developer.apple.com/documentation/corefoundation/cfpropertylistmutabilityoptions/mutablecontainers": {
       "etag": "\"2865-65d560785788a-df\"",
       "file_path": "documentation/CoreFoundation/cfpropertylistmutabilityoptions/mutablecontainers.md",
@@ -4804,6 +5184,16 @@
       "etag": "\"37ec-65d56078cac3f-df\"",
       "file_path": "documentation/CoreFoundation/cfreadstreamunschedulefromrunloop(_,_,_).md",
       "hash": "123aa825b4654bf5e551be86b973c0695b51b07e89703d8234b1e22f720cd2f3"
+    },
+    "https://developer.apple.com/documentation/corefoundation/cfrelease": {
+      "etag": "\"27c9-65d560780a411-df\"",
+      "file_path": "documentation/CoreFoundation/cfrelease.md",
+      "hash": "9228b3596d1de6e4196212e6ec028c9d6dd3c1cd8684560086deb353019b2f6c"
+    },
+    "https://developer.apple.com/documentation/corefoundation/cfretain": {
+      "etag": "\"27ef-65d5607b30e55-df\"",
+      "file_path": "documentation/CoreFoundation/cfretain.md",
+      "hash": "f6c89e050851eede883501bc6d5345e92041bf82576d08f7663149d9c5f6bfb8"
     },
     "https://developer.apple.com/documentation/corefoundation/cfrunloop": {
       "etag": "\"12f04-65d560780a411-df\"",
@@ -5620,6 +6010,11 @@
       "file_path": "documentation/CoreFoundation/cfsocketcallbacktype/init(rawvalue).md",
       "hash": "3b86e02b82079dd9e9a951b2df434bad2fccd93165356836c546d9b3236f54a4"
     },
+    "https://developer.apple.com/documentation/corefoundation/cfsocketcallbacktype/kcfsocketnocallback": {
+      "etag": "\"32c0-65d560795ed96-df\"",
+      "file_path": "documentation/CoreFoundation/cfsocketcallbacktype/kcfsocketnocallback.md",
+      "hash": "a5ed8fb92fca31ad6f74fc0eff4e46a7b9f28bb517b7d7b2bfc2aae3170c64d9"
+    },
     "https://developer.apple.com/documentation/corefoundation/cfsocketcallbacktype/readcallback": {
       "etag": "\"3d62-65d560795ed96-df\"",
       "file_path": "documentation/CoreFoundation/cfsocketcallbacktype/readcallback.md",
@@ -5865,6 +6260,11 @@
       "file_path": "documentation/CoreFoundation/cfsocketunregister(_,_,_).md",
       "hash": "7402cbadb5e5ce6b38d9821fc3a121cba5b4b5e28859e3ec03e9dda2215fdca9"
     },
+    "https://developer.apple.com/documentation/corefoundation/cfstr": {
+      "etag": "\"7d31-65d5607c4099a-df\"",
+      "file_path": "documentation/CoreFoundation/cfstr.md",
+      "hash": "60cb7509d4b9692f4ed49a751ba116f10bac09d37dd3ea9ec803ddff790de1f4"
+    },
     "https://developer.apple.com/documentation/corefoundation/cfstream": {
       "etag": "\"f4e2-6590294f868f8-df\"",
       "file_path": "documentation/CoreFoundation/cfstream.md",
@@ -6030,6 +6430,11 @@
       "file_path": "documentation/CoreFoundation/cfstreameventtype/init(rawvalue).md",
       "hash": "429908ec4c216051e31ba2c5ed072534d754339153d8cdcb7d1033a8ba83f7a4"
     },
+    "https://developer.apple.com/documentation/corefoundation/cfstreameventtype/kcfstreameventnone": {
+      "etag": "\"2ab9-65d560780a411-df\"",
+      "file_path": "documentation/CoreFoundation/cfstreameventtype/kcfstreameventnone.md",
+      "hash": "fb957718a67d1a4f5f040d8bba91c52e33d0e27502ae81ce42c7796ff532343c"
+    },
     "https://developer.apple.com/documentation/corefoundation/cfstreameventtype/opencompleted": {
       "etag": "\"34ee-65d560780a411-df\"",
       "file_path": "documentation/CoreFoundation/cfstreameventtype/opencompleted.md",
@@ -6149,6 +6554,11 @@
       "etag": "\"9741-65d5607a73fc7-df\"",
       "file_path": "documentation/CoreFoundation/cfstringappendcstring(_,_,_).md",
       "hash": "5490335961ae6e21887a7c33d8aeaeff35becca089533cfba461778d12dd7ad6"
+    },
+    "https://developer.apple.com/documentation/corefoundation/cfstringappendformat": {
+      "etag": "\"845f-65d5607c4099a-df\"",
+      "file_path": "documentation/CoreFoundation/cfstringappendformat.md",
+      "hash": "6ee274d19649255f298e087b96e81d3cbd464bee6b35484a102bff0796c131db"
     },
     "https://developer.apple.com/documentation/corefoundation/cfstringappendformatandarguments(_:_:_:_:)": {
       "etag": "\"a635-65d56077cf962-df\"",
@@ -6390,6 +6800,16 @@
       "file_path": "documentation/CoreFoundation/cfstringcreatemutablewithexternalcharactersnocopy(_,_,_,_,_).md",
       "hash": "3aa5dfdfd2a08fea157dd001f7287568f8d4cc2d28b34c27cbbf8db2e52a2e2b"
     },
+    "https://developer.apple.com/documentation/corefoundation/cfstringcreatestringwithvalidatedformat": {
+      "etag": "\"7f6a-65d56078cac3f-df\"",
+      "file_path": "documentation/CoreFoundation/cfstringcreatestringwithvalidatedformat.md",
+      "hash": "345f88d5cf6add2c3d658a55592544b20e32cb60193b987239df6826d8851aec"
+    },
+    "https://developer.apple.com/documentation/corefoundation/cfstringcreatestringwithvalidatedformatandarguments": {
+      "etag": "\"81fb-65d56077cf962-df\"",
+      "file_path": "documentation/CoreFoundation/cfstringcreatestringwithvalidatedformatandarguments.md",
+      "hash": "e1db38cc9f6a135fa4bac08be1cbbba0e4b71b9cb4130efb60558bf85d6bf559"
+    },
     "https://developer.apple.com/documentation/corefoundation/cfstringcreatewithbytes(_:_:_:_:_:)": {
       "etag": "\"c4de-65d5607b15e77-df\"",
       "file_path": "documentation/CoreFoundation/cfstringcreatewithbytes(_,_,_,_,_).md",
@@ -6424,6 +6844,11 @@
       "etag": "\"4e06-65d5607b9e16c-df\"",
       "file_path": "documentation/CoreFoundation/cfstringcreatewithfilesystemrepresentation(_,_).md",
       "hash": "c128647ffaa84fb599709e757cd73f0776f1fb23bc5e20f4a88a6786b2b93970"
+    },
+    "https://developer.apple.com/documentation/corefoundation/cfstringcreatewithformat": {
+      "etag": "\"9573-65d5607a3bebc-df\"",
+      "file_path": "documentation/CoreFoundation/cfstringcreatewithformat.md",
+      "hash": "2f89540616342a7b5ea622312196bbeb85d60fe545073e770916352c22013e24"
     },
     "https://developer.apple.com/documentation/corefoundation/cfstringcreatewithformatandarguments(_:_:_:_:)": {
       "etag": "\"b9df-65d56079c671c-df\"",
@@ -7515,6 +7940,11 @@
       "file_path": "documentation/CoreFoundation/cfstringtokenizertokentype/iscjwordmask.md",
       "hash": "7b8c0b9a3ca57eed631c553cb6483a898282d1830393184d7ddd92684d878eb6"
     },
+    "https://developer.apple.com/documentation/corefoundation/cfstringtokenizertokentype/kcfstringtokenizertokennone": {
+      "etag": "\"40c1-65d5607b30e55-df\"",
+      "file_path": "documentation/CoreFoundation/cfstringtokenizertokentype/kcfstringtokenizertokennone.md",
+      "hash": "1069a1dec997584e9b9873e66f7c7212a8e8f78e4ae16b841db84f399c6aa547"
+    },
     "https://developer.apple.com/documentation/corefoundation/cfstringtokenizertokentype/normal": {
       "etag": "\"4b7d-65d5607b30e55-df\"",
       "file_path": "documentation/CoreFoundation/cfstringtokenizertokentype/normal.md",
@@ -8430,6 +8860,11 @@
       "file_path": "documentation/CoreFoundation/cfurlenumeratoroptions/init(rawvalue).md",
       "hash": "980da704e022b6ff22892a46e794ad7092c9ce2ba7132cdfabc705dc4ac8c3fa"
     },
+    "https://developer.apple.com/documentation/corefoundation/cfurlenumeratoroptions/kcfurlenumeratordefaultbehavior": {
+      "etag": "\"36b5-65d56079e2f18-df\"",
+      "file_path": "documentation/CoreFoundation/cfurlenumeratoroptions/kcfurlenumeratordefaultbehavior.md",
+      "hash": "826de1d106d761d26ecdb3ae51053ebe592ba25f722a365ab81f608dbec8bfa8"
+    },
     "https://developer.apple.com/documentation/corefoundation/cfurlenumeratoroptions/skipinvisibles": {
       "etag": "\"417e-65d56079e2f18-df\"",
       "file_path": "documentation/CoreFoundation/cfurlenumeratoroptions/skipinvisibles.md",
@@ -9235,6 +9670,41 @@
       "file_path": "documentation/CoreFoundation/cfxmlnode.md",
       "hash": "c464710d11d3936e2e59c6341457bf35ad3de3999001cf617dbba8fb0b8ac161"
     },
+    "https://developer.apple.com/documentation/corefoundation/cfxmlnodecreate": {
+      "etag": "\"4078-65d5607777222-df\"",
+      "file_path": "documentation/CoreFoundation/cfxmlnodecreate.md",
+      "hash": "cf7558bd3ad7f8d4fcc87ecf5a50475e51a60b2d8f8906d821cd36b940c72bba"
+    },
+    "https://developer.apple.com/documentation/corefoundation/cfxmlnodecreatecopy": {
+      "etag": "\"2a3b-65d5607aad206-df\"",
+      "file_path": "documentation/CoreFoundation/cfxmlnodecreatecopy.md",
+      "hash": "1d864dea0e8a86d336d5daefd2fa63cc0c731a3d18a4cbfda2e23f8145dc4efb"
+    },
+    "https://developer.apple.com/documentation/corefoundation/cfxmlnodegetinfoptr": {
+      "etag": "\"29fe-65d5607adc756-df\"",
+      "file_path": "documentation/CoreFoundation/cfxmlnodegetinfoptr.md",
+      "hash": "0f62003514d5ab872cc3f0c769f0d3f5361d128f676960edae82d3e3c0ee6e7b"
+    },
+    "https://developer.apple.com/documentation/corefoundation/cfxmlnodegetstring": {
+      "etag": "\"27c8-65d5607c5e6c9-df\"",
+      "file_path": "documentation/CoreFoundation/cfxmlnodegetstring.md",
+      "hash": "b33b8de2b5c2405d8f45cef9b30160e77f610456a0be35fa9590d51e80f33bea"
+    },
+    "https://developer.apple.com/documentation/corefoundation/cfxmlnodegettypecode": {
+      "etag": "\"2575-65d5607a1afab-df\"",
+      "file_path": "documentation/CoreFoundation/cfxmlnodegettypecode.md",
+      "hash": "d840af8c533e9ce4413b5b1c437f50b33002ae292d87098879df393ec38721e7"
+    },
+    "https://developer.apple.com/documentation/corefoundation/cfxmlnodegettypeid": {
+      "etag": "\"1f49-65d560783beb3-df\"",
+      "file_path": "documentation/CoreFoundation/cfxmlnodegettypeid.md",
+      "hash": "93830cb548eebd963e5be6ff96e03446f7a658c52ed4aeec260dea2f5324c32d"
+    },
+    "https://developer.apple.com/documentation/corefoundation/cfxmlnodegetversion": {
+      "etag": "\"24a1-65d56077cf962-df\"",
+      "file_path": "documentation/CoreFoundation/cfxmlnodegetversion.md",
+      "hash": "482887506632664f1e5110585d76f42996a506720e342297c9c9b4bd179599f8"
+    },
     "https://developer.apple.com/documentation/corefoundation/cfxmlnodetypecode": {
       "etag": "\"b3a0-65d56079454b8-df\"",
       "file_path": "documentation/CoreFoundation/cfxmlnodetypecode.md",
@@ -9345,6 +9815,11 @@
       "file_path": "documentation/CoreFoundation/cfxmlparser.md",
       "hash": "5dbc3ddd9536821d9850520d0dbbe0355f0f97ef42b64996a0367ce94c567ecd"
     },
+    "https://developer.apple.com/documentation/corefoundation/cfxmlparserabort": {
+      "etag": "\"3c42-65d560790a2b3-df\"",
+      "file_path": "documentation/CoreFoundation/cfxmlparserabort.md",
+      "hash": "17bc4035b4547d97c8fb9592ee03411cae9e2ad644c697a4532b81b28c2ecd64"
+    },
     "https://developer.apple.com/documentation/corefoundation/cfxmlparseraddchildcallback": {
       "etag": "\"5b17-65d5607826821-df\"",
       "file_path": "documentation/CoreFoundation/cfxmlparseraddchildcallback.md",
@@ -9440,6 +9915,21 @@
       "file_path": "documentation/CoreFoundation/cfxmlparsercopydescriptioncallback.md",
       "hash": "22409b4cb432e3db2b38f31a766cc43a0965aaf23b639a5726a33371d1ed8d50"
     },
+    "https://developer.apple.com/documentation/corefoundation/cfxmlparsercopyerrordescription": {
+      "etag": "\"3819-65d5607dad515-df\"",
+      "file_path": "documentation/CoreFoundation/cfxmlparsercopyerrordescription.md",
+      "hash": "a7172461c28ad09adcc9e8dd09ad6aaa25ff9b157a4345cd575a2658d9add058"
+    },
+    "https://developer.apple.com/documentation/corefoundation/cfxmlparsercreate": {
+      "etag": "\"6428-65d5607d85669-df\"",
+      "file_path": "documentation/CoreFoundation/cfxmlparsercreate.md",
+      "hash": "8c167be940ff6ca0d57b46faacfaa78aca2bf27f39ff9983d619380e4ef66c2a"
+    },
+    "https://developer.apple.com/documentation/corefoundation/cfxmlparsercreatewithdatafromurl": {
+      "etag": "\"5eeb-65d560775ade6-df\"",
+      "file_path": "documentation/CoreFoundation/cfxmlparsercreatewithdatafromurl.md",
+      "hash": "d88a8ba9c5d4121ffd833531acd3ecaac899c7d27aac745e932e337285f2af77"
+    },
     "https://developer.apple.com/documentation/corefoundation/cfxmlparsercreatexmlstructurecallback": {
       "etag": "\"5e08-65d5607a5b197-df\"",
       "file_path": "documentation/CoreFoundation/cfxmlparsercreatexmlstructurecallback.md",
@@ -9449,6 +9939,46 @@
       "etag": "\"59d1-65d5607aad206-df\"",
       "file_path": "documentation/CoreFoundation/cfxmlparserendxmlstructurecallback.md",
       "hash": "a619073c96a18c5c8f85b70ff1bddfea2b202cc71798e1ab37b99bae31c69592"
+    },
+    "https://developer.apple.com/documentation/corefoundation/cfxmlparsergetcallbacks": {
+      "etag": "\"35c6-65d5607826821-df\"",
+      "file_path": "documentation/CoreFoundation/cfxmlparsergetcallbacks.md",
+      "hash": "c69bc159c90fbc5185b67ff25a8640d99f9bc559e3a98af26eefc9dd4c51b77e"
+    },
+    "https://developer.apple.com/documentation/corefoundation/cfxmlparsergetcontext": {
+      "etag": "\"376d-65d5607aad206-df\"",
+      "file_path": "documentation/CoreFoundation/cfxmlparsergetcontext.md",
+      "hash": "fd9d12f09a76dbba702aede1e9a6c821d7a722e52c15c78c827a0fe30341468d"
+    },
+    "https://developer.apple.com/documentation/corefoundation/cfxmlparsergetdocument": {
+      "etag": "\"394b-65d560780a411-df\"",
+      "file_path": "documentation/CoreFoundation/cfxmlparsergetdocument.md",
+      "hash": "af7d894b35d6593cdc57c3f97633a9d8254da5de04d64160e9d54045495eee38"
+    },
+    "https://developer.apple.com/documentation/corefoundation/cfxmlparsergetlinenumber": {
+      "etag": "\"3b3b-65d5607826821-df\"",
+      "file_path": "documentation/CoreFoundation/cfxmlparsergetlinenumber.md",
+      "hash": "b615c0b7ab965284890e7f5098975150230b39dbb39d2781c224e978d3413769"
+    },
+    "https://developer.apple.com/documentation/corefoundation/cfxmlparsergetlocation": {
+      "etag": "\"3b3d-65d5607d85669-df\"",
+      "file_path": "documentation/CoreFoundation/cfxmlparsergetlocation.md",
+      "hash": "14aa094039c2a857e9d8328f49991a67350f2cb9c668bf194e43a9da396d4df6"
+    },
+    "https://developer.apple.com/documentation/corefoundation/cfxmlparsergetsourceurl": {
+      "etag": "\"372b-65d5607af74ba-df\"",
+      "file_path": "documentation/CoreFoundation/cfxmlparsergetsourceurl.md",
+      "hash": "8ce069a4641f94f7e82d401f2ab54d4412b7321ccc1f46a8203842c678533656"
+    },
+    "https://developer.apple.com/documentation/corefoundation/cfxmlparsergetstatuscode": {
+      "etag": "\"3719-65d5607a73fc7-df\"",
+      "file_path": "documentation/CoreFoundation/cfxmlparsergetstatuscode.md",
+      "hash": "667b2f839e4a7edfa35902ab88c5882a193f5d46496dc39bc7c679ed70d189cc"
+    },
+    "https://developer.apple.com/documentation/corefoundation/cfxmlparsergettypeid": {
+      "etag": "\"2ece-65d5607793d05-df\"",
+      "file_path": "documentation/CoreFoundation/cfxmlparsergettypeid.md",
+      "hash": "39e4fbccf2f8b81a8a21cbd26da0df630870cb13b04ec7cdccb4e27bdda93fd2"
     },
     "https://developer.apple.com/documentation/corefoundation/cfxmlparserhandleerrorcallback": {
       "etag": "\"5a07-65d56079e2f18-df\"",
@@ -9475,6 +10005,11 @@
       "file_path": "documentation/CoreFoundation/cfxmlparseroptions/init(rawvalue).md",
       "hash": "9526ccd631809575dd18c07bde7809819f118f8e7a607d023ad17976d3a650e6"
     },
+    "https://developer.apple.com/documentation/corefoundation/cfxmlparseroptions/kcfxmlparsernooptions": {
+      "etag": "\"38d0-65d560792c2be-df\"",
+      "file_path": "documentation/CoreFoundation/cfxmlparseroptions/kcfxmlparsernooptions.md",
+      "hash": "9ec43825390e22d85bcb9a8a5544eb173e7f9b817d197d960a20b29a68211edf"
+    },
     "https://developer.apple.com/documentation/corefoundation/cfxmlparseroptions/replacephysicalentities": {
       "etag": "\"4517-65d560790a2b3-df\"",
       "file_path": "documentation/CoreFoundation/cfxmlparseroptions/replacephysicalentities.md",
@@ -9499,6 +10034,11 @@
       "etag": "\"433f-65d560792c2be-df\"",
       "file_path": "documentation/CoreFoundation/cfxmlparseroptions/validatedocument.md",
       "hash": "9cf83506094d353a86327833e7e87eae78c8cdf28dd6cb311265a72811c45466"
+    },
+    "https://developer.apple.com/documentation/corefoundation/cfxmlparserparse": {
+      "etag": "\"35ae-65d5607cda4ef-df\"",
+      "file_path": "documentation/CoreFoundation/cfxmlparserparse.md",
+      "hash": "d90f94917304ab2f7a0ccd045dd82e9f801744d19d097f4b80b2d7c4f731bd6f"
     },
     "https://developer.apple.com/documentation/corefoundation/cfxmlparserreleasecallback": {
       "etag": "\"4d47-65d5607af74ba-df\"",
@@ -9600,6 +10140,11 @@
       "file_path": "documentation/CoreFoundation/cfxmlparserstatuscode/init(rawvalue).md",
       "hash": "7bfbbfc5f9e06657d335af6c5b096bd117aacbde10c05c2f7ed72576f4726428"
     },
+    "https://developer.apple.com/documentation/corefoundation/cfxmlparserstatuscode/kcfxmlstatusparsesuccessful": {
+      "etag": "\"64be-65d560795ed96-df\"",
+      "file_path": "documentation/CoreFoundation/cfxmlparserstatuscode/kcfxmlstatusparsesuccessful.md",
+      "hash": "7e56205b7f76e25a187484d4b0121dfa8744b4ea49526a29891f1257b26ca355"
+    },
     "https://developer.apple.com/documentation/corefoundation/cfxmlparserstatuscode/statusparseinprogress": {
       "etag": "\"78f2-65d560795ed96-df\"",
       "file_path": "documentation/CoreFoundation/cfxmlparserstatuscode/statusparseinprogress.md",
@@ -9634,6 +10179,36 @@
       "etag": "\"84e2-65d56077cf962-df\"",
       "file_path": "documentation/CoreFoundation/cfxmltree.md",
       "hash": "b775342d89aef9fdbd60a81042e6839d533d44cbec04b24813a69d0b7e9757d3"
+    },
+    "https://developer.apple.com/documentation/corefoundation/cfxmltreecreatefromdata": {
+      "etag": "\"5616-65d5607a73fc7-df\"",
+      "file_path": "documentation/CoreFoundation/cfxmltreecreatefromdata.md",
+      "hash": "01aa31dc30ea23a5de8986e789215781820e64fae6e9a970ced0d883f6cdb864"
+    },
+    "https://developer.apple.com/documentation/corefoundation/cfxmltreecreatefromdatawitherror": {
+      "etag": "\"5fb9-65d5607777222-df\"",
+      "file_path": "documentation/CoreFoundation/cfxmltreecreatefromdatawitherror.md",
+      "hash": "9366d3f71de9c4c04e986bf9ff029b2b7d82ca1cf7b84c94e95867c71839dd2e"
+    },
+    "https://developer.apple.com/documentation/corefoundation/cfxmltreecreatewithdatafromurl": {
+      "etag": "\"4e34-65d5607c5e6c9-df\"",
+      "file_path": "documentation/CoreFoundation/cfxmltreecreatewithdatafromurl.md",
+      "hash": "103079b2e4112a5071b94c3e755c28391e18c1d32420bd16cd5978c730cc8140"
+    },
+    "https://developer.apple.com/documentation/corefoundation/cfxmltreecreatewithnode": {
+      "etag": "\"3c0e-65d560785788a-df\"",
+      "file_path": "documentation/CoreFoundation/cfxmltreecreatewithnode.md",
+      "hash": "f525539467eac2a89adafb4d71ad510b25d724db937ca19c608f507e46d1ff05"
+    },
+    "https://developer.apple.com/documentation/corefoundation/cfxmltreecreatexmldata": {
+      "etag": "\"3def-65d5607d61793-df\"",
+      "file_path": "documentation/CoreFoundation/cfxmltreecreatexmldata.md",
+      "hash": "9a02c0db0cabc1c465d9414729cfe8c0c78eb63fa2d9efdc6a0b5d6d556e99e4"
+    },
+    "https://developer.apple.com/documentation/corefoundation/cfxmltreegetnode": {
+      "etag": "\"35b6-65d5607a5b197-df\"",
+      "file_path": "documentation/CoreFoundation/cfxmltreegetnode.md",
+      "hash": "add548628a988bf938f8ea1f6aa424547b7fc5d8b1c64161ada2a6358b84f18a"
     },
     "https://developer.apple.com/documentation/corefoundation/cgaffinetransform": {
       "etag": "\"9825-65d5607826821-df\"",
@@ -9785,6 +10360,11 @@
       "file_path": "documentation/CoreFoundation/cgaffinetransformcomponents/translation.md",
       "hash": "ef859d54b93b45fce8861b39f5687dde4027c1f40358cf45fa3b3a8c6d55f6b1"
     },
+    "https://developer.apple.com/documentation/corefoundation/cgfloat-c.typealias": {
+      "etag": "\"440f-65d5607d85669-df\"",
+      "file_path": "documentation/CoreFoundation/cgfloat-c.typealias.md",
+      "hash": "f1952c7082abd77d3da3064f29cdc2430f2686bd694523851e326f7428d7246f"
+    },
     "https://developer.apple.com/documentation/corefoundation/cgfloat-swift.struct": {
       "etag": "\"9fd6-65d560775ade6-df\"",
       "file_path": "documentation/CoreFoundation/cgfloat-swift.struct.md",
@@ -9934,6 +10514,11 @@
       "etag": "\"72f6-65d5607a3bebc-df\"",
       "file_path": "documentation/CoreFoundation/cgfloat_min.md",
       "hash": "068995faff986af257af885519cf8647781c16bb3c2ab41777965eae6633b61f"
+    },
+    "https://developer.apple.com/documentation/corefoundation/cgfloat_type": {
+      "etag": "\"2749-65d56078e4d85-df\"",
+      "file_path": "documentation/CoreFoundation/cgfloat_type.md",
+      "hash": "dc7d8b6be0b48f35ec266f74b9c9b75f65229e5dfbd6fbd0270533c3a99c4dc0"
     },
     "https://developer.apple.com/documentation/corefoundation/cgpoint": {
       "etag": "\"7db1-65d56078cac3f-df\"",
@@ -10370,6 +10955,11 @@
       "file_path": "documentation/CoreFoundation/cgvector/zero.md",
       "hash": "0954176377d2b787ba338c34b3a126276d361280df9c9dfd83126a4dd0ce2370"
     },
+    "https://developer.apple.com/documentation/corefoundation/cgvector_defined": {
+      "etag": "\"2779-65d5607a91aae-df\"",
+      "file_path": "documentation/CoreFoundation/cgvector_defined.md",
+      "hash": "8ae9ca9a04de5e3fef1e67c9ef72f3e40cc58175766990f3bdc2b797ea37422b"
+    },
     "https://developer.apple.com/documentation/corefoundation/common-file-system-resource-keys": {
       "etag": "\"e152-6590294d3d7ee-df\"",
       "file_path": "documentation/CoreFoundation/common-file-system-resource-keys.md",
@@ -10445,6 +11035,56 @@
       "file_path": "documentation/CoreFoundation/dialog-description-keys.md",
       "hash": "716efa78f74ed819a0c42b91ddf796f5a7ecb7c5330c4932e5be43eeda9f02a0"
     },
+    "https://developer.apple.com/documentation/corefoundation/e_abort": {
+      "etag": "\"270d-65d560792c2be-df\"",
+      "file_path": "documentation/CoreFoundation/e_abort.md",
+      "hash": "c25c6365d5166ff6cac47106aadf2f5f262a8fadef4da47c4eb1424e65baa8cd"
+    },
+    "https://developer.apple.com/documentation/corefoundation/e_accessdenied": {
+      "etag": "\"2761-65d5607cf80f8-df\"",
+      "file_path": "documentation/CoreFoundation/e_accessdenied.md",
+      "hash": "6491d3c3e6455deeb121b60bbd1465b2c3140ffe39d66481c3e39608fe21b5dc"
+    },
+    "https://developer.apple.com/documentation/corefoundation/e_fail": {
+      "etag": "\"2701-65d560790a2b3-df\"",
+      "file_path": "documentation/CoreFoundation/e_fail.md",
+      "hash": "a08e202fe87815a06d4a3de751c4b59cd9bd4fbfb0e5a44dfdd3c74440305405"
+    },
+    "https://developer.apple.com/documentation/corefoundation/e_handle": {
+      "etag": "\"2719-65d5607c4099a-df\"",
+      "file_path": "documentation/CoreFoundation/e_handle.md",
+      "hash": "b67f93d49bd147f932806f0c57b61f4c081bb60c6f255caf375bb8fd16ecea62"
+    },
+    "https://developer.apple.com/documentation/corefoundation/e_invalidarg": {
+      "etag": "\"2749-65d560789392e-df\"",
+      "file_path": "documentation/CoreFoundation/e_invalidarg.md",
+      "hash": "36bbd1a8341a232bfbe406d6c8e812130560c1db7705b46bb262ec2d56b07f71"
+    },
+    "https://developer.apple.com/documentation/corefoundation/e_nointerface": {
+      "etag": "\"2755-65d5607dad515-df\"",
+      "file_path": "documentation/CoreFoundation/e_nointerface.md",
+      "hash": "f10141bf0f87e338c2eab8827dc4a37b7e15840ecd64766cebb77a8a2aa4fc46"
+    },
+    "https://developer.apple.com/documentation/corefoundation/e_notimpl": {
+      "etag": "\"2725-65d5607adc756-df\"",
+      "file_path": "documentation/CoreFoundation/e_notimpl.md",
+      "hash": "360a15fcbfcf4c627af19b4e4b39c185701b9ccfef44d96d29d05d5eddcaa2c2"
+    },
+    "https://developer.apple.com/documentation/corefoundation/e_outofmemory": {
+      "etag": "\"2755-65d5607dad515-df\"",
+      "file_path": "documentation/CoreFoundation/e_outofmemory.md",
+      "hash": "4b39d7f514becf7f7be99dab02beee5019014ecb735ca4b883fa251c21d58889"
+    },
+    "https://developer.apple.com/documentation/corefoundation/e_pointer": {
+      "etag": "\"2725-65d5607a5b197-df\"",
+      "file_path": "documentation/CoreFoundation/e_pointer.md",
+      "hash": "2a0850a11e222af6a230ede5e135fd1d87c6ebf0f9cf7f5894177f866e1d2093"
+    },
+    "https://developer.apple.com/documentation/corefoundation/e_unexpected": {
+      "etag": "\"2749-65d5607dad515-df\"",
+      "file_path": "documentation/CoreFoundation/e_unexpected.md",
+      "hash": "d21cf06f8b8d8bfce9ee4b164a958b97788e9cb08f30dc6eb6d5fb69d07f028e"
+    },
     "https://developer.apple.com/documentation/corefoundation/error-dictionary-keys": {
       "etag": "\"2c27-6590294c3572c-df\"",
       "file_path": "documentation/CoreFoundation/error-dictionary-keys.md",
@@ -10464,6 +11104,16 @@
       "etag": "\"276f8-65902949adef0-df\"",
       "file_path": "documentation/CoreFoundation/external-string-encodings.md",
       "hash": "136d229d9ab8a301c80854b540e8ccf89bc42dd9dbadd24c4655534bdf02a077"
+    },
+    "https://developer.apple.com/documentation/corefoundation/failed": {
+      "etag": "\"2760-65d5607af74ba-df\"",
+      "file_path": "documentation/CoreFoundation/failed.md",
+      "hash": "e0d9857d8b0bccf6026e4ea6815138ec66d922b17c2a4e1466926fde9c6103e8"
+    },
+    "https://developer.apple.com/documentation/corefoundation/false": {
+      "etag": "\"26f5-65d5607cf80f8-df\"",
+      "file_path": "documentation/CoreFoundation/false.md",
+      "hash": "6b2a815bb20cffa0d7d96d989d7afb182497ea2992371240eaf7e0661f233aef"
     },
     "https://developer.apple.com/documentation/corefoundation/file-property-keys": {
       "etag": "\"41ff-6590294bd5347-df\"",
@@ -10485,6 +11135,26 @@
       "file_path": "documentation/CoreFoundation/framework-version-numbers.md",
       "hash": "969bd8120cdec96122ad200154fec5a275958dee8146984a21421b7a35fa76bc"
     },
+    "https://developer.apple.com/documentation/corefoundation/hresult": {
+      "etag": "\"4507-65d5607bf2347-df\"",
+      "file_path": "documentation/CoreFoundation/hresult.md",
+      "hash": "6ee6a72a150d86ddf0f21a70cc967c0356dccaf37ba387a77c9f5dda45407448"
+    },
+    "https://developer.apple.com/documentation/corefoundation/hresult_code": {
+      "etag": "\"27a4-65d5607d61793-df\"",
+      "file_path": "documentation/CoreFoundation/hresult_code.md",
+      "hash": "b2298b42ac95de155be3707a5f5d4891fb2d9d9e7c94ea9ba0796c4633bbb13c"
+    },
+    "https://developer.apple.com/documentation/corefoundation/hresult_facility": {
+      "etag": "\"27d4-65d5607af74ba-df\"",
+      "file_path": "documentation/CoreFoundation/hresult_facility.md",
+      "hash": "e734d5cffa2cb8ac25c7a3d9811f48d29d10e540d512b823b28d1e8c76603a84"
+    },
+    "https://developer.apple.com/documentation/corefoundation/hresult_severity": {
+      "etag": "\"27d4-65d560799306f-df\"",
+      "file_path": "documentation/CoreFoundation/hresult_severity.md",
+      "hash": "dd9586122959ba7ae118bda2cba2c1a87a536b42f37fce4154762847af0a9f30"
+    },
     "https://developer.apple.com/documentation/corefoundation/http-url-properties": {
       "etag": "\"1efb-6590294ee482a-df\"",
       "file_path": "documentation/CoreFoundation/http-url-properties.md",
@@ -10505,10 +11175,45 @@
       "file_path": "documentation/CoreFoundation/invalid-string-encoding-flag.md",
       "hash": "325f814ffcfc54b9ba3c3cceccc6abf1592764d7130c378d454af5182c600132"
     },
+    "https://developer.apple.com/documentation/corefoundation/is_error": {
+      "etag": "\"2778-65d5607877c1b-df\"",
+      "file_path": "documentation/CoreFoundation/is_error.md",
+      "hash": "028af71a4cb65cb6f33db3d95cb339f8a4d01df25c6b4440876aa8d44a7dbd42"
+    },
     "https://developer.apple.com/documentation/corefoundation/isa_ptrauth_discriminator": {
       "etag": "\"6f89-65d5607b80185-df\"",
       "file_path": "documentation/CoreFoundation/isa_ptrauth_discriminator.md",
       "hash": "77fb69ecda7e7167e7e752ffe494369a7b40e0d4487a0999537ae7e15bfc6050"
+    },
+    "https://developer.apple.com/documentation/corefoundation/iunknown_c_guts": {
+      "etag": "\"276d-65d56077b10fe-df\"",
+      "file_path": "documentation/CoreFoundation/iunknown_c_guts.md",
+      "hash": "f26e40e04a9e82e90ad4ddccbbbf7c3ef81d324d73228cbb3d15d95d32d39931"
+    },
+    "https://developer.apple.com/documentation/corefoundation/iunknownuuid": {
+      "etag": "\"2749-65d5607d85669-df\"",
+      "file_path": "documentation/CoreFoundation/iunknownuuid.md",
+      "hash": "9a0e63984c7d484c7abfc22e99a7a7292de90c2244ba7b1e7103f55f5fca21ee"
+    },
+    "https://developer.apple.com/documentation/corefoundation/iunknownvtbl": {
+      "etag": "\"2bf3-65d560789392e-df\"",
+      "file_path": "documentation/CoreFoundation/iunknownvtbl.md",
+      "hash": "9dc4d69af700d081e83ab87b9b63f87bac68006676fbc216f8c08b0f37e891b0"
+    },
+    "https://developer.apple.com/documentation/corefoundation/iunknownvtbl/addref": {
+      "etag": "\"c99-65d56079e2f18-df\"",
+      "file_path": "documentation/CoreFoundation/iunknownvtbl/addref.md",
+      "hash": "a8b0ef05b285fca0bbebb1f340a06ffd1fdddf486773c7a63a8e5bd0ba7b7da0"
+    },
+    "https://developer.apple.com/documentation/corefoundation/iunknownvtbl/queryinterface": {
+      "etag": "\"d1c-65d56079e2f18-df\"",
+      "file_path": "documentation/CoreFoundation/iunknownvtbl/queryinterface.md",
+      "hash": "4a07c5767eb47555126df93c83eb01c9e391414a0bc7e227c668a4a24c3113b9"
+    },
+    "https://developer.apple.com/documentation/corefoundation/iunknownvtbl/release": {
+      "etag": "\"ca5-65d56079e2f18-df\"",
+      "file_path": "documentation/CoreFoundation/iunknownvtbl/release.md",
+      "hash": "1850d2caed643ff3414683064486d4f4c2476fba1046b5d0193e435e38bb3abb"
     },
     "https://developer.apple.com/documentation/corefoundation/kcfabsolutetimeintervalsince1904": {
       "etag": "\"223a-65d5607a3bebc-df\"",
@@ -11284,6 +11989,11 @@
       "etag": "\"205e-65d5607cda4ef-df\"",
       "file_path": "documentation/CoreFoundation/kcffiledescriptorwritecallback.md",
       "hash": "148fe897577ff22bcf209776f7b3a031e85c899379311549de3bda14bed69042"
+    },
+    "https://developer.apple.com/documentation/corefoundation/kcffilesecurityremoveacl": {
+      "etag": "\"27d9-65d560775ade6-df\"",
+      "file_path": "documentation/CoreFoundation/kcffilesecurityremoveacl.md",
+      "hash": "592ad06e038b7aa96261f6b289f9f813f7f3223d96691c94170654ecafd2631e"
     },
     "https://developer.apple.com/documentation/corefoundation/kcfmessageportbecameinvaliderror": {
       "etag": "\"3263-65d5607d61793-df\"",
@@ -12430,6 +13140,11 @@
       "file_path": "documentation/CoreFoundation/kcfurlvolumeuuidstringkey.md",
       "hash": "55f369ef1368cd14c512fe367511e56334add242538c7366d1746b75a1b6d024"
     },
+    "https://developer.apple.com/documentation/corefoundation/kcfusernotificationalertaccessibilityidentifierkey": {
+      "etag": "\"10dd-659029492abff-df\"",
+      "file_path": "documentation/CoreFoundation/kcfusernotificationalertaccessibilityidentifierkey.md",
+      "hash": "7b975be1acb9a64cd9a11aa2f1cf45ad7f938f69e4e2c633af9bd0fb7bfbf8d0"
+    },
     "https://developer.apple.com/documentation/corefoundation/kcfusernotificationalertheaderkey": {
       "etag": "\"67ad-65d5607b9e16c-df\"",
       "file_path": "documentation/CoreFoundation/kcfusernotificationalertheaderkey.md",
@@ -12444,6 +13159,11 @@
       "etag": "\"7251-65d5607a3bebc-df\"",
       "file_path": "documentation/CoreFoundation/kcfusernotificationalerttopmostkey.md",
       "hash": "8fed4115268bdec00ebd6408eba8a5f2e6cf78fce35d3efba808d38329116321"
+    },
+    "https://developer.apple.com/documentation/corefoundation/kcfusernotificationalternatebuttonaccessibilityidentifierkey": {
+      "etag": "\"1155-6590294fa69f0-df\"",
+      "file_path": "documentation/CoreFoundation/kcfusernotificationalternatebuttonaccessibilityidentifierkey.md",
+      "hash": "e6bfe48890fc63be479c323525caab7c81a245f2f0132db54a65eba6d412bd0d"
     },
     "https://developer.apple.com/documentation/corefoundation/kcfusernotificationalternatebuttontitlekey": {
       "etag": "\"6747-65d5607a1afab-df\"",
@@ -12469,6 +13189,11 @@
       "etag": "\"6877-65d560789392e-df\"",
       "file_path": "documentation/CoreFoundation/kcfusernotificationcheckboxtitleskey.md",
       "hash": "35fa4133235dc32de8d39064a3d1e130a766c7dc686b0176f1db7d86df4a16cf"
+    },
+    "https://developer.apple.com/documentation/corefoundation/kcfusernotificationdefaultbuttonaccessibilityidentifierkey": {
+      "etag": "\"113d-6590294ab906e-df\"",
+      "file_path": "documentation/CoreFoundation/kcfusernotificationdefaultbuttonaccessibilityidentifierkey.md",
+      "hash": "fd5a239f6081b2a4425616df2d33910c1124e21325fbe9d40027d3324a42a6cd"
     },
     "https://developer.apple.com/documentation/corefoundation/kcfusernotificationdefaultbuttontitlekey": {
       "etag": "\"6e2f-65d56077eb535-df\"",
@@ -12504,6 +13229,11 @@
       "etag": "\"2bf1-65d5607af74ba-df\"",
       "file_path": "documentation/CoreFoundation/kcfusernotificationnotealertlevel.md",
       "hash": "3b58d9ff50495f83609e9f6cb8d49d84e9bdc1e17e9bcbaebd4b22b230f7b4b9"
+    },
+    "https://developer.apple.com/documentation/corefoundation/kcfusernotificationotherbuttonaccessibilityidentifierkey": {
+      "etag": "\"1125-65902948f4b34-df\"",
+      "file_path": "documentation/CoreFoundation/kcfusernotificationotherbuttonaccessibilityidentifierkey.md",
+      "hash": "9cb764cf88c43c444aa6752382bb1c9bdc22e6600dd4647bcdc5e11604fd668f"
     },
     "https://developer.apple.com/documentation/corefoundation/kcfusernotificationotherbuttontitlekey": {
       "etag": "\"671f-65d560790a2b3-df\"",
@@ -12605,6 +13335,16 @@
       "file_path": "documentation/CoreFoundation/locale-property-keys.md",
       "hash": "1dab446d67d666ac633d5b81a32284b2447a3060710fb308fadb9ba5a3fb75cb"
     },
+    "https://developer.apple.com/documentation/corefoundation/lpvoid": {
+      "etag": "\"43a9-65d560785788a-df\"",
+      "file_path": "documentation/CoreFoundation/lpvoid.md",
+      "hash": "995cac6d2dac9553d81e7d3493078fa608810e074b9aa8a4a9ce2ed5914df006"
+    },
+    "https://developer.apple.com/documentation/corefoundation/make_hresult": {
+      "etag": "\"282a-65d56079e2f18-df\"",
+      "file_path": "documentation/CoreFoundation/make_hresult.md",
+      "hash": "eabcea9569534becb62321236f475838fe7aa3e7d96686d96b527ec3739b62fc"
+    },
     "https://developer.apple.com/documentation/corefoundation/notification-name": {
       "etag": "\"16ff-6590294962f2c-df\"",
       "file_path": "documentation/CoreFoundation/notification-name.md",
@@ -12670,10 +13410,40 @@
       "file_path": "documentation/CoreFoundation/property_list_mutability_options.md",
       "hash": "1c3f53c0abe1dc0e46befe17249cfd76330b7a8c26f75a66d688b4de07895cf4"
     },
+    "https://developer.apple.com/documentation/corefoundation/refiid": {
+      "etag": "\"484c-65d5607a91aae-df\"",
+      "file_path": "documentation/CoreFoundation/refiid.md",
+      "hash": "6177770670d608043f33cd1938833c81c3cb11175691757faaa81f34ab2c18e7"
+    },
+    "https://developer.apple.com/documentation/corefoundation/s_false": {
+      "etag": "\"270d-65d560780a411-df\"",
+      "file_path": "documentation/CoreFoundation/s_false.md",
+      "hash": "3008881cb5f689ea64e1a74358370890742158d2335348d61110e65ee6641d13"
+    },
+    "https://developer.apple.com/documentation/corefoundation/s_ok": {
+      "etag": "\"26e9-65d5607a91aae-df\"",
+      "file_path": "documentation/CoreFoundation/s_ok.md",
+      "hash": "c495ad3b988989f1af223276dbf35c4b2896d8d283b34a7cf4cef5dacda691ec"
+    },
+    "https://developer.apple.com/documentation/corefoundation/severity_error": {
+      "etag": "\"2761-65d56078accd9-df\"",
+      "file_path": "documentation/CoreFoundation/severity_error.md",
+      "hash": "b400a8fe5426d1c6ea06cd324d4432a9ee62bc7b5a9fc03957b4eb99d6eeeabc"
+    },
+    "https://developer.apple.com/documentation/corefoundation/severity_success": {
+      "etag": "\"2779-65d56079c671c-df\"",
+      "file_path": "documentation/CoreFoundation/severity_success.md",
+      "hash": "3b5b80f9a65e05e8f2a75a08eaba1a82cf8aed5cb8b14be096bea82796b7a4f6"
+    },
     "https://developer.apple.com/documentation/corefoundation/socket-name-server-utilities": {
       "etag": "\"505d-6590294ab906e-df\"",
       "file_path": "documentation/CoreFoundation/socket-name-server-utilities.md",
       "hash": "a88eb2588996b319688711507541def73ec43263e81416727935cc0371d04652"
+    },
+    "https://developer.apple.com/documentation/corefoundation/stdmethodcalltype": {
+      "etag": "\"2785-65d5607d85669-df\"",
+      "file_path": "documentation/CoreFoundation/stdmethodcalltype.md",
+      "hash": "b082adcbd851c97da3aa500b323ca10e2676721785f6fbdea8c8dc9fd46f7b81"
     },
     "https://developer.apple.com/documentation/corefoundation/stream-properties": {
       "etag": "\"beef-6590294b1a2aa-df\"",
@@ -12690,6 +13460,11 @@
       "file_path": "documentation/CoreFoundation/string-comparison-flags.md",
       "hash": "eb5f69be9e6545573a12ef9bc98095ae277ebf08a846119da8cb75c7fc7c64da"
     },
+    "https://developer.apple.com/documentation/corefoundation/succeeded": {
+      "etag": "\"2784-65d56078cac3f-df\"",
+      "file_path": "documentation/CoreFoundation/succeeded.md",
+      "hash": "2f9dad8b2a47060778145c8c2b28b9c83a728cd08e4567ab26daf8c8053fcdac"
+    },
     "https://developer.apple.com/documentation/corefoundation/time-utilities": {
       "etag": "\"8782-6590294c129ac-df\"",
       "file_path": "documentation/CoreFoundation/time-utilities.md",
@@ -12704,6 +13479,16 @@
       "etag": "\"7a67-65902948d210d-df\"",
       "file_path": "documentation/CoreFoundation/transform-identifiers-for-cfstringtransform.md",
       "hash": "7ef8a2d61dd794b10856d72a94de916c99605f9c0841bff5466629f9bf27108d"
+    },
+    "https://developer.apple.com/documentation/corefoundation/true": {
+      "etag": "\"26e9-65d5607a5b197-df\"",
+      "file_path": "documentation/CoreFoundation/true.md",
+      "hash": "ad2dc44acdb0804b9edc057709cce5c15b8c72e4a7afd9b206eb074126938acc"
+    },
+    "https://developer.apple.com/documentation/corefoundation/ulong": {
+      "etag": "\"4574-65d5607877c1b-df\"",
+      "file_path": "documentation/CoreFoundation/ulong.md",
+      "hash": "283a9125f9ddc705d763a6022766bf68e22e4ae01c5a67519ed526c713bb14e1"
     },
     "https://developer.apple.com/documentation/corefoundation/value-not-found": {
       "etag": "\"1aa9-6590294f44fe5-df\"",
@@ -12815,10 +13600,330 @@
       "file_path": "documentation/CoreFoundation/calendar-names.md",
       "hash": "3f8d6df98c5cfaa197e56bbcf4e43fafabf487ef92eb5f87fc5caf59d88be877"
     },
+    "https://developer.apple.com/tutorials/data/documentation/corefoundation/cf_assume_nonnull_begin.json": {
+      "etag": "\"2827-65d5607a1afab-df\"",
+      "file_path": "documentation/CoreFoundation/cf_assume_nonnull_begin.md",
+      "hash": "f50507f4e8f58fd26234664ab5df36b4654a3504ee19a9acc075e7242d28c3d8"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/corefoundation/cf_assume_nonnull_end.json": {
+      "etag": "\"281b-65d5607b61df4-df\"",
+      "file_path": "documentation/CoreFoundation/cf_assume_nonnull_end.md",
+      "hash": "dd947fa90209495cabf8026e758e34742f0c5e1991c4cd6c200ba1112c2d0fe5"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/corefoundation/cf_automated_refcount_unavailable.json": {
+      "etag": "\"2863-65d560783beb3-df\"",
+      "file_path": "documentation/CoreFoundation/cf_automated_refcount_unavailable.md",
+      "hash": "34e0c5fe191fcc0cc74d78e2bcc7da6e5f2458d3dc4c6abe5614c381ebdb872f"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/corefoundation/cf_available.json": {
+      "etag": "\"2885-65d5607826821-df\"",
+      "file_path": "documentation/CoreFoundation/cf_available.md",
+      "hash": "b1468f689c8417bbf9b7a13b906749682622a27d83ce498c65b0c19626c6bb86"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/corefoundation/cf_available_ios.json": {
+      "etag": "\"285a-65d5607cda4ef-df\"",
+      "file_path": "documentation/CoreFoundation/cf_available_ios.md",
+      "hash": "4c29203fad7c7fec191d6adc50468c73502b0f7d8ef4170656de1ad53a3679f1"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/corefoundation/cf_available_iphone.json": {
+      "etag": "\"286c-65d5607777222-df\"",
+      "file_path": "documentation/CoreFoundation/cf_available_iphone.md",
+      "hash": "fd6248313c7e7a10c0f7e08a07128e54e2bed149ec367bfd33ccdc593d533023"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/corefoundation/cf_available_mac.json": {
+      "etag": "\"285a-65d5607dbb155-df\"",
+      "file_path": "documentation/CoreFoundation/cf_available_mac.md",
+      "hash": "385f0b593130ab55ad3ffe37355e7e05716a6a4a4cca30bc4f47bee56879f5f4"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/corefoundation/cf_boxable.json": {
+      "etag": "\"27d9-65d56079a846a-df\"",
+      "file_path": "documentation/CoreFoundation/cf_boxable.md",
+      "hash": "a16deb763c2d8c182b3d4ffea8baf7810c8f65c69d4340f5497682b59457c8b1"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/corefoundation/cf_bridged_mutable_type.json": {
+      "etag": "\"2881-65d5607a73fc7-df\"",
+      "file_path": "documentation/CoreFoundation/cf_bridged_mutable_type.md",
+      "hash": "8df8fc41f7761f8db85f8f0395a24b62b4019ae3279234164488ec69d7e7f6f7"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/corefoundation/cf_bridged_type.json": {
+      "etag": "\"2851-65d560775ade6-df\"",
+      "file_path": "documentation/CoreFoundation/cf_bridged_type.md",
+      "hash": "f097d7955049a8e4d001adfd1720b0986aab719491b9d0fdb645bb26c795b801"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/corefoundation/cf_calendar_deprecated.json": {
+      "etag": "\"2940-65d56079a846a-df\"",
+      "file_path": "documentation/CoreFoundation/cf_calendar_deprecated.md",
+      "hash": "8944672ba673835365b735978147e415fa78710eb9f20ca1a1594ed765330e3b"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/corefoundation/cf_calendar_enum_deprecated.json": {
+      "etag": "\"295e-65d560792c2be-df\"",
+      "file_path": "documentation/CoreFoundation/cf_calendar_enum_deprecated.md",
+      "hash": "b57f708c8cf2258900e1cd1b8f2f3aa382f885b1fa814a2d6ff1fb621c346a96"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/corefoundation/cf_closed_enum.json": {
+      "etag": "\"2893-65d5607c0be4f-df\"",
+      "file_path": "documentation/CoreFoundation/cf_closed_enum.md",
+      "hash": "2c4f2780233603cc2d85752e71b5e7ff62b44f9ae5c680902bef04136af830ef"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/corefoundation/cf_consumed.json": {
+      "etag": "\"27df-65d5607b30e55-df\"",
+      "file_path": "documentation/CoreFoundation/cf_consumed.md",
+      "hash": "c36d35e261e15a084e97caf0128d3269b6b7ecee2cd94dd2802750892bcb1b97"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/corefoundation/cf_defines_cg_types.json": {
+      "etag": "\"280f-65d5607b9e16c-df\"",
+      "file_path": "documentation/CoreFoundation/cf_defines_cg_types.md",
+      "hash": "af265057af935fbc646ad07ca42bf5e1109b77a06348c1977fee886f338b3ce3"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/corefoundation/cf_defines_cgaffinetransformcomponents.json": {
+      "etag": "\"2881-65d56079e2f18-df\"",
+      "file_path": "documentation/CoreFoundation/cf_defines_cgaffinetransformcomponents.md",
+      "hash": "485a5a9356d5a47870771af85d87c57118d3fe915c5a5ffa654f54163f90baa0"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/corefoundation/cf_deprecated.json": {
+      "etag": "\"2890-65d560785788a-df\"",
+      "file_path": "documentation/CoreFoundation/cf_deprecated.md",
+      "hash": "85cf7c7bbe2844ad6ade16099fba25b768860f4bad17831f3462857ba970f43e"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/corefoundation/cf_deprecated_ios.json": {
+      "etag": "\"2832-65d5607793d05-df\"",
+      "file_path": "documentation/CoreFoundation/cf_deprecated_ios.md",
+      "hash": "97e947f971887e55773cb2ba41964d77bb72f38f42ee6a7d1932c2457e37fa34"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/corefoundation/cf_deprecated_iphone.json": {
+      "etag": "\"2851-65d56079454b8-df\"",
+      "file_path": "documentation/CoreFoundation/cf_deprecated_iphone.md",
+      "hash": "7f07cc9f190d0689ab51ea6d01bd7121ca42e90265cb0b7406f2ba2937102666"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/corefoundation/cf_deprecated_mac.json": {
+      "etag": "\"2832-65d560783beb3-df\"",
+      "file_path": "documentation/CoreFoundation/cf_deprecated_mac.md",
+      "hash": "3762e7d7b89a2c61557451f329dd90d73f1d65b070c716454d52bad1837b4fa9"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/corefoundation/cf_enum.json": {
+      "etag": "\"272c-65d56077b10fe-df\"",
+      "file_path": "documentation/CoreFoundation/cf_enum.md",
+      "hash": "e3ed77b46c93d435d1ec0df6902fe3c083b148afc92af8578b80285bc3be8b3a"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/corefoundation/cf_enum_available.json": {
+      "etag": "\"2825-65d5607a91aae-df\"",
+      "file_path": "documentation/CoreFoundation/cf_enum_available.md",
+      "hash": "1e1b7ad9eb4afd9f3e07781c966917c79f6086905919d2b3d3a696967ed2d60a"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/corefoundation/cf_enum_available_ios.json": {
+      "etag": "\"2812-65d5607877c1b-df\"",
+      "file_path": "documentation/CoreFoundation/cf_enum_available_ios.md",
+      "hash": "645ce41c4faf8299301c321f723dfb5e8aef5690deef390d447049e663b8e588"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/corefoundation/cf_enum_available_mac.json": {
+      "etag": "\"2812-65d56077cf962-df\"",
+      "file_path": "documentation/CoreFoundation/cf_enum_available_mac.md",
+      "hash": "ccedf8be1f5daf9f81c1b74eb8cfe0eb216754150c6ebe3ec8e37ab32c9ee730"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/corefoundation/cf_enum_deprecated.json": {
+      "etag": "\"28cc-65d5607bbbae9-df\"",
+      "file_path": "documentation/CoreFoundation/cf_enum_deprecated.md",
+      "hash": "f4463a97f5462747e79e54149e524b6b91ff7bfaeb536bd390d4d2efe823ed54"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/corefoundation/cf_enum_deprecated_ios.json": {
+      "etag": "\"286e-65d5607dad515-df\"",
+      "file_path": "documentation/CoreFoundation/cf_enum_deprecated_ios.md",
+      "hash": "3e2caaa3ae2195b8379407324e5e8911dcb23f98c2df99fd83c2b899252b071d"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/corefoundation/cf_enum_deprecated_mac.json": {
+      "etag": "\"286e-65d5607c7f483-df\"",
+      "file_path": "documentation/CoreFoundation/cf_enum_deprecated_mac.md",
+      "hash": "9e1b85490dc132663d9a43f73c3d6745cd842fe7acbb4f9bcaabcb294a1f610b"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/corefoundation/cf_error_enum.json": {
+      "etag": "\"2774-65d5607cf80f8-df\"",
+      "file_path": "documentation/CoreFoundation/cf_error_enum.md",
+      "hash": "d1086bad85248f6fa1743a051a8eaf5445d601c8f7be5fae361a29ed138a27f8"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/corefoundation/cf_export.json": {
+      "etag": "\"2725-65d5607b30e55-df\"",
+      "file_path": "documentation/CoreFoundation/cf_export.md",
+      "hash": "058943caa993c92fc289e31df36be90e3ed2b479b3fb9d4fc46f510dac3d5085"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/corefoundation/cf_extensible_string_enum.json": {
+      "etag": "\"27e5-65d560799306f-df\"",
+      "file_path": "documentation/CoreFoundation/cf_extensible_string_enum.md",
+      "hash": "5cce2877c7ed5711f037d694cb023b71839680737aadd35df6e509f2c9e04c2c"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/corefoundation/cf_extension_unavailable.json": {
+      "etag": "\"2836-65d5607d61793-df\"",
+      "file_path": "documentation/CoreFoundation/cf_extension_unavailable.md",
+      "hash": "6714fff1cff1898a50276708ca4ee7449faef6e0f1bc245f35f9ea8cc432a4ba"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/corefoundation/cf_extension_unavailable_ios.json": {
+      "etag": "\"2866-65d560789392e-df\"",
+      "file_path": "documentation/CoreFoundation/cf_extension_unavailable_ios.md",
+      "hash": "0772877b351a311995b08935fe81d1fb5b33b969ac26ee3b2b13e1d97a8bc566"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/corefoundation/cf_extension_unavailable_mac.json": {
+      "etag": "\"2866-65d56077cf962-df\"",
+      "file_path": "documentation/CoreFoundation/cf_extension_unavailable_mac.md",
+      "hash": "3fe61b85868eea917e9ab4b12b599bc69e7086e57316fbddd723dae1cd38862c"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/corefoundation/cf_extern_c_begin.json": {
+      "etag": "\"2785-65d560792c2be-df\"",
+      "file_path": "documentation/CoreFoundation/cf_extern_c_begin.md",
+      "hash": "c8f360f19847fbe9b06417f14e19c391145d0c3c807fe14f8d123d4fd82a0166"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/corefoundation/cf_extern_c_end.json": {
+      "etag": "\"276d-65d5607793d05-df\"",
+      "file_path": "documentation/CoreFoundation/cf_extern_c_end.md",
+      "hash": "c8d48cc562cc295a23c14f4694fb4c51682e82e61ccd73eb22008d4887f8732e"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/corefoundation/cf_fallthrough.json": {
+      "etag": "\"2761-65d5607bbbae9-df\"",
+      "file_path": "documentation/CoreFoundation/cf_fallthrough.md",
+      "hash": "d63bc787957cc79b7905ff6c594e51f2921f588868e9358eeab33de7a5069d78"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/corefoundation/cf_format_argument.json": {
+      "etag": "\"27eb-65d5607a5b197-df\"",
+      "file_path": "documentation/CoreFoundation/cf_format_argument.md",
+      "hash": "7acd1de29179109a786cc3a86fdd1efbd0b8eaef1b7c834beaecd5ab07d26602"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/corefoundation/cf_format_function.json": {
+      "etag": "\"282b-65d5607a1afab-df\"",
+      "file_path": "documentation/CoreFoundation/cf_format_function.md",
+      "hash": "dbc7009f47c689ee5e3b3c9990ba93ba3d667d63d83dc72ef8c48c0e73758a70"
+    },
     "https://developer.apple.com/tutorials/data/documentation/corefoundation/cf_has_typed_allocator.json": {
       "etag": "\"3cc4-65d5607aad206-df\"",
       "file_path": "documentation/CoreFoundation/cf_has_typed_allocator.md",
       "hash": "caa18375db86329dbbcba0aa60df7f2ef6b57d5289cf29614d1d94ff3be3c969"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/corefoundation/cf_header_audit_begin.json": {
+      "etag": "\"afa-65d56077eb535-df\"",
+      "file_path": "documentation/CoreFoundation/cf_header_audit_begin.md",
+      "hash": "ed0a75ee950f318c8f79989e1fe0796333421614f9f0b849f5568d2de39bd63d"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/corefoundation/cf_header_audit_end.json": {
+      "etag": "\"ae2-65d5607c0be4f-df\"",
+      "file_path": "documentation/CoreFoundation/cf_header_audit_end.md",
+      "hash": "bfb75cfd9a5d08c66d471c36262eeacd438ce6df21ecb4154a9a7d75009d0fea"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/corefoundation/cf_implicit_bridging_disabled.json": {
+      "etag": "\"2815-65d56079e2f18-df\"",
+      "file_path": "documentation/CoreFoundation/cf_implicit_bridging_disabled.md",
+      "hash": "2a2776590e066da9e454cecb649415063d7ee3b5b451541fac61473ad21d81b8"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/corefoundation/cf_implicit_bridging_enabled.json": {
+      "etag": "\"2809-65d560797a76a-df\"",
+      "file_path": "documentation/CoreFoundation/cf_implicit_bridging_enabled.md",
+      "hash": "644017d3691237c86f9e1bbcec018dc67b6baab3467b9bab194c58f96a3382eb"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/corefoundation/cf_inline.json": {
+      "etag": "\"2725-65d5607c4099a-df\"",
+      "file_path": "documentation/CoreFoundation/cf_inline.md",
+      "hash": "97977fdb576ed23a1966a0adc3976570e3c9fd50551b49d85700050a94903838"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/corefoundation/cf_no_tail_call.json": {
+      "etag": "\"276d-65d5607a91aae-df\"",
+      "file_path": "documentation/CoreFoundation/cf_no_tail_call.md",
+      "hash": "40830747e0f02b71a5f44f77e938b08ab1e5a1d2c553546deb607e6ccac76cc3"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/corefoundation/cf_noescape.json": {
+      "etag": "\"273d-65d5607a73fc7-df\"",
+      "file_path": "documentation/CoreFoundation/cf_noescape.md",
+      "hash": "9c52e75d6c64fb3b1e56c62eed88799b715003dee0001aaf0ce291344de559bc"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/corefoundation/cf_options.json": {
+      "etag": "\"27d3-65d560783beb3-df\"",
+      "file_path": "documentation/CoreFoundation/cf_options.md",
+      "hash": "3b84def9111f7b16a150563ced29127e98a1f71065341d0ef07dbf2de91ced6d"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/corefoundation/cf_refined_for_swift.json": {
+      "etag": "\"27a9-65d5607c4099a-df\"",
+      "file_path": "documentation/CoreFoundation/cf_refined_for_swift.md",
+      "hash": "16afc2092e3b95df9ac7af14394cf8375fac891d1fed03f5dbdaa7c7400f4a3c"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/corefoundation/cf_related_type.json": {
+      "etag": "\"2847-65d56079e2f18-df\"",
+      "file_path": "documentation/CoreFoundation/cf_related_type.md",
+      "hash": "5baae47cafe3b6f61aa03960704de74197b5a44a218fbfe7cc7803c3edb5c842"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/corefoundation/cf_releases_argument.json": {
+      "etag": "\"27a9-65d5607d1831d-df\"",
+      "file_path": "documentation/CoreFoundation/cf_releases_argument.md",
+      "hash": "1d2a9630e738b65055c38b087250d45aa4d739a32b1f84d7517fb0d7cd4b024f"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/corefoundation/cf_returns_not_retained.json": {
+      "etag": "\"27cd-65d5607c5e6c9-df\"",
+      "file_path": "documentation/CoreFoundation/cf_returns_not_retained.md",
+      "hash": "4bdca16189bfcf6b09d43c0da84c0f2671a05f95e098d1832ccab4972c65899d"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/corefoundation/cf_returns_retained.json": {
+      "etag": "\"279d-65d5607cda4ef-df\"",
+      "file_path": "documentation/CoreFoundation/cf_returns_retained.md",
+      "hash": "93bbf7a414838d9c9b6ff78e81e4e16fbde701b226e062e9f1706b44ade68289"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/corefoundation/cf_string_enum.json": {
+      "etag": "\"2761-65d5607d61793-df\"",
+      "file_path": "documentation/CoreFoundation/cf_string_enum.md",
+      "hash": "38d1ae5e3fab2a23af78b37841b8db2eb463d8b88d780734ca63c0c766c30dc9"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/corefoundation/cf_swift_bridged_typedef.json": {
+      "etag": "\"27d9-65d560775ade6-df\"",
+      "file_path": "documentation/CoreFoundation/cf_swift_bridged_typedef.md",
+      "hash": "abac4d897766e590d5c2327a5081f209d014d6f63e2a8ebc8cb6a41b13abf786"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/corefoundation/cf_swift_main_actor.json": {
+      "etag": "\"ac3-65d56079e2f18-df\"",
+      "file_path": "documentation/CoreFoundation/cf_swift_main_actor.md",
+      "hash": "6cf53d6dd1b7500a707117702bea662c937db5ca721e23229557bad403a3b1ca"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/corefoundation/cf_swift_name.json": {
+      "etag": "\"27b3-65d56077cf962-df\"",
+      "file_path": "documentation/CoreFoundation/cf_swift_name.md",
+      "hash": "d815a6f6bb2c73c5eaf38b10e75106898076ef9ab49069617bb8978e6661d89e"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/corefoundation/cf_swift_nonisolated.json": {
+      "etag": "\"acf-65d5607b80185-df\"",
+      "file_path": "documentation/CoreFoundation/cf_swift_nonisolated.md",
+      "hash": "450cb6b1e434864edf7242b4ad877a6ae65be7d437a6db1a592540d471f1a740"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/corefoundation/cf_swift_nonsendable.json": {
+      "etag": "\"acf-65d5607cda4ef-df\"",
+      "file_path": "documentation/CoreFoundation/cf_swift_nonsendable.md",
+      "hash": "eca48fd557e90c036883fc73a029a67ecaf0c88801918fbec1ae2ca09e47dd39"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/corefoundation/cf_swift_sendable.json": {
+      "etag": "\"aab-65d5607a1afab-df\"",
+      "file_path": "documentation/CoreFoundation/cf_swift_sendable.md",
+      "hash": "738915ca773b49893303355aa04461055455889f2338e3a7ad2874a13c29c17c"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/corefoundation/cf_swift_unavailable.json": {
+      "etag": "\"2806-65d560783beb3-df\"",
+      "file_path": "documentation/CoreFoundation/cf_swift_unavailable.md",
+      "hash": "f8766717b04b678bc9337e501b7fa9b6f1c3e6badd28ac270106d8f8b1e0e4a9"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/corefoundation/cf_swift_unavailable_from_async.json": {
+      "etag": "\"2889-65d560783beb3-df\"",
+      "file_path": "documentation/CoreFoundation/cf_swift_unavailable_from_async.md",
+      "hash": "729c1004421d9e15fda01694565b1a091d321b360e157ffba0639f4d20b703d4"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/corefoundation/cf_typed_enum.json": {
+      "etag": "\"2755-65d5607c240ba-df\"",
+      "file_path": "documentation/CoreFoundation/cf_typed_enum.md",
+      "hash": "538152e3a72214cf9ef7e46b3571c40e82eeb77abcd1834011bfc9835e3bc1b3"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/corefoundation/cf_typed_extensible_enum.json": {
+      "etag": "\"27d9-65d5607c0be4f-df\"",
+      "file_path": "documentation/CoreFoundation/cf_typed_extensible_enum.md",
+      "hash": "a1940917cbfb8d5e8bc43f24630f29cd280735cde0eaa3c359dab939380b2366"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/corefoundation/cf_use_osbyteorder_h.json": {
+      "etag": "\"27a9-65d5607aad206-df\"",
+      "file_path": "documentation/CoreFoundation/cf_use_osbyteorder_h.md",
+      "hash": "5ff4f52ec8a52e8b09834e9426af5b8366c3e45ac531b479725856b797ad689f"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/corefoundation/cf_warn_unused_result.json": {
+      "etag": "\"27b5-65d56079c671c-df\"",
+      "file_path": "documentation/CoreFoundation/cf_warn_unused_result.md",
+      "hash": "ea42861eedc802a107be5ea49439549c38fecc0d544b3c5535e1c9f347c68bd7"
     },
     "https://developer.apple.com/tutorials/data/documentation/corefoundation/cfabsolutetime.json": {
       "etag": "\"27ef-65d560783beb3-df\"",
@@ -12954,6 +14059,11 @@
       "etag": "\"4b29-65d56078cac3f-df\"",
       "file_path": "documentation/CoreFoundation/cfallocatorcreate(_,_).md",
       "hash": "061b7901ad2e3a8a8759c4b9e9dcd0e129b68fc91628d3e075dbf99c96ee8656"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/corefoundation/cfallocatorcreatewithzone.json": {
+      "etag": "\"1196-6590294de6252-df\"",
+      "file_path": "documentation/CoreFoundation/cfallocatorcreatewithzone.md",
+      "hash": "2f6e71d9e78ec9065c0abdc2d370b71469fa0db0643fc19f5fb48bcd6b0d698a"
     },
     "https://developer.apple.com/tutorials/data/documentation/corefoundation/cfallocatordeallocate(_:_:).json": {
       "etag": "\"3d38-65d5607b47ab0-df\"",
@@ -13329,6 +14439,11 @@
       "etag": "\"6d1b-65d56079e2f18-df\"",
       "file_path": "documentation/CoreFoundation/cfattributedstringsetattributes(_,_,_,_).md",
       "hash": "c2a7a15a2504beffda7270c8fcca7d656b492baa94ca09b7f1e4e7646075e4e5"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/corefoundation/cfautorelease.json": {
+      "etag": "\"73c1-65d56078e4d85-df\"",
+      "file_path": "documentation/CoreFoundation/cfautorelease.md",
+      "hash": "284f85e4d083abcd92a3c03d992db70ed7f9d898dfd3cb722bc7c86047e5308e"
     },
     "https://developer.apple.com/tutorials/data/documentation/corefoundation/cfbag-predefined-callback-structures.json": {
       "etag": "\"1cd6-659029492abff-df\"",
@@ -14090,6 +15205,16 @@
       "file_path": "documentation/CoreFoundation/cfcalendar.md",
       "hash": "91d8f473255ba9f89bb1d7b84c71da7f64f04c10ff6797d9ed245d30c3dd13a2"
     },
+    "https://developer.apple.com/tutorials/data/documentation/corefoundation/cfcalendaraddcomponents.json": {
+      "etag": "\"3949-65d56078cac3f-df\"",
+      "file_path": "documentation/CoreFoundation/cfcalendaraddcomponents.md",
+      "hash": "460285422de406a640b1cbd75c8e70b3c199d975608041ae38c3bb090ba1410b"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/corefoundation/cfcalendarcomposeabsolutetime.json": {
+      "etag": "\"2c20-65d5607d61793-df\"",
+      "file_path": "documentation/CoreFoundation/cfcalendarcomposeabsolutetime.md",
+      "hash": "57c6f096c9c070ce57094a26df62b00f9098443a756ce423efb8067bbe1fce93"
+    },
     "https://developer.apple.com/tutorials/data/documentation/corefoundation/cfcalendarcopycurrent().json": {
       "etag": "\"2c2b-65d56077b10fe-df\"",
       "file_path": "documentation/CoreFoundation/cfcalendarcopycurrent().md",
@@ -14109,6 +15234,16 @@
       "etag": "\"428c-65d5607a91aae-df\"",
       "file_path": "documentation/CoreFoundation/cfcalendarcreatewithidentifier(_,_).md",
       "hash": "29da258aea7e4da8fec5e09fdded3685c6052e9c3662e697a4eaaafa335b7fc1"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/corefoundation/cfcalendardecomposeabsolutetime.json": {
+      "etag": "\"2ac9-65d56078e4d85-df\"",
+      "file_path": "documentation/CoreFoundation/cfcalendardecomposeabsolutetime.md",
+      "hash": "338f0a8a787c1ecb6a1b070a7989236e3b7c23005fbf10ca47ba70a06dfff768"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/corefoundation/cfcalendargetcomponentdifference.json": {
+      "etag": "\"375a-65d5607b9e16c-df\"",
+      "file_path": "documentation/CoreFoundation/cfcalendargetcomponentdifference.md",
+      "hash": "fc9ebf8155beb4d8c26367338c5dc8d861bc0b68012b1fa8e6bc8ee4283180f9"
     },
     "https://developer.apple.com/tutorials/data/documentation/corefoundation/cfcalendargetfirstweekday(_:).json": {
       "etag": "\"38b5-65d5607a91aae-df\"",
@@ -14663,6 +15798,26 @@
       "etag": "\"8552-65d5607d61793-df\"",
       "file_path": "documentation/CoreFoundation/cfcopyhomedirectoryurl().md",
       "hash": "23c734ef3697ed364d1be940edf63bf32d9c083039917eef66d647fc095280d8"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/corefoundation/cfcopylocalizedstring.json": {
+      "etag": "\"3e7f-65d560783beb3-df\"",
+      "file_path": "documentation/CoreFoundation/cfcopylocalizedstring.md",
+      "hash": "5e17eabf571fa47fa112d6942b0d7c60f8bcb886c5a74142e7672b1570624ef1"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/corefoundation/cfcopylocalizedstringfromtable.json": {
+      "etag": "\"4033-65d5607c5e6c9-df\"",
+      "file_path": "documentation/CoreFoundation/cfcopylocalizedstringfromtable.md",
+      "hash": "fbfef36c00e7bd2bed49087ca6fc2ed028449a17fb3fa0b471983107afdfa183"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/corefoundation/cfcopylocalizedstringfromtableinbundle.json": {
+      "etag": "\"40fc-65d5607c4099a-df\"",
+      "file_path": "documentation/CoreFoundation/cfcopylocalizedstringfromtableinbundle.md",
+      "hash": "239269d0218b40a8817b1b7d61d7b5485b22a65bc5a2cadd30a0b733319c7837"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/corefoundation/cfcopylocalizedstringwithdefaultvalue.json": {
+      "etag": "\"4240-65d5607c240ba-df\"",
+      "file_path": "documentation/CoreFoundation/cfcopylocalizedstringwithdefaultvalue.md",
+      "hash": "1c616b21d5e31132844aa71c5aa2d1374dc603f50d4c6266d8052469cbbea2a8"
     },
     "https://developer.apple.com/tutorials/data/documentation/corefoundation/cfcopytypeiddescription(_:).json": {
       "etag": "\"3e10-65d56077cf962-df\"",
@@ -16224,6 +17379,11 @@
       "file_path": "documentation/CoreFoundation/cfmachportsetinvalidationcallback(_,_).md",
       "hash": "ab87ba996b7bdbe95412282269c3c8bedc4e9e67d491c2fdc50f051ab7193352"
     },
+    "https://developer.apple.com/tutorials/data/documentation/corefoundation/cfmakecollectable.json": {
+      "etag": "\"242b-65d560783beb3-df\"",
+      "file_path": "documentation/CoreFoundation/cfmakecollectable.md",
+      "hash": "97d1f14287c8e52b05bf0f96add2bcf8168ed05d5d22f2fb83bd6d7781129597"
+    },
     "https://developer.apple.com/tutorials/data/documentation/corefoundation/cfmessageport.json": {
       "etag": "\"e7c4-65d56079454b8-df\"",
       "file_path": "documentation/CoreFoundation/cfmessageport.md",
@@ -17374,6 +18534,11 @@
       "file_path": "documentation/CoreFoundation/cfpropertylistmutabilityoptions/init(rawvalue).md",
       "hash": "a30cc1ea348c68583a553b4bbedc525f6a71843a4fd8d50913ab43cfc71e58c3"
     },
+    "https://developer.apple.com/tutorials/data/documentation/corefoundation/cfpropertylistmutabilityoptions/kcfpropertylistimmutable.json": {
+      "etag": "\"1eca-65d560785788a-df\"",
+      "file_path": "documentation/CoreFoundation/cfpropertylistmutabilityoptions/kcfpropertylistimmutable.md",
+      "hash": "8ef9e308b2385ab0b57ff76bb86c292c9e571790b4c7b93aaf6c70994d6f6adc"
+    },
     "https://developer.apple.com/tutorials/data/documentation/corefoundation/cfpropertylistmutabilityoptions/mutablecontainers.json": {
       "etag": "\"2865-65d560785788a-df\"",
       "file_path": "documentation/CoreFoundation/cfpropertylistmutabilityoptions/mutablecontainers.md",
@@ -17523,6 +18688,16 @@
       "etag": "\"37ec-65d56078cac3f-df\"",
       "file_path": "documentation/CoreFoundation/cfreadstreamunschedulefromrunloop(_,_,_).md",
       "hash": "123aa825b4654bf5e551be86b973c0695b51b07e89703d8234b1e22f720cd2f3"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/corefoundation/cfrelease.json": {
+      "etag": "\"27c9-65d560780a411-df\"",
+      "file_path": "documentation/CoreFoundation/cfrelease.md",
+      "hash": "9228b3596d1de6e4196212e6ec028c9d6dd3c1cd8684560086deb353019b2f6c"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/corefoundation/cfretain.json": {
+      "etag": "\"27ef-65d5607b30e55-df\"",
+      "file_path": "documentation/CoreFoundation/cfretain.md",
+      "hash": "f6c89e050851eede883501bc6d5345e92041bf82576d08f7663149d9c5f6bfb8"
     },
     "https://developer.apple.com/tutorials/data/documentation/corefoundation/cfrunloop.json": {
       "etag": "\"12f04-65d560780a411-df\"",
@@ -18339,6 +19514,11 @@
       "file_path": "documentation/CoreFoundation/cfsocketcallbacktype/init(rawvalue).md",
       "hash": "3b86e02b82079dd9e9a951b2df434bad2fccd93165356836c546d9b3236f54a4"
     },
+    "https://developer.apple.com/tutorials/data/documentation/corefoundation/cfsocketcallbacktype/kcfsocketnocallback.json": {
+      "etag": "\"32c0-65d560795ed96-df\"",
+      "file_path": "documentation/CoreFoundation/cfsocketcallbacktype/kcfsocketnocallback.md",
+      "hash": "a5ed8fb92fca31ad6f74fc0eff4e46a7b9f28bb517b7d7b2bfc2aae3170c64d9"
+    },
     "https://developer.apple.com/tutorials/data/documentation/corefoundation/cfsocketcallbacktype/readcallback.json": {
       "etag": "\"3d62-65d560795ed96-df\"",
       "file_path": "documentation/CoreFoundation/cfsocketcallbacktype/readcallback.md",
@@ -18584,6 +19764,11 @@
       "file_path": "documentation/CoreFoundation/cfsocketunregister(_,_,_).md",
       "hash": "7402cbadb5e5ce6b38d9821fc3a121cba5b4b5e28859e3ec03e9dda2215fdca9"
     },
+    "https://developer.apple.com/tutorials/data/documentation/corefoundation/cfstr.json": {
+      "etag": "\"7d31-65d5607c4099a-df\"",
+      "file_path": "documentation/CoreFoundation/cfstr.md",
+      "hash": "60cb7509d4b9692f4ed49a751ba116f10bac09d37dd3ea9ec803ddff790de1f4"
+    },
     "https://developer.apple.com/tutorials/data/documentation/corefoundation/cfstream-error-domain-constants-cfhost.json": {
       "etag": "\"7253-6590294bd5347-df\"",
       "file_path": "documentation/CoreFoundation/cfstream-error-domain-constants-cfhost.md",
@@ -18749,6 +19934,11 @@
       "file_path": "documentation/CoreFoundation/cfstreameventtype/init(rawvalue).md",
       "hash": "429908ec4c216051e31ba2c5ed072534d754339153d8cdcb7d1033a8ba83f7a4"
     },
+    "https://developer.apple.com/tutorials/data/documentation/corefoundation/cfstreameventtype/kcfstreameventnone.json": {
+      "etag": "\"2ab9-65d560780a411-df\"",
+      "file_path": "documentation/CoreFoundation/cfstreameventtype/kcfstreameventnone.md",
+      "hash": "fb957718a67d1a4f5f040d8bba91c52e33d0e27502ae81ce42c7796ff532343c"
+    },
     "https://developer.apple.com/tutorials/data/documentation/corefoundation/cfstreameventtype/opencompleted.json": {
       "etag": "\"34ee-65d560780a411-df\"",
       "file_path": "documentation/CoreFoundation/cfstreameventtype/opencompleted.md",
@@ -18868,6 +20058,11 @@
       "etag": "\"9741-65d5607a73fc7-df\"",
       "file_path": "documentation/CoreFoundation/cfstringappendcstring(_,_,_).md",
       "hash": "5490335961ae6e21887a7c33d8aeaeff35becca089533cfba461778d12dd7ad6"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/corefoundation/cfstringappendformat.json": {
+      "etag": "\"845f-65d5607c4099a-df\"",
+      "file_path": "documentation/CoreFoundation/cfstringappendformat.md",
+      "hash": "6ee274d19649255f298e087b96e81d3cbd464bee6b35484a102bff0796c131db"
     },
     "https://developer.apple.com/tutorials/data/documentation/corefoundation/cfstringappendformatandarguments(_:_:_:_:).json": {
       "etag": "\"a635-65d56077cf962-df\"",
@@ -19109,6 +20304,16 @@
       "file_path": "documentation/CoreFoundation/cfstringcreatemutablewithexternalcharactersnocopy(_,_,_,_,_).md",
       "hash": "3aa5dfdfd2a08fea157dd001f7287568f8d4cc2d28b34c27cbbf8db2e52a2e2b"
     },
+    "https://developer.apple.com/tutorials/data/documentation/corefoundation/cfstringcreatestringwithvalidatedformat.json": {
+      "etag": "\"7f6a-65d56078cac3f-df\"",
+      "file_path": "documentation/CoreFoundation/cfstringcreatestringwithvalidatedformat.md",
+      "hash": "345f88d5cf6add2c3d658a55592544b20e32cb60193b987239df6826d8851aec"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/corefoundation/cfstringcreatestringwithvalidatedformatandarguments.json": {
+      "etag": "\"81fb-65d56077cf962-df\"",
+      "file_path": "documentation/CoreFoundation/cfstringcreatestringwithvalidatedformatandarguments.md",
+      "hash": "e1db38cc9f6a135fa4bac08be1cbbba0e4b71b9cb4130efb60558bf85d6bf559"
+    },
     "https://developer.apple.com/tutorials/data/documentation/corefoundation/cfstringcreatewithbytes(_:_:_:_:_:).json": {
       "etag": "\"c4de-65d5607b15e77-df\"",
       "file_path": "documentation/CoreFoundation/cfstringcreatewithbytes(_,_,_,_,_).md",
@@ -19143,6 +20348,11 @@
       "etag": "\"4e06-65d5607b9e16c-df\"",
       "file_path": "documentation/CoreFoundation/cfstringcreatewithfilesystemrepresentation(_,_).md",
       "hash": "c128647ffaa84fb599709e757cd73f0776f1fb23bc5e20f4a88a6786b2b93970"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/corefoundation/cfstringcreatewithformat.json": {
+      "etag": "\"9573-65d5607a3bebc-df\"",
+      "file_path": "documentation/CoreFoundation/cfstringcreatewithformat.md",
+      "hash": "2f89540616342a7b5ea622312196bbeb85d60fe545073e770916352c22013e24"
     },
     "https://developer.apple.com/tutorials/data/documentation/corefoundation/cfstringcreatewithformatandarguments(_:_:_:_:).json": {
       "etag": "\"b9df-65d56079c671c-df\"",
@@ -20234,6 +21444,11 @@
       "file_path": "documentation/CoreFoundation/cfstringtokenizertokentype/iscjwordmask.md",
       "hash": "7b8c0b9a3ca57eed631c553cb6483a898282d1830393184d7ddd92684d878eb6"
     },
+    "https://developer.apple.com/tutorials/data/documentation/corefoundation/cfstringtokenizertokentype/kcfstringtokenizertokennone.json": {
+      "etag": "\"40c1-65d5607b30e55-df\"",
+      "file_path": "documentation/CoreFoundation/cfstringtokenizertokentype/kcfstringtokenizertokennone.md",
+      "hash": "1069a1dec997584e9b9873e66f7c7212a8e8f78e4ae16b841db84f399c6aa547"
+    },
     "https://developer.apple.com/tutorials/data/documentation/corefoundation/cfstringtokenizertokentype/normal.json": {
       "etag": "\"4b7d-65d5607b30e55-df\"",
       "file_path": "documentation/CoreFoundation/cfstringtokenizertokentype/normal.md",
@@ -21149,6 +22364,11 @@
       "file_path": "documentation/CoreFoundation/cfurlenumeratoroptions/init(rawvalue).md",
       "hash": "980da704e022b6ff22892a46e794ad7092c9ce2ba7132cdfabc705dc4ac8c3fa"
     },
+    "https://developer.apple.com/tutorials/data/documentation/corefoundation/cfurlenumeratoroptions/kcfurlenumeratordefaultbehavior.json": {
+      "etag": "\"36b5-65d56079e2f18-df\"",
+      "file_path": "documentation/CoreFoundation/cfurlenumeratoroptions/kcfurlenumeratordefaultbehavior.md",
+      "hash": "826de1d106d761d26ecdb3ae51053ebe592ba25f722a365ab81f608dbec8bfa8"
+    },
     "https://developer.apple.com/tutorials/data/documentation/corefoundation/cfurlenumeratoroptions/skipinvisibles.json": {
       "etag": "\"417e-65d56079e2f18-df\"",
       "file_path": "documentation/CoreFoundation/cfurlenumeratoroptions/skipinvisibles.md",
@@ -21954,6 +23174,41 @@
       "file_path": "documentation/CoreFoundation/cfxmlnode.md",
       "hash": "c464710d11d3936e2e59c6341457bf35ad3de3999001cf617dbba8fb0b8ac161"
     },
+    "https://developer.apple.com/tutorials/data/documentation/corefoundation/cfxmlnodecreate.json": {
+      "etag": "\"4078-65d5607777222-df\"",
+      "file_path": "documentation/CoreFoundation/cfxmlnodecreate.md",
+      "hash": "cf7558bd3ad7f8d4fcc87ecf5a50475e51a60b2d8f8906d821cd36b940c72bba"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/corefoundation/cfxmlnodecreatecopy.json": {
+      "etag": "\"2a3b-65d5607aad206-df\"",
+      "file_path": "documentation/CoreFoundation/cfxmlnodecreatecopy.md",
+      "hash": "1d864dea0e8a86d336d5daefd2fa63cc0c731a3d18a4cbfda2e23f8145dc4efb"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/corefoundation/cfxmlnodegetinfoptr.json": {
+      "etag": "\"29fe-65d5607adc756-df\"",
+      "file_path": "documentation/CoreFoundation/cfxmlnodegetinfoptr.md",
+      "hash": "0f62003514d5ab872cc3f0c769f0d3f5361d128f676960edae82d3e3c0ee6e7b"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/corefoundation/cfxmlnodegetstring.json": {
+      "etag": "\"27c8-65d5607c5e6c9-df\"",
+      "file_path": "documentation/CoreFoundation/cfxmlnodegetstring.md",
+      "hash": "b33b8de2b5c2405d8f45cef9b30160e77f610456a0be35fa9590d51e80f33bea"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/corefoundation/cfxmlnodegettypecode.json": {
+      "etag": "\"2575-65d5607a1afab-df\"",
+      "file_path": "documentation/CoreFoundation/cfxmlnodegettypecode.md",
+      "hash": "d840af8c533e9ce4413b5b1c437f50b33002ae292d87098879df393ec38721e7"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/corefoundation/cfxmlnodegettypeid.json": {
+      "etag": "\"1f49-65d560783beb3-df\"",
+      "file_path": "documentation/CoreFoundation/cfxmlnodegettypeid.md",
+      "hash": "93830cb548eebd963e5be6ff96e03446f7a658c52ed4aeec260dea2f5324c32d"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/corefoundation/cfxmlnodegetversion.json": {
+      "etag": "\"24a1-65d56077cf962-df\"",
+      "file_path": "documentation/CoreFoundation/cfxmlnodegetversion.md",
+      "hash": "482887506632664f1e5110585d76f42996a506720e342297c9c9b4bd179599f8"
+    },
     "https://developer.apple.com/tutorials/data/documentation/corefoundation/cfxmlnodetypecode.json": {
       "etag": "\"b3a0-65d56079454b8-df\"",
       "file_path": "documentation/CoreFoundation/cfxmlnodetypecode.md",
@@ -22064,6 +23319,11 @@
       "file_path": "documentation/CoreFoundation/cfxmlparser.md",
       "hash": "5dbc3ddd9536821d9850520d0dbbe0355f0f97ef42b64996a0367ce94c567ecd"
     },
+    "https://developer.apple.com/tutorials/data/documentation/corefoundation/cfxmlparserabort.json": {
+      "etag": "\"3c42-65d560790a2b3-df\"",
+      "file_path": "documentation/CoreFoundation/cfxmlparserabort.md",
+      "hash": "17bc4035b4547d97c8fb9592ee03411cae9e2ad644c697a4532b81b28c2ecd64"
+    },
     "https://developer.apple.com/tutorials/data/documentation/corefoundation/cfxmlparseraddchildcallback.json": {
       "etag": "\"5b17-65d5607826821-df\"",
       "file_path": "documentation/CoreFoundation/cfxmlparseraddchildcallback.md",
@@ -22159,6 +23419,21 @@
       "file_path": "documentation/CoreFoundation/cfxmlparsercopydescriptioncallback.md",
       "hash": "22409b4cb432e3db2b38f31a766cc43a0965aaf23b639a5726a33371d1ed8d50"
     },
+    "https://developer.apple.com/tutorials/data/documentation/corefoundation/cfxmlparsercopyerrordescription.json": {
+      "etag": "\"3819-65d5607dad515-df\"",
+      "file_path": "documentation/CoreFoundation/cfxmlparsercopyerrordescription.md",
+      "hash": "a7172461c28ad09adcc9e8dd09ad6aaa25ff9b157a4345cd575a2658d9add058"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/corefoundation/cfxmlparsercreate.json": {
+      "etag": "\"6428-65d5607d85669-df\"",
+      "file_path": "documentation/CoreFoundation/cfxmlparsercreate.md",
+      "hash": "8c167be940ff6ca0d57b46faacfaa78aca2bf27f39ff9983d619380e4ef66c2a"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/corefoundation/cfxmlparsercreatewithdatafromurl.json": {
+      "etag": "\"5eeb-65d560775ade6-df\"",
+      "file_path": "documentation/CoreFoundation/cfxmlparsercreatewithdatafromurl.md",
+      "hash": "d88a8ba9c5d4121ffd833531acd3ecaac899c7d27aac745e932e337285f2af77"
+    },
     "https://developer.apple.com/tutorials/data/documentation/corefoundation/cfxmlparsercreatexmlstructurecallback.json": {
       "etag": "\"5e08-65d5607a5b197-df\"",
       "file_path": "documentation/CoreFoundation/cfxmlparsercreatexmlstructurecallback.md",
@@ -22168,6 +23443,46 @@
       "etag": "\"59d1-65d5607aad206-df\"",
       "file_path": "documentation/CoreFoundation/cfxmlparserendxmlstructurecallback.md",
       "hash": "a619073c96a18c5c8f85b70ff1bddfea2b202cc71798e1ab37b99bae31c69592"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/corefoundation/cfxmlparsergetcallbacks.json": {
+      "etag": "\"35c6-65d5607826821-df\"",
+      "file_path": "documentation/CoreFoundation/cfxmlparsergetcallbacks.md",
+      "hash": "c69bc159c90fbc5185b67ff25a8640d99f9bc559e3a98af26eefc9dd4c51b77e"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/corefoundation/cfxmlparsergetcontext.json": {
+      "etag": "\"376d-65d5607aad206-df\"",
+      "file_path": "documentation/CoreFoundation/cfxmlparsergetcontext.md",
+      "hash": "fd9d12f09a76dbba702aede1e9a6c821d7a722e52c15c78c827a0fe30341468d"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/corefoundation/cfxmlparsergetdocument.json": {
+      "etag": "\"394b-65d560780a411-df\"",
+      "file_path": "documentation/CoreFoundation/cfxmlparsergetdocument.md",
+      "hash": "af7d894b35d6593cdc57c3f97633a9d8254da5de04d64160e9d54045495eee38"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/corefoundation/cfxmlparsergetlinenumber.json": {
+      "etag": "\"3b3b-65d5607826821-df\"",
+      "file_path": "documentation/CoreFoundation/cfxmlparsergetlinenumber.md",
+      "hash": "b615c0b7ab965284890e7f5098975150230b39dbb39d2781c224e978d3413769"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/corefoundation/cfxmlparsergetlocation.json": {
+      "etag": "\"3b3d-65d5607d85669-df\"",
+      "file_path": "documentation/CoreFoundation/cfxmlparsergetlocation.md",
+      "hash": "14aa094039c2a857e9d8328f49991a67350f2cb9c668bf194e43a9da396d4df6"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/corefoundation/cfxmlparsergetsourceurl.json": {
+      "etag": "\"372b-65d5607af74ba-df\"",
+      "file_path": "documentation/CoreFoundation/cfxmlparsergetsourceurl.md",
+      "hash": "8ce069a4641f94f7e82d401f2ab54d4412b7321ccc1f46a8203842c678533656"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/corefoundation/cfxmlparsergetstatuscode.json": {
+      "etag": "\"3719-65d5607a73fc7-df\"",
+      "file_path": "documentation/CoreFoundation/cfxmlparsergetstatuscode.md",
+      "hash": "667b2f839e4a7edfa35902ab88c5882a193f5d46496dc39bc7c679ed70d189cc"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/corefoundation/cfxmlparsergettypeid.json": {
+      "etag": "\"2ece-65d5607793d05-df\"",
+      "file_path": "documentation/CoreFoundation/cfxmlparsergettypeid.md",
+      "hash": "39e4fbccf2f8b81a8a21cbd26da0df630870cb13b04ec7cdccb4e27bdda93fd2"
     },
     "https://developer.apple.com/tutorials/data/documentation/corefoundation/cfxmlparserhandleerrorcallback.json": {
       "etag": "\"5a07-65d56079e2f18-df\"",
@@ -22194,6 +23509,11 @@
       "file_path": "documentation/CoreFoundation/cfxmlparseroptions/init(rawvalue).md",
       "hash": "9526ccd631809575dd18c07bde7809819f118f8e7a607d023ad17976d3a650e6"
     },
+    "https://developer.apple.com/tutorials/data/documentation/corefoundation/cfxmlparseroptions/kcfxmlparsernooptions.json": {
+      "etag": "\"38d0-65d560792c2be-df\"",
+      "file_path": "documentation/CoreFoundation/cfxmlparseroptions/kcfxmlparsernooptions.md",
+      "hash": "9ec43825390e22d85bcb9a8a5544eb173e7f9b817d197d960a20b29a68211edf"
+    },
     "https://developer.apple.com/tutorials/data/documentation/corefoundation/cfxmlparseroptions/replacephysicalentities.json": {
       "etag": "\"4517-65d560790a2b3-df\"",
       "file_path": "documentation/CoreFoundation/cfxmlparseroptions/replacephysicalentities.md",
@@ -22218,6 +23538,11 @@
       "etag": "\"433f-65d560792c2be-df\"",
       "file_path": "documentation/CoreFoundation/cfxmlparseroptions/validatedocument.md",
       "hash": "9cf83506094d353a86327833e7e87eae78c8cdf28dd6cb311265a72811c45466"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/corefoundation/cfxmlparserparse.json": {
+      "etag": "\"35ae-65d5607cda4ef-df\"",
+      "file_path": "documentation/CoreFoundation/cfxmlparserparse.md",
+      "hash": "d90f94917304ab2f7a0ccd045dd82e9f801744d19d097f4b80b2d7c4f731bd6f"
     },
     "https://developer.apple.com/tutorials/data/documentation/corefoundation/cfxmlparserreleasecallback.json": {
       "etag": "\"4d47-65d5607af74ba-df\"",
@@ -22319,6 +23644,11 @@
       "file_path": "documentation/CoreFoundation/cfxmlparserstatuscode/init(rawvalue).md",
       "hash": "7bfbbfc5f9e06657d335af6c5b096bd117aacbde10c05c2f7ed72576f4726428"
     },
+    "https://developer.apple.com/tutorials/data/documentation/corefoundation/cfxmlparserstatuscode/kcfxmlstatusparsesuccessful.json": {
+      "etag": "\"64be-65d560795ed96-df\"",
+      "file_path": "documentation/CoreFoundation/cfxmlparserstatuscode/kcfxmlstatusparsesuccessful.md",
+      "hash": "7e56205b7f76e25a187484d4b0121dfa8744b4ea49526a29891f1257b26ca355"
+    },
     "https://developer.apple.com/tutorials/data/documentation/corefoundation/cfxmlparserstatuscode/statusparseinprogress.json": {
       "etag": "\"78f2-65d560795ed96-df\"",
       "file_path": "documentation/CoreFoundation/cfxmlparserstatuscode/statusparseinprogress.md",
@@ -22353,6 +23683,36 @@
       "etag": "\"84e2-65d56077cf962-df\"",
       "file_path": "documentation/CoreFoundation/cfxmltree.md",
       "hash": "b775342d89aef9fdbd60a81042e6839d533d44cbec04b24813a69d0b7e9757d3"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/corefoundation/cfxmltreecreatefromdata.json": {
+      "etag": "\"5616-65d5607a73fc7-df\"",
+      "file_path": "documentation/CoreFoundation/cfxmltreecreatefromdata.md",
+      "hash": "01aa31dc30ea23a5de8986e789215781820e64fae6e9a970ced0d883f6cdb864"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/corefoundation/cfxmltreecreatefromdatawitherror.json": {
+      "etag": "\"5fb9-65d5607777222-df\"",
+      "file_path": "documentation/CoreFoundation/cfxmltreecreatefromdatawitherror.md",
+      "hash": "9366d3f71de9c4c04e986bf9ff029b2b7d82ca1cf7b84c94e95867c71839dd2e"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/corefoundation/cfxmltreecreatewithdatafromurl.json": {
+      "etag": "\"4e34-65d5607c5e6c9-df\"",
+      "file_path": "documentation/CoreFoundation/cfxmltreecreatewithdatafromurl.md",
+      "hash": "103079b2e4112a5071b94c3e755c28391e18c1d32420bd16cd5978c730cc8140"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/corefoundation/cfxmltreecreatewithnode.json": {
+      "etag": "\"3c0e-65d560785788a-df\"",
+      "file_path": "documentation/CoreFoundation/cfxmltreecreatewithnode.md",
+      "hash": "f525539467eac2a89adafb4d71ad510b25d724db937ca19c608f507e46d1ff05"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/corefoundation/cfxmltreecreatexmldata.json": {
+      "etag": "\"3def-65d5607d61793-df\"",
+      "file_path": "documentation/CoreFoundation/cfxmltreecreatexmldata.md",
+      "hash": "9a02c0db0cabc1c465d9414729cfe8c0c78eb63fa2d9efdc6a0b5d6d556e99e4"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/corefoundation/cfxmltreegetnode.json": {
+      "etag": "\"35b6-65d5607a5b197-df\"",
+      "file_path": "documentation/CoreFoundation/cfxmltreegetnode.md",
+      "hash": "add548628a988bf938f8ea1f6aa424547b7fc5d8b1c64161ada2a6358b84f18a"
     },
     "https://developer.apple.com/tutorials/data/documentation/corefoundation/cgaffinetransform.json": {
       "etag": "\"9825-65d5607826821-df\"",
@@ -22504,6 +23864,11 @@
       "file_path": "documentation/CoreFoundation/cgaffinetransformcomponents/translation.md",
       "hash": "ef859d54b93b45fce8861b39f5687dde4027c1f40358cf45fa3b3a8c6d55f6b1"
     },
+    "https://developer.apple.com/tutorials/data/documentation/corefoundation/cgfloat-c.typealias.json": {
+      "etag": "\"440f-65d5607d85669-df\"",
+      "file_path": "documentation/CoreFoundation/cgfloat-c.typealias.md",
+      "hash": "f1952c7082abd77d3da3064f29cdc2430f2686bd694523851e326f7428d7246f"
+    },
     "https://developer.apple.com/tutorials/data/documentation/corefoundation/cgfloat-swift.struct.json": {
       "etag": "\"9fd6-65d560775ade6-df\"",
       "file_path": "documentation/CoreFoundation/cgfloat-swift.struct.md",
@@ -22653,6 +24018,11 @@
       "etag": "\"72f6-65d5607a3bebc-df\"",
       "file_path": "documentation/CoreFoundation/cgfloat_min.md",
       "hash": "068995faff986af257af885519cf8647781c16bb3c2ab41777965eae6633b61f"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/corefoundation/cgfloat_type.json": {
+      "etag": "\"2749-65d56078e4d85-df\"",
+      "file_path": "documentation/CoreFoundation/cgfloat_type.md",
+      "hash": "dc7d8b6be0b48f35ec266f74b9c9b75f65229e5dfbd6fbd0270533c3a99c4dc0"
     },
     "https://developer.apple.com/tutorials/data/documentation/corefoundation/cgpoint.json": {
       "etag": "\"7db1-65d56078cac3f-df\"",
@@ -23089,6 +24459,11 @@
       "file_path": "documentation/CoreFoundation/cgvector/zero.md",
       "hash": "0954176377d2b787ba338c34b3a126276d361280df9c9dfd83126a4dd0ce2370"
     },
+    "https://developer.apple.com/tutorials/data/documentation/corefoundation/cgvector_defined.json": {
+      "etag": "\"2779-65d5607a91aae-df\"",
+      "file_path": "documentation/CoreFoundation/cgvector_defined.md",
+      "hash": "8ae9ca9a04de5e3fef1e67c9ef72f3e40cc58175766990f3bdc2b797ea37422b"
+    },
     "https://developer.apple.com/tutorials/data/documentation/corefoundation/common-file-system-resource-keys.json": {
       "etag": "\"e152-6590294d3d7ee-df\"",
       "file_path": "documentation/CoreFoundation/common-file-system-resource-keys.md",
@@ -23164,6 +24539,56 @@
       "file_path": "documentation/CoreFoundation/dialog-description-keys.md",
       "hash": "716efa78f74ed819a0c42b91ddf796f5a7ecb7c5330c4932e5be43eeda9f02a0"
     },
+    "https://developer.apple.com/tutorials/data/documentation/corefoundation/e_abort.json": {
+      "etag": "\"270d-65d560792c2be-df\"",
+      "file_path": "documentation/CoreFoundation/e_abort.md",
+      "hash": "c25c6365d5166ff6cac47106aadf2f5f262a8fadef4da47c4eb1424e65baa8cd"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/corefoundation/e_accessdenied.json": {
+      "etag": "\"2761-65d5607cf80f8-df\"",
+      "file_path": "documentation/CoreFoundation/e_accessdenied.md",
+      "hash": "6491d3c3e6455deeb121b60bbd1465b2c3140ffe39d66481c3e39608fe21b5dc"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/corefoundation/e_fail.json": {
+      "etag": "\"2701-65d560790a2b3-df\"",
+      "file_path": "documentation/CoreFoundation/e_fail.md",
+      "hash": "a08e202fe87815a06d4a3de751c4b59cd9bd4fbfb0e5a44dfdd3c74440305405"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/corefoundation/e_handle.json": {
+      "etag": "\"2719-65d5607c4099a-df\"",
+      "file_path": "documentation/CoreFoundation/e_handle.md",
+      "hash": "b67f93d49bd147f932806f0c57b61f4c081bb60c6f255caf375bb8fd16ecea62"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/corefoundation/e_invalidarg.json": {
+      "etag": "\"2749-65d560789392e-df\"",
+      "file_path": "documentation/CoreFoundation/e_invalidarg.md",
+      "hash": "36bbd1a8341a232bfbe406d6c8e812130560c1db7705b46bb262ec2d56b07f71"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/corefoundation/e_nointerface.json": {
+      "etag": "\"2755-65d5607dad515-df\"",
+      "file_path": "documentation/CoreFoundation/e_nointerface.md",
+      "hash": "f10141bf0f87e338c2eab8827dc4a37b7e15840ecd64766cebb77a8a2aa4fc46"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/corefoundation/e_notimpl.json": {
+      "etag": "\"2725-65d5607adc756-df\"",
+      "file_path": "documentation/CoreFoundation/e_notimpl.md",
+      "hash": "360a15fcbfcf4c627af19b4e4b39c185701b9ccfef44d96d29d05d5eddcaa2c2"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/corefoundation/e_outofmemory.json": {
+      "etag": "\"2755-65d5607dad515-df\"",
+      "file_path": "documentation/CoreFoundation/e_outofmemory.md",
+      "hash": "4b39d7f514becf7f7be99dab02beee5019014ecb735ca4b883fa251c21d58889"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/corefoundation/e_pointer.json": {
+      "etag": "\"2725-65d5607a5b197-df\"",
+      "file_path": "documentation/CoreFoundation/e_pointer.md",
+      "hash": "2a0850a11e222af6a230ede5e135fd1d87c6ebf0f9cf7f5894177f866e1d2093"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/corefoundation/e_unexpected.json": {
+      "etag": "\"2749-65d5607dad515-df\"",
+      "file_path": "documentation/CoreFoundation/e_unexpected.md",
+      "hash": "d21cf06f8b8d8bfce9ee4b164a958b97788e9cb08f30dc6eb6d5fb69d07f028e"
+    },
     "https://developer.apple.com/tutorials/data/documentation/corefoundation/error-dictionary-keys.json": {
       "etag": "\"2c27-6590294c3572c-df\"",
       "file_path": "documentation/CoreFoundation/error-dictionary-keys.md",
@@ -23183,6 +24608,16 @@
       "etag": "\"276f8-65902949adef0-df\"",
       "file_path": "documentation/CoreFoundation/external-string-encodings.md",
       "hash": "136d229d9ab8a301c80854b540e8ccf89bc42dd9dbadd24c4655534bdf02a077"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/corefoundation/failed.json": {
+      "etag": "\"2760-65d5607af74ba-df\"",
+      "file_path": "documentation/CoreFoundation/failed.md",
+      "hash": "e0d9857d8b0bccf6026e4ea6815138ec66d922b17c2a4e1466926fde9c6103e8"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/corefoundation/false.json": {
+      "etag": "\"26f5-65d5607cf80f8-df\"",
+      "file_path": "documentation/CoreFoundation/false.md",
+      "hash": "6b2a815bb20cffa0d7d96d989d7afb182497ea2992371240eaf7e0661f233aef"
     },
     "https://developer.apple.com/tutorials/data/documentation/corefoundation/file-property-keys.json": {
       "etag": "\"41ff-6590294bd5347-df\"",
@@ -23204,6 +24639,26 @@
       "file_path": "documentation/CoreFoundation/framework-version-numbers.md",
       "hash": "969bd8120cdec96122ad200154fec5a275958dee8146984a21421b7a35fa76bc"
     },
+    "https://developer.apple.com/tutorials/data/documentation/corefoundation/hresult.json": {
+      "etag": "\"4507-65d5607bf2347-df\"",
+      "file_path": "documentation/CoreFoundation/hresult.md",
+      "hash": "6ee6a72a150d86ddf0f21a70cc967c0356dccaf37ba387a77c9f5dda45407448"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/corefoundation/hresult_code.json": {
+      "etag": "\"27a4-65d5607d61793-df\"",
+      "file_path": "documentation/CoreFoundation/hresult_code.md",
+      "hash": "b2298b42ac95de155be3707a5f5d4891fb2d9d9e7c94ea9ba0796c4633bbb13c"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/corefoundation/hresult_facility.json": {
+      "etag": "\"27d4-65d5607af74ba-df\"",
+      "file_path": "documentation/CoreFoundation/hresult_facility.md",
+      "hash": "e734d5cffa2cb8ac25c7a3d9811f48d29d10e540d512b823b28d1e8c76603a84"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/corefoundation/hresult_severity.json": {
+      "etag": "\"27d4-65d560799306f-df\"",
+      "file_path": "documentation/CoreFoundation/hresult_severity.md",
+      "hash": "dd9586122959ba7ae118bda2cba2c1a87a536b42f37fce4154762847af0a9f30"
+    },
     "https://developer.apple.com/tutorials/data/documentation/corefoundation/http-url-properties.json": {
       "etag": "\"1efb-6590294ee482a-df\"",
       "file_path": "documentation/CoreFoundation/http-url-properties.md",
@@ -23224,10 +24679,45 @@
       "file_path": "documentation/CoreFoundation/invalid-string-encoding-flag.md",
       "hash": "325f814ffcfc54b9ba3c3cceccc6abf1592764d7130c378d454af5182c600132"
     },
+    "https://developer.apple.com/tutorials/data/documentation/corefoundation/is_error.json": {
+      "etag": "\"2778-65d5607877c1b-df\"",
+      "file_path": "documentation/CoreFoundation/is_error.md",
+      "hash": "028af71a4cb65cb6f33db3d95cb339f8a4d01df25c6b4440876aa8d44a7dbd42"
+    },
     "https://developer.apple.com/tutorials/data/documentation/corefoundation/isa_ptrauth_discriminator.json": {
       "etag": "\"6f89-65d5607b80185-df\"",
       "file_path": "documentation/CoreFoundation/isa_ptrauth_discriminator.md",
       "hash": "77fb69ecda7e7167e7e752ffe494369a7b40e0d4487a0999537ae7e15bfc6050"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/corefoundation/iunknown_c_guts.json": {
+      "etag": "\"276d-65d56077b10fe-df\"",
+      "file_path": "documentation/CoreFoundation/iunknown_c_guts.md",
+      "hash": "f26e40e04a9e82e90ad4ddccbbbf7c3ef81d324d73228cbb3d15d95d32d39931"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/corefoundation/iunknownuuid.json": {
+      "etag": "\"2749-65d5607d85669-df\"",
+      "file_path": "documentation/CoreFoundation/iunknownuuid.md",
+      "hash": "9a0e63984c7d484c7abfc22e99a7a7292de90c2244ba7b1e7103f55f5fca21ee"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/corefoundation/iunknownvtbl.json": {
+      "etag": "\"2bf3-65d560789392e-df\"",
+      "file_path": "documentation/CoreFoundation/iunknownvtbl.md",
+      "hash": "9dc4d69af700d081e83ab87b9b63f87bac68006676fbc216f8c08b0f37e891b0"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/corefoundation/iunknownvtbl/addref.json": {
+      "etag": "\"c99-65d56079e2f18-df\"",
+      "file_path": "documentation/CoreFoundation/iunknownvtbl/addref.md",
+      "hash": "a8b0ef05b285fca0bbebb1f340a06ffd1fdddf486773c7a63a8e5bd0ba7b7da0"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/corefoundation/iunknownvtbl/queryinterface.json": {
+      "etag": "\"d1c-65d56079e2f18-df\"",
+      "file_path": "documentation/CoreFoundation/iunknownvtbl/queryinterface.md",
+      "hash": "4a07c5767eb47555126df93c83eb01c9e391414a0bc7e227c668a4a24c3113b9"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/corefoundation/iunknownvtbl/release.json": {
+      "etag": "\"ca5-65d56079e2f18-df\"",
+      "file_path": "documentation/CoreFoundation/iunknownvtbl/release.md",
+      "hash": "1850d2caed643ff3414683064486d4f4c2476fba1046b5d0193e435e38bb3abb"
     },
     "https://developer.apple.com/tutorials/data/documentation/corefoundation/kcfabsolutetimeintervalsince1904.json": {
       "etag": "\"223a-65d5607a3bebc-df\"",
@@ -24003,6 +25493,11 @@
       "etag": "\"205e-65d5607cda4ef-df\"",
       "file_path": "documentation/CoreFoundation/kcffiledescriptorwritecallback.md",
       "hash": "148fe897577ff22bcf209776f7b3a031e85c899379311549de3bda14bed69042"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/corefoundation/kcffilesecurityremoveacl.json": {
+      "etag": "\"27d9-65d560775ade6-df\"",
+      "file_path": "documentation/CoreFoundation/kcffilesecurityremoveacl.md",
+      "hash": "592ad06e038b7aa96261f6b289f9f813f7f3223d96691c94170654ecafd2631e"
     },
     "https://developer.apple.com/tutorials/data/documentation/corefoundation/kcfmessageportbecameinvaliderror.json": {
       "etag": "\"3263-65d5607d61793-df\"",
@@ -25149,6 +26644,11 @@
       "file_path": "documentation/CoreFoundation/kcfurlvolumeuuidstringkey.md",
       "hash": "55f369ef1368cd14c512fe367511e56334add242538c7366d1746b75a1b6d024"
     },
+    "https://developer.apple.com/tutorials/data/documentation/corefoundation/kcfusernotificationalertaccessibilityidentifierkey.json": {
+      "etag": "\"10dd-659029492abff-df\"",
+      "file_path": "documentation/CoreFoundation/kcfusernotificationalertaccessibilityidentifierkey.md",
+      "hash": "7b975be1acb9a64cd9a11aa2f1cf45ad7f938f69e4e2c633af9bd0fb7bfbf8d0"
+    },
     "https://developer.apple.com/tutorials/data/documentation/corefoundation/kcfusernotificationalertheaderkey.json": {
       "etag": "\"67ad-65d5607b9e16c-df\"",
       "file_path": "documentation/CoreFoundation/kcfusernotificationalertheaderkey.md",
@@ -25163,6 +26663,11 @@
       "etag": "\"7251-65d5607a3bebc-df\"",
       "file_path": "documentation/CoreFoundation/kcfusernotificationalerttopmostkey.md",
       "hash": "8fed4115268bdec00ebd6408eba8a5f2e6cf78fce35d3efba808d38329116321"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/corefoundation/kcfusernotificationalternatebuttonaccessibilityidentifierkey.json": {
+      "etag": "\"1155-6590294fa69f0-df\"",
+      "file_path": "documentation/CoreFoundation/kcfusernotificationalternatebuttonaccessibilityidentifierkey.md",
+      "hash": "e6bfe48890fc63be479c323525caab7c81a245f2f0132db54a65eba6d412bd0d"
     },
     "https://developer.apple.com/tutorials/data/documentation/corefoundation/kcfusernotificationalternatebuttontitlekey.json": {
       "etag": "\"6747-65d5607a1afab-df\"",
@@ -25188,6 +26693,11 @@
       "etag": "\"6877-65d560789392e-df\"",
       "file_path": "documentation/CoreFoundation/kcfusernotificationcheckboxtitleskey.md",
       "hash": "35fa4133235dc32de8d39064a3d1e130a766c7dc686b0176f1db7d86df4a16cf"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/corefoundation/kcfusernotificationdefaultbuttonaccessibilityidentifierkey.json": {
+      "etag": "\"113d-6590294ab906e-df\"",
+      "file_path": "documentation/CoreFoundation/kcfusernotificationdefaultbuttonaccessibilityidentifierkey.md",
+      "hash": "fd5a239f6081b2a4425616df2d33910c1124e21325fbe9d40027d3324a42a6cd"
     },
     "https://developer.apple.com/tutorials/data/documentation/corefoundation/kcfusernotificationdefaultbuttontitlekey.json": {
       "etag": "\"6e2f-65d56077eb535-df\"",
@@ -25223,6 +26733,11 @@
       "etag": "\"2bf1-65d5607af74ba-df\"",
       "file_path": "documentation/CoreFoundation/kcfusernotificationnotealertlevel.md",
       "hash": "3b58d9ff50495f83609e9f6cb8d49d84e9bdc1e17e9bcbaebd4b22b230f7b4b9"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/corefoundation/kcfusernotificationotherbuttonaccessibilityidentifierkey.json": {
+      "etag": "\"1125-65902948f4b34-df\"",
+      "file_path": "documentation/CoreFoundation/kcfusernotificationotherbuttonaccessibilityidentifierkey.md",
+      "hash": "9cb764cf88c43c444aa6752382bb1c9bdc22e6600dd4647bcdc5e11604fd668f"
     },
     "https://developer.apple.com/tutorials/data/documentation/corefoundation/kcfusernotificationotherbuttontitlekey.json": {
       "etag": "\"671f-65d560790a2b3-df\"",
@@ -25324,6 +26839,16 @@
       "file_path": "documentation/CoreFoundation/locale-property-keys.md",
       "hash": "1dab446d67d666ac633d5b81a32284b2447a3060710fb308fadb9ba5a3fb75cb"
     },
+    "https://developer.apple.com/tutorials/data/documentation/corefoundation/lpvoid.json": {
+      "etag": "\"43a9-65d560785788a-df\"",
+      "file_path": "documentation/CoreFoundation/lpvoid.md",
+      "hash": "995cac6d2dac9553d81e7d3493078fa608810e074b9aa8a4a9ce2ed5914df006"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/corefoundation/make_hresult.json": {
+      "etag": "\"282a-65d56079e2f18-df\"",
+      "file_path": "documentation/CoreFoundation/make_hresult.md",
+      "hash": "eabcea9569534becb62321236f475838fe7aa3e7d96686d96b527ec3739b62fc"
+    },
     "https://developer.apple.com/tutorials/data/documentation/corefoundation/notification-name.json": {
       "etag": "\"16ff-6590294962f2c-df\"",
       "file_path": "documentation/CoreFoundation/notification-name.md",
@@ -25389,10 +26914,40 @@
       "file_path": "documentation/CoreFoundation/property_list_mutability_options.md",
       "hash": "1c3f53c0abe1dc0e46befe17249cfd76330b7a8c26f75a66d688b4de07895cf4"
     },
+    "https://developer.apple.com/tutorials/data/documentation/corefoundation/refiid.json": {
+      "etag": "\"484c-65d5607a91aae-df\"",
+      "file_path": "documentation/CoreFoundation/refiid.md",
+      "hash": "6177770670d608043f33cd1938833c81c3cb11175691757faaa81f34ab2c18e7"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/corefoundation/s_false.json": {
+      "etag": "\"270d-65d560780a411-df\"",
+      "file_path": "documentation/CoreFoundation/s_false.md",
+      "hash": "3008881cb5f689ea64e1a74358370890742158d2335348d61110e65ee6641d13"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/corefoundation/s_ok.json": {
+      "etag": "\"26e9-65d5607a91aae-df\"",
+      "file_path": "documentation/CoreFoundation/s_ok.md",
+      "hash": "c495ad3b988989f1af223276dbf35c4b2896d8d283b34a7cf4cef5dacda691ec"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/corefoundation/severity_error.json": {
+      "etag": "\"2761-65d56078accd9-df\"",
+      "file_path": "documentation/CoreFoundation/severity_error.md",
+      "hash": "b400a8fe5426d1c6ea06cd324d4432a9ee62bc7b5a9fc03957b4eb99d6eeeabc"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/corefoundation/severity_success.json": {
+      "etag": "\"2779-65d56079c671c-df\"",
+      "file_path": "documentation/CoreFoundation/severity_success.md",
+      "hash": "3b5b80f9a65e05e8f2a75a08eaba1a82cf8aed5cb8b14be096bea82796b7a4f6"
+    },
     "https://developer.apple.com/tutorials/data/documentation/corefoundation/socket-name-server-utilities.json": {
       "etag": "\"505d-6590294ab906e-df\"",
       "file_path": "documentation/CoreFoundation/socket-name-server-utilities.md",
       "hash": "a88eb2588996b319688711507541def73ec43263e81416727935cc0371d04652"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/corefoundation/stdmethodcalltype.json": {
+      "etag": "\"2785-65d5607d85669-df\"",
+      "file_path": "documentation/CoreFoundation/stdmethodcalltype.md",
+      "hash": "b082adcbd851c97da3aa500b323ca10e2676721785f6fbdea8c8dc9fd46f7b81"
     },
     "https://developer.apple.com/tutorials/data/documentation/corefoundation/stream-properties.json": {
       "etag": "\"beef-6590294b1a2aa-df\"",
@@ -25409,6 +26964,11 @@
       "file_path": "documentation/CoreFoundation/string-comparison-flags.md",
       "hash": "eb5f69be9e6545573a12ef9bc98095ae277ebf08a846119da8cb75c7fc7c64da"
     },
+    "https://developer.apple.com/tutorials/data/documentation/corefoundation/succeeded.json": {
+      "etag": "\"2784-65d56078cac3f-df\"",
+      "file_path": "documentation/CoreFoundation/succeeded.md",
+      "hash": "2f9dad8b2a47060778145c8c2b28b9c83a728cd08e4567ab26daf8c8053fcdac"
+    },
     "https://developer.apple.com/tutorials/data/documentation/corefoundation/time-utilities.json": {
       "etag": "\"8782-6590294c129ac-df\"",
       "file_path": "documentation/CoreFoundation/time-utilities.md",
@@ -25423,6 +26983,16 @@
       "etag": "\"7a67-65902948d210d-df\"",
       "file_path": "documentation/CoreFoundation/transform-identifiers-for-cfstringtransform.md",
       "hash": "7ef8a2d61dd794b10856d72a94de916c99605f9c0841bff5466629f9bf27108d"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/corefoundation/true.json": {
+      "etag": "\"26e9-65d5607a5b197-df\"",
+      "file_path": "documentation/CoreFoundation/true.md",
+      "hash": "ad2dc44acdb0804b9edc057709cce5c15b8c72e4a7afd9b206eb074126938acc"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/corefoundation/ulong.json": {
+      "etag": "\"4574-65d5607877c1b-df\"",
+      "file_path": "documentation/CoreFoundation/ulong.md",
+      "hash": "283a9125f9ddc705d763a6022766bf68e22e4ae01c5a67519ed526c713bb14e1"
     },
     "https://developer.apple.com/tutorials/data/documentation/corefoundation/value-not-found.json": {
       "etag": "\"1aa9-6590294f44fe5-df\"",
@@ -25440,8 +27010,8 @@
       "applicationservices": {}
     },
     "render": {
-      "version": 1
+      "version": 2
     },
-    "total_pages": 5087
+    "total_pages": 5401
   }
 }

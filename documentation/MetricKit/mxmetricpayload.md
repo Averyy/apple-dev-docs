@@ -81,6 +81,8 @@ class MXMetricPayload
 ### Instance Properties
 - [var diskSpaceUsageMetrics: MXDiskSpaceUsageMetric?](./mxmetricpayload/diskspaceusagemetrics.md)
   An object containing disk space usage metrics for this application.
+### Instance Methods
+- [- DictionaryRepresentation](./mxmetricpayload/dictionaryrepresentation-1nrgx.md)
 
 ## Relationships
 

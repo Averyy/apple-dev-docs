@@ -41,11 +41,17 @@ Use an instance of this class to configure the properties of an app that you all
   The set of languages for which allowed menu items have been configured.
 - [var configurationInfo: [String : Any]](./aeassessmentparticipantconfiguration/configurationinfo.md)
 - [var isRequired: Bool](./aeassessmentparticipantconfiguration/isrequired.md)
+- [allowedMenuItemLanguageIdentifiers](./aeassessmentparticipantconfiguration/allowedmenuitemlanguageidentifiers.md)
+  The set of language identifiers for which allowed menu items have been configured.
 ### Instance Methods
 - [func allowedMenuItems(for: Locale.Language) -> Set<String>?](./aeassessmentparticipantconfiguration/allowedmenuitems%28for%29.md)
   Returns the set of allowed menu item titles for the given language, or `nil` if no items have been configured for that language.
 - [func setAllowedMenuItems(Set<String>?, for: Locale.Language)](./aeassessmentparticipantconfiguration/setallowedmenuitems%28_,for%29.md)
   Sets the allowed menu item titles for the given language.
+- [- allowedMenuItemsForLanguageIdentifier:](./aeassessmentparticipantconfiguration/allowedmenuitemsforlanguageidentifier_.md)
+  Returns the set of allowed menu item titles for the given language identifier, or `nil` if no items have been configured for that identifier.
+- [- setAllowedMenuItems:forLanguageIdentifier:](./aeassessmentparticipantconfiguration/setallowedmenuitems_forlanguageidentifier_.md)
+  Sets the allowed menu item titles for the given language identifier.
 
 ## Relationships
 

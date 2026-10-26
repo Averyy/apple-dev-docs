@@ -53,6 +53,8 @@ class MXMetaData
 - [init?(coder: NSCoder)](./mxmetadata/init%28coder%29.md)
 ### Instance Properties
 - [var bundleIdentifier: String](./mxmetadata/bundleidentifier.md)
+### Instance Methods
+- [- DictionaryRepresentation](./mxmetadata/dictionaryrepresentation-88u6f.md)
 
 ## Relationships
 

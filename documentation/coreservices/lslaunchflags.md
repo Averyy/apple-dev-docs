@@ -49,6 +49,24 @@ They are passed in a launch specification structure (`LSLaunchFSRefSpec` to the 
   Requests that the application be hidden as soon as it completes its launch sequence.
 - [static var andHideOthers: LSLaunchFlags](./lslaunchflags/api-1448911-andhideothers.md)
   Requests that other applications be hidden as soon as the opened application completes its launch sequence.
+- [kLSLaunchDefaults](./lslaunchflags/klslaunchdefaults.md)
+  Requests launching in the default manner (as if the only flags set were `kLSLaunchNoParams`, `kLSLaunchAsync`, and `kLSLaunchStartClassic`).
+- [kLSLaunchAndPrint](./lslaunchflags/klslaunchandprint.md)
+  Requests that documents opened in the application be printed.
+- [kLSLaunchAndDisplayErrors](./lslaunchflags/klslaunchanddisplayerrors.md)
+  Requests that launch and open failures be displayed in the UI.
+- [kLSLaunchDontAddToRecents](./lslaunchflags/klslaunchdontaddtorecents.md)
+  Requests that the application or documents not be added to the Finder’s Recent Items menu.
+- [kLSLaunchDontSwitch](./lslaunchflags/klslaunchdontswitch.md)
+  Requests that the application be launched without being brought to the foreground.
+- [kLSLaunchAsync](./lslaunchflags/klslaunchasync.md)
+  Requests that the application be launched asynchronously.
+- [kLSLaunchNewInstance](./lslaunchflags/klslaunchnewinstance.md)
+  Requests that a new instance of the application be started, even if one is already running.
+- [kLSLaunchAndHide](./lslaunchflags/klslaunchandhide.md)
+  Requests that the application be hidden as soon as it completes its launch sequence.
+- [kLSLaunchAndHideOthers](./lslaunchflags/klslaunchandhideothers.md)
+  Requests that other applications be hidden as soon as the opened application completes its launch sequence.
 
 ## Relationships
 

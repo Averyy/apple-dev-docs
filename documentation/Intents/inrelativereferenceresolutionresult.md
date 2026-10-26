@@ -35,6 +35,10 @@ An [`INRelativeReferenceResolutionResult`](./inrelativereferenceresolutionresult
   Creates an object whose resolution involves the successful matching of the specified parameter.
 - [class func confirmationRequired(with: INRelativeReference) -> Self](./inrelativereferenceresolutionresult/confirmationrequired%28with%29.md)
   Creates an object whose resolution requires that the user must confirm the value before proceeding.
+- [+ successWithResolvedValue:](./inrelativereferenceresolutionresult/successwithresolvedvalue_.md)
+  Creates an object whose resolution involves the successful matching of the specified parameter.
+- [+ confirmationRequiredWithValueToConfirm:](./inrelativereferenceresolutionresult/confirmationrequiredwithvaluetoconfirm_.md)
+  Creates an object whose resolution requires that the user must confirm the value before proceeding.
 
 ## Relationships
 

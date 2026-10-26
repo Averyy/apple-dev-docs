@@ -37,6 +37,8 @@ var normalizedPath: CGPath { get }
   The contour’s array of points in normalized coordinates.
 - [func polygonApproximation(epsilon: Float) throws -> VNContour](./polygonapproximation%28epsilon%29.md)
   Simplifies the contour to a polygon using a Ramer-Douglas-Peucker algorithm.
+- [normalizedPoints](./normalizedpoints-2orqj.md)
+  The contour’s array of points in normalized coordinates.
 
 
 ---

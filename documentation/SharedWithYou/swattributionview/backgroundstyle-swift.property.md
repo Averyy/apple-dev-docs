@@ -45,6 +45,8 @@ If you don’t specify a background style, the system chooses one automatically.
   A width the system uses to constrain the view contents.
 - [var supplementalMenu: UIMenu?](./supplementalmenu.md)
   A supplemental menu to augment the attribution view’s existing menu.
+- [enablesMarquee](./enablesmarquee.md)
+  Automatically enables a marquee effect.
 
 
 ---

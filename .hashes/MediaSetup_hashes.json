@@ -5,6 +5,16 @@
       "file_path": "documentation/MediaSetup/MediaSetup.md",
       "hash": "58663cd41d857790db65fe288152decef2577f099640c58b31462d0788aa9131"
     },
+    "https://developer.apple.com/documentation/mediasetup/mediasetupversionnumber": {
+      "etag": "\"e25-65d55d51f2ae1-df\"",
+      "file_path": "documentation/MediaSetup/mediasetupversionnumber.md",
+      "hash": "59561c2ff1b16e30434525a600068aab8dfd9fe284d913db1db122d54ea237db"
+    },
+    "https://developer.apple.com/documentation/mediasetup/mediasetupversionstring": {
+      "etag": "\"e64-65d55d51f2ae1-df\"",
+      "file_path": "documentation/MediaSetup/mediasetupversionstring.md",
+      "hash": "33ea3f49b5d3b8fab85f1d6c26fc24a8a02552448da36e1c4d89b413a4f72f0c"
+    },
     "https://developer.apple.com/documentation/mediasetup/msauthenticationpresentationcontext": {
       "etag": "\"34f7-65d55d51f2ae1-df\"",
       "file_path": "documentation/MediaSetup/msauthenticationpresentationcontext.md",
@@ -95,6 +105,16 @@
       "file_path": "documentation/MediaSetup/MediaSetup.md",
       "hash": "58663cd41d857790db65fe288152decef2577f099640c58b31462d0788aa9131"
     },
+    "https://developer.apple.com/tutorials/data/documentation/mediasetup/mediasetupversionnumber.json": {
+      "etag": "\"e25-65d55d51f2ae1-df\"",
+      "file_path": "documentation/MediaSetup/mediasetupversionnumber.md",
+      "hash": "59561c2ff1b16e30434525a600068aab8dfd9fe284d913db1db122d54ea237db"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/mediasetup/mediasetupversionstring.json": {
+      "etag": "\"e64-65d55d51f2ae1-df\"",
+      "file_path": "documentation/MediaSetup/mediasetupversionstring.md",
+      "hash": "33ea3f49b5d3b8fab85f1d6c26fc24a8a02552448da36e1c4d89b413a4f72f0c"
+    },
     "https://developer.apple.com/tutorials/data/documentation/mediasetup/msauthenticationpresentationcontext.json": {
       "etag": "\"34f7-65d55d51f2ae1-df\"",
       "file_path": "documentation/MediaSetup/msauthenticationpresentationcontext.md",
@@ -183,8 +203,8 @@
   },
   "metadata": {
     "render": {
-      "version": 1
+      "version": 2
     },
-    "total_pages": 36
+    "total_pages": 40
   }
 }

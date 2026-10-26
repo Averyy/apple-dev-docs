@@ -50,6 +50,8 @@ If `otherArray` has fewer objects than are specified by `aRange`, the extra obje
   Replaces the objects in the receiving array specified by one given range with the objects in another array specified by another range.
 - [func setArray([Any])](./setarray%28_%29.md)
   Sets the receiving array’s elements to those in another given array.
+- [- setObject:atIndexedSubscript:](./setobject_atindexedsubscript_.md)
+  Replaces the object at the index with the new object, possibly adding the object.
 
 
 ---

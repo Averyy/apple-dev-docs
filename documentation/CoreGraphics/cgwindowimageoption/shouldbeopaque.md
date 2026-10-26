@@ -31,6 +31,7 @@ When capturing the window, partially transparent areas are backed by a solid whi
 - [static var nominalResolution: CGWindowImageOption](./nominalresolution.md)
   When capturing the window, return the nominal image resolution. The returned image size is the same as the screen size.
 - [static var onlyShadows: CGWindowImageOption](./onlyshadows.md)
+- [kCGWindowImageDefault](./kcgwindowimagedefault.md)
 
 
 ---

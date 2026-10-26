@@ -42,6 +42,11 @@ typedef union { ... } SPSphericalCoordinates3D;
   Creates a new spherical coordinates structure from the specified Cartesian coordinates represented by a simd vector.
 - [init(x: Double, y: Double, z: Double)](./sphericalcoordinates3d/init%28x,y,z%29.md)
   Creates a new spherical coordinates structure from the specified Cartesian coordinates.
+- [SPSphericalCoordinates3DMakeWithCartesianPoint](./spsphericalcoordinates3dmakewithcartesianpoint.md)
+  Creates a spherical coordinates structure from the Cartesian coordinates represented by the specified Spatial point.
+- [SPSphericalCoordinates3DMakeWithCartesianVector](./spsphericalcoordinates3dmakewithcartesianvector-940l6.md)
+  Creates a spherical coordinates structure from the Cartesian coordinates represented by the specified simd vector.
+- [SPSphericalCoordinates3DMakeWithCartesianVector](./spsphericalcoordinates3dmakewithcartesianvector-9pfp3.md)
 ### Inspecting a spherical coordinates structure’s properties
 - [var azimuth: Angle2D](./sphericalcoordinates3d/azimuth.md)
   The azimuthal angle, in radians.
@@ -53,6 +58,12 @@ typedef union { ... } SPSphericalCoordinates3D;
   A simd three-element vector that contains the radius, inclination, and azimuth values.
 - [var customMirror: Mirror](./sphericalcoordinates3d/custommirror.md)
   The custom mirror for this instance.
+- [azimuth](./spsphericalcoordinates3d/azimuth.md)
+  The azimuthal angle, in radians.
+- [inclination](./spsphericalcoordinates3d/inclination.md)
+  The inclination angle, in radians.
+- [radius](./spsphericalcoordinates3d/radius.md)
+  The distance to the origin.
 ### Initializers
 - [init(SphericalCoordinates3DFloat)](./sphericalcoordinates3d/init%28_%29-1hxjg.md)
   Returns a double-precision spherical coordinates structure from a single-precision spherical coordinates structure.

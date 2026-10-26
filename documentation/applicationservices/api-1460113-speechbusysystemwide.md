@@ -40,6 +40,8 @@ This function is useful when you want to ensure that no speechis currently being
   Determines whether any channels of speech are currentlysynthesizing speech.
 - [func SpeechManagerVersion() -> NumVersion](./api-1462334-speechmanagerversion.md)
   Determines the current version of the Speech SynthesisManager installed in the system.
+- [GetSpeechInfo](./api-1552220-getspeechinfo.md)
+  Gets information about a designated speech channel.
 
 
 ---

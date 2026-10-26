@@ -38,6 +38,12 @@ Note that documentation describing the leading dimension as the first dimension 
   Returns the index of the element with the largest absolute value in a vector (single-precision).
 - [func cblas_izamax(__LAPACK_int, OpaquePointer?, __LAPACK_int) -> __LAPACK_int](./cblas_izamax%28_,_,_%29.md)
   Returns the index of the element with the largest absolute value in a vector (double-precision complex).
+- [SetBLASParamErrorProc](./setblasparamerrorproc.md)
+  Sets an error handler function.
+- [cblas_errprn](./cblas_errprn.md)
+  Prints an error message.
+- [cblas_xerbla](./cblas_xerbla.md)
+  The default error handler for BLAS routines.
 ### Sparse computation
 - [Matrix and Vector Operations](./matrix-and-vector-operations.md)
   Perform computations with matrices and vectors.

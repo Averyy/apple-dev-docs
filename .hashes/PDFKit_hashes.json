@@ -80,6 +80,186 @@
       "file_path": "documentation/PDFKit/graphics-properties.md",
       "hash": "155302162f7bc87c5a96d124f95e02cdf476551dc7d6b4fb08eeea068fb61394"
     },
+    "https://developer.apple.com/documentation/pdfkit/kpdfannotationkey_action": {
+      "etag": "\"2e0c-65d55e27af7b4-df\"",
+      "file_path": "documentation/PDFKit/kpdfannotationkey_action.md",
+      "hash": "3c6bb8dbfece24cb6e6746ba577a9d0c3bf81c15d92e5f0e4ccda58c0a3af9f2"
+    },
+    "https://developer.apple.com/documentation/pdfkit/kpdfannotationkey_additionalactions": {
+      "etag": "\"2e4e-65d55e2733b17-df\"",
+      "file_path": "documentation/PDFKit/kpdfannotationkey_additionalactions.md",
+      "hash": "a26cd08527201fffe04a599a6b83d68f676cd7d9d41746a28c7a2fa034747b78"
+    },
+    "https://developer.apple.com/documentation/pdfkit/kpdfannotationkey_appearancedictionary": {
+      "etag": "\"2e60-65d55e25ae3ea-df\"",
+      "file_path": "documentation/PDFKit/kpdfannotationkey_appearancedictionary.md",
+      "hash": "e9f587170138b8f46ed480adbf0c8c8af8ba6baf749c11ac707bdb2782d47bed"
+    },
+    "https://developer.apple.com/documentation/pdfkit/kpdfannotationkey_appearancestate": {
+      "etag": "\"2e42-65d55e26bfc18-df\"",
+      "file_path": "documentation/PDFKit/kpdfannotationkey_appearancestate.md",
+      "hash": "b7710979e44d39e0c032b6c7c7fdbc0b4c9ee7909fd6f6a7189b04d45fdb7978"
+    },
+    "https://developer.apple.com/documentation/pdfkit/kpdfannotationkey_border": {
+      "etag": "\"2e0c-65d55e2544824-df\"",
+      "file_path": "documentation/PDFKit/kpdfannotationkey_border.md",
+      "hash": "7e4625029bedfabe25e8bd20f28156c56c6c839705199249ee66fa31916d2e4c"
+    },
+    "https://developer.apple.com/documentation/pdfkit/kpdfannotationkey_borderstyle": {
+      "etag": "\"2e2a-65d55e2760dbe-df\"",
+      "file_path": "documentation/PDFKit/kpdfannotationkey_borderstyle.md",
+      "hash": "2a5b6444127c729ba153a8e614f1730c824341dbdb042edcd10946038bb61dd4"
+    },
+    "https://developer.apple.com/documentation/pdfkit/kpdfannotationkey_color": {
+      "etag": "\"2e06-65d55e2760dbe-df\"",
+      "file_path": "documentation/PDFKit/kpdfannotationkey_color.md",
+      "hash": "10318366e766ad9acc4ea6971d84c4f2e2d8c462691cd63ef7c4364bc8c00c4e"
+    },
+    "https://developer.apple.com/documentation/pdfkit/kpdfannotationkey_contents": {
+      "etag": "\"2e18-65d55e2760dbe-df\"",
+      "file_path": "documentation/PDFKit/kpdfannotationkey_contents.md",
+      "hash": "8f9d4c20bdb995f17d95db029c3856ecca98341a5b5cc0de25d15bf8b7289593"
+    },
+    "https://developer.apple.com/documentation/pdfkit/kpdfannotationkey_date": {
+      "etag": "\"2e00-65d55e2733b17-df\"",
+      "file_path": "documentation/PDFKit/kpdfannotationkey_date.md",
+      "hash": "bbba6a407b07bc31a7ac09ce9aad6679635337adc2cdc077f0b822cbafeaf192"
+    },
+    "https://developer.apple.com/documentation/pdfkit/kpdfannotationkey_defaultappearance": {
+      "etag": "\"2e4e-65d55e265d080-df\"",
+      "file_path": "documentation/PDFKit/kpdfannotationkey_defaultappearance.md",
+      "hash": "b7f8076c8da9a774768f6dd6ab62ce99e1cbab38f83aa58eff4a0e9bdba8c1e0"
+    },
+    "https://developer.apple.com/documentation/pdfkit/kpdfannotationkey_destination": {
+      "etag": "\"2e2a-65d55e27af7b4-df\"",
+      "file_path": "documentation/PDFKit/kpdfannotationkey_destination.md",
+      "hash": "286070bfc52986ef7999833243c1c776ec773e88909655002147f71ab7e5a128"
+    },
+    "https://developer.apple.com/documentation/pdfkit/kpdfannotationkey_flags": {
+      "etag": "\"2e06-65d55e25c6d59-df\"",
+      "file_path": "documentation/PDFKit/kpdfannotationkey_flags.md",
+      "hash": "bc9571a453dfb8f536a5c87adbde6faf64b3a1684485799511c4de4042279b10"
+    },
+    "https://developer.apple.com/documentation/pdfkit/kpdfannotationkey_highlightingmode": {
+      "etag": "\"2e48-65d55e26a83d2-df\"",
+      "file_path": "documentation/PDFKit/kpdfannotationkey_highlightingmode.md",
+      "hash": "2efb5903bba0d5deface29ca03bece2dd22ef7c2b417c6ff3eddf2315de52b50"
+    },
+    "https://developer.apple.com/documentation/pdfkit/kpdfannotationkey_iconname": {
+      "etag": "\"2e18-65d55e26dae91-df\"",
+      "file_path": "documentation/PDFKit/kpdfannotationkey_iconname.md",
+      "hash": "53e0501c441ecb495d88f0ce2b682145d7c30ec7f2829462d941d9737b0d9288"
+    },
+    "https://developer.apple.com/documentation/pdfkit/kpdfannotationkey_inklist": {
+      "etag": "\"2e12-65d55e26048e6-df\"",
+      "file_path": "documentation/PDFKit/kpdfannotationkey_inklist.md",
+      "hash": "fca68a7a1caa57d274b6558e73410fc17e692f1106159c8c9748c241337aed0c"
+    },
+    "https://developer.apple.com/documentation/pdfkit/kpdfannotationkey_interiorcolor": {
+      "etag": "\"2e36-65d55e27af7b4-df\"",
+      "file_path": "documentation/PDFKit/kpdfannotationkey_interiorcolor.md",
+      "hash": "157608d8958bca6a34f64b9cb0eeb00ec1cfa8cbd3e2f6001a34d70732e9736a"
+    },
+    "https://developer.apple.com/documentation/pdfkit/kpdfannotationkey_lineendingstyles": {
+      "etag": "\"2e5a-65d55e26048e6-df\"",
+      "file_path": "documentation/PDFKit/kpdfannotationkey_lineendingstyles.md",
+      "hash": "b7570c7b9e0519f36ea8c439167fb8dfd99543f8b1750f7ff3736effa2294452"
+    },
+    "https://developer.apple.com/documentation/pdfkit/kpdfannotationkey_linepoints": {
+      "etag": "\"2e12-65d55e270ea61-df\"",
+      "file_path": "documentation/PDFKit/kpdfannotationkey_linepoints.md",
+      "hash": "7386094ff1a6691a2fd878df6a059753e46df84b6ac26491871b7c0c45121546"
+    },
+    "https://developer.apple.com/documentation/pdfkit/kpdfannotationkey_name": {
+      "etag": "\"2dca-65d55e27af7b4-df\"",
+      "file_path": "documentation/PDFKit/kpdfannotationkey_name.md",
+      "hash": "8a86c22087d653101f8622e635c427d0d8c5b222d23e0fa6d6aff41b02fce672"
+    },
+    "https://developer.apple.com/documentation/pdfkit/kpdfannotationkey_open": {
+      "etag": "\"2dca-65d55e270ea61-df\"",
+      "file_path": "documentation/PDFKit/kpdfannotationkey_open.md",
+      "hash": "98ad810fc461e1b991c9c975e6388b44a3c120220ab8ef96788fd1c449f92808"
+    },
+    "https://developer.apple.com/documentation/pdfkit/kpdfannotationkey_page": {
+      "etag": "\"2dca-65d55e26048e6-df\"",
+      "file_path": "documentation/PDFKit/kpdfannotationkey_page.md",
+      "hash": "26bf7102391ae3a0d1ad4f7aa31ffa06668c72938304e2e3644804c647bdfb98"
+    },
+    "https://developer.apple.com/documentation/pdfkit/kpdfannotationkey_parent": {
+      "etag": "\"2de2-65d55e27af7b4-df\"",
+      "file_path": "documentation/PDFKit/kpdfannotationkey_parent.md",
+      "hash": "8fe58d912160c6a2f9481caab15be008a74d434b0db590cc84105fdaf5956c22"
+    },
+    "https://developer.apple.com/documentation/pdfkit/kpdfannotationkey_popup": {
+      "etag": "\"2dd6-65d55e26bfc18-df\"",
+      "file_path": "documentation/PDFKit/kpdfannotationkey_popup.md",
+      "hash": "8fef44f3ace55c15964776b26b0ff197ce7851a2db2fffee4e8d34d1d0b77e3c"
+    },
+    "https://developer.apple.com/documentation/pdfkit/kpdfannotationkey_quadding": {
+      "etag": "\"2dfa-65d55e26048e6-df\"",
+      "file_path": "documentation/PDFKit/kpdfannotationkey_quadding.md",
+      "hash": "12ebd34fe638ff70ef321495e68e1243ea79ab3b179d304727bf7d09af2023f7"
+    },
+    "https://developer.apple.com/documentation/pdfkit/kpdfannotationkey_quadpoints": {
+      "etag": "\"2e12-65d55e255bda7-df\"",
+      "file_path": "documentation/PDFKit/kpdfannotationkey_quadpoints.md",
+      "hash": "d46ddbe30faa06ccf526c86874fc7ee7feab81a1f7be25525130f81f6d8f1bda"
+    },
+    "https://developer.apple.com/documentation/pdfkit/kpdfannotationkey_rect": {
+      "etag": "\"2dca-65d55e27af7b4-df\"",
+      "file_path": "documentation/PDFKit/kpdfannotationkey_rect.md",
+      "hash": "6d80e76f625fe5305b3d7f206b04e5e3b470e20599bb7d5f1094e1e35dfd9320"
+    },
+    "https://developer.apple.com/documentation/pdfkit/kpdfannotationkey_subtype": {
+      "etag": "\"2dee-65d55e2733b17-df\"",
+      "file_path": "documentation/PDFKit/kpdfannotationkey_subtype.md",
+      "hash": "c6ceadb9b703fef82183ceec79ff9647b06ae7c7398ed5472793f3c9d6bed50e"
+    },
+    "https://developer.apple.com/documentation/pdfkit/kpdfannotationkey_textlabel": {
+      "etag": "\"2e06-65d55e25c6d59-df\"",
+      "file_path": "documentation/PDFKit/kpdfannotationkey_textlabel.md",
+      "hash": "af7e621d9e00d7405a142dab0266f56b8bc88d35ff30dcc16e70d2a38a155d4d"
+    },
+    "https://developer.apple.com/documentation/pdfkit/kpdfannotationkey_widgetappearancedictionary": {
+      "etag": "\"2ed2-65d55e26dae91-df\"",
+      "file_path": "documentation/PDFKit/kpdfannotationkey_widgetappearancedictionary.md",
+      "hash": "41fbad3b44f1fc087c282e47de67c63c907879d4686a9502c20965e69b0c1467"
+    },
+    "https://developer.apple.com/documentation/pdfkit/kpdfannotationkey_widgetdefaultvalue": {
+      "etag": "\"2e72-65d55e270ea61-df\"",
+      "file_path": "documentation/PDFKit/kpdfannotationkey_widgetdefaultvalue.md",
+      "hash": "beab52e8976a64a740b40d6f3c208f82f2eafc88cb9561ed86c52e970e5046ce"
+    },
+    "https://developer.apple.com/documentation/pdfkit/kpdfannotationkey_widgetfieldflags": {
+      "etag": "\"2e5a-65d55e25c6d59-df\"",
+      "file_path": "documentation/PDFKit/kpdfannotationkey_widgetfieldflags.md",
+      "hash": "18c4a3761874df482cf2ecb10edb71ac01bec258e8d4a3d996c4493916b9b9f6"
+    },
+    "https://developer.apple.com/documentation/pdfkit/kpdfannotationkey_widgetfieldtype": {
+      "etag": "\"2e4e-65d55e2733b17-df\"",
+      "file_path": "documentation/PDFKit/kpdfannotationkey_widgetfieldtype.md",
+      "hash": "d97afed2a75f3c965e1512b195daf31a3bf6b401252211e4e995b56c50560398"
+    },
+    "https://developer.apple.com/documentation/pdfkit/kpdfannotationkey_widgetmaxlen": {
+      "etag": "\"2e2a-65d55e270ea61-df\"",
+      "file_path": "documentation/PDFKit/kpdfannotationkey_widgetmaxlen.md",
+      "hash": "f8656e4d286306ec075de0a0ec45296a819712d9c9c1eada48841d83403c61f9"
+    },
+    "https://developer.apple.com/documentation/pdfkit/kpdfannotationkey_widgetoptions": {
+      "etag": "\"2e36-65d55e27c9a07-df\"",
+      "file_path": "documentation/PDFKit/kpdfannotationkey_widgetoptions.md",
+      "hash": "7203f35be499535b46c147d2b4a71381c11f0ad4c99977bf6d5e24031354aea2"
+    },
+    "https://developer.apple.com/documentation/pdfkit/kpdfannotationkey_widgettextlabelui": {
+      "etag": "\"2e66-65d55e2760dbe-df\"",
+      "file_path": "documentation/PDFKit/kpdfannotationkey_widgettextlabelui.md",
+      "hash": "7fa96f7b764b42a706db8140d4dd17c01e234781298236854848f7d1212a9076"
+    },
+    "https://developer.apple.com/documentation/pdfkit/kpdfannotationkey_widgetvalue": {
+      "etag": "\"2e1e-65d55e26a83d2-df\"",
+      "file_path": "documentation/PDFKit/kpdfannotationkey_widgetvalue.md",
+      "hash": "f5bec29a98c8c162d8435904fa5edf92b85c8a5119af4263d3cee1c3482fda83"
+    },
     "https://developer.apple.com/documentation/pdfkit/kpdfdestinationunspecifiedvalue": {
       "etag": "\"2268-65d55e2733b17-df\"",
       "file_path": "documentation/PDFKit/kpdfdestinationunspecifiedvalue.md",
@@ -1760,6 +1940,11 @@
       "file_path": "documentation/PDFKit/pdfareaofinterest/init(rawvalue).md",
       "hash": "6f4ad653c6de74848a4ecc96d3b0c943726a39991c343f7c9d7c8539c89206af"
     },
+    "https://developer.apple.com/documentation/pdfkit/pdfareaofinterest/kpdfnoarea": {
+      "etag": "\"37cd-65d55e26bfc18-df\"",
+      "file_path": "documentation/PDFKit/pdfareaofinterest/kpdfnoarea.md",
+      "hash": "164db5755266f6dabc23de730ed0a439e9bc008c42c74b8e7bc79de343d4db19"
+    },
     "https://developer.apple.com/documentation/pdfkit/pdfareaofinterest/linkarea": {
       "etag": "\"42d5-65d55e26bfc18-df\"",
       "file_path": "documentation/PDFKit/pdfareaofinterest/linkarea.md",
@@ -2355,6 +2540,56 @@
       "file_path": "documentation/PDFKit/pdfdocumentdelegate/documentdidunlock(_).md",
       "hash": "057c63de1c3cab4683ccde89006813ab05ce6a2a663bd14ea17a48a6bf4da1db"
     },
+    "https://developer.apple.com/documentation/pdfkit/pdfdocumentdidbeginfindnotification": {
+      "etag": "\"3f50-65d55e265d080-df\"",
+      "file_path": "documentation/PDFKit/pdfdocumentdidbeginfindnotification.md",
+      "hash": "654c8d43565aa606c54ab73c3f4c9eca6acf71758418553132407050dbc1754c"
+    },
+    "https://developer.apple.com/documentation/pdfkit/pdfdocumentdidbeginpagefindnotification": {
+      "etag": "\"3f80-65d55e26048e6-df\"",
+      "file_path": "documentation/PDFKit/pdfdocumentdidbeginpagefindnotification.md",
+      "hash": "251255f44f82d8bb87ae45bd45a61ddf9ebe09639ba7f370f03235e7c9989a57"
+    },
+    "https://developer.apple.com/documentation/pdfkit/pdfdocumentdidbeginpagewritenotification": {
+      "etag": "\"3f0b-65d55e2733b17-df\"",
+      "file_path": "documentation/PDFKit/pdfdocumentdidbeginpagewritenotification.md",
+      "hash": "385dfad58f3256d13558db6329fcc38e169fc7734e1196b601b88669f9966458"
+    },
+    "https://developer.apple.com/documentation/pdfkit/pdfdocumentdidbeginwritenotification": {
+      "etag": "\"3e13-65d55e265d080-df\"",
+      "file_path": "documentation/PDFKit/pdfdocumentdidbeginwritenotification.md",
+      "hash": "bed8a655c1a59deb2c8a12126a8bc83e81ce5a52c65f1552422b7d5726bf4987"
+    },
+    "https://developer.apple.com/documentation/pdfkit/pdfdocumentdidendfindnotification": {
+      "etag": "\"4120-65d55e26048e6-df\"",
+      "file_path": "documentation/PDFKit/pdfdocumentdidendfindnotification.md",
+      "hash": "bb0b64b452511061e58a7cfcd259519d0f5edd9d5e0949f003614395b9050b6d"
+    },
+    "https://developer.apple.com/documentation/pdfkit/pdfdocumentdidendpagefindnotification": {
+      "etag": "\"3f72-65d55e2760dbe-df\"",
+      "file_path": "documentation/PDFKit/pdfdocumentdidendpagefindnotification.md",
+      "hash": "660a7216be2445ec2b7137ff8a6364a59683cee4616c2065f217f9351dc4b855"
+    },
+    "https://developer.apple.com/documentation/pdfkit/pdfdocumentdidendpagewritenotification": {
+      "etag": "\"3f01-65d55e270ea61-df\"",
+      "file_path": "documentation/PDFKit/pdfdocumentdidendpagewritenotification.md",
+      "hash": "324f931226d7bf92a941bce382c5b0a591c9afd4ab4f1a2195497e19689a31af"
+    },
+    "https://developer.apple.com/documentation/pdfkit/pdfdocumentdidendwritenotification": {
+      "etag": "\"3e09-65d55e270ea61-df\"",
+      "file_path": "documentation/PDFKit/pdfdocumentdidendwritenotification.md",
+      "hash": "6a2047b6e1b335fc6b7e3e064ee17b5a6ec59e3f2291b0c52931eb065fe382ec"
+    },
+    "https://developer.apple.com/documentation/pdfkit/pdfdocumentdidfindmatchnotification": {
+      "etag": "\"3edc-65d55e2733b17-df\"",
+      "file_path": "documentation/PDFKit/pdfdocumentdidfindmatchnotification.md",
+      "hash": "d7e7110c6bf7b63310daaeb5cf973965ba7e2262ef925dec94c534bd7c2b0abf"
+    },
+    "https://developer.apple.com/documentation/pdfkit/pdfdocumentdidunlocknotification": {
+      "etag": "\"3e92-65d55e265d080-df\"",
+      "file_path": "documentation/PDFKit/pdfdocumentdidunlocknotification.md",
+      "hash": "9eca3932d7916bba5f63be006f96ccf5a6e027bf7e3644e3837363a4a7351c16"
+    },
     "https://developer.apple.com/documentation/pdfkit/pdfdocumentfoundselectionkey": {
       "etag": "\"1ef8-65d55e2525ccf-df\"",
       "file_path": "documentation/PDFKit/pdfdocumentfoundselectionkey.md",
@@ -2435,6 +2670,16 @@
       "file_path": "documentation/PDFKit/pdfdocumentwriteoption/userpasswordoption.md",
       "hash": "56de6f65faf93cd167b084d8525d85bdec3bf26e109f67b492efd1e2985c73b0"
     },
+    "https://developer.apple.com/documentation/pdfkit/pdfedgeinsets": {
+      "etag": "\"2448-65d55e26bfc18-df\"",
+      "file_path": "documentation/PDFKit/pdfedgeinsets.md",
+      "hash": "972b3944baa940e4ee76e18db2194318841d271de3f94a9d1cce49699d10353e"
+    },
+    "https://developer.apple.com/documentation/pdfkit/pdfedgeinsetszero": {
+      "etag": "\"2460-65d55e26f493d-df\"",
+      "file_path": "documentation/PDFKit/pdfedgeinsetszero.md",
+      "hash": "68341d59e238ef5c8457bc3e10b006d5caf01aed8c3af5792cecb6706e054193"
+    },
     "https://developer.apple.com/documentation/pdfkit/pdfinterpolationquality": {
       "etag": "\"3f98-65d55e25ae3ea-df\"",
       "file_path": "documentation/PDFKit/pdfinterpolationquality.md",
@@ -2459,6 +2704,166 @@
       "etag": "\"2169-65d55e27af7b4-df\"",
       "file_path": "documentation/PDFKit/pdfinterpolationquality/none.md",
       "hash": "1296981bd880140b01a9f6ef20007019fee35a592bffab6c18fc3461c08b154a"
+    },
+    "https://developer.apple.com/documentation/pdfkit/pdfkit_available": {
+      "etag": "\"2504-65d55e26dae91-df\"",
+      "file_path": "documentation/PDFKit/pdfkit_available.md",
+      "hash": "6848faf7c9dbf3e89ae49457c604dca6280e2d780cd8e2a96a52a8ce92fac6f1"
+    },
+    "https://developer.apple.com/documentation/pdfkit/pdfkit_class_available": {
+      "etag": "\"2528-65d55e27af7b4-df\"",
+      "file_path": "documentation/PDFKit/pdfkit_class_available.md",
+      "hash": "124f6dbbe793eba010698832204958790df0503588b3463fbdc888e9c5b82dfb"
+    },
+    "https://developer.apple.com/documentation/pdfkit/pdfkit_class_deprecated": {
+      "etag": "\"25ba-65d55e27af7b4-df\"",
+      "file_path": "documentation/PDFKit/pdfkit_class_deprecated.md",
+      "hash": "7ba2379f71378305d438098f472d44cd2d75ea09dca01a0c9dc1eab09aafca4b"
+    },
+    "https://developer.apple.com/documentation/pdfkit/pdfkit_deprecated": {
+      "etag": "\"2596-65d55e255bda7-df\"",
+      "file_path": "documentation/PDFKit/pdfkit_deprecated.md",
+      "hash": "18dda4ffac098572fe9bd98673d7052de7c4540d8f088efe06e0ecc12705dec1"
+    },
+    "https://developer.apple.com/documentation/pdfkit/pdfkit_enum_available": {
+      "etag": "\"2522-65d55e2733b17-df\"",
+      "file_path": "documentation/PDFKit/pdfkit_enum_available.md",
+      "hash": "8e8858b8858aa9a60699fac0312295069b9c26b00b3c3e3170b77abb331bc9e7"
+    },
+    "https://developer.apple.com/documentation/pdfkit/pdfkit_enum_deprecated": {
+      "etag": "\"25b4-65d55e26a83d2-df\"",
+      "file_path": "documentation/PDFKit/pdfkit_enum_deprecated.md",
+      "hash": "3e966005b254b1a510955be3e2a6532e245b63ce631f489af60af3115ed3ea58"
+    },
+    "https://developer.apple.com/documentation/pdfkit/pdfkit_extern": {
+      "etag": "\"2448-65d55e26a83d2-df\"",
+      "file_path": "documentation/PDFKit/pdfkit_extern.md",
+      "hash": "09c68f20f73c10d6a1fc8c7297a28df1aefe3945879f04b17aa6d8b47927c244"
+    },
+    "https://developer.apple.com/documentation/pdfkit/pdfkit_platform_ios": {
+      "etag": "\"243d-65d55e27c9a07-df\"",
+      "file_path": "documentation/PDFKit/pdfkit_platform_ios.md",
+      "hash": "1278968054403589f62195d6d692ad42bdff880a6ecda7cc2b02d44a14662b3c"
+    },
+    "https://developer.apple.com/documentation/pdfkit/pdfkit_platform_maccatalyst": {
+      "etag": "\"23c6-65d55e26a83d2-df\"",
+      "file_path": "documentation/PDFKit/pdfkit_platform_maccatalyst.md",
+      "hash": "a4231cfd1085c0eef8ce5b4d6d306b8038f25211f8bebc5f1803fffe3598c383"
+    },
+    "https://developer.apple.com/documentation/pdfkit/pdfkit_platform_osx": {
+      "etag": "\"2388-65d55e270ea61-df\"",
+      "file_path": "documentation/PDFKit/pdfkit_platform_osx.md",
+      "hash": "72cbf6ac8cd6e6a8421eb050b023dca290c6f28c325b08659f1dd44ef55d236a"
+    },
+    "https://developer.apple.com/documentation/pdfkit/pdfkitplatformaccessibilityelement": {
+      "etag": "\"24c6-65d55e265d080-df\"",
+      "file_path": "documentation/PDFKit/pdfkitplatformaccessibilityelement.md",
+      "hash": "919cc036d26f6af136c754451311b47dca9a875c9d8eabe98b08d0caff9816ed"
+    },
+    "https://developer.apple.com/documentation/pdfkit/pdfkitplatformbezierpath": {
+      "etag": "\"248a-65d55e265d080-df\"",
+      "file_path": "documentation/PDFKit/pdfkitplatformbezierpath.md",
+      "hash": "7ab2374469312b525304650fe45c2440b70f75299b49bf0da9c337dd10e0adf8"
+    },
+    "https://developer.apple.com/documentation/pdfkit/pdfkitplatformbezierpathelement": {
+      "etag": "\"24b4-65d55e2544824-df\"",
+      "file_path": "documentation/PDFKit/pdfkitplatformbezierpathelement.md",
+      "hash": "06c7e8ff78db981b478474f4f44f4217e2286dbb27718cb00c6be06a35c8af71"
+    },
+    "https://developer.apple.com/documentation/pdfkit/pdfkitplatformbutton": {
+      "etag": "\"2472-65d55e26048e6-df\"",
+      "file_path": "documentation/PDFKit/pdfkitplatformbutton.md",
+      "hash": "d8f8ca40633de990ed1a8bd777cfc347c03ffa45eedc79b5012512adcccf2881"
+    },
+    "https://developer.apple.com/documentation/pdfkit/pdfkitplatformbuttoncell": {
+      "etag": "\"24a2-65d55e25c6d59-df\"",
+      "file_path": "documentation/PDFKit/pdfkitplatformbuttoncell.md",
+      "hash": "94210cf24a35ea9f4fe1f6e65565002cb7228038c6865d6f953f4a35304263eb"
+    },
+    "https://developer.apple.com/documentation/pdfkit/pdfkitplatformchoicewidgetcomboboxview": {
+      "etag": "\"254a-65d55e26a83d2-df\"",
+      "file_path": "documentation/PDFKit/pdfkitplatformchoicewidgetcomboboxview.md",
+      "hash": "4b84347fdba4d750dcae90060c9fc1263d5539460b3639e23ac7e57841d2e2d3"
+    },
+    "https://developer.apple.com/documentation/pdfkit/pdfkitplatformchoicewidgetlistview": {
+      "etag": "\"251a-65d55e25c6d59-df\"",
+      "file_path": "documentation/PDFKit/pdfkitplatformchoicewidgetlistview.md",
+      "hash": "cdca9ec8ff656bd6335d9cc4957891ebcc21584aad610b45db73c1e4dc3a91f8"
+    },
+    "https://developer.apple.com/documentation/pdfkit/pdfkitplatformcolor": {
+      "etag": "\"2466-65d55e2733b17-df\"",
+      "file_path": "documentation/PDFKit/pdfkitplatformcolor.md",
+      "hash": "452e6cd8ea48ab68cb15c5dbe700631e79be2d745716a08a3ccab66069b9f69a"
+    },
+    "https://developer.apple.com/documentation/pdfkit/pdfkitplatformcontrol": {
+      "etag": "\"247e-65d55e270ea61-df\"",
+      "file_path": "documentation/PDFKit/pdfkitplatformcontrol.md",
+      "hash": "0c460e44efe8bfb0e550b4a7502d4d0703dd2a93d1dc0d2bd715f71fea3fc2ff"
+    },
+    "https://developer.apple.com/documentation/pdfkit/pdfkitplatformevent": {
+      "etag": "\"2466-65d55e2733b17-df\"",
+      "file_path": "documentation/PDFKit/pdfkitplatformevent.md",
+      "hash": "fa429a5abe5862d1ead27a47e098e3059fa6c78108778b6c9879007e6e54d051"
+    },
+    "https://developer.apple.com/documentation/pdfkit/pdfkitplatformfont": {
+      "etag": "\"245a-65d55e27c9a07-df\"",
+      "file_path": "documentation/PDFKit/pdfkitplatformfont.md",
+      "hash": "ae636d5fcc5083056b0aff2e79b22d278a706d502046e40611e25c66cc6d5559"
+    },
+    "https://developer.apple.com/documentation/pdfkit/pdfkitplatformfontweightregular": {
+      "etag": "\"24f6-65d55e26dae91-df\"",
+      "file_path": "documentation/PDFKit/pdfkitplatformfontweightregular.md",
+      "hash": "38de0c2282bb3ff7e91c33a0dad6f73c2126bf4156a15dc3b6c441fdf3dc655c"
+    },
+    "https://developer.apple.com/documentation/pdfkit/pdfkitplatformimage": {
+      "etag": "\"2466-65d55e25c6d59-df\"",
+      "file_path": "documentation/PDFKit/pdfkitplatformimage.md",
+      "hash": "e7292b1accba8bea640f7dcf85c882b14a42c6c2847eb1ad402ec1b53152e377"
+    },
+    "https://developer.apple.com/documentation/pdfkit/pdfkitplatformimageview": {
+      "etag": "\"2496-65d55e25ae3ea-df\"",
+      "file_path": "documentation/PDFKit/pdfkitplatformimageview.md",
+      "hash": "84418f7c5b990650097dab28adcdbf2729e1c070d06f21f37589b6e41f4adff6"
+    },
+    "https://developer.apple.com/documentation/pdfkit/pdfkitplatformscrollview": {
+      "etag": "\"24a2-65d55e27af7b4-df\"",
+      "file_path": "documentation/PDFKit/pdfkitplatformscrollview.md",
+      "hash": "05d115764c0da4f4a64a3f7d3615a05bfe781fcab155523ef776064b47c47608"
+    },
+    "https://developer.apple.com/documentation/pdfkit/pdfkitplatformtextcontenttype": {
+      "etag": "\"24de-65d55e25ae3ea-df\"",
+      "file_path": "documentation/PDFKit/pdfkitplatformtextcontenttype.md",
+      "hash": "a6fcee717e66fb9b938865fba78eae3985d6477523f117bb60ef4171f823a844"
+    },
+    "https://developer.apple.com/documentation/pdfkit/pdfkitplatformtextfield": {
+      "etag": "\"2496-65d55e25c6d59-df\"",
+      "file_path": "documentation/PDFKit/pdfkitplatformtextfield.md",
+      "hash": "ca535d6935b3785fe10c0a51851a7dbd357a657c5c21dd3fd9637db6f341c8f5"
+    },
+    "https://developer.apple.com/documentation/pdfkit/pdfkitplatformtextview": {
+      "etag": "\"248a-65d55e2733b17-df\"",
+      "file_path": "documentation/PDFKit/pdfkitplatformtextview.md",
+      "hash": "4bbe5c8fa317e23895cfc61d4f2acacdda9fa4ab77e3d61f93b415de7f33e3e6"
+    },
+    "https://developer.apple.com/documentation/pdfkit/pdfkitplatformtextviewdelegate": {
+      "etag": "\"24ea-65d55e26a83d2-df\"",
+      "file_path": "documentation/PDFKit/pdfkitplatformtextviewdelegate.md",
+      "hash": "961db6804355957242dd661cf0b172061d198a59b93c95c5f0d7e3d82dfcb6ec"
+    },
+    "https://developer.apple.com/documentation/pdfkit/pdfkitplatformview": {
+      "etag": "\"245a-65d55e25dec24-df\"",
+      "file_path": "documentation/PDFKit/pdfkitplatformview.md",
+      "hash": "23779b078cb737bca175e4e197e9e2bdacc3312da3208377ff863553aec012a8"
+    },
+    "https://developer.apple.com/documentation/pdfkit/pdfkitplatformviewcontroller": {
+      "etag": "\"24d2-65d55e26dae91-df\"",
+      "file_path": "documentation/PDFKit/pdfkitplatformviewcontroller.md",
+      "hash": "63b954982d3e0f53d6672c56da615aa33fcf02a170b7f69e81e74de46c43fc02"
+    },
+    "https://developer.apple.com/documentation/pdfkit/pdfkitresponder": {
+      "etag": "\"2436-65d55e26a83d2-df\"",
+      "file_path": "documentation/PDFKit/pdfkitresponder.md",
+      "hash": "0e0823d75051d75abe5d8151b39f86969c283e2bce1e97af1d5abdabfe481d3c"
     },
     "https://developer.apple.com/documentation/pdfkit/pdflinestyle": {
       "etag": "\"5097-65d55e270ea61-df\"",
@@ -2805,6 +3210,16 @@
       "file_path": "documentation/PDFKit/pdfpageoverlayviewprovider/pdfview(_,willenddisplayingoverlayview,for).md",
       "hash": "3d9efd7d7132741047b897cbb131ca5fbabeb75a9fdf8a61440cdc612929920a"
     },
+    "https://developer.apple.com/documentation/pdfkit/pdfpoint": {
+      "etag": "\"23e2-65d55e2760dbe-df\"",
+      "file_path": "documentation/PDFKit/pdfpoint.md",
+      "hash": "6d998d68f1c1631e28fe64237f8686aaaac47ed7d542e47230bcf24107401963"
+    },
+    "https://developer.apple.com/documentation/pdfkit/pdfpointzero": {
+      "etag": "\"2412-65d55e2760dbe-df\"",
+      "file_path": "documentation/PDFKit/pdfpointzero.md",
+      "hash": "5412e9cc92adaefc3e05667621f3a1b8a812d29b27e7b156fe8bd5de769a5597"
+    },
     "https://developer.apple.com/documentation/pdfkit/pdfprintscalingmode": {
       "etag": "\"4277-65d55e26048e6-df\"",
       "file_path": "documentation/PDFKit/pdfprintscalingmode.md",
@@ -2829,6 +3244,16 @@
       "etag": "\"24db-65d55e27af7b4-df\"",
       "file_path": "documentation/PDFKit/pdfprintscalingmode/pagescaletofit.md",
       "hash": "afa855b03cd7c0d73f200ae714ac9d563bf6a47927bc1c6cc419aaca1946e5f6"
+    },
+    "https://developer.apple.com/documentation/pdfkit/pdfrect": {
+      "etag": "\"23d6-65d55e26dae91-df\"",
+      "file_path": "documentation/PDFKit/pdfrect.md",
+      "hash": "61abc87a1a3f8e6c0c30ea3d98a110225ffc601fb6aac9d29442be6220d63aa3"
+    },
+    "https://developer.apple.com/documentation/pdfkit/pdfrectzero": {
+      "etag": "\"2406-65d55e270ea61-df\"",
+      "file_path": "documentation/PDFKit/pdfrectzero.md",
+      "hash": "e926b269327a5aed220334eaf2842baa997bef17f6bb599fccf1182e96aba337"
     },
     "https://developer.apple.com/documentation/pdfkit/pdfselection": {
       "etag": "\"97e0-65d55e26bfc18-df\"",
@@ -2939,6 +3364,16 @@
       "etag": "\"201f-65d55e270ea61-df\"",
       "file_path": "documentation/PDFKit/pdfselectiongranularity/word.md",
       "hash": "a9540435f2204ca8d57992bf9333c8dfc11f5eac11b271f5a19ced97250b9e47"
+    },
+    "https://developer.apple.com/documentation/pdfkit/pdfsize": {
+      "etag": "\"23d6-65d55e26048e6-df\"",
+      "file_path": "documentation/PDFKit/pdfsize.md",
+      "hash": "4854fa33abb33f929cf4912cfb4a71343f2c1513850a37de8f0c070c11c9dc0c"
+    },
+    "https://developer.apple.com/documentation/pdfkit/pdfsizezero": {
+      "etag": "\"2406-65d55e2544824-df\"",
+      "file_path": "documentation/PDFKit/pdfsizezero.md",
+      "hash": "3c534943ff18cd87f3767b5f14eaae3a5ebf299541361ad91d7f35cd539ec25b"
     },
     "https://developer.apple.com/documentation/pdfkit/pdftextannotationicontype": {
       "etag": "\"51d0-65d55e270ea61-df\"",
@@ -3059,6 +3494,16 @@
       "etag": "\"21bf-65d55e2760dbe-df\"",
       "file_path": "documentation/PDFKit/pdfthumbnailview/thumbnailsize.md",
       "hash": "cb53964abd5e5f6229e3d398c84a6b4cf49405de45f8f0f96792659ff6b34e8b"
+    },
+    "https://developer.apple.com/documentation/pdfkit/pdfthumbnailviewdocumenteditednotification": {
+      "etag": "\"f39-65d55e25c6d59-df\"",
+      "file_path": "documentation/PDFKit/pdfthumbnailviewdocumenteditednotification.md",
+      "hash": "6feba8d1f28b91237a2dbd8b73642a1ca360a83732e6d7856e02c63a2bacd1b4"
+    },
+    "https://developer.apple.com/documentation/pdfkit/pdftrackingrunloopmode": {
+      "etag": "\"248a-65d55e26bfc18-df\"",
+      "file_path": "documentation/PDFKit/pdftrackingrunloopmode.md",
+      "hash": "bd9c1dad503d8fab445f29d3d5841a89803b713517806d8da8ea9b7c41714bb3"
     },
     "https://developer.apple.com/documentation/pdfkit/pdfview": {
       "etag": "\"120d2-65d55e270ea61-df\"",
@@ -3460,6 +3905,26 @@
       "file_path": "documentation/PDFKit/pdfview/zoomout(_).md",
       "hash": "5e0aa8e053681f6c8c7c3ef3a54de93654d04e8e0e928a1795be6ffb3bd1235a"
     },
+    "https://developer.apple.com/documentation/pdfkit/pdfviewannotationhitnotification": {
+      "etag": "\"2e7a-65d55e27c9a07-df\"",
+      "file_path": "documentation/PDFKit/pdfviewannotationhitnotification.md",
+      "hash": "c41960445e579e4d91e09d04bc6022e8feae68a01918e8ffb159e56c884d8c98"
+    },
+    "https://developer.apple.com/documentation/pdfkit/pdfviewannotationwillhitnotification": {
+      "etag": "\"2d8f-65d55e2733b17-df\"",
+      "file_path": "documentation/PDFKit/pdfviewannotationwillhitnotification.md",
+      "hash": "a069ab9db683ab645c905ddddc5ea623b1bdcc7c24f74fde2089a83d8d02745b"
+    },
+    "https://developer.apple.com/documentation/pdfkit/pdfviewchangedhistorynotification": {
+      "etag": "\"2d76-65d55e26a83d2-df\"",
+      "file_path": "documentation/PDFKit/pdfviewchangedhistorynotification.md",
+      "hash": "32730b8828a5d21daa3858c383665ea4254b14d6eea36cb66c00f3063688ca15"
+    },
+    "https://developer.apple.com/documentation/pdfkit/pdfviewcopypermissionnotification": {
+      "etag": "\"2dad-65d55e26bfc18-df\"",
+      "file_path": "documentation/PDFKit/pdfviewcopypermissionnotification.md",
+      "hash": "a77e6813363c0fc0c841dbff9a7f7bc671759f78967f4bd9a94fdd7bcef42e7e"
+    },
     "https://developer.apple.com/documentation/pdfkit/pdfviewdelegate": {
       "etag": "\"53b5-65d55e26048e6-df\"",
       "file_path": "documentation/PDFKit/pdfviewdelegate.md",
@@ -3504,6 +3969,46 @@
       "etag": "\"276e-65d55e2733b17-df\"",
       "file_path": "documentation/PDFKit/pdfviewdelegate/pdfviewwillclick(onlink,with).md",
       "hash": "9a29d654ea9e57aeea1905ef57be01c02773c8d88e71d3cf6288a6c27fb2f7b9"
+    },
+    "https://developer.apple.com/documentation/pdfkit/pdfviewdisplayboxchangednotification": {
+      "etag": "\"2d8b-65d55e270ea61-df\"",
+      "file_path": "documentation/PDFKit/pdfviewdisplayboxchangednotification.md",
+      "hash": "99498ae92147d9ab21a324521d48736581553a9f4df5c6b2ba614750223169ac"
+    },
+    "https://developer.apple.com/documentation/pdfkit/pdfviewdisplaymodechangednotification": {
+      "etag": "\"2d92-65d55e2733b17-df\"",
+      "file_path": "documentation/PDFKit/pdfviewdisplaymodechangednotification.md",
+      "hash": "0f75c4726927b74d01383062d0f165f5a15b231cd86889f320db021c1b3f9428"
+    },
+    "https://developer.apple.com/documentation/pdfkit/pdfviewdocumentchangednotification": {
+      "etag": "\"2d8e-65d55e26048e6-df\"",
+      "file_path": "documentation/PDFKit/pdfviewdocumentchangednotification.md",
+      "hash": "46fd8050d15e055b9a57b21ef6861c01b44ee44f67662468d206ddf3023e3941"
+    },
+    "https://developer.apple.com/documentation/pdfkit/pdfviewpagechangednotification": {
+      "etag": "\"2d6f-65d55e2760dbe-df\"",
+      "file_path": "documentation/PDFKit/pdfviewpagechangednotification.md",
+      "hash": "412bab2a9ad9d41dbf1e21c7938eb3a869fbf39284ad5e40fdff8ce549585b22"
+    },
+    "https://developer.apple.com/documentation/pdfkit/pdfviewprintpermissionnotification": {
+      "etag": "\"2da2-65d55e26bfc18-df\"",
+      "file_path": "documentation/PDFKit/pdfviewprintpermissionnotification.md",
+      "hash": "5a9c4003009881d663b975ae5a591bd3820c1b8daf0cbb731a5585a44c6a751b"
+    },
+    "https://developer.apple.com/documentation/pdfkit/pdfviewscalechangednotification": {
+      "etag": "\"2d6a-65d55e265d080-df\"",
+      "file_path": "documentation/PDFKit/pdfviewscalechangednotification.md",
+      "hash": "a8539ecca1c4558e93497c4f70a1187be469225305146d4488ad8c56855291ae"
+    },
+    "https://developer.apple.com/documentation/pdfkit/pdfviewselectionchangednotification": {
+      "etag": "\"2d8b-65d55e26a83d2-df\"",
+      "file_path": "documentation/PDFKit/pdfviewselectionchangednotification.md",
+      "hash": "5755737ed5cf292e1782a185e600f0f676e3a9cab05e49e929121c086210d2bb"
+    },
+    "https://developer.apple.com/documentation/pdfkit/pdfviewvisiblepageschangednotification": {
+      "etag": "\"2c85-65d55e2760dbe-df\"",
+      "file_path": "documentation/PDFKit/pdfviewvisiblepageschangednotification.md",
+      "hash": "51b33373c7948862c8cabda536c8a339debba2eb1aa6338fc15a8f88db82a574"
     },
     "https://developer.apple.com/documentation/pdfkit/pdfwidgetcellstate": {
       "etag": "\"52b3-65d55e25dec24-df\"",
@@ -3664,6 +4169,186 @@
       "etag": "\"3aef-659026fa7e8d5-df\"",
       "file_path": "documentation/PDFKit/graphics-properties.md",
       "hash": "155302162f7bc87c5a96d124f95e02cdf476551dc7d6b4fb08eeea068fb61394"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/pdfkit/kpdfannotationkey_action.json": {
+      "etag": "\"2e0c-65d55e27af7b4-df\"",
+      "file_path": "documentation/PDFKit/kpdfannotationkey_action.md",
+      "hash": "3c6bb8dbfece24cb6e6746ba577a9d0c3bf81c15d92e5f0e4ccda58c0a3af9f2"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/pdfkit/kpdfannotationkey_additionalactions.json": {
+      "etag": "\"2e4e-65d55e2733b17-df\"",
+      "file_path": "documentation/PDFKit/kpdfannotationkey_additionalactions.md",
+      "hash": "a26cd08527201fffe04a599a6b83d68f676cd7d9d41746a28c7a2fa034747b78"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/pdfkit/kpdfannotationkey_appearancedictionary.json": {
+      "etag": "\"2e60-65d55e25ae3ea-df\"",
+      "file_path": "documentation/PDFKit/kpdfannotationkey_appearancedictionary.md",
+      "hash": "e9f587170138b8f46ed480adbf0c8c8af8ba6baf749c11ac707bdb2782d47bed"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/pdfkit/kpdfannotationkey_appearancestate.json": {
+      "etag": "\"2e42-65d55e26bfc18-df\"",
+      "file_path": "documentation/PDFKit/kpdfannotationkey_appearancestate.md",
+      "hash": "b7710979e44d39e0c032b6c7c7fdbc0b4c9ee7909fd6f6a7189b04d45fdb7978"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/pdfkit/kpdfannotationkey_border.json": {
+      "etag": "\"2e0c-65d55e2544824-df\"",
+      "file_path": "documentation/PDFKit/kpdfannotationkey_border.md",
+      "hash": "7e4625029bedfabe25e8bd20f28156c56c6c839705199249ee66fa31916d2e4c"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/pdfkit/kpdfannotationkey_borderstyle.json": {
+      "etag": "\"2e2a-65d55e2760dbe-df\"",
+      "file_path": "documentation/PDFKit/kpdfannotationkey_borderstyle.md",
+      "hash": "2a5b6444127c729ba153a8e614f1730c824341dbdb042edcd10946038bb61dd4"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/pdfkit/kpdfannotationkey_color.json": {
+      "etag": "\"2e06-65d55e2760dbe-df\"",
+      "file_path": "documentation/PDFKit/kpdfannotationkey_color.md",
+      "hash": "10318366e766ad9acc4ea6971d84c4f2e2d8c462691cd63ef7c4364bc8c00c4e"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/pdfkit/kpdfannotationkey_contents.json": {
+      "etag": "\"2e18-65d55e2760dbe-df\"",
+      "file_path": "documentation/PDFKit/kpdfannotationkey_contents.md",
+      "hash": "8f9d4c20bdb995f17d95db029c3856ecca98341a5b5cc0de25d15bf8b7289593"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/pdfkit/kpdfannotationkey_date.json": {
+      "etag": "\"2e00-65d55e2733b17-df\"",
+      "file_path": "documentation/PDFKit/kpdfannotationkey_date.md",
+      "hash": "bbba6a407b07bc31a7ac09ce9aad6679635337adc2cdc077f0b822cbafeaf192"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/pdfkit/kpdfannotationkey_defaultappearance.json": {
+      "etag": "\"2e4e-65d55e265d080-df\"",
+      "file_path": "documentation/PDFKit/kpdfannotationkey_defaultappearance.md",
+      "hash": "b7f8076c8da9a774768f6dd6ab62ce99e1cbab38f83aa58eff4a0e9bdba8c1e0"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/pdfkit/kpdfannotationkey_destination.json": {
+      "etag": "\"2e2a-65d55e27af7b4-df\"",
+      "file_path": "documentation/PDFKit/kpdfannotationkey_destination.md",
+      "hash": "286070bfc52986ef7999833243c1c776ec773e88909655002147f71ab7e5a128"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/pdfkit/kpdfannotationkey_flags.json": {
+      "etag": "\"2e06-65d55e25c6d59-df\"",
+      "file_path": "documentation/PDFKit/kpdfannotationkey_flags.md",
+      "hash": "bc9571a453dfb8f536a5c87adbde6faf64b3a1684485799511c4de4042279b10"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/pdfkit/kpdfannotationkey_highlightingmode.json": {
+      "etag": "\"2e48-65d55e26a83d2-df\"",
+      "file_path": "documentation/PDFKit/kpdfannotationkey_highlightingmode.md",
+      "hash": "2efb5903bba0d5deface29ca03bece2dd22ef7c2b417c6ff3eddf2315de52b50"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/pdfkit/kpdfannotationkey_iconname.json": {
+      "etag": "\"2e18-65d55e26dae91-df\"",
+      "file_path": "documentation/PDFKit/kpdfannotationkey_iconname.md",
+      "hash": "53e0501c441ecb495d88f0ce2b682145d7c30ec7f2829462d941d9737b0d9288"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/pdfkit/kpdfannotationkey_inklist.json": {
+      "etag": "\"2e12-65d55e26048e6-df\"",
+      "file_path": "documentation/PDFKit/kpdfannotationkey_inklist.md",
+      "hash": "fca68a7a1caa57d274b6558e73410fc17e692f1106159c8c9748c241337aed0c"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/pdfkit/kpdfannotationkey_interiorcolor.json": {
+      "etag": "\"2e36-65d55e27af7b4-df\"",
+      "file_path": "documentation/PDFKit/kpdfannotationkey_interiorcolor.md",
+      "hash": "157608d8958bca6a34f64b9cb0eeb00ec1cfa8cbd3e2f6001a34d70732e9736a"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/pdfkit/kpdfannotationkey_lineendingstyles.json": {
+      "etag": "\"2e5a-65d55e26048e6-df\"",
+      "file_path": "documentation/PDFKit/kpdfannotationkey_lineendingstyles.md",
+      "hash": "b7570c7b9e0519f36ea8c439167fb8dfd99543f8b1750f7ff3736effa2294452"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/pdfkit/kpdfannotationkey_linepoints.json": {
+      "etag": "\"2e12-65d55e270ea61-df\"",
+      "file_path": "documentation/PDFKit/kpdfannotationkey_linepoints.md",
+      "hash": "7386094ff1a6691a2fd878df6a059753e46df84b6ac26491871b7c0c45121546"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/pdfkit/kpdfannotationkey_name.json": {
+      "etag": "\"2dca-65d55e27af7b4-df\"",
+      "file_path": "documentation/PDFKit/kpdfannotationkey_name.md",
+      "hash": "8a86c22087d653101f8622e635c427d0d8c5b222d23e0fa6d6aff41b02fce672"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/pdfkit/kpdfannotationkey_open.json": {
+      "etag": "\"2dca-65d55e270ea61-df\"",
+      "file_path": "documentation/PDFKit/kpdfannotationkey_open.md",
+      "hash": "98ad810fc461e1b991c9c975e6388b44a3c120220ab8ef96788fd1c449f92808"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/pdfkit/kpdfannotationkey_page.json": {
+      "etag": "\"2dca-65d55e26048e6-df\"",
+      "file_path": "documentation/PDFKit/kpdfannotationkey_page.md",
+      "hash": "26bf7102391ae3a0d1ad4f7aa31ffa06668c72938304e2e3644804c647bdfb98"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/pdfkit/kpdfannotationkey_parent.json": {
+      "etag": "\"2de2-65d55e27af7b4-df\"",
+      "file_path": "documentation/PDFKit/kpdfannotationkey_parent.md",
+      "hash": "8fe58d912160c6a2f9481caab15be008a74d434b0db590cc84105fdaf5956c22"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/pdfkit/kpdfannotationkey_popup.json": {
+      "etag": "\"2dd6-65d55e26bfc18-df\"",
+      "file_path": "documentation/PDFKit/kpdfannotationkey_popup.md",
+      "hash": "8fef44f3ace55c15964776b26b0ff197ce7851a2db2fffee4e8d34d1d0b77e3c"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/pdfkit/kpdfannotationkey_quadding.json": {
+      "etag": "\"2dfa-65d55e26048e6-df\"",
+      "file_path": "documentation/PDFKit/kpdfannotationkey_quadding.md",
+      "hash": "12ebd34fe638ff70ef321495e68e1243ea79ab3b179d304727bf7d09af2023f7"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/pdfkit/kpdfannotationkey_quadpoints.json": {
+      "etag": "\"2e12-65d55e255bda7-df\"",
+      "file_path": "documentation/PDFKit/kpdfannotationkey_quadpoints.md",
+      "hash": "d46ddbe30faa06ccf526c86874fc7ee7feab81a1f7be25525130f81f6d8f1bda"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/pdfkit/kpdfannotationkey_rect.json": {
+      "etag": "\"2dca-65d55e27af7b4-df\"",
+      "file_path": "documentation/PDFKit/kpdfannotationkey_rect.md",
+      "hash": "6d80e76f625fe5305b3d7f206b04e5e3b470e20599bb7d5f1094e1e35dfd9320"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/pdfkit/kpdfannotationkey_subtype.json": {
+      "etag": "\"2dee-65d55e2733b17-df\"",
+      "file_path": "documentation/PDFKit/kpdfannotationkey_subtype.md",
+      "hash": "c6ceadb9b703fef82183ceec79ff9647b06ae7c7398ed5472793f3c9d6bed50e"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/pdfkit/kpdfannotationkey_textlabel.json": {
+      "etag": "\"2e06-65d55e25c6d59-df\"",
+      "file_path": "documentation/PDFKit/kpdfannotationkey_textlabel.md",
+      "hash": "af7e621d9e00d7405a142dab0266f56b8bc88d35ff30dcc16e70d2a38a155d4d"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/pdfkit/kpdfannotationkey_widgetappearancedictionary.json": {
+      "etag": "\"2ed2-65d55e26dae91-df\"",
+      "file_path": "documentation/PDFKit/kpdfannotationkey_widgetappearancedictionary.md",
+      "hash": "41fbad3b44f1fc087c282e47de67c63c907879d4686a9502c20965e69b0c1467"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/pdfkit/kpdfannotationkey_widgetdefaultvalue.json": {
+      "etag": "\"2e72-65d55e270ea61-df\"",
+      "file_path": "documentation/PDFKit/kpdfannotationkey_widgetdefaultvalue.md",
+      "hash": "beab52e8976a64a740b40d6f3c208f82f2eafc88cb9561ed86c52e970e5046ce"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/pdfkit/kpdfannotationkey_widgetfieldflags.json": {
+      "etag": "\"2e5a-65d55e25c6d59-df\"",
+      "file_path": "documentation/PDFKit/kpdfannotationkey_widgetfieldflags.md",
+      "hash": "18c4a3761874df482cf2ecb10edb71ac01bec258e8d4a3d996c4493916b9b9f6"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/pdfkit/kpdfannotationkey_widgetfieldtype.json": {
+      "etag": "\"2e4e-65d55e2733b17-df\"",
+      "file_path": "documentation/PDFKit/kpdfannotationkey_widgetfieldtype.md",
+      "hash": "d97afed2a75f3c965e1512b195daf31a3bf6b401252211e4e995b56c50560398"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/pdfkit/kpdfannotationkey_widgetmaxlen.json": {
+      "etag": "\"2e2a-65d55e270ea61-df\"",
+      "file_path": "documentation/PDFKit/kpdfannotationkey_widgetmaxlen.md",
+      "hash": "f8656e4d286306ec075de0a0ec45296a819712d9c9c1eada48841d83403c61f9"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/pdfkit/kpdfannotationkey_widgetoptions.json": {
+      "etag": "\"2e36-65d55e27c9a07-df\"",
+      "file_path": "documentation/PDFKit/kpdfannotationkey_widgetoptions.md",
+      "hash": "7203f35be499535b46c147d2b4a71381c11f0ad4c99977bf6d5e24031354aea2"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/pdfkit/kpdfannotationkey_widgettextlabelui.json": {
+      "etag": "\"2e66-65d55e2760dbe-df\"",
+      "file_path": "documentation/PDFKit/kpdfannotationkey_widgettextlabelui.md",
+      "hash": "7fa96f7b764b42a706db8140d4dd17c01e234781298236854848f7d1212a9076"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/pdfkit/kpdfannotationkey_widgetvalue.json": {
+      "etag": "\"2e1e-65d55e26a83d2-df\"",
+      "file_path": "documentation/PDFKit/kpdfannotationkey_widgetvalue.md",
+      "hash": "f5bec29a98c8c162d8435904fa5edf92b85c8a5119af4263d3cee1c3482fda83"
     },
     "https://developer.apple.com/tutorials/data/documentation/pdfkit/kpdfdestinationunspecifiedvalue.json": {
       "etag": "\"2268-65d55e2733b17-df\"",
@@ -5345,6 +6030,11 @@
       "file_path": "documentation/PDFKit/pdfareaofinterest/init(rawvalue).md",
       "hash": "6f4ad653c6de74848a4ecc96d3b0c943726a39991c343f7c9d7c8539c89206af"
     },
+    "https://developer.apple.com/tutorials/data/documentation/pdfkit/pdfareaofinterest/kpdfnoarea.json": {
+      "etag": "\"37cd-65d55e26bfc18-df\"",
+      "file_path": "documentation/PDFKit/pdfareaofinterest/kpdfnoarea.md",
+      "hash": "164db5755266f6dabc23de730ed0a439e9bc008c42c74b8e7bc79de343d4db19"
+    },
     "https://developer.apple.com/tutorials/data/documentation/pdfkit/pdfareaofinterest/linkarea.json": {
       "etag": "\"42d5-65d55e26bfc18-df\"",
       "file_path": "documentation/PDFKit/pdfareaofinterest/linkarea.md",
@@ -5940,6 +6630,56 @@
       "file_path": "documentation/PDFKit/pdfdocumentdelegate/documentdidunlock(_).md",
       "hash": "057c63de1c3cab4683ccde89006813ab05ce6a2a663bd14ea17a48a6bf4da1db"
     },
+    "https://developer.apple.com/tutorials/data/documentation/pdfkit/pdfdocumentdidbeginfindnotification.json": {
+      "etag": "\"3f50-65d55e265d080-df\"",
+      "file_path": "documentation/PDFKit/pdfdocumentdidbeginfindnotification.md",
+      "hash": "654c8d43565aa606c54ab73c3f4c9eca6acf71758418553132407050dbc1754c"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/pdfkit/pdfdocumentdidbeginpagefindnotification.json": {
+      "etag": "\"3f80-65d55e26048e6-df\"",
+      "file_path": "documentation/PDFKit/pdfdocumentdidbeginpagefindnotification.md",
+      "hash": "251255f44f82d8bb87ae45bd45a61ddf9ebe09639ba7f370f03235e7c9989a57"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/pdfkit/pdfdocumentdidbeginpagewritenotification.json": {
+      "etag": "\"3f0b-65d55e2733b17-df\"",
+      "file_path": "documentation/PDFKit/pdfdocumentdidbeginpagewritenotification.md",
+      "hash": "385dfad58f3256d13558db6329fcc38e169fc7734e1196b601b88669f9966458"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/pdfkit/pdfdocumentdidbeginwritenotification.json": {
+      "etag": "\"3e13-65d55e265d080-df\"",
+      "file_path": "documentation/PDFKit/pdfdocumentdidbeginwritenotification.md",
+      "hash": "bed8a655c1a59deb2c8a12126a8bc83e81ce5a52c65f1552422b7d5726bf4987"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/pdfkit/pdfdocumentdidendfindnotification.json": {
+      "etag": "\"4120-65d55e26048e6-df\"",
+      "file_path": "documentation/PDFKit/pdfdocumentdidendfindnotification.md",
+      "hash": "bb0b64b452511061e58a7cfcd259519d0f5edd9d5e0949f003614395b9050b6d"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/pdfkit/pdfdocumentdidendpagefindnotification.json": {
+      "etag": "\"3f72-65d55e2760dbe-df\"",
+      "file_path": "documentation/PDFKit/pdfdocumentdidendpagefindnotification.md",
+      "hash": "660a7216be2445ec2b7137ff8a6364a59683cee4616c2065f217f9351dc4b855"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/pdfkit/pdfdocumentdidendpagewritenotification.json": {
+      "etag": "\"3f01-65d55e270ea61-df\"",
+      "file_path": "documentation/PDFKit/pdfdocumentdidendpagewritenotification.md",
+      "hash": "324f931226d7bf92a941bce382c5b0a591c9afd4ab4f1a2195497e19689a31af"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/pdfkit/pdfdocumentdidendwritenotification.json": {
+      "etag": "\"3e09-65d55e270ea61-df\"",
+      "file_path": "documentation/PDFKit/pdfdocumentdidendwritenotification.md",
+      "hash": "6a2047b6e1b335fc6b7e3e064ee17b5a6ec59e3f2291b0c52931eb065fe382ec"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/pdfkit/pdfdocumentdidfindmatchnotification.json": {
+      "etag": "\"3edc-65d55e2733b17-df\"",
+      "file_path": "documentation/PDFKit/pdfdocumentdidfindmatchnotification.md",
+      "hash": "d7e7110c6bf7b63310daaeb5cf973965ba7e2262ef925dec94c534bd7c2b0abf"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/pdfkit/pdfdocumentdidunlocknotification.json": {
+      "etag": "\"3e92-65d55e265d080-df\"",
+      "file_path": "documentation/PDFKit/pdfdocumentdidunlocknotification.md",
+      "hash": "9eca3932d7916bba5f63be006f96ccf5a6e027bf7e3644e3837363a4a7351c16"
+    },
     "https://developer.apple.com/tutorials/data/documentation/pdfkit/pdfdocumentfoundselectionkey.json": {
       "etag": "\"1ef8-65d55e2525ccf-df\"",
       "file_path": "documentation/PDFKit/pdfdocumentfoundselectionkey.md",
@@ -6020,6 +6760,16 @@
       "file_path": "documentation/PDFKit/pdfdocumentwriteoption/userpasswordoption.md",
       "hash": "56de6f65faf93cd167b084d8525d85bdec3bf26e109f67b492efd1e2985c73b0"
     },
+    "https://developer.apple.com/tutorials/data/documentation/pdfkit/pdfedgeinsets.json": {
+      "etag": "\"2448-65d55e26bfc18-df\"",
+      "file_path": "documentation/PDFKit/pdfedgeinsets.md",
+      "hash": "972b3944baa940e4ee76e18db2194318841d271de3f94a9d1cce49699d10353e"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/pdfkit/pdfedgeinsetszero.json": {
+      "etag": "\"2460-65d55e26f493d-df\"",
+      "file_path": "documentation/PDFKit/pdfedgeinsetszero.md",
+      "hash": "68341d59e238ef5c8457bc3e10b006d5caf01aed8c3af5792cecb6706e054193"
+    },
     "https://developer.apple.com/tutorials/data/documentation/pdfkit/pdfinterpolationquality.json": {
       "etag": "\"3f98-65d55e25ae3ea-df\"",
       "file_path": "documentation/PDFKit/pdfinterpolationquality.md",
@@ -6044,6 +6794,166 @@
       "etag": "\"2169-65d55e27af7b4-df\"",
       "file_path": "documentation/PDFKit/pdfinterpolationquality/none.md",
       "hash": "1296981bd880140b01a9f6ef20007019fee35a592bffab6c18fc3461c08b154a"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/pdfkit/pdfkit_available.json": {
+      "etag": "\"2504-65d55e26dae91-df\"",
+      "file_path": "documentation/PDFKit/pdfkit_available.md",
+      "hash": "6848faf7c9dbf3e89ae49457c604dca6280e2d780cd8e2a96a52a8ce92fac6f1"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/pdfkit/pdfkit_class_available.json": {
+      "etag": "\"2528-65d55e27af7b4-df\"",
+      "file_path": "documentation/PDFKit/pdfkit_class_available.md",
+      "hash": "124f6dbbe793eba010698832204958790df0503588b3463fbdc888e9c5b82dfb"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/pdfkit/pdfkit_class_deprecated.json": {
+      "etag": "\"25ba-65d55e27af7b4-df\"",
+      "file_path": "documentation/PDFKit/pdfkit_class_deprecated.md",
+      "hash": "7ba2379f71378305d438098f472d44cd2d75ea09dca01a0c9dc1eab09aafca4b"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/pdfkit/pdfkit_deprecated.json": {
+      "etag": "\"2596-65d55e255bda7-df\"",
+      "file_path": "documentation/PDFKit/pdfkit_deprecated.md",
+      "hash": "18dda4ffac098572fe9bd98673d7052de7c4540d8f088efe06e0ecc12705dec1"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/pdfkit/pdfkit_enum_available.json": {
+      "etag": "\"2522-65d55e2733b17-df\"",
+      "file_path": "documentation/PDFKit/pdfkit_enum_available.md",
+      "hash": "8e8858b8858aa9a60699fac0312295069b9c26b00b3c3e3170b77abb331bc9e7"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/pdfkit/pdfkit_enum_deprecated.json": {
+      "etag": "\"25b4-65d55e26a83d2-df\"",
+      "file_path": "documentation/PDFKit/pdfkit_enum_deprecated.md",
+      "hash": "3e966005b254b1a510955be3e2a6532e245b63ce631f489af60af3115ed3ea58"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/pdfkit/pdfkit_extern.json": {
+      "etag": "\"2448-65d55e26a83d2-df\"",
+      "file_path": "documentation/PDFKit/pdfkit_extern.md",
+      "hash": "09c68f20f73c10d6a1fc8c7297a28df1aefe3945879f04b17aa6d8b47927c244"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/pdfkit/pdfkit_platform_ios.json": {
+      "etag": "\"243d-65d55e27c9a07-df\"",
+      "file_path": "documentation/PDFKit/pdfkit_platform_ios.md",
+      "hash": "1278968054403589f62195d6d692ad42bdff880a6ecda7cc2b02d44a14662b3c"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/pdfkit/pdfkit_platform_maccatalyst.json": {
+      "etag": "\"23c6-65d55e26a83d2-df\"",
+      "file_path": "documentation/PDFKit/pdfkit_platform_maccatalyst.md",
+      "hash": "a4231cfd1085c0eef8ce5b4d6d306b8038f25211f8bebc5f1803fffe3598c383"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/pdfkit/pdfkit_platform_osx.json": {
+      "etag": "\"2388-65d55e270ea61-df\"",
+      "file_path": "documentation/PDFKit/pdfkit_platform_osx.md",
+      "hash": "72cbf6ac8cd6e6a8421eb050b023dca290c6f28c325b08659f1dd44ef55d236a"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/pdfkit/pdfkitplatformaccessibilityelement.json": {
+      "etag": "\"24c6-65d55e265d080-df\"",
+      "file_path": "documentation/PDFKit/pdfkitplatformaccessibilityelement.md",
+      "hash": "919cc036d26f6af136c754451311b47dca9a875c9d8eabe98b08d0caff9816ed"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/pdfkit/pdfkitplatformbezierpath.json": {
+      "etag": "\"248a-65d55e265d080-df\"",
+      "file_path": "documentation/PDFKit/pdfkitplatformbezierpath.md",
+      "hash": "7ab2374469312b525304650fe45c2440b70f75299b49bf0da9c337dd10e0adf8"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/pdfkit/pdfkitplatformbezierpathelement.json": {
+      "etag": "\"24b4-65d55e2544824-df\"",
+      "file_path": "documentation/PDFKit/pdfkitplatformbezierpathelement.md",
+      "hash": "06c7e8ff78db981b478474f4f44f4217e2286dbb27718cb00c6be06a35c8af71"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/pdfkit/pdfkitplatformbutton.json": {
+      "etag": "\"2472-65d55e26048e6-df\"",
+      "file_path": "documentation/PDFKit/pdfkitplatformbutton.md",
+      "hash": "d8f8ca40633de990ed1a8bd777cfc347c03ffa45eedc79b5012512adcccf2881"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/pdfkit/pdfkitplatformbuttoncell.json": {
+      "etag": "\"24a2-65d55e25c6d59-df\"",
+      "file_path": "documentation/PDFKit/pdfkitplatformbuttoncell.md",
+      "hash": "94210cf24a35ea9f4fe1f6e65565002cb7228038c6865d6f953f4a35304263eb"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/pdfkit/pdfkitplatformchoicewidgetcomboboxview.json": {
+      "etag": "\"254a-65d55e26a83d2-df\"",
+      "file_path": "documentation/PDFKit/pdfkitplatformchoicewidgetcomboboxview.md",
+      "hash": "4b84347fdba4d750dcae90060c9fc1263d5539460b3639e23ac7e57841d2e2d3"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/pdfkit/pdfkitplatformchoicewidgetlistview.json": {
+      "etag": "\"251a-65d55e25c6d59-df\"",
+      "file_path": "documentation/PDFKit/pdfkitplatformchoicewidgetlistview.md",
+      "hash": "cdca9ec8ff656bd6335d9cc4957891ebcc21584aad610b45db73c1e4dc3a91f8"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/pdfkit/pdfkitplatformcolor.json": {
+      "etag": "\"2466-65d55e2733b17-df\"",
+      "file_path": "documentation/PDFKit/pdfkitplatformcolor.md",
+      "hash": "452e6cd8ea48ab68cb15c5dbe700631e79be2d745716a08a3ccab66069b9f69a"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/pdfkit/pdfkitplatformcontrol.json": {
+      "etag": "\"247e-65d55e270ea61-df\"",
+      "file_path": "documentation/PDFKit/pdfkitplatformcontrol.md",
+      "hash": "0c460e44efe8bfb0e550b4a7502d4d0703dd2a93d1dc0d2bd715f71fea3fc2ff"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/pdfkit/pdfkitplatformevent.json": {
+      "etag": "\"2466-65d55e2733b17-df\"",
+      "file_path": "documentation/PDFKit/pdfkitplatformevent.md",
+      "hash": "fa429a5abe5862d1ead27a47e098e3059fa6c78108778b6c9879007e6e54d051"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/pdfkit/pdfkitplatformfont.json": {
+      "etag": "\"245a-65d55e27c9a07-df\"",
+      "file_path": "documentation/PDFKit/pdfkitplatformfont.md",
+      "hash": "ae636d5fcc5083056b0aff2e79b22d278a706d502046e40611e25c66cc6d5559"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/pdfkit/pdfkitplatformfontweightregular.json": {
+      "etag": "\"24f6-65d55e26dae91-df\"",
+      "file_path": "documentation/PDFKit/pdfkitplatformfontweightregular.md",
+      "hash": "38de0c2282bb3ff7e91c33a0dad6f73c2126bf4156a15dc3b6c441fdf3dc655c"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/pdfkit/pdfkitplatformimage.json": {
+      "etag": "\"2466-65d55e25c6d59-df\"",
+      "file_path": "documentation/PDFKit/pdfkitplatformimage.md",
+      "hash": "e7292b1accba8bea640f7dcf85c882b14a42c6c2847eb1ad402ec1b53152e377"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/pdfkit/pdfkitplatformimageview.json": {
+      "etag": "\"2496-65d55e25ae3ea-df\"",
+      "file_path": "documentation/PDFKit/pdfkitplatformimageview.md",
+      "hash": "84418f7c5b990650097dab28adcdbf2729e1c070d06f21f37589b6e41f4adff6"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/pdfkit/pdfkitplatformscrollview.json": {
+      "etag": "\"24a2-65d55e27af7b4-df\"",
+      "file_path": "documentation/PDFKit/pdfkitplatformscrollview.md",
+      "hash": "05d115764c0da4f4a64a3f7d3615a05bfe781fcab155523ef776064b47c47608"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/pdfkit/pdfkitplatformtextcontenttype.json": {
+      "etag": "\"24de-65d55e25ae3ea-df\"",
+      "file_path": "documentation/PDFKit/pdfkitplatformtextcontenttype.md",
+      "hash": "a6fcee717e66fb9b938865fba78eae3985d6477523f117bb60ef4171f823a844"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/pdfkit/pdfkitplatformtextfield.json": {
+      "etag": "\"2496-65d55e25c6d59-df\"",
+      "file_path": "documentation/PDFKit/pdfkitplatformtextfield.md",
+      "hash": "ca535d6935b3785fe10c0a51851a7dbd357a657c5c21dd3fd9637db6f341c8f5"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/pdfkit/pdfkitplatformtextview.json": {
+      "etag": "\"248a-65d55e2733b17-df\"",
+      "file_path": "documentation/PDFKit/pdfkitplatformtextview.md",
+      "hash": "4bbe5c8fa317e23895cfc61d4f2acacdda9fa4ab77e3d61f93b415de7f33e3e6"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/pdfkit/pdfkitplatformtextviewdelegate.json": {
+      "etag": "\"24ea-65d55e26a83d2-df\"",
+      "file_path": "documentation/PDFKit/pdfkitplatformtextviewdelegate.md",
+      "hash": "961db6804355957242dd661cf0b172061d198a59b93c95c5f0d7e3d82dfcb6ec"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/pdfkit/pdfkitplatformview.json": {
+      "etag": "\"245a-65d55e25dec24-df\"",
+      "file_path": "documentation/PDFKit/pdfkitplatformview.md",
+      "hash": "23779b078cb737bca175e4e197e9e2bdacc3312da3208377ff863553aec012a8"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/pdfkit/pdfkitplatformviewcontroller.json": {
+      "etag": "\"24d2-65d55e26dae91-df\"",
+      "file_path": "documentation/PDFKit/pdfkitplatformviewcontroller.md",
+      "hash": "63b954982d3e0f53d6672c56da615aa33fcf02a170b7f69e81e74de46c43fc02"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/pdfkit/pdfkitresponder.json": {
+      "etag": "\"2436-65d55e26a83d2-df\"",
+      "file_path": "documentation/PDFKit/pdfkitresponder.md",
+      "hash": "0e0823d75051d75abe5d8151b39f86969c283e2bce1e97af1d5abdabfe481d3c"
     },
     "https://developer.apple.com/tutorials/data/documentation/pdfkit/pdflinestyle.json": {
       "etag": "\"5097-65d55e270ea61-df\"",
@@ -6390,6 +7300,16 @@
       "file_path": "documentation/PDFKit/pdfpageoverlayviewprovider/pdfview(_,willenddisplayingoverlayview,for).md",
       "hash": "3d9efd7d7132741047b897cbb131ca5fbabeb75a9fdf8a61440cdc612929920a"
     },
+    "https://developer.apple.com/tutorials/data/documentation/pdfkit/pdfpoint.json": {
+      "etag": "\"23e2-65d55e2760dbe-df\"",
+      "file_path": "documentation/PDFKit/pdfpoint.md",
+      "hash": "6d998d68f1c1631e28fe64237f8686aaaac47ed7d542e47230bcf24107401963"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/pdfkit/pdfpointzero.json": {
+      "etag": "\"2412-65d55e2760dbe-df\"",
+      "file_path": "documentation/PDFKit/pdfpointzero.md",
+      "hash": "5412e9cc92adaefc3e05667621f3a1b8a812d29b27e7b156fe8bd5de769a5597"
+    },
     "https://developer.apple.com/tutorials/data/documentation/pdfkit/pdfprintscalingmode.json": {
       "etag": "\"4277-65d55e26048e6-df\"",
       "file_path": "documentation/PDFKit/pdfprintscalingmode.md",
@@ -6414,6 +7334,16 @@
       "etag": "\"24db-65d55e27af7b4-df\"",
       "file_path": "documentation/PDFKit/pdfprintscalingmode/pagescaletofit.md",
       "hash": "afa855b03cd7c0d73f200ae714ac9d563bf6a47927bc1c6cc419aaca1946e5f6"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/pdfkit/pdfrect.json": {
+      "etag": "\"23d6-65d55e26dae91-df\"",
+      "file_path": "documentation/PDFKit/pdfrect.md",
+      "hash": "61abc87a1a3f8e6c0c30ea3d98a110225ffc601fb6aac9d29442be6220d63aa3"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/pdfkit/pdfrectzero.json": {
+      "etag": "\"2406-65d55e270ea61-df\"",
+      "file_path": "documentation/PDFKit/pdfrectzero.md",
+      "hash": "e926b269327a5aed220334eaf2842baa997bef17f6bb599fccf1182e96aba337"
     },
     "https://developer.apple.com/tutorials/data/documentation/pdfkit/pdfselection.json": {
       "etag": "\"97e0-65d55e26bfc18-df\"",
@@ -6524,6 +7454,16 @@
       "etag": "\"201f-65d55e270ea61-df\"",
       "file_path": "documentation/PDFKit/pdfselectiongranularity/word.md",
       "hash": "a9540435f2204ca8d57992bf9333c8dfc11f5eac11b271f5a19ced97250b9e47"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/pdfkit/pdfsize.json": {
+      "etag": "\"23d6-65d55e26048e6-df\"",
+      "file_path": "documentation/PDFKit/pdfsize.md",
+      "hash": "4854fa33abb33f929cf4912cfb4a71343f2c1513850a37de8f0c070c11c9dc0c"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/pdfkit/pdfsizezero.json": {
+      "etag": "\"2406-65d55e2544824-df\"",
+      "file_path": "documentation/PDFKit/pdfsizezero.md",
+      "hash": "3c534943ff18cd87f3767b5f14eaae3a5ebf299541361ad91d7f35cd539ec25b"
     },
     "https://developer.apple.com/tutorials/data/documentation/pdfkit/pdftextannotationicontype.json": {
       "etag": "\"51d0-65d55e270ea61-df\"",
@@ -6644,6 +7584,16 @@
       "etag": "\"21bf-65d55e2760dbe-df\"",
       "file_path": "documentation/PDFKit/pdfthumbnailview/thumbnailsize.md",
       "hash": "cb53964abd5e5f6229e3d398c84a6b4cf49405de45f8f0f96792659ff6b34e8b"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/pdfkit/pdfthumbnailviewdocumenteditednotification.json": {
+      "etag": "\"f39-65d55e25c6d59-df\"",
+      "file_path": "documentation/PDFKit/pdfthumbnailviewdocumenteditednotification.md",
+      "hash": "6feba8d1f28b91237a2dbd8b73642a1ca360a83732e6d7856e02c63a2bacd1b4"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/pdfkit/pdftrackingrunloopmode.json": {
+      "etag": "\"248a-65d55e26bfc18-df\"",
+      "file_path": "documentation/PDFKit/pdftrackingrunloopmode.md",
+      "hash": "bd9c1dad503d8fab445f29d3d5841a89803b713517806d8da8ea9b7c41714bb3"
     },
     "https://developer.apple.com/tutorials/data/documentation/pdfkit/pdfview.json": {
       "etag": "\"120d2-65d55e270ea61-df\"",
@@ -7045,6 +7995,26 @@
       "file_path": "documentation/PDFKit/pdfview/zoomout(_).md",
       "hash": "5e0aa8e053681f6c8c7c3ef3a54de93654d04e8e0e928a1795be6ffb3bd1235a"
     },
+    "https://developer.apple.com/tutorials/data/documentation/pdfkit/pdfviewannotationhitnotification.json": {
+      "etag": "\"2e7a-65d55e27c9a07-df\"",
+      "file_path": "documentation/PDFKit/pdfviewannotationhitnotification.md",
+      "hash": "c41960445e579e4d91e09d04bc6022e8feae68a01918e8ffb159e56c884d8c98"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/pdfkit/pdfviewannotationwillhitnotification.json": {
+      "etag": "\"2d8f-65d55e2733b17-df\"",
+      "file_path": "documentation/PDFKit/pdfviewannotationwillhitnotification.md",
+      "hash": "a069ab9db683ab645c905ddddc5ea623b1bdcc7c24f74fde2089a83d8d02745b"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/pdfkit/pdfviewchangedhistorynotification.json": {
+      "etag": "\"2d76-65d55e26a83d2-df\"",
+      "file_path": "documentation/PDFKit/pdfviewchangedhistorynotification.md",
+      "hash": "32730b8828a5d21daa3858c383665ea4254b14d6eea36cb66c00f3063688ca15"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/pdfkit/pdfviewcopypermissionnotification.json": {
+      "etag": "\"2dad-65d55e26bfc18-df\"",
+      "file_path": "documentation/PDFKit/pdfviewcopypermissionnotification.md",
+      "hash": "a77e6813363c0fc0c841dbff9a7f7bc671759f78967f4bd9a94fdd7bcef42e7e"
+    },
     "https://developer.apple.com/tutorials/data/documentation/pdfkit/pdfviewdelegate.json": {
       "etag": "\"53b5-65d55e26048e6-df\"",
       "file_path": "documentation/PDFKit/pdfviewdelegate.md",
@@ -7089,6 +8059,46 @@
       "etag": "\"276e-65d55e2733b17-df\"",
       "file_path": "documentation/PDFKit/pdfviewdelegate/pdfviewwillclick(onlink,with).md",
       "hash": "9a29d654ea9e57aeea1905ef57be01c02773c8d88e71d3cf6288a6c27fb2f7b9"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/pdfkit/pdfviewdisplayboxchangednotification.json": {
+      "etag": "\"2d8b-65d55e270ea61-df\"",
+      "file_path": "documentation/PDFKit/pdfviewdisplayboxchangednotification.md",
+      "hash": "99498ae92147d9ab21a324521d48736581553a9f4df5c6b2ba614750223169ac"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/pdfkit/pdfviewdisplaymodechangednotification.json": {
+      "etag": "\"2d92-65d55e2733b17-df\"",
+      "file_path": "documentation/PDFKit/pdfviewdisplaymodechangednotification.md",
+      "hash": "0f75c4726927b74d01383062d0f165f5a15b231cd86889f320db021c1b3f9428"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/pdfkit/pdfviewdocumentchangednotification.json": {
+      "etag": "\"2d8e-65d55e26048e6-df\"",
+      "file_path": "documentation/PDFKit/pdfviewdocumentchangednotification.md",
+      "hash": "46fd8050d15e055b9a57b21ef6861c01b44ee44f67662468d206ddf3023e3941"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/pdfkit/pdfviewpagechangednotification.json": {
+      "etag": "\"2d6f-65d55e2760dbe-df\"",
+      "file_path": "documentation/PDFKit/pdfviewpagechangednotification.md",
+      "hash": "412bab2a9ad9d41dbf1e21c7938eb3a869fbf39284ad5e40fdff8ce549585b22"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/pdfkit/pdfviewprintpermissionnotification.json": {
+      "etag": "\"2da2-65d55e26bfc18-df\"",
+      "file_path": "documentation/PDFKit/pdfviewprintpermissionnotification.md",
+      "hash": "5a9c4003009881d663b975ae5a591bd3820c1b8daf0cbb731a5585a44c6a751b"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/pdfkit/pdfviewscalechangednotification.json": {
+      "etag": "\"2d6a-65d55e265d080-df\"",
+      "file_path": "documentation/PDFKit/pdfviewscalechangednotification.md",
+      "hash": "a8539ecca1c4558e93497c4f70a1187be469225305146d4488ad8c56855291ae"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/pdfkit/pdfviewselectionchangednotification.json": {
+      "etag": "\"2d8b-65d55e26a83d2-df\"",
+      "file_path": "documentation/PDFKit/pdfviewselectionchangednotification.md",
+      "hash": "5755737ed5cf292e1782a185e600f0f676e3a9cab05e49e929121c086210d2bb"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/pdfkit/pdfviewvisiblepageschangednotification.json": {
+      "etag": "\"2c85-65d55e2760dbe-df\"",
+      "file_path": "documentation/PDFKit/pdfviewvisiblepageschangednotification.md",
+      "hash": "51b33373c7948862c8cabda536c8a339debba2eb1aa6338fc15a8f88db82a574"
     },
     "https://developer.apple.com/tutorials/data/documentation/pdfkit/pdfwidgetcellstate.json": {
       "etag": "\"52b3-65d55e25dec24-df\"",
@@ -7173,8 +8183,8 @@
   },
   "metadata": {
     "render": {
-      "version": 1
+      "version": 2
     },
-    "total_pages": 1434
+    "total_pages": 1636
   }
 }

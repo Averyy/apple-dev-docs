@@ -46,6 +46,8 @@ Keys that are not in the key set can still be set in the dictionary, but that us
   Initializes a newly allocated mutable dictionary, allocating enough memory to hold `numItems` entries.
 - [init()](./init%28%29.md)
   Initializes a newly allocated mutable dictionary.
+- [+ dictionaryWithCapacity:](./dictionarywithcapacity_.md)
+  Creates and returns a mutable dictionary, initially giving it enough allocated memory to hold a given number of entries.
 
 
 ---

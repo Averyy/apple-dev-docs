@@ -52,6 +52,8 @@ This value is `nil` if the authentication method of the protection space is not 
   The receiver’s authentication realm
 - [var receivesCredentialSecurely: Bool](./receivescredentialsecurely.md)
   A Boolean value that indicates whether the credentials for the protection space can be sent securely.
+- [isProxy](../nsurlprotectionspace/isproxy.md)
+  A Boolean value that indicates whether the receiver represents a proxy server.
 
 
 ---

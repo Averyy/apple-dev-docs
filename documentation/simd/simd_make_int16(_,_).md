@@ -37,6 +37,8 @@ static simd_int16 simd_make_int16(simd_int8 lo, simd_int8 hi);
   Returns a new vector from the specified four-element vector, and other elements undefined.
 - [func simd_make_int16_undef(simd_int8) -> simd_int16](./simd_make_int16_undef%28_%29-4lk92.md)
   Returns a new vector from the specified eight-element vector, and other elements undefined.
+- [vector16](./vector16-sofg.md)
+  Returns a new vector from the specified vectors.
 
 
 ---

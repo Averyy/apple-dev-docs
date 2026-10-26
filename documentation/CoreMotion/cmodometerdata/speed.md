@@ -31,6 +31,10 @@ var speed: CLLocationSpeed { get }
   The slope at the location toward the direction of travel, measured in degrees.
 - [var maxAbsSlope: Double?](./maxabsslope-9mnfd.md)
   The maximum absolute slope at the location toward all directions, measured in degrees.
+- [slope](./slope-96hlt.md)
+  The slope at the location toward the direction of travel, measured in degrees.
+- [maxAbsSlope](./maxabsslope-96ulr.md)
+  The maximum absolute slope at the location toward all directions, measured in degrees.
 
 
 ---

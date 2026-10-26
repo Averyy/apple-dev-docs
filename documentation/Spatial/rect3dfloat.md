@@ -69,6 +69,8 @@ typedef struct { ... } SPRect3DFloat;
   The origin of the rectangle.
 - [var standardized: Rect3DFloat](./rect3dfloat/standardized.md)
   Returns a rectangle with a positive width and height.
+- [size](./sprect3dfloat/size.md)
+  The size of the rectangle.
 ### Instance Methods
 - [func applying(ScaledPose3DFloat) -> Rect3DFloat](./rect3dfloat/applying%28_%29-7i8x5.md)
   Returns the primitive that results from applying a scaled pose to the primitive.

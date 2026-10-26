@@ -20,6 +20,31 @@
       "file_path": "documentation/DiskArbitration/anonymous-kdadiskunmountoptions.md",
       "hash": "6eb21dfde2be35c44aeb562f1c9f3da5f0e02b34d68501764b64d7bfa26d5632"
     },
+    "https://developer.apple.com/documentation/diskarbitration/daapprovalsessioncreate": {
+      "etag": "\"1968-65d5603e5943e-df\"",
+      "file_path": "documentation/DiskArbitration/daapprovalsessioncreate.md",
+      "hash": "422c70f10cfb2f1086610e3b57cedc0c2b257b3e33973feffa4274a01cdfa08a"
+    },
+    "https://developer.apple.com/documentation/diskarbitration/daapprovalsessiongettypeid": {
+      "etag": "\"15ce-65d5603e5943e-df\"",
+      "file_path": "documentation/DiskArbitration/daapprovalsessiongettypeid.md",
+      "hash": "39512c3aa6b309536913203409c45d4f8f433d5516850641234efdaacf90c9e2"
+    },
+    "https://developer.apple.com/documentation/diskarbitration/daapprovalsessionref": {
+      "etag": "\"2cff-65d5603e2ff99-df\"",
+      "file_path": "documentation/DiskArbitration/daapprovalsessionref.md",
+      "hash": "ecffd65b15c8f68fb74ca12a8f3defc9a62915cca838715f141e4be3ae8f9799"
+    },
+    "https://developer.apple.com/documentation/diskarbitration/daapprovalsessionschedulewithrunloop": {
+      "etag": "\"1f2c-65d5603e72439-df\"",
+      "file_path": "documentation/DiskArbitration/daapprovalsessionschedulewithrunloop.md",
+      "hash": "e761fd976a904967ee4b16798ef464e26fa036edd8982bc8762232f1726b7086"
+    },
+    "https://developer.apple.com/documentation/diskarbitration/daapprovalsessionunschedulefromrunloop": {
+      "etag": "\"1f38-65d5603e72439-df\"",
+      "file_path": "documentation/DiskArbitration/daapprovalsessionunschedulefromrunloop.md",
+      "hash": "0a2a5765864b990004e6f373274e4186226039efdb843efe8aea8b9cab51ed8a"
+    },
     "https://developer.apple.com/documentation/diskarbitration/dadisk": {
       "etag": "\"1878-65d5603e2ff99-df\"",
       "file_path": "documentation/DiskArbitration/dadisk.md",
@@ -315,6 +340,11 @@
       "file_path": "documentation/DiskArbitration/dasessionunschedulefromrunloop(_,_,_).md",
       "hash": "51444c6f3a3e4935ddc5599b76f437d4d3708d1f34dba15c9ab3a2f186099a43"
     },
+    "https://developer.apple.com/documentation/diskarbitration/daunregisterapprovalcallback": {
+      "etag": "\"7667-65d5603e2ff99-df\"",
+      "file_path": "documentation/DiskArbitration/daunregisterapprovalcallback.md",
+      "hash": "d3d48ae79958541e1151148a3748e4662bb6dfa2741cfa4e60c1d226b501013c"
+    },
     "https://developer.apple.com/documentation/diskarbitration/daunregistercallback(_:_:_:)": {
       "etag": "\"8efb-65d5603e72439-df\"",
       "file_path": "documentation/DiskArbitration/daunregistercallback(_,_,_).md",
@@ -335,10 +365,20 @@
       "file_path": "documentation/DiskArbitration/diskarbitration-enumerations.md",
       "hash": "f0a7734123d4814932c5721d631390960b7954f33d3a93b0e11c7945f19d57b8"
     },
+    "https://developer.apple.com/documentation/diskarbitration/diskarbitration-functions": {
+      "etag": "\"1c7a-6590292e450f2-df\"",
+      "file_path": "documentation/DiskArbitration/diskarbitration-functions.md",
+      "hash": "5e6cce34c57bc3409b6467f963fd3412e3e2b3f5f00f02ef0f3729acb8cdacdf"
+    },
     "https://developer.apple.com/documentation/diskarbitration/diskarbitration-h": {
       "etag": "\"106d6-6590292e19b63-df\"",
       "file_path": "documentation/DiskArbitration/diskarbitration-h.md",
       "hash": "cea1b597dad5290729fca27ef2c4babfe1ae0cf6490eecdbac0e340cbe1eee6d"
+    },
+    "https://developer.apple.com/documentation/diskarbitration/err_local_diskarbitration": {
+      "etag": "\"a84-65d5603e2ff99-df\"",
+      "file_path": "documentation/DiskArbitration/err_local_diskarbitration.md",
+      "hash": "24f60ea5703fc997b0129684bbb40f565daffa24e4919ad32d29355103f42950"
     },
     "https://developer.apple.com/documentation/diskarbitration/global-variables": {
       "etag": "\"4e2c-6590292e79acc-df\"",
@@ -730,6 +770,31 @@
       "file_path": "documentation/DiskArbitration/anonymous-kdadiskunmountoptions.md",
       "hash": "6eb21dfde2be35c44aeb562f1c9f3da5f0e02b34d68501764b64d7bfa26d5632"
     },
+    "https://developer.apple.com/tutorials/data/documentation/diskarbitration/daapprovalsessioncreate.json": {
+      "etag": "\"1968-65d5603e5943e-df\"",
+      "file_path": "documentation/DiskArbitration/daapprovalsessioncreate.md",
+      "hash": "422c70f10cfb2f1086610e3b57cedc0c2b257b3e33973feffa4274a01cdfa08a"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/diskarbitration/daapprovalsessiongettypeid.json": {
+      "etag": "\"15ce-65d5603e5943e-df\"",
+      "file_path": "documentation/DiskArbitration/daapprovalsessiongettypeid.md",
+      "hash": "39512c3aa6b309536913203409c45d4f8f433d5516850641234efdaacf90c9e2"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/diskarbitration/daapprovalsessionref.json": {
+      "etag": "\"2cff-65d5603e2ff99-df\"",
+      "file_path": "documentation/DiskArbitration/daapprovalsessionref.md",
+      "hash": "ecffd65b15c8f68fb74ca12a8f3defc9a62915cca838715f141e4be3ae8f9799"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/diskarbitration/daapprovalsessionschedulewithrunloop.json": {
+      "etag": "\"1f2c-65d5603e72439-df\"",
+      "file_path": "documentation/DiskArbitration/daapprovalsessionschedulewithrunloop.md",
+      "hash": "e761fd976a904967ee4b16798ef464e26fa036edd8982bc8762232f1726b7086"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/diskarbitration/daapprovalsessionunschedulefromrunloop.json": {
+      "etag": "\"1f38-65d5603e72439-df\"",
+      "file_path": "documentation/DiskArbitration/daapprovalsessionunschedulefromrunloop.md",
+      "hash": "0a2a5765864b990004e6f373274e4186226039efdb843efe8aea8b9cab51ed8a"
+    },
     "https://developer.apple.com/tutorials/data/documentation/diskarbitration/dadisk-h.json": {
       "etag": "\"4ff9-6590292e19b63-df\"",
       "file_path": "documentation/DiskArbitration/dadisk-h.md",
@@ -1025,6 +1090,11 @@
       "file_path": "documentation/DiskArbitration/dasessionunschedulefromrunloop(_,_,_).md",
       "hash": "51444c6f3a3e4935ddc5599b76f437d4d3708d1f34dba15c9ab3a2f186099a43"
     },
+    "https://developer.apple.com/tutorials/data/documentation/diskarbitration/daunregisterapprovalcallback.json": {
+      "etag": "\"7667-65d5603e2ff99-df\"",
+      "file_path": "documentation/DiskArbitration/daunregisterapprovalcallback.md",
+      "hash": "d3d48ae79958541e1151148a3748e4662bb6dfa2741cfa4e60c1d226b501013c"
+    },
     "https://developer.apple.com/tutorials/data/documentation/diskarbitration/daunregistercallback(_:_:_:).json": {
       "etag": "\"8efb-65d5603e72439-df\"",
       "file_path": "documentation/DiskArbitration/daunregistercallback(_,_,_).md",
@@ -1045,10 +1115,20 @@
       "file_path": "documentation/DiskArbitration/diskarbitration-enumerations.md",
       "hash": "f0a7734123d4814932c5721d631390960b7954f33d3a93b0e11c7945f19d57b8"
     },
+    "https://developer.apple.com/tutorials/data/documentation/diskarbitration/diskarbitration-functions.json": {
+      "etag": "\"1c7a-6590292e450f2-df\"",
+      "file_path": "documentation/DiskArbitration/diskarbitration-functions.md",
+      "hash": "5e6cce34c57bc3409b6467f963fd3412e3e2b3f5f00f02ef0f3729acb8cdacdf"
+    },
     "https://developer.apple.com/tutorials/data/documentation/diskarbitration/diskarbitration-h.json": {
       "etag": "\"106d6-6590292e19b63-df\"",
       "file_path": "documentation/DiskArbitration/diskarbitration-h.md",
       "hash": "cea1b597dad5290729fca27ef2c4babfe1ae0cf6490eecdbac0e340cbe1eee6d"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/diskarbitration/err_local_diskarbitration.json": {
+      "etag": "\"a84-65d5603e2ff99-df\"",
+      "file_path": "documentation/DiskArbitration/err_local_diskarbitration.md",
+      "hash": "24f60ea5703fc997b0129684bbb40f565daffa24e4919ad32d29355103f42950"
     },
     "https://developer.apple.com/tutorials/data/documentation/diskarbitration/global-variables.json": {
       "etag": "\"4e2c-6590292e79acc-df\"",
@@ -1423,8 +1503,8 @@
   },
   "metadata": {
     "render": {
-      "version": 1
+      "version": 2
     },
-    "total_pages": 284
+    "total_pages": 300
   }
 }

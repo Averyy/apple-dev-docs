@@ -39,6 +39,10 @@ An entity’s [`components`](./components.md) list never has more than one insta
 ### Managing an Entity’s List of Components
 - [var components: [GKComponent]](./components.md)
   The entity’s list of components.
+- [- componentForClass:](./componentforclass_.md)
+  Returns the entity’s component for the specified component class.
+- [- removeComponentForClass:](./removecomponentforclass_.md)
+  Removes the component of the specified class from the entity.
 
 
 ---

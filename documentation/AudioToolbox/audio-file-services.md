@@ -119,6 +119,8 @@ With Audio File Services you can:
 - [struct AudioPacketDependencyInfoTranslation](./audiopacketdependencyinfotranslation.md)
 - [struct AudioPacketRangeByteCountTranslation](./audiopacketrangebytecounttranslation.md)
 - [struct AudioPacketRollDistanceTranslation](./audiopacketrolldistancetranslation.md)
+- [AudioFileFDFTable](./audiofilefdftable.md)
+- [AudioFileFDFTableExtended](./audiofilefdftableextended.md)
 ### Enumerations
 - [struct AudioBytePacketTranslationFlags](./audiobytepackettranslationflags.md)
 - [struct AudioFileFlags](./audiofileflags.md)

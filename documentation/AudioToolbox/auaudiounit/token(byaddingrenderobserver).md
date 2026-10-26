@@ -61,6 +61,12 @@ This version 3 method is bridged to the version 2 [`AudioUnitAddRenderNotify(_:_
   Removes an observer block previously added to the render cycle.
 - [typealias AURenderObserver](../aurenderobserver.md)
   A block called when an audio unit renders audio.
+- [renderContextObserver](./rendercontextobserver.md)
+  The block that the system calls when the rendering context changes.
+- [AURenderContextObserver](../aurendercontextobserver.md)
+  A custom block that tells the audio unit which thread context to use for the next render cycle.
+- [AudioUnitRenderContext](../audiounitrendercontext.md)
+  A structure that contains thread context information for a real-time rendering operation.
 
 
 ---

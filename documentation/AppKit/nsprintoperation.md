@@ -108,6 +108,9 @@ It is important to note that the majority of methods in [`NSPrintOperation`](./n
 ### Deprecated
 - [Deprecated symbols](./nsprintoperation-deprecated-symbols.md)
   Review symbols that are no longer in active development, and their recommended replacements.
+### Constants
+- [NSPrintOperationExistsException](./nsprintoperationexistsexception.md)
+  The name of an exception raised when there is already a print operation in process.
 
 ## Relationships
 

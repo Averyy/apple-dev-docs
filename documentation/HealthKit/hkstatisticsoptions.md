@@ -108,6 +108,8 @@ HKStatisticsQuery *discreteQuery =
   An option indicating that the system returns the most recent quantity from the matching samples.
 - [static var duration: HKStatisticsOptions](./hkstatisticsoptions/duration.md)
   An option indicating that the system calculates the total duration covering all the samples.
+- [HKStatisticsOptionNone](./hkstatisticsoptions/hkstatisticsoptionnone.md)
+  An option indicating that the system will not calculate any statistics values.
 ### Deprecated Constants
 - [static var discreteMostRecent: HKStatisticsOptions](./hkstatisticsoptions/discretemostrecent.md)
   An option indicating that the system returns the most recent quantity from the matching samples.

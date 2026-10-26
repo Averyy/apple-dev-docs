@@ -38,6 +38,8 @@ The path in this property is created by reversing each whole or partial subpath 
 - [init(cgPath: CGPath)](./init%28cgpath%29-96cxk.md)
 - [var flattened: NSBezierPath](./flattened.md)
   A flattened version of the path object.
+- [+ bezierPath](./bezierpath.md)
+  Creates and returns a new Bézier path object.
 
 
 ---

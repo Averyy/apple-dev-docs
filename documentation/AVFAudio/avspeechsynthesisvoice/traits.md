@@ -35,6 +35,8 @@ enum AVSpeechSynthesisVoiceTraits : NSUInteger;
   The trait that indicates a voice is a novelty voice.
 - [static var isPersonalVoice: AVSpeechSynthesisVoice.Traits](./traits/ispersonalvoice.md)
   The trait that indicates a voice is a personal voice.
+- [AVSpeechSynthesisVoiceTraitNone](../avspeechsynthesisvoicetraits/avspeechsynthesisvoicetraitnone.md)
+  The trait that indicates a voice is a regular voice.
 
 ## Relationships
 

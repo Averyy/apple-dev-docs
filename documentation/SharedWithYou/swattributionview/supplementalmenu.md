@@ -61,6 +61,8 @@ Use `supplementalMenu` when there are additional actions a user can take on cont
   A localized string the system uses as a custom title for the hide menu item.
 - [var preferredMaxLayoutWidth: CGFloat](./preferredmaxlayoutwidth.md)
   A width the system uses to constrain the view contents.
+- [enablesMarquee](./enablesmarquee.md)
+  Automatically enables a marquee effect.
 
 
 ---

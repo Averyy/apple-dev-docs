@@ -30,6 +30,8 @@ var reductionType: MLCReductionType { get }
   The dimension to perform the reduction operation on.
 - [var dimensions: [Int]](./dimensions-9oph6.md)
   The dimensions to perform the reduction operation on.
+- [dimensions](./dimensions-4359b.md)
+  The dimensions to perform the reduction operation on.
 
 
 ---

@@ -66,6 +66,14 @@ This method works in single-line, baseline rendering configuration by default. I
   Returns a representation of the receiver as a C string in the default C-string encoding, possibly losing information in converting to that encoding.
 - [func cStringLength() -> Int](./cstringlength%28%29.md)
   Returns the length in char-sized units of the receiver’s C-string representation in the default C-string encoding.
+- [- getCString:](./getcstring%28_%29.md)
+  Invokes [`getCString:maxLength:range:remainingRange:`](./getcstring%28_,maxlength,range,remaining%29.md) with `NSMaximumStringLength` as the maximum length, the receiver’s entire extent as the range, and `NULL` for the remaining range.
+- [- getCString:maxLength:](./getcstring%28_,maxlength%29.md)
+  Invokes [`getCString:maxLength:range:remainingRange:`](./getcstring%28_,maxlength,range,remaining%29.md) with `maxLength` as the maximum length in char-sized units, the receiver’s entire extent as the range, and `NULL` for the remaining range.
+- [- getCString:maxLength:range:remainingRange:](./getcstring%28_,maxlength,range,remaining%29.md)
+  Converts the receiver’s content to the default C-string encoding and stores them in a given buffer.
+- [- stringByAddingPercentEscapesUsingEncoding:](./addingpercentescapes%28using%29.md)
+  Returns a representation of the receiver using a given encoding to determine the percent escapes necessary to convert the receiver into a legal URL string.
 
 
 ---

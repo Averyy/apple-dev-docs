@@ -83,6 +83,11 @@ When the system suspends your app, use the command queue to finish command buffe
 ### Suspending work on a GPU
 - [Preparing your Metal app to run in the background](./preparing-your-metal-app-to-run-in-the-background.md)
   Prepare your app to move into the background by pausing future GPU use and ensuring previous work is scheduled.
+### Submitting work to a GPU
+- [MTLCommandBufferErrorDomain](./mtlcommandbuffererrordomain.md)
+  The domain for Metal command buffer errors.
+- [MTLCommandBufferError](./mtlcommandbuffererror-swift.struct/code.md)
+  Error codes that indicate why a GPU is unable to finish running a command buffer.
 
 
 ---

@@ -37,6 +37,8 @@ The [`MDLAsset`](../mdlasset.md) class infers the data format to export in from 
 ### Exporting an Asset
 - [class func canExportFileExtension(String) -> Bool](./canexportfileextension%28_%29.md)
   Returns a Boolean value that indicates whether the [`MDLAsset`](../mdlasset.md) class can write asset data as a file with the specified format extension.
+- [- exportAssetToURL:](./exportassettourl_.md)
+  Writes asset data to a file at the specified URL.
 
 
 ---

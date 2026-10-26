@@ -40,6 +40,10 @@ static const NSPointerFunctionsOptions NSMapTableStrongMemory;
   Uses weak read and write barriers appropriate for ARC or GC. Using NSPointerFunctionsWeakMemory object references will turn to `NULL` on last release.
 - [var NSMapTableWeakMemory: NSPointerFunctions.Options](./nsmaptableweakmemory.md)
   Equivalent to [`weakMemory`](./nspointerfunctions/options/weakmemory.md).
+- [NSPointerFunctionsZeroingWeakMemory](./nspointerfunctionsoptions/nspointerfunctionszeroingweakmemory.md)
+  Use weak read and write barriers; use garbage-collected memory on copyIn.
+- [NSMapTableZeroingWeakMemory](./nsmaptablezeroingweakmemory.md)
+  Equivalent to [`NSPointerFunctionsZeroingWeakMemory`](./nspointerfunctionsoptions/nspointerfunctionszeroingweakmemory.md).
 
 
 ---

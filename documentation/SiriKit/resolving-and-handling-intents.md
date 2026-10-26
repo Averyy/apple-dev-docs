@@ -21,9 +21,9 @@ SiriKit works with your Intents app extension to verify that you are able to ful
 - [Handling an Intent](./handling-an-intent.md)
   Fulfill the intent and provide feedback to SiriKit about what you did.
 ### Responses
-- [class INIntentResolutionResult](https://developer.apple.com/documentation/intents/inintentresolutionresult)
+- [class INIntentResolutionResult](../Intents/inintentresolutionresult.md)
   A resolution result for a parameter of an intent object.
-- [class INIntentResponse](https://developer.apple.com/documentation/intents/inintentresponse)
+- [class INIntentResponse](../Intents/inintentresponse.md)
   Your response to an intent object.
 
 ## See Also
@@ -31,9 +31,9 @@ SiriKit works with your Intents app extension to verify that you are able to ful
 ### Intents
 - [Dispatching intents to handlers](./dispatching-intents-to-handlers.md)
   Provide SiriKit with an intent handler capable of handling a specific intent.
-- [class INIntent](https://developer.apple.com/documentation/intents/inintent)
+- [class INIntent](../Intents/inintent.md)
   A request to fulfill in your app or Intents extension.
-- [class INIntentResponse](https://developer.apple.com/documentation/intents/inintentresponse)
+- [class INIntentResponse](../Intents/inintentresponse.md)
   Your response to an intent object.
 - [Intent Handling Infrastructure](./intent-handling-infrastructure.md)
   Specify required permissions and provide handlers for the intents your app supports, and configure app extensions.

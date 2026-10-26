@@ -78,6 +78,10 @@ When managing CarPlay features, users do not need to include the name of the app
 ### Initializing the Intent Object
 - [convenience init(profileNumber: Int?, profileLabel: String?)](./insaveprofileincarintent/init%28profilenumber,profilelabel%29.md)
   Creates the intent object with the specified profile name information.
+- [- initWithProfileNumber:profileName:](./insaveprofileincarintent/initwithprofilenumber_profilename_.md)
+  Initializes the intent object with the specified profile name information.
+- [- initWithProfileNumber:profileLabel:](./insaveprofileincarintent/initwithprofilenumber_profilelabel_.md)
+  Initializes the intent object with the specified profile name information.
 ### Getting the Profile Information
 - [var profileNumber: Int?](./insaveprofileincarintent/profilenumber-2q84c.md)
   The profile index in which to save the settings.
@@ -85,6 +89,8 @@ When managing CarPlay features, users do not need to include the name of the app
   The name to assign to the profile.
 - [var profileLabel: String?](./insaveprofileincarintent/profilelabel.md)
   The name to assign to the profile.
+- [profileNumber](./insaveprofileincarintent/profilenumber-7z4u2.md)
+  The profile index in which to save the settings.
 
 ## Relationships
 

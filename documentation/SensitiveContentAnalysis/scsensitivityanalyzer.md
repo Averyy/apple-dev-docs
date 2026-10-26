@@ -66,6 +66,8 @@ This class successfully detects sensitive content only when [`analysisPolicy`](.
   Analyzes a video file on disk at a URL for sensitive content.
 - [SCSensitivityAnalyzer.VideoAnalysisHandler](./scsensitivityanalyzer/videoanalysishandler.md)
   An object that checks if a video contains sensitive content and provides status updates.
+- [- analyzeVideoFile:completionHandler:](./scsensitivityanalyzer/analyzevideofile_completionhandler_.md)
+  Analyzes a video file on disk at the given URL and runs the given code on completion.
 
 ## Relationships
 

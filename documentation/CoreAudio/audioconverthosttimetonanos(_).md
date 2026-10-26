@@ -50,6 +50,11 @@ Convert the given host time into a time in nanoseconds.
 - [func AudioGetHostClockMinimumTimeDelta() -> UInt32](./audiogethostclockminimumtimedelta%28%29.md)
 - [func AudioHardwareCreateAggregateDevice(CFDictionary, UnsafeMutablePointer<AudioObjectID>) -> OSStatus](./audiohardwarecreateaggregatedevice%28_,_%29.md)
 - [func AudioHardwareDestroyAggregateDevice(AudioObjectID) -> OSStatus](./audiohardwaredestroyaggregatedevice%28_%29.md)
+- [AudioDriverPlugInClose](./audiodriverpluginclose.md)
+- [AudioDriverPlugInDeviceGetProperty](./audiodriverplugindevicegetproperty.md)
+- [AudioDriverPlugInDeviceGetPropertyInfo](./audiodriverplugindevicegetpropertyinfo.md)
+- [AudioDriverPlugInDeviceSetProperty](./audiodriverplugindevicesetproperty.md)
+- [AudioDriverPlugInOpen](./audiodriverpluginopen.md)
 
 
 ---

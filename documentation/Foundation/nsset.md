@@ -72,6 +72,14 @@ If the behavior you want to add supplements that of the existing class, you coul
   Returns a new set formed by adding the objects in a given set to the receiving set.
 - [func addingObjects(from: [Any]) -> Set<AnyHashable>](./nsset/addingobjects%28from%29-544m9.md)
   Returns a new set formed by adding the objects in a given array to the receiving set.
+- [+ set](./nsset/set.md)
+  Creates and returns an empty set.
+- [+ setWithArray:](./nsset/setwitharray_.md)
+  Creates and returns a set containing a uniqued collection of the objects contained in a given array.
+- [+ setWithObjects:](./nsset/setwithobjects_.md)
+  Creates and returns a set containing the objects in a given argument list.
+- [+ setWithSet:](./nsset/setwithset_.md)
+  Creates and returns a set containing the objects from another set.
 ### Initializing a Set
 - [convenience init(array: [Any])](./nsset/init%28array%29.md)
   Initializes a newly allocated set with the objects that are contained in a given array.
@@ -83,6 +91,8 @@ If the behavior you want to add supplements that of the existing class, you coul
   Initializes a newly allocated set and adds to it members of another given set.
 - [init()](./nsset/init%28%29.md)
   Initializes a newly allocated set.
+- [- initWithObjects:](./nsset/initwithobjects_.md)
+  Initializes a newly allocated set with members taken from the specified list of objects.
 ### Counting Entries
 - [var count: Int](./nsset/count.md)
   The number of members in the set.
@@ -107,6 +117,10 @@ If the behavior you want to add supplements that of the existing class, you coul
   Returns a set of objects that pass a test in a given block.
 - [func objects(options: NSEnumerationOptions, passingTest: (Any, UnsafeMutablePointer<ObjCBool>) -> Bool) -> Set<AnyHashable>](./nsset/objects%28options,passingtest%29.md)
   Returns a set of objects that pass a test in a given block, using the specified enumeration options.
+- [- makeObjectsPerformSelector:](./nsset/makeobjectsperformselector_.md)
+  Sends a message specified by a given selector to each object in the set.
+- [- makeObjectsPerformSelector:withObject:](./nsset/makeobjectsperformselector_withobject_.md)
+  Sends a message specified by a given selector to each object in the set.
 ### Comparing Sets
 - [func isSubset(of: Set<AnyHashable>) -> Bool](./nsset/issubset%28of%29.md)
   Returns a Boolean value that indicates whether every object in the receiving set is also present in another given set.
@@ -168,6 +182,20 @@ If the behavior you want to add supplements that of the existing class, you coul
 - [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 - [NSSecureCoding](./nssecurecoding.md)
 - [Sequence](../Swift/sequence.md)
+
+## See Also
+
+### Basic Collections
+- [NSArray](./nsarray.md)
+  A static ordered collection of objects.
+- [NSMutableArray](./nsmutablearray.md)
+  A dynamic ordered collection of objects.
+- [NSDictionary](./nsdictionary.md)
+  A static collection of objects associated with unique keys.
+- [NSMutableDictionary](./nsmutabledictionary.md)
+  A dynamic collection of objects associated with unique keys.
+- [NSMutableSet](./nsmutableset.md)
+  A dynamic unordered collection of unique objects.
 
 
 ---

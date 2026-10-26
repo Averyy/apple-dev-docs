@@ -116,10 +116,16 @@ SceneKit combines a high-performance rendering engine with a descriptive API for
   SceneKit-specific vectors, matrices, and related functions and operations.
 ### Macros
 - [Macros](./scenekit-macros.md)
+- [SCNCullBack](./scncullback.md)
+  The mode for culling back-facing polygons (and rendering only front-facing polygons).
+- [SCNCullFront](./scncullfront.md)
+  The mode for culling front-facing polygons (and rendering only back-facing polygons).
 ### Reference
 - [SceneKit Enumerations](./scenekit-enumerations.md)
 - [SceneKit Constants](./scenekit-constants.md)
   Constants used throughout the SceneKit framework.
+### Variables
+- [SCNHitTestOptionIgnoreLightArea](./scnhittestoption/ignorelightarea.md)
 
 
 ---

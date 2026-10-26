@@ -63,6 +63,8 @@ func setObject(_ obj: Any, at idx: Int)
   Replaces the objects in the receiving mutable ordered set at the range with the specified number of objects from a given C array.
 - [func moveObjects(at: IndexSet, to: Int)](./moveobjects%28at,to%29.md)
   Moves the objects at the specified indexes to the new location.
+- [- setObject:atIndexedSubscript:](./setobject_atindexedsubscript_.md)
+  Replaces the given object at the specified index of the mutable ordered set.
 
 
 ---

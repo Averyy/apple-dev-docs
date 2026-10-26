@@ -30,7 +30,7 @@ func canHandle(_ adjustmentData: PHAdjustmentData) -> Bool
 
 #### Discussion
 
-When an asset is edited, Photos stores a [`PHAdjustmentData`](https://developer.apple.com/documentation/photos/phadjustmentdata) object that is provided by the app (or by the extension) that edited the asset. This object provides whatever information is necessary to reconstruct the edited asset using the previous version of the asset’s content. When a user attempts to edit an asset with your extension, Photos calls this block to learn whether your extension can handle the asset’s past adjustments.
+When an asset is edited, Photos stores a [`PHAdjustmentData`](../../Photos/phadjustmentdata.md) object that is provided by the app (or by the extension) that edited the asset. This object provides whatever information is necessary to reconstruct the edited asset using the previous version of the asset’s content. When a user attempts to edit an asset with your extension, Photos calls this block to learn whether your extension can handle the asset’s past adjustments.
 
 If you return `true` from this method, Photos provides the previous asset version for editing. Your extension uses the adjustment data to alter, add to, or reapply the last edit. (For example, an adjustment data may describe filters applied to a photo. Your extension reapplies those filters and allows the user to change filter parameters, add new filters, or remove filters.)
 
@@ -40,7 +40,7 @@ For more information, see `Working with Asset Versions and Adjustments`.
 
 ## Parameters
 
-- `adjustmentData`: Use this object to determine whether your extension can work with past edits made to the asset. Typically, you make this decision based on the adjustment data’s [`formatIdentifier`](https://developer.apple.com/documentation/photos/phadjustmentdata/formatidentifier) and [`formatVersion`](https://developer.apple.com/documentation/photos/phadjustmentdata/formatversion) properties.
+- `adjustmentData`: Use this object to determine whether your extension can work with past edits made to the asset. Typically, you make this decision based on the adjustment data’s [`formatIdentifier`](../../Photos/phadjustmentdata/formatidentifier.md) and [`formatVersion`](../../Photos/phadjustmentdata/formatversion.md) properties.
 
 
 ---

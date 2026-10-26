@@ -57,6 +57,10 @@ It is more efficient to use the fast enumeration protocol (see [`NSFastEnumerati
   Returns an array containing the objects in the array at the indexes specified by a given index set.
 - [func objectEnumerator() -> NSEnumerator](./objectenumerator%28%29.md)
   Returns an enumerator object that lets you access each object in the array.
+- [- getObjects:](./getobjects_.md)
+  Copies all the objects contained in the array to `aBuffer`.
+- [- getObjects:range:](./getobjects_range_.md)
+  Copies references to objects contained in the array that fall within the specified range to `aBuffer`.
 
 
 ---

@@ -42,6 +42,10 @@ var extendedLanguageTag: String? { get set }
   The frame rate of the track in frames per second, as a 32-bit floating point number.
 - [var requiresFrameReordering: Bool](./requiresframereordering.md)
   A Boolean value that indicates whether frame reordering occurs in the track.
+- [formatDescriptions](./formatdescriptions.md)
+  An array of format descriptions for the track.
+- [trackEdits](./trackedits.md)
+  An array of edit segments for the given track.
 
 
 ---

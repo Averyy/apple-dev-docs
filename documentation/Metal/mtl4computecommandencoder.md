@@ -102,6 +102,10 @@ For more information about stages and synchronization, see [`MTLStages`](./mtlst
 ### Encoding buffer-to-texture copy commands
 - [func copy(sourceBuffer: any MTLBuffer, sourceOffset: Int, sourceBytesPerRow: Int, sourceBytesPerImage: Int, sourceSize: MTLSize, destinationTexture: any MTLTexture, destinationSlice: Int, destinationLevel: Int, destinationOrigin: MTLOrigin, options: MTLBlitOption)](./mtl4computecommandencoder/copy%28sourcebuffer,sourceoffset,sourcebytesperrow,sourcebytesperimage,sourcesize,destinationtexture,destinationslice,destinationlevel,destinationorigin,options%29.md)
   Encodes a command to copy image data from a buffer into a texture with options for special texture formats.
+- [- copyFromBuffer:sourceOffset:sourceBytesPerRow:sourceBytesPerImage:sourceSize:toTexture:destinationSlice:destinationLevel:destinationOrigin:](./mtl4computecommandencoder/copyfrombuffer_sourceoffset_sourcebytesperrow_sourcebytesperimage_sourcesize_totexture_destinationslice_destinationlevel_destinationorigin_.md)
+  Encodes a command to copy image data from a buffer instance into a texture.
+- [- copyFromBuffer:sourceOffset:sourceBytesPerRow:sourceBytesPerImage:sourceSize:toTexture:destinationSlice:destinationLevel:destinationOrigin:options:](./mtl4computecommandencoder/copyfrombuffer_sourceoffset_sourcebytesperrow_sourcebytesperimage_sourcesize_totexture_destinationslice_destinationlevel_destinationorigin_options_.md)
+  Encodes a command to copy image data from a buffer into a texture with options for special texture formats.
 ### Encoding texture copy commands
 - [func copy(sourceTensor: any MTLTensor, sourceOrigin: MTLTensorExtents, sourceDimensions: MTLTensorExtents, destinationTensor: any MTLTensor, destinationOrigin: MTLTensorExtents, destinationDimensions: MTLTensorExtents)](./mtl4computecommandencoder/copy%28sourcetensor,sourceorigin,sourcedimensions,destinationtensor,destinationorigin,destinationdimensions%29.md)
   Encodes a command to copy data from a slice of the data plane of a tensor into a slice of the data plane of another tensor.
@@ -114,11 +118,19 @@ For more information about stages and synchronization, see [`MTLStages`](./mtlst
 ### Encoding texture-to-buffer copy commands
 - [func copy(sourceTexture: any MTLTexture, sourceSlice: Int, sourceLevel: Int, sourceOrigin: MTLOrigin, sourceSize: MTLSize, destinationBuffer: any MTLBuffer, destinationOffset: Int, destinationBytesPerRow: Int, destinationBytesPerImage: Int, options: MTLBlitOption)](./mtl4computecommandencoder/copy%28sourcetexture,sourceslice,sourcelevel,sourceorigin,sourcesize,destinationbuffer,destinationoffset,destinationbytesperrow,destinationbytesperimage,options%29.md)
   Encodes a command that copies image data from a slice of a texture instance to a buffer, with options for special texture formats.
+- [- copyFromTexture:sourceSlice:sourceLevel:sourceOrigin:sourceSize:toBuffer:destinationOffset:destinationBytesPerRow:destinationBytesPerImage:](./mtl4computecommandencoder/copyfromtexture_sourceslice_sourcelevel_sourceorigin_sourcesize_tobuffer_destinationoffset_destinationbytesperrow_destinationbytesperimage_.md)
+  Encodes a command that copies image data from a slice of an [`MTLTexture`](./mtltexture.md) instance to an [`MTLBuffer`](./mtlbuffer.md) instance.
+- [- copyFromTexture:sourceSlice:sourceLevel:sourceOrigin:sourceSize:toBuffer:destinationOffset:destinationBytesPerRow:destinationBytesPerImage:options:](./mtl4computecommandencoder/copyfromtexture_sourceslice_sourcelevel_sourceorigin_sourcesize_tobuffer_destinationoffset_destinationbytesperrow_destinationbytesperimage_options_.md)
+  Encodes a command that copies image data from a slice of a texture instance to a buffer, with options for special texture formats.
 ### Encoding indirect command buffer copy commands
 - [func copyCommands(sourceBuffer: any MTLIndirectCommandBuffer, sourceRange: Range<Int>, destinationBuffer: any MTLIndirectCommandBuffer, destinationIndex: Int)](./mtl4computecommandencoder/copycommands%28sourcebuffer,sourcerange,destinationbuffer,destinationindex%29.md)
   Encodes a command that copies commands from one indirect command buffer into another.
+- [- copyIndirectCommandBuffer:sourceRange:destination:destinationIndex:](./mtl4computecommandencoder/copyindirectcommandbuffer_sourcerange_destination_destinationindex_.md)
+  Encodes a command that copies commands from an indirect command buffer into another.
 ### Encoding buffer fill commands
 - [func fill(buffer: any MTLBuffer, range: Range<Int>, value: UInt8)](./mtl4computecommandencoder/fill%28buffer,range,value%29.md)
+  Encodes a command that fills a buffer with a constant value for each byte.
+- [- fillBuffer:range:value:](./mtl4computecommandencoder/fillbuffer_range_value_.md)
   Encodes a command that fills a buffer with a constant value for each byte.
 ### Encoding mipmap generation commands
 - [func generateMipmaps(texture: any MTLTexture)](./mtl4computecommandencoder/generatemipmaps%28texture%29.md)
@@ -134,8 +146,12 @@ For more information about stages and synchronization, see [`MTLStages`](./mtlst
   Encodes a command that modifies the contents of a texture to improve the performance of GPU accesses to its contents.
 - [func optimizeContents(forGPUAccess: any MTLTexture, slice: Int, level: Int)](./mtl4computecommandencoder/optimizecontents%28forgpuaccess,slice,level%29.md)
   Encodes a command that modifies the contents of a texture instance to improve the performance of GPU accesses to its contents in a specific region.
+- [- optimizeIndirectCommandBuffer:withRange:](./mtl4computecommandencoder/optimizeindirectcommandbuffer_withrange_.md)
+  Encode a command to attempt to improve the performance of a range of commands within an indirect command buffer.
 ### Encoding reset commands
 - [func resetCommands(buffer: any MTLIndirectCommandBuffer, range: Range<Int>)](./mtl4computecommandencoder/resetcommands%28buffer,range%29.md)
+  Encodes a command that resets a range of commands in an indirect command buffer.
+- [- resetCommandsInBuffer:withRange:](./mtl4computecommandencoder/resetcommandsinbuffer_withrange_.md)
   Encodes a command that resets a range of commands in an indirect command buffer.
 ### Encoding acceleration structure build commands
 - [func build(destinationAccelerationStructure: any MTLAccelerationStructure, descriptor: MTL4AccelerationStructureDescriptor, scratchBuffer: MTL4BufferRange)](./mtl4computecommandencoder/build%28destinationaccelerationstructure,descriptor,scratchbuffer%29.md)
@@ -150,11 +166,15 @@ For more information about stages and synchronization, see [`MTLStages`](./mtlst
 ### Encoding acceleration structure refit commands
 - [func refit(sourceAccelerationStructure: any MTLAccelerationStructure, descriptor: MTL4AccelerationStructureDescriptor, destinationAccelerationStructure: (any MTLAccelerationStructure)?, scratchBuffer: MTL4BufferRange, options: MTLAccelerationStructureRefitOptions)](./mtl4computecommandencoder/refit%28sourceaccelerationstructure,descriptor,destinationaccelerationstructure,scratchbuffer,options%29.md)
   Encodes an acceleration structure refit operation into the command buffer, providing additional options.
+- [- refitAccelerationStructure:descriptor:destination:scratchBuffer:](./mtl4computecommandencoder/refitaccelerationstructure_descriptor_destination_scratchbuffer_.md)
+  Encodes an acceleration structure refit into the command buffer.
 ### Encoding indirect command buffers
 - [func executeCommands(buffer: any MTLIndirectCommandBuffer, range: Range<Int>)](./mtl4computecommandencoder/executecommands%28buffer,range%29.md)
   Encodes a command to execute commands from an indirect command buffer.
 - [func executeCommands(buffer: any MTLIndirectCommandBuffer, indirectBuffer: MTLGPUAddress)](./mtl4computecommandencoder/executecommands%28buffer,indirectbuffer%29.md)
   Encodes an instruction to execute commands from an indirect command buffer, using an indirect buffer for arguments.
+- [- executeCommandsInBuffer:withRange:](./mtl4computecommandencoder/executecommandsinbuffer_withrange_.md)
+  Encodes a command to execute a series of commands from an indirect command buffer.
 ### Encoding performance measurement commands
 - [func writeTimestamp(granularity: MTL4TimestampGranularity, counterHeap: any MTL4CounterHeap, index: Int)](./mtl4computecommandencoder/writetimestamp%28granularity,counterheap,index%29.md)
   Writes a GPU timestamp into a heap.

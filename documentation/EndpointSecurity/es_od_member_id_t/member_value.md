@@ -18,6 +18,12 @@ var member_value: es_od_member_id_t.__Unnamed_union_member_value
 union { ... } member_value;
 ```
 
+## Topics
+
+### Instance Properties
+- [name](./member_value/name.md)
+- [uuid](./member_value/uuid.md)
+
 
 ---
 

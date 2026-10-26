@@ -34,6 +34,9 @@ Your implementation of this property must be key-value observing (KVO) compliant
 
 ### Related Documentation
 - [Location and Maps Programming Guide](https://developer.apple.com/library/archive/documentation/UserExperience/Conceptual/LocationAwarenessPG/Introduction/Introduction.html#//apple_ref/doc/uid/TP40009497)
+### Position attributes
+- [- setCoordinate:](./setcoordinate_.md)
+  Sets the new center point of the annotation.
 
 
 ---

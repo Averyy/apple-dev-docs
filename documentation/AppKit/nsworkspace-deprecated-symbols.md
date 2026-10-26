@@ -73,6 +73,26 @@ Note that these constants are considered legacy.
   Returns a Boolean indicating that the first Uniform Type Identifier (UTI) conforms to the second UTI.
 - [func getInfoForFile(String, application: AutoreleasingUnsafeMutablePointer<NSString?>?, type: AutoreleasingUnsafeMutablePointer<NSString?>?) -> Bool](./nsworkspace/getinfoforfile%28_,application,type%29.md)
   Retrieves information about the specified file.
+- [- openTempFile:](./nsworkspace/opentempfile_.md)
+  Opens the specified temporary file using the default app for its type.
+- [- findApplications](./nsworkspace/findapplications.md)
+  Examines all apps and updates the records of registered services and file types.
+- [- noteUserDefaultsChanged](./nsworkspace/noteuserdefaultschanged.md)
+  Informs the `NSWorkspace` object that the defaults database has changed.
+- [- slideImage:from:to:](./nsworkspace/slideimage_from_to_.md)
+  Animates a sliding image from one point to another.
+- [- checkForRemovableMedia](./nsworkspace/checkforremovablemedia.md)
+  Polls the system’s drives for any disks that have been inserted but not yet mounted.
+- [- noteFileSystemChanged](./nsworkspace/notefilesystemchanged.md)
+  Informs the `NSWorkspace` object that the file system has changed.
+- [- fileSystemChanged](./nsworkspace/filesystemchanged.md)
+  Returns a Boolean value indicating whether a change to the file system has been registered with a [`noteFileSystemChanged`](./nsworkspace/notefilesystemchanged.md) message since the last [`fileSystemChanged`](./nsworkspace/filesystemchanged.md) message.
+- [- userDefaultsChanged](./nsworkspace/userdefaultschanged.md)
+  Returns a Boolean value indicating whether a change to the defaults database has been registered with a [`noteUserDefaultsChanged`](./nsworkspace/noteuserdefaultschanged.md) message since the last [`userDefaultsChanged`](./nsworkspace/userdefaultschanged.md) message.
+- [- mountNewRemovableMedia](./nsworkspace/mountnewremovablemedia.md)
+  Returns the full pathnames of any newly mounted disks.
+- [- launchedApplications](./nsworkspace/launchedapplications.md)
+  Returns an array of dictionaries, one entry for each running app.
 ### Deprecated types
 - [NSWorkspace.LaunchOptions](./nsworkspace/launchoptions.md)
   Constants specifying how you want to launch an app
@@ -83,6 +103,16 @@ Note that these constants are considered legacy.
 ### Deprecated constants
 - [class let applicationUserInfoKey: String](./nsworkspace/applicationuserinfokey.md)
   The value corresponding to this key is an instance of [`NSRunningApplication`](./nsrunningapplication.md) that reflects the affected app.
+- [NSPlainFileType](./nsplainfiletype.md)
+  Plain (untyped) file.
+- [NSDirectoryFileType](./nsdirectoryfiletype.md)
+  Directory.
+- [NSApplicationFileType](./nsapplicationfiletype.md)
+  Cocoa app.
+- [NSFilesystemFileType](./nsfilesystemfiletype.md)
+  File-system mount point.
+- [NSShellCommandFileType](./nsshellcommandfiletype.md)
+  Executable shell command.
 ### Deprecated notifications
 - [class let didPerformFileOperationNotification: NSNotification.Name](./nsworkspace/didperformfileoperationnotification.md)
   Posted when a file operation has been performed in the receiving app.

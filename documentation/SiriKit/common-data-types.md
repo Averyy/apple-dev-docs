@@ -8,41 +8,41 @@ Manage common data types such as strings, dates, currencies, images, and contact
 ## Topics
 
 ### Contacts
-- [class INPerson](https://developer.apple.com/documentation/intents/inperson)
+- [class INPerson](../Intents/inperson.md)
   Information about a person participating in a SiriKit interaction.
-- [class INPersonHandle](https://developer.apple.com/documentation/intents/inpersonhandle)
+- [class INPersonHandle](../Intents/inpersonhandle.md)
   The identifying information for a user of your app.
-- [struct INPersonHandleLabel](https://developer.apple.com/documentation/intents/inpersonhandlelabel)
+- [struct INPersonHandleLabel](../Intents/inpersonhandlelabel.md)
   Constants describing how the person handle relates to the user.
 ### Images
-- [class INImage](https://developer.apple.com/documentation/intents/inimage)
+- [class INImage](../Intents/inimage.md)
   Image data inside an Intents extension or Intents UI extension.
 ### String
-- [class INSpeakableString](https://developer.apple.com/documentation/intents/inspeakablestring)
+- [class INSpeakableString](../Intents/inspeakablestring.md)
   A custom phrase to be resolved by an Intents extension.
-- [protocol INSpeakable](https://developer.apple.com/documentation/intents/inspeakable)
+- [protocol INSpeakable](../Intents/inspeakable.md)
   Pronunciation hints for strings used in a spoken interface.
 ### Monetary
-- [class INCurrencyAmount](https://developer.apple.com/documentation/intents/incurrencyamount)
+- [class INCurrencyAmount](../Intents/incurrencyamount.md)
   An amount of money to transfer during a financial transaction.
-- [class INPriceRange](https://developer.apple.com/documentation/intents/inpricerange)
+- [class INPriceRange](../Intents/inpricerange.md)
   Price information, as a range of possible values.
 ### Date
-- [class INDateComponentsRange](https://developer.apple.com/documentation/intents/indatecomponentsrange)
+- [class INDateComponentsRange](../Intents/indatecomponentsrange.md)
   A span of time.
-- [class INRecurrenceRule](https://developer.apple.com/documentation/intents/inrecurrencerule)
+- [class INRecurrenceRule](../Intents/inrecurrencerule.md)
   An object that describes the pattern to use when repeating an event.
 ### Logical
-- [enum INConditionalOperator](https://developer.apple.com/documentation/intents/inconditionaloperator)
+- [enum INConditionalOperator](../Intents/inconditionaloperator.md)
   Constants indicating how search attributes are interpreted.
 ### Files
-- [class INFile](https://developer.apple.com/documentation/intents/infile)
+- [class INFile](../Intents/infile.md)
   An object that describes a file.
 ### Custom Objects
-- [class INObject](https://developer.apple.com/documentation/intents/inobject)
+- [class INObject](../Intents/inobject.md)
   A representation of a custom intent parameter or response property.
-- [class INObjectCollection](https://developer.apple.com/documentation/intents/inobjectcollection)
-- [class INObjectSection](https://developer.apple.com/documentation/intents/inobjectsection)
+- [class INObjectCollection](../Intents/inobjectcollection.md)
+- [class INObjectSection](../Intents/inobjectsection.md)
 
 ## See Also
 
@@ -51,9 +51,9 @@ Manage common data types such as strings, dates, currencies, images, and contact
   Provide SiriKit with an intent handler capable of handling a specific intent.
 - [Resolving and Handling Intents](./resolving-and-handling-intents.md)
   Resolve, confirm, and handle user requests for your app’s services.
-- [class INIntent](https://developer.apple.com/documentation/intents/inintent)
+- [class INIntent](../Intents/inintent.md)
   A request to fulfill in your app or Intents extension.
-- [class INIntentResponse](https://developer.apple.com/documentation/intents/inintentresponse)
+- [class INIntentResponse](../Intents/inintentresponse.md)
   Your response to an intent object.
 - [Intent Handling Infrastructure](./intent-handling-infrastructure.md)
   Specify required permissions and provide handlers for the intents your app supports, and configure app extensions.

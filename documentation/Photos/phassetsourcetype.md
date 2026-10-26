@@ -36,6 +36,8 @@ enum PHAssetSourceType : NSUInteger;
   The asset originates from an iCloud Shared Album.
 - [static var typeiTunesSynced: PHAssetSourceType](./phassetsourcetype/typeitunessynced.md)
   The asset originates from a Mac or PC and is present on the device through iTunes sync.
+- [PHAssetSourceTypeNone](./phassetsourcetype/phassetsourcetypenone.md)
+  Source information is not available for the asset.
 
 ## Relationships
 

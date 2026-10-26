@@ -39,6 +39,8 @@ This method throws an `invalidInput` error if a JPKI applet doesn’t back the p
   A localized description of the pass.
 - [var passThumbnailImage: CGImage?](./passthumbnailimage.md)
   A CGImage object representing the card artwork of the pass you use during provisioning.
+- [+ previewWithPassThumbnail:localizedDescription:](./previewwithpassthumbnail_localizeddescription_.md)
+  Initializes properties you need to preview an object that represents the pass you add to Wallet.
 
 
 ---

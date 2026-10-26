@@ -9,6 +9,9 @@ A set of methods you use to tell the Font panel to display some or all of its el
 ### Constants
 - [Mode Masks](./mode-masks.md)
   Constants that represent the available font panel mode masks.
+### Validating Modes for a Font Panel
+- [- validModesForFontPanel:](../ObjectiveC/nsobject-swift.class/validmodesforfontpanel_.md)
+  Returns the mode mask corresponding to the expected font panel mode.
 
 ## See Also
 

@@ -26,6 +26,8 @@ enum NSTableColumnResizingOptions : NSUInteger;
   Allows the table column to resize automatically in response to resizing the table view. The resizing behavior for the table view is set using the `NSTableView` method [`columnAutoresizingStyle`](../nstableview/columnautoresizingstyle-swift.property.md).
 - [static var userResizingMask: NSTableColumn.ResizingOptions](./resizingoptions/userresizingmask.md)
   Allows the table column to be resized by the user.
+- [NSTableColumnNoResizing](../nstablecolumnresizingoptions/nstablecolumnnoresizing.md)
+  Prevents the table column from resizing.
 
 ## Relationships
 

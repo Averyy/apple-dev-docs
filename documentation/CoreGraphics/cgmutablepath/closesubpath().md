@@ -60,6 +60,32 @@ After closing the subpath, your application can begin a new subpath without firs
   Adds a quadratic Bézier curve to the path, with the specified end point and control point.
 - [func addPath(CGPath, transform: CGAffineTransform)](./addpath%28_,transform%29.md)
   Appends another path object to the path.
+- [CGPathMoveToPoint](../cgpathmovetopoint.md)
+  Starts a new subpath at a specified location in a mutable graphics path.
+- [CGPathAddLineToPoint](../cgpathaddlinetopoint.md)
+  Appends a line segment to a mutable graphics path.
+- [CGPathAddLines](../cgpathaddlines.md)
+  Appends an array of new line segments to a mutable graphics path.
+- [CGPathAddRect](../cgpathaddrect.md)
+  Appends a rectangle to a mutable graphics path.
+- [CGPathAddRects](../cgpathaddrects.md)
+  Appends an array of rectangles to a mutable graphics path.
+- [CGPathAddEllipseInRect](../cgpathaddellipseinrect.md)
+  Adds to a path an ellipse that fits inside a rectangle.
+- [CGPathAddRoundedRect](../cgpathaddroundedrect.md)
+  Appends a rounded rectangle to a mutable graphics path.
+- [CGPathAddArc](../cgpathaddarc.md)
+  Appends an arc to a mutable graphics path, possibly preceded by a straight line segment.
+- [CGPathAddArcToPoint](../cgpathaddarctopoint.md)
+  Appends an arc to a mutable graphics path, possibly preceded by a straight line segment.
+- [CGPathAddRelativeArc](../cgpathaddrelativearc.md)
+  Appends an arc to a mutable graphics path, possibly preceded by a straight line segment.
+- [CGPathAddCurveToPoint](../cgpathaddcurvetopoint.md)
+  Appends a cubic Bézier curve to a mutable graphics path.
+- [CGPathAddQuadCurveToPoint](../cgpathaddquadcurvetopoint.md)
+  Appends a quadratic Bézier curve to a mutable graphics path.
+- [CGPathAddPath](../cgpathaddpath.md)
+  Appends a path to onto a mutable graphics path.
 
 
 ---

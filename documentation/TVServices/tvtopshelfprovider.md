@@ -37,6 +37,8 @@ You adopt this protocol in the principal class of your app’s TV Services exten
 ### Notifying the System of Changes
 - [static let TVTopShelfItemsDidChange: NSNotification.Name](../Foundation/nsnotification/name-swift.struct/tvtopshelfitemsdidchange.md)
   A notification to post when your app’s Top Shelf content has changed.
+- [TVTopShelfItemsDidChangeNotification](./tvtopshelfitemsdidchangenotification.md)
+  A notification to post when your app’s Top Shelf content has changed.
 
 
 ---

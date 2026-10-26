@@ -14,6 +14,8 @@ Use the [`AVPlaybackUserInterfaceControllable`](./avplaybackuserinterfacecontrol
 ### Complete control interface
 - [protocol AVPlaybackUserInterfaceControllable](./avplaybackuserinterfacecontrollable-92fri.md)
   A comprehensive protocol that provides complete media control and information for playback, timeline navigation, audio/subtitle selection, volume control, and metadata access.
+- [AVPlaybackUserInterfaceControllable](./avplaybackuserinterfacecontrollable-7ti30.md)
+  A comprehensive protocol that provides complete media control and information for playback, timeline navigation, audio/subtitle selection, volume control, and metadata access.
 ### Playback control
 - [protocol AVPlaybackUserInterfacePlaybackControllable](./avplaybackuserinterfaceplaybackcontrollable-9he54.md)
   Provides playback control and state management for media content.
@@ -21,6 +23,8 @@ Use the [`AVPlaybackUserInterfaceControllable`](./avplaybackuserinterfacecontrol
   Describes possible transport states of the playback source.
 - [struct AVPlaybackUserInterfaceSeekCapabilities](./avplaybackuserinterfaceseekcapabilities.md)
   Describes navigation capabilities of the media source.
+- [AVPlaybackUserInterfacePlaybackControllable](./avplaybackuserinterfaceplaybackcontrollable-81n66.md)
+  Provides playback control and state management for media content.
 ### Timeline and segments
 - [protocol AVPlaybackUserInterfaceTimeControllable](./avplaybackuserinterfacetimecontrollable-50vcy.md)
   Provides time control and navigation capabilities for media content.
@@ -30,13 +34,19 @@ Use the [`AVPlaybackUserInterfaceControllable`](./avplaybackuserinterfacecontrol
   Represents a contiguous segment of timeline content with specific playback characteristics.
 - [enum AVPlaybackUserInterfaceTimelineSegmentType](./avplaybackuserinterfacetimelinesegmenttype.md)
   Describes the type of content within a timeline segment.
+- [AVPlaybackUserInterfaceTimeControllable](./avplaybackuserinterfacetimecontrollable-62fq2.md)
+  Provides time control and navigation capabilities for media content.
 ### Media selection
 - [protocol AVPlaybackUserInterfaceMediaSelectionControllable](./avplaybackuserinterfacemediaselectioncontrollable-8ee5z.md)
   Provides audio and subtitle selection capabilities for media content.
 - [class AVPlaybackUserInterfaceMediaSelectionOption](./avplaybackuserinterfacemediaselectionoption.md)
   Represents a media selection option for audio tracks or subtitle tracks.
+- [AVPlaybackUserInterfaceMediaSelectionControllable](./avplaybackuserinterfacemediaselectioncontrollable-2fftn.md)
+  Provides audio and subtitle selection capabilities for media content.
 ### Volume control
 - [protocol AVPlaybackUserInterfaceVolumeControllable](./avplaybackuserinterfacevolumecontrollable-4vgi1.md)
+  Provides volume and audio muting control for media content.
+- [AVPlaybackUserInterfaceVolumeControllable](./avplaybackuserinterfacevolumecontrollable-5ystg.md)
   Provides volume and audio muting control for media content.
 ### Content metadata
 - [protocol AVPlaybackUserInterfaceMetadataProviding](./avplaybackuserinterfacemetadataproviding-814y4.md)
@@ -47,6 +57,14 @@ Use the [`AVPlaybackUserInterfaceControllable`](./avplaybackuserinterfacecontrol
   Base class representing artwork or cover art for media content.
 - [class AVPlaybackUserInterfaceContentURLArtwork](./avplaybackuserinterfacecontenturlartwork.md)
   An artwork subclass that references artwork via a URL and content type.
+- [AVPlaybackUserInterfaceMetadataProviding](./avplaybackuserinterfacemetadataproviding-1w04z.md)
+  Provides metadata information about media content including title, artwork, and content type.
+- [AVPlaybackUserInterfaceContentMetadata](./avplaybackuserinterfacecontentmetadata-c.class.md)
+  Provides metadata information about media content including title, artwork, and content type.
+- [AVPlaybackUserInterfaceContentMetadataTemplate](./avplaybackuserinterfacecontentmetadatatemplate.md)
+  A mutable template for configuring media metadata before creating immutable metadata objects.
+- [AVPlaybackUserInterfaceContentVideoProperties](./avplaybackuserinterfacecontentvideoproperties.md)
+  Properties specific to video content.
 
 
 ---

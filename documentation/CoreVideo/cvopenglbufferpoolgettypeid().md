@@ -36,6 +36,10 @@ The Core Foundation ID for this data type.
   Returns the pool attributes dictionary for an Open GL buffer pool.
 - [func CVOpenGLBufferPoolGetOpenGLBufferAttributes(CVOpenGLBufferPool) -> Unmanaged<CFDictionary>?](./cvopenglbufferpoolgetopenglbufferattributes%28_%29.md)
   Returns the attributes of OpenGL buffers that will be created from a buffer pool.
+- [CVOpenGLBufferPoolRetain](./cvopenglbufferpoolretain.md)
+  Retains an OpenGL buffer pool.
+- [CVOpenGLBufferPoolRelease](./cvopenglbufferpoolrelease.md)
+  Releases an OpenGL buffer pool.
 
 
 ---

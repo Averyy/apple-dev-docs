@@ -32,6 +32,12 @@ An initialized CIFilterShape object, or `nil` if the method fails.
 
 - `r`: A rectangle. Core Image uses the rectangle specified by integer parts of the values in the `CGRect` data structure.
 
+## See Also
+
+### Related Documentation
+- [+ shapeWithRect:](./shapewithrect_.md)
+  Creates a filter shape object and initializes it with a rectangle.
+
 
 ---
 

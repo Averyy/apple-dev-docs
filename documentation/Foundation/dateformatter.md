@@ -210,6 +210,8 @@ On earlier versions of the operating system, or when using the legacy formatter 
   A Boolean value that indicates whether the receiver uses heuristics when parsing a string.
 - [var doesRelativeDateFormatting: Bool](./dateformatter/doesrelativedateformatting.md)
   A Boolean value that indicates whether the receiver uses phrases such as “today” and “tomorrow” for the date component.
+- [- allowsNaturalLanguage](./nsdateformatter/allowsnaturallanguage.md)
+  Returns a Boolean value that indicates whether the receiver attempts to process dates entered as a vernacular string.
 ### Managing AM and PM Symbols
 - [var amSymbol: String!](./dateformatter/amsymbol.md)
   The AM symbol for the receiver.
@@ -258,6 +260,8 @@ On earlier versions of the operating system, or when using the legacy formatter 
 ### Deprecated
 - [var generatesCalendarDates: Bool](./dateformatter/generatescalendardates.md)
   Indicates whether the formatter generates the deprecated calendar date type.
+- [- initWithDateFormat:allowNaturalLanguage:](./nsdateformatter/initwithdateformat_allownaturallanguage_.md)
+  Initializes and returns an `NSDateFormatter` instance that uses the OS X 10.0 formatting behavior and the given date format string in its conversions.
 ### Constants
 - [DateFormatter.Style](./dateformatter/style.md)
   The following constants specify predefined format styles for dates and times.

@@ -53,6 +53,8 @@ Display text, manage fonts, and check spelling.
   Converts a UIKit text alignment constant value to the matching constant value that Core Text uses.
 - [init(CTTextAlignment)](./nstextalignment/init%28_%29.md)
   Converts a Core Text alignment constant value to the matching constant value in UIKit.
+- [NSTextAlignmentToCTTextAlignment](./nstextalignmenttocttextalignment.md)
+  Converts a UIKit text alignment constant value to the matching constant value that Core Text uses.
 ### Metrics
 - [class UITextPosition](./uitextposition.md)
   A position in a text container—that is, an index into the backing string in a text-display view.

@@ -28,6 +28,8 @@ The `SCDynamicStoreKey` programming interface provides convenience functions tha
   Creates a key that can be used to receive notifications when the location identifier changes.
 - [func SCDynamicStoreKeyCreateProxies(CFAllocator?) -> CFString](./scdynamicstorekeycreateproxies%28_%29.md)
   Creates a key that can be used to receive notifications when the current network proxy settings are changed.
+- [SCDynamicStoreKeyCreate](./scdynamicstorekeycreate.md)
+  Creates a dynamic store key using the specified format.
 
 ## See Also
 
@@ -47,6 +49,8 @@ The `SCDynamicStoreKey` programming interface provides convenience functions tha
 - [SystemConfiguration Constants](./systemconfiguration-constants.md)
 - [SystemConfiguration Functions](./systemconfiguration-functions.md)
 - [SystemConfiguration Data Types](./systemconfiguration-data-types.md)
+- [DHCPClientPreferences](./dhcpclientpreferences.md)
+- [SCDynamicStoreCopyDHCPInfo](./scdynamicstorecopydhcpinfo-apicollection.md)
 
 
 ---

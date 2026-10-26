@@ -69,10 +69,16 @@ Alternatively, you can set your content through your own custom subviews using t
 ### Getting a configuration
 - [func defaultContentConfiguration() -> UIListContentConfiguration](./uicollectionviewlistcell/defaultcontentconfiguration%28%29.md)
   Retrieves a default list content configuration for the cell’s style.
+- [- defaultContentConfiguration](./uicollectionviewlistcell/defaultcontentconfiguration.md)
+  Retrieves a default list content configuration for the cell’s style.
 ### Managing cell accessories
 - [var accessories: [UICellAccessory]](./uicollectionviewlistcell/accessories-8nui4.md)
   An array of the accessories that decorate the cell.
 - [struct UICellAccessory](./uicellaccessory-swift.struct.md)
+  An accessory in a collection view list cell.
+- [accessories](./uicollectionviewlistcell/accessories-88j0f.md)
+  An array of the accessories that decorate the cell.
+- [UICellAccessory](./uicellaccessory-c.class.md)
   An accessory in a collection view list cell.
 ### Customizing layout
 - [var indentationLevel: Int](./uicollectionviewlistcell/indentationlevel.md)

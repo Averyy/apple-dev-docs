@@ -28,6 +28,8 @@ func stateDirectoryURL() throws -> URL
   Constants that specify whether a URL is eligible for storing a domain.
 - [protocol NSFileProviderExternalVolumeHandling](../nsfileproviderexternalvolumehandling.md)
   A protocol that defines the interface for handling external volumes.
+- [+ checkDomainsCanBeStored:onVolumeAtURL:unsupportedReason:error:](./checkdomainscanbestored_onvolumeaturl_unsupportedreason_error_.md)
+  Check if a URL is eligible for storing a domain.
 
 
 ---

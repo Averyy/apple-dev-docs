@@ -33,6 +33,12 @@ The local player object.
 
 You never directly create a local player object. Instead, use this method to get the shared instance.
 
+## See Also
+
+### Accessing the Local Player
+- [local](./local-1mzi0.md)
+  The shared instance of the local player.
+
 
 ---
 

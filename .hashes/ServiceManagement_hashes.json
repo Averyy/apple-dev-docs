@@ -95,6 +95,16 @@
       "file_path": "documentation/ServiceManagement/ksmerrortoolnotvalid.md",
       "hash": "b244c6c4dad46a7f1ba80cb287f130a341903b380fa4dbeda89b377dc49456a8"
     },
+    "https://developer.apple.com/documentation/servicemanagement/ksminfokeyauthorizedclients": {
+      "etag": "\"b92-6590299da90fa-df\"",
+      "file_path": "documentation/ServiceManagement/ksminfokeyauthorizedclients.md",
+      "hash": "2ec1e8093e8f3bb6f3e8920bc1d3d5e4ebcb304ef9c8409eb9a9cdbb484bcc55"
+    },
+    "https://developer.apple.com/documentation/servicemanagement/ksminfokeyprivilegedexecutables": {
+      "etag": "\"b8a-6590299da90fa-df\"",
+      "file_path": "documentation/ServiceManagement/ksminfokeyprivilegedexecutables.md",
+      "hash": "8cb239329e52ffd24a0244541dcb5ec338dc02610f0101b9ce64bb2f38e3dcbc"
+    },
     "https://developer.apple.com/documentation/servicemanagement/ksmrightblessprivilegedhelper": {
       "etag": "\"1d75-65dc609fcf194-df\"",
       "file_path": "documentation/ServiceManagement/ksmrightblessprivilegedhelper.md",
@@ -340,6 +350,16 @@
       "file_path": "documentation/ServiceManagement/ksmerrortoolnotvalid.md",
       "hash": "b244c6c4dad46a7f1ba80cb287f130a341903b380fa4dbeda89b377dc49456a8"
     },
+    "https://developer.apple.com/tutorials/data/documentation/servicemanagement/ksminfokeyauthorizedclients.json": {
+      "etag": "\"b92-6590299da90fa-df\"",
+      "file_path": "documentation/ServiceManagement/ksminfokeyauthorizedclients.md",
+      "hash": "2ec1e8093e8f3bb6f3e8920bc1d3d5e4ebcb304ef9c8409eb9a9cdbb484bcc55"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/servicemanagement/ksminfokeyprivilegedexecutables.json": {
+      "etag": "\"b8a-6590299da90fa-df\"",
+      "file_path": "documentation/ServiceManagement/ksminfokeyprivilegedexecutables.md",
+      "hash": "8cb239329e52ffd24a0244541dcb5ec338dc02610f0101b9ce64bb2f38e3dcbc"
+    },
     "https://developer.apple.com/tutorials/data/documentation/servicemanagement/ksmrightblessprivilegedhelper.json": {
       "etag": "\"1d75-65dc609fcf194-df\"",
       "file_path": "documentation/ServiceManagement/ksmrightblessprivilegedhelper.md",
@@ -493,8 +513,8 @@
   },
   "metadata": {
     "render": {
-      "version": 1
+      "version": 2
     },
-    "total_pages": 98
+    "total_pages": 102
   }
 }

@@ -35,6 +35,8 @@ The [`copyStream(withStreamID:)`](./iousbhostpipe/copystream%28withstreamid%29.m
   Aborts pending input/output requests.
 - [func abort() throws](./iousbhoststream/abort%28%29.md)
   Aborts pending input/output requests synchronously.
+- [- sendIORequestWithData:bytesTransferred:error:](./iousbhoststream/sendiorequestwithdata_bytestransferred_error_.md)
+  Sends an input/output request on the stream.
 ### Getting the Pipe Object
 - [var hostPipe: IOUSBHostPipe](./iousbhoststream/hostpipe.md)
   The pipe that creates the stream.

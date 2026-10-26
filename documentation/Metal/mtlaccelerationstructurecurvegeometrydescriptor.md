@@ -65,6 +65,9 @@ class MTLAccelerationStructureCurveGeometryDescriptor
   The number of control points in each curve segment.
 - [var segmentCount: Int](./mtlaccelerationstructurecurvegeometrydescriptor/segmentcount.md)
   The number of curve segments in each curve of the geometry.
+### Type Methods
+- [+ descriptor](./mtlaccelerationstructurecurvegeometrydescriptor/descriptor.md)
+  Creates a curve geometry descriptor.
 
 ## Relationships
 

@@ -38,6 +38,8 @@ For more information, see the [`NSDecimalNumberBehaviors`](./nsdecimalnumberbeha
 ### Creating a Decimal Number Handler
 - [class var `default`: NSDecimalNumberHandler](./nsdecimalnumberhandler/default.md)
   Returns the default instance of `NSDecimalNumberHandler`.
+- [+ decimalNumberHandlerWithRoundingMode:scale:raiseOnExactness:raiseOnOverflow:raiseOnUnderflow:raiseOnDivideByZero:](./nsdecimalnumberhandler/decimalnumberhandlerwithroundingmode_scale_raiseonexactness_raiseonoverflow_raiseonunderflow_raiseondividebyzero_.md)
+  Returns an `NSDecimalNumberHandler` object with customized behavior.
 ### Initializing a decimal number handler
 - [init(roundingMode: NSDecimalNumber.RoundingMode, scale: Int16, raiseOnExactness: Bool, raiseOnOverflow: Bool, raiseOnUnderflow: Bool, raiseOnDivideByZero: Bool)](./nsdecimalnumberhandler/init%28roundingmode,scale,raiseonexactness,raiseonoverflow,raiseonunderflow,raiseondividebyzero%29.md)
   Returns an `NSDecimalNumberHandler` object initialized so it behaves as specified by the method’s arguments.

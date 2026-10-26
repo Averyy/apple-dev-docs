@@ -107,6 +107,8 @@ Return instances of this class from the [`mapView(_:viewFor:)`](./mkmapviewdeleg
   Provides the visual representation for an [`MKPolygon`](./mkpolygon.md) annotation object.
 - [class MKPolylineView](./mkpolylineview.md)
   Provides the visual representation for an [`MKPolyline`](./mkpolyline.md) annotation object.
+- [MKReverseGeocoder](./mkreversegeocoder.md)
+  Provides services for converting a map coordinate (specified as a latitude/longitude pair) into information about that coordinate, such as the country or region, city, or street.
 
 
 ---

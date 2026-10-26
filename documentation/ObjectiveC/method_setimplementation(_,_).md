@@ -52,6 +52,10 @@ The previous implementation of the method.
   Returns a method description structure for a specified method.
 - [func method_exchangeImplementations(Method, Method)](./method_exchangeimplementations%28_,_%29.md)
   Exchanges the implementations of two methods.
+- [method_invoke](./method_invoke.md)
+  Calls the implementation of a specified method.
+- [method_invoke_stret](./method_invoke_stret.md)
+  Calls the implementation of a specified method that returns a data-structure.
 
 
 ---

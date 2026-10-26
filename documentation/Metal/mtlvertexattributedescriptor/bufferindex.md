@@ -29,6 +29,8 @@ var bufferIndex: Int { get set }
 ### Related Documentation
 - [func setVertexBuffer((any MTLBuffer)?, offset: Int, index: Int)](../mtlrendercommandencoder/setvertexbuffer%28_,offset,index%29.md)
   Assigns a buffer to an entry in the vertex shader argument table.
+- [- setVertexBuffers:offsets:withRange:](../mtlrendercommandencoder/setvertexbuffers_offsets_withrange_.md)
+  Assigns multiple buffers to a range of entries in the vertex shader argument table.
 ### Organizing the vertex attribute
 - [var format: MTLVertexFormat](./format.md)
   The format of the vertex attribute.

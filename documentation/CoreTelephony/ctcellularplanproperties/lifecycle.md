@@ -58,6 +58,8 @@ This type contains lifecycle details for a time-limited cellular plan, including
   The available regions that your eSIM supports.
 - [var lifecycleProperties: CTCellularPlanProperties.lifecycle?](./lifecycleproperties.md)
   The lifecycle details for a time-limited cellular plan.
+- [supportedRegionCodes](./supportedregioncodes-5elox.md)
+  The available regions that your eSIM supports.
 
 
 ---

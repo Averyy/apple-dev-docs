@@ -58,6 +58,8 @@ Set to 0 (zero) to hide the badge number. The default value of this property is 
   The current style of the status bar.
 - [var windows: [UIWindow]](./windows.md)
   The app’s visible and hidden windows.
+- [proximitySensingEnabled](./proximitysensingenabled.md)
+  A Boolean value that determines whether proximity sensing is enabled.
 
 
 ---

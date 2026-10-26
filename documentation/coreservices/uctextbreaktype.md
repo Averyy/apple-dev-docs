@@ -30,6 +30,13 @@ typedef UInt32 UCTextBreakType;
   If the bit specified by this mask is set, boundaries of words may be located. This can be used to determine what to highlight as the result of a double-click.
 - [var kUCTextBreakLineMask: Int](./kuctextbreaklinemask.md)
   If the bit specified by this mask is set, potential line breaks may be located.
+- [kUCTextBreakCharMask](./api-1390433-anonymous/kuctextbreakcharmask.md)
+  If the bit specified by this mask is set, boundaries of characters may be located (with surrogate pairs treated as a single character).
+- [kUCTextBreakClusterMask](./api-1390433-anonymous/kuctextbreakclustermask.md)
+- [kUCTextBreakWordMask](./api-1390433-anonymous/kuctextbreakwordmask.md)
+  If the bit specified by this mask is set, boundaries of words may be located. This can be used to determine what to highlight as the result of a double-click.
+- [kUCTextBreakLineMask](./api-1390433-anonymous/kuctextbreaklinemask.md)
+  If the bit specified by this mask is set, potential line breaks may be located.
 
 
 ---

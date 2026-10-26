@@ -62,6 +62,8 @@ Running a session requires a configuration. Subclasses of [`ARConfiguration`](./
   An object that defines motion and scene tracking behaviors for the session.
 - [func pause()](./arsession/pause%28%29.md)
   Pauses processing in the session.
+- [- runWithConfiguration:](./arsession/runwithconfiguration_.md)
+  Starts AR processing for the session with the specified configuration.
 ### Responding to events
 - [var delegate: (any ARSessionDelegate)?](./arsession/delegate.md)
   An object you provide to receive captured video images and tracking information, or to respond to changes in session status.
@@ -114,6 +116,8 @@ Running a session requires a configuration. Subclasses of [`ARConfiguration`](./
 - [var viewLayer: CALayer?](./arsession/viewlayer.md)
   The layer that displays the `ARFrame`, required before `viewRotationAngle` becomes available.
 - [var viewRotationAngle: CGFloat?](./arsession/viewrotationangle-8847g.md)
+  The angle, in degrees, to rotate a view by so the `ARFrame` it displays stays level with the horizon as the device rotates.
+- [viewRotationAngle](./arsession/viewrotationangle-dmff.md)
   The angle, in degrees, to rotate a view by so the `ARFrame` it displays stays level with the horizon as the device rotates.
 ### Instance Methods
 - [func captureHighResolutionFrame(using: AVCapturePhotoSettings?, completion: (ARFrame?, (any Error)?) -> Void)](./arsession/capturehighresolutionframe%28using,completion%29.md)

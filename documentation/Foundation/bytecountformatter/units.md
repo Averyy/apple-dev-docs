@@ -48,6 +48,8 @@ enum NSByteCountFormatterUnits : NSUInteger;
   Displays yottabytes in the formatter content.
 - [static var useAll: ByteCountFormatter.Units](./units/useall.md)
   Can use any unit in the formatter content.
+- [NSByteCountFormatterUseDefault](../nsbytecountformatterunits/nsbytecountformatterusedefault.md)
+  This causes default units appropriate for the platform to be used. This is the default.
 ### Initializers
 - [init(rawValue: UInt)](./units/init%28rawvalue%29.md)
 

@@ -114,6 +114,9 @@ A mesh contains one or more [`MDLSubmesh`](./mdlsubmesh.md) objects. Each submes
 - [func addOrthTanBasis(forTextureCoordinateAttributeNamed: String, normalAttributeNamed: String, tangentAttributeNamed: String)](./mdlmesh/addorthtanbasis%28fortexturecoordinateattributenamed,normalattributenamed,tangentattributenamed%29.md)
 - [func flipTextureCoordinates(inAttributeNamed: String)](./mdlmesh/fliptexturecoordinates%28inattributenamed%29.md)
 - [func makeVerticesUniqueAndReturnError() throws](./mdlmesh/makeverticesuniqueandreturnerror%28%29.md)
+### Type Methods
+- [+ meshWithSCNGeometry:](./mdlmesh/meshwithscngeometry_.md)
+- [+ meshWithSCNGeometry:bufferAllocator:](./mdlmesh/meshwithscngeometry_bufferallocator_.md)
 
 ## Relationships
 

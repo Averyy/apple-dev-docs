@@ -8,22 +8,22 @@ Keys identifying information about an image loading result, used in the `resultH
 ## Topics
 
 ### Constants
-- [let PHImageResultIsInCloudKey: String](https://developer.apple.com/documentation/photos/phimageresultisincloudkey)
+- [let PHImageResultIsInCloudKey: String](../Photos/phimageresultisincloudkey.md)
   A key whose value indicates whether photo asset data is stored on the local device or must be downloaded from iCloud.
-- [let PHImageResultIsDegradedKey: String](https://developer.apple.com/documentation/photos/phimageresultisdegradedkey)
+- [let PHImageResultIsDegradedKey: String](../Photos/phimageresultisdegradedkey.md)
   A key whose value indicates whether the result image is a low-quality substitute for the requested image.
-- [let PHImageResultRequestIDKey: String](https://developer.apple.com/documentation/photos/phimageresultrequestidkey)
+- [let PHImageResultRequestIDKey: String](../Photos/phimageresultrequestidkey.md)
   A key whose value is a unique identifier for the image request.
-- [let PHImageCancelledKey: String](https://developer.apple.com/documentation/photos/phimagecancelledkey)
+- [let PHImageCancelledKey: String](../Photos/phimagecancelledkey.md)
   A key whose value indicates whether the image request was canceled.
-- [let PHImageErrorKey: String](https://developer.apple.com/documentation/photos/phimageerrorkey)
+- [let PHImageErrorKey: String](../Photos/phimageerrorkey.md)
   A key whose value is an error that occurred when Photos attempted to load the image.
 
 ## See Also
 
 ### Constants
-- [enum PHImageContentMode](https://developer.apple.com/documentation/photos/phimagecontentmode)
-  Options for fitting an image’s aspect ratio to a requested size, used by the [`requestImage(for:targetSize:contentMode:options:resultHandler:)`](https://developer.apple.com/documentation/photos/phimagemanager/requestimage(for:targetsize:contentmode:options:resulthandler:)) method.
+- [enum PHImageContentMode](../Photos/phimagecontentmode.md)
+  Options for fitting an image’s aspect ratio to a requested size, used by the [`requestImage(for:targetSize:contentMode:options:resultHandler:)`](../Photos/phimagemanager/requestimage%28for,targetsize,contentmode,options,resulthandler%29.md) method.
 
 
 ---

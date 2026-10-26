@@ -21,7 +21,7 @@ func playheadTime() -> CMTime
 
 ## Mentions
 
-- [Interacting with the Final Cut Pro Timeline](https://developer.apple.com/documentation/professional-video-applications/interacting-with-the-final-cut-pro-timeline)
+- [Interacting with the Final Cut Pro Timeline](../../Professional-Video-Applications/interacting-with-the-final-cut-pro-timeline.md)
 
 #### Discussion
 

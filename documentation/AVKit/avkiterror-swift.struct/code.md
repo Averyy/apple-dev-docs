@@ -38,6 +38,8 @@ enum AVKitError : NSInteger;
   The system failed to start Picture in Picture.
 - [AVKitError.Code.contentDisallowedByProfile](./code/contentdisallowedbyprofile.md)
   An installed profile restricts access to this content.
+### Enumeration Cases
+- [AVKitErrorRecordingFailed](../avkiterror-c.enum/avkiterrorrecordingfailed.md)
 
 ## Relationships
 

@@ -34,6 +34,7 @@ class AVMetricPlayerItemVariantSwitchStartEvent
 - [var audioRendition: AVMetricMediaRendition](./avmetricplayeritemvariantswitchstartevent/audiorendition.md)
 - [var videoRendition: AVMetricMediaRendition](./avmetricplayeritemvariantswitchstartevent/videorendition.md)
 - [var subtitleRendition: AVMetricMediaRendition](./avmetricplayeritemvariantswitchstartevent/subtitlerendition.md)
+- [loadedTimeRanges](./avmetricplayeritemvariantswitchstartevent/loadedtimeranges-3svh3.md)
 
 ## Relationships
 

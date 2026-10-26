@@ -32,6 +32,8 @@ MLCDeviceTypeANE
   A device type that represents the CPU.
 - [MLCDeviceType.gpu](./gpu.md)
   A device type that represents the GPU.
+- [MLCDeviceTypeCount](./mlcdevicetypecount.md)
+  A number that represents the number of device types.
 
 
 ---

@@ -21,9 +21,9 @@ protocol FxParameterRetrievalAPI_v6 : NSObjectProtocol
 
 ## Mentions
 
-- [Adding onscreen controls to plug-ins](https://developer.apple.com/documentation/professional-video-applications/adding-onscreen-controls-to-plug-ins)
-- [Communicating with the plug-in state](https://developer.apple.com/documentation/professional-video-applications/communicating-with-the-plug-in-state)
-- [Using FxPlug APIs](https://developer.apple.com/documentation/professional-video-applications/using-fxplug-apis)
+- [Adding onscreen controls to plug-ins](../Professional-Video-Applications/adding-onscreen-controls-to-plug-ins.md)
+- [Communicating with the plug-in state](../Professional-Video-Applications/communicating-with-the-plug-in-state.md)
+- [Using FxPlug APIs](../Professional-Video-Applications/using-fxplug-apis.md)
 
 ## Topics
 

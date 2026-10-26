@@ -43,6 +43,10 @@ convenience init(name aName: NSNotification.Name, object anObject: Any?)
   Initializes a notification with a specified name, object, and user information.
 - [NSNotification.Name](./name-swift.struct.md)
   A structure that defines the name of a notification.
+- [- init](./init.md)
+  Initializes an empty notification.
+- [+ notificationWithName:object:userInfo:](./notificationwithname_object_userinfo_.md)
+  Returns a notification object with a specified name, object, and user information.
 
 
 ---

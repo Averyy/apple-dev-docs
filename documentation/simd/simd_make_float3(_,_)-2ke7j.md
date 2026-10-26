@@ -21,6 +21,8 @@ static simd_float3 simd_make_float3(float x, simd_float2 yz);
 ### Functions to Create Three-Element Vectors From Combinations of Vectors and Scalar Values
 - [func simd_make_float3(simd_float2, Float) -> simd_float3](./simd_make_float3%28_,_%29-57oga.md)
   Returns a new vector from a scalar value and a vector.
+- [vector3](./vector3-1ak9a.md)
+  Returns a new vector from a scalar value and a vector.
 
 
 ---

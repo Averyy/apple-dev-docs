@@ -42,6 +42,8 @@ See [Speech-Channel Properties](./speech_synthesis_manager/speech-channel_proper
   Sets the speech pitch on a designated speech channel.
 - [func SetSpeechRate(SpeechChannel, Fixed) -> OSErr](./api-1459896-setspeechrate.md)
   Sets the speech rate of a designated speech channel.
+- [SetSpeechInfo](./api-1552223-setspeechinfo.md)
+  Changes a setting of a particular speech channel.
 
 
 ---

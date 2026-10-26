@@ -98,6 +98,8 @@ If your segue doesn’t need to store additional information or provide anything
   An encapsulation of the design-time view controller graph represented in an Interface Builder storyboard resource file.
 - [class UIStoryboardUnwindSegueSource](./uistoryboardunwindseguesource.md)
   An encapsulation of information about an unwind segue.
+- [UIStoryboardViewControllerCreator](./uistoryboardviewcontrollercreator.md)
+  A handler block that contains the custom initialization code for a view controller you instantiate from a storyboard.
 
 
 ---

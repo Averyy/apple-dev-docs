@@ -28,8 +28,12 @@ class MLCTransposeLayer
 ### Creating Transpose Layers
 - [convenience init?(dimensions: [Int])](./mlctransposelayer/init%28dimensions%29.md)
   Creates a transpose layer with the dimensions you specify.
+- [+ layerWithDimensions:](./mlctransposelayer/layerwithdimensions_.md)
+  Creates a transpose layer with the dimensions you specify.
 ### Inspecting Transpose Layers
 - [var dimensions: [Int]](./mlctransposelayer/dimensions-71ed6.md)
+  An array that contains an input axis source for each output axis, which represents the ordering of dimensions.
+- [dimensions](./mlctransposelayer/dimensions-1d5nw.md)
   An array that contains an input axis source for each output axis, which represents the ordering of dimensions.
 
 ## Relationships

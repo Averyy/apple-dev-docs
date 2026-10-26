@@ -22,6 +22,12 @@ static var addUnderline: BETextReplacementOptions { get }
 BETextReplacementOptionsAddUnderline
 ```
 
+## See Also
+
+### Identifying text-replacement options
+- [BETextReplacementOptionsNone](./betextreplacementoptionsnone.md)
+  An option that specifies no processing for the text.
+
 
 ---
 

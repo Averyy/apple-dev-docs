@@ -35,6 +35,18 @@ Although these symbols are available for use, Apple is no longer actively develo
   Marks the specified cell as in need of redrawing.
 - [func updateCellInside(NSCell)](./nscontrol/updatecellinside%28_%29.md)
   Marks the inside of the specified cell as in need of redrawing.
+- [- controlTextDidBeginEditing:](../ObjectiveC/nsobject-swift.class/controltextdidbeginediting_.md)
+  Sent when a control with editable text begins an editing session.
+- [- controlTextDidChange:](../ObjectiveC/nsobject-swift.class/controltextdidchange_.md)
+  Sent when the text in the receiving control changes.
+- [- controlTextDidEndEditing:](../ObjectiveC/nsobject-swift.class/controltextdidendediting_.md)
+  Sent when a control with editable text ends an editing session.
+
+## See Also
+
+### Deprecated
+- [- setFloatingPointFormat:left:right:](./nscontrol/setfloatingpointformat_left_right_.md)
+  Sets the auto-ranging and floating point number format of the receiver’s cell.
 
 
 ---

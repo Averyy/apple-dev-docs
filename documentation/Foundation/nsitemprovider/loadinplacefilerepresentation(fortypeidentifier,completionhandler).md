@@ -50,6 +50,10 @@ If the system created a local copy of a file, it will be automatically deleted a
   Asynchronously loads an object of a specified class to an item provider, returning a progress object.
 - [func loadTransferable<T>(type: T.Type, completionHandler: (Result<T, any Error>) -> Void) -> Progress](./loadtransferable%28type,completionhandler%29.md)
   Asynchronously loads an object of a specified transferable type to an item provider, returning a progress object.
+- [- loadDataRepresentationForContentType:completionHandler:](./loaddatarepresentationforcontenttype_completionhandler_.md)
+  Asynchronously copies the provided, typed data into a generic data object, returning a progress object.
+- [- loadFileRepresentationForContentType:openInPlace:completionHandler:](./loadfilerepresentationforcontenttype_openinplace_completionhandler_.md)
+  Asynchronously copies the content type data into a generic data object with the specified parameters.
 
 
 ---

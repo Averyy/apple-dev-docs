@@ -44,6 +44,9 @@ This method is a designated initializer for `NSMutableSet`.
 ### Creating a mutable set
 - [init()](./init%28%29.md)
   Initializes a newly allocated set.
+### Related Documentation
+- [+ setWithCapacity:](./setwithcapacity_.md)
+  Creates and returns a mutable set with a given initial capacity.
 
 
 ---

@@ -40,6 +40,7 @@ An `OSStatus` result code. When an error occurs, consider the audio data invalid
 ### Creating an audio sink node
 - [init(receiverBlock: AVAudioSinkNodeReceiverBlock)](./avaudiosinknode/init%28receiverblock%29.md)
   Creates an audio sink node with a block that receives audio data.
+- [- initWithRealtimeSafeReceiverBlock:](./avaudiosinknode/initwithrealtimesafereceiverblock_.md)
 
 
 ---

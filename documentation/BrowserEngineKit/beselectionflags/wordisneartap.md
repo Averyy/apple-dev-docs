@@ -30,6 +30,8 @@ BEWordIsNearTap
   A flag that indicates whether a text selection crosses or modifies phrase boundaries in an active selection.
 - [static var selectionFlipped: BESelectionFlags](./selectionflipped.md)
   A flag that indicates whether a text selection is reversed or flipped in direction from its original direction.
+- [BESelectionFlagsNone](./beselectionflagsnone.md)
+  An option that indicates no active flags.
 
 
 ---

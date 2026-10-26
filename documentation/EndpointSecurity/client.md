@@ -76,6 +76,8 @@ if (subscribeResult != ES_RETURN_SUCCESS) {
   A block that handles a message received from Endpoint Security.
 - [struct es_new_client_result_t](./es_new_client_result_t.md)
   The result of an attempt to create a new client.
+- [es_client_t](./es_client_t.md)
+  An opaque type that stores the Endpoint Security client state.
 ### Destroying a Client
 - [func es_delete_client(OpaquePointer?) -> es_return_t](./es_delete_client%28_%29.md)
   Destroys and disconnects a client instance from the Endpoint Security system.
@@ -158,6 +160,8 @@ if (subscribeResult != ES_RETURN_SUCCESS) {
   A type used by Endpoint Security to notify your client when a monitored action occurs.
 - [Event Types](./event-types.md)
   Types used by messages to deliver details specific to different kinds of Endpoint Security events.
+- [Monitoring System Events with Endpoint Security](./monitoring-system-events-with-endpoint-security.md)
+  Receive notifications and authorization requests for sensitive operations by creating an Endpoint Security client for your app.
 
 
 ---

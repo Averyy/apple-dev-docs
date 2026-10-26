@@ -27,6 +27,10 @@ class ODNode
   Creates a node object with a specified session and name.
 - [init(session: ODSession!, type: ODNodeType) throws](./odnode/init%28session,type%29.md)
   Creates a node object with a specified session and type.
+- [+ nodeWithSession:name:error:](./odnode/nodewithsession_name_error_.md)
+  Returns an autoreleased node object with a specified session and name.
+- [+ nodeWithSession:type:error:](./odnode/nodewithsession_type_error_.md)
+  Returns an autoreleased node object with a specified session and type.
 ### Querying a Node
 - [func customCall(Int, send: Data!) throws -> Data](./odnode/customcall%28_,send%29.md)
   Returns the result of a custom call to the node.
@@ -66,6 +70,7 @@ class ODNode
 - [func setPolicies([AnyHashable : Any]!) throws](./odnode/setpolicies%28_%29.md)
 - [func setPolicy(String!, value: Any!) throws](./odnode/setpolicy%28_,value%29.md)
 - [func supportedPolicies() throws -> [AnyHashable : Any]](./odnode/supportedpolicies%28%29.md)
+- [- setCredentialsUsingKerberosCache:error:](./odnode/setcredentialsusingkerberoscache_error_.md)
 
 ## Relationships
 

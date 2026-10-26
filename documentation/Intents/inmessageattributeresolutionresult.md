@@ -34,6 +34,8 @@ An [`INMessageAttributeResolutionResult`](./inmessageattributeresolutionresult.m
   Creates an object whose resolution involves the successful matching of the specified attribute.
 - [class func confirmationRequired(with: INMessageAttribute) -> Self](./inmessageattributeresolutionresult/confirmationrequired%28with%29.md)
   Creates an object whose resolution requires that the user must confirm the value before proceeding.
+- [+ successWithResolvedValue:](./inmessageattributeresolutionresult/successwithresolvedvalue_.md)
+- [+ confirmationRequiredWithValueToConfirm:](./inmessageattributeresolutionresult/confirmationrequiredwithvaluetoconfirm_.md)
 
 ## Relationships
 

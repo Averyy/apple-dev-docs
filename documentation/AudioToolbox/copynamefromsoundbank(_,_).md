@@ -41,6 +41,8 @@ A result code.
 - [var kInstrumentInfoKey_MSB: String](./kinstrumentinfokey_msb.md)
 - [var kInstrumentInfoKey_Name: String](./kinstrumentinfokey_name.md)
 - [var kInstrumentInfoKey_Program: String](./kinstrumentinfokey_program.md)
+- [GetNameFromSoundBank](./getnamefromsoundbank.md)
+  Gets the name of a sound bank from a sound bank file.
 
 
 ---

@@ -44,6 +44,8 @@ var color: NSColor { get }
 ### Getting the ink attributes
 - [var inkType: __PKInkType](./inktype.md)
   The type of ink, such as pen or pencil, as defined in the [`PKInkType`](../pkinktype.md) enumeration.
+- [PKInkType](../pkinktype.md)
+  The type that defines the shape of stroked lines.
 
 
 ---

@@ -52,6 +52,8 @@ NSFontDescriptorClassFreeformSerifs
   The font’s characters include variations of old style and transitional serifs.
 - [static var classSlabSerifs: NSFontDescriptor.SymbolicTraits](./classslabserifs.md)
   The font’s characters use square transitions, without brackets, between strokes and serifs.
+- [NSFontDescriptorClassUnknown](../../nsfontdescriptorsymbolictraits/nsfontdescriptorclassunknown.md)
+  The font has no design classification.
 
 
 ---

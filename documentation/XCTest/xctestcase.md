@@ -46,6 +46,10 @@ Create tests to measure performance for specific blocks of code using the method
   Registers a block of teardown code to run after the current test method ends.
 - [class func tearDown()](./xctestcase/teardown%28%29.md)
   Provides an opportunity to perform cleanup after a test case ends.
+- [- addAsyncTeardownBlock:](./xctestcase/addasyncteardownblock_.md)
+  Registers a block of asynchronous teardown code to run after the current test method ends.
+- [- addTeardownBlock:](./xctestcase/addteardownblock_.md)
+  Registers a block of teardown code to run after the current test method ends.
 ### Managing Test Case Execution
 - [class var runsForEachTargetApplicationUIConfiguration: Bool](./xctestcase/runsforeachtargetapplicationuiconfiguration.md)
   A Boolean value that indicates whether your UI tests run once for each possible combination of orientation, localization, and other appearance settings your app supports.
@@ -142,6 +146,10 @@ Create tests to measure performance for specific blocks of code using the method
   Records a failure during text execution.
 - [class var defaultTestSuite: XCTestSuite](./xctestcase/defaulttestsuite.md)
   A test suite that contains test cases for all of the tests in the class.
+- [+ testCaseWithInvocation:](./xctestcase/testcasewithinvocation_.md)
+  Creates a test case with an invocation.
+- [+ testCaseWithSelector:](./xctestcase/testcasewithselector_.md)
+  Creates a test case with a selector.
 
 ## Relationships
 

@@ -58,6 +58,12 @@ class Component
   Defines grouping of text formatting components in view.
 - [UITextFormattingViewController.Configuration](./configuration-swift.class.md)
   Text formatting view controller configuration object.
+- [UITextFormattingViewControllerChangeValue](../uitextformattingviewcontrollerchangevalue.md)
+  Describes text formatting change that is a result of user action. Contains type of change, any associated value that may be applicable to that change.
+- [UITextFormattingViewControllerFormattingDescriptor](../uitextformattingviewcontrollerformattingdescriptor.md)
+  Object that represents current text formatting state. This can apply to formatting state of some selected range of text or currently applicable input formatting.
+- [UITextFormattingViewControllerFormattingStyle](../uitextformattingviewcontrollerformattingstyle.md)
+  Type that defines formatting style presented in text formatting view.
 
 
 ---

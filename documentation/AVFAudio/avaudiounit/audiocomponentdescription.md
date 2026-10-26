@@ -31,6 +31,8 @@ var audioComponentDescription: AudioComponentDescription { get }
   Provides scoped access to the audio unit’s AudioUnit
 - [func withAudioUnit<R, E>((borrowing AudioUnit) throws(E) -> R) throws(E) -> R](./withaudiounit%28_%29-6c2ze.md)
   Provides scoped access to the audio unit’s AudioUnit
+- [audioUnit](./audiounit-4wpas.md)
+  The underlying Core Audio audio unit.
 ### Getting Audio Unit values
 - [var manufacturerName: String](./manufacturername.md)
   The name of the manufacturer of the audio unit.
@@ -38,6 +40,8 @@ var audioComponentDescription: AudioComponentDescription { get }
   The name of the audio unit.
 - [var version: Int](./version.md)
   The version number of the audio unit.
+- [AUAudioUnit](./auaudiounit.md)
+  The audio unit class wrapping or underlying the implementation’s audio unit.
 
 
 ---

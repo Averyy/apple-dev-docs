@@ -24,6 +24,8 @@ class AVCaptureAudioPreviewOutput
 ### Creating preview output
 - [init()](./avcaptureaudiopreviewoutput/init%28%29.md)
   Creates an audio preview output object.
+- [+ new](./avcaptureaudiopreviewoutput/new.md)
+  Returns a new audio preview output object.
 ### Configuring the output
 - [var volume: Float](./avcaptureaudiopreviewoutput/volume.md)
   The output volume of the audio preview.

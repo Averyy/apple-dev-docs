@@ -14,71 +14,71 @@ With the VoIP domain, users can ask Siri to initiate audio and video calls or se
 ## Topics
 
 ### Starting a Call
-- [protocol INStartCallIntentHandling](https://developer.apple.com/documentation/intents/instartcallintenthandling)
+- [protocol INStartCallIntentHandling](../Intents/instartcallintenthandling.md)
   An interface that handles requests to start audio and video calls.
-- [class INStartCallIntent](https://developer.apple.com/documentation/intents/instartcallintent)
+- [class INStartCallIntent](../Intents/instartcallintent.md)
   A request to start an audio or video call with one or more users.
-- [class INStartCallIntentResponse](https://developer.apple.com/documentation/intents/instartcallintentresponse)
+- [class INStartCallIntentResponse](../Intents/instartcallintentresponse.md)
   Your app’s response to a start call intent.
-- [enum INStartCallCallRecordToCallBackUnsupportedReason](https://developer.apple.com/documentation/intents/instartcallcallrecordtocallbackunsupportedreason)
+- [enum INStartCallCallRecordToCallBackUnsupportedReason](../Intents/instartcallcallrecordtocallbackunsupportedreason.md)
   A reason why your app can’t use a record to call a person back.
 ### Answering a Call
-- [class INAnswerCallIntent](https://developer.apple.com/documentation/intents/inanswercallintent)
-- [class INAnswerCallIntentResponse](https://developer.apple.com/documentation/intents/inanswercallintentresponse)
-- [protocol INAnswerCallIntentHandling](https://developer.apple.com/documentation/intents/inanswercallintenthandling)
-- [enum INAnswerCallIntentResponseCode](https://developer.apple.com/documentation/intents/inanswercallintentresponsecode)
+- [class INAnswerCallIntent](../Intents/inanswercallintent.md)
+- [class INAnswerCallIntentResponse](../Intents/inanswercallintentresponse.md)
+- [protocol INAnswerCallIntentHandling](../Intents/inanswercallintenthandling.md)
+- [enum INAnswerCallIntentResponseCode](../Intents/inanswercallintentresponsecode.md)
 ### Describing a Call
-- [class INCallRecord](https://developer.apple.com/documentation/intents/incallrecord)
+- [class INCallRecord](../Intents/incallrecord.md)
   The details about a call handled by your app.
-- [class INCallGroup](https://developer.apple.com/documentation/intents/incallgroup)
+- [class INCallGroup](../Intents/incallgroup.md)
   The details of a group call handled by your app.
-- [class INCallRecordFilter](https://developer.apple.com/documentation/intents/incallrecordfilter)
+- [class INCallRecordFilter](../Intents/incallrecordfilter.md)
   Filters a user specifies to redial a call.
-- [enum INCallRecordType](https://developer.apple.com/documentation/intents/incallrecordtype)
+- [enum INCallRecordType](../Intents/incallrecordtype.md)
   Constants describing the type of the call.
-- [struct INCallRecordTypeOptions](https://developer.apple.com/documentation/intents/incallrecordtypeoptions)
+- [struct INCallRecordTypeOptions](../Intents/incallrecordtypeoptions.md)
   Constants describing the types of calls to include during a search.
-- [enum INCallDestinationType](https://developer.apple.com/documentation/intents/incalldestinationtype)
+- [enum INCallDestinationType](../Intents/incalldestinationtype.md)
   Constants describing the destination of a call.
 ### Ending a Call
-- [class INHangUpCallIntent](https://developer.apple.com/documentation/intents/inhangupcallintent)
-- [class INHangUpCallIntentResponse](https://developer.apple.com/documentation/intents/inhangupcallintentresponse)
-- [protocol INHangUpCallIntentHandling](https://developer.apple.com/documentation/intents/inhangupcallintenthandling)
-- [enum INHangUpCallIntentResponseCode](https://developer.apple.com/documentation/intents/inhangupcallintentresponsecode)
+- [class INHangUpCallIntent](../Intents/inhangupcallintent.md)
+- [class INHangUpCallIntentResponse](../Intents/inhangupcallintentresponse.md)
+- [protocol INHangUpCallIntentHandling](../Intents/inhangupcallintenthandling.md)
+- [enum INHangUpCallIntentResponseCode](../Intents/inhangupcallintentresponsecode.md)
 ### Resolution Results
-- [class INCallRecordResolutionResult](https://developer.apple.com/documentation/intents/incallrecordresolutionresult)
+- [class INCallRecordResolutionResult](../Intents/incallrecordresolutionresult.md)
   A resolution result for the details of a call.
-- [class INCallRecordTypeResolutionResult](https://developer.apple.com/documentation/intents/incallrecordtyperesolutionresult)
+- [class INCallRecordTypeResolutionResult](../Intents/incallrecordtyperesolutionresult.md)
   A resolution result for the types of calls that your app handled.
-- [class INCallDestinationTypeResolutionResult](https://developer.apple.com/documentation/intents/incalldestinationtyperesolutionresult)
+- [class INCallDestinationTypeResolutionResult](../Intents/incalldestinationtyperesolutionresult.md)
   A resolution result for the destination type of a call.
-- [class INCallCapabilityResolutionResult](https://developer.apple.com/documentation/intents/incallcapabilityresolutionresult)
+- [class INCallCapabilityResolutionResult](../Intents/incallcapabilityresolutionresult.md)
   A resolution result for the call capability for the call.
-- [class INCallRecordTypeOptionsResolutionResult](https://developer.apple.com/documentation/intents/incallrecordtypeoptionsresolutionresult)
+- [class INCallRecordTypeOptionsResolutionResult](../Intents/incallrecordtypeoptionsresolutionresult.md)
   A resolution result for the call types to include in a search.
-- [class INStartCallContactResolutionResult](https://developer.apple.com/documentation/intents/instartcallcontactresolutionresult)
+- [class INStartCallContactResolutionResult](../Intents/instartcallcontactresolutionresult.md)
   A resolution result for the contact for the call.
-- [class INStartCallCallCapabilityResolutionResult](https://developer.apple.com/documentation/intents/instartcallcallcapabilityresolutionresult)
+- [class INStartCallCallCapabilityResolutionResult](../Intents/instartcallcallcapabilityresolutionresult.md)
   A resolution result for the call capability for the call.
-- [class INStartCallCallRecordToCallBackResolutionResult](https://developer.apple.com/documentation/intents/instartcallcallrecordtocallbackresolutionresult)
+- [class INStartCallCallRecordToCallBackResolutionResult](../Intents/instartcallcallrecordtocallbackresolutionresult.md)
   A resolution result for the redial capabilities of a missed call.
 ### Sharing the User’s Focus Status
-- [protocol INShareFocusStatusIntentHandling](https://developer.apple.com/documentation/intents/insharefocusstatusintenthandling)
+- [protocol INShareFocusStatusIntentHandling](../Intents/insharefocusstatusintenthandling.md)
   A set of methods an object implements to process intents that share the user’s focus status.
-- [class INShareFocusStatusIntent](https://developer.apple.com/documentation/intents/insharefocusstatusintent)
+- [class INShareFocusStatusIntent](../Intents/insharefocusstatusintent.md)
   An object that indicates the user’s focus status is changing.
-- [class INShareFocusStatusIntentResponse](https://developer.apple.com/documentation/intents/insharefocusstatusintentresponse)
+- [class INShareFocusStatusIntentResponse](../Intents/insharefocusstatusintentresponse.md)
   Your app’s response to an intent that shares the user’s focus status.
-- [class INFocusStatus](https://developer.apple.com/documentation/intents/infocusstatus)
+- [class INFocusStatus](../Intents/infocusstatus.md)
   The user’s preference for receiving notifications.
-- [class INFocusStatusCenter](https://developer.apple.com/documentation/intents/infocusstatuscenter)
+- [class INFocusStatusCenter](../Intents/infocusstatuscenter.md)
   An object that maintains the user’s current focus status and your app’s ability to access it.
-- [enum INFocusStatusAuthorizationStatus](https://developer.apple.com/documentation/intents/infocusstatusauthorizationstatus)
+- [enum INFocusStatusAuthorizationStatus](../Intents/infocusstatusauthorizationstatus.md)
   A constant that indicates whether your app has authorization to access the user’s focus status.
-- [enum INShareFocusStatusIntentResponseCode](https://developer.apple.com/documentation/intents/insharefocusstatusintentresponsecode)
+- [enum INShareFocusStatusIntentResponseCode](../Intents/insharefocusstatusintentresponsecode.md)
   A constant that indicates your app’s ability to handle an intent to share the user’s focus status.
 ### Specifying Search Options
-- [struct INCallCapabilityOptions](https://developer.apple.com/documentation/intents/incallcapabilityoptions)
+- [struct INCallCapabilityOptions](../Intents/incallcapabilityoptions.md)
   Constants indicating the capabilities of the call.
 
 ## See Also

@@ -122,6 +122,8 @@ Metadata attribute keys that are common to many file types.
   Information about the item. A CFString.
 - [let kMDItemURL: CFString!](../../kmditemurl.md)
   Url of the item. A CFString.
+- [kMDItemSupportFileType](../../kmditemsupportfiletype.md)
+  A CFArray of CFStrings.
 
 
 ---

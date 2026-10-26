@@ -39,6 +39,18 @@ You use `CIVector` objects in conjunction with other Core Image classes, such as
   Create a Core Image vector object that is initialized with two values provided by a `CGPoint` structure.
 - [convenience init(cgRect: CGRect)](./civector/init%28cgrect%29-3undj.md)
   Create a Core Image vector object that is initialized with four values provided by a `CGRect` structure.
+- [+ vectorWithValues:count:](./civector/vectorwithvalues_count_.md)
+  Create a Core Image vector object that is initialized with the specified values.
+- [+ vectorWithX:](./civector/vectorwithx_.md)
+  Create a Core Image vector object that is initialized with one value.
+- [+ vectorWithX:Y:](./civector/vectorwithx_y_.md)
+  Create a Core Image vector object that is initialized with two values.
+- [+ vectorWithX:Y:Z:](./civector/vectorwithx_y_z_.md)
+  Create a Core Image vector object that is initialized with three values.
+- [+ vectorWithX:Y:Z:W:](./civector/vectorwithx_y_z_w_.md)
+  Create a Core Image vector object that is initialized with four values.
+- [+ vectorWithString:](./civector/vectorwithstring_.md)
+  Create a Core Image vector object with values provided in a string representation.
 ### Initializing a Vector
 - [init(values: UnsafePointer<CGFloat>, count: Int)](./civector/init%28values,count%29.md)
   Initialize a Core Image vector object with the specified the values.

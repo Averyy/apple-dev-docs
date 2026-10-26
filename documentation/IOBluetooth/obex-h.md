@@ -61,6 +61,47 @@ The file also contains API that will assist in the construction and deconstructi
   Take a data blob and looks for OBEX headers.
 - [func OBEXHeadersToBytes(CFDictionary!) -> Unmanaged<CFMutableData>!](./obexheaderstobytes%28_%29.md)
   Converts a dictionary of headers to a data pointer, from which you can extract as bytes and pass to the OBEX command/response functions.
+- [GET_HEADER_ID_IS_NULL_TERMINATED_UNICODE_TEXT](./get_header_id_is_null_terminated_unicode_text.md)
+  Convenience Macros for working with OBEX Header Identifiers.
+- [OBEXCreateVCard](./obexcreatevcard.md)
+  Creates a formatted vCard, ready to be sent over OBEX or whatever.
+- [OBEXCreateVEvent](./obexcreatevevent.md)
+  Creates a formatted vEvent, ready to be sent over OBEX or whatever. You probably will embed the output in a vCalendar event.
+- [OBEXSessionAbort](./obexsessionabort.md)
+  Send an abort command to a remote OBEX server.
+- [OBEXSessionAbortResponse](./obexsessionabortresponse.md)
+  Send a response to a abort command to the remote client.
+- [OBEXSessionConnect](./obexsessionconnect.md)
+  Establishes an OBEX connection to the target device for the session. If a transport connection is not open yet, it will be opened if possible.
+- [OBEXSessionConnectResponse](./obexsessionconnectresponse.md)
+  Send a response to a connect command to the remote client.
+- [OBEXSessionDelete](./obexsessiondelete.md)
+  Destroy an OBEX session. If connections are open, they will (eventually) be terminated for you.
+- [OBEXSessionDisconnect](./obexsessiondisconnect.md)
+  Send a disconnect command to a remote OBEX server.
+- [OBEXSessionDisconnectResponse](./obexsessiondisconnectresponse.md)
+  Send a response to a disconnect command to the remote client.
+- [OBEXSessionGet](./obexsessionget.md)
+  Send a get command to a remote OBEX server.
+- [OBEXSessionGetAvailableCommandPayloadLength](./obexsessiongetavailablecommandpayloadlength.md)
+  Gets space available for your data for a particular command response you are trying to send.
+- [OBEXSessionGetAvailableCommandResponsePayloadLength](./obexsessiongetavailablecommandresponsepayloadlength.md)
+  Gets space available for your data for a particular command response you are trying to send.
+- [OBEXSessionGetMaxPacketLength](./obexsessiongetmaxpacketlength.md)
+  Gets current max packet length.
+- [OBEXSessionGetResponse](./obexsessiongetresponse.md)
+  Send a response to a get command to the remote client.
+- [OBEXSessionHasOpenOBEXConnection](./obexsessionhasopenobexconnection.md)
+  Allows you to test the session for an open OBEX connection for a particular session.
+- [OBEXSessionPut](./obexsessionput.md)
+  Send a put command to a remote OBEX server.
+- [OBEXSessionPutResponse](./obexsessionputresponse.md)
+  Send a response to a put command to the remote client.
+- [OBEXSessionSetPath](./obexsessionsetpath.md)
+  Send a set path command to a remote OBEX server.
+- [OBEXSessionSetPathResponse](./obexsessionsetpathresponse.md)
+  Send a response to a set path command to the remote client.
+- [OBEXSessionSetServerCallback](./obexsessionsetservercallback.md)
 ### Data Types
 - [struct OBEXSessionEvent](./obexsessionevent.md)
 - [struct OBEXAbortCommandData](./obexabortcommanddata.md)

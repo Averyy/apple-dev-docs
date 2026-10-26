@@ -44,6 +44,7 @@ Attach a video output to an [`AVPlayer`](./avplayer.md) object to access the pla
 - [func taggedBuffers(forHostTime: CMTime) -> (taggedBufferGroup: [CMTaggedBuffer], presentationTime: CMTime, activeConfiguration: AVPlayerVideoOutput.Configuration)?](./avplayervideooutput/taggedbuffers%28forhosttime%29.md)
 - [AVPlayerVideoOutput.Configuration](./avplayervideooutput/configuration.md)
   An object that provides configuration information for the related player item.
+- [- copyTaggedBufferGroupForHostTime:presentationTimeStamp:activeConfiguration:](./avplayervideooutput/copytaggedbuffergroupforhosttime_presentationtimestamp_activeconfiguration_.md)
 
 ## Relationships
 
@@ -84,6 +85,12 @@ Attach a video output to an [`AVPlayer`](./avplayer.md) object to access the pla
   Configuration options specified when creating an [`AVPlayerItemSampleBufferOutput`](./avplayeritemsamplebufferoutput.md).
 - [class AVPlayerItemSampleBufferOutputAudioConfiguration](./avplayeritemsamplebufferoutputaudioconfiguration.md)
   Audio-specific configuration options specified when creating an [`AVPlayerItemSampleBufferOutput`](./avplayeritemsamplebufferoutput.md).
+- [CMTagCollectionCreateWithVideoOutputPreset](./cmtagcollectioncreatewithvideooutputpreset.md)
+  Creates a collection with the required tags to describe the specified video output requirements.
+- [CMTagCollectionVideoOutputPreset](./cmtagcollectionvideooutputpreset.md)
+  Constants that indicate the type of video content to output.
+- [AVPlayerItemSampleBufferOutputDelegate](./avplayeritemsamplebufferoutputdelegate.md)
+  Defines common delegate methods for objects participating in sample buffer output.
 
 
 ---

@@ -34,6 +34,8 @@ The methods that use these constants are [`didTransition(to:)`](./didtransition%
   The state of a table view cell when the table view is in editing mode.
 - [static var showingDeleteConfirmation: UITableViewCell.StateMask](./statemask/showingdeleteconfirmation.md)
   The state of a table view cell that shows a button requesting confirmation of a delete gesture.
+- [UITableViewCellStateDefaultMask](../uitableviewcellstatemask/uitableviewcellstatedefaultmask.md)
+  The normal state of a table cell.
 ### Initializers
 - [init(rawValue: UInt)](./statemask/init%28rawvalue%29.md)
   Creates a state mask with the specified raw value.

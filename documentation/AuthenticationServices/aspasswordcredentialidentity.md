@@ -30,6 +30,8 @@ class ASPasswordCredentialIdentity
   Initializes a password credential identity.
 - [class ASCredentialServiceIdentifier](./ascredentialserviceidentifier.md)
   An identifier representing a particular service for which the user needs a credential, like a web site.
+- [+ identityWithServiceIdentifier:user:recordIdentifier:](./aspasswordcredentialidentity/identitywithserviceidentifier_user_recordidentifier_.md)
+  Creates and returns a password credential identity object with a service identifier.
 ### Ordering credential identities
 - [var rank: Int](./aspasswordcredentialidentity/rank.md)
   An indicator that enables you to prioritze credential identities relative to each other.

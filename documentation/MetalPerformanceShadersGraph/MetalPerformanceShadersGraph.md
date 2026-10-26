@@ -110,6 +110,12 @@ Metal Performance Shaders Graph provides high-performance, energy-efficient comp
   The block that executes after the condition evaluates for each iteration.
 - [typealias MPSGraphWhileBeforeBlock](./mpsgraphwhilebeforeblock.md)
   The block that executes before the condition evaluates for each iteration.
+- [MPSGraphCallableMap](./mpsgraphcallablemap.md)
+  A dictionary of symbol names and the corresponding executables for them.
+- [MPSGraphTensorDataDictionary](./mpsgraphtensordatadictionary.md)
+  A dictionary of tensors and corresponding tensor data.
+- [MPSGraphTensorShapedTypeDictionary](./mpsgraphtensorshapedtypedictionary.md)
+  A dictionary of tensors and corresponding shapes for them.
 ### Enumerations
 - [enum MPSGraphDeploymentPlatform](./mpsgraphdeploymentplatform.md)
   The options available to a graph.

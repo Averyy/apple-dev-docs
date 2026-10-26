@@ -32,6 +32,12 @@ A descriptor object that contains color attachment information.
 
 - `attachmentIndex`: An index in the color attachment array.
 
+## See Also
+
+### Accessing the description of a color attachment
+- [- setObject:atIndexedSubscript:](./setobject_atindexedsubscript_.md)
+  Sets the descriptor for the specified color attachment.
+
 
 ---
 

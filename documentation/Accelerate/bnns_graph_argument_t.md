@@ -39,6 +39,12 @@ Exactly one of descriptor or data_ptr should be set based on the configuration s
   size in bytes of `data_ptr`, if set
 - [var descriptor: UnsafeMutablePointer<BNNSNDArrayDescriptor>?](./bnns_graph_argument_t/descriptor-8d2bd.md)
 - [var tensor: UnsafeMutablePointer<BNNSTensor>?](./bnns_graph_argument_t/tensor-6l2lt.md)
+- [data_ptr](./bnns_graph_argument_t/data_ptr-10vgq.md)
+  Direct pointer to numerical data
+- [descriptor](./bnns_graph_argument_t/descriptor-jg2s.md)
+  Pointer to BNNSNDArrayDescriptor (deprecated, use BNNSTensor instead)
+- [tensor](./bnns_graph_argument_t/tensor-6224h.md)
+  Pointer to BNNSTensor
 
 ## Relationships
 

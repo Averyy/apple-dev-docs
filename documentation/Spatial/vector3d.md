@@ -48,6 +48,16 @@ typedef union { ... } SPVector3D;
   Creates a vector from the specified Spatial size structure.
 - [init(SphericalCoordinates3D)](./vector3d/init%28_%29-9ker1.md)
   Creates a vector from the specified Spatial spherical coordinates structure.
+- [SPVector3DMakeWithPoint](./spvector3dmakewithpoint.md)
+  Creates a vector from the specified Spatial point structure.
+- [SPVector3DMakeWithRotationAxis](./spvector3dmakewithrotationaxis.md)
+  Creates a vector from the specified Spatial rotation axis.
+- [SPVector3DMakeWithSize](./spvector3dmakewithsize.md)
+  Creates a vector from the specified Spatial size structure.
+- [SPVector3DMakeWithSphericalCoordinates](./spvector3dmakewithsphericalcoordinates.md)
+  Returns a Spatial vector that represents the Cartesian coordinates of the specified spherical coordinates structure.
+- [SPVector3DMakeWithVector](./spvector3dmakewithvector.md)
+  Creates a vector from the specified double-precision vector.
 ### Inspecting a vector’s properties
 - [var x: Double](./vector3d/x.md)
   The x-element value.
@@ -57,9 +67,20 @@ typedef union { ... } SPVector3D;
   The z-element value.
 - [var vector: simd_double3](./vector3d/vector.md)
   A simd three-element vector that contains the x-, y-, and z-element values.
+- [x](./spvector3d/x.md)
+  The x-element value.
+- [y](./spvector3d/y.md)
+  The y-element value.
+- [z](./spvector3d/z.md)
+  The z-element value.
 ### Checking characteristics
 - [func rotation(to: Vector3D) -> Rotation3D](./vector3d/rotation%28to%29.md)
   Returns the rotation from the normalized first vector to the normalized second vector.
+- [SPVector3DRotationToVector](./spvector3drotationtovector.md)
+  Returns the rotation around the origin from the first vector to the second vector.
+- [SPVector3DIsZero](./spvector3diszero.md)
+- [SPVector3DIsFinite](./spvector3disfinite.md)
+- [SPVector3DIsNaN](./spvector3disnan.md)
 ### Geometry functions
 - [func cross(Vector3D) -> Vector3D](./vector3d/cross%28_%29.md)
   Returns the cross product of the vector and the specified vector.
@@ -76,6 +97,20 @@ typedef union { ... } SPVector3D;
 - [func projected(Vector3D) -> Vector3D](./vector3d/projected%28_%29.md)
   Returns the vector projected onto the specified vector.
 - [func reflected(Vector3D) -> Vector3D](./vector3d/reflected%28_%29.md)
+  Returns the reflection direction of the incident vector and a specified unit normal vector.
+- [SPVector3DCrossProduct](./spvector3dcrossproduct.md)
+  Returns the cross product of two vectors.
+- [SPVector3DDotProduct](./spvector3ddotproduct.md)
+  Returns the dot product of two vectors.
+- [SPVector3DLength](./spvector3dlength.md)
+  Returns the length of the vector.
+- [SPVector3DLengthSquared](./spvector3dlengthsquared.md)
+  Returns the square of the length of the vector.
+- [SPVector3DNormalize](./spvector3dnormalize.md)
+  Returns a new vector that represents the normalized copy of the vector.
+- [SPVector3DProject](./spvector3dproject.md)
+  Returns the first vector projected onto the second vector.
+- [SPVector3DReflect](./spvector3dreflect.md)
   Returns the reflection direction of the incident vector and a specified unit normal vector.
 ### Transforming a vector
 - [func applying(AffineTransform3D) -> Vector3D](./vector3d/applying%28_%29-1d0mh.md)
@@ -106,8 +141,38 @@ typedef union { ... } SPVector3D;
   Returns a vector that’s transformed by the specified scaled pose.
 - [func unapplying(ScaledPose3D) -> Vector3D](./vector3d/unapplying%28_%29-4uxr2.md)
   Returns a vector that’s transformed by the inverse of the specified scaled pose.
+- [SPVector3DApplyAffineTransform](./spvector3dapplyaffinetransform.md)
+  Returns a vector that results from applying the specified affine transform.
+- [SPVector3DApplyProjectiveTransform](./spvector3dapplyprojectivetransform.md)
+  Returns a vector that results from applying the specified projective transform.
+- [SPVector3DApplyPose](./spvector3dapplypose.md)
+  Returns a vector that results from applying the specified pose.
+- [SPVector3DUnapplyAffineTransform](./spvector3dunapplyaffinetransform.md)
+  Returns a vector that results from unapplying the specified affine transform.
+- [SPVector3DUnapplyProjectiveTransform](./spvector3dunapplyprojectivetransform.md)
+  Returns a vector that results from unapplying the specified projective transform.
+- [SPVector3DUnapplyPose](./spvector3dunapplypose.md)
+  Returns a vector that results from unapplying the specified pose.
+- [SPVector3DRotate](./spvector3drotate.md)
+  Returns a vector that results from applying the specified rotation.
+- [SPVector3DRotateByQuaternion](./spvector3drotatebyquaternion.md)
+  Returns a vector that results from rotating with the specified quaternion.
+- [SPVector3DScaleBySize](./spvector3dscalebysize.md)
+  Returns a vector that results from scaling with the specified size structure.
+- [SPVector3DScaleBy](./spvector3dscaleby.md)
+  Returns a vector that results from scaling with the specified double-precision values.
+- [SPVector3DScaleUniform](./spvector3dscaleuniform.md)
+  Returns a vector that results from uniformly scaling with the specified double-precision value.
+- [SPVector3DShear](./spvector3dshear.md)
+  Returns a vector that results from shearing over an axis by shear factors for the other two axes.
+- [SPVector3DApplyScaledPose](./spvector3dapplyscaledpose.md)
+  Returns a vector that’s transformed by the specified scaled pose.
+- [SPVector3DUnapplyScaledPose](./spvector3dunapplyscaledpose.md)
+  Returns a vector that’s transformed by the inverse of the specified scaled pose.
 ### Comparing values
 - [static func == (Vector3D, Vector3D) -> Bool](./vector3d/eqeq%28_,_%29.md)
+  Returns a Boolean value that indicates whether two values are equal.
+- [SPVector3DEqualToVector](./spvector3dequaltovector.md)
   Returns a Boolean value that indicates whether two values are equal.
 ### Encoding and decoding a vector
 - [init(from: any Decoder) throws](./vector3d/init%28from%29.md)
@@ -186,6 +251,11 @@ typedef union { ... } SPVector3D;
 - [Rotatable3DProtocol Implementations](./vector3d/rotatable3dprotocol-implementations.md)
 - [Scalable3DProtocol Implementations](./vector3d/scalable3dprotocol-implementations.md)
 - [Shearable3D Implementations](./vector3d/shearable3d-implementations.md)
+### Constants
+- [SPVector3DZero](./spvector3dzero.md)
+  A vector that contains all zeros.
+- [SPVectorInfinity](./spvectorinfinity.md)
+  A vector that contains all infinities.
 
 ## Relationships
 

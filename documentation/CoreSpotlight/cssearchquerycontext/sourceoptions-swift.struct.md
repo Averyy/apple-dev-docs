@@ -26,6 +26,9 @@ enum CSSearchQuerySourceOptions : NSUInteger;
   The query allows Mail messages in the search.
 ### Initializers
 - [init(rawValue: UInt)](./sourceoptions-swift.struct/init%28rawvalue%29.md)
+### Enumeration Cases
+- [CSSearchQuerySourceOptionDefault](../cssearchquerysourceoptions/cssearchquerysourceoptiondefault.md)
+  The query uses the default search option that excludes Mail messages.
 
 ## Relationships
 

@@ -43,6 +43,8 @@ static simd_char32 simd_make_char32_undef(simd_char4 other);
   Returns a new vector from the specified eight-element vector, and other elements undefined.
 - [func simd_make_char32_undef(simd_char16) -> simd_char32](./simd_make_char32_undef%28_%29-3vq4m.md)
   Returns a new vector from the specified sixteen-element vector, and other elements undefined.
+- [vector32](./vector32-6853f.md)
+  Returns a new vector from the specified vectors.
 
 
 ---

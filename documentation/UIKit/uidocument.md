@@ -291,6 +291,7 @@ class EditorViewController: UIViewController,
 - [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 - [ProgressReporting](../Foundation/progressreporting.md)
 - [UIUserActivityRestoring](./uiuseractivityrestoring.md)
+- [UINavigationItemRenameDelegate](./uinavigationitemrenamedelegate-96g5t.md)
 
 ## See Also
 

@@ -53,6 +53,9 @@ produces the string “`Error: premature end of file.`”.
 - [func appendingFormat(NSString, any CVarArg...) -> NSString](./appendingformat%28_,_%29.md)
 - [func padding(toLength: Int, withPad: String, startingAt: Int) -> String](./padding%28tolength,withpad,startingat%29.md)
   Returns a new string formed from the receiver by either removing characters from the end, or by appending as many occurrences as necessary of a given pad string.
+### Related Documentation
+- [- stringByAppendingFormat:](./stringbyappendingformat_.md)
+  Returns a string made by appending to the receiver a string constructed from a given format string and the following arguments.
 
 
 ---

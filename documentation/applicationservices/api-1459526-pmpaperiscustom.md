@@ -36,6 +36,8 @@ You can create a custom paper with the function [`PMPaperCreateCustom(_:_:_:_:_:
 ### Creating and Using Paper Objects
 - [func PMPaperCreateCustom(PMPrinter?, CFString?, CFString?, Double, Double, UnsafePointer<PMPaperMargins>, UnsafeMutablePointer<PMPaper?>) -> OSStatus](./api-1459322-pmpapercreatecustom.md)
   Creates a custom paper object.
+- [PMPaperCreate](./core_printing/api-1805531-pmpapercreate.md)
+  Creates a paper object.
 
 
 ---

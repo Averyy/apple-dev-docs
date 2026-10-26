@@ -40,6 +40,12 @@ When creating a rate map, Metal copies into it property values from the descript
   A convenience initializer that creates a rate map descriptor with a single rate layer.
 - [convenience init(screenSize: MTLSize, layers: [MTLRasterizationRateLayerDescriptor], label: String?)](./mtlrasterizationratemapdescriptor/init%28screensize,layers,label%29.md)
   A convenience initializer that creates a rate map descriptor with a set of layer descriptors.
+- [+ rasterizationRateMapDescriptorWithScreenSize:](./mtlrasterizationratemapdescriptor/rasterizationratemapdescriptorwithscreensize_.md)
+  Creates a rate map descriptor with a given size and identifier.
+- [+ rasterizationRateMapDescriptorWithScreenSize:layer:](./mtlrasterizationratemapdescriptor/rasterizationratemapdescriptorwithscreensize_layer_.md)
+  Creates a rate map descriptor with a single rate layer.
+- [+ rasterizationRateMapDescriptorWithScreenSize:layerCount:layers:](./mtlrasterizationratemapdescriptor/rasterizationratemapdescriptorwithscreensize_layercount_layers_.md)
+  Creates a rate map descriptor with a set of layer descriptors.
 ### Identifying the rate map
 - [var label: String?](./mtlrasterizationratemapdescriptor/label.md)
   A string used to identify the rate map you create with the descriptor.

@@ -37,6 +37,8 @@ Thread safe starting in OS X v10.2.
 ### Deleting Descriptors
 - [func AEDeleteParam(UnsafeMutablePointer<AppleEvent>!, AEKeyword) -> OSErr](./api-1444338-aedeleteparam.md)
   Deletes a keyword-specified parameter from an Apple event record.
+- [AEDeleteKeyDesc](../applicationservices/apple_event_manager/api-1806085-aedeletekeydesc.md)
+  Deletes a keyword-specified parameter from an Apple event record.
 
 
 ---

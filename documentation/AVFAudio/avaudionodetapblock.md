@@ -43,6 +43,7 @@ typedef void (^)(AVAudioPCMBuffer *, AVAudioTime *) AVAudioNodeTapBlock;
   Installs an audio tap on a bus you specify to record, monitor, and observe the output of the node.
 - [func removeTap(onBus: AVAudioNodeBus)](./avaudionode/removetap%28onbus%29.md)
   Removes an audio tap on a bus you specify.
+- [- installTapOnBus:bufferSize:format:error:block:](./avaudionode/installtaponbus_buffersize_format_error_block_.md)
 
 
 ---

@@ -131,7 +131,7 @@ The system moves the entity from its ‘model space’ origin to the location in
 
 ![A matrix multiplication. The left hand side is a four by four matrix. The first column is 1.0, 0.0, 0.0, 0.0. The second column is 0.0, 1.0, 0.0, 0.0. The third column is 0.0, 0.0, 1.0, 0.0. The fourth column is where the the translation is found. It's values are 0.1, 0.0, 0.0, 1.0. The right-most matrix is a four by one matrix, its only column has values 0.05, 0.05, negative 0.05, 1.0. Between the matrices is the multiplication operator.](https://developer.apple.com/tutorials/images/com.apple.visionOS/TranslationMatrixMultiplication@2x.png)
 
-The left matrix is a direct representation of the `Transform` you made earlier and applied to the `cube`. The right matrix is the first vertex from the cube represented by a vector with `1.0` in the last position. Performing that multiplication (the [`dot(_:_:)`](https://developer.apple.com/documentation/simd/dot(_:_:)-4gb9g) product of each row of the matrix with the vertex) yields:
+The left matrix is a direct representation of the `Transform` you made earlier and applied to the `cube`. The right matrix is the first vertex from the cube represented by a vector with `1.0` in the last position. Performing that multiplication (the [`dot(_:_:)`](../simd/dot%28_,_%29-4gb9g.md) product of each row of the matrix with the vertex) yields:
 
 ![A four by one matrix, values in the single column are 0.15, 0.05, negative 0.05 and 1.0.](https://developer.apple.com/tutorials/images/com.apple.visionOS/TranslationMatrixMultiplicationResult@2x.png)
 
@@ -226,7 +226,7 @@ Rotation around any other axis is achieved in the same way. For example, to rota
   cube?.transform = Transform(rotation: simd_quatf(angle: .pi/4, axis: normalize(SIMD3<Float>(1.0, 1.0, 1.0))))
 ```
 
-> ❗ **Important**: The [`normalize(_:)`](https://developer.apple.com/documentation/simd/normalize(_:)-3lhrd) function returns a vector pointing in the same direction with a length of 1.0. Make sure to normalize the `axis` argument when creating quaternions.
+> ❗ **Important**: The [`normalize(_:)`](../simd/normalize%28_%29-3lhrd.md) function returns a vector pointing in the same direction with a length of 1.0. Make sure to normalize the `axis` argument when creating quaternions.
 
 That code performs a rotation that looks like this:
 

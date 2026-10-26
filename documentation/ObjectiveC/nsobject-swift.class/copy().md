@@ -42,6 +42,18 @@ This is a convenience method for classes that adopt the [`NSCopying`](../../Foun
   Implemented by subclasses to initialize a new object (the receiver) immediately after memory for it has been allocated.
 - [func mutableCopy() -> Any](./mutablecopy%28%29.md)
   Returns the object returned by `mutableCopy(with:)` where the zone is `nil`.
+- [+ alloc](./alloc.md)
+  Returns a new instance of the receiving class.
+- [+ allocWithZone:](./allocwithzone_.md)
+  Returns a new instance of the receiving class.
+- [+ copyWithZone:](./copywithzone_.md)
+  Returns the receiver.
+- [+ mutableCopyWithZone:](./mutablecopywithzone_.md)
+  Returns the receiver.
+- [- dealloc](./dealloc.md)
+  Deallocates the memory occupied by the receiver.
+- [+ new](./new.md)
+  Allocates a new instance of the receiving class, sends it an [`init`](./init%28%29.md) message, and returns the initialized object.
 
 
 ---

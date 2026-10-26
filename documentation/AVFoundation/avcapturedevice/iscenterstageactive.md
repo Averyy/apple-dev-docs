@@ -50,6 +50,7 @@ This property is key-value observable.
   A value that indicates the current mode of Center Stage control.
 - [AVCaptureDevice.CenterStageControlMode](./centerstagecontrolmode-swift.enum.md)
   Constants that indicate the current Center Stage control mode.
+- [centerStageRectOfInterestSupported](./centerstagerectofinterestsupported.md)
 
 
 ---

@@ -28,9 +28,19 @@ Create color objects when you want to use specific colors in your UI, altering t
   Creates a color object using the information from the named asset.
 - [init?(named: String, inBundle: Bundle?, compatibleWithTraitCollection: UITraitCollection?)](./uicolor/init%28named,inbundle,compatiblewithtraitcollection%29.md)
   Creates a color object using the named asset that’s compatible with the specified trait collection.
+- [+ colorWithWhite:alpha:](./uicolor/colorwithwhite_alpha_.md)
+  Creates a color object using the specified opacity and grayscale values.
+- [+ colorWithHue:saturation:brightness:alpha:](./uicolor/colorwithhue_saturation_brightness_alpha_.md)
+  Creates a color object using the specified opacity and HSB color space component values.
+- [+ colorWithRed:green:blue:alpha:](./uicolor/colorwithred_green_blue_alpha_.md)
+  Creates a color object using the specified opacity and RGB component values.
+- [+ colorWithDisplayP3Red:green:blue:alpha:](./uicolor/colorwithdisplayp3red_green_blue_alpha_.md)
+  Creates a color object using the specified opacity and RGB component values in the Display P3 color space.
 ### Creating a color dynamically
 - [init(dynamicProvider: (UITraitCollection) -> UIColor)](./uicolor/init%28dynamicprovider%29.md)
   Creates a color object that uses the specified block to generate its color data dynamically.
+- [+ colorWithDynamicProvider:](./uicolor/colorwithdynamicprovider_.md)
+  Returns a color object that uses the specified block to generate its color data dynamically.
 ### Creating a color from another color object
 - [convenience init(Color)](./uicolor/init%28_%29.md)
   Creates a color object that encapsulates a SwiftUI color.
@@ -40,9 +50,15 @@ Create color objects when you want to use specific colors in your UI, altering t
   Creates a color object using the specified Quartz color reference.
 - [func withAlphaComponent(CGFloat) -> UIColor](./uicolor/withalphacomponent%28_%29.md)
   Creates a color object that has the same color space and component values as the receiver, but has the specified alpha component.
+- [+ colorWithCIColor:](./uicolor/colorwithcicolor_.md)
+  Creates a color object that encapsulates a Core Image color.
+- [+ colorWithCGColor:](./uicolor/colorwithcgcolor_.md)
+  Creates a color object using the specified Quartz color reference.
 ### Creating a pattern-based color
 - [init(patternImage: UIImage)](./uicolor/init%28patternimage%29.md)
   Creates a color object using the specified image object.
+- [+ colorWithPatternImage:](./uicolor/colorwithpatternimage_.md)
+  Creates a color object using the specified image.
 ### Creating a color from a resource
 - [convenience init(resource: ColorResource)](./uicolor/init%28resource%29.md)
 

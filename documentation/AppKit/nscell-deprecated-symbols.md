@@ -20,6 +20,23 @@ Although these symbols are available for use, Apple is no longer actively develo
 ### Deprecated constants
 - [class let currentControlTintDidChangeNotification: NSNotification.Name](./nscolor/currentcontroltintdidchangenotification.md)
   Sent after the user changes control tint preference.
+### Deprecated methods
+- [- setEntryType:](./nscell/setentrytype_.md)
+  Sets how numeric data is formatted in the receiver and places restrictions on acceptable input.
+- [- entryType](./nscell/entrytype.md)
+  Returns the type of data the user can type into the receiver.
+- [- isEntryAcceptable:](./nscell/isentryacceptable_.md)
+  Returns whether a string representing a numeric or date value is formatted in a suitable way for the cell’s entry type.
+- [- setFloatingPointFormat:left:right:](./nscell/setfloatingpointformat_left_right_.md)
+  Sets the auto-ranging and floating point number format of the receiver’s cell.
+- [- setTitleWithMnemonic:](./nscell/settitlewithmnemonic_.md)
+  Sets the title of the receiver with one character in the string denoted as an access key.
+- [- mnemonic](./nscell/mnemonic.md)
+  Returns the character in the receiver’s title that appears underlined for use as a mnemonic.
+- [- setMnemonicLocation:](./nscell/setmnemoniclocation_.md)
+  Sets the character of the receiver’s title to be used as a mnemonic character.
+- [- mnemonicLocation](./nscell/mnemoniclocation.md)
+  Returns the position of the underlined mnemonic character in the receiver’s title.
 
 
 ---

@@ -55,6 +55,8 @@ This method creates a closed subpath that approximates the oval using a sequence
   Creates and returns an empty path object.
 - [init?(coder: NSCoder)](./init%28coder%29.md)
   Creates a Bézier path object from data in an unarchiver.
+- [+ bezierPath](./bezierpath.md)
+  Creates and returns a new Bézier path object.
 
 
 ---

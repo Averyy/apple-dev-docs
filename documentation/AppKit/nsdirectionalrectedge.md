@@ -27,6 +27,8 @@ enum NSDirectionalRectEdge : NSUInteger;
 - [static var leading: NSDirectionalRectEdge](./nsdirectionalrectedge/leading.md)
 - [static var top: NSDirectionalRectEdge](./nsdirectionalrectedge/top.md)
 - [static var trailing: NSDirectionalRectEdge](./nsdirectionalrectedge/trailing.md)
+### Enumeration Cases
+- [NSDirectionalRectEdgeNone](./nsdirectionalrectedge/nsdirectionalrectedgenone.md)
 
 ## Relationships
 

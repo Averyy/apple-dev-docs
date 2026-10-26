@@ -52,6 +52,8 @@ Typically assigned to fonts for special characters, such as icons, dingbats, tec
   The font’s style includes highly decorated or stylized character shapes such as those typically used in headlines.
 - [static var scriptsClass: CTFontStylisticClass](./scriptsclass.md)
   The font’s style is among those typefaces designed to simulate handwriting.
+- [kCTFontUnknownClass](./kctfontunknownclass.md)
+  The font has no design classification.
 
 
 ---

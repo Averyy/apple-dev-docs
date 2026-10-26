@@ -1,0 +1,19 @@
+# CSSM_CALLBACK
+
+**Framework**: Security  
+**Kind**: typealias  
+**Role**: Type Alias
+
+**Availability**:
+- macOS 10.0+ - Deprecated in 10.7
+
+## Declaration
+
+```c
+typedef int (*)(struct cssm_data *, void *) CSSM_CALLBACK;
+```
+
+
+---
+
+*[View on Apple Developer](https://developer.apple.com/documentation/security/cssm_callback)*

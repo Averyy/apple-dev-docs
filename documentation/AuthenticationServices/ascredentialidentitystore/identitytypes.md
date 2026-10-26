@@ -35,6 +35,9 @@ enum ASCredentialIdentityTypes : NSUInteger;
 ### Working with raw values
 - [init(rawValue: UInt)](./identitytypes/init%28rawvalue%29.md)
   Creates an instance with the specified raw value.
+### Matching any type
+- [ASCredentialIdentityTypesAll](../ascredentialidentitytypes/ascredentialidentitytypesall.md)
+  A value that matches all identity types.
 
 ## Relationships
 
@@ -58,6 +61,10 @@ enum ASCredentialIdentityTypes : NSUInteger;
 - [enum ASAuthorizationPublicKeyCredentialAttachment](../asauthorizationpublickeycredentialattachment.md)
 - [enum ASPublicKeyCredentialClientDataCrossOriginValue](../aspublickeycredentialclientdatacrossoriginvalue.md)
 - [enum ASUserAgeRange](../asuseragerange.md)
+- [ASAuthorizationPublicKeyCredentialLargeBlobAssertionOperation](../asauthorizationpublickeycredentiallargeblobassertionoperation.md)
+  A type that represents the operation of the large blob assertion.
+- [ASAuthorizationPublicKeyCredentialLargeBlobSupportRequirement](../asauthorizationpublickeycredentiallargeblobsupportrequirement.md)
+  An enumeration of large binary object support requirement values.
 
 
 ---

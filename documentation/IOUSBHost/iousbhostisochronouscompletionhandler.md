@@ -36,6 +36,10 @@ typedef void (^)(int, struct IOUSBHostIsochronousFrame *) IOUSBHostIsochronousCo
   Enqueues a request on an isochronous endpoint.
 - [func sendIORequest(with: NSMutableData, frameList: UnsafeMutablePointer<IOUSBHostIsochronousFrame>, frameListCount: Int, firstFrameNumber: UInt64) throws](./iousbhostpipe/sendiorequest%28with,framelist,framelistcount,firstframenumber%29.md)
   Sends a request on an isochronous endpoint.
+- [- abortWithOption:error:](./iousbhostpipe/abortwithoption_error_.md)
+  Aborts pending input/output requests.
+- [- abortWithError:](./iousbhostpipe/abortwitherror_.md)
+  Aborts pending input/output requests synchronously.
 
 
 ---

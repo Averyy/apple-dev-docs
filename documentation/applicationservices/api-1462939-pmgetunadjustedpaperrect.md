@@ -53,6 +53,14 @@ A result code. See [Result Codes](./core_printing.md#1670007).
   Obtains the rectangle defining the paper size, taking into account orientation, application drawing resolution, and scaling settings.
 - [func PMGetUnadjustedPageRect(PMPageFormat, UnsafeMutablePointer<PMRect>) -> OSStatus](./api-1462944-pmgetunadjustedpagerect.md)
   Obtains the imageable area or page rectangle, unaffected by orientation, resolution, or scaling.
+- [PMGetResolution](./core_printing/api-1805451-pmgetresolution.md)
+  Obtains the current application’s drawing resolution.
+- [PMSetResolution](./core_printing/api-1805452-pmsetresolution.md)
+  Sets the application drawing resolution.
+- [PMSetAdjustedPageRect](./core_printing/api-1805455-pmsetadjustedpagerect.md)
+  Requests a particular page size, adjusted for the current rotation, resolution, or scaling settings.
+- [PMSetUnadjustedPaperRect](./core_printing/api-1805459-pmsetunadjustedpaperrect.md)
+  Requests a particular paper size, unaffected by rotation, resolution, or scaling.
 
 
 ---

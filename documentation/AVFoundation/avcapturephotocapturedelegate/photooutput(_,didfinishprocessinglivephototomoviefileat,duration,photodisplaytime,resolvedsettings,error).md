@@ -31,7 +31,7 @@ optional func photoOutput(_ output: AVCapturePhotoOutput, didFinishProcessingLiv
 
 Use this method to receive the results of a Live Photo capture. When the photo output calls this method, the movie component of the Live Photo has been written to the location specified by the `outputFileURL` parameter and the Live Photo is ready for consumption. (To receive the still image component of the Live Photo, implement the [`photoOutput(_:didFinishProcessingPhoto:previewPhoto:resolvedSettings:bracketSettings:error:)`](./photooutput%28_,didfinishprocessingphoto,previewphoto,resolvedsettings,bracketsettings,error%29.md) method.)
 
-> 💡 **Tip**:  To add captured Live Photos to the user’s Photos library, use the [`PHAssetCreationRequest`](https://developer.apple.com/documentation/photos/phassetcreationrequest) class. To use Live Photos from the Photos library, use the [`PHLivePhoto`](https://developer.apple.com/documentation/photos/phlivephoto) and [`PHLivePhotoView`](https://developer.apple.com/documentation/photosui/phlivephotoview) classes. To display Live Photo content on the web, use the [LivePhotosKit JS](../../LivePhotosKitJS/LivePhotosKitJS.md) framework.
+> 💡 **Tip**:  To add captured Live Photos to the user’s Photos library, use the [`PHAssetCreationRequest`](../../Photos/phassetcreationrequest.md) class. To use Live Photos from the Photos library, use the [`PHLivePhoto`](../../Photos/phlivephoto.md) and [`PHLivePhotoView`](../../PhotosUI/phlivephotoview.md) classes. To display Live Photo content on the web, use the [LivePhotosKit JS](../../LivePhotosKitJS/LivePhotosKitJS.md) framework.
 
 You don’t need to implement this method if you’re not requesting Live Photo capture.
 

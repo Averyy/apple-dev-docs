@@ -42,6 +42,9 @@ You can animate changes to this property’s value. See [Animating SceneKit Cont
   The extent of the extruded text in the z-axis direction. Animatable.
 - [var chamferProfile: UIBezierPath?](./chamferprofile.md)
   A path that determines the cross-sectional contour of each chamfered edge.
+### Related Documentation
+- [chamferSegmentCount](./chamfersegmentcount.md)
+  The number of divisions SceneKit uses to create each chamfered edge of the text geometry. Animatable.
 
 
 ---

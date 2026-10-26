@@ -30,6 +30,15 @@ class ODMappings
 ### Instance Methods
 - [func recordMap(forStandardRecordType: String!) -> ODRecordMap!](./odmappings/recordmap%28forstandardrecordtype%29.md)
 - [func setRecordMap(ODRecordMap!, forStandardRecordType: String!)](./odmappings/setrecordmap%28_,forstandardrecordtype%29.md)
+### Instance Variables
+- [comment](./odmappings/comment-c.ivar.md)
+- [function](./odmappings/function-c.ivar.md)
+- [functionAttributes](./odmappings/functionattributes-c.ivar.md)
+- [identifier](./odmappings/identifier-c.ivar.md)
+- [recordTypes](./odmappings/recordtypes-c.ivar.md)
+- [templateName](./odmappings/templatename-c.ivar.md)
+### Type Methods
+- [+ mappings](./odmappings/mappings.md)
 
 ## Relationships
 

@@ -50,6 +50,10 @@ The current path is cleared as a side effect of calling this function.
   Paints a rectangular path, using the specified line width.
 - [func strokeLineSegments(between: [CGPoint])](./strokelinesegments%28between%29.md)
   Strokes a sequence of line segments.
+- [CGContextFillRects](../cgcontextfillrects.md)
+  Paints the areas contained within the provided rectangles, using the fill color in the current graphics state.
+- [CGContextStrokeLineSegments](../cgcontextstrokelinesegments.md)
+  Strokes a sequence of line segments.
 
 
 ---

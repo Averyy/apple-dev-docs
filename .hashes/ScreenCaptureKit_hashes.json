@@ -111,7 +111,7 @@
       "hash": "c24d77248781ff719d3ba8e5b458655bd76ddff9352468bf697c11b4d46dd9d5"
     },
     "https://developer.apple.com/documentation/screencapturekit/sccontentfilter/contentrect": {
-      "etag": "\"33ba-65d55edc047ac-df\"",
+      "etag": "\"33ba-65d55edc047ac\"",
       "file_path": "documentation/ScreenCaptureKit/sccontentfilter/contentrect.md",
       "hash": "17f1a9c1563d8b12eebc234ee6867deb47fd1d5498ff1f27e85ae280a751a4c7"
     },
@@ -215,6 +215,11 @@
       "file_path": "documentation/ScreenCaptureKit/sccontentsharingpicker/defaultconfiguration-94q2b.md",
       "hash": "0158dca1e6164418d94bcdf4e3ac3e670a5c28fcb198df8159dbd7e0b236b26e"
     },
+    "https://developer.apple.com/documentation/screencapturekit/sccontentsharingpicker/defaultconfiguration-9v5sa": {
+      "etag": "\"1ca8-65d55edbe7ba5-df\"",
+      "file_path": "documentation/ScreenCaptureKit/sccontentsharingpicker/defaultconfiguration-9v5sa.md",
+      "hash": "cf39c5b4ffcf1230574dabcbd1050567c9023486a76784223601f9242b7a6202"
+    },
     "https://developer.apple.com/documentation/screencapturekit/sccontentsharingpicker/isactive": {
       "etag": "\"22df-65d55edbe7ba5-df\"",
       "file_path": "documentation/ScreenCaptureKit/sccontentsharingpicker/isactive.md",
@@ -229,6 +234,11 @@
       "etag": "\"2375-65d55edbe7ba5-df\"",
       "file_path": "documentation/ScreenCaptureKit/sccontentsharingpicker/maximumstreamcount-2kuaa.md",
       "hash": "f22901f23aa7aa94d449fbf8ff6482416705bb8d1df15232872e4cbb1df1da2d"
+    },
+    "https://developer.apple.com/documentation/screencapturekit/sccontentsharingpicker/maximumstreamcount-66khx": {
+      "etag": "\"1d3a-65d55edbe7ba5-df\"",
+      "file_path": "documentation/ScreenCaptureKit/sccontentsharingpicker/maximumstreamcount-66khx.md",
+      "hash": "e5329d0e697e4c751a3e7f35cac64b06620d52c323023ab3d70a8ca369c20ca0"
     },
     "https://developer.apple.com/documentation/screencapturekit/sccontentsharingpicker/present()": {
       "etag": "\"2ee2-65d55edbe7ba5-df\"",
@@ -265,10 +275,50 @@
       "file_path": "documentation/ScreenCaptureKit/sccontentsharingpicker/setconfiguration(_,for).md",
       "hash": "e53ec33e90d4277d3f47f5dce73d440e0b6e737df97320152b303dfc795ba46c"
     },
+    "https://developer.apple.com/documentation/screencapturekit/sccontentsharingpicker/setconfiguration:forstream:": {
+      "etag": "\"25d8-65d55edbe7ba5-df\"",
+      "file_path": "documentation/ScreenCaptureKit/sccontentsharingpicker/setconfiguration_forstream_.md",
+      "hash": "de49900eb9364db46fb29c33365cff095db014dc06ddad942aecc5fd45d3e1e7"
+    },
     "https://developer.apple.com/documentation/screencapturekit/sccontentsharingpicker/shared": {
       "etag": "\"20e5-65d55edbe7ba5-df\"",
       "file_path": "documentation/ScreenCaptureKit/sccontentsharingpicker/shared.md",
       "hash": "bedfce5d1c094b260cd509ebff16ae51a9887a679ee2d91c93a28dacdcac5f65"
+    },
+    "https://developer.apple.com/documentation/screencapturekit/sccontentsharingpickerconfiguration-c.class": {
+      "etag": "\"354d-65d55edbe7ba5-df\"",
+      "file_path": "documentation/ScreenCaptureKit/sccontentsharingpickerconfiguration-c.class.md",
+      "hash": "d3b1cfe9b1c1f2dcdb2fc8d6978d60101f71605e54228385fda21b57532bff8e"
+    },
+    "https://developer.apple.com/documentation/screencapturekit/sccontentsharingpickerconfiguration-c.class/allowedpickermodes": {
+      "etag": "\"2171-65d55edc5fec7-df\"",
+      "file_path": "documentation/ScreenCaptureKit/sccontentsharingpickerconfiguration-c.class/allowedpickermodes.md",
+      "hash": "d51cb3598a5f5e407baedfdd39d6b741ce69c4672bc50e75d4ad6b35adfed181"
+    },
+    "https://developer.apple.com/documentation/screencapturekit/sccontentsharingpickerconfiguration-c.class/allowschangingselectedcontent": {
+      "etag": "\"1cd4-65d55edc5fec7-df\"",
+      "file_path": "documentation/ScreenCaptureKit/sccontentsharingpickerconfiguration-c.class/allowschangingselectedcontent.md",
+      "hash": "d0efbd31d07459946e6b0adda9f159fad8995a9be278267545a5720e3ed39f4a"
+    },
+    "https://developer.apple.com/documentation/screencapturekit/sccontentsharingpickerconfiguration-c.class/excludedbundleids": {
+      "etag": "\"1bc9-65d55edc5fec7-df\"",
+      "file_path": "documentation/ScreenCaptureKit/sccontentsharingpickerconfiguration-c.class/excludedbundleids.md",
+      "hash": "27d15d45f373ec1cab094390dd44aa0ebab842f0e677615b79d394928e38184b"
+    },
+    "https://developer.apple.com/documentation/screencapturekit/sccontentsharingpickerconfiguration-c.class/excludedwindowids": {
+      "etag": "\"2a79-65d55edc5fec7-df\"",
+      "file_path": "documentation/ScreenCaptureKit/sccontentsharingpickerconfiguration-c.class/excludedwindowids.md",
+      "hash": "0bc345a3a8c1666ddca7968f5d63559b4fd2bf51d43960ca9dd25c25d95b52b6"
+    },
+    "https://developer.apple.com/documentation/screencapturekit/sccontentsharingpickerconfiguration-c.class/showscameracontrol": {
+      "etag": "\"1263-65d55edc5fec7-df\"",
+      "file_path": "documentation/ScreenCaptureKit/sccontentsharingpickerconfiguration-c.class/showscameracontrol.md",
+      "hash": "a47a686949feee91ec697a3ab0d0ebf5630644c96b2718360369db21f9032ece"
+    },
+    "https://developer.apple.com/documentation/screencapturekit/sccontentsharingpickerconfiguration-c.class/showsmicrophonecontrol": {
+      "etag": "\"1286-65d55edc5fec7-df\"",
+      "file_path": "documentation/ScreenCaptureKit/sccontentsharingpickerconfiguration-c.class/showsmicrophonecontrol.md",
+      "hash": "be23483df9cecf4eb57fe07b923e9beda52ca2ea2464717917ed902c330a3c0c"
     },
     "https://developer.apple.com/documentation/screencapturekit/sccontentsharingpickerconfiguration-swift.struct": {
       "etag": "\"39a6-65d55edc7570f-df\"",
@@ -1746,7 +1796,7 @@
       "hash": "c24d77248781ff719d3ba8e5b458655bd76ddff9352468bf697c11b4d46dd9d5"
     },
     "https://developer.apple.com/tutorials/data/documentation/screencapturekit/sccontentfilter/contentrect.json": {
-      "etag": "\"33ba-65d55edc047ac-df\"",
+      "etag": "\"33ba-65d55edc047ac\"",
       "file_path": "documentation/ScreenCaptureKit/sccontentfilter/contentrect.md",
       "hash": "17f1a9c1563d8b12eebc234ee6867deb47fd1d5498ff1f27e85ae280a751a4c7"
     },
@@ -1850,6 +1900,11 @@
       "file_path": "documentation/ScreenCaptureKit/sccontentsharingpicker/defaultconfiguration-94q2b.md",
       "hash": "0158dca1e6164418d94bcdf4e3ac3e670a5c28fcb198df8159dbd7e0b236b26e"
     },
+    "https://developer.apple.com/tutorials/data/documentation/screencapturekit/sccontentsharingpicker/defaultconfiguration-9v5sa.json": {
+      "etag": "\"1ca8-65d55edbe7ba5-df\"",
+      "file_path": "documentation/ScreenCaptureKit/sccontentsharingpicker/defaultconfiguration-9v5sa.md",
+      "hash": "cf39c5b4ffcf1230574dabcbd1050567c9023486a76784223601f9242b7a6202"
+    },
     "https://developer.apple.com/tutorials/data/documentation/screencapturekit/sccontentsharingpicker/isactive.json": {
       "etag": "\"22df-65d55edbe7ba5-df\"",
       "file_path": "documentation/ScreenCaptureKit/sccontentsharingpicker/isactive.md",
@@ -1864,6 +1919,11 @@
       "etag": "\"2375-65d55edbe7ba5-df\"",
       "file_path": "documentation/ScreenCaptureKit/sccontentsharingpicker/maximumstreamcount-2kuaa.md",
       "hash": "f22901f23aa7aa94d449fbf8ff6482416705bb8d1df15232872e4cbb1df1da2d"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/screencapturekit/sccontentsharingpicker/maximumstreamcount-66khx.json": {
+      "etag": "\"1d3a-65d55edbe7ba5-df\"",
+      "file_path": "documentation/ScreenCaptureKit/sccontentsharingpicker/maximumstreamcount-66khx.md",
+      "hash": "e5329d0e697e4c751a3e7f35cac64b06620d52c323023ab3d70a8ca369c20ca0"
     },
     "https://developer.apple.com/tutorials/data/documentation/screencapturekit/sccontentsharingpicker/present().json": {
       "etag": "\"2ee2-65d55edbe7ba5-df\"",
@@ -1900,10 +1960,50 @@
       "file_path": "documentation/ScreenCaptureKit/sccontentsharingpicker/setconfiguration(_,for).md",
       "hash": "e53ec33e90d4277d3f47f5dce73d440e0b6e737df97320152b303dfc795ba46c"
     },
+    "https://developer.apple.com/tutorials/data/documentation/screencapturekit/sccontentsharingpicker/setconfiguration:forstream:.json": {
+      "etag": "\"25d8-65d55edbe7ba5-df\"",
+      "file_path": "documentation/ScreenCaptureKit/sccontentsharingpicker/setconfiguration_forstream_.md",
+      "hash": "de49900eb9364db46fb29c33365cff095db014dc06ddad942aecc5fd45d3e1e7"
+    },
     "https://developer.apple.com/tutorials/data/documentation/screencapturekit/sccontentsharingpicker/shared.json": {
       "etag": "\"20e5-65d55edbe7ba5-df\"",
       "file_path": "documentation/ScreenCaptureKit/sccontentsharingpicker/shared.md",
       "hash": "bedfce5d1c094b260cd509ebff16ae51a9887a679ee2d91c93a28dacdcac5f65"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/screencapturekit/sccontentsharingpickerconfiguration-c.class.json": {
+      "etag": "\"354d-65d55edbe7ba5-df\"",
+      "file_path": "documentation/ScreenCaptureKit/sccontentsharingpickerconfiguration-c.class.md",
+      "hash": "d3b1cfe9b1c1f2dcdb2fc8d6978d60101f71605e54228385fda21b57532bff8e"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/screencapturekit/sccontentsharingpickerconfiguration-c.class/allowedpickermodes.json": {
+      "etag": "\"2171-65d55edc5fec7-df\"",
+      "file_path": "documentation/ScreenCaptureKit/sccontentsharingpickerconfiguration-c.class/allowedpickermodes.md",
+      "hash": "d51cb3598a5f5e407baedfdd39d6b741ce69c4672bc50e75d4ad6b35adfed181"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/screencapturekit/sccontentsharingpickerconfiguration-c.class/allowschangingselectedcontent.json": {
+      "etag": "\"1cd4-65d55edc5fec7-df\"",
+      "file_path": "documentation/ScreenCaptureKit/sccontentsharingpickerconfiguration-c.class/allowschangingselectedcontent.md",
+      "hash": "d0efbd31d07459946e6b0adda9f159fad8995a9be278267545a5720e3ed39f4a"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/screencapturekit/sccontentsharingpickerconfiguration-c.class/excludedbundleids.json": {
+      "etag": "\"1bc9-65d55edc5fec7-df\"",
+      "file_path": "documentation/ScreenCaptureKit/sccontentsharingpickerconfiguration-c.class/excludedbundleids.md",
+      "hash": "27d15d45f373ec1cab094390dd44aa0ebab842f0e677615b79d394928e38184b"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/screencapturekit/sccontentsharingpickerconfiguration-c.class/excludedwindowids.json": {
+      "etag": "\"2a79-65d55edc5fec7-df\"",
+      "file_path": "documentation/ScreenCaptureKit/sccontentsharingpickerconfiguration-c.class/excludedwindowids.md",
+      "hash": "0bc345a3a8c1666ddca7968f5d63559b4fd2bf51d43960ca9dd25c25d95b52b6"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/screencapturekit/sccontentsharingpickerconfiguration-c.class/showscameracontrol.json": {
+      "etag": "\"1263-65d55edc5fec7-df\"",
+      "file_path": "documentation/ScreenCaptureKit/sccontentsharingpickerconfiguration-c.class/showscameracontrol.md",
+      "hash": "a47a686949feee91ec697a3ab0d0ebf5630644c96b2718360369db21f9032ece"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/screencapturekit/sccontentsharingpickerconfiguration-c.class/showsmicrophonecontrol.json": {
+      "etag": "\"1286-65d55edc5fec7-df\"",
+      "file_path": "documentation/ScreenCaptureKit/sccontentsharingpickerconfiguration-c.class/showsmicrophonecontrol.md",
+      "hash": "be23483df9cecf4eb57fe07b923e9beda52ca2ea2464717917ed902c330a3c0c"
     },
     "https://developer.apple.com/tutorials/data/documentation/screencapturekit/sccontentsharingpickerconfiguration-swift.struct.json": {
       "etag": "\"39a6-65d55edc7570f-df\"",
@@ -3273,8 +3373,8 @@
   },
   "metadata": {
     "render": {
-      "version": 1
+      "version": 2
     },
-    "total_pages": 654
+    "total_pages": 674
   }
 }

@@ -15,6 +15,11 @@
       "file_path": "documentation/AppMigrationKit/appmigrationextension/appcontainer.md",
       "hash": "c6b4c5daa93209f3b29cc99c0051142544fb17fd150a1e2710022eb73d5eb651"
     },
+    "https://developer.apple.com/documentation/appmigrationkit/appmigrationextension/appcontainer-44kyi": {
+      "etag": "\"1436-65d55d58ff987-df\"",
+      "file_path": "documentation/AppMigrationKit/appmigrationextension/appcontainer-44kyi.md",
+      "hash": "ac498ceac81c68e8efd32142aaf91a272f6985fe61b275b4ebb396cd8b474e2c"
+    },
     "https://developer.apple.com/documentation/appmigrationkit/appmigrationtester": {
       "etag": "\"31d4-65d55d58ff987-df\"",
       "file_path": "documentation/AppMigrationKit/appmigrationtester.md",
@@ -335,6 +340,11 @@
       "file_path": "documentation/AppMigrationKit/appmigrationextension.md",
       "hash": "071dc7e38f54b61d8e15e17b78ef5d46e64d8f983f3da8927dd356213d96fb7e"
     },
+    "https://developer.apple.com/tutorials/data/documentation/appmigrationkit/appmigrationextension/appcontainer-44kyi.json": {
+      "etag": "\"1436-65d55d58ff987-df\"",
+      "file_path": "documentation/AppMigrationKit/appmigrationextension/appcontainer-44kyi.md",
+      "hash": "ac498ceac81c68e8efd32142aaf91a272f6985fe61b275b4ebb396cd8b474e2c"
+    },
     "https://developer.apple.com/tutorials/data/documentation/appmigrationkit/appmigrationextension/appcontainer.json": {
       "etag": "\"18bc-65d55d58ff987-df\"",
       "file_path": "documentation/AppMigrationKit/appmigrationextension/appcontainer.md",
@@ -653,8 +663,8 @@
   },
   "metadata": {
     "render": {
-      "version": 1
+      "version": 2
     },
-    "total_pages": 130
+    "total_pages": 132
   }
 }

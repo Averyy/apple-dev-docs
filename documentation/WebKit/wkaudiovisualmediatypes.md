@@ -36,6 +36,8 @@ To indicate that no user gestures are required to play media, use an empty set o
   Media types that contain video require a user gesture to begin playing.
 - [static var all: WKAudiovisualMediaTypes](./wkaudiovisualmediatypes/all.md)
   All media types require a user gesture to begin playing.
+- [WKAudiovisualMediaTypeNone](./wkaudiovisualmediatypes/wkaudiovisualmediatypenone.md)
+  No media types require a user gesture to begin playing.
 ### Initializers
 - [init(rawValue: UInt)](./wkaudiovisualmediatypes/init%28rawvalue%29.md)
 

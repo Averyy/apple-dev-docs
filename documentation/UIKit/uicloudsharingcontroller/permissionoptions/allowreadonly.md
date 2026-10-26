@@ -35,6 +35,8 @@ To give the user the option to prevent other people from editing the shared data
   The option that restricts access to people who have been invited.
 - [static var allowReadWrite: UICloudSharingController.PermissionOptions](./allowreadwrite.md)
   The option that gives participants read/write permission to the shared data.
+- [UICloudSharingPermissionStandard](../../uicloudsharingpermissionoptions/uicloudsharingpermissionstandard.md)
+  The option that makes all user options available.
 
 
 ---

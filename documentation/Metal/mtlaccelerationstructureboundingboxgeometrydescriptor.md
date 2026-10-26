@@ -40,6 +40,9 @@ class MTLAccelerationStructureBoundingBoxGeometryDescriptor
   The offset, in bytes, to the first bounding box in the buffer.
 - [var boundingBoxStride: Int](./mtlaccelerationstructureboundingboxgeometrydescriptor/boundingboxstride.md)
   The stride, in bytes, between bounding boxes in the buffer.
+### Creating a bounding box geometry descriptor
+- [+ descriptor](./mtlaccelerationstructureboundingboxgeometrydescriptor/descriptor.md)
+  Creates a new bounding box descriptor.
 
 ## Relationships
 

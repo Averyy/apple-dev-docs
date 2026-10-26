@@ -49,6 +49,10 @@ For more information, see [GameplayKit Programming Guide](https://developer.appl
 ### Creating a Graph
 - [init(fromGridStartingAt: vector_int2, width: Int32, height: Int32, diagonalsAllowed: Bool)](./init%28fromgridstartingat,width,height,diagonalsallowed%29.md)
   Initializes a graph that describes an integer grid with the specified dimensions.
+- [+ graphFromGridStartingAt:width:height:diagonalsAllowed:nodeClass:](./graphfromgridstartingat_width_height_diagonalsallowed_nodeclass_.md)
+  Creates a graph that describes an integer grid with the specified dimensions, using the specified node class.
+- [+ graphFromGridStartingAt:width:height:diagonalsAllowed:](./graphfromgridstartingat_width_height_diagonalsallowed_.md)
+  Creates a graph that describes an integer grid with the specified dimensions.
 
 
 ---

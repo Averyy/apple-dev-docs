@@ -18,6 +18,8 @@
 - [typealias objc_objectptr_t](./objc_objectptr_t.md)
 - [typealias objc_uncaught_exception_handler](./objc_uncaught_exception_handler.md)
 - [typealias objc_zone_t](./objc_zone_t.md)
+- [NSUInteger](./nsuinteger.md)
+  Describes an unsigned integer.
 
 ## See Also
 

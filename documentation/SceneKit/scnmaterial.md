@@ -38,6 +38,10 @@ You attach one or more materials to an instance of the [`SCNGeometry`](./scngeom
 ### Creating a Material
 - [var name: String?](./scnmaterial/name.md)
   A name associated with the material.
+- [+ material](./scnmaterial/material.md)
+  Creates a new material object.
+- [+ materialWithMDLMaterial:](./scnmaterial/materialwithmdlmaterial_.md)
+  Creates a material from the specified Model I/O material object.
 ### Choosing a Shading Model
 - [var lightingModel: SCNMaterial.LightingModel](./scnmaterial/lightingmodel-swift.property.md)
   The lighting formula that SceneKit uses to render the material.

@@ -56,6 +56,8 @@ Note that if the receiver is able to forward `aSelector` messages to another obj
 ### Related Documentation
 - [class func instancesRespond(to: Selector!) -> Bool](../nsobject-swift.class/instancesrespond%28to%29.md)
   Returns a Boolean value that indicates whether instances of the receiver are capable of responding to a given selector.
+- [- forwardInvocation:](../nsobject-swift.class/forwardinvocation_.md)
+  Overridden by subclasses to forward messages to other objects.
 ### Testing Object Inheritance, Behavior, and Conformance
 - [func isKind(of: AnyClass) -> Bool](./iskind%28of%29.md)
   Returns a Boolean value that indicates whether the receiver is an instance of given class or an instance of any class that inherits from that class.

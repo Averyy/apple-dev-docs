@@ -45,6 +45,10 @@ You typically don’t create instances of this class yourself. Instead, you regi
   The view that displays behind the cell’s other content.
 - [var selectedBackgroundView: UIView?](./uicollectionviewcell/selectedbackgroundview.md)
   The view that displays just above the background view for a selected cell.
+- [- defaultBackgroundConfiguration](./uicollectionviewcell/defaultbackgroundconfiguration.md)
+  Retrieves a background configuration with system default values.
+- [backgroundConfiguration](./uicollectionviewcell/backgroundconfiguration-39dc0.md)
+  The current background configuration of the cell.
 ### Managing the content
 - [var contentConfiguration: (any UIContentConfiguration)?](./uicollectionviewcell/contentconfiguration-13e7k.md)
   The current content configuration of the cell.
@@ -52,6 +56,8 @@ You typically don’t create instances of this class yourself. Instead, you regi
   A Boolean value that determines whether the cell automatically updates its content configuration when its state changes.
 - [var contentView: UIView](./uicollectionviewcell/contentview.md)
   The main view that you add your cell’s custom content to.
+- [contentConfiguration](./uicollectionviewcell/contentconfiguration-1lcqh.md)
+  The current content configuration of the cell.
 ### Managing the state
 - [var configurationState: UICellConfigurationState](./uicollectionviewcell/configurationstate-4u37h.md)
   The current configuration state of the cell.
@@ -67,6 +73,14 @@ You typically don’t create instances of this class yourself. Instead, you regi
   The selection state of the cell.
 - [var isHighlighted: Bool](./uicollectionviewcell/ishighlighted.md)
   The highlight state of the cell.
+- [configurationState](./uicollectionviewcell/configurationstate-4269k.md)
+  The current configuration state of the cell.
+- [- updateConfigurationUsingState:](./uicollectionviewcell/updateconfigurationusingstate_.md)
+  Updates the cell’s configuration using the current state.
+- [configurationUpdateHandler](./uicollectionviewcell/configurationupdatehandler-ajhn.md)
+  A block for handling updates to the cell’s configuration using the current state.
+- [UICollectionViewCellConfigurationUpdateHandler](./uicollectionviewcellconfigurationupdatehandler.md)
+  The type of block for handling updates to the cell’s configuration using the current state.
 ### Managing drag state changes
 - [func dragStateDidChange(UICollectionViewCell.DragState)](./uicollectionviewcell/dragstatedidchange%28_%29.md)
   Called when the drag state of the cell changes.

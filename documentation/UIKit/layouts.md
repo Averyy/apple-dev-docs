@@ -91,6 +91,8 @@ For design guidance, see [Human Interface Guidelines](https://developer.apple.co
 ### Data
 - [struct NSDiffableDataSourceSnapshot](./nsdiffabledatasourcesnapshot-swift.struct.md)
   A representation of the state of the data in a view at a specific point in time.
+- [NSDiffableDataSourceSnapshot](./nsdiffabledatasourcesnapshotreference.md)
+  A representation of the state of the data in a view at a specific point in time.
 
 ## See Also
 

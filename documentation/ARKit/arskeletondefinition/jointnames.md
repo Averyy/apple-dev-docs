@@ -33,6 +33,10 @@ Refer to this array to convert a joint index to a joint identifier.
   Returns the index for a given joint identifier.
 - [var parentIndices: [Int]](./parentindices-u2u9.md)
   The parent index for each joint.
+- [- indexForJointName:](./indexforjointname_.md)
+  Returns the index for a given joint identifier.
+- [parentIndices](./parentindices-82iw2.md)
+  The parent index for each joint.
 
 
 ---

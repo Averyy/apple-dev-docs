@@ -76,6 +76,8 @@ This function sets credentials for all references to the node. If you only want 
   Returns the type ID for an Open Directory node.
 - [func ODNodeSetCredentials(ODNodeRef!, String!, CFString!, CFString!, UnsafeMutablePointer<Unmanaged<CFError>?>!) -> Bool](./odnodesetcredentials%28_,_,_,_,_%29.md)
   Sets credentials for interacting with a node.
+- [ODNodeSetCredentialsUsingKerberosCache](./odnodesetcredentialsusingkerberoscache.md)
+  Sets credentials for interacting with a node with the Kerberos cache.
 
 
 ---

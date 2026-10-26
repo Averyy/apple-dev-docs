@@ -32,6 +32,8 @@ var participantPermission: CKShare.ParticipantPermission { get }
   The share’s participant role for the user who retrieves the metadata.
 - [var participantStatus: CKShare.ParticipantAcceptanceStatus](./participantstatus.md)
   The share’s participation status for the user who retrieves the metadata.
+- [participantType](../../cksharemetadata/participanttype.md)
+  The share’s participation type for the user who retrieves the metadata.
 
 
 ---

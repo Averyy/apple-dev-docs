@@ -32,6 +32,8 @@ This template belongs to the [`CLKComplicationFamily.extraLarge`](./clkcomplicat
 ### Creating the Template
 - [init(textProvider: CLKTextProvider)](./clkcomplicationtemplateextralargesimpletext/init%28textprovider%29.md)
   Creates a new template from the provided text.
+- [+ templateWithTextProvider:](./clkcomplicationtemplateextralargesimpletext/templatewithtextprovider_.md)
+  Returns a new template from the provided text.
 ### Setting the Complication Data
 - [var textProvider: CLKTextProvider](./clkcomplicationtemplateextralargesimpletext/textprovider.md)
   The text to display in the complication.

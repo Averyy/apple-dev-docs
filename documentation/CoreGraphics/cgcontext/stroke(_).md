@@ -50,6 +50,10 @@ The line width and stroke color of the context’s graphics state are used to pa
   Strokes an ellipse that fits inside the specified rectangle.
 - [func strokeLineSegments(between: [CGPoint])](./strokelinesegments%28between%29.md)
   Strokes a sequence of line segments.
+- [CGContextFillRects](../cgcontextfillrects.md)
+  Paints the areas contained within the provided rectangles, using the fill color in the current graphics state.
+- [CGContextStrokeLineSegments](../cgcontextstrokelinesegments.md)
+  Strokes a sequence of line segments.
 
 
 ---

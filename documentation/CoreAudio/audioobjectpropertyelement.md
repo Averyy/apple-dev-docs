@@ -42,6 +42,8 @@ The element selects one of possibly many items in the section of the object in w
 - [typealias AudioObjectPropertyScope](./audioobjectpropertyscope.md)
 - [typealias AudioObjectPropertySelector](./audioobjectpropertyselector.md)
 - [typealias AudioStreamID](./audiostreamid.md)
+- [AudioDriverPlugInDevicePropertyChangedProc](./audiodriverplugindevicepropertychangedproc.md)
+- [AudioDriverPlugInStreamPropertyChangedProc](./audiodriverpluginstreampropertychangedproc.md)
 
 
 ---

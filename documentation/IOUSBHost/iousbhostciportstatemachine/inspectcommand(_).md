@@ -23,6 +23,7 @@ func inspectCommand(_ command: UnsafePointer<IOUSBHostCIMessage>) throws
 ### Instance Methods
 - [func respond(toCommand: UnsafePointer<IOUSBHostCIMessage>, status: IOUSBHostCIMessageStatus) throws](./respond%28tocommand,status%29.md)
 - [func updateLinkState(IOUSBHostCILinkState, speed: IOUSBHostCIDeviceSpeed, inhibitLinkStateChange: Bool) throws](./updatelinkstate%28_,speed,inhibitlinkstatechange%29.md)
+- [- initWithInterface:portNumber:error:](./initwithinterface_portnumber_error_.md)
 
 
 ---

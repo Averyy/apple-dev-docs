@@ -54,6 +54,9 @@ This method is the getter for the [`NSAccessibilityProtocol`](../nsaccessibility
   Sets the table’s currently selected rows.
 - [func accessibilityHeaderGroup() -> String?](./accessibilityheadergroup%28%29.md)
   Returns the header group for the table.
+### Related Documentation
+- [accessibilityVisibleCells](../nsaccessibility-c.protocol/accessibilityvisiblecells.md)
+  The visible cells for the table.
 
 
 ---

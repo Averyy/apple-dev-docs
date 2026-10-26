@@ -23,6 +23,12 @@ var outgoingMTU: BluetoothL2CAPMTU { get }
 
 The outgoing MTU represents the maximum L2CAP packet size for packets being sent to the remote device.
 
+## See Also
+
+### Related Documentation
+- [- getOutgoingMTU](./getoutgoingmtu.md)
+  Returns the current outgoing MTU for the L2CAP channel.
+
 
 ---
 

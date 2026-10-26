@@ -60,6 +60,28 @@ The default labels contained in the Address Book database for specifying differe
   Work fax number.
 - [let kABPhonePagerLabel: String](./kabphonepagerlabel.md)
   Pager number.
+- [kABAIMWorkLabel](./kabaimworklabel.md)
+  Work AOL instant messaging ID.
+- [kABAIMHomeLabel](./kabaimhomelabel.md)
+  Home AOL instant messaging ID.
+- [kABAIMMobileMeLabel](./kabaimmobilemelabel.md)
+  Mobile Me AOL instant messaging ID.
+- [kABJabberWorkLabel](./kabjabberworklabel.md)
+  Work Jabber instant messaging ID.
+- [kABJabberHomeLabel](./kabjabberhomelabel.md)
+  Home Jabber instant messaging ID.
+- [kABMSNWorkLabel](./kabmsnworklabel.md)
+  Work MSN instant messaging ID.
+- [kABMSNHomeLabel](./kabmsnhomelabel.md)
+  Home MSN instant messaging ID.
+- [kABYahooWorkLabel](./kabyahooworklabel.md)
+  Work Yahoo instant messaging ID.
+- [kABYahooHomeLabel](./kabyahoohomelabel.md)
+  Home Yahoo instant messaging ID.
+- [kABICQWorkLabel](./kabicqworklabel.md)
+  Work ICQ instant messaging ID.
+- [kABICQHomeLabel](./kabicqhomelabel.md)
+  Home ICQ instant messaging ID.
 
 ## See Also
 

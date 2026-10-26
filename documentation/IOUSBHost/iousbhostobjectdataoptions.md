@@ -32,6 +32,8 @@ Options for dataWithCapacity:options:error
 - [init(rawValue: UInt)](./iousbhostobjectdataoptions/init%28rawvalue%29.md)
 ### Type Properties
 - [static var kernelUserShared: IOUSBHostObjectDataOptions](./iousbhostobjectdataoptions/kernelusershared.md)
+### Enumeration Cases
+- [IOUSBHostObjectDataOptionsNone](./iousbhostobjectdataoptions/iousbhostobjectdataoptionsnone.md)
 
 ## Relationships
 

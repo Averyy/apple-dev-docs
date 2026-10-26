@@ -25,6 +25,21 @@
       "file_path": "documentation/MetalKit/model-errors.md",
       "hash": "11cddc80514c892ad9eed688b7070e6a33f870a6b64d9cb553bb52e2a49c7c4e"
     },
+    "https://developer.apple.com/documentation/metalkit/mtk_export": {
+      "etag": "\"9d8-65d56073f0087-df\"",
+      "file_path": "documentation/MetalKit/mtk_export.md",
+      "hash": "e2947b7d9ea54e57c8fc574e80dbc9771f3a4410a5a3b39af3551ccde35eb674"
+    },
+    "https://developer.apple.com/documentation/metalkit/mtk_extern": {
+      "etag": "\"9d8-65d56073f0087-df\"",
+      "file_path": "documentation/MetalKit/mtk_extern.md",
+      "hash": "598b4c6c268d5907c325c76fc30e9174d4fcde6f437ce5faf8b585bae7e462de"
+    },
+    "https://developer.apple.com/documentation/metalkit/mtk_inline": {
+      "etag": "\"9d8-65d56073f0087-df\"",
+      "file_path": "documentation/MetalKit/mtk_inline.md",
+      "hash": "a887907ee6df57b775d1fcf199469f6c33041b23e7643261f8017ee98d597c8f"
+    },
     "https://developer.apple.com/documentation/metalkit/mtkmesh": {
       "etag": "\"6d3a-65d5607408919-df\"",
       "file_path": "documentation/MetalKit/mtkmesh.md",
@@ -44,6 +59,11 @@
       "etag": "\"2320-65d560741e194-df\"",
       "file_path": "documentation/MetalKit/mtkmesh/newmeshes(asset,device).md",
       "hash": "d7daa2bf13a3a6842bdee9a4dfd73438c787a915d2d17b148345e35d82336999"
+    },
+    "https://developer.apple.com/documentation/metalkit/mtkmesh/newmeshesfromasset:device:sourcemeshes:error:": {
+      "etag": "\"3987-65d560741e194-df\"",
+      "file_path": "documentation/MetalKit/mtkmesh/newmeshesfromasset_device_sourcemeshes_error_.md",
+      "hash": "38568f6228abe7be018fa46357adc96abb338335fd5e077aaa75ebdb7ed76ec0"
     },
     "https://developer.apple.com/documentation/metalkit/mtkmesh/submeshes": {
       "etag": "\"1fbb-65d560741e194-df\"",
@@ -95,6 +115,11 @@
       "file_path": "documentation/MetalKit/mtkmeshbuffer/type.md",
       "hash": "f9318246233180000715d340da1fa9769bc9c44acf6436bf7b704b65fb137a3e"
     },
+    "https://developer.apple.com/documentation/metalkit/mtkmeshbuffer/zone": {
+      "etag": "\"2acd-65d5607408919-df\"",
+      "file_path": "documentation/MetalKit/mtkmeshbuffer/zone.md",
+      "hash": "507540e8b0cb54764705a3fad29f290cbb9ddbaea97e187e8011e56597585002"
+    },
     "https://developer.apple.com/documentation/metalkit/mtkmeshbuffer/zone()": {
       "etag": "\"147e-65d5607408919-df\"",
       "file_path": "documentation/MetalKit/mtkmeshbuffer/zone().md",
@@ -119,6 +144,11 @@
       "etag": "\"3232-65d56073f0087-df\"",
       "file_path": "documentation/MetalKit/mtkmetalvertexdescriptorfrommodelio(_).md",
       "hash": "0e4154bd56e271178fafccfafa0f82623414ea07e16217a60660d735335312f1"
+    },
+    "https://developer.apple.com/documentation/metalkit/mtkmetalvertexdescriptorfrommodeliowitherror": {
+      "etag": "\"397f-65d56073f0087-df\"",
+      "file_path": "documentation/MetalKit/mtkmetalvertexdescriptorfrommodeliowitherror.md",
+      "hash": "9720c8ff0fe80da6dd074d47ea7bed824106d56c03cfe5fec907db1b926baaf9"
     },
     "https://developer.apple.com/documentation/metalkit/mtkmetalvertexdescriptorfrommodeliowitherror(_:)": {
       "etag": "\"1c63-65d5607408919-df\"",
@@ -154,6 +184,11 @@
       "etag": "\"33b3-65d5607408919-df\"",
       "file_path": "documentation/MetalKit/mtkmodeliovertexdescriptorfrommetal(_).md",
       "hash": "e3c7719a783fcc3f0565cf507952804dc5b49034f31c91021edbf7eb64e360b6"
+    },
+    "https://developer.apple.com/documentation/metalkit/mtkmodeliovertexdescriptorfrommetalwitherror": {
+      "etag": "\"2d28-65d5607408919-df\"",
+      "file_path": "documentation/MetalKit/mtkmodeliovertexdescriptorfrommetalwitherror.md",
+      "hash": "0a69c9bf0a898efbc775d67a6f016df07e4f7c30a6b493890d6b989ea76dbcc8"
     },
     "https://developer.apple.com/documentation/metalkit/mtkmodeliovertexdescriptorfrommetalwitherror(_:)": {
       "etag": "\"1c27-65d5607408919-df\"",
@@ -620,6 +655,21 @@
       "file_path": "documentation/MetalKit/model-errors.md",
       "hash": "11cddc80514c892ad9eed688b7070e6a33f870a6b64d9cb553bb52e2a49c7c4e"
     },
+    "https://developer.apple.com/tutorials/data/documentation/metalkit/mtk_export.json": {
+      "etag": "\"9d8-65d56073f0087-df\"",
+      "file_path": "documentation/MetalKit/mtk_export.md",
+      "hash": "e2947b7d9ea54e57c8fc574e80dbc9771f3a4410a5a3b39af3551ccde35eb674"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/metalkit/mtk_extern.json": {
+      "etag": "\"9d8-65d56073f0087-df\"",
+      "file_path": "documentation/MetalKit/mtk_extern.md",
+      "hash": "598b4c6c268d5907c325c76fc30e9174d4fcde6f437ce5faf8b585bae7e462de"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/metalkit/mtk_inline.json": {
+      "etag": "\"9d8-65d56073f0087-df\"",
+      "file_path": "documentation/MetalKit/mtk_inline.md",
+      "hash": "a887907ee6df57b775d1fcf199469f6c33041b23e7643261f8017ee98d597c8f"
+    },
     "https://developer.apple.com/tutorials/data/documentation/metalkit/mtkmesh.json": {
       "etag": "\"6d3a-65d5607408919-df\"",
       "file_path": "documentation/MetalKit/mtkmesh.md",
@@ -639,6 +689,11 @@
       "etag": "\"2320-65d560741e194-df\"",
       "file_path": "documentation/MetalKit/mtkmesh/newmeshes(asset,device).md",
       "hash": "d7daa2bf13a3a6842bdee9a4dfd73438c787a915d2d17b148345e35d82336999"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/metalkit/mtkmesh/newmeshesfromasset:device:sourcemeshes:error:.json": {
+      "etag": "\"3987-65d560741e194-df\"",
+      "file_path": "documentation/MetalKit/mtkmesh/newmeshesfromasset_device_sourcemeshes_error_.md",
+      "hash": "38568f6228abe7be018fa46357adc96abb338335fd5e077aaa75ebdb7ed76ec0"
     },
     "https://developer.apple.com/tutorials/data/documentation/metalkit/mtkmesh/submeshes.json": {
       "etag": "\"1fbb-65d560741e194-df\"",
@@ -695,6 +750,11 @@
       "file_path": "documentation/MetalKit/mtkmeshbuffer/zone().md",
       "hash": "04eca53bd094c4e55310f49bbdd48eba54e0d79ac1d4d410905ebc278e8e4060"
     },
+    "https://developer.apple.com/tutorials/data/documentation/metalkit/mtkmeshbuffer/zone.json": {
+      "etag": "\"2acd-65d5607408919-df\"",
+      "file_path": "documentation/MetalKit/mtkmeshbuffer/zone.md",
+      "hash": "507540e8b0cb54764705a3fad29f290cbb9ddbaea97e187e8011e56597585002"
+    },
     "https://developer.apple.com/tutorials/data/documentation/metalkit/mtkmeshbufferallocator.json": {
       "etag": "\"4edb-65d560741e194-df\"",
       "file_path": "documentation/MetalKit/mtkmeshbufferallocator.md",
@@ -719,6 +779,11 @@
       "etag": "\"1c63-65d5607408919-df\"",
       "file_path": "documentation/MetalKit/mtkmetalvertexdescriptorfrommodeliowitherror(_).md",
       "hash": "fce9b693def540e40ab367356b68d26ad90dfc0ee0f866eea547e321dd43c234"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/metalkit/mtkmetalvertexdescriptorfrommodeliowitherror.json": {
+      "etag": "\"397f-65d56073f0087-df\"",
+      "file_path": "documentation/MetalKit/mtkmetalvertexdescriptorfrommodeliowitherror.md",
+      "hash": "9720c8ff0fe80da6dd074d47ea7bed824106d56c03cfe5fec907db1b926baaf9"
     },
     "https://developer.apple.com/tutorials/data/documentation/metalkit/mtkmetalvertexformatfrommodelio(_:).json": {
       "etag": "\"3410-65d56073f0087-df\"",
@@ -754,6 +819,11 @@
       "etag": "\"1c27-65d5607408919-df\"",
       "file_path": "documentation/MetalKit/mtkmodeliovertexdescriptorfrommetalwitherror(_).md",
       "hash": "f5d1a74698271a06111d0f18de3c51eff9015a4212ef17eb4ef22dfc31466881"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/metalkit/mtkmodeliovertexdescriptorfrommetalwitherror.json": {
+      "etag": "\"2d28-65d5607408919-df\"",
+      "file_path": "documentation/MetalKit/mtkmodeliovertexdescriptorfrommetalwitherror.md",
+      "hash": "0a69c9bf0a898efbc775d67a6f016df07e4f7c30a6b493890d6b989ea76dbcc8"
     },
     "https://developer.apple.com/tutorials/data/documentation/metalkit/mtkmodeliovertexformatfrommetal(_:).json": {
       "etag": "\"3426-65d5607408919-df\"",
@@ -1193,8 +1263,8 @@
   },
   "metadata": {
     "render": {
-      "version": 1
+      "version": 2
     },
-    "total_pages": 238
+    "total_pages": 252
   }
 }

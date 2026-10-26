@@ -32,6 +32,8 @@ enum CTFontTableOptions : uint32_t;
   Creates a font table options structure with the specified raw value.
 - [static var excludeSynthetic: CTFontTableOptions](./ctfonttableoptions/excludesynthetic.md)
   The font table excludes synthetic font data.
+- [kCTFontTableOptionNoOptions](./ctfonttableoptions/kctfonttableoptionnooptions.md)
+  No font table options are specified.
 
 ## Relationships
 

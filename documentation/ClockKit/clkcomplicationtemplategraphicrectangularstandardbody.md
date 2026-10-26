@@ -51,6 +51,14 @@ Instead of providing multiple images with different resolutions, you can provide
   Creates a new template that has a header row with an image and text, and a row of body text.
 - [init(headerImageProvider: CLKFullColorImageProvider?, headerTextProvider: CLKTextProvider, body1TextProvider: CLKTextProvider, body2TextProvider: CLKTextProvider?)](./clkcomplicationtemplategraphicrectangularstandardbody/init%28headerimageprovider,headertextprovider,body1textprovider,body2textprovider%29.md)
   Creates a new template that has a header row with an image and text, and two rows of body text.
+- [+ templateWithHeaderTextProvider:body1TextProvider:](./clkcomplicationtemplategraphicrectangularstandardbody/templatewithheadertextprovider_body1textprovider_.md)
+  Returns a new template that has a row of header text and a row of body text.
+- [+ templateWithHeaderTextProvider:body1TextProvider:body2TextProvider:](./clkcomplicationtemplategraphicrectangularstandardbody/templatewithheadertextprovider_body1textprovider_body2textprovider_.md)
+  Returns a new template that has a row of header text and two rows of body text.
+- [+ templateWithHeaderImageProvider:headerTextProvider:body1TextProvider:](./clkcomplicationtemplategraphicrectangularstandardbody/templatewithheaderimageprovider_headertextprovider_body1textprovider_.md)
+  Returns a new template that has a header row with an image and text, and a row of body text.
+- [+ templateWithHeaderImageProvider:headerTextProvider:body1TextProvider:body2TextProvider:](./clkcomplicationtemplategraphicrectangularstandardbody/templatewithheaderimageprovider_headertextprovider_body1textprovider_body2textprovider_.md)
+  Returns a new template that has a header row with an image and text, and two rows of body text.
 ### Setting the Complication Data
 - [var headerTextProvider: CLKTextProvider](./clkcomplicationtemplategraphicrectangularstandardbody/headertextprovider.md)
   The header text to display in the complication.

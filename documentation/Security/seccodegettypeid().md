@@ -28,6 +28,12 @@ A value that identifies the opaque type of a code object.
 
 You can compare the value returned by this function to the [`CFTypeID`](../CoreFoundation/cftypeid.md) identifier obtained by calling the [`CFGetTypeID(_:)`](../CoreFoundation/cfgettypeid%28_%29.md) function on a specific object. These values might change from release to release or platform to platform.
 
+## See Also
+
+### Related Documentation
+- [SecHostCreateGuest](./sechostcreateguest.md)
+  Creates a new guest and describes its initial properties.
+
 
 ---
 

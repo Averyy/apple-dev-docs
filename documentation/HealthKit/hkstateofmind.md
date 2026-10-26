@@ -32,6 +32,11 @@ class HKStateOfMind
 - [var labels: [HKStateOfMind.Label]](./hkstateofmind/labels-994n4.md)
 - [var valence: Double](./hkstateofmind/valence.md)
 - [var valenceClassification: HKStateOfMind.ValenceClassification](./hkstateofmind/valenceclassification-swift.property.md)
+- [associations](./hkstateofmind/associations-5vfw8.md)
+- [labels](./hkstateofmind/labels-11jl3.md)
+### Type Methods
+- [+ stateOfMindWithDate:kind:valence:labels:associations:](./hkstateofmind/stateofmindwithdate_kind_valence_labels_associations_.md)
+- [+ stateOfMindWithDate:kind:valence:labels:associations:metadata:](./hkstateofmind/stateofmindwithdate_kind_valence_labels_associations_metadata_.md)
 
 ## Relationships
 

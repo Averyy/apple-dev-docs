@@ -30,6 +30,8 @@ class MTLAccelerationStructurePassDescriptor
 
 ### Instance Properties
 - [var sampleBufferAttachments: MTLAccelerationStructurePassSampleBufferAttachmentDescriptorArray](./mtlaccelerationstructurepassdescriptor/samplebufferattachments.md)
+### Type Methods
+- [+ accelerationStructurePassDescriptor](./mtlaccelerationstructurepassdescriptor/accelerationstructurepassdescriptor.md)
 
 ## Relationships
 

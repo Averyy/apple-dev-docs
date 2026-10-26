@@ -35,6 +35,12 @@ init?(payload errorCorrectedPayload: Data, rowCount: Int, columnCount: Int, eccV
 - `columnCount`: The number of columns in the Data Matrix code symbol.
 - `eccVersion`: The [`CIDataMatrixCodeDescriptor.ECCVersion`](./eccversion-swift.enum.md) for the Data Matrix code symbol.
 
+## See Also
+
+### Creating a Descriptor
+- [+ descriptorWithPayload:rowCount:columnCount:eccVersion:](./descriptorwithpayload_rowcount_columncount_eccversion_.md)
+  Creates a Data Matrix code descriptor for the given payload and parameters.
+
 
 ---
 

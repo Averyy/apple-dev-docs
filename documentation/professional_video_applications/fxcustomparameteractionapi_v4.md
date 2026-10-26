@@ -21,8 +21,8 @@ protocol FxCustomParameterActionAPI_v4
 
 ## Mentions
 
-- [Adding parameters to plug-ins](https://developer.apple.com/documentation/professional-video-applications/adding-parameters-to-plug-ins)
-- [Understanding time in FxPlug](https://developer.apple.com/documentation/professional-video-applications/understanding-time-in-fxplug)
+- [Adding parameters to plug-ins](../Professional-Video-Applications/adding-parameters-to-plug-ins.md)
+- [Understanding time in FxPlug](../Professional-Video-Applications/understanding-time-in-fxplug.md)
 
 #### Overview
 

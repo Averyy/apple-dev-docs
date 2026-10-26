@@ -47,6 +47,11 @@ Contains properties and methods to query the data types and sizes.
 ### Instance Methods
 - [func sizeInBytes(ofTypes: Set<WKWebExtension.DataType>) -> Int](./datarecord/sizeinbytes%28oftypes%29.md)
   Retrieves the size in bytes of the specific data types in this data record.
+### Errors
+- [WKWebExtensionDataRecordError](./datarecord/error/code.md)
+  Constants that indicate errors in the [`WKWebExtensionDataRecord`](./datarecord.md) domain.
+- [WKWebExtensionDataRecordErrorDomain](./datarecord/errordomain.md)
+  Indicates a [`WKWebExtensionDataRecord`](./datarecord.md) error.
 
 ## Relationships
 

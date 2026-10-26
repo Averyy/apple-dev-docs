@@ -24,6 +24,14 @@ class FloatingPoint
 ### Creating a floating-point parameter object
 - [convenience init(name: String, key: String, description: String, initialValue: Float, maximum: Float, minimum: Float, neutralValue: Float?, cameraValue: Float?)](./floatingpoint/init%28name,key,description,initialvalue,maximum,minimum,neutralvalue,cameravalue%29.md)
   Creates a floating-point parameter object.
+- [- initWithName:key:description:initialValue:maximum:minimum:](../merawprocessingfloatparameter/initwithname_key_description_initialvalue_maximum_minimum_.md)
+  Creates a floating-point parameter object with the initial value.
+- [- initWithName:key:description:initialValue:maximum:minimum:cameraValue:](../merawprocessingfloatparameter/initwithname_key_description_initialvalue_maximum_minimum_cameravalue_.md)
+  Creates a floating-point parameter object with the initial and camera values.
+- [- initWithName:key:description:initialValue:maximum:minimum:neutralValue:](../merawprocessingfloatparameter/initwithname_key_description_initialvalue_maximum_minimum_neutralvalue_.md)
+  Creates a floating-point parameter object with the initial and neutral values.
+- [- initWithName:key:description:initialValue:maximum:minimum:neutralValue:cameraValue:](../merawprocessingfloatparameter/initwithname_key_description_initialvalue_maximum_minimum_neutralvalue_cameravalue_.md)
+  Creates a floating-point parameter object with the initial, neutral, and camera values.
 ### Properties
 - [var currentValue: Float](./floatingpoint/currentvalue.md)
   Get or set the current value for this parameter.
@@ -36,6 +44,11 @@ class FloatingPoint
 ### Instance Properties
 - [var cameraValue: Float?](./floatingpoint/cameravalue.md)
 - [var neutralValue: Float?](./floatingpoint/neutralvalue.md)
+### Inspecting a parameter
+- [- hasCameraValue:](../merawprocessingfloatparameter/hascameravalue_.md)
+  The optional camera value for this parameter.
+- [- hasNeutralValue:](../merawprocessingfloatparameter/hasneutralvalue_.md)
+  The optional neutral value for this parameter.
 
 ## Relationships
 

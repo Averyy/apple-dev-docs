@@ -42,6 +42,8 @@ To include [`CNContactNoteKey`](../cncontactnotekey.md) in the array of keys in 
   Fetches a unified contact for the specified contact identifier.
 - [func unifiedContacts(matching: NSPredicate, keysToFetch: [any CNKeyDescriptor]) throws -> [CNContact]](./unifiedcontacts%28matching,keystofetch%29.md)
   Fetches all unified contacts matching the specified predicate.
+- [- enumeratorForContactFetchRequest:error:](./enumeratorforcontactfetchrequest_error_.md)
+  Enumerates a contact fetch request.
 
 
 ---

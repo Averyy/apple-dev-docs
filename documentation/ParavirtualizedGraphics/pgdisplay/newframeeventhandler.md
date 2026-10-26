@@ -30,6 +30,8 @@ var newFrameEventHandler: PGDisplayNewFrameEventHandler? { get }
   A handler that the framework calls to change the cursor’s visibility.
 - [var modeChangeHandler: PGDisplayModeChangeHandler?](./modechangehandler.md)
   A handler that the framework calls to change the virtual display’s graphics mode.
+- [cursorGlyphHandler](./cursorglyphhandler.md)
+  A handler that the framework calls to change the cursor’s appearance.
 
 
 ---

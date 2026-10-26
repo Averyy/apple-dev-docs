@@ -61,6 +61,8 @@ When [`NSApplication`](../nsapplication.md) receives a parameter value that does
   When in fullscreen mode the window toolbar is detached from window and hides and shows with autoHidden menuBar.
 - [static var disableCursorLocationAssistance: NSApplication.PresentationOptions](./presentationoptions-swift.struct/disablecursorlocationassistance.md)
   The behavior that allows the user to shake the mouse to locate the cursor is disabled.
+- [NSApplicationPresentationDefault](../nsapplicationpresentationoptions/nsapplicationpresentationdefault.md)
+  This is the default presentation mode.
 ### Initializers
 - [init(rawValue: UInt)](./presentationoptions-swift.struct/init%28rawvalue%29.md)
   Initializes a new presentation options structure.

@@ -57,6 +57,8 @@ This method is invoked by `NSArchiver`. `NSObject`’s implementation returns th
   Sets the receiver’s version number.
 - [class func version() -> Int](./version%28%29.md)
   Returns the version number assigned to the class.
+- [classForPortCoder](./classforportcoder.md)
+  Class to substitute for the receiver in distribution encoding.
 
 
 ---

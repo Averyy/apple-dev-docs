@@ -31,6 +31,8 @@ To create an app that recognizes objects in the physical environment, first you 
 ### Creating a Configuration
 - [init()](./arobjectscanningconfiguration/init%28%29.md)
   Initializes a new object scanning configuration.
+- [+ new](./arobjectscanningconfiguration/new.md)
+  Creates a new object scanning configuration.
 ### Enabling Plane Detection
 - [var planeDetection: ARWorldTrackingConfiguration.PlaneDetection](./arobjectscanningconfiguration/planedetection.md)
   A value specifying whether and how the session attempts to automatically detect flat surfaces in the camera-captured image.

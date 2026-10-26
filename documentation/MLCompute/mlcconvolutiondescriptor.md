@@ -34,6 +34,22 @@ class MLCConvolutionDescriptor
   Creates a descriptor for depthwise convolution with the kernel sizes, number of input feature channels, and channel multiplier you specify.
 - [enum MLCConvolutionType](./mlcconvolutiontype.md)
   The convolution type specified for a convolution layer.
+- [+ descriptorWithKernelWidth:kernelHeight:inputFeatureChannelCount:outputFeatureChannelCount:](./mlcconvolutiondescriptor/descriptorwithkernelwidth_kernelheight_inputfeaturechannelcount_outputfeaturechannelcount_.md)
+  Creates a convolution descriptor with the kernel sizes and number of feature channels you specify.
+- [+ descriptorWithType:kernelSizes:inputFeatureChannelCount:outputFeatureChannelCount:groupCount:strides:dilationRates:paddingPolicy:paddingSizes:](./mlcconvolutiondescriptor/descriptorwithtype_kernelsizes_inputfeaturechannelcount_outputfeaturechannelcount_groupcount_strides_dilationrates_paddingpolicy_paddingsizes_.md)
+  Creates a descriptor with the type, kernel sizes, number of feature channels and groups, strides, dilation rates, and padding policy you specify.
+- [+ descriptorWithKernelSizes:inputFeatureChannelCount:outputFeatureChannelCount:strides:paddingPolicy:paddingSizes:](./mlcconvolutiondescriptor/descriptorwithkernelsizes_inputfeaturechannelcount_outputfeaturechannelcount_strides_paddingpolicy_paddingsizes_.md)
+  Creates a convolution descriptor with the kernel sizes, number of feature channels, strides, padding policy, and padding sizes you specify.
+- [+ convolutionTransposeDescriptorWithKernelSizes:inputFeatureChannelCount:outputFeatureChannelCount:strides:paddingPolicy:paddingSizes:](./mlcconvolutiondescriptor/convolutiontransposedescriptorwithkernelsizes_inputfeaturechannelcount_outputfeaturechannelcount_strides_paddingpolicy_paddingsizes_.md)
+  Creates a convolution transpose descriptor with the kernel sizes, number of feature channels, strides, and padding options you specify.
+- [+ convolutionTransposeDescriptorWithKernelSizes:inputFeatureChannelCount:outputFeatureChannelCount:groupCount:strides:dilationRates:paddingPolicy:paddingSizes:](./mlcconvolutiondescriptor/convolutiontransposedescriptorwithkernelsizes_inputfeaturechannelcount_outputfeaturechannelcount_groupcount_strides_dilationrates_paddingpolicy_paddingsizes_.md)
+  Creates a convolution transpose descriptor with the kernel and padding options, number of feature channels and groups, and dilation rates you specify.
+- [+ depthwiseConvolutionDescriptorWithKernelSizes:inputFeatureChannelCount:channelMultiplier:strides:paddingPolicy:paddingSizes:](./mlcconvolutiondescriptor/depthwiseconvolutiondescriptorwithkernelsizes_inputfeaturechannelcount_channelmultiplier_strides_paddingpolicy_paddingsizes_.md)
+  Creates a depthwise convolution descriptor with the kernel and padding options, number of input feature channels, and channel multiplier you specify.
+- [+ depthwiseConvolutionDescriptorWithKernelSizes:inputFeatureChannelCount:channelMultiplier:strides:dilationRates:paddingPolicy:paddingSizes:](./mlcconvolutiondescriptor/depthwiseconvolutiondescriptorwithkernelsizes_inputfeaturechannelcount_channelmultiplier_strides_dilationrates_paddingpolicy_paddingsizes_.md)
+  Creates a convolution descriptor with the kernel and padding options, number of input channels, channel multiplier, and dilation rates you specify.
+- [+ descriptorWithKernelSizes:inputFeatureChannelCount:outputFeatureChannelCount:groupCount:strides:dilationRates:paddingPolicy:paddingSizes:](./mlcconvolutiondescriptor/descriptorwithkernelsizes_inputfeaturechannelcount_outputfeaturechannelcount_groupcount_strides_dilationrates_paddingpolicy_paddingsizes_.md)
+  Creates a convolution descriptor with the kernel and padding options, number of feature channels and groups, and dilation rates you specify.
 ### Inspecting Convolution Descriptors
 - [var convolutionType: MLCConvolutionType](./mlcconvolutiondescriptor/convolutiontype.md)
   The type of convolution.
@@ -55,6 +71,24 @@ class MLCConvolutionDescriptor
   A Boolean that indicates whether this is a convolution transpose.
 - [var usesDepthwiseConvolution: Bool](./mlcconvolutiondescriptor/usesdepthwiseconvolution.md)
   A Boolean that indicates whether you use depthwise convolution.
+- [kernelWidth](./mlcconvolutiondescriptor/kernelwidth.md)
+  The kernel size in x.
+- [kernelHeight](./mlcconvolutiondescriptor/kernelheight.md)
+  The kernel size in y.
+- [strideInX](./mlcconvolutiondescriptor/strideinx.md)
+  The kernel stride in `x`.
+- [strideInY](./mlcconvolutiondescriptor/strideiny.md)
+  The kernel stride in `y`.
+- [dilationRateInX](./mlcconvolutiondescriptor/dilationrateinx.md)
+  The dilation rate, or stride of elements, in the kernel in x.
+- [dilationRateInY](./mlcconvolutiondescriptor/dilationrateiny.md)
+  The dilation rate, or stride of elements, in the kernel in y.
+- [paddingPolicy](./mlcconvolutiondescriptor/paddingpolicy-7drfq.md)
+  The padding policy.
+- [paddingSizeInX](./mlcconvolutiondescriptor/paddingsizeinx.md)
+  The pooling size in x, left and right, to use if the padding policy is to use padding size.
+- [paddingSizeInY](./mlcconvolutiondescriptor/paddingsizeiny.md)
+  The pooling size in y, top and bottom, to use if the padding policy is to use padding size.
 
 ## Relationships
 

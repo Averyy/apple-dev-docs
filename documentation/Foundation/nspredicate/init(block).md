@@ -61,6 +61,8 @@ In macOS 10.6 and later, Core Data supports block-based predicates in the in-mem
   Creates and returns a predicate that always evaluates to a specified Boolean value.
 - [init?(fromMetadataQueryString: String)](./init%28frommetadataquerystring%29.md)
   Creates a predicate with a metadata query string.
+- [+ predicateWithFormat:](./predicatewithformat_.md)
+  Creates and returns a new predicate formed by creating a new string with a specified format and parsing the result.
 
 
 ---

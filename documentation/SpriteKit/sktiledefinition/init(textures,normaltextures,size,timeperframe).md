@@ -41,6 +41,8 @@ A new tile definition.
 ### Creating an Animated Tile
 - [init(textures: [SKTexture], size: CGSize, timePerFrame: CGFloat)](./init%28textures,size,timeperframe%29.md)
   Initializes a new tile definition with an array of textures for animation.
+- [+ tileDefinitionWithTextures:normalTextures:size:timePerFrame:](./tiledefinitionwithtextures_normaltextures_size_timeperframe_.md)
+- [+ tileDefinitionWithTextures:size:timePerFrame:](./tiledefinitionwithtextures_size_timeperframe_.md)
 
 
 ---

@@ -22,6 +22,8 @@ See `kAXOrientationAttribute` and `kAXSortDirectionAttribute` for more informati
   This object’s contents are sorted in ascending order.
 - [var kAXUnknownSortDirectionValue: String](../kaxunknownsortdirectionvalue.md)
   The sort order of this object is unknown.
+- [AXDescendingSortDirection](./orientations_and_sort_directions/axdescendingsortdirection.md)
+  This object’s contents are sorted in descending order.
 
 ## See Also
 

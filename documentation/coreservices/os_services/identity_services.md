@@ -15,6 +15,9 @@ The Core Services Identity Reference allows developers to support user and group
 - [class CSIdentity](../csidentity.md)
 - [class CSIdentityAuthority](../csidentityauthority.md)
 - [class CSIdentityQuery](../csidentityquery.md)
+- [CSIdentityRef](../csidentityref.md)
+- [CSIdentityAuthorityRef](../csidentityauthorityref.md)
+- [CSIdentityQueryRef](../csidentityqueryref.md)
 ### Functions
 - [func CSDiskSpaceCancelRecovery(CFUUID!)](../api-1448335-csdiskspacecancelrecovery.md)
 - [func CSDiskSpaceGetRecoveryEstimate(CFURL!) -> UInt64](../api-1448439-csdiskspacegetrecoveryestimate.md)
@@ -72,6 +75,8 @@ The Core Services Identity Reference allows developers to support user and group
 - [func CSIdentitySetImageURL(CSIdentity!, CFURL!)](../api-1446717-csidentitysetimageurl.md)
 - [func CSIdentitySetIsEnabled(CSIdentity!, Bool)](../api-1443028-csidentitysetisenabled.md)
 - [func CSIdentitySetPassword(CSIdentity!, CFString!)](../api-1443568-csidentitysetpassword.md)
+- [CSCopyMachineName](../api-1533316-cscopymachinename.md)
+- [CSCopyUserName](../api-1533406-cscopyusername.md)
 ### Structures
 - [struct CSIdentityClientContext](../csidentityclientcontext.md)
 - [struct CSIdentityQueryClientContext](../csidentityqueryclientcontext.md)

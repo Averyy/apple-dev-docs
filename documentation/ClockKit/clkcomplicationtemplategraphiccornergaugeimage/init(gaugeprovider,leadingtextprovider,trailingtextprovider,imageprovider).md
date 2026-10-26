@@ -31,6 +31,10 @@ init(gaugeProvider: CLKGaugeProvider, leadingTextProvider: CLKTextProvider?, tra
 ### Creating the Template
 - [init(gaugeProvider: CLKGaugeProvider, imageProvider: CLKFullColorImageProvider)](./init%28gaugeprovider,imageprovider%29.md)
   Creates a new template that has a gauge and an image.
+- [+ templateWithGaugeProvider:imageProvider:](./templatewithgaugeprovider_imageprovider_.md)
+  Returns a new template that has a gauge and an image.
+- [+ templateWithGaugeProvider:leadingTextProvider:trailingTextProvider:imageProvider:](./templatewithgaugeprovider_leadingtextprovider_trailingtextprovider_imageprovider_.md)
+  Returns a new template that has a gauge with leading and trailing text and an image.
 
 
 ---

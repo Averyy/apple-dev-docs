@@ -175,12 +175,17 @@ You can use other technologies to drive portions of your app’s CarPlay interfa
 - [class CPThumbnailImage](./cpthumbnailimage.md)
 ### Protocols
 - [protocol CPPlayableItem](./cpplayableitem.md)
+- [CPMapPanelDelegate](./cpmappanel/delegate-swift.protocol.md)
+  The interface you use to respond to the appearance and disappearance of the panel.
 ### Structures
 - [struct CPLocationCoordinate3D](./cplocationcoordinate3d.md)
   CPLocationCoordinate3D represents a three-dimensional coordinate with latitude, longitude, and altitude components.
 ### Variables
 - [let CPMaximumMessageItemLeadingDetailTextImageSize: CGSize](./cpmaximummessageitemleadingdetailtextimagesize.md)
   Maximum size of an image for the detailed text leading image.
+- [CPTemplateApplicationDashboardSceneSessionRoleApplication](./cptemplateapplicationdashboardscenesessionroleapplication.md)
+- [CPTemplateApplicationInstrumentClusterSceneSessionRoleApplication](./cptemplateapplicationinstrumentclusterscenesessionroleapplication.md)
+- [CPTemplateApplicationSceneSessionRoleApplication](./cptemplateapplicationscenesessionroleapplication.md)
 ### Functions
 - [func NSStringFromCPJunctionType(CPJunctionType) -> String!](./nsstringfromcpjunctiontype%28_%29.md)
 - [func NSStringFromCPLaneStatus(CPLaneStatus) -> String!](./nsstringfromcplanestatus%28_%29.md)
@@ -191,6 +196,19 @@ You can use other technologies to drive portions of your app’s CarPlay interfa
 - [enum CPRerouteReason](./cpreroutereason.md)
   Values that represent reasons for navigation rerouting.
 - [enum CPRouteSource](./cproutesource.md)
+- [CPChargingStationConnectionConnector](./cpchargingstationconnection/connector-swift.enum.md)
+- [CPImageOverlayAlignment](./cpimageoverlay/alignment-swift.enum.md)
+  Alignment options for positioning.
+- [CPListImageRowItemCondensedElementShape](./cplistimagerowitemcondensedelement/shape.md)
+  Types of shape used to draw a condensed row element.
+- [CPListImageRowItemImageGridElementShape](./cplistimagerowitemimagegridelement/shape.md)
+  Types of shape used to draw a list item.
+- [CPPlaybackAction](./cpplaybackconfiguration/action.md)
+  The playback action to perform on the item.
+- [CPPlaybackPresentation](./cpplaybackconfiguration/presentation.md)
+  The style of media presentation shown after selecting the item.
+### Macros
+- [CARPLAY_TEMPLATE_UI_ACTOR](./carplay_template_ui_actor.md)
 
 
 ---

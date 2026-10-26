@@ -38,6 +38,8 @@ This factor applies only to [`builtInTrueDepthCamera`](../../devicetype-swift.st
   The system’s peak power requirements exceed the battery’s current capacity.
 - [static var cameraTemperature: AVCaptureDevice.SystemPressureState.Factors](./cameratemperature.md)
   The camera module is operating at an elevated temperature.
+- [AVCaptureSystemPressureFactorNone](../../../avcapturesystempressurefactors/avcapturesystempressurefactornone.md)
+  System pressure is currently nominal.
 
 
 ---

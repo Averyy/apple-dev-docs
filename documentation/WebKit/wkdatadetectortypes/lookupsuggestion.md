@@ -39,6 +39,8 @@ WKDataDetectorTypeLookupSuggestion
   Detect flight numbers in text and turn them into links.
 - [static var all: WKDataDetectorTypes](./all.md)
   Detect all data types and turn them into links.
+- [WKDataDetectorTypeNone](./wkdatadetectortypenone.md)
+  No data detection.
 
 
 ---

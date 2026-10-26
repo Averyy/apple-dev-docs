@@ -42,6 +42,8 @@ AudioStream is a subclass of AudioObject and can contain AudioControls.
 - [typealias AudioObjectPropertyListenerProc](./audioobjectpropertylistenerproc.md)
 - [typealias AudioObjectPropertyScope](./audioobjectpropertyscope.md)
 - [typealias AudioObjectPropertySelector](./audioobjectpropertyselector.md)
+- [AudioDriverPlugInDevicePropertyChangedProc](./audiodriverplugindevicepropertychangedproc.md)
+- [AudioDriverPlugInStreamPropertyChangedProc](./audiodriverpluginstreampropertychangedproc.md)
 
 
 ---

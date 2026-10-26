@@ -17,6 +17,18 @@ These constants are used as components in a bitfield to specify the behavior of 
 - [var NSCollectorDisabledOption: Int](./nscollectordisabledoption.md)
   Specifies that the block is retained, and therefore ineligible for collection. Specifying this option is equivalent to invoking [`disableCollectorForPointer:`](./nsgarbagecollector/disablecollectorforpointer_.md) with the returned block as the argument.
 
+## See Also
+
+### Legacy
+- [NSGarbageCollector](./nsgarbagecollector.md)
+  A convenient interface to the garbage collection system.
+- [NSAllocateCollectable](./nsallocatecollectable.md)
+  Allocates collectable memory.
+- [NSReallocateCollectable](./nsreallocatecollectable.md)
+  Reallocates collectable memory.
+- [NSMakeCollectable](./nsmakecollectable.md)
+  Makes a newly allocated Core Foundation object eligible for collection.
+
 
 ---
 

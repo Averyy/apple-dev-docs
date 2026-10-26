@@ -1,0 +1,51 @@
+# packetDependencies
+
+**Framework**: AVFAudio  
+**Kind**: property  
+**Role**: Instance Property
+
+The buffer’s array of packet dependencies.
+
+**Availability**:
+- iOS 26.0+
+- iPadOS 26.0+
+- Mac Catalyst 26.0+
+- macOS 26.0+
+- tvOS 26.0+
+- visionOS 26.0+
+- watchOS 26.0+
+
+## Declaration
+
+```objc
+@property (nonatomic, readonly, nullable) AudioStreamPacketDependencyDescription * packetDependencies;
+```
+
+#### Discussion
+
+If the audio format doesn’t use packet dependencies, this value is `nil`.
+
+## See Also
+
+### Getting audio buffer properties
+- [var byteCapacity: UInt32](./bytecapacity.md)
+  The number of packets the buffer contains.
+- [var byteLength: UInt32](./bytelength.md)
+  The number of valid bytes in the buffer.
+- [var data: UnsafeMutableRawPointer](./data.md)
+  The audio buffer’s data bytes.
+- [var maximumPacketSize: Int](./maximumpacketsize.md)
+  The maximum size of a packet, in bytes.
+- [var packetCapacity: AVAudioPacketCount](./packetcapacity.md)
+  The total number of packets that the buffer can contain.
+- [var packetCount: AVAudioPacketCount](./packetcount.md)
+  The number of packets currently in the buffer.
+- [typealias AVAudioPacketCount](../avaudiopacketcount.md)
+  The number of packets of audio data.
+- [var packetDescriptions: UnsafeMutablePointer<AudioStreamPacketDescription>?](./packetdescriptions.md)
+  The buffer’s array of packet descriptions.
+
+
+---
+
+*[View on Apple Developer](https://developer.apple.com/documentation/avfaudio/avaudiocompressedbuffer/packetdependencies-5oae6)*

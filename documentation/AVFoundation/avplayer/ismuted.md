@@ -39,6 +39,8 @@ var isMuted: Bool { get set }
   Whether the player’s audio output is suppressed due to being on a non-mixable audio route.
 - [var intendedSpatialAudioExperience: any SpatialAudioExperience](./intendedspatialaudioexperience-1bd87.md)
   The player’s intended Spatial Audio experience.
+- [intendedSpatialAudioExperience](./intendedspatialaudioexperience-3uy8g.md)
+  The AVPlayer’s intended spatial audio experience.
 
 
 ---

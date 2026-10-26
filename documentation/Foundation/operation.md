@@ -184,6 +184,9 @@ In addition to simply exiting when an operation is cancelled, it is also importa
   These constants let you prioritize the order in which operations execute.
 - [enum QualityOfService](./qualityofservice.md)
   Constants that indicate the nature and importance of work to the system.
+### Initialization
+- [init](./nsoperation-init.md)
+  Returns an initialized `NSOperation` object.
 
 ## Relationships
 
@@ -191,6 +194,7 @@ In addition to simply exiting when an operation is cancelled, it is also importa
 - [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Inherited By
 - [BlockOperation](./blockoperation.md)
+- [NSInvocationOperation](./nsinvocationoperation.md)
 ### Conforms To
 - [CVarArg](../Swift/cvararg.md)
 - [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
@@ -208,6 +212,8 @@ In addition to simply exiting when an operation is cancelled, it is also importa
   A queue that regulates the execution of operations.
 - [class BlockOperation](./blockoperation.md)
   An operation that manages the concurrent execution of one or more blocks.
+- [NSInvocationOperation](./nsinvocationoperation.md)
+  An operation that manages the execution of a single encapsulated task specified as an invocation.
 
 
 ---

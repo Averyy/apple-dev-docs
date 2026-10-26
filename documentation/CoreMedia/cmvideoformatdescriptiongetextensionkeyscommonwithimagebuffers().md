@@ -74,6 +74,8 @@ When specifying a `CMFormatDescription` for a `CMSampleBuffer`, the format descr
   Converts an image description data structure from big-endian to host-endian, in place.
 - [func CMSwapHostEndianImageDescriptionToBig(UnsafeMutablePointer<UInt8>, Int) -> OSStatus](./cmswaphostendianimagedescriptiontobig%28_,_%29.md)
   Converts an image description data structure from host-endian to big-endian, in place.
+- [CMVideoFormatDescriptionCopyTagCollectionArray](./cmvideoformatdescriptioncopytagcollectionarray.md)
+  Copies the multi-image encoding properties as an array of CMTagCollections.
 
 
 ---

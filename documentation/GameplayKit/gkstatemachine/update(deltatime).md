@@ -47,6 +47,8 @@ Examples of per-frame state updates include:
   Returns a Boolean value indicating whether it is valid for the state machine to transition from its current state to a state of the specified class.
 - [func enter(AnyClass) -> Bool](./enter%28_%29.md)
   Attempts to transition the state machine from its current state to a state of the specified class.
+- [- stateForClass:](./stateforclass_.md)
+  Returns the state object in the state machine corresponding to the specified class.
 
 
 ---

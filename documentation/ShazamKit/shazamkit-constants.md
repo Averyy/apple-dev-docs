@@ -8,6 +8,9 @@
 ### Constants
 - [let SHErrorDomain: String](./sherrordomain.md)
   The error domain for specific errors for ShazamKit.
+### Macros
+- [SHDEFINES_H](./shdefines_h.md)
+- [SH_EXPORT](./sh_export.md)
 
 ## See Also
 

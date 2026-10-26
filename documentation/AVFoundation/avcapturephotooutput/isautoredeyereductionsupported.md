@@ -46,6 +46,8 @@ When taking RAW + processed (JPEG or HEIC) still-photo capture with auto red-eye
   The maximum number of images that the photo capture output can support in a single bracketed capture.
 - [var supportedFlashModes: [AVCaptureDevice.FlashMode]](./supportedflashmodes-1n6nm.md)
   A Swift array of flash settings this capture output currently supports.
+- [supportedFlashModes](./supportedflashmodes-4u69s.md)
+  The flash settings this capture output currently supports.
 
 
 ---

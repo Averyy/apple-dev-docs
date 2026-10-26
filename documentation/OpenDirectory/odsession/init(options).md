@@ -42,6 +42,8 @@ The created session object.
 ### Creating and Accessing Sessions
 - [class func `default`() -> ODSession!](./default%28%29.md)
   Returns a shared instance of the local session.
+- [+ sessionWithOptions:error:](./sessionwithoptions_error_.md)
+  Returns an autoreleased session object directed over proxy to another host.
 
 
 ---

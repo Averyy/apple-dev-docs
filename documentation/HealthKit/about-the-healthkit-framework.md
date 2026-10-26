@@ -70,7 +70,7 @@ While the HealthKit framework is available on iPadOS 16 and earlier and on MacOS
   Respect and safeguard your user’s privacy.
 - [HealthKit updates](../Updates/healthkit.md)
   Learn about important changes to HealthKit.
-- [HealthKitUI](https://developer.apple.com/documentation/healthkitui)
+- [HealthKitUI](../HealthKitUI/HealthKitUI.md)
   Display user interface that enables a person to view and interact with their health data.
 
 

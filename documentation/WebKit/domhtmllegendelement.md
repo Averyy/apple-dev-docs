@@ -22,6 +22,7 @@ class DOMHTMLLegendElement
 ### Instance Properties
 - [var align: String!](./domhtmllegendelement/align.md)
 - [var form: DOMHTMLFormElement!](./domhtmllegendelement/form.md)
+- [accessKey](./domhtmllegendelement/accesskey.md)
 
 ## Relationships
 

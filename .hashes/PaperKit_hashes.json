@@ -315,6 +315,11 @@
       "file_path": "documentation/PaperKit/markup/applytransform(_).md",
       "hash": "9511bd988e5927c02833f1171134c114961a9f299fcb6aa695f03728097fd694"
     },
+    "https://developer.apple.com/documentation/paperkit/markup/applytransform(_:)-9je6a": {
+      "etag": "\"13dd-65d55d0a23a0a-df\"",
+      "file_path": "documentation/PaperKit/markup/applytransform(_)-9je6a.md",
+      "hash": "97c1e44e3a2a2113f297117582ede0ef0f47c9d3c4585a66d60aa84f7cba32bb"
+    },
     "https://developer.apple.com/documentation/paperkit/markup/elementid": {
       "etag": "\"1529-65d55d0a23a0a-df\"",
       "file_path": "documentation/PaperKit/markup/elementid.md",
@@ -1045,35 +1050,70 @@
       "file_path": "documentation/PaperKit/papermarkupviewcontroller/delegate-swift.protocol/papermarkupviewcontroller(_,didtapadornmentwithid).md",
       "hash": "95461906e548ffca19916eb83b522cf9b4cefecbe3011906f3ded20dd0e3e81c"
     },
+    "https://developer.apple.com/documentation/paperkit/papermarkupviewcontroller/delegate-swift.protocol/papermarkupviewcontroller(_:didtapadornmentwithid:)-1hw54": {
+      "etag": "\"1c6a-65d55d09d245c-df\"",
+      "file_path": "documentation/PaperKit/papermarkupviewcontroller/delegate-swift.protocol/papermarkupviewcontroller(_,didtapadornmentwithid)-1hw54.md",
+      "hash": "142d67cd23d50cca9b82cf417e5393871913a3184cb6f73aea697c9ecfd3ed0a"
+    },
     "https://developer.apple.com/documentation/paperkit/papermarkupviewcontroller/delegate-swift.protocol/papermarkupviewcontroller(_:didupdateadornmentwithid:toanchor:)": {
       "etag": "\"3c5b-65d55d09d245c-df\"",
       "file_path": "documentation/PaperKit/papermarkupviewcontroller/delegate-swift.protocol/papermarkupviewcontroller(_,didupdateadornmentwithid,toanchor).md",
       "hash": "c38e422b3926fe4ca33ff3fbcd34bed30243fb839048fe81c979992d7f7464e4"
+    },
+    "https://developer.apple.com/documentation/paperkit/papermarkupviewcontroller/delegate-swift.protocol/papermarkupviewcontroller(_:didupdateadornmentwithid:toanchor:)-3wm3l": {
+      "etag": "\"26db-65d55d09d245c-df\"",
+      "file_path": "documentation/PaperKit/papermarkupviewcontroller/delegate-swift.protocol/papermarkupviewcontroller(_,didupdateadornmentwithid,toanchor)-3wm3l.md",
+      "hash": "a695ede49a083202e595a54628831201325de6d218b3a35d5834072332ba3987"
     },
     "https://developer.apple.com/documentation/paperkit/papermarkupviewcontroller/delegate-swift.protocol/papermarkupviewcontroller(_:willupdateadornmentwithid:toproposedanchor:)": {
       "etag": "\"422b-65d55d09d245c-df\"",
       "file_path": "documentation/PaperKit/papermarkupviewcontroller/delegate-swift.protocol/papermarkupviewcontroller(_,willupdateadornmentwithid,toproposedanchor).md",
       "hash": "e4d8d26ee136da07c269934fdc3d281642327aed6838dbe515e0b390807b211d"
     },
+    "https://developer.apple.com/documentation/paperkit/papermarkupviewcontroller/delegate-swift.protocol/papermarkupviewcontroller(_:willupdateadornmentwithid:toproposedanchor:)-5m1yu": {
+      "etag": "\"2cab-65d55d09d245c-df\"",
+      "file_path": "documentation/PaperKit/papermarkupviewcontroller/delegate-swift.protocol/papermarkupviewcontroller(_,willupdateadornmentwithid,toproposedanchor)-5m1yu.md",
+      "hash": "6c207f98d75f9f5e0dbb1090afedebf8c571c15ec5fcd4750863062ad50e9c8c"
+    },
     "https://developer.apple.com/documentation/paperkit/papermarkupviewcontroller/delegate-swift.protocol/papermarkupviewcontrollerdidbegindrawing(_:)": {
       "etag": "\"2a08-65d55d09d245c-df\"",
       "file_path": "documentation/PaperKit/papermarkupviewcontroller/delegate-swift.protocol/papermarkupviewcontrollerdidbegindrawing(_).md",
       "hash": "5111a2310f03ac1beef5f929c97f1760c36cefdb1a8f892f13822f3b690ec1c9"
+    },
+    "https://developer.apple.com/documentation/paperkit/papermarkupviewcontroller/delegate-swift.protocol/papermarkupviewcontrollerdidbegindrawing(_:)-3qawk": {
+      "etag": "\"16dd-65d55d09d245c-df\"",
+      "file_path": "documentation/PaperKit/papermarkupviewcontroller/delegate-swift.protocol/papermarkupviewcontrollerdidbegindrawing(_)-3qawk.md",
+      "hash": "12fb981698e2070555c3f425794fc504b094171ea006ca1d66dfa725f7f90ee3"
     },
     "https://developer.apple.com/documentation/paperkit/papermarkupviewcontroller/delegate-swift.protocol/papermarkupviewcontrollerdidchangecontentvisibleframe(_:)": {
       "etag": "\"2ab3-65d55d09d245c-df\"",
       "file_path": "documentation/PaperKit/papermarkupviewcontroller/delegate-swift.protocol/papermarkupviewcontrollerdidchangecontentvisibleframe(_).md",
       "hash": "abebdaf56e0a09e7379f57bf91a8779f6cdfddca7f29560ebe2b24cc88cdeac3"
     },
+    "https://developer.apple.com/documentation/paperkit/papermarkupviewcontroller/delegate-swift.protocol/papermarkupviewcontrollerdidchangecontentvisibleframe(_:)-5k7zk": {
+      "etag": "\"1788-65d55d09d245c-df\"",
+      "file_path": "documentation/PaperKit/papermarkupviewcontroller/delegate-swift.protocol/papermarkupviewcontrollerdidchangecontentvisibleframe(_)-5k7zk.md",
+      "hash": "953829a62625c76bee6add71b652c20dc9a1da3a23829a3bc78f3ff71c268554"
+    },
     "https://developer.apple.com/documentation/paperkit/papermarkupviewcontroller/delegate-swift.protocol/papermarkupviewcontrollerdidchangemarkup(_:)": {
       "etag": "\"29f0-65d55d09d245c-df\"",
       "file_path": "documentation/PaperKit/papermarkupviewcontroller/delegate-swift.protocol/papermarkupviewcontrollerdidchangemarkup(_).md",
       "hash": "384de436ef9dbc45d2d9ef7ee8506480c773585d100c93d04bbdd610007e2624"
     },
+    "https://developer.apple.com/documentation/paperkit/papermarkupviewcontroller/delegate-swift.protocol/papermarkupviewcontrollerdidchangemarkup(_:)-8rzia": {
+      "etag": "\"16c5-65d55d09d245c-df\"",
+      "file_path": "documentation/PaperKit/papermarkupviewcontroller/delegate-swift.protocol/papermarkupviewcontrollerdidchangemarkup(_)-8rzia.md",
+      "hash": "fd13fb6b194bf4a648b4c1d18d4adf7000a7ea5b92dd6996ad31df60b6276fed"
+    },
     "https://developer.apple.com/documentation/paperkit/papermarkupviewcontroller/delegate-swift.protocol/papermarkupviewcontrollerdidchangeselection(_:)": {
       "etag": "\"2a18-65d55d09d245c-df\"",
       "file_path": "documentation/PaperKit/papermarkupviewcontroller/delegate-swift.protocol/papermarkupviewcontrollerdidchangeselection(_).md",
       "hash": "4a190f3588eae34974bba1cdabc379517e0a3b5d6c1a9621545d37bd2148c620"
+    },
+    "https://developer.apple.com/documentation/paperkit/papermarkupviewcontroller/delegate-swift.protocol/papermarkupviewcontrollerdidchangeselection(_:)-3hwi": {
+      "etag": "\"16ec-65d55d09d245c-df\"",
+      "file_path": "documentation/PaperKit/papermarkupviewcontroller/delegate-swift.protocol/papermarkupviewcontrollerdidchangeselection(_)-3hwi.md",
+      "hash": "db305a0452a61ee4bb7a9714bf28a772bf4b76ff2f8dcccf07b1ae3312c28549"
     },
     "https://developer.apple.com/documentation/paperkit/papermarkupviewcontroller/directtouchautomaticallydraws": {
       "etag": "\"23c9-65d55d09d245c-df\"",
@@ -2070,6 +2110,11 @@
       "file_path": "documentation/PaperKit/markup/allowedinteractions.md",
       "hash": "3a60b5aef2c7ba1f8bd0665f6b9bb19d943ba51fe5e786b453bae0943033965d"
     },
+    "https://developer.apple.com/tutorials/data/documentation/paperkit/markup/applytransform(_:)-9je6a.json": {
+      "etag": "\"13dd-65d55d0a23a0a-df\"",
+      "file_path": "documentation/PaperKit/markup/applytransform(_)-9je6a.md",
+      "hash": "97c1e44e3a2a2113f297117582ede0ef0f47c9d3c4585a66d60aa84f7cba32bb"
+    },
     "https://developer.apple.com/tutorials/data/documentation/paperkit/markup/applytransform(_:).json": {
       "etag": "\"1f33-65d55d0a23a0a-df\"",
       "file_path": "documentation/PaperKit/markup/applytransform(_).md",
@@ -2800,35 +2845,70 @@
       "file_path": "documentation/PaperKit/papermarkupviewcontroller/delegate-swift.protocol.md",
       "hash": "973b9715fb398854ae3add9cdcc6cad8a1fb476712e4646205169be541f2a978"
     },
+    "https://developer.apple.com/tutorials/data/documentation/paperkit/papermarkupviewcontroller/delegate-swift.protocol/papermarkupviewcontroller(_:didtapadornmentwithid:)-1hw54.json": {
+      "etag": "\"1c6a-65d55d09d245c-df\"",
+      "file_path": "documentation/PaperKit/papermarkupviewcontroller/delegate-swift.protocol/papermarkupviewcontroller(_,didtapadornmentwithid)-1hw54.md",
+      "hash": "142d67cd23d50cca9b82cf417e5393871913a3184cb6f73aea697c9ecfd3ed0a"
+    },
     "https://developer.apple.com/tutorials/data/documentation/paperkit/papermarkupviewcontroller/delegate-swift.protocol/papermarkupviewcontroller(_:didtapadornmentwithid:).json": {
       "etag": "\"31ea-65d55d09d245c-df\"",
       "file_path": "documentation/PaperKit/papermarkupviewcontroller/delegate-swift.protocol/papermarkupviewcontroller(_,didtapadornmentwithid).md",
       "hash": "95461906e548ffca19916eb83b522cf9b4cefecbe3011906f3ded20dd0e3e81c"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/paperkit/papermarkupviewcontroller/delegate-swift.protocol/papermarkupviewcontroller(_:didupdateadornmentwithid:toanchor:)-3wm3l.json": {
+      "etag": "\"26db-65d55d09d245c-df\"",
+      "file_path": "documentation/PaperKit/papermarkupviewcontroller/delegate-swift.protocol/papermarkupviewcontroller(_,didupdateadornmentwithid,toanchor)-3wm3l.md",
+      "hash": "a695ede49a083202e595a54628831201325de6d218b3a35d5834072332ba3987"
     },
     "https://developer.apple.com/tutorials/data/documentation/paperkit/papermarkupviewcontroller/delegate-swift.protocol/papermarkupviewcontroller(_:didupdateadornmentwithid:toanchor:).json": {
       "etag": "\"3c5b-65d55d09d245c-df\"",
       "file_path": "documentation/PaperKit/papermarkupviewcontroller/delegate-swift.protocol/papermarkupviewcontroller(_,didupdateadornmentwithid,toanchor).md",
       "hash": "c38e422b3926fe4ca33ff3fbcd34bed30243fb839048fe81c979992d7f7464e4"
     },
+    "https://developer.apple.com/tutorials/data/documentation/paperkit/papermarkupviewcontroller/delegate-swift.protocol/papermarkupviewcontroller(_:willupdateadornmentwithid:toproposedanchor:)-5m1yu.json": {
+      "etag": "\"2cab-65d55d09d245c-df\"",
+      "file_path": "documentation/PaperKit/papermarkupviewcontroller/delegate-swift.protocol/papermarkupviewcontroller(_,willupdateadornmentwithid,toproposedanchor)-5m1yu.md",
+      "hash": "6c207f98d75f9f5e0dbb1090afedebf8c571c15ec5fcd4750863062ad50e9c8c"
+    },
     "https://developer.apple.com/tutorials/data/documentation/paperkit/papermarkupviewcontroller/delegate-swift.protocol/papermarkupviewcontroller(_:willupdateadornmentwithid:toproposedanchor:).json": {
       "etag": "\"422b-65d55d09d245c-df\"",
       "file_path": "documentation/PaperKit/papermarkupviewcontroller/delegate-swift.protocol/papermarkupviewcontroller(_,willupdateadornmentwithid,toproposedanchor).md",
       "hash": "e4d8d26ee136da07c269934fdc3d281642327aed6838dbe515e0b390807b211d"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/paperkit/papermarkupviewcontroller/delegate-swift.protocol/papermarkupviewcontrollerdidbegindrawing(_:)-3qawk.json": {
+      "etag": "\"16dd-65d55d09d245c-df\"",
+      "file_path": "documentation/PaperKit/papermarkupviewcontroller/delegate-swift.protocol/papermarkupviewcontrollerdidbegindrawing(_)-3qawk.md",
+      "hash": "12fb981698e2070555c3f425794fc504b094171ea006ca1d66dfa725f7f90ee3"
     },
     "https://developer.apple.com/tutorials/data/documentation/paperkit/papermarkupviewcontroller/delegate-swift.protocol/papermarkupviewcontrollerdidbegindrawing(_:).json": {
       "etag": "\"2a08-65d55d09d245c-df\"",
       "file_path": "documentation/PaperKit/papermarkupviewcontroller/delegate-swift.protocol/papermarkupviewcontrollerdidbegindrawing(_).md",
       "hash": "5111a2310f03ac1beef5f929c97f1760c36cefdb1a8f892f13822f3b690ec1c9"
     },
+    "https://developer.apple.com/tutorials/data/documentation/paperkit/papermarkupviewcontroller/delegate-swift.protocol/papermarkupviewcontrollerdidchangecontentvisibleframe(_:)-5k7zk.json": {
+      "etag": "\"1788-65d55d09d245c-df\"",
+      "file_path": "documentation/PaperKit/papermarkupviewcontroller/delegate-swift.protocol/papermarkupviewcontrollerdidchangecontentvisibleframe(_)-5k7zk.md",
+      "hash": "953829a62625c76bee6add71b652c20dc9a1da3a23829a3bc78f3ff71c268554"
+    },
     "https://developer.apple.com/tutorials/data/documentation/paperkit/papermarkupviewcontroller/delegate-swift.protocol/papermarkupviewcontrollerdidchangecontentvisibleframe(_:).json": {
       "etag": "\"2ab3-65d55d09d245c-df\"",
       "file_path": "documentation/PaperKit/papermarkupviewcontroller/delegate-swift.protocol/papermarkupviewcontrollerdidchangecontentvisibleframe(_).md",
       "hash": "abebdaf56e0a09e7379f57bf91a8779f6cdfddca7f29560ebe2b24cc88cdeac3"
     },
+    "https://developer.apple.com/tutorials/data/documentation/paperkit/papermarkupviewcontroller/delegate-swift.protocol/papermarkupviewcontrollerdidchangemarkup(_:)-8rzia.json": {
+      "etag": "\"16c5-65d55d09d245c-df\"",
+      "file_path": "documentation/PaperKit/papermarkupviewcontroller/delegate-swift.protocol/papermarkupviewcontrollerdidchangemarkup(_)-8rzia.md",
+      "hash": "fd13fb6b194bf4a648b4c1d18d4adf7000a7ea5b92dd6996ad31df60b6276fed"
+    },
     "https://developer.apple.com/tutorials/data/documentation/paperkit/papermarkupviewcontroller/delegate-swift.protocol/papermarkupviewcontrollerdidchangemarkup(_:).json": {
       "etag": "\"29f0-65d55d09d245c-df\"",
       "file_path": "documentation/PaperKit/papermarkupviewcontroller/delegate-swift.protocol/papermarkupviewcontrollerdidchangemarkup(_).md",
       "hash": "384de436ef9dbc45d2d9ef7ee8506480c773585d100c93d04bbdd610007e2624"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/paperkit/papermarkupviewcontroller/delegate-swift.protocol/papermarkupviewcontrollerdidchangeselection(_:)-3hwi.json": {
+      "etag": "\"16ec-65d55d09d245c-df\"",
+      "file_path": "documentation/PaperKit/papermarkupviewcontroller/delegate-swift.protocol/papermarkupviewcontrollerdidchangeselection(_)-3hwi.md",
+      "hash": "db305a0452a61ee4bb7a9714bf28a772bf4b76ff2f8dcccf07b1ae3312c28549"
     },
     "https://developer.apple.com/tutorials/data/documentation/paperkit/papermarkupviewcontroller/delegate-swift.protocol/papermarkupviewcontrollerdidchangeselection(_:).json": {
       "etag": "\"2a18-65d55d09d245c-df\"",
@@ -3523,8 +3603,8 @@
   },
   "metadata": {
     "render": {
-      "version": 1
+      "version": 2
     },
-    "total_pages": 704
+    "total_pages": 720
   }
 }

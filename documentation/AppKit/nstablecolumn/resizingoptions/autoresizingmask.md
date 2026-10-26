@@ -24,6 +24,8 @@ NSTableColumnAutoresizingMask
 ### Constants
 - [static var userResizingMask: NSTableColumn.ResizingOptions](./userresizingmask.md)
   Allows the table column to be resized by the user.
+- [NSTableColumnNoResizing](../../nstablecolumnresizingoptions/nstablecolumnnoresizing.md)
+  Prevents the table column from resizing.
 
 
 ---

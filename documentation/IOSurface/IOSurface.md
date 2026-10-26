@@ -33,6 +33,8 @@ The IOSurface framework provides a framebuffer object suitable for sharing acros
 - [IOSurface Structures](./iosurface-structures.md)
 - [IOSurface Constants](./iosurface-constants.md)
 - [IOSurface Functions](./iosurface-functions.md)
+- [IOSurface Enumerations](./iosurface-enumerations.md)
+- [IOSurface Data Types](./iosurface-data-types.md)
 ### Variables
 - [let kIOSurfaceContentHeadroom: CFString](./kiosurfacecontentheadroom.md)
 - [var kIOSurfaceCopybackCache: Int](./kiosurfacecopybackcache.md)
@@ -48,6 +50,9 @@ The IOSurface framework provides a framebuffer object suitable for sharing acros
 - [var kIOSurfaceMapWriteThruCache: Int](./kiosurfacemapwritethrucache.md)
 - [var kIOSurfaceWriteCombineCache: Int](./kiosurfacewritecombinecache.md)
 - [var kIOSurfaceWriteThruCache: Int](./kiosurfacewritethrucache.md)
+### Macros
+- [IOSFC_SWIFT_NONSENDABLE](./iosfc_swift_nonsendable.md)
+- [IOSFC_SWIFT_SENDABLE](./iosfc_swift_sendable.md)
 
 
 ---

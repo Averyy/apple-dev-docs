@@ -41,6 +41,8 @@ You app should define options for an action when your app requires the correspon
 ### Getting Options
 - [struct UNNotificationActionOptions](../unnotificationactionoptions.md)
   The behaviors you can apply to an action.
+- [UNNotificationActionOptionNone](../unnotificationactionoptionnone.md)
+  The action has the default behavior.
 
 
 ---

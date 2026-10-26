@@ -31,6 +31,20 @@ var preferredRate: Float { get }
 
 This value is typically, but not always, 1.0.
 
+## See Also
+
+### Accessing asset preferences
+- [preferredVolume](./preferredvolume.md)
+  The asset’s volume preference for playing its audible media.
+- [preferredTransform](./preferredtransform.md)
+  The asset’s transform preference to apply to its visual content during presentation or processing.
+- [preferredMediaSelection](./preferredmediaselection.md)
+  The default media selections for this asset’s media selection groups.
+- [preferredDisplayCriteria](./preferreddisplaycriteria.md)
+  The asset’s display mode preference for optimal playback of its content.
+- [AVDisplayCriteria](../avdisplaycriteria.md)
+  An object the system uses to guide the selection of a display mode in tvOS.
+
 
 ---
 

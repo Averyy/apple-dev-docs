@@ -30,6 +30,14 @@ typedef enum PasteboardFlavorFlags : OptionBits {
 - [static var systemTranslated: PasteboardFlavorFlags](./pasteboardflavorflags/api-1461894-systemtranslated.md)
 ### Initializers
 - [init(rawValue: OptionBits)](./pasteboardflavorflags/api-1644092-init.md)
+### Constants
+- [kPasteboardFlavorNoFlags](./pasteboardflavorflags/kpasteboardflavornoflags.md)
+- [kPasteboardFlavorNotSaved](./pasteboardflavorflags/kpasteboardflavornotsaved.md)
+- [kPasteboardFlavorPromised](./pasteboardflavorflags/kpasteboardflavorpromised.md)
+- [kPasteboardFlavorRequestOnly](./pasteboardflavorflags/kpasteboardflavorrequestonly.md)
+- [kPasteboardFlavorSenderOnly](./pasteboardflavorflags/kpasteboardflavorsenderonly.md)
+- [kPasteboardFlavorSenderTranslated](./pasteboardflavorflags/kpasteboardflavorsendertranslated.md)
+- [kPasteboardFlavorSystemTranslated](./pasteboardflavorflags/kpasteboardflavorsystemtranslated.md)
 
 ## Relationships
 

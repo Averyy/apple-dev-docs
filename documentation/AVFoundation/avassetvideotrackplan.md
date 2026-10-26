@@ -33,6 +33,8 @@ Call AVAssetWritingPlanner’s “planTrack:withSegmentsGeneratedBy:” method t
 ### Creating a video track plan
 - [convenience init(videoCodecType: AVVideoCodecType, encoderSpecification: [String : any Sendable]?, mediaType: AVMediaType, segmentConfigurations: [AVPlannedVideoSegmentConfiguration], assemblyTrackID: CMPersistentTrackID)](./avassetvideotrackplan/init%28videocodectype,encoderspecification,mediatype,segmentconfigurations,assemblytrackid%29.md)
   Creates an instance of AVAssetVideoTrackPlan.
+- [- initWithVideoCodecType:encoderSpecification:mediaType:segmentConfigurations:assemblyTrackID:](./avassetvideotrackplan/initwithvideocodectype_encoderspecification_mediatype_segmentconfigurations_assemblytrackid_.md)
+  Returns an instance of AVAssetVideoTrackPlan
 ### Inspecting the video track plan
 - [var videoCodecType: AVVideoCodecType](./avassetvideotrackplan/videocodectype.md)
   Video codec type of this track

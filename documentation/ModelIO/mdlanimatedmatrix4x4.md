@@ -34,6 +34,10 @@ class MDLAnimatedMatrix4x4
 - [func reset(float4x4Array: [float4x4], atTimes: [TimeInterval])](./mdlanimatedmatrix4x4/reset%28float4x4array,attimes%29.md)
 - [func setDouble4x4(matrix_double4x4, atTime: TimeInterval)](./mdlanimatedmatrix4x4/setdouble4x4%28_,attime%29.md)
 - [func setFloat4x4(matrix_float4x4, atTime: TimeInterval)](./mdlanimatedmatrix4x4/setfloat4x4%28_,attime%29.md)
+- [- getDouble4x4Array:maxCount:](./mdlanimatedmatrix4x4/getdouble4x4array_maxcount_.md)
+- [- getFloat4x4Array:maxCount:](./mdlanimatedmatrix4x4/getfloat4x4array_maxcount_.md)
+- [- resetWithDouble4x4Array:atTimes:count:](./mdlanimatedmatrix4x4/resetwithdouble4x4array_attimes_count_.md)
+- [- resetWithFloat4x4Array:atTimes:count:](./mdlanimatedmatrix4x4/resetwithfloat4x4array_attimes_count_.md)
 
 ## Relationships
 

@@ -50,6 +50,8 @@ The player looper doesn’t use the player item you specify for playback, and in
   Creates a player looper that continuously plays the full duration of a player item.
 - [convenience init(player: AVQueuePlayer, templateItem: AVPlayerItem, timeRange: CMTimeRange)](./init%28player,templateitem,timerange%29.md)
   Creates a player looper that continuously plays the specified time range of a player item.
+- [+ playerLooperWithPlayer:templateItem:timeRange:](./playerlooperwithplayer_templateitem_timerange_.md)
+  Returns player looper that continuously plays the specified time range of a player item.
 
 
 ---

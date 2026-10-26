@@ -98,6 +98,12 @@ When managing CarPlay features, users don’t need to include the name of the ap
   Creates an intent to set the car’s profile.
 - [convenience init(profileNumber: Int?, profileName: String?, defaultProfile: Int?)](./insetprofileincarintent/init%28profilenumber,profilename,defaultprofile%29.md)
   Creates an intent to set the car’s profile.
+- [- initWithProfileNumber:profileName:defaultProfile:carName:](./insetprofileincarintent/initwithprofilenumber_profilename_defaultprofile_carname_.md)
+  Initializes the intent object with the specified profile name and index information.
+- [- initWithProfileNumber:profileName:defaultProfile:](./insetprofileincarintent/initwithprofilenumber_profilename_defaultprofile_.md)
+  Initializes the intent object with the specified profile name and index information.
+- [- initWithProfileNumber:profileLabel:defaultProfile:](./insetprofileincarintent/initwithprofilenumber_profilelabel_defaultprofile_.md)
+  Initializes the intent object with the specified profile name and index information.
 ### Getting the Profile Information
 - [var isDefaultProfile: Bool?](./insetprofileincarintent/isdefaultprofile.md)
   A Boolean value indicating whether to make the profile the default profile.
@@ -107,6 +113,10 @@ When managing CarPlay features, users don’t need to include the name of the ap
   The profile index from which to restore the settings.
 - [var profileLabel: String?](./insetprofileincarintent/profilelabel.md)
   The name assigned to the profile.
+- [defaultProfile](./insetprofileincarintent/defaultprofile-4ztep.md)
+  A Boolean value indicating whether to make the profile the default profile.
+- [profileNumber](./insetprofileincarintent/profilenumber-50f30.md)
+  The profile index from which to restore the settings.
 ### Getting the Car Name
 - [var carName: INSpeakableString?](./insetprofileincarintent/carname.md)
   The name of the car associated with the profile.

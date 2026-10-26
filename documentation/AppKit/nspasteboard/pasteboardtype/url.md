@@ -58,6 +58,8 @@ In macOS 10.5 and earlier, write an URL to a pasteboard using the [`write(to:)`]
   Sound data.
 - [static let string: NSPasteboard.PasteboardType](./string.md)
   String data.
+- [NSPasteboardTypeTabularText](./tabulartext.md)
+  Tab-separated fields of text.
 
 
 ---

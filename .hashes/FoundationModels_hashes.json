@@ -380,6 +380,11 @@
       "file_path": "documentation/FoundationModels/generable/partiallygenerated.md",
       "hash": "4359356fab546259d40befda67c83578f100bd340884b59be8c5412dc0beb778"
     },
+    "https://developer.apple.com/documentation/foundationmodels/generable/partiallygenerated-swift.typealias": {
+      "etag": "\"12e2-65d55c2225e6e-df\"",
+      "file_path": "documentation/FoundationModels/generable/partiallygenerated-swift.typealias.md",
+      "hash": "f1f5e18e2528659019e967453a2da0654ac2b092ca4e48548dd2b6a761b6bee4"
+    },
     "https://developer.apple.com/documentation/foundationmodels/generate-dynamic-game-content-with-guided-generation-and-tools": {
       "etag": "\"6389-65d55c2399101-df\"",
       "file_path": "documentation/FoundationModels/generate-dynamic-game-content-with-guided-generation-and-tools.md",
@@ -965,6 +970,16 @@
       "file_path": "documentation/FoundationModels/instructionsrepresentable/instructionsrepresentation.md",
       "hash": "dc689ba9cd6c67164a4fbbede878d348e176089ebddc883b6cf8d60195de0713"
     },
+    "https://developer.apple.com/documentation/foundationmodels/instructionsrepresentable/instructionsrepresentation-2g2fb": {
+      "etag": "\"1727-65d55c23b20c2-df\"",
+      "file_path": "documentation/FoundationModels/instructionsrepresentable/instructionsrepresentation-2g2fb.md",
+      "hash": "75c6264f3764de84cbcb9b26e91e403b0e4b59fc73d7b305b11a56cd0d05ab34"
+    },
+    "https://developer.apple.com/documentation/foundationmodels/instructionsrepresentable/instructionsrepresentation-57k7v": {
+      "etag": "\"173c-65d55c23b20c2-df\"",
+      "file_path": "documentation/FoundationModels/instructionsrepresentable/instructionsrepresentation-57k7v.md",
+      "hash": "f534ab12d41785b4d38d73b46cda3c2c033fffe05a3b38bb1608d87db3b64cde"
+    },
     "https://developer.apple.com/documentation/foundationmodels/languagemodel": {
       "etag": "\"545a-65da2c6bb2fca-df\"",
       "file_path": "documentation/FoundationModels/languagemodel.md",
@@ -990,10 +1005,20 @@
       "file_path": "documentation/FoundationModels/languagemodel/supportsdataattachmenttype(_).md",
       "hash": "08916443fa51cd2211fceb73ba20d36c6da5296ba0423c39649644bd27c1aefe"
     },
+    "https://developer.apple.com/documentation/foundationmodels/languagemodel/supportsdataattachmenttype(_:)-1sn0q": {
+      "etag": "\"1be9-65da2c6aec4f3-df\"",
+      "file_path": "documentation/FoundationModels/languagemodel/supportsdataattachmenttype(_)-1sn0q.md",
+      "hash": "d51637e2c82e5d640db072376582429eb2afb463199b11ce63dcfe8107bbde11"
+    },
     "https://developer.apple.com/documentation/foundationmodels/languagemodel/supportsdataentrytype(_:)": {
       "etag": "\"202e-65da2c6aec4f3-df\"",
       "file_path": "documentation/FoundationModels/languagemodel/supportsdataentrytype(_).md",
       "hash": "85b476f77f5e503d1c4ad3593468285316eac946fbb2d395de1eaca9dd817508"
+    },
+    "https://developer.apple.com/documentation/foundationmodels/languagemodel/supportsdataentrytype(_:)-9cugj": {
+      "etag": "\"1bb2-65da2c6aec4f3-df\"",
+      "file_path": "documentation/FoundationModels/languagemodel/supportsdataentrytype(_)-9cugj.md",
+      "hash": "fe8259c03c8bf21303788cba0ca231b668562eebda4d5c20b72bb3488aaef9da"
     },
     "https://developer.apple.com/documentation/foundationmodels/languagemodelcapabilities": {
       "etag": "\"424d-65d55c22849b3-df\"",
@@ -1334,6 +1359,11 @@
       "etag": "\"25ac-65d55c2225e6e-df\"",
       "file_path": "documentation/FoundationModels/languagemodelexecutor/prewarm(model,transcript).md",
       "hash": "e338d815ed8f40f873c6221ecd09b8049abd92bb60542509bd9341218652bfc5"
+    },
+    "https://developer.apple.com/documentation/foundationmodels/languagemodelexecutor/prewarm(model:transcript:)-9bd8h": {
+      "etag": "\"1f38-65d55c2225e6e-df\"",
+      "file_path": "documentation/FoundationModels/languagemodelexecutor/prewarm(model,transcript)-9bd8h.md",
+      "hash": "89d55cb235b47b625f3f09b6615810d3e71fa5a340a54100dd43f706a119d8ba"
     },
     "https://developer.apple.com/documentation/foundationmodels/languagemodelexecutor/respond(to:model:streaminginto:)": {
       "etag": "\"3308-65d55c2225e6e-df\"",
@@ -2895,6 +2925,16 @@
       "file_path": "documentation/FoundationModels/promptrepresentable/promptrepresentation.md",
       "hash": "ba5e037460d0ddfa613045488ec8e31cc7f59bc2f5c772c392e4bb307912e9ec"
     },
+    "https://developer.apple.com/documentation/foundationmodels/promptrepresentable/promptrepresentation-2c9rm": {
+      "etag": "\"161e-65d55c220e288-df\"",
+      "file_path": "documentation/FoundationModels/promptrepresentable/promptrepresentation-2c9rm.md",
+      "hash": "dba909f53b1a53923d9da879462ec09a6d216d02b16b427d341f31f0df49c4de"
+    },
+    "https://developer.apple.com/documentation/foundationmodels/promptrepresentable/promptrepresentation-8msla": {
+      "etag": "\"1609-65d55c220e288-df\"",
+      "file_path": "documentation/FoundationModels/promptrepresentable/promptrepresentation-8msla.md",
+      "hash": "b0808b2660f4497dcdcc9ae8ce7bb884f6e0bf9489b733b228a146f6136e4cb1"
+    },
     "https://developer.apple.com/documentation/foundationmodels/running-a-core-ai-model-in-a-foundation-models-session": {
       "etag": "\"7598-65d55c2225e6e-df\"",
       "file_path": "documentation/FoundationModels/running-a-core-ai-model-in-a-foundation-models-session.md",
@@ -3150,10 +3190,20 @@
       "file_path": "documentation/FoundationModels/tool/includesschemaininstructions.md",
       "hash": "03de9826fa07276e614a6b0a75ef449376443e6e4e835dc4e63d80513bf420eb"
     },
+    "https://developer.apple.com/documentation/foundationmodels/tool/includesschemaininstructions-2yllg": {
+      "etag": "\"1965-65d55c23b20c2-df\"",
+      "file_path": "documentation/FoundationModels/tool/includesschemaininstructions-2yllg.md",
+      "hash": "c8a880942028b696f92d1845f4af8ec778fa4b8b707d44374b4931bc3a4a5d27"
+    },
     "https://developer.apple.com/documentation/foundationmodels/tool/name": {
       "etag": "\"2652-65d55c23b20c2-df\"",
       "file_path": "documentation/FoundationModels/tool/name.md",
       "hash": "8c2987db113f54ac96d2e165fb0642c28ed6ae43040045b5f3a6d2724c5b7aa2"
+    },
+    "https://developer.apple.com/documentation/foundationmodels/tool/name-6x7wj": {
+      "etag": "\"1637-65d55c23b20c2-df\"",
+      "file_path": "documentation/FoundationModels/tool/name-6x7wj.md",
+      "hash": "ae7370cfd6f45edab675b7a9908a583a9f69228e43c637584e7b57002fd5e72b"
     },
     "https://developer.apple.com/documentation/foundationmodels/tool/output": {
       "etag": "\"226e-65d55c23b20c2-df\"",
@@ -3164,6 +3214,11 @@
       "etag": "\"275a-65d55c23b20c2-df\"",
       "file_path": "documentation/FoundationModels/tool/parameters.md",
       "hash": "bdcc1669959d33256277aca376846f13c380439decd017a21ad683f51a896740"
+    },
+    "https://developer.apple.com/documentation/foundationmodels/tool/parameters-590v0": {
+      "etag": "\"1887-65d55c23b20c2-df\"",
+      "file_path": "documentation/FoundationModels/tool/parameters-590v0.md",
+      "hash": "d14e8105cb74a74e68df8dcf21a66b90a98e7749ebb06462daa0958d57798ec7"
     },
     "https://developer.apple.com/documentation/foundationmodels/tool/sessionproperty": {
       "etag": "\"2670-65d55c23b20c2-df\"",
@@ -4160,6 +4215,11 @@
       "file_path": "documentation/FoundationModels/generable/generationschema.md",
       "hash": "6fb63abfab530b0cd8f68be3ee375543cf7c64f2362b421ee319dc2b3873ea9d"
     },
+    "https://developer.apple.com/tutorials/data/documentation/foundationmodels/generable/partiallygenerated-swift.typealias.json": {
+      "etag": "\"12e2-65d55c2225e6e-df\"",
+      "file_path": "documentation/FoundationModels/generable/partiallygenerated-swift.typealias.md",
+      "hash": "f1f5e18e2528659019e967453a2da0654ac2b092ca4e48548dd2b6a761b6bee4"
+    },
     "https://developer.apple.com/tutorials/data/documentation/foundationmodels/generable/partiallygenerated.json": {
       "etag": "\"1fa3-65d55c2225e6e-df\"",
       "file_path": "documentation/FoundationModels/generable/partiallygenerated.md",
@@ -4745,6 +4805,16 @@
       "file_path": "documentation/FoundationModels/instructionsrepresentable.md",
       "hash": "54b480e2e98d4873f8109a3bf50776601e3d8bb19fbb0ce19df4735292c21913"
     },
+    "https://developer.apple.com/tutorials/data/documentation/foundationmodels/instructionsrepresentable/instructionsrepresentation-2g2fb.json": {
+      "etag": "\"1727-65d55c23b20c2-df\"",
+      "file_path": "documentation/FoundationModels/instructionsrepresentable/instructionsrepresentation-2g2fb.md",
+      "hash": "75c6264f3764de84cbcb9b26e91e403b0e4b59fc73d7b305b11a56cd0d05ab34"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/foundationmodels/instructionsrepresentable/instructionsrepresentation-57k7v.json": {
+      "etag": "\"173c-65d55c23b20c2-df\"",
+      "file_path": "documentation/FoundationModels/instructionsrepresentable/instructionsrepresentation-57k7v.md",
+      "hash": "f534ab12d41785b4d38d73b46cda3c2c033fffe05a3b38bb1608d87db3b64cde"
+    },
     "https://developer.apple.com/tutorials/data/documentation/foundationmodels/instructionsrepresentable/instructionsrepresentation.json": {
       "etag": "\"2292-65d55c23b20c2-df\"",
       "file_path": "documentation/FoundationModels/instructionsrepresentable/instructionsrepresentation.md",
@@ -4770,10 +4840,20 @@
       "file_path": "documentation/FoundationModels/languagemodel/executorconfiguration.md",
       "hash": "7173c6fd06d00853cdd54a63f869704cef2f56a8ddd623e50cce26d7fc2d77ef"
     },
+    "https://developer.apple.com/tutorials/data/documentation/foundationmodels/languagemodel/supportsdataattachmenttype(_:)-1sn0q.json": {
+      "etag": "\"1be9-65da2c6aec4f3-df\"",
+      "file_path": "documentation/FoundationModels/languagemodel/supportsdataattachmenttype(_)-1sn0q.md",
+      "hash": "d51637e2c82e5d640db072376582429eb2afb463199b11ce63dcfe8107bbde11"
+    },
     "https://developer.apple.com/tutorials/data/documentation/foundationmodels/languagemodel/supportsdataattachmenttype(_:).json": {
       "etag": "\"2083-65da2c6aec4f3-df\"",
       "file_path": "documentation/FoundationModels/languagemodel/supportsdataattachmenttype(_).md",
       "hash": "08916443fa51cd2211fceb73ba20d36c6da5296ba0423c39649644bd27c1aefe"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/foundationmodels/languagemodel/supportsdataentrytype(_:)-9cugj.json": {
+      "etag": "\"1bb2-65da2c6aec4f3-df\"",
+      "file_path": "documentation/FoundationModels/languagemodel/supportsdataentrytype(_)-9cugj.md",
+      "hash": "fe8259c03c8bf21303788cba0ca231b668562eebda4d5c20b72bb3488aaef9da"
     },
     "https://developer.apple.com/tutorials/data/documentation/foundationmodels/languagemodel/supportsdataentrytype(_:).json": {
       "etag": "\"202e-65da2c6aec4f3-df\"",
@@ -5114,6 +5194,11 @@
       "etag": "\"1b67-65d55c2225e6e-df\"",
       "file_path": "documentation/FoundationModels/languagemodelexecutor/model.md",
       "hash": "339a84b5c1d783f23cb7490755f516f4db402799f4b222ee91d1581f5f8c24b2"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/foundationmodels/languagemodelexecutor/prewarm(model:transcript:)-9bd8h.json": {
+      "etag": "\"1f38-65d55c2225e6e-df\"",
+      "file_path": "documentation/FoundationModels/languagemodelexecutor/prewarm(model,transcript)-9bd8h.md",
+      "hash": "89d55cb235b47b625f3f09b6615810d3e71fa5a340a54100dd43f706a119d8ba"
     },
     "https://developer.apple.com/tutorials/data/documentation/foundationmodels/languagemodelexecutor/prewarm(model:transcript:).json": {
       "etag": "\"25ac-65d55c2225e6e-df\"",
@@ -6675,6 +6760,16 @@
       "file_path": "documentation/FoundationModels/promptrepresentable.md",
       "hash": "b1359419af9270e859291f13540b7f356a90fd965b9953a0032b2c0997826908"
     },
+    "https://developer.apple.com/tutorials/data/documentation/foundationmodels/promptrepresentable/promptrepresentation-2c9rm.json": {
+      "etag": "\"161e-65d55c220e288-df\"",
+      "file_path": "documentation/FoundationModels/promptrepresentable/promptrepresentation-2c9rm.md",
+      "hash": "dba909f53b1a53923d9da879462ec09a6d216d02b16b427d341f31f0df49c4de"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/foundationmodels/promptrepresentable/promptrepresentation-8msla.json": {
+      "etag": "\"1609-65d55c220e288-df\"",
+      "file_path": "documentation/FoundationModels/promptrepresentable/promptrepresentation-8msla.md",
+      "hash": "b0808b2660f4497dcdcc9ae8ce7bb884f6e0bf9489b733b228a146f6136e4cb1"
+    },
     "https://developer.apple.com/tutorials/data/documentation/foundationmodels/promptrepresentable/promptrepresentation.json": {
       "etag": "\"208a-65d55c220e288-df\"",
       "file_path": "documentation/FoundationModels/promptrepresentable/promptrepresentation.md",
@@ -6930,10 +7025,20 @@
       "file_path": "documentation/FoundationModels/tool/description.md",
       "hash": "16d68b8cc1f45f92254f96bd946ad0c53f08a40aab2277b581c75f1a8ab17fe2"
     },
+    "https://developer.apple.com/tutorials/data/documentation/foundationmodels/tool/includesschemaininstructions-2yllg.json": {
+      "etag": "\"1965-65d55c23b20c2-df\"",
+      "file_path": "documentation/FoundationModels/tool/includesschemaininstructions-2yllg.md",
+      "hash": "c8a880942028b696f92d1845f4af8ec778fa4b8b707d44374b4931bc3a4a5d27"
+    },
     "https://developer.apple.com/tutorials/data/documentation/foundationmodels/tool/includesschemaininstructions.json": {
       "etag": "\"2980-65d55c23b20c2-df\"",
       "file_path": "documentation/FoundationModels/tool/includesschemaininstructions.md",
       "hash": "03de9826fa07276e614a6b0a75ef449376443e6e4e835dc4e63d80513bf420eb"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/foundationmodels/tool/name-6x7wj.json": {
+      "etag": "\"1637-65d55c23b20c2-df\"",
+      "file_path": "documentation/FoundationModels/tool/name-6x7wj.md",
+      "hash": "ae7370cfd6f45edab675b7a9908a583a9f69228e43c637584e7b57002fd5e72b"
     },
     "https://developer.apple.com/tutorials/data/documentation/foundationmodels/tool/name.json": {
       "etag": "\"2652-65d55c23b20c2-df\"",
@@ -6944,6 +7049,11 @@
       "etag": "\"226e-65d55c23b20c2-df\"",
       "file_path": "documentation/FoundationModels/tool/output.md",
       "hash": "3769ebf9e8215e6bafa9629d0ee1a1ff48e01351e4c3cf2499a79453b56f909b"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/foundationmodels/tool/parameters-590v0.json": {
+      "etag": "\"1887-65d55c23b20c2-df\"",
+      "file_path": "documentation/FoundationModels/tool/parameters-590v0.md",
+      "hash": "d14e8105cb74a74e68df8dcf21a66b90a98e7749ebb06462daa0958d57798ec7"
     },
     "https://developer.apple.com/tutorials/data/documentation/foundationmodels/tool/parameters.json": {
       "etag": "\"275a-65d55c23b20c2-df\"",
@@ -7573,8 +7683,8 @@
   },
   "metadata": {
     "render": {
-      "version": 1
+      "version": 2
     },
-    "total_pages": 1514
+    "total_pages": 1536
   }
 }

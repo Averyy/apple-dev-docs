@@ -124,6 +124,8 @@ Core Animation provides high frame rates and smooth animations without burdening
 - [Core Animation Constants](./core-animation-constants.md)
 - [QuartzCore Functions](./quartzcore-functions.md)
 - [Core Animation Data Types](./core-animation-data-types.md)
+### Variables
+- [kCAContentsFormatAutomatic](./calayercontentsformat/automatic.md)
 
 ## See Also
 

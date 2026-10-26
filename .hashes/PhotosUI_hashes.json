@@ -370,6 +370,11 @@
       "file_path": "documentation/PhotosUI/phpickercapabilities/init(rawvalue).md",
       "hash": "4a904b64081031c6c693cfb08e5f92de9245cc60496e9b96a4168cbe336e8049"
     },
+    "https://developer.apple.com/documentation/photosui/phpickercapabilities/phpickercapabilitiesnone": {
+      "etag": "\"2b8f-65d560daca7e1-df\"",
+      "file_path": "documentation/PhotosUI/phpickercapabilities/phpickercapabilitiesnone.md",
+      "hash": "103a00bf6bfc0305e0c08a78984b82193de947f35458b06655b261a85f815ca5"
+    },
     "https://developer.apple.com/documentation/photosui/phpickercapabilities/search": {
       "etag": "\"3598-65d560daca7e1-df\"",
       "file_path": "documentation/PhotosUI/phpickercapabilities/search.md",
@@ -389,6 +394,71 @@
       "etag": "\"35e3-65d560daca7e1-df\"",
       "file_path": "documentation/PhotosUI/phpickercapabilities/stagingarea.md",
       "hash": "2b96284d4faa240a001b287dda035fac1c6e9601d7263e80888c37b4b93fdd32"
+    },
+    "https://developer.apple.com/documentation/photosui/phpickerconfiguration-c.class": {
+      "etag": "\"559a-65d560db43ad9-df\"",
+      "file_path": "documentation/PhotosUI/phpickerconfiguration-c.class.md",
+      "hash": "e81cce3cf1e4aa23cca13be60a72c685d35dd00cc8b3d46e136136bf0c720d85"
+    },
+    "https://developer.apple.com/documentation/photosui/phpickerconfiguration-c.class/disabledcapabilities": {
+      "etag": "\"1eae-65d560dae5990-df\"",
+      "file_path": "documentation/PhotosUI/phpickerconfiguration-c.class/disabledcapabilities.md",
+      "hash": "b9a1cd4930a75fd39208ce0d1978cff68c755fde874a6450d843bbaec90e4eaf"
+    },
+    "https://developer.apple.com/documentation/photosui/phpickerconfiguration-c.class/edgeswithoutcontentmargins": {
+      "etag": "\"2191-65d560dae5990-df\"",
+      "file_path": "documentation/PhotosUI/phpickerconfiguration-c.class/edgeswithoutcontentmargins.md",
+      "hash": "abd3eee1dc67df3eabc61f8ed83378e5d690e9d98286cb6670517c621ac12e36"
+    },
+    "https://developer.apple.com/documentation/photosui/phpickerconfiguration-c.class/filter": {
+      "etag": "\"12f6-65d560dae5990-df\"",
+      "file_path": "documentation/PhotosUI/phpickerconfiguration-c.class/filter.md",
+      "hash": "5b94bd4f5c103e146317aa3abc12520e51055e4b92f37fd81cd298220b5b8458"
+    },
+    "https://developer.apple.com/documentation/photosui/phpickerconfiguration-c.class/init": {
+      "etag": "\"15ea-65d560dae5990-df\"",
+      "file_path": "documentation/PhotosUI/phpickerconfiguration-c.class/init.md",
+      "hash": "872ce3d81da4009b136629dec71f2eceb0a3ea900efba4c8c2331667292c4952"
+    },
+    "https://developer.apple.com/documentation/photosui/phpickerconfiguration-c.class/initwithphotolibrary:": {
+      "etag": "\"17c1-65d560dae5990-df\"",
+      "file_path": "documentation/PhotosUI/phpickerconfiguration-c.class/initwithphotolibrary_.md",
+      "hash": "a709c19fd223d507ba1c419a1cdeb69b09fde4041ba3e186613465f78c700660"
+    },
+    "https://developer.apple.com/documentation/photosui/phpickerconfiguration-c.class/metadataoptions": {
+      "etag": "\"1449-65d560dae5990-df\"",
+      "file_path": "documentation/PhotosUI/phpickerconfiguration-c.class/metadataoptions.md",
+      "hash": "facb86bd99de7269b8d39539f24a7558f091f2c412f547ad93399b7286174114"
+    },
+    "https://developer.apple.com/documentation/photosui/phpickerconfiguration-c.class/mode": {
+      "etag": "\"25d7-65d560dae5990-df\"",
+      "file_path": "documentation/PhotosUI/phpickerconfiguration-c.class/mode.md",
+      "hash": "37bb432d77e5b50845290dd0df1dee4fb74f0af3332404881d15b8ce71155805"
+    },
+    "https://developer.apple.com/documentation/photosui/phpickerconfiguration-c.class/preferredassetrepresentationmode": {
+      "etag": "\"2128-65d560dae5990-df\"",
+      "file_path": "documentation/PhotosUI/phpickerconfiguration-c.class/preferredassetrepresentationmode.md",
+      "hash": "eb889b9fea21334e70f35de01db6a385ada8ebe5de55bb917bc0ff90ddc744c8"
+    },
+    "https://developer.apple.com/documentation/photosui/phpickerconfiguration-c.class/preselectedassetidentifiers": {
+      "etag": "\"1aa6-65d560dae5990-df\"",
+      "file_path": "documentation/PhotosUI/phpickerconfiguration-c.class/preselectedassetidentifiers.md",
+      "hash": "b57dd990e3d8cdd4e20f74eb3cff072ae23c819ee047a39c69288288823968b4"
+    },
+    "https://developer.apple.com/documentation/photosui/phpickerconfiguration-c.class/searchtext": {
+      "etag": "\"1149-65d560dae5990-df\"",
+      "file_path": "documentation/PhotosUI/phpickerconfiguration-c.class/searchtext.md",
+      "hash": "e3b005768c38cce724c2849498ef1ebc97505aff67fed72161cc5e7372ed63dc"
+    },
+    "https://developer.apple.com/documentation/photosui/phpickerconfiguration-c.class/selection": {
+      "etag": "\"1749-65d560dae5990-df\"",
+      "file_path": "documentation/PhotosUI/phpickerconfiguration-c.class/selection.md",
+      "hash": "0c99ce8c44b8c004020759df488192240f52cbcc13074c9a5685275b0002f5e8"
+    },
+    "https://developer.apple.com/documentation/photosui/phpickerconfiguration-c.class/selectionlimit": {
+      "etag": "\"1b6d-65d560dae5990-df\"",
+      "file_path": "documentation/PhotosUI/phpickerconfiguration-c.class/selectionlimit.md",
+      "hash": "317db76d2ea4de8a33e3756ff3adaf515a4d6841b20aceb063eb33fa444c0798"
     },
     "https://developer.apple.com/documentation/photosui/phpickerconfiguration-swift.struct": {
       "etag": "\"6a2d-65d560db1d8c4-df\"",
@@ -525,6 +595,31 @@
       "file_path": "documentation/PhotosUI/phpickerconfiguration-swift.struct/update/selectionlimit.md",
       "hash": "9937290ad9494bfb6038ab2d3f2b2a291e393ab767167fb0dc13e82c0730289d"
     },
+    "https://developer.apple.com/documentation/photosui/phpickerconfigurationassetrepresentationmode": {
+      "etag": "\"427f-65d560dae5990-df\"",
+      "file_path": "documentation/PhotosUI/phpickerconfigurationassetrepresentationmode.md",
+      "hash": "e3d5083c3441eacecb742c7e15efe548bd371d28cd966bc19be494d75ef15c04"
+    },
+    "https://developer.apple.com/documentation/photosui/phpickerconfigurationassetrepresentationmode/automatic": {
+      "etag": "\"27d2-65d560da7b8fa-df\"",
+      "file_path": "documentation/PhotosUI/phpickerconfigurationassetrepresentationmode/automatic.md",
+      "hash": "8ff0900d4fa459f959ccdbeaf41b8fc107982b6571c0934986bef3d306531605"
+    },
+    "https://developer.apple.com/documentation/photosui/phpickerconfigurationassetrepresentationmode/compatible": {
+      "etag": "\"27c2-65d560da7b8fa-df\"",
+      "file_path": "documentation/PhotosUI/phpickerconfigurationassetrepresentationmode/compatible.md",
+      "hash": "3eb390fad239860695b25379b977e71a77277644b6138eb226cc40deb74c3a81"
+    },
+    "https://developer.apple.com/documentation/photosui/phpickerconfigurationassetrepresentationmode/current": {
+      "etag": "\"27bb-65d560da7b8fa-df\"",
+      "file_path": "documentation/PhotosUI/phpickerconfigurationassetrepresentationmode/current.md",
+      "hash": "f4b7e05ef61cc80f5c1e75dde0239fce778190b9856f60a92153b65c65d8720e"
+    },
+    "https://developer.apple.com/documentation/photosui/phpickerconfigurationassetrepresentationmode/init(rawvalue:)": {
+      "etag": "\"1544-65d560da7b8fa-df\"",
+      "file_path": "documentation/PhotosUI/phpickerconfigurationassetrepresentationmode/init(rawvalue).md",
+      "hash": "aec379d5ef0ae6353bead92c1504bbfd5542b9b6fa5a010b17fbd48dd721c753"
+    },
     "https://developer.apple.com/documentation/photosui/phpickerconfigurationselection": {
       "etag": "\"4ee9-65d560da7b8fa-df\"",
       "file_path": "documentation/PhotosUI/phpickerconfigurationselection.md",
@@ -554,6 +649,91 @@
       "etag": "\"2c75-65d560daca7e1-df\"",
       "file_path": "documentation/PhotosUI/phpickerconfigurationselection/ordered.md",
       "hash": "3c49d64cf28c1965c360a6715710a420d50ef2790393d67c9b28b62cbead0ec9"
+    },
+    "https://developer.apple.com/documentation/photosui/phpickerfilter-c.class": {
+      "etag": "\"480b-65d560da965c4-df\"",
+      "file_path": "documentation/PhotosUI/phpickerfilter-c.class.md",
+      "hash": "73210a2d84d6f5009816ad336c65fba9ced56eddbcd329dd3d5843600eebdd6b"
+    },
+    "https://developer.apple.com/documentation/photosui/phpickerfilter-c.class/allfiltermatchingsubfilters:": {
+      "etag": "\"1755-65d560da5c313-df\"",
+      "file_path": "documentation/PhotosUI/phpickerfilter-c.class/allfiltermatchingsubfilters_.md",
+      "hash": "eafb4946d1cdb88c661fab02f209a0318b3fe7704c646b986c61ac60251471d1"
+    },
+    "https://developer.apple.com/documentation/photosui/phpickerfilter-c.class/anyfiltermatchingsubfilters:": {
+      "etag": "\"18cb-65d560da5c313-df\"",
+      "file_path": "documentation/PhotosUI/phpickerfilter-c.class/anyfiltermatchingsubfilters_.md",
+      "hash": "960de09b8a6eb837c79f1ee71a1ca3d68f2ce973ca0ae48bc2510f799b3208e1"
+    },
+    "https://developer.apple.com/documentation/photosui/phpickerfilter-c.class/burstsfilter": {
+      "etag": "\"209a-65d560da5c313-df\"",
+      "file_path": "documentation/PhotosUI/phpickerfilter-c.class/burstsfilter.md",
+      "hash": "9d2549bba99ce9e8d338094cd4ed52d8fd47949a90c4e8ead6ab8ecf077fe78b"
+    },
+    "https://developer.apple.com/documentation/photosui/phpickerfilter-c.class/cinematicvideosfilter": {
+      "etag": "\"20e4-65d560da5c313-df\"",
+      "file_path": "documentation/PhotosUI/phpickerfilter-c.class/cinematicvideosfilter.md",
+      "hash": "66087939cb31461e94a3b6690da5da7bc4273748284bf8cb66c81d513f7a8c42"
+    },
+    "https://developer.apple.com/documentation/photosui/phpickerfilter-c.class/deptheffectphotosfilter": {
+      "etag": "\"20d3-65d560da5c313-df\"",
+      "file_path": "documentation/PhotosUI/phpickerfilter-c.class/deptheffectphotosfilter.md",
+      "hash": "1dc47e8d8769bcc98483852bce79a90e66908c757c53997de1ec5fcf8ef3522a"
+    },
+    "https://developer.apple.com/documentation/photosui/phpickerfilter-c.class/imagesfilter": {
+      "etag": "\"16d7-65d560da5c313-df\"",
+      "file_path": "documentation/PhotosUI/phpickerfilter-c.class/imagesfilter.md",
+      "hash": "fa8407cc217c41d53902cb69833f1ffb48e6348a54af49b6517e7ebb6c518ac7"
+    },
+    "https://developer.apple.com/documentation/photosui/phpickerfilter-c.class/livephotosfilter": {
+      "etag": "\"16da-65d560da5c313-df\"",
+      "file_path": "documentation/PhotosUI/phpickerfilter-c.class/livephotosfilter.md",
+      "hash": "63b99b292bb0a454cd87f3010a3800dd05f73a55fa9ea51cbe6e174fd4b9057b"
+    },
+    "https://developer.apple.com/documentation/photosui/phpickerfilter-c.class/notfilterofsubfilter:": {
+      "etag": "\"1779-65d560da5c313-df\"",
+      "file_path": "documentation/PhotosUI/phpickerfilter-c.class/notfilterofsubfilter_.md",
+      "hash": "ce8a9a3d755dccbc3e558af386782b49d51f8ea7ca893fbd5e2f3faa32ca7f4e"
+    },
+    "https://developer.apple.com/documentation/photosui/phpickerfilter-c.class/panoramasfilter": {
+      "etag": "\"2095-65d560da5c313-df\"",
+      "file_path": "documentation/PhotosUI/phpickerfilter-c.class/panoramasfilter.md",
+      "hash": "869d598e69bd0857beae8bb5b9d10a860cf0cf050a4add5853e92b98806dff41"
+    },
+    "https://developer.apple.com/documentation/photosui/phpickerfilter-c.class/playbackstylefilter:": {
+      "etag": "\"1c76-65d560da5c313-df\"",
+      "file_path": "documentation/PhotosUI/phpickerfilter-c.class/playbackstylefilter_.md",
+      "hash": "1a00a3a7949577ebf03d3c99d3eabae0ad6c65431b79e7318411fa0e0972712f"
+    },
+    "https://developer.apple.com/documentation/photosui/phpickerfilter-c.class/screenrecordingsfilter": {
+      "etag": "\"20c1-65d560da5c313-df\"",
+      "file_path": "documentation/PhotosUI/phpickerfilter-c.class/screenrecordingsfilter.md",
+      "hash": "8e9a6d999c76b50e796f7f1c8b327ee23cde93f1cd374b8d5d571858f294a5b9"
+    },
+    "https://developer.apple.com/documentation/photosui/phpickerfilter-c.class/screenshotsfilter": {
+      "etag": "\"209d-65d560da5c313-df\"",
+      "file_path": "documentation/PhotosUI/phpickerfilter-c.class/screenshotsfilter.md",
+      "hash": "3315f4a69f8d2b436420dba5f2598fbd9b3f1046b02530f828d03276a43766c5"
+    },
+    "https://developer.apple.com/documentation/photosui/phpickerfilter-c.class/slomovideosfilter": {
+      "etag": "\"20a4-65d560da5c313-df\"",
+      "file_path": "documentation/PhotosUI/phpickerfilter-c.class/slomovideosfilter.md",
+      "hash": "fd4e9593968ee8ce635a9b5958ec82e207939aaaa0f85e6fde6130b5af9d154f"
+    },
+    "https://developer.apple.com/documentation/photosui/phpickerfilter-c.class/spatialmediafilter": {
+      "etag": "\"ebd-65d560da5c313-df\"",
+      "file_path": "documentation/PhotosUI/phpickerfilter-c.class/spatialmediafilter.md",
+      "hash": "8f33e059840249aae27c280910c09f758fcf753ec7f092d4ec40327faa8db510"
+    },
+    "https://developer.apple.com/documentation/photosui/phpickerfilter-c.class/timelapsevideosfilter": {
+      "etag": "\"20bb-65d560da5c313-df\"",
+      "file_path": "documentation/PhotosUI/phpickerfilter-c.class/timelapsevideosfilter.md",
+      "hash": "c2db3f7448141a72db6ec6a4bca45fcdabb0e1583344d2a43fcd67bcc398e585"
+    },
+    "https://developer.apple.com/documentation/photosui/phpickerfilter-c.class/videosfilter": {
+      "etag": "\"16c3-65d560da5c313-df\"",
+      "file_path": "documentation/PhotosUI/phpickerfilter-c.class/videosfilter.md",
+      "hash": "6594cd30fa8ff241849440777b29be2b303ccbf2cee5ed7af8fb0cd8dd79a7c7"
     },
     "https://developer.apple.com/documentation/photosui/phpickerfilter-swift.struct": {
       "etag": "\"5fdf-65d560db43ad9-df\"",
@@ -650,6 +830,11 @@
       "file_path": "documentation/PhotosUI/phpickermetadataoptions/init(rawvalue).md",
       "hash": "d4b5825ad108f1d909e2f0c5fcfcbf076bf169c48fce51e6906bb7fe1962b88d"
     },
+    "https://developer.apple.com/documentation/photosui/phpickermetadataoptions/phpickermetadataoptionsnone": {
+      "etag": "\"10b4-65d560daca7e1-df\"",
+      "file_path": "documentation/PhotosUI/phpickermetadataoptions/phpickermetadataoptionsnone.md",
+      "hash": "cc575331d6b75a1ec4fb99bc139c7f04daa2bf19406bfacfa467efe8c2f5095e"
+    },
     "https://developer.apple.com/documentation/photosui/phpickermetadataoptions/removecaptions": {
       "etag": "\"1be5-65d560daca7e1-df\"",
       "file_path": "documentation/PhotosUI/phpickermetadataoptions/removecaptions.md",
@@ -659,6 +844,21 @@
       "etag": "\"1be5-65d560daca7e1-df\"",
       "file_path": "documentation/PhotosUI/phpickermetadataoptions/removelocation.md",
       "hash": "6a124ed47cb8d2ae8afed29eccfe132842a32e2cc647dbbbb943cd9009eeba9a"
+    },
+    "https://developer.apple.com/documentation/photosui/phpickermode-c.enum": {
+      "etag": "\"2e7b-65d560dae5990-df\"",
+      "file_path": "documentation/PhotosUI/phpickermode-c.enum.md",
+      "hash": "badf7bdf817df8dff348ca548af8c7ac5b14f76dc1b492e6449531548b736303"
+    },
+    "https://developer.apple.com/documentation/photosui/phpickermode-c.enum/phpickermodecompact": {
+      "etag": "\"1045-65d560da7b8fa-df\"",
+      "file_path": "documentation/PhotosUI/phpickermode-c.enum/phpickermodecompact.md",
+      "hash": "3a7d5d739a954b7227206cd8b11c5c194f5b683e7b0cc2bd7046d1b1a04b357f"
+    },
+    "https://developer.apple.com/documentation/photosui/phpickermode-c.enum/phpickermodedefault": {
+      "etag": "\"1048-65d560da7b8fa-df\"",
+      "file_path": "documentation/PhotosUI/phpickermode-c.enum/phpickermodedefault.md",
+      "hash": "bfca4fb296806acf306d12ad9c756438f0ce153a84847ff7bf0bdd5abf57ffe8"
     },
     "https://developer.apple.com/documentation/photosui/phpickermode-swift.struct": {
       "etag": "\"35e9-65d560db1d8c4-df\"",
@@ -675,6 +875,21 @@
       "file_path": "documentation/PhotosUI/phpickermode-swift.struct/default.md",
       "hash": "91b1bd1d7695552b83bf832b747848c64496bd61daddfb4d022014797bccd553"
     },
+    "https://developer.apple.com/documentation/photosui/phpickerresult-c.class": {
+      "etag": "\"216f-65d560db012a3-df\"",
+      "file_path": "documentation/PhotosUI/phpickerresult-c.class.md",
+      "hash": "c787f9788fe6f3cd8072b73ac6d05b30aceb1c606515317601400986f414ddb4"
+    },
+    "https://developer.apple.com/documentation/photosui/phpickerresult-c.class/assetidentifier": {
+      "etag": "\"14d7-65d560daca7e1-df\"",
+      "file_path": "documentation/PhotosUI/phpickerresult-c.class/assetidentifier.md",
+      "hash": "a3bf24162367eda10fd1a45789f2f339170091cbe4b3a04494791cf3e9218119"
+    },
+    "https://developer.apple.com/documentation/photosui/phpickerresult-c.class/itemprovider": {
+      "etag": "\"1541-65d560daca7e1-df\"",
+      "file_path": "documentation/PhotosUI/phpickerresult-c.class/itemprovider.md",
+      "hash": "1945ce456e196aca881907ee3eae04125390e7ccfdf4f60f3d78f8f6d47c0664"
+    },
     "https://developer.apple.com/documentation/photosui/phpickerresult-swift.struct": {
       "etag": "\"2892-65d560dae5990-df\"",
       "file_path": "documentation/PhotosUI/phpickerresult-swift.struct.md",
@@ -689,6 +904,21 @@
       "etag": "\"171b-65d560db1d8c4-df\"",
       "file_path": "documentation/PhotosUI/phpickerresult-swift.struct/itemprovider.md",
       "hash": "4ca8ed2eb604e0dbbda14b78f4c40aae4d20d407debe927ff5227f1ad46961a0"
+    },
+    "https://developer.apple.com/documentation/photosui/phpickersearchtext-c.class": {
+      "etag": "\"198b-65d560da965c4-df\"",
+      "file_path": "documentation/PhotosUI/phpickersearchtext-c.class.md",
+      "hash": "875aea9608c5f37aa0905bbc4d524e4d444200768a3fc9d7270f6885d02a15a5"
+    },
+    "https://developer.apple.com/documentation/photosui/phpickersearchtext-c.class/initwithphotosearchsuggestion:": {
+      "etag": "\"1321-65d560db1d8c4-df\"",
+      "file_path": "documentation/PhotosUI/phpickersearchtext-c.class/initwithphotosearchsuggestion_.md",
+      "hash": "08aa252a7517e3f82d10cfcb1e614c70c053fb6bfe23833955dccadbff1cab03"
+    },
+    "https://developer.apple.com/documentation/photosui/phpickersearchtext-c.class/initwithstring:": {
+      "etag": "\"1220-65d560db1d8c4-df\"",
+      "file_path": "documentation/PhotosUI/phpickersearchtext-c.class/initwithstring_.md",
+      "hash": "7f1c37536357a70b3266b2b82e1d2ae1487de4bfc8d45f0db7bc802f3ff01b89"
     },
     "https://developer.apple.com/documentation/photosui/phpickersearchtext-swift.struct": {
       "etag": "\"1e1c-65d560db43ad9-df\"",
@@ -705,6 +935,26 @@
       "file_path": "documentation/PhotosUI/phpickersearchtext-swift.struct/init(photosearchsuggestion).md",
       "hash": "10a6eb7d5321b78894dbd536d576aef3083f54a6e97ac99991d29e499ef8729d"
     },
+    "https://developer.apple.com/documentation/photosui/phpickerupdateconfiguration": {
+      "etag": "\"39e5-65d560db1d8c4-df\"",
+      "file_path": "documentation/PhotosUI/phpickerupdateconfiguration.md",
+      "hash": "c6385ce6e663e6914179b8fd2733d534d5f22820ebe3f421b847c2a8488f3c7b"
+    },
+    "https://developer.apple.com/documentation/photosui/phpickerupdateconfiguration/edgeswithoutcontentmargins": {
+      "etag": "\"17dd-65d560db43ad9-df\"",
+      "file_path": "documentation/PhotosUI/phpickerupdateconfiguration/edgeswithoutcontentmargins.md",
+      "hash": "a58d1b2d0fefb750d0eaabf19eef90d567a13fe881b8721943bb0f2f91465fbd"
+    },
+    "https://developer.apple.com/documentation/photosui/phpickerupdateconfiguration/searchtext": {
+      "etag": "\"1138-65d560db43ad9-df\"",
+      "file_path": "documentation/PhotosUI/phpickerupdateconfiguration/searchtext.md",
+      "hash": "b6bf2cb9299ea2067a804e4006b83428e6ea3ee7bb1509ee78b29a50d4659bfb"
+    },
+    "https://developer.apple.com/documentation/photosui/phpickerupdateconfiguration/selectionlimit": {
+      "etag": "\"1999-65d560db43ad9-df\"",
+      "file_path": "documentation/PhotosUI/phpickerupdateconfiguration/selectionlimit.md",
+      "hash": "0a3b03b83df0e079f928ac0f9e29b376ee292970c59f910560d5a0a7959a6e98"
+    },
     "https://developer.apple.com/documentation/photosui/phpickerviewcontroller": {
       "etag": "\"e596-65d560db43ad9-df\"",
       "file_path": "documentation/PhotosUI/phpickerviewcontroller.md",
@@ -715,10 +965,20 @@
       "file_path": "documentation/PhotosUI/phpickerviewcontroller/configuration-17a8p.md",
       "hash": "c9e23a5f77cdf64e7df8a4c16ba4296f797e50b5b1ca1f23ca697294a0ff9bb8"
     },
+    "https://developer.apple.com/documentation/photosui/phpickerviewcontroller/configuration-3vf53": {
+      "etag": "\"17f2-65d560da7b8fa-df\"",
+      "file_path": "documentation/PhotosUI/phpickerviewcontroller/configuration-3vf53.md",
+      "hash": "f9f787e97b64e135b114b4a8156d5fa7a30517b845cf72ebb2bc54beb8ede598"
+    },
     "https://developer.apple.com/documentation/photosui/phpickerviewcontroller/delegate-3zqmt": {
       "etag": "\"1e03-65d560da7b8fa-df\"",
       "file_path": "documentation/PhotosUI/phpickerviewcontroller/delegate-3zqmt.md",
       "hash": "c172b6e08410b156d2387ffdde2da229c56240d0715d86600a2d18eb661d9332"
+    },
+    "https://developer.apple.com/documentation/photosui/phpickerviewcontroller/delegate-8dlnb": {
+      "etag": "\"16a1-65d560da7b8fa-df\"",
+      "file_path": "documentation/PhotosUI/phpickerviewcontroller/delegate-8dlnb.md",
+      "hash": "147ab59390fdf0f1b9df8119a23da836689b2b5c209cb464ef5b12c6c222f0fd"
     },
     "https://developer.apple.com/documentation/photosui/phpickerviewcontroller/deselectassets(withidentifiers:)": {
       "etag": "\"26c4-65d560da7b8fa-df\"",
@@ -729,6 +989,11 @@
       "etag": "\"1c0b-65d560da7b8fa-df\"",
       "file_path": "documentation/PhotosUI/phpickerviewcontroller/init(configuration).md",
       "hash": "5da80a249a54f445eaa43e91f43dc19787bdb873d14f3ad100e5e89bc6502ce9"
+    },
+    "https://developer.apple.com/documentation/photosui/phpickerviewcontroller/initwithconfiguration:": {
+      "etag": "\"1687-65d560da7b8fa-df\"",
+      "file_path": "documentation/PhotosUI/phpickerviewcontroller/initwithconfiguration_.md",
+      "hash": "52cb1b16d1fcb57ecf42c23c2b1f6bb11adc8e3651a0940edbc81abf7b6b3274"
     },
     "https://developer.apple.com/documentation/photosui/phpickerviewcontroller/moveasset(withidentifier:afterassetwithidentifier:)": {
       "etag": "\"314a-65d560da7b8fa-df\"",
@@ -744,6 +1009,11 @@
       "etag": "\"23e3-65d560da7b8fa-df\"",
       "file_path": "documentation/PhotosUI/phpickerviewcontroller/updatepicker(using).md",
       "hash": "e4203edcf22a22be3b5e789d0ed5a401fc370d62205df8883a701a5633eba471"
+    },
+    "https://developer.apple.com/documentation/photosui/phpickerviewcontroller/updatepickerusingconfiguration:": {
+      "etag": "\"194a-65d560da7b8fa-df\"",
+      "file_path": "documentation/PhotosUI/phpickerviewcontroller/updatepickerusingconfiguration_.md",
+      "hash": "a5bb0860c288f3f76274b06d6b6b9ca66c07e887f1acaceefa23f988204d3e22"
     },
     "https://developer.apple.com/documentation/photosui/phpickerviewcontroller/zoomin()": {
       "etag": "\"24cd-65d560da7b8fa-df\"",
@@ -764,6 +1034,16 @@
       "etag": "\"221f-65d560dab45b1-df\"",
       "file_path": "documentation/PhotosUI/phpickerviewcontrollerdelegate-5yntc/picker(_,didfinishpicking).md",
       "hash": "ee72d6f39fe8ac59f84c475f6be0f13fa21ed00ca4b1870eccaee9fb25a315c4"
+    },
+    "https://developer.apple.com/documentation/photosui/phpickerviewcontrollerdelegate-9y5xc": {
+      "etag": "\"1ec1-65d560da965c4-df\"",
+      "file_path": "documentation/PhotosUI/phpickerviewcontrollerdelegate-9y5xc.md",
+      "hash": "218b16913903a8fc2ee8de6d0f29d479557fc6ad010e788d2fffade3ad5cfb5a"
+    },
+    "https://developer.apple.com/documentation/photosui/phpickerviewcontrollerdelegate-9y5xc/picker:didfinishpicking:": {
+      "etag": "\"1900-65d560db1d8c4-df\"",
+      "file_path": "documentation/PhotosUI/phpickerviewcontrollerdelegate-9y5xc/picker_didfinishpicking_.md",
+      "hash": "47ac377757bdac72949391a3918a974cfdf46958d9bbb5cbe8e54527e7e493e1"
     },
     "https://developer.apple.com/documentation/photosui/phprojectassetelement": {
       "etag": "\"7ff6-65d560db43ad9-df\"",
@@ -1405,6 +1685,31 @@
       "file_path": "documentation/PhotosUI/phprojecttypedescriptioninvalidator/invalidatetypedescription(for).md",
       "hash": "af9fa0df926aa51befaa8749b72fc27d96d062f492fbbb2381bd98aef1dda126"
     },
+    "https://developer.apple.com/documentation/photosui/phsharedalbumcreationconfiguration-c.class": {
+      "etag": "\"1dbf-65d560dae5990-df\"",
+      "file_path": "documentation/PhotosUI/phsharedalbumcreationconfiguration-c.class.md",
+      "hash": "3de91abbcdfe3786abe12b9127bb594d20ba38ff2f7771ea607e4a2af38f0ccb"
+    },
+    "https://developer.apple.com/documentation/photosui/phsharedalbumcreationconfiguration-c.class/defaultpolicy": {
+      "etag": "\"1641-65d560dae5990-df\"",
+      "file_path": "documentation/PhotosUI/phsharedalbumcreationconfiguration-c.class/defaultpolicy.md",
+      "hash": "1cb97a8d4570c1f0af4982266f896115d21247919dd68d80b65e32de01030c3b"
+    },
+    "https://developer.apple.com/documentation/photosui/phsharedalbumcreationconfiguration-c.class/defaulttitle": {
+      "etag": "\"1406-65d560dae5990-df\"",
+      "file_path": "documentation/PhotosUI/phsharedalbumcreationconfiguration-c.class/defaulttitle.md",
+      "hash": "17c9ed0a3942cf2293ced63548611c9250f0dad03fd0b3c0131cbecc124ebae2"
+    },
+    "https://developer.apple.com/documentation/photosui/phsharedalbumcreationconfiguration-c.class/initwithphotolibrary:": {
+      "etag": "\"151c-65d560dae5990-df\"",
+      "file_path": "documentation/PhotosUI/phsharedalbumcreationconfiguration-c.class/initwithphotolibrary_.md",
+      "hash": "1d5411e7618e52ab886b2e7d93f77071bc7f97cb99f95b64997cc88eb850a2b3"
+    },
+    "https://developer.apple.com/documentation/photosui/phsharedalbumcreationconfiguration-c.class/photolibrary": {
+      "etag": "\"146a-65d560dae5990-df\"",
+      "file_path": "documentation/PhotosUI/phsharedalbumcreationconfiguration-c.class/photolibrary.md",
+      "hash": "84201d9d825532e5e2081f6b797752e3959eedc3ee8183aba868b35af31ac2a8"
+    },
     "https://developer.apple.com/documentation/photosui/phsharedalbumcreationconfiguration-swift.struct": {
       "etag": "\"21fa-65d560db1d8c4-df\"",
       "file_path": "documentation/PhotosUI/phsharedalbumcreationconfiguration-swift.struct.md",
@@ -1429,6 +1734,21 @@
       "etag": "\"15cd-65d560dae5990-df\"",
       "file_path": "documentation/PhotosUI/phsharedalbumcreationconfiguration-swift.struct/photolibrary.md",
       "hash": "866d7ec795395b24514178aa727a4501b16fdee673742d4466844faea75d9e0f"
+    },
+    "https://developer.apple.com/documentation/photosui/phsharedalbumcreationresult-c.class": {
+      "etag": "\"1628-65d560db1d8c4-df\"",
+      "file_path": "documentation/PhotosUI/phsharedalbumcreationresult-c.class.md",
+      "hash": "0fc479181aff47502abc5d885cd93527b740acc51fa66d20a06c4dda854fcf1e"
+    },
+    "https://developer.apple.com/documentation/photosui/phsharedalbumcreationresult-c.class/albumidentifier": {
+      "etag": "\"126c-65d560dab45b1-df\"",
+      "file_path": "documentation/PhotosUI/phsharedalbumcreationresult-c.class/albumidentifier.md",
+      "hash": "e2ff70030453032d4f6462600bbd267dc083411d6d756a2ea8d31de3cbdcf0d8"
+    },
+    "https://developer.apple.com/documentation/photosui/phsharedalbumcreationresult-c.class/albumurl": {
+      "etag": "\"1233-65d560dab45b1-df\"",
+      "file_path": "documentation/PhotosUI/phsharedalbumcreationresult-c.class/albumurl.md",
+      "hash": "7ce4f1ee0f6e2894a803640d371de4aa238adcfec00f02791296778caf6ec085"
     },
     "https://developer.apple.com/documentation/photosui/phsharedalbumcreationresult-swift.struct": {
       "etag": "\"225d-65d560db1d8c4-df\"",
@@ -1500,6 +1820,11 @@
       "file_path": "documentation/PhotosUI/phsharedalbumcreationviewcontroller/init(configuration).md",
       "hash": "b133ef6feae36d4bfa2615dbbe5c9a9ad7553c3799023fabeb5981c36484f6c2"
     },
+    "https://developer.apple.com/documentation/photosui/phsharedalbumcreationviewcontroller/initwithconfiguration:": {
+      "etag": "\"16d7-65d560db1d8c4-df\"",
+      "file_path": "documentation/PhotosUI/phsharedalbumcreationviewcontroller/initwithconfiguration_.md",
+      "hash": "3a76237b103ea41e95eabcbea0e323096e3448bdb346bf581e9c69b9b92041ee"
+    },
     "https://developer.apple.com/documentation/photosui/phsharedalbumcustomizationviewcontroller": {
       "etag": "\"974a-65d560dab45b1-df\"",
       "file_path": "documentation/PhotosUI/phsharedalbumcustomizationviewcontroller.md",
@@ -1559,6 +1884,11 @@
       "etag": "\"28c5-65d560daca7e1-df\"",
       "file_path": "documentation/PhotosUI/phsharedalbumpostingviewcontroller/init(items,defaultalbumidentifier,photolibrary).md",
       "hash": "6729db2099783960f3b543af2c50cf1c83ce026b8aa9204bf88357be2892cb0b"
+    },
+    "https://developer.apple.com/documentation/photosui/phsharedalbumpostingviewcontroller/initwithitems:defaultalbumidentifier:photolibrary:": {
+      "etag": "\"1fe2-65d560daca7e1-df\"",
+      "file_path": "documentation/PhotosUI/phsharedalbumpostingviewcontroller/initwithitems_defaultalbumidentifier_photolibrary_.md",
+      "hash": "7f1c5f93f49eeda0c8d6d9b19c0308bd87ba4ec09279cb2205e3b7d7042fa08f"
     },
     "https://developer.apple.com/tutorials/data/documentation/photosui.json": {
       "etag": "\"bfa6-65d560da5c313-df\"",
@@ -1930,6 +2260,11 @@
       "file_path": "documentation/PhotosUI/phpickercapabilities/init(rawvalue).md",
       "hash": "4a904b64081031c6c693cfb08e5f92de9245cc60496e9b96a4168cbe336e8049"
     },
+    "https://developer.apple.com/tutorials/data/documentation/photosui/phpickercapabilities/phpickercapabilitiesnone.json": {
+      "etag": "\"2b8f-65d560daca7e1-df\"",
+      "file_path": "documentation/PhotosUI/phpickercapabilities/phpickercapabilitiesnone.md",
+      "hash": "103a00bf6bfc0305e0c08a78984b82193de947f35458b06655b261a85f815ca5"
+    },
     "https://developer.apple.com/tutorials/data/documentation/photosui/phpickercapabilities/search.json": {
       "etag": "\"3598-65d560daca7e1-df\"",
       "file_path": "documentation/PhotosUI/phpickercapabilities/search.md",
@@ -1949,6 +2284,71 @@
       "etag": "\"35e3-65d560daca7e1-df\"",
       "file_path": "documentation/PhotosUI/phpickercapabilities/stagingarea.md",
       "hash": "2b96284d4faa240a001b287dda035fac1c6e9601d7263e80888c37b4b93fdd32"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/photosui/phpickerconfiguration-c.class.json": {
+      "etag": "\"559a-65d560db43ad9-df\"",
+      "file_path": "documentation/PhotosUI/phpickerconfiguration-c.class.md",
+      "hash": "e81cce3cf1e4aa23cca13be60a72c685d35dd00cc8b3d46e136136bf0c720d85"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/photosui/phpickerconfiguration-c.class/disabledcapabilities.json": {
+      "etag": "\"1eae-65d560dae5990-df\"",
+      "file_path": "documentation/PhotosUI/phpickerconfiguration-c.class/disabledcapabilities.md",
+      "hash": "b9a1cd4930a75fd39208ce0d1978cff68c755fde874a6450d843bbaec90e4eaf"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/photosui/phpickerconfiguration-c.class/edgeswithoutcontentmargins.json": {
+      "etag": "\"2191-65d560dae5990-df\"",
+      "file_path": "documentation/PhotosUI/phpickerconfiguration-c.class/edgeswithoutcontentmargins.md",
+      "hash": "abd3eee1dc67df3eabc61f8ed83378e5d690e9d98286cb6670517c621ac12e36"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/photosui/phpickerconfiguration-c.class/filter.json": {
+      "etag": "\"12f6-65d560dae5990-df\"",
+      "file_path": "documentation/PhotosUI/phpickerconfiguration-c.class/filter.md",
+      "hash": "5b94bd4f5c103e146317aa3abc12520e51055e4b92f37fd81cd298220b5b8458"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/photosui/phpickerconfiguration-c.class/init.json": {
+      "etag": "\"15ea-65d560dae5990-df\"",
+      "file_path": "documentation/PhotosUI/phpickerconfiguration-c.class/init.md",
+      "hash": "872ce3d81da4009b136629dec71f2eceb0a3ea900efba4c8c2331667292c4952"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/photosui/phpickerconfiguration-c.class/initwithphotolibrary:.json": {
+      "etag": "\"17c1-65d560dae5990-df\"",
+      "file_path": "documentation/PhotosUI/phpickerconfiguration-c.class/initwithphotolibrary_.md",
+      "hash": "a709c19fd223d507ba1c419a1cdeb69b09fde4041ba3e186613465f78c700660"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/photosui/phpickerconfiguration-c.class/metadataoptions.json": {
+      "etag": "\"1449-65d560dae5990-df\"",
+      "file_path": "documentation/PhotosUI/phpickerconfiguration-c.class/metadataoptions.md",
+      "hash": "facb86bd99de7269b8d39539f24a7558f091f2c412f547ad93399b7286174114"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/photosui/phpickerconfiguration-c.class/mode.json": {
+      "etag": "\"25d7-65d560dae5990-df\"",
+      "file_path": "documentation/PhotosUI/phpickerconfiguration-c.class/mode.md",
+      "hash": "37bb432d77e5b50845290dd0df1dee4fb74f0af3332404881d15b8ce71155805"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/photosui/phpickerconfiguration-c.class/preferredassetrepresentationmode.json": {
+      "etag": "\"2128-65d560dae5990-df\"",
+      "file_path": "documentation/PhotosUI/phpickerconfiguration-c.class/preferredassetrepresentationmode.md",
+      "hash": "eb889b9fea21334e70f35de01db6a385ada8ebe5de55bb917bc0ff90ddc744c8"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/photosui/phpickerconfiguration-c.class/preselectedassetidentifiers.json": {
+      "etag": "\"1aa6-65d560dae5990-df\"",
+      "file_path": "documentation/PhotosUI/phpickerconfiguration-c.class/preselectedassetidentifiers.md",
+      "hash": "b57dd990e3d8cdd4e20f74eb3cff072ae23c819ee047a39c69288288823968b4"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/photosui/phpickerconfiguration-c.class/searchtext.json": {
+      "etag": "\"1149-65d560dae5990-df\"",
+      "file_path": "documentation/PhotosUI/phpickerconfiguration-c.class/searchtext.md",
+      "hash": "e3b005768c38cce724c2849498ef1ebc97505aff67fed72161cc5e7372ed63dc"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/photosui/phpickerconfiguration-c.class/selection.json": {
+      "etag": "\"1749-65d560dae5990-df\"",
+      "file_path": "documentation/PhotosUI/phpickerconfiguration-c.class/selection.md",
+      "hash": "0c99ce8c44b8c004020759df488192240f52cbcc13074c9a5685275b0002f5e8"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/photosui/phpickerconfiguration-c.class/selectionlimit.json": {
+      "etag": "\"1b6d-65d560dae5990-df\"",
+      "file_path": "documentation/PhotosUI/phpickerconfiguration-c.class/selectionlimit.md",
+      "hash": "317db76d2ea4de8a33e3756ff3adaf515a4d6841b20aceb063eb33fa444c0798"
     },
     "https://developer.apple.com/tutorials/data/documentation/photosui/phpickerconfiguration-swift.struct.json": {
       "etag": "\"6a2d-65d560db1d8c4-df\"",
@@ -2085,6 +2485,31 @@
       "file_path": "documentation/PhotosUI/phpickerconfiguration-swift.struct/update/selectionlimit.md",
       "hash": "9937290ad9494bfb6038ab2d3f2b2a291e393ab767167fb0dc13e82c0730289d"
     },
+    "https://developer.apple.com/tutorials/data/documentation/photosui/phpickerconfigurationassetrepresentationmode.json": {
+      "etag": "\"427f-65d560dae5990-df\"",
+      "file_path": "documentation/PhotosUI/phpickerconfigurationassetrepresentationmode.md",
+      "hash": "e3d5083c3441eacecb742c7e15efe548bd371d28cd966bc19be494d75ef15c04"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/photosui/phpickerconfigurationassetrepresentationmode/automatic.json": {
+      "etag": "\"27d2-65d560da7b8fa-df\"",
+      "file_path": "documentation/PhotosUI/phpickerconfigurationassetrepresentationmode/automatic.md",
+      "hash": "8ff0900d4fa459f959ccdbeaf41b8fc107982b6571c0934986bef3d306531605"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/photosui/phpickerconfigurationassetrepresentationmode/compatible.json": {
+      "etag": "\"27c2-65d560da7b8fa-df\"",
+      "file_path": "documentation/PhotosUI/phpickerconfigurationassetrepresentationmode/compatible.md",
+      "hash": "3eb390fad239860695b25379b977e71a77277644b6138eb226cc40deb74c3a81"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/photosui/phpickerconfigurationassetrepresentationmode/current.json": {
+      "etag": "\"27bb-65d560da7b8fa-df\"",
+      "file_path": "documentation/PhotosUI/phpickerconfigurationassetrepresentationmode/current.md",
+      "hash": "f4b7e05ef61cc80f5c1e75dde0239fce778190b9856f60a92153b65c65d8720e"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/photosui/phpickerconfigurationassetrepresentationmode/init(rawvalue:).json": {
+      "etag": "\"1544-65d560da7b8fa-df\"",
+      "file_path": "documentation/PhotosUI/phpickerconfigurationassetrepresentationmode/init(rawvalue).md",
+      "hash": "aec379d5ef0ae6353bead92c1504bbfd5542b9b6fa5a010b17fbd48dd721c753"
+    },
     "https://developer.apple.com/tutorials/data/documentation/photosui/phpickerconfigurationselection.json": {
       "etag": "\"4ee9-65d560da7b8fa-df\"",
       "file_path": "documentation/PhotosUI/phpickerconfigurationselection.md",
@@ -2114,6 +2539,91 @@
       "etag": "\"2c75-65d560daca7e1-df\"",
       "file_path": "documentation/PhotosUI/phpickerconfigurationselection/ordered.md",
       "hash": "3c49d64cf28c1965c360a6715710a420d50ef2790393d67c9b28b62cbead0ec9"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/photosui/phpickerfilter-c.class.json": {
+      "etag": "\"480b-65d560da965c4-df\"",
+      "file_path": "documentation/PhotosUI/phpickerfilter-c.class.md",
+      "hash": "73210a2d84d6f5009816ad336c65fba9ced56eddbcd329dd3d5843600eebdd6b"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/photosui/phpickerfilter-c.class/allfiltermatchingsubfilters:.json": {
+      "etag": "\"1755-65d560da5c313-df\"",
+      "file_path": "documentation/PhotosUI/phpickerfilter-c.class/allfiltermatchingsubfilters_.md",
+      "hash": "eafb4946d1cdb88c661fab02f209a0318b3fe7704c646b986c61ac60251471d1"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/photosui/phpickerfilter-c.class/anyfiltermatchingsubfilters:.json": {
+      "etag": "\"18cb-65d560da5c313-df\"",
+      "file_path": "documentation/PhotosUI/phpickerfilter-c.class/anyfiltermatchingsubfilters_.md",
+      "hash": "960de09b8a6eb837c79f1ee71a1ca3d68f2ce973ca0ae48bc2510f799b3208e1"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/photosui/phpickerfilter-c.class/burstsfilter.json": {
+      "etag": "\"209a-65d560da5c313-df\"",
+      "file_path": "documentation/PhotosUI/phpickerfilter-c.class/burstsfilter.md",
+      "hash": "9d2549bba99ce9e8d338094cd4ed52d8fd47949a90c4e8ead6ab8ecf077fe78b"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/photosui/phpickerfilter-c.class/cinematicvideosfilter.json": {
+      "etag": "\"20e4-65d560da5c313-df\"",
+      "file_path": "documentation/PhotosUI/phpickerfilter-c.class/cinematicvideosfilter.md",
+      "hash": "66087939cb31461e94a3b6690da5da7bc4273748284bf8cb66c81d513f7a8c42"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/photosui/phpickerfilter-c.class/deptheffectphotosfilter.json": {
+      "etag": "\"20d3-65d560da5c313-df\"",
+      "file_path": "documentation/PhotosUI/phpickerfilter-c.class/deptheffectphotosfilter.md",
+      "hash": "1dc47e8d8769bcc98483852bce79a90e66908c757c53997de1ec5fcf8ef3522a"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/photosui/phpickerfilter-c.class/imagesfilter.json": {
+      "etag": "\"16d7-65d560da5c313-df\"",
+      "file_path": "documentation/PhotosUI/phpickerfilter-c.class/imagesfilter.md",
+      "hash": "fa8407cc217c41d53902cb69833f1ffb48e6348a54af49b6517e7ebb6c518ac7"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/photosui/phpickerfilter-c.class/livephotosfilter.json": {
+      "etag": "\"16da-65d560da5c313-df\"",
+      "file_path": "documentation/PhotosUI/phpickerfilter-c.class/livephotosfilter.md",
+      "hash": "63b99b292bb0a454cd87f3010a3800dd05f73a55fa9ea51cbe6e174fd4b9057b"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/photosui/phpickerfilter-c.class/notfilterofsubfilter:.json": {
+      "etag": "\"1779-65d560da5c313-df\"",
+      "file_path": "documentation/PhotosUI/phpickerfilter-c.class/notfilterofsubfilter_.md",
+      "hash": "ce8a9a3d755dccbc3e558af386782b49d51f8ea7ca893fbd5e2f3faa32ca7f4e"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/photosui/phpickerfilter-c.class/panoramasfilter.json": {
+      "etag": "\"2095-65d560da5c313-df\"",
+      "file_path": "documentation/PhotosUI/phpickerfilter-c.class/panoramasfilter.md",
+      "hash": "869d598e69bd0857beae8bb5b9d10a860cf0cf050a4add5853e92b98806dff41"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/photosui/phpickerfilter-c.class/playbackstylefilter:.json": {
+      "etag": "\"1c76-65d560da5c313-df\"",
+      "file_path": "documentation/PhotosUI/phpickerfilter-c.class/playbackstylefilter_.md",
+      "hash": "1a00a3a7949577ebf03d3c99d3eabae0ad6c65431b79e7318411fa0e0972712f"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/photosui/phpickerfilter-c.class/screenrecordingsfilter.json": {
+      "etag": "\"20c1-65d560da5c313-df\"",
+      "file_path": "documentation/PhotosUI/phpickerfilter-c.class/screenrecordingsfilter.md",
+      "hash": "8e9a6d999c76b50e796f7f1c8b327ee23cde93f1cd374b8d5d571858f294a5b9"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/photosui/phpickerfilter-c.class/screenshotsfilter.json": {
+      "etag": "\"209d-65d560da5c313-df\"",
+      "file_path": "documentation/PhotosUI/phpickerfilter-c.class/screenshotsfilter.md",
+      "hash": "3315f4a69f8d2b436420dba5f2598fbd9b3f1046b02530f828d03276a43766c5"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/photosui/phpickerfilter-c.class/slomovideosfilter.json": {
+      "etag": "\"20a4-65d560da5c313-df\"",
+      "file_path": "documentation/PhotosUI/phpickerfilter-c.class/slomovideosfilter.md",
+      "hash": "fd4e9593968ee8ce635a9b5958ec82e207939aaaa0f85e6fde6130b5af9d154f"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/photosui/phpickerfilter-c.class/spatialmediafilter.json": {
+      "etag": "\"ebd-65d560da5c313-df\"",
+      "file_path": "documentation/PhotosUI/phpickerfilter-c.class/spatialmediafilter.md",
+      "hash": "8f33e059840249aae27c280910c09f758fcf753ec7f092d4ec40327faa8db510"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/photosui/phpickerfilter-c.class/timelapsevideosfilter.json": {
+      "etag": "\"20bb-65d560da5c313-df\"",
+      "file_path": "documentation/PhotosUI/phpickerfilter-c.class/timelapsevideosfilter.md",
+      "hash": "c2db3f7448141a72db6ec6a4bca45fcdabb0e1583344d2a43fcd67bcc398e585"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/photosui/phpickerfilter-c.class/videosfilter.json": {
+      "etag": "\"16c3-65d560da5c313-df\"",
+      "file_path": "documentation/PhotosUI/phpickerfilter-c.class/videosfilter.md",
+      "hash": "6594cd30fa8ff241849440777b29be2b303ccbf2cee5ed7af8fb0cd8dd79a7c7"
     },
     "https://developer.apple.com/tutorials/data/documentation/photosui/phpickerfilter-swift.struct.json": {
       "etag": "\"5fdf-65d560db43ad9-df\"",
@@ -2210,6 +2720,11 @@
       "file_path": "documentation/PhotosUI/phpickermetadataoptions/init(rawvalue).md",
       "hash": "d4b5825ad108f1d909e2f0c5fcfcbf076bf169c48fce51e6906bb7fe1962b88d"
     },
+    "https://developer.apple.com/tutorials/data/documentation/photosui/phpickermetadataoptions/phpickermetadataoptionsnone.json": {
+      "etag": "\"10b4-65d560daca7e1-df\"",
+      "file_path": "documentation/PhotosUI/phpickermetadataoptions/phpickermetadataoptionsnone.md",
+      "hash": "cc575331d6b75a1ec4fb99bc139c7f04daa2bf19406bfacfa467efe8c2f5095e"
+    },
     "https://developer.apple.com/tutorials/data/documentation/photosui/phpickermetadataoptions/removecaptions.json": {
       "etag": "\"1be5-65d560daca7e1-df\"",
       "file_path": "documentation/PhotosUI/phpickermetadataoptions/removecaptions.md",
@@ -2219,6 +2734,21 @@
       "etag": "\"1be5-65d560daca7e1-df\"",
       "file_path": "documentation/PhotosUI/phpickermetadataoptions/removelocation.md",
       "hash": "6a124ed47cb8d2ae8afed29eccfe132842a32e2cc647dbbbb943cd9009eeba9a"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/photosui/phpickermode-c.enum.json": {
+      "etag": "\"2e7b-65d560dae5990-df\"",
+      "file_path": "documentation/PhotosUI/phpickermode-c.enum.md",
+      "hash": "badf7bdf817df8dff348ca548af8c7ac5b14f76dc1b492e6449531548b736303"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/photosui/phpickermode-c.enum/phpickermodecompact.json": {
+      "etag": "\"1045-65d560da7b8fa-df\"",
+      "file_path": "documentation/PhotosUI/phpickermode-c.enum/phpickermodecompact.md",
+      "hash": "3a7d5d739a954b7227206cd8b11c5c194f5b683e7b0cc2bd7046d1b1a04b357f"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/photosui/phpickermode-c.enum/phpickermodedefault.json": {
+      "etag": "\"1048-65d560da7b8fa-df\"",
+      "file_path": "documentation/PhotosUI/phpickermode-c.enum/phpickermodedefault.md",
+      "hash": "bfca4fb296806acf306d12ad9c756438f0ce153a84847ff7bf0bdd5abf57ffe8"
     },
     "https://developer.apple.com/tutorials/data/documentation/photosui/phpickermode-swift.struct.json": {
       "etag": "\"35e9-65d560db1d8c4-df\"",
@@ -2235,6 +2765,21 @@
       "file_path": "documentation/PhotosUI/phpickermode-swift.struct/default.md",
       "hash": "91b1bd1d7695552b83bf832b747848c64496bd61daddfb4d022014797bccd553"
     },
+    "https://developer.apple.com/tutorials/data/documentation/photosui/phpickerresult-c.class.json": {
+      "etag": "\"216f-65d560db012a3-df\"",
+      "file_path": "documentation/PhotosUI/phpickerresult-c.class.md",
+      "hash": "c787f9788fe6f3cd8072b73ac6d05b30aceb1c606515317601400986f414ddb4"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/photosui/phpickerresult-c.class/assetidentifier.json": {
+      "etag": "\"14d7-65d560daca7e1-df\"",
+      "file_path": "documentation/PhotosUI/phpickerresult-c.class/assetidentifier.md",
+      "hash": "a3bf24162367eda10fd1a45789f2f339170091cbe4b3a04494791cf3e9218119"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/photosui/phpickerresult-c.class/itemprovider.json": {
+      "etag": "\"1541-65d560daca7e1-df\"",
+      "file_path": "documentation/PhotosUI/phpickerresult-c.class/itemprovider.md",
+      "hash": "1945ce456e196aca881907ee3eae04125390e7ccfdf4f60f3d78f8f6d47c0664"
+    },
     "https://developer.apple.com/tutorials/data/documentation/photosui/phpickerresult-swift.struct.json": {
       "etag": "\"2892-65d560dae5990-df\"",
       "file_path": "documentation/PhotosUI/phpickerresult-swift.struct.md",
@@ -2249,6 +2794,21 @@
       "etag": "\"171b-65d560db1d8c4-df\"",
       "file_path": "documentation/PhotosUI/phpickerresult-swift.struct/itemprovider.md",
       "hash": "4ca8ed2eb604e0dbbda14b78f4c40aae4d20d407debe927ff5227f1ad46961a0"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/photosui/phpickersearchtext-c.class.json": {
+      "etag": "\"198b-65d560da965c4-df\"",
+      "file_path": "documentation/PhotosUI/phpickersearchtext-c.class.md",
+      "hash": "875aea9608c5f37aa0905bbc4d524e4d444200768a3fc9d7270f6885d02a15a5"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/photosui/phpickersearchtext-c.class/initwithphotosearchsuggestion:.json": {
+      "etag": "\"1321-65d560db1d8c4-df\"",
+      "file_path": "documentation/PhotosUI/phpickersearchtext-c.class/initwithphotosearchsuggestion_.md",
+      "hash": "08aa252a7517e3f82d10cfcb1e614c70c053fb6bfe23833955dccadbff1cab03"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/photosui/phpickersearchtext-c.class/initwithstring:.json": {
+      "etag": "\"1220-65d560db1d8c4-df\"",
+      "file_path": "documentation/PhotosUI/phpickersearchtext-c.class/initwithstring_.md",
+      "hash": "7f1c37536357a70b3266b2b82e1d2ae1487de4bfc8d45f0db7bc802f3ff01b89"
     },
     "https://developer.apple.com/tutorials/data/documentation/photosui/phpickersearchtext-swift.struct.json": {
       "etag": "\"1e1c-65d560db43ad9-df\"",
@@ -2265,6 +2825,26 @@
       "file_path": "documentation/PhotosUI/phpickersearchtext-swift.struct/init(photosearchsuggestion).md",
       "hash": "10a6eb7d5321b78894dbd536d576aef3083f54a6e97ac99991d29e499ef8729d"
     },
+    "https://developer.apple.com/tutorials/data/documentation/photosui/phpickerupdateconfiguration.json": {
+      "etag": "\"39e5-65d560db1d8c4-df\"",
+      "file_path": "documentation/PhotosUI/phpickerupdateconfiguration.md",
+      "hash": "c6385ce6e663e6914179b8fd2733d534d5f22820ebe3f421b847c2a8488f3c7b"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/photosui/phpickerupdateconfiguration/edgeswithoutcontentmargins.json": {
+      "etag": "\"17dd-65d560db43ad9-df\"",
+      "file_path": "documentation/PhotosUI/phpickerupdateconfiguration/edgeswithoutcontentmargins.md",
+      "hash": "a58d1b2d0fefb750d0eaabf19eef90d567a13fe881b8721943bb0f2f91465fbd"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/photosui/phpickerupdateconfiguration/searchtext.json": {
+      "etag": "\"1138-65d560db43ad9-df\"",
+      "file_path": "documentation/PhotosUI/phpickerupdateconfiguration/searchtext.md",
+      "hash": "b6bf2cb9299ea2067a804e4006b83428e6ea3ee7bb1509ee78b29a50d4659bfb"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/photosui/phpickerupdateconfiguration/selectionlimit.json": {
+      "etag": "\"1999-65d560db43ad9-df\"",
+      "file_path": "documentation/PhotosUI/phpickerupdateconfiguration/selectionlimit.md",
+      "hash": "0a3b03b83df0e079f928ac0f9e29b376ee292970c59f910560d5a0a7959a6e98"
+    },
     "https://developer.apple.com/tutorials/data/documentation/photosui/phpickerviewcontroller.json": {
       "etag": "\"e596-65d560db43ad9-df\"",
       "file_path": "documentation/PhotosUI/phpickerviewcontroller.md",
@@ -2275,10 +2855,20 @@
       "file_path": "documentation/PhotosUI/phpickerviewcontroller/configuration-17a8p.md",
       "hash": "c9e23a5f77cdf64e7df8a4c16ba4296f797e50b5b1ca1f23ca697294a0ff9bb8"
     },
+    "https://developer.apple.com/tutorials/data/documentation/photosui/phpickerviewcontroller/configuration-3vf53.json": {
+      "etag": "\"17f2-65d560da7b8fa-df\"",
+      "file_path": "documentation/PhotosUI/phpickerviewcontroller/configuration-3vf53.md",
+      "hash": "f9f787e97b64e135b114b4a8156d5fa7a30517b845cf72ebb2bc54beb8ede598"
+    },
     "https://developer.apple.com/tutorials/data/documentation/photosui/phpickerviewcontroller/delegate-3zqmt.json": {
       "etag": "\"1e03-65d560da7b8fa-df\"",
       "file_path": "documentation/PhotosUI/phpickerviewcontroller/delegate-3zqmt.md",
       "hash": "c172b6e08410b156d2387ffdde2da229c56240d0715d86600a2d18eb661d9332"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/photosui/phpickerviewcontroller/delegate-8dlnb.json": {
+      "etag": "\"16a1-65d560da7b8fa-df\"",
+      "file_path": "documentation/PhotosUI/phpickerviewcontroller/delegate-8dlnb.md",
+      "hash": "147ab59390fdf0f1b9df8119a23da836689b2b5c209cb464ef5b12c6c222f0fd"
     },
     "https://developer.apple.com/tutorials/data/documentation/photosui/phpickerviewcontroller/deselectassets(withidentifiers:).json": {
       "etag": "\"26c4-65d560da7b8fa-df\"",
@@ -2289,6 +2879,11 @@
       "etag": "\"1c0b-65d560da7b8fa-df\"",
       "file_path": "documentation/PhotosUI/phpickerviewcontroller/init(configuration).md",
       "hash": "5da80a249a54f445eaa43e91f43dc19787bdb873d14f3ad100e5e89bc6502ce9"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/photosui/phpickerviewcontroller/initwithconfiguration:.json": {
+      "etag": "\"1687-65d560da7b8fa-df\"",
+      "file_path": "documentation/PhotosUI/phpickerviewcontroller/initwithconfiguration_.md",
+      "hash": "52cb1b16d1fcb57ecf42c23c2b1f6bb11adc8e3651a0940edbc81abf7b6b3274"
     },
     "https://developer.apple.com/tutorials/data/documentation/photosui/phpickerviewcontroller/moveasset(withidentifier:afterassetwithidentifier:).json": {
       "etag": "\"314a-65d560da7b8fa-df\"",
@@ -2304,6 +2899,11 @@
       "etag": "\"23e3-65d560da7b8fa-df\"",
       "file_path": "documentation/PhotosUI/phpickerviewcontroller/updatepicker(using).md",
       "hash": "e4203edcf22a22be3b5e789d0ed5a401fc370d62205df8883a701a5633eba471"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/photosui/phpickerviewcontroller/updatepickerusingconfiguration:.json": {
+      "etag": "\"194a-65d560da7b8fa-df\"",
+      "file_path": "documentation/PhotosUI/phpickerviewcontroller/updatepickerusingconfiguration_.md",
+      "hash": "a5bb0860c288f3f76274b06d6b6b9ca66c07e887f1acaceefa23f988204d3e22"
     },
     "https://developer.apple.com/tutorials/data/documentation/photosui/phpickerviewcontroller/zoomin().json": {
       "etag": "\"24cd-65d560da7b8fa-df\"",
@@ -2324,6 +2924,16 @@
       "etag": "\"221f-65d560dab45b1-df\"",
       "file_path": "documentation/PhotosUI/phpickerviewcontrollerdelegate-5yntc/picker(_,didfinishpicking).md",
       "hash": "ee72d6f39fe8ac59f84c475f6be0f13fa21ed00ca4b1870eccaee9fb25a315c4"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/photosui/phpickerviewcontrollerdelegate-9y5xc.json": {
+      "etag": "\"1ec1-65d560da965c4-df\"",
+      "file_path": "documentation/PhotosUI/phpickerviewcontrollerdelegate-9y5xc.md",
+      "hash": "218b16913903a8fc2ee8de6d0f29d479557fc6ad010e788d2fffade3ad5cfb5a"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/photosui/phpickerviewcontrollerdelegate-9y5xc/picker:didfinishpicking:.json": {
+      "etag": "\"1900-65d560db1d8c4-df\"",
+      "file_path": "documentation/PhotosUI/phpickerviewcontrollerdelegate-9y5xc/picker_didfinishpicking_.md",
+      "hash": "47ac377757bdac72949391a3918a974cfdf46958d9bbb5cbe8e54527e7e493e1"
     },
     "https://developer.apple.com/tutorials/data/documentation/photosui/phprojectassetelement.json": {
       "etag": "\"7ff6-65d560db43ad9-df\"",
@@ -2965,6 +3575,31 @@
       "file_path": "documentation/PhotosUI/phprojecttypedescriptioninvalidator/invalidatetypedescription(for).md",
       "hash": "af9fa0df926aa51befaa8749b72fc27d96d062f492fbbb2381bd98aef1dda126"
     },
+    "https://developer.apple.com/tutorials/data/documentation/photosui/phsharedalbumcreationconfiguration-c.class.json": {
+      "etag": "\"1dbf-65d560dae5990-df\"",
+      "file_path": "documentation/PhotosUI/phsharedalbumcreationconfiguration-c.class.md",
+      "hash": "3de91abbcdfe3786abe12b9127bb594d20ba38ff2f7771ea607e4a2af38f0ccb"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/photosui/phsharedalbumcreationconfiguration-c.class/defaultpolicy.json": {
+      "etag": "\"1641-65d560dae5990-df\"",
+      "file_path": "documentation/PhotosUI/phsharedalbumcreationconfiguration-c.class/defaultpolicy.md",
+      "hash": "1cb97a8d4570c1f0af4982266f896115d21247919dd68d80b65e32de01030c3b"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/photosui/phsharedalbumcreationconfiguration-c.class/defaulttitle.json": {
+      "etag": "\"1406-65d560dae5990-df\"",
+      "file_path": "documentation/PhotosUI/phsharedalbumcreationconfiguration-c.class/defaulttitle.md",
+      "hash": "17c9ed0a3942cf2293ced63548611c9250f0dad03fd0b3c0131cbecc124ebae2"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/photosui/phsharedalbumcreationconfiguration-c.class/initwithphotolibrary:.json": {
+      "etag": "\"151c-65d560dae5990-df\"",
+      "file_path": "documentation/PhotosUI/phsharedalbumcreationconfiguration-c.class/initwithphotolibrary_.md",
+      "hash": "1d5411e7618e52ab886b2e7d93f77071bc7f97cb99f95b64997cc88eb850a2b3"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/photosui/phsharedalbumcreationconfiguration-c.class/photolibrary.json": {
+      "etag": "\"146a-65d560dae5990-df\"",
+      "file_path": "documentation/PhotosUI/phsharedalbumcreationconfiguration-c.class/photolibrary.md",
+      "hash": "84201d9d825532e5e2081f6b797752e3959eedc3ee8183aba868b35af31ac2a8"
+    },
     "https://developer.apple.com/tutorials/data/documentation/photosui/phsharedalbumcreationconfiguration-swift.struct.json": {
       "etag": "\"21fa-65d560db1d8c4-df\"",
       "file_path": "documentation/PhotosUI/phsharedalbumcreationconfiguration-swift.struct.md",
@@ -2989,6 +3624,21 @@
       "etag": "\"15cd-65d560dae5990-df\"",
       "file_path": "documentation/PhotosUI/phsharedalbumcreationconfiguration-swift.struct/photolibrary.md",
       "hash": "866d7ec795395b24514178aa727a4501b16fdee673742d4466844faea75d9e0f"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/photosui/phsharedalbumcreationresult-c.class.json": {
+      "etag": "\"1628-65d560db1d8c4-df\"",
+      "file_path": "documentation/PhotosUI/phsharedalbumcreationresult-c.class.md",
+      "hash": "0fc479181aff47502abc5d885cd93527b740acc51fa66d20a06c4dda854fcf1e"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/photosui/phsharedalbumcreationresult-c.class/albumidentifier.json": {
+      "etag": "\"126c-65d560dab45b1-df\"",
+      "file_path": "documentation/PhotosUI/phsharedalbumcreationresult-c.class/albumidentifier.md",
+      "hash": "e2ff70030453032d4f6462600bbd267dc083411d6d756a2ea8d31de3cbdcf0d8"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/photosui/phsharedalbumcreationresult-c.class/albumurl.json": {
+      "etag": "\"1233-65d560dab45b1-df\"",
+      "file_path": "documentation/PhotosUI/phsharedalbumcreationresult-c.class/albumurl.md",
+      "hash": "7ce4f1ee0f6e2894a803640d371de4aa238adcfec00f02791296778caf6ec085"
     },
     "https://developer.apple.com/tutorials/data/documentation/photosui/phsharedalbumcreationresult-swift.struct.json": {
       "etag": "\"225d-65d560db1d8c4-df\"",
@@ -3060,6 +3710,11 @@
       "file_path": "documentation/PhotosUI/phsharedalbumcreationviewcontroller/init(configuration).md",
       "hash": "b133ef6feae36d4bfa2615dbbe5c9a9ad7553c3799023fabeb5981c36484f6c2"
     },
+    "https://developer.apple.com/tutorials/data/documentation/photosui/phsharedalbumcreationviewcontroller/initwithconfiguration:.json": {
+      "etag": "\"16d7-65d560db1d8c4-df\"",
+      "file_path": "documentation/PhotosUI/phsharedalbumcreationviewcontroller/initwithconfiguration_.md",
+      "hash": "3a76237b103ea41e95eabcbea0e323096e3448bdb346bf581e9c69b9b92041ee"
+    },
     "https://developer.apple.com/tutorials/data/documentation/photosui/phsharedalbumcustomizationviewcontroller.json": {
       "etag": "\"974a-65d560dab45b1-df\"",
       "file_path": "documentation/PhotosUI/phsharedalbumcustomizationviewcontroller.md",
@@ -3119,6 +3774,11 @@
       "etag": "\"28c5-65d560daca7e1-df\"",
       "file_path": "documentation/PhotosUI/phsharedalbumpostingviewcontroller/init(items,defaultalbumidentifier,photolibrary).md",
       "hash": "6729db2099783960f3b543af2c50cf1c83ce026b8aa9204bf88357be2892cb0b"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/photosui/phsharedalbumpostingviewcontroller/initwithitems:defaultalbumidentifier:photolibrary:.json": {
+      "etag": "\"1fe2-65d560daca7e1-df\"",
+      "file_path": "documentation/PhotosUI/phsharedalbumpostingviewcontroller/initwithitems_defaultalbumidentifier_photolibrary_.md",
+      "hash": "7f1c5f93f49eeda0c8d6d9b19c0308bd87ba4ec09279cb2205e3b7d7042fa08f"
     }
   },
   "metadata": {
@@ -3131,8 +3791,8 @@
       }
     },
     "render": {
-      "version": 1
+      "version": 2
     },
-    "total_pages": 624
+    "total_pages": 756
   }
 }

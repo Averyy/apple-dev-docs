@@ -60,6 +60,8 @@ Parser status is determined by calling the [`CFXMLParserGetStatusCode`](./cfxmlp
   Indicates malformed character data.
 - [static var errorNoData: CFXMLParserStatusCode](./cfxmlparserstatuscode/errornodata.md)
   Indicates a no data error.
+- [kCFXMLStatusParseSuccessful](./cfxmlparserstatuscode/kcfxmlstatusparsesuccessful.md)
+  Indicates the parser was successful.
 ### Initializers
 - [init(rawValue: CFIndex)](./cfxmlparserstatuscode/init%28rawvalue%29.md)
 

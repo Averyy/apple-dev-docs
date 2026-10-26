@@ -28,6 +28,12 @@ init(gaugeProvider: CLKGaugeProvider, leadingTextProvider: CLKTextProvider, trai
 - `trailingTextProvider`: The text provider for the trailing text. The template supports multicolored text from this text provider.
 - `centerTextProvider`: The text provider for the center text. The template supports multicolored text from this text provider.
 
+## See Also
+
+### Creating the Template
+- [+ templateWithGaugeProvider:leadingTextProvider:trailingTextProvider:centerTextProvider:](./templatewithgaugeprovider_leadingtextprovider_trailingtextprovider_centertextprovider_.md)
+  Returns a new template that has an open, circular gauge with leading and trailing text, and a central text element.
+
 
 ---
 

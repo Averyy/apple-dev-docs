@@ -29,6 +29,7 @@ subscript(key: Protocol) -> (any MDLComponent)? { get set }
   Returns the child object at the specified path.
 - [func enumerateChildObjects(of: AnyClass, root: MDLObject, using: (MDLObject, UnsafeMutablePointer<ObjCBool>) -> Void, stopPointer: UnsafeMutablePointer<ObjCBool>)](./enumeratechildobjects%28of,root,using,stoppointer%29.md)
   Executes the specified block using each object in this object’s child hierarchy.
+- [- setObject:forKeyedSubscript:](./setobject_forkeyedsubscript_.md)
 
 
 ---

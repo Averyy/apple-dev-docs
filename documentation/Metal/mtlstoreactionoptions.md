@@ -42,6 +42,9 @@ This property modifies the intended behavior of the store actions in the [`MTLSt
 ### Initializers
 - [init(rawValue: UInt)](./mtlstoreactionoptions/init%28rawvalue%29.md)
   Creates a store action option from a raw integer value.
+### Enumeration Cases
+- [MTLStoreActionOptionNone](./mtlstoreactionoptions/mtlstoreactionoptionnone.md)
+  An option that doesn’t modify the intended behavior of a store action.
 
 ## Relationships
 

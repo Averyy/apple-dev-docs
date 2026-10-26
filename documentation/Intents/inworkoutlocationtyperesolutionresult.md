@@ -34,6 +34,8 @@ You return an [`INWorkoutLocationTypeResolutionResult`](./inworkoutlocationtyper
   Creates an object whose resolution involves the successful matching of the specified parameter.
 - [class func confirmationRequired(with: INWorkoutLocationType) -> Self](./inworkoutlocationtyperesolutionresult/confirmationrequired%28with%29.md)
   Creates an object whose resolution requires that the user must confirm the value before proceeding.
+- [+ successWithResolvedValue:](./inworkoutlocationtyperesolutionresult/successwithresolvedvalue_.md)
+- [+ confirmationRequiredWithValueToConfirm:](./inworkoutlocationtyperesolutionresult/confirmationrequiredwithvaluetoconfirm_.md)
 
 ## Relationships
 

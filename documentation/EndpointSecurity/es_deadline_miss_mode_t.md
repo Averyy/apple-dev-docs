@@ -31,6 +31,13 @@ Determines how the system responds when a client fails to respond to an auth eve
 - [init(rawValue: UInt32)](./es_deadline_miss_mode_t/init%28rawvalue%29.md)
 ### Instance Properties
 - [var rawValue: UInt32](./es_deadline_miss_mode_t/rawvalue.md)
+### Enumeration Cases
+- [ES_DEADLINE_MISS_MODE_FAIL_CLOSED](./es_deadline_miss_mode_fail_closed.md)
+  Deny the operation when client fails to respond, but don’t kill the client
+- [ES_DEADLINE_MISS_MODE_FAIL_OPEN](./es_deadline_miss_mode_fail_open.md)
+  Allow the operation when client fails to respond, but don’t kill the client
+- [ES_DEADLINE_MISS_MODE_KILL](./es_deadline_miss_mode_kill.md)
+  Kill the client when it fails to respond to an auth event (default behavior)
 
 ## Relationships
 

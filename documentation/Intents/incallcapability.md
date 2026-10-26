@@ -63,6 +63,14 @@ enum INCallCapability : NSInteger;
   The number of calls in the call record.
 - [var participants: [INPerson]?](./incallrecord/participants.md)
   The recipient of the user’s call request.
+- [callDuration](./incallrecord/callduration-2d9u1.md)
+  The duration (measured in seconds) of the call.
+- [unseen](./incallrecord/unseen-8qab3.md)
+  A Boolean value indicating whether the user has seen the call.
+- [numberOfCalls](./incallrecord/numberofcalls-7vv6o.md)
+  The number of calls in the call record.
+- [isCallerIdBlocked](./incallrecord/iscalleridblocked.md)
+  A Boolean value indicating if user’s callerID is showing during a call.
 
 
 ---

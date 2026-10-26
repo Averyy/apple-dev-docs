@@ -25,6 +25,8 @@ class XCTestLog
   An object to interact with the test log file.
 - [func testLog(withFormat: String!, arguments: CVaListPointer)](./xctestlog/testlog%28withformat,arguments%29.md)
   Logs test results to the test log.
+- [- testLogWithFormat:](./xctestlog/testlogwithformat_.md)
+  Logs test results to the test log.
 
 ## Relationships
 

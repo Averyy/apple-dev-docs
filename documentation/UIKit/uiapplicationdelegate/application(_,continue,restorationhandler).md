@@ -48,7 +48,7 @@ By default, the intent provides an [`NSUserActivity`](../../Foundation/nsuseract
 When continuing activities from SiriKit:
 
 - Look for the intent specified in the [`interaction`](../../Foundation/nsuseractivity/interaction.md) property. Resume handling this intent in your app.
-- Avoid accidentally repeating actions (such as making double payments). For example, check the [`INInteraction`](https://developer.apple.com/documentation/intents/ininteraction) object’s [`intentResponse`](https://developer.apple.com/documentation/intents/ininteraction/intentresponse) property to see if the action has already been completed.
+- Avoid accidentally repeating actions (such as making double payments). For example, check the [`INInteraction`](../../Intents/ininteraction.md) object’s [`intentResponse`](../../Intents/ininteraction/intentresponse.md) property to see if the action has already been completed.
 
 Intents may launch your app under the following circumstances:
 

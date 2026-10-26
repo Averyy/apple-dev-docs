@@ -31,6 +31,8 @@ extern NSString * const HMCharacteristicPropertyWritable;
   The characteristic is readable.
 - [let HMCharacteristicPropertyHidden: String](./hmcharacteristicpropertyhidden.md)
   The characteristic should be hidden from the user.
+- [HMCharacteristicPropertySupportsEventNotification](./hmcharacteristicpropertysupportseventnotification-19wy1.md)
+  The characteristic supports event notifications.
 
 
 ---

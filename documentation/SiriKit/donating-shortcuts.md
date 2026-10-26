@@ -18,7 +18,7 @@ However, don’t make more than one shortcut donation for an action at the time 
 Your app can make donations using one of the following objects:
 
 - [`NSUserActivity`](../Foundation/nsuseractivity.md). Donate the shortcut using a user activity when the action involves a view within your app, such as displaying recent transactions in a banking app.
-- [`INInteraction`](https://developer.apple.com/documentation/intents/ininteraction). Donate the shortcut using an interaction when the action involves a task the user accomplishes with your app, such as recording activity in a ski and snowboard tracking app.
+- [`INInteraction`](../Intents/ininteraction.md). Donate the shortcut using an interaction when the action involves a task the user accomplishes with your app, such as recording activity in a ski and snowboard tracking app.
 
 > ❗ **Important**:  In iOS 17 and later, the Journal app encourages people to reflect and write about their day-to-day experiences. If your app donates activities or interactions to SiriKit, the subject matter of the interaction may appear as a suggestion in the Journal app, or other apps that utilize the [Journaling Suggestions](../JournalingSuggestions/JournalingSuggestions.md) framework.
 
@@ -36,15 +36,15 @@ To handle the action at a later time, implement the [`application(_:continue:res
 
 ##### Donate an Interaction
 
-You can also make a donation using an [`INInteraction`](https://developer.apple.com/documentation/intents/ininteraction) object. For this type of donation, you provide the interaction with an intent that represents the action (or task) that the user wants to accomplish using your app. This type of donation has an advantage over ones made with a user activity in that Siri can deconstruct the donation into its intent parameters allowing for more intelligent predictions.
+You can also make a donation using an [`INInteraction`](../Intents/ininteraction.md) object. For this type of donation, you provide the interaction with an intent that represents the action (or task) that the user wants to accomplish using your app. This type of donation has an advantage over ones made with a user activity in that Siri can deconstruct the donation into its intent parameters allowing for more intelligent predictions.
 
 Before diving into the source code, look through the list of system-provided intents to see if one exists that’s suitable for your action (see Standard Intents). Use an intent that best describes the action; otherwise, create a custom intent.
 
-To donate the intent, create an instance of the intent class. Set its parameter values and add images to the parameters as needed. To recommend a voice phrase that the user may want to add to Siri, set the intent’s [`suggestedInvocationPhrase`](https://developer.apple.com/documentation/intents/inintent/suggestedinvocationphrase) property to a string containing the phrase.
+To donate the intent, create an instance of the intent class. Set its parameter values and add images to the parameters as needed. To recommend a voice phrase that the user may want to add to Siri, set the intent’s [`suggestedInvocationPhrase`](../Intents/inintent/suggestedinvocationphrase.md) property to a string containing the phrase.
 
 > ❗ **Important**:  Siri reads the Intent Definition file to determine the intent and parameter combinations that an app supports for prediction. In order to help Siri make the best possible suggestions, add all the system-provided and custom intents your app supports and their parameter combinations to your Intent Definition file.
 
-After creating the intent, create an instance of [`INInteraction`](https://developer.apple.com/documentation/intents/ininteraction) and call its [`donate(completion:)`](https://developer.apple.com/documentation/intents/ininteraction/donate(completion:)) method, passing in the intent. This tells Siri about the shortcut.
+After creating the intent, create an instance of [`INInteraction`](../Intents/ininteraction.md) and call its [`donate(completion:)`](../Intents/ininteraction/donate%28completion%29.md) method, passing in the intent. This tells Siri about the shortcut.
 
 To handle the shortcut, implement the [`application(_:continue:restorationHandler:)`](../UIKit/uiapplicationdelegate/application%28_,continue,restorationhandler%29.md) method in your app delegate. When the time comes to handle the action, the system opens your app. To provide a better user experience—one where opening your app each time to handle the shortcut isn’t necessary—provide an Intents App Extension with your app. The extension handles the shortcut in the background without needing to open your app, providing a richer experience that occurs within Siri. For more information on Intents App Extensions, see [Creating an Intents App Extension](./creating-an-intents-app-extension.md).
 

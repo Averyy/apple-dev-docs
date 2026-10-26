@@ -33,6 +33,8 @@ var filterStrength: Float { get set }
   Past reference frames in presentation time order that you use to process the source frame.
 - [var hasDiscontinuity: Bool](./hasdiscontinuity.md)
   A Boolean that indicates sequence discontinuity, forcing the processor to reset prior to processing the source frame.
+- [destinationFrame](./destinationframe.md)
+  Destination frame that contains a user-allocated pixel buffer that receives the output frame.
 
 
 ---

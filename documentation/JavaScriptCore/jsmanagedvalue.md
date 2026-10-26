@@ -46,6 +46,8 @@ However, if neither of these conditions is true, the managed value sets its [`va
   Initializes a managed value with the specified JavaScript value.
 - [init!(value: JSValue!, andOwner: Any!)](./jsmanagedvalue/init%28value,andowner%29.md)
   Creates a managed value and associates it with an owner.
+- [+ managedValueWithValue:](./jsmanagedvalue/managedvaluewithvalue_.md)
+  Creates a managed value with the specified JavaScript value.
 ### Accessing the Managed Value
 - [var value: JSValue!](./jsmanagedvalue/value.md)
   The managed value’s underlying JavaScript value.

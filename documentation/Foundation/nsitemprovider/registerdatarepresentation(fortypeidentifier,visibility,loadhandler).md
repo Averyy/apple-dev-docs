@@ -32,6 +32,8 @@ func registerDataRepresentation(forTypeIdentifier typeIdentifier: String, visibi
   Registers a data-backed representation for an item, specifiying item visibility and a load handler.
 - [func registerItem(forTypeIdentifier: String, loadHandler: NSItemProvider.LoadHandler)](./registeritem%28fortypeidentifier,loadhandler%29.md)
   Lazily registers an item, according to the item provider type coercion policy.
+- [- registerDataRepresentationForContentType:visibility:loadHandler:](./registerdatarepresentationforcontenttype_visibility_loadhandler_.md)
+  Lazily registers an item, according to the item provider type coercion policy.
 
 
 ---

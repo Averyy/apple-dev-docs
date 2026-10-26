@@ -36,6 +36,8 @@ When using networking frameworks other than WebKit or Foundation’s [`URLSessio
   Determines if accessing the specified URL is allowed or denied.
 - [NEURLFilter.Verdict](./neurlfilter/verdict.md)
   A verdict returned by a URL filter.
+- [+ verdictForURL:completionHandler:](./neurlfilter/verdictforurl_completionhandler_.md)
+  Determines if accessing the specified URL is allowed or denied.
 
 ## Relationships
 

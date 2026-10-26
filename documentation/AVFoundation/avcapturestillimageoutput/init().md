@@ -24,6 +24,12 @@ init()
 - (instancetype) init;
 ```
 
+## See Also
+
+### Creating still image output
+- [+ new](./new.md)
+  Creates new still image output.
+
 
 ---
 

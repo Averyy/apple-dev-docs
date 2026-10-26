@@ -41,6 +41,7 @@ Starting in iOS 10, the system deactivates the audio session of most apps when i
   The system interrupts the audio session due to a disconnection of an audio route.
 - [AVAudioSession.InterruptionReason.sceneWasBackgrounded](./scenewasbackgrounded.md)
   The system backgrounds the scene and interrupts the audio session.
+- [AVAudioSessionInterruptionReasonDeviceUnauthenticated](../../avaudiosessioninterruptionreason/avaudiosessioninterruptionreasondeviceunauthenticated.md)
 
 
 ---

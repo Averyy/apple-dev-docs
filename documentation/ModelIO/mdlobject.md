@@ -73,9 +73,13 @@ Model I/O itself uses this mechanism to handle object hierarchies and spatial tr
 - [func enumerateChildObjects(of: AnyClass, root: MDLObject, using: (MDLObject, UnsafeMutablePointer<ObjCBool>) -> Void, stopPointer: UnsafeMutablePointer<ObjCBool>)](./mdlobject/enumeratechildobjects%28of,root,using,stoppointer%29.md)
   Executes the specified block using each object in this object’s child hierarchy.
 - [subscript(Protocol) -> (any MDLComponent)?](./mdlobject/subscript%28_%29.md)
+- [- setObject:forKeyedSubscript:](./mdlobject/setobject_forkeyedsubscript_.md)
 ### Constants
 - [struct MDLAxisAlignedBoundingBox](./mdlaxisalignedboundingbox.md)
   The minimal volume containing an object, used by the [`boundingBox(atTime:)`](./mdlobject/boundingbox%28attime%29.md) method.
+### Type Methods
+- [+ objectWithSCNNode:](./mdlobject/objectwithscnnode_.md)
+- [+ objectWithSCNNode:bufferAllocator:](./mdlobject/objectwithscnnode_bufferallocator_.md)
 
 ## Relationships
 

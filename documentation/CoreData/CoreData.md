@@ -114,6 +114,8 @@ Core Data includes mechanisms for versioning your data model and migrating user 
 ### Related types
 - [Core Data Constants](./core-data-constants.md)
   Keys to use with persistent stores and notifications from Core Data.
+### Macros
+- [Macros](./coredata-macros.md)
 
 
 ---

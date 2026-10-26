@@ -17,6 +17,8 @@ Design patterns for broadcasting information and for subscribing to broadcasts.
   A notification dispatch mechanism that enables the broadcast of information to registered observers.
 - [class NotificationQueue](./notificationqueue.md)
   A notification center buffer.
+- [NSNotification](./nsnotification.md)
+  A container for information broadcast through a notification center to all registered observers.
 ### Cross-Process Notifications
 - [class DistributedNotificationCenter](./distributednotificationcenter.md)
   A notification dispatch mechanism that enables the broadcast of notifications across task boundaries.

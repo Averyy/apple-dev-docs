@@ -16,6 +16,10 @@ Perform element-wise integer to double-precision floating-point conversion.
   Converts 8-bit signed integers to double-precision values.
 - [static func convertElements<U, V>(of: U, to: inout V)](./vdsp/convertelements%28of,to%29-1jwgk.md)
   Converts 8-bit unsigned integers to double-precision values.
+- [vDSP_vflt8D](./vdsp_vflt8d.md)
+  Converts a vector of signed 8-bit integers to double-precision floating-point values.
+- [vDSP_vfltu8D](./vdsp_vfltu8d.md)
+  Converts an array of unsigned 8-bit integers to double-precision floating-point values.
 ### 16-bit integer to floating point conversion
 - [static func integerToFloatingPoint<T, U>(T, floatingPointType: U.Type) -> [U]](./vdsp/integertofloatingpoint%28_,floatingpointtype%29-5os5n.md)
   Returns a vector of floating-point values converted from signed 16-bit integer values.
@@ -25,6 +29,10 @@ Perform element-wise integer to double-precision floating-point conversion.
   Converts 16-bit signed integers to double-precision values.
 - [static func convertElements<U, V>(of: U, to: inout V)](./vdsp/convertelements%28of,to%29-4sj10.md)
   Converts 16-bit unsigned integers to double-precision values.
+- [vDSP_vflt16D](./vdsp_vflt16d.md)
+  Converts a vector of signed 16-bit integers to double-precision floating-point values.
+- [vDSP_vfltu16D](./vdsp_vfltu16d.md)
+  Converts an array of unsigned 16-bit integers to double-precision floating-point values.
 ### 32-bit integer to floating point conversion
 - [static func integerToFloatingPoint<T, U>(T, floatingPointType: U.Type) -> [U]](./vdsp/integertofloatingpoint%28_,floatingpointtype%29-8b7ni.md)
   Returns a vector of floating-point values converted from signed 32-bit integer values.
@@ -34,6 +42,10 @@ Perform element-wise integer to double-precision floating-point conversion.
   Converts 32-bit signed integers to double-precision values.
 - [static func convertElements<U, V>(of: U, to: inout V)](./vdsp/convertelements%28of,to%29-4es14.md)
   Converts 32-bit unsigned integers to double-precision values.
+- [vDSP_vflt32D](./vdsp_vflt32d.md)
+  Converts a vector of signed 32-bit integers to double-precision floating-point values.
+- [vDSP_vfltu32D](./vdsp_vfltu32d.md)
+  Converts an array of unsigned 32-bit integers to double-precision floating-point values.
 
 ## See Also
 

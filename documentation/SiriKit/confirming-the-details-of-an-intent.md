@@ -9,7 +9,7 @@ Perform final validation of the intent parameters and verify that your services 
 
 After you resolve the parameters of an intent, but before you handle that intent, SiriKit may ask you to confirm the intent details. The confirmation phase is your chance to perform any final validation of the intent parameters and to verify that any needed services are available. For example, you might confirm that you can communicate with your company’s server. After performing your final validation, you provide SiriKit with a response object indicating how you plan to handle the request.
 
-The listing below shows a confirmation method used by a running app to validate an [`INStartWorkoutIntent`](https://developer.apple.com/documentation/intents/instartworkoutintent) object. Because the app uses Core Location to map the user’s run, the method verifies that the needed location services are available and returns a failure code if they are not. Otherwise, the response object contains the [`INStartWorkoutIntentResponseCode.ready`](https://developer.apple.com/documentation/intents/instartworkoutintentresponsecode/ready) code, which indicates that the app is ready to start the run.
+The listing below shows a confirmation method used by a running app to validate an [`INStartWorkoutIntent`](../Intents/instartworkoutintent.md) object. Because the app uses Core Location to map the user’s run, the method verifies that the needed location services are available and returns a failure code if they are not. Otherwise, the response object contains the [`INStartWorkoutIntentResponseCode.ready`](../Intents/instartworkoutintentresponsecode/ready.md) code, which indicates that the app is ready to start the run.
 
 ```swift
 func confirm(startWorkout intent: INStartWorkoutIntent, 

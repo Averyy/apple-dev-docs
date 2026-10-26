@@ -104,7 +104,7 @@ The result of [`linearInterpolate(elementsOf:using:)`](./vdsp/linearinterpolate%
 
 ##### Add smoothing to the interpolation result
 
-You can change the way that you generate the control array to alter the interpolated result. For example, you may want to add smoothing between the segments of a line graph or add easing to an animation. The following code uses [`simd_smoothstep(_:_:_:)`](https://developer.apple.com/documentation/simd/simd_smoothstep(_:_:_:)-993b1) to smooth the fractional parts of `control` near the increments to the integer parts:
+You can change the way that you generate the control array to alter the interpolated result. For example, you may want to add smoothing between the segments of a line graph or add easing to an animation. The following code uses [`simd_smoothstep(_:_:_:)`](../simd/simd_smoothstep%28_,_,_%29-993b1.md) to smooth the fractional parts of `control` near the increments to the integer parts:
 
 ```swift
 let denominator = Float(n) / Float(values.count - 1)

@@ -40,6 +40,8 @@ AudioClassIDs are used to identify the class of an AudioObject.
 - [typealias AudioObjectPropertyScope](./audioobjectpropertyscope.md)
 - [typealias AudioObjectPropertySelector](./audioobjectpropertyselector.md)
 - [typealias AudioStreamID](./audiostreamid.md)
+- [AudioDriverPlugInDevicePropertyChangedProc](./audiodriverplugindevicepropertychangedproc.md)
+- [AudioDriverPlugInStreamPropertyChangedProc](./audiodriverpluginstreampropertychangedproc.md)
 
 
 ---

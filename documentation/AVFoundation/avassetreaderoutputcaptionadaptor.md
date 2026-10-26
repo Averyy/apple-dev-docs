@@ -29,6 +29,8 @@ class AVAssetReaderOutputCaptionAdaptor
 ### Creating a caption adaptor
 - [init(assetReaderTrackOutput: AVAssetReaderTrackOutput)](./avassetreaderoutputcaptionadaptor/init%28assetreadertrackoutput%29.md)
   Creates a caption adaptor that reads from a track output.
+- [+ assetReaderOutputCaptionAdaptorWithAssetReaderTrackOutput:](./avassetreaderoutputcaptionadaptor/assetreaderoutputcaptionadaptorwithassetreadertrackoutput_.md)
+  A class method that creates a caption adaptor that reads from a track output.
 ### Accessing the track output
 - [var assetReaderTrackOutput: AVAssetReaderTrackOutput](./avassetreaderoutputcaptionadaptor/assetreadertrackoutput.md)
   The associated asset reader track output.

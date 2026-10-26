@@ -140,6 +140,8 @@ This combination of inequalities, equalities, and priorities gives you a great a
   Position views so that they aren’t obstructed by other content.
 - [protocol UILayoutSupport](./uilayoutsupport.md)
   A set of methods that provide layout support and access to layout anchors.
+- [NSDictionaryOfVariableBindings](./nsdictionaryofvariablebindings.md)
+  Creates a dictionary wherein the keys are string representations of the corresponding values’ variable names.
 
 
 ---

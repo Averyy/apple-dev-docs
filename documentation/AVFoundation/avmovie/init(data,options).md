@@ -42,6 +42,10 @@ Use this method to create movies from movie headers that aren’t stored in file
   Creates a movie object from a movie header stored in a QuickTime movie file of ISO base media file.
 - [Initialization options](../initialization-options.md)
   Specify options to configure the initialization of a movie.
+- [+ movieWithURL:options:](./moviewithurl_options_.md)
+  Returns a new movie object from a movie header stored in a QuickTime movie file of ISO base media file.
+- [+ movieWithData:options:](./moviewithdata_options_.md)
+  Returns a new movie object from a movie file’s data.
 
 
 ---

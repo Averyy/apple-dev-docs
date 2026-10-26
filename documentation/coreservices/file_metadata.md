@@ -19,8 +19,10 @@ Search for files based on data that is part of the file or file system.
 - [struct MDQuerySortOptionFlags](./mdquerysortoptionflags.md)
 ### Classes
 - [class MDLabel](./mdlabel.md)
+- [MDLabelRef](./mdlabelref.md)
 ### Data Types
 - [MDQuery](./file_metadata/mdquery.md)
+- [MDImporter](./file_metadata/mdimporter.md)
 ### Constants
 - [let kMDItemApplicationCategories: CFString!](./kmditemapplicationcategories.md)
 - [let kMDItemCameraOwner: CFString!](./kmditemcameraowner.md)
@@ -71,6 +73,17 @@ Search for files based on data that is part of the file or file system.
 - [var kMDQuerySynchronous: MDQueryOptionFlags](./kmdquerysynchronous.md)
   Specifies that a query should block during the initial gather phase. The query’s run loop will run in the default mode. If this option is not specified the query function returns immediately after starting the query asynchronously.
 - [var kMDQueryWantsUpdates: MDQueryOptionFlags](./kmdquerywantsupdates.md)
+- [kMDItemLabelID](./kmditemlabelid.md)
+- [kMDItemLabelIcon](./kmditemlabelicon.md)
+- [kMDItemLabelKind](./kmditemlabelkind.md)
+- [kMDItemLabelUUID](./kmditemlabeluuid.md)
+- [kMDLabelLocalDomain](./mdlabeldomain/kmdlabellocaldomain.md)
+- [kMDLabelUserDomain](./mdlabeldomain/kmdlabeluserdomain.md)
+- [kMDQueryAllowFSTranslation](./mdqueryoptionflags/kmdqueryallowfstranslation.md)
+- [kMDQueryReverseSortOrderFlag](./mdquerysortoptionflags/kmdqueryreversesortorderflag.md)
+- [kMDQuerySynchronous](./mdqueryoptionflags/kmdquerysynchronous.md)
+  Specifies that a query should block during the initial gather phase. The query’s run loop will run in the default mode. If this option is not specified the query function returns immediately after starting the query asynchronously.
+- [kMDQueryWantsUpdates](./mdqueryoptionflags/kmdquerywantsupdates.md)
 
 ## See Also
 

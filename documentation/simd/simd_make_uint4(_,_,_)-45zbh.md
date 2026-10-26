@@ -27,6 +27,8 @@ static simd_uint4 simd_make_uint4(unsigned int x, simd_uint2 yz, unsigned int w)
   Returns a new vector from two scalar values and a vector.
 - [func simd_make_uint4(UInt32, simd_uint3) -> simd_uint4](./simd_make_uint4%28_,_%29-4kh9u.md)
   Returns a new vector from a scalar value and a vector.
+- [vector4](./vector4-91xr7.md)
+  Returns a new vector from a vector and a scalar value.
 
 
 ---

@@ -25,6 +25,12 @@ The notification object is the image class that is registered or unregistered. T
 
 To observe this notification using Swift concurrency, use [`NSImageRep.RegistryDidChangeMessage`](./registrydidchangemessage.md).
 
+## See Also
+
+### Notifications
+- [NSImageRepRegistryChangedNotification](../nsimagerepregistrychangednotification.md)
+  Posted whenever the image representation class registry changes.
+
 
 ---
 

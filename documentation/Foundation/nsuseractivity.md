@@ -161,6 +161,18 @@ System features like Siri and Apple Intelligence use contextual information from
   The user info dictionary was too large to receive.
 - [var NSUserActivityRemoteApplicationTimedOutError: Int](./nsuseractivityremoteapplicationtimedouterror-swift.var.md)
   The remote application failed to send data within the specified time.
+- [NSUserActivityConnectionUnavailableError](./nsuseractivityconnectionunavailableerror-c.enum.case.md)
+  The user activity couldn’t be continued because a required connection wasn’t available.
+- [NSUserActivityErrorMaximum](./nsuseractivityerrormaximum-c.enum.case.md)
+  The end of the range of error codes reserved for user activity errors.
+- [NSUserActivityErrorMinimum](./nsuseractivityerrorminimum-c.enum.case.md)
+  The start of the range of error codes reserved for user activity errors.
+- [NSUserActivityHandoffFailedError](./nsuseractivityhandofffailederror-c.enum.case.md)
+  The data for the user activity wasn’t available.
+- [NSUserActivityHandoffUserInfoTooLargeError](./nsuseractivityhandoffuserinfotoolargeerror-c.enum.case.md)
+  The user info dictionary was too large to receive.
+- [NSUserActivityRemoteApplicationTimedOutError](./nsuseractivityremoteapplicationtimedouterror-c.enum.case.md)
+  The remote application failed to send data within the specified time.
 ### Deprecated
 - [convenience init()](./nsuseractivity/init%28%29.md)
   Creates a user activity object using the first activity type declared in the app’s information property list file.

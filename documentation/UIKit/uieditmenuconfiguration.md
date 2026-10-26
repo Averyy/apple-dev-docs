@@ -32,8 +32,12 @@ You use this object when calling the [`presentEditMenu(with:)`](./uieditmenuinte
 ### Creating an edit menu configuration
 - [convenience init(identifier: AnyHashable?, sourcePoint: CGPoint)](./uieditmenuconfiguration/init%28identifier,sourcepoint%29.md)
   Initializes a new configuration with the source location you specify.
+- [+ configurationWithIdentifier:sourcePoint:](./uieditmenuconfiguration/configurationwithidentifier_sourcepoint_.md)
+  Creates a new configuration with the source location you specify.
 ### Getting the configuration identifier
 - [var identifier: AnyHashable](./uieditmenuconfiguration/identifier-cjqj.md)
+  The unique identifier for this configuration object.
+- [identifier](./uieditmenuconfiguration/identifier-1vhk9.md)
   The unique identifier for this configuration object.
 ### Configuring the menu
 - [var preferredArrowDirection: UIEditMenuArrowDirection](./uieditmenuconfiguration/preferredarrowdirection.md)

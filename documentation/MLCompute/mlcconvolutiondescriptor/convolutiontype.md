@@ -44,6 +44,24 @@ var convolutionType: MLCConvolutionType { get }
   A Boolean that indicates whether this is a convolution transpose.
 - [var usesDepthwiseConvolution: Bool](./usesdepthwiseconvolution.md)
   A Boolean that indicates whether you use depthwise convolution.
+- [kernelWidth](./kernelwidth.md)
+  The kernel size in x.
+- [kernelHeight](./kernelheight.md)
+  The kernel size in y.
+- [strideInX](./strideinx.md)
+  The kernel stride in `x`.
+- [strideInY](./strideiny.md)
+  The kernel stride in `y`.
+- [dilationRateInX](./dilationrateinx.md)
+  The dilation rate, or stride of elements, in the kernel in x.
+- [dilationRateInY](./dilationrateiny.md)
+  The dilation rate, or stride of elements, in the kernel in y.
+- [paddingPolicy](./paddingpolicy-7drfq.md)
+  The padding policy.
+- [paddingSizeInX](./paddingsizeinx.md)
+  The pooling size in x, left and right, to use if the padding policy is to use padding size.
+- [paddingSizeInY](./paddingsizeiny.md)
+  The pooling size in y, top and bottom, to use if the padding policy is to use padding size.
 
 
 ---

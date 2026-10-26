@@ -85,6 +85,16 @@ Then, you generate the current state of the data and display the data in the UI 
 - [NSCollectionViewDataSource](./nscollectionviewdatasource.md)
 - [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
+## See Also
+
+### Data
+- [NSCollectionViewDataSource](./nscollectionviewdatasource.md)
+  A set of methods that a data source object implements to provide the information and view objects that a collection view requires to present content.
+- [NSCollectionViewDelegate](./nscollectionviewdelegate.md)
+  A set of methods that you use to manage the behavior of a collection view.
+- [NSDiffableDataSourceSnapshot](./nsdiffabledatasourcesnapshotreference.md)
+  A representation of the state of the data in a view at a specific point in time.
+
 
 ---
 

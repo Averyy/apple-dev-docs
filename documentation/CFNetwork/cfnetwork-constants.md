@@ -22,6 +22,8 @@ Constants for use with CFNetwork.
   A Boolean value that indicates whether connections may use a network interface that the system considers expensive.
 - [let kCFStreamPropertyConnectionIsExpensive: CFString](./kcfstreampropertyconnectionisexpensive.md)
   A Boolean value that indicates if the connection is using a network interface that the system considers expensive.
+### Macros
+- [CFN_EXPORT](./cfn_export.md)
 
 ## See Also
 

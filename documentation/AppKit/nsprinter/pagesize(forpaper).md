@@ -34,6 +34,9 @@ The size of the page, measured in points in the user coordinate space. The retur
   The type you use to specify the name of a type of paper.
 - [var languageLevel: Int](./languagelevel.md)
   The PostScript language level recognized by the printer.
+### Related Documentation
+- [- imageRectForPaper:](./imagerectforpaper_.md)
+  Deprecated.
 
 
 ---

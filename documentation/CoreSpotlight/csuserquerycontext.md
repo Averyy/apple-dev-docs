@@ -50,6 +50,9 @@ For information about search filters and other configurable query parameters, se
   A Boolean value that indicates whether the query sorts results by their relevance.
 - [var maxRankedResultCount: Int](./csuserquerycontext/maxrankedresultcount.md)
   The maximum number of ranked results to return during the query.
+### Type Methods
+- [+ userQueryContext](./csuserquerycontext/userquerycontext.md)
+  Returns the current behavior configuration for the user query.
 
 ## Relationships
 

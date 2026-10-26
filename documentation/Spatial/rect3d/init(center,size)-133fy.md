@@ -53,6 +53,14 @@ static SPRect3D SPRect3DMakeAtCenter(SPPoint3D center, SPSize3D size);
   Creates a rectangle structure.
 - [init(points: [Point3D])](./init%28points%29.md)
   Creates a rectangle that’s the bounding box of the specified points.
+- [SPRect3DMakeAtCenterWithVector](../sprect3dmakeatcenterwithvector-9118a.md)
+  Creates a rectangle with the specified center and the specified size from double-precision vectors.
+- [SPRect3DMakeAtCenterWithVector](../sprect3dmakeatcenterwithvector-9doe4.md)
+- [SPRect3DMakeAtOriginWithVector](../sprect3dmakeatoriginwithvector-36awh.md)
+  Creates a rectangle at the specified origin and the specified size from double-precision vectors.
+- [SPRect3DMakeAtOriginWithVector](../sprect3dmakeatoriginwithvector-7m66h.md)
+- [SPRect3DMakeBoundingFromPoints](../sprect3dmakeboundingfrompoints.md)
+  Creates a rectangle that’s the bounding box of the specified points.
 
 
 ---

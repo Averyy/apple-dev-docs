@@ -29,6 +29,8 @@ PHAssetBurstSelectionTypeAutoPick
 ### Constants
 - [static var userPick: PHAssetBurstSelectionType](./userpick.md)
   The user has marked the asset as a favorite member of its burst sequence.
+- [PHAssetBurstSelectionTypeNone](./phassetburstselectiontypenone.md)
+  The asset is not marked as a favorite member of its burst sequence or is not a member of a burst sequence.
 
 
 ---

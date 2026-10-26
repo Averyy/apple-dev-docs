@@ -68,6 +68,8 @@ enum NSLayoutAttribute : NSInteger;
   The center along the y-axis between the object’s top and bottom margin.
 - [NSLayoutConstraint.Attribute.notAnAttribute](./attribute/notanattribute.md)
   A placeholder value for indicating that the constraint’s second item and second attribute aren’t used in any calculations.
+- [NSLayoutAttributeBaseline](../nslayoutattribute/nslayoutattributebaseline.md)
+  The object’s baseline.
 ### Initializers
 - [init?(rawValue: Int)](./attribute/init%28rawvalue%29.md)
 

@@ -39,6 +39,8 @@ The name is compared against all valid identity names, including full names, sho
   Returns the identity object matching the persistent reference data.
 - [init?(uuidString: String, authority: CBIdentityAuthority)](./init%28uuidstring,authority%29-13vns.md)
   Returns the identity object with the given UUID from the specified identity authority.
+- [+ identityWithCSIdentity:](./identitywithcsidentity_.md)
+  Returns an identity object created from the specified Core Services Identity opaque object.
 
 
 ---

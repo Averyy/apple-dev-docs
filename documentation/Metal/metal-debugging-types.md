@@ -26,6 +26,8 @@ Create capture managers and capture scopes, and review a GPU device’s log afte
   A log entry a Metal device generates when the it runs a command buffer.
 - [struct MTLLogContainer](./mtllogcontainer-swift.struct.md)
   A collection of logged messages, created when a Metal device runs a command buffer.
+- [MTLLogContainer](./mtllogcontainer-c.protocol.md)
+  A collection of logged messages, created when a Metal device runs a command buffer.
 
 ## See Also
 

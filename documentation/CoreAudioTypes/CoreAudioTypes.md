@@ -86,6 +86,8 @@ If you’re unfamiliar with the specialized terminology regarding the manipulati
 - [typealias AudioUnitSampleType](./audiounitsampletype.md)
   The canonical audio data sample type for audio processing.
 - [struct AudioFormatListItem](./audioformatlistitem.md)
+- [AVAudioSessionErrorInsufficientPriority](./avaudiosessionerrorinsufficientpriority.md)
+  An error code that indicates the app isn’t allowed to set the audio category because it’s in use by another app.
 ### Errors
 - [var kAudio_ParamError: OSStatus](./kaudio_paramerror.md)
   An error in the parameter list of the function.
@@ -111,6 +113,13 @@ If you’re unfamiliar with the specialized terminology regarding the manipulati
 - [var kAudio_FilePermissionError: OSStatus](./kaudio_filepermissionerror.md)
 - [var kAudio_NoError: OSStatus](./kaudio_noerror.md)
 - [var kAudio_TooManyFilesOpenError: OSStatus](./kaudio_toomanyfilesopenerror.md)
+### Macros
+- [CA_CANONICAL_DEPRECATED](./ca_canonical_deprecated.md)
+- [CA_REALTIME_API](./ca_realtime_api.md)
+- [TestAudioFormatNativeEndian](./testaudioformatnativeendian.md)
+### Enumerations
+- [AVAudioSessionErrorCode](./avaudiosession/errorcode.md)
+  Codes that describe error conditions that may occur when performing audio session operations.
 
 
 ---

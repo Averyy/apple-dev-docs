@@ -36,6 +36,8 @@ var gammaParameter: MLCTensorParameter? { get }
   The variance epsilon you use for numerical stability.
 - [var betaParameter: MLCTensorParameter?](./betaparameter.md)
   The beta tensor parameter you use for optimizer updates.
+- [normalizedShape](./normalizedshape-2cz6k.md)
+  The shape of the axes where normalization occurs.
 
 
 ---

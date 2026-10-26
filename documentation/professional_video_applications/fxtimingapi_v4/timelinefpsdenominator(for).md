@@ -22,7 +22,7 @@ func timelineFpsDenominator(for effect: (any FxTileableEffect)!) -> Int
 
 ## Mentions
 
-- [Understanding time in FxPlug](https://developer.apple.com/documentation/professional-video-applications/understanding-time-in-fxplug)
+- [Understanding time in FxPlug](../../Professional-Video-Applications/understanding-time-in-fxplug.md)
 
 #### Return Value
 
@@ -30,7 +30,7 @@ The denominator of the frame rate.
 
 #### Discussion
 
-You can use the denominator value with the companion numerator value to determine frames per second, or frame duration, of the timeline. For example, for 29.97 fps timelines, you might see values such as `30000` for the numerator, and `1001` for the denominator. For more information about how to handle time calculations, see [Retiming and frame duration](https://developer.apple.com/documentation/professional-video-applications/understanding-time-in-fxplug#Retiming-and-frame-duration).
+You can use the denominator value with the companion numerator value to determine frames per second, or frame duration, of the timeline. For example, for 29.97 fps timelines, you might see values such as `30000` for the numerator, and `1001` for the denominator. For more information about how to handle time calculations, see [Retiming and frame duration](../../Professional-Video-Applications/understanding-time-in-fxplug.md#Retiming-and-frame-duration).
 
 ## Parameters
 

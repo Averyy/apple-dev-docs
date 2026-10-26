@@ -63,6 +63,8 @@ enum UIFindSessionSearchResultDisplayStyle : NSInteger;
   Constants that describe the style a find session uses to decorate the text.
 - [UITextSearchOptions.WordMatchMethod](../uitextsearchoptions/wordmatchmethod-swift.enum.md)
   Constants that describe the method to use when searching text for words that match a string.
+- [UITextSearching](../uitextsearching-53wjq.md)
+  The methods you use on a find session’s searchable objects to perform search operations and decorate the found text results.
 
 
 ---

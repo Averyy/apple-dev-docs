@@ -29,6 +29,9 @@ class MPSCNNNeuronReLUNNode
 ### Initializers
 - [init(source: MPSNNImageNode)](./mpscnnneuronrelunnode/init%28source%29.md)
 - [init(source: MPSNNImageNode, a: Float, b: Float)](./mpscnnneuronrelunnode/init%28source,a,b%29.md)
+### Type Methods
+- [+ nodeWithSource:](./mpscnnneuronrelunnode/nodewithsource_.md)
+- [+ nodeWithSource:a:b:](./mpscnnneuronrelunnode/nodewithsource_a_b_.md)
 
 ## Relationships
 

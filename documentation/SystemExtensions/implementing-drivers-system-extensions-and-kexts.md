@@ -70,6 +70,8 @@ For information about the kext installation process, see [Installing a custom ke
 ### Essentials
 - [System Extension Entitlement](../BundleResources/entitlements/com.apple.developer.system-extension.install.md)
   A Boolean value that indicates whether your app has permission to activate or deactivate system extensions.
+- [Debugging and testing system extensions](../DriverKit/debugging-and-testing-system-extensions.md)
+  Debug your system extensions by temporarily disabling the security checks that macOS performs during the installation process.
 
 
 ---

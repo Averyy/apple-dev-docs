@@ -24,6 +24,8 @@ ASAuthorizationProviderExtensionRequestOptionsUserInteractionEnabled
 ### Identifying the options
 - [static var registrationRepair: ASAuthorizationProviderExtensionRequestOptions](./registrationrepair.md)
   Indicates that the registration is undergoing repair.
+- [ASAuthorizationProviderExtensionRequestOptionsNone](./asauthorizationproviderextensionrequestoptionsnone.md)
+  Options aren’t available.
 
 
 ---

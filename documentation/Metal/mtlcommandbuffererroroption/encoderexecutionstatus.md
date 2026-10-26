@@ -30,6 +30,12 @@ You can set this option to a command buffer descriptor’s [`errorOptions`](../m
 
 > **Note**:  Enabling this option can slightly reduce your app’s CPU runtime performance.
 
+## See Also
+
+### Buffer error options
+- [MTLCommandBufferErrorOptionNone](./mtlcommandbuffererroroptionnone.md)
+  An option that clears a command buffer’s error options.
+
 
 ---
 

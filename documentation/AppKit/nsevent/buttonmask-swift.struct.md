@@ -30,6 +30,13 @@ enum NSEventButtonMask : NSUInteger;
   A mask that matches the button on the upper side of the device.
 ### Initializers
 - [init(rawValue: UInt)](./buttonmask-swift.struct/init%28rawvalue%29.md)
+### Deprecated
+- [NSPenLowerSideMask](../nspenlowersidemask.md)
+  The button on the lower side of the device is activated.
+- [NSPenTipMask](../nspentipmask.md)
+  The pen tip is activated.
+- [NSPenUpperSideMask](../nspenuppersidemask.md)
+  The button on the upper side of the device is activated.
 
 ## Relationships
 

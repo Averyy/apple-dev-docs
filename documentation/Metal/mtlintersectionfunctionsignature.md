@@ -40,6 +40,8 @@ For more information on declaring intersection functions in MSL, see [Metal Shad
   A flag indicating that function signature uses triangle data.
 - [static var worldSpaceData: MTLIntersectionFunctionSignature](./mtlintersectionfunctionsignature/worldspacedata.md)
   A flag indicating that function signature uses world space data.
+- [MTLIntersectionFunctionSignatureNone](./mtlintersectionfunctionsignature/mtlintersectionfunctionsignaturenone.md)
+  A constant indicating that the function uses the default signature.
 ### Type Properties
 - [static var curveData: MTLIntersectionFunctionSignature](./mtlintersectionfunctionsignature/curvedata.md)
 - [static var extendedLimits: MTLIntersectionFunctionSignature](./mtlintersectionfunctionsignature/extendedlimits.md)

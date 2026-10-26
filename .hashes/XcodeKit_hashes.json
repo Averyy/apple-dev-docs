@@ -15,6 +15,11 @@
       "file_path": "documentation/XcodeKit/testing-your-source-editor-extension.md",
       "hash": "2a1346dd186c49bde5e989c34eb891e3266f6abb41d5ee9fff846ced964b61ce"
     },
+    "https://developer.apple.com/documentation/xcodekit/xcode_export": {
+      "etag": "\"8ec-65d55ee7cd2a3-df\"",
+      "file_path": "documentation/XcodeKit/xcode_export.md",
+      "hash": "b7f30fc72aede8e994154ff27d355932f980d001c53d0f2e892f464d83190144"
+    },
     "https://developer.apple.com/documentation/xcodekit/xcodekit-version-constants": {
       "etag": "\"141a-65902927c19e9-df\"",
       "file_path": "documentation/XcodeKit/xcodekit-version-constants.md",
@@ -160,6 +165,11 @@
       "file_path": "documentation/XcodeKit/xcsourcetextposition/line.md",
       "hash": "8b88298f16ff8a49304135966248d90409a62914961e999cb3ae9ac3afd42e1f"
     },
+    "https://developer.apple.com/documentation/xcodekit/xcsourcetextpositionmake": {
+      "etag": "\"151d-65d55ee7cd2a3-df\"",
+      "file_path": "documentation/XcodeKit/xcsourcetextpositionmake.md",
+      "hash": "7dab671207f6d4a3e84b72a645b0d46af7fd93a136b14ae7903af933008c85b7"
+    },
     "https://developer.apple.com/documentation/xcodekit/xcsourcetextrange": {
       "etag": "\"4d33-65d55ee7cd2a3-df\"",
       "file_path": "documentation/XcodeKit/xcsourcetextrange.md",
@@ -204,6 +214,11 @@
       "etag": "\"285f-65902927c19e9-df\"",
       "file_path": "documentation/XcodeKit/testing-your-source-editor-extension.md",
       "hash": "2a1346dd186c49bde5e989c34eb891e3266f6abb41d5ee9fff846ced964b61ce"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/xcodekit/xcode_export.json": {
+      "etag": "\"8ec-65d55ee7cd2a3-df\"",
+      "file_path": "documentation/XcodeKit/xcode_export.md",
+      "hash": "b7f30fc72aede8e994154ff27d355932f980d001c53d0f2e892f464d83190144"
     },
     "https://developer.apple.com/tutorials/data/documentation/xcodekit/xcodekit-version-constants.json": {
       "etag": "\"141a-65902927c19e9-df\"",
@@ -350,6 +365,11 @@
       "file_path": "documentation/XcodeKit/xcsourcetextposition/line.md",
       "hash": "8b88298f16ff8a49304135966248d90409a62914961e999cb3ae9ac3afd42e1f"
     },
+    "https://developer.apple.com/tutorials/data/documentation/xcodekit/xcsourcetextpositionmake.json": {
+      "etag": "\"151d-65d55ee7cd2a3-df\"",
+      "file_path": "documentation/XcodeKit/xcsourcetextpositionmake.md",
+      "hash": "7dab671207f6d4a3e84b72a645b0d46af7fd93a136b14ae7903af933008c85b7"
+    },
     "https://developer.apple.com/tutorials/data/documentation/xcodekit/xcsourcetextrange.json": {
       "etag": "\"4d33-65d55ee7cd2a3-df\"",
       "file_path": "documentation/XcodeKit/xcsourcetextrange.md",
@@ -383,8 +403,8 @@
   },
   "metadata": {
     "render": {
-      "version": 1
+      "version": 2
     },
-    "total_pages": 76
+    "total_pages": 80
   }
 }

@@ -37,6 +37,8 @@ Transit networks that have tap-in and tap-out ride accounting use this value. Wa
   A Boolean value that indicates the pass issuer disabled the pass.
 - [var isBlacklisted: Bool](./isblacklisted.md)
   A Boolean value that indicates the transit pass issuer disabled the pass.
+- [blocked](./blocked.md)
+  A Boolean value that indicates the pass issuer disabled the pass.
 
 
 ---

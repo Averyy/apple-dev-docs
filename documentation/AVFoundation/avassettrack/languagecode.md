@@ -31,6 +31,12 @@ var languageCode: String? { get }
 
 The value is an ISO 639-2/T language code, or `nil` if the track doesn’t specify a language code.
 
+## See Also
+
+### Accessing language support
+- [extendedLanguageTag](./extendedlanguagetag.md)
+  The language tag of the track.
+
 
 ---
 

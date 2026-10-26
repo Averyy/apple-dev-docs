@@ -75,6 +75,8 @@ Finally, if you’re using Newsstand Kit, your delegate can conform to the [`NSU
   Loads the data for a URL request and executes a handler block on an operation queue when the request completes or fails.
 - [func start()](./nsurlconnection/start%28%29.md)
   Causes the connection to begin loading data, if it has not already.
+- [+ connectionWithRequest:delegate:](./nsurlconnection/connectionwithrequest_delegate_.md)
+  Creates and returns an initialized URL connection and begins to load the data for the URL request.
 ### Stopping a Connection
 - [func cancel()](./nsurlconnection/cancel%28%29.md)
   Cancels an asynchronous load of a request.

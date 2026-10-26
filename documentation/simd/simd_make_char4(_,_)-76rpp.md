@@ -27,6 +27,8 @@ static simd_char4 simd_make_char4(char x, simd_char3 yzw);
   Returns a new vector from two scalar values and a vector.
 - [func simd_make_char4(CChar, simd_char2, CChar) -> simd_char4](./simd_make_char4%28_,_,_%29-94kun.md)
   Returns a new vector from a scalar value, a vector, and a scalar value.
+- [vector4](./vector4-4dfou.md)
+  Returns a new vector from a vector and a scalar value.
 
 
 ---

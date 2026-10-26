@@ -46,6 +46,8 @@ typedef NSString * UINibOptionsKey;
 ### Retrieving objects from the nib file
 - [func instantiate(withOwner: Any?, options: [UINib.OptionsKey : Any]?) -> [Any]](./instantiate%28withowner,options%29.md)
   Unarchives and instantiates the in-memory contents of the nib object’s nib file, creating a distinct object tree and set of top-level objects.
+- [UINibProxiedObjectsKey](../uinibproxiedobjectskey.md)
+  The runtime replacement objects for any proxy objects in the nib file.
 
 
 ---

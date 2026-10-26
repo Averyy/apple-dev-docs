@@ -12,7 +12,7 @@ A preset for converting HEIF formatted images to JPEG.
 - Mac Catalyst 13.1+ - Deprecated in 27.2
 - visionOS 1.0+ - Deprecated in 27.2
 
-> **Deprecated**: Use [`PHPickerViewController`](https://developer.apple.com/documentation/photosui/phpickerviewcontroller) instead.
+> **Deprecated**: Use [`PHPickerViewController`](../../../PhotosUI/phpickerviewcontroller.md) instead.
 
 ## Declaration
 

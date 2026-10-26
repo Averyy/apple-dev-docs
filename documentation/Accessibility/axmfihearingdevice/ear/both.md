@@ -30,6 +30,8 @@ AXHearingDeviceEarBoth
   A constant that represents the left ear.
 - [static var right: AXMFiHearingDevice.Ear](./right.md)
   A constant that represents the right ear.
+- [AXHearingDeviceEarNone](../../axhearingdeviceear/axhearingdeviceearnone.md)
+  A constant that represents neither ear.
 
 
 ---

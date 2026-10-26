@@ -40,11 +40,15 @@ typedef short __attribute__((ext_vector_type(3))) simd_short3;
   Returns a new vector from the specified scalar values.
 - [func simd_make_short3_undef(Int16) -> simd_short3](./simd_make_short3_undef%28_%29-5n83n.md)
   Returns a new vector with the first element set to a scalar value, and other elements undefined.
+- [vector3](./vector3-3x8j.md)
+  Returns a new vector from the specified scalar values.
 ### Functions to Create Three-Element Vectors From Combinations of Vectors and Scalar Values
 - [func simd_make_short3(simd_short2, Int16) -> simd_short3](./simd_make_short3%28_,_%29-7dmp4.md)
   Returns a new vector from a vector and a scalar value.
 - [func simd_make_short3(Int16, simd_short2) -> simd_short3](./simd_make_short3%28_,_%29-9bk9v.md)
   Returns a new vector from a scalar value and a vector.
+- [vector3](./vector3-3833i.md)
+  Returns a new vector from a vector and a scalar value.
 ### Common Functions
 - [func simd_abs(simd_short3) -> simd_short3](./simd_abs%28_%29-8d6jr.md)
   Returns the absolute value of each element in a vector.
@@ -71,6 +75,48 @@ typedef short __attribute__((ext_vector_type(3))) simd_short3;
   Returns a vector that contains elements from either the first or second parameter, based on the corresponding element in the third parameter.
 ### Alternative Type Alias
 - [typealias vector_short3](./vector_short3.md)
+### Functions to Create Three-Element Vectors From Vectors of Other Types
+- [simd_short](./simd_short-6hhh3.md)
+  Returns a new vector from the specified vector of 8-bit, signed integer elements.
+- [simd_short](./simd_short-6hrav.md)
+  Returns a new vector from the specified vector of 8-bit, unsigned integer elements.
+- [simd_short](./simd_short-6hmgn.md)
+  Returns a new vector from the specified vector of 16-bit, signed integer elements.
+- [simd_short](./simd_short-6hw6v.md)
+  Returns a new vector from the specified vector of 16-bit, unsigned integer elements
+- [simd_short](./simd_short-6he6b.md)
+  Returns a new vector from the specified vector of 32-bit, signed integer elements.
+- [simd_short](./simd_short-6ho1v.md)
+  Returns a new vector from the specified vector of 32-bit, unsigned integer elements.
+- [simd_short](./simd_short-6hfx5.md)
+  Returns a new vector from the specified vector of 64-bit, signed integer elements.
+- [simd_short](./simd_short-6hpp5.md)
+  Returns a new vector from the specified vector of 64-bit, unsigned integer elements.
+- [simd_short](./simd_short-6hswh.md)
+  Returns a new vector from the specified vector of 32-bit, floating-point elements.
+- [simd_short](./simd_short-6hsc9.md)
+  Returns a new vector from the specified vector of 64-bit, floating-point elements.
+### Functions to Perform Saturating Conversion From Vectors of Other Types
+- [simd_short_sat](./simd_short_sat-3ixry.md)
+  Returns a new vector from the specified vector of 8-bit, signed integer elements.
+- [simd_short_sat](./simd_short_sat-3j7lq.md)
+  Returns a new vector from the specified vector of 8-bit, unsigned integer elements.
+- [simd_short_sat](./simd_short_sat-3j2pq.md)
+  Returns a new vector from the specified vector of 16-bit, signed integer elements.
+- [simd_short_sat](./simd_short_sat-3jcji.md)
+  Returns a new vector from the specified vector of 16-bit, unsigned integer elements
+- [simd_short_sat](./simd_short_sat-3izgq.md)
+  Returns a new vector from the specified vector of 32-bit, signed integer elements.
+- [simd_short_sat](./simd_short_sat-3j9fu.md)
+  Returns a new vector from the specified vector of 32-bit, unsigned integer elements.
+- [simd_short_sat](./simd_short_sat-3iy1u.md)
+  Returns a new vector from the specified vector of 64-bit, signed integer elements.
+- [simd_short_sat](./simd_short_sat-3j7vm.md)
+  Returns a new vector from the specified vector of 64-bit, unsigned integer elements.
+- [simd_short_sat](./simd_short_sat-3j652.md)
+  Returns a new vector from the specified vector of 32-bit, floating-point elements.
+- [simd_short_sat](./simd_short_sat-3j5f6.md)
+  Returns a new vector from the specified vector of 64-bit, floating-point elements.
 
 ## See Also
 

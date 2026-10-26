@@ -37,6 +37,9 @@ An [`SCNBillboardConstraint`](./scnbillboardconstraint.md) object automatically 
 ### Constants
 - [struct SCNBillboardAxis](./scnbillboardaxis.md)
   Options for locking the orientation of nodes affected by a billboard constraint.
+### Creating a Billboard Constraint
+- [+ billboardConstraint](./scnbillboardconstraint/billboardconstraint.md)
+  Creates a new billboard constraint.
 
 ## Relationships
 

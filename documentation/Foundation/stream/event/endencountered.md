@@ -36,6 +36,8 @@ NSStreamEventEndEncountered
   The stream can accept bytes for writing.
 - [static var errorOccurred: Stream.Event](./erroroccurred.md)
   An error has occurred on the stream.
+- [NSStreamEventNone](../../nsstreamevent/nsstreameventnone.md)
+  No event has occurred.
 
 
 ---

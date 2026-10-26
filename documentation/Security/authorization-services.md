@@ -32,6 +32,8 @@ As shown in the image below, the Security Server is a daemon running in the oper
   The flags used to specify authorization options.
 - [typealias AuthorizationRef](./authorizationref.md)
   A pointer to an opaque authorization reference structure.
+- [kAuthorizationEmptyEnvironment](./kauthorizationemptyenvironment.md)
+  A constant you use in functions with an environment parameter if you have no environment data to provide.
 ### Authorization Items
 - [struct AuthorizationItem](./authorizationitem.md)
   A structure containing information about an authorization right or the authorization environment.
@@ -79,6 +81,11 @@ As shown in the image below, the Security Server is a daemon running in the oper
 ### Result Codes
 - [Authorization Services Result Codes](./authorization-services-result-codes.md)
   Recognize result codes specific to the authorization services API.
+### Executing with Root Privileges
+- [AuthorizationExecuteWithPrivileges](./authorizationexecutewithprivileges.md)
+  Runs an executable tool with root privileges.
+- [AuthorizationCopyPrivilegedReference](./authorizationcopyprivilegedreference.md)
+  Retrieves the authorization reference passed by the AuthorizationExecuteWithPrivileges function.
 
 ## See Also
 

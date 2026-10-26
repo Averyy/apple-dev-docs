@@ -65,10 +65,30 @@
       "file_path": "documentation/DeviceDiscoveryUI/dddevicepickerviewcontroller/init(browsedescriptor,parameters,access).md",
       "hash": "4da1b2f87fd2b040308dcfb7b3b82f1ac0d4531b005bf8f15726cf9e22debf97"
     },
+    "https://developer.apple.com/documentation/devicediscoveryui/dddevicepickerviewcontroller/initwithbrowsedescriptor:parameters:": {
+      "etag": "\"25a9-65d5608725d7f-df\"",
+      "file_path": "documentation/DeviceDiscoveryUI/dddevicepickerviewcontroller/initwithbrowsedescriptor_parameters_.md",
+      "hash": "94a7a1bfb0c73aedb20bf1aa695d9a2959fb14069a034971c17ed9adf846f886"
+    },
     "https://developer.apple.com/documentation/devicediscoveryui/dddevicepickerviewcontroller/issupported(_:using:)": {
       "etag": "\"322f-65d5608725d7f-df\"",
       "file_path": "documentation/DeviceDiscoveryUI/dddevicepickerviewcontroller/issupported(_,using).md",
       "hash": "263a5d9e9dd73f096135f22743889d8b6d146df477a8c25fce684e08390ba2a9"
+    },
+    "https://developer.apple.com/documentation/devicediscoveryui/dddevicepickerviewcontroller/issupportedforbrowsedescriptor:parameters:": {
+      "etag": "\"2808-65d5608725d7f-df\"",
+      "file_path": "documentation/DeviceDiscoveryUI/dddevicepickerviewcontroller/issupportedforbrowsedescriptor_parameters_.md",
+      "hash": "c783728cf77af9c662dd3c745f105cbeed4cce6b67ccd8be96b6e8e8cc446803"
+    },
+    "https://developer.apple.com/documentation/devicediscoveryui/dddevicepickerviewcontroller/setdevicepickercompletionhandler:": {
+      "etag": "\"25a4-65d5608725d7f-df\"",
+      "file_path": "documentation/DeviceDiscoveryUI/dddevicepickerviewcontroller/setdevicepickercompletionhandler_.md",
+      "hash": "996a27795617c174fd3f2ec7a244b0947b90d0150b0a331e1446022305948a32"
+    },
+    "https://developer.apple.com/documentation/devicediscoveryui/devicediscoveryui_extern": {
+      "etag": "\"aa7-65d5608725d7f-df\"",
+      "file_path": "documentation/DeviceDiscoveryUI/devicediscoveryui_extern.md",
+      "hash": "24f696dab28d225ba52a19b1f8bf21b92aee43cd755e5cde79f8a2b670b76898"
     },
     "https://developer.apple.com/documentation/devicediscoveryui/devicepairingview": {
       "etag": "\"2e56-65d5608725d7f-df\"",
@@ -170,10 +190,30 @@
       "file_path": "documentation/DeviceDiscoveryUI/dddevicepickerviewcontroller/init(browsedescriptor,parameters,access).md",
       "hash": "4da1b2f87fd2b040308dcfb7b3b82f1ac0d4531b005bf8f15726cf9e22debf97"
     },
+    "https://developer.apple.com/tutorials/data/documentation/devicediscoveryui/dddevicepickerviewcontroller/initwithbrowsedescriptor:parameters:.json": {
+      "etag": "\"25a9-65d5608725d7f-df\"",
+      "file_path": "documentation/DeviceDiscoveryUI/dddevicepickerviewcontroller/initwithbrowsedescriptor_parameters_.md",
+      "hash": "94a7a1bfb0c73aedb20bf1aa695d9a2959fb14069a034971c17ed9adf846f886"
+    },
     "https://developer.apple.com/tutorials/data/documentation/devicediscoveryui/dddevicepickerviewcontroller/issupported(_:using:).json": {
       "etag": "\"322f-65d5608725d7f-df\"",
       "file_path": "documentation/DeviceDiscoveryUI/dddevicepickerviewcontroller/issupported(_,using).md",
       "hash": "263a5d9e9dd73f096135f22743889d8b6d146df477a8c25fce684e08390ba2a9"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/devicediscoveryui/dddevicepickerviewcontroller/issupportedforbrowsedescriptor:parameters:.json": {
+      "etag": "\"2808-65d5608725d7f-df\"",
+      "file_path": "documentation/DeviceDiscoveryUI/dddevicepickerviewcontroller/issupportedforbrowsedescriptor_parameters_.md",
+      "hash": "c783728cf77af9c662dd3c745f105cbeed4cce6b67ccd8be96b6e8e8cc446803"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/devicediscoveryui/dddevicepickerviewcontroller/setdevicepickercompletionhandler:.json": {
+      "etag": "\"25a4-65d5608725d7f-df\"",
+      "file_path": "documentation/DeviceDiscoveryUI/dddevicepickerviewcontroller/setdevicepickercompletionhandler_.md",
+      "hash": "996a27795617c174fd3f2ec7a244b0947b90d0150b0a331e1446022305948a32"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/devicediscoveryui/devicediscoveryui_extern.json": {
+      "etag": "\"aa7-65d5608725d7f-df\"",
+      "file_path": "documentation/DeviceDiscoveryUI/devicediscoveryui_extern.md",
+      "hash": "24f696dab28d225ba52a19b1f8bf21b92aee43cd755e5cde79f8a2b670b76898"
     },
     "https://developer.apple.com/tutorials/data/documentation/devicediscoveryui/devicepairingview.json": {
       "etag": "\"2e56-65d5608725d7f-df\"",
@@ -213,8 +253,8 @@
   },
   "metadata": {
     "render": {
-      "version": 1
+      "version": 2
     },
-    "total_pages": 42
+    "total_pages": 50
   }
 }

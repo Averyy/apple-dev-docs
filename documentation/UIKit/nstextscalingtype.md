@@ -49,6 +49,12 @@ enum NSTextScalingType : NSInteger;
 ### Getting document-wide attributes
 - [Document reading option keys](./document-reading-option-keys.md)
   Keys for constructing an attributed string from data on disk.
+- [NSAttributedStringDocumentAttributeKey](./nsattributedstringdocumentattributekey.md)
+  The attributes you apply to an entire document.
+- [NSAttributedStringDocumentType](./nsattributedstringdocumenttype.md)
+  Constants for the document type document attribute key.
+- [NSTextLayoutSectionKey](./nstextlayoutsectionkey.md)
+  Constants for the text layout sections document attribute key.
 
 
 ---

@@ -23,6 +23,8 @@ static simd_int4 simd_make_int4(int x, int y, int z, int w);
   Returns a new vector with the first element set to a scalar value, and other elements set to zero.
 - [func simd_make_int4_undef(Int32) -> simd_int4](./simd_make_int4_undef%28_%29-2wt72.md)
   Returns a new vector with the first element set to a scalar value, and other elements undefined.
+- [vector4](./vector4-7j5gn.md)
+  Returns a new vector with the first element set to a scalar value, and other elements undefined.
 
 
 ---

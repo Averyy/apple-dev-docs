@@ -40,6 +40,9 @@ A pipeline state is the state of the graphics rendering pipeline, including shad
   An array of state data that describes how vertex attribute data is stored in memory and is mapped to arguments for a vertex shader function.
 - [var layouts: MTLVertexBufferLayoutDescriptorArray](./mtlvertexdescriptor/layouts.md)
   An array of state data that describes how data are fetched by a vertex shader function when rendering primitives.
+### Creating a new vertex descriptor
+- [+ vertexDescriptor](./mtlvertexdescriptor/vertexdescriptor.md)
+  Creates and returns a new vertex descriptor.
 
 ## Relationships
 

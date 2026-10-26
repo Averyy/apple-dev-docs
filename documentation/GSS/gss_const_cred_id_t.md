@@ -44,6 +44,16 @@ typedef const struct gss_cred_id_t_desc_struct * gss_const_cred_id_t;
   A pointer to an opaque type that you use to exchange a credential object with GSS-API functions.
 - [typealias gss_cred_usage_t](./gss_cred_usage_t.md)
   A credential usage value.
+- [GSS_C_CRED_PASSWORD](./gss_c_cred_password.md)
+  The value that indicates a password-based credential.
+- [GSS_C_CRED_CERTIFICATE](./gss_c_cred_certificate.md)
+  The value that indicates a certificate-based credential.
+- [GSS_C_CRED_SecIdentity](./gss_c_cred_secidentity.md)
+  The value that indicates a security identity-based credential.
+- [GSS_C_CRED_HEIMBASE](./gss_c_cred_heimbase.md)
+  The value that indicates a Heimdal-based credential.
+- [GSS_C_NO_CREDENTIAL](./gss_c_no_credential.md)
+  The value that indicates an empty credential object.
 
 
 ---

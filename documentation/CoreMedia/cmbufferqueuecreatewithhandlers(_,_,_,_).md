@@ -32,6 +32,8 @@ extern OSStatus CMBufferQueueCreateWithHandlers(CFAllocatorRef allocator, CMItem
   Creates a buffer queue with callbacks to inspect buffers.
 - [struct CMBufferCallbacks](./cmbuffercallbacks.md)
   A structure that stores the callbacks that perform buffer operations.
+- [CMBufferHandlers](./cmbufferhandlers.md)
+  A structure that stores the handlers that perform buffer operations.
 
 
 ---

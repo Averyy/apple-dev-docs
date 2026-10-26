@@ -30,6 +30,8 @@ init()
 ### Creating a Modify Subscriptions Operation
 - [convenience init(subscriptionsToSave: [CKSubscription]?, subscriptionIDsToDelete: [CKSubscription.ID]?)](./init%28subscriptionstosave,subscriptionidstodelete%29.md)
   Creates an operation for saving and deleting the specified subscriptions.
+- [- initWithSubscriptionsToSave:subscriptionIDsToDelete:](./initwithsubscriptionstosave_subscriptionidstodelete_.md)
+  Creates an operation for saving and deleting the specified subscriptions.
 
 
 ---

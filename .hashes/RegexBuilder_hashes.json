@@ -1356,7 +1356,7 @@
       "hash": "2ecb71daa52ecf940425bdffb910060b848a1a4f82028e8408b40236d1566a72"
     },
     "https://developer.apple.com/documentation/regexbuilder/regexcomponentbuilder/buildlimitedavailability(_:)-1l3rg": {
-      "etag": "\"2076-65d560e35851b\"",
+      "etag": "\"2076-65d560e35851b-df\"",
       "file_path": "documentation/RegexBuilder/regexcomponentbuilder/buildlimitedavailability(_)-1l3rg.md",
       "hash": "997af40ebe1bf81f952bd608288628ef00ec80593e8e5185159131a5dcb39547"
     },
@@ -3666,7 +3666,7 @@
       "hash": "2ecb71daa52ecf940425bdffb910060b848a1a4f82028e8408b40236d1566a72"
     },
     "https://developer.apple.com/tutorials/data/documentation/regexbuilder/regexcomponentbuilder/buildlimitedavailability(_:)-1l3rg.json": {
-      "etag": "\"2076-65d560e35851b\"",
+      "etag": "\"2076-65d560e35851b-df\"",
       "file_path": "documentation/RegexBuilder/regexcomponentbuilder/buildlimitedavailability(_)-1l3rg.md",
       "hash": "997af40ebe1bf81f952bd608288628ef00ec80593e8e5185159131a5dcb39547"
     },
@@ -4626,7 +4626,7 @@
       "swift": {}
     },
     "render": {
-      "version": 1
+      "version": 2
     },
     "total_pages": 924
   }

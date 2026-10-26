@@ -30,6 +30,8 @@ var pattern: String { get }
 ### Related Documentation
 - [init(pattern: String, options: NSRegularExpression.Options) throws](./init%28pattern,options%29.md)
   Returns an initialized NSRegularExpression instance with the specified regular expression pattern and options.
+- [+ regularExpressionWithPattern:options:error:](./regularexpressionwithpattern_options_error_.md)
+  Creates an NSRegularExpression instance with the specified regular expression pattern and options.
 ### Getting the Regular Expression and Options
 - [var options: NSRegularExpression.Options](./options-swift.property.md)
   Returns the options used when the regular expression option was created.

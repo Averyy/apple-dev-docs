@@ -47,6 +47,8 @@ The macOS printing system uses a PostScript Printer Description (PPD) file to de
   Obtains the localized name for a given paper.
 - [func PMPaperGetPrinterID(PMPaper, UnsafeMutablePointer<Unmanaged<CFString>?>) -> OSStatus](./api-1461737-pmpapergetprinterid.md)
   Obtains the printer ID of the printer to which a given paper corresponds.
+- [PMPaperGetName](./core_printing/api-1805534-pmpapergetname.md)
+  Obtains the name for a given paper.
 
 
 ---

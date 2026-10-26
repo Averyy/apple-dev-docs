@@ -83,6 +83,24 @@
   For sets of objects, but without retaining/releasing.
 - [let NSObjectMapValueCallBacks: NSMapTableValueCallBacks](./nsobjectmapvaluecallbacks.md)
   For values that are objects.
+- [NSNotAnIntMapKey](./nsnotanintmapkey.md)
+  Predefined `notAKeyMarker` for use with [`NSMapTableKeyCallBacks`](./nsmaptablekeycallbacks.md).
+- [NSNotAnIntegerMapKey](./nsnotanintegermapkey.md)
+  Predefined `notAKeyMarker` for use with [`NSMapTableKeyCallBacks`](./nsmaptablekeycallbacks.md).
+- [NSNotAPointerMapKey](./nsnotapointermapkey.md)
+  Predefined `notAKeyMarker` for use with [`NSMapTableKeyCallBacks`](./nsmaptablekeycallbacks.md).
+
+## See Also
+
+### Deprecated
+- [+ mapTableWithStrongToStrongObjects](./nsmaptable/maptablewithstrongtostrongobjects.md)
+  Returns a new map table object which has strong references to the keys and values.
+- [+ mapTableWithWeakToStrongObjects](./nsmaptable/maptablewithweaktostrongobjects.md)
+  Returns a new map table object which has weak references to the keys and strong references to the values.
+- [+ mapTableWithStrongToWeakObjects](./nsmaptable/maptablewithstrongtoweakobjects.md)
+  Returns a new map table object which has strong references to the keys and weak references to the values.
+- [+ mapTableWithWeakToWeakObjects](./nsmaptable/maptablewithweaktoweakobjects.md)
+  Returns a new map table object which has weak references to the keys and values.
 
 
 ---

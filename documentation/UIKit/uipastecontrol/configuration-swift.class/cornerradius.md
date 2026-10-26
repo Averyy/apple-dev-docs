@@ -31,6 +31,8 @@ Set this property to `0` for square edges. A nonzero value indicates rounded edg
 ### Shaping button corners
 - [var cornerStyle: UIButton.Configuration.CornerStyle](./cornerstyle.md)
   A shape for the button among a predetermined set of templates.
+- [cornerStyle](../../uipastecontrolconfiguration/cornerstyle.md)
+  A shape for the button among a predetermined set of templates.
 
 
 ---

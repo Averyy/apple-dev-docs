@@ -37,6 +37,8 @@ MLCComparisonOperationEqual
 - [MLCComparisonOperation.notEqual](./notequal.md)
 - [var debugDescription: String](./debugdescription.md)
   A textual description of the comparison operation, suitable for debugging.
+- [MLCComparisonOperationCount](./mlccomparisonoperationcount.md)
+  A number that represents the operation count.
 
 
 ---

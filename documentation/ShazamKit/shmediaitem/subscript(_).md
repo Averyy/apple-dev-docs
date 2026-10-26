@@ -42,6 +42,14 @@ The value of the property; otherwise, `nil`.
   An array of ranges that indicate the offsets within the reference signature that this media item describes.
 - [var frequencySkewRanges: [Range<Float>]](./frequencyskewranges-1j7d3.md)
   An array of ranges that indicate the frequency skews in the reference signature that this media item describes.
+- [- valueForProperty:](./valueforproperty_.md)
+  Accesses the property for the specified key for reading.
+- [timeRanges](./timeranges-43654.md)
+  An array of ranges that indicate the offsets within the reference signature that this media item describes.
+- [frequencySkewRanges](./frequencyskewranges-4yqx.md)
+  An array of ranges that indicate the frequency skews in the reference signature that this media item describes.
+- [SHRange](../shrange.md)
+  A half-open interval from a lower bound up to, but not including, an upper bound.
 
 
 ---

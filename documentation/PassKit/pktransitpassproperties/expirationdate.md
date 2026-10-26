@@ -37,6 +37,8 @@ Rules for expiry depend on the pass provider. The return value can be `nil` if t
   A Boolean value that indicates the pass issuer disabled the pass.
 - [var isBlacklisted: Bool](./isblacklisted.md)
   A Boolean value that indicates the transit pass issuer disabled the pass.
+- [blocked](./blocked.md)
+  A Boolean value that indicates the pass issuer disabled the pass.
 
 
 ---

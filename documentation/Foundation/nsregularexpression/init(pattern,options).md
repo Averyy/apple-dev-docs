@@ -40,6 +40,12 @@ An instance of `NSRegularExpression` for the specified regular expression and op
 - `pattern`: The regular expression pattern to compile.
 - `options`: The regular expression options that are applied to the expression during matching. See [`NSRegularExpression.Options`](./options-swift.struct.md) for possible values.
 
+## See Also
+
+### Related Documentation
+- [+ regularExpressionWithPattern:options:error:](./regularexpressionwithpattern_options_error_.md)
+  Creates an NSRegularExpression instance with the specified regular expression pattern and options.
+
 
 ---
 

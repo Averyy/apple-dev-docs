@@ -27,6 +27,8 @@ enum ASAuthorizationProviderExtensionSupportedGrantTypes : NSInteger;
 - [static var saml1_1: ASAuthorizationProviderExtensionSupportedGrantTypes](./asauthorizationproviderextensionsupportedgranttypes/saml1_1.md)
 - [static var saml2_0: ASAuthorizationProviderExtensionSupportedGrantTypes](./asauthorizationproviderextensionsupportedgranttypes/saml2_0.md)
 - [static var tokenExchange: ASAuthorizationProviderExtensionSupportedGrantTypes](./asauthorizationproviderextensionsupportedgranttypes/tokenexchange.md)
+### Constants
+- [ASAuthorizationProviderExtensionSupportedGrantTypesNone](./asauthorizationproviderextensionsupportedgranttypes/asauthorizationproviderextensionsupportedgranttypesnone.md)
 
 ## Relationships
 
@@ -51,6 +53,10 @@ enum ASAuthorizationProviderExtensionSupportedGrantTypes : NSInteger;
   The defined identity types for use in retrieving credentials.
 - [enum ASPublicKeyCredentialClientDataCrossOriginValue](./aspublickeycredentialclientdatacrossoriginvalue.md)
 - [enum ASUserAgeRange](./asuseragerange.md)
+- [ASAuthorizationPublicKeyCredentialLargeBlobAssertionOperation](./asauthorizationpublickeycredentiallargeblobassertionoperation.md)
+  A type that represents the operation of the large blob assertion.
+- [ASAuthorizationPublicKeyCredentialLargeBlobSupportRequirement](./asauthorizationpublickeycredentiallargeblobsupportrequirement.md)
+  An enumeration of large binary object support requirement values.
 
 
 ---

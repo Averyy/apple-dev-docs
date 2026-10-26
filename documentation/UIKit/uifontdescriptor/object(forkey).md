@@ -47,6 +47,9 @@ The font attribute corresponding to `anAttribute`. For valid values of `anAttrib
   The traits of the font descriptor.
 - [UIFontDescriptor.SymbolicTraits](./symbolictraits-swift.struct.md)
   Constants that describe the stylistic aspects of a font.
+### Related Documentation
+- [+ fontDescriptorWithFontAttributes:](./fontdescriptorwithfontattributes_.md)
+  Returns a font descriptor with a dictionary of attributes.
 
 
 ---

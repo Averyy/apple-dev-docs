@@ -46,6 +46,8 @@ NSApplicationPresentationHideDock
   When in fullscreen mode the window toolbar is detached from window and hides and shows with autoHidden menuBar.
 - [static var disableCursorLocationAssistance: NSApplication.PresentationOptions](./disablecursorlocationassistance.md)
   The behavior that allows the user to shake the mouse to locate the cursor is disabled.
+- [NSApplicationPresentationDefault](../../nsapplicationpresentationoptions/nsapplicationpresentationdefault.md)
+  This is the default presentation mode.
 
 
 ---

@@ -57,6 +57,10 @@ If you specify the `kAuthorizationFlagInteractionAllowed` mask and the user canc
 ### Authorizing rights
 - [func obtain(withRight: AuthorizationString!, flags: AuthorizationFlags) throws](./obtain%28withright,flags%29.md)
   Authorizes and preauthorizes one specific right.
+- [- permitWithRights:flags:environment:authorizedRights:](./permitwithrights_flags_environment_authorizedrights_.md)
+  Authorizes and preauthorizes rights to access a privileged operation and returns the granted rights.
+- [- permitWithRight:flags:](./permitwithright_flags_.md)
+  Authorizes and preauthorizes one specific right.
 
 
 ---

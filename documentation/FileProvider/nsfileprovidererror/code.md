@@ -73,6 +73,8 @@ enum NSFileProviderErrorCode : NSInteger;
 ### Enumeration Cases
 - [NSFileProviderError.Code.localVersionConflictingWithServer](./code/localversionconflictingwithserver.md)
   Returned by createItemBasedOnTemplate or modifyItem if the provider does not wish to sync the item.
+- [NSFileProviderErrorPageExpired](../nsfileprovidererrorcode/nsfileprovidererrorpageexpired.md)
+  An error indicating that the page is too old, and that the system must restart the enumeration operation from the beginning.
 ### Initializers
 - [init?(rawValue: Int)](./code/init%28rawvalue%29.md)
 

@@ -45,6 +45,8 @@ The receiver returns itself after setting its size and data buffer to zero. You 
   Initializes a newly allocated bitmap image representation from the specified data.
 - [init?(focusedViewRect: NSRect)](./init%28focusedviewrect%29.md)
   Initializes a newly allocated bitmap image representation with bitmap data from a rendered image.
+- [+ imageRepWithData:](./imagerepwithdata_.md)
+  Creates and returns a bitmap image representation with the first image in the specified data.
 
 
 ---

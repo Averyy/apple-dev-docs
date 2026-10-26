@@ -26,6 +26,12 @@ init(kind: String, extensionBundleIdentifier: String, intent: INIntent, localize
 - `intent`: A SiriKit intent that provides additional configuration information to your WidgetKit complication.
 - `localizedDisplayName`: A localized name for the complication.
 
+## See Also
+
+### Creating Intent widget configurations
+- [+ intentWidgetMigrationConfigurationWithKind:extensionBundleIdentifier:intent:localizedDisplayName:](./intentwidgetmigrationconfigurationwithkind_extensionbundleidentifier_intent_localizeddisplayname_.md)
+  Creates an object that describes an intents-based watchOS complication in your WidgetKit extension.
+
 
 ---
 

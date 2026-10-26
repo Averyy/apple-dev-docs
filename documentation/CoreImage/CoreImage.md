@@ -165,6 +165,29 @@ You can also create new effects with custom filters and image processors; see [C
   The protocol for the Signed Distance Gradient From Red Mask filter.
 ### Reference
 - [Core Image Constants](./core-image-constants.md)
+### Variables
+- [kCIContextCVMetalTextureCache](./cicontextoption/cvmetaltexturecache.md)
+  A Core Video Metal texture cache object to improve the performance of Core Image context renders that use Core Video pixel buffers.
+- [kCIFormatRGBX8](./ciformat/rgbx8.md)
+- [kCIImageApplyCleanAperture](./ciimageoption/applycleanaperture.md)
+  A Boolean value to control whether an image created with a CVPixelBuffer or an IOSurface should be cropped and offset according clean aperture attachments.
+- [kCIImageContentAverageLightLevel](./ciimageoption/contentaveragelightlevel.md)
+  A value for overriding the automatic behavior of the Content Average Light Level property when creating an image.
+- [kCIImageSubsampleFactor](./ciimageoption/subsamplefactor.md)
+  The factor by which to scale down a returned images.
+- [kCIImageTypeIdentifierHint](./ciimageoption/typeidentifierhint.md)
+  The uniform type identifier string to use in cases where a file’s format cannot be conclusively determined based solely on its contents.
+- [kCIImageUseHardwareAcceleration](./ciimageoption/usehardwareacceleration.md)
+  A Boolean value specifying that using hardware is preferred when decoding.
+- [kCIImageRepresentationHDRGainMapAsRGB](./ciimagerepresentationoption/hdrgainmapasrgb.md)
+  An optional key and value to request the gain map channel to be color instead of monochrome.
+- [kCIImageRepresentationHDRGainMapImage](./ciimagerepresentationoption/hdrgainmapimage.md)
+  An optional key and value to save a gain map channel to a JPEG or HEIF.
+- [CIRAWDecoderVersion9](./cirawdecoderversion/version9.md)
+- [CIRAWDecoderVersion9DNG](./cirawdecoderversion/version9dng.md)
+### Macros
+- [CI_EXTERN_C_BEGIN](./ci_extern_c_begin.md)
+- [CI_EXTERN_C_END](./ci_extern_c_end.md)
 
 ## See Also
 

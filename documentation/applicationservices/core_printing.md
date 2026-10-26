@@ -43,6 +43,18 @@ In Cocoa applications, Core Printing can be used to extend the functionality in 
   Creates a data representation of a page format object.
 - [func PMPageFormatCreateWithDataRepresentation(CFData, UnsafeMutablePointer<PMPageFormat?>) -> OSStatus](./api-1462876-pmpageformatcreatewithdatarepres.md)
   Creates a page format object from a data representation.
+- [PMFlattenPageFormat](./core_printing/api-1805421-pmflattenpageformat.md)
+  Flattens a page format object into a Memory Manager handle for storage in a user document.
+- [PMFlattenPageFormatToCFData](./core_printing/api-1805425-pmflattenpageformattocfdata.md)
+  Flattens a page format object into a Core Foundation data object for storage in a user document.
+- [PMFlattenPageFormatToURL](./core_printing/api-1805429-pmflattenpageformattourl.md)
+  Flattens a page format object into a file for storage in a user document.
+- [PMUnflattenPageFormat](./core_printing/api-1805434-pmunflattenpageformat.md)
+  Rebuilds a page format object from a Memory Manager handle that contains flattened page format data.
+- [PMUnflattenPageFormatWithCFData](./core_printing/api-1805439-pmunflattenpageformatwithcfdata.md)
+  Rebuilds a page format object from a Core Foundation data object that contains flattened page format data.
+- [PMUnflattenPageFormatWithURL](./core_printing/api-1805441-pmunflattenpageformatwithurl.md)
+  Rebuilds a page format object from a file system URL that contains flattened page format data.
 ### Accessing Data in Page Format Objects
 - [func PMGetPageFormatExtendedData(PMPageFormat, OSType, UnsafeMutablePointer<UInt32>?, UnsafeMutableRawPointer?) -> OSStatus](./api-1464455-pmgetpageformatextendeddata.md)
   Obtains extended page format data previously stored by your application.
@@ -68,6 +80,14 @@ In Cocoa applications, Core Printing can be used to extend the functionality in 
   Obtains the imageable area or page rectangle, unaffected by orientation, resolution, or scaling.
 - [func PMGetUnadjustedPaperRect(PMPageFormat, UnsafeMutablePointer<PMRect>) -> OSStatus](./api-1462939-pmgetunadjustedpaperrect.md)
   Obtains the paper rectangle, unaffected by rotation, resolution, or scaling.
+- [PMGetResolution](./core_printing/api-1805451-pmgetresolution.md)
+  Obtains the current application’s drawing resolution.
+- [PMSetResolution](./core_printing/api-1805452-pmsetresolution.md)
+  Sets the application drawing resolution.
+- [PMSetAdjustedPageRect](./core_printing/api-1805455-pmsetadjustedpagerect.md)
+  Requests a particular page size, adjusted for the current rotation, resolution, or scaling settings.
+- [PMSetUnadjustedPaperRect](./core_printing/api-1805459-pmsetunadjustedpaperrect.md)
+  Requests a particular paper size, unaffected by rotation, resolution, or scaling.
 ### Creating and Using Print Settings Objects
 - [func PMCreatePrintSettings(UnsafeMutablePointer<PMPrintSettings?>) -> OSStatus](./api-1463239-pmcreateprintsettings.md)
   Creates a new print settings object.
@@ -85,6 +105,18 @@ In Cocoa applications, Core Printing can be used to extend the functionality in 
   Converts print settings into a CUPS options string.
 - [func PMPrintSettingsToOptionsWithPrinterAndPageFormat(PMPrintSettings, PMPrinter, PMPageFormat?, UnsafeMutablePointer<UnsafeMutablePointer<CChar>?>) -> OSStatus](./api-1459435-pmprintsettingstooptionswithprin.md)
   Converts print settings and page format data into a CUPS options string for a specified printer.
+- [PMFlattenPrintSettings](./core_printing/api-1805469-pmflattenprintsettings.md)
+  Flattens a print settings object into a Memory Manager handle for storage in a user document.
+- [PMFlattenPrintSettingsToCFData](./core_printing/api-1805472-pmflattenprintsettingstocfdata.md)
+  Flattens a print settings object into a Core Foundation data object for storage in a user document.
+- [PMFlattenPrintSettingsToURL](./core_printing/api-1805473-pmflattenprintsettingstourl.md)
+  Flattens a print settings object into a URL for storage in a user document.
+- [PMUnflattenPrintSettings](./core_printing/api-1805476-pmunflattenprintsettings.md)
+  Rebuilds a print settings object from a Memory Manager handle that contains flattened print settings data.
+- [PMUnflattenPrintSettingsWithCFData](./core_printing/api-1805479-pmunflattenprintsettingswithcfda.md)
+  Rebuilds a print settings object from a Core Foundation data object that contains flattened print settings data.
+- [PMUnflattenPrintSettingsWithURL](./core_printing/api-1805481-pmunflattenprintsettingswithurl.md)
+  Rebuilds a print settings object from a file that contains flattened print settings data.
 ### Accessing Data in Print Settings Objects
 - [func PMGetFirstPage(PMPrintSettings, UnsafeMutablePointer<UInt32>) -> OSStatus](./api-1460271-pmgetfirstpage.md)
   Obtains the number of the first page to be printed.
@@ -122,6 +154,14 @@ In Cocoa applications, Core Printing can be used to extend the functionality in 
   Creates a dictionary that contains the settings in a print settings object.
 - [func PMPrintSettingsCopyKeys(PMPrintSettings, UnsafeMutablePointer<Unmanaged<CFArray>?>) -> OSStatus](./api-1462730-pmprintsettingscopykeys.md)
   Obtains the keys for items in a print settings object.
+- [PMGetPrintSettingsExtendedData](./core_printing/api-1805488-pmgetprintsettingsextendeddata.md)
+  Obtains extended print settings data previously stored by your application.
+- [PMSetPrintSettingsExtendedData](./core_printing/api-1805491-pmsetprintsettingsextendeddata.md)
+  Stores your application-specific data in a print settings object.
+- [PMGetJobNameCFString](./core_printing/api-1805513-pmgetjobnamecfstring.md)
+  Obtains the name of the print job.
+- [PMSetJobNameCFString](./core_printing/api-1805515-pmsetjobnamecfstring.md)
+  Specifies the name of a print job.
 ### Creating Printing Session Objects
 - [func PMCreateSession(UnsafeMutablePointer<PMPrintSession?>) -> OSStatus](./api-1463247-pmcreatesession.md)
   Creates and initializes a printing session object and creates a context for printing operations.
@@ -140,6 +180,16 @@ In Cocoa applications, Core Printing can be used to extend the functionality in 
   Obtains the result code for any error returned by the printing session. 
 - [func PMSessionSetError(PMPrintSession, OSStatus) -> OSStatus](./api-1460216-pmsessionseterror.md)
   Sets the value of the current result code for the specified printing session.
+- [PMSessionSetCurrentPrinter](./core_printing/api-1805523-pmsessionsetcurrentprinter.md)
+  Changes the current printer for a printing session to a printer specified by name.
+- [PMSessionGetDocumentFormatGeneration](./core_printing/api-1805525-pmsessiongetdocumentformatgenera.md)
+  Obtains the spool file formats that can be generated for the specified printing session.
+- [PMSessionSetDocumentFormatGeneration](./core_printing/api-1805527-pmsessionsetdocumentformatgenera.md)
+  Requests a specified spool file format and supplies the graphics context type to use for drawing pages within the print loop.
+- [PMSessionGetGraphicsContext](./core_printing/api-1805529-pmsessiongetgraphicscontext.md)
+  Obtains the graphics context for the current page in a printing session.
+- [PMSessionGeneral](./core_printing/api-1805530-pmsessiongeneral.md)
+  Maintains compatibility with the `PrGeneral` function in the classic Printing Manager.
 ### Using Printer Presets
 - [func PMPresetCopyName(PMPreset, UnsafeMutablePointer<Unmanaged<CFString>?>) -> OSStatus](./api-1460343-pmpresetcopyname.md)
   Obtains the localized name for a preset.
@@ -152,6 +202,8 @@ In Cocoa applications, Core Printing can be used to extend the functionality in 
   Creates a custom paper object.
 - [func PMPaperIsCustom(PMPaper) -> Bool](./api-1459526-pmpaperiscustom.md)
   Returns a Boolean value indicating whether a specified paper is a custom paper.
+- [PMPaperCreate](./core_printing/api-1805531-pmpapercreate.md)
+  Creates a paper object.
 ### Accessing Data in Paper Objects
 - [func PMPaperGetID(PMPaper, UnsafeMutablePointer<Unmanaged<CFString>?>) -> OSStatus](./api-1462910-pmpapergetid.md)
   Obtains the identifier of a paper object.
@@ -167,6 +219,8 @@ In Cocoa applications, Core Printing can be used to extend the functionality in 
   Obtains the printer ID of the printer to which a given paper corresponds.
 - [func PMPaperGetPPDPaperName(PMPaper, UnsafeMutablePointer<Unmanaged<CFString>?>) -> OSStatus](./api-1461039-pmpapergetppdpapername.md)
   Obtains the PPD paper name for a given paper.
+- [PMPaperGetName](./core_printing/api-1805534-pmpapergetname.md)
+  Obtains the name for a given paper.
 ### Print Loop Functions
 - [func PMSessionBeginCGDocumentNoDialog(PMPrintSession, PMPrintSettings, PMPageFormat) -> OSStatus](./api-1460101-pmsessionbegincgdocumentnodialog.md)
   Begins a print job that draws into a Quartz graphics context and suppresses the printing status dialog.
@@ -176,6 +230,10 @@ In Cocoa applications, Core Printing can be used to extend the functionality in 
   Starts a new page for printing in the specified printing session and suppresses the printing status dialog.
 - [func PMSessionEndPageNoDialog(PMPrintSession) -> OSStatus](./api-1462014-pmsessionendpagenodialog.md)
   Indicates the end of drawing the current page for the specified printing session.
+- [PMSessionBeginDocumentNoDialog](./core_printing/api-1805538-pmsessionbegindocumentnodialog.md)
+  Begins a print job that, by default, draws into a QuickDraw graphics port, and suppresses the printing status dialog.
+- [PMSessionSetIdleProc](./core_printing/api-1805540-pmsessionsetidleproc.md)
+  Installs an idle callback function in your print loop.
 ### Accessing the Print Job Destination
 - [func PMSessionSetDestination(PMPrintSession, PMPrintSettings, PMDestinationType, CFString?, CFURL?) -> OSStatus](./api-1459855-pmsessionsetdestination.md)
   Sets the destination location, format, and type for a print job.
@@ -245,6 +303,16 @@ In Cocoa applications, Core Printing can be used to extend the functionality in 
   Determines whether a printer is a PostScript printer.
 - [func PMPrinterIsRemote(PMPrinter, UnsafeMutablePointer<DarwinBoolean>) -> OSStatus](./api-1461377-pmprinterisremote.md)
   Indicates whether a printer is hosted by a remote print server.
+- [PMPrinterGetDescriptionURL](./core_printing/api-1805546-pmprintergetdescriptionurl.md)
+  Obtains a reference to the specified printer’s description file.
+- [PMPrinterGetDeviceURI](./core_printing/api-1805547-pmprintergetdeviceuri.md)
+  Obtains a copy of a printer's device URI.
+- [PMPrinterGetDriverReleaseInfo](./api-1464149-pmprintergetdriverreleaseinfo.md)
+  Obtains version information for the driver associated with the specified printer.
+- [PMPrinterGetLanguageInfo](./api-1458956-pmprintergetlanguageinfo.md)
+  Obtains information about the imaging language for the specified printer.
+- [PMPrinterGetPrinterResolution](./core_printing/api-1805554-pmprintergetprinterresolution.md)
+  Obtains a resolution setting for the specified printer.
 ### Submitting a Print Job to a Printer
 - [func PMPrinterPrintWithFile(PMPrinter, PMPrintSettings, PMPageFormat?, CFString?, CFURL) -> OSStatus](./api-1464600-pmprinterprintwithfile.md)
   Submits a print job to a specified printer using a file that contains print data.
@@ -262,6 +330,18 @@ In Cocoa applications, Core Printing can be used to extend the functionality in 
   Creates an image that references both the PostScript contents of EPS data and a preview (proxy) image for the data.
 - [func PMPrinterWritePostScriptToURL(PMPrinter, PMPrintSettings, PMPageFormat?, CFString?, CFURL, CFURL) -> OSStatus](./api-1459729-pmprinterwritepostscripttourl.md)
   Converts an input file of the specified MIME type to printer-ready PostScript for a destination printer.
+- [PMSessionPostScriptBegin](./core_printing/api-1805591-pmsessionpostscriptbegin.md)
+  Puts the current printer driver into PostScript mode, ready to accept PostScript data instead of QuickDraw data.
+- [PMSessionPostScriptData](./core_printing/api-1805595-pmsessionpostscriptdata.md)
+  Passes PostScript data, referenced by a pointer, to the current printer driver.
+- [PMSessionPostScriptEnd](./core_printing/api-1805601-pmsessionpostscriptend.md)
+  Restores the current driver to QuickDraw mode, ready to accept QuickDraw data instead of PostScript data.
+- [PMSessionPostScriptFile](./core_printing/api-1805604-pmsessionpostscriptfile.md)
+  Passes the PostScript data, contained in a file, to the current printer driver.
+- [PMSessionPostScriptHandle](./core_printing/api-1805605-pmsessionpostscripthandle.md)
+  Passes the PostScript data, referenced by a Memory Manager handle, to the current printer driver.
+- [PMSessionSetPSInjectionData](./core_printing/api-1805610-pmsessionsetpsinjectiondata.md)
+  Specifies a set of PostScript code injection points and the PostScript data to be injected.
 ### Using PDF Workflow Items
 - [func PMWorkflowCopyItems(UnsafeMutablePointer<Unmanaged<CFArray>?>) -> OSStatus](./api-1459914-pmworkflowcopyitems.md)
   Obtains an array of the available PDF workflow items.
@@ -288,6 +368,20 @@ In Cocoa applications, Core Printing can be used to extend the functionality in 
   An opaque type that stores the settings in the Print dialog.
 - [typealias PMServer](./pmserver.md)
   An opaque type that identifies a local or remote print server.
+- [PMDialog](./core_printing/pmdialog.md)
+  An opaque type that represents a custom printing dialog.
+- [PMIdleUPP](./core_printing/pmidleupp.md)
+  A type that defines a universal procedure pointer to an idle callback.
+- [PMLanguageInfo](./core_printing/pmlanguageinfo.md)
+  A data structure that contains level, version, and release information for the imaging language used by a printer driver.
+- [PMRect](./core_printing/pmrect.md)
+  A data structure that describes a rectangle using four double-precision coordinates.
+- [PMResolution](./core_printing/pmresolution.md)
+  A data structure that contains printing resolution information.
+- [PMPrintContext](./core_printing/pmprintcontext.md)
+  An opaque type that describes the graphics environment for printing a document.
+- [PMColorMode](./core_printing/pmcolormode.md)
+  A type that specifies color modes to use for printing.
 ### Constants
 - [struct PMDataFormat](./pmdataformat.md)
   Constants that specify the format of the data representation created with the functions [`PMPageFormatCreateDataRepresentation(_:_:_:)`](./api-1464227-pmpageformatcreatedatarepresenta.md) and [`PMPrintSettingsCreateDataRepresentation(_:_:_:)`](./api-1464570-pmprintsettingscreatedatareprese.md).
@@ -311,6 +405,30 @@ In Cocoa applications, Core Printing can be used to extend the functionality in 
   Constants that specify printer description types.
 - [User Cancellation Constant](./core_printing/api-1506795-user_cancellation_constant.md)
   A constant that specifies an error value that indicates the user canceled a printing operation.
+- [Data Not Wanted Constants](./core_printing/data_not_wanted_constants.md)
+  Constants your application can use to indicate it does not need certain types of data returned by various printing functions.
+- [Document Format Strings](./core_printing/document_format_strings.md)
+  Constants that specify the document format for a print job.
+- [Graphics Context Types](./core_printing/graphics_context_types.md)
+  Constants that specify the graphics context for a print job.
+- [PostScript Injection Dictionary Keys](./core_printing/postscript_injection_dictionary_keys.md)
+  Constants that specify keys for PostScript injection dictionary entries.
+- [PostScript Page Injection Options](./core_printing/postscript_page_injection_options.md)
+  Constants that specify PostScript injection options.
+- [PostScript Injection Placement Options](./core_printing/postscript_injection_placement_options.md)
+  Constants that specify where in the print job to inject PostScript code.
+- [PostScript Injection Sections](./core_printing/postscript_injection_sections.md)
+  Constants that specify keys for PostScript injection section values.
+- [PostScript Injection Subsections](./core_printing/postscript_injection_subsections.md)
+  Constants that specify PostScript injection values for the subsection key.
+- [Print All Pages Constant](./api-1506768-print_all_pages_constant.md)
+  A constant that specifies that all pages of a document should be printed.
+- [Tag Constants](./core_printing/tag_constants.md)
+  Constants that specify values, such as minimum and maximum values, that your application can pass to or obtain from printing functions.
+- [User Cancellation Constant](./api-1506795-user_cancellation_constant.md)
+  A constant that specifies an error value that indicates the user canceled a printing operation.
+- [Color Modes](./core_printing/color_modes.md)
+  Constants that specify a color mode to use for printing.
 ### Result Codes
 - [var kPMGeneralError: Int](./kpmgeneralerror.md)
   An unspecified error occurred.
@@ -370,6 +488,169 @@ In Cocoa applications, Core Printing can be used to extend the functionality in 
   The dictionary specifying a printer calibration target is invalid.
 - [var kPMInvalidPreset: Int](./kpminvalidpreset.md)
   Your application passed an invalid preset object.
+- [kPMGeneralError](./api-1506722-anonymous/kpmgeneralerror.md)
+  An unspecified error occurred.
+- [kPMOutOfScope](./api-1506722-anonymous/kpmoutofscope.md)
+  Your application called this function out of sequence with other printing functions.
+- [kPMNoDefaultPrinter](./api-1506722-anonymous/kpmnodefaultprinter.md)
+  The user has not specified a default printer.
+- [kPMNotImplemented](./api-1506722-anonymous/kpmnotimplemented.md)
+  The function is not implemented.
+- [kPMNoSuchEntry](./api-1506722-anonymous/kpmnosuchentry.md)
+  There is no entry to match your application’s request.
+- [kPMInvalidPrintSettings](./api-1506722-anonymous/kpminvalidprintsettings.md)
+  Your application passed an invalid print settings object.
+- [kPMInvalidPageFormat](./api-1506722-anonymous/kpminvalidpageformat.md)
+  Your application passed an invalid page format object.
+- [kPMValueOutOfRange](./api-1506722-anonymous/kpmvalueoutofrange.md)
+  Your application passed an out-of-range value.
+- [kPMInvalidPrintSession](./api-1506800-anonymous/kpminvalidprintsession.md)
+  Your application passed an invalid printing session object.
+- [kPMInvalidPrinter](./api-1506800-anonymous/kpminvalidprinter.md)
+  Your application passed an invalid printer object.
+- [kPMObjectInUse](./api-1506800-anonymous/kpmobjectinuse.md)
+  The specified object is in use.
+- [kPMInvalidIndex](./api-1570866-anonymous/kpminvalidindex.md)
+  An array index is invalid.
+- [kPMStringConversionFailure](./api-1570866-anonymous/kpmstringconversionfailure.md)
+  An internal error occurred while converting a string.
+- [kPMXMLParseError](./api-1570866-anonymous/kpmxmlparseerror.md)
+  An error occurred while parsing XML data.
+- [kPMInvalidJobTemplate](./api-1570866-anonymous/kpminvalidjobtemplate.md)
+  An internal error occurred while creating a job template.
+- [kPMInvalidPrinterInfo](./api-1570866-anonymous/kpminvalidprinterinfo.md)
+  The printer information is invalid.
+- [kPMInvalidConnection](./api-1570866-anonymous/kpminvalidconnection.md)
+  The printer connection type is invalid.
+- [kPMInvalidKey](./api-1570866-anonymous/kpminvalidkey.md)
+  The key in a ticket, job template, or dictionary is invalid.
+- [kPMInvalidValue](./api-1570866-anonymous/kpminvalidvalue.md)
+  The value in a ticket, job template, or dictionary is missing.
+- [kPMInvalidAllocator](./api-1570866-anonymous/kpminvalidallocator.md)
+  The specified memory allocator is invalid.
+- [kPMInvalidTicket](./api-1570866-anonymous/kpminvalidticket.md)
+  The job ticket is invalid.
+- [kPMInvalidItem](./api-1570866-anonymous/kpminvaliditem.md)
+  The item being added to a ticket is invalid.
+- [kPMInvalidType](./api-1570866-anonymous/kpminvalidtype.md)
+  The data type in a ticket, job template, or dictionary is not the expected type.
+- [kPMInvalidReply](./api-1570866-anonymous/kpminvalidreply.md)
+  A remote server or client sent an invalid reply.
+- [kPMInvalidFileType](./api-1570866-anonymous/kpminvalidfiletype.md)
+  The file type is invalid.
+- [kPMInvalidObject](./api-1570866-anonymous/kpminvalidobject.md)
+  The object is invalid.
+- [kPMInvalidPaper](./api-1570866-anonymous/kpminvalidpaper.md)
+  Your application passed an invalid paper object.
+- [kPMInvalidCalibrationTarget](./api-1570866-anonymous/kpminvalidcalibrationtarget.md)
+  The dictionary specifying a printer calibration target is invalid.
+- [kPMInvalidPreset](./api-1506800-anonymous/kpminvalidpreset.md)
+  Your application passed an invalid preset object.
+### Matching Color With ColorSync
+- [PMSetProfile](./core_printing/api-1805614-pmsetprofile.md)
+  Embeds a color profile during printing.
+- [PMSessionEnableColorSync](./core_printing/api-1805617-pmsessionenablecolorsync.md)
+  Enables use of a custom ColorSync profile previously set by the function [PMSetProfile](./core_printing/api-1805614-pmsetprofile.md).
+- [PMSessionDisableColorSync](./core_printing/api-1805619-pmsessiondisablecolorsync.md)
+  Disables use of a custom ColorSync profile previously enabled by the function [PMSessionEnableColorSync](./core_printing/api-1805617-pmsessionenablecolorsync.md).
+### Converting and Saving Old Print Records
+- [PMSessionConvertOldPrintRecord](./core_printing/api-1805626-pmsessionconvertoldprintrecord.md)
+  Creates new page format and print settings objects from an old-style print record created for the classic Printing Manager.
+- [PMSessionMakeOldPrintRecord](./core_printing/api-1805631-pmsessionmakeoldprintrecord.md)
+  Creates an old-style print record from page format and print settings objects.
+### Creating, Calling, and Deleting Universal Procedure Pointers
+- [NewPMIdleUPP](./core_printing/api-1805635-newpmidleupp.md)
+  Creates a new universal procedure pointer (UPP) to an idle callback.
+- [InvokePMIdleUPP](./core_printing/api-1805637-invokepmidleupp.md)
+  Calls an idle callback.
+- [DisposePMIdleUPP](./core_printing/api-1805641-disposepmidleupp.md)
+  Disposes of a universal procedure pointer (UPP) to an idle callback.
+### Legacy Core Printing Functions
+- [PMBegin](./core_printing/api-1805644-pmbegin.md)
+  Prepares Core Printing for use.
+- [PMConvertOldPrintRecord](./core_printing/api-1805650-pmconvertoldprintrecord.md)
+  Creates a new `PMPageFormat` object and a new `PMPrintSettings` object from a print record created by the classic Printing Manager.
+- [PMDefaultPageFormat](./core_printing/api-1805655-pmdefaultpageformat.md)
+  Assigns default parameter values to an existing `PMPageFormat` object, for the current printer.
+- [PMDefaultPrintSettings](./core_printing/api-1805658-pmdefaultprintsettings.md)
+  Assigns default parameter values to a `PMPrintSettings` object.
+- [PMDisableColorSync](./core_printing/api-1805663-pmdisablecolorsync.md)
+  Disables ColorSync color matching for the current page.
+- [PMDisposePageFormat](./core_printing/api-1805665-pmdisposepageformat.md)
+  Releases memory previously allocated for a `PMPageFormat` object.
+- [PMDisposePrintSettings](./core_printing/api-1805670-pmdisposeprintsettings.md)
+  Releases memory previously allocated for a `PMPrintSettings` object.
+- [PMEnableColorSync](./core_printing/api-1805675-pmenablecolorsync.md)
+  Enables ColorSync color matching for the current page.
+- [PMEnd](./core_printing/api-1805679-pmend.md)
+  Closes Core Printing and releases its allocated memory.
+- [PMError](./core_printing/api-1805683-pmerror.md)
+  Obtains the result code from the last printing function called by your application.
+- [PMGeneral](./core_printing/api-1805686-pmgeneral.md)
+  Maintains compatibility with the `PrGeneral` function in the classic Printing Manager.
+- [PMGetDestination](./core_printing/api-1805692-pmgetdestination.md)
+  Obtains the output destination of a print job.
+- [PMGetDriverCreator](./core_printing/api-1805697-pmgetdrivercreator.md)
+  Obtains the creator of the driver associated with the current printer.
+- [PMGetDriverReleaseInfo](./core_printing/api-1805701-pmgetdriverreleaseinfo.md)
+  Obtains release information for the driver associated with the current printer.
+- [PMGetGrafPtr](./core_printing/api-1805707-pmgetgrafptr.md)
+  Obtains the printing port from an opaque printing context.
+- [PMGetIndexedPrinterResolution](./core_printing/api-1805712-pmgetindexedprinterresolution.md)
+  Obtains a resolution setting based on an index into the range of settings supported by the current printer.
+- [PMGetJobName](./core_printing/api-1805714-pmgetjobname.md)
+  Obtains the name of the print job.
+- [PMGetLanguageInfo](./core_printing/api-1805718-pmgetlanguageinfo.md)
+  Obtains information about the current printer’s imaging language.
+- [PMGetPhysicalPageSize](./core_printing/api-1805720-pmgetphysicalpagesize.md)
+  Obtains the size of the imageable area in points, unaffected by rotation, resolution, or scaling.
+- [PMGetPhysicalPaperSize](./core_printing/api-1805722-pmgetphysicalpapersize.md)
+  Obtains the size of the paper in points, unaffected by rotation, resolution, or scaling.
+- [PMGetPrinterResolution](./core_printing/api-1805726-pmgetprinterresolution.md)
+  Obtains the resolution setting for the current printer according to the tag parameter.
+- [PMGetPrinterResolutionCount](./core_printing/api-1805729-pmgetprinterresolutioncount.md)
+  Obtains the number of resolution settings supported by the current printer.
+- [PMIsPostScriptDriver](./core_printing/api-1805734-pmispostscriptdriver.md)
+  Reports whether the current printer driver supports the PostScript language.
+- [PMNewPageFormat](./core_printing/api-1805737-pmnewpageformat.md)
+  Creates a new `PMPageFormat` object.
+- [PMNewPrintSettings](./core_printing/api-1805743-pmnewprintsettings.md)
+  Creates a new `PMPrintSettings` object.
+- [PMMakeOldPrintRecord](./core_printing/api-1805745-pmmakeoldprintrecord.md)
+  Creates an old-style print record from a `PMPageFormat` and a `PMPrintSettings` object.
+- [PMPostScriptBegin](./core_printing/api-1805751-pmpostscriptbegin.md)
+  Puts the current driver into PostScript mode, ready to accept PostScript data instead of QuickDraw data.
+- [PMPostScriptData](./core_printing/api-1805754-pmpostscriptdata.md)
+  Passes PostScript data, referenced by a pointer, to the current printer driver.
+- [PMPostScriptEnd](./core_printing/api-1805759-pmpostscriptend.md)
+  Restores the current driver to QuickDraw mode, ready to accept QuickDraw data instead of PostScript data.
+- [PMPostScriptFile](./core_printing/api-1805762-pmpostscriptfile.md)
+  Passes PostScript data, contained in a file, to the current printer driver.
+- [PMPostScriptHandle](./core_printing/api-1805767-pmpostscripthandle.md)
+  Passes PostScript data, referenced by a handle, to the current printer driver.
+- [PMSessionGetDocumentFormatSupported](./core_printing/api-1805770-pmsessiongetdocumentformatsuppor.md)
+  Obtains the spool file formats that are accepted by the current printer driver.
+- [PMSessionIsDocumentFormatSupported](./core_printing/api-1805774-pmsessionisdocumentformatsupport.md)
+  Reports whether the current printer driver supports a specified spool file format.
+- [PMGetColorMode](./core_printing/api-1805779-pmgetcolormode.md)
+  Obtains the color mode for the print job.
+- [PMSetColorMode](./core_printing/api-1805783-pmsetcolormode.md)
+  Sets the desired color mode for the print job.
+- [PMSetError](./core_printing/api-1805784-pmseterror.md)
+  Sets the value of the current result code.
+- [PMSetIdleProc](./core_printing/api-1805789-pmsetidleproc.md)
+  Installs an idle callback function in your print loop.
+- [PMSetJobName](./core_printing/api-1805792-pmsetjobname.md)
+  Specifies the name of the print job.
+- [PMSetPhysicalPaperSize](./core_printing/api-1805794-pmsetphysicalpapersize.md)
+  Requests a particular paper size, unaffected by rotation, resolution, or scaling.
+- [PMValidatePageFormat](./core_printing/api-1805800-pmvalidatepageformat.md)
+  Obtains a valid `PMPageFormat` object.
+- [PMValidatePrintSettings](./core_printing/api-1805802-pmvalidateprintsettings.md)
+  Obtains a valid `PMPrintSettings` object.
+### Callbacks
+- [PMIdleProcPtr](./core_printing/pmidleprocptr.md)
+  Defines a pointer to an idle function. 
 
 
 ---

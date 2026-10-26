@@ -11,18 +11,18 @@ A *nested* component is a child of the parent component that contains it. The ch
 
 > 💡 **Tip**:  If you use an anchor to attach multiple children to the same side of their parent component, the children “stack” to create a cleanly aligned header. For information about using container components and anchors, see [Advanced Design Tutorial 2: Layout and Positioning](./apple-news-format-tutorials.md#Advanced-Design-Tutorial-2-Layout-and-Positioning).
 
-Many design and layout effects require you to use hierarchies of nested components. For example, you can create a layering effect by nesting content (such as a `title`) inside a parent component that has a background [`Fill`](https://developer.apple.com/documentation/applenewsformat/fill). Any content displayed by the parent — as well as any content from its child components — is layered in front of the parent’s background fill, as shown in this example.
+Many design and layout effects require you to use hierarchies of nested components. For example, you can create a layering effect by nesting content (such as a `title`) inside a parent component that has a background [`Fill`](../AppleNewsFormat/fill.md). Any content displayed by the parent — as well as any content from its child components — is layered in front of the parent’s background fill, as shown in this example.
 
 ![Screenshot of an article with a header component that nests an image and a caption.](https://developer.apple.com/tutorials/images/com.apple.applenews/media-4085703@2x.png)
 
 Apple News Format has several container components that allow you to nest other components within them:
 
-- [`Chapter`](https://developer.apple.com/documentation/applenewsformat/chapter)
-- [`Header`](https://developer.apple.com/documentation/applenewsformat/header)
-- [`Section`](https://developer.apple.com/documentation/applenewsformat/section)
-- [`Container`](https://developer.apple.com/documentation/applenewsformat/container)
+- [`Chapter`](../AppleNewsFormat/chapter.md)
+- [`Header`](../AppleNewsFormat/header.md)
+- [`Section`](../AppleNewsFormat/section.md)
+- [`Container`](../AppleNewsFormat/container.md)
 
-The [`Aside`](https://developer.apple.com/documentation/applenewsformat/aside) component also lets you nest other components, but generally contains content that isn’t directly related to your article.
+The [`Aside`](../AppleNewsFormat/aside.md) component also lets you nest other components, but generally contains content that isn’t directly related to your article.
 
 The following example shows a section component with two child components (`title` and `photo`) defined in its components array.
 
@@ -68,29 +68,29 @@ All container components have a components property whose value is an array of c
   Link to an article by using the article-linking container component.
 - [Displaying Components Side By Side](./displaying-components-side-by-side.md)
   Configure a side-by-side, horizontal arrangement of components for your article.
-- [object Header](https://developer.apple.com/documentation/applenewsformat/header)
+- [object Header](../AppleNewsFormat/header.md)
   The component for defining the top area of an article, chapter, or section.
-- [object Container](https://developer.apple.com/documentation/applenewsformat/container)
+- [object Container](../AppleNewsFormat/container.md)
   Properties shared by all container types.
-- [object Section](https://developer.apple.com/documentation/applenewsformat/section)
+- [object Section](../AppleNewsFormat/section.md)
   The component for organizing an article into sections.
-- [object Chapter](https://developer.apple.com/documentation/applenewsformat/chapter)
+- [object Chapter](../AppleNewsFormat/chapter.md)
   The component for organizing an article into chapters.
-- [object Aside](https://developer.apple.com/documentation/applenewsformat/aside)
+- [object Aside](../AppleNewsFormat/aside.md)
   The component for setting apart content that is not directly related to the article, such as promotional content.
-- [object CollectionDisplay](https://developer.apple.com/documentation/applenewsformat/collectiondisplay)
+- [object CollectionDisplay](../AppleNewsFormat/collectiondisplay.md)
   An object used in any container component type to define how the collection of child components is presented.
-- [object HorizontalStackDisplay](https://developer.apple.com/documentation/applenewsformat/horizontalstackdisplay)
+- [object HorizontalStackDisplay](../AppleNewsFormat/horizontalstackdisplay.md)
   The object for displaying components side by side in a Container component.
-- [object FlexibleSpacer](https://developer.apple.com/documentation/applenewsformat/flexiblespacer)
+- [object FlexibleSpacer](../AppleNewsFormat/flexiblespacer.md)
   The component for redistributing empty space inside a horizontal stack collection.
-- [object Divider](https://developer.apple.com/documentation/applenewsformat/divider)
+- [object Divider](../AppleNewsFormat/divider.md)
   The component for defining a horizontal line to visually divide parts of your article.
-- [object ArticleLink](https://developer.apple.com/documentation/applenewsformat/articlelink)
+- [object ArticleLink](../AppleNewsFormat/articlelink.md)
   The container component for creating a link to an article.
-- [type SupportedArticleIdentifier](https://developer.apple.com/documentation/applenewsformat/supportedarticleidentifier)
+- [type SupportedArticleIdentifier](../AppleNewsFormat/supportedarticleidentifier.md)
   The patterns supported for article identifiers in UUID format.
-- [type PublisherArticleIdentifier](https://developer.apple.com/documentation/applenewsformat/publisherarticleidentifier)
+- [type PublisherArticleIdentifier](../AppleNewsFormat/publisherarticleidentifier.md)
   The identifier provided by the publisher.
 
 

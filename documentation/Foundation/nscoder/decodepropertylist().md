@@ -52,6 +52,8 @@ func decodePropertyList() -> Any?
   Decodes and returns an NSPoint structure that was previously encoded with [`encode(_:)`](./encode%28_%29-75jv4.md).
 - [func decodePoint(forKey: String) -> NSPoint](./decodepoint%28forkey%29.md)
   Decodes and returns an NSPoint structure that was previously encoded with [`encode(_:forKey:)`](./encode%28_,forkey%29-27lif.md).
+- [- decodeNXObject](./decodenxobject.md)
+  Decodes an object previously written with [`encodeNXObject:`](./encodenxobject_.md).
 
 
 ---

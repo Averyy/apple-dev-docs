@@ -11,6 +11,7 @@ Interact with operating system services, including user and group accounts and p
 - [Identity Services](./os_services/identity_services.md)
   Access the system's user and group database and manage access controls.
 - [Icon Storage](./os_services/icon_storage.md)
+- [Web Services](./os_services/web_services.md)
 
 
 ---

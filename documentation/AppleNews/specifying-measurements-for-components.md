@@ -143,7 +143,7 @@ This example creates a vertical margin that’s 50 percent of the left margin of
 - [Adding a Fixed Image Fill](./adding-a-fixed-image-fill.md)
   Add an image that remains stationary when the user scrolls.
 ### Component Measurements and Media Guidelines
-- [type SupportedUnits](https://developer.apple.com/documentation/applenewsformat/supportedunits)
+- [type SupportedUnits](../AppleNewsFormat/supportedunits.md)
   The units of measurement Apple News Format supports.
 - [Preparing Image, Video, Audio, Music, and ARKit Assets](./preparing-image-video-audio-music-and-arkit-assets.md)
   Add media assets to your article.

@@ -30,6 +30,8 @@ BEPhraseBoundaryChanged
   A flag that indicates whether a text selection is reversed or flipped in direction from its original direction.
 - [static var wordIsNearTap: BESelectionFlags](./wordisneartap.md)
   A flag that indicates whether a word resides near the person’s tap gesture.
+- [BESelectionFlagsNone](./beselectionflagsnone.md)
+  An option that indicates no active flags.
 
 
 ---

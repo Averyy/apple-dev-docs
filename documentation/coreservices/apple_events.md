@@ -187,6 +187,14 @@ When a script that targets an application is executed, commands are sent to the 
   Associates a keyword with a descriptor to form a keyword-specifieddescriptor.
 - [struct AERemoteProcessResolverContext](./aeremoteprocessresolvercontext.md)
   Supplied as a parameter when performing asynchronous resolutionof remote processes.
+- [AEBuildAppleEvent](./api-1573757-aebuildappleevent.md)
+  Constructs an entire Apple event in a single call.
+- [AEBuildDesc](./api-1573758-aebuilddesc.md)
+  Provides a facility for compiling AEBuild descriptor strings into Apple event descriptors (`AEDesc`).
+- [AEBuildParameters](./api-1573755-aebuildparameters.md)
+  Adds additional parameters or attributes to an existing Apple event.
+- [AEArrayData](./api-1443170-aearraydata.md)
+  Stores array information to be put into a descriptor listwith the `AEPutArray` functionor extracted from a descriptor list with the `AEGetArray` function.
 ### Constants
 - [let kAERemoteProcessNameKey: CFString!](./kaeremoteprocessnamekey.md)
   Use this key to obtain the visible name of the remote process, in the localization supplied by the server, as a `CFStringRef`.
@@ -355,6 +363,75 @@ When a script that targets an application is executed, commands are sent to the 
 - [Special Handler Callback Constants](./apple_events/api-1572726-special_handler_callback_constan.md)
   Specify an object callback function to install, get, or remove from the special handler dispatch table.
 - [Timeout Constants](./apple_events/api-1542814-timeout_constants.md)
+  Specify a timeout value.
+- [kAEDebugPOSTHeader](./api-1542854-kaedebugpostheader.md)
+- [kAEHandleArray](./api-1542886-kaehandlearray.md)
+- [kAEISGetURL](./api-1556362-kaeisgeturl.md)
+- [kAEISHTTPSearchArgs](./api-1556404-kaeishttpsearchargs.md)
+- [kAEInfo](./api-1556393-kaeinfo.md)
+- [kAEInternetSuite](./api-1556388-kaeinternetsuite.md)
+- [kAELogOut](./api-1556395-kaelogout.md)
+- [kAEMenuClass](./api-1556392-kaemenuclass.md)
+- [kAEMouseClass](./api-1556409-kaemouseclass.md)
+- [kAENonmodifiable](./api-1556386-kaenonmodifiable.md)
+- [kAEQDNotOr](./api-1556377-kaeqdnotor.md)
+- [kAESetPosition](./api-1556407-kaesetposition.md)
+- [kAESocks4Protocol](./api-1542847-kaesocks4protocol.md)
+- [kAEUTHasReturningParam](./api-1457911-kaeuthasreturningparam.md)
+- [kAEUseHTTPProxyAttr](./api-1542824-kaeusehttpproxyattr.md)
+  Web Services Proxy support—these constants should be added as attributes of the event that is being sent (not as part of the direct object).
+- [kAEUseSocksAttr](./api-1542933-kaeusesocksattr.md)
+- [kAEUserTerminology](./api-1457902-kaeuserterminology.md)
+- [kAEZoomIn](./api-1556365-kaezoomin.md)
+- [keyAEAngle](./api-1556380-keyaeangle.md)
+- [keyAEBaseAddr](./api-1556383-keyaebaseaddr.md)
+- [keyAEDoScale](./api-1556387-keyaedoscale.md)
+- [keyAEHiliteRange](./api-1556379-keyaehiliterange.md)
+- [keyAEKeyword](./api-1556374-keyaekeyword.md)
+- [keyAESuiteID](./api-1556370-keyaesuiteid.md)
+- [keyMenuID](./api-1556381-keymenuid.md)
+- [keyMiscellaneous](./api-1556399-keymiscellaneous.md)
+- [keyReplyPortAttr](./api-1571648-keyreplyportattr.md)
+- [keySOAPStructureMetaData](./api-1542797-keysoapstructuremetadata.md)
+- [keyUserNameAttr](./api-1542780-keyusernameattr.md)
+- [Apple Event Recording Event ID Constants](./api-1527224-apple_event_recording_event_id_c.md)
+  Specify event IDs for events that deal with Apple event recording.
+- [Callback Constants for the AEResolve Function](./api-1572741-callback_constants_for_the_aeres.md)
+  Specify supported callback features to the `AEResolve` function.
+- [Constants for Object Specifiers, Positions, and Logical and Comparison Operations](./api-1572744-constants_for_object_specifiers_.md)
+  Specify the types of the four keyword-specified descriptors that make up the data in an object specifier, as well as constants for position, logical operations, and comparison operations.
+- [Data Array Constants](./api-1542848-data_array_constants.md)
+  Specify an array type for storing or extracting descriptor lists with the `AEPutArray` and `AEGetArray` functions.
+- [Descriptor Type Constants](./api-1542788-descriptor_type_constants.md)
+  Specify types for descriptors.
+- [Event Class Constants](./api-1527210-event_class_constants.md)
+  Specify the event class for an Apple event.
+- [Event ID Constants](./api-1527223-event_id_constants.md)
+  Specify the event ID for an Apple event.
+- [Event Source Constants](./api-1527201-event_source_constants.md)
+  Identify how an Apple event was delivered.
+- [Factoring Constants](./api-1542928-factoring_constants.md)
+- [ID Constants for the AECreateAppleEvent Function](./api-1542799-id_constants_for_the_aecreateapp.md)
+  Specify values for the ID parameters of the `AECreateAppleEvent` function.
+- [Key Form and Descriptor Type Object Specifier Constants](./api-1572731-key_form_and_descriptor_type_obj.md)
+  Specify possible values for the `keyAEKeyForm` field of an object specifier, as well as descriptor types used in resolving object specifiers.
+- [Keyword Attribute Constants](./api-1542920-keyword_attribute_constants.md)
+  Specify keyword values for Apple event attributes.
+- [Keyword Parameter Constants](./api-1527206-keyword_parameter_constants.md)
+  Specify keyword values for Apple event parameters, as well as information for the `AEManagerInfo` function to retrieve. Some common key word values are shown here.
+- [Launch Apple Event Constants](./api-1556410-launch_apple_event_constants.md)
+  In a `kAEOpenApplication` event, specify information about how the receiving application was launched.
+- [Numeric Descriptor Type Constants](./api-1542872-numeric_descriptor_type_constant.md)
+  Specify types for numeric descriptors.
+- [Object Class ID Constants](./api-1556368-object_class_id_constants.md)
+  Specify the object class for an Apple event object.
+- [Other Descriptor Type Constants](./api-1542760-other_descriptor_type_constants.md)
+  Specify types for Boolean and character descriptors.
+- [Priority Constants for the AESend Function (Deprecated in macOS)](./api-1542840-priority_constants_for_the_aesen.md)
+  Specify a value for the `sendPriority` parameter of the `AESend` function.
+- [Special Handler Callback Constants](./api-1572726-special_handler_callback_constan.md)
+  Specify an object callback function to install, get, or remove from the special handler dispatch table.
+- [Timeout Constants](./api-1542814-timeout_constants.md)
   Specify a timeout value.
 
 ## See Also

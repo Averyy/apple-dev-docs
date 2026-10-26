@@ -42,6 +42,8 @@ A pointer to the string object’s internal storage.
   Creates an XPC object that represents a C-string that the specified format string and argument list pointer generate.
 - [func xpc_string_get_length(xpc_object_t) -> Int](./xpc_string_get_length%28_%29.md)
   Returns the length of the underlying string.
+- [xpc_string_create_with_format](./xpc_string_create_with_format.md)
+  Creates an XPC object that represents a C-string that the specified format string and arguments generate.
 
 
 ---

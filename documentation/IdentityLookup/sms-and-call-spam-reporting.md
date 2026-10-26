@@ -17,24 +17,24 @@ When the user reports an SMS message or call, the system launches your Unwanted 
 
 Specifically, the system:
 
-1. Instantiates your extension’s [`ILClassificationUIExtensionViewController`](https://developer.apple.com/documentation/identitylookupui/ilclassificationuiextensionviewcontroller) subclass.
-2. Calls your controller’s [`prepare(for:)`](https://developer.apple.com/documentation/identitylookupui/ilclassificationuiextensionviewcontroller/prepare(for:)) method and presents the controller to the user.
+1. Instantiates your extension’s [`ILClassificationUIExtensionViewController`](../IdentityLookupUI/ilclassificationuiextensionviewcontroller.md) subclass.
+2. Calls your controller’s [`prepare(for:)`](../IdentityLookupUI/ilclassificationuiextensionviewcontroller/prepare%28for%29.md) method and presents the controller to the user.
 
-Use your [`ILClassificationUIExtensionViewController`](https://developer.apple.com/documentation/identitylookupui/ilclassificationuiextensionviewcontroller) subclass to gather data from the user. Override the [`prepare(for:)`](https://developer.apple.com/documentation/identitylookupui/ilclassificationuiextensionviewcontroller/prepare(for:)) method to configure your controller.
+Use your [`ILClassificationUIExtensionViewController`](../IdentityLookupUI/ilclassificationuiextensionviewcontroller.md) subclass to gather data from the user. Override the [`prepare(for:)`](../IdentityLookupUI/ilclassificationuiextensionviewcontroller/prepare%28for%29.md) method to configure your controller.
 
 ##### Cancel or Complete the Report
 
-The system provides a Cancel and a Done button for the controller. By default, the system disables the Done button. As soon as the user has entered all the information you require, enable the Done button by setting the view controller’s [`isReadyForClassificationResponse`](https://developer.apple.com/documentation/identitylookupui/ilclassificationuiextensioncontext/isreadyforclassificationresponse) property to [`true`](../Swift/true.md).
+The system provides a Cancel and a Done button for the controller. By default, the system disables the Done button. As soon as the user has entered all the information you require, enable the Done button by setting the view controller’s [`isReadyForClassificationResponse`](../IdentityLookupUI/ilclassificationuiextensioncontext/isreadyforclassificationresponse.md) property to [`true`](../Swift/true.md).
 
 If the user presses the Cancel button, the system dismisses your view controller, as shown in the figure below.
 
 ![An illustration showing the user cancelling your view controller.](https://developer.apple.com/tutorials/images/com.apple.identitylookup/media-3025730@2x.png)
 
-If the user presses Done, the system calls your view controller’s [`classificationResponse(for:)`](https://developer.apple.com/documentation/identitylookupui/ilclassificationuiextensionviewcontroller/classificationresponse(for:)) method, passing in an [`ILClassificationRequest`](./ilclassificationrequest.md) object (see the figure below).
+If the user presses Done, the system calls your view controller’s [`classificationResponse(for:)`](../IdentityLookupUI/ilclassificationuiextensionviewcontroller/classificationresponse%28for%29.md) method, passing in an [`ILClassificationRequest`](./ilclassificationrequest.md) object (see the figure below).
 
 ![An illustration showing the user tapping the Done button after entering all the required information in your user interface.](https://developer.apple.com/tutorials/images/com.apple.identitylookup/media-3025729@2x.png)
 
-Override the [`classificationResponse(for:)`](https://developer.apple.com/documentation/identitylookupui/ilclassificationuiextensionviewcontroller/classificationresponse(for:)) method to return a [`ILClassificationResponse`](./ilclassificationresponse.md) based on the data the user has entered and information about the SMS message or call from the request object.
+Override the [`classificationResponse(for:)`](../IdentityLookupUI/ilclassificationuiextensionviewcontroller/classificationresponse%28for%29.md) method to return a [`ILClassificationResponse`](./ilclassificationresponse.md) based on the data the user has entered and information about the SMS message or call from the request object.
 
 ##### Choose a Response
 
@@ -63,7 +63,7 @@ Finally, to protect user privacy, the system always deletes your extension’s c
 ## Topics
 
 ### App Extension
-- [class ILClassificationUIExtensionViewController](https://developer.apple.com/documentation/identitylookupui/ilclassificationuiextensionviewcontroller)
+- [class ILClassificationUIExtensionViewController](../IdentityLookupUI/ilclassificationuiextensionviewcontroller.md)
   The superclass for an Unwanted Communication Reporting extension’s principal view controller.
 ### Communications
 - [class ILCommunication](./ilcommunication.md)

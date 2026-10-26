@@ -46,6 +46,12 @@ var frameDuration: CMTime { get }
 - [var spatialVideoConfigurations: [AVSpatialVideoConfiguration]](./spatialvideoconfigurations-80iab.md)
   Indicates the spatial configurations that are available to associate with the output of the video composition.
 - [struct AVSpatialVideoConfiguration](../avspatialvideoconfiguration-swift.struct.md)
+- [outputBufferDescription](./outputbufferdescription-3wsar.md)
+  The output buffers of the video composition can be specified with the outputBufferDescription. The value is an array of CMTagCollectionRef objects that describes the output buffers.
+- [spatialVideoConfigurations](./spatialvideoconfigurations-2ipps.md)
+  Indicates the spatial configurations that are available to associate with the output of the video composition.
+- [AVSpatialVideoConfiguration](../avspatialvideoconfiguration-c.class.md)
+  An AVSpatialVideoConfiguration specifies spatial video properties.
 
 
 ---

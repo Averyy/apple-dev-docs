@@ -31,6 +31,8 @@ class PKToolPickerItem
 ### Instance Properties
 - [var tool: (any PKTool)?](./pktoolpickeritem/tool-2ji9h.md)
   A tool for drawing on a PKCanvasView.
+- [tool](./pktoolpickeritem/tool-918ln.md)
+  The `PKTool` this tool picker item represents.
 
 ## Relationships
 

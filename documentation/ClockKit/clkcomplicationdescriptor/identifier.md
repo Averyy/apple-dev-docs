@@ -30,6 +30,8 @@ var identifier: String { get }
   A user activity object that represents the state of the app at a moment in time.
 - [var userInfo: [AnyHashable : Any]?](./userinfo.md)
   A dictionary of data that your data source can use to generate timeline entries.
+- [supportedFamilies](./supportedfamilies-50ink.md)
+  The families that support this type of complication.
 
 
 ---

@@ -31,6 +31,11 @@ class ODAttributeMap
 ### Instance Methods
 - [func setStaticValue(String!)](./odattributemap/setstaticvalue%28_%29.md)
 - [func setVariableSubstitution(String!)](./odattributemap/setvariablesubstitution%28_%29.md)
+### Instance Variables
+- [customAttributes](./odattributemap/customattributes-c.ivar.md)
+- [customQueryFunction](./odattributemap/customqueryfunction-c.ivar.md)
+- [customTranslationFunction](./odattributemap/customtranslationfunction-c.ivar.md)
+- [value](./odattributemap/value-c.ivar.md)
 
 ## Relationships
 

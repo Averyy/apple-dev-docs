@@ -106,6 +106,16 @@ The system applies HAGC metadata embedded in HDR images and video automatically.
   Weight for the red channel in the free-style component mixing sum.
 - [var kColorSyncComponentCoefficients: Unmanaged<CFString>](./kcolorsynccomponentcoefficients.md)
   Sub-dictionary of custom linear-combination coefficients for free-style component mixing.
+### Reading a curve (C API)
+- [ColorSyncProfileCopyHeadroomAdaptiveGainCurveInfoDictionary](./colorsyncprofilecopyheadroomadaptivegaincurveinfodictionary.md)
+  Returns a dictionary describing the Headroom Adaptive Gain Curve decoded from a profile.
+- [ColorSyncProfileCopyHeadroomAdaptiveGainCurveMetadata](./colorsyncprofilecopyheadroomadaptivegaincurvemetadata.md)
+  Returns a copy of the raw Headroom Adaptive Gain Curve data embedded in a profile.
+### Attaching a curve (C API)
+- [ColorSyncProfileCreateCopyWithHeadroomAdaptiveGainCurveInfoDictionary](./colorsyncprofilecreatecopywithheadroomadaptivegaincurveinfodictionary.md)
+  Returns a copy of a profile with an HAGC tag synthesized from an info dictionary.
+- [ColorSyncProfileCreateCopyWithHeadroomAdaptiveGainCurveMetadata](./colorsyncprofilecreatecopywithheadroomadaptivegaincurvemetadata.md)
+  Returns a copy of a profile with the supplied Headroom Adaptive Gain Curve data embedded as an HAGC tag.
 
 ## See Also
 

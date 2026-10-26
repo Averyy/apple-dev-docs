@@ -84,6 +84,11 @@
       "file_path": "documentation/GroupActivities/groupactivity/activityidentifier.md",
       "hash": "c591e01d36200612b2eea6c2281248fc07571bb97eb4cced1ca34afeb2431b16"
     },
+    "https://developer.apple.com/documentation/groupactivities/groupactivity/activityidentifier-4jgfp": {
+      "etag": "\"1f65-65d560bda7f2a-df\"",
+      "file_path": "documentation/GroupActivities/groupactivity/activityidentifier-4jgfp.md",
+      "hash": "e2e1e50ee06925e29d986be7486ae8ce0766dbdc1f607ede706b8b1c79e5c1d6"
+    },
     "https://developer.apple.com/documentation/groupactivities/groupactivity/metadata": {
       "etag": "\"1af8-65d560bda7f2a-df\"",
       "file_path": "documentation/GroupActivities/groupactivity/metadata.md",
@@ -904,6 +909,11 @@
       "file_path": "documentation/GroupActivities/spatialtemplate/configuration.md",
       "hash": "7cc3b6de272a93c83557b471db64271208bb261a3b09b305f9af3b9bdc6ada64"
     },
+    "https://developer.apple.com/documentation/groupactivities/spatialtemplate/configuration-1zoug": {
+      "etag": "\"152a-65d560bd664cb-df\"",
+      "file_path": "documentation/GroupActivities/spatialtemplate/configuration-1zoug.md",
+      "hash": "dfadaf62ceb6b7c0b9dddd506a5c8ed105727deb4cf31edc182d306167d8ad63"
+    },
     "https://developer.apple.com/documentation/groupactivities/spatialtemplate/elements": {
       "etag": "\"1dec-65d560bd664cb-df\"",
       "file_path": "documentation/GroupActivities/spatialtemplate/elements.md",
@@ -1063,6 +1073,11 @@
       "etag": "\"18df-65d560bd78ce2-df\"",
       "file_path": "documentation/GroupActivities/spatialtemplaterole/roleidentifier.md",
       "hash": "566568171cbfd70e200ddde514d5048fd23216724e01ff02e9ec4cb1bdcfbda9"
+    },
+    "https://developer.apple.com/documentation/groupactivities/spatialtemplaterole/roleidentifier-7vj8a": {
+      "etag": "\"170a-65d560bd78ce2-df\"",
+      "file_path": "documentation/GroupActivities/spatialtemplaterole/roleidentifier-7vj8a.md",
+      "hash": "22cc3552db0007242b2a340264c7e051ad599714fb5ed9d7cf975df91e0043cd"
     },
     "https://developer.apple.com/documentation/groupactivities/spatialtemplateseatelement": {
       "etag": "\"5372-65d560bd94898-df\"",
@@ -1332,6 +1347,11 @@
       "etag": "\"2b6b-65d560bdc1ac9-df\"",
       "file_path": "documentation/GroupActivities/groupactivity/activate().md",
       "hash": "519b2a0fd958429cca3534164098656b18bdeee6655d80f7282b1f58219a5967"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/groupactivities/groupactivity/activityidentifier-4jgfp.json": {
+      "etag": "\"1f65-65d560bda7f2a-df\"",
+      "file_path": "documentation/GroupActivities/groupactivity/activityidentifier-4jgfp.md",
+      "hash": "e2e1e50ee06925e29d986be7486ae8ce0766dbdc1f607ede706b8b1c79e5c1d6"
     },
     "https://developer.apple.com/tutorials/data/documentation/groupactivities/groupactivity/activityidentifier.json": {
       "etag": "\"2cdc-65d560bdc1ac9-df\"",
@@ -2153,6 +2173,11 @@
       "file_path": "documentation/GroupActivities/spatialtemplate.md",
       "hash": "f682a4c1ebd39d54c8f9a5d02f161483d39484a40c420540393a1b901bb6b494"
     },
+    "https://developer.apple.com/tutorials/data/documentation/groupactivities/spatialtemplate/configuration-1zoug.json": {
+      "etag": "\"152a-65d560bd664cb-df\"",
+      "file_path": "documentation/GroupActivities/spatialtemplate/configuration-1zoug.md",
+      "hash": "dfadaf62ceb6b7c0b9dddd506a5c8ed105727deb4cf31edc182d306167d8ad63"
+    },
     "https://developer.apple.com/tutorials/data/documentation/groupactivities/spatialtemplate/configuration.json": {
       "etag": "\"19f2-65d560bd664cb-df\"",
       "file_path": "documentation/GroupActivities/spatialtemplate/configuration.md",
@@ -2312,6 +2337,11 @@
       "etag": "\"3bad-65d560bd94898-df\"",
       "file_path": "documentation/GroupActivities/spatialtemplaterole.md",
       "hash": "8a9461e639cf1b6999dfe622303f0c1301b3fff60e3071699fbfd3636d6045db"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/groupactivities/spatialtemplaterole/roleidentifier-7vj8a.json": {
+      "etag": "\"170a-65d560bd78ce2-df\"",
+      "file_path": "documentation/GroupActivities/spatialtemplaterole/roleidentifier-7vj8a.md",
+      "hash": "22cc3552db0007242b2a340264c7e051ad599714fb5ed9d7cf975df91e0043cd"
     },
     "https://developer.apple.com/tutorials/data/documentation/groupactivities/spatialtemplaterole/roleidentifier.json": {
       "etag": "\"18df-65d560bd78ce2-df\"",
@@ -2511,8 +2541,8 @@
   },
   "metadata": {
     "render": {
-      "version": 1
+      "version": 2
     },
-    "total_pages": 502
+    "total_pages": 508
   }
 }

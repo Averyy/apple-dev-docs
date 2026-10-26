@@ -59,6 +59,11 @@ The behavior of a multilevel accelerator button is reliant on a system that supp
 - [enum NSTintProminence](../nstintprominence.md)
   Controls how strongly the tint color applies in a view.
 - [var borderShape: NSControl.BorderShape](./bordershape.md)
+### Related Documentation
+- [NSMultiLevelAcceleratorButton](../nsmultilevelacceleratorbutton.md)
+  A multilevel accelerator button is a variation of a normal accelerator button that allows for a configurable number of stepped pressure levels. As each one is reached, the user receives light tactile feedback and an action is sent.
+- [NSAcceleratorButton](../nsacceleratorbutton.md)
+  A button that sends an action when the user first clicks the button and continues sending actions until the user releases pressure entirely.
 
 
 ---

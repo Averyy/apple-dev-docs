@@ -44,6 +44,8 @@ struct objc_object;
 ### Instance Data Types
 - [struct objc_super](./objc_super-swift.struct.md)
   Specifies the superclass of an instance.
+- [id](./id.md)
+  A pointer to an instance of a class.
 
 
 ---

@@ -34,6 +34,8 @@ static const NSPointerFunctionsOptions NSHashTableObjectPointerPersonality;
   Equal to [`copyIn`](./nspointerfunctions/options/copyin.md).
 - [var NSHashTableWeakMemory: NSPointerFunctions.Options](./nshashtableweakmemory.md)
   Equal to [`weakMemory`](./nspointerfunctions/options/weakmemory.md). Uses weak read and write barriers appropriate for ARC or GC. Using [`weakMemory`](./nspointerfunctions/options/weakmemory.md) object references will turn to `NULL` on last release.
+- [NSHashTableZeroingWeakMemory](./nshashtablezeroingweakmemory.md)
+  This option has been deprecated. Instead use the `NSHashTableWeakMemory` option. Equal to [`NSPointerFunctionsZeroingWeakMemory`](./nspointerfunctionsoptions/nspointerfunctionszeroingweakmemory.md).
 
 
 ---

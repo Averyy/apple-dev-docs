@@ -26,6 +26,11 @@ Deprecated. Do not use.
   Deprecated. Do not use.
 - [NSPrintFaxModem](./nsprintfaxmodem.md)
   Deprecated. Do not use.
+- [NSPrintFormName](./nsprintformname.md)
+- [NSPrintJobFeatures](./nsprintjobfeatures.md)
+- [NSPrintManualFeed](./nsprintmanualfeed.md)
+- [NSPrintPagesPerSheet](./nsprintpagespersheet.md)
+- [NSPrintPaperFeed](./nsprintpaperfeed.md)
 
 
 ---

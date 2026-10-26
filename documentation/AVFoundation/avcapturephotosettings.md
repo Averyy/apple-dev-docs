@@ -56,6 +56,8 @@ A [`AVCapturePhotoSettings`](./avcapturephotosettings.md) instance can include a
   Creates a photo settings object for capture in both RAW format and a processed format with the specified output file types.
 - [convenience init(from: AVCapturePhotoSettings)](./avcapturephotosettings/init%28from%29.md)
   Creates a unique photo settings object, copying all settings values from the specified photo settings object.
+- [+ photoSettings](./avcapturephotosettings/photosettings.md)
+  Creates a photo settings object with default settings.
 ### Inspecting settings
 - [var uniqueID: Int64](./avcapturephotosettings/uniqueid.md)
   A unique identifier for this photo settings instance.
@@ -108,6 +110,8 @@ A [`AVCapturePhotoSettings`](./avcapturephotosettings.md) instance can include a
   A dictionary describing the format for delivery of raw thumbnail images embedded in photo file output.
 - [var availableEmbeddedThumbnailPhotoCodecTypes: [AVVideoCodecType]](./avcapturephotosettings/availableembeddedthumbnailphotocodectypes.md)
   An array of video codec types compatible with the photo settings for embedding thumbnail images in photo file output.
+- [availablePreviewPhotoPixelFormatTypes](./avcapturephotosettings/availablepreviewphotopixelformattypes-2vfwu.md)
+  An array of pixel format types compatible with the photo settings for delivery of preview-sized images.
 ### Configuring Live Photo settings
 - [var livePhotoMovieFileURL: URL?](./avcapturephotosettings/livephotomoviefileurl.md)
   A URL at which to write Live Photo movie output.

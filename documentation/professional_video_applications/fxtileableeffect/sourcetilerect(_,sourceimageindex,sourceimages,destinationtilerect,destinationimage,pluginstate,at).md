@@ -22,7 +22,7 @@ func sourceTileRect(_ sourceTileRect: UnsafeMutablePointer<FxRect>, sourceImageI
 
 ## Mentions
 
-- [Working with tiled images](https://developer.apple.com/documentation/professional-video-applications/working-with-tiled-images)
+- [Working with tiled images](../../Professional-Video-Applications/working-with-tiled-images.md)
 
 #### Discussion
 

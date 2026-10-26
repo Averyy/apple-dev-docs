@@ -1,0 +1,30 @@
+# validFrameDurations
+
+**Framework**: Core Media I/O  
+**Kind**: property  
+**Role**: Instance Property
+
+An array of frame durations the stream supports.
+
+**Availability**:
+- Mac Catalyst 15.4+
+- macOS 12.3+
+
+## Declaration
+
+```objc
+@property (atomic, strong, readonly, nullable) NSArray<NSDictionary *> * validFrameDurations;
+```
+
+## See Also
+
+### Configuring Frame Durations
+- [var minFrameDuration: CMTime](./minframeduration.md)
+  The minimum frame duration a stream supports.
+- [var maxFrameDuration: CMTime](./maxframeduration.md)
+  The maximum duration a stream supports.
+
+
+---
+
+*[View on Apple Developer](https://developer.apple.com/documentation/coremediaio/cmioextensionstreamformat/validframedurations-4rbay)*

@@ -59,6 +59,8 @@ The framework emulates hot-plugging to the display. After you create the display
   A handler that the framework calls to change the virtual display’s graphics mode.
 - [var newFrameEventHandler: PGDisplayNewFrameEventHandler?](./pgdisplay/newframeeventhandler.md)
   A handler that the framework calls when the guest environment has a new frame to display.
+- [cursorGlyphHandler](./pgdisplay/cursorglyphhandler.md)
+  A handler that the framework calls to change the cursor’s appearance.
 ### Instance Properties
 - [var cursorMoveHandler: PGDisplayCursorMoveHandler?](./pgdisplay/cursormovehandler.md)
 

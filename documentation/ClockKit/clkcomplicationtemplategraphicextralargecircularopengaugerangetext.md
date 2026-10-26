@@ -32,6 +32,8 @@ This template belongs to the [`CLKComplicationFamily.graphicExtraLarge`](./clkco
 ### Creating the Template
 - [init(gaugeProvider: CLKGaugeProvider, leadingTextProvider: CLKTextProvider, trailingTextProvider: CLKTextProvider, centerTextProvider: CLKTextProvider)](./clkcomplicationtemplategraphicextralargecircularopengaugerangetext/init%28gaugeprovider,leadingtextprovider,trailingtextprovider,centertextprovider%29.md)
   Creates a new template that has an open, circular gauge with leading and trailing text, and a central text element.
+- [+ templateWithGaugeProvider:leadingTextProvider:trailingTextProvider:centerTextProvider:](./clkcomplicationtemplategraphicextralargecircularopengaugerangetext/templatewithgaugeprovider_leadingtextprovider_trailingtextprovider_centertextprovider_.md)
+  Returns a new template that has an open, circular gauge with leading and trailing text, and a central text element.
 ### Setting the Complication Data
 - [var centerTextProvider: CLKTextProvider](./clkcomplicationtemplategraphicextralargecircularopengaugerangetext/centertextprovider.md)
   The text to display in the center of the gauge.

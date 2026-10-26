@@ -38,6 +38,10 @@ The text is optional; this template can either display a circular template with 
   Creates a circular template.
 - [init(circularTemplate: CLKComplicationTemplateGraphicCircular, textProvider: CLKTextProvider?)](./clkcomplicationtemplategraphicbezelcirculartext/init%28circulartemplate,textprovider%29.md)
   Creates a circular template with text that wraps around the bezel.
+- [+ templateWithCircularTemplate:](./clkcomplicationtemplategraphicbezelcirculartext/templatewithcirculartemplate_.md)
+  Returns a circular template.
+- [+ templateWithCircularTemplate:textProvider:](./clkcomplicationtemplategraphicbezelcirculartext/templatewithcirculartemplate_textprovider_.md)
+  Returns a circular template with text that wraps around the bezel.
 ### Setting the Complication Data
 - [var circularTemplate: CLKComplicationTemplateGraphicCircular](./clkcomplicationtemplategraphicbezelcirculartext/circulartemplate.md)
   The circular template to display.

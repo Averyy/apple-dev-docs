@@ -29,6 +29,10 @@ Combine discrete fixed- and floating-point planar buffers into an interleaved bu
   Interleaves three floating-point 32-bit planar buffers into a floating-point 32-bit-per-channel, 3-channel interleaved buffer.
 - [func vImageConvert_PlanarFToXRGBFFFF(Pixel_F, UnsafePointer<vImage_Buffer>, UnsafePointer<vImage_Buffer>, UnsafePointer<vImage_Buffer>, UnsafePointer<vImage_Buffer>, vImage_Flags) -> vImage_Error](./vimageconvert_planarftoxrgbffff%28_,_,_,_,_,_%29.md)
   Interleaves three 32-bit planar buffers into a floating-point 32-bit-per-channel, 4-channel interleaved XRGB buffer with the specified constant alpha value.
+- [vImageConvert_PlanarFToRGBX8888](./vimageconvert_planarftorgbx8888.md)
+  Interleaves three 32-bit planar buffers into an 8-bit-per-channel, 4-channel interleaved RGBX buffer with the specified constant alpha value.
+- [vImageConvert_PlanarFToRGBXFFFF](./vimageconvert_planarftorgbxffff.md)
+  Interleaves three 32-bit planar buffers into a floating-point 32-bit-per-channel, 4-channel interleaved RGBX buffer with the specified constant alpha value.
 ### Interleaving four floating-point 32-bit planar buffers
 - [func vImageConvert_PlanarFToARGB8888(UnsafePointer<vImage_Buffer>, UnsafePointer<vImage_Buffer>, UnsafePointer<vImage_Buffer>, UnsafePointer<vImage_Buffer>, UnsafePointer<vImage_Buffer>, UnsafePointer<Float>, UnsafePointer<Float>, vImage_Flags) -> vImage_Error](./vimageconvert_planarftoargb8888%28_,_,_,_,_,_,_,_%29.md)
   Interleaves four 32-bit planar buffers into an 8-bit-per-channel, 4-channel interleaved buffer.

@@ -34,6 +34,8 @@ convenience init(fileNamed filename: String, securelyWithClasses classes: Set<An
   Creates a new node by loading an archive file from the game’s main bundle.
 - [init?(coder: NSCoder)](./init%28coder%29.md)
   Called when a node is initialized from an .sks file.
+- [+ node](./node.md)
+  Creates a new node.
 
 
 ---

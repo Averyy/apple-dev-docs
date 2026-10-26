@@ -61,6 +61,10 @@ float destColor = srcTopColor  + (1.0 - srcTopAlpha) * srcBottomColor;
   Performs premultiplied alpha compositing of two 8-bit-per-channel, 4-channel BGRA buffers.
 - [func vImagePremultipliedAlphaBlend_BGRAFFFF(UnsafePointer<vImage_Buffer>, UnsafePointer<vImage_Buffer>, UnsafePointer<vImage_Buffer>, vImage_Flags) -> vImage_Error](./vimagepremultipliedalphablend_bgraffff%28_,_,_,_%29.md)
   Performs premultiplied alpha compositing of two 32-bit-per-channel, 4-channel BGRA buffers.
+- [vImagePremultipliedAlphaBlend_RGBA8888](./vimagepremultipliedalphablend_rgba8888.md)
+  Performs premultiplied alpha compositing of two 8-bit-per-channel, 4-channel RGBA buffers.
+- [vImagePremultipliedAlphaBlend_RGBAFFFF](./vimagepremultipliedalphablend_rgbaffff.md)
+  Performs premultiplied alpha compositing of two 32-bit-per-channel, 4-channel RGBA buffers.
 
 
 ---

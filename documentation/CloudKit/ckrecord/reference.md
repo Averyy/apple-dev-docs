@@ -149,6 +149,7 @@ CKQueryOperation *queryOp = [[CKQueryOperation alloc] initWithQuery:query];
 - [NSSecureCoding](../../Foundation/nssecurecoding.md)
 - [Sendable](../../Swift/sendable.md)
 - [SendableMetatype](../../Swift/sendablemetatype.md)
+- [CKRecordValue](../ckrecordvalue-c.protocol.md)
 
 ## See Also
 

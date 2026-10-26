@@ -37,6 +37,8 @@ Compositor Services places the color and depth textures for this view at same in
   The index of the view’s texture in an array-based texture type.
 - [var viewport: MTLViewport](./viewport.md)
   The portion of the texture that the view uses to draw its content.
+- [cp_view_texture_map_t](../../../../cp_view_texture_map_t.md)
+  A type that provides details about the textures associated with a view.
 
 
 ---

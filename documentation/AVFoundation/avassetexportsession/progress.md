@@ -30,6 +30,14 @@ var progress: Float { get }
 
 The value of this property ranges from `0.0` to `1.0.`
 
+## See Also
+
+### Monitoring export progress
+- [status](./status-swift.property.md)
+  The status of the export session.
+- [error](./error.md)
+  An optional error object.
+
 
 ---
 

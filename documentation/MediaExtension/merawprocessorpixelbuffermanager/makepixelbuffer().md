@@ -28,6 +28,8 @@ A pixel buffer that’s compatible with the extension’s most recently set pixe
 ### Creating a pixel buffer
 - [var pixelBufferAttributes: [String : any Sendable]](./pixelbufferattributes-4fe69.md)
   A dictionary that contains the attributes Video Toolbox uses to create a pixel buffer for the video RAW processor.
+- [pixelBufferAttributes](./pixelbufferattributes-2cki6.md)
+  A dictionary that contains the attributes Video Toolbox uses to create a pixel buffer for the video RAW processor.
 
 
 ---

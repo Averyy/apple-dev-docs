@@ -44,6 +44,10 @@ Use this method to create a view controller object to present programmatically. 
 ### Instantiating Storyboard View Controllers
 - [func instantiateViewController<ViewController>(identifier: String, creator: ((NSCoder) -> ViewController?)?) -> ViewController](./instantiateviewcontroller%28identifier,creator%29.md)
   Creates the specified view controller from the storyboard and initializes it using your custom initialization code.
+- [- instantiateViewControllerWithIdentifier:creator:](./instantiateviewcontrollerwithidentifier_creator_.md)
+  Creates the specified view controller from the storyboard and initializes it using your custom initialization code.
+- [UIStoryboardViewControllerCreator](../uistoryboardviewcontrollercreator.md)
+  A handler block that contains the custom initialization code for a view controller you instantiate from a storyboard.
 
 
 ---

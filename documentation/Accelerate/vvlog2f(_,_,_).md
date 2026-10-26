@@ -94,6 +94,36 @@ printf("[%g, %g, %g]\n", y[0], y[1], y[2]);
   Returns the natural logarithm for each element in a vector of double-precision values.
 - [static func log<U>(U) -> [Float]](./vforce/log%28_%29-5ffby.md)
   Returns the natural logarithm for each element in a vector of single-precision values.
+- [vvexp](./vvexp%28_,_,_%29.md)
+  Calculates *e* raised to the power of each element in an array of double-precision values.
+- [vvexpf](./vvexpf%28_,_,_%29.md)
+  Calculates *e* raised to the power of each element in an array of single-precision values.
+- [vvexp2](./vvexp2%28_,_,_%29.md)
+  Calculates 2 raised to the power of each element in an array of double-precision values.
+- [vvexp2f](./vvexp2f%28_,_,_%29.md)
+  Calculates 2 raised to the power of each element in an array of single-precision values.
+- [vvexpm1](./vvexpm1%28_,_,_%29.md)
+  Calculates *eˣ-1* for each element in an array of double-precision values.
+- [vvexpm1f](./vvexpm1f%28_,_,_%29.md)
+  Calculates *eˣ-1* for each element in an array of single-precision values.
+- [vvlog](./vvlog%28_,_,_%29.md)
+  Calculates the natural logarithm for each element in an array of double-precision values.
+- [vvlogf](./vvlogf%28_,_,_%29.md)
+  Calculates the natural logarithm for each element in an array of single-precision values.
+- [vvlog1p](./vvlog1p%28_,_,_%29.md)
+  Calculates *log(1+x)* for each element in an array of double-precision values.
+- [vvlog1pf](./vvlog1pf%28_,_,_%29.md)
+  Calculates *log(1+x)* for each element in an array of single-precision values.
+- [vvlog2](./vvlog2%28_,_,_%29.md)
+  Calculates the base 2 logarithm of each element in an array of double-precision values.
+- [vvlog10](./vvlog10%28_,_,_%29.md)
+  Calculates the base 10 logarithm of each element in an array of double-precision values.
+- [vvlog10f](./vvlog10f%28_,_,_%29.md)
+  Calculates the base 10 logarithm of each element in an array of single-precision values.
+- [vvlogb](./vvlogb%28_,_,_%29.md)
+  Calculates the unbiased exponent of each element in an array of double-precision values.
+- [vvlogbf](./vvlogbf%28_,_,_%29.md)
+  Calculates the unbiased exponent of each element in an array of single-precision values.
 
 
 ---

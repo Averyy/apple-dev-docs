@@ -69,6 +69,8 @@ If the object is already a member, this method has no effect. If the specified i
   Appends or replaces the object at the specified index.
 - [func moveObjects(at: IndexSet, to: Int)](./moveobjects%28at,to%29.md)
   Moves the objects at the specified indexes to the new location.
+- [- setObject:atIndexedSubscript:](./setobject_atindexedsubscript_.md)
+  Replaces the given object at the specified index of the mutable ordered set.
 
 
 ---

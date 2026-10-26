@@ -44,6 +44,10 @@ The [`SFAuthorization`](./sfauthorization.md) class is an interface for some of 
   Authorizes and preauthorizes rights to access a privileged operation and returns the granted rights.
 - [func obtain(withRight: AuthorizationString!, flags: AuthorizationFlags) throws](./sfauthorization/obtain%28withright,flags%29.md)
   Authorizes and preauthorizes one specific right.
+- [- permitWithRights:flags:environment:authorizedRights:](./sfauthorization/permitwithrights_flags_environment_authorizedrights_.md)
+  Authorizes and preauthorizes rights to access a privileged operation and returns the granted rights.
+- [- permitWithRight:flags:](./sfauthorization/permitwithright_flags_.md)
+  Authorizes and preauthorizes one specific right.
 ### Preventing credentials from being shared
 - [func invalidateCredentials()](./sfauthorization/invalidatecredentials%28%29.md)
   Prevents any rights that were obtained by this object from being preserved.

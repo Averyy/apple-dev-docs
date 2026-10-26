@@ -52,11 +52,16 @@ Although these symbols are available for use, Apple is no longer actively develo
   Returns an array of rectangles and, by reference, the number of such rectangles, that define the region in the given container enclosing the given glyph range.
 - [func substituteFont(for: NSFont) -> NSFont](./nslayoutmanager/substitutefont%28for%29.md)
   Replaces the specified font with a suitable screen font if one is available.
+- [- showPackedGlyphs:length:glyphRange:atPoint:font:color:printingAdjustment:](./nslayoutmanager/showpackedglyphs_length_glyphrange_atpoint_font_color_printingadjustment_.md)
+  Draws a range of glyphs.
 ### Deprecated properties
 - [var hyphenationFactor: Float](./nslayoutmanager/hyphenationfactor.md)
   The threshold controlling when hyphenation is done.
 - [var usesScreenFonts: Bool](./nslayoutmanager/usesscreenfonts.md)
   A Boolean that controls using screen fonts to calculate layout and display text.
+### Deprecated types
+- [NSGlyphInscription](./nsglyphinscription.md)
+  Constants that specify how a glyph is laid out relative to the previous glyph.
 
 
 ---

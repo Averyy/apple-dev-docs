@@ -105,6 +105,8 @@ The `NSAccessibility` informal protocol defines an old, key-based API. For the m
 - [protocol NSInputServerMouseTracker](./nsinputservermousetracker.md)
 - [protocol NSDrawerDelegate](./nsdrawerdelegate.md)
   A set of methods that drawer delegates implement to open, close, and resize the drawer.
+- [NSEditor](./nseditor-deprecated-symbols.md)
+  A set of methods that controllers and UI elements can implement to manage editing.
 
 
 ---

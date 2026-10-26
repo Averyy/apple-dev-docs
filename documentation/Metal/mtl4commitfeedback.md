@@ -70,6 +70,8 @@ protocol MTL4CommitFeedback : NSObjectProtocol
   Represents options to configure a commit operation on a command queue.
 - [typealias MTL4CommitFeedbackHandler](./mtl4commitfeedbackhandler.md)
   Defines the block signature for a callback Metal invokes to provide your app feedback after completing a workload.
+- [MTL4CounterHeap](./mtl4counterheap.md)
+  Represents an opaque, driver-controlled section of memory that can store GPU counter data.
 
 
 ---

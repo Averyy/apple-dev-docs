@@ -35,6 +35,8 @@ Labels describe the context for a property. For example, the label for a phone n
 ### Creating a labeled value
 - [init(label: String?, value: ValueType)](./cnlabeledvalue/init%28label,value%29.md)
   Returns a new labeled value identifier.
+- [+ labeledValueWithLabel:value:](./cnlabeledvalue/labeledvaluewithlabel_value_.md)
+  Returns a new labeled value identifier.
 ### Getting the label and value
 - [var label: String?](./cnlabeledvalue/label.md)
   The label for a contact property value.

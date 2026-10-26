@@ -37,6 +37,8 @@ Implementation of this method is optional, but expected.
 ### Closing the picker
 - [func imagePickerController(UIImagePickerController, didFinishPickingMediaWithInfo: [UIImagePickerController.InfoKey : Any])](./imagepickercontroller%28_,didfinishpickingmediawithinfo%29.md)
   Tells the delegate that the user picked a still image or movie.
+- [- imagePickerController:didFinishPickingImage:editingInfo:](./imagepickercontroller_didfinishpickingimage_editinginfo_.md)
+  Tells the delegate that the user picked an image.
 
 
 ---

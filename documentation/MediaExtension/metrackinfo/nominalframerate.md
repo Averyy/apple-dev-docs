@@ -42,6 +42,10 @@ For field-based video tracks that carry one field per media sample, the value of
   Indicates the preferred affine display transform of the track media for visual display.
 - [var requiresFrameReordering: Bool](./requiresframereordering.md)
   A Boolean value that indicates whether frame reordering occurs in the track.
+- [formatDescriptions](./formatdescriptions.md)
+  An array of format descriptions for the track.
+- [trackEdits](./trackedits.md)
+  An array of edit segments for the given track.
 
 
 ---

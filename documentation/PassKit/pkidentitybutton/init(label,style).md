@@ -22,6 +22,12 @@ init(label: PKIdentityButton.Label, style: PKIdentityButton.Style)
 - (instancetype) initWithLabel:(PKIdentityButtonLabel) label style:(PKIdentityButtonStyle) style;
 ```
 
+## See Also
+
+### Creating an identity button
+- [+ buttonWithLabel:style:](./buttonwithlabel_style_.md)
+  Creates a new identity button with the label and style.
+
 
 ---
 

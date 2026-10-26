@@ -29,6 +29,8 @@ var lastModifiedDate: Date { get }
   Asks the media library to turn on notifications for whenever the library changes.
 - [func endGeneratingLibraryChangeNotifications()](./endgeneratinglibrarychangenotifications%28%29.md)
   Asks the media library to turn off notifications for whenever the library changes.
+- [MPMediaLibraryDidChangeNotification](../mpmedialibrarydidchangenotification.md)
+  Indicates the media library has changed.
 
 
 ---

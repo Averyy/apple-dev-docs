@@ -106,6 +106,10 @@ The following is the typical life cycle of a long-lived operation:
   A unique identifier for a long-lived operation.
 - [CKOperation.ID](./ckoperation/id.md)
   A type that represents the ID of an operation.
+- [operationID](./ckoperation/operationid-3eujz.md)
+  A unique identifier for a long-lived operation.
+- [CKOperationID](./ckoperationid.md)
+  A type that represents the ID of an operation.
 ### Managing the Operation’s Configuration
 - [var configuration: CKOperation.Configuration!](./ckoperation/configuration-swift.property.md)
   The operation’s configuration.

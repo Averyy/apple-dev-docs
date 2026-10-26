@@ -46,6 +46,11 @@ This is the designated initializer.
   Creates and raises an exception with the specified name, reason, and arguments.
 - [func raise()](./raise%28%29.md)
   Raises the receiver, causing program flow to jump to the local exception handler.
+- [+ raise:format:](./raise_format_.md)
+  A convenience method that creates and raises an exception.
+### Related Documentation
+- [+ exceptionWithName:reason:userInfo:](./exceptionwithname_reason_userinfo_.md)
+  Creates and returns an exception object .
 
 
 ---

@@ -44,6 +44,9 @@ func append(_ aString: String)
   Replaces all occurrences of a given string in a given range with another given string, returning the number of replacements.
 - [func setString(String)](./setstring%28_%29.md)
   Replaces the characters of the receiver with those in a given string.
+### Related Documentation
+- [- appendFormat:](./appendformat_.md)
+  Adds a constructed string to the receiver.
 
 
 ---

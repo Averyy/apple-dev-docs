@@ -44,6 +44,8 @@ The system sets the node’s output format using the audio format for the render
   A block that supplies audio data to an audio source node.
 - [init(format: AVAudioFormat, renderBlock: AVAudioSourceNodeRenderBlock)](./init%28format,renderblock%29.md)
   Creates an audio source node with the audio format and a block that supplies audio data.
+- [- initWithRealtimeSafeRenderBlock:](./initwithrealtimesaferenderblock_.md)
+- [- initWithFormat:realtimeSafeRenderBlock:](./initwithformat_realtimesaferenderblock_.md)
 
 
 ---

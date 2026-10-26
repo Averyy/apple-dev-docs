@@ -90,6 +90,8 @@ These primitives should perform the change, then call [`edited(_:range:changeInL
 ### Constants
 - [struct NSTextStorageEditActions](./nstextstorageeditactions.md)
   Constants that indicate the types of changes.
+- [NSTextStorageEditedOptions](./nstextstorageeditedoptions.md)
+  ** Deprecations ***
 ### Notifications
 - [class let willProcessEditingNotification: NSNotification.Name](./nstextstorage/willprocesseditingnotification.md)
   A notification that posts before a text storage begins processing edits.
@@ -130,6 +132,10 @@ These primitives should perform the change, then call [`edited(_:range:changeInL
   A concrete typesetter object that places glyphs during the text layout process.
 - [class NSTypesetter](./nstypesetter.md)
   An abstract class that performs various type layout tasks.
+- [NSLineSweepDirection](./nslinesweepdirection.md)
+  Values that describe the progression of text on a page.
+- [NSLineMovementDirection](./nslinemovementdirection.md)
+  The direction in which a line moves.
 
 
 ---

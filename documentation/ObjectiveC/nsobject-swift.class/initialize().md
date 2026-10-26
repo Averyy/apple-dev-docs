@@ -52,6 +52,8 @@ Because [`initialize()`](./initialize%28%29.md) is called in a blocking manner, 
 ### Related Documentation
 - [init()](./init%28%29.md)
   Implemented by subclasses to initialize a new object (the receiver) immediately after memory for it has been allocated.
+- [- class](../nsobject-c.protocol/class.md)
+  Returns the class object for the receiver’s class.
 ### Initializing a Class
 - [class func load()](./load%28%29.md)
   Invoked whenever a class or category is added to the Objective-C runtime; implement this method to perform class-specific behavior upon loading.

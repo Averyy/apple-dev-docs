@@ -38,6 +38,10 @@ If you override [`updateConfiguration(using:)`](./updateconfiguration%28using%29
   The current content configuration of the cell.
 - [var contentView: UIView](./contentview.md)
   The content view of the cell object.
+- [- defaultContentConfiguration](./defaultcontentconfiguration.md)
+  Retrieves a default list content configuration for the cell’s style.
+- [contentConfiguration](./contentconfiguration-2lzvp.md)
+  The current content configuration of the cell.
 
 
 ---

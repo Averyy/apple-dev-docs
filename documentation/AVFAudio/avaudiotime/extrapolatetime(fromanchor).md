@@ -59,6 +59,14 @@ AVAudioTime *fullTime = [sampleTime extrapolateTimeFromAnchor: sampleTime];
   Creates an audio time object with the specified host time, sample time, and sample rate.
 - [init(sampleTime: AVAudioFramePosition, atRate: Double)](./init%28sampletime,atrate%29.md)
   Creates an audio time object with the specified timestamp and sample rate.
+- [+ timeWithAudioTimeStamp:sampleRate:](./timewithaudiotimestamp_samplerate_.md)
+  Creates an audio time object with the specified timestamp and sample rate.
+- [+ timeWithHostTime:sampleTime:atRate:](./timewithhosttime_sampletime_atrate_.md)
+  Creates an audio time object with the specified host time, sample time, and sample rate.
+- [+ timeWithSampleTime:atRate:](./timewithsampletime_atrate_.md)
+  Creates an audio time object with the specified sample time and sample rate.
+- [+ timeWithHostTime:](./timewithhosttime_.md)
+  Creates an audio time object with the specified host time.
 
 
 ---

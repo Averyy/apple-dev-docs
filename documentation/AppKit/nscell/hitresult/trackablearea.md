@@ -26,6 +26,8 @@ NSCellHitTrackableArea
   A content area in the cell.
 - [static var editableTextArea: NSCell.HitResult](./editabletextarea.md)
   An editable text area of the cell.
+- [NSCellHitNone](../../nscellhitresult/nscellhitnone.md)
+  An empty area, or did not hit in the cell.
 
 
 ---

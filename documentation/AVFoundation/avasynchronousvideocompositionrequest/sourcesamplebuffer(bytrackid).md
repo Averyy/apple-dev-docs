@@ -53,6 +53,12 @@ A sample buffer, or `nil` if not found.
   Returns a source timed metadata group for the track that contains the specified identifier.
 - [var sourceTrackIDs: [NSNumber]](./sourcetrackids.md)
   The identifiers of tracks that contain source video.
+- [- attachSpatialVideoConfiguration:toPixelBuffer:](./attachspatialvideoconfiguration_topixelbuffer_.md)
+  Associates the pixel buffer with the specified spatial configuration.
+- [sourceSampleDataTrackIDs](./sourcesampledatatrackids-9vxz5.md)
+  The identifiers of tracks that contain source metadata.
+- [- sourceTaggedBufferGroupByTrackID:](./sourcetaggedbuffergroupbytrackid_.md)
+  Returns the source CMTaggedBufferGroupRef for the given track ID.
 
 
 ---

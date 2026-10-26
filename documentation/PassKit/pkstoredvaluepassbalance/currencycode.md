@@ -35,6 +35,8 @@ var currencyCode: String? { get }
   The type of value that the balance represents, such as money or points.
 - [PKStoredValuePassBalance.BalanceType](./balancetype-swift.struct.md)
   The type of value that the balance represents, such as money or points.
+- [amount](./amount-2vfd3.md)
+  The current balance in money or points.
 
 
 ---

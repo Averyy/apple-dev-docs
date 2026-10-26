@@ -33,6 +33,7 @@ class DOMHTMLTextAreaElement
 - [var type: String!](./domhtmltextareaelement/type.md)
 - [var value: String!](./domhtmltextareaelement/value.md)
 - [var willValidate: Bool](./domhtmltextareaelement/willvalidate.md)
+- [accessKey](./domhtmltextareaelement/accesskey.md)
 ### Instance Methods
 - [func select()](./domhtmltextareaelement/select%28%29.md)
 - [func setSelectionRange(Int32, end: Int32)](./domhtmltextareaelement/setselectionrange%28_,end%29.md)

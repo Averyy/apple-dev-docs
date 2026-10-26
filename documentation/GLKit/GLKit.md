@@ -87,6 +87,11 @@ On iOS, GLKit requires an OpenGL ES 2.0 context. In macOS, GLKit requires an Ope
 - [GLKit Constants](./glkit-constants.md)
 - [GLKit Functions](./glkit-functions.md)
 - [GLKit Data Types](./glkit-data-types.md)
+### Macros
+- [GLK_EXTERN](./glk_extern.md)
+- [GLK_INLINE](./glk_inline.md)
+- [OPENGLES_DEPRECATED](./opengles_deprecated.md)
+- [OPENGL_DEPRECATED](./opengl_deprecated.md)
 
 ## See Also
 

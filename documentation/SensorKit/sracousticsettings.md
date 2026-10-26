@@ -30,6 +30,7 @@ class SRAcousticSettings
 - [var headphoneSafetyAudioLevel: Double?](./sracousticsettings/headphonesafetyaudiolevel-5lc1v.md)
 - [var isEnvironmentalSoundMeasurementsEnabled: Bool](./sracousticsettings/isenvironmentalsoundmeasurementsenabled.md)
 - [var musicEQSettings: SRAcousticSettings.MusicEQ](./sracousticsettings/musiceqsettings.md)
+- [headphoneSafetyAudioLevel](./sracousticsettings/headphonesafetyaudiolevel-9ziqo.md)
 ### Enumerations
 - [SRAcousticSettings.SampleLifetime](./sracousticsettings/samplelifetime.md)
 

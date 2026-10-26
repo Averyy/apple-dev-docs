@@ -30,6 +30,10 @@ When the framework detects sensitive content in the video stream, it pauses anal
 ### Responding to sensitive content
 - [var analysis: SCSensitivityAnalysis?](./analysis.md)
   The results of the first detected sensitive video frame.
+- [analysisChangedHandler](./analysischangedhandler.md)
+  A handler that your app provides to react to sensitive content detection.
+- [SCVideoStreamAnalysisChangeHandler](../scvideostreamanalysischangehandler.md)
+  A handler your app provides to receive video-stream analysis results.
 
 
 ---

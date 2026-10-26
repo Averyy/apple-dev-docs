@@ -32,6 +32,8 @@ var dimmingVisualEffect: UIBlurEffect? { get set }
   An object that contains a zoom transition’s starting and ending views.
 - [var dimmingColor: UIColor?](./dimmingcolor.md)
   The dimming color.
+- [alignmentRectProvider](../../../uizoomtransitionoptions/alignmentrectprovider.md)
+  A block that returns the alignment rectangle for the starting and ending views.
 
 
 ---

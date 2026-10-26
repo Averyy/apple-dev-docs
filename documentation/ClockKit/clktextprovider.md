@@ -30,6 +30,8 @@ Typically, you don’t create instances of this class yourself. Instead, you cre
 ### Creating a Compound Text Provider
 - [convenience init(format: String, any CVarArg...)](./clktextprovider/init%28format,_%29.md)
   Creates and returns a text provider built from the specified format string.
+- [+ textProviderWithFormat:](./clktextprovider/textproviderwithformat_.md)
+  Creates and returns a text provider built from the specified format string.
 ### Creating Localized Text Providers
 - [class func localizableTextProvider(withStringsFileTextKey: String) -> Self](./clktextprovider/localizabletextprovider%28withstringsfiletextkey%29.md)
   Creates a localizable simple text provider using the strings file key for the text.

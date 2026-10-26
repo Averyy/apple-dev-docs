@@ -25,6 +25,7 @@ VideoToolbox is a low-level framework that provides direct access to hardware en
   An interface for accessing a range of different video-processing features.
 ### Motion Estimation
 - [class VTMotionEstimationSession](./vtmotionestimationsession.md)
+- [VTMotionEstimationSession](./vtmotionestimationsession-api-collection.md)
 ### Compression
 - [Encoding video for low-latency conferencing](./encoding-video-for-low-latency-conferencing.md)
   Configure a compression session to optimize encoding for video-conferencing apps.
@@ -48,11 +49,17 @@ VideoToolbox is a low-level framework that provides direct access to hardware en
 ### RAW Processing
 - [class VTRAWProcessingSession](./vtrawprocessingsession.md)
   An object that processes frames in camera native formats such as RAW or Bayer.
+- [VTRAWProcessingSession](./vtrawprocessingsession-api-collection.md)
+  An object that processes frames in camera native formats such as RAW or Bayer.
 ### Media Extension
 - [struct VTExtensionPropertiesKey](./vtextensionpropertieskey.md)
   A key in a Media Extension extension properties dictionary.
+- [VTCopyVideoDecoderExtensionProperties](./vtcopyvideodecoderextensionproperties.md)
+  Returns information about the Media Extension video decoder required to decode the specified format.
 ### HDR Metadata
 - [class VTHDRPerFrameMetadataGenerationSession](./vthdrperframemetadatagenerationsession.md)
+  An object that generates per-frame HDR metadata.
+- [VTHDRPerFrameMetadataGenerationSession](./vthdrperframemetadatagenerationsession-api-collection.md)
   An object that generates per-frame HDR metadata.
 ### Codec Support
 - [func VTIsHardwareDecodeSupported(CMVideoCodecType) -> Bool](./vtishardwaredecodesupported%28_%29.md)

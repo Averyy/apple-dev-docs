@@ -46,6 +46,12 @@ Use this method to include a message in the confirmation panel in addition to th
   Displays an open panel for a file input control.
 - [func webView(WebView!, runOpenPanelForFileButtonWith: (any WebOpenPanelResultListener)!, allowMultipleFiles: Bool)](./webview%28_,runopenpanelforfilebuttonwith,allowmultiplefiles%29.md)
   Displays an open panel for a file input control.
+- [- webView:runJavaScriptAlertPanelWithMessage:](./webview_runjavascriptalertpanelwithmessage_.md)
+  Displays a JavaScript alert panel.
+- [- webView:runJavaScriptConfirmPanelWithMessage:](./webview_runjavascriptconfirmpanelwithmessage_.md)
+  Displays a JavaScript confirm panel.
+- [- webView:runJavaScriptTextInputPanelWithPrompt:defaultText:](./webview_runjavascripttextinputpanelwithprompt_defaulttext_.md)
+  Displays a JavaScript text input panel and returns the entered text.
 
 
 ---

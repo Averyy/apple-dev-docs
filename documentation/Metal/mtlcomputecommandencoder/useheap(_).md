@@ -59,6 +59,10 @@ Apps typically call the method for heaps that have resources in argument buffers
   Ensures kernel calls that the system encodes in subsequent commands have access to multiple resources.
 - [func useHeaps([any MTLHeap])](./useheaps%28_%29.md)
   Ensures the shaders in the render pass’s subsequent draw commands have access to all of the resources you allocate from multiple heaps.
+- [- useResources:count:usage:](./useresources_count_usage_.md)
+  Ensures kernel calls that the system encodes in subsequent commands have access to multiple resources.
+- [- useHeaps:count:](./useheaps_count_.md)
+  Ensures the shaders in the render pass’s subsequent draw commands have access to all of the resources you allocate from multiple heaps.
 
 
 ---

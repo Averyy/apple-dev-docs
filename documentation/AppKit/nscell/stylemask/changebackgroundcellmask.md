@@ -28,6 +28,8 @@ NSChangeBackgroundCellMask
   The button cell displays its alternate icon and/or title.
 - [static var changeGrayCellMask: NSCell.StyleMask](./changegraycellmask.md)
   The button cell swaps the “control color” (the [`controlColor`](../../nscolor/controlcolor.md) method of `NSColor`) and white pixels on its background and icon.
+- [NSNoCellMask](../../nscellstylemask/nsnocellmask.md)
+  The button cell doesn’t change.
 
 
 ---

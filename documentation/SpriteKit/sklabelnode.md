@@ -47,6 +47,8 @@ class SKLabelNode
   Initializes a new label object with a text string.
 - [convenience init(attributedText: NSAttributedString?)](./sklabelnode/init%28attributedtext%29.md)
   Initializes a new label object with an attributed text string.
+- [+ labelNodeWithFontNamed:](./sklabelnode/labelnodewithfontnamed_.md)
+  Initializes a new label object.
 ### Setting a Label’s Text
 - [var text: String?](./sklabelnode/text.md)
   The string that the label node displays.

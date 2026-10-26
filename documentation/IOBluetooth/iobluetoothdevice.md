@@ -132,6 +132,33 @@ An IOBluetoothDevice object may exist independent of the existence of a baseband
   Send an echo request over the L2CAP connection to a remote device.
 - [func setSupervisionTimeout(UInt16) -> IOReturn](./iobluetoothdevice/setsupervisiontimeout%28_%29.md)
   Sets the connection supervision timeout.
+- [- getAddressString](./iobluetoothdevice/getaddressstring.md)
+  Get a string representation of the Bluetooth device address for the target device. The format of the string is the same as returned by IOBluetoothNSStringFromDeviceAddress().
+- [- getClassOfDevice](./iobluetoothdevice/getclassofdevice.md)
+  Gets the full class of device value for the remote device.
+- [- getConnectionHandle](./iobluetoothdevice/getconnectionhandle.md)
+  Get the connection handle for the baseband connection.
+- [- getDeviceClassMajor](./iobluetoothdevice/getdeviceclassmajor.md)
+  Get the major device class of the device.
+- [- getDeviceClassMinor](./iobluetoothdevice/getdeviceclassminor.md)
+  Get the minor service class of the device.
+- [- getDeviceRef](./iobluetoothdevice/getdeviceref.md)
+  Returns an IOBluetoothDeviceRef representation of the target IOBluetoothDevice object.
+- [- getLastNameUpdate](./iobluetoothdevice/getlastnameupdate.md)
+  Get the date/time of the last successful remote name request.
+- [- getName](./iobluetoothdevice/getname.md)
+  Get the human readable name of the remote device.
+- [- getNameOrAddress](./iobluetoothdevice/getnameoraddress.md)
+  Get the human readable name of the remote device. If the name is not present, it will return a string containing the device’s address.
+- [- getServiceClassMajor](./iobluetoothdevice/getserviceclassmajor.md)
+  Get the major service class of the device.
+- [- getServices](./iobluetoothdevice/getservices.md)
+- [- handsFreeAudioGatewayDriverID](./iobluetoothdevice/handsfreeaudiogatewaydriverid.md)
+- [- handsFreeDeviceDriverID](./iobluetoothdevice/handsfreedevicedriverid.md)
+- [- openL2CAPChannel:findExisting:newChannel:](./iobluetoothdevice/openl2capchannel_findexisting_newchannel_.md)
+  Opens a new L2CAP channel to the target device. Returns immedialty after starting the opening process.
+- [- openRFCOMMChannel:channel:](./iobluetoothdevice/openrfcommchannel_channel_.md)
+  Opens a new RFCOMM channel to the target device. Returns only once the channel is open or failed to open.
 ### Type Methods
 - [class func favoriteDevices() -> [Any]!](./iobluetoothdevice/favoritedevices%28%29.md)
   Gets an array of the user’s favorite devices.
@@ -141,6 +168,27 @@ An IOBluetoothDevice object may exist independent of the existence of a baseband
   Gets an array of recently used Bluetooth devices.
 - [class func register(forConnectNotifications: Any!, selector: Selector!) -> IOBluetoothUserNotification!](./iobluetoothdevice/register%28forconnectnotifications,selector%29.md)
   Allows a client to register for device connect notifications for any connection.
+- [+ withAddress:](./iobluetoothdevice/withaddress_.md)
+- [+ withDeviceRef:](./iobluetoothdevice/withdeviceref_.md)
+  Method call to convert an IOBluetoothDeviceRef into an IOBluetoothDevice *.
+### Instance Variables
+- [mAddress](./iobluetoothdevice/maddress.md)
+- [mClassOfDevice](./iobluetoothdevice/mclassofdevice.md)
+- [mClockOffset](./iobluetoothdevice/mclockoffset.md)
+- [mConnectionHandle](./iobluetoothdevice/mconnectionhandle.md)
+- [mDeviceConnectNotification](./iobluetoothdevice/mdeviceconnectnotification.md)
+- [mEncryptionMode](./iobluetoothdevice/mencryptionmode.md)
+- [mLastInquiryUpdate](./iobluetoothdevice/mlastinquiryupdate.md)
+- [mLastNameUpdate](./iobluetoothdevice/mlastnameupdate.md)
+- [mLastServicesUpdate](./iobluetoothdevice/mlastservicesupdate.md)
+- [mLinkType](./iobluetoothdevice/mlinktype.md)
+- [mName](./iobluetoothdevice/mname.md)
+- [mPageScanMode](./iobluetoothdevice/mpagescanmode.md)
+- [mPageScanPeriodMode](./iobluetoothdevice/mpagescanperiodmode.md)
+- [mPageScanRepetitionMode](./iobluetoothdevice/mpagescanrepetitionmode.md)
+- [mRFCOMMConnection](./iobluetoothdevice/mrfcommconnection.md)
+- [mServerDevice](./iobluetoothdevice/mserverdevice.md)
+- [mServiceArray](./iobluetoothdevice/mservicearray.md)
 
 ## Relationships
 

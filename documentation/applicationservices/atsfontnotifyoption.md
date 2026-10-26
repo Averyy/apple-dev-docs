@@ -27,6 +27,9 @@ typedef enum ATSFontNotifyOption : unsigned int {
 - [init(rawValue: UInt32)](./atsfontnotifyoption/api-1463214-init.md)
 ### Instance Properties
 - [var rawValue: UInt32](./atsfontnotifyoption/api-1460764-rawvalue.md)
+### Constants
+- [kATSFontNotifyOptionDefault](./atsfontnotifyoption/katsfontnotifyoptiondefault.md)
+- [kATSFontNotifyOptionReceiveWhileSuspended](./atsfontnotifyoption/katsfontnotifyoptionreceivewhilesuspended.md)
 
 ## Relationships
 

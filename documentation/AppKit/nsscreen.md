@@ -56,6 +56,8 @@ Create the application object before you use the methods in this class, so that 
 - [enum NSDisplayGamut](./nsdisplaygamut.md)
 - [class var screensHaveSeparateSpaces: Bool](./nsscreen/screenshaveseparatespaces.md)
   Returns a Boolean value indicating whether each screen can have its own set of spaces.
+- [- userSpaceScaleFactor](./nsscreen/userspacescalefactor.md)
+  Returns the scaling factor from user space to device space on the screen.
 ### Converting Between Screen and Backing Coordinates
 - [func backingAlignedRect(NSRect, options: AlignmentOptions) -> NSRect](./nsscreen/backingalignedrect%28_,options%29.md)
   Converts a rectangle in global screen coordinates to a pixel aligned rectangle.
@@ -106,6 +108,10 @@ Create the application object before you use the methods in this class, so that 
 - [var cgDirectDisplayID: CGDirectDisplayID?](./nsscreen/cgdirectdisplayid-8ph5i.md)
   The CGDirectDisplayID for this screen. This will return nil if there isn’t one and will never return kCGNullDirectDisplay.
 - [var touchCapabilities: NSScreen.TouchCapabilities](./nsscreen/touchcapabilities-swift.property.md)
+- [CGDirectDisplayID](./nsscreen/cgdirectdisplayid-7uvhw.md)
+  The CGDirectDisplayID for this screen. This will return kCGNullDirectDisplay if there isn’t one.
+- [auxiliaryTopLeftArea](./nsscreen/auxiliarytopleftarea-4ow3p.md)
+- [auxiliaryTopRightArea](./nsscreen/auxiliarytoprightarea-6gb2v.md)
 
 ## Relationships
 

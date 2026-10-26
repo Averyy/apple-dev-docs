@@ -50,6 +50,8 @@ To include [`CNContactNoteKey`](../cncontactnotekey.md) in the array of keys in 
   Fetches the unified contact that’s the *me* card.
 - [func unifiedContact(withIdentifier: String, keysToFetch: [any CNKeyDescriptor]) throws -> CNContact](./unifiedcontact%28withidentifier,keystofetch%29.md)
   Fetches a unified contact for the specified contact identifier.
+- [- enumeratorForContactFetchRequest:error:](./enumeratorforcontactfetchrequest_error_.md)
+  Enumerates a contact fetch request.
 
 
 ---

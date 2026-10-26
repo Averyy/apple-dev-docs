@@ -57,6 +57,8 @@ Create a [`WKFindConfiguration`](./wkfindconfiguration.md) object and configure 
 ### Related Documentation
 - [func find(String, configuration: WKFindConfiguration, completionHandler: (WKFindResult) -> Void)](./wkwebview/find%28_,configuration,completionhandler%29.md)
   Searches for the specified string in the web view’s content.
+- [- findString:withConfiguration:completionHandler:](./wkwebview/findstring_withconfiguration_completionhandler_.md)
+  Searches for the specified string in the web view’s content.
 ### Page-level search
 - [class WKFindResult](./wkfindresult.md)
   An object that contains the results of searching the web view’s contents.

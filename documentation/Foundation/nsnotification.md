@@ -56,6 +56,10 @@ You can subclass [`NSNotification`](./nsnotification.md) to contain information 
   Initializes a notification with a specified name, object, and user information.
 - [NSNotification.Name](./nsnotification/name-swift.struct.md)
   A structure that defines the name of a notification.
+- [- init](./nsnotification/init.md)
+  Initializes an empty notification.
+- [+ notificationWithName:object:userInfo:](./nsnotification/notificationwithname_object_userinfo_.md)
+  Returns a notification object with a specified name, object, and user information.
 ### Getting Notification Information
 - [var name: NSNotification.Name](./nsnotification/name-swift.property.md)
   The name of the notification.
@@ -84,6 +88,11 @@ You can subclass [`NSNotification`](./nsnotification.md) to contain information 
 
 ### Related Documentation
 - [Notification Programming Topics](https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/Notifications/Introduction/introNotifications.html#//apple_ref/doc/uid/10000043i)
+### Notifications
+- [NSNotificationCenter](./notificationcenter.md)
+  A notification dispatch mechanism that enables the broadcast of information to registered observers.
+- [NSNotificationQueue](./notificationqueue.md)
+  A notification center buffer.
 
 
 ---

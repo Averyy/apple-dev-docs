@@ -56,6 +56,10 @@ enum CKSubscriptionType : NSInteger;
   A type that represents a subscription’s identifier.
 - [var subscriptionType: CKSubscription.SubscriptionType](./subscriptiontype-swift.property.md)
   The behavior that a subscription provides.
+- [subscriptionID](./subscriptionid-12vxy.md)
+  The subscription’s unique identifier.
+- [CKSubscriptionID](../cksubscriptionid.md)
+  A type that represents a subscription’s identifier.
 
 
 ---

@@ -130,6 +130,26 @@ let sectionSnapshot = sectionSnapshotRef as NSDiffableDataSourceSectionSnapshot<
 - [NSCopying](../Foundation/nscopying.md)
 - [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
+## See Also
+
+### Data
+- [Updating collection views using diffable data sources](./updating-collection-views-using-diffable-data-sources.md)
+  Streamline the display and update of data in a collection view using a diffable data source that contains identifiers.
+- [Implementing modern collection views](./implementing-modern-collection-views.md)
+  Bring compositional layouts to your app and simplify updating your user interface with diffable data sources.
+- [Building high-performance lists and collection views](./building-high-performance-lists-and-collection-views.md)
+  Improve the performance of lists and collections in your app with prefetching and image preparation.
+- [UICollectionViewDiffableDataSource](./uicollectionviewdiffabledatasourcereference.md)
+  The object you use to manage data and provide cells for a collection view.
+- [UICollectionViewDataSource](./uicollectionviewdatasource.md)
+  The methods adopted by the object you use to manage data and provide cells for a collection view.
+- [UICollectionViewDataSourcePrefetching](./uicollectionviewdatasourceprefetching.md)
+  A protocol that provides advance warning of the data requirements for a collection view, allowing the triggering of asynchronous data load operations.
+- [NSDiffableDataSourceSnapshot](./nsdiffabledatasourcesnapshotreference.md)
+  A representation of the state of the data in a view at a specific point in time.
+- [UIRefreshControl](./uirefreshcontrol.md)
+  A standard control that can initiate the refreshing of a scroll view’s contents.
+
 
 ---
 

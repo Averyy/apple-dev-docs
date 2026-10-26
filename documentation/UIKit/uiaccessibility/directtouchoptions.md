@@ -51,6 +51,9 @@ Specify `DirectTouchOptions` to customize VoiceOver regions using these two cons
   Inhibits passthrough to the direct touch area until a person double-taps the element.
 - [static var silentOnTouch: UIAccessibility.DirectTouchOptions](./directtouchoptions/silentontouch.md)
   Allows a direct touch area to immediately receive touch events without triggering VoiceOver audio.
+### Enumeration Cases
+- [UIAccessibilityDirectTouchOptionNone](../uiaccessibilitydirecttouchoptions/uiaccessibilitydirecttouchoptionnone.md)
+  Allows a direct touch area to receive touch events with VoiceOver speaking normally.
 
 ## Relationships
 

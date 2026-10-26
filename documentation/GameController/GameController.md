@@ -96,6 +96,8 @@ To support racing wheel devices in your macOS app, see [Racing wheel device supp
   The common properties for an element that has touch state input.
 - [protocol GCPressedStateInput](./gcpressedstateinput.md)
   The common properties for an element that has press state input, such as input from a button.
+- [GCInputButtonName](./gcinputbuttonname.md)
+  The Objective-C type for an input button name.
 ### Racing wheels
 - [Racing wheel device support](./racing-wheel-device-support.md)
   Add support for racing wheel devices in macOS.
@@ -123,6 +125,8 @@ To support racing wheel devices in your macOS app, see [Racing wheel device supp
 - [class GCDeviceType](./gcdevicetype.md)
   A class representing a type of spatial accessory.
 - [class GCSpatialAccessory](./gcspatialaccessory.md)
+- [GCControllerHomeButtonSettingsManager](./gccontrollerhomebuttonsettingsmanager-10hl4.md)
+  Access the game controller system Home button settings.
 ### Protocols
 - [protocol GCPhysicalInputExtents](./gcphysicalinputextents.md)
   Physical extents scale the normalized value reported by `GCLinearInput` into physical units.
@@ -135,6 +139,28 @@ To support racing wheel devices in your macOS app, see [Racing wheel device supp
   How the system responds to a press of the game controller Home button outside of contexts where an action of the front-most app takes priority.
 - [enum GCControllerHomeButtonSettingsCustomizationActivity](./gccontrollerhomebuttonsettingscustomizationactivity.md)
   A hint passed to `-openControllerHomeButtonSettingsForActivity:` to indicate the reason the app is requesting to open Settings.
+### Variables
+- [GCInputGripButton](./gcinputgripbutton.md)
+- [GCInputLeftSideButton](./gcinputleftsidebutton.md)
+- [GCInputRightSideButton](./gcinputrightsidebutton.md)
+- [GCInputStylusPrimaryButton](./gcinputstylusprimarybutton-2dayc.md)
+  The stylus side button nearest the tip.
+- [GCInputStylusSecondaryButton](./gcinputstylussecondarybutton-a8q.md)
+  The stylus side button above the primary button.
+- [GCInputStylusTip](./gcinputstylustip-817rt.md)
+  The stylus tip button used to detect contact with a surface.
+- [GCInputThumbstick](./gcinputthumbstick.md)
+- [GCInputThumbstickButton](./gcinputthumbstickbutton.md)
+- [GCInputTrigger](./gcinputtrigger.md)
+- [GCSpatialAccessoryDidConnectNotification](./gcspatialaccessorydidconnectnotification.md)
+  Use these constants with NSNotificationCenter to listen to connection and disconnection events.
+- [GCSpatialAccessoryDidDisconnectNotification](./gcspatialaccessorydiddisconnectnotification.md)
+### Macros
+- [GAMECONTROLLER_EXPORT](./gamecontroller_export.md)
+- [GAMECONTROLLER_EXTERN](./gamecontroller_extern.md)
+### Type Aliases
+- [GCControllerHomeButtonSettingsDidChangeHandler](./gccontrollerhomebuttonsettingsdidchangehandler.md)
+  The type of the block that is scheduled after Home button settings change.
 
 
 ---

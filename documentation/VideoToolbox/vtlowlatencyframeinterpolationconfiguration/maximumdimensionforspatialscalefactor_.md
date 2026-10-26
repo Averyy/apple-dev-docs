@@ -1,0 +1,30 @@
+# maximumDimensionForSpatialScaleFactor:
+
+**Framework**: Video Toolbox  
+**Kind**: method  
+**Role**: Type Method
+
+The maximum value for either dimension of the source frame, in pixels, for a given spatial scale factor.
+
+**Availability**:
+- iOS 27.0+
+- iPadOS 27.0+
+- Mac Catalyst 27.0+
+- macOS 27.0+
+- tvOS 27.0+
+- visionOS 27.0+
+
+## Declaration
+
+```objc
++ (NSInteger) maximumDimensionForSpatialScaleFactor:(NSInteger) spatialScaleFactor;
+```
+
+#### Discussion
+
+Both `frameWidth` and `frameHeight` must be less than or equal to this value. Use in conjunction with [`maximumPixelCountForSpatialScaleFactor:`](./maximumpixelcountforspatialscalefactor_.md) to determine valid frame dimensions. For example, if [`maximumDimensionForSpatialScaleFactor:`](./maximumdimensionforspatialscalefactor_.md) is 1920 and [`maximumPixelCountForSpatialScaleFactor:`](./maximumpixelcountforspatialscalefactor_.md) corresponds to 1920×1080, then 1920×1080, 1080×1920, and 1440×1440 are all valid, but 1920×1920 is not. Pass `1` for `spatialScaleFactor` when using the processor for temporal interpolation without spatial scaling. Returns `0` if an unsupported scale factor is provided or if processor is unsupported.
+
+
+---
+
+*[View on Apple Developer](https://developer.apple.com/documentation/videotoolbox/vtlowlatencyframeinterpolationconfiguration/maximumdimensionforspatialscalefactor:)*

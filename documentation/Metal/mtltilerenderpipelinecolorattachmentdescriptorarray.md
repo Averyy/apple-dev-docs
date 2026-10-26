@@ -29,6 +29,8 @@ class MTLTileRenderPipelineColorAttachmentDescriptorArray
 ### Instance methods
 - [subscript(Int) -> MTLTileRenderPipelineColorAttachmentDescriptor](./mtltilerenderpipelinecolorattachmentdescriptorarray/subscript%28_%29.md)
   Returns the render pipeline state for the specified color attachment.
+- [- setObject:atIndexedSubscript:](./mtltilerenderpipelinecolorattachmentdescriptorarray/setobject_atindexedsubscript_.md)
+  Sets the render pipeline state for a specified color attachment.
 
 ## Relationships
 

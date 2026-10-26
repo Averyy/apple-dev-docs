@@ -42,6 +42,8 @@ You can animate changes to this property’s value. See [Animating SceneKit Cont
   The width or depth of each chamfered edge. Animatable.
 - [var chamferProfile: UIBezierPath?](./chamferprofile.md)
   A path that determines the cross-sectional contour of each chamfered edge.
+- [chamferSegmentCount](./chamfersegmentcount.md)
+  The number of divisions SceneKit uses to create each chamfered edge of the text geometry. Animatable.
 
 
 ---

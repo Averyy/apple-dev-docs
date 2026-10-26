@@ -31,6 +31,8 @@ enum MusicSequenceFileFlags : UInt32;
   Specifies that an existing file should be erased when creating a new file.
 ### Initializers
 - [init(rawValue: UInt32)](./musicsequencefileflags/init%28rawvalue%29.md)
+### Enumeration Cases
+- [kMusicSequenceFileFlags_Default](./musicsequencefileflags/kmusicsequencefileflags_default.md)
 
 ## Relationships
 

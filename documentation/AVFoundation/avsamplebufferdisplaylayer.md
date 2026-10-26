@@ -54,6 +54,8 @@ class AVSampleBufferDisplayLayer
   A notification the system posts when a sample buffer display layer fails to decode.
 - [let AVSampleBufferDisplayLayerFailedToDecodeNotificationErrorKey: String](./avsamplebufferdisplaylayerfailedtodecodenotificationerrorkey.md)
   The key for the corresponding error.
+- [AVSampleBufferDisplayLayerFailedToDecodeNotification](./avsamplebufferdisplaylayerfailedtodecodenotification.md)
+  A notification the system posts when a sample buffer display layer fails to decode.
 ### Deprecated
 - [Deprecated symbols](./avsamplebufferdisplaylayer-deprecated-symbols.md)
   Review unsupported symbols and their replacements.

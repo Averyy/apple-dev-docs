@@ -26,6 +26,9 @@ Animate your views and other content to create a more engaging experience for us
   An object that manages the timing and progress of animations in the user interface.
 - [protocol NSAnimationDelegate](./nsanimationdelegate.md)
   A set of optional methods implemented by delegates of [`NSAnimation`](./nsanimation.md) objects.
+### System Animations
+- [NSShowAnimationEffect](./nsshowanimationeffect.md)
+  Runs a system animation effect.
 
 ## See Also
 

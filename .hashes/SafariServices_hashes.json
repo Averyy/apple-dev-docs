@@ -190,6 +190,201 @@
       "file_path": "documentation/SafariServices/setting-safari-app-extension-feature-keys.md",
       "hash": "d89ce58ad61ac559119209225532703177fea418e1981a630cf210ee7ee50dca"
     },
+    "https://developer.apple.com/documentation/safariservices/sf_available_mac_safari": {
+      "etag": "\"a61-65d55aeb5b2e6-df\"",
+      "file_path": "documentation/SafariServices/sf_available_mac_safari.md",
+      "hash": "e820d47fbe7213dd65a683640cb726d9489b30465adc01e71ef9d4f2b50ed569"
+    },
+    "https://developer.apple.com/documentation/safariservices/sf_available_mac_safari_10_0": {
+      "etag": "\"a3d-65d55aeb3cfca-df\"",
+      "file_path": "documentation/SafariServices/sf_available_mac_safari_10_0.md",
+      "hash": "4832974629219823752c5a18181de05fca2d7c64b9739c040f698ac9c5068047"
+    },
+    "https://developer.apple.com/documentation/safariservices/sf_available_mac_safari_10_1": {
+      "etag": "\"a3d-65d55aeb3cfca-df\"",
+      "file_path": "documentation/SafariServices/sf_available_mac_safari_10_1.md",
+      "hash": "894a2f94613f5be9daf285d686ad5a53d47480c4e98036040a8ad14882da04f6"
+    },
+    "https://developer.apple.com/documentation/safariservices/sf_available_mac_safari_11_0": {
+      "etag": "\"a3d-65d55aeb77111-df\"",
+      "file_path": "documentation/SafariServices/sf_available_mac_safari_11_0.md",
+      "hash": "310ad77eee779e6f92296b57e018bb191b9495191757e0bba27130b6cb0c6079"
+    },
+    "https://developer.apple.com/documentation/safariservices/sf_available_mac_safari_11_1": {
+      "etag": "\"a3d-65d55aeb81d0d-df\"",
+      "file_path": "documentation/SafariServices/sf_available_mac_safari_11_1.md",
+      "hash": "b7b1655c700b0e1653fdd6200c4fa25af50b36d20404e3093d310f1cbeb8a4d3"
+    },
+    "https://developer.apple.com/documentation/safariservices/sf_available_mac_safari_12_0": {
+      "etag": "\"a3d-65d55aeb3cfca-df\"",
+      "file_path": "documentation/SafariServices/sf_available_mac_safari_12_0.md",
+      "hash": "176a4d45f88943b60e954d87740f9d7b28337b0cc4d97b23829da85b025f3c91"
+    },
+    "https://developer.apple.com/documentation/safariservices/sf_available_mac_safari_12_1": {
+      "etag": "\"a3d-65d55aeb3cfca-df\"",
+      "file_path": "documentation/SafariServices/sf_available_mac_safari_12_1.md",
+      "hash": "829e0198f4a1766bdbe9053e88348055365b04d7d5dd62601a877837042d4875"
+    },
+    "https://developer.apple.com/documentation/safariservices/sf_available_mac_safari_13_0": {
+      "etag": "\"a3d-65d55aeb77111-df\"",
+      "file_path": "documentation/SafariServices/sf_available_mac_safari_13_0.md",
+      "hash": "ffe462b9eeb09417393f2975c9cfa0b03161561c819cd8b287bc9fa7a7dff07f"
+    },
+    "https://developer.apple.com/documentation/safariservices/sf_available_mac_safari_14_0": {
+      "etag": "\"a3d-65d55aeb03240-df\"",
+      "file_path": "documentation/SafariServices/sf_available_mac_safari_14_0.md",
+      "hash": "41faacb69a57dacaf18e518da41b98cbdb62bffb20280f42237fa61d5a163b3d"
+    },
+    "https://developer.apple.com/documentation/safariservices/sf_available_mac_safari_17_0": {
+      "etag": "\"a3d-65d55aeb5b2e6-df\"",
+      "file_path": "documentation/SafariServices/sf_available_mac_safari_17_0.md",
+      "hash": "e733501da4e4168790dc4d95745f7b8c4ee662b98d306d845836181297801ab7"
+    },
+    "https://developer.apple.com/documentation/safariservices/sf_available_mac_safari_18_4": {
+      "etag": "\"a3d-65d55aeb5b2e6-df\"",
+      "file_path": "documentation/SafariServices/sf_available_mac_safari_18_4.md",
+      "hash": "365142b4f7d3fdb94199bb59bcb12b33bcf49c8ea637a325cabdcd3bb0104e55"
+    },
+    "https://developer.apple.com/documentation/safariservices/sf_available_mac_safari_27_0": {
+      "etag": "\"a3d-65d55aeb77111-df\"",
+      "file_path": "documentation/SafariServices/sf_available_mac_safari_27_0.md",
+      "hash": "01c77fba2a70359bd56931bdc90fb87f03f86bd8a5af3cf7646513bfb2ae4eab"
+    },
+    "https://developer.apple.com/documentation/safariservices/sf_class_available_mac_safari": {
+      "etag": "\"aa9-65d55aeb77111-df\"",
+      "file_path": "documentation/SafariServices/sf_class_available_mac_safari.md",
+      "hash": "757756f82204a9e19915a85c5bdaae1c43d9b622607a08489f457fa327220ab1"
+    },
+    "https://developer.apple.com/documentation/safariservices/sf_class_available_mac_safari_10_0": {
+      "etag": "\"a85-65d55aeb3cfca-df\"",
+      "file_path": "documentation/SafariServices/sf_class_available_mac_safari_10_0.md",
+      "hash": "caa6561fc372f5128696054ca5515557449389a54aa2b69d37941fba3e0330e4"
+    },
+    "https://developer.apple.com/documentation/safariservices/sf_class_available_mac_safari_10_1": {
+      "etag": "\"a85-65d55aeb3cfca-df\"",
+      "file_path": "documentation/SafariServices/sf_class_available_mac_safari_10_1.md",
+      "hash": "3c1cb5e7ae4384f12911eeb0a15c077d455475bfc22e47c4f79a6904808214b5"
+    },
+    "https://developer.apple.com/documentation/safariservices/sf_class_available_mac_safari_11_0": {
+      "etag": "\"a85-65d55aeb77111-df\"",
+      "file_path": "documentation/SafariServices/sf_class_available_mac_safari_11_0.md",
+      "hash": "65f8aa55a7f64acaf10e961405c0af27106ff2c3706f8b189650507b7617eb7d"
+    },
+    "https://developer.apple.com/documentation/safariservices/sf_class_available_mac_safari_11_1": {
+      "etag": "\"a85-65d55aeb81d0d-df\"",
+      "file_path": "documentation/SafariServices/sf_class_available_mac_safari_11_1.md",
+      "hash": "23fccaa05fa2d3f1b7764bd935949d312607da4f9714832ac5c773cf28768a3f"
+    },
+    "https://developer.apple.com/documentation/safariservices/sf_class_available_mac_safari_12_0": {
+      "etag": "\"a85-65d55aeb3cfca-df\"",
+      "file_path": "documentation/SafariServices/sf_class_available_mac_safari_12_0.md",
+      "hash": "510946420300f10ac1689cc912c23b96a742c6019ebd17672648d2bee70f9d15"
+    },
+    "https://developer.apple.com/documentation/safariservices/sf_class_available_mac_safari_12_1": {
+      "etag": "\"a85-65d55aeb3cfca-df\"",
+      "file_path": "documentation/SafariServices/sf_class_available_mac_safari_12_1.md",
+      "hash": "230a09a802b679abb39266ad5bc1c2ac991cb19c5960462e312d50521323343b"
+    },
+    "https://developer.apple.com/documentation/safariservices/sf_class_available_mac_safari_13_0": {
+      "etag": "\"a85-65d55aeb81d0d-df\"",
+      "file_path": "documentation/SafariServices/sf_class_available_mac_safari_13_0.md",
+      "hash": "07a311d287bc18341155a40e02210987954e4c1ef3c7378efaca699a64a69ce1"
+    },
+    "https://developer.apple.com/documentation/safariservices/sf_class_available_mac_safari_14_0": {
+      "etag": "\"a85-65d55aeb2099b-df\"",
+      "file_path": "documentation/SafariServices/sf_class_available_mac_safari_14_0.md",
+      "hash": "8dc30983d7f3c20eca2a86157dd3024d7af236ce6cb6300ef4e1635ab1dc90ff"
+    },
+    "https://developer.apple.com/documentation/safariservices/sf_class_available_mac_safari_17_0": {
+      "etag": "\"a85-65d55aeb5b2e6-df\"",
+      "file_path": "documentation/SafariServices/sf_class_available_mac_safari_17_0.md",
+      "hash": "f69ddce3bc3ea4a1162b581e1f03b3b67d05ee1051175dab46d1110a108748c4"
+    },
+    "https://developer.apple.com/documentation/safariservices/sf_class_available_mac_safari_18_4": {
+      "etag": "\"a85-65d55aeb5b2e6-df\"",
+      "file_path": "documentation/SafariServices/sf_class_available_mac_safari_18_4.md",
+      "hash": "c3ae21316fad9b863cf688c35b307d2c0b5da32c925d78abf05e06982fb920bb"
+    },
+    "https://developer.apple.com/documentation/safariservices/sf_class_available_mac_safari_27_0": {
+      "etag": "\"a85-65d55aeb77111-df\"",
+      "file_path": "documentation/SafariServices/sf_class_available_mac_safari_27_0.md",
+      "hash": "a5869badd5fed7a49aa6efd7cf5fe6fbbab9877311da98542ef63c3061d5071e"
+    },
+    "https://developer.apple.com/documentation/safariservices/sf_deprecated_mac_safari": {
+      "etag": "\"acc-65d55aeb77111-df\"",
+      "file_path": "documentation/SafariServices/sf_deprecated_mac_safari.md",
+      "hash": "8464d2b491c2139018448e0d771686a2eff4b215af74576a83ea977f138019de"
+    },
+    "https://developer.apple.com/documentation/safariservices/sf_deprecated_mac_safari_10_0_11_0": {
+      "etag": "\"ae6-65d55aeb3cfca-df\"",
+      "file_path": "documentation/SafariServices/sf_deprecated_mac_safari_10_0_11_0.md",
+      "hash": "e57d56305152b5621fa78bac861e891a8db90fc0d6573b5f25566efb64f21f35"
+    },
+    "https://developer.apple.com/documentation/safariservices/sf_enum_available_mac_safari": {
+      "etag": "\"a9d-65d55aeb3cfca-df\"",
+      "file_path": "documentation/SafariServices/sf_enum_available_mac_safari.md",
+      "hash": "d03de65b23d55b0eb3391bd7a2a454c6e5ee75d15a1cf1bd55a3cc55aee88c4d"
+    },
+    "https://developer.apple.com/documentation/safariservices/sf_enum_available_mac_safari_10_0": {
+      "etag": "\"a79-65d55aeb77111-df\"",
+      "file_path": "documentation/SafariServices/sf_enum_available_mac_safari_10_0.md",
+      "hash": "e5f84e0e2920d9622d543aff288208822475129116601deb9d9162739fe71836"
+    },
+    "https://developer.apple.com/documentation/safariservices/sf_enum_available_mac_safari_10_1": {
+      "etag": "\"a79-65d55aeb77111-df\"",
+      "file_path": "documentation/SafariServices/sf_enum_available_mac_safari_10_1.md",
+      "hash": "0b5867a6a46b4e7036fc4d09dac343292bd668629e69677b06ff8d17c517e254"
+    },
+    "https://developer.apple.com/documentation/safariservices/sf_enum_available_mac_safari_11_0": {
+      "etag": "\"a79-65d55aeb2099b-df\"",
+      "file_path": "documentation/SafariServices/sf_enum_available_mac_safari_11_0.md",
+      "hash": "701e389d5ddfa89ac728e71c3dae91bb4c71f405d65f6785e1d61e33f97bf68c"
+    },
+    "https://developer.apple.com/documentation/safariservices/sf_enum_available_mac_safari_11_1": {
+      "etag": "\"a79-65d55aeb3cfca-df\"",
+      "file_path": "documentation/SafariServices/sf_enum_available_mac_safari_11_1.md",
+      "hash": "ab6e689ca11340476abb02a0ea4aa58a3159df00920d18b7ae5be100e727cc70"
+    },
+    "https://developer.apple.com/documentation/safariservices/sf_enum_available_mac_safari_12_0": {
+      "etag": "\"a79-65d55aeb77111-df\"",
+      "file_path": "documentation/SafariServices/sf_enum_available_mac_safari_12_0.md",
+      "hash": "e98910f152305e2fd86f9890200a4c9039ed1dc22118d1b70ec455882046145b"
+    },
+    "https://developer.apple.com/documentation/safariservices/sf_enum_available_mac_safari_12_1": {
+      "etag": "\"a79-65d55aeb77111-df\"",
+      "file_path": "documentation/SafariServices/sf_enum_available_mac_safari_12_1.md",
+      "hash": "75c08f4884d04098926307627cd912259ad32607c85252b752c97bde758c3271"
+    },
+    "https://developer.apple.com/documentation/safariservices/sf_enum_available_mac_safari_13_0": {
+      "etag": "\"a79-65d55aeb3cfca-df\"",
+      "file_path": "documentation/SafariServices/sf_enum_available_mac_safari_13_0.md",
+      "hash": "8a82270d98628931d610a07f99590a4668d6e6b8dcd60ca4dcd624b9aa46bc19"
+    },
+    "https://developer.apple.com/documentation/safariservices/sf_enum_available_mac_safari_14_0": {
+      "etag": "\"a79-65d55aeb77111-df\"",
+      "file_path": "documentation/SafariServices/sf_enum_available_mac_safari_14_0.md",
+      "hash": "3443e7ae8cce5b5a892c06c76515dbe0f114e1082995841a3876d76c65f688eb"
+    },
+    "https://developer.apple.com/documentation/safariservices/sf_enum_available_mac_safari_17_0": {
+      "etag": "\"a79-65d55aeae4f6f-df\"",
+      "file_path": "documentation/SafariServices/sf_enum_available_mac_safari_17_0.md",
+      "hash": "4f8330e4573325ec1657971af36155383c85951035b0f60e416464070ee561ca"
+    },
+    "https://developer.apple.com/documentation/safariservices/sf_enum_available_mac_safari_18_4": {
+      "etag": "\"a79-65d55aeb03240-df\"",
+      "file_path": "documentation/SafariServices/sf_enum_available_mac_safari_18_4.md",
+      "hash": "8270e59a6ed760bea993df4b1730963da452bf1b31ec83ed7c54f0a53364ebdb"
+    },
+    "https://developer.apple.com/documentation/safariservices/sf_enum_available_mac_safari_27_0": {
+      "etag": "\"a79-65d55aeb2099b-df\"",
+      "file_path": "documentation/SafariServices/sf_enum_available_mac_safari_27_0.md",
+      "hash": "c62b2bc4f6bb63819b5c4a20e1a72d91928f17c3cb28ea48166b87733b41cfba"
+    },
+    "https://developer.apple.com/documentation/safariservices/sf_extern": {
+      "etag": "\"a24-65d55aeb2099b-df\"",
+      "file_path": "documentation/SafariServices/sf_extern.md",
+      "hash": "031fb96cd21aaad160f9fb995417cdc276e18b86790b59a9e3c381639845c2fe"
+    },
     "https://developer.apple.com/documentation/safariservices/sfaddtohomescreenactivityitem": {
       "etag": "\"5715-65d55aeb3cfca-df\"",
       "file_path": "documentation/SafariServices/sfaddtohomescreenactivityitem.md",
@@ -1395,6 +1590,201 @@
       "file_path": "documentation/SafariServices/setting-safari-app-extension-feature-keys.md",
       "hash": "d89ce58ad61ac559119209225532703177fea418e1981a630cf210ee7ee50dca"
     },
+    "https://developer.apple.com/tutorials/data/documentation/safariservices/sf_available_mac_safari.json": {
+      "etag": "\"a61-65d55aeb5b2e6-df\"",
+      "file_path": "documentation/SafariServices/sf_available_mac_safari.md",
+      "hash": "e820d47fbe7213dd65a683640cb726d9489b30465adc01e71ef9d4f2b50ed569"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/safariservices/sf_available_mac_safari_10_0.json": {
+      "etag": "\"a3d-65d55aeb3cfca-df\"",
+      "file_path": "documentation/SafariServices/sf_available_mac_safari_10_0.md",
+      "hash": "4832974629219823752c5a18181de05fca2d7c64b9739c040f698ac9c5068047"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/safariservices/sf_available_mac_safari_10_1.json": {
+      "etag": "\"a3d-65d55aeb3cfca-df\"",
+      "file_path": "documentation/SafariServices/sf_available_mac_safari_10_1.md",
+      "hash": "894a2f94613f5be9daf285d686ad5a53d47480c4e98036040a8ad14882da04f6"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/safariservices/sf_available_mac_safari_11_0.json": {
+      "etag": "\"a3d-65d55aeb77111-df\"",
+      "file_path": "documentation/SafariServices/sf_available_mac_safari_11_0.md",
+      "hash": "310ad77eee779e6f92296b57e018bb191b9495191757e0bba27130b6cb0c6079"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/safariservices/sf_available_mac_safari_11_1.json": {
+      "etag": "\"a3d-65d55aeb81d0d-df\"",
+      "file_path": "documentation/SafariServices/sf_available_mac_safari_11_1.md",
+      "hash": "b7b1655c700b0e1653fdd6200c4fa25af50b36d20404e3093d310f1cbeb8a4d3"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/safariservices/sf_available_mac_safari_12_0.json": {
+      "etag": "\"a3d-65d55aeb3cfca-df\"",
+      "file_path": "documentation/SafariServices/sf_available_mac_safari_12_0.md",
+      "hash": "176a4d45f88943b60e954d87740f9d7b28337b0cc4d97b23829da85b025f3c91"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/safariservices/sf_available_mac_safari_12_1.json": {
+      "etag": "\"a3d-65d55aeb3cfca-df\"",
+      "file_path": "documentation/SafariServices/sf_available_mac_safari_12_1.md",
+      "hash": "829e0198f4a1766bdbe9053e88348055365b04d7d5dd62601a877837042d4875"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/safariservices/sf_available_mac_safari_13_0.json": {
+      "etag": "\"a3d-65d55aeb77111-df\"",
+      "file_path": "documentation/SafariServices/sf_available_mac_safari_13_0.md",
+      "hash": "ffe462b9eeb09417393f2975c9cfa0b03161561c819cd8b287bc9fa7a7dff07f"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/safariservices/sf_available_mac_safari_14_0.json": {
+      "etag": "\"a3d-65d55aeb03240-df\"",
+      "file_path": "documentation/SafariServices/sf_available_mac_safari_14_0.md",
+      "hash": "41faacb69a57dacaf18e518da41b98cbdb62bffb20280f42237fa61d5a163b3d"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/safariservices/sf_available_mac_safari_17_0.json": {
+      "etag": "\"a3d-65d55aeb5b2e6-df\"",
+      "file_path": "documentation/SafariServices/sf_available_mac_safari_17_0.md",
+      "hash": "e733501da4e4168790dc4d95745f7b8c4ee662b98d306d845836181297801ab7"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/safariservices/sf_available_mac_safari_18_4.json": {
+      "etag": "\"a3d-65d55aeb5b2e6-df\"",
+      "file_path": "documentation/SafariServices/sf_available_mac_safari_18_4.md",
+      "hash": "365142b4f7d3fdb94199bb59bcb12b33bcf49c8ea637a325cabdcd3bb0104e55"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/safariservices/sf_available_mac_safari_27_0.json": {
+      "etag": "\"a3d-65d55aeb77111-df\"",
+      "file_path": "documentation/SafariServices/sf_available_mac_safari_27_0.md",
+      "hash": "01c77fba2a70359bd56931bdc90fb87f03f86bd8a5af3cf7646513bfb2ae4eab"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/safariservices/sf_class_available_mac_safari.json": {
+      "etag": "\"aa9-65d55aeb77111-df\"",
+      "file_path": "documentation/SafariServices/sf_class_available_mac_safari.md",
+      "hash": "757756f82204a9e19915a85c5bdaae1c43d9b622607a08489f457fa327220ab1"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/safariservices/sf_class_available_mac_safari_10_0.json": {
+      "etag": "\"a85-65d55aeb3cfca-df\"",
+      "file_path": "documentation/SafariServices/sf_class_available_mac_safari_10_0.md",
+      "hash": "caa6561fc372f5128696054ca5515557449389a54aa2b69d37941fba3e0330e4"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/safariservices/sf_class_available_mac_safari_10_1.json": {
+      "etag": "\"a85-65d55aeb3cfca-df\"",
+      "file_path": "documentation/SafariServices/sf_class_available_mac_safari_10_1.md",
+      "hash": "3c1cb5e7ae4384f12911eeb0a15c077d455475bfc22e47c4f79a6904808214b5"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/safariservices/sf_class_available_mac_safari_11_0.json": {
+      "etag": "\"a85-65d55aeb77111-df\"",
+      "file_path": "documentation/SafariServices/sf_class_available_mac_safari_11_0.md",
+      "hash": "65f8aa55a7f64acaf10e961405c0af27106ff2c3706f8b189650507b7617eb7d"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/safariservices/sf_class_available_mac_safari_11_1.json": {
+      "etag": "\"a85-65d55aeb81d0d-df\"",
+      "file_path": "documentation/SafariServices/sf_class_available_mac_safari_11_1.md",
+      "hash": "23fccaa05fa2d3f1b7764bd935949d312607da4f9714832ac5c773cf28768a3f"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/safariservices/sf_class_available_mac_safari_12_0.json": {
+      "etag": "\"a85-65d55aeb3cfca-df\"",
+      "file_path": "documentation/SafariServices/sf_class_available_mac_safari_12_0.md",
+      "hash": "510946420300f10ac1689cc912c23b96a742c6019ebd17672648d2bee70f9d15"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/safariservices/sf_class_available_mac_safari_12_1.json": {
+      "etag": "\"a85-65d55aeb3cfca-df\"",
+      "file_path": "documentation/SafariServices/sf_class_available_mac_safari_12_1.md",
+      "hash": "230a09a802b679abb39266ad5bc1c2ac991cb19c5960462e312d50521323343b"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/safariservices/sf_class_available_mac_safari_13_0.json": {
+      "etag": "\"a85-65d55aeb81d0d-df\"",
+      "file_path": "documentation/SafariServices/sf_class_available_mac_safari_13_0.md",
+      "hash": "07a311d287bc18341155a40e02210987954e4c1ef3c7378efaca699a64a69ce1"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/safariservices/sf_class_available_mac_safari_14_0.json": {
+      "etag": "\"a85-65d55aeb2099b-df\"",
+      "file_path": "documentation/SafariServices/sf_class_available_mac_safari_14_0.md",
+      "hash": "8dc30983d7f3c20eca2a86157dd3024d7af236ce6cb6300ef4e1635ab1dc90ff"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/safariservices/sf_class_available_mac_safari_17_0.json": {
+      "etag": "\"a85-65d55aeb5b2e6-df\"",
+      "file_path": "documentation/SafariServices/sf_class_available_mac_safari_17_0.md",
+      "hash": "f69ddce3bc3ea4a1162b581e1f03b3b67d05ee1051175dab46d1110a108748c4"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/safariservices/sf_class_available_mac_safari_18_4.json": {
+      "etag": "\"a85-65d55aeb5b2e6-df\"",
+      "file_path": "documentation/SafariServices/sf_class_available_mac_safari_18_4.md",
+      "hash": "c3ae21316fad9b863cf688c35b307d2c0b5da32c925d78abf05e06982fb920bb"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/safariservices/sf_class_available_mac_safari_27_0.json": {
+      "etag": "\"a85-65d55aeb77111-df\"",
+      "file_path": "documentation/SafariServices/sf_class_available_mac_safari_27_0.md",
+      "hash": "a5869badd5fed7a49aa6efd7cf5fe6fbbab9877311da98542ef63c3061d5071e"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/safariservices/sf_deprecated_mac_safari.json": {
+      "etag": "\"acc-65d55aeb77111-df\"",
+      "file_path": "documentation/SafariServices/sf_deprecated_mac_safari.md",
+      "hash": "8464d2b491c2139018448e0d771686a2eff4b215af74576a83ea977f138019de"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/safariservices/sf_deprecated_mac_safari_10_0_11_0.json": {
+      "etag": "\"ae6-65d55aeb3cfca-df\"",
+      "file_path": "documentation/SafariServices/sf_deprecated_mac_safari_10_0_11_0.md",
+      "hash": "e57d56305152b5621fa78bac861e891a8db90fc0d6573b5f25566efb64f21f35"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/safariservices/sf_enum_available_mac_safari.json": {
+      "etag": "\"a9d-65d55aeb3cfca-df\"",
+      "file_path": "documentation/SafariServices/sf_enum_available_mac_safari.md",
+      "hash": "d03de65b23d55b0eb3391bd7a2a454c6e5ee75d15a1cf1bd55a3cc55aee88c4d"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/safariservices/sf_enum_available_mac_safari_10_0.json": {
+      "etag": "\"a79-65d55aeb77111-df\"",
+      "file_path": "documentation/SafariServices/sf_enum_available_mac_safari_10_0.md",
+      "hash": "e5f84e0e2920d9622d543aff288208822475129116601deb9d9162739fe71836"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/safariservices/sf_enum_available_mac_safari_10_1.json": {
+      "etag": "\"a79-65d55aeb77111-df\"",
+      "file_path": "documentation/SafariServices/sf_enum_available_mac_safari_10_1.md",
+      "hash": "0b5867a6a46b4e7036fc4d09dac343292bd668629e69677b06ff8d17c517e254"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/safariservices/sf_enum_available_mac_safari_11_0.json": {
+      "etag": "\"a79-65d55aeb2099b-df\"",
+      "file_path": "documentation/SafariServices/sf_enum_available_mac_safari_11_0.md",
+      "hash": "701e389d5ddfa89ac728e71c3dae91bb4c71f405d65f6785e1d61e33f97bf68c"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/safariservices/sf_enum_available_mac_safari_11_1.json": {
+      "etag": "\"a79-65d55aeb3cfca-df\"",
+      "file_path": "documentation/SafariServices/sf_enum_available_mac_safari_11_1.md",
+      "hash": "ab6e689ca11340476abb02a0ea4aa58a3159df00920d18b7ae5be100e727cc70"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/safariservices/sf_enum_available_mac_safari_12_0.json": {
+      "etag": "\"a79-65d55aeb77111-df\"",
+      "file_path": "documentation/SafariServices/sf_enum_available_mac_safari_12_0.md",
+      "hash": "e98910f152305e2fd86f9890200a4c9039ed1dc22118d1b70ec455882046145b"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/safariservices/sf_enum_available_mac_safari_12_1.json": {
+      "etag": "\"a79-65d55aeb77111-df\"",
+      "file_path": "documentation/SafariServices/sf_enum_available_mac_safari_12_1.md",
+      "hash": "75c08f4884d04098926307627cd912259ad32607c85252b752c97bde758c3271"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/safariservices/sf_enum_available_mac_safari_13_0.json": {
+      "etag": "\"a79-65d55aeb3cfca-df\"",
+      "file_path": "documentation/SafariServices/sf_enum_available_mac_safari_13_0.md",
+      "hash": "8a82270d98628931d610a07f99590a4668d6e6b8dcd60ca4dcd624b9aa46bc19"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/safariservices/sf_enum_available_mac_safari_14_0.json": {
+      "etag": "\"a79-65d55aeb77111-df\"",
+      "file_path": "documentation/SafariServices/sf_enum_available_mac_safari_14_0.md",
+      "hash": "3443e7ae8cce5b5a892c06c76515dbe0f114e1082995841a3876d76c65f688eb"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/safariservices/sf_enum_available_mac_safari_17_0.json": {
+      "etag": "\"a79-65d55aeae4f6f-df\"",
+      "file_path": "documentation/SafariServices/sf_enum_available_mac_safari_17_0.md",
+      "hash": "4f8330e4573325ec1657971af36155383c85951035b0f60e416464070ee561ca"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/safariservices/sf_enum_available_mac_safari_18_4.json": {
+      "etag": "\"a79-65d55aeb03240-df\"",
+      "file_path": "documentation/SafariServices/sf_enum_available_mac_safari_18_4.md",
+      "hash": "8270e59a6ed760bea993df4b1730963da452bf1b31ec83ed7c54f0a53364ebdb"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/safariservices/sf_enum_available_mac_safari_27_0.json": {
+      "etag": "\"a79-65d55aeb2099b-df\"",
+      "file_path": "documentation/SafariServices/sf_enum_available_mac_safari_27_0.md",
+      "hash": "c62b2bc4f6bb63819b5c4a20e1a72d91928f17c3cb28ea48166b87733b41cfba"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/safariservices/sf_extern.json": {
+      "etag": "\"a24-65d55aeb2099b-df\"",
+      "file_path": "documentation/SafariServices/sf_extern.md",
+      "hash": "031fb96cd21aaad160f9fb995417cdc276e18b86790b59a9e3c381639845c2fe"
+    },
     "https://developer.apple.com/tutorials/data/documentation/safariservices/sfaddtohomescreenactivityitem.json": {
       "etag": "\"5715-65d55aeb3cfca-df\"",
       "file_path": "documentation/SafariServices/sfaddtohomescreenactivityitem.md",
@@ -2413,8 +2803,8 @@
   },
   "metadata": {
     "render": {
-      "version": 1
+      "version": 2
     },
-    "total_pages": 482
+    "total_pages": 560
   }
 }

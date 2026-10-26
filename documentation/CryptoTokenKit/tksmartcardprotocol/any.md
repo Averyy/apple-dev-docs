@@ -33,6 +33,7 @@ Any available transmission protocols.
 - [static var t0: TKSmartCardProtocol](./t0.md)
 - [static var t1: TKSmartCardProtocol](./t1.md)
 - [static var t15: TKSmartCardProtocol](./t15.md)
+- [TKSmartCardProtocolNone](./tksmartcardprotocolnone.md)
 
 
 ---

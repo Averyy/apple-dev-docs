@@ -44,6 +44,8 @@ A leaderboard object that you initialize with this method ignores the [`playerSc
 ### Deprecated initializers
 - [init?(playerIDs: [String]?)](./init%28playerids%29.md)
   Initializes a leaderboard request to retrieve the scores of a specific group of players.
+- [- init](./init.md)
+  Initializes a default leaderboard request.
 
 
 ---

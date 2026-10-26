@@ -1,0 +1,20 @@
+# mode
+
+**Framework**: Endpoint Security  
+**Kind**: property  
+**Role**: Instance Property
+
+**Availability**:
+- Mac Catalyst
+- macOS
+
+## Declaration
+
+```c
+mode_t mode;
+```
+
+
+---
+
+*[View on Apple Developer](https://developer.apple.com/documentation/endpointsecurity/es_event_create_t/destination/new_path/mode)*

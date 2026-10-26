@@ -82,6 +82,8 @@ Font collections are managed by [`NSFontManager`](./nsfontmanager.md).
 ### Converting Fonts Automatically
 - [func convert(NSFont) -> NSFont](./nsfontmanager/convert%28_%29.md)
   Converts the given font according to the object that initiated a font change, typically the Font panel or Font menu.
+- [- changeFont:](../ObjectiveC/nsobject-swift.class/changefont_.md)
+  Informs responders of a font change.
 ### Converting Fonts Manually
 - [func convert(NSFont, toFace: String) -> NSFont?](./nsfontmanager/convert%28_,toface%29.md)
   Returns a font whose traits are as similar as possible to those of the given font except for the typeface, which is changed to the given typeface.

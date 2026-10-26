@@ -74,6 +74,8 @@ If any of the attributes in `inAttributes` fails to be set, the record is delete
   Sets credentials for interacting with a node.
 - [func ODNodeSetCredentialsExtended(ODNodeRef!, String!, String!, CFArray!, UnsafeMutablePointer<Unmanaged<CFArray>?>!, UnsafeMutablePointer<Unmanaged<ODContextRef>?>!, UnsafeMutablePointer<Unmanaged<CFError>?>!) -> Bool](./odnodesetcredentialsextended%28_,_,_,_,_,_,_%29.md)
   Sets credentials for interacting with a node using a specified authentication method.
+- [ODNodeSetCredentialsUsingKerberosCache](./odnodesetcredentialsusingkerberoscache.md)
+  Sets credentials for interacting with a node with the Kerberos cache.
 
 
 ---

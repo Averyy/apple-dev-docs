@@ -21,6 +21,8 @@ static simd_char3 simd_make_char3(char x, simd_char2 yz);
 ### Functions to Create Three-Element Vectors From Combinations of Vectors and Scalar Values
 - [func simd_make_char3(simd_char2, CChar) -> simd_char3](./simd_make_char3%28_,_%29-9qv2s.md)
   Returns a new vector from a vector and a scalar value.
+- [vector3](./vector3-7dpc0.md)
+  Returns a new vector from a vector and a scalar value.
 
 
 ---

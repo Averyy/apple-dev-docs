@@ -36,6 +36,8 @@ You implement the handler by inspecting the message and deciding how to respond 
   Creates a new client instance and connects it to the Endpoint Security system.
 - [struct es_new_client_result_t](./es_new_client_result_t.md)
   The result of an attempt to create a new client.
+- [es_client_t](./es_client_t.md)
+  An opaque type that stores the Endpoint Security client state.
 
 
 ---

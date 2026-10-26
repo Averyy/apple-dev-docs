@@ -21,10 +21,10 @@ class FxImageTile
 
 ## Mentions
 
-- [Rendering in FxPlug](https://developer.apple.com/documentation/professional-video-applications/rendering-in-fxplug)
-- [Building an FxPlug plug-in manually](https://developer.apple.com/documentation/professional-video-applications/building-an-fxplug-plug-in-manually)
-- [Optimizing FxPlug plug-ins](https://developer.apple.com/documentation/professional-video-applications/optimizing-fxplug-plug-ins)
-- [Using out-of-process FxPlug plug-ins](https://developer.apple.com/documentation/professional-video-applications/using-out-of-process-fxplug-plug-ins)
+- [Rendering in FxPlug](../Professional-Video-Applications/rendering-in-fxplug.md)
+- [Building an FxPlug plug-in manually](../Professional-Video-Applications/building-an-fxplug-plug-in-manually.md)
+- [Optimizing FxPlug plug-ins](../Professional-Video-Applications/optimizing-fxplug-plug-ins.md)
+- [Using out-of-process FxPlug plug-ins](../Professional-Video-Applications/using-out-of-process-fxplug-plug-ins.md)
 
 #### Overview
 

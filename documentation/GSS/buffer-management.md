@@ -30,6 +30,16 @@ Allocate and deallocate buffers with structures that hold a variety of data.
   The descriptor that you use to manage an array of buffer descriptors.
 - [struct gss_buffer_set_desc_struct](./gss_buffer_set_desc_struct.md)
   The structure for a buffer set descriptor that you use to manage an array of buffer descriptors.
+- [GSS_C_NO_OID](./gss_c_no_oid.md)
+  Indicates a `NULL` [`gss_OID`](./gss_oid.md) object.
+- [GSS_C_NO_BUFFER](./gss_c_no_buffer.md)
+  The GSS buffer object has no value.
+- [GSS_C_NO_BUFFER_SET](./gss_c_no_buffer_set.md)
+  The GSS buffer set object has no value.
+- [GSS_C_EMPTY_BUFFER](./gss_c_empty_buffer.md)
+  The GSS buffer object has no value, and its length set to zero.
+- [GSS_C_NO_IOV_BUFFER](./gss_c_no_iov_buffer.md)
+  The GSS IOV buffer object has no value.
 ### Allocation and Deallocation
 - [func gss_create_empty_buffer_set(UnsafeMutablePointer<OM_uint32>, UnsafeMutablePointer<gss_buffer_set_t?>) -> OM_uint32](./gss_create_empty_buffer_set%28_,_%29.md)
   Allocates an empty buffer set descriptor that you use to manage an array of buffers.

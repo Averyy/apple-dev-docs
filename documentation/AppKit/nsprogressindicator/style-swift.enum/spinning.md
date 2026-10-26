@@ -28,6 +28,10 @@ The appearance of a determinate spinning style indicator is similar to an animat
 ### Constants
 - [NSProgressIndicator.Style.bar](./bar.md)
   A rectangular indicator that can be determinate or indeterminate.
+- [NSProgressIndicatorBarStyle](../../nsprogressindicatorbarstyle.md)
+  A rectangular indicator that can be determinate or indeterminate.
+- [NSProgressIndicatorSpinningStyle](../../nsprogressindicatorspinningstyle.md)
+  A small circular indicator that can be determinate or indeterminate.
 
 
 ---

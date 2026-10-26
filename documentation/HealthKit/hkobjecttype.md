@@ -109,6 +109,7 @@ Additionally, wherever possible, this class uses a single instance to represent 
 - [class func medicationDoseEventType() -> HKMedicationDoseEventType](./hkobjecttype/medicationdoseeventtype%28%29.md)
 - [class func stateOfMindType() -> HKStateOfMindType](./hkobjecttype/stateofmindtype%28%29.md)
 - [class func userAnnotatedMedicationType() -> HKUserAnnotatedMedicationType](./hkobjecttype/userannotatedmedicationtype%28%29.md)
+- [+ scoredAssessmentTypeForIdentifier:](./hkobjecttype/scoredassessmenttypeforidentifier_.md)
 
 ## Relationships
 

@@ -32,6 +32,12 @@ A result code. See [Security Framework Result Codes](./security-framework-result
 - `initialAccess`: The initial access for the copied keychain item. Use the [`SecAccessCreate(_:_:_:)`](./secaccesscreate%28_,_,_%29.md) function to create an access object or the [`SecKeychainItemCopyAccess(_:_:)`](./seckeychainitemcopyaccess%28_,_%29.md) function to copy an access object from another keychain item. If you pass `NULL` for this parameter, the access defaults to the application creating the item.
 - `itemCopy`: On return, a pointer to a copy of the keychain item referenced by the `itemRef` parameter. You must call the `CFRelease` function to release this object when you are finished using it.
 
+## See Also
+
+### Related Documentation
+- [SecKeychainSearchCopyNext](./seckeychainsearchcopynext.md)
+  Finds the next keychain item matching the given search criteria.
+
 
 ---
 

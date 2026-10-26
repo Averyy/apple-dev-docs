@@ -66,6 +66,8 @@ The StoreKit framework also provides functionality for [External Purchase](./ext
 ### Background assets extension
 - [protocol StoreDownloaderExtension](./storedownloaderextension.md)
   An app extension that uses the system implementation to schedule Apple-hosted asset-pack downloads automatically.
+- [SKDownloaderExtension](./skdownloaderextension.md)
+  An application extension that uses the system implementation to schedule Apple-hosted asset-pack downloads automatically.
 ### Payment method binding
 - [struct PaymentMethodBinding](./paymentmethodbinding.md)
   A binding that makes payment methods available in apps for an Apple Account.

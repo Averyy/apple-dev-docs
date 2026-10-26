@@ -44,6 +44,8 @@ See [Simplifying GPU resource management with residency sets](../simplifying-gpu
 ### Detaching residency sets
 - [func removeResidencySets([any MTLResidencySet])](./removeresidencysets%28_%29.md)
   Removes multiple residency sets from a command queue’s list, which means Metal doesn’t apply them to the queue’s command buffers as you commit them.
+- [- removeResidencySets:count:](./removeresidencysets_count_.md)
+  Removes multiple residency sets from a command queue’s list, which means Metal doesn’t apply them to the queue’s command buffers as you commit them.
 
 
 ---

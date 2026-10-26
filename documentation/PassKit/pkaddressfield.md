@@ -41,6 +41,9 @@ enum PKAddressField : NSUInteger;
   All fields.
 ### Initializers
 - [init(rawValue: UInt)](./pkaddressfield/init%28rawvalue%29.md)
+### Enumeration Cases
+- [PKAddressFieldNone](./pkaddressfield/pkaddressfieldnone.md)
+  No fields.
 
 ## Relationships
 
@@ -63,6 +66,8 @@ enum PKAddressField : NSUInteger;
   Values you use to enable or disable Apple Pay Later for a specific transaction.
 - [enum PKApplePayLaterAvailability](./pkapplepaylateravailability.md)
   Values you use to enable or disable Apple Pay Later for a specific transaction.
+- [applePayLaterAvailability](./pkpaymentrequest/applepaylateravailability-inpf.md)
+  A value that indicates whether Apple Pay Later is available for a transaction.
 
 
 ---

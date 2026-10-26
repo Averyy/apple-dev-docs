@@ -32,6 +32,10 @@ With Dynamic Type, users can ask that apps display text using fonts that are lar
 ### Retrieving content size category information
 - [struct UIContentSizeCategory](../uicontentsizecategory.md)
   Constants that indicate the preferred size of your content.
+- [UIContentSizeCategoryCompareToCategory](../uicontentsizecategorycomparetocategory.md)
+  Compares two content size category values to determine whether they are equal or whether one is larger than the other.
+- [UIContentSizeCategoryIsAccessibilityCategory](../uicontentsizecategoryisaccessibilitycategory.md)
+  Returns a Boolean value that indicates whether the content size category belongs to the group of accessibility-related sizes.
 
 
 ---

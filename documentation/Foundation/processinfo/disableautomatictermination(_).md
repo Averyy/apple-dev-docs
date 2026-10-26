@@ -36,6 +36,7 @@ The reason parameter is used to track why an application is or is not automatica
   Enables automatic termination for the application.
 - [var automaticTerminationSupportEnabled: Bool](./automaticterminationsupportenabled.md)
   A Boolean value indicating whether the app supports automatic termination.
+- [automaticTerminationOptOutCounter](../nsprocessinfo/automaticterminationoptoutcounter.md)
 
 
 ---

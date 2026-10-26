@@ -29,6 +29,15 @@ This view fills and strokes the area represented by the annotation. You can chan
 
 In iOS 7 and later, use the [`MKPolygonRenderer`](./mkpolygonrenderer.md) class to display polygon overlays instead.
 
+## Topics
+
+### Initializing a polygon view
+- [- initWithPolygon:](./mkpolygonview/initwithpolygon_.md)
+  Initializes and returns a new overlay view using the specified polygon overlay object.
+### Accessing the polygon overlay
+- [polygon](./mkpolygonview/polygon.md)
+  The polygon overlay object that contains the information used to draw the overlay.
+
 ## Relationships
 
 ### Inherits From
@@ -77,6 +86,8 @@ In iOS 7 and later, use the [`MKPolygonRenderer`](./mkpolygonrenderer.md) class 
   Provides the visual representation for an [`MKPolyline`](./mkpolyline.md) annotation object.
 - [class MKPinAnnotationView](./mkpinannotationview.md)
   An annotation view that displays a pin image on the map.
+- [MKReverseGeocoder](./mkreversegeocoder.md)
+  Provides services for converting a map coordinate (specified as a latitude/longitude pair) into information about that coordinate, such as the country or region, city, or street.
 
 
 ---

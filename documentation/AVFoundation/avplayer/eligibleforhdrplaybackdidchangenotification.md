@@ -37,6 +37,8 @@ The system may post this notification if a user connects or disconnects a displa
   The HDR modes that are available for playback.
 - [AVPlayer.HDRMode](./hdrmode.md)
   A bitfield type that specifies an HDR mode.
+- [AVPlayerAvailableHDRModesDidChangeNotification](../avplayeravailablehdrmodesdidchangenotification.md)
+  A notification that fires whenever availableHDRModes changes.
 
 
 ---

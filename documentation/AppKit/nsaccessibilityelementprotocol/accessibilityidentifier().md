@@ -36,6 +36,9 @@ This method is the getter for the [`NSAccessibilityProtocol`](../nsaccessibility
   Returns the accessibility element’s parent in the accessibility hierarchy.
 - [func isAccessibilityFocused() -> Bool](./isaccessibilityfocused%28%29.md)
   Returns a Boolean value that indicates whether the accessibility element has the keyboard focus.
+### Related Documentation
+- [accessibilityIdentifier](../nsaccessibility-c.protocol/accessibilityidentifier.md)
+  The accessibility element’s identity.
 
 
 ---

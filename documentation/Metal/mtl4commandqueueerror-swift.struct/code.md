@@ -85,6 +85,8 @@ enum MTL4CommandQueueError : NSInteger;
   Describes an object containing debug information from Metal to your app after completing a workload.
 - [typealias MTL4CommitFeedbackHandler](../mtl4commitfeedbackhandler.md)
   Defines the block signature for a callback Metal invokes to provide your app feedback after completing a workload.
+- [MTL4CounterHeap](../mtl4counterheap.md)
+  Represents an opaque, driver-controlled section of memory that can store GPU counter data.
 
 
 ---

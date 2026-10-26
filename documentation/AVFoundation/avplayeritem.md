@@ -50,6 +50,12 @@ A player item stores a reference to an [`AVAsset`](./avasset.md) object, which r
 - [convenience init(asset: any AVAsset & Sendable, automaticallyLoadedAssetKeys: [AVPartialAsyncProperty<AVAsset>])](./avplayeritem/init%28asset,automaticallyloadedassetkeys%29-85hal.md)
 - [init(asset: AVAsset, automaticallyLoadedAssetKeys: [String]?)](./avplayeritem/init%28asset,automaticallyloadedassetkeys%29-8x4.md)
   Creates a player item with the specified asset and the asset keys to automatically load.
+- [+ playerItemWithURL:](./avplayeritem/playeritemwithurl_.md)
+  Returns a new player item with a specified URL.
+- [+ playerItemWithAsset:](./avplayeritem/playeritemwithasset_.md)
+  Returns a new player item for a specified asset.
+- [+ playerItemWithAsset:automaticallyLoadedAssetKeys:](./avplayeritem/playeritemwithasset_automaticallyloadedassetkeys_.md)
+  Creates a player item with the specified asset and the asset keys to automatically load.
 ### Accessing tracks
 - [var tracks: [AVPlayerItemTrack]](./avplayeritem/tracks.md)
   An array of player item track objects.

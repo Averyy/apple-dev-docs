@@ -46,6 +46,9 @@ enum WKWebExtensionTabChangedProperties : NSUInteger;
   Indicates the title changed.
 - [static var zoomFactor: WKWebExtension.TabChangedProperties](./tabchangedproperties/zoomfactor.md)
   Indicates the zoom factor changed.
+### Enumeration Cases
+- [WKWebExtensionTabChangedPropertiesNone](../wkwebextensiontabchangedproperties/wkwebextensiontabchangedpropertiesnone.md)
+  Indicates nothing changed.
 
 ## Relationships
 
@@ -68,6 +71,11 @@ enum WKWebExtensionTabChangedProperties : NSUInteger;
   Constants that indicate errors in the [`WKWebExtension`](../wkwebextension.md) domain.
 - [WKWebExtension.Permission](./permission.md)
   Constants for specifying permission in a [`WKWebExtensionContext`](../wkwebextensioncontext.md).
+### Enumerations
+- [WKWebExtensionWindowState](./windowstate.md)
+  Constants used by [`WKWebExtensionWindow`](../wkwebextensionwindow.md) to indicate possible states of a window.
+- [WKWebExtensionWindowType](./windowtype.md)
+  Constants used by [`WKWebExtensionWindow`](../wkwebextensionwindow.md) to indicate the type of a window.
 
 
 ---

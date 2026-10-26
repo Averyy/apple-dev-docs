@@ -36,6 +36,8 @@ If you intend to specify a value other than `nil`, do so before you execute the 
 ### Configuring a Record Fetch Operation
 - [var desiredKeys: [CKRecord.FieldKey]?](./desiredkeys-31bbq.md)
   The fields of the records to fetch.
+- [desiredKeys](./desiredkeys-34l1l.md)
+  The fields of the records to fetch.
 
 
 ---

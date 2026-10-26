@@ -22,6 +22,16 @@ Use these constants as the keys when accessing [`GCXboxGamepad`](./gcxboxgamepad
   The name for the controller’s P3 paddle button.
 - [var GCInputXboxPaddleFour: String](./gcinputxboxpaddlefour-1obrw.md)
   The name for the controller’s P4 paddle button.
+- [GCInputButtonShare](./gcinputbuttonshare-2xxjg.md)
+  The name of the share button.
+- [GCInputXboxPaddleOne](./gcinputxboxpaddleone-795e3.md)
+  The name for the controller’s P1 paddle button.
+- [GCInputXboxPaddleTwo](./gcinputxboxpaddletwo-4vrw4.md)
+  The name for the controller’s P2 paddle button.
+- [GCInputXboxPaddleThree](./gcinputxboxpaddlethree-7u2xy.md)
+  The name for the controller’s P3 paddle button.
+- [GCInputXboxPaddleFour](./gcinputxboxpaddlefour-4n8ze.md)
+  The name for the controller’s P4 paddle button.
 
 ## See Also
 
@@ -46,6 +56,18 @@ Use these constants as the keys when accessing [`GCXboxGamepad`](./gcxboxgamepad
   Constants for names of micro gamepad elements.
 - [Directional Gamepad Input Names](./directional-gamepad-input-names.md)
   Constants for names of directional pad elements.
+- [GCPhysicalInputElementName](./gcphysicalinputelementname-c.protocol.md)
+  The name of a physical input element.
+- [GCInputElementName](./gcinputelementname.md)
+  The Objective-C type for an input element name.
+- [GCButtonElementName](./gcbuttonelementname-c.protocol.md)
+  The names of the button elements.
+- [GCAxisElementName](./gcaxiselementname-c.protocol.md)
+  The names for the elements that provide values along an axis.
+- [GCSwitchElementName](./gcswitchelementname-c.protocol.md)
+  The name for an element that represents a switch.
+- [GCDirectionPadElementName](./gcdirectionpadelementname-c.protocol.md)
+  The names for directional pad elements.
 
 
 ---

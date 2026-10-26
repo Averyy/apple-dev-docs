@@ -60,11 +60,15 @@ If you create a buffer with a managed resource storage mode ([`MTLStorageMode.ma
 ### Synchronizing data to the GPU for managed buffers
 - [func didModifyRange(Range<Int>)](./mtlbuffer/didmodifyrange%28_%29.md)
   Informs the GPU that the CPU has modified a section of the buffer.
+- [- didModifyRange:](./mtlbuffer/didmodifyrange_.md)
+  Informs the GPU that the CPU has modified a section of the buffer.
 ### Debugging buffers
 - [func addDebugMarker(String, range: Range<Int>)](./mtlbuffer/adddebugmarker%28_,range%29.md)
   Adds a debug marker string to a specific buffer range.
 - [func removeAllDebugMarkers()](./mtlbuffer/removealldebugmarkers%28%29.md)
   Removes all debug marker strings from the buffer.
+- [- addDebugMarker:range:](./mtlbuffer/adddebugmarker_range_.md)
+  Adds a debug marker string to a specific buffer range.
 ### Reading buffer length
 - [var length: Int](./mtlbuffer/length.md)
   The logical size of the buffer, in bytes.

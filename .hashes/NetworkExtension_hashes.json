@@ -135,6 +135,11 @@
       "file_path": "documentation/NetworkExtension/neappproxyflow/open(withlocalflowendpoint,completionhandler).md",
       "hash": "6ca2401fe78ddef6b5a8496479a67bd3153414d3316bbe09aa17bb6f3482ea03"
     },
+    "https://developer.apple.com/documentation/networkextension/neappproxyflow/openwithlocalflowendpoint:completionhandler:": {
+      "etag": "\"1b17-65d5608d50985-df\"",
+      "file_path": "documentation/NetworkExtension/neappproxyflow/openwithlocalflowendpoint_completionhandler_.md",
+      "hash": "37c329eb2c663123ef3848604ae69175db8fcff4ea9cf54edc658db72efc736e"
+    },
     "https://developer.apple.com/documentation/networkextension/neappproxyflow/remotehostname": {
       "etag": "\"4629-65d5608d50985-df\"",
       "file_path": "documentation/NetworkExtension/neappproxyflow/remotehostname.md",
@@ -149,6 +154,11 @@
       "etag": "\"161d-65d5608d50985-df\"",
       "file_path": "documentation/NetworkExtension/neappproxyflow/setmetadata(on).md",
       "hash": "ac11667feae3239e77cacb7d63877dcde2218ec39eb316fc036b021b63884afa"
+    },
+    "https://developer.apple.com/documentation/networkextension/neappproxyflow_export": {
+      "etag": "\"aa4-65d5608c429bb-df\"",
+      "file_path": "documentation/NetworkExtension/neappproxyflow_export.md",
+      "hash": "df53fbb37bc74bce043d9ada60f7826cb069d433ad197f46b12a1218d2aa7191"
     },
     "https://developer.apple.com/documentation/networkextension/neappproxyflowerror-swift.struct": {
       "etag": "\"53f3-65d5608b344e2-df\"",
@@ -290,6 +300,11 @@
       "file_path": "documentation/NetworkExtension/neappproxyprovider/handlenewudpflow(_,initialremoteendpoint).md",
       "hash": "63d2077d08963cd6ff5bc88cf469791a98209ca42a57b408a47d6f552116d593"
     },
+    "https://developer.apple.com/documentation/networkextension/neappproxyprovider/handlenewudpflow:initialremoteflowendpoint:": {
+      "etag": "\"1e86-65d5608b4f78b-df\"",
+      "file_path": "documentation/NetworkExtension/neappproxyprovider/handlenewudpflow_initialremoteflowendpoint_.md",
+      "hash": "423dac67e0dfe16a1511905947a15d60721b75a7d451c05556d131363f7e0476"
+    },
     "https://developer.apple.com/documentation/networkextension/neappproxyprovider/startproxy(options:completionhandler:)": {
       "etag": "\"4be3-65d5608b4f78b-df\"",
       "file_path": "documentation/NetworkExtension/neappproxyprovider/startproxy(options,completionhandler).md",
@@ -330,6 +345,11 @@
       "file_path": "documentation/NetworkExtension/neappproxytcpflow/remoteflowendpoint-4r7v1.md",
       "hash": "e2bd046afaa6607fe59c7a27e77e3804e224f1b3f8225ba8f0ecd5d3092d54e3"
     },
+    "https://developer.apple.com/documentation/networkextension/neappproxytcpflow/remoteflowendpoint-9lvob": {
+      "etag": "\"14ce-65d5608d952e2-df\"",
+      "file_path": "documentation/NetworkExtension/neappproxytcpflow/remoteflowendpoint-9lvob.md",
+      "hash": "372ea6b95a1134a9ad33b570962f90a220130b4948b3f04b7a480d8a05c709f8"
+    },
     "https://developer.apple.com/documentation/networkextension/neappproxytcpflow/write(_:withcompletionhandler:)": {
       "etag": "\"4bf7-65d5608d952e2-df\"",
       "file_path": "documentation/NetworkExtension/neappproxytcpflow/write(_,withcompletionhandler).md",
@@ -350,6 +370,11 @@
       "file_path": "documentation/NetworkExtension/neappproxyudpflow/localflowendpoint-7ukb6.md",
       "hash": "aa847ce153ddf5181791efe71076367a41f33b94f392806e11490a1778bf23a3"
     },
+    "https://developer.apple.com/documentation/networkextension/neappproxyudpflow/localflowendpoint-9a8gj": {
+      "etag": "\"1505-65d5608d19656-df\"",
+      "file_path": "documentation/NetworkExtension/neappproxyudpflow/localflowendpoint-9a8gj.md",
+      "hash": "7f0630d7face5661536cd90361fbc00f398728b3162e7a314523a02c0cb59654"
+    },
     "https://developer.apple.com/documentation/networkextension/neappproxyudpflow/readdatagrams()": {
       "etag": "\"1d09-65d5608d19656-df\"",
       "file_path": "documentation/NetworkExtension/neappproxyudpflow/readdatagrams().md",
@@ -364,6 +389,11 @@
       "etag": "\"5b68-65d5608d19656-df\"",
       "file_path": "documentation/NetworkExtension/neappproxyudpflow/readdatagrams(completionhandler)-9z8gw.md",
       "hash": "060bc3c18275f9cff58a4487aded39c933baf04e435098cd28d3908049f0b684"
+    },
+    "https://developer.apple.com/documentation/networkextension/neappproxyudpflow/readdatagramsandflowendpointswithcompletionhandler:": {
+      "etag": "\"1b09-65d5608d19656-df\"",
+      "file_path": "documentation/NetworkExtension/neappproxyudpflow/readdatagramsandflowendpointswithcompletionhandler_.md",
+      "hash": "591fade843d48d64981ab1d00c8f6bab2b178f7756f6ce010d9189046d6b31d6"
     },
     "https://developer.apple.com/documentation/networkextension/neappproxyudpflow/writedatagrams(_:)": {
       "etag": "\"1a67-65d5608d19656-df\"",
@@ -380,6 +410,11 @@
       "file_path": "documentation/NetworkExtension/neappproxyudpflow/writedatagrams(_,sentby,completionhandler).md",
       "hash": "44a562012174323eb0305c853af81a61be01565d415ada8be17f3bc4855583ea"
     },
+    "https://developer.apple.com/documentation/networkextension/neappproxyudpflow/writedatagrams:sentbyflowendpoints:completionhandler:": {
+      "etag": "\"1b99-65d5608d19656-df\"",
+      "file_path": "documentation/NetworkExtension/neappproxyudpflow/writedatagrams_sentbyflowendpoints_completionhandler_.md",
+      "hash": "ee275f0eeae0ae9b70dce624a82adc0bc4acf8306f3677dd674c4e23441eb49c"
+    },
     "https://developer.apple.com/documentation/networkextension/neappproxyudpflowhandling": {
       "etag": "\"1145-65d5608b19ae9-df\"",
       "file_path": "documentation/NetworkExtension/neappproxyudpflowhandling.md",
@@ -389,6 +424,11 @@
       "etag": "\"1fc6-65d5608afd2d6-df\"",
       "file_path": "documentation/NetworkExtension/neappproxyudpflowhandling/handlenewudpflow(_,initialremoteflowendpoint).md",
       "hash": "14a8e51177597d10733f8567ce240bdd1d345bdc2ed67c0a849e4958e81cdd2e"
+    },
+    "https://developer.apple.com/documentation/networkextension/neapppush_export": {
+      "etag": "\"a68-65d5608ba6d4c-df\"",
+      "file_path": "documentation/NetworkExtension/neapppush_export.md",
+      "hash": "d73ec8d74e389fdc4f6eda5af6d9e49df0cef1354e5dec5f774bd4e3dfc38a06"
     },
     "https://developer.apple.com/documentation/networkextension/neapppushdelegate": {
       "etag": "\"2b68-65d5608bc2b40-df\"",
@@ -625,6 +665,11 @@
       "file_path": "documentation/NetworkExtension/neapprule/matchtools.md",
       "hash": "2b86688f063850d60744cdf596f74e77a48d96645984d6b352135e6eb58cb38c"
     },
+    "https://developer.apple.com/documentation/networkextension/necopynullable": {
+      "etag": "\"a50-65d5608d50985-df\"",
+      "file_path": "documentation/NetworkExtension/necopynullable.md",
+      "hash": "44d5ee42f6368fd8e747965110e4bb4c0c9e5ffae5249dedb6dec69265ddc57d"
+    },
     "https://developer.apple.com/documentation/networkextension/nednsoverhttpssettings": {
       "etag": "\"5bee-65d5608ca31ca-df\"",
       "file_path": "documentation/NetworkExtension/nednsoverhttpssettings.md",
@@ -679,6 +724,16 @@
       "etag": "\"21d3-65d5608ca31ca-df\"",
       "file_path": "documentation/NetworkExtension/nednsprotocol/tls.md",
       "hash": "68e0ed238b321049f675db2e4fc4a52144a5757345504b576edf14f0b4967c3c"
+    },
+    "https://developer.apple.com/documentation/networkextension/nednsproxy_export": {
+      "etag": "\"a74-65d5608d19656-df\"",
+      "file_path": "documentation/NetworkExtension/nednsproxy_export.md",
+      "hash": "e2a078d5a6c57cd95ffd47fc94663451a68d81d2a7aa50749e277587a665d812"
+    },
+    "https://developer.apple.com/documentation/networkextension/nednsproxyconfigurationdidchangenotification": {
+      "etag": "\"10ea-65d5608bc2b40-df\"",
+      "file_path": "documentation/NetworkExtension/nednsproxyconfigurationdidchangenotification.md",
+      "hash": "74bfa1fda672522bcae7af10beb725dfa5d5aa8987728b8cbb26dd17eeb31269"
     },
     "https://developer.apple.com/documentation/networkextension/nednsproxyerrordomain": {
       "etag": "\"20dd-65d5608ba6d4c-df\"",
@@ -775,6 +830,11 @@
       "file_path": "documentation/NetworkExtension/nednsproxyprovider/handlenewudpflow(_,initialremoteendpoint).md",
       "hash": "015cc5db44dd549cb9121e6876c8b911efed0276efcf172a4518a9b4affaeaeb"
     },
+    "https://developer.apple.com/documentation/networkextension/nednsproxyprovider/handlenewudpflow:initialremoteflowendpoint:": {
+      "etag": "\"1e85-65d5608afd2d6-df\"",
+      "file_path": "documentation/NetworkExtension/nednsproxyprovider/handlenewudpflow_initialremoteflowendpoint_.md",
+      "hash": "e96c3701d7ab1b12bb6c05b1353c59321873d0aa09278d7014aacebb7a57c57d"
+    },
     "https://developer.apple.com/documentation/networkextension/nednsproxyprovider/startproxy(options:completionhandler:)": {
       "etag": "\"5d86-65d5608afd2d6-df\"",
       "file_path": "documentation/NetworkExtension/nednsproxyprovider/startproxy(options,completionhandler).md",
@@ -849,6 +909,16 @@
       "etag": "\"3d86-65d5608cd21d5-df\"",
       "file_path": "documentation/NetworkExtension/nednssettings/servers.md",
       "hash": "766e8de6d19ba3fc6625fc4ab578f4320e24ed2519d21775e8950fcd2c19eaee"
+    },
+    "https://developer.apple.com/documentation/networkextension/nednssettings_export": {
+      "etag": "\"a98-65d5608dcb3b8-df\"",
+      "file_path": "documentation/NetworkExtension/nednssettings_export.md",
+      "hash": "e478640993fd7ef1245607349bf4146fa1111c406cada8beb6c77e0fab522211"
+    },
+    "https://developer.apple.com/documentation/networkextension/nednssettingsconfigurationdidchangenotification": {
+      "etag": "\"103f-65d5608b4f78b-df\"",
+      "file_path": "documentation/NetworkExtension/nednssettingsconfigurationdidchangenotification.md",
+      "hash": "b5990a8728ce94a6938e3658a3c6c69dd2dff546139da90c7490aa7c7515e692"
     },
     "https://developer.apple.com/documentation/networkextension/nednssettingserrordomain": {
       "etag": "\"34c1-65d5608b19ae9-df\"",
@@ -1000,6 +1070,16 @@
       "file_path": "documentation/NetworkExtension/neevaluateconnectionruleaction/neverconnect.md",
       "hash": "1ac58a816f712f1f91b950d995e3c1c0fb40c4b96b48ee8fab2ef075f029e2f6"
     },
+    "https://developer.apple.com/documentation/networkextension/nefilter_data_provider_extern": {
+      "etag": "\"b04-65d5608b4f78b-df\"",
+      "file_path": "documentation/NetworkExtension/nefilter_data_provider_extern.md",
+      "hash": "626527c6832614d272622e1f7e137dab857cf9728f2359fc9259e8b0241b2d2b"
+    },
+    "https://developer.apple.com/documentation/networkextension/nefilter_export": {
+      "etag": "\"a5c-65d5608b6f3e3-df\"",
+      "file_path": "documentation/NetworkExtension/nefilter_export.md",
+      "hash": "ebe821fe1e9859e03cf779934a58390000cd409f424229ef46e51f2cbaf5f4c0"
+    },
     "https://developer.apple.com/documentation/networkextension/nefilteraction": {
       "etag": "\"6cce-65d5608c429bb-df\"",
       "file_path": "documentation/NetworkExtension/nefilteraction.md",
@@ -1054,6 +1134,11 @@
       "etag": "\"2cd2-65d5608cd21d5-df\"",
       "file_path": "documentation/NetworkExtension/nefilterbrowserflow/response.md",
       "hash": "8d78fbe1d9ad146a8e9452d16ecfb3bcf5f36145f26e5d3e83fa91d02223c83c"
+    },
+    "https://developer.apple.com/documentation/networkextension/nefilterconfigurationdidchangenotification": {
+      "etag": "\"10f6-65d5608d50985-df\"",
+      "file_path": "documentation/NetworkExtension/nefilterconfigurationdidchangenotification.md",
+      "hash": "2be136298280669b76925031744ebfc8a97993946370bab19dc208de3cc5a90e"
     },
     "https://developer.apple.com/documentation/networkextension/nefiltercontrolprovider": {
       "etag": "\"9d9d-65d5608d50985-df\"",
@@ -1760,6 +1845,11 @@
       "file_path": "documentation/NetworkExtension/nefiltersocketflow/localendpoint.md",
       "hash": "73ce3ad297e9f4b9065b9b60ddeef16ea02acd156195c5136f13aceeb4165623"
     },
+    "https://developer.apple.com/documentation/networkextension/nefiltersocketflow/localflowendpoint-4nt54": {
+      "etag": "\"14e4-65d5608b344e2-df\"",
+      "file_path": "documentation/NetworkExtension/nefiltersocketflow/localflowendpoint-4nt54.md",
+      "hash": "0ab83581623911fa3d6d1204f42a30942fc2461e58e3c940b03a62ac00cacb72"
+    },
     "https://developer.apple.com/documentation/networkextension/nefiltersocketflow/localflowendpoint-89z3l": {
       "etag": "\"1563-65d5608b344e2-df\"",
       "file_path": "documentation/NetworkExtension/nefiltersocketflow/localflowendpoint-89z3l.md",
@@ -1769,6 +1859,11 @@
       "etag": "\"5584-65d5608b344e2-df\"",
       "file_path": "documentation/NetworkExtension/nefiltersocketflow/remoteendpoint.md",
       "hash": "e343baf1db0582ebd24499156bfca94fb71bbe1cbc07fa14aea6a46156dfd72c"
+    },
+    "https://developer.apple.com/documentation/networkextension/nefiltersocketflow/remoteflowendpoint-52dxr": {
+      "etag": "\"14f0-65d5608b344e2-df\"",
+      "file_path": "documentation/NetworkExtension/nefiltersocketflow/remoteflowendpoint-52dxr.md",
+      "hash": "624071035fe42a053be39d76cc2f049a88c0023ef398989334f28d49891426e0"
     },
     "https://developer.apple.com/documentation/networkextension/nefiltersocketflow/remoteflowendpoint-6bnas": {
       "etag": "\"156e-65d5608b344e2-df\"",
@@ -1944,6 +2039,21 @@
       "etag": "\"38b9-65d5608cd21d5-df\"",
       "file_path": "documentation/NetworkExtension/nehotspotconfiguration/ssidprefix.md",
       "hash": "d5c0900954b284b38a59af359b38643bafeac2f1ce98f88f432e6979975973c5"
+    },
+    "https://developer.apple.com/documentation/networkextension/nehotspotconfigurationeaptlsversion/nehotspotconfigurationeaptlsversion_1_0": {
+      "etag": "\"18c2-65d5608c2dda2-df\"",
+      "file_path": "documentation/NetworkExtension/nehotspotconfigurationeaptlsversion/nehotspotconfigurationeaptlsversion_1_0.md",
+      "hash": "153159430fad73a0eb38cb9de454bfa6b2e9628f01cf4fcbd25d4baceb7ffaf8"
+    },
+    "https://developer.apple.com/documentation/networkextension/nehotspotconfigurationeaptlsversion/nehotspotconfigurationeaptlsversion_1_1": {
+      "etag": "\"18c2-65d5608c2dda2-df\"",
+      "file_path": "documentation/NetworkExtension/nehotspotconfigurationeaptlsversion/nehotspotconfigurationeaptlsversion_1_1.md",
+      "hash": "b963dcdc32d7f8d735ea35882dfa5b38bc756a2c93baabf998bba06e90b9b0fa"
+    },
+    "https://developer.apple.com/documentation/networkextension/nehotspotconfigurationeaptlsversion/nehotspotconfigurationeaptlsversion_1_2": {
+      "etag": "\"18c2-65d5608c2dda2-df\"",
+      "file_path": "documentation/NetworkExtension/nehotspotconfigurationeaptlsversion/nehotspotconfigurationeaptlsversion_1_2.md",
+      "hash": "1752ff892dd696e9445271f02c921712e39e1d9939a2c0368451206ea9b9507b"
     },
     "https://developer.apple.com/documentation/networkextension/nehotspotconfigurationerror": {
       "etag": "\"9747-65d5608ba6d4c-df\"",
@@ -2300,6 +2410,11 @@
       "file_path": "documentation/NetworkExtension/nehotspothelpercommand/interface-46dq.md",
       "hash": "9a5a6efd4e696bac2a6676cd2bbcbab45f0549985999807989a083d84bb67bd1"
     },
+    "https://developer.apple.com/documentation/networkextension/nehotspothelpercommand/interface-7rt15": {
+      "etag": "\"1480-65d5608b19ae9-df\"",
+      "file_path": "documentation/NetworkExtension/nehotspothelpercommand/interface-7rt15.md",
+      "hash": "243eddc6300b8044337fe117d463759b10cae3c124b4c3c399cd0c27db41e25d"
+    },
     "https://developer.apple.com/documentation/networkextension/nehotspothelpercommand/network": {
       "etag": "\"3265-65d5608b19ae9-df\"",
       "file_path": "documentation/NetworkExtension/nehotspothelpercommand/network.md",
@@ -2650,6 +2765,16 @@
       "file_path": "documentation/NetworkExtension/nehotspotnetworksecuritytype/wep.md",
       "hash": "6ca3fe43acc117205ff1cba915ec5306633f2b5c83d18bbe64d4368b346335f5"
     },
+    "https://developer.apple.com/documentation/networkextension/nehs_export": {
+      "etag": "\"a2c-65d5608c2dda2-df\"",
+      "file_path": "documentation/NetworkExtension/nehs_export.md",
+      "hash": "b9271a9308183e46188bd5c66ed04d3952ce5984801a7899dbd66ef106e980a9"
+    },
+    "https://developer.apple.com/documentation/networkextension/nehscfg_export": {
+      "etag": "\"a50-65d5608bc2b40-df\"",
+      "file_path": "documentation/NetworkExtension/nehscfg_export.md",
+      "hash": "2b4c11e63065a59c43ed40c9b85fe3959b823e04a78e17a77ec1e16981fe075e"
+    },
     "https://developer.apple.com/documentation/networkextension/neipv4route": {
       "etag": "\"6376-65d5608d304fc-df\"",
       "file_path": "documentation/NetworkExtension/neipv4route.md",
@@ -2709,6 +2834,11 @@
       "etag": "\"2b31-65d5608ca31ca-df\"",
       "file_path": "documentation/NetworkExtension/neipv4settings/router.md",
       "hash": "e740959bfcd6406356cdbe3f28871ba08a4f131e586402bd9fffe74a95f4a8a0"
+    },
+    "https://developer.apple.com/documentation/networkextension/neipv4settings/settingswithautomaticaddressing": {
+      "etag": "\"124c-659029a494c63-df\"",
+      "file_path": "documentation/NetworkExtension/neipv4settings/settingswithautomaticaddressing.md",
+      "hash": "2b3e779ffeacef955426cc62cd37f6b615ebb786186994ac1f15d97728eb63b5"
     },
     "https://developer.apple.com/documentation/networkextension/neipv4settings/subnetmasks": {
       "etag": "\"2a47-65d5608ca31ca-df\"",
@@ -2775,6 +2905,16 @@
       "file_path": "documentation/NetworkExtension/neipv6settings/networkprefixlengths.md",
       "hash": "9639257336783c152ef21d61fd82c860febf4ab96286ac68bf1270b110f19758"
     },
+    "https://developer.apple.com/documentation/networkextension/neipv6settings/settingswithautomaticaddressing": {
+      "etag": "\"118d-659029a52da51-df\"",
+      "file_path": "documentation/NetworkExtension/neipv6settings/settingswithautomaticaddressing.md",
+      "hash": "e0b89a2d3010037ad69679ae3b8294df24b97b1810f383b3267b02f13d1800ac"
+    },
+    "https://developer.apple.com/documentation/networkextension/neipv6settings/settingswithlinklocaladdressing": {
+      "etag": "\"1181-659029a52da51-df\"",
+      "file_path": "documentation/NetworkExtension/neipv6settings/settingswithlinklocaladdressing.md",
+      "hash": "c71b3d1949b5c79f16809ffd04d5e6dc7738450ce1da65962bdc42225f61c3c4"
+    },
     "https://developer.apple.com/documentation/networkextension/nenetworkrule": {
       "etag": "\"bd12-65d5608b4f78b-df\"",
       "file_path": "documentation/NetworkExtension/nenetworkrule.md",
@@ -2810,6 +2950,21 @@
       "file_path": "documentation/NetworkExtension/nenetworkrule/init(remotenetworkendpoint,remoteprefix,localnetworkendpoint,localprefix,protocol,direction).md",
       "hash": "e50c9a5a54d800ac7ecf7881f8a0c9127eeb91f6b670abb3e2a36fa5f42cdbd4"
     },
+    "https://developer.apple.com/documentation/networkextension/nenetworkrule/initwithdestinationhostendpoint:protocol:": {
+      "etag": "\"1b46-65d5608db56b1-df\"",
+      "file_path": "documentation/NetworkExtension/nenetworkrule/initwithdestinationhostendpoint_protocol_.md",
+      "hash": "2a35fe4d210e80305419ef60900bc46479e224efb374feda764d9860796f71ce"
+    },
+    "https://developer.apple.com/documentation/networkextension/nenetworkrule/initwithdestinationnetworkendpoint:prefix:protocol:": {
+      "etag": "\"1edb-65d5608db56b1-df\"",
+      "file_path": "documentation/NetworkExtension/nenetworkrule/initwithdestinationnetworkendpoint_prefix_protocol_.md",
+      "hash": "db7f14a2ce466e929e6b097f2acf7c43c4c499be3e4b6930bfd074b12866f5ab"
+    },
+    "https://developer.apple.com/documentation/networkextension/nenetworkrule/initwithremotenetworkendpoint:remoteprefix:localnetworkendpoint:localprefix:protocol:direction:": {
+      "etag": "\"2984-65d5608d952e2-df\"",
+      "file_path": "documentation/NetworkExtension/nenetworkrule/initwithremotenetworkendpoint_remoteprefix_localnetworkendpoint_localprefix_protocol_direction_.md",
+      "hash": "d5f12914e5efcea50d6ff3392cf6b00c676a01de5935fabf399e38096cee9c57"
+    },
     "https://developer.apple.com/documentation/networkextension/nenetworkrule/matchdirection": {
       "etag": "\"4200-65d5608db56b1-df\"",
       "file_path": "documentation/NetworkExtension/nenetworkrule/matchdirection.md",
@@ -2824,6 +2979,11 @@
       "etag": "\"148b-65d5608d952e2-df\"",
       "file_path": "documentation/NetworkExtension/nenetworkrule/matchlocalnetworkendpoint-62ttv.md",
       "hash": "d4d21a4716048d5ccb9e3cab6d90a4c3fbebf196b40bf695878455b719329839"
+    },
+    "https://developer.apple.com/documentation/networkextension/nenetworkrule/matchlocalnetworkendpoint-9dyor": {
+      "etag": "\"143f-65d5608d952e2-df\"",
+      "file_path": "documentation/NetworkExtension/nenetworkrule/matchlocalnetworkendpoint-9dyor.md",
+      "hash": "03918ad730e1fc33addf4377951fd50d2a398185bda3383d5339b0d5d6c0c255"
     },
     "https://developer.apple.com/documentation/networkextension/nenetworkrule/matchlocalprefix": {
       "etag": "\"4b4f-65d5608d952e2-df\"",
@@ -2844,6 +3004,11 @@
       "etag": "\"14d8-65d5608db56b1-df\"",
       "file_path": "documentation/NetworkExtension/nenetworkrule/matchremotehostornetworkendpoint-4a5ht.md",
       "hash": "efcf8943e1014619ed0861fa714cac31bc4f4c9cd9355ecc05d21d9af1c2ddf1"
+    },
+    "https://developer.apple.com/documentation/networkextension/nenetworkrule/matchremotehostornetworkendpoint-80s0l": {
+      "etag": "\"1493-65d5608db56b1-df\"",
+      "file_path": "documentation/NetworkExtension/nenetworkrule/matchremotehostornetworkendpoint-80s0l.md",
+      "hash": "51dc3d4b1cfffa780f8e107c15f35e766686ef5e88926b6155948a4f0cf916c6"
     },
     "https://developer.apple.com/documentation/networkextension/nenetworkrule/matchremoteprefix": {
       "etag": "\"4b4c-65d5608db56b1-df\"",
@@ -3055,6 +3220,36 @@
       "file_path": "documentation/NetworkExtension/nepackettunnelnetworksettings.md",
       "hash": "e46740a0675d876327e31cdd59437f07bbc84bc514edd68cc19a3adea5ca6af1"
     },
+    "https://developer.apple.com/documentation/networkextension/nepackettunnelnetworksettings/enforceroutes": {
+      "etag": "\"146b-659029a4563ac-df\"",
+      "file_path": "documentation/NetworkExtension/nepackettunnelnetworksettings/enforceroutes.md",
+      "hash": "9e35e59da3b7b4b306be58da1169f7ebb6b7d583acd75de57f0adf18cf09f553"
+    },
+    "https://developer.apple.com/documentation/networkextension/nepackettunnelnetworksettings/excludeapns": {
+      "etag": "\"152f-659029a4563ac-df\"",
+      "file_path": "documentation/NetworkExtension/nepackettunnelnetworksettings/excludeapns.md",
+      "hash": "97f8f208bc61d8bf814d879629c01c525d1f0e39a75d49b7dffa012193825526"
+    },
+    "https://developer.apple.com/documentation/networkextension/nepackettunnelnetworksettings/excludecellularservices": {
+      "etag": "\"1722-659029a4563ac-df\"",
+      "file_path": "documentation/NetworkExtension/nepackettunnelnetworksettings/excludecellularservices.md",
+      "hash": "7f150f51946495efeb6854492d922c5e4989665dde959c2b3783ad9cfbac5dbc"
+    },
+    "https://developer.apple.com/documentation/networkextension/nepackettunnelnetworksettings/excludedevicecommunication": {
+      "etag": "\"16ae-659029a4563ac-df\"",
+      "file_path": "documentation/NetworkExtension/nepackettunnelnetworksettings/excludedevicecommunication.md",
+      "hash": "a9b67df5753f1ec4e42ed0c114ee5c3d8a82de5aeba5baff04965cc830bd44d0"
+    },
+    "https://developer.apple.com/documentation/networkextension/nepackettunnelnetworksettings/excludelocalnetworks": {
+      "etag": "\"1787-659029a4563ac-df\"",
+      "file_path": "documentation/NetworkExtension/nepackettunnelnetworksettings/excludelocalnetworks.md",
+      "hash": "0439a9de7a3453e623f211529183fbb4b9483fc293960ef60ed268dfe8356252"
+    },
+    "https://developer.apple.com/documentation/networkextension/nepackettunnelnetworksettings/includeallnetworks": {
+      "etag": "\"1bd5-659029a4563ac-df\"",
+      "file_path": "documentation/NetworkExtension/nepackettunnelnetworksettings/includeallnetworks.md",
+      "hash": "0361be07e26be915935e0b639d5a6e00b6de2e1c1a7a42140b43fae3c7e87fae"
+    },
     "https://developer.apple.com/documentation/networkextension/nepackettunnelnetworksettings/ipv4settings": {
       "etag": "\"3e6f-65d5608c57adb-df\"",
       "file_path": "documentation/NetworkExtension/nepackettunnelnetworksettings/ipv4settings.md",
@@ -3074,6 +3269,31 @@
       "etag": "\"3eff-65d5608c57adb-df\"",
       "file_path": "documentation/NetworkExtension/nepackettunnelnetworksettings/tunneloverheadbytes.md",
       "hash": "1b23118f2d8b16e9fe6728117407cb6e18c6b225aa3c54d1d79049c1b030663b"
+    },
+    "https://developer.apple.com/documentation/networkextension/nepackettunnelnetworksettingsipfamily": {
+      "etag": "\"1bf8-659029a50f927-df\"",
+      "file_path": "documentation/NetworkExtension/nepackettunnelnetworksettingsipfamily.md",
+      "hash": "7583a8cfac7b55f0dd69b45f5057cdb4ce2beb6b9f49001991cf06010597c951"
+    },
+    "https://developer.apple.com/documentation/networkextension/nepackettunnelnetworksettingsipfamily/nepackettunnelnetworksettingsipfamilyany": {
+      "etag": "\"e50-659029a54e4b6-df\"",
+      "file_path": "documentation/NetworkExtension/nepackettunnelnetworksettingsipfamily/nepackettunnelnetworksettingsipfamilyany.md",
+      "hash": "bfd74dcfe86af300e08a2eb013d1f6d60804a2caf734d654d85753fc30755e43"
+    },
+    "https://developer.apple.com/documentation/networkextension/nepackettunnelnetworksettingsipfamily/nepackettunnelnetworksettingsipfamilyipv4": {
+      "etag": "\"e5c-659029a54e4b6-df\"",
+      "file_path": "documentation/NetworkExtension/nepackettunnelnetworksettingsipfamily/nepackettunnelnetworksettingsipfamilyipv4.md",
+      "hash": "42d7a18842b84d31c5c36999219ce6e47342ea53032f30a1cfb4b6d14caff614"
+    },
+    "https://developer.apple.com/documentation/networkextension/nepackettunnelnetworksettingsipfamily/nepackettunnelnetworksettingsipfamilyipv6": {
+      "etag": "\"e5c-659029a54e4b6-df\"",
+      "file_path": "documentation/NetworkExtension/nepackettunnelnetworksettingsipfamily/nepackettunnelnetworksettingsipfamilyipv6.md",
+      "hash": "8d757926a2e30c910069ad071dcca1224c17b95758556c455ebcd99afb35a915"
+    },
+    "https://developer.apple.com/documentation/networkextension/nepackettunnelnetworksettingsipfamily/nepackettunnelnetworksettingsipfamilynone": {
+      "etag": "\"e5c-659029a54e4b6-df\"",
+      "file_path": "documentation/NetworkExtension/nepackettunnelnetworksettingsipfamily/nepackettunnelnetworksettingsipfamilynone.md",
+      "hash": "2fd9361073b262ba139dd8cade69f3f550e021b67c5f6111a75e21211a2702e1"
     },
     "https://developer.apple.com/documentation/networkextension/nepackettunnelprovider": {
       "etag": "\"b217-65d5608b344e2-df\"",
@@ -3114,6 +3334,11 @@
       "etag": "\"1604-65d5608cd21d5-df\"",
       "file_path": "documentation/NetworkExtension/nepackettunnelprovider/virtualinterface-7l3ol.md",
       "hash": "f123fbb41e666655292ab95a7b854e616f1b62104af2bee19983ad247b15f391"
+    },
+    "https://developer.apple.com/documentation/networkextension/nepackettunnelprovider/virtualinterface-9fpgd": {
+      "etag": "\"1576-65d5608cd21d5-df\"",
+      "file_path": "documentation/NetworkExtension/nepackettunnelprovider/virtualinterface-9fpgd.md",
+      "hash": "7c211a5a9cd280661b293f9eb2c2cb149cb1b416837bc0bf19c0a6d5e0d0b4e7"
     },
     "https://developer.apple.com/documentation/networkextension/neprivateltenetwork": {
       "etag": "\"5686-65d5608c57adb-df\"",
@@ -3415,10 +3640,20 @@
       "file_path": "documentation/NetworkExtension/nerelay/syntheticdnsansweripv6prefix.md",
       "hash": "441a87c0b3fefa4f547be4ae4cfeb4d14ea99faec278ff8bb6eae7d32e3434d6"
     },
+    "https://developer.apple.com/documentation/networkextension/nerelay_export": {
+      "etag": "\"a50-65d5608d50985-df\"",
+      "file_path": "documentation/NetworkExtension/nerelay_export.md",
+      "hash": "b389747914a2f565431cc6ad81d53d8772ac1a5b3f1c2db0db83cf98ee9d859a"
+    },
     "https://developer.apple.com/documentation/networkextension/nerelayclienterrordomain": {
       "etag": "\"1add-65d5608db56b1-df\"",
       "file_path": "documentation/NetworkExtension/nerelayclienterrordomain.md",
       "hash": "d70f27705ad89271a1a7e890c2f82558a9a4b365f757db9844de10e896128eda"
+    },
+    "https://developer.apple.com/documentation/networkextension/nerelayconfigurationdidchangenotification": {
+      "etag": "\"101d-65d5608dcb3b8-df\"",
+      "file_path": "documentation/NetworkExtension/nerelayconfigurationdidchangenotification.md",
+      "hash": "f97ad97c5f2fe7fc10593f758540d7ec86154c04a4f8876d1ea0daefc65696af"
     },
     "https://developer.apple.com/documentation/networkextension/nerelayerrordomain": {
       "etag": "\"33e3-65d5608d19656-df\"",
@@ -3720,6 +3955,11 @@
       "file_path": "documentation/NetworkExtension/netunnelprovider/settunnelnetworksettings(_,completionhandler).md",
       "hash": "58a9de08e53243fe551e8685d12c307247869535f20ff7b9a981660abd656a92"
     },
+    "https://developer.apple.com/documentation/networkextension/netunnelprovider_export": {
+      "etag": "\"abc-65d5608b8a8a6-df\"",
+      "file_path": "documentation/NetworkExtension/netunnelprovider_export.md",
+      "hash": "d99836ef449b363e7cacc3623428f35ca67ae3196977443dbd1dca59e31b0a5c"
+    },
     "https://developer.apple.com/documentation/networkextension/netunnelprovidererror-swift.struct": {
       "etag": "\"3384-65d5608b6f3e3-df\"",
       "file_path": "documentation/NetworkExtension/netunnelprovidererror-swift.struct.md",
@@ -3929,6 +4169,16 @@
       "etag": "\"279e-65d5608b6f3e3-df\"",
       "file_path": "documentation/NetworkExtension/neurlfilter/verdict/unknown.md",
       "hash": "4eb2991ac071d5d2eccdd474df96fe18263db7b9e4e40efe827f0f25f26428eb"
+    },
+    "https://developer.apple.com/documentation/networkextension/neurlfilter/verdictforurl:completionhandler:": {
+      "etag": "\"20fb-65d5608b6f3e3-df\"",
+      "file_path": "documentation/NetworkExtension/neurlfilter/verdictforurl_completionhandler_.md",
+      "hash": "5454e0a756bb5e7a439f993e87b05518e4fb0ad1911fc109b0b53e33a35eae72"
+    },
+    "https://developer.apple.com/documentation/networkextension/neurlfilter_export": {
+      "etag": "\"a80-65d5608b6f3e3-df\"",
+      "file_path": "documentation/NetworkExtension/neurlfilter_export.md",
+      "hash": "2a6c13e914331b6ae7a5a42bb6b5e844815709635cb3046b155eed487ea6770b"
     },
     "https://developer.apple.com/documentation/networkextension/neurlfiltercontrolprovider": {
       "etag": "\"36ed-65d5608c2dda2-df\"",
@@ -4380,6 +4630,16 @@
       "file_path": "documentation/NetworkExtension/neurlfilterprefilter/tag.md",
       "hash": "d1d2affeda74a0943e23a1065311adb2feb6cac343a4e37bf7b7fd6c89e29490"
     },
+    "https://developer.apple.com/documentation/networkextension/nevpn_export": {
+      "etag": "\"a38-65d5608d304fc-df\"",
+      "file_path": "documentation/NetworkExtension/nevpn_export.md",
+      "hash": "19057fe53b3f1d67f9bda8909167d2b5b3eecefd28f277433f86c72a3cb40bac"
+    },
+    "https://developer.apple.com/documentation/networkextension/nevpnconfigurationchangenotification": {
+      "etag": "\"10ce-65d5608ba6d4c-df\"",
+      "file_path": "documentation/NetworkExtension/nevpnconfigurationchangenotification.md",
+      "hash": "923a4364dd1c6b24dfafe7390a0526baecca40b747392bc4702fd833e2553c04"
+    },
     "https://developer.apple.com/documentation/networkextension/nevpnconnection": {
       "etag": "\"8f57-65d5608ca31ca-df\"",
       "file_path": "documentation/NetworkExtension/nevpnconnection.md",
@@ -4785,6 +5045,21 @@
       "file_path": "documentation/NetworkExtension/nevpnikev2diffiehellmangroup/init(rawvalue).md",
       "hash": "1450d764865b3d0866c73dd00170ce14ed382b3409cb27d6fdd1b60b8a3078ad"
     },
+    "https://developer.apple.com/documentation/networkextension/nevpnikev2diffiehellmangroup/nevpnikev2diffiehellmangroup1": {
+      "etag": "\"10b9-659029a3f2967-df\"",
+      "file_path": "documentation/NetworkExtension/nevpnikev2diffiehellmangroup/nevpnikev2diffiehellmangroup1.md",
+      "hash": "082d968a7630236a08ddbf46db2a649ae283485ff09ac9505aa7944f26a23bbb"
+    },
+    "https://developer.apple.com/documentation/networkextension/nevpnikev2diffiehellmangroup/nevpnikev2diffiehellmangroup2": {
+      "etag": "\"10b9-659029a3f2967-df\"",
+      "file_path": "documentation/NetworkExtension/nevpnikev2diffiehellmangroup/nevpnikev2diffiehellmangroup2.md",
+      "hash": "79992b4ee32a3cdfe20f270b78a47e9059a4d64bf4bb0fa3f87102a5d5eec2a4"
+    },
+    "https://developer.apple.com/documentation/networkextension/nevpnikev2diffiehellmangroup/nevpnikev2diffiehellmangroup5": {
+      "etag": "\"10b9-659029a3f2967-df\"",
+      "file_path": "documentation/NetworkExtension/nevpnikev2diffiehellmangroup/nevpnikev2diffiehellmangroup5.md",
+      "hash": "7c0fc0aa5fe06080dd034ce68f37adfca62a119eaffe407b1756f08ec72b7c4f"
+    },
     "https://developer.apple.com/documentation/networkextension/nevpnikev2encryptionalgorithm": {
       "etag": "\"8392-65d5608d304fc-df\"",
       "file_path": "documentation/NetworkExtension/nevpnikev2encryptionalgorithm.md",
@@ -4820,6 +5095,16 @@
       "file_path": "documentation/NetworkExtension/nevpnikev2encryptionalgorithm/init(rawvalue).md",
       "hash": "70976811e08c90c95751cba23fbb1dda83d3cf7f1b663549858234f31a01b6f2"
     },
+    "https://developer.apple.com/documentation/networkextension/nevpnikev2encryptionalgorithm/nevpnikev2encryptionalgorithm3des": {
+      "etag": "\"10fc-659029a58fb1a-df\"",
+      "file_path": "documentation/NetworkExtension/nevpnikev2encryptionalgorithm/nevpnikev2encryptionalgorithm3des.md",
+      "hash": "e1567b68d332936bbba4d6fe5148a9d1f91464d42868326a8605785e12cda299"
+    },
+    "https://developer.apple.com/documentation/networkextension/nevpnikev2encryptionalgorithm/nevpnikev2encryptionalgorithmdes": {
+      "etag": "\"10f0-659029a58fb1a-df\"",
+      "file_path": "documentation/NetworkExtension/nevpnikev2encryptionalgorithm/nevpnikev2encryptionalgorithmdes.md",
+      "hash": "0ef5adabfa9b076316bfbd33c29c1f691af947b04da48c46d48507011e19c546"
+    },
     "https://developer.apple.com/documentation/networkextension/nevpnikev2integrityalgorithm": {
       "etag": "\"7596-65d5608bc2b40-df\"",
       "file_path": "documentation/NetworkExtension/nevpnikev2integrityalgorithm.md",
@@ -4829,6 +5114,16 @@
       "etag": "\"14a4-65d5608ba6d4c-df\"",
       "file_path": "documentation/NetworkExtension/nevpnikev2integrityalgorithm/init(rawvalue).md",
       "hash": "dd29398c01e71665c72f58315e2cdbbed6c5a6b437e8158ecd81ef269c49eebf"
+    },
+    "https://developer.apple.com/documentation/networkextension/nevpnikev2integrityalgorithm/nevpnikev2integrityalgorithmsha160": {
+      "etag": "\"10ae-659029a379ddc-df\"",
+      "file_path": "documentation/NetworkExtension/nevpnikev2integrityalgorithm/nevpnikev2integrityalgorithmsha160.md",
+      "hash": "52502598afbf4863ed8b1c5446e000d4f96f90d810abaf0cb43d175c0919ecbb"
+    },
+    "https://developer.apple.com/documentation/networkextension/nevpnikev2integrityalgorithm/nevpnikev2integrityalgorithmsha96": {
+      "etag": "\"10a2-659029a379ddc-df\"",
+      "file_path": "documentation/NetworkExtension/nevpnikev2integrityalgorithm/nevpnikev2integrityalgorithmsha96.md",
+      "hash": "211022ae8abe69ea32ca990ce7eee834521dba690cca2935f944cc32217719e1"
     },
     "https://developer.apple.com/documentation/networkextension/nevpnikev2integrityalgorithm/sha256": {
       "etag": "\"24ea-65d5608ba6d4c-df\"",
@@ -4924,6 +5219,11 @@
       "etag": "\"4694-65d5608c57adb-df\"",
       "file_path": "documentation/NetworkExtension/nevpnikev2securityassociationparameters/postquantumkeyexchangemethods-3173s.md",
       "hash": "753989a027a773ce83ab43e3e411afe68ca3cc767f34d26db846ac83230a0f48"
+    },
+    "https://developer.apple.com/documentation/networkextension/nevpnikev2securityassociationparameters/postquantumkeyexchangemethods-56672": {
+      "etag": "\"43c2-65d5608c57adb-df\"",
+      "file_path": "documentation/NetworkExtension/nevpnikev2securityassociationparameters/postquantumkeyexchangemethods-56672.md",
+      "hash": "fe6dff8f890de8e06d4aa17d5f55654d68f286fe8171436c2547195ef3cfd78a"
     },
     "https://developer.apple.com/documentation/networkextension/nevpnikev2tlsversion": {
       "etag": "\"5192-65d5608b4f78b-df\"",
@@ -5270,6 +5570,11 @@
       "file_path": "documentation/NetworkExtension/nevpnstatus/reasserting.md",
       "hash": "dbcab685dc13cc26b98ede2453d10b75c563b0640a3bea1fcc803c802f9f9aa9"
     },
+    "https://developer.apple.com/documentation/networkextension/nevpnstatusdidchangenotification": {
+      "etag": "\"105a-65d5608b6f3e3-df\"",
+      "file_path": "documentation/NetworkExtension/nevpnstatusdidchangenotification.md",
+      "hash": "2a5095eeef26d2c4d595c0f64a4ef85c9c5694f72bf4a9e195128e02f6d75c9e"
+    },
     "https://developer.apple.com/documentation/networkextension/nwbonjourserviceendpoint": {
       "etag": "\"67ce-65d5608c429bb-df\"",
       "file_path": "documentation/NetworkExtension/nwbonjourserviceendpoint.md",
@@ -5299,6 +5604,11 @@
       "etag": "\"550f-65d5608db56b1-df\"",
       "file_path": "documentation/NetworkExtension/nwendpoint.md",
       "hash": "a7d6917433b332aead95c53132d09e6af67ef7b8d064027da4e6b30b52741bf3"
+    },
+    "https://developer.apple.com/documentation/networkextension/nwendpointarray": {
+      "etag": "\"b08-65d5608ba6d4c-df\"",
+      "file_path": "documentation/NetworkExtension/nwendpointarray.md",
+      "hash": "f969e4eb90366e89dce5cffaa4827c37f6f3a0d31a995021209e8ca452bf78b5"
     },
     "https://developer.apple.com/documentation/networkextension/nwhostendpoint": {
       "etag": "\"5dd4-65d5608d19656-df\"",
@@ -5850,6 +6160,11 @@
       "file_path": "documentation/NetworkExtension/neappproxyflow/open(withlocalflowendpoint,completionhandler).md",
       "hash": "6ca2401fe78ddef6b5a8496479a67bd3153414d3316bbe09aa17bb6f3482ea03"
     },
+    "https://developer.apple.com/tutorials/data/documentation/networkextension/neappproxyflow/openwithlocalflowendpoint:completionhandler:.json": {
+      "etag": "\"1b17-65d5608d50985-df\"",
+      "file_path": "documentation/NetworkExtension/neappproxyflow/openwithlocalflowendpoint_completionhandler_.md",
+      "hash": "37c329eb2c663123ef3848604ae69175db8fcff4ea9cf54edc658db72efc736e"
+    },
     "https://developer.apple.com/tutorials/data/documentation/networkextension/neappproxyflow/remotehostname.json": {
       "etag": "\"4629-65d5608d50985-df\"",
       "file_path": "documentation/NetworkExtension/neappproxyflow/remotehostname.md",
@@ -5864,6 +6179,11 @@
       "etag": "\"161d-65d5608d50985-df\"",
       "file_path": "documentation/NetworkExtension/neappproxyflow/setmetadata(on).md",
       "hash": "ac11667feae3239e77cacb7d63877dcde2218ec39eb316fc036b021b63884afa"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/networkextension/neappproxyflow_export.json": {
+      "etag": "\"aa4-65d5608c429bb-df\"",
+      "file_path": "documentation/NetworkExtension/neappproxyflow_export.md",
+      "hash": "df53fbb37bc74bce043d9ada60f7826cb069d433ad197f46b12a1218d2aa7191"
     },
     "https://developer.apple.com/tutorials/data/documentation/networkextension/neappproxyflowerror-swift.struct.json": {
       "etag": "\"53f3-65d5608b344e2-df\"",
@@ -6005,6 +6325,11 @@
       "file_path": "documentation/NetworkExtension/neappproxyprovider/handlenewudpflow(_,initialremoteendpoint).md",
       "hash": "63d2077d08963cd6ff5bc88cf469791a98209ca42a57b408a47d6f552116d593"
     },
+    "https://developer.apple.com/tutorials/data/documentation/networkextension/neappproxyprovider/handlenewudpflow:initialremoteflowendpoint:.json": {
+      "etag": "\"1e86-65d5608b4f78b-df\"",
+      "file_path": "documentation/NetworkExtension/neappproxyprovider/handlenewudpflow_initialremoteflowendpoint_.md",
+      "hash": "423dac67e0dfe16a1511905947a15d60721b75a7d451c05556d131363f7e0476"
+    },
     "https://developer.apple.com/tutorials/data/documentation/networkextension/neappproxyprovider/startproxy(options:completionhandler:).json": {
       "etag": "\"4be3-65d5608b4f78b-df\"",
       "file_path": "documentation/NetworkExtension/neappproxyprovider/startproxy(options,completionhandler).md",
@@ -6045,6 +6370,11 @@
       "file_path": "documentation/NetworkExtension/neappproxytcpflow/remoteflowendpoint-4r7v1.md",
       "hash": "e2bd046afaa6607fe59c7a27e77e3804e224f1b3f8225ba8f0ecd5d3092d54e3"
     },
+    "https://developer.apple.com/tutorials/data/documentation/networkextension/neappproxytcpflow/remoteflowendpoint-9lvob.json": {
+      "etag": "\"14ce-65d5608d952e2-df\"",
+      "file_path": "documentation/NetworkExtension/neappproxytcpflow/remoteflowendpoint-9lvob.md",
+      "hash": "372ea6b95a1134a9ad33b570962f90a220130b4948b3f04b7a480d8a05c709f8"
+    },
     "https://developer.apple.com/tutorials/data/documentation/networkextension/neappproxytcpflow/write(_:withcompletionhandler:).json": {
       "etag": "\"4bf7-65d5608d952e2-df\"",
       "file_path": "documentation/NetworkExtension/neappproxytcpflow/write(_,withcompletionhandler).md",
@@ -6065,6 +6395,11 @@
       "file_path": "documentation/NetworkExtension/neappproxyudpflow/localflowendpoint-7ukb6.md",
       "hash": "aa847ce153ddf5181791efe71076367a41f33b94f392806e11490a1778bf23a3"
     },
+    "https://developer.apple.com/tutorials/data/documentation/networkextension/neappproxyudpflow/localflowendpoint-9a8gj.json": {
+      "etag": "\"1505-65d5608d19656-df\"",
+      "file_path": "documentation/NetworkExtension/neappproxyudpflow/localflowendpoint-9a8gj.md",
+      "hash": "7f0630d7face5661536cd90361fbc00f398728b3162e7a314523a02c0cb59654"
+    },
     "https://developer.apple.com/tutorials/data/documentation/networkextension/neappproxyudpflow/readdatagrams().json": {
       "etag": "\"1d09-65d5608d19656-df\"",
       "file_path": "documentation/NetworkExtension/neappproxyudpflow/readdatagrams().md",
@@ -6079,6 +6414,11 @@
       "etag": "\"5b68-65d5608d19656-df\"",
       "file_path": "documentation/NetworkExtension/neappproxyudpflow/readdatagrams(completionhandler)-9z8gw.md",
       "hash": "060bc3c18275f9cff58a4487aded39c933baf04e435098cd28d3908049f0b684"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/networkextension/neappproxyudpflow/readdatagramsandflowendpointswithcompletionhandler:.json": {
+      "etag": "\"1b09-65d5608d19656-df\"",
+      "file_path": "documentation/NetworkExtension/neappproxyudpflow/readdatagramsandflowendpointswithcompletionhandler_.md",
+      "hash": "591fade843d48d64981ab1d00c8f6bab2b178f7756f6ce010d9189046d6b31d6"
     },
     "https://developer.apple.com/tutorials/data/documentation/networkextension/neappproxyudpflow/writedatagrams(_:).json": {
       "etag": "\"1a67-65d5608d19656-df\"",
@@ -6095,6 +6435,11 @@
       "file_path": "documentation/NetworkExtension/neappproxyudpflow/writedatagrams(_,sentby,completionhandler).md",
       "hash": "44a562012174323eb0305c853af81a61be01565d415ada8be17f3bc4855583ea"
     },
+    "https://developer.apple.com/tutorials/data/documentation/networkextension/neappproxyudpflow/writedatagrams:sentbyflowendpoints:completionhandler:.json": {
+      "etag": "\"1b99-65d5608d19656-df\"",
+      "file_path": "documentation/NetworkExtension/neappproxyudpflow/writedatagrams_sentbyflowendpoints_completionhandler_.md",
+      "hash": "ee275f0eeae0ae9b70dce624a82adc0bc4acf8306f3677dd674c4e23441eb49c"
+    },
     "https://developer.apple.com/tutorials/data/documentation/networkextension/neappproxyudpflowhandling.json": {
       "etag": "\"1145-65d5608b19ae9-df\"",
       "file_path": "documentation/NetworkExtension/neappproxyudpflowhandling.md",
@@ -6104,6 +6449,11 @@
       "etag": "\"1fc6-65d5608afd2d6-df\"",
       "file_path": "documentation/NetworkExtension/neappproxyudpflowhandling/handlenewudpflow(_,initialremoteflowendpoint).md",
       "hash": "14a8e51177597d10733f8567ce240bdd1d345bdc2ed67c0a849e4958e81cdd2e"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/networkextension/neapppush_export.json": {
+      "etag": "\"a68-65d5608ba6d4c-df\"",
+      "file_path": "documentation/NetworkExtension/neapppush_export.md",
+      "hash": "d73ec8d74e389fdc4f6eda5af6d9e49df0cef1354e5dec5f774bd4e3dfc38a06"
     },
     "https://developer.apple.com/tutorials/data/documentation/networkextension/neapppushdelegate.json": {
       "etag": "\"2b68-65d5608bc2b40-df\"",
@@ -6340,6 +6690,11 @@
       "file_path": "documentation/NetworkExtension/neapprule/matchtools.md",
       "hash": "2b86688f063850d60744cdf596f74e77a48d96645984d6b352135e6eb58cb38c"
     },
+    "https://developer.apple.com/tutorials/data/documentation/networkextension/necopynullable.json": {
+      "etag": "\"a50-65d5608d50985-df\"",
+      "file_path": "documentation/NetworkExtension/necopynullable.md",
+      "hash": "44d5ee42f6368fd8e747965110e4bb4c0c9e5ffae5249dedb6dec69265ddc57d"
+    },
     "https://developer.apple.com/tutorials/data/documentation/networkextension/nednsoverhttpssettings.json": {
       "etag": "\"5bee-65d5608ca31ca-df\"",
       "file_path": "documentation/NetworkExtension/nednsoverhttpssettings.md",
@@ -6394,6 +6749,16 @@
       "etag": "\"21d3-65d5608ca31ca-df\"",
       "file_path": "documentation/NetworkExtension/nednsprotocol/tls.md",
       "hash": "68e0ed238b321049f675db2e4fc4a52144a5757345504b576edf14f0b4967c3c"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/networkextension/nednsproxy_export.json": {
+      "etag": "\"a74-65d5608d19656-df\"",
+      "file_path": "documentation/NetworkExtension/nednsproxy_export.md",
+      "hash": "e2a078d5a6c57cd95ffd47fc94663451a68d81d2a7aa50749e277587a665d812"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/networkextension/nednsproxyconfigurationdidchangenotification.json": {
+      "etag": "\"10ea-65d5608bc2b40-df\"",
+      "file_path": "documentation/NetworkExtension/nednsproxyconfigurationdidchangenotification.md",
+      "hash": "74bfa1fda672522bcae7af10beb725dfa5d5aa8987728b8cbb26dd17eeb31269"
     },
     "https://developer.apple.com/tutorials/data/documentation/networkextension/nednsproxyerrordomain.json": {
       "etag": "\"20dd-65d5608ba6d4c-df\"",
@@ -6490,6 +6855,11 @@
       "file_path": "documentation/NetworkExtension/nednsproxyprovider/handlenewudpflow(_,initialremoteendpoint).md",
       "hash": "015cc5db44dd549cb9121e6876c8b911efed0276efcf172a4518a9b4affaeaeb"
     },
+    "https://developer.apple.com/tutorials/data/documentation/networkextension/nednsproxyprovider/handlenewudpflow:initialremoteflowendpoint:.json": {
+      "etag": "\"1e85-65d5608afd2d6-df\"",
+      "file_path": "documentation/NetworkExtension/nednsproxyprovider/handlenewudpflow_initialremoteflowendpoint_.md",
+      "hash": "e96c3701d7ab1b12bb6c05b1353c59321873d0aa09278d7014aacebb7a57c57d"
+    },
     "https://developer.apple.com/tutorials/data/documentation/networkextension/nednsproxyprovider/startproxy(options:completionhandler:).json": {
       "etag": "\"5d86-65d5608afd2d6-df\"",
       "file_path": "documentation/NetworkExtension/nednsproxyprovider/startproxy(options,completionhandler).md",
@@ -6564,6 +6934,16 @@
       "etag": "\"3d86-65d5608cd21d5-df\"",
       "file_path": "documentation/NetworkExtension/nednssettings/servers.md",
       "hash": "766e8de6d19ba3fc6625fc4ab578f4320e24ed2519d21775e8950fcd2c19eaee"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/networkextension/nednssettings_export.json": {
+      "etag": "\"a98-65d5608dcb3b8-df\"",
+      "file_path": "documentation/NetworkExtension/nednssettings_export.md",
+      "hash": "e478640993fd7ef1245607349bf4146fa1111c406cada8beb6c77e0fab522211"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/networkextension/nednssettingsconfigurationdidchangenotification.json": {
+      "etag": "\"103f-65d5608b4f78b-df\"",
+      "file_path": "documentation/NetworkExtension/nednssettingsconfigurationdidchangenotification.md",
+      "hash": "b5990a8728ce94a6938e3658a3c6c69dd2dff546139da90c7490aa7c7515e692"
     },
     "https://developer.apple.com/tutorials/data/documentation/networkextension/nednssettingserrordomain.json": {
       "etag": "\"34c1-65d5608b19ae9-df\"",
@@ -6715,6 +7095,16 @@
       "file_path": "documentation/NetworkExtension/neevaluateconnectionruleaction/neverconnect.md",
       "hash": "1ac58a816f712f1f91b950d995e3c1c0fb40c4b96b48ee8fab2ef075f029e2f6"
     },
+    "https://developer.apple.com/tutorials/data/documentation/networkextension/nefilter_data_provider_extern.json": {
+      "etag": "\"b04-65d5608b4f78b-df\"",
+      "file_path": "documentation/NetworkExtension/nefilter_data_provider_extern.md",
+      "hash": "626527c6832614d272622e1f7e137dab857cf9728f2359fc9259e8b0241b2d2b"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/networkextension/nefilter_export.json": {
+      "etag": "\"a5c-65d5608b6f3e3-df\"",
+      "file_path": "documentation/NetworkExtension/nefilter_export.md",
+      "hash": "ebe821fe1e9859e03cf779934a58390000cd409f424229ef46e51f2cbaf5f4c0"
+    },
     "https://developer.apple.com/tutorials/data/documentation/networkextension/nefilteraction.json": {
       "etag": "\"6cce-65d5608c429bb-df\"",
       "file_path": "documentation/NetworkExtension/nefilteraction.md",
@@ -6769,6 +7159,11 @@
       "etag": "\"2cd2-65d5608cd21d5-df\"",
       "file_path": "documentation/NetworkExtension/nefilterbrowserflow/response.md",
       "hash": "8d78fbe1d9ad146a8e9452d16ecfb3bcf5f36145f26e5d3e83fa91d02223c83c"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/networkextension/nefilterconfigurationdidchangenotification.json": {
+      "etag": "\"10f6-65d5608d50985-df\"",
+      "file_path": "documentation/NetworkExtension/nefilterconfigurationdidchangenotification.md",
+      "hash": "2be136298280669b76925031744ebfc8a97993946370bab19dc208de3cc5a90e"
     },
     "https://developer.apple.com/tutorials/data/documentation/networkextension/nefiltercontrolprovider.json": {
       "etag": "\"9d9d-65d5608d50985-df\"",
@@ -7475,6 +7870,11 @@
       "file_path": "documentation/NetworkExtension/nefiltersocketflow/localendpoint.md",
       "hash": "73ce3ad297e9f4b9065b9b60ddeef16ea02acd156195c5136f13aceeb4165623"
     },
+    "https://developer.apple.com/tutorials/data/documentation/networkextension/nefiltersocketflow/localflowendpoint-4nt54.json": {
+      "etag": "\"14e4-65d5608b344e2-df\"",
+      "file_path": "documentation/NetworkExtension/nefiltersocketflow/localflowendpoint-4nt54.md",
+      "hash": "0ab83581623911fa3d6d1204f42a30942fc2461e58e3c940b03a62ac00cacb72"
+    },
     "https://developer.apple.com/tutorials/data/documentation/networkextension/nefiltersocketflow/localflowendpoint-89z3l.json": {
       "etag": "\"1563-65d5608b344e2-df\"",
       "file_path": "documentation/NetworkExtension/nefiltersocketflow/localflowendpoint-89z3l.md",
@@ -7484,6 +7884,11 @@
       "etag": "\"5584-65d5608b344e2-df\"",
       "file_path": "documentation/NetworkExtension/nefiltersocketflow/remoteendpoint.md",
       "hash": "e343baf1db0582ebd24499156bfca94fb71bbe1cbc07fa14aea6a46156dfd72c"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/networkextension/nefiltersocketflow/remoteflowendpoint-52dxr.json": {
+      "etag": "\"14f0-65d5608b344e2-df\"",
+      "file_path": "documentation/NetworkExtension/nefiltersocketflow/remoteflowendpoint-52dxr.md",
+      "hash": "624071035fe42a053be39d76cc2f049a88c0023ef398989334f28d49891426e0"
     },
     "https://developer.apple.com/tutorials/data/documentation/networkextension/nefiltersocketflow/remoteflowendpoint-6bnas.json": {
       "etag": "\"156e-65d5608b344e2-df\"",
@@ -7659,6 +8064,21 @@
       "etag": "\"38b9-65d5608cd21d5-df\"",
       "file_path": "documentation/NetworkExtension/nehotspotconfiguration/ssidprefix.md",
       "hash": "d5c0900954b284b38a59af359b38643bafeac2f1ce98f88f432e6979975973c5"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/networkextension/nehotspotconfigurationeaptlsversion/nehotspotconfigurationeaptlsversion_1_0.json": {
+      "etag": "\"18c2-65d5608c2dda2-df\"",
+      "file_path": "documentation/NetworkExtension/nehotspotconfigurationeaptlsversion/nehotspotconfigurationeaptlsversion_1_0.md",
+      "hash": "153159430fad73a0eb38cb9de454bfa6b2e9628f01cf4fcbd25d4baceb7ffaf8"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/networkextension/nehotspotconfigurationeaptlsversion/nehotspotconfigurationeaptlsversion_1_1.json": {
+      "etag": "\"18c2-65d5608c2dda2-df\"",
+      "file_path": "documentation/NetworkExtension/nehotspotconfigurationeaptlsversion/nehotspotconfigurationeaptlsversion_1_1.md",
+      "hash": "b963dcdc32d7f8d735ea35882dfa5b38bc756a2c93baabf998bba06e90b9b0fa"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/networkextension/nehotspotconfigurationeaptlsversion/nehotspotconfigurationeaptlsversion_1_2.json": {
+      "etag": "\"18c2-65d5608c2dda2-df\"",
+      "file_path": "documentation/NetworkExtension/nehotspotconfigurationeaptlsversion/nehotspotconfigurationeaptlsversion_1_2.md",
+      "hash": "1752ff892dd696e9445271f02c921712e39e1d9939a2c0368451206ea9b9507b"
     },
     "https://developer.apple.com/tutorials/data/documentation/networkextension/nehotspotconfigurationerror.json": {
       "etag": "\"9747-65d5608ba6d4c-df\"",
@@ -8015,6 +8435,11 @@
       "file_path": "documentation/NetworkExtension/nehotspothelpercommand/interface-46dq.md",
       "hash": "9a5a6efd4e696bac2a6676cd2bbcbab45f0549985999807989a083d84bb67bd1"
     },
+    "https://developer.apple.com/tutorials/data/documentation/networkextension/nehotspothelpercommand/interface-7rt15.json": {
+      "etag": "\"1480-65d5608b19ae9-df\"",
+      "file_path": "documentation/NetworkExtension/nehotspothelpercommand/interface-7rt15.md",
+      "hash": "243eddc6300b8044337fe117d463759b10cae3c124b4c3c399cd0c27db41e25d"
+    },
     "https://developer.apple.com/tutorials/data/documentation/networkextension/nehotspothelpercommand/network.json": {
       "etag": "\"3265-65d5608b19ae9-df\"",
       "file_path": "documentation/NetworkExtension/nehotspothelpercommand/network.md",
@@ -8365,6 +8790,16 @@
       "file_path": "documentation/NetworkExtension/nehotspotnetworksecuritytype/wep.md",
       "hash": "6ca3fe43acc117205ff1cba915ec5306633f2b5c83d18bbe64d4368b346335f5"
     },
+    "https://developer.apple.com/tutorials/data/documentation/networkextension/nehs_export.json": {
+      "etag": "\"a2c-65d5608c2dda2-df\"",
+      "file_path": "documentation/NetworkExtension/nehs_export.md",
+      "hash": "b9271a9308183e46188bd5c66ed04d3952ce5984801a7899dbd66ef106e980a9"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/networkextension/nehscfg_export.json": {
+      "etag": "\"a50-65d5608bc2b40-df\"",
+      "file_path": "documentation/NetworkExtension/nehscfg_export.md",
+      "hash": "2b4c11e63065a59c43ed40c9b85fe3959b823e04a78e17a77ec1e16981fe075e"
+    },
     "https://developer.apple.com/tutorials/data/documentation/networkextension/neipv4route.json": {
       "etag": "\"6376-65d5608d304fc-df\"",
       "file_path": "documentation/NetworkExtension/neipv4route.md",
@@ -8424,6 +8859,11 @@
       "etag": "\"2b31-65d5608ca31ca-df\"",
       "file_path": "documentation/NetworkExtension/neipv4settings/router.md",
       "hash": "e740959bfcd6406356cdbe3f28871ba08a4f131e586402bd9fffe74a95f4a8a0"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/networkextension/neipv4settings/settingswithautomaticaddressing.json": {
+      "etag": "\"124c-659029a494c63-df\"",
+      "file_path": "documentation/NetworkExtension/neipv4settings/settingswithautomaticaddressing.md",
+      "hash": "2b3e779ffeacef955426cc62cd37f6b615ebb786186994ac1f15d97728eb63b5"
     },
     "https://developer.apple.com/tutorials/data/documentation/networkextension/neipv4settings/subnetmasks.json": {
       "etag": "\"2a47-65d5608ca31ca-df\"",
@@ -8490,6 +8930,16 @@
       "file_path": "documentation/NetworkExtension/neipv6settings/networkprefixlengths.md",
       "hash": "9639257336783c152ef21d61fd82c860febf4ab96286ac68bf1270b110f19758"
     },
+    "https://developer.apple.com/tutorials/data/documentation/networkextension/neipv6settings/settingswithautomaticaddressing.json": {
+      "etag": "\"118d-659029a52da51-df\"",
+      "file_path": "documentation/NetworkExtension/neipv6settings/settingswithautomaticaddressing.md",
+      "hash": "e0b89a2d3010037ad69679ae3b8294df24b97b1810f383b3267b02f13d1800ac"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/networkextension/neipv6settings/settingswithlinklocaladdressing.json": {
+      "etag": "\"1181-659029a52da51-df\"",
+      "file_path": "documentation/NetworkExtension/neipv6settings/settingswithlinklocaladdressing.md",
+      "hash": "c71b3d1949b5c79f16809ffd04d5e6dc7738450ce1da65962bdc42225f61c3c4"
+    },
     "https://developer.apple.com/tutorials/data/documentation/networkextension/nenetworkrule.json": {
       "etag": "\"bd12-65d5608b4f78b-df\"",
       "file_path": "documentation/NetworkExtension/nenetworkrule.md",
@@ -8525,6 +8975,21 @@
       "file_path": "documentation/NetworkExtension/nenetworkrule/init(remotenetworkendpoint,remoteprefix,localnetworkendpoint,localprefix,protocol,direction).md",
       "hash": "e50c9a5a54d800ac7ecf7881f8a0c9127eeb91f6b670abb3e2a36fa5f42cdbd4"
     },
+    "https://developer.apple.com/tutorials/data/documentation/networkextension/nenetworkrule/initwithdestinationhostendpoint:protocol:.json": {
+      "etag": "\"1b46-65d5608db56b1-df\"",
+      "file_path": "documentation/NetworkExtension/nenetworkrule/initwithdestinationhostendpoint_protocol_.md",
+      "hash": "2a35fe4d210e80305419ef60900bc46479e224efb374feda764d9860796f71ce"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/networkextension/nenetworkrule/initwithdestinationnetworkendpoint:prefix:protocol:.json": {
+      "etag": "\"1edb-65d5608db56b1-df\"",
+      "file_path": "documentation/NetworkExtension/nenetworkrule/initwithdestinationnetworkendpoint_prefix_protocol_.md",
+      "hash": "db7f14a2ce466e929e6b097f2acf7c43c4c499be3e4b6930bfd074b12866f5ab"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/networkextension/nenetworkrule/initwithremotenetworkendpoint:remoteprefix:localnetworkendpoint:localprefix:protocol:direction:.json": {
+      "etag": "\"2984-65d5608d952e2-df\"",
+      "file_path": "documentation/NetworkExtension/nenetworkrule/initwithremotenetworkendpoint_remoteprefix_localnetworkendpoint_localprefix_protocol_direction_.md",
+      "hash": "d5f12914e5efcea50d6ff3392cf6b00c676a01de5935fabf399e38096cee9c57"
+    },
     "https://developer.apple.com/tutorials/data/documentation/networkextension/nenetworkrule/matchdirection.json": {
       "etag": "\"4200-65d5608db56b1-df\"",
       "file_path": "documentation/NetworkExtension/nenetworkrule/matchdirection.md",
@@ -8539,6 +9004,11 @@
       "etag": "\"148b-65d5608d952e2-df\"",
       "file_path": "documentation/NetworkExtension/nenetworkrule/matchlocalnetworkendpoint-62ttv.md",
       "hash": "d4d21a4716048d5ccb9e3cab6d90a4c3fbebf196b40bf695878455b719329839"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/networkextension/nenetworkrule/matchlocalnetworkendpoint-9dyor.json": {
+      "etag": "\"143f-65d5608d952e2-df\"",
+      "file_path": "documentation/NetworkExtension/nenetworkrule/matchlocalnetworkendpoint-9dyor.md",
+      "hash": "03918ad730e1fc33addf4377951fd50d2a398185bda3383d5339b0d5d6c0c255"
     },
     "https://developer.apple.com/tutorials/data/documentation/networkextension/nenetworkrule/matchlocalprefix.json": {
       "etag": "\"4b4f-65d5608d952e2-df\"",
@@ -8559,6 +9029,11 @@
       "etag": "\"14d8-65d5608db56b1-df\"",
       "file_path": "documentation/NetworkExtension/nenetworkrule/matchremotehostornetworkendpoint-4a5ht.md",
       "hash": "efcf8943e1014619ed0861fa714cac31bc4f4c9cd9355ecc05d21d9af1c2ddf1"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/networkextension/nenetworkrule/matchremotehostornetworkendpoint-80s0l.json": {
+      "etag": "\"1493-65d5608db56b1-df\"",
+      "file_path": "documentation/NetworkExtension/nenetworkrule/matchremotehostornetworkendpoint-80s0l.md",
+      "hash": "51dc3d4b1cfffa780f8e107c15f35e766686ef5e88926b6155948a4f0cf916c6"
     },
     "https://developer.apple.com/tutorials/data/documentation/networkextension/nenetworkrule/matchremoteprefix.json": {
       "etag": "\"4b4c-65d5608db56b1-df\"",
@@ -8770,6 +9245,36 @@
       "file_path": "documentation/NetworkExtension/nepackettunnelnetworksettings.md",
       "hash": "e46740a0675d876327e31cdd59437f07bbc84bc514edd68cc19a3adea5ca6af1"
     },
+    "https://developer.apple.com/tutorials/data/documentation/networkextension/nepackettunnelnetworksettings/enforceroutes.json": {
+      "etag": "\"146b-659029a4563ac-df\"",
+      "file_path": "documentation/NetworkExtension/nepackettunnelnetworksettings/enforceroutes.md",
+      "hash": "9e35e59da3b7b4b306be58da1169f7ebb6b7d583acd75de57f0adf18cf09f553"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/networkextension/nepackettunnelnetworksettings/excludeapns.json": {
+      "etag": "\"152f-659029a4563ac-df\"",
+      "file_path": "documentation/NetworkExtension/nepackettunnelnetworksettings/excludeapns.md",
+      "hash": "97f8f208bc61d8bf814d879629c01c525d1f0e39a75d49b7dffa012193825526"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/networkextension/nepackettunnelnetworksettings/excludecellularservices.json": {
+      "etag": "\"1722-659029a4563ac-df\"",
+      "file_path": "documentation/NetworkExtension/nepackettunnelnetworksettings/excludecellularservices.md",
+      "hash": "7f150f51946495efeb6854492d922c5e4989665dde959c2b3783ad9cfbac5dbc"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/networkextension/nepackettunnelnetworksettings/excludedevicecommunication.json": {
+      "etag": "\"16ae-659029a4563ac-df\"",
+      "file_path": "documentation/NetworkExtension/nepackettunnelnetworksettings/excludedevicecommunication.md",
+      "hash": "a9b67df5753f1ec4e42ed0c114ee5c3d8a82de5aeba5baff04965cc830bd44d0"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/networkextension/nepackettunnelnetworksettings/excludelocalnetworks.json": {
+      "etag": "\"1787-659029a4563ac-df\"",
+      "file_path": "documentation/NetworkExtension/nepackettunnelnetworksettings/excludelocalnetworks.md",
+      "hash": "0439a9de7a3453e623f211529183fbb4b9483fc293960ef60ed268dfe8356252"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/networkextension/nepackettunnelnetworksettings/includeallnetworks.json": {
+      "etag": "\"1bd5-659029a4563ac-df\"",
+      "file_path": "documentation/NetworkExtension/nepackettunnelnetworksettings/includeallnetworks.md",
+      "hash": "0361be07e26be915935e0b639d5a6e00b6de2e1c1a7a42140b43fae3c7e87fae"
+    },
     "https://developer.apple.com/tutorials/data/documentation/networkextension/nepackettunnelnetworksettings/ipv4settings.json": {
       "etag": "\"3e6f-65d5608c57adb-df\"",
       "file_path": "documentation/NetworkExtension/nepackettunnelnetworksettings/ipv4settings.md",
@@ -8789,6 +9294,31 @@
       "etag": "\"3eff-65d5608c57adb-df\"",
       "file_path": "documentation/NetworkExtension/nepackettunnelnetworksettings/tunneloverheadbytes.md",
       "hash": "1b23118f2d8b16e9fe6728117407cb6e18c6b225aa3c54d1d79049c1b030663b"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/networkextension/nepackettunnelnetworksettingsipfamily.json": {
+      "etag": "\"1bf8-659029a50f927-df\"",
+      "file_path": "documentation/NetworkExtension/nepackettunnelnetworksettingsipfamily.md",
+      "hash": "7583a8cfac7b55f0dd69b45f5057cdb4ce2beb6b9f49001991cf06010597c951"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/networkextension/nepackettunnelnetworksettingsipfamily/nepackettunnelnetworksettingsipfamilyany.json": {
+      "etag": "\"e50-659029a54e4b6-df\"",
+      "file_path": "documentation/NetworkExtension/nepackettunnelnetworksettingsipfamily/nepackettunnelnetworksettingsipfamilyany.md",
+      "hash": "bfd74dcfe86af300e08a2eb013d1f6d60804a2caf734d654d85753fc30755e43"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/networkextension/nepackettunnelnetworksettingsipfamily/nepackettunnelnetworksettingsipfamilyipv4.json": {
+      "etag": "\"e5c-659029a54e4b6-df\"",
+      "file_path": "documentation/NetworkExtension/nepackettunnelnetworksettingsipfamily/nepackettunnelnetworksettingsipfamilyipv4.md",
+      "hash": "42d7a18842b84d31c5c36999219ce6e47342ea53032f30a1cfb4b6d14caff614"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/networkextension/nepackettunnelnetworksettingsipfamily/nepackettunnelnetworksettingsipfamilyipv6.json": {
+      "etag": "\"e5c-659029a54e4b6-df\"",
+      "file_path": "documentation/NetworkExtension/nepackettunnelnetworksettingsipfamily/nepackettunnelnetworksettingsipfamilyipv6.md",
+      "hash": "8d757926a2e30c910069ad071dcca1224c17b95758556c455ebcd99afb35a915"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/networkextension/nepackettunnelnetworksettingsipfamily/nepackettunnelnetworksettingsipfamilynone.json": {
+      "etag": "\"e5c-659029a54e4b6-df\"",
+      "file_path": "documentation/NetworkExtension/nepackettunnelnetworksettingsipfamily/nepackettunnelnetworksettingsipfamilynone.md",
+      "hash": "2fd9361073b262ba139dd8cade69f3f550e021b67c5f6111a75e21211a2702e1"
     },
     "https://developer.apple.com/tutorials/data/documentation/networkextension/nepackettunnelprovider.json": {
       "etag": "\"b217-65d5608b344e2-df\"",
@@ -8829,6 +9359,11 @@
       "etag": "\"1604-65d5608cd21d5-df\"",
       "file_path": "documentation/NetworkExtension/nepackettunnelprovider/virtualinterface-7l3ol.md",
       "hash": "f123fbb41e666655292ab95a7b854e616f1b62104af2bee19983ad247b15f391"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/networkextension/nepackettunnelprovider/virtualinterface-9fpgd.json": {
+      "etag": "\"1576-65d5608cd21d5-df\"",
+      "file_path": "documentation/NetworkExtension/nepackettunnelprovider/virtualinterface-9fpgd.md",
+      "hash": "7c211a5a9cd280661b293f9eb2c2cb149cb1b416837bc0bf19c0a6d5e0d0b4e7"
     },
     "https://developer.apple.com/tutorials/data/documentation/networkextension/neprivateltenetwork.json": {
       "etag": "\"5686-65d5608c57adb-df\"",
@@ -9130,10 +9665,20 @@
       "file_path": "documentation/NetworkExtension/nerelay/syntheticdnsansweripv6prefix.md",
       "hash": "441a87c0b3fefa4f547be4ae4cfeb4d14ea99faec278ff8bb6eae7d32e3434d6"
     },
+    "https://developer.apple.com/tutorials/data/documentation/networkextension/nerelay_export.json": {
+      "etag": "\"a50-65d5608d50985-df\"",
+      "file_path": "documentation/NetworkExtension/nerelay_export.md",
+      "hash": "b389747914a2f565431cc6ad81d53d8772ac1a5b3f1c2db0db83cf98ee9d859a"
+    },
     "https://developer.apple.com/tutorials/data/documentation/networkextension/nerelayclienterrordomain.json": {
       "etag": "\"1add-65d5608db56b1-df\"",
       "file_path": "documentation/NetworkExtension/nerelayclienterrordomain.md",
       "hash": "d70f27705ad89271a1a7e890c2f82558a9a4b365f757db9844de10e896128eda"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/networkextension/nerelayconfigurationdidchangenotification.json": {
+      "etag": "\"101d-65d5608dcb3b8-df\"",
+      "file_path": "documentation/NetworkExtension/nerelayconfigurationdidchangenotification.md",
+      "hash": "f97ad97c5f2fe7fc10593f758540d7ec86154c04a4f8876d1ea0daefc65696af"
     },
     "https://developer.apple.com/tutorials/data/documentation/networkextension/nerelayerrordomain.json": {
       "etag": "\"33e3-65d5608d19656-df\"",
@@ -9435,6 +9980,11 @@
       "file_path": "documentation/NetworkExtension/netunnelprovider/settunnelnetworksettings(_,completionhandler).md",
       "hash": "58a9de08e53243fe551e8685d12c307247869535f20ff7b9a981660abd656a92"
     },
+    "https://developer.apple.com/tutorials/data/documentation/networkextension/netunnelprovider_export.json": {
+      "etag": "\"abc-65d5608b8a8a6-df\"",
+      "file_path": "documentation/NetworkExtension/netunnelprovider_export.md",
+      "hash": "d99836ef449b363e7cacc3623428f35ca67ae3196977443dbd1dca59e31b0a5c"
+    },
     "https://developer.apple.com/tutorials/data/documentation/networkextension/netunnelprovidererror-swift.struct.json": {
       "etag": "\"3384-65d5608b6f3e3-df\"",
       "file_path": "documentation/NetworkExtension/netunnelprovidererror-swift.struct.md",
@@ -9644,6 +10194,16 @@
       "etag": "\"279e-65d5608b6f3e3-df\"",
       "file_path": "documentation/NetworkExtension/neurlfilter/verdict/unknown.md",
       "hash": "4eb2991ac071d5d2eccdd474df96fe18263db7b9e4e40efe827f0f25f26428eb"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/networkextension/neurlfilter/verdictforurl:completionhandler:.json": {
+      "etag": "\"20fb-65d5608b6f3e3-df\"",
+      "file_path": "documentation/NetworkExtension/neurlfilter/verdictforurl_completionhandler_.md",
+      "hash": "5454e0a756bb5e7a439f993e87b05518e4fb0ad1911fc109b0b53e33a35eae72"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/networkextension/neurlfilter_export.json": {
+      "etag": "\"a80-65d5608b6f3e3-df\"",
+      "file_path": "documentation/NetworkExtension/neurlfilter_export.md",
+      "hash": "2a6c13e914331b6ae7a5a42bb6b5e844815709635cb3046b155eed487ea6770b"
     },
     "https://developer.apple.com/tutorials/data/documentation/networkextension/neurlfiltercontrolprovider.json": {
       "etag": "\"36ed-65d5608c2dda2-df\"",
@@ -10095,6 +10655,16 @@
       "file_path": "documentation/NetworkExtension/neurlfilterprefilter/tag.md",
       "hash": "d1d2affeda74a0943e23a1065311adb2feb6cac343a4e37bf7b7fd6c89e29490"
     },
+    "https://developer.apple.com/tutorials/data/documentation/networkextension/nevpn_export.json": {
+      "etag": "\"a38-65d5608d304fc-df\"",
+      "file_path": "documentation/NetworkExtension/nevpn_export.md",
+      "hash": "19057fe53b3f1d67f9bda8909167d2b5b3eecefd28f277433f86c72a3cb40bac"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/networkextension/nevpnconfigurationchangenotification.json": {
+      "etag": "\"10ce-65d5608ba6d4c-df\"",
+      "file_path": "documentation/NetworkExtension/nevpnconfigurationchangenotification.md",
+      "hash": "923a4364dd1c6b24dfafe7390a0526baecca40b747392bc4702fd833e2553c04"
+    },
     "https://developer.apple.com/tutorials/data/documentation/networkextension/nevpnconnection.json": {
       "etag": "\"8f57-65d5608ca31ca-df\"",
       "file_path": "documentation/NetworkExtension/nevpnconnection.md",
@@ -10500,6 +11070,21 @@
       "file_path": "documentation/NetworkExtension/nevpnikev2diffiehellmangroup/init(rawvalue).md",
       "hash": "1450d764865b3d0866c73dd00170ce14ed382b3409cb27d6fdd1b60b8a3078ad"
     },
+    "https://developer.apple.com/tutorials/data/documentation/networkextension/nevpnikev2diffiehellmangroup/nevpnikev2diffiehellmangroup1.json": {
+      "etag": "\"10b9-659029a3f2967-df\"",
+      "file_path": "documentation/NetworkExtension/nevpnikev2diffiehellmangroup/nevpnikev2diffiehellmangroup1.md",
+      "hash": "082d968a7630236a08ddbf46db2a649ae283485ff09ac9505aa7944f26a23bbb"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/networkextension/nevpnikev2diffiehellmangroup/nevpnikev2diffiehellmangroup2.json": {
+      "etag": "\"10b9-659029a3f2967-df\"",
+      "file_path": "documentation/NetworkExtension/nevpnikev2diffiehellmangroup/nevpnikev2diffiehellmangroup2.md",
+      "hash": "79992b4ee32a3cdfe20f270b78a47e9059a4d64bf4bb0fa3f87102a5d5eec2a4"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/networkextension/nevpnikev2diffiehellmangroup/nevpnikev2diffiehellmangroup5.json": {
+      "etag": "\"10b9-659029a3f2967-df\"",
+      "file_path": "documentation/NetworkExtension/nevpnikev2diffiehellmangroup/nevpnikev2diffiehellmangroup5.md",
+      "hash": "7c0fc0aa5fe06080dd034ce68f37adfca62a119eaffe407b1756f08ec72b7c4f"
+    },
     "https://developer.apple.com/tutorials/data/documentation/networkextension/nevpnikev2encryptionalgorithm.json": {
       "etag": "\"8392-65d5608d304fc-df\"",
       "file_path": "documentation/NetworkExtension/nevpnikev2encryptionalgorithm.md",
@@ -10535,6 +11120,16 @@
       "file_path": "documentation/NetworkExtension/nevpnikev2encryptionalgorithm/init(rawvalue).md",
       "hash": "70976811e08c90c95751cba23fbb1dda83d3cf7f1b663549858234f31a01b6f2"
     },
+    "https://developer.apple.com/tutorials/data/documentation/networkextension/nevpnikev2encryptionalgorithm/nevpnikev2encryptionalgorithm3des.json": {
+      "etag": "\"10fc-659029a58fb1a-df\"",
+      "file_path": "documentation/NetworkExtension/nevpnikev2encryptionalgorithm/nevpnikev2encryptionalgorithm3des.md",
+      "hash": "e1567b68d332936bbba4d6fe5148a9d1f91464d42868326a8605785e12cda299"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/networkextension/nevpnikev2encryptionalgorithm/nevpnikev2encryptionalgorithmdes.json": {
+      "etag": "\"10f0-659029a58fb1a-df\"",
+      "file_path": "documentation/NetworkExtension/nevpnikev2encryptionalgorithm/nevpnikev2encryptionalgorithmdes.md",
+      "hash": "0ef5adabfa9b076316bfbd33c29c1f691af947b04da48c46d48507011e19c546"
+    },
     "https://developer.apple.com/tutorials/data/documentation/networkextension/nevpnikev2integrityalgorithm.json": {
       "etag": "\"7596-65d5608bc2b40-df\"",
       "file_path": "documentation/NetworkExtension/nevpnikev2integrityalgorithm.md",
@@ -10544,6 +11139,16 @@
       "etag": "\"14a4-65d5608ba6d4c-df\"",
       "file_path": "documentation/NetworkExtension/nevpnikev2integrityalgorithm/init(rawvalue).md",
       "hash": "dd29398c01e71665c72f58315e2cdbbed6c5a6b437e8158ecd81ef269c49eebf"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/networkextension/nevpnikev2integrityalgorithm/nevpnikev2integrityalgorithmsha160.json": {
+      "etag": "\"10ae-659029a379ddc-df\"",
+      "file_path": "documentation/NetworkExtension/nevpnikev2integrityalgorithm/nevpnikev2integrityalgorithmsha160.md",
+      "hash": "52502598afbf4863ed8b1c5446e000d4f96f90d810abaf0cb43d175c0919ecbb"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/networkextension/nevpnikev2integrityalgorithm/nevpnikev2integrityalgorithmsha96.json": {
+      "etag": "\"10a2-659029a379ddc-df\"",
+      "file_path": "documentation/NetworkExtension/nevpnikev2integrityalgorithm/nevpnikev2integrityalgorithmsha96.md",
+      "hash": "211022ae8abe69ea32ca990ce7eee834521dba690cca2935f944cc32217719e1"
     },
     "https://developer.apple.com/tutorials/data/documentation/networkextension/nevpnikev2integrityalgorithm/sha256.json": {
       "etag": "\"24ea-65d5608ba6d4c-df\"",
@@ -10639,6 +11244,11 @@
       "etag": "\"4694-65d5608c57adb-df\"",
       "file_path": "documentation/NetworkExtension/nevpnikev2securityassociationparameters/postquantumkeyexchangemethods-3173s.md",
       "hash": "753989a027a773ce83ab43e3e411afe68ca3cc767f34d26db846ac83230a0f48"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/networkextension/nevpnikev2securityassociationparameters/postquantumkeyexchangemethods-56672.json": {
+      "etag": "\"43c2-65d5608c57adb-df\"",
+      "file_path": "documentation/NetworkExtension/nevpnikev2securityassociationparameters/postquantumkeyexchangemethods-56672.md",
+      "hash": "fe6dff8f890de8e06d4aa17d5f55654d68f286fe8171436c2547195ef3cfd78a"
     },
     "https://developer.apple.com/tutorials/data/documentation/networkextension/nevpnikev2tlsversion.json": {
       "etag": "\"5192-65d5608b4f78b-df\"",
@@ -10985,6 +11595,11 @@
       "file_path": "documentation/NetworkExtension/nevpnstatus/reasserting.md",
       "hash": "dbcab685dc13cc26b98ede2453d10b75c563b0640a3bea1fcc803c802f9f9aa9"
     },
+    "https://developer.apple.com/tutorials/data/documentation/networkextension/nevpnstatusdidchangenotification.json": {
+      "etag": "\"105a-65d5608b6f3e3-df\"",
+      "file_path": "documentation/NetworkExtension/nevpnstatusdidchangenotification.md",
+      "hash": "2a5095eeef26d2c4d595c0f64a4ef85c9c5694f72bf4a9e195128e02f6d75c9e"
+    },
     "https://developer.apple.com/tutorials/data/documentation/networkextension/nwbonjourserviceendpoint.json": {
       "etag": "\"67ce-65d5608c429bb-df\"",
       "file_path": "documentation/NetworkExtension/nwbonjourserviceendpoint.md",
@@ -11014,6 +11629,11 @@
       "etag": "\"550f-65d5608db56b1-df\"",
       "file_path": "documentation/NetworkExtension/nwendpoint.md",
       "hash": "a7d6917433b332aead95c53132d09e6af67ef7b8d064027da4e6b30b52741bf3"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/networkextension/nwendpointarray.json": {
+      "etag": "\"b08-65d5608ba6d4c-df\"",
+      "file_path": "documentation/NetworkExtension/nwendpointarray.md",
+      "hash": "f969e4eb90366e89dce5cffaa4827c37f6f3a0d31a995021209e8ca452bf78b5"
     },
     "https://developer.apple.com/tutorials/data/documentation/networkextension/nwhostendpoint.json": {
       "etag": "\"5dd4-65d5608d19656-df\"",
@@ -11433,8 +12053,8 @@
   },
   "metadata": {
     "render": {
-      "version": 1
+      "version": 2
     },
-    "total_pages": 2286
+    "total_pages": 2410
   }
 }

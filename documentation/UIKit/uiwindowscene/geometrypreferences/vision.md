@@ -28,6 +28,17 @@ class Vision
 - [var minimumSize: CGSize?](./vision/minimumsize.md)
 - [var resizingRestrictions: UIWindowScene.ResizingRestrictions?](./vision/resizingrestrictions.md)
 - [var size: CGSize?](./vision/size.md)
+- [maximumSize](../../uiwindowscenegeometrypreferencesvision/maximumsize.md)
+  The preferred maximum size of the scene. Use `UIProposedSceneSizeNoPreference` on a dimension of the size to indicate that axis should be returned to the system default. By default, the value is left unchanged
+- [minimumSize](../../uiwindowscenegeometrypreferencesvision/minimumsize.md)
+  The preferred minimum size of the scene. Use `UIProposedSceneSizeNoPreference` on a dimension of the size to indicate that axis should be returned to the system default. By default, the value is left unchanged
+- [resizingRestrictions](../../uiwindowscenegeometrypreferencesvision/resizingrestrictions.md)
+  The user resizable restrictions on the window scene By default, the value is left unchanged
+- [size](../../uiwindowscenegeometrypreferencesvision/size.md)
+  The preferred system size. Use UIProposedSceneSizeNoPreference to use existing value
+### Instance Methods
+- [- initWithSize:](../../uiwindowscenegeometrypreferencesvision/initwithsize_.md)
+  Creates a geometry preference with a specific size (specifying UIProposedSceneSizeNoPreference for any dimension of size, will specify no preference, keeping that dimension the same if possible)
 
 ## Relationships
 

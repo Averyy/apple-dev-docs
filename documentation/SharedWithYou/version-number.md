@@ -3,6 +3,12 @@
 **Framework**: Shared with You  
 **Role**: API Collection
 
+## Topics
+
+### version number
+- [SharedWithYouCoreVersionNumber](../SharedWithYouCore/sharedwithyoucoreversionnumber.md)
+  Project version number for Shared with You Core.
+
 ## See Also
 
 ### Framework versions

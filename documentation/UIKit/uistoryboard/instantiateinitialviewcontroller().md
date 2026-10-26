@@ -40,6 +40,8 @@ When you specify a storyboard in the [`UISceneStoryboardFile`](../../BundleResou
 ### Loading the Initial View Controller
 - [func instantiateInitialViewController<ViewController>(creator: ((NSCoder) -> ViewController?)?) -> ViewController?](./instantiateinitialviewcontroller%28creator%29.md)
   Creates the initial view controller from the storyboard and initializes it using your custom initialization code.
+- [- instantiateInitialViewControllerWithCreator:](./instantiateinitialviewcontrollerwithcreator_.md)
+  Creates the initial view controller from the storyboard and initializes it using your custom initialization code.
 
 
 ---

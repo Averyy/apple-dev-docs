@@ -30,6 +30,9 @@ var defaultPixelBufferAttributes: [String : Any]? { get set }
 - [func setOutputSettings([String : any Sendable]?, for: [CMTag])](./setoutputsettings%28_,for%29.md)
 - [func setOutputPixelBufferAttributes([String : Any]?, for: [CMTag])](./setoutputpixelbufferattributes%28_,for%29.md)
 - [var preferredTagCollections: [[CMTag]]](./preferredtagcollections-3gdo7.md)
+- [- setOutputSettings:forTagCollection:](./setoutputsettings_fortagcollection_.md)
+- [- setOutputPixelBufferAttributes:forTagCollection:](./setoutputpixelbufferattributes_fortagcollection_.md)
+- [preferredTagCollections](./preferredtagcollections-2ikbd.md)
 
 
 ---

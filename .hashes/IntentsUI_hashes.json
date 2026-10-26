@@ -5,6 +5,16 @@
       "file_path": "documentation/IntentsUI/IntentsUI.md",
       "hash": "9a1719d6a33341d29c4a8bf1dad88e5afea6ea1341353186dd523af17bae189b"
     },
+    "https://developer.apple.com/documentation/intentsui/intentsuiversionnumber": {
+      "etag": "\"111c-6590299fc9242-df\"",
+      "file_path": "documentation/IntentsUI/intentsuiversionnumber.md",
+      "hash": "0ca5a2a323d0a68b2dce2010b5ee5de3d7a12a57806d81e98f07ccde8c110e5e"
+    },
+    "https://developer.apple.com/documentation/intentsui/intentsuiversionstring": {
+      "etag": "\"1162-6590299f9f60e-df\"",
+      "file_path": "documentation/IntentsUI/intentsuiversionstring.md",
+      "hash": "f51582f956030c9c5b49c3b03e645be0a6079b2807f04dfb31071e1eff89a7c0"
+    },
     "https://developer.apple.com/documentation/intentsui/inuiaddvoiceshortcutbutton": {
       "etag": "\"f977-65d5609ea4df2-df\"",
       "file_path": "documentation/IntentsUI/inuiaddvoiceshortcutbutton.md",
@@ -249,6 +259,16 @@
       "etag": "\"2e5a-65d5609e63eab-df\"",
       "file_path": "documentation/IntentsUI/IntentsUI.md",
       "hash": "9a1719d6a33341d29c4a8bf1dad88e5afea6ea1341353186dd523af17bae189b"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/intentsui/intentsuiversionnumber.json": {
+      "etag": "\"111c-6590299fc9242-df\"",
+      "file_path": "documentation/IntentsUI/intentsuiversionnumber.md",
+      "hash": "0ca5a2a323d0a68b2dce2010b5ee5de3d7a12a57806d81e98f07ccde8c110e5e"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/intentsui/intentsuiversionstring.json": {
+      "etag": "\"1162-6590299f9f60e-df\"",
+      "file_path": "documentation/IntentsUI/intentsuiversionstring.md",
+      "hash": "f51582f956030c9c5b49c3b03e645be0a6079b2807f04dfb31071e1eff89a7c0"
     },
     "https://developer.apple.com/tutorials/data/documentation/intentsui/inuiaddvoiceshortcutbutton.json": {
       "etag": "\"f977-65d5609ea4df2-df\"",
@@ -501,8 +521,8 @@
       }
     },
     "render": {
-      "version": 1
+      "version": 2
     },
-    "total_pages": 98
+    "total_pages": 102
   }
 }

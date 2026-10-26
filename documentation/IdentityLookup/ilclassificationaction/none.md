@@ -24,7 +24,7 @@ ILClassificationActionNone
 
 #### Discussion
 
-The extension just dismisses the [`ILClassificationUIExtensionViewController`](https://developer.apple.com/documentation/identitylookupui/ilclassificationuiextensionviewcontroller).
+The extension just dismisses the [`ILClassificationUIExtensionViewController`](../../IdentityLookupUI/ilclassificationuiextensionviewcontroller.md).
 
 ## See Also
 

@@ -191,6 +191,14 @@ If your app has the [`com.apple.developer.web-browser`](../BundleResources/entit
   Closes all media the web view is presenting, including picture-in-picture video and fullscreen video.
 - [enum WKMediaPlaybackState](./wkmediaplaybackstate.md)
   An enumeration that describes whether an audio or video presentation is playing, paused, or suspended.
+- [- pauseAllMediaPlayback:](./wkwebview/pauseallmediaplayback_.md)
+  Pauses playback of all media in the web view.
+- [- requestMediaPlaybackState:](./wkwebview/requestmediaplaybackstate_.md)
+  Requests the playback status of media in the web view.
+- [- suspendAllMediaPlayback:](./wkwebview/suspendallmediaplayback_.md)
+  Changes whether the webpage is suspending playback of all media in the page.
+- [- resumeAllMediaPlayback:](./wkwebview/resumeallmediaplayback_.md)
+  Resumes playback of all media in a web view.
 ### Managing the microphone and camera
 - [var cameraCaptureState: WKMediaCaptureState](./wkwebview/cameracapturestate.md)
   An enumeration case that indicates whether the webpage is using the camera to capture images or video.
@@ -214,6 +222,8 @@ If your app has the [`com.apple.developer.web-browser`](../BundleResources/entit
   The configuration parameters to use when searching the contents of the web view.
 - [class WKFindResult](./wkfindresult.md)
   An object that contains the results of searching the web view’s contents.
+- [- findString:withConfiguration:completionHandler:](./wkwebview/findstring_withconfiguration_completionhandler_.md)
+  Searches for the specified string in the web view’s content.
 ### Navigating between webpages
 - [var allowsBackForwardNavigationGestures: Bool](./wkwebview/allowsbackforwardnavigationgestures.md)
   A Boolean value that indicates whether horizontal swipe gestures trigger backward and forward page navigation.
@@ -248,6 +258,10 @@ If your app has the [`com.apple.developer.web-browser`](../BundleResources/entit
   Executes the specified string as an asynchronous JavaScript function.
 - [func callAsyncJavaScript(String, arguments: [String : Any], in: WKFrameInfo?, contentWorld: WKContentWorld) async throws -> Any?](./wkwebview/callasyncjavascript%28_,arguments,in,contentworld%29.md)
   Executes the specified string as an asynchronous JavaScript function.
+- [- evaluateJavaScript:inFrame:inContentWorld:completionHandler:](./wkwebview/evaluatejavascript_inframe_incontentworld_completionhandler_.md)
+  Evaluates the specified JavaScript string in the specified frame and content world.
+- [- callAsyncJavaScript:arguments:inFrame:inContentWorld:completionHandler:](./wkwebview/callasyncjavascript_arguments_inframe_incontentworld_completionhandler_.md)
+  Executes the specified string as an asynchronous JavaScript function.
 ### Capturing the web view’s content
 - [func takeSnapshot(with: WKSnapshotConfiguration?, completionHandler: (UIImage?, (any Error)?) -> Void)](./wkwebview/takesnapshot%28with,completionhandler%29.md)
   Generates a platform-native image from the web view’s contents asynchronously.
@@ -263,6 +277,10 @@ If your app has the [`com.apple.developer.web-browser`](../BundleResources/entit
   The configuration data to use when generating an image from a web view’s contents.
 - [class WKPDFConfiguration](./wkpdfconfiguration.md)
   The configuration data to use when generating a PDF representation of a web view’s contents.
+- [- createPDFWithConfiguration:completionHandler:](./wkwebview/createpdfwithconfiguration_completionhandler_.md)
+  Generates PDF data from the web view’s contents asynchronously.
+- [- createWebArchiveDataWithCompletionHandler:](./wkwebview/createwebarchivedatawithcompletionhandler_.md)
+  Creates a web archive of the web view’s contents asynchronously.
 ### Supporting Find and Replace
 - [var isFindInteractionEnabled: Bool](./wkwebview/isfindinteractionenabled.md)
 - [var findInteraction: UIFindInteraction?](./wkwebview/findinteraction.md)

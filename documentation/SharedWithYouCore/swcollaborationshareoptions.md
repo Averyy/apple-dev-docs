@@ -36,6 +36,10 @@ class SWCollaborationShareOptions
   Creates and initializes a collaboration share options object with the array of groups.
 - [init(optionsGroups: [SWCollaborationOptionsGroup], summary: String)](./swcollaborationshareoptions/init%28optionsgroups,summary%29.md)
   Creates and initializes a collaboration share options object the array of groups and a summary string.
+- [+ shareOptionsWithOptionsGroups:](./swcollaborationshareoptions/shareoptionswithoptionsgroups_.md)
+  Creates and initializes a collaboration share options object with the array of groups.
+- [+ shareOptionsWithOptionsGroups:summary:](./swcollaborationshareoptions/shareoptionswithoptionsgroups_summary_.md)
+  Creates and initializes a collaboration share options object the array of groups and a summary string.
 ### Accessing options attributes
 - [var optionsGroups: [SWCollaborationOptionsGroup]](./swcollaborationshareoptions/optionsgroups.md)
   An array of options group objects to customize how the system shares the collaboration.

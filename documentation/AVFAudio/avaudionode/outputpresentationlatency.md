@@ -38,6 +38,7 @@ This latency describes the maximum time it takes to present the audio at the out
   An audio unit object that wraps or underlies the implementation’s audio unit.
 - [var latency: TimeInterval](./latency.md)
   The processing latency of the node, in seconds.
+- [AUAudioUnit](./auaudiounit-1kkjr.md)
 
 
 ---

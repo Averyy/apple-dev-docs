@@ -69,6 +69,12 @@ You use the function [`CGContextSetInterpolationQuality`](./cgcontextsetinterpol
   Draws the content of a PDF page into the current graphics context.
 - [var interpolationQuality: CGInterpolationQuality](./cgcontext/interpolationquality.md)
   Returns the current level of interpolation quality for a graphics context.
+- [CGContextDrawTiledImage](./cgcontextdrawtiledimage.md)
+  Repeatedly draws an image, scaled to the provided rectangle, to fill the current clip region.
+- [CGContextDrawImage](./cgcontextdrawimage.md)
+  Draws an image into a graphics context.
+- [CGContextSetInterpolationQuality](./cgcontextsetinterpolationquality.md)
+  Sets the level of interpolation quality for a graphics context.
 
 
 ---

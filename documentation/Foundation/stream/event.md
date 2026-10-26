@@ -38,6 +38,8 @@ enum NSStreamEvent : NSUInteger;
   An error has occurred on the stream.
 - [static var endEncountered: Stream.Event](./event/endencountered.md)
   The end of the stream has been reached.
+- [NSStreamEventNone](../nsstreamevent/nsstreameventnone.md)
+  No event has occurred.
 ### Initializers
 - [init(rawValue: UInt)](./event/init%28rawvalue%29.md)
 

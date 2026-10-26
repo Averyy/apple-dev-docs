@@ -18,6 +18,13 @@ You increment a semaphore count by calling the [`signal()`](./dispatchsemaphore/
   Creates new counting semaphore with an initial value.
 - [typealias dispatch_semaphore_t](./dispatch_semaphore_t.md)
   A dispatch semaphore object.
+- [OS_dispatch_semaphore](./os_dispatch_semaphore.md)
+### Signaling the Semaphore
+- [dispatch_semaphore_signal](./dispatch_semaphore_signal.md)
+  Signals (increments) a semaphore.
+### Blocking on the Semaphore
+- [dispatch_semaphore_wait](./dispatch_semaphore_wait.md)
+  Waits for (decrements) a semaphore.
 
 ## See Also
 

@@ -48,6 +48,10 @@ Every [`NSOpenGLContext`](./nsopenglcontext.md) object wraps a low-level, platfo
   Disassociates the OpenGL context from its viewport.
 - [func update()](./nsopenglcontext/update%28%29.md)
   Updates the OpenGL context’s drawable object.
+- [- setFullScreen](./nsopenglcontext/setfullscreen.md)
+  Sets the OpenGL context to full-screen mode.
+- [- setOffScreen:width:height:rowbytes:](./nsopenglcontext/setoffscreen_width_height_rowbytes_.md)
+  Instructs the OpenGL context to render into an offscreen buffer with the specified attributes.
 ### Flushing the Drawing Buffer
 - [func flushBuffer()](./nsopenglcontext/flushbuffer%28%29.md)
   Copies the back buffer to the front buffer of the OpenGL context.
@@ -74,6 +78,23 @@ Every [`NSOpenGLContext`](./nsopenglcontext.md) object wraps a low-level, platfo
 ### Initializers
 - [init?(CGLContextObj: CGLContextObj)](./nsopenglcontext/init%28cglcontextobj%29-4jlgm.md)
 - [init?(format: NSOpenGLPixelFormat, shareContext: NSOpenGLContext?)](./nsopenglcontext/init%28format,sharecontext%29.md)
+### Copying Attributes
+- [- copyAttributesFromContext:withMask:](./nsopenglcontext/copyattributesfromcontext_withmask_.md)
+  Copies selected groups of state variables to the OpenGL context.
+### Creating Textures
+- [- createTexture:fromView:internalFormat:](./nsopenglcontext/createtexture_fromview_internalformat_.md)
+  Creates a new texture from the contents of the specified view.
+### Working with Pixel Buffers
+- [- setPixelBuffer:cubeMapFace:mipMapLevel:currentVirtualScreen:](./nsopenglcontext/setpixelbuffer_cubemapface_mipmaplevel_currentvirtualscreen_.md)
+  Attaches the specified pixel buffer to the OpenGL context.
+- [- pixelBuffer](./nsopenglcontext/pixelbuffer.md)
+  Returns the pixel-buffer object attached to the OpenGL context.
+- [- pixelBufferCubeMapFace](./nsopenglcontext/pixelbuffercubemapface.md)
+  Returns the cube map face of the pixel buffer attached to the OpenGL context.
+- [- pixelBufferMipMapLevel](./nsopenglcontext/pixelbuffermipmaplevel.md)
+  Returns the mipmap level of the pixel buffer attached to the OpenGL context.
+- [- setTextureImageToPixelBuffer:colorBuffer:](./nsopenglcontext/settextureimagetopixelbuffer_colorbuffer_.md)
+  Attaches the image data in the specified pixel buffer to the texture object currently bound by the OpenGL context.
 
 ## Relationships
 
@@ -105,6 +126,13 @@ Every [`NSOpenGLContext`](./nsopenglcontext.md) object wraps a low-level, platfo
   The `NSFormCell` class is used to implement text entry fields in a form. The left part of an `NSFormCell` object contains a title. The right part contains an editable text entry field.
 - [class NSMenuItemCell](./nsmenuitemcell.md)
   An object that handles the measurement and display of a single menu item in its encompassing frame.
+- [NSOpenGLPixelBuffer](./nsopenglpixelbuffer.md)
+  An object that provides access to accelerated offscreen rendering.
+- [NSCachedImageRep](./nscachedimagerep.md)
+  An object that stores image data in a form that can be readily transferred to the screen.
+- [NSInputManager](./nsinputmanager.md)
+- [NSInputServer](./nsinputserver.md)
+- [NSMovie](./nsmovie.md)
 
 
 ---

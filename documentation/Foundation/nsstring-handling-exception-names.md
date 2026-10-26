@@ -36,6 +36,8 @@ These constants define the names of exceptions raised if `NSString` cannot repre
 - [var smallestEncoding: UInt](./nsstring/smallestencoding.md)
   The smallest encoding to which the receiver can be converted without loss of information.
 - [struct StringEncodingDetectionOptionsKey](./stringencodingdetectionoptionskey.md)
+- [NSStringEncoding](./nsstringencoding.md)
+  The following constants are provided by `NSString` as possible string encodings.
 
 
 ---

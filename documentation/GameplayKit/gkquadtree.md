@@ -45,6 +45,8 @@ The [`GKQuadtree`](./gkquadtree.md) class is one of three spatial partitioning d
 ### Creating a Quadtree
 - [init(boundingQuad: GKQuad, minimumCellSize: Float)](./gkquadtree/init%28boundingquad,minimumcellsize%29.md)
   Initializes a quadtree with the specified dimensions.
+- [+ quadtreeWithBoundingQuad:minimumCellSize:](./gkquadtree/quadtreewithboundingquad_minimumcellsize_.md)
+  Creates a quadtree with the specified dimensions.
 ### Adding and Removing Elements
 - [func add(ElementType, at: vector_float2) -> GKQuadtreeNode](./gkquadtree/add%28_,at%29.md)
   Adds an object to the tree corresponding to the specified point in 2D space.

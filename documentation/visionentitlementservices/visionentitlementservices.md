@@ -26,6 +26,11 @@ Access to the license state is read-only. Use [`shared`](./enterpriselicensedeta
 - [class AppComputeCategory](./appcomputecategory.md)
   Functionality to track App Compute Category settings and whether the system has completed the enabling of additional configurations which are triggered by having a properly licensed app open which includes the AppComputeCategory Enterprise entitlement
 - [AppComputeCategory.Status](./appcomputecategory/status-swift.enum.md)
+### Variables
+- [VisionEntitlementServicesVersionNumber](./visionentitlementservicesversionnumber.md)
+  Project version number for VisionEntitlementServices.
+- [VisionEntitlementServicesVersionString](./visionentitlementservicesversionstring.md)
+  Project version string for VisionEntitlementServices.
 
 
 ---

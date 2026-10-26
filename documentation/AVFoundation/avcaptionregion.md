@@ -45,16 +45,22 @@ The framework defines four regions, and doesn’t support configuring region set
 ### Accessing dimensions
 - [struct AVCaptionDimension](./avcaptiondimension.md)
   A structure that defines a caption dimension.
+- [AVCaptionDimensionMake](./avcaptiondimensionmake.md)
+  Creates a caption dimension with a value and unit type.
 ### Accessing the location
 - [var origin: AVCaptionPoint](./avcaptionregion/origin.md)
   The region’s top-left position.
 - [struct AVCaptionPoint](./avcaptionpoint.md)
   A structure that defines the origin point for a caption.
+- [AVCaptionPointMake](./avcaptionpointmake.md)
+  Creates a caption point with the specified x and y positions.
 ### Accessing the size
 - [var size: AVCaptionSize](./avcaptionregion/size.md)
   The height and width of the region.
 - [struct AVCaptionSize](./avcaptionsize.md)
   A structure that defines the height and width of a caption.
+- [AVCaptionSizeMake](./avcaptionsizemake.md)
+  Creates a caption size with the specified width and height.
 ### Accessing the display alignment
 - [var displayAlignment: AVCaptionRegion.DisplayAlignment](./avcaptionregion/displayalignment-swift.property.md)
   The alignment of lines for the region.

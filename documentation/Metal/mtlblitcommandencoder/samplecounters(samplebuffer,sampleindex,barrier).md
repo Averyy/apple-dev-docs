@@ -46,6 +46,8 @@ Inserting a barrier ensures that any work you encode with this encoder is comple
 ### Sampling counters
 - [func resolveCounters(any MTLCounterSampleBuffer, range: Range<Int>, destinationBuffer: any MTLBuffer, destinationOffset: Int)](./resolvecounters%28_,range,destinationbuffer,destinationoffset%29.md)
   Encodes a command that resolves the data from the samples in a sample counter buffer and stores the results into a buffer.
+- [- resolveCounters:inRange:destinationBuffer:destinationOffset:](./resolvecounters_inrange_destinationbuffer_destinationoffset_.md)
+  Encodes a command that resolves the data from the samples in a sample counter buffer and stores the results into a buffer.
 
 
 ---

@@ -1,0 +1,64 @@
+# isKey:inTable:
+
+**Framework**: AppKit  
+**Kind**: method  
+**Role**: Instance Method
+
+Returns a Boolean value that indicates whether the specified key is in the specified table.
+
+**Availability**:
+- macOS 10.0+ - Deprecated in 10.9
+
+## Declaration
+
+```objc
+- (BOOL) isKey:(NSString *) key inTable:(NSString *) table;
+```
+
+#### Return Value
+
+[`true`](../../Swift/true.md) if the key is in the table; otherwise, [`false`](../../Swift/false.md).
+
+## Parameters
+
+- `key`: The key whose value you want.
+- `table`: The name of a table from the printer’s PPD file.
+
+## See Also
+
+### Deprecated methods
+- [- stringForKey:inTable:](./stringforkey_intable_.md)
+  Returns the first occurrence of a value associated with specified key.
+- [- stringListForKey:inTable:](./stringlistforkey_intable_.md)
+  Returns an array of strings, one for each occurrence, associated with specified key.
+- [- booleanForKey:inTable:](./booleanforkey_intable_.md)
+  Returns the Boolean value associated with the specified key.
+- [- floatForKey:inTable:](./floatforkey_intable_.md)
+  Returns the floating-point value associated with the specified key.
+- [- intForKey:inTable:](./intforkey_intable_.md)
+  Returns the integer value associated with the specified key.
+- [- rectForKey:inTable:](./rectforkey_intable_.md)
+  Returns the rectangle associated with the specified key.
+- [- sizeForKey:inTable:](./sizeforkey_intable_.md)
+  Returns the size data type associated with the specified key.
+- [- statusForTable:](./statusfortable_.md)
+  Returns the status of the specified table.
+- [+ printerWithName:domain:includeUnavailable:](./printerwithname_domain_includeunavailable_.md)
+  Deprecated.
+- [- acceptsBinary](./acceptsbinary.md)
+  Deprecated.
+- [- domain](./domain.md)
+  Deprecated.
+- [- host](./host.md)
+  Deprecated.
+- [- imageRectForPaper:](./imagerectforpaper_.md)
+  Deprecated.
+- [- isColor](./iscolor.md)
+  Deprecated.
+- [- isFontAvailable:](./isfontavailable_.md)
+  Deprecated.
+
+
+---
+
+*[View on Apple Developer](https://developer.apple.com/documentation/appkit/nsprinter/iskey:intable:)*

@@ -27,6 +27,9 @@ typedef enum ATSFontNotifyAction : unsigned int {
 - [init(rawValue: UInt32)](./atsfontnotifyaction/api-1458772-init.md)
 ### Instance Properties
 - [var rawValue: UInt32](./atsfontnotifyaction/api-1460117-rawvalue.md)
+### Constants
+- [kATSFontNotifyActionDirectoriesChanged](./atsfontnotifyaction/katsfontnotifyactiondirectorieschanged.md)
+- [kATSFontNotifyActionFontsChanged](./atsfontnotifyaction/katsfontnotifyactionfontschanged.md)
 
 ## Relationships
 

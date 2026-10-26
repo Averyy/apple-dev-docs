@@ -69,6 +69,8 @@ protocol NFCNDEFTag : NSCopying, NSSecureCoding, NSObjectProtocol
   An object that represents an NFC tag object.
 - [class NFCTagCommandConfiguration](./nfctagcommandconfiguration.md)
   A set of parameters you use to define the configuration of an NFC tag command.
+- [NFCTag](./nfctag-c.protocol.md)
+  An interface for interacting with an NFC or RFID tag.
 
 
 ---

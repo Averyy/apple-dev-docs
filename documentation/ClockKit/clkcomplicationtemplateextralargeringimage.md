@@ -45,6 +45,8 @@ Instead of providing multiple images with different resolutions, you can provide
 ### Creating the Template
 - [init(imageProvider: CLKImageProvider, fillFraction: Float, ringStyle: CLKComplicationRingStyle)](./clkcomplicationtemplateextralargeringimage/init%28imageprovider,fillfraction,ringstyle%29.md)
   Creates a new template from the provided image, fill fraction, and ring style.
+- [+ templateWithImageProvider:fillFraction:ringStyle:](./clkcomplicationtemplateextralargeringimage/templatewithimageprovider_fillfraction_ringstyle_.md)
+  Returns a new template from the provided image, fill fraction, and ring style.
 ### Setting the Complication Data
 - [var fillFraction: Float](./clkcomplicationtemplateextralargeringimage/fillfraction.md)
   The fraction of the ring to fill.

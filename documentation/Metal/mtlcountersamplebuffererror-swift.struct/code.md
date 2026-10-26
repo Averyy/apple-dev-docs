@@ -52,6 +52,12 @@ enum MTLCounterSampleBufferError : NSInteger;
 - [Sendable](../../Swift/sendable.md)
 - [SendableMetatype](../../Swift/sendablemetatype.md)
 
+## See Also
+
+### Counter sample buffer errors
+- [MTLCounterErrorDomain](../mtlcountererrordomain.md)
+  The domain for Metal counter sample buffer errors.
+
 
 ---
 

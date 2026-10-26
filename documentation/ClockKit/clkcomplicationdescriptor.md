@@ -101,6 +101,12 @@ When dynamically creating identifiers, consider using the descriptor’s [`userI
   Returns a new complication descriptor with an associated user activity.
 - [convenience init(identifier: String, displayName: String, supportedFamilies: [CLKComplicationFamily], userInfo: [AnyHashable : Any])](./clkcomplicationdescriptor/init%28identifier,displayname,supportedfamilies,userinfo%29.md)
   Returns a new complication descriptor with an associated dictionary of user data.
+- [- initWithIdentifier:displayName:supportedFamilies:](./clkcomplicationdescriptor/initwithidentifier_displayname_supportedfamilies_.md)
+  Returns a new complication descriptor.
+- [- initWithIdentifier:displayName:supportedFamilies:userActivity:](./clkcomplicationdescriptor/initwithidentifier_displayname_supportedfamilies_useractivity_.md)
+  Returns a new complication descriptor with an associated user activity.
+- [- initWithIdentifier:displayName:supportedFamilies:userInfo:](./clkcomplicationdescriptor/initwithidentifier_displayname_supportedfamilies_userinfo_.md)
+  Returns a new complication descriptor with an associated user info dictionary.
 ### Accessing the descriptor’s data
 - [var identifier: String](./clkcomplicationdescriptor/identifier.md)
   A string that uniquely identifies the descriptor.
@@ -112,6 +118,8 @@ When dynamically creating identifiers, consider using the descriptor’s [`userI
   A user activity object that represents the state of the app at a moment in time.
 - [var userInfo: [AnyHashable : Any]?](./clkcomplicationdescriptor/userinfo.md)
   A dictionary of data that your data source can use to generate timeline entries.
+- [supportedFamilies](./clkcomplicationdescriptor/supportedfamilies-50ink.md)
+  The families that support this type of complication.
 
 ## Relationships
 
@@ -136,6 +144,8 @@ When dynamically creating identifiers, consider using the descriptor’s [`userI
   A protocol that provides ClockKit with information about your complication.
 - [let CLKDefaultComplicationIdentifier: String](./clkdefaultcomplicationidentifier.md)
   An identifier representing a default complication.
+- [CLKAllComplicationFamilies](./clkallcomplicationfamilies.md)
+  Returns an array containing all possible values of the complication family enumeration.
 
 
 ---

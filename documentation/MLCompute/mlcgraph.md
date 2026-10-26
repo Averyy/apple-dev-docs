@@ -49,6 +49,14 @@ class MLCGraph
   Adds a scatter layer to the graph.
 - [func transpose(dimensions: [Int], source: MLCTensor) -> MLCTensor?](./mlcgraph/transpose%28dimensions,source%29.md)
   Adds a new transpose layer to the graph using the dimensions and source tensor you specify.
+- [- splitWithSource:splitSectionLengths:dimension:](./mlcgraph/splitwithsource_splitsectionlengths_dimension_.md)
+  Adds a new split layer to the graph using the source tensor, lengths of each split section, and dimension to split the source tensor that you specify.
+- [- selectWithSources:condition:](./mlcgraph/selectwithsources_condition_.md)
+  Adds a select layer to the graph using the condition mask and source tensors you specify.
+- [- reshapeWithShape:source:](./mlcgraph/reshapewithshape_source_.md)
+  Adds a new reshape layer to the graph using the shape and source tensor you specify.
+- [- transposeWithDimensions:source:](./mlcgraph/transposewithdimensions_source_.md)
+  Adds a new transpose layer to the graph using the dimensions and source tensor you specify.
 ### Associating Data with Input Tensors
 - [func bindAndWriteData([String : MLCTensorData], forInputs: [String : MLCTensor], to: MLCDevice, batchSize: Int, synchronous: Bool) -> Bool](./mlcgraph/bindandwritedata%28_,forinputs,to,batchsize,synchronous%29.md)
   Associates the given data with the input tensors, and if the device is a GPU, also copies the data to the device memory.
@@ -65,6 +73,9 @@ class MLCGraph
   An array that contains the layers in the graph.
 - [var summarizedDOTDescription: String](./mlcgraph/summarizeddotdescription.md)
   A DOT representation of the graph.
+### Creating Graphs
+- [+ graph](./mlcgraph/graph.md)
+  Creates a new graph.
 
 ## Relationships
 

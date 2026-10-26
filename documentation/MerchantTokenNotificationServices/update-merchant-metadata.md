@@ -49,7 +49,7 @@ The request body you use to specify the updated merchant metadata.
 ## See Also
 
 ### Merchant token notification handling
-- [Receiving and handling merchant token notifications](https://developer.apple.com/documentation/applepaymerchanttokenmanagementapi/receiving-and-handling-merchant-token-notifications)
+- [Receiving and handling merchant token notifications](../ApplePayMerchantTokenManagementAPI/receiving-and-handling-merchant-token-notifications.md)
   Implement an endpoint to receive and handle merchant token life-cycle updates from Apple Pay.
 - [Send Merchant Token Event](./send-merchant-token-event.md)
   Receive and handle merchant token life-cycle updates from Apple Pay.

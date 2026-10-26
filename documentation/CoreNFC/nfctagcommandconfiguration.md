@@ -62,6 +62,8 @@ class NFCTagCommandConfiguration
   An interface for interacting with an NDEF tag.
 - [enum NFCTag](./nfctag-swift.enum.md)
   An object that represents an NFC tag object.
+- [NFCTag](./nfctag-c.protocol.md)
+  An interface for interacting with an NFC or RFID tag.
 
 
 ---

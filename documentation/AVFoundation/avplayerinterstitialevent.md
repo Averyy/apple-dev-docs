@@ -44,6 +44,10 @@ Use [`AVPlayerInterstitialEventMonitor`](./avplayerinterstitialeventmonitor.md) 
   Creates an interstitial event, with user-defined attributes, for the specified time.
 - [convenience init(primaryItem: AVPlayerItem, identifier: String?, date: Date, templateItems: [AVPlayerItem], restrictions: AVPlayerInterstitialEvent.Restrictions, resumptionOffset: CMTime, playoutLimit: CMTime, userDefinedAttributes: [String : Any])](./avplayerinterstitialevent/init%28primaryitem,identifier,date,templateitems,restrictions,resumptionoffset,playoutlimit,userdefinedattributes%29.md)
   Creates an interstitial event, with user-defined attributes, for the specified date.
+- [+ interstitialEventWithPrimaryItem:identifier:time:templateItems:restrictions:resumptionOffset:playoutLimit:userDefinedAttributes:](./avplayerinterstitialevent/interstitialeventwithprimaryitem_identifier_time_templateitems_restrictions_resumptionoffset_playoutlimit_userdefinedattributes_.md)
+  Creates an interstitial event, with user-defined attributes, for the specified time.
+- [+ interstitialEventWithPrimaryItem:identifier:date:templateItems:restrictions:resumptionOffset:playoutLimit:userDefinedAttributes:](./avplayerinterstitialevent/interstitialeventwithprimaryitem_identifier_date_templateitems_restrictions_resumptionoffset_playoutlimit_userdefinedattributes_.md)
+  Creates an interstitial event, with user-defined attributes, for the specified date.
 ### Identifying events
 - [var identifier: String](./avplayerinterstitialevent/identifier.md)
   An identifier for the event.
@@ -135,6 +139,8 @@ Use [`AVPlayerInterstitialEventMonitor`](./avplayerinterstitialeventmonitor.md) 
   userInfo dictionary key for the AVPlayerInterstitialEventMonitorScheduleRequestCompletedNotification. Value is NSData. Absent if the request failed.
 - [class AVPlayerItemIntegratedTimeline](./avplayeritemintegratedtimeline.md)
   An object that models the timeline and playback sequence of a primary player item and scheduled interstitial events.
+- [AVPlayerInterstitialEventMonitorScheduleRequestCompletedNotification](./avplayerinterstitialeventmonitorschedulerequestcompletednotification.md)
+  A notification that is posted whenever a daterange-schedule request completes.
 
 
 ---

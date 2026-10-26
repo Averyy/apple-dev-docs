@@ -40,6 +40,8 @@ enum CFURLEnumeratorOptions : CFOptionFlags;
   If provided along with the [`descendRecursively`](./cfurlenumeratoroptions/descendrecursively.md) option, the recursive enumerator returns a directory’s URL before returning the URLs of the directory’s descendents.
 - [static var includeDirectoriesPostOrder: CFURLEnumeratorOptions](./cfurlenumeratoroptions/includedirectoriespostorder.md)
   If provided along with the [`descendRecursively`](./cfurlenumeratoroptions/descendrecursively.md) option, the recursive enumerator returns a directory’s URL after returning the URLs of the directory’s descendents.
+- [kCFURLEnumeratorDefaultBehavior](./cfurlenumeratoroptions/kcfurlenumeratordefaultbehavior.md)
+  The enumerator performs its default behavior.
 ### Initializers
 - [init(rawValue: CFOptionFlags)](./cfurlenumeratoroptions/init%28rawvalue%29.md)
 ### Type Properties

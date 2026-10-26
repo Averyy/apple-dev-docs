@@ -139,6 +139,18 @@ Your subclass may use a different reference date than the absolute reference dat
 - [var srAbsoluteTime: SRAbsoluteTime](./nsdate/srabsolutetime.md)
 ### Default Implementations
 - [NSDate Implementations](./nsdate/nsdate-implementations.md)
+### Creating a Date
+- [+ date](./nsdate/date.md)
+  Creates and returns a new date object set to the current date and time.
+- [+ dateWithTimeIntervalSinceNow:](./nsdate/datewithtimeintervalsincenow_.md)
+  Creates and returns a date object set to a given number of seconds from the current date and time.
+- [+ dateWithTimeIntervalSinceReferenceDate:](./nsdate/datewithtimeintervalsincereferencedate_.md)
+  Creates and returns a date object set to a given number of seconds from 00:00:00 UTC on 1 January 2001.
+- [+ dateWithTimeIntervalSince1970:](./nsdate/datewithtimeintervalsince1970_.md)
+  Creates and returns a date object set to the given number of seconds from 00:00:00 UTC on 1 January 1970.
+### Type Methods
+- [+ dateWithTimeInterval:sinceDate:](./nsdate/datewithtimeinterval_sincedate_.md)
+  Creates and returns a date object set to a given number of seconds from the specified date.
 
 ## Relationships
 
@@ -160,6 +172,16 @@ Your subclass may use a different reference date than the absolute reference dat
 - [NSSecureCoding](./nssecurecoding.md)
 - [Sendable](../Swift/sendable.md)
 - [SendableMetatype](../Swift/sendablemetatype.md)
+### Inherited By
+- [NSCalendarDate](./nscalendardate.md)
+
+## See Also
+
+### Date Representations
+- [NSDateInterval](./nsdateinterval.md)
+  An object representing the span of time between a specific start date and end date.
+- [NSTimeInterval](./timeinterval.md)
+  A number of seconds.
 
 
 ---

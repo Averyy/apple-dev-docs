@@ -34,6 +34,10 @@ class MDLAnimatedVector2
 - [func reset(float2Array: [SIMD2<Float>], atTimes: [TimeInterval])](./mdlanimatedvector2/reset%28float2array,attimes%29.md)
 - [func setDouble2(vector_double2, atTime: TimeInterval)](./mdlanimatedvector2/setdouble2%28_,attime%29.md)
 - [func setFloat2(vector_float2, atTime: TimeInterval)](./mdlanimatedvector2/setfloat2%28_,attime%29.md)
+- [- getDouble2Array:maxCount:](./mdlanimatedvector2/getdouble2array_maxcount_.md)
+- [- getFloat2Array:maxCount:](./mdlanimatedvector2/getfloat2array_maxcount_.md)
+- [- resetWithDouble2Array:atTimes:count:](./mdlanimatedvector2/resetwithdouble2array_attimes_count_.md)
+- [- resetWithFloat2Array:atTimes:count:](./mdlanimatedvector2/resetwithfloat2array_attimes_count_.md)
 
 ## Relationships
 

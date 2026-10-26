@@ -37,6 +37,8 @@ protocol NSTextViewportLayoutControllerDelegate : NSObjectProtocol
   Asks the delegate to return a previously cached rendering surface.
 - [func textViewportLayoutControllerReceivedSetNeedsLayout(NSTextViewportLayoutController)](./nstextviewportlayoutcontrollerdelegate/textviewportlayoutcontrollerreceivedsetneedslayout%28_%29.md)
   Triggers relayout of the view.
+- [- textViewportLayoutController:renderingSurfaceForTextLayoutFragment:](./nstextviewportlayoutcontrollerdelegate/textviewportlayoutcontroller_renderingsurfacefortextlayoutfragment_.md)
+  Returns a rendering surface for the specified text layout fragment.
 
 ## Relationships
 

@@ -47,6 +47,8 @@ This method is the designated initializer for layer objects in the presentation 
   Returns an initialized `CALayer` object.
 - [init(remoteClientId: UInt32)](./init%28remoteclientid%29.md)
   Initializes a layer with a remote client ID.
+- [+ layer](./layer.md)
+  Creates and returns an instance of the layer object.
 
 
 ---

@@ -56,6 +56,8 @@ If the value of this property is [`false`](../../Swift/false.md), the achievemen
   A Boolean value that states whether the player can earn the achievement multiple times.
 - [var rarityPercent: Double?](./raritypercent-4bh6k.md)
   The percentage of players of this game that earned the achievement.
+- [rarityPercent](./raritypercent-3zqw6.md)
+  The percentage of players of this game that earned the achievement.
 
 
 ---

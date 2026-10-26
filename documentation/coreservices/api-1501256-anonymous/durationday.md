@@ -1,0 +1,20 @@
+# durationDay
+
+**Framework**: Core Services  
+**Kind**: econst  
+**Role**: Enumeration Case
+
+**Availability**:
+- Mac Catalyst 13.1+ - Deprecated in 13.1
+- macOS 10.0+ - Deprecated in 10.8
+
+## Declaration
+
+```c
+durationDay = 86400000
+```
+
+
+---
+
+*[View on Apple Developer](https://developer.apple.com/documentation/coreservices/1501256-anonymous/durationday)*

@@ -68,6 +68,10 @@ A C string is a string of 8-bit characters terminated with an 8-bit `NULL`. Unic
   Creates a CFString object from an external Pascal string buffer that might serve as the backing store for the object.
 - [func CFStringCreateWithSubstring(CFAllocator!, CFString!, CFRange) -> CFString!](./cfstringcreatewithsubstring%28_,_,_%29.md)
   Creates an immutable string from a segment (substring) of an existing string.
+- [CFSTR](./cfstr.md)
+  Creates an immutable string from a constant compile-time string.
+- [CFStringCreateWithFormat](./cfstringcreatewithformat.md)
+  Creates an immutable string from a formatted string and a variable number of arguments.
 
 
 ---

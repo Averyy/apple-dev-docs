@@ -26,6 +26,10 @@ Constants for wall time values.
   An abstract representation of time.
 - [var DISPATCH_WALLTIME_NOW: UInt](./dispatch_walltime_now.md)
   The current time.
+- [dispatch_time](./dispatch_time.md)
+  Creates a `dispatch_time_t` relative to the default clock or modifies an existing `dispatch_time_t`.
+- [dispatch_walltime](./dispatch_walltime.md)
+  Creates a `dispatch_time_t` using an absolute time according to the wall clock.
 
 
 ---

@@ -87,6 +87,15 @@ If you want to play the system beep sound, use the [`beep()`](./nssound/beep%28%
 - [init?(coder: NSCoder)](./nssound/init%28coder%29.md)
 - [init?(contentsOfURL: URL, byReference: Bool)](./nssound/init%28contentsofurl,byreference%29.md)
 - [init?(pasteboardPropertyList: Any, ofType: NSPasteboard.PasteboardType)](./nssound/init%28pasteboardpropertylist,oftype%29.md)
+### Deprecated
+- [- channelMapping](./nssound/channelmapping.md)
+  Provides the receiver’s channel map.
+- [- setChannelMapping:](./nssound/setchannelmapping_.md)
+  Specifies the receiver’s channel map.
+- [+ soundUnfilteredFileTypes](./nssound/soundunfilteredfiletypes.md)
+  Provides the list of file types the [`NSSound`](./nssound.md) class understands.
+- [+ soundUnfilteredPasteboardTypes](./nssound/soundunfilteredpasteboardtypes.md)
+  Provides a list of the pasteboard types that the `NSSound` class can accept.
 
 ## Relationships
 
@@ -109,6 +118,12 @@ If you want to play the system beep sound, use the [`beep()`](./nssound/beep%28%
 - [Sendable](../Swift/sendable.md)
 - [SendableMetatype](../Swift/sendablemetatype.md)
 - [Transferable](../CoreTransferable/transferable.md)
+
+## See Also
+
+### Sounds
+- [NSBeep](./nsbeep.md)
+  Plays the system beep.
 
 
 ---

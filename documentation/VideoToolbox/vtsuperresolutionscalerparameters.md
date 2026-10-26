@@ -46,6 +46,8 @@ Use this object in the `processWithParameters` call of the `VTFrameProcessor` cl
   Ordering of the input frames in this submission relative to the previous submission.
 - [VTSuperResolutionScalerParameters.SubmissionMode](./vtsuperresolutionscalerparameters/submissionmode-swift.enum.md)
   Indicates the order of input frames.
+- [destinationFrame](./vtsuperresolutionscalerparameters/destinationframe.md)
+  Destination frame that contains user-allocated pixel buffer that receives the results.
 
 ## Relationships
 

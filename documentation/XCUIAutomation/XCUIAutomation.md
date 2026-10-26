@@ -61,9 +61,24 @@ UI testing lets you verify that when you change parts of your app’s data model
   Indicates whether the current environment supports UI testing.
 ### Classes
 - [class XCUIVoiceOverService](./xcuivoiceoverservice.md)
+- [XCUIVoiceOverOutput](./xcuivoiceoverservice/output.md)
 ### Variables
 - [let XCUIVoiceOverServiceErrorDomain: String](./xcuivoiceoverserviceerrordomain.md)
   Error domain for XCUIVoiceOverService errors.
+### Macros
+- [XCUI_DEPRECATED_WITH_DIRECT_REPLACEMENT](./xcui_deprecated_with_direct_replacement.md)
+- [XCUI_DEPRECATED_WITH_REPLACEMENT](./xcui_deprecated_with_replacement.md)
+- [XCUI_DEPRECATED_WITH_SWIFT_REPLACEMENT](./xcui_deprecated_with_swift_replacement.md)
+- [XCUI_EXPORT](./xcui_export.md)
+- [XCUI_NOESCAPE](./xcui_noescape.md)
+- [XCUI_PROTECTED_RESOURCES_RESET_API_AVAILABLE](./xcui_protected_resources_reset_api_available.md)
+- [XCUI_SIMULATOR_UNAVAILABLE](./xcui_simulator_unavailable.md)
+- [XCUI_SWIFT_MAIN_ACTOR](./xcui_swift_main_actor.md)
+- [XCUI_UNAVAILABLE](./xcui_unavailable.md)
+- [XCUI_WARN_UNUSED](./xcui_warn_unused.md)
+### Enumerations
+- [XCUIVoiceOverServiceError](./xcuivoiceoverservice/error/code.md)
+  Error codes for XCUIVoiceOverService operations.
 
 
 ---

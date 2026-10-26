@@ -68,6 +68,8 @@ For UIKit controls that support behavioral styles, set [`preferredBehavioralStyl
   A toolbar item that contains a search field optimized for performing text-based searches.
 - [class NSTrackingSeparatorToolbarItem](../AppKit/nstrackingseparatortoolbaritem.md)
   A toolbar separator that aligns with the vertical split view in the same window.
+- [NSToolbarItemIdentifier](./nstoolbaritemidentifier.md)
+  UIKit-specific constants for the standard toolbar items that the system provides.
 
 
 ---

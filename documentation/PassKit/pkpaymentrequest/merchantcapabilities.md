@@ -41,6 +41,11 @@ To filter the types of cards to make available for the transaction, pass the [`c
   Your merchant identifier.
 - [struct PKMerchantCapability](../pkmerchantcapability.md)
   Capabilities for processing payment.
+- [PKMerchantCategoryCode](../pkmerchantcategorycode.md)
+  The optional four-digit type, in ISO 18245 format, that represents the type of goods or service the merchant provides for the transaction.
+- [merchantCategoryCode](./merchantcategorycode-7vg6z.md)
+  An optional four-digit property, in ISO 18245 format, that represents the type of goods or service the merchant provides for the transaction.
+- [PKMerchantCategoryCodeNone](../pkmerchantcategorycodenone.md)
 
 
 ---

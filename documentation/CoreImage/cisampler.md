@@ -35,6 +35,8 @@ The `CISampler` class retrieves samples of images for processing by a [`CIKernel
   Initializes a sampler with an image object.
 - [init(image: CIImage, options: [AnyHashable : Any]?)](./cisampler/init%28image,options%29.md)
   Initializes the sampler with an image object using options specified in a dictionary.
+- [- initWithImage:keysAndValues:](./cisampler/initwithimage_keysandvalues_.md)
+  Initializes the sampler with an image object using options specified as key-value pairs.
 ### Getting Information About the Sampler Object
 - [var definition: CIFilterShape](./cisampler/definition.md)
   The domain of definition (DOD) of the sampler
@@ -45,6 +47,13 @@ The `CISampler` class retrieves samples of images for processing by a [`CIKernel
   Keys for creating a sampler.
 - [Sampler Option Values](./sampler-option-values.md)
   Values for sampler option keys.
+### Creating a Sampler
+- [+ samplerWithImage:](./cisampler/samplerwithimage_.md)
+  Creates and returns a sampler that references an image.
+- [+ samplerWithImage:keysAndValues:](./cisampler/samplerwithimage_keysandvalues_.md)
+  Creates and returns a sampler that references an image using options specified as key-value pairs.
+- [+ samplerWithImage:options:](./cisampler/samplerwithimage_options_.md)
+  Creates and returns a sampler that references an image using options specified in a dictionary.
 
 ## Relationships
 

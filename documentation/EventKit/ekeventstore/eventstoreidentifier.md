@@ -35,6 +35,8 @@ If the store is damaged, it’s recreated and given a new identifier. If this va
   Creates a new event store.
 - [init(sources: [EKSource])](./init%28sources%29.md)
   Creates an event store that contains data for the specified sources.
+- [- initWithAccessToEntityTypes:](./initwithaccesstoentitytypes_.md)
+  Initializes access to the event store with support for the given entity type.
 
 
 ---

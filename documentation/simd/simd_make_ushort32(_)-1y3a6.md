@@ -41,6 +41,8 @@ static simd_ushort32 simd_make_ushort32(simd_ushort16 other);
   Returns a new vector from the specified eight-element vector, and other elements undefined.
 - [func simd_make_ushort32_undef(simd_ushort16) -> simd_ushort32](./simd_make_ushort32_undef%28_%29-ie6m.md)
   Returns a new vector from the specified sixteen-element vector, and other elements undefined.
+- [vector32](./vector32-9avu.md)
+  Returns a new vector from the specified vectors.
 
 
 ---

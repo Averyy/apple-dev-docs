@@ -30,6 +30,8 @@ init(configuration: GCVirtualController.Configuration)
 ### Creating virtual controllers
 - [GCVirtualController.Configuration](./configuration.md)
   The configuration of a virtual controller.
+- [+ virtualControllerWithConfiguration:](./virtualcontrollerwithconfiguration_.md)
+  Creates a new virtual controller using the configuration you specify.
 
 
 ---

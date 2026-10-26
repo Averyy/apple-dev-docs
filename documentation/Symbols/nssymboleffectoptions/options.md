@@ -1,0 +1,31 @@
+# options
+
+**Framework**: Symbols  
+**Kind**: method  
+**Role**: Type Method
+
+The default set of effect options.
+
+**Availability**:
+- iOS 17.0+
+- iPadOS 17.0+
+- Mac Catalyst 17.0+
+- macOS 14.0+
+- tvOS 17.0+
+- visionOS 1.0+
+- watchOS 10.0+
+
+## Declaration
+
+```objc
++ (instancetype) options;
+```
+
+#### Return Value
+
+A new instance of effect options.
+
+
+---
+
+*[View on Apple Developer](https://developer.apple.com/documentation/symbols/nssymboleffectoptions/options)*

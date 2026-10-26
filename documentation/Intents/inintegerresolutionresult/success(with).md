@@ -42,6 +42,8 @@ Use this method to create a result object when you are able to resolve a paramet
 ### Creating a Resolution Result Object
 - [static func confirmationRequired(with: Int?) -> Self](./confirmationrequired%28with%29.md)
   Creates an object whose resolution requires that the user must confirm the value before proceeding.
+- [+ confirmationRequiredWithValueToConfirm:](./confirmationrequiredwithvaluetoconfirm_.md)
+  Creates an object whose resolution requires that the user must confirm the value before proceeding.
 
 
 ---

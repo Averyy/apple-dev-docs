@@ -41,6 +41,8 @@ The order of individual behaviors in a composite behavior is undefined. However,
 ### Working with Behaviors Using Subscript Syntax
 - [subscript(GKBehavior) -> NSNumber](./subscript%28_%29-6jng9.md)
   Returns the weight associated with the behavior specified by subscript syntax.
+- [- setObject:forKeyedSubscript:](./setobject_forkeyedsubscript_.md)
+  Sets the weight for the behavior specified by subscript syntax.
 
 
 ---

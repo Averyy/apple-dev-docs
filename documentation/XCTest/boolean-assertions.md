@@ -12,8 +12,14 @@ Test a condition that generates a true or false result.
   Asserts that an expression is true.
 - [func XCTAssertTrue(@autoclosure () throws -> Bool, @autoclosure () -> String, file: StaticString, line: UInt)](./xctasserttrue%28_,_,file,line%29.md)
   Asserts that an expression is true.
+- [XCTAssert](./xctassert.md)
+  Asserts that an expression is true.
+- [XCTAssertTrue](./xctasserttrue.md)
+  Asserts that an expression is true.
 ### Tests for False Conditions
 - [func XCTAssertFalse(@autoclosure () throws -> Bool, @autoclosure () -> String, file: StaticString, line: UInt)](./xctassertfalse%28_,_,file,line%29.md)
+  Asserts that an expression is false.
+- [XCTAssertFalse](./xctassertfalse.md)
   Asserts that an expression is false.
 
 ## See Also

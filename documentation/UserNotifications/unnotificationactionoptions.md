@@ -54,6 +54,8 @@ enum UNNotificationActionOptions : NSUInteger;
 ### Getting Options
 - [var options: UNNotificationActionOptions](./unnotificationaction/options.md)
   The behaviors associated with the action.
+- [UNNotificationActionOptionNone](./unnotificationactionoptionnone.md)
+  The action has the default behavior.
 
 
 ---

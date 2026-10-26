@@ -23,6 +23,12 @@
 - [typealias AudioObjectPropertySelector](./audioobjectpropertyselector.md)
 - [typealias AudioStreamID](./audiostreamid.md)
 - [typealias AudioStreamPropertyListenerProc](./audiostreampropertylistenerproc.md)
+- [AudioDriverPlugInDevicePropertyChangedProc](./audiodriverplugindevicepropertychangedproc.md)
+- [AudioDriverPlugInStreamPropertyChangedProc](./audiodriverpluginstreampropertychangedproc.md)
+- [AudioServerPlugInCustomPropertyDataType](./audioserverplugincustompropertydatatype.md)
+  The set of data types the Host knows how to marshal between the server and the client.
+- [AudioServerPlugInDriverRef](./audioserverplugindriverref.md)
+- [AudioServerPlugInHostRef](./audioserverpluginhostref.md)
 
 ## See Also
 

@@ -27,6 +27,10 @@ class ILMessageFilterCapabilitiesQueryResponse
 ### Setting the Subactions
 - [var promotionalSubActions: [ILMessageFilterSubAction]](./ilmessagefiltercapabilitiesqueryresponse/promotionalsubactions-98kzj.md)
 - [var transactionalSubActions: [ILMessageFilterSubAction]](./ilmessagefiltercapabilitiesqueryresponse/transactionalsubactions-4bfqz.md)
+- [promotionalSubActions](./ilmessagefiltercapabilitiesqueryresponse/promotionalsubactions-5d9c5.md)
+  The promotional action the Message Filter app extension recommends that the system perform on the queried message.
+- [transactionalSubActions](./ilmessagefiltercapabilitiesqueryresponse/transactionalsubactions-5fmpl.md)
+  The transactional action the Message Filter app extension recommends that the system perform on the queried message.
 ### Initializers
 - [init?(coder: NSCoder)](./ilmessagefiltercapabilitiesqueryresponse/init%28coder%29.md)
 

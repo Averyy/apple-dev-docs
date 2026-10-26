@@ -79,6 +79,8 @@ typedef CFIndex ABPropertyType;
   Constants used to specify the type of comparison beingmade.
 - [typealias ABSearchConjunction](./absearchconjunction.md)
   Constants used to create compound search elements.
+- [ABPickerAttributes](./abpickerattributes.md)
+  A bitfield used to specify the selection behavior for the values of multi-value properties.
 
 
 ---

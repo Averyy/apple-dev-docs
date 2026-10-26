@@ -5,6 +5,12 @@
 
 The `NSSound` class defines this common pasteboard data type.
 
+## Topics
+
+### Constants
+- [NSSoundPboardType](./nssoundpboardtype.md)
+  `NSSound` data
+
 
 ---
 

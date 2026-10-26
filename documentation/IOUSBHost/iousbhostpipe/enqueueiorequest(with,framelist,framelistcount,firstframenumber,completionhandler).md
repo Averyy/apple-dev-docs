@@ -59,6 +59,10 @@ This method issues asynchronous isochronous requests. The caller allocates and i
   A structure that represents a single frame in an isochronous transfer.
 - [func sendIORequest(with: NSMutableData, frameList: UnsafeMutablePointer<IOUSBHostIsochronousFrame>, frameListCount: Int, firstFrameNumber: UInt64) throws](./sendiorequest%28with,framelist,framelistcount,firstframenumber%29.md)
   Sends a request on an isochronous endpoint.
+- [- abortWithOption:error:](./abortwithoption_error_.md)
+  Aborts pending input/output requests.
+- [- abortWithError:](./abortwitherror_.md)
+  Aborts pending input/output requests synchronously.
 
 
 ---

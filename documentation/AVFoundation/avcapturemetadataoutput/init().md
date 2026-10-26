@@ -23,6 +23,12 @@ init()
 - (instancetype) init;
 ```
 
+## See Also
+
+### Creating metadata output
+- [+ new](./new.md)
+  Creates a new capture metadata output.
+
 
 ---
 

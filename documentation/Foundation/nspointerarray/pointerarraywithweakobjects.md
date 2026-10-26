@@ -1,0 +1,45 @@
+# pointerArrayWithWeakObjects
+
+**Framework**: Foundation  
+**Kind**: method  
+**Role**: Type Method
+
+Returns a new pointer array that maintains weak references to its elements.
+
+**Availability**:
+- macOS 10.5+ - Deprecated in 10.8
+
+> **Deprecated**: Use the [`weakObjects()`](./weakobjects%28%29.md) class method.
+
+## Declaration
+
+```objc
++ (id) pointerArrayWithWeakObjects;
+```
+
+#### Return Value
+
+A new pointer array that maintains weak references to its elements.
+
+## See Also
+
+### Creating and Initializing a New Pointer Array
+- [init(options: NSPointerFunctions.Options)](./init%28options%29.md)
+  Initializes the receiver to use the given options.
+- [init(pointerFunctions: NSPointerFunctions)](./init%28pointerfunctions%29.md)
+  Initializes the receiver to use the given functions.
+- [+ pointerArrayWithOptions:](./pointerarraywithoptions_.md)
+  Returns a new pointer array initialized to use the given options.
+- [+ pointerArrayWithPointerFunctions:](./pointerarraywithpointerfunctions_.md)
+  A new pointer array initialized to use the given functions.
+- [class func strongObjects() -> NSPointerArray](./strongobjects%28%29.md)
+  Returns a new pointer array that maintains strong references to its elements.
+- [+ pointerArrayWithStrongObjects](./pointerarraywithstrongobjects.md)
+  Returns a new pointer array that maintains strong references to its elements.
+- [class func weakObjects() -> NSPointerArray](./weakobjects%28%29.md)
+  Returns a new pointer array that maintains weak references to its elements.
+
+
+---
+
+*[View on Apple Developer](https://developer.apple.com/documentation/foundation/nspointerarray/pointerarraywithweakobjects)*

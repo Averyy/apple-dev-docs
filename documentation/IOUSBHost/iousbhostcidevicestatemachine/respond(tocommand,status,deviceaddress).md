@@ -23,6 +23,7 @@ func respond(toCommand command: UnsafePointer<IOUSBHostCIMessage>, status: IOUSB
 ### Instance Methods
 - [func inspectCommand(UnsafePointer<IOUSBHostCIMessage>) throws](./inspectcommand%28_%29.md)
 - [func respond(toCommand: UnsafePointer<IOUSBHostCIMessage>, status: IOUSBHostCIMessageStatus) throws](./respond%28tocommand,status%29.md)
+- [- initWithInterface:command:error:](./initwithinterface_command_error_.md)
 
 
 ---

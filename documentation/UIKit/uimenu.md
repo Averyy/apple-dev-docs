@@ -67,6 +67,12 @@ For examples of how you use [`UIMenu`](./uimenu.md), see [Adding menus and short
   Options you use to configure a menu’s appearance.
 - [init?(coder: NSCoder)](./uimenu/init%28coder%29.md)
   Creates a menu from data in an unarchiver.
+- [+ menuWithChildren:](./uimenu/menuwithchildren_.md)
+  Creates a new menu with the specified child elements.
+- [+ menuWithTitle:children:](./uimenu/menuwithtitle_children_.md)
+  Creates a menu with the specified title and child menu elements.
+- [+ menuWithTitle:image:identifier:options:children:](./uimenu/menuwithtitle_image_identifier_options_children_.md)
+  Creates a new menu with the specified values.
 ### Accessing child elements
 - [var children: [UIMenuElement]](./uimenu/children.md)
   The contents of the menu.

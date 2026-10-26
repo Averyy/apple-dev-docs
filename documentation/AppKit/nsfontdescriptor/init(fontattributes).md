@@ -36,6 +36,9 @@ The new font descriptor.
   Returns a font descriptor with the name and matrix attributes set to the given values.
 - [init(name: String, size: CGFloat)](./init%28name,size%29.md)
   Returns a font descriptor with the name and size attributes set to the given values.
+### Related Documentation
+- [+ fontDescriptorWithFontAttributes:](./fontdescriptorwithfontattributes_.md)
+  Returns a font descriptor with a dictionary of attributes.
 
 
 ---

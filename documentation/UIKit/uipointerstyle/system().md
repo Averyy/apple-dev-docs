@@ -35,6 +35,10 @@ To display custom accessories alongside the default pointer, use this pointer st
   Morphs the pointer into the provided shape when hovering over the current region.
 - [class func hidden() -> Self](./hidden%28%29.md)
   Hides the pointer when it moves over the current region.
+- [+ styleWithEffect:shape:](./stylewitheffect_shape_.md)
+  Applies the provided content effect and pointer shape to the current region.
+- [+ styleWithShape:constrainedAxes:](./stylewithshape_constrainedaxes_.md)
+  Morphs the pointer into the provided shape when it moves over the current region.
 
 
 ---

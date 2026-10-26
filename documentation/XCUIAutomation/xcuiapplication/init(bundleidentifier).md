@@ -49,6 +49,8 @@ For macOS apps, the system launches the matching app build from its existing loc
   Creates a proxy for the application that’s configured as the Target Application in Xcode’s target settings.
 - [init(url: URL)](./init%28url%29-90e7z.md)
   Creates a proxy for the application at the specified file system URL.
+- [+ new](./new.md)
+  Creates a proxy for the application specified as the Target Application in Xcode’s target settings.
 
 
 ---

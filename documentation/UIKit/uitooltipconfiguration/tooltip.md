@@ -31,6 +31,8 @@ To set the tooltip text, create a tooltip configuration object using either the 
 ### Accessing the configuration settings
 - [var sourceRect: CGRect?](./sourcerect-8zvo1.md)
   The region of the view or control where the pointer must hover to trigger the appearance of the tooltip.
+- [sourceRect](./sourcerect-iltv.md)
+  The region of the view or control where the pointer must hover to trigger the appearance of the tooltip.
 
 
 ---

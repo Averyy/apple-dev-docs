@@ -41,6 +41,12 @@ protocol AVPlayerItemIntegratedTimelineObserver : NSObjectProtocol
   An asynchronous sequence of boundary time values.
 - [AVPlayerItemIntegratedTimeline.PeriodicTimes](./avplayeritemintegratedtimeline/periodictimes.md)
   An asynchronous sequence of periodic time values.
+- [- addPeriodicTimeObserverForInterval:queue:usingBlock:](./avplayeritemintegratedtimeline/addperiodictimeobserverforinterval_queue_usingblock_.md)
+  Requests invocation of a block during playback to report changing time.
+- [- addBoundaryTimeObserverForSegment:offsetsIntoSegment:queue:usingBlock:](./avplayeritemintegratedtimeline/addboundarytimeobserverforsegment_offsetsintosegment_queue_usingblock_.md)
+  Requests invocation of a block when traversing an offset in a segment during playback.
+- [- removeTimeObserver:](./avplayeritemintegratedtimeline/removetimeobserver_.md)
+  Cancels a previously registered time observer.
 
 
 ---

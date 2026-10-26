@@ -45,6 +45,12 @@ The default value of this property is [`true`](../../Swift/true.md), which lets 
   The search display controller associated with the view controller.
 - [var topLayoutGuide: any UILayoutSupport](./toplayoutguide.md)
   Indicates the highest vertical extent for your onscreen content, for use with Auto Layout constraints.
+- [contentSizeForViewInPopover](./contentsizeforviewinpopover.md)
+  The size of the view controller’s view while displayed in a popover.
+- [modalViewController](./modalviewcontroller.md)
+  The controller for the active presented view’that is, the view that is temporarily displayed on top of the view managed by the receiver.
+- [wantsFullScreenLayout](./wantsfullscreenlayout.md)
+  A Boolean value indicating whether the view should underlap the status bar.
 
 
 ---

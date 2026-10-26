@@ -42,6 +42,8 @@ After an immutable array has been initialized in this way, it cannot be modified
 ### Related Documentation
 - [convenience init(object: Any)](./init%28object%29.md)
   Creates and returns an array containing a given object.
+- [- initWithObjects:](./initwithobjects_.md)
+  Initializes a newly allocated array by placing in it the objects in the argument list.
 ### Initializing an Array
 - [init()](./init%28%29.md)
   Initializes a newly allocated array.

@@ -32,6 +32,10 @@ class MLCUpsampleLayer
   Creates an upsample layer with the shape, upsampling algorithm, and corner alignment option you specify.
 - [enum MLCSampleMode](./mlcsamplemode.md)
   A sampling mode for an upsample layer.
+- [+ layerWithShape:](./mlcupsamplelayer/layerwithshape_.md)
+  Creates an upsample layer with the shape you specify.
+- [+ layerWithShape:sampleMode:alignsCorners:](./mlcupsamplelayer/layerwithshape_samplemode_alignscorners_.md)
+  Creates an upsample layer with the shape, upsampling algorithm, and corner alignement option you specify.
 ### Inspecting Upsample Layers
 - [var shape: [Int]](./mlcupsamplelayer/shape-61n1u.md)
   An array that contains the dimensions of the result tensor.
@@ -39,6 +43,8 @@ class MLCUpsampleLayer
   The upsampling algorithm type.
 - [var alignsCorners: Bool](./mlcupsamplelayer/alignscorners.md)
   A Boolean that indicates whether the layer aligns the corner pixels of the input and output tensors.
+- [shape](./mlcupsamplelayer/shape-7j6sf.md)
+  An array that contains the dimensions of the result tensor.
 
 ## Relationships
 

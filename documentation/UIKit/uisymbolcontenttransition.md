@@ -31,6 +31,15 @@ class UISymbolContentTransition
 ### Instance Properties
 - [var contentTransition: any ContentTransitionSymbolEffect & SymbolEffect](./uisymbolcontenttransition/contenttransition-52cbh.md)
 - [var options: SymbolEffectOptions](./uisymbolcontenttransition/options-7jxvh.md)
+- [contentTransition](./uisymbolcontenttransition/contenttransition-1cdos.md)
+  The symbol content transition.
+- [options](./uisymbolcontenttransition/options-4knr7.md)
+  Options for the symbol content transition.
+### Type Methods
+- [+ transitionWithContentTransition:](./uisymbolcontenttransition/transitionwithcontenttransition_.md)
+  Initializes a `UISymbolContentTransition` with a symbol content transition.
+- [+ transitionWithContentTransition:options:](./uisymbolcontenttransition/transitionwithcontenttransition_options_.md)
+  Initializes a `UISymbolContentTransition` with a symbol content transition and options.
 
 ## Relationships
 

@@ -51,6 +51,9 @@ enum TKErrorCode : NSInteger;
 - [static var TKErrorTokenNotFound: TKError.Code](./code/tkerrortokennotfound.md)
 ### Enumeration Cases
 - [TKError.Code.invalidatedDeviceKey](./code/invalidateddevicekey.md)
+- [TKErrorAuthenticationFailed](../tkerrorcode/tkerrorauthenticationfailed.md)
+- [TKErrorObjectNotFound](../tkerrorcode/tkerrorobjectnotfound.md)
+- [TKErrorTokenNotFound](../tkerrorcode/tkerrortokennotfound.md)
 ### Initializers
 - [init?(rawValue: Int)](./code/init%28rawvalue%29.md)
 

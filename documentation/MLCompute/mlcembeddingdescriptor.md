@@ -30,6 +30,10 @@ class MLCEmbeddingDescriptor
   Creates an embedding descriptor with the size of the dictionary and dimension of embedding vectors you specify.
 - [convenience init?(embeddingCount: Int, embeddingDimension: Int, paddingIndex: Int?, maximumNorm: Float?, pNorm: Float?, scalesGradientByFrequency: Bool)](./mlcembeddingdescriptor/init%28embeddingcount,embeddingdimension,paddingindex,maximumnorm,pnorm,scalesgradientbyfrequency%29.md)
   Creates an embedding descriptor with the size and dimension of embedding vectors, padding index, and norm and scaling options that you specify.
+- [+ descriptorWithEmbeddingCount:embeddingDimension:](./mlcembeddingdescriptor/descriptorwithembeddingcount_embeddingdimension_.md)
+  Creates an embedding descriptor with the size of the dictionary and dimension of embedding vectors you specify.
+- [+ descriptorWithEmbeddingCount:embeddingDimension:paddingIndex:maximumNorm:pNorm:scalesGradientByFrequency:](./mlcembeddingdescriptor/descriptorwithembeddingcount_embeddingdimension_paddingindex_maximumnorm_pnorm_scalesgradientbyfrequency_.md)
+  Creates a new embedding descriptor with the size and dimension of embedding vectors, padding index, and norm and scaling options that you specify.
 ### Inspecting Embedding Descriptors
 - [var embeddingCount: Int](./mlcembeddingdescriptor/embeddingcount-77gxz.md)
   The size of the dictionary.
@@ -43,6 +47,16 @@ class MLCEmbeddingDescriptor
   The p of the Lp norm.
 - [var scalesGradientByFrequency: Bool](./mlcembeddingdescriptor/scalesgradientbyfrequency.md)
   A Boolean that indicates whether the layer scales gradients by the inverse of the frequency of words in batch before the weight update.
+- [embeddingCount](./mlcembeddingdescriptor/embeddingcount-5vs5t.md)
+  The size of the dictionary.
+- [embeddingDimension](./mlcembeddingdescriptor/embeddingdimension-3u8w7.md)
+  The dimension of embedding vectors.
+- [paddingIndex](./mlcembeddingdescriptor/paddingindex-50o5o.md)
+  An unsigned integer value that, if set, causes the layer to initialize the embedding vector at that index to zero.
+- [maximumNorm](./mlcembeddingdescriptor/maximumnorm-4mrjj.md)
+  A float value that, if set, causes the layer to renormalize the selected embedding vectors to have an Lp norm less than this value.
+- [pNorm](./mlcembeddingdescriptor/pnorm-8mto8.md)
+  The p of the Lp norm.
 
 ## Relationships
 

@@ -74,6 +74,8 @@ Durations must always be positive.
   Creates a buffer queue with handlers to inspect buffers.
 - [func CMBufferQueueCreate(allocator: CFAllocator?, capacity: CMItemCount, callbacks: UnsafePointer<CMBufferCallbacks>, queueOut: UnsafeMutablePointer<CMBufferQueue?>) -> OSStatus](./cmbufferqueuecreate%28allocator,capacity,callbacks,queueout%29.md)
   Creates a buffer queue with callbacks to inspect buffers.
+- [CMBufferHandlers](./cmbufferhandlers.md)
+  A structure that stores the handlers that perform buffer operations.
 
 
 ---

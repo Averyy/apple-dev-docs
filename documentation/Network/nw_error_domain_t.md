@@ -48,6 +48,8 @@ typedef enum { ... } nw_error_domain_t;
 - [init(rawValue: UInt32)](./nw_error_domain_t/init%28rawvalue%29.md)
 ### Instance Properties
 - [var rawValue: UInt32](./nw_error_domain_t/rawvalue.md)
+### Enumeration Cases
+- [nw_error_domain_wifi_aware](./nw_error_domain_wifi_aware.md)
 
 ## Relationships
 

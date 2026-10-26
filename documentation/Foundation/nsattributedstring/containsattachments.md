@@ -29,6 +29,18 @@ YES if the attributed string contains any attachment attributes, otherwise NO.
 
 This method checks only for attachment attributes, not for `NSAttachmentCharacter`.
 
+## See Also
+
+### Deprecated Properties
+- [+ textFileTypes](./textfiletypes.md)
+  Returns an array of strings that represent file types that can be loaded as text.
+- [+ textUnfilteredFileTypes](./textunfilteredfiletypes.md)
+  Returns an array of strings that represent file types that can be loaded as a text.
+- [+ textPasteboardTypes](./textpasteboardtypes.md)
+  Returns an array of pasteboard types that can be loaded as text.
+- [+ textUnfilteredPasteboardTypes](./textunfilteredpasteboardtypes.md)
+  Returns an array of pasteboard types that can be loaded as text.
+
 
 ---
 

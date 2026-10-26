@@ -60,6 +60,8 @@ In macOS 10.6 and later, use [`rtf`](./rtf.md) instead.
   Sound data.
 - [static let string: NSPasteboard.PasteboardType](./string.md)
   String data.
+- [NSPasteboardTypeTabularText](./tabulartext.md)
+  Tab-separated fields of text.
 
 
 ---

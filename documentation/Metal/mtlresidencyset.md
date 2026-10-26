@@ -199,12 +199,16 @@ A residency set’s addition and removal methods don’t take effect until you c
   Stages a single resource to join the residency set’s list of allocations.
 - [func addAllocations([any MTLAllocation])](./mtlresidencyset/addallocations%28_%29.md)
   Stages multiple resources to join the residency set’s list of allocations.
+- [- addAllocations:count:](./mtlresidencyset/addallocations_count_.md)
+  Stages multiple resources to join the residency set’s list of allocations.
 ### Removing allocations
 - [func removeAllAllocations()](./mtlresidencyset/removeallallocations%28%29.md)
   Stages all the resources in the residency set to leave its list of allocations.
 - [func removeAllocation(any MTLAllocation)](./mtlresidencyset/removeallocation%28_%29.md)
   Stages a single resource to leave the residency set’s list of allocations.
 - [func removeAllocations([any MTLAllocation])](./mtlresidencyset/removeallocations%28_%29.md)
+  Stages multiple resources to leave the residency set’s list of allocations.
+- [- removeAllocations:count:](./mtlresidencyset/removeallocations_count_.md)
   Stages multiple resources to leave the residency set’s list of allocations.
 ### Finalizing pending allocation changes
 - [func commit()](./mtlresidencyset/commit%28%29.md)

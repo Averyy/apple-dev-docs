@@ -23,6 +23,8 @@ static simd_float2x2 simd_matrix_from_rows(simd_float2 row0, simd_float2 row1);
   Returns a new matrix with the specified columns.
 - [func matrix_from_rows(SIMD2<Float>, SIMD2<Float>) -> simd_float2x2](./matrix_from_rows%28_,_%29-2pi8i.md)
   Returns a new matrix with the specified rows.
+- [simd_diagonal_matrix](./simd_diagonal_matrix-2rboq.md)
+  Returns a new matrix with the specified vector on the main diagonal.
 
 
 ---

@@ -61,6 +61,8 @@ To retrieve a list of identifiers inspect [`userInfo`](../../../Foundation/nserr
   An error that indicates there’s not enough space to perform the requested change.
 - [PHPhotosError.Code.operationInterrupted](./operationinterrupted.md)
   An error that indicates an interruption occurs and the operation can’t complete.
+- [PHPhotosErrorPersistentChangeDetailsUnavailable](./persistentchangedetailsunavailable.md)
+  An error that indicates the change details aren’t available for the persistent change.
 
 
 ---

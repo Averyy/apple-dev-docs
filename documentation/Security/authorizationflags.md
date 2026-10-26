@@ -45,6 +45,8 @@ Use these flags in calls to the [`AuthorizationCreate(_:_:_:_:)`](./authorizatio
 - [static var noData: AuthorizationFlags](./authorizationflags/nodata.md)
   Private flag. Do not use.
 - [static var skipInternalAuth: AuthorizationFlags](./authorizationflags/skipinternalauth.md)
+- [kAuthorizationFlagDefaults](./authorizationflags/kauthorizationflagdefaults.md)
+  An empty flag set that you use as a placeholder when you don’t want any of the other flags.
 
 ## Relationships
 

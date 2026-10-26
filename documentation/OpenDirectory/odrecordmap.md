@@ -28,6 +28,12 @@ class ODRecordMap
 ### Instance Methods
 - [func attributeMap(forStandardAttribute: String!) -> ODAttributeMap!](./odrecordmap/attributemap%28forstandardattribute%29.md)
 - [func setAttribute(ODAttributeMap!, forStandardAttribute: String!)](./odrecordmap/setattribute%28_,forstandardattribute%29.md)
+### Instance Variables
+- [attributes](./odrecordmap/attributes-c.ivar.md)
+- [native](./odrecordmap/native-c.ivar.md)
+- [odPredicate](./odrecordmap/odpredicate-c.ivar.md)
+### Type Methods
+- [+ recordMap](./odrecordmap/recordmap.md)
 
 ## Relationships
 

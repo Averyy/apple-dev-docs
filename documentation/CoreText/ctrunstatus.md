@@ -38,6 +38,8 @@ The [`CTRunGetStatus(_:)`](./ctrungetstatus%28_%29.md) function passes back this
   The run isn’t in strictly increasing or decreasing order.
 - [static var hasNonIdentityMatrix: CTRunStatus](./ctrunstatus/hasnonidentitymatrix.md)
   The run requires a specific text matrix to be set in the current Core Graphics context for proper drawing.
+- [kCTRunStatusNoStatus](./ctrunstatus/kctrunstatusnostatus.md)
+  The run has no special attributes.
 ### Initializers
 - [init(rawValue: UInt32)](./ctrunstatus/init%28rawvalue%29.md)
   Creates a run status structure with the specified raw value.

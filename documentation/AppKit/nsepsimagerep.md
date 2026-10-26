@@ -26,6 +26,8 @@ class NSEPSImageRep
 ### Creating Representations of Images from EPS Data
 - [init?(data: Data)](./nsepsimagerep/init%28data%29.md)
   Returns a representation of an image initialized with the specified EPS data.
+- [+ imageRepWithData:](./nsepsimagerep/imagerepwithdata_.md)
+  Creates and returns a representation of an image initialized with the specified EPS data.
 ### Getting Data
 - [var boundingBox: NSRect](./nsepsimagerep/boundingbox.md)
   The rectangle that bounds the image representation.

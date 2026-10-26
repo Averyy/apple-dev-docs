@@ -59,8 +59,8 @@ You adopt Sign in with Apple in several different ways:
 
 - When your app or website needs to prompt for a login and password, include a [Sign in with Apple button](../SigninwithApple/displaying-sign-in-with-apple-buttons-in-your-app.md) in your interface to give people the option to use the feature.
 - To [authenticate accounts that use Sign in with Apple](../AuthenticationServices/AuthenticationServices.md) from your app, use the [Authentication Services](../AuthenticationServices/AuthenticationServices.md) framework
-- To authenticate people’s credentials from your web interface, use [Sign in with Apple JS](https://developer.apple.com/documentation/signinwithapplejs).
-- To authenticate people’s accounts on a back-end server, use [Sign in with Apple REST API](https://developer.apple.com/documentation/signinwithapplerestapi).
+- To authenticate people’s credentials from your web interface, use [Sign in with Apple JS](../SigninwithAppleJS/SigninwithAppleJS.md).
+- To authenticate people’s accounts on a back-end server, use [Sign in with Apple REST API](../SigninwithAppleRESTAPI/SigninwithAppleRESTAPI.md).
 
 For a media streaming app that runs on multiple platforms, [create a single sign-on experience](../VideoSubscriberAccount/signing-people-in-to-media-apps-automatically.md) to get people to your content more quickly. The [Video Subscriber Account](../VideoSubscriberAccount/VideoSubscriberAccount.md) framework supports an Automatic Sign-In workflow, which you use to generate a token that authorizes the person’s access to your services. The framework stores this token on the person’s Apple Account, making it available to all of their devices. If the token is present at app startup, use it to log in automatically instead of asking for the person’s credentials. Update the token, or remove it entirely, using [Automatic Sign-In API](../AutomaticSignInAPI/AutomaticSignInAPI.md).
 

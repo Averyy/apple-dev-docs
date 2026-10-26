@@ -59,6 +59,8 @@ typedef NSString * MTLDeviceNotificationName;
   Returns the GPU device instance that’s currently driving a display.
 - [typealias MTLDeviceNotificationHandler](./mtldevicenotificationhandler.md)
   A Swift closure or an Objective-C block that Metal calls when the system adds or removes a GPU device.
+- [MTLCopyAllDevicesWithObserver](./mtlcopyalldeviceswithobserver.md)
+  Returns an array of all the Metal GPU devices in the system and registers a notification handler that Metal calls when the device list changes.
 
 
 ---

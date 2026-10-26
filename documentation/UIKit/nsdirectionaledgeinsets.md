@@ -33,6 +33,8 @@ typedef struct NSDirectionalEdgeInsets { ... } NSDirectionalEdgeInsets;
   Creates a directional edge insets structure that contains default values.
 - [init(EdgeInsets)](./nsdirectionaledgeinsets/init%28_%29.md)
   Creates a directional edge insets structure from a SwiftUI edge insets structure.
+- [NSDirectionalEdgeInsetsMake](./nsdirectionaledgeinsets/init%28top,leading,bottom,trailing%29-1th5h.md)
+  Creates a directional edge insets structure that contains the specified values.
 ### Getting the edge values
 - [var bottom: CGFloat](./nsdirectionaledgeinsets/bottom.md)
   The bottom edge inset value.
@@ -47,9 +49,16 @@ typedef struct NSDirectionalEdgeInsets { ... } NSDirectionalEdgeInsets;
   Returns a string formatted to contain the data from a directional edge insets structure.
 - [class func nsDirectionalEdgeInsets(for: String) -> NSDirectionalEdgeInsets](../Foundation/nscoder/nsdirectionaledgeinsets%28for%29.md)
   Returns a directional edge insets structure based on data in the specified string.
+- [NSStringFromDirectionalEdgeInsets](./nsstringfromdirectionaledgeinsets.md)
+  Returns a string formatted to contain the data from a directional edge insets structure.
+- [NSDirectionalEdgeInsetsFromString](./nsdirectionaledgeinsetsfromstring.md)
+  Returns a directional edge insets structure based on data in the specified string.
 ### Getting the empty edge insets
 - [static let zero: NSDirectionalEdgeInsets](./nsdirectionaledgeinsets/zero.md)
   A directional edge insets structure whose top, leading, bottom, and trailing fields all have a value of `0`.
+### Comparing directional edge insets
+- [NSDirectionalEdgeInsetsEqualToDirectionalEdgeInsets](./nsdirectionaledgeinsetsequaltodirectionaledgeinsets.md)
+  Compares two directional edge insets to determine if they’re the same.
 
 ## Relationships
 

@@ -43,6 +43,8 @@ Tile sets also define the arrangement of tiles within a tile map. In addition to
   Initializes a new tile set with an array of tile groups and rectangular grid layout.
 - [init(tileGroups: [SKTileGroup], tileSetType: SKTileSetType)](./sktileset/init%28tilegroups,tilesettype%29.md)
   Initializes a new tile set with an array of tile groups and specified layout.
+- [+ tileSetWithTileGroups:](./sktileset/tilesetwithtilegroups_.md)
+- [+ tileSetWithTileGroups:tileSetType:](./sktileset/tilesetwithtilegroups_tilesettype_.md)
 ### Accessing or Reading a Tile Set’s Properties
 - [var defaultTileGroup: SKTileGroup?](./sktileset/defaulttilegroup.md)
   The tile set’s default tile group.

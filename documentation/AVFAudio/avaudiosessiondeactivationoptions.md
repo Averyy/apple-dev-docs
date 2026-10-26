@@ -33,6 +33,7 @@ enum AVAudioSessionDeactivationOptions : NSUInteger;
 ### Getting standard deactivation options
 - [static var notifyOthersOnDeactivation: AVAudioSessionDeactivationOptions](./avaudiosessiondeactivationoptions/notifyothersondeactivation.md)
   Notify an interrupted app that the interruption has ended and it may resume playback.
+- [AVAudioSessionDeactivationOptionNone](./avaudiosessiondeactivationoptions/avaudiosessiondeactivationoptionnone.md)
 
 ## Relationships
 
@@ -57,6 +58,8 @@ enum AVAudioSessionDeactivationOptions : NSUInteger;
   Deactivates the audio session asynchronously.
 - [struct AVAudioSessionActivationOptions](./avaudiosessionactivationoptions.md)
   Constants that describe the options to pass when activating the audio session.
+- [- setActive:error:](./avaudiosession/setactive_error_.md)
+  Activates or deactivates your app’s audio session.
 
 
 ---

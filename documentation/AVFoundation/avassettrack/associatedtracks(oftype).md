@@ -40,6 +40,14 @@ You can call this method without blocking the current thread after you’ve load
 
 - `trackAssociationType`: The requested track association type.
 
+## See Also
+
+### Accessing track associations
+- [availableTrackAssociationTypes](./availabletrackassociationtypes.md)
+  An array of association types that the track uses to associate with other tracks.
+- [AVTrackAssociationType](./associationtype.md)
+  Constants that define track association types.
+
 
 ---
 

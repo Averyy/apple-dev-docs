@@ -44,6 +44,10 @@ At runtime, use [`maximumSectionCount`](./cplisttemplate/maximumsectioncount.md)
   A list template row that displays a series of images.
 - [class CPMessageListItem](./cpmessagelistitem.md)
   A list template row that represents a conversation or contact.
+- [- initWithItems:](./cplistsection/initwithitems_.md)
+  Creates a section with list items.
+- [- initWithItems:header:sectionIndexTitle:](./cplistsection/initwithitems_header_sectionindextitle_.md)
+  Creates a section with list items, a header, and a section index title.
 ### Getting Supplementary Information
 - [var header: String?](./cplistsection/header.md)
   The section’s header text.

@@ -36,6 +36,8 @@ class var red: CIImage { get }
 - [class var magenta: CIImage](./magenta.md)
 - [class var white: CIImage](./white.md)
 - [class var yellow: CIImage](./yellow.md)
+- [+ imageWithColor:](./imagewithcolor_.md)
+  Creates and returns an image of infinite extent whose entire content is the specified color.
 
 
 ---

@@ -76,6 +76,10 @@ To specify the kind of file operation, provide one of the following values:
   The total number of files for a file progress object.
 - [var fileCompletedCount: Int?](./filecompletedcount.md)
   The number of completed files for a file progress object.
+- [fileTotalCount](../nsprogress/filetotalcount.md)
+  The total number of files for a file progress object.
+- [fileCompletedCount](../nsprogress/filecompletedcount.md)
+  The number of completed files for a file progress object.
 
 
 ---

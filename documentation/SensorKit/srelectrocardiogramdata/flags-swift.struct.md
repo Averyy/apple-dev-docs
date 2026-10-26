@@ -31,6 +31,9 @@ enum SRElectrocardiogramDataFlags : NSUInteger;
 ### Initializing flags
 - [init(rawValue: UInt)](./flags-swift.struct/init%28rawvalue%29.md)
   Initializes an ECG flags structure.
+### Enumeration Cases
+- [SRElectrocardiogramDataFlagsNone](../srelectrocardiogramdataflags/srelectrocardiogramdataflagsnone.md)
+  Flag that indicates no context or events occur.
 
 ## Relationships
 

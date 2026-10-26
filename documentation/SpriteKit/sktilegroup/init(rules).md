@@ -44,6 +44,8 @@ A new tile group.
   Paint tiles on a map by putting tile definitions in a group that you create in code.
 - [init(tileDefinition: SKTileDefinition)](./init%28tiledefinition%29.md)
   Creates and initializes a simple tile group with a single tile definition.
+- [+ tileGroupWithTileDefinition:](./tilegroupwithtiledefinition_.md)
+- [+ tileGroupWithRules:](./tilegroupwithrules_.md)
 
 
 ---

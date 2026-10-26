@@ -38,6 +38,8 @@ This method is a designated initializer of `NSMutableOrderedSet`.
 ### Creating a Mutable Ordered Set
 - [init(capacity: Int)](./init%28capacity%29.md)
   Returns an initialized mutable ordered set with a given initial capacity.
+- [+ orderedSetWithCapacity:](./orderedsetwithcapacity_.md)
+  Creates and returns an mutable ordered set with a given initial capacity.
 
 
 ---

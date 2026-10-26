@@ -33,6 +33,8 @@ To request scene activation from a view interaction, use an instance of this cla
 ### Creating an activation configuration
 - [convenience init(userActivity: NSUserActivity, options: UIWindowScene.ActivationRequestOptions?, preview: UITargetedPreview?)](./activationconfiguration/init%28useractivity,options,preview%29.md)
   Creates an activation configuration.
+- [- initWithUserActivity:](../uiwindowsceneactivationconfiguration/initwithuseractivity_.md)
+  Creates an activation configuration.
 ### Getting information about the activation configuration
 - [var userActivity: NSUserActivity](./activationconfiguration/useractivity.md)
   The user activity used to request a scene.

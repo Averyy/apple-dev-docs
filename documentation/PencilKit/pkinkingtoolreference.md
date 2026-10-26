@@ -48,6 +48,22 @@ Create an inking tool programmatically, or display a [`PKToolPicker`](./pktoolpi
 ### Getting the tool type
 - [var inkType: __PKInkType](./pkinkingtoolreference/inktype.md)
   The tool type that determines the shape of the rendered content.
+- [PKInkType](./pkinktype.md)
+  The type that defines the shape of stroked lines.
+- [PKInkTypeMarker](./pkinktypemarker.md)
+  An inking tool that creates the appearance of a felt-tip marker.
+- [PKInkTypePen](./pkinktypepen.md)
+  An inking tool that creates the appearance of drawing with a pen.
+- [PKInkTypePencil](./pkinktypepencil.md)
+  An inking tool that creates the appearance of drawing with a pencil.
+- [PKInkTypeMonoline](./pkinktypemonoline.md)
+  An inking tool that creates the appearance of a monoline pen.
+- [PKInkTypeFountainPen](./pkinktypefountainpen.md)
+  An inking tool that creates the appearance of a calligraphy pen.
+- [PKInkTypeWatercolor](./pkinktypewatercolor.md)
+  An inking tool that creates the appearance of a watercolor brush.
+- [PKInkTypeCrayon](./pkinktypecrayon.md)
+  An inking tool that creates the appearance of a crayon.
 ### Working with colors
 - [class func convert(UIColor, from: UIUserInterfaceStyle, to: UIUserInterfaceStyle) -> UIColor](./pkinkingtoolreference/convert%28_,from,to%29.md)
   Converts a color from one user interface style to another.
@@ -82,6 +98,29 @@ Create an inking tool programmatically, or display a [`PKToolPicker`](./pktoolpi
 - [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 - [Sendable](../Swift/sendable.md)
 - [SendableMetatype](../Swift/sendablemetatype.md)
+### Inherits From
+- [PKTool](./pktool-c.class.md)
+
+## See Also
+
+### Tools
+- [Configuring the PencilKit tool picker](./configuring-the-pencilkit-tool-picker.md)
+  Incorporate a custom PencilKit tool picker with a variety of system and custom tools into a drawing app.
+- [PKToolPicker](./pktoolpicker.md)
+  A tool palette that displays a selection of drawing tools and colors for tools that a person can choose from.
+- [PKEraserTool](./pkerasertoolreference.md)
+  A tool for erasing previously drawn content in a canvas view.
+- [PKLassoTool](./pklassotoolreference.md)
+  A tool for selecting stroked lines and shapes in a canvas view.
+- [PKTool](./pktool-c.class.md)
+  An abstract base class for tools used by a canvas view.
+- [PKResponderState](./pkresponderstate.md)
+  An object that controls PencilKit behavior associated with a responder.
+- [PKToolPickerVisibility](./pktoolpickervisibility.md)
+  Constants that describe the visibility state of a tool picker.
+- [PKToolPickerDelegate](./pktoolpicker/delegate-swift.protocol.md)
+- [PKToolPickerCustomItemControlOptions](./pktoolpickercustomitem/controloptions.md)
+  Options for which controls to present.
 
 
 ---

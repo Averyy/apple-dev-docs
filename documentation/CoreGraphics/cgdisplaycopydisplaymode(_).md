@@ -61,6 +61,9 @@ A display-mode opaque-type reference, or `NULL` if the display is invalid. In Ob
   Returns a Boolean value indicating whether the mouse cursor is drawn in framebuffer memory.
 - [func CGCursorIsVisible() -> boolean_t](./cgcursorisvisible%28%29.md)
   Returns a Boolean value indicating whether the mouse cursor is visible.
+- [CGColorConversionInfoCreateFromList](./cgcolorconversioninfocreatefromlist.md)
+  Creates a conversion between an arbitrary number of specified color spaces.
+- [CGContextDrawPDFDocument](./cgcontextdrawpdfdocument.md)
 
 
 ---

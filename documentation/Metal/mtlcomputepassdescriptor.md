@@ -36,6 +36,9 @@ class MTLComputePassDescriptor
 ### Specifying sample buffers for GPU counters
 - [var sampleBufferAttachments: MTLComputePassSampleBufferAttachmentDescriptorArray](./mtlcomputepassdescriptor/samplebufferattachments.md)
   The sample buffers that the compute pass can access.
+### Creating a compute pass descriptor
+- [+ computePassDescriptor](./mtlcomputepassdescriptor/computepassdescriptor.md)
+  Creates a default compute pass descriptor.
 
 ## Relationships
 

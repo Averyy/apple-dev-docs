@@ -37,6 +37,10 @@ To learn more about graphs and pathfinding, see [Pathfinding](https://developer.
   Initializes a graph that describes an integer grid with the specified dimensions, using the specified node class.
 - [init(fromGridStartingAt: vector_int2, width: Int32, height: Int32, diagonalsAllowed: Bool)](./gkgridgraph/init%28fromgridstartingat,width,height,diagonalsallowed%29.md)
   Initializes a graph that describes an integer grid with the specified dimensions.
+- [+ graphFromGridStartingAt:width:height:diagonalsAllowed:nodeClass:](./gkgridgraph/graphfromgridstartingat_width_height_diagonalsallowed_nodeclass_.md)
+  Creates a graph that describes an integer grid with the specified dimensions, using the specified node class.
+- [+ graphFromGridStartingAt:width:height:diagonalsAllowed:](./gkgridgraph/graphfromgridstartingat_width_height_diagonalsallowed_.md)
+  Creates a graph that describes an integer grid with the specified dimensions.
 ### Working with Nodes
 - [func node(atGridPosition: vector_int2) -> NodeType?](./gkgridgraph/node%28atgridposition%29.md)
   Returns the node in the graph at the specified grid coordinates.

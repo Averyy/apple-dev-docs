@@ -41,17 +41,17 @@ protocol SWCollaborationViewDelegate : NSObjectProtocol
 ## See Also
 
 ### Collaboration management
-- [class SWCollaborationCoordinator](https://developer.apple.com/documentation/sharedwithyoucore/swcollaborationcoordinator)
+- [class SWCollaborationCoordinator](../SharedWithYouCore/swcollaborationcoordinator.md)
   An object that contains the shared collaboration coordinator.
-- [class SWCollaborationOption](https://developer.apple.com/documentation/sharedwithyoucore/swcollaborationoption)
+- [class SWCollaborationOption](../SharedWithYouCore/swcollaborationoption.md)
   An object that determines how the system shares a document in a collaboration.
-- [class SWCollaborationOptionsGroup](https://developer.apple.com/documentation/sharedwithyoucore/swcollaborationoptionsgroup)
+- [class SWCollaborationOptionsGroup](../SharedWithYouCore/swcollaborationoptionsgroup.md)
   An object that represents a group of collaboration options that the system displays together.
-- [class SWCollaborationOptionsPickerGroup](https://developer.apple.com/documentation/sharedwithyoucore/swcollaborationoptionspickergroup)
+- [class SWCollaborationOptionsPickerGroup](../SharedWithYouCore/swcollaborationoptionspickergroup.md)
   An object that represents a group of collaboration options that the system displays together with mutually exclusive options.
-- [class SWCollaborationShareOptions](https://developer.apple.com/documentation/sharedwithyoucore/swcollaborationshareoptions)
+- [class SWCollaborationShareOptions](../SharedWithYouCore/swcollaborationshareoptions.md)
   An object that represents the state of the collaboration options for the document.
-- [let UTCollaborationOptionsTypeIdentifier: String](https://developer.apple.com/documentation/sharedwithyoucore/utcollaborationoptionstypeidentifier)
+- [let UTCollaborationOptionsTypeIdentifier: String](../SharedWithYouCore/utcollaborationoptionstypeidentifier.md)
   A string constant for the options type identifier.
 
 

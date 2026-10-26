@@ -1,0 +1,62 @@
+# ar_image_anchor_get_origin_from_anchor_transform_with_correction
+
+**Framework**: ARKit  
+**Kind**: func  
+**Role**: Function
+
+Get the transform from an anchor to the origin coordinate system.
+
+**Availability**:
+- visionOS 27.0+
+
+## Declaration
+
+```c
+extern simd_float4x4 ar_image_anchor_get_origin_from_anchor_transform_with_correction(ar_image_anchor_t image_anchor, ar_transform_correction_t transform_correction);
+```
+
+#### Return Value
+
+The origin from anchor transform.
+
+## Parameters
+
+- `image_anchor`: The anchor.
+- `transform_correction`: The transform correction that should be applied.
+
+## See Also
+
+### Image tracking
+- [ar_image_anchor_get_estimated_scale_factor](./ar_image_anchor_get_estimated_scale_factor.md)
+  Gets the estimated scale factor between the tracked image’s physical size and the reference image’s size.
+- [ar_image_anchor_get_reference_image](./ar_image_anchor_get_reference_image.md)
+  Gets the reference image that this image anchor tracks.
+- [ar_image_anchors_enumerate_anchors](./ar_image_anchors_enumerate_anchors.md)
+  Enumerates a collection of image anchors.
+- [ar_image_anchors_enumerate_anchors_f](./ar_image_anchors_enumerate_anchors_f.md)
+  Enumerates a collection of image anchors.
+- [ar_image_anchors_get_count](./ar_image_anchors_get_count.md)
+  Gets the number of image anchors in the collection.
+- [ar_image_tracking_provider_create](./ar_image_tracking_provider_create.md)
+  Creates an image tracking provider that tracks the reference images you supply.
+- [ar_image_tracking_provider_is_supported](./ar_image_tracking_provider_is_supported.md)
+  Returns a Boolean value that indicates whether the current runtime environment supports image tracking providers.
+- [ar_image_tracking_provider_get_required_authorization_type](./ar_image_tracking_provider_get_required_authorization_type.md)
+  Gets the types of authorizations required to track images.
+- [ar_image_tracking_provider_set_update_handler](./ar_image_tracking_provider_set_update_handler.md)
+  Sets the handler for receiving image tracking updates.
+- [ar_image_tracking_provider_set_update_handler_f](./ar_image_tracking_provider_set_update_handler_f.md)
+  Sets the handler for receiving image tracking updates.
+- [ar_image_tracking_configuration_add_reference_images](./ar_image_tracking_configuration_add_reference_images.md)
+  Adds reference images to the set to be tracked.
+- [ar_image_tracking_configuration_create](./ar_image_tracking_configuration_create.md)
+  Creates an image tracking configuration.
+- [ar_image_tracking_configuration_t](./ar_image_tracking_configuration_t.md)
+- [ar_image_tracking_provider_copy_all_image_anchors](./ar_image_tracking_provider_copy_all_image_anchors.md)
+- [ar_reference_images_t](./ar_reference_images_t.md)
+  A collection of reference images.
+
+
+---
+
+*[View on Apple Developer](https://developer.apple.com/documentation/arkit/ar_image_anchor_get_origin_from_anchor_transform_with_correction)*

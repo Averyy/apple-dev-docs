@@ -91,6 +91,14 @@ You can use the [`DateIntervalFormatter`](./dateintervalformatter.md) class to c
 - [Sendable](../Swift/sendable.md)
 - [SendableMetatype](../Swift/sendablemetatype.md)
 
+## See Also
+
+### Date Representations
+- [NSDate](./nsdate.md)
+  A representation of a specific point in time, independent of any calendar or time zone.
+- [NSTimeInterval](./timeinterval.md)
+  A number of seconds.
+
 
 ---
 

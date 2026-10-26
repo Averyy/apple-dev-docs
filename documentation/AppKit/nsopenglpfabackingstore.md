@@ -53,6 +53,10 @@ NSOpenGLPFABackingStore
   A Boolean attribute. If present, this attribute indicates that the pixel format choosing policy is altered for the color, depth, and accumulation buffers such that, if a nonzero buffer size is requested, the largest available buffer is preferred.
 - [var NSOpenGLPFAMinimumPolicy: Int](./nsopenglpfaminimumpolicy.md)
   A Boolean attribute. If present, this attribute indicates that the pixel format choosing policy is altered for the color, depth, and accumulation buffers such that only buffers of size greater than or equal to the desired size are considered.
+- [NSOpenGLPFACompliant](./nsopenglpfacompliant.md)
+  A Boolean attribute. If present, this attribute indicates that pixel format selection is only open to OpenGL-compliant renderers. This attribute is implied unless `NSOpenGLPFAAllRenderers` is specified. This attribute is not useful in the attribute array.
+- [NSOpenGLPFAFullScreen](./nsopenglpfafullscreen.md)
+  A Boolean attribute. If present, this attribute indicates that only renderers that are capable of rendering to a full-screen drawable are considered. The `NSOpenGLPFASingleRenderer` attribute is implied.
 
 
 ---

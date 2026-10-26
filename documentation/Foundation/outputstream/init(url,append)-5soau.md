@@ -49,6 +49,10 @@ The stream must be opened before it can be used.
   Returns an initialized output stream that can write to a provided buffer.
 - [convenience init?(toFileAtPath: String, append: Bool)](./init%28tofileatpath,append%29.md)
   Returns an initialized output stream for writing to a specified file.
+- [+ outputStreamToBuffer:capacity:](../nsoutputstream/outputstreamtobuffer_capacity_.md)
+  Creates and returns an initialized output stream that can write to a provided buffer.
+- [+ outputStreamToFileAtPath:append:](../nsoutputstream/outputstreamtofileatpath_append_.md)
+  Creates and returns an initialized output stream for writing to a specified file.
 
 
 ---

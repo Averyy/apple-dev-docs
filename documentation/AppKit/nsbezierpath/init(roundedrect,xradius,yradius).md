@@ -38,6 +38,8 @@ The path is constructed in a counter-clockwise direction, starting at the top-le
 ### Related Documentation
 - [func appendRoundedRect(NSRect, xRadius: CGFloat, yRadius: CGFloat)](./appendroundedrect%28_,xradius,yradius%29.md)
   Appends a rounded rectangular path to the path.
+- [+ bezierPath](./bezierpath.md)
+  Creates and returns a new Bézier path object.
 ### Creating a Bézier Path
 - [init(ovalIn: NSRect)](./init%28ovalin%29.md)
   Creates and returns a new Bézier path object initialized with an oval path inscribed in the specified rectangle.

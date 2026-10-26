@@ -56,6 +56,8 @@ CBErrorInvalidHandle
   The device is unknown.
 - [CBError.Code.unkownDevice](./unkowndevice.md)
   A misspelled version of the unknown device error code.
+- [CBErrorUnknownDevice](../../cberror-c.enum/cberrorunknowndevice.md)
+  The device is unknown.
 
 
 ---

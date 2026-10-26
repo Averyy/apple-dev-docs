@@ -35,6 +35,10 @@ init(optionsGroups: [SWCollaborationOptionsGroup], summary: String)
   Creates and initializes a collaboration share options object.
 - [convenience init(optionsGroups: [SWCollaborationOptionsGroup])](./init%28optionsgroups%29.md)
   Creates and initializes a collaboration share options object with the array of groups.
+- [+ shareOptionsWithOptionsGroups:](./shareoptionswithoptionsgroups_.md)
+  Creates and initializes a collaboration share options object with the array of groups.
+- [+ shareOptionsWithOptionsGroups:summary:](./shareoptionswithoptionsgroups_summary_.md)
+  Creates and initializes a collaboration share options object the array of groups and a summary string.
 
 
 ---

@@ -45,6 +45,10 @@ A noise object doesn’t contain noise values or pixel color values for the nois
   Initializes a noise object with the specified noise source.
 - [init(GKNoiseSource, gradientColors: [NSNumber : UIColor])](./gknoise/init%28_,gradientcolors%29.md)
   Initializes a noise object with the specified noise source, with colors for later use in generating noise textures.
+- [+ noiseWithNoiseSource:](./gknoise/noisewithnoisesource_.md)
+  Creates a noise object with the specified noise source.
+- [+ noiseWithNoiseSource:gradientColors:](./gknoise/noisewithnoisesource_gradientcolors_.md)
+  Creates a noise object with the specified noise source, with colors for later use in generating noise textures.
 ### Creating Noise by Combining Noise
 - [convenience init(componentNoises: [GKNoise], selectionNoise: GKNoise)](./gknoise/init%28componentnoises,selectionnoise%29.md)
   Creates a noise object by combining the specified noise objects, using another noise object to select which regions of the output correspond to which input noise.

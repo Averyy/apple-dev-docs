@@ -33,6 +33,8 @@ var cityName: String? { get }
 - [var regionName: String?](./regionname.md)
   The region name, such as “United States”.
 - [var region: Locale.Region?](./region.md)
+- [regionCode](./regioncode.md)
+  The region’s ISO 3166-2 region code, such as “US”.
 
 
 ---

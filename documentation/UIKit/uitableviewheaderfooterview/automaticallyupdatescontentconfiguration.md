@@ -42,6 +42,10 @@ If you override [`updateConfiguration(using:)`](./updateconfiguration%28using%29
   A primary text label for the view.
 - [var detailTextLabel: UILabel?](./detailtextlabel.md)
   A detail text label for the view.
+- [- defaultContentConfiguration](./defaultcontentconfiguration.md)
+  Retrieves a default list content configuration for the view’s style.
+- [contentConfiguration](./contentconfiguration-r49e.md)
+  The current content configuration of the view.
 
 
 ---

@@ -24,6 +24,12 @@ init(headerTextProvider: CLKTextProvider, bodyTextProvider: CLKTextProvider)
 - `headerTextProvider`: The text provider for the header. For multicolor faces, like the Utility face, the system uses the text provider’s tint color for the text. For other faces, the system ignores the provided tint color, and uses a system color instead.
 - `bodyTextProvider`: The text provider for the body. For multicolor faces, like the Utility face, the system uses the text provider’s tint color for the text. For other faces, the system ignores the provided tint color, and uses a system color instead.
 
+## See Also
+
+### Creating the Template
+- [+ templateWithHeaderTextProvider:bodyTextProvider:](./templatewithheadertextprovider_bodytextprovider_.md)
+  Returns a template that has a header and a row of tall body text.
+
 
 ---
 

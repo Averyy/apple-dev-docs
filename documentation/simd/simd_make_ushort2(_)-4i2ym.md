@@ -23,6 +23,8 @@ static simd_ushort2 simd_make_ushort2(unsigned short other);
   Returns a new vector from the specified scalar values.
 - [func simd_make_ushort2_undef(UInt16) -> simd_ushort2](./simd_make_ushort2_undef%28_%29.md)
   Returns a new vector with the first element set to a scalar value, and other elements undefined.
+- [vector2](./vector2-39jw3.md)
+  Returns a new vector from the specified scalar values.
 
 
 ---

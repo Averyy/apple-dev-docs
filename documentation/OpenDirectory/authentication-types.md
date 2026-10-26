@@ -96,6 +96,8 @@ Types of authentication available in Open Directory.
   The authentication type used to enable a root process to write the secure hash of a user record.
 - [let kODAuthenticationTypeSetCertificateHashAsCurrent: String](./kodauthenticationtypesetcertificatehashascurrent.md)
   An authentication type to set the certificate using the authenticated user’s credentials.
+- [kODAuthenticationTypeSecureHash](./kodauthenticationtypesecurehash.md)
+  The authentication type used to specify secure hash authentication.
 
 ## See Also
 

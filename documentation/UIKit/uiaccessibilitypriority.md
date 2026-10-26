@@ -70,6 +70,18 @@ let highPriorityAnnouncement = NSAttributedString(string: "Camera active", attri
   A key that indicates the pronunciation of a specific word or phrase, such as a proper name.
 - [static let accessibilitySpeechAnnouncementPriority: NSAttributedString.Key](../Foundation/nsattributedstring/key/accessibilityspeechannouncementpriority.md)
 - [static let accessibilitySpeechSpellOut: NSAttributedString.Key](../Foundation/nsattributedstring/key/accessibilityspeechspellout.md)
+- [UIAccessibilitySpeechAttributePunctuation](./uiaccessibilityspeechattributepunctuation.md)
+  A key that indicates whether to speak punctuation.
+- [UIAccessibilitySpeechAttributeLanguage](./uiaccessibilityspeechattributelanguage.md)
+  A key that indicates the language to use when speaking a string.
+- [UIAccessibilitySpeechAttributePitch](./uiaccessibilityspeechattributepitch.md)
+  A key that indicates the pitch to apply to spoken content.
+- [UIAccessibilitySpeechAttributeQueueAnnouncement](./uiaccessibilityspeechattributequeueannouncement.md)
+  A key that indicates whether to queue an announcement behind existing speech or to interrupt it.
+- [UIAccessibilitySpeechAttributeIPANotation](./uiaccessibilityspeechattributeipanotation.md)
+  A key that indicates the pronunciation of a specific word or phrase, such as a proper name.
+- [UIAccessibilitySpeechAttributeAnnouncementPriority](./uiaccessibilityspeechattributeannouncementpriority.md)
+- [UIAccessibilitySpeechAttributeSpellOut](./uiaccessibilityspeechattributespellout.md)
 
 
 ---

@@ -60,6 +60,8 @@ The [`NSFileProviderManager`](../../nsfileprovidermanager.md) throws this error 
   An error indicating that the File Provider extension can’t evict a directory because it contains nonevictable items.
 - [NSFileProviderError.Code.cannotSynchronize](./cannotsynchronize.md)
   An error indicating a failed sync attempt.
+- [NSFileProviderErrorDeletionRejected](./deletionrejected.md)
+  An error indicating a failed deletion action.
 
 
 ---

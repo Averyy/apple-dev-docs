@@ -24,6 +24,10 @@ var EKUI_IS_IOS: Int32 { get }
 
 ### Constants
 - [var EKUI_IS_SIMULATOR: Int32](./ekui_is_simulator.md)
+- [EKUI_EXTENSION_AVAILABLE_IOS](./ekui_extension_available_ios.md)
+- [EKUI_HAS_HEADER](./ekui_has_header.md)
+- [EVENTKITUI_CLASS_AVAILABLE](./eventkitui_class_available.md)
+- [EVENTKITUI_EXTERN](./eventkitui_extern.md)
 
 
 ---

@@ -32,6 +32,8 @@ enum NSPersistentCloudKitContainerSchemaInitializationOptions : NSUInteger;
   A flag that indicates the container validates the model and generates the records, but doesn’t upload them to CloudKit.
 - [static var printSchema: NSPersistentCloudKitContainerSchemaInitializationOptions](./nspersistentcloudkitcontainerschemainitializationoptions/printschema.md)
   Prints the generated records to the console.
+- [NSPersistentCloudKitContainerSchemaInitializationOptionsNone](./nspersistentcloudkitcontainerschemainitializationoptions/nspersistentcloudkitcontainerschemainitializationoptionsnone.md)
+  Indicates there are no specified schema options.
 ### Initializers
 - [init(rawValue: UInt)](./nspersistentcloudkitcontainerschemainitializationoptions/init%28rawvalue%29.md)
   Creates the schema initialization options using the specified raw value.

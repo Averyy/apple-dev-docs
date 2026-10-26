@@ -53,6 +53,8 @@ Note that the same functionality is provided by AudioObjectPropertyListenerProc.
 - [typealias AudioObjectPropertyListenerProc](./audioobjectpropertylistenerproc.md)
 - [typealias AudioObjectPropertyScope](./audioobjectpropertyscope.md)
 - [typealias AudioObjectPropertySelector](./audioobjectpropertyselector.md)
+- [AudioDriverPlugInDevicePropertyChangedProc](./audiodriverplugindevicepropertychangedproc.md)
+- [AudioDriverPlugInStreamPropertyChangedProc](./audiodriverpluginstreampropertychangedproc.md)
 
 
 ---

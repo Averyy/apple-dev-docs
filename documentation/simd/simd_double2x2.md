@@ -52,6 +52,8 @@ typedef struct { ... } simd_double2x2;
   Returns a new matrix with the specified rows.
 - [func matrix_from_rows(SIMD2<Double>, SIMD2<Double>) -> simd_double2x2](./matrix_from_rows%28_,_%29-1w56v.md)
   Returns a new matrix with the specified vector on the main diagonal.
+- [simd_diagonal_matrix](./simd_diagonal_matrix-2rc7a.md)
+  Returns a new matrix with the specified vector on the main diagonal.
 ### Element Access
 - [subscript(Int) -> SIMD2<Double>](./simd_double2x2/subscript%28_%29.md)
   Accesses the column at the specified position.
@@ -94,6 +96,55 @@ typedef struct { ... } simd_double2x2;
 - [static func - (simd_double2x2) -> simd_double2x2](./simd_double2x2/minus%28_%29.md)
 - [static func - (simd_double2x2, simd_double2x2) -> simd_double2x2](./simd_double2x2/minus%28_,_%29.md)
 - [static func -= (inout simd_double2x2, simd_double2x2)](./simd_double2x2/minuseq%28_,_%29.md)
+### Math Functions
+- [simd_add](./simd_add-64sxk.md)
+  Returns the sum of two matrices.
+- [simd_sub](./simd_sub-3z533.md)
+  Returns the difference of two matrices.
+- [matrix_scale](./matrix_scale-1fioe.md)
+  Returns the product of a scalar value and a matrix.
+### Matrix-Scalar Multiplication Functions
+- [simd_mul](./simd_mul-7g1qo.md)
+  Returns the product of a scalar value and a 2 x 2 matrix.
+### Matrix-Vector Multiplication Functions
+- [simd_mul](./simd_mul-6zaz0.md)
+  Returns the product of a two-element vector and a 2 x 2 matrix.
+- [matrix_multiply](./matrix_multiply-21157.md)
+  Returns the product of a two-element vector and a 2 x 2 matrix.
+- [simd_mul](./simd_mul-4rv7d.md)
+  Returns the product of a 2 x 2 matrix and a two-element vector.
+- [matrix_multiply](./matrix_multiply-716q6.md)
+  Returns the product of a 2 x 2 matrix and a two-element vector.
+### Matrix-Matrix Multiplication Functions
+- [simd_mul](./simd_mul-6rjv0.md)
+  Returns the product of a 2 x 2 matrix and a 2 x 2 matrix.
+- [matrix_multiply](./matrix_multiply-6qr69.md)
+  Returns the product of a 2 x 2 matrix and a 2 x 2 matrix.
+- [simd_mul](./simd_mul-nya8.md)
+  Returns the product of a 3 x 2 matrix and a 2 x 3 matrix.
+- [matrix_multiply](./matrix_multiply-57hdt.md)
+  Returns the product of a 3 x 2 matrix and a 2 x 3 matrix.
+- [simd_mul](./simd_mul-85noy.md)
+  Returns the product of a 4 x 2 matrix and a 2 x 4 matrix.
+- [matrix_multiply](./matrix_multiply-4k37n.md)
+  Returns the product of a 4 x 2 matrix and a 2 x 4 matrix.
+### Equality Functions
+- [simd_equal](./simd_equal-deo2.md)
+  Returns true if every element in a matrix is exactly equal to the corresponding element in a second matrix.
+- [simd_almost_equal_elements](./simd_almost_equal_elements-9536l.md)
+  Returns true if every element in a matrix is within a specified tolerance to the corresponding element in a second matrix.
+- [simd_almost_equal_elements_relative](./simd_almost_equal_elements_relative-1lba2.md)
+  Returns true if every element in a matrix is within a specified double-precision relative tolerance to the corresponding element in a second matrix.
+### Determinant and Inverse Functions
+- [simd_determinant](./simd_determinant-7mt9z.md)
+  Returns the determinant of the specified matrix.
+- [simd_inverse](./simd_inverse-9d12d.md)
+  Returns the inverse of the specified matrix.
+### Linear Combination Function
+- [simd_linear_combination](./simd_linear_combination-1ycz5.md)
+  Returns the linear combination of two scalar values and two matrices.
+### Transpose Function
+- [simd_transpose](./simd_transpose-848b9.md)
 
 ## Relationships
 

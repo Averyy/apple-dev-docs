@@ -30,6 +30,8 @@ class MPSPredicate
 ### Instance Properties
 - [var predicateBuffer: any MTLBuffer](./mpspredicate/predicatebuffer.md)
 - [var predicateOffset: Int](./mpspredicate/predicateoffset.md)
+### Type Methods
+- [+ predicateWithBuffer:offset:](./mpspredicate/predicatewithbuffer_offset_.md)
 
 ## Relationships
 

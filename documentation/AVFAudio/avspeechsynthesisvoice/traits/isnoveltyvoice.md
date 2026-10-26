@@ -34,6 +34,8 @@ An example of a novelty voice is a character’s voice in a game.
 ### Inspecting a voice trait
 - [static var isPersonalVoice: AVSpeechSynthesisVoice.Traits](./ispersonalvoice.md)
   The trait that indicates a voice is a personal voice.
+- [AVSpeechSynthesisVoiceTraitNone](../../avspeechsynthesisvoicetraits/avspeechsynthesisvoicetraitnone.md)
+  The trait that indicates a voice is a regular voice.
 
 
 ---

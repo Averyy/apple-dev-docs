@@ -1,0 +1,20 @@
+# kIODynamicRangeTraditionalGammaSDR
+
+**Framework**: IOKit  
+**Kind**: econst  
+**Role**: Enumeration Case
+
+**Availability**:
+- Mac Catalyst 14.0+
+- macOS 11.0+
+
+## Declaration
+
+```c
+kIODynamicRangeTraditionalGammaSDR = 0x0020
+```
+
+
+---
+
+*[View on Apple Developer](https://developer.apple.com/documentation/iokit/2937899-anonymous/kiodynamicrangetraditionalgammasdr)*

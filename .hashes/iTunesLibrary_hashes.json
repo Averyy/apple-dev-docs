@@ -10,6 +10,26 @@
       "file_path": "documentation/iTunesLibrary/didchangelibrarymessage.md",
       "hash": "362a29f18bca2ef1f78fcd0a138b12ad8778f39d558a7d765f7d78bb34905559"
     },
+    "https://developer.apple.com/documentation/ituneslibrary/itlib_available": {
+      "etag": "\"a37-65d560a181b10-df\"",
+      "file_path": "documentation/iTunesLibrary/itlib_available.md",
+      "hash": "67a8c02b14f8bc084a0bcb18c34d8338f3971eb5d200f70a7c692ac4252a0a91"
+    },
+    "https://developer.apple.com/documentation/ituneslibrary/itlib_export": {
+      "etag": "\"9b3-65d560a181b10-df\"",
+      "file_path": "documentation/iTunesLibrary/itlib_export.md",
+      "hash": "feb4f4b2fff92caa74cf454b298276f61a294873d5cfe96a0c64583ca29ed79d"
+    },
+    "https://developer.apple.com/documentation/ituneslibrary/itlib_extern": {
+      "etag": "\"9b3-65d560a14c71b-df\"",
+      "file_path": "documentation/iTunesLibrary/itlib_extern.md",
+      "hash": "40027dc086f3210c2315b5a3763223b0c0650f5694faa63f2da9072662a33eb9"
+    },
+    "https://developer.apple.com/documentation/ituneslibrary/itlib_init_unavailable": {
+      "etag": "\"a2b-65d560a14c71b-df\"",
+      "file_path": "documentation/iTunesLibrary/itlib_init_unavailable.md",
+      "hash": "ef0893734930e855b27107f63bf04c900a85a01f8c929932750a1a3900b386b0"
+    },
     "https://developer.apple.com/documentation/ituneslibrary/itlibalbum": {
       "etag": "\"7e11-65d560a10d953-df\"",
       "file_path": "documentation/iTunesLibrary/itlibalbum.md",
@@ -1385,6 +1405,16 @@
       "file_path": "documentation/iTunesLibrary/itlibrary/init(apiversion,options)-d24u.md",
       "hash": "7066a615bf1bf17f334e214ee09b9ce291a5592f46736deb23bbcaafe6c6056c"
     },
+    "https://developer.apple.com/documentation/ituneslibrary/itlibrary/librarywithapiversion:error:": {
+      "etag": "\"36f8-65d560a181b10-df\"",
+      "file_path": "documentation/iTunesLibrary/itlibrary/librarywithapiversion_error_.md",
+      "hash": "d48ce5e642e64c2155457f770c3cdf3fd20075c60b6be1d13d29686acec9b9ef"
+    },
+    "https://developer.apple.com/documentation/ituneslibrary/itlibrary/librarywithapiversion:options:error:": {
+      "etag": "\"3c2b-65d560a181b10-df\"",
+      "file_path": "documentation/iTunesLibrary/itlibrary/librarywithapiversion_options_error_.md",
+      "hash": "77cb039039cc84b1d9040f501abe2d113a2186097a1dd79bbc17228031f47a8f"
+    },
     "https://developer.apple.com/documentation/ituneslibrary/itlibrary/mediafolderlocation": {
       "etag": "\"3c37-65d560a181b10-df\"",
       "file_path": "documentation/iTunesLibrary/itlibrary/mediafolderlocation.md",
@@ -1410,6 +1440,11 @@
       "file_path": "documentation/iTunesLibrary/itlibrary/unloaddata().md",
       "hash": "47d842bd32ced07bbd4485b9dd3a1aec05a9bc8bfa013e1226413429e78b7c6c"
     },
+    "https://developer.apple.com/documentation/ituneslibrary/itlibrarydidchangenotification": {
+      "etag": "\"18a8-65d560a1689da-df\"",
+      "file_path": "documentation/iTunesLibrary/itlibrarydidchangenotification.md",
+      "hash": "49ff4b52dd20e3acd8bdceaa440ca0162328daa7f797f179095db924634f9f91"
+    },
     "https://developer.apple.com/tutorials/data/documentation/iTunesLibrary.json": {
       "etag": "\"4798-65d560a181b10-df\"",
       "file_path": "documentation/iTunesLibrary/iTunesLibrary.md",
@@ -1419,6 +1454,26 @@
       "etag": "\"118d-65d560a1689da-df\"",
       "file_path": "documentation/iTunesLibrary/didchangelibrarymessage.md",
       "hash": "362a29f18bca2ef1f78fcd0a138b12ad8778f39d558a7d765f7d78bb34905559"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/ituneslibrary/itlib_available.json": {
+      "etag": "\"a37-65d560a181b10-df\"",
+      "file_path": "documentation/iTunesLibrary/itlib_available.md",
+      "hash": "67a8c02b14f8bc084a0bcb18c34d8338f3971eb5d200f70a7c692ac4252a0a91"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/ituneslibrary/itlib_export.json": {
+      "etag": "\"9b3-65d560a181b10-df\"",
+      "file_path": "documentation/iTunesLibrary/itlib_export.md",
+      "hash": "feb4f4b2fff92caa74cf454b298276f61a294873d5cfe96a0c64583ca29ed79d"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/ituneslibrary/itlib_extern.json": {
+      "etag": "\"9b3-65d560a14c71b-df\"",
+      "file_path": "documentation/iTunesLibrary/itlib_extern.md",
+      "hash": "40027dc086f3210c2315b5a3763223b0c0650f5694faa63f2da9072662a33eb9"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/ituneslibrary/itlib_init_unavailable.json": {
+      "etag": "\"a2b-65d560a14c71b-df\"",
+      "file_path": "documentation/iTunesLibrary/itlib_init_unavailable.md",
+      "hash": "ef0893734930e855b27107f63bf04c900a85a01f8c929932750a1a3900b386b0"
     },
     "https://developer.apple.com/tutorials/data/documentation/ituneslibrary/itlibalbum.json": {
       "etag": "\"7e11-65d560a10d953-df\"",
@@ -2799,6 +2854,16 @@
       "file_path": "documentation/iTunesLibrary/itlibrary/init(apiversion,options)-d24u.md",
       "hash": "7066a615bf1bf17f334e214ee09b9ce291a5592f46736deb23bbcaafe6c6056c"
     },
+    "https://developer.apple.com/tutorials/data/documentation/ituneslibrary/itlibrary/librarywithapiversion:error:.json": {
+      "etag": "\"36f8-65d560a181b10-df\"",
+      "file_path": "documentation/iTunesLibrary/itlibrary/librarywithapiversion_error_.md",
+      "hash": "d48ce5e642e64c2155457f770c3cdf3fd20075c60b6be1d13d29686acec9b9ef"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/ituneslibrary/itlibrary/librarywithapiversion:options:error:.json": {
+      "etag": "\"3c2b-65d560a181b10-df\"",
+      "file_path": "documentation/iTunesLibrary/itlibrary/librarywithapiversion_options_error_.md",
+      "hash": "77cb039039cc84b1d9040f501abe2d113a2186097a1dd79bbc17228031f47a8f"
+    },
     "https://developer.apple.com/tutorials/data/documentation/ituneslibrary/itlibrary/mediafolderlocation.json": {
       "etag": "\"3c37-65d560a181b10-df\"",
       "file_path": "documentation/iTunesLibrary/itlibrary/mediafolderlocation.md",
@@ -2823,12 +2888,17 @@
       "etag": "\"1d6b-65d560a181b10-df\"",
       "file_path": "documentation/iTunesLibrary/itlibrary/unloaddata().md",
       "hash": "47d842bd32ced07bbd4485b9dd3a1aec05a9bc8bfa013e1226413429e78b7c6c"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/ituneslibrary/itlibrarydidchangenotification.json": {
+      "etag": "\"18a8-65d560a1689da-df\"",
+      "file_path": "documentation/iTunesLibrary/itlibrarydidchangenotification.md",
+      "hash": "49ff4b52dd20e3acd8bdceaa440ca0162328daa7f797f179095db924634f9f91"
     }
   },
   "metadata": {
     "render": {
-      "version": 1
+      "version": 2
     },
-    "total_pages": 565
+    "total_pages": 579
   }
 }

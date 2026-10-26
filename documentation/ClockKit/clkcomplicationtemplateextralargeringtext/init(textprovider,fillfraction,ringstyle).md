@@ -25,6 +25,12 @@ init(textProvider: CLKTextProvider, fillFraction: Float, ringStyle: CLKComplicat
 - `fillFraction`: A value between `0.0` and `1.0` that indicates how much of the ring fills.
 - `ringStyle`: The ring’s style. For a complete list of styles, see [`CLKComplicationRingStyle`](../clkcomplicationringstyle.md).
 
+## See Also
+
+### Creating the Template
+- [+ templateWithTextProvider:fillFraction:ringStyle:](./templatewithtextprovider_fillfraction_ringstyle_.md)
+  Returns a new template from the provided text, fill fraction, and ring style.
+
 
 ---
 

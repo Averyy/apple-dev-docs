@@ -29,6 +29,8 @@ enum MLCRandomInitializerType : int32_t;
 - [MLCRandomInitializerType.uniform](./mlcrandominitializertype/uniform.md)
 - [MLCRandomInitializerType.glorotUniform](./mlcrandominitializertype/glorotuniform.md)
 - [MLCRandomInitializerType.xavier](./mlcrandominitializertype/xavier.md)
+- [MLCRandomInitializerTypeInvalid](./mlcrandominitializertype/mlcrandominitializertypeinvalid.md)
+- [MLCRandomInitializerTypeCount](./mlcrandominitializertype/mlcrandominitializertypecount.md)
 ### Initializers
 - [init?(rawValue: Int32)](./mlcrandominitializertype/init%28rawvalue%29.md)
 

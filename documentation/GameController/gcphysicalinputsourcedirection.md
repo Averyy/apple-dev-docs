@@ -35,6 +35,8 @@ enum GCPhysicalInputSourceDirection : NSUInteger;
   The physical input source supports the down direction.
 - [static var left: GCPhysicalInputSourceDirection](./gcphysicalinputsourcedirection/left.md)
   The physical input source supports the left direction.
+- [GCPhysicalInputSourceDirectionNotApplicable](./gcphysicalinputsourcedirection/gcphysicalinputsourcedirectionnotapplicable.md)
+  The physical input source doesn’t support directions.
 ### Creating the supported directions
 - [init(rawValue: UInt)](./gcphysicalinputsourcedirection/init%28rawvalue%29.md)
   Creates a new instance with the specified raw value.

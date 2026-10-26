@@ -24,6 +24,14 @@ class Boolean
 ### Creating a boolean parameter object
 - [convenience init(name: String, key: String, description: String, initialValue: Bool, neutralValue: Bool?, cameraValue: Bool?)](./boolean/init%28name,key,description,initialvalue,neutralvalue,cameravalue%29.md)
   Creates a Boolean parameter object.
+- [- initWithName:key:description:initialValue:](../merawprocessingbooleanparameter/initwithname_key_description_initialvalue_.md)
+  Creates a Boolean parameter object with the initial value.
+- [- initWithName:key:description:initialValue:cameraValue:](../merawprocessingbooleanparameter/initwithname_key_description_initialvalue_cameravalue_.md)
+  Creates a Boolean parameter object with the initial and camera values.
+- [- initWithName:key:description:initialValue:neutralValue:](../merawprocessingbooleanparameter/initwithname_key_description_initialvalue_neutralvalue_.md)
+  Creates a Boolean parameter object with the initial and neutral values.
+- [- initWithName:key:description:initialValue:neutralValue:cameraValue:](../merawprocessingbooleanparameter/initwithname_key_description_initialvalue_neutralvalue_cameravalue_.md)
+  Creates a Boolean parameter object with the initial, neutral, and camera values.
 ### Properties
 - [var currentValue: Bool](./boolean/currentvalue.md)
   Get or set the current value for this parameter.
@@ -32,6 +40,11 @@ class Boolean
 ### Instance Properties
 - [var cameraValue: Bool?](./boolean/cameravalue.md)
 - [var neutralValue: Bool?](./boolean/neutralvalue.md)
+### Inspecting a parameter
+- [- hasCameraValue:](../merawprocessingbooleanparameter/hascameravalue_.md)
+  The optional camera value for this parameter.
+- [- hasNeutralValue:](../merawprocessingbooleanparameter/hasneutralvalue_.md)
+  The optional neutral value for this parameter.
 
 ## Relationships
 

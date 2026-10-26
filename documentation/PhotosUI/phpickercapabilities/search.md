@@ -34,6 +34,8 @@ PHPickerCapabilitiesSearch
   A capability that prompts for confirmation if a person selects a photo that contains nudity.
 - [static var stagingArea: PHPickerCapabilities](./stagingarea.md)
   A capability that corresponds to an area in which the selected photos display.
+- [PHPickerCapabilitiesNone](./phpickercapabilitiesnone.md)
+  An option that represents no capabilities.
 
 
 ---

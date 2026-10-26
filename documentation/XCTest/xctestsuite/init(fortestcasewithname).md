@@ -31,6 +31,8 @@ convenience init(forTestCaseWithName name: String)
   Creates a test suite with the bundle at the specified path.
 - [convenience init(forTestCaseClass: AnyClass)](./init%28fortestcaseclass%29.md)
   Creates a test suite that contains all test methods in the specified class.
+- [+ testSuiteWithName:](./testsuitewithname_.md)
+  Creates a test suite with the specified name.
 
 
 ---

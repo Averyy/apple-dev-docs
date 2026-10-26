@@ -965,6 +965,11 @@
       "file_path": "documentation/StoreKit/loading-in-app-product-identifiers.md",
       "hash": "ca9faa99d322be9d2d71b1d9bec6667db975e46ae949fa837eb8254c15f7fd10"
     },
+    "https://developer.apple.com/documentation/storekit/macros": {
+      "etag": "\"1737-65b8a675088d2-df\"",
+      "file_path": "documentation/StoreKit/macros.md",
+      "hash": "e3714ae3dce62239da6e6a2a0db63eabb816ee0902939944bf8abdb31f9b7d3a"
+    },
     "https://developer.apple.com/documentation/storekit/managing-lifecycle-of-monthly-subscriptions-with-a-12-month-commitment-": {
       "etag": "\"af1d-65b8a674548eb-df\"",
       "file_path": "documentation/StoreKit/managing-lifecycle-of-monthly-subscriptions-with-a-12-month-commitment.md",
@@ -2830,6 +2835,36 @@
       "file_path": "documentation/StoreKit/signing-and-providing-ads.md",
       "hash": "3704b6200658d21bb157fa0f64ba0ff6b564d9a0e1a53f813ccf497d88f3d1a8"
     },
+    "https://developer.apple.com/documentation/storekit/sk_class_final": {
+      "etag": "\"15b8-65b8a67374008-df\"",
+      "file_path": "documentation/StoreKit/sk_class_final.md",
+      "hash": "d93491de8d9c5891d6657125c1cb20289dba15754518c12f802f17ff73f3b92e"
+    },
+    "https://developer.apple.com/documentation/storekit/sk_extern": {
+      "etag": "\"159a-65b8a675b0270-df\"",
+      "file_path": "documentation/StoreKit/sk_extern.md",
+      "hash": "ef121749757b8226963ddcc812fa419fe98df1e39a05987ff7a85d1b4ef93365"
+    },
+    "https://developer.apple.com/documentation/storekit/sk_extern_class": {
+      "etag": "\"15be-65b8a675088d2-df\"",
+      "file_path": "documentation/StoreKit/sk_extern_class.md",
+      "hash": "039609aaf530720f02e9d1524fd1873fd304c12bd84b95cf25a561709d380d4b"
+    },
+    "https://developer.apple.com/documentation/storekit/sk_extern_class_available": {
+      "etag": "\"169a-65b8a673e1d74-df\"",
+      "file_path": "documentation/StoreKit/sk_extern_class_available.md",
+      "hash": "a292953a95d38fa275ad3de0fa0e17d0ae29433aa7f6d5c107c8f307b8eaa9a3"
+    },
+    "https://developer.apple.com/documentation/storekit/sk_extern_class_available_ios": {
+      "etag": "\"1672-65b8a673289e1-df\"",
+      "file_path": "documentation/StoreKit/sk_extern_class_available_ios.md",
+      "hash": "bf448cdfdbe16db7e54f9585d4524705028a1b38ae081096f3088bb199cad6a0"
+    },
+    "https://developer.apple.com/documentation/storekit/sk_extern_class_available_mac": {
+      "etag": "\"1672-65b8a6738fa76-df\"",
+      "file_path": "documentation/StoreKit/sk_extern_class_available_mac.md",
+      "hash": "a8a130213547b943fb85aec07fca60b510aa365b2b2b60f137f77a5a13971d9d"
+    },
     "https://developer.apple.com/documentation/storekit/skadimpression": {
       "etag": "\"9ba0-65d55d2020f7b-df\"",
       "file_path": "documentation/StoreKit/skadimpression.md",
@@ -3195,6 +3230,11 @@
       "file_path": "documentation/StoreKit/skcloudserviceauthorizationstatus/restricted.md",
       "hash": "a28f264cbc36eb843eb40a1e2dcfa75004599c9fe356c3a4be5150e3fa469ab6"
     },
+    "https://developer.apple.com/documentation/storekit/skcloudservicecapabilitiesdidchangenotification": {
+      "etag": "\"19b4-65d55d1fedddb-df\"",
+      "file_path": "documentation/StoreKit/skcloudservicecapabilitiesdidchangenotification.md",
+      "hash": "b6618090901483bc106995a5744714b9676a333425c8c16bda9c30ca78682544"
+    },
     "https://developer.apple.com/documentation/storekit/skcloudservicecapability": {
       "etag": "\"7613-65d55d1e3c394-df\"",
       "file_path": "documentation/StoreKit/skcloudservicecapability.md",
@@ -3219,6 +3259,11 @@
       "etag": "\"34c1-65d55d1e532c5-df\"",
       "file_path": "documentation/StoreKit/skcloudservicecapability/musiccatalogsubscriptioneligible.md",
       "hash": "c92b7beb0616afa8f169b27c4410587621918d5c878c296914a1c18a2f237ee1"
+    },
+    "https://developer.apple.com/documentation/storekit/skcloudservicecapability/skcloudservicecapabilitynone": {
+      "etag": "\"121d-65d55d1e532c5-df\"",
+      "file_path": "documentation/StoreKit/skcloudservicecapability/skcloudservicecapabilitynone.md",
+      "hash": "69a0f9c6fdc872921d3bb0681aa54782880c048514a023b999b3ba96d0bdd7fd"
     },
     "https://developer.apple.com/documentation/storekit/skcloudservicecontroller": {
       "etag": "\"a33a-65d55d1e3c394-df\"",
@@ -3434,6 +3479,11 @@
       "etag": "\"386e-65d55d2083901-df\"",
       "file_path": "documentation/StoreKit/skdownload/transaction.md",
       "hash": "591cbef2b56ea934d3ffc90d6435532afe9f536ce39103aee345f8f55e992c66"
+    },
+    "https://developer.apple.com/documentation/storekit/skdownloaderextension": {
+      "etag": "\"13fc-65d55d2006c91-df\"",
+      "file_path": "documentation/StoreKit/skdownloaderextension.md",
+      "hash": "8f65872ee12082b75752d279fd3a5abfa81f1bdc5104e7922b6f7443395444e1"
     },
     "https://developer.apple.com/documentation/storekit/skdownloadstate": {
       "etag": "\"5dcf-65d55d1fcefed-df\"",
@@ -3725,6 +3775,11 @@
       "file_path": "documentation/StoreKit/skerrordomain.md",
       "hash": "9768ac94d5291d2250a0b0aced0f21548bfa73855ca45196293f3628b6e28132"
     },
+    "https://developer.apple.com/documentation/storekit/sklocalizedstring": {
+      "etag": "\"1624-65b8a67543865-df\"",
+      "file_path": "documentation/StoreKit/sklocalizedstring.md",
+      "hash": "96d68e925763bb7e8f3306181b6d6c1cc05a43f2a38f112ca577b4a249647424"
+    },
     "https://developer.apple.com/documentation/storekit/skmutablepayment": {
       "etag": "\"6de2-65d55d1f9ccac-df\"",
       "file_path": "documentation/StoreKit/skmutablepayment.md",
@@ -3999,6 +4054,11 @@
       "etag": "\"2abc-65d55d1fedddb-df\"",
       "file_path": "documentation/StoreKit/skpayment/paymentdiscount.md",
       "hash": "0af0577259418144bf5fd1d00b264d276740c9e55afcff6587619c7678f927d7"
+    },
+    "https://developer.apple.com/documentation/storekit/skpayment/paymentwithproductidentifier:": {
+      "etag": "\"2aa2-65d55d1fedddb-df\"",
+      "file_path": "documentation/StoreKit/skpayment/paymentwithproductidentifier_.md",
+      "hash": "bc96fe2cb5c164cdaad1ca442247f128339cafb81b55fd939c0fd14476724ede"
     },
     "https://developer.apple.com/documentation/storekit/skpayment/productidentifier": {
       "etag": "\"3685-65d55d1fedddb-df\"",
@@ -4680,6 +4740,16 @@
       "file_path": "documentation/StoreKit/skstorefront/identifier.md",
       "hash": "ed683235acf5fe5c79b42800f6b6ebaaf1eb78afc61735499572345e60ab7fef"
     },
+    "https://developer.apple.com/documentation/storekit/skstorefrontcountrycodedidchangenotification": {
+      "etag": "\"19a5-65d55d1fedddb-df\"",
+      "file_path": "documentation/StoreKit/skstorefrontcountrycodedidchangenotification.md",
+      "hash": "6417841ffd37f337bb4b7bbf344d85ff4fd8a9113c07d83d6afefad73ec5f184"
+    },
+    "https://developer.apple.com/documentation/storekit/skstorefrontidentifierdidchangenotification": {
+      "etag": "\"1990-65d55d1e9b6a9-df\"",
+      "file_path": "documentation/StoreKit/skstorefrontidentifierdidchangenotification.md",
+      "hash": "412aea6a9dc9fe5859c6e177907e23b76ac5194e4457f3be429c33e519b59faa"
+    },
     "https://developer.apple.com/documentation/storekit/skstoreproductparameteradnetworkattributionsignature": {
       "etag": "\"3ba1-65d55d2020f7b-df\"",
       "file_path": "documentation/StoreKit/skstoreproductparameteradnetworkattributionsignature.md",
@@ -4984,6 +5054,11 @@
       "etag": "\"13c10-65b8a67543865-df\"",
       "file_path": "documentation/StoreKit/storekit-views.md",
       "hash": "0a40e69b82fab1c3e02b0c6b320450386db686356717365bbadec14880788cb7"
+    },
+    "https://developer.apple.com/documentation/storekit/storekitbundle": {
+      "etag": "\"15b8-65b8a675811ae-df\"",
+      "file_path": "documentation/StoreKit/storekitbundle.md",
+      "hash": "30c20a8e7028062bd9e8f6f8da5482001dc2dc9022c60297631cb9a123755cd6"
     },
     "https://developer.apple.com/documentation/storekit/storekiterror": {
       "etag": "\"3082-65d55d1e9b6a9-df\"",
@@ -8085,6 +8160,11 @@
       "file_path": "documentation/StoreKit/loading-in-app-product-identifiers.md",
       "hash": "ca9faa99d322be9d2d71b1d9bec6667db975e46ae949fa837eb8254c15f7fd10"
     },
+    "https://developer.apple.com/tutorials/data/documentation/storekit/macros.json": {
+      "etag": "\"1737-65b8a675088d2-df\"",
+      "file_path": "documentation/StoreKit/macros.md",
+      "hash": "e3714ae3dce62239da6e6a2a0db63eabb816ee0902939944bf8abdb31f9b7d3a"
+    },
     "https://developer.apple.com/tutorials/data/documentation/storekit/managing-lifecycle-of-monthly-subscriptions-with-a-12-month-commitment-.json": {
       "etag": "\"af1d-65b8a674548eb-df\"",
       "file_path": "documentation/StoreKit/managing-lifecycle-of-monthly-subscriptions-with-a-12-month-commitment.md",
@@ -9950,6 +10030,36 @@
       "file_path": "documentation/StoreKit/signing-and-providing-ads.md",
       "hash": "3704b6200658d21bb157fa0f64ba0ff6b564d9a0e1a53f813ccf497d88f3d1a8"
     },
+    "https://developer.apple.com/tutorials/data/documentation/storekit/sk_class_final.json": {
+      "etag": "\"15b8-65b8a67374008-df\"",
+      "file_path": "documentation/StoreKit/sk_class_final.md",
+      "hash": "d93491de8d9c5891d6657125c1cb20289dba15754518c12f802f17ff73f3b92e"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/storekit/sk_extern.json": {
+      "etag": "\"159a-65b8a675b0270-df\"",
+      "file_path": "documentation/StoreKit/sk_extern.md",
+      "hash": "ef121749757b8226963ddcc812fa419fe98df1e39a05987ff7a85d1b4ef93365"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/storekit/sk_extern_class.json": {
+      "etag": "\"15be-65b8a675088d2-df\"",
+      "file_path": "documentation/StoreKit/sk_extern_class.md",
+      "hash": "039609aaf530720f02e9d1524fd1873fd304c12bd84b95cf25a561709d380d4b"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/storekit/sk_extern_class_available.json": {
+      "etag": "\"169a-65b8a673e1d74-df\"",
+      "file_path": "documentation/StoreKit/sk_extern_class_available.md",
+      "hash": "a292953a95d38fa275ad3de0fa0e17d0ae29433aa7f6d5c107c8f307b8eaa9a3"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/storekit/sk_extern_class_available_ios.json": {
+      "etag": "\"1672-65b8a673289e1-df\"",
+      "file_path": "documentation/StoreKit/sk_extern_class_available_ios.md",
+      "hash": "bf448cdfdbe16db7e54f9585d4524705028a1b38ae081096f3088bb199cad6a0"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/storekit/sk_extern_class_available_mac.json": {
+      "etag": "\"1672-65b8a6738fa76-df\"",
+      "file_path": "documentation/StoreKit/sk_extern_class_available_mac.md",
+      "hash": "a8a130213547b943fb85aec07fca60b510aa365b2b2b60f137f77a5a13971d9d"
+    },
     "https://developer.apple.com/tutorials/data/documentation/storekit/skadimpression.json": {
       "etag": "\"9ba0-65d55d2020f7b-df\"",
       "file_path": "documentation/StoreKit/skadimpression.md",
@@ -10315,6 +10425,11 @@
       "file_path": "documentation/StoreKit/skcloudserviceauthorizationstatus/restricted.md",
       "hash": "a28f264cbc36eb843eb40a1e2dcfa75004599c9fe356c3a4be5150e3fa469ab6"
     },
+    "https://developer.apple.com/tutorials/data/documentation/storekit/skcloudservicecapabilitiesdidchangenotification.json": {
+      "etag": "\"19b4-65d55d1fedddb-df\"",
+      "file_path": "documentation/StoreKit/skcloudservicecapabilitiesdidchangenotification.md",
+      "hash": "b6618090901483bc106995a5744714b9676a333425c8c16bda9c30ca78682544"
+    },
     "https://developer.apple.com/tutorials/data/documentation/storekit/skcloudservicecapability.json": {
       "etag": "\"7613-65d55d1e3c394-df\"",
       "file_path": "documentation/StoreKit/skcloudservicecapability.md",
@@ -10339,6 +10454,11 @@
       "etag": "\"34c1-65d55d1e532c5-df\"",
       "file_path": "documentation/StoreKit/skcloudservicecapability/musiccatalogsubscriptioneligible.md",
       "hash": "c92b7beb0616afa8f169b27c4410587621918d5c878c296914a1c18a2f237ee1"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/storekit/skcloudservicecapability/skcloudservicecapabilitynone.json": {
+      "etag": "\"121d-65d55d1e532c5-df\"",
+      "file_path": "documentation/StoreKit/skcloudservicecapability/skcloudservicecapabilitynone.md",
+      "hash": "69a0f9c6fdc872921d3bb0681aa54782880c048514a023b999b3ba96d0bdd7fd"
     },
     "https://developer.apple.com/tutorials/data/documentation/storekit/skcloudservicecontroller.json": {
       "etag": "\"a33a-65d55d1e3c394-df\"",
@@ -10554,6 +10674,11 @@
       "etag": "\"386e-65d55d2083901-df\"",
       "file_path": "documentation/StoreKit/skdownload/transaction.md",
       "hash": "591cbef2b56ea934d3ffc90d6435532afe9f536ce39103aee345f8f55e992c66"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/storekit/skdownloaderextension.json": {
+      "etag": "\"13fc-65d55d2006c91-df\"",
+      "file_path": "documentation/StoreKit/skdownloaderextension.md",
+      "hash": "8f65872ee12082b75752d279fd3a5abfa81f1bdc5104e7922b6f7443395444e1"
     },
     "https://developer.apple.com/tutorials/data/documentation/storekit/skdownloadstate.json": {
       "etag": "\"5dcf-65d55d1fcefed-df\"",
@@ -10845,6 +10970,11 @@
       "file_path": "documentation/StoreKit/skerrordomain.md",
       "hash": "9768ac94d5291d2250a0b0aced0f21548bfa73855ca45196293f3628b6e28132"
     },
+    "https://developer.apple.com/tutorials/data/documentation/storekit/sklocalizedstring.json": {
+      "etag": "\"1624-65b8a67543865-df\"",
+      "file_path": "documentation/StoreKit/sklocalizedstring.md",
+      "hash": "96d68e925763bb7e8f3306181b6d6c1cc05a43f2a38f112ca577b4a249647424"
+    },
     "https://developer.apple.com/tutorials/data/documentation/storekit/skmutablepayment.json": {
       "etag": "\"6de2-65d55d1f9ccac-df\"",
       "file_path": "documentation/StoreKit/skmutablepayment.md",
@@ -11119,6 +11249,11 @@
       "etag": "\"2abc-65d55d1fedddb-df\"",
       "file_path": "documentation/StoreKit/skpayment/paymentdiscount.md",
       "hash": "0af0577259418144bf5fd1d00b264d276740c9e55afcff6587619c7678f927d7"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/storekit/skpayment/paymentwithproductidentifier:.json": {
+      "etag": "\"2aa2-65d55d1fedddb-df\"",
+      "file_path": "documentation/StoreKit/skpayment/paymentwithproductidentifier_.md",
+      "hash": "bc96fe2cb5c164cdaad1ca442247f128339cafb81b55fd939c0fd14476724ede"
     },
     "https://developer.apple.com/tutorials/data/documentation/storekit/skpayment/productidentifier.json": {
       "etag": "\"3685-65d55d1fedddb-df\"",
@@ -11800,6 +11935,16 @@
       "file_path": "documentation/StoreKit/skstorefront/identifier.md",
       "hash": "ed683235acf5fe5c79b42800f6b6ebaaf1eb78afc61735499572345e60ab7fef"
     },
+    "https://developer.apple.com/tutorials/data/documentation/storekit/skstorefrontcountrycodedidchangenotification.json": {
+      "etag": "\"19a5-65d55d1fedddb-df\"",
+      "file_path": "documentation/StoreKit/skstorefrontcountrycodedidchangenotification.md",
+      "hash": "6417841ffd37f337bb4b7bbf344d85ff4fd8a9113c07d83d6afefad73ec5f184"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/storekit/skstorefrontidentifierdidchangenotification.json": {
+      "etag": "\"1990-65d55d1e9b6a9-df\"",
+      "file_path": "documentation/StoreKit/skstorefrontidentifierdidchangenotification.md",
+      "hash": "412aea6a9dc9fe5859c6e177907e23b76ac5194e4457f3be429c33e519b59faa"
+    },
     "https://developer.apple.com/tutorials/data/documentation/storekit/skstoreproductparameteradnetworkattributionsignature.json": {
       "etag": "\"3ba1-65d55d2020f7b-df\"",
       "file_path": "documentation/StoreKit/skstoreproductparameteradnetworkattributionsignature.md",
@@ -12104,6 +12249,11 @@
       "etag": "\"13c10-65b8a67543865-df\"",
       "file_path": "documentation/StoreKit/storekit-views.md",
       "hash": "0a40e69b82fab1c3e02b0c6b320450386db686356717365bbadec14880788cb7"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/storekit/storekitbundle.json": {
+      "etag": "\"15b8-65b8a675811ae-df\"",
+      "file_path": "documentation/StoreKit/storekitbundle.md",
+      "hash": "30c20a8e7028062bd9e8f6f8da5482001dc2dc9022c60297631cb9a123755cd6"
     },
     "https://developer.apple.com/tutorials/data/documentation/storekit/storekiterror.json": {
       "etag": "\"3082-65d55d1e9b6a9-df\"",
@@ -14243,8 +14393,8 @@
   },
   "metadata": {
     "render": {
-      "version": 1
+      "version": 2
     },
-    "total_pages": 2848
+    "total_pages": 2878
   }
 }

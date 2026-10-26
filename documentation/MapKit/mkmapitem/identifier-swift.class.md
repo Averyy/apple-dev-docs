@@ -30,6 +30,10 @@ class Identifier
 ### Initializers
 - [init?(coder: NSCoder)](./identifier-swift.class/init%28coder%29.md)
 - [init?(identifierString: String)](./identifier-swift.class/init%28identifierstring%29.md)
+### Instance Properties
+- [identifierString](../mkmapitemidentifier/identifierstring.md)
+### Instance Methods
+- [- initWithIdentifierString:](../mkmapitemidentifier/initwithidentifierstring_.md)
 
 ## Relationships
 

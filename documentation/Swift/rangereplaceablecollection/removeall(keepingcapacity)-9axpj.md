@@ -1,0 +1,37 @@
+# removeAll(keepingCapacity:)
+
+**Framework**: Swift  
+**Kind**: method  
+**Role**: Instance Method
+
+Removes all elements from the collection.
+
+**Availability**:
+- iOS 8.0+
+- iPadOS 8.0+
+- Mac Catalyst 13.0+
+- macOS 10.10+
+- tvOS 9.0+
+- visionOS 1.0+
+- watchOS 2.0+
+
+## Declaration
+
+```swift
+mutating func removeAll(keepingCapacity keepCapacity: Bool = false)
+```
+
+#### Discussion
+
+Calling this method may invalidate any existing indices for use with this collection.
+
+> **Complexity**: O(*n*), where *n* is the length of the collection.
+
+## Parameters
+
+- `keepCapacity`: Pass `true` to request that the collection avoid releasing its storage. Retaining the collection’s storage can be a useful optimization when you’re planning to grow the collection again. The default value is `false`.
+
+
+---
+
+*[View on Apple Developer](https://developer.apple.com/documentation/swift/rangereplaceablecollection/removeall(keepingcapacity:)-9axpj)*

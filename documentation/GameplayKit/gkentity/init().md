@@ -34,6 +34,12 @@ If you create a [`GKEntity`](../gkentity.md) subclass and define any additional 
 
 For more information, see [GameplayKit Programming Guide](https://developer.apple.com/library/archive/documentation/General/Conceptual/GameplayKit_Guide/index.html#//apple_ref/doc/uid/TP40015172).
 
+## See Also
+
+### Creating an Entity
+- [+ entity](./entity.md)
+  Creates a new entity object.
+
 
 ---
 

@@ -54,6 +54,7 @@ struct CGAffineTransformComponents;
   A structure that contains width and height values.
 - [struct CGVector](./cgvector.md)
   A structure that contains a two-dimensional vector.
+- [IUnknownVTbl](./iunknownvtbl.md)
 
 
 ---

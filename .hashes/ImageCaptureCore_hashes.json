@@ -5,6 +5,26 @@
       "file_path": "documentation/ImageCaptureCore/ImageCaptureCore.md",
       "hash": "6989785da4b90f185f4d574aa32846dd492e72cf39e658f4117c8a338cbdfd95"
     },
+    "https://developer.apple.com/documentation/imagecapturecore/ic_available": {
+      "etag": "\"2881-65d55d98ded48-df\"",
+      "file_path": "documentation/ImageCaptureCore/ic_available.md",
+      "hash": "d3f7963806f670198969f713429df6fbca60a0e4f7c7dc7d86cfc4878d08d2c5"
+    },
+    "https://developer.apple.com/documentation/imagecapturecore/ic_deprecated": {
+      "etag": "\"2887-65d55d98c03d0-df\"",
+      "file_path": "documentation/ImageCaptureCore/ic_deprecated.md",
+      "hash": "579f49a030427eab7ce9fde4bb837ac0b239a10c34c47adfa1d399988bb1b28a"
+    },
+    "https://developer.apple.com/documentation/imagecapturecore/ic_deprecated_with_replacement": {
+      "etag": "\"28ed-65d55d996a126-df\"",
+      "file_path": "documentation/ImageCaptureCore/ic_deprecated_with_replacement.md",
+      "hash": "eb397a7703f4cb0c419c3903bec11558835282e556708a2b38f7fdd4748c992d"
+    },
+    "https://developer.apple.com/documentation/imagecapturecore/ic_unavailable": {
+      "etag": "\"288d-65d55d97c2064-df\"",
+      "file_path": "documentation/ImageCaptureCore/ic_unavailable.md",
+      "hash": "05c02c0ef47d736a02f3b79419cd57144033c38f933fa69892779d9858f3aeec"
+    },
     "https://developer.apple.com/documentation/imagecapturecore/icauthorizationstatus": {
       "etag": "\"259c-65d55d984ba92-df\"",
       "file_path": "documentation/ImageCaptureCore/icauthorizationstatus.md",
@@ -1405,6 +1425,126 @@
       "file_path": "documentation/ImageCaptureCore/iclegacyreturn/cannotyielddevice.md",
       "hash": "222fccbcb55ebf6cb3ed2007cece8a14eae800d0213055cb0fb2a2e2b031ece3"
     },
+    "https://developer.apple.com/documentation/imagecapturecore/iclegacyreturn/code": {
+      "etag": "\"c661-65d55d98ded48-df\"",
+      "file_path": "documentation/ImageCaptureCore/iclegacyreturn/code.md",
+      "hash": "31d5804bb98b8d38422863a5cf5b97d874efae7cc56952f9ec631183dcca356a"
+    },
+    "https://developer.apple.com/documentation/imagecapturecore/iclegacyreturn/code/cannotyielddevice": {
+      "etag": "\"1a2f-65d55d990446f-df\"",
+      "file_path": "documentation/ImageCaptureCore/iclegacyreturn/code/cannotyielddevice.md",
+      "hash": "f45095fbb5426287b9daa638637a31b35c5bf207ed5b96cee939df001cbe1adb"
+    },
+    "https://developer.apple.com/documentation/imagecapturecore/iclegacyreturn/code/communicationerr": {
+      "etag": "\"1a1a-65d55d990446f-df\"",
+      "file_path": "documentation/ImageCaptureCore/iclegacyreturn/code/communicationerr.md",
+      "hash": "cc946708941c10fce10f388ce4342ebf149bd722eaf60e3f0162b317d3b2b66d"
+    },
+    "https://developer.apple.com/documentation/imagecapturecore/iclegacyreturn/code/datatypenotfounderr": {
+      "etag": "\"1a59-65d55d990446f-df\"",
+      "file_path": "documentation/ImageCaptureCore/iclegacyreturn/code/datatypenotfounderr.md",
+      "hash": "da833a060b99e4d65051e9ab51a67fdef239a5a2cc63c46db321ab4d29db5209"
+    },
+    "https://developer.apple.com/documentation/imagecapturecore/iclegacyreturn/code/devicealreadyopenerr": {
+      "etag": "\"1a6e-65d55d990446f-df\"",
+      "file_path": "documentation/ImageCaptureCore/iclegacyreturn/code/devicealreadyopenerr.md",
+      "hash": "53e58b8f78d59602d2477bae47f242994e1f1c014912daa67dba0a99bb466612"
+    },
+    "https://developer.apple.com/documentation/imagecapturecore/iclegacyreturn/code/deviceguidnotfounderr": {
+      "etag": "\"1a83-65d55d990446f-df\"",
+      "file_path": "documentation/ImageCaptureCore/iclegacyreturn/code/deviceguidnotfounderr.md",
+      "hash": "5430ef98dbaede9326d59f4df26565114d42e97dee77aa812cd33d96dd178c36"
+    },
+    "https://developer.apple.com/documentation/imagecapturecore/iclegacyreturn/code/deviceinternalerr": {
+      "etag": "\"1a2f-65d55d990446f-df\"",
+      "file_path": "documentation/ImageCaptureCore/iclegacyreturn/code/deviceinternalerr.md",
+      "hash": "d167fbdfc62d2a295d1136196006a92fab5fedb56a28b347a70fc5e947a5468e"
+    },
+    "https://developer.apple.com/documentation/imagecapturecore/iclegacyreturn/code/deviceinvalidparamerr": {
+      "etag": "\"1a83-65d55d990446f-df\"",
+      "file_path": "documentation/ImageCaptureCore/iclegacyreturn/code/deviceinvalidparamerr.md",
+      "hash": "810d0e7d0431896585dc135ebba44a672041d6b10c6e945fa581c70f41a1d63b"
+    },
+    "https://developer.apple.com/documentation/imagecapturecore/iclegacyreturn/code/deviceioservicepathnotfounderr": {
+      "etag": "\"1b40-65d55d990446f-df\"",
+      "file_path": "documentation/ImageCaptureCore/iclegacyreturn/code/deviceioservicepathnotfounderr.md",
+      "hash": "41263aa31949c383d5b386d251bafc8f88572884655c1c8081b2b3ae7c0c517c"
+    },
+    "https://developer.apple.com/documentation/imagecapturecore/iclegacyreturn/code/devicelocationidnotfounderr": {
+      "etag": "\"1b01-65d55d990446f-df\"",
+      "file_path": "documentation/ImageCaptureCore/iclegacyreturn/code/devicelocationidnotfounderr.md",
+      "hash": "7b271189fc54926593f1fda81a66541586e51a96000df1403763b002528f2928"
+    },
+    "https://developer.apple.com/documentation/imagecapturecore/iclegacyreturn/code/devicememoryallocationerr": {
+      "etag": "\"1ad7-65d55d990446f-df\"",
+      "file_path": "documentation/ImageCaptureCore/iclegacyreturn/code/devicememoryallocationerr.md",
+      "hash": "a55157ee899ad9be66af8561a91a4036de3074290877659f84cbb5dec24bbca6"
+    },
+    "https://developer.apple.com/documentation/imagecapturecore/iclegacyreturn/code/devicenotfounderr": {
+      "etag": "\"1a2f-65d55d990446f-df\"",
+      "file_path": "documentation/ImageCaptureCore/iclegacyreturn/code/devicenotfounderr.md",
+      "hash": "b41b6b0a6b9a74d63d4ac33df81a9a95fee49216480a6fa41b3c448e2dd99383"
+    },
+    "https://developer.apple.com/documentation/imagecapturecore/iclegacyreturn/code/devicenotopenerr": {
+      "etag": "\"1a1a-65d55d990446f-df\"",
+      "file_path": "documentation/ImageCaptureCore/iclegacyreturn/code/devicenotopenerr.md",
+      "hash": "b51ad3853ccc58ee39cceb276627cde6f7623c27e2da7ee3f95e72267f22d21a"
+    },
+    "https://developer.apple.com/documentation/imagecapturecore/iclegacyreturn/code/deviceunsupportederr": {
+      "etag": "\"1a6e-65d55d990446f-df\"",
+      "file_path": "documentation/ImageCaptureCore/iclegacyreturn/code/deviceunsupportederr.md",
+      "hash": "8a11110d247784cc78b6b9921f070b669f66bf9eaaf8e1faa0eb427c372b6b30"
+    },
+    "https://developer.apple.com/documentation/imagecapturecore/iclegacyreturn/code/extensioninternalerr": {
+      "etag": "\"1a6e-65d55d990446f-df\"",
+      "file_path": "documentation/ImageCaptureCore/iclegacyreturn/code/extensioninternalerr.md",
+      "hash": "463b155ea0cce161189a61ced11a93c88322b34b79f17a0949c7d19612efc9aa"
+    },
+    "https://developer.apple.com/documentation/imagecapturecore/iclegacyreturn/code/filecorruptederr": {
+      "etag": "\"1a1a-65d55d990446f-df\"",
+      "file_path": "documentation/ImageCaptureCore/iclegacyreturn/code/filecorruptederr.md",
+      "hash": "00d976c643a5cc34cfbe17e5961b3757f101d6bf97469f5b8122dafa9f675b4e"
+    },
+    "https://developer.apple.com/documentation/imagecapturecore/iclegacyreturn/code/frameworkinternalerr": {
+      "etag": "\"1a6e-65d55d990446f-df\"",
+      "file_path": "documentation/ImageCaptureCore/iclegacyreturn/code/frameworkinternalerr.md",
+      "hash": "643dda2b170460471db67a74161869c7701f8c4f80875cb2a35eaadad668894f"
+    },
+    "https://developer.apple.com/documentation/imagecapturecore/iclegacyreturn/code/indexoutofrangeerr": {
+      "etag": "\"1a44-65d55d990446f-df\"",
+      "file_path": "documentation/ImageCaptureCore/iclegacyreturn/code/indexoutofrangeerr.md",
+      "hash": "e7003a300f7106318356348d2f0c6b2731cdbbef59c3038f951059258d4ba868"
+    },
+    "https://developer.apple.com/documentation/imagecapturecore/iclegacyreturn/code/init(rawvalue:)": {
+      "etag": "\"157a-65d55d990446f-df\"",
+      "file_path": "documentation/ImageCaptureCore/iclegacyreturn/code/init(rawvalue).md",
+      "hash": "a45a254c0474b0bd09804d4339dda0dfc7b30bebc0adc51caa4c092a4ebce280"
+    },
+    "https://developer.apple.com/documentation/imagecapturecore/iclegacyreturn/code/invalidobjecterr": {
+      "etag": "\"1a1a-65d55d990446f-df\"",
+      "file_path": "documentation/ImageCaptureCore/iclegacyreturn/code/invalidobjecterr.md",
+      "hash": "1e20389106a063637bd70c18424593ae64741c33e69841a6b6068fc36ac881c1"
+    },
+    "https://developer.apple.com/documentation/imagecapturecore/iclegacyreturn/code/invalidpropertyerr": {
+      "etag": "\"1a44-65d55d990446f-df\"",
+      "file_path": "documentation/ImageCaptureCore/iclegacyreturn/code/invalidpropertyerr.md",
+      "hash": "11dfa422533bf22235afa987d77be9c30f119a929f03898e631b373e49549043"
+    },
+    "https://developer.apple.com/documentation/imagecapturecore/iclegacyreturn/code/invalidsessionerr": {
+      "etag": "\"1a2f-65d55d990446f-df\"",
+      "file_path": "documentation/ImageCaptureCore/iclegacyreturn/code/invalidsessionerr.md",
+      "hash": "f0302cbcd3b69758a80562f602e9334b6b7492bbf909c102de49abb197e9850f"
+    },
+    "https://developer.apple.com/documentation/imagecapturecore/iclegacyreturn/code/iopendingerr": {
+      "etag": "\"19c6-65d55d990446f-df\"",
+      "file_path": "documentation/ImageCaptureCore/iclegacyreturn/code/iopendingerr.md",
+      "hash": "efc55b1524ca3ecf323f30f99f0e6d4fce14956dccdfb8fb5f7c0ab9fa9ddfb2"
+    },
+    "https://developer.apple.com/documentation/imagecapturecore/iclegacyreturn/code/propertytypenotfounderr": {
+      "etag": "\"1aad-65d55d990446f-df\"",
+      "file_path": "documentation/ImageCaptureCore/iclegacyreturn/code/propertytypenotfounderr.md",
+      "hash": "f48dfadc34a136f4034601e2c24709e1e69487045354a0d015cf939c154cce32"
+    },
     "https://developer.apple.com/documentation/imagecapturecore/iclegacyreturn/communicationerr": {
       "etag": "\"1643-65d55d98ded48-df\"",
       "file_path": "documentation/ImageCaptureCore/iclegacyreturn/communicationerr.md",
@@ -1535,10 +1675,230 @@
       "file_path": "documentation/ImageCaptureCore/icmediapresentation/originalassets.md",
       "hash": "1a468d4102782e5b222c408c894d319130b6b867ef39ce72ae3655449dc8d791"
     },
+    "https://developer.apple.com/documentation/imagecapturecore/icpoint": {
+      "etag": "\"2803-65d55d98c03d0-df\"",
+      "file_path": "documentation/ImageCaptureCore/icpoint.md",
+      "hash": "4ab6a8a14977a75ac8e7429a9f4da16b6dd5687469fbb238ae06b9f3523df391"
+    },
+    "https://developer.apple.com/documentation/imagecapturecore/icrect": {
+      "etag": "\"27fd-65d55d98a8d16-df\"",
+      "file_path": "documentation/ImageCaptureCore/icrect.md",
+      "hash": "83c44c72428133bb1d8801a619cefa895be74ac70b68e671e2e785dabd368373"
+    },
     "https://developer.apple.com/documentation/imagecapturecore/icreturn": {
       "etag": "\"cb39-65d55d999f8c4-df\"",
       "file_path": "documentation/ImageCaptureCore/icreturn.md",
       "hash": "b55d01add5617014bbb76042a6a74c9ffdd6ff028c9e1b6965612e18019a5797"
+    },
+    "https://developer.apple.com/documentation/imagecapturecore/icreturn/code": {
+      "etag": "\"160da-65d55d986cc71-df\"",
+      "file_path": "documentation/ImageCaptureCore/icreturn/code.md",
+      "hash": "d480dc41e845c82ef19bb159966c0f049361c1b37d4445d74366d130d48693c6"
+    },
+    "https://developer.apple.com/documentation/imagecapturecore/icreturn/code/communicationtimedout": {
+      "etag": "\"6726-65d55d986cc71-df\"",
+      "file_path": "documentation/ImageCaptureCore/icreturn/code/communicationtimedout.md",
+      "hash": "8799778102d1f6bb8880e1fcd8ad1c0fb42acf161261e86b799246e7b5e727c4"
+    },
+    "https://developer.apple.com/documentation/imagecapturecore/icreturn/code/deletefilescanceled": {
+      "etag": "\"6714-65d55d986cc71-df\"",
+      "file_path": "documentation/ImageCaptureCore/icreturn/code/deletefilescanceled.md",
+      "hash": "8c57b23e55baa310fb3dc3ab00e89dfe7e2b7ccbe3a9035040dbf1f408a7c9d5"
+    },
+    "https://developer.apple.com/documentation/imagecapturecore/icreturn/code/deletefilesfailed": {
+      "etag": "\"6702-65d55d988e3d9-df\"",
+      "file_path": "documentation/ImageCaptureCore/icreturn/code/deletefilesfailed.md",
+      "hash": "793ed4e90830642b18db9f23bdadd150816f58c2db9142f09e240422bb042db9"
+    },
+    "https://developer.apple.com/documentation/imagecapturecore/icreturn/code/devicecommandgeneralfailure": {
+      "etag": "\"6768-65d55d988e3d9-df\"",
+      "file_path": "documentation/ImageCaptureCore/icreturn/code/devicecommandgeneralfailure.md",
+      "hash": "189c00d97daaa97074b8931b1b3739f17f23d533f0a9c05ecd6b1910e7677540"
+    },
+    "https://developer.apple.com/documentation/imagecapturecore/icreturn/code/devicecouldnotpair": {
+      "etag": "\"670b-65d55d986cc71-df\"",
+      "file_path": "documentation/ImageCaptureCore/icreturn/code/devicecouldnotpair.md",
+      "hash": "f4528ecdb7764d8b4c3aef89139c4596ac5c5b96292d0c4c69576a09f671acc0"
+    },
+    "https://developer.apple.com/documentation/imagecapturecore/icreturn/code/devicecouldnotunpair": {
+      "etag": "\"671d-65d55d988e3d9-df\"",
+      "file_path": "documentation/ImageCaptureCore/icreturn/code/devicecouldnotunpair.md",
+      "hash": "c96cfdd04bc25c914a6dba011f69277703af5aa31989624eb97145f2b340ddf0"
+    },
+    "https://developer.apple.com/documentation/imagecapturecore/icreturn/code/devicefailedtoclosesession": {
+      "etag": "\"6753-65d55d986cc71-df\"",
+      "file_path": "documentation/ImageCaptureCore/icreturn/code/devicefailedtoclosesession.md",
+      "hash": "b984fd182bc49d93eb495102719be7840acbf3bdc7902462421e71c0b117e72d"
+    },
+    "https://developer.apple.com/documentation/imagecapturecore/icreturn/code/devicefailedtocompletetransfer": {
+      "etag": "\"6833-65d55d988e3d9-df\"",
+      "file_path": "documentation/ImageCaptureCore/icreturn/code/devicefailedtocompletetransfer.md",
+      "hash": "9357ee4be3b30ab59fcba7a56bbda4cdf8430f717c3050a177bce9e8c60df944"
+    },
+    "https://developer.apple.com/documentation/imagecapturecore/icreturn/code/devicefailedtoopensession": {
+      "etag": "\"674a-65d55d988e3d9-df\"",
+      "file_path": "documentation/ImageCaptureCore/icreturn/code/devicefailedtoopensession.md",
+      "hash": "56cc9b07adcc57b0ccbb1431e014fe5714539247f91b0ca03c9bc4cad8f4d0f5"
+    },
+    "https://developer.apple.com/documentation/imagecapturecore/icreturn/code/devicefailedtosenddata": {
+      "etag": "\"6767-65d55d988e3d9-df\"",
+      "file_path": "documentation/ImageCaptureCore/icreturn/code/devicefailedtosenddata.md",
+      "hash": "7f9e80d9a9e266970e4f0e3fe9b223848a945545ada4af475ab53272a0cb5b40"
+    },
+    "https://developer.apple.com/documentation/imagecapturecore/icreturn/code/devicefailedtotakepicture": {
+      "etag": "\"674a-65d55d988e3d9-df\"",
+      "file_path": "documentation/ImageCaptureCore/icreturn/code/devicefailedtotakepicture.md",
+      "hash": "767e84837746ca825424d43bf7f9f7b6b5212cf4a6f29af7dc0b9622efb02e21"
+    },
+    "https://developer.apple.com/documentation/imagecapturecore/icreturn/code/deviceisbusyenumerating": {
+      "etag": "\"6714-65d55d988e3d9-df\"",
+      "file_path": "documentation/ImageCaptureCore/icreturn/code/deviceisbusyenumerating.md",
+      "hash": "7f5a9235c7ce53a84b253de4f886e95cea31b9aaba163d1543dbcc6ab9f3a14d"
+    },
+    "https://developer.apple.com/documentation/imagecapturecore/icreturn/code/deviceispasscodelocked": {
+      "etag": "\"672f-65d55d986cc71-df\"",
+      "file_path": "documentation/ImageCaptureCore/icreturn/code/deviceispasscodelocked.md",
+      "hash": "ce4cfa25f5b08a1ddbe25e833efc3e627685037eb101ce30a83162957474e8f8"
+    },
+    "https://developer.apple.com/documentation/imagecapturecore/icreturn/code/deviceneedscredentials": {
+      "etag": "\"672f-65d55d988e3d9-df\"",
+      "file_path": "documentation/ImageCaptureCore/icreturn/code/deviceneedscredentials.md",
+      "hash": "e5b98bdb3b62805b27ad3b300e5092c781096ab2c8d3f5c27ea7f8d5ed9ac0b8"
+    },
+    "https://developer.apple.com/documentation/imagecapturecore/icreturn/code/devicesoftwareinstallationcanceled": {
+      "etag": "\"679b-65d55d988e3d9-df\"",
+      "file_path": "documentation/ImageCaptureCore/icreturn/code/devicesoftwareinstallationcanceled.md",
+      "hash": "c24add4ce8dd8f0a950586e7df29d688bacc2c62c5e9913a7f9fc06e76bef81a"
+    },
+    "https://developer.apple.com/documentation/imagecapturecore/icreturn/code/devicesoftwareinstallationcompleted": {
+      "etag": "\"67a4-65d55d986cc71-df\"",
+      "file_path": "documentation/ImageCaptureCore/icreturn/code/devicesoftwareinstallationcompleted.md",
+      "hash": "ae00bd2b82c23f28c9288811bbff76817eef870b412c117642c5fae68feecabc"
+    },
+    "https://developer.apple.com/documentation/imagecapturecore/icreturn/code/devicesoftwareinstallationfailed": {
+      "etag": "\"6789-65d55d988e3d9-df\"",
+      "file_path": "documentation/ImageCaptureCore/icreturn/code/devicesoftwareinstallationfailed.md",
+      "hash": "98505b278d77033f067a5f449497980c7c23979a679b60a58f293b255654e6f0"
+    },
+    "https://developer.apple.com/documentation/imagecapturecore/icreturn/code/devicesoftwareisbeinginstalled": {
+      "etag": "\"6777-65d55d988e3d9-df\"",
+      "file_path": "documentation/ImageCaptureCore/icreturn/code/devicesoftwareisbeinginstalled.md",
+      "hash": "b17b308961a7ae18777e94888f9dce5361c9b39eeb400610e65c78e99c61a1c4"
+    },
+    "https://developer.apple.com/documentation/imagecapturecore/icreturn/code/devicesoftwarenotavailable": {
+      "etag": "\"6753-65d55d986cc71-df\"",
+      "file_path": "documentation/ImageCaptureCore/icreturn/code/devicesoftwarenotavailable.md",
+      "hash": "ed7278459da818fbda0fb66b36b477cb1902d0e360400a2c28e287bd17ba00cb"
+    },
+    "https://developer.apple.com/documentation/imagecapturecore/icreturn/code/devicesoftwarenotinstalled": {
+      "etag": "\"6753-65d55d986cc71-df\"",
+      "file_path": "documentation/ImageCaptureCore/icreturn/code/devicesoftwarenotinstalled.md",
+      "hash": "1e39aa10c6539bce100ad03d4aa2634aac8a22043b9ff0e8b230526edf0f4688"
+    },
+    "https://developer.apple.com/documentation/imagecapturecore/icreturn/code/downloadcanceled": {
+      "etag": "\"6681-65d55d986cc71-df\"",
+      "file_path": "documentation/ImageCaptureCore/icreturn/code/downloadcanceled.md",
+      "hash": "21644326fe769112d0f3b5f450a43535ae863839f7014b535011096490d3b1ba"
+    },
+    "https://developer.apple.com/documentation/imagecapturecore/icreturn/code/downloadfailed": {
+      "etag": "\"6657-65d55d986cc71-df\"",
+      "file_path": "documentation/ImageCaptureCore/icreturn/code/downloadfailed.md",
+      "hash": "33e64c5e32e0f12743366d1033a9cae09c85e13d6c0484747650abc5876ec77e"
+    },
+    "https://developer.apple.com/documentation/imagecapturecore/icreturn/code/exfatvolumeinvalid": {
+      "etag": "\"674f-65d55d986cc71-df\"",
+      "file_path": "documentation/ImageCaptureCore/icreturn/code/exfatvolumeinvalid.md",
+      "hash": "c2380be0ea35e3477c50ddb79f0abf45519f73feccb0f382b858f737ab7c314c"
+    },
+    "https://developer.apple.com/documentation/imagecapturecore/icreturn/code/failedtocompletepassthroughcommand": {
+      "etag": "\"67fb-65d55d986cc71-df\"",
+      "file_path": "documentation/ImageCaptureCore/icreturn/code/failedtocompletepassthroughcommand.md",
+      "hash": "6d9bf35d6ac6233c48d917f6c783c9726c9e29f9ad3850c1c64e83c3af5241f5"
+    },
+    "https://developer.apple.com/documentation/imagecapturecore/icreturn/code/failedtocompletesendmessagerequest": {
+      "etag": "\"67fb-65d55d988e3d9-df\"",
+      "file_path": "documentation/ImageCaptureCore/icreturn/code/failedtocompletesendmessagerequest.md",
+      "hash": "f49d1b5f11672923a526f54cde192c83519d64f00ad0d36d5f8fac302df63611"
+    },
+    "https://developer.apple.com/documentation/imagecapturecore/icreturn/code/failedtodisabetethering": {
+      "etag": "\"6714-65d55d988e3d9-df\"",
+      "file_path": "documentation/ImageCaptureCore/icreturn/code/failedtodisabetethering.md",
+      "hash": "19c3c698b7f59711021522c9be7717b04f47eb00835fb7e178a4c569643e94b2"
+    },
+    "https://developer.apple.com/documentation/imagecapturecore/icreturn/code/failedtoenabetethering": {
+      "etag": "\"66ff-65d55d986cc71-df\"",
+      "file_path": "documentation/ImageCaptureCore/icreturn/code/failedtoenabetethering.md",
+      "hash": "47e6d3200a959315977c8a6adfa23ddacd8230bdf84155b6f52588dd14c918e5"
+    },
+    "https://developer.apple.com/documentation/imagecapturecore/icreturn/code/init(rawvalue:)": {
+      "etag": "\"14ea-65d55d986cc71-df\"",
+      "file_path": "documentation/ImageCaptureCore/icreturn/code/init(rawvalue).md",
+      "hash": "155eb8fa3220deeabdd7c2d7c937530695489ba87b2fd5c7f384a563b1f30b51"
+    },
+    "https://developer.apple.com/documentation/imagecapturecore/icreturn/code/invalidparam": {
+      "etag": "\"662d-65d55d988e3d9-df\"",
+      "file_path": "documentation/ImageCaptureCore/icreturn/code/invalidparam.md",
+      "hash": "2fd9ae44940f36d3111b943bf559def926a53a83c44864e3edbcdbe36db3c6d5"
+    },
+    "https://developer.apple.com/documentation/imagecapturecore/icreturn/code/multierrordictionary": {
+      "etag": "\"6729-65d55d988e3d9-df\"",
+      "file_path": "documentation/ImageCaptureCore/icreturn/code/multierrordictionary.md",
+      "hash": "d3b2d837c516e16736afdb2697879695c229bcf0994462e8c360ddbf1dc18b97"
+    },
+    "https://developer.apple.com/documentation/imagecapturecore/icreturn/code/receivedunsolicitedscannererrorinfo": {
+      "etag": "\"6810-65d55d986cc71-df\"",
+      "file_path": "documentation/ImageCaptureCore/icreturn/code/receivedunsolicitedscannererrorinfo.md",
+      "hash": "8ffe6af75fd7562d86e23ed2003a64a7f41d3e3c9d3c812b1ebfbae326fb4ec4"
+    },
+    "https://developer.apple.com/documentation/imagecapturecore/icreturn/code/receivedunsolicitedscannerstatusinfo": {
+      "etag": "\"6825-65d55d988e3d9-df\"",
+      "file_path": "documentation/ImageCaptureCore/icreturn/code/receivedunsolicitedscannerstatusinfo.md",
+      "hash": "8457285eaa6d82d50943033ae39aab4c9f7e58aa1764b3ce527e10825df749b5"
+    },
+    "https://developer.apple.com/documentation/imagecapturecore/icreturn/code/scannerfailedtocompleteoverviewscan": {
+      "etag": "\"6810-65d55d988e3d9-df\"",
+      "file_path": "documentation/ImageCaptureCore/icreturn/code/scannerfailedtocompleteoverviewscan.md",
+      "hash": "5e974408059e270277acecb9049ae75b9c2ee1f07759714e782678230b2324e8"
+    },
+    "https://developer.apple.com/documentation/imagecapturecore/icreturn/code/scannerfailedtocompletescan": {
+      "etag": "\"6768-65d55d988e3d9-df\"",
+      "file_path": "documentation/ImageCaptureCore/icreturn/code/scannerfailedtocompletescan.md",
+      "hash": "f05e9531f3eeea30cafc9e32e6d7b07cc5252f462e9bac1ee38c3185cda4d9fb"
+    },
+    "https://developer.apple.com/documentation/imagecapturecore/icreturn/code/scannerfailedtoselectfunctionalunit": {
+      "etag": "\"6810-65d55d986cc71-df\"",
+      "file_path": "documentation/ImageCaptureCore/icreturn/code/scannerfailedtoselectfunctionalunit.md",
+      "hash": "8dc5fe97cd7dd962286b6aa67b50caeb8bb177b006384fb2584771f5acf6e738"
+    },
+    "https://developer.apple.com/documentation/imagecapturecore/icreturn/code/scannerinusebylocaluser": {
+      "etag": "\"6714-65d55d986cc71-df\"",
+      "file_path": "documentation/ImageCaptureCore/icreturn/code/scannerinusebylocaluser.md",
+      "hash": "5c870577a17a79a323ee5186dc4920b24b8f6c7674a4b94ca9403a274d9bc7e1"
+    },
+    "https://developer.apple.com/documentation/imagecapturecore/icreturn/code/scannerinusebyremoteuser": {
+      "etag": "\"6729-65d55d986cc71-df\"",
+      "file_path": "documentation/ImageCaptureCore/icreturn/code/scannerinusebyremoteuser.md",
+      "hash": "dd14a075e38fce61bb91831ac876ac29f65ce945b73713e123394d5d3fdf3473"
+    },
+    "https://developer.apple.com/documentation/imagecapturecore/icreturn/code/scanoperationcanceled": {
+      "etag": "\"66ea-65d55d986cc71-df\"",
+      "file_path": "documentation/ImageCaptureCore/icreturn/code/scanoperationcanceled.md",
+      "hash": "bf2bcb4d11339c006a0008ecc46054a9e06c5288dcd2e033cb2b8fb9f4762b7a"
+    },
+    "https://developer.apple.com/documentation/imagecapturecore/icreturn/code/sessionnotopened": {
+      "etag": "\"66e9-65d55d988e3d9-df\"",
+      "file_path": "documentation/ImageCaptureCore/icreturn/code/sessionnotopened.md",
+      "hash": "8162acf901c2da6a09aca4eae8dcd292723205e82e85fa3c2a489e225f11d2ea"
+    },
+    "https://developer.apple.com/documentation/imagecapturecore/icreturn/code/success": {
+      "etag": "\"65c4-65d55d986cc71-df\"",
+      "file_path": "documentation/ImageCaptureCore/icreturn/code/success.md",
+      "hash": "2f23133c9173a36fc7036e097e46971c40e5735d78ed0cf851a0c5391211b6a6"
+    },
+    "https://developer.apple.com/documentation/imagecapturecore/icreturn/code/uploadfailed": {
+      "etag": "\"662d-65d55d986cc71-df\"",
+      "file_path": "documentation/ImageCaptureCore/icreturn/code/uploadfailed.md",
+      "hash": "dcae840a241d38c0778977adc8628b8910d96f7f27a9f214ba6838bccb1f50b4"
     },
     "https://developer.apple.com/documentation/imagecapturecore/icreturn/communicationtimedout": {
       "etag": "\"167a-65d55d986cc71-df\"",
@@ -1745,6 +2105,66 @@
       "file_path": "documentation/ImageCaptureCore/icreturn/uploadfailed.md",
       "hash": "bd7538c204afeea27b7139d117cfefda10a49745003dc3f346fb0fe2361f4605"
     },
+    "https://developer.apple.com/documentation/imagecapturecore/icreturncodeoffset": {
+      "etag": "\"81bd-65d55d988e3d9-df\"",
+      "file_path": "documentation/ImageCaptureCore/icreturncodeoffset.md",
+      "hash": "ab1f707d82d3c774d01bf6ab64dba681db9fb5a13ec84ad55e3ccf103449a691"
+    },
+    "https://developer.apple.com/documentation/imagecapturecore/icreturncodeoffset/deleteoffset": {
+      "etag": "\"173b-65d55d9829115-df\"",
+      "file_path": "documentation/ImageCaptureCore/icreturncodeoffset/deleteoffset.md",
+      "hash": "daef916609b00c21d5ebf3096246253bc6e46fcd9fb80f80735612032a3d4d7b"
+    },
+    "https://developer.apple.com/documentation/imagecapturecore/icreturncodeoffset/deviceconnection": {
+      "etag": "\"178f-65d55d9829115-df\"",
+      "file_path": "documentation/ImageCaptureCore/icreturncodeoffset/deviceconnection.md",
+      "hash": "63509afaec8e89fb0db6c43afbd79844f4f6ade12fc36af912a7587beb374540"
+    },
+    "https://developer.apple.com/documentation/imagecapturecore/icreturncodeoffset/deviceoffset": {
+      "etag": "\"173b-65d55d9829115-df\"",
+      "file_path": "documentation/ImageCaptureCore/icreturncodeoffset/deviceoffset.md",
+      "hash": "ce2979169ad468235c06b1e3193ad7453a76b6f1d08a9ed3d814ee332dc23590"
+    },
+    "https://developer.apple.com/documentation/imagecapturecore/icreturncodeoffset/downloadoffset": {
+      "etag": "\"1765-65d55d9829115-df\"",
+      "file_path": "documentation/ImageCaptureCore/icreturncodeoffset/downloadoffset.md",
+      "hash": "601c1696379937c070a56defcb80c3b0893118ae36f8c7dec044d2419ee49552"
+    },
+    "https://developer.apple.com/documentation/imagecapturecore/icreturncodeoffset/exfatoffset": {
+      "etag": "\"1726-65d55d9829115-df\"",
+      "file_path": "documentation/ImageCaptureCore/icreturncodeoffset/exfatoffset.md",
+      "hash": "6567aa3c084a320e4ad50eaa3120f6f412e13a10aae95dd7f556792eff2a069a"
+    },
+    "https://developer.apple.com/documentation/imagecapturecore/icreturncodeoffset/init(rawvalue:)": {
+      "etag": "\"1328-65d55d9829115-df\"",
+      "file_path": "documentation/ImageCaptureCore/icreturncodeoffset/init(rawvalue).md",
+      "hash": "3ad6dbfbc68a7ca16269aa0b4f3c8f3746320cf02eb098f8a5069e88bd877a8b"
+    },
+    "https://developer.apple.com/documentation/imagecapturecore/icreturncodeoffset/metadataoffset": {
+      "etag": "\"1765-65d55d9829115-df\"",
+      "file_path": "documentation/ImageCaptureCore/icreturncodeoffset/metadataoffset.md",
+      "hash": "6be4080f3e807fc58e848fcdcddf68b8deefe798fb7ef3ad2ef79135c82e41fb"
+    },
+    "https://developer.apple.com/documentation/imagecapturecore/icreturncodeoffset/objectoffset": {
+      "etag": "\"173b-65d55d9829115-df\"",
+      "file_path": "documentation/ImageCaptureCore/icreturncodeoffset/objectoffset.md",
+      "hash": "1b1a6d57d9e08bc853e2ea170ff93863298c02d2cb19bee294af3c02872d04c5"
+    },
+    "https://developer.apple.com/documentation/imagecapturecore/icreturncodeoffset/ptpoffset": {
+      "etag": "\"16fc-65d55d9829115-df\"",
+      "file_path": "documentation/ImageCaptureCore/icreturncodeoffset/ptpoffset.md",
+      "hash": "ce44f6886a18f7dcfc2a4c8984530e69e99e658d0c8b853496e962ac81836ecd"
+    },
+    "https://developer.apple.com/documentation/imagecapturecore/icreturncodeoffset/systemoffset": {
+      "etag": "\"173b-65d55d9829115-df\"",
+      "file_path": "documentation/ImageCaptureCore/icreturncodeoffset/systemoffset.md",
+      "hash": "f4c62be1580b9d109ba3634c5d952cb04d8d8a15025ba4d3612a0ab876bf873e"
+    },
+    "https://developer.apple.com/documentation/imagecapturecore/icreturncodeoffset/thumbnailoffset": {
+      "etag": "\"177a-65d55d9829115-df\"",
+      "file_path": "documentation/ImageCaptureCore/icreturncodeoffset/thumbnailoffset.md",
+      "hash": "7d8ba7f0c3344ada7328644abe662c5316d142383bd87a7bf26c014f86f1714d"
+    },
     "https://developer.apple.com/documentation/imagecapturecore/icreturnconnectionerror": {
       "etag": "\"5c1c-65d55d984ba92-df\"",
       "file_path": "documentation/ImageCaptureCore/icreturnconnectionerror.md",
@@ -1845,6 +2265,11 @@
       "file_path": "documentation/ImageCaptureCore/icreturnconnectionerror/sessionalreadyopen.md",
       "hash": "ee6f438e811a7d5b0c36ae578bb90538b798590af677e34ad8c9da5d2e344b35"
     },
+    "https://developer.apple.com/documentation/imagecapturecore/icreturndeviceisaccessrestrictedappledevice": {
+      "etag": "\"28db-65d55d988e3d9-df\"",
+      "file_path": "documentation/ImageCaptureCore/icreturndeviceisaccessrestrictedappledevice.md",
+      "hash": "555aecd11ba637c8137ab52720e931923024e29debbf1b16575b614f30e15034"
+    },
     "https://developer.apple.com/documentation/imagecapturecore/icreturndownloaderror": {
       "etag": "\"43a9-65d55d9829115-df\"",
       "file_path": "documentation/ImageCaptureCore/icreturndownloaderror.md",
@@ -1884,6 +2309,16 @@
       "etag": "\"1c6a-65d55d990446f-df\"",
       "file_path": "documentation/ImageCaptureCore/icreturndownloaderror/pathinvalid.md",
       "hash": "f35d167e0bec7f624a37849c024fac7806679dc2ad48c342a5405f00c7ee7bd2"
+    },
+    "https://developer.apple.com/documentation/imagecapturecore/icreturnfailedtodisabletethering": {
+      "etag": "\"2899-65d55d984ba92-df\"",
+      "file_path": "documentation/ImageCaptureCore/icreturnfailedtodisabletethering.md",
+      "hash": "362070a3c34a72a4ffaab18fda4028b9f59597ea8fd78f0509d2a54a71157a41"
+    },
+    "https://developer.apple.com/documentation/imagecapturecore/icreturnfailedtoenabletethering": {
+      "etag": "\"2893-65d55d999f8c4-df\"",
+      "file_path": "documentation/ImageCaptureCore/icreturnfailedtoenabletethering.md",
+      "hash": "dff406c35238ddcd3fc891ba0a5539175a733854a65bf240f2a01bf0d8e94811"
     },
     "https://developer.apple.com/documentation/imagecapturecore/icreturnmetadataerror": {
       "etag": "\"4b66-65d55d996a126-df\"",
@@ -2334,6 +2769,11 @@
       "etag": "\"3918-65d55d991c277-df\"",
       "file_path": "documentation/ImageCaptureCore/icscannerdevicedelegate/scannerdevice(_,didselect,error).md",
       "hash": "a321a4fbe3fff29006dbbf2f018ffec80b84db5dfa55f12928ffd5d650a6e88e"
+    },
+    "https://developer.apple.com/documentation/imagecapturecore/icscannerdevicedelegate/scannerdevice:didscantourl:data:": {
+      "etag": "\"35e1-65d55d991c277-df\"",
+      "file_path": "documentation/ImageCaptureCore/icscannerdevicedelegate/scannerdevice_didscantourl_data_.md",
+      "hash": "7c15d99c080413873ae387a1d393e1fcc404ad5d2ef618573fbface87f9ba993"
     },
     "https://developer.apple.com/documentation/imagecapturecore/icscannerdevicedelegate/scannerdevicedidbecomeavailable(_:)": {
       "etag": "\"2ae6-65d55d991c277-df\"",
@@ -3310,6 +3750,11 @@
       "file_path": "documentation/ImageCaptureCore/icsessionoptions/init(rawvalue).md",
       "hash": "d42d13e25e6ef7226527f51c0e959e3a750863686f71d7f448b0fba0989ef1f3"
     },
+    "https://developer.apple.com/documentation/imagecapturecore/icsize": {
+      "etag": "\"27fd-65d55d9935657-df\"",
+      "file_path": "documentation/ImageCaptureCore/icsize.md",
+      "hash": "4e9ff7b5e315ae69c2d351078615b74d6fac869cbed858d213fb02adef31a0df"
+    },
     "https://developer.apple.com/documentation/imagecapturecore/icuploadoption": {
       "etag": "\"3149-65d55d984ba92-df\"",
       "file_path": "documentation/ImageCaptureCore/icuploadoption.md",
@@ -3319,6 +3764,41 @@
       "etag": "\"13c8-65d55d984ba92-df\"",
       "file_path": "documentation/ImageCaptureCore/icuploadoption/init(rawvalue).md",
       "hash": "364aaa76cec4e408cecd578e8725da5c70f66477d80fb6b66c94921d34bdf18f"
+    },
+    "https://developer.apple.com/documentation/imagecapturecore/imagecapture_extern": {
+      "etag": "\"284b-65d55d991c277-df\"",
+      "file_path": "documentation/ImageCaptureCore/imagecapture_extern.md",
+      "hash": "e7cf114bf28079280b4311773cf60454dcbfe7118763dd07530290e4634a2413"
+    },
+    "https://developer.apple.com/documentation/imagecapturecore/imagecapture_ios": {
+      "etag": "\"2801-65d55d97c2064-df\"",
+      "file_path": "documentation/ImageCaptureCore/imagecapture_ios.md",
+      "hash": "f458c1de8bc4e69cf7679a88f0037c7c1bacdf92507e44e3a55a5036402e7d5b"
+    },
+    "https://developer.apple.com/documentation/imagecapturecore/imagecapture_ios_osx": {
+      "etag": "\"2851-65d55d991c277-df\"",
+      "file_path": "documentation/ImageCaptureCore/imagecapture_ios_osx.md",
+      "hash": "c3de7cf7e7e21befc76f4934518f0ada935b07783f35bf0f64d5fd26749d6359"
+    },
+    "https://developer.apple.com/documentation/imagecapturecore/imagecapture_ios_osx_sim": {
+      "etag": "\"2869-65d55d990446f-df\"",
+      "file_path": "documentation/ImageCaptureCore/imagecapture_ios_osx_sim.md",
+      "hash": "3b146e787cb7140f580d4f39c8a5465ff41021b29b0ae92a409afdb6b1868074"
+    },
+    "https://developer.apple.com/documentation/imagecapturecore/imagecapture_ios_sim": {
+      "etag": "\"2838-65d55d98c03d0-df\"",
+      "file_path": "documentation/ImageCaptureCore/imagecapture_ios_sim.md",
+      "hash": "84572fb5048f21213110b3766b69622a1f05a3a8e32c5acdf50a0e7d40a2b175"
+    },
+    "https://developer.apple.com/documentation/imagecapturecore/imagecapture_platform_ios": {
+      "etag": "\"2856-65d55d97c2064-df\"",
+      "file_path": "documentation/ImageCaptureCore/imagecapture_platform_ios.md",
+      "hash": "3785de3987a66aa724f823af6223f63abe835169765417f25c7efc65a6788761"
+    },
+    "https://developer.apple.com/documentation/imagecapturecore/imagecapture_platform_osx": {
+      "etag": "\"27f9-65d55d98a8d16-df\"",
+      "file_path": "documentation/ImageCaptureCore/imagecapture_platform_osx.md",
+      "hash": "808512294307e28a9dab191f6210d11e41a16b567b2b8f6a929f461f393a1e9d"
     },
     "https://developer.apple.com/documentation/imagecapturecore/imagecapturecore-constants": {
       "etag": "\"805f-6590261dcca3a-df\"",
@@ -3345,10 +3825,35 @@
       "file_path": "documentation/ImageCaptureCore/scanner-configuration.md",
       "hash": "177838a2d43e8ce69599de93101a51f2c25b970ff24a845307607cf2bbc0c920"
     },
+    "https://developer.apple.com/documentation/imagecapturecore/suppressperformselectorleakwarning": {
+      "etag": "\"2938-65d55d996a126-df\"",
+      "file_path": "documentation/ImageCaptureCore/suppressperformselectorleakwarning.md",
+      "hash": "572198e9536639c47597c89277e9bcf65d516474f04b234ac6487e3bb49a4add"
+    },
     "https://developer.apple.com/tutorials/data/documentation/ImageCaptureCore.json": {
       "etag": "\"702a-65d55d999f8c4-df\"",
       "file_path": "documentation/ImageCaptureCore/ImageCaptureCore.md",
       "hash": "6989785da4b90f185f4d574aa32846dd492e72cf39e658f4117c8a338cbdfd95"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/imagecapturecore/ic_available.json": {
+      "etag": "\"2881-65d55d98ded48-df\"",
+      "file_path": "documentation/ImageCaptureCore/ic_available.md",
+      "hash": "d3f7963806f670198969f713429df6fbca60a0e4f7c7dc7d86cfc4878d08d2c5"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/imagecapturecore/ic_deprecated.json": {
+      "etag": "\"2887-65d55d98c03d0-df\"",
+      "file_path": "documentation/ImageCaptureCore/ic_deprecated.md",
+      "hash": "579f49a030427eab7ce9fde4bb837ac0b239a10c34c47adfa1d399988bb1b28a"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/imagecapturecore/ic_deprecated_with_replacement.json": {
+      "etag": "\"28ed-65d55d996a126-df\"",
+      "file_path": "documentation/ImageCaptureCore/ic_deprecated_with_replacement.md",
+      "hash": "eb397a7703f4cb0c419c3903bec11558835282e556708a2b38f7fdd4748c992d"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/imagecapturecore/ic_unavailable.json": {
+      "etag": "\"288d-65d55d97c2064-df\"",
+      "file_path": "documentation/ImageCaptureCore/ic_unavailable.md",
+      "hash": "05c02c0ef47d736a02f3b79419cd57144033c38f933fa69892779d9858f3aeec"
     },
     "https://developer.apple.com/tutorials/data/documentation/imagecapturecore/icauthorizationstatus.json": {
       "etag": "\"259c-65d55d984ba92-df\"",
@@ -4750,6 +5255,126 @@
       "file_path": "documentation/ImageCaptureCore/iclegacyreturn/cannotyielddevice.md",
       "hash": "222fccbcb55ebf6cb3ed2007cece8a14eae800d0213055cb0fb2a2e2b031ece3"
     },
+    "https://developer.apple.com/tutorials/data/documentation/imagecapturecore/iclegacyreturn/code.json": {
+      "etag": "\"c661-65d55d98ded48-df\"",
+      "file_path": "documentation/ImageCaptureCore/iclegacyreturn/code.md",
+      "hash": "31d5804bb98b8d38422863a5cf5b97d874efae7cc56952f9ec631183dcca356a"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/imagecapturecore/iclegacyreturn/code/cannotyielddevice.json": {
+      "etag": "\"1a2f-65d55d990446f-df\"",
+      "file_path": "documentation/ImageCaptureCore/iclegacyreturn/code/cannotyielddevice.md",
+      "hash": "f45095fbb5426287b9daa638637a31b35c5bf207ed5b96cee939df001cbe1adb"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/imagecapturecore/iclegacyreturn/code/communicationerr.json": {
+      "etag": "\"1a1a-65d55d990446f-df\"",
+      "file_path": "documentation/ImageCaptureCore/iclegacyreturn/code/communicationerr.md",
+      "hash": "cc946708941c10fce10f388ce4342ebf149bd722eaf60e3f0162b317d3b2b66d"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/imagecapturecore/iclegacyreturn/code/datatypenotfounderr.json": {
+      "etag": "\"1a59-65d55d990446f-df\"",
+      "file_path": "documentation/ImageCaptureCore/iclegacyreturn/code/datatypenotfounderr.md",
+      "hash": "da833a060b99e4d65051e9ab51a67fdef239a5a2cc63c46db321ab4d29db5209"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/imagecapturecore/iclegacyreturn/code/devicealreadyopenerr.json": {
+      "etag": "\"1a6e-65d55d990446f-df\"",
+      "file_path": "documentation/ImageCaptureCore/iclegacyreturn/code/devicealreadyopenerr.md",
+      "hash": "53e58b8f78d59602d2477bae47f242994e1f1c014912daa67dba0a99bb466612"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/imagecapturecore/iclegacyreturn/code/deviceguidnotfounderr.json": {
+      "etag": "\"1a83-65d55d990446f-df\"",
+      "file_path": "documentation/ImageCaptureCore/iclegacyreturn/code/deviceguidnotfounderr.md",
+      "hash": "5430ef98dbaede9326d59f4df26565114d42e97dee77aa812cd33d96dd178c36"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/imagecapturecore/iclegacyreturn/code/deviceinternalerr.json": {
+      "etag": "\"1a2f-65d55d990446f-df\"",
+      "file_path": "documentation/ImageCaptureCore/iclegacyreturn/code/deviceinternalerr.md",
+      "hash": "d167fbdfc62d2a295d1136196006a92fab5fedb56a28b347a70fc5e947a5468e"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/imagecapturecore/iclegacyreturn/code/deviceinvalidparamerr.json": {
+      "etag": "\"1a83-65d55d990446f-df\"",
+      "file_path": "documentation/ImageCaptureCore/iclegacyreturn/code/deviceinvalidparamerr.md",
+      "hash": "810d0e7d0431896585dc135ebba44a672041d6b10c6e945fa581c70f41a1d63b"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/imagecapturecore/iclegacyreturn/code/deviceioservicepathnotfounderr.json": {
+      "etag": "\"1b40-65d55d990446f-df\"",
+      "file_path": "documentation/ImageCaptureCore/iclegacyreturn/code/deviceioservicepathnotfounderr.md",
+      "hash": "41263aa31949c383d5b386d251bafc8f88572884655c1c8081b2b3ae7c0c517c"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/imagecapturecore/iclegacyreturn/code/devicelocationidnotfounderr.json": {
+      "etag": "\"1b01-65d55d990446f-df\"",
+      "file_path": "documentation/ImageCaptureCore/iclegacyreturn/code/devicelocationidnotfounderr.md",
+      "hash": "7b271189fc54926593f1fda81a66541586e51a96000df1403763b002528f2928"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/imagecapturecore/iclegacyreturn/code/devicememoryallocationerr.json": {
+      "etag": "\"1ad7-65d55d990446f-df\"",
+      "file_path": "documentation/ImageCaptureCore/iclegacyreturn/code/devicememoryallocationerr.md",
+      "hash": "a55157ee899ad9be66af8561a91a4036de3074290877659f84cbb5dec24bbca6"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/imagecapturecore/iclegacyreturn/code/devicenotfounderr.json": {
+      "etag": "\"1a2f-65d55d990446f-df\"",
+      "file_path": "documentation/ImageCaptureCore/iclegacyreturn/code/devicenotfounderr.md",
+      "hash": "b41b6b0a6b9a74d63d4ac33df81a9a95fee49216480a6fa41b3c448e2dd99383"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/imagecapturecore/iclegacyreturn/code/devicenotopenerr.json": {
+      "etag": "\"1a1a-65d55d990446f-df\"",
+      "file_path": "documentation/ImageCaptureCore/iclegacyreturn/code/devicenotopenerr.md",
+      "hash": "b51ad3853ccc58ee39cceb276627cde6f7623c27e2da7ee3f95e72267f22d21a"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/imagecapturecore/iclegacyreturn/code/deviceunsupportederr.json": {
+      "etag": "\"1a6e-65d55d990446f-df\"",
+      "file_path": "documentation/ImageCaptureCore/iclegacyreturn/code/deviceunsupportederr.md",
+      "hash": "8a11110d247784cc78b6b9921f070b669f66bf9eaaf8e1faa0eb427c372b6b30"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/imagecapturecore/iclegacyreturn/code/extensioninternalerr.json": {
+      "etag": "\"1a6e-65d55d990446f-df\"",
+      "file_path": "documentation/ImageCaptureCore/iclegacyreturn/code/extensioninternalerr.md",
+      "hash": "463b155ea0cce161189a61ced11a93c88322b34b79f17a0949c7d19612efc9aa"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/imagecapturecore/iclegacyreturn/code/filecorruptederr.json": {
+      "etag": "\"1a1a-65d55d990446f-df\"",
+      "file_path": "documentation/ImageCaptureCore/iclegacyreturn/code/filecorruptederr.md",
+      "hash": "00d976c643a5cc34cfbe17e5961b3757f101d6bf97469f5b8122dafa9f675b4e"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/imagecapturecore/iclegacyreturn/code/frameworkinternalerr.json": {
+      "etag": "\"1a6e-65d55d990446f-df\"",
+      "file_path": "documentation/ImageCaptureCore/iclegacyreturn/code/frameworkinternalerr.md",
+      "hash": "643dda2b170460471db67a74161869c7701f8c4f80875cb2a35eaadad668894f"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/imagecapturecore/iclegacyreturn/code/indexoutofrangeerr.json": {
+      "etag": "\"1a44-65d55d990446f-df\"",
+      "file_path": "documentation/ImageCaptureCore/iclegacyreturn/code/indexoutofrangeerr.md",
+      "hash": "e7003a300f7106318356348d2f0c6b2731cdbbef59c3038f951059258d4ba868"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/imagecapturecore/iclegacyreturn/code/init(rawvalue:).json": {
+      "etag": "\"157a-65d55d990446f-df\"",
+      "file_path": "documentation/ImageCaptureCore/iclegacyreturn/code/init(rawvalue).md",
+      "hash": "a45a254c0474b0bd09804d4339dda0dfc7b30bebc0adc51caa4c092a4ebce280"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/imagecapturecore/iclegacyreturn/code/invalidobjecterr.json": {
+      "etag": "\"1a1a-65d55d990446f-df\"",
+      "file_path": "documentation/ImageCaptureCore/iclegacyreturn/code/invalidobjecterr.md",
+      "hash": "1e20389106a063637bd70c18424593ae64741c33e69841a6b6068fc36ac881c1"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/imagecapturecore/iclegacyreturn/code/invalidpropertyerr.json": {
+      "etag": "\"1a44-65d55d990446f-df\"",
+      "file_path": "documentation/ImageCaptureCore/iclegacyreturn/code/invalidpropertyerr.md",
+      "hash": "11dfa422533bf22235afa987d77be9c30f119a929f03898e631b373e49549043"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/imagecapturecore/iclegacyreturn/code/invalidsessionerr.json": {
+      "etag": "\"1a2f-65d55d990446f-df\"",
+      "file_path": "documentation/ImageCaptureCore/iclegacyreturn/code/invalidsessionerr.md",
+      "hash": "f0302cbcd3b69758a80562f602e9334b6b7492bbf909c102de49abb197e9850f"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/imagecapturecore/iclegacyreturn/code/iopendingerr.json": {
+      "etag": "\"19c6-65d55d990446f-df\"",
+      "file_path": "documentation/ImageCaptureCore/iclegacyreturn/code/iopendingerr.md",
+      "hash": "efc55b1524ca3ecf323f30f99f0e6d4fce14956dccdfb8fb5f7c0ab9fa9ddfb2"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/imagecapturecore/iclegacyreturn/code/propertytypenotfounderr.json": {
+      "etag": "\"1aad-65d55d990446f-df\"",
+      "file_path": "documentation/ImageCaptureCore/iclegacyreturn/code/propertytypenotfounderr.md",
+      "hash": "f48dfadc34a136f4034601e2c24709e1e69487045354a0d015cf939c154cce32"
+    },
     "https://developer.apple.com/tutorials/data/documentation/imagecapturecore/iclegacyreturn/communicationerr.json": {
       "etag": "\"1643-65d55d98ded48-df\"",
       "file_path": "documentation/ImageCaptureCore/iclegacyreturn/communicationerr.md",
@@ -4880,10 +5505,230 @@
       "file_path": "documentation/ImageCaptureCore/icmediapresentation/originalassets.md",
       "hash": "1a468d4102782e5b222c408c894d319130b6b867ef39ce72ae3655449dc8d791"
     },
+    "https://developer.apple.com/tutorials/data/documentation/imagecapturecore/icpoint.json": {
+      "etag": "\"2803-65d55d98c03d0-df\"",
+      "file_path": "documentation/ImageCaptureCore/icpoint.md",
+      "hash": "4ab6a8a14977a75ac8e7429a9f4da16b6dd5687469fbb238ae06b9f3523df391"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/imagecapturecore/icrect.json": {
+      "etag": "\"27fd-65d55d98a8d16-df\"",
+      "file_path": "documentation/ImageCaptureCore/icrect.md",
+      "hash": "83c44c72428133bb1d8801a619cefa895be74ac70b68e671e2e785dabd368373"
+    },
     "https://developer.apple.com/tutorials/data/documentation/imagecapturecore/icreturn.json": {
       "etag": "\"cb39-65d55d999f8c4-df\"",
       "file_path": "documentation/ImageCaptureCore/icreturn.md",
       "hash": "b55d01add5617014bbb76042a6a74c9ffdd6ff028c9e1b6965612e18019a5797"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/imagecapturecore/icreturn/code.json": {
+      "etag": "\"160da-65d55d986cc71-df\"",
+      "file_path": "documentation/ImageCaptureCore/icreturn/code.md",
+      "hash": "d480dc41e845c82ef19bb159966c0f049361c1b37d4445d74366d130d48693c6"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/imagecapturecore/icreturn/code/communicationtimedout.json": {
+      "etag": "\"6726-65d55d986cc71-df\"",
+      "file_path": "documentation/ImageCaptureCore/icreturn/code/communicationtimedout.md",
+      "hash": "8799778102d1f6bb8880e1fcd8ad1c0fb42acf161261e86b799246e7b5e727c4"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/imagecapturecore/icreturn/code/deletefilescanceled.json": {
+      "etag": "\"6714-65d55d986cc71-df\"",
+      "file_path": "documentation/ImageCaptureCore/icreturn/code/deletefilescanceled.md",
+      "hash": "8c57b23e55baa310fb3dc3ab00e89dfe7e2b7ccbe3a9035040dbf1f408a7c9d5"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/imagecapturecore/icreturn/code/deletefilesfailed.json": {
+      "etag": "\"6702-65d55d988e3d9-df\"",
+      "file_path": "documentation/ImageCaptureCore/icreturn/code/deletefilesfailed.md",
+      "hash": "793ed4e90830642b18db9f23bdadd150816f58c2db9142f09e240422bb042db9"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/imagecapturecore/icreturn/code/devicecommandgeneralfailure.json": {
+      "etag": "\"6768-65d55d988e3d9-df\"",
+      "file_path": "documentation/ImageCaptureCore/icreturn/code/devicecommandgeneralfailure.md",
+      "hash": "189c00d97daaa97074b8931b1b3739f17f23d533f0a9c05ecd6b1910e7677540"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/imagecapturecore/icreturn/code/devicecouldnotpair.json": {
+      "etag": "\"670b-65d55d986cc71-df\"",
+      "file_path": "documentation/ImageCaptureCore/icreturn/code/devicecouldnotpair.md",
+      "hash": "f4528ecdb7764d8b4c3aef89139c4596ac5c5b96292d0c4c69576a09f671acc0"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/imagecapturecore/icreturn/code/devicecouldnotunpair.json": {
+      "etag": "\"671d-65d55d988e3d9-df\"",
+      "file_path": "documentation/ImageCaptureCore/icreturn/code/devicecouldnotunpair.md",
+      "hash": "c96cfdd04bc25c914a6dba011f69277703af5aa31989624eb97145f2b340ddf0"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/imagecapturecore/icreturn/code/devicefailedtoclosesession.json": {
+      "etag": "\"6753-65d55d986cc71-df\"",
+      "file_path": "documentation/ImageCaptureCore/icreturn/code/devicefailedtoclosesession.md",
+      "hash": "b984fd182bc49d93eb495102719be7840acbf3bdc7902462421e71c0b117e72d"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/imagecapturecore/icreturn/code/devicefailedtocompletetransfer.json": {
+      "etag": "\"6833-65d55d988e3d9-df\"",
+      "file_path": "documentation/ImageCaptureCore/icreturn/code/devicefailedtocompletetransfer.md",
+      "hash": "9357ee4be3b30ab59fcba7a56bbda4cdf8430f717c3050a177bce9e8c60df944"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/imagecapturecore/icreturn/code/devicefailedtoopensession.json": {
+      "etag": "\"674a-65d55d988e3d9-df\"",
+      "file_path": "documentation/ImageCaptureCore/icreturn/code/devicefailedtoopensession.md",
+      "hash": "56cc9b07adcc57b0ccbb1431e014fe5714539247f91b0ca03c9bc4cad8f4d0f5"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/imagecapturecore/icreturn/code/devicefailedtosenddata.json": {
+      "etag": "\"6767-65d55d988e3d9-df\"",
+      "file_path": "documentation/ImageCaptureCore/icreturn/code/devicefailedtosenddata.md",
+      "hash": "7f9e80d9a9e266970e4f0e3fe9b223848a945545ada4af475ab53272a0cb5b40"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/imagecapturecore/icreturn/code/devicefailedtotakepicture.json": {
+      "etag": "\"674a-65d55d988e3d9-df\"",
+      "file_path": "documentation/ImageCaptureCore/icreturn/code/devicefailedtotakepicture.md",
+      "hash": "767e84837746ca825424d43bf7f9f7b6b5212cf4a6f29af7dc0b9622efb02e21"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/imagecapturecore/icreturn/code/deviceisbusyenumerating.json": {
+      "etag": "\"6714-65d55d988e3d9-df\"",
+      "file_path": "documentation/ImageCaptureCore/icreturn/code/deviceisbusyenumerating.md",
+      "hash": "7f5a9235c7ce53a84b253de4f886e95cea31b9aaba163d1543dbcc6ab9f3a14d"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/imagecapturecore/icreturn/code/deviceispasscodelocked.json": {
+      "etag": "\"672f-65d55d986cc71-df\"",
+      "file_path": "documentation/ImageCaptureCore/icreturn/code/deviceispasscodelocked.md",
+      "hash": "ce4cfa25f5b08a1ddbe25e833efc3e627685037eb101ce30a83162957474e8f8"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/imagecapturecore/icreturn/code/deviceneedscredentials.json": {
+      "etag": "\"672f-65d55d988e3d9-df\"",
+      "file_path": "documentation/ImageCaptureCore/icreturn/code/deviceneedscredentials.md",
+      "hash": "e5b98bdb3b62805b27ad3b300e5092c781096ab2c8d3f5c27ea7f8d5ed9ac0b8"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/imagecapturecore/icreturn/code/devicesoftwareinstallationcanceled.json": {
+      "etag": "\"679b-65d55d988e3d9-df\"",
+      "file_path": "documentation/ImageCaptureCore/icreturn/code/devicesoftwareinstallationcanceled.md",
+      "hash": "c24add4ce8dd8f0a950586e7df29d688bacc2c62c5e9913a7f9fc06e76bef81a"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/imagecapturecore/icreturn/code/devicesoftwareinstallationcompleted.json": {
+      "etag": "\"67a4-65d55d986cc71-df\"",
+      "file_path": "documentation/ImageCaptureCore/icreturn/code/devicesoftwareinstallationcompleted.md",
+      "hash": "ae00bd2b82c23f28c9288811bbff76817eef870b412c117642c5fae68feecabc"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/imagecapturecore/icreturn/code/devicesoftwareinstallationfailed.json": {
+      "etag": "\"6789-65d55d988e3d9-df\"",
+      "file_path": "documentation/ImageCaptureCore/icreturn/code/devicesoftwareinstallationfailed.md",
+      "hash": "98505b278d77033f067a5f449497980c7c23979a679b60a58f293b255654e6f0"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/imagecapturecore/icreturn/code/devicesoftwareisbeinginstalled.json": {
+      "etag": "\"6777-65d55d988e3d9-df\"",
+      "file_path": "documentation/ImageCaptureCore/icreturn/code/devicesoftwareisbeinginstalled.md",
+      "hash": "b17b308961a7ae18777e94888f9dce5361c9b39eeb400610e65c78e99c61a1c4"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/imagecapturecore/icreturn/code/devicesoftwarenotavailable.json": {
+      "etag": "\"6753-65d55d986cc71-df\"",
+      "file_path": "documentation/ImageCaptureCore/icreturn/code/devicesoftwarenotavailable.md",
+      "hash": "ed7278459da818fbda0fb66b36b477cb1902d0e360400a2c28e287bd17ba00cb"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/imagecapturecore/icreturn/code/devicesoftwarenotinstalled.json": {
+      "etag": "\"6753-65d55d986cc71-df\"",
+      "file_path": "documentation/ImageCaptureCore/icreturn/code/devicesoftwarenotinstalled.md",
+      "hash": "1e39aa10c6539bce100ad03d4aa2634aac8a22043b9ff0e8b230526edf0f4688"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/imagecapturecore/icreturn/code/downloadcanceled.json": {
+      "etag": "\"6681-65d55d986cc71-df\"",
+      "file_path": "documentation/ImageCaptureCore/icreturn/code/downloadcanceled.md",
+      "hash": "21644326fe769112d0f3b5f450a43535ae863839f7014b535011096490d3b1ba"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/imagecapturecore/icreturn/code/downloadfailed.json": {
+      "etag": "\"6657-65d55d986cc71-df\"",
+      "file_path": "documentation/ImageCaptureCore/icreturn/code/downloadfailed.md",
+      "hash": "33e64c5e32e0f12743366d1033a9cae09c85e13d6c0484747650abc5876ec77e"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/imagecapturecore/icreturn/code/exfatvolumeinvalid.json": {
+      "etag": "\"674f-65d55d986cc71-df\"",
+      "file_path": "documentation/ImageCaptureCore/icreturn/code/exfatvolumeinvalid.md",
+      "hash": "c2380be0ea35e3477c50ddb79f0abf45519f73feccb0f382b858f737ab7c314c"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/imagecapturecore/icreturn/code/failedtocompletepassthroughcommand.json": {
+      "etag": "\"67fb-65d55d986cc71-df\"",
+      "file_path": "documentation/ImageCaptureCore/icreturn/code/failedtocompletepassthroughcommand.md",
+      "hash": "6d9bf35d6ac6233c48d917f6c783c9726c9e29f9ad3850c1c64e83c3af5241f5"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/imagecapturecore/icreturn/code/failedtocompletesendmessagerequest.json": {
+      "etag": "\"67fb-65d55d988e3d9-df\"",
+      "file_path": "documentation/ImageCaptureCore/icreturn/code/failedtocompletesendmessagerequest.md",
+      "hash": "f49d1b5f11672923a526f54cde192c83519d64f00ad0d36d5f8fac302df63611"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/imagecapturecore/icreturn/code/failedtodisabetethering.json": {
+      "etag": "\"6714-65d55d988e3d9-df\"",
+      "file_path": "documentation/ImageCaptureCore/icreturn/code/failedtodisabetethering.md",
+      "hash": "19c3c698b7f59711021522c9be7717b04f47eb00835fb7e178a4c569643e94b2"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/imagecapturecore/icreturn/code/failedtoenabetethering.json": {
+      "etag": "\"66ff-65d55d986cc71-df\"",
+      "file_path": "documentation/ImageCaptureCore/icreturn/code/failedtoenabetethering.md",
+      "hash": "47e6d3200a959315977c8a6adfa23ddacd8230bdf84155b6f52588dd14c918e5"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/imagecapturecore/icreturn/code/init(rawvalue:).json": {
+      "etag": "\"14ea-65d55d986cc71-df\"",
+      "file_path": "documentation/ImageCaptureCore/icreturn/code/init(rawvalue).md",
+      "hash": "155eb8fa3220deeabdd7c2d7c937530695489ba87b2fd5c7f384a563b1f30b51"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/imagecapturecore/icreturn/code/invalidparam.json": {
+      "etag": "\"662d-65d55d988e3d9-df\"",
+      "file_path": "documentation/ImageCaptureCore/icreturn/code/invalidparam.md",
+      "hash": "2fd9ae44940f36d3111b943bf559def926a53a83c44864e3edbcdbe36db3c6d5"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/imagecapturecore/icreturn/code/multierrordictionary.json": {
+      "etag": "\"6729-65d55d988e3d9-df\"",
+      "file_path": "documentation/ImageCaptureCore/icreturn/code/multierrordictionary.md",
+      "hash": "d3b2d837c516e16736afdb2697879695c229bcf0994462e8c360ddbf1dc18b97"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/imagecapturecore/icreturn/code/receivedunsolicitedscannererrorinfo.json": {
+      "etag": "\"6810-65d55d986cc71-df\"",
+      "file_path": "documentation/ImageCaptureCore/icreturn/code/receivedunsolicitedscannererrorinfo.md",
+      "hash": "8ffe6af75fd7562d86e23ed2003a64a7f41d3e3c9d3c812b1ebfbae326fb4ec4"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/imagecapturecore/icreturn/code/receivedunsolicitedscannerstatusinfo.json": {
+      "etag": "\"6825-65d55d988e3d9-df\"",
+      "file_path": "documentation/ImageCaptureCore/icreturn/code/receivedunsolicitedscannerstatusinfo.md",
+      "hash": "8457285eaa6d82d50943033ae39aab4c9f7e58aa1764b3ce527e10825df749b5"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/imagecapturecore/icreturn/code/scannerfailedtocompleteoverviewscan.json": {
+      "etag": "\"6810-65d55d988e3d9-df\"",
+      "file_path": "documentation/ImageCaptureCore/icreturn/code/scannerfailedtocompleteoverviewscan.md",
+      "hash": "5e974408059e270277acecb9049ae75b9c2ee1f07759714e782678230b2324e8"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/imagecapturecore/icreturn/code/scannerfailedtocompletescan.json": {
+      "etag": "\"6768-65d55d988e3d9-df\"",
+      "file_path": "documentation/ImageCaptureCore/icreturn/code/scannerfailedtocompletescan.md",
+      "hash": "f05e9531f3eeea30cafc9e32e6d7b07cc5252f462e9bac1ee38c3185cda4d9fb"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/imagecapturecore/icreturn/code/scannerfailedtoselectfunctionalunit.json": {
+      "etag": "\"6810-65d55d986cc71-df\"",
+      "file_path": "documentation/ImageCaptureCore/icreturn/code/scannerfailedtoselectfunctionalunit.md",
+      "hash": "8dc5fe97cd7dd962286b6aa67b50caeb8bb177b006384fb2584771f5acf6e738"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/imagecapturecore/icreturn/code/scannerinusebylocaluser.json": {
+      "etag": "\"6714-65d55d986cc71-df\"",
+      "file_path": "documentation/ImageCaptureCore/icreturn/code/scannerinusebylocaluser.md",
+      "hash": "5c870577a17a79a323ee5186dc4920b24b8f6c7674a4b94ca9403a274d9bc7e1"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/imagecapturecore/icreturn/code/scannerinusebyremoteuser.json": {
+      "etag": "\"6729-65d55d986cc71-df\"",
+      "file_path": "documentation/ImageCaptureCore/icreturn/code/scannerinusebyremoteuser.md",
+      "hash": "dd14a075e38fce61bb91831ac876ac29f65ce945b73713e123394d5d3fdf3473"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/imagecapturecore/icreturn/code/scanoperationcanceled.json": {
+      "etag": "\"66ea-65d55d986cc71-df\"",
+      "file_path": "documentation/ImageCaptureCore/icreturn/code/scanoperationcanceled.md",
+      "hash": "bf2bcb4d11339c006a0008ecc46054a9e06c5288dcd2e033cb2b8fb9f4762b7a"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/imagecapturecore/icreturn/code/sessionnotopened.json": {
+      "etag": "\"66e9-65d55d988e3d9-df\"",
+      "file_path": "documentation/ImageCaptureCore/icreturn/code/sessionnotopened.md",
+      "hash": "8162acf901c2da6a09aca4eae8dcd292723205e82e85fa3c2a489e225f11d2ea"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/imagecapturecore/icreturn/code/success.json": {
+      "etag": "\"65c4-65d55d986cc71-df\"",
+      "file_path": "documentation/ImageCaptureCore/icreturn/code/success.md",
+      "hash": "2f23133c9173a36fc7036e097e46971c40e5735d78ed0cf851a0c5391211b6a6"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/imagecapturecore/icreturn/code/uploadfailed.json": {
+      "etag": "\"662d-65d55d986cc71-df\"",
+      "file_path": "documentation/ImageCaptureCore/icreturn/code/uploadfailed.md",
+      "hash": "dcae840a241d38c0778977adc8628b8910d96f7f27a9f214ba6838bccb1f50b4"
     },
     "https://developer.apple.com/tutorials/data/documentation/imagecapturecore/icreturn/communicationtimedout.json": {
       "etag": "\"167a-65d55d986cc71-df\"",
@@ -5090,6 +5935,66 @@
       "file_path": "documentation/ImageCaptureCore/icreturn/uploadfailed.md",
       "hash": "bd7538c204afeea27b7139d117cfefda10a49745003dc3f346fb0fe2361f4605"
     },
+    "https://developer.apple.com/tutorials/data/documentation/imagecapturecore/icreturncodeoffset.json": {
+      "etag": "\"81bd-65d55d988e3d9-df\"",
+      "file_path": "documentation/ImageCaptureCore/icreturncodeoffset.md",
+      "hash": "ab1f707d82d3c774d01bf6ab64dba681db9fb5a13ec84ad55e3ccf103449a691"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/imagecapturecore/icreturncodeoffset/deleteoffset.json": {
+      "etag": "\"173b-65d55d9829115-df\"",
+      "file_path": "documentation/ImageCaptureCore/icreturncodeoffset/deleteoffset.md",
+      "hash": "daef916609b00c21d5ebf3096246253bc6e46fcd9fb80f80735612032a3d4d7b"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/imagecapturecore/icreturncodeoffset/deviceconnection.json": {
+      "etag": "\"178f-65d55d9829115-df\"",
+      "file_path": "documentation/ImageCaptureCore/icreturncodeoffset/deviceconnection.md",
+      "hash": "63509afaec8e89fb0db6c43afbd79844f4f6ade12fc36af912a7587beb374540"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/imagecapturecore/icreturncodeoffset/deviceoffset.json": {
+      "etag": "\"173b-65d55d9829115-df\"",
+      "file_path": "documentation/ImageCaptureCore/icreturncodeoffset/deviceoffset.md",
+      "hash": "ce2979169ad468235c06b1e3193ad7453a76b6f1d08a9ed3d814ee332dc23590"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/imagecapturecore/icreturncodeoffset/downloadoffset.json": {
+      "etag": "\"1765-65d55d9829115-df\"",
+      "file_path": "documentation/ImageCaptureCore/icreturncodeoffset/downloadoffset.md",
+      "hash": "601c1696379937c070a56defcb80c3b0893118ae36f8c7dec044d2419ee49552"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/imagecapturecore/icreturncodeoffset/exfatoffset.json": {
+      "etag": "\"1726-65d55d9829115-df\"",
+      "file_path": "documentation/ImageCaptureCore/icreturncodeoffset/exfatoffset.md",
+      "hash": "6567aa3c084a320e4ad50eaa3120f6f412e13a10aae95dd7f556792eff2a069a"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/imagecapturecore/icreturncodeoffset/init(rawvalue:).json": {
+      "etag": "\"1328-65d55d9829115-df\"",
+      "file_path": "documentation/ImageCaptureCore/icreturncodeoffset/init(rawvalue).md",
+      "hash": "3ad6dbfbc68a7ca16269aa0b4f3c8f3746320cf02eb098f8a5069e88bd877a8b"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/imagecapturecore/icreturncodeoffset/metadataoffset.json": {
+      "etag": "\"1765-65d55d9829115-df\"",
+      "file_path": "documentation/ImageCaptureCore/icreturncodeoffset/metadataoffset.md",
+      "hash": "6be4080f3e807fc58e848fcdcddf68b8deefe798fb7ef3ad2ef79135c82e41fb"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/imagecapturecore/icreturncodeoffset/objectoffset.json": {
+      "etag": "\"173b-65d55d9829115-df\"",
+      "file_path": "documentation/ImageCaptureCore/icreturncodeoffset/objectoffset.md",
+      "hash": "1b1a6d57d9e08bc853e2ea170ff93863298c02d2cb19bee294af3c02872d04c5"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/imagecapturecore/icreturncodeoffset/ptpoffset.json": {
+      "etag": "\"16fc-65d55d9829115-df\"",
+      "file_path": "documentation/ImageCaptureCore/icreturncodeoffset/ptpoffset.md",
+      "hash": "ce44f6886a18f7dcfc2a4c8984530e69e99e658d0c8b853496e962ac81836ecd"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/imagecapturecore/icreturncodeoffset/systemoffset.json": {
+      "etag": "\"173b-65d55d9829115-df\"",
+      "file_path": "documentation/ImageCaptureCore/icreturncodeoffset/systemoffset.md",
+      "hash": "f4c62be1580b9d109ba3634c5d952cb04d8d8a15025ba4d3612a0ab876bf873e"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/imagecapturecore/icreturncodeoffset/thumbnailoffset.json": {
+      "etag": "\"177a-65d55d9829115-df\"",
+      "file_path": "documentation/ImageCaptureCore/icreturncodeoffset/thumbnailoffset.md",
+      "hash": "7d8ba7f0c3344ada7328644abe662c5316d142383bd87a7bf26c014f86f1714d"
+    },
     "https://developer.apple.com/tutorials/data/documentation/imagecapturecore/icreturnconnectionerror.json": {
       "etag": "\"5c1c-65d55d984ba92-df\"",
       "file_path": "documentation/ImageCaptureCore/icreturnconnectionerror.md",
@@ -5190,6 +6095,11 @@
       "file_path": "documentation/ImageCaptureCore/icreturnconnectionerror/sessionalreadyopen.md",
       "hash": "ee6f438e811a7d5b0c36ae578bb90538b798590af677e34ad8c9da5d2e344b35"
     },
+    "https://developer.apple.com/tutorials/data/documentation/imagecapturecore/icreturndeviceisaccessrestrictedappledevice.json": {
+      "etag": "\"28db-65d55d988e3d9-df\"",
+      "file_path": "documentation/ImageCaptureCore/icreturndeviceisaccessrestrictedappledevice.md",
+      "hash": "555aecd11ba637c8137ab52720e931923024e29debbf1b16575b614f30e15034"
+    },
     "https://developer.apple.com/tutorials/data/documentation/imagecapturecore/icreturndownloaderror.json": {
       "etag": "\"43a9-65d55d9829115-df\"",
       "file_path": "documentation/ImageCaptureCore/icreturndownloaderror.md",
@@ -5229,6 +6139,16 @@
       "etag": "\"1c6a-65d55d990446f-df\"",
       "file_path": "documentation/ImageCaptureCore/icreturndownloaderror/pathinvalid.md",
       "hash": "f35d167e0bec7f624a37849c024fac7806679dc2ad48c342a5405f00c7ee7bd2"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/imagecapturecore/icreturnfailedtodisabletethering.json": {
+      "etag": "\"2899-65d55d984ba92-df\"",
+      "file_path": "documentation/ImageCaptureCore/icreturnfailedtodisabletethering.md",
+      "hash": "362070a3c34a72a4ffaab18fda4028b9f59597ea8fd78f0509d2a54a71157a41"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/imagecapturecore/icreturnfailedtoenabletethering.json": {
+      "etag": "\"2893-65d55d999f8c4-df\"",
+      "file_path": "documentation/ImageCaptureCore/icreturnfailedtoenabletethering.md",
+      "hash": "dff406c35238ddcd3fc891ba0a5539175a733854a65bf240f2a01bf0d8e94811"
     },
     "https://developer.apple.com/tutorials/data/documentation/imagecapturecore/icreturnmetadataerror.json": {
       "etag": "\"4b66-65d55d996a126-df\"",
@@ -5679,6 +6599,11 @@
       "etag": "\"3918-65d55d991c277-df\"",
       "file_path": "documentation/ImageCaptureCore/icscannerdevicedelegate/scannerdevice(_,didselect,error).md",
       "hash": "a321a4fbe3fff29006dbbf2f018ffec80b84db5dfa55f12928ffd5d650a6e88e"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/imagecapturecore/icscannerdevicedelegate/scannerdevice:didscantourl:data:.json": {
+      "etag": "\"35e1-65d55d991c277-df\"",
+      "file_path": "documentation/ImageCaptureCore/icscannerdevicedelegate/scannerdevice_didscantourl_data_.md",
+      "hash": "7c15d99c080413873ae387a1d393e1fcc404ad5d2ef618573fbface87f9ba993"
     },
     "https://developer.apple.com/tutorials/data/documentation/imagecapturecore/icscannerdevicedelegate/scannerdevicedidbecomeavailable(_:).json": {
       "etag": "\"2ae6-65d55d991c277-df\"",
@@ -6655,6 +7580,11 @@
       "file_path": "documentation/ImageCaptureCore/icsessionoptions/init(rawvalue).md",
       "hash": "d42d13e25e6ef7226527f51c0e959e3a750863686f71d7f448b0fba0989ef1f3"
     },
+    "https://developer.apple.com/tutorials/data/documentation/imagecapturecore/icsize.json": {
+      "etag": "\"27fd-65d55d9935657-df\"",
+      "file_path": "documentation/ImageCaptureCore/icsize.md",
+      "hash": "4e9ff7b5e315ae69c2d351078615b74d6fac869cbed858d213fb02adef31a0df"
+    },
     "https://developer.apple.com/tutorials/data/documentation/imagecapturecore/icuploadoption.json": {
       "etag": "\"3149-65d55d984ba92-df\"",
       "file_path": "documentation/ImageCaptureCore/icuploadoption.md",
@@ -6664,6 +7594,41 @@
       "etag": "\"13c8-65d55d984ba92-df\"",
       "file_path": "documentation/ImageCaptureCore/icuploadoption/init(rawvalue).md",
       "hash": "364aaa76cec4e408cecd578e8725da5c70f66477d80fb6b66c94921d34bdf18f"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/imagecapturecore/imagecapture_extern.json": {
+      "etag": "\"284b-65d55d991c277-df\"",
+      "file_path": "documentation/ImageCaptureCore/imagecapture_extern.md",
+      "hash": "e7cf114bf28079280b4311773cf60454dcbfe7118763dd07530290e4634a2413"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/imagecapturecore/imagecapture_ios.json": {
+      "etag": "\"2801-65d55d97c2064-df\"",
+      "file_path": "documentation/ImageCaptureCore/imagecapture_ios.md",
+      "hash": "f458c1de8bc4e69cf7679a88f0037c7c1bacdf92507e44e3a55a5036402e7d5b"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/imagecapturecore/imagecapture_ios_osx.json": {
+      "etag": "\"2851-65d55d991c277-df\"",
+      "file_path": "documentation/ImageCaptureCore/imagecapture_ios_osx.md",
+      "hash": "c3de7cf7e7e21befc76f4934518f0ada935b07783f35bf0f64d5fd26749d6359"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/imagecapturecore/imagecapture_ios_osx_sim.json": {
+      "etag": "\"2869-65d55d990446f-df\"",
+      "file_path": "documentation/ImageCaptureCore/imagecapture_ios_osx_sim.md",
+      "hash": "3b146e787cb7140f580d4f39c8a5465ff41021b29b0ae92a409afdb6b1868074"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/imagecapturecore/imagecapture_ios_sim.json": {
+      "etag": "\"2838-65d55d98c03d0-df\"",
+      "file_path": "documentation/ImageCaptureCore/imagecapture_ios_sim.md",
+      "hash": "84572fb5048f21213110b3766b69622a1f05a3a8e32c5acdf50a0e7d40a2b175"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/imagecapturecore/imagecapture_platform_ios.json": {
+      "etag": "\"2856-65d55d97c2064-df\"",
+      "file_path": "documentation/ImageCaptureCore/imagecapture_platform_ios.md",
+      "hash": "3785de3987a66aa724f823af6223f63abe835169765417f25c7efc65a6788761"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/imagecapturecore/imagecapture_platform_osx.json": {
+      "etag": "\"27f9-65d55d98a8d16-df\"",
+      "file_path": "documentation/ImageCaptureCore/imagecapture_platform_osx.md",
+      "hash": "808512294307e28a9dab191f6210d11e41a16b567b2b8f6a929f461f393a1e9d"
     },
     "https://developer.apple.com/tutorials/data/documentation/imagecapturecore/imagecapturecore-constants.json": {
       "etag": "\"805f-6590261dcca3a-df\"",
@@ -6689,12 +7654,17 @@
       "etag": "\"ae60-6590261f41356-df\"",
       "file_path": "documentation/ImageCaptureCore/scanner-configuration.md",
       "hash": "177838a2d43e8ce69599de93101a51f2c25b970ff24a845307607cf2bbc0c920"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/imagecapturecore/suppressperformselectorleakwarning.json": {
+      "etag": "\"2938-65d55d996a126-df\"",
+      "file_path": "documentation/ImageCaptureCore/suppressperformselectorleakwarning.md",
+      "hash": "572198e9536639c47597c89277e9bcf65d516474f04b234ac6487e3bb49a4add"
     }
   },
   "metadata": {
     "render": {
-      "version": 1
+      "version": 2
     },
-    "total_pages": 1338
+    "total_pages": 1532
   }
 }

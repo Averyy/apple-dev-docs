@@ -31,6 +31,12 @@ If you’re just making one-off lookups and edits, this is the appropriate metho
 
 If the user denies your application access to the Address Book database, this method returns `nil`.
 
+## See Also
+
+### Creating and Initializing an Address Book
+- [+ addressBook](./addressbook.md)
+  Returns a new instance of `ABAddressBook`, or `nil` if the Address Book database can’t be initialized.
+
 
 ---
 

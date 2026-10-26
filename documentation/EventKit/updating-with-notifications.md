@@ -30,6 +30,12 @@ Because your local data is often invalidated or incomplete when a change occurs 
 
 > **Note**:  Events being modified in an event view controller with EventKitUI for iOS are updated automatically when a change occurs in the Calendar database. See [EventKit UI](../EventKitUI/EventKitUI.md) for more.
 
+## Topics
+
+### Receiving a Notification
+- [EKEventStoreChangedNotification](./ekeventstorechangednotification.md)
+  A notification posted when changes are made to the Calendar database.
+
 ## See Also
 
 ### Events and reminders

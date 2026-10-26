@@ -20,6 +20,7 @@
   Options for DADiskUnmount().
 - [typealias DAReturn](./dareturn.md)
   A return code.
+- [DAApprovalSessionRef](./daapprovalsessionref.md)
 
 ## See Also
 
@@ -31,6 +32,7 @@
   Register for mount/unmount notifications, and block mount/unmount events.
 - [DiskArbitration Enumerations](./diskarbitration-enumerations.md)
 - [DiskArbitration Constants](./diskarbitration-constants.md)
+- [DiskArbitration Functions](./diskarbitration-functions.md)
 
 
 ---

@@ -64,6 +64,8 @@ Note that the dictionary of settings is dependent on the current configuration o
   Returns a video settings dictionary appropriate for capturing video to a file with the specified codec and type.
 - [func recommendedVideoSettings(forVideoCodecType: AVVideoCodecType, assetWriterOutputFileType: AVFileType, outputFileURL: URL?) -> [String : Any]?](./recommendedvideosettings%28forvideocodectype,assetwriteroutputfiletype,outputfileurl%29.md)
   Returns a dictionary of recommended output settings for writing the specified code, file type, and output URL.
+- [minFrameDuration](./minframeduration.md)
+  The minimum frame duration.
 
 
 ---

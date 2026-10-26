@@ -28,6 +28,12 @@ typedef UInt16 PMPPDDomain;
 - [var kNetworkPPDDomain: Int](./knetworkppddomain.md)
 - [var kUserPPDDomain: Int](./kuserppddomain.md)
 - [var kCUPSPPDDomain: Int](./kcupsppddomain.md)
+- [kAllPPDDomains](./api-1506762-anonymous/kallppddomains.md)
+- [kSystemPPDDomain](./api-1506762-anonymous/ksystemppddomain.md)
+- [kLocalPPDDomain](./api-1506762-anonymous/klocalppddomain.md)
+- [kNetworkPPDDomain](./api-1506762-anonymous/knetworkppddomain.md)
+- [kUserPPDDomain](./api-1506762-anonymous/kuserppddomain.md)
+- [kCUPSPPDDomain](./api-1506762-anonymous/kcupsppddomain.md)
 
 
 ---

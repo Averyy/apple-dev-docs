@@ -1,0 +1,44 @@
+# obstacleWithRadius:
+
+**Framework**: GameplayKit  
+**Kind**: method  
+**Role**: Type Method
+
+Creates a spherical obstacle with the specified radius.
+
+**Availability**:
+- iOS 10.0+
+- iPadOS 10.0+
+- Mac Catalyst 13.1+
+- macOS 10.12+
+- tvOS 10.0+
+- visionOS 1.0+
+
+## Declaration
+
+```objc
++ (instancetype) obstacleWithRadius:(float) radius;
+```
+
+#### Return Value
+
+A spherical obstacle.
+
+#### Discussion
+
+To make agents avoid the obstacle, create a goal with the goalToAvoidObstacles:timeBeforeCollisionToAvoid: method.
+
+## Parameters
+
+- `radius`: The radius for the new obstacle.
+
+## See Also
+
+### Creating an Obstacle
+- [init(radius: Float)](./init%28radius%29.md)
+  Initializes a spherical obstacle with the specified radius.
+
+
+---
+
+*[View on Apple Developer](https://developer.apple.com/documentation/gameplaykit/gksphereobstacle/obstaclewithradius:)*

@@ -31,6 +31,12 @@ var naturalSize: CGSize { get }
 
 For visual tracks, like video or subtitle tracks, this property value is the natural size of the media. For nonvisual tracks, like audio or chapter tracks, the value is [`zero`](../../CoreFoundation/cgsize/zero.md).
 
+## See Also
+
+### Accessing visual characteristics
+- [preferredTransform](./preferredtransform.md)
+  The track’s transform preference to apply to its visual content during presentation or processing.
+
 
 ---
 

@@ -36,6 +36,11 @@ class func `class`() -> AnyClass
   A string containing the real class name and the id of the receiver as a hexadecimal number.
 - [var debugDescription: String](./debugdescription.md)
   A string containing a human-readable description of the receiver suitable for debugging.
+### Related Documentation
+- [+ class](../../ObjectiveC/nsobject-swift.class/class.md)
+  Returns the class object.
+- [- class](../../ObjectiveC/nsobject-c.protocol/class.md)
+  Returns the class object for the receiver’s class.
 
 
 ---

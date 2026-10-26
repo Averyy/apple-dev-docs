@@ -29,6 +29,9 @@ class MTLVisibleFunctionTableDescriptor
 ### Configuring the function table
 - [var functionCount: Int](./mtlvisiblefunctiontabledescriptor/functioncount.md)
   The number of entries in the function table.
+### Creating a visible function table descriptor
+- [+ visibleFunctionTableDescriptor](./mtlvisiblefunctiontabledescriptor/visiblefunctiontabledescriptor.md)
+  Creates a default visible function table descriptor.
 
 ## Relationships
 

@@ -49,6 +49,18 @@ static SPProjectiveTransform3D SPProjectiveTransform3DMakeWithRightHandPerspecti
 - [init(fovY: Angle2D, aspectRatio: Double, nearZ: Double, farZ: Double)](./init%28fovy,aspectratio,nearz,farz%29.md)
   Returns a projective transform with right-hand side perspective.
 - [init(scaledPose: ScaledPose3D)](./init%28scaledpose%29.md)
+- [SPProjectiveTransform3DMake](../spprojectivetransform3dmake-6aldt.md)
+  Creates a projective transform from the specified scale, rotate, and translate transforms.
+- [SPProjectiveTransform3DMake](../spprojectivetransform3dmake-83q47.md)
+- [SPProjectiveTransform3DMakeShear](../spprojectivetransform3dmakeshear.md)
+  Creates an affine transform from the specified shear transform.
+- [SPProjectiveTransform3DMakeWithPose](../spprojectivetransform3dmakewithpose.md)
+  Creates a projective transform from the specified pose structure.
+- [SPProjectiveTransform3DMakeWithScaledPose](../spprojectivetransform3dmakewithscaledpose.md)
+  Returns a new projective transform structure from the specified scaled pose structure.
+- [SPProjectiveTransform3DMakeWithRHPerspective](../spprojectivetransform3dmakewithrhperspective-97qwp.md)
+  Returns a projective transform with right-hand side perspective.
+- [SPProjectiveTransform3DMakeWithRHPerspective](../spprojectivetransform3dmakewithrhperspective-9gl97.md)
 
 
 ---

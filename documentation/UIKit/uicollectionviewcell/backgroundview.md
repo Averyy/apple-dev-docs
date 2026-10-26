@@ -40,6 +40,10 @@ A background configuration is mutually exclusive with background views, so you m
   A Boolean value that determines whether the cell automatically updates its background configuration when its state changes.
 - [var selectedBackgroundView: UIView?](./selectedbackgroundview.md)
   The view that displays just above the background view for a selected cell.
+- [- defaultBackgroundConfiguration](./defaultbackgroundconfiguration.md)
+  Retrieves a background configuration with system default values.
+- [backgroundConfiguration](./backgroundconfiguration-39dc0.md)
+  The current background configuration of the cell.
 
 
 ---

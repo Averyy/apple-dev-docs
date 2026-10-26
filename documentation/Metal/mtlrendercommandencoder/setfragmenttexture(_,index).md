@@ -39,6 +39,8 @@ By default, the texture at each index is `nil`.
 ### Assigning textures
 - [func setFragmentTextures([(any MTLTexture)?], range: Range<Int>)](./setfragmenttextures%28_,range%29.md)
   Assigns multiple textures to a range of entries in the fragment shader argument table.
+- [- setFragmentTextures:withRange:](./setfragmenttextures_withrange_.md)
+  Assigns multiple textures to a range of entries in the fragment shader argument table.
 
 
 ---

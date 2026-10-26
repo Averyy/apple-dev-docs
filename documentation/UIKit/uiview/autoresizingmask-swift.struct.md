@@ -38,6 +38,8 @@ enum UIViewAutoresizing : NSUInteger;
   Resizing performed by expanding or shrinking a view’s height.
 - [static var flexibleBottomMargin: UIView.AutoresizingMask](./autoresizingmask-swift.struct/flexiblebottommargin.md)
   Resizing performed by expanding or shrinking a view in the direction of the bottom margin.
+- [UIViewAutoresizingNone](../uiviewautoresizing/uiviewautoresizingnone.md)
+  The option for indicating that the view does not resize.
 ### Initializers
 - [init(rawValue: UInt)](./autoresizingmask-swift.struct/init%28rawvalue%29.md)
   Creates an autoresizing mask structure with the specified raw value.

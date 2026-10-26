@@ -43,6 +43,10 @@ A Core Video result code. See[Core Video Constants](./core-video-constants.md) f
   Returns the attributes of OpenGL buffers that will be created from a buffer pool.
 - [func CVOpenGLBufferPoolGetTypeID() -> CFTypeID](./cvopenglbufferpoolgettypeid%28%29.md)
   Obtains the Core Foundation ID for the OpenGL buffer pool type.
+- [CVOpenGLBufferPoolRetain](./cvopenglbufferpoolretain.md)
+  Retains an OpenGL buffer pool.
+- [CVOpenGLBufferPoolRelease](./cvopenglbufferpoolrelease.md)
+  Releases an OpenGL buffer pool.
 
 
 ---

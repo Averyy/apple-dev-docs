@@ -47,6 +47,8 @@ If `headerFields` doesn’t specify a path for a given cookie, the cookie is cre
 ### Creating cookies
 - [init?(properties: [HTTPCookiePropertyKey : Any])](./init%28properties%29.md)
   Initializes an HTTP cookie object with the given cookie properties.
+- [+ cookieWithProperties:](../nshttpcookie/cookiewithproperties_.md)
+  Creates and initializes an HTTP cookie object using the provided properties.
 
 
 ---

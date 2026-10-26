@@ -77,9 +77,9 @@ This API is used to get information about a path that the user has drawn on an o
 ## See Also
 
 ### User interface
-- [Adding parameters to plug-ins](https://developer.apple.com/documentation/professional-video-applications/adding-parameters-to-plug-ins)
+- [Adding parameters to plug-ins](../Professional-Video-Applications/adding-parameters-to-plug-ins.md)
   Create standard and custom user-facing parameters for your plug-in that will appear in the inspector.
-- [Adding onscreen controls to plug-ins](https://developer.apple.com/documentation/professional-video-applications/adding-onscreen-controls-to-plug-ins)
+- [Adding onscreen controls to plug-ins](../Professional-Video-Applications/adding-onscreen-controls-to-plug-ins.md)
   Simplify user interaction by using onscreen controls for your FxPlug plug-in.
 - [protocol FxUndoAPI](./fxundoapi.md)
   An API that defines the methods that the host app implements to handle plug-in management of the host app’s undo queue.

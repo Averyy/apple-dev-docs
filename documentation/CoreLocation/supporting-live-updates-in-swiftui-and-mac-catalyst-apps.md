@@ -138,6 +138,8 @@ Finally, include the `AppDelegate` functionality in your app’s `@main` structu
   Simplify location delivery using asynchronous events in Swift.
 - [Monitoring location changes with Core Location](./monitoring-location-changes-with-core-location.md)
   Define boundaries and act on user location updates.
+- [CLBackgroundActivitySession](./clbackgroundactivitysession-4nl4y.md)
+  An object that manages a visual indicator that keeps your app in use in the background, allowing it to receive updates or events.
 
 
 ---

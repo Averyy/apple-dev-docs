@@ -61,6 +61,9 @@ A 64-bit integer representation of the current value of the specified field.
   Returns a Boolean value indicating whether the mouse cursor is drawn in framebuffer memory.
 - [func CGCursorIsVisible() -> boolean_t](../cgcursorisvisible%28%29.md)
   Returns a Boolean value indicating whether the mouse cursor is visible.
+- [CGColorConversionInfoCreateFromList](../cgcolorconversioninfocreatefromlist.md)
+  Creates a conversion between an arbitrary number of specified color spaces.
+- [CGContextDrawPDFDocument](../cgcontextdrawpdfdocument.md)
 
 
 ---

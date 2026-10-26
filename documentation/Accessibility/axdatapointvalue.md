@@ -29,6 +29,19 @@ class AXDataPointValue
 
 An [`AXDataPointValue`](./axdatapointvalue.md) can be either numeric or categorical. Data points in a numeric axis use the [`number`](./axdatapointvalue/number.md) property, and data points in a categorical axis use the [`category`](./axdatapointvalue/category.md) property.
 
+## Topics
+
+### Creating a numeric value
+- [+ valueWithNumber:](./axdatapointvalue/valuewithnumber_.md)
+  Creates a numeric data value with the specified number.
+- [number](./axdatapointvalue/number.md)
+  A number that represents the numeric data value.
+### Creating a categorical value
+- [+ valueWithCategory:](./axdatapointvalue/valuewithcategory_.md)
+  Creates a categorical data value with the specified category string.
+- [category](./axdatapointvalue/category.md)
+  A string that represents the categorical data value.
+
 ## Relationships
 
 ### Inherits From
@@ -51,6 +64,8 @@ An [`AXDataPointValue`](./axdatapointvalue.md) can be either numeric or categori
   The value of the y-axis for the data point.
 - [AXDataPoint.Value](./axdatapoint/value.md)
   Constants that describe types of data values.
+- [additionalValues](./axdatapoint/additionalvalues.md)
+  An array of values for additional axes for the data point.
 
 
 ---

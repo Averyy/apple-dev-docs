@@ -86,6 +86,9 @@ Use Core Transferable along with the collection of common file and data transfer
   Creates a transfer representation by composing existing transfer representations.
 - [struct TupleTransferRepresentation](./tupletransferrepresentation.md)
   A wrapper type for tuples that contain transfer representations.
+### Variables
+- [CoreTransferableVersionNumber](./coretransferableversionnumber.md)
+  Project version number for CoreTransferable.
 
 
 ---

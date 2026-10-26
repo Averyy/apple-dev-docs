@@ -60,6 +60,25 @@ Pixel format attributes for OpenGL.
   A Boolean attribute. If present, this attribute indicates that only triple-buffered pixel formats are considered. Otherwise, only single-buffered pixel formats are considered.
 - [var NSOpenGLPFAVirtualScreenCount: Int](./nsopenglpfavirtualscreencount.md)
   The number of virtual screens in this format.
+- [NSOpenGLPFACompliant](./nsopenglpfacompliant.md)
+  A Boolean attribute. If present, this attribute indicates that pixel format selection is only open to OpenGL-compliant renderers. This attribute is implied unless `NSOpenGLPFAAllRenderers` is specified. This attribute is not useful in the attribute array.
+- [NSOpenGLPFAFullScreen](./nsopenglpfafullscreen.md)
+  A Boolean attribute. If present, this attribute indicates that only renderers that are capable of rendering to a full-screen drawable are considered. The `NSOpenGLPFASingleRenderer` attribute is implied.
+- [NSOpenGLPFAMPSafe](./nsopenglpfampsafe.md)
+  A Boolean attribute. If present, this attribute indicates that the renderer is multi-processor safe.
+- [NSOpenGLPFAMultiScreen](./nsopenglpfamultiscreen.md)
+  A Boolean attribute. If present, this attribute indicates that only renderers capable of driving multiple screens are considered. This attribute is not generally useful.
+- [NSOpenGLPFAOffScreen](./nsopenglpfaoffscreen.md)
+  A Boolean attribute. If present, this attribute indicates that only renderers that are capable of rendering to an offscreen memory area and have buffer depth exactly equal to the desired buffer depth are considered. The `NSOpenGLPFAClosestPolicy` attribute is implied.
+- [NSOpenGLPFAPixelBuffer](./nsopenglpfapixelbuffer.md)
+  A Boolean attribute. If present, this attribute indicates that rendering to a pixel buffer is enabled.
+- [NSOpenGLPFARemotePixelBuffer](./nsopenglpfaremotepixelbuffer.md)
+  A Boolean attribute. If present, this attribute indicates that rendering to a pixel buffer on an offline renderer is enabled.
+- [NSOpenGLPFARobust](./nsopenglpfarobust.md)
+  A Boolean attribute. If present, this attribute indicates that only renderers that do not have any failure modes associated with a lack of video card resources are considered. This attribute is not generally useful.
+- [NSOpenGLPFASingleRenderer](./nsopenglpfasinglerenderer.md)
+- [NSOpenGLPFAWindow](./nsopenglpfawindow.md)
+  A Boolean attribute. If present, this attribute indicates that only renderers that are capable of rendering to a window are considered. This attribute is implied if neither `NSOpenGLPFAFullScreen` nor `NSOpenGLPFAOffScreen` is specified.
 
 ## See Also
 

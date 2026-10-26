@@ -35,6 +35,8 @@ var submissionMode: VTSuperResolutionScalerParameters.SubmissionMode { get }
   Optional object that contains forward and backward optical flow with the previous frame.
 - [VTSuperResolutionScalerParameters.SubmissionMode](./submissionmode-swift.enum.md)
   Indicates the order of input frames.
+- [destinationFrame](./destinationframe.md)
+  Destination frame that contains user-allocated pixel buffer that receives the results.
 
 
 ---

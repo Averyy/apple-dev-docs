@@ -39,6 +39,16 @@ This bit mask is passed to functions that find the preferred app for an item or 
   Requests the role `Shell` (theapplication can execute the item).
 - [static var all: LSRolesMask](./lsrolesmask/api-1450616-all.md)
   Accepts any role with respect to the item.
+- [kLSRolesNone](./lsrolesmask/klsrolesnone.md)
+  Requests the role `None` (theapplication cannot open the item, but provides an icon and a kindstring for it).
+- [kLSRolesViewer](./lsrolesmask/klsrolesviewer.md)
+  Requests the role `Viewer` (theapplication can read and present the item, but cannot manipulateor save it).
+- [kLSRolesEditor](./lsrolesmask/klsroleseditor.md)
+  Requests the role `Editor` (theapplication can read, present, manipulate, and save the item).
+- [kLSRolesShell](./lsrolesmask/klsrolesshell.md)
+  Requests the role `Shell` (theapplication can execute the item).
+- [kLSRolesAll](./lsrolesmask/klsrolesall.md)
+  Accepts any role with respect to the item.
 ### Creating a Roles Mask
 - [init(rawValue: OptionBits)](./lsrolesmask/api-1445983-init.md)
 

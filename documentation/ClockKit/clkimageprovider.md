@@ -42,6 +42,10 @@ For information about image sizes to use in different templates, see [Apple Watc
   Creates and returns an image provider with the specified one-piece image.
 - [convenience init(onePieceImage: UIImage, twoPieceImageBackground: UIImage?, twoPieceImageForeground: UIImage?)](./clkimageprovider/init%28onepieceimage,twopieceimagebackground,twopieceimageforeground%29.md)
   Creates and returns an image provider with both one-piece and two-piece images.
+- [- initWithOnePieceImage:](./clkimageprovider/initwithonepieceimage_.md)
+  Creates and returns an image provider with the specified one-piece image.
+- [- initWithOnePieceImage:twoPieceImageBackground:twoPieceImageForeground:](./clkimageprovider/initwithonepieceimage_twopieceimagebackground_twopieceimageforeground_.md)
+  Creates and returns an image provider with both one-piece and two-piece images.
 ### Getting the Image Data
 - [var onePieceImage: UIImage](./clkimageprovider/onepieceimage.md)
   The template image to use as a one-piece image.

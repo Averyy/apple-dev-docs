@@ -23,6 +23,8 @@ static simd_float3 simd_make_float3(float other);
   Returns a new vector from the specified scalar values.
 - [func simd_make_float3_undef(Float) -> simd_float3](./simd_make_float3_undef%28_%29-4yqj8.md)
   Returns a new vector with the first element set to a scalar value, and other elements undefined.
+- [vector3](./vector3-3n3m0.md)
+  Returns a new vector from the specified scalar values.
 
 
 ---

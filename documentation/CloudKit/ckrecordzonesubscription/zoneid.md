@@ -37,6 +37,8 @@ For zone-based subscriptions, CloudKit sets this property’s value automaticall
 ### Accessing the Subscription Metadata
 - [var recordType: CKRecord.RecordType?](./recordtype-1fuqo.md)
   The type of record that the subscription queries.
+- [recordType](./recordtype-1kt07.md)
+  The type of record that the subscription queries.
 
 
 ---

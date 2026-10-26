@@ -31,6 +31,8 @@ When you use the [`PKAddPassButton`](./pkaddpassbutton.md) class to create a but
 ### Creating add pass buttons
 - [init(addPassButtonStyle: PKAddPassButtonStyle)](./pkaddpassbutton/init%28addpassbuttonstyle%29.md)
   Initializes a new Add Pass button.
+- [+ addPassButtonWithStyle:](./pkaddpassbutton/addpassbuttonwithstyle_.md)
+  Returns a button that prompts the user to add a pass to Wallet.
 ### Accessing the button’s style
 - [var addPassButtonStyle: PKAddPassButtonStyle](./pkaddpassbutton/addpassbuttonstyle.md)
   A constant representing the button’s style.

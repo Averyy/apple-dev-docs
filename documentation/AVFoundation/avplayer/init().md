@@ -33,6 +33,10 @@ init()
   Creates a new player to play a single audiovisual resource referenced by a given URL.
 - [init(playerItem: AVPlayerItem?)](./init%28playeritem%29.md)
   Creates a new player to play the specified player item.
+- [+ playerWithURL:](./playerwithurl_.md)
+  Returns a new player to play a single audiovisual resource referenced by a given URL.
+- [+ playerWithPlayerItem:](./playerwithplayeritem_.md)
+  Returns a new player initialized to play the specified player item.
 
 
 ---

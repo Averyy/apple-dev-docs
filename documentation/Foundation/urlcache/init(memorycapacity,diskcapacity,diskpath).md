@@ -49,6 +49,8 @@ The returned cache instance is backed by disk, so you have more leeway when choo
 ### Creating a new cache object
 - [convenience init(memoryCapacity: Int, diskCapacity: Int, directory: URL?)](./init%28memorycapacity,diskcapacity,directory%29.md)
   Creates a URL cache object with the specified memory and disk capacities, in the specified directory.
+- [- initWithMemoryCapacity:diskCapacity:directoryURL:](../nsurlcache/initwithmemorycapacity_diskcapacity_directoryurl_.md)
+  Creates a URL cache object with the specified memory and disk capacities, in the specified directory.
 
 
 ---

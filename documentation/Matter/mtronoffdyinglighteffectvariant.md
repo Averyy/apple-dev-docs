@@ -27,6 +27,7 @@ enum MTROnOffDyingLightEffectVariant : uint8_t;
 
 ### Enumeration Cases
 - [MTROnOffDyingLightEffectVariant.dyingLightFadeOff](./mtronoffdyinglighteffectvariant/dyinglightfadeoff.md)
+- [MTROnOffDyingLightEffectVariant20PercenterDimUpIn0p5SecondsThenFadeToOffIn1Second](./mtronoffdyinglighteffectvariant/mtronoffdyinglighteffectvariant20percenterdimupin0p5secondsthenfadetooffin1second.md)
 ### Initializers
 - [init?(rawValue: UInt8)](./mtronoffdyinglighteffectvariant/init%28rawvalue%29.md)
 

@@ -33,6 +33,8 @@ EKCalendarEventAvailabilityBusy
   The calendar supports the tentative event availability setting.
 - [static var unavailable: EKCalendarEventAvailabilityMask](./unavailable.md)
   The calendar supports the unavailable event availability setting.
+- [EKCalendarEventAvailabilityNone](./ekcalendareventavailabilitynone.md)
+  The calendar does not support event availability settings.
 
 
 ---

@@ -36,6 +36,8 @@ Typically, a message to a proxy is forwarded to the real object or causes the pr
 ### Creating Instances
 - [class func alloc() -> Self](./nsproxy/alloc%28%29.md)
   Returns a new instance of the receiving class
+- [+ allocWithZone:](./nsproxy/allocwithzone_.md)
+  Returns a new instance of the receiving class
 ### Deallocating Instances
 - [func dealloc()](./nsproxy/dealloc%28%29.md)
   Deallocates the memory occupied by the receiver.
@@ -45,6 +47,8 @@ Typically, a message to a proxy is forwarded to the real object or causes the pr
 ### Handling Unimplemented Methods
 - [func forwardInvocation(NSInvocation)](./nsproxy/forwardinvocation%28_%29.md)
   Passes a given invocation to the real object the proxy represents.
+- [- methodSignatureForSelector:](./nsproxy/methodsignatureforselector_.md)
+  Raises `NSInvalidArgumentException`. Override this method in your concrete subclass to return a proper `NSMethodSignature` object for the given selector and the class your proxy objects stand in for.
 ### Introspecting a Proxy Class
 - [class func responds(to: Selector) -> Bool](./nsproxy/responds%28to%29.md)
   Returns a Boolean value that indicates whether the receiving class responds to a given selector.
@@ -55,11 +59,17 @@ Typically, a message to a proxy is forwarded to the real object or causes the pr
   A string containing the real class name and the id of the receiver as a hexadecimal number.
 - [var debugDescription: String](./nsproxy/debugdescription.md)
   A string containing a human-readable description of the receiver suitable for debugging.
+### Instance Variables
+- [isa](./nsproxy/isa.md)
+### Instance Methods
+- [- allowsWeakReference](./nsproxy/allowsweakreference.md)
+- [- retainWeakReference](./nsproxy/retainweakreference.md)
 
 ## Relationships
 
 ### Inherited By
 - [NSProtocolChecker](./nsprotocolchecker.md)
+- [NSDistantObject](./nsdistantobject.md)
 ### Conforms To
 - [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 

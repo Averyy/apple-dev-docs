@@ -200,6 +200,11 @@
       "file_path": "documentation/TabletopKit/customaction/validate(snapshot).md",
       "hash": "b718b2bb7b1e0a83bbc36455d2d8d9845a945d034944f0e0b1f8fc37258e3709"
     },
+    "https://developer.apple.com/documentation/tabletopkit/customaction/validate(snapshot:)-1hmak": {
+      "etag": "\"17f5-65d55e0c6376e-df\"",
+      "file_path": "documentation/TabletopKit/customaction/validate(snapshot)-1hmak.md",
+      "hash": "56c94a7cbf7996fe36c6499436f2c15871939c8429264f273919b4f11369fb99"
+    },
     "https://developer.apple.com/documentation/tabletopkit/customequipmentstate": {
       "etag": "\"35d3-65d55e0c4e507-df\"",
       "file_path": "documentation/TabletopKit/customequipmentstate.md",
@@ -350,10 +355,25 @@
       "file_path": "documentation/TabletopKit/equipment/layoutchildren(for,visualstate).md",
       "hash": "1f99f272688a93f730ce4fc9ec055d87309e2822032867472c8eb0f2878a95bd"
     },
+    "https://developer.apple.com/documentation/tabletopkit/equipment/layoutchildren(for:visualstate:)-41c25": {
+      "etag": "\"1f6f-65d55e0cc740e-df\"",
+      "file_path": "documentation/TabletopKit/equipment/layoutchildren(for,visualstate)-41c25.md",
+      "hash": "cfd450ee11e306ac2b4b1f8becdf20804b0e1c277344c9c5870ded44208e067b"
+    },
     "https://developer.apple.com/documentation/tabletopkit/equipment/restingorientation(state:)": {
       "etag": "\"2a9a-65d55e0cc740e-df\"",
       "file_path": "documentation/TabletopKit/equipment/restingorientation(state).md",
       "hash": "e9e4dfb008d4c38cae574aa72794c7d51b80cbadeadf278d3829019582665668"
+    },
+    "https://developer.apple.com/documentation/tabletopkit/equipment/restingorientation(state:)-2u52p": {
+      "etag": "\"196b-65d55e0cbb895-df\"",
+      "file_path": "documentation/TabletopKit/equipment/restingorientation(state)-2u52p.md",
+      "hash": "4c0ec69a7bdd74c9ef1a7713fc3231fd9411357a3b1914e94289d4a2a8125923"
+    },
+    "https://developer.apple.com/documentation/tabletopkit/equipment/restingorientation(state:)-6xf7f": {
+      "etag": "\"1bbb-65d55e0cbb895-df\"",
+      "file_path": "documentation/TabletopKit/equipment/restingorientation(state)-6xf7f.md",
+      "hash": "a8d225efd11b4884e19b53c68ed72f77402a1b6d19d826c4b05d170ad37697a2"
     },
     "https://developer.apple.com/documentation/tabletopkit/equipment/state": {
       "etag": "\"13fd-65d55e0cc740e-df\"",
@@ -495,25 +515,50 @@
       "file_path": "documentation/TabletopKit/equipmentstate/boundingbox.md",
       "hash": "eec271a5625d224f940cd013ec2c2db26158a306de66d78bd72218edfc52ba88"
     },
+    "https://developer.apple.com/documentation/tabletopkit/equipmentstate/boundingbox-130kn": {
+      "etag": "\"1303-65d55e0c4e507-df\"",
+      "file_path": "documentation/TabletopKit/equipmentstate/boundingbox-130kn.md",
+      "hash": "f60cf4484242a61665b8dc9eeb283a9531e1616e04692912ffe78fc5d112e2a1"
+    },
     "https://developer.apple.com/documentation/tabletopkit/equipmentstate/lockedby": {
       "etag": "\"19ae-65d55e0c4e507-df\"",
       "file_path": "documentation/TabletopKit/equipmentstate/lockedby.md",
       "hash": "4d34e0a3c3ca67e0738080de73b8211c219d5d49b0199fabe174045fb915a48e"
+    },
+    "https://developer.apple.com/documentation/tabletopkit/equipmentstate/lockedby-6h90y": {
+      "etag": "\"123d-65d55e0c4e507-df\"",
+      "file_path": "documentation/TabletopKit/equipmentstate/lockedby-6h90y.md",
+      "hash": "f06b2d581a73f989d45c57eb5a952ca91ab0889630517b892ea7d5faa383ee79"
     },
     "https://developer.apple.com/documentation/tabletopkit/equipmentstate/parentid": {
       "etag": "\"1569-65d55e0c4e507-df\"",
       "file_path": "documentation/TabletopKit/equipmentstate/parentid.md",
       "hash": "f7f0db9fba2390a68556687168706d37825050764fab12f296a0c61acd5218f5"
     },
+    "https://developer.apple.com/documentation/tabletopkit/equipmentstate/parentid-5pq98": {
+      "etag": "\"119a-65d55e0c4e507-df\"",
+      "file_path": "documentation/TabletopKit/equipmentstate/parentid-5pq98.md",
+      "hash": "3d867ce8a9eefaa9ff63c03bb781f71b6f376bb7bdf4fed0429749f1356b30c6"
+    },
     "https://developer.apple.com/documentation/tabletopkit/equipmentstate/pose": {
       "etag": "\"1d8b-65d55e0c4e507-df\"",
       "file_path": "documentation/TabletopKit/equipmentstate/pose.md",
       "hash": "db3f4e9a4ce54c3beb6c2c0c4a6a813cc2addda514eeed3f6c36a4fe8cf32264"
     },
+    "https://developer.apple.com/documentation/tabletopkit/equipmentstate/pose-93dxm": {
+      "etag": "\"15c8-65d55e0c4e507-df\"",
+      "file_path": "documentation/TabletopKit/equipmentstate/pose-93dxm.md",
+      "hash": "ab74a37fd06b62985534ec84fbab30498297a799ff445e451b5ccd8c61eb3ce8"
+    },
     "https://developer.apple.com/documentation/tabletopkit/equipmentstate/seatcontrol": {
       "etag": "\"1933-65d55e0c4e507-df\"",
       "file_path": "documentation/TabletopKit/equipmentstate/seatcontrol.md",
       "hash": "938f4915fbcc5f1eaf000cf6d05a956a3b4526273e50a614269d706a90f3f7c8"
+    },
+    "https://developer.apple.com/documentation/tabletopkit/equipmentstate/seatcontrol-pb0s": {
+      "etag": "\"11ad-65d55e0c4e507-df\"",
+      "file_path": "documentation/TabletopKit/equipmentstate/seatcontrol-pb0s.md",
+      "hash": "ed438f15c55d86aed729c58dc08dc6d6c724fe30cac1b54a3ad799d672480456"
     },
     "https://developer.apple.com/documentation/tabletopkit/equipmentstatecollection": {
       "etag": "\"421a-65d55e0bf3aa8-df\"",
@@ -1195,6 +1240,11 @@
       "file_path": "documentation/TabletopKit/tabletop/layoutchildren(for,visualstate).md",
       "hash": "ca2ba80bc44b8e4ac7657f8145b43295c438505118292ef2984c04b591098b9c"
     },
+    "https://developer.apple.com/documentation/tabletopkit/tabletop/layoutchildren(for:visualstate:)-6na08": {
+      "etag": "\"1f4b-65d55e0c6376e-df\"",
+      "file_path": "documentation/TabletopKit/tabletop/layoutchildren(for,visualstate)-6na08.md",
+      "hash": "44908021c5358b6c55a04a0b1cc17d21d04b092c0294d836ca49b6b66f16e105"
+    },
     "https://developer.apple.com/documentation/tabletopkit/tabletop/shape": {
       "etag": "\"1411-65d55e0c6376e-df\"",
       "file_path": "documentation/TabletopKit/tabletop/shape.md",
@@ -1500,45 +1550,90 @@
       "file_path": "documentation/TabletopKit/tabletopgame/observer/actionispending(_,oldsnapshot,newsnapshot).md",
       "hash": "f98598e86ce55741e6cf34d92dea7db250210455c297dc5b1179ec51c79de90e"
     },
+    "https://developer.apple.com/documentation/tabletopkit/tabletopgame/observer/actionispending(_:oldsnapshot:newsnapshot:)-1zrv1": {
+      "etag": "\"2fd2-65d55e0c1a0b6-df\"",
+      "file_path": "documentation/TabletopKit/tabletopgame/observer/actionispending(_,oldsnapshot,newsnapshot)-1zrv1.md",
+      "hash": "a7ad2e29ca02117fad459ebdea398940f2a4ddedf53f385d1a5ad9cb75dd9316"
+    },
     "https://developer.apple.com/documentation/tabletopkit/tabletopgame/observer/actionwascancelled(_:reason:)": {
       "etag": "\"2c6b-65d55e0c1a0b6-df\"",
       "file_path": "documentation/TabletopKit/tabletopgame/observer/actionwascancelled(_,reason).md",
       "hash": "bc78fb1cb140571bdbbd65425f2c536a3767908f6902ae5a757a29fea6d9db97"
+    },
+    "https://developer.apple.com/documentation/tabletopkit/tabletopgame/observer/actionwascancelled(_:reason:)-15sdh": {
+      "etag": "\"23d3-65d55e0c34940-df\"",
+      "file_path": "documentation/TabletopKit/tabletopgame/observer/actionwascancelled(_,reason)-15sdh.md",
+      "hash": "5f3fb45ddddc84d4489de094553a3efb872065fcec71504848a14e16d7ab0918"
     },
     "https://developer.apple.com/documentation/tabletopkit/tabletopgame/observer/actionwasconfirmed(_:oldsnapshot:newsnapshot:)": {
       "etag": "\"50ec-65d55e0c34940-df\"",
       "file_path": "documentation/TabletopKit/tabletopgame/observer/actionwasconfirmed(_,oldsnapshot,newsnapshot).md",
       "hash": "ac46244582762f633260df6b24a0edf3160e96827f4fc3922c5fdfa833bb5232"
     },
+    "https://developer.apple.com/documentation/tabletopkit/tabletopgame/observer/actionwasconfirmed(_:oldsnapshot:newsnapshot:)-7vrid": {
+      "etag": "\"2493-65d55e0c1a0b6-df\"",
+      "file_path": "documentation/TabletopKit/tabletopgame/observer/actionwasconfirmed(_,oldsnapshot,newsnapshot)-7vrid.md",
+      "hash": "189e0325d1a548b85988c1cdb19c73672ab1b321050db4d866175861aaafa6ee"
+    },
     "https://developer.apple.com/documentation/tabletopkit/tabletopgame/observer/actionwasdiscarded(_:)": {
       "etag": "\"4623-65d55e0c34940-df\"",
       "file_path": "documentation/TabletopKit/tabletopgame/observer/actionwasdiscarded(_).md",
       "hash": "4e9ba440e68f0111d8f73c6b5eeca6c396274e344e0a45686213e20bf3cabb88"
+    },
+    "https://developer.apple.com/documentation/tabletopkit/tabletopgame/observer/actionwasdiscarded(_:)-vokw": {
+      "etag": "\"19c9-65d55e0c1a0b6-df\"",
+      "file_path": "documentation/TabletopKit/tabletopgame/observer/actionwasdiscarded(_)-vokw.md",
+      "hash": "ec0a664410349bc9bba40ec4536009cb538a6610f3a7fb3da227596d94e24e32"
     },
     "https://developer.apple.com/documentation/tabletopkit/tabletopgame/observer/actionwasrolledback(_:snapshot:)": {
       "etag": "\"4907-65d55e0c1a0b6-df\"",
       "file_path": "documentation/TabletopKit/tabletopgame/observer/actionwasrolledback(_,snapshot).md",
       "hash": "6ba6c6a3b9e6351183cd3b6b5a35025da29721f6ccbae94ded0569a8170f018f"
     },
+    "https://developer.apple.com/documentation/tabletopkit/tabletopgame/observer/actionwasrolledback(_:snapshot:)-3mbrx": {
+      "etag": "\"1cae-65d55e0c1a0b6-df\"",
+      "file_path": "documentation/TabletopKit/tabletopgame/observer/actionwasrolledback(_,snapshot)-3mbrx.md",
+      "hash": "a771edeac9191426bfc693f751e8d634f4f89c03bff70ccef3e2c74b2a79f492"
+    },
     "https://developer.apple.com/documentation/tabletopkit/tabletopgame/observer/interactionwasupdated(_:snapshot:)": {
       "etag": "\"3ca3-65d55e0c1a0b6-df\"",
       "file_path": "documentation/TabletopKit/tabletopgame/observer/interactionwasupdated(_,snapshot).md",
       "hash": "ef80da87760631f1247ddc17988bcb3b75f9ca6cbc528b03326b762ecd727ade"
+    },
+    "https://developer.apple.com/documentation/tabletopkit/tabletopgame/observer/interactionwasupdated(_:snapshot:)-1dvgk": {
+      "etag": "\"2ebc-65d55e0c34940-df\"",
+      "file_path": "documentation/TabletopKit/tabletopgame/observer/interactionwasupdated(_,snapshot)-1dvgk.md",
+      "hash": "271f5f5549c992fe6959301a824cd9ece9ef4e73f775f29fac57ea93dc21d581"
     },
     "https://developer.apple.com/documentation/tabletopkit/tabletopgame/observer/playerchangedseats(_:oldseat:newseat:snapshot:)": {
       "etag": "\"3648-65d55e0c1a0b6-df\"",
       "file_path": "documentation/TabletopKit/tabletopgame/observer/playerchangedseats(_,oldseat,newseat,snapshot).md",
       "hash": "ad77997e835e1f07ab2ae7eb305634c36ee4846e7bf9f7485b83ed1a42cf09f7"
     },
+    "https://developer.apple.com/documentation/tabletopkit/tabletopgame/observer/playerchangedseats(_:oldseat:newseat:snapshot:)-idxf": {
+      "etag": "\"269e-65d55e0c34940-df\"",
+      "file_path": "documentation/TabletopKit/tabletopgame/observer/playerchangedseats(_,oldseat,newseat,snapshot)-idxf.md",
+      "hash": "58b33c0a160fad1fcdf47cff3b0fceffaac22b9aa4cb0a8c575607ac472403a3"
+    },
     "https://developer.apple.com/documentation/tabletopkit/tabletopgame/observer/statedidresettobookmark(_:)": {
       "etag": "\"2ab4-65d55e0c1a0b6-df\"",
       "file_path": "documentation/TabletopKit/tabletopgame/observer/statedidresettobookmark(_).md",
       "hash": "c4504b16f2fd104bbad1235c6b91d897ecd24301f6c7c2b68fba528018011a77"
     },
+    "https://developer.apple.com/documentation/tabletopkit/tabletopgame/observer/statedidresettobookmark(_:)-2ahod": {
+      "etag": "\"1b0b-65d55e0c34940-df\"",
+      "file_path": "documentation/TabletopKit/tabletopgame/observer/statedidresettobookmark(_)-2ahod.md",
+      "hash": "2989cd09ac8e6332eb56d9fd46e627aad28eebeaff2f0047a5afc79e9218faab"
+    },
     "https://developer.apple.com/documentation/tabletopkit/tabletopgame/observer/validateaction(_:snapshot:)": {
       "etag": "\"5411-65d55e0c34940-df\"",
       "file_path": "documentation/TabletopKit/tabletopgame/observer/validateaction(_,snapshot).md",
       "hash": "a51d6baa3bb06c5e418fe610dce0ab130e734c346c03297134f3a608b7ab3bfd"
+    },
+    "https://developer.apple.com/documentation/tabletopkit/tabletopgame/observer/validateaction(_:snapshot:)-22pj7": {
+      "etag": "\"27b8-65d55e0c1a0b6-df\"",
+      "file_path": "documentation/TabletopKit/tabletopgame/observer/validateaction(_,snapshot)-22pj7.md",
+      "hash": "652c16e3efd810b5a72ed1fa27e2d6c5f28f305e7da527c619c48e5d249bfbd2"
     },
     "https://developer.apple.com/documentation/tabletopkit/tabletopgame/releaseseat()": {
       "etag": "\"17fb-65d55e0c1a0b6-df\"",
@@ -1565,10 +1660,20 @@
       "file_path": "documentation/TabletopKit/tabletopgame/renderdelegate/onupdate(timeinterval,snapshot,visualstate).md",
       "hash": "c35b6a98b6654cb5b206b938274f34c75cfb4f1a2a7f8b7ee59af2fa9b77e664"
     },
+    "https://developer.apple.com/documentation/tabletopkit/tabletopgame/renderdelegate/onupdate(timeinterval:snapshot:visualstate:)-5f78q": {
+      "etag": "\"1f81-65d55e0c1a0b6-df\"",
+      "file_path": "documentation/TabletopKit/tabletopgame/renderdelegate/onupdate(timeinterval,snapshot,visualstate)-5f78q.md",
+      "hash": "84521b1fd2b1bcac9ca01393a0673306b2f95affa6f94c2144fa6a3ef62ae640"
+    },
     "https://developer.apple.com/documentation/tabletopkit/tabletopgame/renderdelegate/updaterootpose(_:)": {
       "etag": "\"2385-65d55e0c1a0b6-df\"",
       "file_path": "documentation/TabletopKit/tabletopgame/renderdelegate/updaterootpose(_).md",
       "hash": "1889328b571a25df7dc81d87818b0143edd7acea7ada67b7436cfcc70f77f5fd"
+    },
+    "https://developer.apple.com/documentation/tabletopkit/tabletopgame/renderdelegate/updaterootpose(_:)-64gn7": {
+      "etag": "\"1688-65d55e0c1a0b6-df\"",
+      "file_path": "documentation/TabletopKit/tabletopgame/renderdelegate/updaterootpose(_)-64gn7.md",
+      "hash": "2ec5476b8cf7642c6b701487106f8494114a78d1b033e98f43c3f9fd948d40cf"
     },
     "https://developer.apple.com/documentation/tabletopkit/tabletopgame/rootpose": {
       "etag": "\"1ebb-65d55e0c1a0b6-df\"",
@@ -1725,20 +1830,40 @@
       "file_path": "documentation/TabletopKit/tabletopinteraction/delegate/ontossstart(interaction,outcomes).md",
       "hash": "a69e7bec2d8af44d4b2b61a5057023869f32cfd5966ac19fd6e6545de01354c7"
     },
+    "https://developer.apple.com/documentation/tabletopkit/tabletopinteraction/delegate/ontossstart(interaction:outcomes:)-8v0lv": {
+      "etag": "\"2065-65d55e0ca2806-df\"",
+      "file_path": "documentation/TabletopKit/tabletopinteraction/delegate/ontossstart(interaction,outcomes)-8v0lv.md",
+      "hash": "5cd2fb2290de4ad6b81ba23fdbd0fc5a2819defcbcf6de74936c05acf5e37ff7"
+    },
     "https://developer.apple.com/documentation/tabletopkit/tabletopinteraction/delegate/shouldacceptdirectinteraction(initialvalue:handoffvalue:)": {
       "etag": "\"4d25-65d55e0ca2806-df\"",
       "file_path": "documentation/TabletopKit/tabletopinteraction/delegate/shouldacceptdirectinteraction(initialvalue,handoffvalue).md",
       "hash": "8ec5c8eae7a999bef77445e9f18d11d644c2287cf938e18aa78054a51ad83ff7"
+    },
+    "https://developer.apple.com/documentation/tabletopkit/tabletopinteraction/delegate/shouldacceptdirectinteraction(initialvalue:handoffvalue:)-5yq7h": {
+      "etag": "\"2ee8-65d55e0ca2806-df\"",
+      "file_path": "documentation/TabletopKit/tabletopinteraction/delegate/shouldacceptdirectinteraction(initialvalue,handoffvalue)-5yq7h.md",
+      "hash": "736c7796f7d2728dc1663ec18e7b5cbb22f4d398969259cbca022a137c5e2fd0"
     },
     "https://developer.apple.com/documentation/tabletopkit/tabletopinteraction/delegate/shouldacceptindirectinteraction(initialvalue:handoffvalue:)": {
       "etag": "\"4d62-65d55e0ca2806-df\"",
       "file_path": "documentation/TabletopKit/tabletopinteraction/delegate/shouldacceptindirectinteraction(initialvalue,handoffvalue).md",
       "hash": "277387f8662a21948a3c227ede90b4ea706e05307f80a5b39935db194349b2cf"
     },
+    "https://developer.apple.com/documentation/tabletopkit/tabletopinteraction/delegate/shouldacceptindirectinteraction(initialvalue:handoffvalue:)-4a1g0": {
+      "etag": "\"2f25-65d55e0ca2806-df\"",
+      "file_path": "documentation/TabletopKit/tabletopinteraction/delegate/shouldacceptindirectinteraction(initialvalue,handoffvalue)-4a1g0.md",
+      "hash": "9b219b3f8dc8dda8b2964de3aca9b75a0252c01f6cbb573e5b5129ff755e26f7"
+    },
     "https://developer.apple.com/documentation/tabletopkit/tabletopinteraction/delegate/shouldacceptinteraction(initialvalue:handoffvalue:)": {
       "etag": "\"4bfc-65d55e0ca2806-df\"",
       "file_path": "documentation/TabletopKit/tabletopinteraction/delegate/shouldacceptinteraction(initialvalue,handoffvalue).md",
       "hash": "4fc5698c3ddaeccabab4395d2acbfabb84e36b1ce173826c24e5698e7d1ae1da"
+    },
+    "https://developer.apple.com/documentation/tabletopkit/tabletopinteraction/delegate/shouldacceptinteraction(initialvalue:handoffvalue:)-7dm2w": {
+      "etag": "\"2dbf-65d55e0ca2806-df\"",
+      "file_path": "documentation/TabletopKit/tabletopinteraction/delegate/shouldacceptinteraction(initialvalue,handoffvalue)-7dm2w.md",
+      "hash": "3e20b456b9486a3a54cf3de86c7cccb2436c18037b46c22436e49c00ef5fce95"
     },
     "https://developer.apple.com/documentation/tabletopkit/tabletopinteraction/delegate/update(interaction:)": {
       "etag": "\"13ab-65d55e0ca2806-df\"",
@@ -3340,6 +3465,11 @@
       "file_path": "documentation/TabletopKit/customaction/init(from).md",
       "hash": "5279b1721dda3b9ee23e6a3bd3ed6b5cbf003a74121d9c5e60f6fc93e1e39e2a"
     },
+    "https://developer.apple.com/tutorials/data/documentation/tabletopkit/customaction/validate(snapshot:)-1hmak.json": {
+      "etag": "\"17f5-65d55e0c6376e-df\"",
+      "file_path": "documentation/TabletopKit/customaction/validate(snapshot)-1hmak.md",
+      "hash": "56c94a7cbf7996fe36c6499436f2c15871939c8429264f273919b4f11369fb99"
+    },
     "https://developer.apple.com/tutorials/data/documentation/tabletopkit/customaction/validate(snapshot:).json": {
       "etag": "\"1fe9-65d55e0c6376e-df\"",
       "file_path": "documentation/TabletopKit/customaction/validate(snapshot).md",
@@ -3490,10 +3620,25 @@
       "file_path": "documentation/TabletopKit/equipment/initialstate.md",
       "hash": "2b487abd305baecf544efbded4b85e8dc5a61121fa3927285919109a5bac2bf4"
     },
+    "https://developer.apple.com/tutorials/data/documentation/tabletopkit/equipment/layoutchildren(for:visualstate:)-41c25.json": {
+      "etag": "\"1f6f-65d55e0cc740e-df\"",
+      "file_path": "documentation/TabletopKit/equipment/layoutchildren(for,visualstate)-41c25.md",
+      "hash": "cfd450ee11e306ac2b4b1f8becdf20804b0e1c277344c9c5870ded44208e067b"
+    },
     "https://developer.apple.com/tutorials/data/documentation/tabletopkit/equipment/layoutchildren(for:visualstate:).json": {
       "etag": "\"2b35-65d55e0cc740e-df\"",
       "file_path": "documentation/TabletopKit/equipment/layoutchildren(for,visualstate).md",
       "hash": "1f99f272688a93f730ce4fc9ec055d87309e2822032867472c8eb0f2878a95bd"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/tabletopkit/equipment/restingorientation(state:)-2u52p.json": {
+      "etag": "\"196b-65d55e0cbb895-df\"",
+      "file_path": "documentation/TabletopKit/equipment/restingorientation(state)-2u52p.md",
+      "hash": "4c0ec69a7bdd74c9ef1a7713fc3231fd9411357a3b1914e94289d4a2a8125923"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/tabletopkit/equipment/restingorientation(state:)-6xf7f.json": {
+      "etag": "\"1bbb-65d55e0cbb895-df\"",
+      "file_path": "documentation/TabletopKit/equipment/restingorientation(state)-6xf7f.md",
+      "hash": "a8d225efd11b4884e19b53c68ed72f77402a1b6d19d826c4b05d170ad37697a2"
     },
     "https://developer.apple.com/tutorials/data/documentation/tabletopkit/equipment/restingorientation(state:).json": {
       "etag": "\"2a9a-65d55e0cc740e-df\"",
@@ -3635,25 +3780,50 @@
       "file_path": "documentation/TabletopKit/equipmentstate.md",
       "hash": "08af7811ebfd30931d1b3fe2a6a8e8ac087a9adbae37bfad7e86a381803c185f"
     },
+    "https://developer.apple.com/tutorials/data/documentation/tabletopkit/equipmentstate/boundingbox-130kn.json": {
+      "etag": "\"1303-65d55e0c4e507-df\"",
+      "file_path": "documentation/TabletopKit/equipmentstate/boundingbox-130kn.md",
+      "hash": "f60cf4484242a61665b8dc9eeb283a9531e1616e04692912ffe78fc5d112e2a1"
+    },
     "https://developer.apple.com/tutorials/data/documentation/tabletopkit/equipmentstate/boundingbox.json": {
       "etag": "\"1bd8-65d55e0c4e507-df\"",
       "file_path": "documentation/TabletopKit/equipmentstate/boundingbox.md",
       "hash": "eec271a5625d224f940cd013ec2c2db26158a306de66d78bd72218edfc52ba88"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/tabletopkit/equipmentstate/lockedby-6h90y.json": {
+      "etag": "\"123d-65d55e0c4e507-df\"",
+      "file_path": "documentation/TabletopKit/equipmentstate/lockedby-6h90y.md",
+      "hash": "f06b2d581a73f989d45c57eb5a952ca91ab0889630517b892ea7d5faa383ee79"
     },
     "https://developer.apple.com/tutorials/data/documentation/tabletopkit/equipmentstate/lockedby.json": {
       "etag": "\"19ae-65d55e0c4e507-df\"",
       "file_path": "documentation/TabletopKit/equipmentstate/lockedby.md",
       "hash": "4d34e0a3c3ca67e0738080de73b8211c219d5d49b0199fabe174045fb915a48e"
     },
+    "https://developer.apple.com/tutorials/data/documentation/tabletopkit/equipmentstate/parentid-5pq98.json": {
+      "etag": "\"119a-65d55e0c4e507-df\"",
+      "file_path": "documentation/TabletopKit/equipmentstate/parentid-5pq98.md",
+      "hash": "3d867ce8a9eefaa9ff63c03bb781f71b6f376bb7bdf4fed0429749f1356b30c6"
+    },
     "https://developer.apple.com/tutorials/data/documentation/tabletopkit/equipmentstate/parentid.json": {
       "etag": "\"1569-65d55e0c4e507-df\"",
       "file_path": "documentation/TabletopKit/equipmentstate/parentid.md",
       "hash": "f7f0db9fba2390a68556687168706d37825050764fab12f296a0c61acd5218f5"
     },
+    "https://developer.apple.com/tutorials/data/documentation/tabletopkit/equipmentstate/pose-93dxm.json": {
+      "etag": "\"15c8-65d55e0c4e507-df\"",
+      "file_path": "documentation/TabletopKit/equipmentstate/pose-93dxm.md",
+      "hash": "ab74a37fd06b62985534ec84fbab30498297a799ff445e451b5ccd8c61eb3ce8"
+    },
     "https://developer.apple.com/tutorials/data/documentation/tabletopkit/equipmentstate/pose.json": {
       "etag": "\"1d8b-65d55e0c4e507-df\"",
       "file_path": "documentation/TabletopKit/equipmentstate/pose.md",
       "hash": "db3f4e9a4ce54c3beb6c2c0c4a6a813cc2addda514eeed3f6c36a4fe8cf32264"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/tabletopkit/equipmentstate/seatcontrol-pb0s.json": {
+      "etag": "\"11ad-65d55e0c4e507-df\"",
+      "file_path": "documentation/TabletopKit/equipmentstate/seatcontrol-pb0s.md",
+      "hash": "ed438f15c55d86aed729c58dc08dc6d6c724fe30cac1b54a3ad799d672480456"
     },
     "https://developer.apple.com/tutorials/data/documentation/tabletopkit/equipmentstate/seatcontrol.json": {
       "etag": "\"1933-65d55e0c4e507-df\"",
@@ -4335,6 +4505,11 @@
       "file_path": "documentation/TabletopKit/tabletop.md",
       "hash": "c9bc1b117b0f81ba8eb57ab0aa95fd913860c57a4aba57c4811afb7e16772636"
     },
+    "https://developer.apple.com/tutorials/data/documentation/tabletopkit/tabletop/layoutchildren(for:visualstate:)-6na08.json": {
+      "etag": "\"1f4b-65d55e0c6376e-df\"",
+      "file_path": "documentation/TabletopKit/tabletop/layoutchildren(for,visualstate)-6na08.md",
+      "hash": "44908021c5358b6c55a04a0b1cc17d21d04b092c0294d836ca49b6b66f16e105"
+    },
     "https://developer.apple.com/tutorials/data/documentation/tabletopkit/tabletop/layoutchildren(for:visualstate:).json": {
       "etag": "\"2632-65d55e0c6376e-df\"",
       "file_path": "documentation/TabletopKit/tabletop/layoutchildren(for,visualstate).md",
@@ -4640,45 +4815,90 @@
       "file_path": "documentation/TabletopKit/tabletopgame/observer.md",
       "hash": "7e32287edcea6e4fe7449adb3379521d95234caf851a2b4e61cc4f1f385a8c37"
     },
+    "https://developer.apple.com/tutorials/data/documentation/tabletopkit/tabletopgame/observer/actionispending(_:oldsnapshot:newsnapshot:)-1zrv1.json": {
+      "etag": "\"2fd2-65d55e0c1a0b6-df\"",
+      "file_path": "documentation/TabletopKit/tabletopgame/observer/actionispending(_,oldsnapshot,newsnapshot)-1zrv1.md",
+      "hash": "a7ad2e29ca02117fad459ebdea398940f2a4ddedf53f385d1a5ad9cb75dd9316"
+    },
     "https://developer.apple.com/tutorials/data/documentation/tabletopkit/tabletopgame/observer/actionispending(_:oldsnapshot:newsnapshot:).json": {
       "etag": "\"5c2b-65d55e0c34940-df\"",
       "file_path": "documentation/TabletopKit/tabletopgame/observer/actionispending(_,oldsnapshot,newsnapshot).md",
       "hash": "f98598e86ce55741e6cf34d92dea7db250210455c297dc5b1179ec51c79de90e"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/tabletopkit/tabletopgame/observer/actionwascancelled(_:reason:)-15sdh.json": {
+      "etag": "\"23d3-65d55e0c34940-df\"",
+      "file_path": "documentation/TabletopKit/tabletopgame/observer/actionwascancelled(_,reason)-15sdh.md",
+      "hash": "5f3fb45ddddc84d4489de094553a3efb872065fcec71504848a14e16d7ab0918"
     },
     "https://developer.apple.com/tutorials/data/documentation/tabletopkit/tabletopgame/observer/actionwascancelled(_:reason:).json": {
       "etag": "\"2c6b-65d55e0c1a0b6-df\"",
       "file_path": "documentation/TabletopKit/tabletopgame/observer/actionwascancelled(_,reason).md",
       "hash": "bc78fb1cb140571bdbbd65425f2c536a3767908f6902ae5a757a29fea6d9db97"
     },
+    "https://developer.apple.com/tutorials/data/documentation/tabletopkit/tabletopgame/observer/actionwasconfirmed(_:oldsnapshot:newsnapshot:)-7vrid.json": {
+      "etag": "\"2493-65d55e0c1a0b6-df\"",
+      "file_path": "documentation/TabletopKit/tabletopgame/observer/actionwasconfirmed(_,oldsnapshot,newsnapshot)-7vrid.md",
+      "hash": "189e0325d1a548b85988c1cdb19c73672ab1b321050db4d866175861aaafa6ee"
+    },
     "https://developer.apple.com/tutorials/data/documentation/tabletopkit/tabletopgame/observer/actionwasconfirmed(_:oldsnapshot:newsnapshot:).json": {
       "etag": "\"50ec-65d55e0c34940-df\"",
       "file_path": "documentation/TabletopKit/tabletopgame/observer/actionwasconfirmed(_,oldsnapshot,newsnapshot).md",
       "hash": "ac46244582762f633260df6b24a0edf3160e96827f4fc3922c5fdfa833bb5232"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/tabletopkit/tabletopgame/observer/actionwasdiscarded(_:)-vokw.json": {
+      "etag": "\"19c9-65d55e0c1a0b6-df\"",
+      "file_path": "documentation/TabletopKit/tabletopgame/observer/actionwasdiscarded(_)-vokw.md",
+      "hash": "ec0a664410349bc9bba40ec4536009cb538a6610f3a7fb3da227596d94e24e32"
     },
     "https://developer.apple.com/tutorials/data/documentation/tabletopkit/tabletopgame/observer/actionwasdiscarded(_:).json": {
       "etag": "\"4623-65d55e0c34940-df\"",
       "file_path": "documentation/TabletopKit/tabletopgame/observer/actionwasdiscarded(_).md",
       "hash": "4e9ba440e68f0111d8f73c6b5eeca6c396274e344e0a45686213e20bf3cabb88"
     },
+    "https://developer.apple.com/tutorials/data/documentation/tabletopkit/tabletopgame/observer/actionwasrolledback(_:snapshot:)-3mbrx.json": {
+      "etag": "\"1cae-65d55e0c1a0b6-df\"",
+      "file_path": "documentation/TabletopKit/tabletopgame/observer/actionwasrolledback(_,snapshot)-3mbrx.md",
+      "hash": "a771edeac9191426bfc693f751e8d634f4f89c03bff70ccef3e2c74b2a79f492"
+    },
     "https://developer.apple.com/tutorials/data/documentation/tabletopkit/tabletopgame/observer/actionwasrolledback(_:snapshot:).json": {
       "etag": "\"4907-65d55e0c1a0b6-df\"",
       "file_path": "documentation/TabletopKit/tabletopgame/observer/actionwasrolledback(_,snapshot).md",
       "hash": "6ba6c6a3b9e6351183cd3b6b5a35025da29721f6ccbae94ded0569a8170f018f"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/tabletopkit/tabletopgame/observer/interactionwasupdated(_:snapshot:)-1dvgk.json": {
+      "etag": "\"2ebc-65d55e0c34940-df\"",
+      "file_path": "documentation/TabletopKit/tabletopgame/observer/interactionwasupdated(_,snapshot)-1dvgk.md",
+      "hash": "271f5f5549c992fe6959301a824cd9ece9ef4e73f775f29fac57ea93dc21d581"
     },
     "https://developer.apple.com/tutorials/data/documentation/tabletopkit/tabletopgame/observer/interactionwasupdated(_:snapshot:).json": {
       "etag": "\"3ca3-65d55e0c1a0b6-df\"",
       "file_path": "documentation/TabletopKit/tabletopgame/observer/interactionwasupdated(_,snapshot).md",
       "hash": "ef80da87760631f1247ddc17988bcb3b75f9ca6cbc528b03326b762ecd727ade"
     },
+    "https://developer.apple.com/tutorials/data/documentation/tabletopkit/tabletopgame/observer/playerchangedseats(_:oldseat:newseat:snapshot:)-idxf.json": {
+      "etag": "\"269e-65d55e0c34940-df\"",
+      "file_path": "documentation/TabletopKit/tabletopgame/observer/playerchangedseats(_,oldseat,newseat,snapshot)-idxf.md",
+      "hash": "58b33c0a160fad1fcdf47cff3b0fceffaac22b9aa4cb0a8c575607ac472403a3"
+    },
     "https://developer.apple.com/tutorials/data/documentation/tabletopkit/tabletopgame/observer/playerchangedseats(_:oldseat:newseat:snapshot:).json": {
       "etag": "\"3648-65d55e0c1a0b6-df\"",
       "file_path": "documentation/TabletopKit/tabletopgame/observer/playerchangedseats(_,oldseat,newseat,snapshot).md",
       "hash": "ad77997e835e1f07ab2ae7eb305634c36ee4846e7bf9f7485b83ed1a42cf09f7"
     },
+    "https://developer.apple.com/tutorials/data/documentation/tabletopkit/tabletopgame/observer/statedidresettobookmark(_:)-2ahod.json": {
+      "etag": "\"1b0b-65d55e0c34940-df\"",
+      "file_path": "documentation/TabletopKit/tabletopgame/observer/statedidresettobookmark(_)-2ahod.md",
+      "hash": "2989cd09ac8e6332eb56d9fd46e627aad28eebeaff2f0047a5afc79e9218faab"
+    },
     "https://developer.apple.com/tutorials/data/documentation/tabletopkit/tabletopgame/observer/statedidresettobookmark(_:).json": {
       "etag": "\"2ab4-65d55e0c1a0b6-df\"",
       "file_path": "documentation/TabletopKit/tabletopgame/observer/statedidresettobookmark(_).md",
       "hash": "c4504b16f2fd104bbad1235c6b91d897ecd24301f6c7c2b68fba528018011a77"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/tabletopkit/tabletopgame/observer/validateaction(_:snapshot:)-22pj7.json": {
+      "etag": "\"27b8-65d55e0c1a0b6-df\"",
+      "file_path": "documentation/TabletopKit/tabletopgame/observer/validateaction(_,snapshot)-22pj7.md",
+      "hash": "652c16e3efd810b5a72ed1fa27e2d6c5f28f305e7da527c619c48e5d249bfbd2"
     },
     "https://developer.apple.com/tutorials/data/documentation/tabletopkit/tabletopgame/observer/validateaction(_:snapshot:).json": {
       "etag": "\"5411-65d55e0c34940-df\"",
@@ -4705,10 +4925,20 @@
       "file_path": "documentation/TabletopKit/tabletopgame/renderdelegate.md",
       "hash": "cadd51a9675a0a09141c8fa8a347c943b2d260569183ae10961fe26ee962d3fe"
     },
+    "https://developer.apple.com/tutorials/data/documentation/tabletopkit/tabletopgame/renderdelegate/onupdate(timeinterval:snapshot:visualstate:)-5f78q.json": {
+      "etag": "\"1f81-65d55e0c1a0b6-df\"",
+      "file_path": "documentation/TabletopKit/tabletopgame/renderdelegate/onupdate(timeinterval,snapshot,visualstate)-5f78q.md",
+      "hash": "84521b1fd2b1bcac9ca01393a0673306b2f95affa6f94c2144fa6a3ef62ae640"
+    },
     "https://developer.apple.com/tutorials/data/documentation/tabletopkit/tabletopgame/renderdelegate/onupdate(timeinterval:snapshot:visualstate:).json": {
       "etag": "\"292c-65d55e0c1a0b6-df\"",
       "file_path": "documentation/TabletopKit/tabletopgame/renderdelegate/onupdate(timeinterval,snapshot,visualstate).md",
       "hash": "c35b6a98b6654cb5b206b938274f34c75cfb4f1a2a7f8b7ee59af2fa9b77e664"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/tabletopkit/tabletopgame/renderdelegate/updaterootpose(_:)-64gn7.json": {
+      "etag": "\"1688-65d55e0c1a0b6-df\"",
+      "file_path": "documentation/TabletopKit/tabletopgame/renderdelegate/updaterootpose(_)-64gn7.md",
+      "hash": "2ec5476b8cf7642c6b701487106f8494114a78d1b033e98f43c3f9fd948d40cf"
     },
     "https://developer.apple.com/tutorials/data/documentation/tabletopkit/tabletopgame/renderdelegate/updaterootpose(_:).json": {
       "etag": "\"2385-65d55e0c1a0b6-df\"",
@@ -4865,20 +5095,40 @@
       "file_path": "documentation/TabletopKit/tabletopinteraction/delegate.md",
       "hash": "3713409492444b8ced3689fdecbd861c891412219dd81e1810963fa6d9947207"
     },
+    "https://developer.apple.com/tutorials/data/documentation/tabletopkit/tabletopinteraction/delegate/ontossstart(interaction:outcomes:)-8v0lv.json": {
+      "etag": "\"2065-65d55e0ca2806-df\"",
+      "file_path": "documentation/TabletopKit/tabletopinteraction/delegate/ontossstart(interaction,outcomes)-8v0lv.md",
+      "hash": "5cd2fb2290de4ad6b81ba23fdbd0fc5a2819defcbcf6de74936c05acf5e37ff7"
+    },
     "https://developer.apple.com/tutorials/data/documentation/tabletopkit/tabletopinteraction/delegate/ontossstart(interaction:outcomes:).json": {
       "etag": "\"27e6-65d55e0ca2806-df\"",
       "file_path": "documentation/TabletopKit/tabletopinteraction/delegate/ontossstart(interaction,outcomes).md",
       "hash": "a69e7bec2d8af44d4b2b61a5057023869f32cfd5966ac19fd6e6545de01354c7"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/tabletopkit/tabletopinteraction/delegate/shouldacceptdirectinteraction(initialvalue:handoffvalue:)-5yq7h.json": {
+      "etag": "\"2ee8-65d55e0ca2806-df\"",
+      "file_path": "documentation/TabletopKit/tabletopinteraction/delegate/shouldacceptdirectinteraction(initialvalue,handoffvalue)-5yq7h.md",
+      "hash": "736c7796f7d2728dc1663ec18e7b5cbb22f4d398969259cbca022a137c5e2fd0"
     },
     "https://developer.apple.com/tutorials/data/documentation/tabletopkit/tabletopinteraction/delegate/shouldacceptdirectinteraction(initialvalue:handoffvalue:).json": {
       "etag": "\"4d25-65d55e0ca2806-df\"",
       "file_path": "documentation/TabletopKit/tabletopinteraction/delegate/shouldacceptdirectinteraction(initialvalue,handoffvalue).md",
       "hash": "8ec5c8eae7a999bef77445e9f18d11d644c2287cf938e18aa78054a51ad83ff7"
     },
+    "https://developer.apple.com/tutorials/data/documentation/tabletopkit/tabletopinteraction/delegate/shouldacceptindirectinteraction(initialvalue:handoffvalue:)-4a1g0.json": {
+      "etag": "\"2f25-65d55e0ca2806-df\"",
+      "file_path": "documentation/TabletopKit/tabletopinteraction/delegate/shouldacceptindirectinteraction(initialvalue,handoffvalue)-4a1g0.md",
+      "hash": "9b219b3f8dc8dda8b2964de3aca9b75a0252c01f6cbb573e5b5129ff755e26f7"
+    },
     "https://developer.apple.com/tutorials/data/documentation/tabletopkit/tabletopinteraction/delegate/shouldacceptindirectinteraction(initialvalue:handoffvalue:).json": {
       "etag": "\"4d62-65d55e0ca2806-df\"",
       "file_path": "documentation/TabletopKit/tabletopinteraction/delegate/shouldacceptindirectinteraction(initialvalue,handoffvalue).md",
       "hash": "277387f8662a21948a3c227ede90b4ea706e05307f80a5b39935db194349b2cf"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/tabletopkit/tabletopinteraction/delegate/shouldacceptinteraction(initialvalue:handoffvalue:)-7dm2w.json": {
+      "etag": "\"2dbf-65d55e0ca2806-df\"",
+      "file_path": "documentation/TabletopKit/tabletopinteraction/delegate/shouldacceptinteraction(initialvalue,handoffvalue)-7dm2w.md",
+      "hash": "3e20b456b9486a3a54cf3de86c7cccb2436c18037b46c22436e49c00ef5fce95"
     },
     "https://developer.apple.com/tutorials/data/documentation/tabletopkit/tabletopinteraction/delegate/shouldacceptinteraction(initialvalue:handoffvalue:).json": {
       "etag": "\"4bfc-65d55e0ca2806-df\"",
@@ -6293,8 +6543,8 @@
   },
   "metadata": {
     "render": {
-      "version": 1
+      "version": 2
     },
-    "total_pages": 1258
+    "total_pages": 1308
   }
 }

@@ -46,6 +46,8 @@ typedef struct AVCaptionSize { ... } AVCaptionSize;
 ### Accessing the size
 - [var size: AVCaptionSize](./avcaptionregion/size.md)
   The height and width of the region.
+- [AVCaptionSizeMake](./avcaptionsizemake.md)
+  Creates a caption size with the specified width and height.
 
 
 ---

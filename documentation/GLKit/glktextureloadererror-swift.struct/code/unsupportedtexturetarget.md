@@ -52,6 +52,8 @@ GLKTextureLoaderErrorUnsupportedTextureTarget
   An uncompressed texture could not be uploaded.
 - [GLKTextureLoaderError.Code.unknownFileType](./unknownfiletype.md)
   The file was in an unrecognized format.
+- [GLKTextureLoaderErrorUnknownPathType](./unknownpathtype.md)
+  The path type was unrecognized.
 
 
 ---

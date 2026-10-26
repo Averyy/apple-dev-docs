@@ -130,6 +130,8 @@ As shown in the image below, you can also use lower level cryptographic resource
 - [let kSecPolicyAppleSSLServer: CFString](./ksecpolicyapplesslserver.md)
 - [let kSecTrustQCStatements: CFString](./ksectrustqcstatements.md)
 - [let kSecTrustQWACValidation: CFString](./ksectrustqwacvalidation.md)
+- [CSSMOID_HYBRID_COMPOSITE_MLDSA87_RSA3072_WithSHA512](./cssmoid_hybrid_composite_mldsa87_rsa3072_withsha512.md)
+- [CSSMOID_HYBRID_COMPOSITE_MLDSA87_RSA3072_WithSHA512_draft_13](./cssmoid_hybrid_composite_mldsa87_rsa3072_withsha512_draft_13.md)
 ### Functions
 - [func SecIdentityCreate(CFAllocator?, SecCertificate, SecKey) -> SecIdentity?](./secidentitycreate%28_,_,_%29.md)
 - [func sec_protocol_metadata_copy_negotiated_protocol(sec_protocol_metadata_t) -> UnsafePointer<CChar>?](./sec_protocol_metadata_copy_negotiated_protocol%28_%29.md)
@@ -138,6 +140,26 @@ As shown in the image below, you can also use lower level cryptographic resource
 - [typealias CE_DataType](./ce_datatype-swift.typealias.md)
 - [typealias CE_ExtendedKeyUsage](./ce_extendedkeyusage-swift.typealias.md)
 - [typealias CE_GeneralNameType](./ce_generalnametype-swift.typealias.md)
+### Structures
+- [CE_ExtendedKeyUsage](./ce_extendedkeyusage-c.struct.md)
+### Macros
+- [CSSMACI](./cssmaci.md)
+- [CSSMAPI](./cssmapi.md)
+- [CSSMCLI](./cssmcli.md)
+- [CSSMCSPI](./cssmcspi.md)
+- [CSSMDLI](./cssmdli.md)
+- [CSSMKRI](./cssmkri.md)
+- [CSSMSPI](./cssmspi.md)
+- [CSSMTPI](./cssmtpi.md)
+- [SEC_SWIFT_SENDABLE](./sec_swift_sendable.md)
+### Enumeration Cases
+- [errSecureDownloadInvalidDownload](./errsecuredownloadinvaliddownload.md)
+- [errSecureDownloadInvalidTicket](./errsecuredownloadinvalidticket.md)
+- [kAuthorizationCallbacksVersion](./kauthorizationcallbacksversion.md)
+- [kAuthorizationPluginInterfaceVersion](./kauthorizationplugininterfaceversion.md)
+### Enumerations
+- [CE_DataType](./ce_datatype-c.enum.md)
+- [CE_GeneralNameType](./ce_generalnametype-c.enum.md)
 
 
 ---

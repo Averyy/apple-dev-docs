@@ -33,6 +33,8 @@ kCFXMLParserAddImpliedAttributes
   Resolves all external entities.
 - [static var allOptions: CFXMLParserOptions](./alloptions.md)
   Makes the parser do the most work, returning only the pure elementtree.
+- [kCFXMLParserNoOptions](./kcfxmlparsernooptions.md)
+  Leaves the XML as “intact” as possible (reports all structures; performs no replacements).
 
 
 ---

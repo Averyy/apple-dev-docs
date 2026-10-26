@@ -25,6 +25,8 @@ static simd_float4x4 simd_matrix_from_rows(simd_float4 row0, simd_float4 row1, s
   Returns a new matrix with the specified rows.
 - [func simd_matrix4x4(simd_quatf) -> simd_float4x4](./simd_matrix4x4%28_%29-20lv7.md)
   Returns a new matrix with the specified quarternion.
+- [simd_diagonal_matrix](./simd_diagonal_matrix-2l0e4.md)
+  Returns a new matrix with the specified vector on the main diagonal.
 
 
 ---

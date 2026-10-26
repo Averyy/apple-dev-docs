@@ -47,6 +47,12 @@ After configuring a group, assign it to the [`UITextInputAssistantItem`](./uitex
   Creates a fixed group with the specified items.
 - [init?(coder: NSCoder)](./uibarbuttonitemgroup/init%28coder%29.md)
   Creates a bar button item group from data in an unarchiver.
+- [+ fixedGroupWithRepresentativeItem:items:](./uibarbuttonitemgroup/fixedgroupwithrepresentativeitem_items_.md)
+  Creates a fixed group that a person can’t move or remove from the navigation bar during layout customization.
+- [+ movableGroupWithCustomizationIdentifier:representativeItem:items:](./uibarbuttonitemgroup/movablegroupwithcustomizationidentifier_representativeitem_items_.md)
+  Creates a movable group that a person can move but can’t remove from the navigation bar during layout customization.
+- [+ optionalGroupWithCustomizationIdentifier:inDefaultCustomization:representativeItem:items:](./uibarbuttonitemgroup/optionalgroupwithcustomizationidentifier_indefaultcustomization_representativeitem_items_.md)
+  Creates an optional group that a person can move, add to, or remove from the navigation bar during layout customization.
 ### Configuring the group
 - [var barButtonItems: [UIBarButtonItem]](./uibarbuttonitemgroup/barbuttonitems.md)
   The bar button items to display on the bar.

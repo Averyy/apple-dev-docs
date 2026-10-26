@@ -27,6 +27,8 @@ static simd_ushort4 simd_make_ushort4(unsigned short x, simd_ushort3 yzw);
   Returns a new vector from two scalar values and a vector.
 - [func simd_make_ushort4(UInt16, simd_ushort2, UInt16) -> simd_ushort4](./simd_make_ushort4%28_,_,_%29-53g72.md)
   Returns a new vector from a scalar value, a vector, and a scalar value.
+- [vector4](./vector4-34nn6.md)
+  Returns a new vector from a vector and a scalar value.
 
 
 ---

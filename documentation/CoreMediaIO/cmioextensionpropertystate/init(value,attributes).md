@@ -30,6 +30,10 @@ init(value: ObjectType?, attributes: CMIOExtensionPropertyAttributes<ObjectType>
 ### Creating a Property State
 - [convenience init(value: ObjectType?)](./init%28value%29.md)
   Creates a property state with a value.
+- [+ propertyStateWithValue:](./propertystatewithvalue_.md)
+  Returns a new property state with a value.
+- [+ propertyStateWithValue:attributes:](./propertystatewithvalue_attributes_.md)
+  Returns a new property state with a value and attributes.
 
 
 ---

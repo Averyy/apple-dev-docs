@@ -37,6 +37,8 @@ See [Generating a remote notification](../../../UserNotifications/generating-a-r
   The key that identifies the localized string for the notification’s title.
 - [var titleLocalizationArgs: [CKRecord.FieldKey]?](./titlelocalizationargs.md)
   The fields for building a notification’s title.
+- [titleLocalizationArgs](../../cknotificationinfo/titlelocalizationargs.md)
+  The fields for building a notification’s title.
 
 
 ---

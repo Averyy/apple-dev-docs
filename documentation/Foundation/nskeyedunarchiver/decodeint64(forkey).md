@@ -65,6 +65,8 @@ If the archived value was encoded with a different size but is still an integer,
   Tells the receiver that you are finished decoding objects.
 - [var decodingFailurePolicy: NSCoder.DecodingFailurePolicy](./decodingfailurepolicy.md)
   The action to take when this unarchiver fails to decode an entry.
+- [- decodeIntForKey:](./decodeintforkey_.md)
+  Decodes an integer value associated with a given key.
 
 
 ---

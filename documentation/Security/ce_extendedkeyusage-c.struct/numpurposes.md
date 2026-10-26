@@ -1,0 +1,19 @@
+# numPurposes
+
+**Framework**: Security  
+**Kind**: property  
+**Role**: Instance Property
+
+**Availability**:
+- macOS 10.0+
+
+## Declaration
+
+```c
+uint32 numPurposes;
+```
+
+
+---
+
+*[View on Apple Developer](https://developer.apple.com/documentation/security/ce_extendedkeyusage-c.struct/numpurposes)*

@@ -100,10 +100,85 @@
       "file_path": "documentation/XCTest/unconditional-test-failures.md",
       "hash": "ffb526a8021fdbace650ace51baf7912dfc2154c7d0b0a0ab8661eb4cc0542f6"
     },
+    "https://developer.apple.com/documentation/xctest/xct_deprecated_with_direct_replacement": {
+      "etag": "\"a7f-6590270ee3e5c-df\"",
+      "file_path": "documentation/XCTest/xct_deprecated_with_direct_replacement.md",
+      "hash": "f96c854dfd7b223417a0e5d9697a09ed4617a833f7cd24b68e1f68493c5b76cd"
+    },
+    "https://developer.apple.com/documentation/xctest/xct_deprecated_with_replacement": {
+      "etag": "\"a2b-6590270dcfd4e-df\"",
+      "file_path": "documentation/XCTest/xct_deprecated_with_replacement.md",
+      "hash": "f4f29a169b73f3e718c1f488f7506c4bfab965918eeecc9614bc3e8e1a214039"
+    },
+    "https://developer.apple.com/documentation/xctest/xct_deprecated_with_swift_replacement": {
+      "etag": "\"a73-6590270eaca74-df\"",
+      "file_path": "documentation/XCTest/xct_deprecated_with_swift_replacement.md",
+      "hash": "8d3d52a2cfe09e3991e685705302de4b7118d2102a4427a465a4c2f2a58b25bf"
+    },
+    "https://developer.apple.com/documentation/xctest/xct_export": {
+      "etag": "\"8cb-6590270f099fb-df\"",
+      "file_path": "documentation/XCTest/xct_export.md",
+      "hash": "d37307066e00cde7362950f824ae168f0294b4c66e3f8e0d7b9ae1ef9df13780"
+    },
+    "https://developer.apple.com/documentation/xctest/xct_header_audit_begin": {
+      "etag": "\"97a-6590270dcfd4e-df\"",
+      "file_path": "documentation/XCTest/xct_header_audit_begin.md",
+      "hash": "77d595073c566ec544d702390307c0f59d5d5838c661c27c4573d93ffc1124b4"
+    },
+    "https://developer.apple.com/documentation/xctest/xct_header_audit_end": {
+      "etag": "\"962-6590270e284af-df\"",
+      "file_path": "documentation/XCTest/xct_header_audit_end.md",
+      "hash": "85cb040e8031b6e48f3ec3e8a23b37ab28d871b1da1a9147e1175dcdc2718107"
+    },
+    "https://developer.apple.com/documentation/xctest/xct_metric_api_available": {
+      "etag": "\"973-6590270dcfd4e-df\"",
+      "file_path": "documentation/XCTest/xct_metric_api_available.md",
+      "hash": "d0fcdb6edcb1a073a0c431af3d637c80746bf5e871db29f2ce88a1e69198001d"
+    },
+    "https://developer.apple.com/documentation/xctest/xct_noescape": {
+      "etag": "\"8e3-6590270dcfd4e-df\"",
+      "file_path": "documentation/XCTest/xct_noescape.md",
+      "hash": "b985eef430a602e37b7482446052ba25f9bf8c9ec36a7536cff907532b5d413e"
+    },
+    "https://developer.apple.com/documentation/xctest/xct_swift_main_actor": {
+      "etag": "\"943-6590270efd568-df\"",
+      "file_path": "documentation/XCTest/xct_swift_main_actor.md",
+      "hash": "834010171286628c9440e0e36403d38267646a10575802a4dc9930680b38c84b"
+    },
+    "https://developer.apple.com/documentation/xctest/xct_swift_sendable": {
+      "etag": "\"92b-6590270eaca74-df\"",
+      "file_path": "documentation/XCTest/xct_swift_sendable.md",
+      "hash": "efd42206f947bdd17c20271c7641db9107b4bf0ed577401c933c0b08763996a4"
+    },
+    "https://developer.apple.com/documentation/xctest/xct_swift_unavailable_from_async": {
+      "etag": "\"a2f-6590270e492ae-df\"",
+      "file_path": "documentation/XCTest/xct_swift_unavailable_from_async.md",
+      "hash": "3155ef9d1c8891eb376329416ec8062a4bbdf607732a1fb4045ee26751ea3070"
+    },
+    "https://developer.apple.com/documentation/xctest/xct_to_be_deprecated_with_swift_replacement": {
+      "etag": "\"abb-6590270e659b8-df\"",
+      "file_path": "documentation/XCTest/xct_to_be_deprecated_with_swift_replacement.md",
+      "hash": "e11362bc53a79dbcb1e31e5d5ed9f37909bb5aaabc158197397299d19b4afe9b"
+    },
     "https://developer.apple.com/documentation/xctest/xct_ui_testing_available": {
       "etag": "\"1497-6590270db0b6a-df\"",
       "file_path": "documentation/XCTest/xct_ui_testing_available.md",
       "hash": "7e4b0cfde4001ab0f901d02655419bc7c618324750474bdd84e617446ecc920c"
+    },
+    "https://developer.apple.com/documentation/xctest/xct_unavailable": {
+      "etag": "\"963-6590270e0a774-df\"",
+      "file_path": "documentation/XCTest/xct_unavailable.md",
+      "hash": "cc599490add944608c4baad140de791ba75bd79b1768b09dc4cdcc20c2bc738a"
+    },
+    "https://developer.apple.com/documentation/xctest/xct_warn_unused": {
+      "etag": "\"907-6590270e284af-df\"",
+      "file_path": "documentation/XCTest/xct_warn_unused.md",
+      "hash": "211aff0280e9427b7b0f4e1f9e2e0a35de6f5d3e5600c97052b8add881f52127"
+    },
+    "https://developer.apple.com/documentation/xctest/xct_weak_export": {
+      "etag": "\"907-6590270e659b8-df\"",
+      "file_path": "documentation/XCTest/xct_weak_export.md",
+      "hash": "70d765bcdd20864da14ef933cff860b0be8022c779b139330e449952e27ceda0"
     },
     "https://developer.apple.com/documentation/xctest/xctactivity": {
       "etag": "\"3246-6590270e0a774-df\"",
@@ -135,10 +210,20 @@
       "file_path": "documentation/XCTest/xctapplicationlaunchmetric/init(waituntilresponsive).md",
       "hash": "4d0f68d17a16dc622d5f039b867e54b8d65ba9bde43a5c154363fa5a12e34bf7"
     },
+    "https://developer.apple.com/documentation/xctest/xctassert": {
+      "etag": "\"129f-6590270e659b8-df\"",
+      "file_path": "documentation/XCTest/xctassert.md",
+      "hash": "66527d636588c5e4e1bae00c1f68031f85fc65a5142ca90aed7b53f25a0163b9"
+    },
     "https://developer.apple.com/documentation/xctest/xctassert(_:_:file:line:)": {
       "etag": "\"28ca-6590270ee3e5c-df\"",
       "file_path": "documentation/XCTest/xctassert(_,_,file,line).md",
       "hash": "08a4d863fa97ba05592e7c4451d31f13868bd753ec290990a3ef366178c1f7b4"
+    },
+    "https://developer.apple.com/documentation/xctest/xctassertequal": {
+      "etag": "\"19c6-6590270e492ae-df\"",
+      "file_path": "documentation/XCTest/xctassertequal.md",
+      "hash": "dd2f64960b383bdcf9d53c10ba1d8622367334a6708d992f44ecc4a4453d4e24"
     },
     "https://developer.apple.com/documentation/xctest/xctassertequal(_:_:_:file:line:)": {
       "etag": "\"326e-65d55e545a621-df\"",
@@ -155,45 +240,95 @@
       "file_path": "documentation/XCTest/xctassertequal(_,_,accuracy,_,file,line)-6frfw.md",
       "hash": "a796a24e83fc8288bfcab6d11c98505dff94ee9c3300fb6fb2b56016f058a420"
     },
+    "https://developer.apple.com/documentation/xctest/xctassertequalobjects": {
+      "etag": "\"1a6a-6590270eaca74-df\"",
+      "file_path": "documentation/XCTest/xctassertequalobjects.md",
+      "hash": "3cf977a2916ecc73a296d3c0e92fd60e86e7d167637bbfab13a73979149315c5"
+    },
+    "https://developer.apple.com/documentation/xctest/xctassertequalwithaccuracy": {
+      "etag": "\"16eb-6590270ee3e5c-df\"",
+      "file_path": "documentation/XCTest/xctassertequalwithaccuracy.md",
+      "hash": "48eabbcbefac6f1b3ec8c7bc2335baab69a59af79858cfea4ef0b421a5331155"
+    },
     "https://developer.apple.com/documentation/xctest/xctassertequalwithaccuracy(_:_:accuracy:_:file:line:)": {
       "etag": "\"4347-6590270f099fb-df\"",
       "file_path": "documentation/XCTest/xctassertequalwithaccuracy(_,_,accuracy,_,file,line).md",
       "hash": "a2da5618374be01f6182bc51cd7e3a0fb5b34482c01b72e276b61731b6805c29"
+    },
+    "https://developer.apple.com/documentation/xctest/xctassertfalse": {
+      "etag": "\"ff1-6590270e84aa6-df\"",
+      "file_path": "documentation/XCTest/xctassertfalse.md",
+      "hash": "365eb0a964bcd2699517981d6a1f0846ae202df87c7370f771df3680461290d6"
     },
     "https://developer.apple.com/documentation/xctest/xctassertfalse(_:_:file:line:)": {
       "etag": "\"2272-6590270eaca74-df\"",
       "file_path": "documentation/XCTest/xctassertfalse(_,_,file,line).md",
       "hash": "8dbada776e572e0579e9c473bd49d48a1e15538cff127e64943c9e1641039364"
     },
+    "https://developer.apple.com/documentation/xctest/xctassertgreaterthan": {
+      "etag": "\"18e6-6590270e492ae-df\"",
+      "file_path": "documentation/XCTest/xctassertgreaterthan.md",
+      "hash": "ff06a86b03beb49ec99a4ab24c8ba5838ffde8c5c3e1fa4dd16896255dfdbc3c"
+    },
     "https://developer.apple.com/documentation/xctest/xctassertgreaterthan(_:_:_:file:line:)": {
       "etag": "\"3edd-6590270ee3e5c-df\"",
       "file_path": "documentation/XCTest/xctassertgreaterthan(_,_,_,file,line).md",
       "hash": "78200fe2c4d9b6f3773ef78859007d30b867f42c00968957d858cd035dd6b4d6"
+    },
+    "https://developer.apple.com/documentation/xctest/xctassertgreaterthanorequal": {
+      "etag": "\"191b-6590270e84aa6-df\"",
+      "file_path": "documentation/XCTest/xctassertgreaterthanorequal.md",
+      "hash": "74660a2e3a774e694ff617c5e3147b85dc8802026fcdfe126c7c9125e9455f5c"
     },
     "https://developer.apple.com/documentation/xctest/xctassertgreaterthanorequal(_:_:_:file:line:)": {
       "etag": "\"3f0c-6590270db0b6a-df\"",
       "file_path": "documentation/XCTest/xctassertgreaterthanorequal(_,_,_,file,line).md",
       "hash": "255b0904ea271e737c8b05507d2b4a899702749476b49433089bfd36def0e0e5"
     },
+    "https://developer.apple.com/documentation/xctest/xctassertidentical": {
+      "etag": "\"164b-6590270dcfd4e-df\"",
+      "file_path": "documentation/XCTest/xctassertidentical.md",
+      "hash": "3736c34096f196f6de048db18dc6dcb136ae34c6a69faeee81bb067e2ef6f9cb"
+    },
     "https://developer.apple.com/documentation/xctest/xctassertidentical(_:_:_:file:line:)": {
       "etag": "\"2f78-6590270ee3e5c-df\"",
       "file_path": "documentation/XCTest/xctassertidentical(_,_,_,file,line).md",
       "hash": "f91ccbbec2933bfebb999252e7256d45ba4f02e4243a06084436a086853b0ad0"
+    },
+    "https://developer.apple.com/documentation/xctest/xctassertlessthan": {
+      "etag": "\"18d1-6590270ee3e5c-df\"",
+      "file_path": "documentation/XCTest/xctassertlessthan.md",
+      "hash": "8a36f581fa38302a4e8620a02e02d9adc89afd42a53832b675f14384af2b8cf4"
     },
     "https://developer.apple.com/documentation/xctest/xctassertlessthan(_:_:_:file:line:)": {
       "etag": "\"3ecb-6590270dcfd4e-df\"",
       "file_path": "documentation/XCTest/xctassertlessthan(_,_,_,file,line).md",
       "hash": "618fa84d14b7092aa23ad8b63ab1b872ef817f9735f95f4a2e9376536ae4c367"
     },
+    "https://developer.apple.com/documentation/xctest/xctassertlessthanorequal": {
+      "etag": "\"1906-6590270ee3e5c-df\"",
+      "file_path": "documentation/XCTest/xctassertlessthanorequal.md",
+      "hash": "64734656b36d90a5f78b7b6e1ddc83cc389de08b58053022b310fa98fcf14587"
+    },
     "https://developer.apple.com/documentation/xctest/xctassertlessthanorequal(_:_:_:file:line:)": {
       "etag": "\"3efa-6590270efd568-df\"",
       "file_path": "documentation/XCTest/xctassertlessthanorequal(_,_,_,file,line).md",
       "hash": "ff0370a64fe250b6f99bd12ca32a1548f282ede4985b77f6fbb4b84b04269612"
     },
+    "https://developer.apple.com/documentation/xctest/xctassertnil": {
+      "etag": "\"107a-6590270e492ae-df\"",
+      "file_path": "documentation/XCTest/xctassertnil.md",
+      "hash": "181c7a3ee7120287e9f958f4a89467bec99ec00c839635bbc33da27e4f59e968"
+    },
     "https://developer.apple.com/documentation/xctest/xctassertnil(_:_:file:line:)": {
       "etag": "\"2041-6590270e659b8-df\"",
       "file_path": "documentation/XCTest/xctassertnil(_,_,file,line).md",
       "hash": "636984f49f14d792e856dad033d26151f8b152cd0de11435cfa3c08de30ed97e"
+    },
+    "https://developer.apple.com/documentation/xctest/xctassertnotequal": {
+      "etag": "\"1780-6590270e284af-df\"",
+      "file_path": "documentation/XCTest/xctassertnotequal.md",
+      "hash": "60a6f6c41b7b11f94c5e6cebddf079a12bce7d1f04701d9868cfe25ac93204bd"
     },
     "https://developer.apple.com/documentation/xctest/xctassertnotequal(_:_:_:file:line:)": {
       "etag": "\"2e4f-6590270eaca74-df\"",
@@ -210,30 +345,85 @@
       "file_path": "documentation/XCTest/xctassertnotequal(_,_,accuracy,_,file,line)-7jcd6.md",
       "hash": "863119e1249f32bc210c0e6f801022c7146d00ba25e7a70d0d3bc42b1ee93a88"
     },
+    "https://developer.apple.com/documentation/xctest/xctassertnotequalobjects": {
+      "etag": "\"1a94-6590270e284af-df\"",
+      "file_path": "documentation/XCTest/xctassertnotequalobjects.md",
+      "hash": "beae55ee17d4a8f9868570f7e520fc370e5b84407ca053ae7eb5f5d986a9ab4d"
+    },
+    "https://developer.apple.com/documentation/xctest/xctassertnotequalwithaccuracy": {
+      "etag": "\"170e-6590270dcfd4e-df\"",
+      "file_path": "documentation/XCTest/xctassertnotequalwithaccuracy.md",
+      "hash": "ba43f243f945ab29c9f7a3aafc78499b57e52ecdeaed1e5720623084ec668e0c"
+    },
     "https://developer.apple.com/documentation/xctest/xctassertnotequalwithaccuracy(_:_:_:_:file:line:)": {
       "etag": "\"4357-6590270e659b8-df\"",
       "file_path": "documentation/XCTest/xctassertnotequalwithaccuracy(_,_,_,_,file,line).md",
       "hash": "32facaec701ba7d11d59da89295179768d421102c37404ce8ff70950e96a8c98"
+    },
+    "https://developer.apple.com/documentation/xctest/xctassertnothrow": {
+      "etag": "\"10a1-6590270e659b8-df\"",
+      "file_path": "documentation/XCTest/xctassertnothrow.md",
+      "hash": "a35a8b1b576403a48b171b0b030ea8a86fbe4ca5918a78856f133cb22f9e47c9"
     },
     "https://developer.apple.com/documentation/xctest/xctassertnothrow(_:_:file:line:)": {
       "etag": "\"1f5b-6590270dcfd4e-df\"",
       "file_path": "documentation/XCTest/xctassertnothrow(_,_,file,line).md",
       "hash": "510169dbb7f40047f8122fb4ffd250aa4e8ecafcba5525c0b0df9dd20b1a538d"
     },
+    "https://developer.apple.com/documentation/xctest/xctassertnothrowspecific": {
+      "etag": "\"21b7-6590270dcfd4e-df\"",
+      "file_path": "documentation/XCTest/xctassertnothrowspecific.md",
+      "hash": "d075e2ff301d6a572f3bdea51e1a90e985bce73f25e7d5e1d1a42e7d88903673"
+    },
+    "https://developer.apple.com/documentation/xctest/xctassertnothrowspecificnamed": {
+      "etag": "\"230f-6590270e84aa6-df\"",
+      "file_path": "documentation/XCTest/xctassertnothrowspecificnamed.md",
+      "hash": "39a3057f58e415c82420e60261eda40be9a5ca80781d21aefcf3c97db7e73087"
+    },
+    "https://developer.apple.com/documentation/xctest/xctassertnotidentical": {
+      "etag": "\"1682-6590270dcfd4e-df\"",
+      "file_path": "documentation/XCTest/xctassertnotidentical.md",
+      "hash": "5c8e1876ff8ad188d251aff84e8d5abe6108b90d3731b05a68d345dfc83e6890"
+    },
     "https://developer.apple.com/documentation/xctest/xctassertnotidentical(_:_:_:file:line:)": {
       "etag": "\"2f95-6590270eaca74-df\"",
       "file_path": "documentation/XCTest/xctassertnotidentical(_,_,_,file,line).md",
       "hash": "6d197aa1d1724806412d70bde75c0b0107d2cd6ffaf6ad07d2f94d24c05c09a3"
+    },
+    "https://developer.apple.com/documentation/xctest/xctassertnotnil": {
+      "etag": "\"10a6-6590270efd568-df\"",
+      "file_path": "documentation/XCTest/xctassertnotnil.md",
+      "hash": "6150ccc14d78f6dae741599e5ce881730dcf58eb7d0a9a685fafb9e04ae37adb"
     },
     "https://developer.apple.com/documentation/xctest/xctassertnotnil(_:_:file:line:)": {
       "etag": "\"2722-6590270e659b8-df\"",
       "file_path": "documentation/XCTest/xctassertnotnil(_,_,file,line).md",
       "hash": "86d9fecf67f458c2e6e7d8db74ff3ec77d81aff1d12ed3a570e53194036d11ff"
     },
+    "https://developer.apple.com/documentation/xctest/xctassertthrows": {
+      "etag": "\"1cc7-6590270dcfd4e-df\"",
+      "file_path": "documentation/XCTest/xctassertthrows.md",
+      "hash": "9255e304b67e54d605a0440d891e10d09d7d3aff414321b9851d85856d8563b9"
+    },
     "https://developer.apple.com/documentation/xctest/xctassertthrowserror(_:_:file:line:_:)": {
       "etag": "\"2886-6590270efd568-df\"",
       "file_path": "documentation/XCTest/xctassertthrowserror(_,_,file,line,_).md",
       "hash": "0a86497d9236a7056fd181ab78c70133d73d6f4c7386e61f41c8dbd8abbc7824"
+    },
+    "https://developer.apple.com/documentation/xctest/xctassertthrowsspecific": {
+      "etag": "\"21b1-6590270eaca74-df\"",
+      "file_path": "documentation/XCTest/xctassertthrowsspecific.md",
+      "hash": "96e642cd06d9db156d2765a505df30e22ce649d5fcaac8bdd942722d62f529e7"
+    },
+    "https://developer.apple.com/documentation/xctest/xctassertthrowsspecificnamed": {
+      "etag": "\"22d0-6590270e659b8-df\"",
+      "file_path": "documentation/XCTest/xctassertthrowsspecificnamed.md",
+      "hash": "8299baab9c369227d9b7f4ed40cf32323239744e192970391d2a1a82fb234824"
+    },
+    "https://developer.apple.com/documentation/xctest/xctasserttrue": {
+      "etag": "\"12b3-6590270eaca74-df\"",
+      "file_path": "documentation/XCTest/xctasserttrue.md",
+      "hash": "80681aaa196349435df9752236d7cb9b7561eed94771a87bfc572567c74c28ae"
     },
     "https://developer.apple.com/documentation/xctest/xctasserttrue(_:_:file:line:)": {
       "etag": "\"28db-6590270e84aa6-df\"",
@@ -244,6 +434,11 @@
       "etag": "\"c8dd-6590270dcfd4e-df\"",
       "file_path": "documentation/XCTest/xctattachment.md",
       "hash": "4e0e5a5de2e5326f8a71f2657d3a42d4d476b6d7828d3e5e69dfcd456f18bcd0"
+    },
+    "https://developer.apple.com/documentation/xctest/xctattachment/attachmentwithuniformtypeidentifier:name:payload:userinfo:": {
+      "etag": "\"3d08-6590270e84aa6-df\"",
+      "file_path": "documentation/XCTest/xctattachment/attachmentwithuniformtypeidentifier_name_payload_userinfo_.md",
+      "hash": "93f73f5382376f3be22b030b84fd1fb3d3c38064c814abcb8d52aa959fe56a68"
     },
     "https://developer.apple.com/documentation/xctest/xctattachment/imagequality": {
       "etag": "\"5676-6590270e84aa6-df\"",
@@ -420,6 +615,11 @@
       "file_path": "documentation/XCTest/xctcontext/runactivity(named,block).md",
       "hash": "523517d57abc2d864642a502068829d37b3581c1073b123369cbfb75ee3538f5"
     },
+    "https://developer.apple.com/documentation/xctest/xctcontext/runactivitynamed:block:": {
+      "etag": "\"28a6-6590270dcfd4e-df\"",
+      "file_path": "documentation/XCTest/xctcontext/runactivitynamed_block_.md",
+      "hash": "69842f9206e149abcc4eb0d82feb3cee0ee358ccc38dad75fda89376318c182b"
+    },
     "https://developer.apple.com/documentation/xctest/xctcpumetric": {
       "etag": "\"6db7-65d55e54717a6-df\"",
       "file_path": "documentation/XCTest/xctcpumetric.md",
@@ -530,10 +730,20 @@
       "file_path": "documentation/XCTest/xctest-page/testrunclass.md",
       "hash": "787e5df4674e833a9cc7fa5042b9fbdc6cc71b69a511ecbdf37ad8b6772bded7"
     },
+    "https://developer.apple.com/documentation/xctest/xctest_simulator_unavailable": {
+      "etag": "\"a00-6590270eaca74-df\"",
+      "file_path": "documentation/XCTest/xctest_simulator_unavailable.md",
+      "hash": "66d53b6b745d182c03cb9008af6a91f20dc6c4b5fcb4f6258ab677d5fe529d62"
+    },
     "https://developer.apple.com/documentation/xctest/xctestcase": {
       "etag": "\"194d8-6590270ee3e5c-df\"",
       "file_path": "documentation/XCTest/xctestcase.md",
       "hash": "10c2d138792335acdd20a6c7382c3e2b1a977430743fe4f9d423d0f2cbc2d5ee"
+    },
+    "https://developer.apple.com/documentation/xctest/xctestcase/addasyncteardownblock:": {
+      "etag": "\"4b7e-6590270e284af-df\"",
+      "file_path": "documentation/XCTest/xctestcase/addasyncteardownblock_.md",
+      "hash": "ad2f1f31bbebd99a2d9336d1dd17f1fc60a075a2ceb657a9af5be029059cbaaf"
     },
     "https://developer.apple.com/documentation/xctest/xctestcase/addteardownblock(_:)-2guon": {
       "etag": "\"4e46-65d55e5409d67-df\"",
@@ -544,6 +754,11 @@
       "etag": "\"2907-65d55e5409d67-df\"",
       "file_path": "documentation/XCTest/xctestcase/addteardownblock(_)-5zw6c.md",
       "hash": "93974bec155e45a84c882eff5e44693f08983a25c64634c91e845a7a3e3a3fcd"
+    },
+    "https://developer.apple.com/documentation/xctest/xctestcase/addteardownblock:": {
+      "etag": "\"595a-65d55e53f4eda-df\"",
+      "file_path": "documentation/XCTest/xctestcase/addteardownblock_.md",
+      "hash": "351aba9fb9de71af4e3ba6fdd10acf0802759a6b3d802ebe4b4eac087bfe1b95"
     },
     "https://developer.apple.com/documentation/xctest/xctestcase/adduiinterruptionmonitor(withdescription:handler:)": {
       "etag": "\"4bd3-6590270e0a774-df\"",
@@ -720,6 +935,16 @@
       "file_path": "documentation/XCTest/xctestcase/teardown().md",
       "hash": "3513e45a6df9bf5711e27b60d9676b494db48a581803eaed2ee4182bc4a5cef6"
     },
+    "https://developer.apple.com/documentation/xctest/xctestcase/testcasewithinvocation:": {
+      "etag": "\"3e42-6590270e284af-df\"",
+      "file_path": "documentation/XCTest/xctestcase/testcasewithinvocation_.md",
+      "hash": "b517367c22afc1467f800f4cc18fc2f59eee1bfd5f506ea0ba3cd168cbeec160"
+    },
+    "https://developer.apple.com/documentation/xctest/xctestcase/testcasewithselector:": {
+      "etag": "\"3ddd-6590270e0a774-df\"",
+      "file_path": "documentation/XCTest/xctestcase/testcasewithselector_.md",
+      "hash": "d0b6f92c6708cff4c62d81ba90bc713aee2f2917f193490432a35a19095fd77b"
+    },
     "https://developer.apple.com/documentation/xctest/xctestcase/testinvocations": {
       "etag": "\"46ba-6590270e0a774-df\"",
       "file_path": "documentation/XCTest/xctestcase/testinvocations.md",
@@ -859,6 +1084,11 @@
       "etag": "\"30c9-6590270e492ae-df\"",
       "file_path": "documentation/XCTest/xctestlog/testlog(withformat,arguments).md",
       "hash": "9737bec6b388f2a3aca3ec76f1606d5678f80cdf4245d843637296a0c967f102"
+    },
+    "https://developer.apple.com/documentation/xctest/xctestlog/testlogwithformat:": {
+      "etag": "\"1ee1-6590270e492ae-df\"",
+      "file_path": "documentation/XCTest/xctestlog/testlogwithformat_.md",
+      "hash": "af24ec6c096843e0ac3967e38c65018fef9a05550ab4e68516161f2c4ccc78f2"
     },
     "https://developer.apple.com/documentation/xctest/xctestobservation": {
       "etag": "\"7af4-6590270dcfd4e-df\"",
@@ -1080,6 +1310,11 @@
       "file_path": "documentation/XCTest/xctestrun/testduration.md",
       "hash": "938e86c6578f92601b0e240f8b12dd52eebcb91b9a5a1187ac4e69fc454341b5"
     },
+    "https://developer.apple.com/documentation/xctest/xctestrun/testrunwithtest:": {
+      "etag": "\"1b51-6590270e0a774-df\"",
+      "file_path": "documentation/XCTest/xctestrun/testrunwithtest_.md",
+      "hash": "a6d511304f904b13b23f003a286f9b46dbabf5b6a85805973cc6216566646719"
+    },
     "https://developer.apple.com/documentation/xctest/xctestrun/totalduration": {
       "etag": "\"2b40-6590270e0a774-df\"",
       "file_path": "documentation/XCTest/xctestrun/totalduration.md",
@@ -1155,6 +1390,11 @@
       "file_path": "documentation/XCTest/xctestsuite/tests.md",
       "hash": "bd4c59345330f473a398f3fc35e115e41fedb166f0d1fc9161d017dac6115af8"
     },
+    "https://developer.apple.com/documentation/xctest/xctestsuite/testsuitewithname:": {
+      "etag": "\"2cc2-6590270ee3e5c-df\"",
+      "file_path": "documentation/XCTest/xctestsuite/testsuitewithname_.md",
+      "hash": "edb58e8a5290af6085aa8d7372106dc70e8c94764a7cf6d81ea52fc683c74a96"
+    },
     "https://developer.apple.com/documentation/xctest/xctestsuiterun": {
       "etag": "\"3f7e-6590270ee3e5c-df\"",
       "file_path": "documentation/XCTest/xctestsuiterun.md",
@@ -1215,6 +1455,11 @@
       "file_path": "documentation/XCTest/xctexpectedfailure/options/nonstrict().md",
       "hash": "7143fd76b27c1e39b3af2196cb39d353e99ee6d8a1883b9f5e0966f868437118"
     },
+    "https://developer.apple.com/documentation/xctest/xctexpectfailure": {
+      "etag": "\"1fc8-6590270dcfd4e-df\"",
+      "file_path": "documentation/XCTest/xctexpectfailure.md",
+      "hash": "69c95ee2a884b2a3d492b9493e13002223c821306aa4865cab519aa675e4ca22"
+    },
     "https://developer.apple.com/documentation/xctest/xctexpectfailure(_:enabled:strict:failingblock:issuematcher:)": {
       "etag": "\"4278-6590270e659b8-df\"",
       "file_path": "documentation/XCTest/xctexpectfailure(_,enabled,strict,failingblock,issuematcher).md",
@@ -1234,6 +1479,26 @@
       "etag": "\"3978-6590270efd568-df\"",
       "file_path": "documentation/XCTest/xctexpectfailure(_,options,failingblock).md",
       "hash": "7136dff087c7d01a0c54e31cad24e410e15223e1ecd4669fe9bc796da3f02e9e"
+    },
+    "https://developer.apple.com/documentation/xctest/xctexpectfailureinblock": {
+      "etag": "\"20b4-6590270f099fb-df\"",
+      "file_path": "documentation/XCTest/xctexpectfailureinblock.md",
+      "hash": "05117f945fb36eabd1b869c4eea83e79444cc8d79cb28fb80f8e8c4e29dbba06"
+    },
+    "https://developer.apple.com/documentation/xctest/xctexpectfailurewithoptions": {
+      "etag": "\"2181-6590270f099fb-df\"",
+      "file_path": "documentation/XCTest/xctexpectfailurewithoptions.md",
+      "hash": "55456bbb8588c407ea664710c77199a703811b6a0bf4be5f28c265ce1174cdd3"
+    },
+    "https://developer.apple.com/documentation/xctest/xctexpectfailurewithoptionsinblock": {
+      "etag": "\"226d-6590270e492ae-df\"",
+      "file_path": "documentation/XCTest/xctexpectfailurewithoptionsinblock.md",
+      "hash": "cbab7ddb97b46895f9a5f8ca7d1e307f4426d5f2b6d6338b37675ea7763ee9d8"
+    },
+    "https://developer.apple.com/documentation/xctest/xctfail": {
+      "etag": "\"df5-6590270dcfd4e-df\"",
+      "file_path": "documentation/XCTest/xctfail.md",
+      "hash": "26e647d1cce55d64e7aed179aff28f63be57c65e58a83076ab59da9cf11f2f98"
     },
     "https://developer.apple.com/documentation/xctest/xctfail(_:file:line:)": {
       "etag": "\"19ff-6590270eaca74-df\"",
@@ -1549,6 +1814,11 @@
       "etag": "\"2eea-65d55e53cb1b9-df\"",
       "file_path": "documentation/XCTest/xctkvoexpectation/options.md",
       "hash": "e902100bc0f5d18040b356b060144cf132c4b1514064e18018340c988043be85"
+    },
+    "https://developer.apple.com/documentation/xctest/xctmeasurementinvocationoptions/xctmeasurementinvocationnone": {
+      "etag": "\"1150-6590270dcfd4e-df\"",
+      "file_path": "documentation/XCTest/xctmeasurementinvocationoptions/xctmeasurementinvocationnone.md",
+      "hash": "71813d418dcb05f41486e312caa88625db7761f683edc6db5cf851e5dfb45aaa"
     },
     "https://developer.apple.com/documentation/xctest/xctmeasureoptions": {
       "etag": "\"4111-6590270db0b6a-df\"",
@@ -1920,6 +2190,11 @@
       "file_path": "documentation/XCTest/xctselftestmain().md",
       "hash": "a98481f0a34a748f9fa052b3d2fa957e54df7de68296ed2fca24aa290665031a"
     },
+    "https://developer.apple.com/documentation/xctest/xctskip-c.macro": {
+      "etag": "\"e54-6590270e659b8-df\"",
+      "file_path": "documentation/XCTest/xctskip-c.macro.md",
+      "hash": "15201cfcf62accb5e40fcfc6c8fed64a75f3de8ff67ac5fff2aed6fb0b561adf"
+    },
     "https://developer.apple.com/documentation/xctest/xctskip-swift.struct": {
       "etag": "\"2937-6590270dcfd4e-df\"",
       "file_path": "documentation/XCTest/xctskip-swift.struct.md",
@@ -1935,10 +2210,20 @@
       "file_path": "documentation/XCTest/xctskip-swift.struct/message.md",
       "hash": "e09307140f92ca5775d2657e8c3a3e574d0c275ae38b75b5fba910d20e68c29e"
     },
+    "https://developer.apple.com/documentation/xctest/xctskipif": {
+      "etag": "\"1097-6590270db0b6a-df\"",
+      "file_path": "documentation/XCTest/xctskipif.md",
+      "hash": "556e96e37098b5460aba0197e7fe29e7ab3cb95e7efd50e14effb965c16e0323"
+    },
     "https://developer.apple.com/documentation/xctest/xctskipif(_:_:file:line:)": {
       "etag": "\"2ccb-6590270dcfd4e-df\"",
       "file_path": "documentation/XCTest/xctskipif(_,_,file,line).md",
       "hash": "bb9eb55982973af5ab7e9e8a3c471dc76398debfae79774fa80dd4993859aaa4"
+    },
+    "https://developer.apple.com/documentation/xctest/xctskipunless": {
+      "etag": "\"10b4-6590270e284af-df\"",
+      "file_path": "documentation/XCTest/xctskipunless.md",
+      "hash": "f536dd4da35a5fd2973b2a4c860ceddd083980a3f2ba482ae69607173f714c66"
     },
     "https://developer.apple.com/documentation/xctest/xctskipunless(_:_:file:line:)": {
       "etag": "\"2ce5-6590270e284af-df\"",
@@ -2325,10 +2610,85 @@
       "file_path": "documentation/XCTest/unconditional-test-failures.md",
       "hash": "ffb526a8021fdbace650ace51baf7912dfc2154c7d0b0a0ab8661eb4cc0542f6"
     },
+    "https://developer.apple.com/tutorials/data/documentation/xctest/xct_deprecated_with_direct_replacement.json": {
+      "etag": "\"a7f-6590270ee3e5c-df\"",
+      "file_path": "documentation/XCTest/xct_deprecated_with_direct_replacement.md",
+      "hash": "f96c854dfd7b223417a0e5d9697a09ed4617a833f7cd24b68e1f68493c5b76cd"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/xctest/xct_deprecated_with_replacement.json": {
+      "etag": "\"a2b-6590270dcfd4e-df\"",
+      "file_path": "documentation/XCTest/xct_deprecated_with_replacement.md",
+      "hash": "f4f29a169b73f3e718c1f488f7506c4bfab965918eeecc9614bc3e8e1a214039"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/xctest/xct_deprecated_with_swift_replacement.json": {
+      "etag": "\"a73-6590270eaca74-df\"",
+      "file_path": "documentation/XCTest/xct_deprecated_with_swift_replacement.md",
+      "hash": "8d3d52a2cfe09e3991e685705302de4b7118d2102a4427a465a4c2f2a58b25bf"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/xctest/xct_export.json": {
+      "etag": "\"8cb-6590270f099fb-df\"",
+      "file_path": "documentation/XCTest/xct_export.md",
+      "hash": "d37307066e00cde7362950f824ae168f0294b4c66e3f8e0d7b9ae1ef9df13780"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/xctest/xct_header_audit_begin.json": {
+      "etag": "\"97a-6590270dcfd4e-df\"",
+      "file_path": "documentation/XCTest/xct_header_audit_begin.md",
+      "hash": "77d595073c566ec544d702390307c0f59d5d5838c661c27c4573d93ffc1124b4"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/xctest/xct_header_audit_end.json": {
+      "etag": "\"962-6590270e284af-df\"",
+      "file_path": "documentation/XCTest/xct_header_audit_end.md",
+      "hash": "85cb040e8031b6e48f3ec3e8a23b37ab28d871b1da1a9147e1175dcdc2718107"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/xctest/xct_metric_api_available.json": {
+      "etag": "\"973-6590270dcfd4e-df\"",
+      "file_path": "documentation/XCTest/xct_metric_api_available.md",
+      "hash": "d0fcdb6edcb1a073a0c431af3d637c80746bf5e871db29f2ce88a1e69198001d"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/xctest/xct_noescape.json": {
+      "etag": "\"8e3-6590270dcfd4e-df\"",
+      "file_path": "documentation/XCTest/xct_noescape.md",
+      "hash": "b985eef430a602e37b7482446052ba25f9bf8c9ec36a7536cff907532b5d413e"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/xctest/xct_swift_main_actor.json": {
+      "etag": "\"943-6590270efd568-df\"",
+      "file_path": "documentation/XCTest/xct_swift_main_actor.md",
+      "hash": "834010171286628c9440e0e36403d38267646a10575802a4dc9930680b38c84b"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/xctest/xct_swift_sendable.json": {
+      "etag": "\"92b-6590270eaca74-df\"",
+      "file_path": "documentation/XCTest/xct_swift_sendable.md",
+      "hash": "efd42206f947bdd17c20271c7641db9107b4bf0ed577401c933c0b08763996a4"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/xctest/xct_swift_unavailable_from_async.json": {
+      "etag": "\"a2f-6590270e492ae-df\"",
+      "file_path": "documentation/XCTest/xct_swift_unavailable_from_async.md",
+      "hash": "3155ef9d1c8891eb376329416ec8062a4bbdf607732a1fb4045ee26751ea3070"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/xctest/xct_to_be_deprecated_with_swift_replacement.json": {
+      "etag": "\"abb-6590270e659b8-df\"",
+      "file_path": "documentation/XCTest/xct_to_be_deprecated_with_swift_replacement.md",
+      "hash": "e11362bc53a79dbcb1e31e5d5ed9f37909bb5aaabc158197397299d19b4afe9b"
+    },
     "https://developer.apple.com/tutorials/data/documentation/xctest/xct_ui_testing_available.json": {
       "etag": "\"1497-6590270db0b6a-df\"",
       "file_path": "documentation/XCTest/xct_ui_testing_available.md",
       "hash": "7e4b0cfde4001ab0f901d02655419bc7c618324750474bdd84e617446ecc920c"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/xctest/xct_unavailable.json": {
+      "etag": "\"963-6590270e0a774-df\"",
+      "file_path": "documentation/XCTest/xct_unavailable.md",
+      "hash": "cc599490add944608c4baad140de791ba75bd79b1768b09dc4cdcc20c2bc738a"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/xctest/xct_warn_unused.json": {
+      "etag": "\"907-6590270e284af-df\"",
+      "file_path": "documentation/XCTest/xct_warn_unused.md",
+      "hash": "211aff0280e9427b7b0f4e1f9e2e0a35de6f5d3e5600c97052b8add881f52127"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/xctest/xct_weak_export.json": {
+      "etag": "\"907-6590270e659b8-df\"",
+      "file_path": "documentation/XCTest/xct_weak_export.md",
+      "hash": "70d765bcdd20864da14ef933cff860b0be8022c779b139330e449952e27ceda0"
     },
     "https://developer.apple.com/tutorials/data/documentation/xctest/xctactivity.json": {
       "etag": "\"3246-6590270e0a774-df\"",
@@ -2365,6 +2725,11 @@
       "file_path": "documentation/XCTest/xctassert(_,_,file,line).md",
       "hash": "08a4d863fa97ba05592e7c4451d31f13868bd753ec290990a3ef366178c1f7b4"
     },
+    "https://developer.apple.com/tutorials/data/documentation/xctest/xctassert.json": {
+      "etag": "\"129f-6590270e659b8-df\"",
+      "file_path": "documentation/XCTest/xctassert.md",
+      "hash": "66527d636588c5e4e1bae00c1f68031f85fc65a5142ca90aed7b53f25a0163b9"
+    },
     "https://developer.apple.com/tutorials/data/documentation/xctest/xctassertequal(_:_:_:file:line:).json": {
       "etag": "\"326e-65d55e545a621-df\"",
       "file_path": "documentation/XCTest/xctassertequal(_,_,_,file,line).md",
@@ -2380,45 +2745,95 @@
       "file_path": "documentation/XCTest/xctassertequal(_,_,accuracy,_,file,line)-6frfw.md",
       "hash": "a796a24e83fc8288bfcab6d11c98505dff94ee9c3300fb6fb2b56016f058a420"
     },
+    "https://developer.apple.com/tutorials/data/documentation/xctest/xctassertequal.json": {
+      "etag": "\"19c6-6590270e492ae-df\"",
+      "file_path": "documentation/XCTest/xctassertequal.md",
+      "hash": "dd2f64960b383bdcf9d53c10ba1d8622367334a6708d992f44ecc4a4453d4e24"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/xctest/xctassertequalobjects.json": {
+      "etag": "\"1a6a-6590270eaca74-df\"",
+      "file_path": "documentation/XCTest/xctassertequalobjects.md",
+      "hash": "3cf977a2916ecc73a296d3c0e92fd60e86e7d167637bbfab13a73979149315c5"
+    },
     "https://developer.apple.com/tutorials/data/documentation/xctest/xctassertequalwithaccuracy(_:_:accuracy:_:file:line:).json": {
       "etag": "\"4347-6590270f099fb-df\"",
       "file_path": "documentation/XCTest/xctassertequalwithaccuracy(_,_,accuracy,_,file,line).md",
       "hash": "a2da5618374be01f6182bc51cd7e3a0fb5b34482c01b72e276b61731b6805c29"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/xctest/xctassertequalwithaccuracy.json": {
+      "etag": "\"16eb-6590270ee3e5c-df\"",
+      "file_path": "documentation/XCTest/xctassertequalwithaccuracy.md",
+      "hash": "48eabbcbefac6f1b3ec8c7bc2335baab69a59af79858cfea4ef0b421a5331155"
     },
     "https://developer.apple.com/tutorials/data/documentation/xctest/xctassertfalse(_:_:file:line:).json": {
       "etag": "\"2272-6590270eaca74-df\"",
       "file_path": "documentation/XCTest/xctassertfalse(_,_,file,line).md",
       "hash": "8dbada776e572e0579e9c473bd49d48a1e15538cff127e64943c9e1641039364"
     },
+    "https://developer.apple.com/tutorials/data/documentation/xctest/xctassertfalse.json": {
+      "etag": "\"ff1-6590270e84aa6-df\"",
+      "file_path": "documentation/XCTest/xctassertfalse.md",
+      "hash": "365eb0a964bcd2699517981d6a1f0846ae202df87c7370f771df3680461290d6"
+    },
     "https://developer.apple.com/tutorials/data/documentation/xctest/xctassertgreaterthan(_:_:_:file:line:).json": {
       "etag": "\"3edd-6590270ee3e5c-df\"",
       "file_path": "documentation/XCTest/xctassertgreaterthan(_,_,_,file,line).md",
       "hash": "78200fe2c4d9b6f3773ef78859007d30b867f42c00968957d858cd035dd6b4d6"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/xctest/xctassertgreaterthan.json": {
+      "etag": "\"18e6-6590270e492ae-df\"",
+      "file_path": "documentation/XCTest/xctassertgreaterthan.md",
+      "hash": "ff06a86b03beb49ec99a4ab24c8ba5838ffde8c5c3e1fa4dd16896255dfdbc3c"
     },
     "https://developer.apple.com/tutorials/data/documentation/xctest/xctassertgreaterthanorequal(_:_:_:file:line:).json": {
       "etag": "\"3f0c-6590270db0b6a-df\"",
       "file_path": "documentation/XCTest/xctassertgreaterthanorequal(_,_,_,file,line).md",
       "hash": "255b0904ea271e737c8b05507d2b4a899702749476b49433089bfd36def0e0e5"
     },
+    "https://developer.apple.com/tutorials/data/documentation/xctest/xctassertgreaterthanorequal.json": {
+      "etag": "\"191b-6590270e84aa6-df\"",
+      "file_path": "documentation/XCTest/xctassertgreaterthanorequal.md",
+      "hash": "74660a2e3a774e694ff617c5e3147b85dc8802026fcdfe126c7c9125e9455f5c"
+    },
     "https://developer.apple.com/tutorials/data/documentation/xctest/xctassertidentical(_:_:_:file:line:).json": {
       "etag": "\"2f78-6590270ee3e5c-df\"",
       "file_path": "documentation/XCTest/xctassertidentical(_,_,_,file,line).md",
       "hash": "f91ccbbec2933bfebb999252e7256d45ba4f02e4243a06084436a086853b0ad0"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/xctest/xctassertidentical.json": {
+      "etag": "\"164b-6590270dcfd4e-df\"",
+      "file_path": "documentation/XCTest/xctassertidentical.md",
+      "hash": "3736c34096f196f6de048db18dc6dcb136ae34c6a69faeee81bb067e2ef6f9cb"
     },
     "https://developer.apple.com/tutorials/data/documentation/xctest/xctassertlessthan(_:_:_:file:line:).json": {
       "etag": "\"3ecb-6590270dcfd4e-df\"",
       "file_path": "documentation/XCTest/xctassertlessthan(_,_,_,file,line).md",
       "hash": "618fa84d14b7092aa23ad8b63ab1b872ef817f9735f95f4a2e9376536ae4c367"
     },
+    "https://developer.apple.com/tutorials/data/documentation/xctest/xctassertlessthan.json": {
+      "etag": "\"18d1-6590270ee3e5c-df\"",
+      "file_path": "documentation/XCTest/xctassertlessthan.md",
+      "hash": "8a36f581fa38302a4e8620a02e02d9adc89afd42a53832b675f14384af2b8cf4"
+    },
     "https://developer.apple.com/tutorials/data/documentation/xctest/xctassertlessthanorequal(_:_:_:file:line:).json": {
       "etag": "\"3efa-6590270efd568-df\"",
       "file_path": "documentation/XCTest/xctassertlessthanorequal(_,_,_,file,line).md",
       "hash": "ff0370a64fe250b6f99bd12ca32a1548f282ede4985b77f6fbb4b84b04269612"
     },
+    "https://developer.apple.com/tutorials/data/documentation/xctest/xctassertlessthanorequal.json": {
+      "etag": "\"1906-6590270ee3e5c-df\"",
+      "file_path": "documentation/XCTest/xctassertlessthanorequal.md",
+      "hash": "64734656b36d90a5f78b7b6e1ddc83cc389de08b58053022b310fa98fcf14587"
+    },
     "https://developer.apple.com/tutorials/data/documentation/xctest/xctassertnil(_:_:file:line:).json": {
       "etag": "\"2041-6590270e659b8-df\"",
       "file_path": "documentation/XCTest/xctassertnil(_,_,file,line).md",
       "hash": "636984f49f14d792e856dad033d26151f8b152cd0de11435cfa3c08de30ed97e"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/xctest/xctassertnil.json": {
+      "etag": "\"107a-6590270e492ae-df\"",
+      "file_path": "documentation/XCTest/xctassertnil.md",
+      "hash": "181c7a3ee7120287e9f958f4a89467bec99ec00c839635bbc33da27e4f59e968"
     },
     "https://developer.apple.com/tutorials/data/documentation/xctest/xctassertnotequal(_:_:_:file:line:).json": {
       "etag": "\"2e4f-6590270eaca74-df\"",
@@ -2435,40 +2850,105 @@
       "file_path": "documentation/XCTest/xctassertnotequal(_,_,accuracy,_,file,line)-7jcd6.md",
       "hash": "863119e1249f32bc210c0e6f801022c7146d00ba25e7a70d0d3bc42b1ee93a88"
     },
+    "https://developer.apple.com/tutorials/data/documentation/xctest/xctassertnotequal.json": {
+      "etag": "\"1780-6590270e284af-df\"",
+      "file_path": "documentation/XCTest/xctassertnotequal.md",
+      "hash": "60a6f6c41b7b11f94c5e6cebddf079a12bce7d1f04701d9868cfe25ac93204bd"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/xctest/xctassertnotequalobjects.json": {
+      "etag": "\"1a94-6590270e284af-df\"",
+      "file_path": "documentation/XCTest/xctassertnotequalobjects.md",
+      "hash": "beae55ee17d4a8f9868570f7e520fc370e5b84407ca053ae7eb5f5d986a9ab4d"
+    },
     "https://developer.apple.com/tutorials/data/documentation/xctest/xctassertnotequalwithaccuracy(_:_:_:_:file:line:).json": {
       "etag": "\"4357-6590270e659b8-df\"",
       "file_path": "documentation/XCTest/xctassertnotequalwithaccuracy(_,_,_,_,file,line).md",
       "hash": "32facaec701ba7d11d59da89295179768d421102c37404ce8ff70950e96a8c98"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/xctest/xctassertnotequalwithaccuracy.json": {
+      "etag": "\"170e-6590270dcfd4e-df\"",
+      "file_path": "documentation/XCTest/xctassertnotequalwithaccuracy.md",
+      "hash": "ba43f243f945ab29c9f7a3aafc78499b57e52ecdeaed1e5720623084ec668e0c"
     },
     "https://developer.apple.com/tutorials/data/documentation/xctest/xctassertnothrow(_:_:file:line:).json": {
       "etag": "\"1f5b-6590270dcfd4e-df\"",
       "file_path": "documentation/XCTest/xctassertnothrow(_,_,file,line).md",
       "hash": "510169dbb7f40047f8122fb4ffd250aa4e8ecafcba5525c0b0df9dd20b1a538d"
     },
+    "https://developer.apple.com/tutorials/data/documentation/xctest/xctassertnothrow.json": {
+      "etag": "\"10a1-6590270e659b8-df\"",
+      "file_path": "documentation/XCTest/xctassertnothrow.md",
+      "hash": "a35a8b1b576403a48b171b0b030ea8a86fbe4ca5918a78856f133cb22f9e47c9"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/xctest/xctassertnothrowspecific.json": {
+      "etag": "\"21b7-6590270dcfd4e-df\"",
+      "file_path": "documentation/XCTest/xctassertnothrowspecific.md",
+      "hash": "d075e2ff301d6a572f3bdea51e1a90e985bce73f25e7d5e1d1a42e7d88903673"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/xctest/xctassertnothrowspecificnamed.json": {
+      "etag": "\"230f-6590270e84aa6-df\"",
+      "file_path": "documentation/XCTest/xctassertnothrowspecificnamed.md",
+      "hash": "39a3057f58e415c82420e60261eda40be9a5ca80781d21aefcf3c97db7e73087"
+    },
     "https://developer.apple.com/tutorials/data/documentation/xctest/xctassertnotidentical(_:_:_:file:line:).json": {
       "etag": "\"2f95-6590270eaca74-df\"",
       "file_path": "documentation/XCTest/xctassertnotidentical(_,_,_,file,line).md",
       "hash": "6d197aa1d1724806412d70bde75c0b0107d2cd6ffaf6ad07d2f94d24c05c09a3"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/xctest/xctassertnotidentical.json": {
+      "etag": "\"1682-6590270dcfd4e-df\"",
+      "file_path": "documentation/XCTest/xctassertnotidentical.md",
+      "hash": "5c8e1876ff8ad188d251aff84e8d5abe6108b90d3731b05a68d345dfc83e6890"
     },
     "https://developer.apple.com/tutorials/data/documentation/xctest/xctassertnotnil(_:_:file:line:).json": {
       "etag": "\"2722-6590270e659b8-df\"",
       "file_path": "documentation/XCTest/xctassertnotnil(_,_,file,line).md",
       "hash": "86d9fecf67f458c2e6e7d8db74ff3ec77d81aff1d12ed3a570e53194036d11ff"
     },
+    "https://developer.apple.com/tutorials/data/documentation/xctest/xctassertnotnil.json": {
+      "etag": "\"10a6-6590270efd568-df\"",
+      "file_path": "documentation/XCTest/xctassertnotnil.md",
+      "hash": "6150ccc14d78f6dae741599e5ce881730dcf58eb7d0a9a685fafb9e04ae37adb"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/xctest/xctassertthrows.json": {
+      "etag": "\"1cc7-6590270dcfd4e-df\"",
+      "file_path": "documentation/XCTest/xctassertthrows.md",
+      "hash": "9255e304b67e54d605a0440d891e10d09d7d3aff414321b9851d85856d8563b9"
+    },
     "https://developer.apple.com/tutorials/data/documentation/xctest/xctassertthrowserror(_:_:file:line:_:).json": {
       "etag": "\"2886-6590270efd568-df\"",
       "file_path": "documentation/XCTest/xctassertthrowserror(_,_,file,line,_).md",
       "hash": "0a86497d9236a7056fd181ab78c70133d73d6f4c7386e61f41c8dbd8abbc7824"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/xctest/xctassertthrowsspecific.json": {
+      "etag": "\"21b1-6590270eaca74-df\"",
+      "file_path": "documentation/XCTest/xctassertthrowsspecific.md",
+      "hash": "96e642cd06d9db156d2765a505df30e22ce649d5fcaac8bdd942722d62f529e7"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/xctest/xctassertthrowsspecificnamed.json": {
+      "etag": "\"22d0-6590270e659b8-df\"",
+      "file_path": "documentation/XCTest/xctassertthrowsspecificnamed.md",
+      "hash": "8299baab9c369227d9b7f4ed40cf32323239744e192970391d2a1a82fb234824"
     },
     "https://developer.apple.com/tutorials/data/documentation/xctest/xctasserttrue(_:_:file:line:).json": {
       "etag": "\"28db-6590270e84aa6-df\"",
       "file_path": "documentation/XCTest/xctasserttrue(_,_,file,line).md",
       "hash": "61cc017e1a9f1695692a22a87fde9c864b52e203c22e366f3c72f6cb66b3ebfb"
     },
+    "https://developer.apple.com/tutorials/data/documentation/xctest/xctasserttrue.json": {
+      "etag": "\"12b3-6590270eaca74-df\"",
+      "file_path": "documentation/XCTest/xctasserttrue.md",
+      "hash": "80681aaa196349435df9752236d7cb9b7561eed94771a87bfc572567c74c28ae"
+    },
     "https://developer.apple.com/tutorials/data/documentation/xctest/xctattachment.json": {
       "etag": "\"c8dd-6590270dcfd4e-df\"",
       "file_path": "documentation/XCTest/xctattachment.md",
       "hash": "4e0e5a5de2e5326f8a71f2657d3a42d4d476b6d7828d3e5e69dfcd456f18bcd0"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/xctest/xctattachment/attachmentwithuniformtypeidentifier:name:payload:userinfo:.json": {
+      "etag": "\"3d08-6590270e84aa6-df\"",
+      "file_path": "documentation/XCTest/xctattachment/attachmentwithuniformtypeidentifier_name_payload_userinfo_.md",
+      "hash": "93f73f5382376f3be22b030b84fd1fb3d3c38064c814abcb8d52aa959fe56a68"
     },
     "https://developer.apple.com/tutorials/data/documentation/xctest/xctattachment/imagequality.json": {
       "etag": "\"5676-6590270e84aa6-df\"",
@@ -2645,6 +3125,11 @@
       "file_path": "documentation/XCTest/xctcontext/runactivity(named,block).md",
       "hash": "523517d57abc2d864642a502068829d37b3581c1073b123369cbfb75ee3538f5"
     },
+    "https://developer.apple.com/tutorials/data/documentation/xctest/xctcontext/runactivitynamed:block:.json": {
+      "etag": "\"28a6-6590270dcfd4e-df\"",
+      "file_path": "documentation/XCTest/xctcontext/runactivitynamed_block_.md",
+      "hash": "69842f9206e149abcc4eb0d82feb3cee0ee358ccc38dad75fda89376318c182b"
+    },
     "https://developer.apple.com/tutorials/data/documentation/xctest/xctcpumetric.json": {
       "etag": "\"6db7-65d55e54717a6-df\"",
       "file_path": "documentation/XCTest/xctcpumetric.md",
@@ -2755,10 +3240,20 @@
       "file_path": "documentation/XCTest/xctest-page/testrunclass.md",
       "hash": "787e5df4674e833a9cc7fa5042b9fbdc6cc71b69a511ecbdf37ad8b6772bded7"
     },
+    "https://developer.apple.com/tutorials/data/documentation/xctest/xctest_simulator_unavailable.json": {
+      "etag": "\"a00-6590270eaca74-df\"",
+      "file_path": "documentation/XCTest/xctest_simulator_unavailable.md",
+      "hash": "66d53b6b745d182c03cb9008af6a91f20dc6c4b5fcb4f6258ab677d5fe529d62"
+    },
     "https://developer.apple.com/tutorials/data/documentation/xctest/xctestcase.json": {
       "etag": "\"194d8-6590270ee3e5c-df\"",
       "file_path": "documentation/XCTest/xctestcase.md",
       "hash": "10c2d138792335acdd20a6c7382c3e2b1a977430743fe4f9d423d0f2cbc2d5ee"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/xctest/xctestcase/addasyncteardownblock:.json": {
+      "etag": "\"4b7e-6590270e284af-df\"",
+      "file_path": "documentation/XCTest/xctestcase/addasyncteardownblock_.md",
+      "hash": "ad2f1f31bbebd99a2d9336d1dd17f1fc60a075a2ceb657a9af5be029059cbaaf"
     },
     "https://developer.apple.com/tutorials/data/documentation/xctest/xctestcase/addteardownblock(_:)-2guon.json": {
       "etag": "\"4e46-65d55e5409d67-df\"",
@@ -2769,6 +3264,11 @@
       "etag": "\"2907-65d55e5409d67-df\"",
       "file_path": "documentation/XCTest/xctestcase/addteardownblock(_)-5zw6c.md",
       "hash": "93974bec155e45a84c882eff5e44693f08983a25c64634c91e845a7a3e3a3fcd"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/xctest/xctestcase/addteardownblock:.json": {
+      "etag": "\"595a-65d55e53f4eda-df\"",
+      "file_path": "documentation/XCTest/xctestcase/addteardownblock_.md",
+      "hash": "351aba9fb9de71af4e3ba6fdd10acf0802759a6b3d802ebe4b4eac087bfe1b95"
     },
     "https://developer.apple.com/tutorials/data/documentation/xctest/xctestcase/adduiinterruptionmonitor(withdescription:handler:).json": {
       "etag": "\"4bd3-6590270e0a774-df\"",
@@ -2945,6 +3445,16 @@
       "file_path": "documentation/XCTest/xctestcase/teardown().md",
       "hash": "3513e45a6df9bf5711e27b60d9676b494db48a581803eaed2ee4182bc4a5cef6"
     },
+    "https://developer.apple.com/tutorials/data/documentation/xctest/xctestcase/testcasewithinvocation:.json": {
+      "etag": "\"3e42-6590270e284af-df\"",
+      "file_path": "documentation/XCTest/xctestcase/testcasewithinvocation_.md",
+      "hash": "b517367c22afc1467f800f4cc18fc2f59eee1bfd5f506ea0ba3cd168cbeec160"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/xctest/xctestcase/testcasewithselector:.json": {
+      "etag": "\"3ddd-6590270e0a774-df\"",
+      "file_path": "documentation/XCTest/xctestcase/testcasewithselector_.md",
+      "hash": "d0b6f92c6708cff4c62d81ba90bc713aee2f2917f193490432a35a19095fd77b"
+    },
     "https://developer.apple.com/tutorials/data/documentation/xctest/xctestcase/testinvocations.json": {
       "etag": "\"46ba-6590270e0a774-df\"",
       "file_path": "documentation/XCTest/xctestcase/testinvocations.md",
@@ -3084,6 +3594,11 @@
       "etag": "\"30c9-6590270e492ae-df\"",
       "file_path": "documentation/XCTest/xctestlog/testlog(withformat,arguments).md",
       "hash": "9737bec6b388f2a3aca3ec76f1606d5678f80cdf4245d843637296a0c967f102"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/xctest/xctestlog/testlogwithformat:.json": {
+      "etag": "\"1ee1-6590270e492ae-df\"",
+      "file_path": "documentation/XCTest/xctestlog/testlogwithformat_.md",
+      "hash": "af24ec6c096843e0ac3967e38c65018fef9a05550ab4e68516161f2c4ccc78f2"
     },
     "https://developer.apple.com/tutorials/data/documentation/xctest/xctestobservation.json": {
       "etag": "\"7af4-6590270dcfd4e-df\"",
@@ -3305,6 +3820,11 @@
       "file_path": "documentation/XCTest/xctestrun/testduration.md",
       "hash": "938e86c6578f92601b0e240f8b12dd52eebcb91b9a5a1187ac4e69fc454341b5"
     },
+    "https://developer.apple.com/tutorials/data/documentation/xctest/xctestrun/testrunwithtest:.json": {
+      "etag": "\"1b51-6590270e0a774-df\"",
+      "file_path": "documentation/XCTest/xctestrun/testrunwithtest_.md",
+      "hash": "a6d511304f904b13b23f003a286f9b46dbabf5b6a85805973cc6216566646719"
+    },
     "https://developer.apple.com/tutorials/data/documentation/xctest/xctestrun/totalduration.json": {
       "etag": "\"2b40-6590270e0a774-df\"",
       "file_path": "documentation/XCTest/xctestrun/totalduration.md",
@@ -3379,6 +3899,11 @@
       "etag": "\"20e2-6590270ee3e5c-df\"",
       "file_path": "documentation/XCTest/xctestsuite/tests.md",
       "hash": "bd4c59345330f473a398f3fc35e115e41fedb166f0d1fc9161d017dac6115af8"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/xctest/xctestsuite/testsuitewithname:.json": {
+      "etag": "\"2cc2-6590270ee3e5c-df\"",
+      "file_path": "documentation/XCTest/xctestsuite/testsuitewithname_.md",
+      "hash": "edb58e8a5290af6085aa8d7372106dc70e8c94764a7cf6d81ea52fc683c74a96"
     },
     "https://developer.apple.com/tutorials/data/documentation/xctest/xctestsuiterun.json": {
       "etag": "\"3f7e-6590270ee3e5c-df\"",
@@ -3460,10 +3985,35 @@
       "file_path": "documentation/XCTest/xctexpectfailure(_,options,failingblock).md",
       "hash": "7136dff087c7d01a0c54e31cad24e410e15223e1ecd4669fe9bc796da3f02e9e"
     },
+    "https://developer.apple.com/tutorials/data/documentation/xctest/xctexpectfailure.json": {
+      "etag": "\"1fc8-6590270dcfd4e-df\"",
+      "file_path": "documentation/XCTest/xctexpectfailure.md",
+      "hash": "69c95ee2a884b2a3d492b9493e13002223c821306aa4865cab519aa675e4ca22"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/xctest/xctexpectfailureinblock.json": {
+      "etag": "\"20b4-6590270f099fb-df\"",
+      "file_path": "documentation/XCTest/xctexpectfailureinblock.md",
+      "hash": "05117f945fb36eabd1b869c4eea83e79444cc8d79cb28fb80f8e8c4e29dbba06"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/xctest/xctexpectfailurewithoptions.json": {
+      "etag": "\"2181-6590270f099fb-df\"",
+      "file_path": "documentation/XCTest/xctexpectfailurewithoptions.md",
+      "hash": "55456bbb8588c407ea664710c77199a703811b6a0bf4be5f28c265ce1174cdd3"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/xctest/xctexpectfailurewithoptionsinblock.json": {
+      "etag": "\"226d-6590270e492ae-df\"",
+      "file_path": "documentation/XCTest/xctexpectfailurewithoptionsinblock.md",
+      "hash": "cbab7ddb97b46895f9a5f8ca7d1e307f4426d5f2b6d6338b37675ea7763ee9d8"
+    },
     "https://developer.apple.com/tutorials/data/documentation/xctest/xctfail(_:file:line:).json": {
       "etag": "\"19ff-6590270eaca74-df\"",
       "file_path": "documentation/XCTest/xctfail(_,file,line).md",
       "hash": "9df27b74dac9375db19d31b4e88fd5d3eaa7fb8920aaf63bd718c4113bb460ef"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/xctest/xctfail.json": {
+      "etag": "\"df5-6590270dcfd4e-df\"",
+      "file_path": "documentation/XCTest/xctfail.md",
+      "hash": "26e647d1cce55d64e7aed179aff28f63be57c65e58a83076ab59da9cf11f2f98"
     },
     "https://developer.apple.com/tutorials/data/documentation/xctest/xcthitchmetric.json": {
       "etag": "\"5bd1-65d55e5409d67-df\"",
@@ -3774,6 +4324,11 @@
       "etag": "\"2eea-65d55e53cb1b9-df\"",
       "file_path": "documentation/XCTest/xctkvoexpectation/options.md",
       "hash": "e902100bc0f5d18040b356b060144cf132c4b1514064e18018340c988043be85"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/xctest/xctmeasurementinvocationoptions/xctmeasurementinvocationnone.json": {
+      "etag": "\"1150-6590270dcfd4e-df\"",
+      "file_path": "documentation/XCTest/xctmeasurementinvocationoptions/xctmeasurementinvocationnone.md",
+      "hash": "71813d418dcb05f41486e312caa88625db7761f683edc6db5cf851e5dfb45aaa"
     },
     "https://developer.apple.com/tutorials/data/documentation/xctest/xctmeasureoptions.json": {
       "etag": "\"4111-6590270db0b6a-df\"",
@@ -4145,6 +4700,11 @@
       "file_path": "documentation/XCTest/xctselftestmain().md",
       "hash": "a98481f0a34a748f9fa052b3d2fa957e54df7de68296ed2fca24aa290665031a"
     },
+    "https://developer.apple.com/tutorials/data/documentation/xctest/xctskip-c.macro.json": {
+      "etag": "\"e54-6590270e659b8-df\"",
+      "file_path": "documentation/XCTest/xctskip-c.macro.md",
+      "hash": "15201cfcf62accb5e40fcfc6c8fed64a75f3de8ff67ac5fff2aed6fb0b561adf"
+    },
     "https://developer.apple.com/tutorials/data/documentation/xctest/xctskip-swift.struct.json": {
       "etag": "\"2937-6590270dcfd4e-df\"",
       "file_path": "documentation/XCTest/xctskip-swift.struct.md",
@@ -4165,10 +4725,20 @@
       "file_path": "documentation/XCTest/xctskipif(_,_,file,line).md",
       "hash": "bb9eb55982973af5ab7e9e8a3c471dc76398debfae79774fa80dd4993859aaa4"
     },
+    "https://developer.apple.com/tutorials/data/documentation/xctest/xctskipif.json": {
+      "etag": "\"1097-6590270db0b6a-df\"",
+      "file_path": "documentation/XCTest/xctskipif.md",
+      "hash": "556e96e37098b5460aba0197e7fe29e7ab3cb95e7efd50e14effb965c16e0323"
+    },
     "https://developer.apple.com/tutorials/data/documentation/xctest/xctskipunless(_:_:file:line:).json": {
       "etag": "\"2ce5-6590270e284af-df\"",
       "file_path": "documentation/XCTest/xctskipunless(_,_,file,line).md",
       "hash": "5423afb31d23d06ab84ff1b0e733dc196484ebc99e50ce70762049dc325da120"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/xctest/xctskipunless.json": {
+      "etag": "\"10b4-6590270e284af-df\"",
+      "file_path": "documentation/XCTest/xctskipunless.md",
+      "hash": "f536dd4da35a5fd2973b2a4c860ceddd083980a3f2ba482ae69607173f714c66"
     },
     "https://developer.apple.com/tutorials/data/documentation/xctest/xctsourcecodecontext.json": {
       "etag": "\"71b7-6590270ee3e5c-df\"",
@@ -4453,8 +5023,8 @@
   },
   "metadata": {
     "render": {
-      "version": 1
+      "version": 2
     },
-    "total_pages": 890
+    "total_pages": 1004
   }
 }

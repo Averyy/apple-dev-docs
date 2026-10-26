@@ -32,6 +32,8 @@ class SWCollaborationOptionsGroup
 ### Creating a collaboration options group
 - [init(identifier: String, options: [SWCollaborationOption])](./swcollaborationoptionsgroup/init%28identifier,options%29.md)
   Creates and initializes a collaboration options group object.
+- [+ optionsGroupWithIdentifier:options:](./swcollaborationoptionsgroup/optionsgroupwithidentifier_options_.md)
+  Creates and initializes a collaboration options group object.
 ### Accessing options group attributes
 - [var footer: String](./swcollaborationoptionsgroup/footer.md)
   A localized string that provides additional information for the group of options.

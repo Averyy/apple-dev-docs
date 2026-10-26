@@ -55,6 +55,9 @@ The new font descriptor.
   Returns a new font descriptor that’s the same as the existing font descriptor, but with the specified matrix.
 - [func withSize(CGFloat) -> UIFontDescriptor](./withsize%28_%29.md)
   Returns a new font descriptor that’s the same as the existing font descriptor, but with the specified point size.
+### Related Documentation
+- [+ fontDescriptorWithFontAttributes:](./fontdescriptorwithfontattributes_.md)
+  Returns a font descriptor with a dictionary of attributes.
 
 
 ---

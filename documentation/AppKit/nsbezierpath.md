@@ -43,6 +43,8 @@ The current graphics context is automatically saved and restored for all drawing
   A flattened version of the path object.
 - [var reversed: NSBezierPath](./nsbezierpath/reversed.md)
   A path containing the reversed contents of the current path object.
+- [+ bezierPath](./nsbezierpath/bezierpath.md)
+  Creates and returns a new Bézier path object.
 ### Constructing a Path
 - [func move(to: NSPoint)](./nsbezierpath/move%28to%29.md)
   Moves the path’s current point to the specified location.
@@ -174,6 +176,10 @@ The current graphics context is automatically saved and restored for all drawing
   Appends the outlines of the specified glyphs to the path.
 - [func appendPackedGlyphs(UnsafePointer<CChar>)](./nsbezierpath/appendpackedglyphs%28_%29.md)
   Appends an array of packed glyphs to the path.
+- [- cachesBezierPath](./nsbezierpath/cachesbezierpath.md)
+  Returns a Boolean value that indicates whether this object maintains a cached image of its path.
+- [- setCachesBezierPath:](./nsbezierpath/setcachesbezierpath_.md)
+  Sets whether the path should cache its path information.
 ### Initializers
 - [init(CGPath: CGPath)](./nsbezierpath/init%28cgpath%29-4nao7.md)
 - [init?(coder: NSCoder)](./nsbezierpath/init%28coder%29.md)

@@ -42,6 +42,8 @@ Use this initializer to create an [`NLGazetteer`](../nlgazetteer.md) from an `.m
   Creates a gazetteer from a set of labels for terms represented by a dictionary.
 - [class func write([String : [String]], language: NLLanguage?, to: URL) throws](./write%28_,language,to%29.md)
   Creates a gazetteer from a set of labels for terms represented by a dictionary and saves the gazetteer to a file.
+- [+ gazetteerWithContentsOfURL:error:](./gazetteerwithcontentsofurl_error_.md)
+  Creates a Natural Language gazetteer from a model created with the Create ML framework.
 
 
 ---

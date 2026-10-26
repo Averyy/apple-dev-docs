@@ -28,6 +28,8 @@ class MPSCNNSoftMaxGradientNode
 
 ### Initializers
 - [init(sourceGradient: MPSNNImageNode, sourceImage: MPSNNImageNode, gradientState: MPSNNGradientStateNode)](./mpscnnsoftmaxgradientnode/init%28sourcegradient,sourceimage,gradientstate%29.md)
+### Type Methods
+- [+ nodeWithSourceGradient:sourceImage:gradientState:](./mpscnnsoftmaxgradientnode/nodewithsourcegradient_sourceimage_gradientstate_.md)
 
 ## Relationships
 

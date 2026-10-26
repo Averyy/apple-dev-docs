@@ -82,6 +82,8 @@ You frequently use a locale in conjunction with a formatter. For example, the [`
   Initializes a locale using a given locale identifier.
 - [init?(coder: NSCoder)](./nslocale/init%28coder%29.md)
   Returns a locale initialized from data in the given unarchiver.
+- [+ localeWithLocaleIdentifier:](./nslocale/localewithlocaleidentifier_.md)
+  Returns a locale initialized using the given locale identifier.
 ### Getting the User’s Locale
 - [class var autoupdatingCurrent: Locale](./nslocale/autoupdatingcurrent.md)
   A locale which tracks the user’s current preferences.

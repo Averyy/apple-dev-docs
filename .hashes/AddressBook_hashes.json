@@ -35,10 +35,70 @@
       "file_path": "documentation/AddressBook/api-1619878-source-types.md",
       "hash": "8883ad964292ce0170ae691ff513b67d9ffb59bd8ec21e5b266c4044b4318124"
     },
+    "https://developer.apple.com/documentation/addressbook/ab_deprecated": {
+      "etag": "\"9ea-65d55dfbed411-df\"",
+      "file_path": "documentation/AddressBook/ab_deprecated.md",
+      "hash": "615f62f0130ea94351b9f08b177d04ef47fbd205e1d41092838aa943fa4f0499"
+    },
+    "https://developer.apple.com/documentation/addressbook/ab_extern": {
+      "etag": "\"95e-65d55dfce5ceb-df\"",
+      "file_path": "documentation/AddressBook/ab_extern.md",
+      "hash": "9b6abe4372514f7ec7acb30ee8c781a107f8a03911cff221643ad402457a0b2f"
+    },
+    "https://developer.apple.com/documentation/addressbook/abactioncallbacks": {
+      "etag": "\"1520-65d55dfcc237d-df\"",
+      "file_path": "documentation/AddressBook/abactioncallbacks.md",
+      "hash": "6ad7667020f72b287c4706dd00f05ead9d1bed771cc796f0ddb683a7572377d4"
+    },
+    "https://developer.apple.com/documentation/addressbook/abactioncallbacks/enabled": {
+      "etag": "\"181b-65d55dfca62bd-df\"",
+      "file_path": "documentation/AddressBook/abactioncallbacks/enabled.md",
+      "hash": "5fdc8dea79f552588889f357d11ad6b6aead37adf2cb8919fc4548ede6723415"
+    },
+    "https://developer.apple.com/documentation/addressbook/abactioncallbacks/property": {
+      "etag": "\"16b0-65d55dfca62bd-df\"",
+      "file_path": "documentation/AddressBook/abactioncallbacks/property.md",
+      "hash": "fe452443761b0445cd49cad114855b2a812a273e891ef2d29d40e4dee04c1835"
+    },
+    "https://developer.apple.com/documentation/addressbook/abactioncallbacks/selected": {
+      "etag": "\"1a19-65d55dfc83d15-df\"",
+      "file_path": "documentation/AddressBook/abactioncallbacks/selected.md",
+      "hash": "407a53717caed1a3facdf83e47b2ce8815486935696920258af5aa7143f1af10"
+    },
+    "https://developer.apple.com/documentation/addressbook/abactioncallbacks/title": {
+      "etag": "\"168e-65d55dfca62bd-df\"",
+      "file_path": "documentation/AddressBook/abactioncallbacks/title.md",
+      "hash": "88d45b804cd94c7049a0fe7530609956cdef055c6d636963b10ab86c610056c0"
+    },
+    "https://developer.apple.com/documentation/addressbook/abactioncallbacks/version": {
+      "etag": "\"1788-65d55dfc83d15-df\"",
+      "file_path": "documentation/AddressBook/abactioncallbacks/version.md",
+      "hash": "8c9a549cc1e9140d65effc55d0e1c29b9962ee027bc9bdfa1b9fd2ecb142c71d"
+    },
+    "https://developer.apple.com/documentation/addressbook/abactioncopytitlecallback": {
+      "etag": "\"1c60-65d55dfc4458c-df\"",
+      "file_path": "documentation/AddressBook/abactioncopytitlecallback.md",
+      "hash": "203b8b7b4ba7d6186079dad07b7c0c9292ad4282f614fcb1cadb1f2611abac68"
+    },
     "https://developer.apple.com/documentation/addressbook/abactiondelegate": {
       "etag": "\"326e-6590268625861-df\"",
       "file_path": "documentation/AddressBook/abactiondelegate.md",
       "hash": "01042d3b24465bcb3eeeaf5108a420a1378d4454fcba9a33e1050c6610954a03"
+    },
+    "https://developer.apple.com/documentation/addressbook/abactionenabledcallback": {
+      "etag": "\"1c65-65d55dfcc237d-df\"",
+      "file_path": "documentation/AddressBook/abactionenabledcallback.md",
+      "hash": "4d099fc0728942b0d52e246f14232ffa6931e77e65716eb5ba07f6ae02a51422"
+    },
+    "https://developer.apple.com/documentation/addressbook/abactiongetpropertycallback": {
+      "etag": "\"1abb-65d55dfd421a9-df\"",
+      "file_path": "documentation/AddressBook/abactiongetpropertycallback.md",
+      "hash": "82a5139f2430b0319c9b2a30e2620e1b20ea036b470f1236ee24a2d41092dfc5"
+    },
+    "https://developer.apple.com/documentation/addressbook/abactionselectedcallback": {
+      "etag": "\"1c65-65d55dfbed411-df\"",
+      "file_path": "documentation/AddressBook/abactionselectedcallback.md",
+      "hash": "ede15a409d23b31d50e1d7ee15ea29e0c20e81fe41e275e00e4ab45914d0ffa9"
     },
     "https://developer.apple.com/documentation/addressbook/abaddpropertiesandtypes(_:_:_:)": {
       "etag": "\"5f0a-65d55dfc83d15-df\"",
@@ -69,6 +129,11 @@
       "etag": "\"4fad-65d55dfc66e16-df\"",
       "file_path": "documentation/AddressBook/abaddressbook-swift.class/add(_,error).md",
       "hash": "58f056c5d0a0e7225538823fa9f9b60a83683e3a1e1d76a43e5b221b959d4237"
+    },
+    "https://developer.apple.com/documentation/addressbook/abaddressbook-swift.class/addressbook": {
+      "etag": "\"2bc9-65d55dfc66e16-df\"",
+      "file_path": "documentation/AddressBook/abaddressbook-swift.class/addressbook.md",
+      "hash": "eff0e0cb56fafad702eecd519c78932abf977aac92a4290b257cc5f6dd463ef3"
     },
     "https://developer.apple.com/documentation/addressbook/abaddressbook-swift.class/defaultcountrycode()": {
       "etag": "\"2ddc-65d55dfc66e16-df\"",
@@ -832,6 +897,21 @@
       "file_path": "documentation/AddressBook/abnovalueselection.md",
       "hash": "b5c16423fb43e15af710e2f8151ac2e051a51a09b1c430d9bbf0543305e1e650"
     },
+    "https://developer.apple.com/documentation/addressbook/abpeoplepickerdisplayedpropertydidchangenotification": {
+      "etag": "\"19de-65d55dfc83d15-df\"",
+      "file_path": "documentation/AddressBook/abpeoplepickerdisplayedpropertydidchangenotification.md",
+      "hash": "799ac75447241e903fb04ca67e2dea649e10e953e30af59ac0491e4faf219bf4"
+    },
+    "https://developer.apple.com/documentation/addressbook/abpeoplepickergroupselectiondidchangenotification": {
+      "etag": "\"19c2-65d55dfd1e29c-df\"",
+      "file_path": "documentation/AddressBook/abpeoplepickergroupselectiondidchangenotification.md",
+      "hash": "73a5d4b3681ffd884e607b1f24ef2d8dc16f5c977742ad91ba5311f6ed730ff4"
+    },
+    "https://developer.apple.com/documentation/addressbook/abpeoplepickernameselectiondidchangenotification": {
+      "etag": "\"19bb-65d55dfce5ceb-df\"",
+      "file_path": "documentation/AddressBook/abpeoplepickernameselectiondidchangenotification.md",
+      "hash": "cc240b6bbcbdcbcd2ee6ff0325ac306a53917d9ee5fc502aa9855da66b204153"
+    },
     "https://developer.apple.com/documentation/addressbook/abpeoplepickerselectionbehavior": {
       "etag": "\"432c-65d55dfbc8513-df\"",
       "file_path": "documentation/AddressBook/abpeoplepickerselectionbehavior.md",
@@ -851,6 +931,11 @@
       "etag": "\"143d-65d55dfd01276-df\"",
       "file_path": "documentation/AddressBook/abpeoplepickerselectionbehavior/rawvalue.md",
       "hash": "712cd099e2b42be0614cc5fd1a8265d854dbc48f10993a968d1615d9b2962c25"
+    },
+    "https://developer.apple.com/documentation/addressbook/abpeoplepickervalueselectiondidchangenotification": {
+      "etag": "\"19c9-65d55dfbed411-df\"",
+      "file_path": "documentation/AddressBook/abpeoplepickervalueselectiondidchangenotification.md",
+      "hash": "502f38938d5dd5c63f8a5ff2404a3b5e0e1808a3cd6213d3aaaa909cc5d68f14"
     },
     "https://developer.apple.com/documentation/addressbook/abpeoplepickerview": {
       "etag": "\"11471-65d55dfbc8513-df\"",
@@ -1202,6 +1287,46 @@
       "file_path": "documentation/AddressBook/abpersonimageformat/rawvalue.md",
       "hash": "f35a6020efd9012b4966819b0e5b588eb94f20d7a6b6c68f3f32c081007254e5"
     },
+    "https://developer.apple.com/documentation/addressbook/abpersonpicker": {
+      "etag": "\"2627-65d55dfbed411-df\"",
+      "file_path": "documentation/AddressBook/abpersonpicker.md",
+      "hash": "4f1cfa89f78386d01315ac7e4ed797a93b4ee37a588c22c5d66998c7441483c4"
+    },
+    "https://developer.apple.com/documentation/addressbook/abpersonpicker/close": {
+      "etag": "\"101b-65d55dfd421a9-df\"",
+      "file_path": "documentation/AddressBook/abpersonpicker/close.md",
+      "hash": "9db0a37a88d495a40a244bfe28786ffa2fefb45e91f50b5e7040ed6a27037ab2"
+    },
+    "https://developer.apple.com/documentation/addressbook/abpersonpicker/delegate": {
+      "etag": "\"1032-65d55dfd421a9-df\"",
+      "file_path": "documentation/AddressBook/abpersonpicker/delegate.md",
+      "hash": "3d26194e328abd10225fe0a310c96e7e5c66288a58fe57eb5e5dc74af37ba4ab"
+    },
+    "https://developer.apple.com/documentation/addressbook/abpersonpicker/properties": {
+      "etag": "\"141e-65d55dfd421a9-df\"",
+      "file_path": "documentation/AddressBook/abpersonpicker/properties.md",
+      "hash": "02b83a30a136541b9e9c015edd6ff9991a8a383f802fdeed9f87f44cc1970ecc"
+    },
+    "https://developer.apple.com/documentation/addressbook/abpersonpicker/showrelativetorect:ofview:preferrededge:": {
+      "etag": "\"1e8c-65d55dfd421a9-df\"",
+      "file_path": "documentation/AddressBook/abpersonpicker/showrelativetorect_ofview_preferrededge_.md",
+      "hash": "2a74aa57066706f461adb0e2a393e6b3fb9c1018906280fa0123359461420eb7"
+    },
+    "https://developer.apple.com/documentation/addressbook/abpersonpickerdelegate": {
+      "etag": "\"1a0d-65d55dfd5dbfe-df\"",
+      "file_path": "documentation/AddressBook/abpersonpickerdelegate.md",
+      "hash": "9c7becd3fc5f4162645d9e2fbee0ccbb0840c4f4c325d0e1aa22c94431ce7fbe"
+    },
+    "https://developer.apple.com/documentation/addressbook/abpersonpickerdelegate/personpicker:didchooseperson:property:identifier:": {
+      "etag": "\"23e4-65d55dfd01276-df\"",
+      "file_path": "documentation/AddressBook/abpersonpickerdelegate/personpicker_didchooseperson_property_identifier_.md",
+      "hash": "69c9f93b0ab409098afea767b380e8d3f472b2c32c1d36ea12d8fb767c8e91d3"
+    },
+    "https://developer.apple.com/documentation/addressbook/abpersonpickerdelegate/personpickerdidclose:": {
+      "etag": "\"156a-65d55dfd01276-df\"",
+      "file_path": "documentation/AddressBook/abpersonpickerdelegate/personpickerdidclose_.md",
+      "hash": "35c32a072001ada8ea63020bc494c5c6ebd75eb629b81518ac88003f829ce2d9"
+    },
     "https://developer.apple.com/documentation/addressbook/abpersonref": {
       "etag": "\"285d-65d55dfd1e29c-df\"",
       "file_path": "documentation/AddressBook/abpersonref.md",
@@ -1245,6 +1370,166 @@
       "etag": "\"27cc-65d55dfd421a9-df\"",
       "file_path": "documentation/AddressBook/abpersonview/shouldshowlinkedpeople.md",
       "hash": "4996531fe8e1342619ecb278c86ee7ea82464d20b1ab2e4399793b82e6276b9b"
+    },
+    "https://developer.apple.com/documentation/addressbook/abpickeraddproperty": {
+      "etag": "\"4451-65d55dfba3ce4-df\"",
+      "file_path": "documentation/AddressBook/abpickeraddproperty.md",
+      "hash": "daa23a2f266eedd57080d4fb2aec8b1ac9402d9dece337c34d5e71400e5c9a51"
+    },
+    "https://developer.apple.com/documentation/addressbook/abpickerattributes": {
+      "etag": "\"2216-65d55dfca62bd-df\"",
+      "file_path": "documentation/AddressBook/abpickerattributes.md",
+      "hash": "ba45b5227e6e3aec4a77b8bedb2937c2b80a3bce824113e430380fc3594cb585"
+    },
+    "https://developer.apple.com/documentation/addressbook/abpickerchangeattributes": {
+      "etag": "\"43f5-65d55dfce5ceb-df\"",
+      "file_path": "documentation/AddressBook/abpickerchangeattributes.md",
+      "hash": "30a97b2b25c84c2a99b0281edc7b56f65f4cf422b0a8c5c3c5af64252befa4de"
+    },
+    "https://developer.apple.com/documentation/addressbook/abpickerclearsearchfield": {
+      "etag": "\"3c5d-65d55dfd705b7-df\"",
+      "file_path": "documentation/AddressBook/abpickerclearsearchfield.md",
+      "hash": "90c4473a730b195ba4a0448525a86c379899556c4b7713df462e96f277a3efda"
+    },
+    "https://developer.apple.com/documentation/addressbook/abpickercopycolumntitle": {
+      "etag": "\"431a-65d55dfd1e29c-df\"",
+      "file_path": "documentation/AddressBook/abpickercopycolumntitle.md",
+      "hash": "e4037f5774051c2ae904999d6b104ad2a78eb425df2d701d9e26dc49f3ebdc12"
+    },
+    "https://developer.apple.com/documentation/addressbook/abpickercopydisplayedproperty": {
+      "etag": "\"41ab-65d55dfce5ceb-df\"",
+      "file_path": "documentation/AddressBook/abpickercopydisplayedproperty.md",
+      "hash": "da15a934dc2979638bd684a5d2dfbcffb0c0dfc081ccf943b98f2ee6db14bb1b"
+    },
+    "https://developer.apple.com/documentation/addressbook/abpickercopyproperties": {
+      "etag": "\"4316-65d55dfc4458c-df\"",
+      "file_path": "documentation/AddressBook/abpickercopyproperties.md",
+      "hash": "fcacd171a820cdc1f579bc5cbb2e623bfed5b8ccf6bace52028b1dbe16440ad5"
+    },
+    "https://developer.apple.com/documentation/addressbook/abpickercopyselectedgroups": {
+      "etag": "\"41dd-65d55dfce5ceb-df\"",
+      "file_path": "documentation/AddressBook/abpickercopyselectedgroups.md",
+      "hash": "e44b43022a093d1e283b4ebb486e82cdf479723f6a43a9fe4193ff2c680e8ed8"
+    },
+    "https://developer.apple.com/documentation/addressbook/abpickercopyselectedidentifiers": {
+      "etag": "\"47bd-65d55dfd5dbfe-df\"",
+      "file_path": "documentation/AddressBook/abpickercopyselectedidentifiers.md",
+      "hash": "2295d26ce89cf4e9ca8317b64f359548bcfe54c1d05ee98a9ed85e571ba1cdf5"
+    },
+    "https://developer.apple.com/documentation/addressbook/abpickercopyselectedrecords": {
+      "etag": "\"41f5-65d55dfd01276-df\"",
+      "file_path": "documentation/AddressBook/abpickercopyselectedrecords.md",
+      "hash": "e4521abfb2b245ffdba0eefad70783d56c8317dc1a3bf92606569c9b59203b0d"
+    },
+    "https://developer.apple.com/documentation/addressbook/abpickercopyselectedvalues": {
+      "etag": "\"41d6-65d55dfd1e29c-df\"",
+      "file_path": "documentation/AddressBook/abpickercopyselectedvalues.md",
+      "hash": "16afa149ab828a53ae3cd4e17d6b2fdb6faf0886b90d45cafa82edd5362a9df5"
+    },
+    "https://developer.apple.com/documentation/addressbook/abpickercreate": {
+      "etag": "\"3c94-65d55dfca62bd-df\"",
+      "file_path": "documentation/AddressBook/abpickercreate.md",
+      "hash": "eaafb7de6b528de1915811cb5726f53179633bad8e1f9f6ea8a2ac14fe0af2fe"
+    },
+    "https://developer.apple.com/documentation/addressbook/abpickerdeselectall": {
+      "etag": "\"3c4b-65d55dfba3ce4-df\"",
+      "file_path": "documentation/AddressBook/abpickerdeselectall.md",
+      "hash": "2166a31a312002e49b019217bdcfcd55fbb27eca883b267e5ad25dac9e448e87"
+    },
+    "https://developer.apple.com/documentation/addressbook/abpickerdeselectgroup": {
+      "etag": "\"41f5-65d55dfc83d15-df\"",
+      "file_path": "documentation/AddressBook/abpickerdeselectgroup.md",
+      "hash": "916723af3e560d72a7ad8bc1e9f93e5959130270fffbbcb5f70f4ba5574fe6f4"
+    },
+    "https://developer.apple.com/documentation/addressbook/abpickerdeselectidentifier": {
+      "etag": "\"47f2-65d55dfc66e16-df\"",
+      "file_path": "documentation/AddressBook/abpickerdeselectidentifier.md",
+      "hash": "b31c8be1dadcd975f033d6827fbb1215e29255c3723986664dcbf3b75e696425"
+    },
+    "https://developer.apple.com/documentation/addressbook/abpickerdeselectrecord": {
+      "etag": "\"4298-65d55dfca62bd-df\"",
+      "file_path": "documentation/AddressBook/abpickerdeselectrecord.md",
+      "hash": "97fc7b6d92a255dfaba7baa03679bf1436e917ac9ea4a745a62fc34bd0f08f6e"
+    },
+    "https://developer.apple.com/documentation/addressbook/abpickereditinaddressbook": {
+      "etag": "\"3c6c-65d55dfcc237d-df\"",
+      "file_path": "documentation/AddressBook/abpickereditinaddressbook.md",
+      "hash": "593f01ee0e822a01bd6771b39476a9b68afc2cc6ba41fbeaf9a9b365eed6c4c4"
+    },
+    "https://developer.apple.com/documentation/addressbook/abpickergetattributes": {
+      "etag": "\"4207-65d55dfc66e16-df\"",
+      "file_path": "documentation/AddressBook/abpickergetattributes.md",
+      "hash": "d7a5086ee181bc582f131966abb65e4c87729e58e90f25a10489c5721519269c"
+    },
+    "https://developer.apple.com/documentation/addressbook/abpickergetdelegate": {
+      "etag": "\"3cae-65d55dfd421a9-df\"",
+      "file_path": "documentation/AddressBook/abpickergetdelegate.md",
+      "hash": "4d0d6f8b730a5537ef90e2e9463918ff660f70c69cb2517e87e80e1c731455e2"
+    },
+    "https://developer.apple.com/documentation/addressbook/abpickergetframe": {
+      "etag": "\"3d31-65d55dfbed411-df\"",
+      "file_path": "documentation/AddressBook/abpickergetframe.md",
+      "hash": "8f548a1c51db8db3e98527fb5f62a38758b5b122f8bfb120bc4672d1d5c2a083"
+    },
+    "https://developer.apple.com/documentation/addressbook/abpickerisvisible": {
+      "etag": "\"3d2e-65d55dfba3ce4-df\"",
+      "file_path": "documentation/AddressBook/abpickerisvisible.md",
+      "hash": "087eca938c0745a3ab91dbdad0603bbad05ce913bb9349bc4f04432473b581b3"
+    },
+    "https://developer.apple.com/documentation/addressbook/abpickerref": {
+      "etag": "\"a93-65d55dfd421a9-df\"",
+      "file_path": "documentation/AddressBook/abpickerref.md",
+      "hash": "83a199f52337a980e7e4595b6a6d331f27bab9468670cb068d3f8fcfd53509ba"
+    },
+    "https://developer.apple.com/documentation/addressbook/abpickerremoveproperty": {
+      "etag": "\"4225-65d55dfbc8513-df\"",
+      "file_path": "documentation/AddressBook/abpickerremoveproperty.md",
+      "hash": "36402d897fa12ad524955f7eee0ee5e25b68aaf043ed706e7b42781acf8d656d"
+    },
+    "https://developer.apple.com/documentation/addressbook/abpickerselectgroup": {
+      "etag": "\"4443-65d55dfce5ceb-df\"",
+      "file_path": "documentation/AddressBook/abpickerselectgroup.md",
+      "hash": "dca976c4f89c583cc9d2915726bca95065ccb3a09f20eaba52d6e8e7ecc7ad62"
+    },
+    "https://developer.apple.com/documentation/addressbook/abpickerselectidentifier": {
+      "etag": "\"49ff-65d55dfc4458c-df\"",
+      "file_path": "documentation/AddressBook/abpickerselectidentifier.md",
+      "hash": "36d8f2bb0c6299e5237043962d09d751351f777077237f5e57e87636edf3e6ff"
+    },
+    "https://developer.apple.com/documentation/addressbook/abpickerselectinaddressbook": {
+      "etag": "\"3c8c-65d55dfce5ceb-df\"",
+      "file_path": "documentation/AddressBook/abpickerselectinaddressbook.md",
+      "hash": "08b3e954da4168c5b61e0303be414718c3b21207844ceb721484c89b855a04c7"
+    },
+    "https://developer.apple.com/documentation/addressbook/abpickerselectrecord": {
+      "etag": "\"44f5-65d55dfca62bd-df\"",
+      "file_path": "documentation/AddressBook/abpickerselectrecord.md",
+      "hash": "7be53dabbfa885973d3def77e9f9a4209a2f13d099616c4aade9210971b7353a"
+    },
+    "https://developer.apple.com/documentation/addressbook/abpickersetcolumntitle": {
+      "etag": "\"432f-65d55dfce5ceb-df\"",
+      "file_path": "documentation/AddressBook/abpickersetcolumntitle.md",
+      "hash": "7d1fe213b5f436e5cd762d628e535646ac6e400b0ae401e216fe4300b1ac8647"
+    },
+    "https://developer.apple.com/documentation/addressbook/abpickersetdelegate": {
+      "etag": "\"3d2b-65d55dfba3ce4-df\"",
+      "file_path": "documentation/AddressBook/abpickersetdelegate.md",
+      "hash": "9e4cd4308e52216121ab3ab12b9a0c001444942cc2978790a8f13cc058d5ed53"
+    },
+    "https://developer.apple.com/documentation/addressbook/abpickersetdisplayedproperty": {
+      "etag": "\"4225-65d55dfbc8513-df\"",
+      "file_path": "documentation/AddressBook/abpickersetdisplayedproperty.md",
+      "hash": "a48c3a7d5a86e6b0cbf257155ca178ed7fce5c74a31a25ef24bc9f79ec3c9071"
+    },
+    "https://developer.apple.com/documentation/addressbook/abpickersetframe": {
+      "etag": "\"3d68-65d55dfd1e29c-df\"",
+      "file_path": "documentation/AddressBook/abpickersetframe.md",
+      "hash": "baea25abced2776c7104a90c2aaead64b4388e4a628c00430fa41e3ab9268b1c"
+    },
+    "https://developer.apple.com/documentation/addressbook/abpickersetvisibility": {
+      "etag": "\"3bca-65d55dfba3ce4-df\"",
+      "file_path": "documentation/AddressBook/abpickersetvisibility.md",
+      "hash": "05c91420af46a6ddf3d4714377b082e5c9888d1cf7da2629c75d0810fb75432b"
     },
     "https://developer.apple.com/documentation/addressbook/abpropertyid": {
       "etag": "\"4853-65d55dfbc8513-df\"",
@@ -1509,6 +1794,11 @@
       "file_path": "documentation/AddressBook/c-types.md",
       "hash": "55ab53b10f4f05af0b1d78999ae165764164753920fb1d0eedb385ccba8153fb"
     },
+    "https://developer.apple.com/documentation/addressbook/composite-name-format": {
+      "etag": "\"1d82-659026870bf6e-df\"",
+      "file_path": "documentation/AddressBook/composite-name-format.md",
+      "hash": "35dfb5b90cf169ae41a2680a8ba9de30ca25cd20b37b91a5e518d1576c684faf"
+    },
     "https://developer.apple.com/documentation/addressbook/database-change-notification-keys": {
       "etag": "\"1e26-65902687b9272-df\"",
       "file_path": "documentation/AddressBook/database-change-notification-keys.md",
@@ -1604,6 +1894,26 @@
       "file_path": "documentation/AddressBook/kabaddresszipkey.md",
       "hash": "876f43487127720f317a5c5878b4d665c8c27990cde944784227e05fbd09583c"
     },
+    "https://developer.apple.com/documentation/addressbook/kabaimhomelabel": {
+      "etag": "\"5aa4-65d55dfca62bd-df\"",
+      "file_path": "documentation/AddressBook/kabaimhomelabel.md",
+      "hash": "b02803cb0b6393ea530032c09ae811927c1def37984a77046649238a4b93e08e"
+    },
+    "https://developer.apple.com/documentation/addressbook/kabaiminstantproperty": {
+      "etag": "\"727b-65d55dfd01276-df\"",
+      "file_path": "documentation/AddressBook/kabaiminstantproperty.md",
+      "hash": "501b5f5286cccb6faf34df4d146b3bf80a8d5b3a69a695c7cbcaa8cc1c7d66b8"
+    },
+    "https://developer.apple.com/documentation/addressbook/kabaimmobilemelabel": {
+      "etag": "\"55ce-65d55dfd421a9-df\"",
+      "file_path": "documentation/AddressBook/kabaimmobilemelabel.md",
+      "hash": "16fe4e4baa68df9636fa32c845e64cb8241dc4645d692e9cd1ceb828b2f3510c"
+    },
+    "https://developer.apple.com/documentation/addressbook/kabaimworklabel": {
+      "etag": "\"5aa4-65d55dfbc8513-df\"",
+      "file_path": "documentation/AddressBook/kabaimworklabel.md",
+      "hash": "845cd167e403e7429dd6a19d8bb730300f845437f63e9b9aa02026c2b9866cce"
+    },
     "https://developer.apple.com/documentation/addressbook/kabalternatebirthdaycomponentsproperty": {
       "etag": "\"6f09-65d55dfce5ceb-df\"",
       "file_path": "documentation/AddressBook/kabalternatebirthdaycomponentsproperty.md",
@@ -1668,6 +1978,16 @@
       "etag": "\"2ac0-65d55dfce5ceb-df\"",
       "file_path": "documentation/AddressBook/kabcreationdateproperty.md",
       "hash": "734de9934061953da9370de252f911cd4bb9ad5df28acac4c798cee0c2719261"
+    },
+    "https://developer.apple.com/documentation/addressbook/kabdatabasechangedexternallynotification": {
+      "etag": "\"16bb-65d55dfba3ce4-df\"",
+      "file_path": "documentation/AddressBook/kabdatabasechangedexternallynotification.md",
+      "hash": "9e6629af8d7363d8bfbd5cb1b23d2b2b4a039c3ed2bda7e34a6241a92606e224"
+    },
+    "https://developer.apple.com/documentation/addressbook/kabdatabasechangednotification": {
+      "etag": "\"1666-65d55dfcc237d-df\"",
+      "file_path": "documentation/AddressBook/kabdatabasechangednotification.md",
+      "hash": "a32c4d16bd719ff6845b5b9e49d9d27ef3f0274df16c4380f4ba48dd7460a781"
     },
     "https://developer.apple.com/documentation/addressbook/kabdataproperty": {
       "etag": "\"398d-65d55dfd01276-df\"",
@@ -1819,6 +2139,21 @@
       "file_path": "documentation/AddressBook/kabhomepageproperty.md",
       "hash": "86c10017f5ffd65817076d78adb6509abfc171dc4993721cb156b1a0861976f6"
     },
+    "https://developer.apple.com/documentation/addressbook/kabicqhomelabel": {
+      "etag": "\"5a92-65d55dfca62bd-df\"",
+      "file_path": "documentation/AddressBook/kabicqhomelabel.md",
+      "hash": "e5ab71e0278bbbb459c07bbc375f4307a56406cf7f9274190296707128a8e805"
+    },
+    "https://developer.apple.com/documentation/addressbook/kabicqinstantproperty": {
+      "etag": "\"7269-65d55dfd1e29c-df\"",
+      "file_path": "documentation/AddressBook/kabicqinstantproperty.md",
+      "hash": "9fd606f0fb4b9c96c0c29ff8039a9f8777cc6b157cecb3f3f67d76d2b31ff049"
+    },
+    "https://developer.apple.com/documentation/addressbook/kabicqworklabel": {
+      "etag": "\"5a92-65d55dfbc8513-df\"",
+      "file_path": "documentation/AddressBook/kabicqworklabel.md",
+      "hash": "7f0806562b2dc60de52237245a8133355f523817d1c0d7d23311f9fe44a7f8f4"
+    },
     "https://developer.apple.com/documentation/addressbook/kabinsertedrecords": {
       "etag": "\"6be7-65d55dfcc237d-df\"",
       "file_path": "documentation/AddressBook/kabinsertedrecords.md",
@@ -1904,6 +2239,21 @@
       "file_path": "documentation/AddressBook/kabinvalidpropertytype.md",
       "hash": "66f6204e95b935058b306010da47dd275401f2b90038999ebe611a48a5d440d9"
     },
+    "https://developer.apple.com/documentation/addressbook/kabjabberhomelabel": {
+      "etag": "\"5ace-65d55dfbed411-df\"",
+      "file_path": "documentation/AddressBook/kabjabberhomelabel.md",
+      "hash": "0b19c2f2b5c1efa144c4aa135930cb731306c36291ed7028c9bb73dfcaa1f17d"
+    },
+    "https://developer.apple.com/documentation/addressbook/kabjabberinstantproperty": {
+      "etag": "\"72b7-65d55dfbed411-df\"",
+      "file_path": "documentation/AddressBook/kabjabberinstantproperty.md",
+      "hash": "ff9d81c96585e7b72a3fc9af33e67ce8a8ffb1bbdd2f8f56f6b419fb9a442e12"
+    },
+    "https://developer.apple.com/documentation/addressbook/kabjabberworklabel": {
+      "etag": "\"5ae0-65d55dfc4458c-df\"",
+      "file_path": "documentation/AddressBook/kabjabberworklabel.md",
+      "hash": "4ba89d5104bebb3d242ebe0773f144b52444accf44c11f145927f3a09c2169e6"
+    },
     "https://developer.apple.com/documentation/addressbook/kabjobtitleproperty": {
       "etag": "\"79f9-65d55dfbed411-df\"",
       "file_path": "documentation/AddressBook/kabjobtitleproperty.md",
@@ -1968,6 +2318,21 @@
       "etag": "\"5a47-65d55dfc83d15-df\"",
       "file_path": "documentation/AddressBook/kabmotherlabel.md",
       "hash": "a0e0b5438f09e7c7d0899bdd10bddffad751d025e9ec074c33e9ff6544ffc85b"
+    },
+    "https://developer.apple.com/documentation/addressbook/kabmsnhomelabel": {
+      "etag": "\"5a92-65d55dfbed411-df\"",
+      "file_path": "documentation/AddressBook/kabmsnhomelabel.md",
+      "hash": "6b906298ce10faa1b6819277a221a056f5e816c79f8ecac00e0e48a053098e55"
+    },
+    "https://developer.apple.com/documentation/addressbook/kabmsninstantproperty": {
+      "etag": "\"7269-65d55dfcc237d-df\"",
+      "file_path": "documentation/AddressBook/kabmsninstantproperty.md",
+      "hash": "c86ddf3a3b717a0ab5b604e9971d0ad181f320da5f6c0c7cadbb9dbb7064be10"
+    },
+    "https://developer.apple.com/documentation/addressbook/kabmsnworklabel": {
+      "etag": "\"5a92-65d55dfc4458c-df\"",
+      "file_path": "documentation/AddressBook/kabmsnworklabel.md",
+      "hash": "53ac59ab4bbc20fb71a06fcfdaf9668565ae1ff0bb818c649497ad8e200cda22"
     },
     "https://developer.apple.com/documentation/addressbook/kabmultiarrayproperty": {
       "etag": "\"3a05-65d55dfc66e16-df\"",
@@ -2634,6 +2999,26 @@
       "file_path": "documentation/AddressBook/kabphoneworklabel.md",
       "hash": "12306f7c68d85c13c89049e77e84c7a843e3498b69b07d4e8ee05d802e14bdf8"
     },
+    "https://developer.apple.com/documentation/addressbook/kabpickerallowgroupselection": {
+      "etag": "\"1375-65d55dfc83d15-df\"",
+      "file_path": "documentation/AddressBook/kabpickerallowgroupselection.md",
+      "hash": "202872b267f61e2ca15a5250cb522745b19fa5d74a9135a678d4a8f08d15f7ff"
+    },
+    "https://developer.apple.com/documentation/addressbook/kabpickerallowmultipleselection": {
+      "etag": "\"1337-65d55dfba3ce4-df\"",
+      "file_path": "documentation/AddressBook/kabpickerallowmultipleselection.md",
+      "hash": "3f48434a6e29d718fc3598648b7f6b7c49da76ea9a91256424552a5cd8dfee9f"
+    },
+    "https://developer.apple.com/documentation/addressbook/kabpickermultiplevalueselection": {
+      "etag": "\"12f3-65d55dfce5ceb-df\"",
+      "file_path": "documentation/AddressBook/kabpickermultiplevalueselection.md",
+      "hash": "933a2b1a2a7a7e5fb6e5bde3d8f93a346da31064e22e6023cd3363f600b348db"
+    },
+    "https://developer.apple.com/documentation/addressbook/kabpickersinglevalueselection": {
+      "etag": "\"1304-65d55dfbed411-df\"",
+      "file_path": "documentation/AddressBook/kabpickersinglevalueselection.md",
+      "hash": "6a919ecc4cc4f4f4a70334d97b78b7f86d2f526015972d2e3edb5f54e095d408"
+    },
     "https://developer.apple.com/documentation/addressbook/kabprefixmatch": {
       "etag": "\"430c-65d55dfbc8513-df\"",
       "file_path": "documentation/AddressBook/kabprefixmatch.md",
@@ -2904,6 +3289,61 @@
       "file_path": "documentation/AddressBook/kabworklabel.md",
       "hash": "8044e89ae119519862439a3445debb4980ec6540b8e18f33673b8bcdb9edf875"
     },
+    "https://developer.apple.com/documentation/addressbook/kabyahoohomelabel": {
+      "etag": "\"5ac7-65d55dfba3ce4-df\"",
+      "file_path": "documentation/AddressBook/kabyahoohomelabel.md",
+      "hash": "7744e0ec163efd3f100b068948c21a3b472e06da6ded9c8ff801e2c278a858b4"
+    },
+    "https://developer.apple.com/documentation/addressbook/kabyahooinstantproperty": {
+      "etag": "\"729e-65d55dfce5ceb-df\"",
+      "file_path": "documentation/AddressBook/kabyahooinstantproperty.md",
+      "hash": "392dfa43a7b95a2ea6396eed21a29db8f9c9fc34ae0cc56c4e5a5b939b9d0eed"
+    },
+    "https://developer.apple.com/documentation/addressbook/kabyahooworklabel": {
+      "etag": "\"5ac7-65d55dfca62bd-df\"",
+      "file_path": "documentation/AddressBook/kabyahooworklabel.md",
+      "hash": "26b7a74ca12017d4f7c54108a439a12ff5c6d51fbf8162b528f2f2352d62e83a"
+    },
+    "https://developer.apple.com/documentation/addressbook/keventabpeoplepickerdisplayedpropertychanged": {
+      "etag": "\"1895-65d55dfd5dbfe-df\"",
+      "file_path": "documentation/AddressBook/keventabpeoplepickerdisplayedpropertychanged.md",
+      "hash": "5bf1f523f74c21b773f7840dbc015bc4fcf367700583eea4c946795a9815bce1"
+    },
+    "https://developer.apple.com/documentation/addressbook/keventabpeoplepickergroupdoubleclicked": {
+      "etag": "\"186c-65d55dfba3ce4-df\"",
+      "file_path": "documentation/AddressBook/keventabpeoplepickergroupdoubleclicked.md",
+      "hash": "3fc6d2da7023cc5f91b94b6cf5ac626e692fdca534c7a5c6c767100bce8287a2"
+    },
+    "https://developer.apple.com/documentation/addressbook/keventabpeoplepickergroupselectionchanged": {
+      "etag": "\"1879-65d55dfbc8513-df\"",
+      "file_path": "documentation/AddressBook/keventabpeoplepickergroupselectionchanged.md",
+      "hash": "e6ccd069a1650167bb138367d5ff3efd5ce7f1c647e9f2ad8915f490c80acc5a"
+    },
+    "https://developer.apple.com/documentation/addressbook/keventabpeoplepickernamedoubleclicked": {
+      "etag": "\"1868-65d55dfd5dbfe-df\"",
+      "file_path": "documentation/AddressBook/keventabpeoplepickernamedoubleclicked.md",
+      "hash": "0b233fa84f415ae21090e72772b1cb4189dcf832b9d8ecfe27001fe9fef22ec2"
+    },
+    "https://developer.apple.com/documentation/addressbook/keventabpeoplepickernameselectionchanged": {
+      "etag": "\"1872-65d55dfd1e29c-df\"",
+      "file_path": "documentation/AddressBook/keventabpeoplepickernameselectionchanged.md",
+      "hash": "d06bdee7e9106b4699acd4b7b5bcae82d37b51aaa7e1984ed6f83fa5afecbea8"
+    },
+    "https://developer.apple.com/documentation/addressbook/keventabpeoplepickervalueselectionchanged": {
+      "etag": "\"1881-65d55dfd1e29c-df\"",
+      "file_path": "documentation/AddressBook/keventabpeoplepickervalueselectionchanged.md",
+      "hash": "68d5204913bb1c1dedd3847270e2e38fe4291be2ea1aa8dfe94959b3dedc9039"
+    },
+    "https://developer.apple.com/documentation/addressbook/keventclassabpeoplepicker": {
+      "etag": "\"a46-65d55dfd421a9-df\"",
+      "file_path": "documentation/AddressBook/keventclassabpeoplepicker.md",
+      "hash": "230b93470b1793f90b83113ee52fe667501e5d3942e16b94a23453e58e69ae53"
+    },
+    "https://developer.apple.com/documentation/addressbook/keventparamabpickerref": {
+      "etag": "\"a31-65d55dfd01276-df\"",
+      "file_path": "documentation/AddressBook/keventparamabpickerref.md",
+      "hash": "b937a6fe23f617d85256881c8330805f268328445d545bb00f606cd088016ff4"
+    },
     "https://developer.apple.com/documentation/addressbook/multivalue-property": {
       "etag": "\"2d5b-659026880794a-df\"",
       "file_path": "documentation/AddressBook/multivalue-property.md",
@@ -2939,10 +3379,30 @@
       "file_path": "documentation/AddressBook/property_types.md",
       "hash": "5c71518a929498ce7959a6748bae6e1eaa834821458c263f3367a15e67304126"
     },
+    "https://developer.apple.com/documentation/addressbook/record-property-types": {
+      "etag": "\"6165-6590268650372-df\"",
+      "file_path": "documentation/AddressBook/record-property-types.md",
+      "hash": "4a1e447d860983332747ad85cc2e1420b7563625911f664d7ab756ba03fd0784"
+    },
+    "https://developer.apple.com/documentation/addressbook/record-types": {
+      "etag": "\"1f0a-659026881eca7-df\"",
+      "file_path": "documentation/AddressBook/record-types.md",
+      "hash": "beb47ba5d55b9980537f046454f79981f2dde39d59f48057b5f5baef769c1b86"
+    },
     "https://developer.apple.com/documentation/addressbook/social-profile-services": {
       "etag": "\"5fde-65902687b9272-df\"",
       "file_path": "documentation/AddressBook/social-profile-services.md",
       "hash": "a690b12f219bd71dbac6525db4afa743555a5694d0522d5c9eea462a1ffd84fc"
+    },
+    "https://developer.apple.com/documentation/addressbook/sort-order": {
+      "etag": "\"1be3-65902686b26e4-df\"",
+      "file_path": "documentation/AddressBook/sort-order.md",
+      "hash": "58b80c59cae83ae93257bcb3e6553ec0c52d739acba1a0084e7fce681775961e"
+    },
+    "https://developer.apple.com/documentation/addressbook/source-types": {
+      "etag": "\"32d0-6590268728d6f-df\"",
+      "file_path": "documentation/AddressBook/source-types.md",
+      "hash": "a18ec8a771236f2d8adfa34692440f55341d1affe26baccfc8cce3b4e1bc5b83"
     },
     "https://developer.apple.com/tutorials/data/documentation/AddressBook.json": {
       "etag": "\"5e96-65d55dfba3ce4-df\"",
@@ -2979,10 +3439,70 @@
       "file_path": "documentation/AddressBook/api-1619878-source-types.md",
       "hash": "8883ad964292ce0170ae691ff513b67d9ffb59bd8ec21e5b266c4044b4318124"
     },
+    "https://developer.apple.com/tutorials/data/documentation/addressbook/ab_deprecated.json": {
+      "etag": "\"9ea-65d55dfbed411-df\"",
+      "file_path": "documentation/AddressBook/ab_deprecated.md",
+      "hash": "615f62f0130ea94351b9f08b177d04ef47fbd205e1d41092838aa943fa4f0499"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/addressbook/ab_extern.json": {
+      "etag": "\"95e-65d55dfce5ceb-df\"",
+      "file_path": "documentation/AddressBook/ab_extern.md",
+      "hash": "9b6abe4372514f7ec7acb30ee8c781a107f8a03911cff221643ad402457a0b2f"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/addressbook/abactioncallbacks.json": {
+      "etag": "\"1520-65d55dfcc237d-df\"",
+      "file_path": "documentation/AddressBook/abactioncallbacks.md",
+      "hash": "6ad7667020f72b287c4706dd00f05ead9d1bed771cc796f0ddb683a7572377d4"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/addressbook/abactioncallbacks/enabled.json": {
+      "etag": "\"181b-65d55dfca62bd-df\"",
+      "file_path": "documentation/AddressBook/abactioncallbacks/enabled.md",
+      "hash": "5fdc8dea79f552588889f357d11ad6b6aead37adf2cb8919fc4548ede6723415"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/addressbook/abactioncallbacks/property.json": {
+      "etag": "\"16b0-65d55dfca62bd-df\"",
+      "file_path": "documentation/AddressBook/abactioncallbacks/property.md",
+      "hash": "fe452443761b0445cd49cad114855b2a812a273e891ef2d29d40e4dee04c1835"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/addressbook/abactioncallbacks/selected.json": {
+      "etag": "\"1a19-65d55dfc83d15-df\"",
+      "file_path": "documentation/AddressBook/abactioncallbacks/selected.md",
+      "hash": "407a53717caed1a3facdf83e47b2ce8815486935696920258af5aa7143f1af10"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/addressbook/abactioncallbacks/title.json": {
+      "etag": "\"168e-65d55dfca62bd-df\"",
+      "file_path": "documentation/AddressBook/abactioncallbacks/title.md",
+      "hash": "88d45b804cd94c7049a0fe7530609956cdef055c6d636963b10ab86c610056c0"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/addressbook/abactioncallbacks/version.json": {
+      "etag": "\"1788-65d55dfc83d15-df\"",
+      "file_path": "documentation/AddressBook/abactioncallbacks/version.md",
+      "hash": "8c9a549cc1e9140d65effc55d0e1c29b9962ee027bc9bdfa1b9fd2ecb142c71d"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/addressbook/abactioncopytitlecallback.json": {
+      "etag": "\"1c60-65d55dfc4458c-df\"",
+      "file_path": "documentation/AddressBook/abactioncopytitlecallback.md",
+      "hash": "203b8b7b4ba7d6186079dad07b7c0c9292ad4282f614fcb1cadb1f2611abac68"
+    },
     "https://developer.apple.com/tutorials/data/documentation/addressbook/abactiondelegate.json": {
       "etag": "\"326e-6590268625861-df\"",
       "file_path": "documentation/AddressBook/abactiondelegate.md",
       "hash": "01042d3b24465bcb3eeeaf5108a420a1378d4454fcba9a33e1050c6610954a03"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/addressbook/abactionenabledcallback.json": {
+      "etag": "\"1c65-65d55dfcc237d-df\"",
+      "file_path": "documentation/AddressBook/abactionenabledcallback.md",
+      "hash": "4d099fc0728942b0d52e246f14232ffa6931e77e65716eb5ba07f6ae02a51422"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/addressbook/abactiongetpropertycallback.json": {
+      "etag": "\"1abb-65d55dfd421a9-df\"",
+      "file_path": "documentation/AddressBook/abactiongetpropertycallback.md",
+      "hash": "82a5139f2430b0319c9b2a30e2620e1b20ea036b470f1236ee24a2d41092dfc5"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/addressbook/abactionselectedcallback.json": {
+      "etag": "\"1c65-65d55dfbed411-df\"",
+      "file_path": "documentation/AddressBook/abactionselectedcallback.md",
+      "hash": "ede15a409d23b31d50e1d7ee15ea29e0c20e81fe41e275e00e4ab45914d0ffa9"
     },
     "https://developer.apple.com/tutorials/data/documentation/addressbook/abaddpropertiesandtypes(_:_:_:).json": {
       "etag": "\"5f0a-65d55dfc83d15-df\"",
@@ -3013,6 +3533,11 @@
       "etag": "\"4fad-65d55dfc66e16-df\"",
       "file_path": "documentation/AddressBook/abaddressbook-swift.class/add(_,error).md",
       "hash": "58f056c5d0a0e7225538823fa9f9b60a83683e3a1e1d76a43e5b221b959d4237"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/addressbook/abaddressbook-swift.class/addressbook.json": {
+      "etag": "\"2bc9-65d55dfc66e16-df\"",
+      "file_path": "documentation/AddressBook/abaddressbook-swift.class/addressbook.md",
+      "hash": "eff0e0cb56fafad702eecd519c78932abf977aac92a4290b257cc5f6dd463ef3"
     },
     "https://developer.apple.com/tutorials/data/documentation/addressbook/abaddressbook-swift.class/defaultcountrycode().json": {
       "etag": "\"2ddc-65d55dfc66e16-df\"",
@@ -3776,6 +4301,21 @@
       "file_path": "documentation/AddressBook/abnovalueselection.md",
       "hash": "b5c16423fb43e15af710e2f8151ac2e051a51a09b1c430d9bbf0543305e1e650"
     },
+    "https://developer.apple.com/tutorials/data/documentation/addressbook/abpeoplepickerdisplayedpropertydidchangenotification.json": {
+      "etag": "\"19de-65d55dfc83d15-df\"",
+      "file_path": "documentation/AddressBook/abpeoplepickerdisplayedpropertydidchangenotification.md",
+      "hash": "799ac75447241e903fb04ca67e2dea649e10e953e30af59ac0491e4faf219bf4"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/addressbook/abpeoplepickergroupselectiondidchangenotification.json": {
+      "etag": "\"19c2-65d55dfd1e29c-df\"",
+      "file_path": "documentation/AddressBook/abpeoplepickergroupselectiondidchangenotification.md",
+      "hash": "73a5d4b3681ffd884e607b1f24ef2d8dc16f5c977742ad91ba5311f6ed730ff4"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/addressbook/abpeoplepickernameselectiondidchangenotification.json": {
+      "etag": "\"19bb-65d55dfce5ceb-df\"",
+      "file_path": "documentation/AddressBook/abpeoplepickernameselectiondidchangenotification.md",
+      "hash": "cc240b6bbcbdcbcd2ee6ff0325ac306a53917d9ee5fc502aa9855da66b204153"
+    },
     "https://developer.apple.com/tutorials/data/documentation/addressbook/abpeoplepickerselectionbehavior.json": {
       "etag": "\"432c-65d55dfbc8513-df\"",
       "file_path": "documentation/AddressBook/abpeoplepickerselectionbehavior.md",
@@ -3795,6 +4335,11 @@
       "etag": "\"143d-65d55dfd01276-df\"",
       "file_path": "documentation/AddressBook/abpeoplepickerselectionbehavior/rawvalue.md",
       "hash": "712cd099e2b42be0614cc5fd1a8265d854dbc48f10993a968d1615d9b2962c25"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/addressbook/abpeoplepickervalueselectiondidchangenotification.json": {
+      "etag": "\"19c9-65d55dfbed411-df\"",
+      "file_path": "documentation/AddressBook/abpeoplepickervalueselectiondidchangenotification.md",
+      "hash": "502f38938d5dd5c63f8a5ff2404a3b5e0e1808a3cd6213d3aaaa909cc5d68f14"
     },
     "https://developer.apple.com/tutorials/data/documentation/addressbook/abpeoplepickerview.json": {
       "etag": "\"11471-65d55dfbc8513-df\"",
@@ -4146,6 +4691,46 @@
       "file_path": "documentation/AddressBook/abpersonimageformat/rawvalue.md",
       "hash": "f35a6020efd9012b4966819b0e5b588eb94f20d7a6b6c68f3f32c081007254e5"
     },
+    "https://developer.apple.com/tutorials/data/documentation/addressbook/abpersonpicker.json": {
+      "etag": "\"2627-65d55dfbed411-df\"",
+      "file_path": "documentation/AddressBook/abpersonpicker.md",
+      "hash": "4f1cfa89f78386d01315ac7e4ed797a93b4ee37a588c22c5d66998c7441483c4"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/addressbook/abpersonpicker/close.json": {
+      "etag": "\"101b-65d55dfd421a9-df\"",
+      "file_path": "documentation/AddressBook/abpersonpicker/close.md",
+      "hash": "9db0a37a88d495a40a244bfe28786ffa2fefb45e91f50b5e7040ed6a27037ab2"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/addressbook/abpersonpicker/delegate.json": {
+      "etag": "\"1032-65d55dfd421a9-df\"",
+      "file_path": "documentation/AddressBook/abpersonpicker/delegate.md",
+      "hash": "3d26194e328abd10225fe0a310c96e7e5c66288a58fe57eb5e5dc74af37ba4ab"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/addressbook/abpersonpicker/properties.json": {
+      "etag": "\"141e-65d55dfd421a9-df\"",
+      "file_path": "documentation/AddressBook/abpersonpicker/properties.md",
+      "hash": "02b83a30a136541b9e9c015edd6ff9991a8a383f802fdeed9f87f44cc1970ecc"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/addressbook/abpersonpicker/showrelativetorect:ofview:preferrededge:.json": {
+      "etag": "\"1e8c-65d55dfd421a9-df\"",
+      "file_path": "documentation/AddressBook/abpersonpicker/showrelativetorect_ofview_preferrededge_.md",
+      "hash": "2a74aa57066706f461adb0e2a393e6b3fb9c1018906280fa0123359461420eb7"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/addressbook/abpersonpickerdelegate.json": {
+      "etag": "\"1a0d-65d55dfd5dbfe-df\"",
+      "file_path": "documentation/AddressBook/abpersonpickerdelegate.md",
+      "hash": "9c7becd3fc5f4162645d9e2fbee0ccbb0840c4f4c325d0e1aa22c94431ce7fbe"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/addressbook/abpersonpickerdelegate/personpicker:didchooseperson:property:identifier:.json": {
+      "etag": "\"23e4-65d55dfd01276-df\"",
+      "file_path": "documentation/AddressBook/abpersonpickerdelegate/personpicker_didchooseperson_property_identifier_.md",
+      "hash": "69c9f93b0ab409098afea767b380e8d3f472b2c32c1d36ea12d8fb767c8e91d3"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/addressbook/abpersonpickerdelegate/personpickerdidclose:.json": {
+      "etag": "\"156a-65d55dfd01276-df\"",
+      "file_path": "documentation/AddressBook/abpersonpickerdelegate/personpickerdidclose_.md",
+      "hash": "35c32a072001ada8ea63020bc494c5c6ebd75eb629b81518ac88003f829ce2d9"
+    },
     "https://developer.apple.com/tutorials/data/documentation/addressbook/abpersonref.json": {
       "etag": "\"285d-65d55dfd1e29c-df\"",
       "file_path": "documentation/AddressBook/abpersonref.md",
@@ -4189,6 +4774,166 @@
       "etag": "\"27cc-65d55dfd421a9-df\"",
       "file_path": "documentation/AddressBook/abpersonview/shouldshowlinkedpeople.md",
       "hash": "4996531fe8e1342619ecb278c86ee7ea82464d20b1ab2e4399793b82e6276b9b"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/addressbook/abpickeraddproperty.json": {
+      "etag": "\"4451-65d55dfba3ce4-df\"",
+      "file_path": "documentation/AddressBook/abpickeraddproperty.md",
+      "hash": "daa23a2f266eedd57080d4fb2aec8b1ac9402d9dece337c34d5e71400e5c9a51"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/addressbook/abpickerattributes.json": {
+      "etag": "\"2216-65d55dfca62bd-df\"",
+      "file_path": "documentation/AddressBook/abpickerattributes.md",
+      "hash": "ba45b5227e6e3aec4a77b8bedb2937c2b80a3bce824113e430380fc3594cb585"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/addressbook/abpickerchangeattributes.json": {
+      "etag": "\"43f5-65d55dfce5ceb-df\"",
+      "file_path": "documentation/AddressBook/abpickerchangeattributes.md",
+      "hash": "30a97b2b25c84c2a99b0281edc7b56f65f4cf422b0a8c5c3c5af64252befa4de"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/addressbook/abpickerclearsearchfield.json": {
+      "etag": "\"3c5d-65d55dfd705b7-df\"",
+      "file_path": "documentation/AddressBook/abpickerclearsearchfield.md",
+      "hash": "90c4473a730b195ba4a0448525a86c379899556c4b7713df462e96f277a3efda"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/addressbook/abpickercopycolumntitle.json": {
+      "etag": "\"431a-65d55dfd1e29c-df\"",
+      "file_path": "documentation/AddressBook/abpickercopycolumntitle.md",
+      "hash": "e4037f5774051c2ae904999d6b104ad2a78eb425df2d701d9e26dc49f3ebdc12"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/addressbook/abpickercopydisplayedproperty.json": {
+      "etag": "\"41ab-65d55dfce5ceb-df\"",
+      "file_path": "documentation/AddressBook/abpickercopydisplayedproperty.md",
+      "hash": "da15a934dc2979638bd684a5d2dfbcffb0c0dfc081ccf943b98f2ee6db14bb1b"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/addressbook/abpickercopyproperties.json": {
+      "etag": "\"4316-65d55dfc4458c-df\"",
+      "file_path": "documentation/AddressBook/abpickercopyproperties.md",
+      "hash": "fcacd171a820cdc1f579bc5cbb2e623bfed5b8ccf6bace52028b1dbe16440ad5"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/addressbook/abpickercopyselectedgroups.json": {
+      "etag": "\"41dd-65d55dfce5ceb-df\"",
+      "file_path": "documentation/AddressBook/abpickercopyselectedgroups.md",
+      "hash": "e44b43022a093d1e283b4ebb486e82cdf479723f6a43a9fe4193ff2c680e8ed8"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/addressbook/abpickercopyselectedidentifiers.json": {
+      "etag": "\"47bd-65d55dfd5dbfe-df\"",
+      "file_path": "documentation/AddressBook/abpickercopyselectedidentifiers.md",
+      "hash": "2295d26ce89cf4e9ca8317b64f359548bcfe54c1d05ee98a9ed85e571ba1cdf5"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/addressbook/abpickercopyselectedrecords.json": {
+      "etag": "\"41f5-65d55dfd01276-df\"",
+      "file_path": "documentation/AddressBook/abpickercopyselectedrecords.md",
+      "hash": "e4521abfb2b245ffdba0eefad70783d56c8317dc1a3bf92606569c9b59203b0d"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/addressbook/abpickercopyselectedvalues.json": {
+      "etag": "\"41d6-65d55dfd1e29c-df\"",
+      "file_path": "documentation/AddressBook/abpickercopyselectedvalues.md",
+      "hash": "16afa149ab828a53ae3cd4e17d6b2fdb6faf0886b90d45cafa82edd5362a9df5"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/addressbook/abpickercreate.json": {
+      "etag": "\"3c94-65d55dfca62bd-df\"",
+      "file_path": "documentation/AddressBook/abpickercreate.md",
+      "hash": "eaafb7de6b528de1915811cb5726f53179633bad8e1f9f6ea8a2ac14fe0af2fe"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/addressbook/abpickerdeselectall.json": {
+      "etag": "\"3c4b-65d55dfba3ce4-df\"",
+      "file_path": "documentation/AddressBook/abpickerdeselectall.md",
+      "hash": "2166a31a312002e49b019217bdcfcd55fbb27eca883b267e5ad25dac9e448e87"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/addressbook/abpickerdeselectgroup.json": {
+      "etag": "\"41f5-65d55dfc83d15-df\"",
+      "file_path": "documentation/AddressBook/abpickerdeselectgroup.md",
+      "hash": "916723af3e560d72a7ad8bc1e9f93e5959130270fffbbcb5f70f4ba5574fe6f4"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/addressbook/abpickerdeselectidentifier.json": {
+      "etag": "\"47f2-65d55dfc66e16-df\"",
+      "file_path": "documentation/AddressBook/abpickerdeselectidentifier.md",
+      "hash": "b31c8be1dadcd975f033d6827fbb1215e29255c3723986664dcbf3b75e696425"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/addressbook/abpickerdeselectrecord.json": {
+      "etag": "\"4298-65d55dfca62bd-df\"",
+      "file_path": "documentation/AddressBook/abpickerdeselectrecord.md",
+      "hash": "97fc7b6d92a255dfaba7baa03679bf1436e917ac9ea4a745a62fc34bd0f08f6e"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/addressbook/abpickereditinaddressbook.json": {
+      "etag": "\"3c6c-65d55dfcc237d-df\"",
+      "file_path": "documentation/AddressBook/abpickereditinaddressbook.md",
+      "hash": "593f01ee0e822a01bd6771b39476a9b68afc2cc6ba41fbeaf9a9b365eed6c4c4"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/addressbook/abpickergetattributes.json": {
+      "etag": "\"4207-65d55dfc66e16-df\"",
+      "file_path": "documentation/AddressBook/abpickergetattributes.md",
+      "hash": "d7a5086ee181bc582f131966abb65e4c87729e58e90f25a10489c5721519269c"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/addressbook/abpickergetdelegate.json": {
+      "etag": "\"3cae-65d55dfd421a9-df\"",
+      "file_path": "documentation/AddressBook/abpickergetdelegate.md",
+      "hash": "4d0d6f8b730a5537ef90e2e9463918ff660f70c69cb2517e87e80e1c731455e2"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/addressbook/abpickergetframe.json": {
+      "etag": "\"3d31-65d55dfbed411-df\"",
+      "file_path": "documentation/AddressBook/abpickergetframe.md",
+      "hash": "8f548a1c51db8db3e98527fb5f62a38758b5b122f8bfb120bc4672d1d5c2a083"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/addressbook/abpickerisvisible.json": {
+      "etag": "\"3d2e-65d55dfba3ce4-df\"",
+      "file_path": "documentation/AddressBook/abpickerisvisible.md",
+      "hash": "087eca938c0745a3ab91dbdad0603bbad05ce913bb9349bc4f04432473b581b3"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/addressbook/abpickerref.json": {
+      "etag": "\"a93-65d55dfd421a9-df\"",
+      "file_path": "documentation/AddressBook/abpickerref.md",
+      "hash": "83a199f52337a980e7e4595b6a6d331f27bab9468670cb068d3f8fcfd53509ba"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/addressbook/abpickerremoveproperty.json": {
+      "etag": "\"4225-65d55dfbc8513-df\"",
+      "file_path": "documentation/AddressBook/abpickerremoveproperty.md",
+      "hash": "36402d897fa12ad524955f7eee0ee5e25b68aaf043ed706e7b42781acf8d656d"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/addressbook/abpickerselectgroup.json": {
+      "etag": "\"4443-65d55dfce5ceb-df\"",
+      "file_path": "documentation/AddressBook/abpickerselectgroup.md",
+      "hash": "dca976c4f89c583cc9d2915726bca95065ccb3a09f20eaba52d6e8e7ecc7ad62"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/addressbook/abpickerselectidentifier.json": {
+      "etag": "\"49ff-65d55dfc4458c-df\"",
+      "file_path": "documentation/AddressBook/abpickerselectidentifier.md",
+      "hash": "36d8f2bb0c6299e5237043962d09d751351f777077237f5e57e87636edf3e6ff"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/addressbook/abpickerselectinaddressbook.json": {
+      "etag": "\"3c8c-65d55dfce5ceb-df\"",
+      "file_path": "documentation/AddressBook/abpickerselectinaddressbook.md",
+      "hash": "08b3e954da4168c5b61e0303be414718c3b21207844ceb721484c89b855a04c7"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/addressbook/abpickerselectrecord.json": {
+      "etag": "\"44f5-65d55dfca62bd-df\"",
+      "file_path": "documentation/AddressBook/abpickerselectrecord.md",
+      "hash": "7be53dabbfa885973d3def77e9f9a4209a2f13d099616c4aade9210971b7353a"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/addressbook/abpickersetcolumntitle.json": {
+      "etag": "\"432f-65d55dfce5ceb-df\"",
+      "file_path": "documentation/AddressBook/abpickersetcolumntitle.md",
+      "hash": "7d1fe213b5f436e5cd762d628e535646ac6e400b0ae401e216fe4300b1ac8647"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/addressbook/abpickersetdelegate.json": {
+      "etag": "\"3d2b-65d55dfba3ce4-df\"",
+      "file_path": "documentation/AddressBook/abpickersetdelegate.md",
+      "hash": "9e4cd4308e52216121ab3ab12b9a0c001444942cc2978790a8f13cc058d5ed53"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/addressbook/abpickersetdisplayedproperty.json": {
+      "etag": "\"4225-65d55dfbc8513-df\"",
+      "file_path": "documentation/AddressBook/abpickersetdisplayedproperty.md",
+      "hash": "a48c3a7d5a86e6b0cbf257155ca178ed7fce5c74a31a25ef24bc9f79ec3c9071"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/addressbook/abpickersetframe.json": {
+      "etag": "\"3d68-65d55dfd1e29c-df\"",
+      "file_path": "documentation/AddressBook/abpickersetframe.md",
+      "hash": "baea25abced2776c7104a90c2aaead64b4388e4a628c00430fa41e3ab9268b1c"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/addressbook/abpickersetvisibility.json": {
+      "etag": "\"3bca-65d55dfba3ce4-df\"",
+      "file_path": "documentation/AddressBook/abpickersetvisibility.md",
+      "hash": "05c91420af46a6ddf3d4714377b082e5c9888d1cf7da2629c75d0810fb75432b"
     },
     "https://developer.apple.com/tutorials/data/documentation/addressbook/abpropertyid.json": {
       "etag": "\"4853-65d55dfbc8513-df\"",
@@ -4453,6 +5198,11 @@
       "file_path": "documentation/AddressBook/c-types.md",
       "hash": "55ab53b10f4f05af0b1d78999ae165764164753920fb1d0eedb385ccba8153fb"
     },
+    "https://developer.apple.com/tutorials/data/documentation/addressbook/composite-name-format.json": {
+      "etag": "\"1d82-659026870bf6e-df\"",
+      "file_path": "documentation/AddressBook/composite-name-format.md",
+      "hash": "35dfb5b90cf169ae41a2680a8ba9de30ca25cd20b37b91a5e518d1576c684faf"
+    },
     "https://developer.apple.com/tutorials/data/documentation/addressbook/database-change-notification-keys.json": {
       "etag": "\"1e26-65902687b9272-df\"",
       "file_path": "documentation/AddressBook/database-change-notification-keys.md",
@@ -4548,6 +5298,26 @@
       "file_path": "documentation/AddressBook/kabaddresszipkey.md",
       "hash": "876f43487127720f317a5c5878b4d665c8c27990cde944784227e05fbd09583c"
     },
+    "https://developer.apple.com/tutorials/data/documentation/addressbook/kabaimhomelabel.json": {
+      "etag": "\"5aa4-65d55dfca62bd-df\"",
+      "file_path": "documentation/AddressBook/kabaimhomelabel.md",
+      "hash": "b02803cb0b6393ea530032c09ae811927c1def37984a77046649238a4b93e08e"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/addressbook/kabaiminstantproperty.json": {
+      "etag": "\"727b-65d55dfd01276-df\"",
+      "file_path": "documentation/AddressBook/kabaiminstantproperty.md",
+      "hash": "501b5f5286cccb6faf34df4d146b3bf80a8d5b3a69a695c7cbcaa8cc1c7d66b8"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/addressbook/kabaimmobilemelabel.json": {
+      "etag": "\"55ce-65d55dfd421a9-df\"",
+      "file_path": "documentation/AddressBook/kabaimmobilemelabel.md",
+      "hash": "16fe4e4baa68df9636fa32c845e64cb8241dc4645d692e9cd1ceb828b2f3510c"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/addressbook/kabaimworklabel.json": {
+      "etag": "\"5aa4-65d55dfbc8513-df\"",
+      "file_path": "documentation/AddressBook/kabaimworklabel.md",
+      "hash": "845cd167e403e7429dd6a19d8bb730300f845437f63e9b9aa02026c2b9866cce"
+    },
     "https://developer.apple.com/tutorials/data/documentation/addressbook/kabalternatebirthdaycomponentsproperty.json": {
       "etag": "\"6f09-65d55dfce5ceb-df\"",
       "file_path": "documentation/AddressBook/kabalternatebirthdaycomponentsproperty.md",
@@ -4612,6 +5382,16 @@
       "etag": "\"2ac0-65d55dfce5ceb-df\"",
       "file_path": "documentation/AddressBook/kabcreationdateproperty.md",
       "hash": "734de9934061953da9370de252f911cd4bb9ad5df28acac4c798cee0c2719261"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/addressbook/kabdatabasechangedexternallynotification.json": {
+      "etag": "\"16bb-65d55dfba3ce4-df\"",
+      "file_path": "documentation/AddressBook/kabdatabasechangedexternallynotification.md",
+      "hash": "9e6629af8d7363d8bfbd5cb1b23d2b2b4a039c3ed2bda7e34a6241a92606e224"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/addressbook/kabdatabasechangednotification.json": {
+      "etag": "\"1666-65d55dfcc237d-df\"",
+      "file_path": "documentation/AddressBook/kabdatabasechangednotification.md",
+      "hash": "a32c4d16bd719ff6845b5b9e49d9d27ef3f0274df16c4380f4ba48dd7460a781"
     },
     "https://developer.apple.com/tutorials/data/documentation/addressbook/kabdataproperty.json": {
       "etag": "\"398d-65d55dfd01276-df\"",
@@ -4763,6 +5543,21 @@
       "file_path": "documentation/AddressBook/kabhomepageproperty.md",
       "hash": "86c10017f5ffd65817076d78adb6509abfc171dc4993721cb156b1a0861976f6"
     },
+    "https://developer.apple.com/tutorials/data/documentation/addressbook/kabicqhomelabel.json": {
+      "etag": "\"5a92-65d55dfca62bd-df\"",
+      "file_path": "documentation/AddressBook/kabicqhomelabel.md",
+      "hash": "e5ab71e0278bbbb459c07bbc375f4307a56406cf7f9274190296707128a8e805"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/addressbook/kabicqinstantproperty.json": {
+      "etag": "\"7269-65d55dfd1e29c-df\"",
+      "file_path": "documentation/AddressBook/kabicqinstantproperty.md",
+      "hash": "9fd606f0fb4b9c96c0c29ff8039a9f8777cc6b157cecb3f3f67d76d2b31ff049"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/addressbook/kabicqworklabel.json": {
+      "etag": "\"5a92-65d55dfbc8513-df\"",
+      "file_path": "documentation/AddressBook/kabicqworklabel.md",
+      "hash": "7f0806562b2dc60de52237245a8133355f523817d1c0d7d23311f9fe44a7f8f4"
+    },
     "https://developer.apple.com/tutorials/data/documentation/addressbook/kabinsertedrecords.json": {
       "etag": "\"6be7-65d55dfcc237d-df\"",
       "file_path": "documentation/AddressBook/kabinsertedrecords.md",
@@ -4848,6 +5643,21 @@
       "file_path": "documentation/AddressBook/kabinvalidpropertytype.md",
       "hash": "66f6204e95b935058b306010da47dd275401f2b90038999ebe611a48a5d440d9"
     },
+    "https://developer.apple.com/tutorials/data/documentation/addressbook/kabjabberhomelabel.json": {
+      "etag": "\"5ace-65d55dfbed411-df\"",
+      "file_path": "documentation/AddressBook/kabjabberhomelabel.md",
+      "hash": "0b19c2f2b5c1efa144c4aa135930cb731306c36291ed7028c9bb73dfcaa1f17d"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/addressbook/kabjabberinstantproperty.json": {
+      "etag": "\"72b7-65d55dfbed411-df\"",
+      "file_path": "documentation/AddressBook/kabjabberinstantproperty.md",
+      "hash": "ff9d81c96585e7b72a3fc9af33e67ce8a8ffb1bbdd2f8f56f6b419fb9a442e12"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/addressbook/kabjabberworklabel.json": {
+      "etag": "\"5ae0-65d55dfc4458c-df\"",
+      "file_path": "documentation/AddressBook/kabjabberworklabel.md",
+      "hash": "4ba89d5104bebb3d242ebe0773f144b52444accf44c11f145927f3a09c2169e6"
+    },
     "https://developer.apple.com/tutorials/data/documentation/addressbook/kabjobtitleproperty.json": {
       "etag": "\"79f9-65d55dfbed411-df\"",
       "file_path": "documentation/AddressBook/kabjobtitleproperty.md",
@@ -4912,6 +5722,21 @@
       "etag": "\"5a47-65d55dfc83d15-df\"",
       "file_path": "documentation/AddressBook/kabmotherlabel.md",
       "hash": "a0e0b5438f09e7c7d0899bdd10bddffad751d025e9ec074c33e9ff6544ffc85b"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/addressbook/kabmsnhomelabel.json": {
+      "etag": "\"5a92-65d55dfbed411-df\"",
+      "file_path": "documentation/AddressBook/kabmsnhomelabel.md",
+      "hash": "6b906298ce10faa1b6819277a221a056f5e816c79f8ecac00e0e48a053098e55"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/addressbook/kabmsninstantproperty.json": {
+      "etag": "\"7269-65d55dfcc237d-df\"",
+      "file_path": "documentation/AddressBook/kabmsninstantproperty.md",
+      "hash": "c86ddf3a3b717a0ab5b604e9971d0ad181f320da5f6c0c7cadbb9dbb7064be10"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/addressbook/kabmsnworklabel.json": {
+      "etag": "\"5a92-65d55dfc4458c-df\"",
+      "file_path": "documentation/AddressBook/kabmsnworklabel.md",
+      "hash": "53ac59ab4bbc20fb71a06fcfdaf9668565ae1ff0bb818c649497ad8e200cda22"
     },
     "https://developer.apple.com/tutorials/data/documentation/addressbook/kabmultiarrayproperty.json": {
       "etag": "\"3a05-65d55dfc66e16-df\"",
@@ -5578,6 +6403,26 @@
       "file_path": "documentation/AddressBook/kabphoneworklabel.md",
       "hash": "12306f7c68d85c13c89049e77e84c7a843e3498b69b07d4e8ee05d802e14bdf8"
     },
+    "https://developer.apple.com/tutorials/data/documentation/addressbook/kabpickerallowgroupselection.json": {
+      "etag": "\"1375-65d55dfc83d15-df\"",
+      "file_path": "documentation/AddressBook/kabpickerallowgroupselection.md",
+      "hash": "202872b267f61e2ca15a5250cb522745b19fa5d74a9135a678d4a8f08d15f7ff"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/addressbook/kabpickerallowmultipleselection.json": {
+      "etag": "\"1337-65d55dfba3ce4-df\"",
+      "file_path": "documentation/AddressBook/kabpickerallowmultipleselection.md",
+      "hash": "3f48434a6e29d718fc3598648b7f6b7c49da76ea9a91256424552a5cd8dfee9f"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/addressbook/kabpickermultiplevalueselection.json": {
+      "etag": "\"12f3-65d55dfce5ceb-df\"",
+      "file_path": "documentation/AddressBook/kabpickermultiplevalueselection.md",
+      "hash": "933a2b1a2a7a7e5fb6e5bde3d8f93a346da31064e22e6023cd3363f600b348db"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/addressbook/kabpickersinglevalueselection.json": {
+      "etag": "\"1304-65d55dfbed411-df\"",
+      "file_path": "documentation/AddressBook/kabpickersinglevalueselection.md",
+      "hash": "6a919ecc4cc4f4f4a70334d97b78b7f86d2f526015972d2e3edb5f54e095d408"
+    },
     "https://developer.apple.com/tutorials/data/documentation/addressbook/kabprefixmatch.json": {
       "etag": "\"430c-65d55dfbc8513-df\"",
       "file_path": "documentation/AddressBook/kabprefixmatch.md",
@@ -5848,6 +6693,61 @@
       "file_path": "documentation/AddressBook/kabworklabel.md",
       "hash": "8044e89ae119519862439a3445debb4980ec6540b8e18f33673b8bcdb9edf875"
     },
+    "https://developer.apple.com/tutorials/data/documentation/addressbook/kabyahoohomelabel.json": {
+      "etag": "\"5ac7-65d55dfba3ce4-df\"",
+      "file_path": "documentation/AddressBook/kabyahoohomelabel.md",
+      "hash": "7744e0ec163efd3f100b068948c21a3b472e06da6ded9c8ff801e2c278a858b4"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/addressbook/kabyahooinstantproperty.json": {
+      "etag": "\"729e-65d55dfce5ceb-df\"",
+      "file_path": "documentation/AddressBook/kabyahooinstantproperty.md",
+      "hash": "392dfa43a7b95a2ea6396eed21a29db8f9c9fc34ae0cc56c4e5a5b939b9d0eed"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/addressbook/kabyahooworklabel.json": {
+      "etag": "\"5ac7-65d55dfca62bd-df\"",
+      "file_path": "documentation/AddressBook/kabyahooworklabel.md",
+      "hash": "26b7a74ca12017d4f7c54108a439a12ff5c6d51fbf8162b528f2f2352d62e83a"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/addressbook/keventabpeoplepickerdisplayedpropertychanged.json": {
+      "etag": "\"1895-65d55dfd5dbfe-df\"",
+      "file_path": "documentation/AddressBook/keventabpeoplepickerdisplayedpropertychanged.md",
+      "hash": "5bf1f523f74c21b773f7840dbc015bc4fcf367700583eea4c946795a9815bce1"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/addressbook/keventabpeoplepickergroupdoubleclicked.json": {
+      "etag": "\"186c-65d55dfba3ce4-df\"",
+      "file_path": "documentation/AddressBook/keventabpeoplepickergroupdoubleclicked.md",
+      "hash": "3fc6d2da7023cc5f91b94b6cf5ac626e692fdca534c7a5c6c767100bce8287a2"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/addressbook/keventabpeoplepickergroupselectionchanged.json": {
+      "etag": "\"1879-65d55dfbc8513-df\"",
+      "file_path": "documentation/AddressBook/keventabpeoplepickergroupselectionchanged.md",
+      "hash": "e6ccd069a1650167bb138367d5ff3efd5ce7f1c647e9f2ad8915f490c80acc5a"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/addressbook/keventabpeoplepickernamedoubleclicked.json": {
+      "etag": "\"1868-65d55dfd5dbfe-df\"",
+      "file_path": "documentation/AddressBook/keventabpeoplepickernamedoubleclicked.md",
+      "hash": "0b233fa84f415ae21090e72772b1cb4189dcf832b9d8ecfe27001fe9fef22ec2"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/addressbook/keventabpeoplepickernameselectionchanged.json": {
+      "etag": "\"1872-65d55dfd1e29c-df\"",
+      "file_path": "documentation/AddressBook/keventabpeoplepickernameselectionchanged.md",
+      "hash": "d06bdee7e9106b4699acd4b7b5bcae82d37b51aaa7e1984ed6f83fa5afecbea8"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/addressbook/keventabpeoplepickervalueselectionchanged.json": {
+      "etag": "\"1881-65d55dfd1e29c-df\"",
+      "file_path": "documentation/AddressBook/keventabpeoplepickervalueselectionchanged.md",
+      "hash": "68d5204913bb1c1dedd3847270e2e38fe4291be2ea1aa8dfe94959b3dedc9039"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/addressbook/keventclassabpeoplepicker.json": {
+      "etag": "\"a46-65d55dfd421a9-df\"",
+      "file_path": "documentation/AddressBook/keventclassabpeoplepicker.md",
+      "hash": "230b93470b1793f90b83113ee52fe667501e5d3942e16b94a23453e58e69ae53"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/addressbook/keventparamabpickerref.json": {
+      "etag": "\"a31-65d55dfd01276-df\"",
+      "file_path": "documentation/AddressBook/keventparamabpickerref.md",
+      "hash": "b937a6fe23f617d85256881c8330805f268328445d545bb00f606cd088016ff4"
+    },
     "https://developer.apple.com/tutorials/data/documentation/addressbook/multivalue-property.json": {
       "etag": "\"2d5b-659026880794a-df\"",
       "file_path": "documentation/AddressBook/multivalue-property.md",
@@ -5883,16 +6783,36 @@
       "file_path": "documentation/AddressBook/property_types.md",
       "hash": "5c71518a929498ce7959a6748bae6e1eaa834821458c263f3367a15e67304126"
     },
+    "https://developer.apple.com/tutorials/data/documentation/addressbook/record-property-types.json": {
+      "etag": "\"6165-6590268650372-df\"",
+      "file_path": "documentation/AddressBook/record-property-types.md",
+      "hash": "4a1e447d860983332747ad85cc2e1420b7563625911f664d7ab756ba03fd0784"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/addressbook/record-types.json": {
+      "etag": "\"1f0a-659026881eca7-df\"",
+      "file_path": "documentation/AddressBook/record-types.md",
+      "hash": "beb47ba5d55b9980537f046454f79981f2dde39d59f48057b5f5baef769c1b86"
+    },
     "https://developer.apple.com/tutorials/data/documentation/addressbook/social-profile-services.json": {
       "etag": "\"5fde-65902687b9272-df\"",
       "file_path": "documentation/AddressBook/social-profile-services.md",
       "hash": "a690b12f219bd71dbac6525db4afa743555a5694d0522d5c9eea462a1ffd84fc"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/addressbook/sort-order.json": {
+      "etag": "\"1be3-65902686b26e4-df\"",
+      "file_path": "documentation/AddressBook/sort-order.md",
+      "hash": "58b80c59cae83ae93257bcb3e6553ec0c52d739acba1a0084e7fce681775961e"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/addressbook/source-types.json": {
+      "etag": "\"32d0-6590268728d6f-df\"",
+      "file_path": "documentation/AddressBook/source-types.md",
+      "hash": "a18ec8a771236f2d8adfa34692440f55341d1affe26baccfc8cce3b4e1bc5b83"
     }
   },
   "metadata": {
     "render": {
-      "version": 1
+      "version": 2
     },
-    "total_pages": 1180
+    "total_pages": 1364
   }
 }

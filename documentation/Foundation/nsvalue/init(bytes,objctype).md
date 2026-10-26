@@ -51,6 +51,8 @@ This is the designated initializer for the [`NSValue`](../nsvalue.md) class.
   Copies the value into the specified buffer.
 - [var objCType: UnsafePointer<CChar>](./objctype.md)
   A C string containing the Objective-C type of the data contained in the value object.
+- [+ valueWithBytes:objCType:](./valuewithbytes_objctype_.md)
+  Creates a value object containing the specified value, interpreted with the specified Objective-C type.
 
 
 ---

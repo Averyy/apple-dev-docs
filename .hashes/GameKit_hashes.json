@@ -120,6 +120,16 @@
       "file_path": "documentation/GameKit/finding-players-with-similar-skill-levels.md",
       "hash": "8bf0580f327b382cf1b97641b2bf7bec75a574abace688ddb25e53ce8add6d71"
     },
+    "https://developer.apple.com/documentation/gamekit/gk_extern": {
+      "etag": "\"989-65d5607be5b14-df\"",
+      "file_path": "documentation/GameKit/gk_extern.md",
+      "hash": "74a3a58a1e36883481c5afbae2b206a6ae9babd382e879da0ad99775ff589eb5"
+    },
+    "https://developer.apple.com/documentation/gamekit/gk_extern_weak": {
+      "etag": "\"9c5-65d5607a9eaf4-df\"",
+      "file_path": "documentation/GameKit/gk_extern_weak.md",
+      "hash": "d89f7f1a17d6d767353a08503f4685120f639f0e42d19dd4ad8ae1704f334540"
+    },
     "https://developer.apple.com/documentation/gamekit/gkaccesspoint": {
       "etag": "\"e501-65d5607a9eaf4-df\"",
       "file_path": "documentation/GameKit/gkaccesspoint.md",
@@ -485,6 +495,11 @@
       "file_path": "documentation/GameKit/gkachievementdescription/placeholdercompletedachievementimage().md",
       "hash": "9250c7947cba33a68ea33c3c904fddbc6ba3e620aa7b811a2630f61315fd3a02"
     },
+    "https://developer.apple.com/documentation/gamekit/gkachievementdescription/raritypercent-3zqw6": {
+      "etag": "\"3df6-65d5607c8c754-df\"",
+      "file_path": "documentation/GameKit/gkachievementdescription/raritypercent-3zqw6.md",
+      "hash": "4e644342bd5a972cb8d1bdb635e91ea61e18f49d411e44358e34ef53aa4f7c80"
+    },
     "https://developer.apple.com/documentation/gamekit/gkachievementdescription/raritypercent-4bh6k": {
       "etag": "\"3dd8-65d5607c8c754-df\"",
       "file_path": "documentation/GameKit/gkachievementdescription/raritypercent-4bh6k.md",
@@ -675,6 +690,11 @@
       "file_path": "documentation/GameKit/gkchallengeeventhandler.md",
       "hash": "c53e99e0c1f1b2b01ab0809dbad619a6c531a76ecb6a5006242828463be3e33d"
     },
+    "https://developer.apple.com/documentation/gamekit/gkchallengeeventhandler/challengeeventhandler": {
+      "etag": "\"155e-65d5607b91472-df\"",
+      "file_path": "documentation/GameKit/gkchallengeeventhandler/challengeeventhandler.md",
+      "hash": "77c70d01da72e710312d1a8b4786892faa2685618cec40089a98c5a46fb3af89"
+    },
     "https://developer.apple.com/documentation/gamekit/gkchallengeeventhandler/delegate": {
       "etag": "\"25d7-65d5607b91472-df\"",
       "file_path": "documentation/GameKit/gkchallengeeventhandler/delegate.md",
@@ -849,6 +869,11 @@
       "etag": "\"1e6c-65d5607c536d9-df\"",
       "file_path": "documentation/GameKit/gkdialogcontroller/shared().md",
       "hash": "0bcf73cee82707209dda8de30232b04f5932818e754a9a431bc9aced7fcb20ac"
+    },
+    "https://developer.apple.com/documentation/gamekit/gkdialogcontroller_h": {
+      "etag": "\"963-65d5607b5bfdd-df\"",
+      "file_path": "documentation/GameKit/gkdialogcontroller_h.md",
+      "hash": "0e53526c0788d81d0951bc04ff3a321bccfcfe2a060e8e15bd21636576856141"
     },
     "https://developer.apple.com/documentation/gamekit/gkerror": {
       "etag": "\"bfce-65d5607ae79fa-df\"",
@@ -1640,6 +1665,16 @@
       "file_path": "documentation/GameKit/gkgameactivitydefinition/loadleaderboards(completionhandler).md",
       "hash": "000b5fad7e1c1379d7e63fceb0e029f74ddd53cd0c1b856336f1657bf6295078"
     },
+    "https://developer.apple.com/documentation/gamekit/gkgameactivitydefinition/maxplayers": {
+      "etag": "\"16ea-65d5607b3eacc-df\"",
+      "file_path": "documentation/GameKit/gkgameactivitydefinition/maxplayers.md",
+      "hash": "d78503e7472a89206870f6ac40d836220ee050640cde3796bde7a16906918f8c"
+    },
+    "https://developer.apple.com/documentation/gamekit/gkgameactivitydefinition/minplayers": {
+      "etag": "\"1536-65d5607b3eacc-df\"",
+      "file_path": "documentation/GameKit/gkgameactivitydefinition/minplayers.md",
+      "hash": "49ccdad963f10451f1c61c7c4a29c429c5d424e8893477e4ddfec59e9bc1c03b"
+    },
     "https://developer.apple.com/documentation/gamekit/gkgameactivitydefinition/playerrange": {
       "etag": "\"2b37-65d5607b3eacc-df\"",
       "file_path": "documentation/GameKit/gkgameactivitydefinition/playerrange.md",
@@ -2405,6 +2440,11 @@
       "file_path": "documentation/GameKit/gkleaderboard/identifier.md",
       "hash": "b205b97bad0d80e65a7d6099c9da17e55154d020ab2247a3bb914f1d2f84efc3"
     },
+    "https://developer.apple.com/documentation/gamekit/gkleaderboard/init": {
+      "etag": "\"2c4b-65d5607b78ae3-df\"",
+      "file_path": "documentation/GameKit/gkleaderboard/init.md",
+      "hash": "967b07630fc2cd390d3757c049a355ace7badbeba7b0815738a5b3cd4e7dafa6"
+    },
     "https://developer.apple.com/documentation/gamekit/gkleaderboard/init(playerids:)": {
       "etag": "\"4369-65d5607b78ae3-df\"",
       "file_path": "documentation/GameKit/gkleaderboard/init(playerids).md",
@@ -2819,6 +2859,11 @@
       "etag": "\"5d4a-65d5607a8884b-df\"",
       "file_path": "documentation/GameKit/gklocalplayer/loadrecentplayers(completionhandler).md",
       "hash": "b4fbba3bb6dd8f897470d9dfe306765a67a490ec42c92cf0807776ba38df09d7"
+    },
+    "https://developer.apple.com/documentation/gamekit/gklocalplayer/local-1mzi0": {
+      "etag": "\"1724-65d5607a8884b-df\"",
+      "file_path": "documentation/GameKit/gklocalplayer/local-1mzi0.md",
+      "hash": "7eb6c569ba16dc76222165a8d9180eaaa5cf57819956c9d3c63e908312fbbe1b"
     },
     "https://developer.apple.com/documentation/gamekit/gklocalplayer/local-oaa8": {
       "etag": "\"2060-65d5607a8884b-df\"",
@@ -3285,6 +3330,11 @@
       "file_path": "documentation/GameKit/gkmatchmakingmode/nearbyonly.md",
       "hash": "d290cef2aae985ab307ab93303ebee9f11d78e024ccb5c3241c951cf75b08fc5"
     },
+    "https://developer.apple.com/documentation/gamekit/gkmatchproperties": {
+      "etag": "\"19dc-65d5607a6dae9-df\"",
+      "file_path": "documentation/GameKit/gkmatchproperties.md",
+      "hash": "521df4274cbe59369ef7d56b8727b624997bf89f7d2ddacee5fae10568bf049e"
+    },
     "https://developer.apple.com/documentation/gamekit/gkmatchrequest": {
       "etag": "\"f490-65d5607b91472-df\"",
       "file_path": "documentation/GameKit/gkmatchrequest.md",
@@ -3605,6 +3655,11 @@
       "file_path": "documentation/GameKit/gkplayer/teamplayerid.md",
       "hash": "3884fe862b6850648ea1d43154204c659ad7627ebd9a33a82b88dc31239c0054"
     },
+    "https://developer.apple.com/documentation/gamekit/gkplayerauthenticationdidchangenotificationname": {
+      "etag": "\"308c-65d5607b5bfdd-df\"",
+      "file_path": "documentation/GameKit/gkplayerauthenticationdidchangenotificationname.md",
+      "hash": "41a6b445ee2122464f26c613a88fb9cfe7142931ec82c7fc403262c90d43b60a"
+    },
     "https://developer.apple.com/documentation/gamekit/gkplayerconnectionstate": {
       "etag": "\"3f58-65d5607c00e12-df\"",
       "file_path": "documentation/GameKit/gkplayerconnectionstate.md",
@@ -3630,6 +3685,11 @@
       "file_path": "documentation/GameKit/gkplayerconnectionstate/unknown.md",
       "hash": "abdcc617d8fe2c8dadfc2dae15feca5766f6c81724da7543e9262b0e48050b4c"
     },
+    "https://developer.apple.com/documentation/gamekit/gkplayerdidchangenotificationname": {
+      "etag": "\"2e65-65d5607b2552c-df\"",
+      "file_path": "documentation/GameKit/gkplayerdidchangenotificationname.md",
+      "hash": "354ea2ce1eb3caaabe3cc391d6191548843868a7bcaa7f7adef4702e9c16ccf1"
+    },
     "https://developer.apple.com/documentation/gamekit/gkplayeridnolongeravailable": {
       "etag": "\"2c99-65d5607b05e31-df\"",
       "file_path": "documentation/GameKit/gkplayeridnolongeravailable.md",
@@ -3639,6 +3699,11 @@
       "etag": "\"4085-65d5607c8c754-df\"",
       "file_path": "documentation/GameKit/gkreleasestate.md",
       "hash": "2c8d2daa667e9d915169cb340eb676ca98f2358dcf38da9529f0b25abd4ec0d6"
+    },
+    "https://developer.apple.com/documentation/gamekit/gkreleasestate/gkreleasestateunknown": {
+      "etag": "\"105b-65d5607c8c754-df\"",
+      "file_path": "documentation/GameKit/gkreleasestate/gkreleasestateunknown.md",
+      "hash": "0bf479e3c10edf87a2db3cc5313760a370a0ae0daf797de68a06f08a60d97f00"
     },
     "https://developer.apple.com/documentation/gamekit/gkreleasestate/init(rawvalue:)": {
       "etag": "\"1355-65d5607c8c754-df\"",
@@ -5435,6 +5500,16 @@
       "file_path": "documentation/GameKit/finding-players-with-similar-skill-levels.md",
       "hash": "8bf0580f327b382cf1b97641b2bf7bec75a574abace688ddb25e53ce8add6d71"
     },
+    "https://developer.apple.com/tutorials/data/documentation/gamekit/gk_extern.json": {
+      "etag": "\"989-65d5607be5b14-df\"",
+      "file_path": "documentation/GameKit/gk_extern.md",
+      "hash": "74a3a58a1e36883481c5afbae2b206a6ae9babd382e879da0ad99775ff589eb5"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/gamekit/gk_extern_weak.json": {
+      "etag": "\"9c5-65d5607a9eaf4-df\"",
+      "file_path": "documentation/GameKit/gk_extern_weak.md",
+      "hash": "d89f7f1a17d6d767353a08503f4685120f639f0e42d19dd4ad8ae1704f334540"
+    },
     "https://developer.apple.com/tutorials/data/documentation/gamekit/gkaccesspoint.json": {
       "etag": "\"e501-65d5607a9eaf4-df\"",
       "file_path": "documentation/GameKit/gkaccesspoint.md",
@@ -5800,6 +5875,11 @@
       "file_path": "documentation/GameKit/gkachievementdescription/placeholdercompletedachievementimage().md",
       "hash": "9250c7947cba33a68ea33c3c904fddbc6ba3e620aa7b811a2630f61315fd3a02"
     },
+    "https://developer.apple.com/tutorials/data/documentation/gamekit/gkachievementdescription/raritypercent-3zqw6.json": {
+      "etag": "\"3df6-65d5607c8c754-df\"",
+      "file_path": "documentation/GameKit/gkachievementdescription/raritypercent-3zqw6.md",
+      "hash": "4e644342bd5a972cb8d1bdb635e91ea61e18f49d411e44358e34ef53aa4f7c80"
+    },
     "https://developer.apple.com/tutorials/data/documentation/gamekit/gkachievementdescription/raritypercent-4bh6k.json": {
       "etag": "\"3dd8-65d5607c8c754-df\"",
       "file_path": "documentation/GameKit/gkachievementdescription/raritypercent-4bh6k.md",
@@ -5990,6 +6070,11 @@
       "file_path": "documentation/GameKit/gkchallengeeventhandler.md",
       "hash": "c53e99e0c1f1b2b01ab0809dbad619a6c531a76ecb6a5006242828463be3e33d"
     },
+    "https://developer.apple.com/tutorials/data/documentation/gamekit/gkchallengeeventhandler/challengeeventhandler.json": {
+      "etag": "\"155e-65d5607b91472-df\"",
+      "file_path": "documentation/GameKit/gkchallengeeventhandler/challengeeventhandler.md",
+      "hash": "77c70d01da72e710312d1a8b4786892faa2685618cec40089a98c5a46fb3af89"
+    },
     "https://developer.apple.com/tutorials/data/documentation/gamekit/gkchallengeeventhandler/delegate.json": {
       "etag": "\"25d7-65d5607b91472-df\"",
       "file_path": "documentation/GameKit/gkchallengeeventhandler/delegate.md",
@@ -6164,6 +6249,11 @@
       "etag": "\"1e6c-65d5607c536d9-df\"",
       "file_path": "documentation/GameKit/gkdialogcontroller/shared().md",
       "hash": "0bcf73cee82707209dda8de30232b04f5932818e754a9a431bc9aced7fcb20ac"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/gamekit/gkdialogcontroller_h.json": {
+      "etag": "\"963-65d5607b5bfdd-df\"",
+      "file_path": "documentation/GameKit/gkdialogcontroller_h.md",
+      "hash": "0e53526c0788d81d0951bc04ff3a321bccfcfe2a060e8e15bd21636576856141"
     },
     "https://developer.apple.com/tutorials/data/documentation/gamekit/gkerror.json": {
       "etag": "\"bfce-65d5607ae79fa-df\"",
@@ -6955,6 +7045,16 @@
       "file_path": "documentation/GameKit/gkgameactivitydefinition/loadleaderboards(completionhandler).md",
       "hash": "000b5fad7e1c1379d7e63fceb0e029f74ddd53cd0c1b856336f1657bf6295078"
     },
+    "https://developer.apple.com/tutorials/data/documentation/gamekit/gkgameactivitydefinition/maxplayers.json": {
+      "etag": "\"16ea-65d5607b3eacc-df\"",
+      "file_path": "documentation/GameKit/gkgameactivitydefinition/maxplayers.md",
+      "hash": "d78503e7472a89206870f6ac40d836220ee050640cde3796bde7a16906918f8c"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/gamekit/gkgameactivitydefinition/minplayers.json": {
+      "etag": "\"1536-65d5607b3eacc-df\"",
+      "file_path": "documentation/GameKit/gkgameactivitydefinition/minplayers.md",
+      "hash": "49ccdad963f10451f1c61c7c4a29c429c5d424e8893477e4ddfec59e9bc1c03b"
+    },
     "https://developer.apple.com/tutorials/data/documentation/gamekit/gkgameactivitydefinition/playerrange.json": {
       "etag": "\"2b37-65d5607b3eacc-df\"",
       "file_path": "documentation/GameKit/gkgameactivitydefinition/playerrange.md",
@@ -7730,6 +7830,11 @@
       "file_path": "documentation/GameKit/gkleaderboard/init(players).md",
       "hash": "bd3a4444d7ade2f94faecd0112ed61e613ea8690feec90fa0cb9f68f45566c73"
     },
+    "https://developer.apple.com/tutorials/data/documentation/gamekit/gkleaderboard/init.json": {
+      "etag": "\"2c4b-65d5607b78ae3-df\"",
+      "file_path": "documentation/GameKit/gkleaderboard/init.md",
+      "hash": "967b07630fc2cd390d3757c049a355ace7badbeba7b0815738a5b3cd4e7dafa6"
+    },
     "https://developer.apple.com/tutorials/data/documentation/gamekit/gkleaderboard/ishidden.json": {
       "etag": "\"1e09-65d5607b5bfdd-df\"",
       "file_path": "documentation/GameKit/gkleaderboard/ishidden.md",
@@ -8134,6 +8239,11 @@
       "etag": "\"5d4a-65d5607a8884b-df\"",
       "file_path": "documentation/GameKit/gklocalplayer/loadrecentplayers(completionhandler).md",
       "hash": "b4fbba3bb6dd8f897470d9dfe306765a67a490ec42c92cf0807776ba38df09d7"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/gamekit/gklocalplayer/local-1mzi0.json": {
+      "etag": "\"1724-65d5607a8884b-df\"",
+      "file_path": "documentation/GameKit/gklocalplayer/local-1mzi0.md",
+      "hash": "7eb6c569ba16dc76222165a8d9180eaaa5cf57819956c9d3c63e908312fbbe1b"
     },
     "https://developer.apple.com/tutorials/data/documentation/gamekit/gklocalplayer/local-oaa8.json": {
       "etag": "\"2060-65d5607a8884b-df\"",
@@ -8600,6 +8710,11 @@
       "file_path": "documentation/GameKit/gkmatchmakingmode/nearbyonly.md",
       "hash": "d290cef2aae985ab307ab93303ebee9f11d78e024ccb5c3241c951cf75b08fc5"
     },
+    "https://developer.apple.com/tutorials/data/documentation/gamekit/gkmatchproperties.json": {
+      "etag": "\"19dc-65d5607a6dae9-df\"",
+      "file_path": "documentation/GameKit/gkmatchproperties.md",
+      "hash": "521df4274cbe59369ef7d56b8727b624997bf89f7d2ddacee5fae10568bf049e"
+    },
     "https://developer.apple.com/tutorials/data/documentation/gamekit/gkmatchrequest.json": {
       "etag": "\"f490-65d5607b91472-df\"",
       "file_path": "documentation/GameKit/gkmatchrequest.md",
@@ -8920,6 +9035,11 @@
       "file_path": "documentation/GameKit/gkplayer/teamplayerid.md",
       "hash": "3884fe862b6850648ea1d43154204c659ad7627ebd9a33a82b88dc31239c0054"
     },
+    "https://developer.apple.com/tutorials/data/documentation/gamekit/gkplayerauthenticationdidchangenotificationname.json": {
+      "etag": "\"308c-65d5607b5bfdd-df\"",
+      "file_path": "documentation/GameKit/gkplayerauthenticationdidchangenotificationname.md",
+      "hash": "41a6b445ee2122464f26c613a88fb9cfe7142931ec82c7fc403262c90d43b60a"
+    },
     "https://developer.apple.com/tutorials/data/documentation/gamekit/gkplayerconnectionstate.json": {
       "etag": "\"3f58-65d5607c00e12-df\"",
       "file_path": "documentation/GameKit/gkplayerconnectionstate.md",
@@ -8945,6 +9065,11 @@
       "file_path": "documentation/GameKit/gkplayerconnectionstate/unknown.md",
       "hash": "abdcc617d8fe2c8dadfc2dae15feca5766f6c81724da7543e9262b0e48050b4c"
     },
+    "https://developer.apple.com/tutorials/data/documentation/gamekit/gkplayerdidchangenotificationname.json": {
+      "etag": "\"2e65-65d5607b2552c-df\"",
+      "file_path": "documentation/GameKit/gkplayerdidchangenotificationname.md",
+      "hash": "354ea2ce1eb3caaabe3cc391d6191548843868a7bcaa7f7adef4702e9c16ccf1"
+    },
     "https://developer.apple.com/tutorials/data/documentation/gamekit/gkplayeridnolongeravailable.json": {
       "etag": "\"2c99-65d5607b05e31-df\"",
       "file_path": "documentation/GameKit/gkplayeridnolongeravailable.md",
@@ -8954,6 +9079,11 @@
       "etag": "\"4085-65d5607c8c754-df\"",
       "file_path": "documentation/GameKit/gkreleasestate.md",
       "hash": "2c8d2daa667e9d915169cb340eb676ca98f2358dcf38da9529f0b25abd4ec0d6"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/gamekit/gkreleasestate/gkreleasestateunknown.json": {
+      "etag": "\"105b-65d5607c8c754-df\"",
+      "file_path": "documentation/GameKit/gkreleasestate/gkreleasestateunknown.md",
+      "hash": "0bf479e3c10edf87a2db3cc5313760a370a0ae0daf797de68a06f08a60d97f00"
     },
     "https://developer.apple.com/tutorials/data/documentation/gamekit/gkreleasestate/init(rawvalue:).json": {
       "etag": "\"1355-65d5607c8c754-df\"",
@@ -10633,8 +10763,8 @@
   },
   "metadata": {
     "render": {
-      "version": 1
+      "version": 2
     },
-    "total_pages": 2126
+    "total_pages": 2152
   }
 }

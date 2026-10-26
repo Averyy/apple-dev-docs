@@ -32,6 +32,12 @@ The descriptor for the buffer bound at this index.
 
 - `bufferIndex`: The array index of the requested pipeline buffer descriptor.
 
+## See Also
+
+### Accessing array elements
+- [- setObject:atIndexedSubscript:](./setobject_atindexedsubscript_.md)
+  Sets a pipeline buffer descriptor at the specified array index.
+
 
 ---
 

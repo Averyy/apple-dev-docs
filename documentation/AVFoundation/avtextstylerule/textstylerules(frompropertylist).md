@@ -43,6 +43,10 @@ Use this method to create new text style rule objects based on data you previous
   Creates a text style rule object with the specified style attributes.
 - [init?(textMarkupAttributes: [String : Any], textSelector: String?)](./init%28textmarkupattributes,textselector%29.md)
   Creates a text style rule object with the specified style attributes and text range information.
+- [+ textStyleRuleWithTextMarkupAttributes:](./textstylerulewithtextmarkupattributes_.md)
+  Creates a new text style rule object using the style attributes in the specified dictionary.
+- [+ textStyleRuleWithTextMarkupAttributes:textSelector:](./textstylerulewithtextmarkupattributes_textselector_.md)
+  Creates a new text style rule object using the specified style attributes and text range information.
 
 
 ---

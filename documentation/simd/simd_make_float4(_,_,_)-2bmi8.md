@@ -27,6 +27,8 @@ static simd_float4 simd_make_float4(simd_float2 xy, float z, float w);
   Returns a new vector from a scalar value and a vector.
 - [func simd_make_float4(simd_float3, Float) -> simd_float4](./simd_make_float4%28_,_%29-4911p.md)
   Returns a new vector from a vector and a scalar value.
+- [vector4](./vector4-8b00f.md)
+  Returns a new vector from a vector and a scalar value.
 
 
 ---

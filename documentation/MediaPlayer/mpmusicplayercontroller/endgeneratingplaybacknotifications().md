@@ -28,6 +28,12 @@ func endGeneratingPlaybackNotifications()
 ### Using music player notifications
 - [func beginGeneratingPlaybackNotifications()](./begingeneratingplaybacknotifications%28%29.md)
   Starts the generation of playback notifications.
+- [MPMusicPlayerControllerPlaybackStateDidChangeNotification](../mpmusicplayercontrollerplaybackstatedidchangenotification.md)
+  Posted when the playback state changes programmatically or by user action.
+- [MPMusicPlayerControllerNowPlayingItemDidChangeNotification](../mpmusicplayercontrollernowplayingitemdidchangenotification.md)
+  Posted when the currently playing media item has changed.
+- [MPMusicPlayerControllerVolumeDidChangeNotification](../mpmusicplayercontrollervolumedidchangenotification.md)
+  Posted when the audio playback volume for the music player has changed.
 
 
 ---

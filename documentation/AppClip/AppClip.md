@@ -104,6 +104,8 @@ When you’ve identified functionality for your App Clip and identified invocati
 ### Distribution
 - [Distributing your App Clip](./distributing-your-app-clip.md)
   Archive the full app for your App Clip, upload it to App Store Connect, and distribute it to testers or publish it on the App Store.
+### Macros
+- [AP_EXTERN](./ap_extern.md)
 
 
 ---

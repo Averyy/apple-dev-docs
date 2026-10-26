@@ -97,11 +97,15 @@ if([[NSUserDefaults standardUserDefaults]
   Creates a named subscription for all records in the specified record zone.
 - [init(coder: NSCoder)](./ckrecordzonesubscription/init%28coder%29.md)
   Creates a zone-based subscription from a serialized instance.
+- [- initWithZoneID:subscriptionID:](./ckrecordzonesubscription/initwithzoneid_subscriptionid_.md)
+  Creates a named subscription for all records in the specified record zone.
 ### Accessing the Subscription Metadata
 - [var recordType: CKRecord.RecordType?](./ckrecordzonesubscription/recordtype-1fuqo.md)
   The type of record that the subscription queries.
 - [var zoneID: CKRecordZone.ID](./ckrecordzonesubscription/zoneid.md)
   The ID of the record zone that the subscription queries.
+- [recordType](./ckrecordzonesubscription/recordtype-1kt07.md)
+  The type of record that the subscription queries.
 
 ## Relationships
 

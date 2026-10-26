@@ -63,6 +63,8 @@ This property contains the nonlocalized text that the notification’s alert dis
   The key that identifies the localized string for the notification’s subtitle.
 - [var subtitleLocalizationArgs: [String]?](./subtitlelocalizationargs.md)
   The fields for building a notification’s subtitle.
+- [subscriptionID](./subscriptionid-90zhj.md)
+  The ID of the subscription that triggers the notification.
 
 
 ---

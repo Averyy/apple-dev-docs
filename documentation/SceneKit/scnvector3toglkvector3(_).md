@@ -38,6 +38,8 @@ A three-element GLKit vector structure representing the same vector as the input
 ### Converting Vector Types
 - [func SCNVector3FromGLKVector3(GLKVector3) -> SCNVector3](./scnvector3fromglkvector3%28_%29.md)
   Returns a three-element SceneKit vector structure corresponding to a GLKit vector structure.
+- [SCNVector3FromFloat3](./scnvector3fromfloat3.md)
+- [SCNVector3ToFloat3](./scnvector3tofloat3.md)
 
 
 ---

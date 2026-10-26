@@ -27,6 +27,8 @@ class AVCaptionConversionValidator
 ### Creating a validator
 - [init(captions: [AVCaption], timeRange: CMTimeRange, conversionSettings: [AVCaptionSettingsKey : Any])](./avcaptionconversionvalidator/init%28captions,timerange,conversionsettings%29.md)
   Creates an object that validates captions for a conversion operation.
+- [+ captionConversionValidatorWithCaptions:timeRange:conversionSettings:](./avcaptionconversionvalidator/captionconversionvalidatorwithcaptions_timerange_conversionsettings_.md)
+  A convenience initializer to create an object that validates captions for a conversion operation.
 ### Inspecting the validator
 - [var captions: [AVCaption]](./avcaptionconversionvalidator/captions.md)
   The array of captions that the system validates.

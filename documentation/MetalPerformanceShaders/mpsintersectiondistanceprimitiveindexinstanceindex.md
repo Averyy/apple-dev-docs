@@ -64,6 +64,8 @@ typedef struct { ... } MPSIntersectionDistancePrimitiveIndexInstanceIndex;
   An intersection result that contains the origin-intersection distance, intersected primitive index, and intersection point coordinates.
 - [struct MPSIntersectionDistancePrimitiveIndexInstanceIndexCoordinates](./mpsintersectiondistanceprimitiveindexinstanceindexcoordinates.md)
   An intersection result that contains the origin-intersection distance, intersected primitive and instance indices, and intersection point coordinates.
+- [MPSAxisAlignedBoundingBox](./mpsaxisalignedboundingbox-c.struct.md)
+  An axis-aligned bounding box.
 
 
 ---

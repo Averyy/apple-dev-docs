@@ -66,6 +66,8 @@ To learn about 3D Touch, read [Adopting 3D Touch on iPhone](https://developer.ap
   The interface for the delegate of a search display controller.
 - [protocol UIViewControllerPreviewingDelegate](./uiviewcontrollerpreviewingdelegate.md)
   A set of methods used by the delegate to respond, with a preview view controller and a commit view controller, to the user pressing a view object on the screen of a device that supports 3D Touch.
+- [UIAccelerometerDelegate](./uiaccelerometerdelegate.md)
+  The interface for receiving acceleration-related data from the system.
 
 
 ---

@@ -17,7 +17,7 @@ object GetMerchantTokenUsageInformationPackageResponse
 
 ## Mentions
 
-- [Adding merchant token usage information](https://developer.apple.com/documentation/applepaymerchanttokenmanagementapi/adding-merchant-token-usage-information)
+- [Adding merchant token usage information](../ApplePayMerchantTokenManagementAPI/adding-merchant-token-usage-information.md)
 
 #### Discussion
 

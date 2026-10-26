@@ -52,6 +52,17 @@ nw_path_unsatisfied_reason_t nw_path_get_unsatisfied_reason(nw_path_t path);
   Checks if the browse descriptor requires including associated TXT records with all results.
 - [func nw_browse_descriptor_set_include_txt_record(nw_browse_descriptor_t, Bool)](./nw_browse_descriptor_set_include_txt_record%28_,_%29.md)
   Requires including associated TXT records with all results generated for this service descriptor.
+- [nw_connection_group_copy_protocol_metadata](./nw_connection_group_copy_protocol_metadata%28_,_%29.md)
+- [nw_connection_group_copy_protocol_metadata_for_message](./nw_connection_group_copy_protocol_metadata_for_message%28_,_,_%29.md)
+- [nw_connection_group_extract_connection](./nw_connection_group_extract_connection%28_,_,_%29.md)
+- [nw_connection_group_reinsert_extracted_connection](./nw_connection_group_reinsert_extracted_connection%28_,_%29.md)
+- [nw_connection_group_set_new_connection_handler](./nw_connection_group_set_new_connection_handler%28_,_%29.md)
+- [nw_data_transfer_report_get_path_radio_type](./nw_data_transfer_report_get_path_radio_type%28_,_%29.md)
+- [nw_endpoint_copy_txt_record](./nw_endpoint_copy_txt_record%28_%29.md)
+- [nw_endpoint_get_signature](./nw_endpoint_get_signature%28_,_%29.md)
+- [nw_ethernet_channel_create_with_parameters](./nw_ethernet_channel_create_with_parameters%28_,_,_%29.md)
+- [nw_ethernet_channel_get_maximum_payload_size](./nw_ethernet_channel_get_maximum_payload_size%28_%29.md)
+- [nw_framer_copy_options](./nw_framer_copy_options%28_%29.md)
 
 
 ---

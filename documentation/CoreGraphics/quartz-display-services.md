@@ -149,6 +149,10 @@ You can use Quartz Display Services to:
   Returns information about the currently available display modes.
 - [func CGDisplaySetDisplayMode(CGDirectDisplayID, CGDisplayMode?, CFDictionary?) -> CGError](./cgdisplaysetdisplaymode%28_,_,_%29.md)
   Switches a display to a different mode.
+- [CGDisplayModeRetain](./cgdisplaymoderetain.md)
+  Retains a Core Graphics display mode.
+- [CGDisplayModeRelease](./cgdisplaymoderelease.md)
+  Releases a Core Graphics display mode.
 ### Getting Information About a Display Mode
 - [var width: Int](./cgdisplaymode/width.md)
   Returns the width of the specified display mode.
@@ -208,6 +212,8 @@ You can use Quartz Display Services to:
 - [func CGWarpMouseCursorPosition(CGPoint) -> CGError](./cgwarpmousecursorposition%28_%29.md)
   Moves the mouse cursor without generating events.
 - [func CGGetLastMouseDelta() -> (x: Int32, y: Int32)](./cggetlastmousedelta%28%29.md)
+  Reports the change in mouse position since the last mouse movement event received by the application.
+- [CGGetLastMouseDelta](./cggetlastmousedelta.md)
   Reports the change in mouse position since the last mouse movement event received by the application.
 ### Getting Window Server Information
 - [func CGSessionCopyCurrentDictionary() -> CFDictionary?](./cgsessioncopycurrentdictionary%28%29.md)

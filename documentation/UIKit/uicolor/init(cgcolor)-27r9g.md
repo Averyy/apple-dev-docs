@@ -41,6 +41,11 @@ An initialized color object. The color information represented by this object is
   Creates a color object that encapsulates a Core Image color.
 - [func withAlphaComponent(CGFloat) -> UIColor](./withalphacomponent%28_%29.md)
   Creates a color object that has the same color space and component values as the receiver, but has the specified alpha component.
+- [+ colorWithCIColor:](./colorwithcicolor_.md)
+  Creates a color object that encapsulates a Core Image color.
+### Related Documentation
+- [+ colorWithCGColor:](./colorwithcgcolor_.md)
+  Creates a color object using the specified Quartz color reference.
 
 
 ---

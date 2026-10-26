@@ -59,6 +59,34 @@ These flags are set in an item-information record to provide information about a
   Item is the root directory of a volume or mount point.
 - [static var extensionIsHidden: LSItemInfoFlags](./lsiteminfoflags/api-1445838-extensionishidden.md)
   Item has a hidden filename extension.
+- [kLSItemInfoIsPlainFile](./lsiteminfoflags/klsiteminfoisplainfile.md)
+  Item is a data file (and not, for example, a directory, volume, or UNIX symbolic link).
+- [kLSItemInfoIsPackage](./lsiteminfoflags/klsiteminfoispackage.md)
+  Item is a packaged directory.
+- [kLSItemInfoIsApplication](./lsiteminfoflags/klsiteminfoisapplication.md)
+  Item is a single-file or packaged application.
+- [kLSItemInfoIsContainer](./lsiteminfoflags/klsiteminfoiscontainer.md)
+  Item is a directory (includes packages) or volume.
+- [kLSItemInfoIsAliasFile](./lsiteminfoflags/klsiteminfoisaliasfile.md)
+  Item is an alias file (includes symbolic links).
+- [kLSItemInfoIsSymlink](./lsiteminfoflags/klsiteminfoissymlink.md)
+  Item is a UNIX symbolic link.
+- [kLSItemInfoIsInvisible](./lsiteminfoflags/klsiteminfoisinvisible.md)
+  Item is invisible, because either its name begins with a period or its `isInvisible` Finder flag is set.
+- [kLSItemInfoIsNativeApp](./lsiteminfoflags/klsiteminfoisnativeapp.md)
+  Item is an application that can run natively in macOS.
+- [kLSItemInfoIsClassicApp](./lsiteminfoflags/klsiteminfoisclassicapp.md)
+  Item is an application that cannot run natively and must be launched in the Classic emulation environment.
+- [kLSItemInfoAppPrefersNative](./lsiteminfoflags/klsiteminfoappprefersnative.md)
+  Item is an application that can run either natively or in the Classic emulation environment, but prefers to be launched natively. This flag is valid only when `kLSItemInfoIsNativeApp` is set.
+- [kLSItemInfoAppPrefersClassic](./lsiteminfoflags/klsiteminfoappprefersclassic.md)
+  Item is an application that can run either natively or in the Classic emulation environment, but prefers tobe launched in the Classic environment. This flag is valid only when `kLSItemInfoIsNativeApp` isset.
+- [kLSItemInfoAppIsScriptable](./lsiteminfoflags/klsiteminfoappisscriptable.md)
+  Item is an application that can be scripted.
+- [kLSItemInfoIsVolume](./lsiteminfoflags/klsiteminfoisvolume.md)
+  Item is the root directory of a volume or mount point.
+- [kLSItemInfoExtensionIsHidden](./lsiteminfoflags/klsiteminfoextensionishidden.md)
+  Item has a hidden filename extension.
 
 ## Relationships
 

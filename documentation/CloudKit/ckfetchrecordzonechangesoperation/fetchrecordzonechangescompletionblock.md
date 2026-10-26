@@ -48,6 +48,8 @@ Set this property before you execute the operation or submit it to a queue.
   The closure to execute when the change token updates.
 - [var recordZoneFetchCompletionBlock: ((CKRecordZone.ID, CKServerChangeToken?, Data?, Bool, (any Error)?) -> Void)?](./recordzonefetchcompletionblock.md)
   The closure to execute when a record zone’s fetch finishes.
+- [recordWithIDWasDeletedBlock](./recordwithidwasdeletedblock-912xy.md)
+  The block to execute when a record no longer exists.
 
 
 ---

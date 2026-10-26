@@ -42,6 +42,17 @@ init(bytesNoCopy bytes: UnsafeMutableRawPointer, length: Int, freeWhenDone b: Bo
   Initializes a data object filled with a given number of bytes of data from a given buffer, with a custom deallocator block.
 - [init(data: Data)](./init%28data%29.md)
   Initializes a data object with the contents of another data object.
+- [+ data](./data.md)
+  Creates an empty data object.
+- [+ dataWithBytes:length:](./datawithbytes_length_.md)
+  Creates a data object containing a given number of bytes copied from a given buffer.
+- [+ dataWithBytesNoCopy:length:](./datawithbytesnocopy_length_.md)
+  Creates a data object that holds a given number of bytes from a given buffer.
+- [+ dataWithData:](./datawithdata_.md)
+  Creates a data object containing the contents of another data object.
+### Related Documentation
+- [+ dataWithBytesNoCopy:length:freeWhenDone:](./datawithbytesnocopy_length_freewhendone_.md)
+  Creates a data object that holds a given number of bytes from a given buffer.
 
 
 ---

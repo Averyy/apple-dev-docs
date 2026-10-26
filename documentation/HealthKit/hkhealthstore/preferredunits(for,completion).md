@@ -57,6 +57,8 @@ Your app should present HealthKit data using the current preferred units (see th
   Returns a person’s preferred zone configuration for a quantity type.
 - [static let HKUserPreferencesDidChange: NSNotification.Name](../../Foundation/nsnotification/name-swift.struct/hkuserpreferencesdidchange.md)
   Notifies observers whenever the user changes his or her preferred units.
+- [HKUserPreferencesDidChangeNotification](../hkuserpreferencesdidchangenotification.md)
+  Notifies observers whenever the user changes his or her preferred units.
 
 
 ---

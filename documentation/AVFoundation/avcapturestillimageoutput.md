@@ -69,6 +69,8 @@ class AVCaptureStillImageOutput
 ### Creating still image output
 - [init()](./avcapturestillimageoutput/init%28%29.md)
   Creates new still image output.
+- [+ new](./avcapturestillimageoutput/new.md)
+  Creates new still image output.
 
 ## Relationships
 

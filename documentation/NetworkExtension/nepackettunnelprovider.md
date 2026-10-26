@@ -97,6 +97,7 @@ In order to create a Packet Tunnel Provider extension, you must create a subclas
   Creates a UDP session through the current tunnel.
 ### Instance Properties
 - [var virtualInterface: NWInterface?](./nepackettunnelprovider/virtualinterface-7l3ol.md)
+- [virtualInterface](./nepackettunnelprovider/virtualinterface-9fpgd.md)
 
 ## Relationships
 

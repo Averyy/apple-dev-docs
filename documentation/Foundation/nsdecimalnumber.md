@@ -42,6 +42,14 @@ In Swift, this object bridges to [`Decimal`](./decimal.md); use [`NSDecimalNumbe
   A decimal number equivalent to the number 0.0.
 - [class var notANumber: NSDecimalNumber](./nsdecimalnumber/notanumber.md)
   A decimal number that specifies no number.
+- [+ decimalNumberWithDecimal:](./nsdecimalnumber/decimalnumberwithdecimal_.md)
+  Creates and returns a decimal number equivalent to a given decimal structure.
+- [+ decimalNumberWithMantissa:exponent:isNegative:](./nsdecimalnumber/decimalnumberwithmantissa_exponent_isnegative_.md)
+  Creates and returns a decimal number equivalent to the number specified by the arguments.
+- [+ decimalNumberWithString:](./nsdecimalnumber/decimalnumberwithstring_.md)
+  Creates a decimal number whose value is equivalent to that in a given numeric string.
+- [+ decimalNumberWithString:locale:](./nsdecimalnumber/decimalnumberwithstring_locale_.md)
+  Creates a decimal number whose value is equivalent to that in a given numeric string, interpreted using a given locale.
 ### Initializing a Decimal Number
 - [init(decimal: Decimal)](./nsdecimalnumber/init%28decimal%29.md)
   Initializes a decimal number to represent a given decimal.
@@ -132,6 +140,20 @@ In Swift, this object bridges to [`Decimal`](./decimal.md); use [`NSDecimalNumbe
 - [NSSecureCoding](./nssecurecoding.md)
 - [Sendable](../Swift/sendable.md)
 - [SendableMetatype](../Swift/sendablemetatype.md)
+
+## See Also
+
+### Numbers
+- [NSInteger](../ObjectiveC/nsinteger.md)
+  Describes an integer.
+- [NSUInteger](../ObjectiveC/nsuinteger.md)
+  Describes an unsigned integer.
+- [NSDecimal](./decimal.md)
+  A structure representing a base-10 number.
+- [NSNumber](./nsnumber.md)
+  An object wrapper for primitive scalar numeric values.
+- [NSNumberFormatter](./numberformatter.md)
+  A formatter that converts between numeric values and their textual representations.
 
 
 ---

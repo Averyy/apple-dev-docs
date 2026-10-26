@@ -24,6 +24,7 @@ func enqueueUpdatedFrame(_ frame: UInt64, timestamp: UInt64) throws
 - [func inspectCommand(UnsafePointer<IOUSBHostCIMessage>) throws](./inspectcommand%28_%29.md)
 - [func respond(toCommand: UnsafePointer<IOUSBHostCIMessage>, status: IOUSBHostCIMessageStatus) throws](./respond%28tocommand,status%29.md)
 - [func respond(toCommand: UnsafePointer<IOUSBHostCIMessage>, status: IOUSBHostCIMessageStatus, frame: UInt64, timestamp: UInt64) throws](./respond%28tocommand,status,frame,timestamp%29.md)
+- [- initWithInterface:error:](./initwithinterface_error_.md)
 
 
 ---

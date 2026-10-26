@@ -63,12 +63,18 @@ myDeviceConnectionManager.connectTo(endpoint: endpoint)
   Creates a view controller that displays the available devices on your local network.
 - [convenience init?(browseDescriptor: NWBrowser.Descriptor, parameters: NWParameters?, access: DDDevicePairingAccess)](./dddevicepickerviewcontroller/init%28browsedescriptor,parameters,access%29.md)
   Creates a view controller with the parameters and access level you specify that displays the available devices on network.
+- [- initWithBrowseDescriptor:parameters:](./dddevicepickerviewcontroller/initwithbrowsedescriptor_parameters_.md)
+  Creates a view controller that displays the other, available devices on your local network.
 ### Determining device support
 - [static func isSupported(NWBrowser.Descriptor, using: NWParameters?) -> Bool](./dddevicepickerviewcontroller/issupported%28_,using%29.md)
+  Returns a Boolean value that indicates whether the current device supports device discovery.
+- [+ isSupportedForBrowseDescriptor:parameters:](./dddevicepickerviewcontroller/issupportedforbrowsedescriptor_parameters_.md)
   Returns a Boolean value that indicates whether the current device supports device discovery.
 ### Accessing the selected endpoint
 - [var endpoint: NWEndpoint](./dddevicepickerviewcontroller/endpoint.md)
   A network connection endpoint for the device that a person selected.
+- [- setDevicePickerCompletionHandler:](./dddevicepickerviewcontroller/setdevicepickercompletionhandler_.md)
+  Sets the completion handler that the system calls when the user selects a device from the picker view.
 
 ## Relationships
 

@@ -32,6 +32,22 @@ Duplicate networks are defined as networks with the same SSID, security type, an
 ### Utility Methods
 - [func CWKeychainCopyEAPIdentityList(UnsafeMutablePointer<Unmanaged<CFArray>?>?) -> OSStatus](./cwkeychaincopyeapidentitylist%28_%29.md)
   Finds and returns the available identities stored in the keychain.
+- [CWKeychainCopyEAPIdentity](./cwkeychaincopyeapidentity.md)
+  Finds and returns the identity stored for corresponding network with the specified SSID.
+- [CWKeychainCopyEAPUsernameAndPassword](./cwkeychaincopyeapusernameandpassword.md)
+  Finds and returns the username and password stored for corresponding network with the specified SSID.
+- [CWKeychainCopyPassword](./cwkeychaincopypassword.md)
+  Finds and returns the keychain password stored for the corresponding network with the specified SSID.
+- [CWKeychainDeleteEAPUsernameAndPassword](./cwkeychaindeleteeapusernameandpassword.md)
+  Deletes the keychain item containing the 802.1X username and password for the specified SSID.
+- [CWKeychainDeletePassword](./cwkeychaindeletepassword.md)
+  Deletes the network password for the specified SSID from the default keychain.
+- [CWKeychainSetEAPIdentity](./cwkeychainseteapidentity.md)
+  Associates an exisiting identity item to the specified SSID.
+- [CWKeychainSetEAPUsernameAndPassword](./cwkeychainseteapusernameandpassword.md)
+  Sets the keychain item containing the 802.1X username and password for the specified SSID.
+- [CWKeychainSetPassword](./cwkeychainsetpassword.md)
+  Sets the network keychain password for the specified SSID.
 
 
 ---

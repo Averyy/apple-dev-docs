@@ -89,6 +89,12 @@ This class provides basic methods for converting time values to the timebase of 
   Configuration options specified when creating an [`AVPlayerItemSampleBufferOutput`](./avplayeritemsamplebufferoutput.md).
 - [class AVPlayerItemSampleBufferOutputAudioConfiguration](./avplayeritemsamplebufferoutputaudioconfiguration.md)
   Audio-specific configuration options specified when creating an [`AVPlayerItemSampleBufferOutput`](./avplayeritemsamplebufferoutput.md).
+- [CMTagCollectionCreateWithVideoOutputPreset](./cmtagcollectioncreatewithvideooutputpreset.md)
+  Creates a collection with the required tags to describe the specified video output requirements.
+- [CMTagCollectionVideoOutputPreset](./cmtagcollectionvideooutputpreset.md)
+  Constants that indicate the type of video content to output.
+- [AVPlayerItemSampleBufferOutputDelegate](./avplayeritemsamplebufferoutputdelegate.md)
+  Defines common delegate methods for objects participating in sample buffer output.
 
 
 ---

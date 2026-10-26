@@ -12,6 +12,8 @@ Option flags that determine the degree of mutability of newly created property l
   Specifies that the property list should have mutable containers but immutable leaves.
 - [static var mutableContainersAndLeaves: CFPropertyListMutabilityOptions](./cfpropertylistmutabilityoptions/mutablecontainersandleaves.md)
   Specifies that the property list should have mutable containers and mutable leaves.
+- [kCFPropertyListImmutable](./cfpropertylistmutabilityoptions/kcfpropertylistimmutable.md)
+  Specifies that the property list should be immutable.
 
 ## See Also
 

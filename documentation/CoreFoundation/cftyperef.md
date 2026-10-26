@@ -36,6 +36,12 @@ All other Core Foundation opaque types derive from `CFTypeRef`. The functions, c
   Returns the allocator used to allocate a Core Foundation object.
 - [func CFGetRetainCount(CFTypeRef!) -> CFIndex](./cfgetretaincount%28_%29.md)
   Returns the reference count of a Core Foundation object.
+- [CFMakeCollectable](./cfmakecollectable.md)
+  Makes a newly-allocated Core Foundation object eligible for garbage collection.
+- [CFRelease](./cfrelease.md)
+  Releases a Core Foundation object.
+- [CFRetain](./cfretain.md)
+  Retains a Core Foundation object.
 ### Determining Equality
 - [func CFEqual(CFTypeRef!, CFTypeRef!) -> Bool](./cfequal%28_,_%29.md)
   Determines whether two Core Foundation objects are considered equal.
@@ -73,6 +79,12 @@ All other Core Foundation opaque types derive from `CFTypeRef`. The functions, c
 - [struct CFNumberFormatterKey](./cfnumberformatterkey.md)
 - [struct CFRunLoopMode](./cfrunloopmode.md)
 - [struct CFStreamPropertyKey](./cfstreampropertykey.md)
+- [CGFloat](./cgfloat-c.typealias.md)
+  The basic type for all floating-point values.
+- [HRESULT](./hresult.md)
+- [LPVOID](./lpvoid.md)
+- [REFIID](./refiid.md)
+- [ULONG](./ulong.md)
 
 
 ---

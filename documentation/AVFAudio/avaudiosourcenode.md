@@ -38,6 +38,8 @@ The `AVAudioSourceNode` class allows for supplying audio data for rendering thro
   Creates an audio source node with a block that supplies audio data.
 - [init(format: AVAudioFormat, renderBlock: AVAudioSourceNodeRenderBlock)](./avaudiosourcenode/init%28format,renderblock%29.md)
   Creates an audio source node with the audio format and a block that supplies audio data.
+- [- initWithRealtimeSafeRenderBlock:](./avaudiosourcenode/initwithrealtimesaferenderblock_.md)
+- [- initWithFormat:realtimeSafeRenderBlock:](./avaudiosourcenode/initwithformat_realtimesaferenderblock_.md)
 
 ## Relationships
 
@@ -65,6 +67,8 @@ The `AVAudioSourceNode` class allows for supplying audio data for rendering thro
   Add offline audio processing features to your app by enabling offline manual rendering mode.
 - [class AVAudioSinkNode](./avaudiosinknode.md)
   An object that receives audio data.
+- [AVAudioSourceNodeRenderBlockRealtimeSafe](./avaudiosourcenoderenderblockrealtimesafe.md)
+- [AVAudioSinkNodeReceiverBlockRealtimeSafe](./avaudiosinknodereceiverblockrealtimesafe.md)
 
 
 ---

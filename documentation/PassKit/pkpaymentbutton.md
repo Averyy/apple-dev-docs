@@ -42,6 +42,8 @@ To trigger a payment through Apple Pay in a WatchKit app, use [`WKInterfacePayme
 ### Creating payment buttons
 - [init(paymentButtonType: PKPaymentButtonType, paymentButtonStyle: PKPaymentButtonStyle)](./pkpaymentbutton/init%28paymentbuttontype,paymentbuttonstyle%29.md)
   Creates a new payment button with the specified type and style.
+- [+ buttonWithType:style:](./pkpaymentbutton/buttonwithtype_style_.md)
+  Creates a new payment button with the specified type and style.
 ### Configuring the appearance
 - [enum PKPaymentButtonType](./pkpaymentbuttontype.md)
   The Apple Pay button types you can display to initiate Apple Pay transactions.
@@ -52,6 +54,8 @@ To trigger a payment through Apple Pay in a WatchKit app, use [`WKInterfacePayme
 ### Initializers
 - [convenience init(paymentButtonType: PKPaymentButtonType, paymentButtonStyle: PKPaymentButtonStyle, disableCardArt: Bool)](./pkpaymentbutton/init%28paymentbuttontype,paymentbuttonstyle,disablecardart%29.md)
 - [convenience init(type: PKPaymentButtonType, style: PKPaymentButtonStyle, disableCardArt: Bool)](./pkpaymentbutton/init%28type,style,disablecardart%29.md)
+### Type Methods
+- [+ buttonWithType:style:disableCardArt:](./pkpaymentbutton/buttonwithtype_style_disablecardart_.md)
 
 ## Relationships
 

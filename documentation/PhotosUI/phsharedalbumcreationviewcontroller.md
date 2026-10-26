@@ -45,6 +45,8 @@ This class is used to present the shared album creation view from AppKit-based v
   Upon successful album creation, `creationResult` will be non-nil and provide information about the just-created shared album.
 - [var delegate: (any PHSharedAlbumCreationViewController.Delegate)?](./phsharedalbumcreationviewcontroller/delegate-swift.property.md)
   The delegate to respond to `PHSharedAlbumCreationViewController` events.
+### Instance Methods
+- [- initWithConfiguration:](./phsharedalbumcreationviewcontroller/initwithconfiguration_.md)
 
 ## Relationships
 

@@ -91,6 +91,10 @@ To set up a VM, configure a [`VZVirtualMachineConfiguration`](./vzvirtualmachin
   The error domain for the Virtualization framework.
 - [struct VZError](./vzerror.md)
   Errors that you might encounter when configuring or using a VM.
+### Reference
+- [Virtualization macros](./virtualization-macros.md)
+### Protocols
+- [VZUSBControllerDelegate](./vzusbcontroller/delegate-swift.protocol.md)
 
 
 ---

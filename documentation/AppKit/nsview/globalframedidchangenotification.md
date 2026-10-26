@@ -25,6 +25,14 @@ extern NSNotificationName NSViewGlobalFrameDidChangeNotification;
 
 The notification object is the surface’s view. This notification does not contain a `userInfo` dictionary.
 
+## See Also
+
+### Deprecated notifications
+- [NSViewNoInstrinsicMetric](../nsviewnoinstrinsicmetric.md)
+  Used to indicate that a view has no intrinsic metric for a given numeric property.
+- [NSViewFocusDidChangeNotification](../nsviewfocusdidchangenotification.md)
+  Deprecated in macOS 10.4 and later. Posted for an `NSView` object and each of its descendants (recursively) whenever the frame or bounds geometry of the view changed.
+
 
 ---
 

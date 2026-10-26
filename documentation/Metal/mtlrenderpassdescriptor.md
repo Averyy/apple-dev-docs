@@ -62,6 +62,10 @@ An [`MTLRenderPassDescriptor`](./mtlrenderpassdescriptor.md) instance contains a
   Sets the programmable sample positions for a render pass.
 - [func getSamplePositions() -> [MTLSamplePosition]](./mtlrenderpassdescriptor/getsamplepositions%28%29.md)
   Returns the programmable sample positions set for a render pass.
+- [- setSamplePositions:count:](./mtlrenderpassdescriptor/setsamplepositions_count_.md)
+  Sets the programmable sample positions for a render pass.
+- [- getSamplePositions:count:](./mtlrenderpassdescriptor/getsamplepositions_count_.md)
+  Retrieves the programmable sample positions set for a render pass.
 ### Specifying tile shading parameters
 - [var imageblockSampleLength: Int](./mtlrenderpassdescriptor/imageblocksamplelength.md)
   The per-sample size, in bytes, of the largest explicit imageblock layout in the render pass.
@@ -85,6 +89,9 @@ An [`MTLRenderPassDescriptor`](./mtlrenderpassdescriptor.md) instance contains a
   Specifies if the render pass should support color attachment mapping.
 - [var visibilityResultType: MTLVisibilityResultType](./mtlrenderpassdescriptor/visibilityresulttype.md)
   Specifies if Metal accumulates visibility results between render encoders or resets them.
+### Creating a default render pass descriptor
+- [+ renderPassDescriptor](./mtlrenderpassdescriptor/renderpassdescriptor.md)
+  Creates a default render pass descriptor.
 
 ## Relationships
 

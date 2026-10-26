@@ -38,6 +38,11 @@ Supports a rank between `0` and [`MTL_TENSOR_MAX_RANK`](./mtl_tensor_max_rank.md
   Retrieves the extents for this object.
 - [var rank: Int](./mtltensorextents/rank.md)
   The number of values in the extents object.
+### Instance Methods
+- [- extentAtDimensionIndex:](./mtltensorextents/extentatdimensionindex_.md)
+  Returns the value at the specified dimension index.
+- [- initWithRank:values:](./mtltensorextents/initwithrank_values_.md)
+  Creates an extents object with the rank and values you provide.
 
 ## Relationships
 

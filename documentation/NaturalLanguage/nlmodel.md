@@ -96,6 +96,10 @@ do {
   Predicts multiple possible labels for the given input string.
 - [func predictedLabelHypotheses(forTokens: [String], maximumCount: Int) -> [[String : Double]]](./nlmodel/predictedlabelhypotheses%28fortokens,maximumcount%29.md)
   Predicts multiple possible labels for each string in the given array.
+- [- predictedLabelHypothesesForString:maximumCount:](./nlmodel/predictedlabelhypothesesforstring_maximumcount_.md)
+  Predicts multiple possible labels for the given input string.
+- [- predictedLabelHypothesesForTokens:maximumCount:](./nlmodel/predictedlabelhypothesesfortokens_maximumcount_.md)
+  Predicts multiple possible labels for each string in the given array.
 ### Inspecting a model
 - [var configuration: NLModelConfiguration](./nlmodel/configuration.md)
   A configuration describing the natural language model.

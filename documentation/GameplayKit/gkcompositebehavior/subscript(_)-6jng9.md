@@ -41,6 +41,8 @@ This method is equivalent to the [`weight(for:)`](./weight%28for%29.md) method, 
 ### Working with Behaviors Using Subscript Syntax
 - [subscript(Int) -> GKBehavior](./subscript%28_%29-6krdg.md)
   Returns the individual behavior at the specified index in the composite behavior’s list of behaviors.
+- [- setObject:forKeyedSubscript:](./setobject_forkeyedsubscript_.md)
+  Sets the weight for the behavior specified by subscript syntax.
 
 
 ---

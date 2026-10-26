@@ -230,6 +230,11 @@
 - [var kIOUserServicePropertiesKey: String](./kiouserservicepropertieskey.md)
 - [var kIOUserUserClientKey: String](./kiouseruserclientkey.md)
 - [var kIOWillTerminateNotification: String](./kiowillterminatenotification.md)
+- [kIOHIDTransactionOptionDefaultOutputValue](./kiohidtransactionoptiondefaultoutputvalue.md)
+- [AppleConvergedIPCControlUserClientCommands](./appleconvergedipccontroluserclientcommands.md)
+- [AppleConvergedIPCLoggerKnobInterfaceFlavors](./appleconvergedipcloggerknobinterfaceflavors.md)
+- [AppleConvergedIPCLoggerKnobSubsystems](./appleconvergedipcloggerknobsubsystems.md)
+- [AppleConvergedIPCUserClientCommands](./appleconvergedipcuserclientcommands.md)
 
 
 ---

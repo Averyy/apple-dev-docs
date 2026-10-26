@@ -12,6 +12,8 @@ Review unsupported symbols and their replacements.
   Initializes a leaderboard request to retrieve the scores of a specific group of players.
 - [init(players: [GKPlayer])](./gkleaderboard/init%28players%29.md)
   Initializes a leaderboard request to retrieve the scores of a specific group of players.
+- [- init](./gkleaderboard/init.md)
+  Initializes a default leaderboard request.
 ### Deprecated properties
 - [var category: String?](./gkleaderboard/category.md)
   The named leaderboard to retrieve information from.

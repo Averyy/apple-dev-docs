@@ -27,6 +27,8 @@ var position: __UIPointerAccessoryPosition { get }
 ### Getting the position
 - [UIPointerAccessory.Position](./position-swift.struct.md)
   A structure that specifies the position of the accessory relative to the primary pointer.
+- [UIPointerAccessoryPosition](../uipointeraccessoryposition.md)
+  A structure that specifies the position of the accessory relative to the primary pointer.
 
 
 ---

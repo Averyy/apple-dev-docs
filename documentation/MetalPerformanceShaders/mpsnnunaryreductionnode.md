@@ -28,6 +28,8 @@ class MPSNNUnaryReductionNode
 - [init(source: MPSNNImageNode)](./mpsnnunaryreductionnode/init%28source%29.md)
 ### Instance Properties
 - [var clipRectSource: MTLRegion](./mpsnnunaryreductionnode/cliprectsource.md)
+### Type Methods
+- [+ nodeWithSource:](./mpsnnunaryreductionnode/nodewithsource_.md)
 
 ## Relationships
 

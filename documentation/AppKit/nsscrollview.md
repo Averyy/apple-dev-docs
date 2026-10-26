@@ -32,6 +32,10 @@ When using an [`NSClipView`](./nsclipview.md) object within a scroll view (the u
   Returns the frame size of a scroll view that contains a content view with the specified size.
 - [class func contentSize(forFrameSize: NSSize, horizontalScrollerClass: AnyClass?, verticalScrollerClass: AnyClass?, borderType: NSBorderType, controlSize: NSControl.ControlSize, scrollerStyle: NSScroller.Style) -> NSSize](./nsscrollview/contentsize%28forframesize,horizontalscrollerclass,verticalscrollerclass,bordertype,controlsize,scrollerstyle%29.md)
   Returns the content size calculated from the frame size and the specified specifications.
+- [+ frameSizeForContentSize:hasHorizontalScroller:hasVerticalScroller:borderType:](./nsscrollview/framesizeforcontentsize_hashorizontalscroller_hasverticalscroller_bordertype_.md)
+  Returns the frame size of an scroll view that contains a content view with the specified size.
+- [+ contentSizeForFrameSize:hasHorizontalScroller:hasVerticalScroller:borderType:](./nsscrollview/contentsizeforframesize_hashorizontalscroller_hasverticalscroller_bordertype_.md)
+  Returns the content size calculated from the frame size and the specified specifications.
 ### Determining Component Sizes
 - [var contentSize: NSSize](./nsscrollview/contentsize.md)
   The size of the scroll view’s content view.

@@ -35,6 +35,8 @@ func setIndirectCommandBuffer(_ indirectCommandBuffer: (any MTLIndirectCommandBu
 ### Encoding indirect command buffers
 - [func setIndirectCommandBuffers([(any MTLIndirectCommandBuffer)?], range: Range<Int>)](./setindirectcommandbuffers%28_,range%29.md)
   Encodes an array of indirect command buffers into the argument buffer.
+- [- setIndirectCommandBuffers:withRange:](./setindirectcommandbuffers_withrange_.md)
+  Encodes an array of indirect command buffers into the argument buffer.
 
 
 ---

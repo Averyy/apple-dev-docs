@@ -41,6 +41,8 @@ Apply this option to make a modifiable acceleration structure, which you can upd
   An option that instructs Metal to prioritize building an acceleration structure that needs less memory.
 - [static var extendedLimits: MTLAccelerationStructureUsage](./extendedlimits.md)
   An option that increases an acceleration structure’s storage capacity.
+- [MTLAccelerationStructureUsageNone](./mtlaccelerationstructureusagenone.md)
+  A sentinel value the represents an empty set of options, which is the default behavior for building new acceleration structures.
 
 
 ---

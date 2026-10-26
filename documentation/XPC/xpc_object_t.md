@@ -37,6 +37,7 @@ XPC objects are created with a retain count of 1, and therefore it is the caller
 - [protocol OS_xpc_object](./os_xpc_object.md)
   The interface for an XPC object.
 - [class OS_xpc_listener](./os_xpc_listener-swift.class.md)
+- [OS_xpc_listener](./os_xpc_listener-c.protocol.md)
 
 
 ---

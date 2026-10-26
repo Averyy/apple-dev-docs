@@ -64,6 +64,10 @@ An immutable string, or `NULL` if there was a problem creating the object. Owner
   Creates an immutable CFString object from a Pascal string.
 - [func CFStringCreateWithPascalStringNoCopy(CFAllocator!, ConstStr255Param!, CFStringEncoding, CFAllocator!) -> CFString!](./cfstringcreatewithpascalstringnocopy%28_,_,_,_%29.md)
   Creates a CFString object from an external Pascal string buffer that might serve as the backing store for the object.
+- [CFSTR](./cfstr.md)
+  Creates an immutable string from a constant compile-time string.
+- [CFStringCreateWithFormat](./cfstringcreatewithformat.md)
+  Creates an immutable string from a formatted string and a variable number of arguments.
 
 
 ---

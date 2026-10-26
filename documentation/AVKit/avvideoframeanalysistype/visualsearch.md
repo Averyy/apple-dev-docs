@@ -34,6 +34,8 @@ AVVideoFrameAnalysisTypeVisualSearch
   A type that finds a subject that a user can copy out of frame.
 - [static var machineReadableCode: AVVideoFrameAnalysisType](./machinereadablecode.md)
   A type that recognizes machine-readable codes, such as QR codes.
+- [AVVideoFrameAnalysisTypeNone](./avvideoframeanalysistypenone.md)
+  A type that performs no analysis.
 
 
 ---

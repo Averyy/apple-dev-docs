@@ -56,6 +56,29 @@ When creating an attributed string from a format string and one or more replacem
   The name of a custom tag associated with a text item.
 - [static let toolTip: NSAttributedString.Key](./tooltip.md)
   The tooltip text.
+- [NSCursorAttributeName](../../../AppKit/nscursorattributename.md)
+  The cursor object.
+- [NSLinkAttributeName](../../../UIKit/nslinkattributename.md)
+  The link for the text.
+- [NSMarkedClauseSegmentAttributeName](../../../AppKit/nsmarkedclausesegmentattributename.md)
+  The index of the marked clause segment.
+- [NSShadowAttributeName](../../../UIKit/nsshadowattributename.md)
+  The shadow of the text.
+- [NSSpellingStateAttributeName](../../../AppKit/nsspellingstateattributename.md)
+  The spelling state of the text.
+- [CSSuggestionHighlightAttributeName](../../../CoreSpotlight/cssuggestionhighlightattributename.md)
+- [NSTextAlternativesAttributeName](../../../AppKit/nstextalternativesattributename.md)
+  The alternatives for the text.
+- [NSTextEffectAttributeName](../../../UIKit/nstexteffectattributename.md)
+  An attribute that applies a text effect to the text.
+- [NSTextHighlightColorSchemeAttributeName](../../../UIKit/nstexthighlightcolorschemeattributename.md)
+  The custom highlight color to apply to the text.
+- [NSTextHighlightStyleAttributeName](../../../UIKit/nstexthighlightstyleattributename.md)
+  An attribute that adds a highlight color to the text to emphasize it.
+- [UITextItemTagAttributeName](../../../UIKit/uitextitemtagattributename.md)
+  The name of a custom tag associated with a text item.
+- [NSToolTipAttributeName](../../../AppKit/nstooltipattributename.md)
+  The tooltip text.
 
 
 ---

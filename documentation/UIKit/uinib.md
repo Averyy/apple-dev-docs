@@ -46,6 +46,8 @@ When you create a [`UINib`](./uinib.md) object using the contents of a nib file,
   Unarchives and instantiates the in-memory contents of the nib object’s nib file, creating a distinct object tree and set of top-level objects.
 - [struct OptionsKey](./uinib/optionskey.md)
   Options that specify how to unarchive and instantiate the nib.
+- [UINibProxiedObjectsKey](./uinibproxiedobjectskey.md)
+  The runtime replacement objects for any proxy objects in the nib file.
 
 ## Relationships
 

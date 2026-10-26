@@ -125,6 +125,12 @@ func locationManager(_ manager: CLLocationManager,
   Information about an observed iBeacon device and its relative distance to a person’s device.
 - [protocol CLCondition](./clcondition-swift.protocol.md)
   The abstract base class for all other monitor conditions.
+- [CLCondition](./clcondition-c.class.md)
+  The abstract base class that all other conditions derive from.
+- [CLBeaconIdentityCondition](./clbeaconidentitycondition.md)
+  A condition that describes the identity characteristics of a beacon.
+- [CLCircularGeographicCondition](./clcirculargeographiccondition.md)
+  A circular geographic condition that a center point and radius define.
 
 
 ---

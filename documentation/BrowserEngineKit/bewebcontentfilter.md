@@ -61,6 +61,12 @@ class BEWebContentFilter
   An object that identifies a media playback or streaming environment.
 - [enum RenderingExtensionFeature](./renderingextensionfeature.md)
   Features of a rendering extension.
+- [BEProcessCapability](./beprocesscapability-7av05.md)
+  Capabilities of a helper extension process.
+- [BEMediaEnvironment](./bemediaenvironment-n91a.md)
+  An object that identifies a media playback or streaming environment.
+- [BEProcessCapabilityGrant](./beprocesscapabilitygrant.md)
+  An object that represents a granted capability.
 
 
 ---

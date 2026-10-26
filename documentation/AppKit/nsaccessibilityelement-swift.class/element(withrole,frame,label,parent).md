@@ -47,6 +47,8 @@ Alternatively, instead of calling this convenience method, you can create an acc
   Returns the accessibility element’s frame in its parent’s coordinate system.
 - [func setAccessibilityFrameInParentSpace(NSRect)](./setaccessibilityframeinparentspace%28_%29.md)
   Sets the accessibility element’s frame in its parent’s coordinate system.
+- [accessibilityFrameInParentSpace](./accessibilityframeinparentspace.md)
+  The accessibility element’s frame in its parent’s coordinate system.
 
 
 ---

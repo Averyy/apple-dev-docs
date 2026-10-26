@@ -23,6 +23,8 @@ static simd_ulong2 simd_make_ulong2(simd_ulong1 x, simd_ulong1 y);
   Returns a new vector with the first element set to a scalar value, and other elements set to zero.
 - [func simd_make_ulong2_undef(simd_ulong1) -> simd_ulong2](./simd_make_ulong2_undef%28_%29.md)
   Returns a new vector with the first element set to a scalar value, and other elements undefined.
+- [vector2](./vector2-6n9bx.md)
+  Returns a new vector from the specified scalar values.
 
 
 ---

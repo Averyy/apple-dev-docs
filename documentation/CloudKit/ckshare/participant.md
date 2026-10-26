@@ -73,6 +73,10 @@ Participants with write permissions can modify or delete any record that you inc
 - [var isApprovedRequester: Bool](./participant/isapprovedrequester.md)
   Indicates whether the participant was originally a requester that an originator or administrator approved to join the share.
 - [var participantID: CKShare.Participant.ID](./participant/participantid.md)
+- [participantID](../ckshareparticipant/participantid.md)
+  A unique identifier for this participant.
+- [type](../ckshareparticipant/type.md)
+  The participant type.
 ### Instance Methods
 - [func isEqual(Any) -> Bool](./participant/isequal%28_%29.md)
   Compares two `CKShareParticipant` objects for person identity equality.

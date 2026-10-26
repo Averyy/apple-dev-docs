@@ -22,6 +22,12 @@ class ILCallCommunication
 @interface ILCallCommunication : ILCommunication
 ```
 
+## Topics
+
+### Comparing Communications
+- [- isEqualToCallCommunication:](./ilcallcommunication/isequaltocallcommunication_.md)
+  Indicates whether the current phone call is equal to the provided argument.
+
 ## Relationships
 
 ### Inherits From

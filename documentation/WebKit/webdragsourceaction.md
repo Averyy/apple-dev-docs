@@ -32,6 +32,8 @@ enum WebDragSourceAction : NSUInteger;
   Allows the user to drag a selection in the source object.
 - [static var any: WebDragSourceAction](./webdragsourceaction/any.md)
   Allows any defined action to occur.
+- [WebDragSourceActionNone](./webdragsourceaction/webdragsourceactionnone.md)
+  No action.
 ### Initializers
 - [init(rawValue: UInt)](./webdragsourceaction/init%28rawvalue%29.md)
 

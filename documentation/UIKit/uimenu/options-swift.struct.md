@@ -63,6 +63,12 @@ enum UIMenuOptions : NSUInteger;
   Constants you use to identify an app’s standard menus.
 - [init?(coder: NSCoder)](./init%28coder%29.md)
   Creates a menu from data in an unarchiver.
+- [+ menuWithChildren:](./menuwithchildren_.md)
+  Creates a new menu with the specified child elements.
+- [+ menuWithTitle:children:](./menuwithtitle_children_.md)
+  Creates a menu with the specified title and child menu elements.
+- [+ menuWithTitle:image:identifier:options:children:](./menuwithtitle_image_identifier_options_children_.md)
+  Creates a new menu with the specified values.
 
 
 ---

@@ -39,6 +39,9 @@ You should avoid using this method unless you know nothing about an external app
   Returns an instance of an `SBApplication` subclass that represents the target application identified by the given bundle identifier.
 - [init?(url: URL)](./init%28url%29-6xbe5.md)
   Returns an instance of an `SBApplication` subclass that represents the target application identified by the given URL.
+### Related Documentation
+- [+ applicationWithProcessIdentifier:](./applicationwithprocessidentifier_.md)
+  Returns the shared instance representing a target application specified by its process identifier.
 
 
 ---

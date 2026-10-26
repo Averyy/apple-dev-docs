@@ -41,6 +41,10 @@ To sample from the newly created object’s noise field or generate texture imag
 ### Creating Noise
 - [init(GKNoiseSource, gradientColors: [NSNumber : UIColor])](./init%28_,gradientcolors%29.md)
   Initializes a noise object with the specified noise source, with colors for later use in generating noise textures.
+- [+ noiseWithNoiseSource:](./noisewithnoisesource_.md)
+  Creates a noise object with the specified noise source.
+- [+ noiseWithNoiseSource:gradientColors:](./noisewithnoisesource_gradientcolors_.md)
+  Creates a noise object with the specified noise source, with colors for later use in generating noise textures.
 
 
 ---

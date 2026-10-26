@@ -35,6 +35,8 @@ Refer to the ISO/IEC 15438:2006(E) for the PDF417 symbol specification.
 ### Creating a Descriptor
 - [init?(payload: Data, isCompact: Bool, rowCount: Int, columnCount: Int)](./cipdf417codedescriptor/init%28payload,iscompact,rowcount,columncount%29.md)
   Initializes an PDF417 code descriptor for the given payload and parameters.
+- [+ descriptorWithPayload:isCompact:rowCount:columnCount:](./cipdf417codedescriptor/descriptorwithpayload_iscompact_rowcount_columncount_.md)
+  Creates an PDF417 code descriptor for the given payload and parameters.
 ### Examining a Descriptor
 - [var errorCorrectedPayload: Data](./cipdf417codedescriptor/errorcorrectedpayload-swift.property.md)
   The error-corrected payload containing the data encoded in the PDF417 code symbol.
@@ -44,6 +46,11 @@ Refer to the ISO/IEC 15438:2006(E) for the PDF417 symbol specification.
   The number of rows in the PDF417 code symbol.
 - [var columnCount: Int](./cipdf417codedescriptor/columncount-swift.property.md)
   The number of columns in the PDF417 code symbol.
+### Instance Variables
+- [columnCount](./cipdf417codedescriptor/columncount-c.ivar.md)
+- [errorCorrectedPayload](./cipdf417codedescriptor/errorcorrectedpayload-c.ivar.md)
+- [isCompact](./cipdf417codedescriptor/iscompact-c.ivar.md)
+- [rowCount](./cipdf417codedescriptor/rowcount-c.ivar.md)
 
 ## Relationships
 

@@ -61,6 +61,8 @@ es_handler_block_t handler = ^void  (es_client_t* _Nonnull client, const es_mess
   An opaque type that maintains Endpoint Security client state, and functions related to this type.
 - [Event Types](./event-types.md)
   Types used by messages to deliver details specific to different kinds of Endpoint Security events.
+- [Monitoring System Events with Endpoint Security](./monitoring-system-events-with-endpoint-security.md)
+  Receive notifications and authorization requests for sensitive operations by creating an Endpoint Security client for your app.
 
 
 ---

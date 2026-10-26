@@ -49,6 +49,8 @@ For information on a more configurable way to fetch all subscriptions from a spe
   Fetches a specific subscription and returns it to an awaiting caller.
 - [func fetch(withSubscriptionID: CKSubscription.ID, completionHandler: (CKSubscription?, (any Error)?) -> Void)](./fetch%28withsubscriptionid,completionhandler%29.md)
   Fetches a specific subscription and delivers it to a completion handler.
+- [- fetchSubscriptionWithID:completionHandler:](./fetchsubscriptionwithid_completionhandler_.md)
+  Fetches a specific subscription and delivers it to a completion handler.
 
 
 ---

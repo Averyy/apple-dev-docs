@@ -49,6 +49,8 @@ Typically, you receive new [`NSAdaptiveImageGlyph`](./nsadaptiveimageglyph.md) o
 ### Examining attributed strings
 - [static let adaptiveImageGlyph: NSAttributedString.Key](../Foundation/nsattributedstring/key/adaptiveimageglyph.md)
   The adaptive image glyph for the text.
+- [NSAdaptiveImageGlyphAttributeName](./nsadaptiveimageglyphattributename.md)
+  The adaptive image glyph for the text.
 ### Initializers
 - [convenience init(AttributedString.AdaptiveImageGlyph)](./nsadaptiveimageglyph/init%28_%29.md)
 

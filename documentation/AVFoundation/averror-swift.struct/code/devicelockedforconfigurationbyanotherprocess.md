@@ -57,6 +57,8 @@ AVErrorDeviceLockedForConfigurationByAnotherProcess
   The system failed to decode the media.
 - [AVError.Code.decoderNotFound](./decodernotfound.md)
   The system can’t find a suitable decoder for the media.
+- [AVErrorContentKeyInvalid](../../averror-c.enum/averrorcontentkeyinvalid.md)
+- [AVErrorContentKeyRequestPlaybackDestinationDoesNotSupportDeviceIdentifierRandomization](../../averror-c.enum/averrorcontentkeyrequestplaybackdestinationdoesnotsupportdeviceidentifierrandomization.md)
 
 
 ---

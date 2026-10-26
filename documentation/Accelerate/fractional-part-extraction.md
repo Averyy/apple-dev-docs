@@ -16,6 +16,10 @@ Truncate the elements of a vector to a fraction.
   Calculates each element in the supplied double-precision vector truncated to a fraction.
 - [static func trunc<U, V>(U, result: inout V)](./vdsp/trunc%28_,result%29-fabn.md)
   Calculates each element in the supplied single-precision vector truncated to a fraction.
+- [vDSP_vfrac](./vdsp_vfrac.md)
+  Truncates the elements of a single-precision vector to fractions.
+- [vDSP_vfracD](./vdsp_vfracd.md)
+  Truncates the elements of a double-precision vector to fractions.
 
 ## See Also
 

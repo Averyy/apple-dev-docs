@@ -75,6 +75,7 @@ You inspect or change a service’s [`HMCharacteristic`](./hmcharacteristic.md) 
 - [init()](./hmservice/init%28%29.md)
 ### Instance Properties
 - [var matterEndpointID: UInt16?](./hmservice/matterendpointid-62vu6.md)
+- [matterEndpointID](./hmservice/matterendpointid-4egvi.md)
 
 ## Relationships
 

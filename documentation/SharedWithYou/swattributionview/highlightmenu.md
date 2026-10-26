@@ -61,6 +61,8 @@ Use this menu to augment an existing menu that the system attaches to the conten
   A width the system uses to constrain the view contents.
 - [var supplementalMenu: UIMenu?](./supplementalmenu.md)
   A supplemental menu to augment the attribution view’s existing menu.
+- [enablesMarquee](./enablesmarquee.md)
+  Automatically enables a marquee effect.
 
 
 ---

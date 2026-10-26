@@ -36,6 +36,8 @@ If the `aRect` parameter specifies a square, the inscribed path is a circle. The
 ### Related Documentation
 - [func appendOval(in: NSRect)](./appendoval%28in%29.md)
   Appends an oval path to the path, inscribing the oval in the specified rectangle.
+- [+ bezierPath](./bezierpath.md)
+  Creates and returns a new Bézier path object.
 ### Creating a Bézier Path
 - [init(rect: NSRect)](./init%28rect%29.md)
   Creates and returns a new Bézier path object initialized with a rectangular path.

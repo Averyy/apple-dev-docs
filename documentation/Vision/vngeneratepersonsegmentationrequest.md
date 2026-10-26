@@ -35,6 +35,8 @@ Perform this request to detect and generate an image mask for a person in an ima
   Creates a generate person segmentation request.
 - [init(completionHandler: VNRequestCompletionHandler?)](./vngeneratepersonsegmentationrequest/init%28completionhandler%29.md)
   Creates a generate person segmentation request with a completion handler.
+- [+ new](./vngeneratepersonsegmentationrequest/new.md)
+  Returns a new generate person segmentation request.
 ### Configuring the Request
 - [var outputPixelFormat: OSType](./vngeneratepersonsegmentationrequest/outputpixelformat.md)
   The pixel format of the output image.

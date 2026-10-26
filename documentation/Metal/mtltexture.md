@@ -74,6 +74,10 @@ To copy pixel data back to system memory, call [`getBytes(_:bytesPerRow:bytesPer
   Creates a new view of the texture, reinterpreting a subset of its data using a different type and pixel format.
 - [func makeTextureView(pixelFormat: MTLPixelFormat, textureType: MTLTextureType, levels: Range<Int>, slices: Range<Int>, swizzle: MTLTextureSwizzleChannels) -> (any MTLTexture)?](./mtltexture/maketextureview%28pixelformat,texturetype,levels,slices,swizzle%29.md)
   Creates a new view of the texture, reinterpreting a subset of its data using a different type, pixel format, and swizzle pattern.
+- [- newTextureViewWithPixelFormat:textureType:levels:slices:](./mtltexture/newtextureviewwithpixelformat_texturetype_levels_slices_.md)
+  Creates a new view of the texture, reinterpreting a subset of its data using a different type and pixel format.
+- [- newTextureViewWithPixelFormat:textureType:levels:slices:swizzle:](./mtltexture/newtextureviewwithpixelformat_texturetype_levels_slices_swizzle_.md)
+  Creates a new view of the texture, reinterpreting a subset of its data using a different type, pixel format, and swizzle pattern.
 ### Querying texture attributes
 - [var textureType: MTLTextureType](./mtltexture/texturetype.md)
   The dimension and arrangement of the texture image data.

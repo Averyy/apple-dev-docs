@@ -29,6 +29,9 @@ class MPSNNGramMatrixCalculationGradientNode
 - [init(sourceGradient: MPSNNImageNode, sourceImage: MPSNNImageNode, gradientState: MPSNNGradientStateNode, alpha: Float)](./mpsnngrammatrixcalculationgradientnode/init%28sourcegradient,sourceimage,gradientstate,alpha%29.md)
 ### Instance Properties
 - [var alpha: Float](./mpsnngrammatrixcalculationgradientnode/alpha.md)
+### Type Methods
+- [+ nodeWithSourceGradient:sourceImage:gradientState:](./mpsnngrammatrixcalculationgradientnode/nodewithsourcegradient_sourceimage_gradientstate_.md)
+- [+ nodeWithSourceGradient:sourceImage:gradientState:alpha:](./mpsnngrammatrixcalculationgradientnode/nodewithsourcegradient_sourceimage_gradientstate_alpha_.md)
 
 ## Relationships
 

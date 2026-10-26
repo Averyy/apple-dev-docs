@@ -35,6 +35,11 @@ A new tile definition.
 - `normalTexture`: The texture to reference for generating normals to simulate 3D lighting.
 - `size`: The size of the tile in points.
 
+## See Also
+
+### Creating a Tile with a Normal Texture
+- [+ tileDefinitionWithTexture:normalTexture:size:](./tiledefinitionwithtexture_normaltexture_size_.md)
+
 
 ---
 

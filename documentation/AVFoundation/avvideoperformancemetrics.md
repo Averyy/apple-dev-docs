@@ -37,6 +37,12 @@ class AVVideoPerformanceMetrics
   The accumulated amount of time between the prescribed presentation times of displayed video frames and their actual time of display.
 - [var totalNumberOfFrames: Int](./avvideoperformancemetrics/totalnumberofframes.md)
   The total number of frames that display if no frames drop.
+- [numberOfCorruptedVideoFrames](./avvideoperformancemetrics/numberofcorruptedvideoframes.md)
+- [numberOfDisplayCompositedVideoFrames](./avvideoperformancemetrics/numberofdisplaycompositedvideoframes.md)
+- [numberOfDroppedVideoFrames](./avvideoperformancemetrics/numberofdroppedvideoframes.md)
+- [numberOfNonDisplayCompositedVideoFrames](./avvideoperformancemetrics/numberofnondisplaycompositedvideoframes.md)
+- [totalFrameDelay](./avvideoperformancemetrics/totalframedelay.md)
+- [totalNumberOfVideoFrames](./avvideoperformancemetrics/totalnumberofvideoframes.md)
 
 ## Relationships
 
@@ -66,6 +72,10 @@ class AVVideoPerformanceMetrics
 - [class AVMetricErrorEvent](./avmetricerrorevent.md)
   An object that represents a metric event when an error occurs.
 - [Metric event types](./metric-event-types.md)
+- [AVMetricEventStream](./avmetriceventstream.md)
+  An object that allows clients to add publishers and then subscribe to specific metric event classes from those publishers.
+- [AVMetricEventStreamSubscriber](./avmetriceventstreamsubscriber.md)
+  A type for objects that receive metric events.
 
 
 ---

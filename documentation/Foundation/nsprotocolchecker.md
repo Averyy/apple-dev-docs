@@ -35,6 +35,8 @@ The object should be careful about vending references to `self`—the protocol c
 ### Creating a checker
 - [init(target: NSObject, protocol: Protocol)](./nsprotocolchecker/init%28target,protocol%29.md)
   Initializes a newly allocated `NSProtocolChecker` instance that will forward any messages in `aProtocol` to `anObject`, the protocol checker’s target.
+- [+ protocolCheckerWithTarget:protocol:](./nsprotocolchecker/protocolcheckerwithtarget_protocol_.md)
+  Allocates and initializes an `NSProtocolChecker` instance that will forward any messages in `aProtocol` to `anObject`, the protocol checker’s target.
 ### Getting information
 - [var `protocol`: Protocol](./nsprotocolchecker/protocol.md)
   Returns the protocol object the receiver uses.
@@ -63,6 +65,24 @@ The object should be careful about vending references to `self`—the protocol c
   An interface for handling incoming messages.
 - [class PortMessage](./portmessage.md)
   A low-level, operating system-independent type for inter-application (and inter-thread) messages.
+- [NSConnectionDelegate](./nsconnectiondelegate.md)
+  An interface for interacting with low-level, interprocess connections.
+- [NSConnection](./nsconnection.md)
+  An object that manages the communication between objects in different threads or between a thread and a process running on a local or remote system.
+- [NSDistantObject](./nsdistantobject.md)
+  A proxy for objects in other applications or threads.
+- [NSDistantObjectRequest](./nsdistantobjectrequest.md)
+  An object used by the distributed objects system to help handle invocations between different processes.
+- [NSMachBootstrapServer](./nsmachbootstrapserver.md)
+  A port name server that takes and returns Mach port objects.
+- [NSMessagePortNameServer](./nsmessageportnameserver.md)
+  A server takes and returns message ports.
+- [NSPortCoder](./nsportcoder.md)
+  A coder used to transmit object proxies (and sometimes objects themselves) between connections.
+- [NSPortNameServer](./nsportnameserver.md)
+  An object-oriented interface to the port registration service used by the distributed objects system.
+- [NSSocketPortNameServer](./nssocketportnameserver.md)
+  A port name server that takes and returns socket ports.
 
 
 ---

@@ -36,6 +36,16 @@ var scalesGradientByFrequency: Bool { get }
   A float value that, if set, causes the layer to renormalize the selected embedding vectors to have an Lp norm less than this value.
 - [var pNorm: Float?](./pnorm-8vhw1.md)
   The p of the Lp norm.
+- [embeddingCount](./embeddingcount-5vs5t.md)
+  The size of the dictionary.
+- [embeddingDimension](./embeddingdimension-3u8w7.md)
+  The dimension of embedding vectors.
+- [paddingIndex](./paddingindex-50o5o.md)
+  An unsigned integer value that, if set, causes the layer to initialize the embedding vector at that index to zero.
+- [maximumNorm](./maximumnorm-4mrjj.md)
+  A float value that, if set, causes the layer to renormalize the selected embedding vectors to have an Lp norm less than this value.
+- [pNorm](./pnorm-8mto8.md)
+  The p of the Lp norm.
 
 
 ---

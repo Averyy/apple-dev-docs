@@ -32,6 +32,8 @@ enum VSUserAccountQueryOptions : NSInteger;
 ### Initializing query options
 - [init(rawValue: Int)](./queryoptions/init%28rawvalue%29.md)
   Creates a query option from an integer value you provide.
+- [VSUserAccountQueryNone](../vsuseraccountqueryoptions/vsuseraccountquerynone.md)
+  A constant that indicates fetching user accounts from the user’s current device only.
 
 ## Relationships
 
@@ -49,6 +51,8 @@ enum VSUserAccountQueryOptions : NSInteger;
 
 ### Getting user accounts
 - [func userAccounts(options: VSUserAccountManager.QueryOptions) async throws -> [VSUserAccount]](./useraccounts%28options%29.md)
+  Returns a list of registered user accounts for your app.
+- [- queryUserAccountsWithOptions:completion:](./queryuseraccountswithoptions_completion_.md)
   Returns a list of registered user accounts for your app.
 
 

@@ -65,6 +65,9 @@ This function allows you to specify one or more options to use during capture of
   Returns a Boolean value indicating whether the mouse cursor is visible.
 - [func CGDirectDisplayCopyCurrentMetalDevice(CGDirectDisplayID) -> (any MTLDevice)?](./cgdirectdisplaycopycurrentmetaldevice%28_%29.md)
   Returns the GPU device instance that’s currently driving a display.
+- [CGColorConversionInfoCreateFromList](./cgcolorconversioninfocreatefromlist.md)
+  Creates a conversion between an arbitrary number of specified color spaces.
+- [CGContextDrawPDFDocument](./cgcontextdrawpdfdocument.md)
 
 
 ---

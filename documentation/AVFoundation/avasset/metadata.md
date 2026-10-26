@@ -30,6 +30,20 @@ var metadata: [AVMetadataItem] { get }
 
 You can filter the metadata items by language using the [`metadataItems(from:filteredAndSortedAccordingToPreferredLanguages:)`](../avmetadataitem/metadataitems%28from,filteredandsortedaccordingtopreferredlanguages%29.md) method, or by identifier with the [`metadataItems(from:filteredByIdentifier:)`](../avmetadataitem/metadataitems%28from,filteredbyidentifier%29.md) method.
 
+## See Also
+
+### Accessing metadata
+- [commonMetadata](./commonmetadata.md)
+  The metadata items an asset contains for common metadata identifiers that provide a value.
+- [availableMetadataFormats](./availablemetadataformats.md)
+  The metadata formats this asset contains.
+- [- metadataForFormat:](./metadata%28forformat%29.md)
+  Returns an array of metadata items from the container with the specified format.
+- [creationDate](./creationdate.md)
+  A metadata item that indicates the asset’s creation date.
+- [lyrics](./lyrics.md)
+  The lyrics of the asset in a language suitable for the current locale.
+
 
 ---
 

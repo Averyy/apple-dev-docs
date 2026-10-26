@@ -38,6 +38,8 @@ If ARKit cannot reconcile the recorded world map with the current environment (f
 ### Creating a Configuration
 - [init()](./init%28%29.md)
   Creates a new positional tracking configuration.
+- [+ new](./new.md)
+  Creates a new positional tracking configuration.
 
 
 ---

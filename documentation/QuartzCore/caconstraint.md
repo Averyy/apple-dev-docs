@@ -57,6 +57,8 @@ A minimum of two relationships must be specified per axis. If you specify constr
   Creates and returns an `CAConstraint` object with the specified parameters.
 - [init(attribute: CAConstraintAttribute, relativeTo: String, attribute: CAConstraintAttribute, scale: CGFloat, offset: CGFloat)](./caconstraint/init%28attribute,relativeto,attribute,scale,offset%29.md)
   Returns an `CAConstraint` object with the specified parameters. Designated initializer.
+- [+ constraintWithAttribute:relativeTo:attribute:scale:offset:](./caconstraint/constraintwithattribute_relativeto_attribute_scale_offset_.md)
+  Creates and returns an `CAConstraint` object with the specified parameters.
 ### Accessing Constraint Values
 - [var attribute: CAConstraintAttribute](./caconstraint/attribute.md)
   The attribute the constraint affects.

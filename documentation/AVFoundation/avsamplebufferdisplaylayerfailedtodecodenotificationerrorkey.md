@@ -29,6 +29,8 @@ extern NSString * const AVSampleBufferDisplayLayerFailedToDecodeNotificationErro
 ### Handling errors
 - [static let AVSampleBufferDisplayLayerFailedToDecode: NSNotification.Name](../Foundation/nsnotification/name-swift.struct/avsamplebufferdisplaylayerfailedtodecode.md)
   A notification the system posts when a sample buffer display layer fails to decode.
+- [AVSampleBufferDisplayLayerFailedToDecodeNotification](./avsamplebufferdisplaylayerfailedtodecodenotification.md)
+  A notification the system posts when a sample buffer display layer fails to decode.
 
 
 ---

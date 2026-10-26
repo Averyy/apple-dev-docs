@@ -136,6 +136,20 @@ For more information on adding Accessibility Nutrition Labels to your app, see [
 ### Resources
 - [Specifications](./specifications.md)
   A collection of specification and reference documents related to accessibility technologies on Apple platforms.
+### Variables
+- [AXSpeechAttributeSSML](./axspeechattributessml.md)
+- [AXApplicationAccessibilityEnabledDidChangeNotification](./accessibilitysettings/applicationaccessibilityenableddidchangenotification.md)
+  Posted when the value returned by `AXApplicationAccessibilityEnabled()` changes.
+- [AXPrefersActionSliderAlternativeDidChangeNotification](./accessibilitysettings/prefersactionslideralternativedidchangenotification.md)
+- [AXReduceHighlightingEffectsEnabledDidChangeNotification](./accessibilitysettings/reducehighlightingeffectsenableddidchangenotification.md)
+- [AXShowBordersEnabledStatusDidChangeNotification](./accessibilitysettings/showbordersenabledstatusdidchangenotification.md)
+### Functions
+- [AXOpenSettingsFeatureIsSupported](./axopensettingsfeatureissupported.md)
+- [AXPrefersActionSliderAlternative](./axprefersactionslideralternative.md)
+- [AXShowBordersEnabled](./axshowbordersenabled.md)
+- [AXApplicationAccessibilityEnabled](./accessibilitysettings/isapplicationaccessibilityenabled.md)
+  Returns whether application accessibility is currently enabled for this process.
+- [AXReduceHighlightingEffectsEnabled](./accessibilitysettings/isreducehighlightingeffectsenabled.md)
 
 
 ---

@@ -24,6 +24,8 @@ NSWindowCollectionBehaviorMoveToActiveSpace
 ### Spaces
 - [static var canJoinAllSpaces: NSWindow.CollectionBehavior](./canjoinallspaces.md)
   The window can appear in all spaces.
+- [NSWindowCollectionBehaviorDefault](../../nswindowcollectionbehavior/nswindowcollectionbehaviordefault.md)
+  The window appears in only one space at a time.
 
 
 ---

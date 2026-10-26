@@ -32,6 +32,8 @@ NSEventPhaseCancelled
   The event phase ended.
 - [static var mayBegin: NSEvent.Phase](./maybegin.md)
   The system event phase may begin.
+- [NSEventPhaseNone](../../nseventphase/nseventphasenone.md)
+  The event is not associated with a phase.
 
 
 ---

@@ -53,6 +53,9 @@ protocol URLSessionWebSocketDelegate : URLSessionTaskDelegate
   Creates a WebSocket task given a URL and an array of protocols.
 - [class URLSessionWebSocketTask](./urlsessionwebsockettask.md)
   A URL session task that communicates over the WebSockets protocol standard.
+- [NSURLSessionWebSocketMessage](./nsurlsessionwebsocketmessage.md)
+- [NSURLSessionWebSocketMessageType](./nsurlsessionwebsocketmessagetype.md)
+  An enumeration of the types of messages sent and received.
 
 
 ---

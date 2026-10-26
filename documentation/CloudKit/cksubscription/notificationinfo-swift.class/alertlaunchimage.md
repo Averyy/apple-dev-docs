@@ -41,6 +41,8 @@ If you specify a value, the system uses it to locate an image in the app’s bun
   The key that identifies the localized string for the notification’s action.
 - [var soundName: String?](./soundname.md)
   The filename of the sound file to play when a notification arrives.
+- [alertLocalizationArgs](../../cknotificationinfo/alertlocalizationargs.md)
+  The fields for building a notification’s alert.
 
 
 ---

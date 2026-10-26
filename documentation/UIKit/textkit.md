@@ -26,6 +26,8 @@ When using [`UITextView`](./uitextview.md), access the TextKit engine through th
   A string of text that manages data, layout, and stylistic information for ranges of characters to support rendering.
 - [class NSMutableAttributedString](../Foundation/nsmutableattributedstring.md)
   A mutable string with associated attributes (such as visual style, hyperlinks, or accessibility data) for portions of its text.
+- [TextKit string attributes](./textkit-string-attributes.md)
+  UIKit-specific keys and values for displaying text and managing documents.
 ### Formatting and attributes
 - [class NSParagraphStyle](./nsparagraphstyle.md)
   The paragraph or ruler attributes for an attributed string.

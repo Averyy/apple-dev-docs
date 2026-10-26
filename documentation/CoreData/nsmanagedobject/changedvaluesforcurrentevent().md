@@ -62,6 +62,8 @@ This method only reports changes to properties that are persistent properties of
   Provides an opportunity to add code into the life cycle of the managed object after converting it to a fault.
 - [class func fetchRequest() -> NSFetchRequest<any NSFetchRequestResult>](./fetchrequest%28%29.md)
   Returns an initialized fetch request with the entity this subclass represents.
+- [+ fetchRequest](./fetchrequest.md)
+  Returns an initialized fetch request with the entity this subclass represents.
 
 
 ---

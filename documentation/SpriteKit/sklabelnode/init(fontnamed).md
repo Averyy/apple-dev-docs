@@ -40,6 +40,8 @@ An initialized label object.
   Initializes a new label object with a text string.
 - [convenience init(attributedText: NSAttributedString?)](./init%28attributedtext%29.md)
   Initializes a new label object with an attributed text string.
+- [+ labelNodeWithFontNamed:](./labelnodewithfontnamed_.md)
+  Initializes a new label object.
 
 
 ---

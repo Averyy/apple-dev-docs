@@ -47,6 +47,8 @@ A newly initialized range object.
   Creates and initializes a new range object that specifies only a maximum value.
 - [convenience init(constantValue: CGFloat)](./init%28constantvalue%29.md)
   Creates and initializes a new range object that specifies a constant value.
+- [+ rangeWithLowerLimit:upperLimit:](./rangewithlowerlimit_upperlimit_.md)
+  Creates and initializes a new range object.
 
 
 ---

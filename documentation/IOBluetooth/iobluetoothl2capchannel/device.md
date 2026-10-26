@@ -19,6 +19,12 @@ var device: IOBluetoothDevice! { get }
 @property (retain, readonly) IOBluetoothDevice * device;
 ```
 
+## See Also
+
+### Related Documentation
+- [- getDevice](./getdevice.md)
+  Returns the IOBluetoothDevice to which the target L2CAP channel is open.
+
 
 ---
 

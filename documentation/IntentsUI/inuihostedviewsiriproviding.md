@@ -55,9 +55,9 @@ Implement this protocol in the view controller that you use to present custom co
   Create an Intents UI app extension to customize the interfaces displayed by Siri and Maps.
 - [protocol INUIHostedViewControlling](./inuihostedviewcontrolling.md)
   Methods for presenting custom content in the Siri and Maps interfaces.
-- [class INParameter](https://developer.apple.com/documentation/intents/inparameter)
+- [class INParameter](../Intents/inparameter.md)
   A parameter of an interaction object.
-- [protocol INIntentSetImageKeyPath](https://developer.apple.com/documentation/intents/inintentsetimagekeypath)
+- [protocol INIntentSetImageKeyPath](../Intents/inintentsetimagekeypath.md)
 
 
 ---

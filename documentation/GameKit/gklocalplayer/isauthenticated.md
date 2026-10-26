@@ -46,6 +46,8 @@ var isAuthenticated: Bool { get }
   Generates a signature that you can use to authenticate the local player on your own server.
 - [static let GKPlayerAuthenticationDidChangeNotificationName: NSNotification.Name](../../Foundation/nsnotification/name-swift.struct/gkplayerauthenticationdidchangenotificationname.md)
   A notification that posts after GameKit authenticates the local player.
+- [GKPlayerAuthenticationDidChangeNotificationName](../gkplayerauthenticationdidchangenotificationname.md)
+  A notification that posts after GameKit initializes the local player.
 
 
 ---

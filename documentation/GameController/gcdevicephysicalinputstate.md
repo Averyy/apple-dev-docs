@@ -55,6 +55,16 @@ It’s safe to call any property and method implementation of this protocol from
   The device’s switches as key-value pairs for lookup by name.
 - [subscript(String) -> (any GCPhysicalInputElement)?](./gcdevicephysicalinputstate/subscript%28_%29.md)
   Returns the element that the key specifies.
+- [elements](./gcdevicephysicalinputstate/elements-1shp2.md)
+  The device’s elements as key-value pairs for lookup by name.
+- [axes](./gcdevicephysicalinputstate/axes-80rx.md)
+  The device’s axes as key-value pairs for lookup by name.
+- [buttons](./gcdevicephysicalinputstate/buttons-3257g.md)
+  The device’s buttons as key-value pairs for lookup by name.
+- [dpads](./gcdevicephysicalinputstate/dpads-5yr9x.md)
+  The device’s directional pads as key-value pairs for lookup by name.
+- [switches](./gcdevicephysicalinputstate/switches-6bws2.md)
+  The device’s switches as key-value pairs for lookup by name.
 
 ## Relationships
 

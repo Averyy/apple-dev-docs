@@ -30,6 +30,8 @@ class AVFragmentedAssetMinder
 ### Creating an asset minder
 - [init(asset: any AVAsset & AVFragmentMinding, mindingInterval: TimeInterval)](./avfragmentedassetminder/init%28asset,mindinginterval%29.md)
   Creates a fragmented asset minder that monitors the specified asset at the indicated minding interval.
+- [+ fragmentedAssetMinderWithAsset:mindingInterval:](./avfragmentedassetminder/fragmentedassetminderwithasset_mindinginterval_.md)
+  Creates a fragmented asset minder containing the specified asset and minding interval.
 ### Configuring the minding interval
 - [var mindingInterval: TimeInterval](./avfragmentedassetminder/mindinginterval.md)
   An interval that specifies when to perform a check for additional fragments.

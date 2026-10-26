@@ -47,6 +47,8 @@ In a Scene Kit app, [`CAAnimation`](./caanimation.md) objects support additional
 ### Creating an Animation
 - [init(SCNAnimation: SCNAnimation)](./caanimation/init%28scnanimation%29.md)
   Creates an animation from a SceneKit animation.
+- [+ animation](./caanimation/animation.md)
+  Creates and returns a new `CAAnimation` instance.
 ### Animation Attributes
 - [var isRemovedOnCompletion: Bool](./caanimation/isremovedoncompletion.md)
   Determines if the animation is removed from the target layer’s animations upon completion.

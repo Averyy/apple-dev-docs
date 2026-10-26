@@ -5,6 +5,21 @@
       "file_path": "documentation/Automator/Automator.md",
       "hash": "6c697b828db1f23370cb972f23cb2d7c669ad6872f30c56493bb482df0cad47c"
     },
+    "https://developer.apple.com/documentation/automator/am_returns_nonretained_for_analyzer": {
+      "etag": "\"a6e-65d55deaee413-df\"",
+      "file_path": "documentation/Automator/am_returns_nonretained_for_analyzer.md",
+      "hash": "d5b137fa347f12fbc99f325376a85ae9350f941c5a4f6dc1aa78161c3a218c71"
+    },
+    "https://developer.apple.com/documentation/automator/am_returns_retained_for_analyzer": {
+      "etag": "\"a4a-65d55deb41f90-df\"",
+      "file_path": "documentation/Automator/am_returns_retained_for_analyzer.md",
+      "hash": "36d9b34f2ce9ea7b3ee50c292eb92652e8ec29ab5cef9dd19ba2af15f23d0881"
+    },
+    "https://developer.apple.com/documentation/automator/am_unused_for_analyzer": {
+      "etag": "\"9d2-65d55deb41f90-df\"",
+      "file_path": "documentation/Automator/am_unused_for_analyzer.md",
+      "hash": "987a2197d6dd378eb4a3e39dacdc43979ea5310e01b233a532dbe671d8c6a45d"
+    },
     "https://developer.apple.com/documentation/automator/amaction": {
       "etag": "\"baa5-65d55deb0cb82-df\"",
       "file_path": "documentation/Automator/amaction.md",
@@ -19,6 +34,11 @@
       "etag": "\"1836-65d55deaee413-df\"",
       "file_path": "documentation/Automator/amaction/closed().md",
       "hash": "efa3d7a18a9e1ebac2805fe6a008864adf6d8c2837c0ee4bc546a47e82955792"
+    },
+    "https://developer.apple.com/documentation/automator/amaction/didfinishrunningwitherror:": {
+      "etag": "\"2345-65d55deaee413-df\"",
+      "file_path": "documentation/Automator/amaction/didfinishrunningwitherror_.md",
+      "hash": "7b0928ae48e73a734b8c75d8054c84ce776fa44c05f71c344bd6d49a5f0b375c"
     },
     "https://developer.apple.com/documentation/automator/amaction/finishrunningwitherror(_:)": {
       "etag": "\"3b97-65d55deaee413-df\"",
@@ -49,6 +69,11 @@
       "etag": "\"3ee7-65d55deaee413-df\"",
       "file_path": "documentation/Automator/amaction/isstopped.md",
       "hash": "73907807479bfb8e4370d679bb2088ddedcd4dcdb8e1622a481f0fd0ca700d9f"
+    },
+    "https://developer.apple.com/documentation/automator/amaction/logmessagewithlevel:format:": {
+      "etag": "\"239a-65d55deaee413-df\"",
+      "file_path": "documentation/Automator/amaction/logmessagewithlevel_format_.md",
+      "hash": "b8b7125efeba04491e798598d89e7da113c95975b3693a9e71591a3bfe90301c"
     },
     "https://developer.apple.com/documentation/automator/amaction/name": {
       "etag": "\"3a2b-65d55deaee413-df\"",
@@ -89,6 +114,11 @@
       "etag": "\"459c-65d55deaee413-df\"",
       "file_path": "documentation/Automator/amaction/runasynchronously(withinput).md",
       "hash": "f98ba03dcd775440c7e7d075e43da3d6e0f9a28326daf2f376f1fff0298632d1"
+    },
+    "https://developer.apple.com/documentation/automator/amaction/runwithinput:fromaction:error:": {
+      "etag": "\"3436-65d55deaee413-df\"",
+      "file_path": "documentation/Automator/amaction/runwithinput_fromaction_error_.md",
+      "hash": "1dea805ddb478412aca1c1507de17cd8903364577680e4a909717c0e6a9fa6c9"
     },
     "https://developer.apple.com/documentation/automator/amaction/selectedinputtype": {
       "etag": "\"4074-65d55deaee413-df\"",
@@ -715,6 +745,11 @@
       "file_path": "documentation/Automator/amworkflowcontroller/workflow.md",
       "hash": "c7c179042afdf47cec19e753c9be423aa330f6e8f42f20eeacce8883b02f4f86"
     },
+    "https://developer.apple.com/documentation/automator/amworkflowcontroller/workflowview-c.ivar": {
+      "etag": "\"13f5-65d55deb305df-df\"",
+      "file_path": "documentation/Automator/amworkflowcontroller/workflowview-c.ivar.md",
+      "hash": "6a7a5e80bd909ac797786242c3494008a9149ca6bac89e4cd1139084ac100fd4"
+    },
     "https://developer.apple.com/documentation/automator/amworkflowcontroller/workflowview-swift.property": {
       "etag": "\"1ffe-65d55deb305df-df\"",
       "file_path": "documentation/Automator/amworkflowcontroller/workflowview-swift.property.md",
@@ -795,6 +830,21 @@
       "file_path": "documentation/Automator/Automator.md",
       "hash": "6c697b828db1f23370cb972f23cb2d7c669ad6872f30c56493bb482df0cad47c"
     },
+    "https://developer.apple.com/tutorials/data/documentation/automator/am_returns_nonretained_for_analyzer.json": {
+      "etag": "\"a6e-65d55deaee413-df\"",
+      "file_path": "documentation/Automator/am_returns_nonretained_for_analyzer.md",
+      "hash": "d5b137fa347f12fbc99f325376a85ae9350f941c5a4f6dc1aa78161c3a218c71"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/automator/am_returns_retained_for_analyzer.json": {
+      "etag": "\"a4a-65d55deb41f90-df\"",
+      "file_path": "documentation/Automator/am_returns_retained_for_analyzer.md",
+      "hash": "36d9b34f2ce9ea7b3ee50c292eb92652e8ec29ab5cef9dd19ba2af15f23d0881"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/automator/am_unused_for_analyzer.json": {
+      "etag": "\"9d2-65d55deb41f90-df\"",
+      "file_path": "documentation/Automator/am_unused_for_analyzer.md",
+      "hash": "987a2197d6dd378eb4a3e39dacdc43979ea5310e01b233a532dbe671d8c6a45d"
+    },
     "https://developer.apple.com/tutorials/data/documentation/automator/amaction.json": {
       "etag": "\"baa5-65d55deb0cb82-df\"",
       "file_path": "documentation/Automator/amaction.md",
@@ -809,6 +859,11 @@
       "etag": "\"1836-65d55deaee413-df\"",
       "file_path": "documentation/Automator/amaction/closed().md",
       "hash": "efa3d7a18a9e1ebac2805fe6a008864adf6d8c2837c0ee4bc546a47e82955792"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/automator/amaction/didfinishrunningwitherror:.json": {
+      "etag": "\"2345-65d55deaee413-df\"",
+      "file_path": "documentation/Automator/amaction/didfinishrunningwitherror_.md",
+      "hash": "7b0928ae48e73a734b8c75d8054c84ce776fa44c05f71c344bd6d49a5f0b375c"
     },
     "https://developer.apple.com/tutorials/data/documentation/automator/amaction/finishrunningwitherror(_:).json": {
       "etag": "\"3b97-65d55deaee413-df\"",
@@ -839,6 +894,11 @@
       "etag": "\"3ee7-65d55deaee413-df\"",
       "file_path": "documentation/Automator/amaction/isstopped.md",
       "hash": "73907807479bfb8e4370d679bb2088ddedcd4dcdb8e1622a481f0fd0ca700d9f"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/automator/amaction/logmessagewithlevel:format:.json": {
+      "etag": "\"239a-65d55deaee413-df\"",
+      "file_path": "documentation/Automator/amaction/logmessagewithlevel_format_.md",
+      "hash": "b8b7125efeba04491e798598d89e7da113c95975b3693a9e71591a3bfe90301c"
     },
     "https://developer.apple.com/tutorials/data/documentation/automator/amaction/name.json": {
       "etag": "\"3a2b-65d55deaee413-df\"",
@@ -879,6 +939,11 @@
       "etag": "\"459c-65d55deaee413-df\"",
       "file_path": "documentation/Automator/amaction/runasynchronously(withinput).md",
       "hash": "f98ba03dcd775440c7e7d075e43da3d6e0f9a28326daf2f376f1fff0298632d1"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/automator/amaction/runwithinput:fromaction:error:.json": {
+      "etag": "\"3436-65d55deaee413-df\"",
+      "file_path": "documentation/Automator/amaction/runwithinput_fromaction_error_.md",
+      "hash": "1dea805ddb478412aca1c1507de17cd8903364577680e4a909717c0e6a9fa6c9"
     },
     "https://developer.apple.com/tutorials/data/documentation/automator/amaction/selectedinputtype.json": {
       "etag": "\"4074-65d55deaee413-df\"",
@@ -1505,6 +1570,11 @@
       "file_path": "documentation/Automator/amworkflowcontroller/workflow.md",
       "hash": "c7c179042afdf47cec19e753c9be423aa330f6e8f42f20eeacce8883b02f4f86"
     },
+    "https://developer.apple.com/tutorials/data/documentation/automator/amworkflowcontroller/workflowview-c.ivar.json": {
+      "etag": "\"13f5-65d55deb305df-df\"",
+      "file_path": "documentation/Automator/amworkflowcontroller/workflowview-c.ivar.md",
+      "hash": "6a7a5e80bd909ac797786242c3494008a9149ca6bac89e4cd1139084ac100fd4"
+    },
     "https://developer.apple.com/tutorials/data/documentation/automator/amworkflowcontroller/workflowview-swift.property.json": {
       "etag": "\"1ffe-65d55deb305df-df\"",
       "file_path": "documentation/Automator/amworkflowcontroller/workflowview-swift.property.md",
@@ -1583,8 +1653,8 @@
   },
   "metadata": {
     "render": {
-      "version": 1
+      "version": 2
     },
-    "total_pages": 316
+    "total_pages": 330
   }
 }

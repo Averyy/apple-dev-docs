@@ -145,9 +145,9 @@ The sample accesses the current Focus status in the `requestFocusStatus(completi
     }
 ```
 
-Observe Focus status changes from an Intents app extension. This extension launches in the background to handle interactions between your app and SiriKit. To learn more about Intents app extensions, see [Creating an Intents App Extension](../SiriKit/creating-an-intents-app-extension.md). Ensure your Intents app extension target includes support for [INShareFocusStatusIntent](https://developer.apple.com/documentation/intents/insharefocusstatusintent). The Intents app extension target’s General tab in the project file contains the list of supported intents. Include the class names of all supported intents in the Supported Intents section.
+Observe Focus status changes from an Intents app extension. This extension launches in the background to handle interactions between your app and SiriKit. To learn more about Intents app extensions, see [Creating an Intents App Extension](../SiriKit/creating-an-intents-app-extension.md). Ensure your Intents app extension target includes support for [INShareFocusStatusIntent](../Intents/insharefocusstatusintent.md). The Intents app extension target’s General tab in the project file contains the list of supported intents. Include the class names of all supported intents in the Supported Intents section.
 
-The Intents app extension in the sample handles incoming [INShareFocusStatusIntent](https://developer.apple.com/documentation/intents/insharefocusstatusintent) objects. When doing so, the sample uses the intent itself to access the `isFocused` bool directly instead of using the default `INFocusStatusCenter`.
+The Intents app extension in the sample handles incoming [INShareFocusStatusIntent](../Intents/insharefocusstatusintent.md) objects. When doing so, the sample uses the intent itself to access the `isFocused` bool directly instead of using the default `INFocusStatusCenter`.
 
 ```swift
 /**

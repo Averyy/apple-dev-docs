@@ -36,6 +36,8 @@ class MPSCommandBuffer
 ### Instance Methods
 - [func commitAndContinue()](./mpscommandbuffer/commitandcontinue%28%29.md)
 - [func prefetchHeap(forWorkloadSize: Int)](./mpscommandbuffer/prefetchheap%28forworkloadsize%29.md)
+### Type Methods
+- [+ commandBufferWithCommandBuffer:](./mpscommandbuffer/commandbufferwithcommandbuffer_.md)
 
 ## Relationships
 

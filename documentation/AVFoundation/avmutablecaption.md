@@ -51,6 +51,18 @@ class AVMutableCaption
   Sets a decoration for a range of text.
 - [func removeDecoration(in: NSRange)](./avmutablecaption/removedecoration%28in%29.md)
   Removes a decoration from a range of text.
+- [- setFontStyle:inRange:](./avmutablecaption/setfontstyle_inrange_.md)
+  Sets the font style for a range of text.
+- [- removeFontStyleInRange:](./avmutablecaption/removefontstyleinrange_.md)
+  Removes a font style from a range of text.
+- [- setFontWeight:inRange:](./avmutablecaption/setfontweight_inrange_.md)
+  Sets the font weight for a range of text.
+- [- removeFontWeightInRange:](./avmutablecaption/removefontweightinrange_.md)
+  Removes a font weight from a range of text.
+- [- setDecoration:inRange:](./avmutablecaption/setdecoration_inrange_.md)
+  Sets a decoration for a range of text.
+- [- removeDecorationInRange:](./avmutablecaption/removedecorationinrange_.md)
+  Removes a decoration from a range of text.
 ### Configuring colors
 - [func setTextColor(CGColor, in: NSRange)](./avmutablecaption/settextcolor%28_,in%29.md)
   Sets the text color for a range of text.
@@ -59,6 +71,14 @@ class AVMutableCaption
 - [func setBackgroundColor(CGColor, in: NSRange)](./avmutablecaption/setbackgroundcolor%28_,in%29.md)
   Sets the background color for a range of text.
 - [func removeBackgroundColor(in: NSRange)](./avmutablecaption/removebackgroundcolor%28in%29.md)
+  Removes a background color from a range of text.
+- [- setTextColor:inRange:](./avmutablecaption/settextcolor_inrange_.md)
+  Sets the text color for a range of text.
+- [- removeTextColorInRange:](./avmutablecaption/removetextcolorinrange_.md)
+  Removes the text color for a range of text.
+- [- setBackgroundColor:inRange:](./avmutablecaption/setbackgroundcolor_inrange_.md)
+  Sets the background color for a range of text.
+- [- removeBackgroundColorInRange:](./avmutablecaption/removebackgroundcolorinrange_.md)
   Removes a background color from a range of text.
 ### Configuring alignment
 - [var textAlignment: AVCaption.TextAlignment](./avmutablecaption/textalignment.md)
@@ -83,6 +103,14 @@ class AVMutableCaption
   Sets text combine for a range.
 - [func removeTextCombine(in: NSRange)](./avmutablecaption/removetextcombine%28in%29.md)
   Removes text combine from a range.
+- [- setRuby:inRange:](./avmutablecaption/setruby_inrange_.md)
+  Sets ruby text for a range.
+- [- removeRubyInRange:](./avmutablecaption/removerubyinrange_.md)
+  Removes ruby text from a range.
+- [- setTextCombine:inRange:](./avmutablecaption/settextcombine_inrange_.md)
+  Sets text combine for a range.
+- [- removeTextCombineInRange:](./avmutablecaption/removetextcombineinrange_.md)
+  Removes text combine from a range of text.
 
 ## Relationships
 

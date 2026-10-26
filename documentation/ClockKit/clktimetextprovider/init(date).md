@@ -38,6 +38,10 @@ The text provider created by this method uses the default time zone information 
 ### Creating a Text Provider
 - [convenience init(date: Date, timeZone: TimeZone?)](./init%28date,timezone%29.md)
   Creates and returns a text provider for displaying the specified time.
+- [- initWithDate:](./initwithdate_.md)
+  Creates and returns a text provider for displaying the specified time.
+- [- initWithDate:timeZone:](./initwithdate_timezone_.md)
+  Creates and returns a text provider for displaying the specified time.
 
 
 ---

@@ -67,6 +67,10 @@ If you implement a custom URL protocol by subclassing [`URLProtocol`](./urlproto
   Creates a URL request for a specified URL.
 - [init(url: URL, cachePolicy: NSURLRequest.CachePolicy, timeoutInterval: TimeInterval)](./nsurlrequest/init%28url,cachepolicy,timeoutinterval%29-2giyj.md)
   Creates a URL request with the specified URL, cache policy, and timeout values.
+- [+ requestWithURL:](./nsurlrequest/requestwithurl_.md)
+  Creates and returns a URL request for a specified URL.
+- [+ requestWithURL:cachePolicy:timeoutInterval:](./nsurlrequest/requestwithurl_cachepolicy_timeoutinterval_.md)
+  Creates and returns an initialized URL request with specified URL, cache policy, and timeout values.
 ### Working with a cache policy
 - [var cachePolicy: NSURLRequest.CachePolicy](./nsurlrequest/cachepolicy-swift.property.md)
   The request’s cache policy.

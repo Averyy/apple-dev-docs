@@ -109,6 +109,12 @@ typedef NSString * PKPaymentNetwork;
 - [static let ruPay: PKPaymentNetwork](./pkpaymentnetwork/rupay.md)
 - [static let uzCard: PKPaymentNetwork](./pkpaymentnetwork/uzcard.md)
 - [static let verve: PKPaymentNetwork](./pkpaymentnetwork/verve.md)
+### Macros
+- [PKAutomaticReloadPaymentRequest_h](./pkautomaticreloadpaymentrequest_h.md)
+- [PKAutomaticReloadPaymentSummaryItem_h](./pkautomaticreloadpaymentsummaryitem_h.md)
+- [PKCONSTANTS_H](./pkconstants_h.md)
+- [PKPaymentTokenContext_h](./pkpaymenttokencontext_h.md)
+- [PKRecurringPaymentRequest_h](./pkrecurringpaymentrequest_h.md)
 
 ## Relationships
 

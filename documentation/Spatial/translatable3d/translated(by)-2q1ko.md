@@ -1,0 +1,25 @@
+# translated(by:)
+
+**Framework**: Spatial  
+**Kind**: method  
+**Role**: Instance Method
+
+**Availability**:
+- iOS 16.0+
+- iPadOS 16.0+
+- Mac Catalyst 16.0+
+- macOS 13.0+
+- tvOS 16.0+
+- visionOS
+- watchOS 9.0+
+
+## Declaration
+
+```swift
+func translated(by vector: Vector3D) -> Self
+```
+
+
+---
+
+*[View on Apple Developer](https://developer.apple.com/documentation/spatial/translatable3d/translated(by:)-2q1ko)*

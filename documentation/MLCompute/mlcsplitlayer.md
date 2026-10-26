@@ -30,12 +30,16 @@ class MLCSplitLayer
   Creates a split layer with the number of splits and dimension you specify.
 - [convenience init(splitSectionLengths: [Int], dimension: Int)](./mlcsplitlayer/init%28splitsectionlengths,dimension%29.md)
   Creates a split layer with the lengths of each split section and dimension you specify.
+- [+ layerWithSplitSectionLengths:dimension:](./mlcsplitlayer/layerwithsplitsectionlengths_dimension_.md)
+  Creates a split layer with the lengths of each split section and dimension you specify.
 ### Inspecting Split Layers
 - [var dimension: Int](./mlcsplitlayer/dimension.md)
   The dimension or axis along which to split the tensor.
 - [var splitCount: Int](./mlcsplitlayer/splitcount.md)
   The number of splits.
 - [var splitSectionLengths: [Int]?](./mlcsplitlayer/splitsectionlengths-5abch.md)
+  An array that contains the lengths of each split section.
+- [splitSectionLengths](./mlcsplitlayer/splitsectionlengths-32abw.md)
   An array that contains the lengths of each split section.
 
 ## Relationships

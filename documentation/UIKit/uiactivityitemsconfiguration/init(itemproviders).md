@@ -27,6 +27,10 @@ init(itemProviders: [NSItemProvider])
 ### Creating an activity items configuration
 - [init(objects: [any NSItemProviderWriting])](./init%28objects%29.md)
   Initializes and returns an activity items configuration with the specified objects.
+- [+ activityItemsConfigurationWithObjects:](./activityitemsconfigurationwithobjects_.md)
+  Creates an activity items configuration with the specified objects.
+- [+ activityItemsConfigurationWithItemProviders:](./activityitemsconfigurationwithitemproviders_.md)
+  Creates an activity items configuration with the specified item providers.
 
 
 ---

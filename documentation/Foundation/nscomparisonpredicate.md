@@ -40,6 +40,10 @@ Use comparison predicates to compare the results of two expressions. You create 
   Creates a predicate to a specified type that you form by combining specified left and right expressions using a specified modifier and options.
 - [init?(coder: NSCoder)](./nscomparisonpredicate/init%28coder%29.md)
   Creates a predicate by decoding from the coder you specify.
+- [+ predicateWithLeftExpression:rightExpression:customSelector:](./nscomparisonpredicate/predicatewithleftexpression_rightexpression_customselector_.md)
+  Returns a new predicate formed by combining the left and right expressions using a given selector.
+- [+ predicateWithLeftExpression:rightExpression:modifier:type:options:](./nscomparisonpredicate/predicatewithleftexpression_rightexpression_modifier_type_options_.md)
+  Creates and returns a predicate of a given type formed by combining given left and right expressions using a given modifier and options.
 ### Getting Information About a Comparison Predicate
 - [var comparisonPredicateModifier: NSComparisonPredicate.Modifier](./nscomparisonpredicate/comparisonpredicatemodifier.md)
   The comparison predicate modifier for the receiver.

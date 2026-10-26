@@ -166,6 +166,8 @@ If you implement custom inter-property validation methods like [`validateForUpda
   Provides an opportunity to add code into the life cycle of the managed object after converting it to a fault.
 - [class func fetchRequest() -> NSFetchRequest<any NSFetchRequestResult>](./nsmanagedobject/fetchrequest%28%29.md)
   Returns an initialized fetch request with the entity this subclass represents.
+- [+ fetchRequest](./nsmanagedobject/fetchrequest.md)
+  Returns an initialized fetch request with the entity this subclass represents.
 ### Supporting Key-Value Coding
 - [func value(forKey: String) -> Any?](./nsmanagedobject/value%28forkey%29.md)
   Returns the value for the property specified by `key`.

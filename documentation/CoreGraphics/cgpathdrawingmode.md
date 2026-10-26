@@ -64,6 +64,10 @@ You can pass a path drawing mode constant to the function [`drawPath(using:)`](.
   Paints the area within the current path, as determined by the specified fill rule.
 - [func strokePath()](./cgcontext/strokepath%28%29.md)
   Paints a line along the current path.
+- [CGContextEOFillPath](./cgcontexteofillpath.md)
+  Paints the area within the current path, using the even-odd fill rule.
+- [CGContextFillPath](./cgcontextfillpath.md)
+  Paints the area within the current path, using the nonzero winding number rule.
 
 
 ---

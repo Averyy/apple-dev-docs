@@ -133,6 +133,8 @@ For design guidance, see [Human Interface Guidelines > Notifications](https://de
   Add background notifications to your app by using the UserNotifications framework.
 ### Classes
 - [class UNNotificationAttributedMessageContext](./unnotificationattributedmessagecontext.md)
+### Reference
+- [UserNotifications Constants](./usernotifications-constants.md)
 
 
 ---

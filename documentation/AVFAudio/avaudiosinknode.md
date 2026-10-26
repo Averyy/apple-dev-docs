@@ -42,6 +42,7 @@ An audio sink node doesn’t support manual rendering mode, and doesn’t have a
   A block that receives audio data from an audio sink node.
 - [init(receiverBlock: AVAudioSinkNodeReceiverBlock)](./avaudiosinknode/init%28receiverblock%29.md)
   Creates an audio sink node with a block that receives audio data.
+- [- initWithRealtimeSafeReceiverBlock:](./avaudiosinknode/initwithrealtimesafereceiverblock_.md)
 
 ## Relationships
 
@@ -66,6 +67,8 @@ An audio sink node doesn’t support manual rendering mode, and doesn’t have a
   Add offline audio processing features to your app by enabling offline manual rendering mode.
 - [class AVAudioSourceNode](./avaudiosourcenode.md)
   An object that supplies audio data.
+- [AVAudioSourceNodeRenderBlockRealtimeSafe](./avaudiosourcenoderenderblockrealtimesafe.md)
+- [AVAudioSinkNodeReceiverBlockRealtimeSafe](./avaudiosinknodereceiverblockrealtimesafe.md)
 
 
 ---

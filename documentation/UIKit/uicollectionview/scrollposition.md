@@ -38,6 +38,8 @@ enum UICollectionViewScrollPosition : NSUInteger;
   Scroll so that the item is centered horizontally in the collection view.
 - [static var right: UICollectionView.ScrollPosition](./scrollposition/right.md)
   Scroll so that the item is positioned at the right edge of the collection view’s bounds.
+- [UICollectionViewScrollPositionNone](../uicollectionviewscrollposition/uicollectionviewscrollpositionnone.md)
+  Don’t scroll the item into view.
 ### Initializers
 - [init(rawValue: UInt)](./scrollposition/init%28rawvalue%29.md)
   Creates a scroll-position structure with the specified raw value.

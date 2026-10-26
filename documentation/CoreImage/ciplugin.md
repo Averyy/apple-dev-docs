@@ -37,6 +37,8 @@ An image unit is an image processing bundle that contains one or more Core Image
   Scans directories for files that have the `.plugin` extension and then loads the image units.
 - [class func load(URL!, allowExecutableCode: Bool)](./ciplugin/load%28_,allowexecutablecode%29.md)
   Loads filters from an image unit that have the appropriate executable status.
+- [+ loadPlugIn:allowNonExecutable:](./ciplugin/loadplugin_allownonexecutable_.md)
+  Loads filters from an image unit that have the appropriate executable status.
 
 ## Relationships
 

@@ -48,6 +48,10 @@ extern CGColorSpaceRefCGColorSpaceGetBaseColorSpace(CGColorSpaceRef space);
   Returns a Boolean indicating whether the color space can be used as a destination color space.
 - [var isWideGamutRGB: Bool](./iswidegamutrgb.md)
   Returns whether the RGB color space covers a significant portion of the NTSC color gamut.
+- [CGColorSpaceGetColorTable](../cgcolorspacegetcolortable.md)
+  Copies the entries in the color table of an indexed color space.
+- [CGColorSpaceGetColorTableCount](../cgcolorspacegetcolortablecount.md)
+  Returns the number of entries in the color table of an indexed color space.
 
 
 ---

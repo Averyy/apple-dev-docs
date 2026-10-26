@@ -112,6 +112,10 @@ For example, you can display details on their friends leaderboard scores to a pl
   A notification that posts after GameKit authenticates the local player.
 - [static let GKPlayerDidChangeNotificationName: NSNotification.Name](../Foundation/nsnotification/name-swift.struct/gkplayerdidchangenotificationname.md)
   A notification that posts when a player object’s data changes.
+- [GKPlayerAuthenticationDidChangeNotificationName](./gkplayerauthenticationdidchangenotificationname.md)
+  A notification that posts after GameKit initializes the local player.
+- [GKPlayerDidChangeNotificationName](./gkplayerdidchangenotificationname.md)
+  A notification that posts when a player object’s data changes.
 
 
 ---

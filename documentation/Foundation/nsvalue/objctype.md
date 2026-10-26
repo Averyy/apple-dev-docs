@@ -38,6 +38,8 @@ This property provides the same string produced by the `@encode()` compiler dire
   Creates a value object containing the specified value, interpreted with the specified Objective-C type.
 - [func getValue(UnsafeMutableRawPointer)](./getvalue%28_%29.md)
   Copies the value into the specified buffer.
+- [+ valueWithBytes:objCType:](./valuewithbytes_objctype_.md)
+  Creates a value object containing the specified value, interpreted with the specified Objective-C type.
 
 
 ---

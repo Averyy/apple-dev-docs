@@ -44,6 +44,8 @@ The label node’s font is set to Helvetica Neue Ultra Light, 32 point.
   Initializes a new label object with a specified font.
 - [convenience init(attributedText: NSAttributedString?)](./init%28attributedtext%29.md)
   Initializes a new label object with an attributed text string.
+- [+ labelNodeWithFontNamed:](./labelnodewithfontnamed_.md)
+  Initializes a new label object.
 
 
 ---

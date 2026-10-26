@@ -33,6 +33,10 @@ The system supports the following value types: [`NSDictionary`](../../Foundation
 ### Creating a Property State
 - [init(value: ObjectType?, attributes: CMIOExtensionPropertyAttributes<ObjectType>?)](./init%28value,attributes%29.md)
   Creates a property state with a value and attributes.
+- [+ propertyStateWithValue:](./propertystatewithvalue_.md)
+  Returns a new property state with a value.
+- [+ propertyStateWithValue:attributes:](./propertystatewithvalue_attributes_.md)
+  Returns a new property state with a value and attributes.
 
 
 ---

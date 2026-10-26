@@ -30,6 +30,11 @@
       "file_path": "documentation/CoreVideo/corevideo_false.md",
       "hash": "f55fc4190e1d0ef19b8c3da22fa95b0786ced9bd0bfd20f54c8f61c8049d50d3"
     },
+    "https://developer.apple.com/documentation/corevideo/corevideo_gl_deprecated": {
+      "etag": "\"25ce-65d55dfc7ee19-df\"",
+      "file_path": "documentation/CoreVideo/corevideo_gl_deprecated.md",
+      "hash": "5213532518ae596f9f3fecbb6f5794fdb0d38a22a4043c0f1eae05d9cddbff9e"
+    },
     "https://developer.apple.com/documentation/corevideo/corevideo_supports_colorspace": {
       "etag": "\"604b-65d55dfe3c595-df\"",
       "file_path": "documentation/CoreVideo/corevideo_supports_colorspace.md",
@@ -99,6 +104,66 @@
       "etag": "\"5f42-65d55dfc461ce-df\"",
       "file_path": "documentation/CoreVideo/corevideo_use_eaglcontext_class_in_api.md",
       "hash": "5bd2a75cd2b83fb4a7ab5e88c3700ed2909eb9eca47eb48b1ecc60dc5082473b"
+    },
+    "https://developer.apple.com/documentation/corevideo/cv_bridged_type": {
+      "etag": "\"2516-65d55dfdd5578-df\"",
+      "file_path": "documentation/CoreVideo/cv_bridged_type.md",
+      "hash": "10e5b28042a0e10c81aff15ffdf07d32d2a5ff07c5bb744266c4eee8a5b8252f"
+    },
+    "https://developer.apple.com/documentation/corevideo/cv_export": {
+      "etag": "\"2495-65d55dfe3c595-df\"",
+      "file_path": "documentation/CoreVideo/cv_export.md",
+      "hash": "8ae946c4efee9b3e5258199e3350e9f0ff91835988458c14217d4552b25d3f98"
+    },
+    "https://developer.apple.com/documentation/corevideo/cv_inline": {
+      "etag": "\"2495-65d55dfd80224-df\"",
+      "file_path": "documentation/CoreVideo/cv_inline.md",
+      "hash": "8f358227efd872a2fb81cee1bc5723c0a6c17f031bbe67720b602a2e75b7912a"
+    },
+    "https://developer.apple.com/documentation/corevideo/cv_internal": {
+      "etag": "\"24a1-65d55dfc461ce-df\"",
+      "file_path": "documentation/CoreVideo/cv_internal.md",
+      "hash": "8a65d1f0bca1d56acba6895426104591dc33663dc905fd77314831bb216d8bbe"
+    },
+    "https://developer.apple.com/documentation/corevideo/cv_nonnull": {
+      "etag": "\"249b-65d55dfd3365d-df\"",
+      "file_path": "documentation/CoreVideo/cv_nonnull.md",
+      "hash": "5830af4e514b70589a8db6fe9dba10640345614eef4ab3a7ff4c6a20e5ee4d8c"
+    },
+    "https://developer.apple.com/documentation/corevideo/cv_nullable": {
+      "etag": "\"24a1-65d55dfe2477f-df\"",
+      "file_path": "documentation/CoreVideo/cv_nullable.md",
+      "hash": "0a163f7ba7445a8c448ee570e7ded641d069b25aac47a6c58e6834945db5d9c5"
+    },
+    "https://developer.apple.com/documentation/corevideo/cv_releases_argument": {
+      "etag": "\"24d7-65d55dfd3365d-df\"",
+      "file_path": "documentation/CoreVideo/cv_releases_argument.md",
+      "hash": "75a69ee84ac31dc80f08e1f9f40d7d65b62e7b47e0a5635cf1e63e188d19d249"
+    },
+    "https://developer.apple.com/documentation/corevideo/cv_returns_not_retained": {
+      "etag": "\"24e9-65d55dfd3365d-df\"",
+      "file_path": "documentation/CoreVideo/cv_returns_not_retained.md",
+      "hash": "9eb5786a9b6fd07e1bafc7524f48fe24f99379339991adefbd00090dcc661034"
+    },
+    "https://developer.apple.com/documentation/corevideo/cv_returns_retained": {
+      "etag": "\"24d1-65d55dfce9a73-df\"",
+      "file_path": "documentation/CoreVideo/cv_returns_retained.md",
+      "hash": "f5ceb747c771e13d74b8ec8cfcc23b5e30bd32e1791524b5234c8f92cb067602"
+    },
+    "https://developer.apple.com/documentation/corevideo/cv_returns_retained_parameter": {
+      "etag": "\"250d-65d55dfdb4f2b-df\"",
+      "file_path": "documentation/CoreVideo/cv_returns_retained_parameter.md",
+      "hash": "4ed0dfd9785b329d411107d1b6e5875334b1f3b75eb4786b17b1fa9f84cbb28a"
+    },
+    "https://developer.apple.com/documentation/corevideo/cv_swift_nonsendable": {
+      "etag": "\"24d7-65d55dfce9a73-df\"",
+      "file_path": "documentation/CoreVideo/cv_swift_nonsendable.md",
+      "hash": "549ce1b507c66b1788b8cc9cd52f04f25fe7cf85ff3b27368ad501a44e3e8bf2"
+    },
+    "https://developer.apple.com/documentation/corevideo/cv_swift_sendable": {
+      "etag": "\"24b3-65d55dfd3365d-df\"",
+      "file_path": "documentation/CoreVideo/cv_swift_sendable.md",
+      "hash": "a1c9b54c4fd3650f95985a713d58b5d660c90f50ee7a7a72b9d46a3091332e67"
     },
     "https://developer.apple.com/documentation/corevideo/cvattachmentaccess": {
       "etag": "\"6649-65d55dfe0ad31-df\"",
@@ -585,6 +650,11 @@
       "file_path": "documentation/CoreVideo/cvbufferpropagateattachments(_,_).md",
       "hash": "f93ca2e2b684e238a4c887d0d295becb3233f385a65eb741b3b476e4d14264b3"
     },
+    "https://developer.apple.com/documentation/corevideo/cvbufferrelease": {
+      "etag": "\"1853-65d55dfcff520-df\"",
+      "file_path": "documentation/CoreVideo/cvbufferrelease.md",
+      "hash": "1dc8bb3cbac07939228555a6bf501d9cafd1021515aaf949b25593cc83d87faa"
+    },
     "https://developer.apple.com/documentation/corevideo/cvbufferremoveallattachments(_:)": {
       "etag": "\"5849-65d55dfe2477f-df\"",
       "file_path": "documentation/CoreVideo/cvbufferremoveallattachments(_).md",
@@ -610,6 +680,11 @@
       "file_path": "documentation/CoreVideo/cvbufferrepresentable/withunsafebuffer(_).md",
       "hash": "b9ed5278f1222c82c44cb5af0aeb260538848cda6c0558d3653e4ab14769b34a"
     },
+    "https://developer.apple.com/documentation/corevideo/cvbufferretain": {
+      "etag": "\"1931-65d55dfe0ad31-df\"",
+      "file_path": "documentation/CoreVideo/cvbufferretain.md",
+      "hash": "bc387f28c36cca668330f8c766c2417a6e90ad029c0351b7b55b1512e475b92b"
+    },
     "https://developer.apple.com/documentation/corevideo/cvbuffersetattachment(_:_:_:_:)": {
       "etag": "\"897d-65d55dfdd5578-df\"",
       "file_path": "documentation/CoreVideo/cvbuffersetattachment(_,_,_,_).md",
@@ -629,6 +704,26 @@
       "etag": "\"5412-65d55dfe2477f-df\"",
       "file_path": "documentation/CoreVideo/cvcolorprimariesgetstringforintegercodepoint(_).md",
       "hash": "11b787f228bc8729380575952f40d150f04619499b40ee34405089c33472cf08"
+    },
+    "https://developer.apple.com/documentation/corevideo/cvdirect3d": {
+      "etag": "\"249b-65d55dfc461ce-df\"",
+      "file_path": "documentation/CoreVideo/cvdirect3d.md",
+      "hash": "8018fd1497836a8cd4b6beef173c406f118682932e98cf737c0d633943cd7ef1"
+    },
+    "https://developer.apple.com/documentation/corevideo/cvdirect3ddevice": {
+      "etag": "\"24bf-65d55dfd66310-df\"",
+      "file_path": "documentation/CoreVideo/cvdirect3ddevice.md",
+      "hash": "3dd9a307873c4f1f9a0c3f7b084949ccd12d9296bf85f0e99e2186cbb37214d3"
+    },
+    "https://developer.apple.com/documentation/corevideo/cvdirect3dsurface": {
+      "etag": "\"24c5-65d55dfdf52f5-df\"",
+      "file_path": "documentation/CoreVideo/cvdirect3dsurface.md",
+      "hash": "51e169594cb7bc2cfc8c3d96de6bee72943f249c8557c64ebab8bc737b62db41"
+    },
+    "https://developer.apple.com/documentation/corevideo/cvdirect3dtexture": {
+      "etag": "\"24c5-65d55dfc110b8-df\"",
+      "file_path": "documentation/CoreVideo/cvdirect3dtexture.md",
+      "hash": "6c14efb301084ab999d38100f0ce989189b45d760473616bfb20d58db8bd79cd"
     },
     "https://developer.apple.com/documentation/corevideo/cvdisplaylink": {
       "etag": "\"1e29-65d55dfd9afd1-df\"",
@@ -704,6 +799,16 @@
       "etag": "\"4c81-65d55dfe3c595-df\"",
       "file_path": "documentation/CoreVideo/cvdisplaylinkoutputhandler.md",
       "hash": "03d18908b0beb6a899e65c2289768e4baae88a2dd255fd66dddecd3b444d1aab"
+    },
+    "https://developer.apple.com/documentation/corevideo/cvdisplaylinkrelease": {
+      "etag": "\"1444-65d55dfe3c595-df\"",
+      "file_path": "documentation/CoreVideo/cvdisplaylinkrelease.md",
+      "hash": "1c42eb3974e697a5c7d2882abf161145ebefce0c4ed7b83118aee1ac2f0d5a54"
+    },
+    "https://developer.apple.com/documentation/corevideo/cvdisplaylinkretain": {
+      "etag": "\"1592-65d55dfd4e790-df\"",
+      "file_path": "documentation/CoreVideo/cvdisplaylinkretain.md",
+      "hash": "205fb1b2ff0fa7a48fa3f43972c8014709109ce3d5d3dfb110464858d07cf68a"
     },
     "https://developer.apple.com/documentation/corevideo/cvdisplaylinksetcurrentcgdisplay(_:_:)": {
       "etag": "\"4ddd-65d55dfccceb7-df\"",
@@ -1800,6 +1905,26 @@
       "file_path": "documentation/CoreVideo/cvopenglbufferpoolgettypeid().md",
       "hash": "784cfc73072474a14ef4c3e4da06fdd331af73edeab6f8252a75ee63ab39b3f8"
     },
+    "https://developer.apple.com/documentation/corevideo/cvopenglbufferpoolrelease": {
+      "etag": "\"35d7-65d55dfc9dd54-df\"",
+      "file_path": "documentation/CoreVideo/cvopenglbufferpoolrelease.md",
+      "hash": "7e1ffa280a40d59acf4a8bf12ae32dc10bf8b7ca256ccf3622bd1ddd4371bae5"
+    },
+    "https://developer.apple.com/documentation/corevideo/cvopenglbufferpoolretain": {
+      "etag": "\"3721-65d55dfdf52f5-df\"",
+      "file_path": "documentation/CoreVideo/cvopenglbufferpoolretain.md",
+      "hash": "d7a2883e9b3167e53b3b6acf3f48b6303235f375c1910ef117784682623ec19e"
+    },
+    "https://developer.apple.com/documentation/corevideo/cvopenglbufferrelease": {
+      "etag": "\"2e27-65d55dfe4df82-df\"",
+      "file_path": "documentation/CoreVideo/cvopenglbufferrelease.md",
+      "hash": "42897e1454fa1280d3e098511c39eee99e61d6752e02edef282a58a6fa41cb59"
+    },
+    "https://developer.apple.com/documentation/corevideo/cvopenglbufferretain": {
+      "etag": "\"2f58-65d55dfd9afd1-df\"",
+      "file_path": "documentation/CoreVideo/cvopenglbufferretain.md",
+      "hash": "57cb6cbbd0ed10814b5bda31ccc93f62c72943b11f093da7ac869ff0f316f4a2"
+    },
     "https://developer.apple.com/documentation/corevideo/cvopenglestexture": {
       "etag": "\"1f6e-65d55dfd9afd1-df\"",
       "file_path": "documentation/CoreVideo/cvopenglestexture.md",
@@ -1915,6 +2040,16 @@
       "file_path": "documentation/CoreVideo/cvopengltexturecachegettypeid().md",
       "hash": "409ff8a007e3aa5f06b316ce3959431e160b4d13cc6b4607cb55ccf946ff1614"
     },
+    "https://developer.apple.com/documentation/corevideo/cvopengltexturecacherelease": {
+      "etag": "\"3548-65d55dfd9afd1-df\"",
+      "file_path": "documentation/CoreVideo/cvopengltexturecacherelease.md",
+      "hash": "5f8346bb37c9b230b201ca85ee4cb407055f90e31b70ec05c79f47f55bed4632"
+    },
+    "https://developer.apple.com/documentation/corevideo/cvopengltexturecacheretain": {
+      "etag": "\"35a4-65d55dfe0ad31-df\"",
+      "file_path": "documentation/CoreVideo/cvopengltexturecacheretain.md",
+      "hash": "3b76501d219bfd771b48c62a821735d2b469f1d3869679b688dbba695dc4d121"
+    },
     "https://developer.apple.com/documentation/corevideo/cvopengltexturegetcleantexcoords(_:_:_:_:_:)": {
       "etag": "\"6343-65d55dfdf52f5-df\"",
       "file_path": "documentation/CoreVideo/cvopengltexturegetcleantexcoords(_,_,_,_,_).md",
@@ -1939,6 +2074,16 @@
       "etag": "\"4175-65d55dfe4df82-df\"",
       "file_path": "documentation/CoreVideo/cvopengltextureisflipped(_).md",
       "hash": "4ed2520b4ca6ea379491f185a071f916e7a048fa3c94d9f675ec9db0db2cce00"
+    },
+    "https://developer.apple.com/documentation/corevideo/cvopengltexturerelease": {
+      "etag": "\"158c-65d55dfc110b8-df\"",
+      "file_path": "documentation/CoreVideo/cvopengltexturerelease.md",
+      "hash": "4a767f656753280817f1ae3dbae3c53bfe5249d171ea09fcc93b396e3f0cd36b"
+    },
+    "https://developer.apple.com/documentation/corevideo/cvopengltextureretain": {
+      "etag": "\"16cd-65d55dfe4df82-df\"",
+      "file_path": "documentation/CoreVideo/cvopengltextureretain.md",
+      "hash": "e09de9d432f51736b3a5bb124085038dac482cb16c0462ca3f076ed432ead526"
     },
     "https://developer.apple.com/documentation/corevideo/cvoptionflags": {
       "etag": "\"1e1c-65d55dfdd5578-df\"",
@@ -2380,6 +2525,21 @@
       "file_path": "documentation/CoreVideo/cvpixelbufferpoolgettypeid().md",
       "hash": "2bc4e45b5c90174e8d715dd7e5542f1ee09653f8e938bd69c1f18612c48d02f4"
     },
+    "https://developer.apple.com/documentation/corevideo/cvpixelbufferpoolrelease": {
+      "etag": "\"18c6-65d55dfdd5578-df\"",
+      "file_path": "documentation/CoreVideo/cvpixelbufferpoolrelease.md",
+      "hash": "d38d53ea78c70387b556068695ac316768a6e3abb680ed66166389cab3e4715c"
+    },
+    "https://developer.apple.com/documentation/corevideo/cvpixelbufferpoolretain": {
+      "etag": "\"1a05-65d55dfe0ad31-df\"",
+      "file_path": "documentation/CoreVideo/cvpixelbufferpoolretain.md",
+      "hash": "48d79f9ed04ce700139a412e37185efeedd2031fa8f0206c2f6ae254ff412fea"
+    },
+    "https://developer.apple.com/documentation/corevideo/cvpixelbufferrelease": {
+      "etag": "\"15f4-65d55dfc7ee19-df\"",
+      "file_path": "documentation/CoreVideo/cvpixelbufferrelease.md",
+      "hash": "7a6bcaac6d580cac8e442f6a123327490886e8528428c193cf4b8a016ee73021"
+    },
     "https://developer.apple.com/documentation/corevideo/cvpixelbufferreleasebytescallback": {
       "etag": "\"4a87-65d55dfd80224-df\"",
       "file_path": "documentation/CoreVideo/cvpixelbufferreleasebytescallback.md",
@@ -2459,6 +2619,11 @@
       "etag": "\"1b22-65d55dfc461ce-df\"",
       "file_path": "documentation/CoreVideo/cvpixelbufferrepresentable/withunsafebackingiosurfaceifpresent(_).md",
       "hash": "7a9c3cd357d724394d21cf1101aff6ad8a429b1e55e2dbb37c82c487f37f759c"
+    },
+    "https://developer.apple.com/documentation/corevideo/cvpixelbufferretain": {
+      "etag": "\"1727-65d55dfc9dd54-df\"",
+      "file_path": "documentation/CoreVideo/cvpixelbufferretain.md",
+      "hash": "78c8b9c999351ca2bd5918c6e50ca4ca8ecfd685e5fd6744bebd8d0760258fdc"
     },
     "https://developer.apple.com/documentation/corevideo/cvpixelbufferunlockbaseaddress(_:_:)": {
       "etag": "\"4c02-65d55dfd3365d-df\"",
@@ -3820,6 +3985,11 @@
       "file_path": "documentation/CoreVideo/kcvimagebuffersceneilluminationkey.md",
       "hash": "e96cbc54997887b31a136399f2b5fc21634cfaaca105521a2c2dff76ffae5d1e"
     },
+    "https://developer.apple.com/documentation/corevideo/kcvimagebuffertransferfunction_ebu_3213": {
+      "etag": "\"43bd-65d55dfe2477f-df\"",
+      "file_path": "documentation/CoreVideo/kcvimagebuffertransferfunction_ebu_3213.md",
+      "hash": "05015384f459a5b2027e3d1005e7108c9594ff2129fdb9fda3c3620e0060e178"
+    },
     "https://developer.apple.com/documentation/corevideo/kcvimagebuffertransferfunction_itu_r_2020": {
       "etag": "\"4fbb-65d55dfd190bd-df\"",
       "file_path": "documentation/CoreVideo/kcvimagebuffertransferfunction_itu_r_2020.md",
@@ -3844,6 +4014,11 @@
       "etag": "\"5007-65d55dfcff520-df\"",
       "file_path": "documentation/CoreVideo/kcvimagebuffertransferfunction_smpte_240m_1995.md",
       "hash": "472e805d966b04c8f18f200dd6f82e3935c4631dec1febf7bb5013bb18fa7d8e"
+    },
+    "https://developer.apple.com/documentation/corevideo/kcvimagebuffertransferfunction_smpte_c": {
+      "etag": "\"43b2-65d55dfe0ad31-df\"",
+      "file_path": "documentation/CoreVideo/kcvimagebuffertransferfunction_smpte_c.md",
+      "hash": "2f77bc8e976cc7c20dced8ecb6cb9547c5e2e2a9d7d45dde5dc51f591ff51291"
     },
     "https://developer.apple.com/documentation/corevideo/kcvimagebuffertransferfunction_smpte_st_2084_pq": {
       "etag": "\"4e7f-65d55dfd80224-df\"",
@@ -5035,6 +5210,11 @@
       "file_path": "documentation/CoreVideo/corevideo_false.md",
       "hash": "f55fc4190e1d0ef19b8c3da22fa95b0786ced9bd0bfd20f54c8f61c8049d50d3"
     },
+    "https://developer.apple.com/tutorials/data/documentation/corevideo/corevideo_gl_deprecated.json": {
+      "etag": "\"25ce-65d55dfc7ee19-df\"",
+      "file_path": "documentation/CoreVideo/corevideo_gl_deprecated.md",
+      "hash": "5213532518ae596f9f3fecbb6f5794fdb0d38a22a4043c0f1eae05d9cddbff9e"
+    },
     "https://developer.apple.com/tutorials/data/documentation/corevideo/corevideo_supports_colorspace.json": {
       "etag": "\"604b-65d55dfe3c595-df\"",
       "file_path": "documentation/CoreVideo/corevideo_supports_colorspace.md",
@@ -5104,6 +5284,66 @@
       "etag": "\"5f42-65d55dfc461ce-df\"",
       "file_path": "documentation/CoreVideo/corevideo_use_eaglcontext_class_in_api.md",
       "hash": "5bd2a75cd2b83fb4a7ab5e88c3700ed2909eb9eca47eb48b1ecc60dc5082473b"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/corevideo/cv_bridged_type.json": {
+      "etag": "\"2516-65d55dfdd5578-df\"",
+      "file_path": "documentation/CoreVideo/cv_bridged_type.md",
+      "hash": "10e5b28042a0e10c81aff15ffdf07d32d2a5ff07c5bb744266c4eee8a5b8252f"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/corevideo/cv_export.json": {
+      "etag": "\"2495-65d55dfe3c595-df\"",
+      "file_path": "documentation/CoreVideo/cv_export.md",
+      "hash": "8ae946c4efee9b3e5258199e3350e9f0ff91835988458c14217d4552b25d3f98"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/corevideo/cv_inline.json": {
+      "etag": "\"2495-65d55dfd80224-df\"",
+      "file_path": "documentation/CoreVideo/cv_inline.md",
+      "hash": "8f358227efd872a2fb81cee1bc5723c0a6c17f031bbe67720b602a2e75b7912a"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/corevideo/cv_internal.json": {
+      "etag": "\"24a1-65d55dfc461ce-df\"",
+      "file_path": "documentation/CoreVideo/cv_internal.md",
+      "hash": "8a65d1f0bca1d56acba6895426104591dc33663dc905fd77314831bb216d8bbe"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/corevideo/cv_nonnull.json": {
+      "etag": "\"249b-65d55dfd3365d-df\"",
+      "file_path": "documentation/CoreVideo/cv_nonnull.md",
+      "hash": "5830af4e514b70589a8db6fe9dba10640345614eef4ab3a7ff4c6a20e5ee4d8c"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/corevideo/cv_nullable.json": {
+      "etag": "\"24a1-65d55dfe2477f-df\"",
+      "file_path": "documentation/CoreVideo/cv_nullable.md",
+      "hash": "0a163f7ba7445a8c448ee570e7ded641d069b25aac47a6c58e6834945db5d9c5"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/corevideo/cv_releases_argument.json": {
+      "etag": "\"24d7-65d55dfd3365d-df\"",
+      "file_path": "documentation/CoreVideo/cv_releases_argument.md",
+      "hash": "75a69ee84ac31dc80f08e1f9f40d7d65b62e7b47e0a5635cf1e63e188d19d249"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/corevideo/cv_returns_not_retained.json": {
+      "etag": "\"24e9-65d55dfd3365d-df\"",
+      "file_path": "documentation/CoreVideo/cv_returns_not_retained.md",
+      "hash": "9eb5786a9b6fd07e1bafc7524f48fe24f99379339991adefbd00090dcc661034"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/corevideo/cv_returns_retained.json": {
+      "etag": "\"24d1-65d55dfce9a73-df\"",
+      "file_path": "documentation/CoreVideo/cv_returns_retained.md",
+      "hash": "f5ceb747c771e13d74b8ec8cfcc23b5e30bd32e1791524b5234c8f92cb067602"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/corevideo/cv_returns_retained_parameter.json": {
+      "etag": "\"250d-65d55dfdb4f2b-df\"",
+      "file_path": "documentation/CoreVideo/cv_returns_retained_parameter.md",
+      "hash": "4ed0dfd9785b329d411107d1b6e5875334b1f3b75eb4786b17b1fa9f84cbb28a"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/corevideo/cv_swift_nonsendable.json": {
+      "etag": "\"24d7-65d55dfce9a73-df\"",
+      "file_path": "documentation/CoreVideo/cv_swift_nonsendable.md",
+      "hash": "549ce1b507c66b1788b8cc9cd52f04f25fe7cf85ff3b27368ad501a44e3e8bf2"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/corevideo/cv_swift_sendable.json": {
+      "etag": "\"24b3-65d55dfd3365d-df\"",
+      "file_path": "documentation/CoreVideo/cv_swift_sendable.md",
+      "hash": "a1c9b54c4fd3650f95985a713d58b5d660c90f50ee7a7a72b9d46a3091332e67"
     },
     "https://developer.apple.com/tutorials/data/documentation/corevideo/cvattachmentaccess.json": {
       "etag": "\"6649-65d55dfe0ad31-df\"",
@@ -5590,6 +5830,11 @@
       "file_path": "documentation/CoreVideo/cvbufferpropagateattachments(_,_).md",
       "hash": "f93ca2e2b684e238a4c887d0d295becb3233f385a65eb741b3b476e4d14264b3"
     },
+    "https://developer.apple.com/tutorials/data/documentation/corevideo/cvbufferrelease.json": {
+      "etag": "\"1853-65d55dfcff520-df\"",
+      "file_path": "documentation/CoreVideo/cvbufferrelease.md",
+      "hash": "1dc8bb3cbac07939228555a6bf501d9cafd1021515aaf949b25593cc83d87faa"
+    },
     "https://developer.apple.com/tutorials/data/documentation/corevideo/cvbufferremoveallattachments(_:).json": {
       "etag": "\"5849-65d55dfe2477f-df\"",
       "file_path": "documentation/CoreVideo/cvbufferremoveallattachments(_).md",
@@ -5615,6 +5860,11 @@
       "file_path": "documentation/CoreVideo/cvbufferrepresentable/withunsafebuffer(_).md",
       "hash": "b9ed5278f1222c82c44cb5af0aeb260538848cda6c0558d3653e4ab14769b34a"
     },
+    "https://developer.apple.com/tutorials/data/documentation/corevideo/cvbufferretain.json": {
+      "etag": "\"1931-65d55dfe0ad31-df\"",
+      "file_path": "documentation/CoreVideo/cvbufferretain.md",
+      "hash": "bc387f28c36cca668330f8c766c2417a6e90ad029c0351b7b55b1512e475b92b"
+    },
     "https://developer.apple.com/tutorials/data/documentation/corevideo/cvbuffersetattachment(_:_:_:_:).json": {
       "etag": "\"897d-65d55dfdd5578-df\"",
       "file_path": "documentation/CoreVideo/cvbuffersetattachment(_,_,_,_).md",
@@ -5634,6 +5884,26 @@
       "etag": "\"5412-65d55dfe2477f-df\"",
       "file_path": "documentation/CoreVideo/cvcolorprimariesgetstringforintegercodepoint(_).md",
       "hash": "11b787f228bc8729380575952f40d150f04619499b40ee34405089c33472cf08"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/corevideo/cvdirect3d.json": {
+      "etag": "\"249b-65d55dfc461ce-df\"",
+      "file_path": "documentation/CoreVideo/cvdirect3d.md",
+      "hash": "8018fd1497836a8cd4b6beef173c406f118682932e98cf737c0d633943cd7ef1"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/corevideo/cvdirect3ddevice.json": {
+      "etag": "\"24bf-65d55dfd66310-df\"",
+      "file_path": "documentation/CoreVideo/cvdirect3ddevice.md",
+      "hash": "3dd9a307873c4f1f9a0c3f7b084949ccd12d9296bf85f0e99e2186cbb37214d3"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/corevideo/cvdirect3dsurface.json": {
+      "etag": "\"24c5-65d55dfdf52f5-df\"",
+      "file_path": "documentation/CoreVideo/cvdirect3dsurface.md",
+      "hash": "51e169594cb7bc2cfc8c3d96de6bee72943f249c8557c64ebab8bc737b62db41"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/corevideo/cvdirect3dtexture.json": {
+      "etag": "\"24c5-65d55dfc110b8-df\"",
+      "file_path": "documentation/CoreVideo/cvdirect3dtexture.md",
+      "hash": "6c14efb301084ab999d38100f0ce989189b45d760473616bfb20d58db8bd79cd"
     },
     "https://developer.apple.com/tutorials/data/documentation/corevideo/cvdisplaylink-k0k.json": {
       "etag": "\"9e63-659026ab939a9-df\"",
@@ -5709,6 +5979,16 @@
       "etag": "\"4c81-65d55dfe3c595-df\"",
       "file_path": "documentation/CoreVideo/cvdisplaylinkoutputhandler.md",
       "hash": "03d18908b0beb6a899e65c2289768e4baae88a2dd255fd66dddecd3b444d1aab"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/corevideo/cvdisplaylinkrelease.json": {
+      "etag": "\"1444-65d55dfe3c595-df\"",
+      "file_path": "documentation/CoreVideo/cvdisplaylinkrelease.md",
+      "hash": "1c42eb3974e697a5c7d2882abf161145ebefce0c4ed7b83118aee1ac2f0d5a54"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/corevideo/cvdisplaylinkretain.json": {
+      "etag": "\"1592-65d55dfd4e790-df\"",
+      "file_path": "documentation/CoreVideo/cvdisplaylinkretain.md",
+      "hash": "205fb1b2ff0fa7a48fa3f43972c8014709109ce3d5d3dfb110464858d07cf68a"
     },
     "https://developer.apple.com/tutorials/data/documentation/corevideo/cvdisplaylinksetcurrentcgdisplay(_:_:).json": {
       "etag": "\"4ddd-65d55dfccceb7-df\"",
@@ -6805,6 +7085,26 @@
       "file_path": "documentation/CoreVideo/cvopenglbufferpoolgettypeid().md",
       "hash": "784cfc73072474a14ef4c3e4da06fdd331af73edeab6f8252a75ee63ab39b3f8"
     },
+    "https://developer.apple.com/tutorials/data/documentation/corevideo/cvopenglbufferpoolrelease.json": {
+      "etag": "\"35d7-65d55dfc9dd54-df\"",
+      "file_path": "documentation/CoreVideo/cvopenglbufferpoolrelease.md",
+      "hash": "7e1ffa280a40d59acf4a8bf12ae32dc10bf8b7ca256ccf3622bd1ddd4371bae5"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/corevideo/cvopenglbufferpoolretain.json": {
+      "etag": "\"3721-65d55dfdf52f5-df\"",
+      "file_path": "documentation/CoreVideo/cvopenglbufferpoolretain.md",
+      "hash": "d7a2883e9b3167e53b3b6acf3f48b6303235f375c1910ef117784682623ec19e"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/corevideo/cvopenglbufferrelease.json": {
+      "etag": "\"2e27-65d55dfe4df82-df\"",
+      "file_path": "documentation/CoreVideo/cvopenglbufferrelease.md",
+      "hash": "42897e1454fa1280d3e098511c39eee99e61d6752e02edef282a58a6fa41cb59"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/corevideo/cvopenglbufferretain.json": {
+      "etag": "\"2f58-65d55dfd9afd1-df\"",
+      "file_path": "documentation/CoreVideo/cvopenglbufferretain.md",
+      "hash": "57cb6cbbd0ed10814b5bda31ccc93f62c72943b11f093da7ac869ff0f316f4a2"
+    },
     "https://developer.apple.com/tutorials/data/documentation/corevideo/cvopenglestexture-q2s.json": {
       "etag": "\"346b-659026abd6b2a-df\"",
       "file_path": "documentation/CoreVideo/cvopenglestexture-q2s.md",
@@ -6920,6 +7220,16 @@
       "file_path": "documentation/CoreVideo/cvopengltexturecachegettypeid().md",
       "hash": "409ff8a007e3aa5f06b316ce3959431e160b4d13cc6b4607cb55ccf946ff1614"
     },
+    "https://developer.apple.com/tutorials/data/documentation/corevideo/cvopengltexturecacherelease.json": {
+      "etag": "\"3548-65d55dfd9afd1-df\"",
+      "file_path": "documentation/CoreVideo/cvopengltexturecacherelease.md",
+      "hash": "5f8346bb37c9b230b201ca85ee4cb407055f90e31b70ec05c79f47f55bed4632"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/corevideo/cvopengltexturecacheretain.json": {
+      "etag": "\"35a4-65d55dfe0ad31-df\"",
+      "file_path": "documentation/CoreVideo/cvopengltexturecacheretain.md",
+      "hash": "3b76501d219bfd771b48c62a821735d2b469f1d3869679b688dbba695dc4d121"
+    },
     "https://developer.apple.com/tutorials/data/documentation/corevideo/cvopengltexturegetcleantexcoords(_:_:_:_:_:).json": {
       "etag": "\"6343-65d55dfdf52f5-df\"",
       "file_path": "documentation/CoreVideo/cvopengltexturegetcleantexcoords(_,_,_,_,_).md",
@@ -6944,6 +7254,16 @@
       "etag": "\"4175-65d55dfe4df82-df\"",
       "file_path": "documentation/CoreVideo/cvopengltextureisflipped(_).md",
       "hash": "4ed2520b4ca6ea379491f185a071f916e7a048fa3c94d9f675ec9db0db2cce00"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/corevideo/cvopengltexturerelease.json": {
+      "etag": "\"158c-65d55dfc110b8-df\"",
+      "file_path": "documentation/CoreVideo/cvopengltexturerelease.md",
+      "hash": "4a767f656753280817f1ae3dbae3c53bfe5249d171ea09fcc93b396e3f0cd36b"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/corevideo/cvopengltextureretain.json": {
+      "etag": "\"16cd-65d55dfe4df82-df\"",
+      "file_path": "documentation/CoreVideo/cvopengltextureretain.md",
+      "hash": "e09de9d432f51736b3a5bb124085038dac482cb16c0462ca3f076ed432ead526"
     },
     "https://developer.apple.com/tutorials/data/documentation/corevideo/cvoptionflags.json": {
       "etag": "\"1e1c-65d55dfdd5578-df\"",
@@ -7385,6 +7705,21 @@
       "file_path": "documentation/CoreVideo/cvpixelbufferpoolgettypeid().md",
       "hash": "2bc4e45b5c90174e8d715dd7e5542f1ee09653f8e938bd69c1f18612c48d02f4"
     },
+    "https://developer.apple.com/tutorials/data/documentation/corevideo/cvpixelbufferpoolrelease.json": {
+      "etag": "\"18c6-65d55dfdd5578-df\"",
+      "file_path": "documentation/CoreVideo/cvpixelbufferpoolrelease.md",
+      "hash": "d38d53ea78c70387b556068695ac316768a6e3abb680ed66166389cab3e4715c"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/corevideo/cvpixelbufferpoolretain.json": {
+      "etag": "\"1a05-65d55dfe0ad31-df\"",
+      "file_path": "documentation/CoreVideo/cvpixelbufferpoolretain.md",
+      "hash": "48d79f9ed04ce700139a412e37185efeedd2031fa8f0206c2f6ae254ff412fea"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/corevideo/cvpixelbufferrelease.json": {
+      "etag": "\"15f4-65d55dfc7ee19-df\"",
+      "file_path": "documentation/CoreVideo/cvpixelbufferrelease.md",
+      "hash": "7a6bcaac6d580cac8e442f6a123327490886e8528428c193cf4b8a016ee73021"
+    },
     "https://developer.apple.com/tutorials/data/documentation/corevideo/cvpixelbufferreleasebytescallback.json": {
       "etag": "\"4a87-65d55dfd80224-df\"",
       "file_path": "documentation/CoreVideo/cvpixelbufferreleasebytescallback.md",
@@ -7464,6 +7799,11 @@
       "etag": "\"1b22-65d55dfc461ce-df\"",
       "file_path": "documentation/CoreVideo/cvpixelbufferrepresentable/withunsafebackingiosurfaceifpresent(_).md",
       "hash": "7a9c3cd357d724394d21cf1101aff6ad8a429b1e55e2dbb37c82c487f37f759c"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/corevideo/cvpixelbufferretain.json": {
+      "etag": "\"1727-65d55dfc9dd54-df\"",
+      "file_path": "documentation/CoreVideo/cvpixelbufferretain.md",
+      "hash": "78c8b9c999351ca2bd5918c6e50ca4ca8ecfd685e5fd6744bebd8d0760258fdc"
     },
     "https://developer.apple.com/tutorials/data/documentation/corevideo/cvpixelbufferunlockbaseaddress(_:_:).json": {
       "etag": "\"4c02-65d55dfd3365d-df\"",
@@ -8825,6 +9165,11 @@
       "file_path": "documentation/CoreVideo/kcvimagebuffersceneilluminationkey.md",
       "hash": "e96cbc54997887b31a136399f2b5fc21634cfaaca105521a2c2dff76ffae5d1e"
     },
+    "https://developer.apple.com/tutorials/data/documentation/corevideo/kcvimagebuffertransferfunction_ebu_3213.json": {
+      "etag": "\"43bd-65d55dfe2477f-df\"",
+      "file_path": "documentation/CoreVideo/kcvimagebuffertransferfunction_ebu_3213.md",
+      "hash": "05015384f459a5b2027e3d1005e7108c9594ff2129fdb9fda3c3620e0060e178"
+    },
     "https://developer.apple.com/tutorials/data/documentation/corevideo/kcvimagebuffertransferfunction_itu_r_2020.json": {
       "etag": "\"4fbb-65d55dfd190bd-df\"",
       "file_path": "documentation/CoreVideo/kcvimagebuffertransferfunction_itu_r_2020.md",
@@ -8849,6 +9194,11 @@
       "etag": "\"5007-65d55dfcff520-df\"",
       "file_path": "documentation/CoreVideo/kcvimagebuffertransferfunction_smpte_240m_1995.md",
       "hash": "472e805d966b04c8f18f200dd6f82e3935c4631dec1febf7bb5013bb18fa7d8e"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/corevideo/kcvimagebuffertransferfunction_smpte_c.json": {
+      "etag": "\"43b2-65d55dfe0ad31-df\"",
+      "file_path": "documentation/CoreVideo/kcvimagebuffertransferfunction_smpte_c.md",
+      "hash": "2f77bc8e976cc7c20dced8ecb6cb9547c5e2e2a9d7d45dde5dc51f591ff51291"
     },
     "https://developer.apple.com/tutorials/data/documentation/corevideo/kcvimagebuffertransferfunction_smpte_st_2084_pq.json": {
       "etag": "\"4e7f-65d55dfd80224-df\"",
@@ -10013,8 +10363,8 @@
   },
   "metadata": {
     "render": {
-      "version": 1
+      "version": 2
     },
-    "total_pages": 2002
+    "total_pages": 2072
   }
 }

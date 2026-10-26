@@ -75,7 +75,7 @@ The default camera interface supports editing movies in the photo library. Editi
 
 ##### Work with Live Photos
 
-Live Photos is a Camera app feature on supported devices, enabling a picture to be not just a single moment in time but to include motion and sound from the moments just before and after its capture. A [`PHLivePhoto`](https://developer.apple.com/documentation/photos/phlivephoto) object represents a Live Photo, and the [`PHLivePhotoView`](https://developer.apple.com/documentation/photosui/phlivephotoview) class provides a system-standard, interactive user interface for displaying a Live Photo and playing back its content.
+Live Photos is a Camera app feature on supported devices, enabling a picture to be not just a single moment in time but to include motion and sound from the moments just before and after its capture. A [`PHLivePhoto`](../Photos/phlivephoto.md) object represents a Live Photo, and the [`PHLivePhotoView`](../PhotosUI/phlivephotoview.md) class provides a system-standard, interactive user interface for displaying a Live Photo and playing back its content.
 
 Although Live Photos include sound and motion, they remain photos. When you use an image picker controller to capture or choose still images (by including only the `kUTTypeImage` type in the [`mediaTypes`](./uiimagepickercontroller/mediatypes.md) array), assets that were captured as Live Photos continue to appear in the picker. However, when the user chooses an asset, your [`delegate`](./uiimagepickercontroller/delegate.md) object receives only a [`UIImage`](./uiimage.md) object containing a still-image representation of the Live Photo.
 
@@ -159,6 +159,8 @@ To create a fully customized image picker for browsing the photo library, use cl
   Constants that indicate how to export images to the client app.
 - [var videoExportPreset: String](./uiimagepickercontroller/videoexportpreset.md)
   The preset to use when preparing video for export to your app.
+- [allowsImageEditing](./uiimagepickercontroller/allowsimageediting.md)
+  A Boolean value that indicates whether the user is allowed to edit a selected image.
 
 ## Relationships
 

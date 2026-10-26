@@ -31,6 +31,10 @@ var ioService: io_service_t { get }
   The queue for servicing input/output requests.
 - [func destroy()](./destroy%28%29.md)
   Removes underlying allocations and connections from the USB host object.
+- [- initWithIOService:options:queue:error:interestHandler:](./initwithioservice_options_queue_error_interesthandler_.md)
+  Creates a USB host object and sets up a communication channel to the kernel.
+- [- initWithIOService:queue:error:interestHandler:](./initwithioservice_queue_error_interesthandler_.md)
+  Creates a USB host object and sets up a default communication channel to the kernel.
 
 
 ---

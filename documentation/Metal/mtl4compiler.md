@@ -64,6 +64,40 @@ protocol MTL4Compiler : NSObjectProtocol, Sendable
   Creates a new render pipeline state from another, previously unspecialized, pipeline state.
 - [func makeRenderPipelineStateBySpecialization(descriptor: MTL4PipelineDescriptor, pipeline: any MTLRenderPipelineState) async throws -> any MTLRenderPipelineState](./mtl4compiler/makerenderpipelinestatebyspecialization%28descriptor,pipeline%29-7s2wp.md)
   Creates a new render pipeline state from another, previously unspecialized, pipeline state
+- [- newBinaryFunctionWithDescriptor:compilerTaskOptions:completionHandler:](./mtl4compiler/newbinaryfunctionwithdescriptor_compilertaskoptions_completionhandler_.md)
+  Returns a new compiler task that asyncrhonously creates a binary version of a GPU visible function or GPU intersection function.
+- [- newBinaryFunctionWithDescriptor:compilerTaskOptions:error:](./mtl4compiler/newbinaryfunctionwithdescriptor_compilertaskoptions_error_.md)
+  Creates a new binary visible or intersection function synchronously.
+- [- newComputePipelineStateWithDescriptor:compilerTaskOptions:completionHandler:](./mtl4compiler/newcomputepipelinestatewithdescriptor_compilertaskoptions_completionhandler_.md)
+  Creates a new compute pipeline state asynchronously.
+- [- newComputePipelineStateWithDescriptor:compilerTaskOptions:error:](./mtl4compiler/newcomputepipelinestatewithdescriptor_compilertaskoptions_error_.md)
+  Creates a new compute pipeline state object synchronously.
+- [- newComputePipelineStateWithDescriptor:dynamicLinkingDescriptor:compilerTaskOptions:completionHandler:](./mtl4compiler/newcomputepipelinestatewithdescriptor_dynamiclinkingdescriptor_compilertaskoptions_completionhandler_.md)
+  Creates a new compute pipeline state asynchronously.
+- [- newComputePipelineStateWithDescriptor:dynamicLinkingDescriptor:compilerTaskOptions:error:](./mtl4compiler/newcomputepipelinestatewithdescriptor_dynamiclinkingdescriptor_compilertaskoptions_error_.md)
+  Creates a new compute pipeline state synchronously.
+- [- newDynamicLibrary:completionHandler:](./mtl4compiler/newdynamiclibrary_completionhandler_.md)
+  Creates a new dynamic Metal library instance asynchronously.
+- [- newDynamicLibraryWithURL:completionHandler:](./mtl4compiler/newdynamiclibrarywithurl_completionhandler_.md)
+  Creates a new dynamic library from the contents of a file at an URL location synchronously.
+- [- newLibraryWithDescriptor:completionHandler:](./mtl4compiler/newlibrarywithdescriptor_completionhandler_.md)
+  Creates a new Metal library instance asynchronously.
+- [- newMachineLearningPipelineStateWithDescriptor:completionHandler:](./mtl4compiler/newmachinelearningpipelinestatewithdescriptor_completionhandler_.md)
+  Creates a new machine learning pipeline state asynchronously.
+- [- newMachineLearningPipelineStateWithDescriptor:error:](./mtl4compiler/newmachinelearningpipelinestatewithdescriptor_error_.md)
+  Creates a new ML pipeline state with descriptor.
+- [- newRenderPipelineStateBySpecializationWithDescriptor:pipeline:completionHandler:](./mtl4compiler/newrenderpipelinestatebyspecializationwithdescriptor_pipeline_completionhandler_.md)
+  Creates a new render pipeline state from another, previously unspecialized, pipeline state
+- [- newRenderPipelineStateBySpecializationWithDescriptor:pipeline:error:](./mtl4compiler/newrenderpipelinestatebyspecializationwithdescriptor_pipeline_error_.md)
+  Creates a new render pipeline state from another, previously unspecialized, pipeline state.
+- [- newRenderPipelineStateWithDescriptor:compilerTaskOptions:completionHandler:](./mtl4compiler/newrenderpipelinestatewithdescriptor_compilertaskoptions_completionhandler_.md)
+  Creates a new render pipeline state asynchronously.
+- [- newRenderPipelineStateWithDescriptor:compilerTaskOptions:error:](./mtl4compiler/newrenderpipelinestatewithdescriptor_compilertaskoptions_error_.md)
+  Creates a new render pipeline state synchronously.
+- [- newRenderPipelineStateWithDescriptor:dynamicLinkingDescriptor:compilerTaskOptions:completionHandler:](./mtl4compiler/newrenderpipelinestatewithdescriptor_dynamiclinkingdescriptor_compilertaskoptions_completionhandler_.md)
+  Creates a new render pipeline state asynchronously.
+- [- newRenderPipelineStateWithDescriptor:dynamicLinkingDescriptor:compilerTaskOptions:error:](./mtl4compiler/newrenderpipelinestatewithdescriptor_dynamiclinkingdescriptor_compilertaskoptions_error_.md)
+  Creates a new render pipeline state synchronously.
 
 ## Relationships
 
@@ -97,6 +131,8 @@ protocol MTL4Compiler : NSObjectProtocol, Sendable
   Options for configuring the creation of binary functions.
 - [class MTL4PipelineStageDynamicLinkingDescriptor](./mtl4pipelinestagedynamiclinkingdescriptor.md)
   Groups together properties to drive the dynamic linking process of a pipeline stage.
+- [MTL4CompilerTask](./mtl4compilertask.md)
+  A reference to an asynchronous compilation task that you initiate from a compiler instance.
 
 
 ---

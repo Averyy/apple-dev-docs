@@ -66,6 +66,10 @@ You can work around this problem by checking the returned parameter from any cal
   Gets a copy of the data for a specified Apple event attribute from an Apple event; typically used when your application needs to work with the data directly.
 - [func AEGetParamDesc(UnsafePointer<AppleEvent>!, AEKeyword, DescType, UnsafeMutablePointer<AEDesc>!) -> OSErr](./api-1449233-aegetparamdesc.md)
   Gets a copy of the descriptor for a keyword-specified Apple event parameter from an Apple event or an Apple event record.
+- [AEGetKeyDesc](../applicationservices/apple_event_manager/api-1806211-aegetkeydesc.md)
+  Gets a copy of the descriptor for a keyword-specified Apple event parameter from an Apple event record
+- [AEGetKeyPtr](../applicationservices/apple_event_manager/api-1806223-aegetkeyptr.md)
+  Gets a copy of the data for a specified Apple event parameter from an Apple event record.
 
 
 ---

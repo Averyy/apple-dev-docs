@@ -45,6 +45,9 @@ The initialized image object.
 - [class var red: CIImage](./red.md)
 - [class var white: CIImage](./white.md)
 - [class var yellow: CIImage](./yellow.md)
+### Related Documentation
+- [+ imageWithColor:](./imagewithcolor_.md)
+  Creates and returns an image of infinite extent whose entire content is the specified color.
 
 
 ---

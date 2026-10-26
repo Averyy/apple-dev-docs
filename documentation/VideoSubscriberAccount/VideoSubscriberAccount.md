@@ -33,6 +33,8 @@ Support TV provider and Apple TV app functionality.
   An object that stores subscription information that the system provides to the Apple TV app.
 - [class VSAccountApplicationProvider](./vsaccountapplicationprovider.md)
   An object to display app-specific providers in your app.
+- [VSAppleSubscription](./vsapplesubscription-c.class.md)
+  An Apple streaming service customer and their subscriptions.
 ### User account management
 - [Signing people in to their media accounts automatically](./signing-people-in-to-media-apps-automatically.md)
   Implement single sign-on for media-streaming apps by managing a sign-in token on a person’s Apple Account.
@@ -40,6 +42,8 @@ Support TV provider and Apple TV app functionality.
   The object that coordinates your app’s user account actions.
 - [struct VSUserAccount](./vsuseraccount-swift.struct.md)
   An object that represents a user’s account.
+- [VSUserAccount](./vsuseraccount-c.class.md)
+  An object that represents a user’s account with a TV provider.
 ### Errors
 - [let VSErrorDomain: String](./vserrordomain.md)
   The domain for all errors in the framework.
@@ -58,6 +62,12 @@ Support TV provider and Apple TV app functionality.
 ### Deprecated
 - [class VSSubscription](./vssubscription.md)
   An object that describes a subscriber’s access to content.
+### Macros
+- [VS_EXPORT](./vs_export.md)
+- [VS_EXTERN](./vs_extern.md)
+- [VS_INIT_UNAVAILABLE](./vs_init_unavailable.md)
+- [VS_INTERNAL_EXPORT](./vs_internal_export.md)
+- [VS_INTERNAL_EXTERN](./vs_internal_extern.md)
 
 
 ---

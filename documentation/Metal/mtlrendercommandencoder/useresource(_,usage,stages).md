@@ -57,6 +57,8 @@ Apps typically call the method for a resource in an argument buffer as a part of
 ### Loading individual resources for argument buffers
 - [func useResources([any MTLResource], usage: MTLResourceUsage, stages: MTLRenderStages)](./useresources%28_,usage,stages%29.md)
   Ensures the shaders in the render pass’s subsequent draw commands have access to multiple resources.
+- [- useResources:count:usage:stages:](./useresources_count_usage_stages_.md)
+  Ensures the shaders in the render pass’s subsequent draw commands have access to multiple resources.
 
 
 ---

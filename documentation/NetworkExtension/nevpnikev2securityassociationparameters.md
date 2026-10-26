@@ -44,6 +44,8 @@ class NEVPNIKEv2SecurityAssociationParameters
   A list of the quantum-secure key exchange methods the Security Association uses.
 - [enum NEVPNIKEv2PostQuantumKeyExchangeMethod](./nevpnikev2postquantumkeyexchangemethod.md)
   Quantum-secure key exchange methods you use with IKEv2 servers.
+- [postQuantumKeyExchangeMethods](./nevpnikev2securityassociationparameters/postquantumkeyexchangemethods-56672.md)
+  A list of the quantum-secure key exchange methods the Security Association uses.
 
 ## Relationships
 

@@ -41,6 +41,8 @@ static simd_short32 simd_make_short32(simd_short2 other);
   Returns a new vector from the specified eight-element vector, and other elements undefined.
 - [func simd_make_short32_undef(simd_short16) -> simd_short32](./simd_make_short32_undef%28_%29-435zw.md)
   Returns a new vector from the specified sixteen-element vector, and other elements undefined.
+- [vector32](./vector32-62nb2.md)
+  Returns a new vector from the specified vectors.
 
 
 ---

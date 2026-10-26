@@ -34,6 +34,8 @@ Create a custom catalog by adding reference signatures that you generate from au
 ### Creating a custom catalog object
 - [init()](./shcustomcatalog/init%28%29.md)
   Creates a new custom catalog object for storing reference audio signatures and their associated metadata.
+- [+ new](./shcustomcatalog/new.md)
+  Creates a new custom catalog object for storing reference audio signatures and their associated metadata.
 ### Adding a signature to the catalog
 - [func addReferenceSignature(SHSignature, representing: [SHMediaItem]) throws](./shcustomcatalog/addreferencesignature%28_,representing%29.md)
   Adds a reference signature and its associated metadata to a catalog.
@@ -45,6 +47,8 @@ Create a custom catalog by adding reference signatures that you generate from au
 ### Getting the content type
 - [static var shazamCustomCatalog: UTType](../UniformTypeIdentifiers/uttype-swift.struct/shazamcustomcatalog.md)
   A type that represents a custom catalog.
+- [SHCustomCatalogContentType](../UniformTypeIdentifiers/uttype-c.class/shcustomcatalogcontenttype.md)
+  A type representing the @c SHCustomCatalog file format with the .shazamcatalog extension
 ### Initializers
 - [init(dataRepresentation: Data) throws](./shcustomcatalog/init%28datarepresentation%29.md)
   Load a @c SHCustomCatalog from data

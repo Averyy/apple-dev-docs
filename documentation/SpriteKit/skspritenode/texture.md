@@ -42,6 +42,12 @@ SpriteKit automatically generates a texture for sprites when they are initialize
   Initializes a textured sprite using an existing texture object but with a specified size.
 - [convenience init(texture: SKTexture?, normalMap: SKTexture?)](./init%28texture,normalmap%29.md)
   Initializes a textured sprite with a normal map to simulate 3D lighting.
+- [+ spriteNodeWithColor:size:](./spritenodewithcolor_size_.md)
+  Initializes a single-color sprite.
+- [+ spriteNodeWithImageNamed:](./spritenodewithimagenamed_.md)
+  Initializes a textured sprite using an image file.
+- [+ spriteNodeWithTexture:](./spritenodewithtexture_.md)
+  Initializes a textured sprite using an existing texture object.
 
 
 ---

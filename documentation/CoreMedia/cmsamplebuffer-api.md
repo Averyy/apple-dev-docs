@@ -37,6 +37,8 @@ It’s possible for a sample buffer to describe samples it doesn’t yet contain
   Creates a sample buffer with an image buffer and a callback to make the data ready for use.
 - [func CMAudioSampleBufferCreateWithPacketDescriptions(allocator: CFAllocator?, dataBuffer: CMBlockBuffer?, dataReady: Bool, makeDataReadyCallback: CMSampleBufferMakeDataReadyCallback?, refcon: UnsafeMutableRawPointer?, formatDescription: CMFormatDescription, sampleCount: CMItemCount, presentationTimeStamp: CMTime, packetDescriptions: UnsafePointer<AudioStreamPacketDescription>?, sampleBufferOut: UnsafeMutablePointer<CMSampleBuffer?>) -> OSStatus](./cmaudiosamplebuffercreatewithpacketdescriptions%28allocator,databuffer,dataready,makedatareadycallback,refcon,formatdescription,samplecount,presentationtimestamp,packetdescriptions,samplebufferout%29.md)
   Creates a sample buffer with packet descriptions and a callback to make the data ready for use.
+- [CMSampleBufferCreateForTaggedBufferGroup](./cmsamplebuffercreatefortaggedbuffergroup.md)
+  Creates a new sample buffer from a tagged buffer group.
 ### Copying Sample Buffers
 - [func CMSampleBufferCreateCopy(allocator: CFAllocator?, sampleBuffer: CMSampleBuffer, sampleBufferOut: UnsafeMutablePointer<CMSampleBuffer?>) -> OSStatus](./cmsamplebuffercreatecopy%28allocator,samplebuffer,samplebufferout%29.md)
   Creates a copy of a sample buffer.
@@ -161,6 +163,9 @@ It’s possible for a sample buffer to describe samples it doesn’t yet contain
   Folds a time into a time range.
 - [func CMVideoFormatDescriptionGetHEVCParameterSetAtIndex(CMFormatDescription, parameterSetIndex: Int, parameterSetPointerOut: UnsafeMutablePointer<UnsafePointer<UInt8>?>?, parameterSetSizeOut: UnsafeMutablePointer<Int>?, parameterSetCountOut: UnsafeMutablePointer<Int>?, nalUnitHeaderLengthOut: UnsafeMutablePointer<Int32>?) -> OSStatus](./cmvideoformatdescriptiongethevcparametersetatindex%28_,parametersetindex,parametersetpointerout,parametersetsizeout,parametersetcountout,nalunitheaderlengthout%29.md)
   Returns a parameter set contained in an HEVC (H.265) format description.
+### Accessing Tag Information
+- [CMSampleBufferGetTaggedBufferGroup](./cmsamplebuffergettaggedbuffergroup.md)
+  Gets the tagged buffer group of a sample buffer.
 
 ## See Also
 

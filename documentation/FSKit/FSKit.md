@@ -52,6 +52,8 @@ When you choose a design flow, write an app extension that conforms to either `F
   A protocol containing functionality supplied by FSKit to file system implementations.
 - [class FSFileName](./fsfilename.md)
   The name of a file, expressed as a data buffer.
+- [FSFileSystem](./fsfilesystem.md)
+  An abstract base class for implementing a full-featured file system.
 ### Containers
 - [class FSContainerIdentifier](./fscontaineridentifier.md)
   A type that identifies a container.
@@ -121,6 +123,27 @@ When you choose a design flow, write an app extension that conforms to either `F
 ### Entitlements
 - [com.apple.developer.fskit.fsmodule](../BundleResources/entitlements/com.apple.developer.fskit.fsmodule.md)
   An entitlement that indicates an extension provides an FSKit filesystem.
+### Utilities
+- [FSKitVersionNumber](./fskitversionnumber.md)
+  Project version number for FSKit.
+- [FSKitVersionString](./fskitversionstring.md)
+  Project version string for FSKit.
+### Macros
+- [FSKIT_API_AVAILABILITY_V1](./fskit_api_availability_v1.md)
+- [FSKIT_API_UNAVAILABLE_V1](./fskit_api_unavailable_v1.md)
+- [FS_ALWAYS_EXPORT](./fs_always_export.md)
+- [FS_EXPORT](./fs_export.md)
+- [FS_EXPORT_INTERNAL](./fs_export_internal.md)
+- [FS_EXTERN](./fs_extern.md)
+- [FS_SUPPORTED_VISIBILITY](./fs_supported_visibility.md)
+- [FSKIT_API_AVAILABILITY_V2](./fskit_api_availability_v2.md)
+- [FSKIT_API_AVAILABILITY_V2_4](./fskit_api_availability_v2_4.md)
+- [FSKIT_API_AVAILABILITY_V3](./fskit_api_availability_v3.md)
+- [FSKIT_API_INTRODUCED_V1_DEPRECATED_V3_WITH_REPLACEMENT](./fskit_api_introduced_v1_deprecated_v3_with_replacement.md)
+- [FSKIT_CALLED_ONCE](./fskit_called_once.md)
+### Protocols
+- [FSVolumeCommonOperations](./fsvolume/commonoperations.md)
+  Methods common to `FSVolumeHandler` and `FSVolumeOperations`
 
 
 ---

@@ -457,6 +457,56 @@
 - [func setEDRTargetHeadroom(Float) -> Bool](./cgcontext/setedrtargetheadroom%28_%29.md)
 - [var shouldToneMap: Bool](./cgimage/shouldtonemap.md)
 - [func CGColorSpaceUsesExtendedRange(CGColorSpace) -> Bool](./cgcolorspaceusesextendedrange%28_%29.md)
+- [CGColorConversionInfoCreateFromList](./cgcolorconversioninfocreatefromlist.md)
+  Creates a conversion between an arbitrary number of specified color spaces.
+- [CGContextDrawPDFDocument](./cgcontextdrawpdfdocument.md)
+- [CGDisplayModeRelease](./cgdisplaymoderelease.md)
+  Releases a Core Graphics display mode.
+- [CGDisplayModeRetain](./cgdisplaymoderetain.md)
+  Retains a Core Graphics display mode.
+- [CGEventCreateData](./cgeventcreatedata.md)
+  Returns a flattened data representation of a Quartz event.
+- [CGEventCreateScrollWheelEvent](./cgeventcreatescrollwheelevent.md)
+  Returns a new Quartz scrolling event.
+- [CGEventSetFlags](./cgeventsetflags.md)
+  Sets the event flags of a Quartz event.
+- [CGEventSetLocation](./cgeventsetlocation.md)
+  Sets the location of a Quartz mouse event.
+- [CGEventSetTimestamp](./cgeventsettimestamp.md)
+  Sets the timestamp of a Quartz event.
+- [CGEventSetType](./cgeventsettype.md)
+  Sets the event type of a Quartz event (left mouse down, for example).
+- [CGEventSourceSetKeyboardType](./cgeventsourcesetkeyboardtype.md)
+  Sets the keyboard type to be used with a Quartz event source.
+- [CGEventSourceSetLocalEventsSuppressionInterval](./cgeventsourcesetlocaleventssuppressioninterval.md)
+  Sets the interval that local hardware events may be suppressed following the posting of a Quartz event.
+- [CGEventSourceSetPixelsPerLine](./cgeventsourcesetpixelsperline.md)
+  Sets the scale of pixels per line in a scrolling event source.
+- [CGEventSourceSetUserData](./cgeventsourcesetuserdata.md)
+  Sets the 64-bit user-specified data for a Quartz event source.
+- [CGGetLastMouseDelta](./cggetlastmousedelta.md)
+  Reports the change in mouse position since the last mouse movement event received by the application.
+- [CGPostMouseEvent](./cgpostmouseevent.md)
+  Synthesizes a low-level mouse-button event on the local machine.
+- [CGPostScrollWheelEvent](./cgpostscrollwheelevent.md)
+  Synthesizes a low-level scrolling event on the local machine.
+- [CGWindowListCreate](./cgwindowlistcreate.md)
+  Returns the list of window IDs associated with the specified windows in the current user session.
+- [CGColorConversionInfoCreateFromListWithArguments](./cgcolorconversioninfocreatefromlistwitharguments.md)
+- [CGColorSpaceGetName](./cgcolorspacegetname.md)
+- [CGContextDrawImageApplyingToneMapping](./cgcontextdrawimageapplyingtonemapping.md)
+- [CGPathCreateCopyByFlattening](./cgpathcreatecopybyflattening.md)
+- [CGPathCreateCopyByIntersectingPath](./cgpathcreatecopybyintersectingpath.md)
+- [CGPathCreateCopyByNormalizing](./cgpathcreatecopybynormalizing.md)
+- [CGPathCreateCopyBySubtractingPath](./cgpathcreatecopybysubtractingpath.md)
+- [CGPathCreateCopyBySymmetricDifferenceOfPath](./cgpathcreatecopybysymmetricdifferenceofpath.md)
+- [CGPathCreateCopyByUnioningPath](./cgpathcreatecopybyunioningpath.md)
+- [CGPathCreateCopyOfLineByIntersectingPath](./cgpathcreatecopyoflinebyintersectingpath.md)
+- [CGPathCreateCopyOfLineBySubtractingPath](./cgpathcreatecopyoflinebysubtractingpath.md)
+- [CGPathCreateSeparateComponents](./cgpathcreateseparatecomponents.md)
+- [CGPathIntersectsPath](./cgpathintersectspath.md)
+- [CGAffineTransformDecompose](./cgaffinetransformdecompose.md)
+- [CGAffineTransformMakeWithComponents](./cgaffinetransformmakewithcomponents.md)
 
 ## See Also
 
@@ -465,6 +515,11 @@
 - [Core Graphics Enumerations](./core-graphics-enumerations.md)
 - [Core Graphics Constants](./core-graphics-constants.md)
 - [Core Graphics Data Types](./core-graphics-data-types.md)
+- [CGAffineTransform](./cgaffinetransform.md)
+  An affine transformation matrix for use in drawing 2D graphics.
+- [CGGeometry](./cggeometry.md)
+  Various structures and associated functions for 2D geometric primitives.
+- [Core Graphics Macros](./core-graphics-macros.md)
 
 
 ---

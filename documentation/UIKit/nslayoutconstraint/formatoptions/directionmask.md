@@ -56,6 +56,8 @@ NSLayoutFormatDirectionMask
   Arrange objects in order from right to left.
 - [static var spacingBaselineToBaseline: NSLayoutConstraint.FormatOptions](./spacingbaselinetobaseline.md)
   Align elements vertically according to their baseline positions.
+- [NSLayoutFormatAlignAllBaseline](../../nslayoutformatoptions/nslayoutformatalignallbaseline.md)
+  Align all specified interface elements using [`NSLayoutAttributeBaseline`](../../nslayoutattribute/nslayoutattributebaseline.md) on each.
 
 
 ---

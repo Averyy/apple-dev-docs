@@ -47,10 +47,10 @@ After you create an image type, display it in your app’s interface using an im
 
 #### Retrieve and display someone’s personal photos
 
-People view and manage personal photos in the Photos app on their device. Apps can also request access to someone’s photos and incorporate them into the content that person creates. For example, a social media app might let someone add their personal photos to their feed. To [request access](https://developer.apple.com/documentation/photos/phphotolibrary/requestauthorization(for:handler:)) and [retrieve](../PhotoKit/fetching-objects-and-requesting-changes.md) someone’s personal photos, use [PhotoKit](../PhotoKit/PhotoKit.md). You can also use PhotoKit to:
+People view and manage personal photos in the Photos app on their device. Apps can also request access to someone’s photos and incorporate them into the content that person creates. For example, a social media app might let someone add their personal photos to their feed. To [request access](../Photos/phphotolibrary/requestauthorization%28for,handler%29.md) and [retrieve](../PhotoKit/fetching-objects-and-requesting-changes.md) someone’s personal photos, use [PhotoKit](../PhotoKit/PhotoKit.md). You can also use PhotoKit to:
 
 - [Create, delete, or modify](../PhotoKit/requesting-changes-to-the-photo-library.md) photos, albums, and other assets in someone’s photo library.
-- [Generate thumbnail images](https://developer.apple.com/documentation/photos/phimagemanager) of photos in the library.
+- [Generate thumbnail images](../Photos/phimagemanager.md) of photos in the library.
 - Display motion and sound from a [Live Photo](../PhotoKit/displaying-live-photos.md) and manage playback.
 - Integrate custom filter effects, slideshows, books, and other content into the Photos app using a [photo editing extension](../PhotoKit/creating-photo-editing-extensions.md).
 

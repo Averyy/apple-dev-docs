@@ -42,6 +42,10 @@ A background configuration is mutually exclusive with background views, so you m
   The view to use as the background of the cell.
 - [var multipleSelectionBackgroundView: UIView?](./multipleselectionbackgroundview.md)
   The background view to use for a selected cell when the table view allows multiple row selections.
+- [- defaultBackgroundConfiguration](./defaultbackgroundconfiguration.md)
+  Retrieves a background configuration with system default values.
+- [backgroundConfiguration](./backgroundconfiguration-93a2v.md)
+  The current background configuration of the cell.
 
 
 ---

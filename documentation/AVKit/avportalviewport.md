@@ -38,6 +38,9 @@ When you don’t explicitly set properties, the system provides sensible default
 ### Configuring the aspect ratio
 - [var aspectRatio: Double?](./avportalviewport/aspectratio-4drnq.md)
   The width-to-height ratio of the portal frame.
+### Instance Properties
+- [aspectRatio](./avportalviewport/aspectratio-3jqur.md)
+  The aspect ratio of the portal frame.
 
 ## Relationships
 

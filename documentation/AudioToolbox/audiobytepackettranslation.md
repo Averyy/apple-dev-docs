@@ -73,6 +73,8 @@ struct AudioBytePacketTranslation;
   A structure that specifies frame and packet translations.
 - [struct AudioFilePacketTableInfo](./audiofilepackettableinfo.md)
   Contains information about the number of valid frames in a file and where they begin and end.
+- [AudioFileFDFTable](./audiofilefdftable.md)
+- [AudioFileFDFTableExtended](./audiofilefdftableextended.md)
 
 
 ---

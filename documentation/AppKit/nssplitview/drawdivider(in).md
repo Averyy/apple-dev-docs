@@ -38,6 +38,10 @@ If you override this method to use a custom style for the divider, you may need 
   The color of the dividers that the split view draws between subviews.
 - [var dividerThickness: CGFloat](./dividerthickness.md)
   The thickness of the dividers for the split view.
+- [- isPaneSplitter](./ispanesplitter.md)
+  The type of pane splitter.
+- [- setIsPaneSplitter:](./setispanesplitter_.md)
+  Sets the type of splitter.
 
 
 ---

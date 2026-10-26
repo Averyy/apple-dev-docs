@@ -30,6 +30,8 @@ CPManeuverDisplayStyleInstructionOnly
   The symbol appears after the instructions for the maneuver.
 - [static var symbolOnly: CPManeuverDisplayStyle](./symbolonly.md)
   Only the symbol appears for the maneuver.
+- [CPManeuverDisplayStyleDefault](./cpmaneuverdisplaystyledefault.md)
+  The default display style for the maneuver.
 
 
 ---

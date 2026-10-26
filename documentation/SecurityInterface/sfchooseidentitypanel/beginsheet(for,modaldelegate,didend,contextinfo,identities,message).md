@@ -55,6 +55,8 @@ The sheet is dismissed on return from the `beginSheetForWindow:...` method.
   Displays a list of identities in a modal panel.
 - [func identity() -> Unmanaged<SecIdentity>!](./identity%28%29.md)
   Returns the identity that the user chose in the panel or sheet.
+- [SecIdentitySearchCopyNext](../../Security/secidentitysearchcopynext.md)
+  Finds the next identity matching specified search criteria
 ### Displaying a Sheet or Panel
 - [func runModal(forIdentities: [Any]!, message: String!) -> Int](./runmodal%28foridentities,message%29.md)
   Displays a list of identities in a modal panel.

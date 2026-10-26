@@ -25,6 +25,12 @@ Use this notification to customize your application’s user interface for Voice
 
 Observe this notification using the default notification center. This notification doesn’t include a parameter.
 
+## See Also
+
+### Managing Notifications
+- [WKAccessibilityReduceMotionStatusDidChangeNotification](./wkaccessibilityreducemotionstatusdidchangenotification.md)
+  Tells the interface controller that the reduce motion status has changed.
+
 
 ---
 

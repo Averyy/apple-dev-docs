@@ -24,6 +24,12 @@ init()
 
 To use the configuration in an AR experience, pass it as an argument to your app’s [`run(_:options:)`](../arsession/run%28_,options%29.md) function.
 
+## See Also
+
+### Creating a configuration
+- [+ new](./new.md)
+  Instantiates a new geotracking configuration.
+
 
 ---
 

@@ -23,6 +23,8 @@ static simd_char3 simd_make_char3_undef(char other);
   Returns a new vector with the first element set to a scalar value, and other elements set to zero.
 - [func simd_make_char3(CChar, CChar, CChar) -> simd_char3](./simd_make_char3%28_,_,_%29.md)
   Returns a new vector from the specified scalar values.
+- [vector3](./vector3-7jt7g.md)
+  Returns a new vector from the specified scalar values.
 
 
 ---

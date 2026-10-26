@@ -66,6 +66,10 @@ After deleting the record, you should release it with the `CFRelease` function.
   Sets one or more attribute values of a record.
 - [func ODRecordSynchronize(ODRecordRef!, UnsafeMutablePointer<Unmanaged<CFError>?>!) -> Bool](./odrecordsynchronize%28_,_%29.md)
   Synchronizes a record with the directory to get current data and commit changes.
+- [ODRecordCopyPasswordPolicy](./odrecordcopypasswordpolicy.md)
+  Returns the password policies of a record.
+- [ODRecordSetNodeCredentialsUsingKerberosCache](./odrecordsetnodecredentialsusingkerberoscache.md)
+  Sets credentials for interacting with a record’s node with the Kerberos cache.
 
 
 ---

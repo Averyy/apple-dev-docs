@@ -33,6 +33,9 @@ This method is the getter for the [`NSAccessibilityProtocol`](../nsaccessibility
 ### Supporting Accessibility
 - [func accessibilityDisclosureLevel() -> Int](./accessibilitydisclosurelevel%28%29.md)
   Returns the indention level for the row.
+### Related Documentation
+- [accessibilityIndex](../nsaccessibility-c.protocol/accessibilityindex.md)
+  The index of the row or column that the accessibility element represents.
 
 
 ---

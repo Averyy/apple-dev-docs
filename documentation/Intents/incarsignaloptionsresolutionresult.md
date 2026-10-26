@@ -36,6 +36,8 @@ For additional resolution options, see [`INIntentResolutionResult`](./inintentre
   Creates a resolution object that indicates the successful resolution of the provided value.
 - [class func confirmationRequired(with: INCarSignalOptions) -> Self](./incarsignaloptionsresolutionresult/confirmationrequired%28with%29.md)
   Creates a resolution object that requires confirmation of the provided value.
+- [+ successWithResolvedValue:](./incarsignaloptionsresolutionresult/successwithresolvedvalue_.md)
+- [+ confirmationRequiredWithValueToConfirm:](./incarsignaloptionsresolutionresult/confirmationrequiredwithvaluetoconfirm_.md)
 
 ## Relationships
 

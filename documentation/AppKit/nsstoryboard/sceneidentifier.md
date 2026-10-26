@@ -32,6 +32,8 @@ Set scene identifiers in your storyboard by assigning a value to the Storyboard 
   Creates the specified view controller from the storyboard and initializes it using your custom initialization code.
 - [func instantiateController<Controller>(identifier: NSStoryboard.SceneIdentifier, creator: ((NSCoder) -> Controller?)?) -> Controller](./instantiatecontroller%28identifier,creator%29-50rw3.md)
   Creates the specified window controller from the storyboard and initializes it using your custom initialization code.
+- [NSStoryboardControllerCreator](../nsstoryboardcontrollercreator.md)
+  A block that you use to handle the custom creation of controller objects from your storyboard file.
 
 
 ---

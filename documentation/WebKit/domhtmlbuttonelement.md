@@ -27,6 +27,7 @@ class DOMHTMLButtonElement
 - [var type: String!](./domhtmlbuttonelement/type.md)
 - [var value: String!](./domhtmlbuttonelement/value.md)
 - [var willValidate: Bool](./domhtmlbuttonelement/willvalidate.md)
+- [accessKey](./domhtmlbuttonelement/accesskey.md)
 ### Instance Methods
 - [func click()](./domhtmlbuttonelement/click%28%29.md)
 

@@ -91,6 +91,8 @@ To learn more about using goals and agents, see [Agents, Goals, and Behaviors](h
   Returns the weight associated with the behavior specified by subscript syntax.
 - [subscript(Int) -> GKBehavior](./gkcompositebehavior/subscript%28_%29-6krdg.md)
   Returns the individual behavior at the specified index in the composite behavior’s list of behaviors.
+- [- setObject:forKeyedSubscript:](./gkcompositebehavior/setobject_forkeyedsubscript_.md)
+  Sets the weight for the behavior specified by subscript syntax.
 
 ## Relationships
 

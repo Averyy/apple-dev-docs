@@ -46,6 +46,10 @@ A data object initialized by reading into it the mapped file specified by `path`
   Options for methods used to read data objects.
 - [class func dataWithContentsOfMappedFile(String) -> Any?](./datawithcontentsofmappedfile%28_%29.md)
   Creates a data object from the mapped file at a given path.
+- [+ dataWithContentsOfFile:](./datawithcontentsoffile_.md)
+  Creates a data object by reading every byte from the file at a given path.
+- [+ dataWithContentsOfFile:options:error:](./datawithcontentsoffile_options_error_.md)
+  Creates a data object by reading every byte from the file at a given path.
 
 
 ---

@@ -29,6 +29,10 @@ enum AVAssetTrackGroupOutputHandling : NSUInteger;
 ### Policies
 - [static var preserveAlternateTracks: AVAssetTrackGroupOutputHandling](./avassettrackgroupoutputhandling/preservealternatetracks.md)
   A policy that passes through alternate audio tracks from the source asset during export.
+- [AVAssetTrackGroupOutputHandlingNone](./avassettrackgroupoutputhandling/avassettrackgroupoutputhandlingnone.md)
+  A policy that doesn’t pass through alternate audio tracks from the source asset during export.
+- [AVAssetTrackGroupOutputHandlingDefaultPolicy](./avassettrackgroupoutputhandling/avassettrackgroupoutputhandlingdefaultpolicy.md)
+  The default track group output handling policy.
 ### Initializers
 - [init(rawValue: UInt)](./avassettrackgroupoutputhandling/init%28rawvalue%29.md)
   Creates track group output handling structure with a raw value.

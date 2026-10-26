@@ -27,6 +27,12 @@ var segments: [AVAssetTrackSegment] { get }
 @property (nonatomic, copy, readonly) NSArray<AVAssetTrackSegment *> * segments;
 ```
 
+## See Also
+
+### Accessing track segments
+- [- segmentForTrackTime:](./segment%28fortracktime%29.md)
+  Retrieves a segment with a target time range that contains, or is closest to, the specified track time.
+
 
 ---
 

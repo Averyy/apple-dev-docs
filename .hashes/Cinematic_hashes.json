@@ -20,6 +20,11 @@
       "file_path": "documentation/Cinematic/cinematic-enumerations.md",
       "hash": "56591f477c8ac1953863d8a199cc36567c69ff9a1ea0ffbeee810f7fcf5124c5"
     },
+    "https://developer.apple.com/documentation/cinematic/cn_cinematic_extern": {
+      "etag": "\"9bd-65d55d44d79f0-df\"",
+      "file_path": "documentation/Cinematic/cn_cinematic_extern.md",
+      "hash": "af01ad85534cb9fa4789e3355fa9bb2c71cdfe3be06cc9b19d99ae3f44ad8b4e"
+    },
     "https://developer.apple.com/documentation/cinematic/cnassetinfo-2ata2": {
       "etag": "\"71e4-65d55d451e1c6-df\"",
       "file_path": "documentation/Cinematic/cnassetinfo-2ata2.md",
@@ -145,6 +150,131 @@
       "file_path": "documentation/Cinematic/cnassetinfo-2ata2/videocompositiontracks.md",
       "hash": "73b5291f3c0b9deb2dd93da9d9d40c372f7cd955f4bcfec6d4baac1a6c6afa37"
     },
+    "https://developer.apple.com/documentation/cinematic/cnassetinfo-8ja4t": {
+      "etag": "\"5e77-65d55d445d6a8-df\"",
+      "file_path": "documentation/Cinematic/cnassetinfo-8ja4t.md",
+      "hash": "10e9bf6fab6893cb7f463c18bf5811c5ca771366e9dc903cd8814828440f1cd3"
+    },
+    "https://developer.apple.com/documentation/cinematic/cnassetinfo-8ja4t/allcinematictracks": {
+      "etag": "\"e6d-65d55d44f09f3-df\"",
+      "file_path": "documentation/Cinematic/cnassetinfo-8ja4t/allcinematictracks.md",
+      "hash": "47783aee89a56481b1d9c345fb4f2df75d1d44c99cfdbca719426d95d1d684ff"
+    },
+    "https://developer.apple.com/documentation/cinematic/cnassetinfo-8ja4t/asset": {
+      "etag": "\"110b-65d55d44f09f3-df\"",
+      "file_path": "documentation/Cinematic/cnassetinfo-8ja4t/asset.md",
+      "hash": "d4b1adccf178ca7bbdc32f74e6f35c734380316ca1d59169b2a164bf3d375332"
+    },
+    "https://developer.apple.com/documentation/cinematic/cnassetinfo-8ja4t/checkcinematiccapabilityforasset:completionhandler:": {
+      "etag": "\"1f37-65d55d44f09f3-df\"",
+      "file_path": "documentation/Cinematic/cnassetinfo-8ja4t/checkcinematiccapabilityforasset_completionhandler_.md",
+      "hash": "f3886ca57792e56881fb2d7d3d9ae882efb4dbf51663dbdc3382482f43b11d33"
+    },
+    "https://developer.apple.com/documentation/cinematic/cnassetinfo-8ja4t/checkifcinematic:completionhandler:": {
+      "etag": "\"180d-65d55d44f09f3-df\"",
+      "file_path": "documentation/Cinematic/cnassetinfo-8ja4t/checkifcinematic_completionhandler_.md",
+      "hash": "75c9bb0c8be794886c11347eacbfb470effd376c183a53785df640c5a17b2470"
+    },
+    "https://developer.apple.com/documentation/cinematic/cnassetinfo-8ja4t/cinematiccapability": {
+      "etag": "\"1278-65d55d44d79f0-df\"",
+      "file_path": "documentation/Cinematic/cnassetinfo-8ja4t/cinematiccapability.md",
+      "hash": "cc83da6e93f6189bd518f0fbd5abefafaa3c8d643edf8e6da086214749e423a1"
+    },
+    "https://developer.apple.com/documentation/cinematic/cnassetinfo-8ja4t/cinematicdisparitytrack": {
+      "etag": "\"121e-65d55d44f09f3-df\"",
+      "file_path": "documentation/Cinematic/cnassetinfo-8ja4t/cinematicdisparitytrack.md",
+      "hash": "62ad2242414c857ef18cbf0c12b115a2c98e059ebf24abb33c9a7c9fc0165296"
+    },
+    "https://developer.apple.com/documentation/cinematic/cnassetinfo-8ja4t/cinematicmetadatatrack": {
+      "etag": "\"121a-65d55d44f09f3-df\"",
+      "file_path": "documentation/Cinematic/cnassetinfo-8ja4t/cinematicmetadatatrack.md",
+      "hash": "6c6e75fd41d928e343b2d7e317e13bc07636d4b79d53e781b71098f67905821c"
+    },
+    "https://developer.apple.com/documentation/cinematic/cnassetinfo-8ja4t/cinematicvideotrack": {
+      "etag": "\"11f0-65d55d44f09f3-df\"",
+      "file_path": "documentation/Cinematic/cnassetinfo-8ja4t/cinematicvideotrack.md",
+      "hash": "51451f478e8bc353e201358dbc5a19dc02302aa4ce5886428df6763c08d81b28"
+    },
+    "https://developer.apple.com/documentation/cinematic/cnassetinfo-8ja4t/defaultresourcedownloadtimeout": {
+      "etag": "\"1573-65d55d44d79f0-df\"",
+      "file_path": "documentation/Cinematic/cnassetinfo-8ja4t/defaultresourcedownloadtimeout.md",
+      "hash": "07cd1801f072edec3b26e710daac24c3da1b08a3753c1b5c30ff2332c1feb26e"
+    },
+    "https://developer.apple.com/documentation/cinematic/cnassetinfo-8ja4t/downloadresourcesforversions:timeout:completionhandler:": {
+      "etag": "\"2405-65d55d44f09f3-df\"",
+      "file_path": "documentation/Cinematic/cnassetinfo-8ja4t/downloadresourcesforversions_timeout_completionhandler_.md",
+      "hash": "66104fa32c555c57c3703e3576a3f9701953eee6201c36815c636a900bab250d"
+    },
+    "https://developer.apple.com/documentation/cinematic/cnassetinfo-8ja4t/downloadresourceswithtimeout:completionhandler:": {
+      "etag": "\"236c-65d55d44f09f3-df\"",
+      "file_path": "documentation/Cinematic/cnassetinfo-8ja4t/downloadresourceswithtimeout_completionhandler_.md",
+      "hash": "a82c10c356229b0e51338a69f0dd636aacdbc05f9f6bee234e6b4f8a7a7171f0"
+    },
+    "https://developer.apple.com/documentation/cinematic/cnassetinfo-8ja4t/frametimingtrack": {
+      "etag": "\"11e2-65d55d44d79f0-df\"",
+      "file_path": "documentation/Cinematic/cnassetinfo-8ja4t/frametimingtrack.md",
+      "hash": "a81e0eb1b69df580e5298dbddaf35c45082c57097228a76c98c4fcac8dfea585"
+    },
+    "https://developer.apple.com/documentation/cinematic/cnassetinfo-8ja4t/loadfromasset:completionhandler:": {
+      "etag": "\"1a09-65d55d44f09f3-df\"",
+      "file_path": "documentation/Cinematic/cnassetinfo-8ja4t/loadfromasset_completionhandler_.md",
+      "hash": "ad3e136f987c4d511b391e1ca2ca4c9ff64c668606a4ba5033c21139f89e3e86"
+    },
+    "https://developer.apple.com/documentation/cinematic/cnassetinfo-8ja4t/naturalsize": {
+      "etag": "\"1127-65d55d44f09f3-df\"",
+      "file_path": "documentation/Cinematic/cnassetinfo-8ja4t/naturalsize.md",
+      "hash": "8665002969bb3ddaf3bd4e8c3584a33c65b23c0ee77edc118a24cb5da5d5c111"
+    },
+    "https://developer.apple.com/documentation/cinematic/cnassetinfo-8ja4t/preferredsize": {
+      "etag": "\"1189-65d55d44d79f0-df\"",
+      "file_path": "documentation/Cinematic/cnassetinfo-8ja4t/preferredsize.md",
+      "hash": "6e20d76f0f51731213c64f189cd1760b353dd6d5ea32d1556ef47dce2a036ef8"
+    },
+    "https://developer.apple.com/documentation/cinematic/cnassetinfo-8ja4t/preferredtransform": {
+      "etag": "\"11d1-65d55d44f09f3-df\"",
+      "file_path": "documentation/Cinematic/cnassetinfo-8ja4t/preferredtransform.md",
+      "hash": "b64176c237b6d388961044ef28e46453250410f6424e233385c35b5ac3045636"
+    },
+    "https://developer.apple.com/documentation/cinematic/cnassetinfo-8ja4t/preprocessassetwithconfiguration:completionhandler:": {
+      "etag": "\"247a-65d55d44f09f3-df\"",
+      "file_path": "documentation/Cinematic/cnassetinfo-8ja4t/preprocessassetwithconfiguration_completionhandler_.md",
+      "hash": "93e01e01e4adc5e7e82738c2174f1cc27da969282d29b5b68a0d51ab09128790"
+    },
+    "https://developer.apple.com/documentation/cinematic/cnassetinfo-8ja4t/preprocessed": {
+      "etag": "\"1055-65d55d44d79f0-df\"",
+      "file_path": "documentation/Cinematic/cnassetinfo-8ja4t/preprocessed.md",
+      "hash": "8b4a37d72c444c1dcbdddea786de456a29e79f56f28d3ac7d0e63d699d958280"
+    },
+    "https://developer.apple.com/documentation/cinematic/cnassetinfo-8ja4t/resourcestatus": {
+      "etag": "\"11f1-65d55d44f09f3-df\"",
+      "file_path": "documentation/Cinematic/cnassetinfo-8ja4t/resourcestatus.md",
+      "hash": "fe51203554932af2cf0cf20f407db9c4f8632b6d5d2c19b876f349dbc7d8554b"
+    },
+    "https://developer.apple.com/documentation/cinematic/cnassetinfo-8ja4t/resourcestatusforversions:": {
+      "etag": "\"1595-65d55d44f09f3-df\"",
+      "file_path": "documentation/Cinematic/cnassetinfo-8ja4t/resourcestatusforversions_.md",
+      "hash": "a34ff8fcfb3b254627ceedf959ac937042b764a79c1a54612be3df069ae28172"
+    },
+    "https://developer.apple.com/documentation/cinematic/cnassetinfo-8ja4t/sampledatatrackids": {
+      "etag": "\"ed9-65d55d44f09f3-df\"",
+      "file_path": "documentation/Cinematic/cnassetinfo-8ja4t/sampledatatrackids.md",
+      "hash": "d1b21e6705d346dbea69a9bcf58064fbf07acf80943c0c860e3683d8275059ea"
+    },
+    "https://developer.apple.com/documentation/cinematic/cnassetinfo-8ja4t/timerange": {
+      "etag": "\"1139-65d55d44f09f3-df\"",
+      "file_path": "documentation/Cinematic/cnassetinfo-8ja4t/timerange.md",
+      "hash": "3b7c545c3ae52353d0acd92d857c750b200915a59bb2ed0c9137bcf8da01eee8"
+    },
+    "https://developer.apple.com/documentation/cinematic/cnassetinfo-8ja4t/videocompositiontrackids": {
+      "etag": "\"f13-65d55d44f09f3-df\"",
+      "file_path": "documentation/Cinematic/cnassetinfo-8ja4t/videocompositiontrackids.md",
+      "hash": "c8aea81ae894fab3d98e3dab95ef2b31403cd8c0d8d554814e9b7b44c331856f"
+    },
+    "https://developer.apple.com/documentation/cinematic/cnassetinfo-8ja4t/videocompositiontracks": {
+      "etag": "\"ec3-65d55d44f09f3-df\"",
+      "file_path": "documentation/Cinematic/cnassetinfo-8ja4t/videocompositiontracks.md",
+      "hash": "5fb5253a5d1c0e1f8e9d6d77c4f22d6820e4bec0af36f18c9a80653970cc76f6"
+    },
     "https://developer.apple.com/documentation/cinematic/cnassetpreprocessconfiguration-5u7dk": {
       "etag": "\"165b-65d55d453cde3-df\"",
       "file_path": "documentation/Cinematic/cnassetpreprocessconfiguration-5u7dk.md",
@@ -164,6 +294,81 @@
       "etag": "\"17c7-65d55d44f09f3-df\"",
       "file_path": "documentation/Cinematic/cnassetpreprocessconfiguration-5u7dk/referencesourceassettracks.md",
       "hash": "a43a796a49a0c379362b147b7f446a23dba71fe64a5ce097505cfb96db02afe4"
+    },
+    "https://developer.apple.com/documentation/cinematic/cnassetpreprocessconfiguration-7xlwe": {
+      "etag": "\"1909-65d55d447286e-df\"",
+      "file_path": "documentation/Cinematic/cnassetpreprocessconfiguration-7xlwe.md",
+      "hash": "5029cbcb04209b459725906d2d9050588b5b90c9a4109dd7b131c372030a242c"
+    },
+    "https://developer.apple.com/documentation/cinematic/cnassetpreprocessconfiguration-7xlwe/destinationasseturl": {
+      "etag": "\"115b-65d55d4556f6d-df\"",
+      "file_path": "documentation/Cinematic/cnassetpreprocessconfiguration-7xlwe/destinationasseturl.md",
+      "hash": "fda3f6682ff299b4039f3dbbfc53fa1be45836878699b317ebd7643bceb179b9"
+    },
+    "https://developer.apple.com/documentation/cinematic/cnassetpreprocessconfiguration-7xlwe/initwithdestinationasseturl:": {
+      "etag": "\"1248-65d55d4556f6d-df\"",
+      "file_path": "documentation/Cinematic/cnassetpreprocessconfiguration-7xlwe/initwithdestinationasseturl_.md",
+      "hash": "bb50ca6b51bb0dbcd8a27b95a8b628471131538626a7477e1e85b16f45fe6668"
+    },
+    "https://developer.apple.com/documentation/cinematic/cnassetpreprocessconfiguration-7xlwe/referencesourceassettracks": {
+      "etag": "\"1501-65d55d4556f6d-df\"",
+      "file_path": "documentation/Cinematic/cnassetpreprocessconfiguration-7xlwe/referencesourceassettracks.md",
+      "hash": "9210aee788df944db3472067af0db662a3749d7db65191707da97f98dfa5fed8"
+    },
+    "https://developer.apple.com/documentation/cinematic/cnassetspatialaudioinfo-57yc5": {
+      "etag": "\"2fbe-65d55d44f09f3-df\"",
+      "file_path": "documentation/Cinematic/cnassetspatialaudioinfo-57yc5.md",
+      "hash": "ee76321465b2f533704d8483fdc3d34c010fd75be677154ababab283e63ade82"
+    },
+    "https://developer.apple.com/documentation/cinematic/cnassetspatialaudioinfo-57yc5/assetreaderoutputsettingsforcontenttype:": {
+      "etag": "\"165a-65d55d451e1c6-df\"",
+      "file_path": "documentation/Cinematic/cnassetspatialaudioinfo-57yc5/assetreaderoutputsettingsforcontenttype_.md",
+      "hash": "dee1776b8fbf104fb20e831a0948d6505d118296b5cdd49713d5bbb79ee6fc11"
+    },
+    "https://developer.apple.com/documentation/cinematic/cnassetspatialaudioinfo-57yc5/assetwriterinputsettingsforcontenttype:": {
+      "etag": "\"153a-65d55d451e1c6-df\"",
+      "file_path": "documentation/Cinematic/cnassetspatialaudioinfo-57yc5/assetwriterinputsettingsforcontenttype_.md",
+      "hash": "2a1b88a4d569736a194873ddcb8591a615541dc6b3d429ce726ae77830ac6790"
+    },
+    "https://developer.apple.com/documentation/cinematic/cnassetspatialaudioinfo-57yc5/audiomixwitheffectintensity:renderingstyle:": {
+      "etag": "\"1acd-65d55d451e1c6-df\"",
+      "file_path": "documentation/Cinematic/cnassetspatialaudioinfo-57yc5/audiomixwitheffectintensity_renderingstyle_.md",
+      "hash": "52abdbce2c8f1a3b5da478681cfa3d8e9438ea7f3bfd34e383e5cada5bcf1cf5"
+    },
+    "https://developer.apple.com/documentation/cinematic/cnassetspatialaudioinfo-57yc5/checkifcontainsspatialaudio:completionhandler:": {
+      "etag": "\"1896-65d55d451e1c6-df\"",
+      "file_path": "documentation/Cinematic/cnassetspatialaudioinfo-57yc5/checkifcontainsspatialaudio_completionhandler_.md",
+      "hash": "16984fd59ba2b702fc9fe912c7bd1752eb6b2413940a4533bfec5e8d2b2f6786"
+    },
+    "https://developer.apple.com/documentation/cinematic/cnassetspatialaudioinfo-57yc5/defaulteffectintensity": {
+      "etag": "\"e97-65d55d451e1c6-df\"",
+      "file_path": "documentation/Cinematic/cnassetspatialaudioinfo-57yc5/defaulteffectintensity.md",
+      "hash": "daf34c36a895fdcafba3f81b66104e950d61104cdc6eb677d32fdcc0b2646fd9"
+    },
+    "https://developer.apple.com/documentation/cinematic/cnassetspatialaudioinfo-57yc5/defaultrenderingstyle": {
+      "etag": "\"13bf-65d55d451e1c6-df\"",
+      "file_path": "documentation/Cinematic/cnassetspatialaudioinfo-57yc5/defaultrenderingstyle.md",
+      "hash": "deec5000f6a249930ede40bd6f9337270d20fc49751acb27b80197a7ce79e13b"
+    },
+    "https://developer.apple.com/documentation/cinematic/cnassetspatialaudioinfo-57yc5/defaultspatialaudiotrack": {
+      "etag": "\"126a-65d55d451e1c6-df\"",
+      "file_path": "documentation/Cinematic/cnassetspatialaudioinfo-57yc5/defaultspatialaudiotrack.md",
+      "hash": "a43ec03fc668c6eab8a4298ce9f3e9f748e1086fb10d9115f44eb1f6d41d7a6f"
+    },
+    "https://developer.apple.com/documentation/cinematic/cnassetspatialaudioinfo-57yc5/issupported": {
+      "etag": "\"105b-65d55d451e1c6-df\"",
+      "file_path": "documentation/Cinematic/cnassetspatialaudioinfo-57yc5/issupported.md",
+      "hash": "f9d17d6e4509e17de4346cd39cf97efc2a7b5ae52c625af2f637ec4523526099"
+    },
+    "https://developer.apple.com/documentation/cinematic/cnassetspatialaudioinfo-57yc5/loadfromasset:completionhandler:": {
+      "etag": "\"1a70-65d55d451e1c6-df\"",
+      "file_path": "documentation/Cinematic/cnassetspatialaudioinfo-57yc5/loadfromasset_completionhandler_.md",
+      "hash": "e70d847c95bf948ec45fe28c3519d1dbd1a7e2dbe44a12e671d9dd1d3010b3e1"
+    },
+    "https://developer.apple.com/documentation/cinematic/cnassetspatialaudioinfo-57yc5/spatialaudiomixmetadata": {
+      "etag": "\"131b-65d55d451e1c6-df\"",
+      "file_path": "documentation/Cinematic/cnassetspatialaudioinfo-57yc5/spatialaudiomixmetadata.md",
+      "hash": "694e2011d3363241eeacb9d20ea63ec078b0b7301142fe3b08600b66bf0ab7d9"
     },
     "https://developer.apple.com/documentation/cinematic/cnassetspatialaudioinfo-7hdev": {
       "etag": "\"3e25-65d55d45033da-df\"",
@@ -224,6 +429,21 @@
       "etag": "\"14f7-65d55d447286e-df\"",
       "file_path": "documentation/Cinematic/cnassetspatialaudioinfo-7hdev/spatialaudiomixmetadata.md",
       "hash": "6bebd7a0aa837b6ecae481b945205226e41eac829ef1df60c1db09343781dba1"
+    },
+    "https://developer.apple.com/documentation/cinematic/cnboundsprediction-c.class": {
+      "etag": "\"1f9c-65d55d451e1c6-df\"",
+      "file_path": "documentation/Cinematic/cnboundsprediction-c.class.md",
+      "hash": "0313cbf60bca858acf9308bdff5aabce9b997afdfb7b54af2212989bb6822b2d"
+    },
+    "https://developer.apple.com/documentation/cinematic/cnboundsprediction-c.class/confidence": {
+      "etag": "\"e28-65d55d453cde3-df\"",
+      "file_path": "documentation/Cinematic/cnboundsprediction-c.class/confidence.md",
+      "hash": "4fd00326424a6520f0732ee39296d9019a348e36223b78504721217ba16a5ce2"
+    },
+    "https://developer.apple.com/documentation/cinematic/cnboundsprediction-c.class/normalizedbounds": {
+      "etag": "\"11ce-65d55d453cde3-df\"",
+      "file_path": "documentation/Cinematic/cnboundsprediction-c.class/normalizedbounds.md",
+      "hash": "e4a7cfb18bdfc5790133afa3abc796988536a251ce668748eb5d78c9dc794d56"
     },
     "https://developer.apple.com/documentation/cinematic/cnboundsprediction-swift.struct": {
       "etag": "\"1c52-65d55d45033da-df\"",
@@ -395,6 +615,31 @@
       "file_path": "documentation/Cinematic/cncompositioninfo-7eunn/inserttimerange(_,of,at).md",
       "hash": "7918fcc2a591310fc8e8963d3095e5a29cf21c82a86e585536bc4f78eabb01bb"
     },
+    "https://developer.apple.com/documentation/cinematic/cncompositioninfo-vzoh": {
+      "etag": "\"1a52-65d55d453cde3-df\"",
+      "file_path": "documentation/Cinematic/cncompositioninfo-vzoh.md",
+      "hash": "47e19b1fd323e07cd1322549fc52d817ba8c4fbb2f641c3b5661d4e9608cef1f"
+    },
+    "https://developer.apple.com/documentation/cinematic/cncompositioninfo-vzoh/inserttimerange:ofcinematicassetinfo:attime:error:": {
+      "etag": "\"23d8-65d55d451e1c6-df\"",
+      "file_path": "documentation/Cinematic/cncompositioninfo-vzoh/inserttimerange_ofcinematicassetinfo_attime_error_.md",
+      "hash": "7dc99b8a73dd5fe859eede1e660725ed52085ca526210829a58f2d3e0ccb2eec"
+    },
+    "https://developer.apple.com/documentation/cinematic/cncustomdetectiontrack-891hc": {
+      "etag": "\"2102-65d55d451e1c6-df\"",
+      "file_path": "documentation/Cinematic/cncustomdetectiontrack-891hc.md",
+      "hash": "8f657b14f738b1f6edc0a691c93fb24a64f4c44a6423f12e50beca39ddbbff45"
+    },
+    "https://developer.apple.com/documentation/cinematic/cncustomdetectiontrack-891hc/alldetections": {
+      "etag": "\"ea1-65d55d453cde3-df\"",
+      "file_path": "documentation/Cinematic/cncustomdetectiontrack-891hc/alldetections.md",
+      "hash": "f97d2379a6e6dc4a34527310686a728ecf653ac056474e2c074d9e5291b54c0e"
+    },
+    "https://developer.apple.com/documentation/cinematic/cncustomdetectiontrack-891hc/initwithdetections:smooth:": {
+      "etag": "\"15f8-65d55d453cde3-df\"",
+      "file_path": "documentation/Cinematic/cncustomdetectiontrack-891hc/initwithdetections_smooth_.md",
+      "hash": "193a1041019e73efd16aae6c85212326271353a8c3ffea7d39dc9d7887ccb15c"
+    },
     "https://developer.apple.com/documentation/cinematic/cncustomdetectiontrack-9a2zo": {
       "etag": "\"2777-65d55d451e1c6-df\"",
       "file_path": "documentation/Cinematic/cncustomdetectiontrack-9a2zo.md",
@@ -409,6 +654,51 @@
       "etag": "\"1aa5-65d55d44d79f0-df\"",
       "file_path": "documentation/Cinematic/cncustomdetectiontrack-9a2zo/init(detections,smooth).md",
       "hash": "a1435f5d0cba14f2b91268f21b5bcda38af87719553186ce7a96064838ce012f"
+    },
+    "https://developer.apple.com/documentation/cinematic/cndecision-c.class": {
+      "etag": "\"35fe-65d55d453cde3-df\"",
+      "file_path": "documentation/Cinematic/cndecision-c.class.md",
+      "hash": "a035d804920ae2693b751847c03bdfbc18228617e43631851c8f21d11fc2e84d"
+    },
+    "https://developer.apple.com/documentation/cinematic/cndecision-c.class/detectiongroupid": {
+      "etag": "\"13b3-65d55d445d6a8-df\"",
+      "file_path": "documentation/Cinematic/cndecision-c.class/detectiongroupid.md",
+      "hash": "38b3dfcfb9cb581477cbb97db773807a80073eab8f4d20186179b8640a4b671d"
+    },
+    "https://developer.apple.com/documentation/cinematic/cndecision-c.class/detectionid": {
+      "etag": "\"1359-65d55d445d6a8-df\"",
+      "file_path": "documentation/Cinematic/cndecision-c.class/detectionid.md",
+      "hash": "2b3ce22ab192716130bc0e76b2ae9be2ec8ba1aa05aebccc78a398bd1c5b10fb"
+    },
+    "https://developer.apple.com/documentation/cinematic/cndecision-c.class/groupdecision": {
+      "etag": "\"1091-65d55d445d6a8-df\"",
+      "file_path": "documentation/Cinematic/cndecision-c.class/groupdecision.md",
+      "hash": "eaa9dab560e79a68c9e64a652d4ec0e71f02f47822b177e8df75d8f3d35d070b"
+    },
+    "https://developer.apple.com/documentation/cinematic/cndecision-c.class/initwithtime:detectiongroupid:strong:": {
+      "etag": "\"202a-65d55d447286e-df\"",
+      "file_path": "documentation/Cinematic/cndecision-c.class/initwithtime_detectiongroupid_strong_.md",
+      "hash": "46207ba518de25b30035514deb596567f87ccd1fd4b5d95c7dd2a8fd718a7e04"
+    },
+    "https://developer.apple.com/documentation/cinematic/cndecision-c.class/initwithtime:detectionid:strong:": {
+      "etag": "\"1fd8-65d55d445d6a8-df\"",
+      "file_path": "documentation/Cinematic/cndecision-c.class/initwithtime_detectionid_strong_.md",
+      "hash": "fc176122e0a800f53a35102b4d695859ffec4f6559b4b61a775708e306ddd5f0"
+    },
+    "https://developer.apple.com/documentation/cinematic/cndecision-c.class/strongdecision": {
+      "etag": "\"1195-65d55d445d6a8-df\"",
+      "file_path": "documentation/Cinematic/cndecision-c.class/strongdecision.md",
+      "hash": "5a5fa852f53fb92d864ed4e63e5cd682557aad145a6759b7f3c6ac6064c74dd9"
+    },
+    "https://developer.apple.com/documentation/cinematic/cndecision-c.class/time": {
+      "etag": "\"10eb-65d55d445d6a8-df\"",
+      "file_path": "documentation/Cinematic/cndecision-c.class/time.md",
+      "hash": "f36be2c97b5b333411eabfa05e2214a1d42d4e0315e2c4b5828f2e886bbbd218"
+    },
+    "https://developer.apple.com/documentation/cinematic/cndecision-c.class/userdecision": {
+      "etag": "\"10b8-65d55d445d6a8-df\"",
+      "file_path": "documentation/Cinematic/cndecision-c.class/userdecision.md",
+      "hash": "3900c9f10ab38b6a02d758f1f6d9f9cdc949f28addf35edbb78f6fda76529076"
     },
     "https://developer.apple.com/documentation/cinematic/cndecision-swift.struct": {
       "etag": "\"40e3-65d55d453cde3-df\"",
@@ -459,6 +749,66 @@
       "etag": "\"1cb1-65d55d4556f6d-df\"",
       "file_path": "documentation/Cinematic/cndecision-swift.struct/time.md",
       "hash": "d66e363ab0c5fc8d55c4792cd8ef2f19c6c8616e3803575b5dd1e907b0119c8f"
+    },
+    "https://developer.apple.com/documentation/cinematic/cndetection-c.class": {
+      "etag": "\"4275-65d55d453cde3-df\"",
+      "file_path": "documentation/Cinematic/cndetection-c.class.md",
+      "hash": "e87a333f0d4c388d2dec144b0a7b9a3b723b4c3585d586fae5189a6aeb1f30c1"
+    },
+    "https://developer.apple.com/documentation/cinematic/cndetection-c.class/accessibilitylabelfordetectiontype:": {
+      "etag": "\"1a3f-65d55d453cde3-df\"",
+      "file_path": "documentation/Cinematic/cndetection-c.class/accessibilitylabelfordetectiontype_.md",
+      "hash": "02c88371ec86bbf791b01f1400d6b7a854cc273a1cb680d07320ace3e20f58c4"
+    },
+    "https://developer.apple.com/documentation/cinematic/cndetection-c.class/detectiongroupid": {
+      "etag": "\"13a1-65d55d453cde3-df\"",
+      "file_path": "documentation/Cinematic/cndetection-c.class/detectiongroupid.md",
+      "hash": "618c5c307bfc36194711f82c43824006e0680a4a97d3c15c5ee074bd7c01dcc9"
+    },
+    "https://developer.apple.com/documentation/cinematic/cndetection-c.class/detectionid": {
+      "etag": "\"149e-65d55d453cde3-df\"",
+      "file_path": "documentation/Cinematic/cndetection-c.class/detectionid.md",
+      "hash": "51a45fd9d11e456ac9e9b9a0b9970571859d9f9ee650f112112d3165e5e374a5"
+    },
+    "https://developer.apple.com/documentation/cinematic/cndetection-c.class/detectiontype": {
+      "etag": "\"1315-65d55d453cde3-df\"",
+      "file_path": "documentation/Cinematic/cndetection-c.class/detectiontype.md",
+      "hash": "fd6ae6a56194906b9d459599483f26b2f75ee164a630617a475a08440f9bf44c"
+    },
+    "https://developer.apple.com/documentation/cinematic/cndetection-c.class/disparityinnormalizedrect:sourcedisparity:detectiontype:priordisparity:": {
+      "etag": "\"253e-65d55d453cde3-df\"",
+      "file_path": "documentation/Cinematic/cndetection-c.class/disparityinnormalizedrect_sourcedisparity_detectiontype_priordisparity_.md",
+      "hash": "7a77ede50a9d0948dffac3a6c33d16b3c90a31c9c9bb93ec676337ffd65a367c"
+    },
+    "https://developer.apple.com/documentation/cinematic/cndetection-c.class/focusdisparity": {
+      "etag": "\"e69-65d55d453cde3-df\"",
+      "file_path": "documentation/Cinematic/cndetection-c.class/focusdisparity.md",
+      "hash": "d5704ef4d61556fc0f6891841ae80031ae1e55e48bcfdbf3997389c9323461c1"
+    },
+    "https://developer.apple.com/documentation/cinematic/cndetection-c.class/initwithtime:detectiontype:normalizedrect:focusdisparity:": {
+      "etag": "\"21b0-65d55d453cde3-df\"",
+      "file_path": "documentation/Cinematic/cndetection-c.class/initwithtime_detectiontype_normalizedrect_focusdisparity_.md",
+      "hash": "f1b003b394d5dc0b1d2301e38458a13b1372f51a570a5b92d012118de6e2a529"
+    },
+    "https://developer.apple.com/documentation/cinematic/cndetection-c.class/isvaliddetectiongroupid:": {
+      "etag": "\"185b-65d55d453cde3-df\"",
+      "file_path": "documentation/Cinematic/cndetection-c.class/isvaliddetectiongroupid_.md",
+      "hash": "f090efc1e1a429679239ce8f31e3552e1556b725bbccb98abb42b56c8e060985"
+    },
+    "https://developer.apple.com/documentation/cinematic/cndetection-c.class/isvaliddetectionid:": {
+      "etag": "\"17d2-65d55d453cde3-df\"",
+      "file_path": "documentation/Cinematic/cndetection-c.class/isvaliddetectionid_.md",
+      "hash": "d5c6c6f52319076ad18df5f0d6f25e92a4b033876c0f7af71d132e31c49ec7ba"
+    },
+    "https://developer.apple.com/documentation/cinematic/cndetection-c.class/normalizedrect": {
+      "etag": "\"11c5-65d55d453cde3-df\"",
+      "file_path": "documentation/Cinematic/cndetection-c.class/normalizedrect.md",
+      "hash": "4a389ad4859121d7955bb30f4b31b0393f93dd7f0cc41b8f65005334e2345441"
+    },
+    "https://developer.apple.com/documentation/cinematic/cndetection-c.class/time": {
+      "etag": "\"10db-65d55d453cde3-df\"",
+      "file_path": "documentation/Cinematic/cndetection-c.class/time.md",
+      "hash": "0c039d939370e434f2a4982ae184ec8bf6998422e0773a5a7b36ec94d978d1ab"
     },
     "https://developer.apple.com/documentation/cinematic/cndetection-swift.struct": {
       "etag": "\"4c1d-65d55d447286e-df\"",
@@ -585,6 +935,51 @@
       "file_path": "documentation/Cinematic/cndetectiontrack-2bxtd/isusercreated.md",
       "hash": "51aeb57d6535b79a3a595d4c90d7afaf12e0fd08b5b165dae298b04dd58e6fce"
     },
+    "https://developer.apple.com/documentation/cinematic/cndetectiontrack-61x7g": {
+      "etag": "\"370f-65d55d451e1c6-df\"",
+      "file_path": "documentation/Cinematic/cndetectiontrack-61x7g.md",
+      "hash": "0798c5a477f457de4381c91b4c8297aa9152d5de320f0cfa84ad3200857de059"
+    },
+    "https://developer.apple.com/documentation/cinematic/cndetectiontrack-61x7g/detectionatorbeforetime:": {
+      "etag": "\"1688-65d55d445d6a8-df\"",
+      "file_path": "documentation/Cinematic/cndetectiontrack-61x7g/detectionatorbeforetime_.md",
+      "hash": "acbcc7beb2da382c29a2ba11f8959a63181963e5520c430286576e1196b512d5"
+    },
+    "https://developer.apple.com/documentation/cinematic/cndetectiontrack-61x7g/detectiongroupid": {
+      "etag": "\"149b-65d55d445d6a8-df\"",
+      "file_path": "documentation/Cinematic/cndetectiontrack-61x7g/detectiongroupid.md",
+      "hash": "418e91fab991b3b002345a55a2a7c7051cf45d75aa3a36e5fe1490ee57e4e4cc"
+    },
+    "https://developer.apple.com/documentation/cinematic/cndetectiontrack-61x7g/detectionid": {
+      "etag": "\"13fc-65d55d445d6a8-df\"",
+      "file_path": "documentation/Cinematic/cndetectiontrack-61x7g/detectionid.md",
+      "hash": "ae1e58be03dd566a04789bbb1495447e55aa5f4cbd3919f31f1fe828e443d8ca"
+    },
+    "https://developer.apple.com/documentation/cinematic/cndetectiontrack-61x7g/detectionnearesttime:": {
+      "etag": "\"1666-65d55d445d6a8-df\"",
+      "file_path": "documentation/Cinematic/cndetectiontrack-61x7g/detectionnearesttime_.md",
+      "hash": "f2cb0224127374aa815a795e31a2668aa931261207c5ba9dcc1b1149dc654776"
+    },
+    "https://developer.apple.com/documentation/cinematic/cndetectiontrack-61x7g/detectionsintimerange:": {
+      "etag": "\"14c4-65d55d445d6a8-df\"",
+      "file_path": "documentation/Cinematic/cndetectiontrack-61x7g/detectionsintimerange_.md",
+      "hash": "da0464236a51bc2f1642ad857e1fe6edab27956ae1d68b863a00d6857f2a2118"
+    },
+    "https://developer.apple.com/documentation/cinematic/cndetectiontrack-61x7g/detectiontype": {
+      "etag": "\"13cc-65d55d445d6a8-df\"",
+      "file_path": "documentation/Cinematic/cndetectiontrack-61x7g/detectiontype.md",
+      "hash": "3f09fac98f45b22bc6ab5f51470c9468e9bde221b421c6bc3fad663b24af04fd"
+    },
+    "https://developer.apple.com/documentation/cinematic/cndetectiontrack-61x7g/discrete": {
+      "etag": "\"1211-65d55d445d6a8-df\"",
+      "file_path": "documentation/Cinematic/cndetectiontrack-61x7g/discrete.md",
+      "hash": "9338581c1f6aabc66d980e3c6b5c5ce338f1fe710cc1382325f309863e97e554"
+    },
+    "https://developer.apple.com/documentation/cinematic/cndetectiontrack-61x7g/usercreated": {
+      "etag": "\"1091-65d55d445d6a8-df\"",
+      "file_path": "documentation/Cinematic/cndetectiontrack-61x7g/usercreated.md",
+      "hash": "6f08d0d5ed565d17bf03235a9668a677df6730569301d788c46b2b0362cbaec8"
+    },
     "https://developer.apple.com/documentation/cinematic/cndetectiontype": {
       "etag": "\"77af-65d55d45033da-df\"",
       "file_path": "documentation/Cinematic/cndetectiontype.md",
@@ -654,6 +1049,31 @@
       "etag": "\"16c0-65d55d44f09f3-df\"",
       "file_path": "documentation/Cinematic/cndetectiontype/unknown.md",
       "hash": "789bdafc124e9d347a76051983dae1677697351c5476ca31097148f8eef6035f"
+    },
+    "https://developer.apple.com/documentation/cinematic/cnfixeddetectiontrack-5aei2": {
+      "etag": "\"2625-65d55d44d79f0-df\"",
+      "file_path": "documentation/Cinematic/cnfixeddetectiontrack-5aei2.md",
+      "hash": "20fa373f97a98ce280b2c0cfed73ab223ad7371db98f739bf4574cf7961e20c5"
+    },
+    "https://developer.apple.com/documentation/cinematic/cnfixeddetectiontrack-5aei2/focusdisparity": {
+      "etag": "\"f26-65d55d44f09f3-df\"",
+      "file_path": "documentation/Cinematic/cnfixeddetectiontrack-5aei2/focusdisparity.md",
+      "hash": "656be59765b4632f53fe6cb8c07eae24ce75a45261cfa95e2158d1d5b51dd738"
+    },
+    "https://developer.apple.com/documentation/cinematic/cnfixeddetectiontrack-5aei2/initwithfocusdisparity:": {
+      "etag": "\"103f-65d55d45033da-df\"",
+      "file_path": "documentation/Cinematic/cnfixeddetectiontrack-5aei2/initwithfocusdisparity_.md",
+      "hash": "152adf829ab99be91e972299948aaa13ff7e6af66545151b3d54956b40e53aee"
+    },
+    "https://developer.apple.com/documentation/cinematic/cnfixeddetectiontrack-5aei2/initwithoriginaldetection:": {
+      "etag": "\"1663-65d55d44f09f3-df\"",
+      "file_path": "documentation/Cinematic/cnfixeddetectiontrack-5aei2/initwithoriginaldetection_.md",
+      "hash": "faa8f46aa7ebdee633123746133f0e6c459f20523183cad1f4f77a6f67d7e18f"
+    },
+    "https://developer.apple.com/documentation/cinematic/cnfixeddetectiontrack-5aei2/originaldetection": {
+      "etag": "\"13db-65d55d45033da-df\"",
+      "file_path": "documentation/Cinematic/cnfixeddetectiontrack-5aei2/originaldetection.md",
+      "hash": "ac77e626fc9b00ffec35d2c00b4b96ee35f87f074866a294fe4b51298d7c72df"
     },
     "https://developer.apple.com/documentation/cinematic/cnfixeddetectiontrack-93rrw": {
       "etag": "\"2d19-65d55d451e1c6-df\"",
@@ -784,6 +1204,46 @@
       "etag": "\"2c3d-65d55d44d79f0-df\"",
       "file_path": "documentation/Cinematic/cnobjecttracker-1n598/starttracking(at,within,sourceimage,sourcedisparity).md",
       "hash": "a46e2bb2fb2ef67bee943b74a3ac61e82ff37adc8f1ce5d7bc788b499d335aa4"
+    },
+    "https://developer.apple.com/documentation/cinematic/cnobjecttracker-7aliq": {
+      "etag": "\"278c-65d55d453cde3-df\"",
+      "file_path": "documentation/Cinematic/cnobjecttracker-7aliq.md",
+      "hash": "2ecb39b8a5bc9629d723cd986b24dd800ca9b488b2d47ae892b3cd6ee914da7d"
+    },
+    "https://developer.apple.com/documentation/cinematic/cnobjecttracker-7aliq/continuetrackingat:sourceimage:sourcedisparity:": {
+      "etag": "\"2048-65d55d445d6a8-df\"",
+      "file_path": "documentation/Cinematic/cnobjecttracker-7aliq/continuetrackingat_sourceimage_sourcedisparity_.md",
+      "hash": "60a38fa2442e6b69f6f54015f1e77e4ed32e557a70804f731ac183e20a60b76b"
+    },
+    "https://developer.apple.com/documentation/cinematic/cnobjecttracker-7aliq/findobjectatpoint:sourceimage:": {
+      "etag": "\"1dce-65d55d445d6a8-df\"",
+      "file_path": "documentation/Cinematic/cnobjecttracker-7aliq/findobjectatpoint_sourceimage_.md",
+      "hash": "53cdd3657748387297afbe839fa1490f9f37acb9b7f52aeaf9881f532ba17968"
+    },
+    "https://developer.apple.com/documentation/cinematic/cnobjecttracker-7aliq/finishdetectiontrack": {
+      "etag": "\"129e-65d55d445d6a8-df\"",
+      "file_path": "documentation/Cinematic/cnobjecttracker-7aliq/finishdetectiontrack.md",
+      "hash": "636e358d148423b6420aae07c25da0c39e77cb2f221b6fffb03784975fadae27"
+    },
+    "https://developer.apple.com/documentation/cinematic/cnobjecttracker-7aliq/initwithcommandqueue:": {
+      "etag": "\"10b5-65d55d445d6a8-df\"",
+      "file_path": "documentation/Cinematic/cnobjecttracker-7aliq/initwithcommandqueue_.md",
+      "hash": "01648deaf26b26219b630f5987a417fbd3b1b88e970466ca13d40b2c50b9f649"
+    },
+    "https://developer.apple.com/documentation/cinematic/cnobjecttracker-7aliq/issupported": {
+      "etag": "\"107c-65d55d445d6a8-df\"",
+      "file_path": "documentation/Cinematic/cnobjecttracker-7aliq/issupported.md",
+      "hash": "def3909b8374cf683f68c8cc14753b6f68e52322cb9761f09aa487dc056a7fd2"
+    },
+    "https://developer.apple.com/documentation/cinematic/cnobjecttracker-7aliq/resetdetectiontrack": {
+      "etag": "\"e60-65d55d445d6a8-df\"",
+      "file_path": "documentation/Cinematic/cnobjecttracker-7aliq/resetdetectiontrack.md",
+      "hash": "2a425e6ceb2b3ff56c20fdeb59ab0adb41b37da7a03fe36b907ba509b1ba7288"
+    },
+    "https://developer.apple.com/documentation/cinematic/cnobjecttracker-7aliq/starttrackingat:within:sourceimage:sourcedisparity:": {
+      "etag": "\"2543-65d55d445d6a8-df\"",
+      "file_path": "documentation/Cinematic/cnobjecttracker-7aliq/starttrackingat_within_sourceimage_sourcedisparity_.md",
+      "hash": "edb5ed15d5ac95aa60a72d58c12ca23b56f5837b814a668de41eb0d504e9ddba"
     },
     "https://developer.apple.com/documentation/cinematic/cnrenderingquality": {
       "etag": "\"4127-65d55d451e1c6-df\"",
@@ -924,6 +1384,101 @@
       "etag": "\"1268-65d55d45033da-df\"",
       "file_path": "documentation/Cinematic/cnrenderingsession-1hzh8/sourcepixelformattypes.md",
       "hash": "07fdd71f882b36403c8f41438aa77e12afbe9fcdbec27910115ec220670549cf"
+    },
+    "https://developer.apple.com/documentation/cinematic/cnrenderingsession-8yghc": {
+      "etag": "\"3b7c-65d55d45033da-df\"",
+      "file_path": "documentation/Cinematic/cnrenderingsession-8yghc.md",
+      "hash": "dfcce006e1d8a37e784d191f66c5ea1f2751b65a55241be4d83c8c1b5dff23de"
+    },
+    "https://developer.apple.com/documentation/cinematic/cnrenderingsession-8yghc/commandqueue": {
+      "etag": "\"e95-65d55d45033da-df\"",
+      "file_path": "documentation/Cinematic/cnrenderingsession-8yghc/commandqueue.md",
+      "hash": "15833fc398857fe7c78e639359d19a1e1f9f627858856a14a97b9d6675090416"
+    },
+    "https://developer.apple.com/documentation/cinematic/cnrenderingsession-8yghc/destinationpixelformattypes": {
+      "etag": "\"1012-65d55d45033da-df\"",
+      "file_path": "documentation/Cinematic/cnrenderingsession-8yghc/destinationpixelformattypes.md",
+      "hash": "9818d5c95d1a9041c2638a098ee03d43ae2e3773f147bc9c61deeae30eb5b0c0"
+    },
+    "https://developer.apple.com/documentation/cinematic/cnrenderingsession-8yghc/encoderendertocommandbuffer:frameattributes:sourceimage:sourcedisparity:destinationimage:": {
+      "etag": "\"243e-65d55d45033da-df\"",
+      "file_path": "documentation/Cinematic/cnrenderingsession-8yghc/encoderendertocommandbuffer_frameattributes_sourceimage_sourcedisparity_destinationimage_.md",
+      "hash": "1ee213df04a19922f7b475cd2d5c248845b71da3f1d509e42e74e9a3790bb08b"
+    },
+    "https://developer.apple.com/documentation/cinematic/cnrenderingsession-8yghc/encoderendertocommandbuffer:frameattributes:sourceimage:sourcedisparity:destinationluma:destinationchroma:": {
+      "etag": "\"2696-65d55d45033da-df\"",
+      "file_path": "documentation/Cinematic/cnrenderingsession-8yghc/encoderendertocommandbuffer_frameattributes_sourceimage_sourcedisparity_destinationluma_destinationchroma_.md",
+      "hash": "62eea7bafdc8ff846acc7921bf4c3ec4f00e62f678e3609d2b917115d19998c8"
+    },
+    "https://developer.apple.com/documentation/cinematic/cnrenderingsession-8yghc/encoderendertocommandbuffer:frameattributes:sourceimage:sourcedisparity:destinationrgba:": {
+      "etag": "\"23fa-65d55d45033da-df\"",
+      "file_path": "documentation/Cinematic/cnrenderingsession-8yghc/encoderendertocommandbuffer_frameattributes_sourceimage_sourcedisparity_destinationrgba_.md",
+      "hash": "8d79099fedf041c85cf330c353bd13c61a00f4f28c09da215a339118480b05fa"
+    },
+    "https://developer.apple.com/documentation/cinematic/cnrenderingsession-8yghc/initwithcommandqueue:sessionattributes:preferredtransform:quality:": {
+      "etag": "\"2287-65d55d45033da-df\"",
+      "file_path": "documentation/Cinematic/cnrenderingsession-8yghc/initwithcommandqueue_sessionattributes_preferredtransform_quality_.md",
+      "hash": "105359812d6b8c5f92f70317eba6c943e4878316b00c9e6d3def4e5b7e8e1b3f"
+    },
+    "https://developer.apple.com/documentation/cinematic/cnrenderingsession-8yghc/preferredtransform": {
+      "etag": "\"1205-65d55d45033da-df\"",
+      "file_path": "documentation/Cinematic/cnrenderingsession-8yghc/preferredtransform.md",
+      "hash": "e3471253cedba1d20b2349aceb9cfdec39eb968afe9da32cb5eec0df52512c42"
+    },
+    "https://developer.apple.com/documentation/cinematic/cnrenderingsession-8yghc/quality": {
+      "etag": "\"12ea-65d55d45033da-df\"",
+      "file_path": "documentation/Cinematic/cnrenderingsession-8yghc/quality.md",
+      "hash": "137e5cdb73eddeb838d945a26ddfcba8c3fec9a6906cf1db22b0975a995ed3b1"
+    },
+    "https://developer.apple.com/documentation/cinematic/cnrenderingsession-8yghc/sessionattributes": {
+      "etag": "\"112a-65d55d45033da-df\"",
+      "file_path": "documentation/Cinematic/cnrenderingsession-8yghc/sessionattributes.md",
+      "hash": "69500d49d1d836f2616f75ee56c8932a3bf6e0bcca3a4a01027e3a1354745ffa"
+    },
+    "https://developer.apple.com/documentation/cinematic/cnrenderingsession-8yghc/sourcepixelformattypes": {
+      "etag": "\"f32-65d55d45033da-df\"",
+      "file_path": "documentation/Cinematic/cnrenderingsession-8yghc/sourcepixelformattypes.md",
+      "hash": "3d14b0539f35a9a4b9d4d92933378580c107abec2b5cf8e0a9bffbe54abeb41f"
+    },
+    "https://developer.apple.com/documentation/cinematic/cnrenderingsessionattributes": {
+      "etag": "\"21c8-65d55d451e1c6-df\"",
+      "file_path": "documentation/Cinematic/cnrenderingsessionattributes.md",
+      "hash": "fac568957d452bc39e5f6d33d5f15f7c8444ccea81b3911503d84f6dfb7b43cf"
+    },
+    "https://developer.apple.com/documentation/cinematic/cnrenderingsessionattributes/loadfromasset:completionhandler:": {
+      "etag": "\"1b2e-65d55d445d6a8-df\"",
+      "file_path": "documentation/Cinematic/cnrenderingsessionattributes/loadfromasset_completionhandler_.md",
+      "hash": "48adf45854408edd16402cb48cf626d985ba99416ec381236cbe0c2fedd6ba4b"
+    },
+    "https://developer.apple.com/documentation/cinematic/cnrenderingsessionattributes/renderingversion": {
+      "etag": "\"123d-65d55d445d6a8-df\"",
+      "file_path": "documentation/Cinematic/cnrenderingsessionattributes/renderingversion.md",
+      "hash": "59bb15cd1cce542460a84ce8d086952c414623fdc88253f61f32a22db44f23ec"
+    },
+    "https://developer.apple.com/documentation/cinematic/cnrenderingsessionframeattributes": {
+      "etag": "\"2fd4-65d55d453cde3-df\"",
+      "file_path": "documentation/Cinematic/cnrenderingsessionframeattributes.md",
+      "hash": "a5770421b8cacbd35897fd5bbef6ad6cadfcf03b3f1415a709f290a69b46b628"
+    },
+    "https://developer.apple.com/documentation/cinematic/cnrenderingsessionframeattributes/fnumber": {
+      "etag": "\"e90-65d55d4556f6d-df\"",
+      "file_path": "documentation/Cinematic/cnrenderingsessionframeattributes/fnumber.md",
+      "hash": "b65ba08c6ca19ab7f5398cdf592225dddaf67a8d420120e263fcf4be9f79adf7"
+    },
+    "https://developer.apple.com/documentation/cinematic/cnrenderingsessionframeattributes/focusdisparity": {
+      "etag": "\"ec8-65d55d4556f6d-df\"",
+      "file_path": "documentation/Cinematic/cnrenderingsessionframeattributes/focusdisparity.md",
+      "hash": "cb0a9a14f42e7082a0684d8dfa773af0f564891d2b684cb454df8bec7652fc3b"
+    },
+    "https://developer.apple.com/documentation/cinematic/cnrenderingsessionframeattributes/initwithsamplebuffer:sessionattributes:": {
+      "etag": "\"1bfa-65d55d4556f6d-df\"",
+      "file_path": "documentation/Cinematic/cnrenderingsessionframeattributes/initwithsamplebuffer_sessionattributes_.md",
+      "hash": "f23846f91526a08c80f135d78f741fa9946584288c30cc4293f892531297ef24"
+    },
+    "https://developer.apple.com/documentation/cinematic/cnrenderingsessionframeattributes/initwithtimedmetadatagroup:sessionattributes:": {
+      "etag": "\"1b97-65d55d4556f6d-df\"",
+      "file_path": "documentation/Cinematic/cnrenderingsessionframeattributes/initwithtimedmetadatagroup_sessionattributes_.md",
+      "hash": "008cf69b5c5900d8466553ae34b72a3609984b557d7504ea7198ca68eda81b26"
     },
     "https://developer.apple.com/documentation/cinematic/cnresourcestatus": {
       "etag": "\"3ca9-65d55d445d6a8-df\"",
@@ -1155,6 +1710,206 @@
       "file_path": "documentation/Cinematic/cnscript-1ispe/userdecisions(in).md",
       "hash": "4ace5e95996f1e47166c9ddc2078524c8fe6e160461374022af8c991131647b2"
     },
+    "https://developer.apple.com/documentation/cinematic/cnscript-9e1zn": {
+      "etag": "\"5dc1-65d55d451e1c6-df\"",
+      "file_path": "documentation/Cinematic/cnscript-9e1zn.md",
+      "hash": "806cb3393d6d1d818b7a674abd8edbfad99e72fde8db300fc854d3c659b25902"
+    },
+    "https://developer.apple.com/documentation/cinematic/cnscript-9e1zn/adddetectiontrack:": {
+      "etag": "\"1802-65d55d447286e-df\"",
+      "file_path": "documentation/Cinematic/cnscript-9e1zn/adddetectiontrack_.md",
+      "hash": "19796246c1cdda0febb582921e61e3a5a539ef8b6e853fcef6d9061b76e0f428"
+    },
+    "https://developer.apple.com/documentation/cinematic/cnscript-9e1zn/addeddetectiontracks": {
+      "etag": "\"f05-65d55d447286e-df\"",
+      "file_path": "documentation/Cinematic/cnscript-9e1zn/addeddetectiontracks.md",
+      "hash": "955630fafd8de26b80496987b0407b0b628516c99ca31fbcc584dcbd8d1828f6"
+    },
+    "https://developer.apple.com/documentation/cinematic/cnscript-9e1zn/adduserdecision:": {
+      "etag": "\"16b0-65d55d447286e-df\"",
+      "file_path": "documentation/Cinematic/cnscript-9e1zn/adduserdecision_.md",
+      "hash": "3e9a55eeeee579d787aa3aa9017d5073a26f6dd0b7eb93633a96e83556a721b8"
+    },
+    "https://developer.apple.com/documentation/cinematic/cnscript-9e1zn/basedecisionsintimerange:": {
+      "etag": "\"14b2-65d55d447286e-df\"",
+      "file_path": "documentation/Cinematic/cnscript-9e1zn/basedecisionsintimerange_.md",
+      "hash": "6f5e5d37ae14427c59b5a0e9ff7580fa4df8e9ea1373bddf36f7b910bd3a872d"
+    },
+    "https://developer.apple.com/documentation/cinematic/cnscript-9e1zn/changes": {
+      "etag": "\"11fa-65d55d447286e-df\"",
+      "file_path": "documentation/Cinematic/cnscript-9e1zn/changes.md",
+      "hash": "0eb8b6211afd6557fbe359bccbe7a13b0e3097f3ce5e0969226bd8b0f4cb1078"
+    },
+    "https://developer.apple.com/documentation/cinematic/cnscript-9e1zn/changestrimmedbytimerange:": {
+      "etag": "\"16bb-65d55d447286e-df\"",
+      "file_path": "documentation/Cinematic/cnscript-9e1zn/changestrimmedbytimerange_.md",
+      "hash": "5f7d701b801400fb1941261b69a17d276eca85337ce7a00bb3a6720b98f453a0"
+    },
+    "https://developer.apple.com/documentation/cinematic/cnscript-9e1zn/decisionaftertime:": {
+      "etag": "\"16c8-65d55d447286e-df\"",
+      "file_path": "documentation/Cinematic/cnscript-9e1zn/decisionaftertime_.md",
+      "hash": "362ce8cc28ffd935413d1020f73fbd65a85525687b7d3e956c93b6d88405f536"
+    },
+    "https://developer.apple.com/documentation/cinematic/cnscript-9e1zn/decisionattime:tolerance:": {
+      "etag": "\"180f-65d55d447286e-df\"",
+      "file_path": "documentation/Cinematic/cnscript-9e1zn/decisionattime_tolerance_.md",
+      "hash": "e84bc5493e929088f549124885bcf73a764928c235c0cbeacc2c2089b7326f35"
+    },
+    "https://developer.apple.com/documentation/cinematic/cnscript-9e1zn/decisionbeforetime:": {
+      "etag": "\"162c-65d55d447286e-df\"",
+      "file_path": "documentation/Cinematic/cnscript-9e1zn/decisionbeforetime_.md",
+      "hash": "531d0cafa2160caefff20510799daa6c95703e05b71851b2d35298df14823701"
+    },
+    "https://developer.apple.com/documentation/cinematic/cnscript-9e1zn/decisionsintimerange:": {
+      "etag": "\"1403-65d55d447286e-df\"",
+      "file_path": "documentation/Cinematic/cnscript-9e1zn/decisionsintimerange_.md",
+      "hash": "7b561caa9bda8fce65aada987336ed38272af0a99ff493805f37a29749f9fb9d"
+    },
+    "https://developer.apple.com/documentation/cinematic/cnscript-9e1zn/detectiontrackfordecision:": {
+      "etag": "\"15b8-65d55d447286e-df\"",
+      "file_path": "documentation/Cinematic/cnscript-9e1zn/detectiontrackfordecision_.md",
+      "hash": "b43ba8722a7d15e3f7e58a0b506ecd97befe748a935362b4bc60481a07b5a542"
+    },
+    "https://developer.apple.com/documentation/cinematic/cnscript-9e1zn/detectiontrackforid:": {
+      "etag": "\"18ab-65d55d447286e-df\"",
+      "file_path": "documentation/Cinematic/cnscript-9e1zn/detectiontrackforid_.md",
+      "hash": "63d4af560f749246b4eab723334ba6fcd90ce83f79b34f72b47eb15a9a48c3b4"
+    },
+    "https://developer.apple.com/documentation/cinematic/cnscript-9e1zn/fnumber": {
+      "etag": "\"f7a-65d55d447286e-df\"",
+      "file_path": "documentation/Cinematic/cnscript-9e1zn/fnumber.md",
+      "hash": "a27d9cd6d907d98ce365e54b11800927c3622f5e0b1701b48432a436dd88d9f2"
+    },
+    "https://developer.apple.com/documentation/cinematic/cnscript-9e1zn/frameattime:tolerance:": {
+      "etag": "\"17c4-65d55d447286e-df\"",
+      "file_path": "documentation/Cinematic/cnscript-9e1zn/frameattime_tolerance_.md",
+      "hash": "476cd67101fb35c3cf99b2973dae665d9227c4a2badc7bb3d85ccb7add158980"
+    },
+    "https://developer.apple.com/documentation/cinematic/cnscript-9e1zn/framesintimerange:": {
+      "etag": "\"13b9-65d55d447286e-df\"",
+      "file_path": "documentation/Cinematic/cnscript-9e1zn/framesintimerange_.md",
+      "hash": "d17c7f56bb579cbf872e9fcd68971577fd8fa76bb0684f38e8b44362e51b724a"
+    },
+    "https://developer.apple.com/documentation/cinematic/cnscript-9e1zn/loadfromasset:changes:progress:completionhandler:": {
+      "etag": "\"259b-65d55d447286e-df\"",
+      "file_path": "documentation/Cinematic/cnscript-9e1zn/loadfromasset_changes_progress_completionhandler_.md",
+      "hash": "cec2afa91c2fd00d522fe03c85550b57da6b407deb27e542f79c7ad2dd1f2beb"
+    },
+    "https://developer.apple.com/documentation/cinematic/cnscript-9e1zn/primarydecisionattime:": {
+      "etag": "\"1771-65d55d447286e-df\"",
+      "file_path": "documentation/Cinematic/cnscript-9e1zn/primarydecisionattime_.md",
+      "hash": "7cc8df0c005724a55f316e47ade989fa637f70907cabee705c835c80fb454313"
+    },
+    "https://developer.apple.com/documentation/cinematic/cnscript-9e1zn/reloadwithchanges:": {
+      "etag": "\"1427-65d55d447286e-df\"",
+      "file_path": "documentation/Cinematic/cnscript-9e1zn/reloadwithchanges_.md",
+      "hash": "6d6622158207aee159d92f81719f105ae250b70b0934b038f5ca1d1d21f0b00f"
+    },
+    "https://developer.apple.com/documentation/cinematic/cnscript-9e1zn/removealluserdecisions": {
+      "etag": "\"e74-65d55d447286e-df\"",
+      "file_path": "documentation/Cinematic/cnscript-9e1zn/removealluserdecisions.md",
+      "hash": "501c9ce2d40db2968f7912bab44addfd2cb07981805dcf66a062ab26f5664743"
+    },
+    "https://developer.apple.com/documentation/cinematic/cnscript-9e1zn/removedetectiontrack:": {
+      "etag": "\"15da-65d55d447286e-df\"",
+      "file_path": "documentation/Cinematic/cnscript-9e1zn/removedetectiontrack_.md",
+      "hash": "6d4d71248d28c89ef35aea0cf7f2e531160710711d2070df1ac50113733eb58c"
+    },
+    "https://developer.apple.com/documentation/cinematic/cnscript-9e1zn/removeuserdecision:": {
+      "etag": "\"15c8-65d55d447286e-df\"",
+      "file_path": "documentation/Cinematic/cnscript-9e1zn/removeuserdecision_.md",
+      "hash": "6bb2849b8a49e858437f7e6b7cc01e8a55ad48e92a7ea9dbce288a7acd0af610"
+    },
+    "https://developer.apple.com/documentation/cinematic/cnscript-9e1zn/secondarydecisionattime:": {
+      "etag": "\"16aa-65d55d447286e-df\"",
+      "file_path": "documentation/Cinematic/cnscript-9e1zn/secondarydecisionattime_.md",
+      "hash": "e8c12c1bbcbf8779d67ae668ec3c0c34e631e9a9a2dcd2a178d0d3c7de68b4cf"
+    },
+    "https://developer.apple.com/documentation/cinematic/cnscript-9e1zn/timerange": {
+      "etag": "\"121d-65d55d447286e-df\"",
+      "file_path": "documentation/Cinematic/cnscript-9e1zn/timerange.md",
+      "hash": "42fa367e96b55fb2dca58f2f252cd5a3af52f6ed3acb598ff2fbc5ea2b8beac3"
+    },
+    "https://developer.apple.com/documentation/cinematic/cnscript-9e1zn/timerangeoftransitionafterdecision:": {
+      "etag": "\"174e-65d55d447286e-df\"",
+      "file_path": "documentation/Cinematic/cnscript-9e1zn/timerangeoftransitionafterdecision_.md",
+      "hash": "ebdf74553aef734647402e7a57df8992fc3b4c9e6b5942175856a8748159f021"
+    },
+    "https://developer.apple.com/documentation/cinematic/cnscript-9e1zn/timerangeoftransitionbeforedecision:": {
+      "etag": "\"1766-65d55d447286e-df\"",
+      "file_path": "documentation/Cinematic/cnscript-9e1zn/timerangeoftransitionbeforedecision_.md",
+      "hash": "ddbc38e01af42821e7b662d3b135d3583c64750f8169bb4aac4fd2d1d0a02c72"
+    },
+    "https://developer.apple.com/documentation/cinematic/cnscript-9e1zn/userdecisionsintimerange:": {
+      "etag": "\"147d-65d55d447286e-df\"",
+      "file_path": "documentation/Cinematic/cnscript-9e1zn/userdecisionsintimerange_.md",
+      "hash": "a28c8df87b3a2885d4d359affb2c6da0a9a3ff4a6c86f08dad25c47362d938be"
+    },
+    "https://developer.apple.com/documentation/cinematic/cnscriptchanges": {
+      "etag": "\"250b-65d55d453cde3-df\"",
+      "file_path": "documentation/Cinematic/cnscriptchanges.md",
+      "hash": "28b9373f9f389be3c6bbefd03b5b002703d3478f75ddb207e0cb0a88d6df9f66"
+    },
+    "https://developer.apple.com/documentation/cinematic/cnscriptchanges/addeddetectiontracks": {
+      "etag": "\"e87-65d55d453cde3-df\"",
+      "file_path": "documentation/Cinematic/cnscriptchanges/addeddetectiontracks.md",
+      "hash": "722c89192c5c66a58a30c1605ac778bd42b39500a646848d5da2047cccd14a37"
+    },
+    "https://developer.apple.com/documentation/cinematic/cnscriptchanges/datarepresentation": {
+      "etag": "\"12a7-65d55d453cde3-df\"",
+      "file_path": "documentation/Cinematic/cnscriptchanges/datarepresentation.md",
+      "hash": "53c70a7886e76499559a54ceefda60f6de7af06a632153b9845a6974b7d0e285"
+    },
+    "https://developer.apple.com/documentation/cinematic/cnscriptchanges/fnumber": {
+      "etag": "\"db7-65d55d453cde3-df\"",
+      "file_path": "documentation/Cinematic/cnscriptchanges/fnumber.md",
+      "hash": "990cb8e5756fe20e2e7714befe96726ee4669e3a7fdc7c0d35a518322b4076d7"
+    },
+    "https://developer.apple.com/documentation/cinematic/cnscriptchanges/initwithdatarepresentation:": {
+      "etag": "\"1416-65d55d453cde3-df\"",
+      "file_path": "documentation/Cinematic/cnscriptchanges/initwithdatarepresentation_.md",
+      "hash": "c67570ea76e44b15d4cc46a4c36064dbae6a956926fa4ba94d7fe1a07bd12764"
+    },
+    "https://developer.apple.com/documentation/cinematic/cnscriptchanges/userdecisions": {
+      "etag": "\"e67-65d55d453cde3-df\"",
+      "file_path": "documentation/Cinematic/cnscriptchanges/userdecisions.md",
+      "hash": "3eb8a28d26a892506b5454340422caf009d395d1121eb6e9f30ec8a2a08ad286"
+    },
+    "https://developer.apple.com/documentation/cinematic/cnscriptframe": {
+      "etag": "\"2911-65d55d445d6a8-df\"",
+      "file_path": "documentation/Cinematic/cnscriptframe.md",
+      "hash": "14cf55a690a1b24c3a9924b304c70ce1b80d0fa41f58911d716a36ea814fcf16"
+    },
+    "https://developer.apple.com/documentation/cinematic/cnscriptframe/alldetections": {
+      "etag": "\"e0c-65d55d445d6a8-df\"",
+      "file_path": "documentation/Cinematic/cnscriptframe/alldetections.md",
+      "hash": "8a0f890af658519cde863f74bc9c499e70d969224d2d098772f30c2f9bd15d5d"
+    },
+    "https://developer.apple.com/documentation/cinematic/cnscriptframe/bestdetectionforgroupid:": {
+      "etag": "\"19b5-65d55d445d6a8-df\"",
+      "file_path": "documentation/Cinematic/cnscriptframe/bestdetectionforgroupid_.md",
+      "hash": "93837de851bd24c9f69f9448b6b3181226a2fe963c8083277a0ccab9f8587638"
+    },
+    "https://developer.apple.com/documentation/cinematic/cnscriptframe/detectionforid:": {
+      "etag": "\"1785-65d55d445d6a8-df\"",
+      "file_path": "documentation/Cinematic/cnscriptframe/detectionforid_.md",
+      "hash": "773156a90e1ecd9185125814d3b02a5105759ce73c6fac233f823942a52294f6"
+    },
+    "https://developer.apple.com/documentation/cinematic/cnscriptframe/focusdetection": {
+      "etag": "\"1052-65d55d445d6a8-df\"",
+      "file_path": "documentation/Cinematic/cnscriptframe/focusdetection.md",
+      "hash": "86220fc872c698d2259ec2c19550d34a7fb4e592d5e859923255bf89f749aa61"
+    },
+    "https://developer.apple.com/documentation/cinematic/cnscriptframe/focusdisparity": {
+      "etag": "\"dc2-65d55d445d6a8-df\"",
+      "file_path": "documentation/Cinematic/cnscriptframe/focusdisparity.md",
+      "hash": "26117d48d3b3a80cc49fd1c492209eee538be66240505779c074c09921b1d6ea"
+    },
+    "https://developer.apple.com/documentation/cinematic/cnscriptframe/time": {
+      "etag": "\"106a-65d55d445d6a8-df\"",
+      "file_path": "documentation/Cinematic/cnscriptframe/time.md",
+      "hash": "2e0a77c8e76489f35a6997ff325f5284050437db1c0185315e33176d5c32abbf"
+    },
     "https://developer.apple.com/documentation/cinematic/cnspatialaudiocontenttype": {
       "etag": "\"35b4-65d55d453cde3-df\"",
       "file_path": "documentation/Cinematic/cnspatialaudiocontenttype.md",
@@ -1264,6 +2019,11 @@
       "etag": "\"161c-659025cb44c37-df\"",
       "file_path": "documentation/Cinematic/cinematic-enumerations.md",
       "hash": "56591f477c8ac1953863d8a199cc36567c69ff9a1ea0ffbeee810f7fcf5124c5"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/cinematic/cn_cinematic_extern.json": {
+      "etag": "\"9bd-65d55d44d79f0-df\"",
+      "file_path": "documentation/Cinematic/cn_cinematic_extern.md",
+      "hash": "af01ad85534cb9fa4789e3355fa9bb2c71cdfe3be06cc9b19d99ae3f44ad8b4e"
     },
     "https://developer.apple.com/tutorials/data/documentation/cinematic/cnassetinfo-2ata2.json": {
       "etag": "\"71e4-65d55d451e1c6-df\"",
@@ -1390,6 +2150,131 @@
       "file_path": "documentation/Cinematic/cnassetinfo-2ata2/videocompositiontracks.md",
       "hash": "73b5291f3c0b9deb2dd93da9d9d40c372f7cd955f4bcfec6d4baac1a6c6afa37"
     },
+    "https://developer.apple.com/tutorials/data/documentation/cinematic/cnassetinfo-8ja4t.json": {
+      "etag": "\"5e77-65d55d445d6a8-df\"",
+      "file_path": "documentation/Cinematic/cnassetinfo-8ja4t.md",
+      "hash": "10e9bf6fab6893cb7f463c18bf5811c5ca771366e9dc903cd8814828440f1cd3"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/cinematic/cnassetinfo-8ja4t/allcinematictracks.json": {
+      "etag": "\"e6d-65d55d44f09f3-df\"",
+      "file_path": "documentation/Cinematic/cnassetinfo-8ja4t/allcinematictracks.md",
+      "hash": "47783aee89a56481b1d9c345fb4f2df75d1d44c99cfdbca719426d95d1d684ff"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/cinematic/cnassetinfo-8ja4t/asset.json": {
+      "etag": "\"110b-65d55d44f09f3-df\"",
+      "file_path": "documentation/Cinematic/cnassetinfo-8ja4t/asset.md",
+      "hash": "d4b1adccf178ca7bbdc32f74e6f35c734380316ca1d59169b2a164bf3d375332"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/cinematic/cnassetinfo-8ja4t/checkcinematiccapabilityforasset:completionhandler:.json": {
+      "etag": "\"1f37-65d55d44f09f3-df\"",
+      "file_path": "documentation/Cinematic/cnassetinfo-8ja4t/checkcinematiccapabilityforasset_completionhandler_.md",
+      "hash": "f3886ca57792e56881fb2d7d3d9ae882efb4dbf51663dbdc3382482f43b11d33"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/cinematic/cnassetinfo-8ja4t/checkifcinematic:completionhandler:.json": {
+      "etag": "\"180d-65d55d44f09f3-df\"",
+      "file_path": "documentation/Cinematic/cnassetinfo-8ja4t/checkifcinematic_completionhandler_.md",
+      "hash": "75c9bb0c8be794886c11347eacbfb470effd376c183a53785df640c5a17b2470"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/cinematic/cnassetinfo-8ja4t/cinematiccapability.json": {
+      "etag": "\"1278-65d55d44d79f0-df\"",
+      "file_path": "documentation/Cinematic/cnassetinfo-8ja4t/cinematiccapability.md",
+      "hash": "cc83da6e93f6189bd518f0fbd5abefafaa3c8d643edf8e6da086214749e423a1"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/cinematic/cnassetinfo-8ja4t/cinematicdisparitytrack.json": {
+      "etag": "\"121e-65d55d44f09f3-df\"",
+      "file_path": "documentation/Cinematic/cnassetinfo-8ja4t/cinematicdisparitytrack.md",
+      "hash": "62ad2242414c857ef18cbf0c12b115a2c98e059ebf24abb33c9a7c9fc0165296"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/cinematic/cnassetinfo-8ja4t/cinematicmetadatatrack.json": {
+      "etag": "\"121a-65d55d44f09f3-df\"",
+      "file_path": "documentation/Cinematic/cnassetinfo-8ja4t/cinematicmetadatatrack.md",
+      "hash": "6c6e75fd41d928e343b2d7e317e13bc07636d4b79d53e781b71098f67905821c"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/cinematic/cnassetinfo-8ja4t/cinematicvideotrack.json": {
+      "etag": "\"11f0-65d55d44f09f3-df\"",
+      "file_path": "documentation/Cinematic/cnassetinfo-8ja4t/cinematicvideotrack.md",
+      "hash": "51451f478e8bc353e201358dbc5a19dc02302aa4ce5886428df6763c08d81b28"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/cinematic/cnassetinfo-8ja4t/defaultresourcedownloadtimeout.json": {
+      "etag": "\"1573-65d55d44d79f0-df\"",
+      "file_path": "documentation/Cinematic/cnassetinfo-8ja4t/defaultresourcedownloadtimeout.md",
+      "hash": "07cd1801f072edec3b26e710daac24c3da1b08a3753c1b5c30ff2332c1feb26e"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/cinematic/cnassetinfo-8ja4t/downloadresourcesforversions:timeout:completionhandler:.json": {
+      "etag": "\"2405-65d55d44f09f3-df\"",
+      "file_path": "documentation/Cinematic/cnassetinfo-8ja4t/downloadresourcesforversions_timeout_completionhandler_.md",
+      "hash": "66104fa32c555c57c3703e3576a3f9701953eee6201c36815c636a900bab250d"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/cinematic/cnassetinfo-8ja4t/downloadresourceswithtimeout:completionhandler:.json": {
+      "etag": "\"236c-65d55d44f09f3-df\"",
+      "file_path": "documentation/Cinematic/cnassetinfo-8ja4t/downloadresourceswithtimeout_completionhandler_.md",
+      "hash": "a82c10c356229b0e51338a69f0dd636aacdbc05f9f6bee234e6b4f8a7a7171f0"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/cinematic/cnassetinfo-8ja4t/frametimingtrack.json": {
+      "etag": "\"11e2-65d55d44d79f0-df\"",
+      "file_path": "documentation/Cinematic/cnassetinfo-8ja4t/frametimingtrack.md",
+      "hash": "a81e0eb1b69df580e5298dbddaf35c45082c57097228a76c98c4fcac8dfea585"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/cinematic/cnassetinfo-8ja4t/loadfromasset:completionhandler:.json": {
+      "etag": "\"1a09-65d55d44f09f3-df\"",
+      "file_path": "documentation/Cinematic/cnassetinfo-8ja4t/loadfromasset_completionhandler_.md",
+      "hash": "ad3e136f987c4d511b391e1ca2ca4c9ff64c668606a4ba5033c21139f89e3e86"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/cinematic/cnassetinfo-8ja4t/naturalsize.json": {
+      "etag": "\"1127-65d55d44f09f3-df\"",
+      "file_path": "documentation/Cinematic/cnassetinfo-8ja4t/naturalsize.md",
+      "hash": "8665002969bb3ddaf3bd4e8c3584a33c65b23c0ee77edc118a24cb5da5d5c111"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/cinematic/cnassetinfo-8ja4t/preferredsize.json": {
+      "etag": "\"1189-65d55d44d79f0-df\"",
+      "file_path": "documentation/Cinematic/cnassetinfo-8ja4t/preferredsize.md",
+      "hash": "6e20d76f0f51731213c64f189cd1760b353dd6d5ea32d1556ef47dce2a036ef8"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/cinematic/cnassetinfo-8ja4t/preferredtransform.json": {
+      "etag": "\"11d1-65d55d44f09f3-df\"",
+      "file_path": "documentation/Cinematic/cnassetinfo-8ja4t/preferredtransform.md",
+      "hash": "b64176c237b6d388961044ef28e46453250410f6424e233385c35b5ac3045636"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/cinematic/cnassetinfo-8ja4t/preprocessassetwithconfiguration:completionhandler:.json": {
+      "etag": "\"247a-65d55d44f09f3-df\"",
+      "file_path": "documentation/Cinematic/cnassetinfo-8ja4t/preprocessassetwithconfiguration_completionhandler_.md",
+      "hash": "93e01e01e4adc5e7e82738c2174f1cc27da969282d29b5b68a0d51ab09128790"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/cinematic/cnassetinfo-8ja4t/preprocessed.json": {
+      "etag": "\"1055-65d55d44d79f0-df\"",
+      "file_path": "documentation/Cinematic/cnassetinfo-8ja4t/preprocessed.md",
+      "hash": "8b4a37d72c444c1dcbdddea786de456a29e79f56f28d3ac7d0e63d699d958280"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/cinematic/cnassetinfo-8ja4t/resourcestatus.json": {
+      "etag": "\"11f1-65d55d44f09f3-df\"",
+      "file_path": "documentation/Cinematic/cnassetinfo-8ja4t/resourcestatus.md",
+      "hash": "fe51203554932af2cf0cf20f407db9c4f8632b6d5d2c19b876f349dbc7d8554b"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/cinematic/cnassetinfo-8ja4t/resourcestatusforversions:.json": {
+      "etag": "\"1595-65d55d44f09f3-df\"",
+      "file_path": "documentation/Cinematic/cnassetinfo-8ja4t/resourcestatusforversions_.md",
+      "hash": "a34ff8fcfb3b254627ceedf959ac937042b764a79c1a54612be3df069ae28172"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/cinematic/cnassetinfo-8ja4t/sampledatatrackids.json": {
+      "etag": "\"ed9-65d55d44f09f3-df\"",
+      "file_path": "documentation/Cinematic/cnassetinfo-8ja4t/sampledatatrackids.md",
+      "hash": "d1b21e6705d346dbea69a9bcf58064fbf07acf80943c0c860e3683d8275059ea"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/cinematic/cnassetinfo-8ja4t/timerange.json": {
+      "etag": "\"1139-65d55d44f09f3-df\"",
+      "file_path": "documentation/Cinematic/cnassetinfo-8ja4t/timerange.md",
+      "hash": "3b7c545c3ae52353d0acd92d857c750b200915a59bb2ed0c9137bcf8da01eee8"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/cinematic/cnassetinfo-8ja4t/videocompositiontrackids.json": {
+      "etag": "\"f13-65d55d44f09f3-df\"",
+      "file_path": "documentation/Cinematic/cnassetinfo-8ja4t/videocompositiontrackids.md",
+      "hash": "c8aea81ae894fab3d98e3dab95ef2b31403cd8c0d8d554814e9b7b44c331856f"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/cinematic/cnassetinfo-8ja4t/videocompositiontracks.json": {
+      "etag": "\"ec3-65d55d44f09f3-df\"",
+      "file_path": "documentation/Cinematic/cnassetinfo-8ja4t/videocompositiontracks.md",
+      "hash": "5fb5253a5d1c0e1f8e9d6d77c4f22d6820e4bec0af36f18c9a80653970cc76f6"
+    },
     "https://developer.apple.com/tutorials/data/documentation/cinematic/cnassetpreprocessconfiguration-5u7dk.json": {
       "etag": "\"165b-65d55d453cde3-df\"",
       "file_path": "documentation/Cinematic/cnassetpreprocessconfiguration-5u7dk.md",
@@ -1409,6 +2294,81 @@
       "etag": "\"17c7-65d55d44f09f3-df\"",
       "file_path": "documentation/Cinematic/cnassetpreprocessconfiguration-5u7dk/referencesourceassettracks.md",
       "hash": "a43a796a49a0c379362b147b7f446a23dba71fe64a5ce097505cfb96db02afe4"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/cinematic/cnassetpreprocessconfiguration-7xlwe.json": {
+      "etag": "\"1909-65d55d447286e-df\"",
+      "file_path": "documentation/Cinematic/cnassetpreprocessconfiguration-7xlwe.md",
+      "hash": "5029cbcb04209b459725906d2d9050588b5b90c9a4109dd7b131c372030a242c"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/cinematic/cnassetpreprocessconfiguration-7xlwe/destinationasseturl.json": {
+      "etag": "\"115b-65d55d4556f6d-df\"",
+      "file_path": "documentation/Cinematic/cnassetpreprocessconfiguration-7xlwe/destinationasseturl.md",
+      "hash": "fda3f6682ff299b4039f3dbbfc53fa1be45836878699b317ebd7643bceb179b9"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/cinematic/cnassetpreprocessconfiguration-7xlwe/initwithdestinationasseturl:.json": {
+      "etag": "\"1248-65d55d4556f6d-df\"",
+      "file_path": "documentation/Cinematic/cnassetpreprocessconfiguration-7xlwe/initwithdestinationasseturl_.md",
+      "hash": "bb50ca6b51bb0dbcd8a27b95a8b628471131538626a7477e1e85b16f45fe6668"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/cinematic/cnassetpreprocessconfiguration-7xlwe/referencesourceassettracks.json": {
+      "etag": "\"1501-65d55d4556f6d-df\"",
+      "file_path": "documentation/Cinematic/cnassetpreprocessconfiguration-7xlwe/referencesourceassettracks.md",
+      "hash": "9210aee788df944db3472067af0db662a3749d7db65191707da97f98dfa5fed8"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/cinematic/cnassetspatialaudioinfo-57yc5.json": {
+      "etag": "\"2fbe-65d55d44f09f3-df\"",
+      "file_path": "documentation/Cinematic/cnassetspatialaudioinfo-57yc5.md",
+      "hash": "ee76321465b2f533704d8483fdc3d34c010fd75be677154ababab283e63ade82"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/cinematic/cnassetspatialaudioinfo-57yc5/assetreaderoutputsettingsforcontenttype:.json": {
+      "etag": "\"165a-65d55d451e1c6-df\"",
+      "file_path": "documentation/Cinematic/cnassetspatialaudioinfo-57yc5/assetreaderoutputsettingsforcontenttype_.md",
+      "hash": "dee1776b8fbf104fb20e831a0948d6505d118296b5cdd49713d5bbb79ee6fc11"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/cinematic/cnassetspatialaudioinfo-57yc5/assetwriterinputsettingsforcontenttype:.json": {
+      "etag": "\"153a-65d55d451e1c6-df\"",
+      "file_path": "documentation/Cinematic/cnassetspatialaudioinfo-57yc5/assetwriterinputsettingsforcontenttype_.md",
+      "hash": "2a1b88a4d569736a194873ddcb8591a615541dc6b3d429ce726ae77830ac6790"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/cinematic/cnassetspatialaudioinfo-57yc5/audiomixwitheffectintensity:renderingstyle:.json": {
+      "etag": "\"1acd-65d55d451e1c6-df\"",
+      "file_path": "documentation/Cinematic/cnassetspatialaudioinfo-57yc5/audiomixwitheffectintensity_renderingstyle_.md",
+      "hash": "52abdbce2c8f1a3b5da478681cfa3d8e9438ea7f3bfd34e383e5cada5bcf1cf5"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/cinematic/cnassetspatialaudioinfo-57yc5/checkifcontainsspatialaudio:completionhandler:.json": {
+      "etag": "\"1896-65d55d451e1c6-df\"",
+      "file_path": "documentation/Cinematic/cnassetspatialaudioinfo-57yc5/checkifcontainsspatialaudio_completionhandler_.md",
+      "hash": "16984fd59ba2b702fc9fe912c7bd1752eb6b2413940a4533bfec5e8d2b2f6786"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/cinematic/cnassetspatialaudioinfo-57yc5/defaulteffectintensity.json": {
+      "etag": "\"e97-65d55d451e1c6-df\"",
+      "file_path": "documentation/Cinematic/cnassetspatialaudioinfo-57yc5/defaulteffectintensity.md",
+      "hash": "daf34c36a895fdcafba3f81b66104e950d61104cdc6eb677d32fdcc0b2646fd9"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/cinematic/cnassetspatialaudioinfo-57yc5/defaultrenderingstyle.json": {
+      "etag": "\"13bf-65d55d451e1c6-df\"",
+      "file_path": "documentation/Cinematic/cnassetspatialaudioinfo-57yc5/defaultrenderingstyle.md",
+      "hash": "deec5000f6a249930ede40bd6f9337270d20fc49751acb27b80197a7ce79e13b"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/cinematic/cnassetspatialaudioinfo-57yc5/defaultspatialaudiotrack.json": {
+      "etag": "\"126a-65d55d451e1c6-df\"",
+      "file_path": "documentation/Cinematic/cnassetspatialaudioinfo-57yc5/defaultspatialaudiotrack.md",
+      "hash": "a43ec03fc668c6eab8a4298ce9f3e9f748e1086fb10d9115f44eb1f6d41d7a6f"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/cinematic/cnassetspatialaudioinfo-57yc5/issupported.json": {
+      "etag": "\"105b-65d55d451e1c6-df\"",
+      "file_path": "documentation/Cinematic/cnassetspatialaudioinfo-57yc5/issupported.md",
+      "hash": "f9d17d6e4509e17de4346cd39cf97efc2a7b5ae52c625af2f637ec4523526099"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/cinematic/cnassetspatialaudioinfo-57yc5/loadfromasset:completionhandler:.json": {
+      "etag": "\"1a70-65d55d451e1c6-df\"",
+      "file_path": "documentation/Cinematic/cnassetspatialaudioinfo-57yc5/loadfromasset_completionhandler_.md",
+      "hash": "e70d847c95bf948ec45fe28c3519d1dbd1a7e2dbe44a12e671d9dd1d3010b3e1"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/cinematic/cnassetspatialaudioinfo-57yc5/spatialaudiomixmetadata.json": {
+      "etag": "\"131b-65d55d451e1c6-df\"",
+      "file_path": "documentation/Cinematic/cnassetspatialaudioinfo-57yc5/spatialaudiomixmetadata.md",
+      "hash": "694e2011d3363241eeacb9d20ea63ec078b0b7301142fe3b08600b66bf0ab7d9"
     },
     "https://developer.apple.com/tutorials/data/documentation/cinematic/cnassetspatialaudioinfo-7hdev.json": {
       "etag": "\"3e25-65d55d45033da-df\"",
@@ -1469,6 +2429,21 @@
       "etag": "\"14f7-65d55d447286e-df\"",
       "file_path": "documentation/Cinematic/cnassetspatialaudioinfo-7hdev/spatialaudiomixmetadata.md",
       "hash": "6bebd7a0aa837b6ecae481b945205226e41eac829ef1df60c1db09343781dba1"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/cinematic/cnboundsprediction-c.class.json": {
+      "etag": "\"1f9c-65d55d451e1c6-df\"",
+      "file_path": "documentation/Cinematic/cnboundsprediction-c.class.md",
+      "hash": "0313cbf60bca858acf9308bdff5aabce9b997afdfb7b54af2212989bb6822b2d"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/cinematic/cnboundsprediction-c.class/confidence.json": {
+      "etag": "\"e28-65d55d453cde3-df\"",
+      "file_path": "documentation/Cinematic/cnboundsprediction-c.class/confidence.md",
+      "hash": "4fd00326424a6520f0732ee39296d9019a348e36223b78504721217ba16a5ce2"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/cinematic/cnboundsprediction-c.class/normalizedbounds.json": {
+      "etag": "\"11ce-65d55d453cde3-df\"",
+      "file_path": "documentation/Cinematic/cnboundsprediction-c.class/normalizedbounds.md",
+      "hash": "e4a7cfb18bdfc5790133afa3abc796988536a251ce668748eb5d78c9dc794d56"
     },
     "https://developer.apple.com/tutorials/data/documentation/cinematic/cnboundsprediction-swift.struct.json": {
       "etag": "\"1c52-65d55d45033da-df\"",
@@ -1640,6 +2615,31 @@
       "file_path": "documentation/Cinematic/cncompositioninfo-7eunn/inserttimerange(_,of,at).md",
       "hash": "7918fcc2a591310fc8e8963d3095e5a29cf21c82a86e585536bc4f78eabb01bb"
     },
+    "https://developer.apple.com/tutorials/data/documentation/cinematic/cncompositioninfo-vzoh.json": {
+      "etag": "\"1a52-65d55d453cde3-df\"",
+      "file_path": "documentation/Cinematic/cncompositioninfo-vzoh.md",
+      "hash": "47e19b1fd323e07cd1322549fc52d817ba8c4fbb2f641c3b5661d4e9608cef1f"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/cinematic/cncompositioninfo-vzoh/inserttimerange:ofcinematicassetinfo:attime:error:.json": {
+      "etag": "\"23d8-65d55d451e1c6-df\"",
+      "file_path": "documentation/Cinematic/cncompositioninfo-vzoh/inserttimerange_ofcinematicassetinfo_attime_error_.md",
+      "hash": "7dc99b8a73dd5fe859eede1e660725ed52085ca526210829a58f2d3e0ccb2eec"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/cinematic/cncustomdetectiontrack-891hc.json": {
+      "etag": "\"2102-65d55d451e1c6-df\"",
+      "file_path": "documentation/Cinematic/cncustomdetectiontrack-891hc.md",
+      "hash": "8f657b14f738b1f6edc0a691c93fb24a64f4c44a6423f12e50beca39ddbbff45"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/cinematic/cncustomdetectiontrack-891hc/alldetections.json": {
+      "etag": "\"ea1-65d55d453cde3-df\"",
+      "file_path": "documentation/Cinematic/cncustomdetectiontrack-891hc/alldetections.md",
+      "hash": "f97d2379a6e6dc4a34527310686a728ecf653ac056474e2c074d9e5291b54c0e"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/cinematic/cncustomdetectiontrack-891hc/initwithdetections:smooth:.json": {
+      "etag": "\"15f8-65d55d453cde3-df\"",
+      "file_path": "documentation/Cinematic/cncustomdetectiontrack-891hc/initwithdetections_smooth_.md",
+      "hash": "193a1041019e73efd16aae6c85212326271353a8c3ffea7d39dc9d7887ccb15c"
+    },
     "https://developer.apple.com/tutorials/data/documentation/cinematic/cncustomdetectiontrack-9a2zo.json": {
       "etag": "\"2777-65d55d451e1c6-df\"",
       "file_path": "documentation/Cinematic/cncustomdetectiontrack-9a2zo.md",
@@ -1654,6 +2654,51 @@
       "etag": "\"1aa5-65d55d44d79f0-df\"",
       "file_path": "documentation/Cinematic/cncustomdetectiontrack-9a2zo/init(detections,smooth).md",
       "hash": "a1435f5d0cba14f2b91268f21b5bcda38af87719553186ce7a96064838ce012f"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/cinematic/cndecision-c.class.json": {
+      "etag": "\"35fe-65d55d453cde3-df\"",
+      "file_path": "documentation/Cinematic/cndecision-c.class.md",
+      "hash": "a035d804920ae2693b751847c03bdfbc18228617e43631851c8f21d11fc2e84d"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/cinematic/cndecision-c.class/detectiongroupid.json": {
+      "etag": "\"13b3-65d55d445d6a8-df\"",
+      "file_path": "documentation/Cinematic/cndecision-c.class/detectiongroupid.md",
+      "hash": "38b3dfcfb9cb581477cbb97db773807a80073eab8f4d20186179b8640a4b671d"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/cinematic/cndecision-c.class/detectionid.json": {
+      "etag": "\"1359-65d55d445d6a8-df\"",
+      "file_path": "documentation/Cinematic/cndecision-c.class/detectionid.md",
+      "hash": "2b3ce22ab192716130bc0e76b2ae9be2ec8ba1aa05aebccc78a398bd1c5b10fb"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/cinematic/cndecision-c.class/groupdecision.json": {
+      "etag": "\"1091-65d55d445d6a8-df\"",
+      "file_path": "documentation/Cinematic/cndecision-c.class/groupdecision.md",
+      "hash": "eaa9dab560e79a68c9e64a652d4ec0e71f02f47822b177e8df75d8f3d35d070b"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/cinematic/cndecision-c.class/initwithtime:detectiongroupid:strong:.json": {
+      "etag": "\"202a-65d55d447286e-df\"",
+      "file_path": "documentation/Cinematic/cndecision-c.class/initwithtime_detectiongroupid_strong_.md",
+      "hash": "46207ba518de25b30035514deb596567f87ccd1fd4b5d95c7dd2a8fd718a7e04"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/cinematic/cndecision-c.class/initwithtime:detectionid:strong:.json": {
+      "etag": "\"1fd8-65d55d445d6a8-df\"",
+      "file_path": "documentation/Cinematic/cndecision-c.class/initwithtime_detectionid_strong_.md",
+      "hash": "fc176122e0a800f53a35102b4d695859ffec4f6559b4b61a775708e306ddd5f0"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/cinematic/cndecision-c.class/strongdecision.json": {
+      "etag": "\"1195-65d55d445d6a8-df\"",
+      "file_path": "documentation/Cinematic/cndecision-c.class/strongdecision.md",
+      "hash": "5a5fa852f53fb92d864ed4e63e5cd682557aad145a6759b7f3c6ac6064c74dd9"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/cinematic/cndecision-c.class/time.json": {
+      "etag": "\"10eb-65d55d445d6a8-df\"",
+      "file_path": "documentation/Cinematic/cndecision-c.class/time.md",
+      "hash": "f36be2c97b5b333411eabfa05e2214a1d42d4e0315e2c4b5828f2e886bbbd218"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/cinematic/cndecision-c.class/userdecision.json": {
+      "etag": "\"10b8-65d55d445d6a8-df\"",
+      "file_path": "documentation/Cinematic/cndecision-c.class/userdecision.md",
+      "hash": "3900c9f10ab38b6a02d758f1f6d9f9cdc949f28addf35edbb78f6fda76529076"
     },
     "https://developer.apple.com/tutorials/data/documentation/cinematic/cndecision-swift.struct.json": {
       "etag": "\"40e3-65d55d453cde3-df\"",
@@ -1704,6 +2749,66 @@
       "etag": "\"1cb1-65d55d4556f6d-df\"",
       "file_path": "documentation/Cinematic/cndecision-swift.struct/time.md",
       "hash": "d66e363ab0c5fc8d55c4792cd8ef2f19c6c8616e3803575b5dd1e907b0119c8f"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/cinematic/cndetection-c.class.json": {
+      "etag": "\"4275-65d55d453cde3-df\"",
+      "file_path": "documentation/Cinematic/cndetection-c.class.md",
+      "hash": "e87a333f0d4c388d2dec144b0a7b9a3b723b4c3585d586fae5189a6aeb1f30c1"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/cinematic/cndetection-c.class/accessibilitylabelfordetectiontype:.json": {
+      "etag": "\"1a3f-65d55d453cde3-df\"",
+      "file_path": "documentation/Cinematic/cndetection-c.class/accessibilitylabelfordetectiontype_.md",
+      "hash": "02c88371ec86bbf791b01f1400d6b7a854cc273a1cb680d07320ace3e20f58c4"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/cinematic/cndetection-c.class/detectiongroupid.json": {
+      "etag": "\"13a1-65d55d453cde3-df\"",
+      "file_path": "documentation/Cinematic/cndetection-c.class/detectiongroupid.md",
+      "hash": "618c5c307bfc36194711f82c43824006e0680a4a97d3c15c5ee074bd7c01dcc9"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/cinematic/cndetection-c.class/detectionid.json": {
+      "etag": "\"149e-65d55d453cde3-df\"",
+      "file_path": "documentation/Cinematic/cndetection-c.class/detectionid.md",
+      "hash": "51a45fd9d11e456ac9e9b9a0b9970571859d9f9ee650f112112d3165e5e374a5"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/cinematic/cndetection-c.class/detectiontype.json": {
+      "etag": "\"1315-65d55d453cde3-df\"",
+      "file_path": "documentation/Cinematic/cndetection-c.class/detectiontype.md",
+      "hash": "fd6ae6a56194906b9d459599483f26b2f75ee164a630617a475a08440f9bf44c"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/cinematic/cndetection-c.class/disparityinnormalizedrect:sourcedisparity:detectiontype:priordisparity:.json": {
+      "etag": "\"253e-65d55d453cde3-df\"",
+      "file_path": "documentation/Cinematic/cndetection-c.class/disparityinnormalizedrect_sourcedisparity_detectiontype_priordisparity_.md",
+      "hash": "7a77ede50a9d0948dffac3a6c33d16b3c90a31c9c9bb93ec676337ffd65a367c"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/cinematic/cndetection-c.class/focusdisparity.json": {
+      "etag": "\"e69-65d55d453cde3-df\"",
+      "file_path": "documentation/Cinematic/cndetection-c.class/focusdisparity.md",
+      "hash": "d5704ef4d61556fc0f6891841ae80031ae1e55e48bcfdbf3997389c9323461c1"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/cinematic/cndetection-c.class/initwithtime:detectiontype:normalizedrect:focusdisparity:.json": {
+      "etag": "\"21b0-65d55d453cde3-df\"",
+      "file_path": "documentation/Cinematic/cndetection-c.class/initwithtime_detectiontype_normalizedrect_focusdisparity_.md",
+      "hash": "f1b003b394d5dc0b1d2301e38458a13b1372f51a570a5b92d012118de6e2a529"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/cinematic/cndetection-c.class/isvaliddetectiongroupid:.json": {
+      "etag": "\"185b-65d55d453cde3-df\"",
+      "file_path": "documentation/Cinematic/cndetection-c.class/isvaliddetectiongroupid_.md",
+      "hash": "f090efc1e1a429679239ce8f31e3552e1556b725bbccb98abb42b56c8e060985"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/cinematic/cndetection-c.class/isvaliddetectionid:.json": {
+      "etag": "\"17d2-65d55d453cde3-df\"",
+      "file_path": "documentation/Cinematic/cndetection-c.class/isvaliddetectionid_.md",
+      "hash": "d5c6c6f52319076ad18df5f0d6f25e92a4b033876c0f7af71d132e31c49ec7ba"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/cinematic/cndetection-c.class/normalizedrect.json": {
+      "etag": "\"11c5-65d55d453cde3-df\"",
+      "file_path": "documentation/Cinematic/cndetection-c.class/normalizedrect.md",
+      "hash": "4a389ad4859121d7955bb30f4b31b0393f93dd7f0cc41b8f65005334e2345441"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/cinematic/cndetection-c.class/time.json": {
+      "etag": "\"10db-65d55d453cde3-df\"",
+      "file_path": "documentation/Cinematic/cndetection-c.class/time.md",
+      "hash": "0c039d939370e434f2a4982ae184ec8bf6998422e0773a5a7b36ec94d978d1ab"
     },
     "https://developer.apple.com/tutorials/data/documentation/cinematic/cndetection-swift.struct.json": {
       "etag": "\"4c1d-65d55d447286e-df\"",
@@ -1830,6 +2935,51 @@
       "file_path": "documentation/Cinematic/cndetectiontrack-2bxtd/isusercreated.md",
       "hash": "51aeb57d6535b79a3a595d4c90d7afaf12e0fd08b5b165dae298b04dd58e6fce"
     },
+    "https://developer.apple.com/tutorials/data/documentation/cinematic/cndetectiontrack-61x7g.json": {
+      "etag": "\"370f-65d55d451e1c6-df\"",
+      "file_path": "documentation/Cinematic/cndetectiontrack-61x7g.md",
+      "hash": "0798c5a477f457de4381c91b4c8297aa9152d5de320f0cfa84ad3200857de059"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/cinematic/cndetectiontrack-61x7g/detectionatorbeforetime:.json": {
+      "etag": "\"1688-65d55d445d6a8-df\"",
+      "file_path": "documentation/Cinematic/cndetectiontrack-61x7g/detectionatorbeforetime_.md",
+      "hash": "acbcc7beb2da382c29a2ba11f8959a63181963e5520c430286576e1196b512d5"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/cinematic/cndetectiontrack-61x7g/detectiongroupid.json": {
+      "etag": "\"149b-65d55d445d6a8-df\"",
+      "file_path": "documentation/Cinematic/cndetectiontrack-61x7g/detectiongroupid.md",
+      "hash": "418e91fab991b3b002345a55a2a7c7051cf45d75aa3a36e5fe1490ee57e4e4cc"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/cinematic/cndetectiontrack-61x7g/detectionid.json": {
+      "etag": "\"13fc-65d55d445d6a8-df\"",
+      "file_path": "documentation/Cinematic/cndetectiontrack-61x7g/detectionid.md",
+      "hash": "ae1e58be03dd566a04789bbb1495447e55aa5f4cbd3919f31f1fe828e443d8ca"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/cinematic/cndetectiontrack-61x7g/detectionnearesttime:.json": {
+      "etag": "\"1666-65d55d445d6a8-df\"",
+      "file_path": "documentation/Cinematic/cndetectiontrack-61x7g/detectionnearesttime_.md",
+      "hash": "f2cb0224127374aa815a795e31a2668aa931261207c5ba9dcc1b1149dc654776"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/cinematic/cndetectiontrack-61x7g/detectionsintimerange:.json": {
+      "etag": "\"14c4-65d55d445d6a8-df\"",
+      "file_path": "documentation/Cinematic/cndetectiontrack-61x7g/detectionsintimerange_.md",
+      "hash": "da0464236a51bc2f1642ad857e1fe6edab27956ae1d68b863a00d6857f2a2118"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/cinematic/cndetectiontrack-61x7g/detectiontype.json": {
+      "etag": "\"13cc-65d55d445d6a8-df\"",
+      "file_path": "documentation/Cinematic/cndetectiontrack-61x7g/detectiontype.md",
+      "hash": "3f09fac98f45b22bc6ab5f51470c9468e9bde221b421c6bc3fad663b24af04fd"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/cinematic/cndetectiontrack-61x7g/discrete.json": {
+      "etag": "\"1211-65d55d445d6a8-df\"",
+      "file_path": "documentation/Cinematic/cndetectiontrack-61x7g/discrete.md",
+      "hash": "9338581c1f6aabc66d980e3c6b5c5ce338f1fe710cc1382325f309863e97e554"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/cinematic/cndetectiontrack-61x7g/usercreated.json": {
+      "etag": "\"1091-65d55d445d6a8-df\"",
+      "file_path": "documentation/Cinematic/cndetectiontrack-61x7g/usercreated.md",
+      "hash": "6f08d0d5ed565d17bf03235a9668a677df6730569301d788c46b2b0362cbaec8"
+    },
     "https://developer.apple.com/tutorials/data/documentation/cinematic/cndetectiontype.json": {
       "etag": "\"77af-65d55d45033da-df\"",
       "file_path": "documentation/Cinematic/cndetectiontype.md",
@@ -1899,6 +3049,31 @@
       "etag": "\"16c0-65d55d44f09f3-df\"",
       "file_path": "documentation/Cinematic/cndetectiontype/unknown.md",
       "hash": "789bdafc124e9d347a76051983dae1677697351c5476ca31097148f8eef6035f"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/cinematic/cnfixeddetectiontrack-5aei2.json": {
+      "etag": "\"2625-65d55d44d79f0-df\"",
+      "file_path": "documentation/Cinematic/cnfixeddetectiontrack-5aei2.md",
+      "hash": "20fa373f97a98ce280b2c0cfed73ab223ad7371db98f739bf4574cf7961e20c5"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/cinematic/cnfixeddetectiontrack-5aei2/focusdisparity.json": {
+      "etag": "\"f26-65d55d44f09f3-df\"",
+      "file_path": "documentation/Cinematic/cnfixeddetectiontrack-5aei2/focusdisparity.md",
+      "hash": "656be59765b4632f53fe6cb8c07eae24ce75a45261cfa95e2158d1d5b51dd738"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/cinematic/cnfixeddetectiontrack-5aei2/initwithfocusdisparity:.json": {
+      "etag": "\"103f-65d55d45033da-df\"",
+      "file_path": "documentation/Cinematic/cnfixeddetectiontrack-5aei2/initwithfocusdisparity_.md",
+      "hash": "152adf829ab99be91e972299948aaa13ff7e6af66545151b3d54956b40e53aee"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/cinematic/cnfixeddetectiontrack-5aei2/initwithoriginaldetection:.json": {
+      "etag": "\"1663-65d55d44f09f3-df\"",
+      "file_path": "documentation/Cinematic/cnfixeddetectiontrack-5aei2/initwithoriginaldetection_.md",
+      "hash": "faa8f46aa7ebdee633123746133f0e6c459f20523183cad1f4f77a6f67d7e18f"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/cinematic/cnfixeddetectiontrack-5aei2/originaldetection.json": {
+      "etag": "\"13db-65d55d45033da-df\"",
+      "file_path": "documentation/Cinematic/cnfixeddetectiontrack-5aei2/originaldetection.md",
+      "hash": "ac77e626fc9b00ffec35d2c00b4b96ee35f87f074866a294fe4b51298d7c72df"
     },
     "https://developer.apple.com/tutorials/data/documentation/cinematic/cnfixeddetectiontrack-93rrw.json": {
       "etag": "\"2d19-65d55d451e1c6-df\"",
@@ -2029,6 +3204,46 @@
       "etag": "\"2c3d-65d55d44d79f0-df\"",
       "file_path": "documentation/Cinematic/cnobjecttracker-1n598/starttracking(at,within,sourceimage,sourcedisparity).md",
       "hash": "a46e2bb2fb2ef67bee943b74a3ac61e82ff37adc8f1ce5d7bc788b499d335aa4"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/cinematic/cnobjecttracker-7aliq.json": {
+      "etag": "\"278c-65d55d453cde3-df\"",
+      "file_path": "documentation/Cinematic/cnobjecttracker-7aliq.md",
+      "hash": "2ecb39b8a5bc9629d723cd986b24dd800ca9b488b2d47ae892b3cd6ee914da7d"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/cinematic/cnobjecttracker-7aliq/continuetrackingat:sourceimage:sourcedisparity:.json": {
+      "etag": "\"2048-65d55d445d6a8-df\"",
+      "file_path": "documentation/Cinematic/cnobjecttracker-7aliq/continuetrackingat_sourceimage_sourcedisparity_.md",
+      "hash": "60a38fa2442e6b69f6f54015f1e77e4ed32e557a70804f731ac183e20a60b76b"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/cinematic/cnobjecttracker-7aliq/findobjectatpoint:sourceimage:.json": {
+      "etag": "\"1dce-65d55d445d6a8-df\"",
+      "file_path": "documentation/Cinematic/cnobjecttracker-7aliq/findobjectatpoint_sourceimage_.md",
+      "hash": "53cdd3657748387297afbe839fa1490f9f37acb9b7f52aeaf9881f532ba17968"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/cinematic/cnobjecttracker-7aliq/finishdetectiontrack.json": {
+      "etag": "\"129e-65d55d445d6a8-df\"",
+      "file_path": "documentation/Cinematic/cnobjecttracker-7aliq/finishdetectiontrack.md",
+      "hash": "636e358d148423b6420aae07c25da0c39e77cb2f221b6fffb03784975fadae27"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/cinematic/cnobjecttracker-7aliq/initwithcommandqueue:.json": {
+      "etag": "\"10b5-65d55d445d6a8-df\"",
+      "file_path": "documentation/Cinematic/cnobjecttracker-7aliq/initwithcommandqueue_.md",
+      "hash": "01648deaf26b26219b630f5987a417fbd3b1b88e970466ca13d40b2c50b9f649"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/cinematic/cnobjecttracker-7aliq/issupported.json": {
+      "etag": "\"107c-65d55d445d6a8-df\"",
+      "file_path": "documentation/Cinematic/cnobjecttracker-7aliq/issupported.md",
+      "hash": "def3909b8374cf683f68c8cc14753b6f68e52322cb9761f09aa487dc056a7fd2"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/cinematic/cnobjecttracker-7aliq/resetdetectiontrack.json": {
+      "etag": "\"e60-65d55d445d6a8-df\"",
+      "file_path": "documentation/Cinematic/cnobjecttracker-7aliq/resetdetectiontrack.md",
+      "hash": "2a425e6ceb2b3ff56c20fdeb59ab0adb41b37da7a03fe36b907ba509b1ba7288"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/cinematic/cnobjecttracker-7aliq/starttrackingat:within:sourceimage:sourcedisparity:.json": {
+      "etag": "\"2543-65d55d445d6a8-df\"",
+      "file_path": "documentation/Cinematic/cnobjecttracker-7aliq/starttrackingat_within_sourceimage_sourcedisparity_.md",
+      "hash": "edb5ed15d5ac95aa60a72d58c12ca23b56f5837b814a668de41eb0d504e9ddba"
     },
     "https://developer.apple.com/tutorials/data/documentation/cinematic/cnrenderingquality.json": {
       "etag": "\"4127-65d55d451e1c6-df\"",
@@ -2169,6 +3384,101 @@
       "etag": "\"1268-65d55d45033da-df\"",
       "file_path": "documentation/Cinematic/cnrenderingsession-1hzh8/sourcepixelformattypes.md",
       "hash": "07fdd71f882b36403c8f41438aa77e12afbe9fcdbec27910115ec220670549cf"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/cinematic/cnrenderingsession-8yghc.json": {
+      "etag": "\"3b7c-65d55d45033da-df\"",
+      "file_path": "documentation/Cinematic/cnrenderingsession-8yghc.md",
+      "hash": "dfcce006e1d8a37e784d191f66c5ea1f2751b65a55241be4d83c8c1b5dff23de"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/cinematic/cnrenderingsession-8yghc/commandqueue.json": {
+      "etag": "\"e95-65d55d45033da-df\"",
+      "file_path": "documentation/Cinematic/cnrenderingsession-8yghc/commandqueue.md",
+      "hash": "15833fc398857fe7c78e639359d19a1e1f9f627858856a14a97b9d6675090416"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/cinematic/cnrenderingsession-8yghc/destinationpixelformattypes.json": {
+      "etag": "\"1012-65d55d45033da-df\"",
+      "file_path": "documentation/Cinematic/cnrenderingsession-8yghc/destinationpixelformattypes.md",
+      "hash": "9818d5c95d1a9041c2638a098ee03d43ae2e3773f147bc9c61deeae30eb5b0c0"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/cinematic/cnrenderingsession-8yghc/encoderendertocommandbuffer:frameattributes:sourceimage:sourcedisparity:destinationimage:.json": {
+      "etag": "\"243e-65d55d45033da-df\"",
+      "file_path": "documentation/Cinematic/cnrenderingsession-8yghc/encoderendertocommandbuffer_frameattributes_sourceimage_sourcedisparity_destinationimage_.md",
+      "hash": "1ee213df04a19922f7b475cd2d5c248845b71da3f1d509e42e74e9a3790bb08b"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/cinematic/cnrenderingsession-8yghc/encoderendertocommandbuffer:frameattributes:sourceimage:sourcedisparity:destinationluma:destinationchroma:.json": {
+      "etag": "\"2696-65d55d45033da-df\"",
+      "file_path": "documentation/Cinematic/cnrenderingsession-8yghc/encoderendertocommandbuffer_frameattributes_sourceimage_sourcedisparity_destinationluma_destinationchroma_.md",
+      "hash": "62eea7bafdc8ff846acc7921bf4c3ec4f00e62f678e3609d2b917115d19998c8"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/cinematic/cnrenderingsession-8yghc/encoderendertocommandbuffer:frameattributes:sourceimage:sourcedisparity:destinationrgba:.json": {
+      "etag": "\"23fa-65d55d45033da-df\"",
+      "file_path": "documentation/Cinematic/cnrenderingsession-8yghc/encoderendertocommandbuffer_frameattributes_sourceimage_sourcedisparity_destinationrgba_.md",
+      "hash": "8d79099fedf041c85cf330c353bd13c61a00f4f28c09da215a339118480b05fa"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/cinematic/cnrenderingsession-8yghc/initwithcommandqueue:sessionattributes:preferredtransform:quality:.json": {
+      "etag": "\"2287-65d55d45033da-df\"",
+      "file_path": "documentation/Cinematic/cnrenderingsession-8yghc/initwithcommandqueue_sessionattributes_preferredtransform_quality_.md",
+      "hash": "105359812d6b8c5f92f70317eba6c943e4878316b00c9e6d3def4e5b7e8e1b3f"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/cinematic/cnrenderingsession-8yghc/preferredtransform.json": {
+      "etag": "\"1205-65d55d45033da-df\"",
+      "file_path": "documentation/Cinematic/cnrenderingsession-8yghc/preferredtransform.md",
+      "hash": "e3471253cedba1d20b2349aceb9cfdec39eb968afe9da32cb5eec0df52512c42"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/cinematic/cnrenderingsession-8yghc/quality.json": {
+      "etag": "\"12ea-65d55d45033da-df\"",
+      "file_path": "documentation/Cinematic/cnrenderingsession-8yghc/quality.md",
+      "hash": "137e5cdb73eddeb838d945a26ddfcba8c3fec9a6906cf1db22b0975a995ed3b1"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/cinematic/cnrenderingsession-8yghc/sessionattributes.json": {
+      "etag": "\"112a-65d55d45033da-df\"",
+      "file_path": "documentation/Cinematic/cnrenderingsession-8yghc/sessionattributes.md",
+      "hash": "69500d49d1d836f2616f75ee56c8932a3bf6e0bcca3a4a01027e3a1354745ffa"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/cinematic/cnrenderingsession-8yghc/sourcepixelformattypes.json": {
+      "etag": "\"f32-65d55d45033da-df\"",
+      "file_path": "documentation/Cinematic/cnrenderingsession-8yghc/sourcepixelformattypes.md",
+      "hash": "3d14b0539f35a9a4b9d4d92933378580c107abec2b5cf8e0a9bffbe54abeb41f"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/cinematic/cnrenderingsessionattributes.json": {
+      "etag": "\"21c8-65d55d451e1c6-df\"",
+      "file_path": "documentation/Cinematic/cnrenderingsessionattributes.md",
+      "hash": "fac568957d452bc39e5f6d33d5f15f7c8444ccea81b3911503d84f6dfb7b43cf"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/cinematic/cnrenderingsessionattributes/loadfromasset:completionhandler:.json": {
+      "etag": "\"1b2e-65d55d445d6a8-df\"",
+      "file_path": "documentation/Cinematic/cnrenderingsessionattributes/loadfromasset_completionhandler_.md",
+      "hash": "48adf45854408edd16402cb48cf626d985ba99416ec381236cbe0c2fedd6ba4b"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/cinematic/cnrenderingsessionattributes/renderingversion.json": {
+      "etag": "\"123d-65d55d445d6a8-df\"",
+      "file_path": "documentation/Cinematic/cnrenderingsessionattributes/renderingversion.md",
+      "hash": "59bb15cd1cce542460a84ce8d086952c414623fdc88253f61f32a22db44f23ec"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/cinematic/cnrenderingsessionframeattributes.json": {
+      "etag": "\"2fd4-65d55d453cde3-df\"",
+      "file_path": "documentation/Cinematic/cnrenderingsessionframeattributes.md",
+      "hash": "a5770421b8cacbd35897fd5bbef6ad6cadfcf03b3f1415a709f290a69b46b628"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/cinematic/cnrenderingsessionframeattributes/fnumber.json": {
+      "etag": "\"e90-65d55d4556f6d-df\"",
+      "file_path": "documentation/Cinematic/cnrenderingsessionframeattributes/fnumber.md",
+      "hash": "b65ba08c6ca19ab7f5398cdf592225dddaf67a8d420120e263fcf4be9f79adf7"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/cinematic/cnrenderingsessionframeattributes/focusdisparity.json": {
+      "etag": "\"ec8-65d55d4556f6d-df\"",
+      "file_path": "documentation/Cinematic/cnrenderingsessionframeattributes/focusdisparity.md",
+      "hash": "cb0a9a14f42e7082a0684d8dfa773af0f564891d2b684cb454df8bec7652fc3b"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/cinematic/cnrenderingsessionframeattributes/initwithsamplebuffer:sessionattributes:.json": {
+      "etag": "\"1bfa-65d55d4556f6d-df\"",
+      "file_path": "documentation/Cinematic/cnrenderingsessionframeattributes/initwithsamplebuffer_sessionattributes_.md",
+      "hash": "f23846f91526a08c80f135d78f741fa9946584288c30cc4293f892531297ef24"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/cinematic/cnrenderingsessionframeattributes/initwithtimedmetadatagroup:sessionattributes:.json": {
+      "etag": "\"1b97-65d55d4556f6d-df\"",
+      "file_path": "documentation/Cinematic/cnrenderingsessionframeattributes/initwithtimedmetadatagroup_sessionattributes_.md",
+      "hash": "008cf69b5c5900d8466553ae34b72a3609984b557d7504ea7198ca68eda81b26"
     },
     "https://developer.apple.com/tutorials/data/documentation/cinematic/cnresourcestatus.json": {
       "etag": "\"3ca9-65d55d445d6a8-df\"",
@@ -2400,6 +3710,206 @@
       "file_path": "documentation/Cinematic/cnscript-1ispe/userdecisions(in).md",
       "hash": "4ace5e95996f1e47166c9ddc2078524c8fe6e160461374022af8c991131647b2"
     },
+    "https://developer.apple.com/tutorials/data/documentation/cinematic/cnscript-9e1zn.json": {
+      "etag": "\"5dc1-65d55d451e1c6-df\"",
+      "file_path": "documentation/Cinematic/cnscript-9e1zn.md",
+      "hash": "806cb3393d6d1d818b7a674abd8edbfad99e72fde8db300fc854d3c659b25902"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/cinematic/cnscript-9e1zn/adddetectiontrack:.json": {
+      "etag": "\"1802-65d55d447286e-df\"",
+      "file_path": "documentation/Cinematic/cnscript-9e1zn/adddetectiontrack_.md",
+      "hash": "19796246c1cdda0febb582921e61e3a5a539ef8b6e853fcef6d9061b76e0f428"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/cinematic/cnscript-9e1zn/addeddetectiontracks.json": {
+      "etag": "\"f05-65d55d447286e-df\"",
+      "file_path": "documentation/Cinematic/cnscript-9e1zn/addeddetectiontracks.md",
+      "hash": "955630fafd8de26b80496987b0407b0b628516c99ca31fbcc584dcbd8d1828f6"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/cinematic/cnscript-9e1zn/adduserdecision:.json": {
+      "etag": "\"16b0-65d55d447286e-df\"",
+      "file_path": "documentation/Cinematic/cnscript-9e1zn/adduserdecision_.md",
+      "hash": "3e9a55eeeee579d787aa3aa9017d5073a26f6dd0b7eb93633a96e83556a721b8"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/cinematic/cnscript-9e1zn/basedecisionsintimerange:.json": {
+      "etag": "\"14b2-65d55d447286e-df\"",
+      "file_path": "documentation/Cinematic/cnscript-9e1zn/basedecisionsintimerange_.md",
+      "hash": "6f5e5d37ae14427c59b5a0e9ff7580fa4df8e9ea1373bddf36f7b910bd3a872d"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/cinematic/cnscript-9e1zn/changes.json": {
+      "etag": "\"11fa-65d55d447286e-df\"",
+      "file_path": "documentation/Cinematic/cnscript-9e1zn/changes.md",
+      "hash": "0eb8b6211afd6557fbe359bccbe7a13b0e3097f3ce5e0969226bd8b0f4cb1078"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/cinematic/cnscript-9e1zn/changestrimmedbytimerange:.json": {
+      "etag": "\"16bb-65d55d447286e-df\"",
+      "file_path": "documentation/Cinematic/cnscript-9e1zn/changestrimmedbytimerange_.md",
+      "hash": "5f7d701b801400fb1941261b69a17d276eca85337ce7a00bb3a6720b98f453a0"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/cinematic/cnscript-9e1zn/decisionaftertime:.json": {
+      "etag": "\"16c8-65d55d447286e-df\"",
+      "file_path": "documentation/Cinematic/cnscript-9e1zn/decisionaftertime_.md",
+      "hash": "362ce8cc28ffd935413d1020f73fbd65a85525687b7d3e956c93b6d88405f536"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/cinematic/cnscript-9e1zn/decisionattime:tolerance:.json": {
+      "etag": "\"180f-65d55d447286e-df\"",
+      "file_path": "documentation/Cinematic/cnscript-9e1zn/decisionattime_tolerance_.md",
+      "hash": "e84bc5493e929088f549124885bcf73a764928c235c0cbeacc2c2089b7326f35"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/cinematic/cnscript-9e1zn/decisionbeforetime:.json": {
+      "etag": "\"162c-65d55d447286e-df\"",
+      "file_path": "documentation/Cinematic/cnscript-9e1zn/decisionbeforetime_.md",
+      "hash": "531d0cafa2160caefff20510799daa6c95703e05b71851b2d35298df14823701"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/cinematic/cnscript-9e1zn/decisionsintimerange:.json": {
+      "etag": "\"1403-65d55d447286e-df\"",
+      "file_path": "documentation/Cinematic/cnscript-9e1zn/decisionsintimerange_.md",
+      "hash": "7b561caa9bda8fce65aada987336ed38272af0a99ff493805f37a29749f9fb9d"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/cinematic/cnscript-9e1zn/detectiontrackfordecision:.json": {
+      "etag": "\"15b8-65d55d447286e-df\"",
+      "file_path": "documentation/Cinematic/cnscript-9e1zn/detectiontrackfordecision_.md",
+      "hash": "b43ba8722a7d15e3f7e58a0b506ecd97befe748a935362b4bc60481a07b5a542"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/cinematic/cnscript-9e1zn/detectiontrackforid:.json": {
+      "etag": "\"18ab-65d55d447286e-df\"",
+      "file_path": "documentation/Cinematic/cnscript-9e1zn/detectiontrackforid_.md",
+      "hash": "63d4af560f749246b4eab723334ba6fcd90ce83f79b34f72b47eb15a9a48c3b4"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/cinematic/cnscript-9e1zn/fnumber.json": {
+      "etag": "\"f7a-65d55d447286e-df\"",
+      "file_path": "documentation/Cinematic/cnscript-9e1zn/fnumber.md",
+      "hash": "a27d9cd6d907d98ce365e54b11800927c3622f5e0b1701b48432a436dd88d9f2"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/cinematic/cnscript-9e1zn/frameattime:tolerance:.json": {
+      "etag": "\"17c4-65d55d447286e-df\"",
+      "file_path": "documentation/Cinematic/cnscript-9e1zn/frameattime_tolerance_.md",
+      "hash": "476cd67101fb35c3cf99b2973dae665d9227c4a2badc7bb3d85ccb7add158980"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/cinematic/cnscript-9e1zn/framesintimerange:.json": {
+      "etag": "\"13b9-65d55d447286e-df\"",
+      "file_path": "documentation/Cinematic/cnscript-9e1zn/framesintimerange_.md",
+      "hash": "d17c7f56bb579cbf872e9fcd68971577fd8fa76bb0684f38e8b44362e51b724a"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/cinematic/cnscript-9e1zn/loadfromasset:changes:progress:completionhandler:.json": {
+      "etag": "\"259b-65d55d447286e-df\"",
+      "file_path": "documentation/Cinematic/cnscript-9e1zn/loadfromasset_changes_progress_completionhandler_.md",
+      "hash": "cec2afa91c2fd00d522fe03c85550b57da6b407deb27e542f79c7ad2dd1f2beb"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/cinematic/cnscript-9e1zn/primarydecisionattime:.json": {
+      "etag": "\"1771-65d55d447286e-df\"",
+      "file_path": "documentation/Cinematic/cnscript-9e1zn/primarydecisionattime_.md",
+      "hash": "7cc8df0c005724a55f316e47ade989fa637f70907cabee705c835c80fb454313"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/cinematic/cnscript-9e1zn/reloadwithchanges:.json": {
+      "etag": "\"1427-65d55d447286e-df\"",
+      "file_path": "documentation/Cinematic/cnscript-9e1zn/reloadwithchanges_.md",
+      "hash": "6d6622158207aee159d92f81719f105ae250b70b0934b038f5ca1d1d21f0b00f"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/cinematic/cnscript-9e1zn/removealluserdecisions.json": {
+      "etag": "\"e74-65d55d447286e-df\"",
+      "file_path": "documentation/Cinematic/cnscript-9e1zn/removealluserdecisions.md",
+      "hash": "501c9ce2d40db2968f7912bab44addfd2cb07981805dcf66a062ab26f5664743"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/cinematic/cnscript-9e1zn/removedetectiontrack:.json": {
+      "etag": "\"15da-65d55d447286e-df\"",
+      "file_path": "documentation/Cinematic/cnscript-9e1zn/removedetectiontrack_.md",
+      "hash": "6d4d71248d28c89ef35aea0cf7f2e531160710711d2070df1ac50113733eb58c"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/cinematic/cnscript-9e1zn/removeuserdecision:.json": {
+      "etag": "\"15c8-65d55d447286e-df\"",
+      "file_path": "documentation/Cinematic/cnscript-9e1zn/removeuserdecision_.md",
+      "hash": "6bb2849b8a49e858437f7e6b7cc01e8a55ad48e92a7ea9dbce288a7acd0af610"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/cinematic/cnscript-9e1zn/secondarydecisionattime:.json": {
+      "etag": "\"16aa-65d55d447286e-df\"",
+      "file_path": "documentation/Cinematic/cnscript-9e1zn/secondarydecisionattime_.md",
+      "hash": "e8c12c1bbcbf8779d67ae668ec3c0c34e631e9a9a2dcd2a178d0d3c7de68b4cf"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/cinematic/cnscript-9e1zn/timerange.json": {
+      "etag": "\"121d-65d55d447286e-df\"",
+      "file_path": "documentation/Cinematic/cnscript-9e1zn/timerange.md",
+      "hash": "42fa367e96b55fb2dca58f2f252cd5a3af52f6ed3acb598ff2fbc5ea2b8beac3"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/cinematic/cnscript-9e1zn/timerangeoftransitionafterdecision:.json": {
+      "etag": "\"174e-65d55d447286e-df\"",
+      "file_path": "documentation/Cinematic/cnscript-9e1zn/timerangeoftransitionafterdecision_.md",
+      "hash": "ebdf74553aef734647402e7a57df8992fc3b4c9e6b5942175856a8748159f021"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/cinematic/cnscript-9e1zn/timerangeoftransitionbeforedecision:.json": {
+      "etag": "\"1766-65d55d447286e-df\"",
+      "file_path": "documentation/Cinematic/cnscript-9e1zn/timerangeoftransitionbeforedecision_.md",
+      "hash": "ddbc38e01af42821e7b662d3b135d3583c64750f8169bb4aac4fd2d1d0a02c72"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/cinematic/cnscript-9e1zn/userdecisionsintimerange:.json": {
+      "etag": "\"147d-65d55d447286e-df\"",
+      "file_path": "documentation/Cinematic/cnscript-9e1zn/userdecisionsintimerange_.md",
+      "hash": "a28c8df87b3a2885d4d359affb2c6da0a9a3ff4a6c86f08dad25c47362d938be"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/cinematic/cnscriptchanges.json": {
+      "etag": "\"250b-65d55d453cde3-df\"",
+      "file_path": "documentation/Cinematic/cnscriptchanges.md",
+      "hash": "28b9373f9f389be3c6bbefd03b5b002703d3478f75ddb207e0cb0a88d6df9f66"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/cinematic/cnscriptchanges/addeddetectiontracks.json": {
+      "etag": "\"e87-65d55d453cde3-df\"",
+      "file_path": "documentation/Cinematic/cnscriptchanges/addeddetectiontracks.md",
+      "hash": "722c89192c5c66a58a30c1605ac778bd42b39500a646848d5da2047cccd14a37"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/cinematic/cnscriptchanges/datarepresentation.json": {
+      "etag": "\"12a7-65d55d453cde3-df\"",
+      "file_path": "documentation/Cinematic/cnscriptchanges/datarepresentation.md",
+      "hash": "53c70a7886e76499559a54ceefda60f6de7af06a632153b9845a6974b7d0e285"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/cinematic/cnscriptchanges/fnumber.json": {
+      "etag": "\"db7-65d55d453cde3-df\"",
+      "file_path": "documentation/Cinematic/cnscriptchanges/fnumber.md",
+      "hash": "990cb8e5756fe20e2e7714befe96726ee4669e3a7fdc7c0d35a518322b4076d7"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/cinematic/cnscriptchanges/initwithdatarepresentation:.json": {
+      "etag": "\"1416-65d55d453cde3-df\"",
+      "file_path": "documentation/Cinematic/cnscriptchanges/initwithdatarepresentation_.md",
+      "hash": "c67570ea76e44b15d4cc46a4c36064dbae6a956926fa4ba94d7fe1a07bd12764"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/cinematic/cnscriptchanges/userdecisions.json": {
+      "etag": "\"e67-65d55d453cde3-df\"",
+      "file_path": "documentation/Cinematic/cnscriptchanges/userdecisions.md",
+      "hash": "3eb8a28d26a892506b5454340422caf009d395d1121eb6e9f30ec8a2a08ad286"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/cinematic/cnscriptframe.json": {
+      "etag": "\"2911-65d55d445d6a8-df\"",
+      "file_path": "documentation/Cinematic/cnscriptframe.md",
+      "hash": "14cf55a690a1b24c3a9924b304c70ce1b80d0fa41f58911d716a36ea814fcf16"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/cinematic/cnscriptframe/alldetections.json": {
+      "etag": "\"e0c-65d55d445d6a8-df\"",
+      "file_path": "documentation/Cinematic/cnscriptframe/alldetections.md",
+      "hash": "8a0f890af658519cde863f74bc9c499e70d969224d2d098772f30c2f9bd15d5d"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/cinematic/cnscriptframe/bestdetectionforgroupid:.json": {
+      "etag": "\"19b5-65d55d445d6a8-df\"",
+      "file_path": "documentation/Cinematic/cnscriptframe/bestdetectionforgroupid_.md",
+      "hash": "93837de851bd24c9f69f9448b6b3181226a2fe963c8083277a0ccab9f8587638"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/cinematic/cnscriptframe/detectionforid:.json": {
+      "etag": "\"1785-65d55d445d6a8-df\"",
+      "file_path": "documentation/Cinematic/cnscriptframe/detectionforid_.md",
+      "hash": "773156a90e1ecd9185125814d3b02a5105759ce73c6fac233f823942a52294f6"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/cinematic/cnscriptframe/focusdetection.json": {
+      "etag": "\"1052-65d55d445d6a8-df\"",
+      "file_path": "documentation/Cinematic/cnscriptframe/focusdetection.md",
+      "hash": "86220fc872c698d2259ec2c19550d34a7fb4e592d5e859923255bf89f749aa61"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/cinematic/cnscriptframe/focusdisparity.json": {
+      "etag": "\"dc2-65d55d445d6a8-df\"",
+      "file_path": "documentation/Cinematic/cnscriptframe/focusdisparity.md",
+      "hash": "26117d48d3b3a80cc49fd1c492209eee538be66240505779c074c09921b1d6ea"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/cinematic/cnscriptframe/time.json": {
+      "etag": "\"106a-65d55d445d6a8-df\"",
+      "file_path": "documentation/Cinematic/cnscriptframe/time.md",
+      "hash": "2e0a77c8e76489f35a6997ff325f5284050437db1c0185315e33176d5c32abbf"
+    },
     "https://developer.apple.com/tutorials/data/documentation/cinematic/cnspatialaudiocontenttype.json": {
       "etag": "\"35b4-65d55d453cde3-df\"",
       "file_path": "documentation/Cinematic/cnspatialaudiocontenttype.md",
@@ -2493,8 +4003,8 @@
   },
   "metadata": {
     "render": {
-      "version": 1
+      "version": 2
     },
-    "total_pages": 498
+    "total_pages": 800
   }
 }

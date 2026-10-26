@@ -25,6 +25,12 @@ static var scalabilityToLosslessAudio: AVVariantPreferences { get }
 AVVariantPreferenceScalabilityToLosslessAudio
 ```
 
+## See Also
+
+### Preference settings
+- [AVVariantPreferenceNone](./avvariantpreferencenone.md)
+  Indicates that the player item uses the default behavior for determining variant playlist selection.
+
 
 ---
 

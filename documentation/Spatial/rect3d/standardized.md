@@ -36,6 +36,10 @@ static SPRect3D SPRect3DStandardize(SPRect3D rect);
   Returns a new rectangle with the same center point after applying the specified inset amount.
 - [func intersection(Rect3D) -> Rect3D?](./intersection%28_%29.md)
   Returns the intersection of two rectangles.
+- [SPRect3DIntersection](../sprect3dintersection.md)
+  Returns the intersection of two rectangles.
+- [SPRect3DUnion](../sprect3dunion.md)
+  Returns the smallest rectangle that contains two rectangles.
 
 
 ---

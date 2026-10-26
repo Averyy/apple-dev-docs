@@ -44,6 +44,8 @@ typedef uint32_t AVAudioPacketCount;
   The buffer’s array of packet descriptions.
 - [var packetDependencies: [AudioStreamPacketDependencyDescription]?](./avaudiocompressedbuffer/packetdependencies-3a6ln.md)
   The buffer’s array of packet dependencies.
+- [packetDependencies](./avaudiocompressedbuffer/packetdependencies-5oae6.md)
+  The buffer’s array of packet dependencies.
 
 
 ---

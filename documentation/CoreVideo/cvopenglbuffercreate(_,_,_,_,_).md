@@ -48,6 +48,10 @@ A Core Video result code. See [Core Video Constants](./core-video-constants.md) 
   Obtains the attributes of a Core Video OpenGL buffer.
 - [func CVOpenGLBufferGetTypeID() -> CFTypeID](./cvopenglbuffergettypeid%28%29.md)
   Obtains the Core Foundation type ID for the OpenGL buffer type.
+- [CVOpenGLBufferRetain](./cvopenglbufferretain.md)
+  Retains a Core Video OpenGL buffer.
+- [CVOpenGLBufferRelease](./cvopenglbufferrelease.md)
+  Releases a Core Video OpenGL buffer.
 
 
 ---

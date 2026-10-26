@@ -40,6 +40,8 @@ enum AVAssetReferenceRestrictions : NSUInteger;
   A local asset shouldn’t follow references to local media data stored outside its container file.
 - [static var defaultPolicy: AVAssetReferenceRestrictions](./avassetreferencerestrictions/defaultpolicy.md)
   The asset should use the default reference restrictions policy.
+- [AVAssetReferenceRestrictionForbidNone](./avassetreferencerestrictions/avassetreferencerestrictionforbidnone.md)
+  The asset should follow all media references.
 ### Initializers
 - [init(rawValue: UInt)](./avassetreferencerestrictions/init%28rawvalue%29.md)
   Creates reference restrictions with an integer value.

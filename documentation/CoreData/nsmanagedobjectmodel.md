@@ -140,6 +140,7 @@ for (NSEntityDescription *entity in aModel) {
 - [static func makeManagedObjectModel(for: any PersistentModel.Type..., mergedWith: NSManagedObjectModel?) -> NSManagedObjectModel?](./nsmanagedobjectmodel/makemanagedobjectmodel%28for,mergedwith%29-2tc31.md)
 - [static func makeManagedObjectModel(for: [any PersistentModel.Type], mergedWith: NSManagedObjectModel?) -> NSManagedObjectModel?](./nsmanagedobjectmodel/makemanagedobjectmodel%28for,mergedwith%29-37opo.md)
 - [static func makeManagedObjectModel(for: Schema, mergedWith: NSManagedObjectModel?) -> NSManagedObjectModel?](./nsmanagedobjectmodel/makemanagedobjectmodel%28for,mergedwith%29-7lqq9.md)
+- [+ checksumsForVersionedModelAtURL:error:](./nsmanagedobjectmodel/checksumsforversionedmodelaturl_error_.md)
 
 ## Relationships
 

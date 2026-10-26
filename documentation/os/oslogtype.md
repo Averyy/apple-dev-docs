@@ -50,6 +50,17 @@ A log level controls how and when the system writes a message to the unified log
 ### Getting the Raw Value
 - [var rawValue: UInt8](./oslogtype/rawvalue.md)
   The log type’s raw value.
+### Enumeration Cases
+- [OS_LOG_TYPE_DEBUG](./os_log_type_t/os_log_type_debug.md)
+  The debug log level.
+- [OS_LOG_TYPE_DEFAULT](./os_log_type_t/os_log_type_default.md)
+  The default log level.
+- [OS_LOG_TYPE_ERROR](./os_log_type_t/os_log_type_error.md)
+  The error log level.
+- [OS_LOG_TYPE_FAULT](./os_log_type_t/os_log_type_fault.md)
+  The fault log level.
+- [OS_LOG_TYPE_INFO](./os_log_type_t/os_log_type_info.md)
+  The informational log level.
 
 ## Relationships
 
@@ -67,6 +78,22 @@ A log level controls how and when the system writes a message to the unified log
   An object for writing interpolated string messages to the unified logging system.
 - [Message Argument Formatters](./message-argument-formatters.md)
   Manage the privacy and presentation of the message’s interpolated values using type-aware formatters.
+- [Legacy Logging Symbols](./legacy-logging-symbols.md)
+  Migrate your code away from using these legacy symbols.
+- [os_log_t](./os-log-t.md)
+  A log object that you pass to logging functions to send messages to that log.
+- [os_log_with_type](./os_log_with_type.md)
+  Sends a message at a specific logging level, such as default, info, debug, error, or fault, to the logging system.
+- [os_log](./os_log.md)
+  Sends a default-level message to the logging system.
+- [os_log_info](./os_log_info.md)
+  Sends an info-level message to the logging system.
+- [os_log_debug](./os_log_debug.md)
+  Sends a debug-level message to the logging system.
+- [os_log_error](./os_log_error.md)
+  Sends an error-level message to the logging system.
+- [os_log_fault](./os_log_fault.md)
+  Sends a fault-level message to the logging system.
 
 
 ---

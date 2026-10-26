@@ -36,6 +36,9 @@ This option set defines timeline navigation operations. Different content types 
   The source supports forward scanning at accelerated rates for fast-forward operations. Enables rapid progression through content at speeds greater than normal playback.
 - [static var seek: AVPlaybackUserInterfaceSeekCapabilities](./avplaybackuserinterfaceseekcapabilities/seek.md)
   The source supports seeking to specific time positions for precise navigation. Enables jumping directly to any arbitrary point within the seekable time ranges.
+### Enumeration Cases
+- [AVPlaybackUserInterfaceSeekCapabilitiesNone](./avplaybackuserinterfaceseekcapabilities/avplaybackuserinterfaceseekcapabilitiesnone.md)
+  The source does not support any scanning or seeking operations.
 
 ## Relationships
 
@@ -56,6 +59,8 @@ This option set defines timeline navigation operations. Different content types 
   Provides playback control and state management for media content.
 - [enum AVPlaybackUserInterfacePlaybackState](./avplaybackuserinterfaceplaybackstate.md)
   Describes possible transport states of the playback source.
+- [AVPlaybackUserInterfacePlaybackControllable](./avplaybackuserinterfaceplaybackcontrollable-81n66.md)
+  Provides playback control and state management for media content.
 
 
 ---

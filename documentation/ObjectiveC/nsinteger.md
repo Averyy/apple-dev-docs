@@ -34,6 +34,8 @@ When building 32-bit applications, NSInteger is a 32-bit integer. A 64-bit appli
 ### Constants
 - [var NSIntegerMax: Int](./nsintegermax.md)
   The maximum value for an `NSInteger`.
+- [NSIntegerMin](./nsintegermin.md)
+  The minimum value for an `NSInteger`.
 
 ## See Also
 
@@ -48,6 +50,8 @@ When building 32-bit applications, NSInteger is a 32-bit integer. A 64-bit appli
 - [typealias objc_objectptr_t](./objc_objectptr_t.md)
 - [typealias objc_uncaught_exception_handler](./objc_uncaught_exception_handler.md)
 - [typealias objc_zone_t](./objc_zone_t.md)
+- [NSUInteger](./nsuinteger.md)
+  Describes an unsigned integer.
 
 
 ---

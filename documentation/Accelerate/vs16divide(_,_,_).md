@@ -52,6 +52,14 @@ extern vSInt16 vS16Divide(vSInt16 vN, vSInt16 vD, vSInt16 *vRemainder);
   Signed 8-bit multiplication; results are same width as multiplicands.
 - [func vU32HalfMultiply(vUInt32, vUInt32) -> vUInt32](./vu32halfmultiply%28_,_%29.md)
   Unsigned 32-bit multiplication; results are same width as multiplicands.
+- [vU64Add](./vu64add.md)
+  Unsigned 64-bit addition (modular arithmetic).
+- [vS64Add](./vs64add.md)
+  Signed 64-bit addition (modular arithmetic).
+- [vU64Sub](./vu64sub.md)
+  Unsigned 64-bit subtraction (modular arithmetic).
+- [vS64Sub](./vs64sub.md)
+  Signed 64-bit subtraction (modular arithmetic).
 
 
 ---

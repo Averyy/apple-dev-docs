@@ -47,6 +47,12 @@ If the end of the input text buffer is reached before thespecified stopping poin
   Begins speaking a string represented as a `CFString` object.
 - [func StopSpeech(SpeechChannel) -> OSErr](./api-1462745-stopspeech.md)
   Terminates speech immediately on the specified channel.
+- [SpeakBuffer](./api-1552252-speakbuffer.md)
+  Speaks a buffer of text, using certain flags to controlspeech behavior.
+- [SpeakString](./api-1552250-speakstring.md)
+  Begins speaking a text string.
+- [SpeakText](./api-1552236-speaktext.md)
+  Begins speaking a buffer of text.
 
 
 ---

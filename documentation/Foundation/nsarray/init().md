@@ -46,6 +46,9 @@ This method is a designated initializer.
   Initializes a newly allocated array with the contents of the file specified by a given path.
 - [init(objects: UnsafePointer<AnyObject>?, count: Int)](./init%28objects,count%29-5odxv.md)
   Initializes a newly allocated array to include a given number of objects from a given C array.
+### Related Documentation
+- [- initWithObjects:](./initwithobjects_.md)
+  Initializes a newly allocated array by placing in it the objects in the argument list.
 
 
 ---

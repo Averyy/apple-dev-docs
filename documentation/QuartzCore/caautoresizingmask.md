@@ -36,6 +36,8 @@ enum CAAutoresizingMask : unsigned int;
   The receiver’s height is flexible.
 - [static var layerMaxYMargin: CAAutoresizingMask](./caautoresizingmask/layermaxymargin.md)
   The top margin between the receiver and its superview is flexible.
+- [kCALayerNotSizable](./caautoresizingmask/kcalayernotsizable.md)
+  The receiver cannot be resized.
 
 ## Relationships
 

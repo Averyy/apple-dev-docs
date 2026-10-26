@@ -28,6 +28,8 @@ kCWCipherKeyFlagsUnicast
   A flag that indicates to use the cipher key for packets sent from the interface.
 - [static var rx: CWCipherKeyFlags](./rx.md)
   A flag that indicates to use the cipher key for packets received by the interface.
+- [kCWCipherKeyFlagsNone](./kcwcipherkeyflagsnone.md)
+  Open System authentication.
 
 
 ---

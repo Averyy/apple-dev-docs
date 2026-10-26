@@ -1,0 +1,60 @@
+# ar_camera_region_anchor_get_identifier
+
+**Framework**: ARKit  
+**Kind**: func  
+**Role**: Function
+
+Get the identifier of an anchor.
+
+**Availability**:
+- visionOS 26.0+
+
+## Declaration
+
+```c
+extern void ar_camera_region_anchor_get_identifier(ar_camera_region_anchor_t camera_region_anchor, uuid_t out_identifier);
+```
+
+## Parameters
+
+- `camera_region_anchor`: The anchor.
+- `out_identifier`: A pointer to a UUID to fill out with the anchor identifier. Must be non-null.
+
+## See Also
+
+### Camera region
+- [ar_camera_region_add_anchor_completion_handler_function_t](./ar_camera_region_add_anchor_completion_handler_function_t.md)
+  Function called when a request to add a camera region anchor has completed (successfully or not).
+- [ar_camera_region_add_anchor_completion_handler_t](./ar_camera_region_add_anchor_completion_handler_t.md)
+  Handler called when a request to add a camera region anchor has completed (successfully or not).
+- [ar_camera_region_anchor_t](./ar_camera_region_anchor_t.md)
+  An anchor representing a camera region with enhanced image processing.
+- [ar_camera_region_anchor_update_handler_function_t](./ar_camera_region_anchor_update_handler_function_t.md)
+  Function called when there are updates to a specific camera region anchor.
+- [ar_camera_region_anchor_update_handler_t](./ar_camera_region_anchor_update_handler_t.md)
+  Handler called when there are updates to a specific camera region anchor.
+- [ar_camera_region_anchors_enumerator_function_t](./ar_camera_region_anchors_enumerator_function_t.md)
+  Function for enumerating a collection of camera region anchors.
+- [ar_camera_region_anchors_enumerator_t](./ar_camera_region_anchors_enumerator_t.md)
+  Handler for enumerating a collection of camera region anchors.
+- [ar_camera_region_anchors_t](./ar_camera_region_anchors_t.md)
+  A collection of camera region anchors.
+- [ar_camera_region_configuration_t](./ar_camera_region_configuration_t.md)
+  Configuration for camera region processing.
+- [ar_camera_region_provider_t](./ar_camera_region_provider_t.md)
+  A data provider for camera region processing.
+- [ar_camera_region_remove_anchor_completion_handler_function_t](./ar_camera_region_remove_anchor_completion_handler_function_t.md)
+  Function called when a request to remove a camera region anchor has completed (successfully or not).
+- [ar_camera_region_remove_anchor_completion_handler_t](./ar_camera_region_remove_anchor_completion_handler_t.md)
+  Handler called when a request to remove a camera region anchor has completed (successfully or not).
+- [ar_camera_region_remove_anchor_with_identifier_completion_handler_function_t](./ar_camera_region_remove_anchor_with_identifier_completion_handler_function_t.md)
+  Function called when a request to remove a camera region anchor by its identifier has completed (successfully or not).
+- [ar_camera_region_remove_anchor_with_identifier_completion_handler_t](./ar_camera_region_remove_anchor_with_identifier_completion_handler_t.md)
+  Handler called when a request to remove a camera region anchor by its identifier has completed (successfully or not).
+- [ar_camera_region_anchor_create_with_parameters](./ar_camera_region_anchor_create_with_parameters.md)
+  Create a camera region anchor using a transform from the anchor to the origin coordinate system, a specified size, and a camera enhancement.
+
+
+---
+
+*[View on Apple Developer](https://developer.apple.com/documentation/arkit/ar_camera_region_anchor_get_identifier)*

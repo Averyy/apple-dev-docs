@@ -26,6 +26,8 @@ var attachment: ASAuthorizationPublicKeyCredentialAttachment { get }
 ### Accessing registration properties
 - [var largeBlob: ASAuthorizationPublicKeyCredentialLargeBlobRegistrationOutput?](./largeblob-5nvj9.md)
   The request’s binary large object value.
+- [largeBlob](./largeblob-jhnw.md)
+  The request’s binary large object value.
 
 
 ---

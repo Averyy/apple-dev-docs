@@ -3,6 +3,12 @@
 **Framework**: Authentication Services  
 **Role**: API Collection
 
+## Topics
+
+### Data Types
+- [ASImage](./asimage.md)
+- [ASViewController](./asviewcontroller.md)
+
 ## See Also
 
 ### Reference

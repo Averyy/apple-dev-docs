@@ -32,6 +32,9 @@ func unregisterDraggedTypes()
   Initiates a drag operation using a gesture recognizer.
 - [func shouldDelayWindowOrdering(for: NSEvent) -> Bool](./shoulddelaywindowordering%28for%29.md)
   Allows the user to drag objects from the view without activating the app or moving the window of the view forward, possibly obscuring the destination.
+### Related Documentation
+- [- dragImage:at:offset:event:pasteboard:source:slideBack:](./dragimage_at_offset_event_pasteboard_source_slideback_.md)
+  Initiates a dragging operation from the view, allowing the user to drag arbitrary data with a specified icon into any application that has window or view objects that accept dragged data.
 
 
 ---

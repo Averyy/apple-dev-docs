@@ -13,6 +13,11 @@ Apply attributes to text in an attributed string to convey extra information abo
 - [static let accessibilityTextHeadingLevel: NSAttributedString.Key](../Foundation/nsattributedstring/key/accessibilitytextheadinglevel.md)
   A key for specifying the heading level of the text.
 - [static let UIAccessibilityTextAttributeContext: NSAttributedString.Key](../Foundation/nsattributedstring/key/uiaccessibilitytextattributecontext.md)
+- [UIAccessibilityTextAttributeCustom](./uiaccessibilitytextattributecustom.md)
+  A key for specifying custom attributes to apply to the text.
+- [UIAccessibilityTextAttributeHeadingLevel](./uiaccessibilitytextattributeheadinglevel.md)
+  A key for specifying the heading level of the text.
+- [UIAccessibilityTextAttributeContext](./uiaccessibilitytextattributecontext.md)
 
 ## See Also
 

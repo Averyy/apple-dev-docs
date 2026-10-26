@@ -40,6 +40,10 @@ Types in the public domain have identifiers starting with `public`, and are gene
   The reference URL for the type.
 - [var version: Int?](../uttype-swift.struct/version.md)
   The type’s version, if available.
+- [referenceURL](./referenceurl.md)
+  The reference URL for the type.
+- [version](./version.md)
+  The type’s version, if available.
 
 
 ---

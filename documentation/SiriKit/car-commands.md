@@ -12,47 +12,47 @@ Users can lock or unlock the car’s doors and get other car-related information
 ## Topics
 
 ### Get Car Lock Status
-- [protocol INGetCarLockStatusIntentHandling](https://developer.apple.com/documentation/intents/ingetcarlockstatusintenthandling)
+- [protocol INGetCarLockStatusIntentHandling](../Intents/ingetcarlockstatusintenthandling.md)
   The handler interface for requesting the current status of the car’s locks.
-- [class INGetCarLockStatusIntent](https://developer.apple.com/documentation/intents/ingetcarlockstatusintent)
+- [class INGetCarLockStatusIntent](../Intents/ingetcarlockstatusintent.md)
   A request to get the lock status of the user’s car.
-- [class INGetCarLockStatusIntentResponse](https://developer.apple.com/documentation/intents/ingetcarlockstatusintentresponse)
+- [class INGetCarLockStatusIntentResponse](../Intents/ingetcarlockstatusintentresponse.md)
   Your app’s response to a request to get the car’s lock status.
 ### Set Car Lock Status
-- [protocol INSetCarLockStatusIntentHandling](https://developer.apple.com/documentation/intents/insetcarlockstatusintenthandling)
+- [protocol INSetCarLockStatusIntentHandling](../Intents/insetcarlockstatusintenthandling.md)
   The handler interface for requesting to lock or unlock a car.
-- [class INSetCarLockStatusIntent](https://developer.apple.com/documentation/intents/insetcarlockstatusintent)
+- [class INSetCarLockStatusIntent](../Intents/insetcarlockstatusintent.md)
   A request to lock or unlock the user’s car.
-- [class INSetCarLockStatusIntentResponse](https://developer.apple.com/documentation/intents/insetcarlockstatusintentresponse)
+- [class INSetCarLockStatusIntentResponse](../Intents/insetcarlockstatusintentresponse.md)
   Your app’s response to a request to lock or unlock the car.
 ### Get Car Power Level Status
-- [protocol INGetCarPowerLevelStatusIntentHandling](https://developer.apple.com/documentation/intents/ingetcarpowerlevelstatusintenthandling)
+- [protocol INGetCarPowerLevelStatusIntentHandling](../Intents/ingetcarpowerlevelstatusintenthandling.md)
   The handler interface for requesting a car’s current power level.
-- [class INGetCarPowerLevelStatusIntent](https://developer.apple.com/documentation/intents/ingetcarpowerlevelstatusintent)
+- [class INGetCarPowerLevelStatusIntent](../Intents/ingetcarpowerlevelstatusintent.md)
   A request for the current power level of the user’s car.
-- [class INGetCarPowerLevelStatusIntentResponse](https://developer.apple.com/documentation/intents/ingetcarpowerlevelstatusintentresponse)
+- [class INGetCarPowerLevelStatusIntentResponse](../Intents/ingetcarpowerlevelstatusintentresponse.md)
   Your app’s response to a request for the vehicle power level.
-- [protocol INGetCarPowerLevelStatusIntentResponseObserver](https://developer.apple.com/documentation/intents/ingetcarpowerlevelstatusintentresponseobserver)
+- [protocol INGetCarPowerLevelStatusIntentResponseObserver](../Intents/ingetcarpowerlevelstatusintentresponseobserver.md)
   The interface for providing updates of a vehicle’s power level.
 ### Activate Car Signal
-- [protocol INActivateCarSignalIntentHandling](https://developer.apple.com/documentation/intents/inactivatecarsignalintenthandling)
+- [protocol INActivateCarSignalIntentHandling](../Intents/inactivatecarsignalintenthandling.md)
   The handler interface for requesting to activate the car’s signals.
-- [class INActivateCarSignalIntent](https://developer.apple.com/documentation/intents/inactivatecarsignalintent)
+- [class INActivateCarSignalIntent](../Intents/inactivatecarsignalintent.md)
   A request to activate the signals on the user’s car.
-- [class INActivateCarSignalIntentResponse](https://developer.apple.com/documentation/intents/inactivatecarsignalintentresponse)
+- [class INActivateCarSignalIntentResponse](../Intents/inactivatecarsignalintentresponse.md)
   Your app’s response to a request to activate a car’s signals.
 ### List Cars
-- [protocol INListCarsIntentHandling](https://developer.apple.com/documentation/intents/inlistcarsintenthandling)
+- [protocol INListCarsIntentHandling](../Intents/inlistcarsintenthandling.md)
   The handler interface for requesting a list of the user’s electric vehicles.
-- [class INListCarsIntent](https://developer.apple.com/documentation/intents/inlistcarsintent)
+- [class INListCarsIntent](../Intents/inlistcarsintent.md)
   An intent for retrieving a list of the user’s electric vehicles.
-- [class INListCarsIntentResponse](https://developer.apple.com/documentation/intents/inlistcarsintentresponse)
+- [class INListCarsIntentResponse](../Intents/inlistcarsintentresponse.md)
   Your app’s response to a request to list the user’s electric vehicles.
 ### Data Objects
-- [struct INCarSignalOptions](https://developer.apple.com/documentation/intents/incarsignaloptions)
+- [struct INCarSignalOptions](../Intents/incarsignaloptions.md)
   The signals produced by the user’s car.
 ### Resolution Results
-- [class INCarSignalOptionsResolutionResult](https://developer.apple.com/documentation/intents/incarsignaloptionsresolutionresult)
+- [class INCarSignalOptionsResolutionResult](../Intents/incarsignaloptionsresolutionresult.md)
   A resolution result for the signals the intent is managing on the car.
 
 ## See Also

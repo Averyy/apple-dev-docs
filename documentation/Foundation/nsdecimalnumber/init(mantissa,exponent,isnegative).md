@@ -48,6 +48,9 @@ The arguments express a number in a type of scientific notation that requires th
   Initializes a decimal number so that its value is equivalent to that in a given numeric string.
 - [convenience init(string: String?, locale: Any?)](./init%28string,locale%29.md)
   Initializes a decimal number so that its value is equivalent to that in a given numeric string, interpreted using a given locale.
+### Related Documentation
+- [+ decimalNumberWithMantissa:exponent:isNegative:](./decimalnumberwithmantissa_exponent_isnegative_.md)
+  Creates and returns a decimal number equivalent to the number specified by the arguments.
 
 
 ---

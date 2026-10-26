@@ -33,6 +33,8 @@ This retrieves the size of the view and its location within the texture. If the 
   The index of the view’s textures in the drawable.
 - [var sliceIndex: Int](./sliceindex.md)
   The index of the view’s texture in an array-based texture type.
+- [cp_view_texture_map_t](../../../../cp_view_texture_map_t.md)
+  A type that provides details about the textures associated with a view.
 
 
 ---

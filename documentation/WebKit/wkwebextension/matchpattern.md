@@ -75,6 +75,10 @@ All match patterns are specified as strings. Apart from the special `<all_urls>`
   Returns a pattern object for `<all_urls>`.
 - [class func registerCustomURLScheme(String)](./matchpattern/registercustomurlscheme%28_%29.md)
   Registers a custom URL scheme that can be used in match patterns.
+- [+ matchPatternWithScheme:host:path:](../wkwebextensionmatchpattern/matchpatternwithscheme_host_path_.md)
+  Returns a pattern object for the specified scheme, host, and path strings.
+- [+ matchPatternWithString:](../wkwebextensionmatchpattern/matchpatternwithstring_.md)
+  Returns a pattern object for the specified pattern string.
 
 ## Relationships
 

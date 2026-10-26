@@ -42,6 +42,11 @@ The current path is cleared as a side effect of calling this function.
   Paints the area within the current path, as determined by the specified fill rule.
 - [func strokePath()](./strokepath%28%29.md)
   Paints a line along the current path.
+### Related Documentation
+- [CGContextEOFillPath](../cgcontexteofillpath.md)
+  Paints the area within the current path, using the even-odd fill rule.
+- [CGContextFillPath](../cgcontextfillpath.md)
+  Paints the area within the current path, using the nonzero winding number rule.
 
 
 ---

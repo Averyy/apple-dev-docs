@@ -1,0 +1,39 @@
+# attachmentWithUniformTypeIdentifier:name:payload:userInfo:
+
+**Framework**: XCTest  
+**Kind**: method  
+**Role**: Type Method
+
+Creates an attachment containing the provided data payload, optionally with a custom UTI, name, and user-provided metadata dictionary.
+
+## Declaration
+
+```objc
++ (instancetype) attachmentWithUniformTypeIdentifier:(NSString *) identifier name:(NSString *) name payload:(NSData *) payload userInfo:(NSDictionary *) userInfo;
+```
+
+#### Discussion
+
+Creates an attachment with a [`uniformTypeIdentifier`](./uniformtypeidentifier.md) of `"public.data"` if the `identifier` parameter is `nil`.
+
+## Parameters
+
+- `identifier`: An optional custom UTI to represent the data’s content type.
+- `name`: An optional name for the attachment, to be used in Xcode’s test reports.
+- `payload`: The data to wrap as an attachment.
+- `userInfo`: An optional dictionary of user-provided metadata to associate with the attachment.
+
+## See Also
+
+### Creating Attachments from Data
+- [convenience init(data: Data)](./init%28data%29.md)
+  Creates an attachment containing the provided data payload.
+- [convenience init(data: Data, uniformTypeIdentifier: String)](./init%28data,uniformtypeidentifier%29.md)
+  Creates an attachment containing the provided data payload, with a custom UTI.
+- [init(uniformTypeIdentifier: String?, name: String?, payload: Data?, userInfo: [AnyHashable : Any]?)](./init%28uniformtypeidentifier,name,payload,userinfo%29.md)
+  Creates an attachment containing the provided data payload, optionally with a custom UTI, name, and user-provided metadata dictionary.
+
+
+---
+
+*[View on Apple Developer](https://developer.apple.com/documentation/xctest/xctattachment/attachmentwithuniformtypeidentifier:name:payload:userinfo:)*

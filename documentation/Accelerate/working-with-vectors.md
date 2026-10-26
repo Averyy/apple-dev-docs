@@ -61,13 +61,13 @@ Calculating the distance between two points using the Pythagorean theorem is a c
 
 ###### Calculate Length
 
-The length functions, for example, [`simd_length`](https://developer.apple.com/documentation/simd/simd_length-3ob5d), return the length of a vector. The following illustration shows how the length of a vector, *A*, is calculated as the square root of the sum of the squares of its two values.
+The length functions, for example, [`simd_length`](../simd/simd_length-3ob5d.md), return the length of a vector. The following illustration shows how the length of a vector, *A*, is calculated as the square root of the sum of the squares of its two values.
 
 ![Illustration showing how the length of vector A, at coordinates 4, 3, is calculated using the Pythagorean theorem.](https://developer.apple.com/tutorials/images/com.apple.accelerate/media-2972222@2x.png)
 
 ###### Calculate Distance
 
-The distance functions, for example, [`simd_distance`](https://developer.apple.com/documentation/simd/simd_distance-598wa), return the distance between two vectors:
+The distance functions, for example, [`simd_distance`](../simd/simd_distance-598wa.md), return the distance between two vectors:
 
 ![Illustration showing how the distance between vector A, at coordinates 3, 2, and vector B, at 7, 5, is calculated using the Pythagorean theorem.](https://developer.apple.com/tutorials/images/com.apple.accelerate/media-2970190@2x.png)
 
@@ -120,7 +120,7 @@ let normal = simd_normalize(simd_double2(x: 0, y: 1))
 
 ###### Calculate Reflection
 
-You get the reflected vector with [`simd_reflect`](https://developer.apple.com/documentation/simd/simd_reflect-7c8f9):
+You get the reflected vector with [`simd_reflect`](../simd/simd_reflect-7c8f9.md):
 
 ```swift
 let reflected = simd_reflect(incident, normal)

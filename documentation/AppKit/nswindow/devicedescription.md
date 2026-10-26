@@ -30,6 +30,8 @@ This information is useful for tuning images and colors to the window’s displa
   Creates a new color object whose color is the same as the receiver’s, except that the new color object is in the specified color space.
 - [var deviceDescription: [NSDeviceDescriptionKey : Any]](../nsscreen/devicedescription.md)
   The device dictionary for the screen.
+- [- bestRepresentationForDevice:](../nsimage/bestrepresentationfordevice_.md)
+  Returns the best representation for the device with the specified characteristics.
 ### Accessing Window Information
 - [var depthLimit: NSWindow.Depth](./depthlimit.md)
   The depth limit of the window.

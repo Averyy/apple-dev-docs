@@ -41,6 +41,9 @@ Note that this method does not check whether an application with the given bundl
   Returns an instance of an `SBApplication` subclass that represents the target application identified by the given process identifier.
 - [init?(url: URL)](./init%28url%29-6xbe5.md)
   Returns an instance of an `SBApplication` subclass that represents the target application identified by the given URL.
+### Related Documentation
+- [+ applicationWithBundleIdentifier:](./applicationwithbundleidentifier_.md)
+  Returns the shared instance representing the target application specified by its bundle identifier.
 
 
 ---

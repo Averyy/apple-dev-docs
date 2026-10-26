@@ -30,6 +30,8 @@ typedef struct { ... } es_event_close_t;
 ### Instance Properties
 - [var reserved: (UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8)](./es_event_close_t/reserved-1vkig.md)
 - [var was_mapped_writable: Bool](./es_event_close_t/was_mapped_writable-5iaxq.md)
+- [reserved](./es_event_close_t/reserved-3n62l.md)
+- [was_mapped_writable](./es_event_close_t/was_mapped_writable-75owp.md)
 
 ## See Also
 

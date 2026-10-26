@@ -56,6 +56,8 @@ protocol GCSwitchPositionInput : NSObjectProtocol
 ### Steering and switch elements
 - [class GCSteeringWheelElement](./gcsteeringwheelelement.md)
   The element that represents the wheel of a racing wheel controller.
+- [GCInputSwitchName](./gcinputswitchname.md)
+  The Objective-C type for an input switch name.
 
 
 ---

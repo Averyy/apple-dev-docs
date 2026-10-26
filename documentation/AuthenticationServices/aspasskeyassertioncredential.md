@@ -34,6 +34,10 @@ Create a passkey assertion credential to provide a response to a passkey authent
   Initializes a passkey assertion credential object.
 - [convenience init(userHandle: Data, relyingParty: String, signature: Data, clientDataHash: Data, authenticatorData: Data, credentialID: Data, extensionOutput: ASPasskeyAssertionCredentialExtensionOutput?)](./aspasskeyassertioncredential/init%28userhandle,relyingparty,signature,clientdatahash,authenticatordata,credentialid,extensionoutput%29.md)
   Initializes a passkey assertion credential object, optionally specifying an extension output.
+- [+ credentialWithUserHandle:relyingParty:signature:clientDataHash:authenticatorData:credentialID:](./aspasskeyassertioncredential/credentialwithuserhandle_relyingparty_signature_clientdatahash_authenticatordata_credentialid_.md)
+  Creates and initializes a new passkey assertion credential.
+- [- initWithUserHandle:relyingParty:signature:clientDataHash:authenticatorData:credentialID:extensionOutput:](./aspasskeyassertioncredential/initwithuserhandle_relyingparty_signature_clientdatahash_authenticatordata_credentialid_extensionoutput_.md)
+  Initializes a passkey assertion credential object, optionally specifying an extension output.
 ### Accessing credential information
 - [var authenticatorData: Data](./aspasskeyassertioncredential/authenticatordata.md)
   The authenticator data of the application that created this passkey assertion credential.
@@ -52,6 +56,10 @@ Create a passkey assertion credential to provide a response to a passkey authent
   An output from WebAuthn extensions.
 - [struct ASPasskeyAssertionCredentialExtensionOutput](./aspasskeyassertioncredentialextensionoutput-swift.struct.md)
   A type that encapsulates output for various WebAuthn extensions during passkey assertion.
+- [extensionOutput](./aspasskeyassertioncredential/extensionoutput-46ib3.md)
+  An output from WebAuthn extensions.
+- [ASPasskeyAssertionCredentialExtensionOutput](./aspasskeyassertioncredentialextensionoutput-c.class.md)
+  A class that encapsulates output for various WebAuthn extensions during passkey assertion.
 ### Initializers
 - [init?(coder: NSCoder)](./aspasskeyassertioncredential/init%28coder%29.md)
 

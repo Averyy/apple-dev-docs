@@ -39,6 +39,8 @@ An event store that contains data for a specific collection of event sources.
   Creates a new event store.
 - [var eventStoreIdentifier: String](./eventstoreidentifier.md)
   The unique identifier for the event store.
+- [- initWithAccessToEntityTypes:](./initwithaccesstoentitytypes_.md)
+  Initializes access to the event store with support for the given entity type.
 
 
 ---

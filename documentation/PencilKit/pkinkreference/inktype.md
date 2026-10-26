@@ -28,6 +28,8 @@ var inkType: __PKInkType { get }
 ### Getting the ink attributes
 - [var color: UIColor](./color.md)
   The base color for this ink.
+- [PKInkType](../pkinktype.md)
+  The type that defines the shape of stroked lines.
 
 
 ---

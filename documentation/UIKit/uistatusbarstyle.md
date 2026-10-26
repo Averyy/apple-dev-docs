@@ -31,6 +31,10 @@ enum UIStatusBarStyle : NSInteger;
   A light status bar, intended for use on dark backgrounds.
 - [UIStatusBarStyle.darkContent](./uistatusbarstyle/darkcontent.md)
   A dark status bar, intended for use on light backgrounds.
+- [UIStatusBarStyleBlackTranslucent](./uistatusbarstyle/uistatusbarstyleblacktranslucent.md)
+  A transparent black style.
+- [UIStatusBarStyleBlackOpaque](./uistatusbarstyle/uistatusbarstyleblackopaque.md)
+  An opaque black style.
 ### Initializers
 - [init?(rawValue: Int)](./uistatusbarstyle/init%28rawvalue%29.md)
 

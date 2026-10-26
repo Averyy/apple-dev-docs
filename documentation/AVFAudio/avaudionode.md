@@ -60,6 +60,7 @@ A bus contains a format the framework expresses in terms of sample rate and chan
   Removes an audio tap on a bus you specify.
 - [typealias AVAudioNodeTapBlock](./avaudionodetapblock.md)
   The block that receives copies of the output of an audio node.
+- [- installTapOnBus:bufferSize:format:error:block:](./avaudionode/installtaponbus_buffersize_format_error_block_.md)
 ### Getting the owning engine
 - [var engine: AVAudioEngine?](./avaudionode/engine.md)
   The audio engine that manages the node, if any.
@@ -75,6 +76,7 @@ A bus contains a format the framework expresses in terms of sample rate and chan
   The processing latency of the node, in seconds.
 - [var outputPresentationLatency: TimeInterval](./avaudionode/outputpresentationlatency.md)
   The maximum render pipeline latency downstream of the node, in seconds.
+- [AUAudioUnit](./avaudionode/auaudiounit-1kkjr.md)
 ### Resetting the audio node
 - [func reset()](./avaudionode/reset%28%29.md)
   Clears a unit’s previous processing state.
@@ -114,6 +116,7 @@ A bus contains a format the framework expresses in terms of sample rate and chan
   An object that connects to the system’s audio output.
 - [class AVAudioIONode](./avaudioionode.md)
   An object that performs audio input or output in the engine.
+- [AVAudioIONodeInputBlockRealtimeSafe](./avaudioionodeinputblockrealtimesafe.md)
 
 
 ---

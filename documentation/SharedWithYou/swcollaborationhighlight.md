@@ -58,11 +58,11 @@ class SWCollaborationHighlight
 ## See Also
 
 ### Collaboration attributes
-- [class SWCollaborationMetadata](https://developer.apple.com/documentation/sharedwithyoucore/swcollaborationmetadata)
+- [class SWCollaborationMetadata](../SharedWithYouCore/swcollaborationmetadata.md)
   A model object for conveying data during a collaboration.
-- [struct SWCollaborationIdentifier](https://developer.apple.com/documentation/sharedwithyoucore/swcollaborationidentifier)
+- [struct SWCollaborationIdentifier](../SharedWithYouCore/swcollaborationidentifier.md)
   A unique identifier for a collaboration.
-- [struct SWLocalCollaborationIdentifier](https://developer.apple.com/documentation/sharedwithyoucore/swlocalcollaborationidentifier)
+- [struct SWLocalCollaborationIdentifier](../SharedWithYouCore/swlocalcollaborationidentifier.md)
   A local identifier for a collaboration.
 - [let SWCollaborationMetadataTypeIdentifier: String](./swcollaborationmetadatatypeidentifier.md)
   A string constant for the metadata type identifier.

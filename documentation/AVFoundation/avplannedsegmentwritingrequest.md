@@ -42,6 +42,15 @@ The client should respond to this request by writing the specified time range of
 ### Managing client state
 - [var clientStateToRestore: Data?](./avplannedsegmentwritingrequest/clientstatetorestore.md)
   The client state persisted from the previous segment, if any. Specifically, this is the NSData provided to the previous segment’s finishWithClientState: method. The client is responsible to restore its client state before writing the current segment. For example, clients such as compositors with a temporal element may need some processing history of previous samples in order to generate an output sample at time N. This will be nil for algorithms that are stateless.
+- [- finishWithClientState:](./avplannedsegmentwritingrequest/finishwithclientstate_.md)
+  Clients must call this method after all writing activities for the intermediate segment file have successfully completed. If called with nil, this is equivalent to calling finish.
+### Finishing the request
+- [- finish](./avplannedsegmentwritingrequest/finish.md)
+  Clients must call this method after all writing activities for the intermediate segment file have successfully completed.
+- [- finishWithError:](./avplannedsegmentwritingrequest/finishwitherror_.md)
+  Clients must call this method if a non-recoverable error occurs while generating the segment file. The completionHandler of AVAssetWritingPlanner will be called with an error whose code is AVErrorAssetWritingPlannerClientWritingError, and the error provided here will be available in the NSUnderlyingErrorKey of the userInfo dictionary. If called with nil, this is equivalent to calling finish.
+- [- cancel](./avplannedsegmentwritingrequest/cancel.md)
+  Clients should call this if the current segment is to be cancelled, but the export is still expected to be resumed at a later time. For example, this could happen if the export is running in the background and the expiration handler is called due to changes in system conditions.
 
 ## Relationships
 

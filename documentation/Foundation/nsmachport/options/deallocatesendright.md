@@ -30,6 +30,8 @@ NSMachPortDeallocateSendRight
 ### Constants
 - [static var deallocateReceiveRight: NSMachPort.Options](./deallocatereceiveright.md)
   Remove a receive right when the `NSMachPort` object is invalidated or destroyed.
+- [NSMachPortDeallocateNone](../../nsmachportoptions/nsmachportdeallocatenone.md)
+  Do not remove any send or receive rights.
 
 
 ---

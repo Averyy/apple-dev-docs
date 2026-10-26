@@ -34,6 +34,8 @@ typedef unsigned long __attribute__((ext_vector_type(2))) simd_ulong2;
   Returns a new vector from the specified scalar values.
 - [func simd_make_ulong2_undef(simd_ulong1) -> simd_ulong2](./simd_make_ulong2_undef%28_%29.md)
   Returns a new vector with the first element set to a scalar value, and other elements undefined.
+- [vector2](./vector2-6n9bx.md)
+  Returns a new vector from the specified scalar values.
 ### Common Functions
 - [func simd_clamp(simd_ulong2, simd_ulong2, simd_ulong2) -> simd_ulong2](./simd_clamp%28_,_,_%29-5y5rd.md)
   Returns each element in a vector clamped to a specified range.
@@ -58,6 +60,48 @@ typedef unsigned long __attribute__((ext_vector_type(2))) simd_ulong2;
   Returns a vector that contains elements from either the first or second parameter, based on the corresponding element in the third parameter.
 ### Alternative Type Alias
 - [typealias vector_ulong2](./vector_ulong2.md)
+### Functions to Create Two-Element Vectors From Vectors of Other Types
+- [simd_ulong](./simd_ulong-1r8xg.md)
+  Returns a new vector from the specified vector of 8-bit, signed integer elements.
+- [simd_ulong](./simd_ulong-1rir8.md)
+  Returns a new vector from the specified vector of 8-bit, unsigned integer elements.
+- [simd_ulong](./simd_ulong-1rdv8.md)
+  Returns a new vector from the specified vector of 16-bit, signed integer elements.
+- [simd_ulong](./simd_ulong-1rnp0.md)
+  Returns a new vector from the specified vector of 16-bit, unsigned integer elements.
+- [simd_ulong](./simd_ulong-1rbpo.md)
+  Returns a new vector from the specified vector of 32-bit, signed integer elements.
+- [simd_ulong](./simd_ulong-1rlsc.md)
+  Returns a new vector from the specified vector of 32-bit, unsigned integer elements.
+- [simd_ulong](./simd_ulong-1rb2o.md)
+  Returns a new vector from the specified vector of 64-bit, signed integer elements.
+- [simd_ulong](./simd_ulong-1rkuo.md)
+  Returns a new vector from the specified vector of 64-bit, unsigned integer elements.
+- [simd_ulong](./simd_ulong-1rhpk.md)
+  Returns a new vector from the specified vector of 32-bit, floating-point elements.
+- [simd_ulong](./simd_ulong-1ri80.md)
+  Returns a new vector from the specified vector of 64-bit, floating-point elements.
+### Functions to Perform Saturating Conversion From Vectors of Other Types
+- [simd_ulong_sat](./simd_ulong_sat-1lmym.md)
+  Returns a new vector from the specified vector of 8-bit, signed integer elements.
+- [simd_ulong_sat](./simd_ulong_sat-1lwse.md)
+  Returns a new vector from the specified vector of 8-bit, unsigned integer elements.
+- [simd_ulong_sat](./simd_ulong_sat-1lrzy.md)
+  Returns a new vector from the specified vector of 16-bit, signed integer elements.
+- [simd_ulong_sat](./simd_ulong_sat-1m1q6.md)
+  Returns a new vector from the specified vector of 16-bit, unsigned integer elements.
+- [simd_ulong_sat](./simd_ulong_sat-1ll2i.md)
+  Returns a new vector from the specified vector of 32-bit, signed integer elements.
+- [simd_ulong_sat](./simd_ulong_sat-1lv3e.md)
+  Returns a new vector from the specified vector of 32-bit, unsigned integer elements.
+- [simd_ulong_sat](./simd_ulong_sat-1llwi.md)
+  Returns a new vector from the specified vector of 64-bit, signed integer elements.
+- [simd_ulong_sat](./simd_ulong_sat-1lvtu.md)
+  Returns a new vector from the specified vector of 64-bit, unsigned integer elements.
+- [simd_ulong_sat](./simd_ulong_sat-1lxxa.md)
+  Returns a new vector from the specified vector of 32-bit, floating-point elements.
+- [simd_ulong_sat](./simd_ulong_sat-1lyhe.md)
+  Returns a new vector from the specified vector of 64-bit, floating-point elements.
 
 ## See Also
 

@@ -38,6 +38,8 @@ A binaural variant may originate from a direct binaural recording or from the pr
   A Boolean value that indicates whether this variant contains virtualized or otherwise preprocessed audio content suitable for various purposes.
 - [var isDownmix: Bool](./isdownmix.md)
   A Boolean value that indicates whether the variant is a downmix derivative of other media of greater channel count.
+- [channelCount](../../../avassetvariantaudiorenditionspecificattributes/channelcount.md)
+  The count of audio channels in the rendition.
 
 
 ---

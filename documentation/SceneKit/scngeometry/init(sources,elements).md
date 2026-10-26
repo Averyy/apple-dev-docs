@@ -40,6 +40,14 @@ Each [`SCNGeometryElement`](../scngeometryelement.md) object describes how verti
 - `sources`: An array of [`SCNGeometrySource`](../scngeometrysource.md) objects describing vertices in the geometry and their attributes.
 - `elements`: An array of [`SCNGeometryElement`](../scngeometryelement.md) objects describing how to connect the geometry’s vertices.
 
+## See Also
+
+### Creating a Geometry Object
+- [+ geometry](./geometry.md)
+  Creates a new geometry object with no content (or default content).
+- [+ geometryWithMDLMesh:](./geometrywithmdlmesh_.md)
+  Creates a geometry from the specified Model I/O mesh object.
+
 
 ---
 

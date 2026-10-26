@@ -9,7 +9,7 @@ Enable reliable cloud backup for photo library assets with background processing
 
 PhotoKit’s Background Resource Upload extension enables apps to deliver seamless cloud backup experiences. The system manages uploads on your app’s behalf, processing them in the background even when people switch to other apps or lock their devices. The system calls your extension to process uploads when conditions allow, scheduling work based on factors such as network availability, power state, and device activity.
 
-The async [`PHBackgroundResourceUploadJobExtension`](https://developer.apple.com/documentation/photos/phbackgroundresourceuploadjobextension) protocol is available on iOS 27.0, macOS 27.0, and Mac Catalyst 27.0. On iOS 26.1, the feature is available through [`PHBackgroundResourceUploadExtension`](https://developer.apple.com/documentation/photos/phbackgroundresourceuploadextension), which is deprecated as of iOS 27.
+The async [`PHBackgroundResourceUploadJobExtension`](../Photos/phbackgroundresourceuploadjobextension.md) protocol is available on iOS 27.0, macOS 27.0, and Mac Catalyst 27.0. On iOS 26.1, the feature is available through [`PHBackgroundResourceUploadExtension`](../Photos/phbackgroundresourceuploadextension.md), which is deprecated as of iOS 27.
 
 > **Note**: In iOS, this feature isn’t available in Simulator; test on a physical device.
 
@@ -22,7 +22,7 @@ To add an upload extension to your app, begin by adding a new target:
 3. Specify a name for your extension, such as `BackgroundUploadExtension`.
 4. Click Finish.
 
-Open your extension’s main Swift file and replace its contents with a class that adopts the [`PHBackgroundResourceUploadJobExtension`](https://developer.apple.com/documentation/photos/phbackgroundresourceuploadjobextension) protocol:
+Open your extension’s main Swift file and replace its contents with a class that adopts the [`PHBackgroundResourceUploadJobExtension`](../Photos/phbackgroundresourceuploadjobextension.md) protocol:
 
 ```swift
 import Photos
@@ -44,12 +44,12 @@ class BackgroundUploadExtension: PHBackgroundResourceUploadJobExtension {
 }
 ```
 
-> **Note**: In macOS and Mac Catalyst, [`PHBackgroundResourceUploadJobExtension`](https://developer.apple.com/documentation/photos/phbackgroundresourceuploadjobextension) is the only available protocol; adopt it for new code on iOS 27 and later.
+> **Note**: In macOS and Mac Catalyst, [`PHBackgroundResourceUploadJobExtension`](../Photos/phbackgroundresourceuploadjobextension.md) is the only available protocol; adopt it for new code on iOS 27 and later.
 
 The extension conforms to this protocol by adopting the following methods:
 
-- **[`processJobs()`](https://developer.apple.com/documentation/photos/phbackgroundresourceuploadjobextension/processjobs())**: Performs asset resource uploads by creating and managing upload jobs.
-- **[`willTerminate()`](https://developer.apple.com/documentation/photos/phbackgroundresourceuploadjobextension/willterminate())**: Handles notification of the extension’s termination to interrupt processing and perform cleanup.
+- **[`processJobs()`](../Photos/phbackgroundresourceuploadjobextension/processjobs%28%29.md)**: Performs asset resource uploads by creating and managing upload jobs.
+- **[`willTerminate()`](../Photos/phbackgroundresourceuploadjobextension/willterminate%28%29.md)**: Handles notification of the extension’s termination to interrupt processing and perform cleanup.
 
 In the Info pane in Xcode, make the following changes:
 
@@ -62,7 +62,7 @@ In the Info pane in Xcode, make the following changes:
 
 #### Enable the extension
 
-Before the system can call your extension, your host app must explicitly enable it by calling [`setUploadJobExtensionEnabled(_:)`](https://developer.apple.com/documentation/photos/phphotolibrary/setuploadjobextensionenabled(_:)) on the shared photo library instance. Your app must have full library access before enabling the extension. Call [`requestAuthorization(for:handler:)`](https://developer.apple.com/documentation/photos/phphotolibrary/requestauthorization(for:handler:)) with the `.readWrite` access level and verify the status is `.authorized`.
+Before the system can call your extension, your host app must explicitly enable it by calling [`setUploadJobExtensionEnabled(_:)`](../Photos/phphotolibrary/setuploadjobextensionenabled%28_%29.md) on the shared photo library instance. Your app must have full library access before enabling the extension. Call [`requestAuthorization(for:handler:)`](../Photos/phphotolibrary/requestauthorization%28for,handler%29.md) with the `.readWrite` access level and verify the status is `.authorized`.
 
 The following example shows how to enable the background upload extension in your host app:
 
@@ -85,15 +85,15 @@ do {
 }
 ```
 
-Check the [`uploadJobExtensionEnabled`](https://developer.apple.com/documentation/photos/phphotolibrary/uploadjobextensionenabled) property to verify the extension’s current state. To stop background processing, call the [`setUploadJobExtensionEnabled(_:)`](https://developer.apple.com/documentation/photos/phphotolibrary/setuploadjobextensionenabled(_:)) method with a value of `false`.
+Check the [`uploadJobExtensionEnabled`](../Photos/phphotolibrary/uploadjobextensionenabled.md) property to verify the extension’s current state. To stop background processing, call the [`setUploadJobExtensionEnabled(_:)`](../Photos/phphotolibrary/setuploadjobextensionenabled%28_%29.md) method with a value of `false`.
 
 > ❗ **Important**: The extension processes uploads only while enabled. Disable the extension when a person signs out or disables cloud sync in your app.
 
 #### Process upload jobs
 
-The system calls your extension’s [`processJobs()`](https://developer.apple.com/documentation/photos/phbackgroundresourceuploadjobextension/processjobs()) method when upload work is available. A typical implementation first retries failed uploads, then acknowledges completed or failed uploads to free resources, and finally creates new upload jobs for unprocessed assets.
+The system calls your extension’s [`processJobs()`](../Photos/phbackgroundresourceuploadjobextension/processjobs%28%29.md) method when upload work is available. A typical implementation first retries failed uploads, then acknowledges completed or failed uploads to free resources, and finally creates new upload jobs for unprocessed assets.
 
-[`processJobs()`](https://developer.apple.com/documentation/photos/phbackgroundresourceuploadjobextension/processjobs()) is declared `async` but does not require asynchronous work. An extension with synchronous upload logic can return a value directly. When calling async helpers such as [`data(for:)`](../Foundation/urlsession/data%28for%29.md), use `await` as usual.
+[`processJobs()`](../Photos/phbackgroundresourceuploadjobextension/processjobs%28%29.md) is declared `async` but does not require asynchronous work. An extension with synchronous upload logic can return a value directly. When calling async helpers such as [`data(for:)`](../Foundation/urlsession/data%28for%29.md), use `await` as usual.
 
 ```swift
 func processJobs() async -> PHBackgroundResourceUploadProcessingResult {
@@ -118,23 +118,23 @@ func processJobs() async -> PHBackgroundResourceUploadProcessingResult {
 }
 ```
 
-After performing your processing, return an appropriate [`PHBackgroundResourceUploadProcessingResult`](https://developer.apple.com/documentation/photos/phbackgroundresourceuploadprocessingresult) value to indicate your extension’s state:
+After performing your processing, return an appropriate [`PHBackgroundResourceUploadProcessingResult`](../Photos/phbackgroundresourceuploadprocessingresult.md) value to indicate your extension’s state:
 
-- **[`PHBackgroundResourceUploadProcessingResult.completed`](https://developer.apple.com/documentation/photos/phbackgroundresourceuploadprocessingresult/completed)**: Your extension finishes processing all jobs and no pending work remains. The system enters monitoring mode for library changes.
-- **[`PHBackgroundResourceUploadProcessingResult.processing`](https://developer.apple.com/documentation/photos/phbackgroundresourceuploadprocessingresult/processing)**: Work is in progress. The system calls [`processJobs()`](https://developer.apple.com/documentation/photos/phbackgroundresourceuploadjobextension/processjobs()) again to continue processing. Return this value during initial library uploads when you have remaining assets to process.
-- **[`PHBackgroundResourceUploadProcessingResult.failure`](https://developer.apple.com/documentation/photos/phbackgroundresourceuploadprocessingresult/failure)**: An unrecoverable error occurs. The system logs the error and may retry later.
+- **[`PHBackgroundResourceUploadProcessingResult.completed`](../Photos/phbackgroundresourceuploadprocessingresult/completed.md)**: Your extension finishes processing all jobs and no pending work remains. The system enters monitoring mode for library changes.
+- **[`PHBackgroundResourceUploadProcessingResult.processing`](../Photos/phbackgroundresourceuploadprocessingresult/processing.md)**: Work is in progress. The system calls [`processJobs()`](../Photos/phbackgroundresourceuploadjobextension/processjobs%28%29.md) again to continue processing. Return this value during initial library uploads when you have remaining assets to process.
+- **[`PHBackgroundResourceUploadProcessingResult.failure`](../Photos/phbackgroundresourceuploadprocessingresult/failure.md)**: An unrecoverable error occurs. The system logs the error and may retry later.
 
-Handle [`limitExceeded`](https://developer.apple.com/documentation/photos/phphotoserror-swift.struct/limitexceeded) by returning `.processing` to pause until space becomes available. When [`fetchPersistentChanges(since:)`](https://developer.apple.com/documentation/photos/phphotolibrary/fetchpersistentchanges(since:)) throws [`persistentChangeTokenExpired`](https://developer.apple.com/documentation/photos/phphotoserror-swift.struct/persistentchangetokenexpired), the system has pruned history past your saved token; discard the saved token, return `.processing`, and re-sync on the next invocation. For other errors, log the details and return `.failure`.
+Handle [`limitExceeded`](../Photos/phphotoserror-swift.struct/limitexceeded.md) by returning `.processing` to pause until space becomes available. When [`fetchPersistentChanges(since:)`](../Photos/phphotolibrary/fetchpersistentchanges%28since%29.md) throws [`persistentChangeTokenExpired`](../Photos/phphotoserror-swift.struct/persistentchangetokenexpired.md), the system has pruned history past your saved token; discard the saved token, return `.processing`, and re-sync on the next invocation. For other errors, log the details and return `.failure`.
 
-> ❗ **Important**: The system enforces a limit on inflight jobs. When you reach this limit, job creation throws [`limitExceeded`](https://developer.apple.com/documentation/photos/phphotoserror-swift.struct/limitexceeded). Acknowledge completed jobs to free up space.
+> ❗ **Important**: The system enforces a limit on inflight jobs. When you reach this limit, job creation throws [`limitExceeded`](../Photos/phphotoserror-swift.struct/limitexceeded.md). Acknowledge completed jobs to free up space.
 
 #### Retry failed jobs
 
 Network issues or temporary server problems can cause upload failures. Your extension can retry jobs in the `.failed` state that haven’t exceeded the retry limit. Retrying jobs recovers from transient errors without manual intervention.
 
-Inspect the underlying error using the [`error`](https://developer.apple.com/documentation/photos/phassetresourceuploadjob/error) property and access any headers your server returns using the [`responseHeaderFields`](https://developer.apple.com/documentation/photos/phassetresourceuploadjob/responseheaderfields).
+Inspect the underlying error using the [`error`](../Photos/phassetresourceuploadjob/error.md) property and access any headers your server returns using the [`responseHeaderFields`](../Photos/phassetresourceuploadjob/responseheaderfields.md).
 
-Fetch retry-able jobs by calling the [`fetchJobs(action:options:)`](https://developer.apple.com/documentation/photos/phassetresourceuploadjob/fetchjobs(action:options:)) method with the [`PHAssetResourceUploadJob.Action.retry`](https://developer.apple.com/documentation/photos/phassetresourceuploadjob/action/retry) action, shown here:
+Fetch retry-able jobs by calling the [`fetchJobs(action:options:)`](../Photos/phassetresourceuploadjob/fetchjobs%28action,options%29.md) method with the [`PHAssetResourceUploadJob.Action.retry`](../Photos/phassetresourceuploadjob/action/retry.md) action, shown here:
 
 ```swift
 private func retryFailedJobs() async throws {
@@ -174,19 +174,19 @@ private func retryFailedJobs() async throws {
 }
 ```
 
-Because [`PHFetchResult`](https://developer.apple.com/documentation/photos/phfetchresult) doesn’t conform to [`Sequence`](../Swift/sequence.md), use index-based enumeration instead. All job mutations must occur within a [`performChanges(_:completionHandler:)`](https://developer.apple.com/documentation/photos/phphotolibrary/performchanges(_:completionhandler:)) or [`performChangesAndWait(_:)`](https://developer.apple.com/documentation/photos/phphotolibrary/performchangesandwait(_:)) change block.
+Because [`PHFetchResult`](../Photos/phfetchresult.md) doesn’t conform to [`Sequence`](../Swift/sequence.md), use index-based enumeration instead. All job mutations must occur within a [`performChanges(_:completionHandler:)`](../Photos/phphotolibrary/performchanges%28_,completionhandler%29.md) or [`performChangesAndWait(_:)`](../Photos/phphotolibrary/performchangesandwait%28_%29.md) change block.
 
-Inspect the [`error`](https://developer.apple.com/documentation/photos/phassetresourceuploadjob/error) property to distinguish transient network errors from permanent server errors. For transient errors such as timeouts or connection loss, retry the job. For permanent errors such as bad server responses or authentication failures, acknowledge the job instead.
+Inspect the [`error`](../Photos/phassetresourceuploadjob/error.md) property to distinguish transient network errors from permanent server errors. For transient errors such as timeouts or connection loss, retry the job. For permanent errors such as bad server responses or authentication failures, acknowledge the job instead.
 
-Passing `nil` to [`retry(destination:)`](https://developer.apple.com/documentation/photos/phassetresourceuploadjobchangerequest/retry(destination:)) uses the original destination URL. Alternatively, you can retry the job with a different destination. Retrying a job counts toward the inflight job limit. If you’ve reached the limit, the retry throws [`limitExceeded`](https://developer.apple.com/documentation/photos/phphotoserror-swift.struct/limitexceeded). Acknowledge completed jobs to free capacity before retrying.
+Passing `nil` to [`retry(destination:)`](../Photos/phassetresourceuploadjobchangerequest/retry%28destination%29.md) uses the original destination URL. Alternatively, you can retry the job with a different destination. Retrying a job counts toward the inflight job limit. If you’ve reached the limit, the retry throws [`limitExceeded`](../Photos/phphotoserror-swift.struct/limitexceeded.md). Acknowledge completed jobs to free capacity before retrying.
 
 #### Acknowledge completed jobs
 
 Jobs that you create consume space in the extension’s inflight job limit. Whether a job succeeds or fails, acknowledge it to free capacity for new uploads.
 
-Before acknowledging a job, inspect the [`responseHeaderFields`](https://developer.apple.com/documentation/photos/phassetresourceuploadjob/responseheaderfields) property to access any response headers returned from your server.
+Before acknowledging a job, inspect the [`responseHeaderFields`](../Photos/phassetresourceuploadjob/responseheaderfields.md) property to access any response headers returned from your server.
 
-Fetch acknowledgeable jobs by calling the [`fetchJobs(action:options:)`](https://developer.apple.com/documentation/photos/phassetresourceuploadjob/fetchjobs(action:options:)) method with the [`PHAssetResourceUploadJob.Action.acknowledge`](https://developer.apple.com/documentation/photos/phassetresourceuploadjob/action/acknowledge) action, shown here:
+Fetch acknowledgeable jobs by calling the [`fetchJobs(action:options:)`](../Photos/phassetresourceuploadjob/fetchjobs%28action,options%29.md) method with the [`PHAssetResourceUploadJob.Action.acknowledge`](../Photos/phassetresourceuploadjob/action/acknowledge.md) action, shown here:
 
 ```swift
 private func acknowledgeCompletedJobs() async throws {
@@ -213,25 +213,25 @@ private func acknowledgeCompletedJobs() async throws {
 }
 ```
 
-> **Note**: [`resource`](https://developer.apple.com/documentation/photos/phassetresourceuploadjob/resource) is deprecated in iOS 27 and unavailable in macOS and Mac Catalyst. Use [`assetResource(forUploadJob:)`](https://developer.apple.com/documentation/photos/phassetresource/assetresource(foruploadjob:)) to fetch the associated asset resource.
+> **Note**: [`resource`](../Photos/phassetresourceuploadjob/resource.md) is deprecated in iOS 27 and unavailable in macOS and Mac Catalyst. Use [`assetResource(forUploadJob:)`](../Photos/phassetresource/assetresource%28foruploadjob%29.md) to fetch the associated asset resource.
 
-After confirming each job’s upload status with your server or local tracking system, acknowledge it by calling the [`acknowledge()`](https://developer.apple.com/documentation/photos/phassetresourceuploadjobchangerequest/acknowledge()) method on the change request. Acknowledging a job removes it from system tracking and frees up space for new jobs. You must acknowledge completed jobs before creating new ones when you reach the inflight limit.
+After confirming each job’s upload status with your server or local tracking system, acknowledge it by calling the [`acknowledge()`](../Photos/phassetresourceuploadjobchangerequest/acknowledge%28%29.md) method on the change request. Acknowledging a job removes it from system tracking and frees up space for new jobs. You must acknowledge completed jobs before creating new ones when you reach the inflight limit.
 
 > **Note**: Before acknowledging a job, update your app’s tracking system to record its success or failure. After acknowledging the job, its record is no longer available from PhotoKit.
 
 #### Inspect response headers and errors
 
-The system copies any response headers returned by your server to the [`responseHeaderFields`](https://developer.apple.com/documentation/photos/phassetresourceuploadjob/responseheaderfields) property for jobs in the [`PHAssetResourceUploadJob.State.succeeded`](https://developer.apple.com/documentation/photos/phassetresourceuploadjob/state-swift.enum/succeeded) or [`PHAssetResourceUploadJob.State.failed`](https://developer.apple.com/documentation/photos/phassetresourceuploadjob/state-swift.enum/failed) state. The system normalizes header field names to lowercase for consistent lookup.
+The system copies any response headers returned by your server to the [`responseHeaderFields`](../Photos/phassetresourceuploadjob/responseheaderfields.md) property for jobs in the [`PHAssetResourceUploadJob.State.succeeded`](../Photos/phassetresourceuploadjob/state-swift.enum/succeeded.md) or [`PHAssetResourceUploadJob.State.failed`](../Photos/phassetresourceuploadjob/state-swift.enum/failed.md) state. The system normalizes header field names to lowercase for consistent lookup.
 
-The system populates the [`error`](https://developer.apple.com/documentation/photos/phassetresourceuploadjob/error) property for jobs in the [`PHAssetResourceUploadJob.State.failed`](https://developer.apple.com/documentation/photos/phassetresourceuploadjob/state-swift.enum/failed) state. It provides detailed information about why the upload failed, including network, server, or system errors. The error uses standard [`NSURLErrorDomain`](../Foundation/nsurlerrordomain.md) codes, letting you distinguish transient failures such as timeouts from permanent failures such as authentication errors.
+The system populates the [`error`](../Photos/phassetresourceuploadjob/error.md) property for jobs in the [`PHAssetResourceUploadJob.State.failed`](../Photos/phassetresourceuploadjob/state-swift.enum/failed.md) state. It provides detailed information about why the upload failed, including network, server, or system errors. The error uses standard [`NSURLErrorDomain`](../Foundation/nsurlerrordomain.md) codes, letting you distinguish transient failures such as timeouts from permanent failures such as authentication errors.
 
 > **Note**: The system sanitizes the error it provides, so it can differ from the actual URL response error.
 
 #### Cancel inflight jobs
 
-You can cancel redundant background upload jobs to avoid duplicate uploads. You can only cancel jobs in the [`PHAssetResourceUploadJob.State.registered`](https://developer.apple.com/documentation/photos/phassetresourceuploadjob/state-swift.enum/registered) or [`PHAssetResourceUploadJob.State.pending`](https://developer.apple.com/documentation/photos/phassetresourceuploadjob/state-swift.enum/pending) state.
+You can cancel redundant background upload jobs to avoid duplicate uploads. You can only cancel jobs in the [`PHAssetResourceUploadJob.State.registered`](../Photos/phassetresourceuploadjob/state-swift.enum/registered.md) or [`PHAssetResourceUploadJob.State.pending`](../Photos/phassetresourceuploadjob/state-swift.enum/pending.md) state.
 
-Fetch cancellable jobs by calling the [`fetchJobs(action:options:)`](https://developer.apple.com/documentation/photos/phassetresourceuploadjob/fetchjobs(action:options:)) method with the [`PHAssetResourceUploadJob.Action.process`](https://developer.apple.com/documentation/photos/phassetresourceuploadjob/action/process) action, shown here:
+Fetch cancellable jobs by calling the [`fetchJobs(action:options:)`](../Photos/phassetresourceuploadjob/fetchjobs%28action,options%29.md) method with the [`PHAssetResourceUploadJob.Action.process`](../Photos/phassetresourceuploadjob/action/process.md) action, shown here:
 
 ```swift
 private func cancelRedundantJobs() throws {
@@ -254,13 +254,13 @@ private func cancelRedundantJobs() throws {
 }
 ```
 
-Canceled jobs transition to the [`PHAssetResourceUploadJob.State.cancelled`](https://developer.apple.com/documentation/photos/phassetresourceuploadjob/state-swift.enum/cancelled) state, and the system automatically acknowledges them, so they don’t consume space in the inflight job limit.
+Canceled jobs transition to the [`PHAssetResourceUploadJob.State.cancelled`](../Photos/phassetresourceuploadjob/state-swift.enum/cancelled.md) state, and the system automatically acknowledges them, so they don’t consume space in the inflight job limit.
 
 #### Create upload jobs
 
 Creating upload jobs queues asset resources for background upload to your server. Each job requires a destination URL request that specifies the upload destination.
 
-If needed, you can use the returned change request job to access the [`placeholderForCreatedAssetResourceUploadJob`](https://developer.apple.com/documentation/photos/phassetresourceuploadjobchangerequest/placeholderforcreatedassetresourceuploadjob) and obtain the local identifier for the job.
+If needed, you can use the returned change request job to access the [`placeholderForCreatedAssetResourceUploadJob`](../Photos/phassetresourceuploadjobchangerequest/placeholderforcreatedassetresourceuploadjob.md) and obtain the local identifier for the job.
 
 Create jobs after acknowledging completed ones and when you detect new assets in the library. Your extension needs a mechanism to identify which assets require upload, typically by maintaining a list of processed asset identifiers.
 
@@ -303,21 +303,21 @@ private func createNewUploadJobs() async throws {
 }
 ```
 
-Job creation must occur within a change block. Each [`PHAssetResource`](https://developer.apple.com/documentation/photos/phassetresource) you upload requires a separate job. The destination [`URLRequest`](../Foundation/urlrequest.md) contains your server endpoint, authentication headers, and any metadata needed for upload processing.
+Job creation must occur within a change block. Each [`PHAssetResource`](../Photos/phassetresource.md) you upload requires a separate job. The destination [`URLRequest`](../Foundation/urlrequest.md) contains your server endpoint, authentication headers, and any metadata needed for upload processing.
 
-The system enforces an inflight job limit. When you exceed that limit, [`performChanges(_:completionHandler:)`](https://developer.apple.com/documentation/photos/phphotolibrary/performchanges(_:completionhandler:)) throws a [`limitExceeded`](https://developer.apple.com/documentation/photos/phphotoserror-swift.struct/limitexceeded) exception. When job creation throws [`limitExceeded`](https://developer.apple.com/documentation/photos/phphotoserror-swift.struct/limitexceeded), acknowledge completed jobs first, then retry creation.
+The system enforces an inflight job limit. When you exceed that limit, [`performChanges(_:completionHandler:)`](../Photos/phphotolibrary/performchanges%28_,completionhandler%29.md) throws a [`limitExceeded`](../Photos/phphotoserror-swift.struct/limitexceeded.md) exception. When job creation throws [`limitExceeded`](../Photos/phphotoserror-swift.struct/limitexceeded.md), acknowledge completed jobs first, then retry creation.
 
-Return `.processing` from the [`processJobs()`](https://developer.apple.com/documentation/photos/phbackgroundresourceuploadjobextension/processjobs()) method to have the system call your extension again once the upload jobs have completed.
+Return `.processing` from the [`processJobs()`](../Photos/phbackgroundresourceuploadjobextension/processjobs%28%29.md) method to have the system call your extension again once the upload jobs have completed.
 
 While your extension has jobs to process, keep the job queue filled to its limit to ensure efficient processing.
 
-> ❗ **Important**: Your extension needs a mechanism to track which assets you’ve already processed and detect new ones. This typically involves persistent storage shared between your app and extension using an app group. Use [`fetchPersistentChanges(since:)`](https://developer.apple.com/documentation/photos/phphotolibrary/fetchpersistentchanges(since:)) with a [`PHPersistentChangeToken`](https://developer.apple.com/documentation/photos/phpersistentchangetoken) to track your progress.
+> ❗ **Important**: Your extension needs a mechanism to track which assets you’ve already processed and detect new ones. This typically involves persistent storage shared between your app and extension using an app group. Use [`fetchPersistentChanges(since:)`](../Photos/phphotolibrary/fetchpersistentchanges%28since%29.md) with a [`PHPersistentChangeToken`](../Photos/phpersistentchangetoken.md) to track your progress.
 
 #### Create download-only jobs
 
 The system automatically downloads asset resources before processing. However, if your workflow requires local access to the resource before submitting a processing job, the system can download the resource locally without uploading it.
 
-Use [`creationRequestForDownloadJob(resource:)`](https://developer.apple.com/documentation/photos/phassetresourceuploadjobchangerequest/creationrequestfordownloadjob(resource:)) to create a job that downloads a resource from iCloud without uploading it to a server. Download-only jobs follow the same life cycle as upload jobs, transitioning through [`PHAssetResourceUploadJob.State.registered`](https://developer.apple.com/documentation/photos/phassetresourceuploadjob/state-swift.enum/registered), [`PHAssetResourceUploadJob.State.pending`](https://developer.apple.com/documentation/photos/phassetresourceuploadjob/state-swift.enum/pending), and eventually [`PHAssetResourceUploadJob.State.succeeded`](https://developer.apple.com/documentation/photos/phassetresourceuploadjob/state-swift.enum/succeeded) or [`PHAssetResourceUploadJob.State.failed`](https://developer.apple.com/documentation/photos/phassetresourceuploadjob/state-swift.enum/failed) states.
+Use [`creationRequestForDownloadJob(resource:)`](../Photos/phassetresourceuploadjobchangerequest/creationrequestfordownloadjob%28resource%29.md) to create a job that downloads a resource from iCloud without uploading it to a server. Download-only jobs follow the same life cycle as upload jobs, transitioning through [`PHAssetResourceUploadJob.State.registered`](../Photos/phassetresourceuploadjob/state-swift.enum/registered.md), [`PHAssetResourceUploadJob.State.pending`](../Photos/phassetresourceuploadjob/state-swift.enum/pending.md), and eventually [`PHAssetResourceUploadJob.State.succeeded`](../Photos/phassetresourceuploadjob/state-swift.enum/succeeded.md) or [`PHAssetResourceUploadJob.State.failed`](../Photos/phassetresourceuploadjob/state-swift.enum/failed.md) states.
 
 ```swift
 private func createDownloadJobs(for resources: [PHAssetResource]) throws {
@@ -337,13 +337,13 @@ private func createDownloadJobs(for resources: [PHAssetResource]) throws {
 }
 ```
 
-When acknowledging completed jobs, check the [`type`](https://developer.apple.com/documentation/photos/phassetresourceuploadjob/type-swift.property) property to distinguish download-only jobs from upload jobs. Download-only jobs have a type of [`PHAssetResourceUploadJob.Type.downloadOnly`](https://developer.apple.com/documentation/photos/phassetresourceuploadjob/type-swift.enum/downloadonly).
+When acknowledging completed jobs, check the [`type`](../Photos/phassetresourceuploadjob/type-swift.property.md) property to distinguish download-only jobs from upload jobs. Download-only jobs have a type of [`PHAssetResourceUploadJob.Type.downloadOnly`](../Photos/phassetresourceuploadjob/type-swift.enum/downloadonly.md).
 
 > **Note**: The system may purge downloaded resources due to disk space constraints. After a download-only job succeeds, process the resource promptly or create an upload job to send it to your server.
 
 #### Handle extension termination
 
-The system calls [`willTerminate()`](https://developer.apple.com/documentation/photos/phbackgroundresourceuploadjobextension/willterminate()) before suspending or terminating your extension. Use this method to stop current work and clean up resources.
+The system calls [`willTerminate()`](../Photos/phbackgroundresourceuploadjobextension/willterminate%28%29.md) before suspending or terminating your extension. Use this method to stop current work and clean up resources.
 
 The system may call this method at any time, including while the extension processes uploads. Ensure the extension exits the process method promptly after receiving a termination notification.
 
@@ -371,9 +371,9 @@ class BackgroundUploadExtension: PHBackgroundResourceUploadJobExtension {
 }
 ```
 
-Upon receiving a termination notification, cancel any in-progress work such as network requests or database operations. Set cancellation flags that the [`processJobs()`](https://developer.apple.com/documentation/photos/phbackgroundresourceuploadjobextension/processjobs()) method checks periodically to interrupt processing.
+Upon receiving a termination notification, cancel any in-progress work such as network requests or database operations. Set cancellation flags that the [`processJobs()`](../Photos/phbackgroundresourceuploadjobextension/processjobs%28%29.md) method checks periodically to interrupt processing.
 
-> ❗ **Important**: The system manages the extension life cycle and may terminate your extension at any time due to resource pressure. When the extension restarts, the system calls [`processJobs()`](https://developer.apple.com/documentation/photos/phbackgroundresourceuploadjobextension/processjobs()) again. Design your implementation to handle interruption at any point.
+> ❗ **Important**: The system manages the extension life cycle and may terminate your extension at any time due to resource pressure. When the extension restarts, the system calls [`processJobs()`](../Photos/phbackgroundresourceuploadjobextension/processjobs%28%29.md) again. Design your implementation to handle interruption at any point.
 
 #### Support resumable uploads
 
@@ -448,7 +448,7 @@ defaults delete com.apple.photos.shareddefaults backgroundResourceUploadDevelope
 While testing, keep the following in mind to help your extension run reliably under the system’s normal constraints:
 
 - Keep your extension’s memory footprint low. The system terminates extensions that use excessive memory.
-- Return [`PHBackgroundResourceUploadProcessingResult.processing`](https://developer.apple.com/documentation/photos/phbackgroundresourceuploadprocessingresult/processing) only when your extension makes progress, such as acknowledging completed jobs or creating new ones.
+- Return [`PHBackgroundResourceUploadProcessingResult.processing`](../Photos/phbackgroundresourceuploadprocessingresult/processing.md) only when your extension makes progress, such as acknowledging completed jobs or creating new ones.
 - Keep each invocation within the runtime limit. Design your extension to make incremental progress across invocations rather than looping to process your entire library in a single invocation.
 
 > **Note**: Developer Mode changes only how the system schedules and runs your extension. It doesn’t change the upload process itself, which remains subject to external conditions such as network bandwidth and your server’s availability and support for the upload protocol.
@@ -456,17 +456,17 @@ While testing, keep the following in mind to help your extension run reliably un
 ## See Also
 
 ### Related Documentation
-- [protocol PHBackgroundResourceUploadJobExtension](https://developer.apple.com/documentation/photos/phbackgroundresourceuploadjobextension)
+- [protocol PHBackgroundResourceUploadJobExtension](../Photos/phbackgroundresourceuploadjobextension.md)
   A protocol to interact with asset resource upload jobs during background processing.
-- [class func assetResource(forUploadJob: PHAssetResourceUploadJob) -> PHAssetResource?](https://developer.apple.com/documentation/photos/phassetresource/assetresource(foruploadjob:))
+- [class func assetResource(forUploadJob: PHAssetResourceUploadJob) -> PHAssetResource?](../Photos/phassetresource/assetresource%28foruploadjob%29.md)
   Returns the asset resource associated with the given upload job.
 ### Background resource upload extensions
-- [protocol PHBackgroundResourceUploadExtension](https://developer.apple.com/documentation/photos/phbackgroundresourceuploadextension)
+- [protocol PHBackgroundResourceUploadExtension](../Photos/phbackgroundresourceuploadextension.md)
   A protocol to interact with asset resource upload jobs during background processing.
-- [class PHAssetResourceUploadJob](https://developer.apple.com/documentation/photos/phassetresourceuploadjob)
+- [class PHAssetResourceUploadJob](../Photos/phassetresourceuploadjob.md)
   An object that represents a request to upload an asset resource.
-- [class PHAssetResourceUploadJobChangeRequest](https://developer.apple.com/documentation/photos/phassetresourceuploadjobchangerequest)
-  Use within an application’s `com.apple.photos.background-upload` extension to create and change [`PHAssetResourceUploadJob`](https://developer.apple.com/documentation/photos/phassetresourceuploadjob) records.
+- [class PHAssetResourceUploadJobChangeRequest](../Photos/phassetresourceuploadjobchangerequest.md)
+  Use within an application’s `com.apple.photos.background-upload` extension to create and change [`PHAssetResourceUploadJob`](../Photos/phassetresourceuploadjob.md) records.
 
 
 ---

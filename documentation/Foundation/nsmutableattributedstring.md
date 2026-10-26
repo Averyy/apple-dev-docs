@@ -79,6 +79,8 @@ Note that the default font for `NSAttributedString` objects is Helvetica 12-poin
   Replaces the characters and attributes in a given range with the characters and attributes of the given attributed string.
 - [func setAttributedString(NSAttributedString)](./nsmutableattributedstring/setattributedstring%28_%29.md)
   Replaces the receiver’s entire contents with the characters and attributes of the given attributed string.
+- [- appendLocalizedFormat:](./nsmutableattributedstring/appendlocalizedformat_.md)
+  Formats the specified string and arguments with the current locale, then appends the result to the receiver.
 ### Grouping Changes
 - [func beginEditing()](./nsmutableattributedstring/beginediting%28%29.md)
   Begins the buffering of changes to the string’s characters and attributes.

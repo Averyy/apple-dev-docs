@@ -37,6 +37,8 @@ class MPSPolygonBuffer
 - [var vertexBufferOffset: Int](./mpspolygonbuffer/vertexbufferoffset.md)
 ### Instance Methods
 - [func copy(with: NSZone?) -> Self](./mpspolygonbuffer/copy%28with%29.md)
+### Type Methods
+- [+ polygonBuffer](./mpspolygonbuffer/polygonbuffer.md)
 
 ## Relationships
 

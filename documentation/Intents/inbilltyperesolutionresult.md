@@ -36,6 +36,10 @@ You create [`INBillTypeResolutionResult`](./inbilltyperesolutionresult.md) objec
   Creates an object whose resolution involves the successful matching of the specified attribute.
 - [class func confirmationRequired(with: INBillType) -> Self](./inbilltyperesolutionresult/confirmationrequired%28with%29.md)
   Creates an object whose resolution requires that the user must confirm the value before proceeding.
+- [+ successWithResolvedValue:](./inbilltyperesolutionresult/successwithresolvedvalue_.md)
+  Creates an object whose resolution involves the successful matching of the specified attribute.
+- [+ confirmationRequiredWithValueToConfirm:](./inbilltyperesolutionresult/confirmationrequiredwithvaluetoconfirm_.md)
+  Creates an object whose resolution requires that the user must confirm the value before proceeding.
 
 ## Relationships
 

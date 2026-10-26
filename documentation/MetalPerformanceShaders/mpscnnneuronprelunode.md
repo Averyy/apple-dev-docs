@@ -28,6 +28,8 @@ class MPSCNNNeuronPReLUNode
 
 ### Initializers
 - [init(source: MPSNNImageNode, aData: Data)](./mpscnnneuronprelunode/init%28source,adata%29.md)
+### Type Methods
+- [+ nodeWithSource:aData:](./mpscnnneuronprelunode/nodewithsource_adata_.md)
 
 ## Relationships
 

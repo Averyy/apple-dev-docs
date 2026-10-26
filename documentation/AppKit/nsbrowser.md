@@ -104,6 +104,8 @@ Browser
   The index path of the item selected in the browser.
 - [var selectionIndexPaths: [IndexPath]](./nsbrowser/selectionindexpaths.md)
   An array containing the index paths of all items selected in the browser.
+- [selectedCell](./nsbrowser/selectedcell.md)
+  The last (rightmost and lowest) selected cell.
 ### Accessing Components
 - [func loadedCell(atRow: Int, column: Int) -> Any?](./nsbrowser/loadedcell%28atrow,column%29.md)
   Loads, if necessary, and returns the cell at the specified row and column location.

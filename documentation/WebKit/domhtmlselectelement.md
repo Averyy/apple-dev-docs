@@ -37,6 +37,7 @@ class DOMHTMLSelectElement
 - [func item(UInt32) -> DOMNode!](./domhtmlselectelement/item%28_%29.md)
 - [func namedItem(String!) -> DOMNode!](./domhtmlselectelement/nameditem%28_%29.md)
 - [func remove(Int32)](./domhtmlselectelement/remove%28_%29.md)
+- [- add::](./domhtmlselectelement/add__.md)
 
 ## Relationships
 

@@ -85,6 +85,11 @@ Use the [`unsupportedPrimaryAccountIdentifiers`](./pkpaymentrequest/unsupportedp
   A bit field of the payment-processing protocols and card types that you support.
 - [struct PKMerchantCapability](./pkmerchantcapability.md)
   Capabilities for processing payment.
+- [PKMerchantCategoryCode](./pkmerchantcategorycode.md)
+  The optional four-digit type, in ISO 18245 format, that represents the type of goods or service the merchant provides for the transaction.
+- [merchantCategoryCode](./pkpaymentrequest/merchantcategorycode-7vg6z.md)
+  An optional four-digit property, in ISO 18245 format, that represents the type of goods or service the merchant provides for the transaction.
+- [PKMerchantCategoryCodeNone](./pkmerchantcategorycodenone.md)
 ### Setting currency and region information
 - [var currencyCode: String](./pkpaymentrequest/currencycode.md)
   The three-letter ISO 4217 currency code that determines the currency the payment request uses.
@@ -172,6 +177,10 @@ Use the [`unsupportedPrimaryAccountIdentifiers`](./pkpaymentrequest/unsupportedp
   Returns an error object that indicates an invalid coupon.
 - [static func paymentCouponCodeExpiredError(localizedDescription: String?) -> any Error](./pkpaymentrequest/paymentcouponcodeexpirederror%28localizeddescription%29.md)
   Returns an error object that indicates an expired coupon.
+- [+ paymentCouponCodeInvalidErrorWithLocalizedDescription:](./pkpaymentrequest/paymentcouponcodeinvaliderrorwithlocalizeddescription_.md)
+  Returns an error object that indicates an invalid coupon.
+- [+ paymentCouponCodeExpiredErrorWithLocalizedDescription:](./pkpaymentrequest/paymentcouponcodeexpirederrorwithlocalizeddescription_.md)
+  Returns an error object that indicates an expired coupon.
 ### Deprecated
 - [var applePayLaterAvailability: PKPaymentRequest.ApplePayLaterAvailability](./pkpaymentrequest/applepaylateravailability-3dxrt.md)
   A value that indicates whether Apple Pay Later is available for a transaction.
@@ -195,6 +204,8 @@ Use the [`unsupportedPrimaryAccountIdentifiers`](./pkpaymentrequest/unsupportedp
 - [var isDelegatedRequest: Bool](./pkpaymentrequest/isdelegatedrequest.md)
   A Boolean value that indicates whether this payment request is being made by a delegated entity on behalf of a merchant.
 - [var merchantCategoryCode: PKPaymentRequest.MerchantCategoryCode?](./pkpaymentrequest/merchantcategorycode-9kcn6.md)
+- [applePayLaterAvailability](./pkpaymentrequest/applepaylateravailability-inpf.md)
+  A value that indicates whether Apple Pay Later is available for a transaction.
 
 ## Relationships
 

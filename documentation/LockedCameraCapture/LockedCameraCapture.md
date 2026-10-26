@@ -37,6 +37,11 @@ Use the LockedCameraCapture framework to create an extension that allows people 
   A protocol that creates a locked camera capture extension.
 - [protocol LockedCameraCaptureExtensionScene](./lockedcameracaptureextensionscene.md)
   A protocol that provides the UI for the locked camera capture extension.
+### Variables
+- [LockedCameraCaptureVersionNumber](./lockedcameracaptureversionnumber.md)
+  Project version number for LockedCameraCapture.
+- [LockedCameraCaptureVersionString](./lockedcameracaptureversionstring.md)
+  Project version string for LockedCameraCapture.
 
 
 ---

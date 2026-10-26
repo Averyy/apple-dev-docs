@@ -126,6 +126,8 @@ You can create a maximum of 32 interfaces with a limit of 4 per guest operating 
 ### Variables
 - [let vmnet_enable_virtio_header_key: UnsafePointer<CChar>](./vmnet_enable_virtio_header_key-swift.var.md)
   Enable virtio headers in all packets.
+### Macros
+- [vmnet_enable_virtio_header_key](./vmnet_enable_virtio_header_key-c.macro.md)
 
 
 ---

@@ -36,6 +36,8 @@ The default value is the slider’s minimum value. You may set a value only if i
   Values in this array may receive unique visual representations or behaviors.
 - [var localizedValueFormat: String?](./localizedvalueformat.md)
   A localized string that defines the presentation of the slider’s value.
+- [prominentValues](./prominentvalues-7usgc.md)
+  Values in this array may receive unique visual representations or behaviors.
 
 
 ---

@@ -48,6 +48,12 @@ If `SpeakCFString` is called while the speech channel is currently speaking the 
   Terminates speech immediately on the specified channel.
 - [func StopSpeechAt(SpeechChannel, Int32) -> OSErr](./api-1459780-stopspeechat.md)
   Terminates speech delivery on a specified channel eitherimmediately or at the end of the current word or sentence.
+- [SpeakBuffer](./api-1552252-speakbuffer.md)
+  Speaks a buffer of text, using certain flags to controlspeech behavior.
+- [SpeakString](./api-1552250-speakstring.md)
+  Begins speaking a text string.
+- [SpeakText](./api-1552236-speaktext.md)
+  Begins speaking a buffer of text.
 
 
 ---

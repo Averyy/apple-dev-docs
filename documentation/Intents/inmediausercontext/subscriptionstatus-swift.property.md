@@ -39,6 +39,8 @@ var subscriptionStatus: INMediaUserContext.SubscriptionStatus { get set }
   An approximate number of relevant items available in the users library.
 - [INMediaUserContext.SubscriptionStatus](./subscriptionstatus-swift.enum.md)
   Constants that describe the current description status.
+- [numberOfLibraryItems](./numberoflibraryitems-881cf.md)
+  An approximate number of relevant items available in the users library.
 
 
 ---

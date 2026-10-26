@@ -171,6 +171,20 @@ Search Kit supports phrase searches, prefix/suffix/substring searches, Boolean s
   Deprecated. Use asynchronous searching with SKSearchCreate instead, which does not employ search groups.
 - [class SKSearchGroup](./sksearchgroup.md)
   Deprecated. Use asynchronous searching with SKSearchCreate instead, which does not employ search groups.
+- [SKDocumentRef](./skdocumentref.md)
+  Defines an opaque data type representing a document’s URL.
+- [SKIndexDocumentIteratorRef](./skindexdocumentiteratorref.md)
+  Defines an opaque data type representing an index-based document iterator.
+- [SKIndexRef](./skindexref.md)
+  Defines an opaque data type representing an index.
+- [SKSearchRef](./sksearchref.md)
+  Defines an opaque data type representing an asynchronous search.
+- [SKSummaryRef](./sksummaryref.md)
+  Defines an opaque data type representing summarization information.
+- [SKSearchResultsRef](./sksearchresultsref.md)
+  Deprecated. Use asynchronous searching with SKSearchCreate instead, which does not employ search groups.
+- [SKSearchGroupRef](./sksearchgroupref.md)
+  Deprecated. Use asynchronous searching with SKSearchCreate instead, which does not employ search groups.
 ### Constants
 - [Text Analysis Keys](./search_kit/text_analysis_keys.md)
   Each of these constants is an optional key in a Search Kit index’s text analysis properties dictionary. The constant descriptions describe the corresponding values for each of these keys. These keys are declared in the `Analysis.h` header file.
@@ -206,6 +220,51 @@ Search Kit supports phrase searches, prefix/suffix/substring searches, Boolean s
   Deprecated. Specifies a basic ranked search.
 - [var kSKSearchRequiredRanked: SKSearchType](./ksksearchrequiredranked.md)
   Deprecated. Specifies a query that can include required (`'+'`) or excluded (`'-'`) terms.
+- [Deprecated Text Analysis Keys](./search_kit/deprecated_text_analysis_keys.md)
+  Search Kit ignores the `kSKLanguageTypes` constant. It determines language directly by document content.
+- [kSKDocumentStateAddPending](./skdocumentindexstate/kskdocumentstateaddpending.md)
+  Specifies that the document is not in the index but will be added after the index is flushed or closed.
+- [kSKDocumentStateDeletePending](./skdocumentindexstate/kskdocumentstatedeletepending.md)
+  Specifies that the document is in the index but will be deleted after the index is flushed or closed.
+- [kSKDocumentStateIndexed](./skdocumentindexstate/kskdocumentstateindexed.md)
+  Specifies that the document is indexed.
+- [kSKDocumentStateNotIndexed](./skdocumentindexstate/kskdocumentstatenotindexed.md)
+  Specifies that the document is not indexed.
+- [kSKIndexInverted](./skindextype/kskindexinverted.md)
+  Specifies an inverted index, mapping terms to documents.
+- [kSKIndexInvertedVector](./skindextype/kskindexinvertedvector.md)
+  Specifies an index type with all the capabilities of an inverted and a vector index.
+- [kSKIndexUnknown](./skindextype/kskindexunknown.md)
+  Specifies an unknown index type.
+- [kSKIndexVector](./skindextype/kskindexvector.md)
+  Specifies a vector index, mapping documents to terms.
+- [kSKSearchBooleanRanked](./sksearchtype/ksksearchbooleanranked.md)
+  Deprecated. Specifies a query that can include Boolean operators including `'|'`, `'&'`, `'!'`, `'('`, and `')'`.
+- [kSKSearchPrefixRanked](./sksearchtype/ksksearchprefixranked.md)
+  Deprecated. Specifies a prefix-based search, which matches terms that begin with the query string.
+- [kSKSearchRanked](./sksearchtype/ksksearchranked.md)
+  Deprecated. Specifies a basic ranked search.
+- [kSKSearchRequiredRanked](./sksearchtype/ksksearchrequiredranked.md)
+  Deprecated. Specifies a query that can include required (`'+'`) or excluded (`'-'`) terms.
+### Legacy Support for Synchronous Searching
+- [SKSearchGroupCreate](./api-1448627-sksearchgroupcreate.md)
+  Creates a search group as an array of references to indexes.
+- [SKSearchGroupCopyIndexes](./api-1448615-sksearchgroupcopyindexes.md)
+  Obtains the indexes for a search group.
+- [SKSearchGroupGetTypeID](./api-1448637-sksearchgroupgettypeid.md)
+  Deprecated. Use asynchronous searching with SKSearchCreate instead, which does not employ search groups.
+- [SKSearchResultsCreateWithDocuments](./api-1448629-sksearchresultscreatewithdocumen.md)
+  Finds documents similar to given example documents.
+- [SKSearchResultsGetInfoInRange](./api-1448618-sksearchresultsgetinfoinrange.md)
+  Extracts information from a Search Kit query result.
+- [SKSearchResultsCopyMatchingTerms](./api-1448612-sksearchresultscopymatchingterms.md)
+  Obtains the terms in a document that match a query.
+- [SKSearchResultsGetCount](./api-1448598-sksearchresultsgetcount.md)
+  Gets the total number of found items in a search.
+- [SKSearchResultsGetTypeID](./api-1448603-sksearchresultsgettypeid.md)
+  Gets the type identifier for Search Kit search results.
+- [SKSearchResultsCreateWithQuery](./api-1448610-sksearchresultscreatewithquery.md)
+  Queries the indexes in a search group.
 
 ## See Also
 

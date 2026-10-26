@@ -47,6 +47,10 @@ A barrier let’s your app safely write to and then correctly read from the same
   Ensures the shaders in the render pass’s subsequent draw commands have access to the resources you allocate from multiple heaps.
 - [func use(UnsafePointer<any MTLHeap>, count: Int, stages: MTLRenderStages)](./use%28_,count,stages%29.md)
   Ensures the shaders in the render pass’s subsequent draw commands have access to the resources you allocate from multiple heaps.
+- [- useResources:count:usage:](./useresources_count_usage_.md)
+  Ensures the shaders in the render pass’s subsequent draw commands have access to multiple resources.
+- [- useHeaps:count:](./useheaps_count_.md)
+  Ensures the shaders in the render pass’s subsequent draw commands have access to the resources you allocate from multiple heaps.
 
 
 ---

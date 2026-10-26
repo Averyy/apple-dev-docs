@@ -41,6 +41,8 @@ Call this method when you want to retrieve the tool picker assigned to one of yo
 ### Deprecated
 - [var selectedTool: any PKTool](./selectedtool-2lptq.md)
   The currently selected tool in the tool picker.
+- [selectedTool](./selectedtool-93ikc.md)
+  The currently selected tool in the tool picker.
 
 
 ---

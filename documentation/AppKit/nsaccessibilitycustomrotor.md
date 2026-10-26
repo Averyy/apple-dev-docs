@@ -70,6 +70,8 @@ Assistive apps, like VoiceOver, provide interfaces to quickly search apps for co
   Returns the custom rotors of the current accessibility element.
 - [func setAccessibilityCustomRotors([NSAccessibilityCustomRotor])](./nsaccessibilityprotocol/setaccessibilitycustomrotors%28_%29.md)
   Sets the custom rotors of the current accessibility element.
+- [accessibilityCustomRotors](./nsaccessibility-c.protocol/accessibilitycustomrotors.md)
+  The custom rotors of the current accessibility element.
 
 
 ---

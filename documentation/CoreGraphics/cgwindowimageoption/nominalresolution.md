@@ -28,6 +28,7 @@ kCGWindowImageNominalResolution
 - [static var boundsIgnoreFraming: CGWindowImageOption](./boundsignoreframing.md)
 - [static var onlyShadows: CGWindowImageOption](./onlyshadows.md)
 - [static var shouldBeOpaque: CGWindowImageOption](./shouldbeopaque.md)
+- [kCGWindowImageDefault](./kcgwindowimagedefault.md)
 
 
 ---

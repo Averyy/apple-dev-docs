@@ -47,6 +47,10 @@ Instead of providing multiple images with different resolutions, you can provide
   Creates a new template that has header text, body text, and a gauge.
 - [init(headerImageProvider: CLKFullColorImageProvider?, headerTextProvider: CLKTextProvider, body1TextProvider: CLKTextProvider, gaugeProvider: CLKGaugeProvider)](./clkcomplicationtemplategraphicrectangulartextgauge/init%28headerimageprovider,headertextprovider,body1textprovider,gaugeprovider%29.md)
   Creates a new template that has a header row with an image and text, body text, and a gauge.
+- [+ templateWithHeaderTextProvider:body1TextProvider:gaugeProvider:](./clkcomplicationtemplategraphicrectangulartextgauge/templatewithheadertextprovider_body1textprovider_gaugeprovider_.md)
+  Returns a new template that has header text, body text, and a gauge.
+- [+ templateWithHeaderImageProvider:headerTextProvider:body1TextProvider:gaugeProvider:](./clkcomplicationtemplategraphicrectangulartextgauge/templatewithheaderimageprovider_headertextprovider_body1textprovider_gaugeprovider_.md)
+  Returns a new template that has a header row with an image and text, body text, and a gauge.
 ### Setting the Complication Data
 - [var headerTextProvider: CLKTextProvider](./clkcomplicationtemplategraphicrectangulartextgauge/headertextprovider.md)
   The header text to display in the complication.

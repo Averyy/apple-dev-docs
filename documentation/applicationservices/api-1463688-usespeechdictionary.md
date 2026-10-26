@@ -71,6 +71,12 @@ After the `UseSpeechDictionary` function returns, your application is free to re
 - `chan`: The speech channel with which the specified speech dictionary is to be registered.
 - `speechDictionary`: A speech dictionary to be registered with the specified speech channel, represented as a `CFDictionary` object. See [Speech Dictionary Keys](./speech_synthesis_manager/speech_dictionary_keys.md) for the keys you can use in the dictionary.
 
+## See Also
+
+### Installing a Pronunciation Dictionary
+- [UseDictionary](./api-1552255-usedictionary.md)
+  Installs the designated dictionary into a speech channel.
+
 
 ---
 

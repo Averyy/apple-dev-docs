@@ -38,6 +38,8 @@ These constants are option names for [`NSOpenGLSetOption`](./nsopenglsetoption.m
   Whether to enable the function compilation block cache. This is off by default. It must be enabled at startup.
 ### Deprecated
 - [var globalValue: GLint](./nsopenglglobaloption/globalvalue.md)
+- [NSOpenGLGOResetLibrary](./nsopenglglobaloption/nsopenglgoresetlibrary.md)
+  Does a soft reset of the CGL library if true.
 ### Initializers
 - [init?(rawValue: UInt32)](./nsopenglglobaloption/init%28rawvalue%29.md)
 
@@ -67,6 +69,10 @@ These constants are option names for [`NSOpenGLSetOption`](./nsopenglsetoption.m
   Historical return values for [`runModal(for:)`](./nsapplication/runmodal%28for%29.md) and [`runModalSession(_:)`](./nsapplication/runmodalsession%28_%29.md).
 - [Tags of Views in the FontPanel](./tags-of-views-in-the-fontpanel.md)
   These constants are obsolete and should not be used.
+- [NSInterfaceStyle](./nsinterfacestyle.md)
+  These constants are used in `NSResponder`’s [`interfaceStyle`](./nsresponder/interfacestyle.md) method.
+- [NSNoUnderlineStyle](./nsnounderlinestyle.md)
+- [NSSingleUnderlineStyle](./nssingleunderlinestyle.md)
 
 
 ---

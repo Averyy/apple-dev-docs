@@ -25,6 +25,8 @@ Develop your system extension with Endpoint Security and package it in an app th
   A type used by Endpoint Security to notify your client when a monitored action occurs.
 - [Event Types](./event-types.md)
   Types used by messages to deliver details specific to different kinds of Endpoint Security events.
+- [Monitoring System Events with Endpoint Security](./monitoring-system-events-with-endpoint-security.md)
+  Receive notifications and authorization requests for sensitive operations by creating an Endpoint Security client for your app.
 ### Entitlements
 - [com.apple.developer.endpoint-security.client](../BundleResources/entitlements/com.apple.developer.endpoint-security.client.md)
   The entitlement required to monitor system events for potentially malicious activity.

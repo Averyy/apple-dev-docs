@@ -87,11 +87,15 @@ You can find more information about a capture format using its associated Core M
   A Boolean value that indicates whether this format supports high-quality capture with the current quality prioritization setting.
 - [var isHighestPhotoQualitySupported: Bool](./format/ishighestphotoqualitysupported.md)
   A Boolean value that indicates whether this format supports the highest photo quality that the platform delivers.
+- [supportedMaxPhotoDimensions](../avcapturedeviceformat/supportedmaxphotodimensions.md)
+  The maximum photo dimension this format supports.
 ### Determining color support
 - [var isGlobalToneMappingSupported: Bool](./format/isglobaltonemappingsupported.md)
   A Boolean value that indicates whether the format supports global tone mapping.
 - [var supportedColorSpaces: [AVCaptureColorSpace]](./format/supportedcolorspaces.md)
   The list of the device’s supported color spaces.
+- [supportedColorSpaces](../avcapturedeviceformat/supportedcolorspaces.md)
+  The list of color spaces the format supports for image and video capture.
 ### Determining exposure support
 - [var systemRecommendedExposureBiasRange: ClosedRange<Float>?](./format/systemrecommendedexposurebiasrange.md)
   The system’s recommended exposure bias range for this device format.
@@ -103,6 +107,10 @@ You can find more information about a capture format using its associated Core M
   A time value that indicates the minimum supported exposure duration.
 - [var maxExposureDuration: CMTime](./format/maxexposureduration.md)
   A time value that indicates the maximum supported exposure duration.
+- [systemRecommendedExposureBiasRange](../avcapturedeviceformat/systemrecommendedexposurebiasrange.md)
+  The system’s recommended exposure bias range for this device format.
+- [AVExposureBiasRange](../avexposurebiasrange.md)
+  An object that expresses an inclusive range of supported exposure bias values, in EV units.
 ### Determining zoom capabilities
 - [var systemRecommendedVideoZoomRange: ClosedRange<CGFloat>?](./format/systemrecommendedvideozoomrange.md)
   The system’s recommended zoom range for this device format.
@@ -116,6 +124,14 @@ You can find more information about a capture format using its associated Core M
   The zoom ranges that support the delivery of depth data.
 - [var zoomFactorsOutsideOfVideoZoomRangesForDepthDeliverySupported: Bool](./format/zoomfactorsoutsideofvideozoomrangesfordepthdeliverysupported.md)
   A Boolean value that indicates whether the format supports zoom factors outside the range supported for depth delivery.
+- [systemRecommendedVideoZoomRange](../avcapturedeviceformat/systemrecommendedvideozoomrange.md)
+  The system’s recommended zoom range for this device format.
+- [secondaryNativeResolutionZoomFactors](../avcapturedeviceformat/secondarynativeresolutionzoomfactors.md)
+  The zoom factors at which this device transitions to secondary native resolution modes.
+- [supportedVideoZoomRangesForDepthDataDelivery](../avcapturedeviceformat/supportedvideozoomrangesfordepthdatadelivery.md)
+  The zoom ranges that support the delivery of depth data.
+- [AVZoomRange](../avzoomrange.md)
+  An object that defines an inclusive range of zoom values.
 ### Determining the auto focus system
 - [var autoFocusSystem: AVCaptureDevice.Format.AutoFocusSystem](./format/autofocussystem-swift.property.md)
   The auto focus system the format uses.
@@ -192,6 +208,10 @@ You can find more information about a capture format using its associated Core M
 - [var minLensAperture: Float](./format/minlensaperture.md)
   The minimum supported value for the [`lensAperture`](./lensaperture.md) property.
 - [var recommendedLensApertureStops: [Float]](./format/recommendedlensaperturestops.md)
+- [recommendedLensApertureStops](../avcapturedeviceformat/recommendedlensaperturestops.md)
+  A sorted array of recommended values for the [`lensAperture`](./lensaperture.md) property.
+- [supportedVideoZoomFactorsForDepthDataDelivery](../avcapturedeviceformat/supportedvideozoomfactorsfordepthdatadelivery.md)
+  The zoom factors that a format supports for depth data delivery.
 ### Instance Methods
 - [func supportsExposureModeCustom(lensAperture: Float, duration: CMTime, iso: Float) -> Bool](./format/supportsexposuremodecustom%28lensaperture,duration,iso%29.md)
   Reports if the given set of exposure parameters are supported by this format.

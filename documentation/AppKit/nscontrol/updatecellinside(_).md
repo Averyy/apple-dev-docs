@@ -42,6 +42,12 @@ func updateCellInside(_ cell: NSCell)
   Draws the inside of the receiver’s cell (the area within the bezel or border)
 - [func updateCell(NSCell)](./updatecell%28_%29.md)
   Marks the specified cell as in need of redrawing.
+- [- controlTextDidBeginEditing:](../../ObjectiveC/nsobject-swift.class/controltextdidbeginediting_.md)
+  Sent when a control with editable text begins an editing session.
+- [- controlTextDidChange:](../../ObjectiveC/nsobject-swift.class/controltextdidchange_.md)
+  Sent when the text in the receiving control changes.
+- [- controlTextDidEndEditing:](../../ObjectiveC/nsobject-swift.class/controltextdidendediting_.md)
+  Sent when a control with editable text ends an editing session.
 
 
 ---

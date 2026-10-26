@@ -35,6 +35,8 @@ This option provides the [`bufferStructType`](../mtlargument/bufferstructtype.md
   An option that instructs the compiler to return an error when a GPU function isn’t in a binary archive.
 - [static var argumentInfo: MTLPipelineOption](./argumentinfo.md)
   An option instance that provides argument information for textures and threadgroup memory.
+- [MTLPipelineOptionNone](./mtlpipelineoptionnone.md)
+  Don’t provide any reflection information.
 
 
 ---

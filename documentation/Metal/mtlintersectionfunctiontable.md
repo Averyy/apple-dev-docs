@@ -42,6 +42,8 @@ Use the methods on this instance to set the table entries to point at the inters
   Sets an entry in the table.
 - [func setFunctions([(any MTLFunctionHandle)?], range: Range<Int>)](./mtlintersectionfunctiontable/setfunctions%28_,range%29.md)
   Sets a range of entries in the table.
+- [- setFunctions:withRange:](./mtlintersectionfunctiontable/setfunctions_withrange_.md)
+  Sets a range of entries in the table.
 ### Specifying arguments for intersection functions
 - [func setBuffer((any MTLBuffer)?, offset: Int, index: Int)](./mtlintersectionfunctiontable/setbuffer%28_,offset,index%29.md)
   Sets a buffer for the intersection functions.
@@ -50,6 +52,10 @@ Use the methods on this instance to set the table entries to point at the inters
 - [func setVisibleFunctionTable((any MTLVisibleFunctionTable)?, bufferIndex: Int)](./mtlintersectionfunctiontable/setvisiblefunctiontable%28_,bufferindex%29.md)
   Sets a visible function table for the intersection functions.
 - [func setVisibleFunctionTables([(any MTLVisibleFunctionTable)?], bufferRange: Range<Int>)](./mtlintersectionfunctiontable/setvisiblefunctiontables%28_,bufferrange%29.md)
+  Sets a range of visible function tables for the intersection functions.
+- [- setBuffers:offsets:withRange:](./mtlintersectionfunctiontable/setbuffers_offsets_withrange_.md)
+  Sets a range of buffers for the intersection functions.
+- [- setVisibleFunctionTables:withBufferRange:](./mtlintersectionfunctiontable/setvisiblefunctiontables_withbufferrange_.md)
   Sets a range of visible function tables for the intersection functions.
 ### Specifying opaque triangle intersection testing
 - [func setOpaqueTriangleIntersectionFunction(signature: MTLIntersectionFunctionSignature, index: Int)](./mtlintersectionfunctiontable/setopaquetriangleintersectionfunction%28signature,index%29.md)

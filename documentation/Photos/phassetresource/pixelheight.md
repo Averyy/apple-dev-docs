@@ -45,6 +45,8 @@ var pixelHeight: Int { get }
   The width of the resource, in pixels.
 - [var dataSize: Int?](./datasize-5lxva.md)
   The size of the resource in bytes
+- [dataSize](./datasize-6cf5k.md)
+  The size of the resource in bytes
 
 
 ---

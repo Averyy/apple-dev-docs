@@ -22,6 +22,8 @@ Manage your app’s work and how it interacts with system services like Handoff 
   A queue that regulates the execution of operations.
 - [class BlockOperation](./blockoperation.md)
   An operation that manages the concurrent execution of one or more blocks.
+- [NSInvocationOperation](./nsinvocationoperation.md)
+  An operation that manages the execution of a single encapsulated task specified as an invocation.
 ### Scheduling
 - [class Timer](./timer.md)
   A timer that fires after a certain time interval has elapsed, sending a specified message to a target object.

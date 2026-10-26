@@ -49,6 +49,8 @@ Use the [`shared`](./mamusichapticsmanager/shared.md) instance of `MAMusicHaptic
 ### Supporting types
 - [struct MAMusicHaptics](./mamusichaptics.md)
   A namespace for Music Haptics symbols.
+### Macros
+- [MediaAccessibility_MAMusicHapticsManager_h](./mediaaccessibility_mamusichapticsmanager_h.md)
 
 ## Relationships
 

@@ -41,6 +41,10 @@ The array of joint name objects for the specified revision.
   Retrieves the supported joint group names.
 - [class func supportedJointsGroupNames(forRevision: Int) throws -> [VNHumanHandPoseObservation.JointsGroupName]](./supportedjointsgroupnames%28forrevision%29.md)
   Retrieves the supported joint group names for a revision.
+- [- supportedJointNamesAndReturnError:](./supportedjointnamesandreturnerror_.md)
+  Retrieves the supported joint names.
+- [- supportedJointsGroupNamesAndReturnError:](./supportedjointsgroupnamesandreturnerror_.md)
+  Retrieves the supported joint group names.
 
 
 ---

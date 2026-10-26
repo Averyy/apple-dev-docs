@@ -1,0 +1,41 @@
+# boundingBoxForRange:error:
+
+**Framework**: Vision  
+**Kind**: method  
+**Role**: Instance Method
+
+Calculates the bounding box around the characters in the range of a string.
+
+**Availability**:
+- iOS 13.0+
+- iPadOS 13.0+
+- Mac Catalyst 13.1+
+- macOS 10.15+
+- tvOS 13.0+
+- visionOS 1.0+
+
+## Declaration
+
+```objc
+- (VNRectangleObservation *) boundingBoxForRange:(NSRange) range error:(NSError **) error;
+```
+
+#### Discussion
+
+Bounding boxes aren’t always an exact fit around the characters. Use them to display in user interfaces to provide general guidance, but avoid using their contents for image processing.
+
+The bounding box that returns from this method differs based on the value of [`recognitionLevel`](../vnrecognizetextrequest/recognitionlevel.md), as follows:
+
+| [`VNRequestTextRecognitionLevel.fast`](../vnrequesttextrecognitionlevel/fast.md) | The bounding box has character precision. When you specify a range from `0` to `1`, the value that returns is the first character’s bounding box. |
+| --- | --- |
+| [`VNRequestTextRecognitionLevel.accurate`](../vnrequesttextrecognitionlevel/accurate.md) | The bounding box has word precision. When you specify a range from `0` to `1`, or `1` to `2`, the value that returns is the bounding box of the whole word containing the first character. |
+
+## Parameters
+
+- `range`: The range of the characters in the text string to draw a bounding box around.
+- `error`: An error that contains information about failed computation of the bounding box, or `nil` if no error occurred.
+
+
+---
+
+*[View on Apple Developer](https://developer.apple.com/documentation/vision/vnrecognizedtext/boundingboxforrange:error:)*

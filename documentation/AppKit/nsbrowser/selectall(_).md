@@ -24,6 +24,8 @@ func selectAll(_ sender: Any?)
 ### Related Documentation
 - [var selectedColumn: Int](./selectedcolumn.md)
   The index of the last column with a selected item.
+- [selectedCell](./selectedcell.md)
+  The last (rightmost and lowest) selected cell.
 ### Managing Selection
 - [func selectedCell(inColumn: Int) -> Any?](./selectedcell%28incolumn%29.md)
   Returns the last (lowest) cell selected in the given column.

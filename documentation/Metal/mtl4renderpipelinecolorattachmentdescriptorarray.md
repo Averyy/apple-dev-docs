@@ -29,6 +29,8 @@ class MTL4RenderPipelineColorAttachmentDescriptorArray
 ### Instance Methods
 - [func reset()](./mtl4renderpipelinecolorattachmentdescriptorarray/reset%28%29.md)
   Resets the elements of the descriptor array
+- [- setObject:atIndexedSubscript:](./mtl4renderpipelinecolorattachmentdescriptorarray/setobject_atindexedsubscript_.md)
+  Sets an attachment at an index.
 ### Subscripts
 - [subscript(Int) -> MTL4RenderPipelineColorAttachmentDescriptor!](./mtl4renderpipelinecolorattachmentdescriptorarray/subscript%28_%29.md)
   Accesses a color attachment at a specific index.

@@ -40,6 +40,8 @@ A single [`VNRecognizedTextObservation`](./vnrecognizedtextobservation.md) can c
 ### Locating Recognized Text
 - [func boundingBox(for: Range<String.Index>) throws -> VNRectangleObservation?](./vnrecognizedtext/boundingbox%28for%29.md)
   Calculates the bounding box around the characters in the range of a string.
+- [- boundingBoxForRange:error:](./vnrecognizedtext/boundingboxforrange_error_.md)
+  Calculates the bounding box around the characters in the range of a string.
 
 ## Relationships
 

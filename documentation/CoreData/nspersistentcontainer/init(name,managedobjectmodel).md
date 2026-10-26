@@ -43,6 +43,10 @@ By default, the provided name value of the container is used as the name of the 
 ### Creating a Container
 - [convenience init(name: String)](./init%28name%29.md)
   Creates a container with the specified name.
+- [+ persistentContainerWithName:](./persistentcontainerwithname_.md)
+  Initializes a new persistent container using the provided name for the container.
+- [+ persistentContainerWithName:managedObjectModel:](./persistentcontainerwithname_managedobjectmodel_.md)
+  Initializes a new persistent container using the provided name and managed object model.
 
 
 ---

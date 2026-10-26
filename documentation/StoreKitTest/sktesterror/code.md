@@ -73,6 +73,12 @@ enum SKTestErrorCode : NSInteger;
 - [Sendable](../../Swift/sendable.md)
 - [SendableMetatype](../../Swift/sendablemetatype.md)
 
+## See Also
+
+### StoreKit transaction testing errors
+- [SKTestErrorDomain](../sktesterrordomain.md)
+  A constant that represents the domain for error codes in the testing environment.
+
 
 ---
 

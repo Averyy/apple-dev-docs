@@ -29,6 +29,14 @@ enum VTDecodeFrameFlags : uint32_t;
 ### Flags
 - [init(rawValue: UInt32)](./vtdecodeframeflags/init%28rawvalue%29.md)
   Creates a flags structure with a raw value.
+- [kVTDecodeFrame_1xRealTimePlayback](./vtdecodeframeflags/kvtdecodeframe_1xrealtimeplayback.md)
+  A flag that provides a hint to the video decoder that it’s ok to use a low-power mode that can’t decode faster than realtime.
+- [kVTDecodeFrame_DoNotOutputFrame](./vtdecodeframeflags/kvtdecodeframe_donotoutputframe.md)
+  A flag that provides a hint to the decompression session and video decoder not to return a frame.
+- [kVTDecodeFrame_EnableAsynchronousDecompression](./vtdecodeframeflags/kvtdecodeframe_enableasynchronousdecompression.md)
+  A flag that indicates to enable asynchronous decompression.
+- [kVTDecodeFrame_EnableTemporalProcessing](./vtdecodeframeflags/kvtdecodeframe_enabletemporalprocessing.md)
+  A flag that indicates to enable temporal processing.
 
 ## Relationships
 

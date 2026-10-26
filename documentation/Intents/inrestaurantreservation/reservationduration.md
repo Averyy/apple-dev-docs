@@ -40,6 +40,8 @@ var reservationDuration: INDateComponentsRange { get }
   The name and location of the restaurant.
 - [var partySize: Int?](./partysize-9ux0p.md)
   The number of people in the party.
+- [partySize](./partysize-9mtpk.md)
+  The number of people in the party.
 
 
 ---

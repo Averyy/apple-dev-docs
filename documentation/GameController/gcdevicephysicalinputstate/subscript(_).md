@@ -46,6 +46,16 @@ The element that matches the key.
   The device’s directional pads as key-value pairs for lookup by name.
 - [var switches: GCPhysicalInputElementCollection<any GCSwitchElement>](./switches-6dcny.md)
   The device’s switches as key-value pairs for lookup by name.
+- [elements](./elements-1shp2.md)
+  The device’s elements as key-value pairs for lookup by name.
+- [axes](./axes-80rx.md)
+  The device’s axes as key-value pairs for lookup by name.
+- [buttons](./buttons-3257g.md)
+  The device’s buttons as key-value pairs for lookup by name.
+- [dpads](./dpads-5yr9x.md)
+  The device’s directional pads as key-value pairs for lookup by name.
+- [switches](./switches-6bws2.md)
+  The device’s switches as key-value pairs for lookup by name.
 
 
 ---

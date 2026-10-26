@@ -31,6 +31,9 @@ enum MTL4BinaryFunctionOptions : NSUInteger;
 ### Type Properties
 - [static var pipelineIndependent: MTL4BinaryFunctionOptions](./mtl4binaryfunctionoptions/pipelineindependent.md)
   Compiles the function to have its function handles return a constant MTLResourceID across all pipeline states. The function needs to be linked to the pipeline that will use this function.
+### Enumeration Cases
+- [MTL4BinaryFunctionOptionNone](./mtl4binaryfunctionoptions/mtl4binaryfunctionoptionnone.md)
+  Represents the default value: no options.
 
 ## Relationships
 
@@ -69,6 +72,8 @@ enum MTL4BinaryFunctionOptions : NSUInteger;
   Base interface for other function-derived interfaces.
 - [class MTL4PipelineStageDynamicLinkingDescriptor](./mtl4pipelinestagedynamiclinkingdescriptor.md)
   Groups together properties to drive the dynamic linking process of a pipeline stage.
+- [MTL4CompilerTask](./mtl4compilertask.md)
+  A reference to an asynchronous compilation task that you initiate from a compiler instance.
 
 
 ---

@@ -98,6 +98,12 @@ share[CKShare.SystemFieldKey.shareType] = "com.example.app.album"
 ### Subscripting
 - [CKShare.SystemFieldKey](./ckshare/systemfieldkey.md)
   Constants that represent the system fields of a share.
+- [CKShareTypeKey](./cksharetypekey-204gl.md)
+  The system field key for the share’s type.
+- [CKShareTitleKey](./cksharetitlekey-9yavd.md)
+  The system field key for the share’s title.
+- [CKShareThumbnailImageDataKey](./cksharethumbnailimagedatakey-1rxdx.md)
+  The system field key for the share’s thumbnail image data.
 ### Classes
 - [CKShare.AccessRequester](./ckshare/accessrequester.md)
 - [CKShare.BlockedIdentity](./ckshare/blockedidentity.md)
@@ -118,6 +124,8 @@ share[CKShare.SystemFieldKey.shareType] = "com.example.app.album"
 - [func oneTimeURL(for: CKShare.Participant.ID) -> URL?](./ckshare/onetimeurl%28for%29.md)
 - [func unblockIdentities([CKShare.BlockedIdentity])](./ckshare/unblockidentities%28_%29.md)
   Unblocks previously blocked users, allowing them to request access again.
+- [- oneTimeURLForParticipantID:](./ckshare/onetimeurlforparticipantid_.md)
+  Invitation URLs that any receiver can use to claim the associated participantID and join the share.
 
 ## Relationships
 
@@ -155,6 +163,8 @@ share[CKShare.SystemFieldKey.shareType] = "com.example.app.album"
   A view controller that presents standard screens for adding and removing people from a CloudKit share record.
 - [CKSharingSupported](../BundleResources/information-property-list/cksharingsupported.md)
   A Boolean value that indicates your app supports CloudKit Sharing.
+- [CKSharePreparationCompletionHandler](./cksharepreparationcompletionhandler.md)
+- [CKSharePreparationHandler](./cksharepreparationhandler.md)
 
 
 ---

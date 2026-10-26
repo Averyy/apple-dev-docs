@@ -30,6 +30,8 @@ AVCapturePrimaryConstituentDeviceRestrictedSwitchingBehaviorConditionExposureMod
   Restrict switching to a fallback camera only when the device’s focus mode changes.
 - [static var videoZoomChanged: AVCaptureDevice.PrimaryConstituentDeviceRestrictedSwitchingBehaviorConditions](./videozoomchanged.md)
   Restrict switching to a fallback camera only when the device’s video zoom changes.
+- [AVCapturePrimaryConstituentDeviceRestrictedSwitchingBehaviorConditionNone](../../avcaptureprimaryconstituentdevicerestrictedswitchingbehaviorconditions/avcaptureprimaryconstituentdevicerestrictedswitchingbehaviorconditionnone.md)
+  Disallow switching to a fallback camera.
 
 
 ---

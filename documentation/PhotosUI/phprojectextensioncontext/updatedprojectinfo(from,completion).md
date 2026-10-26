@@ -21,7 +21,7 @@ func updatedProjectInfo(from existingProjectInfo: PHProjectInfo?, completion: @e
 
 ## Parameters
 
-- `existingProjectInfo`: The project information to update. If this is not `nil`, a new [`PHProjectInfo`](../phprojectinfo.md) instance is created from all assets in the [`PHProject`](https://developer.apple.com/documentation/photos/phproject).
+- `existingProjectInfo`: The project information to update. If this is not `nil`, a new [`PHProjectInfo`](../phprojectinfo.md) instance is created from all assets in the [`PHProject`](../../Photos/phproject.md).
 - `completion`: A closure with code you provide that runs on completion.
 
 ## See Also

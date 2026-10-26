@@ -45,6 +45,12 @@ A newly initialized [`UIBarButtonItem`](../uibarbuttonitem.md).
   Creates an item using the specified system item, primary action, and context menu.
 - [UIBarButtonItem.SystemItem](./systemitem.md)
   Constants that define system-supplied images for bar button items.
+- [- initWithBarButtonSystemItem:primaryAction:menu:](./initwithbarbuttonsystemitem_primaryaction_menu_.md)
+  Creates an item using the specified system item, primary action, and context menu.
+- [- initWithBarButtonSystemItem:primaryAction:](./initwithbarbuttonsystemitem_primaryaction_.md)
+  Creates an item using the specified system item and primary action.
+- [- initWithBarButtonSystemItem:menu:](./initwithbarbuttonsystemitem_menu_.md)
+  Creates an item using the specified system item and context menu.
 
 
 ---

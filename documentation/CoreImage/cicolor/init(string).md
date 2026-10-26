@@ -45,6 +45,10 @@ On macOS before 10.10, the CIColor’s color space will be Generic RGB.
   Create a Core Image color object with the specified red, green, and blue component values as measured in the specified color space.
 - [convenience init?(red: CGFloat, green: CGFloat, blue: CGFloat, alpha: CGFloat, colorSpace: CGColorSpace)](./init%28red,green,blue,alpha,colorspace%29-5mvff.md)
   Create a Core Image color object with the specified red, green, blue, and alpha component values as measured in the specified color space.
+- [+ colorWithCGColor:](./colorwithcgcolor_.md)
+  Create a Core Image color object with a Core Graphics color object.
+- [+ colorWithRed:green:blue:alpha:](./colorwithred_green_blue_alpha_.md)
+  Create a Core Image color object in the sRGB color space with the specified red, green, blue, and alpha component values.
 
 
 ---

@@ -39,6 +39,12 @@ For more information, see [GameplayKit Programming Guide](https://developer.appl
 - `box`: The axis-aligned rectangular bounding volume encompassing all possible elements of the tree. Elements added to the tree must lie entirely within this box.
 - `minCellSize`: The minimum dimension (width, height, and depth) of a node in the tree.
 
+## See Also
+
+### Creating an Octree
+- [+ octreeWithBoundingBox:minimumCellSize:](./octreewithboundingbox_minimumcellsize_.md)
+  Creates an octree with the specified dimensions.
+
 
 ---
 

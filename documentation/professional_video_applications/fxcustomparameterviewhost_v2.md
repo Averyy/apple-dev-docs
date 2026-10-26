@@ -21,7 +21,7 @@ protocol FxCustomParameterViewHost_v2
 
 ## Mentions
 
-- [Adding parameters to plug-ins](https://developer.apple.com/documentation/professional-video-applications/adding-parameters-to-plug-ins)
+- [Adding parameters to plug-ins](../Professional-Video-Applications/adding-parameters-to-plug-ins.md)
 
 #### Overview
 

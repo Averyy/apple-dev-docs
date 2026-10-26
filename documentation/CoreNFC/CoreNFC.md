@@ -43,6 +43,8 @@ Core NFC isn’t available for use in app extensions, and it requires a device t
   A general interface for interacting with a reader session.
 - [Near Field Communication Tag Reader Session Formats Entitlement](../BundleResources/entitlements/com.apple.developer.nfc.readersession.formats.md)
   The Near Field Communication data formats an app can read.
+- [NFCReaderSessionDelegate](./nfcreadersessiondelegate.md)
+  A collection of callbacks that provide information about the status of an NFC reader session.
 ### Tag types
 - [Creating NFC Tags from Your iPhone](./creating-nfc-tags-from-your-iphone.md)
   Save data to tags, and interact with them using native tag protocols.
@@ -60,6 +62,8 @@ Core NFC isn’t available for use in app extensions, and it requires a device t
   An object that represents an NFC tag object.
 - [class NFCTagCommandConfiguration](./nfctagcommandconfiguration.md)
   A set of parameters you use to define the configuration of an NFC tag command.
+- [NFCTag](./nfctag-c.protocol.md)
+  An interface for interacting with an NFC or RFID tag.
 ### NDEF messages and payloads
 - [class NFCNDEFMessage](./nfcndefmessage.md)
   An NFC NDEF message consisting of an array of payload records.
@@ -89,6 +93,8 @@ Core NFC isn’t available for use in app extensions, and it requires a device t
 ### Classes
 - [class NFCISO15693CustomCommandConfiguration](./nfciso15693customcommandconfiguration.md)
 - [class NFCISO15693ReadMultipleBlocksConfiguration](./nfciso15693readmultipleblocksconfiguration.md)
+- [NFCISO15693ReaderSession](./nfciso15693readersession.md)
+- [NFCTagReaderSessionConfiguration](./nfctagreadersessionconfiguration.md)
 ### Structures
 - [struct NFCFeliCaPollingResponse](./nfcfelicapollingresponse.md)
 - [struct NFCFeliCaRequestSpecificationVersionResponse](./nfcfelicarequestspecificationversionresponse.md)

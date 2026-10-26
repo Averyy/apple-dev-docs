@@ -49,6 +49,8 @@ During the download the connection maintains a strong reference to the `delegate
   Loads the data for a URL request and executes a handler block on an operation queue when the request completes or fails.
 - [func start()](./start%28%29.md)
   Causes the connection to begin loading data, if it has not already.
+- [+ connectionWithRequest:delegate:](./connectionwithrequest_delegate_.md)
+  Creates and returns an initialized URL connection and begins to load the data for the URL request.
 
 
 ---

@@ -36,6 +36,10 @@ func read(length: Int, from offset: Int64) async throws -> Data
   Gets the number of available bytes from the offset within the byte source.
 - [func byteSourceForRelatedFileName(String) throws -> MEByteSource](./bytesourceforrelatedfilename%28_%29.md)
   Creates a new byte source for a related file.
+- [- readDataOfLength:fromOffset:toDestination:bytesRead:error:](./readdataoflength_fromoffset_todestination_bytesread_error_.md)
+  Reads bytes from a byte source into a buffer.
+- [- readDataOfLength:fromOffset:toDestination:completionHandler:](./readdataoflength_fromoffset_todestination_completionhandler_.md)
+  Reads bytes from a byte source into a buffer.
 
 
 ---

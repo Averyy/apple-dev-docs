@@ -183,6 +183,7 @@ It is important to consider the possible types of archiving that a coder support
 - [UnitSpeed](./unitspeed.md)
 - [UnitTemperature](./unittemperature.md)
 - [UnitVolume](./unitvolume.md)
+- [NSDistantObject](./nsdistantobject.md)
 
 ## See Also
 

@@ -63,6 +63,8 @@ The system only presents the audio route picker for the [`playback`](./category-
   Constants that describe the options to pass when activating the audio session.
 - [struct AVAudioSessionDeactivationOptions](../avaudiosessiondeactivationoptions.md)
   Options for deactivating an AVAudioSession
+- [- setActive:error:](./setactive_error_.md)
+  Activates or deactivates your app’s audio session.
 
 
 ---

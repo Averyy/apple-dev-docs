@@ -5,6 +5,12 @@
 
 The version of the AppKit.framework containing a specific bug fix or capability.
 
+## Topics
+
+### Constants
+- [NSAppKitVersionNumberWithDeferredWindowDisplaySupport](./nsappkitversionnumberwithdeferredwindowdisplaysupport.md)
+  The specific version of the AppKit framework that introduced support for deferred window display.
+
 ## See Also
 
 ### Constants

@@ -35,6 +35,8 @@ The main library contains both assets that originate on the device (such as phot
   The asset originates from an iCloud Shared Album.
 - [static var typeiTunesSynced: PHAssetSourceType](./typeitunessynced.md)
   The asset originates from a Mac or PC and is present on the device through iTunes sync.
+- [PHAssetSourceTypeNone](./phassetsourcetypenone.md)
+  Source information is not available for the asset.
 
 
 ---

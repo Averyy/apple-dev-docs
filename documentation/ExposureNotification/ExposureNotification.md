@@ -110,6 +110,15 @@ Starting with iOS 13.7, Health Authorities can inform users of potential exposur
   The definition of a handler that returns diagnosis keys.
 - [typealias ENGetExposureInfoHandler](./engetexposureinfohandler.md)
   The definition of a handler that receives exposure info.
+### Macros
+- [ENStringify](./enstringify.md)
+- [ENStringifyExpansion](./enstringifyexpansion.md)
+- [EN_API_AVAILABLE](./en_api_available.md)
+- [EN_API_AVAILABLE_EXPORT](./en_api_available_export.md)
+- [EN_API_AVAILABLE_EXPORT_V2](./en_api_available_export_v2.md)
+- [EN_API_AVAILABLE_V2](./en_api_available_v2.md)
+- [EN_API_AVAILABLE_V3](./en_api_available_v3.md)
+- [EN_API_AVAILABLE_V5](./en_api_available_v5.md)
 
 
 ---

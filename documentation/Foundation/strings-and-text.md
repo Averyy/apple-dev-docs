@@ -12,6 +12,10 @@ Create and process strings of Unicode characters, use regular expressions to fin
   A Unicode string value that is a collection of characters.
 - [String Encodings](./api-1497293-string-encodings.md)
   Constants for encoding standards used when converting raw data to and from string representations.
+- [NSString](./nsstring.md)
+  A static, plain-text Unicode string object.
+- [NSMutableString](./nsmutablestring.md)
+  A dynamic plain-text Unicode string object.
 ### Strings with Metadata
 - [struct AttributedString](./attributedstring.md)
   A value type for a string with associated attributes for portions of its text.
@@ -27,6 +31,12 @@ Create and process strings of Unicode characters, use regular expressions to fin
 - [struct CharacterSet](./characterset.md)
   A set of Unicode character values for use in search operations.
 - [typealias UnicodeScalar](../Swift/unicodescalar.md)
+- [NSCharacterSet](./nscharacterset.md)
+  An object representing a fixed set of Unicode character values for use in search operations.
+- [NSMutableCharacterSet](./nsmutablecharacterset.md)
+  An object representing a mutable set of Unicode character values for use in search operations.
+- [unichar](./unichar.md)
+  Type for UTF-16 code units.
 ### Pattern Matching
 - [class Scanner](./scanner.md)
   A string parser that scans for substrings or characters in a character set, and for numeric values from decimal, hexadecimal, and floating-point representations.
@@ -56,6 +66,16 @@ Create and process strings of Unicode characters, use regular expressions to fin
   A type that provides an out-of-process localizable description.
 - [struct URLResource](./urlresource.md)
   A resource located at a particular file URL within a bundle.
+- [NSLocale](./nslocale.md)
+  Information about linguistic, cultural, and technological conventions for use in formatting data for presentation.
+- [NSLocalizedString](./nslocalizedstring.md)
+  Returns a localized version of a string from the default table, which Xcode autogenerates when exporting localizations.
+- [NSLocalizedStringFromTable](./nslocalizedstringfromtable.md)
+  Returns a localized version of a string from the table that you specify, which Xcode autogenerates when exporting localizations.
+- [NSLocalizedStringFromTableInBundle](./nslocalizedstringfromtableinbundle.md)
+  Returns a localized version of a string from the table and bundle that you specify, which Xcode autogenerates when exporting localizations.
+- [NSLocalizedStringWithDefaultValue](./nslocalizedstringwithdefaultvalue.md)
+  Returns a localized version of a string identified by a key in the table that you specify, which Xcode autogenerates when exporting localizations.
 ### Deprecated
 - [class NSLinguisticTagger](./nslinguistictagger.md)
   Analyze natural language text to tag part of speech and lexical class, identify names, perform lemmatization, and determine the language and script.

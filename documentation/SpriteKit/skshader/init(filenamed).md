@@ -42,6 +42,12 @@ A newly initialized shader object whose initial source is loaded from the shader
   Initializes a new shader object using the specified source and uniform data.
 - [init(source: String)](./init%28source%29.md)
   Initializes a new shader object using the specified source code.
+- [+ shaderWithSource:uniforms:](./shaderwithsource_uniforms_.md)
+  Creates a new shader object using the specified source and uniform data.
+- [+ shaderWithSource:](./shaderwithsource_.md)
+  Creates a new shader object using the specified source code.
+- [+ shader](./shader.md)
+  Creates a new empty shader object.
 
 
 ---

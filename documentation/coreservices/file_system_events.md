@@ -40,6 +40,8 @@ It also provides a lightweight way to determine whether the contents of a direct
 ### Enumerations
 - [FSEventStreamCreateFlags](./file_system_events/api-1455376-fseventstreamcreateflags.md)
 - [FSEventStreamEventFlags](./file_system_events/api-1455361-fseventstreameventflags.md)
+- [FSEventStreamCreateFlags](./api-1455376-fseventstreamcreateflags.md)
+- [FSEventStreamEventFlags](./api-1455361-fseventstreameventflags.md)
 ### Data Types
 - [typealias FSEventStreamCallback](./fseventstreamcallback.md)
 - [typealias FSEventStreamCreateFlags](./fseventstreamcreateflags.md)

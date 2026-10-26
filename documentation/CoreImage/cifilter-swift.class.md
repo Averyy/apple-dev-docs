@@ -97,6 +97,8 @@ Don’t use auto-synthesized instance variables, because their names are automat
   Creates a [`CIFilter`](./cifilter-swift.class.md) object for a specific kind of filter.
 - [init?(name: String, withInputParameters: [String : Any]?)](./cifilter-swift.class/init%28name,withinputparameters%29.md)
   Creates a [`CIFilter`](./cifilter-swift.class.md) object for a specific kind of filter and initializes the input values.
+- [+ filterWithName:keysAndValues:](./cifilter-swift.class/filterwithname_keysandvalues_.md)
+  Creates a [`CIFilter`](./cifilter-swift.class.md) object for a specific kind of filter and initializes the input values with a `nil`-terminated list of arguments.
 ### Configuring type-safe filters
 - [protocol CIFilterProtocol](./cifilterprotocol.md)
   The properties you use to configure a Core Image filter.
@@ -157,6 +159,8 @@ Don’t use auto-synthesized instance variables, because their names are automat
 ### Applying a filter
 - [func apply(CIKernel, arguments: [Any]?, options: [String : Any]?) -> CIImage?](./cifilter-swift.class/apply%28_,arguments,options%29.md)
   Produces a [`CIImage`](./ciimage.md) object by applying arguments to a kernel function and using options to control how the kernel function is evaluated.
+- [- apply:](./cifilter-swift.class/apply_.md)
+  Produces a [`CIImage`](./ciimage.md) object by applying a kernel function.
 ### Getting localized information for registered filters
 - [class func localizedName(forFilterName: String) -> String?](./cifilter-swift.class/localizedname%28forfiltername%29.md)
   Returns the localized name for the specified filter name.

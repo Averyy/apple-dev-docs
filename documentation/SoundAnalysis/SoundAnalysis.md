@@ -44,6 +44,8 @@ Identify specific sounds in your app, such as laughter or applause, by creating 
   The enumerated error codes that the Sound Analysis framework produces.
 - [let SNErrorDomain: String](./snerrordomain.md)
   A string that identifies the Sound Analysis error domain.
+### Macros
+- [SN_EXPORT](./sn_export.md)
 
 
 ---

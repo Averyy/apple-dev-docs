@@ -1,0 +1,35 @@
+# automaticTerminationOptOutCounter
+
+**Framework**: Foundation  
+**Kind**: ivar  
+**Role**: Instance Variable
+
+**Availability**:
+- iOS 2.0+
+- iPadOS 2.0+
+- Mac Catalyst 13.0+
+- macOS 10.0+
+- tvOS 9.0+
+- visionOS 1.0+
+- watchOS 2.0+
+
+## Declaration
+
+```c
+NSInteger automaticTerminationOptOutCounter;
+```
+
+## See Also
+
+### Controlling automatic termination
+- [func disableAutomaticTermination(String)](../processinfo/disableautomatictermination%28_%29.md)
+  Disables automatic termination for the application.
+- [func enableAutomaticTermination(String)](../processinfo/enableautomatictermination%28_%29.md)
+  Enables automatic termination for the application.
+- [var automaticTerminationSupportEnabled: Bool](../processinfo/automaticterminationsupportenabled.md)
+  A Boolean value indicating whether the app supports automatic termination.
+
+
+---
+
+*[View on Apple Developer](https://developer.apple.com/documentation/foundation/nsprocessinfo/automaticterminationoptoutcounter)*

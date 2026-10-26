@@ -35,6 +35,9 @@ typedef FFRAMPFORCE * PFFRAMPFORCE;
 - [typealias PFFEFFESCAPE](./pffeffescape.md)
 - [typealias PFFENVELOPE](./pffenvelope.md)
 - [typealias PFFPERIODIC](./pffperiodic.md)
+- [ForceFeedbackDeviceStatePtr](./forcefeedbackdevicestateptr.md)
+- [ForceFeedbackVersionPtr](./forcefeedbackversionptr.md)
+- [IOForceFeedbackDeviceInterfacePtr](./ioforcefeedbackdeviceinterfaceptr.md)
 
 
 ---

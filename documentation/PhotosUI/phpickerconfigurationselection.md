@@ -51,6 +51,14 @@ This enumeration defines the possible values of the photo picker configuration (
 - [Sendable](../Swift/sendable.md)
 - [SendableMetatype](../Swift/sendablemetatype.md)
 
+## See Also
+
+### Setting the selection limit
+- [selectionLimit](./phpickerconfiguration-c.class/selectionlimit.md)
+  The maximum number of selections the user can make.
+- [selection](./phpickerconfiguration-c.class/selection.md)
+  The selection behavior for the picker.
+
 
 ---
 

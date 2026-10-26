@@ -32,6 +32,8 @@ enum CTFontCollectionCopyOptions : uint32_t;
   Passing this option indicates that the return values should be sorted in standard UI order, suitable for display to the user. This is the same sorting behavior used by `NSFontPanel` and Font Book.
 - [static var unique: CTFontCollectionCopyOptions](./ctfontcollectioncopyoptions/unique.md)
   Passing this option indicates that duplicate values should be removed from the results.
+- [kCTFontCollectionCopyDefaultOptions](./ctfontcollectioncopyoptions/kctfontcollectioncopydefaultoptions.md)
+  Passing this option indicates that defaults are to be used.
 ### Initializers
 - [init(rawValue: UInt32)](./ctfontcollectioncopyoptions/init%28rawvalue%29.md)
   Creates a copy options structure with the specified raw value.

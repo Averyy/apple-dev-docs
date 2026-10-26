@@ -40,6 +40,8 @@ NSMutableString is “toll-free bridged” with its Core Foundation counterpart,
 ### Creating and Initializing a Mutable String
 - [init(capacity: Int)](./nsmutablestring/init%28capacity%29.md)
   Returns an `NSMutableString` object initialized with initial storage for a given number of characters,
+- [+ stringWithCapacity:](./nsmutablestring/stringwithcapacity_.md)
+  Returns an empty `NSMutableString` object with initial storage for a given number of characters.
 ### Modifying a String
 - [func append(String)](./nsmutablestring/append%28_%29.md)
   Adds to the end of the receiver the characters of a given string.
@@ -55,6 +57,8 @@ NSMutableString is “toll-free bridged” with its Core Foundation counterpart,
   Replaces all occurrences of a given string in a given range with another given string, returning the number of replacements.
 - [func setString(String)](./nsmutablestring/setstring%28_%29.md)
   Replaces the characters of the receiver with those in a given string.
+- [- appendFormat:](./nsmutablestring/appendformat_.md)
+  Adds a constructed string to the receiver.
 ### Constants
 - [String Transformations](./string-transformations.md)
   These constants specify transforms used by the [`applyTransform(_:reverse:range:updatedRange:)`](./nsmutablestring/applytransform%28_,reverse,range,updatedrange%29.md) method.
@@ -83,6 +87,12 @@ NSMutableString is “toll-free bridged” with its Core Foundation counterpart,
 - [NSSecureCoding](./nssecurecoding.md)
 - [Sendable](../Swift/sendable.md)
 - [SendableMetatype](../Swift/sendablemetatype.md)
+
+## See Also
+
+### Strings
+- [NSString](./nsstring.md)
+  A static, plain-text Unicode string object.
 
 
 ---

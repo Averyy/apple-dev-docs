@@ -34,6 +34,8 @@ Initialization reads in the document types from the `CFBundleDocumentTypes` prop
 ### Related Documentation
 - [Developing a Document-Based App](../developing-a-document-based-app.md)
   Write an app that creates, manages, edits, and saves text documents.
+- [- setShouldCreateUI:](./setshouldcreateui_.md)
+  Sets whether the window controllers of a document should be created when the document is created.
 
 
 ---

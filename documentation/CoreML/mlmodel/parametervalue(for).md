@@ -42,6 +42,8 @@ func parameterValue(for key: MLParameterKey) throws -> Any
   Information about a model, primarily the input and output format for each feature the model expects, and optional metadata.
 - [class MLParameterKey](../mlparameterkey.md)
   The keys for the parameter dictionary in a model configuration or a model update context.
+- [availableComputeDevices](./availablecomputedevices-42uzt.md)
+  The list of available compute devices that the model’s prediction can use.
 
 
 ---

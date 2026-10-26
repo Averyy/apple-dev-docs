@@ -35,6 +35,26 @@
       "file_path": "documentation/AVKit/adopting-the-system-player-interface-in-visionos.md",
       "hash": "0665a8888936b7abbb49b803f7e3c4ad623ad4f25e18dd59d1d6b4cff966cca3"
     },
+    "https://developer.apple.com/documentation/avkit/avaudiosessionrouteselection": {
+      "etag": "\"25cc-65d55ee369bd6-df\"",
+      "file_path": "documentation/AVKit/avaudiosessionrouteselection.md",
+      "hash": "ee5242599458233ada29b5fb59d5f2f428977d6e88b1cb17a7696a4b3586ae30"
+    },
+    "https://developer.apple.com/documentation/avkit/avaudiosessionrouteselection/avaudiosessionrouteselectionexternal": {
+      "etag": "\"137c-65d55ee310052-df\"",
+      "file_path": "documentation/AVKit/avaudiosessionrouteselection/avaudiosessionrouteselectionexternal.md",
+      "hash": "5857650f0793698ef7574efa57533325d1d1ae1b5b167c9d4b773b69bc265964"
+    },
+    "https://developer.apple.com/documentation/avkit/avaudiosessionrouteselection/avaudiosessionrouteselectionlocal": {
+      "etag": "\"1366-65d55ee310052-df\"",
+      "file_path": "documentation/AVKit/avaudiosessionrouteselection/avaudiosessionrouteselectionlocal.md",
+      "hash": "5dfa7b1ebd6e2f7ed92a03f93f2af75d759f228fdfecc331102db1dd8797ba6d"
+    },
+    "https://developer.apple.com/documentation/avkit/avaudiosessionrouteselection/avaudiosessionrouteselectionnone": {
+      "etag": "\"135a-65d55ee310052-df\"",
+      "file_path": "documentation/AVKit/avaudiosessionrouteselection/avaudiosessionrouteselectionnone.md",
+      "hash": "7b1c85ddae648069fe646c3b1e8c9537d0c5e08a18d08b9e76e703f3dd5385c5"
+    },
     "https://developer.apple.com/documentation/avkit/avcapturedevicedescriptor": {
       "etag": "\"639c-65d55ee3287e7-df\"",
       "file_path": "documentation/AVKit/avcapturedevicedescriptor.md",
@@ -485,6 +505,21 @@
       "file_path": "documentation/AVKit/avdisplaymanager/preferreddisplaycriteria.md",
       "hash": "dcfbc5ff5f8286d2df655088994ac1677a8bbd8fafc28c01651d2f76308f5210"
     },
+    "https://developer.apple.com/documentation/avkit/avdisplaymanagermodeswitchendnotification": {
+      "etag": "\"16d2-65d55ee24c80f-df\"",
+      "file_path": "documentation/AVKit/avdisplaymanagermodeswitchendnotification.md",
+      "hash": "611caa263d9ddb645e725e88dd1230d6b2c82292591dc9e551662273e4e30b8d"
+    },
+    "https://developer.apple.com/documentation/avkit/avdisplaymanagermodeswitchsettingschangednotification": {
+      "etag": "\"1733-65d55ee24c80f-df\"",
+      "file_path": "documentation/AVKit/avdisplaymanagermodeswitchsettingschangednotification.md",
+      "hash": "bbd2ca90819aca02070ca887460a2500438fe2b2b7d5765c565e818381e1ba55"
+    },
+    "https://developer.apple.com/documentation/avkit/avdisplaymanagermodeswitchstartnotification": {
+      "etag": "\"16e1-65d55ee222fe3-df\"",
+      "file_path": "documentation/AVKit/avdisplaymanagermodeswitchstartnotification.md",
+      "hash": "ff3b240a6a8728475db7820bd7128caa59c14d87784985844de7498ecc8400ab"
+    },
     "https://developer.apple.com/documentation/avkit/avexperiencecontroller": {
       "etag": "\"6430-65d55ee310052-df\"",
       "file_path": "documentation/AVKit/avexperiencecontroller.md",
@@ -835,6 +870,371 @@
       "file_path": "documentation/AVKit/avinputpickerinteraction/present().md",
       "hash": "8a47f3f522507f80eecde603da2142741e214de9cd14cd4dfb1d261ac32e3cf1"
     },
+    "https://developer.apple.com/documentation/avkit/avinterfacealbumartwork": {
+      "etag": "\"2699-65b79410ce693-df\"",
+      "file_path": "documentation/AVKit/avinterfacealbumartwork.md",
+      "hash": "5aac02393fdc35a755b4a8f1a92da640e16687254b779912246889aa5756c3f7"
+    },
+    "https://developer.apple.com/documentation/avkit/avinterfacealbumartwork/artworkwithurl:contenttype:size:": {
+      "etag": "\"200b-65b79411059cd-df\"",
+      "file_path": "documentation/AVKit/avinterfacealbumartwork/artworkwithurl_contenttype_size_.md",
+      "hash": "7779bb1abd2a4451c252b150b0f3c11d86c2b73b19c94c7823e1ee1f8fd1eeef"
+    },
+    "https://developer.apple.com/documentation/avkit/avinterfacealbumartwork/contenttype": {
+      "etag": "\"12d9-65b79411059cd-df\"",
+      "file_path": "documentation/AVKit/avinterfacealbumartwork/contenttype.md",
+      "hash": "f4b0d61fd3e3bf05030bb1bc2191950c709b0da8fae5fa23199a79db9d85f861"
+    },
+    "https://developer.apple.com/documentation/avkit/avinterfacealbumartwork/initwithurl:contenttype:size:": {
+      "etag": "\"1d8d-65b79411059cd-df\"",
+      "file_path": "documentation/AVKit/avinterfacealbumartwork/initwithurl_contenttype_size_.md",
+      "hash": "e31aed95399e6d265d9540aa67eb3180789df387794d0225aa2f950be38eb9aa"
+    },
+    "https://developer.apple.com/documentation/avkit/avinterfacealbumartwork/size": {
+      "etag": "\"100e-65b79411059cd-df\"",
+      "file_path": "documentation/AVKit/avinterfacealbumartwork/size.md",
+      "hash": "1acf2e06d402a8a05b52a9760977d85c57ea60b8506c2da95fd441c8308c9440"
+    },
+    "https://developer.apple.com/documentation/avkit/avinterfacealbumartwork/url": {
+      "etag": "\"10b8-65b79411059cd-df\"",
+      "file_path": "documentation/AVKit/avinterfacealbumartwork/url.md",
+      "hash": "851bc28d2732cc7b11f639099f2b29d7bfdf6721e72c98d5d0adf557671424e0"
+    },
+    "https://developer.apple.com/documentation/avkit/avinterfacecontrollable": {
+      "etag": "\"1dd9-65b7941004b43-df\"",
+      "file_path": "documentation/AVKit/avinterfacecontrollable.md",
+      "hash": "9964daa9bbcf99a63dec06ec3887f92fab52ba900bca5a83c44a2b507d28e364"
+    },
+    "https://developer.apple.com/documentation/avkit/avinterfacemediaselectioncontrollable": {
+      "etag": "\"22f6-65b79410ce693-df\"",
+      "file_path": "documentation/AVKit/avinterfacemediaselectioncontrollable.md",
+      "hash": "2e22141ac5388384d2790535eedd34eb79be5f0c9b34a6576a43245d0970b71f"
+    },
+    "https://developer.apple.com/documentation/avkit/avinterfacemediaselectioncontrollable/audiooptions": {
+      "etag": "\"1183-65b79410f0623-df\"",
+      "file_path": "documentation/AVKit/avinterfacemediaselectioncontrollable/audiooptions.md",
+      "hash": "98e9424116bebe7c709d5810b5c479df66526ebc0bc06088a295de354927426d"
+    },
+    "https://developer.apple.com/documentation/avkit/avinterfacemediaselectioncontrollable/currentaudiooption": {
+      "etag": "\"1333-65b79410f0623-df\"",
+      "file_path": "documentation/AVKit/avinterfacemediaselectioncontrollable/currentaudiooption.md",
+      "hash": "8b57e7c60a4baa6e7db96d6f6fcc35d848dc254337e8d46c0a6547a72f89e9d0"
+    },
+    "https://developer.apple.com/documentation/avkit/avinterfacemediaselectioncontrollable/currentlegibleoption": {
+      "etag": "\"1385-65b79410f0623-df\"",
+      "file_path": "documentation/AVKit/avinterfacemediaselectioncontrollable/currentlegibleoption.md",
+      "hash": "11a0197195043d683f12608b9678ab9eed3c2ed82c89d72cc1bf1c3a86cbe195"
+    },
+    "https://developer.apple.com/documentation/avkit/avinterfacemediaselectioncontrollable/legibleoptions": {
+      "etag": "\"10b3-65b79410f0623-df\"",
+      "file_path": "documentation/AVKit/avinterfacemediaselectioncontrollable/legibleoptions.md",
+      "hash": "7694cede758ea71b3ca95f47e2d2d7d1545337589aa25319a3a4dd692f98936f"
+    },
+    "https://developer.apple.com/documentation/avkit/avinterfacemediaselectionoptionsource": {
+      "etag": "\"2686-65b79410b2e69-df\"",
+      "file_path": "documentation/AVKit/avinterfacemediaselectionoptionsource.md",
+      "hash": "4ac96006309f858e409a9a636c3f1914c0f2ddf67d1d9d60c17c9ec402dd345d"
+    },
+    "https://developer.apple.com/documentation/avkit/avinterfacemediaselectionoptionsource/displayname": {
+      "etag": "\"122d-65b79410b2e69-df\"",
+      "file_path": "documentation/AVKit/avinterfacemediaselectionoptionsource/displayname.md",
+      "hash": "d9bc6c6843ab6e5e543fcdce593795d2ba9c0284bc54626c3ade8d5aa25e449a"
+    },
+    "https://developer.apple.com/documentation/avkit/avinterfacemediaselectionoptionsource/extendedlanguagetag": {
+      "etag": "\"14fc-65b79410b2e69-df\"",
+      "file_path": "documentation/AVKit/avinterfacemediaselectionoptionsource/extendedlanguagetag.md",
+      "hash": "1a7fcec184431affbbd81c64be279a2dad5b50136998cac752aee3e5b68f4f9b"
+    },
+    "https://developer.apple.com/documentation/avkit/avinterfacemediaselectionoptionsource/identifier": {
+      "etag": "\"11cb-65b79410b2e69-df\"",
+      "file_path": "documentation/AVKit/avinterfacemediaselectionoptionsource/identifier.md",
+      "hash": "70f3622ed8a0acdec2145eb1b066f29cb9f21462ad6bc5a2c620278b96ffa223"
+    },
+    "https://developer.apple.com/documentation/avkit/avinterfacemediaselectionoptionsource/initwithdisplayname:identifier:extendedlanguagetag:": {
+      "etag": "\"17fe-65b79410b2e69-df\"",
+      "file_path": "documentation/AVKit/avinterfacemediaselectionoptionsource/initwithdisplayname_identifier_extendedlanguagetag_.md",
+      "hash": "b823407c6101584cda876e663bb40cf94f8d256c6a59acb505981d996e4abaf4"
+    },
+    "https://developer.apple.com/documentation/avkit/avinterfacemetadata": {
+      "etag": "\"2d31-65b79410f0623-df\"",
+      "file_path": "documentation/AVKit/avinterfacemetadata.md",
+      "hash": "9b5164acd0e228e16aa2aa0fed49c85d1df35f8e4092f0d195247767e1b1a280"
+    },
+    "https://developer.apple.com/documentation/avkit/avinterfacemetadata/albumartworkrepresentations": {
+      "etag": "\"116d-65b7941160707-df\"",
+      "file_path": "documentation/AVKit/avinterfacemetadata/albumartworkrepresentations.md",
+      "hash": "8e0b3104d72da0127beabf5999724f4f32f8b60852a93d64a0daf43b5714942d"
+    },
+    "https://developer.apple.com/documentation/avkit/avinterfacemetadata/audioonly": {
+      "etag": "\"1167-65b7941160707-df\"",
+      "file_path": "documentation/AVKit/avinterfacemetadata/audioonly.md",
+      "hash": "e06cc2c9a62f47918cbe57220a45c7a1adbd5343238580455e37c6869e14ecd7"
+    },
+    "https://developer.apple.com/documentation/avkit/avinterfacemetadata/initwithaudioonly:presentationsize:title:subtitle:albumartworkrepresentations:": {
+      "etag": "\"205c-65b7941160707-df\"",
+      "file_path": "documentation/AVKit/avinterfacemetadata/initwithaudioonly_presentationsize_title_subtitle_albumartworkrepresentations_.md",
+      "hash": "37fab78c08a54c69f75aa248271f7ca37d385fc3637437abad607fcb70467905"
+    },
+    "https://developer.apple.com/documentation/avkit/avinterfacemetadata/initwithtemplate:": {
+      "etag": "\"150a-65b7941160707-df\"",
+      "file_path": "documentation/AVKit/avinterfacemetadata/initwithtemplate_.md",
+      "hash": "03fd77f1f0e823ca06fdf944cbc2cf3eb706e659117c2c75ddba5042f7f3b858"
+    },
+    "https://developer.apple.com/documentation/avkit/avinterfacemetadata/presentationsize": {
+      "etag": "\"128c-65b7941160707-df\"",
+      "file_path": "documentation/AVKit/avinterfacemetadata/presentationsize.md",
+      "hash": "5497836c3eeb4212bdf1c9eb97703cd2eec539ae0154fa4ee2dace065c85976b"
+    },
+    "https://developer.apple.com/documentation/avkit/avinterfacemetadata/subtitle": {
+      "etag": "\"125f-65b7941160707-df\"",
+      "file_path": "documentation/AVKit/avinterfacemetadata/subtitle.md",
+      "hash": "16bde76dc57e139b072585f78e73cd01c78a220ecf35cbc9121d4ef42298da5b"
+    },
+    "https://developer.apple.com/documentation/avkit/avinterfacemetadata/title": {
+      "etag": "\"1225-65b7941160707-df\"",
+      "file_path": "documentation/AVKit/avinterfacemetadata/title.md",
+      "hash": "23352088d15c561557a6f92a2a1568bd9684a7a1e22058c11fcb8a52755ba1f9"
+    },
+    "https://developer.apple.com/documentation/avkit/avinterfacemetadataproviding": {
+      "etag": "\"165d-65b7940ff0b5c-df\"",
+      "file_path": "documentation/AVKit/avinterfacemetadataproviding.md",
+      "hash": "b0899911a7fbeb5712c0dac37b2b0f8c9c24c0f39345d2b66a5cf394bf326f1d"
+    },
+    "https://developer.apple.com/documentation/avkit/avinterfacemetadataproviding/metadata": {
+      "etag": "\"1034-65b79410ce693-df\"",
+      "file_path": "documentation/AVKit/avinterfacemetadataproviding/metadata.md",
+      "hash": "0575c06fcbd59576ef6fdc6c9714640a7d3bf937e7972b8913179d8405601f3e"
+    },
+    "https://developer.apple.com/documentation/avkit/avinterfacemetadatatemplate": {
+      "etag": "\"2edd-65b794101c499-df\"",
+      "file_path": "documentation/AVKit/avinterfacemetadatatemplate.md",
+      "hash": "9934a7d5efc6c4d50650a0f7cabc422648abdb91a2c2847d17f626124cdd2cad"
+    },
+    "https://developer.apple.com/documentation/avkit/avinterfacemetadatatemplate/albumartworkrepresentations": {
+      "etag": "\"11ce-65b7940ff0b5c-df\"",
+      "file_path": "documentation/AVKit/avinterfacemetadatatemplate/albumartworkrepresentations.md",
+      "hash": "5e89dc92be62730dc8b654a2f6a3e8bc800b427fdb61741c2861a8adcd4e87e0"
+    },
+    "https://developer.apple.com/documentation/avkit/avinterfacemetadatatemplate/audioonly": {
+      "etag": "\"11c8-65b7940ff0b5c-df\"",
+      "file_path": "documentation/AVKit/avinterfacemetadatatemplate/audioonly.md",
+      "hash": "dcfad27360bed35297bcd2c5feac66938b84812c997eed91eefff2f337de147f"
+    },
+    "https://developer.apple.com/documentation/avkit/avinterfacemetadatatemplate/presentationsize": {
+      "etag": "\"12ed-65b7940ff0b5c-df\"",
+      "file_path": "documentation/AVKit/avinterfacemetadatatemplate/presentationsize.md",
+      "hash": "c5ee5a77064938f38d666312838c5b15e07c6e79042a95cdf68c96050ba221a8"
+    },
+    "https://developer.apple.com/documentation/avkit/avinterfacemetadatatemplate/subtitle": {
+      "etag": "\"12c0-65b7940ff0b5c-df\"",
+      "file_path": "documentation/AVKit/avinterfacemetadatatemplate/subtitle.md",
+      "hash": "95c8dd03a4f7e8bab430368064fbf2d8ac945e5556ee65ffcfcdf4d904a583e8"
+    },
+    "https://developer.apple.com/documentation/avkit/avinterfacemetadatatemplate/title": {
+      "etag": "\"1286-65b7940ff0b5c-df\"",
+      "file_path": "documentation/AVKit/avinterfacemetadatatemplate/title.md",
+      "hash": "bc6d05f8e01dbe7c62e6eea6d4b51175ae820c61aadd73919eb9d10f3574114e"
+    },
+    "https://developer.apple.com/documentation/avkit/avinterfaceplaybackcontrollable": {
+      "etag": "\"3242-65b79410b2e69-df\"",
+      "file_path": "documentation/AVKit/avinterfaceplaybackcontrollable.md",
+      "hash": "c8d864ab6f6217bde8e57e2f4ac92eaf775217db97d13318459604fef7f219cd"
+    },
+    "https://developer.apple.com/documentation/avkit/avinterfaceplaybackcontrollable/buffering": {
+      "etag": "\"10e1-65b79411059cd-df\"",
+      "file_path": "documentation/AVKit/avinterfaceplaybackcontrollable/buffering.md",
+      "hash": "7bf6c7d9474db0f8aa6bf40cbc79bcda38ace5988487aea248d3c2169b96b90e"
+    },
+    "https://developer.apple.com/documentation/avkit/avinterfaceplaybackcontrollable/containslivestreamingcontent": {
+      "etag": "\"1102-65b79411059cd-df\"",
+      "file_path": "documentation/AVKit/avinterfaceplaybackcontrollable/containslivestreamingcontent.md",
+      "hash": "03f0f64f5b4894f0e943f5ef9a1a07a53549e5876e60452d6427f354c2e7cf6d"
+    },
+    "https://developer.apple.com/documentation/avkit/avinterfaceplaybackcontrollable/defaultplaybackspeed": {
+      "etag": "\"fcd-65b79411059cd-df\"",
+      "file_path": "documentation/AVKit/avinterfaceplaybackcontrollable/defaultplaybackspeed.md",
+      "hash": "40b12d0c20db3926c3cc1a0b08a076476c02c1418f61da03fb598d03429ba44c"
+    },
+    "https://developer.apple.com/documentation/avkit/avinterfaceplaybackcontrollable/playbackerror": {
+      "etag": "\"121c-65b79411059cd-df\"",
+      "file_path": "documentation/AVKit/avinterfaceplaybackcontrollable/playbackerror.md",
+      "hash": "d01884e1f03855f5a1342b47b1cfcd102e58890f6b53ceba62490a342bfd25d9"
+    },
+    "https://developer.apple.com/documentation/avkit/avinterfaceplaybackcontrollable/playbackspeed": {
+      "etag": "\"ed4-65b79411059cd-df\"",
+      "file_path": "documentation/AVKit/avinterfaceplaybackcontrollable/playbackspeed.md",
+      "hash": "0a106f4980bc60d120c6d4d1bfd1e25d8419e77fcac7bfd2f7d401d02e5bab1e"
+    },
+    "https://developer.apple.com/documentation/avkit/avinterfaceplaybackcontrollable/playing": {
+      "etag": "\"105c-65b79411059cd-df\"",
+      "file_path": "documentation/AVKit/avinterfaceplaybackcontrollable/playing.md",
+      "hash": "28e677cbb59c966aafb265f6d9d9016e1202b1b3cca76dba1d1a8dd221660882"
+    },
+    "https://developer.apple.com/documentation/avkit/avinterfaceplaybackcontrollable/ready": {
+      "etag": "\"1205-65b79411059cd-df\"",
+      "file_path": "documentation/AVKit/avinterfaceplaybackcontrollable/ready.md",
+      "hash": "77dedf4e6341a111a8a409fa863b38ffee4bc985a0ae5a3857a66e70f5c1971e"
+    },
+    "https://developer.apple.com/documentation/avkit/avinterfaceplaybackcontrollable/scanspeed": {
+      "etag": "\"e6c-65b79411059cd-df\"",
+      "file_path": "documentation/AVKit/avinterfaceplaybackcontrollable/scanspeed.md",
+      "hash": "2278c5d8e309e31e9981c05fd744962543a35c4f0224c14071dc548f40c6e623"
+    },
+    "https://developer.apple.com/documentation/avkit/avinterfaceplaybackcontrollable/state": {
+      "etag": "\"fbf-65b79411059cd-df\"",
+      "file_path": "documentation/AVKit/avinterfaceplaybackcontrollable/state.md",
+      "hash": "5d7b004577340ccdd8ba143f22b5e102390d572cf537313f6246be82a3f09e8e"
+    },
+    "https://developer.apple.com/documentation/avkit/avinterfaceplaybackcontrollable/supportedseekcapabilities": {
+      "etag": "\"1451-65b79411059cd-df\"",
+      "file_path": "documentation/AVKit/avinterfaceplaybackcontrollable/supportedseekcapabilities.md",
+      "hash": "249587d9cff9f4fea1314fdf961db5c2e6fb519cdc8b316ede1425672fc5372e"
+    },
+    "https://developer.apple.com/documentation/avkit/avinterfaceplaybackstate": {
+      "etag": "\"1657-65b79410ce693-df\"",
+      "file_path": "documentation/AVKit/avinterfaceplaybackstate.md",
+      "hash": "8169ef66049cf9fd76b298c1bcf56af8ac572c211789756fea7e1f1640a59d71"
+    },
+    "https://developer.apple.com/documentation/avkit/avinterfaceplaybackstate/avinterfaceplaybackstatenormal": {
+      "etag": "\"c9c-65b7941033d6e-df\"",
+      "file_path": "documentation/AVKit/avinterfaceplaybackstate/avinterfaceplaybackstatenormal.md",
+      "hash": "e38fafde12c07ee91732b4d9de726687781d6cd8cfdd8bcf3f28193cc14a7e08"
+    },
+    "https://developer.apple.com/documentation/avkit/avinterfaceplaybackstate/avinterfaceplaybackstatescanning": {
+      "etag": "\"cf8-65b7941033d6e-df\"",
+      "file_path": "documentation/AVKit/avinterfaceplaybackstate/avinterfaceplaybackstatescanning.md",
+      "hash": "a2398146d6fab434debfee295dec25c59c8869a14db9032256e1afe4ad66bf77"
+    },
+    "https://developer.apple.com/documentation/avkit/avinterfaceplaybackstate/avinterfaceplaybackstatescrubbing": {
+      "etag": "\"d06-65b7941033d6e-df\"",
+      "file_path": "documentation/AVKit/avinterfaceplaybackstate/avinterfaceplaybackstatescrubbing.md",
+      "hash": "b0154e760d9c76894bb512af7be591d20b2e64fb8c53219440d1dde2d416645c"
+    },
+    "https://developer.apple.com/documentation/avkit/avinterfaceseekcapabilities": {
+      "etag": "\"1b54-65b7941160707-df\"",
+      "file_path": "documentation/AVKit/avinterfaceseekcapabilities.md",
+      "hash": "1e9477295598c735b78d7ef0e8cb185bd1df67677c96bc7b81b640b2c1022cd9"
+    },
+    "https://developer.apple.com/documentation/avkit/avinterfaceseekcapabilities/avinterfaceseekcapabilitiesnone": {
+      "etag": "\"cf1-65b7941160707-df\"",
+      "file_path": "documentation/AVKit/avinterfaceseekcapabilities/avinterfaceseekcapabilitiesnone.md",
+      "hash": "0995e64d4dc57941d19c0348f2cf63daeb701e1e7c1a965fc50e9f03b31009ec"
+    },
+    "https://developer.apple.com/documentation/avkit/avinterfaceseekcapabilities/avinterfaceseekcapabilitiesscanbackward": {
+      "etag": "\"e29-65b7941160707-df\"",
+      "file_path": "documentation/AVKit/avinterfaceseekcapabilities/avinterfaceseekcapabilitiesscanbackward.md",
+      "hash": "fd8bd0716bb424d6a6d57c66e1191d3b0acc7cdeace1f73227a9648ed16bdd54"
+    },
+    "https://developer.apple.com/documentation/avkit/avinterfaceseekcapabilities/avinterfaceseekcapabilitiesscanforward": {
+      "etag": "\"e17-65b7941160707-df\"",
+      "file_path": "documentation/AVKit/avinterfaceseekcapabilities/avinterfaceseekcapabilitiesscanforward.md",
+      "hash": "1f43f75e1e3bcbd1692a5020f3216168aa32956e2175c71ac2546af109106c6c"
+    },
+    "https://developer.apple.com/documentation/avkit/avinterfaceseekcapabilities/avinterfaceseekcapabilitiesseek": {
+      "etag": "\"db1-65b7941160707-df\"",
+      "file_path": "documentation/AVKit/avinterfaceseekcapabilities/avinterfaceseekcapabilitiesseek.md",
+      "hash": "2cc94e66d834483594aa1c944d6e91b3ecfe844c2cd3caab4f57976b16d2b04b"
+    },
+    "https://developer.apple.com/documentation/avkit/avinterfacetimecontrollable": {
+      "etag": "\"27c9-65b79410ce693-df\"",
+      "file_path": "documentation/AVKit/avinterfacetimecontrollable.md",
+      "hash": "53606c5ff23d06eabd9e760f9511dd1781923ed7c1571d1bb2626f9901e3e973"
+    },
+    "https://developer.apple.com/documentation/avkit/avinterfacetimecontrollable/currentplaybackposition": {
+      "etag": "\"1331-65b7941004b43-df\"",
+      "file_path": "documentation/AVKit/avinterfacetimecontrollable/currentplaybackposition.md",
+      "hash": "d0eecfc03d6982c78b1746088480e128301d1785fcc48002908c42b38e20da0e"
+    },
+    "https://developer.apple.com/documentation/avkit/avinterfacetimecontrollable/currentsegment": {
+      "etag": "\"12c1-65b7941004b43-df\"",
+      "file_path": "documentation/AVKit/avinterfacetimecontrollable/currentsegment.md",
+      "hash": "1a6a72a6f8ebcbb4a739a5e85f60887f9ba9d2089dbdb40ff2e2cd2b1e213fc6"
+    },
+    "https://developer.apple.com/documentation/avkit/avinterfacetimecontrollable/seekabletimeranges": {
+      "etag": "\"1605-65b7941004b43-df\"",
+      "file_path": "documentation/AVKit/avinterfacetimecontrollable/seekabletimeranges.md",
+      "hash": "c6cd8b43fbcdab2ec7413041b8ab7441665c50a6ed13bc56a6ca7b1f4271098a"
+    },
+    "https://developer.apple.com/documentation/avkit/avinterfacetimecontrollable/segments": {
+      "etag": "\"1057-65b7941004b43-df\"",
+      "file_path": "documentation/AVKit/avinterfacetimecontrollable/segments.md",
+      "hash": "a993379460b648571cf6a2be75957cc3ae9d84a7fdf4689616db657a608ffeb2"
+    },
+    "https://developer.apple.com/documentation/avkit/avinterfacetimecontrollable/timerange": {
+      "etag": "\"1257-65b7941004b43-df\"",
+      "file_path": "documentation/AVKit/avinterfacetimecontrollable/timerange.md",
+      "hash": "cb8d5543ba4e93d7f858d7a2c437d59d6a34880b62f2704604b84281b28f007f"
+    },
+    "https://developer.apple.com/documentation/avkit/avinterfacetimelinesegment": {
+      "etag": "\"2aaf-65b7941049b07-df\"",
+      "file_path": "documentation/AVKit/avinterfacetimelinesegment.md",
+      "hash": "680e81d9ed08051a69f7f02454d8490ce13950b0479da2b7f6e3aba6b6503c54"
+    },
+    "https://developer.apple.com/documentation/avkit/avinterfacetimelinesegment/auxiliarycontent": {
+      "etag": "\"1164-65b79410ce693-df\"",
+      "file_path": "documentation/AVKit/avinterfacetimelinesegment/auxiliarycontent.md",
+      "hash": "95432bc967a004a97eb3b62821637a34028c92d4f76467eb9d1601d216c3685e"
+    },
+    "https://developer.apple.com/documentation/avkit/avinterfacetimelinesegment/identifier": {
+      "etag": "\"11dd-65b79410ce693-df\"",
+      "file_path": "documentation/AVKit/avinterfacetimelinesegment/identifier.md",
+      "hash": "5004d57aa04e61714bf90dc40245da8ef359426138b64fa9d7a27c1279cb41eb"
+    },
+    "https://developer.apple.com/documentation/avkit/avinterfacetimelinesegment/initwithtimerange:auxiliarycontent:marked:requireslinearplayback:identifier:": {
+      "etag": "\"20f7-65b79410ce693-df\"",
+      "file_path": "documentation/AVKit/avinterfacetimelinesegment/initwithtimerange_auxiliarycontent_marked_requireslinearplayback_identifier_.md",
+      "hash": "ab5380893014844aeb0847f10a8425e7a8f3ee5a8169cfcbb70b125873fdace4"
+    },
+    "https://developer.apple.com/documentation/avkit/avinterfacetimelinesegment/marked": {
+      "etag": "\"fe2-65b79410ce693-df\"",
+      "file_path": "documentation/AVKit/avinterfacetimelinesegment/marked.md",
+      "hash": "af95c8fe024ee271bc8665ffecc68dd089b5bee3d9a34e635dd176fdf59fef0e"
+    },
+    "https://developer.apple.com/documentation/avkit/avinterfacetimelinesegment/requireslinearplayback": {
+      "etag": "\"1094-65b79410ce693-df\"",
+      "file_path": "documentation/AVKit/avinterfacetimelinesegment/requireslinearplayback.md",
+      "hash": "5ef78ea990b948de39309f12fe4270ac5e6a589b16efec202d6c58b4f5570d54"
+    },
+    "https://developer.apple.com/documentation/avkit/avinterfacetimelinesegment/timerange": {
+      "etag": "\"10fa-65b79410ce693-df\"",
+      "file_path": "documentation/AVKit/avinterfacetimelinesegment/timerange.md",
+      "hash": "08f0800f634e24cd3c020604d880d4ccc93dc8240bb808146e06140751c7909c"
+    },
+    "https://developer.apple.com/documentation/avkit/avinterfaceurlalbumartwork": {
+      "etag": "\"125c-65b7940fdd010-df\"",
+      "file_path": "documentation/AVKit/avinterfaceurlalbumartwork.md",
+      "hash": "fa05ccb882ec692a7674086299d93abf6dc7fe1f85dc0ab69693dd6bee525ff8"
+    },
+    "https://developer.apple.com/documentation/avkit/avinterfaceurlalbumartwork/contenttype": {
+      "etag": "\"12c4-65b794101c499-df\"",
+      "file_path": "documentation/AVKit/avinterfaceurlalbumartwork/contenttype.md",
+      "hash": "bc3e3ab9efebb3326ebf0f175f9b501ebc259f4efc585a3a1ce17e2bbac85e9c"
+    },
+    "https://developer.apple.com/documentation/avkit/avinterfaceurlalbumartwork/url": {
+      "etag": "\"10a3-65b794101c499-df\"",
+      "file_path": "documentation/AVKit/avinterfaceurlalbumartwork/url.md",
+      "hash": "125d1911ba22681d35a6075296be1b3b391382872e9ce20ae4480f88598d4079"
+    },
+    "https://developer.apple.com/documentation/avkit/avinterfacevolumecontrollable": {
+      "etag": "\"1c16-65b79411059cd-df\"",
+      "file_path": "documentation/AVKit/avinterfacevolumecontrollable.md",
+      "hash": "71a912b043c695656a4ce54b939ea70dfd85b1f85badd6803a0f5c14253b7b3e"
+    },
+    "https://developer.apple.com/documentation/avkit/avinterfacevolumecontrollable/hasaudio": {
+      "etag": "\"1052-65b79410ce693-df\"",
+      "file_path": "documentation/AVKit/avinterfacevolumecontrollable/hasaudio.md",
+      "hash": "2013bee5f0b57663a060b2ae9c2af4fb22e258480b1cc7a7df51f3f69a08adf9"
+    },
+    "https://developer.apple.com/documentation/avkit/avinterfacevolumecontrollable/muted": {
+      "etag": "\"104e-65b79410ce693-df\"",
+      "file_path": "documentation/AVKit/avinterfacevolumecontrollable/muted.md",
+      "hash": "fe69ef7870289a9f2981a7a36d21336ffd50d2fab2891bc36a9796fa3d8e0781"
+    },
+    "https://developer.apple.com/documentation/avkit/avinterfacevolumecontrollable/volume": {
+      "etag": "\"ee6-65b79410ce693-df\"",
+      "file_path": "documentation/AVKit/avinterfacevolumecontrollable/volume.md",
+      "hash": "40dc2215e09960b7fc063d6f404f45ca2009ac18b082f98e20b80bea74006231"
+    },
     "https://developer.apple.com/documentation/avkit/avinterstitialtimerange": {
       "etag": "\"5b7e-65d55ee2d9b5f-df\"",
       "file_path": "documentation/AVKit/avinterstitialtimerange.md",
@@ -874,6 +1274,56 @@
       "etag": "\"d209-65b7941004b43-df\"",
       "file_path": "documentation/AVKit/avkit-playback-interfaces.md",
       "hash": "7ff20cd910ccfbb6d3bc30589e53430c8cd74e2d0ab99b332dbe07b2449e4442"
+    },
+    "https://developer.apple.com/documentation/avkit/avkit_exclude_vision_os_api_available": {
+      "etag": "\"2400-65d55ee310052-df\"",
+      "file_path": "documentation/AVKit/avkit_exclude_vision_os_api_available.md",
+      "hash": "cd239698e83d2bed344b5e86260ef23d276cfa76b34beae30dfe8c7a8e938901"
+    },
+    "https://developer.apple.com/documentation/avkit/avkit_exclude_vision_os_api_unavailable": {
+      "etag": "\"240c-65d55ee356eab-df\"",
+      "file_path": "documentation/AVKit/avkit_exclude_vision_os_api_unavailable.md",
+      "hash": "342f63e1b5ada6ee47b84be1c897e7d9a9631ec0087b9b4aa47bf66ff236f1cc"
+    },
+    "https://developer.apple.com/documentation/avkit/avkit_exclude_vision_os_extern": {
+      "etag": "\"23b7-65d55ee2d9b5f-df\"",
+      "file_path": "documentation/AVKit/avkit_exclude_vision_os_extern.md",
+      "hash": "a1cf599eed0c86bf37faf51d241cc0520f037be257bc1059188d9c21b762e1dd"
+    },
+    "https://developer.apple.com/documentation/avkit/avkit_extern": {
+      "etag": "\"234b-65d55ee356eab-df\"",
+      "file_path": "documentation/AVKit/avkit_extern.md",
+      "hash": "d1ee2a7eee2a509850dccd2133f65a103c1f97753329c1b037a76c8b1880f104"
+    },
+    "https://developer.apple.com/documentation/avkit/avkit_init_unavailable": {
+      "etag": "\"2387-65d55ee37fded-df\"",
+      "file_path": "documentation/AVKit/avkit_init_unavailable.md",
+      "hash": "665e7538492c7378009211c5ca75c884488640e3baee108caf7b8b165b3915ed"
+    },
+    "https://developer.apple.com/documentation/avkit/avkit_only_api_available": {
+      "etag": "\"23b2-65d55ee33f4ec-df\"",
+      "file_path": "documentation/AVKit/avkit_only_api_available.md",
+      "hash": "6ad5e2dba0eff747c4dfde40949a0a0bc1968c168c3e2bb35dc03cec29914a13"
+    },
+    "https://developer.apple.com/documentation/avkit/avkit_only_api_deprecated_with_replacement": {
+      "etag": "\"241e-65d55ee310052-df\"",
+      "file_path": "documentation/AVKit/avkit_only_api_deprecated_with_replacement.md",
+      "hash": "c1711b7333c065137c7e4a7a56a0224a3c627f7c8ec1548de850ba3328badecb"
+    },
+    "https://developer.apple.com/documentation/avkit/avkit_only_api_unavailable": {
+      "etag": "\"23be-65d55ee310052-df\"",
+      "file_path": "documentation/AVKit/avkit_only_api_unavailable.md",
+      "hash": "b9480f5c18ec969cd1d5a91ba1523d2ac4ddec41c1cc7dde19ad353f35b78be6"
+    },
+    "https://developer.apple.com/documentation/avkit/avkit_only_extern": {
+      "etag": "\"2369-65d55ee37fded-df\"",
+      "file_path": "documentation/AVKit/avkit_only_extern.md",
+      "hash": "460bf09958e4bfc4a849a524a3ccc7fc75e78e7660c3a73086e85d6617e5ba3b"
+    },
+    "https://developer.apple.com/documentation/avkit/avkiterror-c.enum/avkiterrorrecordingfailed": {
+      "etag": "\"e5b-65b7941061733-df\"",
+      "file_path": "documentation/AVKit/avkiterror-c.enum/avkiterrorrecordingfailed.md",
+      "hash": "ad190363d4e135ebda97ee355aac1927e325462c3431152f1eaadcbe6f26f2e4"
     },
     "https://developer.apple.com/documentation/avkit/avkiterror-swift.struct": {
       "etag": "\"2952-65d55ee356eab-df\"",
@@ -989,6 +1439,21 @@
       "etag": "\"2c0c-65d55ee20d2d9-df\"",
       "file_path": "documentation/AVKit/avkitmetadataidentifierserviceidentifier.md",
       "hash": "70c4cdac2def7769177435ace39dbe049da05f2916328fa9f7c0d44710bbd6a2"
+    },
+    "https://developer.apple.com/documentation/avkit/avkitplatformcolorclass": {
+      "etag": "\"238d-65d55ee2f3b37-df\"",
+      "file_path": "documentation/AVKit/avkitplatformcolorclass.md",
+      "hash": "5bd715563eb8fd63049118490b25680e1e463c992606cf644fd2f81df66a8d89"
+    },
+    "https://developer.apple.com/documentation/avkit/avkitplatformfontclass": {
+      "etag": "\"2387-65d55ee23b42e-df\"",
+      "file_path": "documentation/AVKit/avkitplatformfontclass.md",
+      "hash": "583548349345a2dbcf1da8c1e1392c10c5c945828a9c64be485713d07401599a"
+    },
+    "https://developer.apple.com/documentation/avkit/avkitplatformviewclass": {
+      "etag": "\"2387-65d55ee37fded-df\"",
+      "file_path": "documentation/AVKit/avkitplatformviewclass.md",
+      "hash": "5f4979dcd5cc5dec46fa758137abf0e10b386f7996c831117ddb1e7e24f9d13d"
     },
     "https://developer.apple.com/documentation/avkit/avlegiblemediaoptionsmenucontroller": {
       "etag": "\"678c-65d55ee310052-df\"",
@@ -1430,6 +1895,41 @@
       "file_path": "documentation/AVKit/avplaybackuserinterfacecontentartwork/size.md",
       "hash": "a79ff5056b551d67a33fec321c6cdeaac03c24edcc26691531bdfe3087870c95"
     },
+    "https://developer.apple.com/documentation/avkit/avplaybackuserinterfacecontentmetadata-c.class": {
+      "etag": "\"4098-65d55ee3287e7-df\"",
+      "file_path": "documentation/AVKit/avplaybackuserinterfacecontentmetadata-c.class.md",
+      "hash": "f68f306623114c2ac40d9dce1d777137d9b33cb65db18b54fbfc1bd99c3e5414"
+    },
+    "https://developer.apple.com/documentation/avkit/avplaybackuserinterfacecontentmetadata-c.class/artworkrepresentations": {
+      "etag": "\"1306-65d55ee310052-df\"",
+      "file_path": "documentation/AVKit/avplaybackuserinterfacecontentmetadata-c.class/artworkrepresentations.md",
+      "hash": "8604d244079578c7eb79c0fcd90c39a0f4b329bb1ea269b8340e5da720a1e2f5"
+    },
+    "https://developer.apple.com/documentation/avkit/avplaybackuserinterfacecontentmetadata-c.class/initwithtemplate:": {
+      "etag": "\"1866-65d55ee310052-df\"",
+      "file_path": "documentation/AVKit/avplaybackuserinterfacecontentmetadata-c.class/initwithtemplate_.md",
+      "hash": "839462100322458d4f2c14d8fab7851138a9721cb4b37a5a9c93f1b5d30bbd9b"
+    },
+    "https://developer.apple.com/documentation/avkit/avplaybackuserinterfacecontentmetadata-c.class/initwithvideoproperties:title:subtitle:artworkrepresentations:": {
+      "etag": "\"1e1e-65d55ee2f3b37-df\"",
+      "file_path": "documentation/AVKit/avplaybackuserinterfacecontentmetadata-c.class/initwithvideoproperties_title_subtitle_artworkrepresentations_.md",
+      "hash": "c86422ee34aacf14ac06dc217458443fbdd8858e4a95eade96bc27e52228ef8e"
+    },
+    "https://developer.apple.com/documentation/avkit/avplaybackuserinterfacecontentmetadata-c.class/subtitle": {
+      "etag": "\"1432-65d55ee2f3b37-df\"",
+      "file_path": "documentation/AVKit/avplaybackuserinterfacecontentmetadata-c.class/subtitle.md",
+      "hash": "f2e514d6e3d34146ab084f1fa5c66736f371ca3fee8ae0239784ee8bcd685fb5"
+    },
+    "https://developer.apple.com/documentation/avkit/avplaybackuserinterfacecontentmetadata-c.class/title": {
+      "etag": "\"13f8-65d55ee310052-df\"",
+      "file_path": "documentation/AVKit/avplaybackuserinterfacecontentmetadata-c.class/title.md",
+      "hash": "9df427662ebec7a67ac6ae9b5176ccb20d672b4e29ff9391cc292c43b418d7f0"
+    },
+    "https://developer.apple.com/documentation/avkit/avplaybackuserinterfacecontentmetadata-c.class/videoproperties": {
+      "etag": "\"1312-65d55ee2f3b37-df\"",
+      "file_path": "documentation/AVKit/avplaybackuserinterfacecontentmetadata-c.class/videoproperties.md",
+      "hash": "704a26659910e80a3fe72e9e32bc7237086a1a390f2740fe1245b92f0367d68e"
+    },
     "https://developer.apple.com/documentation/avkit/avplaybackuserinterfacecontentmetadata-swift.struct": {
       "etag": "\"434e-65d55ee33f4ec-df\"",
       "file_path": "documentation/AVKit/avplaybackuserinterfacecontentmetadata-swift.struct.md",
@@ -1475,6 +1975,31 @@
       "file_path": "documentation/AVKit/avplaybackuserinterfacecontentmetadata-swift.struct/videoproperties-swift.struct/presentationsize.md",
       "hash": "b8c9a61f006f367bb876affb3ffb4c01dbc080618ad0e7926c4441d817a61e27"
     },
+    "https://developer.apple.com/documentation/avkit/avplaybackuserinterfacecontentmetadatatemplate": {
+      "etag": "\"41b9-65d55ee2c18f1-df\"",
+      "file_path": "documentation/AVKit/avplaybackuserinterfacecontentmetadatatemplate.md",
+      "hash": "7c370459902591e42913b8a9d9b6bfe3f6520f94b2e3efeedf0d2553ac3924b4"
+    },
+    "https://developer.apple.com/documentation/avkit/avplaybackuserinterfacecontentmetadatatemplate/artworkrepresentations": {
+      "etag": "\"131f-65d55ee2f3b37-df\"",
+      "file_path": "documentation/AVKit/avplaybackuserinterfacecontentmetadatatemplate/artworkrepresentations.md",
+      "hash": "e49bac45e4f6ac7e17be3e0399075401b1f1a421580754cce5e3fb6a36b78c4d"
+    },
+    "https://developer.apple.com/documentation/avkit/avplaybackuserinterfacecontentmetadatatemplate/subtitle": {
+      "etag": "\"144b-65d55ee2f3b37-df\"",
+      "file_path": "documentation/AVKit/avplaybackuserinterfacecontentmetadatatemplate/subtitle.md",
+      "hash": "1d68d1bbbb24700fad11abc419adb0d0c5fb08646f682ebb516193b14b4691ee"
+    },
+    "https://developer.apple.com/documentation/avkit/avplaybackuserinterfacecontentmetadatatemplate/title": {
+      "etag": "\"1411-65d55ee2f3b37-df\"",
+      "file_path": "documentation/AVKit/avplaybackuserinterfacecontentmetadatatemplate/title.md",
+      "hash": "23aeb030965bc6ac4d265c8a66d599cdcad30a03e7f2673855c61ede2247460c"
+    },
+    "https://developer.apple.com/documentation/avkit/avplaybackuserinterfacecontentmetadatatemplate/videoproperties": {
+      "etag": "\"132b-65d55ee2f3b37-df\"",
+      "file_path": "documentation/AVKit/avplaybackuserinterfacecontentmetadatatemplate/videoproperties.md",
+      "hash": "17534ff063b9c536ca8233e21f6645df2042e71c7fd7fb9612a5cd1e68adb680"
+    },
     "https://developer.apple.com/documentation/avkit/avplaybackuserinterfacecontenturlartwork": {
       "etag": "\"5c05-65d55ee3287e7-df\"",
       "file_path": "documentation/AVKit/avplaybackuserinterfacecontenturlartwork.md",
@@ -1490,10 +2015,65 @@
       "file_path": "documentation/AVKit/avplaybackuserinterfacecontenturlartwork/url.md",
       "hash": "6d38af21a0c2cf630059d1956c9d37804b1857586ee16cee5cdf9572f28f2504"
     },
+    "https://developer.apple.com/documentation/avkit/avplaybackuserinterfacecontentvideoproperties": {
+      "etag": "\"31b2-65d55ee33f4ec-df\"",
+      "file_path": "documentation/AVKit/avplaybackuserinterfacecontentvideoproperties.md",
+      "hash": "5bcc4a2813a12208f8d4201147153696812c47b4046dd2f56e7ac7f6ccff356b"
+    },
+    "https://developer.apple.com/documentation/avkit/avplaybackuserinterfacecontentvideoproperties/initwithpresentationsize:": {
+      "etag": "\"1399-65d55ee33f4ec-df\"",
+      "file_path": "documentation/AVKit/avplaybackuserinterfacecontentvideoproperties/initwithpresentationsize_.md",
+      "hash": "55ed7837eb936122bc1c96fdbde19ac66a5ba10503702c26f5458ddd32c336da"
+    },
+    "https://developer.apple.com/documentation/avkit/avplaybackuserinterfacecontentvideoproperties/presentationsize": {
+      "etag": "\"128f-65d55ee33f4ec-df\"",
+      "file_path": "documentation/AVKit/avplaybackuserinterfacecontentvideoproperties/presentationsize.md",
+      "hash": "6dfd8c5d2557384dc13698d3005a217e73a2b12cce42fb4527bcf184804d305f"
+    },
+    "https://developer.apple.com/documentation/avkit/avplaybackuserinterfacecontrollable-7ti30": {
+      "etag": "\"21e0-65d55ee310052-df\"",
+      "file_path": "documentation/AVKit/avplaybackuserinterfacecontrollable-7ti30.md",
+      "hash": "d1b6df0625699e6b3ba37e340016b60a753c17349b23b39f5fe5045ff3188554"
+    },
     "https://developer.apple.com/documentation/avkit/avplaybackuserinterfacecontrollable-92fri": {
       "etag": "\"2ab2-65d55ee1f347d-df\"",
       "file_path": "documentation/AVKit/avplaybackuserinterfacecontrollable-92fri.md",
       "hash": "f91c8dc0b586c9636c4ddf3d607f14cbd881312550fd2543cac57481b172331b"
+    },
+    "https://developer.apple.com/documentation/avkit/avplaybackuserinterfacemediaselectioncontrollable-2fftn": {
+      "etag": "\"33e0-65d55ee37fded-df\"",
+      "file_path": "documentation/AVKit/avplaybackuserinterfacemediaselectioncontrollable-2fftn.md",
+      "hash": "1ba8ae644d764d0ec5a85b5ccfb768839d73c9cc548f4e7fdd05c1b858eb4acd"
+    },
+    "https://developer.apple.com/documentation/avkit/avplaybackuserinterfacemediaselectioncontrollable-2fftn/audiodescriptionoptions": {
+      "etag": "\"1534-65d55ee23b42e-df\"",
+      "file_path": "documentation/AVKit/avplaybackuserinterfacemediaselectioncontrollable-2fftn/audiodescriptionoptions.md",
+      "hash": "bc34e6d05acf522b1e0f1abed29c05f55bfbd95c441049fe2574d4acb445c564"
+    },
+    "https://developer.apple.com/documentation/avkit/avplaybackuserinterfacemediaselectioncontrollable-2fftn/audiooptions": {
+      "etag": "\"12b2-65d55ee23b42e-df\"",
+      "file_path": "documentation/AVKit/avplaybackuserinterfacemediaselectioncontrollable-2fftn/audiooptions.md",
+      "hash": "d991f667d46b286a868f823f7278ea7e6740e726120139a2892c9a70981773c2"
+    },
+    "https://developer.apple.com/documentation/avkit/avplaybackuserinterfacemediaselectioncontrollable-2fftn/currentaudiodescriptionoption": {
+      "etag": "\"1806-65d55ee23b42e-df\"",
+      "file_path": "documentation/AVKit/avplaybackuserinterfacemediaselectioncontrollable-2fftn/currentaudiodescriptionoption.md",
+      "hash": "64190c5d615312d79ea7ec39328c46e70c9a7058688db017a1bcdbc9eee1ba6b"
+    },
+    "https://developer.apple.com/documentation/avkit/avplaybackuserinterfacemediaselectioncontrollable-2fftn/currentaudiooption": {
+      "etag": "\"1754-65d55ee23b42e-df\"",
+      "file_path": "documentation/AVKit/avplaybackuserinterfacemediaselectioncontrollable-2fftn/currentaudiooption.md",
+      "hash": "56b85b8617c3908bd114cc05477f2b8e25f26a352c540811f8a68282df3b2f0b"
+    },
+    "https://developer.apple.com/documentation/avkit/avplaybackuserinterfacemediaselectioncontrollable-2fftn/currentlegibleoption": {
+      "etag": "\"178c-65d55ee23b42e-df\"",
+      "file_path": "documentation/AVKit/avplaybackuserinterfacemediaselectioncontrollable-2fftn/currentlegibleoption.md",
+      "hash": "cc832e304a0440fd54aa38315482f433faf3d43a121b926b9bc597efa7537619"
+    },
+    "https://developer.apple.com/documentation/avkit/avplaybackuserinterfacemediaselectioncontrollable-2fftn/legibleoptions": {
+      "etag": "\"120a-65d55ee23b42e-df\"",
+      "file_path": "documentation/AVKit/avplaybackuserinterfacemediaselectioncontrollable-2fftn/legibleoptions.md",
+      "hash": "44921fbe23a7aa2884dfbf69ea9964cf9a25dd046ca95fff8e300c17a4bfbf01"
     },
     "https://developer.apple.com/documentation/avkit/avplaybackuserinterfacemediaselectioncontrollable-8ee5z": {
       "etag": "\"363e-65d55ee23b42e-df\"",
@@ -1540,6 +2120,11 @@
       "file_path": "documentation/AVKit/avplaybackuserinterfacemediaselectionoption/displayname.md",
       "hash": "b40a21d86714cbcb87786e19d57ad4c074fe0d86a6b3deaf89d68da42b125cd3"
     },
+    "https://developer.apple.com/documentation/avkit/avplaybackuserinterfacemediaselectionoption/extendedlanguagetag": {
+      "etag": "\"1911-65d55ee24c80f-df\"",
+      "file_path": "documentation/AVKit/avplaybackuserinterfacemediaselectionoption/extendedlanguagetag.md",
+      "hash": "d0cd3336f6057d25db947471e26053783b6ae12b93cd1c55afcccbdd8e8cc9c1"
+    },
     "https://developer.apple.com/documentation/avkit/avplaybackuserinterfacemediaselectionoption/identifier": {
       "etag": "\"2155-65d55ee24c80f-df\"",
       "file_path": "documentation/AVKit/avplaybackuserinterfacemediaselectionoption/identifier.md",
@@ -1555,6 +2140,11 @@
       "file_path": "documentation/AVKit/avplaybackuserinterfacemediaselectionoption/init(displayname,identifier,language,mediacharacteristics).md",
       "hash": "3cd2a9fe19fa7993973df41c3498b3162745c93729d5b2fac099d7ff7fa03031"
     },
+    "https://developer.apple.com/documentation/avkit/avplaybackuserinterfacemediaselectionoption/initwithdisplayname:identifier:extendedlanguagetag:mediacharacteristics:": {
+      "etag": "\"1f23-65d55ee24c80f-df\"",
+      "file_path": "documentation/AVKit/avplaybackuserinterfacemediaselectionoption/initwithdisplayname_identifier_extendedlanguagetag_mediacharacteristics_.md",
+      "hash": "28ed3dd7e9dfecd67df316ae0cc91cede9a0b8db877a243e529c31ca324bf3d6"
+    },
     "https://developer.apple.com/documentation/avkit/avplaybackuserinterfacemediaselectionoption/language": {
       "etag": "\"1c0f-65d55ee24c80f-df\"",
       "file_path": "documentation/AVKit/avplaybackuserinterfacemediaselectionoption/language.md",
@@ -1565,6 +2155,16 @@
       "file_path": "documentation/AVKit/avplaybackuserinterfacemediaselectionoption/mediacharacteristics.md",
       "hash": "2b58f7f3078b99783232227a44b21c71d72ebd2ffb81ec407f15757579a49623"
     },
+    "https://developer.apple.com/documentation/avkit/avplaybackuserinterfacemetadataproviding-1w04z": {
+      "etag": "\"2bbe-65d55ee37fded-df\"",
+      "file_path": "documentation/AVKit/avplaybackuserinterfacemetadataproviding-1w04z.md",
+      "hash": "75dbfb36128b3a89c236a142b720ae6a91834f8ec777928e1581c9ded5306386"
+    },
+    "https://developer.apple.com/documentation/avkit/avplaybackuserinterfacemetadataproviding-1w04z/metadata": {
+      "etag": "\"1257-65d55ee20d2d9-df\"",
+      "file_path": "documentation/AVKit/avplaybackuserinterfacemetadataproviding-1w04z/metadata.md",
+      "hash": "b995d7e3905ade3c0ffd1f511c0d057dbb71357de7e643ae903aca9e13048ec8"
+    },
     "https://developer.apple.com/documentation/avkit/avplaybackuserinterfacemetadataproviding-814y4": {
       "etag": "\"2a3f-65d55ee369bd6-df\"",
       "file_path": "documentation/AVKit/avplaybackuserinterfacemetadataproviding-814y4.md",
@@ -1574,6 +2174,61 @@
       "etag": "\"178f-65d55ee310052-df\"",
       "file_path": "documentation/AVKit/avplaybackuserinterfacemetadataproviding-814y4/metadata.md",
       "hash": "40575dadd5068790a2b9b3e6901845b2cc4494ac9be00271bc0907f5b5b73c52"
+    },
+    "https://developer.apple.com/documentation/avkit/avplaybackuserinterfaceplaybackcontrollable-81n66": {
+      "etag": "\"45fd-65d55ee310052-df\"",
+      "file_path": "documentation/AVKit/avplaybackuserinterfaceplaybackcontrollable-81n66.md",
+      "hash": "95a7c4499f33317cb648494d5b38c9c6862b8645f9f7f962300994cd099aeffb"
+    },
+    "https://developer.apple.com/documentation/avkit/avplaybackuserinterfaceplaybackcontrollable-81n66/buffering": {
+      "etag": "\"15fa-65d55ee24c80f-df\"",
+      "file_path": "documentation/AVKit/avplaybackuserinterfaceplaybackcontrollable-81n66/buffering.md",
+      "hash": "035965142c1199cdbf67a732d45f7d69d96ac561ef3c1235876f60659595cefc"
+    },
+    "https://developer.apple.com/documentation/avkit/avplaybackuserinterfaceplaybackcontrollable-81n66/containslivestreamingcontent": {
+      "etag": "\"1251-65d55ee24c80f-df\"",
+      "file_path": "documentation/AVKit/avplaybackuserinterfaceplaybackcontrollable-81n66/containslivestreamingcontent.md",
+      "hash": "86052a9d8a71eaec1fee89f494cab351a8e34926fdbb7c735c844398bc89f5c0"
+    },
+    "https://developer.apple.com/documentation/avkit/avplaybackuserinterfaceplaybackcontrollable-81n66/defaultplaybackspeed": {
+      "etag": "\"1093-65b794101c499-df\"",
+      "file_path": "documentation/AVKit/avplaybackuserinterfaceplaybackcontrollable-81n66/defaultplaybackspeed.md",
+      "hash": "f9f84de215fb83d1a2e25981c5f227f737b3d4f0b66a74c8f367d2f2ea9f60ba"
+    },
+    "https://developer.apple.com/documentation/avkit/avplaybackuserinterfaceplaybackcontrollable-81n66/error": {
+      "etag": "\"1368-65d55ee24c80f-df\"",
+      "file_path": "documentation/AVKit/avplaybackuserinterfaceplaybackcontrollable-81n66/error.md",
+      "hash": "66730b41ec63b654f4120b47d29e022ce19fd27b465fa86a33ed26443225997f"
+    },
+    "https://developer.apple.com/documentation/avkit/avplaybackuserinterfaceplaybackcontrollable-81n66/playbackspeed": {
+      "etag": "\"ffd-65d55ee24c80f-df\"",
+      "file_path": "documentation/AVKit/avplaybackuserinterfaceplaybackcontrollable-81n66/playbackspeed.md",
+      "hash": "3faa3b1dfb588aeb6217d0933786400b6abfdc478d4ea426d25da01d96bfe5d0"
+    },
+    "https://developer.apple.com/documentation/avkit/avplaybackuserinterfaceplaybackcontrollable-81n66/playing": {
+      "etag": "\"1421-65d55ee24c80f-df\"",
+      "file_path": "documentation/AVKit/avplaybackuserinterfaceplaybackcontrollable-81n66/playing.md",
+      "hash": "146657cbc34722929efb9150b75b2356ab367407d1774c85266ba65b33ad3f95"
+    },
+    "https://developer.apple.com/documentation/avkit/avplaybackuserinterfaceplaybackcontrollable-81n66/ready": {
+      "etag": "\"13d6-65d55ee24c80f-df\"",
+      "file_path": "documentation/AVKit/avplaybackuserinterfaceplaybackcontrollable-81n66/ready.md",
+      "hash": "f0d841bd3beafbdb3fd50e2751a720ea6698e355ce517da141214a9694f9ffca"
+    },
+    "https://developer.apple.com/documentation/avkit/avplaybackuserinterfaceplaybackcontrollable-81n66/scanspeed": {
+      "etag": "\"1225-65d55ee24c80f-df\"",
+      "file_path": "documentation/AVKit/avplaybackuserinterfaceplaybackcontrollable-81n66/scanspeed.md",
+      "hash": "0a5d9e172d5cffe1efde550071961bc1e31a1abc01fddc7e3e72e7a91de54dcc"
+    },
+    "https://developer.apple.com/documentation/avkit/avplaybackuserinterfaceplaybackcontrollable-81n66/state": {
+      "etag": "\"14c2-65d55ee24c80f-df\"",
+      "file_path": "documentation/AVKit/avplaybackuserinterfaceplaybackcontrollable-81n66/state.md",
+      "hash": "41dfb18e6cec482dc1d927f862e8951963f13349baf3d1391f1ba6f9fa939096"
+    },
+    "https://developer.apple.com/documentation/avkit/avplaybackuserinterfaceplaybackcontrollable-81n66/supportedseekcapabilities": {
+      "etag": "\"1971-65d55ee24c80f-df\"",
+      "file_path": "documentation/AVKit/avplaybackuserinterfaceplaybackcontrollable-81n66/supportedseekcapabilities.md",
+      "hash": "84d1be5d3823dbdd80233073ce37f0cdee7834145f5ff18992a38599b650050a"
     },
     "https://developer.apple.com/documentation/avkit/avplaybackuserinterfaceplaybackcontrollable-9he54": {
       "etag": "\"4366-65d55ee33f4ec-df\"",
@@ -1685,6 +2340,11 @@
       "file_path": "documentation/AVKit/avplaybackuserinterfaceseekcapabilities.md",
       "hash": "02d38c64e826dfd9f21dd4b5800c09cfd1fabb6f366b0aa5eb6669cde3b932c0"
     },
+    "https://developer.apple.com/documentation/avkit/avplaybackuserinterfaceseekcapabilities/avplaybackuserinterfaceseekcapabilitiesnone": {
+      "etag": "\"120b-65d55ee356eab-df\"",
+      "file_path": "documentation/AVKit/avplaybackuserinterfaceseekcapabilities/avplaybackuserinterfaceseekcapabilitiesnone.md",
+      "hash": "ade57261cb33e0bdb7710ef9e89031519e1bf18b870f373063006c1d00ca3101"
+    },
     "https://developer.apple.com/documentation/avkit/avplaybackuserinterfaceseekcapabilities/init(rawvalue:)": {
       "etag": "\"13eb-65d55ee356eab-df\"",
       "file_path": "documentation/AVKit/avplaybackuserinterfaceseekcapabilities/init(rawvalue).md",
@@ -1739,6 +2399,41 @@
       "etag": "\"215e-65d55ee222fe3-df\"",
       "file_path": "documentation/AVKit/avplaybackuserinterfacetimecontrollable-50vcy/timerange.md",
       "hash": "19443798142c99061948f4c5f6753af3876ad26ca65579af661913d61fa4d9ff"
+    },
+    "https://developer.apple.com/documentation/avkit/avplaybackuserinterfacetimecontrollable-62fq2": {
+      "etag": "\"45fc-65d55ee310052-df\"",
+      "file_path": "documentation/AVKit/avplaybackuserinterfacetimecontrollable-62fq2.md",
+      "hash": "634086cd30c3dabc89b7451c02ad8413abc21618a823b66a68233e3e64416edf"
+    },
+    "https://developer.apple.com/documentation/avkit/avplaybackuserinterfacetimecontrollable-62fq2/currentsegment": {
+      "etag": "\"17d7-65d55ee2c18f1-df\"",
+      "file_path": "documentation/AVKit/avplaybackuserinterfacetimecontrollable-62fq2/currentsegment.md",
+      "hash": "f2b9bfe75810318c1487b8aba95b111c3e9f15e308b894d00879b521cb0081d7"
+    },
+    "https://developer.apple.com/documentation/avkit/avplaybackuserinterfacetimecontrollable-62fq2/playbackposition": {
+      "etag": "\"178a-65d55ee2d9b5f-df\"",
+      "file_path": "documentation/AVKit/avplaybackuserinterfacetimecontrollable-62fq2/playbackposition.md",
+      "hash": "63e1af9829699bf985dcfc748c28cc6cd3cf0ec7eb1abe012f17afe64faad14f"
+    },
+    "https://developer.apple.com/documentation/avkit/avplaybackuserinterfacetimecontrollable-62fq2/seekabletimeranges": {
+      "etag": "\"17e4-65d55ee2d9b5f-df\"",
+      "file_path": "documentation/AVKit/avplaybackuserinterfacetimecontrollable-62fq2/seekabletimeranges.md",
+      "hash": "eb0b9174a27d5e12b05548c7debc33b9c1cf65580a2aa30aad445f83451bf41e"
+    },
+    "https://developer.apple.com/documentation/avkit/avplaybackuserinterfacetimecontrollable-62fq2/seektoposition:tolerance:": {
+      "etag": "\"164c-65d55ee2d9b5f-df\"",
+      "file_path": "documentation/AVKit/avplaybackuserinterfacetimecontrollable-62fq2/seektoposition_tolerance_.md",
+      "hash": "fce0cccbb5a0fdc76b23d4f179cd8aabaec56872915b05b116f6b8cfb53008ac"
+    },
+    "https://developer.apple.com/documentation/avkit/avplaybackuserinterfacetimecontrollable-62fq2/segments": {
+      "etag": "\"11d0-65d55ee2c18f1-df\"",
+      "file_path": "documentation/AVKit/avplaybackuserinterfacetimecontrollable-62fq2/segments.md",
+      "hash": "66d92f90ada52c717b79ffe4c82c84b039a5c8908486c47bb3854d270b32a2df"
+    },
+    "https://developer.apple.com/documentation/avkit/avplaybackuserinterfacetimecontrollable-62fq2/timerange": {
+      "etag": "\"26d7-65d55ee2d9b5f-df\"",
+      "file_path": "documentation/AVKit/avplaybackuserinterfacetimecontrollable-62fq2/timerange.md",
+      "hash": "0ff46c56355008756b46a8faacc90f5ff345a7c35a527047ed9da1379d2fde1a"
     },
     "https://developer.apple.com/documentation/avkit/avplaybackuserinterfacetimelinesegment": {
       "etag": "\"7dca-65d55ee3287e7-df\"",
@@ -1849,6 +2544,26 @@
       "etag": "\"15a1-65d55ee37fded-df\"",
       "file_path": "documentation/AVKit/avplaybackuserinterfacevolumecontrollable-4vgi1/volume.md",
       "hash": "438ba8e72066b83ba53cdd330e486a0b583e7697b6987bdea57154b790c728b7"
+    },
+    "https://developer.apple.com/documentation/avkit/avplaybackuserinterfacevolumecontrollable-5ystg": {
+      "etag": "\"1de8-65d55ee24c80f-df\"",
+      "file_path": "documentation/AVKit/avplaybackuserinterfacevolumecontrollable-5ystg.md",
+      "hash": "7bd179b48d0487c5ecbf919d220768156448ccfa56813d6f8edf3a72d319b1ae"
+    },
+    "https://developer.apple.com/documentation/avkit/avplaybackuserinterfacevolumecontrollable-5ystg/hasaudio": {
+      "etag": "\"11bf-65d55ee310052-df\"",
+      "file_path": "documentation/AVKit/avplaybackuserinterfacevolumecontrollable-5ystg/hasaudio.md",
+      "hash": "9770db1b0f7a8b613a75cca4a50d681229f0595c4044583e85c3ff30925c4ecc"
+    },
+    "https://developer.apple.com/documentation/avkit/avplaybackuserinterfacevolumecontrollable-5ystg/muted": {
+      "etag": "\"11bb-65d55ee310052-df\"",
+      "file_path": "documentation/AVKit/avplaybackuserinterfacevolumecontrollable-5ystg/muted.md",
+      "hash": "afd525a3ba914a8b95a3f72b5f90721fae17b1c60f4d50cdc70dded0edb46323"
+    },
+    "https://developer.apple.com/documentation/avkit/avplaybackuserinterfacevolumecontrollable-5ystg/volume": {
+      "etag": "\"edd-65d55ee310052-df\"",
+      "file_path": "documentation/AVKit/avplaybackuserinterfacevolumecontrollable-5ystg/volume.md",
+      "hash": "91297851ee721fbc18aca66445f6f03d974847a5625267fc605daf75dbc18a2f"
     },
     "https://developer.apple.com/documentation/avkit/avplayerview": {
       "etag": "\"12a70-65d55ee20d2d9-df\"",
@@ -2335,6 +3050,11 @@
       "file_path": "documentation/AVKit/avplayerviewcontrollerdelegate/playerviewcontroller(_,willtransitiontovisibilityoftransportbar,with).md",
       "hash": "d29a72af6a9647815706aa4ac0f71f425f9123050954e1f59e5a47f906d03db0"
     },
+    "https://developer.apple.com/documentation/avkit/avplayerviewcontrollerdelegate/playerviewcontroller:didselectexternalsubtitleoptionlanguage:": {
+      "etag": "\"2c1a-65d55ee2d9b5f-df\"",
+      "file_path": "documentation/AVKit/avplayerviewcontrollerdelegate/playerviewcontroller_didselectexternalsubtitleoptionlanguage_.md",
+      "hash": "a7647511b0ebf5dfbb14288b18ea6fb4aa331440d67e8190e416bc4b3a0dfeaf"
+    },
     "https://developer.apple.com/documentation/avkit/avplayerviewcontrollerdelegate/playerviewcontrollerdidenddismissaltransition(_:)": {
       "etag": "\"34ea-65d55ee2d9b5f-df\"",
       "file_path": "documentation/AVKit/avplayerviewcontrollerdelegate/playerviewcontrollerdidenddismissaltransition(_).md",
@@ -2540,6 +3260,11 @@
       "file_path": "documentation/AVKit/avportalviewport.md",
       "hash": "b52f53fb88ef629c66f9ba7fea38bcbe180fec52d6c95a7833fbb3fd2e91a512"
     },
+    "https://developer.apple.com/documentation/avkit/avportalviewport/aspectratio-3jqur": {
+      "etag": "\"1743-65d55ee222fe3-df\"",
+      "file_path": "documentation/AVKit/avportalviewport/aspectratio-3jqur.md",
+      "hash": "767792dc8824a8cf12f96f0bca84b75b5b8629262433bd2548d9cc46bda60d86"
+    },
     "https://developer.apple.com/documentation/avkit/avportalviewport/aspectratio-4drnq": {
       "etag": "\"1749-65d55ee222fe3-df\"",
       "file_path": "documentation/AVKit/avportalviewport/aspectratio-4drnq.md",
@@ -2669,6 +3394,11 @@
       "etag": "\"579c-65d55ee3287e7-df\"",
       "file_path": "documentation/AVKit/avvideoframeanalysistype.md",
       "hash": "2c3b2f1b0fb2347f424947546a2ec7cd8a5d52a9cccd52e1a46120b88ff53dcf"
+    },
+    "https://developer.apple.com/documentation/avkit/avvideoframeanalysistype/avvideoframeanalysistypenone": {
+      "etag": "\"2a14-65d55ee310052-df\"",
+      "file_path": "documentation/AVKit/avvideoframeanalysistype/avvideoframeanalysistypenone.md",
+      "hash": "883f1cefb8f8439423600d0c7aacd8d7cde75df2f1cb3a81574b770e99891367"
     },
     "https://developer.apple.com/documentation/avkit/avvideoframeanalysistype/default": {
       "etag": "\"33fa-65d55ee310052-df\"",
@@ -2834,6 +3564,26 @@
       "etag": "\"c0a5-65da4fdcdc297-df\"",
       "file_path": "documentation/AVKit/adopting-the-system-player-interface-in-visionos.md",
       "hash": "0665a8888936b7abbb49b803f7e3c4ad623ad4f25e18dd59d1d6b4cff966cca3"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/avkit/avaudiosessionrouteselection.json": {
+      "etag": "\"25cc-65d55ee369bd6-df\"",
+      "file_path": "documentation/AVKit/avaudiosessionrouteselection.md",
+      "hash": "ee5242599458233ada29b5fb59d5f2f428977d6e88b1cb17a7696a4b3586ae30"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/avkit/avaudiosessionrouteselection/avaudiosessionrouteselectionexternal.json": {
+      "etag": "\"137c-65d55ee310052-df\"",
+      "file_path": "documentation/AVKit/avaudiosessionrouteselection/avaudiosessionrouteselectionexternal.md",
+      "hash": "5857650f0793698ef7574efa57533325d1d1ae1b5b167c9d4b773b69bc265964"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/avkit/avaudiosessionrouteselection/avaudiosessionrouteselectionlocal.json": {
+      "etag": "\"1366-65d55ee310052-df\"",
+      "file_path": "documentation/AVKit/avaudiosessionrouteselection/avaudiosessionrouteselectionlocal.md",
+      "hash": "5dfa7b1ebd6e2f7ed92a03f93f2af75d759f228fdfecc331102db1dd8797ba6d"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/avkit/avaudiosessionrouteselection/avaudiosessionrouteselectionnone.json": {
+      "etag": "\"135a-65d55ee310052-df\"",
+      "file_path": "documentation/AVKit/avaudiosessionrouteselection/avaudiosessionrouteselectionnone.md",
+      "hash": "7b1c85ddae648069fe646c3b1e8c9537d0c5e08a18d08b9e76e703f3dd5385c5"
     },
     "https://developer.apple.com/tutorials/data/documentation/avkit/avcapturedevicedescriptor.json": {
       "etag": "\"639c-65d55ee3287e7-df\"",
@@ -3285,6 +4035,21 @@
       "file_path": "documentation/AVKit/avdisplaymanager/preferreddisplaycriteria.md",
       "hash": "dcfbc5ff5f8286d2df655088994ac1677a8bbd8fafc28c01651d2f76308f5210"
     },
+    "https://developer.apple.com/tutorials/data/documentation/avkit/avdisplaymanagermodeswitchendnotification.json": {
+      "etag": "\"16d2-65d55ee24c80f-df\"",
+      "file_path": "documentation/AVKit/avdisplaymanagermodeswitchendnotification.md",
+      "hash": "611caa263d9ddb645e725e88dd1230d6b2c82292591dc9e551662273e4e30b8d"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/avkit/avdisplaymanagermodeswitchsettingschangednotification.json": {
+      "etag": "\"1733-65d55ee24c80f-df\"",
+      "file_path": "documentation/AVKit/avdisplaymanagermodeswitchsettingschangednotification.md",
+      "hash": "bbd2ca90819aca02070ca887460a2500438fe2b2b7d5765c565e818381e1ba55"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/avkit/avdisplaymanagermodeswitchstartnotification.json": {
+      "etag": "\"16e1-65d55ee222fe3-df\"",
+      "file_path": "documentation/AVKit/avdisplaymanagermodeswitchstartnotification.md",
+      "hash": "ff3b240a6a8728475db7820bd7128caa59c14d87784985844de7498ecc8400ab"
+    },
     "https://developer.apple.com/tutorials/data/documentation/avkit/avexperiencecontroller.json": {
       "etag": "\"6430-65d55ee310052-df\"",
       "file_path": "documentation/AVKit/avexperiencecontroller.md",
@@ -3635,6 +4400,371 @@
       "file_path": "documentation/AVKit/avinputpickerinteraction/present().md",
       "hash": "8a47f3f522507f80eecde603da2142741e214de9cd14cd4dfb1d261ac32e3cf1"
     },
+    "https://developer.apple.com/tutorials/data/documentation/avkit/avinterfacealbumartwork.json": {
+      "etag": "\"2699-65b79410ce693-df\"",
+      "file_path": "documentation/AVKit/avinterfacealbumartwork.md",
+      "hash": "5aac02393fdc35a755b4a8f1a92da640e16687254b779912246889aa5756c3f7"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/avkit/avinterfacealbumartwork/artworkwithurl:contenttype:size:.json": {
+      "etag": "\"200b-65b79411059cd-df\"",
+      "file_path": "documentation/AVKit/avinterfacealbumartwork/artworkwithurl_contenttype_size_.md",
+      "hash": "7779bb1abd2a4451c252b150b0f3c11d86c2b73b19c94c7823e1ee1f8fd1eeef"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/avkit/avinterfacealbumartwork/contenttype.json": {
+      "etag": "\"12d9-65b79411059cd-df\"",
+      "file_path": "documentation/AVKit/avinterfacealbumartwork/contenttype.md",
+      "hash": "f4b0d61fd3e3bf05030bb1bc2191950c709b0da8fae5fa23199a79db9d85f861"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/avkit/avinterfacealbumartwork/initwithurl:contenttype:size:.json": {
+      "etag": "\"1d8d-65b79411059cd-df\"",
+      "file_path": "documentation/AVKit/avinterfacealbumartwork/initwithurl_contenttype_size_.md",
+      "hash": "e31aed95399e6d265d9540aa67eb3180789df387794d0225aa2f950be38eb9aa"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/avkit/avinterfacealbumartwork/size.json": {
+      "etag": "\"100e-65b79411059cd-df\"",
+      "file_path": "documentation/AVKit/avinterfacealbumartwork/size.md",
+      "hash": "1acf2e06d402a8a05b52a9760977d85c57ea60b8506c2da95fd441c8308c9440"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/avkit/avinterfacealbumartwork/url.json": {
+      "etag": "\"10b8-65b79411059cd-df\"",
+      "file_path": "documentation/AVKit/avinterfacealbumartwork/url.md",
+      "hash": "851bc28d2732cc7b11f639099f2b29d7bfdf6721e72c98d5d0adf557671424e0"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/avkit/avinterfacecontrollable.json": {
+      "etag": "\"1dd9-65b7941004b43-df\"",
+      "file_path": "documentation/AVKit/avinterfacecontrollable.md",
+      "hash": "9964daa9bbcf99a63dec06ec3887f92fab52ba900bca5a83c44a2b507d28e364"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/avkit/avinterfacemediaselectioncontrollable.json": {
+      "etag": "\"22f6-65b79410ce693-df\"",
+      "file_path": "documentation/AVKit/avinterfacemediaselectioncontrollable.md",
+      "hash": "2e22141ac5388384d2790535eedd34eb79be5f0c9b34a6576a43245d0970b71f"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/avkit/avinterfacemediaselectioncontrollable/audiooptions.json": {
+      "etag": "\"1183-65b79410f0623-df\"",
+      "file_path": "documentation/AVKit/avinterfacemediaselectioncontrollable/audiooptions.md",
+      "hash": "98e9424116bebe7c709d5810b5c479df66526ebc0bc06088a295de354927426d"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/avkit/avinterfacemediaselectioncontrollable/currentaudiooption.json": {
+      "etag": "\"1333-65b79410f0623-df\"",
+      "file_path": "documentation/AVKit/avinterfacemediaselectioncontrollable/currentaudiooption.md",
+      "hash": "8b57e7c60a4baa6e7db96d6f6fcc35d848dc254337e8d46c0a6547a72f89e9d0"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/avkit/avinterfacemediaselectioncontrollable/currentlegibleoption.json": {
+      "etag": "\"1385-65b79410f0623-df\"",
+      "file_path": "documentation/AVKit/avinterfacemediaselectioncontrollable/currentlegibleoption.md",
+      "hash": "11a0197195043d683f12608b9678ab9eed3c2ed82c89d72cc1bf1c3a86cbe195"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/avkit/avinterfacemediaselectioncontrollable/legibleoptions.json": {
+      "etag": "\"10b3-65b79410f0623-df\"",
+      "file_path": "documentation/AVKit/avinterfacemediaselectioncontrollable/legibleoptions.md",
+      "hash": "7694cede758ea71b3ca95f47e2d2d7d1545337589aa25319a3a4dd692f98936f"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/avkit/avinterfacemediaselectionoptionsource.json": {
+      "etag": "\"2686-65b79410b2e69-df\"",
+      "file_path": "documentation/AVKit/avinterfacemediaselectionoptionsource.md",
+      "hash": "4ac96006309f858e409a9a636c3f1914c0f2ddf67d1d9d60c17c9ec402dd345d"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/avkit/avinterfacemediaselectionoptionsource/displayname.json": {
+      "etag": "\"122d-65b79410b2e69-df\"",
+      "file_path": "documentation/AVKit/avinterfacemediaselectionoptionsource/displayname.md",
+      "hash": "d9bc6c6843ab6e5e543fcdce593795d2ba9c0284bc54626c3ade8d5aa25e449a"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/avkit/avinterfacemediaselectionoptionsource/extendedlanguagetag.json": {
+      "etag": "\"14fc-65b79410b2e69-df\"",
+      "file_path": "documentation/AVKit/avinterfacemediaselectionoptionsource/extendedlanguagetag.md",
+      "hash": "1a7fcec184431affbbd81c64be279a2dad5b50136998cac752aee3e5b68f4f9b"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/avkit/avinterfacemediaselectionoptionsource/identifier.json": {
+      "etag": "\"11cb-65b79410b2e69-df\"",
+      "file_path": "documentation/AVKit/avinterfacemediaselectionoptionsource/identifier.md",
+      "hash": "70f3622ed8a0acdec2145eb1b066f29cb9f21462ad6bc5a2c620278b96ffa223"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/avkit/avinterfacemediaselectionoptionsource/initwithdisplayname:identifier:extendedlanguagetag:.json": {
+      "etag": "\"17fe-65b79410b2e69-df\"",
+      "file_path": "documentation/AVKit/avinterfacemediaselectionoptionsource/initwithdisplayname_identifier_extendedlanguagetag_.md",
+      "hash": "b823407c6101584cda876e663bb40cf94f8d256c6a59acb505981d996e4abaf4"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/avkit/avinterfacemetadata.json": {
+      "etag": "\"2d31-65b79410f0623-df\"",
+      "file_path": "documentation/AVKit/avinterfacemetadata.md",
+      "hash": "9b5164acd0e228e16aa2aa0fed49c85d1df35f8e4092f0d195247767e1b1a280"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/avkit/avinterfacemetadata/albumartworkrepresentations.json": {
+      "etag": "\"116d-65b7941160707-df\"",
+      "file_path": "documentation/AVKit/avinterfacemetadata/albumartworkrepresentations.md",
+      "hash": "8e0b3104d72da0127beabf5999724f4f32f8b60852a93d64a0daf43b5714942d"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/avkit/avinterfacemetadata/audioonly.json": {
+      "etag": "\"1167-65b7941160707-df\"",
+      "file_path": "documentation/AVKit/avinterfacemetadata/audioonly.md",
+      "hash": "e06cc2c9a62f47918cbe57220a45c7a1adbd5343238580455e37c6869e14ecd7"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/avkit/avinterfacemetadata/initwithaudioonly:presentationsize:title:subtitle:albumartworkrepresentations:.json": {
+      "etag": "\"205c-65b7941160707-df\"",
+      "file_path": "documentation/AVKit/avinterfacemetadata/initwithaudioonly_presentationsize_title_subtitle_albumartworkrepresentations_.md",
+      "hash": "37fab78c08a54c69f75aa248271f7ca37d385fc3637437abad607fcb70467905"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/avkit/avinterfacemetadata/initwithtemplate:.json": {
+      "etag": "\"150a-65b7941160707-df\"",
+      "file_path": "documentation/AVKit/avinterfacemetadata/initwithtemplate_.md",
+      "hash": "03fd77f1f0e823ca06fdf944cbc2cf3eb706e659117c2c75ddba5042f7f3b858"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/avkit/avinterfacemetadata/presentationsize.json": {
+      "etag": "\"128c-65b7941160707-df\"",
+      "file_path": "documentation/AVKit/avinterfacemetadata/presentationsize.md",
+      "hash": "5497836c3eeb4212bdf1c9eb97703cd2eec539ae0154fa4ee2dace065c85976b"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/avkit/avinterfacemetadata/subtitle.json": {
+      "etag": "\"125f-65b7941160707-df\"",
+      "file_path": "documentation/AVKit/avinterfacemetadata/subtitle.md",
+      "hash": "16bde76dc57e139b072585f78e73cd01c78a220ecf35cbc9121d4ef42298da5b"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/avkit/avinterfacemetadata/title.json": {
+      "etag": "\"1225-65b7941160707-df\"",
+      "file_path": "documentation/AVKit/avinterfacemetadata/title.md",
+      "hash": "23352088d15c561557a6f92a2a1568bd9684a7a1e22058c11fcb8a52755ba1f9"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/avkit/avinterfacemetadataproviding.json": {
+      "etag": "\"165d-65b7940ff0b5c-df\"",
+      "file_path": "documentation/AVKit/avinterfacemetadataproviding.md",
+      "hash": "b0899911a7fbeb5712c0dac37b2b0f8c9c24c0f39345d2b66a5cf394bf326f1d"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/avkit/avinterfacemetadataproviding/metadata.json": {
+      "etag": "\"1034-65b79410ce693-df\"",
+      "file_path": "documentation/AVKit/avinterfacemetadataproviding/metadata.md",
+      "hash": "0575c06fcbd59576ef6fdc6c9714640a7d3bf937e7972b8913179d8405601f3e"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/avkit/avinterfacemetadatatemplate.json": {
+      "etag": "\"2edd-65b794101c499-df\"",
+      "file_path": "documentation/AVKit/avinterfacemetadatatemplate.md",
+      "hash": "9934a7d5efc6c4d50650a0f7cabc422648abdb91a2c2847d17f626124cdd2cad"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/avkit/avinterfacemetadatatemplate/albumartworkrepresentations.json": {
+      "etag": "\"11ce-65b7940ff0b5c-df\"",
+      "file_path": "documentation/AVKit/avinterfacemetadatatemplate/albumartworkrepresentations.md",
+      "hash": "5e89dc92be62730dc8b654a2f6a3e8bc800b427fdb61741c2861a8adcd4e87e0"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/avkit/avinterfacemetadatatemplate/audioonly.json": {
+      "etag": "\"11c8-65b7940ff0b5c-df\"",
+      "file_path": "documentation/AVKit/avinterfacemetadatatemplate/audioonly.md",
+      "hash": "dcfad27360bed35297bcd2c5feac66938b84812c997eed91eefff2f337de147f"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/avkit/avinterfacemetadatatemplate/presentationsize.json": {
+      "etag": "\"12ed-65b7940ff0b5c-df\"",
+      "file_path": "documentation/AVKit/avinterfacemetadatatemplate/presentationsize.md",
+      "hash": "c5ee5a77064938f38d666312838c5b15e07c6e79042a95cdf68c96050ba221a8"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/avkit/avinterfacemetadatatemplate/subtitle.json": {
+      "etag": "\"12c0-65b7940ff0b5c-df\"",
+      "file_path": "documentation/AVKit/avinterfacemetadatatemplate/subtitle.md",
+      "hash": "95c8dd03a4f7e8bab430368064fbf2d8ac945e5556ee65ffcfcdf4d904a583e8"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/avkit/avinterfacemetadatatemplate/title.json": {
+      "etag": "\"1286-65b7940ff0b5c-df\"",
+      "file_path": "documentation/AVKit/avinterfacemetadatatemplate/title.md",
+      "hash": "bc6d05f8e01dbe7c62e6eea6d4b51175ae820c61aadd73919eb9d10f3574114e"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/avkit/avinterfaceplaybackcontrollable.json": {
+      "etag": "\"3242-65b79410b2e69-df\"",
+      "file_path": "documentation/AVKit/avinterfaceplaybackcontrollable.md",
+      "hash": "c8d864ab6f6217bde8e57e2f4ac92eaf775217db97d13318459604fef7f219cd"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/avkit/avinterfaceplaybackcontrollable/buffering.json": {
+      "etag": "\"10e1-65b79411059cd-df\"",
+      "file_path": "documentation/AVKit/avinterfaceplaybackcontrollable/buffering.md",
+      "hash": "7bf6c7d9474db0f8aa6bf40cbc79bcda38ace5988487aea248d3c2169b96b90e"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/avkit/avinterfaceplaybackcontrollable/containslivestreamingcontent.json": {
+      "etag": "\"1102-65b79411059cd-df\"",
+      "file_path": "documentation/AVKit/avinterfaceplaybackcontrollable/containslivestreamingcontent.md",
+      "hash": "03f0f64f5b4894f0e943f5ef9a1a07a53549e5876e60452d6427f354c2e7cf6d"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/avkit/avinterfaceplaybackcontrollable/defaultplaybackspeed.json": {
+      "etag": "\"fcd-65b79411059cd-df\"",
+      "file_path": "documentation/AVKit/avinterfaceplaybackcontrollable/defaultplaybackspeed.md",
+      "hash": "40b12d0c20db3926c3cc1a0b08a076476c02c1418f61da03fb598d03429ba44c"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/avkit/avinterfaceplaybackcontrollable/playbackerror.json": {
+      "etag": "\"121c-65b79411059cd-df\"",
+      "file_path": "documentation/AVKit/avinterfaceplaybackcontrollable/playbackerror.md",
+      "hash": "d01884e1f03855f5a1342b47b1cfcd102e58890f6b53ceba62490a342bfd25d9"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/avkit/avinterfaceplaybackcontrollable/playbackspeed.json": {
+      "etag": "\"ed4-65b79411059cd-df\"",
+      "file_path": "documentation/AVKit/avinterfaceplaybackcontrollable/playbackspeed.md",
+      "hash": "0a106f4980bc60d120c6d4d1bfd1e25d8419e77fcac7bfd2f7d401d02e5bab1e"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/avkit/avinterfaceplaybackcontrollable/playing.json": {
+      "etag": "\"105c-65b79411059cd-df\"",
+      "file_path": "documentation/AVKit/avinterfaceplaybackcontrollable/playing.md",
+      "hash": "28e677cbb59c966aafb265f6d9d9016e1202b1b3cca76dba1d1a8dd221660882"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/avkit/avinterfaceplaybackcontrollable/ready.json": {
+      "etag": "\"1205-65b79411059cd-df\"",
+      "file_path": "documentation/AVKit/avinterfaceplaybackcontrollable/ready.md",
+      "hash": "77dedf4e6341a111a8a409fa863b38ffee4bc985a0ae5a3857a66e70f5c1971e"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/avkit/avinterfaceplaybackcontrollable/scanspeed.json": {
+      "etag": "\"e6c-65b79411059cd-df\"",
+      "file_path": "documentation/AVKit/avinterfaceplaybackcontrollable/scanspeed.md",
+      "hash": "2278c5d8e309e31e9981c05fd744962543a35c4f0224c14071dc548f40c6e623"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/avkit/avinterfaceplaybackcontrollable/state.json": {
+      "etag": "\"fbf-65b79411059cd-df\"",
+      "file_path": "documentation/AVKit/avinterfaceplaybackcontrollable/state.md",
+      "hash": "5d7b004577340ccdd8ba143f22b5e102390d572cf537313f6246be82a3f09e8e"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/avkit/avinterfaceplaybackcontrollable/supportedseekcapabilities.json": {
+      "etag": "\"1451-65b79411059cd-df\"",
+      "file_path": "documentation/AVKit/avinterfaceplaybackcontrollable/supportedseekcapabilities.md",
+      "hash": "249587d9cff9f4fea1314fdf961db5c2e6fb519cdc8b316ede1425672fc5372e"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/avkit/avinterfaceplaybackstate.json": {
+      "etag": "\"1657-65b79410ce693-df\"",
+      "file_path": "documentation/AVKit/avinterfaceplaybackstate.md",
+      "hash": "8169ef66049cf9fd76b298c1bcf56af8ac572c211789756fea7e1f1640a59d71"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/avkit/avinterfaceplaybackstate/avinterfaceplaybackstatenormal.json": {
+      "etag": "\"c9c-65b7941033d6e-df\"",
+      "file_path": "documentation/AVKit/avinterfaceplaybackstate/avinterfaceplaybackstatenormal.md",
+      "hash": "e38fafde12c07ee91732b4d9de726687781d6cd8cfdd8bcf3f28193cc14a7e08"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/avkit/avinterfaceplaybackstate/avinterfaceplaybackstatescanning.json": {
+      "etag": "\"cf8-65b7941033d6e-df\"",
+      "file_path": "documentation/AVKit/avinterfaceplaybackstate/avinterfaceplaybackstatescanning.md",
+      "hash": "a2398146d6fab434debfee295dec25c59c8869a14db9032256e1afe4ad66bf77"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/avkit/avinterfaceplaybackstate/avinterfaceplaybackstatescrubbing.json": {
+      "etag": "\"d06-65b7941033d6e-df\"",
+      "file_path": "documentation/AVKit/avinterfaceplaybackstate/avinterfaceplaybackstatescrubbing.md",
+      "hash": "b0154e760d9c76894bb512af7be591d20b2e64fb8c53219440d1dde2d416645c"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/avkit/avinterfaceseekcapabilities.json": {
+      "etag": "\"1b54-65b7941160707-df\"",
+      "file_path": "documentation/AVKit/avinterfaceseekcapabilities.md",
+      "hash": "1e9477295598c735b78d7ef0e8cb185bd1df67677c96bc7b81b640b2c1022cd9"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/avkit/avinterfaceseekcapabilities/avinterfaceseekcapabilitiesnone.json": {
+      "etag": "\"cf1-65b7941160707-df\"",
+      "file_path": "documentation/AVKit/avinterfaceseekcapabilities/avinterfaceseekcapabilitiesnone.md",
+      "hash": "0995e64d4dc57941d19c0348f2cf63daeb701e1e7c1a965fc50e9f03b31009ec"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/avkit/avinterfaceseekcapabilities/avinterfaceseekcapabilitiesscanbackward.json": {
+      "etag": "\"e29-65b7941160707-df\"",
+      "file_path": "documentation/AVKit/avinterfaceseekcapabilities/avinterfaceseekcapabilitiesscanbackward.md",
+      "hash": "fd8bd0716bb424d6a6d57c66e1191d3b0acc7cdeace1f73227a9648ed16bdd54"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/avkit/avinterfaceseekcapabilities/avinterfaceseekcapabilitiesscanforward.json": {
+      "etag": "\"e17-65b7941160707-df\"",
+      "file_path": "documentation/AVKit/avinterfaceseekcapabilities/avinterfaceseekcapabilitiesscanforward.md",
+      "hash": "1f43f75e1e3bcbd1692a5020f3216168aa32956e2175c71ac2546af109106c6c"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/avkit/avinterfaceseekcapabilities/avinterfaceseekcapabilitiesseek.json": {
+      "etag": "\"db1-65b7941160707-df\"",
+      "file_path": "documentation/AVKit/avinterfaceseekcapabilities/avinterfaceseekcapabilitiesseek.md",
+      "hash": "2cc94e66d834483594aa1c944d6e91b3ecfe844c2cd3caab4f57976b16d2b04b"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/avkit/avinterfacetimecontrollable.json": {
+      "etag": "\"27c9-65b79410ce693-df\"",
+      "file_path": "documentation/AVKit/avinterfacetimecontrollable.md",
+      "hash": "53606c5ff23d06eabd9e760f9511dd1781923ed7c1571d1bb2626f9901e3e973"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/avkit/avinterfacetimecontrollable/currentplaybackposition.json": {
+      "etag": "\"1331-65b7941004b43-df\"",
+      "file_path": "documentation/AVKit/avinterfacetimecontrollable/currentplaybackposition.md",
+      "hash": "d0eecfc03d6982c78b1746088480e128301d1785fcc48002908c42b38e20da0e"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/avkit/avinterfacetimecontrollable/currentsegment.json": {
+      "etag": "\"12c1-65b7941004b43-df\"",
+      "file_path": "documentation/AVKit/avinterfacetimecontrollable/currentsegment.md",
+      "hash": "1a6a72a6f8ebcbb4a739a5e85f60887f9ba9d2089dbdb40ff2e2cd2b1e213fc6"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/avkit/avinterfacetimecontrollable/seekabletimeranges.json": {
+      "etag": "\"1605-65b7941004b43-df\"",
+      "file_path": "documentation/AVKit/avinterfacetimecontrollable/seekabletimeranges.md",
+      "hash": "c6cd8b43fbcdab2ec7413041b8ab7441665c50a6ed13bc56a6ca7b1f4271098a"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/avkit/avinterfacetimecontrollable/segments.json": {
+      "etag": "\"1057-65b7941004b43-df\"",
+      "file_path": "documentation/AVKit/avinterfacetimecontrollable/segments.md",
+      "hash": "a993379460b648571cf6a2be75957cc3ae9d84a7fdf4689616db657a608ffeb2"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/avkit/avinterfacetimecontrollable/timerange.json": {
+      "etag": "\"1257-65b7941004b43-df\"",
+      "file_path": "documentation/AVKit/avinterfacetimecontrollable/timerange.md",
+      "hash": "cb8d5543ba4e93d7f858d7a2c437d59d6a34880b62f2704604b84281b28f007f"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/avkit/avinterfacetimelinesegment.json": {
+      "etag": "\"2aaf-65b7941049b07-df\"",
+      "file_path": "documentation/AVKit/avinterfacetimelinesegment.md",
+      "hash": "680e81d9ed08051a69f7f02454d8490ce13950b0479da2b7f6e3aba6b6503c54"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/avkit/avinterfacetimelinesegment/auxiliarycontent.json": {
+      "etag": "\"1164-65b79410ce693-df\"",
+      "file_path": "documentation/AVKit/avinterfacetimelinesegment/auxiliarycontent.md",
+      "hash": "95432bc967a004a97eb3b62821637a34028c92d4f76467eb9d1601d216c3685e"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/avkit/avinterfacetimelinesegment/identifier.json": {
+      "etag": "\"11dd-65b79410ce693-df\"",
+      "file_path": "documentation/AVKit/avinterfacetimelinesegment/identifier.md",
+      "hash": "5004d57aa04e61714bf90dc40245da8ef359426138b64fa9d7a27c1279cb41eb"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/avkit/avinterfacetimelinesegment/initwithtimerange:auxiliarycontent:marked:requireslinearplayback:identifier:.json": {
+      "etag": "\"20f7-65b79410ce693-df\"",
+      "file_path": "documentation/AVKit/avinterfacetimelinesegment/initwithtimerange_auxiliarycontent_marked_requireslinearplayback_identifier_.md",
+      "hash": "ab5380893014844aeb0847f10a8425e7a8f3ee5a8169cfcbb70b125873fdace4"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/avkit/avinterfacetimelinesegment/marked.json": {
+      "etag": "\"fe2-65b79410ce693-df\"",
+      "file_path": "documentation/AVKit/avinterfacetimelinesegment/marked.md",
+      "hash": "af95c8fe024ee271bc8665ffecc68dd089b5bee3d9a34e635dd176fdf59fef0e"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/avkit/avinterfacetimelinesegment/requireslinearplayback.json": {
+      "etag": "\"1094-65b79410ce693-df\"",
+      "file_path": "documentation/AVKit/avinterfacetimelinesegment/requireslinearplayback.md",
+      "hash": "5ef78ea990b948de39309f12fe4270ac5e6a589b16efec202d6c58b4f5570d54"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/avkit/avinterfacetimelinesegment/timerange.json": {
+      "etag": "\"10fa-65b79410ce693-df\"",
+      "file_path": "documentation/AVKit/avinterfacetimelinesegment/timerange.md",
+      "hash": "08f0800f634e24cd3c020604d880d4ccc93dc8240bb808146e06140751c7909c"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/avkit/avinterfaceurlalbumartwork.json": {
+      "etag": "\"125c-65b7940fdd010-df\"",
+      "file_path": "documentation/AVKit/avinterfaceurlalbumartwork.md",
+      "hash": "fa05ccb882ec692a7674086299d93abf6dc7fe1f85dc0ab69693dd6bee525ff8"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/avkit/avinterfaceurlalbumartwork/contenttype.json": {
+      "etag": "\"12c4-65b794101c499-df\"",
+      "file_path": "documentation/AVKit/avinterfaceurlalbumartwork/contenttype.md",
+      "hash": "bc3e3ab9efebb3326ebf0f175f9b501ebc259f4efc585a3a1ce17e2bbac85e9c"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/avkit/avinterfaceurlalbumartwork/url.json": {
+      "etag": "\"10a3-65b794101c499-df\"",
+      "file_path": "documentation/AVKit/avinterfaceurlalbumartwork/url.md",
+      "hash": "125d1911ba22681d35a6075296be1b3b391382872e9ce20ae4480f88598d4079"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/avkit/avinterfacevolumecontrollable.json": {
+      "etag": "\"1c16-65b79411059cd-df\"",
+      "file_path": "documentation/AVKit/avinterfacevolumecontrollable.md",
+      "hash": "71a912b043c695656a4ce54b939ea70dfd85b1f85badd6803a0f5c14253b7b3e"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/avkit/avinterfacevolumecontrollable/hasaudio.json": {
+      "etag": "\"1052-65b79410ce693-df\"",
+      "file_path": "documentation/AVKit/avinterfacevolumecontrollable/hasaudio.md",
+      "hash": "2013bee5f0b57663a060b2ae9c2af4fb22e258480b1cc7a7df51f3f69a08adf9"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/avkit/avinterfacevolumecontrollable/muted.json": {
+      "etag": "\"104e-65b79410ce693-df\"",
+      "file_path": "documentation/AVKit/avinterfacevolumecontrollable/muted.md",
+      "hash": "fe69ef7870289a9f2981a7a36d21336ffd50d2fab2891bc36a9796fa3d8e0781"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/avkit/avinterfacevolumecontrollable/volume.json": {
+      "etag": "\"ee6-65b79410ce693-df\"",
+      "file_path": "documentation/AVKit/avinterfacevolumecontrollable/volume.md",
+      "hash": "40dc2215e09960b7fc063d6f404f45ca2009ac18b082f98e20b80bea74006231"
+    },
     "https://developer.apple.com/tutorials/data/documentation/avkit/avinterstitialtimerange.json": {
       "etag": "\"5b7e-65d55ee2d9b5f-df\"",
       "file_path": "documentation/AVKit/avinterstitialtimerange.md",
@@ -3674,6 +4804,56 @@
       "etag": "\"d209-65b7941004b43-df\"",
       "file_path": "documentation/AVKit/avkit-playback-interfaces.md",
       "hash": "7ff20cd910ccfbb6d3bc30589e53430c8cd74e2d0ab99b332dbe07b2449e4442"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/avkit/avkit_exclude_vision_os_api_available.json": {
+      "etag": "\"2400-65d55ee310052-df\"",
+      "file_path": "documentation/AVKit/avkit_exclude_vision_os_api_available.md",
+      "hash": "cd239698e83d2bed344b5e86260ef23d276cfa76b34beae30dfe8c7a8e938901"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/avkit/avkit_exclude_vision_os_api_unavailable.json": {
+      "etag": "\"240c-65d55ee356eab-df\"",
+      "file_path": "documentation/AVKit/avkit_exclude_vision_os_api_unavailable.md",
+      "hash": "342f63e1b5ada6ee47b84be1c897e7d9a9631ec0087b9b4aa47bf66ff236f1cc"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/avkit/avkit_exclude_vision_os_extern.json": {
+      "etag": "\"23b7-65d55ee2d9b5f-df\"",
+      "file_path": "documentation/AVKit/avkit_exclude_vision_os_extern.md",
+      "hash": "a1cf599eed0c86bf37faf51d241cc0520f037be257bc1059188d9c21b762e1dd"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/avkit/avkit_extern.json": {
+      "etag": "\"234b-65d55ee356eab-df\"",
+      "file_path": "documentation/AVKit/avkit_extern.md",
+      "hash": "d1ee2a7eee2a509850dccd2133f65a103c1f97753329c1b037a76c8b1880f104"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/avkit/avkit_init_unavailable.json": {
+      "etag": "\"2387-65d55ee37fded-df\"",
+      "file_path": "documentation/AVKit/avkit_init_unavailable.md",
+      "hash": "665e7538492c7378009211c5ca75c884488640e3baee108caf7b8b165b3915ed"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/avkit/avkit_only_api_available.json": {
+      "etag": "\"23b2-65d55ee33f4ec-df\"",
+      "file_path": "documentation/AVKit/avkit_only_api_available.md",
+      "hash": "6ad5e2dba0eff747c4dfde40949a0a0bc1968c168c3e2bb35dc03cec29914a13"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/avkit/avkit_only_api_deprecated_with_replacement.json": {
+      "etag": "\"241e-65d55ee310052-df\"",
+      "file_path": "documentation/AVKit/avkit_only_api_deprecated_with_replacement.md",
+      "hash": "c1711b7333c065137c7e4a7a56a0224a3c627f7c8ec1548de850ba3328badecb"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/avkit/avkit_only_api_unavailable.json": {
+      "etag": "\"23be-65d55ee310052-df\"",
+      "file_path": "documentation/AVKit/avkit_only_api_unavailable.md",
+      "hash": "b9480f5c18ec969cd1d5a91ba1523d2ac4ddec41c1cc7dde19ad353f35b78be6"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/avkit/avkit_only_extern.json": {
+      "etag": "\"2369-65d55ee37fded-df\"",
+      "file_path": "documentation/AVKit/avkit_only_extern.md",
+      "hash": "460bf09958e4bfc4a849a524a3ccc7fc75e78e7660c3a73086e85d6617e5ba3b"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/avkit/avkiterror-c.enum/avkiterrorrecordingfailed.json": {
+      "etag": "\"e5b-65b7941061733-df\"",
+      "file_path": "documentation/AVKit/avkiterror-c.enum/avkiterrorrecordingfailed.md",
+      "hash": "ad190363d4e135ebda97ee355aac1927e325462c3431152f1eaadcbe6f26f2e4"
     },
     "https://developer.apple.com/tutorials/data/documentation/avkit/avkiterror-swift.struct.json": {
       "etag": "\"2952-65d55ee356eab-df\"",
@@ -3789,6 +4969,21 @@
       "etag": "\"2c0c-65d55ee20d2d9-df\"",
       "file_path": "documentation/AVKit/avkitmetadataidentifierserviceidentifier.md",
       "hash": "70c4cdac2def7769177435ace39dbe049da05f2916328fa9f7c0d44710bbd6a2"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/avkit/avkitplatformcolorclass.json": {
+      "etag": "\"238d-65d55ee2f3b37-df\"",
+      "file_path": "documentation/AVKit/avkitplatformcolorclass.md",
+      "hash": "5bd715563eb8fd63049118490b25680e1e463c992606cf644fd2f81df66a8d89"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/avkit/avkitplatformfontclass.json": {
+      "etag": "\"2387-65d55ee23b42e-df\"",
+      "file_path": "documentation/AVKit/avkitplatformfontclass.md",
+      "hash": "583548349345a2dbcf1da8c1e1392c10c5c945828a9c64be485713d07401599a"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/avkit/avkitplatformviewclass.json": {
+      "etag": "\"2387-65d55ee37fded-df\"",
+      "file_path": "documentation/AVKit/avkitplatformviewclass.md",
+      "hash": "5f4979dcd5cc5dec46fa758137abf0e10b386f7996c831117ddb1e7e24f9d13d"
     },
     "https://developer.apple.com/tutorials/data/documentation/avkit/avlegiblemediaoptionsmenucontroller.json": {
       "etag": "\"678c-65d55ee310052-df\"",
@@ -4230,6 +5425,41 @@
       "file_path": "documentation/AVKit/avplaybackuserinterfacecontentartwork/size.md",
       "hash": "a79ff5056b551d67a33fec321c6cdeaac03c24edcc26691531bdfe3087870c95"
     },
+    "https://developer.apple.com/tutorials/data/documentation/avkit/avplaybackuserinterfacecontentmetadata-c.class.json": {
+      "etag": "\"4098-65d55ee3287e7-df\"",
+      "file_path": "documentation/AVKit/avplaybackuserinterfacecontentmetadata-c.class.md",
+      "hash": "f68f306623114c2ac40d9dce1d777137d9b33cb65db18b54fbfc1bd99c3e5414"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/avkit/avplaybackuserinterfacecontentmetadata-c.class/artworkrepresentations.json": {
+      "etag": "\"1306-65d55ee310052-df\"",
+      "file_path": "documentation/AVKit/avplaybackuserinterfacecontentmetadata-c.class/artworkrepresentations.md",
+      "hash": "8604d244079578c7eb79c0fcd90c39a0f4b329bb1ea269b8340e5da720a1e2f5"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/avkit/avplaybackuserinterfacecontentmetadata-c.class/initwithtemplate:.json": {
+      "etag": "\"1866-65d55ee310052-df\"",
+      "file_path": "documentation/AVKit/avplaybackuserinterfacecontentmetadata-c.class/initwithtemplate_.md",
+      "hash": "839462100322458d4f2c14d8fab7851138a9721cb4b37a5a9c93f1b5d30bbd9b"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/avkit/avplaybackuserinterfacecontentmetadata-c.class/initwithvideoproperties:title:subtitle:artworkrepresentations:.json": {
+      "etag": "\"1e1e-65d55ee2f3b37-df\"",
+      "file_path": "documentation/AVKit/avplaybackuserinterfacecontentmetadata-c.class/initwithvideoproperties_title_subtitle_artworkrepresentations_.md",
+      "hash": "c86422ee34aacf14ac06dc217458443fbdd8858e4a95eade96bc27e52228ef8e"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/avkit/avplaybackuserinterfacecontentmetadata-c.class/subtitle.json": {
+      "etag": "\"1432-65d55ee2f3b37-df\"",
+      "file_path": "documentation/AVKit/avplaybackuserinterfacecontentmetadata-c.class/subtitle.md",
+      "hash": "f2e514d6e3d34146ab084f1fa5c66736f371ca3fee8ae0239784ee8bcd685fb5"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/avkit/avplaybackuserinterfacecontentmetadata-c.class/title.json": {
+      "etag": "\"13f8-65d55ee310052-df\"",
+      "file_path": "documentation/AVKit/avplaybackuserinterfacecontentmetadata-c.class/title.md",
+      "hash": "9df427662ebec7a67ac6ae9b5176ccb20d672b4e29ff9391cc292c43b418d7f0"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/avkit/avplaybackuserinterfacecontentmetadata-c.class/videoproperties.json": {
+      "etag": "\"1312-65d55ee2f3b37-df\"",
+      "file_path": "documentation/AVKit/avplaybackuserinterfacecontentmetadata-c.class/videoproperties.md",
+      "hash": "704a26659910e80a3fe72e9e32bc7237086a1a390f2740fe1245b92f0367d68e"
+    },
     "https://developer.apple.com/tutorials/data/documentation/avkit/avplaybackuserinterfacecontentmetadata-swift.struct.json": {
       "etag": "\"434e-65d55ee33f4ec-df\"",
       "file_path": "documentation/AVKit/avplaybackuserinterfacecontentmetadata-swift.struct.md",
@@ -4275,6 +5505,31 @@
       "file_path": "documentation/AVKit/avplaybackuserinterfacecontentmetadata-swift.struct/videoproperties-swift.struct/presentationsize.md",
       "hash": "b8c9a61f006f367bb876affb3ffb4c01dbc080618ad0e7926c4441d817a61e27"
     },
+    "https://developer.apple.com/tutorials/data/documentation/avkit/avplaybackuserinterfacecontentmetadatatemplate.json": {
+      "etag": "\"41b9-65d55ee2c18f1-df\"",
+      "file_path": "documentation/AVKit/avplaybackuserinterfacecontentmetadatatemplate.md",
+      "hash": "7c370459902591e42913b8a9d9b6bfe3f6520f94b2e3efeedf0d2553ac3924b4"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/avkit/avplaybackuserinterfacecontentmetadatatemplate/artworkrepresentations.json": {
+      "etag": "\"131f-65d55ee2f3b37-df\"",
+      "file_path": "documentation/AVKit/avplaybackuserinterfacecontentmetadatatemplate/artworkrepresentations.md",
+      "hash": "e49bac45e4f6ac7e17be3e0399075401b1f1a421580754cce5e3fb6a36b78c4d"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/avkit/avplaybackuserinterfacecontentmetadatatemplate/subtitle.json": {
+      "etag": "\"144b-65d55ee2f3b37-df\"",
+      "file_path": "documentation/AVKit/avplaybackuserinterfacecontentmetadatatemplate/subtitle.md",
+      "hash": "1d68d1bbbb24700fad11abc419adb0d0c5fb08646f682ebb516193b14b4691ee"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/avkit/avplaybackuserinterfacecontentmetadatatemplate/title.json": {
+      "etag": "\"1411-65d55ee2f3b37-df\"",
+      "file_path": "documentation/AVKit/avplaybackuserinterfacecontentmetadatatemplate/title.md",
+      "hash": "23aeb030965bc6ac4d265c8a66d599cdcad30a03e7f2673855c61ede2247460c"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/avkit/avplaybackuserinterfacecontentmetadatatemplate/videoproperties.json": {
+      "etag": "\"132b-65d55ee2f3b37-df\"",
+      "file_path": "documentation/AVKit/avplaybackuserinterfacecontentmetadatatemplate/videoproperties.md",
+      "hash": "17534ff063b9c536ca8233e21f6645df2042e71c7fd7fb9612a5cd1e68adb680"
+    },
     "https://developer.apple.com/tutorials/data/documentation/avkit/avplaybackuserinterfacecontenturlartwork.json": {
       "etag": "\"5c05-65d55ee3287e7-df\"",
       "file_path": "documentation/AVKit/avplaybackuserinterfacecontenturlartwork.md",
@@ -4290,10 +5545,65 @@
       "file_path": "documentation/AVKit/avplaybackuserinterfacecontenturlartwork/url.md",
       "hash": "6d38af21a0c2cf630059d1956c9d37804b1857586ee16cee5cdf9572f28f2504"
     },
+    "https://developer.apple.com/tutorials/data/documentation/avkit/avplaybackuserinterfacecontentvideoproperties.json": {
+      "etag": "\"31b2-65d55ee33f4ec-df\"",
+      "file_path": "documentation/AVKit/avplaybackuserinterfacecontentvideoproperties.md",
+      "hash": "5bcc4a2813a12208f8d4201147153696812c47b4046dd2f56e7ac7f6ccff356b"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/avkit/avplaybackuserinterfacecontentvideoproperties/initwithpresentationsize:.json": {
+      "etag": "\"1399-65d55ee33f4ec-df\"",
+      "file_path": "documentation/AVKit/avplaybackuserinterfacecontentvideoproperties/initwithpresentationsize_.md",
+      "hash": "55ed7837eb936122bc1c96fdbde19ac66a5ba10503702c26f5458ddd32c336da"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/avkit/avplaybackuserinterfacecontentvideoproperties/presentationsize.json": {
+      "etag": "\"128f-65d55ee33f4ec-df\"",
+      "file_path": "documentation/AVKit/avplaybackuserinterfacecontentvideoproperties/presentationsize.md",
+      "hash": "6dfd8c5d2557384dc13698d3005a217e73a2b12cce42fb4527bcf184804d305f"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/avkit/avplaybackuserinterfacecontrollable-7ti30.json": {
+      "etag": "\"21e0-65d55ee310052-df\"",
+      "file_path": "documentation/AVKit/avplaybackuserinterfacecontrollable-7ti30.md",
+      "hash": "d1b6df0625699e6b3ba37e340016b60a753c17349b23b39f5fe5045ff3188554"
+    },
     "https://developer.apple.com/tutorials/data/documentation/avkit/avplaybackuserinterfacecontrollable-92fri.json": {
       "etag": "\"2ab2-65d55ee1f347d-df\"",
       "file_path": "documentation/AVKit/avplaybackuserinterfacecontrollable-92fri.md",
       "hash": "f91c8dc0b586c9636c4ddf3d607f14cbd881312550fd2543cac57481b172331b"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/avkit/avplaybackuserinterfacemediaselectioncontrollable-2fftn.json": {
+      "etag": "\"33e0-65d55ee37fded-df\"",
+      "file_path": "documentation/AVKit/avplaybackuserinterfacemediaselectioncontrollable-2fftn.md",
+      "hash": "1ba8ae644d764d0ec5a85b5ccfb768839d73c9cc548f4e7fdd05c1b858eb4acd"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/avkit/avplaybackuserinterfacemediaselectioncontrollable-2fftn/audiodescriptionoptions.json": {
+      "etag": "\"1534-65d55ee23b42e-df\"",
+      "file_path": "documentation/AVKit/avplaybackuserinterfacemediaselectioncontrollable-2fftn/audiodescriptionoptions.md",
+      "hash": "bc34e6d05acf522b1e0f1abed29c05f55bfbd95c441049fe2574d4acb445c564"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/avkit/avplaybackuserinterfacemediaselectioncontrollable-2fftn/audiooptions.json": {
+      "etag": "\"12b2-65d55ee23b42e-df\"",
+      "file_path": "documentation/AVKit/avplaybackuserinterfacemediaselectioncontrollable-2fftn/audiooptions.md",
+      "hash": "d991f667d46b286a868f823f7278ea7e6740e726120139a2892c9a70981773c2"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/avkit/avplaybackuserinterfacemediaselectioncontrollable-2fftn/currentaudiodescriptionoption.json": {
+      "etag": "\"1806-65d55ee23b42e-df\"",
+      "file_path": "documentation/AVKit/avplaybackuserinterfacemediaselectioncontrollable-2fftn/currentaudiodescriptionoption.md",
+      "hash": "64190c5d615312d79ea7ec39328c46e70c9a7058688db017a1bcdbc9eee1ba6b"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/avkit/avplaybackuserinterfacemediaselectioncontrollable-2fftn/currentaudiooption.json": {
+      "etag": "\"1754-65d55ee23b42e-df\"",
+      "file_path": "documentation/AVKit/avplaybackuserinterfacemediaselectioncontrollable-2fftn/currentaudiooption.md",
+      "hash": "56b85b8617c3908bd114cc05477f2b8e25f26a352c540811f8a68282df3b2f0b"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/avkit/avplaybackuserinterfacemediaselectioncontrollable-2fftn/currentlegibleoption.json": {
+      "etag": "\"178c-65d55ee23b42e-df\"",
+      "file_path": "documentation/AVKit/avplaybackuserinterfacemediaselectioncontrollable-2fftn/currentlegibleoption.md",
+      "hash": "cc832e304a0440fd54aa38315482f433faf3d43a121b926b9bc597efa7537619"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/avkit/avplaybackuserinterfacemediaselectioncontrollable-2fftn/legibleoptions.json": {
+      "etag": "\"120a-65d55ee23b42e-df\"",
+      "file_path": "documentation/AVKit/avplaybackuserinterfacemediaselectioncontrollable-2fftn/legibleoptions.md",
+      "hash": "44921fbe23a7aa2884dfbf69ea9964cf9a25dd046ca95fff8e300c17a4bfbf01"
     },
     "https://developer.apple.com/tutorials/data/documentation/avkit/avplaybackuserinterfacemediaselectioncontrollable-8ee5z.json": {
       "etag": "\"363e-65d55ee23b42e-df\"",
@@ -4340,6 +5650,11 @@
       "file_path": "documentation/AVKit/avplaybackuserinterfacemediaselectionoption/displayname.md",
       "hash": "b40a21d86714cbcb87786e19d57ad4c074fe0d86a6b3deaf89d68da42b125cd3"
     },
+    "https://developer.apple.com/tutorials/data/documentation/avkit/avplaybackuserinterfacemediaselectionoption/extendedlanguagetag.json": {
+      "etag": "\"1911-65d55ee24c80f-df\"",
+      "file_path": "documentation/AVKit/avplaybackuserinterfacemediaselectionoption/extendedlanguagetag.md",
+      "hash": "d0cd3336f6057d25db947471e26053783b6ae12b93cd1c55afcccbdd8e8cc9c1"
+    },
     "https://developer.apple.com/tutorials/data/documentation/avkit/avplaybackuserinterfacemediaselectionoption/identifier.json": {
       "etag": "\"2155-65d55ee24c80f-df\"",
       "file_path": "documentation/AVKit/avplaybackuserinterfacemediaselectionoption/identifier.md",
@@ -4355,6 +5670,11 @@
       "file_path": "documentation/AVKit/avplaybackuserinterfacemediaselectionoption/init(displayname,identifier,language,mediacharacteristics).md",
       "hash": "3cd2a9fe19fa7993973df41c3498b3162745c93729d5b2fac099d7ff7fa03031"
     },
+    "https://developer.apple.com/tutorials/data/documentation/avkit/avplaybackuserinterfacemediaselectionoption/initwithdisplayname:identifier:extendedlanguagetag:mediacharacteristics:.json": {
+      "etag": "\"1f23-65d55ee24c80f-df\"",
+      "file_path": "documentation/AVKit/avplaybackuserinterfacemediaselectionoption/initwithdisplayname_identifier_extendedlanguagetag_mediacharacteristics_.md",
+      "hash": "28ed3dd7e9dfecd67df316ae0cc91cede9a0b8db877a243e529c31ca324bf3d6"
+    },
     "https://developer.apple.com/tutorials/data/documentation/avkit/avplaybackuserinterfacemediaselectionoption/language.json": {
       "etag": "\"1c0f-65d55ee24c80f-df\"",
       "file_path": "documentation/AVKit/avplaybackuserinterfacemediaselectionoption/language.md",
@@ -4365,6 +5685,16 @@
       "file_path": "documentation/AVKit/avplaybackuserinterfacemediaselectionoption/mediacharacteristics.md",
       "hash": "2b58f7f3078b99783232227a44b21c71d72ebd2ffb81ec407f15757579a49623"
     },
+    "https://developer.apple.com/tutorials/data/documentation/avkit/avplaybackuserinterfacemetadataproviding-1w04z.json": {
+      "etag": "\"2bbe-65d55ee37fded-df\"",
+      "file_path": "documentation/AVKit/avplaybackuserinterfacemetadataproviding-1w04z.md",
+      "hash": "75dbfb36128b3a89c236a142b720ae6a91834f8ec777928e1581c9ded5306386"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/avkit/avplaybackuserinterfacemetadataproviding-1w04z/metadata.json": {
+      "etag": "\"1257-65d55ee20d2d9-df\"",
+      "file_path": "documentation/AVKit/avplaybackuserinterfacemetadataproviding-1w04z/metadata.md",
+      "hash": "b995d7e3905ade3c0ffd1f511c0d057dbb71357de7e643ae903aca9e13048ec8"
+    },
     "https://developer.apple.com/tutorials/data/documentation/avkit/avplaybackuserinterfacemetadataproviding-814y4.json": {
       "etag": "\"2a3f-65d55ee369bd6-df\"",
       "file_path": "documentation/AVKit/avplaybackuserinterfacemetadataproviding-814y4.md",
@@ -4374,6 +5704,61 @@
       "etag": "\"178f-65d55ee310052-df\"",
       "file_path": "documentation/AVKit/avplaybackuserinterfacemetadataproviding-814y4/metadata.md",
       "hash": "40575dadd5068790a2b9b3e6901845b2cc4494ac9be00271bc0907f5b5b73c52"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/avkit/avplaybackuserinterfaceplaybackcontrollable-81n66.json": {
+      "etag": "\"45fd-65d55ee310052-df\"",
+      "file_path": "documentation/AVKit/avplaybackuserinterfaceplaybackcontrollable-81n66.md",
+      "hash": "95a7c4499f33317cb648494d5b38c9c6862b8645f9f7f962300994cd099aeffb"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/avkit/avplaybackuserinterfaceplaybackcontrollable-81n66/buffering.json": {
+      "etag": "\"15fa-65d55ee24c80f-df\"",
+      "file_path": "documentation/AVKit/avplaybackuserinterfaceplaybackcontrollable-81n66/buffering.md",
+      "hash": "035965142c1199cdbf67a732d45f7d69d96ac561ef3c1235876f60659595cefc"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/avkit/avplaybackuserinterfaceplaybackcontrollable-81n66/containslivestreamingcontent.json": {
+      "etag": "\"1251-65d55ee24c80f-df\"",
+      "file_path": "documentation/AVKit/avplaybackuserinterfaceplaybackcontrollable-81n66/containslivestreamingcontent.md",
+      "hash": "86052a9d8a71eaec1fee89f494cab351a8e34926fdbb7c735c844398bc89f5c0"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/avkit/avplaybackuserinterfaceplaybackcontrollable-81n66/defaultplaybackspeed.json": {
+      "etag": "\"1093-65b794101c499-df\"",
+      "file_path": "documentation/AVKit/avplaybackuserinterfaceplaybackcontrollable-81n66/defaultplaybackspeed.md",
+      "hash": "f9f84de215fb83d1a2e25981c5f227f737b3d4f0b66a74c8f367d2f2ea9f60ba"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/avkit/avplaybackuserinterfaceplaybackcontrollable-81n66/error.json": {
+      "etag": "\"1368-65d55ee24c80f-df\"",
+      "file_path": "documentation/AVKit/avplaybackuserinterfaceplaybackcontrollable-81n66/error.md",
+      "hash": "66730b41ec63b654f4120b47d29e022ce19fd27b465fa86a33ed26443225997f"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/avkit/avplaybackuserinterfaceplaybackcontrollable-81n66/playbackspeed.json": {
+      "etag": "\"ffd-65d55ee24c80f-df\"",
+      "file_path": "documentation/AVKit/avplaybackuserinterfaceplaybackcontrollable-81n66/playbackspeed.md",
+      "hash": "3faa3b1dfb588aeb6217d0933786400b6abfdc478d4ea426d25da01d96bfe5d0"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/avkit/avplaybackuserinterfaceplaybackcontrollable-81n66/playing.json": {
+      "etag": "\"1421-65d55ee24c80f-df\"",
+      "file_path": "documentation/AVKit/avplaybackuserinterfaceplaybackcontrollable-81n66/playing.md",
+      "hash": "146657cbc34722929efb9150b75b2356ab367407d1774c85266ba65b33ad3f95"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/avkit/avplaybackuserinterfaceplaybackcontrollable-81n66/ready.json": {
+      "etag": "\"13d6-65d55ee24c80f-df\"",
+      "file_path": "documentation/AVKit/avplaybackuserinterfaceplaybackcontrollable-81n66/ready.md",
+      "hash": "f0d841bd3beafbdb3fd50e2751a720ea6698e355ce517da141214a9694f9ffca"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/avkit/avplaybackuserinterfaceplaybackcontrollable-81n66/scanspeed.json": {
+      "etag": "\"1225-65d55ee24c80f-df\"",
+      "file_path": "documentation/AVKit/avplaybackuserinterfaceplaybackcontrollable-81n66/scanspeed.md",
+      "hash": "0a5d9e172d5cffe1efde550071961bc1e31a1abc01fddc7e3e72e7a91de54dcc"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/avkit/avplaybackuserinterfaceplaybackcontrollable-81n66/state.json": {
+      "etag": "\"14c2-65d55ee24c80f-df\"",
+      "file_path": "documentation/AVKit/avplaybackuserinterfaceplaybackcontrollable-81n66/state.md",
+      "hash": "41dfb18e6cec482dc1d927f862e8951963f13349baf3d1391f1ba6f9fa939096"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/avkit/avplaybackuserinterfaceplaybackcontrollable-81n66/supportedseekcapabilities.json": {
+      "etag": "\"1971-65d55ee24c80f-df\"",
+      "file_path": "documentation/AVKit/avplaybackuserinterfaceplaybackcontrollable-81n66/supportedseekcapabilities.md",
+      "hash": "84d1be5d3823dbdd80233073ce37f0cdee7834145f5ff18992a38599b650050a"
     },
     "https://developer.apple.com/tutorials/data/documentation/avkit/avplaybackuserinterfaceplaybackcontrollable-9he54.json": {
       "etag": "\"4366-65d55ee33f4ec-df\"",
@@ -4485,6 +5870,11 @@
       "file_path": "documentation/AVKit/avplaybackuserinterfaceseekcapabilities.md",
       "hash": "02d38c64e826dfd9f21dd4b5800c09cfd1fabb6f366b0aa5eb6669cde3b932c0"
     },
+    "https://developer.apple.com/tutorials/data/documentation/avkit/avplaybackuserinterfaceseekcapabilities/avplaybackuserinterfaceseekcapabilitiesnone.json": {
+      "etag": "\"120b-65d55ee356eab-df\"",
+      "file_path": "documentation/AVKit/avplaybackuserinterfaceseekcapabilities/avplaybackuserinterfaceseekcapabilitiesnone.md",
+      "hash": "ade57261cb33e0bdb7710ef9e89031519e1bf18b870f373063006c1d00ca3101"
+    },
     "https://developer.apple.com/tutorials/data/documentation/avkit/avplaybackuserinterfaceseekcapabilities/init(rawvalue:).json": {
       "etag": "\"13eb-65d55ee356eab-df\"",
       "file_path": "documentation/AVKit/avplaybackuserinterfaceseekcapabilities/init(rawvalue).md",
@@ -4539,6 +5929,41 @@
       "etag": "\"215e-65d55ee222fe3-df\"",
       "file_path": "documentation/AVKit/avplaybackuserinterfacetimecontrollable-50vcy/timerange.md",
       "hash": "19443798142c99061948f4c5f6753af3876ad26ca65579af661913d61fa4d9ff"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/avkit/avplaybackuserinterfacetimecontrollable-62fq2.json": {
+      "etag": "\"45fc-65d55ee310052-df\"",
+      "file_path": "documentation/AVKit/avplaybackuserinterfacetimecontrollable-62fq2.md",
+      "hash": "634086cd30c3dabc89b7451c02ad8413abc21618a823b66a68233e3e64416edf"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/avkit/avplaybackuserinterfacetimecontrollable-62fq2/currentsegment.json": {
+      "etag": "\"17d7-65d55ee2c18f1-df\"",
+      "file_path": "documentation/AVKit/avplaybackuserinterfacetimecontrollable-62fq2/currentsegment.md",
+      "hash": "f2b9bfe75810318c1487b8aba95b111c3e9f15e308b894d00879b521cb0081d7"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/avkit/avplaybackuserinterfacetimecontrollable-62fq2/playbackposition.json": {
+      "etag": "\"178a-65d55ee2d9b5f-df\"",
+      "file_path": "documentation/AVKit/avplaybackuserinterfacetimecontrollable-62fq2/playbackposition.md",
+      "hash": "63e1af9829699bf985dcfc748c28cc6cd3cf0ec7eb1abe012f17afe64faad14f"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/avkit/avplaybackuserinterfacetimecontrollable-62fq2/seekabletimeranges.json": {
+      "etag": "\"17e4-65d55ee2d9b5f-df\"",
+      "file_path": "documentation/AVKit/avplaybackuserinterfacetimecontrollable-62fq2/seekabletimeranges.md",
+      "hash": "eb0b9174a27d5e12b05548c7debc33b9c1cf65580a2aa30aad445f83451bf41e"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/avkit/avplaybackuserinterfacetimecontrollable-62fq2/seektoposition:tolerance:.json": {
+      "etag": "\"164c-65d55ee2d9b5f-df\"",
+      "file_path": "documentation/AVKit/avplaybackuserinterfacetimecontrollable-62fq2/seektoposition_tolerance_.md",
+      "hash": "fce0cccbb5a0fdc76b23d4f179cd8aabaec56872915b05b116f6b8cfb53008ac"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/avkit/avplaybackuserinterfacetimecontrollable-62fq2/segments.json": {
+      "etag": "\"11d0-65d55ee2c18f1-df\"",
+      "file_path": "documentation/AVKit/avplaybackuserinterfacetimecontrollable-62fq2/segments.md",
+      "hash": "66d92f90ada52c717b79ffe4c82c84b039a5c8908486c47bb3854d270b32a2df"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/avkit/avplaybackuserinterfacetimecontrollable-62fq2/timerange.json": {
+      "etag": "\"26d7-65d55ee2d9b5f-df\"",
+      "file_path": "documentation/AVKit/avplaybackuserinterfacetimecontrollable-62fq2/timerange.md",
+      "hash": "0ff46c56355008756b46a8faacc90f5ff345a7c35a527047ed9da1379d2fde1a"
     },
     "https://developer.apple.com/tutorials/data/documentation/avkit/avplaybackuserinterfacetimelinesegment.json": {
       "etag": "\"7dca-65d55ee3287e7-df\"",
@@ -4649,6 +6074,26 @@
       "etag": "\"15a1-65d55ee37fded-df\"",
       "file_path": "documentation/AVKit/avplaybackuserinterfacevolumecontrollable-4vgi1/volume.md",
       "hash": "438ba8e72066b83ba53cdd330e486a0b583e7697b6987bdea57154b790c728b7"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/avkit/avplaybackuserinterfacevolumecontrollable-5ystg.json": {
+      "etag": "\"1de8-65d55ee24c80f-df\"",
+      "file_path": "documentation/AVKit/avplaybackuserinterfacevolumecontrollable-5ystg.md",
+      "hash": "7bd179b48d0487c5ecbf919d220768156448ccfa56813d6f8edf3a72d319b1ae"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/avkit/avplaybackuserinterfacevolumecontrollable-5ystg/hasaudio.json": {
+      "etag": "\"11bf-65d55ee310052-df\"",
+      "file_path": "documentation/AVKit/avplaybackuserinterfacevolumecontrollable-5ystg/hasaudio.md",
+      "hash": "9770db1b0f7a8b613a75cca4a50d681229f0595c4044583e85c3ff30925c4ecc"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/avkit/avplaybackuserinterfacevolumecontrollable-5ystg/muted.json": {
+      "etag": "\"11bb-65d55ee310052-df\"",
+      "file_path": "documentation/AVKit/avplaybackuserinterfacevolumecontrollable-5ystg/muted.md",
+      "hash": "afd525a3ba914a8b95a3f72b5f90721fae17b1c60f4d50cdc70dded0edb46323"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/avkit/avplaybackuserinterfacevolumecontrollable-5ystg/volume.json": {
+      "etag": "\"edd-65d55ee310052-df\"",
+      "file_path": "documentation/AVKit/avplaybackuserinterfacevolumecontrollable-5ystg/volume.md",
+      "hash": "91297851ee721fbc18aca66445f6f03d974847a5625267fc605daf75dbc18a2f"
     },
     "https://developer.apple.com/tutorials/data/documentation/avkit/avplayerview.json": {
       "etag": "\"12a70-65d55ee20d2d9-df\"",
@@ -5135,6 +6580,11 @@
       "file_path": "documentation/AVKit/avplayerviewcontrollerdelegate/playerviewcontroller(_,willtransitiontovisibilityoftransportbar,with).md",
       "hash": "d29a72af6a9647815706aa4ac0f71f425f9123050954e1f59e5a47f906d03db0"
     },
+    "https://developer.apple.com/tutorials/data/documentation/avkit/avplayerviewcontrollerdelegate/playerviewcontroller:didselectexternalsubtitleoptionlanguage:.json": {
+      "etag": "\"2c1a-65d55ee2d9b5f-df\"",
+      "file_path": "documentation/AVKit/avplayerviewcontrollerdelegate/playerviewcontroller_didselectexternalsubtitleoptionlanguage_.md",
+      "hash": "a7647511b0ebf5dfbb14288b18ea6fb4aa331440d67e8190e416bc4b3a0dfeaf"
+    },
     "https://developer.apple.com/tutorials/data/documentation/avkit/avplayerviewcontrollerdelegate/playerviewcontrollerdidenddismissaltransition(_:).json": {
       "etag": "\"34ea-65d55ee2d9b5f-df\"",
       "file_path": "documentation/AVKit/avplayerviewcontrollerdelegate/playerviewcontrollerdidenddismissaltransition(_).md",
@@ -5340,6 +6790,11 @@
       "file_path": "documentation/AVKit/avportalviewport.md",
       "hash": "b52f53fb88ef629c66f9ba7fea38bcbe180fec52d6c95a7833fbb3fd2e91a512"
     },
+    "https://developer.apple.com/tutorials/data/documentation/avkit/avportalviewport/aspectratio-3jqur.json": {
+      "etag": "\"1743-65d55ee222fe3-df\"",
+      "file_path": "documentation/AVKit/avportalviewport/aspectratio-3jqur.md",
+      "hash": "767792dc8824a8cf12f96f0bca84b75b5b8629262433bd2548d9cc46bda60d86"
+    },
     "https://developer.apple.com/tutorials/data/documentation/avkit/avportalviewport/aspectratio-4drnq.json": {
       "etag": "\"1749-65d55ee222fe3-df\"",
       "file_path": "documentation/AVKit/avportalviewport/aspectratio-4drnq.md",
@@ -5469,6 +6924,11 @@
       "etag": "\"579c-65d55ee3287e7-df\"",
       "file_path": "documentation/AVKit/avvideoframeanalysistype.md",
       "hash": "2c3b2f1b0fb2347f424947546a2ec7cd8a5d52a9cccd52e1a46120b88ff53dcf"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/avkit/avvideoframeanalysistype/avvideoframeanalysistypenone.json": {
+      "etag": "\"2a14-65d55ee310052-df\"",
+      "file_path": "documentation/AVKit/avvideoframeanalysistype/avvideoframeanalysistypenone.md",
+      "hash": "883f1cefb8f8439423600d0c7aacd8d7cde75df2f1cb3a81574b770e99891367"
     },
     "https://developer.apple.com/tutorials/data/documentation/avkit/avvideoframeanalysistype/default.json": {
       "etag": "\"33fa-65d55ee310052-df\"",
@@ -5603,8 +7063,8 @@
   },
   "metadata": {
     "render": {
-      "version": 1
+      "version": 2
     },
-    "total_pages": 1120
+    "total_pages": 1412
   }
 }

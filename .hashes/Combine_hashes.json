@@ -215,6 +215,11 @@
       "file_path": "documentation/Combine/customcombineidentifierconvertible/combineidentifier.md",
       "hash": "b06230f4a927769c87085c342bb086fab6382c6d0d224a654ed5cac77713a5e0"
     },
+    "https://developer.apple.com/documentation/combine/customcombineidentifierconvertible/combineidentifier-v253": {
+      "etag": "\"1577-65d55e992190f-df\"",
+      "file_path": "documentation/Combine/customcombineidentifierconvertible/combineidentifier-v253.md",
+      "hash": "ce06a7e4153b89887be86b48777643c479892eac09442d9841a7f1146bcc8d88"
+    },
     "https://developer.apple.com/documentation/combine/deferred": {
       "etag": "\"295a-65d55e9896d85-df\"",
       "file_path": "documentation/Combine/deferred.md",
@@ -706,6 +711,11 @@
       "etag": "\"1cba-65d55e9896d85-df\"",
       "file_path": "documentation/Combine/observableobject/objectwillchange.md",
       "hash": "53fb29b5e3047d529c5b0363399dcd8c84f1b9318e84420aa954fca3fc7ec58a"
+    },
+    "https://developer.apple.com/documentation/combine/observableobject/objectwillchange-5gopl": {
+      "etag": "\"1713-65d55e9896d85-df\"",
+      "file_path": "documentation/Combine/observableobject/objectwillchange-5gopl.md",
+      "hash": "4c6d05f4b5fb0c4407e8d7c07596892db7ec5b4f91af000da5198fb4cb8688ae"
     },
     "https://developer.apple.com/documentation/combine/observableobject/objectwillchangepublisher": {
       "etag": "\"2455-65d55e9896d85-df\"",
@@ -5690,6 +5700,11 @@
       "file_path": "documentation/Combine/customcombineidentifierconvertible.md",
       "hash": "95087fcde7eef3ced73e49b9f90549e204d340c5532bcac40cbf461880ba846e"
     },
+    "https://developer.apple.com/tutorials/data/documentation/combine/customcombineidentifierconvertible/combineidentifier-v253.json": {
+      "etag": "\"1577-65d55e992190f-df\"",
+      "file_path": "documentation/Combine/customcombineidentifierconvertible/combineidentifier-v253.md",
+      "hash": "ce06a7e4153b89887be86b48777643c479892eac09442d9841a7f1146bcc8d88"
+    },
     "https://developer.apple.com/tutorials/data/documentation/combine/customcombineidentifierconvertible/combineidentifier.json": {
       "etag": "\"197e-65d55e992190f-df\"",
       "file_path": "documentation/Combine/customcombineidentifierconvertible/combineidentifier.md",
@@ -6181,6 +6196,11 @@
       "etag": "\"1ded-65d55e9896d85-df\"",
       "file_path": "documentation/Combine/observableobject.md",
       "hash": "540073ea16e893587e1bb30a30cc87836e2b0dfca769a15855a1aaad74fa4fc3"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/combine/observableobject/objectwillchange-5gopl.json": {
+      "etag": "\"1713-65d55e9896d85-df\"",
+      "file_path": "documentation/Combine/observableobject/objectwillchange-5gopl.md",
+      "hash": "4c6d05f4b5fb0c4407e8d7c07596892db7ec5b4f91af000da5198fb4cb8688ae"
     },
     "https://developer.apple.com/tutorials/data/documentation/combine/observableobject/objectwillchange.json": {
       "etag": "\"1cba-65d55e9896d85-df\"",
@@ -10963,8 +10983,8 @@
   },
   "metadata": {
     "render": {
-      "version": 1
+      "version": 2
     },
-    "total_pages": 2210
+    "total_pages": 2214
   }
 }

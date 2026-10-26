@@ -38,6 +38,8 @@ One or more of the values in the `UIRemoteNotificationType` bit mask are passed 
   The app accepts alert messages as notifications.
 - [static var newsstandContentAvailability: UIRemoteNotificationType](./uiremotenotificationtype/newsstandcontentavailability.md)
   The app accepts notifications that start the downloading of issue assets for Newsstand apps.
+- [UIRemoteNotificationTypeNone](./uiremotenotificationtype/uiremotenotificationtypenone.md)
+  The app accepts no notifications.
 ### Initializers
 - [init(rawValue: UInt)](./uiremotenotificationtype/init%28rawvalue%29.md)
 
@@ -86,6 +88,8 @@ One or more of the values in the `UIRemoteNotificationType` bit mask are passed 
   Sets the app’s status bar to the specified orientation, optionally animating the transition.
 - [func registerUserNotificationSettings(UIUserNotificationSettings)](./uiapplication/registerusernotificationsettings%28_%29.md)
   Registers your preferred options for notifying the user.
+- [- setStatusBarHidden:animated:](./uiapplication/setstatusbarhidden_animated_.md)
+  Hides or shows the status bar, optionally animating the transition.
 
 
 ---

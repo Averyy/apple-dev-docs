@@ -65,6 +65,8 @@ sprite.setValue(SKAttributeValue(vectorFloat2: spriteSize),
   The receiver’s name
 - [var type: SKAttributeType](./skattribute/type.md)
   The data type of the attribute’s value.
+### Type Methods
+- [+ attributeWithName:type:](./skattribute/attributewithname_type_.md)
 
 ## Relationships
 

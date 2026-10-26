@@ -25,6 +25,8 @@ class CMIOExtensionStreamProperties
 ### Creating Stream Properties
 - [init(dictionary: [CMIOExtensionProperty : CMIOExtensionPropertyState<AnyObject>])](./cmioextensionstreamproperties/init%28dictionary%29.md)
   Creates a properties object that provides the specified properties and default states.
+- [+ streamPropertiesWithDictionary:](./cmioextensionstreamproperties/streampropertieswithdictionary_.md)
+  Returns a new properties object that provides the specified properties and default states.
 ### Configuring Sink Properties
 - [var sinkBufferQueueSize: Int?](./cmioextensionstreamproperties/sinkbufferqueuesize-9b80c.md)
   The buffer queue size.
@@ -34,12 +36,26 @@ class CMIOExtensionStreamProperties
   The buffer underrun count.
 - [var sinkEndOfData: Int?](./cmioextensionstreamproperties/sinkendofdata-8fswu.md)
   A value that indicates whether the stream has reached its end.
+- [sinkBufferQueueSize](./cmioextensionstreamproperties/sinkbufferqueuesize-4kpug.md)
+  The buffer queue size.
+- [sinkBuffersRequiredForStartup](./cmioextensionstreamproperties/sinkbuffersrequiredforstartup-4b5te.md)
+  The number of buffers the stream requires for startup.
+- [sinkBufferUnderrunCount](./cmioextensionstreamproperties/sinkbufferunderruncount-9sph5.md)
+  The buffer underrun count.
+- [sinkEndOfData](./cmioextensionstreamproperties/sinkendofdata-30he9.md)
+  A value that indicates whether the stream has reached its end.
 ### Configuring Source Properties
 - [var activeFormatIndex: Int?](./cmioextensionstreamproperties/activeformatindex-83u7z.md)
   The index of the active format.
 - [var frameDuration: CMTime?](./cmioextensionstreamproperties/frameduration-4rnl9.md)
   The duration of the frame.
 - [var maxFrameDuration: CMTime?](./cmioextensionstreamproperties/maxframeduration-5qqg.md)
+  The maximum duration of a frame.
+- [activeFormatIndex](./cmioextensionstreamproperties/activeformatindex-8czm7.md)
+  The index of the active format.
+- [frameDuration](./cmioextensionstreamproperties/frameduration-lrfi.md)
+  A dictionary representation of a frame duration.
+- [maxFrameDuration](./cmioextensionstreamproperties/maxframeduration-8fo5t.md)
   The maximum duration of a frame.
 ### Managing Property State
 - [var propertiesDictionary: [CMIOExtensionProperty : CMIOExtensionPropertyState<AnyObject>]](./cmioextensionstreamproperties/propertiesdictionary.md)

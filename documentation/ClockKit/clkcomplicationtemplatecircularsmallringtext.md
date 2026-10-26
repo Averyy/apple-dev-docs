@@ -32,6 +32,8 @@ This template belongs to the [`CLKComplicationFamily.circularSmall`](./clkcompli
 ### Creating the Template
 - [init(textProvider: CLKTextProvider, fillFraction: Float, ringStyle: CLKComplicationRingStyle)](./clkcomplicationtemplatecircularsmallringtext/init%28textprovider,fillfraction,ringstyle%29.md)
   Creates a new template from the provided text, fill fraction, and ring style.
+- [+ templateWithTextProvider:fillFraction:ringStyle:](./clkcomplicationtemplatecircularsmallringtext/templatewithtextprovider_fillfraction_ringstyle_.md)
+  Returns a new template from the provided text, fill fraction, and ring style.
 ### Setting the Complication Data
 - [var textProvider: CLKTextProvider](./clkcomplicationtemplatecircularsmallringtext/textprovider.md)
   The text to display in the complication.

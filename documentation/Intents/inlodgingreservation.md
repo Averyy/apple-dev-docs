@@ -31,6 +31,10 @@ class INLodgingReservation
   Creates a lodging reservation with the specified contents and attributes.
 - [convenience init(itemReference: INSpeakableString, reservationNumber: String?, bookingTime: Date?, reservationStatus: INReservationStatus, reservationHolderName: String?, actions: [INReservationAction]?, lodgingBusinessLocation: CLPlacemark, reservationDuration: INDateComponentsRange, numberOfAdults: Int?, numberOfChildren: Int?)](./inlodgingreservation/init%28itemreference,reservationnumber,bookingtime,reservationstatus,reservationholdername,actions,lodgingbusinesslocation,reservationduration,numberofadults,numberofchildren%29.md)
   Creates a new lodging reservation with the provided information.
+- [- initWithItemReference:reservationNumber:bookingTime:reservationStatus:reservationHolderName:actions:URL:lodgingBusinessLocation:reservationDuration:numberOfAdults:numberOfChildren:](./inlodgingreservation/initwithitemreference_reservationnumber_bookingtime_reservationstatus_reservationholdername_actions_url_lodgingbusinesslocation_reservationduration_numberofadults_numberofchildren_.md)
+  Creates a lodging reservation with the specified contents and attributes.
+- [- initWithItemReference:reservationNumber:bookingTime:reservationStatus:reservationHolderName:actions:lodgingBusinessLocation:reservationDuration:numberOfAdults:numberOfChildren:](./inlodgingreservation/initwithitemreference_reservationnumber_bookingtime_reservationstatus_reservationholdername_actions_lodgingbusinesslocation_reservationduration_numberofadults_numberofchildren_.md)
+  Creates a new lodging reservation with the provided information.
 ### Getting the Lodging Reservation Information
 - [var lodgingBusinessLocation: CLPlacemark](./inlodgingreservation/lodgingbusinesslocation.md)
   The name and location of the lodging establishment.
@@ -39,6 +43,10 @@ class INLodgingReservation
 - [var numberOfAdults: Int?](./inlodgingreservation/numberofadults-6fsnq.md)
   The number of adults staying at the lodging location.
 - [var numberOfChildren: Int?](./inlodgingreservation/numberofchildren-1dm3g.md)
+  The number of children staying at the lodging location.
+- [numberOfAdults](./inlodgingreservation/numberofadults-9r4iw.md)
+  The number of adults staying at the lodging location.
+- [numberOfChildren](./inlodgingreservation/numberofchildren-2n3e2.md)
   The number of children staying at the lodging location.
 
 ## Relationships

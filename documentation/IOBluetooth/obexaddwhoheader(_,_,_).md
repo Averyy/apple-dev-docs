@@ -66,6 +66,8 @@ Who headers - OBEX Spec, 2.2.10: Byte Sequence
   Add a CFStringRef to a dictionary of OBEXheaders.
 - [func OBEXAddTimeISOHeader(UnsafeRawPointer!, UInt32, CFMutableDictionary!) -> OBEXError](./obexaddtimeisoheader%28_,_,_%29.md)
   Add bytes to a dictionary of OBEXheaders.
+- [GET_HEADER_ID_IS_NULL_TERMINATED_UNICODE_TEXT](./get_header_id_is_null_terminated_unicode_text.md)
+  Convenience Macros for working with OBEX Header Identifiers.
 
 
 ---

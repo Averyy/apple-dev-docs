@@ -15,7 +15,7 @@ After your app receives a user’s information, you can verify their associated 
 
 Start by securely transmitting the identity token and authorization code to your app server. For more about the information required to verify a user’s identity, see [Authenticating users with Sign in with Apple](./authenticating-users-with-sign-in-with-apple.md).
 
-> **Note**:  To obtain the identity token from their server, web apps must validate the authorization code using the [`Token validation`](https://developer.apple.com/documentation/signinwithapplerestapi/generate-and-validate-tokens) endpoint.
+> **Note**:  To obtain the identity token from their server, web apps must validate the authorization code using the [`Token validation`](../SigninwithAppleRESTAPI/generate-and-validate-tokens.md) endpoint.
 
 To verify the identity token, your app server must:
 
@@ -25,11 +25,11 @@ To verify the identity token, your app server must:
 - Verify that the `aud` field is the developer’s `client_id`
 - Verify that the time is earlier than the `exp` value of the token
 
-For more information, see [`id_token`](https://developer.apple.com/documentation/signinwithapplejs/authorizationi/id_token).
+For more information, see [`id_token`](../SigninwithAppleJS/authorizationi/id_token.md).
 
 ##### Obtain a refresh token
 
-After verifying the identity token on your server, call the [`Token validation`](https://developer.apple.com/documentation/signinwithapplerestapi/generate-and-validate-tokens) endpoint with the `client_id`, `client_secret`, and `nonce` information.
+After verifying the identity token on your server, call the [`Token validation`](../SigninwithAppleRESTAPI/generate-and-validate-tokens.md) endpoint with the `client_id`, `client_secret`, and `nonce` information.
 
 On success, the server issues a refresh token, which you use to obtain access tokens with future calls. You may verify the refresh token up to once a day to confirm that the user’s Apple Account on that device is still in good standing with Apple’s servers. Apple’s servers may throttle your call if you attempt to verify a user’s Apple Account more than once a day.
 
@@ -54,7 +54,7 @@ For apps running on other systems, use the periodic successful verification of t
   Retrieve the user’s information from Apple Account servers
 - [Processing changes for Sign in with Apple accounts](./processing-changes-for-sign-in-with-apple-accounts.md)
   Manage user-initiated modifications to maintain privacy with server-to-server notifications.
-- [Request an authorization to the Sign in with Apple server](https://developer.apple.com/documentation/signinwithapplerestapi/request-an-authorization-to-the-sign-in-with-apple-server.)
+- [Request an authorization to the Sign in with Apple server](../SigninwithAppleRESTAPI/request-an-authorization-to-the-sign-in-with-apple-server.md)
   Add a Sign in with Apple authorization flow to apps and web services that can’t directly access Sign in with Apple JS.
 
 

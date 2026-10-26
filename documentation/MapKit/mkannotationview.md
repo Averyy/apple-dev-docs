@@ -138,6 +138,9 @@ If you support draggable annotation views in iOS, your subclass is responsible f
 ### Constants
 - [MKAnnotationView.DragState](./mkannotationview/dragstate-swift.enum.md)
   Constants that indicate the drag state of an annotation view.
+### Notifications
+- [MKAnnotationCalloutInfoDidChangeNotification](./mkannotationcalloutinfodidchangenotification.md)
+  A property to observe to determine when the title or subtitle information of an annotation object changes.
 
 ## Relationships
 

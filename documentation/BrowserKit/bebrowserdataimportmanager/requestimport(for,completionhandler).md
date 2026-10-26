@@ -44,6 +44,8 @@ This method provides your completion handler an option that indicates whether th
 ### Importing browser data
 - [func importBrowserData(token: UUID) -> AsyncThrowingStream<BEBrowserData, any Error>](./importbrowserdata%28token%29.md)
   Imports another app’s browsing data as a stream.
+- [- importBrowserDataWithToken:importBlock:](./importbrowserdatawithtoken_importblock_.md)
+  Imports browser data using the given token and processes it the given block.
 
 
 ---

@@ -16,7 +16,7 @@ Starting in macOS 10.13, you can create Photos project extensions. This sample a
 
 ##### Configure the Sample Code Project
 
-In the extension’s `Info.plist` file, choose the extension type by entering `slideshow` in the field at `NSExtension` > `NSExtensionAttributes` > [`PHProjectCategory`](https://developer.apple.com/documentation/photosui/phprojectcategory). Add more categories to the information property list for your extension to appear in other categories in the Create menu.
+In the extension’s `Info.plist` file, choose the extension type by entering `slideshow` in the field at `NSExtension` > `NSExtensionAttributes` > [`PHProjectCategory`](../PhotosUI/phprojectcategory.md). Add more categories to the information property list for your extension to appear in other categories in the Create menu.
 
 Build and run the Photos Project Slideshow scheme in Xcode once to run the sample app and install the extension in the macOS Photos app. To use the extension, build and run the Slideshow Sample scheme in Xcode, which prompts you to open the macOS Photos app to use the extension.
 
@@ -28,7 +28,7 @@ Because the project extension runs inside the Photos app, the sample emulates th
 
 The sample code project contains custom `Animator` and `AssetModel` classes.
 
-The `Animator` class handles transitions between photos in the slideshow. This sample’s `Animator` asks an `AssetModel` object for a rectangle to zoom in on. Photos identifies each ROI it finds as a possible ROI, and the sample uses the bounding box of the most salient one as the preferred zoom rectangle. The code defines saliency of a [`PHProjectRegionOfInterest`](https://developer.apple.com/documentation/photosui/phprojectregionofinterest) as the sum of its [`weight`](https://developer.apple.com/documentation/photosui/phprojectregionofinterest/weight) and [`quality`](https://developer.apple.com/documentation/photosui/phprojectregionofinterest/quality) values, and then sorts the array of the photo’s regions by that value.
+The `Animator` class handles transitions between photos in the slideshow. This sample’s `Animator` asks an `AssetModel` object for a rectangle to zoom in on. Photos identifies each ROI it finds as a possible ROI, and the sample uses the bounding box of the most salient one as the preferred zoom rectangle. The code defines saliency of a [`PHProjectRegionOfInterest`](../PhotosUI/phprojectregionofinterest.md) as the sum of its [`weight`](../PhotosUI/phprojectregionofinterest/weight.md) and [`quality`](../PhotosUI/phprojectregionofinterest/quality.md) values, and then sorts the array of the photo’s regions by that value.
 
 ```swift
 let sortedRois = assetProjectElement.regionsOfInterest.sorted { (roi1, roi2) -> Bool in
@@ -41,20 +41,20 @@ The `weight` of an ROI represents the pervasiveness of the ROI in the project as
 
 ##### Respond to Asset Changes in the Project
 
-To respond to asset changes in the Photos Library, your app extension needs to monitor change notifications. Register for change observation as soon as the project begins or resumes. In the [`PHProjectExtensionController`](https://developer.apple.com/documentation/photosui/phprojectextensioncontroller) protocol, the [`beginProject(with:projectInfo:completion:)`](https://developer.apple.com/documentation/photosui/phprojectextensioncontroller/beginproject(with:projectinfo:completion:)) and [`resumeProject(with:completion:)`](https://developer.apple.com/documentation/photosui/phprojectextensioncontroller/resumeproject(with:completion:)) methods provide points for your extension to begin monitoring changes.
+To respond to asset changes in the Photos Library, your app extension needs to monitor change notifications. Register for change observation as soon as the project begins or resumes. In the [`PHProjectExtensionController`](../PhotosUI/phprojectextensioncontroller.md) protocol, the [`beginProject(with:projectInfo:completion:)`](../PhotosUI/phprojectextensioncontroller/beginproject%28with,projectinfo,completion%29.md) and [`resumeProject(with:completion:)`](../PhotosUI/phprojectextensioncontroller/resumeproject%28with,completion%29.md) methods provide points for your extension to begin monitoring changes.
 
 ```swift
 self.projectAssets = PHAsset.fetchAssets(in: extensionContext.project, options: nil)
 extensionContext.photoLibrary.register(self)
 ```
 
-When the project is complete, use the [`finishProject(completionHandler:)`](https://developer.apple.com/documentation/photosui/phprojectextensioncontroller/finishproject(completionhandler:)) protocol method to unregister from change observation.
+When the project is complete, use the [`finishProject(completionHandler:)`](../PhotosUI/phprojectextensioncontroller/finishproject%28completionhandler%29.md) protocol method to unregister from change observation.
 
 ```swift
 library.unregisterChangeObserver(self)
 ```
 
-Whenever something changes in the Photos library, the system calls the [`photoLibraryDidChange(_:)`](https://developer.apple.com/documentation/photos/phphotolibrarychangeobserver/photolibrarydidchange(_:)) method. When implementing this method, ask the [`PHChange`](https://developer.apple.com/documentation/photos/phchange) instance for details about changes to any of the objects. When assets are added or removed, the sample project calls [`updatedProjectInfo(from:completion:)`](https://developer.apple.com/documentation/photosui/phprojectextensioncontext/updatedprojectinfo(from:completion:)) to get an updated [`PHProjectInfo`](https://developer.apple.com/documentation/photosui/phprojectinfo) instance that you use to refresh your UI.
+Whenever something changes in the Photos library, the system calls the [`photoLibraryDidChange(_:)`](../Photos/phphotolibrarychangeobserver/photolibrarydidchange%28_%29.md) method. When implementing this method, ask the [`PHChange`](../Photos/phchange.md) instance for details about changes to any of the objects. When assets are added or removed, the sample project calls [`updatedProjectInfo(from:completion:)`](../PhotosUI/phprojectextensioncontext/updatedprojectinfo%28from,completion%29.md) to get an updated [`PHProjectInfo`](../PhotosUI/phprojectinfo.md) instance that you use to refresh your UI.
 
 ```swift
 func photoLibraryDidChange(_ changeInstance: PHChange) {

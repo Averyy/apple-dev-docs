@@ -1,0 +1,20 @@
+# kATSLineDisableAllBaselineAdjustments
+
+**Framework**: Application Services  
+**Kind**: econst  
+**Role**: Enumeration Case
+
+**Availability**:
+- Mac Catalyst 13.0+
+- macOS 10.2+
+
+## Declaration
+
+```c
+kATSLineDisableAllBaselineAdjustments = 0x00080000
+```
+
+
+---
+
+*[View on Apple Developer](https://developer.apple.com/documentation/applicationservices/1516921-anonymous/katslinedisableallbaselineadjustments)*

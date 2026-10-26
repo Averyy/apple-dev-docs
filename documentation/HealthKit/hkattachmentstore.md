@@ -38,6 +38,8 @@ Use an [`HKAttachmentStore`](./hkattachmentstore.md) object to manage attachment
   Asynchronously adds an attachment to the specified object.
 - [func addAttachment(to: HKObject, name: String, contentType: UTType, url: URL, metadata: [String : Any], completion: (HKAttachment?, (any Error)?) -> Void)](./hkattachmentstore/addattachment%28to,name,contenttype,url,metadata,completion%29.md)
   Adds an attachment to the specified object.
+- [- addAttachmentToObject:name:contentType:URL:metadata:completion:](./hkattachmentstore/addattachmenttoobject_name_contenttype_url_metadata_completion_.md)
+  Adds an attachment to the specified object.
 ### Accessing attachments
 - [func getAttachments(for: HKObject, completion: ([HKAttachment]?, (any Error)?) -> Void)](./hkattachmentstore/getattachments%28for,completion%29.md)
   Returns all the attachments for the specified object.

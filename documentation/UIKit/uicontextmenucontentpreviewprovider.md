@@ -38,6 +38,8 @@ Use this handler to load or create your custom view controller, configure it wit
   Creates a menu configuration object with the specified action and preview providers.
 - [typealias UIContextMenuActionProvider](./uicontextmenuactionprovider.md)
   Returns an action-based contextual menu, optionally incorporating the system-suggested actions.
+- [+ configurationWithIdentifier:previewProvider:actionProvider:](./uicontextmenuconfiguration/configurationwithidentifier_previewprovider_actionprovider_.md)
+  Creates a menu configuration object with the specified action and preview providers.
 
 
 ---

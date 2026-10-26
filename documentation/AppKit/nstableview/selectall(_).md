@@ -36,6 +36,8 @@ As a target-action method, [`selectAll(_:)`](./selectall%28_%29.md) checks with 
 ### Related Documentation
 - [var allowsMultipleSelection: Bool](./allowsmultipleselection.md)
   A Boolean value indicating whether the table view allows the user to select more than one column or row at a time.
+- [- selectColumn:byExtendingSelection:](./selectcolumn_byextendingselection_.md)
+  Selects the column at the specified index, optionally extending any existing selection.
 ### Selecting Columns and Rows
 - [func selectColumnIndexes(IndexSet, byExtendingSelection: Bool)](./selectcolumnindexes%28_,byextendingselection%29.md)
   Sets the column selection using `indexes` possibly extending the selection.

@@ -39,6 +39,7 @@ The block must be non-`nil` when using an input node while the engine is operati
 ### Supplying manual rendering input
 - [typealias AVAudioIONodeInputBlock](../avaudioionodeinputblock.md)
   The type that represents a block to render operation calls to get input data when in manual rendering mode.
+- [- setRealtimeSafeManualRenderingInputPCMFormat:inputBlock:](./setrealtimesafemanualrenderinginputpcmformat_inputblock_.md)
 
 
 ---

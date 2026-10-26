@@ -47,6 +47,8 @@ The render pipeline applies `frontReferenceValue` to front-facing primitives and
   Configures the range for depth bounds testing.
 - [func setStencilReferenceValue(UInt32)](./setstencilreferencevalue%28_%29.md)
   Configures this encoder with a reference value for stencil testing.
+- [- setDepthTestMinBound:maxBound:](./setdepthtestminbound_maxbound_.md)
+  Configures the minimum and maximum bounds for depth bounds testing.
 
 
 ---

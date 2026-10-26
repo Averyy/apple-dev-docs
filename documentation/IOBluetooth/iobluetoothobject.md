@@ -17,6 +17,13 @@ class IOBluetoothObject
 @interface IOBluetoothObject : NSObject
 ```
 
+## Topics
+
+### Instance Variables
+- [mIOConnection](./iobluetoothobject/mioconnection.md)
+- [mIONotification](./iobluetoothobject/mionotification.md)
+- [mIOService](./iobluetoothobject/mioservice.md)
+
 ## Relationships
 
 ### Inherits From

@@ -22,8 +22,8 @@ func currentTime() -> CMTime
 
 ## Mentions
 
-- [Scheduling media in plug-ins](https://developer.apple.com/documentation/professional-video-applications/scheduling-media-in-plug-ins)
-- [Understanding time in FxPlug](https://developer.apple.com/documentation/professional-video-applications/understanding-time-in-fxplug)
+- [Scheduling media in plug-ins](../../Professional-Video-Applications/scheduling-media-in-plug-ins.md)
+- [Understanding time in FxPlug](../../Professional-Video-Applications/understanding-time-in-fxplug.md)
 
 #### Return Value
 
@@ -31,7 +31,7 @@ The current time, expressed as a rational time.
 
 #### Discussion
 
-This is useful when a custom parameter view needs to set a parameter value in response to a user event. Depending on the host application, the time value may be relative to the start of the timeline or to the start of the clip. See [Understanding time in FxPlug](https://developer.apple.com/documentation/professional-video-applications/understanding-time-in-fxplug).
+This is useful when a custom parameter view needs to set a parameter value in response to a user event. Depending on the host application, the time value may be relative to the start of the timeline or to the start of the clip. See [Understanding time in FxPlug](../../Professional-Video-Applications/understanding-time-in-fxplug.md).
 
 > ❗ **Important**: Only use `-currentTime` from within methods that are not provided the time by the host. For example, when updating a custom view.
 

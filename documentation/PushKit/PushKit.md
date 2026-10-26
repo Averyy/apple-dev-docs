@@ -51,6 +51,8 @@ For information about how to configure your server to work with APNs, see [Setti
 ### Classes
 - [class PKVoIPPushMetadata](./pkvoippushmetadata.md)
   An object that contains metadata about a received PushKit VoIP notification.
+### Macros
+- [PK_EXPORT](./pk_export.md)
 
 
 ---

@@ -21,7 +21,7 @@ protocol FxParameterSettingAPI_v5 : NSObjectProtocol
 
 ## Mentions
 
-- [Analyzing media](https://developer.apple.com/documentation/professional-video-applications/analyzing-media)
+- [Analyzing media](../Professional-Video-Applications/analyzing-media.md)
 
 ## Topics
 

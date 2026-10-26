@@ -73,6 +73,8 @@ Once an [`XMLDTD`](./xmldtd.md) instance is in place, you can add, remove, and c
 ### Initializers
 - [init()](./xmldtd/init%28%29.md)
 - [convenience init(contentsOfURL: URL, options: XMLNode.Options) throws](./xmldtd/init%28contentsofurl,options%29.md)
+### Instance Methods
+- [- initWithKind:options:](./nsxmldtd/initwithkind_options_.md)
 
 ## Relationships
 

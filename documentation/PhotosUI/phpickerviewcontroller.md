@@ -43,7 +43,7 @@ The `PHPickerViewController` class is an alternative to [`UIImagePickerControlle
 - Reliable handling of large and complex assets, like RAW and panoramic images
 - User-selectable assets that aren’t available for [`UIImagePickerController`](../UIKit/uiimagepickercontroller.md)
 - Configuration of the picker to display only Live Photos
-- Availability of [`PHLivePhoto`](https://developer.apple.com/documentation/photos/phlivephoto) objects without library access
+- Availability of [`PHLivePhoto`](../Photos/phlivephoto.md) objects without library access
 - Stricter validations against invalid inputs
 
 ##### Observe required viewing standards
@@ -60,10 +60,18 @@ As a view controller that the system renders on top of your app, the picker cont
   Creates a new picker view controller with the configuration you specify.
 - [struct PHPickerConfiguration](./phpickerconfiguration-swift.struct.md)
   An object that contains information about how to configure a picker view controller.
+- [- initWithConfiguration:](./phpickerviewcontroller/initwithconfiguration_.md)
+  Creates a new picker view controller with the configuration you specify.
+- [PHPickerConfiguration](./phpickerconfiguration-c.class.md)
+  An object that contains information about how to configure a picker view controller.
 ### Managing the configuration
 - [var configuration: PHPickerConfiguration](./phpickerviewcontroller/configuration-17a8p.md)
   The configuration you specify when creating the picker.
 - [func updatePicker(using: PHPickerConfiguration.Update)](./phpickerviewcontroller/updatepicker%28using%29.md)
+  Customizes your app’s photo picker according to the given configuration.
+- [configuration](./phpickerviewcontroller/configuration-3vf53.md)
+  The configuration you specify when creating the picker.
+- [- updatePickerUsingConfiguration:](./phpickerviewcontroller/updatepickerusingconfiguration_.md)
   Customizes your app’s photo picker according to the given configuration.
 ### Setting content position and scale
 - [func scrollToInitialPosition()](./phpickerviewcontroller/scrolltoinitialposition%28%29.md)
@@ -78,6 +86,12 @@ As a view controller that the system renders on top of your app, the picker cont
 - [protocol PHPickerViewControllerDelegate](./phpickerviewcontrollerdelegate-5yntc.md)
   A set of methods that the delegate must implement to respond to `PHPickerViewController` user events.
 - [struct PHPickerResult](./phpickerresult-swift.struct.md)
+  Types that represent a selected asset from a person’s photo library.
+- [delegate](./phpickerviewcontroller/delegate-8dlnb.md)
+  The picker’s delegate object.
+- [PHPickerViewControllerDelegate](./phpickerviewcontrollerdelegate-9y5xc.md)
+  A protocol the picker uses to communicate user selections.
+- [PHPickerResult](./phpickerresult-c.class.md)
   Types that represent a selected asset from a person’s photo library.
 ### Deselecting assets
 - [func deselectAssets(withIdentifiers: [String])](./phpickerviewcontroller/deselectassets%28withidentifiers%29.md)
@@ -131,6 +145,12 @@ As a view controller that the system renders on top of your app, the picker cont
 - [struct PHPickerFilter](./phpickerfilter-swift.struct.md)
   A type that defines the filter to apply to the photo library.
 - [struct PHPickerResult](./phpickerresult-swift.struct.md)
+  Types that represent a selected asset from a person’s photo library.
+- [PHPickerConfiguration](./phpickerconfiguration-c.class.md)
+  An object that contains information about how to configure a picker view controller.
+- [PHPickerFilter](./phpickerfilter-c.class.md)
+  A type that defines the filter to apply to the photo library.
+- [PHPickerResult](./phpickerresult-c.class.md)
   Types that represent a selected asset from a person’s photo library.
 
 

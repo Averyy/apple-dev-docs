@@ -29,6 +29,8 @@ Reading this property’s value is equivalent to calling the `projectionMatrix(w
 ### Applying Camera Geometry
 - [func unprojectPoint(CGPoint, ontoPlane: simd_float4x4, orientation: UIInterfaceOrientation, viewportSize: CGSize) -> simd_float3?](./unprojectpoint%28_,ontoplane,orientation,viewportsize%29.md)
   Returns the projection of a point from the 2D space of a view rendering the scene onto a plane in the 3D world space detected by ARKit.
+- [- unprojectPoint:ontoPlaneWithTransform:orientation:viewportSize:](./unprojectpoint_ontoplanewithtransform_orientation_viewportsize_.md)
+  Returns the projection of a point from the 2D space of a view rendering the scene onto a plane in the 3D world space detected by ARKit.
 
 
 ---

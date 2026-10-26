@@ -32,6 +32,8 @@ This template belongs to the [`CLKComplicationFamily.graphicExtraLarge`](./clkco
 ### Creating the Template
 - [init(line1TextProvider: CLKTextProvider, line2TextProvider: CLKTextProvider)](./clkcomplicationtemplategraphicextralargecircularstacktext/init%28line1textprovider,line2textprovider%29.md)
   Creates a new template with two rows of text.
+- [+ templateWithLine1TextProvider:line2TextProvider:](./clkcomplicationtemplategraphicextralargecircularstacktext/templatewithline1textprovider_line2textprovider_.md)
+  Returns a new template with two rows of text.
 ### Setting the Complication Data
 - [var line1TextProvider: CLKTextProvider](./clkcomplicationtemplategraphicextralargecircularstacktext/line1textprovider.md)
   The text to display on the top row.

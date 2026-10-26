@@ -46,6 +46,13 @@ After determining the new clipping path, the function resets the context’s cur
   Maps a mask into the specified rectangle and intersects it with the current clipping area of the graphics context.
 - [var boundingBoxOfClipPath: CGRect](./boundingboxofclippath.md)
   Returns the bounding box of a clipping path.
+- [CGContextClip](../cgcontextclip.md)
+  Modifies the current clipping path, using the nonzero winding number rule.
+- [CGContextEOClip](../cgcontexteoclip.md)
+  Modifies the current clipping path, using the even-odd rule.
+### Related Documentation
+- [CGContextClipToRects](../cgcontextcliptorects.md)
+  Sets the clipping path to the intersection of the current clipping path with the region defined by an array of rectangles.
 
 
 ---

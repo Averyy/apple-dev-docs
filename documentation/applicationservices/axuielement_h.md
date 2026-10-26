@@ -86,6 +86,12 @@ For more information on the definition and use of accessibility objects and in m
   Sets the accessibility object's attribute to the specified value.
 - [func AXUIElementSetMessagingTimeout(AXUIElement, Float) -> AXError](./api-1459345-axuielementsetmessagingtimeout.md)
   Sets the timeout value used in the accessibility API.
+- [AXAPIEnabled](./api-1462072-axapienabled.md)
+  Returns whether the accessibility API is enabled.
+- [AXMakeProcessTrusted](./api-1462083-axmakeprocesstrusted.md)
+  Attempts to make the process represented by the specified path a trusted accessibility client.
+- [AXUIElementPostKeyboardEvent](./api-1462057-axuielementpostkeyboardevent.md)
+  Posts keys to the specified application.
 ### Callbacks
 - [typealias AXObserverCallback](./axobservercallback.md)
 - [typealias AXObserverCallbackWithInfo](./axobservercallbackwithinfo.md)
@@ -94,6 +100,11 @@ For more information on the definition and use of accessibility objects and in m
 - [class AXObserver](./axobserver.md)
 - [class AXUIElement](./axuielement.md)
   A structure used to refer to an accessibility object.
+- [AXObserverRef](./axobserverref.md)
+- [AXUIElementRef](./axuielementref.md)
+  A structure used to refer to an accessibility object.
+### Constants
+- [kAXCopyMultipleAttributeOptionStopOnError](./axuielement_h/kaxcopymultipleattributeoptionstoponerror.md)
 
 
 ---

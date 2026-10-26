@@ -51,6 +51,12 @@ Note that this structure is only used to describe the the available formats for 
   An AudioObjectPropertyAddress collects the three parts that identify a specific property together in a struct for easy transmission.
 - [struct UnsafeMutableAudioBufferListPointer](./unsafemutableaudiobufferlistpointer.md)
   A wrapper for a pointer to an `AudioBufferList`.
+- [AudioDriverPlugInHostInfo](./audiodriverpluginhostinfo.md)
+- [AudioServerPlugInClientInfo](./audioserverpluginclientinfo.md)
+- [AudioServerPlugInCustomPropertyInfo](./audioserverplugincustompropertyinfo.md)
+- [AudioServerPlugInDriverInterface](./audioserverplugindriverinterface.md)
+- [AudioServerPlugInHostInterface](./audioserverpluginhostinterface.md)
+- [AudioServerPlugInIOCycleInfo](./audioserverpluginiocycleinfo.md)
 
 
 ---

@@ -12,6 +12,8 @@ Data types used across SpriteKit.
   The signature for the custom timing block.
 - [typealias SKFieldForceEvaluator](./skfieldforceevaluator.md)
   The definition for a custom block that processes a single physics body’s interaction with the field.
+- [vector_float3](./vector_float3.md)
+  A floating point vector type used to perform physics calculations.
 
 ## See Also
 

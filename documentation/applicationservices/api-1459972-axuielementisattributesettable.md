@@ -81,6 +81,12 @@ If you receive a `kAXErrorCannotComplete` error from this function, you might wa
   Sets the accessibility object's attribute to the specified value.
 - [func AXUIElementSetMessagingTimeout(AXUIElement, Float) -> AXError](./api-1459345-axuielementsetmessagingtimeout.md)
   Sets the timeout value used in the accessibility API.
+- [AXAPIEnabled](./api-1462072-axapienabled.md)
+  Returns whether the accessibility API is enabled.
+- [AXMakeProcessTrusted](./api-1462083-axmakeprocesstrusted.md)
+  Attempts to make the process represented by the specified path a trusted accessibility client.
+- [AXUIElementPostKeyboardEvent](./api-1462057-axuielementpostkeyboardevent.md)
+  Posts keys to the specified application.
 
 
 ---

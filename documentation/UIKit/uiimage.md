@@ -142,6 +142,10 @@ Image objects don’t provide direct access to their underlying image data. Howe
 - [convenience init(resource: ImageResource)](./uiimage/init%28resource%29.md)
 - [Building high-performance lists and collection views](./building-high-performance-lists-and-collection-views.md)
   Improve the performance of lists and collections in your app with prefetching and image preparation.
+- [+ imageNamed:inBundle:variableValue:withConfiguration:](./uiimage/imagenamed_inbundle_variablevalue_withconfiguration_.md)
+  Creates an image by using the name, configuration, and variable value you specify.
+- [+ systemImageNamed:variableValue:withConfiguration:](./uiimage/systemimagenamed_variablevalue_withconfiguration_.md)
+  Creates an image object that contains a system symbol image with the configuration and variable value you specify.
 ### Loading images for display
 - [func preparingForDisplay() -> UIImage?](./uiimage/preparingfordisplay%28%29.md)
   Decodes an image synchronously and provides a new one for display in views and animations.
@@ -167,6 +171,23 @@ Image objects don’t provide direct access to their underlying image data. Howe
 - [init(ciImage: CIImage, scale: CGFloat, orientation: UIImage.Orientation)](./uiimage/init%28ciimage,scale,orientation%29-9gpyn.md)
   Initializes and returns an image object with the specified Core Image object and properties.
 - [struct UIImageReader](./uiimagereader-swift.struct.md)
+- [+ imageWithContentsOfFile:](./uiimage/imagewithcontentsoffile_.md)
+  Creates and returns an image object by loading the image data from the file at the specified path.
+- [+ imageWithData:](./uiimage/imagewithdata_.md)
+  Creates and returns an image object that uses the specified image data.
+- [+ imageWithData:scale:](./uiimage/imagewithdata_scale_.md)
+  Creates and returns an image object that uses the specified image data and scale factor.
+- [+ imageWithCGImage:](./uiimage/imagewithcgimage_.md)
+  Creates and returns an image object representing the specified Quartz image.
+- [+ imageWithCGImage:scale:orientation:](./uiimage/imagewithcgimage_scale_orientation_.md)
+  Creates and returns an image object with the specified scale and orientation factors.
+- [+ imageWithCIImage:](./uiimage/imagewithciimage_.md)
+  Creates and returns an image object that contains a Core Image object.
+- [+ imageWithCIImage:scale:orientation:](./uiimage/imagewithciimage_scale_orientation_.md)
+  Creates and returns an image object based on a Core Image object and the specified attributes.
+- [UIImageReader](./uiimagereader-c.class.md)
+- [UIImageReaderConfiguration](./uiimagereaderconfiguration.md)
+  The properties that a reader uses to decode images.
 ### Creating animated images
 - [class func animatedImageNamed(String, duration: TimeInterval) -> UIImage?](./uiimage/animatedimagenamed%28_,duration%29.md)
   Creates and returns an animated image.
@@ -262,6 +283,10 @@ Image objects don’t provide direct access to their underlying image data. Howe
 - [UIImage.DynamicRange](./uiimage/dynamicrange.md)
 ### Managing the baseline
 - [var baselineOffsetFromBottom: CGFloat?](./uiimage/baselineoffsetfrombottom-3emg.md)
+  The position of the baseline relative to the bottom of the image.
+- [hasBaseline](./uiimage/hasbaseline.md)
+  A Boolean value that indicates whether the image has a defined baseline offset.
+- [baselineOffsetFromBottom](./uiimage/baselineoffsetfrombottom-23gkf.md)
   The position of the baseline relative to the bottom of the image.
 ### Getting rendering information
 - [var renderingMode: UIImage.RenderingMode](./uiimage/renderingmode-swift.property.md)

@@ -34,6 +34,8 @@ AVVideoFrameAnalysisTypeDefault
   A type that identifies objects, landmarks, art, and so on.
 - [static var machineReadableCode: AVVideoFrameAnalysisType](./machinereadablecode.md)
   A type that recognizes machine-readable codes, such as QR codes.
+- [AVVideoFrameAnalysisTypeNone](./avvideoframeanalysistypenone.md)
+  A type that performs no analysis.
 
 
 ---

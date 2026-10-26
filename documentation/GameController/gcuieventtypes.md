@@ -28,6 +28,8 @@ enum GCUIEventTypes : NSUInteger;
 - [static var gamepad: GCUIEventTypes](./gcuieventtypes/gamepad.md)
 - [static var stylus: GCUIEventTypes](./gcuieventtypes/stylus.md)
   A constant that represents events from a stylus.
+### Enumeration Cases
+- [GCUIEventTypeNone](./gcuieventtypes/gcuieventtypenone.md)
 
 ## Relationships
 

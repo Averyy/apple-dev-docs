@@ -28,6 +28,9 @@ Supported intermediate physical address (IPA) granules.
 - [init(rawValue: UInt32)](./hv_ipa_granule_t/init%28rawvalue%29.md)
 ### Instance Properties
 - [var rawValue: UInt32](./hv_ipa_granule_t/rawvalue.md)
+### Enumeration Cases
+- [HV_IPA_GRANULE_16KB](./hv_ipa_granule_16kb.md)
+- [HV_IPA_GRANULE_4KB](./hv_ipa_granule_4kb.md)
 
 ## Relationships
 

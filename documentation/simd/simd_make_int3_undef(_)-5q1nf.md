@@ -23,6 +23,8 @@ static simd_int3 simd_make_int3_undef(int other);
   Returns a new vector with the first element set to a scalar value, and other elements set to zero.
 - [func simd_make_int3(Int32, Int32, Int32) -> simd_int3](./simd_make_int3%28_,_,_%29.md)
   Returns a new vector from the specified scalar values.
+- [vector3](./vector3-8jq14.md)
+  Returns a new vector from the specified scalar values.
 
 
 ---

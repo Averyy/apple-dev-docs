@@ -88,6 +88,8 @@ For more information on using layout anchors, see [`NSLayoutAnchor`](./nslayouta
 ### Layout Guides
 - [class NSLayoutGuide](./nslayoutguide.md)
   A rectangular area that can interact with Auto Layout.
+- [NSViewLayoutRegion](./nsviewlayoutregion.md)
+- [NSViewLayoutRegionAdaptivityAxis](./nsviewlayoutregionadaptivityaxis.md)
 
 
 ---

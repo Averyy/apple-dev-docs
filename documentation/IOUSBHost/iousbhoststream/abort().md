@@ -33,6 +33,8 @@ Set the stream context as nonactive on the device with an out-of-band (class-def
   Enqueues an input/output request on the stream.
 - [func abort(with: IOUSBHostAbortOption) throws](./abort%28with%29.md)
   Aborts pending input/output requests.
+- [- sendIORequestWithData:bytesTransferred:error:](./sendiorequestwithdata_bytestransferred_error_.md)
+  Sends an input/output request on the stream.
 
 
 ---

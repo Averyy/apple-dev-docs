@@ -27,7 +27,7 @@ var vectorFloat3Value: vector_float3 { get set }
 
 #### Discussion
 
-If the receiver’s original value is a floating-point number or a [`vector_float2`](https://developer.apple.com/documentation/simd/vector_float2), the empty items in the vector are set to 0. If the receiver’s original value is a [`vector_float4`](https://developer.apple.com/documentation/simd/vector_float4), the last item is truncated.
+If the receiver’s original value is a floating-point number or a [`vector_float2`](../../simd/vector_float2.md), the empty items in the vector are set to 0. If the receiver’s original value is a [`vector_float4`](../../simd/vector_float4.md), the last item is truncated.
 
 ## See Also
 

@@ -48,6 +48,9 @@ You can use this method to vary the behaviors in your game in response to player
   Removes all individual behaviors from the composite behavior.
 - [var behaviorCount: Int](./behaviorcount.md)
   The number of individual behaviors in the composite behavior.
+### Related Documentation
+- [- setObject:forKeyedSubscript:](./setobject_forkeyedsubscript_.md)
+  Sets the weight for the behavior specified by subscript syntax.
 
 
 ---

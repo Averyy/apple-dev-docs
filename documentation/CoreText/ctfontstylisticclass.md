@@ -55,6 +55,8 @@ enum CTFontStylisticClass : uint32_t;
   A font style among those typefaces designed to simulate handwriting.
 - [static var classSymbolic: CTFontStylisticClass](./ctfontstylisticclass/classsymbolic.md)
   A generally design-independent font style.
+- [kCTFontClassUnknown](./ctfontstylisticclass/kctfontclassunknown.md)
+  The font has no design classification.
 ### Deprecated Constants
 - [static var oldStyleSerifsClass: CTFontStylisticClass](./ctfontstylisticclass/oldstyleserifsclass.md)
   The font’s style is based on the Latin printing style of the 15th to 17th century.
@@ -76,6 +78,8 @@ enum CTFontStylisticClass : uint32_t;
   The font’s style is among those typefaces designed to simulate handwriting.
 - [static var symbolicClass: CTFontStylisticClass](./ctfontstylisticclass/symbolicclass.md)
   The font’s style is generally design independent.
+- [kCTFontUnknownClass](./ctfontstylisticclass/kctfontunknownclass.md)
+  The font has no design classification.
 
 ## Relationships
 

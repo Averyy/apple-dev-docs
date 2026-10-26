@@ -48,6 +48,12 @@ typedef union { ... } SPSphericalCoordinates3DFloat;
 - [var inclination: Angle2DFloat](./sphericalcoordinates3dfloat/inclination.md)
 - [var radius: Float](./sphericalcoordinates3dfloat/radius.md)
 - [var vector: simd_float3](./sphericalcoordinates3dfloat/vector.md)
+- [azimuth](./spsphericalcoordinates3dfloat/azimuth.md)
+  The azimuthal angle.
+- [inclination](./spsphericalcoordinates3dfloat/inclination.md)
+  The inclination angle.
+- [radius](./spsphericalcoordinates3dfloat/radius.md)
+  The distance to the origin.
 ### Default Implementations
 - [CustomReflectable Implementations](./sphericalcoordinates3dfloat/customreflectable-implementations.md)
 - [Decodable Implementations](./sphericalcoordinates3dfloat/decodable-implementations.md)

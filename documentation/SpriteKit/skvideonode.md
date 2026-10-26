@@ -52,6 +52,12 @@ This class renders a video at a given size and location in your scene with no ex
   Initializes a video node using a video file stored in the app bundle.
 - [init(videoURL: URL)](./skvideonode/init%28videourl%29.md)
   Initializes a video node using a URL that points to a video file.
+- [+ videoNodeWithFileNamed:](./skvideonode/videonodewithfilenamed_.md)
+  Creates and initializes a new video node using a video file stored in the app bundle.
+- [+ videoNodeWithAVPlayer:](./skvideonode/videonodewithavplayer_.md)
+  Creates and initializes a video node using an existing video player object.
+- [+ videoNodeWithURL:](./skvideonode/videonodewithurl_.md)
+  Creates and initializes a video node using a URL that points to a video file.
 ### Setting the Video Node’s Visual Properties
 - [var anchorPoint: CGPoint](./skvideonode/anchorpoint.md)
   The point in the sprite that corresponds to the node’s position.
@@ -67,6 +73,11 @@ This class renders a video at a given size and location in your scene with no ex
 - [init(AVPlayer: AVPlayer)](./skvideonode/init%28avplayer%29-8uhsn.md)
 - [init(URL: URL)](./skvideonode/init%28url%29-49ou9.md)
 - [init(URL: URL)](./skvideonode/init%28url%29-8rxuu.md)
+### Type Methods
+- [+ videoNodeWithVideoFileNamed:](./skvideonode/videonodewithvideofilenamed_.md)
+  Creates and initializes a new video node using a video file stored in the app bundle.
+- [+ videoNodeWithVideoURL:](./skvideonode/videonodewithvideourl_.md)
+  Creates and initializes a video node using a URL that points to a video file.
 
 ## Relationships
 

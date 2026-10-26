@@ -34,6 +34,18 @@ This initializer copies the UTF-8 representation of the characters in `string`. 
 - [convenience init(cString: UnsafeBufferPointer<CChar>)](./init%28cstring%29.md)
 - [convenience init(data: Data)](./init%28data%29.md)
   Creates a filename by copying a character sequence data object.
+- [- initWithBytes:length:](./initwithbytes_length_.md)
+  Initializes a file name by copying a character sequence from a byte array.
+- [+ nameWithBytes:length:](./namewithbytes_length_.md)
+  Creates a filename by copying a character sequence from a byte array.
+- [- initWithCString:](./initwithcstring_.md)
+  Initializes a filename from a null-terminated character sequence.
+- [+ nameWithCString:](./namewithcstring_.md)
+  Creates a filename from a null-terminated character sequence.
+- [+ nameWithData:](./namewithdata_.md)
+  Creates a filename by copying a character sequence data object.
+- [+ nameWithString:](./namewithstring_.md)
+  Creates a filename by copying a character sequence from a string instance.
 
 
 ---

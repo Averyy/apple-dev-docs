@@ -66,6 +66,8 @@ For more information, see [Matchmaking rules](../matchmaking-rules.md).
   The name of the queue that Game Center places the match request in.
 - [var recipientProperties: [GKPlayer : [String : Any]]?](./recipientproperties.md)
   The criteria for recipients of the match request that Game Center uses to find other players when using matchmaking rules.
+- [GKMatchProperties](../gkmatchproperties.md)
+  A type for game-specific properties that Game Center uses to find players when using matchmaking rules.
 
 
 ---

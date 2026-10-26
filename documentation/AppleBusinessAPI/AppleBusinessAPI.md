@@ -552,7 +552,7 @@ Automate device management activities, view device information, and manage users
 ## See Also
 
 ### Apple School Manager and Apple Business APIs
-- [Apple School Manager API](https://developer.apple.com/documentation/appleschoolmanagerapi)
+- [Apple School Manager API](../AppleSchoolManagerAPI/AppleSchoolManagerAPI.md)
   Automate device management activities and view device information in Apple School Manager.
 
 

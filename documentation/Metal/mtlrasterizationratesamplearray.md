@@ -33,6 +33,10 @@ The [`horizontal`](./mtlrasterizationratelayerdescriptor/horizontal.md) and [`ve
 ### Accessing the array
 - [subscript(Int) -> Float](./mtlrasterizationratesamplearray/subscript%28_%29.md)
   Retrieves the sample value at the specified index.
+- [- objectAtIndexedSubscript:](./mtlrasterizationratesamplearray/objectatindexedsubscript_.md)
+  Retrieves the sample value at the specified index.
+- [- setObject:atIndexedSubscript:](./mtlrasterizationratesamplearray/setobject_atindexedsubscript_.md)
+  Stores a sample value at the specified index.
 
 ## Relationships
 
@@ -57,6 +61,10 @@ The [`horizontal`](./mtlrasterizationratelayerdescriptor/horizontal.md) and [`ve
   The horizontal rasterization rates for the layer map’s rows.
 - [var vertical: MTLRasterizationRateSampleArray](./mtlrasterizationratelayerdescriptor/vertical.md)
   The vertical rasterization rates for the layer map’s rows.
+- [horizontalSampleStorage](./mtlrasterizationratelayerdescriptor/horizontalsamplestorage.md)
+  A pointer to the storage for the layer map’s horizontal rasterization rates.
+- [verticalSampleStorage](./mtlrasterizationratelayerdescriptor/verticalsamplestorage.md)
+  A pointer to the storage for the layer map’s vertical rasterization rates.
 
 
 ---

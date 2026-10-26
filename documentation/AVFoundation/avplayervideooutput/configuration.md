@@ -36,6 +36,8 @@ class Configuration
   The host time this configuration became active on its associated player object.
 - [var preferredTransform: CGAffineTransform](./configuration/preferredtransform.md)
   The preferred transform of the visual media.
+- [dataChannelDescriptions](../avplayervideooutputconfiguration/datachanneldescriptions.md)
+  An array of data channels selected for this configuration.
 
 ## Relationships
 
@@ -59,6 +61,7 @@ class Configuration
 - [AVPlayerVideoOutput.Sample](./sample.md)
   A video frame along with auxiliary information for display at the specified presentation time.
 - [func taggedBuffers(forHostTime: CMTime) -> (taggedBufferGroup: [CMTaggedBuffer], presentationTime: CMTime, activeConfiguration: AVPlayerVideoOutput.Configuration)?](./taggedbuffers%28forhosttime%29.md)
+- [- copyTaggedBufferGroupForHostTime:presentationTimeStamp:activeConfiguration:](./copytaggedbuffergroupforhosttime_presentationtimestamp_activeconfiguration_.md)
 
 
 ---

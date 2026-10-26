@@ -45,6 +45,8 @@ When constructing video output settings, the choice of pixel format affects the 
   Creates an object that reads media data from an asset track.
 - [Video settings](./video-settings.md)
   Configure video processing settings using standard key and value constants.
+- [+ assetReaderTrackOutputWithTrack:outputSettings:](./avassetreadertrackoutput/assetreadertrackoutputwithtrack_outputsettings_.md)
+  Returns a new object that reads media data from an asset track.
 ### Configuring audio settings
 - [var audioTimePitchAlgorithm: AVAudioTimePitchAlgorithm](./avassetreadertrackoutput/audiotimepitchalgorithm.md)
   The processing algorithm to use for scaled audio edits.

@@ -41,6 +41,9 @@ The key that corresponds to the property or element class identified by `appleEv
   Returns a Boolean value indicating whether the described class has a writable property identified by the specified key.
 - [func type(forKey: String) -> String?](./type%28forkey%29.md)
   Returns the name of the declared type of the attribute or relationship identified by the passed key.
+### Related Documentation
+- [- isReadOnlyKey:](./isreadonlykey_.md)
+  Returns a Boolean value indicating whether a specified property in the receiver is read-only.
 
 
 ---

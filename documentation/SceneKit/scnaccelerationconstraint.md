@@ -30,6 +30,8 @@ class SCNAccelerationConstraint
 - [var decelerationDistance: CGFloat](./scnaccelerationconstraint/decelerationdistance.md)
 - [var maximumLinearAcceleration: CGFloat](./scnaccelerationconstraint/maximumlinearacceleration.md)
 - [var maximumLinearVelocity: CGFloat](./scnaccelerationconstraint/maximumlinearvelocity.md)
+### Type Methods
+- [+ accelerationConstraint](./scnaccelerationconstraint/accelerationconstraint.md)
 
 ## Relationships
 

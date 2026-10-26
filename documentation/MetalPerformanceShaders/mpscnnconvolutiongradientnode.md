@@ -28,6 +28,8 @@ class MPSCNNConvolutionGradientNode
 
 ### Initializers
 - [init(sourceGradient: MPSNNImageNode, sourceImage: MPSNNImageNode, convolutionGradientState: MPSCNNConvolutionGradientStateNode, weights: (any MPSCNNConvolutionDataSource)?)](./mpscnnconvolutiongradientnode/init%28sourcegradient,sourceimage,convolutiongradientstate,weights%29.md)
+### Type Methods
+- [+ nodeWithSourceGradient:sourceImage:convolutionGradientState:weights:](./mpscnnconvolutiongradientnode/nodewithsourcegradient_sourceimage_convolutiongradientstate_weights_.md)
 
 ## Relationships
 

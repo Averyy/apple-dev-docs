@@ -52,6 +52,10 @@ Each subclass of `INIntent` defines the properties needed to perform the corresp
 ### Associating an Image
 - [func keyImage() -> INImage?](./inintent/keyimage%28%29.md)
   The most relevant image to display to the user.
+- [- imageForParameterNamed:](./inintent/imageforparameternamed_.md)
+  Returns the image associated with the specified parameter.
+- [- setImage:forParameterNamed:](./inintent/setimage_forparameternamed_.md)
+  Sets the image to use for the specified parameter.
 ### Initializers
 - [init?(coder: NSCoder)](./inintent/init%28coder%29.md)
 ### Instance Properties

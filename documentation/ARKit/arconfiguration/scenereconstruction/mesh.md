@@ -27,6 +27,8 @@ ARSceneReconstructionMesh
   Initializes a scene-reconstruction object.
 - [static var meshWithClassification: ARConfiguration.SceneReconstruction](./meshwithclassification.md)
   An approximate shape of the physical environment, including classification of the real-world objects within it.
+- [ARSceneReconstructionNone](../../arscenereconstruction/arscenereconstructionnone.md)
+  Disables the scene reconstruction feature.
 
 
 ---

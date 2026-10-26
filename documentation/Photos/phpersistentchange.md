@@ -51,6 +51,12 @@ class PHPersistentChange
 - [Sendable](../Swift/sendable.md)
 - [SendableMetatype](../Swift/sendablemetatype.md)
 
+## See Also
+
+### Performing Operations with Objects in a Fetch Request
+- [- enumerateChangesWithBlock:](./phpersistentchangefetchresult/enumeratechangeswithblock_.md)
+  Executes the block you specify by using the objects in the fetch result.
+
 
 ---
 

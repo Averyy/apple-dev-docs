@@ -87,6 +87,22 @@ A `CGContext` instance represents a Quartz 2D drawing destination. A graphics co
   Returns a path object built from the current path information in a graphics context.
 - [func replacePathWithStrokedPath()](./cgcontext/replacepathwithstrokedpath%28%29.md)
   Replaces the path in the graphics context with the stroked version of the path.
+- [CGContextMoveToPoint](./cgcontextmovetopoint.md)
+  Begins a new subpath at the point you specify.
+- [CGContextAddLineToPoint](./cgcontextaddlinetopoint.md)
+  Appends a straight line segment from the current point to the provided point .
+- [CGContextAddLines](./cgcontextaddlines.md)
+  Adds a sequence of connected straight-line segments to the current path.
+- [CGContextAddRects](./cgcontextaddrects.md)
+  Adds a set of rectangular paths to the current path.
+- [CGContextAddArc](./cgcontextaddarc.md)
+  Adds an arc of a circle to the current path, possibly preceded by a straight line segment
+- [CGContextAddArcToPoint](./cgcontextaddarctopoint.md)
+  Adds an arc of a circle to the current path, using a radius and tangent points.
+- [CGContextAddCurveToPoint](./cgcontextaddcurvetopoint.md)
+  Appends a cubic Bézier curve from the current point, using the provided control points and end point .
+- [CGContextAddQuadCurveToPoint](./cgcontextaddquadcurvetopoint.md)
+  Appends a quadratic Bézier curve from the current point, using a control point and an end point you specify.
 ### Examining the Current Graphics Path
 - [var boundingBoxOfPath: CGRect](./cgcontext/boundingboxofpath.md)
   Returns the smallest rectangle that contains the current path.
@@ -105,6 +121,10 @@ A `CGContext` instance represents a Quartz 2D drawing destination. A graphics co
   Paints the area within the current path, as determined by the specified fill rule.
 - [func strokePath()](./cgcontext/strokepath%28%29.md)
   Paints a line along the current path.
+- [CGContextEOFillPath](./cgcontexteofillpath.md)
+  Paints the area within the current path, using the even-odd fill rule.
+- [CGContextFillPath](./cgcontextfillpath.md)
+  Paints the area within the current path, using the nonzero winding number rule.
 ### Drawing Shapes
 - [func clear(CGRect)](./cgcontext/clear%28_%29.md)
   Paints a transparent rectangle.
@@ -122,6 +142,10 @@ A `CGContext` instance represents a Quartz 2D drawing destination. A graphics co
   Strokes an ellipse that fits inside the specified rectangle.
 - [func strokeLineSegments(between: [CGPoint])](./cgcontext/strokelinesegments%28between%29.md)
   Strokes a sequence of line segments.
+- [CGContextFillRects](./cgcontextfillrects.md)
+  Paints the areas contained within the provided rectangles, using the fill color in the current graphics state.
+- [CGContextStrokeLineSegments](./cgcontextstrokelinesegments.md)
+  Strokes a sequence of line segments.
 ### Drawing Images and PDF Content
 - [func draw(CGImage, in: CGRect, byTiling: Bool)](./cgcontext/draw%28_,in,bytiling%29.md)
   Draws an image in the specified area.
@@ -131,6 +155,12 @@ A `CGContext` instance represents a Quartz 2D drawing destination. A graphics co
   Returns the current level of interpolation quality for a graphics context.
 - [enum CGInterpolationQuality](./cginterpolationquality.md)
   Levels of interpolation quality for rendering an image.
+- [CGContextDrawTiledImage](./cgcontextdrawtiledimage.md)
+  Repeatedly draws an image, scaled to the provided rectangle, to fill the current clip region.
+- [CGContextDrawImage](./cgcontextdrawimage.md)
+  Draws an image into a graphics context.
+- [CGContextSetInterpolationQuality](./cgcontextsetinterpolationquality.md)
+  Sets the level of interpolation quality for a graphics context.
 ### Drawing Gradients and Shadings
 - [func drawLinearGradient(CGGradient, start: CGPoint, end: CGPoint, options: CGGradientDrawingOptions)](./cgcontext/drawlineargradient%28_,start,end,options%29.md)
   Paints a gradient fill that varies along the line defined by the provided starting and ending points.
@@ -180,10 +210,21 @@ A `CGContext` instance represents a Quartz 2D drawing destination. A graphics co
   Displays a character string at a position you specify.
 - [enum CGTextDrawingMode](./cgtextdrawingmode.md)
   Modes for rendering text.
+- [CGContextSetTextMatrix](./cgcontextsettextmatrix.md)
+  Sets the current text matrix.
+- [CGContextSetTextPosition](./cgcontextsettextposition.md)
+  Sets the location at which text is drawn.
+- [CGContextGetTextPosition](./cgcontextgettextposition.md)
+- [CGContextShowGlyphsAtPositions](./cgcontextshowglyphsatpositions.md)
+  Draws glyphs at the provided position.
 ### Drawing Core Graphics Layers
 - [func draw(CGLayer, at: CGPoint)](./cgcontext/draw%28_,at%29.md)
   Draws the contents of a layer object at the specified point.
 - [func draw(CGLayer, in: CGRect)](./cgcontext/draw%28_,in%29.md)
+  Draws the contents of a layer object into the specified rectangle.
+- [CGContextDrawLayerAtPoint](./cgcontextdrawlayeratpoint.md)
+  Draws the contents of a CGLayer object at the specified point.
+- [CGContextDrawLayerInRect](./cgcontextdrawlayerinrect.md)
   Draws the contents of a layer object into the specified rectangle.
 ### Setting Fill, Stroke, and Shadow Colors
 - [func setFillColor(CGColor)](./cgcontext/setfillcolor%28_%29-8lhn8.md)
@@ -229,6 +270,12 @@ A `CGContext` instance represents a Quartz 2D drawing destination. A graphics co
   Maps a mask into the specified rectangle and intersects it with the current clipping area of the graphics context.
 - [var boundingBoxOfClipPath: CGRect](./cgcontext/boundingboxofclippath.md)
   Returns the bounding box of a clipping path.
+- [CGContextClip](./cgcontextclip.md)
+  Modifies the current clipping path, using the nonzero winding number rule.
+- [CGContextEOClip](./cgcontexteoclip.md)
+  Modifies the current clipping path, using the even-odd rule.
+- [CGContextClipToRects](./cgcontextcliptorects.md)
+  Sets the clipping path to the intersection of the current clipping path with the region defined by an array of rectangles.
 ### Working with Transparency Layers
 - [func beginTransparencyLayer(in: CGRect, auxiliaryInfo: CFDictionary?)](./cgcontext/begintransparencylayer%28in,auxiliaryinfo%29.md)
   Begins a transparency layer whose contents are bounded by the specified rectangle.
@@ -268,6 +315,8 @@ A `CGContext` instance represents a Quartz 2D drawing destination. A graphics co
   Sets the fill pattern in the specified graphics context.
 - [func setShouldAntialias(Bool)](./cgcontext/setshouldantialias%28_%29.md)
   Sets antialiasing on or off for a graphics context.
+- [CGContextSetLineDash](./cgcontextsetlinedash.md)
+  Sets the pattern for dashed lines in a graphics context.
 ### Saving and Restoring Graphics State
 - [func saveGState()](./cgcontext/savegstate%28%29.md)
   Pushes a copy of the current graphics state onto the graphics state stack for the context.
@@ -353,6 +402,11 @@ A `CGContext` instance represents a Quartz 2D drawing destination. A graphics co
 - [init?(data: UnsafeMutableRawPointer?, width: Int, height: Int, bitsPerComponent: Int, bytesPerRow: Int, space: CGColorSpace, bitmapInfo: UInt32, releaseCallback: CGBitmapContextReleaseDataCallback?, releaseInfo: UnsafeMutableRawPointer?)](./cgcontext/init%28data,width,height,bitspercomponent,bytesperrow,space,bitmapinfo,releasecallback,releaseinfo%29-71ea9.md)
 ### Instance Properties
 - [var contentToneMappingInfo: CGContentToneMappingInfo](./cgcontext/contenttonemappinginfo.md)
+### Retaining and Releasing Graphics Contexts
+- [CGContextRelease](./cgcontextrelease.md)
+  Decrements the retain count of a graphics context.
+- [CGContextRetain](./cgcontextretain.md)
+  Increments the retain count of a graphics context.
 
 ## Relationships
 
@@ -375,6 +429,31 @@ A `CGContext` instance represents a Quartz 2D drawing destination. A graphics co
   A mutable graphics path: a mathematical description of shapes or lines to be drawn in a graphics context.
 - [class CGLayer](./cglayer.md)
   An offscreen context for reusing content drawn with Core Graphics.
+### Opaque Types
+- [CGColorRef](./cgcolor.md)
+  A set of components that define a color, with a color space specifying how to interpret them.
+- [CGColorConversionInfoRef](./cgcolorconversioninfo.md)
+  An object that describes how to convert between color spaces for use by other system services.
+- [CGColorSpaceRef](./cgcolorspace.md)
+  A profile that specifies how to interpret a color value for display.
+- [CGDataConsumerRef](./cgdataconsumer.md)
+  An abstraction for data-writing tasks that eliminates the need to manage a raw memory buffer.
+- [CGDataProviderRef](./cgdataprovider.md)
+  An abstraction for data-reading tasks that eliminates the need to manage a raw memory buffer.
+- [CGFontRef](./cgfont.md)
+  A set of character glyphs and layout information for drawing text.
+- [CGFunctionRef](./cgfunction.md)
+  A general facility for defining and using callback functions.
+- [CGGradientRef](./cggradient.md)
+  A definition for a smooth transition between colors for drawing radial and axial gradient fills.
+- [CGPatternRef](./cgpattern.md)
+  A 2D pattern to be used for drawing graphics paths.
+- [CGPDFArray](./cgpdfarray.md)
+  An array structure within a PDF document.
+- [CGPDFContentStream](./cgpdfcontentstream.md)
+  A representation of one or more content data streams in a PDF page.
+- [CGPDFDictionary](./cgpdfdictionary.md)
+  A dictionary structure within a PDF document.
 
 
 ---

@@ -34,12 +34,20 @@ Use a slice layer to slice a given source. Slicing won’t decrease the tensor d
 ### Creating Slice Layers
 - [convenience init?(start: [Int], end: [Int], stride: [Int]?)](./mlcslicelayer/init%28start,end,stride%29.md)
   Creates a slice layer with the start, end, and stride you specify.
+- [+ sliceLayerWithStart:end:stride:](./mlcslicelayer/slicelayerwithstart_end_stride_.md)
+  Creates a slice layer with the specified start, end, and stride.
 ### Inspecting Slice Layers
 - [var start: [Int]](./mlcslicelayer/start-6wsh6.md)
   The start vector.
 - [var end: [Int]](./mlcslicelayer/end-9xw91.md)
   The end vector.
 - [var stride: [Int]?](./mlcslicelayer/stride-84fhb.md)
+  The stride vector.
+- [start](./mlcslicelayer/start-6dnjn.md)
+  The start vector.
+- [end](./mlcslicelayer/end-8z0wi.md)
+  The end vector.
+- [stride](./mlcslicelayer/stride-8dnpu.md)
   The stride vector.
 
 ## Relationships

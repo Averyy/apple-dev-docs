@@ -52,6 +52,19 @@ static SPAffineTransform3D SPAffineTransform3DMakeWithTruncatedProjective(SPProj
   Returns a new affine transform structure from the specified single-precision 4 x 4 matrix truncated to a  4 x 3 matrix.
 - [init(truncating: simd_double4x4)](./init%28truncating%29-9fd9g.md)
   Returns a new affine transform structure from the specified 4 x 4 matrix truncated to a  4 x 3 matrix.
+- [SPAffineTransform3DMake](../spaffinetransform3dmake-3a37f.md)
+- [SPAffineTransform3DMake](../spaffinetransform3dmake-94le1.md)
+  Creates an affine transform from the specified scale, rotate, and translate transforms.
+- [SPAffineTransform3DMakeShear](../spaffinetransform3dmakeshear.md)
+  Creates an affine transform from the specified shear transform.
+- [SPAffineTransform3DMakeWith4x4Matrix](../spaffinetransform3dmakewith4x4matrix.md)
+  Creates an affine transform from the specified 4 x 4 double-precision matrix.
+- [SPAffineTransform3DMakeWithPose](../spaffinetransform3dmakewithpose.md)
+  Creates an affine transform from the specified pose structure.
+- [SPAffineTransform3DMakeWithProjective](../spaffinetransform3dmakewithprojective.md)
+  Creates an affine transform from the specified projective transform.
+- [SPAffineTransform3DMakeWithScaledPose](../spaffinetransform3dmakewithscaledpose.md)
+  Returns a new affine transform structure from the specified scaled pose structure.
 
 
 ---

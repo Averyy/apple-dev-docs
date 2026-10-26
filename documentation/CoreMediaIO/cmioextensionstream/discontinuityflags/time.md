@@ -27,6 +27,8 @@ CMIOExtensionStreamDiscontinuityFlagTime
   A flag that indicates a stream discontinuity due to an unknown reason.
 - [static var sampleDropped: CMIOExtensionStream.DiscontinuityFlags](./sampledropped.md)
   A flag that indicates a discontinuity in the stream due to a dropped frame.
+- [CMIOExtensionStreamDiscontinuityFlagNone](../../cmioextensionstreamdiscontinuityflags/cmioextensionstreamdiscontinuityflagnone.md)
+  A flag that indicates there’s no discontinuity in the stream.
 
 
 ---

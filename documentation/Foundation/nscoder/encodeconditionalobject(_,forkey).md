@@ -64,6 +64,8 @@ The encoded object is decoded with the [`decodeObject(forKey:)`](./decodeobject%
   Encodes a 64-bit integer value and associates it with the string key.
 - [func encode(Any?)](./encode%28_%29-9648d.md)
   Encodes an object.
+- [- encodeNXObject:](./encodenxobject_.md)
+  Encodes an old-style object onto the coder.
 
 
 ---

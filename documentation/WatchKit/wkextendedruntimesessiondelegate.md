@@ -49,6 +49,8 @@ Implement these methods to track the changes to your session’s state.
 ### Creating a Session
 - [var delegate: (any WKExtendedRuntimeSessionDelegate)?](./wkextendedruntimesession/delegate.md)
   A delegate object for monitoring the session and responding to state changes and errors.
+- [+ session](./wkextendedruntimesession/session.md)
+  Instantiates a new session object.
 
 
 ---

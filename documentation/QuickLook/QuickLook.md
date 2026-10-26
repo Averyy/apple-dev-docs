@@ -77,6 +77,8 @@ Import `QuickLook` to use these extension types in iOS and iPadOS. In macOS, the
   A structure with which you can control an existing session and receive events for the current preview application.
 ### Type Aliases
 - [typealias EditingMode](./editingmode.md)
+### Macros
+- [QL_STRONG_REF](./ql_strong_ref.md)
 
 
 ---

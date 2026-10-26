@@ -5,6 +5,16 @@
       "file_path": "documentation/AccessorySetupKit/AccessorySetupKit.md",
       "hash": "5e980e4db25f3d2ffc808d52343ad28f08804e923dbd1def74938e50d9b00457"
     },
+    "https://developer.apple.com/documentation/accessorysetupkit/as_extern": {
+      "etag": "\"9bc-65d55f7e1846c-df\"",
+      "file_path": "documentation/AccessorySetupKit/as_extern.md",
+      "hash": "742d0062ceacf2a18476d4ca7c5652b6091392e4fe168286deebddbd36086a8b"
+    },
+    "https://developer.apple.com/documentation/accessorysetupkit/as_os_ownership": {
+      "etag": "\"a04-65d55f7e1846c-df\"",
+      "file_path": "documentation/AccessorySetupKit/as_os_ownership.md",
+      "hash": "f104467e4569d91d56b1341d83347e6631330397fe8f0440b86c83edb5669d8f"
+    },
     "https://developer.apple.com/documentation/accessorysetupkit/asaccessory": {
       "etag": "\"7008-65d55f7e1846c-df\"",
       "file_path": "documentation/AccessorySetupKit/asaccessory.md",
@@ -329,6 +339,11 @@
       "etag": "\"274b-65d55f7e1846c-df\"",
       "file_path": "documentation/AccessorySetupKit/asdiscoveredaccessory/bluetoothadvertisementdata.md",
       "hash": "ddd74dc61484cf53355702bb16253ba87047617eafbbd0f06c22d40120bd54e8"
+    },
+    "https://developer.apple.com/documentation/accessorysetupkit/asdiscoveredaccessory/bluetoothrssi-3c75a": {
+      "etag": "\"1d30-65d55f7e1846c-df\"",
+      "file_path": "documentation/AccessorySetupKit/asdiscoveredaccessory/bluetoothrssi-3c75a.md",
+      "hash": "8e8ccdafec357d3e092212b9fe557773d34e292a8a6630f190c0f42c7a870c1c"
     },
     "https://developer.apple.com/documentation/accessorysetupkit/asdiscoveredaccessory/bluetoothrssi-5a2gp": {
       "etag": "\"1cb9-65d55f7e1846c-df\"",
@@ -795,6 +810,16 @@
       "file_path": "documentation/AccessorySetupKit/AccessorySetupKit.md",
       "hash": "5e980e4db25f3d2ffc808d52343ad28f08804e923dbd1def74938e50d9b00457"
     },
+    "https://developer.apple.com/tutorials/data/documentation/accessorysetupkit/as_extern.json": {
+      "etag": "\"9bc-65d55f7e1846c-df\"",
+      "file_path": "documentation/AccessorySetupKit/as_extern.md",
+      "hash": "742d0062ceacf2a18476d4ca7c5652b6091392e4fe168286deebddbd36086a8b"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/accessorysetupkit/as_os_ownership.json": {
+      "etag": "\"a04-65d55f7e1846c-df\"",
+      "file_path": "documentation/AccessorySetupKit/as_os_ownership.md",
+      "hash": "f104467e4569d91d56b1341d83347e6631330397fe8f0440b86c83edb5669d8f"
+    },
     "https://developer.apple.com/tutorials/data/documentation/accessorysetupkit/asaccessory.json": {
       "etag": "\"7008-65d55f7e1846c-df\"",
       "file_path": "documentation/AccessorySetupKit/asaccessory.md",
@@ -1119,6 +1144,11 @@
       "etag": "\"274b-65d55f7e1846c-df\"",
       "file_path": "documentation/AccessorySetupKit/asdiscoveredaccessory/bluetoothadvertisementdata.md",
       "hash": "ddd74dc61484cf53355702bb16253ba87047617eafbbd0f06c22d40120bd54e8"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/accessorysetupkit/asdiscoveredaccessory/bluetoothrssi-3c75a.json": {
+      "etag": "\"1d30-65d55f7e1846c-df\"",
+      "file_path": "documentation/AccessorySetupKit/asdiscoveredaccessory/bluetoothrssi-3c75a.md",
+      "hash": "8e8ccdafec357d3e092212b9fe557773d34e292a8a6630f190c0f42c7a870c1c"
     },
     "https://developer.apple.com/tutorials/data/documentation/accessorysetupkit/asdiscoveredaccessory/bluetoothrssi-5a2gp.json": {
       "etag": "\"1cb9-65d55f7e1846c-df\"",
@@ -1583,8 +1613,8 @@
   },
   "metadata": {
     "render": {
-      "version": 1
+      "version": 2
     },
-    "total_pages": 316
+    "total_pages": 322
   }
 }

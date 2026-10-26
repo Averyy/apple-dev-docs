@@ -57,6 +57,10 @@ Cocoa stores all text data as Unicode. The text system converts Unicode into gly
   Historical return values for [`runModal(for:)`](./nsapplication/runmodal%28for%29.md) and [`runModalSession(_:)`](./nsapplication/runmodalsession%28_%29.md).
 - [Tags of Views in the FontPanel](./tags-of-views-in-the-fontpanel.md)
   These constants are obsolete and should not be used.
+- [NSInterfaceStyle](./nsinterfacestyle.md)
+  These constants are used in `NSResponder`’s [`interfaceStyle`](./nsresponder/interfacestyle.md) method.
+- [NSNoUnderlineStyle](./nsnounderlinestyle.md)
+- [NSSingleUnderlineStyle](./nssingleunderlinestyle.md)
 
 
 ---

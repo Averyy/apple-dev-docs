@@ -60,12 +60,18 @@
 - [var kIOSurfaceSuccess: Int32](./kiosurfacesuccess.md)
 - [let kIOSurfaceWidth: CFString](./kiosurfacewidth.md)
   The width of the IOSurface buffer in pixels.
+### Macros
+- [IOSFC_DEPRECATED_MSG](./iosfc_deprecated_msg.md)
+- [IOSFC_IOS_DEPRECATED_MSG](./iosfc_ios_deprecated_msg.md)
+- [IOSFC_SWIFT_NAME](./iosfc_swift_name.md)
 
 ## See Also
 
 ### Reference
 - [IOSurface Structures](./iosurface-structures.md)
 - [IOSurface Functions](./iosurface-functions.md)
+- [IOSurface Enumerations](./iosurface-enumerations.md)
+- [IOSurface Data Types](./iosurface-data-types.md)
 
 
 ---

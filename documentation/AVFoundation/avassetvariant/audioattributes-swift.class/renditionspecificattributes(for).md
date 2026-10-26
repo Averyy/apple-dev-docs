@@ -40,6 +40,8 @@ Attributes for the rendition, or `nil` of none exist.
   The audio formats of the renditions present in the variant.
 - [AVAssetVariant.AudioAttributes.RenditionSpecificAttributes](./renditionspecificattributes.md)
   An object that represents attributes specific to a particular rendition.
+- [formatIDs](../../avassetvariantaudioattributes/formatids.md)
+  The audio formats of the renditions present in the variant.
 
 
 ---

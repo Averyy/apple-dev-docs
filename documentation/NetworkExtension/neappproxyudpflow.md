@@ -43,11 +43,14 @@ App Proxy Providers receive UDP connections to be proxied in the form of `NEAppP
   An [`NWEndpoint`](./nwendpoint.md) object containing information about the local endpoint of the flow.
 ### Instance Properties
 - [var localFlowEndpoint: NWEndpoint?](./neappproxyudpflow/localflowendpoint-7ukb6.md)
+- [localFlowEndpoint](./neappproxyudpflow/localflowendpoint-9a8gj.md)
 ### Instance Methods
 - [func readDatagrams() async -> ([(Data, NWEndpoint)]?, (any Error)?)](./neappproxyudpflow/readdatagrams%28%29.md)
 - [func readDatagrams(completionHandler: ([(Data, NWEndpoint)]?, (any Error)?) -> Void)](./neappproxyudpflow/readdatagrams%28completionhandler%29-71k28.md)
 - [func writeDatagrams([(Data, NWEndpoint)]) async throws](./neappproxyudpflow/writedatagrams%28_%29.md)
 - [func writeDatagrams([(Data, NWEndpoint)], completionHandler: ((any Error)?) -> Void)](./neappproxyudpflow/writedatagrams%28_,completionhandler%29.md)
+- [- readDatagramsAndFlowEndpointsWithCompletionHandler:](./neappproxyudpflow/readdatagramsandflowendpointswithcompletionhandler_.md)
+- [- writeDatagrams:sentByFlowEndpoints:completionHandler:](./neappproxyudpflow/writedatagrams_sentbyflowendpoints_completionhandler_.md)
 
 ## Relationships
 

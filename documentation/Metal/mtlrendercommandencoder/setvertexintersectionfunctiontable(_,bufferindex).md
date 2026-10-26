@@ -39,6 +39,8 @@ By default, the intersection function table at each index is `nil`.
 ### Assigning intersection function tables
 - [func setVertexIntersectionFunctionTables([(any MTLIntersectionFunctionTable)?], bufferRange: Range<Int>)](./setvertexintersectionfunctiontables%28_,bufferrange%29.md)
   Assigns multiple intersection function tables to a range of entries in the vertex shader argument table.
+- [- setVertexIntersectionFunctionTables:withBufferRange:](./setvertexintersectionfunctiontables_withbufferrange_.md)
+  Assigns multiple intersection function tables to a range of entries in the vertex shader argument table.
 
 
 ---

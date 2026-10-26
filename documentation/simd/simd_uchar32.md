@@ -45,6 +45,8 @@ typedef unsigned char __attribute__((ext_vector_type(32))) simd_uchar32;
   Returns a new vector from the specified eight-element vector, and other elements undefined.
 - [func simd_make_uchar32_undef(simd_uchar16) -> simd_uchar32](./simd_make_uchar32_undef%28_%29-9vswr.md)
   Returns a new vector from the specified sixteen-element vector, and other elements undefined.
+- [vector32](./vector32-68jyf.md)
+  Returns a new vector from the specified vectors.
 ### Functions to Create Thirty Two-Element Vectors From Scalar Values
 - [func simd_make_uchar32(UInt8) -> simd_uchar32](./simd_make_uchar32%28_%29-8z2lu.md)
   Returns a new vector with the first element set to a scalar value, and other elements set to zero.
@@ -74,6 +76,24 @@ typedef unsigned char __attribute__((ext_vector_type(32))) simd_uchar32;
   Returns a vector that contains elements from either the first or second parameter, based on the corresponding element in the third parameter.
 ### Alternative Type Alias
 - [typealias vector_uchar32](./vector_uchar32.md)
+### Functions to Create Thirty Two-Element Vectors From Vectors of Other Types
+- [simd_uchar](./simd_uchar-5tgfs.md)
+  Returns a new vector from the specified vector of 8-bit, signed integer elements.
+- [simd_uchar](./simd_uchar-5t6ew.md)
+  Returns a new vector from the specified vector of 8-bit, unsigned integer elements.
+- [simd_uchar](./simd_uchar-5tlbs.md)
+  Returns a new vector from the specified vector of 16-bit, signed integer elements.
+- [simd_uchar](./simd_uchar-5tbi0.md)
+  Returns a new vector from the specified vector of 16-bit, unsigned integer elements.
+### Functions to Perform Saturating Conversion From Vectors of Other Types
+- [simd_uchar_sat](./simd_uchar_sat-330d5.md)
+  Returns a new vector from the specified vector of 8-bit, signed integer elements.
+- [simd_uchar_sat](./simd_uchar_sat-32qhl.md)
+  Returns a new vector from the specified vector of 8-bit, unsigned integer elements.
+- [simd_uchar_sat](./simd_uchar_sat-32vh5.md)
+  Returns a new vector from the specified vector of 16-bit, signed integer elements.
+- [simd_uchar_sat](./simd_uchar_sat-32lax.md)
+  Returns a new vector from the specified vector of 16-bit, unsigned integer elements.
 
 ## See Also
 

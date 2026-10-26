@@ -33,6 +33,9 @@ enum NEVPNIKEv2IntegrityAlgorithm : NSInteger;
   SHA-2 512-bit.
 ### Initializers
 - [init?(rawValue: Int)](./nevpnikev2integrityalgorithm/init%28rawvalue%29.md)
+### Enumeration Cases
+- [NEVPNIKEv2IntegrityAlgorithmSHA160](./nevpnikev2integrityalgorithm/nevpnikev2integrityalgorithmsha160.md)
+- [NEVPNIKEv2IntegrityAlgorithmSHA96](./nevpnikev2integrityalgorithm/nevpnikev2integrityalgorithmsha96.md)
 
 ## Relationships
 
@@ -63,6 +66,8 @@ enum NEVPNIKEv2IntegrityAlgorithm : NSInteger;
   A list of the quantum-secure key exchange methods the Security Association uses.
 - [enum NEVPNIKEv2PostQuantumKeyExchangeMethod](./nevpnikev2postquantumkeyexchangemethod.md)
   Quantum-secure key exchange methods you use with IKEv2 servers.
+- [postQuantumKeyExchangeMethods](./nevpnikev2securityassociationparameters/postquantumkeyexchangemethods-56672.md)
+  A list of the quantum-secure key exchange methods the Security Association uses.
 
 
 ---

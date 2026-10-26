@@ -34,6 +34,8 @@ enum NSTableViewAnimationOptions : NSUInteger;
   Animates a row insertion by sliding from the left. Animates a row removal by sliding towards the left.
 - [static var slideRight: NSTableView.AnimationOptions](./animationoptions/slideright.md)
   Animates a row insertion by sliding from the right. Animates a row removal by sliding towards the right.
+- [NSTableViewAnimationEffectNone](../nstableviewanimationoptions/nstableviewanimationeffectnone.md)
+  Use no animation effects.
 ### Initializers
 - [init(rawValue: UInt)](./animationoptions/init%28rawvalue%29.md)
 

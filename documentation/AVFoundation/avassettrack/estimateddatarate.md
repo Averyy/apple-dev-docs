@@ -27,6 +27,16 @@ var estimatedDataRate: Float { get }
 @property (nonatomic, readonly) float estimatedDataRate;
 ```
 
+## See Also
+
+### Accessing temporal information
+- [timeRange](./timerange.md)
+  The time range of the track within the overall timeline of the asset.
+- [naturalTimeScale](./naturaltimescale.md)
+  The natural time scale of the media that a track references.
+- [- samplePresentationTimeForTrackTime:](./samplepresentationtime%28fortracktime%29.md)
+  Maps the specified track time through the appropriate time mapping and returns the resulting sample presentation time.
+
 
 ---
 

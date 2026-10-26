@@ -40,6 +40,8 @@ init?(coder: NSCoder)
   Creates the expression with the specified expression format and arguments list.
 - [convenience init(format: String, any CVarArg...)](./init%28format,_%29.md)
   Creates the expression with the expression format and arguments list you specify.
+- [+ expressionWithFormat:](./expressionwithformat_.md)
+  Creates the expression with the specified expression arguments.
 
 
 ---

@@ -99,6 +99,10 @@ For more information, see [`UIApplicationSupportsIndirectInputEvents`](../Bundle
   An effect that alters a view’s appearance when a pointer enters the current region.
 - [class UIPointerAccessory](./uipointeraccessory.md)
   Constants that describe accessories to display alongside the primary pointer.
+- [UIPointerShape](./uipointershape-c.class.md)
+  An object that defines the shape of custom pointers.
+- [UIPointerEffect](./uipointereffect-c.class.md)
+  An effect that alters a view’s appearance when a pointer enters the current region.
 ### Pointer region
 - [class UIPointerRegion](./uipointerregion.md)
   A rectangular region that interacts with pointer movements.

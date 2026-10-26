@@ -38,6 +38,7 @@ class AVMetricPlayerItemVariantSwitchEvent
   Represents the currently selected video rendition’s identifiers.
 - [var subtitleRendition: AVMetricMediaRendition](./avmetricplayeritemvariantswitchevent/subtitlerendition.md)
   Represents the currently selected audio rendition’s identifiers.
+- [loadedTimeRanges](./avmetricplayeritemvariantswitchevent/loadedtimeranges-4rhjw.md)
 
 ## Relationships
 

@@ -38,6 +38,8 @@ The time mapping’s source time range represents the start time and duration in
   The date at which a segment starts.
 - [var interstitialEvent: AVPlayerInterstitialEvent?](./interstitialevent.md)
   The associated interstitial event for this segment.
+- [loadedTimeRanges](./loadedtimeranges-2p0fl.md)
+  The time ranges for the segment that have media data is readily available.
 
 
 ---

@@ -46,6 +46,8 @@ MLCReductionTypeL1Norm
   A reduction operation that applies to the sum of the dimensions.
 - [var debugDescription: String](./debugdescription.md)
   A textual description of the reduction operation you use for debugging.
+- [MLCReductionTypeCount](./mlcreductiontypecount.md)
+  The total number of reduction operations.
 
 
 ---

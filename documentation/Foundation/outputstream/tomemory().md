@@ -39,6 +39,10 @@ You retrieve the contents of the memory stream by sending the message [`property
 
 ### Related Documentation
 - [Stream Programming Guide](https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/Streams/Streams.html#//apple_ref/doc/uid/10000188i)
+- [+ outputStreamToBuffer:capacity:](../nsoutputstream/outputstreamtobuffer_capacity_.md)
+  Creates and returns an initialized output stream that can write to a provided buffer.
+- [+ outputStreamToFileAtPath:append:](../nsoutputstream/outputstreamtofileatpath_append_.md)
+  Creates and returns an initialized output stream for writing to a specified file.
 ### Creating Streams
 - [init(toMemory: ())](./init%28tomemory%29.md)
   Returns an initialized output stream that will write to memory.

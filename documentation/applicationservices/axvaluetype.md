@@ -39,6 +39,12 @@ These are AXValueType wrappers for other structures. You must use the AXValueCre
 - [AXValueType.cgRect](./axvaluetype/cgrect.md)
 - [AXValueType.cgSize](./axvaluetype/cgsize.md)
 - [AXValueType.illegal](./axvaluetype/illegal.md)
+- [kAXValueTypeAXError](./axvaluetype/kaxvaluetypeaxerror.md)
+- [kAXValueTypeCFRange](./axvaluetype/kaxvaluetypecfrange.md)
+- [kAXValueTypeCGPoint](./axvaluetype/kaxvaluetypecgpoint.md)
+- [kAXValueTypeCGRect](./axvaluetype/kaxvaluetypecgrect.md)
+- [kAXValueTypeCGSize](./axvaluetype/kaxvaluetypecgsize.md)
+- [kAXValueTypeIllegal](./axvaluetype/kaxvaluetypeillegal.md)
 
 ## Relationships
 

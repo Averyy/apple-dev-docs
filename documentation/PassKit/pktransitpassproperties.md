@@ -35,6 +35,8 @@ class PKTransitPassProperties
   A Boolean value that indicates the pass issuer disabled the pass.
 - [var isBlacklisted: Bool](./pktransitpassproperties/isblacklisted.md)
   A Boolean value that indicates the transit pass issuer disabled the pass.
+- [blocked](./pktransitpassproperties/blocked.md)
+  A Boolean value that indicates the pass issuer disabled the pass.
 ### Getting balance information
 - [var transitBalance: NSDecimalNumber](./pktransitpassproperties/transitbalance.md)
   The current usable stored value on the transit card.

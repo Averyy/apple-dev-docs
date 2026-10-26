@@ -50,6 +50,8 @@ The spell checker will release any resources associated with the document, inclu
   Returns the default values for quote replacement.
 - [var userReplacementsDictionary: [String : String]](./userreplacementsdictionary.md)
   Returns the dictionary used when replacing words.
+- [- forgetWord:](./forgetword_.md)
+  Remove this word from the spelling dictionary.
 
 
 ---

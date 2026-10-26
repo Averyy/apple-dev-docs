@@ -42,6 +42,8 @@ You can obtain subtokens by calling [`CFStringTokenizerGetCurrentSubTokens(_:_:_
   Contains punctuation, symbols, and so on.
 - [static var isCJWordMask: CFStringTokenizerTokenType](./iscjwordmask.md)
   Contains kana and/or ideographs.
+- [kCFStringTokenizerTokenNone](./kcfstringtokenizertokennone.md)
+  Has no token.
 
 
 ---

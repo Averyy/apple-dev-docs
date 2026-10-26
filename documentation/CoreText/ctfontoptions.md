@@ -36,6 +36,8 @@ Use these options with the functions [`CTFontCreateWithNameAndOptions(_:_:_:_:)`
   Prevents automatic font activation.
 - [static var preferSystemFont: CTFontOptions](./ctfontoptions/prefersystemfont.md)
   Font matching prefers to match Apple system fonts.
+- [kCTFontOptionsDefault](./ctfontoptions/kctfontoptionsdefault.md)
+  Default options are used.
 ### Initializers
 - [init(rawValue: CFOptionFlags)](./ctfontoptions/init%28rawvalue%29.md)
   Creates a font options structure with the specified raw value.

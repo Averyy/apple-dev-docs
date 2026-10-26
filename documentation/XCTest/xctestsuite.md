@@ -33,6 +33,8 @@ Typically, Xcode automatically manages test suites for you. Only use [`XCTestSui
   Creates a test suite that contains all test methods in the specified class.
 - [convenience init(forTestCaseWithName: String)](./xctestsuite/init%28fortestcasewithname%29.md)
   Creates a test suite that contains a test case with the specified name.
+- [+ testSuiteWithName:](./xctestsuite/testsuitewithname_.md)
+  Creates a test suite with the specified name.
 ### Managing Tests
 - [func addTest(XCTest)](./xctestsuite/addtest%28_%29.md)
   Adds a test to the test suite.

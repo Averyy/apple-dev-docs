@@ -72,6 +72,7 @@ App Proxy Providers receive network connections to be proxied in the form of `NE
 - [func open(withLocalFlowEndpoint: NWEndpoint?) async throws](./neappproxyflow/open%28withlocalflowendpoint%29.md)
 - [func open(withLocalFlowEndpoint: NWEndpoint?, completionHandler: ((any Error)?) -> Void)](./neappproxyflow/open%28withlocalflowendpoint,completionhandler%29.md)
 - [func setMetadata(on: NWParameters)](./neappproxyflow/setmetadata%28on%29.md)
+- [- openWithLocalFlowEndpoint:completionHandler:](./neappproxyflow/openwithlocalflowendpoint_completionhandler_.md)
 
 ## Relationships
 

@@ -24,6 +24,12 @@ let MTLCounterErrorDomain: String
 extern NSErrorDomain const MTLCounterErrorDomain;
 ```
 
+## See Also
+
+### Counter sample buffer errors
+- [MTLCounterSampleBufferError](./mtlcountersamplebuffererror-swift.struct/code.md)
+  The underlying error code type that indicates why a GPU driver can’t create a counter sample buffer.
+
 
 ---
 

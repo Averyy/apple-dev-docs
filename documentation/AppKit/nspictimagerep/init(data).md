@@ -36,6 +36,8 @@ If the PICT data is obtained directly from a PICT file or document, this method 
 ### Related Documentation
 - [var pictRepresentation: Data](./pictrepresentation.md)
   The image representation’s PICT data.
+- [+ imageRepWithData:](./imagerepwithdata_.md)
+  Creates and returns a representation of an image from the specified data in the PICT file format.
 
 
 ---

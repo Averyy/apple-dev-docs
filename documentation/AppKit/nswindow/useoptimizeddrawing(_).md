@@ -58,6 +58,12 @@ The optimizations may prevent sibling subviews from being displayed in the corre
   Disables the window’s screen updates until the window is flushed.
 - [func drag(NSImage, at: NSPoint, offset: NSSize, event: NSEvent, pasteboard: NSPasteboard, source: Any, slideBack: Bool)](./drag%28_,at,offset,event,pasteboard,source,slideback%29.md)
   Begins a dragging session.
+- [- convertBaseToScreen:](./convertbasetoscreen_.md)
+  Converts a given point from the window’s base coordinate system to the screen coordinate system.
+- [- convertScreenToBase:](./convertscreentobase_.md)
+  Converts a given point from the screen coordinate system to the window’s base coordinate system.
+- [- userSpaceScaleFactor](./userspacescalefactor.md)
+  Returns the scale factor applied to the window.
 
 
 ---

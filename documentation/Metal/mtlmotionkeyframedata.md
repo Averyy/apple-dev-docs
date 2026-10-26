@@ -35,6 +35,9 @@ An [`MTLMotionKeyframeData`](./mtlmotionkeyframedata.md) instance describes the 
   The buffer that holds the geometry data.
 - [var offset: Int](./mtlmotionkeyframedata/offset.md)
   The offset, in bytes, to the keyframe data.
+### Creating a motion keyframe data instance
+- [+ data](./mtlmotionkeyframedata/data.md)
+  Creates a new keyframe object.
 
 ## Relationships
 

@@ -32,6 +32,7 @@ Audio Engine helps you achieve simple, as well as complex, audio processing task
   An object that performs audio input or output in the engine.
 - [class AVAudioNode](./avaudionode.md)
   An object you use for audio generation, processing, or an I/O block.
+- [AVAudioIONodeInputBlockRealtimeSafe](./avaudioionodeinputblockrealtimesafe.md)
 ### Scheduled playback
 - [Building an audio sequencer to arrange and play clips](./building-an-audio-sequencer-to-arrange-and-play-clips.md)
   Synchronize audio loops with a main tempo by creating a real-time clip launcher.
@@ -64,6 +65,8 @@ Audio Engine helps you achieve simple, as well as complex, audio processing task
   An object that supplies audio data.
 - [class AVAudioSinkNode](./avaudiosinknode.md)
   An object that receives audio data.
+- [AVAudioSourceNodeRenderBlockRealtimeSafe](./avaudiosourcenoderenderblockrealtimesafe.md)
+- [AVAudioSinkNodeReceiverBlockRealtimeSafe](./avaudiosinknodereceiverblockrealtimesafe.md)
 ### Spatial audio
 - [class AVAudioEnvironmentNode](./avaudioenvironmentnode.md)
   An object that simulates a 3D audio environment.

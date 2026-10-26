@@ -161,6 +161,8 @@ Add an observer to the [`MFMessageComposeViewControllerTextMessageAvailabilityDi
 ### Handling notifications
 - [let MFMessageComposeViewControllerTextMessageAvailabilityKey: String](./mfmessagecomposeviewcontrollertextmessageavailabilitykey.md)
   The value of this key is a number object that contains a Boolean value.
+- [MFMessageComposeViewControllerTextMessageAvailabilityDidChangeNotification](./mfmessagecomposeviewcontrollertextmessageavailabilitydidchangenotification.md)
+  Posted when the value returned by the [`canSendText`](./mfmessagecomposeviewcontroller/cansendtext%28%29.md) class method has changed.
 ### Configuring device validation
 - [func setUPIVerificationCodeSendCompletion((Bool) -> Void)](./mfmessagecomposeviewcontroller/setupiverificationcodesendcompletion%28_%29.md)
   Configures the instance of a view for Unified Payments Interface (UPI) device validation.

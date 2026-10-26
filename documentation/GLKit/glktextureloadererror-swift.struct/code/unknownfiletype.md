@@ -54,6 +54,8 @@ GLKTextureLoaderErrorUnknownFileType
   An uncompressed texture could not be uploaded.
 - [GLKTextureLoaderError.Code.unknownPathType](./unknownpathtype.md)
   The path type was unrecognized.
+- [GLKTextureLoaderErrorUnsupportedBitDepth](./unsupportedbitdepth.md)
+  The data in the source image has an unsupported bit depth.
 
 
 ---

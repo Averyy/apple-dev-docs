@@ -12,6 +12,12 @@
   The operation is along the y-axis.
 - [let z: Axis3D](./z.md)
   The operation is along the z-axis.
+### Macros
+- [SPATIAL_INLINE](./spatial_inline.md)
+- [SPATIAL_OVERLOADABLE](./spatial_overloadable.md)
+- [SPATIAL_REFINED_FOR_SWIFT](./spatial_refined_for_swift.md)
+- [SPATIAL_SWIFT_NAME](./spatial_swift_name.md)
+- [SPDefaultTolerance](./spdefaulttolerance.md)
 
 
 ---

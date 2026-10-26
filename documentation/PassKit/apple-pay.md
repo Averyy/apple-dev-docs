@@ -101,6 +101,8 @@ Request and process Apple Pay payments in your app.
   Billing or shipping address fields.
 - [enum PKApplePayLaterAvailability](./pkapplepaylateravailability.md)
   Values you use to enable or disable Apple Pay Later for a specific transaction.
+- [applePayLaterAvailability](./pkpaymentrequest/applepaylateravailability-inpf.md)
+  A value that indicates whether Apple Pay Later is available for a transaction.
 
 ## See Also
 

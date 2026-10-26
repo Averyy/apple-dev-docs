@@ -46946,7 +46946,7 @@
       "hash": "4b770cb0b30e3fdfc8a0ee3a6463cdaccd3a18635ee6f2ccc0b5bb7b5ac3c086"
     },
     "https://developer.apple.com/documentation/kernel/1646100-anonymous": {
-      "etag": "\"1a7b-6593d12fdb345-df\"",
+      "etag": "\"1a7b-6593d12fdb345\"",
       "file_path": "documentation/kernel/api-1646100-anonymous.md",
       "hash": "e502375497a6cc733249a7b9e019c874d510defb89480c44737e09737f145e3f"
     },
@@ -75415,6 +75415,21 @@
       "file_path": "documentation/kernel/data_in_code_entry/api-1525931-offset.md",
       "hash": "ff1692c9ae0c8b0fde788d8d46f64c2681f08830c7dab53b1a3d3564947818f7"
     },
+    "https://developer.apple.com/documentation/kernel/data_queue_entry_header_size": {
+      "etag": "\"10d5-659023607972b-df\"",
+      "file_path": "documentation/kernel/data_queue_entry_header_size.md",
+      "hash": "235e83b15f0b3cd2db9254ee896e558b70966461b4cc2deff815f24e629976cd"
+    },
+    "https://developer.apple.com/documentation/kernel/data_queue_memory_appendix_size": {
+      "etag": "\"10f4-6590235fdf518-df\"",
+      "file_path": "documentation/kernel/data_queue_memory_appendix_size.md",
+      "hash": "4cf833ebf2810158bcebf8de710688ead1e8110f553ee4a3c64a0dc7e758c853"
+    },
+    "https://developer.apple.com/documentation/kernel/data_queue_memory_header_size": {
+      "etag": "\"10f2-65902337d76f6-df\"",
+      "file_path": "documentation/kernel/data_queue_memory_header_size.md",
+      "hash": "d513bacffc2a76658bf3d3e347f113dfb50f3175ec86909871263d7ed82cc0e2"
+    },
     "https://developer.apple.com/documentation/kernel/dclcallcommandproc": {
       "etag": "\"468d-6593d13ea5db5-df\"",
       "file_path": "documentation/kernel/dclcallcommandproc.md",
@@ -80786,7 +80801,7 @@
       "hash": "d27eb4262b9fc1bb8ce114e34463c7323f362cd629a5ae4cb4c1b08e16875a0f"
     },
     "https://developer.apple.com/documentation/kernel/embedded_panic_header/2915843-eph_version": {
-      "etag": "\"e73-6593d11c3fb53-df\"",
+      "etag": "\"e73-6593d11c3fb53\"",
       "file_path": "documentation/kernel/embedded_panic_header/api-2915843-eph_version.md",
       "hash": "2fa252136f8801e1d6cd433efb222cf51bb2c814f3e0b7fe25999303166de347"
     },
@@ -81371,7 +81386,7 @@
       "hash": "3e21c10e507715f32099845e5fb61fd181e000f314711e29156241dd61d83d7a"
     },
     "https://developer.apple.com/documentation/kernel/evglobals/1571563-llelast": {
-      "etag": "\"dee-6593d12c1beae\"",
+      "etag": "\"dee-6593d12c1beae-df\"",
       "file_path": "documentation/kernel/evglobals/api-1571563-llelast.md",
       "hash": "c641a0313e87078c01e60df563f3ced598c9105567a43a0ea47131e79c985421"
     },
@@ -96785,6 +96800,16 @@
       "file_path": "documentation/kernel/ioaudiocontrol/workloop.md",
       "hash": "351a3f8748257415e3d68b2ae6d1140c6e84fa293399a5fd01cca04b90405a90"
     },
+    "https://developer.apple.com/documentation/kernel/ioaudiocontrolcalls": {
+      "etag": "\"1392-659023447302c-df\"",
+      "file_path": "documentation/kernel/ioaudiocontrolcalls.md",
+      "hash": "8fe2c049f8f3c9fba49a2716ba26657785d0ad4874eb5ff779b9c5ebf8e94456"
+    },
+    "https://developer.apple.com/documentation/kernel/ioaudiocontrolnotifications": {
+      "etag": "\"1447-6590236353f08-df\"",
+      "file_path": "documentation/kernel/ioaudiocontrolnotifications.md",
+      "hash": "55987da38f227b4e75b1cd609c8b4a5a660ee4d6422831e8faf398ff792d67d3"
+    },
     "https://developer.apple.com/documentation/kernel/ioaudiocontroluserclient": {
       "etag": "\"36d1-6593d14807911-df\"",
       "file_path": "documentation/kernel/ioaudiocontroluserclient.md",
@@ -98245,6 +98270,16 @@
       "file_path": "documentation/kernel/ioaudioengine/workloop.md",
       "hash": "c0ed1bdd3f381a7895caaf2d41fb880746a1f99ef2d7aed88b17dadd6fd5dd0d"
     },
+    "https://developer.apple.com/documentation/kernel/ioaudioenginecalls": {
+      "etag": "\"1ca2-659023556ab73-df\"",
+      "file_path": "documentation/kernel/ioaudioenginecalls.md",
+      "hash": "1126cc6b2891f0e46825756028b2715e4b3678cb527dedbc4f1cae98b46f8aa4"
+    },
+    "https://developer.apple.com/documentation/kernel/ioaudioenginememory": {
+      "etag": "\"1b69-6590235e8a925-df\"",
+      "file_path": "documentation/kernel/ioaudioenginememory.md",
+      "hash": "6f094b81f9f434cb155ee7a9c396af78223d56811c1fc64b44a445464945ec17"
+    },
     "https://developer.apple.com/documentation/kernel/ioaudioenginenotifications": {
       "etag": "\"394e-6593d1370b22e-df\"",
       "file_path": "documentation/kernel/ioaudioenginenotifications.md",
@@ -98299,6 +98334,16 @@
       "etag": "\"10be-6593d1387cb8d-df\"",
       "file_path": "documentation/kernel/ioaudioengineposition/api-1561650-fsampleframe.md",
       "hash": "93a0fc11ef3f48a3e0706a350dee7056d951a377a1588f4003c54ce001519ccf"
+    },
+    "https://developer.apple.com/documentation/kernel/ioaudioenginestate": {
+      "etag": "\"16e2-6590234aa88ea-df\"",
+      "file_path": "documentation/kernel/ioaudioenginestate.md",
+      "hash": "10231d610bfea63040e967707d00f303b54578f1e18c9ed94d8b64a9ce3bbeb6"
+    },
+    "https://developer.apple.com/documentation/kernel/ioaudioenginestatus": {
+      "etag": "\"1716-6590233586ecb-df\"",
+      "file_path": "documentation/kernel/ioaudioenginestatus.md",
+      "hash": "ae280ceba7d9d5ed64a0de3170a0baac176a538017adb763317a94038c34ce63"
     },
     "https://developer.apple.com/documentation/kernel/ioaudioenginetraps": {
       "etag": "\"2aae-6593d12ef1814-df\"",
@@ -98735,6 +98780,11 @@
       "file_path": "documentation/kernel/ioaudiolevelcontrol/api-1811910-setminvalue.md",
       "hash": "4eae3b195a72553c5c6ba7e8fe1d4b8d48dee7979f783dc22f49e5746de20fdc"
     },
+    "https://developer.apple.com/documentation/kernel/ioaudionotificationmessage": {
+      "etag": "\"170c-6590233cdc379-df\"",
+      "file_path": "documentation/kernel/ioaudionotificationmessage.md",
+      "hash": "f8471a22260e1222b9e9065949c2280e2aa28e4f6e32afafff2791dee91ce14a"
+    },
     "https://developer.apple.com/documentation/kernel/ioaudioport": {
       "etag": "\"5974-6593d140e8d71-df\"",
       "file_path": "documentation/kernel/ioaudioport.md",
@@ -98954,6 +99004,11 @@
       "etag": "\"1694-6593d142af073-df\"",
       "file_path": "documentation/kernel/ioaudioselectorcontrol/api-3516530-replaceavailableselection.md",
       "hash": "24bdae75c35c2f57bcc3de577f34c9610a0587053d758c75340b62a0ef697f20"
+    },
+    "https://developer.apple.com/documentation/kernel/ioaudiosmptetime": {
+      "etag": "\"2233-6590236335ad3-df\"",
+      "file_path": "documentation/kernel/ioaudiosmptetime.md",
+      "hash": "df6a2eb190d2c2326cfd4df78c0e0a309fb18c8b406ad8c0a84a6d8c574ce53c"
     },
     "https://developer.apple.com/documentation/kernel/ioaudiostream": {
       "etag": "\"d393-6593d1544efda-df\"",
@@ -99289,6 +99344,11 @@
       "etag": "\"106d-6593d15438b93-df\"",
       "file_path": "documentation/kernel/ioaudiostreamdatadescriptor/api-1491105-fstreamlength.md",
       "hash": "da3b8eae52c2134e2582f72f4bc2f770eb3df5b092972625843d80418702dd9a"
+    },
+    "https://developer.apple.com/documentation/kernel/ioaudiostreamdirection": {
+      "etag": "\"1368-6590234b5baec-df\"",
+      "file_path": "documentation/kernel/ioaudiostreamdirection.md",
+      "hash": "402832de76301eac1eacbe22a6f10751eefaf570d89fa5b21678d81c702081b6"
     },
     "https://developer.apple.com/documentation/kernel/ioaudiostreamformat": {
       "etag": "\"3a3b-6593d1285fb35-df\"",
@@ -103825,6 +103885,11 @@
       "file_path": "documentation/kernel/iodataqueue/api-1811020-withentries.md",
       "hash": "52ab87f57985320a66c6359e9219e4e75be35e4c414122fb3594d961f1662500"
     },
+    "https://developer.apple.com/documentation/kernel/iodataqueueappendix": {
+      "etag": "\"14b4-65902353b5ffe-df\"",
+      "file_path": "documentation/kernel/iodataqueueappendix.md",
+      "hash": "cce14ba78a99ae3dea8073a5b95c7b70e3c133871db38a2a5c53a3f08889bf96"
+    },
     "https://developer.apple.com/documentation/kernel/iodataqueueclientdequeueentryblock": {
       "etag": "\"13e7b-6593d123feabf-df\"",
       "file_path": "documentation/kernel/iodataqueueclientdequeueentryblock.md",
@@ -104054,6 +104119,16 @@
       "etag": "\"150c-6593d1515d53e-df\"",
       "file_path": "documentation/kernel/iodataqueuedispatchsourceinterface.md",
       "hash": "e5cc831f8d7dba7273845f9b2932282220a34796d3e0993b0be9fb277960ef86"
+    },
+    "https://developer.apple.com/documentation/kernel/iodataqueueentry": {
+      "etag": "\"14f2-659023532b3e5-df\"",
+      "file_path": "documentation/kernel/iodataqueueentry.md",
+      "hash": "ab243a1e28d5d5c479791b4b60653e3d558e32062915c143234359f83efebada"
+    },
+    "https://developer.apple.com/documentation/kernel/iodataqueuememory": {
+      "etag": "\"18fa-6590234d629a1-df\"",
+      "file_path": "documentation/kernel/iodataqueuememory.md",
+      "hash": "bef6c37c738adba7c004a1de8a818f395030dc057c6b1a5a6732a3fc3615361b"
     },
     "https://developer.apple.com/documentation/kernel/iodclprogram": {
       "etag": "\"8157-6593d12fbbf1e-df\"",
@@ -104609,6 +104684,11 @@
       "etag": "\"1669-6593d128e35ee-df\"",
       "file_path": "documentation/kernel/iodevicememory/initelement/tag.md",
       "hash": "d84f5e573ac47612c97817455fbe509a3f39651974d8980dd43ba28a7aadd31b"
+    },
+    "https://developer.apple.com/documentation/kernel/iodirection": {
+      "etag": "\"1086-6590234f52031-df\"",
+      "file_path": "documentation/kernel/iodirection.md",
+      "hash": "9ef69bf9aab947e12e3c1c183223bd5f37b54102ee2c9793557868cde010fdc2"
     },
     "https://developer.apple.com/documentation/kernel/iodispatchaction": {
       "etag": "\"13e7-6593d11ccafce-df\"",
@@ -106700,6 +106780,26 @@
       "file_path": "documentation/kernel/iodmamapspecification/api-1442015-resvb.md",
       "hash": "574c723c5c515439e5a2510f87224995eac8952b3ee9df4a602f3e02af22f119"
     },
+    "https://developer.apple.com/documentation/kernel/iodot3collentry": {
+      "etag": "\"13fe-659023474ab58-df\"",
+      "file_path": "documentation/kernel/iodot3collentry.md",
+      "hash": "de0caf0eefbd2ef5e0fe77d2cfbe7a73664a4e7612d486356dba36169e296aa6"
+    },
+    "https://developer.apple.com/documentation/kernel/iodot3rxextraentry": {
+      "etag": "\"259b-65902348e7f09-df\"",
+      "file_path": "documentation/kernel/iodot3rxextraentry.md",
+      "hash": "5d97424641036c38b2f6baad4a6a002ffeb8387fdb196228b35f7ab3062b5166"
+    },
+    "https://developer.apple.com/documentation/kernel/iodot3statsentry": {
+      "etag": "\"2e7b-6590236432113-df\"",
+      "file_path": "documentation/kernel/iodot3statsentry.md",
+      "hash": "ac92c40664f0eaed492ecbec0fd76f81d087972326b936c6d508502e484d5b25"
+    },
+    "https://developer.apple.com/documentation/kernel/iodot3txextraentry": {
+      "etag": "\"2171-6590233a37e3b-df\"",
+      "file_path": "documentation/kernel/iodot3txextraentry.md",
+      "hash": "02e24e620482c8400e2cc579b3c23416709ee3ae0be925f58be42318afee643c"
+    },
     "https://developer.apple.com/documentation/kernel/iodtcompareaddresscellfunc": {
       "etag": "\"13e6a-6593d147ae589-df\"",
       "file_path": "documentation/kernel/iodtcompareaddresscellfunc.md",
@@ -108215,6 +108315,11 @@
       "file_path": "documentation/kernel/ioethernetinterface/reserved.md",
       "hash": "93608867843c31969ffce4a164a0143241c3d18c99dea115686bcc4f7c13af9a"
     },
+    "https://developer.apple.com/documentation/kernel/ioethernetstats": {
+      "etag": "\"19ed-6590235e06094-df\"",
+      "file_path": "documentation/kernel/ioethernetstats.md",
+      "hash": "ffea28384065f43e2abec0c277b9b76e28a1949351a1e3cf4f8626a2d90cea31"
+    },
     "https://developer.apple.com/documentation/kernel/ioeventlink": {
       "etag": "\"4f6b-6593d12abc3e1-df\"",
       "file_path": "documentation/kernel/ioeventlink.md",
@@ -109009,6 +109114,11 @@
       "etag": "\"fcc-6593d14d7f690-df\"",
       "file_path": "documentation/kernel/ioexternaltrap/api-1400639-func.md",
       "hash": "29c1659bbab807096e7e0fd3c5203860bbcbffdd410854f97b082670b1f10710"
+    },
+    "https://developer.apple.com/documentation/kernel/iofb_arbitrary_size_cursor": {
+      "etag": "\"11bc-65902353d403d-df\"",
+      "file_path": "documentation/kernel/iofb_arbitrary_size_cursor.md",
+      "hash": "102e5b39fac2939fd21bdc2bf5d2eb9a9f090a952d1fceee7e1150c50ac2fbfb"
     },
     "https://developer.apple.com/documentation/kernel/iofbcursorcontrolattribute": {
       "etag": "\"23ce-6593d11a017e5-df\"",
@@ -124330,6 +124440,11 @@
       "file_path": "documentation/kernel/iomediastate.md",
       "hash": "819a7a370705915adf6c7d6fda27f5772d20bb041bc68f961d796b78f5cb6cab"
     },
+    "https://developer.apple.com/documentation/kernel/iomediumtype": {
+      "etag": "\"ed5-65902344956f6-df\"",
+      "file_path": "documentation/kernel/iomediumtype.md",
+      "hash": "9b8d7062c15ef341fe236c33350b6d1346558cd282d88858cb91280199a91f7a"
+    },
     "https://developer.apple.com/documentation/kernel/iomemorycursor": {
       "etag": "\"4ae0-6593d1245c3b6-df\"",
       "file_path": "documentation/kernel/iomemorycursor.md",
@@ -127465,6 +127580,11 @@
       "file_path": "documentation/kernel/ionetworkmedium/reserved.md",
       "hash": "9911668123566dd05223f018a168672422c08d4043c77d8cf593799646695449"
     },
+    "https://developer.apple.com/documentation/kernel/ionetworkstats": {
+      "etag": "\"1b6a-65902351790e1-df\"",
+      "file_path": "documentation/kernel/ionetworkstats.md",
+      "hash": "e49536d98f72ce60f32ffc1a6855ab64b25ea23bc0fd1df3e49ea61227e9996a"
+    },
     "https://developer.apple.com/documentation/kernel/ionormdistreportvalues": {
       "etag": "\"3515-6593d13da5dd0-df\"",
       "file_path": "documentation/kernel/ionormdistreportvalues.md",
@@ -127864,6 +127984,11 @@
       "etag": "\"11fc-6593d1304ccaa-df\"",
       "file_path": "documentation/kernel/iooutputqueue/reserved.md",
       "hash": "55ebc1f51ae28ef5300e31796964c0072578ba0b2bd868989276723c83d794e8"
+    },
+    "https://developer.apple.com/documentation/kernel/iooutputqueuestats": {
+      "etag": "\"2152-6590234709b6d-df\"",
+      "file_path": "documentation/kernel/iooutputqueuestats.md",
+      "hash": "152dbc64d1a2b88c5a335dffaf26ba1f3d224152493091fb125c5f95ef7d9a18"
     },
     "https://developer.apple.com/documentation/kernel/iopacketbufferconstraints": {
       "etag": "\"21cf-6593d13d3e260-df\"",
@@ -129930,6 +130055,11 @@
       "file_path": "documentation/kernel/iopmdriverassertiontype.md",
       "hash": "eda0c7c134f3e56aadd99d476e9a4e4fc262db188608ca85977a8bc2d9112947"
     },
+    "https://developer.apple.com/documentation/kernel/iopmpowerflags": {
+      "etag": "\"29ea-6590236d89c91-df\"",
+      "file_path": "documentation/kernel/iopmpowerflags.md",
+      "hash": "e4c69307e65acc88645d2dd17e4882a2d72f680e58ea05c61e604b2e71680679"
+    },
     "https://developer.apple.com/documentation/kernel/iopmpowersource": {
       "etag": "\"d458-6593d127c24bd-df\"",
       "file_path": "documentation/kernel/iopmpowersource.md",
@@ -130549,6 +130679,36 @@
       "etag": "\"144ba-6593d1348a63e-df\"",
       "file_path": "documentation/kernel/iopmsettingcontrollercallback.md",
       "hash": "2d3aa890e7dc827c1d4369975bc3367c40c0d231bff232692ae213ea63a71325"
+    },
+    "https://developer.apple.com/documentation/kernel/iopmsystemcapabilitychangeparameters": {
+      "etag": "\"2aa7-659023651d669-df\"",
+      "file_path": "documentation/kernel/iopmsystemcapabilitychangeparameters.md",
+      "hash": "fa170dded89a4eb1adb18c37c5979542d3d1af5f2fdbd5d099c5c8e335cf3ca6"
+    },
+    "https://developer.apple.com/documentation/kernel/iopmsystemcapabilitychangeparameters/1522166-fromcapabilities": {
+      "etag": "\"2877-6590234dcedfb-df\"",
+      "file_path": "documentation/kernel/iopmsystemcapabilitychangeparameters/api-1522166-fromcapabilities.md",
+      "hash": "e1425652945b5899cfc1f3c5b4d07be1b96dd8e1db3c17af574b49a6b993323d"
+    },
+    "https://developer.apple.com/documentation/kernel/iopmsystemcapabilitychangeparameters/1522218-notifyref": {
+      "etag": "\"2985-6590234dcedfb-df\"",
+      "file_path": "documentation/kernel/iopmsystemcapabilitychangeparameters/api-1522218-notifyref.md",
+      "hash": "a3e4242685866e60328df154046c01a76bbb8a8853f87d3fb4de786a51f6ec67"
+    },
+    "https://developer.apple.com/documentation/kernel/iopmsystemcapabilitychangeparameters/1522278-changeflags": {
+      "etag": "\"29cc-6590234dcedfb-df\"",
+      "file_path": "documentation/kernel/iopmsystemcapabilitychangeparameters/api-1522278-changeflags.md",
+      "hash": "c0096afc0848e07fcc5f997888302e44fcce898de3aa752ca524d5407789a6ca"
+    },
+    "https://developer.apple.com/documentation/kernel/iopmsystemcapabilitychangeparameters/1522348-maxwaitforreply": {
+      "etag": "\"2a1b-6590234dcedfb-df\"",
+      "file_path": "documentation/kernel/iopmsystemcapabilitychangeparameters/api-1522348-maxwaitforreply.md",
+      "hash": "5a44db27e0631f5eeb3cad432c984a97b8a0635faa1cfac55981199365bec812"
+    },
+    "https://developer.apple.com/documentation/kernel/iopmsystemcapabilitychangeparameters/1522492-tocapabilities": {
+      "etag": "\"286d-6590234dcedfb-df\"",
+      "file_path": "documentation/kernel/iopmsystemcapabilitychangeparameters/api-1522492-tocapabilities.md",
+      "hash": "7ad8af61b1a8ba540f9ac7d5c04c92683d0eb779391271f58ee1bfa7b416c24c"
     },
     "https://developer.apple.com/documentation/kernel/iopowerconnection": {
       "etag": "\"9d63-6593d125086e3-df\"",
@@ -140275,6 +140435,21 @@
       "file_path": "documentation/kernel/iostreambuffer/api-1809743-withmemorydescriptors.md",
       "hash": "99a0248716fa8b88ccdb2f1b93a8dcb11d853d4037300ed0a2559016de708098"
     },
+    "https://developer.apple.com/documentation/kernel/iostreambufferid": {
+      "etag": "\"d23-659023371d5ec-df\"",
+      "file_path": "documentation/kernel/iostreambufferid.md",
+      "hash": "0ef60e5900856866d4091143541f96064403707159d9ecc9815cec507f44f165"
+    },
+    "https://developer.apple.com/documentation/kernel/iostreambufferqueue": {
+      "etag": "\"19f1-6590235371184-df\"",
+      "file_path": "documentation/kernel/iostreambufferqueue.md",
+      "hash": "a4d97a6dd0db1bd318c660fb5c74709e6efeaa316078323601248a37b1eb9d75"
+    },
+    "https://developer.apple.com/documentation/kernel/iostreambufferqueueentry": {
+      "etag": "\"1bf5-6590235c1dd4e-df\"",
+      "file_path": "documentation/kernel/iostreambufferqueueentry.md",
+      "hash": "6a550d7806441d103fdd250eb8395cfde9ad02176b4743d22f20f2b440107cbd"
+    },
     "https://developer.apple.com/documentation/kernel/iostreammode": {
       "etag": "\"14320-6593d13bc51dd-df\"",
       "file_path": "documentation/kernel/iostreammode.md",
@@ -142099,6 +142274,11 @@
       "etag": "\"2399-6593d12cd556a-df\"",
       "file_path": "documentation/kernel/iousbdevrequest/api-1546579-windex.md",
       "hash": "7d2080be88cce4e6377eb0e732f61e94c0bdfe4bee241baa75a668dbbbf19283"
+    },
+    "https://developer.apple.com/documentation/kernel/iousbdevrequestdesc": {
+      "etag": "\"1e3b-659023586120a-df\"",
+      "file_path": "documentation/kernel/iousbdevrequestdesc.md",
+      "hash": "18ce4a9144a00b6a9402765240b640d366dfae8f77055331a95a36e67f07f887"
     },
     "https://developer.apple.com/documentation/kernel/iousbdevrequestto": {
       "etag": "\"3ab6-6593d1544efda-df\"",
@@ -150675,6 +150855,256 @@
       "file_path": "documentation/kernel/kf_override_flag_t/kf_traptrace_ovrd.md",
       "hash": "d1b93c3ef6211aa2ab2d394343520d3622fa72ed99ac933706310fb3079d85a4"
     },
+    "https://developer.apple.com/documentation/kernel/kinquiry_version_descriptor_maxcount": {
+      "etag": "\"1084-659023523ae7b-df\"",
+      "file_path": "documentation/kernel/kinquiry_version_descriptor_maxcount.md",
+      "hash": "1dca975d47b6190c5803fdaf0e26cb4fe181bb033c55853149124494f84440b0"
+    },
+    "https://developer.apple.com/documentation/kernel/kioactivemedium": {
+      "etag": "\"1153-659023474ab58-df\"",
+      "file_path": "documentation/kernel/kioactivemedium.md",
+      "hash": "a71b73e31dfe616eae2f815112c8e918e47b58906c9ac3b3b88dc65336f64baf"
+    },
+    "https://developer.apple.com/documentation/kernel/kioaudiocontrolchannelidkey": {
+      "etag": "\"10be-659023416883c-df\"",
+      "file_path": "documentation/kernel/kioaudiocontrolchannelidkey.md",
+      "hash": "3c0f4a6626beb0d0240fbe4a2633aaa89e3faf357b738faac0ff2a02921ca0cf"
+    },
+    "https://developer.apple.com/documentation/kernel/kioaudiocontrolchannelnameall": {
+      "etag": "\"eeb-6590234428c50-df\"",
+      "file_path": "documentation/kernel/kioaudiocontrolchannelnameall.md",
+      "hash": "06fd2af3753f3859b8f020442b9876132021786fb4d33bf7f0ee5157ce609c9b"
+    },
+    "https://developer.apple.com/documentation/kernel/kioaudiocontrolchannelnamecenter": {
+      "etag": "\"f00-659023628b017-df\"",
+      "file_path": "documentation/kernel/kioaudiocontrolchannelnamecenter.md",
+      "hash": "df3243e456612688c4b7c3e8141e7083830767bc713cc3372c9dd6d9c2640ea5"
+    },
+    "https://developer.apple.com/documentation/kernel/kioaudiocontrolchannelnamefrontleftcenter": {
+      "etag": "\"f36-659023407a776-df\"",
+      "file_path": "documentation/kernel/kioaudiocontrolchannelnamefrontleftcenter.md",
+      "hash": "82d36492d447bf7aeec5f737323f12c481f4062d9a4ff310b58509e39411f5dd"
+    },
+    "https://developer.apple.com/documentation/kernel/kioaudiocontrolchannelnamefrontrightcenter": {
+      "etag": "\"f3c-6590235d0db8a-df\"",
+      "file_path": "documentation/kernel/kioaudiocontrolchannelnamefrontrightcenter.md",
+      "hash": "8ef68c48b8e366c092f8fd3809e9bfbf2eec2d1c602aa47c67323ff48084419b"
+    },
+    "https://developer.apple.com/documentation/kernel/kioaudiocontrolchannelnamekey": {
+      "etag": "\"1154-6590236cff08c-df\"",
+      "file_path": "documentation/kernel/kioaudiocontrolchannelnamekey.md",
+      "hash": "e48ef22aa60418ac43f4eb1e5c6fe17d0cfeebdc4117d438ee1a6e695b6bfcbd"
+    },
+    "https://developer.apple.com/documentation/kernel/kioaudiocontrolchannelnameleft": {
+      "etag": "\"ef4-6590234a2c247-df\"",
+      "file_path": "documentation/kernel/kioaudiocontrolchannelnameleft.md",
+      "hash": "70e2dcb56d63f9760878238f12ce7694bf87b7eea31dbcfab1a181edd022834a"
+    },
+    "https://developer.apple.com/documentation/kernel/kioaudiocontrolchannelnameleftrear": {
+      "etag": "\"f0d-6590236392e0f-df\"",
+      "file_path": "documentation/kernel/kioaudiocontrolchannelnameleftrear.md",
+      "hash": "88fce6ad9991507dc0bbff7c213ed1a79a68ab0bf7072f4f15d8f3036eb0d017"
+    },
+    "https://developer.apple.com/documentation/kernel/kioaudiocontrolchannelnamerearcenter": {
+      "etag": "\"f18-6590235038d0a-df\"",
+      "file_path": "documentation/kernel/kioaudiocontrolchannelnamerearcenter.md",
+      "hash": "f063950dcef926debea0b8f629e8b6cedee8937be232554216483b0aea35a894"
+    },
+    "https://developer.apple.com/documentation/kernel/kioaudiocontrolchannelnameright": {
+      "etag": "\"efa-6590233db40f5-df\"",
+      "file_path": "documentation/kernel/kioaudiocontrolchannelnameright.md",
+      "hash": "117e69664034d010203f69412ae99839be3fe6026c906d681c90f29ce162a458"
+    },
+    "https://developer.apple.com/documentation/kernel/kioaudiocontrolchannelnamerightrear": {
+      "etag": "\"f13-6590234a8bc11-df\"",
+      "file_path": "documentation/kernel/kioaudiocontrolchannelnamerightrear.md",
+      "hash": "489ae0c83d75a55840e08f338b25f26a31889b6e8d9c49ac92c8934c22d527a5"
+    },
+    "https://developer.apple.com/documentation/kernel/kioaudiocontrolchannelnamesub": {
+      "etag": "\"ef2-6590235c5ebc7-df\"",
+      "file_path": "documentation/kernel/kioaudiocontrolchannelnamesub.md",
+      "hash": "bada2b93bc6793b15b8e9baabe5b19a1610477e9fa963911a59617b8f88df892"
+    },
+    "https://developer.apple.com/documentation/kernel/kioaudiocontrolchannelnamesurroundleft": {
+      "etag": "\"f24-65902347abde8-df\"",
+      "file_path": "documentation/kernel/kioaudiocontrolchannelnamesurroundleft.md",
+      "hash": "255b90a18e1fa9957043c0b037eb71d6a3d0c2a65b2d7bb49364c955ee8259c4"
+    },
+    "https://developer.apple.com/documentation/kernel/kioaudiocontrolchannelnamesurroundright": {
+      "etag": "\"f2a-6590234f75752-df\"",
+      "file_path": "documentation/kernel/kioaudiocontrolchannelnamesurroundright.md",
+      "hash": "654acd8fff17855be749dfa8d1388441b0e21410a762e215dcf21340e877a0d9"
+    },
+    "https://developer.apple.com/documentation/kernel/kioaudiocontrolnumcalls": {
+      "etag": "\"fb3-6590235d0db8a-df\"",
+      "file_path": "documentation/kernel/kioaudiocontrolnumcalls.md",
+      "hash": "35e297753e5f0e0dddbb6a5b916ecb6991a2ac0a68093a041dcfb1fc4391d8b1"
+    },
+    "https://developer.apple.com/documentation/kernel/kioaudiocontroltypekey": {
+      "etag": "\"10b8-6590236353f08-df\"",
+      "file_path": "documentation/kernel/kioaudiocontroltypekey.md",
+      "hash": "096536e053cac0c25876530dec0afa70b6e55fcde91c26154b38f88d3feaac0e"
+    },
+    "https://developer.apple.com/documentation/kernel/kioaudiocontrolvalueisreadonlykey": {
+      "etag": "\"110e-6590233e2d6a2-df\"",
+      "file_path": "documentation/kernel/kioaudiocontrolvalueisreadonlykey.md",
+      "hash": "230efdac4c09e7a2462996e9a6f278ebd205591f8bb35b7569495b04e8f51653"
+    },
+    "https://developer.apple.com/documentation/kernel/kioaudiocontrolvaluekey": {
+      "etag": "\"107e-65902342862cd-df\"",
+      "file_path": "documentation/kernel/kioaudiocontrolvaluekey.md",
+      "hash": "69df4489ba6ee7804b41da75cf61c9938665ade89800e7f7972e581caec3ff52"
+    },
+    "https://developer.apple.com/documentation/kernel/kioaudiodeviceiconnamekey": {
+      "etag": "\"eaa-65902352b7726-df\"",
+      "file_path": "documentation/kernel/kioaudiodeviceiconnamekey.md",
+      "hash": "01302ff81f4ad5e36722b8fd97886432e74f8d21d155d1db6a109bf9291cb2d4"
+    },
+    "https://developer.apple.com/documentation/kernel/kioaudiodevicemanufacturernamekey": {
+      "etag": "\"eda-6590235ac4be6-df\"",
+      "file_path": "documentation/kernel/kioaudiodevicemanufacturernamekey.md",
+      "hash": "b65f80b7a77f95690b35d945c9a423382680d3a98e62548dce3e25c95cf66daa"
+    },
+    "https://developer.apple.com/documentation/kernel/kioaudiodevicenamekey": {
+      "etag": "\"e91-6590234cfa637-df\"",
+      "file_path": "documentation/kernel/kioaudiodevicenamekey.md",
+      "hash": "30222feb3cc329827fc5a8df35607815c6d0467757dd228bb9ef03afc9f10902"
+    },
+    "https://developer.apple.com/documentation/kernel/kioaudioenginedefaultmixbuffersamplesize": {
+      "etag": "\"e58-6590234c8bfe0-df\"",
+      "file_path": "documentation/kernel/kioaudioenginedefaultmixbuffersamplesize.md",
+      "hash": "e7a11171b7468d00b1d586b09253007a5ddfe724d5bd3e876c608d5c2041f7af"
+    },
+    "https://developer.apple.com/documentation/kernel/kioaudioenginefullchannelcategorynameskey": {
+      "etag": "\"f31-6590234c8bfe0-df\"",
+      "file_path": "documentation/kernel/kioaudioenginefullchannelcategorynameskey.md",
+      "hash": "c95c0785ac77bda5049c3b794056bd019b7084af7fecd5a01e2d377096038ebf"
+    },
+    "https://developer.apple.com/documentation/kernel/kioaudioenginefullchannelnameskey": {
+      "etag": "\"f07-6590234ff809b-df\"",
+      "file_path": "documentation/kernel/kioaudioenginefullchannelnameskey.md",
+      "hash": "abd79408f85f93227b5b99610cceef3aa7c3ccc8ae9b957ac71bee2ad0e324bc"
+    },
+    "https://developer.apple.com/documentation/kernel/kioaudioenginefullchannelnumbernameskey": {
+      "etag": "\"f25-6590235e06094-df\"",
+      "file_path": "documentation/kernel/kioaudioenginefullchannelnumbernameskey.md",
+      "hash": "ac12ac94078b5f32e809e1ae9e093ffca09bc5277e729ce0ffa91776f8e7bca4"
+    },
+    "https://developer.apple.com/documentation/kernel/kioaudioenginenumcalls": {
+      "etag": "\"fac-65902367f1de9-df\"",
+      "file_path": "documentation/kernel/kioaudioenginenumcalls.md",
+      "hash": "4d43ad0ab17dfece4dd91660815a28b914768d06a3186e17acc7a7344d781696"
+    },
+    "https://developer.apple.com/documentation/kernel/kioaudioengineoutputsamplelatencykey": {
+      "etag": "\"ee6-659023591ccbb-df\"",
+      "file_path": "documentation/kernel/kioaudioengineoutputsamplelatencykey.md",
+      "hash": "7b40cce47ce0d55f378a9d3300dbaecf1828e8f8e421ff21f9a0b9e45e85dc5c"
+    },
+    "https://developer.apple.com/documentation/kernel/kioaudioenginestatekey": {
+      "etag": "\"108d-6590235a148cb-df\"",
+      "file_path": "documentation/kernel/kioaudioenginestatekey.md",
+      "hash": "e661670f1f66b95d222a46342634ee4a841050da259b064247eb63af7657b72d"
+    },
+    "https://developer.apple.com/documentation/kernel/kioaudiolevelcontrolmaxdbkey": {
+      "etag": "\"1183-65902357452ce-df\"",
+      "file_path": "documentation/kernel/kioaudiolevelcontrolmaxdbkey.md",
+      "hash": "1e564eafc2e0e22c6fed58239d01733f8c712a632aeaf7d2b9d0dee58e821e11"
+    },
+    "https://developer.apple.com/documentation/kernel/kioaudiolevelcontrolmaxvaluekey": {
+      "etag": "\"1127-6590236765dfb-df\"",
+      "file_path": "documentation/kernel/kioaudiolevelcontrolmaxvaluekey.md",
+      "hash": "42879402675694a208e4eb414c9be179ef97330687533cf5c774ad8d87ea2ca3"
+    },
+    "https://developer.apple.com/documentation/kernel/kioaudiolevelcontrolmindbkey": {
+      "etag": "\"1183-659023519a90e-df\"",
+      "file_path": "documentation/kernel/kioaudiolevelcontrolmindbkey.md",
+      "hash": "cc1f26d192be87d4cb7336e1c94dc739385ab92e612b7349de98e1b8d1ebcd33"
+    },
+    "https://developer.apple.com/documentation/kernel/kioaudiolevelcontrolminvaluekey": {
+      "etag": "\"1127-65902367491d4-df\"",
+      "file_path": "documentation/kernel/kioaudiolevelcontrolminvaluekey.md",
+      "hash": "37085bf9501a750c33ae1e8edcf8c1a85ffdaf6768acd05d1f4e93c1755c5eff"
+    },
+    "https://developer.apple.com/documentation/kernel/kioaudioportnamekey": {
+      "etag": "\"e85-6590234c10b4b-df\"",
+      "file_path": "documentation/kernel/kioaudioportnamekey.md",
+      "hash": "e348eed7c1cddeff98551dff973a50fa2b7a502ac8abdb4db1ce66f7e6a99342"
+    },
+    "https://developer.apple.com/documentation/kernel/kioaudioportsubtypekey": {
+      "etag": "\"1075-6590235ef240f-df\"",
+      "file_path": "documentation/kernel/kioaudioportsubtypekey.md",
+      "hash": "799e227cad8335f0399fd85a8cab52f523a7010ce26729a7a0dfce45b669d751"
+    },
+    "https://developer.apple.com/documentation/kernel/kioaudioporttypekey": {
+      "etag": "\"10c2-6590234a0d7c8-df\"",
+      "file_path": "documentation/kernel/kioaudioporttypekey.md",
+      "hash": "5f8eaea04084610cc363f3b0f749c202f1918012dfcde37ffda7de9e91de8231"
+    },
+    "https://developer.apple.com/documentation/kernel/kioaudiosampleratekey": {
+      "etag": "\"104e-6590236d62235-df\"",
+      "file_path": "documentation/kernel/kioaudiosampleratekey.md",
+      "hash": "03fc5f53ca12d4e320e10ff9095a53c40c311e32d19056737722eed52bd080af"
+    },
+    "https://developer.apple.com/documentation/kernel/kioaudiostreamdirectionkey": {
+      "etag": "\"1065-6590235345d67-df\"",
+      "file_path": "documentation/kernel/kioaudiostreamdirectionkey.md",
+      "hash": "d8e484ae7a83d41c028caf57aae2bf9630272725aa7ba2409f70b255e77ff264"
+    },
+    "https://developer.apple.com/documentation/kernel/kioaudiostreamsamplelatencykey": {
+      "etag": "\"1202-6590236d62235-df\"",
+      "file_path": "documentation/kernel/kioaudiostreamsamplelatencykey.md",
+      "hash": "4aee663781bde3f17882e6f54644fbef9aea889d7f5d5966e0a97c24a2942138"
+    },
+    "https://developer.apple.com/documentation/kernel/kioblockstoragedeviceclass": {
+      "etag": "\"ecc-6590233f9a68f-df\"",
+      "file_path": "documentation/kernel/kioblockstoragedeviceclass.md",
+      "hash": "27b8d19a80a582224b7e63f185b391eae210208633041590789f2fcfaf64cb00"
+    },
+    "https://developer.apple.com/documentation/kernel/kioblockstoragedevicewritecachestatekey": {
+      "etag": "\"f40-6590234fd7ff4-df\"",
+      "file_path": "documentation/kernel/kioblockstoragedevicewritecachestatekey.md",
+      "hash": "73ff63586574ff352c12630f8af670f9a29d8500ee9a716e3cc91e3aba23daaf"
+    },
+    "https://developer.apple.com/documentation/kernel/kiobuiltin": {
+      "etag": "\"104e-659023433e2a2-df\"",
+      "file_path": "documentation/kernel/kiobuiltin.md",
+      "hash": "fc351e16227e96566e252178798ee16277d4915e0ddcdf2c44b92ccc7e8fb062"
+    },
+    "https://developer.apple.com/documentation/kernel/kiocdmediaclass": {
+      "etag": "\"fe6-65902350a17ae-df\"",
+      "file_path": "documentation/kernel/kiocdmediaclass.md",
+      "hash": "430089b7450ac24ac6d0da536690fa6cb4e9bd43eb4b520c78bf1bd0be54d39f"
+    },
+    "https://developer.apple.com/documentation/kernel/kiocdmediatockey": {
+      "etag": "\"1106-65902364d91d2-df\"",
+      "file_path": "documentation/kernel/kiocdmediatockey.md",
+      "hash": "17b5c065a9bbbadd705f17926abf02a55aec256727543385ce861a3a02663f49"
+    },
+    "https://developer.apple.com/documentation/kernel/kiocdmediatypekey": {
+      "etag": "\"1065-6590235b12d0d-df\"",
+      "file_path": "documentation/kernel/kiocdmediatypekey.md",
+      "hash": "2fe1bdb8f6a58bb82b486e37d23d67582d93b73f2244158bf951b48e96c7fcf1"
+    },
+    "https://developer.apple.com/documentation/kernel/kiocdmediatyper": {
+      "etag": "\"f76-659023538ec38-df\"",
+      "file_path": "documentation/kernel/kiocdmediatyper.md",
+      "hash": "d0785cd7f696b0f20a772ed9a9120f0f4492ada05d10df20bfdf60592b512cc7"
+    },
+    "https://developer.apple.com/documentation/kernel/kiocdmediatyperom": {
+      "etag": "\"fd2-659023657a977-df\"",
+      "file_path": "documentation/kernel/kiocdmediatyperom.md",
+      "hash": "35b33b0f44994ad41939f4d82656c23b7f3da079355940fe1804e0733d03cc46"
+    },
+    "https://developer.apple.com/documentation/kernel/kiocdmediatyperw": {
+      "etag": "\"f7c-6590236d89c91-df\"",
+      "file_path": "documentation/kernel/kiocdmediatyperw.md",
+      "hash": "ade507c9939b5309436d434196d5979834460cd0ff9ec7311bca3a9b9db8cee2"
+    },
+    "https://developer.apple.com/documentation/kernel/kiodefaultmedium": {
+      "etag": "\"10d3-6590233a13f75-df\"",
+      "file_path": "documentation/kernel/kiodefaultmedium.md",
+      "hash": "079872d4f2a8b07c13d3333919e89e05f12e35e1c40550cb5116603872a77bee"
+    },
     "https://developer.apple.com/documentation/kernel/kiodmacommandoutputbig32": {
       "etag": "\"4766-6593d14711d99-df\"",
       "file_path": "documentation/kernel/kiodmacommandoutputbig32.md",
@@ -150705,10 +151135,810 @@
       "file_path": "documentation/kernel/kiodmacommandoutputlittle64.md",
       "hash": "f82a398ae7ee008f15fb9ef1760fe38e749123f2e63ca389bccab9bc2767c8fc"
     },
+    "https://developer.apple.com/documentation/kernel/kiodvdmediaclass": {
+      "etag": "\"ff8-659023512e51b-df\"",
+      "file_path": "documentation/kernel/kiodvdmediaclass.md",
+      "hash": "4e7445fbe23a2da8b8b0439a3303405b90e50b738426d5b724ffb550c7baf516"
+    },
+    "https://developer.apple.com/documentation/kernel/kiodvdmediatypehdr": {
+      "etag": "\"f97-65902356bd51e-df\"",
+      "file_path": "documentation/kernel/kiodvdmediatypehdr.md",
+      "hash": "95afb277782dce6fcef8b11b1f8cc588a6b96c8dc13e9d79e7663ba210e0de61"
+    },
+    "https://developer.apple.com/documentation/kernel/kiodvdmediatypehdram": {
+      "etag": "\"f8f-65902357dd6a7-df\"",
+      "file_path": "documentation/kernel/kiodvdmediatypehdram.md",
+      "hash": "f348e790b7f619bd6033d055d40ee3207320e3a16137ae43a12f3523be87671d"
+    },
+    "https://developer.apple.com/documentation/kernel/kiodvdmediatypehdrom": {
+      "etag": "\"f8f-65902351790e1-df\"",
+      "file_path": "documentation/kernel/kiodvdmediatypehdrom.md",
+      "hash": "d80fe2e1f3ce75851acf02c176c1c70809b2865095b2764e62b187824c499953"
+    },
+    "https://developer.apple.com/documentation/kernel/kiodvdmediatypehdrw": {
+      "etag": "\"f9d-6590233e2d6a2-df\"",
+      "file_path": "documentation/kernel/kiodvdmediatypehdrw.md",
+      "hash": "9c59acc092157b31372e0bdd5dce1e2230e0dd7bda2a9f99e5256b5806b20490"
+    },
+    "https://developer.apple.com/documentation/kernel/kiodvdmediatypekey": {
+      "etag": "\"108c-65902337b4ea3-df\"",
+      "file_path": "documentation/kernel/kiodvdmediatypekey.md",
+      "hash": "49b12e9e8a41d54ed699cc9a65f44ba758bcc5c58a1e5e3d552107a5560cfe80"
+    },
+    "https://developer.apple.com/documentation/kernel/kiodvdmediatypeplusr": {
+      "etag": "\"fa4-6590236c2924d-df\"",
+      "file_path": "documentation/kernel/kiodvdmediatypeplusr.md",
+      "hash": "b18fe9a0804fd68f0b817c90071a205f4a32de9d039c0a5d5130563e85890e54"
+    },
+    "https://developer.apple.com/documentation/kernel/kiodvdmediatypeplusrw": {
+      "etag": "\"faa-6590236cdb50c-df\"",
+      "file_path": "documentation/kernel/kiodvdmediatypeplusrw.md",
+      "hash": "131ac3f2ba46ed14306ac3b76cb4a37807d657993ad3d328667f7334bfcb74da"
+    },
+    "https://developer.apple.com/documentation/kernel/kiodvdmediatyper": {
+      "etag": "\"f87-659023550a850-df\"",
+      "file_path": "documentation/kernel/kiodvdmediatyper.md",
+      "hash": "f4af1585e16be88bad9c8769d498474895be7c0249023a871ac220414d41e6d8"
+    },
+    "https://developer.apple.com/documentation/kernel/kiodvdmediatyperam": {
+      "etag": "\"f82-65902357fc731-df\"",
+      "file_path": "documentation/kernel/kiodvdmediatyperam.md",
+      "hash": "8dae6f0dd2dc5aba13bbb9c0e7bd398a4cf9c316399cec2dbf8d3676a1d97a28"
+    },
+    "https://developer.apple.com/documentation/kernel/kiodvdmediatyperom": {
+      "etag": "\"f82-659023510a08f-df\"",
+      "file_path": "documentation/kernel/kiodvdmediatyperom.md",
+      "hash": "73261245d38efff5992d6fae50d54c33ba2d90af0222858ef306788f83cef4d0"
+    },
+    "https://developer.apple.com/documentation/kernel/kiodvdmediatyperw": {
+      "etag": "\"f8d-6590234683646-df\"",
+      "file_path": "documentation/kernel/kiodvdmediatyperw.md",
+      "hash": "e37b8412e28ee3b9ba3d3b64f16e8ef32c4205ea3491401c1ba7fd3226d6a426"
+    },
+    "https://developer.apple.com/documentation/kernel/kioethernetaddresssize": {
+      "etag": "\"ec1-65902353d403d-df\"",
+      "file_path": "documentation/kernel/kioethernetaddresssize.md",
+      "hash": "5a299e5e9cdcfb63882210f388d181c50d3b823b64cbafc0225745707ae8e72d"
+    },
+    "https://developer.apple.com/documentation/kernel/kioethernetcontrollerclass": {
+      "etag": "\"eea-659023626acf2-df\"",
+      "file_path": "documentation/kernel/kioethernetcontrollerclass.md",
+      "hash": "2b8687670ef81cd89671c4a8795199a6f8957dd62677f360b12995a70b15ee30"
+    },
+    "https://developer.apple.com/documentation/kernel/kioethernetcrcsize": {
+      "etag": "\"ece-65902357dd6a7-df\"",
+      "file_path": "documentation/kernel/kioethernetcrcsize.md",
+      "hash": "8eee7be58f449ed0ca3073a542a37563a91b1c021f69db1a1acf0f9796ba98c8"
+    },
+    "https://developer.apple.com/documentation/kernel/kioethernetdisabledwakeonlanfiltergroup": {
+      "etag": "\"fbd-65902359d7d43-df\"",
+      "file_path": "documentation/kernel/kioethernetdisabledwakeonlanfiltergroup.md",
+      "hash": "1e0a9ec3cd0190bb77bbcf3a865a8bae7689d3ddcc8733a72e7e09917f9d4279"
+    },
+    "https://developer.apple.com/documentation/kernel/kioethernetmaxpacketsize": {
+      "etag": "\"ed7-6590235ed89cd-df\"",
+      "file_path": "documentation/kernel/kioethernetmaxpacketsize.md",
+      "hash": "f5f8e3671e784ee5589daa418d957c24dfdc4619c5b9b18fb5d6c107f3fa468b"
+    },
+    "https://developer.apple.com/documentation/kernel/kioethernetminpacketsize": {
+      "etag": "\"ed7-6590233a5be78-df\"",
+      "file_path": "documentation/kernel/kioethernetminpacketsize.md",
+      "hash": "029f86e3ae11c87700e4151cf9e05dfd886e202b163b3aa49bc881c01270fc98"
+    },
+    "https://developer.apple.com/documentation/kernel/kioethernetstatskey": {
+      "etag": "\"fc8-6590233a5be78-df\"",
+      "file_path": "documentation/kernel/kioethernetstatskey.md",
+      "hash": "13274022e3dbc8eb8b0ae0ec8df94f948ce559a71a53f341bea36fd8f0d58a92"
+    },
+    "https://developer.apple.com/documentation/kernel/kioethernetwakeonlanfiltergroup": {
+      "etag": "\"f68-65902337d76f6-df\"",
+      "file_path": "documentation/kernel/kioethernetwakeonlanfiltergroup.md",
+      "hash": "744a2b4cb05f1ca2cf147599b53930a358eb22a63d663f27625f812d198b9107"
+    },
+    "https://developer.apple.com/documentation/kernel/kiofeatures": {
+      "etag": "\"10bc-65902360dc58c-df\"",
+      "file_path": "documentation/kernel/kiofeatures.md",
+      "hash": "217fd439d3700a718a22a9fe4e24214ed2c363ec6746183aeab9388cf2f77212"
+    },
     "https://developer.apple.com/documentation/kernel/kiofwavcasynccmdfreed": {
       "etag": "\"cfd-6593d14ac9119-df\"",
       "file_path": "documentation/kernel/kiofwavcasynccmdfreed.md",
       "hash": "e2ea5ba93bcc6eb4e9d35ff94daf4a72bcf5a03a46f28eb770abbc74f6f7766d"
+    },
+    "https://developer.apple.com/documentation/kernel/kiointerfaceextraflags": {
+      "etag": "\"10c1-659023667ae29-df\"",
+      "file_path": "documentation/kernel/kiointerfaceextraflags.md",
+      "hash": "cd7118c338c870aa38fd9170515956f9d5c2445498f9047d804e9480d55c0b95"
+    },
+    "https://developer.apple.com/documentation/kernel/kiointerfaceflags": {
+      "etag": "\"10a1-65902364d91d2-df\"",
+      "file_path": "documentation/kernel/kiointerfaceflags.md",
+      "hash": "44e2108d9b4da8f8837de11e7fb32b5555bb1003c3dd55425f2c0bd42f58b3ad"
+    },
+    "https://developer.apple.com/documentation/kernel/kiointerfacenameprefix": {
+      "etag": "\"10a3-659023492a6d7\"",
+      "file_path": "documentation/kernel/kiointerfacenameprefix.md",
+      "hash": "55808b024930a8415fc40c5daadd458e10f3d3477c69a616bffc01655665345b"
+    },
+    "https://developer.apple.com/documentation/kernel/kiointerfacestate": {
+      "etag": "\"10b0-65902339e4bbd-df\"",
+      "file_path": "documentation/kernel/kiointerfacestate.md",
+      "hash": "8bcbc0fa3341c460953838f037247dba2553d692e2bd3b2977b06c1eb4f12d1d"
+    },
+    "https://developer.apple.com/documentation/kernel/kiointerfacetype": {
+      "etag": "\"10b5-6590236c2924d-df\"",
+      "file_path": "documentation/kernel/kiointerfacetype.md",
+      "hash": "d4f6e25f00a3443a4c2fb9732b0d8eddb5cce50530f695770cb72c3dfa127d1f"
+    },
+    "https://developer.apple.com/documentation/kernel/kiointerfaceunit": {
+      "etag": "\"1073-6590236a5c2ae-df\"",
+      "file_path": "documentation/kernel/kiointerfaceunit.md",
+      "hash": "9e7d2da161978c1db55b21f2a14d74c664432eda23d8b5f275fb96b627bcaa22"
+    },
+    "https://developer.apple.com/documentation/kernel/kiolinkdata": {
+      "etag": "\"10c6-6590235295e29-df\"",
+      "file_path": "documentation/kernel/kiolinkdata.md",
+      "hash": "ac4beace8c3576901b324edc93a0a3173b3f6844b984f1330568bc19f3a50a73"
+    },
+    "https://developer.apple.com/documentation/kernel/kiolinkspeed": {
+      "etag": "\"10b1-659023409cef8-df\"",
+      "file_path": "documentation/kernel/kiolinkspeed.md",
+      "hash": "4bd101de33329fe7e22f3134621a133c2c548342a397e15874ff6ea79f1157db"
+    },
+    "https://developer.apple.com/documentation/kernel/kiolinkstatus": {
+      "etag": "\"10cb-6590233e05a5e-df\"",
+      "file_path": "documentation/kernel/kiolinkstatus.md",
+      "hash": "068924240e2e22b53db6ba5cd532f1348a4318ab7ffc743e2832256c8e7206b4"
+    },
+    "https://developer.apple.com/documentation/kernel/kiolocation": {
+      "etag": "\"105f-65902364681df-df\"",
+      "file_path": "documentation/kernel/kiolocation.md",
+      "hash": "a65633d3fb9ede7f6145a5d5f14421d5f220d639cbd75bb8dd750904c3a3e83f"
+    },
+    "https://developer.apple.com/documentation/kernel/kiomacaddress": {
+      "etag": "\"10cb-6590235c98da0-df\"",
+      "file_path": "documentation/kernel/kiomacaddress.md",
+      "hash": "3b09a9df8f34708d050d7ce4fa2a60bf9b2574e501c31c2cb7d9acd11e4f6404"
+    },
+    "https://developer.apple.com/documentation/kernel/kiomaxpacketsize": {
+      "etag": "\"10b1-659023505a1ce-df\"",
+      "file_path": "documentation/kernel/kiomaxpacketsize.md",
+      "hash": "cb1bb81e15b18dff0073c10a2cb7136da67a17c31fc07820eeba06eb9c3e04ed"
+    },
+    "https://developer.apple.com/documentation/kernel/kiomaxtransferunit": {
+      "etag": "\"1083-65902356bd51e-df\"",
+      "file_path": "documentation/kernel/kiomaxtransferunit.md",
+      "hash": "53bacfd1a4f6d989d20d3616fc0343ec3abfecf18b6b07ca53f71c696ad81c0b"
+    },
+    "https://developer.apple.com/documentation/kernel/kiomediaaddresslength": {
+      "etag": "\"1087-659023375f92c-df\"",
+      "file_path": "documentation/kernel/kiomediaaddresslength.md",
+      "hash": "b1c1f982943754c978e0f0d5489095000ef1c4a030176f3eb771a5e87362dd9e"
+    },
+    "https://developer.apple.com/documentation/kernel/kiomediaclass": {
+      "etag": "\"e09-659023409cef8-df\"",
+      "file_path": "documentation/kernel/kiomediaclass.md",
+      "hash": "546e74b183fe17f2cb38625c1a90da70462eda2c5bf53a51dc4fe53f60bfec3c"
+    },
+    "https://developer.apple.com/documentation/kernel/kiomediacontenthintkey": {
+      "etag": "\"1121-65902348ae4ea-df\"",
+      "file_path": "documentation/kernel/kiomediacontenthintkey.md",
+      "hash": "9a0269ccf6cdb883ddffc8f0db2c0bf5c558cc276a13363f2603153a9c8caf5c"
+    },
+    "https://developer.apple.com/documentation/kernel/kiomediacontentkey": {
+      "etag": "\"1188-6590235d28340-df\"",
+      "file_path": "documentation/kernel/kiomediacontentkey.md",
+      "hash": "2f090783065324b650ba0d0c540f6b22ae887b312a620948df96de7ad3a5d05b"
+    },
+    "https://developer.apple.com/documentation/kernel/kiomediacontentmaskkey": {
+      "etag": "\"10f8-6590234729741-df\"",
+      "file_path": "documentation/kernel/kiomediacontentmaskkey.md",
+      "hash": "e2fc5fc2bd607a9c22ccd1cd55c43c7495120b4f6335f6e35258c1ad32b5325d"
+    },
+    "https://developer.apple.com/documentation/kernel/kiomediaejectablekey": {
+      "etag": "\"1062-6590233c779e5-df\"",
+      "file_path": "documentation/kernel/kiomediaejectablekey.md",
+      "hash": "844140508be0f8b0c719161d38c25366e801ecd55421536f23b5ab6fc9d921d4"
+    },
+    "https://developer.apple.com/documentation/kernel/kiomediaheaderlength": {
+      "etag": "\"1080-6590234fba338-df\"",
+      "file_path": "documentation/kernel/kiomediaheaderlength.md",
+      "hash": "ae829b54e775438f8e93a73b212f40f3369402d53daca0809aa995ca616c91c5"
+    },
+    "https://developer.apple.com/documentation/kernel/kiomediaiconkey": {
+      "etag": "\"1102-659023433e2a2-df\"",
+      "file_path": "documentation/kernel/kiomediaiconkey.md",
+      "hash": "357404a0c0a5dfaffc99f5e581a05342159be3c8c717bbf5673254466f636174"
+    },
+    "https://developer.apple.com/documentation/kernel/kiomedialeafkey": {
+      "etag": "\"1036-659023626acf2-df\"",
+      "file_path": "documentation/kernel/kiomedialeafkey.md",
+      "hash": "193f19955d80220df05430eceefa873096344840e7c0909f879b9762cf4cc790"
+    },
+    "https://developer.apple.com/documentation/kernel/kiomediaopenkey": {
+      "etag": "\"1003-6590236540afe-df\"",
+      "file_path": "documentation/kernel/kiomediaopenkey.md",
+      "hash": "f34d77cc89c33ccafa33f6e46dd1a54b41c4a215944ecf6b680413bdb8adf618"
+    },
+    "https://developer.apple.com/documentation/kernel/kiomediapreferredblocksizekey": {
+      "etag": "\"109a-6590236335ad3-df\"",
+      "file_path": "documentation/kernel/kiomediapreferredblocksizekey.md",
+      "hash": "f6966c741af84db3dfdb9efdfb4a0eb7b96096311adfa8617d024bd7b921f6ba"
+    },
+    "https://developer.apple.com/documentation/kernel/kiomediaremovablekey": {
+      "etag": "\"1024-6590236be622b-df\"",
+      "file_path": "documentation/kernel/kiomediaremovablekey.md",
+      "hash": "c1fdb42a6504bc81dfcfc616b6ad433e73b7ef08e9c64555054a714fde7fdd00"
+    },
+    "https://developer.apple.com/documentation/kernel/kiomediasizekey": {
+      "etag": "\"ff4-65902355c2d66-df\"",
+      "file_path": "documentation/kernel/kiomediasizekey.md",
+      "hash": "4823ab122172625b300b23578f85d1b1af1de4c4e29032bcddf6793f9ec98a6c"
+    },
+    "https://developer.apple.com/documentation/kernel/kiomediauuidkey": {
+      "etag": "\"1026-65902358421e4-df\"",
+      "file_path": "documentation/kernel/kiomediauuidkey.md",
+      "hash": "670b96801c17acd21e5658d37f2a7a0fa84607d44891803ea5297d32e1151988"
+    },
+    "https://developer.apple.com/documentation/kernel/kiomediawholekey": {
+      "etag": "\"1048-6590234c4faf7-df\"",
+      "file_path": "documentation/kernel/kiomediawholekey.md",
+      "hash": "461b88b744b35e898ce5d450e175477f77b38f2aec574694a1f02f1c146324d7"
+    },
+    "https://developer.apple.com/documentation/kernel/kiomediawritablekey": {
+      "etag": "\"1004-65902340078de-df\"",
+      "file_path": "documentation/kernel/kiomediawritablekey.md",
+      "hash": "69090e079ba89a2e7ba4cfe2b1a8f2f01513789f187f3632ab3854fff7ac073f"
+    },
+    "https://developer.apple.com/documentation/kernel/kiomediumdictionary": {
+      "etag": "\"11a4-65902354e9a3f-df\"",
+      "file_path": "documentation/kernel/kiomediumdictionary.md",
+      "hash": "2c14a6853e7e19c64c07c6d8cfaafc69cad6a81b747461e96addce734d31a75b"
+    },
+    "https://developer.apple.com/documentation/kernel/kiomediumflags": {
+      "etag": "\"1043-6590235417e61-df\"",
+      "file_path": "documentation/kernel/kiomediumflags.md",
+      "hash": "fd551333a52c3fb3a0f7b2591922fd3733c8a3e7528f24724525e206faca1f40"
+    },
+    "https://developer.apple.com/documentation/kernel/kiomediumindex": {
+      "etag": "\"1073-6590235f605d5-df\"",
+      "file_path": "documentation/kernel/kiomediumindex.md",
+      "hash": "1794bd6d1d816251b8bbffc3bdfef540976ece670b4d482ee63f7102c0cb5cc4"
+    },
+    "https://developer.apple.com/documentation/kernel/kiomediumspeed": {
+      "etag": "\"105a-6590233851a73-df\"",
+      "file_path": "documentation/kernel/kiomediumspeed.md",
+      "hash": "7add2957fd294be0249bc6750fc5eef5242690aa139bfbb0a99ece32f9cabed4"
+    },
+    "https://developer.apple.com/documentation/kernel/kiomediumtype": {
+      "etag": "\"1041-659023611afeb-df\"",
+      "file_path": "documentation/kernel/kiomediumtype.md",
+      "hash": "a9aea950ff8a3782841cb8a994c4beb7e044364e3db00f6ee6ff95445f093670"
+    },
+    "https://developer.apple.com/documentation/kernel/kiominpacketsize": {
+      "etag": "\"10b1-65902363d48e9-df\"",
+      "file_path": "documentation/kernel/kiominpacketsize.md",
+      "hash": "71a3c3f4891616f2174d2942a2f4729e21fc30d289297be9cffea67d6361520c"
+    },
+    "https://developer.apple.com/documentation/kernel/kiomodel": {
+      "etag": "\"1071-65902348ae4ea-df\"",
+      "file_path": "documentation/kernel/kiomodel.md",
+      "hash": "380a919c31a9d27d98c1346930d82735f7ea8d8fa97e5ebf9bca247ac383a91b"
+    },
+    "https://developer.apple.com/documentation/kernel/kionetworkcontrollerclass": {
+      "etag": "\"ebd-65902363b4cff-df\"",
+      "file_path": "documentation/kernel/kionetworkcontrollerclass.md",
+      "hash": "b1e2c2cc8d4143aa103e9709d3ca38509e53c6684b22997626441b45c9706a36"
+    },
+    "https://developer.apple.com/documentation/kernel/kionetworkdata": {
+      "etag": "\"1113-659023689c0d2-df\"",
+      "file_path": "documentation/kernel/kionetworkdata.md",
+      "hash": "81231cdcd643a7bf457d8fb290485beb52af1da7b4eaaf2fc3ae1fbe07dca26a"
+    },
+    "https://developer.apple.com/documentation/kernel/kionetworkfiltergroup": {
+      "etag": "\"eb6-6590235fdf518-df\"",
+      "file_path": "documentation/kernel/kionetworkfiltergroup.md",
+      "hash": "9dfa0bdaf63f4dd62abad756a450da80b5136e99e7602ae097feff48298969ae"
+    },
+    "https://developer.apple.com/documentation/kernel/kionetworkinterfaceclass": {
+      "etag": "\"eae-6590234ba8528-df\"",
+      "file_path": "documentation/kernel/kionetworkinterfaceclass.md",
+      "hash": "ccb3653f97ba36e0ca2b6e2f5fa1fe3ac6f0853e95c54c901cd0bb84ed0ae69a"
+    },
+    "https://developer.apple.com/documentation/kernel/kionetworkstatskey": {
+      "etag": "\"fb9-6590236315ec9-df\"",
+      "file_path": "documentation/kernel/kionetworkstatskey.md",
+      "hash": "a4d795aaea4fd0fa3703296a8189fc6b6c7d5d552919e4157403fc48c6d4ab61"
+    },
+    "https://developer.apple.com/documentation/kernel/kiooutputqueuestatskey": {
+      "etag": "\"fd1-6590234becb25-df\"",
+      "file_path": "documentation/kernel/kiooutputqueuestatskey.md",
+      "hash": "8e3d855df93225b83519251b7203bcdd7336139eeb6d0809200202493a665255"
+    },
+    "https://developer.apple.com/documentation/kernel/kiopacketfilters": {
+      "etag": "\"115c-6590235ce990d-df\"",
+      "file_path": "documentation/kernel/kiopacketfilters.md",
+      "hash": "59f498a24d7f2169f3bcf39cd69efb52c29e6d767599ed1b0125d6eb475d239c"
+    },
+    "https://developer.apple.com/documentation/kernel/kiopmmessagedarkwakethermalemergency": {
+      "etag": "\"1017-6590234709b6d-df\"",
+      "file_path": "documentation/kernel/kiopmmessagedarkwakethermalemergency.md",
+      "hash": "f969f06514656ba1aff98c7d1fae45f41b8de1f6baa347605fd2d2d26cf768ac"
+    },
+    "https://developer.apple.com/documentation/kernel/kiopmmessagedriverassertionschanged": {
+      "etag": "\"fc6-6590233a83b09-df\"",
+      "file_path": "documentation/kernel/kiopmmessagedriverassertionschanged.md",
+      "hash": "0f98e73d50ba72f9c81efd2c6205b74c61833d86091a03e666261ecf8fd21902"
+    },
+    "https://developer.apple.com/documentation/kernel/kioprimaryinterface": {
+      "etag": "\"109f-6590234d433cd-df\"",
+      "file_path": "documentation/kernel/kioprimaryinterface.md",
+      "hash": "2707ab5e0b0f824d2962cbf55072873d55d1f4722ac9c3b250f100f22dc8a1f0"
+    },
+    "https://developer.apple.com/documentation/kernel/kiopropertyexternalkey": {
+      "etag": "\"156e-65902360b392f-df\"",
+      "file_path": "documentation/kernel/kiopropertyexternalkey.md",
+      "hash": "6ecda059d2741dc8c089a26ebad23071ac52754e464d370b948c44e785bff910"
+    },
+    "https://developer.apple.com/documentation/kernel/kiopropertyfibrechanneladdressidentifierkey": {
+      "etag": "\"1dcf-65902364a5177-df\"",
+      "file_path": "documentation/kernel/kiopropertyfibrechanneladdressidentifierkey.md",
+      "hash": "0e17a4c407298b066190204b2317f59c8dd93f963523ff021bb83f0db79957ca"
+    },
+    "https://developer.apple.com/documentation/kernel/kiopropertyfibrechannelalpakey": {
+      "etag": "\"1cd6-65902338d3f7f-df\"",
+      "file_path": "documentation/kernel/kiopropertyfibrechannelalpakey.md",
+      "hash": "5671306593bc29ab8604f07da0769a8391608ff40bd0ed4844f481c39607291d"
+    },
+    "https://developer.apple.com/documentation/kernel/kiopropertyfibrechannelcabledescriptioncopperkey": {
+      "etag": "\"17cd-65902344f9c23-df\"",
+      "file_path": "documentation/kernel/kiopropertyfibrechannelcabledescriptioncopperkey.md",
+      "hash": "5606d28ece54f3f699a760cc8daa320858caa701a68a1624616a69b5fde7de4d"
+    },
+    "https://developer.apple.com/documentation/kernel/kiopropertyfibrechannelcabledescriptionfiberoptickey": {
+      "etag": "\"1800-65902360943e5-df\"",
+      "file_path": "documentation/kernel/kiopropertyfibrechannelcabledescriptionfiberoptickey.md",
+      "hash": "97a1ecd794c9fc4aa58da18ebb844ab5ebf7b66f55af0f4a8d73c088da63ca2a"
+    },
+    "https://developer.apple.com/documentation/kernel/kiopropertyfibrechannelcabledescriptionkey": {
+      "etag": "\"17ae-6590233cdc379-df\"",
+      "file_path": "documentation/kernel/kiopropertyfibrechannelcabledescriptionkey.md",
+      "hash": "3ed57f05ed145b6b013d9466be1f8885fe81eab3ab3c7fdfbf793bb8c1577663"
+    },
+    "https://developer.apple.com/documentation/kernel/kiopropertyfibrechannelnodeworldwidenamekey": {
+      "etag": "\"1cc8-6590233d358c0-df\"",
+      "file_path": "documentation/kernel/kiopropertyfibrechannelnodeworldwidenamekey.md",
+      "hash": "a715b5615be501c31c42691e45e3ea556e4a3dff9a8acf0b5658fd92d7ba1bcc"
+    },
+    "https://developer.apple.com/documentation/kernel/kiopropertyfibrechannelportworldwidenamekey": {
+      "etag": "\"1c84-65902360fa411-df\"",
+      "file_path": "documentation/kernel/kiopropertyfibrechannelportworldwidenamekey.md",
+      "hash": "f3181b7ac683986a8500514a392c16714754386bdcb2e5d1250a2336b4cff9bc"
+    },
+    "https://developer.apple.com/documentation/kernel/kiopropertyhisup": {
+      "etag": "\"1021-659023586120a-df\"",
+      "file_path": "documentation/kernel/kiopropertyhisup.md",
+      "hash": "3c3cb333a43e8dfbd7feb0a38b4c88dbceaeeb8483308199a4e0a3abedf5da41"
+    },
+    "https://developer.apple.com/documentation/kernel/kiopropertyinterconnectfilekey": {
+      "etag": "\"16c6-6590235295e29-df\"",
+      "file_path": "documentation/kernel/kiopropertyinterconnectfilekey.md",
+      "hash": "866f5590b7ee700300b12670bf4415751cd33c1247bbea3d52470fa46b3a463b"
+    },
+    "https://developer.apple.com/documentation/kernel/kiopropertyinterconnectramkey": {
+      "etag": "\"16c3-65902342f8213-df\"",
+      "file_path": "documentation/kernel/kiopropertyinterconnectramkey.md",
+      "hash": "3c5674f7bae08c940ebd7eaab69ba35eac0787a11b24623770fe8992d01fae4a"
+    },
+    "https://developer.apple.com/documentation/kernel/kiopropertyinternalexternalkey": {
+      "etag": "\"15f1-65902367d728b-df\"",
+      "file_path": "documentation/kernel/kiopropertyinternalexternalkey.md",
+      "hash": "b1bf74bddbea5fe445fe491147c7d38630bcaba6a5cc865834a6e70e9bbeed84"
+    },
+    "https://developer.apple.com/documentation/kernel/kiopropertyinternalkey": {
+      "etag": "\"155a-6590236182783-df\"",
+      "file_path": "documentation/kernel/kiopropertyinternalkey.md",
+      "hash": "a597f56a678da5f7f940a5fb84239916e41ff277b5aa6ab70c0616d06894b501"
+    },
+    "https://developer.apple.com/documentation/kernel/kiopropertyphysicalinterconnectlocationkey": {
+      "etag": "\"166e-6590235a829e1-df\"",
+      "file_path": "documentation/kernel/kiopropertyphysicalinterconnectlocationkey.md",
+      "hash": "4aeba16bf3afb4d1c443ff0c55a0a7c471c3f0bc50e76480906ccb4406e69415"
+    },
+    "https://developer.apple.com/documentation/kernel/kiopropertyphysicalinterconnecttypeata": {
+      "etag": "\"15cc-6590234aa88ea-df\"",
+      "file_path": "documentation/kernel/kiopropertyphysicalinterconnecttypeata.md",
+      "hash": "348f70b127a0449a5bac2d554473f8de790f3e423b8edfebf2412b9408f60fb5"
+    },
+    "https://developer.apple.com/documentation/kernel/kiopropertyphysicalinterconnecttypeatapi": {
+      "etag": "\"160c-6590236cdb50c-df\"",
+      "file_path": "documentation/kernel/kiopropertyphysicalinterconnecttypeatapi.md",
+      "hash": "3ce6cd8145ece183ebe3d352150ba88a94bdea5a78f09f1a41e073c37010d241"
+    },
+    "https://developer.apple.com/documentation/kernel/kiopropertyphysicalinterconnecttypefibrechannel": {
+      "etag": "\"1646-6590235ce990d-df\"",
+      "file_path": "documentation/kernel/kiopropertyphysicalinterconnecttypefibrechannel.md",
+      "hash": "6b1abba00c6a05d13c2d9fd27b040f7a69aa9e0ff57f2a5071f4211d3ad79230"
+    },
+    "https://developer.apple.com/documentation/kernel/kiopropertyphysicalinterconnecttypefirewire": {
+      "etag": "\"15fe-65902340078de-df\"",
+      "file_path": "documentation/kernel/kiopropertyphysicalinterconnecttypefirewire.md",
+      "hash": "03f3489b21183a8d2b627e37224765ed69cbe24fb58f239745bb00de5edce685"
+    },
+    "https://developer.apple.com/documentation/kernel/kiopropertyphysicalinterconnecttypekey": {
+      "etag": "\"1663-6590236a9a74b-df\"",
+      "file_path": "documentation/kernel/kiopropertyphysicalinterconnecttypekey.md",
+      "hash": "6fe927e14ccd17d13b95616d37499b75941c846921200a20ced3d6ff73f7a4e7"
+    },
+    "https://developer.apple.com/documentation/kernel/kiopropertyphysicalinterconnecttypescsiparallel": {
+      "etag": "\"1646-6590236d3c815-df\"",
+      "file_path": "documentation/kernel/kiopropertyphysicalinterconnecttypescsiparallel.md",
+      "hash": "cbf953c9910017a36d19f516c8809c474086212a0b9c6491750bf08571f498c9"
+    },
+    "https://developer.apple.com/documentation/kernel/kiopropertyphysicalinterconnecttypesecuredigital": {
+      "etag": "\"16a7-6590235f8213d-df\"",
+      "file_path": "documentation/kernel/kiopropertyphysicalinterconnecttypesecuredigital.md",
+      "hash": "d1b46deab3d4810e1482c497c0fcd5b2241567586992cce03a6bdc77d6e26917"
+    },
+    "https://developer.apple.com/documentation/kernel/kiopropertyphysicalinterconnecttypeserialata": {
+      "etag": "\"15fe-6590234c70ebf-df\"",
+      "file_path": "documentation/kernel/kiopropertyphysicalinterconnecttypeserialata.md",
+      "hash": "413dc6da11c26fd6c2a675329fc0d61ae97d08a5d71f6091509c960de11777f2"
+    },
+    "https://developer.apple.com/documentation/kernel/kiopropertyphysicalinterconnecttypeserialattachedscsi": {
+      "etag": "\"1643-6590235d63d34-df\"",
+      "file_path": "documentation/kernel/kiopropertyphysicalinterconnecttypeserialattachedscsi.md",
+      "hash": "7d218ddb01a4264b7dc5428ad97329ae6c161968e0c9c5b3b2d7ca7a7ac77d8a"
+    },
+    "https://developer.apple.com/documentation/kernel/kiopropertyphysicalinterconnecttypeusb": {
+      "etag": "\"15cc-65902365cd762-df\"",
+      "file_path": "documentation/kernel/kiopropertyphysicalinterconnecttypeusb.md",
+      "hash": "07c7fa1662a2444c0c23129d0ccf6c8f435ec9de993afb862ab3f9c74d474a53"
+    },
+    "https://developer.apple.com/documentation/kernel/kiopropertyphysicalinterconnecttypevirtual": {
+      "etag": "\"164e-6590236d89c91-df\"",
+      "file_path": "documentation/kernel/kiopropertyphysicalinterconnecttypevirtual.md",
+      "hash": "c3bce60f4f82d1c16389005387fe7318f749a89173441933c768929396b5156f"
+    },
+    "https://developer.apple.com/documentation/kernel/kiopropertyportdescriptionkey": {
+      "etag": "\"16e8-6590233494be5-df\"",
+      "file_path": "documentation/kernel/kiopropertyportdescriptionkey.md",
+      "hash": "4a851884e7c1a68e876f4498997ad9673f896ede568985dc239952867e4581cc"
+    },
+    "https://developer.apple.com/documentation/kernel/kiopropertyportspeed10gigabitkey": {
+      "etag": "\"186f-6590234428c50-df\"",
+      "file_path": "documentation/kernel/kiopropertyportspeed10gigabitkey.md",
+      "hash": "94c802e1f2576818762a94cefb7932283c07abd4c49f5573d6f4efd3c4de18d8"
+    },
+    "https://developer.apple.com/documentation/kernel/kiopropertyportspeed12gigabitkey": {
+      "etag": "\"1885-659023492a6d7-df\"",
+      "file_path": "documentation/kernel/kiopropertyportspeed12gigabitkey.md",
+      "hash": "3686ae769e0e72bed157694b358b1101af33e31ed83113a4d8bcef425670e91d"
+    },
+    "https://developer.apple.com/documentation/kernel/kiopropertyportspeed16gigabitkey": {
+      "etag": "\"1885-6590233954654-df\"",
+      "file_path": "documentation/kernel/kiopropertyportspeed16gigabitkey.md",
+      "hash": "5e9f44936373e72a76016d891f4b21d3d5c56ebdeca66302415a0556eab8f061"
+    },
+    "https://developer.apple.com/documentation/kernel/kiopropertyportspeed1_5gigabitkey": {
+      "etag": "\"187b-6590235bb9503-df\"",
+      "file_path": "documentation/kernel/kiopropertyportspeed1_5gigabitkey.md",
+      "hash": "028dd85c7168dec0bc2371f95dac3cbf9e3d1754c33b36eaa4bcec94ab680334"
+    },
+    "https://developer.apple.com/documentation/kernel/kiopropertyportspeed1gigabitkey": {
+      "etag": "\"1862-6590233a13f75-df\"",
+      "file_path": "documentation/kernel/kiopropertyportspeed1gigabitkey.md",
+      "hash": "3fcdd328399d97d15a61352122abccc7784dc2c915eb4e286e4b91534ecee10a"
+    },
+    "https://developer.apple.com/documentation/kernel/kiopropertyportspeed2gigabitkey": {
+      "etag": "\"1863-6590234b7e7e6-df\"",
+      "file_path": "documentation/kernel/kiopropertyportspeed2gigabitkey.md",
+      "hash": "bfd2cf62c274e189467745fc45d9028abc63dfbd9d5b7ad96b7169461989d294"
+    },
+    "https://developer.apple.com/documentation/kernel/kiopropertyportspeed3gigabitkey": {
+      "etag": "\"1863-6590234d433cd-df\"",
+      "file_path": "documentation/kernel/kiopropertyportspeed3gigabitkey.md",
+      "hash": "9e8a8b53d04882f287dd4feb108b97a192825eb744f6c9c23e8a08402347f977"
+    },
+    "https://developer.apple.com/documentation/kernel/kiopropertyportspeed40gigabitkey": {
+      "etag": "\"1885-65902362c92ad-df\"",
+      "file_path": "documentation/kernel/kiopropertyportspeed40gigabitkey.md",
+      "hash": "5a6e83947ecc3f42885bb6f18fcb597b71cda799f1123b09251fdd25d97b73bc"
+    },
+    "https://developer.apple.com/documentation/kernel/kiopropertyportspeed4gigabitkey": {
+      "etag": "\"1863-659023507b33e-df\"",
+      "file_path": "documentation/kernel/kiopropertyportspeed4gigabitkey.md",
+      "hash": "4ae2662e68287d8894deaf59d777fe879910e1bc11782fc6561f1426ca2026b4"
+    },
+    "https://developer.apple.com/documentation/kernel/kiopropertyportspeed6gigabitkey": {
+      "etag": "\"1863-6590233671594-df\"",
+      "file_path": "documentation/kernel/kiopropertyportspeed6gigabitkey.md",
+      "hash": "ebe5ecf1c97082b27fd7cf3fd68babcf87e19d044d32cba91720d3e636079e50"
+    },
+    "https://developer.apple.com/documentation/kernel/kiopropertyportspeed8gigabitkey": {
+      "etag": "\"1863-6590233dd8d60-df\"",
+      "file_path": "documentation/kernel/kiopropertyportspeed8gigabitkey.md",
+      "hash": "f66aba3ab500fe7141f49e24427625b4b81368af075b702768e9d37b70ca333b"
+    },
+    "https://developer.apple.com/documentation/kernel/kiopropertyportspeedautomatic10gigabitkey": {
+      "etag": "\"17f9-6590234bca240-df\"",
+      "file_path": "documentation/kernel/kiopropertyportspeedautomatic10gigabitkey.md",
+      "hash": "4aae7dd203e5a29ee54f5964cb382a8a2b2dc8f23bab083b427177bccfd5d9c6"
+    },
+    "https://developer.apple.com/documentation/kernel/kiopropertyportspeedautomatic1_5gigabitkey": {
+      "etag": "\"1805-659023463ca4b-df\"",
+      "file_path": "documentation/kernel/kiopropertyportspeedautomatic1_5gigabitkey.md",
+      "hash": "bfe1cc1a4bfb07708d8d235bf88b53c7db4b81ea14265540da45bc2a446b4afd"
+    },
+    "https://developer.apple.com/documentation/kernel/kiopropertyportspeedautomatic1gigabitkey": {
+      "etag": "\"17ec-659023607972b-df\"",
+      "file_path": "documentation/kernel/kiopropertyportspeedautomatic1gigabitkey.md",
+      "hash": "c82c9c3ce5bb69ed6b3d551eb377e9dfbe5dd871cc6a0ef5f3da3848c46e8f31"
+    },
+    "https://developer.apple.com/documentation/kernel/kiopropertyportspeedautomatic2gigabitkey": {
+      "etag": "\"17ed-6590236af9aa3-df\"",
+      "file_path": "documentation/kernel/kiopropertyportspeedautomatic2gigabitkey.md",
+      "hash": "42a9b12dfbad232d8dc5367b1aa9a62dfa76cc9588d54c7fbd0357e5c38ea178"
+    },
+    "https://developer.apple.com/documentation/kernel/kiopropertyportspeedautomatic3gigabitkey": {
+      "etag": "\"17ed-65902362a9610-df\"",
+      "file_path": "documentation/kernel/kiopropertyportspeedautomatic3gigabitkey.md",
+      "hash": "a8ae0c1ea20b6d52c70a43ee9a9414350970f744060952e13d04a10e0603555b"
+    },
+    "https://developer.apple.com/documentation/kernel/kiopropertyportspeedautomatic4gigabitkey": {
+      "etag": "\"17ed-65902364d91d2-df\"",
+      "file_path": "documentation/kernel/kiopropertyportspeedautomatic4gigabitkey.md",
+      "hash": "e14aba89bc45888cb73c843657cad2bc96870c1937503b6fe45c647000734d35"
+    },
+    "https://developer.apple.com/documentation/kernel/kiopropertyportspeedautomatic6gigabitkey": {
+      "etag": "\"17ed-6590235d0db8a-df\"",
+      "file_path": "documentation/kernel/kiopropertyportspeedautomatic6gigabitkey.md",
+      "hash": "5a57e356b7cdf3f7e5326c5fe7cf56c95da5893d43bd5cdc8b68d196aa9ea2aa"
+    },
+    "https://developer.apple.com/documentation/kernel/kiopropertyportspeedautomatic8gigabitkey": {
+      "etag": "\"17ed-659023558b5f7-df\"",
+      "file_path": "documentation/kernel/kiopropertyportspeedautomatic8gigabitkey.md",
+      "hash": "ec9a774c9cc132f7627595051f6bfe94686039fb5535596e7dbca5dc4f54e741"
+    },
+    "https://developer.apple.com/documentation/kernel/kiopropertyportspeedautomatickey": {
+      "etag": "\"1843-6590235e8a925-df\"",
+      "file_path": "documentation/kernel/kiopropertyportspeedautomatickey.md",
+      "hash": "895e7581c2521935bb7b255b5947cda80e26dbff842b4e73efb93167c154d8bc"
+    },
+    "https://developer.apple.com/documentation/kernel/kiopropertyportspeedkey": {
+      "etag": "\"179c-65902339e4bbd-df\"",
+      "file_path": "documentation/kernel/kiopropertyportspeedkey.md",
+      "hash": "491807f27b3434a032fa77206cbc9bd4ff4972cf4caef9b837ee872faab300b9"
+    },
+    "https://developer.apple.com/documentation/kernel/kiopropertyportstatuskey": {
+      "etag": "\"17f5-659023519a90e-df\"",
+      "file_path": "documentation/kernel/kiopropertyportstatuskey.md",
+      "hash": "c2ddc905863b4f284ab57bc596314547d37f264c8bb85b46d8a559851b72ec95"
+    },
+    "https://developer.apple.com/documentation/kernel/kiopropertyportstatuslinkestablishedkey": {
+      "etag": "\"164c-6590233a37e3b-df\"",
+      "file_path": "documentation/kernel/kiopropertyportstatuslinkestablishedkey.md",
+      "hash": "8a8499d79641126d11f509f2c37b950adfa34bb868e1ccec2bd552b7680369ac"
+    },
+    "https://developer.apple.com/documentation/kernel/kiopropertyportstatuslinkfailedkey": {
+      "etag": "\"1616-65902357dd6a7-df\"",
+      "file_path": "documentation/kernel/kiopropertyportstatuslinkfailedkey.md",
+      "hash": "608163aa9b253bde512a0e8e67eac480c2b39f3ab702129eb96bb94cec93b0d2"
+    },
+    "https://developer.apple.com/documentation/kernel/kiopropertyportstatusnolinkestablishedkey": {
+      "etag": "\"1665-6590236353f08-df\"",
+      "file_path": "documentation/kernel/kiopropertyportstatusnolinkestablishedkey.md",
+      "hash": "d3499376f09e28a6f083d8e87d00a3c2ee6090c82ca2d6985c57803c5d1f6afa"
+    },
+    "https://developer.apple.com/documentation/kernel/kiopropertyporttopologyautomatickey": {
+      "etag": "\"186a-6590235aa2ada-df\"",
+      "file_path": "documentation/kernel/kiopropertyporttopologyautomatickey.md",
+      "hash": "bf9e2e9815c919f5d01fb2d5cedcaea1aabcc83824398e283242556c3716a951"
+    },
+    "https://developer.apple.com/documentation/kernel/kiopropertyporttopologyautomaticnlportkey": {
+      "etag": "\"189c-6590236c04f5a-df\"",
+      "file_path": "documentation/kernel/kiopropertyporttopologyautomaticnlportkey.md",
+      "hash": "5e1ac68ff224a3f48335de576d0fc900d4961567aa4455ec1f9a331df79d9fc5"
+    },
+    "https://developer.apple.com/documentation/kernel/kiopropertyporttopologyautomaticnportkey": {
+      "etag": "\"1890-6590234cfa637-df\"",
+      "file_path": "documentation/kernel/kiopropertyporttopologyautomaticnportkey.md",
+      "hash": "a3a0dc42465e201a8ab6958a20a8ce00b1c4bcc344372564736f1f56985a49d8"
+    },
+    "https://developer.apple.com/documentation/kernel/kiopropertyporttopologykey": {
+      "etag": "\"17c0-6590235af39c5-df\"",
+      "file_path": "documentation/kernel/kiopropertyporttopologykey.md",
+      "hash": "95476b041d10a6c66a22c43a144816e83a57480383ba936a5ee0a37124e6530b"
+    },
+    "https://developer.apple.com/documentation/kernel/kiopropertyporttopologynlportkey": {
+      "etag": "\"1805-659023556ab73-df\"",
+      "file_path": "documentation/kernel/kiopropertyporttopologynlportkey.md",
+      "hash": "d70841e111a7e4f80658d33bec3efbb19eea578c88f95ba334b578db231a1e39"
+    },
+    "https://developer.apple.com/documentation/kernel/kiopropertyporttopologynportkey": {
+      "etag": "\"17f9-6590233ba94cf-df\"",
+      "file_path": "documentation/kernel/kiopropertyporttopologynportkey.md",
+      "hash": "e0af2b4edc4e5db5650c472f0635beba4d4d47b45afe920cabf1ab2e06191a72"
+    },
+    "https://developer.apple.com/documentation/kernel/kiopropertyprotocolcharacteristicskey": {
+      "etag": "\"1690-6590234e7ca01-df\"",
+      "file_path": "documentation/kernel/kiopropertyprotocolcharacteristicskey.md",
+      "hash": "cd1608c1e266dff4b79c8f5ffa256be9ffb700c056e3954b2b8ae9f6f896ad63"
+    },
+    "https://developer.apple.com/documentation/kernel/kiopropertysasaddresskey": {
+      "etag": "\"1ba6-6590236b47f19-df\"",
+      "file_path": "documentation/kernel/kiopropertysasaddresskey.md",
+      "hash": "7f2606f2e2911a2bdad4c7d07793d6127721d11351e621bbb7bf0530db140932"
+    },
+    "https://developer.apple.com/documentation/kernel/kiopropertysatproductidentification": {
+      "etag": "\"106b-659023532b3e5-df\"",
+      "file_path": "documentation/kernel/kiopropertysatproductidentification.md",
+      "hash": "cf01d18038512fb2ba8eccb6f9baa97583ef8e8502b72d56cb3fa2c4e195ced8"
+    },
+    "https://developer.apple.com/documentation/kernel/kiopropertysatproductrevisonlevel": {
+      "etag": "\"1061-65902350c38f2-df\"",
+      "file_path": "documentation/kernel/kiopropertysatproductrevisonlevel.md",
+      "hash": "07ebb80764cde3307fe8862b504de593e1d9199f24cb1a3882d49b9a9465159f"
+    },
+    "https://developer.apple.com/documentation/kernel/kiopropertysatvendoridentification": {
+      "etag": "\"1065-6590235f8213d-df\"",
+      "file_path": "documentation/kernel/kiopropertysatvendoridentification.md",
+      "hash": "85e8791431c57a84b18a93ec2a65b2de991d73a137dbcaae18a2d004923492d2"
+    },
+    "https://developer.apple.com/documentation/kernel/kiopropertyscsidomainidentifierkey": {
+      "etag": "\"177c-6590236dab17f-df\"",
+      "file_path": "documentation/kernel/kiopropertyscsidomainidentifierkey.md",
+      "hash": "fe625302a09f30216bd2a3af1fefc124a4352ebd056e51c4aa0a207c5686954d"
+    },
+    "https://developer.apple.com/documentation/kernel/kiopropertyscsiinitiatoridentifierkey": {
+      "etag": "\"16fa-6590234f96401-df\"",
+      "file_path": "documentation/kernel/kiopropertyscsiinitiatoridentifierkey.md",
+      "hash": "95038ef9ae140fe9cb7caf958c260eab44b7012362c958633c7b9b9fa8936085"
+    },
+    "https://developer.apple.com/documentation/kernel/kiopropertyscsiinquirydeviceidassociation": {
+      "etag": "\"1076-6590236160490-df\"",
+      "file_path": "documentation/kernel/kiopropertyscsiinquirydeviceidassociation.md",
+      "hash": "bcb15ba3c4cfa2a3e1239212160e3403c7cc17c59b303700d4c97f3728e8e453"
+    },
+    "https://developer.apple.com/documentation/kernel/kiopropertyscsiinquirydeviceidcodeset": {
+      "etag": "\"1064-65902365ed9a6-df\"",
+      "file_path": "documentation/kernel/kiopropertyscsiinquirydeviceidcodeset.md",
+      "hash": "37929ec7c20c4841d15549eb668c99059d0f23dc7fa8eee2050f769a2ff779ae"
+    },
+    "https://developer.apple.com/documentation/kernel/kiopropertyscsiinquirydeviceidentification": {
+      "etag": "\"1085-6590235ed89cd-df\"",
+      "file_path": "documentation/kernel/kiopropertyscsiinquirydeviceidentification.md",
+      "hash": "dffcede131ef5835387936382ae0c5e0ea576ee40376a70998da74e64edffb97"
+    },
+    "https://developer.apple.com/documentation/kernel/kiopropertyscsiinquirydeviceidentifier": {
+      "etag": "\"1077-65902360fa411-df\"",
+      "file_path": "documentation/kernel/kiopropertyscsiinquirydeviceidentifier.md",
+      "hash": "9bea6abdde2fc39c5e922439988cef6dc93c0c4f962730756de45acef4ae50ee"
+    },
+    "https://developer.apple.com/documentation/kernel/kiopropertyscsiinquirydeviceidtype": {
+      "etag": "\"1057-6590234428c50-df\"",
+      "file_path": "documentation/kernel/kiopropertyscsiinquirydeviceidtype.md",
+      "hash": "91820c473503f8021f9aa3dde1b1488f47122c4fdcd885dd64dca6ff5205e7d5"
+    },
+    "https://developer.apple.com/documentation/kernel/kiopropertyscsiinquiryunitserialnumber": {
+      "etag": "\"109b-6590236765dfb-df\"",
+      "file_path": "documentation/kernel/kiopropertyscsiinquiryunitserialnumber.md",
+      "hash": "1f5cc91faa66c28ea8beb34619a1804e64133ec2801a2fc9bd71136af6fb1856"
+    },
+    "https://developer.apple.com/documentation/kernel/kiopropertyscsilogicalunitnumberkey": {
+      "etag": "\"16ef-6590234d86f8a-df\"",
+      "file_path": "documentation/kernel/kiopropertyscsilogicalunitnumberkey.md",
+      "hash": "412291e67e55d528ff6b3e7ff53905783fa466d47d2b8c8fb08a1b3bdf05712f"
+    },
+    "https://developer.apple.com/documentation/kernel/kiopropertyscsiparallelsignalingtypehvdkey": {
+      "etag": "\"17e2-65902339834ad-df\"",
+      "file_path": "documentation/kernel/kiopropertyscsiparallelsignalingtypehvdkey.md",
+      "hash": "ed0d535ced048dd30c164bc8f8581d28252ba84d22ed383213f836bfb98a9885"
+    },
+    "https://developer.apple.com/documentation/kernel/kiopropertyscsiparallelsignalingtypekey": {
+      "etag": "\"17dc-6590236d3c815-df\"",
+      "file_path": "documentation/kernel/kiopropertyscsiparallelsignalingtypekey.md",
+      "hash": "3d5566a616850753349c09377eb0a118f2ae977bc9c80847bf2768c8c1fbb797"
+    },
+    "https://developer.apple.com/documentation/kernel/kiopropertyscsiparallelsignalingtypelvdkey": {
+      "etag": "\"17df-6590235fa227a-df\"",
+      "file_path": "documentation/kernel/kiopropertyscsiparallelsignalingtypelvdkey.md",
+      "hash": "f2c20afe031847e2c858e23f18911493d4cf41e04d823d5ec7d9e58d67b93d4e"
+    },
+    "https://developer.apple.com/documentation/kernel/kiopropertyscsiparallelsignalingtypesekey": {
+      "etag": "\"17b2-659023602597c-df\"",
+      "file_path": "documentation/kernel/kiopropertyscsiparallelsignalingtypesekey.md",
+      "hash": "816e043ed8dd51b1880f2fc91b144018a39130a604de4a5fdc9a486e2345a6a5"
+    },
+    "https://developer.apple.com/documentation/kernel/kiopropertyscsiperipheraldevicetype": {
+      "etag": "\"1083-65902358d6337-df\"",
+      "file_path": "documentation/kernel/kiopropertyscsiperipheraldevicetype.md",
+      "hash": "0ab3820695a0dfa597b000e6e285792f90de54ef0be5d31e0421d9c34819e378"
+    },
+    "https://developer.apple.com/documentation/kernel/kiopropertyscsiperipheraldevicetypesize": {
+      "etag": "\"108f-6590234aa88ea-df\"",
+      "file_path": "documentation/kernel/kiopropertyscsiperipheraldevicetypesize.md",
+      "hash": "de2242543bf7f8f1501a7d724782ef16c377eea6a3992ae45526ecc1bb77edee"
+    },
+    "https://developer.apple.com/documentation/kernel/kiopropertyscsiportidentifierkey": {
+      "etag": "\"1dde-6590234a6ee66-df\"",
+      "file_path": "documentation/kernel/kiopropertyscsiportidentifierkey.md",
+      "hash": "3305e3ffc39551ff82a7ef50e416cc2494cc60770eaeeeb01fe312ed9b7e4662"
+    },
+    "https://developer.apple.com/documentation/kernel/kiopropertyscsiproductidentification": {
+      "etag": "\"10a9-659023437fa49-df\"",
+      "file_path": "documentation/kernel/kiopropertyscsiproductidentification.md",
+      "hash": "6db413275729a7eda3e868efcdb81468a9c844377ca5d5fb9a9372869d67db26"
+    },
+    "https://developer.apple.com/documentation/kernel/kiopropertyscsiproductrevisionlevel": {
+      "etag": "\"107e-6590236315ec9-df\"",
+      "file_path": "documentation/kernel/kiopropertyscsiproductrevisionlevel.md",
+      "hash": "f2c186798c6b2e80765ff5aaf2353a278baaa14f2fb2ece7efcebdfdd1bee7f0"
+    },
+    "https://developer.apple.com/documentation/kernel/kiopropertyscsiprotocolmultiinitkey": {
+      "etag": "\"16dd-659023371d5ec-df\"",
+      "file_path": "documentation/kernel/kiopropertyscsiprotocolmultiinitkey.md",
+      "hash": "f1578aafceefb9071ccc5f944e1d577e4dbd58d582971aba3a3f8128778531b1"
+    },
+    "https://developer.apple.com/documentation/kernel/kiopropertyscsitargetidentifierkey": {
+      "etag": "\"16c9-65902355c2d66-df\"",
+      "file_path": "documentation/kernel/kiopropertyscsitargetidentifierkey.md",
+      "hash": "f3874e0b8716c1e79eaa213b85e1d574d28ebf76af413ed60b390268ce878736"
+    },
+    "https://developer.apple.com/documentation/kernel/kiopropertyscsivendoridentification": {
+      "etag": "\"10a3-65902367be5d7-df\"",
+      "file_path": "documentation/kernel/kiopropertyscsivendoridentification.md",
+      "hash": "a32700439f29c7e3347eded171bd85dc88a940677510d6f07246a654cdbdbb89"
+    },
+    "https://developer.apple.com/documentation/kernel/kiopropertytpgsinfo": {
+      "etag": "\"1021-659023660b897-df\"",
+      "file_path": "documentation/kernel/kiopropertytpgsinfo.md",
+      "hash": "24153cfe27bff5061950b872d8081000eb4d725075ed2d0fcc94802f328b4172"
+    },
+    "https://developer.apple.com/documentation/kernel/kiopropertytpgsinfosize": {
+      "etag": "\"102f-65902339e4bbd-df\"",
+      "file_path": "documentation/kernel/kiopropertytpgsinfosize.md",
+      "hash": "fbc7965f8237599cbb2888129ab936785468d004a695ea9f285ed003f2121de3"
+    },
+    "https://developer.apple.com/documentation/kernel/kiorevision": {
+      "etag": "\"108c-6590234561fab-df\"",
+      "file_path": "documentation/kernel/kiorevision.md",
+      "hash": "9ae56665e45820431fb8072994886d7f1cbcbce945b299145850af4dd405969a"
+    },
+    "https://developer.apple.com/documentation/kernel/kioselectedmedium": {
+      "etag": "\"1121-65902347abde8-df\"",
+      "file_path": "documentation/kernel/kioselectedmedium.md",
+      "hash": "b62a18013fb9343f4d0e2013b3aa3622b00e1eed4e34e9be860ba7a52892341c"
+    },
+    "https://developer.apple.com/documentation/kernel/kiostoragecategory": {
+      "etag": "\"11fe-65902347abde8-df\"",
+      "file_path": "documentation/kernel/kiostoragecategory.md",
+      "hash": "4fa091681205f94715491d2663400556663af5dac29570fd3e8c2cd16c9b8bc7"
+    },
+    "https://developer.apple.com/documentation/kernel/kiostorageclass": {
+      "etag": "\"e27-6590233d0d7f9-df\"",
+      "file_path": "documentation/kernel/kiostorageclass.md",
+      "hash": "184f1905b26668eeaaafdccab6143c4588680d50ca6f6eae7595413353d8de7f"
+    },
+    "https://developer.apple.com/documentation/kernel/kiostoragefeatureforceunitaccess": {
+      "etag": "\"10eb-6590235bb9503-df\"",
+      "file_path": "documentation/kernel/kiostoragefeatureforceunitaccess.md",
+      "hash": "0c0318f8299ab9c72d35e1a4eb29ef48f588bf82fb20c2c378fc58657926a8e4"
+    },
+    "https://developer.apple.com/documentation/kernel/kiostoragefeatureskey": {
+      "etag": "\"1104-659023607972b-df\"",
+      "file_path": "documentation/kernel/kiostoragefeatureskey.md",
+      "hash": "0549f89137414db8271db74a846fb14e371a9fb6230518d690e4fa44bd336c64"
+    },
+    "https://developer.apple.com/documentation/kernel/kiostoragefeatureunmap": {
+      "etag": "\"10ab-659023416883c-df\"",
+      "file_path": "documentation/kernel/kiostoragefeatureunmap.md",
+      "hash": "552b625e9e6fb7f507bf68dacabef29f179af5a9218e3933bc508f018778e5d3"
+    },
+    "https://developer.apple.com/documentation/kernel/kiovendor": {
+      "etag": "\"1078-6590235de33d0-df\"",
+      "file_path": "documentation/kernel/kiovendor.md",
+      "hash": "04898d800f0ee773fb165b09a10a75410e00cbe748c75ad6c381f1e8420ab511"
     },
     "https://developer.apple.com/documentation/kernel/kmaxwaitforvalidselfid": {
       "etag": "\"d02-6593d12ef1814-df\"",
@@ -151089,6 +152319,16 @@
       "etag": "\"d59-6593d13f8912a-df\"",
       "file_path": "documentation/kernel/kperf_kpc_flags_t/kpc_user_counting.md",
       "hash": "72379e67990f910f78322975b584538c51f2acafa3a7eb5b1f98abcbfc5c88f1"
+    },
+    "https://developer.apple.com/documentation/kernel/kreport_capacity_16_maximumlba": {
+      "etag": "\"1097-659023505a1ce-df\"",
+      "file_path": "documentation/kernel/kreport_capacity_16_maximumlba.md",
+      "hash": "06bcdd4156a4d7351bc17ef995c20a6af2cc6babb10fdd13afc46f5ddaaf9302"
+    },
+    "https://developer.apple.com/documentation/kernel/kreport_capacity_maximumlba": {
+      "etag": "\"1088-6590236226d4c-df\"",
+      "file_path": "documentation/kernel/kreport_capacity_maximumlba.md",
+      "hash": "70cc5fc19bb4e809e89213979ef818a9b2b6fd6971f13b6b630c551520e4b718"
     },
     "https://developer.apple.com/documentation/kernel/kuncusernotificationcallback": {
       "etag": "\"1009-6593d14892f9f-df\"",
@@ -168110,6 +169350,16 @@
       "file_path": "documentation/kernel/scrollwheeleventcallback.md",
       "hash": "ad973e7220ad875faf529081d154c9e5b27a39827598aa57f2705c328786bdb9"
     },
+    "https://developer.apple.com/documentation/kernel/scsi_capacity_data": {
+      "etag": "\"170f-65902348ccf26-df\"",
+      "file_path": "documentation/kernel/scsi_capacity_data.md",
+      "hash": "7344a8ac895a4486717bc576a6a03e1970b2423cb994ca8dc63b7468201275cd"
+    },
+    "https://developer.apple.com/documentation/kernel/scsi_capacity_data_long": {
+      "etag": "\"1b7d-6590233586ecb-df\"",
+      "file_path": "documentation/kernel/scsi_capacity_data_long.md",
+      "hash": "2074fde1345f7e60f7d6af7a994bfffc6f889f925dfb1d1f2aef3c90ddd068ad"
+    },
     "https://developer.apple.com/documentation/kernel/scsi_sense_data": {
       "etag": "\"108e9-6593d1389ca9b-df\"",
       "file_path": "documentation/kernel/scsi_sense_data.md",
@@ -168205,6 +169455,11 @@
       "file_path": "documentation/kernel/scsi_sense_data/api-1410625-information_4.md",
       "hash": "04613e98aa8996b694d7ef7e8d6c497535cd116e8a7c3670981e4b660c7b5fc5"
     },
+    "https://developer.apple.com/documentation/kernel/scsicmd_inquiry_page00_header": {
+      "etag": "\"1b75-6590235bfe093-df\"",
+      "file_path": "documentation/kernel/scsicmd_inquiry_page00_header.md",
+      "hash": "8caf2efa8516ec34eefdc2243f6b9de458dafd22c71763156a6c8ccd0958f6de"
+    },
     "https://developer.apple.com/documentation/kernel/scsicmd_inquiry_page00_header_spc_16": {
       "etag": "\"beea-6593d12bdd2b8-df\"",
       "file_path": "documentation/kernel/scsicmd_inquiry_page00_header_spc_16.md",
@@ -168224,6 +169479,11 @@
       "etag": "\"10e2-6593d1460844d-df\"",
       "file_path": "documentation/kernel/scsicmd_inquiry_page00_header_spc_16/api-1429350-peripheral_device_type.md",
       "hash": "94f6cb0f69c90be22897da24293019600b0d3d9d2aef7e700eaf61e462da5bf7"
+    },
+    "https://developer.apple.com/documentation/kernel/scsicmd_inquiry_page80_header": {
+      "etag": "\"1dc4-659023435d9ac-df\"",
+      "file_path": "documentation/kernel/scsicmd_inquiry_page80_header.md",
+      "hash": "6fd8477d4b9e9ddf6049db616c52fa172f48633cf14b637d914183d70f847c77"
     },
     "https://developer.apple.com/documentation/kernel/scsicmd_inquiry_page80_header_spc_16": {
       "etag": "\"c155-6593d11e77ce2-df\"",
@@ -168249,6 +169509,46 @@
       "etag": "\"10dd-6593d147ae589-df\"",
       "file_path": "documentation/kernel/scsicmd_inquiry_page80_header_spc_16/api-1429407-product_serial_number.md",
       "hash": "611725b681c1a891367360216cd75c6a01efdea63fdca04afca8599179b2f94a"
+    },
+    "https://developer.apple.com/documentation/kernel/scsicmd_inquiry_page83_header": {
+      "etag": "\"1b75-65902347abde8-df\"",
+      "file_path": "documentation/kernel/scsicmd_inquiry_page83_header.md",
+      "hash": "9b4892e11b969b99b272ba706622b39753c149213e029a9506276735427ffa7b"
+    },
+    "https://developer.apple.com/documentation/kernel/scsicmd_inquiry_page83_header_spc_16": {
+      "etag": "\"1a35-65902342862cd-df\"",
+      "file_path": "documentation/kernel/scsicmd_inquiry_page83_header_spc_16.md",
+      "hash": "d7f02f5859197af52b714726e3aa1aa140aa96652051a3d9bc1825c8cec23c9c"
+    },
+    "https://developer.apple.com/documentation/kernel/scsicmd_inquiry_page83_identification_descriptor": {
+      "etag": "\"1ff6-659023685e9c9-df\"",
+      "file_path": "documentation/kernel/scsicmd_inquiry_page83_identification_descriptor.md",
+      "hash": "7584e821b3815912110b2944cf3cdd24b89fe73281337c5e4ab38c2817563bfc"
+    },
+    "https://developer.apple.com/documentation/kernel/scsicmd_inquiry_page83_logicalunitgroup_identifier": {
+      "etag": "\"18ec-6590234c8bfe0-df\"",
+      "file_path": "documentation/kernel/scsicmd_inquiry_page83_logicalunitgroup_identifier.md",
+      "hash": "88f967b5f32cb8921ff2fe8ef9ae26d4d72c1a2564a9f7995941cc84c86c9c3a"
+    },
+    "https://developer.apple.com/documentation/kernel/scsicmd_inquiry_page83_relativetargetport_identifier": {
+      "etag": "\"1957-659023680ee0b-df\"",
+      "file_path": "documentation/kernel/scsicmd_inquiry_page83_relativetargetport_identifier.md",
+      "hash": "25851268653f2d0abf495702beab60aa0bbd7dbc50b35499449e3b2da6b733ea"
+    },
+    "https://developer.apple.com/documentation/kernel/scsicmd_inquiry_page83_relativetargetport_identifier/1429417-relative_target_port_identifier": {
+      "etag": "\"1621-65902341d6bc2-df\"",
+      "file_path": "documentation/kernel/scsicmd_inquiry_page83_relativetargetport_identifier/api-1429417-relative_target_port_identifier.md",
+      "hash": "bfa60555e7d6cad5172b7820145280d454ac9fa25582b4f2d2d16f9b8cbabb67"
+    },
+    "https://developer.apple.com/documentation/kernel/scsicmd_inquiry_page83_targetportgroup_identifier": {
+      "etag": "\"18d2-6590235fdf518-df\"",
+      "file_path": "documentation/kernel/scsicmd_inquiry_page83_targetportgroup_identifier.md",
+      "hash": "7a7782212c8d8f67b5bf2db6718e244aaddd5fb725f8820cfe77153dfc3911a9"
+    },
+    "https://developer.apple.com/documentation/kernel/scsicmd_inquiry_page89_data": {
+      "etag": "\"2b97-65902364d91d2-df\"",
+      "file_path": "documentation/kernel/scsicmd_inquiry_page89_data.md",
+      "hash": "d16a7293ed929d73e577ce986edca8a55d781e455b3b5925c4a473df722b7e26"
     },
     "https://developer.apple.com/documentation/kernel/scsicmd_inquiry_pageb0_data": {
       "etag": "\"e40a-6593d1544efda-df\"",
@@ -168349,6 +169649,16 @@
       "etag": "\"1692-6593d11aada2c-df\"",
       "file_path": "documentation/kernel/scsicmd_inquiry_pageb0_data/api-1778245-atomic_alignment.md",
       "hash": "7256f03c61c771731156b988c75b4ec4f32348ec8a24500ebef15d5a6a3343c4"
+    },
+    "https://developer.apple.com/documentation/kernel/scsicmd_inquiry_pageb1_data": {
+      "etag": "\"204c-659023602597c-df\"",
+      "file_path": "documentation/kernel/scsicmd_inquiry_pageb1_data.md",
+      "hash": "155aa47f96a4b92918b48099b7c32301fa253ecd1c16025ac24a2251a385f3e8"
+    },
+    "https://developer.apple.com/documentation/kernel/scsicmd_inquiry_pageb1_data/1429339-medium_rotation_rate": {
+      "etag": "\"1468-65902343fa2eb-df\"",
+      "file_path": "documentation/kernel/scsicmd_inquiry_pageb1_data/api-1429339-medium_rotation_rate.md",
+      "hash": "6f51d812b640e1a5ea6ec5c8002b2b61d86a37472d95eaa342e7804301d249a3"
     },
     "https://developer.apple.com/documentation/kernel/scsicmd_inquiry_pageb2_data": {
       "etag": "\"c6d8-6593d1344a629-df\"",
@@ -168544,6 +169854,21 @@
       "etag": "\"1681-6593d13964adc-df\"",
       "file_path": "documentation/kernel/scsicmd_inquiry_pagecx_header/api-2721360-reserved.md",
       "hash": "3ba1f46474a91e8b48e70910b69485a9b0b36ea640b8a9af58c56d334495e539"
+    },
+    "https://developer.apple.com/documentation/kernel/scsicmd_inquiry_standarddata": {
+      "etag": "\"2b37-6590235bdcef4-df\"",
+      "file_path": "documentation/kernel/scsicmd_inquiry_standarddata.md",
+      "hash": "abfba844047554107b3963af4d08759de6594546658ec6a3aacd1ef20c7263e2"
+    },
+    "https://developer.apple.com/documentation/kernel/scsicmd_inquiry_standarddata/1429411-flags2": {
+      "etag": "\"1422-6590233c779e5-df\"",
+      "file_path": "documentation/kernel/scsicmd_inquiry_standarddata/api-1429411-flags2.md",
+      "hash": "c54441d1a978999c789bba5888525f79bdad58a092d8d392b1f5fe77d9df94f9"
+    },
+    "https://developer.apple.com/documentation/kernel/scsicmd_inquiry_standarddataall": {
+      "etag": "\"3906-6590236dab17f-df\"",
+      "file_path": "documentation/kernel/scsicmd_inquiry_standarddataall.md",
+      "hash": "5e8d458324f32ec26c93277bdf83cd6e585abd5f65315dd7b7ba21a6d91db6cc"
     },
     "https://developer.apple.com/documentation/kernel/scsicmd_inquiry_standarddataptr": {
       "etag": "\"b674-6593d12675f29-df\"",
@@ -169169,6 +170494,21 @@
       "etag": "\"116b-6593d130eed99-df\"",
       "file_path": "documentation/kernel/scsitaskattribute/kscsitask_simple.md",
       "hash": "9c8adde8ded5ead58a37d1227c58ea904893d7e63e6ec929537e571653e78c69"
+    },
+    "https://developer.apple.com/documentation/kernel/scsitaskcompletion": {
+      "etag": "\"1313-659023392ce01-df\"",
+      "file_path": "documentation/kernel/scsitaskcompletion.md",
+      "hash": "c56a995383ced85f471c095228a9666a6c7458cbaf450aa9c700cfc455c27bc9"
+    },
+    "https://developer.apple.com/documentation/kernel/scsitaskidentifier": {
+      "etag": "\"1215-6590233809fa8-df\"",
+      "file_path": "documentation/kernel/scsitaskidentifier.md",
+      "hash": "515d2b9f8c22e5d43ae9e30d3caf8b0f77886317e5941b8de706ccadc8eb8a24"
+    },
+    "https://developer.apple.com/documentation/kernel/scsitaskmode": {
+      "etag": "\"163a-6590236d62235-df\"",
+      "file_path": "documentation/kernel/scsitaskmode.md",
+      "hash": "34540a2bf8b7cae38e43315dc5802b3f25cb07d74e9864859a6fada41090b14e"
     },
     "https://developer.apple.com/documentation/kernel/scsitaskstate": {
       "etag": "\"d492-6593d11efce2f-df\"",
@@ -244466,7 +245806,7 @@
       "hash": "4b770cb0b30e3fdfc8a0ee3a6463cdaccd3a18635ee6f2ccc0b5bb7b5ac3c086"
     },
     "https://developer.apple.com/tutorials/data/documentation/kernel/1646100-anonymous.json": {
-      "etag": "\"1a7b-6593d12fdb345-df\"",
+      "etag": "\"1a7b-6593d12fdb345\"",
       "file_path": "documentation/kernel/api-1646100-anonymous.md",
       "hash": "e502375497a6cc733249a7b9e019c874d510defb89480c44737e09737f145e3f"
     },
@@ -272935,6 +274275,21 @@
       "file_path": "documentation/kernel/data_in_code_entry/api-1525931-offset.md",
       "hash": "ff1692c9ae0c8b0fde788d8d46f64c2681f08830c7dab53b1a3d3564947818f7"
     },
+    "https://developer.apple.com/tutorials/data/documentation/kernel/data_queue_entry_header_size.json": {
+      "etag": "\"10d5-659023607972b-df\"",
+      "file_path": "documentation/kernel/data_queue_entry_header_size.md",
+      "hash": "235e83b15f0b3cd2db9254ee896e558b70966461b4cc2deff815f24e629976cd"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/kernel/data_queue_memory_appendix_size.json": {
+      "etag": "\"10f4-6590235fdf518-df\"",
+      "file_path": "documentation/kernel/data_queue_memory_appendix_size.md",
+      "hash": "4cf833ebf2810158bcebf8de710688ead1e8110f553ee4a3c64a0dc7e758c853"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/kernel/data_queue_memory_header_size.json": {
+      "etag": "\"10f2-65902337d76f6-df\"",
+      "file_path": "documentation/kernel/data_queue_memory_header_size.md",
+      "hash": "d513bacffc2a76658bf3d3e347f113dfb50f3175ec86909871263d7ed82cc0e2"
+    },
     "https://developer.apple.com/tutorials/data/documentation/kernel/dclcallcommandproc.json": {
       "etag": "\"468d-6593d13ea5db5-df\"",
       "file_path": "documentation/kernel/dclcallcommandproc.md",
@@ -278306,7 +279661,7 @@
       "hash": "d27eb4262b9fc1bb8ce114e34463c7323f362cd629a5ae4cb4c1b08e16875a0f"
     },
     "https://developer.apple.com/tutorials/data/documentation/kernel/embedded_panic_header/2915843-eph_version.json": {
-      "etag": "\"e73-6593d11c3fb53-df\"",
+      "etag": "\"e73-6593d11c3fb53\"",
       "file_path": "documentation/kernel/embedded_panic_header/api-2915843-eph_version.md",
       "hash": "2fa252136f8801e1d6cd433efb222cf51bb2c814f3e0b7fe25999303166de347"
     },
@@ -278891,7 +280246,7 @@
       "hash": "3e21c10e507715f32099845e5fb61fd181e000f314711e29156241dd61d83d7a"
     },
     "https://developer.apple.com/tutorials/data/documentation/kernel/evglobals/1571563-llelast.json": {
-      "etag": "\"dee-6593d12c1beae\"",
+      "etag": "\"dee-6593d12c1beae-df\"",
       "file_path": "documentation/kernel/evglobals/api-1571563-llelast.md",
       "hash": "c641a0313e87078c01e60df563f3ced598c9105567a43a0ea47131e79c985421"
     },
@@ -294305,6 +295660,16 @@
       "file_path": "documentation/kernel/ioaudiocontrol/workloop.md",
       "hash": "351a3f8748257415e3d68b2ae6d1140c6e84fa293399a5fd01cca04b90405a90"
     },
+    "https://developer.apple.com/tutorials/data/documentation/kernel/ioaudiocontrolcalls.json": {
+      "etag": "\"1392-659023447302c-df\"",
+      "file_path": "documentation/kernel/ioaudiocontrolcalls.md",
+      "hash": "8fe2c049f8f3c9fba49a2716ba26657785d0ad4874eb5ff779b9c5ebf8e94456"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/kernel/ioaudiocontrolnotifications.json": {
+      "etag": "\"1447-6590236353f08-df\"",
+      "file_path": "documentation/kernel/ioaudiocontrolnotifications.md",
+      "hash": "55987da38f227b4e75b1cd609c8b4a5a660ee4d6422831e8faf398ff792d67d3"
+    },
     "https://developer.apple.com/tutorials/data/documentation/kernel/ioaudiocontroluserclient.json": {
       "etag": "\"36d1-6593d14807911-df\"",
       "file_path": "documentation/kernel/ioaudiocontroluserclient.md",
@@ -295765,6 +297130,16 @@
       "file_path": "documentation/kernel/ioaudioengine/workloop.md",
       "hash": "c0ed1bdd3f381a7895caaf2d41fb880746a1f99ef2d7aed88b17dadd6fd5dd0d"
     },
+    "https://developer.apple.com/tutorials/data/documentation/kernel/ioaudioenginecalls.json": {
+      "etag": "\"1ca2-659023556ab73-df\"",
+      "file_path": "documentation/kernel/ioaudioenginecalls.md",
+      "hash": "1126cc6b2891f0e46825756028b2715e4b3678cb527dedbc4f1cae98b46f8aa4"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/kernel/ioaudioenginememory.json": {
+      "etag": "\"1b69-6590235e8a925-df\"",
+      "file_path": "documentation/kernel/ioaudioenginememory.md",
+      "hash": "6f094b81f9f434cb155ee7a9c396af78223d56811c1fc64b44a445464945ec17"
+    },
     "https://developer.apple.com/tutorials/data/documentation/kernel/ioaudioenginenotifications.json": {
       "etag": "\"394e-6593d1370b22e-df\"",
       "file_path": "documentation/kernel/ioaudioenginenotifications.md",
@@ -295819,6 +297194,16 @@
       "etag": "\"10be-6593d1387cb8d-df\"",
       "file_path": "documentation/kernel/ioaudioengineposition/api-1561650-fsampleframe.md",
       "hash": "93a0fc11ef3f48a3e0706a350dee7056d951a377a1588f4003c54ce001519ccf"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/kernel/ioaudioenginestate.json": {
+      "etag": "\"16e2-6590234aa88ea-df\"",
+      "file_path": "documentation/kernel/ioaudioenginestate.md",
+      "hash": "10231d610bfea63040e967707d00f303b54578f1e18c9ed94d8b64a9ce3bbeb6"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/kernel/ioaudioenginestatus.json": {
+      "etag": "\"1716-6590233586ecb-df\"",
+      "file_path": "documentation/kernel/ioaudioenginestatus.md",
+      "hash": "ae280ceba7d9d5ed64a0de3170a0baac176a538017adb763317a94038c34ce63"
     },
     "https://developer.apple.com/tutorials/data/documentation/kernel/ioaudioenginetraps.json": {
       "etag": "\"2aae-6593d12ef1814-df\"",
@@ -296255,6 +297640,11 @@
       "file_path": "documentation/kernel/ioaudiolevelcontrol/api-1811910-setminvalue.md",
       "hash": "4eae3b195a72553c5c6ba7e8fe1d4b8d48dee7979f783dc22f49e5746de20fdc"
     },
+    "https://developer.apple.com/tutorials/data/documentation/kernel/ioaudionotificationmessage.json": {
+      "etag": "\"170c-6590233cdc379-df\"",
+      "file_path": "documentation/kernel/ioaudionotificationmessage.md",
+      "hash": "f8471a22260e1222b9e9065949c2280e2aa28e4f6e32afafff2791dee91ce14a"
+    },
     "https://developer.apple.com/tutorials/data/documentation/kernel/ioaudioport.json": {
       "etag": "\"5974-6593d140e8d71-df\"",
       "file_path": "documentation/kernel/ioaudioport.md",
@@ -296474,6 +297864,11 @@
       "etag": "\"1694-6593d142af073-df\"",
       "file_path": "documentation/kernel/ioaudioselectorcontrol/api-3516530-replaceavailableselection.md",
       "hash": "24bdae75c35c2f57bcc3de577f34c9610a0587053d758c75340b62a0ef697f20"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/kernel/ioaudiosmptetime.json": {
+      "etag": "\"2233-6590236335ad3-df\"",
+      "file_path": "documentation/kernel/ioaudiosmptetime.md",
+      "hash": "df6a2eb190d2c2326cfd4df78c0e0a309fb18c8b406ad8c0a84a6d8c574ce53c"
     },
     "https://developer.apple.com/tutorials/data/documentation/kernel/ioaudiostream.json": {
       "etag": "\"d393-6593d1544efda-df\"",
@@ -296809,6 +298204,11 @@
       "etag": "\"106d-6593d15438b93-df\"",
       "file_path": "documentation/kernel/ioaudiostreamdatadescriptor/api-1491105-fstreamlength.md",
       "hash": "da3b8eae52c2134e2582f72f4bc2f770eb3df5b092972625843d80418702dd9a"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/kernel/ioaudiostreamdirection.json": {
+      "etag": "\"1368-6590234b5baec-df\"",
+      "file_path": "documentation/kernel/ioaudiostreamdirection.md",
+      "hash": "402832de76301eac1eacbe22a6f10751eefaf570d89fa5b21678d81c702081b6"
     },
     "https://developer.apple.com/tutorials/data/documentation/kernel/ioaudiostreamformat.json": {
       "etag": "\"3a3b-6593d1285fb35-df\"",
@@ -301345,6 +302745,11 @@
       "file_path": "documentation/kernel/iodataqueue/api-1811020-withentries.md",
       "hash": "52ab87f57985320a66c6359e9219e4e75be35e4c414122fb3594d961f1662500"
     },
+    "https://developer.apple.com/tutorials/data/documentation/kernel/iodataqueueappendix.json": {
+      "etag": "\"14b4-65902353b5ffe-df\"",
+      "file_path": "documentation/kernel/iodataqueueappendix.md",
+      "hash": "cce14ba78a99ae3dea8073a5b95c7b70e3c133871db38a2a5c53a3f08889bf96"
+    },
     "https://developer.apple.com/tutorials/data/documentation/kernel/iodataqueueclientdequeueentryblock.json": {
       "etag": "\"13e7b-6593d123feabf-df\"",
       "file_path": "documentation/kernel/iodataqueueclientdequeueentryblock.md",
@@ -301574,6 +302979,16 @@
       "etag": "\"150c-6593d1515d53e-df\"",
       "file_path": "documentation/kernel/iodataqueuedispatchsourceinterface.md",
       "hash": "e5cc831f8d7dba7273845f9b2932282220a34796d3e0993b0be9fb277960ef86"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/kernel/iodataqueueentry.json": {
+      "etag": "\"14f2-659023532b3e5-df\"",
+      "file_path": "documentation/kernel/iodataqueueentry.md",
+      "hash": "ab243a1e28d5d5c479791b4b60653e3d558e32062915c143234359f83efebada"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/kernel/iodataqueuememory.json": {
+      "etag": "\"18fa-6590234d629a1-df\"",
+      "file_path": "documentation/kernel/iodataqueuememory.md",
+      "hash": "bef6c37c738adba7c004a1de8a818f395030dc057c6b1a5a6732a3fc3615361b"
     },
     "https://developer.apple.com/tutorials/data/documentation/kernel/iodclprogram.json": {
       "etag": "\"8157-6593d12fbbf1e-df\"",
@@ -302129,6 +303544,11 @@
       "etag": "\"1669-6593d128e35ee-df\"",
       "file_path": "documentation/kernel/iodevicememory/initelement/tag.md",
       "hash": "d84f5e573ac47612c97817455fbe509a3f39651974d8980dd43ba28a7aadd31b"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/kernel/iodirection.json": {
+      "etag": "\"1086-6590234f52031-df\"",
+      "file_path": "documentation/kernel/iodirection.md",
+      "hash": "9ef69bf9aab947e12e3c1c183223bd5f37b54102ee2c9793557868cde010fdc2"
     },
     "https://developer.apple.com/tutorials/data/documentation/kernel/iodispatchaction.json": {
       "etag": "\"13e7-6593d11ccafce-df\"",
@@ -304220,6 +305640,26 @@
       "file_path": "documentation/kernel/iodmamapspecification/api-1442015-resvb.md",
       "hash": "574c723c5c515439e5a2510f87224995eac8952b3ee9df4a602f3e02af22f119"
     },
+    "https://developer.apple.com/tutorials/data/documentation/kernel/iodot3collentry.json": {
+      "etag": "\"13fe-659023474ab58-df\"",
+      "file_path": "documentation/kernel/iodot3collentry.md",
+      "hash": "de0caf0eefbd2ef5e0fe77d2cfbe7a73664a4e7612d486356dba36169e296aa6"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/kernel/iodot3rxextraentry.json": {
+      "etag": "\"259b-65902348e7f09-df\"",
+      "file_path": "documentation/kernel/iodot3rxextraentry.md",
+      "hash": "5d97424641036c38b2f6baad4a6a002ffeb8387fdb196228b35f7ab3062b5166"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/kernel/iodot3statsentry.json": {
+      "etag": "\"2e7b-6590236432113-df\"",
+      "file_path": "documentation/kernel/iodot3statsentry.md",
+      "hash": "ac92c40664f0eaed492ecbec0fd76f81d087972326b936c6d508502e484d5b25"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/kernel/iodot3txextraentry.json": {
+      "etag": "\"2171-6590233a37e3b-df\"",
+      "file_path": "documentation/kernel/iodot3txextraentry.md",
+      "hash": "02e24e620482c8400e2cc579b3c23416709ee3ae0be925f58be42318afee643c"
+    },
     "https://developer.apple.com/tutorials/data/documentation/kernel/iodtcompareaddresscellfunc.json": {
       "etag": "\"13e6a-6593d147ae589-df\"",
       "file_path": "documentation/kernel/iodtcompareaddresscellfunc.md",
@@ -305735,6 +307175,11 @@
       "file_path": "documentation/kernel/ioethernetinterface/reserved.md",
       "hash": "93608867843c31969ffce4a164a0143241c3d18c99dea115686bcc4f7c13af9a"
     },
+    "https://developer.apple.com/tutorials/data/documentation/kernel/ioethernetstats.json": {
+      "etag": "\"19ed-6590235e06094-df\"",
+      "file_path": "documentation/kernel/ioethernetstats.md",
+      "hash": "ffea28384065f43e2abec0c277b9b76e28a1949351a1e3cf4f8626a2d90cea31"
+    },
     "https://developer.apple.com/tutorials/data/documentation/kernel/ioeventlink.json": {
       "etag": "\"4f6b-6593d12abc3e1-df\"",
       "file_path": "documentation/kernel/ioeventlink.md",
@@ -306529,6 +307974,11 @@
       "etag": "\"fcc-6593d14d7f690-df\"",
       "file_path": "documentation/kernel/ioexternaltrap/api-1400639-func.md",
       "hash": "29c1659bbab807096e7e0fd3c5203860bbcbffdd410854f97b082670b1f10710"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/kernel/iofb_arbitrary_size_cursor.json": {
+      "etag": "\"11bc-65902353d403d-df\"",
+      "file_path": "documentation/kernel/iofb_arbitrary_size_cursor.md",
+      "hash": "102e5b39fac2939fd21bdc2bf5d2eb9a9f090a952d1fceee7e1150c50ac2fbfb"
     },
     "https://developer.apple.com/tutorials/data/documentation/kernel/iofbcursorcontrolattribute.json": {
       "etag": "\"23ce-6593d11a017e5-df\"",
@@ -321850,6 +323300,11 @@
       "file_path": "documentation/kernel/iomediastate.md",
       "hash": "819a7a370705915adf6c7d6fda27f5772d20bb041bc68f961d796b78f5cb6cab"
     },
+    "https://developer.apple.com/tutorials/data/documentation/kernel/iomediumtype.json": {
+      "etag": "\"ed5-65902344956f6-df\"",
+      "file_path": "documentation/kernel/iomediumtype.md",
+      "hash": "9b8d7062c15ef341fe236c33350b6d1346558cd282d88858cb91280199a91f7a"
+    },
     "https://developer.apple.com/tutorials/data/documentation/kernel/iomemorycursor.json": {
       "etag": "\"4ae0-6593d1245c3b6-df\"",
       "file_path": "documentation/kernel/iomemorycursor.md",
@@ -324985,6 +326440,11 @@
       "file_path": "documentation/kernel/ionetworkmedium/reserved.md",
       "hash": "9911668123566dd05223f018a168672422c08d4043c77d8cf593799646695449"
     },
+    "https://developer.apple.com/tutorials/data/documentation/kernel/ionetworkstats.json": {
+      "etag": "\"1b6a-65902351790e1-df\"",
+      "file_path": "documentation/kernel/ionetworkstats.md",
+      "hash": "e49536d98f72ce60f32ffc1a6855ab64b25ea23bc0fd1df3e49ea61227e9996a"
+    },
     "https://developer.apple.com/tutorials/data/documentation/kernel/ionormdistreportvalues.json": {
       "etag": "\"3515-6593d13da5dd0-df\"",
       "file_path": "documentation/kernel/ionormdistreportvalues.md",
@@ -325384,6 +326844,11 @@
       "etag": "\"11fc-6593d1304ccaa-df\"",
       "file_path": "documentation/kernel/iooutputqueue/reserved.md",
       "hash": "55ebc1f51ae28ef5300e31796964c0072578ba0b2bd868989276723c83d794e8"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/kernel/iooutputqueuestats.json": {
+      "etag": "\"2152-6590234709b6d-df\"",
+      "file_path": "documentation/kernel/iooutputqueuestats.md",
+      "hash": "152dbc64d1a2b88c5a335dffaf26ba1f3d224152493091fb125c5f95ef7d9a18"
     },
     "https://developer.apple.com/tutorials/data/documentation/kernel/iopacketbufferconstraints.json": {
       "etag": "\"21cf-6593d13d3e260-df\"",
@@ -327450,6 +328915,11 @@
       "file_path": "documentation/kernel/iopmdriverassertiontype.md",
       "hash": "eda0c7c134f3e56aadd99d476e9a4e4fc262db188608ca85977a8bc2d9112947"
     },
+    "https://developer.apple.com/tutorials/data/documentation/kernel/iopmpowerflags.json": {
+      "etag": "\"29ea-6590236d89c91-df\"",
+      "file_path": "documentation/kernel/iopmpowerflags.md",
+      "hash": "e4c69307e65acc88645d2dd17e4882a2d72f680e58ea05c61e604b2e71680679"
+    },
     "https://developer.apple.com/tutorials/data/documentation/kernel/iopmpowersource.json": {
       "etag": "\"d458-6593d127c24bd-df\"",
       "file_path": "documentation/kernel/iopmpowersource.md",
@@ -328069,6 +329539,36 @@
       "etag": "\"144ba-6593d1348a63e-df\"",
       "file_path": "documentation/kernel/iopmsettingcontrollercallback.md",
       "hash": "2d3aa890e7dc827c1d4369975bc3367c40c0d231bff232692ae213ea63a71325"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/kernel/iopmsystemcapabilitychangeparameters.json": {
+      "etag": "\"2aa7-659023651d669-df\"",
+      "file_path": "documentation/kernel/iopmsystemcapabilitychangeparameters.md",
+      "hash": "fa170dded89a4eb1adb18c37c5979542d3d1af5f2fdbd5d099c5c8e335cf3ca6"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/kernel/iopmsystemcapabilitychangeparameters/1522166-fromcapabilities.json": {
+      "etag": "\"2877-6590234dcedfb-df\"",
+      "file_path": "documentation/kernel/iopmsystemcapabilitychangeparameters/api-1522166-fromcapabilities.md",
+      "hash": "e1425652945b5899cfc1f3c5b4d07be1b96dd8e1db3c17af574b49a6b993323d"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/kernel/iopmsystemcapabilitychangeparameters/1522218-notifyref.json": {
+      "etag": "\"2985-6590234dcedfb-df\"",
+      "file_path": "documentation/kernel/iopmsystemcapabilitychangeparameters/api-1522218-notifyref.md",
+      "hash": "a3e4242685866e60328df154046c01a76bbb8a8853f87d3fb4de786a51f6ec67"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/kernel/iopmsystemcapabilitychangeparameters/1522278-changeflags.json": {
+      "etag": "\"29cc-6590234dcedfb-df\"",
+      "file_path": "documentation/kernel/iopmsystemcapabilitychangeparameters/api-1522278-changeflags.md",
+      "hash": "c0096afc0848e07fcc5f997888302e44fcce898de3aa752ca524d5407789a6ca"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/kernel/iopmsystemcapabilitychangeparameters/1522348-maxwaitforreply.json": {
+      "etag": "\"2a1b-6590234dcedfb-df\"",
+      "file_path": "documentation/kernel/iopmsystemcapabilitychangeparameters/api-1522348-maxwaitforreply.md",
+      "hash": "5a44db27e0631f5eeb3cad432c984a97b8a0635faa1cfac55981199365bec812"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/kernel/iopmsystemcapabilitychangeparameters/1522492-tocapabilities.json": {
+      "etag": "\"286d-6590234dcedfb-df\"",
+      "file_path": "documentation/kernel/iopmsystemcapabilitychangeparameters/api-1522492-tocapabilities.md",
+      "hash": "7ad8af61b1a8ba540f9ac7d5c04c92683d0eb779391271f58ee1bfa7b416c24c"
     },
     "https://developer.apple.com/tutorials/data/documentation/kernel/iopowerconnection.json": {
       "etag": "\"9d63-6593d125086e3-df\"",
@@ -337795,6 +339295,21 @@
       "file_path": "documentation/kernel/iostreambuffer/api-1809743-withmemorydescriptors.md",
       "hash": "99a0248716fa8b88ccdb2f1b93a8dcb11d853d4037300ed0a2559016de708098"
     },
+    "https://developer.apple.com/tutorials/data/documentation/kernel/iostreambufferid.json": {
+      "etag": "\"d23-659023371d5ec-df\"",
+      "file_path": "documentation/kernel/iostreambufferid.md",
+      "hash": "0ef60e5900856866d4091143541f96064403707159d9ecc9815cec507f44f165"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/kernel/iostreambufferqueue.json": {
+      "etag": "\"19f1-6590235371184-df\"",
+      "file_path": "documentation/kernel/iostreambufferqueue.md",
+      "hash": "a4d97a6dd0db1bd318c660fb5c74709e6efeaa316078323601248a37b1eb9d75"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/kernel/iostreambufferqueueentry.json": {
+      "etag": "\"1bf5-6590235c1dd4e-df\"",
+      "file_path": "documentation/kernel/iostreambufferqueueentry.md",
+      "hash": "6a550d7806441d103fdd250eb8395cfde9ad02176b4743d22f20f2b440107cbd"
+    },
     "https://developer.apple.com/tutorials/data/documentation/kernel/iostreammode.json": {
       "etag": "\"14320-6593d13bc51dd-df\"",
       "file_path": "documentation/kernel/iostreammode.md",
@@ -339619,6 +341134,11 @@
       "etag": "\"2399-6593d12cd556a-df\"",
       "file_path": "documentation/kernel/iousbdevrequest/api-1546579-windex.md",
       "hash": "7d2080be88cce4e6377eb0e732f61e94c0bdfe4bee241baa75a668dbbbf19283"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/kernel/iousbdevrequestdesc.json": {
+      "etag": "\"1e3b-659023586120a-df\"",
+      "file_path": "documentation/kernel/iousbdevrequestdesc.md",
+      "hash": "18ce4a9144a00b6a9402765240b640d366dfae8f77055331a95a36e67f07f887"
     },
     "https://developer.apple.com/tutorials/data/documentation/kernel/iousbdevrequestto.json": {
       "etag": "\"3ab6-6593d1544efda-df\"",
@@ -348195,6 +349715,256 @@
       "file_path": "documentation/kernel/kf_override_flag_t/kf_traptrace_ovrd.md",
       "hash": "d1b93c3ef6211aa2ab2d394343520d3622fa72ed99ac933706310fb3079d85a4"
     },
+    "https://developer.apple.com/tutorials/data/documentation/kernel/kinquiry_version_descriptor_maxcount.json": {
+      "etag": "\"1084-659023523ae7b-df\"",
+      "file_path": "documentation/kernel/kinquiry_version_descriptor_maxcount.md",
+      "hash": "1dca975d47b6190c5803fdaf0e26cb4fe181bb033c55853149124494f84440b0"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/kernel/kioactivemedium.json": {
+      "etag": "\"1153-659023474ab58-df\"",
+      "file_path": "documentation/kernel/kioactivemedium.md",
+      "hash": "a71b73e31dfe616eae2f815112c8e918e47b58906c9ac3b3b88dc65336f64baf"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/kernel/kioaudiocontrolchannelidkey.json": {
+      "etag": "\"10be-659023416883c-df\"",
+      "file_path": "documentation/kernel/kioaudiocontrolchannelidkey.md",
+      "hash": "3c0f4a6626beb0d0240fbe4a2633aaa89e3faf357b738faac0ff2a02921ca0cf"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/kernel/kioaudiocontrolchannelnameall.json": {
+      "etag": "\"eeb-6590234428c50-df\"",
+      "file_path": "documentation/kernel/kioaudiocontrolchannelnameall.md",
+      "hash": "06fd2af3753f3859b8f020442b9876132021786fb4d33bf7f0ee5157ce609c9b"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/kernel/kioaudiocontrolchannelnamecenter.json": {
+      "etag": "\"f00-659023628b017-df\"",
+      "file_path": "documentation/kernel/kioaudiocontrolchannelnamecenter.md",
+      "hash": "df3243e456612688c4b7c3e8141e7083830767bc713cc3372c9dd6d9c2640ea5"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/kernel/kioaudiocontrolchannelnamefrontleftcenter.json": {
+      "etag": "\"f36-659023407a776-df\"",
+      "file_path": "documentation/kernel/kioaudiocontrolchannelnamefrontleftcenter.md",
+      "hash": "82d36492d447bf7aeec5f737323f12c481f4062d9a4ff310b58509e39411f5dd"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/kernel/kioaudiocontrolchannelnamefrontrightcenter.json": {
+      "etag": "\"f3c-6590235d0db8a-df\"",
+      "file_path": "documentation/kernel/kioaudiocontrolchannelnamefrontrightcenter.md",
+      "hash": "8ef68c48b8e366c092f8fd3809e9bfbf2eec2d1c602aa47c67323ff48084419b"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/kernel/kioaudiocontrolchannelnamekey.json": {
+      "etag": "\"1154-6590236cff08c-df\"",
+      "file_path": "documentation/kernel/kioaudiocontrolchannelnamekey.md",
+      "hash": "e48ef22aa60418ac43f4eb1e5c6fe17d0cfeebdc4117d438ee1a6e695b6bfcbd"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/kernel/kioaudiocontrolchannelnameleft.json": {
+      "etag": "\"ef4-6590234a2c247-df\"",
+      "file_path": "documentation/kernel/kioaudiocontrolchannelnameleft.md",
+      "hash": "70e2dcb56d63f9760878238f12ce7694bf87b7eea31dbcfab1a181edd022834a"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/kernel/kioaudiocontrolchannelnameleftrear.json": {
+      "etag": "\"f0d-6590236392e0f-df\"",
+      "file_path": "documentation/kernel/kioaudiocontrolchannelnameleftrear.md",
+      "hash": "88fce6ad9991507dc0bbff7c213ed1a79a68ab0bf7072f4f15d8f3036eb0d017"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/kernel/kioaudiocontrolchannelnamerearcenter.json": {
+      "etag": "\"f18-6590235038d0a-df\"",
+      "file_path": "documentation/kernel/kioaudiocontrolchannelnamerearcenter.md",
+      "hash": "f063950dcef926debea0b8f629e8b6cedee8937be232554216483b0aea35a894"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/kernel/kioaudiocontrolchannelnameright.json": {
+      "etag": "\"efa-6590233db40f5-df\"",
+      "file_path": "documentation/kernel/kioaudiocontrolchannelnameright.md",
+      "hash": "117e69664034d010203f69412ae99839be3fe6026c906d681c90f29ce162a458"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/kernel/kioaudiocontrolchannelnamerightrear.json": {
+      "etag": "\"f13-6590234a8bc11-df\"",
+      "file_path": "documentation/kernel/kioaudiocontrolchannelnamerightrear.md",
+      "hash": "489ae0c83d75a55840e08f338b25f26a31889b6e8d9c49ac92c8934c22d527a5"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/kernel/kioaudiocontrolchannelnamesub.json": {
+      "etag": "\"ef2-6590235c5ebc7-df\"",
+      "file_path": "documentation/kernel/kioaudiocontrolchannelnamesub.md",
+      "hash": "bada2b93bc6793b15b8e9baabe5b19a1610477e9fa963911a59617b8f88df892"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/kernel/kioaudiocontrolchannelnamesurroundleft.json": {
+      "etag": "\"f24-65902347abde8-df\"",
+      "file_path": "documentation/kernel/kioaudiocontrolchannelnamesurroundleft.md",
+      "hash": "255b90a18e1fa9957043c0b037eb71d6a3d0c2a65b2d7bb49364c955ee8259c4"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/kernel/kioaudiocontrolchannelnamesurroundright.json": {
+      "etag": "\"f2a-6590234f75752-df\"",
+      "file_path": "documentation/kernel/kioaudiocontrolchannelnamesurroundright.md",
+      "hash": "654acd8fff17855be749dfa8d1388441b0e21410a762e215dcf21340e877a0d9"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/kernel/kioaudiocontrolnumcalls.json": {
+      "etag": "\"fb3-6590235d0db8a-df\"",
+      "file_path": "documentation/kernel/kioaudiocontrolnumcalls.md",
+      "hash": "35e297753e5f0e0dddbb6a5b916ecb6991a2ac0a68093a041dcfb1fc4391d8b1"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/kernel/kioaudiocontroltypekey.json": {
+      "etag": "\"10b8-6590236353f08-df\"",
+      "file_path": "documentation/kernel/kioaudiocontroltypekey.md",
+      "hash": "096536e053cac0c25876530dec0afa70b6e55fcde91c26154b38f88d3feaac0e"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/kernel/kioaudiocontrolvalueisreadonlykey.json": {
+      "etag": "\"110e-6590233e2d6a2-df\"",
+      "file_path": "documentation/kernel/kioaudiocontrolvalueisreadonlykey.md",
+      "hash": "230efdac4c09e7a2462996e9a6f278ebd205591f8bb35b7569495b04e8f51653"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/kernel/kioaudiocontrolvaluekey.json": {
+      "etag": "\"107e-65902342862cd-df\"",
+      "file_path": "documentation/kernel/kioaudiocontrolvaluekey.md",
+      "hash": "69df4489ba6ee7804b41da75cf61c9938665ade89800e7f7972e581caec3ff52"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/kernel/kioaudiodeviceiconnamekey.json": {
+      "etag": "\"eaa-65902352b7726-df\"",
+      "file_path": "documentation/kernel/kioaudiodeviceiconnamekey.md",
+      "hash": "01302ff81f4ad5e36722b8fd97886432e74f8d21d155d1db6a109bf9291cb2d4"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/kernel/kioaudiodevicemanufacturernamekey.json": {
+      "etag": "\"eda-6590235ac4be6-df\"",
+      "file_path": "documentation/kernel/kioaudiodevicemanufacturernamekey.md",
+      "hash": "b65f80b7a77f95690b35d945c9a423382680d3a98e62548dce3e25c95cf66daa"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/kernel/kioaudiodevicenamekey.json": {
+      "etag": "\"e91-6590234cfa637-df\"",
+      "file_path": "documentation/kernel/kioaudiodevicenamekey.md",
+      "hash": "30222feb3cc329827fc5a8df35607815c6d0467757dd228bb9ef03afc9f10902"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/kernel/kioaudioenginedefaultmixbuffersamplesize.json": {
+      "etag": "\"e58-6590234c8bfe0-df\"",
+      "file_path": "documentation/kernel/kioaudioenginedefaultmixbuffersamplesize.md",
+      "hash": "e7a11171b7468d00b1d586b09253007a5ddfe724d5bd3e876c608d5c2041f7af"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/kernel/kioaudioenginefullchannelcategorynameskey.json": {
+      "etag": "\"f31-6590234c8bfe0-df\"",
+      "file_path": "documentation/kernel/kioaudioenginefullchannelcategorynameskey.md",
+      "hash": "c95c0785ac77bda5049c3b794056bd019b7084af7fecd5a01e2d377096038ebf"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/kernel/kioaudioenginefullchannelnameskey.json": {
+      "etag": "\"f07-6590234ff809b-df\"",
+      "file_path": "documentation/kernel/kioaudioenginefullchannelnameskey.md",
+      "hash": "abd79408f85f93227b5b99610cceef3aa7c3ccc8ae9b957ac71bee2ad0e324bc"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/kernel/kioaudioenginefullchannelnumbernameskey.json": {
+      "etag": "\"f25-6590235e06094-df\"",
+      "file_path": "documentation/kernel/kioaudioenginefullchannelnumbernameskey.md",
+      "hash": "ac12ac94078b5f32e809e1ae9e093ffca09bc5277e729ce0ffa91776f8e7bca4"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/kernel/kioaudioenginenumcalls.json": {
+      "etag": "\"fac-65902367f1de9-df\"",
+      "file_path": "documentation/kernel/kioaudioenginenumcalls.md",
+      "hash": "4d43ad0ab17dfece4dd91660815a28b914768d06a3186e17acc7a7344d781696"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/kernel/kioaudioengineoutputsamplelatencykey.json": {
+      "etag": "\"ee6-659023591ccbb-df\"",
+      "file_path": "documentation/kernel/kioaudioengineoutputsamplelatencykey.md",
+      "hash": "7b40cce47ce0d55f378a9d3300dbaecf1828e8f8e421ff21f9a0b9e45e85dc5c"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/kernel/kioaudioenginestatekey.json": {
+      "etag": "\"108d-6590235a148cb-df\"",
+      "file_path": "documentation/kernel/kioaudioenginestatekey.md",
+      "hash": "e661670f1f66b95d222a46342634ee4a841050da259b064247eb63af7657b72d"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/kernel/kioaudiolevelcontrolmaxdbkey.json": {
+      "etag": "\"1183-65902357452ce-df\"",
+      "file_path": "documentation/kernel/kioaudiolevelcontrolmaxdbkey.md",
+      "hash": "1e564eafc2e0e22c6fed58239d01733f8c712a632aeaf7d2b9d0dee58e821e11"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/kernel/kioaudiolevelcontrolmaxvaluekey.json": {
+      "etag": "\"1127-6590236765dfb-df\"",
+      "file_path": "documentation/kernel/kioaudiolevelcontrolmaxvaluekey.md",
+      "hash": "42879402675694a208e4eb414c9be179ef97330687533cf5c774ad8d87ea2ca3"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/kernel/kioaudiolevelcontrolmindbkey.json": {
+      "etag": "\"1183-659023519a90e-df\"",
+      "file_path": "documentation/kernel/kioaudiolevelcontrolmindbkey.md",
+      "hash": "cc1f26d192be87d4cb7336e1c94dc739385ab92e612b7349de98e1b8d1ebcd33"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/kernel/kioaudiolevelcontrolminvaluekey.json": {
+      "etag": "\"1127-65902367491d4-df\"",
+      "file_path": "documentation/kernel/kioaudiolevelcontrolminvaluekey.md",
+      "hash": "37085bf9501a750c33ae1e8edcf8c1a85ffdaf6768acd05d1f4e93c1755c5eff"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/kernel/kioaudioportnamekey.json": {
+      "etag": "\"e85-6590234c10b4b-df\"",
+      "file_path": "documentation/kernel/kioaudioportnamekey.md",
+      "hash": "e348eed7c1cddeff98551dff973a50fa2b7a502ac8abdb4db1ce66f7e6a99342"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/kernel/kioaudioportsubtypekey.json": {
+      "etag": "\"1075-6590235ef240f-df\"",
+      "file_path": "documentation/kernel/kioaudioportsubtypekey.md",
+      "hash": "799e227cad8335f0399fd85a8cab52f523a7010ce26729a7a0dfce45b669d751"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/kernel/kioaudioporttypekey.json": {
+      "etag": "\"10c2-6590234a0d7c8-df\"",
+      "file_path": "documentation/kernel/kioaudioporttypekey.md",
+      "hash": "5f8eaea04084610cc363f3b0f749c202f1918012dfcde37ffda7de9e91de8231"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/kernel/kioaudiosampleratekey.json": {
+      "etag": "\"104e-6590236d62235-df\"",
+      "file_path": "documentation/kernel/kioaudiosampleratekey.md",
+      "hash": "03fc5f53ca12d4e320e10ff9095a53c40c311e32d19056737722eed52bd080af"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/kernel/kioaudiostreamdirectionkey.json": {
+      "etag": "\"1065-6590235345d67-df\"",
+      "file_path": "documentation/kernel/kioaudiostreamdirectionkey.md",
+      "hash": "d8e484ae7a83d41c028caf57aae2bf9630272725aa7ba2409f70b255e77ff264"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/kernel/kioaudiostreamsamplelatencykey.json": {
+      "etag": "\"1202-6590236d62235-df\"",
+      "file_path": "documentation/kernel/kioaudiostreamsamplelatencykey.md",
+      "hash": "4aee663781bde3f17882e6f54644fbef9aea889d7f5d5966e0a97c24a2942138"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/kernel/kioblockstoragedeviceclass.json": {
+      "etag": "\"ecc-6590233f9a68f-df\"",
+      "file_path": "documentation/kernel/kioblockstoragedeviceclass.md",
+      "hash": "27b8d19a80a582224b7e63f185b391eae210208633041590789f2fcfaf64cb00"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/kernel/kioblockstoragedevicewritecachestatekey.json": {
+      "etag": "\"f40-6590234fd7ff4-df\"",
+      "file_path": "documentation/kernel/kioblockstoragedevicewritecachestatekey.md",
+      "hash": "73ff63586574ff352c12630f8af670f9a29d8500ee9a716e3cc91e3aba23daaf"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/kernel/kiobuiltin.json": {
+      "etag": "\"104e-659023433e2a2-df\"",
+      "file_path": "documentation/kernel/kiobuiltin.md",
+      "hash": "fc351e16227e96566e252178798ee16277d4915e0ddcdf2c44b92ccc7e8fb062"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/kernel/kiocdmediaclass.json": {
+      "etag": "\"fe6-65902350a17ae-df\"",
+      "file_path": "documentation/kernel/kiocdmediaclass.md",
+      "hash": "430089b7450ac24ac6d0da536690fa6cb4e9bd43eb4b520c78bf1bd0be54d39f"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/kernel/kiocdmediatockey.json": {
+      "etag": "\"1106-65902364d91d2-df\"",
+      "file_path": "documentation/kernel/kiocdmediatockey.md",
+      "hash": "17b5c065a9bbbadd705f17926abf02a55aec256727543385ce861a3a02663f49"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/kernel/kiocdmediatypekey.json": {
+      "etag": "\"1065-6590235b12d0d-df\"",
+      "file_path": "documentation/kernel/kiocdmediatypekey.md",
+      "hash": "2fe1bdb8f6a58bb82b486e37d23d67582d93b73f2244158bf951b48e96c7fcf1"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/kernel/kiocdmediatyper.json": {
+      "etag": "\"f76-659023538ec38-df\"",
+      "file_path": "documentation/kernel/kiocdmediatyper.md",
+      "hash": "d0785cd7f696b0f20a772ed9a9120f0f4492ada05d10df20bfdf60592b512cc7"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/kernel/kiocdmediatyperom.json": {
+      "etag": "\"fd2-659023657a977-df\"",
+      "file_path": "documentation/kernel/kiocdmediatyperom.md",
+      "hash": "35b33b0f44994ad41939f4d82656c23b7f3da079355940fe1804e0733d03cc46"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/kernel/kiocdmediatyperw.json": {
+      "etag": "\"f7c-6590236d89c91-df\"",
+      "file_path": "documentation/kernel/kiocdmediatyperw.md",
+      "hash": "ade507c9939b5309436d434196d5979834460cd0ff9ec7311bca3a9b9db8cee2"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/kernel/kiodefaultmedium.json": {
+      "etag": "\"10d3-6590233a13f75-df\"",
+      "file_path": "documentation/kernel/kiodefaultmedium.md",
+      "hash": "079872d4f2a8b07c13d3333919e89e05f12e35e1c40550cb5116603872a77bee"
+    },
     "https://developer.apple.com/tutorials/data/documentation/kernel/kiodmacommandoutputbig32.json": {
       "etag": "\"4766-6593d14711d99-df\"",
       "file_path": "documentation/kernel/kiodmacommandoutputbig32.md",
@@ -348225,10 +349995,810 @@
       "file_path": "documentation/kernel/kiodmacommandoutputlittle64.md",
       "hash": "f82a398ae7ee008f15fb9ef1760fe38e749123f2e63ca389bccab9bc2767c8fc"
     },
+    "https://developer.apple.com/tutorials/data/documentation/kernel/kiodvdmediaclass.json": {
+      "etag": "\"ff8-659023512e51b-df\"",
+      "file_path": "documentation/kernel/kiodvdmediaclass.md",
+      "hash": "4e7445fbe23a2da8b8b0439a3303405b90e50b738426d5b724ffb550c7baf516"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/kernel/kiodvdmediatypehdr.json": {
+      "etag": "\"f97-65902356bd51e-df\"",
+      "file_path": "documentation/kernel/kiodvdmediatypehdr.md",
+      "hash": "95afb277782dce6fcef8b11b1f8cc588a6b96c8dc13e9d79e7663ba210e0de61"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/kernel/kiodvdmediatypehdram.json": {
+      "etag": "\"f8f-65902357dd6a7-df\"",
+      "file_path": "documentation/kernel/kiodvdmediatypehdram.md",
+      "hash": "f348e790b7f619bd6033d055d40ee3207320e3a16137ae43a12f3523be87671d"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/kernel/kiodvdmediatypehdrom.json": {
+      "etag": "\"f8f-65902351790e1-df\"",
+      "file_path": "documentation/kernel/kiodvdmediatypehdrom.md",
+      "hash": "d80fe2e1f3ce75851acf02c176c1c70809b2865095b2764e62b187824c499953"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/kernel/kiodvdmediatypehdrw.json": {
+      "etag": "\"f9d-6590233e2d6a2-df\"",
+      "file_path": "documentation/kernel/kiodvdmediatypehdrw.md",
+      "hash": "9c59acc092157b31372e0bdd5dce1e2230e0dd7bda2a9f99e5256b5806b20490"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/kernel/kiodvdmediatypekey.json": {
+      "etag": "\"108c-65902337b4ea3-df\"",
+      "file_path": "documentation/kernel/kiodvdmediatypekey.md",
+      "hash": "49b12e9e8a41d54ed699cc9a65f44ba758bcc5c58a1e5e3d552107a5560cfe80"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/kernel/kiodvdmediatypeplusr.json": {
+      "etag": "\"fa4-6590236c2924d-df\"",
+      "file_path": "documentation/kernel/kiodvdmediatypeplusr.md",
+      "hash": "b18fe9a0804fd68f0b817c90071a205f4a32de9d039c0a5d5130563e85890e54"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/kernel/kiodvdmediatypeplusrw.json": {
+      "etag": "\"faa-6590236cdb50c-df\"",
+      "file_path": "documentation/kernel/kiodvdmediatypeplusrw.md",
+      "hash": "131ac3f2ba46ed14306ac3b76cb4a37807d657993ad3d328667f7334bfcb74da"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/kernel/kiodvdmediatyper.json": {
+      "etag": "\"f87-659023550a850-df\"",
+      "file_path": "documentation/kernel/kiodvdmediatyper.md",
+      "hash": "f4af1585e16be88bad9c8769d498474895be7c0249023a871ac220414d41e6d8"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/kernel/kiodvdmediatyperam.json": {
+      "etag": "\"f82-65902357fc731-df\"",
+      "file_path": "documentation/kernel/kiodvdmediatyperam.md",
+      "hash": "8dae6f0dd2dc5aba13bbb9c0e7bd398a4cf9c316399cec2dbf8d3676a1d97a28"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/kernel/kiodvdmediatyperom.json": {
+      "etag": "\"f82-659023510a08f-df\"",
+      "file_path": "documentation/kernel/kiodvdmediatyperom.md",
+      "hash": "73261245d38efff5992d6fae50d54c33ba2d90af0222858ef306788f83cef4d0"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/kernel/kiodvdmediatyperw.json": {
+      "etag": "\"f8d-6590234683646-df\"",
+      "file_path": "documentation/kernel/kiodvdmediatyperw.md",
+      "hash": "e37b8412e28ee3b9ba3d3b64f16e8ef32c4205ea3491401c1ba7fd3226d6a426"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/kernel/kioethernetaddresssize.json": {
+      "etag": "\"ec1-65902353d403d-df\"",
+      "file_path": "documentation/kernel/kioethernetaddresssize.md",
+      "hash": "5a299e5e9cdcfb63882210f388d181c50d3b823b64cbafc0225745707ae8e72d"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/kernel/kioethernetcontrollerclass.json": {
+      "etag": "\"eea-659023626acf2-df\"",
+      "file_path": "documentation/kernel/kioethernetcontrollerclass.md",
+      "hash": "2b8687670ef81cd89671c4a8795199a6f8957dd62677f360b12995a70b15ee30"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/kernel/kioethernetcrcsize.json": {
+      "etag": "\"ece-65902357dd6a7-df\"",
+      "file_path": "documentation/kernel/kioethernetcrcsize.md",
+      "hash": "8eee7be58f449ed0ca3073a542a37563a91b1c021f69db1a1acf0f9796ba98c8"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/kernel/kioethernetdisabledwakeonlanfiltergroup.json": {
+      "etag": "\"fbd-65902359d7d43-df\"",
+      "file_path": "documentation/kernel/kioethernetdisabledwakeonlanfiltergroup.md",
+      "hash": "1e0a9ec3cd0190bb77bbcf3a865a8bae7689d3ddcc8733a72e7e09917f9d4279"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/kernel/kioethernetmaxpacketsize.json": {
+      "etag": "\"ed7-6590235ed89cd-df\"",
+      "file_path": "documentation/kernel/kioethernetmaxpacketsize.md",
+      "hash": "f5f8e3671e784ee5589daa418d957c24dfdc4619c5b9b18fb5d6c107f3fa468b"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/kernel/kioethernetminpacketsize.json": {
+      "etag": "\"ed7-6590233a5be78-df\"",
+      "file_path": "documentation/kernel/kioethernetminpacketsize.md",
+      "hash": "029f86e3ae11c87700e4151cf9e05dfd886e202b163b3aa49bc881c01270fc98"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/kernel/kioethernetstatskey.json": {
+      "etag": "\"fc8-6590233a5be78-df\"",
+      "file_path": "documentation/kernel/kioethernetstatskey.md",
+      "hash": "13274022e3dbc8eb8b0ae0ec8df94f948ce559a71a53f341bea36fd8f0d58a92"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/kernel/kioethernetwakeonlanfiltergroup.json": {
+      "etag": "\"f68-65902337d76f6-df\"",
+      "file_path": "documentation/kernel/kioethernetwakeonlanfiltergroup.md",
+      "hash": "744a2b4cb05f1ca2cf147599b53930a358eb22a63d663f27625f812d198b9107"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/kernel/kiofeatures.json": {
+      "etag": "\"10bc-65902360dc58c-df\"",
+      "file_path": "documentation/kernel/kiofeatures.md",
+      "hash": "217fd439d3700a718a22a9fe4e24214ed2c363ec6746183aeab9388cf2f77212"
+    },
     "https://developer.apple.com/tutorials/data/documentation/kernel/kiofwavcasynccmdfreed.json": {
       "etag": "\"cfd-6593d14ac9119-df\"",
       "file_path": "documentation/kernel/kiofwavcasynccmdfreed.md",
       "hash": "e2ea5ba93bcc6eb4e9d35ff94daf4a72bcf5a03a46f28eb770abbc74f6f7766d"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/kernel/kiointerfaceextraflags.json": {
+      "etag": "\"10c1-659023667ae29-df\"",
+      "file_path": "documentation/kernel/kiointerfaceextraflags.md",
+      "hash": "cd7118c338c870aa38fd9170515956f9d5c2445498f9047d804e9480d55c0b95"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/kernel/kiointerfaceflags.json": {
+      "etag": "\"10a1-65902364d91d2-df\"",
+      "file_path": "documentation/kernel/kiointerfaceflags.md",
+      "hash": "44e2108d9b4da8f8837de11e7fb32b5555bb1003c3dd55425f2c0bd42f58b3ad"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/kernel/kiointerfacenameprefix.json": {
+      "etag": "\"10a3-659023492a6d7\"",
+      "file_path": "documentation/kernel/kiointerfacenameprefix.md",
+      "hash": "55808b024930a8415fc40c5daadd458e10f3d3477c69a616bffc01655665345b"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/kernel/kiointerfacestate.json": {
+      "etag": "\"10b0-65902339e4bbd-df\"",
+      "file_path": "documentation/kernel/kiointerfacestate.md",
+      "hash": "8bcbc0fa3341c460953838f037247dba2553d692e2bd3b2977b06c1eb4f12d1d"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/kernel/kiointerfacetype.json": {
+      "etag": "\"10b5-6590236c2924d-df\"",
+      "file_path": "documentation/kernel/kiointerfacetype.md",
+      "hash": "d4f6e25f00a3443a4c2fb9732b0d8eddb5cce50530f695770cb72c3dfa127d1f"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/kernel/kiointerfaceunit.json": {
+      "etag": "\"1073-6590236a5c2ae-df\"",
+      "file_path": "documentation/kernel/kiointerfaceunit.md",
+      "hash": "9e7d2da161978c1db55b21f2a14d74c664432eda23d8b5f275fb96b627bcaa22"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/kernel/kiolinkdata.json": {
+      "etag": "\"10c6-6590235295e29-df\"",
+      "file_path": "documentation/kernel/kiolinkdata.md",
+      "hash": "ac4beace8c3576901b324edc93a0a3173b3f6844b984f1330568bc19f3a50a73"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/kernel/kiolinkspeed.json": {
+      "etag": "\"10b1-659023409cef8-df\"",
+      "file_path": "documentation/kernel/kiolinkspeed.md",
+      "hash": "4bd101de33329fe7e22f3134621a133c2c548342a397e15874ff6ea79f1157db"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/kernel/kiolinkstatus.json": {
+      "etag": "\"10cb-6590233e05a5e-df\"",
+      "file_path": "documentation/kernel/kiolinkstatus.md",
+      "hash": "068924240e2e22b53db6ba5cd532f1348a4318ab7ffc743e2832256c8e7206b4"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/kernel/kiolocation.json": {
+      "etag": "\"105f-65902364681df-df\"",
+      "file_path": "documentation/kernel/kiolocation.md",
+      "hash": "a65633d3fb9ede7f6145a5d5f14421d5f220d639cbd75bb8dd750904c3a3e83f"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/kernel/kiomacaddress.json": {
+      "etag": "\"10cb-6590235c98da0-df\"",
+      "file_path": "documentation/kernel/kiomacaddress.md",
+      "hash": "3b09a9df8f34708d050d7ce4fa2a60bf9b2574e501c31c2cb7d9acd11e4f6404"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/kernel/kiomaxpacketsize.json": {
+      "etag": "\"10b1-659023505a1ce-df\"",
+      "file_path": "documentation/kernel/kiomaxpacketsize.md",
+      "hash": "cb1bb81e15b18dff0073c10a2cb7136da67a17c31fc07820eeba06eb9c3e04ed"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/kernel/kiomaxtransferunit.json": {
+      "etag": "\"1083-65902356bd51e-df\"",
+      "file_path": "documentation/kernel/kiomaxtransferunit.md",
+      "hash": "53bacfd1a4f6d989d20d3616fc0343ec3abfecf18b6b07ca53f71c696ad81c0b"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/kernel/kiomediaaddresslength.json": {
+      "etag": "\"1087-659023375f92c-df\"",
+      "file_path": "documentation/kernel/kiomediaaddresslength.md",
+      "hash": "b1c1f982943754c978e0f0d5489095000ef1c4a030176f3eb771a5e87362dd9e"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/kernel/kiomediaclass.json": {
+      "etag": "\"e09-659023409cef8-df\"",
+      "file_path": "documentation/kernel/kiomediaclass.md",
+      "hash": "546e74b183fe17f2cb38625c1a90da70462eda2c5bf53a51dc4fe53f60bfec3c"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/kernel/kiomediacontenthintkey.json": {
+      "etag": "\"1121-65902348ae4ea-df\"",
+      "file_path": "documentation/kernel/kiomediacontenthintkey.md",
+      "hash": "9a0269ccf6cdb883ddffc8f0db2c0bf5c558cc276a13363f2603153a9c8caf5c"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/kernel/kiomediacontentkey.json": {
+      "etag": "\"1188-6590235d28340-df\"",
+      "file_path": "documentation/kernel/kiomediacontentkey.md",
+      "hash": "2f090783065324b650ba0d0c540f6b22ae887b312a620948df96de7ad3a5d05b"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/kernel/kiomediacontentmaskkey.json": {
+      "etag": "\"10f8-6590234729741-df\"",
+      "file_path": "documentation/kernel/kiomediacontentmaskkey.md",
+      "hash": "e2fc5fc2bd607a9c22ccd1cd55c43c7495120b4f6335f6e35258c1ad32b5325d"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/kernel/kiomediaejectablekey.json": {
+      "etag": "\"1062-6590233c779e5-df\"",
+      "file_path": "documentation/kernel/kiomediaejectablekey.md",
+      "hash": "844140508be0f8b0c719161d38c25366e801ecd55421536f23b5ab6fc9d921d4"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/kernel/kiomediaheaderlength.json": {
+      "etag": "\"1080-6590234fba338-df\"",
+      "file_path": "documentation/kernel/kiomediaheaderlength.md",
+      "hash": "ae829b54e775438f8e93a73b212f40f3369402d53daca0809aa995ca616c91c5"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/kernel/kiomediaiconkey.json": {
+      "etag": "\"1102-659023433e2a2-df\"",
+      "file_path": "documentation/kernel/kiomediaiconkey.md",
+      "hash": "357404a0c0a5dfaffc99f5e581a05342159be3c8c717bbf5673254466f636174"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/kernel/kiomedialeafkey.json": {
+      "etag": "\"1036-659023626acf2-df\"",
+      "file_path": "documentation/kernel/kiomedialeafkey.md",
+      "hash": "193f19955d80220df05430eceefa873096344840e7c0909f879b9762cf4cc790"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/kernel/kiomediaopenkey.json": {
+      "etag": "\"1003-6590236540afe-df\"",
+      "file_path": "documentation/kernel/kiomediaopenkey.md",
+      "hash": "f34d77cc89c33ccafa33f6e46dd1a54b41c4a215944ecf6b680413bdb8adf618"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/kernel/kiomediapreferredblocksizekey.json": {
+      "etag": "\"109a-6590236335ad3-df\"",
+      "file_path": "documentation/kernel/kiomediapreferredblocksizekey.md",
+      "hash": "f6966c741af84db3dfdb9efdfb4a0eb7b96096311adfa8617d024bd7b921f6ba"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/kernel/kiomediaremovablekey.json": {
+      "etag": "\"1024-6590236be622b-df\"",
+      "file_path": "documentation/kernel/kiomediaremovablekey.md",
+      "hash": "c1fdb42a6504bc81dfcfc616b6ad433e73b7ef08e9c64555054a714fde7fdd00"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/kernel/kiomediasizekey.json": {
+      "etag": "\"ff4-65902355c2d66-df\"",
+      "file_path": "documentation/kernel/kiomediasizekey.md",
+      "hash": "4823ab122172625b300b23578f85d1b1af1de4c4e29032bcddf6793f9ec98a6c"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/kernel/kiomediauuidkey.json": {
+      "etag": "\"1026-65902358421e4-df\"",
+      "file_path": "documentation/kernel/kiomediauuidkey.md",
+      "hash": "670b96801c17acd21e5658d37f2a7a0fa84607d44891803ea5297d32e1151988"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/kernel/kiomediawholekey.json": {
+      "etag": "\"1048-6590234c4faf7-df\"",
+      "file_path": "documentation/kernel/kiomediawholekey.md",
+      "hash": "461b88b744b35e898ce5d450e175477f77b38f2aec574694a1f02f1c146324d7"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/kernel/kiomediawritablekey.json": {
+      "etag": "\"1004-65902340078de-df\"",
+      "file_path": "documentation/kernel/kiomediawritablekey.md",
+      "hash": "69090e079ba89a2e7ba4cfe2b1a8f2f01513789f187f3632ab3854fff7ac073f"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/kernel/kiomediumdictionary.json": {
+      "etag": "\"11a4-65902354e9a3f-df\"",
+      "file_path": "documentation/kernel/kiomediumdictionary.md",
+      "hash": "2c14a6853e7e19c64c07c6d8cfaafc69cad6a81b747461e96addce734d31a75b"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/kernel/kiomediumflags.json": {
+      "etag": "\"1043-6590235417e61-df\"",
+      "file_path": "documentation/kernel/kiomediumflags.md",
+      "hash": "fd551333a52c3fb3a0f7b2591922fd3733c8a3e7528f24724525e206faca1f40"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/kernel/kiomediumindex.json": {
+      "etag": "\"1073-6590235f605d5-df\"",
+      "file_path": "documentation/kernel/kiomediumindex.md",
+      "hash": "1794bd6d1d816251b8bbffc3bdfef540976ece670b4d482ee63f7102c0cb5cc4"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/kernel/kiomediumspeed.json": {
+      "etag": "\"105a-6590233851a73-df\"",
+      "file_path": "documentation/kernel/kiomediumspeed.md",
+      "hash": "7add2957fd294be0249bc6750fc5eef5242690aa139bfbb0a99ece32f9cabed4"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/kernel/kiomediumtype.json": {
+      "etag": "\"1041-659023611afeb-df\"",
+      "file_path": "documentation/kernel/kiomediumtype.md",
+      "hash": "a9aea950ff8a3782841cb8a994c4beb7e044364e3db00f6ee6ff95445f093670"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/kernel/kiominpacketsize.json": {
+      "etag": "\"10b1-65902363d48e9-df\"",
+      "file_path": "documentation/kernel/kiominpacketsize.md",
+      "hash": "71a3c3f4891616f2174d2942a2f4729e21fc30d289297be9cffea67d6361520c"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/kernel/kiomodel.json": {
+      "etag": "\"1071-65902348ae4ea-df\"",
+      "file_path": "documentation/kernel/kiomodel.md",
+      "hash": "380a919c31a9d27d98c1346930d82735f7ea8d8fa97e5ebf9bca247ac383a91b"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/kernel/kionetworkcontrollerclass.json": {
+      "etag": "\"ebd-65902363b4cff-df\"",
+      "file_path": "documentation/kernel/kionetworkcontrollerclass.md",
+      "hash": "b1e2c2cc8d4143aa103e9709d3ca38509e53c6684b22997626441b45c9706a36"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/kernel/kionetworkdata.json": {
+      "etag": "\"1113-659023689c0d2-df\"",
+      "file_path": "documentation/kernel/kionetworkdata.md",
+      "hash": "81231cdcd643a7bf457d8fb290485beb52af1da7b4eaaf2fc3ae1fbe07dca26a"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/kernel/kionetworkfiltergroup.json": {
+      "etag": "\"eb6-6590235fdf518-df\"",
+      "file_path": "documentation/kernel/kionetworkfiltergroup.md",
+      "hash": "9dfa0bdaf63f4dd62abad756a450da80b5136e99e7602ae097feff48298969ae"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/kernel/kionetworkinterfaceclass.json": {
+      "etag": "\"eae-6590234ba8528-df\"",
+      "file_path": "documentation/kernel/kionetworkinterfaceclass.md",
+      "hash": "ccb3653f97ba36e0ca2b6e2f5fa1fe3ac6f0853e95c54c901cd0bb84ed0ae69a"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/kernel/kionetworkstatskey.json": {
+      "etag": "\"fb9-6590236315ec9-df\"",
+      "file_path": "documentation/kernel/kionetworkstatskey.md",
+      "hash": "a4d795aaea4fd0fa3703296a8189fc6b6c7d5d552919e4157403fc48c6d4ab61"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/kernel/kiooutputqueuestatskey.json": {
+      "etag": "\"fd1-6590234becb25-df\"",
+      "file_path": "documentation/kernel/kiooutputqueuestatskey.md",
+      "hash": "8e3d855df93225b83519251b7203bcdd7336139eeb6d0809200202493a665255"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/kernel/kiopacketfilters.json": {
+      "etag": "\"115c-6590235ce990d-df\"",
+      "file_path": "documentation/kernel/kiopacketfilters.md",
+      "hash": "59f498a24d7f2169f3bcf39cd69efb52c29e6d767599ed1b0125d6eb475d239c"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/kernel/kiopmmessagedarkwakethermalemergency.json": {
+      "etag": "\"1017-6590234709b6d-df\"",
+      "file_path": "documentation/kernel/kiopmmessagedarkwakethermalemergency.md",
+      "hash": "f969f06514656ba1aff98c7d1fae45f41b8de1f6baa347605fd2d2d26cf768ac"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/kernel/kiopmmessagedriverassertionschanged.json": {
+      "etag": "\"fc6-6590233a83b09-df\"",
+      "file_path": "documentation/kernel/kiopmmessagedriverassertionschanged.md",
+      "hash": "0f98e73d50ba72f9c81efd2c6205b74c61833d86091a03e666261ecf8fd21902"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/kernel/kioprimaryinterface.json": {
+      "etag": "\"109f-6590234d433cd-df\"",
+      "file_path": "documentation/kernel/kioprimaryinterface.md",
+      "hash": "2707ab5e0b0f824d2962cbf55072873d55d1f4722ac9c3b250f100f22dc8a1f0"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/kernel/kiopropertyexternalkey.json": {
+      "etag": "\"156e-65902360b392f-df\"",
+      "file_path": "documentation/kernel/kiopropertyexternalkey.md",
+      "hash": "6ecda059d2741dc8c089a26ebad23071ac52754e464d370b948c44e785bff910"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/kernel/kiopropertyfibrechanneladdressidentifierkey.json": {
+      "etag": "\"1dcf-65902364a5177-df\"",
+      "file_path": "documentation/kernel/kiopropertyfibrechanneladdressidentifierkey.md",
+      "hash": "0e17a4c407298b066190204b2317f59c8dd93f963523ff021bb83f0db79957ca"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/kernel/kiopropertyfibrechannelalpakey.json": {
+      "etag": "\"1cd6-65902338d3f7f-df\"",
+      "file_path": "documentation/kernel/kiopropertyfibrechannelalpakey.md",
+      "hash": "5671306593bc29ab8604f07da0769a8391608ff40bd0ed4844f481c39607291d"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/kernel/kiopropertyfibrechannelcabledescriptioncopperkey.json": {
+      "etag": "\"17cd-65902344f9c23-df\"",
+      "file_path": "documentation/kernel/kiopropertyfibrechannelcabledescriptioncopperkey.md",
+      "hash": "5606d28ece54f3f699a760cc8daa320858caa701a68a1624616a69b5fde7de4d"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/kernel/kiopropertyfibrechannelcabledescriptionfiberoptickey.json": {
+      "etag": "\"1800-65902360943e5-df\"",
+      "file_path": "documentation/kernel/kiopropertyfibrechannelcabledescriptionfiberoptickey.md",
+      "hash": "97a1ecd794c9fc4aa58da18ebb844ab5ebf7b66f55af0f4a8d73c088da63ca2a"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/kernel/kiopropertyfibrechannelcabledescriptionkey.json": {
+      "etag": "\"17ae-6590233cdc379-df\"",
+      "file_path": "documentation/kernel/kiopropertyfibrechannelcabledescriptionkey.md",
+      "hash": "3ed57f05ed145b6b013d9466be1f8885fe81eab3ab3c7fdfbf793bb8c1577663"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/kernel/kiopropertyfibrechannelnodeworldwidenamekey.json": {
+      "etag": "\"1cc8-6590233d358c0-df\"",
+      "file_path": "documentation/kernel/kiopropertyfibrechannelnodeworldwidenamekey.md",
+      "hash": "a715b5615be501c31c42691e45e3ea556e4a3dff9a8acf0b5658fd92d7ba1bcc"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/kernel/kiopropertyfibrechannelportworldwidenamekey.json": {
+      "etag": "\"1c84-65902360fa411-df\"",
+      "file_path": "documentation/kernel/kiopropertyfibrechannelportworldwidenamekey.md",
+      "hash": "f3181b7ac683986a8500514a392c16714754386bdcb2e5d1250a2336b4cff9bc"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/kernel/kiopropertyhisup.json": {
+      "etag": "\"1021-659023586120a-df\"",
+      "file_path": "documentation/kernel/kiopropertyhisup.md",
+      "hash": "3c3cb333a43e8dfbd7feb0a38b4c88dbceaeeb8483308199a4e0a3abedf5da41"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/kernel/kiopropertyinterconnectfilekey.json": {
+      "etag": "\"16c6-6590235295e29-df\"",
+      "file_path": "documentation/kernel/kiopropertyinterconnectfilekey.md",
+      "hash": "866f5590b7ee700300b12670bf4415751cd33c1247bbea3d52470fa46b3a463b"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/kernel/kiopropertyinterconnectramkey.json": {
+      "etag": "\"16c3-65902342f8213-df\"",
+      "file_path": "documentation/kernel/kiopropertyinterconnectramkey.md",
+      "hash": "3c5674f7bae08c940ebd7eaab69ba35eac0787a11b24623770fe8992d01fae4a"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/kernel/kiopropertyinternalexternalkey.json": {
+      "etag": "\"15f1-65902367d728b-df\"",
+      "file_path": "documentation/kernel/kiopropertyinternalexternalkey.md",
+      "hash": "b1bf74bddbea5fe445fe491147c7d38630bcaba6a5cc865834a6e70e9bbeed84"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/kernel/kiopropertyinternalkey.json": {
+      "etag": "\"155a-6590236182783-df\"",
+      "file_path": "documentation/kernel/kiopropertyinternalkey.md",
+      "hash": "a597f56a678da5f7f940a5fb84239916e41ff277b5aa6ab70c0616d06894b501"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/kernel/kiopropertyphysicalinterconnectlocationkey.json": {
+      "etag": "\"166e-6590235a829e1-df\"",
+      "file_path": "documentation/kernel/kiopropertyphysicalinterconnectlocationkey.md",
+      "hash": "4aeba16bf3afb4d1c443ff0c55a0a7c471c3f0bc50e76480906ccb4406e69415"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/kernel/kiopropertyphysicalinterconnecttypeata.json": {
+      "etag": "\"15cc-6590234aa88ea-df\"",
+      "file_path": "documentation/kernel/kiopropertyphysicalinterconnecttypeata.md",
+      "hash": "348f70b127a0449a5bac2d554473f8de790f3e423b8edfebf2412b9408f60fb5"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/kernel/kiopropertyphysicalinterconnecttypeatapi.json": {
+      "etag": "\"160c-6590236cdb50c-df\"",
+      "file_path": "documentation/kernel/kiopropertyphysicalinterconnecttypeatapi.md",
+      "hash": "3ce6cd8145ece183ebe3d352150ba88a94bdea5a78f09f1a41e073c37010d241"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/kernel/kiopropertyphysicalinterconnecttypefibrechannel.json": {
+      "etag": "\"1646-6590235ce990d-df\"",
+      "file_path": "documentation/kernel/kiopropertyphysicalinterconnecttypefibrechannel.md",
+      "hash": "6b1abba00c6a05d13c2d9fd27b040f7a69aa9e0ff57f2a5071f4211d3ad79230"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/kernel/kiopropertyphysicalinterconnecttypefirewire.json": {
+      "etag": "\"15fe-65902340078de-df\"",
+      "file_path": "documentation/kernel/kiopropertyphysicalinterconnecttypefirewire.md",
+      "hash": "03f3489b21183a8d2b627e37224765ed69cbe24fb58f239745bb00de5edce685"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/kernel/kiopropertyphysicalinterconnecttypekey.json": {
+      "etag": "\"1663-6590236a9a74b-df\"",
+      "file_path": "documentation/kernel/kiopropertyphysicalinterconnecttypekey.md",
+      "hash": "6fe927e14ccd17d13b95616d37499b75941c846921200a20ced3d6ff73f7a4e7"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/kernel/kiopropertyphysicalinterconnecttypescsiparallel.json": {
+      "etag": "\"1646-6590236d3c815-df\"",
+      "file_path": "documentation/kernel/kiopropertyphysicalinterconnecttypescsiparallel.md",
+      "hash": "cbf953c9910017a36d19f516c8809c474086212a0b9c6491750bf08571f498c9"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/kernel/kiopropertyphysicalinterconnecttypesecuredigital.json": {
+      "etag": "\"16a7-6590235f8213d-df\"",
+      "file_path": "documentation/kernel/kiopropertyphysicalinterconnecttypesecuredigital.md",
+      "hash": "d1b46deab3d4810e1482c497c0fcd5b2241567586992cce03a6bdc77d6e26917"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/kernel/kiopropertyphysicalinterconnecttypeserialata.json": {
+      "etag": "\"15fe-6590234c70ebf-df\"",
+      "file_path": "documentation/kernel/kiopropertyphysicalinterconnecttypeserialata.md",
+      "hash": "413dc6da11c26fd6c2a675329fc0d61ae97d08a5d71f6091509c960de11777f2"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/kernel/kiopropertyphysicalinterconnecttypeserialattachedscsi.json": {
+      "etag": "\"1643-6590235d63d34-df\"",
+      "file_path": "documentation/kernel/kiopropertyphysicalinterconnecttypeserialattachedscsi.md",
+      "hash": "7d218ddb01a4264b7dc5428ad97329ae6c161968e0c9c5b3b2d7ca7a7ac77d8a"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/kernel/kiopropertyphysicalinterconnecttypeusb.json": {
+      "etag": "\"15cc-65902365cd762-df\"",
+      "file_path": "documentation/kernel/kiopropertyphysicalinterconnecttypeusb.md",
+      "hash": "07c7fa1662a2444c0c23129d0ccf6c8f435ec9de993afb862ab3f9c74d474a53"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/kernel/kiopropertyphysicalinterconnecttypevirtual.json": {
+      "etag": "\"164e-6590236d89c91-df\"",
+      "file_path": "documentation/kernel/kiopropertyphysicalinterconnecttypevirtual.md",
+      "hash": "c3bce60f4f82d1c16389005387fe7318f749a89173441933c768929396b5156f"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/kernel/kiopropertyportdescriptionkey.json": {
+      "etag": "\"16e8-6590233494be5-df\"",
+      "file_path": "documentation/kernel/kiopropertyportdescriptionkey.md",
+      "hash": "4a851884e7c1a68e876f4498997ad9673f896ede568985dc239952867e4581cc"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/kernel/kiopropertyportspeed10gigabitkey.json": {
+      "etag": "\"186f-6590234428c50-df\"",
+      "file_path": "documentation/kernel/kiopropertyportspeed10gigabitkey.md",
+      "hash": "94c802e1f2576818762a94cefb7932283c07abd4c49f5573d6f4efd3c4de18d8"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/kernel/kiopropertyportspeed12gigabitkey.json": {
+      "etag": "\"1885-659023492a6d7-df\"",
+      "file_path": "documentation/kernel/kiopropertyportspeed12gigabitkey.md",
+      "hash": "3686ae769e0e72bed157694b358b1101af33e31ed83113a4d8bcef425670e91d"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/kernel/kiopropertyportspeed16gigabitkey.json": {
+      "etag": "\"1885-6590233954654-df\"",
+      "file_path": "documentation/kernel/kiopropertyportspeed16gigabitkey.md",
+      "hash": "5e9f44936373e72a76016d891f4b21d3d5c56ebdeca66302415a0556eab8f061"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/kernel/kiopropertyportspeed1_5gigabitkey.json": {
+      "etag": "\"187b-6590235bb9503-df\"",
+      "file_path": "documentation/kernel/kiopropertyportspeed1_5gigabitkey.md",
+      "hash": "028dd85c7168dec0bc2371f95dac3cbf9e3d1754c33b36eaa4bcec94ab680334"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/kernel/kiopropertyportspeed1gigabitkey.json": {
+      "etag": "\"1862-6590233a13f75-df\"",
+      "file_path": "documentation/kernel/kiopropertyportspeed1gigabitkey.md",
+      "hash": "3fcdd328399d97d15a61352122abccc7784dc2c915eb4e286e4b91534ecee10a"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/kernel/kiopropertyportspeed2gigabitkey.json": {
+      "etag": "\"1863-6590234b7e7e6-df\"",
+      "file_path": "documentation/kernel/kiopropertyportspeed2gigabitkey.md",
+      "hash": "bfd2cf62c274e189467745fc45d9028abc63dfbd9d5b7ad96b7169461989d294"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/kernel/kiopropertyportspeed3gigabitkey.json": {
+      "etag": "\"1863-6590234d433cd-df\"",
+      "file_path": "documentation/kernel/kiopropertyportspeed3gigabitkey.md",
+      "hash": "9e8a8b53d04882f287dd4feb108b97a192825eb744f6c9c23e8a08402347f977"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/kernel/kiopropertyportspeed40gigabitkey.json": {
+      "etag": "\"1885-65902362c92ad-df\"",
+      "file_path": "documentation/kernel/kiopropertyportspeed40gigabitkey.md",
+      "hash": "5a6e83947ecc3f42885bb6f18fcb597b71cda799f1123b09251fdd25d97b73bc"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/kernel/kiopropertyportspeed4gigabitkey.json": {
+      "etag": "\"1863-659023507b33e-df\"",
+      "file_path": "documentation/kernel/kiopropertyportspeed4gigabitkey.md",
+      "hash": "4ae2662e68287d8894deaf59d777fe879910e1bc11782fc6561f1426ca2026b4"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/kernel/kiopropertyportspeed6gigabitkey.json": {
+      "etag": "\"1863-6590233671594-df\"",
+      "file_path": "documentation/kernel/kiopropertyportspeed6gigabitkey.md",
+      "hash": "ebe5ecf1c97082b27fd7cf3fd68babcf87e19d044d32cba91720d3e636079e50"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/kernel/kiopropertyportspeed8gigabitkey.json": {
+      "etag": "\"1863-6590233dd8d60-df\"",
+      "file_path": "documentation/kernel/kiopropertyportspeed8gigabitkey.md",
+      "hash": "f66aba3ab500fe7141f49e24427625b4b81368af075b702768e9d37b70ca333b"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/kernel/kiopropertyportspeedautomatic10gigabitkey.json": {
+      "etag": "\"17f9-6590234bca240-df\"",
+      "file_path": "documentation/kernel/kiopropertyportspeedautomatic10gigabitkey.md",
+      "hash": "4aae7dd203e5a29ee54f5964cb382a8a2b2dc8f23bab083b427177bccfd5d9c6"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/kernel/kiopropertyportspeedautomatic1_5gigabitkey.json": {
+      "etag": "\"1805-659023463ca4b-df\"",
+      "file_path": "documentation/kernel/kiopropertyportspeedautomatic1_5gigabitkey.md",
+      "hash": "bfe1cc1a4bfb07708d8d235bf88b53c7db4b81ea14265540da45bc2a446b4afd"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/kernel/kiopropertyportspeedautomatic1gigabitkey.json": {
+      "etag": "\"17ec-659023607972b-df\"",
+      "file_path": "documentation/kernel/kiopropertyportspeedautomatic1gigabitkey.md",
+      "hash": "c82c9c3ce5bb69ed6b3d551eb377e9dfbe5dd871cc6a0ef5f3da3848c46e8f31"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/kernel/kiopropertyportspeedautomatic2gigabitkey.json": {
+      "etag": "\"17ed-6590236af9aa3-df\"",
+      "file_path": "documentation/kernel/kiopropertyportspeedautomatic2gigabitkey.md",
+      "hash": "42a9b12dfbad232d8dc5367b1aa9a62dfa76cc9588d54c7fbd0357e5c38ea178"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/kernel/kiopropertyportspeedautomatic3gigabitkey.json": {
+      "etag": "\"17ed-65902362a9610-df\"",
+      "file_path": "documentation/kernel/kiopropertyportspeedautomatic3gigabitkey.md",
+      "hash": "a8ae0c1ea20b6d52c70a43ee9a9414350970f744060952e13d04a10e0603555b"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/kernel/kiopropertyportspeedautomatic4gigabitkey.json": {
+      "etag": "\"17ed-65902364d91d2-df\"",
+      "file_path": "documentation/kernel/kiopropertyportspeedautomatic4gigabitkey.md",
+      "hash": "e14aba89bc45888cb73c843657cad2bc96870c1937503b6fe45c647000734d35"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/kernel/kiopropertyportspeedautomatic6gigabitkey.json": {
+      "etag": "\"17ed-6590235d0db8a-df\"",
+      "file_path": "documentation/kernel/kiopropertyportspeedautomatic6gigabitkey.md",
+      "hash": "5a57e356b7cdf3f7e5326c5fe7cf56c95da5893d43bd5cdc8b68d196aa9ea2aa"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/kernel/kiopropertyportspeedautomatic8gigabitkey.json": {
+      "etag": "\"17ed-659023558b5f7-df\"",
+      "file_path": "documentation/kernel/kiopropertyportspeedautomatic8gigabitkey.md",
+      "hash": "ec9a774c9cc132f7627595051f6bfe94686039fb5535596e7dbca5dc4f54e741"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/kernel/kiopropertyportspeedautomatickey.json": {
+      "etag": "\"1843-6590235e8a925-df\"",
+      "file_path": "documentation/kernel/kiopropertyportspeedautomatickey.md",
+      "hash": "895e7581c2521935bb7b255b5947cda80e26dbff842b4e73efb93167c154d8bc"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/kernel/kiopropertyportspeedkey.json": {
+      "etag": "\"179c-65902339e4bbd-df\"",
+      "file_path": "documentation/kernel/kiopropertyportspeedkey.md",
+      "hash": "491807f27b3434a032fa77206cbc9bd4ff4972cf4caef9b837ee872faab300b9"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/kernel/kiopropertyportstatuskey.json": {
+      "etag": "\"17f5-659023519a90e-df\"",
+      "file_path": "documentation/kernel/kiopropertyportstatuskey.md",
+      "hash": "c2ddc905863b4f284ab57bc596314547d37f264c8bb85b46d8a559851b72ec95"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/kernel/kiopropertyportstatuslinkestablishedkey.json": {
+      "etag": "\"164c-6590233a37e3b-df\"",
+      "file_path": "documentation/kernel/kiopropertyportstatuslinkestablishedkey.md",
+      "hash": "8a8499d79641126d11f509f2c37b950adfa34bb868e1ccec2bd552b7680369ac"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/kernel/kiopropertyportstatuslinkfailedkey.json": {
+      "etag": "\"1616-65902357dd6a7-df\"",
+      "file_path": "documentation/kernel/kiopropertyportstatuslinkfailedkey.md",
+      "hash": "608163aa9b253bde512a0e8e67eac480c2b39f3ab702129eb96bb94cec93b0d2"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/kernel/kiopropertyportstatusnolinkestablishedkey.json": {
+      "etag": "\"1665-6590236353f08-df\"",
+      "file_path": "documentation/kernel/kiopropertyportstatusnolinkestablishedkey.md",
+      "hash": "d3499376f09e28a6f083d8e87d00a3c2ee6090c82ca2d6985c57803c5d1f6afa"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/kernel/kiopropertyporttopologyautomatickey.json": {
+      "etag": "\"186a-6590235aa2ada-df\"",
+      "file_path": "documentation/kernel/kiopropertyporttopologyautomatickey.md",
+      "hash": "bf9e2e9815c919f5d01fb2d5cedcaea1aabcc83824398e283242556c3716a951"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/kernel/kiopropertyporttopologyautomaticnlportkey.json": {
+      "etag": "\"189c-6590236c04f5a-df\"",
+      "file_path": "documentation/kernel/kiopropertyporttopologyautomaticnlportkey.md",
+      "hash": "5e1ac68ff224a3f48335de576d0fc900d4961567aa4455ec1f9a331df79d9fc5"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/kernel/kiopropertyporttopologyautomaticnportkey.json": {
+      "etag": "\"1890-6590234cfa637-df\"",
+      "file_path": "documentation/kernel/kiopropertyporttopologyautomaticnportkey.md",
+      "hash": "a3a0dc42465e201a8ab6958a20a8ce00b1c4bcc344372564736f1f56985a49d8"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/kernel/kiopropertyporttopologykey.json": {
+      "etag": "\"17c0-6590235af39c5-df\"",
+      "file_path": "documentation/kernel/kiopropertyporttopologykey.md",
+      "hash": "95476b041d10a6c66a22c43a144816e83a57480383ba936a5ee0a37124e6530b"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/kernel/kiopropertyporttopologynlportkey.json": {
+      "etag": "\"1805-659023556ab73-df\"",
+      "file_path": "documentation/kernel/kiopropertyporttopologynlportkey.md",
+      "hash": "d70841e111a7e4f80658d33bec3efbb19eea578c88f95ba334b578db231a1e39"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/kernel/kiopropertyporttopologynportkey.json": {
+      "etag": "\"17f9-6590233ba94cf-df\"",
+      "file_path": "documentation/kernel/kiopropertyporttopologynportkey.md",
+      "hash": "e0af2b4edc4e5db5650c472f0635beba4d4d47b45afe920cabf1ab2e06191a72"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/kernel/kiopropertyprotocolcharacteristicskey.json": {
+      "etag": "\"1690-6590234e7ca01-df\"",
+      "file_path": "documentation/kernel/kiopropertyprotocolcharacteristicskey.md",
+      "hash": "cd1608c1e266dff4b79c8f5ffa256be9ffb700c056e3954b2b8ae9f6f896ad63"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/kernel/kiopropertysasaddresskey.json": {
+      "etag": "\"1ba6-6590236b47f19-df\"",
+      "file_path": "documentation/kernel/kiopropertysasaddresskey.md",
+      "hash": "7f2606f2e2911a2bdad4c7d07793d6127721d11351e621bbb7bf0530db140932"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/kernel/kiopropertysatproductidentification.json": {
+      "etag": "\"106b-659023532b3e5-df\"",
+      "file_path": "documentation/kernel/kiopropertysatproductidentification.md",
+      "hash": "cf01d18038512fb2ba8eccb6f9baa97583ef8e8502b72d56cb3fa2c4e195ced8"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/kernel/kiopropertysatproductrevisonlevel.json": {
+      "etag": "\"1061-65902350c38f2-df\"",
+      "file_path": "documentation/kernel/kiopropertysatproductrevisonlevel.md",
+      "hash": "07ebb80764cde3307fe8862b504de593e1d9199f24cb1a3882d49b9a9465159f"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/kernel/kiopropertysatvendoridentification.json": {
+      "etag": "\"1065-6590235f8213d-df\"",
+      "file_path": "documentation/kernel/kiopropertysatvendoridentification.md",
+      "hash": "85e8791431c57a84b18a93ec2a65b2de991d73a137dbcaae18a2d004923492d2"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/kernel/kiopropertyscsidomainidentifierkey.json": {
+      "etag": "\"177c-6590236dab17f-df\"",
+      "file_path": "documentation/kernel/kiopropertyscsidomainidentifierkey.md",
+      "hash": "fe625302a09f30216bd2a3af1fefc124a4352ebd056e51c4aa0a207c5686954d"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/kernel/kiopropertyscsiinitiatoridentifierkey.json": {
+      "etag": "\"16fa-6590234f96401-df\"",
+      "file_path": "documentation/kernel/kiopropertyscsiinitiatoridentifierkey.md",
+      "hash": "95038ef9ae140fe9cb7caf958c260eab44b7012362c958633c7b9b9fa8936085"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/kernel/kiopropertyscsiinquirydeviceidassociation.json": {
+      "etag": "\"1076-6590236160490-df\"",
+      "file_path": "documentation/kernel/kiopropertyscsiinquirydeviceidassociation.md",
+      "hash": "bcb15ba3c4cfa2a3e1239212160e3403c7cc17c59b303700d4c97f3728e8e453"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/kernel/kiopropertyscsiinquirydeviceidcodeset.json": {
+      "etag": "\"1064-65902365ed9a6-df\"",
+      "file_path": "documentation/kernel/kiopropertyscsiinquirydeviceidcodeset.md",
+      "hash": "37929ec7c20c4841d15549eb668c99059d0f23dc7fa8eee2050f769a2ff779ae"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/kernel/kiopropertyscsiinquirydeviceidentification.json": {
+      "etag": "\"1085-6590235ed89cd-df\"",
+      "file_path": "documentation/kernel/kiopropertyscsiinquirydeviceidentification.md",
+      "hash": "dffcede131ef5835387936382ae0c5e0ea576ee40376a70998da74e64edffb97"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/kernel/kiopropertyscsiinquirydeviceidentifier.json": {
+      "etag": "\"1077-65902360fa411-df\"",
+      "file_path": "documentation/kernel/kiopropertyscsiinquirydeviceidentifier.md",
+      "hash": "9bea6abdde2fc39c5e922439988cef6dc93c0c4f962730756de45acef4ae50ee"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/kernel/kiopropertyscsiinquirydeviceidtype.json": {
+      "etag": "\"1057-6590234428c50-df\"",
+      "file_path": "documentation/kernel/kiopropertyscsiinquirydeviceidtype.md",
+      "hash": "91820c473503f8021f9aa3dde1b1488f47122c4fdcd885dd64dca6ff5205e7d5"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/kernel/kiopropertyscsiinquiryunitserialnumber.json": {
+      "etag": "\"109b-6590236765dfb-df\"",
+      "file_path": "documentation/kernel/kiopropertyscsiinquiryunitserialnumber.md",
+      "hash": "1f5cc91faa66c28ea8beb34619a1804e64133ec2801a2fc9bd71136af6fb1856"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/kernel/kiopropertyscsilogicalunitnumberkey.json": {
+      "etag": "\"16ef-6590234d86f8a-df\"",
+      "file_path": "documentation/kernel/kiopropertyscsilogicalunitnumberkey.md",
+      "hash": "412291e67e55d528ff6b3e7ff53905783fa466d47d2b8c8fb08a1b3bdf05712f"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/kernel/kiopropertyscsiparallelsignalingtypehvdkey.json": {
+      "etag": "\"17e2-65902339834ad-df\"",
+      "file_path": "documentation/kernel/kiopropertyscsiparallelsignalingtypehvdkey.md",
+      "hash": "ed0d535ced048dd30c164bc8f8581d28252ba84d22ed383213f836bfb98a9885"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/kernel/kiopropertyscsiparallelsignalingtypekey.json": {
+      "etag": "\"17dc-6590236d3c815-df\"",
+      "file_path": "documentation/kernel/kiopropertyscsiparallelsignalingtypekey.md",
+      "hash": "3d5566a616850753349c09377eb0a118f2ae977bc9c80847bf2768c8c1fbb797"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/kernel/kiopropertyscsiparallelsignalingtypelvdkey.json": {
+      "etag": "\"17df-6590235fa227a-df\"",
+      "file_path": "documentation/kernel/kiopropertyscsiparallelsignalingtypelvdkey.md",
+      "hash": "f2c20afe031847e2c858e23f18911493d4cf41e04d823d5ec7d9e58d67b93d4e"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/kernel/kiopropertyscsiparallelsignalingtypesekey.json": {
+      "etag": "\"17b2-659023602597c-df\"",
+      "file_path": "documentation/kernel/kiopropertyscsiparallelsignalingtypesekey.md",
+      "hash": "816e043ed8dd51b1880f2fc91b144018a39130a604de4a5fdc9a486e2345a6a5"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/kernel/kiopropertyscsiperipheraldevicetype.json": {
+      "etag": "\"1083-65902358d6337-df\"",
+      "file_path": "documentation/kernel/kiopropertyscsiperipheraldevicetype.md",
+      "hash": "0ab3820695a0dfa597b000e6e285792f90de54ef0be5d31e0421d9c34819e378"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/kernel/kiopropertyscsiperipheraldevicetypesize.json": {
+      "etag": "\"108f-6590234aa88ea-df\"",
+      "file_path": "documentation/kernel/kiopropertyscsiperipheraldevicetypesize.md",
+      "hash": "de2242543bf7f8f1501a7d724782ef16c377eea6a3992ae45526ecc1bb77edee"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/kernel/kiopropertyscsiportidentifierkey.json": {
+      "etag": "\"1dde-6590234a6ee66-df\"",
+      "file_path": "documentation/kernel/kiopropertyscsiportidentifierkey.md",
+      "hash": "3305e3ffc39551ff82a7ef50e416cc2494cc60770eaeeeb01fe312ed9b7e4662"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/kernel/kiopropertyscsiproductidentification.json": {
+      "etag": "\"10a9-659023437fa49-df\"",
+      "file_path": "documentation/kernel/kiopropertyscsiproductidentification.md",
+      "hash": "6db413275729a7eda3e868efcdb81468a9c844377ca5d5fb9a9372869d67db26"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/kernel/kiopropertyscsiproductrevisionlevel.json": {
+      "etag": "\"107e-6590236315ec9-df\"",
+      "file_path": "documentation/kernel/kiopropertyscsiproductrevisionlevel.md",
+      "hash": "f2c186798c6b2e80765ff5aaf2353a278baaa14f2fb2ece7efcebdfdd1bee7f0"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/kernel/kiopropertyscsiprotocolmultiinitkey.json": {
+      "etag": "\"16dd-659023371d5ec-df\"",
+      "file_path": "documentation/kernel/kiopropertyscsiprotocolmultiinitkey.md",
+      "hash": "f1578aafceefb9071ccc5f944e1d577e4dbd58d582971aba3a3f8128778531b1"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/kernel/kiopropertyscsitargetidentifierkey.json": {
+      "etag": "\"16c9-65902355c2d66-df\"",
+      "file_path": "documentation/kernel/kiopropertyscsitargetidentifierkey.md",
+      "hash": "f3874e0b8716c1e79eaa213b85e1d574d28ebf76af413ed60b390268ce878736"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/kernel/kiopropertyscsivendoridentification.json": {
+      "etag": "\"10a3-65902367be5d7-df\"",
+      "file_path": "documentation/kernel/kiopropertyscsivendoridentification.md",
+      "hash": "a32700439f29c7e3347eded171bd85dc88a940677510d6f07246a654cdbdbb89"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/kernel/kiopropertytpgsinfo.json": {
+      "etag": "\"1021-659023660b897-df\"",
+      "file_path": "documentation/kernel/kiopropertytpgsinfo.md",
+      "hash": "24153cfe27bff5061950b872d8081000eb4d725075ed2d0fcc94802f328b4172"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/kernel/kiopropertytpgsinfosize.json": {
+      "etag": "\"102f-65902339e4bbd-df\"",
+      "file_path": "documentation/kernel/kiopropertytpgsinfosize.md",
+      "hash": "fbc7965f8237599cbb2888129ab936785468d004a695ea9f285ed003f2121de3"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/kernel/kiorevision.json": {
+      "etag": "\"108c-6590234561fab-df\"",
+      "file_path": "documentation/kernel/kiorevision.md",
+      "hash": "9ae56665e45820431fb8072994886d7f1cbcbce945b299145850af4dd405969a"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/kernel/kioselectedmedium.json": {
+      "etag": "\"1121-65902347abde8-df\"",
+      "file_path": "documentation/kernel/kioselectedmedium.md",
+      "hash": "b62a18013fb9343f4d0e2013b3aa3622b00e1eed4e34e9be860ba7a52892341c"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/kernel/kiostoragecategory.json": {
+      "etag": "\"11fe-65902347abde8-df\"",
+      "file_path": "documentation/kernel/kiostoragecategory.md",
+      "hash": "4fa091681205f94715491d2663400556663af5dac29570fd3e8c2cd16c9b8bc7"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/kernel/kiostorageclass.json": {
+      "etag": "\"e27-6590233d0d7f9-df\"",
+      "file_path": "documentation/kernel/kiostorageclass.md",
+      "hash": "184f1905b26668eeaaafdccab6143c4588680d50ca6f6eae7595413353d8de7f"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/kernel/kiostoragefeatureforceunitaccess.json": {
+      "etag": "\"10eb-6590235bb9503-df\"",
+      "file_path": "documentation/kernel/kiostoragefeatureforceunitaccess.md",
+      "hash": "0c0318f8299ab9c72d35e1a4eb29ef48f588bf82fb20c2c378fc58657926a8e4"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/kernel/kiostoragefeatureskey.json": {
+      "etag": "\"1104-659023607972b-df\"",
+      "file_path": "documentation/kernel/kiostoragefeatureskey.md",
+      "hash": "0549f89137414db8271db74a846fb14e371a9fb6230518d690e4fa44bd336c64"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/kernel/kiostoragefeatureunmap.json": {
+      "etag": "\"10ab-659023416883c-df\"",
+      "file_path": "documentation/kernel/kiostoragefeatureunmap.md",
+      "hash": "552b625e9e6fb7f507bf68dacabef29f179af5a9218e3933bc508f018778e5d3"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/kernel/kiovendor.json": {
+      "etag": "\"1078-6590235de33d0-df\"",
+      "file_path": "documentation/kernel/kiovendor.md",
+      "hash": "04898d800f0ee773fb165b09a10a75410e00cbe748c75ad6c381f1e8420ab511"
     },
     "https://developer.apple.com/tutorials/data/documentation/kernel/kmaxwaitforvalidselfid.json": {
       "etag": "\"d02-6593d12ef1814-df\"",
@@ -348609,6 +351179,16 @@
       "etag": "\"d59-6593d13f8912a-df\"",
       "file_path": "documentation/kernel/kperf_kpc_flags_t/kpc_user_counting.md",
       "hash": "72379e67990f910f78322975b584538c51f2acafa3a7eb5b1f98abcbfc5c88f1"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/kernel/kreport_capacity_16_maximumlba.json": {
+      "etag": "\"1097-659023505a1ce-df\"",
+      "file_path": "documentation/kernel/kreport_capacity_16_maximumlba.md",
+      "hash": "06bcdd4156a4d7351bc17ef995c20a6af2cc6babb10fdd13afc46f5ddaaf9302"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/kernel/kreport_capacity_maximumlba.json": {
+      "etag": "\"1088-6590236226d4c-df\"",
+      "file_path": "documentation/kernel/kreport_capacity_maximumlba.md",
+      "hash": "70cc5fc19bb4e809e89213979ef818a9b2b6fd6971f13b6b630c551520e4b718"
     },
     "https://developer.apple.com/tutorials/data/documentation/kernel/kuncusernotificationcallback.json": {
       "etag": "\"1009-6593d14892f9f-df\"",
@@ -365630,6 +368210,16 @@
       "file_path": "documentation/kernel/scrollwheeleventcallback.md",
       "hash": "ad973e7220ad875faf529081d154c9e5b27a39827598aa57f2705c328786bdb9"
     },
+    "https://developer.apple.com/tutorials/data/documentation/kernel/scsi_capacity_data.json": {
+      "etag": "\"170f-65902348ccf26-df\"",
+      "file_path": "documentation/kernel/scsi_capacity_data.md",
+      "hash": "7344a8ac895a4486717bc576a6a03e1970b2423cb994ca8dc63b7468201275cd"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/kernel/scsi_capacity_data_long.json": {
+      "etag": "\"1b7d-6590233586ecb-df\"",
+      "file_path": "documentation/kernel/scsi_capacity_data_long.md",
+      "hash": "2074fde1345f7e60f7d6af7a994bfffc6f889f925dfb1d1f2aef3c90ddd068ad"
+    },
     "https://developer.apple.com/tutorials/data/documentation/kernel/scsi_sense_data.json": {
       "etag": "\"108e9-6593d1389ca9b-df\"",
       "file_path": "documentation/kernel/scsi_sense_data.md",
@@ -365725,6 +368315,11 @@
       "file_path": "documentation/kernel/scsi_sense_data/api-1410625-information_4.md",
       "hash": "04613e98aa8996b694d7ef7e8d6c497535cd116e8a7c3670981e4b660c7b5fc5"
     },
+    "https://developer.apple.com/tutorials/data/documentation/kernel/scsicmd_inquiry_page00_header.json": {
+      "etag": "\"1b75-6590235bfe093-df\"",
+      "file_path": "documentation/kernel/scsicmd_inquiry_page00_header.md",
+      "hash": "8caf2efa8516ec34eefdc2243f6b9de458dafd22c71763156a6c8ccd0958f6de"
+    },
     "https://developer.apple.com/tutorials/data/documentation/kernel/scsicmd_inquiry_page00_header_spc_16.json": {
       "etag": "\"beea-6593d12bdd2b8-df\"",
       "file_path": "documentation/kernel/scsicmd_inquiry_page00_header_spc_16.md",
@@ -365744,6 +368339,11 @@
       "etag": "\"10e2-6593d1460844d-df\"",
       "file_path": "documentation/kernel/scsicmd_inquiry_page00_header_spc_16/api-1429350-peripheral_device_type.md",
       "hash": "94f6cb0f69c90be22897da24293019600b0d3d9d2aef7e700eaf61e462da5bf7"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/kernel/scsicmd_inquiry_page80_header.json": {
+      "etag": "\"1dc4-659023435d9ac-df\"",
+      "file_path": "documentation/kernel/scsicmd_inquiry_page80_header.md",
+      "hash": "6fd8477d4b9e9ddf6049db616c52fa172f48633cf14b637d914183d70f847c77"
     },
     "https://developer.apple.com/tutorials/data/documentation/kernel/scsicmd_inquiry_page80_header_spc_16.json": {
       "etag": "\"c155-6593d11e77ce2-df\"",
@@ -365769,6 +368369,46 @@
       "etag": "\"10dd-6593d147ae589-df\"",
       "file_path": "documentation/kernel/scsicmd_inquiry_page80_header_spc_16/api-1429407-product_serial_number.md",
       "hash": "611725b681c1a891367360216cd75c6a01efdea63fdca04afca8599179b2f94a"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/kernel/scsicmd_inquiry_page83_header.json": {
+      "etag": "\"1b75-65902347abde8-df\"",
+      "file_path": "documentation/kernel/scsicmd_inquiry_page83_header.md",
+      "hash": "9b4892e11b969b99b272ba706622b39753c149213e029a9506276735427ffa7b"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/kernel/scsicmd_inquiry_page83_header_spc_16.json": {
+      "etag": "\"1a35-65902342862cd-df\"",
+      "file_path": "documentation/kernel/scsicmd_inquiry_page83_header_spc_16.md",
+      "hash": "d7f02f5859197af52b714726e3aa1aa140aa96652051a3d9bc1825c8cec23c9c"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/kernel/scsicmd_inquiry_page83_identification_descriptor.json": {
+      "etag": "\"1ff6-659023685e9c9-df\"",
+      "file_path": "documentation/kernel/scsicmd_inquiry_page83_identification_descriptor.md",
+      "hash": "7584e821b3815912110b2944cf3cdd24b89fe73281337c5e4ab38c2817563bfc"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/kernel/scsicmd_inquiry_page83_logicalunitgroup_identifier.json": {
+      "etag": "\"18ec-6590234c8bfe0-df\"",
+      "file_path": "documentation/kernel/scsicmd_inquiry_page83_logicalunitgroup_identifier.md",
+      "hash": "88f967b5f32cb8921ff2fe8ef9ae26d4d72c1a2564a9f7995941cc84c86c9c3a"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/kernel/scsicmd_inquiry_page83_relativetargetport_identifier.json": {
+      "etag": "\"1957-659023680ee0b-df\"",
+      "file_path": "documentation/kernel/scsicmd_inquiry_page83_relativetargetport_identifier.md",
+      "hash": "25851268653f2d0abf495702beab60aa0bbd7dbc50b35499449e3b2da6b733ea"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/kernel/scsicmd_inquiry_page83_relativetargetport_identifier/1429417-relative_target_port_identifier.json": {
+      "etag": "\"1621-65902341d6bc2-df\"",
+      "file_path": "documentation/kernel/scsicmd_inquiry_page83_relativetargetport_identifier/api-1429417-relative_target_port_identifier.md",
+      "hash": "bfa60555e7d6cad5172b7820145280d454ac9fa25582b4f2d2d16f9b8cbabb67"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/kernel/scsicmd_inquiry_page83_targetportgroup_identifier.json": {
+      "etag": "\"18d2-6590235fdf518-df\"",
+      "file_path": "documentation/kernel/scsicmd_inquiry_page83_targetportgroup_identifier.md",
+      "hash": "7a7782212c8d8f67b5bf2db6718e244aaddd5fb725f8820cfe77153dfc3911a9"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/kernel/scsicmd_inquiry_page89_data.json": {
+      "etag": "\"2b97-65902364d91d2-df\"",
+      "file_path": "documentation/kernel/scsicmd_inquiry_page89_data.md",
+      "hash": "d16a7293ed929d73e577ce986edca8a55d781e455b3b5925c4a473df722b7e26"
     },
     "https://developer.apple.com/tutorials/data/documentation/kernel/scsicmd_inquiry_pageb0_data.json": {
       "etag": "\"e40a-6593d1544efda-df\"",
@@ -365869,6 +368509,16 @@
       "etag": "\"1692-6593d11aada2c-df\"",
       "file_path": "documentation/kernel/scsicmd_inquiry_pageb0_data/api-1778245-atomic_alignment.md",
       "hash": "7256f03c61c771731156b988c75b4ec4f32348ec8a24500ebef15d5a6a3343c4"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/kernel/scsicmd_inquiry_pageb1_data.json": {
+      "etag": "\"204c-659023602597c-df\"",
+      "file_path": "documentation/kernel/scsicmd_inquiry_pageb1_data.md",
+      "hash": "155aa47f96a4b92918b48099b7c32301fa253ecd1c16025ac24a2251a385f3e8"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/kernel/scsicmd_inquiry_pageb1_data/1429339-medium_rotation_rate.json": {
+      "etag": "\"1468-65902343fa2eb-df\"",
+      "file_path": "documentation/kernel/scsicmd_inquiry_pageb1_data/api-1429339-medium_rotation_rate.md",
+      "hash": "6f51d812b640e1a5ea6ec5c8002b2b61d86a37472d95eaa342e7804301d249a3"
     },
     "https://developer.apple.com/tutorials/data/documentation/kernel/scsicmd_inquiry_pageb2_data.json": {
       "etag": "\"c6d8-6593d1344a629-df\"",
@@ -366064,6 +368714,21 @@
       "etag": "\"1681-6593d13964adc-df\"",
       "file_path": "documentation/kernel/scsicmd_inquiry_pagecx_header/api-2721360-reserved.md",
       "hash": "3ba1f46474a91e8b48e70910b69485a9b0b36ea640b8a9af58c56d334495e539"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/kernel/scsicmd_inquiry_standarddata.json": {
+      "etag": "\"2b37-6590235bdcef4-df\"",
+      "file_path": "documentation/kernel/scsicmd_inquiry_standarddata.md",
+      "hash": "abfba844047554107b3963af4d08759de6594546658ec6a3aacd1ef20c7263e2"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/kernel/scsicmd_inquiry_standarddata/1429411-flags2.json": {
+      "etag": "\"1422-6590233c779e5-df\"",
+      "file_path": "documentation/kernel/scsicmd_inquiry_standarddata/api-1429411-flags2.md",
+      "hash": "c54441d1a978999c789bba5888525f79bdad58a092d8d392b1f5fe77d9df94f9"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/kernel/scsicmd_inquiry_standarddataall.json": {
+      "etag": "\"3906-6590236dab17f-df\"",
+      "file_path": "documentation/kernel/scsicmd_inquiry_standarddataall.md",
+      "hash": "5e8d458324f32ec26c93277bdf83cd6e585abd5f65315dd7b7ba21a6d91db6cc"
     },
     "https://developer.apple.com/tutorials/data/documentation/kernel/scsicmd_inquiry_standarddataptr.json": {
       "etag": "\"b674-6593d12675f29-df\"",
@@ -366689,6 +369354,21 @@
       "etag": "\"116b-6593d130eed99-df\"",
       "file_path": "documentation/kernel/scsitaskattribute/kscsitask_simple.md",
       "hash": "9c8adde8ded5ead58a37d1227c58ea904893d7e63e6ec929537e571653e78c69"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/kernel/scsitaskcompletion.json": {
+      "etag": "\"1313-659023392ce01-df\"",
+      "file_path": "documentation/kernel/scsitaskcompletion.md",
+      "hash": "c56a995383ced85f471c095228a9666a6c7458cbaf450aa9c700cfc455c27bc9"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/kernel/scsitaskidentifier.json": {
+      "etag": "\"1215-6590233809fa8-df\"",
+      "file_path": "documentation/kernel/scsitaskidentifier.md",
+      "hash": "515d2b9f8c22e5d43ae9e30d3caf8b0f77886317e5941b8de706ccadc8eb8a24"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/kernel/scsitaskmode.json": {
+      "etag": "\"163a-6590236d62235-df\"",
+      "file_path": "documentation/kernel/scsitaskmode.md",
+      "hash": "34540a2bf8b7cae38e43315dc5802b3f25cb07d74e9864859a6fada41090b14e"
     },
     "https://developer.apple.com/tutorials/data/documentation/kernel/scsitaskstate.json": {
       "etag": "\"d492-6593d11efce2f-df\"",
@@ -395042,9 +397722,12 @@
     }
   },
   "metadata": {
-    "render": {
-      "version": 1
+    "handoff_from": {
+      "iokit": {}
     },
-    "total_pages": 79008
+    "render": {
+      "version": 2
+    },
+    "total_pages": 79544
   }
 }

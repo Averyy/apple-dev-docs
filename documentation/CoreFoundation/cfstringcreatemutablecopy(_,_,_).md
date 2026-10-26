@@ -72,6 +72,8 @@ The returned mutable string is identical to the original string except for (perh
   Normalizes the string into the specified form as described in Unicode Technical Report #15.
 - [func CFStringPad(CFMutableString!, CFString!, CFIndex, CFIndex)](./cfstringpad%28_,_,_,_%29.md)
   Enlarges a string, padding it with specified characters, or truncates the string.
+- [CFStringAppendFormat](./cfstringappendformat.md)
+  Appends a formatted string to the character contents of a CFMutableString object.
 
 
 ---

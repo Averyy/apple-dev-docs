@@ -47,6 +47,10 @@ Instead of providing multiple images with different resolutions, you can provide
   Creates a template that has a header and two columns of text.
 - [init(headerImageProvider: CLKImageProvider?, headerTextProvider: CLKTextProvider, row1Column1TextProvider: CLKTextProvider, row1Column2TextProvider: CLKTextProvider, row2Column1TextProvider: CLKTextProvider, row2Column2TextProvider: CLKTextProvider)](./clkcomplicationtemplatemodularlargetable/init%28headerimageprovider,headertextprovider,row1column1textprovider,row1column2textprovider,row2column1textprovider,row2column2textprovider%29.md)
   Creates a template that has a header row with an image and text, and two columns of text.
+- [+ templateWithHeaderTextProvider:row1Column1TextProvider:row1Column2TextProvider:row2Column1TextProvider:row2Column2TextProvider:](./clkcomplicationtemplatemodularlargetable/templatewithheadertextprovider_row1column1textprovider_row1column2textprovider_row2column1textprovider_row2column2textprovider_.md)
+  Returns a template that has a header and two columns of text.
+- [+ templateWithHeaderImageProvider:headerTextProvider:row1Column1TextProvider:row1Column2TextProvider:row2Column1TextProvider:row2Column2TextProvider:](./clkcomplicationtemplatemodularlargetable/templatewithheaderimageprovider_headertextprovider_row1column1textprovider_row1column2textprovider_row2column1textprovider_row2column2textprovider_.md)
+  Returns a template that has a header row with an image and text, and two columns of text.
 ### Setting the Complication Data
 - [var headerImageProvider: CLKImageProvider?](./clkcomplicationtemplatemodularlargetable/headerimageprovider.md)
   An optional image to display in the header.

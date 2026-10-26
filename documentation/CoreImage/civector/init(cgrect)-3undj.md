@@ -41,6 +41,18 @@ The `CGRect` structure’s `x`, `y`, `height` and `width` values are stored in t
   Create a Core Image vector object that is initialized with six values provided by a `CGAffineTransform` structure.
 - [convenience init(cgPoint: CGPoint)](./init%28cgpoint%29-3mobm.md)
   Create a Core Image vector object that is initialized with two values provided by a `CGPoint` structure.
+- [+ vectorWithValues:count:](./vectorwithvalues_count_.md)
+  Create a Core Image vector object that is initialized with the specified values.
+- [+ vectorWithX:](./vectorwithx_.md)
+  Create a Core Image vector object that is initialized with one value.
+- [+ vectorWithX:Y:](./vectorwithx_y_.md)
+  Create a Core Image vector object that is initialized with two values.
+- [+ vectorWithX:Y:Z:](./vectorwithx_y_z_.md)
+  Create a Core Image vector object that is initialized with three values.
+- [+ vectorWithX:Y:Z:W:](./vectorwithx_y_z_w_.md)
+  Create a Core Image vector object that is initialized with four values.
+- [+ vectorWithString:](./vectorwithstring_.md)
+  Create a Core Image vector object with values provided in a string representation.
 
 
 ---

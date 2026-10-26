@@ -48,6 +48,8 @@ Sleeping wrist temperature samples use temperature units (described in [`HKUnit`
 - [static let sleepAnalysis: HKCategoryTypeIdentifier](../hkcategorytypeidentifier/sleepanalysis.md)
   A category sample type for sleep analysis information.
 - [enum HKAppleSleepingBreathingDisturbancesClassification](../hkapplesleepingbreathingdisturbancesclassification.md)
+- [HKCategoryValueSleepAnalysisAsleepValues](../hkcategoryvaluesleepanalysisasleepvalues.md)
+- [HKAppleSleepingBreathingDisturbancesClassificationForQuantity](../hkapplesleepingbreathingdisturbancesclassificationforquantity.md)
 
 
 ---

@@ -46,6 +46,10 @@ This class contains the mathematical properties of a tensor, such as data typ
   Creates a tensor descriptor with the number of feature channels and data type you specify.
 - [class var maxTensorDimensions: Int](./mlctensordescriptor/maxtensordimensions.md)
   The maximum number of tensor dimensions.
+- [+ descriptorWithShape:dataType:](./mlctensordescriptor/descriptorwithshape_datatype_.md)
+  Creates a tensor descriptor with the shape and data type you specify.
+- [+ descriptorWithShape:sequenceLengths:sortedSequences:dataType:](./mlctensordescriptor/descriptorwithshape_sequencelengths_sortedsequences_datatype_.md)
+  Creates a tensor descriptor with the shape, variable sequence lengths, sorting indicator, and data type you specify.
 ### Inspecting Tensor Descriptors
 - [var dataType: MLCDataType](./mlctensordescriptor/datatype.md)
   The tensor data type.
@@ -62,6 +66,14 @@ This class contains the mathematical properties of a tensor, such as data typ
 - [var sortedSequences: Bool](./mlctensordescriptor/sortedsequences.md)
   A Boolean that indicates whether you provided the sequence lengths sorted in descending order.
 - [var batchSizePerSequenceStep: [Int]?](./mlctensordescriptor/batchsizepersequencestep-6iz59.md)
+  The batch size for each sequence.
+- [shape](./mlctensordescriptor/shape-91vng.md)
+  An array that contains the size in each dimension.
+- [stride](./mlctensordescriptor/stride-3ydik.md)
+  An array that contains the stride, in bytes, in each dimension.
+- [sequenceLengths](./mlctensordescriptor/sequencelengths-3ntsa.md)
+  An array that contains the variable lengths of sequences stored in the tensor.
+- [batchSizePerSequenceStep](./mlctensordescriptor/batchsizepersequencestep-55mp8.md)
   The batch size for each sequence.
 
 ## Relationships

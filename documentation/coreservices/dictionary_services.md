@@ -15,6 +15,8 @@ Look for words and phrases in system dictionaries.
 ### Data Types
 - [class DCSDictionary](./dcsdictionary.md)
   An opaque object that represents a dictionary file.
+- [DCSDictionaryRef](./dcsdictionaryref.md)
+  An opaque object that represents a dictionary file.
 
 
 ---

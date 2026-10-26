@@ -55,7 +55,7 @@ When a Photos project extension is initialized, it is handed an extension contex
 ### macOS Photos project extensions
 - [Creating a Slideshow Project Extension for Photos](../PhotoKit/creating-a-slideshow-project-extension-for-photos.md)
   Augment the macOS Photos app with extensions that support project creation.
-- [class PHProject](https://developer.apple.com/documentation/photos/phproject)
+- [class PHProject](../Photos/phproject.md)
   A representation of a Photos app project extension.
 - [class PHProjectInfo](./phprojectinfo.md)
   Information about the project extension.
@@ -65,7 +65,7 @@ When a Photos project extension is initialized, it is handed an extension contex
   A collection of content representing curated asset and text elements.
 - [class PHProjectRegionOfInterest](./phprojectregionofinterest.md)
   A representation of a region of interest in a photo asset.
-- [class PHProjectChangeRequest](https://developer.apple.com/documentation/photos/phprojectchangerequest)
+- [class PHProjectChangeRequest](../Photos/phprojectchangerequest.md)
   A request to change asset data in a Photos project extension.
 - [protocol PHProjectExtensionController](./phprojectextensioncontroller.md)
   A protocol defining the life cycle and supported types of project extensions.

@@ -30,6 +30,8 @@ WKAudiovisualMediaTypeVideo
   Media types that contain audio require a user gesture to begin playing.
 - [static var all: WKAudiovisualMediaTypes](./all.md)
   All media types require a user gesture to begin playing.
+- [WKAudiovisualMediaTypeNone](./wkaudiovisualmediatypenone.md)
+  No media types require a user gesture to begin playing.
 
 
 ---

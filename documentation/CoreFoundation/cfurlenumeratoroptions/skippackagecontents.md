@@ -42,6 +42,8 @@ This option applies only to directory enumerators.
   If provided along with the [`descendRecursively`](./descendrecursively.md) option, the recursive enumerator returns a directory’s URL before returning the URLs of the directory’s descendents.
 - [static var includeDirectoriesPostOrder: CFURLEnumeratorOptions](./includedirectoriespostorder.md)
   If provided along with the [`descendRecursively`](./descendrecursively.md) option, the recursive enumerator returns a directory’s URL after returning the URLs of the directory’s descendents.
+- [kCFURLEnumeratorDefaultBehavior](./kcfurlenumeratordefaultbehavior.md)
+  The enumerator performs its default behavior.
 
 
 ---

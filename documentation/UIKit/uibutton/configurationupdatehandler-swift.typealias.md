@@ -40,6 +40,8 @@ typedef void (^)(__kindof UIButton *) UIButtonConfigurationUpdateHandler;
   Updates the button configuration in response to a button state change.
 - [var configurationUpdateHandler: UIButton.ConfigurationUpdateHandler?](./configurationupdatehandler-swift.property.md)
   A closure that executes when the button state changes.
+- [configuration](./configuration-7gz60.md)
+  The configuration for the button’s appearance.
 
 
 ---

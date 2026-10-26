@@ -55,6 +55,8 @@ If you need to load image data for many assets together, use the [`PHCachingImag
   Requests the largest represented image as data bytes and Exif orientation for the specified asset.
 - [let PHImageManagerMaximumSize: CGSize](./phimagemanagermaximumsize.md)
   A special value for requesting original image data or the largest rendered image available. .
+- [- requestImageDataForAsset:options:resultHandler:](./phimagemanager/requestimagedataforasset_options_resulthandler_.md)
+  Requests full-sized image data for the specified asset.
 ### Requesting Video Objects
 - [func requestPlayerItem(forVideo: PHAsset, options: PHVideoRequestOptions?, resultHandler: (AVPlayerItem?, [AnyHashable : Any]?) -> Void) -> PHImageRequestID](./phimagemanager/requestplayeritem%28forvideo,options,resulthandler%29.md)
   Requests a representation of the video asset for playback, to be loaded asynchronously.

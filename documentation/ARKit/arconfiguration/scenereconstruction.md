@@ -33,6 +33,8 @@ When you set one of the these values onto a world-tracking configuration’s [`s
   A polygonal mesh approximation of the physical environment.
 - [static var meshWithClassification: ARConfiguration.SceneReconstruction](./scenereconstruction/meshwithclassification.md)
   An approximate shape of the physical environment, including classification of the real-world objects within it.
+- [ARSceneReconstructionNone](../arscenereconstruction/arscenereconstructionnone.md)
+  Disables the scene reconstruction feature.
 
 ## Relationships
 

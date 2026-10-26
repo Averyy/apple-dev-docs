@@ -31,7 +31,7 @@ Support a Shared with You shelf in your app to visually represent shared items w
 ## Topics
 
 ### Frameworks
-- [Shared with You Core](https://developer.apple.com/documentation/sharedwithyoucore)
+- [Shared with You Core](../SharedWithYouCore/SharedWithYouCore.md)
   Integrate custom collaboration with Messages, Mail, and FaceTime.
 ### Shared content
 - [Making your app content shareable](./making-your-app-content-shareable.md)

@@ -25,6 +25,11 @@ Core Video OpenGL textures are texture-based image buffers used for supplying so
 ### Data Types
 - [typealias CVOpenGLTexture](./cvopengltexture.md)
   A reference to an OpenGL texture-based image buffer object.
+### Retaining and Releasing Textures
+- [CVOpenGLTextureRetain](./cvopengltextureretain.md)
+  Retains a Core Video OpenGL texture.
+- [CVOpenGLTextureRelease](./cvopengltexturerelease.md)
+  Releases a Core Video OpenGL texture.
 
 ## See Also
 

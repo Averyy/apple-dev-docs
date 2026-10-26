@@ -29,6 +29,8 @@ class MTLRenderPassSampleBufferAttachmentDescriptorArray
 ### Accessing a sample buffer attachment
 - [subscript(Int) -> MTLRenderPassSampleBufferAttachmentDescriptor!](./mtlrenderpasssamplebufferattachmentdescriptorarray/subscript%28_%29.md)
   Returns the descriptor object for the specified sample buffer attachment.
+- [- setObject:atIndexedSubscript:](./mtlrenderpasssamplebufferattachmentdescriptorarray/setobject_atindexedsubscript_.md)
+  Sets the descriptor object for the specified sample buffer attachment.
 
 ## Relationships
 

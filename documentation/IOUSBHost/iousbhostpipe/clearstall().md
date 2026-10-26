@@ -35,6 +35,12 @@ This method clears the halted condition for the endpoint. It also sends a `CLEAR
   The default completion timeout for input/output requests.
 - [func enqueueIORequest(with: NSMutableData?, completionTimeout: TimeInterval, completionHandler: ((IOReturn, Int) -> Void)?) throws](./enqueueiorequest%28with,completiontimeout,completionhandler%29.md)
   Enqueues an input/output request on the pipe.
+- [- sendIORequestWithData:bytesTransferred:completionTimeout:error:](./sendiorequestwithdata_bytestransferred_completiontimeout_error_.md)
+  Sends an input/output request on the pipe.
+- [- abortWithOption:error:](./abortwithoption_error_.md)
+  Aborts pending input/output requests.
+- [- abortWithError:](./abortwitherror_.md)
+  Aborts pending input/output requests synchronously.
 
 
 ---

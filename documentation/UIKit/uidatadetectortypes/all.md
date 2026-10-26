@@ -43,6 +43,8 @@ UIDataDetectorTypeAll
   An option to detect strings with the format of an amount of money.
 - [static var physicalValue: UIDataDetectorTypes](./physicalvalue.md)
   An option to detect strings with the format of a physical value, such as length or temperature.
+- [UIDataDetectorTypeNone](./uidatadetectortypenone.md)
+  An option to do no data detection.
 
 
 ---

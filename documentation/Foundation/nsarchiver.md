@@ -61,6 +61,14 @@ In macOS 10.2 and later, [`NSArchiver`](./nsarchiver.md) and [`NSUnarchiver`](./
   Raised by `NSArchiver` if there are problems initializing or encoding.
 ### Initializers
 - [init(forWritingWithMutableData: NSMutableData)](./nsarchiver/init%28forwritingwithmutabledata%29.md)
+### Instance Variables
+- [ids](./nsarchiver/ids.md)
+- [map](./nsarchiver/map.md)
+- [mdata](./nsarchiver/mdata.md)
+- [pointerTable](./nsarchiver/pointertable.md)
+- [replacementTable](./nsarchiver/replacementtable.md)
+- [reserved](./nsarchiver/reserved.md)
+- [stringTable](./nsarchiver/stringtable.md)
 
 ## Relationships
 
@@ -81,6 +89,8 @@ In macOS 10.2 and later, [`NSArchiver`](./nsarchiver.md) and [`NSUnarchiver`](./
 ### Deprecated
 - [class NSUnarchiver](./nsunarchiver.md)
   A decoder that restores data from an archive.
+- [NXReadNSObjectFromCoder](./nxreadnsobjectfromcoder.md)
+  Returns the next object from the coder.
 
 
 ---

@@ -35,6 +35,8 @@ To access the newest model collection from a deployment, call the [`beginAccessi
 ### Accessing a model collection
 - [class func endAccessing(identifier: String) async throws -> Bool](./mlmodelcollection/endaccessing%28identifier%29.md)
   Terminates access to a model collection.
+- [+ beginAccessingModelCollectionWithIdentifier:completionHandler:](./mlmodelcollection/beginaccessingmodelcollectionwithidentifier_completionhandler_.md)
+  Requests access to a model collection.
 ### Identifying a model collection
 - [var identifier: String](./mlmodelcollection/identifier.md)
   The name of the model collection, unique to the development team.

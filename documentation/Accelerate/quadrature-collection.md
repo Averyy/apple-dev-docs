@@ -103,6 +103,8 @@ The QAGS algorithm requires, for a given number of subintervals, at least that n
   Constants that specify integration algorithms.
 - [struct quadrature_status](./quadrature_status.md)
   Constants that indicate the status of a quadrature operation.
+- [quadrature_integrate](./quadrature_integrate.md)
+  Computes an approximation to the definite integral of a function on a specified interval.
 
 
 ---

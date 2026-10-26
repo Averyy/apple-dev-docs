@@ -90,6 +90,8 @@ Creating a composition with this method sets values for the following properties
   Creates a video composition object configured to present the video tracks of the specified asset.
 - [init(asset: AVAsset, applyingCIFiltersWithHandler: (AVAsynchronousCIImageFilteringRequest) -> Void)](./init%28asset,applyingcifilterswithhandler%29.md)
   Creates a video composition configured to apply Core Image filters to each video frame of the specified asset.
+- [+ videoCompositionWithVideoComposition:](./videocompositionwithvideocomposition_.md)
+  Pass-through initializer, for internal use in AVFoundation only
 
 
 ---

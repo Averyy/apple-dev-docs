@@ -38,6 +38,8 @@ func getValue(_ value: UnsafeMutableRawPointer)
   Creates a value object containing the specified value, interpreted with the specified Objective-C type.
 - [var objCType: UnsafePointer<CChar>](./objctype.md)
   A C string containing the Objective-C type of the data contained in the value object.
+- [+ valueWithBytes:objCType:](./valuewithbytes_objctype_.md)
+  Creates a value object containing the specified value, interpreted with the specified Objective-C type.
 
 
 ---

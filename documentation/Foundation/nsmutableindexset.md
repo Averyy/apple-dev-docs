@@ -78,6 +78,14 @@ Do not subclass the [`NSMutableIndexSet`](./nsmutableindexset.md) class.
 - [SendableMetatype](../Swift/sendablemetatype.md)
 - [Sequence](../Swift/sequence.md)
 
+## See Also
+
+### Indexes
+- [NSIndexPath](./nsindexpath.md)
+  A list of indexes that together represent the path to a specific location in a tree of nested arrays.
+- [NSIndexSet](./nsindexset.md)
+  An immutable collection of unique integer values that represent indexes in another collection.
+
 
 ---
 

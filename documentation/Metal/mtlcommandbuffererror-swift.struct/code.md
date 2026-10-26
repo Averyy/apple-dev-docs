@@ -54,6 +54,9 @@ enum MTLCommandBufferError : NSUInteger;
   A former error code that indicates the system has revoked the Metal device’s access because it’s responsible for too many timeouts or hangs.
 ### Initializers
 - [init?(rawValue: UInt)](./code/init%28rawvalue%29.md)
+### Enumeration Cases
+- [MTLCommandBufferErrorAccessRevoked](../mtlcommandbuffererror-c.enum/mtlcommandbuffererroraccessrevoked.md)
+  An error code that indicates the system has revoked the Metal device’s access because it’s responsible for too many timeouts or hangs.
 
 ## Relationships
 
@@ -64,6 +67,24 @@ enum MTLCommandBufferError : NSUInteger;
 - [RawRepresentable](../../Swift/rawrepresentable.md)
 - [Sendable](../../Swift/sendable.md)
 - [SendableMetatype](../../Swift/sendablemetatype.md)
+
+## See Also
+
+### Submitting work to a GPU
+- [Setting up a command structure](../setting-up-a-command-structure.md)
+  Discover how Metal executes commands on a GPU.
+- [MTLCommandQueue](../mtlcommandqueue.md)
+  An instance you use to create, submit, and schedule command buffers to a specific GPU device to run the commands within those buffers.
+- [MTLCommandQueueDescriptor](../mtlcommandqueuedescriptor.md)
+  A configuration that customizes the behavior for a new command queue.
+- [MTLCommandBuffer](../mtlcommandbuffer.md)
+  A container that stores a sequence of GPU commands that you encode into it.
+- [MTLCommandBufferDescriptor](../mtlcommandbufferdescriptor.md)
+  A configuration that customizes the behavior for a new command buffer.
+- [MTLCommandBufferErrorDomain](../mtlcommandbuffererrordomain.md)
+  The domain for Metal command buffer errors.
+- [MTLCommandEncoder](../mtlcommandencoder.md)
+  An encoder that writes GPU commands into a command buffer.
 
 
 ---

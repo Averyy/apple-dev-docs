@@ -35,6 +35,8 @@ kCFSocketAcceptCallBack
 - [static var connectCallBack: CFSocketCallBackType](./connectcallback.md)
 - [static var writeCallBack: CFSocketCallBackType](./writecallback.md)
   The callback is called when the socket is writable. This callback type may be useful when large amounts of data are being sent rapidly over the socket and you want a notification when there is space in the kernel buffers for more data.
+- [kCFSocketNoCallBack](./kcfsocketnocallback.md)
+  No callback should be made for any activity.
 
 
 ---

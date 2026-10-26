@@ -46,6 +46,12 @@ If no voice matches the properties, the utterance uses the voice set in its [`vo
   Creates an utterance with the attributed text string that you specify for the speech synthesizer to speak.
 - [let AVSpeechSynthesisIPANotationAttribute: String](../avspeechsynthesisipanotationattribute.md)
   A string that contains International Phonetic Alphabet (IPA) symbols the speech synthesizer uses to control pronunciation of certain words or phrases.
+- [+ speechUtteranceWithString:](./speechutterancewithstring_.md)
+  Creates an utterance with the text string that you specify for the speech synthesizer to speak.
+- [+ speechUtteranceWithAttributedString:](./speechutterancewithattributedstring_.md)
+  Creates an utterance with the attributed text string that you specify for the speech synthesizer to speak.
+- [+ speechUtteranceWithSSMLRepresentation:](./speechutterancewithssmlrepresentation_.md)
+  Returns a new speech utterance with an Speech Synthesis Markup Language (SSML) string.
 
 
 ---

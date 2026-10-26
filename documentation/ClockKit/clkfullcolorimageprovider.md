@@ -40,6 +40,10 @@ For information about the image sizes and masks, see [Apple Watch Human Interfac
   Creates an image provider with the specified full-color image.
 - [convenience init(fullColorImage: UIImage, tintedImageProvider: CLKImageProvider?)](./clkfullcolorimageprovider/init%28fullcolorimage,tintedimageprovider%29.md)
   Creates an image provider that produces full-color and tinted images.
+- [- initWithFullColorImage:](./clkfullcolorimageprovider/initwithfullcolorimage_.md)
+  Creates an image provider with the specified full-color image.
+- [- initWithFullColorImage:tintedImageProvider:](./clkfullcolorimageprovider/initwithfullcolorimage_tintedimageprovider_.md)
+  Creates an image provider that produces full-color and tinted images.
 ### Getting the Image Data
 - [var image: UIImage](./clkfullcolorimageprovider/image.md)
   The full-color image to display.

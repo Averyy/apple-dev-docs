@@ -26,6 +26,9 @@ enum NSDatePickerMode : NSUInteger;
 - [NSDatePicker.Mode.single](./mode/single.md)
 ### Initializers
 - [init?(rawValue: UInt)](./mode/init%28rawvalue%29.md)
+### Constants
+- [NSSingleDateMode](../nssingledatemode.md)
+- [NSRangeDateMode](../nsrangedatemode.md)
 
 ## Relationships
 

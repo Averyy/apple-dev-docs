@@ -67,6 +67,11 @@ This parameter is part of the graphics state. Because of this, you use this when
   Draws a set of glyphs at a set of corresponding positions.
 - [func showGlyphsAtPoint(x: CGFloat, y: CGFloat, glyphs: UnsafePointer<CGGlyph>?, count: Int)](./showglyphsatpoint%28x,y,glyphs,count%29.md)
   Displays an array of glyphs at a position you specify.
+- [CGContextSetTextMatrix](../cgcontextsettextmatrix.md)
+  Sets the current text matrix.
+- [CGContextSetTextPosition](../cgcontextsettextposition.md)
+  Sets the location at which text is drawn.
+- [CGContextGetTextPosition](../cgcontextgettextposition.md)
 
 
 ---

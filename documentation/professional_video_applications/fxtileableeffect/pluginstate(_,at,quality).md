@@ -22,9 +22,9 @@ func pluginState(_ pluginState: AutoreleasingUnsafeMutablePointer<NSData>?, at r
 
 ## Mentions
 
-- [Analyzing media](https://developer.apple.com/documentation/professional-video-applications/analyzing-media)
-- [Thread safety in plug-ins](https://developer.apple.com/documentation/professional-video-applications/thread-safety-in-plug-ins)
-- [Using FxPlug APIs](https://developer.apple.com/documentation/professional-video-applications/using-fxplug-apis)
+- [Analyzing media](../../Professional-Video-Applications/analyzing-media.md)
+- [Thread safety in plug-ins](../../Professional-Video-Applications/thread-safety-in-plug-ins.md)
+- [Using FxPlug APIs](../../Professional-Video-Applications/using-fxplug-apis.md)
 
 #### Discussion
 

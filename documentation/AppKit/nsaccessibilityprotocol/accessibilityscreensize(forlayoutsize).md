@@ -57,6 +57,16 @@ A size in the screen’s coordinate system.
   Converts the provided size in screen coordinates to a size in the layout area’s coordinate system.
 - [func accessibilityScreenPoint(forLayoutPoint: NSPoint) -> NSPoint](./accessibilityscreenpoint%28forlayoutpoint%29.md)
   Converts the provided point in the layout area’s coordinates to a point in the screen’s coordinate system.
+- [accessibilityHandles](../nsaccessibility-c.protocol/accessibilityhandles.md)
+  The drag handle accessibility elements for the layout item element.
+- [accessibilityHorizontalUnits](../nsaccessibility-c.protocol/accessibilityhorizontalunits.md)
+  The units that the layout area uses for horizontal values.
+- [accessibilityHorizontalUnitDescription](../nsaccessibility-c.protocol/accessibilityhorizontalunitdescription.md)
+  A description of the layout area’s horizontal units.
+- [accessibilityVerticalUnits](../nsaccessibility-c.protocol/accessibilityverticalunits.md)
+  The units that the layout area uses for vertical values.
+- [accessibilityVerticalUnitDescription](../nsaccessibility-c.protocol/accessibilityverticalunitdescription.md)
+  A description of the layout area’s vertical units.
 
 
 ---

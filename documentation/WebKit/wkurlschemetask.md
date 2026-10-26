@@ -65,6 +65,9 @@ After you load some portion of the resource data, call the [`didReceive(_:)`](./
   A protocol for loading resources with URL schemes that WebKit doesn’t handle.
 - [static let readAccessURL: NSAttributedString.DocumentReadingOptionKey](../Foundation/nsattributedstring/documentreadingoptionkey/readaccessurl.md)
   The local files WebKit can access when loading content.
+- [NSReadAccessURLDocumentOption](./nsreadaccessurldocumentoption.md)
+- [WKCookiePolicy](./wkhttpcookiestore/cookiepolicy.md)
+  An enumeration with cases that indicate whether a cookie store allows cookie storage.
 
 
 ---

@@ -76,11 +76,17 @@ When managing CarPlay features, users don’t need to include the name of the ap
 ### Initializing the Intent Object
 - [convenience init(enable: Bool?, defroster: INCarDefroster, carName: INSpeakableString?)](./insetdefrostersettingsincarintent/init%28enable,defroster,carname%29.md)
   Initializes the intent object with the specified defroster information.
+- [- initWithEnable:defroster:carName:](./insetdefrostersettingsincarintent/initwithenable_defroster_carname_.md)
+  Initializes the intent object with the specified defroster information.
+- [- initWithEnable:defroster:](./insetdefrostersettingsincarintent/initwithenable_defroster_.md)
+  Initializes the intent object with the specified defroster information.
 ### Getting Details About the Defroster Settings to Set
 - [var enable: Bool?](./insetdefrostersettingsincarintent/enable-9xte9.md)
   A Boolean indicating whether to enable or disable the defroster.
 - [var defroster: INCarDefroster](./insetdefrostersettingsincarintent/defroster.md)
   The defroster to enable or disable.
+- [enable](./insetdefrostersettingsincarintent/enable-8tf0i.md)
+  A Boolean indicating whether to enable or disable the defroster.
 ### Getting the Car Name
 - [var carName: INSpeakableString?](./insetdefrostersettingsincarintent/carname.md)
   The name of the car you applied the settings to.

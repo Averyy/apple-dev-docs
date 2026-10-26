@@ -34,6 +34,8 @@ init(coder aDecoder: NSCoder)
 ### Creating a Query
 - [convenience init(recordType: CKRecord.RecordType, predicate: NSPredicate)](./init%28recordtype,predicate%29.md)
   Creates a query with the specified record type and predicate.
+- [- initWithRecordType:predicate:](./initwithrecordtype_predicate_.md)
+  Creates a query with the specified record type and predicate.
 
 
 ---

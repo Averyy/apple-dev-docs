@@ -50,6 +50,14 @@ typedef struct { ... } SPRect3D;
   Creates a rectangle structure.
 - [init(points: [Point3D])](./rect3d/init%28points%29.md)
   Creates a rectangle that’s the bounding box of the specified points.
+- [SPRect3DMakeAtCenterWithVector](./sprect3dmakeatcenterwithvector-9118a.md)
+  Creates a rectangle with the specified center and the specified size from double-precision vectors.
+- [SPRect3DMakeAtCenterWithVector](./sprect3dmakeatcenterwithvector-9doe4.md)
+- [SPRect3DMakeAtOriginWithVector](./sprect3dmakeatoriginwithvector-36awh.md)
+  Creates a rectangle at the specified origin and the specified size from double-precision vectors.
+- [SPRect3DMakeAtOriginWithVector](./sprect3dmakeatoriginwithvector-7m66h.md)
+- [SPRect3DMakeBoundingFromPoints](./sprect3dmakeboundingfrompoints.md)
+  Creates a rectangle that’s the bounding box of the specified points.
 ### Inspecting a 3D rectangle’s properties
 - [var center: Point3D](./rect3d/center.md)
   The center of the rectangle.
@@ -61,6 +69,10 @@ typedef struct { ... } SPRect3D;
   A point that represents the corner of the rectangle with the smallest x-, y-, and z-coordinates.
 - [var origin: Point3D](./rect3d/origin.md)
   The origin of the rectangle.
+- [size](./sprect3d/size.md)
+  The size of the rectangle.
+- [SPRect3DGetCornerPoints](./sprect3dgetcornerpoints.md)
+  Returns the corner points of the rectangle.
 ### Transforming a 3D rectangle structure
 - [func applying(Pose3D) -> Rect3D](./rect3d/applying%28_%29-3qdiy.md)
   Returns a rectangle that results from applying the specified pose.
@@ -84,6 +96,37 @@ typedef struct { ... } SPRect3D;
   Returns a rectangle that results from unapplying the specified pose.
 - [func unapplying(AffineTransform3D) -> Rect3D](./rect3d/unapplying%28_%29-7eglq.md)
   Returns a rectangle that results from unapplying the specified affine transform.
+- [SPRect3DApplyAffineTransform](./sprect3dapplyaffinetransform.md)
+  Returns a rectangle that results from applying the specified affine transform.
+- [SPRect3DApplyPose](./sprect3dapplypose.md)
+  Returns a rectangle that results from applying the specified pose.
+- [SPRect3DApplyProjectiveTransform](./sprect3dapplyprojectivetransform.md)
+- [SPRect3DApplyScaledPose](./sprect3dapplyscaledpose.md)
+  Returns a rectangle that’s transformed by the specified scaled pose.
+- [SPRect3DRotate](./sprect3drotate.md)
+  Returns a rectangle that results from applying the specified rotation.
+- [SPRect3DRotateByQuaternion](./sprect3drotatebyquaternion.md)
+  Returns a rectangle that results from rotating with the specified quaternion.
+- [SPRect3DScaleBy](./sprect3dscaleby.md)
+  Returns a rectangle that results from scaling with the specified double-precision values.
+- [SPRect3DScaleBySize](./sprect3dscalebysize.md)
+  Returns a rectangle that results from scaling with the specified size structure.
+- [SPRect3DScaleUniform](./sprect3dscaleuniform.md)
+  Returns a rectangle that results from uniformly scaling with the specified double-precision value.
+- [SPRect3DShear](./sprect3dshear.md)
+  Returns a rectangle that results from shearing over an axis by shear factors for the other two axes.
+- [SPRect3DTranslate](./sprect3dtranslate-88ujj.md)
+  Returns a rectangle with an origin that’s offset by the specified vector.
+- [SPRect3DTranslate](./sprect3dtranslate-8amf1.md)
+  Returns a rectangle with an origin that’s offset by the specified size.
+- [SPRect3DUnapplyAffineTransform](./sprect3dunapplyaffinetransform.md)
+  Returns a rectangle that results from unapplying the specified affine transform.
+- [SPRect3DUnapplyPose](./sprect3dunapplypose.md)
+  Returns a rectangle that results from unapplying the specified pose.
+- [SPRect3DUnapplyProjectiveTransform](./sprect3dunapplyprojectivetransform.md)
+  Returns a rectangle that results from applying the specified projective transform.
+- [SPRect3DUnapplyScaledPose](./sprect3dunapplyscaledpose.md)
+  Returns a rectangle that’s transformed by the inverse of the specified scaled pose.
 ### Checking characteristics
 - [func contains(anyOf: [Point3D]) -> Bool](./rect3d/contains%28anyof%29.md)
   Returns a Boolean value that indicates whether the rectangle contains any of the specified points.
@@ -91,6 +134,21 @@ typedef struct { ... } SPRect3D;
   Returns a Boolean value that indicates whether two rectangles intersect.
 - [var isEmpty: Bool](./rect3d/isempty.md)
   A Boolean value that indicates whether two or three of the dimensions are zero.
+- [SPRect3DContainsAnyPoint](./sprect3dcontainsanypoint.md)
+  Returns a Boolean value that indicates whether the rectangle contains any of the specified points.
+- [SPRect3DContainsPoint](./sprect3dcontainspoint.md)
+  Returns a Boolean value that indicates whether the rectangle contains the specified point.
+- [SPRect3DContainsRect](./sprect3dcontainsrect.md)
+  Returns a Boolean value that indicates whether the rectangle contains the specified rectangle.
+- [SPRect3DDistanceToRect](./sprect3ddistancetorect.md)
+- [SPRect3DIsFinite](./sprect3disfinite.md)
+  A Boolean value that indicates whether all of the coordinates and dimensions of the rectangle are finite.
+- [SPRect3DIsNaN](./sprect3disnan.md)
+  A Boolean value that indicates whether any of the coordinates and dimensions of the rectangle are NaN.
+- [SPRect3DIsNull](./sprect3disnull.md)
+  A Boolean value that indicates whether the rectangle is equal to the null rectangle.
+- [SPRect3DIsZero](./sprect3diszero.md)
+  A Boolean value that indicates whether the rectangle’s origin and size are zero.
 ### Creating derived 3D rectangles
 - [var integral: Rect3D](./rect3d/integral.md)
   Returns the smallest rectangle after converting the source rectangle values to integers.
@@ -102,8 +160,14 @@ typedef struct { ... } SPRect3D;
   Returns the intersection of two rectangles.
 - [var standardized: Rect3D](./rect3d/standardized.md)
   A rectangle with positive dimensions.
+- [SPRect3DIntersection](./sprect3dintersection.md)
+  Returns the intersection of two rectangles.
+- [SPRect3DUnion](./sprect3dunion.md)
+  Returns the smallest rectangle that contains two rectangles.
 ### Comparing values
 - [static func == (Rect3D, Rect3D) -> Bool](./rect3d/eqeq%28_,_%29.md)
+  Returns a Boolean value that indicates whether two values are equal.
+- [SPRect3DEqualToRect](./sprect3dequaltorect.md)
   Returns a Boolean value that indicates whether two values are equal.
 ### Applying arithmetic operations
 - [static func * (AffineTransform3D, Rect3D) -> Rect3D](./rect3d/star%28_,_%29-8710d.md)
@@ -128,6 +192,10 @@ typedef struct { ... } SPRect3D;
 - [var minX: Double](./rect3d/minx.md)
 - [var minY: Double](./rect3d/miny.md)
 - [var minZ: Double](./rect3d/minz.md)
+- [SPRect3DDistanceBetweenOrigins](./sprect3ddistancebetweenorigins.md)
+  Returns the distance between the origins of two rectangles.
+- [SPRect3DRotationToRect](./sprect3drotationtorect.md)
+  Returns the rotation around the origin from the first rectangle to the second rectangle.
 ### Initializers
 - [init(Rect3DFloat)](./rect3d/init%28_%29-3wm4y.md)
   Returns a double-precision rectangle from a single-precision rectangle.
@@ -143,6 +211,13 @@ typedef struct { ... } SPRect3D;
 - [Shearable3D Implementations](./rect3d/shearable3d-implementations.md)
 - [Volumetric Implementations](./rect3d/volumetric-implementations.md)
 - [VolumetricProtocol Implementations](./rect3d/volumetricprotocol-implementations.md)
+### Constants
+- [SPRect3DNull](./sprect3dnull.md)
+  The null rectangle that represents an invalid value.
+- [SPRect3DInfinity](./sprect3dinfinity.md)
+  The rectangle structure with infinite origin and size.
+- [SPRect3DZero](./sprect3dzero.md)
+  The rectangle structure with the zero value.
 
 ## Relationships
 

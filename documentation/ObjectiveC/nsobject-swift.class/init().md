@@ -61,6 +61,18 @@ The [`init()`](./init%28%29.md) method defined in the `NSObject` class does no i
   Returns the object returned by `copy(with:)`.
 - [func mutableCopy() -> Any](./mutablecopy%28%29.md)
   Returns the object returned by `mutableCopy(with:)` where the zone is `nil`.
+- [+ alloc](./alloc.md)
+  Returns a new instance of the receiving class.
+- [+ allocWithZone:](./allocwithzone_.md)
+  Returns a new instance of the receiving class.
+- [+ copyWithZone:](./copywithzone_.md)
+  Returns the receiver.
+- [+ mutableCopyWithZone:](./mutablecopywithzone_.md)
+  Returns the receiver.
+- [- dealloc](./dealloc.md)
+  Deallocates the memory occupied by the receiver.
+- [+ new](./new.md)
+  Allocates a new instance of the receiving class, sends it an [`init`](./init%28%29.md) message, and returns the initialized object.
 
 
 ---

@@ -46,6 +46,10 @@ The beginning and end times for the reservation indicate the earliest time the u
   The number of adults staying at the lodging location.
 - [var numberOfChildren: Int?](./numberofchildren-1dm3g.md)
   The number of children staying at the lodging location.
+- [numberOfAdults](./numberofadults-9r4iw.md)
+  The number of adults staying at the lodging location.
+- [numberOfChildren](./numberofchildren-2n3e2.md)
+  The number of children staying at the lodging location.
 
 
 ---

@@ -57,6 +57,33 @@ The rectangle that results from applying the specified rotation around a pivot p
   Returns a rectangle that results from unapplying the specified pose.
 - [func unapplying(AffineTransform3D) -> Rect3D](./unapplying%28_%29-7eglq.md)
   Returns a rectangle that results from unapplying the specified affine transform.
+- [SPRect3DApplyAffineTransform](../sprect3dapplyaffinetransform.md)
+  Returns a rectangle that results from applying the specified affine transform.
+- [SPRect3DApplyPose](../sprect3dapplypose.md)
+  Returns a rectangle that results from applying the specified pose.
+- [SPRect3DApplyProjectiveTransform](../sprect3dapplyprojectivetransform.md)
+- [SPRect3DApplyScaledPose](../sprect3dapplyscaledpose.md)
+  Returns a rectangle that’s transformed by the specified scaled pose.
+- [SPRect3DRotate](../sprect3drotate.md)
+  Returns a rectangle that results from applying the specified rotation.
+- [SPRect3DRotateByQuaternion](../sprect3drotatebyquaternion.md)
+  Returns a rectangle that results from rotating with the specified quaternion.
+- [SPRect3DScaleBy](../sprect3dscaleby.md)
+  Returns a rectangle that results from scaling with the specified double-precision values.
+- [SPRect3DScaleBySize](../sprect3dscalebysize.md)
+  Returns a rectangle that results from scaling with the specified size structure.
+- [SPRect3DScaleUniform](../sprect3dscaleuniform.md)
+  Returns a rectangle that results from uniformly scaling with the specified double-precision value.
+- [SPRect3DShear](../sprect3dshear.md)
+  Returns a rectangle that results from shearing over an axis by shear factors for the other two axes.
+- [SPRect3DTranslate](../sprect3dtranslate-88ujj.md)
+  Returns a rectangle with an origin that’s offset by the specified vector.
+- [SPRect3DTranslate](../sprect3dtranslate-8amf1.md)
+  Returns a rectangle with an origin that’s offset by the specified size.
+- [SPRect3DUnapplyAffineTransform](../sprect3dunapplyaffinetransform.md)
+  Returns a rectangle that results from unapplying the specified affine transform.
+- [SPRect3DUnapplyPose](../sprect3dunapplypose.md)
+  Returns a rectangle that results from unapplying the specified pose.
 
 
 ---

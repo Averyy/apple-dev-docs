@@ -31,6 +31,15 @@ var AVAUDIOENGINE_HAVE_MUSICPLAYER: Int32 { get }
 - [var AVAUDIONODE_HAVE_AUAUDIOUNIT: Int32](./avaudionode_have_auaudiounit.md)
 - [var AVAUDIOUNITCOMPONENT_HAVE_AUDIOCOMPONENT: Int32](./avaudiounitcomponent_have_audiocomponent.md)
 - [var AVAUDIOUNIT_HAVE_AUDIOUNIT: Int32](./avaudiounit_have_audiounit.md)
+- [AVAS_EXPORT](./avas_export.md)
+- [AVAudioApplication_h](./avaudioapplication_h.md)
+- [AVAudioUnitMIDIInstrument_MixingConformance](./avaudiounitmidiinstrument_mixingconformance.md)
+- [AVSpeeechSynthesisProvider_h](./avspeeechsynthesisprovider_h.md)
+- [AudioSession_AVAudioRoutingArbiter_h](./audiosession_avaudioroutingarbiter_h.md)
+- [AudioSession_AVAudioSessionRoute_h](./audiosession_avaudiosessionroute_h.md)
+- [AudioSession_AVAudioSessionTypes_h](./audiosession_avaudiosessiontypes_h.md)
+- [AudioSession_AVAudioSession_Deprecated_h](./audiosession_avaudiosession_deprecated_h.md)
+- [AudioSession_AVAudioSession_h](./audiosession_avaudiosession_h.md)
 
 
 ---

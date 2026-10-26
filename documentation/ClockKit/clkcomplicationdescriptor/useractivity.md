@@ -36,6 +36,8 @@ Because the system can pass configurations as part of a shared watch face, only 
   The families that support this type of complication.
 - [var userInfo: [AnyHashable : Any]?](./userinfo.md)
   A dictionary of data that your data source can use to generate timeline entries.
+- [supportedFamilies](./supportedfamilies-50ink.md)
+  The families that support this type of complication.
 
 
 ---

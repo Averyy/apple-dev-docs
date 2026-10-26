@@ -53,6 +53,8 @@ The [`CMTimeRange`](../../CoreMedia/cmtimerange.md) you specify will limit each 
   Creates a player looper that continuously plays the full duration of a player item while adhering to the specified ordering of existing items in the queue.
 - [convenience init(player: AVQueuePlayer, templateItem: AVPlayerItem)](./init%28player,templateitem%29.md)
   Creates a player looper that continuously plays the full duration of a player item.
+- [+ playerLooperWithPlayer:templateItem:timeRange:](./playerlooperwithplayer_templateitem_timerange_.md)
+  Returns player looper that continuously plays the specified time range of a player item.
 
 
 ---

@@ -57,6 +57,12 @@ Other Vision request handlers that perform image analysis inherit from this abst
   Returns the compute device for a compute stage.
 - [var supportedComputeStageDevices: [VNComputeStage : [MLComputeDevice]]](./vnrequest/supportedcomputestagedevices.md)
   The collection of compute devices per stage that a request supports.
+- [- setComputeDevice:forComputeStage:](./vnrequest/setcomputedevice_forcomputestage_.md)
+  Assigns a compute device for a compute stage.
+- [- computeDeviceForComputeStage:](./vnrequest/computedeviceforcomputestage_.md)
+  Returns the compute device for a compute stage.
+- [- supportedComputeStageDevicesAndReturnError:](./vnrequest/supportedcomputestagedevicesandreturnerror_.md)
+  The collection of compute devices per stage that a request supports.
 ### Canceling a Request
 - [func cancel()](./vnrequest/cancel%28%29.md)
   Cancels the request before it can finish executing.

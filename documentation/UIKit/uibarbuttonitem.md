@@ -45,6 +45,16 @@ In general, specify a value for the normal state so that other states without a 
   Initializes the item to its default state.
 - [init?(coder: NSCoder)](./uibarbuttonitem/init%28coder%29.md)
   Creates an item from data in an unarchiver.
+- [- initWithPrimaryAction:menu:](./uibarbuttonitem/initwithprimaryaction_menu_.md)
+  Creates a plain-style item using the specified primary action and context menu.
+- [- initWithPrimaryAction:](./uibarbuttonitem/initwithprimaryaction_.md)
+  Creates a plain-style item using the specified primary action.
+- [- initWithTitle:image:target:action:menu:](./uibarbuttonitem/initwithtitle_image_target_action_menu_.md)
+  Creates a plain-style item the specified title, image, target, action, and context menu.
+- [- initWithTitle:menu:](./uibarbuttonitem/initwithtitle_menu_.md)
+  Creates a plain-style item using the specified title and menu.
+- [- initWithImage:menu:](./uibarbuttonitem/initwithimage_menu_.md)
+  Creates a plain-style item using the specified image and context menu.
 ### Creating items of a specific style
 - [convenience init(title: String?, style: UIBarButtonItem.Style, target: Any?, action: Selector?)](./uibarbuttonitem/init%28title,style,target,action%29.md)
   Creates an item using the specified title, style, target, and action.
@@ -59,6 +69,12 @@ In general, specify a value for the normal state so that other states without a 
   Creates an item using the specified system item, target, and action.
 - [UIBarButtonItem.SystemItem](./uibarbuttonitem/systemitem.md)
   Constants that define system-supplied images for bar button items.
+- [- initWithBarButtonSystemItem:primaryAction:menu:](./uibarbuttonitem/initwithbarbuttonsystemitem_primaryaction_menu_.md)
+  Creates an item using the specified system item, primary action, and context menu.
+- [- initWithBarButtonSystemItem:primaryAction:](./uibarbuttonitem/initwithbarbuttonsystemitem_primaryaction_.md)
+  Creates an item using the specified system item and primary action.
+- [- initWithBarButtonSystemItem:menu:](./uibarbuttonitem/initwithbarbuttonsystemitem_menu_.md)
+  Creates an item using the specified system item and context menu.
 ### Creating custom items
 - [convenience init(customView: UIView)](./uibarbuttonitem/init%28customview%29.md)
   Creates an item using the specified custom view.
@@ -76,6 +92,8 @@ In general, specify a value for the normal state so that other states without a 
   Places the item in a fixed group that a person can’t move or remove from the navigation bar during layout customization.
 - [func creatingMovableGroup(customizationIdentifier: String) -> UIBarButtonItemGroup](./uibarbuttonitem/creatingmovablegroup%28customizationidentifier%29.md)
   Places the item in a movable group that a person can move but can’t remove from the navigation bar during layout customization.
+- [- creatingOptionalGroupWithCustomizationIdentifier:inDefaultCustomization:](./uibarbuttonitem/creatingoptionalgroupwithcustomizationidentifier_indefaultcustomization_.md)
+  Places the item in an optional group that a person can move, add to, or remove from the navigation bar during layout customization.
 ### Managing the custom view
 - [var customView: UIView?](./uibarbuttonitem/customview.md)
   A custom view representing the item.
@@ -158,6 +176,28 @@ In general, specify a value for the normal state so that other states without a 
   Removes the symbol effect that matches the specified discrete effect type, using the specified options and animation setting.
 - [func removeAllSymbolEffects(options: SymbolEffectOptions, animated: Bool)](./uibarbuttonitem/removeallsymboleffects%28options,animated%29.md)
   Removes all symbol effects from the bar button item, using the specified options and animation setting.
+- [- addSymbolEffect:](./uibarbuttonitem/addsymboleffect_.md)
+  Adds a symbol effect to the bar button item with default options and animation.
+- [- addSymbolEffect:options:](./uibarbuttonitem/addsymboleffect_options_.md)
+  Adds a symbol effect to the bar button item with the specified options and default animation.
+- [- addSymbolEffect:options:animated:](./uibarbuttonitem/addsymboleffect_options_animated_.md)
+  Adds a symbol effect to the bar button item with the specified options and animation.
+- [- setSymbolImage:withContentTransition:](./uibarbuttonitem/setsymbolimage_withcontenttransition_.md)
+  Sets a symbol image using the specified content-transition effect.
+- [- setSymbolImage:withContentTransition:options:](./uibarbuttonitem/setsymbolimage_withcontenttransition_options_.md)
+  Sets a symbol image using the specified content-transition effect and options.
+- [- removeSymbolEffectOfType:](./uibarbuttonitem/removesymboleffectoftype_.md)
+  Removes the symbol effect that matches the specified effect type.
+- [- removeSymbolEffectOfType:options:](./uibarbuttonitem/removesymboleffectoftype_options_.md)
+  Removes the symbol effect that matches the specified effect type, using the specified options.
+- [- removeSymbolEffectOfType:options:animated:](./uibarbuttonitem/removesymboleffectoftype_options_animated_.md)
+  Removes the symbol effect that matches the specified effect type, using the specified options and animation setting.
+- [- removeAllSymbolEffects](./uibarbuttonitem/removeallsymboleffects.md)
+  Removes all symbol effects from the bar button item.
+- [- removeAllSymbolEffectsWithOptions:](./uibarbuttonitem/removeallsymboleffectswithoptions_.md)
+  Removes all symbol effects from the bar button item, using the specified options.
+- [- removeAllSymbolEffectsWithOptions:animated:](./uibarbuttonitem/removeallsymboleffectswithoptions_animated_.md)
+  Removes all symbol effects from the bar button item, using the specified options and animation setting.
 ### Getting the group
 - [var buttonGroup: UIBarButtonItemGroup?](./uibarbuttonitem/buttongroup.md)
   The group that the button belongs to.
@@ -167,6 +207,10 @@ In general, specify a value for the normal state so that other states without a 
 ### Adding a badge
 - [var badge: UIBarButtonItem.Badge?](./uibarbuttonitem/badge-4sz3f.md)
 - [UIBarButtonItem.Badge](./uibarbuttonitem/badge-swift.struct.md)
+- [badge](./uibarbuttonitem/badge-1zzen.md)
+  Sets a badge on the bar button item. Supported in navigation bars and toolbars.
+- [UIBarButtonItemBadge](./uibarbuttonitembadge.md)
+  A badge to be rendered on a bar button item.
 ### Customizing placement in a toolbar
 - [var hidesSharedBackground: Bool](./uibarbuttonitem/hidessharedbackground.md)
   A boolean value indicating whether the background this item may share with other items in the bar should be hidden.

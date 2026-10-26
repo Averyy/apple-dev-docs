@@ -37,12 +37,20 @@ To get a mouse object and its input values, register for the [`GCMouseDidConnect
   A notification that posts after a mouse connects to the device.
 - [static let GCMouseDidDisconnect: NSNotification.Name](../Foundation/nsnotification/name-swift.struct/gcmousediddisconnect.md)
   A notification that posts after a mouse disconnects from the device.
+- [GCMouseDidConnectNotification](./gcmousedidconnectnotification.md)
+  A notification that posts after a mouse connects to the device.
+- [GCMouseDidDisconnectNotification](./gcmousediddisconnectnotification.md)
+  A notification that posts after a mouse disconnects from the device.
 ### Handling multiple mouse devices
 - [class var current: GCMouse?](./gcmouse/current.md)
   The most recent mouse that the user connects.
 - [static let GCMouseDidBecomeCurrent: NSNotification.Name](../Foundation/nsnotification/name-swift.struct/gcmousedidbecomecurrent.md)
   A notification that posts when a mouse becomes the most recent mouse that the user connects.
 - [static let GCMouseDidStopBeingCurrent: NSNotification.Name](../Foundation/nsnotification/name-swift.struct/gcmousedidstopbeingcurrent.md)
+  A notification that posts when a mouse stops being the most recent mouse that the user connects.
+- [GCMouseDidBecomeCurrentNotification](./gcmousedidbecomecurrentnotification.md)
+  A notification that posts when a mouse becomes the most recent mouse that the user connects.
+- [GCMouseDidStopBeingCurrentNotification](./gcmousedidstopbeingcurrentnotification.md)
   A notification that posts when a mouse stops being the most recent mouse that the user connects.
 ### Getting input values
 - [var mouseInput: GCMouseInput?](./gcmouse/mouseinput.md)

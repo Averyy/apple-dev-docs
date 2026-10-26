@@ -21,7 +21,7 @@ extern id<NSObject> ProExtensionHostSingleton();
 
 ## Mentions
 
-- [Interacting with the Final Cut Pro Timeline](https://developer.apple.com/documentation/professional-video-applications/interacting-with-the-final-cut-pro-timeline)
+- [Interacting with the Final Cut Pro Timeline](../Professional-Video-Applications/interacting-with-the-final-cut-pro-timeline.md)
 
 #### Return Value
 
@@ -52,7 +52,7 @@ if ([singleton conformsToProtocol:@protocol(FCPXHost)])
 ## See Also
 
 ### FCPX Interactions
-- [Interacting with the Final Cut Pro Timeline](https://developer.apple.com/documentation/professional-video-applications/interacting-with-the-final-cut-pro-timeline)
+- [Interacting with the Final Cut Pro Timeline](../Professional-Video-Applications/interacting-with-the-final-cut-pro-timeline.md)
   Extend your workflows beyond media exchange by enabling a workflow extension to interact with the Final Cut Pro timeline.
 - [protocol FCPXHost](./fcpxhost.md)
   A protocol that provides an interface to retrieve the Final Cut Pro timeline proxy objects and details of the host app.

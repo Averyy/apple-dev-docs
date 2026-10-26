@@ -42,6 +42,15 @@ Explicitly specify relationships between types by marking them as subtypes of ot
   An object that represents a type of data to load, send, or receive.
 ### Reference
 - [UniformTypeIdentifiers Constants](./uniformtypeidentifiers-constants.md)
+### Variables
+- [UTTypeCSS](./uttypecss.md)
+- [UTTypeDNG](./uttypedng.md)
+- [UTTypeEXR](./uttypeexr.md)
+- [UTTypeGeoJSON](./uttypegeojson.md)
+- [UTTypeHEICS](./uttypeheics.md)
+- [UTTypeJPEGXL](./uttypejpegxl.md)
+- [UTTypeLinkPresentationMetadata](./uttypelinkpresentationmetadata.md)
+- [UTTypeTarArchive](./uttypetararchive.md)
 
 
 ---

@@ -133,6 +133,8 @@ func fetchRecords(
   Fetches a specific subscription and delivers it to a completion handler.
 - [func fetchAllSubscriptions(completionHandler: ([CKSubscription]?, (any Error)?) -> Void)](./ckdatabase/fetchallsubscriptions%28completionhandler%29.md)
   Fetches all subscriptions from the current database.
+- [- fetchSubscriptionWithID:completionHandler:](./ckdatabase/fetchsubscriptionwithid_completionhandler_.md)
+  Fetches a specific subscription and delivers it to a completion handler.
 ### Modifying Subscriptions
 - [func modifySubscriptions(saving: [CKSubscription], deleting: [CKSubscription.ID]) async throws -> (saveResults: [CKSubscription.ID : Result<CKSubscription, any Error>], deleteResults: [CKSubscription.ID : Result<Void, any Error>])](./ckdatabase/modifysubscriptions%28saving,deleting%29.md)
   Modifies the specified subscriptions and returns the results to an awaiting caller.
@@ -143,6 +145,8 @@ func fetchRecords(
 - [func deleteSubscription(withID: CKSubscription.ID) async throws -> CKSubscription.ID](./ckdatabase/deletesubscription%28withid%29.md)
   Deletes a specific subscription and returns the deleted subscription’s identifier to an awaiting caller.
 - [func delete(withSubscriptionID: CKSubscription.ID, completionHandler: (String?, (any Error)?) -> Void)](./ckdatabase/delete%28withsubscriptionid,completionhandler%29.md)
+  Deletes a specific subscription and delivers the deleted subscription’s identifier to a completion handler.
+- [- deleteSubscriptionWithID:completionHandler:](./ckdatabase/deletesubscriptionwithid_completionhandler_.md)
   Deletes a specific subscription and delivers the deleted subscription’s identifier to a completion handler.
 ### Fetching Changes
 - [func databaseChanges(since: CKServerChangeToken?, resultsLimit: Int?) async throws -> (modifications: [CKDatabase.DatabaseChange.Modification], deletions: [CKDatabase.DatabaseChange.Deletion], changeToken: CKServerChangeToken, moreComing: Bool)](./ckdatabase/databasechanges%28since,resultslimit%29.md)
@@ -208,6 +212,8 @@ func fetchRecords(
   A conduit to your app’s databases.
 - [class CKOperationGroup](./ckoperationgroup.md)
   An explicit association between two or more operations.
+- [CKRecordValue](./ckrecordvalue-c.protocol.md)
+  The protocol that provides strong type-checking for objects that the CloudKit framework stores on the server.
 
 
 ---

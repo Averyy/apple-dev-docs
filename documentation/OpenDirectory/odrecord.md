@@ -33,6 +33,10 @@ class ODRecord
   Verifies the credentials for interaction with the record’s node using other types of authentication available to Open Directory.
 - [func verifyPassword(String!) throws](./odrecord/verifypassword%28_%29.md)
   Verifies the password for interaction with the record.
+- [- passwordPolicyAndReturnError:](./odrecord/passwordpolicyandreturnerror_.md)
+  Returns a dictionary containing the password policy for the record.
+- [- setNodeCredentialsUsingKerberosCache:error:](./odrecord/setnodecredentialsusingkerberoscache_error_.md)
+  Sets the credentials for interaction with the record’s node using a Kerberos cache.
 ### Managing Group Records
 - [func addMemberRecord(ODRecord!) throws](./odrecord/addmemberrecord%28_%29.md)
   Adds a member record to this group record.

@@ -33,6 +33,8 @@ This method is nestable, that is, you can call it multiple times. To turn off no
   Asks the media library to turn off notifications for whenever the library changes.
 - [var lastModifiedDate: Date](./lastmodifieddate.md)
   The calendar date on which the media library was last modified.
+- [MPMediaLibraryDidChangeNotification](../mpmedialibrarydidchangenotification.md)
+  Indicates the media library has changed.
 
 
 ---

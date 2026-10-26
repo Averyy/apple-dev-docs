@@ -74,6 +74,9 @@ The lower 16 bits represent the typeface, and the upper 16 bits describe appeara
 ### Initializer
 - [init(rawValue: UInt32)](./symbolictraits-swift.struct/init%28rawvalue%29.md)
   Creates a symbol traits structure with the specified raw value.
+### Enumeration Cases
+- [UIFontDescriptorClassUnknown](../uifontdescriptorsymbolictraits/uifontdescriptorclassunknown.md)
+  The font has no design classification.
 
 ## Relationships
 

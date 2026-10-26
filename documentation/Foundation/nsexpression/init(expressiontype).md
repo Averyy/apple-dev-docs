@@ -41,6 +41,8 @@ This method is the designated initializer for `NSExpression`.
 
 ### Related Documentation
 - [Predicate Programming Guide](https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/Predicates/AdditionalChapters/Introduction.html#//apple_ref/doc/uid/TP40001789)
+- [+ expressionWithFormat:](./expressionwithformat_.md)
+  Creates the expression with the specified expression arguments.
 ### Creating an Expression
 - [init(format: String, argumentArray: [Any])](./init%28format,argumentarray%29.md)
   Creates the expression with the specified expression format and array of arguments.

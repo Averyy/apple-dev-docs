@@ -131,6 +131,14 @@
 - [var kCGStatusWindowLevel: CGWindowLevel](./kcgstatuswindowlevel.md)
 - [var kCGTornOffMenuWindowLevel: CGWindowLevel](./kcgtornoffmenuwindowlevel.md)
 - [var kCGUtilityWindowLevel: CGWindowLevel](./kcgutilitywindowlevel.md)
+- [kCGBaseWindowLevel](./kcgbasewindowlevel.md)
+- [kCGCursorWindowLevel](./kcgcursorwindowlevel.md)
+- [kCGDesktopIconWindowLevel](./kcgdesktopiconwindowlevel.md)
+- [kCGDesktopWindowLevel](./kcgdesktopwindowlevel.md)
+- [kCGMaximumWindowLevel](./kcgmaximumwindowlevel.md)
+- [kCGMinimumWindowLevel](./kcgminimumwindowlevel.md)
+- [CGDisplayNoErr](./cgdisplaynoerr.md)
+- [CGEventNoErr](./cgeventnoerr.md)
 
 ## See Also
 
@@ -139,6 +147,11 @@
 - [Core Graphics Enumerations](./core-graphics-enumerations.md)
 - [Core Graphics Functions](./core-graphics-functions.md)
 - [Core Graphics Data Types](./core-graphics-data-types.md)
+- [CGAffineTransform](./cgaffinetransform.md)
+  An affine transformation matrix for use in drawing 2D graphics.
+- [CGGeometry](./cggeometry.md)
+  Various structures and associated functions for 2D geometric primitives.
+- [Core Graphics Macros](./core-graphics-macros.md)
 
 
 ---

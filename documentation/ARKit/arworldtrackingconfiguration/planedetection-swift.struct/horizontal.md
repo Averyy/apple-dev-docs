@@ -27,6 +27,8 @@ ARPlaneDetectionHorizontal
   The session detects surfaces that are parallel to gravity, regardless of other orientation.
 - [static var vertical: ARWorldTrackingConfiguration.PlaneDetection](./vertical.md)
   The session detects surfaces that are parallel to gravity, regardless of other orientation.
+- [ARPlaneDetectionNone](../../arplanedetection/arplanedetectionnone.md)
+  Plane detection is disabled.
 
 
 ---

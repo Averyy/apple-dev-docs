@@ -26,6 +26,12 @@ init(conversionSettings: [AVCaptionSettingsKey : Any])
 
 - `conversionSettings`: A dictionary that specifies the conversion settings that this instance uses.
 
+## See Also
+
+### Creating a format conformer
+- [+ captionFormatConformerWithConversionSettings:](./captionformatconformerwithconversionsettings_.md)
+  A class method that creates a new object with format conversion settings.
+
 
 ---
 

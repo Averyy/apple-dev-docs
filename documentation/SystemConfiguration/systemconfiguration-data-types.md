@@ -26,6 +26,8 @@
 - [SystemConfiguration Enumerations](./systemconfiguration-enumerations.md)
 - [SystemConfiguration Constants](./systemconfiguration-constants.md)
 - [SystemConfiguration Functions](./systemconfiguration-functions.md)
+- [DHCPClientPreferences](./dhcpclientpreferences.md)
+- [SCDynamicStoreCopyDHCPInfo](./scdynamicstorecopydhcpinfo-apicollection.md)
 
 
 ---

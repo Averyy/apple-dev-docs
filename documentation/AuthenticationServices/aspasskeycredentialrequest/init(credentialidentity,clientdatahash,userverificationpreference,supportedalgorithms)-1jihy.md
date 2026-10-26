@@ -43,6 +43,12 @@ The `supportedAlgorithms` parameter is empty for credential assertion requests. 
   Initializes a passkey credential request, providing additional passkey assertion data.
 - [convenience init(credentialIdentity: ASPasskeyCredentialIdentity, clientDataHash: Data, userVerificationPreference: ASAuthorizationPublicKeyCredentialUserVerificationPreference, supportedAlgorithms: [ASCOSEAlgorithmIdentifier], extensionInput: ASPasskeyRegistrationCredentialExtensionInput?)](./init%28credentialidentity,clientdatahash,userverificationpreference,supportedalgorithms,extensioninput%29-1258o.md)
   Initializes a passkey credential request, providing additional passkey registration data.
+- [- initWithCredentialIdentity:clientDataHash:userVerificationPreference:supportedAlgorithms:](./initwithcredentialidentity_clientdatahash_userverificationpreference_supportedalgorithms_.md)
+  Initializes a passkey credential request.
+- [- initWithCredentialIdentity:clientDataHash:userVerificationPreference:supportedAlgorithms:assertionExtensionInput:](./initwithcredentialidentity_clientdatahash_userverificationpreference_supportedalgorithms_assertionextensioninput_.md)
+  Initializes a passkey credential request, providing additional passkey registration data.
+- [- initWithCredentialIdentity:clientDataHash:userVerificationPreference:supportedAlgorithms:registrationExtensionInput:](./initwithcredentialidentity_clientdatahash_userverificationpreference_supportedalgorithms_registrationextensioninput_.md)
+  Initializes a passkey credential request, providing additional passkey registration data.
 
 
 ---

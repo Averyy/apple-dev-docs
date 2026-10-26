@@ -73,6 +73,9 @@ com.apple.speech.synthesis.voice.Zarvox
   A list of Unicode character id ranges that define the Unicode characters that can be spoken in character-by-character mode by this voice.
 ### Initializers
 - [init(rawValue: String)](./voiceattributekey/init%28rawvalue%29.md)
+### Deprecated
+- [NSVoiceLanguage](../nsvoicelanguage.md)
+  The language of the voice (currently US English only). An `NSString`
 
 ## Relationships
 

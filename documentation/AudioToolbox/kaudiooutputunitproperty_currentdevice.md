@@ -39,6 +39,8 @@ kAudioOutputUnitProperty_CurrentDevice
   A read/write `UInt32` value valid on the audio unit global scope.
 - [var kAudioOutputUnitProperty_IsRunning: AudioUnitPropertyID](./kaudiooutputunitproperty_isrunning.md)
   Indicates whether an audio unit is running (`TRUE`) or not (`FALSE`).
+- [kAudioOutputUnitProperty_OSWorkgroup](./kaudiooutputunitproperty_osworkgroup.md)
+  The workgroup associated with the audio device underlying this Audio Unit.
 
 
 ---

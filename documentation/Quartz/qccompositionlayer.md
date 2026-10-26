@@ -38,6 +38,10 @@ You can pass data to the input ports, or retrieve data from the output ports, of
   Initializes and returns a composition layer using the Quartz Composer composition in the specified file.
 - [init!(composition: QCComposition!)](./qccompositionlayer/init%28composition%29.md)
   Initializes and returns a  composition layer using the provided Quartz Composer composition.
+- [+ compositionLayerWithFile:](./qccompositionlayer/compositionlayerwithfile_.md)
+  Creates and returns an instance of a composition layer using the Quartz Composer composition in the specified file.
+- [+ compositionLayerWithComposition:](./qccompositionlayer/compositionlayerwithcomposition_.md)
+  Creates and returns an instance of a composition layer using the provided Quartz Composer composition.
 ### Getting the Composition
 - [func composition() -> QCComposition!](./qccompositionlayer/composition%28%29.md)
   Returns the composition associated with the layer.

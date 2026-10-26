@@ -65,6 +65,8 @@ The managed object context’s change processing is explicitly disabled around t
   Provides an opportunity to add code into the life cycle of the managed object after converting it to a fault.
 - [class func fetchRequest() -> NSFetchRequest<any NSFetchRequestResult>](./fetchrequest%28%29.md)
   Returns an initialized fetch request with the entity this subclass represents.
+- [+ fetchRequest](./fetchrequest.md)
+  Returns an initialized fetch request with the entity this subclass represents.
 
 
 ---

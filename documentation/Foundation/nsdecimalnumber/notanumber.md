@@ -43,6 +43,14 @@ This value can be a useful way of handling non-numeric data in an input file. Th
   A decimal number equivalent to the number 1.0.
 - [class var zero: NSDecimalNumber](./zero.md)
   A decimal number equivalent to the number 0.0.
+- [+ decimalNumberWithDecimal:](./decimalnumberwithdecimal_.md)
+  Creates and returns a decimal number equivalent to a given decimal structure.
+- [+ decimalNumberWithMantissa:exponent:isNegative:](./decimalnumberwithmantissa_exponent_isnegative_.md)
+  Creates and returns a decimal number equivalent to the number specified by the arguments.
+- [+ decimalNumberWithString:](./decimalnumberwithstring_.md)
+  Creates a decimal number whose value is equivalent to that in a given numeric string.
+- [+ decimalNumberWithString:locale:](./decimalnumberwithstring_locale_.md)
+  Creates a decimal number whose value is equivalent to that in a given numeric string, interpreted using a given locale.
 
 
 ---

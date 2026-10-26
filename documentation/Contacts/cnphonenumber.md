@@ -33,6 +33,8 @@ class CNPhoneNumber
 ### Creating a Phone Number Object
 - [init(stringValue: String)](./cnphonenumber/init%28stringvalue%29.md)
   Returns a new phone number object initialized with the specified phone number string.
+- [+ phoneNumberWithStringValue:](./cnphonenumber/phonenumberwithstringvalue_.md)
+  Returns a new phone number object initialized with the specified phone number string.
 ### Getting the Phone Number
 - [var stringValue: String](./cnphonenumber/stringvalue.md)
   The string value of the phone number.

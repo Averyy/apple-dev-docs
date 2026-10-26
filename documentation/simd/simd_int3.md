@@ -38,11 +38,15 @@ typedef int __attribute__((ext_vector_type(3))) simd_int3;
   Returns a new vector from the specified scalar values.
 - [func simd_make_int3_undef(Int32) -> simd_int3](./simd_make_int3_undef%28_%29-5q1nf.md)
   Returns a new vector with the first element set to a scalar value, and other elements undefined.
+- [vector3](./vector3-8jq14.md)
+  Returns a new vector from the specified scalar values.
 ### Functions to Create Three-Element Vectors From Combinations of Vectors and Scalar Values
 - [func simd_make_int3(simd_int2, Int32) -> simd_int3](./simd_make_int3%28_,_%29-7nox5.md)
   Returns a new vector from a vector and a scalar value.
 - [func simd_make_int3(Int32, simd_int2) -> simd_int3](./simd_make_int3%28_,_%29-48lb0.md)
   Returns a new vector from a scalar value and a vector.
+- [vector3](./vector3-7wv2r.md)
+  Returns a new vector from a vector and a scalar value.
 ### Common Functions
 - [func simd_abs(simd_int3) -> simd_int3](./simd_abs%28_%29-8d4m3.md)
   Returns the absolute value of each element in a vector.
@@ -92,6 +96,51 @@ typedef int __attribute__((ext_vector_type(3))) simd_int3;
 ### Alternative Type Alias
 - [typealias int3](./int3.md)
 - [typealias vector_int3](./vector_int3.md)
+### Functions to Create Three-Element Vectors From Vectors of Other Types
+- [simd_int](./simd_int-9k08p.md)
+  Returns a new vector from the specified vector of 8-bit, signed integer elements.
+- [simd_int](./simd_int-9ka9l.md)
+  Returns a new vector from the specified vector of 8-bit, unsigned integer elements.
+- [simd_int](./simd_int-9jvcp.md)
+  Returns a new vector from the specified vector of 16-bit, signed integer elements.
+- [simd_int](./simd_int-9k56h.md)
+  Returns a new vector from the specified vector of 16-bit, unsigned integer elements.
+- [simd_int](./simd_int-9jx7l.md)
+  Returns a new vector from the specified vector of 32-bit, signed integer elements.
+- [simd_int](./simd_int-9k71d.md)
+  Returns a new vector from the specified vector of 32-bit, unsigned integer elements.
+- [simd_int](./simd_int-9jvmj.md)
+  Returns a new vector from the specified vector of 64-bit, signed integer elements.
+- [simd_int](./simd_int-9k5ln.md)
+  Returns a new vector from the specified vector of 64-bit, unsigned integer elements.
+- [simd_int](./simd_int-9k8m7.md)
+  Returns a new vector from the specified vector of 32-bit, floating-point elements.
+- [simd_int](./simd_int-9k83f.md)
+  Returns a new vector from the specified vector of 64-bit, floating-point elements.
+### Functions to Perform Saturating Conversion From Vectors of Other Types
+- [simd_int_sat](./simd_int_sat-6weo6.md)
+  Returns a new vector from the specified vector of 8-bit, signed integer elements.
+- [simd_int_sat](./simd_int_sat-6w4w6.md)
+  Returns a new vector from the specified vector of 8-bit, unsigned integer elements.
+- [simd_int_sat](./simd_int_sat-6w9t2.md)
+  Returns a new vector from the specified vector of 16-bit, signed integer elements.
+- [simd_int_sat](./simd_int_sat-6vzom.md)
+  Returns a new vector from the specified vector of 16-bit, unsigned integer elements.
+- [simd_int_sat](./simd_int_sat-6wgfu.md)
+  Returns a new vector from the specified vector of 32-bit, signed integer elements.
+- [simd_int_sat](./simd_int_sat-6w6m2.md)
+  Returns a new vector from the specified vector of 32-bit, unsigned integer elements.
+- [simd_int_sat](./simd_int_sat-6wfsi.md)
+  Returns a new vector from the specified vector of 64-bit, signed integer elements.
+- [simd_int_sat](./simd_int_sat-6w5ki.md)
+  Returns a new vector from the specified vector of 64-bit, unsigned integer elements.
+- [simd_int_sat](./simd_int_sat-6w3v2.md)
+  Returns a new vector from the specified vector of 32-bit, floating-point elements.
+- [simd_int_sat](./simd_int_sat-6w3aa.md)
+  Returns a new vector from the specified vector of 64-bit, floating-point elements.
+### Functions to Perform Round-Half-to-Even Conversion From Single-Precision Vectors
+- [simd_int_rte](./simd_int_rte-8wkxz.md)
+  Returns a new vector from the specified three-element vector.
 
 ## See Also
 

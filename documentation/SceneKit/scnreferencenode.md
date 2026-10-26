@@ -43,6 +43,8 @@ When you tell a reference node to load its content, SceneKit loads the reference
 ### Creating a Reference Node
 - [init?(url: URL)](./scnreferencenode/init%28url%29-9dkfj.md)
   Initializes a node whose content is to be loaded from the referenced URL.
+- [+ referenceNodeWithURL:](./scnreferencenode/referencenodewithurl_.md)
+  Creates a node whose content is to be loaded from the referenced URL.
 ### Loading and Unloading a Reference Node’s Content
 - [var referenceURL: URL](./scnreferencenode/referenceurl.md)
   The URL to a scene file from which to load content for the reference node.

@@ -8,6 +8,7 @@
 ### Macros
 - [var HKAnchoredObjectQueryNoAnchor: Int32](./hkanchoredobjectquerynoanchor.md)
   An anchor that returns all of the matching samples currently in the HealthKit store.
+- [HK_EXTERN](./hk_extern.md)
 
 ## See Also
 

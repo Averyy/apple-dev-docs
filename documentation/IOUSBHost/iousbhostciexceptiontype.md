@@ -67,6 +67,17 @@ typedef enum { ... } IOUSBHostCIExceptionType;
 - [Anonymous](./api-3612476-anonymous.md)
 - [Anonymous](./api-3612477-anonymous.md)
 - [Anonymous](./api-3612478-anonymous.md)
+- [IOUSBHostCIControllerState](./iousbhostcicontrollerstate.md)
+- [IOUSBHostCIDeviceSpeed](./iousbhostcidevicespeed.md)
+- [IOUSBHostCIDeviceState](./iousbhostcidevicestate.md)
+- [IOUSBHostCIEndpointState](./iousbhostciendpointstate.md)
+- [IOUSBHostCILinkState](./iousbhostcilinkstate.md)
+- [IOUSBHostCIMessageStatus](./iousbhostcimessagestatus.md)
+- [IOUSBHostCIMessageType](./iousbhostcimessagetype.md)
+- [IOUSBHostCIPortState](./iousbhostciportstate.md)
+- [IOUSBHostCIUserClientVersion](./iousbhostciuserclientversion.md)
+- [IOUSBHostIsochronousTransactionOptions](./iousbhostisochronoustransactionoptions.md)
+- [IOUSBHostIsochronousTransferOptions](./iousbhostisochronoustransferoptions.md)
 
 
 ---

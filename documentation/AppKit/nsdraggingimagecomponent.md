@@ -28,6 +28,8 @@ An array of [`NSDraggingImageComponent`](./nsdraggingimagecomponent.md) instance
 ### Creating a Dragging Image Component
 - [init(key: NSDraggingItem.ImageComponentKey)](./nsdraggingimagecomponent/init%28key%29.md)
   Initializes and returns a dragging image component with the specified key.
+- [+ draggingImageComponentWithKey:](./nsdraggingimagecomponent/draggingimagecomponentwithkey_.md)
+  Creates and returns a dragging image component with the specified key.
 ### Dragging Image Component
 - [var key: NSDraggingItem.ImageComponentKey](./nsdraggingimagecomponent/key.md)
   The unique name of this image component instance.

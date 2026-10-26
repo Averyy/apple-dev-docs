@@ -32,11 +32,17 @@ Use this view to display a widget that allows people to learn more about the App
 ### Creating the widget
 - [convenience init(amount: Decimal, currency: Locale.Currency)](./pkpaylaterview/init%28amount,currency%29.md)
   Creates a new Apple Pay Later visual merchandising widget view with the shopping cart amount and currency you specify.
+- [- initWithAmount:currencyCode:](./pkpaylaterview/initwithamount_currencycode_.md)
+  Creates a new Apple Pay Later visual merchandising widget view with the amount and currency code you specify.
 ### Accessing information about the transaction
 - [var amount: Decimal](./pkpaylaterview/amount-f3gs.md)
   The decimal value that represents the amount of the customer’s shopping cart or item pricing.
 - [var currency: Locale.Currency](./pkpaylaterview/currency.md)
   The ISO-4217 currency code for the country or region of the merchant’s principle place of business.
+- [amount](./pkpaylaterview/amount-1jzg2.md)
+  The decimal value that represents the amount of the customer’s shopping cart or item pricing.
+- [currencyCode](./pkpaylaterview/currencycode.md)
+  A string that represents the ISO-4217 currency code for the country or region of the merchant’s principle place of business.
 ### Responding to changes in the view’s height
 - [var delegate: any PKPayLaterViewDelegate](./pkpaylaterview/delegate.md)
   A delegate object that receives messages about the changes to the Apple Pay Later view.
@@ -55,6 +61,8 @@ Use this view to display a widget that allows people to learn more about the App
 ### Validating transactions
 - [enum PKPayLater](./pkpaylater.md)
   Functions for validating information the framework displays in an Apple Pay Later visual merchandising widget.
+- [PKPayLaterValidateAmount](./pkpaylatervalidateamount.md)
+  Checks if the framework can display Apple Pay Later visual merchandising widget information for the given amount and currency.
 
 ## Relationships
 

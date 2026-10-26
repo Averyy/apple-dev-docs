@@ -32,6 +32,10 @@ When `nil`, the navigation bar will fall back to the `subtitle`.
   A string to display as the subtitle in the navigation bar.
 - [var attributedSubtitle: AttributedString?](./attributedsubtitle-wrjk.md)
 - [var largeAttributedSubtitle: AttributedString?](./largeattributedsubtitle-4z2gx.md)
+- [attributedSubtitle](./attributedsubtitle-4474c.md)
+  An attributed string to display as the subtitle in the navigation bar.
+- [largeAttributedSubtitle](./largeattributedsubtitle-2c0pk.md)
+  An attributed string to be rendered below the large title.
 
 
 ---

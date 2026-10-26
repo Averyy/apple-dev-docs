@@ -43,6 +43,8 @@ class MTLIndirectInstanceAccelerationStructureDescriptor
 - [var motionTransformCountBufferOffset: Int](./mtlindirectinstanceaccelerationstructuredescriptor/motiontransformcountbufferoffset.md)
 - [var motionTransformStride: Int](./mtlindirectinstanceaccelerationstructuredescriptor/motiontransformstride.md)
 - [var motionTransformType: MTLTransformType](./mtlindirectinstanceaccelerationstructuredescriptor/motiontransformtype.md)
+### Type Methods
+- [+ descriptor](./mtlindirectinstanceaccelerationstructuredescriptor/descriptor.md)
 
 ## Relationships
 

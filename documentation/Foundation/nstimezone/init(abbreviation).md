@@ -41,6 +41,8 @@ In general, you are discouraged from using abbreviations except for unique insta
 
 ### Related Documentation
 - [Date and Time Programming Guide](https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/DatesAndTimes/DatesAndTimes.html#//apple_ref/doc/uid/10000039i)
+- [+ timeZoneWithName:](./timezonewithname_.md)
+  Returns the time zone object identified by a given identifier.
 ### Creating Time Zones
 - [init?(name: String)](./init%28name%29.md)
   Returns a time zone initialized with a given identifier.
@@ -52,6 +54,8 @@ In general, you are discouraged from using abbreviations except for unique insta
   Returns an array of strings listing the IDs of all the time zones known to the system.
 - [class var abbreviationDictionary: [String : String]](./abbreviationdictionary.md)
   Returns a dictionary holding the mappings of time zone abbreviations to time zone names.
+- [+ timeZoneWithName:data:](./timezonewithname_data_.md)
+  Returns the time zone with a given identifier whose data has been initialized using given data.
 
 
 ---

@@ -39,6 +39,10 @@ The text provider created by this method uses the default time zone information 
 ### Creating a Text Provider
 - [convenience init(date: Date, units: NSCalendar.Unit, timeZone: TimeZone?)](./init%28date,units,timezone%29.md)
   Creates and returns a text provider with the specified date and time zone.
+- [- initWithDate:units:](./initwithdate_units_.md)
+  Creates and returns a text provider with the specified date and the default time zone.
+- [- initWithDate:units:timeZone:](./initwithdate_units_timezone_.md)
+  Creates and returns a text provider with the specified date and time zone.
 
 
 ---

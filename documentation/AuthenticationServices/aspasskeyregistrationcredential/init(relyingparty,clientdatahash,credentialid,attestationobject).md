@@ -35,6 +35,10 @@ init(relyingParty: String, clientDataHash: Data, credentialID: Data, attestation
 ### Creating a passkey registration credential
 - [convenience init(relyingParty: String, clientDataHash: Data, credentialID: Data, attestationObject: Data, extensionOutput: ASPasskeyRegistrationCredentialExtensionOutput?)](./init%28relyingparty,clientdatahash,credentialid,attestationobject,extensionoutput%29.md)
   Initializes a passkey registration credential object.
+- [+ credentialWithRelyingParty:clientDataHash:credentialID:attestationObject:](./credentialwithrelyingparty_clientdatahash_credentialid_attestationobject_.md)
+  Creates and initializes a new passkey registration credential.
+- [- initWithRelyingParty:clientDataHash:credentialID:attestationObject:extensionOutput:](./initwithrelyingparty_clientdatahash_credentialid_attestationobject_extensionoutput_.md)
+  Initializes a passkey registration credential object.
 
 
 ---

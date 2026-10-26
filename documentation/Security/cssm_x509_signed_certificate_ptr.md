@@ -1,0 +1,19 @@
+# CSSM_X509_SIGNED_CERTIFICATE_PTR
+
+**Framework**: Security  
+**Kind**: typealias  
+**Role**: Type Alias
+
+**Availability**:
+- macOS 10.0+ - Deprecated in 10.7
+
+## Declaration
+
+```c
+typedef struct cssm_x509_signed_certificate * CSSM_X509_SIGNED_CERTIFICATE_PTR;
+```
+
+
+---
+
+*[View on Apple Developer](https://developer.apple.com/documentation/security/cssm_x509_signed_certificate_ptr)*

@@ -40,6 +40,8 @@ An *audio graph* turns the data in your chart into an audible representation by 
 ### Live audio graphs
 - [class AXLiveAudioGraph](./axliveaudiograph.md)
   An object that represents an audio graph for a live-updating, continuous data series for VoiceOver.
+### Constants
+- [AX_EXTERN](./ax_extern.md)
 
 ## See Also
 

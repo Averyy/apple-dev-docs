@@ -60,6 +60,8 @@ typedef enum { ... } es_new_client_result_t;
   Creates a new client instance and connects it to the Endpoint Security system.
 - [typealias es_handler_block_t](./es_handler_block_t.md)
   A block that handles a message received from Endpoint Security.
+- [es_client_t](./es_client_t.md)
+  An opaque type that stores the Endpoint Security client state.
 
 
 ---

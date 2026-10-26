@@ -19,6 +19,14 @@ var version: Str32
 Str32 version;
 ```
 
+## See Also
+
+### Fields
+- [level](./api-1459988-level.md)
+  Specifies the level of the imaging language used by the printer driver. 
+- [release](./api-1459131-release.md)
+  Specifies the release of the imaging language.
+
 
 ---
 

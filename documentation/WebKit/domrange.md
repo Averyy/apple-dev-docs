@@ -55,6 +55,9 @@ class DOMRange
 - [func setStartBefore(DOMNode!)](./domrange/setstartbefore%28_%29.md)
 - [func surroundContents(DOMNode!)](./domrange/surroundcontents%28_%29.md)
 - [func toString() -> String!](./domrange/tostring%28%29.md)
+- [- compareBoundaryPoints::](./domrange/compareboundarypoints__.md)
+- [- setEnd::](./domrange/setend__.md)
+- [- setStart::](./domrange/setstart__.md)
 
 ## Relationships
 

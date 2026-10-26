@@ -9,9 +9,9 @@ Perform operations on vectors that contain half-precision floating-point element
 
 The simd library provides many functions in this group, in three variants:
 
-- The default variant—for example, [`simd_rsqrt(_:)`](https://developer.apple.com/documentation/simd/simd_rsqrt(_:)-i5ka)
-- The precise variant—for example, [`simd_precise_rsqrt(_:)`](https://developer.apple.com/documentation/simd/simd_precise_rsqrt(_:)-136bw)
-- The fast variant—for example, [`simd_fast_rsqrt(_:)`](https://developer.apple.com/documentation/simd/simd_fast_rsqrt(_:)-8p6tk)
+- The default variant—for example, [`simd_rsqrt(_:)`](../simd/simd_rsqrt%28_%29-i5ka.md)
+- The precise variant—for example, [`simd_precise_rsqrt(_:)`](../simd/simd_precise_rsqrt%28_%29-136bw.md)
+- The fast variant—for example, [`simd_fast_rsqrt(_:)`](../simd/simd_fast_rsqrt%28_%29-8p6tk.md)
 
 The precise variants are accurate to a few units in the last place (ULPs). The fast variants provide greater speed but may have as little as 8 bits of accuracy for half-precision functions.
 
@@ -20,19 +20,19 @@ The compiler flag defines the behavior of the default variant. Ordinarily, the c
 ## Topics
 
 ### Vector data types
-- [typealias simd_half1](https://developer.apple.com/documentation/simd/simd_half1)
+- [typealias simd_half1](../simd/simd_half1.md)
   A vector of one 16-bit floating-point element.
-- [typealias simd_half2](https://developer.apple.com/documentation/simd/simd_half2)
+- [typealias simd_half2](../simd/simd_half2.md)
   A vector of two 16-bit floating-point elements.
-- [typealias simd_half3](https://developer.apple.com/documentation/simd/simd_half3)
+- [typealias simd_half3](../simd/simd_half3.md)
   A vector of three 16-bit floating-point elements.
-- [typealias simd_half4](https://developer.apple.com/documentation/simd/simd_half4)
+- [typealias simd_half4](../simd/simd_half4.md)
   A vector of four 16-bit floating-point elements.
-- [typealias simd_half8](https://developer.apple.com/documentation/simd/simd_half8)
+- [typealias simd_half8](../simd/simd_half8.md)
   A vector of eight 16-bit floating-point elements.
-- [typealias simd_half16](https://developer.apple.com/documentation/simd/simd_half16)
+- [typealias simd_half16](../simd/simd_half16.md)
   A vector of sixteen 16-bit floating-point elements.
-- [typealias simd_half32](https://developer.apple.com/documentation/simd/simd_half32)
+- [typealias simd_half32](../simd/simd_half32.md)
   A vector of thirty-two 16-bit floating-point elements.
 
 ## See Also

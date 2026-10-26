@@ -64,6 +64,9 @@ To use AccessorySetupKit with [Wi-Fi Aware](../WiFiAware/WiFiAware.md), specify 
   NSError domain for AccessorySetupKit errors.
 - [ASError.Code](./aserror/code.md)
   Codes that describe errors encountered during accessory discovery.
+### Macros
+- [AS_EXTERN](./as_extern.md)
+- [as_os_ownership](./as_os_ownership.md)
 
 
 ---

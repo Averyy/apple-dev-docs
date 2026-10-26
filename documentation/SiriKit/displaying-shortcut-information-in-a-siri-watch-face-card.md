@@ -13,13 +13,13 @@ Display and customize watch-specific shortcut information with a default card te
 The Siri watch face displays a relevant shortcut in a card that can provide the following information:
 
 - App icon and name (supplied by the system)
-- Title, subtitle, and custom image (supplied by the intent or user activity used to create the shortcut, or by an [`INDefaultCardTemplate`](https://developer.apple.com/documentation/intents/indefaultcardtemplate) object)
+- Title, subtitle, and custom image (supplied by the intent or user activity used to create the shortcut, or by an [`INDefaultCardTemplate`](../Intents/indefaultcardtemplate.md) object)
 
 > ❗ **Important**: The Siri Watch Face is available in watchOS 11 and earlier. To make content available in the Smart Stack on Apple Watch using widgets, refer to [WidgetKit](../WidgetKit/WidgetKit.md), [Increasing the visibility of widgets in Smart Stacks](../WidgetKit/widget-suggestions-in-smart-stacks.md), and [App Intents](../AppIntents/AppIntents.md). For more information about migrating your SiriKit code to App Intents, refer to [Migrating widgets from SiriKit Intents to App Intents](../WidgetKit/migrating-from-sirikit-intents-to-app-intents.md) and [Soup Chef with App Intents: Migrating custom intents](./soup-chef-with-app-intents-migrating-custom-intents.md).
 
 ##### Display Intent-Based Shortcuts
 
-When your app uses an [`INIntent`](https://developer.apple.com/documentation/intents/inintent) object to create the shortcut, the system retrieves the intent’s title and subtitle from the intent settings defined in the intent definition file. To include an image, call [`setImage:forParameterNamed:`](https://developer.apple.com/documentation/intents/inintent/setimage:forparameternamed:) on the intent and pass in an [`INImage`](https://developer.apple.com/documentation/intents/inimage).
+When your app uses an [`INIntent`](../Intents/inintent.md) object to create the shortcut, the system retrieves the intent’s title and subtitle from the intent settings defined in the intent definition file. To include an image, call [`setImage:forParameterNamed:`](../Intents/inintent/setimage_forparameternamed_.md) on the intent and pass in an [`INImage`](../Intents/inimage.md).
 
 The listing below sets the image for a order soup intent in the Soup Chef sample app.
 
@@ -49,7 +49,7 @@ userActivity.contentAttributeSet = attributes
 
 ##### Use Card Templates
 
-If you want to show a UI specific to the watch—for example, to display a shortcut’s title that is shorter than the one Siri displays on the user’s iPhone or iPad—provide the relevant shortcut a default card template by setting the [`watchTemplate`](https://developer.apple.com/documentation/intents/inrelevantshortcut/watchtemplate) property. The template allows your app to customize the [`title`](https://developer.apple.com/documentation/intents/indefaultcardtemplate/title), [`subtitle`](https://developer.apple.com/documentation/intents/indefaultcardtemplate/subtitle), and [`image`](https://developer.apple.com/documentation/intents/indefaultcardtemplate/image). (You cannot change or remove the app icon and name shown in the card.)
+If you want to show a UI specific to the watch—for example, to display a shortcut’s title that is shorter than the one Siri displays on the user’s iPhone or iPad—provide the relevant shortcut a default card template by setting the [`watchTemplate`](../Intents/inrelevantshortcut/watchtemplate.md) property. The template allows your app to customize the [`title`](../Intents/indefaultcardtemplate/title.md), [`subtitle`](../Intents/indefaultcardtemplate/subtitle.md), and [`image`](../Intents/indefaultcardtemplate/image.md). (You cannot change or remove the app icon and name shown in the card.)
 
 The listing below sets the template for an order intent in the Soup Chef sample app.
 
@@ -83,13 +83,13 @@ The system displays the information in one of four layouts based on the informat
 - [Soup Chef: Accelerating App Interactions with Shortcuts](./soup-chef-accelerating-app-interactions-with-shortcuts.md)
   Make it easy for people to use Siri with your app by providing shortcuts to your app’s actions.
 ### Siri watch face
-- [class INDefaultCardTemplate](https://developer.apple.com/documentation/intents/indefaultcardtemplate)
+- [class INDefaultCardTemplate](../Intents/indefaultcardtemplate.md)
   A card template for customizing the Siri watch face for a shortcut.
 - [Defining Relevant Shortcuts for the Siri Watch Face](./defining-relevant-shortcuts-for-the-siri-watch-face.md)
   Inform Siri when your app’s shortcuts may be useful to the user.
-- [class INRelevantShortcut](https://developer.apple.com/documentation/intents/inrelevantshortcut)
+- [class INRelevantShortcut](../Intents/inrelevantshortcut.md)
   An object that defines a shortcut and its relevance to the user.
-- [class INRelevantShortcutStore](https://developer.apple.com/documentation/intents/inrelevantshortcutstore)
+- [class INRelevantShortcutStore](../Intents/inrelevantshortcutstore.md)
   An object that saves relevant shortcuts.
 
 

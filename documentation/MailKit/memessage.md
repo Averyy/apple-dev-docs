@@ -49,6 +49,11 @@ class MEMessage
 - [var encryptionState: MEMessageEncryptionState](./memessage/encryptionstate.md)
 ### Initializers
 - [init?(coder: NSCoder)](./memessage/init%28coder%29.md)
+### Accessing the Sent and Received Dates
+- [dateSent](./memessage/datesent.md)
+  The date the sender sent the message.
+- [dateReceived](./memessage/datereceived.md)
+  The date that the recipient received the message.
 
 ## Relationships
 

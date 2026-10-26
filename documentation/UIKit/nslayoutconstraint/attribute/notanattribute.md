@@ -60,6 +60,8 @@ Use this value when creating a constraint that assigns a constant to an attribut
   The object’s right margin.
 - [NSLayoutConstraint.Attribute.topMargin](./topmargin.md)
   The object’s top margin.
+- [NSLayoutAttributeBaseline](../../nslayoutattribute/nslayoutattributebaseline.md)
+  The object’s baseline.
 
 
 ---

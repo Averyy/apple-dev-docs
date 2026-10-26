@@ -60,11 +60,15 @@ Language identification is most reliable for longer passages of text. For very s
   Generates the probabilities of possible languages for the processed text.
 - [func reset()](./nllanguagerecognizer/reset%28%29.md)
   Resets the recognizer to its initial state.
+- [- languageHypothesesWithMaximum:](./nllanguagerecognizer/languagehypotheseswithmaximum_.md)
+  Generates the probabilities of possible languages for the processed text.
 ### Guiding the recognizer
 - [var languageHints: [NLLanguage : Double]](./nllanguagerecognizer/languagehints-7dwgv.md)
   A dictionary that maps languages to their probabilities in the language identification process.
 - [var languageConstraints: [NLLanguage]](./nllanguagerecognizer/languageconstraints.md)
   Limits the set of possible languages that the recognizer will return.
+- [languageHints](./nllanguagerecognizer/languagehints-3gy00.md)
+  A dictionary that maps languages to their probabilities in the language identification process.
 
 ## Relationships
 

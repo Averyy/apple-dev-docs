@@ -90,6 +90,12 @@ typedef union { ... } SPPoint3DFloat;
 - [var x: Float](./point3dfloat/x.md)
 - [var y: Float](./point3dfloat/y.md)
 - [var z: Float](./point3dfloat/z.md)
+- [x](./sppoint3dfloat/x.md)
+  The x-coordinate of the point.
+- [y](./sppoint3dfloat/y.md)
+  The y-coordinate of the point.
+- [z](./sppoint3dfloat/z.md)
+  The z-coordinate of the point.
 ### Instance Methods
 - [func applying(ScaledPose3DFloat) -> Point3DFloat](./point3dfloat/applying%28_%29-2dhmf.md)
   Returns the primitive that results from applying a scaled pose to the primitive.

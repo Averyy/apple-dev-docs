@@ -1,0 +1,91 @@
+# Core Media Macros
+
+**Framework**: Core Media  
+**Role**: API Collection
+
+## Topics
+
+### Macros
+- [var COREMEDIA_EXPORTS_USE_EXPLICIT_VISIBILITY: Int32](./coremedia_exports_use_explicit_visibility.md)
+- [CM_ASSUME_NONNULL_BEGIN](./cm_assume_nonnull_begin.md)
+- [CM_ASSUME_NONNULL_END](./cm_assume_nonnull_end.md)
+- [CM_BRIDGED_TYPE](./cm_bridged_type.md)
+- [CM_EXPORT](./cm_export.md)
+- [CM_INLINE](./cm_inline.md)
+- [CM_NONNULL](./cm_nonnull.md)
+- [CM_NULLABLE](./cm_nullable.md)
+- [CM_RELEASES_ARGUMENT](./cm_releases_argument.md)
+- [CM_RETURNS_NOT_RETAINED_PARAMETER](./cm_returns_not_retained_parameter.md)
+- [CM_RETURNS_RETAINED](./cm_returns_retained.md)
+- [CM_RETURNS_RETAINED_BLOCK](./cm_returns_retained_block.md)
+- [CM_RETURNS_RETAINED_PARAMETER](./cm_returns_retained_parameter.md)
+- [CM_SWIFT_INIT_FOR_CF_TYPE](./cm_swift_init_for_cf_type.md)
+- [CM_SWIFT_NONSENDABLE](./cm_swift_nonsendable.md)
+- [CM_SWIFT_SENDABLE](./cm_swift_sendable.md)
+- [CM_SWIFT_SENDING_RELEASED_PARAMETER](./cm_swift_sending_released_parameter.md)
+- [CM_SWIFT_SENDING_RETAINED_PARAMETER](./cm_swift_sending_retained_parameter.md)
+- [CM_SWIFT_SENDING_RETAINED_RESULT](./cm_swift_sending_retained_result.md)
+- [CM_SWIFT_SENDING](./cm_swift_sending.md)
+- [CMClosedCaptionFormatDescriptionGetFormatType](./cmclosedcaptionformatdescriptiongetformattype.md)
+- [CMMuxedFormatDescriptionGetStreamType](./cmmuxedformatdescriptiongetstreamtype.md)
+- [CMSubtitleFormatDescriptionGetFormatType](./cmsubtitleformatdescriptiongetformattype.md)
+- [CMTAG_IS_INVALID](./cmtag_is_invalid.md)
+- [CMTAG_IS_VALID](./cmtag_is_valid.md)
+- [CMTimeCodeFormatDescriptionGetFormatType](./cmtimecodeformatdescriptiongetformattype.md)
+- [CMTIMEMAPPING_IS_EMPTY](./cmtimemapping_is_empty.md)
+- [CMTIMEMAPPING_IS_INVALID](./cmtimemapping_is_invalid.md)
+- [CMTIMEMAPPING_IS_VALID](./cmtimemapping_is_valid.md)
+- [CMVideoFormatDescriptionGetCodecType](./cmvideoformatdescriptiongetcodectype.md)
+- [COREMEDIA_EXPORT_VISIBILITY](./coremedia_export_visibility.md)
+- [kCMFormatDescriptionChromaLocation_Bottom](./kcmformatdescriptionchromalocation_bottom-c.macro.md)
+- [kCMFormatDescriptionChromaLocation_BottomLeft](./kcmformatdescriptionchromalocation_bottomleft-c.macro.md)
+- [kCMFormatDescriptionChromaLocation_Center](./kcmformatdescriptionchromalocation_center-c.macro.md)
+- [kCMFormatDescriptionChromaLocation_DV420](./kcmformatdescriptionchromalocation_dv420-c.macro.md)
+- [kCMFormatDescriptionChromaLocation_Left](./kcmformatdescriptionchromalocation_left-c.macro.md)
+- [kCMFormatDescriptionChromaLocation_Top](./kcmformatdescriptionchromalocation_top-c.macro.md)
+- [kCMFormatDescriptionChromaLocation_TopLeft](./kcmformatdescriptionchromalocation_topleft-c.macro.md)
+- [kCMFormatDescriptionColorPrimaries_EBU_3213](./kcmformatdescriptioncolorprimaries_ebu_3213-c.macro.md)
+- [kCMFormatDescriptionColorPrimaries_ITU_R_709_2](./kcmformatdescriptioncolorprimaries_itu_r_709_2-c.macro.md)
+- [kCMFormatDescriptionColorPrimaries_SMPTE_C](./kcmformatdescriptioncolorprimaries_smpte_c-c.macro.md)
+- [kCMFormatDescriptionExtension_ChromaLocationBottomField](./kcmformatdescriptionextension_chromalocationbottomfield-c.macro.md)
+- [kCMFormatDescriptionExtension_ChromaLocationTopField](./kcmformatdescriptionextension_chromalocationtopfield-c.macro.md)
+- [kCMFormatDescriptionExtension_CleanAperture](./kcmformatdescriptionextension_cleanaperture-c.macro.md)
+- [kCMFormatDescriptionExtension_ColorPrimaries](./kcmformatdescriptionextension_colorprimaries-c.macro.md)
+- [kCMFormatDescriptionExtension_FieldCount](./kcmformatdescriptionextension_fieldcount-c.macro.md)
+- [kCMFormatDescriptionExtension_FieldDetail](./kcmformatdescriptionextension_fielddetail-c.macro.md)
+- [kCMFormatDescriptionExtension_GammaLevel](./kcmformatdescriptionextension_gammalevel-c.macro.md)
+- [kCMFormatDescriptionExtension_PixelAspectRatio](./kcmformatdescriptionextension_pixelaspectratio-c.macro.md)
+- [kCMFormatDescriptionExtension_TransferFunction](./kcmformatdescriptionextension_transferfunction-c.macro.md)
+- [kCMFormatDescriptionExtension_VerbatimImageDescription](./kcmformatdescriptionextension_verbatimimagedescription-c.macro.md)
+- [kCMFormatDescriptionExtension_YCbCrMatrix](./kcmformatdescriptionextension_ycbcrmatrix-c.macro.md)
+- [kCMFormatDescriptionFieldDetail_SpatialFirstLineEarly](./kcmformatdescriptionfielddetail_spatialfirstlineearly-c.macro.md)
+- [kCMFormatDescriptionFieldDetail_SpatialFirstLineLate](./kcmformatdescriptionfielddetail_spatialfirstlinelate-c.macro.md)
+- [kCMFormatDescriptionFieldDetail_TemporalBottomFirst](./kcmformatdescriptionfielddetail_temporalbottomfirst-c.macro.md)
+- [kCMFormatDescriptionFieldDetail_TemporalTopFirst](./kcmformatdescriptionfielddetail_temporaltopfirst-c.macro.md)
+- [kCMFormatDescriptionKey_CleanApertureHeight](./kcmformatdescriptionkey_cleanapertureheight-c.macro.md)
+- [kCMFormatDescriptionKey_CleanApertureHorizontalOffset](./kcmformatdescriptionkey_cleanaperturehorizontaloffset-c.macro.md)
+- [kCMFormatDescriptionKey_CleanApertureVerticalOffset](./kcmformatdescriptionkey_cleanapertureverticaloffset-c.macro.md)
+- [kCMFormatDescriptionKey_CleanApertureWidth](./kcmformatdescriptionkey_cleanaperturewidth-c.macro.md)
+- [kCMFormatDescriptionKey_PixelAspectRatioHorizontalSpacing](./kcmformatdescriptionkey_pixelaspectratiohorizontalspacing-c.macro.md)
+- [kCMFormatDescriptionKey_PixelAspectRatioVerticalSpacing](./kcmformatdescriptionkey_pixelaspectratioverticalspacing-c.macro.md)
+- [kCMFormatDescriptionTransferFunction_ITU_R_709_2](./kcmformatdescriptiontransferfunction_itu_r_709_2-c.macro.md)
+- [kCMFormatDescriptionTransferFunction_SMPTE_240M_1995](./kcmformatdescriptiontransferfunction_smpte_240m_1995-c.macro.md)
+- [kCMFormatDescriptionTransferFunction_UseGamma](./kcmformatdescriptiontransferfunction_usegamma-c.macro.md)
+- [kCMFormatDescriptionYCbCrMatrix_ITU_R_601_4](./kcmformatdescriptionycbcrmatrix_itu_r_601_4-c.macro.md)
+- [kCMFormatDescriptionYCbCrMatrix_ITU_R_709_2](./kcmformatdescriptionycbcrmatrix_itu_r_709_2-c.macro.md)
+- [kCMFormatDescriptionYCbCrMatrix_SMPTE_240M_1995](./kcmformatdescriptionycbcrmatrix_smpte_240m_1995-c.macro.md)
+- [ME_EXPORT](./me_export.md)
+- [MT_EXPORT](./mt_export.md)
+- [VT_EXPORT](./vt_export.md)
+
+## See Also
+
+### Reference
+- [Core Media Constants](./core-media-constants.md)
+- [Core Media Functions](./core-media-functions.md)
+- [Core Media Type Aliases](./core-media-type-aliases.md)
+
+
+---
+
+*[View on Apple Developer](https://developer.apple.com/documentation/coremedia/core-media-macros)*

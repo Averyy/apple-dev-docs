@@ -30,7 +30,7 @@ A numeric identifier for the request. If you need to cancel the request before i
 
 #### Discussion
 
-A Live Photo is a picture, taken with a supported device, that includes movement and sound from the moments just before and after its capture. Much like how a [`UIImage`](../../UIKit/uiimage.md) object represents a ready-to-use form of an image, a [`PHLivePhoto`](../phlivephoto.md) object represents a Live Photo whose image, motion, and sound data are prepared for display. Use this method to request an asset’s Live Photo form; after Photos calls your `resultHandler` block to provide the Live Photo, you can display it using the [`PHLivePhotoView`](https://developer.apple.com/documentation/photosui/phlivephotoview) class.
+A Live Photo is a picture, taken with a supported device, that includes movement and sound from the moments just before and after its capture. Much like how a [`UIImage`](../../UIKit/uiimage.md) object represents a ready-to-use form of an image, a [`PHLivePhoto`](../phlivephoto.md) object represents a Live Photo whose image, motion, and sound data are prepared for display. Use this method to request an asset’s Live Photo form; after Photos calls your `resultHandler` block to provide the Live Photo, you can display it using the [`PHLivePhotoView`](../../PhotosUI/phlivephotoview.md) class.
 
 > **Note**:  Use this method only when you plan to display the motion and sound content associated with a Live Photo. In contexts where you need only a still image for a Live Photo asset—for example, when loading thumbnails to display in a photo chooser interface—use the [`requestImage(for:targetSize:contentMode:options:resultHandler:)`](./requestimage%28for,targetsize,contentmode,options,resulthandler%29.md) method instead.
 

@@ -1,0 +1,152 @@
+# vDSP_vrampmuladd2
+
+**Framework**: Accelerate  
+**Kind**: func  
+**Role**: Function
+
+Multiplies a single-precision, stereo input vector by a value that ramps up on successive calls, and cumulatively adds the result to the output vector.
+
+**Availability**:
+- iOS 4.0+
+- iPadOS 4.0+
+- Mac Catalyst 13.1+
+- macOS 10.6+
+- tvOS
+- visionOS 1.0+
+- watchOS 2.0+
+
+## Declaration
+
+```c
+void vDSP_vrampmuladd2(const float *__I0, const float *__I1, vDSP_Stride __IS, float *__Start, const float *__Step, float *__O0, float *__O1, vDSP_Stride __OS, vDSP_Length __N);
+```
+
+#### Discussion
+
+The functions in this group are similar to [`vDSP_vrampmul`](./vdsp_vrampmul.md), but rather than overwriting the output vector, they add the results to the existing values in the output vector. The following code describes the calculation:
+
+```c
+for (i = 0; i < N; ++i) {
+    O[i*OS] += *Start * I[i*IS];
+    *Start += *Step;
+}
+```
+
+For example, the following code fills the array `i` with sine values:
+
+```swift
+let n = vDSP_Length(1024)
+
+let i: [Float] = (0 ..< n).map {
+    return sin(Float($0) / 20)
+}
+```
+
+The following illustrates the values of `i`:
+
+![Visualization of a sine wave.](https://developer.apple.com/tutorials/images/com.apple.accelerate/media-3239805@2x.png)
+
+The following code fills the output array, o, with increasing powers of two:
+
+```swift
+var o = (0 ..< n).map {
+    return pow(Float($0), 2) * 0.0001
+}
+```
+
+The following illustrates the values of `o`:
+
+![Visualization of the exponential curve.](https://developer.apple.com/tutorials/images/com.apple.accelerate/media-3239864@2x.png)
+
+Pass `i` as the input vector, and `o` as the output vector to [`vDSP_vrampmuladd`](./vdsp_vrampmuladd.md), as shown here:
+
+**Swift**:
+
+```swift
+let i0: [Float] = [1, 2, 3, 4, 5, 6, 7, 8]
+let i1: [Float] = [10, 20, 30, 40, 50, 60, 70, 80]
+var o0: [Float] = [0, 0, 0, 0, 0, 0, 0, 0]
+var o1: [Float] = [0, 0, 0, 0, 0, 0, 0, 0]
+
+var start: Float = 0
+var step: Float = 0.1
+
+vDSP_vrampmuladd2(i0, i1, 1,
+                  &start,
+                  &step,
+                  &o0, &o1, 1,
+                  8)
+
+// Prints "[0.0, 0.2, 0.6, 1.2, 2.0, 3.0, 4.2, 5.6]".
+print(o0)
+
+// Prints "[0.0, 2.0, 6.0, 12.0, 20.0, 30.0, 42.0, 56.0]".
+print(o1)
+```
+
+**Objective-C**:
+
+```objc
+float i0[8] = {1, 2, 3, 4, 5, 6, 7, 8};
+float i1[8] = {10, 20, 30, 40, 50, 60, 70, 80};
+float o0[8] = {0, 0, 0, 0, 0, 0, 0, 0};
+float o1[8] = {0, 0, 0, 0, 0, 0, 0, 0};
+
+float start = 0;
+float step = 0.1f;
+
+vDSP_vrampmuladd2(i0, i1, 1,
+                  &start,
+                  &step,
+                  o0, o1, 1,
+                  8);
+
+// Prints "o0=[0, 0.2, 0.6, 1.2, 2, 3, 4.2, 5.6]".
+printf("o0=[%g, %g, %g, %g, %g, %g, %g, %g]\n",
+       o0[0], o0[1], o0[2], o0[3],
+       o0[4], o0[5], o0[6], o0[7]);
+
+// Prints "o1=[0, 2, 6, 12, 20, 30, 42, 56]".
+printf("o1=[%g, %g, %g, %g, %g, %g, %g, %g]\n",
+       o1[0], o1[1], o1[2], o1[3],
+       o1[4], o1[5], o1[6], o1[7]);
+```
+
+On return, the output vector, `o`, is overwritten with a ramped-sine wave, based on its original exponential curve:
+
+![Visualization of the generated vector.](https://developer.apple.com/tutorials/images/com.apple.accelerate/media-3239836@2x.png)
+
+## Parameters
+
+- `__I0`: The first input vector, multiplied by the ramp function.
+- `__I1`: The second input vector, multiplied by the ramp function.
+- `__IS`: The stride for both input vectors.
+- `__Start`: On input, the initial value of the ramp. On output, the next value in the ramp.
+- `__Step`: The increment, or decrement if negative, between each generated element.
+- `__O0`: The first output vector.
+- `__O1`: The second output vector.
+- `__OS`: The stride for both output vectors.
+- `__N`: The number of elements that the function processes.
+
+## See Also
+
+### Stereo ramp generation
+- [vDSP_vrampmul2](./vdsp_vrampmul2.md)
+  Generates a single-precision, stereo ramped vector and multiplies that vector by an input vector.
+- [vDSP_vrampmul2D](./vdsp_vrampmul2d.md)
+  Generates a double-precision, stereo ramped vector and multiplies that vector by an input vector.
+- [vDSP_vrampmul2_s1_15](./vdsp_vrampmul2_s1_15.md)
+  Generates a fixed-point, 1.15 format, stereo ramped vector and multiplies that vector by an input vector.
+- [vDSP_vrampmul2_s8_24](./vdsp_vrampmul2_s8_24.md)
+  Generates a fixed-point, 8.24 format, stereo ramped vector and multiplies that vector by an input vector.
+- [vDSP_vrampmuladd2D](./vdsp_vrampmuladd2d.md)
+  Multiplies a double-precision, stereo input vector by a value that ramps up on successive calls, and cumulatively adds the result to the output vector.
+- [vDSP_vrampmuladd2_s1_15](./vdsp_vrampmuladd2_s1_15.md)
+  Multiplies a fixed-point, 1.15 format, stereo input vector by a value that ramps on successive calls, and adds the result to the output vector.
+- [vDSP_vrampmuladd2_s8_24](./vdsp_vrampmuladd2_s8_24.md)
+  Multiplies a fixed-point, 8.24 format, stereo input vector by a value that ramps on successive calls, and adds the result to the output vector.
+
+
+---
+
+*[View on Apple Developer](https://developer.apple.com/documentation/accelerate/vdsp_vrampmuladd2)*

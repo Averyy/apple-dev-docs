@@ -30,6 +30,8 @@ enum AVAudioSessionActivationOptions : NSUInteger;
 ### Creating an activation option
 - [init(rawValue: UInt)](./avaudiosessionactivationoptions/init%28rawvalue%29.md)
   Creates an activation-options set from a raw bitmask.
+### Getting standard activation options
+- [AVAudioSessionActivationOptionNone](./avaudiosessionactivationoptions/avaudiosessionactivationoptionnone.md)
 
 ## Relationships
 
@@ -54,6 +56,8 @@ enum AVAudioSessionActivationOptions : NSUInteger;
   Deactivates the audio session asynchronously.
 - [struct AVAudioSessionDeactivationOptions](./avaudiosessiondeactivationoptions.md)
   Options for deactivating an AVAudioSession
+- [- setActive:error:](./avaudiosession/setactive_error_.md)
+  Activates or deactivates your app’s audio session.
 
 
 ---

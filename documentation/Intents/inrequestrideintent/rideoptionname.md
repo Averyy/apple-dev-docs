@@ -49,6 +49,8 @@ You can define the names of ride options using custom vocabulary terms. For info
   The time at which to pick up the user.
 - [var dropOffLocation: CLPlacemark?](./dropofflocation.md)
   The user’s destination.
+- [partySize](./partysize-64kfc.md)
+  The number of passengers that the ride must accommodate.
 
 
 ---

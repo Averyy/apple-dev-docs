@@ -42,6 +42,8 @@ Distributing individual pages of a PDF document to separate threads is not suppo
 ### Creating PDF Documents
 - [init?(CGDataProvider)](./init%28_%29-gbq6.md)
   Creates a Core Graphics PDF document using a data provider.
+### Related Documentation
+- [CGContextDrawPDFDocument](../cgcontextdrawpdfdocument.md)
 
 
 ---

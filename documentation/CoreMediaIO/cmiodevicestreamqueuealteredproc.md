@@ -37,6 +37,7 @@ typedef void (*)(unsigned int, void *, void *) CMIODeviceStreamQueueAlteredProc;
 - [typealias CMIOStreamScheduledOutputNotificationProc](./cmiostreamscheduledoutputnotificationproc.md)
 - [struct CMIOExtensionProperty](./cmioextensionproperty.md)
   A structure that defines the properties that providers, devices, and streams support.
+- [CMIOHardwarePlugInRef](./cmiohardwarepluginref.md)
 
 
 ---

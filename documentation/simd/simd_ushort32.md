@@ -43,6 +43,8 @@ typedef unsigned short __attribute__((ext_vector_type(32))) simd_ushort32;
   Returns a new vector from the specified eight-element vector, and other elements undefined.
 - [func simd_make_ushort32_undef(simd_ushort16) -> simd_ushort32](./simd_make_ushort32_undef%28_%29-ie6m.md)
   Returns a new vector from the specified sixteen-element vector, and other elements undefined.
+- [vector32](./vector32-9avu.md)
+  Returns a new vector from the specified vectors.
 ### Functions to Create Thirty Two-Element Vectors From Scalar Values
 - [func simd_make_ushort32(UInt16) -> simd_ushort32](./simd_make_ushort32%28_%29-9so7l.md)
   Returns a new vector with the first element set to a scalar value, and other elements set to zero.
@@ -72,6 +74,24 @@ typedef unsigned short __attribute__((ext_vector_type(32))) simd_ushort32;
   Returns a vector that contains elements from either the first or second parameter, based on the corresponding element in the third parameter.
 ### Alternative Type Alias
 - [typealias vector_ushort32](./vector_ushort32.md)
+### Functions to Create Thirty Two-Element Vectors From Vectors of Other Types
+- [simd_ushort](./simd_ushort-5br1u.md)
+  Returns a new vector from the specified vector of 8-bit, signed integer elements.
+- [simd_ushort](./simd_ushort-5c12q.md)
+  Returns a new vector from the specified vector of 8-bit, unsigned integer elements.
+- [simd_ushort](./simd_ushort-5bm2a.md)
+  Returns a new vector from the specified vector of 16-bit, signed integer elements.
+- [simd_ushort](./simd_ushort-5bvzm.md)
+  Returns a new vector from the specified vector of 16-bit, unsigned integer elements.
+### Functions to Perform Saturating Conversion From Vectors of Other Types
+- [simd_ushort_sat](./simd_ushort_sat-11tza.md)
+  Returns a new vector from the specified vector of 8-bit, signed integer elements.
+- [simd_ushort_sat](./simd_ushort_sat-11k7a.md)
+  Returns a new vector from the specified vector of 8-bit, unsigned integer elements.
+- [simd_ushort_sat](./simd_ushort_sat-11p46.md)
+  Returns a new vector from the specified vector of 16-bit, signed integer elements.
+- [simd_ushort_sat](./simd_ushort_sat-11fae.md)
+  Returns a new vector from the specified vector of 16-bit, unsigned integer elements.
 
 ## See Also
 

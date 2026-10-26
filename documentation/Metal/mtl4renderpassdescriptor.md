@@ -65,6 +65,11 @@ To create render command encoders, you typically call [`renderCommandEncoderWith
   Configures a buffer into which Metal writes counts of fragments (pixels) passing the depth and stencil tests.
 - [var visibilityResultType: MTLVisibilityResultType](./mtl4renderpassdescriptor/visibilityresulttype.md)
   Determines if Metal accumulates visibility results between render encoders or resets them.
+### Instance Methods
+- [- getSamplePositions:count:](./mtl4renderpassdescriptor/getsamplepositions_count_.md)
+  Retrieves the previously-configured custom sample positions.
+- [- setSamplePositions:count:](./mtl4renderpassdescriptor/setsamplepositions_count_.md)
+  Configures the custom sample positions to use in MSAA rendering.
 
 ## Relationships
 

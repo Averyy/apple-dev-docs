@@ -35,6 +35,8 @@ Playlist attributes to use as possible values for the [`MPMediaPlaylistPropertyP
   A smart playlist includes items that match one or more user-specified rules.
 - [static var genius: MPMediaPlaylistAttribute](./mpmediaplaylistattribute/genius.md)
   A Genius playlist includes items related to other items in your Music library.
+- [MPMediaPlaylistAttributeNone](./mpmediaplaylistattribute/mpmediaplaylistattributenone.md)
+  A playlist with no attributes.
 ### Initializers
 - [init(rawValue: UInt)](./mpmediaplaylistattribute/init%28rawvalue%29.md)
   Creates a new instance with the specified raw value.

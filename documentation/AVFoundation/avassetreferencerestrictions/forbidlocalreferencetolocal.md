@@ -38,6 +38,8 @@ AVAssetReferenceRestrictionForbidLocalReferenceToLocal
   A remote asset shouldn’t follow references to remote media data stored at a different host.
 - [static var defaultPolicy: AVAssetReferenceRestrictions](./defaultpolicy.md)
   The asset should use the default reference restrictions policy.
+- [AVAssetReferenceRestrictionForbidNone](./avassetreferencerestrictionforbidnone.md)
+  The asset should follow all media references.
 
 
 ---

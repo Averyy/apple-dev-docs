@@ -37,11 +37,15 @@ This collection of documents describes the programming interfaces of the System 
 - [SystemConfiguration Constants](./systemconfiguration-constants.md)
 - [SystemConfiguration Functions](./systemconfiguration-functions.md)
 - [SystemConfiguration Data Types](./systemconfiguration-data-types.md)
+- [DHCPClientPreferences](./dhcpclientpreferences.md)
+- [SCDynamicStoreCopyDHCPInfo](./scdynamicstorecopydhcpinfo-apicollection.md)
 ### Entitlements
 - [Access Wi-Fi Information Entitlement](../BundleResources/entitlements/com.apple.developer.networking.wifi-info.md)
   A Boolean value indicating whether your app can access information about the connected Wi-Fi network.
 ### Type Aliases
 - [typealias AuthorizationRef](./authorizationref.md)
+### Macros
+- [Macros](./systemconfiguration-macros.md)
 
 ## See Also
 

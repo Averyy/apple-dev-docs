@@ -32,6 +32,8 @@ NSTableViewAnimationSlideLeft
   Animates a row insertion or removal by sliding downward.
 - [static var slideRight: NSTableView.AnimationOptions](./slideright.md)
   Animates a row insertion by sliding from the right. Animates a row removal by sliding towards the right.
+- [NSTableViewAnimationEffectNone](../../nstableviewanimationoptions/nstableviewanimationeffectnone.md)
+  Use no animation effects.
 
 
 ---

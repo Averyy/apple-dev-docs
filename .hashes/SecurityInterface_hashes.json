@@ -570,6 +570,11 @@
       "file_path": "documentation/SecurityInterface/sfchooseidentitytablecellview.md",
       "hash": "e29d8d191d942e0e8d61478c4f81cdecf32cc920a7a635298f98f6f7e0e63094"
     },
+    "https://developer.apple.com/documentation/securityinterface/sfchooseidentitytablecellview/issuertextfield-c.ivar": {
+      "etag": "\"1451-65d55f6646095-df\"",
+      "file_path": "documentation/SecurityInterface/sfchooseidentitytablecellview/issuertextfield-c.ivar.md",
+      "hash": "0a1e5f582a023dc14c5000f321850d0782cd1a6b0c1e59ac3f5f588d1335cedf"
+    },
     "https://developer.apple.com/documentation/securityinterface/sfchooseidentitytablecellview/issuertextfield-swift.property": {
       "etag": "\"1fe2-65d55f6646095-df\"",
       "file_path": "documentation/SecurityInterface/sfchooseidentitytablecellview/issuertextfield-swift.property.md",
@@ -1235,6 +1240,11 @@
       "file_path": "documentation/SecurityInterface/sfchooseidentitytablecellview.md",
       "hash": "e29d8d191d942e0e8d61478c4f81cdecf32cc920a7a635298f98f6f7e0e63094"
     },
+    "https://developer.apple.com/tutorials/data/documentation/securityinterface/sfchooseidentitytablecellview/issuertextfield-c.ivar.json": {
+      "etag": "\"1451-65d55f6646095-df\"",
+      "file_path": "documentation/SecurityInterface/sfchooseidentitytablecellview/issuertextfield-c.ivar.md",
+      "hash": "0a1e5f582a023dc14c5000f321850d0782cd1a6b0c1e59ac3f5f588d1335cedf"
+    },
     "https://developer.apple.com/tutorials/data/documentation/securityinterface/sfchooseidentitytablecellview/issuertextfield-swift.property.json": {
       "etag": "\"1fe2-65d55f6646095-df\"",
       "file_path": "documentation/SecurityInterface/sfchooseidentitytablecellview/issuertextfield-swift.property.md",
@@ -1333,8 +1343,8 @@
   },
   "metadata": {
     "render": {
-      "version": 1
+      "version": 2
     },
-    "total_pages": 266
+    "total_pages": 268
   }
 }

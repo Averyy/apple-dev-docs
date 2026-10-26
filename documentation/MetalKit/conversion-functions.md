@@ -12,6 +12,10 @@ Convert between Metal and Model I/O vertex representations.
   Returns a partially converted Metal vertex descriptor.
 - [func MTKModelIOVertexDescriptorFromMetal(MTLVertexDescriptor) -> MDLVertexDescriptor](./mtkmodeliovertexdescriptorfrommetal%28_%29.md)
   Returns a partially converted Model I/O vertex descriptor.
+- [MTKMetalVertexDescriptorFromModelIOWithError](./mtkmetalvertexdescriptorfrommodeliowitherror.md)
+  Returns a partially converted Metal vertex descriptor, reporting any error that occurs.
+- [MTKModelIOVertexDescriptorFromMetalWithError](./mtkmodeliovertexdescriptorfrommetalwitherror.md)
+  Returns a partially converted Model I/O vertex descriptor, reporting any error that occurs.
 ### Converting Between Model I/O and Metal Vertex Formats
 - [func MTKMetalVertexFormatFromModelIO(MDLVertexFormat) -> MTLVertexFormat](./mtkmetalvertexformatfrommodelio%28_%29.md)
   Returns a converted Metal vertex format.

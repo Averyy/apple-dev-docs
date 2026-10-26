@@ -24,6 +24,12 @@ init(kind: String, extensionBundleIdentifier: String)
 - `kind`: A string that uniquely identifies a widget in your WidgetKit extension.
 - `extensionBundleIdentifier`: The bundle identifier for your WidgetKit extension.
 
+## See Also
+
+### Creating static complication configurations
+- [+ staticWidgetMigrationConfigurationWithKind:extensionBundleIdentifier:](./staticwidgetmigrationconfigurationwithkind_extensionbundleidentifier_.md)
+  Creates an object that describes a static watchOS complication in your WidgetKit extension.
+
 
 ---
 

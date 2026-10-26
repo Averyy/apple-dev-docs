@@ -33,6 +33,8 @@ A Data Matrix code symbol is a 2D barcode format defined by the ISO/IEC 16022:20
 ### Creating a Descriptor
 - [init?(payload: Data, rowCount: Int, columnCount: Int, eccVersion: CIDataMatrixCodeDescriptor.ECCVersion)](./cidatamatrixcodedescriptor/init%28payload,rowcount,columncount,eccversion%29.md)
   Initializes a Data Matrix code descriptor for the given payload and parameters.
+- [+ descriptorWithPayload:rowCount:columnCount:eccVersion:](./cidatamatrixcodedescriptor/descriptorwithpayload_rowcount_columncount_eccversion_.md)
+  Creates a Data Matrix code descriptor for the given payload and parameters.
 ### Examining a Descriptor
 - [var errorCorrectedPayload: Data](./cidatamatrixcodedescriptor/errorcorrectedpayload-swift.property.md)
   The error-corrected payload containing the data encoded in the Data Matrix code symbol.
@@ -45,6 +47,11 @@ A Data Matrix code symbol is a 2D barcode format defined by the ISO/IEC 16022:20
 ### Error Correction Constants
 - [CIDataMatrixCodeDescriptor.ECCVersion](./cidatamatrixcodedescriptor/eccversion-swift.enum.md)
   Constants indicating the Data Matrix code ECC version.
+### Instance Variables
+- [columnCount](./cidatamatrixcodedescriptor/columncount-c.ivar.md)
+- [eccVersion](./cidatamatrixcodedescriptor/eccversion-c.ivar.md)
+- [errorCorrectedPayload](./cidatamatrixcodedescriptor/errorcorrectedpayload-c.ivar.md)
+- [rowCount](./cidatamatrixcodedescriptor/rowcount-c.ivar.md)
 
 ## Relationships
 

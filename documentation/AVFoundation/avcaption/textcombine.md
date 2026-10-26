@@ -63,6 +63,10 @@ Text combine is a special rendering policy that combines multiple characters int
   An object that presents ruby characters.
 - [func textCombine(at: String.Index) -> (AVCaption.TextCombine, Range<String.Index>)](./textcombine%28at%29.md)
   Returns the text combine at the index position.
+- [- rubyAtIndex:range:](./rubyatindex_range_.md)
+  Returns the ruby text at the index position.
+- [- textCombineAtIndex:range:](./textcombineatindex_range_.md)
+  Returns the text combine at the index position.
 
 
 ---

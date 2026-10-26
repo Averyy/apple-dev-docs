@@ -63,6 +63,8 @@ When the system delivers a push notification to your app, it gets the text for t
   The key that identifies the localized string for the notification’s subtitle.
 - [var subtitleLocalizationArgs: [String]?](./subtitlelocalizationargs.md)
   The fields for building a notification’s subtitle.
+- [subscriptionID](./subscriptionid-90zhj.md)
+  The ID of the subscription that triggers the notification.
 
 
 ---

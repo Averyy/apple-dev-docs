@@ -84,6 +84,12 @@ One approach that handles all of these situations is to use [`Operation`](../Fou
   A representation of the state of the data in a layout section at a specific point in time.
 - [class UIRefreshControl](./uirefreshcontrol.md)
   A standard control that can initiate the refreshing of a scroll view’s contents.
+- [UICollectionViewDiffableDataSource](./uicollectionviewdiffabledatasourcereference.md)
+  The object you use to manage data and provide cells for a collection view.
+- [NSDiffableDataSourceSnapshot](./nsdiffabledatasourcesnapshotreference.md)
+  A representation of the state of the data in a view at a specific point in time.
+- [NSDiffableDataSourceSectionSnapshot](./nsdiffabledatasourcesectionsnapshotreference.md)
+  A representation of the state of the data in a layout section at a specific point in time.
 
 
 ---

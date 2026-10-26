@@ -73,6 +73,8 @@ You must also override the primitive methods of the [`NSDictionary`](./nsdiction
   Initializes a newly allocated mutable dictionary.
 - [init(sharedKeySet: Any)](./nsmutabledictionary/init%28sharedkeyset%29.md)
   Creates a mutable dictionary which is optimized for dealing with a known set of keys.
+- [+ dictionaryWithCapacity:](./nsmutabledictionary/dictionarywithcapacity_.md)
+  Creates and returns a mutable dictionary, initially giving it enough allocated memory to hold a given number of entries.
 ### Adding Entries to a Mutable Dictionary
 - [func setObject(Any, forKey: any NSCopying)](./nsmutabledictionary/setobject%28_,forkey%29.md)
   Adds a given key-value pair to the dictionary.
@@ -82,6 +84,8 @@ You must also override the primitive methods of the [`NSDictionary`](./nsdiction
   Adds to the receiving dictionary the entries from another dictionary.
 - [func setDictionary([AnyHashable : Any])](./nsmutabledictionary/setdictionary%28_%29.md)
   Sets the contents of the receiving dictionary to entries in a given dictionary.
+- [- setObject:forKeyedSubscript:](./nsmutabledictionary/setobject_forkeyedsubscript_.md)
+  Adds a given key-value pair to the dictionary.
 ### Removing Entries From a Mutable Dictionary
 - [func removeObject(forKey: Any)](./nsmutabledictionary/removeobject%28forkey%29.md)
   Removes a given key and its associated value from the dictionary.
@@ -115,9 +119,15 @@ You must also override the primitive methods of the [`NSDictionary`](./nsdiction
 - [func addUserDefinedHeader(UnsafeRawPointer!, length: UInt32) -> OBEXError](./nsmutabledictionary/adduserdefinedheader%28_,length%29.md)
 - [func addWhoHeader(UnsafeRawPointer!, length: UInt32) -> OBEXError](./nsmutabledictionary/addwhoheader%28_,length%29.md)
 - [func getHeaderBytes() -> NSMutableData!](./nsmutabledictionary/getheaderbytes%28%29.md)
+- [- initWithContentsOfFile:](./nsmutabledictionary/initwithcontentsoffile_.md)
+- [- initWithContentsOfURL:](./nsmutabledictionary/initwithcontentsofurl_.md)
 ### Default Implementations
 - [NSDictionary Implementations](./nsmutabledictionary/nsdictionary-implementations.md)
 - [NSMutableDictionary Implementations](./nsmutabledictionary/nsmutabledictionary-implementations.md)
+### Type Methods
+- [+ dictionaryWithContentsOfFile:](./nsmutabledictionary/dictionarywithcontentsoffile_.md)
+- [+ dictionaryWithContentsOfURL:](./nsmutabledictionary/dictionarywithcontentsofurl_.md)
+- [+ withOBEXHeadersData:headersDataSize:](./nsmutabledictionary/withobexheadersdata_headersdatasize_.md)
 
 ## Relationships
 
@@ -140,6 +150,20 @@ You must also override the primitive methods of the [`NSDictionary`](./nsdiction
 - [Sendable](../Swift/sendable.md)
 - [SendableMetatype](../Swift/sendablemetatype.md)
 - [Sequence](../Swift/sequence.md)
+
+## See Also
+
+### Basic Collections
+- [NSArray](./nsarray.md)
+  A static ordered collection of objects.
+- [NSMutableArray](./nsmutablearray.md)
+  A dynamic ordered collection of objects.
+- [NSDictionary](./nsdictionary.md)
+  A static collection of objects associated with unique keys.
+- [NSSet](./nsset.md)
+  A static, unordered collection of unique objects.
+- [NSMutableSet](./nsmutableset.md)
+  A dynamic unordered collection of unique objects.
 
 
 ---

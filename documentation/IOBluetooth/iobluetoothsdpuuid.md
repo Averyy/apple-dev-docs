@@ -44,11 +44,17 @@ The IOBluetoothSDPUUID class can represent a UUID of any valid size (16, 32 or 1
   Returns an IOBluetoothSDPUUID object matching the target UUID, but with the given number of bytes.
 - [func isEqual(to: IOBluetoothSDPUUID!) -> Bool](./iobluetoothsdpuuid/isequal%28to%29.md)
   Compares the target IOBluetoothSDPUUID object with the given otherUUID object.
+- [- getSDPUUIDRef](./iobluetoothsdpuuid/getsdpuuidref.md)
+  Returns an IOBluetoothSDPUUIDRef representation of the target IOBluetoothSDPUUID object.
 ### Type Methods
 - [class func uuid16(BluetoothSDPUUID16) -> Self!](./iobluetoothsdpuuid/uuid16%28_%29.md)
   Creates a new 16-bit IOBluetoothSDPUUID with the given UUID16
 - [class func uuid32(BluetoothSDPUUID32) -> Self!](./iobluetoothsdpuuid/uuid32%28_%29.md)
   Creates a new 32-bit IOBluetoothSDPUUID with the given UUID32
+- [+ withSDPUUIDRef:](./iobluetoothsdpuuid/withsdpuuidref_.md)
+  Method call to convert an IOBluetoothSDPUUIDRef into an IOBluetoothSDPUUID *.
+### Instance Variables
+- [mUUIDData](./iobluetoothsdpuuid/muuiddata.md)
 
 ## Relationships
 

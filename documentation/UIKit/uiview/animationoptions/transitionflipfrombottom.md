@@ -56,6 +56,8 @@ UIViewAnimationOptionTransitionFlipFromBottom
   A linear animation curve causes an animation to occur evenly over its duration.
 - [static var transitionFlipFromLeft: UIView.AnimationOptions](./transitionflipfromleft.md)
   A transition that flips a view around its vertical axis from left to right (the left side of the view moves toward the front and right side toward the back).
+- [UIViewAnimationOptionTransitionNone](../../uiviewanimationoptions/uiviewanimationoptiontransitionnone.md)
+  No transition is specified.
 
 
 ---

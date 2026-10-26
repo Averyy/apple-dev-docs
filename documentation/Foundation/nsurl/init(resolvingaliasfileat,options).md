@@ -79,6 +79,12 @@ If the `url` argument is unreachable, this method returns `nil` and the optional
   Returns a new URL object initialized with a C string representing a local file system path.
 - [func getFileSystemRepresentation(UnsafeMutablePointer<CChar>, maxLength: Int) -> Bool](./getfilesystemrepresentation%28_,maxlength%29.md)
   Fills the provided buffer with a C string representing a local file system path.
+- [+ URLWithString:](./urlwithstring_.md)
+  Creates and returns an NSURL object initialized with a provided URL string.
+- [+ URLWithString:encodingInvalidCharacters:](./urlwithstring_encodinginvalidcharacters_.md)
+  Creates and returns an instance from the provided string, optionally IDNA- and percent-encoding any invalid characters.
+- [+ URLWithString:relativeToURL:](./urlwithstring_relativetourl_.md)
+  Creates and returns an NSURL object initialized with a base URL and a relative string.
 
 
 ---

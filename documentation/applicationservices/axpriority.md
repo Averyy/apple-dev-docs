@@ -25,6 +25,10 @@ typedef enum AXPriority : CFIndex {
 - [AXPriority.high](./axpriority/high.md)
 - [AXPriority.low](./axpriority/low.md)
 - [AXPriority.medium](./axpriority/medium.md)
+### Constants
+- [kAXPriorityHigh](./axpriority/kaxpriorityhigh.md)
+- [kAXPriorityLow](./axpriority/kaxprioritylow.md)
+- [kAXPriorityMedium](./axpriority/kaxprioritymedium.md)
 
 ## Relationships
 

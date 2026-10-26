@@ -28,6 +28,8 @@ class AVCaptureAudioDataOutput
 ### Creating an audio capture output
 - [init()](./avcaptureaudiodataoutput/init%28%29.md)
   Creates an instance of audio data output.
+- [+ new](./avcaptureaudiodataoutput/new.md)
+  Provides a convenience initializer to create an instance of audio data output.
 ### Configuring audio capture
 - [var audioSettings: [String : Any]!](./avcaptureaudiodataoutput/audiosettings.md)
   The settings used to decode or re-encode audio before it’s output.

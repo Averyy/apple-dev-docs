@@ -38,6 +38,9 @@ class AVSampleBufferVideoRenderer
 - [var presentationTimeExpectation: AVSampleBufferVideoRenderer.PresentationTimeExpectation](./avsamplebuffervideorenderer/presentationtimeexpectation-swift.property.md)
 - [AVSampleBufferVideoRenderer.PresentationTimeExpectation](./avsamplebuffervideorenderer/presentationtimeexpectation-swift.enum.md)
   Options that specify the expected presentation time stamps of enqueue samples.
+- [- expectMinimumUpcomingSampleBufferPresentationTime:](./avsamplebuffervideorenderer/expectminimumupcomingsamplebufferpresentationtime_.md)
+- [- expectMonotonicallyIncreasingUpcomingSampleBufferPresentationTimes](./avsamplebuffervideorenderer/expectmonotonicallyincreasingupcomingsamplebufferpresentationtimes.md)
+- [- resetUpcomingSampleBufferPresentationTimeExpectations](./avsamplebuffervideorenderer/resetupcomingsamplebufferpresentationtimeexpectations.md)
 ### Inspecting the status
 - [var status: AVQueuedSampleBufferRenderingStatus](./avsamplebuffervideorenderer/status.md)
   A status value that indicates whether this object can enqueue and render sample buffers.
@@ -47,6 +50,8 @@ class AVSampleBufferVideoRenderer
 - [func displayedPixelBuffer() -> CVPixelBuffer?](./avsamplebuffervideorenderer/displayedpixelbuffer%28%29.md)
 - [var recommendedPixelBufferAttributes: CVPixelBufferAttributes](./avsamplebuffervideorenderer/recommendedpixelbufferattributes-6zrqb.md)
   Recommended pixel buffer attributes for optimal performance when using CMSampleBuffers containing CVPixelbuffers.
+- [recommendedPixelBufferAttributes](./avsamplebuffervideorenderer/recommendedpixelbufferattributes-6326f.md)
+  Recommended pixel buffer attributes for optimal performance when using CMSampleBuffers containing CVPixelBuffers.
 ### Handling decode failures
 - [class let didFailToDecodeNotification: NSNotification.Name](./avsamplebuffervideorenderer/didfailtodecodenotification.md)
   A notification that indicates the video renderer fails to decode a sample buffer.

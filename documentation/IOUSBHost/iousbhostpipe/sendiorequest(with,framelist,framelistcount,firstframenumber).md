@@ -42,6 +42,10 @@ This method issues synchronous isochronous requests. The caller allocates and in
   A structure that represents a single frame in an isochronous transfer.
 - [func enqueueIORequest(with: NSMutableData, frameList: UnsafeMutablePointer<IOUSBHostIsochronousFrame>, frameListCount: Int, firstFrameNumber: UInt64, completionHandler: ((IOReturn, UnsafeMutablePointer<IOUSBHostIsochronousFrame>) -> Void)?) throws](./enqueueiorequest%28with,framelist,framelistcount,firstframenumber,completionhandler%29.md)
   Enqueues a request on an isochronous endpoint.
+- [- abortWithOption:error:](./abortwithoption_error_.md)
+  Aborts pending input/output requests.
+- [- abortWithError:](./abortwitherror_.md)
+  Aborts pending input/output requests synchronously.
 
 
 ---

@@ -42,6 +42,12 @@ Generally, trace points should not involve expensive operations, however some ci
   Returns whether debug level trace information is enabled.
 - [func os_trace_info_enabled() -> Bool](./os_trace_info_enabled%28%29.md)
   Returns whether info level trace information is enabled.
+- [os_log_is_enabled](./os_log_is_enabled.md)
+- [os_log_is_debug_enabled](./os_log_is_debug_enabled.md)
+- [os_activity_get_active](./os_activity_get_active.md)
+  Returns the stack of nested activities associated with the current thread.
+- [os_activity_end](./os_activity_end.md)
+  Ends the specified activity on the current thread.
 
 
 ---

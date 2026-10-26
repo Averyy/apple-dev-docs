@@ -63,6 +63,19 @@ If the contents begin with a Unicode byte-order mark (`U+FEFF` or `U+FFFE`), int
   Returns the length in char-sized units of the receiver’s C-string representation in the default C-string encoding.
 - [func getCString(UnsafeMutablePointer<CChar>)](./getcstring%28_%29.md)
   Invokes [`getCString(_:maxLength:range:remaining:)`](./getcstring%28_,maxlength,range,remaining%29.md) with `NSMaximumStringLength` as the maximum length, the receiver’s entire extent as the range, and `NULL` for the remaining range.
+- [- getCString:maxLength:](./getcstring%28_,maxlength%29.md)
+  Invokes [`getCString:maxLength:range:remainingRange:`](./getcstring%28_,maxlength,range,remaining%29.md) with `maxLength` as the maximum length in char-sized units, the receiver’s entire extent as the range, and `NULL` for the remaining range.
+- [- getCString:maxLength:range:remainingRange:](./getcstring%28_,maxlength,range,remaining%29.md)
+  Converts the receiver’s content to the default C-string encoding and stores them in a given buffer.
+- [- stringByAddingPercentEscapesUsingEncoding:](./addingpercentescapes%28using%29.md)
+  Returns a representation of the receiver using a given encoding to determine the percent escapes necessary to convert the receiver into a legal URL string.
+- [- stringByReplacingPercentEscapesUsingEncoding:](./replacingpercentescapes%28using%29.md)
+  Returns a new string made by replacing in the receiver all percent escapes with the matching characters as determined by a given encoding.
+### Related Documentation
+- [+ stringWithContentsOfFile:encoding:error:](./stringwithcontentsoffile_encoding_error_.md)
+  Returns a string created by reading data from the file at a given path interpreted using a given encoding.
+- [+ stringWithContentsOfFile:usedEncoding:error:](./stringwithcontentsoffile_usedencoding_error_.md)
+  Returns a string created by reading data from the file at a given path and returns by reference the encoding used to interpret the file.
 
 
 ---

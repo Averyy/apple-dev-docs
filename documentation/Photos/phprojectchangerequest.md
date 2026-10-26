@@ -42,6 +42,8 @@ Make a project change request to alter a project’s title or metadata. Respond 
   Removes assets of a certain type from the collection.
 - [func removeAssets(PHFetchResult<PHAsset>)](./phprojectchangerequest/removeassets%28_%29-3ytt3.md)
   Removes assets based on a fetch result.
+- [- removeAssets:](./phprojectchangerequest/removeassets_.md)
+  Removes the specified assets from the project.
 
 ## Relationships
 

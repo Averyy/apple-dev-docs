@@ -27,6 +27,13 @@ typealias os_trace_payload_object_t = xpc_object_t
 typedef xpc_object_t os_trace_payload_object_t;
 ```
 
+## See Also
+
+### Deprecated Type Aliases
+- [os_breadcrumb_t](./os_breadcrumb_t.md)
+- [os_trace_payload_t](./os_trace_payload_t.md)
+  A pointer to a trace payload.
+
 
 ---
 

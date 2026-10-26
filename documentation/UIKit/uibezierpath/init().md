@@ -47,6 +47,8 @@ A new, empty path object.
   Creates and returns a new Bézier path object with the reversed contents of the current path.
 - [init?(coder: NSCoder)](./init%28coder%29.md)
   Creates a Bézier path object from data in an unarchiver.
+- [+ bezierPath](./bezierpath.md)
+  Creates and returns a new Bézier path object.
 
 
 ---

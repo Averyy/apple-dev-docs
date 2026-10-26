@@ -42,6 +42,12 @@ An initialized shader object.
   Creates a new shader object by loading the source for a fragment shader from a file stored in the app’s bundle.
 - [init(source: String, uniforms: [SKUniform])](./init%28source,uniforms%29.md)
   Initializes a new shader object using the specified source and uniform data.
+- [+ shaderWithSource:uniforms:](./shaderwithsource_uniforms_.md)
+  Creates a new shader object using the specified source and uniform data.
+- [+ shaderWithSource:](./shaderwithsource_.md)
+  Creates a new shader object using the specified source code.
+- [+ shader](./shader.md)
+  Creates a new empty shader object.
 
 
 ---

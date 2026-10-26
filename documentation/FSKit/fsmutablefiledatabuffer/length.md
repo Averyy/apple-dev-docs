@@ -24,6 +24,8 @@ var length: Int { get }
 ### Accessing buffer properties
 - [func withUnsafeMutableBytes<R, E>((UnsafeMutableRawBufferPointer) throws(E) -> R) throws(E) -> R](./withunsafemutablebytes%28_%29.md)
   Performs the given closure with an unsafe pointer to the underlying bytes of the data buffer.
+- [- mutableBytes](./mutablebytes.md)
+  The byte data.
 
 
 ---

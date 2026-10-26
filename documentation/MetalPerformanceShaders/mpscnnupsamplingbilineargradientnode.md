@@ -31,6 +31,8 @@ class MPSCNNUpsamplingBilinearGradientNode
 ### Instance Properties
 - [var scaleFactorX: Double](./mpscnnupsamplingbilineargradientnode/scalefactorx.md)
 - [var scaleFactorY: Double](./mpscnnupsamplingbilineargradientnode/scalefactory.md)
+### Type Methods
+- [+ nodeWithSourceGradient:sourceImage:gradientState:scaleFactorX:scaleFactorY:](./mpscnnupsamplingbilineargradientnode/nodewithsourcegradient_sourceimage_gradientstate_scalefactorx_scalefactory_.md)
 
 ## Relationships
 

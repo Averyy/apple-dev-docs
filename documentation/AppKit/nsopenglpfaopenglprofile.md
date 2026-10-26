@@ -57,6 +57,8 @@ The associated value can be any of the constants defined in [OpenGL Profiles](./
   A Boolean attribute. If present, this attribute indicates that only double-buffered pixel formats are considered. Otherwise, only single-buffered pixel formats are considered.
 - [var NSOpenGLPFAMaximumPolicy: Int](./nsopenglpfamaximumpolicy.md)
   A Boolean attribute. If present, this attribute indicates that the pixel format choosing policy is altered for the color, depth, and accumulation buffers such that, if a nonzero buffer size is requested, the largest available buffer is preferred.
+- [NSOpenGLPFACompliant](./nsopenglpfacompliant.md)
+  A Boolean attribute. If present, this attribute indicates that pixel format selection is only open to OpenGL-compliant renderers. This attribute is implied unless `NSOpenGLPFAAllRenderers` is specified. This attribute is not useful in the attribute array.
 
 
 ---

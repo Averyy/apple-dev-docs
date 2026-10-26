@@ -220,6 +220,16 @@
       "file_path": "documentation/AlarmKit/alarmbutton/textcolor.md",
       "hash": "f8cf2c5617b120598a60f3d0d535eab6ebd59270266a237bcbebf19c001270d0"
     },
+    "https://developer.apple.com/documentation/alarmkit/alarmkitversionnumber": {
+      "etag": "\"ad1-65d55e4d94e14-df\"",
+      "file_path": "documentation/AlarmKit/alarmkitversionnumber.md",
+      "hash": "fedf88c706e7b712db411c564bca9a1e0cfd06f8eb543c11b94bb5929d2407c0"
+    },
+    "https://developer.apple.com/documentation/alarmkit/alarmkitversionstring": {
+      "etag": "\"b17-65d55e4d94e14-df\"",
+      "file_path": "documentation/AlarmKit/alarmkitversionstring.md",
+      "hash": "c1ef9d139c9351a36ebc4916f40ecb01e0b480a0386ee54a03c2b7db107ae356"
+    },
     "https://developer.apple.com/documentation/alarmkit/alarmmanager": {
       "etag": "\"53ef-65d55e4d94e14-df\"",
       "file_path": "documentation/AlarmKit/alarmmanager.md",
@@ -446,7 +456,7 @@
       "hash": "5706d51ec01c3d3e140861fc28f52d237d0b1e071f9d029828e58bf1d6ad043f"
     },
     "https://developer.apple.com/documentation/alarmkit/alarmpresentation/alert-swift.struct/secondarybuttonbehavior-swift.enum/custom": {
-      "etag": "\"150f-65d55e4d94e14\"",
+      "etag": "\"150f-65d55e4d94e14-df\"",
       "file_path": "documentation/AlarmKit/alarmpresentation/alert-swift.struct/secondarybuttonbehavior-swift.enum/custom.md",
       "hash": "bfdade258afc04e0cd921a088538b4b9bf0ba11ef61aa5c563cb4c5feb975496"
     },
@@ -850,6 +860,16 @@
       "file_path": "documentation/AlarmKit/alarmbutton/textcolor.md",
       "hash": "f8cf2c5617b120598a60f3d0d535eab6ebd59270266a237bcbebf19c001270d0"
     },
+    "https://developer.apple.com/tutorials/data/documentation/alarmkit/alarmkitversionnumber.json": {
+      "etag": "\"ad1-65d55e4d94e14-df\"",
+      "file_path": "documentation/AlarmKit/alarmkitversionnumber.md",
+      "hash": "fedf88c706e7b712db411c564bca9a1e0cfd06f8eb543c11b94bb5929d2407c0"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/alarmkit/alarmkitversionstring.json": {
+      "etag": "\"b17-65d55e4d94e14-df\"",
+      "file_path": "documentation/AlarmKit/alarmkitversionstring.md",
+      "hash": "c1ef9d139c9351a36ebc4916f40ecb01e0b480a0386ee54a03c2b7db107ae356"
+    },
     "https://developer.apple.com/tutorials/data/documentation/alarmkit/alarmmanager.json": {
       "etag": "\"53ef-65d55e4d94e14-df\"",
       "file_path": "documentation/AlarmKit/alarmmanager.md",
@@ -1076,7 +1096,7 @@
       "hash": "5706d51ec01c3d3e140861fc28f52d237d0b1e071f9d029828e58bf1d6ad043f"
     },
     "https://developer.apple.com/tutorials/data/documentation/alarmkit/alarmpresentation/alert-swift.struct/secondarybuttonbehavior-swift.enum/custom.json": {
-      "etag": "\"150f-65d55e4d94e14\"",
+      "etag": "\"150f-65d55e4d94e14-df\"",
       "file_path": "documentation/AlarmKit/alarmpresentation/alert-swift.struct/secondarybuttonbehavior-swift.enum/custom.md",
       "hash": "bfdade258afc04e0cd921a088538b4b9bf0ba11ef61aa5c563cb4c5feb975496"
     },
@@ -1263,8 +1283,8 @@
   },
   "metadata": {
     "render": {
-      "version": 1
+      "version": 2
     },
-    "total_pages": 252
+    "total_pages": 256
   }
 }

@@ -40,6 +40,8 @@ Use this method to create a result object when you recognize the goal type and c
 ### Creating a Resolution Result Object
 - [class func confirmationRequired(with: INWorkoutGoalUnitType) -> Self](./confirmationrequired%28with%29.md)
   Creates an object whose resolution requires the user to confirm the workout unit goal value before proceeding.
+- [+ successWithResolvedValue:](./successwithresolvedvalue_.md)
+- [+ confirmationRequiredWithValueToConfirm:](./confirmationrequiredwithvaluetoconfirm_.md)
 
 
 ---

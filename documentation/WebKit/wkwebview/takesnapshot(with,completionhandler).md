@@ -74,6 +74,10 @@ func takeSnapshot(configuration snapshotConfiguration: WKSnapshotConfiguration?)
   The configuration data to use when generating an image from a web view’s contents.
 - [class WKPDFConfiguration](../wkpdfconfiguration.md)
   The configuration data to use when generating a PDF representation of a web view’s contents.
+- [- createPDFWithConfiguration:completionHandler:](./createpdfwithconfiguration_completionhandler_.md)
+  Generates PDF data from the web view’s contents asynchronously.
+- [- createWebArchiveDataWithCompletionHandler:](./createwebarchivedatawithcompletionhandler_.md)
+  Creates a web archive of the web view’s contents asynchronously.
 
 
 ---

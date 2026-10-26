@@ -35,6 +35,8 @@ Use a metadata adaptor to append track-level metadata, packaged as instances of 
 ### Creating an input metadata adaptor
 - [init(assetWriterInput: AVAssetWriterInput)](./avassetwriterinputmetadataadaptor/init%28assetwriterinput%29.md)
   Creates a metadata group adaptor to append timed metadata groups to write to an output file.
+- [+ assetWriterInputMetadataAdaptorWithAssetWriterInput:](./avassetwriterinputmetadataadaptor/assetwriterinputmetadataadaptorwithassetwriterinput_.md)
+  Returns a new metadata adaptor to append timed metadata groups to write to an output file.
 ### Appending timed metadata
 - [func append(AVTimedMetadataGroup) -> Bool](./avassetwriterinputmetadataadaptor/append%28_%29.md)
   Appends a timed metadata group to the adaptor.

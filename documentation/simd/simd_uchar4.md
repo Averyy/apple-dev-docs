@@ -39,6 +39,8 @@ typedef unsigned char __attribute__((ext_vector_type(4))) simd_uchar4;
   Returns a new vector from the specified two-element vector, and other elements undefined.
 - [func simd_make_uchar4_undef(simd_uchar3) -> simd_uchar4](./simd_make_uchar4_undef%28_%29-5tfyu.md)
   Returns a new vector from the specified three-element vector, and other elements undefined.
+- [vector4](./vector4-3tea7.md)
+  Returns a new vector from the specified vectors.
 ### Functions to Create Four-Element Vectors From Scalar Values
 - [func simd_make_uchar4(UInt8) -> simd_uchar4](./simd_make_uchar4%28_%29-7gszj.md)
   Returns a new vector with the first element set to a scalar value, and other elements set to zero.
@@ -46,6 +48,8 @@ typedef unsigned char __attribute__((ext_vector_type(4))) simd_uchar4;
   Returns a new vector from the specified scalar values.
 - [func simd_make_uchar4_undef(UInt8) -> simd_uchar4](./simd_make_uchar4_undef%28_%29-7uno.md)
   Returns a new vector with the first element set to a scalar value, and other elements undefined.
+- [vector4](./vector4-7c8o4.md)
+  Returns a new vector from the specified scalar values.
 ### Functions to Create Four-Element Vectors From Combinations of Vectors and Scalar Values
 - [func simd_make_uchar4(simd_uchar2, UInt8, UInt8) -> simd_uchar4](./simd_make_uchar4%28_,_,_%29-5x9io.md)
   Returns a new vector from a vector and scalar values.
@@ -57,6 +61,8 @@ typedef unsigned char __attribute__((ext_vector_type(4))) simd_uchar4;
   Returns a new vector from a scalar value, a vector, and a scalar value.
 - [func simd_make_uchar4(UInt8, simd_uchar3) -> simd_uchar4](./simd_make_uchar4%28_,_%29-4sdi7.md)
   Returns a new vector from a scalar value and a vector.
+- [vector4](./vector4-8y2oj.md)
+  Returns a new vector from a vector and a scalar value.
 ### Common Functions
 - [func simd_clamp(simd_uchar4, simd_uchar4, simd_uchar4) -> simd_uchar4](./simd_clamp%28_,_,_%29-7gs2x.md)
   Returns each element in a vector clamped to a specified range.
@@ -81,6 +87,48 @@ typedef unsigned char __attribute__((ext_vector_type(4))) simd_uchar4;
   Returns a vector that contains elements from either the first or second parameter, based on the corresponding element in the third parameter.
 ### Alternative Type Alias
 - [typealias vector_uchar4](./vector_uchar4.md)
+### Functions to Create Four-Element Vectors From Vectors of Other Types
+- [simd_uchar](./simd_uchar-8g94o.md)
+  Returns a new vector from the specified vector of 8-bit, signed integer elements.
+- [simd_uchar](./simd_uchar-8fzaw.md)
+  Returns a new vector from the specified vector of 8-bit, unsigned integer elements.
+- [simd_uchar](./simd_uchar-8geew.md)
+  Returns a new vector from the specified vector of 16-bit, signed integer elements.
+- [simd_uchar](./simd_uchar-8g46w.md)
+  Returns a new vector from the specified vector of 16-bit, unsigned integer elements.
+- [simd_uchar](./simd_uchar-8g7eg.md)
+  Returns a new vector from the specified vector of 32-bit, signed integer elements.
+- [simd_uchar](./simd_uchar-8fxko.md)
+  Returns a new vector from the specified vector of 32-bit, unsigned integer elements.
+- [simd_uchar](./simd_uchar-8g90k.md)
+  Returns a new vector from the specified vector of 64-bit, signed integer elements.
+- [simd_uchar](./simd_uchar-8fz6s.md)
+  Returns a new vector from the specified vector of 64-bit, unsigned integer elements.
+- [simd_uchar](./simd_uchar-8g0ws.md)
+  Returns a new vector from the specified vector of 32-bit, floating-point elements.
+- [simd_uchar](./simd_uchar-8g1h0.md)
+  Returns a new vector from the specified vector of 64-bit, floating-point elements.
+### Functions to Perform Saturating Conversion From Vectors of Other Types
+- [simd_uchar_sat](./simd_uchar_sat-2dfgm.md)
+  Returns a new vector from the specified vector of 8-bit, signed integer elements.
+- [simd_uchar_sat](./simd_uchar_sat-2d5ae.md)
+  Returns a new vector from the specified vector of 8-bit, unsigned integer elements.
+- [simd_uchar_sat](./simd_uchar_sat-2dkfa.md)
+  Returns a new vector from the specified vector of 16-bit, signed integer elements.
+- [simd_uchar_sat](./simd_uchar_sat-2daau.md)
+  Returns a new vector from the specified vector of 16-bit, unsigned integer elements.
+- [simd_uchar_sat](./simd_uchar_sat-2ddea.md)
+  Returns a new vector from the specified vector of 32-bit, signed integer elements.
+- [simd_uchar_sat](./simd_uchar_sat-2d3ma.md)
+  Returns a new vector from the specified vector of 32-bit, unsigned integer elements.
+- [simd_uchar_sat](./simd_uchar_sat-2deje.md)
+  Returns a new vector from the specified vector of 64-bit, signed integer elements.
+- [simd_uchar_sat](./simd_uchar_sat-2d4d6.md)
+  Returns a new vector from the specified vector of 64-bit, unsigned integer elements.
+- [simd_uchar_sat](./simd_uchar_sat-2d6fq.md)
+  Returns a new vector from the specified vector of 32-bit, floating point elements.
+- [simd_uchar_sat](./simd_uchar_sat-2d6wq.md)
+  Returns a new vector from the specified vector of 64-bit, floating point elements.
 
 ## See Also
 

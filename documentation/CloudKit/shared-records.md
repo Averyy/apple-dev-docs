@@ -73,6 +73,8 @@ For public shares, you can skip the first step. Accepting a public share’s met
   A view controller that presents standard screens for adding and removing people from a CloudKit share record.
 - [CKSharingSupported](../BundleResources/information-property-list/cksharingsupported.md)
   A Boolean value that indicates your app supports CloudKit Sharing.
+- [CKSharePreparationCompletionHandler](./cksharepreparationcompletionhandler.md)
+- [CKSharePreparationHandler](./cksharepreparationhandler.md)
 ### Share Requests
 - [class CKFetchShareMetadataOperation](./ckfetchsharemetadataoperation.md)
   An operation that fetches metadata for one or more shares.
@@ -97,6 +99,8 @@ For public shares, you can skip the first step. Accepting a public share’s met
 - [Remote Records](./remote-records.md)
   Use subscriptions and change tokens to efficiently manage modifications to remote records.
 - [class CKSyncEngine](./cksyncengine-5sie5.md)
+  An object that manages the synchronization of local and remote record data.
+- [CKSyncEngine](./cksyncengine-4b4w9.md)
   An object that manages the synchronization of local and remote record data.
 
 

@@ -40,6 +40,10 @@ Use this method when you want to display a two-piece image in multicolor environ
 ### Creating an Image Provider
 - [convenience init(onePieceImage: UIImage)](./init%28onepieceimage%29.md)
   Creates and returns an image provider with the specified one-piece image.
+- [- initWithOnePieceImage:](./initwithonepieceimage_.md)
+  Creates and returns an image provider with the specified one-piece image.
+- [- initWithOnePieceImage:twoPieceImageBackground:twoPieceImageForeground:](./initwithonepieceimage_twopieceimagebackground_twopieceimageforeground_.md)
+  Creates and returns an image provider with both one-piece and two-piece images.
 
 
 ---

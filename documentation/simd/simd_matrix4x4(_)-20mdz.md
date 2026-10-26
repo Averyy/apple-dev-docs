@@ -25,6 +25,8 @@ static simd_double4x4 simd_matrix4x4(simd_quatd q);
   Returns a new matrix with the specified rows.
 - [func matrix_from_rows(SIMD4<Double>, SIMD4<Double>, SIMD4<Double>, SIMD4<Double>) -> simd_double4x4](./matrix_from_rows%28_,_,_,_%29-37t0w.md)
   Returns a new matrix with the specified rows.
+- [simd_diagonal_matrix](./simd_diagonal_matrix-2kzr8.md)
+  Returns a new matrix with the specified vector on the main diagonal.
 
 
 ---

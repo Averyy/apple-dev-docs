@@ -56,6 +56,8 @@ Apps typically call the method for heaps that have resources in argument buffers
 ### Loading heaps and the resources they contain for argument buffers
 - [func useHeaps([any MTLHeap], stages: MTLRenderStages)](./useheaps%28_,stages%29.md)
   Ensures the shaders in the render pass’s subsequent draw commands have access to the resources you allocate from multiple heaps.
+- [- useHeaps:count:stages:](./useheaps_count_stages_.md)
+  Ensures the shaders in the render pass’s subsequent draw commands have access to the resources you allocate from multiple heaps.
 
 
 ---

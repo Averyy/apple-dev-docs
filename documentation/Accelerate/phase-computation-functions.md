@@ -12,6 +12,10 @@ Calculate the element-wise phase values, in radians, of a complex vector.
   Calculates the single-precision element-wise phase values, in radians, of the supplied complex vector.
 - [static func phase<V>(DSPDoubleSplitComplex, result: inout V)](./vdsp/phase%28_,result%29-56qb1.md)
   Calculates the double-precision element-wise phase values, in radians, of the supplied complex vector.
+- [vDSP_zvphas](./vdsp_zvphas.md)
+  Calculates the single-precision element-wise phase values, in radians, of the supplied complex vector using the specified stride.
+- [vDSP_zvphasD](./vdsp_zvphasd.md)
+  Calculates the double-precision element-wise phase values, in radians, of the supplied complex vector using the specified stride.
 
 ## See Also
 

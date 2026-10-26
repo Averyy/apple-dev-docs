@@ -46,6 +46,8 @@ This constant is the [`resultsLimit`](./resultslimit.md) property’s default va
   The maximum number of records to return at one time.
 - [var desiredKeys: [CKRecord.FieldKey]?](./desiredkeys-7qrse.md)
   The fields of the records to fetch.
+- [desiredKeys](./desiredkeys-4a6vy.md)
+  The fields of the records to fetch.
 
 
 ---

@@ -35,6 +35,9 @@ typedef SInt32 LONG;
 - [typealias PFFENVELOPE](./pffenvelope.md)
 - [typealias PFFPERIODIC](./pffperiodic.md)
 - [typealias PFFRAMPFORCE](./pfframpforce.md)
+- [ForceFeedbackDeviceStatePtr](./forcefeedbackdevicestateptr.md)
+- [ForceFeedbackVersionPtr](./forcefeedbackversionptr.md)
+- [IOForceFeedbackDeviceInterfacePtr](./ioforcefeedbackdeviceinterfaceptr.md)
 
 
 ---

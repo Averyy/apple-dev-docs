@@ -34,6 +34,10 @@ The Core Foundation ID for this data type.
   Attaches an OpenGL context to a Core Video OpenGL buffer.
 - [func CVOpenGLBufferGetAttributes(CVOpenGLBuffer) -> Unmanaged<CFDictionary>?](./cvopenglbuffergetattributes%28_%29.md)
   Obtains the attributes of a Core Video OpenGL buffer.
+- [CVOpenGLBufferRetain](./cvopenglbufferretain.md)
+  Retains a Core Video OpenGL buffer.
+- [CVOpenGLBufferRelease](./cvopenglbufferrelease.md)
+  Releases a Core Video OpenGL buffer.
 
 
 ---

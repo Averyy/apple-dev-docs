@@ -43,6 +43,9 @@ This descriptor can represent arguments within flat structures only. It can repr
   The alignment of the constant block.
 - [var textureType: MTLTextureType](./mtlargumentdescriptor/texturetype.md)
   The texture type of a texture argument.
+### Initializing an argument descriptor
+- [+ argumentDescriptor](./mtlargumentdescriptor/argumentdescriptor.md)
+  Creates an empty argument descriptor.
 
 ## Relationships
 

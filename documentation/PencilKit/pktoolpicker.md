@@ -101,6 +101,8 @@ When configuring your interface, call the [`setVisible(_:forFirstResponder:)`](.
   Returns the tool picker object to use for the specified window.
 - [var selectedTool: any PKTool](./pktoolpicker/selectedtool-2lptq.md)
   The currently selected tool in the tool picker.
+- [selectedTool](./pktoolpicker/selectedtool-93ikc.md)
+  The currently selected tool in the tool picker.
 ### Instance Properties
 - [var colorMaximumLinearExposure: CGFloat](./pktoolpicker/colormaximumlinearexposure.md)
   Maximum linear exposure for the color picker used by the tool picker. Can be used to enable picking HDR colors.
@@ -137,6 +139,21 @@ When configuring your interface, call the [`setVisible(_:forFirstResponder:)`](.
   A tool for selecting stroked lines and shapes in a canvas view.
 - [protocol PKTool](./pktool-swift.protocol.md)
   An interface adopted by drawing and writing tools used by a canvas view.
+- [PKInkingTool](./pkinkingtoolreference.md)
+  An object that defines the drawing characteristics (width, color, pen style) to use when drawing lines on a canvas view.
+- [PKEraserTool](./pkerasertoolreference.md)
+  A tool for erasing previously drawn content in a canvas view.
+- [PKLassoTool](./pklassotoolreference.md)
+  A tool for selecting stroked lines and shapes in a canvas view.
+- [PKTool](./pktool-c.class.md)
+  An abstract base class for tools used by a canvas view.
+- [PKResponderState](./pkresponderstate.md)
+  An object that controls PencilKit behavior associated with a responder.
+- [PKToolPickerVisibility](./pktoolpickervisibility.md)
+  Constants that describe the visibility state of a tool picker.
+- [PKToolPickerDelegate](./pktoolpicker/delegate-swift.protocol.md)
+- [PKToolPickerCustomItemControlOptions](./pktoolpickercustomitem/controloptions.md)
+  Options for which controls to present.
 
 
 ---

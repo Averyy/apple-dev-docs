@@ -25,6 +25,16 @@ typedef void (^)(int, unsigned long) IOUSBHostCompletionHandler;
 - `status`: The result for the transfer.
 - `bytesTransferred`: The number of bytes the request transferred.
 
+## See Also
+
+### Enqueueing Device Requests
+- [- enqueueDeviceRequest:data:completionTimeout:error:completionHandler:](./iousbhostobject/enqueuedevicerequest_data_completiontimeout_error_completionhandler_.md)
+  Enqueues a request on the default control endpoint.
+- [- enqueueDeviceRequest:data:error:completionHandler:](./iousbhostobject/enqueuedevicerequest_data_error_completionhandler_.md)
+  Enqueues a request on the default control endpoint with a default completion timeout.
+- [- enqueueDeviceRequest:error:completionHandler:](./iousbhostobject/enqueuedevicerequest_error_completionhandler_.md)
+  Enqueues a request on the default control endpoint without a data phase and a default timeout.
+
 
 ---
 

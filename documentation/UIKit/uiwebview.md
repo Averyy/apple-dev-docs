@@ -137,6 +137,9 @@ The [`UIWebView`](./uiwebview.md) class shouldn’t be subclassed.
   The layout of content in the web view, which determines the direction that the pages flow.
 - [struct UIDataDetectorTypes](./uidatadetectortypes.md)
   Constants that define the types of information to detect in text-based content.
+### Deprecated
+- [detectsPhoneNumbers](./uiwebview/detectsphonenumbers.md)
+  A Boolean value indicating whether telephone number detection is on.
 
 ## Relationships
 
@@ -206,6 +209,10 @@ The [`UIWebView`](./uiwebview.md) class shouldn’t be subclassed.
   A custom action that your app can perform in response to a remote or local notification.
 - [class UIUserNotificationCategory](./uiusernotificationcategory.md)
   Information about custom actions that your app can perform in response to a local or push notification.
+- [UIAcceleration](./uiacceleration.md)
+  An acceleration event that represents immediate, three-dimensional acceleration data.
+- [UIAccelerometer](./uiaccelerometer.md)
+  An object that lets you register to receive acceleration-related data from the onboard hardware.
 
 
 ---

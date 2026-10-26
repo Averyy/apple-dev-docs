@@ -90,6 +90,8 @@
 - [enum AudioHardwareDirection](./audiohardwaredirection.md)
   An enum representing audio stream direction.
 - [enum CATapMuteBehavior](./catapmutebehavior.md)
+- [AudioDeviceClockAlgorithmSelector](./audiodeviceclockalgorithmselector.md)
+- [AudioServerPlugInIOOperation](./audioserverpluginiooperation.md)
 
 ## See Also
 

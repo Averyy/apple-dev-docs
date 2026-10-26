@@ -47,6 +47,8 @@ This method can also be called in subthreads. Events posted in subthreads bubble
   Stops the main event loop.
 - [func sendEvent(NSEvent)](./sendevent%28_%29.md)
   Dispatches an event to other objects.
+- [NSEventTrackingRunLoopMode](../nseventtrackingrunloopmode.md)
+  The mode set when tracking events modally, such as a mouse-dragging loop.
 
 
 ---

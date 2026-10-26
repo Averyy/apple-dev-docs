@@ -122,6 +122,10 @@ Before OS X 10.11, collection views supported only a single section of items org
   The object you use to manage data and provide items for a collection view.
 - [struct NSDiffableDataSourceSnapshot](./nsdiffabledatasourcesnapshot-swift.struct.md)
   A representation of the state of the data in a view at a specific point in time.
+- [NSCollectionViewDiffableDataSource](./nscollectionviewdiffabledatasourcereference.md)
+  The object you use to manage data and provide items for a collection view.
+- [NSDiffableDataSourceSnapshot](./nsdiffabledatasourcesnapshotreference.md)
+  A representation of the state of the data in a view at a specific point in time.
 
 
 ---

@@ -30,6 +30,8 @@ extern NSErrorDomain const SKTestErrorDomain;
 ### StoreKit transaction testing errors
 - [struct SKTestError](./sktesterror.md)
   Information about an error that the testing environment returns.
+- [SKTestErrorCode](./sktesterror/code.md)
+  Error codes in the testing environment.
 
 
 ---

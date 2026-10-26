@@ -69,6 +69,8 @@ To handle all its spell checking, an app needs only one instance of [`NSSpellChe
   Requests that the string be checked in the background.
 - [func guesses(forWordRange: NSRange, in: String, language: String?, inSpellDocumentWithTag: Int) -> [String]?](./nsspellchecker/guesses%28forwordrange,in,language,inspelldocumentwithtag%29.md)
   Returns an array of possible substitutions for the specified string.
+- [- guessesForWord:](./nsspellchecker/guessesforword_.md)
+  Returns an array of suggested spellings for the misspelled word.
 ### Managing the Spell-Checking Process
 - [class func uniqueSpellDocumentTag() -> Int](./nsspellchecker/uniquespelldocumenttag%28%29.md)
   Returns a guaranteed unique tag to use as the spell-document tag for a document.
@@ -96,6 +98,8 @@ To handle all its spell checking, an app needs only one instance of [`NSSpellChe
   Returns the default values for quote replacement.
 - [var userReplacementsDictionary: [String : String]](./nsspellchecker/userreplacementsdictionary.md)
   Returns the dictionary used when replacing words.
+- [- forgetWord:](./nsspellchecker/forgetword_.md)
+  Remove this word from the spelling dictionary.
 ### Data Detector Interaction
 - [func menu(for: NSTextCheckingResult, string: String, options: [NSSpellChecker.OptionKey : Any]?, atLocation: NSPoint, in: NSView) -> NSMenu?](./nsspellchecker/menu%28for,string,options,atlocation,in%29.md)
   Provides a menu containing contextual menu items suitable for certain kinds of detected results.
@@ -119,6 +123,8 @@ To handle all its spell checking, an app needs only one instance of [`NSSpellChe
   This notification is posted when the spell checker did change text using automatic spell checking correction. The are posted to the application’s default notification center.
 - [class let didChangeAutomaticTextReplacementNotification: NSNotification.Name](./nsspellchecker/didchangeautomatictextreplacementnotification.md)
   Posted when the spell checker changed text using automatic text replacement.  This notification is posted to the app’s default notification center.
+- [NSSpellCheckerDidChangeAutomaticInlinePredictionNotification](./nsspellcheckerdidchangeautomaticinlinepredictionnotification.md)
+  To observe this notification using Swift concurrency, use [`NSSpellChecker.DidChangeAutomaticInlinePredictionMessage`](./nsspellchecker/didchangeautomaticinlinepredictionmessage.md).
 ### Type Properties
 - [class let didChangeAutomaticCapitalizationNotification: NSNotification.Name](./nsspellchecker/didchangeautomaticcapitalizationnotification.md)
   To observe this notification using Swift concurrency, use [`NSSpellChecker.DidChangeAutomaticCapitalizationMessage`](./nsspellchecker/didchangeautomaticcapitalizationmessage.md).

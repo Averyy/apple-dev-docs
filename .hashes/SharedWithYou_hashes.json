@@ -30,6 +30,11 @@
       "file_path": "documentation/SharedWithYou/making-your-app-content-shareable.md",
       "hash": "a8a7bc7b912465df1238b9d1c1dc2982fdc9dc9a2b6c1b933668f409f84d0401"
     },
+    "https://developer.apple.com/documentation/sharedwithyou/nspasteboardtypecollaborationmetadata": {
+      "etag": "\"1137-65d560bcb0d5f-df\"",
+      "file_path": "documentation/SharedWithYou/nspasteboardtypecollaborationmetadata.md",
+      "hash": "7ef8a49651736c747399d010214acdb84f48416c23096fd145d89f70a2ebc849"
+    },
     "https://developer.apple.com/documentation/sharedwithyou/shared-content-interactions": {
       "etag": "\"461a-659026f004ee1-df\"",
       "file_path": "documentation/SharedWithYou/shared-content-interactions.md",
@@ -94,6 +99,11 @@
       "etag": "\"5144-65d560bc9c287-df\"",
       "file_path": "documentation/SharedWithYou/swattributionview/displaycontext-swift.property.md",
       "hash": "2585161e81194dcf50748d921a05769c84f3a5906252b7b3f2804276e4578596"
+    },
+    "https://developer.apple.com/documentation/sharedwithyou/swattributionview/enablesmarquee": {
+      "etag": "\"3eb1-659026ef9ef0a-df\"",
+      "file_path": "documentation/SharedWithYou/swattributionview/enablesmarquee.md",
+      "hash": "08f0c6a4feee176b8dbbad3ff9583df33a99a4fe7eca88d8667d0719732477ad"
     },
     "https://developer.apple.com/documentation/sharedwithyou/swattributionview/highlight": {
       "etag": "\"4e83-65d560bc9c287-df\"",
@@ -660,6 +670,11 @@
       "file_path": "documentation/SharedWithYou/making-your-app-content-shareable.md",
       "hash": "a8a7bc7b912465df1238b9d1c1dc2982fdc9dc9a2b6c1b933668f409f84d0401"
     },
+    "https://developer.apple.com/tutorials/data/documentation/sharedwithyou/nspasteboardtypecollaborationmetadata.json": {
+      "etag": "\"1137-65d560bcb0d5f-df\"",
+      "file_path": "documentation/SharedWithYou/nspasteboardtypecollaborationmetadata.md",
+      "hash": "7ef8a49651736c747399d010214acdb84f48416c23096fd145d89f70a2ebc849"
+    },
     "https://developer.apple.com/tutorials/data/documentation/sharedwithyou/shared-content-interactions.json": {
       "etag": "\"461a-659026f004ee1-df\"",
       "file_path": "documentation/SharedWithYou/shared-content-interactions.md",
@@ -724,6 +739,11 @@
       "etag": "\"5144-65d560bc9c287-df\"",
       "file_path": "documentation/SharedWithYou/swattributionview/displaycontext-swift.property.md",
       "hash": "2585161e81194dcf50748d921a05769c84f3a5906252b7b3f2804276e4578596"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/sharedwithyou/swattributionview/enablesmarquee.json": {
+      "etag": "\"3eb1-659026ef9ef0a-df\"",
+      "file_path": "documentation/SharedWithYou/swattributionview/enablesmarquee.md",
+      "hash": "08f0c6a4feee176b8dbbad3ff9583df33a99a4fe7eca88d8667d0719732477ad"
     },
     "https://developer.apple.com/tutorials/data/documentation/sharedwithyou/swattributionview/highlight.json": {
       "etag": "\"4e83-65d560bc9c287-df\"",
@@ -1266,8 +1286,8 @@
       "sharedwithyoucore": {}
     },
     "render": {
-      "version": 1
+      "version": 2
     },
-    "total_pages": 252
+    "total_pages": 256
   }
 }

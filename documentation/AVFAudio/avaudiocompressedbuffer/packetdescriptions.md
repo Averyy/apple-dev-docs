@@ -44,6 +44,8 @@ var packetDescriptions: UnsafeMutablePointer<AudioStreamPacketDescription>? { ge
   The number of packets of audio data.
 - [var packetDependencies: [AudioStreamPacketDependencyDescription]?](./packetdependencies-3a6ln.md)
   The buffer’s array of packet dependencies.
+- [packetDependencies](./packetdependencies-5oae6.md)
+  The buffer’s array of packet dependencies.
 
 
 ---

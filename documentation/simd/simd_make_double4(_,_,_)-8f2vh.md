@@ -27,6 +27,8 @@ static simd_double4 simd_make_double4(double x, simd_double2 yz, double w);
   Returns a new vector from a vector and scalar values.
 - [func simd_make_double4(simd_double3, Double) -> simd_double4](./simd_make_double4%28_,_%29-767qm.md)
   Returns a new vector from a vector and a scalar value.
+- [vector4](./vector4-23zx8.md)
+  Returns a new vector from a vector and a scalar value.
 
 
 ---

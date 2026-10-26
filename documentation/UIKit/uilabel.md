@@ -107,6 +107,10 @@ For design guidance, see [Human Interface Guidelines](https://developer.apple.co
   The maximum number of lines for rendering text.
 - [var sizingRule: UILetterformAwareSizingRule](./uiletterformawareadjusting/sizingrule.md)
   The typographic bounds-sizing behavior that handles text with fonts that contain oversize characters.
+- [adjustsLetterSpacingToFitWidth](./uilabel/adjustsletterspacingtofitwidth.md)
+  A Boolean value that indicates whether the label adjusts spacing between letters to fit the string within the label’s bounds rectangle.
+- [minimumFontSize](./uilabel/minimumfontsize.md)
+  The size of the smallest permissible font when drawing the label’s text.
 ### Managing highlight values
 - [var highlightedTextColor: UIColor?](./uilabel/highlightedtextcolor.md)
   The highlight color for the label’s text.

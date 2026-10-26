@@ -64,6 +64,10 @@ You use these constants with these methods:
   Returns the range of the linguistic unit containing the specified character index.
 - [func tokenRange(for: Range<String.Index>, unit: NLTokenUnit) -> Range<String.Index>](./nltagger/tokenrange%28for,unit%29.md)
   Finds the entire range of all tokens of the specified linguistic unit contained completely or partially within the specified range.
+- [- tokenRangeAtIndex:unit:](./nltagger/tokenrangeatindex_unit_.md)
+  Returns the range of the linguistic unit containing the specified character index.
+- [- tokenRangeForRange:unit:](./nltagger/tokenrangeforrange_unit_.md)
+  Finds the entire range of all tokens of the specified linguistic unit contained completely or partially within the specified range.
 
 
 ---

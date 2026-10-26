@@ -114,6 +114,30 @@ To build a macOS app, you can use [SwiftUI](../SwiftUI/SwiftUI.md) to create an 
 ### Deprecated
 - [Deprecated symbols](./deprecated-symbols.md)
   Review symbols that are no longer in active development, and their recommended replacements.
+### Classes
+- [UIBarMinimization](./uibarminimization-c.class.md)
+  A configuration that controls how a navigation bar minimizes in response to scrolling.
+- [UITraitNavigationTitleAlignment](./uitraitnavigationtitlealignment-c.class.md)
+  A trait that reports the alignment the navigation bar resolved for its title.
+- [UITraitSystemPrefersReducedResourceUsage](./uitraitsystemprefersreducedresourceusage-c.class.md)
+### Variables
+- [UIApplicationSystemPrefersReducedResourceUsageDidChangeNotification](./uiapplication/systemprefersreducedresourceusagedidchangenotification.md)
+  A notification that posts when [`systemPrefersReducedResourceUsage`](./uiapplication/systemprefersreducedresourceusage.md) changes.
+- [UIDocumentDidMoveToWritableLocationNotification](./uidocument/didmovetowritablelocationnotification.md)
+  A notification that the document posts when copying the file from a readonly location in order to write changes. This notification will be posted on the file presenter queue.
+- [UIDocumentDidMoveToWritableLocationOldURLKey](./uidocument/didmovetowritablelocationoldurlkey.md)
+  The key in a `UIDocumentDidMoveToWritableLocationNotification`’s `userInfo` dictionary that contains the previous readonly file URL.
+### Macros
+- [UIFOCUS_SUPPORTS_UIKIT](./uifocus_supports_uikit.md)
+### Enumerations
+- [UIGlassEffectStyle](./uiglasseffect/style.md)
+- [UIMenuElementImageVisibility](./uimenuelement/imagevisibility.md)
+  Visibility options for a menu element’s image.
+- [UINavigationItemTitleAlignment](./uinavigationitem/titlealignment-swift.enum.md)
+- [UISheetPresentationControllerPlacement](./uisheetpresentationcontroller/placement.md)
+- [UITabBarControllerSidebarPlacement](./uitabbarcontroller/sidebar-swift.class/placement.md)
+- [UIWritingToolsCoordinatorTextDecoration](./uiwritingtoolscoordinator/textdecoration.md)
+  Use the `UIWritingToolsCoordinator.TextDecoration` constants to determine the type of decoration to be applied to a preview for grammar animation. The grammar animation needs previews of the text of the issue in two forms, without and with the grammar indication underline applied. If you use grammar animation, you must implement the delegate method [`writingToolsCoordinator:requestsPreviewForTextAnimation:ofRange:inContext:textDecoration:completion:`](./uiwritingtoolscoordinator/delegate-swift.protocol/writingtoolscoordinator%28_,requestspreviewfor,of,in,textdecoration,completion%29.md) to provide both forms of previews, based on the specified decoration.
 
 
 ---

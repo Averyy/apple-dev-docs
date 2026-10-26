@@ -27,6 +27,12 @@ A data object that uniquely references an identity.
 
 A persistent reference data object is an object generated from an identity. Persistent data objects can be written to and read from a file, making them extremely useful for storing identities in an ACL.
 
+## See Also
+
+### Storing Identities
+- [CSIdentity](./csidentity.md)
+  Returns an opaque object for use with the Core Services Identity API.
+
 
 ---
 

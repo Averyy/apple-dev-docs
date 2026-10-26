@@ -209,6 +209,8 @@
 - [var kODErrorCredentialsAccountLocked: ODFrameworkErrors](./koderrorcredentialsaccountlocked.md)
 - [var kODErrorCredentialsAccountTemporarilyLocked: ODFrameworkErrors](./koderrorcredentialsaccounttemporarilylocked.md)
 - [var kODErrorCredentialsContactPrimary: ODFrameworkErrors](./koderrorcredentialscontactprimary.md)
+- [kODErrorCredentialsContactMaster](./odframeworkerrors/koderrorcredentialscontactmaster.md)
+  The authentication server contacted is not the primary server, and the requested operation requires the primary server.
 
 ## See Also
 

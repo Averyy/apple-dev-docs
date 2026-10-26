@@ -48,6 +48,24 @@ The meaning of an [`NLDistance`](./nldistance.md) is directly related to the [`N
   Passes the nearest strings of a location in the vocabulary space to a closure.
 - [func distance(between: String, and: String, distanceType: NLDistanceType) -> NLDistance](./nlembedding/distance%28between,and,distancetype%29.md)
   Calculates the distance between two strings in the vocabulary space.
+- [- neighborsForString:maximumCount:distanceType:](./nlembedding/neighborsforstring_maximumcount_distancetype_.md)
+  Retrieves a limited number of strings near a string in the vocabulary.
+- [- neighborsForString:maximumCount:maximumDistance:distanceType:](./nlembedding/neighborsforstring_maximumcount_maximumdistance_distancetype_.md)
+  Retrieves a limited number of strings, within a radius of a string, in the vocabulary.
+- [- neighborsForVector:maximumCount:distanceType:](./nlembedding/neighborsforvector_maximumcount_distancetype_.md)
+  Retrieves a limited number of strings near a location in the vocabulary space.
+- [- neighborsForVector:maximumCount:maximumDistance:distanceType:](./nlembedding/neighborsforvector_maximumcount_maximumdistance_distancetype_.md)
+  Retrieves a limited number of strings within a radius of a location in the vocabulary space.
+- [- enumerateNeighborsForString:maximumCount:distanceType:usingBlock:](./nlembedding/enumerateneighborsforstring_maximumcount_distancetype_usingblock_.md)
+  Passes the nearest strings of a string in the vocabulary to a block.
+- [- enumerateNeighborsForString:maximumCount:maximumDistance:distanceType:usingBlock:](./nlembedding/enumerateneighborsforstring_maximumcount_maximumdistance_distancetype_usingblock_.md)
+  Passes the nearest strings, within a radius of a string in the vocabulary, to a block.
+- [- enumerateNeighborsForVector:maximumCount:distanceType:usingBlock:](./nlembedding/enumerateneighborsforvector_maximumcount_distancetype_usingblock_.md)
+  Passes the nearest strings of a location in the vocabulary space to a closure.
+- [- enumerateNeighborsForVector:maximumCount:maximumDistance:distanceType:usingBlock:](./nlembedding/enumerateneighborsforvector_maximumcount_maximumdistance_distancetype_usingblock_.md)
+  Passes the nearest strings, within a radius of a location in the vocabulary space, to a block.
+- [- distanceBetweenString:andString:distanceType:](./nlembedding/distancebetweenstring_andstring_distancetype_.md)
+  Calculates the distance between two strings in the vocabulary space.
 
 
 ---

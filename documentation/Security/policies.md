@@ -38,6 +38,24 @@ Usually you use a standard, predefined policy, such as the basic X509 policy or 
 ### Legacy Symbols
 - [class SecPolicySearch](./secpolicysearch.md)
   An object that contains information about a policy search.
+- [SecPolicyCreateWithOID](./secpolicycreatewithoid.md)
+  Returns a policy object for the specified policy type object identifier.
+- [SecPolicyGetOID](./secpolicygetoid.md)
+  Retrieves a policy’s object identifier.
+- [SecPolicyGetTPHandle](./secpolicygettphandle.md)
+  Retrieves the trust policy handle for a policy object.
+- [SecPolicyGetValue](./secpolicygetvalue.md)
+  Retrieves a policy’s value.
+- [SecPolicySearchCopyNext](./secpolicysearchcopynext.md)
+  Retrieves a policy object for the next policy matching specified search criteria.
+- [SecPolicySearchCreate](./secpolicysearchcreate.md)
+  Creates a search object for finding policies.
+- [SecPolicySetProperties](./secpolicysetproperties.md)
+  Sets properties for a policy.
+- [SecPolicySetValue](./secpolicysetvalue.md)
+  Sets a policy’s value.
+- [SecPolicySearchGetTypeID](./secpolicysearchgettypeid.md)
+  Returns the unique identifier of the opaque type to which a `SecPolicySearch` object belongs.
 
 
 ---

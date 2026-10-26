@@ -74,6 +74,12 @@ typedef union { ... } SPSize3DFloat;
 - [var height: Float](./size3dfloat/height.md)
 - [var vector: simd_float3](./size3dfloat/vector.md)
 - [var width: Float](./size3dfloat/width.md)
+- [depth](./spsize3dfloat/depth.md)
+  The depth of the size.
+- [height](./spsize3dfloat/height.md)
+  The height of the size.
+- [width](./spsize3dfloat/width.md)
+  The width of the size.
 ### Instance Methods
 - [func applying(ScaledPose3DFloat) -> Size3DFloat](./size3dfloat/applying%28_%29-4x5w1.md)
   Returns the primitive that results from applying a scaled pose to the primitive.

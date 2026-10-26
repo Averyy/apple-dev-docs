@@ -33,6 +33,10 @@ Use this framework when you need direct access to protocols like TLS, TCP, and U
   A local or remote endpoint in a network connection.
 - [class NWParameters](./nwparameters.md)
   An object that stores the protocols to use for connections, options for sending data, and network path constraints.
+- [nw_endpoint_t](./nw_endpoint_t.md)
+  A local or remote endpoint in a network connection.
+- [nw_parameters_t](./nw_parameters_t.md)
+  An object that stores the protocols to use for connections, options for sending data, and network path constraints.
 ### Connections and Listeners
 - [class NWConnection](./nwconnection.md)
   A bidirectional data connection between a local endpoint and a remote endpoint.
@@ -43,6 +47,18 @@ Use this framework when you need direct access to protocols like TLS, TCP, and U
 - [class NWConnectionGroup](./nwconnectiongroup.md)
   An object you use to communicate with a group of endpoints, such as an IP multicast group on a local network.
 - [class NWEthernetChannel](./nwethernetchannel.md)
+  An object you use to send and receive custom Ethernet frames.
+- [Implementing netcat with Network Framework](./implementing-netcat-with-network-framework.md)
+  Build a simple `netcat` tool that establishes network connections and transfers data.
+- [nw_connection_t](./nw_connection_t.md)
+  A bidirectional data connection between a local endpoint and a remote endpoint.
+- [nw_listener_t](./nw_listener_t.md)
+  An object you use to listen for incoming network connections.
+- [nw_browser_t](./nw_browser_t.md)
+  An object you use to browse for available network services.
+- [nw_connection_group_t](./nw_connection_group_t.md)
+  An object you use to communicate with a group of endpoints, such as an IP multicast group on a local network.
+- [nw_ethernet_channel_t](./nw_ethernet_channel_t.md)
   An object you use to send and receive custom Ethernet frames.
 ### Network Protocols
 - [Building a custom peer-to-peer protocol](./building-a-custom-peer-to-peer-protocol.md)
@@ -63,6 +79,20 @@ Use this framework when you need direct access to protocols like TLS, TCP, and U
   A network protocol for connections that use WebSocket.
 - [class NWProtocolFramer](./nwprotocolframer.md)
   A customizable network protocol for defining application message parsers.
+- [TCP Options](./tcp-options.md)
+  Configure options for connections that use the Transmission Control Protocol.
+- [TLS Options](./tls-options.md)
+  Configure options for connections that use Transport Layer Security.
+- [QUIC Options](./quic-options.md)
+  Configure options for connections that use the QUIC transport protocol.
+- [UDP Options](./udp-options.md)
+  Configure options for connections that use the User Datagram Protocol.
+- [IP Options](./ip-options.md)
+  Configure Internet Protocol options on connections.
+- [WebSocket Options](./websocket-options.md)
+  Configure options for connections that use WebSocket.
+- [Framer Protocol Options](./framer-protocol-options.md)
+  Create custom protocols to frame applications messages over a connection.
 ### Network Security and Privacy
 - [Security Options](./security-options.md)
   Configure security options for TLS handshakes.
@@ -77,9 +107,17 @@ Use this framework when you need direct access to protocols like TLS, TCP, and U
   An observer that you use to monitor and react to network changes.
 - [struct NWInterface](./nwinterface.md)
   An interface that a network connection uses to send and receive data.
+- [nw_path_t](./nw_path_t.md)
+  An object that contains information about the properties of the network that a connection uses, or that are available to your app.
+- [nw_path_monitor_t](./nw_path_monitor_t.md)
+  An observer that you use to monitor and react to network changes.
+- [nw_interface_t](./nw_interface_t.md)
+  An interface that a network connection uses to send and receive data.
 ### Errors
 - [enum NWError](./nwerror.md)
   The errors returned by objects in the Network framework.
+- [nw_error_t](./nw_error_t.md)
+  The errors returned by the Network framework.
 ### Network Debugging
 - [Choosing a Network Debugging Tool](./choosing-a-network-debugging-tool.md)
   Decide which tool works best for your network debugging problem.
@@ -161,6 +199,8 @@ Use this framework when you need direct access to protocols like TLS, TCP, and U
 - [Network Functions](./network-functions.md)
   Access Network framework functions used in C.
 - [Network Data Types](./network-data-types.md)
+- [Network Enumerations](./network-enumerations.md)
+- [Network Macros](./network-macros.md)
 ### Protocols
 - [protocol BrowserProvider](./browserprovider.md)
   BrowserProviders can be used when creating NetworkBrowsers.
@@ -193,6 +233,38 @@ Use this framework when you need direct access to protocols like TLS, TCP, and U
   Types that conform to OneToOneProtocol are allowed to be the top protocol in a network protocol stack for non-multiplexed connections.
 - [protocol StreamProtocol](./streamprotocol.md)
   Types that conform to the StreamProtocol protocol expose methods for sending and receiving byte streams.
+- [OS_nw_advertise_descriptor](./os_nw_advertise_descriptor.md)
+- [OS_nw_browse_descriptor](./os_nw_browse_descriptor.md)
+- [OS_nw_browse_result](./os_nw_browse_result.md)
+- [OS_nw_browser](./os_nw_browser.md)
+- [OS_nw_connection](./os_nw_connection.md)
+- [OS_nw_connection_group](./os_nw_connection_group.md)
+- [OS_nw_content_context](./os_nw_content_context.md)
+- [OS_nw_data_transfer_report](./os_nw_data_transfer_report.md)
+- [OS_nw_endpoint](./os_nw_endpoint.md)
+- [OS_nw_error](./os_nw_error.md)
+- [OS_nw_establishment_report](./os_nw_establishment_report.md)
+- [OS_nw_ethernet_channel](./os_nw_ethernet_channel.md)
+- [OS_nw_framer](./os_nw_framer.md)
+- [OS_nw_group_descriptor](./os_nw_group_descriptor.md)
+- [OS_nw_interface](./os_nw_interface.md)
+- [OS_nw_listener](./os_nw_listener.md)
+- [OS_nw_object](./os_nw_object.md)
+- [OS_nw_parameters](./os_nw_parameters.md)
+- [OS_nw_path](./os_nw_path.md)
+- [OS_nw_path_monitor](./os_nw_path_monitor.md)
+- [OS_nw_privacy_context](./os_nw_privacy_context.md)
+- [OS_nw_protocol_definition](./os_nw_protocol_definition.md)
+- [OS_nw_protocol_metadata](./os_nw_protocol_metadata.md)
+- [OS_nw_protocol_options](./os_nw_protocol_options.md)
+- [OS_nw_protocol_stack](./os_nw_protocol_stack.md)
+- [OS_nw_proxy_config](./os_nw_proxy_config.md)
+- [OS_nw_relay_hop](./os_nw_relay_hop.md)
+- [OS_nw_resolution_report](./os_nw_resolution_report.md)
+- [OS_nw_resolver_config](./os_nw_resolver_config.md)
+- [OS_nw_txt_record](./os_nw_txt_record.md)
+- [OS_nw_ws_request](./os_nw_ws_request.md)
+- [OS_nw_ws_response](./os_nw_ws_response.md)
 ### Variables
 - [let kNWErrorDomainWiFiAware: CFString](./knwerrordomainwifiaware.md)
 - [var nw_error_domain_wifi_aware: nw_error_domain_t](./nw_error_domain_wifi_aware.md)
@@ -210,6 +282,18 @@ Use this framework when you need direct access to protocols like TLS, TCP, and U
 - [func withNetworkConnection<ApplicationProtocol>(to: NWEndpoint, using: () -> ApplicationProtocol, (NetworkConnection<ApplicationProtocol>) async throws -> Void) async throws](./withnetworkconnection%28to,using,_%29-4wpc9.md)
 - [func withNetworkConnection<ApplicationProtocol>(to: NWEndpoint, using: NWParametersBuilder<ApplicationProtocol>, (NetworkConnection<ApplicationProtocol>) async throws -> Void) async throws](./withnetworkconnection%28to,using,_%29-7skhi.md)
 - [func withNetworkConnection<ApplicationProtocol>(to: NWEndpoint, using: NWParametersBuilder<ApplicationProtocol>, (NetworkConnection<ApplicationProtocol>) async throws -> Void) async throws](./withnetworkconnection%28to,using,_%29-887ho.md)
+### Memory Management
+- [nw_release](./nw_release.md)
+  Releases a reference count on a Network.framework object.
+- [nw_retain](./nw_retain.md)
+  Adds a reference count to a Network.framework object.
+- [nw_object_t](./nw_object_t.md)
+  The generic type for objects in the Network framework.
+### Macros
+- [NW_ASSUME_EXTERNALLY_RETAINED_BEGIN](./nw_assume_externally_retained_begin.md)
+- [NW_ASSUME_EXTERNALLY_RETAINED_END](./nw_assume_externally_retained_end.md)
+- [NW_EXPORT](./nw_export.md)
+- [NW_EXTERNALLY_RETAINED](./nw_externally_retained.md)
 
 
 ---

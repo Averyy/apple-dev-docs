@@ -41,6 +41,8 @@ If you specify a value, the system uses it to locate a sound file in the app’s
   The key that identifies the localized string for the notification’s action.
 - [var alertLaunchImage: String?](./alertlaunchimage.md)
   The filename of an image to use as a launch image.
+- [alertLocalizationArgs](../../cknotificationinfo/alertlocalizationargs.md)
+  The fields for building a notification’s alert.
 
 
 ---

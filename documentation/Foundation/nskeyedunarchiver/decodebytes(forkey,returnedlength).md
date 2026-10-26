@@ -66,6 +66,8 @@ The returned value is a pointer to a temporary buffer owned by the receiver. The
   Tells the receiver that you are finished decoding objects.
 - [var decodingFailurePolicy: NSCoder.DecodingFailurePolicy](./decodingfailurepolicy.md)
   The action to take when this unarchiver fails to decode an entry.
+- [- decodeIntForKey:](./decodeintforkey_.md)
+  Decodes an integer value associated with a given key.
 
 
 ---

@@ -38,6 +38,8 @@ An initialized counted set object with the contents of `set`. The returned objec
 ### Related Documentation
 - [convenience init(set: Set<AnyHashable>)](../nsset/init%28set%29-1xovx.md)
   Initializes a newly allocated set and adds to it objects from another given set.
+- [+ setWithSet:](../nsset/setwithset_.md)
+  Creates and returns a set containing the objects from another set.
 ### Initializing a Counted Set
 - [convenience init(array: [Any])](./init%28array%29.md)
   Returns a counted set object initialized with the contents of a given array.

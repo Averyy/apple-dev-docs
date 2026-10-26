@@ -25,6 +25,7 @@ The pop-up display style and behavior. Only the last path component is displayed
 
 ### Constants
 - [NSPathControl.Style.standard](./standard.md)
+- [NSPathStyleNavigationBar](../../nspathstyle/nspathstylenavigationbar.md)
 
 
 ---

@@ -3,6 +3,12 @@
 **Framework**: Core Animation  
 **Role**: API Collection
 
+## Topics
+
+### Functions
+- [CAFrameRateRangeIsEqualToRange](./caframeraterangeisequaltorange.md)
+- [CAFrameRateRangeMake](./caframeraterangemake.md)
+
 ## See Also
 
 ### Reference

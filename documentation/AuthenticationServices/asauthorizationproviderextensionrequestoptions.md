@@ -29,12 +29,16 @@ enum ASAuthorizationProviderExtensionRequestOptions : NSUInteger;
   Indicates that the registration is undergoing repair.
 - [static var userInteractionEnabled: ASAuthorizationProviderExtensionRequestOptions](./asauthorizationproviderextensionrequestoptions/userinteractionenabled.md)
   Indicates that the user interface is in an enabled state.
+- [ASAuthorizationProviderExtensionRequestOptionsNone](./asauthorizationproviderextensionrequestoptions/asauthorizationproviderextensionrequestoptionsnone.md)
+  Options aren’t available.
 ### Type Properties
 - [static var registrationDeviceKeyMigration: ASAuthorizationProviderExtensionRequestOptions](./asauthorizationproviderextensionrequestoptions/registrationdevicekeymigration.md)
 - [static var registrationSharedDeviceKeys: ASAuthorizationProviderExtensionRequestOptions](./asauthorizationproviderextensionrequestoptions/registrationshareddevicekeys.md)
 - [static var userKeyInvalid: ASAuthorizationProviderExtensionRequestOptions](./asauthorizationproviderextensionrequestoptions/userkeyinvalid.md)
 - [static var setupAssistant: ASAuthorizationProviderExtensionRequestOptions](./asauthorizationproviderextensionrequestoptions/setupassistant.md)
 - [static var strongerKeyAvailable: ASAuthorizationProviderExtensionRequestOptions](./asauthorizationproviderextensionrequestoptions/strongerkeyavailable.md)
+### Enumeration Cases
+- [ASAuthorizationProviderExtensionRequestOptionsOpenIDFallback](./asauthorizationproviderextensionrequestoptions/asauthorizationproviderextensionrequestoptionsopenidfallback.md)
 
 ## Relationships
 

@@ -40,6 +40,8 @@ Use this method after building your tree of progress objects, as [Reporting Prog
   Sets the progress object as the current object of the current thread, and assigns the amount of work for the next suboperation progress object to perform.
 - [func performAsCurrent<ReturnType>(withPendingUnitCount: Int64, using: () throws -> ReturnType) rethrows -> ReturnType](./performascurrent%28withpendingunitcount,using%29.md)
   Retrieves the current thread’s progress object, executes the specified block, and increments the progress object by the specified units of work.
+- [- performAsCurrentWithPendingUnitCount:usingBlock:](../nsprogress/performascurrentwithpendingunitcount_usingblock_.md)
+  Retrieves the current thread’s progress object, executes the specified block, and increments the progress object by the specified units of work.
 
 
 ---

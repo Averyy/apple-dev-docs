@@ -25,6 +25,12 @@ var aliases: Set<String> { get }
 @property (copy, readonly) NSSet<NSString *> * aliases;
 ```
 
+## See Also
+
+### Related Documentation
+- [- elementForAlias:](../gcphysicalinputelementcollection-c.class/elementforalias_.md)
+  Returns the element in the collection that uses the specified alias.
+
 
 ---
 

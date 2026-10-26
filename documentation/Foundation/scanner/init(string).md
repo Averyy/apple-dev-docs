@@ -38,6 +38,9 @@ An `NSScanner` object initialized to scan `aString` from the beginning. The retu
 ### Creating a Scanner
 - [class func localizedScanner(with: String) -> Any](./localizedscanner%28with%29.md)
   Returns an `NSScanner` object that scans a given string according to the user’s default locale.
+### Related Documentation
+- [+ scannerWithString:](../nsscanner/scannerwithstring_.md)
+  Returns an `NSScanner` object that scans a given string.
 
 
 ---

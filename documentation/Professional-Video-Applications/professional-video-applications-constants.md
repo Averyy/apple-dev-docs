@@ -13,6 +13,8 @@
 - [var kFxPropertyKey_PixelTransformSupport: String](../professional_video_applications/kfxpropertykey_pixeltransformsupport.md)
   A key in the `properties` dictionary in the `FXBaseEffect` Class that corresponds to an `NSNumber` containing one of the `FxImage` values. The default value is [`kFxPixelTransform_ScaleTranslate`](../professional_video_applications/kfxpixeltransform_scaletranslate.md)
 - [var kFxPropertyKey_UsesNonmatchingTextureLayout: String](../professional_video_applications/kfxpropertykey_usesnonmatchingtexturelayout.md)
+- [PluginManagerVersionNumber](../professional_video_applications/pluginmanagerversionnumber.md)
+- [PluginManagerVersionString](../professional_video_applications/pluginmanagerversionstring.md)
 
 ## See Also
 

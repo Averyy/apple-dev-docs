@@ -30,6 +30,19 @@ ML Compute uses high performance [`BNNS`](../Accelerate/bnns.md) primitives from
   Create and inspect layers that encapsulate operations and configuration details to receive, process, and output tensors.
 - [Training and Validation](./training-and-validation.md)
   Create, train, and validate a graph to produce acceptable prediction results.
+### Macros
+- [MLCOMPUTE_AVAILABLE_STARTING](./mlcompute_available_starting.md)
+- [MLCOMPUTE_AVAILABLE_STARTING_BUT_DEPRECATED](./mlcompute_available_starting_but_deprecated.md)
+- [MLCOMPUTE_AVAILABLE_STARTING_BUT_DEPRECATED_MACOS14](./mlcompute_available_starting_but_deprecated_macos14.md)
+- [MLCOMPUTE_CLASS_AVAILABLE_STARTING](./mlcompute_class_available_starting.md)
+- [MLCOMPUTE_ENUM_AVAILABLE_STARTING](./mlcompute_enum_available_starting.md)
+- [MLCOMPUTE_ENUM_AVAILABLE_STARTING_BUT_DEPRECATED](./mlcompute_enum_available_starting_but_deprecated.md)
+- [MLCOMPUTE_PROTOCOL_AVAILABLE_STARTING](./mlcompute_protocol_available_starting.md)
+- [MLCOMPUTE_UNAVAILABLE](./mlcompute_unavailable.md)
+- [MLComputeTypes_h](./mlcomputetypes_h.md)
+### Enumerations
+- [MLCPaddingPolicy](./mlcpaddingpolicy-14ba7.md)
+  A padding policy that you specify for a convolution or pooling layer.
 
 
 ---

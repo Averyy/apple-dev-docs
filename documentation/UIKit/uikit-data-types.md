@@ -16,6 +16,8 @@ The UIKit framework defines data types that are used in multiple places througho
   Text formatting horizontal alignment state.
 - [UITextFormattingViewController.TextList](./uitextformattingviewcontroller/textlist.md)
   Text formatting text list state.
+- [UITextFormattingViewControllerChangeType](./uitextformattingviewcontrollerchangetype.md)
+  Enumeration of text formatting actions.
 
 ## See Also
 

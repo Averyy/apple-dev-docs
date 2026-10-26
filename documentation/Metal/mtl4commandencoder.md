@@ -54,6 +54,12 @@ protocol MTL4CommandEncoder : NSObjectProtocol
   Encodes a command that instructs the GPU to update a fence after one or more stages, which can unblock other passes waiting for the fence.
 - [func waitForFence(any MTLFence, beforeEncoderStages: MTLStages)](./mtl4commandencoder/waitforfence%28_,beforeencoderstages%29.md)
   Encodes a command that instructs the GPU to pause before starting one or more stages of the pass until a pass updates a fence.
+- [- barrierAfterEncoderStages:beforeEncoderStages:visibilityOptions:](./mtl4commandencoder/barrierafterencoderstages_beforeencoderstages_visibilityoptions_.md)
+  Encodes an intra-pass barrier that instructs the GPU to pause before running stages of subsequent commands until stages of previous commands complete.
+- [- barrierAfterQueueStages:beforeStages:visibilityOptions:](./mtl4commandencoder/barrierafterqueuestages_beforestages_visibilityoptions_.md)
+  Encodes a consumer barrier on work you commit to the same command queue.
+- [- barrierAfterStages:beforeQueueStages:visibilityOptions:](./mtl4commandencoder/barrierafterstages_beforequeuestages_visibilityoptions_.md)
+  Encodes a producer barrier on work committed to the same command queue.
 
 ## Relationships
 
@@ -95,6 +101,8 @@ protocol MTL4CommandEncoder : NSObjectProtocol
   Describes an object containing debug information from Metal to your app after completing a workload.
 - [typealias MTL4CommitFeedbackHandler](./mtl4commitfeedbackhandler.md)
   Defines the block signature for a callback Metal invokes to provide your app feedback after completing a workload.
+- [MTL4CounterHeap](./mtl4counterheap.md)
+  Represents an opaque, driver-controlled section of memory that can store GPU counter data.
 
 
 ---

@@ -43,6 +43,8 @@ You must call the [`modifyPixelData(_:)`](./modifypixeldata%28_%29.md) method at
 ### Creating an Empty Mutable Texture
 - [init(size: CGSize)](./init%28size%29.md)
   Initializes an empty texture with a specific size.
+- [+ mutableTextureWithSize:](./mutabletexturewithsize_.md)
+  Creates an empty texture with a specific size.
 
 
 ---

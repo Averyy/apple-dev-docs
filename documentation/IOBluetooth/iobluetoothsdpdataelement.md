@@ -81,6 +81,11 @@ In the case where the element is a data element sequence, the value may be an ar
   Method call to convert an IOBluetoothSDPDataElementRef into an IOBluetoothSDPDataElement *.
 - [class func withType(BluetoothSDPDataElementTypeDescriptor, sizeDescriptor: BluetoothSDPDataElementSizeDescriptor, size: UInt32, value: NSObject!) -> Self!](./iobluetoothsdpdataelement/withtype%28_,sizedescriptor,size,value%29.md)
   Creates a new IOBluetoothSDPDataElement with the given attributes.
+### Instance Variables
+- [mSize](./iobluetoothsdpdataelement/msize.md)
+- [mSizeDescriptor](./iobluetoothsdpdataelement/msizedescriptor.md)
+- [mTypeDescriptor](./iobluetoothsdpdataelement/mtypedescriptor.md)
+- [mValue](./iobluetoothsdpdataelement/mvalue.md)
 
 ## Relationships
 

@@ -78,6 +78,12 @@ Setting `timeoutInSeconds` to 0 for the system-wide accessibility object resets 
   Requests that the specified accessibility object perform the specified action.
 - [func AXUIElementSetAttributeValue(AXUIElement, CFString, CFTypeRef) -> AXError](./api-1460434-axuielementsetattributevalue.md)
   Sets the accessibility object's attribute to the specified value.
+- [AXAPIEnabled](./api-1462072-axapienabled.md)
+  Returns whether the accessibility API is enabled.
+- [AXMakeProcessTrusted](./api-1462083-axmakeprocesstrusted.md)
+  Attempts to make the process represented by the specified path a trusted accessibility client.
+- [AXUIElementPostKeyboardEvent](./api-1462057-axuielementpostkeyboardevent.md)
+  Posts keys to the specified application.
 
 
 ---

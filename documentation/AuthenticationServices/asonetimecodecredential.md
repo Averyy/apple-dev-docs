@@ -33,6 +33,8 @@ class ASOneTimeCodeCredential
   The one-time passcode.
 ### Initializers
 - [init?(coder: NSCoder)](./asonetimecodecredential/init%28coder%29.md)
+### Type Methods
+- [+ credentialWithCode:](./asonetimecodecredential/credentialwithcode_.md)
 
 ## Relationships
 

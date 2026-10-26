@@ -46,6 +46,10 @@ The viewport’s [`originX`](../mtlviewport/originx.md) and [`originY`](../mtlvi
   Configures a rectangle for the fragment scissor test.
 - [func setScissorRects([MTLScissorRect])](./setscissorrects%28_%29.md)
   Configures multiple rectangles for the fragment scissor test.
+- [- setViewports:count:](./setviewports_count_.md)
+  Configures the render pipeline with multiple viewports that apply transformations and clipping rectangles.
+- [- setScissorRects:count:](./setscissorrects_count_.md)
+  Configures multiple rectangles for the fragment scissor test.
 
 
 ---

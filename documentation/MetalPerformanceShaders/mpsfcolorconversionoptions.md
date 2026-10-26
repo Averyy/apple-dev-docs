@@ -36,6 +36,9 @@ enum MPSFColorConversionOptions : uint64_t;
 - [static var converisonOptionsPrecisionSnorm8: MPSFColorConversionOptions](./mpsfcolorconversionoptions/converisonoptionsprecisionsnorm8.md)
 - [static var converisonOptionsPrecisionUnorm16: MPSFColorConversionOptions](./mpsfcolorconversionoptions/converisonoptionsprecisionunorm16.md)
 - [static var converisonOptionsPrecisionUnorm8: MPSFColorConversionOptions](./mpsfcolorconversionoptions/converisonoptionsprecisionunorm8.md)
+### Enumeration Cases
+- [MPSFColorConversionOptionsNone](./mpsfcolorconversionoptions/mpsfcolorconversionoptionsnone.md)
+- [MPSFColorConversionOptionsPrecisionDefault](./mpsfcolorconversionoptions/mpsfcolorconversionoptionsprecisiondefault.md)
 
 ## Relationships
 

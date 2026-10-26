@@ -44,6 +44,8 @@ Use this method to process the provided text and to update the [`dominantLanguag
   Generates the probabilities of possible languages for the processed text.
 - [func reset()](./reset%28%29.md)
   Resets the recognizer to its initial state.
+- [- languageHypothesesWithMaximum:](./languagehypotheseswithmaximum_.md)
+  Generates the probabilities of possible languages for the processed text.
 
 
 ---

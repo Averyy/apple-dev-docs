@@ -21,7 +21,7 @@ class CLKComplicationIntentWidgetMigrationConfiguration
 
 #### Overview
 
-These configuration objects use an [`INIntent`](https://developer.apple.com/documentation/intents/inintent) object to provide dynamic configuration information. Use intent-based complications when your app customizes the list of complications available in the complication picker based on the state of your app. For example, if you provide temperature complications for the top cities in the user’s favorites list, use an [`INIntent`](https://developer.apple.com/documentation/intents/inintent) object to describe each city.
+These configuration objects use an [`INIntent`](../Intents/inintent.md) object to provide dynamic configuration information. Use intent-based complications when your app customizes the list of complications available in the complication picker based on the state of your app. For example, if you provide temperature complications for the top cities in the user’s favorites list, use an [`INIntent`](../Intents/inintent.md) object to describe each city.
 
 For more information, see [Migrating ClockKit complications to WidgetKit](../WidgetKit/converting-a-clockkit-app.md).
 
@@ -29,6 +29,8 @@ For more information, see [Migrating ClockKit complications to WidgetKit](../Wid
 
 ### Creating Intent widget configurations
 - [init(kind: String, extensionBundleIdentifier: String, intent: INIntent, localizedDisplayName: String)](./clkcomplicationintentwidgetmigrationconfiguration/init%28kind,extensionbundleidentifier,intent,localizeddisplayname%29.md)
+  Creates an object that describes an intents-based watchOS complication in your WidgetKit extension.
+- [+ intentWidgetMigrationConfigurationWithKind:extensionBundleIdentifier:intent:localizedDisplayName:](./clkcomplicationintentwidgetmigrationconfiguration/intentwidgetmigrationconfigurationwithkind_extensionbundleidentifier_intent_localizeddisplayname_.md)
   Creates an object that describes an intents-based watchOS complication in your WidgetKit extension.
 ### Accessing configuration properties
 - [var kind: String](./clkcomplicationintentwidgetmigrationconfiguration/kind.md)

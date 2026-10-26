@@ -86,6 +86,8 @@ Using universal links instead of custom URL schemes removes the need to use this
   Sets the app’s status bar to the specified orientation, optionally animating the transition.
 - [func registerUserNotificationSettings(UIUserNotificationSettings)](./registerusernotificationsettings%28_%29.md)
   Registers your preferred options for notifying the user.
+- [- setStatusBarHidden:animated:](./setstatusbarhidden_animated_.md)
+  Hides or shows the status bar, optionally animating the transition.
 
 
 ---

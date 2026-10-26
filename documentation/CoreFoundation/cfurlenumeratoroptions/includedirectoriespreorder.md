@@ -38,6 +38,8 @@ kCFURLEnumeratorIncludeDirectoriesPreOrder
   The enumerator skips package directory contents.
 - [static var includeDirectoriesPostOrder: CFURLEnumeratorOptions](./includedirectoriespostorder.md)
   If provided along with the [`descendRecursively`](./descendrecursively.md) option, the recursive enumerator returns a directory’s URL after returning the URLs of the directory’s descendents.
+- [kCFURLEnumeratorDefaultBehavior](./kcfurlenumeratordefaultbehavior.md)
+  The enumerator performs its default behavior.
 
 
 ---

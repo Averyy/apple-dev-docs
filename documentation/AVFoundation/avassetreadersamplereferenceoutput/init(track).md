@@ -28,6 +28,12 @@ init(track: AVAssetTrack)
 
 - `track`: The track for which to provide sample references.
 
+## See Also
+
+### Creating a sample reference output
+- [+ assetReaderSampleReferenceOutputWithTrack:](./assetreadersamplereferenceoutputwithtrack_.md)
+  Returns a new object that supplies sample references.
+
 
 ---
 

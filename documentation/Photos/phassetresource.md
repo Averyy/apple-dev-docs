@@ -68,6 +68,8 @@ To work with the data contained in an asset resource, fetch it using the [`PHAss
   The width of the resource, in pixels.
 - [var dataSize: Int?](./phassetresource/datasize-5lxva.md)
   The size of the resource in bytes
+- [dataSize](./phassetresource/datasize-6cf5k.md)
+  The size of the resource in bytes
 
 ## Relationships
 

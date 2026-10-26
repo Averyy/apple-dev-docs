@@ -43,6 +43,25 @@ A new ordered set containing cnt objects from the list of objects specified by `
   Initializes a new ordered set with the contents of a set, optionally copying the items.
 - [convenience init(orderedSet: NSOrderedSet)](./init%28orderedset%29.md)
   Initializes a new ordered set with the contents of a set.
+- [+ orderedSetWithSet:](./orderedsetwithset_.md)
+  Creates and returns an ordered set with the contents of a set.
+- [+ orderedSetWithOrderedSet:](./orderedsetwithorderedset_.md)
+  Creates and returns an ordered set containing the objects from another ordered set.
+- [+ orderedSetWithObjects:](./orderedsetwithobjects_.md)
+  Creates and returns a ordered set containing the objects in a given argument list.
+- [+ orderedSetWithObject:](./orderedsetwithobject_.md)
+  Creates and returns a ordered set that contains a single given object.
+### Creating an Ordered Set
+- [+ orderedSet](./orderedset.md)
+  Creates and returns an empty ordered set
+- [+ orderedSetWithArray:](./orderedsetwitharray_.md)
+  Creates and returns a set containing a uniqued collection of the objects contained in a given array.
+- [+ orderedSetWithArray:range:copyItems:](./orderedsetwitharray_range_copyitems_.md)
+  Creates and returns a new ordered set for a specified range of objects in an array.
+- [+ orderedSetWithOrderedSet:range:copyItems:](./orderedsetwithorderedset_range_copyitems_.md)
+  Creates and returns a new ordered set for a specified range of objects in an ordered set.
+- [+ orderedSetWithSet:copyItems:](./orderedsetwithset_copyitems_.md)
+  Creates and returns an ordered set with the contents of a set, optionally copying the items.
 
 
 ---

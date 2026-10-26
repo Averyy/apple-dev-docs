@@ -39,6 +39,9 @@ A PDF panel has a variety of built-in customization controls, such as page orien
 ### Constants
 - [NSPDFPanel.Options](./nspdfpanel/options-swift.struct.md)
   Constants used to configure the contents of a PDF panel.
+### Creating a PDF Panel
+- [+ panel](./nspdfpanel/panel.md)
+  Returns a new `NSPDFPanel` object.
 
 ## Relationships
 

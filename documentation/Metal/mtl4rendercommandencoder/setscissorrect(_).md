@@ -42,6 +42,10 @@ Metal performs a scissor test and discards all fragments outside of the scissor 
   Sets an array of viewports to transform vertices from normalized device coordinates to window coordinates.
 - [func setScissorRects([MTLScissorRect])](./setscissorrects%28_%29.md)
   Sets an array of scissor rectangles for a fragment scissor test.
+- [- setViewports:count:](./setviewports_count_.md)
+  Sets an array of viewports to transform vertices from normalized device coordinates to window coordinates.
+- [- setScissorRects:count:](./setscissorrects_count_.md)
+  Sets an array of scissor rectangles for a fragment scissor test.
 
 
 ---

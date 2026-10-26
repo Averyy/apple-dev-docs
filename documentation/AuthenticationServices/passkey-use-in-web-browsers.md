@@ -28,6 +28,8 @@ The person using your browser chooses whether to let your app access their passk
 ### Website credential providers
 - [protocol ASAuthorizationWebBrowserPlatformPublicKeyCredentialProvider](./asauthorizationwebbrowserplatformpublickeycredentialprovider-19bq.md)
   A mechanism you use to provide public key credential requests to a browser app.
+- [ASAuthorizationWebBrowserPlatformPublicKeyCredentialProvider](./asauthorizationwebbrowserplatformpublickeycredentialprovider-1c8cl.md)
+  A protocol for creating passkey requests.
 
 ## See Also
 

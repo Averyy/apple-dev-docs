@@ -39,6 +39,7 @@ class DOMHTMLAnchorElement
 - [var target: String!](./domhtmlanchorelement/target.md)
 - [var text: String!](./domhtmlanchorelement/text.md)
 - [var type: String!](./domhtmlanchorelement/type.md)
+- [accessKey](./domhtmlanchorelement/accesskey.md)
 
 ## Relationships
 

@@ -257,6 +257,8 @@ enum HMErrorCode : NSInteger;
 ### Enumeration Cases
 - [HMError.Code.partialCommunicationFailure](./code/partialcommunicationfailure.md)
 - [HMError.Code.homeUpgradeRequired](./code/homeupgraderequired.md)
+- [HMErrorCodeIncompatibleHomeHub](../hmerrorcode/hmerrorcodeincompatiblehomehub.md)
+  An error indicating an incompatible home hub.
 ### Initializers
 - [init?(rawValue: Int)](./code/init%28rawvalue%29.md)
 

@@ -163,6 +163,8 @@ struct DevicePickerView: UIViewRepresentable {
   A protocol that defines the methods to adopt to respond to route picker view presentation events.
 - [enum AVRoutePickerViewButtonStyle](./avroutepickerviewbuttonstyle.md)
   Constants that define the button styles a route picker view supports.
+- [AVAudioSessionRouteSelection](./avaudiosessionrouteselection.md)
+  Constants that indicate the audio route selection.
 
 
 ---

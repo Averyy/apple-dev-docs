@@ -39,6 +39,8 @@ protocol NSFileProviderExternalVolumeHandling : NSObjectProtocol
   Checks whether the specified URL is eligible for storing a domain.
 - [NSFileProviderManager.EligibilityResult](./nsfileprovidermanager/eligibilityresult.md)
   Constants that specify whether a URL is eligible for storing a domain.
+- [+ checkDomainsCanBeStored:onVolumeAtURL:unsupportedReason:error:](./nsfileprovidermanager/checkdomainscanbestored_onvolumeaturl_unsupportedreason_error_.md)
+  Check if a URL is eligible for storing a domain.
 
 
 ---

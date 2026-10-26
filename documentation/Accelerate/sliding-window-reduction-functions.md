@@ -16,6 +16,15 @@ Calculate maximum values and sums of values in a sliding window.
   Calculates the double-precision sliding window sum of a vector.
 - [static func slidingWindowSum<U, V>(U, usingWindowLength: Int, result: inout V)](./vdsp/slidingwindowsum%28_,usingwindowlength,result%29-5tg0h.md)
   Calculates the single-precision sliding window sum of a vector.
+- [vDSP_vswsum](./vdsp_vswsum.md)
+  Finds the sum of values in a sliding window at each possible position in a single-precision input vector.
+- [vDSP_vswsumD](./vdsp_vswsumd.md)
+  Finds the sum of values in a sliding window at each possible position in a double-precision input vector.
+### Sliding-window maximum functions
+- [vDSP_vswmax](./vdsp_vswmax.md)
+  Finds the maximum value in a sliding window at each possible position in a single-precision input vector.
+- [vDSP_vswmaxD](./vdsp_vswmaxd.md)
+  Finds the maximum value in a sliding window at each possible position in a double-precision input vector.
 
 
 ---

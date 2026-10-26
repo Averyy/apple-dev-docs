@@ -8,30 +8,30 @@ Perform operations on vectors that contain unsigned 16-bit integer elements.
 ## Topics
 
 ### Vector Data Types
-- [typealias simd_ushort1](https://developer.apple.com/documentation/simd/simd_ushort1)
+- [typealias simd_ushort1](../simd/simd_ushort1.md)
   A vector of one 16-bit unsigned integer element.
-- [typealias simd_ushort2](https://developer.apple.com/documentation/simd/simd_ushort2)
+- [typealias simd_ushort2](../simd/simd_ushort2.md)
   A vector of two 16-bit unsigned integer elements.
-- [typealias simd_ushort3](https://developer.apple.com/documentation/simd/simd_ushort3)
+- [typealias simd_ushort3](../simd/simd_ushort3.md)
   A vector of three 16-bit unsigned integer elements.
-- [typealias simd_ushort4](https://developer.apple.com/documentation/simd/simd_ushort4)
+- [typealias simd_ushort4](../simd/simd_ushort4.md)
   A vector of four 16-bit unsigned integer elements.
-- [typealias simd_ushort8](https://developer.apple.com/documentation/simd/simd_ushort8)
+- [typealias simd_ushort8](../simd/simd_ushort8.md)
   A vector of eight 16-bit unsigned integer elements.
-- [typealias simd_ushort16](https://developer.apple.com/documentation/simd/simd_ushort16)
+- [typealias simd_ushort16](../simd/simd_ushort16.md)
   A vector of sixteen 16-bit unsigned integer elements.
-- [typealias simd_ushort32](https://developer.apple.com/documentation/simd/simd_ushort32)
+- [typealias simd_ushort32](../simd/simd_ushort32.md)
   A vector of thirty-two 16-bit unsigned integer elements.
 ### Packed Vector Data Types
-- [typealias simd_packed_ushort2](https://developer.apple.com/documentation/simd/simd_packed_ushort2)
+- [typealias simd_packed_ushort2](../simd/simd_packed_ushort2.md)
   A packed vector of two 16-bit unsigned integer elements.
-- [typealias simd_packed_ushort4](https://developer.apple.com/documentation/simd/simd_packed_ushort4)
+- [typealias simd_packed_ushort4](../simd/simd_packed_ushort4.md)
   A packed vector of four 16-bit unsigned integer elements.
-- [typealias simd_packed_ushort8](https://developer.apple.com/documentation/simd/simd_packed_ushort8)
+- [typealias simd_packed_ushort8](../simd/simd_packed_ushort8.md)
   A packed vector of eight 16-bit unsigned integer elements.
-- [typealias simd_packed_ushort16](https://developer.apple.com/documentation/simd/simd_packed_ushort16)
+- [typealias simd_packed_ushort16](../simd/simd_packed_ushort16.md)
   A packed vector of sixteen 16-bit unsigned integer elements.
-- [typealias simd_packed_ushort32](https://developer.apple.com/documentation/simd/simd_packed_ushort32)
+- [typealias simd_packed_ushort32](../simd/simd_packed_ushort32.md)
   A packed vector of thirty-two 16-bit unsigned integer elements.
 
 ## See Also

@@ -35,6 +35,16 @@ The request type.
 ### Sending Device Requests
 - [let IOUSBHostDefaultControlCompletionTimeout: TimeInterval](./iousbhostdefaultcontrolcompletiontimeout.md)
   The default completion timeout for input/output requests.
+- [- sendDeviceRequest:data:bytesTransferred:completionTimeout:error:](./iousbhostobject/senddevicerequest_data_bytestransferred_completiontimeout_error_.md)
+  Sends a request on the default control endpoint.
+- [- sendDeviceRequest:data:bytesTransferred:error:](./iousbhostobject/senddevicerequest_data_bytestransferred_error_.md)
+  Sends a request on the default control endpoint with a default completion timeout.
+- [- sendDeviceRequest:error:](./iousbhostobject/senddevicerequest_error_.md)
+  Sends a request on the default control endpoint without a data phase and default completion timeout.
+### Related Documentation
+- [tIOUSBDeviceRequestDirectionValue](../iokit/tiousbdevicerequestdirectionvalue.md)
+- [tIOUSBDeviceRequestRecipientValue](../iokit/tiousbdevicerequestrecipientvalue.md)
+- [tIOUSBDeviceRequestTypeValue](../iokit/tiousbdevicerequesttypevalue.md)
 
 
 ---

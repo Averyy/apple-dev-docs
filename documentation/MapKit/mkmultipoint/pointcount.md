@@ -34,6 +34,8 @@ var pointCount: Int { get }
   Translates a point index into a unit distance along the shape.
 - [func locations(at: IndexSet) -> [CGFloat]](./locations%28at%29.md)
   Translates a point index set into a unit distance along the shape.
+- [- locationsAtPointIndexes:](./locationsatpointindexes_.md)
+  Returns a set of unit distance values that correspond to the point indexes along the shape.
 
 
 ---

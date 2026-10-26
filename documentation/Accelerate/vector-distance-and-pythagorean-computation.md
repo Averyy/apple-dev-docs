@@ -29,6 +29,19 @@ Calculate distance and hypotenuse of vectors.
   Returns the single-precision distance squared between two points in n-dimensional space.
 - [static func distanceSquared<U, V>(U, V) -> Double](./vdsp/distancesquared%28_,_%29-3oub3.md)
   Returns the double-precision distance squared between two points in n-dimensional space.
+- [vDSP_vdist](./vdsp_vdist.md)
+  Calculates the single-precision hypotenuses of right triangles with legs that are the lengths of corresponding elements of two pairs of vectors.
+- [vDSP_vdistD](./vdsp_vdistd.md)
+  Calculates the double-precision hypotenuses of right triangles with legs that are the lengths of corresponding elements of two pairs of vectors.
+- [vDSP_distancesq](./vdsp_distancesq.md)
+  Calculates the single-precision distance squared between two points in n-dimensional space.
+- [vDSP_distancesqD](./vdsp_distancesqd.md)
+  Calculates the double-precision distance squared between two points in n-dimensional space.
+### Vector Pythagorean computation
+- [vDSP_vpythg](./vdsp_vpythg.md)
+  Calculates the single-precision hypotenuses of right triangles with legs that are the differences of corresponding elements of two pairs of vectors.
+- [vDSP_vpythgD](./vdsp_vpythgd.md)
+  Calculates the double-precision hypotenuses of right triangles with legs that are the differences of corresponding elements of two pairs of vectors.
 
 ## See Also
 

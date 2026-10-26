@@ -1,0 +1,45 @@
+# resolveCounters:inRange:destinationBuffer:destinationOffset:
+
+**Framework**: Metal  
+**Kind**: method  
+**Role**: Instance Method
+
+Encodes a command that resolves the data from the samples in a sample counter buffer and stores the results into a buffer.
+
+**Availability**:
+- iOS 14.0+
+- iPadOS 14.0+
+- Mac Catalyst 14.0+
+- macOS 10.15+
+- tvOS 14.0+
+- visionOS 1.0+
+
+## Declaration
+
+```objc
+- (void) resolveCounters:(id<MTLCounterSampleBuffer>) sampleBuffer inRange:(NSRange) range destinationBuffer:(id<MTLBuffer>) destinationBuffer destinationOffset:(NSUInteger) destinationOffset;
+```
+
+#### Discussion
+
+For an example of how and when to use this method, see [Converting a GPU’s counter data into a readable format](../converting-a-gpus-counter-data-into-a-readable-format.md).
+
+> **Note**:  The GPU stores [`MTLCounterErrorValue`](../mtlcountererrorvalue.md) in `destinationBuffer` each time it encounters an error resolving a sample.
+
+## Parameters
+
+- `sampleBuffer`: A counter sample buffer source that contains the sample data.
+- `range`: A range that indicates which of the buffer’s samples the command resolves.
+- `destinationBuffer`: A destination buffer where the command stores the data it resolves.
+- `destinationOffset`: A starting offset, in bytes, within `destinationBuffer` where the blit pass writes the first byte of the data it resolves.
+
+## See Also
+
+### Sampling counters
+- [func sampleCounters(sampleBuffer: any MTLCounterSampleBuffer, sampleIndex: Int, barrier: Bool)](./samplecounters%28samplebuffer,sampleindex,barrier%29.md)
+  Encodes a command that samples the GPU’s hardware counters during a blit pass and stores the data in a counter sample buffer.
+
+
+---
+
+*[View on Apple Developer](https://developer.apple.com/documentation/metal/mtlblitcommandencoder/resolvecounters:inrange:destinationbuffer:destinationoffset:)*

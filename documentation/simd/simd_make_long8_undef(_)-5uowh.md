@@ -33,6 +33,8 @@ static simd_long8 simd_make_long8_undef(simd_long2 other);
   Returns a new vector from the specified three-element vector, and other elements undefined.
 - [func simd_make_long8_undef(simd_long4) -> simd_long8](./simd_make_long8_undef%28_%29-59t0j.md)
   Returns a new vector from the specified four-element vector, and other elements undefined.
+- [vector8](./vector8-6qxy0.md)
+  Returns a new vector from the specified vectors.
 
 
 ---

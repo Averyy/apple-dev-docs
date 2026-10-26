@@ -15,9 +15,9 @@ There are other times your app should delete donations; for instance, when your 
 
 ##### Delete Interaction Donations
 
-To delete donations made with interaction objects, use one of the `delete` class methods on [`INInteraction`](https://developer.apple.com/documentation/intents/ininteraction) (see Deleting Interactions from the System). To delete specific donations, use [`delete(with:completion:)`](https://developer.apple.com/documentation/intents/ininteraction/delete(with:completion:)-2d1gs), passing in the list of [`identifier`](https://developer.apple.com/documentation/intents/ininteraction/identifier) strings for each interaction to delete. Or use [`delete(with:completion:)`](https://developer.apple.com/documentation/intents/ininteraction/delete(with:completion:)-tcq9), passing in the [`groupIdentifier`](https://developer.apple.com/documentation/intents/ininteraction/groupidentifier) string used to group of two or more interactions.
+To delete donations made with interaction objects, use one of the `delete` class methods on [`INInteraction`](../Intents/ininteraction.md) (see Deleting Interactions from the System). To delete specific donations, use [`delete(with:completion:)`](../Intents/ininteraction/delete%28with,completion%29-2d1gs.md), passing in the list of [`identifier`](../Intents/ininteraction/identifier.md) strings for each interaction to delete. Or use [`delete(with:completion:)`](../Intents/ininteraction/delete%28with,completion%29-tcq9.md), passing in the [`groupIdentifier`](../Intents/ininteraction/groupidentifier.md) string used to group of two or more interactions.
 
-If you need to delete all interactions that your app donated—for example, when the user signs out of your app—use [`deleteAll(completion:)`](https://developer.apple.com/documentation/intents/ininteraction/deleteall(completion:)).
+If you need to delete all interactions that your app donated—for example, when the user signs out of your app—use [`deleteAll(completion:)`](../Intents/ininteraction/deleteall%28completion%29.md).
 
 ##### Delete User Activity Donations
 

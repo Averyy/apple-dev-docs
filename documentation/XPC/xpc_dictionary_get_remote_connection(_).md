@@ -66,6 +66,8 @@ If the dictionary was received by a connection event handler or a dictionary cre
   Gets a date value from a dictionary directly.
 - [func xpc_dictionary_get_dictionary(xpc_object_t, UnsafePointer<CChar>) -> xpc_object_t?](./xpc_dictionary_get_dictionary%28_,_%29.md)
   Returns the dictionary value for the specified key.
+- [xpc_dictionary_get_double](./xpc_dictionary_get_double%28_,_%29.md)
+  Gets a double-precision floating point primitive value from a dictionary directly.
 
 
 ---

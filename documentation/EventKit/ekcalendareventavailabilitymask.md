@@ -38,6 +38,8 @@ enum EKCalendarEventAvailabilityMask : NSUInteger;
   The calendar supports the tentative event availability setting.
 - [static var unavailable: EKCalendarEventAvailabilityMask](./ekcalendareventavailabilitymask/unavailable.md)
   The calendar supports the unavailable event availability setting.
+- [EKCalendarEventAvailabilityNone](./ekcalendareventavailabilitymask/ekcalendareventavailabilitynone.md)
+  The calendar does not support event availability settings.
 
 ## Relationships
 

@@ -37,6 +37,11 @@ Use these constants for setting [`tickMarkPosition`](../nsslidercell/tickmarkpos
   A constant indicating that tick marks are displayed on the trailing side of the slider.
 ### Initializers
 - [init?(rawValue: UInt)](./tickmarkposition-swift.enum/init%28rawvalue%29.md)
+### Deprecated
+- [NSTickMarkBelow](../nstickmarkbelow.md)
+- [NSTickMarkAbove](../nstickmarkabove.md)
+- [NSTickMarkLeft](../nstickmarkleft.md)
+- [NSTickMarkRight](../nstickmarkright.md)
 
 ## Relationships
 

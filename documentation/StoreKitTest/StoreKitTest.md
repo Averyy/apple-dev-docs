@@ -41,6 +41,8 @@ Testing StoreKit in iOS, watchOS, or tvOS apps requires Xcode 12 or later runnin
   A constant that represents the domain for error codes in the testing environment.
 - [struct SKTestError](./sktesterror.md)
   Information about an error that the testing environment returns.
+- [SKTestErrorCode](./sktesterror/code.md)
+  Error codes in the testing environment.
 ### Ad impression and postback testing
 - [Testing and validating ad impression signatures and postbacks for SKAdNetwork](./testing-and-validating-ad-impression-signatures-and-postbacks-for-skadnetwork.md)
   Validate your ad impressions and test your postbacks by creating unit tests using the StoreKit Test framework.
@@ -57,6 +59,8 @@ Testing StoreKit in iOS, watchOS, or tvOS apps requires Xcode 12 or later runnin
   A string that identifies the error domain for SKAdNetwork testing in the testing environment.
 - [struct SKAdTestError](./skadtesterror.md)
   An error the testing environment returns for SKAdNetwork testing errors.
+- [SKAdTestErrorCode](./skadtesterror/code.md)
+  Enumerated error codes related to ad network testing in the testing environment.
 ### Structures
 - [struct StoreKitAppStoreSyncAPI](./storekitappstoresyncapi.md)
 - [struct StoreKitAppTransactionAPI](./storekitapptransactionapi.md)

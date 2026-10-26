@@ -34,7 +34,7 @@ In the example above, the `container` component has two child components. Notice
 ### Related Documentation
 - [Nesting Components in an Article](./nesting-components-in-an-article.md)
   Use container components to create the component hierarchies you need for special article designs.
-- [object Container](https://developer.apple.com/documentation/applenewsformat/container)
+- [object Container](../AppleNewsFormat/container.md)
   Properties shared by all container types.
 ### Advanced Design Tutorial 1: Headers and Parallax Behavior
 - [Setting Up the Advanced Tutorials](./setting-up-the-advanced-tutorials.md)

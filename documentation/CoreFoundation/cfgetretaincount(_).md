@@ -44,6 +44,12 @@ This function may be useful for debugging memory leaks. You normally do not use 
 ### Memory Management
 - [func CFGetAllocator(CFTypeRef!) -> CFAllocator!](./cfgetallocator%28_%29.md)
   Returns the allocator used to allocate a Core Foundation object.
+- [CFMakeCollectable](./cfmakecollectable.md)
+  Makes a newly-allocated Core Foundation object eligible for garbage collection.
+- [CFRelease](./cfrelease.md)
+  Releases a Core Foundation object.
+- [CFRetain](./cfretain.md)
+  Retains a Core Foundation object.
 
 
 ---

@@ -62,6 +62,8 @@ The implementation of your overriding method must match the implementation of yo
   Decodes and returns an NSPoint structure that was previously encoded with [`encode(_:forKey:)`](./encode%28_,forkey%29-27lif.md).
 - [func decodePropertyList() -> Any?](./decodepropertylist%28%29.md)
   Decodes a property list that was previously encoded with [`encodePropertyList(_:)`](./encodepropertylist%28_%29.md).
+- [- decodeNXObject](./decodenxobject.md)
+  Decodes an object previously written with [`encodeNXObject:`](./encodenxobject_.md).
 
 
 ---

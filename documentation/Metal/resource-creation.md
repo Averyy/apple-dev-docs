@@ -49,6 +49,8 @@ Load assets with input/output queues and make various resource instances, such a
   Creates a sampler state instance.
 - [func getDefaultSamplePositions(sampleCount: Int) -> [MTLSamplePosition]](./mtldevice/getdefaultsamplepositions%28samplecount%29.md)
   Returns the default sample locations based on the number of samples.
+- [- getDefaultSamplePositions:count:](./mtldevice/getdefaultsamplepositions_count_.md)
+  Retrieves the default sample positions for a specific sample count.
 ### Working with sparse textures
 - [func sparseTileSize(textureType: MTLTextureType, pixelFormat: MTLPixelFormat, sampleCount: Int, sparsePageSize: MTLSparsePageSize) -> MTLSize](./mtldevice/sparsetilesize%28texturetype,pixelformat,samplecount,sparsepagesize%29.md)
   Returns the dimensions of a sparse tile for a texture that has a specific sparse page size.

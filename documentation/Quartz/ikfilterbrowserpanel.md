@@ -56,6 +56,13 @@ The `IKFilterBrowserPanel` class allows the user to create filter collections th
 ### Constants
 - [Filter Browser Option Keys](./filter-browser-option-keys.md)
   Keys for filter browser options.
+### Notifications
+- [IKFilterBrowserWillPreviewFilterNotification](./ikfilterbrowserwillpreviewfilternotification.md)
+  Posted before showing a filter preview, allowing an application to set the parameters of a filter.
+- [IKFilterBrowserFilterSelectedNotification](./ikfilterbrowserfilterselectednotification.md)
+  Posted when the user clicks a filter name in the filter browser.
+- [IKFilterBrowserFilterDoubleClickNotification](./ikfilterbrowserfilterdoubleclicknotification.md)
+  Posted when the user double-clicks a filter in the filter browser.
 
 ## Relationships
 

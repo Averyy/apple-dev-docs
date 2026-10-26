@@ -67,6 +67,11 @@ A [`CVBuffer`](./cvbuffer.md) serves as an abstract base class that defines how 
   The attributes associated with Core Video buffers.
 - [CVBuffer Attachment Keys](./cvbuffer-attachment-keys.md)
   The attachment types for a Core Video buffer.
+### Retaining and releasing buffers
+- [CVBufferRetain](./cvbufferretain.md)
+  Retains a Core Video buffer.
+- [CVBufferRelease](./cvbufferrelease.md)
+  Releases a Core Video buffer.
 
 ## See Also
 

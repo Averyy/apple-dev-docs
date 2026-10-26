@@ -51,6 +51,9 @@ The default value of the [`overrideTraitCollection`](./overridetraitcollection.m
 - [var traitOverrides: UITraitOverrides](./traitoverrides-629ka.md)
 - [struct UITraitOverrides](../uitraitoverrides-swift.struct.md)
   A mutable container of traits you use to set trait changes for an object and its descendants.
+- [traitOverrides](./traitoverrides-9o0j4.md)
+- [UITraitOverrides](../uitraitoverrides-c.protocol.md)
+  A mutable container of traits you use to set trait changes for an object and its descendants.
 
 
 ---

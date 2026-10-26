@@ -36,6 +36,10 @@ If this method causes the table column’s width to change, the column’s table
   The table column’s maximum width, in points.
 - [var resizingMask: NSTableColumn.ResizingOptions](./resizingmask.md)
   The table column’s resizing mask.
+- [- isResizable](./isresizable.md)
+  Returns whether the column is resizable.
+- [- setResizable:](./setresizable_.md)
+  Sets whether the user can resize the receiver in its NSTableView.
 
 
 ---

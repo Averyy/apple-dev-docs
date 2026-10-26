@@ -38,6 +38,8 @@ This value is `nil` for segments that represent playback of the primary item.
   The time ranges for the segment that have media data is readily available.
 - [var startDate: Date?](./startdate.md)
   The date at which a segment starts.
+- [loadedTimeRanges](./loadedtimeranges-2p0fl.md)
+  The time ranges for the segment that have media data is readily available.
 
 
 ---

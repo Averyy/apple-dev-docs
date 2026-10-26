@@ -28,6 +28,22 @@ protocol NSFileProviderTestingOperation : NSObjectProtocol
 ### Access the Operation Type
 - [var type: NSFileProviderTestingOperationType](./nsfileprovidertestingoperation/type.md)
   The operation’s type.
+- [- asChildrenEnumeration](./nsfileprovidertestingoperation/aschildrenenumeration.md)
+  Returns the operation if it enumerates contained items.
+- [- asCollisionResolution](./nsfileprovidertestingoperation/ascollisionresolution.md)
+  Returns the operation if it resolves a collision by renaming the new item.
+- [- asContentFetch](./nsfileprovidertestingoperation/ascontentfetch.md)
+  Returns the operation if it fetches an item’s content.
+- [- asCreation](./nsfileprovidertestingoperation/ascreation.md)
+  Returns the operation if it propagates the creation of an item.
+- [- asDeletion](./nsfileprovidertestingoperation/asdeletion.md)
+  Returns the operation if it propagates the deletion of an item.
+- [- asIngestion](./nsfileprovidertestingoperation/asingestion.md)
+  Returns the operation if it alerts the system to changes.
+- [- asLookup](./nsfileprovidertestingoperation/aslookup.md)
+  Returns the operation if it looks up an item.
+- [- asModification](./nsfileprovidertestingoperation/asmodification.md)
+  Returns the operation if it propagates a change.
 
 ## Relationships
 

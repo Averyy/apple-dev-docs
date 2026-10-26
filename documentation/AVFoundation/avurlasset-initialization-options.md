@@ -40,6 +40,8 @@ Specify options to configure the initialization of a media asset.
   Creates an asset that models the media at the specified URL.
 - [init(url: URL, options: [String : Any]?)](./avurlasset/init%28url,options%29-2x8uu.md)
   Creates an asset that models the media resource at the specified URL.
+- [+ URLAssetWithURL:options:](./avurlasset/urlassetwithurl_options_.md)
+  Returns an asset that models the media resource found at the specified URL.
 
 
 ---

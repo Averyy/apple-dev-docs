@@ -42,6 +42,10 @@ Metal clips fragments that lie outside this viewport, and optionally clamps frag
   Sets a scissor rectangle to discard fragments outside a specific area.
 - [func setScissorRects([MTLScissorRect])](./setscissorrects%28_%29.md)
   Sets an array of scissor rectangles for a fragment scissor test.
+- [- setViewports:count:](./setviewports_count_.md)
+  Sets an array of viewports to transform vertices from normalized device coordinates to window coordinates.
+- [- setScissorRects:count:](./setscissorrects_count_.md)
+  Sets an array of scissor rectangles for a fragment scissor test.
 
 
 ---

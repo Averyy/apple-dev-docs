@@ -24,6 +24,12 @@ A test run for the provided test.
 
 - `test`: An [`XCTest`](../xctest-page.md) instance.
 
+## See Also
+
+### Creating Test Runs
+- [+ testRunWithTest:](./testrunwithtest_.md)
+  Creates a new [`XCTestRun`](../xctestrun.md) for the provided test.
+
 
 ---
 

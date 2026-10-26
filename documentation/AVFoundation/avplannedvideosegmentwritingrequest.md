@@ -36,9 +36,13 @@ The client should respond to this request by writing the specified time range of
 ### Creating resumable compression sessions
 - [func createResumableCompressionSession(width: Int32, height: Int32, codecType: CMVideoCodecType, encoderSpecification: [String : any Sendable]?, sourceImageBufferAttributes: [String : any Sendable]?, outputHandler: (OSStatus, VTEncodeInfoFlags, CMSampleBuffer?) -> Void) throws -> VTCompressionSession](./avplannedvideosegmentwritingrequest/createresumablecompressionsession%28width,height,codectype,encoderspecification,sourceimagebufferattributes,outputhandler%29.md)
   Helper function to create a VTCompressionSession that restores the video encoder state persisted at the end of the previous segment.
+- [- createResumableCompressionSessionWithAllocator:width:height:codecType:encoderSpecification:sourceImageBufferAttributes:compressedDataAllocator:outputCallback:outputCallbackRefCon:returningError:](./avplannedvideosegmentwritingrequest/createresumablecompressionsessionwithallocator_width_height_codectype_encoderspecification_sourceimagebufferattributes_compresseddataallocator_outputcallback_outputcallbackrefcon_returningerror_.md)
+  Helper function to create a VTCompressionSession that restores the video encoder state persisted at the end of the previous segment.
 ### Creating resumable writer inputs
 - [func makeResumableWriterInput(for: AVMediaType, outputSettings: [String : any Sendable]?, sourceFormatHint: CMFormatDescription?) throws -> AVAssetWriterInput](./avplannedvideosegmentwritingrequest/makeresumablewriterinput%28for,outputsettings,sourceformathint%29.md)
   Helper function that returns a minimally configured AVAssetWriterInput object for writing the current segment.
+- [- resumableAssetWriterInputWithMediaType:outputSettings:sourceFormatHint:returningError:](./avplannedvideosegmentwritingrequest/resumableassetwriterinputwithmediatype_outputsettings_sourceformathint_returningerror_.md)
+  Helper function that returns a minimally configured AVAssetWriterInput object for writing the current segment. The final video encoder state from the previous segment will be restored before writing starts.
 
 ## Relationships
 

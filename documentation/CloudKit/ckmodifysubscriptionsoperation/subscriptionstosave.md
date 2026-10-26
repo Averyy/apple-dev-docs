@@ -34,6 +34,8 @@ This property contains the subscriptions that you want to save. Its initial valu
 ### Configuring the Modify Subscriptions Operation
 - [var subscriptionIDsToDelete: [CKSubscription.ID]?](./subscriptionidstodelete-3534e.md)
   The IDs of the subscriptions that you want to delete.
+- [subscriptionIDsToDelete](./subscriptionidstodelete-14x82.md)
+  The IDs of the subscriptions that you want to delete.
 
 
 ---

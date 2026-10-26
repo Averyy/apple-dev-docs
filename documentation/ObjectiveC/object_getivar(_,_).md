@@ -51,6 +51,14 @@ The value of the instance variable specified by `ivar`, or `nil` if `object` is 
   Returns the class of an object.
 - [func object_setClass(Any?, AnyClass) -> AnyClass?](./object_setclass%28_,_%29.md)
   Sets the class of an object.
+- [object_copy](./object_copy.md)
+  Returns a copy of a given object.
+- [object_dispose](./object_dispose.md)
+  Frees the memory occupied by a given object.
+- [object_setInstanceVariable](./object_setinstancevariable.md)
+  Changes the value of an instance variable of a class instance.
+- [object_getInstanceVariable](./object_getinstancevariable.md)
+  Obtains the value of an instance variable of a class instance.
 
 
 ---

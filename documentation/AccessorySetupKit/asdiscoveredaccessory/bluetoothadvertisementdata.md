@@ -25,6 +25,8 @@ var bluetoothAdvertisementData: [AnyHashable : Any]? { get }
 ### Working with accessory properties
 - [var bluetoothRSSI: Int?](./bluetoothrssi-5a2gp.md)
   The Bluetooth RSSI (Received Signal Strength Indicator) value from the discovered accessory.
+- [bluetoothRSSI](./bluetoothrssi-3c75a.md)
+  The Bluetooth RSSI (Received Signal Strength Indicator) value from the discovered accessory.
 
 
 ---

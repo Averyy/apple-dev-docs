@@ -30,6 +30,8 @@ var httpAuthorizationHeaders: [String : String]? { get set }
   The HTTP response for authentications.
 - [var httpBody: Data?](./httpbody.md)
   The HTTP response body.
+- [privateKeys](./privatekeys.md)
+  An array of private security keys.
 
 
 ---

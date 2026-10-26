@@ -14,6 +14,8 @@ Review symbols that are no longer supported and find the replacements to use ins
   Sets `placeholder` as the default placeholder for the `binding`, when a key value coding compliant property of an instance of the receiving class returns the value specified by `marker`, and no other placeholder has been specified.
 - [class func useStoredAccessor() -> Bool](./nsobject-swift.class/usestoredaccessor%28%29.md)
   Returns `true` if the stored value methods [`storedValue(forKey:)`](./nsobject-swift.class/storedvalue%28forkey%29.md) and [`takeStoredValue(_:forKey:)`](./nsobject-swift.class/takestoredvalue%28_,forkey%29.md) should use private accessor methods in preference to public accessors.
+- [+ setKeys:triggerChangeNotificationsForDependentKey:](./nsobject-swift.class/setkeys_triggerchangenotificationsfordependentkey_.md)
+  Configures the observed object to post change notifications for a given property if any of the properties specified in a given array changes.
 ### Deprecated Methods
 - [func accessibilityAttributeNames() -> [NSAccessibility.Attribute]](./nsobject-swift.class/accessibilityattributenames%28%29.md)
   Returns an array of attribute names supported by the receiver.
@@ -83,6 +85,8 @@ Review symbols that are no longer supported and find the replacements to use ins
   Notifies the delegate when the workflow controller object is about to run.
 - [func workflowControllerWillStop(AMWorkflowController)](../Automator/amworkflowcontrollerdelegate/workflowcontrollerwillstop%28_%29.md)
   Tells the delegate that the workflow controller object is about to stop.
+- [- replacementObjectForPortCoder:](./nsobject-swift.class/replacementobjectforportcoder_.md)
+  Overridden by subclasses to substitute another object or a copy for itself during distribution encoding.
 
 
 ---

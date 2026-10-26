@@ -101,6 +101,9 @@ In macOS 10.15, the system always displays the Save dialog in a separate process
 ### Deprecated
 - [Deprecated symbols](./nssavepanel-deprecated-symbols.md)
   Review symbols that are no longer in active development, and their recommended replacements.
+### Creating a Save Panel
+- [+ savePanel](./nssavepanel/savepanel.md)
+  Creates a new Save panel and initializes it with default information.
 
 ## Relationships
 

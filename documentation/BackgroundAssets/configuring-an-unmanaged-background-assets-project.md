@@ -78,6 +78,8 @@ For more examples of these information property list keys, see the [Downloading 
   An object that represents a remote asset to download.
 - [class BADownload](./badownload.md)
   An object that represents an in-progress or concluded asset download.
+- [BADownloaderExtension](./badownloaderextension-zuvm.md)
+  An interface for reacting to app life-cycle events and processing concluded asset downloads while your app isn’t running.
 
 
 ---

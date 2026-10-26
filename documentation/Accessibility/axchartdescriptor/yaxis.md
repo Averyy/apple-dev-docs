@@ -34,6 +34,10 @@ var yAxis: AXNumericDataAxisDescriptor? { get set }
   The descriptors for additional categorical or numerical axes beyond the x-axis and y-axis.
 - [protocol AXDataAxisDescriptor](../axdataaxisdescriptor.md)
   The basic interface for a data axis in a chart.
+- [xAxis](./xaxis-6dnxd.md)
+  The axis descriptor for the chart’s x-axis.
+- [additionalAxes](./additionalaxes-9ldc0.md)
+  The descriptors for additional categorical or numerical axes beyond the x-axis and y-axis.
 
 
 ---

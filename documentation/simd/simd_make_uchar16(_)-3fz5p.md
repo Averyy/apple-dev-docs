@@ -41,6 +41,8 @@ static simd_uchar16 simd_make_uchar16(simd_uchar2 other);
   Returns a new vector from the specified four-element vector, and other elements undefined.
 - [func simd_make_uchar16_undef(simd_uchar8) -> simd_uchar16](./simd_make_uchar16_undef%28_%29-74mxt.md)
   Returns a new vector from the specified eight-element vector, and other elements undefined.
+- [vector16](./vector16-5572p.md)
+  Returns a new vector from the specified vectors.
 
 
 ---

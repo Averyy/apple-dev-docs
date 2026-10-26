@@ -25,6 +25,12 @@ init(imageProvider: CLKImageProvider, fillFraction: Float, ringStyle: CLKComplic
 - `fillFraction`: A value between `0.0` and `1.0` that indicates how much of the ring fills.
 - `ringStyle`: The ring’s style. For a complete list of styles, see [`CLKComplicationRingStyle`](../clkcomplicationringstyle.md).
 
+## See Also
+
+### Creating the Template
+- [+ templateWithImageProvider:fillFraction:ringStyle:](./templatewithimageprovider_fillfraction_ringstyle_.md)
+  Returns a new template from the provided image, fill fraction, and ring style.
+
 
 ---
 

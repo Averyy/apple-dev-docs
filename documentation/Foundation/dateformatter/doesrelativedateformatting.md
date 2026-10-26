@@ -70,6 +70,8 @@ NSLog(@"dateString: %@", dateString);
 ### Managing Natural Language Support
 - [var isLenient: Bool](./islenient.md)
   A Boolean value that indicates whether the receiver uses heuristics when parsing a string.
+- [- allowsNaturalLanguage](../nsdateformatter/allowsnaturallanguage.md)
+  Returns a Boolean value that indicates whether the receiver attempts to process dates entered as a vernacular string.
 
 
 ---

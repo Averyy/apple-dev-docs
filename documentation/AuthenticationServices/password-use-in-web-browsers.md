@@ -22,6 +22,8 @@ If your browser app uses [`WKWebView`](../WebKit/wkwebview.md) to display web co
 ### Website credential providers
 - [protocol ASAuthorizationWebBrowserSecurityKeyPublicKeyCredentialProvider](./asauthorizationwebbrowsersecuritykeypublickeycredentialprovider-8xc1s.md)
   A protocol for creating passkey requests.
+- [ASAuthorizationWebBrowserSecurityKeyPublicKeyCredentialProvider](./asauthorizationwebbrowsersecuritykeypublickeycredentialprovider-4gzot.md)
+  A protocol for creating security key requests.
 
 ## See Also
 

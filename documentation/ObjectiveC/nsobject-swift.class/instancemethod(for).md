@@ -44,6 +44,10 @@ Use this method to ask the class object for the implementation of instance metho
 ### Obtaining Information About Methods
 - [func method(for: Selector!) -> IMP!](./method%28for%29.md)
   Locates and returns the address of the receiver’s implementation of a method so it can be called as a function.
+- [+ instanceMethodSignatureForSelector:](./instancemethodsignatureforselector_.md)
+  Returns an `NSMethodSignature` object that contains a description of the instance method identified by a given selector.
+- [- methodSignatureForSelector:](./methodsignatureforselector_.md)
+  Returns an `NSMethodSignature` object that contains a description of the method identified by a given selector.
 
 
 ---

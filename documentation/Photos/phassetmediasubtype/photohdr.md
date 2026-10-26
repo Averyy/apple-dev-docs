@@ -43,6 +43,8 @@ PHAssetMediaSubtypePhotoHDR
   The asset is a time-lapse video.
 - [static var photoDepthEffect: PHAssetMediaSubtype](./photodeptheffect.md)
   The asset is a photo captured with the Camera app’s Portrait mode depth effect.
+- [PHAssetMediaSubtypeNone](./phassetmediasubtypenone.md)
+  The asset has no subtype.
 
 
 ---

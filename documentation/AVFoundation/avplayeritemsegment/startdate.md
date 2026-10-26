@@ -38,6 +38,8 @@ This value is `nil` if the primary item doesn’t contain dates.
   The time ranges for the segment that have media data is readily available.
 - [var interstitialEvent: AVPlayerInterstitialEvent?](./interstitialevent.md)
   The associated interstitial event for this segment.
+- [loadedTimeRanges](./loadedtimeranges-2p0fl.md)
+  The time ranges for the segment that have media data is readily available.
 
 
 ---

@@ -31,6 +31,8 @@ Enables 6 degrees of freedom tracking of the iOS device by running the camera at
   Creates a new positional tracking configuration.
 - [var initialWorldMap: ARWorldMap?](./arpositionaltrackingconfiguration/initialworldmap.md)
   The state from a previous AR session to attempt to resume with this session configuration.
+- [+ new](./arpositionaltrackingconfiguration/new.md)
+  Creates a new positional tracking configuration.
 ### Detecting Real-World Surfaces
 - [var planeDetection: ARWorldTrackingConfiguration.PlaneDetection](./arpositionaltrackingconfiguration/planedetection.md)
   A value that specifies if and how the session automatically attempts to detect flat surfaces in the camera-captured image.

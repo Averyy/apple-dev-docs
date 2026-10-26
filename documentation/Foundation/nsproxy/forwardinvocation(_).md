@@ -44,6 +44,12 @@ For example, if your proxy merely forwards messages to an instance variable name
 
 - `invocation`: The invocation to forward.
 
+## See Also
+
+### Handling Unimplemented Methods
+- [- methodSignatureForSelector:](./methodsignatureforselector_.md)
+  Raises `NSInvalidArgumentException`. Override this method in your concrete subclass to return a proper `NSMethodSignature` object for the given selector and the class your proxy objects stand in for.
+
 
 ---
 

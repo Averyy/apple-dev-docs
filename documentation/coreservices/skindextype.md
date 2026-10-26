@@ -33,6 +33,14 @@ typedef enum SKIndexType : unsigned int {
   Specifies a vector index, mapping documents to terms.
 - [var kSKIndexInvertedVector: SKIndexType](./kskindexinvertedvector.md)
   Specifies an index type with all the capabilities of an inverted and a vector index.
+- [kSKIndexUnknown](./skindextype/kskindexunknown.md)
+  Specifies an unknown index type.
+- [kSKIndexInverted](./skindextype/kskindexinverted.md)
+  Specifies an inverted index, mapping terms to documents.
+- [kSKIndexVector](./skindextype/kskindexvector.md)
+  Specifies a vector index, mapping documents to terms.
+- [kSKIndexInvertedVector](./skindextype/kskindexinvertedvector.md)
+  Specifies an index type with all the capabilities of an inverted and a vector index.
 ### Initializers
 - [init(UInt32)](./skindextype/api-1443295-init.md)
 - [init(rawValue: UInt32)](./skindextype/api-1442314-init.md)

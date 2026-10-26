@@ -33,6 +33,8 @@ typedef struct { ... } UIFloatRange;
   A range whose range is minus infinity to infinity.
 - [static let zero: UIFloatRange](./uifloatrange/zero.md)
   A range whose minimum and maximum are both `0.0`.
+- [UIFloatRangeMake](./uifloatrange/init%28minimum,maximum%29-1vgoo.md)
+  Returns a new float range structure from the given components.
 ### Getting the range values
 - [var maximum: CGFloat](./uifloatrange/maximum.md)
   The maximum range of motion for sliding and pin attachments.
@@ -42,6 +44,8 @@ typedef struct { ... } UIFloatRange;
 - [var isInfinite: Bool](./uifloatrange/isinfinite.md)
   Returns a Boolean indicating whether the specified float range is infinitely large.
 - [func UIFloatRangeIsEqualToRange(UIFloatRange, UIFloatRange) -> Bool](./uifloatrangeisequaltorange%28_,_%29.md)
+  Returns a Boolean indicating whether two float ranges are equivalent.
+- [UIFloatRangeIsEqualToRange](./uifloatrangeisequaltorange.md)
   Returns a Boolean indicating whether two float ranges are equivalent.
 
 ## Relationships

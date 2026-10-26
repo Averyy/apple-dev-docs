@@ -37,6 +37,10 @@ To get the measurements, use the [`speed`](./cmodometerdata/speed.md) and [`slop
   The slope at the location toward the direction of travel, measured in degrees.
 - [var maxAbsSlope: Double?](./cmodometerdata/maxabsslope-9mnfd.md)
   The maximum absolute slope at the location toward all directions, measured in degrees.
+- [slope](./cmodometerdata/slope-96hlt.md)
+  The slope at the location toward the direction of travel, measured in degrees.
+- [maxAbsSlope](./cmodometerdata/maxabsslope-96ulr.md)
+  The maximum absolute slope at the location toward all directions, measured in degrees.
 ### Getting date and times
 - [var startDate: Date](./cmodometerdata/startdate.md)
   The time that the device starts recording the odometer data.

@@ -22,6 +22,12 @@ Identify the C types that correspond to Address Book objects.
 ### Deprecated
 - [struct ABPersonImageFormat](./abpersonimageformat.md)
   Indicates an image format.
+### Pickers
+- [ABPickerRef](./abpickerref.md)
+  A reference to an ABPicker object.
+### Action Plug-In
+- [ABActionCallbacks](./abactioncallbacks.md)
+  This is the structure that the `ABActionRegisterCallbacks` returns to tell Address Book about the action the plug-in implements.
 
 ## See Also
 

@@ -18,6 +18,10 @@ Although these symbols are available for use, Apple is no longer actively develo
   Creates a new graphics context from the specified graphics port.
 - [class func setGraphicsState(Int)](./nsgraphicscontext/setgraphicsstate%28_%29.md)
   Makes the graphics context of the specified graphics state current, and resets graphics state.
+- [- focusStack](./nsgraphicscontext/focusstack.md)
+  Returns the object used by the context to track the hierarchy of views with locked focus.
+- [- setFocusStack:](./nsgraphicscontext/setfocusstack_.md)
+  Sets the object used by the receiver to track the hierarchy of views with locked focus.
 ### Deprecated properties
 - [var graphicsPort: UnsafeMutableRawPointer](./nsgraphicscontext/graphicsport.md)
   The low-level, platform-specific graphics context represented by the graphic port.

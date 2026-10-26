@@ -42,6 +42,8 @@ typedef union { ... } SPRotationAxis3D;
   Creates a rotation axis from the specified double-precision values.
 - [init<T>(x: T, y: T, z: T)](./rotationaxis3d/init%28x,y,z%29-1x93q.md)
   Creates a rotation axis from the specified floating-point values.
+- [SPRotationAxis3DMakeWithVector](./sprotationaxis3dmakewithvector-1n9ib.md)
+  Creates a rotation axis from the specified double-precision vector.
 ### Checking characteristics
 - [var x: Double](./rotationaxis3d/x-swift.property.md)
   The x-coordinate value.
@@ -53,6 +55,12 @@ typedef union { ... } SPRotationAxis3D;
   A simd three-element vector that contains the x-, y-, and z-coordinate values.
 - [var isZero: Bool](./rotationaxis3d/iszero.md)
   A Boolean value that indicates whether the rotation axis is zero.
+- [x](./sprotationaxis3d/x.md)
+  The x-axis value.
+- [y](./sprotationaxis3d/y.md)
+  The y-axis value.
+- [z](./sprotationaxis3d/z.md)
+  The z-axis value.
 ### Constants
 - [static let x: RotationAxis3D](./rotationaxis3d/x-swift.type.property.md)
   The x-axis, expressed in unit coordinates.
@@ -73,6 +81,8 @@ typedef union { ... } SPRotationAxis3D;
 ### Deprecated symbols
 - [var simd: simd_double3](./rotationaxis3d/simd.md)
   A simd three-element vector that contains the x-, y-, and z-coordinate values.
+- [SPRotationAxis3DEqualToRotationAxis](./sprotationaxis3dequaltorotationaxis.md)
+  Returns a Boolean value that indicates whether two values are equal.
 ### Initializers
 - [init(simd_packed_double4)](./rotationaxis3d/init%28_%29-ctks.md)
   Creates a Spatial rotation axis from a simd packed vector.

@@ -46,6 +46,10 @@ The `CIContext` manages various internal state such as `MTLCommandQueue` and cac
 ### Creating a Context Without Specifying a Destination
 - [init()](./cicontext/init%28%29.md)
   Initializes a context without a specific rendering destination, using default options.
+- [+ context](./cicontext/context.md)
+  Creates a context without a specific rendering destination, using default options.
+- [+ contextWithOptions:](./cicontext/contextwithoptions_.md)
+  Initializes a context without a specific rendering destination, using the specified options.
 ### Creating a Context for CPU-Based Rendering
 - [init(cgContext: CGContext, options: [CIContextOption : Any]?)](./cicontext/init%28cgcontext,options%29-6p78w.md)
   Creates a Core Image context from a Quartz context, using the specified options.
@@ -156,6 +160,8 @@ The `CIContext` manages various internal state such as `MTLCommandQueue` and cac
   Creates a CGLayer object from the provided parameters.
 - [func draw(CIImage, at: CGPoint, from: CGRect)](./cicontext/draw%28_,at,from%29.md)
   Renders a region of an image to a point in the context destination.
+- [+ contextWithCGLContext:pixelFormat:options:](./cicontext/contextwithcglcontext_pixelformat_options_.md)
+  Creates a Core Image context from a CGL context, using the specified options and pixel format object.
 ### Initializers
 - [init(CGContext: CGContext, options: [CIContextOption : Any]?)](./cicontext/init%28cgcontext,options%29-1yzwi.md)
 - [init(CGLContext: CGLContextObj, pixelFormat: CGLPixelFormatObj?, colorSpace: CGColorSpace?, options: [CIContextOption : Any]?)](./cicontext/init%28cglcontext,pixelformat,colorspace,options%29-3t25h.md)

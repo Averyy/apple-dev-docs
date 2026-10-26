@@ -29,6 +29,9 @@ class MPSCNNNeuronExponentialNode
 ### Initializers
 - [init(source: MPSNNImageNode)](./mpscnnneuronexponentialnode/init%28source%29.md)
 - [init(source: MPSNNImageNode, a: Float, b: Float, c: Float)](./mpscnnneuronexponentialnode/init%28source,a,b,c%29.md)
+### Type Methods
+- [+ nodeWithSource:](./mpscnnneuronexponentialnode/nodewithsource_.md)
+- [+ nodeWithSource:a:b:c:](./mpscnnneuronexponentialnode/nodewithsource_a_b_c_.md)
 
 ## Relationships
 

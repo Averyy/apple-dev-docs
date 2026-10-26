@@ -108,6 +108,8 @@ https://api.storekit.itunes.apple.com/account/v1/autoSignIn/update
   The object that coordinates your app’s user account actions.
 - [struct VSUserAccount](./vsuseraccount-swift.struct.md)
   An object that represents a user’s account.
+- [VSUserAccount](./vsuseraccount-c.class.md)
+  An object that represents a user’s account with a TV provider.
 
 
 ---

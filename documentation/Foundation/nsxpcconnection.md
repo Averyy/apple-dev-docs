@@ -100,6 +100,18 @@ This class is the primary means of creating and configuring the communication me
   The upper bounds of XPC connection error code values.
 - [var NSXPCConnectionCodeSigningRequirementFailure: Int](./nsxpcconnectioncodesigningrequirementfailure-swift.var.md)
   A code-signing requirement check failed.
+- [NSXPCConnectionInterrupted](./nsxpcconnectioninterrupted-c.enum.case.md)
+  The XPC connection was interrupted.
+- [NSXPCConnectionInvalid](./nsxpcconnectioninvalid-c.enum.case.md)
+  The XPC connection was invalid.
+- [NSXPCConnectionReplyInvalid](./nsxpcconnectionreplyinvalid-c.enum.case.md)
+  The XPC connection reply was invalid.
+- [NSXPCConnectionErrorMinimum](./nsxpcconnectionerrorminimum-c.enum.case.md)
+  The lower bounds of XPC connection error code values.
+- [NSXPCConnectionErrorMaximum](./nsxpcconnectionerrormaximum-c.enum.case.md)
+  The upper bounds of XPC connection error code values.
+- [NSXPCConnectionCodeSigningRequirementFailure](./nsxpcconnectioncodesigningrequirementfailure-c.enum.case.md)
+  A code-signing requirement check failed.
 
 ## Relationships
 

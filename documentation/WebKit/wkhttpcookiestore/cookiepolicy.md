@@ -43,6 +43,21 @@ enum WKCookiePolicy : NSInteger;
 - [Sendable](../../Swift/sendable.md)
 - [SendableMetatype](../../Swift/sendablemetatype.md)
 
+## See Also
+
+### Web data management
+- [WKWebsiteDataStore](../wkwebsitedatastore.md)
+  An object that manages cookies, disk and memory caches, and other types of data for a web view.
+- [WKWebsiteDataRecord](../wkwebsitedatarecord.md)
+  A record of the data that a particular website stores persistently.
+- [WKHTTPCookieStore](../wkhttpcookiestore.md)
+  An object that manages the HTTP cookies associated with a particular web view.
+- [WKURLSchemeHandler](../wkurlschemehandler.md)
+  A protocol for loading resources with URL schemes that WebKit doesn’t handle.
+- [WKURLSchemeTask](../wkurlschemetask.md)
+  An interface that WebKit uses to request custom resources from your app.
+- [NSReadAccessURLDocumentOption](../nsreadaccessurldocumentoption.md)
+
 
 ---
 

@@ -34,6 +34,8 @@ This method saves and restores the previous current appearance.
   The appearance that the system uses for color and asset resolution, and that’s active for drawing, usually from locking focus on a view.
 - [class var current: NSAppearance!](./current.md)
   Returns the appearance object that’s active on the current thread.
+- [currentDrawingAppearance](./currentdrawingappearance.md)
+  The appearance that the system uses for color and asset resolution, and that’s active for drawing, usually from locking focus on a view.
 
 
 ---

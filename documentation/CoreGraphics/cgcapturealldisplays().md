@@ -61,6 +61,9 @@ This function captures all attached displays in a single operation. When an appl
   Returns a Boolean value indicating whether the mouse cursor is visible.
 - [func CGDirectDisplayCopyCurrentMetalDevice(CGDirectDisplayID) -> (any MTLDevice)?](./cgdirectdisplaycopycurrentmetaldevice%28_%29.md)
   Returns the GPU device instance that’s currently driving a display.
+- [CGColorConversionInfoCreateFromList](./cgcolorconversioninfocreatefromlist.md)
+  Creates a conversion between an arbitrary number of specified color spaces.
+- [CGContextDrawPDFDocument](./cgcontextdrawpdfdocument.md)
 
 
 ---

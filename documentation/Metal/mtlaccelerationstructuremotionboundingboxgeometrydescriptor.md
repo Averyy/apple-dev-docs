@@ -38,6 +38,9 @@ class MTLAccelerationStructureMotionBoundingBoxGeometryDescriptor
   A array of motion keyframes, each containing bounding box data.
 - [var boundingBoxStride: Int](./mtlaccelerationstructuremotionboundingboxgeometrydescriptor/boundingboxstride.md)
   The stride, in bytes, between bounding boxes in each buffer.
+### Creating a motion bounding box geometry descriptor
+- [+ descriptor](./mtlaccelerationstructuremotionboundingboxgeometrydescriptor/descriptor.md)
+  Creates a new bounding box descriptor.
 
 ## Relationships
 

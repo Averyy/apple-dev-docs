@@ -62,6 +62,8 @@ class ABPersonView
 ### Pickers
 - [class ABPeoplePickerView](./abpeoplepickerview.md)
   An object you use to customize the behavior of people-picker views in an app’s user interface.
+- [ABPersonPicker](./abpersonpicker.md)
+  A picker object that you display when you want the user to select contacts.
 
 
 ---

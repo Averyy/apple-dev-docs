@@ -29,6 +29,7 @@ struct OSNotificationHeader64 {
 - [var reference: OSAsyncReference64](./osnotificationheader64/api-1455547-reference.md)
 - [var size: mach_msg_size_t](./osnotificationheader64/api-1455592-size.md)
 - [var type: natural_t](./osnotificationheader64/api-1455613-type.md)
+- [content](./osnotificationheader64/api-1455557-content.md)
 ### Initializers
 - [init()](./osnotificationheader64/api-1514395-init.md)
 

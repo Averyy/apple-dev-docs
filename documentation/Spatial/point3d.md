@@ -46,6 +46,13 @@ typedef union { ... } SPPoint3D;
   Creates a point from the specified double-precision vector.
 - [init(SphericalCoordinates3D)](./point3d/init%28_%29-50tw4.md)
   Returns a Spatial point that represents the Cartesian coordinates of the specified spherical coordinates structure.
+- [SPPoint3DMakeWithSize](./sppoint3dmakewithsize.md)
+  Creates a point from the specified Spatial size structure.
+- [SPPoint3DMakeWithSphericalCoordinates](./sppoint3dmakewithsphericalcoordinates.md)
+  Returns a Spatial point that represents the Cartesian coordinates of the specified spherical coordinates structure.
+- [SPPoint3DMakeWithVector](./sppoint3dmakewithvector-39d4f.md)
+  Creates a point from the specified double-precision vector.
+- [SPPoint3DMakeWithVector](./sppoint3dmakewithvector-6eegc.md)
 ### Inspecting a 3D point’s properties
 - [var x: Double](./point3d/x.md)
   The x-coordinate value.
@@ -55,9 +62,20 @@ typedef union { ... } SPPoint3D;
   The z-coordinate value.
 - [var vector: simd_double3](./point3d/vector.md)
 - [var magnitudeSquared: Double](./point3d/magnitudesquared.md)
+- [x](./sppoint3d/x.md)
+  The x-coordinate value.
+- [y](./sppoint3d/y.md)
+  The y-coordinate value.
+- [z](./sppoint3d/z.md)
+  The z-coordinate value.
+- [SPPoint3DGetVector](./sppoint3dgetvector.md)
+  A simd three-element vector that contains the x-, y-, and z-coordinate values.
 ### Checking characteristics
 - [func distance(to: Point3D) -> Double](./point3d/distance%28to%29.md)
   Returns the distance between two points.
+- [SPPoint3DIsFinite](./sppoint3disfinite.md)
+- [SPPoint3DIsNaN](./sppoint3disnan.md)
+- [SPPoint3DIsZero](./sppoint3diszero.md)
 ### Transforming a 3D point structure
 - [func applying(ScaledPose3D) -> Point3D](./point3d/applying%28_%29-1f4em.md)
   Returns a point that’s transformed by the specified scaled pose.
@@ -78,10 +96,39 @@ typedef union { ... } SPPoint3D;
   Returns a point that’s transformed by the inverse of the specified scaled pose.
 - [func unapplying(ScaledPose3D) -> Point3D](./point3d/unapplying%28_%29-7wdtv.md)
   Returns a point that’s transformed by the inverse of the specified scaled pose.
+- [SPPoint3DApplyAffineTransform](./sppoint3dapplyaffinetransform.md)
+  Returns a point that results from applying the specified affine transform.
+- [SPPoint3DApplyPose](./sppoint3dapplypose.md)
+  Returns a point that results from applying the specified pose.
+- [SPPoint3DApplyProjectiveTransform](./sppoint3dapplyprojectivetransform.md)
+  Returns a point that results from applying the specified projective transform.
+- [SPPoint3DApplyScaledPose](./sppoint3dapplyscaledpose.md)
+  Returns a point that’s transformed by the specified scaled pose.
+- [SPPoint3DRotate](./sppoint3drotate.md)
+  Returns a point that results from applying the specified rotation.
+- [SPPoint3DRotateByQuaternion](./sppoint3drotatebyquaternion.md)
+  Returns a point that results from rotating with the specified quaternion.
+- [SPPoint3DTranslate](./sppoint3dtranslate-8xo6b.md)
+  Returns a point with an origin that’s offset by the specified size.
+- [SPPoint3DTranslate](./sppoint3dtranslate-9aj4h.md)
+  Returns a point with an origin that’s offset by the specified vector.
+- [SPPoint3DUnapplyAffineTransform](./sppoint3dunapplyaffinetransform.md)
+  Returns a point that results from unapplying the specified affine transform.
+- [SPPoint3DUnapplyPose](./sppoint3dunapplypose.md)
+  Returns a point that results from unapplying the specified pose.
+- [SPPoint3DUnapplyProjectiveTransform](./sppoint3dunapplyprojectivetransform.md)
+  Returns a point that results from unapplying the specified projective transform.
+- [SPPoint3DUnapplyScaledPose](./sppoint3dunapplyscaledpose.md)
+  Returns a point that’s transformed by the inverse of the specified scaled pose.
 ### Comparing values
 - [static func == (Point3D, Point3D) -> Bool](./point3d/eqeq%28_,_%29.md)
   Returns a Boolean value that indicates whether two values are equal.
 - [func isApproximatelyEqual(to: Point3D, tolerance: Double) -> Bool](./point3d/isapproximatelyequal%28to,tolerance%29.md)
+- [SPPoint3DAlmostEqualToPoint](./sppoint3dalmostequaltopoint-8qyca.md)
+- [SPPoint3DAlmostEqualToPoint](./sppoint3dalmostequaltopoint-9vk02.md)
+  Returns a Boolean value that indicates whether the two points are equal within the specified default absolute tolerance.
+- [SPPoint3DEqualToPoint](./sppoint3dequaltopoint.md)
+  Returns a Boolean value that indicates whether two values are equal.
 ### Applying arithmetic operations
 - [static func * (Point3D, Double) -> Point3D](./point3d/star%28_,_%29-9rqvh.md)
   Returns a point that’s the product of a point and a scalar value.
@@ -125,6 +172,8 @@ typedef union { ... } SPPoint3D;
 - [var origin: Point3D](./point3d/origin.md)
 - [var simd: simd_double3](./point3d/simd.md)
   A simd three-element vector that contains the x-, y-, and z-coordinate values.
+- [SPPoint3DGetOrigin](./sppoint3dgetorigin.md)
+  The location of the point.
 ### Initializers
 - [init(Point3DFloat)](./point3d/init%28_%29-7wgtj.md)
   Returns a double-precision point from a single-precision point.
@@ -139,6 +188,11 @@ typedef union { ... } SPPoint3D;
 - [Equatable Implementations](./point3d/equatable-implementations.md)
 - [Hashable Implementations](./point3d/hashable-implementations.md)
 - [Primitive3D Implementations](./point3d/primitive3d-implementations.md)
+### Constants
+- [SPPoint3DInfinity](./sppoint3dinfinity.md)
+  The point with infinite x-, y-, and z-coordinate values.
+- [SPPoint3DZero](./sppoint3dzero.md)
+  The point with the zero value.
 
 ## Relationships
 

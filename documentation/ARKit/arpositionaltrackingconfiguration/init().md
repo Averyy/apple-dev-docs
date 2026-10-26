@@ -25,6 +25,8 @@ init()
 ### Creating a Configuration
 - [var initialWorldMap: ARWorldMap?](./initialworldmap.md)
   The state from a previous AR session to attempt to resume with this session configuration.
+- [+ new](./new.md)
+  Creates a new positional tracking configuration.
 
 
 ---

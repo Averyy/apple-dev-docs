@@ -31,6 +31,9 @@ class ILCommunication
   The date and time when the system received the message.
 ### Initializers
 - [init?(coder: NSCoder)](./ilcommunication/init%28coder%29.md)
+### Comparing Communications
+- [- isEqualToCommunication:](./ilcommunication/isequaltocommunication_.md)
+  Indicates whether the current communication is equal to the provided argument.
 
 ## Relationships
 

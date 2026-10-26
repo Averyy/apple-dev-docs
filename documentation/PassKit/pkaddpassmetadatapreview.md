@@ -36,6 +36,8 @@ Use this class to preview an object with all of the information you need to pres
   A localized description of the pass.
 - [var passThumbnailImage: CGImage?](./pkaddpassmetadatapreview/passthumbnailimage.md)
   A CGImage object representing the card artwork of the pass you use during provisioning.
+- [+ previewWithPassThumbnail:localizedDescription:](./pkaddpassmetadatapreview/previewwithpassthumbnail_localizeddescription_.md)
+  Initializes properties you need to preview an object that represents the pass you add to Wallet.
 
 ## Relationships
 

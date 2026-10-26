@@ -33,6 +33,12 @@ var frameHeight: Int { get }
   Pixel buffer attributes dictionary that describes requirements for pixel buffers which represent destination frames.
 - [var supportedPixelFormats: [OSType]](./supportedpixelformats.md)
 - [class var supportedSourcePixelFormats: [OSType]](./supportedsourcepixelformats-4ipcg.md)
+- [nextFrameCount](./nextframecount.md)
+  Maximum number of future reference frames that the processor can use to process a source frame.
+- [previousFrameCount](./previousframecount.md)
+  Maximum number of past reference frames that the processor can use to process a source frame.
+- [frameSupportedPixelFormats](./framesupportedpixelformats.md)
+  Supported pixel formats for source frames for current configuration.
 
 
 ---

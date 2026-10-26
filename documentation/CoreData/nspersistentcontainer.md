@@ -43,6 +43,10 @@ NSPersistentContainer simplifies the creation and management of the Core Data st
   Creates a container with the specified name.
 - [init(name: String, managedObjectModel: NSManagedObjectModel)](./nspersistentcontainer/init%28name,managedobjectmodel%29.md)
   Create a container with the specified name and managed object model.
+- [+ persistentContainerWithName:](./nspersistentcontainer/persistentcontainerwithname_.md)
+  Initializes a new persistent container using the provided name for the container.
+- [+ persistentContainerWithName:managedObjectModel:](./nspersistentcontainer/persistentcontainerwithname_managedobjectmodel_.md)
+  Initializes a new persistent container using the provided name and managed object model.
 ### Getting the Container’s Configuration
 - [var managedObjectModel: NSManagedObjectModel](./nspersistentcontainer/managedobjectmodel.md)
   The container’s managed object model.

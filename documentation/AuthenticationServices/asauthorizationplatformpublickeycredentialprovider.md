@@ -63,6 +63,7 @@ The credential provider accesses public-private key pairs stored in iCloud Keych
 - [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 - [Sendable](../Swift/sendable.md)
 - [SendableMetatype](../Swift/sendablemetatype.md)
+- [ASAuthorizationWebBrowserPlatformPublicKeyCredentialProvider](./asauthorizationwebbrowserplatformpublickeycredentialprovider-1c8cl.md)
 
 ## See Also
 

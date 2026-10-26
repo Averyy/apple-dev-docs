@@ -30,6 +30,10 @@ The analysis also includes suggestions for the app based on the nature of the se
 ### Responding to sensitive content
 - [func continueStream()](./continuestream%28%29.md)
   Indicates that your app is ready to resume video stream analysis.
+- [analysisChangedHandler](./analysischangedhandler.md)
+  A handler that your app provides to react to sensitive content detection.
+- [SCVideoStreamAnalysisChangeHandler](../scvideostreamanalysischangehandler.md)
+  A handler your app provides to receive video-stream analysis results.
 
 
 ---

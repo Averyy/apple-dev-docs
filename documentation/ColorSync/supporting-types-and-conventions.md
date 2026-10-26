@@ -20,6 +20,28 @@ These symbols support the main color-management tasks rather than being entry po
   Returns the version of the ColorSync API.
 - [var icVersion4Number: Int](./icversion4number.md)
 - [var icVersion4Point4Number: Int](./icversion4point4number.md)
+### Annotating availability
+- [CS_AVAILABLE_DESKTOP](./cs_available_desktop.md)
+- [CS_AVAILABLE_STARTING](./cs_available_starting.md)
+- [CS_AVAILABLE_STARTING1](./cs_available_starting1.md)
+- [CS_AVAILABLE_STARTING2](./cs_available_starting2.md)
+- [CS_AVAILABLE_STARTING_IOS](./cs_available_starting_ios.md)
+- [CS_UNAVAILABLE_DESKTOP](./cs_unavailable_desktop.md)
+- [CS_UNAVAILABLE_EMBEDDED](./cs_unavailable_embedded.md)
+- [GET_CS_AVAIL_MACRO](./get_cs_avail_macro.md)
+### Annotating deprecation
+- [CS_AVAILABLE_BUT_DEPRECATED](./cs_available_but_deprecated.md)
+- [CS_AVAILABLE_BUT_DEPRECATED1](./cs_available_but_deprecated1.md)
+- [CS_AVAILABLE_BUT_DEPRECATED2](./cs_available_but_deprecated2.md)
+- [CS_AVAILABLE_BUT_DEPRECATED3](./cs_available_but_deprecated3.md)
+- [CS_AVAILABLE_BUT_DEPRECATED4](./cs_available_but_deprecated4.md)
+- [CS_AVAILABLE_BUT_DEPRECATED5](./cs_available_but_deprecated5.md)
+- [GET_CS_AVAIL_BUT_DEPR_MACRO](./get_cs_avail_but_depr_macro.md)
+### Controlling symbol visibility
+- [CSEXPORT](./csexport.md)
+- [CSEXTERN](./csextern.md)
+- [CSEXTERN_DESKTOP](./csextern_desktop.md)
+- [CSLOCAL](./cslocal.md)
 
 
 ---

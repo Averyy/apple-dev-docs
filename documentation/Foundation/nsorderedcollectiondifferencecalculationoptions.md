@@ -55,6 +55,12 @@ enum NSOrderedCollectionDifferenceCalculationOptions : NSUInteger;
 ### Comparing with Another Array
 - [class NSOrderedCollectionDifference](./nsorderedcollectiondifference.md)
   An object representing the difference between two ordered collections.
+- [- differenceFromArray:](./nsarray/differencefromarray_.md)
+  Compares two arrays to create a difference object that represents the changes between them.
+- [- differenceFromArray:withOptions:](./nsarray/differencefromarray_withoptions_.md)
+  Compares two arrays, with options, to create a difference object that represents the changes between them.
+- [- differenceFromArray:withOptions:usingEquivalenceTest:](./nsarray/differencefromarray_withoptions_usingequivalencetest_.md)
+  Compares two arrays, using the provided block and with options, to create a difference object that represents the changes between them.
 
 
 ---

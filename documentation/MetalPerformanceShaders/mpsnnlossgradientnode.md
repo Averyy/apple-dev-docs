@@ -40,6 +40,9 @@ class MPSNNLossGradientNode
 - [var reduceAcrossBatch: Bool](./mpsnnlossgradientnode/reduceacrossbatch.md)
 - [var reductionType: MPSCNNReductionType](./mpsnnlossgradientnode/reductiontype.md)
 - [var weight: Float](./mpsnnlossgradientnode/weight.md)
+### Type Methods
+- [+ nodeWithSourceGradient:sourceImage:labels:gradientState:lossDescriptor:isLabelsGradientFilter:](./mpsnnlossgradientnode/nodewithsourcegradient_sourceimage_labels_gradientstate_lossdescriptor_islabelsgradientfilter_.md)
+- [+ nodeWithSources:gradientState:lossDescriptor:isLabelsGradientFilter:](./mpsnnlossgradientnode/nodewithsources_gradientstate_lossdescriptor_islabelsgradientfilter_.md)
 
 ## Relationships
 

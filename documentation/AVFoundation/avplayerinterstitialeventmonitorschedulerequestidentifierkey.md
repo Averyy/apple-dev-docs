@@ -42,6 +42,8 @@ extern NSString * const AVPlayerInterstitialEventMonitorScheduleRequestIdentifie
   userInfo dictionary key for the AVPlayerInterstitialEventMonitorScheduleRequestCompletedNotification. Value is NSData. Absent if the request failed.
 - [class AVPlayerItemIntegratedTimeline](./avplayeritemintegratedtimeline.md)
   An object that models the timeline and playback sequence of a primary player item and scheduled interstitial events.
+- [AVPlayerInterstitialEventMonitorScheduleRequestCompletedNotification](./avplayerinterstitialeventmonitorschedulerequestcompletednotification.md)
+  A notification that is posted whenever a daterange-schedule request completes.
 
 
 ---

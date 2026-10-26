@@ -74,6 +74,11 @@ This function displays an array of glyphs at the specified position in the user 
   Displays an array of glyphs at the current text position.
 - [func showGlyphs([CGGlyph], at: [CGPoint])](./showglyphs%28_,at%29.md)
   Draws a set of glyphs at a set of corresponding positions.
+- [CGContextSetTextMatrix](../cgcontextsettextmatrix.md)
+  Sets the current text matrix.
+- [CGContextSetTextPosition](../cgcontextsettextposition.md)
+  Sets the location at which text is drawn.
+- [CGContextGetTextPosition](../cgcontextgettextposition.md)
 
 
 ---

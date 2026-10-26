@@ -25,6 +25,8 @@ class XCTestRun
 ### Creating Test Runs
 - [init(test: XCTest)](./xctestrun/init%28test%29.md)
   Creates a new test run for the provided test.
+- [+ testRunWithTest:](./xctestrun/testrunwithtest_.md)
+  Creates a new [`XCTestRun`](./xctestrun.md) for the provided test.
 ### Performing Test Runs
 - [func start()](./xctestrun/start%28%29.md)
   Starts a test run.

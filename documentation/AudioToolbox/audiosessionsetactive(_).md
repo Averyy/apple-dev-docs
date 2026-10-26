@@ -69,6 +69,18 @@ When another active audio session does not allow mixing, attempting to activate 
   Gets the value of a specified audio session property.
 - [func AudioSessionGetPropertySize(AudioSessionPropertyID, UnsafeMutablePointer<UInt32>!) -> OSStatus](./audiosessiongetpropertysize%28_,_%29.md)
   Gets the size of the value for a specified audio session property.
+- [AudioFileCreate](./audiofilecreate.md)
+- [AudioFileInitialize](./audiofileinitialize.md)
+- [AudioFileOpen](./audiofileopen.md)
+- [MusicSequenceLoadSMFDataWithFlags](./musicsequenceloadsmfdatawithflags.md)
+- [MusicSequenceLoadSMFWithFlags](./musicsequenceloadsmfwithflags.md)
+- [MusicSequenceSaveMIDIFile](./musicsequencesavemidifile.md)
+- [MusicSequenceSaveSMFData](./musicsequencesavesmfdata.md)
+- [MusicTrackNewExtendedControlEvent](./musictracknewextendedcontrolevent.md)
+- [AudioFileComponentCreate](./audiofilecomponentcreate.md)
+- [AudioFileComponentDataIsThisFormat](./audiofilecomponentdataisthisformat.md)
+- [AudioFileComponentFileIsThisFormat](./audiofilecomponentfileisthisformat.md)
+- [AudioFileComponentInitialize](./audiofilecomponentinitialize.md)
 
 
 ---

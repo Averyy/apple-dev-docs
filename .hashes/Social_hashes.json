@@ -315,6 +315,26 @@
       "file_path": "documentation/Social/slservicetypetwitter.md",
       "hash": "998b6c81d51ed7d8464f26f682a5248f0ed3a93ff33b3d0887e9ec91b8126fab"
     },
+    "https://developer.apple.com/documentation/social/social_class_available": {
+      "etag": "\"aa3-65d55d4453c4f-df\"",
+      "file_path": "documentation/Social/social_class_available.md",
+      "hash": "a2a349b9c12fe3ab1972bd9974b4f10178750018977c42989b9f2f8e02f76d3e"
+    },
+    "https://developer.apple.com/documentation/social/social_class_available_ios": {
+      "etag": "\"a87-65d55d4453c4f-df\"",
+      "file_path": "documentation/Social/social_class_available_ios.md",
+      "hash": "1430f48868189f917c155843f8ae080d681e1f7e7c2f3f5b60a70b6cdd40fbc5"
+    },
+    "https://developer.apple.com/documentation/social/social_class_available_mac": {
+      "etag": "\"a88-65d55d4460890-df\"",
+      "file_path": "documentation/Social/social_class_available_mac.md",
+      "hash": "d01c5ec06d0662820db6595b988c2970e022d227f0b7be1df24ca6ca54fc94c6"
+    },
+    "https://developer.apple.com/documentation/social/social_extern": {
+      "etag": "\"986-65d55d4460890-df\"",
+      "file_path": "documentation/Social/social_extern.md",
+      "hash": "22d57edabfe562acc73ccf8de0a7e33d3592bdf5e4a480e0f400564683c59c99"
+    },
     "https://developer.apple.com/tutorials/data/documentation/Social.json": {
       "etag": "\"24c9-65d55d4453c4f-df\"",
       "file_path": "documentation/Social/Social.md",
@@ -629,12 +649,32 @@
       "etag": "\"32b7-65d55d4453c4f-df\"",
       "file_path": "documentation/Social/slservicetypetwitter.md",
       "hash": "998b6c81d51ed7d8464f26f682a5248f0ed3a93ff33b3d0887e9ec91b8126fab"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/social/social_class_available.json": {
+      "etag": "\"aa3-65d55d4453c4f-df\"",
+      "file_path": "documentation/Social/social_class_available.md",
+      "hash": "a2a349b9c12fe3ab1972bd9974b4f10178750018977c42989b9f2f8e02f76d3e"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/social/social_class_available_ios.json": {
+      "etag": "\"a87-65d55d4453c4f-df\"",
+      "file_path": "documentation/Social/social_class_available_ios.md",
+      "hash": "1430f48868189f917c155843f8ae080d681e1f7e7c2f3f5b60a70b6cdd40fbc5"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/social/social_class_available_mac.json": {
+      "etag": "\"a88-65d55d4460890-df\"",
+      "file_path": "documentation/Social/social_class_available_mac.md",
+      "hash": "d01c5ec06d0662820db6595b988c2970e022d227f0b7be1df24ca6ca54fc94c6"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/social/social_extern.json": {
+      "etag": "\"986-65d55d4460890-df\"",
+      "file_path": "documentation/Social/social_extern.md",
+      "hash": "22d57edabfe562acc73ccf8de0a7e33d3592bdf5e4a480e0f400564683c59c99"
     }
   },
   "metadata": {
     "render": {
-      "version": 1
+      "version": 2
     },
-    "total_pages": 126
+    "total_pages": 134
   }
 }

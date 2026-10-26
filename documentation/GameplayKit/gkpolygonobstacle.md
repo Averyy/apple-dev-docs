@@ -42,6 +42,11 @@ To learn more about both ways of using polygon obstacles, see [Pathfinding](http
 ### Initializers
 - [convenience init(points: [SIMD2<Float>])](./gkpolygonobstacle/init%28points%29.md)
 - [init?(coder: NSCoder)](./gkpolygonobstacle/init%28coder%29.md)
+### Creating a Polygon Obstacle
+- [- initWithPoints:count:](./gkpolygonobstacle/initwithpoints_count_.md)
+  Initializes a polygon obstacle with the specified list of vertices.
+- [+ obstacleWithPoints:count:](./gkpolygonobstacle/obstaclewithpoints_count_.md)
+  Creates a polygon obstacle with the specified list of vertices.
 
 ## Relationships
 

@@ -42,6 +42,8 @@ The default policy is [`forbidLocalReferenceToRemote`](./forbidlocalreferencetor
   A remote asset shouldn’t follow references to remote media data stored at a different host.
 - [static var forbidLocalReferenceToLocal: AVAssetReferenceRestrictions](./forbidlocalreferencetolocal.md)
   A local asset shouldn’t follow references to local media data stored outside its container file.
+- [AVAssetReferenceRestrictionForbidNone](./avassetreferencerestrictionforbidnone.md)
+  The asset should follow all media references.
 
 
 ---

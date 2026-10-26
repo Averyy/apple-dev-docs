@@ -41,6 +41,8 @@ An array of keys, or an empty array if the record doesn’t contain any keys.
   Stores an object in the record using the specified key.
 - [func changedKeys() -> [String]](./changedkeys%28%29.md)
   Returns an array of keys with recent changes to their values.
+- [- setObject:forKeyedSubscript:](./setobject_forkeyedsubscript_.md)
+  Stores an object in the record using the specified key.
 
 
 ---

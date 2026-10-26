@@ -37,6 +37,9 @@ You can customize an encoder for a blit pass by creating and configuring an [`MT
 ### Configuring sample buffer attachment descriptors for a blit pass
 - [var sampleBufferAttachments: MTLBlitPassSampleBufferAttachmentDescriptorArray](./mtlblitpassdescriptor/samplebufferattachments.md)
   An array of counter sample buffer attachments that you configure for a blit pass.
+### Creating a blit pass descriptor
+- [+ blitPassDescriptor](./mtlblitpassdescriptor/blitpassdescriptor.md)
+  Creates a new blit pass descriptor with a default configuration.
 
 ## Relationships
 

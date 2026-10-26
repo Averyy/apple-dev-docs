@@ -40,6 +40,10 @@ Date values are formatted according to the user’s current locale information.
 ### Creating a Text Provider
 - [convenience init(date: Date, units: NSCalendar.Unit)](./init%28date,units%29.md)
   Creates and returns a text provider with the specified date and the default time zone.
+- [- initWithDate:units:](./initwithdate_units_.md)
+  Creates and returns a text provider with the specified date and the default time zone.
+- [- initWithDate:units:timeZone:](./initwithdate_units_timezone_.md)
+  Creates and returns a text provider with the specified date and time zone.
 
 
 ---

@@ -58,6 +58,18 @@ Apple has deprecated these symbols and no longer recommends using them.
 - [var kLSSharedFileListSessionLoginItems: Unmanaged<CFString>](../klssharedfilelistsessionloginitems.md)
 - [var kLSSharedFileListVolumesComputerVisible: Unmanaged<CFString>](../klssharedfilelistvolumescomputervisible.md)
 - [var kLSSharedFileListVolumesNetworkVisible: Unmanaged<CFString>](../klssharedfilelistvolumesnetworkvisible.md)
+- [kLSLaunchHasUntrustedContents](../api-1645929-anonymous/klslaunchhasuntrustedcontents.md)
+  A request that the system marks the launch items as untrustworthy. 
+- [kLSLaunchNoParams](../api-1645929-anonymous/klslaunchnoparams.md)
+  A request that the system uses the app’s information property to determine the launch parameters.
+- [kLSLaunchInhibitBGOnly](../api-1645929-anonymous/klslaunchinhibitbgonly.md)
+  A request that the system fails the launch if the app is background-only.
+- [kLSLaunchInClassic](../api-1645929-anonymous/klslaunchinclassic.md)
+  A request that the system forces the app to launch in the Classic emulation environment.
+- [kLSLaunchStartClassic](../api-1645929-anonymous/klslaunchstartclassic.md)
+  A request that the system starts up the Classic emulation environment if the app requires it. If this flag is not set and the app requires the Classic environment, the launch fails.
+- [kLSSharedFileListGlobalLoginItems](../klssharedfilelistgloballoginitems.md)
+- [kLSSharedFileListVolumesIDiskVisible](../klssharedfilelistvolumesidiskvisible.md)
 ### Deprecated Functions
 - [func LSGetHandlerOptionsForContentType(CFString!) -> LSHandlerOptions](../api-1445296-lsgethandleroptionsforcontenttyp.md)
   Gets the handler options for the specified content type.
@@ -133,6 +145,22 @@ Apple has deprecated these symbols and no longer recommends using them.
 - [var kLSNoRegistrationInfoErr: OSStatus](../klsnoregistrationinfoerr.md)
   Not currently used.
 - [var kLSNoClassicEnvironmentErr: OSStatus](../klsnoclassicenvironmenterr.md)
+  Not currently used.
+- [kLSNotInitializedErr](../api-3074489-anonymous/klsnotinitializederr.md)
+  Not currently used.
+- [kLSUnknownTypeErr](../api-3074489-anonymous/klsunknowntypeerr.md)
+  Not currently used.
+- [kLSDataTooOldErr](../api-3074489-anonymous/klsdatatooolderr.md)
+  Not currently used.
+- [kLSNotRegisteredErr](../api-3074489-anonymous/klsnotregisterederr.md)
+  Not currently used.
+- [kLSAppDoesNotClaimTypeErr](../api-3074489-anonymous/klsappdoesnotclaimtypeerr.md)
+  Not currently used.
+- [kLSAppDoesNotSupportSchemeWarning](../api-3074489-anonymous/klsappdoesnotsupportschemewarning.md)
+  Not currently used.
+- [kLSNoRegistrationInfoErr](../api-3074489-anonymous/klsnoregistrationinfoerr.md)
+  Not currently used.
+- [kLSNoClassicEnvironmentErr](../api-3074489-anonymous/klsnoclassicenvironmenterr.md)
   Not currently used.
 
 

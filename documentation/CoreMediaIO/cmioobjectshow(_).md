@@ -36,6 +36,8 @@ extern void CMIOObjectShow(CMIOObjectID objectID);
 - [func CMIOObjectSetPropertyData(CMIOObjectID, UnsafePointer<CMIOObjectPropertyAddress>!, UInt32, UnsafeRawPointer!, UInt32, UnsafeRawPointer!) -> OSStatus](./cmioobjectsetpropertydata%28_,_,_,_,_,_%29.md)
 - [func CMIOStreamClockConvertHostTimeToDeviceTime(UInt64, CFTypeRef!) -> CMTime](./cmiostreamclockconverthosttimetodevicetime%28_,_%29.md)
 - [func CMIOStreamClockCreate(CFAllocator!, CFString!, UnsafeRawPointer!, CMTime, UInt32, UInt32, UnsafeMutablePointer<Unmanaged<CFTypeRef>?>!) -> OSStatus](./cmiostreamclockcreate%28_,_,_,_,_,_,_%29.md)
+- [CMIOSampleBufferCopyNonRequiredAttachments](./cmiosamplebuffercopynonrequiredattachments.md)
+- [CMIOSampleBufferCopySampleAttachments](./cmiosamplebuffercopysampleattachments.md)
 
 
 ---

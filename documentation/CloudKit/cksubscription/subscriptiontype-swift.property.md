@@ -34,6 +34,10 @@ var subscriptionType: CKSubscription.SubscriptionType { get }
   A type that represents a subscription’s identifier.
 - [CKSubscription.SubscriptionType](./subscriptiontype-swift.enum.md)
   Constants that identify a subscription’s behavior.
+- [subscriptionID](./subscriptionid-12vxy.md)
+  The subscription’s unique identifier.
+- [CKSubscriptionID](../cksubscriptionid.md)
+  A type that represents a subscription’s identifier.
 
 
 ---

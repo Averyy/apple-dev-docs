@@ -1,0 +1,26 @@
+# SKIndexDocumentIteratorRef
+
+**Framework**: Core Services  
+**Kind**: tdef  
+**Role**: Type Alias
+
+Defines an opaque data type representing an index-based document iterator.
+
+**Availability**:
+- Mac Catalyst 13.0+
+- macOS 10.3+
+
+## Declaration
+
+```c
+typedef struct __SKIndexDocumentIterator *SKIndexDocumentIteratorRef;
+```
+
+#### Discussion
+
+A Search Kit document iterator lets your application loop through all the document URL objects owned by a given parent document URL object. To create an iterator, use [`SKIndexDocumentIteratorCreate`](./api-1446189-skindexdocumentiteratorcreate.md). To get a copy of the next document in the set owned by the iterator, use [`SKIndexDocumentIteratorCopyNext`](./api-1442212-skindexdocumentiteratorcopynext.md).
+
+
+---
+
+*[View on Apple Developer](https://developer.apple.com/documentation/coreservices/skindexdocumentiteratorref)*

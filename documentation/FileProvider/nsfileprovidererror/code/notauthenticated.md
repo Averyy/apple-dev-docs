@@ -60,6 +60,8 @@ If your File Provider extension returns a [`notAuthenticated`](../notauthenticat
   An error indicating that the item contains unsynced changes.
 - [NSFileProviderError.Code.cannotSynchronize](./cannotsynchronize.md)
   An error indicating a failed sync attempt.
+- [NSFileProviderErrorDeletionRejected](./deletionrejected.md)
+  An error indicating a failed deletion action.
 
 
 ---

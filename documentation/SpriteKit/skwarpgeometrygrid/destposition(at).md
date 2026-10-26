@@ -46,6 +46,10 @@ The specified index must be between 0 and the warp geometry grid’s [`vertexCou
   Returns a copy of this grid, updated with the argument source positions.
 - [func sourcePosition(at: Int) -> vector_float2](./sourceposition%28at%29.md)
   Returns the source position of a vertex.
+- [- gridByReplacingDestPositions:](./gridbyreplacingdestpositions_.md)
+  Returns a copy of the receiver with the destination positions replaced by a specified array.
+- [- gridByReplacingSourcePositions:](./gridbyreplacingsourcepositions_.md)
+  Returns a copy of the receiver with the source positions replaced by a specified array.
 
 
 ---

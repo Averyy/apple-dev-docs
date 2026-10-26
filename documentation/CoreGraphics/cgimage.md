@@ -86,6 +86,8 @@ A bitmap image is a rectangular array of pixels, each of which represents a sing
 ### Creating image masks
 - [init?(maskWidth: Int, height: Int, bitsPerComponent: Int, bitsPerPixel: Int, bytesPerRow: Int, provider: CGDataProvider, decode: UnsafePointer<CGFloat>?, shouldInterpolate: Bool)](./cgimage/init%28maskwidth,height,bitspercomponent,bitsperpixel,bytesperrow,provider,decode,shouldinterpolate%29.md)
   Creates a bitmap image mask from data supplied by a data provider.
+- [CGImageCreateWithMaskingColors](./cgimagecreatewithmaskingcolors.md)
+  Creates a bitmap image by masking an existing bitmap image with the provided color values.
 ### Adopting high dynamic range (HDR)
 - [Enhancing high dynamic range image rendering](./adopting-advancements-in-hdr-image-rendering.md)
   Improve your app’s High Dynamic Range (HDR) image support with metadata.
@@ -111,6 +113,11 @@ A bitmap image is a rectangular array of pixels, each of which represents a sing
 - [var contentHeadroom: Float](./cgimage/contentheadroom.md)
 - [var pixelFormatInfo: CGImagePixelFormatInfo](./cgimage/pixelformatinfo.md)
 - [var shouldToneMap: Bool](./cgimage/shouldtonemap.md)
+### Retaining and releasing images
+- [CGImageRetain](./cgimageretain.md)
+  Increments the retain count of a bitmap image.
+- [CGImageRelease](./cgimagerelease.md)
+  Decrements the retain count of a bitmap image.
 
 ## Relationships
 
@@ -136,6 +143,31 @@ A bitmap image is a rectangular array of pixels, each of which represents a sing
   A mutable graphics path: a mathematical description of shapes or lines to be drawn in a graphics context.
 - [class CGLayer](./cglayer.md)
   An offscreen context for reusing content drawn with Core Graphics.
+### Opaque Types
+- [CGColorRef](./cgcolor.md)
+  A set of components that define a color, with a color space specifying how to interpret them.
+- [CGColorConversionInfoRef](./cgcolorconversioninfo.md)
+  An object that describes how to convert between color spaces for use by other system services.
+- [CGColorSpaceRef](./cgcolorspace.md)
+  A profile that specifies how to interpret a color value for display.
+- [CGDataConsumerRef](./cgdataconsumer.md)
+  An abstraction for data-writing tasks that eliminates the need to manage a raw memory buffer.
+- [CGDataProviderRef](./cgdataprovider.md)
+  An abstraction for data-reading tasks that eliminates the need to manage a raw memory buffer.
+- [CGFontRef](./cgfont.md)
+  A set of character glyphs and layout information for drawing text.
+- [CGFunctionRef](./cgfunction.md)
+  A general facility for defining and using callback functions.
+- [CGGradientRef](./cggradient.md)
+  A definition for a smooth transition between colors for drawing radial and axial gradient fills.
+- [CGPatternRef](./cgpattern.md)
+  A 2D pattern to be used for drawing graphics paths.
+- [CGPDFArray](./cgpdfarray.md)
+  An array structure within a PDF document.
+- [CGPDFContentStream](./cgpdfcontentstream.md)
+  A representation of one or more content data streams in a PDF page.
+- [CGPDFDictionary](./cgpdfdictionary.md)
+  A dictionary structure within a PDF document.
 
 
 ---

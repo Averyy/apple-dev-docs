@@ -30,6 +30,8 @@ var alignsCorners: Bool { get }
   An array that contains the dimensions of the result tensor.
 - [var sampleMode: MLCSampleMode](./samplemode.md)
   The upsampling algorithm type.
+- [shape](./shape-7j6sf.md)
+  An array that contains the dimensions of the result tensor.
 
 
 ---

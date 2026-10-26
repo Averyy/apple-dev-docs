@@ -40,6 +40,8 @@ The functions specified by an instance of `NSPointerFunctions` are separated int
 ### Creating and Initializing an NSPointerFunctions Object
 - [init(options: NSPointerFunctions.Options)](./nspointerfunctions/init%28options%29.md)
   Returns an `NSPointerFunctions` object initialized with the given options.
+- [+ pointerFunctionsWithOptions:](./nspointerfunctions/pointerfunctionswithoptions_.md)
+  Returns a new `NSPointerFunctions` object initialized with the given options.
 ### Personality Functions
 - [var hashFunction: ((UnsafeRawPointer, ((UnsafeRawPointer) -> Int)?) -> Int)?](./nspointerfunctions/hashfunction.md)
   The hash function.

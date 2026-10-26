@@ -38,6 +38,8 @@ convenience init(lookingAt mapItem: MKMapItem, forViewSize viewSize: CGSize, all
   Returns a new camera object using the specified viewing angle information.
 - [convenience init(lookingAtCenter: CLLocationCoordinate2D, fromDistance: CLLocationDistance, pitch: CGFloat, heading: CLLocationDirection)](./init%28lookingatcenter,fromdistance,pitch,heading%29.md)
   Returns a new camera object using the specified distance, pitch, and heading information.
+- [+ camera](./camera.md)
+  Returns a new camera object for you to configure.
 
 
 ---

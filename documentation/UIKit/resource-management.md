@@ -18,6 +18,8 @@ Manage the images, strings, storyboards, and nib files that you use to implement
   An object that prepares for and performs the visual transition between two view controllers.
 - [class UIStoryboardUnwindSegueSource](./uistoryboardunwindseguesource.md)
   An encapsulation of information about an unwind segue.
+- [UIStoryboardViewControllerCreator](./uistoryboardviewcontrollercreator.md)
+  A handler block that contains the custom initialization code for a view controller you instantiate from a storyboard.
 ### Assets
 - [class UIImageAsset](./uiimageasset.md)
   A container for a collection of images that represent multiple ways of describing a single piece of artwork.

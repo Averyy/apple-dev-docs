@@ -32,6 +32,25 @@ typedef void (^)(MPSNNFilterNode *, MPSNNFilterNode *, MPSNNImageNode *, MPSNNIm
 - [typealias MPSDeviceCaps](./mpsdevicecaps.md)
 - [typealias MPSFunctionConstant](./mpsfunctionconstant.md)
 - [typealias MPSFunctionConstantInMetal](./mpsfunctionconstantinmetal.md)
+- [MPSCNNArithmeticGradientStateBatch](./mpscnnarithmeticgradientstatebatch.md)
+  A batch of arithmetic gradient state instances.
+- [MPSCNNConvolutionGradientStateBatch](./mpscnnconvolutiongradientstatebatch.md)
+  A batch of convolution gradient state instances.
+- [MPSCNNConvolutionTransposeGradientStateBatch](./mpscnnconvolutiontransposegradientstatebatch.md)
+- [MPSCNNDropoutGradientStateBatch](./mpscnndropoutgradientstatebatch.md)
+  A batch of dropout gradient state instances.
+- [MPSCNNGroupNormalizationGradientStateBatch](./mpscnngroupnormalizationgradientstatebatch.md)
+- [MPSCNNInstanceNormalizationGradientStateBatch](./mpscnninstancenormalizationgradientstatebatch.md)
+  A batch of instance normalization gradient state instances.
+- [MPSCNNLossLabelsBatch](./mpscnnlosslabelsbatch.md)
+  A batch of loss labels instances.
+- [MPSImageBatch](./mpsimagebatch.md)
+  A batch of Metal Performance Shader image instances.
+- [MPSNNBinaryGradientStateBatch](./mpsnnbinarygradientstatebatch.md)
+  A batch of binary gradient state instances.
+- [MPSNNGradientStateBatch](./mpsnngradientstatebatch.md)
+  A batch of gradient state instances.
+- [MPSNNMultiaryGradientStateBatch](./mpsnnmultiarygradientstatebatch.md)
 
 
 ---

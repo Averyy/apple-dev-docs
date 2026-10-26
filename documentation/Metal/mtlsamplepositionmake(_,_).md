@@ -40,6 +40,10 @@ The new sample position.
   Sets the programmable sample positions for a render pass.
 - [func getSamplePositions() -> [MTLSamplePosition]](./mtlrenderpassdescriptor/getsamplepositions%28%29.md)
   Returns the programmable sample positions set for a render pass.
+- [- setSamplePositions:count:](./mtlrenderpassdescriptor/setsamplepositions_count_.md)
+  Sets the programmable sample positions for a render pass.
+- [- getSamplePositions:count:](./mtlrenderpassdescriptor/getsamplepositions_count_.md)
+  Retrieves the programmable sample positions set for a render pass.
 
 
 ---

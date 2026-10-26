@@ -43,6 +43,8 @@ The format of the input scope is initially the same as that of the output, but y
 ### Configuring the Spatial Audio experience
 - [var intendedSpatialExperience: any SpatialAudioExperience](./avaudiooutputnode/intendedspatialexperience-3ts59.md)
   The intended spatial experience for this output node.
+- [intendedSpatialExperience](./avaudiooutputnode/intendedspatialexperience-3uznq.md)
+  The intended spatial experience for this output node.
 
 ## Relationships
 
@@ -71,6 +73,7 @@ The format of the input scope is initially the same as that of the output, but y
   An object that performs audio input or output in the engine.
 - [class AVAudioNode](./avaudionode.md)
   An object you use for audio generation, processing, or an I/O block.
+- [AVAudioIONodeInputBlockRealtimeSafe](./avaudioionodeinputblockrealtimesafe.md)
 
 
 ---

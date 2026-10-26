@@ -32,6 +32,20 @@ If the asset contains metadata that the framework can convert to an [`NSDate`](.
 
 This property value is `nil` if no creation date metadata exists.
 
+## See Also
+
+### Accessing metadata
+- [metadata](./metadata.md)
+  An array of metadata items for all metadata identifiers for which a value is available.
+- [commonMetadata](./commonmetadata.md)
+  The metadata items an asset contains for common metadata identifiers that provide a value.
+- [availableMetadataFormats](./availablemetadataformats.md)
+  The metadata formats this asset contains.
+- [- metadataForFormat:](./metadata%28forformat%29.md)
+  Returns an array of metadata items from the container with the specified format.
+- [lyrics](./lyrics.md)
+  The lyrics of the asset in a language suitable for the current locale.
+
 
 ---
 

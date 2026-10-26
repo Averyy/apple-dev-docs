@@ -40,6 +40,26 @@
       "file_path": "documentation/ModelIO/kuttypeuniversalscenedescriptionmobile.md",
       "hash": "979884520b5d02fe52c7f7e8a14baa141f3e7b4f9f9b44fde92f6dfef463323a"
     },
+    "https://developer.apple.com/documentation/modelio/mdl_class_export": {
+      "etag": "\"a77-65d55d405cceb-df\"",
+      "file_path": "documentation/ModelIO/mdl_class_export.md",
+      "hash": "f70999b52f2d0f7d4199605b403a2260ff0d40f5c6b17759ce5b7ca9eaf3f2ab"
+    },
+    "https://developer.apple.com/documentation/modelio/mdl_const_inline": {
+      "etag": "\"a77-65d55d3fb496f-df\"",
+      "file_path": "documentation/ModelIO/mdl_const_inline.md",
+      "hash": "32d347e47aa0a55c1ca35478678f7eb9cdfcb9a94cb6f8cc6c99cdf98805e672"
+    },
+    "https://developer.apple.com/documentation/modelio/mdl_export": {
+      "etag": "\"a2f-65d55d3ffdbc4-df\"",
+      "file_path": "documentation/ModelIO/mdl_export.md",
+      "hash": "cfbc4ad92089b610d01be42a0726aced9be82b56333e3c6bc990e1a35bf82076"
+    },
+    "https://developer.apple.com/documentation/modelio/mdl_inline": {
+      "etag": "\"a2f-65d55d410447f-df\"",
+      "file_path": "documentation/ModelIO/mdl_inline.md",
+      "hash": "492e59064fad968753692fb9774fd97e4fd167754204b201e327b3231bca18bb"
+    },
     "https://developer.apple.com/documentation/modelio/mdlanimatedmatrix4x4": {
       "etag": "\"5fb5-65d55d4205e9d-df\"",
       "file_path": "documentation/ModelIO/mdlanimatedmatrix4x4.md",
@@ -65,6 +85,16 @@
       "file_path": "documentation/ModelIO/mdlanimatedmatrix4x4/float4x4value(attime).md",
       "hash": "4932ed633d103b3b12b36207cbb0cee52b6623a79d3ec2c715e2bfc50c958b31"
     },
+    "https://developer.apple.com/documentation/modelio/mdlanimatedmatrix4x4/getdouble4x4array:maxcount:": {
+      "etag": "\"184a-65d55d41b1c3e-df\"",
+      "file_path": "documentation/ModelIO/mdlanimatedmatrix4x4/getdouble4x4array_maxcount_.md",
+      "hash": "97c0f62cc0bda19c3577c99ddf643d41fecdfe1e0879ce255e1a42f6cecaf303"
+    },
+    "https://developer.apple.com/documentation/modelio/mdlanimatedmatrix4x4/getfloat4x4array:maxcount:": {
+      "etag": "\"1833-65d55d41b1c3e-df\"",
+      "file_path": "documentation/ModelIO/mdlanimatedmatrix4x4/getfloat4x4array_maxcount_.md",
+      "hash": "a03c19cfa58951d909a4941920d2f0e31a9679d5f01e3c06d024490112535255"
+    },
     "https://developer.apple.com/documentation/modelio/mdlanimatedmatrix4x4/reset(double4array:attimes:)": {
       "etag": "\"1c9b-65d55d41b1c3e-df\"",
       "file_path": "documentation/ModelIO/mdlanimatedmatrix4x4/reset(double4array,attimes).md",
@@ -74,6 +104,16 @@
       "etag": "\"1c92-65d55d41b1c3e-df\"",
       "file_path": "documentation/ModelIO/mdlanimatedmatrix4x4/reset(float4x4array,attimes).md",
       "hash": "2dc65d2c6bee782b532189717c70b778a7ac765c327e4ce253aea61d6ee83ddd"
+    },
+    "https://developer.apple.com/documentation/modelio/mdlanimatedmatrix4x4/resetwithdouble4x4array:attimes:count:": {
+      "etag": "\"1e3d-65d55d41b1c3e-df\"",
+      "file_path": "documentation/ModelIO/mdlanimatedmatrix4x4/resetwithdouble4x4array_attimes_count_.md",
+      "hash": "e33b11459f16f02a9e9fd361d92586dc70ae07675d884fb045e9e48ad4a63452"
+    },
+    "https://developer.apple.com/documentation/modelio/mdlanimatedmatrix4x4/resetwithfloat4x4array:attimes:count:": {
+      "etag": "\"1e26-65d55d41b1c3e-df\"",
+      "file_path": "documentation/ModelIO/mdlanimatedmatrix4x4/resetwithfloat4x4array_attimes_count_.md",
+      "hash": "f372938ccbbc292746c15dfbcea39f8ef06838b2db53955e3e60f33888b0428a"
     },
     "https://developer.apple.com/documentation/modelio/mdlanimatedmatrix4x4/setdouble4x4(_:attime:)": {
       "etag": "\"27a4-65d55d41b1c3e-df\"",
@@ -110,6 +150,16 @@
       "file_path": "documentation/ModelIO/mdlanimatedquaternion/floatquaternionvalue(attime).md",
       "hash": "1ea433a016cbe1957f632689921bdb93aa2ac840bbd1e5726d555f20f4daac15"
     },
+    "https://developer.apple.com/documentation/modelio/mdlanimatedquaternion/getdoublequaternionarray:maxcount:": {
+      "etag": "\"185a-65d55d40c1030-df\"",
+      "file_path": "documentation/ModelIO/mdlanimatedquaternion/getdoublequaternionarray_maxcount_.md",
+      "hash": "7e96f4b384a5933d63819ae61493d40e6c9e2f2c096733e453b3f9c3cad3b7a3"
+    },
+    "https://developer.apple.com/documentation/modelio/mdlanimatedquaternion/getfloatquaternionarray:maxcount:": {
+      "etag": "\"184e-65d55d40c1030-df\"",
+      "file_path": "documentation/ModelIO/mdlanimatedquaternion/getfloatquaternionarray_maxcount_.md",
+      "hash": "2f2e5d4360b889b616d2584cb61432ad7c25e060fcfbb57d011d036245af340a"
+    },
     "https://developer.apple.com/documentation/modelio/mdlanimatedquaternion/reset(doublequaternionarray:attimes:)": {
       "etag": "\"1d9b-65d55d40c1030-df\"",
       "file_path": "documentation/ModelIO/mdlanimatedquaternion/reset(doublequaternionarray,attimes).md",
@@ -119,6 +169,16 @@
       "etag": "\"1d90-65d55d40c1030-df\"",
       "file_path": "documentation/ModelIO/mdlanimatedquaternion/reset(floatquaternionarray,attimes).md",
       "hash": "ba026e629688f157c9b238744c54f97d37ecfbd2c27f3b44126d800cbd7603de"
+    },
+    "https://developer.apple.com/documentation/modelio/mdlanimatedquaternion/resetwithdoublequaternionarray:attimes:count:": {
+      "etag": "\"1e4d-65d55d40c1030-df\"",
+      "file_path": "documentation/ModelIO/mdlanimatedquaternion/resetwithdoublequaternionarray_attimes_count_.md",
+      "hash": "783ef9ec556d60d6e0f3b6f4e2ba88f72de17961444e2482134a4e014351a3be"
+    },
+    "https://developer.apple.com/documentation/modelio/mdlanimatedquaternion/resetwithfloatquaternionarray:attimes:count:": {
+      "etag": "\"1e41-65d55d40c1030-df\"",
+      "file_path": "documentation/ModelIO/mdlanimatedquaternion/resetwithfloatquaternionarray_attimes_count_.md",
+      "hash": "5038337d53600e9673416fb092bc30f3cb777fd5d78cd5265f57a23f4f6b0180"
     },
     "https://developer.apple.com/documentation/modelio/mdlanimatedquaternion/setdoublequaternion(_:attime:)": {
       "etag": "\"27d0-65d55d40c1030-df\"",
@@ -160,6 +220,26 @@
       "file_path": "documentation/ModelIO/mdlanimatedquaternionarray/floatquaternionarray(attime).md",
       "hash": "85d1eadc6c65e66a0af37877f59263d067755c49ec858aae1c6d82c6023fd632"
     },
+    "https://developer.apple.com/documentation/modelio/mdlanimatedquaternionarray/getdoublequaternionarray:maxcount:": {
+      "etag": "\"18b9-65d55d3fd92aa-df\"",
+      "file_path": "documentation/ModelIO/mdlanimatedquaternionarray/getdoublequaternionarray_maxcount_.md",
+      "hash": "d40fb23488a485239155582149a36d5266b64f5cd4e07fee3151328ee9bf0d67"
+    },
+    "https://developer.apple.com/documentation/modelio/mdlanimatedquaternionarray/getdoublequaternionarray:maxcount:attime:": {
+      "etag": "\"1e5f-65d55d3fd92aa-df\"",
+      "file_path": "documentation/ModelIO/mdlanimatedquaternionarray/getdoublequaternionarray_maxcount_attime_.md",
+      "hash": "3b77054e1f7a43cc5800b425dedf298dec4a4a64f321953e8b485b4aa0bd9456"
+    },
+    "https://developer.apple.com/documentation/modelio/mdlanimatedquaternionarray/getfloatquaternionarray:maxcount:": {
+      "etag": "\"18ad-65d55d3fd92aa-df\"",
+      "file_path": "documentation/ModelIO/mdlanimatedquaternionarray/getfloatquaternionarray_maxcount_.md",
+      "hash": "83963f462e70473caff89eaaa522c928562a043826e259cbc0e10beefc8dc198"
+    },
+    "https://developer.apple.com/documentation/modelio/mdlanimatedquaternionarray/getfloatquaternionarray:maxcount:attime:": {
+      "etag": "\"1e53-65d55d3fd92aa-df\"",
+      "file_path": "documentation/ModelIO/mdlanimatedquaternionarray/getfloatquaternionarray_maxcount_attime_.md",
+      "hash": "52c5e13fab4a2cf2bf772eea7e368a35fae1963425405d0dfa1518ee634c4a2f"
+    },
     "https://developer.apple.com/documentation/modelio/mdlanimatedquaternionarray/init(elementcount:)": {
       "etag": "\"1fed-65d55d3fd92aa-df\"",
       "file_path": "documentation/ModelIO/mdlanimatedquaternionarray/init(elementcount).md",
@@ -175,6 +255,16 @@
       "file_path": "documentation/ModelIO/mdlanimatedquaternionarray/reset(floatquaternionarray,attimes).md",
       "hash": "1f9d6ae3433ce6646615a50c0bfb24e512be9a4c3dd28b29085c81b7c0dc8c47"
     },
+    "https://developer.apple.com/documentation/modelio/mdlanimatedquaternionarray/resetwithdoublequaternionarray:count:attimes:count:": {
+      "etag": "\"2043-65d55d3fd92aa-df\"",
+      "file_path": "documentation/ModelIO/mdlanimatedquaternionarray/resetwithdoublequaternionarray_count_attimes_count_.md",
+      "hash": "f4e6276a0f979e801b000de23f4917a56cfe20b063b8a21fa41b3251b4c8f0cc"
+    },
+    "https://developer.apple.com/documentation/modelio/mdlanimatedquaternionarray/resetwithfloatquaternionarray:count:attimes:count:": {
+      "etag": "\"2037-65d55d3fd92aa-df\"",
+      "file_path": "documentation/ModelIO/mdlanimatedquaternionarray/resetwithfloatquaternionarray_count_attimes_count_.md",
+      "hash": "896f7f7bcc8531da8301bea1f3a39a0515a738b7199b71d66556f8bb3052351d"
+    },
     "https://developer.apple.com/documentation/modelio/mdlanimatedquaternionarray/set(doublequaternionarray:attime:)": {
       "etag": "\"1dca-65d55d3fd92aa-df\"",
       "file_path": "documentation/ModelIO/mdlanimatedquaternionarray/set(doublequaternionarray,attime).md",
@@ -184,6 +274,16 @@
       "etag": "\"1dbf-65d55d3fd92aa-df\"",
       "file_path": "documentation/ModelIO/mdlanimatedquaternionarray/set(floatquaternionarray,attime).md",
       "hash": "bd89478e58e07b2cd114dbdd365567ce169db9d5f66af99b4b432c0ec06cd72a"
+    },
+    "https://developer.apple.com/documentation/modelio/mdlanimatedquaternionarray/setdoublequaternionarray:count:attime:": {
+      "etag": "\"1e0d-65d55d3fd92aa-df\"",
+      "file_path": "documentation/ModelIO/mdlanimatedquaternionarray/setdoublequaternionarray_count_attime_.md",
+      "hash": "0c159cba6ff3b838dd9e97ca7f96a9b92e2ed1557137f37b3e564804a43a2ea8"
+    },
+    "https://developer.apple.com/documentation/modelio/mdlanimatedquaternionarray/setfloatquaternionarray:count:attime:": {
+      "etag": "\"1e01-65d55d3fd92aa-df\"",
+      "file_path": "documentation/ModelIO/mdlanimatedquaternionarray/setfloatquaternionarray_count_attime_.md",
+      "hash": "9ad7938e38ad77cb98c333724f4726d92e37f1d13a9e497cdef7a7c5e461c830"
     },
     "https://developer.apple.com/documentation/modelio/mdlanimatedscalar": {
       "etag": "\"5cf9-65d55d413a7dc-df\"",
@@ -210,6 +310,16 @@
       "file_path": "documentation/ModelIO/mdlanimatedscalar/floatvalue(attime).md",
       "hash": "8f6e73fafe446972cd2c94b51ca10aa4a21e183b075dcfc7cc2faa2abdcc18bd"
     },
+    "https://developer.apple.com/documentation/modelio/mdlanimatedscalar/getdoublearray:maxcount:": {
+      "etag": "\"1497-65d55d40a3c1f-df\"",
+      "file_path": "documentation/ModelIO/mdlanimatedscalar/getdoublearray_maxcount_.md",
+      "hash": "a0e274e6312398438b0382e38d9e461ccae3dc8de8ef7ad738b4d9dedd7a309b"
+    },
+    "https://developer.apple.com/documentation/modelio/mdlanimatedscalar/getfloatarray:maxcount:": {
+      "etag": "\"148a-65d55d40c1030-df\"",
+      "file_path": "documentation/ModelIO/mdlanimatedscalar/getfloatarray_maxcount_.md",
+      "hash": "993fe4ef3eaf31eb1f0b76cb45b5e845a83c26c616cee4c41ccdc3549cfa3b67"
+    },
     "https://developer.apple.com/documentation/modelio/mdlanimatedscalar/reset(doublearray:attimes:)": {
       "etag": "\"1c01-65d55d40a3c1f-df\"",
       "file_path": "documentation/ModelIO/mdlanimatedscalar/reset(doublearray,attimes).md",
@@ -219,6 +329,16 @@
       "etag": "\"1bf0-65d55d40c1030-df\"",
       "file_path": "documentation/ModelIO/mdlanimatedscalar/reset(floatarray,attimes).md",
       "hash": "4b0e06fa2a2744eb2a9c9ab2ee7c522ac3d2606f27a6fe904c8be82e31b99725"
+    },
+    "https://developer.apple.com/documentation/modelio/mdlanimatedscalar/resetwithdoublearray:attimes:count:": {
+      "etag": "\"1a8a-65d55d40c1030-df\"",
+      "file_path": "documentation/ModelIO/mdlanimatedscalar/resetwithdoublearray_attimes_count_.md",
+      "hash": "4c1ba29582166439513e25a8861c9df6778a6477b333f792908e424399711c1c"
+    },
+    "https://developer.apple.com/documentation/modelio/mdlanimatedscalar/resetwithfloatarray:attimes:count:": {
+      "etag": "\"1a7d-65d55d40c1030-df\"",
+      "file_path": "documentation/ModelIO/mdlanimatedscalar/resetwithfloatarray_attimes_count_.md",
+      "hash": "446334f4ae0f295da65c7fdf2fd934e61c84c20e6159220debb78d7854d00f5e"
     },
     "https://developer.apple.com/documentation/modelio/mdlanimatedscalar/setdouble(_:attime:)": {
       "etag": "\"256a-65d55d40c1030-df\"",
@@ -260,6 +380,26 @@
       "file_path": "documentation/ModelIO/mdlanimatedscalararray/floatarray(attime).md",
       "hash": "a6ada5002050f71acb4c78f292c6b8bcc10e057733c8028377bc233b9447a76a"
     },
+    "https://developer.apple.com/documentation/modelio/mdlanimatedscalararray/getdoublearray:maxcount:": {
+      "etag": "\"14f6-65d55d407dd6a-df\"",
+      "file_path": "documentation/ModelIO/mdlanimatedscalararray/getdoublearray_maxcount_.md",
+      "hash": "05a422d42e9dc197f961c16c01d981e61e3119a7bd162cd113d3c359f94b0ac4"
+    },
+    "https://developer.apple.com/documentation/modelio/mdlanimatedscalararray/getdoublearray:maxcount:attime:": {
+      "etag": "\"1a9c-65d55d407dd6a-df\"",
+      "file_path": "documentation/ModelIO/mdlanimatedscalararray/getdoublearray_maxcount_attime_.md",
+      "hash": "d410e30adf0f4c12f90a329c13a0dc33acfe91522ee6894ace65467676acfe34"
+    },
+    "https://developer.apple.com/documentation/modelio/mdlanimatedscalararray/getfloatarray:maxcount:": {
+      "etag": "\"14e9-65d55d407dd6a-df\"",
+      "file_path": "documentation/ModelIO/mdlanimatedscalararray/getfloatarray_maxcount_.md",
+      "hash": "7435e6a3d766837eea480b968591d128fe249c5c50f63122b5652d9ec08064f5"
+    },
+    "https://developer.apple.com/documentation/modelio/mdlanimatedscalararray/getfloatarray:maxcount:attime:": {
+      "etag": "\"1a8f-65d55d407dd6a-df\"",
+      "file_path": "documentation/ModelIO/mdlanimatedscalararray/getfloatarray_maxcount_attime_.md",
+      "hash": "8e9c81efe8f4df56a706a59b4d9a5887b05fbbfdfcd03dc99fa27f2d0acedd8e"
+    },
     "https://developer.apple.com/documentation/modelio/mdlanimatedscalararray/init(elementcount:)": {
       "etag": "\"1f91-65d55d407dd6a-df\"",
       "file_path": "documentation/ModelIO/mdlanimatedscalararray/init(elementcount).md",
@@ -275,6 +415,16 @@
       "file_path": "documentation/ModelIO/mdlanimatedscalararray/reset(floatarray,attimes).md",
       "hash": "bf6377682e531c7b4de985aee4cacc83a7723de0f9cf896c8731a89c5d61b8bb"
     },
+    "https://developer.apple.com/documentation/modelio/mdlanimatedscalararray/resetwithdoublearray:count:attimes:count:": {
+      "etag": "\"1c80-65d55d407dd6a-df\"",
+      "file_path": "documentation/ModelIO/mdlanimatedscalararray/resetwithdoublearray_count_attimes_count_.md",
+      "hash": "a86ead62726699a8b5519d7da5486fe5408e86922b18ef1ac6614532a8ceed8e"
+    },
+    "https://developer.apple.com/documentation/modelio/mdlanimatedscalararray/resetwithfloatarray:count:attimes:count:": {
+      "etag": "\"1c73-65d55d407dd6a-df\"",
+      "file_path": "documentation/ModelIO/mdlanimatedscalararray/resetwithfloatarray_count_attimes_count_.md",
+      "hash": "ff90855646428ff39fc9b9b7783bad5f695d572bb41da96597f7cc8660079639"
+    },
     "https://developer.apple.com/documentation/modelio/mdlanimatedscalararray/set(doublearray:attime:)": {
       "etag": "\"1c35-65d55d407dd6a-df\"",
       "file_path": "documentation/ModelIO/mdlanimatedscalararray/set(doublearray,attime).md",
@@ -285,6 +435,16 @@
       "file_path": "documentation/ModelIO/mdlanimatedscalararray/set(floatarray,attime).md",
       "hash": "63aea3337f301ed2edf05de6dc859741c9ca4f3b9fd4a82505a8534ef9e009ed"
     },
+    "https://developer.apple.com/documentation/modelio/mdlanimatedscalararray/setdoublearray:count:attime:": {
+      "etag": "\"1a4a-65d55d407dd6a-df\"",
+      "file_path": "documentation/ModelIO/mdlanimatedscalararray/setdoublearray_count_attime_.md",
+      "hash": "7571d68e5f0c8e313cbf42e50de1215f8809d237cb76c0b6896ee7d27dd78847"
+    },
+    "https://developer.apple.com/documentation/modelio/mdlanimatedscalararray/setfloatarray:count:attime:": {
+      "etag": "\"1a3d-65d55d407dd6a-df\"",
+      "file_path": "documentation/ModelIO/mdlanimatedscalararray/setfloatarray_count_attime_.md",
+      "hash": "8aff4ffe6755cb9b059f8c4addada345f91344da92d082f81393beddad38df64"
+    },
     "https://developer.apple.com/documentation/modelio/mdlanimatedvalue": {
       "etag": "\"828e-65d55d41571ff-df\"",
       "file_path": "documentation/ModelIO/mdlanimatedvalue.md",
@@ -294,6 +454,11 @@
       "etag": "\"17b8-65d55d413a7dc-df\"",
       "file_path": "documentation/ModelIO/mdlanimatedvalue/clear().md",
       "hash": "1189f5028f908d887e1143dd43f9e9d4cf0b266e4b9bf2c2cc887e2bc69c0b3c"
+    },
+    "https://developer.apple.com/documentation/modelio/mdlanimatedvalue/gettimes:maxcount:": {
+      "etag": "\"18b6-65d55d413a7dc-df\"",
+      "file_path": "documentation/ModelIO/mdlanimatedvalue/gettimes_maxcount_.md",
+      "hash": "f6c9c84b7f0b56017eadbd371b5b797c7aa56ffbaae3d22c949dbd9654dc0e7f"
     },
     "https://developer.apple.com/documentation/modelio/mdlanimatedvalue/interpolation": {
       "etag": "\"1fb0-65d55d413a7dc-df\"",
@@ -380,6 +545,16 @@
       "file_path": "documentation/ModelIO/mdlanimatedvector2/float2value(attime).md",
       "hash": "448e326fbb7a9ebc4c5d095330d6f78f48ba6c791ca964fdc95559cdeec2fbd8"
     },
+    "https://developer.apple.com/documentation/modelio/mdlanimatedvector2/getdouble2array:maxcount:": {
+      "etag": "\"17ac-65d55d401efed-df\"",
+      "file_path": "documentation/ModelIO/mdlanimatedvector2/getdouble2array_maxcount_.md",
+      "hash": "7dde4032ef00ab88185345844390e1c79d7d287dc49c9ea3a7a97902cfc72eff"
+    },
+    "https://developer.apple.com/documentation/modelio/mdlanimatedvector2/getfloat2array:maxcount:": {
+      "etag": "\"1795-65d55d401efed-df\"",
+      "file_path": "documentation/ModelIO/mdlanimatedvector2/getfloat2array_maxcount_.md",
+      "hash": "7960e692fa85f8fc766ef7901e40b5749b3eefb737faf741b93b594b83186c85"
+    },
     "https://developer.apple.com/documentation/modelio/mdlanimatedvector2/reset(double2array:attimes:)": {
       "etag": "\"1f86-65d55d401efed-df\"",
       "file_path": "documentation/ModelIO/mdlanimatedvector2/reset(double2array,attimes).md",
@@ -389,6 +564,16 @@
       "etag": "\"1f71-65d55d401efed-df\"",
       "file_path": "documentation/ModelIO/mdlanimatedvector2/reset(float2array,attimes).md",
       "hash": "9bc5393c23d04df7c675933eef666d3bb478e972602ea63abdc392049cb0997d"
+    },
+    "https://developer.apple.com/documentation/modelio/mdlanimatedvector2/resetwithdouble2array:attimes:count:": {
+      "etag": "\"1d9f-65d55d401efed-df\"",
+      "file_path": "documentation/ModelIO/mdlanimatedvector2/resetwithdouble2array_attimes_count_.md",
+      "hash": "f88d2635430954daf19006eabae09cf70b3987e0c7a3c5d2ed93ff5963331100"
+    },
+    "https://developer.apple.com/documentation/modelio/mdlanimatedvector2/resetwithfloat2array:attimes:count:": {
+      "etag": "\"1d88-65d55d401efed-df\"",
+      "file_path": "documentation/ModelIO/mdlanimatedvector2/resetwithfloat2array_attimes_count_.md",
+      "hash": "1db5ee9d1d8011a22be970d42370bde2198482ef326178381db2ce1c3f7e3192"
     },
     "https://developer.apple.com/documentation/modelio/mdlanimatedvector2/setdouble2(_:attime:)": {
       "etag": "\"26de-65d55d401efed-df\"",
@@ -425,6 +610,16 @@
       "file_path": "documentation/ModelIO/mdlanimatedvector3/float3value(attime).md",
       "hash": "b73240d3a8d211b43c610f547c18e80c22a0b4c2eb3dc005805c4686ca908992"
     },
+    "https://developer.apple.com/documentation/modelio/mdlanimatedvector3/getdouble3array:maxcount:": {
+      "etag": "\"17ac-65d55d405cceb-df\"",
+      "file_path": "documentation/ModelIO/mdlanimatedvector3/getdouble3array_maxcount_.md",
+      "hash": "aa1d49c31f7d74df86d9bf15a4b8a35e89c1810521178805daaa6a12f4d1eb4d"
+    },
+    "https://developer.apple.com/documentation/modelio/mdlanimatedvector3/getfloat3array:maxcount:": {
+      "etag": "\"17f0-65d55d405cceb-df\"",
+      "file_path": "documentation/ModelIO/mdlanimatedvector3/getfloat3array_maxcount_.md",
+      "hash": "9e714ac60a2bbf4472ac29669b84704c9caa46f7168749330ba03bf07a8021fa"
+    },
     "https://developer.apple.com/documentation/modelio/mdlanimatedvector3/reset(double3array:attimes:)": {
       "etag": "\"1f88-65d55d405cceb-df\"",
       "file_path": "documentation/ModelIO/mdlanimatedvector3/reset(double3array,attimes).md",
@@ -434,6 +629,16 @@
       "etag": "\"1f73-65d55d405cceb-df\"",
       "file_path": "documentation/ModelIO/mdlanimatedvector3/reset(float3array,attimes).md",
       "hash": "06e68471fd7a73455e9e8e6060ce0fb0d604faf0e3afac0b8453e74ddd5d5065"
+    },
+    "https://developer.apple.com/documentation/modelio/mdlanimatedvector3/resetwithdouble3array:attimes:count:": {
+      "etag": "\"1d9f-65d55d405cceb-df\"",
+      "file_path": "documentation/ModelIO/mdlanimatedvector3/resetwithdouble3array_attimes_count_.md",
+      "hash": "8f464c40507df45395332bfe07cbe5f04f8a20476ece83889e2eec3aca5b7e1b"
+    },
+    "https://developer.apple.com/documentation/modelio/mdlanimatedvector3/resetwithfloat3array:attimes:count:": {
+      "etag": "\"1de3-65d55d405cceb-df\"",
+      "file_path": "documentation/ModelIO/mdlanimatedvector3/resetwithfloat3array_attimes_count_.md",
+      "hash": "d56ef146a7ac727ebe6aeace584026ec17a321b5172be7fd4097cfd0c9ab528c"
     },
     "https://developer.apple.com/documentation/modelio/mdlanimatedvector3/setdouble3(_:attime:)": {
       "etag": "\"26de-65d55d405cceb-df\"",
@@ -475,6 +680,26 @@
       "file_path": "documentation/ModelIO/mdlanimatedvector3array/float3array(attime).md",
       "hash": "3bc5fc4a33f8b95b5beba3e86c26fcef546a683cd463eb95c54bf71806e2513d"
     },
+    "https://developer.apple.com/documentation/modelio/mdlanimatedvector3array/getdouble3array:maxcount:": {
+      "etag": "\"180b-65d55d403e211-df\"",
+      "file_path": "documentation/ModelIO/mdlanimatedvector3array/getdouble3array_maxcount_.md",
+      "hash": "4eda94b72741bd91430789009eec8fc38bab19eaa6d1a6cec925e0c56f485a70"
+    },
+    "https://developer.apple.com/documentation/modelio/mdlanimatedvector3array/getdouble3array:maxcount:attime:": {
+      "etag": "\"1db1-65d55d403e211-df\"",
+      "file_path": "documentation/ModelIO/mdlanimatedvector3array/getdouble3array_maxcount_attime_.md",
+      "hash": "a123af22fd5135ec4c980f7e40d8e3b4888cfda87ece5cdd202dfa54c8bb2480"
+    },
+    "https://developer.apple.com/documentation/modelio/mdlanimatedvector3array/getfloat3array:maxcount:": {
+      "etag": "\"184f-65d55d403e211-df\"",
+      "file_path": "documentation/ModelIO/mdlanimatedvector3array/getfloat3array_maxcount_.md",
+      "hash": "acb00fa8f8fcd9b90e35fccf7508ca3d71ef630e9a8f6024fea4744fed1a3ece"
+    },
+    "https://developer.apple.com/documentation/modelio/mdlanimatedvector3array/getfloat3array:maxcount:attime:": {
+      "etag": "\"1df5-65d55d403e211-df\"",
+      "file_path": "documentation/ModelIO/mdlanimatedvector3array/getfloat3array_maxcount_attime_.md",
+      "hash": "3fb6f0fc6b5ee11005419f7e548eade5a4abd227c884adad7a640bce64a45c99"
+    },
     "https://developer.apple.com/documentation/modelio/mdlanimatedvector3array/init(elementcount:)": {
       "etag": "\"1fa8-65d55d403e211-df\"",
       "file_path": "documentation/ModelIO/mdlanimatedvector3array/init(elementcount).md",
@@ -490,6 +715,16 @@
       "file_path": "documentation/ModelIO/mdlanimatedvector3array/reset(float3array,attimes).md",
       "hash": "beaf87c1382a016df048c3b485ccfbfb1511592f77321c992c43817cf4482d7f"
     },
+    "https://developer.apple.com/documentation/modelio/mdlanimatedvector3array/resetwithdouble3array:count:attimes:count:": {
+      "etag": "\"1f95-65d55d403e211-df\"",
+      "file_path": "documentation/ModelIO/mdlanimatedvector3array/resetwithdouble3array_count_attimes_count_.md",
+      "hash": "98180969804c9d34b9d64a07700fe34fab3ce15a20906735f81c27c58678f5f7"
+    },
+    "https://developer.apple.com/documentation/modelio/mdlanimatedvector3array/resetwithfloat3array:count:attimes:count:": {
+      "etag": "\"1fd9-65d55d403e211-df\"",
+      "file_path": "documentation/ModelIO/mdlanimatedvector3array/resetwithfloat3array_count_attimes_count_.md",
+      "hash": "a9f76b3525bbb21e5f1f6753f0e9f3ed35130637f4c9e28c3d3b8bb37bc49b85"
+    },
     "https://developer.apple.com/documentation/modelio/mdlanimatedvector3array/set(double3array:attime:)": {
       "etag": "\"1fb8-65d55d403e211-df\"",
       "file_path": "documentation/ModelIO/mdlanimatedvector3array/set(double3array,attime).md",
@@ -499,6 +734,16 @@
       "etag": "\"1fa3-65d55d403e211-df\"",
       "file_path": "documentation/ModelIO/mdlanimatedvector3array/set(float3array,attime).md",
       "hash": "bf1fbbd9e9815eb78542cfd983fd4d86eb927000dc238f0cb92bb6777c1e0267"
+    },
+    "https://developer.apple.com/documentation/modelio/mdlanimatedvector3array/setdouble3array:count:attime:": {
+      "etag": "\"1d5f-65d55d403e211-df\"",
+      "file_path": "documentation/ModelIO/mdlanimatedvector3array/setdouble3array_count_attime_.md",
+      "hash": "c7e0a496637acba34a7b071f98ef3d373abeefc2d7e000886933a7196e58b868"
+    },
+    "https://developer.apple.com/documentation/modelio/mdlanimatedvector3array/setfloat3array:count:attime:": {
+      "etag": "\"1da3-65d55d403e211-df\"",
+      "file_path": "documentation/ModelIO/mdlanimatedvector3array/setfloat3array_count_attime_.md",
+      "hash": "2ca18967a97bb5a6c9e4d9f1ce9b7940319ad15ffebea3d240244f99df43edfb"
     },
     "https://developer.apple.com/documentation/modelio/mdlanimatedvector4": {
       "etag": "\"5f9f-65d55d413a7dc-df\"",
@@ -525,6 +770,16 @@
       "file_path": "documentation/ModelIO/mdlanimatedvector4/float4value(attime).md",
       "hash": "0961827108611d274e89babb17e915f1d96b18c6c969d074c61cebe14df69309"
     },
+    "https://developer.apple.com/documentation/modelio/mdlanimatedvector4/getdouble4array:maxcount:": {
+      "etag": "\"17ac-65d55d405cceb-df\"",
+      "file_path": "documentation/ModelIO/mdlanimatedvector4/getdouble4array_maxcount_.md",
+      "hash": "d6913cd182c3403b2226828fd2ab50eee8f73ab7ca57d47619198a409fe9b77e"
+    },
+    "https://developer.apple.com/documentation/modelio/mdlanimatedvector4/getfloat4array:maxcount:": {
+      "etag": "\"1795-65d55d405cceb-df\"",
+      "file_path": "documentation/ModelIO/mdlanimatedvector4/getfloat4array_maxcount_.md",
+      "hash": "d328fb40003a5a970ea4ac2c16d103c2e0b1ab931fe745eefdc86f3748f9583d"
+    },
     "https://developer.apple.com/documentation/modelio/mdlanimatedvector4/reset(double4array:attimes:)": {
       "etag": "\"1f87-65d55d405cceb-df\"",
       "file_path": "documentation/ModelIO/mdlanimatedvector4/reset(double4array,attimes).md",
@@ -534,6 +789,16 @@
       "etag": "\"1f72-65d55d405cceb-df\"",
       "file_path": "documentation/ModelIO/mdlanimatedvector4/reset(float4array,attimes).md",
       "hash": "6ac3c593fd411f1468150a6b32b2104cd533b9376165ef6ef40ecb87dacc90e0"
+    },
+    "https://developer.apple.com/documentation/modelio/mdlanimatedvector4/resetwithdouble4array:attimes:count:": {
+      "etag": "\"1d9f-65d55d405cceb-df\"",
+      "file_path": "documentation/ModelIO/mdlanimatedvector4/resetwithdouble4array_attimes_count_.md",
+      "hash": "6ff22008bfe91bb0279d45d5898fe5b674d1509a2ddf7e8de476c5df9118091e"
+    },
+    "https://developer.apple.com/documentation/modelio/mdlanimatedvector4/resetwithfloat4array:attimes:count:": {
+      "etag": "\"1d88-65d55d405cceb-df\"",
+      "file_path": "documentation/ModelIO/mdlanimatedvector4/resetwithfloat4array_attimes_count_.md",
+      "hash": "4c0253b72114448c38404b9d3b7b384bd5c47dff7630be47b3c5e7460ae7176c"
     },
     "https://developer.apple.com/documentation/modelio/mdlanimatedvector4/setdouble4(_:attime:)": {
       "etag": "\"26de-65d55d405cceb-df\"",
@@ -605,6 +870,16 @@
       "file_path": "documentation/ModelIO/mdlasset/animations.md",
       "hash": "57b371ed3c31992ef0954007181046edd92026a04c3df2bfe88e5be717c07df9"
     },
+    "https://developer.apple.com/documentation/modelio/mdlasset/assetwithscnscene:": {
+      "etag": "\"13f3-65d55d4205e9d-df\"",
+      "file_path": "documentation/ModelIO/mdlasset/assetwithscnscene_.md",
+      "hash": "e2ad3efbc631ed0407ba701fb026d415eeb125d283778909cbc0afb0c2d80b4e"
+    },
+    "https://developer.apple.com/documentation/modelio/mdlasset/assetwithscnscene:bufferallocator:": {
+      "etag": "\"15d1-65d55d4205e9d-df\"",
+      "file_path": "documentation/ModelIO/mdlasset/assetwithscnscene_bufferallocator_.md",
+      "hash": "7ec1c5837a27be5311fb72aa07768f92a142da3a047b1544b1028021ad6f350f"
+    },
     "https://developer.apple.com/documentation/modelio/mdlasset/boundingbox": {
       "etag": "\"608b-65d55d4205e9d-df\"",
       "file_path": "documentation/ModelIO/mdlasset/boundingbox.md",
@@ -649,6 +924,11 @@
       "etag": "\"3f31-65d55d41f4ffb-df\"",
       "file_path": "documentation/ModelIO/mdlasset/export(to).md",
       "hash": "90729a6eda1e16c5836c2607cd94e0a4cdd09c5555a37e95506586649bba9038"
+    },
+    "https://developer.apple.com/documentation/modelio/mdlasset/exportassettourl:": {
+      "etag": "\"31a4-65d55d4205e9d-df\"",
+      "file_path": "documentation/ModelIO/mdlasset/exportassettourl_.md",
+      "hash": "b2be15ff2f47065e0149e20929fc71450a0979b7a0ce226330fb3df7ecc44d80"
     },
     "https://developer.apple.com/documentation/modelio/mdlasset/frameinterval": {
       "etag": "\"2b1c-65d55d41f4ffb-df\"",
@@ -829,6 +1109,11 @@
       "etag": "\"5f70-65d55d40e4292-df\"",
       "file_path": "documentation/ModelIO/mdlcamera/bokehkernel(withsize).md",
       "hash": "68e6a8c0c3beeac04ee49999686e710eff6f8e5b343a6201eab28a2f1f82015c"
+    },
+    "https://developer.apple.com/documentation/modelio/mdlcamera/camerawithscncamera:": {
+      "etag": "\"1433-65d55d410447f-df\"",
+      "file_path": "documentation/ModelIO/mdlcamera/camerawithscncamera_.md",
+      "hash": "8be36ef01f9c28568b77b5bf348439b65c61499b32d76afe424aa9586bd330df"
     },
     "https://developer.apple.com/documentation/modelio/mdlcamera/chromaticaberration": {
       "etag": "\"528e-65d55d40e4292-df\"",
@@ -1165,6 +1450,11 @@
       "file_path": "documentation/ModelIO/mdllight/lighttype.md",
       "hash": "75fc20abf663b274581a7f48570c6f59b25d7577ff57862d8252cd5a150282bd"
     },
+    "https://developer.apple.com/documentation/modelio/mdllight/lightwithscnlight:": {
+      "etag": "\"13a6-65d55d3fb496f-df\"",
+      "file_path": "documentation/ModelIO/mdllight/lightwithscnlight_.md",
+      "hash": "35877ea715b3ef8cdfbcb23daef866334823ff3151b3a55e9b24ef625eb3db73"
+    },
     "https://developer.apple.com/documentation/modelio/mdllightprobe": {
       "etag": "\"8a94-65d55d407dd6a-df\"",
       "file_path": "documentation/ModelIO/mdllightprobe.md",
@@ -1324,6 +1614,11 @@
       "etag": "\"29f3-65d55d3ffdbc4-df\"",
       "file_path": "documentation/ModelIO/mdlmaterial/materialface.md",
       "hash": "9a4e304ca18f38afd16d8aca20819852585c726f5150b493d274898f6984e54d"
+    },
+    "https://developer.apple.com/documentation/modelio/mdlmaterial/materialwithscnmaterial:": {
+      "etag": "\"148e-65d55d3ffdbc4-df\"",
+      "file_path": "documentation/ModelIO/mdlmaterial/materialwithscnmaterial_.md",
+      "hash": "fffb86a46d5b4e5d7b1911fbc99b74edce05cbc4e9885fc6d25c77310e8def7c"
     },
     "https://developer.apple.com/documentation/modelio/mdlmaterial/name": {
       "etag": "\"27ae-65d55d3ffdbc4-df\"",
@@ -1900,6 +2195,16 @@
       "file_path": "documentation/ModelIO/mdlmatrix4x4array/float4x4array.md",
       "hash": "f8f1d4d8cd7e06b6752f23b3bd12de7600870e7d843897b75b8fca6a63ce3aca"
     },
+    "https://developer.apple.com/documentation/modelio/mdlmatrix4x4array/getdouble4x4array:maxcount:": {
+      "etag": "\"1811-65d55d413a7dc-df\"",
+      "file_path": "documentation/ModelIO/mdlmatrix4x4array/getdouble4x4array_maxcount_.md",
+      "hash": "a46402fb92f8e27ba89031296822e7c81752598d235d75b2292408f40dc42204"
+    },
+    "https://developer.apple.com/documentation/modelio/mdlmatrix4x4array/getfloat4x4array:maxcount:": {
+      "etag": "\"17fa-65d55d413a7dc-df\"",
+      "file_path": "documentation/ModelIO/mdlmatrix4x4array/getfloat4x4array_maxcount_.md",
+      "hash": "e668e07624b3f53108ce3d6583451b3a4f9e9fb8a21f1b1daa68413021062760"
+    },
     "https://developer.apple.com/documentation/modelio/mdlmatrix4x4array/init(elementcount:)": {
       "etag": "\"1f28-65d55d413a7dc-df\"",
       "file_path": "documentation/ModelIO/mdlmatrix4x4array/init(elementcount).md",
@@ -1909,6 +2214,16 @@
       "etag": "\"1e5b-65d55d413a7dc-df\"",
       "file_path": "documentation/ModelIO/mdlmatrix4x4array/precision.md",
       "hash": "925876b8234a6bc41577f0ef69ccf8c7c6796323d77eb41e138359b4a4479dc6"
+    },
+    "https://developer.apple.com/documentation/modelio/mdlmatrix4x4array/setdouble4x4array:count:": {
+      "etag": "\"17bf-65d55d413a7dc-df\"",
+      "file_path": "documentation/ModelIO/mdlmatrix4x4array/setdouble4x4array_count_.md",
+      "hash": "bcd76074a16edc72e19d718423b1668925297371f31dc9b54bff432c206ef12c"
+    },
+    "https://developer.apple.com/documentation/modelio/mdlmatrix4x4array/setfloat4x4array:count:": {
+      "etag": "\"17a8-65d55d413a7dc-df\"",
+      "file_path": "documentation/ModelIO/mdlmatrix4x4array/setfloat4x4array_count_.md",
+      "hash": "2594c6c2b1aebf73d7918e44cca8331cc9d8ecc672a0e2adaa38f59817b2b6c4"
     },
     "https://developer.apple.com/documentation/modelio/mdlmesh": {
       "etag": "\"215b4-65d55d3fb496f-df\"",
@@ -2074,6 +2389,16 @@
       "etag": "\"1cc4-65d55d40e4292-df\"",
       "file_path": "documentation/ModelIO/mdlmesh/makeverticesuniqueandreturnerror().md",
       "hash": "41bf98926feee96deb4265627075577a2869b112c522432322b2aed78e11232a"
+    },
+    "https://developer.apple.com/documentation/modelio/mdlmesh/meshwithscngeometry:": {
+      "etag": "\"1412-65d55d40c1030-df\"",
+      "file_path": "documentation/ModelIO/mdlmesh/meshwithscngeometry_.md",
+      "hash": "936c379a016d4e45e5665d7ee1b50f921ffbe02af726b3f05b5e1daecb53f44d"
+    },
+    "https://developer.apple.com/documentation/modelio/mdlmesh/meshwithscngeometry:bufferallocator:": {
+      "etag": "\"15f0-65d55d40c1030-df\"",
+      "file_path": "documentation/ModelIO/mdlmesh/meshwithscngeometry_bufferallocator_.md",
+      "hash": "53bf44664d49d4847d3d9a707cce7d1920d88021f72618eb172dfb16866e9ec1"
     },
     "https://developer.apple.com/documentation/modelio/mdlmesh/newbox(withdimensions:segments:geometrytype:inwardnormals:allocator:)": {
       "etag": "\"10b0f-65d55d40e4292-df\"",
@@ -2425,6 +2750,16 @@
       "file_path": "documentation/ModelIO/mdlobject/instance.md",
       "hash": "bea152df99aa878f2ec14d75a1649b2d1c0165536d6fb65b901958d1c4b7855f"
     },
+    "https://developer.apple.com/documentation/modelio/mdlobject/objectwithscnnode:": {
+      "etag": "\"1431-65d55d419847b-df\"",
+      "file_path": "documentation/ModelIO/mdlobject/objectwithscnnode_.md",
+      "hash": "71b0e88456bfcbd1a88731e866dc6bfa29d0aebebd092c6e5cef7c402f1e0638"
+    },
+    "https://developer.apple.com/documentation/modelio/mdlobject/objectwithscnnode:bufferallocator:": {
+      "etag": "\"160f-65d55d419847b-df\"",
+      "file_path": "documentation/ModelIO/mdlobject/objectwithscnnode_bufferallocator_.md",
+      "hash": "bd745890fb32a44f21bd3f3dd64f0c3d5ea8fcc693af4daa373ff3eb34068e35"
+    },
     "https://developer.apple.com/documentation/modelio/mdlobject/parent": {
       "etag": "\"42d8-65d55d419847b-df\"",
       "file_path": "documentation/ModelIO/mdlobject/parent.md",
@@ -2439,6 +2774,11 @@
       "etag": "\"4512-65d55d419847b-df\"",
       "file_path": "documentation/ModelIO/mdlobject/setcomponent(_,for).md",
       "hash": "8a698d845b69861ca3c849df65a239dbcc5eb1276ce4d2942c3921961ee6644b"
+    },
+    "https://developer.apple.com/documentation/modelio/mdlobject/setobject:forkeyedsubscript:": {
+      "etag": "\"2879-65d55d419847b-df\"",
+      "file_path": "documentation/ModelIO/mdlobject/setobject_forkeyedsubscript_.md",
+      "hash": "da3e2750eb45cc51a6f147f8ca441e56c59bfe3a2322e01429ecba29524f98e0"
     },
     "https://developer.apple.com/documentation/modelio/mdlobject/subscript(_:)": {
       "etag": "\"35ae-65d55d419847b-df\"",
@@ -2984,6 +3324,16 @@
       "etag": "\"1da2-65d55d41b1c3e-df\"",
       "file_path": "documentation/ModelIO/mdlsubmesh/name.md",
       "hash": "003ed669d4036cdf65f99ca32a0ee41d847fde8ebbe6eeeab4d44de2d0ce475d"
+    },
+    "https://developer.apple.com/documentation/modelio/mdlsubmesh/submeshwithscngeometryelement:": {
+      "etag": "\"151e-65d55d41b1c3e-df\"",
+      "file_path": "documentation/ModelIO/mdlsubmesh/submeshwithscngeometryelement_.md",
+      "hash": "d8fb4bd3176b3007826382680cd45dbe60c7da0f6d76a40234fb0965d4ecc4a7"
+    },
+    "https://developer.apple.com/documentation/modelio/mdlsubmesh/submeshwithscngeometryelement:bufferallocator:": {
+      "etag": "\"16fc-65d55d41b1c3e-df\"",
+      "file_path": "documentation/ModelIO/mdlsubmesh/submeshwithscngeometryelement_bufferallocator_.md",
+      "hash": "1424b3b79d5154867f987f9a8a77c0667d3956f64eeb1b62a4743a23a7e1527e"
     },
     "https://developer.apple.com/documentation/modelio/mdlsubmesh/topology": {
       "etag": "\"4321-65d55d41b1c3e-df\"",
@@ -4535,6 +4885,26 @@
       "file_path": "documentation/ModelIO/kuttypeuniversalscenedescriptionmobile.md",
       "hash": "979884520b5d02fe52c7f7e8a14baa141f3e7b4f9f9b44fde92f6dfef463323a"
     },
+    "https://developer.apple.com/tutorials/data/documentation/modelio/mdl_class_export.json": {
+      "etag": "\"a77-65d55d405cceb-df\"",
+      "file_path": "documentation/ModelIO/mdl_class_export.md",
+      "hash": "f70999b52f2d0f7d4199605b403a2260ff0d40f5c6b17759ce5b7ca9eaf3f2ab"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/modelio/mdl_const_inline.json": {
+      "etag": "\"a77-65d55d3fb496f-df\"",
+      "file_path": "documentation/ModelIO/mdl_const_inline.md",
+      "hash": "32d347e47aa0a55c1ca35478678f7eb9cdfcb9a94cb6f8cc6c99cdf98805e672"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/modelio/mdl_export.json": {
+      "etag": "\"a2f-65d55d3ffdbc4-df\"",
+      "file_path": "documentation/ModelIO/mdl_export.md",
+      "hash": "cfbc4ad92089b610d01be42a0726aced9be82b56333e3c6bc990e1a35bf82076"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/modelio/mdl_inline.json": {
+      "etag": "\"a2f-65d55d410447f-df\"",
+      "file_path": "documentation/ModelIO/mdl_inline.md",
+      "hash": "492e59064fad968753692fb9774fd97e4fd167754204b201e327b3231bca18bb"
+    },
     "https://developer.apple.com/tutorials/data/documentation/modelio/mdlanimatedmatrix4x4.json": {
       "etag": "\"5fb5-65d55d4205e9d-df\"",
       "file_path": "documentation/ModelIO/mdlanimatedmatrix4x4.md",
@@ -4560,6 +4930,16 @@
       "file_path": "documentation/ModelIO/mdlanimatedmatrix4x4/float4x4value(attime).md",
       "hash": "4932ed633d103b3b12b36207cbb0cee52b6623a79d3ec2c715e2bfc50c958b31"
     },
+    "https://developer.apple.com/tutorials/data/documentation/modelio/mdlanimatedmatrix4x4/getdouble4x4array:maxcount:.json": {
+      "etag": "\"184a-65d55d41b1c3e-df\"",
+      "file_path": "documentation/ModelIO/mdlanimatedmatrix4x4/getdouble4x4array_maxcount_.md",
+      "hash": "97c0f62cc0bda19c3577c99ddf643d41fecdfe1e0879ce255e1a42f6cecaf303"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/modelio/mdlanimatedmatrix4x4/getfloat4x4array:maxcount:.json": {
+      "etag": "\"1833-65d55d41b1c3e-df\"",
+      "file_path": "documentation/ModelIO/mdlanimatedmatrix4x4/getfloat4x4array_maxcount_.md",
+      "hash": "a03c19cfa58951d909a4941920d2f0e31a9679d5f01e3c06d024490112535255"
+    },
     "https://developer.apple.com/tutorials/data/documentation/modelio/mdlanimatedmatrix4x4/reset(double4array:attimes:).json": {
       "etag": "\"1c9b-65d55d41b1c3e-df\"",
       "file_path": "documentation/ModelIO/mdlanimatedmatrix4x4/reset(double4array,attimes).md",
@@ -4569,6 +4949,16 @@
       "etag": "\"1c92-65d55d41b1c3e-df\"",
       "file_path": "documentation/ModelIO/mdlanimatedmatrix4x4/reset(float4x4array,attimes).md",
       "hash": "2dc65d2c6bee782b532189717c70b778a7ac765c327e4ce253aea61d6ee83ddd"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/modelio/mdlanimatedmatrix4x4/resetwithdouble4x4array:attimes:count:.json": {
+      "etag": "\"1e3d-65d55d41b1c3e-df\"",
+      "file_path": "documentation/ModelIO/mdlanimatedmatrix4x4/resetwithdouble4x4array_attimes_count_.md",
+      "hash": "e33b11459f16f02a9e9fd361d92586dc70ae07675d884fb045e9e48ad4a63452"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/modelio/mdlanimatedmatrix4x4/resetwithfloat4x4array:attimes:count:.json": {
+      "etag": "\"1e26-65d55d41b1c3e-df\"",
+      "file_path": "documentation/ModelIO/mdlanimatedmatrix4x4/resetwithfloat4x4array_attimes_count_.md",
+      "hash": "f372938ccbbc292746c15dfbcea39f8ef06838b2db53955e3e60f33888b0428a"
     },
     "https://developer.apple.com/tutorials/data/documentation/modelio/mdlanimatedmatrix4x4/setdouble4x4(_:attime:).json": {
       "etag": "\"27a4-65d55d41b1c3e-df\"",
@@ -4605,6 +4995,16 @@
       "file_path": "documentation/ModelIO/mdlanimatedquaternion/floatquaternionvalue(attime).md",
       "hash": "1ea433a016cbe1957f632689921bdb93aa2ac840bbd1e5726d555f20f4daac15"
     },
+    "https://developer.apple.com/tutorials/data/documentation/modelio/mdlanimatedquaternion/getdoublequaternionarray:maxcount:.json": {
+      "etag": "\"185a-65d55d40c1030-df\"",
+      "file_path": "documentation/ModelIO/mdlanimatedquaternion/getdoublequaternionarray_maxcount_.md",
+      "hash": "7e96f4b384a5933d63819ae61493d40e6c9e2f2c096733e453b3f9c3cad3b7a3"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/modelio/mdlanimatedquaternion/getfloatquaternionarray:maxcount:.json": {
+      "etag": "\"184e-65d55d40c1030-df\"",
+      "file_path": "documentation/ModelIO/mdlanimatedquaternion/getfloatquaternionarray_maxcount_.md",
+      "hash": "2f2e5d4360b889b616d2584cb61432ad7c25e060fcfbb57d011d036245af340a"
+    },
     "https://developer.apple.com/tutorials/data/documentation/modelio/mdlanimatedquaternion/reset(doublequaternionarray:attimes:).json": {
       "etag": "\"1d9b-65d55d40c1030-df\"",
       "file_path": "documentation/ModelIO/mdlanimatedquaternion/reset(doublequaternionarray,attimes).md",
@@ -4614,6 +5014,16 @@
       "etag": "\"1d90-65d55d40c1030-df\"",
       "file_path": "documentation/ModelIO/mdlanimatedquaternion/reset(floatquaternionarray,attimes).md",
       "hash": "ba026e629688f157c9b238744c54f97d37ecfbd2c27f3b44126d800cbd7603de"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/modelio/mdlanimatedquaternion/resetwithdoublequaternionarray:attimes:count:.json": {
+      "etag": "\"1e4d-65d55d40c1030-df\"",
+      "file_path": "documentation/ModelIO/mdlanimatedquaternion/resetwithdoublequaternionarray_attimes_count_.md",
+      "hash": "783ef9ec556d60d6e0f3b6f4e2ba88f72de17961444e2482134a4e014351a3be"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/modelio/mdlanimatedquaternion/resetwithfloatquaternionarray:attimes:count:.json": {
+      "etag": "\"1e41-65d55d40c1030-df\"",
+      "file_path": "documentation/ModelIO/mdlanimatedquaternion/resetwithfloatquaternionarray_attimes_count_.md",
+      "hash": "5038337d53600e9673416fb092bc30f3cb777fd5d78cd5265f57a23f4f6b0180"
     },
     "https://developer.apple.com/tutorials/data/documentation/modelio/mdlanimatedquaternion/setdoublequaternion(_:attime:).json": {
       "etag": "\"27d0-65d55d40c1030-df\"",
@@ -4655,6 +5065,26 @@
       "file_path": "documentation/ModelIO/mdlanimatedquaternionarray/floatquaternionarray.md",
       "hash": "80f7647850ebfc44165deb11496415d3071726329957d5ea46f1f061b9568727"
     },
+    "https://developer.apple.com/tutorials/data/documentation/modelio/mdlanimatedquaternionarray/getdoublequaternionarray:maxcount:.json": {
+      "etag": "\"18b9-65d55d3fd92aa-df\"",
+      "file_path": "documentation/ModelIO/mdlanimatedquaternionarray/getdoublequaternionarray_maxcount_.md",
+      "hash": "d40fb23488a485239155582149a36d5266b64f5cd4e07fee3151328ee9bf0d67"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/modelio/mdlanimatedquaternionarray/getdoublequaternionarray:maxcount:attime:.json": {
+      "etag": "\"1e5f-65d55d3fd92aa-df\"",
+      "file_path": "documentation/ModelIO/mdlanimatedquaternionarray/getdoublequaternionarray_maxcount_attime_.md",
+      "hash": "3b77054e1f7a43cc5800b425dedf298dec4a4a64f321953e8b485b4aa0bd9456"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/modelio/mdlanimatedquaternionarray/getfloatquaternionarray:maxcount:.json": {
+      "etag": "\"18ad-65d55d3fd92aa-df\"",
+      "file_path": "documentation/ModelIO/mdlanimatedquaternionarray/getfloatquaternionarray_maxcount_.md",
+      "hash": "83963f462e70473caff89eaaa522c928562a043826e259cbc0e10beefc8dc198"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/modelio/mdlanimatedquaternionarray/getfloatquaternionarray:maxcount:attime:.json": {
+      "etag": "\"1e53-65d55d3fd92aa-df\"",
+      "file_path": "documentation/ModelIO/mdlanimatedquaternionarray/getfloatquaternionarray_maxcount_attime_.md",
+      "hash": "52c5e13fab4a2cf2bf772eea7e368a35fae1963425405d0dfa1518ee634c4a2f"
+    },
     "https://developer.apple.com/tutorials/data/documentation/modelio/mdlanimatedquaternionarray/init(elementcount:).json": {
       "etag": "\"1fed-65d55d3fd92aa-df\"",
       "file_path": "documentation/ModelIO/mdlanimatedquaternionarray/init(elementcount).md",
@@ -4670,6 +5100,16 @@
       "file_path": "documentation/ModelIO/mdlanimatedquaternionarray/reset(floatquaternionarray,attimes).md",
       "hash": "1f9d6ae3433ce6646615a50c0bfb24e512be9a4c3dd28b29085c81b7c0dc8c47"
     },
+    "https://developer.apple.com/tutorials/data/documentation/modelio/mdlanimatedquaternionarray/resetwithdoublequaternionarray:count:attimes:count:.json": {
+      "etag": "\"2043-65d55d3fd92aa-df\"",
+      "file_path": "documentation/ModelIO/mdlanimatedquaternionarray/resetwithdoublequaternionarray_count_attimes_count_.md",
+      "hash": "f4e6276a0f979e801b000de23f4917a56cfe20b063b8a21fa41b3251b4c8f0cc"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/modelio/mdlanimatedquaternionarray/resetwithfloatquaternionarray:count:attimes:count:.json": {
+      "etag": "\"2037-65d55d3fd92aa-df\"",
+      "file_path": "documentation/ModelIO/mdlanimatedquaternionarray/resetwithfloatquaternionarray_count_attimes_count_.md",
+      "hash": "896f7f7bcc8531da8301bea1f3a39a0515a738b7199b71d66556f8bb3052351d"
+    },
     "https://developer.apple.com/tutorials/data/documentation/modelio/mdlanimatedquaternionarray/set(doublequaternionarray:attime:).json": {
       "etag": "\"1dca-65d55d3fd92aa-df\"",
       "file_path": "documentation/ModelIO/mdlanimatedquaternionarray/set(doublequaternionarray,attime).md",
@@ -4679,6 +5119,16 @@
       "etag": "\"1dbf-65d55d3fd92aa-df\"",
       "file_path": "documentation/ModelIO/mdlanimatedquaternionarray/set(floatquaternionarray,attime).md",
       "hash": "bd89478e58e07b2cd114dbdd365567ce169db9d5f66af99b4b432c0ec06cd72a"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/modelio/mdlanimatedquaternionarray/setdoublequaternionarray:count:attime:.json": {
+      "etag": "\"1e0d-65d55d3fd92aa-df\"",
+      "file_path": "documentation/ModelIO/mdlanimatedquaternionarray/setdoublequaternionarray_count_attime_.md",
+      "hash": "0c159cba6ff3b838dd9e97ca7f96a9b92e2ed1557137f37b3e564804a43a2ea8"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/modelio/mdlanimatedquaternionarray/setfloatquaternionarray:count:attime:.json": {
+      "etag": "\"1e01-65d55d3fd92aa-df\"",
+      "file_path": "documentation/ModelIO/mdlanimatedquaternionarray/setfloatquaternionarray_count_attime_.md",
+      "hash": "9ad7938e38ad77cb98c333724f4726d92e37f1d13a9e497cdef7a7c5e461c830"
     },
     "https://developer.apple.com/tutorials/data/documentation/modelio/mdlanimatedscalar.json": {
       "etag": "\"5cf9-65d55d413a7dc-df\"",
@@ -4705,6 +5155,16 @@
       "file_path": "documentation/ModelIO/mdlanimatedscalar/floatvalue(attime).md",
       "hash": "8f6e73fafe446972cd2c94b51ca10aa4a21e183b075dcfc7cc2faa2abdcc18bd"
     },
+    "https://developer.apple.com/tutorials/data/documentation/modelio/mdlanimatedscalar/getdoublearray:maxcount:.json": {
+      "etag": "\"1497-65d55d40a3c1f-df\"",
+      "file_path": "documentation/ModelIO/mdlanimatedscalar/getdoublearray_maxcount_.md",
+      "hash": "a0e274e6312398438b0382e38d9e461ccae3dc8de8ef7ad738b4d9dedd7a309b"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/modelio/mdlanimatedscalar/getfloatarray:maxcount:.json": {
+      "etag": "\"148a-65d55d40c1030-df\"",
+      "file_path": "documentation/ModelIO/mdlanimatedscalar/getfloatarray_maxcount_.md",
+      "hash": "993fe4ef3eaf31eb1f0b76cb45b5e845a83c26c616cee4c41ccdc3549cfa3b67"
+    },
     "https://developer.apple.com/tutorials/data/documentation/modelio/mdlanimatedscalar/reset(doublearray:attimes:).json": {
       "etag": "\"1c01-65d55d40a3c1f-df\"",
       "file_path": "documentation/ModelIO/mdlanimatedscalar/reset(doublearray,attimes).md",
@@ -4714,6 +5174,16 @@
       "etag": "\"1bf0-65d55d40c1030-df\"",
       "file_path": "documentation/ModelIO/mdlanimatedscalar/reset(floatarray,attimes).md",
       "hash": "4b0e06fa2a2744eb2a9c9ab2ee7c522ac3d2606f27a6fe904c8be82e31b99725"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/modelio/mdlanimatedscalar/resetwithdoublearray:attimes:count:.json": {
+      "etag": "\"1a8a-65d55d40c1030-df\"",
+      "file_path": "documentation/ModelIO/mdlanimatedscalar/resetwithdoublearray_attimes_count_.md",
+      "hash": "4c1ba29582166439513e25a8861c9df6778a6477b333f792908e424399711c1c"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/modelio/mdlanimatedscalar/resetwithfloatarray:attimes:count:.json": {
+      "etag": "\"1a7d-65d55d40c1030-df\"",
+      "file_path": "documentation/ModelIO/mdlanimatedscalar/resetwithfloatarray_attimes_count_.md",
+      "hash": "446334f4ae0f295da65c7fdf2fd934e61c84c20e6159220debb78d7854d00f5e"
     },
     "https://developer.apple.com/tutorials/data/documentation/modelio/mdlanimatedscalar/setdouble(_:attime:).json": {
       "etag": "\"256a-65d55d40c1030-df\"",
@@ -4755,6 +5225,26 @@
       "file_path": "documentation/ModelIO/mdlanimatedscalararray/floatarray.md",
       "hash": "5ffc9602456926e2231da2c8b3c60e9e1d279f150892fe17628eda1888330ea7"
     },
+    "https://developer.apple.com/tutorials/data/documentation/modelio/mdlanimatedscalararray/getdoublearray:maxcount:.json": {
+      "etag": "\"14f6-65d55d407dd6a-df\"",
+      "file_path": "documentation/ModelIO/mdlanimatedscalararray/getdoublearray_maxcount_.md",
+      "hash": "05a422d42e9dc197f961c16c01d981e61e3119a7bd162cd113d3c359f94b0ac4"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/modelio/mdlanimatedscalararray/getdoublearray:maxcount:attime:.json": {
+      "etag": "\"1a9c-65d55d407dd6a-df\"",
+      "file_path": "documentation/ModelIO/mdlanimatedscalararray/getdoublearray_maxcount_attime_.md",
+      "hash": "d410e30adf0f4c12f90a329c13a0dc33acfe91522ee6894ace65467676acfe34"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/modelio/mdlanimatedscalararray/getfloatarray:maxcount:.json": {
+      "etag": "\"14e9-65d55d407dd6a-df\"",
+      "file_path": "documentation/ModelIO/mdlanimatedscalararray/getfloatarray_maxcount_.md",
+      "hash": "7435e6a3d766837eea480b968591d128fe249c5c50f63122b5652d9ec08064f5"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/modelio/mdlanimatedscalararray/getfloatarray:maxcount:attime:.json": {
+      "etag": "\"1a8f-65d55d407dd6a-df\"",
+      "file_path": "documentation/ModelIO/mdlanimatedscalararray/getfloatarray_maxcount_attime_.md",
+      "hash": "8e9c81efe8f4df56a706a59b4d9a5887b05fbbfdfcd03dc99fa27f2d0acedd8e"
+    },
     "https://developer.apple.com/tutorials/data/documentation/modelio/mdlanimatedscalararray/init(elementcount:).json": {
       "etag": "\"1f91-65d55d407dd6a-df\"",
       "file_path": "documentation/ModelIO/mdlanimatedscalararray/init(elementcount).md",
@@ -4770,6 +5260,16 @@
       "file_path": "documentation/ModelIO/mdlanimatedscalararray/reset(floatarray,attimes).md",
       "hash": "bf6377682e531c7b4de985aee4cacc83a7723de0f9cf896c8731a89c5d61b8bb"
     },
+    "https://developer.apple.com/tutorials/data/documentation/modelio/mdlanimatedscalararray/resetwithdoublearray:count:attimes:count:.json": {
+      "etag": "\"1c80-65d55d407dd6a-df\"",
+      "file_path": "documentation/ModelIO/mdlanimatedscalararray/resetwithdoublearray_count_attimes_count_.md",
+      "hash": "a86ead62726699a8b5519d7da5486fe5408e86922b18ef1ac6614532a8ceed8e"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/modelio/mdlanimatedscalararray/resetwithfloatarray:count:attimes:count:.json": {
+      "etag": "\"1c73-65d55d407dd6a-df\"",
+      "file_path": "documentation/ModelIO/mdlanimatedscalararray/resetwithfloatarray_count_attimes_count_.md",
+      "hash": "ff90855646428ff39fc9b9b7783bad5f695d572bb41da96597f7cc8660079639"
+    },
     "https://developer.apple.com/tutorials/data/documentation/modelio/mdlanimatedscalararray/set(doublearray:attime:).json": {
       "etag": "\"1c35-65d55d407dd6a-df\"",
       "file_path": "documentation/ModelIO/mdlanimatedscalararray/set(doublearray,attime).md",
@@ -4780,6 +5280,16 @@
       "file_path": "documentation/ModelIO/mdlanimatedscalararray/set(floatarray,attime).md",
       "hash": "63aea3337f301ed2edf05de6dc859741c9ca4f3b9fd4a82505a8534ef9e009ed"
     },
+    "https://developer.apple.com/tutorials/data/documentation/modelio/mdlanimatedscalararray/setdoublearray:count:attime:.json": {
+      "etag": "\"1a4a-65d55d407dd6a-df\"",
+      "file_path": "documentation/ModelIO/mdlanimatedscalararray/setdoublearray_count_attime_.md",
+      "hash": "7571d68e5f0c8e313cbf42e50de1215f8809d237cb76c0b6896ee7d27dd78847"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/modelio/mdlanimatedscalararray/setfloatarray:count:attime:.json": {
+      "etag": "\"1a3d-65d55d407dd6a-df\"",
+      "file_path": "documentation/ModelIO/mdlanimatedscalararray/setfloatarray_count_attime_.md",
+      "hash": "8aff4ffe6755cb9b059f8c4addada345f91344da92d082f81393beddad38df64"
+    },
     "https://developer.apple.com/tutorials/data/documentation/modelio/mdlanimatedvalue.json": {
       "etag": "\"828e-65d55d41571ff-df\"",
       "file_path": "documentation/ModelIO/mdlanimatedvalue.md",
@@ -4789,6 +5299,11 @@
       "etag": "\"17b8-65d55d413a7dc-df\"",
       "file_path": "documentation/ModelIO/mdlanimatedvalue/clear().md",
       "hash": "1189f5028f908d887e1143dd43f9e9d4cf0b266e4b9bf2c2cc887e2bc69c0b3c"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/modelio/mdlanimatedvalue/gettimes:maxcount:.json": {
+      "etag": "\"18b6-65d55d413a7dc-df\"",
+      "file_path": "documentation/ModelIO/mdlanimatedvalue/gettimes_maxcount_.md",
+      "hash": "f6c9c84b7f0b56017eadbd371b5b797c7aa56ffbaae3d22c949dbd9654dc0e7f"
     },
     "https://developer.apple.com/tutorials/data/documentation/modelio/mdlanimatedvalue/interpolation.json": {
       "etag": "\"1fb0-65d55d413a7dc-df\"",
@@ -4875,6 +5390,16 @@
       "file_path": "documentation/ModelIO/mdlanimatedvector2/float2value(attime).md",
       "hash": "448e326fbb7a9ebc4c5d095330d6f78f48ba6c791ca964fdc95559cdeec2fbd8"
     },
+    "https://developer.apple.com/tutorials/data/documentation/modelio/mdlanimatedvector2/getdouble2array:maxcount:.json": {
+      "etag": "\"17ac-65d55d401efed-df\"",
+      "file_path": "documentation/ModelIO/mdlanimatedvector2/getdouble2array_maxcount_.md",
+      "hash": "7dde4032ef00ab88185345844390e1c79d7d287dc49c9ea3a7a97902cfc72eff"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/modelio/mdlanimatedvector2/getfloat2array:maxcount:.json": {
+      "etag": "\"1795-65d55d401efed-df\"",
+      "file_path": "documentation/ModelIO/mdlanimatedvector2/getfloat2array_maxcount_.md",
+      "hash": "7960e692fa85f8fc766ef7901e40b5749b3eefb737faf741b93b594b83186c85"
+    },
     "https://developer.apple.com/tutorials/data/documentation/modelio/mdlanimatedvector2/reset(double2array:attimes:).json": {
       "etag": "\"1f86-65d55d401efed-df\"",
       "file_path": "documentation/ModelIO/mdlanimatedvector2/reset(double2array,attimes).md",
@@ -4884,6 +5409,16 @@
       "etag": "\"1f71-65d55d401efed-df\"",
       "file_path": "documentation/ModelIO/mdlanimatedvector2/reset(float2array,attimes).md",
       "hash": "9bc5393c23d04df7c675933eef666d3bb478e972602ea63abdc392049cb0997d"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/modelio/mdlanimatedvector2/resetwithdouble2array:attimes:count:.json": {
+      "etag": "\"1d9f-65d55d401efed-df\"",
+      "file_path": "documentation/ModelIO/mdlanimatedvector2/resetwithdouble2array_attimes_count_.md",
+      "hash": "f88d2635430954daf19006eabae09cf70b3987e0c7a3c5d2ed93ff5963331100"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/modelio/mdlanimatedvector2/resetwithfloat2array:attimes:count:.json": {
+      "etag": "\"1d88-65d55d401efed-df\"",
+      "file_path": "documentation/ModelIO/mdlanimatedvector2/resetwithfloat2array_attimes_count_.md",
+      "hash": "1db5ee9d1d8011a22be970d42370bde2198482ef326178381db2ce1c3f7e3192"
     },
     "https://developer.apple.com/tutorials/data/documentation/modelio/mdlanimatedvector2/setdouble2(_:attime:).json": {
       "etag": "\"26de-65d55d401efed-df\"",
@@ -4920,6 +5455,16 @@
       "file_path": "documentation/ModelIO/mdlanimatedvector3/float3value(attime).md",
       "hash": "b73240d3a8d211b43c610f547c18e80c22a0b4c2eb3dc005805c4686ca908992"
     },
+    "https://developer.apple.com/tutorials/data/documentation/modelio/mdlanimatedvector3/getdouble3array:maxcount:.json": {
+      "etag": "\"17ac-65d55d405cceb-df\"",
+      "file_path": "documentation/ModelIO/mdlanimatedvector3/getdouble3array_maxcount_.md",
+      "hash": "aa1d49c31f7d74df86d9bf15a4b8a35e89c1810521178805daaa6a12f4d1eb4d"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/modelio/mdlanimatedvector3/getfloat3array:maxcount:.json": {
+      "etag": "\"17f0-65d55d405cceb-df\"",
+      "file_path": "documentation/ModelIO/mdlanimatedvector3/getfloat3array_maxcount_.md",
+      "hash": "9e714ac60a2bbf4472ac29669b84704c9caa46f7168749330ba03bf07a8021fa"
+    },
     "https://developer.apple.com/tutorials/data/documentation/modelio/mdlanimatedvector3/reset(double3array:attimes:).json": {
       "etag": "\"1f88-65d55d405cceb-df\"",
       "file_path": "documentation/ModelIO/mdlanimatedvector3/reset(double3array,attimes).md",
@@ -4929,6 +5474,16 @@
       "etag": "\"1f73-65d55d405cceb-df\"",
       "file_path": "documentation/ModelIO/mdlanimatedvector3/reset(float3array,attimes).md",
       "hash": "06e68471fd7a73455e9e8e6060ce0fb0d604faf0e3afac0b8453e74ddd5d5065"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/modelio/mdlanimatedvector3/resetwithdouble3array:attimes:count:.json": {
+      "etag": "\"1d9f-65d55d405cceb-df\"",
+      "file_path": "documentation/ModelIO/mdlanimatedvector3/resetwithdouble3array_attimes_count_.md",
+      "hash": "8f464c40507df45395332bfe07cbe5f04f8a20476ece83889e2eec3aca5b7e1b"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/modelio/mdlanimatedvector3/resetwithfloat3array:attimes:count:.json": {
+      "etag": "\"1de3-65d55d405cceb-df\"",
+      "file_path": "documentation/ModelIO/mdlanimatedvector3/resetwithfloat3array_attimes_count_.md",
+      "hash": "d56ef146a7ac727ebe6aeace584026ec17a321b5172be7fd4097cfd0c9ab528c"
     },
     "https://developer.apple.com/tutorials/data/documentation/modelio/mdlanimatedvector3/setdouble3(_:attime:).json": {
       "etag": "\"26de-65d55d405cceb-df\"",
@@ -4970,6 +5525,26 @@
       "file_path": "documentation/ModelIO/mdlanimatedvector3array/float3array.md",
       "hash": "4d162054bd703b7a27be26225b80e958635c54acfd677e3c834ceecf1c712846"
     },
+    "https://developer.apple.com/tutorials/data/documentation/modelio/mdlanimatedvector3array/getdouble3array:maxcount:.json": {
+      "etag": "\"180b-65d55d403e211-df\"",
+      "file_path": "documentation/ModelIO/mdlanimatedvector3array/getdouble3array_maxcount_.md",
+      "hash": "4eda94b72741bd91430789009eec8fc38bab19eaa6d1a6cec925e0c56f485a70"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/modelio/mdlanimatedvector3array/getdouble3array:maxcount:attime:.json": {
+      "etag": "\"1db1-65d55d403e211-df\"",
+      "file_path": "documentation/ModelIO/mdlanimatedvector3array/getdouble3array_maxcount_attime_.md",
+      "hash": "a123af22fd5135ec4c980f7e40d8e3b4888cfda87ece5cdd202dfa54c8bb2480"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/modelio/mdlanimatedvector3array/getfloat3array:maxcount:.json": {
+      "etag": "\"184f-65d55d403e211-df\"",
+      "file_path": "documentation/ModelIO/mdlanimatedvector3array/getfloat3array_maxcount_.md",
+      "hash": "acb00fa8f8fcd9b90e35fccf7508ca3d71ef630e9a8f6024fea4744fed1a3ece"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/modelio/mdlanimatedvector3array/getfloat3array:maxcount:attime:.json": {
+      "etag": "\"1df5-65d55d403e211-df\"",
+      "file_path": "documentation/ModelIO/mdlanimatedvector3array/getfloat3array_maxcount_attime_.md",
+      "hash": "3fb6f0fc6b5ee11005419f7e548eade5a4abd227c884adad7a640bce64a45c99"
+    },
     "https://developer.apple.com/tutorials/data/documentation/modelio/mdlanimatedvector3array/init(elementcount:).json": {
       "etag": "\"1fa8-65d55d403e211-df\"",
       "file_path": "documentation/ModelIO/mdlanimatedvector3array/init(elementcount).md",
@@ -4985,6 +5560,16 @@
       "file_path": "documentation/ModelIO/mdlanimatedvector3array/reset(float3array,attimes).md",
       "hash": "beaf87c1382a016df048c3b485ccfbfb1511592f77321c992c43817cf4482d7f"
     },
+    "https://developer.apple.com/tutorials/data/documentation/modelio/mdlanimatedvector3array/resetwithdouble3array:count:attimes:count:.json": {
+      "etag": "\"1f95-65d55d403e211-df\"",
+      "file_path": "documentation/ModelIO/mdlanimatedvector3array/resetwithdouble3array_count_attimes_count_.md",
+      "hash": "98180969804c9d34b9d64a07700fe34fab3ce15a20906735f81c27c58678f5f7"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/modelio/mdlanimatedvector3array/resetwithfloat3array:count:attimes:count:.json": {
+      "etag": "\"1fd9-65d55d403e211-df\"",
+      "file_path": "documentation/ModelIO/mdlanimatedvector3array/resetwithfloat3array_count_attimes_count_.md",
+      "hash": "a9f76b3525bbb21e5f1f6753f0e9f3ed35130637f4c9e28c3d3b8bb37bc49b85"
+    },
     "https://developer.apple.com/tutorials/data/documentation/modelio/mdlanimatedvector3array/set(double3array:attime:).json": {
       "etag": "\"1fb8-65d55d403e211-df\"",
       "file_path": "documentation/ModelIO/mdlanimatedvector3array/set(double3array,attime).md",
@@ -4994,6 +5579,16 @@
       "etag": "\"1fa3-65d55d403e211-df\"",
       "file_path": "documentation/ModelIO/mdlanimatedvector3array/set(float3array,attime).md",
       "hash": "bf1fbbd9e9815eb78542cfd983fd4d86eb927000dc238f0cb92bb6777c1e0267"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/modelio/mdlanimatedvector3array/setdouble3array:count:attime:.json": {
+      "etag": "\"1d5f-65d55d403e211-df\"",
+      "file_path": "documentation/ModelIO/mdlanimatedvector3array/setdouble3array_count_attime_.md",
+      "hash": "c7e0a496637acba34a7b071f98ef3d373abeefc2d7e000886933a7196e58b868"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/modelio/mdlanimatedvector3array/setfloat3array:count:attime:.json": {
+      "etag": "\"1da3-65d55d403e211-df\"",
+      "file_path": "documentation/ModelIO/mdlanimatedvector3array/setfloat3array_count_attime_.md",
+      "hash": "2ca18967a97bb5a6c9e4d9f1ce9b7940319ad15ffebea3d240244f99df43edfb"
     },
     "https://developer.apple.com/tutorials/data/documentation/modelio/mdlanimatedvector4.json": {
       "etag": "\"5f9f-65d55d413a7dc-df\"",
@@ -5020,6 +5615,16 @@
       "file_path": "documentation/ModelIO/mdlanimatedvector4/float4value(attime).md",
       "hash": "0961827108611d274e89babb17e915f1d96b18c6c969d074c61cebe14df69309"
     },
+    "https://developer.apple.com/tutorials/data/documentation/modelio/mdlanimatedvector4/getdouble4array:maxcount:.json": {
+      "etag": "\"17ac-65d55d405cceb-df\"",
+      "file_path": "documentation/ModelIO/mdlanimatedvector4/getdouble4array_maxcount_.md",
+      "hash": "d6913cd182c3403b2226828fd2ab50eee8f73ab7ca57d47619198a409fe9b77e"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/modelio/mdlanimatedvector4/getfloat4array:maxcount:.json": {
+      "etag": "\"1795-65d55d405cceb-df\"",
+      "file_path": "documentation/ModelIO/mdlanimatedvector4/getfloat4array_maxcount_.md",
+      "hash": "d328fb40003a5a970ea4ac2c16d103c2e0b1ab931fe745eefdc86f3748f9583d"
+    },
     "https://developer.apple.com/tutorials/data/documentation/modelio/mdlanimatedvector4/reset(double4array:attimes:).json": {
       "etag": "\"1f87-65d55d405cceb-df\"",
       "file_path": "documentation/ModelIO/mdlanimatedvector4/reset(double4array,attimes).md",
@@ -5029,6 +5634,16 @@
       "etag": "\"1f72-65d55d405cceb-df\"",
       "file_path": "documentation/ModelIO/mdlanimatedvector4/reset(float4array,attimes).md",
       "hash": "6ac3c593fd411f1468150a6b32b2104cd533b9376165ef6ef40ecb87dacc90e0"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/modelio/mdlanimatedvector4/resetwithdouble4array:attimes:count:.json": {
+      "etag": "\"1d9f-65d55d405cceb-df\"",
+      "file_path": "documentation/ModelIO/mdlanimatedvector4/resetwithdouble4array_attimes_count_.md",
+      "hash": "6ff22008bfe91bb0279d45d5898fe5b674d1509a2ddf7e8de476c5df9118091e"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/modelio/mdlanimatedvector4/resetwithfloat4array:attimes:count:.json": {
+      "etag": "\"1d88-65d55d405cceb-df\"",
+      "file_path": "documentation/ModelIO/mdlanimatedvector4/resetwithfloat4array_attimes_count_.md",
+      "hash": "4c0253b72114448c38404b9d3b7b384bd5c47dff7630be47b3c5e7460ae7176c"
     },
     "https://developer.apple.com/tutorials/data/documentation/modelio/mdlanimatedvector4/setdouble4(_:attime:).json": {
       "etag": "\"26de-65d55d405cceb-df\"",
@@ -5100,6 +5715,16 @@
       "file_path": "documentation/ModelIO/mdlasset/animations.md",
       "hash": "57b371ed3c31992ef0954007181046edd92026a04c3df2bfe88e5be717c07df9"
     },
+    "https://developer.apple.com/tutorials/data/documentation/modelio/mdlasset/assetwithscnscene:.json": {
+      "etag": "\"13f3-65d55d4205e9d-df\"",
+      "file_path": "documentation/ModelIO/mdlasset/assetwithscnscene_.md",
+      "hash": "e2ad3efbc631ed0407ba701fb026d415eeb125d283778909cbc0afb0c2d80b4e"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/modelio/mdlasset/assetwithscnscene:bufferallocator:.json": {
+      "etag": "\"15d1-65d55d4205e9d-df\"",
+      "file_path": "documentation/ModelIO/mdlasset/assetwithscnscene_bufferallocator_.md",
+      "hash": "7ec1c5837a27be5311fb72aa07768f92a142da3a047b1544b1028021ad6f350f"
+    },
     "https://developer.apple.com/tutorials/data/documentation/modelio/mdlasset/boundingbox(attime:).json": {
       "etag": "\"6a9e-65d55d4205e9d-df\"",
       "file_path": "documentation/ModelIO/mdlasset/boundingbox(attime).md",
@@ -5144,6 +5769,11 @@
       "etag": "\"3f31-65d55d41f4ffb-df\"",
       "file_path": "documentation/ModelIO/mdlasset/export(to).md",
       "hash": "90729a6eda1e16c5836c2607cd94e0a4cdd09c5555a37e95506586649bba9038"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/modelio/mdlasset/exportassettourl:.json": {
+      "etag": "\"31a4-65d55d4205e9d-df\"",
+      "file_path": "documentation/ModelIO/mdlasset/exportassettourl_.md",
+      "hash": "b2be15ff2f47065e0149e20929fc71450a0979b7a0ce226330fb3df7ecc44d80"
     },
     "https://developer.apple.com/tutorials/data/documentation/modelio/mdlasset/frameinterval.json": {
       "etag": "\"2b1c-65d55d41f4ffb-df\"",
@@ -5324,6 +5954,11 @@
       "etag": "\"5f70-65d55d40e4292-df\"",
       "file_path": "documentation/ModelIO/mdlcamera/bokehkernel(withsize).md",
       "hash": "68e6a8c0c3beeac04ee49999686e710eff6f8e5b343a6201eab28a2f1f82015c"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/modelio/mdlcamera/camerawithscncamera:.json": {
+      "etag": "\"1433-65d55d410447f-df\"",
+      "file_path": "documentation/ModelIO/mdlcamera/camerawithscncamera_.md",
+      "hash": "8be36ef01f9c28568b77b5bf348439b65c61499b32d76afe424aa9586bd330df"
     },
     "https://developer.apple.com/tutorials/data/documentation/modelio/mdlcamera/chromaticaberration.json": {
       "etag": "\"528e-65d55d40e4292-df\"",
@@ -5660,6 +6295,11 @@
       "file_path": "documentation/ModelIO/mdllight/lighttype.md",
       "hash": "75fc20abf663b274581a7f48570c6f59b25d7577ff57862d8252cd5a150282bd"
     },
+    "https://developer.apple.com/tutorials/data/documentation/modelio/mdllight/lightwithscnlight:.json": {
+      "etag": "\"13a6-65d55d3fb496f-df\"",
+      "file_path": "documentation/ModelIO/mdllight/lightwithscnlight_.md",
+      "hash": "35877ea715b3ef8cdfbcb23daef866334823ff3151b3a55e9b24ef625eb3db73"
+    },
     "https://developer.apple.com/tutorials/data/documentation/modelio/mdllightprobe.json": {
       "etag": "\"8a94-65d55d407dd6a-df\"",
       "file_path": "documentation/ModelIO/mdllightprobe.md",
@@ -5819,6 +6459,11 @@
       "etag": "\"29f3-65d55d3ffdbc4-df\"",
       "file_path": "documentation/ModelIO/mdlmaterial/materialface.md",
       "hash": "9a4e304ca18f38afd16d8aca20819852585c726f5150b493d274898f6984e54d"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/modelio/mdlmaterial/materialwithscnmaterial:.json": {
+      "etag": "\"148e-65d55d3ffdbc4-df\"",
+      "file_path": "documentation/ModelIO/mdlmaterial/materialwithscnmaterial_.md",
+      "hash": "fffb86a46d5b4e5d7b1911fbc99b74edce05cbc4e9885fc6d25c77310e8def7c"
     },
     "https://developer.apple.com/tutorials/data/documentation/modelio/mdlmaterial/name.json": {
       "etag": "\"27ae-65d55d3ffdbc4-df\"",
@@ -6395,6 +7040,16 @@
       "file_path": "documentation/ModelIO/mdlmatrix4x4array/float4x4array.md",
       "hash": "f8f1d4d8cd7e06b6752f23b3bd12de7600870e7d843897b75b8fca6a63ce3aca"
     },
+    "https://developer.apple.com/tutorials/data/documentation/modelio/mdlmatrix4x4array/getdouble4x4array:maxcount:.json": {
+      "etag": "\"1811-65d55d413a7dc-df\"",
+      "file_path": "documentation/ModelIO/mdlmatrix4x4array/getdouble4x4array_maxcount_.md",
+      "hash": "a46402fb92f8e27ba89031296822e7c81752598d235d75b2292408f40dc42204"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/modelio/mdlmatrix4x4array/getfloat4x4array:maxcount:.json": {
+      "etag": "\"17fa-65d55d413a7dc-df\"",
+      "file_path": "documentation/ModelIO/mdlmatrix4x4array/getfloat4x4array_maxcount_.md",
+      "hash": "e668e07624b3f53108ce3d6583451b3a4f9e9fb8a21f1b1daa68413021062760"
+    },
     "https://developer.apple.com/tutorials/data/documentation/modelio/mdlmatrix4x4array/init(elementcount:).json": {
       "etag": "\"1f28-65d55d413a7dc-df\"",
       "file_path": "documentation/ModelIO/mdlmatrix4x4array/init(elementcount).md",
@@ -6404,6 +7059,16 @@
       "etag": "\"1e5b-65d55d413a7dc-df\"",
       "file_path": "documentation/ModelIO/mdlmatrix4x4array/precision.md",
       "hash": "925876b8234a6bc41577f0ef69ccf8c7c6796323d77eb41e138359b4a4479dc6"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/modelio/mdlmatrix4x4array/setdouble4x4array:count:.json": {
+      "etag": "\"17bf-65d55d413a7dc-df\"",
+      "file_path": "documentation/ModelIO/mdlmatrix4x4array/setdouble4x4array_count_.md",
+      "hash": "bcd76074a16edc72e19d718423b1668925297371f31dc9b54bff432c206ef12c"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/modelio/mdlmatrix4x4array/setfloat4x4array:count:.json": {
+      "etag": "\"17a8-65d55d413a7dc-df\"",
+      "file_path": "documentation/ModelIO/mdlmatrix4x4array/setfloat4x4array_count_.md",
+      "hash": "2594c6c2b1aebf73d7918e44cca8331cc9d8ecc672a0e2adaa38f59817b2b6c4"
     },
     "https://developer.apple.com/tutorials/data/documentation/modelio/mdlmesh.json": {
       "etag": "\"215b4-65d55d3fb496f-df\"",
@@ -6569,6 +7234,16 @@
       "etag": "\"1cc4-65d55d40e4292-df\"",
       "file_path": "documentation/ModelIO/mdlmesh/makeverticesuniqueandreturnerror().md",
       "hash": "41bf98926feee96deb4265627075577a2869b112c522432322b2aed78e11232a"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/modelio/mdlmesh/meshwithscngeometry:.json": {
+      "etag": "\"1412-65d55d40c1030-df\"",
+      "file_path": "documentation/ModelIO/mdlmesh/meshwithscngeometry_.md",
+      "hash": "936c379a016d4e45e5665d7ee1b50f921ffbe02af726b3f05b5e1daecb53f44d"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/modelio/mdlmesh/meshwithscngeometry:bufferallocator:.json": {
+      "etag": "\"15f0-65d55d40c1030-df\"",
+      "file_path": "documentation/ModelIO/mdlmesh/meshwithscngeometry_bufferallocator_.md",
+      "hash": "53bf44664d49d4847d3d9a707cce7d1920d88021f72618eb172dfb16866e9ec1"
     },
     "https://developer.apple.com/tutorials/data/documentation/modelio/mdlmesh/newbox(withdimensions:segments:geometrytype:inwardnormals:allocator:).json": {
       "etag": "\"10b0f-65d55d40e4292-df\"",
@@ -6920,6 +7595,16 @@
       "file_path": "documentation/ModelIO/mdlobject/instance.md",
       "hash": "bea152df99aa878f2ec14d75a1649b2d1c0165536d6fb65b901958d1c4b7855f"
     },
+    "https://developer.apple.com/tutorials/data/documentation/modelio/mdlobject/objectwithscnnode:.json": {
+      "etag": "\"1431-65d55d419847b-df\"",
+      "file_path": "documentation/ModelIO/mdlobject/objectwithscnnode_.md",
+      "hash": "71b0e88456bfcbd1a88731e866dc6bfa29d0aebebd092c6e5cef7c402f1e0638"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/modelio/mdlobject/objectwithscnnode:bufferallocator:.json": {
+      "etag": "\"160f-65d55d419847b-df\"",
+      "file_path": "documentation/ModelIO/mdlobject/objectwithscnnode_bufferallocator_.md",
+      "hash": "bd745890fb32a44f21bd3f3dd64f0c3d5ea8fcc693af4daa373ff3eb34068e35"
+    },
     "https://developer.apple.com/tutorials/data/documentation/modelio/mdlobject/parent.json": {
       "etag": "\"42d8-65d55d419847b-df\"",
       "file_path": "documentation/ModelIO/mdlobject/parent.md",
@@ -6934,6 +7619,11 @@
       "etag": "\"4512-65d55d419847b-df\"",
       "file_path": "documentation/ModelIO/mdlobject/setcomponent(_,for).md",
       "hash": "8a698d845b69861ca3c849df65a239dbcc5eb1276ce4d2942c3921961ee6644b"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/modelio/mdlobject/setobject:forkeyedsubscript:.json": {
+      "etag": "\"2879-65d55d419847b-df\"",
+      "file_path": "documentation/ModelIO/mdlobject/setobject_forkeyedsubscript_.md",
+      "hash": "da3e2750eb45cc51a6f147f8ca441e56c59bfe3a2322e01429ecba29524f98e0"
     },
     "https://developer.apple.com/tutorials/data/documentation/modelio/mdlobject/subscript(_:).json": {
       "etag": "\"35ae-65d55d419847b-df\"",
@@ -7479,6 +8169,16 @@
       "etag": "\"1da2-65d55d41b1c3e-df\"",
       "file_path": "documentation/ModelIO/mdlsubmesh/name.md",
       "hash": "003ed669d4036cdf65f99ca32a0ee41d847fde8ebbe6eeeab4d44de2d0ce475d"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/modelio/mdlsubmesh/submeshwithscngeometryelement:.json": {
+      "etag": "\"151e-65d55d41b1c3e-df\"",
+      "file_path": "documentation/ModelIO/mdlsubmesh/submeshwithscngeometryelement_.md",
+      "hash": "d8fb4bd3176b3007826382680cd45dbe60c7da0f6d76a40234fb0965d4ecc4a7"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/modelio/mdlsubmesh/submeshwithscngeometryelement:bufferallocator:.json": {
+      "etag": "\"16fc-65d55d41b1c3e-df\"",
+      "file_path": "documentation/ModelIO/mdlsubmesh/submeshwithscngeometryelement_bufferallocator_.md",
+      "hash": "1424b3b79d5154867f987f9a8a77c0667d3956f64eeb1b62a4743a23a7e1527e"
     },
     "https://developer.apple.com/tutorials/data/documentation/modelio/mdlsubmesh/topology.json": {
       "etag": "\"4321-65d55d41b1c3e-df\"",
@@ -8993,8 +9693,8 @@
   },
   "metadata": {
     "render": {
-      "version": 1
+      "version": 2
     },
-    "total_pages": 1798
+    "total_pages": 1938
   }
 }

@@ -20,6 +20,12 @@ Manage the storyboards and nib files containing your app’s user interface, and
 ### Nib Files
 - [class NSNib](./nsnib.md)
   An object wrapper, or container, for an Interface Builder nib file.
+- [NSNibConnector](./nsnibconnector.md)
+  A connection between two nibs.
+- [NSNibControlConnector](./nsnibcontrolconnector.md)
+  A control connection between two Interface Builder objects.
+- [NSNibOutletConnector](./nsniboutletconnector.md)
+  An outlet connection between Interface Builder objects.
 
 ## See Also
 

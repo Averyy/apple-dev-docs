@@ -28,6 +28,8 @@ init?(coder: NSCoder)
 ### Creating a list content view
 - [convenience init(configuration: UIListContentConfiguration)](./init%28configuration%29.md)
   Creates a list content view with the specified content configuration.
+- [- initWithConfiguration:](./initwithconfiguration_.md)
+  Creates a list content view with the specified content configuration.
 
 
 ---

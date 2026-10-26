@@ -26,6 +26,8 @@ MLCRandomInitializerTypeXavier
 ### Enumeration Cases
 - [MLCRandomInitializerType.uniform](./uniform.md)
 - [MLCRandomInitializerType.glorotUniform](./glorotuniform.md)
+- [MLCRandomInitializerTypeInvalid](./mlcrandominitializertypeinvalid.md)
+- [MLCRandomInitializerTypeCount](./mlcrandominitializertypecount.md)
 
 
 ---

@@ -24,6 +24,7 @@ func processDoorbell(_ doorbell: IOUSBHostCIDoorbell) throws
 - [func enqueueTransferCompletion(for: UnsafePointer<IOUSBHostCIMessage>, status: IOUSBHostCIMessageStatus, transferLength: Int) throws](./enqueuetransfercompletion%28for,status,transferlength%29.md)
 - [func inspectCommand(UnsafePointer<IOUSBHostCIMessage>) throws](./inspectcommand%28_%29.md)
 - [func respond(toCommand: UnsafePointer<IOUSBHostCIMessage>, status: IOUSBHostCIMessageStatus) throws](./respond%28tocommand,status%29.md)
+- [- initWithInterface:command:error:](./initwithinterface_command_error_.md)
 
 
 ---

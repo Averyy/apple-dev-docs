@@ -45,6 +45,10 @@ A service attribute contains two components: an attribute ID and a data element.
   Creates a new service attribute with the given ID and data element.
 - [class func withID(BluetoothSDPServiceAttributeID, attributeElementValue: NSObject!) -> Self!](./iobluetoothsdpserviceattribute/withid%28_,attributeelementvalue%29.md)
   Creates a new service attribute with the given ID and element value.
+### Instance Variables
+- [mAttributeDataElement](./iobluetoothsdpserviceattribute/mattributedataelement.md)
+- [mAttributeID](./iobluetoothsdpserviceattribute/mattributeid.md)
+- [mAttributeIDDataElement](./iobluetoothsdpserviceattribute/mattributeiddataelement.md)
 
 ## Relationships
 

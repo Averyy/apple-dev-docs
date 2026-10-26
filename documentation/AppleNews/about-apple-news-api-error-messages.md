@@ -106,13 +106,13 @@ In the test article example, to find the problematic component, you would follow
 ## See Also
 
 ### Errors
-- [object Warning](https://developer.apple.com/documentation/applenewsapi/warning)
+- [object Warning](../AppleNewsAPI/warning.md)
   See the properties of a warning the Apple News API returned.
-- [object Error](https://developer.apple.com/documentation/applenewsapi/error)
+- [object Error](../AppleNewsAPI/error.md)
   See the properties of an error the Apple News API returned.
-- [type Code](https://developer.apple.com/documentation/applenewsapi/code)
+- [type Code](../AppleNewsAPI/code.md)
   See the error codes the Apple News API returned.
-- [type Status](https://developer.apple.com/documentation/applenewsapi/status)
+- [type Status](../AppleNewsAPI/status.md)
   See the HTTP status codes the Apple News API returned.
 
 

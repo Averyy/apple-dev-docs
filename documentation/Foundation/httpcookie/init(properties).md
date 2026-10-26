@@ -44,6 +44,9 @@ See Accepting cookies for more information on the available cookie attribute con
 ### Creating cookies
 - [class func cookies(withResponseHeaderFields: [String : String], for: URL) -> [HTTPCookie]](./cookies%28withresponseheaderfields,for%29.md)
   Creates an array of HTTP cookies that corresponds to the provided response header fields for the provided URL.
+### Related Documentation
+- [+ cookieWithProperties:](../nshttpcookie/cookiewithproperties_.md)
+  Creates and initializes an HTTP cookie object using the provided properties.
 
 
 ---

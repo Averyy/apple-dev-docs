@@ -44,6 +44,12 @@ When you call this method from [`layoutSubviews()`](./layoutsubviews%28%29.md), 
   A configuration that defines how corner radii are mapped to the corners of a rectangle.
 - [struct UICornerRadius](../uicornerradius-swift.struct.md)
   A type that represents the radius the system uses to round a corner.
+- [cornerConfiguration](./cornerconfiguration-3m8ya.md)
+  A configuration that defines the corners of the view.
+- [UICornerConfiguration](../uicornerconfiguration-c.class.md)
+  A configuration that defines how corner radii are mapped to the corners of a rectangle.
+- [UICornerRadius](../uicornerradius-c.class.md)
+  A type that represents the radius the system uses to round a corner.
 
 
 ---

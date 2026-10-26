@@ -27,6 +27,8 @@ ARPlaneDetectionVertical
   The session detects planar surfaces that are perpendicular to gravity.
 - [static var horizontal: ARWorldTrackingConfiguration.PlaneDetection](./horizontal.md)
   The session detects planar surfaces that are perpendicular to gravity.
+- [ARPlaneDetectionNone](../../arplanedetection/arplanedetectionnone.md)
+  Plane detection is disabled.
 
 
 ---

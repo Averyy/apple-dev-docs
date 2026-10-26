@@ -106,6 +106,10 @@ CarPlay doesn’t support custom list item types. Instead, use the `userInfo` pr
   A selectable row in a list template.
 - [class CPMessageListItem](./cpmessagelistitem.md)
   A list template row that represents a conversation or contact.
+- [- initWithItems:](./cplistsection/initwithitems_.md)
+  Creates a section with list items.
+- [- initWithItems:header:sectionIndexTitle:](./cplistsection/initwithitems_header_sectionindextitle_.md)
+  Creates a section with list items, a header, and a section index title.
 
 
 ---

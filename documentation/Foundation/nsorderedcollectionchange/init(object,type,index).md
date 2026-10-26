@@ -36,6 +36,10 @@ convenience init(object anObject: Any?, type: NSCollectionChangeType, index: Int
 ### Creating a Change
 - [init(object: Any?, type: NSCollectionChangeType, index: Int, associatedIndex: Int)](./init%28object,type,index,associatedindex%29.md)
   Creates a change object that represents inserting, removing, or moving an object from an ordered collection at a specific index.
+- [+ changeWithObject:type:index:](./changewithobject_type_index_.md)
+  Creates an change object that represents inserting or removing an object from an ordered collection at a specific index.
+- [+ changeWithObject:type:index:associatedIndex:](./changewithobject_type_index_associatedindex_.md)
+  Creates an change object that represents inserting or removing an object from an ordered collection at a specific index, matched with an associated location that infers a move within the collection.
 
 
 ---

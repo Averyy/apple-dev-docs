@@ -38,6 +38,10 @@ The [`tearDown()`](./teardown%28%29.md) class method is called exactly once for 
   Registers a block of teardown code to run after the current test method ends.
 - [func addTeardownBlock(() throws -> Void)](./addteardownblock%28_%29-5zw6c.md)
   Registers a block of teardown code to run after the current test method ends.
+- [- addAsyncTeardownBlock:](./addasyncteardownblock_.md)
+  Registers a block of asynchronous teardown code to run after the current test method ends.
+- [- addTeardownBlock:](./addteardownblock_.md)
+  Registers a block of teardown code to run after the current test method ends.
 
 
 ---

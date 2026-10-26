@@ -37,6 +37,8 @@ See [Generating a remote notification](../../../UserNotifications/generating-a-r
   The key that identifies the localized string for the notification’s subtitle.
 - [var subtitleLocalizationArgs: [CKRecord.FieldKey]?](./subtitlelocalizationargs.md)
   The fields for building a notification’s subtitle.
+- [subtitleLocalizationArgs](../../cknotificationinfo/subtitlelocalizationargs.md)
+  The fields for building a notification’s subtitle.
 
 
 ---

@@ -44,6 +44,8 @@ After the local player signs in, their account data and GameKit features are ava
 ### Accessing the Local Player
 - [class var local: GKLocalPlayer](./gklocalplayer/local-oaa8.md)
   The shared instance of the local player.
+- [local](./gklocalplayer/local-1mzi0.md)
+  The shared instance of the local player.
 ### Authenticating the Local Player
 - [var authenticateHandler: ((UIViewController?, (any Error)?) -> Void)?](./gklocalplayer/authenticatehandler.md)
   A handler that GameKit calls while initializing the local player.
@@ -53,6 +55,8 @@ After the local player signs in, their account data and GameKit features are ava
   Generates a signature that you can use to authenticate the local player on your own server.
 - [static let GKPlayerAuthenticationDidChangeNotificationName: NSNotification.Name](../Foundation/nsnotification/name-swift.struct/gkplayerauthenticationdidchangenotificationname.md)
   A notification that posts after GameKit authenticates the local player.
+- [GKPlayerAuthenticationDidChangeNotificationName](./gkplayerauthenticationdidchangenotificationname.md)
+  A notification that posts after GameKit initializes the local player.
 ### Determining Whether the Player Is Underage or Restricted
 - [var isUnderage: Bool](./gklocalplayer/isunderage.md)
   A Boolean value that indicates whether the local player is underage.
@@ -147,6 +151,10 @@ After the local player signs in, their account data and GameKit features are ava
 - [static let GKPlayerAuthenticationDidChangeNotificationName: NSNotification.Name](../Foundation/nsnotification/name-swift.struct/gkplayerauthenticationdidchangenotificationname.md)
   A notification that posts after GameKit authenticates the local player.
 - [static let GKPlayerDidChangeNotificationName: NSNotification.Name](../Foundation/nsnotification/name-swift.struct/gkplayerdidchangenotificationname.md)
+  A notification that posts when a player object’s data changes.
+- [GKPlayerAuthenticationDidChangeNotificationName](./gkplayerauthenticationdidchangenotificationname.md)
+  A notification that posts after GameKit initializes the local player.
+- [GKPlayerDidChangeNotificationName](./gkplayerdidchangenotificationname.md)
   A notification that posts when a player object’s data changes.
 
 

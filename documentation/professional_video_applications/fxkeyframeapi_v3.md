@@ -57,13 +57,13 @@ These methods allow you to get keyframe information about any parameter your plu
 ## See Also
 
 ### Time and analysis
-- [Understanding time in FxPlug](https://developer.apple.com/documentation/professional-video-applications/understanding-time-in-fxplug)
+- [Understanding time in FxPlug](../Professional-Video-Applications/understanding-time-in-fxplug.md)
   Learn about time handling in host apps and plug-ins.
-- [Scheduling media in plug-ins](https://developer.apple.com/documentation/professional-video-applications/scheduling-media-in-plug-ins)
+- [Scheduling media in plug-ins](../Professional-Video-Applications/scheduling-media-in-plug-ins.md)
   Use the scheduling APIs in FxPlug to retrieve frames from different times.
 - [protocol FxTimingAPI_v4](./fxtimingapi_v4.md)
   A protocol that defines the methods provided by the host, so that a plug-in can query the timing properties of its input.
-- [Analyzing media](https://developer.apple.com/documentation/professional-video-applications/analyzing-media)
+- [Analyzing media](../Professional-Video-Applications/analyzing-media.md)
   Use the FxPlug analysis API to analyze frames of source media before rendering them.
 - [protocol FxAnalysisAPI](./fxanalysisapi.md)
   A protocol that host applications implement to provide information to plug-ins that support the FxAnalyzer protocol.

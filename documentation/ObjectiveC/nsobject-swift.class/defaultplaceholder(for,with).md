@@ -30,6 +30,8 @@ The `marker` can be `nil` or one of the constants described in [Selection Marker
   Sets `placeholder` as the default placeholder for the `binding`, when a key value coding compliant property of an instance of the receiving class returns the value specified by `marker`, and no other placeholder has been specified.
 - [class func useStoredAccessor() -> Bool](./usestoredaccessor%28%29.md)
   Returns `true` if the stored value methods [`storedValue(forKey:)`](./storedvalue%28forkey%29.md) and [`takeStoredValue(_:forKey:)`](./takestoredvalue%28_,forkey%29.md) should use private accessor methods in preference to public accessors.
+- [+ setKeys:triggerChangeNotificationsForDependentKey:](./setkeys_triggerchangenotificationsfordependentkey_.md)
+  Configures the observed object to post change notifications for a given property if any of the properties specified in a given array changes.
 
 
 ---

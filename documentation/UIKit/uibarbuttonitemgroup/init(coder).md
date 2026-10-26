@@ -34,6 +34,12 @@ init?(coder: NSCoder)
   Creates an optional group that a person can move, add to, or remove from the navigation bar during layout customization.
 - [init(barButtonItems: [UIBarButtonItem], representativeItem: UIBarButtonItem?)](./init%28barbuttonitems,representativeitem%29.md)
   Creates a fixed group with the specified items.
+- [+ fixedGroupWithRepresentativeItem:items:](./fixedgroupwithrepresentativeitem_items_.md)
+  Creates a fixed group that a person can’t move or remove from the navigation bar during layout customization.
+- [+ movableGroupWithCustomizationIdentifier:representativeItem:items:](./movablegroupwithcustomizationidentifier_representativeitem_items_.md)
+  Creates a movable group that a person can move but can’t remove from the navigation bar during layout customization.
+- [+ optionalGroupWithCustomizationIdentifier:inDefaultCustomization:representativeItem:items:](./optionalgroupwithcustomizationidentifier_indefaultcustomization_representativeitem_items_.md)
+  Creates an optional group that a person can move, add to, or remove from the navigation bar during layout customization.
 
 
 ---

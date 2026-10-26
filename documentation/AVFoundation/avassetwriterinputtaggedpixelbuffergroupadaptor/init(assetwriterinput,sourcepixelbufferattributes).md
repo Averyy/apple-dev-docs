@@ -38,6 +38,12 @@ Pixel buffer attributes keys for the pixel buffer pool are defined in `<CoreVide
   It’s an error to initialize an adaptor with an asset writer input that is already attached to another instance of tagged pixel buffer group adaptor, or to one th that progresses beyond its [`AVAssetWriter.Status.unknown`](../avassetwriter/status-swift.enum/unknown.md) state.
 - `sourcePixelBufferAttributes`: Specifies the attributes of pixel buffers that the adaptor’s pixel buffer pool vends. If your app doesn’t require a pixel buffer pool, this this value to `nil`.
 
+## See Also
+
+### Creating an adaptor
+- [+ assetWriterInputTaggedPixelBufferGroupAdaptorWithAssetWriterInput:sourcePixelBufferAttributes:](./assetwriterinputtaggedpixelbuffergroupadaptorwithassetwriterinput_sourcepixelbufferattributes_.md)
+  Returns a new object that appends tagged buffer groups to an asset writer input.
+
 
 ---
 

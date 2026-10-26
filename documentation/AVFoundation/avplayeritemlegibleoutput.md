@@ -29,6 +29,8 @@ class AVPlayerItemLegibleOutput
 ### Creating a legible output
 - [init(mediaSubtypesForNativeRepresentation: [NSNumber])](./avplayeritemlegibleoutput/init%28mediasubtypesfornativerepresentation%29.md)
   Creates an initialized legible-output object.
+- [init](./api-1805461-init.md)
+  Creates an initialized legible output object.
 ### Configuring text styling
 - [var textStylingResolution: AVPlayerItemLegibleOutput.TextStylingResolution](./avplayeritemlegibleoutput/textstylingresolution-swift.property.md)
   A string identifier indicating the degree of text styling to be applied to attributed strings vended by the  object.
@@ -85,6 +87,12 @@ class AVPlayerItemLegibleOutput
   Configuration options specified when creating an [`AVPlayerItemSampleBufferOutput`](./avplayeritemsamplebufferoutput.md).
 - [class AVPlayerItemSampleBufferOutputAudioConfiguration](./avplayeritemsamplebufferoutputaudioconfiguration.md)
   Audio-specific configuration options specified when creating an [`AVPlayerItemSampleBufferOutput`](./avplayeritemsamplebufferoutput.md).
+- [CMTagCollectionCreateWithVideoOutputPreset](./cmtagcollectioncreatewithvideooutputpreset.md)
+  Creates a collection with the required tags to describe the specified video output requirements.
+- [CMTagCollectionVideoOutputPreset](./cmtagcollectionvideooutputpreset.md)
+  Constants that indicate the type of video content to output.
+- [AVPlayerItemSampleBufferOutputDelegate](./avplayeritemsamplebufferoutputdelegate.md)
+  Defines common delegate methods for objects participating in sample buffer output.
 
 
 ---

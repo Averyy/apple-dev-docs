@@ -30,6 +30,8 @@ init(cgPath: CGPath)
   A flattened version of the path object.
 - [var reversed: NSBezierPath](./reversed.md)
   A path containing the reversed contents of the current path object.
+- [+ bezierPath](./bezierpath.md)
+  Creates and returns a new Bézier path object.
 
 
 ---

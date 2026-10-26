@@ -72,6 +72,8 @@ AVFoundation combines several major technology areas that together encompass a w
   The error domain of AVFoundation errors.
 - [struct AVError](./averror-swift.struct.md)
   A structure that defines the errors that framework operations can generate.
+- [AVError](./averror-swift.struct/code.md)
+  An enumeration that defines the errors that framework operations can generate.
 ### Macros
 - [Macros](./avfoundation-macros.md)
 ### Classes
@@ -79,6 +81,27 @@ AVFoundation combines several major technology areas that together encompass a w
   A metadata object containing opaque Cinematic video metadata for Cinematic video editing.
 - [class AVMetadataFocusTrackedObject](./avmetadatafocustrackedobject.md)
   A metadata object that is maintained in focus by the camera’s auto focus system continuously tracking it.
+### Variables
+- [AVCaptureAncillaryDataUserKeyRDD18InstanceUID](./avcaptureancillarydatauserkey/rdd18instanceuid.md)
+  An AVCaptureAncillaryDataEncoder key corresponding with the optional RDD18 user defined metadata Instance UID
+- [AVCaptureAncillaryDataUserKeyRDD18UDAMSetVersion](./avcaptureancillarydatauserkey/rdd18udamsetversion.md)
+  An AVCaptureAncillaryDataEncoder key corresponding with the optional RDD18 user defined metadata UDAM Set Version
+- [AVCaptureAncillaryDataUserKeyRDD18UserItems](./avcaptureancillarydatauserkey/rdd18useritems.md)
+  An AVCaptureAncillaryDataEncoder key corresponding with RDD18 user defined metadata
+- [AVCaptureDeviceTypeBuiltInInnerUltraWideCamera](./avcapturedevice/devicetype-swift.struct/builtininnerultrawidecamera.md)
+- [AVCaptureDeviceTypeBuiltInOuterUltraWideCamera](./avcapturedevice/devicetype-swift.struct/builtinouterultrawidecamera.md)
+- [AVMediaCharacteristicSignLanguageInterpretationForAccessibility](./avmediacharacteristic/signlanguageinterpretationforaccessibility.md)
+  A media characteristic that indicates that a track or media selection option provides a sign language interpretation of the spoken dialog and other significant aspects of the presentation.
+- [AVMetadataObjectTypeCinematicVideoMetadata](./avmetadataobject/objecttype/cinematicvideometadata.md)
+  A constant that identifies Cinematic video metadata for post-capture Cinematic video editing.
+- [AVMetadataObjectTypeFocusTrackedObject](./avmetadataobject/objecttype/focustrackedobject.md)
+  An identifier for an instance of [`AVMetadataFocusTrackedObject`](./avmetadatafocustrackedobject.md).
+- [AVProVideoStorageBusyReasonAdjustingCapacity](./avprovideostorage/busyreason/adjustingcapacity.md)
+  Pro Video Storage is being created or resized.
+- [AVProVideoStorageBusyReasonCapturing](./avprovideostorage/busyreason/capturing.md)
+  A capture to Pro Video Storage is in progress.
+- [AVProVideoStorageBusyReasonReplenishing](./avprovideostorage/busyreason/replenishing.md)
+  Pro Video Storage capacity is being replenished.
 
 
 ---

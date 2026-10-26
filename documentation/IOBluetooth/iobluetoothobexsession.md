@@ -59,6 +59,20 @@ class IOBluetoothOBEXSession
   Creates a Bluetooth-based OBEX Session using an incoming RFCOMM channel.
 - [class func withSDPServiceRecord(IOBluetoothSDPServiceRecord!) -> Self!](./iobluetoothobexsession/withsdpservicerecord%28_%29.md)
   Creates a Bluetooth-based OBEX Session using an SDP service record, typically obtained from a device/service browser window controller.
+### Instance Variables
+- [bufferSize](./iobluetoothobexsession/buffersize.md)
+- [currentOffsetInBuffer](./iobluetoothobexsession/currentoffsetinbuffer.md)
+- [mDevice](./iobluetoothobexsession/mdevice.md)
+- [mOpenConnectionCallback](./iobluetoothobexsession/mopenconnectioncallback.md)
+- [mOpenConnectionCallbackRefCon](./iobluetoothobexsession/mopenconnectioncallbackrefcon.md)
+- [mOpenConnectionRefCon](./iobluetoothobexsession/mopenconnectionrefcon.md)
+- [mOpenConnectionSelector](./iobluetoothobexsession/mopenconnectionselector.md)
+- [mOpenConnectionSelectorTarget](./iobluetoothobexsession/mopenconnectionselectortarget.md)
+- [mOpenConnectionTimeout](./iobluetoothobexsession/mopenconnectiontimeout.md)
+- [mRFCOMMChannel](./iobluetoothobexsession/mrfcommchannel.md)
+- [mRFCOMMChannelID](./iobluetoothobexsession/mrfcommchannelid.md)
+- [outBuffer](./iobluetoothobexsession/outbuffer.md)
+- [waitingForRfcommSpace](./iobluetoothobexsession/waitingforrfcommspace.md)
 
 ## Relationships
 

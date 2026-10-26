@@ -46,6 +46,10 @@ The specified index must be between 0 and the warp geometry grid’s [`vertexCou
   Returns a copy of this grid, updated with the argument destination positions.
 - [func replacingBySourcePositions(positions: [SIMD2<Float>]) -> SKWarpGeometryGrid](./replacingbysourcepositions%28positions%29.md)
   Returns a copy of this grid, updated with the argument source positions.
+- [- gridByReplacingDestPositions:](./gridbyreplacingdestpositions_.md)
+  Returns a copy of the receiver with the destination positions replaced by a specified array.
+- [- gridByReplacingSourcePositions:](./gridbyreplacingsourcepositions_.md)
+  Returns a copy of the receiver with the source positions replaced by a specified array.
 
 
 ---

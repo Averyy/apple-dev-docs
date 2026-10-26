@@ -52,6 +52,8 @@ class AVMediaExtensionProperties
 ### Accessing Media Extension properties
 - [var mediaExtensionProperties: AVMediaExtensionProperties?](./avurlasset/mediaextensionproperties.md)
   The properties of the media extension format reader that decodes the asset.
+- [sidecarURL](./avurlasset/sidecarurl.md)
+  The sidecar URL used by the MediaExtension.
 
 
 ---

@@ -24,6 +24,12 @@ var deviceAddress: Int { get }
 
 The current bus address of the device.
 
+## See Also
+
+### Getting Host Information
+- [- frameNumberWithTime:](./framenumberwithtime_.md)
+  Returns the current frame number of the USB controller.
+
 
 ---
 

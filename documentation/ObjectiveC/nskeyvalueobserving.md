@@ -45,6 +45,8 @@ You can observe any object properties including simple attributes, to-one relati
   Conforming to NSKeyValueObservingCustomization is not required to use Key-Value Observing. Provide an implementation of these functions if you need to disable auto-notifying for a key, or add dependent keys
 - [var observationInfo: UnsafeMutableRawPointer?](./nsobject-swift.class/observationinfo.md)
   Returns a pointer that identifies information about all of the observers that are registered with the observed object.
+- [+ setKeys:triggerChangeNotificationsForDependentKey:](./nsobject-swift.class/setkeys_triggerchangenotificationsfordependentkey_.md)
+  Configures the observed object to post change notifications for a given property if any of the properties specified in a given array changes.
 ### Constants
 - [class NSKeyValueObservation](../Foundation/nskeyvalueobservation.md)
 - [struct NSKeyValueObservedChange](../Foundation/nskeyvalueobservedchange.md)

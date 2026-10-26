@@ -59,6 +59,12 @@ For more information on building watchOS apps, see [watchOS apps](../watchOS-App
 ### Errors
 - [struct WatchKitError](./watchkiterror.md)
   An error reported by WatchKit.
+- [WatchKitErrorCode](./watchkiterror/code.md)
+  Error codes reported by WatchKit.
+- [WatchKitErrorDomain](./watchkiterrordomain.md)
+  The domain for WatchKit errors.
+### Macros
+- [Macros](./watchkit-macros.md)
 
 
 ---

@@ -50,6 +50,8 @@ For more information about supported levels, see [`VTSuperResolutionScalerConfig
 - [var supportedPixelFormats: [OSType]](./supportedpixelformats.md)
 - [VTSuperResolutionScalerConfiguration.QualityPrioritization](./qualityprioritization-swift.enum.md)
   Configuration value you set to prioritize quality or performance.
+- [frameSupportedPixelFormats](./framesupportedpixelformats.md)
+  Available supported pixel formats for source frames for current configuration.
 
 
 ---

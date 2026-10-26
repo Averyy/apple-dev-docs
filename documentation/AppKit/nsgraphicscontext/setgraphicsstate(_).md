@@ -32,6 +32,10 @@ The `graphicState` identifier must be created in the calling thread.
   Creates a new graphics context for drawing into a window.
 - [init(graphicsPort: UnsafeMutableRawPointer, flipped: Bool)](./init%28graphicsport,flipped%29.md)
   Creates a new graphics context from the specified graphics port.
+- [- focusStack](./focusstack.md)
+  Returns the object used by the context to track the hierarchy of views with locked focus.
+- [- setFocusStack:](./setfocusstack_.md)
+  Sets the object used by the receiver to track the hierarchy of views with locked focus.
 
 
 ---

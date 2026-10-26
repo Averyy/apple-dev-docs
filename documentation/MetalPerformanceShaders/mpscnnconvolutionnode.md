@@ -34,6 +34,8 @@ class MPSCNNConvolutionNode
 - [var accumulatorPrecision: MPSNNConvolutionAccumulatorPrecisionOption](./mpscnnconvolutionnode/accumulatorprecision.md)
 - [var convolutionGradientState: MPSCNNConvolutionGradientStateNode?](./mpscnnconvolutionnode/convolutiongradientstate.md)
 - [var trainingStyle: MPSNNTrainingStyle](./mpscnnconvolutionnode/trainingstyle.md)
+### Type Methods
+- [+ nodeWithSource:weights:](./mpscnnconvolutionnode/nodewithsource_weights_.md)
 
 ## Relationships
 

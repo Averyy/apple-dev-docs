@@ -59,6 +59,8 @@ The value of this property is a constant that indicates an orientation of the st
   The current style of the status bar.
 - [var windows: [UIWindow]](./windows.md)
   The app’s visible and hidden windows.
+- [proximitySensingEnabled](./proximitysensingenabled.md)
+  A Boolean value that determines whether proximity sensing is enabled.
 
 
 ---

@@ -54,6 +54,8 @@ The key-value pairs in this dictionary are used by the [`quotes`](./optionkey/qu
   Adds the word to the spell checker dictionary.
 - [func userQuotesArray(forLanguage: String) -> [String]](./userquotesarray%28forlanguage%29.md)
   Returns the default values for quote replacement.
+- [- forgetWord:](./forgetword_.md)
+  Remove this word from the spelling dictionary.
 
 
 ---

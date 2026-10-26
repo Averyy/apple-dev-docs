@@ -30,6 +30,8 @@ enum MTLStitchedLibraryOptions : NSUInteger;
 - [static var failOnBinaryArchiveMiss: MTLStitchedLibraryOptions](./mtlstitchedlibraryoptions/failonbinaryarchivemiss.md)
   An option that instructs the compiler to return an error when a GPU function for a stitched library isn’t in a binary archive.
 - [static var storeLibraryInMetalPipelinesScript: MTLStitchedLibraryOptions](./mtlstitchedlibraryoptions/storelibraryinmetalpipelinesscript.md)
+### Enumeration Cases
+- [MTLStitchedLibraryOptionNone](./mtlstitchedlibraryoptions/mtlstitchedlibraryoptionnone.md)
 
 ## Relationships
 

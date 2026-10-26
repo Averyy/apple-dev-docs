@@ -30,6 +30,8 @@ MLCDataTypeInt32
 - [MLCDataType.int8](./int8.md)
 - [MLCDataType.int64](./int64.md)
 - [MLCDataType.uint8](./uint8.md)
+- [MLCDataTypeInvalid](./mlcdatatypeinvalid.md)
+- [MLCDataTypeCount](./mlcdatatypecount.md)
 
 
 ---

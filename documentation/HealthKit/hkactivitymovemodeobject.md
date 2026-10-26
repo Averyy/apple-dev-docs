@@ -58,7 +58,7 @@ class HKActivityMoveModeObject
   A query interface that reads activity summaries using Swift concurrency.
 - [class HKActivitySummaryQuery](./hkactivitysummaryquery.md)
   A query for reading activity summary objects from the HealthKit store.
-- [class HKActivityRingView](https://developer.apple.com/documentation/healthkitui/hkactivityringview)
+- [class HKActivityRingView](../HealthKitUI/hkactivityringview.md)
   A view that uses the Move, Exercise, and Stand activity rings to display data from a HealthKit activity summary object.
 
 

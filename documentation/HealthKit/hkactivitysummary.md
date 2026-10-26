@@ -34,7 +34,7 @@ You can read [`HKActivitySummary`](./hkactivitysummary.md) objects from the Heal
 
 You can instantiate your own [`HKActivitySummary`](./hkactivitysummary.md) objects (if needed), but you can’t save [`HKActivitySummary`](./hkactivitysummary.md) objects to the store.
 
-You can display an active summary in iOS using the [`HKActivityRingView`](https://developer.apple.com/documentation/healthkitui/hkactivityringview) class or in watchOS using the [`WKInterfaceActivityRing`](../WatchKit/wkinterfaceactivityring.md) class.
+You can display an active summary in iOS using the [`HKActivityRingView`](../HealthKitUI/hkactivityringview.md) class or in watchOS using the [`WKInterfaceActivityRing`](../WatchKit/wkinterfaceactivityring.md) class.
 
 ## Topics
 
@@ -99,7 +99,7 @@ You can display an active summary in iOS using the [`HKActivityRingView`](https:
   A query interface that reads activity summaries using Swift concurrency.
 - [class HKActivitySummaryQuery](./hkactivitysummaryquery.md)
   A query for reading activity summary objects from the HealthKit store.
-- [class HKActivityRingView](https://developer.apple.com/documentation/healthkitui/hkactivityringview)
+- [class HKActivityRingView](../HealthKitUI/hkactivityringview.md)
   A view that uses the Move, Exercise, and Stand activity rings to display data from a HealthKit activity summary object.
 - [class HKActivityMoveModeObject](./hkactivitymovemodeobject.md)
   An object that contains a movement mode value.

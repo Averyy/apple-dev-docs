@@ -32,6 +32,12 @@ Metadata attribute keys that describe the file system attributes for a file.
   The size, in bytes, of the file on disk. A CFNumber.
 - [let kMDItemPath: CFString!](../../kmditempath.md)
   The complete path to the file. A CFString.
+- [kMDItemFSExists](../../kmditemfsexists.md)
+  This attribute is deprecated and was never implemented.
+- [kMDItemFSIsReadable](../../kmditemfsisreadable.md)
+  This attribute is deprecated and was never implemented.
+- [kMDItemFSIsWriteable](../../kmditemfsiswriteable.md)
+  This attribute is deprecated and was never implemented.
 
 
 ---

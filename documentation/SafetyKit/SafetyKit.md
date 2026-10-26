@@ -62,6 +62,9 @@ If your app receives a Crash Detection event, use [`SAEmergencyResponseManager`]
   Codes for identifying errors in SafetyKit.
 - [struct SAError](./saerror.md)
   An error reported by SafetyKit.
+### Macros
+- [SA_EXPORT](./sa_export.md)
+- [SA_EXTERN](./sa_extern.md)
 
 
 ---

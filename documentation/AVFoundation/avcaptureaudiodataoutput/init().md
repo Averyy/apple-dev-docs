@@ -23,6 +23,12 @@ init()
 - (instancetype) init;
 ```
 
+## See Also
+
+### Creating an audio capture output
+- [+ new](./new.md)
+  Provides a convenience initializer to create an instance of audio data output.
+
 
 ---
 

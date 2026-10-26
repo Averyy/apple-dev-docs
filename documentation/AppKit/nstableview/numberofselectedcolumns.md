@@ -48,6 +48,9 @@ var numberOfSelectedColumns: Int { get }
   Selects all rows or all columns, according to whether rows or columns were most recently selected.
 - [func deselectAll(Any?)](./deselectall%28_%29.md)
   Deselects all selected rows or columns if empty selection is allowed; otherwise does nothing.
+### Related Documentation
+- [- selectedColumnEnumerator](./selectedcolumnenumerator.md)
+  This method has been deprecated.
 
 
 ---

@@ -40,6 +40,7 @@ A pixel in an [`MPSImage`](./mpsimage.md) object may have many channels in it, s
   IEEE-754 16-bit floating-point type (half precision). Representable normal range is `+-[2^-14, 65504], 0, INF, NaN`. 11 bits of precision + exponent.
 - [MPSImageFeatureChannelFormat.float32](./mpsimagefeaturechannelformat/float32.md)
   IEEE-754 32-bit floating-point type (single precision, standard `float` type in C). 24 bits of precision + exponent.
+- [MPSImageFeatureChannelFormat_reserved0](./mpsimagefeaturechannelformat/mpsimagefeaturechannelformat_reserved0.md)
 ### Enumeration Cases
 - [MPSImageFeatureChannelFormat.count](./mpsimagefeaturechannelformat/count.md)
 ### Initializers

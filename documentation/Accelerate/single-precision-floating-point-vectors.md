@@ -9,9 +9,9 @@ Perform operations on vectors that contain single-precision floating-point eleme
 
 The simd library provides many functions in this group, in three variants:
 
-- The default variant—for example, [`simd_rsqrt(_:)`](https://developer.apple.com/documentation/simd/simd_rsqrt(_:)-i4we)
-- The precise variant—for example, [`simd_precise_rsqrt(_:)`](https://developer.apple.com/documentation/simd/simd_precise_rsqrt(_:)-136xw)
-- The fast variant—for example, [`simd_fast_rsqrt(_:)`](https://developer.apple.com/documentation/simd/simd_fast_rsqrt(_:)-8p7fk)
+- The default variant—for example, [`simd_rsqrt(_:)`](../simd/simd_rsqrt%28_%29-i4we.md)
+- The precise variant—for example, [`simd_precise_rsqrt(_:)`](../simd/simd_precise_rsqrt%28_%29-136xw.md)
+- The fast variant—for example, [`simd_fast_rsqrt(_:)`](../simd/simd_fast_rsqrt%28_%29-8p7fk.md)
 
 The precise variants are accurate to a few units in the last place (ULPs). The fast variants provide greater speed but may have as little as 11 bits of accuracy for single-precision functions.
 
@@ -20,26 +20,26 @@ The compiler flag defines the behavior of the default variant. Ordinarily, the c
 ## Topics
 
 ### Vector data types
-- [typealias simd_float1](https://developer.apple.com/documentation/simd/simd_float1)
+- [typealias simd_float1](../simd/simd_float1.md)
   A vector of one 32-bit floating-point element.
-- [typealias simd_float2](https://developer.apple.com/documentation/simd/simd_float2)
+- [typealias simd_float2](../simd/simd_float2.md)
   A vector of two 32-bit floating-point elements.
-- [typealias simd_float3](https://developer.apple.com/documentation/simd/simd_float3)
+- [typealias simd_float3](../simd/simd_float3.md)
   A vector of three 32-bit floating-point elements.
-- [typealias simd_float4](https://developer.apple.com/documentation/simd/simd_float4)
+- [typealias simd_float4](../simd/simd_float4.md)
   A vector of four 32-bit floating-point elements.
-- [typealias simd_float8](https://developer.apple.com/documentation/simd/simd_float8)
+- [typealias simd_float8](../simd/simd_float8.md)
   A vector of eight 32-bit floating-point elements.
-- [typealias simd_float16](https://developer.apple.com/documentation/simd/simd_float16)
+- [typealias simd_float16](../simd/simd_float16.md)
   A vector of sixteen 32-bit floating-point elements.
 ### Packed vector data types
-- [typealias simd_packed_float2](https://developer.apple.com/documentation/simd/simd_packed_float2)
+- [typealias simd_packed_float2](../simd/simd_packed_float2.md)
   A packed vector of two 32-bit floating-point elements.
-- [typealias simd_packed_float4](https://developer.apple.com/documentation/simd/simd_packed_float4)
+- [typealias simd_packed_float4](../simd/simd_packed_float4.md)
   A packed vector of four 32-bit floating-point elements.
-- [typealias simd_packed_float8](https://developer.apple.com/documentation/simd/simd_packed_float8)
+- [typealias simd_packed_float8](../simd/simd_packed_float8.md)
   A packed vector of eight 32-bit floating-point elements.
-- [typealias simd_packed_float16](https://developer.apple.com/documentation/simd/simd_packed_float16)
+- [typealias simd_packed_float16](../simd/simd_packed_float16.md)
   A packed vector of sixteen 32-bit floating-point elements.
 
 ## See Also

@@ -37,6 +37,7 @@ extern const NSProcessPerformanceProfile NSProcessPerformanceProfileDefault;
   The performance gaming tier for iPhone.
 - [static let sustained: NSProcessPerformanceProfile](./sustained.md)
   The performance profile for a device representing sustained performance.
+- [NSProcessInfoPerformanceProfileDidChangeNotification](../nsprocessinfoperformanceprofiledidchangenotification.md)
 
 
 ---

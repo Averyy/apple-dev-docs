@@ -61,6 +61,8 @@ For more information about push notification alerts and how they display to the 
   The filename of an image to use as a launch image.
 - [var soundName: String?](./notificationinfo-swift.class/soundname.md)
   The filename of the sound file to play when a notification arrives.
+- [alertLocalizationArgs](../cknotificationinfo/alertlocalizationargs.md)
+  The fields for building a notification’s alert.
 ### Accessing the Notification Info
 - [var shouldSendContentAvailable: Bool](./notificationinfo-swift.class/shouldsendcontentavailable.md)
   A Boolean value that indicates whether the push notification includes the content available flag.
@@ -69,6 +71,8 @@ For more information about push notification alerts and how they display to the 
 ### Accessing the Record’s Data
 - [var desiredKeys: [CKRecord.FieldKey]?](./notificationinfo-swift.class/desiredkeys.md)
   The names of fields to include in the push notification’s payload.
+- [desiredKeys](../cknotificationinfo/desiredkeys.md)
+  The names of fields to include in the push notification’s payload.
 ### Accessing the Notification Title
 - [var title: String?](./notificationinfo-swift.class/title.md)
   The notification’s title.
@@ -76,12 +80,16 @@ For more information about push notification alerts and how they display to the 
   The key that identifies the localized string for the notification’s title.
 - [var titleLocalizationArgs: [CKRecord.FieldKey]?](./notificationinfo-swift.class/titlelocalizationargs.md)
   The fields for building a notification’s title.
+- [titleLocalizationArgs](../cknotificationinfo/titlelocalizationargs.md)
+  The fields for building a notification’s title.
 ### Accessing the Notification Subtitle
 - [var subtitle: String?](./notificationinfo-swift.class/subtitle.md)
   The notification’s subtitle.
 - [var subtitleLocalizationKey: String?](./notificationinfo-swift.class/subtitlelocalizationkey.md)
   The key that identifies the localized string for the notification’s subtitle.
 - [var subtitleLocalizationArgs: [CKRecord.FieldKey]?](./notificationinfo-swift.class/subtitlelocalizationargs.md)
+  The fields for building a notification’s subtitle.
+- [subtitleLocalizationArgs](../cknotificationinfo/subtitlelocalizationargs.md)
   The fields for building a notification’s subtitle.
 ### Initializers
 - [init?(coder: NSCoder)](./notificationinfo-swift.class/init%28coder%29.md)

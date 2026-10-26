@@ -29,6 +29,12 @@ typedef struct _IODataQueueAppendix {
 
 This struct is variable sized dependent on the version. The struct represents the data queue appendix information.
 
+## Topics
+
+### Instance Properties
+- [msgh](./iodataqueueappendix/api-1456751-msgh.md)
+- [version](./iodataqueueappendix/api-1456755-version.md)
+
 
 ---
 

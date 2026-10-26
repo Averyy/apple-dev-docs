@@ -52,6 +52,8 @@ func encode(_ object: Any?, forKey key: String)
   Encodes a given 32-bit integer value and associates it with a key.
 - [func encode(Int64, forKey: String)](./encode%28_,forkey%29-ycdd.md)
   Encodes a given 64-bit integer value and associates it with a key.
+- [- encodeInt:forKey:](./encodeint_forkey_.md)
+  Encodes a given `int` value and associates it with a key.
 
 
 ---

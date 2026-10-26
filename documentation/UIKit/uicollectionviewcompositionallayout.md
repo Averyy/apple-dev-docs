@@ -91,6 +91,10 @@ func createBasicListLayout() -> UICollectionViewLayout {
   Creates a compositional layout that contains only list sections of the specified configuration.
 - [struct UICollectionLayoutListConfiguration](./uicollectionlayoutlistconfiguration-swift.struct.md)
   A configuration for creating a list layout.
+- [+ layoutWithListConfiguration:](./uicollectionviewcompositionallayout/layoutwithlistconfiguration_.md)
+  Creates a compositional layout that contains only list sections of the specified configuration.
+- [UICollectionLayoutListConfiguration](./uicollectionlayoutlistconfiguration-c.class.md)
+  A configuration for creating a list layout.
 ### Configuring the layout
 - [var configuration: UICollectionViewCompositionalLayoutConfiguration](./uicollectionviewcompositionallayout/configuration.md)
   The layout’s configuration, such as its scroll direction and section spacing.

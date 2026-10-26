@@ -40,6 +40,7 @@ Equal to FF_EFFECTRESTARTED | FF_TRUNCATED.
 - [var FFERR_DEVICEPAUSED: Int](./fferr_devicepaused.md)
 - [var FFERR_DEVICERELEASED: Int](./fferr_devicereleased.md)
 - [var FFERR_EFFECTPLAYING: Int](./fferr_effectplaying.md)
+- [FFERR_DEVICENOTREG](./fferr_devicenotreg.md)
 
 
 ---

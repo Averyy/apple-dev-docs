@@ -46,6 +46,8 @@ It’s not necessary to allocate and initialize an instance for the main bundle;
   Returns the `NSBundle` object with which the specified class is associated.
 - [init?(identifier: String)](./init%28identifier%29.md)
   Returns the `NSBundle` instance that has the specified bundle identifier.
+- [+ bundleWithPath:](../nsbundle/bundlewithpath_.md)
+  Returns an `NSBundle` object that corresponds to the specified directory.
 
 
 ---

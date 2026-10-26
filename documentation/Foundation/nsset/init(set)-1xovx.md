@@ -44,6 +44,11 @@ An initialized objects set containing the objects from `set`. The returned set m
   Initializes a newly allocated set and adds to it members of another given set.
 - [init()](./init%28%29.md)
   Initializes a newly allocated set.
+### Related Documentation
+- [- initWithObjects:](./initwithobjects_.md)
+  Initializes a newly allocated set with members taken from the specified list of objects.
+- [+ setWithSet:](./setwithset_.md)
+  Creates and returns a set containing the objects from another set.
 
 
 ---

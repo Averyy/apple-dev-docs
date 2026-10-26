@@ -39,6 +39,8 @@ A new instance of `CAMediaTimingFunction` with the timing function specified by 
 ### Creating Timing Functions
 - [init(controlPoints: Float, Float, Float, Float)](./init%28controlpoints,_,_,_%29.md)
   Returns an initialized timing function modeled as a cubic Bézier curve using the specified control points.
+- [+ functionWithControlPoints::::](./functionwithcontrolpoints____.md)
+  Creates and returns a new instance of `CAMediaTimingFunction` timing function modeled as a cubic Bézier curve using the specified control points.
 
 
 ---

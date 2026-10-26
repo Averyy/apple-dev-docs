@@ -67,6 +67,11 @@ Extended Audio File Services provides simplified audio file access, combining fe
 - [var kExtAudioFileError_AsyncWriteTooLarge: OSStatus](./kextaudiofileerror_asyncwritetoolarge.md)
 - [var kExtAudioFileError_AsyncWriteBufferOverflow: OSStatus](./kextaudiofileerror_asyncwritebufferoverflow.md)
   An asynchronous write operation could not be completed in time.
+### Deprecated Functions
+- [ExtAudioFileCreateNew](./extaudiofilecreatenew.md)
+  Deprecated. Use the [`ExtAudioFileCreateWithURL`](./extaudiofilecreatewithurl%28_,_,_,_,_,_%29.md) function instead.
+- [ExtAudioFileOpen](./extaudiofileopen.md)
+  Deprecated. Use the [`ExtAudioFileOpenURL`](./extaudiofileopenurl%28_,_%29.md) function instead.
 
 ## See Also
 

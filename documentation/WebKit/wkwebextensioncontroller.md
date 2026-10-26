@@ -83,6 +83,12 @@ You can associate a controller with [`WKWebView`](./wkwebview.md) using the [`we
   Removes extension data of the given types for the given data records.
 - [func unload(WKWebExtensionContext) throws](./wkwebextensioncontroller/unload%28_%29.md)
   Unloads the specified extension context.
+- [- didActivateTab:previousActiveTab:](./wkwebextensioncontroller/didactivatetab_previousactivetab_.md)
+  Should be called by the app when a tab is activated to notify all loaded web extensions.
+- [- didCloseTab:windowIsClosing:](./wkwebextensioncontroller/didclosetab_windowisclosing_.md)
+  Should be called by the app when a tab is closed to fire appropriate events with all loaded web extensions.
+- [- didMoveTab:fromIndex:inWindow:](./wkwebextensioncontroller/didmovetab_fromindex_inwindow_.md)
+  Should be called by the app when a tab is moved to fire appropriate events with all loaded web extensions.
 ### Type Properties
 - [class var allExtensionDataTypes: Set<WKWebExtension.DataType>](./wkwebextensioncontroller/allextensiondatatypes.md)
   Returns a set of all available extension data types.

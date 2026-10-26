@@ -40,6 +40,8 @@ You can add these constants together to specify multiple edges at the same time.
   The right edge of the rectangle.
 - [static var all: UIRectEdge](./uirectedge/all.md)
   All edges of the rectangle.
+- [UIRectEdgeNone](./uirectedge/uirectedgenone.md)
+  No edge.
 ### Initializers
 - [init(rawValue: UInt)](./uirectedge/init%28rawvalue%29.md)
   Creates an edges structure with the specified raw value.

@@ -17,6 +17,13 @@ var u: IOBluetoothL2CAPChannelEvent.__Unnamed_union_u
 union { ... } u;
 ```
 
+## Topics
+
+### Instance Properties
+- [data](./u/data.md)
+- [padding](./u/padding.md)
+- [writeRefCon](./u/writerefcon.md)
+
 
 ---
 

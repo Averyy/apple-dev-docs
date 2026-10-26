@@ -27,6 +27,12 @@ Returns the IOBluetoothServiceBrowserController * for the given IOBluetoothServi
 
 - `serviceBrowserControllerRef`: IOBluetoothServiceBrowserControllerRef for which an IOBluetoothServiceBrowserController * is desired.
 
+## See Also
+
+### Type Methods
+- [+ browseDevices:options:](./browsedevices_options_.md)
+- [+ browseDevicesAsSheetForWindow:options:window:](./browsedevicesassheetforwindow_options_window_.md)
+
 
 ---
 

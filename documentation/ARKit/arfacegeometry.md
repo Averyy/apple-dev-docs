@@ -43,6 +43,16 @@ In an AR session, you can use this model as the basis for overlaying content tha
   The number of triangles described by the [`triangleIndices`](./arfacegeometry/triangleindices-3tb1o.md) buffer.
 - [var triangleIndices: [Int16]](./arfacegeometry/triangleindices-8isy8.md)
   An array of indices describing the triangle mesh formed by the face geometry’s vertex data.
+- [vertexCount](./arfacegeometry/vertexcount.md)
+  The number of elements in the [`vertices`](./arfacegeometry/vertices-fhdb.md) buffer.
+- [vertices](./arfacegeometry/vertices-fhdb.md)
+  A buffer of vertex positions for each point in the face mesh.
+- [textureCoordinateCount](./arfacegeometry/texturecoordinatecount.md)
+  The number of elements in the [`textureCoordinates`](./arfacegeometry/texturecoordinates-8ahq1.md) buffer.
+- [textureCoordinates](./arfacegeometry/texturecoordinates-8ahq1.md)
+  A buffer of texture coordinate values for each point in the face mesh.
+- [triangleIndices](./arfacegeometry/triangleindices-3tb1o.md)
+  A buffer of indices describing the triangle mesh formed by the face geometry’s vertex data.
 ### Creating a Mesh from Blend Shapes
 - [init?(blendShapes: [ARFaceAnchor.BlendShapeLocation : NSNumber])](./arfacegeometry/init%28blendshapes%29.md)
   Creates a face geometry matching the facial expression described in the specified dictionary.

@@ -78,6 +78,20 @@ typedef NSObject<OS_nw_connection_group> * nw_connection_group_t;
 - [func nw_connection_group_copy_parameters(nw_connection_group_t) -> nw_parameters_t](./nw_connection_group_copy_parameters%28_%29.md)
   Accesses the parameters with which you initialize the connection group.
 
+## See Also
+
+### Connections and Listeners
+- [Implementing netcat with Network Framework](./implementing-netcat-with-network-framework.md)
+  Build a simple `netcat` tool that establishes network connections and transfers data.
+- [nw_connection_t](./nw_connection_t.md)
+  A bidirectional data connection between a local endpoint and a remote endpoint.
+- [nw_listener_t](./nw_listener_t.md)
+  An object you use to listen for incoming network connections.
+- [nw_browser_t](./nw_browser_t.md)
+  An object you use to browse for available network services.
+- [nw_ethernet_channel_t](./nw_ethernet_channel_t.md)
+  An object you use to send and receive custom Ethernet frames.
+
 
 ---
 

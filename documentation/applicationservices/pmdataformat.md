@@ -27,6 +27,9 @@ typedef enum PMDataFormat : unsigned int {
 - [var kPMDataFormatXMLDefault: PMDataFormat](./kpmdataformatxmldefault.md)
 - [var kPMDataFormatXMLMinimal: PMDataFormat](./kpmdataformatxmlminimal.md)
 - [var kPMDataFormatXMLCompressed: PMDataFormat](./kpmdataformatxmlcompressed.md)
+- [kPMDataFormatXMLDefault](./pmdataformat/kpmdataformatxmldefault.md)
+- [kPMDataFormatXMLMinimal](./pmdataformat/kpmdataformatxmlminimal.md)
+- [kPMDataFormatXMLCompressed](./pmdataformat/kpmdataformatxmlcompressed.md)
 ### Initializers
 - [init(UInt32)](./pmdataformat/api-1462724-init.md)
 - [init(rawValue: UInt32)](./pmdataformat/api-1459732-init.md)

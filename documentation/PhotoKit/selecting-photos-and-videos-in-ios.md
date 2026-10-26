@@ -20,20 +20,20 @@ This sample shows how to use the [PhotoKit](./PhotoKit.md) Photos picker, and il
 
 ##### Understand the Photos Picker Benefits
 
-Both [`PHPickerViewController`](https://developer.apple.com/documentation/photosui/phpickerviewcontroller) and [`UIImagePickerController`](../UIKit/uiimagepickercontroller.md) use the out-of-process Photos picker user interface. The `PHPickerViewController` contains a powerful set of APIs that make it a great alternative to `UIImagePickerController`. `PHPickerViewController` improves stability and reliability, and includes several benefits to developers and users, such as the following:
+Both [`PHPickerViewController`](../PhotosUI/phpickerviewcontroller.md) and [`UIImagePickerController`](../UIKit/uiimagepickercontroller.md) use the out-of-process Photos picker user interface. The `PHPickerViewController` contains a powerful set of APIs that make it a great alternative to `UIImagePickerController`. `PHPickerViewController` improves stability and reliability, and includes several benefits to developers and users, such as the following:
 
 - Deferred image loading and recovery UI
 - Reliable handling of large and complex assets, like RAW and panoramic images
 - User-selectable assets that aren’t available for `UIImagePickerController`
 - Configuration of the picker to only display Live Photos
-- Availability of [`PHLivePhoto`](https://developer.apple.com/documentation/photos/phlivephoto) objects without library access
+- Availability of [`PHLivePhoto`](../Photos/phlivephoto.md) objects without library access
 - Stricter validations against invalid inputs
 
 Apps don’t need to request photo library permission when using either class, so the sample app avoids requesting permission until it’s necessary. A camera app, photo editing app, or library browsing app needs to use much more of [PhotoKit](./PhotoKit.md)‘s functionality, but an app that’s only setting a basic profile photo doesn’t need photo library permission. An app that only saves photos to the photo library can use the Add Photos Only permission level when requesting authorization.
 
 ##### Configure the Photos Picker
 
-Before displaying the photo library, the sample creates a [`PHPickerConfiguration`](https://developer.apple.com/documentation/photosui/phpickerconfiguration-swift.struct) object using the shared photo library. Creating a configuration without a photo library provides only asset data, and doesn’t include asset identifiers.
+Before displaying the photo library, the sample creates a [`PHPickerConfiguration`](../PhotosUI/phpickerconfiguration-swift.struct.md) object using the shared photo library. Creating a configuration without a photo library provides only asset data, and doesn’t include asset identifiers.
 
 ```swift
 var configuration = PHPickerConfiguration(photoLibrary: .shared())

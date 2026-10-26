@@ -80,6 +80,10 @@ If the app moves into the background, the framework stops advertising and browsi
 ### Reference
 - [MultipeerConnectivity Enumerations](./multipeerconnectivity_enumerations.md)
 - [MultipeerConnectivity Constants](./multipeerconnectivity_constants.md)
+### Macros
+- [MC_EXTERN](./mc_extern.md)
+- [MC_EXTERN_CLASS](./mc_extern_class.md)
+- [MC_EXTERN_WEAK](./mc_extern_weak.md)
 
 
 ---

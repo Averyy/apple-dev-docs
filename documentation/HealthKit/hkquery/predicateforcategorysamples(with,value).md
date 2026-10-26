@@ -76,6 +76,8 @@ NSPredicate *explicitAsleep =
 ### Creating category sample predicates
 - [protocol HKCategoryValuePredicateProviding](../hkcategoryvaluepredicateproviding.md)
   A protocol for objects that produce predicates that match category value samples.
+- [+ predicateForCategorySamplesEqualToValues:](./predicateforcategorysamplesequaltovalues_.md)
+  A predicate that returns category samples with a matching value.
 
 
 ---

@@ -34,6 +34,9 @@ init(image im: CIImage, options dict: [AnyHashable : Any]? = nil)
 ### Initializing a Sampler
 - [convenience init(image: CIImage)](./init%28image%29.md)
   Initializes a sampler with an image object.
+### Related Documentation
+- [- initWithImage:keysAndValues:](./initwithimage_keysandvalues_.md)
+  Initializes the sampler with an image object using options specified as key-value pairs.
 
 
 ---

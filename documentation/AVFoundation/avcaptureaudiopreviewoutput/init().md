@@ -19,6 +19,12 @@ init()
 - (instancetype) init;
 ```
 
+## See Also
+
+### Creating preview output
+- [+ new](./new.md)
+  Returns a new audio preview output object.
+
 
 ---
 

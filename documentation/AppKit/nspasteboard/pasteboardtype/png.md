@@ -52,6 +52,8 @@ extern NSPasteboardType const NSPasteboardTypePNG;
   Sound data.
 - [static let string: NSPasteboard.PasteboardType](./string.md)
   String data.
+- [NSPasteboardTypeTabularText](./tabulartext.md)
+  Tab-separated fields of text.
 
 
 ---

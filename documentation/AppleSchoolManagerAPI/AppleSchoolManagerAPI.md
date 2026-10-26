@@ -103,7 +103,7 @@ Automate device management activities and view device information in Apple Schoo
 ## See Also
 
 ### Apple School Manager and Apple Business APIs
-- [Apple Business API](https://developer.apple.com/documentation/applebusinessapi)
+- [Apple Business API](../AppleBusinessAPI/AppleBusinessAPI.md)
   Automate device management activities, view device information, and manage users and user groups in Apple Business.
 
 

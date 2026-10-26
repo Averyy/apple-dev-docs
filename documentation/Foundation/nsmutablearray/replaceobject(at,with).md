@@ -43,6 +43,8 @@ func replaceObject(at index: Int, with anObject: Any)
   Removes the object at `index` .
 - [func insert(Any, at: Int)](./insert%28_,at%29-5dbx5.md)
   Inserts a given object into the array’s contents at a given index.
+- [- setObject:atIndexedSubscript:](./setobject_atindexedsubscript_.md)
+  Replaces the object at the index with the new object, possibly adding the object.
 ### Replacing Objects
 - [func replaceObjects(at: IndexSet, with: [Any])](./replaceobjects%28at,with%29.md)
   Replaces the objects in the receiving array at locations specified with the objects from a given array.

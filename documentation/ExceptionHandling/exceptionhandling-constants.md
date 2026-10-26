@@ -12,6 +12,9 @@
   Identifies an Objective-C runtime error.
 - [let NSUncaughtSystemExceptionException: String](./nsuncaughtsystemexceptionexception.md)
   Identifies an uncaught system exception.
+### Macros
+- [EXCEPTIONHANDLING_EXPORT](./exceptionhandling_export.md)
+- [EXCEPTIONHANDLING_IMPORT](./exceptionhandling_import.md)
 
 ## See Also
 

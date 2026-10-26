@@ -21,7 +21,7 @@ class FxPrincipal
 
 ## Mentions
 
-- [Editing property lists for FxPlug plug-ins](https://developer.apple.com/documentation/professional-video-applications/editing-property-lists-for-fxplug-plug-ins)
+- [Editing property lists for FxPlug plug-ins](../Professional-Video-Applications/editing-property-lists-for-fxplug-plug-ins.md)
 
 ## Topics
 

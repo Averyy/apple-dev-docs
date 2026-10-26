@@ -48,6 +48,8 @@ For more information about state machines, read [State Machines](https://develop
 ### Creating a State Machine
 - [init(states: [GKState])](./gkstatemachine/init%28states%29.md)
   Initializes a state machine with the specified states.
+- [+ stateMachineWithStates:](./gkstatemachine/statemachinewithstates_.md)
+  Creates a state machine with the specified states.
 ### Working with States
 - [var currentState: GKState?](./gkstatemachine/currentstate.md)
   The state machine’s current state.
@@ -57,6 +59,8 @@ For more information about state machines, read [State Machines](https://develop
   Attempts to transition the state machine from its current state to a state of the specified class.
 - [func update(deltaTime: TimeInterval)](./gkstatemachine/update%28deltatime%29.md)
   Tells the current state object to perform per-frame updates.
+- [- stateForClass:](./gkstatemachine/stateforclass_.md)
+  Returns the state object in the state machine corresponding to the specified class.
 ### Instance Methods
 - [func state<StateType>(forClass: StateType.Type) -> StateType?](./gkstatemachine/state%28forclass%29.md)
 

@@ -18,11 +18,11 @@ You can incorporate your app’s features directly into the Photos app in iOS or
 
 #### Implement and bundle the app extension
 
-Adopt the [`PHContentEditingController`](https://developer.apple.com/documentation/photosui/phcontenteditingcontroller) protocol to create an app extension that adds to the photo editing options and capabilities in the Photos app. Creating such an extension also requires using the following classes from the Photos framework:
+Adopt the [`PHContentEditingController`](../PhotosUI/phcontenteditingcontroller.md) protocol to create an app extension that adds to the photo editing options and capabilities in the Photos app. Creating such an extension also requires using the following classes from the Photos framework:
 
-- [`PHContentEditingInput`](https://developer.apple.com/documentation/photos/phcontenteditinginput) to reference the photo or video you want to edit
-- [`PHContentEditingOutput`](https://developer.apple.com/documentation/photos/phcontenteditingoutput) to save the results of an edit
-- [`PHAdjustmentData`](https://developer.apple.com/documentation/photos/phadjustmentdata) to describe an edit operation
+- [`PHContentEditingInput`](../Photos/phcontenteditinginput.md) to reference the photo or video you want to edit
+- [`PHContentEditingOutput`](../Photos/phcontenteditingoutput.md) to save the results of an edit
+- [`PHAdjustmentData`](../Photos/phadjustmentdata.md) to describe an edit operation
 
 Include the app extension in your app bundle, and the system installs it in Photos at the same time someone installs your app.
 

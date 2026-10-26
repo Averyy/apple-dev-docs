@@ -132,6 +132,10 @@ func sendCommand(_ command: Data, to mediaSession: AVSystemRouteMediaSession) as
   An object that manages interaction with system routes.
 - [protocol AVSystemRouteControllerObserver](./avsystemroutecontrollerobserver-5syvg.md)
   A protocol for observers of a system routing controller.
+- [AVSystemRouteController](./avsystemroutecontroller-4teia.md)
+  An object that manages interaction with system routes.
+- [AVSystemRouteControllerObserver](./avsystemroutecontrollerobserver-7p7a5.md)
+  A protocol for observers of a system routing controller.
 
 
 ---

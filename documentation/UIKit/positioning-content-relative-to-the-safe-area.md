@@ -54,6 +54,8 @@ override func viewDidAppear(_ animated: Bool) {
   The relationship between two user interface objects that must be satisfied by the constraint-based layout system.
 - [protocol UILayoutSupport](./uilayoutsupport.md)
   A set of methods that provide layout support and access to layout anchors.
+- [NSDictionaryOfVariableBindings](./nsdictionaryofvariablebindings.md)
+  Creates a dictionary wherein the keys are string representations of the corresponding values’ variable names.
 
 
 ---

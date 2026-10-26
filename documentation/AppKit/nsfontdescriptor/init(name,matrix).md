@@ -37,6 +37,9 @@ The new font descriptor.
   Returns a font descriptor with the name and size attributes set to the given values.
 - [init(fontAttributes: [NSFontDescriptor.AttributeName : Any]?)](./init%28fontattributes%29.md)
   Initializes and returns a new font descriptor with the specified attributes.
+### Related Documentation
+- [+ fontDescriptorWithFontAttributes:](./fontdescriptorwithfontattributes_.md)
+  Returns a font descriptor with a dictionary of attributes.
 
 
 ---

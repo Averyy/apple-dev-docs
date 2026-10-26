@@ -28,6 +28,8 @@ To observe this notification using Swift concurrency, use [`NSSpellChecker.DidCh
 ### Notifications
 - [class let didChangeAutomaticSpellingCorrectionNotification: NSNotification.Name](./didchangeautomaticspellingcorrectionnotification.md)
   This notification is posted when the spell checker did change text using automatic spell checking correction. The are posted to the application’s default notification center.
+- [NSSpellCheckerDidChangeAutomaticInlinePredictionNotification](../nsspellcheckerdidchangeautomaticinlinepredictionnotification.md)
+  To observe this notification using Swift concurrency, use [`NSSpellChecker.DidChangeAutomaticInlinePredictionMessage`](./didchangeautomaticinlinepredictionmessage.md).
 
 
 ---

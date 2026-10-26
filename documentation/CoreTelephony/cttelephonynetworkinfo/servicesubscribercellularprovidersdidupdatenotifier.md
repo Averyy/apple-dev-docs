@@ -42,6 +42,9 @@ To handle changes in cellular service provider information, define a block in yo
   A dictionary that contains carrier information about each service.
 - [static let CTRadioAccessTechnologyDidChange: NSNotification.Name](../../Foundation/nsnotification/name-swift.struct/ctradioaccesstechnologydidchange.md)
   The name of the notification indicating that the radio access technology changed for one of the services.
+- [CTServiceRadioAccessTechnologyDidChangeNotification](../ctserviceradioaccesstechnologydidchangenotification.md)
+- [CTRadioAccessTechnologyDidChangeNotification](../ctradioaccesstechnologydidchangenotification.md)
+  The name of the notification indicating that the radio access technology changed for one of the services.
 
 
 ---

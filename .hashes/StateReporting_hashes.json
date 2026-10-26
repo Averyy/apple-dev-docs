@@ -140,6 +140,31 @@
       "file_path": "documentation/StateReporting/reportablemetadatavalue/string(_).md",
       "hash": "021c186fe9050beb2aceb90aa00a6aaff59d980b1e72f502b42a93140ab3c936"
     },
+    "https://developer.apple.com/documentation/statereporting/srstatereporter": {
+      "etag": "\"2d37-65d55edb1e9d7-df\"",
+      "file_path": "documentation/StateReporting/srstatereporter.md",
+      "hash": "5f1cf93e90f07471656681e9f296aa41687f88a1b7de7eff1090625245166040"
+    },
+    "https://developer.apple.com/documentation/statereporting/srstatereporter/domain": {
+      "etag": "\"12a4-65d55edb1e9d7-df\"",
+      "file_path": "documentation/StateReporting/srstatereporter/domain.md",
+      "hash": "94cffabfbf49c7b16b099d401ec19a3f089c39113e9090e553d698bb8d3ec1af"
+    },
+    "https://developer.apple.com/documentation/statereporting/srstatereporter/reporterfordomain:": {
+      "etag": "\"1627-65d55edb1e9d7-df\"",
+      "file_path": "documentation/StateReporting/srstatereporter/reporterfordomain_.md",
+      "hash": "058dc868590f42c7b9ebc0d7550d132721d9f157130a4731d8b5db93fe20de26"
+    },
+    "https://developer.apple.com/documentation/statereporting/srstatereporter/reporttransitiontostatelabel:stablemetadata:volatilemetadata:": {
+      "etag": "\"2217-65d55edb1e9d7-df\"",
+      "file_path": "documentation/StateReporting/srstatereporter/reporttransitiontostatelabel_stablemetadata_volatilemetadata_.md",
+      "hash": "9c503ed30d447e392d0bf89b3065aa727b9b82cbeb210d2eebf8cc91c6ffa447"
+    },
+    "https://developer.apple.com/documentation/statereporting/srstatereporter/reportvolatilemetadataupdate:": {
+      "etag": "\"15f7-65d55edb1e9d7-df\"",
+      "file_path": "documentation/StateReporting/srstatereporter/reportvolatilemetadataupdate_.md",
+      "hash": "c3b524da4257a55d7221a1ada7ab837b364943398c20779f1e8c380403c39144"
+    },
     "https://developer.apple.com/documentation/statereporting/statereporter": {
       "etag": "\"4290-65d55edb1e9d7-df\"",
       "file_path": "documentation/StateReporting/statereporter.md",
@@ -305,6 +330,31 @@
       "file_path": "documentation/StateReporting/reportablemetadatavalue/string(_).md",
       "hash": "021c186fe9050beb2aceb90aa00a6aaff59d980b1e72f502b42a93140ab3c936"
     },
+    "https://developer.apple.com/tutorials/data/documentation/statereporting/srstatereporter.json": {
+      "etag": "\"2d37-65d55edb1e9d7-df\"",
+      "file_path": "documentation/StateReporting/srstatereporter.md",
+      "hash": "5f1cf93e90f07471656681e9f296aa41687f88a1b7de7eff1090625245166040"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/statereporting/srstatereporter/domain.json": {
+      "etag": "\"12a4-65d55edb1e9d7-df\"",
+      "file_path": "documentation/StateReporting/srstatereporter/domain.md",
+      "hash": "94cffabfbf49c7b16b099d401ec19a3f089c39113e9090e553d698bb8d3ec1af"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/statereporting/srstatereporter/reporterfordomain:.json": {
+      "etag": "\"1627-65d55edb1e9d7-df\"",
+      "file_path": "documentation/StateReporting/srstatereporter/reporterfordomain_.md",
+      "hash": "058dc868590f42c7b9ebc0d7550d132721d9f157130a4731d8b5db93fe20de26"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/statereporting/srstatereporter/reporttransitiontostatelabel:stablemetadata:volatilemetadata:.json": {
+      "etag": "\"2217-65d55edb1e9d7-df\"",
+      "file_path": "documentation/StateReporting/srstatereporter/reporttransitiontostatelabel_stablemetadata_volatilemetadata_.md",
+      "hash": "9c503ed30d447e392d0bf89b3065aa727b9b82cbeb210d2eebf8cc91c6ffa447"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/statereporting/srstatereporter/reportvolatilemetadataupdate:.json": {
+      "etag": "\"15f7-65d55edb1e9d7-df\"",
+      "file_path": "documentation/StateReporting/srstatereporter/reportvolatilemetadataupdate_.md",
+      "hash": "c3b524da4257a55d7221a1ada7ab837b364943398c20779f1e8c380403c39144"
+    },
     "https://developer.apple.com/tutorials/data/documentation/statereporting/statereporter.json": {
       "etag": "\"4290-65d55edb1e9d7-df\"",
       "file_path": "documentation/StateReporting/statereporter.md",
@@ -333,8 +383,8 @@
   },
   "metadata": {
     "render": {
-      "version": 1
+      "version": 2
     },
-    "total_pages": 66
+    "total_pages": 76
   }
 }

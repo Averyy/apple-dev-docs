@@ -54,6 +54,12 @@ BNNSReduceFunctionSumSquare
   A reduction function that computes the mean value of nonzero elements.
 - [var BNNSReduceFunctionMin: BNNSReduceFunction](./bnnsreducefunctionmin.md)
   A reduction function that computes the minimum value.
+- [BNNSReduceFunctionSum](./bnnsreducefunctionsum.md)
+  A reduction function that computes the sum of all values.
+- [BNNSReduceFunctionSumLog](./bnnsreducefunctionsumlog.md)
+  A reduction function that computes the sum of the natural logarithm of all values.
+- [BNNSReduceFunctionL2Norm](./bnnsreducefunctionl2norm.md)
+  A reduction function that computes the Euclidean norm.
 
 
 ---

@@ -127,6 +127,14 @@ The object represents the entire set of assets and collections that the Photos a
   Retrieves the equivalent local identifiers for the list of iCloud identifiers.
 - [let PHLocalIdentifierNotFound: String](./phlocalidentifiernotfound.md)
   A constant value that indicates that the system can’t resolve a local object from a global identifier.
+- [- cloudIdentifierMappingsForLocalIdentifiers:](./phphotolibrary/cloudidentifiermappingsforlocalidentifiers_.md)
+  Retrieves the cloud identifier mappings for the list of local identifiers.
+- [- localIdentifierMappingsForCloudIdentifiers:](./phphotolibrary/localidentifiermappingsforcloudidentifiers_.md)
+  Retrieves the local identifier mappings for the list of cloud identifiers.
+- [PHCloudIdentifierMapping](./phcloudidentifiermapping.md)
+  An object that contains the cloud identifier result from looking up a local identifier, or an error indicating why the lookup failed.
+- [PHLocalIdentifierMapping](./phlocalidentifiermapping.md)
+  An object that contains the local identifier result from looking up a cloud identifier, or an error indicating why the lookup failed.
 ### Enabling an Upload Job Extension
 - [var uploadJobExtensionEnabled: Bool](./phphotolibrary/uploadjobextensionenabled.md)
   A Boolean value that indicates whether background asset resource uploading is enabled.
@@ -147,6 +155,8 @@ The object represents the entire set of assets and collections that the Photos a
   Sets the options for the calling app’s background asset resource upload job configuration.
 - [func unregisterPersistentChangesObserver(any PHPhotoLibraryPersistentChangesObserver)](./phphotolibrary/unregisterpersistentchangesobserver%28_%29.md)
   Unregisters a previously registered persistent changes observer.
+- [- localIdentifierMappingsForSyncedCloudIdentifiers:](./phphotolibrary/localidentifiermappingsforsyncedcloudidentifiers_.md)
+  Returns a dictionary that maps each cloud identifier from the provided array to a `PHLocalIdentifierMapping` result containing the local identifier found for that cloud identifier if that cloud identifier is a known synced identifier.
 
 ## Relationships
 

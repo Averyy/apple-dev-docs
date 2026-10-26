@@ -34,6 +34,10 @@ class MDLAnimatedQuaternion
 - [func reset(floatQuaternionArray: [simd_quatf], atTimes: [TimeInterval])](./mdlanimatedquaternion/reset%28floatquaternionarray,attimes%29.md)
 - [func setDoubleQuaternion(simd_quatd, atTime: TimeInterval)](./mdlanimatedquaternion/setdoublequaternion%28_,attime%29.md)
 - [func setFloatQuaternion(simd_quatf, atTime: TimeInterval)](./mdlanimatedquaternion/setfloatquaternion%28_,attime%29.md)
+- [- getDoubleQuaternionArray:maxCount:](./mdlanimatedquaternion/getdoublequaternionarray_maxcount_.md)
+- [- getFloatQuaternionArray:maxCount:](./mdlanimatedquaternion/getfloatquaternionarray_maxcount_.md)
+- [- resetWithDoubleQuaternionArray:atTimes:count:](./mdlanimatedquaternion/resetwithdoublequaternionarray_attimes_count_.md)
+- [- resetWithFloatQuaternionArray:atTimes:count:](./mdlanimatedquaternion/resetwithfloatquaternionarray_attimes_count_.md)
 
 ## Relationships
 

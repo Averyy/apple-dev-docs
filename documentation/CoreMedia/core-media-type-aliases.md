@@ -20,6 +20,7 @@
 ### Reference
 - [Core Media Constants](./core-media-constants.md)
 - [Core Media Functions](./core-media-functions.md)
+- [Core Media Macros](./core-media-macros.md)
 
 
 ---

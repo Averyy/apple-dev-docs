@@ -49,6 +49,8 @@ This version 3 property is bridged to the version 2 `kAudioUnitProperty_BypassEf
   Determines whether an audio unit can process in place.
 - [var isRenderingOffline: Bool](./isrenderingoffline.md)
   Communicates to an audio unit that it is rendering offline.
+- [osWorkgroup](./osworkgroup.md)
+  The workgroup associated with the audio device underlying this Audio Unit.
 
 
 ---

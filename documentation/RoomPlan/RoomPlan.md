@@ -77,6 +77,11 @@ Mac apps built with Mac Catalyst can access [`CapturedRoom`](./capturedroom.md) 
   An object that combines multiple scan sessions into a single captured result.
 - [CapturedRoom.USDExportOptions](./capturedroom/usdexportoptions.md)
   Options that determine the underlying data format of a scan export.
+### Variables
+- [RoomPlanVersionNumber](./roomplanversionnumber.md)
+  Project version number for RoomPlan.
+- [RoomPlanVersionString](./roomplanversionstring.md)
+  Project version string for RoomPlan.
 
 
 ---

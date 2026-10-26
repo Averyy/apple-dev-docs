@@ -56,6 +56,10 @@ class func sheet(presentedFrom viewController: NSViewController) -> MKSelectionA
   Show map item detail as an annotation callout on the map
 - [class var openInMaps: MKSelectionAccessory.MapItemDetailPresentationStyle](./openinmaps.md)
   Display a small “Open in Apple Maps” link.
+- [+ automaticWithPresentationViewController:](../../mkmapitemdetailselectionaccessorypresentationstyle/automaticwithpresentationviewcontroller_.md)
+  An appropriate presentation style will be chosen automatically.
+- [+ calloutWithCalloutStyle:](../../mkmapitemdetailselectionaccessorypresentationstyle/calloutwithcalloutstyle_.md)
+  Show map item detail as an annotation callout on the map
 
 
 ---

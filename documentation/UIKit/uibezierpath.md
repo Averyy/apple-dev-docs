@@ -59,6 +59,8 @@ In addition to using a Bézier path object to draw shapes, you can also use it 
   Creates and returns an empty path object.
 - [init?(coder: NSCoder)](./uibezierpath/init%28coder%29.md)
   Creates a Bézier path object from data in an unarchiver.
+- [+ bezierPath](./uibezierpath/bezierpath.md)
+  Creates and returns a new Bézier path object.
 ### Constructing a path
 - [func move(to: CGPoint)](./uibezierpath/move%28to%29.md)
   Moves the path’s current point to the specified location.

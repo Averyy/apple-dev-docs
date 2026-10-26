@@ -16,6 +16,14 @@ The functions of the MapKit framework provide convenient ways to package map-rel
   Creates a new coordinate region from the specified coordinate and distance values.
 - [init(CLLocationCoordinate2D)](./mkmappoint/init%28_%29.md)
   Creates the map point data structure that corresponds to the specified coordinate.
+- [MKCoordinateRegionMake](./mkcoordinateregionmake.md)
+  Creates a new coordinate region from the specified coordinate and span values.
+- [MKCoordinateSpanMake](./mkcoordinatespanmake.md)
+  Creates a new [`MKCoordinateSpan`](./mkcoordinatespan.md) from the specified values.
+- [MKMapPointMake](./mkmappointmake.md)
+  Creates a new map point structure from the specified values.
+- [MKMapSizeMake](./mkmapsizemake.md)
+  Creates a new map size structure from the specified values.
 
 ## See Also
 

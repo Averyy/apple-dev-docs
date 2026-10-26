@@ -33,6 +33,8 @@ You can use this object to determine the primary language currently being used f
 ### Getting the current and active text-input modes
 - [class var activeInputModes: [UITextInputMode]](./uitextinputmode/activeinputmodes.md)
   The active text-input modes.
+- [+ currentInputMode](./uitextinputmode/currentinputmode.md)
+  Returns an instance representing the current text-input mode.
 ### Getting the primary language
 - [var primaryLanguage: String?](./uitextinputmode/primarylanguage.md)
   The primary language, if any, of the input mode.

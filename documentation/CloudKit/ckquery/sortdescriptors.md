@@ -38,6 +38,8 @@ The order of the items in the array defines the order that CloudKit applies the 
   The record type to search.
 - [var predicate: NSPredicate](./predicate.md)
   The predicate to use for matching records.
+- [recordType](./recordtype-3clp.md)
+  The record type to search.
 
 
 ---

@@ -36,6 +36,7 @@ This type is used in conjunction with the constants described in [Window Image T
   When capturing the window, return the nominal image resolution. The returned image size is the same as the screen size.
 - [static var onlyShadows: CGWindowImageOption](./cgwindowimageoption/onlyshadows.md)
 - [static var shouldBeOpaque: CGWindowImageOption](./cgwindowimageoption/shouldbeopaque.md)
+- [kCGWindowImageDefault](./cgwindowimageoption/kcgwindowimagedefault.md)
 
 ## Relationships
 

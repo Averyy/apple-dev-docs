@@ -56,6 +56,16 @@ Returns a projective transform with right-hand side perspective.
 - [init(fovyRadians: Double, aspectRatio: Double, nearZ: Double, farZ: Double, reverseZ: Bool)](./init%28fovyradians,aspectratio,nearz,farz,reversez%29.md)
   Returns a projective transform with right-hand-side perspective and optional reverse-z.
 - [init(translation: Size3D)](./init%28translation%29.md)
+- [SPProjectiveTransform3DSetOffset](../spprojectivetransform3dsetoffset.md)
+  Sets the translation of a projective transform.
+- [SPProjectiveTransform3DMakeTranslation](../spprojectivetransform3dmaketranslation-5hc37.md)
+  Creates a projective transform from the specified translate transform.
+- [SPProjectiveTransform3DMakeWithRHPerspective](../spprojectivetransform3dmakewithrhperspective-97qwp.md)
+  Returns a projective transform with right-hand side perspective.
+- [SPProjectiveTransform3DTranslate](../spprojectivetransform3dtranslate-4tynj.md)
+  Returns a transform with an origin that’s offset by the specified size.
+- [SPProjectiveTransform3DGetTranslation](../spprojectivetransform3dgettranslation.md)
+  The projective transform’s translation.
 
 
 ---

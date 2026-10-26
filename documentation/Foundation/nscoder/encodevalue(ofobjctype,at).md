@@ -70,6 +70,9 @@ You should not use this method to encode Objective-C objects. See [`decodeArray(
   Encodes a 32-bit integer value and associates it with the string key.
 - [func encode(Int64, forKey: String)](./encode%28_,forkey%29-dixg.md)
   Encodes a 64-bit integer value and associates it with the string key.
+### Related Documentation
+- [- encodeValuesOfObjCTypes:](./encodevaluesofobjctypes_.md)
+  Encodes a series of values of potentially differing Objective-C types.
 
 
 ---

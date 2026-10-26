@@ -30,6 +30,11 @@ typedef enum AXMenuItemModifiers : UInt32 {
 - [static var noCommand: AXMenuItemModifiers](./axmenuitemmodifiers/api-1464506-nocommand.md)
 - [static var option: AXMenuItemModifiers](./axmenuitemmodifiers/api-1462352-option.md)
 - [static var shift: AXMenuItemModifiers](./axmenuitemmodifiers/api-1461092-shift.md)
+- [kAXMenuItemModifierControl](./axmenuitemmodifiers/kaxmenuitemmodifiercontrol.md)
+- [kAXMenuItemModifierNoCommand](./axmenuitemmodifiers/kaxmenuitemmodifiernocommand.md)
+- [kAXMenuItemModifierOption](./axmenuitemmodifiers/kaxmenuitemmodifieroption.md)
+- [kAXMenuItemModifierShift](./axmenuitemmodifiers/kaxmenuitemmodifiershift.md)
+- [kAXMenuItemModifierNone](./axmenuitemmodifiers/kaxmenuitemmodifiernone.md)
 
 ## Relationships
 

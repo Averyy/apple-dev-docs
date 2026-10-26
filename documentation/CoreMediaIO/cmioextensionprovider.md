@@ -33,6 +33,8 @@ An extension provider manages device connections and provides the [`startService
 ### Creating a Provider
 - [init(source: any CMIOExtensionProviderSource, clientQueue: dispatch_queue_t?)](./cmioextensionprovider/init%28source,clientqueue%29.md)
   Creates an extension provider with the specified source and dispatch queue.
+- [+ providerWithSource:clientQueue:](./cmioextensionprovider/providerwithsource_clientqueue_.md)
+  Returns a new extension provider with the specified source and dispatch queue.
 ### Inspecting a Provider
 - [var clientQueue: dispatch_queue_t](./cmioextensionprovider/clientqueue.md)
   The dispatch queue on which the system performs client operations.

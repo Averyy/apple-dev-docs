@@ -40,6 +40,8 @@ Use this call to determine whether your program can accessfeatures of the Speech
   Determines whether any channels of speech are currentlysynthesizing speech.
 - [func SpeechBusySystemWide() -> Int16](./api-1460113-speechbusysystemwide.md)
   Determines if any speech is currently being synthesizedin your application or elsewhere on the computer.
+- [GetSpeechInfo](./api-1552220-getspeechinfo.md)
+  Gets information about a designated speech channel.
 
 
 ---

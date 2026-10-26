@@ -1,0 +1,79 @@
+# entryWithIdentifier:withClass:
+
+**Framework**: SceneKit  
+**Kind**: method  
+**Role**: Instance Method
+
+Loads and returns a specific object in the scene source.
+
+**Availability**:
+- iOS 8.0+ - Deprecated in 26.0
+- iPadOS 8.0+ - Deprecated in 26.0
+- Mac Catalyst 13.1+ - Deprecated in 26.0
+- macOS 10.8+ - Deprecated in 26.0
+- tvOS 9.0+ - Deprecated in 26.0
+- visionOS 1.0+ - Deprecated in 26.0
+- watchOS 3.0+ - Deprecated in 26.0
+
+## Declaration
+
+```objc
+- (id) entryWithIdentifier:(NSString *) uid withClass:(Class) entryClass;
+```
+
+#### Return Value
+
+A new SceneKit object containing the requested scene source entry, or `nil` if no such object exists in the scene source.
+
+#### Discussion
+
+SceneKit recognizes objects of the following classes in scene files:
+
+- [`CAAnimation`](../../QuartzCore/caanimation.md)
+- [`NSImage`](../../AppKit/nsimage.md) (macOS) or [`UIImage`](../../UIKit/uiimage.md) (iOS/watchOS/tvOS)
+- [`SCNCamera`](../scncamera.md)
+- [`SCNGeometry`](../scngeometry.md)
+- [`SCNLight`](../scnlight.md)
+- [`SCNMaterial`](../scnmaterial.md)
+- [`SCNMorpher`](../scnmorpher.md)
+- [`SCNNode`](../scnnode.md)
+- [`SCNScene`](../scnscene.md)
+- [`SCNSkinner`](../scnskinner.md)
+
+Each object in a scene file has an identifier that is unique for its class. These identifiers are determined by the software that created the scene file—for example, they may be descriptive names assigned by an artist using 3D authoring tools. For SceneKit classes with a [`name`](../scnnode/name.md) property (such as nodes and geometries), the name of an object loaded from a scene file is based on its identifier in the scene file.
+
+If you don’t have the identifier for an object you want to load, use the [`identifiersOfEntries(withClass:)`](./identifiersofentries%28withclass%29.md) method to find the identifiers for objects in a scene file. You can also see the identifier for each object in a scene file when viewing it in Xcode’s scene editor.
+
+Calling this method instantiates an object of the specified SceneKit class and loads all content from the scene file corresponding to the requested entry. Keep in mind that loading one SceneKit object may also load other objects and their contents, such as the lights, cameras, or geometries attached to a node.
+
+For example, the following method finds the identifier for a geometry and then loads it (and any animations or materials attached to it):
+
+```objc
+- (SCNGeometry *)loadSpaceshipFromSceneSource:(SCNSceneSource *)sceneSource;
+{
+    NSArray *identifiers = [sceneSource identifiersOfEntriesWithClass:[SCNGeometry class]];
+    for (NSString *identifier in identifiers) {
+        if ([identifier rangeOfString:@"spaceship"].location != NSNotFound)
+            return [sceneSource entryWithIdentifier:identifier withClass:[SCNGeometry class]];
+    }
+    return nil;
+}
+```
+
+## Parameters
+
+- `uid`: The unique identifier of an object in the scene source.
+- `entryClass`: The class of object to load.
+
+## See Also
+
+### Loading and Inspecting Scene Elements
+- [func identifiersOfEntries(withClass: AnyClass) -> [String]](./identifiersofentries%28withclass%29.md)
+  Returns the identifiers for all objects in the scene source of the specified class.
+- [func entries(passingTest: (Any, String, UnsafeMutablePointer<ObjCBool>) -> Bool) -> [Any]](./entries%28passingtest%29.md)
+  Loads and returns all objects in the scene source that pass the test in a given block.
+
+
+---
+
+*[View on Apple Developer](https://developer.apple.com/documentation/scenekit/scnscenesource/entrywithidentifier:withclass:)*

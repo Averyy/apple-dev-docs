@@ -1,0 +1,33 @@
+# clearConfiguration
+
+**Framework**: UIKit  
+**Kind**: method  
+**Role**: Type Method
+
+Creates an empty background configuration with a transparent background and no default styling.
+
+**Availability**:
+- iOS 14.0+
+- iPadOS 14.0+
+- Mac Catalyst 14.0+
+- tvOS 14.0+
+- visionOS 1.0+
+
+## Declaration
+
+```objc
++ (instancetype) clearConfiguration;
+```
+
+#### Return Value
+
+An empty background configuration with a transparent background and no default styling.
+
+#### Discussion
+
+Create this configuration for the background of a view. It configures the view with a transparent background and no default styling.
+
+
+---
+
+*[View on Apple Developer](https://developer.apple.com/documentation/uikit/uibackgroundconfiguration-c.class/clearconfiguration)*

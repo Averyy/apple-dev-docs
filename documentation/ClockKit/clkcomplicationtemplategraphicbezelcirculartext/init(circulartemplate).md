@@ -30,6 +30,10 @@ init(circularTemplate: CLKComplicationTemplateGraphicCircular)
 ### Creating the Template
 - [init(circularTemplate: CLKComplicationTemplateGraphicCircular, textProvider: CLKTextProvider?)](./init%28circulartemplate,textprovider%29.md)
   Creates a circular template with text that wraps around the bezel.
+- [+ templateWithCircularTemplate:](./templatewithcirculartemplate_.md)
+  Returns a circular template.
+- [+ templateWithCircularTemplate:textProvider:](./templatewithcirculartemplate_textprovider_.md)
+  Returns a circular template with text that wraps around the bezel.
 
 
 ---

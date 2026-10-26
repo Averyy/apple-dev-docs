@@ -9,9 +9,9 @@ Send messages and search the user’s received messages.
 
 With messaging intents, users can ask Siri to compose new messages, read existing messages, and indicate to other users whether they’re available.
 
-To allow users to compose and send text or audio messages with your service, support [`INSendMessageIntent`](https://developer.apple.com/documentation/intents/insendmessageintent). Donate interactions when the user sends and receives messages in your app to give the system cues about which contacts to suggest in Share Sheets.
+To allow users to compose and send text or audio messages with your service, support [`INSendMessageIntent`](../Intents/insendmessageintent.md). Donate interactions when the user sends and receives messages in your app to give the system cues about which contacts to suggest in Share Sheets.
 
-Support [`INSearchForMessagesIntent`](https://developer.apple.com/documentation/intents/insearchformessagesintent) and [`INSetMessageAttributeIntent`](https://developer.apple.com/documentation/intents/insetmessageattributeintent) to allow Siri to announce incoming messages on AirPods, and mark announced messages as [`INMessageAttribute.read`](https://developer.apple.com/documentation/intents/inmessageattribute/read) or [`INMessageAttribute.played`](https://developer.apple.com/documentation/intents/inmessageattribute/played). Adopting [`INSearchForMessagesIntent`](https://developer.apple.com/documentation/intents/insearchformessagesintent) also enables users to see incoming messages on a [`INCarAudioSource.sourceCarPlay`](https://developer.apple.com/documentation/intents/incaraudiosource/sourcecarplay)-enabled display.
+Support [`INSearchForMessagesIntent`](../Intents/insearchformessagesintent.md) and [`INSetMessageAttributeIntent`](../Intents/insetmessageattributeintent.md) to allow Siri to announce incoming messages on AirPods, and mark announced messages as [`INMessageAttribute.read`](../Intents/inmessageattribute/read.md) or [`INMessageAttribute.played`](../Intents/inmessageattribute/played.md). Adopting [`INSearchForMessagesIntent`](../Intents/insearchformessagesintent.md) also enables users to see incoming messages on a [`INCarAudioSource.sourceCarPlay`](../Intents/incaraudiosource/sourcecarplay.md)-enabled display.
 
 ![A flow diagram going from left to right. On the left is an image of a user asking Siri to send a text. In the middle is an icon of Siri sending the user’s request to an app. On the right is the text the user asked Siri to send.](https://developer.apple.com/tutorials/images/com.apple.sirikit/media-3743234@2x.png)
 
@@ -23,82 +23,82 @@ In iOS, you can use an Intents UI app extension to display a custom message comp
 - [Improving interactions between Siri and your messaging app](./improving-interactions-between-siri-and-your-messaging-app.md)
   Donate app-specific content, use Siri’s contact suggestions, and adopt the latest platform features to create a more consistent messaging experience.
 ### Sending a Message
-- [protocol INSendMessageIntentHandling](https://developer.apple.com/documentation/intents/insendmessageintenthandling)
+- [protocol INSendMessageIntentHandling](../Intents/insendmessageintenthandling.md)
   An interface to handle sending messages to one or more designated users.
-- [class INSendMessageIntent](https://developer.apple.com/documentation/intents/insendmessageintent)
+- [class INSendMessageIntent](../Intents/insendmessageintent.md)
   A request to send a message to the designated recipients.
-- [class INSendMessageIntentResponse](https://developer.apple.com/documentation/intents/insendmessageintentresponse)
+- [class INSendMessageIntentResponse](../Intents/insendmessageintentresponse.md)
   Your app’s response to a send message intent.
-- [enum INOutgoingMessageType](https://developer.apple.com/documentation/intents/inoutgoingmessagetype)
+- [enum INOutgoingMessageType](../Intents/inoutgoingmessagetype.md)
   The format of the message.
-- [class INSendMessageAttachment](https://developer.apple.com/documentation/intents/insendmessageattachment)
+- [class INSendMessageAttachment](../Intents/insendmessageattachment.md)
   A file to include in a message.
-- [class INSendMessageIntentDonationMetadata](https://developer.apple.com/documentation/intents/insendmessageintentdonationmetadata)
+- [class INSendMessageIntentDonationMetadata](../Intents/insendmessageintentdonationmetadata.md)
 ### Editing a Message
-- [class INEditMessageIntent](https://developer.apple.com/documentation/intents/ineditmessageintent)
-- [class INEditMessageIntentResponse](https://developer.apple.com/documentation/intents/ineditmessageintentresponse)
-- [protocol INEditMessageIntentHandling](https://developer.apple.com/documentation/intents/ineditmessageintenthandling)
-- [enum INEditMessageIntentResponseCode](https://developer.apple.com/documentation/intents/ineditmessageintentresponsecode)
+- [class INEditMessageIntent](../Intents/ineditmessageintent.md)
+- [class INEditMessageIntentResponse](../Intents/ineditmessageintentresponse.md)
+- [protocol INEditMessageIntentHandling](../Intents/ineditmessageintenthandling.md)
+- [enum INEditMessageIntentResponseCode](../Intents/ineditmessageintentresponsecode.md)
 ### Unsending a Message
-- [class INUnsendMessagesIntent](https://developer.apple.com/documentation/intents/inunsendmessagesintent)
-- [class INUnsendMessagesIntentResponse](https://developer.apple.com/documentation/intents/inunsendmessagesintentresponse)
-- [protocol INUnsendMessagesIntentHandling](https://developer.apple.com/documentation/intents/inunsendmessagesintenthandling)
-- [enum INUnsendMessagesIntentResponseCode](https://developer.apple.com/documentation/intents/inunsendmessagesintentresponsecode)
+- [class INUnsendMessagesIntent](../Intents/inunsendmessagesintent.md)
+- [class INUnsendMessagesIntentResponse](../Intents/inunsendmessagesintentresponse.md)
+- [protocol INUnsendMessagesIntentHandling](../Intents/inunsendmessagesintenthandling.md)
+- [enum INUnsendMessagesIntentResponseCode](../Intents/inunsendmessagesintentresponsecode.md)
 ### Reacting to a Message
-- [enum INMessageReactionType](https://developer.apple.com/documentation/intents/inmessagereactiontype)
-- [class INMessageLinkMetadata](https://developer.apple.com/documentation/intents/inmessagelinkmetadata)
-- [class INMessageReaction](https://developer.apple.com/documentation/intents/inmessagereaction)
-- [class INSticker](https://developer.apple.com/documentation/intents/insticker)
+- [enum INMessageReactionType](../Intents/inmessagereactiontype.md)
+- [class INMessageLinkMetadata](../Intents/inmessagelinkmetadata.md)
+- [class INMessageReaction](../Intents/inmessagereaction.md)
+- [class INSticker](../Intents/insticker.md)
 ### Searching for Messages
-- [protocol INSearchForMessagesIntentHandling](https://developer.apple.com/documentation/intents/insearchformessagesintenthandling)
+- [protocol INSearchForMessagesIntentHandling](../Intents/insearchformessagesintenthandling.md)
   An interface that handles requests to search the current user’s messages.
-- [class INSearchForMessagesIntent](https://developer.apple.com/documentation/intents/insearchformessagesintent)
+- [class INSearchForMessagesIntent](../Intents/insearchformessagesintent.md)
   A request to list the messages that match the specified criteria.
-- [class INSearchForMessagesIntentResponse](https://developer.apple.com/documentation/intents/insearchformessagesintentresponse)
+- [class INSearchForMessagesIntentResponse](../Intents/insearchformessagesintentresponse.md)
   Your app’s response to a search for messages intent.
 ### Setting Message Attributes
-- [protocol INSetMessageAttributeIntentHandling](https://developer.apple.com/documentation/intents/insetmessageattributeintenthandling)
+- [protocol INSetMessageAttributeIntentHandling](../Intents/insetmessageattributeintenthandling.md)
   An interface that handles modifying message attributes.
-- [class INSetMessageAttributeIntent](https://developer.apple.com/documentation/intents/insetmessageattributeintent)
+- [class INSetMessageAttributeIntent](../Intents/insetmessageattributeintent.md)
   A request to modify the attributes of a message.
-- [class INSetMessageAttributeIntentResponse](https://developer.apple.com/documentation/intents/insetmessageattributeintentresponse)
+- [class INSetMessageAttributeIntentResponse](../Intents/insetmessageattributeintentresponse.md)
   Your app’s response to a set message attribute intent.
 ### Sharing the User’s Focus Status
-- [protocol INShareFocusStatusIntentHandling](https://developer.apple.com/documentation/intents/insharefocusstatusintenthandling)
+- [protocol INShareFocusStatusIntentHandling](../Intents/insharefocusstatusintenthandling.md)
   A set of methods an object implements to process intents that share the user’s focus status.
-- [class INShareFocusStatusIntent](https://developer.apple.com/documentation/intents/insharefocusstatusintent)
+- [class INShareFocusStatusIntent](../Intents/insharefocusstatusintent.md)
   An object that indicates the user’s focus status is changing.
-- [class INShareFocusStatusIntentResponse](https://developer.apple.com/documentation/intents/insharefocusstatusintentresponse)
+- [class INShareFocusStatusIntentResponse](../Intents/insharefocusstatusintentresponse.md)
   Your app’s response to an intent that shares the user’s focus status.
-- [enum INShareFocusStatusIntentResponseCode](https://developer.apple.com/documentation/intents/insharefocusstatusintentresponsecode)
+- [enum INShareFocusStatusIntentResponseCode](../Intents/insharefocusstatusintentresponsecode.md)
   A constant that indicates your app’s ability to handle an intent to share the user’s focus status.
-- [class INFocusStatus](https://developer.apple.com/documentation/intents/infocusstatus)
+- [class INFocusStatus](../Intents/infocusstatus.md)
   The user’s preference for receiving notifications.
-- [class INFocusStatusCenter](https://developer.apple.com/documentation/intents/infocusstatuscenter)
+- [class INFocusStatusCenter](../Intents/infocusstatuscenter.md)
   An object that maintains the user’s current focus status and your app’s ability to access it.
-- [enum INFocusStatusAuthorizationStatus](https://developer.apple.com/documentation/intents/infocusstatusauthorizationstatus)
+- [enum INFocusStatusAuthorizationStatus](../Intents/infocusstatusauthorizationstatus.md)
   A constant that indicates whether your app has authorization to access the user’s focus status.
 ### Managing Message Information
-- [class INMessage](https://developer.apple.com/documentation/intents/inmessage)
+- [class INMessage](../Intents/inmessage.md)
   An object that describes a sent or received message.
-- [enum INMessageAttribute](https://developer.apple.com/documentation/intents/inmessageattribute)
+- [enum INMessageAttribute](../Intents/inmessageattribute.md)
   Constants that indicate an attribute of a message.
-- [struct INMessageAttributeOptions](https://developer.apple.com/documentation/intents/inmessageattributeoptions)
+- [struct INMessageAttributeOptions](../Intents/inmessageattributeoptions.md)
   Constants that indicate a message search filter.
-- [class INPerson](https://developer.apple.com/documentation/intents/inperson)
+- [class INPerson](../Intents/inperson.md)
   Information about a person participating in a SiriKit interaction.
 ### Providing Resolution Results
-- [class INMessageAttributeResolutionResult](https://developer.apple.com/documentation/intents/inmessageattributeresolutionresult)
+- [class INMessageAttributeResolutionResult](../Intents/inmessageattributeresolutionresult.md)
   A resolution result for assorted attributes of a message.
-- [class INMessageAttributeOptionsResolutionResult](https://developer.apple.com/documentation/intents/inmessageattributeoptionsresolutionresult)
+- [class INMessageAttributeOptionsResolutionResult](../Intents/inmessageattributeoptionsresolutionresult.md)
   A resolution result for a search parameter that filters by message status.
-- [class INDateComponentsRangeResolutionResult](https://developer.apple.com/documentation/intents/indatecomponentsrangeresolutionresult)
+- [class INDateComponentsRangeResolutionResult](../Intents/indatecomponentsrangeresolutionresult.md)
   A resolution result for a range of dates in a parameter of an intent.
-- [class INSendMessageRecipientResolutionResult](https://developer.apple.com/documentation/intents/insendmessagerecipientresolutionresult)
+- [class INSendMessageRecipientResolutionResult](../Intents/insendmessagerecipientresolutionresult.md)
   A resolution result for the recipient of a message.
-- [class INPersonResolutionResult](https://developer.apple.com/documentation/intents/inpersonresolutionresult)
+- [class INPersonResolutionResult](../Intents/inpersonresolutionresult.md)
   A resolution result for a user as a parameter of an intent.
-- [class INOutgoingMessageTypeResolutionResult](https://developer.apple.com/documentation/intents/inoutgoingmessagetyperesolutionresult)
+- [class INOutgoingMessageTypeResolutionResult](../Intents/inoutgoingmessagetyperesolutionresult.md)
   A resolution result for the message’s format.
 
 ## See Also

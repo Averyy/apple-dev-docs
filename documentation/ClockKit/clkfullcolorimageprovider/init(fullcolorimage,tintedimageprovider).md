@@ -37,6 +37,10 @@ For information about the image sizes and masks used by the different complicati
 ### Creating an Image Provider
 - [convenience init(fullColorImage: UIImage)](./init%28fullcolorimage%29.md)
   Creates an image provider with the specified full-color image.
+- [- initWithFullColorImage:](./initwithfullcolorimage_.md)
+  Creates an image provider with the specified full-color image.
+- [- initWithFullColorImage:tintedImageProvider:](./initwithfullcolorimage_tintedimageprovider_.md)
+  Creates an image provider that produces full-color and tinted images.
 
 
 ---

@@ -5,6 +5,16 @@
       "file_path": "documentation/SafetyKit/SafetyKit.md",
       "hash": "626c05eb83a6371580a1c978b5ab5bde622fbf1e99b24c37d52f4179f2814ecf"
     },
+    "https://developer.apple.com/documentation/safetykit/sa_export": {
+      "etag": "\"99a-65d55d3972993-df\"",
+      "file_path": "documentation/SafetyKit/sa_export.md",
+      "hash": "17ac51f75dd0af4d90aa35efb7f181d0611fcffa5aeefa3d50679e3eae51a1ce"
+    },
+    "https://developer.apple.com/documentation/safetykit/sa_extern": {
+      "etag": "\"99a-65d55d396a4e5-df\"",
+      "file_path": "documentation/SafetyKit/sa_extern.md",
+      "hash": "e54ae524d175afbe842daa6dc2c83d60b54d2a0b0771a67d6eb04879c5bddcda"
+    },
     "https://developer.apple.com/documentation/safetykit/saauthorizationstatus": {
       "etag": "\"4fdb-65d55d396a4e5-df\"",
       "file_path": "documentation/SafetyKit/saauthorizationstatus.md",
@@ -235,6 +245,16 @@
       "file_path": "documentation/SafetyKit/SafetyKit.md",
       "hash": "626c05eb83a6371580a1c978b5ab5bde622fbf1e99b24c37d52f4179f2814ecf"
     },
+    "https://developer.apple.com/tutorials/data/documentation/safetykit/sa_export.json": {
+      "etag": "\"99a-65d55d3972993-df\"",
+      "file_path": "documentation/SafetyKit/sa_export.md",
+      "hash": "17ac51f75dd0af4d90aa35efb7f181d0611fcffa5aeefa3d50679e3eae51a1ce"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/safetykit/sa_extern.json": {
+      "etag": "\"99a-65d55d396a4e5-df\"",
+      "file_path": "documentation/SafetyKit/sa_extern.md",
+      "hash": "e54ae524d175afbe842daa6dc2c83d60b54d2a0b0771a67d6eb04879c5bddcda"
+    },
     "https://developer.apple.com/tutorials/data/documentation/safetykit/saauthorizationstatus.json": {
       "etag": "\"4fdb-65d55d396a4e5-df\"",
       "file_path": "documentation/SafetyKit/saauthorizationstatus.md",
@@ -463,8 +483,8 @@
   },
   "metadata": {
     "render": {
-      "version": 1
+      "version": 2
     },
-    "total_pages": 92
+    "total_pages": 96
   }
 }

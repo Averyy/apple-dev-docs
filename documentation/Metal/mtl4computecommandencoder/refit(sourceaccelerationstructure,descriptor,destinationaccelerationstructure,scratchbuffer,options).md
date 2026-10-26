@@ -47,6 +47,12 @@ Use an instance of [`MTLResidencySet`](../mtlresidencyset.md) to mark residency 
 - `scratchBuffer`: Scratch buffer Metal can use while refitting the acceleration structure. Metal may overwrite the contents of this buffer, and you should consider them “undefined” after the refit operation starts and completes.
 - `options`: Options specifying the elements of the acceleration structure to refit.
 
+## See Also
+
+### Encoding acceleration structure refit commands
+- [- refitAccelerationStructure:descriptor:destination:scratchBuffer:](./refitaccelerationstructure_descriptor_destination_scratchbuffer_.md)
+  Encodes an acceleration structure refit into the command buffer.
+
 
 ---
 

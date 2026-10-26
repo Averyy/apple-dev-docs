@@ -43,6 +43,26 @@ Transform vectors of temporal and spatial domain complex values to the frequency
   An enumeration that specifies whether to perform a forward or inverse DFT.
 ### Enumerations
 - [enum vDSP_DFT_RealtoComplex](./vdsp_dft_realtocomplex.md)
+### Real discrete Fourier transform setup
+- [vDSP_DFT_zrop_CreateSetup](./vdsp_dft_zrop_createsetup.md)
+  Returns a setup structure that contains precalculated data for forward and inverse, real, single-precision DFT functions.
+- [vDSP_DFT_zrop_CreateSetupD](./vdsp_dft_zrop_createsetupd.md)
+  Returns a setup structure that contains precalculated data for forward and inverse, real, double-precision DFT functions.
+### Complex discrete Fourier transform setup
+- [vDSP_DFT_zop_CreateSetup](./vdsp_dft_zop_createsetup.md)
+  Returns a setup structure that contains precalculated data for forward and inverse, complex, single-precision DFT functions.
+- [vDSP_DFT_zop_CreateSetupD](./vdsp_dft_zop_createsetupd.md)
+  Returns a setup structure that contains precalculated data for forward and inverse, complex, double-precision DFT functions.
+### Functions to perform discrete Fourier transforms
+- [vDSP_DFT_Execute](./vdsp_dft_execute.md)
+  Calculates the discrete single-precision Fourier transform for a vector.
+- [vDSP_DFT_ExecuteD](./vdsp_dft_executed.md)
+  Calculates the discrete double-precision Fourier transform for a vector.
+### Discrete Fourier transform cleanup
+- [vDSP_DFT_DestroySetup](./vdsp_dft_destroysetup.md)
+  Releases a single-precision setup structure.
+- [vDSP_DFT_DestroySetupD](./vdsp_dft_destroysetupd.md)
+  Releases a double-precision setup structure.
 
 ## See Also
 

@@ -37,6 +37,8 @@ class MPSCNNLocalContrastNormalizationGradientNode
 - [var p0: Float](./mpscnnlocalcontrastnormalizationgradientnode/p0.md)
 - [var pm: Float](./mpscnnlocalcontrastnormalizationgradientnode/pm.md)
 - [var ps: Float](./mpscnnlocalcontrastnormalizationgradientnode/ps.md)
+### Type Methods
+- [+ nodeWithSourceGradient:sourceImage:gradientState:kernelWidth:kernelHeight:](./mpscnnlocalcontrastnormalizationgradientnode/nodewithsourcegradient_sourceimage_gradientstate_kernelwidth_kernelheight_.md)
 
 ## Relationships
 

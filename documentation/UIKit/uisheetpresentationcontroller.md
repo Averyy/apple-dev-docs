@@ -78,6 +78,10 @@ Sheet presentation controllers specify a sheet’s size based on a *detent*, a h
   A Boolean value that determines whether the sheet’s width matches its view controller’s preferred content size.
 - [var preferredCornerRadius: CGFloat?](./uisheetpresentationcontroller/preferredcornerradius-3mb5.md)
   The corner radius that the sheet attempts to present with.
+- [preferredCornerRadius](./uisheetpresentationcontroller/preferredcornerradius-358tc.md)
+  The corner radius that the sheet attempts to present with.
+- [UISheetPresentationControllerAutomaticDimension](./uisheetpresentationcontrollerautomaticdimension.md)
+  The default value to apply to a dimension.
 ### Customizing the position
 - [var sourceView: UIView?](./uisheetpresentationcontroller/sourceview.md)
   The view that the sheet centers itself over.

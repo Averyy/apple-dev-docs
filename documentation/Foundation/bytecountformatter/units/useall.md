@@ -46,6 +46,8 @@ NSByteCountFormatterUseAll
   Displays zettabytes in the formatter content.
 - [static var useYBOrHigher: ByteCountFormatter.Units](./useyborhigher.md)
   Displays yottabytes in the formatter content.
+- [NSByteCountFormatterUseDefault](../../nsbytecountformatterunits/nsbytecountformatterusedefault.md)
+  This causes default units appropriate for the platform to be used. This is the default.
 
 
 ---

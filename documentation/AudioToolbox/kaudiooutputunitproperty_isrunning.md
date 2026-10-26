@@ -39,6 +39,8 @@ kAudioOutputUnitProperty_IsRunning
   A write-only `AudioOutputUnitStartAtTimeParams` data structure valid on the audio unit global scope. When this property is set on an output unit, it will cause the next Start request (but no subsequent Starts) to use the AudioDeviceStartAtTime function, using the specified timestamp, passing false for `inRequestedStartTimeIsInput`.
 - [var kAudioOutputUnitProperty_StartTimestampsAtZero: AudioUnitPropertyID](./kaudiooutputunitproperty_starttimestampsatzero.md)
   A read/write `UInt32` value valid on the audio unit global scope.
+- [kAudioOutputUnitProperty_OSWorkgroup](./kaudiooutputunitproperty_osworkgroup.md)
+  The workgroup associated with the audio device underlying this Audio Unit.
 
 
 ---

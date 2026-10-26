@@ -23,6 +23,12 @@ var debugDescription: String { get }
 NSString *MLCArithmeticOperationDebugDescription(MLCArithmeticOperation operation);
 ```
 
+## See Also
+
+### Debugging
+- [MLCArithmeticOperationCount](./mlcarithmeticoperationcount.md)
+  The total number of arithmetic operations.
+
 
 ---
 

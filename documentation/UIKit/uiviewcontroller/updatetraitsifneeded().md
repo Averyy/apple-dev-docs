@@ -34,6 +34,10 @@ The system sends trait change callbacks synchronously.
   A mutable container of traits you use to set trait changes for this view controller and its views.
 - [struct UITraitOverrides](../uitraitoverrides-swift.struct.md)
   A mutable container of traits you use to set trait changes for an object and its descendants.
+- [traitOverrides](./traitoverrides-8u19n.md)
+  A mutable container of traits you use to set trait changes for this view controller and its views.
+- [UITraitOverrides](../uitraitoverrides-c.protocol.md)
+  A mutable container of traits you use to set trait changes for an object and its descendants.
 
 
 ---

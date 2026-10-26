@@ -34,6 +34,8 @@ If the bundle does not contain an `Info.plist` file, this dictionary contains on
 ### Related Documentation
 - [var principalClass: AnyClass?](./principalclass.md)
   The bundle’s principal class.
+- [+ dictionaryWithContentsOfFile:](../nsdictionary/dictionarywithcontentsoffile_.md)
+  Creates a dictionary using the keys and values found in a file specified by a given path.
 ### Getting bundle information
 - [var bundleURL: URL](./bundleurl.md)
   The full URL of the receiver’s bundle directory.

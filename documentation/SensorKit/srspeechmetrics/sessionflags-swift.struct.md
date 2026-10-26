@@ -33,6 +33,9 @@ Use these flags to determine whether audio processing went through the system vo
 ### Creating session flags
 - [init(rawValue: UInt)](./sessionflags-swift.struct/init%28rawvalue%29.md)
   Creates and returns a new structure with the specified value.
+### Enumeration Cases
+- [SRSpeechMetricsSessionFlagsDefault](../srspeechmetricssessionflags/srspeechmetricssessionflagsdefault.md)
+  Audio processing went through the system voice processor.
 
 ## Relationships
 

@@ -63,6 +63,10 @@ When you create a linguistic tagger, you specify what kind of information you’
   Sets the language for a range of text within the tagger’s string.
 - [func setOrthography(NSOrthography, range: Range<String.Index>)](./nltagger/setorthography%28_,range%29.md)
   Sets the orthography for the specified range.
+- [- setLanguage:range:](./nltagger/setlanguage_range_.md)
+  Sets the language for a range of text within the tagger’s string.
+- [- setOrthography:range:](./nltagger/setorthography_range_.md)
+  Sets the orthography for the specified range.
 ### Enumerating linguistic tags
 - [func enumerateTags(in: Range<String.Index>, unit: NLTokenUnit, scheme: NLTagScheme, options: NLTagger.Options, using: (NLTag?, Range<String.Index>) -> Bool)](./nltagger/enumeratetags%28in,unit,scheme,options,using%29.md)
   Enumerates a block over the tagger’s string, given a range, token unit, and tag scheme.
@@ -70,12 +74,20 @@ When you create a linguistic tagger, you specify what kind of information you’
   Constants for linguistic tagger enumeration specifying which tokens to omit and whether to join names.
 - [struct NLTag](./nltag.md)
   A token type, lexical class, name, lemma, language, or script returned by a linguistic tagger for natural language text.
+- [- enumerateTagsInRange:unit:scheme:options:usingBlock:](./nltagger/enumeratetagsinrange_unit_scheme_options_usingblock_.md)
+  Enumerates a block over the tagger’s string, given a range, token unit, and tag scheme.
 ### Getting linguistic tags
 - [func tags(in: Range<String.Index>, unit: NLTokenUnit, scheme: NLTagScheme, options: NLTagger.Options) -> [(NLTag?, Range<String.Index>)]](./nltagger/tags%28in,unit,scheme,options%29.md)
   Finds an array of linguistic tags and token ranges for a given string range and linguistic unit.
 - [func tag(at: String.Index, unit: NLTokenUnit, scheme: NLTagScheme) -> (NLTag?, Range<String.Index>)](./nltagger/tag%28at,unit,scheme%29.md)
   Finds a tag for a given linguistic unit, for a single scheme, at the specified character position.
 - [func tagHypotheses(at: String.Index, unit: NLTokenUnit, scheme: NLTagScheme, maximumCount: Int) -> ([String : Double], Range<String.Index>)](./nltagger/taghypotheses%28at,unit,scheme,maximumcount%29.md)
+  Finds multiple possible tags for a given linguistic unit, for a single scheme, at the specified character position.
+- [- tagsInRange:unit:scheme:options:tokenRanges:](./nltagger/tagsinrange_unit_scheme_options_tokenranges_.md)
+  Finds an array of linguistic tags and token ranges for a given string range and linguistic unit.
+- [- tagAtIndex:unit:scheme:tokenRange:](./nltagger/tagatindex_unit_scheme_tokenrange_.md)
+  Finds a tag for a given linguistic unit, for a single scheme, at the specified character position.
+- [- tagHypothesesAtIndex:unit:scheme:maximumCount:tokenRange:](./nltagger/taghypothesesatindex_unit_scheme_maximumcount_tokenrange_.md)
   Finds multiple possible tags for a given linguistic unit, for a single scheme, at the specified character position.
 ### Determining the range of a unit token
 - [func tokenRange(at: String.Index, unit: NLTokenUnit) -> Range<String.Index>](./nltagger/tokenrange%28at,unit%29.md)
@@ -84,6 +96,10 @@ When you create a linguistic tagger, you specify what kind of information you’
   Finds the entire range of all tokens of the specified linguistic unit contained completely or partially within the specified range.
 - [enum NLTokenUnit](./nltokenunit.md)
   Constants representing linguistic units.
+- [- tokenRangeAtIndex:unit:](./nltagger/tokenrangeatindex_unit_.md)
+  Returns the range of the linguistic unit containing the specified character index.
+- [- tokenRangeForRange:unit:](./nltagger/tokenrangeforrange_unit_.md)
+  Finds the entire range of all tokens of the specified linguistic unit contained completely or partially within the specified range.
 ### Using models with a tagger
 - [func setModels([NLModel], forTagScheme: NLTagScheme)](./nltagger/setmodels%28_,fortagscheme%29.md)
   Assigns models for a tag scheme.

@@ -29,6 +29,8 @@ class PHPersistentChangeFetchResult
 ### Performing Operations with Objects in a Fetch Request
 - [class PHPersistentChange](./phpersistentchange.md)
   An object that represents a change in the Photos library, and allows for requesting local identifiers that identify the changes for a library object.
+- [- enumerateChangesWithBlock:](./phpersistentchangefetchresult/enumeratechangeswithblock_.md)
+  Executes the block you specify by using the objects in the fetch result.
 
 ## Relationships
 

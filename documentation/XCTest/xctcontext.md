@@ -30,6 +30,8 @@ class XCTContext
 ### Running Activities
 - [class func runActivity<Result>(named: String, block: (any XCTActivity) throws -> Result) rethrows -> Result](./xctcontext/runactivity%28named,block%29.md)
   Creates and runs an activity with the provided block of code.
+- [+ runActivityNamed:block:](./xctcontext/runactivitynamed_block_.md)
+  Creates and runs an activity with the provided block of code.
 
 ## Relationships
 

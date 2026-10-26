@@ -71,6 +71,8 @@ enum PHPhotosError : NSInteger;
   An error that indicates the photo library isn’t available because the user switches the system’s photo library.
 - [PHPhotosError.Code.userCancelled](./code/usercancelled.md)
   An error that indicates the user cancels the asset retrieval or editing request.
+- [PHPhotosErrorInvalid](../phphotoserror-c.enum/phphotoserrorinvalid.md)
+  An error that indicates the operation isn’t valid.
 ### Initializers
 - [init?(rawValue: Int)](./code/init%28rawvalue%29.md)
 

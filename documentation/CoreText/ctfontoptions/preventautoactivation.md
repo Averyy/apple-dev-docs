@@ -30,6 +30,8 @@ kCTFontOptionsPreventAutoActivation
 ### Constants
 - [static var preferSystemFont: CTFontOptions](./prefersystemfont.md)
   Font matching prefers to match Apple system fonts.
+- [kCTFontOptionsDefault](./kctfontoptionsdefault.md)
+  Default options are used.
 
 
 ---

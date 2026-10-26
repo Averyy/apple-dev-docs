@@ -45,6 +45,13 @@ typedef enum { ... } SPAxis;
 - [Decodable Implementations](./axis3d/decodable-implementations.md)
 - [Encodable Implementations](./axis3d/encodable-implementations.md)
 - [Hashable Implementations](./axis3d/hashable-implementations.md)
+### Enumeration Cases
+- [SPAxisX](./spaxis/spaxisx.md)
+  The x-axis.
+- [SPAxisY](./spaxis/spaxisy.md)
+  The y-axis.
+- [SPAxisZ](./spaxis/spaxisz.md)
+  The z-axis.
 
 ## Relationships
 

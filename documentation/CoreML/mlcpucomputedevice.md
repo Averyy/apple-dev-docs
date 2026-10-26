@@ -51,6 +51,8 @@ class MLCPUComputeDevice
   An object that represents a Neural Engine compute device.
 - [protocol MLComputeDeviceProtocol](./mlcomputedeviceprotocol.md)
   An interface that represents a compute device type.
+- [MLAllComputeDevices](./mlallcomputedevices.md)
+  Returns an array that contains all of the compute devices that are accessible.
 
 
 ---

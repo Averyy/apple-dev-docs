@@ -40,6 +40,8 @@ An array of video codecs.
   The video codecs that the output supports.
 - [struct AVVideoCodecType](../avvideocodectype.md)
   A set of constants that describe the codecs the system supports for video capture.
+- [availableVideoCVPixelFormatTypes](./availablevideocvpixelformattypes.md)
+  The video pixel formats the output supports.
 
 
 ---

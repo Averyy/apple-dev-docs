@@ -60,6 +60,8 @@ If a specific item caused the error, the system sets the [`NSFileProviderErrorIt
   An error indicating that the File Provider extension can’t evict a directory because it contains nonevictable items.
 - [NSFileProviderError.Code.unsyncedEdits](./unsyncededits.md)
   An error indicating that the item contains unsynced changes.
+- [NSFileProviderErrorDeletionRejected](./deletionrejected.md)
+  An error indicating a failed deletion action.
 
 
 ---

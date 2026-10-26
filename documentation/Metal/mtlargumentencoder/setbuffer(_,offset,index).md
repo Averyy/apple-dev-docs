@@ -36,6 +36,8 @@ func setBuffer(_ buffer: (any MTLBuffer)?, offset: Int, index: Int)
 ### Encoding buffers
 - [func setBuffers([(any MTLBuffer)?], offsets: [Int], range: Range<Int>)](./setbuffers%28_,offsets,range%29.md)
   Encodes references to an array of buffers into the argument buffer.
+- [- setBuffers:offsets:withRange:](./setbuffers_offsets_withrange_.md)
+  Encodes references to an array of buffers into the argument buffer.
 
 
 ---

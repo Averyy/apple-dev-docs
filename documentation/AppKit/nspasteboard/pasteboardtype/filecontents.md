@@ -58,6 +58,8 @@ In macOS 10.6 and later, you should use the UTI of a file to represent its cont
   Sound data.
 - [static let string: NSPasteboard.PasteboardType](./string.md)
   String data.
+- [NSPasteboardTypeTabularText](./tabulartext.md)
+  Tab-separated fields of text.
 
 
 ---

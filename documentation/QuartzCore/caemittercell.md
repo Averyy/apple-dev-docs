@@ -111,6 +111,9 @@ The [`CAEmitterCell`](./caemittercell.md) class represents one source of particl
   Returns a Boolean value indicating whether the value for a given key should be archived.
 ### Initializers
 - [init?(coder: NSCoder)](./caemittercell/init%28coder%29.md)
+### Creating and Initializing an Emitter Cell
+- [+ emitterCell](./caemittercell/emittercell.md)
+  Creates and returns an instance of `CAEmitterCell`.
 
 ## Relationships
 

@@ -85,6 +85,15 @@ class ABPeoplePickerView
 ### Managing Persistent User Settings
 - [var autosaveName: String!](./abpeoplepickerview/autosavename.md)
   The name under which the column positions and the filter selection are saved.
+### Notifications
+- [ABPeoplePickerGroupSelectionDidChangeNotification](./abpeoplepickergroupselectiondidchangenotification.md)
+  Posted when the selection in the group list is changed.
+- [ABPeoplePickerNameSelectionDidChangeNotification](./abpeoplepickernameselectiondidchangenotification.md)
+  Posted when the selection in the name list is changed.
+- [ABPeoplePickerValueSelectionDidChangeNotification](./abpeoplepickervalueselectiondidchangenotification.md)
+  Posted when the selection in a multivalue property is changed.
+- [ABPeoplePickerDisplayedPropertyDidChangeNotification](./abpeoplepickerdisplayedpropertydidchangenotification.md)
+  Posted when the displayed property in the record list is changed.
 
 ## Relationships
 
@@ -115,6 +124,8 @@ class ABPeoplePickerView
 ### Pickers
 - [class ABPersonView](./abpersonview.md)
   An object that provides a view for displaying and editing contacts.
+- [ABPersonPicker](./abpersonpicker.md)
+  A picker object that you display when you want the user to select contacts.
 
 
 ---

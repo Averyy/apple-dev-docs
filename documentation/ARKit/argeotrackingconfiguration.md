@@ -51,6 +51,8 @@ Localization imagery is available for specific areas in over 20 countries, inclu
 ### Creating a configuration
 - [init()](./argeotrackingconfiguration/init%28%29.md)
   Initializes a new geotracking configuration.
+- [+ new](./argeotrackingconfiguration/new.md)
+  Instantiates a new geotracking configuration.
 ### Checking availability
 - [class func checkAvailability(completionHandler: (Bool, (any Error)?) -> Void)](./argeotrackingconfiguration/checkavailability%28completionhandler%29.md)
   Determines if geotracking supports the user’s current location.

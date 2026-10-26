@@ -28,6 +28,14 @@ NSNumber containing the current transmit rate value for the WLAN interface. Foun
 ### Constants
 - [let CWErrorDomain: String](./cwerrordomain.md)
 - [let CWLinkQualityNotificationRSSIKey: String](./cwlinkqualitynotificationrssikey.md)
+- [CWBSSIDDidChangeNotification](./cwbssiddidchangenotification.md)
+- [CWCountryCodeDidChangeNotification](./cwcountrycodedidchangenotification.md)
+- [CWLinkDidChangeNotification](./cwlinkdidchangenotification.md)
+- [CWLinkQualityDidChangeNotification](./cwlinkqualitydidchangenotification.md)
+- [CWModeDidChangeNotification](./cwmodedidchangenotification.md)
+- [CWPowerDidChangeNotification](./cwpowerdidchangenotification.md)
+- [CWScanCacheDidUpdateNotification](./cwscancachedidupdatenotification.md)
+- [CWSSIDDidChangeNotification](./cwssiddidchangenotification.md)
 
 
 ---

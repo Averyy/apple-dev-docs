@@ -29,6 +29,8 @@ For information about how these constants are used, see the functions [`CGDispla
 ### Constants
 - [static var noFill: CGCaptureOptions](./cgcaptureoptions/nofill.md)
   Disables fill with black.
+- [kCGCaptureNoOptions](./cgcaptureoptions/kcgcapturenooptions.md)
+  The system should use the default fill behavior, which is fill with black.
 ### Initializers
 - [init(rawValue: UInt32)](./cgcaptureoptions/init%28rawvalue%29.md)
 

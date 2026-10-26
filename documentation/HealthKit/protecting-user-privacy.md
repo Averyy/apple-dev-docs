@@ -51,7 +51,7 @@ These models, developed by the Office of the National Coordinator for Health Inf
   Request permission to read and share data in your app.
 - [HealthKit updates](../Updates/healthkit.md)
   Learn about important changes to HealthKit.
-- [HealthKitUI](https://developer.apple.com/documentation/healthkitui)
+- [HealthKitUI](../HealthKitUI/HealthKitUI.md)
   Display user interface that enables a person to view and interact with their health data.
 
 

@@ -167,6 +167,7 @@ Although it’s possible to create content—[`CHHapticPattern`](./chhapticpatte
 ### Instance Properties
 - [var intendedSpatialExperience: any SpatialAudioExperience](./chhapticengine/intendedspatialexperience-55ca0.md)
   The CHHapticEngine’s intended [`SpatialAudioExperience`](../AudioToolbox/spatialaudioexperience.md).
+- [intendedSpatialExperience](./chhapticengine/intendedspatialexperience-4hwkx.md)
 
 ## Relationships
 

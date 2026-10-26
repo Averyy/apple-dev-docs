@@ -25,6 +25,11 @@
       "file_path": "documentation/CoreTransferable/codablerepresentation/init(for,contenttype,encoder,decoder).md",
       "hash": "cfb903d28f9f67a5a74f07a9237f3f4225a69d5805f47050155efc8e3260afca"
     },
+    "https://developer.apple.com/documentation/coretransferable/coretransferableversionnumber": {
+      "etag": "\"d2a-65d560d98fa81-df\"",
+      "file_path": "documentation/CoreTransferable/coretransferableversionnumber.md",
+      "hash": "0ca93ce184e1d29e0df94e5764bb672face15af729904fc7a379cab69fdddcde"
+    },
     "https://developer.apple.com/documentation/coretransferable/datarepresentation": {
       "etag": "\"43d0-65d560d98fa81-df\"",
       "file_path": "documentation/CoreTransferable/datarepresentation.md",
@@ -365,6 +370,11 @@
       "file_path": "documentation/CoreTransferable/codablerepresentation/init(for,contenttype,encoder,decoder).md",
       "hash": "cfb903d28f9f67a5a74f07a9237f3f4225a69d5805f47050155efc8e3260afca"
     },
+    "https://developer.apple.com/tutorials/data/documentation/coretransferable/coretransferableversionnumber.json": {
+      "etag": "\"d2a-65d560d98fa81-df\"",
+      "file_path": "documentation/CoreTransferable/coretransferableversionnumber.md",
+      "hash": "0ca93ce184e1d29e0df94e5764bb672face15af729904fc7a379cab69fdddcde"
+    },
     "https://developer.apple.com/tutorials/data/documentation/coretransferable/datarepresentation.json": {
       "etag": "\"43d0-65d560d98fa81-df\"",
       "file_path": "documentation/CoreTransferable/datarepresentation.md",
@@ -683,8 +693,8 @@
   },
   "metadata": {
     "render": {
-      "version": 1
+      "version": 2
     },
-    "total_pages": 136
+    "total_pages": 138
   }
 }

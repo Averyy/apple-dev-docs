@@ -41,6 +41,8 @@ Thread safe starting in OS X v10.2.
   Gets the size and descriptor type of an Apple event attribute from a descriptor of type `AppleEvent`.
 - [func AESizeOfParam(UnsafePointer<AppleEvent>!, AEKeyword, UnsafeMutablePointer<DescType>!, UnsafeMutablePointer<Size>!) -> OSErr](./api-1449998-aesizeofparam.md)
   Gets the size and descriptor type of an Apple event parameter from a descriptor of type `AERecord` or `AppleEvent`.
+- [AESizeOfKeyDesc](../applicationservices/apple_event_manager/api-1806296-aesizeofkeydesc.md)
+  Gets the size and descriptor type of an Apple event parameter from a descriptor of type `AERecord`.
 
 
 ---

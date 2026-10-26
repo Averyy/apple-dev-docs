@@ -30,6 +30,14 @@ An [`INEnumResolutionResult`](./inenumresolutionresult.md) object is what you re
 
 For additional resolution options, see [`INIntentResolutionResult`](./inintentresolutionresult.md).
 
+## Topics
+
+### Type Methods
+- [+ successWithResolvedValue:](./inenumresolutionresult/successwithresolvedvalue_.md)
+  Creates an object whose resolution involves the successful matching of the specified parameter.
+- [+ confirmationRequiredWithValueToConfirm:](./inenumresolutionresult/confirmationrequiredwithvaluetoconfirm_.md)
+  Creates an object whose resolution requires that the user must confirm the value before proceeding.
+
 ## Relationships
 
 ### Inherits From

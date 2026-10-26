@@ -36,6 +36,10 @@ The core-foundation absolute time.
   A value that describes when the system records the data.
 - [static func current() -> SRAbsoluteTime](./current%28%29.md)
   Provides the current absolute time.
+- [SRAbsoluteTimeFromCFAbsoluteTime](../srabsolutetimefromcfabsolutetime.md)
+  Provides an absolute time equivalent to the argument core-foundation absolute time.
+- [SRAbsoluteTimeFromContinuousTime](../srabsolutetimefromcontinuoustime.md)
+  Provides an absolute time equivalent to the argument continuous time.
 
 
 ---

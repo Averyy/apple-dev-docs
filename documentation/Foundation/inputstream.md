@@ -62,6 +62,10 @@ Return [`true`](../Swift/true.md) if there is more data to read in the stream, [
   Initializes and returns an `NSInputStream` object that reads data from the file at a given path.
 - [init?(url: URL)](./inputstream/init%28url%29-1lfmj.md)
   Initializes and returns an `NSInputStream` object that reads data from the file at a given URL.
+- [+ inputStreamWithData:](./nsinputstream/inputstreamwithdata_.md)
+  Creates and returns an initialized `NSInputStream` object for reading from a given `NSData` object.
+- [+ inputStreamWithFileAtPath:](./nsinputstream/inputstreamwithfileatpath_.md)
+  Creates and returns an initialized `NSInputStream` object that reads data from the file at a given path.
 ### Using Streams
 - [func read(UnsafeMutablePointer<UInt8>, maxLength: Int) -> Int](./inputstream/read%28_,maxlength%29.md)
   Reads up to a given number of bytes into a given buffer.
@@ -73,6 +77,9 @@ Return [`true`](../Swift/true.md) if there is more data to read in the stream, [
 - [init?(URL: URL)](./inputstream/init%28url%29-3lbto.md)
 ### Default Implementations
 - [NSInputStream Implementations](./inputstream/nsinputstream-implementations.md)
+### Type Methods
+- [+ inputStreamWithURL:](./nsinputstream/inputstreamwithurl_.md)
+  Creates and returns an initialized `NSInputStream` object that reads data from the file at a given URL.
 
 ## Relationships
 

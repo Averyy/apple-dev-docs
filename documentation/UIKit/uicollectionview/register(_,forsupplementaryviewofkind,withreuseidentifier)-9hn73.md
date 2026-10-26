@@ -48,6 +48,10 @@ If you previously registered a class or nib file with the same element kind and 
   Registers a class for use in creating supplementary views for the collection view.
 - [func dequeueReusableSupplementaryView(ofKind: String, withReuseIdentifier: String, for: IndexPath) -> UICollectionReusableView](./dequeuereusablesupplementaryview%28ofkind,withreuseidentifier,for%29.md)
   Dequeues a reusable supplementary view located by its identifier and kind.
+- [UICollectionViewSupplementaryRegistration](../uicollectionviewsupplementaryregistration.md)
+  A registration for the collection view’s supplementary views.
+- [- dequeueConfiguredReusableSupplementaryViewWithRegistration:forIndexPath:](./dequeueconfiguredreusablesupplementaryviewwithregistration_forindexpath_.md)
+  Dequeues a configured reusable supplementary view object.
 
 
 ---

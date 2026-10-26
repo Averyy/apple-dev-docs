@@ -43,6 +43,8 @@ Use this property if your vehicle supports saving named profiles.
   The profile index in which to save the settings.
 - [var profileName: String?](./profilename.md)
   The name to assign to the profile.
+- [profileNumber](./profilenumber-7z4u2.md)
+  The profile index in which to save the settings.
 
 
 ---

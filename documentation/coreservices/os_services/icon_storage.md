@@ -8,6 +8,8 @@
 ### Data Types
 - [typealias IconRef](../iconref.md)
 - [typealias IconServicesUsageFlags](../iconservicesusageflags.md)
+- [IconFamilyHandle](../iconfamilyhandle.md)
+- [IconFamilyPtr](../iconfamilyptr.md)
 
 
 ---

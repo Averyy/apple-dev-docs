@@ -10,6 +10,9 @@ Constants for use with multiple classes.
 ### Constants
 - [var NSIMAGE_UNAVAILABLE_MACCATALYST: Int32](./nsimage_unavailable_maccatalyst.md)
 - [var NS_USER_ACTIVITY_SUPPORTED: Int32](./ns_user_activity_supported.md)
+### Exceptions
+- [Exceptions](./exceptions.md)
+  Constants AppKit uses to name exceptions.
 
 ## See Also
 

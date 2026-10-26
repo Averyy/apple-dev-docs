@@ -40,6 +40,12 @@ The bounding box is the smallest rectangle completely enclosing all points in th
   Sets the clipping path to the intersection of the current clipping path with the region defined by an array of rectangles.
 - [func clip(to: CGRect, mask: CGImage)](./clip%28to,mask%29.md)
   Maps a mask into the specified rectangle and intersects it with the current clipping area of the graphics context.
+- [CGContextClip](../cgcontextclip.md)
+  Modifies the current clipping path, using the nonzero winding number rule.
+- [CGContextEOClip](../cgcontexteoclip.md)
+  Modifies the current clipping path, using the even-odd rule.
+- [CGContextClipToRects](../cgcontextcliptorects.md)
+  Sets the clipping path to the intersection of the current clipping path with the region defined by an array of rectangles.
 
 
 ---

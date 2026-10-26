@@ -47,6 +47,16 @@ if CMTIME_COMPARE_INLINE(track.timeRange.start, >, kCMTimeZero) {
 }
 ```
 
+## See Also
+
+### Accessing temporal information
+- [naturalTimeScale](./naturaltimescale.md)
+  The natural time scale of the media that a track references.
+- [estimatedDataRate](./estimateddatarate.md)
+  The estimated data rate, in bits per second, of the media that the track references.
+- [- samplePresentationTimeForTrackTime:](./samplepresentationtime%28fortracktime%29.md)
+  Maps the specified track time through the appropriate time mapping and returns the resulting sample presentation time.
+
 
 ---
 

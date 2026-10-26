@@ -81,6 +81,9 @@ For more information about configuring a `CSUserQuery` object, see [Building a s
   Notifies the system that someone engaged with a specific text completion in your app’s interface.
 - [CSUserQuery.UserInteractionKind](./csuserquery/userinteractionkind.md)
   Constants that indicate how someone engaged with search-related content.
+### Instance Methods
+- [- userEngagedWithItem:visibleItems:userInteractionType:](./csuserquery/userengagedwithitem_visibleitems_userinteractiontype_.md)
+- [- userEngagedWithSuggestion:visibleSuggestions:userInteractionType:](./csuserquery/userengagedwithsuggestion_visiblesuggestions_userinteractiontype_.md)
 
 ## Relationships
 

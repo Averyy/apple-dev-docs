@@ -34,6 +34,10 @@ var allowedCredentials: [ASAuthorizationPlatformPublicKeyCredentialDescriptor] {
 - [var largeBlob: ASAuthorizationPublicKeyCredentialLargeBlobAssertionInput?](./largeblob-9kvvl.md)
   The request’s binary large object value.
 - [var prf: ASAuthorizationPublicKeyCredentialPRFAssertionInput?](./prf-47uoa.md)
+- [largeBlob](./largeblob-5mg1q.md)
+  The request’s binary large object value.
+- [ASAuthorizationPublicKeyCredentialPRFAssertionInput](../asauthorizationpublickeycredentialprfassertioninput-c.class.md)
+  A type that represents input for the web authentication PRF extension in passkey assertion requests.
 
 
 ---

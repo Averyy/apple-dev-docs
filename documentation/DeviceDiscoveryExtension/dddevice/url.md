@@ -40,6 +40,8 @@ Set this property to indicate communication with a device over the simple servic
   A dictionary of metadata for the device that the extension communicates with over the local network.
 - [var supportsGrouping: Bool](./supportsgrouping.md)
   A Boolean value that indicates whether to group the device with others in the AirPlay UI.
+- [txtRecordData](./txtrecorddata.md)
+  A dictionary of metadata for the device that the extension communicates with over the local network.
 
 
 ---

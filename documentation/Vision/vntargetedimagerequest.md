@@ -55,6 +55,30 @@ Other Vision request handlers that operate on both the processed image and a sec
   Creates a new request targeting an image at the specified URL, executing the completion handler when done.
 - [init(targetedImageURL: URL, orientation: CGImagePropertyOrientation, options: [VNImageOption : Any], completionHandler: VNRequestCompletionHandler?)](./vntargetedimagerequest/init%28targetedimageurl,orientation,options,completionhandler%29.md)
   Creates a new request targeting an image of known orientation, at the specified URL, executing the completion handler when done.
+- [- initWithTargetedCGImage:options:](./vntargetedimagerequest/initwithtargetedcgimage_options_.md)
+  Creates a new request targeting a Core Graphics image.
+- [- initWithTargetedCGImage:orientation:options:](./vntargetedimagerequest/initwithtargetedcgimage_orientation_options_.md)
+  Creates a new request targeting a Core Graphics image of known orientation.
+- [- initWithTargetedCIImage:options:](./vntargetedimagerequest/initwithtargetedciimage_options_.md)
+  Creates a new request targeting a Core Image image.
+- [- initWithTargetedCIImage:orientation:options:](./vntargetedimagerequest/initwithtargetedciimage_orientation_options_.md)
+  Creates a new request targeting a Core Image image of known orientation.
+- [- initWithTargetedCVPixelBuffer:options:](./vntargetedimagerequest/initwithtargetedcvpixelbuffer_options_.md)
+  Creates a new request targeting an image in a pixel buffer.
+- [- initWithTargetedCVPixelBuffer:orientation:options:](./vntargetedimagerequest/initwithtargetedcvpixelbuffer_orientation_options_.md)
+  Creates a new request targeting an image in a pixel buffer of known orientation.
+- [- initWithTargetedCMSampleBuffer:options:](./vntargetedimagerequest/initwithtargetedcmsamplebuffer_options_.md)
+  Creates a new request that targets an image in a sample buffer.
+- [- initWithTargetedCMSampleBuffer:orientation:options:](./vntargetedimagerequest/initwithtargetedcmsamplebuffer_orientation_options_.md)
+  Creates a new request that targets an image of a known orientation in a sample buffer.
+- [- initWithTargetedImageData:options:](./vntargetedimagerequest/initwithtargetedimagedata_options_.md)
+  Creates a new request targeting an image as raw data.
+- [- initWithTargetedImageData:orientation:options:](./vntargetedimagerequest/initwithtargetedimagedata_orientation_options_.md)
+  Creates a new request targeting a raw data image of known orientation.
+- [- initWithTargetedImageURL:options:](./vntargetedimagerequest/initwithtargetedimageurl_options_.md)
+  Creates a new request targeting an image at the specified URL.
+- [- initWithTargetedImageURL:orientation:options:](./vntargetedimagerequest/initwithtargetedimageurl_orientation_options_.md)
+  Creates a new request targeting an image of known orientation, at the specified URL.
 
 ## Relationships
 

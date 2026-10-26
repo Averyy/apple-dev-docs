@@ -15,6 +15,11 @@
       "file_path": "documentation/Distributed/distributedactor.md",
       "hash": "2ea0eb68fb217d80360f45beef952591e5984f873fd66b7df765f4e1569b2b88"
     },
+    "https://developer.apple.com/documentation/distributed/distributedactor/==(_:_:)": {
+      "etag": "\"1aa3-65d560e26f69e-df\"",
+      "file_path": "documentation/Distributed/distributedactor/eqeq(_,_).md",
+      "hash": "2b7c7f4e7b8a6c834b6951e5626a4ccda89166ef9b44225121f1abd276a8a730"
+    },
     "https://developer.apple.com/documentation/distributed/distributedactor/actorsystem-swift.associatedtype": {
       "etag": "\"1cb1-65d560e26f69e-df\"",
       "file_path": "documentation/Distributed/distributedactor/actorsystem-swift.associatedtype.md",
@@ -44,6 +49,11 @@
       "etag": "\"1745-65d560e26f69e-df\"",
       "file_path": "documentation/Distributed/distributedactor/encode(to).md",
       "hash": "564e00bd8d6cdea1c82119d527c7416f226f87b0a7bc18b377329c87b0d9cfda"
+    },
+    "https://developer.apple.com/documentation/distributed/distributedactor/hash(into:)": {
+      "etag": "\"19e2-65d560e26f69e-df\"",
+      "file_path": "documentation/Distributed/distributedactor/hash(into).md",
+      "hash": "a858a0ad5b79f2a866a9051cb99e25c178172b39454210b4f568cf7d66b4d1d7"
     },
     "https://developer.apple.com/documentation/distributed/distributedactor/id": {
       "etag": "\"1a94-65d560e26f69e-df\"",
@@ -190,6 +200,11 @@
       "file_path": "documentation/Distributed/distributedtargetinvocationdecoder/decodeerrortype().md",
       "hash": "6888d0e55451ef2e72a9bb460ba076a2837af797e4902109377acf122596acc0"
     },
+    "https://developer.apple.com/documentation/distributed/distributedtargetinvocationdecoder/decodeerrortype()-2ey6c": {
+      "etag": "\"14fb-65ce77455f9c0-df\"",
+      "file_path": "documentation/Distributed/distributedtargetinvocationdecoder/decodeerrortype()-2ey6c.md",
+      "hash": "97e1ef446243a0782d4287373b618304de568c0d6db13e5a2dba1214d3cdbc1f"
+    },
     "https://developer.apple.com/documentation/distributed/distributedtargetinvocationdecoder/decodegenericsubstitutions()": {
       "etag": "\"1a71-65d560e26f69e-df\"",
       "file_path": "documentation/Distributed/distributedtargetinvocationdecoder/decodegenericsubstitutions().md",
@@ -204,6 +219,11 @@
       "etag": "\"191a-65d560e26f69e-df\"",
       "file_path": "documentation/Distributed/distributedtargetinvocationdecoder/decodereturntype().md",
       "hash": "ab14ae49988d51fcf0c02a71278b37f9e8eadc76b04b1e7b0036c66f155626f2"
+    },
+    "https://developer.apple.com/documentation/distributed/distributedtargetinvocationdecoder/decodereturntype()-4zo48": {
+      "etag": "\"13fd-65ce77455f9c0-df\"",
+      "file_path": "documentation/Distributed/distributedtargetinvocationdecoder/decodereturntype()-4zo48.md",
+      "hash": "5b36530b52024ecc49bc829cb18c18bedf922e3287b84ef652420e971e3822b5"
     },
     "https://developer.apple.com/documentation/distributed/distributedtargetinvocationdecoder/serializationrequirement": {
       "etag": "\"12e7-65d560e26f69e-df\"",
@@ -470,6 +490,11 @@
       "file_path": "documentation/Distributed/distributedactor.md",
       "hash": "2ea0eb68fb217d80360f45beef952591e5984f873fd66b7df765f4e1569b2b88"
     },
+    "https://developer.apple.com/tutorials/data/documentation/distributed/distributedactor/==(_:_:).json": {
+      "etag": "\"1aa3-65d560e26f69e-df\"",
+      "file_path": "documentation/Distributed/distributedactor/eqeq(_,_).md",
+      "hash": "2b7c7f4e7b8a6c834b6951e5626a4ccda89166ef9b44225121f1abd276a8a730"
+    },
     "https://developer.apple.com/tutorials/data/documentation/distributed/distributedactor/actorsystem-swift.associatedtype.json": {
       "etag": "\"1cb1-65d560e26f69e-df\"",
       "file_path": "documentation/Distributed/distributedactor/actorsystem-swift.associatedtype.md",
@@ -499,6 +524,11 @@
       "etag": "\"1745-65d560e26f69e-df\"",
       "file_path": "documentation/Distributed/distributedactor/encode(to).md",
       "hash": "564e00bd8d6cdea1c82119d527c7416f226f87b0a7bc18b377329c87b0d9cfda"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/distributed/distributedactor/hash(into:).json": {
+      "etag": "\"19e2-65d560e26f69e-df\"",
+      "file_path": "documentation/Distributed/distributedactor/hash(into).md",
+      "hash": "a858a0ad5b79f2a866a9051cb99e25c178172b39454210b4f568cf7d66b4d1d7"
     },
     "https://developer.apple.com/tutorials/data/documentation/distributed/distributedactor/id.json": {
       "etag": "\"1a94-65d560e26f69e-df\"",
@@ -640,6 +670,11 @@
       "file_path": "documentation/Distributed/distributedtargetinvocationdecoder.md",
       "hash": "d87a56a7c1449afb75e1d08544dff174f3b510e4f23604078009a0adf41f8dcd"
     },
+    "https://developer.apple.com/tutorials/data/documentation/distributed/distributedtargetinvocationdecoder/decodeerrortype()-2ey6c.json": {
+      "etag": "\"14fb-65ce77455f9c0-df\"",
+      "file_path": "documentation/Distributed/distributedtargetinvocationdecoder/decodeerrortype()-2ey6c.md",
+      "hash": "97e1ef446243a0782d4287373b618304de568c0d6db13e5a2dba1214d3cdbc1f"
+    },
     "https://developer.apple.com/tutorials/data/documentation/distributed/distributedtargetinvocationdecoder/decodeerrortype().json": {
       "etag": "\"1ac4-65d560e26f69e-df\"",
       "file_path": "documentation/Distributed/distributedtargetinvocationdecoder/decodeerrortype().md",
@@ -654,6 +689,11 @@
       "etag": "\"1a0b-65d560e26f69e-df\"",
       "file_path": "documentation/Distributed/distributedtargetinvocationdecoder/decodenextargument().md",
       "hash": "f99066c40ef42fc6fc92b05f317822e55e8e302af865d1d1cb02c06c5a6da7a3"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/distributed/distributedtargetinvocationdecoder/decodereturntype()-4zo48.json": {
+      "etag": "\"13fd-65ce77455f9c0-df\"",
+      "file_path": "documentation/Distributed/distributedtargetinvocationdecoder/decodereturntype()-4zo48.md",
+      "hash": "5b36530b52024ecc49bc829cb18c18bedf922e3287b84ef652420e971e3822b5"
     },
     "https://developer.apple.com/tutorials/data/documentation/distributed/distributedtargetinvocationdecoder/decodereturntype().json": {
       "etag": "\"191a-65d560e26f69e-df\"",
@@ -916,8 +956,8 @@
       "swift": {}
     },
     "render": {
-      "version": 1
+      "version": 2
     },
-    "total_pages": 182
+    "total_pages": 190
   }
 }

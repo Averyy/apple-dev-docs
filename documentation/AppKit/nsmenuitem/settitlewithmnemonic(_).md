@@ -28,6 +28,13 @@ Use an ampersand character to mark the character (the one following the ampersan
 ### Deprecated
 - [static func sectionHeader(withTitle: String) -> NSMenuItem](./sectionheader%28withtitle%29.md)
   Returns a menu item representing a section header for a logical grouping of menu commands.
+- [- mnemonicLocation](./mnemoniclocation.md)
+  Returns the position of the underlined character in the menu item title used as a mnemonic.
+### Related Documentation
+- [- mnemonic](./mnemonic.md)
+  Returns the character in the menu item title that appears underlined for use as a mnemonic.
+- [- setMnemonicLocation:](./setmnemoniclocation_.md)
+  Sets the character of the menu item title at location that is to be underlined.
 
 
 ---

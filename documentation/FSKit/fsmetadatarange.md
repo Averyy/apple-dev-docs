@@ -38,6 +38,8 @@ Ensure that each metadata segment represents a range that’s already present in
 ### Creating a metadata range
 - [init(offset: off_t, segmentLength: UInt64, segmentCount: UInt64)](./fsmetadatarange/init%28offset,segmentlength,segmentcount%29.md)
   Initializes a metadata range with the given properties.
+- [+ rangeWithOffset:segmentLength:segmentCount:](./fsmetadatarange/rangewithoffset_segmentlength_segmentcount_.md)
+  Creates a metadata range with the given properties.
 ### Accessing range properties
 - [var startOffset: off_t](./fsmetadatarange/startoffset.md)
   The start offset of the range in bytes.

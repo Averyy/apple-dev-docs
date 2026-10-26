@@ -35,11 +35,17 @@ For more information on Entity-Component architecture, read [Entities and Compon
 ### Creating an Entity
 - [init()](./gkentity/init%28%29.md)
   Initializes a new entity object.
+- [+ entity](./gkentity/entity.md)
+  Creates a new entity object.
 ### Managing an Entity’s List of Components
 - [var components: [GKComponent]](./gkentity/components.md)
   The entity’s list of components.
 - [func addComponent(GKComponent)](./gkentity/addcomponent%28_%29.md)
   Adds a component to the entity.
+- [- componentForClass:](./gkentity/componentforclass_.md)
+  Returns the entity’s component for the specified component class.
+- [- removeComponentForClass:](./gkentity/removecomponentforclass_.md)
+  Removes the component of the specified class from the entity.
 ### Performing Periodic Updates
 - [func update(deltaTime: TimeInterval)](./gkentity/update%28deltatime%29.md)
   Performs periodic updates for each of the entity’s components.

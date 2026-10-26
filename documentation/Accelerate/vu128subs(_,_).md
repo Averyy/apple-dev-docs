@@ -52,6 +52,14 @@ extern vUInt32 vU128SubS(vUInt32 vA, vUInt32 vB);
   Unsigned 32-bit multiplication; results are same width as multiplicands.
 - [func vS32HalfMultiply(vSInt32, vSInt32) -> vSInt32](./vs32halfmultiply%28_,_%29.md)
   Signed 32-bit multiplication; results are same width as multiplicands.
+- [vU64Add](./vu64add.md)
+  Unsigned 64-bit addition (modular arithmetic).
+- [vS64Add](./vs64add.md)
+  Signed 64-bit addition (modular arithmetic).
+- [vU64Sub](./vu64sub.md)
+  Unsigned 64-bit subtraction (modular arithmetic).
+- [vS64Sub](./vs64sub.md)
+  Signed 64-bit subtraction (modular arithmetic).
 
 
 ---

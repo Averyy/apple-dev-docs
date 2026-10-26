@@ -44,6 +44,10 @@ The function `PMSessionEndDocumentNoDialog` must be called after its correspondi
   Starts a new page for printing in the specified printing session and suppresses the printing status dialog.
 - [func PMSessionEndPageNoDialog(PMPrintSession) -> OSStatus](./api-1462014-pmsessionendpagenodialog.md)
   Indicates the end of drawing the current page for the specified printing session.
+- [PMSessionBeginDocumentNoDialog](./core_printing/api-1805538-pmsessionbegindocumentnodialog.md)
+  Begins a print job that, by default, draws into a QuickDraw graphics port, and suppresses the printing status dialog.
+- [PMSessionSetIdleProc](./core_printing/api-1805540-pmsessionsetidleproc.md)
+  Installs an idle callback function in your print loop.
 
 
 ---

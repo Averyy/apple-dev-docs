@@ -49,6 +49,15 @@ The input stream is a mix of all of the specified processes’ output audio.
 - [var processes: [AudioObjectID]](./catapdescription/processes-1m4cr.md)
 - [var stream: UInt?](./catapdescription/stream-ajk3.md)
 - [var uuid: UUID](./catapdescription/uuid.md)
+- [processes](./catapdescription/processes-3cdzw.md)
+- [stream](./catapdescription/stream-u4ff.md)
+### Instance Methods
+- [- initExcludingProcesses:andDeviceUID:withStream:](./catapdescription/initexcludingprocesses_anddeviceuid_withstream_.md)
+- [- initMonoGlobalTapButExcludeProcesses:](./catapdescription/initmonoglobaltapbutexcludeprocesses_.md)
+- [- initMonoMixdownOfProcesses:](./catapdescription/initmonomixdownofprocesses_.md)
+- [- initStereoGlobalTapButExcludeProcesses:](./catapdescription/initstereoglobaltapbutexcludeprocesses_.md)
+- [- initStereoMixdownOfProcesses:](./catapdescription/initstereomixdownofprocesses_.md)
+- [- initWithProcesses:andDeviceUID:withStream:](./catapdescription/initwithprocesses_anddeviceuid_withstream_.md)
 
 ## Relationships
 

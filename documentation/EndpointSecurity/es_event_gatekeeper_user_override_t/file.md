@@ -18,6 +18,12 @@ var file: es_event_gatekeeper_user_override_t.__Unnamed_union_file
 union { ... } file;
 ```
 
+## Topics
+
+### Instance Properties
+- [file](./file/file.md)
+- [file_path](./file/file_path.md)
+
 
 ---
 

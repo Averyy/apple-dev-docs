@@ -46,6 +46,8 @@ To ensure that you report progress in known units of work, you typically work wi
   Retrieves the current thread’s progress object, executes the specified block, and increments the progress object by the specified units of work.
 - [func resignCurrent()](./resigncurrent%28%29.md)
   Restores the previous progress object to become the current progress object on the thread.
+- [- performAsCurrentWithPendingUnitCount:usingBlock:](../nsprogress/performascurrentwithpendingunitcount_usingblock_.md)
+  Retrieves the current thread’s progress object, executes the specified block, and increments the progress object by the specified units of work.
 
 
 ---

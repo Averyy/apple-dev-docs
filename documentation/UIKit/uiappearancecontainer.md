@@ -54,6 +54,12 @@ For example, [`UIBarButtonItem`](./uibarbuttonitem.md) defines these methods:
 - [`backButtonBackgroundImage(for:barMetrics:)`](./uibarbuttonitem/backbuttonbackgroundimage%28for,barmetrics%29.md)
 - [`setBackButtonBackgroundImage(_:for:barMetrics:)`](./uibarbuttonitem/setbackbuttonbackgroundimage%28_,for,barmetrics%29.md)
 
+## Topics
+
+### Constants
+- [Appearance property selector tag](./appearance-property-selector-tag.md)
+  A tag to mark a method that participates in the appearance proxy API.
+
 ## Relationships
 
 ### Inherits From

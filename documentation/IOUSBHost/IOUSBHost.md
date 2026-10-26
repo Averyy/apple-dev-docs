@@ -61,6 +61,14 @@ This framework refers to the USB Implementers Forum (USB-IF) *Universal Serial B
 - [struct IOUSBHostObjectDataOptions](./iousbhostobjectdataoptions.md)
 ### Variables
 - [var IOUSBHostCIDeviceSpeedOther: IOUSBHostCIDeviceSpeed](./iousbhostcidevicespeedother.md)
+### Version Number
+- [IOUSBHostVersionNumber](./iousbhostversionnumber.md)
+  The version number of the framework.
+- [IOUSBHostVersionString](./iousbhostversionstring.md)
+  A string representation of the framework’s version number.
+### Macros
+- [IOUSBHostCIMessageStatusFromMessage](./iousbhostcimessagestatusfrommessage.md)
+- [IOUSBHostCIMessageTypeFromMessage](./iousbhostcimessagetypefrommessage.md)
 
 
 ---

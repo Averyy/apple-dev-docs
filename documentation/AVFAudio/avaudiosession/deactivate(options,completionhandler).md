@@ -48,6 +48,8 @@ This method returns immediately without blocking the calling thread. The system 
   Constants that describe the options to pass when activating the audio session.
 - [struct AVAudioSessionDeactivationOptions](../avaudiosessiondeactivationoptions.md)
   Options for deactivating an AVAudioSession
+- [- setActive:error:](./setactive_error_.md)
+  Activates or deactivates your app’s audio session.
 
 
 ---

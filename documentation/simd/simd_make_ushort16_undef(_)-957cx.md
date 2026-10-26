@@ -39,6 +39,8 @@ static simd_ushort16 simd_make_ushort16_undef(simd_ushort8 other);
   Returns a new vector from the specified three-element vector, and other elements undefined.
 - [func simd_make_ushort16_undef(simd_ushort4) -> simd_ushort16](./simd_make_ushort16_undef%28_%29-bxgi.md)
   Returns a new vector from the specified four-element vector, and other elements undefined.
+- [vector16](./vector16-4zacu.md)
+  Returns a new vector from the specified vectors.
 
 
 ---

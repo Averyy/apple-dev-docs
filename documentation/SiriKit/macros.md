@@ -3,6 +3,11 @@
 **Framework**: SiriKit  
 **Role**: API Collection
 
+## Topics
+
+### Macros
+- [INTENTS_EXTERN](../Intents/intents_extern.md)
+
 
 ---
 

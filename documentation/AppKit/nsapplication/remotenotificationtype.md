@@ -31,6 +31,8 @@ enum NSRemoteNotificationType : NSUInteger;
 ### Initializers
 - [init(rawValue: UInt)](./remotenotificationtype/init%28rawvalue%29.md)
   Initializes a new remote notifications options structure.
+- [NSRemoteNotificationTypeNone](../nsremotenotificationtype/nsremotenotificationtypenone.md)
+  The app shouldn’t display a badge.
 
 ## Relationships
 

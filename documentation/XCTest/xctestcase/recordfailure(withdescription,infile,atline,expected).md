@@ -46,6 +46,10 @@ All test assertions use this method to record test failures.
   Records an issue during test execution.
 - [class var defaultTestSuite: XCTestSuite](./defaulttestsuite.md)
   A test suite that contains test cases for all of the tests in the class.
+- [+ testCaseWithInvocation:](./testcasewithinvocation_.md)
+  Creates a test case with an invocation.
+- [+ testCaseWithSelector:](./testcasewithselector_.md)
+  Creates a test case with a selector.
 
 
 ---

@@ -27,8 +27,11 @@ class DOMUIEvent
 - [var pageY: Int32](./domuievent/pagey.md)
 - [var view: DOMAbstractView!](./domuievent/view.md)
 - [var which: Int32](./domuievent/which.md)
+- [layerX](./domuievent/layerx.md)
+- [layerY](./domuievent/layery.md)
 ### Instance Methods
 - [func initUIEvent(String!, canBubble: Bool, cancelable: Bool, view: DOMAbstractView!, detail: Int32)](./domuievent/inituievent%28_,canbubble,cancelable,view,detail%29.md)
+- [- initUIEvent:::::](./domuievent/inituievent_____.md)
 
 ## Relationships
 

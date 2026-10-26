@@ -180,6 +180,11 @@
       "file_path": "documentation/Professional-Video-Applications/building-a-workflow-extension.md",
       "hash": "6313dc0deb59dc0ee6cc8f7befd37e75eedc9eb1bcc0844266473a6288aa2617"
     },
+    "https://developer.apple.com/documentation/professional-video-applications/building-an-encoder-extension": {
+      "etag": "\"2b99-6590231d89fbe-df\"",
+      "file_path": "documentation/Professional-Video-Applications/building-an-encoder-extension.md",
+      "hash": "3d2a28cd388cb657d237b9211e546ce48d7f9b766aeb1505fc4705b175f18a6e"
+    },
     "https://developer.apple.com/documentation/professional-video-applications/building-an-fxplug-plug-in-from-an-xcode-template": {
       "etag": "\"37bf-6590231d89fbe-df\"",
       "file_path": "documentation/Professional-Video-Applications/building-an-fxplug-plug-in-from-an-xcode-template.md",
@@ -279,6 +284,11 @@
       "etag": "\"2b39-6590231d89fbe-df\"",
       "file_path": "documentation/Professional-Video-Applications/enabling-security-scoped-bookmark-and-url-access.md",
       "hash": "3fa491fd6359eb16623793bc6e9123bee5f7f3ca657b557af0d32e279ac2e287"
+    },
+    "https://developer.apple.com/documentation/professional-video-applications/encoder-attributes-settings": {
+      "etag": "\"b37e-6590231d32c93-df\"",
+      "file_path": "documentation/Professional-Video-Applications/encoder-attributes-settings.md",
+      "hash": "dfc920cfd0c19279221b44e5ed2ed1de74d3ea4d50e1796e61ae4d9c88b54bd1"
     },
     "https://developer.apple.com/documentation/professional-video-applications/encoder-extensions": {
       "etag": "\"42d5-6590231d57413-df\"",
@@ -889,6 +899,11 @@
       "file_path": "documentation/Professional-Video-Applications/building-a-workflow-extension.md",
       "hash": "6313dc0deb59dc0ee6cc8f7befd37e75eedc9eb1bcc0844266473a6288aa2617"
     },
+    "https://developer.apple.com/tutorials/data/documentation/professional-video-applications/building-an-encoder-extension.json": {
+      "etag": "\"2b99-6590231d89fbe-df\"",
+      "file_path": "documentation/Professional-Video-Applications/building-an-encoder-extension.md",
+      "hash": "3d2a28cd388cb657d237b9211e546ce48d7f9b766aeb1505fc4705b175f18a6e"
+    },
     "https://developer.apple.com/tutorials/data/documentation/professional-video-applications/building-an-fxplug-plug-in-from-an-xcode-template.json": {
       "etag": "\"37bf-6590231d89fbe-df\"",
       "file_path": "documentation/Professional-Video-Applications/building-an-fxplug-plug-in-from-an-xcode-template.md",
@@ -988,6 +1003,11 @@
       "etag": "\"2b39-6590231d89fbe-df\"",
       "file_path": "documentation/Professional-Video-Applications/enabling-security-scoped-bookmark-and-url-access.md",
       "hash": "3fa491fd6359eb16623793bc6e9123bee5f7f3ca657b557af0d32e279ac2e287"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/professional-video-applications/encoder-attributes-settings.json": {
+      "etag": "\"b37e-6590231d32c93-df\"",
+      "file_path": "documentation/Professional-Video-Applications/encoder-attributes-settings.md",
+      "hash": "dfc920cfd0c19279221b44e5ed2ed1de74d3ea4d50e1796e61ae4d9c88b54bd1"
     },
     "https://developer.apple.com/tutorials/data/documentation/professional-video-applications/encoder-extensions.json": {
       "etag": "\"42d5-6590231d57413-df\"",
@@ -1425,8 +1445,8 @@
       }
     },
     "render": {
-      "version": 1
+      "version": 2
     },
-    "total_pages": 283
+    "total_pages": 287
   }
 }

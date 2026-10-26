@@ -36,7 +36,7 @@ The [`HKActivitySummaryType`](./hkactivitysummarytype.md) class is a concrete su
 
 Any workouts that you save to the HealthKit store may affect that day’s summary. For more information, see [`HKWorkout`](./hkworkout.md).
 
-To query for activity summary objects, use an [`HKActivitySummaryQuery`](./hkactivitysummaryquery.md). You can also create your own [`HKActivitySummary`](./hkactivitysummary.md) objects (for example, to display in an [`HKActivityRingView`](https://developer.apple.com/documentation/healthkitui/hkactivityringview)), but you can’t save them to the HealthKit store.
+To query for activity summary objects, use an [`HKActivitySummaryQuery`](./hkactivitysummaryquery.md). You can also create your own [`HKActivitySummary`](./hkactivitysummary.md) objects (for example, to display in an [`HKActivityRingView`](../HealthKitUI/hkactivityringview.md)), but you can’t save them to the HealthKit store.
 
 ## Relationships
 
@@ -62,7 +62,7 @@ To query for activity summary objects, use an [`HKActivitySummaryQuery`](./hkact
   An object that contains the move, exercise, and stand data for a given day.
 - [class HKActivitySummaryQuery](./hkactivitysummaryquery.md)
   A query for reading activity summary objects from the HealthKit store.
-- [class HKActivityRingView](https://developer.apple.com/documentation/healthkitui/hkactivityringview)
+- [class HKActivityRingView](../HealthKitUI/hkactivityringview.md)
   A view that uses the Move, Exercise, and Stand activity rings to display data from a HealthKit activity summary object.
 ### Object type subclasses
 - [class HKCharacteristicType](./hkcharacteristictype.md)

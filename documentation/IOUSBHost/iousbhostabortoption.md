@@ -40,6 +40,14 @@ enum IOUSBHostAbortOption : NSUInteger;
 - [Sendable](../Swift/sendable.md)
 - [SendableMetatype](../Swift/sendablemetatype.md)
 
+## See Also
+
+### Aborting Device Requests
+- [- abortDeviceRequestsWithOption:error:](./iousbhostobject/abortdevicerequestswithoption_error_.md)
+  Aborts device requests.
+- [- abortDeviceRequestsWithError:](./iousbhostobject/abortdevicerequestswitherror_.md)
+  Aborts device requests synchronously.
+
 
 ---
 

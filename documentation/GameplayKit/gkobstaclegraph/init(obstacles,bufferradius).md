@@ -46,6 +46,10 @@ This initializer is equivalent to the [`init(obstacles:bufferRadius:nodeClass:)`
 ### Creating a Graph
 - [init(obstacles: [GKPolygonObstacle], bufferRadius: Float, nodeClass: AnyClass)](./init%28obstacles,bufferradius,nodeclass%29.md)
   Initializes a graph with the specified list of obstacles, using the specified node class.
+- [+ graphWithObstacles:bufferRadius:nodeClass:](./graphwithobstacles_bufferradius_nodeclass_.md)
+  Creates a graph with the specified list of obstacles, using the specified node class.
+- [+ graphWithObstacles:bufferRadius:](./graphwithobstacles_bufferradius_.md)
+  Creates a graph with the specified list of obstacles.
 
 
 ---

@@ -44,6 +44,8 @@ The [`NSCell`](../nscell.md) object at the specified row and column location spe
   Searches the receiver and returns the last cell matching the specified tag.
 - [var cells: [NSCell]](./cells.md)
   An array containing the cells of the matrix.
+- [selectedCell](./selectedcell.md)
+  The most recently selected cell.
 
 
 ---

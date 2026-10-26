@@ -51,6 +51,11 @@ When the number of bytes written to `buffer` has reached `capacity`, the streamâ
   Returns an initialized output stream for writing to a specified file.
 - [init?(url: URL, append: Bool)](./init%28url,append%29-5soau.md)
   Returns an initialized output stream for writing to a specified URL.
+- [+ outputStreamToFileAtPath:append:](../nsoutputstream/outputstreamtofileatpath_append_.md)
+  Creates and returns an initialized output stream for writing to a specified file.
+### Related Documentation
+- [+ outputStreamToBuffer:capacity:](../nsoutputstream/outputstreamtobuffer_capacity_.md)
+  Creates and returns an initialized output stream that can write to a provided buffer.
 
 
 ---

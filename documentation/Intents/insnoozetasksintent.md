@@ -75,12 +75,16 @@ Users can ask Siri to snooze tasks in a variety of ways. The table below provide
 ### Initializing the Intent Object
 - [convenience init(tasks: [INTask]?, nextTriggerTime: INDateComponentsRange?, all: Bool?)](./insnoozetasksintent/init%28tasks,nexttriggertime,all%29.md)
   Initializes the intent object with information about the tasks to snooze and when to snooze them.
+- [- initWithTasks:nextTriggerTime:all:](./insnoozetasksintent/initwithtasks_nexttriggertime_all_.md)
+  Initializes the intent object with information about the tasks to snooze and when to snooze them.
 ### Getting the Task Information
 - [var nextTriggerTime: INDateComponentsRange?](./insnoozetasksintent/nexttriggertime.md)
   The next time after the current time that triggers a task to snooze.
 - [var tasks: [INTask]?](./insnoozetasksintent/tasks.md)
   An array of tasks to snooze.
 - [var all: Bool?](./insnoozetasksintent/all-spsb.md)
+  A Boolean value that indicates whether to snooze all of the tasks.
+- [all](./insnoozetasksintent/all-62ujw.md)
   A Boolean value that indicates whether to snooze all of the tasks.
 
 ## Relationships

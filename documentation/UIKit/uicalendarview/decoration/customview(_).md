@@ -34,6 +34,12 @@ Create and return a decoration view for the calendar view in your `customViewPro
 
 - `customViewProvider`: A block of code that creates and returns a calendar view decoration.
 
+## See Also
+
+### Creating a Custom Decoration View
+- [- initWithCustomViewProvider:](../../uicalendarviewdecoration/initwithcustomviewprovider_.md)
+  Creates a new calendar view decoration with a custom view, using your view provider.
+
 
 ---
 

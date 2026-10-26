@@ -38,6 +38,8 @@ A persistent reference is an opaque data object suitable for persistent storage.
   Returns the identity object with the given name from the specified identity authority.
 - [init?(uuidString: String, authority: CBIdentityAuthority)](./init%28uuidstring,authority%29-13vns.md)
   Returns the identity object with the given UUID from the specified identity authority.
+- [+ identityWithCSIdentity:](./identitywithcsidentity_.md)
+  Returns an identity object created from the specified Core Services Identity opaque object.
 
 
 ---

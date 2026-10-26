@@ -229,6 +229,12 @@ static void updateLayerWithImageInWindow1(NSImage *image, CALayer *layer, NSWind
 - [convenience init?(contentsOfURL: URL)](./nsimage/init%28contentsofurl%29.md)
 ### Default Implementations
 - [NSPasteboardReading Implementations](./nsimage/nspasteboardreading-implementations.md)
+### Instance Methods
+- [- init](./nsimage/init.md)
+### Type Methods
+- [+ alloc](./nsimage/alloc.md)
+- [+ allocWithZone:](./nsimage/allocwithzone_.md)
+- [+ new](./nsimage/new.md)
 
 ## Relationships
 

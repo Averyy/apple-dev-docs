@@ -25,6 +25,8 @@ static simd_double3x3 simd_matrix(simd_double3 col0, simd_double3 col1, simd_dou
   Returns a new matrix with the specified rows.
 - [func simd_matrix3x3(simd_quatd) -> simd_double3x3](./simd_matrix3x3%28_%29-60dhx.md)
   Returns a new matrix with the specified quarternion.
+- [simd_diagonal_matrix](./simd_diagonal_matrix-2nuo5.md)
+  Returns a new matrix with the specified vector on the main diagonal.
 
 
 ---

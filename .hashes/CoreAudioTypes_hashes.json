@@ -345,6 +345,11 @@
       "file_path": "documentation/CoreAudioTypes/audiochannelflags/init(rawvalue).md",
       "hash": "3d0543c47a7484b6f0052613770e10b9f910584d43e366d5ad3f022d1c60f0d5"
     },
+    "https://developer.apple.com/documentation/coreaudiotypes/audiochannelflags/kaudiochannelflags_alloff": {
+      "etag": "\"2215-65d55ae98656f-df\"",
+      "file_path": "documentation/CoreAudioTypes/audiochannelflags/kaudiochannelflags_alloff.md",
+      "hash": "a682042c342067ec29c1bfbcb7cf40fe440f65fef75b9d4a9277893575444f75"
+    },
     "https://developer.apple.com/documentation/coreaudiotypes/audiochannelflags/meters": {
       "etag": "\"2bd9-65d55ae98656f-df\"",
       "file_path": "documentation/CoreAudioTypes/audiochannelflags/meters.md",
@@ -740,6 +745,11 @@
       "file_path": "documentation/CoreAudioTypes/audiotimestampflags/init(rawvalue).md",
       "hash": "8bcbde503bdc040bbfd4bfdbec1a2f2181039460ea7975a500b189f7d93c7055"
     },
+    "https://developer.apple.com/documentation/coreaudiotypes/audiotimestampflags/kaudiotimestampnothingvalid": {
+      "etag": "\"326f-65d55aea05f6c-df\"",
+      "file_path": "documentation/CoreAudioTypes/audiotimestampflags/kaudiotimestampnothingvalid.md",
+      "hash": "5ec82b237a2421d1d19c6089bc0619a0bb2e983dcb4321493e6bb45acfd2ecdd"
+    },
     "https://developer.apple.com/documentation/coreaudiotypes/audiotimestampflags/ratescalarvalid": {
       "etag": "\"3dab-65d55aea05f6c-df\"",
       "file_path": "documentation/CoreAudioTypes/audiotimestampflags/ratescalarvalid.md",
@@ -830,15 +840,115 @@
       "file_path": "documentation/CoreAudioTypes/avaudiointeger.md",
       "hash": "eaa75e6b68a1adff55af972ec5dfdea01e4111f4198273c5418d5ad5d52fd510"
     },
+    "https://developer.apple.com/documentation/coreaudiotypes/avaudiosession/errorcode": {
+      "etag": "\"829b-65d55ae96561c-df\"",
+      "file_path": "documentation/CoreAudioTypes/avaudiosession/errorcode.md",
+      "hash": "3b74d84d7e381148c89a5c2d9563c5a630d0d8b045ab415e96e22bc34e4dd292"
+    },
+    "https://developer.apple.com/documentation/coreaudiotypes/avaudiosession/errorcode/badparam": {
+      "etag": "\"69e8-65d55ae96561c-df\"",
+      "file_path": "documentation/CoreAudioTypes/avaudiosession/errorcode/badparam.md",
+      "hash": "f3ee3bf3c94e2152fca6eb930a4b2acd61c632908af49f62eb531ea274216975"
+    },
+    "https://developer.apple.com/documentation/coreaudiotypes/avaudiosession/errorcode/cannotinterruptothers": {
+      "etag": "\"6a86-65d55ae96561c-df\"",
+      "file_path": "documentation/CoreAudioTypes/avaudiosession/errorcode/cannotinterruptothers.md",
+      "hash": "1ef3e8060898feb0444d20f3f9b7c1d104e454e437b3abe09ee61325e8d21f46"
+    },
+    "https://developer.apple.com/documentation/coreaudiotypes/avaudiosession/errorcode/cannotstartplaying": {
+      "etag": "\"6f02-65d55ae96561c-df\"",
+      "file_path": "documentation/CoreAudioTypes/avaudiosession/errorcode/cannotstartplaying.md",
+      "hash": "b2d4053d6266fa54a796c25cf3c224c202ac799877e2485c3f7c25ab7afa9a60"
+    },
+    "https://developer.apple.com/documentation/coreaudiotypes/avaudiosession/errorcode/cannotstartrecording": {
+      "etag": "\"6b96-65d55ae96561c-df\"",
+      "file_path": "documentation/CoreAudioTypes/avaudiosession/errorcode/cannotstartrecording.md",
+      "hash": "245462c6d4e36e467ef4190db7ea1db1966a866bd26a364389ceb79aed69a81c"
+    },
+    "https://developer.apple.com/documentation/coreaudiotypes/avaudiosession/errorcode/expiredsession": {
+      "etag": "\"6a3c-65d55ae96561c-df\"",
+      "file_path": "documentation/CoreAudioTypes/avaudiosession/errorcode/expiredsession.md",
+      "hash": "44f923ea4154a8aabea253e0753425a943c08e1d5ce05af354ee1febfaa84a62"
+    },
+    "https://developer.apple.com/documentation/coreaudiotypes/avaudiosession/errorcode/incompatiblecategory": {
+      "etag": "\"7943-65d55ae96561c-df\"",
+      "file_path": "documentation/CoreAudioTypes/avaudiosession/errorcode/incompatiblecategory.md",
+      "hash": "ed474252ebc27a78ec4445af48c053ee856901095fba0555686a28f51dff2bb3"
+    },
+    "https://developer.apple.com/documentation/coreaudiotypes/avaudiosession/errorcode/init(rawvalue:)": {
+      "etag": "\"17c9-65d55ae96561c-df\"",
+      "file_path": "documentation/CoreAudioTypes/avaudiosession/errorcode/init(rawvalue).md",
+      "hash": "c5967eaa1c23e1c52ad10740718d7b641f4101368fd2c2ea30e029d271e57b61"
+    },
+    "https://developer.apple.com/documentation/coreaudiotypes/avaudiosession/errorcode/insufficientpriority": {
+      "etag": "\"6a7a-65d55ae96561c-df\"",
+      "file_path": "documentation/CoreAudioTypes/avaudiosession/errorcode/insufficientpriority.md",
+      "hash": "634274d966d9658d3a39934b2586eb0c6bd14f52f48072fdd4c09aa0c3ae870f"
+    },
+    "https://developer.apple.com/documentation/coreaudiotypes/avaudiosession/errorcode/isbusy": {
+      "etag": "\"69f8-65d55ae96561c-df\"",
+      "file_path": "documentation/CoreAudioTypes/avaudiosession/errorcode/isbusy.md",
+      "hash": "9025a07fa4cf2f3eff06f349eed9e775ded43f745d9cef7134e45a587fc7ae60"
+    },
+    "https://developer.apple.com/documentation/coreaudiotypes/avaudiosession/errorcode/mediaservicesfailed": {
+      "etag": "\"6a68-65d55ae96561c-df\"",
+      "file_path": "documentation/CoreAudioTypes/avaudiosession/errorcode/mediaservicesfailed.md",
+      "hash": "4685b02117704604f430c55967b6ddab211fbf6198937f0a00a8c0686b78d49f"
+    },
+    "https://developer.apple.com/documentation/coreaudiotypes/avaudiosession/errorcode/missingentitlement": {
+      "etag": "\"6a6f-65d55ae96561c-df\"",
+      "file_path": "documentation/CoreAudioTypes/avaudiosession/errorcode/missingentitlement.md",
+      "hash": "4e90294900f2cf0abb2da7dbbb23161cb2563a378b7d93cb8e10aa7d73099507"
+    },
+    "https://developer.apple.com/documentation/coreaudiotypes/avaudiosession/errorcode/none": {
+      "etag": "\"69ab-65d55ae96561c-df\"",
+      "file_path": "documentation/CoreAudioTypes/avaudiosession/errorcode/none.md",
+      "hash": "56711c41e9b0277f4f9981dafa0939193c9c60dfeea5e6fa8794c1a080c92ccf"
+    },
+    "https://developer.apple.com/documentation/coreaudiotypes/avaudiosession/errorcode/resourcenotavailable": {
+      "etag": "\"6a93-65d55ae96561c-df\"",
+      "file_path": "documentation/CoreAudioTypes/avaudiosession/errorcode/resourcenotavailable.md",
+      "hash": "6d523391297af43db29706d2c52dc4df3598d6cb64e92518b9dffc987d1b8d22"
+    },
+    "https://developer.apple.com/documentation/coreaudiotypes/avaudiosession/errorcode/sessionnotactive": {
+      "etag": "\"6a37-65d55ae96561c-df\"",
+      "file_path": "documentation/CoreAudioTypes/avaudiosession/errorcode/sessionnotactive.md",
+      "hash": "1ba115cfa8a2469319e8e2a37f488d71ab78c4b3f2f6c664ff13d2e96b997be9"
+    },
+    "https://developer.apple.com/documentation/coreaudiotypes/avaudiosession/errorcode/siriisrecording": {
+      "etag": "\"6a46-65d55ae96561c-df\"",
+      "file_path": "documentation/CoreAudioTypes/avaudiosession/errorcode/siriisrecording.md",
+      "hash": "dd2f303da3c68cf3f179c415c905d78f3b3055fb057584371107da3ea5ed2508"
+    },
+    "https://developer.apple.com/documentation/coreaudiotypes/avaudiosession/errorcode/unspecified": {
+      "etag": "\"6aeb-65d55ae96561c-df\"",
+      "file_path": "documentation/CoreAudioTypes/avaudiosession/errorcode/unspecified.md",
+      "hash": "2e853b2f7a79b8ba80ebfcef8707ce57b0348d4fd7578d78a276b70f63e394b4"
+    },
+    "https://developer.apple.com/documentation/coreaudiotypes/avaudiosessionerrorinsufficientpriority": {
+      "etag": "\"4236-65d55aea1ef73-df\"",
+      "file_path": "documentation/CoreAudioTypes/avaudiosessionerrorinsufficientpriority.md",
+      "hash": "d1bf33258fd42d540f8266b4931dd10a36aceab3349328365d67bdde271d64ac"
+    },
     "https://developer.apple.com/documentation/coreaudiotypes/avaudiouinteger": {
       "etag": "\"422b-65d55ae94bb22-df\"",
       "file_path": "documentation/CoreAudioTypes/avaudiouinteger.md",
       "hash": "f47901679a32e1c3b1e17f8e6f2acbdbce1d451ab0e7a99df07edea8261d00be"
     },
+    "https://developer.apple.com/documentation/coreaudiotypes/ca_canonical_deprecated": {
+      "etag": "\"b6d-65d55ae8d3946-df\"",
+      "file_path": "documentation/CoreAudioTypes/ca_canonical_deprecated.md",
+      "hash": "75d6c642c7b5d8b1ae98854d9c1230ca7d8b11daee47910e402a1415d313659f"
+    },
     "https://developer.apple.com/documentation/coreaudiotypes/ca_prefer_fixed_point": {
       "etag": "\"16f5-65d55ae8d3946-df\"",
       "file_path": "documentation/CoreAudioTypes/ca_prefer_fixed_point.md",
       "hash": "283c81bf9920b943621b4e4a4cc00df5dbba9a82f2cceca8b61d97899c59da8b"
+    },
+    "https://developer.apple.com/documentation/coreaudiotypes/ca_realtime_api": {
+      "etag": "\"b0d-65d55ae92ea8e-df\"",
+      "file_path": "documentation/CoreAudioTypes/ca_realtime_api.md",
+      "hash": "ee2511479803c84c64e1ca0a0d33c40d094592ccbc3ca650535ea7afb4c74e4f"
     },
     "https://developer.apple.com/documentation/coreaudiotypes/coreaudiotypes-enumerations": {
       "etag": "\"1346-6590269001c11-df\"",
@@ -2950,6 +3060,11 @@
       "file_path": "documentation/CoreAudioTypes/smptetimeflags/init(rawvalue).md",
       "hash": "9a6d2c653c3b987bcd1c40ffe723038221f68542b761608c5675e691c822e28d"
     },
+    "https://developer.apple.com/documentation/coreaudiotypes/smptetimeflags/ksmptetimeunknown": {
+      "etag": "\"1976-65d55ae912985-df\"",
+      "file_path": "documentation/CoreAudioTypes/smptetimeflags/ksmptetimeunknown.md",
+      "hash": "87d801ea5c1ab5b79c496b592bc636c16e98cfac163be1a624881853992729dd"
+    },
     "https://developer.apple.com/documentation/coreaudiotypes/smptetimeflags/running": {
       "etag": "\"235c-65d55ae912985-df\"",
       "file_path": "documentation/CoreAudioTypes/smptetimeflags/running.md",
@@ -3029,6 +3144,11 @@
       "etag": "\"489b-65d55ae92ea8e-df\"",
       "file_path": "documentation/CoreAudioTypes/smptetimetype/type60drop.md",
       "hash": "87aec1de73b4b78e6bb89dd8d549406ea5332fa357258a96b30b116e899af4a4"
+    },
+    "https://developer.apple.com/documentation/coreaudiotypes/testaudioformatnativeendian": {
+      "etag": "\"bf7-65d55ae94bb22-df\"",
+      "file_path": "documentation/CoreAudioTypes/testaudioformatnativeendian.md",
+      "hash": "9dd16fc855a935136fcefefe8c9d089bcbd393d735feb5937623ad1d7f051df6"
     },
     "https://developer.apple.com/tutorials/data/documentation/CoreAudioTypes.json": {
       "etag": "\"10318-65d55ae8d3946-df\"",
@@ -3374,6 +3494,11 @@
       "etag": "\"1672-65d55ae98656f-df\"",
       "file_path": "documentation/CoreAudioTypes/audiochannelflags/init(rawvalue).md",
       "hash": "3d0543c47a7484b6f0052613770e10b9f910584d43e366d5ad3f022d1c60f0d5"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/coreaudiotypes/audiochannelflags/kaudiochannelflags_alloff.json": {
+      "etag": "\"2215-65d55ae98656f-df\"",
+      "file_path": "documentation/CoreAudioTypes/audiochannelflags/kaudiochannelflags_alloff.md",
+      "hash": "a682042c342067ec29c1bfbcb7cf40fe440f65fef75b9d4a9277893575444f75"
     },
     "https://developer.apple.com/tutorials/data/documentation/coreaudiotypes/audiochannelflags/meters.json": {
       "etag": "\"2bd9-65d55ae98656f-df\"",
@@ -3770,6 +3895,11 @@
       "file_path": "documentation/CoreAudioTypes/audiotimestampflags/init(rawvalue).md",
       "hash": "8bcbde503bdc040bbfd4bfdbec1a2f2181039460ea7975a500b189f7d93c7055"
     },
+    "https://developer.apple.com/tutorials/data/documentation/coreaudiotypes/audiotimestampflags/kaudiotimestampnothingvalid.json": {
+      "etag": "\"326f-65d55aea05f6c-df\"",
+      "file_path": "documentation/CoreAudioTypes/audiotimestampflags/kaudiotimestampnothingvalid.md",
+      "hash": "5ec82b237a2421d1d19c6089bc0619a0bb2e983dcb4321493e6bb45acfd2ecdd"
+    },
     "https://developer.apple.com/tutorials/data/documentation/coreaudiotypes/audiotimestampflags/ratescalarvalid.json": {
       "etag": "\"3dab-65d55aea05f6c-df\"",
       "file_path": "documentation/CoreAudioTypes/audiotimestampflags/ratescalarvalid.md",
@@ -3860,15 +3990,115 @@
       "file_path": "documentation/CoreAudioTypes/avaudiointeger.md",
       "hash": "eaa75e6b68a1adff55af972ec5dfdea01e4111f4198273c5418d5ad5d52fd510"
     },
+    "https://developer.apple.com/tutorials/data/documentation/coreaudiotypes/avaudiosession/errorcode.json": {
+      "etag": "\"829b-65d55ae96561c-df\"",
+      "file_path": "documentation/CoreAudioTypes/avaudiosession/errorcode.md",
+      "hash": "3b74d84d7e381148c89a5c2d9563c5a630d0d8b045ab415e96e22bc34e4dd292"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/coreaudiotypes/avaudiosession/errorcode/badparam.json": {
+      "etag": "\"69e8-65d55ae96561c-df\"",
+      "file_path": "documentation/CoreAudioTypes/avaudiosession/errorcode/badparam.md",
+      "hash": "f3ee3bf3c94e2152fca6eb930a4b2acd61c632908af49f62eb531ea274216975"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/coreaudiotypes/avaudiosession/errorcode/cannotinterruptothers.json": {
+      "etag": "\"6a86-65d55ae96561c-df\"",
+      "file_path": "documentation/CoreAudioTypes/avaudiosession/errorcode/cannotinterruptothers.md",
+      "hash": "1ef3e8060898feb0444d20f3f9b7c1d104e454e437b3abe09ee61325e8d21f46"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/coreaudiotypes/avaudiosession/errorcode/cannotstartplaying.json": {
+      "etag": "\"6f02-65d55ae96561c-df\"",
+      "file_path": "documentation/CoreAudioTypes/avaudiosession/errorcode/cannotstartplaying.md",
+      "hash": "b2d4053d6266fa54a796c25cf3c224c202ac799877e2485c3f7c25ab7afa9a60"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/coreaudiotypes/avaudiosession/errorcode/cannotstartrecording.json": {
+      "etag": "\"6b96-65d55ae96561c-df\"",
+      "file_path": "documentation/CoreAudioTypes/avaudiosession/errorcode/cannotstartrecording.md",
+      "hash": "245462c6d4e36e467ef4190db7ea1db1966a866bd26a364389ceb79aed69a81c"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/coreaudiotypes/avaudiosession/errorcode/expiredsession.json": {
+      "etag": "\"6a3c-65d55ae96561c-df\"",
+      "file_path": "documentation/CoreAudioTypes/avaudiosession/errorcode/expiredsession.md",
+      "hash": "44f923ea4154a8aabea253e0753425a943c08e1d5ce05af354ee1febfaa84a62"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/coreaudiotypes/avaudiosession/errorcode/incompatiblecategory.json": {
+      "etag": "\"7943-65d55ae96561c-df\"",
+      "file_path": "documentation/CoreAudioTypes/avaudiosession/errorcode/incompatiblecategory.md",
+      "hash": "ed474252ebc27a78ec4445af48c053ee856901095fba0555686a28f51dff2bb3"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/coreaudiotypes/avaudiosession/errorcode/init(rawvalue:).json": {
+      "etag": "\"17c9-65d55ae96561c-df\"",
+      "file_path": "documentation/CoreAudioTypes/avaudiosession/errorcode/init(rawvalue).md",
+      "hash": "c5967eaa1c23e1c52ad10740718d7b641f4101368fd2c2ea30e029d271e57b61"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/coreaudiotypes/avaudiosession/errorcode/insufficientpriority.json": {
+      "etag": "\"6a7a-65d55ae96561c-df\"",
+      "file_path": "documentation/CoreAudioTypes/avaudiosession/errorcode/insufficientpriority.md",
+      "hash": "634274d966d9658d3a39934b2586eb0c6bd14f52f48072fdd4c09aa0c3ae870f"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/coreaudiotypes/avaudiosession/errorcode/isbusy.json": {
+      "etag": "\"69f8-65d55ae96561c-df\"",
+      "file_path": "documentation/CoreAudioTypes/avaudiosession/errorcode/isbusy.md",
+      "hash": "9025a07fa4cf2f3eff06f349eed9e775ded43f745d9cef7134e45a587fc7ae60"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/coreaudiotypes/avaudiosession/errorcode/mediaservicesfailed.json": {
+      "etag": "\"6a68-65d55ae96561c-df\"",
+      "file_path": "documentation/CoreAudioTypes/avaudiosession/errorcode/mediaservicesfailed.md",
+      "hash": "4685b02117704604f430c55967b6ddab211fbf6198937f0a00a8c0686b78d49f"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/coreaudiotypes/avaudiosession/errorcode/missingentitlement.json": {
+      "etag": "\"6a6f-65d55ae96561c-df\"",
+      "file_path": "documentation/CoreAudioTypes/avaudiosession/errorcode/missingentitlement.md",
+      "hash": "4e90294900f2cf0abb2da7dbbb23161cb2563a378b7d93cb8e10aa7d73099507"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/coreaudiotypes/avaudiosession/errorcode/none.json": {
+      "etag": "\"69ab-65d55ae96561c-df\"",
+      "file_path": "documentation/CoreAudioTypes/avaudiosession/errorcode/none.md",
+      "hash": "56711c41e9b0277f4f9981dafa0939193c9c60dfeea5e6fa8794c1a080c92ccf"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/coreaudiotypes/avaudiosession/errorcode/resourcenotavailable.json": {
+      "etag": "\"6a93-65d55ae96561c-df\"",
+      "file_path": "documentation/CoreAudioTypes/avaudiosession/errorcode/resourcenotavailable.md",
+      "hash": "6d523391297af43db29706d2c52dc4df3598d6cb64e92518b9dffc987d1b8d22"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/coreaudiotypes/avaudiosession/errorcode/sessionnotactive.json": {
+      "etag": "\"6a37-65d55ae96561c-df\"",
+      "file_path": "documentation/CoreAudioTypes/avaudiosession/errorcode/sessionnotactive.md",
+      "hash": "1ba115cfa8a2469319e8e2a37f488d71ab78c4b3f2f6c664ff13d2e96b997be9"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/coreaudiotypes/avaudiosession/errorcode/siriisrecording.json": {
+      "etag": "\"6a46-65d55ae96561c-df\"",
+      "file_path": "documentation/CoreAudioTypes/avaudiosession/errorcode/siriisrecording.md",
+      "hash": "dd2f303da3c68cf3f179c415c905d78f3b3055fb057584371107da3ea5ed2508"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/coreaudiotypes/avaudiosession/errorcode/unspecified.json": {
+      "etag": "\"6aeb-65d55ae96561c-df\"",
+      "file_path": "documentation/CoreAudioTypes/avaudiosession/errorcode/unspecified.md",
+      "hash": "2e853b2f7a79b8ba80ebfcef8707ce57b0348d4fd7578d78a276b70f63e394b4"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/coreaudiotypes/avaudiosessionerrorinsufficientpriority.json": {
+      "etag": "\"4236-65d55aea1ef73-df\"",
+      "file_path": "documentation/CoreAudioTypes/avaudiosessionerrorinsufficientpriority.md",
+      "hash": "d1bf33258fd42d540f8266b4931dd10a36aceab3349328365d67bdde271d64ac"
+    },
     "https://developer.apple.com/tutorials/data/documentation/coreaudiotypes/avaudiouinteger.json": {
       "etag": "\"422b-65d55ae94bb22-df\"",
       "file_path": "documentation/CoreAudioTypes/avaudiouinteger.md",
       "hash": "f47901679a32e1c3b1e17f8e6f2acbdbce1d451ab0e7a99df07edea8261d00be"
     },
+    "https://developer.apple.com/tutorials/data/documentation/coreaudiotypes/ca_canonical_deprecated.json": {
+      "etag": "\"b6d-65d55ae8d3946-df\"",
+      "file_path": "documentation/CoreAudioTypes/ca_canonical_deprecated.md",
+      "hash": "75d6c642c7b5d8b1ae98854d9c1230ca7d8b11daee47910e402a1415d313659f"
+    },
     "https://developer.apple.com/tutorials/data/documentation/coreaudiotypes/ca_prefer_fixed_point.json": {
       "etag": "\"16f5-65d55ae8d3946-df\"",
       "file_path": "documentation/CoreAudioTypes/ca_prefer_fixed_point.md",
       "hash": "283c81bf9920b943621b4e4a4cc00df5dbba9a82f2cceca8b61d97899c59da8b"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/coreaudiotypes/ca_realtime_api.json": {
+      "etag": "\"b0d-65d55ae92ea8e-df\"",
+      "file_path": "documentation/CoreAudioTypes/ca_realtime_api.md",
+      "hash": "ee2511479803c84c64e1ca0a0d33c40d094592ccbc3ca650535ea7afb4c74e4f"
     },
     "https://developer.apple.com/tutorials/data/documentation/coreaudiotypes/coreaudiotypes-enumerations.json": {
       "etag": "\"1346-6590269001c11-df\"",
@@ -5980,6 +6210,11 @@
       "file_path": "documentation/CoreAudioTypes/smptetimeflags/init(rawvalue).md",
       "hash": "9a6d2c653c3b987bcd1c40ffe723038221f68542b761608c5675e691c822e28d"
     },
+    "https://developer.apple.com/tutorials/data/documentation/coreaudiotypes/smptetimeflags/ksmptetimeunknown.json": {
+      "etag": "\"1976-65d55ae912985-df\"",
+      "file_path": "documentation/CoreAudioTypes/smptetimeflags/ksmptetimeunknown.md",
+      "hash": "87d801ea5c1ab5b79c496b592bc636c16e98cfac163be1a624881853992729dd"
+    },
     "https://developer.apple.com/tutorials/data/documentation/coreaudiotypes/smptetimeflags/running.json": {
       "etag": "\"235c-65d55ae912985-df\"",
       "file_path": "documentation/CoreAudioTypes/smptetimeflags/running.md",
@@ -6059,12 +6294,17 @@
       "etag": "\"489b-65d55ae92ea8e-df\"",
       "file_path": "documentation/CoreAudioTypes/smptetimetype/type60drop.md",
       "hash": "87aec1de73b4b78e6bb89dd8d549406ea5332fa357258a96b30b116e899af4a4"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/coreaudiotypes/testaudioformatnativeendian.json": {
+      "etag": "\"bf7-65d55ae94bb22-df\"",
+      "file_path": "documentation/CoreAudioTypes/testaudioformatnativeendian.md",
+      "hash": "9dd16fc855a935136fcefefe8c9d089bcbd393d735feb5937623ad1d7f051df6"
     }
   },
   "metadata": {
     "render": {
-      "version": 1
+      "version": 2
     },
-    "total_pages": 1212
+    "total_pages": 1260
   }
 }

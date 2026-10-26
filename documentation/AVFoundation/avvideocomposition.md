@@ -52,6 +52,8 @@ You can create a custom video compositor by implementing the [`AVVideoCompositin
   Creates a video composition object configured to present the video tracks of the specified asset.
 - [init(asset: AVAsset, applyingCIFiltersWithHandler: (AVAsynchronousCIImageFilteringRequest) -> Void)](./avvideocomposition/init%28asset,applyingcifilterswithhandler%29.md)
   Creates a video composition configured to apply Core Image filters to each video frame of the specified asset.
+- [+ videoCompositionWithVideoComposition:](./avvideocomposition/videocompositionwithvideocomposition_.md)
+  Pass-through initializer, for internal use in AVFoundation only
 ### Inspecting the video composition
 - [var renderSize: CGSize](./avvideocomposition/rendersize.md)
   The size at which the video composition should render.
@@ -74,6 +76,12 @@ You can create a custom video compositor by implementing the [`AVVideoCompositin
 - [var spatialVideoConfigurations: [AVSpatialVideoConfiguration]](./avvideocomposition/spatialvideoconfigurations-80iab.md)
   Indicates the spatial configurations that are available to associate with the output of the video composition.
 - [struct AVSpatialVideoConfiguration](./avspatialvideoconfiguration-swift.struct.md)
+- [outputBufferDescription](./avvideocomposition/outputbufferdescription-3wsar.md)
+  The output buffers of the video composition can be specified with the outputBufferDescription. The value is an array of CMTagCollectionRef objects that describes the output buffers.
+- [spatialVideoConfigurations](./avvideocomposition/spatialvideoconfigurations-2ipps.md)
+  Indicates the spatial configurations that are available to associate with the output of the video composition.
+- [AVSpatialVideoConfiguration](./avspatialvideoconfiguration-c.class.md)
+  An AVSpatialVideoConfiguration specifies spatial video properties.
 ### Validating the time range
 - [func isValid(for: [AVAssetTrack], assetDuration: CMTime, timeRange: CMTimeRange, validationDelegate: (any AVVideoCompositionValidationHandling)?) -> Bool](./avvideocomposition/isvalid%28for,assetduration,timerange,validationdelegate%29.md)
   Indicates whether the time ranges of the composition’s instructions conform to validation requirements.
@@ -93,6 +101,8 @@ You can create a custom video compositor by implementing the [`AVVideoCompositin
   An identifier of the source track from which the video composition derives frame timing.
 - [var sourceSampleDataTrackIDs: [CMPersistentTrackID]](./avvideocomposition/sourcesampledatatrackids-2hgue.md)
   The identifiers of source sample data tracks in the composition that the object requires to compose frames.
+- [sourceSampleDataTrackIDs](./avvideocomposition/sourcesampledatatrackids-3nrgi.md)
+  The identifiers of source sample data tracks in the composition that the compositor requires to compose frames.
 ### Configuring HDR metadata
 - [var perFrameHDRDisplayMetadataPolicy: AVVideoComposition.PerFrameHDRDisplayMetadataPolicy](./avvideocomposition/perframehdrdisplaymetadatapolicy-swift.property.md)
   The policy for display of HDR display metadata on the rendered frame.

@@ -25,6 +25,12 @@ init()
 - (instancetype) init;
 ```
 
+## See Also
+
+### Creating a custom catalog object
+- [+ new](./new.md)
+  Creates a new custom catalog object for storing reference audio signatures and their associated metadata.
+
 
 ---
 

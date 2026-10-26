@@ -27,6 +27,8 @@ typedef enum MDQuerySortOptionFlags : unsigned int {
 - [init(rawValue: UInt32)](./mdquerysortoptionflags/api-1442455-init.md)
 ### Instance Properties
 - [var rawValue: UInt32](./mdquerysortoptionflags/api-1442589-rawvalue.md)
+### Constants
+- [kMDQueryReverseSortOrderFlag](./mdquerysortoptionflags/kmdqueryreversesortorderflag.md)
 
 ## Relationships
 

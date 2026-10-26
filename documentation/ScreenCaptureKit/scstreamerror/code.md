@@ -90,6 +90,12 @@ enum SCStreamErrorCode : NSInteger;
 - [Sendable](../../Swift/sendable.md)
 - [SendableMetatype](../../Swift/sendablemetatype.md)
 
+## See Also
+
+### Stream errors (Objective-C)
+- [SCStreamErrorDomain](../scstreamerrordomain.md)
+  A string representation of the error domain.
+
 
 ---
 

@@ -33,6 +33,8 @@ If your app doesn’t set the altitude, ARKit populates this property to indicat
   Vertical distance, in meters, between this anchor and sea level.
 - [ARGeoAnchor.AltitudeSource](./altitudesource-swift.enum.md)
   Options for setting a location anchor’s altitude.
+- [altitude](./altitude-9kges.md)
+  Vertical distance, in meters, between this anchor and sea level.
 
 
 ---

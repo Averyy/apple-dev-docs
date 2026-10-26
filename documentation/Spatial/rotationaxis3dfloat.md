@@ -52,6 +52,12 @@ typedef union { ... } SPRotationAxis3DFloat;
   The y-axis value.
 - [var z: Float](./rotationaxis3dfloat/z-swift.property.md)
   The z-axis value.
+- [x](./sprotationaxis3dfloat/x.md)
+  The x-axis value.
+- [y](./sprotationaxis3dfloat/y.md)
+  The y-axis value.
+- [z](./sprotationaxis3dfloat/z.md)
+  The z-axis value.
 ### Type Properties
 - [static let x: RotationAxis3DFloat](./rotationaxis3dfloat/x-swift.type.property.md)
   The x-axis, expressed in unit coordinates.

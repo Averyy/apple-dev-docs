@@ -30,6 +30,8 @@ As an alternative to using [`setSelectionFrom(_:to:anchor:highlight:)`](./setsel
 ### Related Documentation
 - [var isHighlighted: Bool](../nscell/ishighlighted.md)
   A Boolean value indicating whether the cell has a highlighted appearance.
+- [selectedCell](./selectedcell.md)
+  The most recently selected cell.
 ### Finding Cells
 - [var selectedColumn: Int](./selectedcolumn.md)
   The column number of the selected cell.

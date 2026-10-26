@@ -68,6 +68,8 @@ This class synchronizes multiple objects that conform to [`AVQueuedSampleBufferR
 ### Configuring audio behavior
 - [var intendedSpatialAudioExperience: any SpatialAudioExperience](./avsamplebufferrendersynchronizer/intendedspatialaudioexperience-3z7d3.md)
   The synchronizer’s intended Spatial Audio experience.
+- [intendedSpatialAudioExperience](./avsamplebufferrendersynchronizer/intendedspatialaudioexperience-2wthu.md)
+  The intended spatial audio experience applied to all AVSampleBufferAudioRenderers within this synchronizer.
 ### Instance Methods
 - [func removeReceiver(sending AVSampleBufferAudioRenderer.Receiver, at: CMTime) async -> Bool](./avsamplebufferrendersynchronizer/removereceiver%28_,at%29-3rrnp.md)
   Removes a receiver and its renderer from the synchronizer.

@@ -43,6 +43,10 @@ For more information about how to connect to external accessories, see [External
   An object you use to scan for wireless accessories and configure them for use with the user’s app.
 - [class EAWiFiUnconfiguredAccessory](./eawifiunconfiguredaccessory.md)
   An object that provides information about an unconfigured MFi Wireless Accessory Configuration accessory.
+### Macros
+- [EA_EXTERN](./ea_extern.md)
+- [EA_EXTERN_CLASS](./ea_extern_class.md)
+- [EA_EXTERN_CLASS_AVAILABLE](./ea_extern_class_available.md)
 
 
 ---

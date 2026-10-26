@@ -43,6 +43,12 @@ LAErrorTouchIDLockout
   Touch ID is not available on the device.
 - [LAError.Code.touchIDNotEnrolled](./touchidnotenrolled.md)
   The user has no enrolled Touch ID fingers.
+- [LAErrorBiometryLockout](../../laerror-c.enum/laerrorbiometrylockout.md)
+  Biometry is locked because there were too many failed attempts.
+- [LAErrorBiometryNotAvailable](../../laerror-c.enum/laerrorbiometrynotavailable.md)
+  Biometry is not available on the device.
+- [LAErrorBiometryNotEnrolled](../../laerror-c.enum/laerrorbiometrynotenrolled.md)
+  The user has no enrolled biometric identities.
 
 
 ---

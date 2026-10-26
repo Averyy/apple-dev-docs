@@ -1314,10 +1314,20 @@
       "file_path": "documentation/SwiftUI/animatable().md",
       "hash": "d383bed29ca2ec8e79bc57d2c267018cfea498d9d5eec9a37366aee9653bfc52"
     },
+    "https://developer.apple.com/documentation/swiftui/animatable/animatabledata-1gesb": {
+      "etag": "\"1699-65d55de50c2df-df\"",
+      "file_path": "documentation/SwiftUI/animatable/animatabledata-1gesb.md",
+      "hash": "5550e7c4b0603554785d05be5baa4c77b700be910207a22feb9beec1b9cf4fab"
+    },
     "https://developer.apple.com/documentation/swiftui/animatable/animatabledata-6nydg": {
       "etag": "\"2cf5-65d55de50c2df-df\"",
       "file_path": "documentation/SwiftUI/animatable/animatabledata-6nydg.md",
       "hash": "1d6ad9da4e2c1517921b0fed5cfb06f4f0b572ecc35af268a087aabe271a8ff7"
+    },
+    "https://developer.apple.com/documentation/swiftui/animatable/animatabledata-bqi8": {
+      "etag": "\"1336-65d55de50c2df-df\"",
+      "file_path": "documentation/SwiftUI/animatable/animatabledata-bqi8.md",
+      "hash": "ae28916d507e95fa7beeeb7e44abe4e916b1c33e47b9d8e88e80af914f7f9079"
     },
     "https://developer.apple.com/documentation/swiftui/animatable/animatabledata-swift.associatedtype": {
       "etag": "\"1e9e-65d55de50c2df-df\"",
@@ -2259,6 +2269,11 @@
       "file_path": "documentation/SwiftUI/attributedtextformattingdefinition/body-1b01t.md",
       "hash": "d8fa0dd871e166b41c20c2d5888eace4ae3df7f1b0779e819cd4a19f2813939c"
     },
+    "https://developer.apple.com/documentation/swiftui/attributedtextformattingdefinition/body-48m9l": {
+      "etag": "\"10e5-65d55de36c5b6-df\"",
+      "file_path": "documentation/SwiftUI/attributedtextformattingdefinition/body-48m9l.md",
+      "hash": "9ac7810eb3987f20e18b9bff753b0b1d70e2f8d0dde4f2517e50687ae0a03a78"
+    },
     "https://developer.apple.com/documentation/swiftui/attributedtextformattingdefinition/body-swift.associatedtype": {
       "etag": "\"187a-65d55de36c5b6-df\"",
       "file_path": "documentation/SwiftUI/attributedtextformattingdefinition/body-swift.associatedtype.md",
@@ -2503,6 +2518,11 @@
       "etag": "\"256f-65d55de669195-df\"",
       "file_path": "documentation/SwiftUI/axchartdescriptorrepresentable/updatechartdescriptor(_).md",
       "hash": "49661a6ad0620de87e15c6d612ec8e83945d772e3892b2ec849ab147c6036b61"
+    },
+    "https://developer.apple.com/documentation/swiftui/axchartdescriptorrepresentable/updatechartdescriptor(_:)-7cxy6": {
+      "etag": "\"1c42-65d55de669195-df\"",
+      "file_path": "documentation/SwiftUI/axchartdescriptorrepresentable/updatechartdescriptor(_)-7cxy6.md",
+      "hash": "468c2261378b53888d9ca18ee488c71b6653759f4b94ce6b4490ffcab2805eac"
     },
     "https://developer.apple.com/documentation/swiftui/axis": {
       "etag": "\"3f19-65d55df0978e7-df\"",
@@ -5290,10 +5310,20 @@
       "file_path": "documentation/SwiftUI/customanimation/shouldmerge(previous,value,time,context).md",
       "hash": "0db68237870d261493fdcd38356428f190218aba62c2244dda2a642eaf967750"
     },
+    "https://developer.apple.com/documentation/swiftui/customanimation/shouldmerge(previous:value:time:context:)-9171c": {
+      "etag": "\"3cb2-65d55df4bc77e-df\"",
+      "file_path": "documentation/SwiftUI/customanimation/shouldmerge(previous,value,time,context)-9171c.md",
+      "hash": "8cd90396388ead8874de235a151cd4739edf1e7c606f1e663ac55619a82695d5"
+    },
     "https://developer.apple.com/documentation/swiftui/customanimation/velocity(value:time:context:)": {
       "etag": "\"437e-65d55df4bc77e-df\"",
       "file_path": "documentation/SwiftUI/customanimation/velocity(value,time,context).md",
       "hash": "130fd90808dfaac02d02834ddda22433966e42ff792c39dc40bd13c541410ddd"
+    },
+    "https://developer.apple.com/documentation/swiftui/customanimation/velocity(value:time:context:)-78qjv": {
+      "etag": "\"3cfb-65d55df4bc77e-df\"",
+      "file_path": "documentation/SwiftUI/customanimation/velocity(value,time,context)-78qjv.md",
+      "hash": "d6811efaa278bfab65c643240053f0358c8c68626735479a74f9a400760aaae6"
     },
     "https://developer.apple.com/documentation/swiftui/customhovereffect": {
       "etag": "\"ca09-65d55ddf67e88-df\"",
@@ -5314,6 +5344,11 @@
       "etag": "\"269a-65d55df59b1e3-df\"",
       "file_path": "documentation/SwiftUI/customhovereffect/body(content).md",
       "hash": "9ddc6fd91ef86c9eb7c9a1a2508f70a7e04790dabede8d3f702476bb1c4d4d91"
+    },
+    "https://developer.apple.com/documentation/swiftui/customhovereffect/body(content:)-1hbi3": {
+      "etag": "\"26f1-65d55df585ce3-df\"",
+      "file_path": "documentation/SwiftUI/customhovereffect/body(content)-1hbi3.md",
+      "hash": "80ae56f52e09fff96add40aa35e1c1a43329331cbc046e633fbf05a3eade1644"
     },
     "https://developer.apple.com/documentation/swiftui/customhovereffect/content": {
       "etag": "\"1396-65d55df585ce3-df\"",
@@ -6845,15 +6880,30 @@
       "file_path": "documentation/SwiftUI/dropdelegate/dropentered(info).md",
       "hash": "9e9d76d0c7255d17bb4f27e191ecb3aaad52ab2ad1a4edaadbcaab31eb052701"
     },
+    "https://developer.apple.com/documentation/swiftui/dropdelegate/dropentered(info:)-2tqut": {
+      "etag": "\"18d2-65d55dee9329d-df\"",
+      "file_path": "documentation/SwiftUI/dropdelegate/dropentered(info)-2tqut.md",
+      "hash": "6bb1cb9d5474860e88f8f72f01e85d51fa95fb09783ac5c074116f0616592f5c"
+    },
     "https://developer.apple.com/documentation/swiftui/dropdelegate/dropexited(info:)": {
       "etag": "\"2d59-65d55dee9329d-df\"",
       "file_path": "documentation/SwiftUI/dropdelegate/dropexited(info).md",
       "hash": "d496de65ab720b593c84cc5e7084ae9a807eb39eafcdb02d6a41de9e8d19bde9"
     },
+    "https://developer.apple.com/documentation/swiftui/dropdelegate/dropexited(info:)-7w9t2": {
+      "etag": "\"1941-65d55dee9329d-df\"",
+      "file_path": "documentation/SwiftUI/dropdelegate/dropexited(info)-7w9t2.md",
+      "hash": "a0b686582936a6388dcc5ddb7ae6187e03dd043991cded35a02ecb373cb57570"
+    },
     "https://developer.apple.com/documentation/swiftui/dropdelegate/dropupdated(info:)": {
       "etag": "\"37cd-65d55dee9329d-df\"",
       "file_path": "documentation/SwiftUI/dropdelegate/dropupdated(info).md",
       "hash": "30683638baa14d9bf40ff11a1bc24556017fe384bf1b5919df3e574e2957a792"
+    },
+    "https://developer.apple.com/documentation/swiftui/dropdelegate/dropupdated(info:)-2mktz": {
+      "etag": "\"23b5-65d55dee9329d-df\"",
+      "file_path": "documentation/SwiftUI/dropdelegate/dropupdated(info)-2mktz.md",
+      "hash": "a16cf5cd1d895f69798f883d2ccf8ae1c7568ebf61260e715a563a2c2b1fe9d6"
     },
     "https://developer.apple.com/documentation/swiftui/dropdelegate/performdrop(info:)": {
       "etag": "\"3126-65d55dee9329d-df\"",
@@ -6864,6 +6914,11 @@
       "etag": "\"3201-65d55dee9329d-df\"",
       "file_path": "documentation/SwiftUI/dropdelegate/validatedrop(info).md",
       "hash": "5793fd139df758f66d6f7a71676b5b7259f99f52892b0adca9185104f73e6c8b"
+    },
+    "https://developer.apple.com/documentation/swiftui/dropdelegate/validatedrop(info:)-1hqfh": {
+      "etag": "\"1de9-65d55dee9329d-df\"",
+      "file_path": "documentation/SwiftUI/dropdelegate/validatedrop(info)-1hqfh.md",
+      "hash": "c3435f95e15930c40e164c7af118279250f59aeea393775ac2190cd2f9399a9a"
     },
     "https://developer.apple.com/documentation/swiftui/dropinfo": {
       "etag": "\"42a7-65d55df6994bb-df\"",
@@ -7114,6 +7169,11 @@
       "etag": "\"17f5-65d55de61a711-df\"",
       "file_path": "documentation/SwiftUI/dynamicproperty/update().md",
       "hash": "96534d8785e8c3e0a59e822aff88ea76ac9684bd2c29693321943351f7f3a52d"
+    },
+    "https://developer.apple.com/documentation/swiftui/dynamicproperty/update()-9fxv4": {
+      "etag": "\"14fc-65d55de61a711-df\"",
+      "file_path": "documentation/SwiftUI/dynamicproperty/update()-9fxv4.md",
+      "hash": "128cd1290d7de76cf3e9ff5eca37766abc52e80ffb6f89ee5d68b313ebaee190"
     },
     "https://developer.apple.com/documentation/swiftui/dynamictablerowcontent": {
       "etag": "\"4659-65d55df7e95c5-df\"",
@@ -9204,6 +9264,11 @@
       "etag": "\"29da-65d55df46644f-df\"",
       "file_path": "documentation/SwiftUI/filedocument/writablecontenttypes.md",
       "hash": "81e8e70fe37592ee931b64410bfc04de9aebc8fa97fc27335a665e4481091e30"
+    },
+    "https://developer.apple.com/documentation/swiftui/filedocument/writablecontenttypes-289b3": {
+      "etag": "\"1dee-65d55df46644f-df\"",
+      "file_path": "documentation/SwiftUI/filedocument/writablecontenttypes-289b3.md",
+      "hash": "acb0b5f2a0467a03931607a6021ca69445e0d209a8dfbe1edce224080bbc9e67"
     },
     "https://developer.apple.com/documentation/swiftui/filedocument/writeconfiguration": {
       "etag": "\"21b8-65d55df46644f-df\"",
@@ -13729,15 +13794,35 @@
       "file_path": "documentation/SwiftUI/layout/explicitalignment(of,in,proposal,subviews,cache).md",
       "hash": "ff15f17e5056b57f98aa708f6ce7af3a3c5ec73be79a6bd19b596c29810c1612"
     },
+    "https://developer.apple.com/documentation/swiftui/layout/explicitalignment(of:in:proposal:subviews:cache:)-755bz": {
+      "etag": "\"3393-65d55de4ef34f-df\"",
+      "file_path": "documentation/SwiftUI/layout/explicitalignment(of,in,proposal,subviews,cache)-755bz.md",
+      "hash": "bb444d9455e43a669fe5bd85f0487d4bd4d7ec7574a9b1b916b6df36dd345686"
+    },
+    "https://developer.apple.com/documentation/swiftui/layout/explicitalignment(of:in:proposal:subviews:cache:)-8cl0p": {
+      "etag": "\"33b6-65d55de4ef34f-df\"",
+      "file_path": "documentation/SwiftUI/layout/explicitalignment(of,in,proposal,subviews,cache)-8cl0p.md",
+      "hash": "af9b365a97ea1457a9d0c9c1068425d9f9276e85872a8248bb7c1d6264efeb00"
+    },
     "https://developer.apple.com/documentation/swiftui/layout/layoutproperties": {
       "etag": "\"2c48-65d55de4ef34f-df\"",
       "file_path": "documentation/SwiftUI/layout/layoutproperties.md",
       "hash": "30bd986e5d3f15643a5cabe715db0b2d335b0dc3626a77319f2fe7e2c2fadbb9"
     },
+    "https://developer.apple.com/documentation/swiftui/layout/layoutproperties-6h7w0": {
+      "etag": "\"1e93-65d55de4ef34f-df\"",
+      "file_path": "documentation/SwiftUI/layout/layoutproperties-6h7w0.md",
+      "hash": "acaafec4b8d875a1caf492188547eb6771ce90696fb62c161f8591484680855e"
+    },
     "https://developer.apple.com/documentation/swiftui/layout/makecache(subviews:)": {
       "etag": "\"5451-65d55de4ef34f-df\"",
       "file_path": "documentation/SwiftUI/layout/makecache(subviews).md",
       "hash": "513668edc2446b342957af8165331f60a36ef8fde5c3be6afa313a0aad6e6f77"
+    },
+    "https://developer.apple.com/documentation/swiftui/layout/makecache(subviews:)-4fu1k": {
+      "etag": "\"1e86-65d55de4ef34f-df\"",
+      "file_path": "documentation/SwiftUI/layout/makecache(subviews)-4fu1k.md",
+      "hash": "cd85f56a9f290b86c6c6c85bf0cb9499d97c6fe10cb58a20e9db171885113cd7"
     },
     "https://developer.apple.com/documentation/swiftui/layout/placesubviews(in:proposal:subviews:cache:)": {
       "etag": "\"6717-65d55de4ef34f-df\"",
@@ -13754,6 +13839,11 @@
       "file_path": "documentation/SwiftUI/layout/spacing(subviews,cache).md",
       "hash": "c34c79e4e9662070b8c0918f9ebcc23f3fb2fa7fd560852fc5dd66e4984731be"
     },
+    "https://developer.apple.com/documentation/swiftui/layout/spacing(subviews:cache:)-1z0gt": {
+      "etag": "\"2208-65d55de4ef34f-df\"",
+      "file_path": "documentation/SwiftUI/layout/spacing(subviews,cache)-1z0gt.md",
+      "hash": "7e1202639c47c729c3ba33fe8eac13ed18c9b84396c76023b4abc64b330f7316"
+    },
     "https://developer.apple.com/documentation/swiftui/layout/subviews": {
       "etag": "\"26b4-65d55de4ef34f-df\"",
       "file_path": "documentation/SwiftUI/layout/subviews.md",
@@ -13763,6 +13853,11 @@
       "etag": "\"2d3a-65d55de4ef34f-df\"",
       "file_path": "documentation/SwiftUI/layout/updatecache(_,subviews).md",
       "hash": "b0cad28e30660e6fd43774fd093c34c70dcb7861dd48bb588532bfb53aa4094d"
+    },
+    "https://developer.apple.com/documentation/swiftui/layout/updatecache(_:subviews:)-75zac": {
+      "etag": "\"2240-65d55de4ef34f-df\"",
+      "file_path": "documentation/SwiftUI/layout/updatecache(_,subviews)-75zac.md",
+      "hash": "5cad14b6b94e253ce40b9acdffae2571fbe5e21db1d8a2db9a5dd2463f8993d3"
     },
     "https://developer.apple.com/documentation/swiftui/layoutdirection": {
       "etag": "\"3b47-65d55de5b9754-df\"",
@@ -16093,10 +16188,20 @@
       "file_path": "documentation/SwiftUI/nsgesturerecognizerrepresentable/handlensgesturerecognizeraction(_,context).md",
       "hash": "33cde8934305b2deea26b01a8ec1fd27a369d9602cb8b9b9ba49cfb4951bf1a3"
     },
+    "https://developer.apple.com/documentation/swiftui/nsgesturerecognizerrepresentable/handlensgesturerecognizeraction(_:context:)-8n3is": {
+      "etag": "\"26b9-65d55df783a9a-df\"",
+      "file_path": "documentation/SwiftUI/nsgesturerecognizerrepresentable/handlensgesturerecognizeraction(_,context)-8n3is.md",
+      "hash": "bb953049110a79390f1418478e4e218a9318d58ed75a278b1cb00dc3cffc3565"
+    },
     "https://developer.apple.com/documentation/swiftui/nsgesturerecognizerrepresentable/makecoordinator(converter:)": {
       "etag": "\"2b25-65d55df783a9a-df\"",
       "file_path": "documentation/SwiftUI/nsgesturerecognizerrepresentable/makecoordinator(converter).md",
       "hash": "b1fe6a59a2733d31c5e0f84ad9498bca417af918dcd68a78ae38cea18dedad68"
+    },
+    "https://developer.apple.com/documentation/swiftui/nsgesturerecognizerrepresentable/makecoordinator(converter:)-8fzsl": {
+      "etag": "\"1db7-65d55df783a9a-df\"",
+      "file_path": "documentation/SwiftUI/nsgesturerecognizerrepresentable/makecoordinator(converter)-8fzsl.md",
+      "hash": "f230e5534303664f26f7cccace2515c3f173f1219c8bb819f44486bbf51f8de6"
     },
     "https://developer.apple.com/documentation/swiftui/nsgesturerecognizerrepresentable/makensgesturerecognizer(context:)": {
       "etag": "\"2486-65d55df783a9a-df\"",
@@ -16112,6 +16217,11 @@
       "etag": "\"2c59-65d55df783a9a-df\"",
       "file_path": "documentation/SwiftUI/nsgesturerecognizerrepresentable/updatensgesturerecognizer(_,context).md",
       "hash": "7d604529cabb70fde8b93d5d243dcf00efd141d64adf8cea4fd728fe0508b142"
+    },
+    "https://developer.apple.com/documentation/swiftui/nsgesturerecognizerrepresentable/updatensgesturerecognizer(_:context:)-1s5x4": {
+      "etag": "\"25c9-65d55df783a9a-df\"",
+      "file_path": "documentation/SwiftUI/nsgesturerecognizerrepresentable/updatensgesturerecognizer(_,context)-1s5x4.md",
+      "hash": "eb887568af69a54cdd544521fd13eda415ca5cc81b26fd3689e0d1bed4f13d0b"
     },
     "https://developer.apple.com/documentation/swiftui/nsgesturerecognizerrepresentablecontext": {
       "etag": "\"21d5-65d55de80a9f4-df\"",
@@ -16708,6 +16818,11 @@
       "file_path": "documentation/SwiftUI/nsviewcontrollerrepresentable.md",
       "hash": "a22c5f0ff605323a718604d30c77a10504ee5fbb9e942d2ae876c0f491b6315e"
     },
+    "https://developer.apple.com/documentation/swiftui/nsviewcontrollerrepresentable/body": {
+      "etag": "\"1664-65d55de1739fa-df\"",
+      "file_path": "documentation/SwiftUI/nsviewcontrollerrepresentable/body.md",
+      "hash": "211e68d24793fc969873131f32f3723a228bc1226d2b082088fd2b4fef6fafae"
+    },
     "https://developer.apple.com/documentation/swiftui/nsviewcontrollerrepresentable/context": {
       "etag": "\"225a-65d55de1739fa-df\"",
       "file_path": "documentation/SwiftUI/nsviewcontrollerrepresentable/context.md",
@@ -16723,6 +16838,11 @@
       "file_path": "documentation/SwiftUI/nsviewcontrollerrepresentable/dismantlensviewcontroller(_,coordinator).md",
       "hash": "1cc54d9e29fad5e358da1d37f17f199175506abdc41cb6db1fea50c6292f5b4e"
     },
+    "https://developer.apple.com/documentation/swiftui/nsviewcontrollerrepresentable/dismantlensviewcontroller(_:coordinator:)-t6ob": {
+      "etag": "\"2374-65d55de1739fa-df\"",
+      "file_path": "documentation/SwiftUI/nsviewcontrollerrepresentable/dismantlensviewcontroller(_,coordinator)-t6ob.md",
+      "hash": "a0286dbddebad1f9fcfb2d9d9b5e64524d114e4e24f7815f9362b34c91eb1ab3"
+    },
     "https://developer.apple.com/documentation/swiftui/nsviewcontrollerrepresentable/layoutoptions": {
       "etag": "\"f99-65d55de1739fa-df\"",
       "file_path": "documentation/SwiftUI/nsviewcontrollerrepresentable/layoutoptions.md",
@@ -16732,6 +16852,11 @@
       "etag": "\"2b3b-65d55de1739fa-df\"",
       "file_path": "documentation/SwiftUI/nsviewcontrollerrepresentable/makecoordinator().md",
       "hash": "08b98604b71f3a5f967fbcbacf9692ed0c6aa07d5bb2a6b0abcb18e141fe1f23"
+    },
+    "https://developer.apple.com/documentation/swiftui/nsviewcontrollerrepresentable/makecoordinator()-72re2": {
+      "etag": "\"1c86-65d55de1739fa-df\"",
+      "file_path": "documentation/SwiftUI/nsviewcontrollerrepresentable/makecoordinator()-72re2.md",
+      "hash": "56081f4dc636f6eb470175777099b1f2347d85911300141a2cbe0b3d5e11e541"
     },
     "https://developer.apple.com/documentation/swiftui/nsviewcontrollerrepresentable/makensviewcontroller(context:)": {
       "etag": "\"2cc1-65d55de1739fa-df\"",
@@ -16747,6 +16872,11 @@
       "etag": "\"380b-65d55de1739fa-df\"",
       "file_path": "documentation/SwiftUI/nsviewcontrollerrepresentable/sizethatfits(_,nsviewcontroller,context).md",
       "hash": "88954c74ec173e5bf53478309f9a6635af9ccf97a0b3eafd7ab6088cb5e5dffa"
+    },
+    "https://developer.apple.com/documentation/swiftui/nsviewcontrollerrepresentable/sizethatfits(_:nsviewcontroller:context:)-52cs0": {
+      "etag": "\"30c4-65d55de1739fa-df\"",
+      "file_path": "documentation/SwiftUI/nsviewcontrollerrepresentable/sizethatfits(_,nsviewcontroller,context)-52cs0.md",
+      "hash": "cfcb4654ead02fd05a2ae8bf476124e89f01a927df631f20f16d8554ed9733f7"
     },
     "https://developer.apple.com/documentation/swiftui/nsviewcontrollerrepresentable/updatensviewcontroller(_:context:)": {
       "etag": "\"2c4d-65d55de1739fa-df\"",
@@ -16783,6 +16913,11 @@
       "file_path": "documentation/SwiftUI/nsviewrepresentable.md",
       "hash": "40dc0c81a7d30001b080c3f0226953746a32229c5fda239f293ac38289bba506"
     },
+    "https://developer.apple.com/documentation/swiftui/nsviewrepresentable/body": {
+      "etag": "\"15dc-65d55de42b195-df\"",
+      "file_path": "documentation/SwiftUI/nsviewrepresentable/body.md",
+      "hash": "8c208c42db063f7266ef15236d58bcce9058420ef3482aebef48a214a322ba16"
+    },
     "https://developer.apple.com/documentation/swiftui/nsviewrepresentable/context": {
       "etag": "\"1fa4-65d55de42b195-df\"",
       "file_path": "documentation/SwiftUI/nsviewrepresentable/context.md",
@@ -16798,6 +16933,11 @@
       "file_path": "documentation/SwiftUI/nsviewrepresentable/dismantlensview(_,coordinator).md",
       "hash": "0f6b4395e0965b8e1620fdd65862dd76ccaf9c45fc4b82f6c4ce189a97e6c85c"
     },
+    "https://developer.apple.com/documentation/swiftui/nsviewrepresentable/dismantlensview(_:coordinator:)-21agq": {
+      "etag": "\"20f2-65d55de42b195-df\"",
+      "file_path": "documentation/SwiftUI/nsviewrepresentable/dismantlensview(_,coordinator)-21agq.md",
+      "hash": "570e2d0aa9eab6fcef590e9a052e852ad0ca712be5c998c1d07a69e64fca9697"
+    },
     "https://developer.apple.com/documentation/swiftui/nsviewrepresentable/layoutoptions": {
       "etag": "\"efd-65d55de42b195-df\"",
       "file_path": "documentation/SwiftUI/nsviewrepresentable/layoutoptions.md",
@@ -16807,6 +16947,11 @@
       "etag": "\"299a-65d55de42b195-df\"",
       "file_path": "documentation/SwiftUI/nsviewrepresentable/makecoordinator().md",
       "hash": "c14acf9eb1d12b0e0bc50e7e092cb5ec7f23645f12e2f7f759087cde13965944"
+    },
+    "https://developer.apple.com/documentation/swiftui/nsviewrepresentable/makecoordinator()-6l2eg": {
+      "etag": "\"1c8b-65d55de42b195-df\"",
+      "file_path": "documentation/SwiftUI/nsviewrepresentable/makecoordinator()-6l2eg.md",
+      "hash": "88c3744cd05b70a93f81e3d50f46322a23e4c8d2108eccf93887eb9433013078"
     },
     "https://developer.apple.com/documentation/swiftui/nsviewrepresentable/makensview(context:)": {
       "etag": "\"2943-65d55de42b195-df\"",
@@ -16822,6 +16967,11 @@
       "etag": "\"354d-65d55de42b195-df\"",
       "file_path": "documentation/SwiftUI/nsviewrepresentable/sizethatfits(_,nsview,context).md",
       "hash": "7050a353bd7fedf0e38d0c9a39da246b3c7ed499b6e906a4b169db21e10fafc1"
+    },
+    "https://developer.apple.com/documentation/swiftui/nsviewrepresentable/sizethatfits(_:nsview:context:)-fuqx": {
+      "etag": "\"2e9c-65d55de42b195-df\"",
+      "file_path": "documentation/SwiftUI/nsviewrepresentable/sizethatfits(_,nsview,context)-fuqx.md",
+      "hash": "c1a63cc58e8b1b6600a4871ddc6cd89921b93ac917d17da4557ad31a5dc1cb3f"
     },
     "https://developer.apple.com/documentation/swiftui/nsviewrepresentable/updatensview(_:context:)": {
       "etag": "\"293f-65d55de42b195-df\"",
@@ -18133,6 +18283,11 @@
       "file_path": "documentation/SwiftUI/preferencekey/defaultvalue.md",
       "hash": "4bff9111802cf9084ebabc35c3e93a0510ec988e6e5d8b39d0bc64aedec68e42"
     },
+    "https://developer.apple.com/documentation/swiftui/preferencekey/defaultvalue-23qgw": {
+      "etag": "\"17cc-65d55ddfc2f00-df\"",
+      "file_path": "documentation/SwiftUI/preferencekey/defaultvalue-23qgw.md",
+      "hash": "4382351eaba343c1a38519541a59d2b38a22e5b151ecab10c229b3f944f44973"
+    },
     "https://developer.apple.com/documentation/swiftui/preferencekey/reduce(value:nextvalue:)": {
       "etag": "\"1ed1-65d55ddfc2f00-df\"",
       "file_path": "documentation/SwiftUI/preferencekey/reduce(value,nextvalue).md",
@@ -18483,6 +18638,11 @@
       "file_path": "documentation/SwiftUI/previewmodifier/makesharedcontext().md",
       "hash": "4222bb65c07e2b923c9ee667c9c3539b634288164d9bc492389c190488d8db73"
     },
+    "https://developer.apple.com/documentation/swiftui/previewmodifier/makesharedcontext()-4zi8r": {
+      "etag": "\"1eb5-65d55de3de634-df\"",
+      "file_path": "documentation/SwiftUI/previewmodifier/makesharedcontext()-4zi8r.md",
+      "hash": "cbfe0dffed1d3c5e33a983e6ea513d1639d38b8bf1f0eeb79f8918bc112fa38f"
+    },
     "https://developer.apple.com/documentation/swiftui/previewmodifiercontent": {
       "etag": "\"1610-65d55df6994bb-df\"",
       "file_path": "documentation/SwiftUI/previewmodifiercontent.md",
@@ -18522,6 +18682,11 @@
       "etag": "\"21db-65d55de68350c-df\"",
       "file_path": "documentation/SwiftUI/previewprovider/platform.md",
       "hash": "4b375542571ab16d1de52cd947a2c81005ae4691fde2c8dedb93de318b043a4c"
+    },
+    "https://developer.apple.com/documentation/swiftui/previewprovider/platform-5gkzc": {
+      "etag": "\"1ecc-65d55de68350c-df\"",
+      "file_path": "documentation/SwiftUI/previewprovider/platform-5gkzc.md",
+      "hash": "44c9891fe8351ef10d657df093953505a1086124f2646c5315270845a596f6d8"
     },
     "https://developer.apple.com/documentation/swiftui/previewprovider/previews-swift.associatedtype": {
       "etag": "\"1aaa-65d55de68350c-df\"",
@@ -19277,6 +19442,11 @@
       "etag": "\"2bd2-65d55df7ff190-df\"",
       "file_path": "documentation/SwiftUI/referencefiledocument/writablecontenttypes.md",
       "hash": "9af4fe1d125bc24ac8241c140e16e7f95d453e532f9e9a9eb1c0103ce01bb825"
+    },
+    "https://developer.apple.com/documentation/swiftui/referencefiledocument/writablecontenttypes-41rwk": {
+      "etag": "\"1c99-65d55df7ff190-df\"",
+      "file_path": "documentation/SwiftUI/referencefiledocument/writablecontenttypes-41rwk.md",
+      "hash": "38124803a2072f43202d2b07a41364ab9ddf5d81b225faa18c2e29e06238b24c"
     },
     "https://developer.apple.com/documentation/swiftui/referencefiledocument/writeconfiguration": {
       "etag": "\"2383-65d55df7ff190-df\"",
@@ -20672,6 +20842,11 @@
       "file_path": "documentation/SwiftUI/scrolltargetbehavior/properties(context).md",
       "hash": "0004d5d4cf898821d6eeb1afe7e20187b56402aced82c3a1529438736409d084"
     },
+    "https://developer.apple.com/documentation/swiftui/scrolltargetbehavior/properties(context:)-9ahhx": {
+      "etag": "\"1bcb-65d55de5b9754-df\"",
+      "file_path": "documentation/SwiftUI/scrolltargetbehavior/properties(context)-9ahhx.md",
+      "hash": "3b2b0e245cc45e518a70a4045824198538eb3649561c52e46038a484e0b61832"
+    },
     "https://developer.apple.com/documentation/swiftui/scrolltargetbehavior/propertiescontext": {
       "etag": "\"1490-65d55de5b9754-df\"",
       "file_path": "documentation/SwiftUI/scrolltargetbehavior/propertiescontext.md",
@@ -21912,6 +22087,11 @@
       "file_path": "documentation/SwiftUI/shape/layoutdirectionbehavior.md",
       "hash": "70066c0e69a94fa637c47f80ac2ce4d2d4c7c13174e9f80dc15baae6776bae00"
     },
+    "https://developer.apple.com/documentation/swiftui/shape/layoutdirectionbehavior-5wfat": {
+      "etag": "\"1a6e-65d55de1256ba-df\"",
+      "file_path": "documentation/SwiftUI/shape/layoutdirectionbehavior-5wfat.md",
+      "hash": "ce5d3459ea14d8efe6145aa7125054d0f927a69ea5fbf355ad80e0e91beda0d4"
+    },
     "https://developer.apple.com/documentation/swiftui/shape/lineintersection(_:eofill:)": {
       "etag": "\"37da-65d55de1256ba-df\"",
       "file_path": "documentation/SwiftUI/shape/lineintersection(_,eofill).md",
@@ -22007,6 +22187,11 @@
       "file_path": "documentation/SwiftUI/shape/role.md",
       "hash": "e735c45163f34fb1dad8f7f76886a6e6964d25dcf4a8ee5b2c5914dbbbc1088a"
     },
+    "https://developer.apple.com/documentation/swiftui/shape/role-681up": {
+      "etag": "\"1b66-65d55de1096ea-df\"",
+      "file_path": "documentation/SwiftUI/shape/role-681up.md",
+      "hash": "8d99a72896d51a961177b922d80e23aa6e1b600f0c69b6f1dd217d64973db2e8"
+    },
     "https://developer.apple.com/documentation/swiftui/shape/rotation(_:anchor:)": {
       "etag": "\"5079-65d55de1096ea-df\"",
       "file_path": "documentation/SwiftUI/shape/rotation(_,anchor).md",
@@ -22046,6 +22231,11 @@
       "etag": "\"2c3c-65d55de1256ba-df\"",
       "file_path": "documentation/SwiftUI/shape/sizethatfits(_).md",
       "hash": "7869e347c44bec85156de9022e0d697018923a7f97ea8e784560ce6e7e7eb5a3"
+    },
+    "https://developer.apple.com/documentation/swiftui/shape/sizethatfits(_:)-2vtnh": {
+      "etag": "\"1981-65d55de1256ba-df\"",
+      "file_path": "documentation/SwiftUI/shape/sizethatfits(_)-2vtnh.md",
+      "hash": "5dd86d8e29874e832e6f5cd0bb2f55210b672bd69d8aa75a254f39115607d4ca"
     },
     "https://developer.apple.com/documentation/swiftui/shape/stroke(_:linewidth:)": {
       "etag": "\"3cff-65d55de1256ba-df\"",
@@ -22381,6 +22571,11 @@
       "etag": "\"2099-65d55deedda49-df\"",
       "file_path": "documentation/SwiftUI/shapestyle/resolve(in).md",
       "hash": "09e18fd73faf711bef0a41a1cdaff4dc0aa90ac818741f8e9b99686f0597ed8a"
+    },
+    "https://developer.apple.com/documentation/swiftui/shapestyle/resolve(in:)-6feyg": {
+      "etag": "\"19e3-65d55deec4b10-df\"",
+      "file_path": "documentation/SwiftUI/shapestyle/resolve(in)-6feyg.md",
+      "hash": "2132b00455212cab880501aeaff18bf5ff370f0c7655f04d7ff6f9d5c94063b0"
     },
     "https://developer.apple.com/documentation/swiftui/shapestyle/resolved": {
       "etag": "\"1ae4-65d55deec4b10-df\"",
@@ -26422,6 +26617,11 @@
       "file_path": "documentation/SwiftUI/textrenderer/displaypadding.md",
       "hash": "17be7212df80bc2622ba215a7bfe305715abbd7bf2b3a1f7a3b7e162015dd3f1"
     },
+    "https://developer.apple.com/documentation/swiftui/textrenderer/displaypadding-9l6t9": {
+      "etag": "\"17df-65d55df59b1e3-df\"",
+      "file_path": "documentation/SwiftUI/textrenderer/displaypadding-9l6t9.md",
+      "hash": "569372760071519c044800df365e2aa99187aedbc05ce20c5e1fed3983f6bc55"
+    },
     "https://developer.apple.com/documentation/swiftui/textrenderer/draw(layout:in:)": {
       "etag": "\"1eed-65d55df59b1e3-df\"",
       "file_path": "documentation/SwiftUI/textrenderer/draw(layout,in).md",
@@ -26431,6 +26631,11 @@
       "etag": "\"27ee-65d55df59b1e3-df\"",
       "file_path": "documentation/SwiftUI/textrenderer/sizethatfits(proposal,text).md",
       "hash": "218df902f0cac66801e2fef95a340d8ee01112ec2a854aa930b06f73aae48e40"
+    },
+    "https://developer.apple.com/documentation/swiftui/textrenderer/sizethatfits(proposal:text:)-3wr9v": {
+      "etag": "\"21ff-65d55df59b1e3-df\"",
+      "file_path": "documentation/SwiftUI/textrenderer/sizethatfits(proposal,text)-3wr9v.md",
+      "hash": "ed71dab30ec55acba1fa3ee30f71199282a4b08660b7576388eda2c43aaaacbf"
     },
     "https://developer.apple.com/documentation/swiftui/textselectability": {
       "etag": "\"3961-65d55df4bc77e-df\"",
@@ -27737,6 +27942,11 @@
       "file_path": "documentation/SwiftUI/transition/properties.md",
       "hash": "43174725ad9d23a728930f8c911d54670af7b63abc0d4a8c578f4d8ff986beae"
     },
+    "https://developer.apple.com/documentation/swiftui/transition/properties-3v8pe": {
+      "etag": "\"19c4-65d55de031aec-df\"",
+      "file_path": "documentation/SwiftUI/transition/properties-3v8pe.md",
+      "hash": "44c1cc0921448a19e658c06bbb883b7c5930489d8b50e34cb021846fb9029136"
+    },
     "https://developer.apple.com/documentation/swiftui/transition/push(from:)": {
       "etag": "\"5be8-65d55de031aec-df\"",
       "file_path": "documentation/SwiftUI/transition/push(from).md",
@@ -27937,10 +28147,20 @@
       "file_path": "documentation/SwiftUI/uigesturerecognizerrepresentable/handleuigesturerecognizeraction(_,context).md",
       "hash": "2a2edb7abf0f11b1118419b097b0547f83d1f3c9013106d729afb4cb99d24776"
     },
+    "https://developer.apple.com/documentation/swiftui/uigesturerecognizerrepresentable/handleuigesturerecognizeraction(_:context:)-8u4zs": {
+      "etag": "\"2722-65d55df682166-df\"",
+      "file_path": "documentation/SwiftUI/uigesturerecognizerrepresentable/handleuigesturerecognizeraction(_,context)-8u4zs.md",
+      "hash": "139a9d7a128e879ad28735f0a20a5c9948d944f891980c7992a84dc7819284ba"
+    },
     "https://developer.apple.com/documentation/swiftui/uigesturerecognizerrepresentable/makecoordinator(converter:)": {
       "etag": "\"2b8e-65d55df682166-df\"",
       "file_path": "documentation/SwiftUI/uigesturerecognizerrepresentable/makecoordinator(converter).md",
       "hash": "1e0efd330b6f5ee52f247772ee7722beb59d2a57be16485ad987340ece1ff4c5"
+    },
+    "https://developer.apple.com/documentation/swiftui/uigesturerecognizerrepresentable/makecoordinator(converter:)-504ge": {
+      "etag": "\"1e20-65d55df682166-df\"",
+      "file_path": "documentation/SwiftUI/uigesturerecognizerrepresentable/makecoordinator(converter)-504ge.md",
+      "hash": "67ca24b8aeee73ebecc23bd0c7ade3380a8607e5489703ad99e8cf11e5114be9"
     },
     "https://developer.apple.com/documentation/swiftui/uigesturerecognizerrepresentable/makeuigesturerecognizer(context:)": {
       "etag": "\"24ef-65d55df682166-df\"",
@@ -27956,6 +28176,11 @@
       "etag": "\"2cbe-65d55df682166-df\"",
       "file_path": "documentation/SwiftUI/uigesturerecognizerrepresentable/updateuigesturerecognizer(_,context).md",
       "hash": "442612a1027039e284afe84a0a93cf9327424ff67fc62902910ef7cff4cbbeeb"
+    },
+    "https://developer.apple.com/documentation/swiftui/uigesturerecognizerrepresentable/updateuigesturerecognizer(_:context:)-10jv": {
+      "etag": "\"262d-65d55df682166-df\"",
+      "file_path": "documentation/SwiftUI/uigesturerecognizerrepresentable/updateuigesturerecognizer(_,context)-10jv.md",
+      "hash": "a767ea56e816c7d0bfe7290ccb685ed56c60e7b26e08e023ab6bf9eec6079e4f"
     },
     "https://developer.apple.com/documentation/swiftui/uigesturerecognizerrepresentablecontext": {
       "etag": "\"223b-65d55defa05ec-df\"",
@@ -28317,6 +28542,11 @@
       "file_path": "documentation/SwiftUI/uiviewcontrollerrepresentable.md",
       "hash": "965ad73f804376e4662937058f391ce849f0c061eca12d04fd162df2996c3608"
     },
+    "https://developer.apple.com/documentation/swiftui/uiviewcontrollerrepresentable/body": {
+      "etag": "\"16cf-65d55dee7d60b-df\"",
+      "file_path": "documentation/SwiftUI/uiviewcontrollerrepresentable/body.md",
+      "hash": "66020c5f5490d5e88bfe94740462b6640b3923997ee6a8dbe8823755b3e97c5d"
+    },
     "https://developer.apple.com/documentation/swiftui/uiviewcontrollerrepresentable/context": {
       "etag": "\"22c4-65d55dee6b513-df\"",
       "file_path": "documentation/SwiftUI/uiviewcontrollerrepresentable/context.md",
@@ -28332,6 +28562,11 @@
       "file_path": "documentation/SwiftUI/uiviewcontrollerrepresentable/dismantleuiviewcontroller(_,coordinator).md",
       "hash": "7be22816861f925dce69d0610ef5fd72057ac88b64f49a21fa1c54834727c38c"
     },
+    "https://developer.apple.com/documentation/swiftui/uiviewcontrollerrepresentable/dismantleuiviewcontroller(_:coordinator:)-30a1m": {
+      "etag": "\"2762-65d55dee7d60b-df\"",
+      "file_path": "documentation/SwiftUI/uiviewcontrollerrepresentable/dismantleuiviewcontroller(_,coordinator)-30a1m.md",
+      "hash": "2d7c184237c9e3e6121ea4f6c5c18f0abaf7a70d1a220a7f46085cbd5376a2fe"
+    },
     "https://developer.apple.com/documentation/swiftui/uiviewcontrollerrepresentable/layoutoptions": {
       "etag": "\"1005-65d55dee6b513-df\"",
       "file_path": "documentation/SwiftUI/uiviewcontrollerrepresentable/layoutoptions.md",
@@ -28342,6 +28577,11 @@
       "file_path": "documentation/SwiftUI/uiviewcontrollerrepresentable/makecoordinator().md",
       "hash": "0abd7ca0d67357476d75fc0307d35e2dded8382dbd6ae5e19527c2dd1db18420"
     },
+    "https://developer.apple.com/documentation/swiftui/uiviewcontrollerrepresentable/makecoordinator()-9vwm8": {
+      "etag": "\"2778-65d55dee6b513-df\"",
+      "file_path": "documentation/SwiftUI/uiviewcontrollerrepresentable/makecoordinator()-9vwm8.md",
+      "hash": "26297e42363e4cabf3120864f131925d1d8563e637f26a9c828cacd740b2f73a"
+    },
     "https://developer.apple.com/documentation/swiftui/uiviewcontrollerrepresentable/makeuiviewcontroller(context:)": {
       "etag": "\"2d2b-65d55dee6b513-df\"",
       "file_path": "documentation/SwiftUI/uiviewcontrollerrepresentable/makeuiviewcontroller(context).md",
@@ -28351,6 +28591,11 @@
       "etag": "\"3877-65d55dee6b513-df\"",
       "file_path": "documentation/SwiftUI/uiviewcontrollerrepresentable/sizethatfits(_,uiviewcontroller,context).md",
       "hash": "5b23c0a6af28f4c4bbdcf93e7ae8f7a574e6d74f46f4990fdeccd38579e52162"
+    },
+    "https://developer.apple.com/documentation/swiftui/uiviewcontrollerrepresentable/sizethatfits(_:uiviewcontroller:context:)-7x9zd": {
+      "etag": "\"3130-65d55dee7d60b-df\"",
+      "file_path": "documentation/SwiftUI/uiviewcontrollerrepresentable/sizethatfits(_,uiviewcontroller,context)-7x9zd.md",
+      "hash": "01fadfd7da9db60d9bcfbe609c3674b8ad9611d2fc4757ab4b296da00080a840"
     },
     "https://developer.apple.com/documentation/swiftui/uiviewcontrollerrepresentable/uiviewcontrollertype": {
       "etag": "\"231b-65d55dee7d60b-df\"",
@@ -28392,6 +28637,11 @@
       "file_path": "documentation/SwiftUI/uiviewrepresentable.md",
       "hash": "88ecb91dc945d8ecf4f8bb8d7f89ebc13f06c1b9e01dc15cca3c9dea2bf0201c"
     },
+    "https://developer.apple.com/documentation/swiftui/uiviewrepresentable/body": {
+      "etag": "\"16b2-65d55de31e7d0-df\"",
+      "file_path": "documentation/SwiftUI/uiviewrepresentable/body.md",
+      "hash": "04326cc099243c6a0ccea9205a652a13c324d5accf42e82dd95e423970c6acd2"
+    },
     "https://developer.apple.com/documentation/swiftui/uiviewrepresentable/context": {
       "etag": "\"2079-65d55de31e7d0-df\"",
       "file_path": "documentation/SwiftUI/uiviewrepresentable/context.md",
@@ -28407,6 +28657,11 @@
       "file_path": "documentation/SwiftUI/uiviewrepresentable/dismantleuiview(_,coordinator).md",
       "hash": "6dcf426f36ad7f7d278d9a3b3ea35127da33de8ec4f929760c699db96144e154"
     },
+    "https://developer.apple.com/documentation/swiftui/uiviewrepresentable/dismantleuiview(_:coordinator:)-94s0o": {
+      "etag": "\"2598-65d55de31e7d0-df\"",
+      "file_path": "documentation/SwiftUI/uiviewrepresentable/dismantleuiview(_,coordinator)-94s0o.md",
+      "hash": "fc6bca8753c913088eeab1b5f93946bc62d36d69bd7ad1bc0da844452d7a157c"
+    },
     "https://developer.apple.com/documentation/swiftui/uiviewrepresentable/layoutoptions": {
       "etag": "\"fd4-65d55de31e7d0-df\"",
       "file_path": "documentation/SwiftUI/uiviewrepresentable/layoutoptions.md",
@@ -28417,6 +28672,11 @@
       "file_path": "documentation/SwiftUI/uiviewrepresentable/makecoordinator().md",
       "hash": "008da14ff56d20a020c54d2bf6c044715814ac5f19e817f416422dc5596f7b1b"
     },
+    "https://developer.apple.com/documentation/swiftui/uiviewrepresentable/makecoordinator()-9405l": {
+      "etag": "\"261c-65d55de31e7d0-df\"",
+      "file_path": "documentation/SwiftUI/uiviewrepresentable/makecoordinator()-9405l.md",
+      "hash": "770b41672343c6bce5c9c04c0bf78ec9259b2ff61a57276895d289191627166a"
+    },
     "https://developer.apple.com/documentation/swiftui/uiviewrepresentable/makeuiview(context:)": {
       "etag": "\"2a18-65d55de31e7d0-df\"",
       "file_path": "documentation/SwiftUI/uiviewrepresentable/makeuiview(context).md",
@@ -28426,6 +28686,11 @@
       "etag": "\"3628-65d55de31e7d0-df\"",
       "file_path": "documentation/SwiftUI/uiviewrepresentable/sizethatfits(_,uiview,context).md",
       "hash": "9ad7fb0a29994c7fa33b519aaad143ac77842c82601b727b17a23d9d9dcc7404"
+    },
+    "https://developer.apple.com/documentation/swiftui/uiviewrepresentable/sizethatfits(_:uiview:context:)-5tdxh": {
+      "etag": "\"2f78-65d55de31e7d0-df\"",
+      "file_path": "documentation/SwiftUI/uiviewrepresentable/sizethatfits(_,uiview,context)-5tdxh.md",
+      "hash": "15baa917d2cb987151c396397957a323d05bd546ae978a015ebf07cbd7f2aeba"
     },
     "https://developer.apple.com/documentation/swiftui/uiviewrepresentable/uiviewtype": {
       "etag": "\"2096-65d55de31e7d0-df\"",
@@ -28931,6 +29196,11 @@
       "etag": "\"29b3-65d55dec50487-df\"",
       "file_path": "documentation/SwiftUI/vectorarithmetic/scale(by).md",
       "hash": "61b54d2440dc46962a9b49c94449d32e2d6cb0fa932a23d615032eaae4ab06d6"
+    },
+    "https://developer.apple.com/documentation/swiftui/vectorarithmetic/scale(by:)-1ojq4": {
+      "etag": "\"160d-65d55dec50487-df\"",
+      "file_path": "documentation/SwiftUI/vectorarithmetic/scale(by)-1ojq4.md",
+      "hash": "f11d1ee7efab928da68bf83f3661a675522ca9613008b2e4f545e01455d507e3"
     },
     "https://developer.apple.com/documentation/swiftui/vectorarithmetic/scaled(by:)": {
       "etag": "\"259b-65d55dec50487-df\"",
@@ -29851,6 +30121,11 @@
       "etag": "\"3079-65d55df1e64cf-df\"",
       "file_path": "documentation/SwiftUI/view/blur(radius,opaque).md",
       "hash": "8d2143b442445eabfe21c0ad05f5142b1dc12a3fb10be9c62f0e3130710dc0b4"
+    },
+    "https://developer.apple.com/documentation/swiftui/view/body-44706": {
+      "etag": "\"1540-65d55df2ee238-df\"",
+      "file_path": "documentation/SwiftUI/view/body-44706.md",
+      "hash": "a7dfb6f6cc2118efef97aa271f57ab3c6b9cd924953ba5549ca66dcb426dbcf2"
     },
     "https://developer.apple.com/documentation/swiftui/view/body-8kl5o": {
       "etag": "\"3bc5-65d55df154054-df\"",
@@ -34401,6 +34676,11 @@
       "file_path": "documentation/SwiftUI/viewmodifier/body(content).md",
       "hash": "f28b280ef16956041deabdd6909fa96778024190f099a63f54d6e59c9796a4ff"
     },
+    "https://developer.apple.com/documentation/swiftui/viewmodifier/body(content:)-70h6f": {
+      "etag": "\"1e95-65d55de3f60af-df\"",
+      "file_path": "documentation/SwiftUI/viewmodifier/body(content)-70h6f.md",
+      "hash": "3398d6dd575af2b49e19437362c3c01f659ed0d74d7370a2d4c1f152801b0184"
+    },
     "https://developer.apple.com/documentation/swiftui/viewmodifier/concat(_:)": {
       "etag": "\"1df3-65d55de3f60af-df\"",
       "file_path": "documentation/SwiftUI/viewmodifier/concat(_).md",
@@ -35411,6 +35691,11 @@
       "file_path": "documentation/SwiftUI/wkinterfaceobjectrepresentable.md",
       "hash": "8dc7d63d9fb1a3c1b46746140a3470dd7c65058e5206c0d0c463b06e16650ad5"
     },
+    "https://developer.apple.com/documentation/swiftui/wkinterfaceobjectrepresentable/body": {
+      "etag": "\"1618-65d55df416b6c-df\"",
+      "file_path": "documentation/SwiftUI/wkinterfaceobjectrepresentable/body.md",
+      "hash": "98ef53df6df37a61ea2a64f73ee79de36eafe86cc713dcf2704004ef249fcbb2"
+    },
     "https://developer.apple.com/documentation/swiftui/wkinterfaceobjectrepresentable/context": {
       "etag": "\"1ef6-65d55df416b6c-df\"",
       "file_path": "documentation/SwiftUI/wkinterfaceobjectrepresentable/context.md",
@@ -35426,10 +35711,20 @@
       "file_path": "documentation/SwiftUI/wkinterfaceobjectrepresentable/dismantlewkinterfaceobject(_,coordinator).md",
       "hash": "bb12a31e0b094d455af7478bb60d3bc0526bc3b9b075280f2150043167b69f44"
     },
+    "https://developer.apple.com/documentation/swiftui/wkinterfaceobjectrepresentable/dismantlewkinterfaceobject(_:coordinator:)-qd0y": {
+      "etag": "\"22f3-65d55df416b6c-df\"",
+      "file_path": "documentation/SwiftUI/wkinterfaceobjectrepresentable/dismantlewkinterfaceobject(_,coordinator)-qd0y.md",
+      "hash": "af2ae78913e2c70adc5e6dc80b9b6721b869e96980f70db3fbeaecb9b721ce35"
+    },
     "https://developer.apple.com/documentation/swiftui/wkinterfaceobjectrepresentable/makecoordinator()": {
       "etag": "\"2ede-65d55df416b6c-df\"",
       "file_path": "documentation/SwiftUI/wkinterfaceobjectrepresentable/makecoordinator().md",
       "hash": "28d3fd570fdc0677999718a8becfa09811f94bc65ec14cbf383f47a65a813fa9"
+    },
+    "https://developer.apple.com/documentation/swiftui/wkinterfaceobjectrepresentable/makecoordinator()-80qlf": {
+      "etag": "\"26ca-65d55df416b6c-df\"",
+      "file_path": "documentation/SwiftUI/wkinterfaceobjectrepresentable/makecoordinator()-80qlf.md",
+      "hash": "52723b8e8c9b180a49d6a75a5c636d239c9a514f832f58b38b63dec31785a3a5"
     },
     "https://developer.apple.com/documentation/swiftui/wkinterfaceobjectrepresentable/makewkinterfaceobject(context:)": {
       "etag": "\"2c4f-65d55df416b6c-df\"",
@@ -37030,10 +37325,20 @@
       "file_path": "documentation/SwiftUI/animatable.md",
       "hash": "932094116bc7cf8d49d4a56a9ddc9ea78b059220653928b39cf0d13a498f759f"
     },
+    "https://developer.apple.com/tutorials/data/documentation/swiftui/animatable/animatabledata-1gesb.json": {
+      "etag": "\"1699-65d55de50c2df-df\"",
+      "file_path": "documentation/SwiftUI/animatable/animatabledata-1gesb.md",
+      "hash": "5550e7c4b0603554785d05be5baa4c77b700be910207a22feb9beec1b9cf4fab"
+    },
     "https://developer.apple.com/tutorials/data/documentation/swiftui/animatable/animatabledata-6nydg.json": {
       "etag": "\"2cf5-65d55de50c2df-df\"",
       "file_path": "documentation/SwiftUI/animatable/animatabledata-6nydg.md",
       "hash": "1d6ad9da4e2c1517921b0fed5cfb06f4f0b572ecc35af268a087aabe271a8ff7"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/swiftui/animatable/animatabledata-bqi8.json": {
+      "etag": "\"1336-65d55de50c2df-df\"",
+      "file_path": "documentation/SwiftUI/animatable/animatabledata-bqi8.md",
+      "hash": "ae28916d507e95fa7beeeb7e44abe4e916b1c33e47b9d8e88e80af914f7f9079"
     },
     "https://developer.apple.com/tutorials/data/documentation/swiftui/animatable/animatabledata-swift.associatedtype.json": {
       "etag": "\"1e9e-65d55de50c2df-df\"",
@@ -37975,6 +38280,11 @@
       "file_path": "documentation/SwiftUI/attributedtextformattingdefinition/body-1b01t.md",
       "hash": "d8fa0dd871e166b41c20c2d5888eace4ae3df7f1b0779e819cd4a19f2813939c"
     },
+    "https://developer.apple.com/tutorials/data/documentation/swiftui/attributedtextformattingdefinition/body-48m9l.json": {
+      "etag": "\"10e5-65d55de36c5b6-df\"",
+      "file_path": "documentation/SwiftUI/attributedtextformattingdefinition/body-48m9l.md",
+      "hash": "9ac7810eb3987f20e18b9bff753b0b1d70e2f8d0dde4f2517e50687ae0a03a78"
+    },
     "https://developer.apple.com/tutorials/data/documentation/swiftui/attributedtextformattingdefinition/body-swift.associatedtype.json": {
       "etag": "\"187a-65d55de36c5b6-df\"",
       "file_path": "documentation/SwiftUI/attributedtextformattingdefinition/body-swift.associatedtype.md",
@@ -38214,6 +38524,11 @@
       "etag": "\"2156-65d55de669195-df\"",
       "file_path": "documentation/SwiftUI/axchartdescriptorrepresentable/makechartdescriptor().md",
       "hash": "98187ce373c9ced179e7836c0c3381113f4c77abe491578e47643f4d9837e813"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/swiftui/axchartdescriptorrepresentable/updatechartdescriptor(_:)-7cxy6.json": {
+      "etag": "\"1c42-65d55de669195-df\"",
+      "file_path": "documentation/SwiftUI/axchartdescriptorrepresentable/updatechartdescriptor(_)-7cxy6.md",
+      "hash": "468c2261378b53888d9ca18ee488c71b6653759f4b94ce6b4490ffcab2805eac"
     },
     "https://developer.apple.com/tutorials/data/documentation/swiftui/axchartdescriptorrepresentable/updatechartdescriptor(_:).json": {
       "etag": "\"256f-65d55de669195-df\"",
@@ -41001,10 +41316,20 @@
       "file_path": "documentation/SwiftUI/customanimation/animate(value,time,context).md",
       "hash": "1a2ed87d5a03115d7f8b1998fe374e1de86cec002aa9f14a11f067135bb87992"
     },
+    "https://developer.apple.com/tutorials/data/documentation/swiftui/customanimation/shouldmerge(previous:value:time:context:)-9171c.json": {
+      "etag": "\"3cb2-65d55df4bc77e-df\"",
+      "file_path": "documentation/SwiftUI/customanimation/shouldmerge(previous,value,time,context)-9171c.md",
+      "hash": "8cd90396388ead8874de235a151cd4739edf1e7c606f1e663ac55619a82695d5"
+    },
     "https://developer.apple.com/tutorials/data/documentation/swiftui/customanimation/shouldmerge(previous:value:time:context:).json": {
       "etag": "\"44bf-65d55df4bc77e-df\"",
       "file_path": "documentation/SwiftUI/customanimation/shouldmerge(previous,value,time,context).md",
       "hash": "0db68237870d261493fdcd38356428f190218aba62c2244dda2a642eaf967750"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/swiftui/customanimation/velocity(value:time:context:)-78qjv.json": {
+      "etag": "\"3cfb-65d55df4bc77e-df\"",
+      "file_path": "documentation/SwiftUI/customanimation/velocity(value,time,context)-78qjv.md",
+      "hash": "d6811efaa278bfab65c643240053f0358c8c68626735479a74f9a400760aaae6"
     },
     "https://developer.apple.com/tutorials/data/documentation/swiftui/customanimation/velocity(value:time:context:).json": {
       "etag": "\"437e-65d55df4bc77e-df\"",
@@ -41020,6 +41345,11 @@
       "etag": "\"2a22-65d55df585ce3-df\"",
       "file_path": "documentation/SwiftUI/customhovereffect/automatic.md",
       "hash": "a9e3b4c004e1ad40e7e60e1e0aa4d86c84aac25247876f80fd84788284d7ecd6"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/swiftui/customhovereffect/body(content:)-1hbi3.json": {
+      "etag": "\"26f1-65d55df585ce3-df\"",
+      "file_path": "documentation/SwiftUI/customhovereffect/body(content)-1hbi3.md",
+      "hash": "80ae56f52e09fff96add40aa35e1c1a43329331cbc046e633fbf05a3eade1644"
     },
     "https://developer.apple.com/tutorials/data/documentation/swiftui/customhovereffect/body(content:).json": {
       "etag": "\"269a-65d55df59b1e3-df\"",
@@ -42556,15 +42886,30 @@
       "file_path": "documentation/SwiftUI/dropdelegate.md",
       "hash": "62579a98098e073ba43f81d79cbb64fa4e6199d395658c5c104bd832fca106ff"
     },
+    "https://developer.apple.com/tutorials/data/documentation/swiftui/dropdelegate/dropentered(info:)-2tqut.json": {
+      "etag": "\"18d2-65d55dee9329d-df\"",
+      "file_path": "documentation/SwiftUI/dropdelegate/dropentered(info)-2tqut.md",
+      "hash": "6bb1cb9d5474860e88f8f72f01e85d51fa95fb09783ac5c074116f0616592f5c"
+    },
     "https://developer.apple.com/tutorials/data/documentation/swiftui/dropdelegate/dropentered(info:).json": {
       "etag": "\"2cea-65d55dee9329d-df\"",
       "file_path": "documentation/SwiftUI/dropdelegate/dropentered(info).md",
       "hash": "9e9d76d0c7255d17bb4f27e191ecb3aaad52ab2ad1a4edaadbcaab31eb052701"
     },
+    "https://developer.apple.com/tutorials/data/documentation/swiftui/dropdelegate/dropexited(info:)-7w9t2.json": {
+      "etag": "\"1941-65d55dee9329d-df\"",
+      "file_path": "documentation/SwiftUI/dropdelegate/dropexited(info)-7w9t2.md",
+      "hash": "a0b686582936a6388dcc5ddb7ae6187e03dd043991cded35a02ecb373cb57570"
+    },
     "https://developer.apple.com/tutorials/data/documentation/swiftui/dropdelegate/dropexited(info:).json": {
       "etag": "\"2d59-65d55dee9329d-df\"",
       "file_path": "documentation/SwiftUI/dropdelegate/dropexited(info).md",
       "hash": "d496de65ab720b593c84cc5e7084ae9a807eb39eafcdb02d6a41de9e8d19bde9"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/swiftui/dropdelegate/dropupdated(info:)-2mktz.json": {
+      "etag": "\"23b5-65d55dee9329d-df\"",
+      "file_path": "documentation/SwiftUI/dropdelegate/dropupdated(info)-2mktz.md",
+      "hash": "a16cf5cd1d895f69798f883d2ccf8ae1c7568ebf61260e715a563a2c2b1fe9d6"
     },
     "https://developer.apple.com/tutorials/data/documentation/swiftui/dropdelegate/dropupdated(info:).json": {
       "etag": "\"37cd-65d55dee9329d-df\"",
@@ -42575,6 +42920,11 @@
       "etag": "\"3126-65d55dee9329d-df\"",
       "file_path": "documentation/SwiftUI/dropdelegate/performdrop(info).md",
       "hash": "b59230e8c542a3d251b39a1b1abbfb032ca4e3c0ebb7c0b4d6d0552a45ed97d2"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/swiftui/dropdelegate/validatedrop(info:)-1hqfh.json": {
+      "etag": "\"1de9-65d55dee9329d-df\"",
+      "file_path": "documentation/SwiftUI/dropdelegate/validatedrop(info)-1hqfh.md",
+      "hash": "c3435f95e15930c40e164c7af118279250f59aeea393775ac2190cd2f9399a9a"
     },
     "https://developer.apple.com/tutorials/data/documentation/swiftui/dropdelegate/validatedrop(info:).json": {
       "etag": "\"3201-65d55dee9329d-df\"",
@@ -42825,6 +43175,11 @@
       "etag": "\"5b80-65d55ddf51c8f-df\"",
       "file_path": "documentation/SwiftUI/dynamicproperty.md",
       "hash": "04c45107df3c1054ee3b08fd06f5e24fbb1faa58981ad798f5eb2994586d10c6"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/swiftui/dynamicproperty/update()-9fxv4.json": {
+      "etag": "\"14fc-65d55de61a711-df\"",
+      "file_path": "documentation/SwiftUI/dynamicproperty/update()-9fxv4.md",
+      "hash": "128cd1290d7de76cf3e9ff5eca37766abc52e80ffb6f89ee5d68b313ebaee190"
     },
     "https://developer.apple.com/tutorials/data/documentation/swiftui/dynamicproperty/update().json": {
       "etag": "\"17f5-65d55de61a711-df\"",
@@ -44915,6 +45270,11 @@
       "etag": "\"20cc-65d55df46644f-df\"",
       "file_path": "documentation/SwiftUI/filedocument/readconfiguration.md",
       "hash": "1d832bd168ce5611424fd2b73afe97d88fdab53a176c812237dbf43fe21d7758"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/swiftui/filedocument/writablecontenttypes-289b3.json": {
+      "etag": "\"1dee-65d55df46644f-df\"",
+      "file_path": "documentation/SwiftUI/filedocument/writablecontenttypes-289b3.md",
+      "hash": "acb0b5f2a0467a03931607a6021ca69445e0d209a8dfbe1edce224080bbc9e67"
     },
     "https://developer.apple.com/tutorials/data/documentation/swiftui/filedocument/writablecontenttypes.json": {
       "etag": "\"29da-65d55df46644f-df\"",
@@ -49440,15 +49800,35 @@
       "file_path": "documentation/SwiftUI/layout/depthalignment(_,content).md",
       "hash": "9787684ad76c75a3b37dd0a9902d0e4e01276450909f198beae6998dde823222"
     },
+    "https://developer.apple.com/tutorials/data/documentation/swiftui/layout/explicitalignment(of:in:proposal:subviews:cache:)-755bz.json": {
+      "etag": "\"3393-65d55de4ef34f-df\"",
+      "file_path": "documentation/SwiftUI/layout/explicitalignment(of,in,proposal,subviews,cache)-755bz.md",
+      "hash": "bb444d9455e43a669fe5bd85f0487d4bd4d7ec7574a9b1b916b6df36dd345686"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/swiftui/layout/explicitalignment(of:in:proposal:subviews:cache:)-8cl0p.json": {
+      "etag": "\"33b6-65d55de4ef34f-df\"",
+      "file_path": "documentation/SwiftUI/layout/explicitalignment(of,in,proposal,subviews,cache)-8cl0p.md",
+      "hash": "af9b365a97ea1457a9d0c9c1068425d9f9276e85872a8248bb7c1d6264efeb00"
+    },
     "https://developer.apple.com/tutorials/data/documentation/swiftui/layout/explicitalignment(of:in:proposal:subviews:cache:).json": {
       "etag": "\"6e04-65d55de4ef34f-df\"",
       "file_path": "documentation/SwiftUI/layout/explicitalignment(of,in,proposal,subviews,cache).md",
       "hash": "ff15f17e5056b57f98aa708f6ce7af3a3c5ec73be79a6bd19b596c29810c1612"
     },
+    "https://developer.apple.com/tutorials/data/documentation/swiftui/layout/layoutproperties-6h7w0.json": {
+      "etag": "\"1e93-65d55de4ef34f-df\"",
+      "file_path": "documentation/SwiftUI/layout/layoutproperties-6h7w0.md",
+      "hash": "acaafec4b8d875a1caf492188547eb6771ce90696fb62c161f8591484680855e"
+    },
     "https://developer.apple.com/tutorials/data/documentation/swiftui/layout/layoutproperties.json": {
       "etag": "\"2c48-65d55de4ef34f-df\"",
       "file_path": "documentation/SwiftUI/layout/layoutproperties.md",
       "hash": "30bd986e5d3f15643a5cabe715db0b2d335b0dc3626a77319f2fe7e2c2fadbb9"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/swiftui/layout/makecache(subviews:)-4fu1k.json": {
+      "etag": "\"1e86-65d55de4ef34f-df\"",
+      "file_path": "documentation/SwiftUI/layout/makecache(subviews)-4fu1k.md",
+      "hash": "cd85f56a9f290b86c6c6c85bf0cb9499d97c6fe10cb58a20e9db171885113cd7"
     },
     "https://developer.apple.com/tutorials/data/documentation/swiftui/layout/makecache(subviews:).json": {
       "etag": "\"5451-65d55de4ef34f-df\"",
@@ -49465,6 +49845,11 @@
       "file_path": "documentation/SwiftUI/layout/sizethatfits(proposal,subviews,cache).md",
       "hash": "3f0074f40ee24507dd2b6ff9d4409e35fa2f43f78bfab84c529633f99f832f1f"
     },
+    "https://developer.apple.com/tutorials/data/documentation/swiftui/layout/spacing(subviews:cache:)-1z0gt.json": {
+      "etag": "\"2208-65d55de4ef34f-df\"",
+      "file_path": "documentation/SwiftUI/layout/spacing(subviews,cache)-1z0gt.md",
+      "hash": "7e1202639c47c729c3ba33fe8eac13ed18c9b84396c76023b4abc64b330f7316"
+    },
     "https://developer.apple.com/tutorials/data/documentation/swiftui/layout/spacing(subviews:cache:).json": {
       "etag": "\"41c3-65d55de4ef34f-df\"",
       "file_path": "documentation/SwiftUI/layout/spacing(subviews,cache).md",
@@ -49474,6 +49859,11 @@
       "etag": "\"26b4-65d55de4ef34f-df\"",
       "file_path": "documentation/SwiftUI/layout/subviews.md",
       "hash": "b0cc1a1029db20349d613a99251acd1b77c859973ea0fe2a6a78ed2dc1acf361"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/swiftui/layout/updatecache(_:subviews:)-75zac.json": {
+      "etag": "\"2240-65d55de4ef34f-df\"",
+      "file_path": "documentation/SwiftUI/layout/updatecache(_,subviews)-75zac.md",
+      "hash": "5cad14b6b94e253ce40b9acdffae2571fbe5e21db1d8a2db9a5dd2463f8993d3"
     },
     "https://developer.apple.com/tutorials/data/documentation/swiftui/layout/updatecache(_:subviews:).json": {
       "etag": "\"2d3a-65d55de4ef34f-df\"",
@@ -51804,10 +52194,20 @@
       "file_path": "documentation/SwiftUI/nsgesturerecognizerrepresentable/coordinator.md",
       "hash": "771c3925ebb20c74e60c01140d828c0e5defbbd6ceae4a3c6b8570b672418006"
     },
+    "https://developer.apple.com/tutorials/data/documentation/swiftui/nsgesturerecognizerrepresentable/handlensgesturerecognizeraction(_:context:)-8n3is.json": {
+      "etag": "\"26b9-65d55df783a9a-df\"",
+      "file_path": "documentation/SwiftUI/nsgesturerecognizerrepresentable/handlensgesturerecognizeraction(_,context)-8n3is.md",
+      "hash": "bb953049110a79390f1418478e4e218a9318d58ed75a278b1cb00dc3cffc3565"
+    },
     "https://developer.apple.com/tutorials/data/documentation/swiftui/nsgesturerecognizerrepresentable/handlensgesturerecognizeraction(_:context:).json": {
       "etag": "\"2d26-65d55df783a9a-df\"",
       "file_path": "documentation/SwiftUI/nsgesturerecognizerrepresentable/handlensgesturerecognizeraction(_,context).md",
       "hash": "33cde8934305b2deea26b01a8ec1fd27a369d9602cb8b9b9ba49cfb4951bf1a3"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/swiftui/nsgesturerecognizerrepresentable/makecoordinator(converter:)-8fzsl.json": {
+      "etag": "\"1db7-65d55df783a9a-df\"",
+      "file_path": "documentation/SwiftUI/nsgesturerecognizerrepresentable/makecoordinator(converter)-8fzsl.md",
+      "hash": "f230e5534303664f26f7cccace2515c3f173f1219c8bb819f44486bbf51f8de6"
     },
     "https://developer.apple.com/tutorials/data/documentation/swiftui/nsgesturerecognizerrepresentable/makecoordinator(converter:).json": {
       "etag": "\"2b25-65d55df783a9a-df\"",
@@ -51823,6 +52223,11 @@
       "etag": "\"166f-65d55df783a9a-df\"",
       "file_path": "documentation/SwiftUI/nsgesturerecognizerrepresentable/nsgesturerecognizertype.md",
       "hash": "483f965beda4e262f1940a125e29d0e1c655fece2f4a3f3d956b610d0da75fae"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/swiftui/nsgesturerecognizerrepresentable/updatensgesturerecognizer(_:context:)-1s5x4.json": {
+      "etag": "\"25c9-65d55df783a9a-df\"",
+      "file_path": "documentation/SwiftUI/nsgesturerecognizerrepresentable/updatensgesturerecognizer(_,context)-1s5x4.md",
+      "hash": "eb887568af69a54cdd544521fd13eda415ca5cc81b26fd3689e0d1bed4f13d0b"
     },
     "https://developer.apple.com/tutorials/data/documentation/swiftui/nsgesturerecognizerrepresentable/updatensgesturerecognizer(_:context:).json": {
       "etag": "\"2c59-65d55df783a9a-df\"",
@@ -52424,6 +52829,11 @@
       "file_path": "documentation/SwiftUI/nsviewcontrollerrepresentable.md",
       "hash": "a22c5f0ff605323a718604d30c77a10504ee5fbb9e942d2ae876c0f491b6315e"
     },
+    "https://developer.apple.com/tutorials/data/documentation/swiftui/nsviewcontrollerrepresentable/body.json": {
+      "etag": "\"1664-65d55de1739fa-df\"",
+      "file_path": "documentation/SwiftUI/nsviewcontrollerrepresentable/body.md",
+      "hash": "211e68d24793fc969873131f32f3723a228bc1226d2b082088fd2b4fef6fafae"
+    },
     "https://developer.apple.com/tutorials/data/documentation/swiftui/nsviewcontrollerrepresentable/context.json": {
       "etag": "\"225a-65d55de1739fa-df\"",
       "file_path": "documentation/SwiftUI/nsviewcontrollerrepresentable/context.md",
@@ -52434,6 +52844,11 @@
       "file_path": "documentation/SwiftUI/nsviewcontrollerrepresentable/coordinator.md",
       "hash": "cb491e365693f9d1cd28898c478e411d1c782425ea2e6a71faf8ebcfe2e70c9d"
     },
+    "https://developer.apple.com/tutorials/data/documentation/swiftui/nsviewcontrollerrepresentable/dismantlensviewcontroller(_:coordinator:)-t6ob.json": {
+      "etag": "\"2374-65d55de1739fa-df\"",
+      "file_path": "documentation/SwiftUI/nsviewcontrollerrepresentable/dismantlensviewcontroller(_,coordinator)-t6ob.md",
+      "hash": "a0286dbddebad1f9fcfb2d9d9b5e64524d114e4e24f7815f9362b34c91eb1ab3"
+    },
     "https://developer.apple.com/tutorials/data/documentation/swiftui/nsviewcontrollerrepresentable/dismantlensviewcontroller(_:coordinator:).json": {
       "etag": "\"2dd2-65d55de1739fa-df\"",
       "file_path": "documentation/SwiftUI/nsviewcontrollerrepresentable/dismantlensviewcontroller(_,coordinator).md",
@@ -52443,6 +52858,11 @@
       "etag": "\"f99-65d55de1739fa-df\"",
       "file_path": "documentation/SwiftUI/nsviewcontrollerrepresentable/layoutoptions.md",
       "hash": "ed217f8c249f12ea30e96b9f9185e5151bae9638ffb9a5e9e0daf22ae78d37e4"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/swiftui/nsviewcontrollerrepresentable/makecoordinator()-72re2.json": {
+      "etag": "\"1c86-65d55de1739fa-df\"",
+      "file_path": "documentation/SwiftUI/nsviewcontrollerrepresentable/makecoordinator()-72re2.md",
+      "hash": "56081f4dc636f6eb470175777099b1f2347d85911300141a2cbe0b3d5e11e541"
     },
     "https://developer.apple.com/tutorials/data/documentation/swiftui/nsviewcontrollerrepresentable/makecoordinator().json": {
       "etag": "\"2b3b-65d55de1739fa-df\"",
@@ -52458,6 +52878,11 @@
       "etag": "\"22bd-65d55de1739fa-df\"",
       "file_path": "documentation/SwiftUI/nsviewcontrollerrepresentable/nsviewcontrollertype.md",
       "hash": "8f5214066a58d007b09748d7bbff237376d6376555e6ba823ac375ea04ad22fe"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/swiftui/nsviewcontrollerrepresentable/sizethatfits(_:nsviewcontroller:context:)-52cs0.json": {
+      "etag": "\"30c4-65d55de1739fa-df\"",
+      "file_path": "documentation/SwiftUI/nsviewcontrollerrepresentable/sizethatfits(_,nsviewcontroller,context)-52cs0.md",
+      "hash": "cfcb4654ead02fd05a2ae8bf476124e89f01a927df631f20f16d8554ed9733f7"
     },
     "https://developer.apple.com/tutorials/data/documentation/swiftui/nsviewcontrollerrepresentable/sizethatfits(_:nsviewcontroller:context:).json": {
       "etag": "\"380b-65d55de1739fa-df\"",
@@ -52499,6 +52924,11 @@
       "file_path": "documentation/SwiftUI/nsviewrepresentable.md",
       "hash": "40dc0c81a7d30001b080c3f0226953746a32229c5fda239f293ac38289bba506"
     },
+    "https://developer.apple.com/tutorials/data/documentation/swiftui/nsviewrepresentable/body.json": {
+      "etag": "\"15dc-65d55de42b195-df\"",
+      "file_path": "documentation/SwiftUI/nsviewrepresentable/body.md",
+      "hash": "8c208c42db063f7266ef15236d58bcce9058420ef3482aebef48a214a322ba16"
+    },
     "https://developer.apple.com/tutorials/data/documentation/swiftui/nsviewrepresentable/context.json": {
       "etag": "\"1fa4-65d55de42b195-df\"",
       "file_path": "documentation/SwiftUI/nsviewrepresentable/context.md",
@@ -52509,6 +52939,11 @@
       "file_path": "documentation/SwiftUI/nsviewrepresentable/coordinator.md",
       "hash": "529477827164dce2daa568342024b85eb277ca991203fd5dc7835ab12aa6fbf2"
     },
+    "https://developer.apple.com/tutorials/data/documentation/swiftui/nsviewrepresentable/dismantlensview(_:coordinator:)-21agq.json": {
+      "etag": "\"20f2-65d55de42b195-df\"",
+      "file_path": "documentation/SwiftUI/nsviewrepresentable/dismantlensview(_,coordinator)-21agq.md",
+      "hash": "570e2d0aa9eab6fcef590e9a052e852ad0ca712be5c998c1d07a69e64fca9697"
+    },
     "https://developer.apple.com/tutorials/data/documentation/swiftui/nsviewrepresentable/dismantlensview(_:coordinator:).json": {
       "etag": "\"2ad2-65d55de42b195-df\"",
       "file_path": "documentation/SwiftUI/nsviewrepresentable/dismantlensview(_,coordinator).md",
@@ -52518,6 +52953,11 @@
       "etag": "\"efd-65d55de42b195-df\"",
       "file_path": "documentation/SwiftUI/nsviewrepresentable/layoutoptions.md",
       "hash": "df4de17e9bbb8c777ad42e45d6f0960d84532de81ba250798d749e9022b534ea"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/swiftui/nsviewrepresentable/makecoordinator()-6l2eg.json": {
+      "etag": "\"1c8b-65d55de42b195-df\"",
+      "file_path": "documentation/SwiftUI/nsviewrepresentable/makecoordinator()-6l2eg.md",
+      "hash": "88c3744cd05b70a93f81e3d50f46322a23e4c8d2108eccf93887eb9433013078"
     },
     "https://developer.apple.com/tutorials/data/documentation/swiftui/nsviewrepresentable/makecoordinator().json": {
       "etag": "\"299a-65d55de42b195-df\"",
@@ -52533,6 +52973,11 @@
       "etag": "\"1fc5-65d55de42b195-df\"",
       "file_path": "documentation/SwiftUI/nsviewrepresentable/nsviewtype.md",
       "hash": "08985980022ff87cae876e1a84e68d6caf21ed5482a65c0e8cd025242dc0fac7"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/swiftui/nsviewrepresentable/sizethatfits(_:nsview:context:)-fuqx.json": {
+      "etag": "\"2e9c-65d55de42b195-df\"",
+      "file_path": "documentation/SwiftUI/nsviewrepresentable/sizethatfits(_,nsview,context)-fuqx.md",
+      "hash": "c1a63cc58e8b1b6600a4871ddc6cd89921b93ac917d17da4557ad31a5dc1cb3f"
     },
     "https://developer.apple.com/tutorials/data/documentation/swiftui/nsviewrepresentable/sizethatfits(_:nsview:context:).json": {
       "etag": "\"354d-65d55de42b195-df\"",
@@ -53848,6 +54293,11 @@
       "file_path": "documentation/SwiftUI/preferencekey.md",
       "hash": "eeab592df72c72535a723c45ce14c36975cac02e8cf75e992a630e5df30edba0"
     },
+    "https://developer.apple.com/tutorials/data/documentation/swiftui/preferencekey/defaultvalue-23qgw.json": {
+      "etag": "\"17cc-65d55ddfc2f00-df\"",
+      "file_path": "documentation/SwiftUI/preferencekey/defaultvalue-23qgw.md",
+      "hash": "4382351eaba343c1a38519541a59d2b38a22e5b151ecab10c229b3f944f44973"
+    },
     "https://developer.apple.com/tutorials/data/documentation/swiftui/preferencekey/defaultvalue.json": {
       "etag": "\"1d88-65d55ddfc2f00-df\"",
       "file_path": "documentation/SwiftUI/preferencekey/defaultvalue.md",
@@ -54198,6 +54648,11 @@
       "file_path": "documentation/SwiftUI/previewmodifier/context.md",
       "hash": "d01c1655c3d4606eb5567be79bd4f14ab3ca258c09de0b74425b765690fbfe41"
     },
+    "https://developer.apple.com/tutorials/data/documentation/swiftui/previewmodifier/makesharedcontext()-4zi8r.json": {
+      "etag": "\"1eb5-65d55de3de634-df\"",
+      "file_path": "documentation/SwiftUI/previewmodifier/makesharedcontext()-4zi8r.md",
+      "hash": "cbfe0dffed1d3c5e33a983e6ea513d1639d38b8bf1f0eeb79f8918bc112fa38f"
+    },
     "https://developer.apple.com/tutorials/data/documentation/swiftui/previewmodifier/makesharedcontext().json": {
       "etag": "\"2351-65d55de3de634-df\"",
       "file_path": "documentation/SwiftUI/previewmodifier/makesharedcontext().md",
@@ -54237,6 +54692,11 @@
       "etag": "\"4767-65d55df7e95c5-df\"",
       "file_path": "documentation/SwiftUI/previewprovider.md",
       "hash": "95a4b109618a4a0d7f33c50926bd214eac4dc6fb5797cb931ccdba7536c9908c"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/swiftui/previewprovider/platform-5gkzc.json": {
+      "etag": "\"1ecc-65d55de68350c-df\"",
+      "file_path": "documentation/SwiftUI/previewprovider/platform-5gkzc.md",
+      "hash": "44c9891fe8351ef10d657df093953505a1086124f2646c5315270845a596f6d8"
     },
     "https://developer.apple.com/tutorials/data/documentation/swiftui/previewprovider/platform.json": {
       "etag": "\"21db-65d55de68350c-df\"",
@@ -54992,6 +55452,11 @@
       "etag": "\"2031-65d55df7ff190-df\"",
       "file_path": "documentation/SwiftUI/referencefiledocument/snapshot.md",
       "hash": "6fde74600ddb2bbfdcab11f784f77c23b47ca7a1e27cf2acb98b846ff1a594ce"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/swiftui/referencefiledocument/writablecontenttypes-41rwk.json": {
+      "etag": "\"1c99-65d55df7ff190-df\"",
+      "file_path": "documentation/SwiftUI/referencefiledocument/writablecontenttypes-41rwk.md",
+      "hash": "38124803a2072f43202d2b07a41364ab9ddf5d81b225faa18c2e29e06238b24c"
     },
     "https://developer.apple.com/tutorials/data/documentation/swiftui/referencefiledocument/writablecontenttypes.json": {
       "etag": "\"2bd2-65d55df7ff190-df\"",
@@ -56382,6 +56847,11 @@
       "file_path": "documentation/SwiftUI/scrolltargetbehavior/paging.md",
       "hash": "ab6bdbeb89e45915db61a88a669bfff2ee1abc4aa100aac1144eb53807d93db5"
     },
+    "https://developer.apple.com/tutorials/data/documentation/swiftui/scrolltargetbehavior/properties(context:)-9ahhx.json": {
+      "etag": "\"1bcb-65d55de5b9754-df\"",
+      "file_path": "documentation/SwiftUI/scrolltargetbehavior/properties(context)-9ahhx.md",
+      "hash": "3b2b0e245cc45e518a70a4045824198538eb3649561c52e46038a484e0b61832"
+    },
     "https://developer.apple.com/tutorials/data/documentation/swiftui/scrolltargetbehavior/properties(context:).json": {
       "etag": "\"20ea-65d55de5b9754-df\"",
       "file_path": "documentation/SwiftUI/scrolltargetbehavior/properties(context).md",
@@ -57627,6 +58097,11 @@
       "file_path": "documentation/SwiftUI/shape/intersection(_,eofill).md",
       "hash": "c35a9479400fa61f3ae69a286e77fc8161ce330dd81cf6ef40643daf4bbacf29"
     },
+    "https://developer.apple.com/tutorials/data/documentation/swiftui/shape/layoutdirectionbehavior-5wfat.json": {
+      "etag": "\"1a6e-65d55de1256ba-df\"",
+      "file_path": "documentation/SwiftUI/shape/layoutdirectionbehavior-5wfat.md",
+      "hash": "ce5d3459ea14d8efe6145aa7125054d0f927a69ea5fbf355ad80e0e91beda0d4"
+    },
     "https://developer.apple.com/tutorials/data/documentation/swiftui/shape/layoutdirectionbehavior.json": {
       "etag": "\"1e4a-65d55de1256ba-df\"",
       "file_path": "documentation/SwiftUI/shape/layoutdirectionbehavior.md",
@@ -57722,6 +58197,11 @@
       "file_path": "documentation/SwiftUI/shape/rect.md",
       "hash": "9f8090b65e88e4a59dbccde36b135045b2c9d542ba542cc6846b4cb26be15718"
     },
+    "https://developer.apple.com/tutorials/data/documentation/swiftui/shape/role-681up.json": {
+      "etag": "\"1b66-65d55de1096ea-df\"",
+      "file_path": "documentation/SwiftUI/shape/role-681up.md",
+      "hash": "8d99a72896d51a961177b922d80e23aa6e1b600f0c69b6f1dd217d64973db2e8"
+    },
     "https://developer.apple.com/tutorials/data/documentation/swiftui/shape/role.json": {
       "etag": "\"1edd-65d55de1096ea-df\"",
       "file_path": "documentation/SwiftUI/shape/role.md",
@@ -57761,6 +58241,11 @@
       "etag": "\"52d5-65d55de1256ba-df\"",
       "file_path": "documentation/SwiftUI/shape/size(width,height,anchor).md",
       "hash": "3b4be8a871eed65a6e5333955d14717a9328a1ce10225cb38ffbb9102d6ed04c"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/swiftui/shape/sizethatfits(_:)-2vtnh.json": {
+      "etag": "\"1981-65d55de1256ba-df\"",
+      "file_path": "documentation/SwiftUI/shape/sizethatfits(_)-2vtnh.md",
+      "hash": "5dd86d8e29874e832e6f5cd0bb2f55210b672bd69d8aa75a254f39115607d4ca"
     },
     "https://developer.apple.com/tutorials/data/documentation/swiftui/shape/sizethatfits(_:).json": {
       "etag": "\"2c3c-65d55de1256ba-df\"",
@@ -58096,6 +58581,11 @@
       "etag": "\"2b40-65d55deedda49-df\"",
       "file_path": "documentation/SwiftUI/shapestyle/regularmaterial.md",
       "hash": "cc1920dd909581e640f027a54062fe959090b8605c1393193e0c8104c7644241"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/swiftui/shapestyle/resolve(in:)-6feyg.json": {
+      "etag": "\"19e3-65d55deec4b10-df\"",
+      "file_path": "documentation/SwiftUI/shapestyle/resolve(in)-6feyg.md",
+      "hash": "2132b00455212cab880501aeaff18bf5ff370f0c7655f04d7ff6f9d5c94063b0"
     },
     "https://developer.apple.com/tutorials/data/documentation/swiftui/shapestyle/resolve(in:).json": {
       "etag": "\"2099-65d55deedda49-df\"",
@@ -62137,6 +62627,11 @@
       "file_path": "documentation/SwiftUI/textrenderer.md",
       "hash": "baf944610d6bc4e16fd0f51429c1cc4763426f17f880a357cd5108dc242df6dd"
     },
+    "https://developer.apple.com/tutorials/data/documentation/swiftui/textrenderer/displaypadding-9l6t9.json": {
+      "etag": "\"17df-65d55df59b1e3-df\"",
+      "file_path": "documentation/SwiftUI/textrenderer/displaypadding-9l6t9.md",
+      "hash": "569372760071519c044800df365e2aa99187aedbc05ce20c5e1fed3983f6bc55"
+    },
     "https://developer.apple.com/tutorials/data/documentation/swiftui/textrenderer/displaypadding.json": {
       "etag": "\"1c39-65d55df59b1e3-df\"",
       "file_path": "documentation/SwiftUI/textrenderer/displaypadding.md",
@@ -62146,6 +62641,11 @@
       "etag": "\"1eed-65d55df59b1e3-df\"",
       "file_path": "documentation/SwiftUI/textrenderer/draw(layout,in).md",
       "hash": "bbc6aa639d22d384b732eb91693f63d4aa7a93717d73de8a6abe0c6693696068"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/swiftui/textrenderer/sizethatfits(proposal:text:)-3wr9v.json": {
+      "etag": "\"21ff-65d55df59b1e3-df\"",
+      "file_path": "documentation/SwiftUI/textrenderer/sizethatfits(proposal,text)-3wr9v.md",
+      "hash": "ed71dab30ec55acba1fa3ee30f71199282a4b08660b7576388eda2c43aaaacbf"
     },
     "https://developer.apple.com/tutorials/data/documentation/swiftui/textrenderer/sizethatfits(proposal:text:).json": {
       "etag": "\"27ee-65d55df59b1e3-df\"",
@@ -63452,6 +63952,11 @@
       "file_path": "documentation/SwiftUI/transition/opacity.md",
       "hash": "1125f66eca1c592f1a203af3387a312667247d067d310da50dfbc093c2a4c14e"
     },
+    "https://developer.apple.com/tutorials/data/documentation/swiftui/transition/properties-3v8pe.json": {
+      "etag": "\"19c4-65d55de031aec-df\"",
+      "file_path": "documentation/SwiftUI/transition/properties-3v8pe.md",
+      "hash": "44c1cc0921448a19e658c06bbb883b7c5930489d8b50e34cb021846fb9029136"
+    },
     "https://developer.apple.com/tutorials/data/documentation/swiftui/transition/properties.json": {
       "etag": "\"213f-65d55de031aec-df\"",
       "file_path": "documentation/SwiftUI/transition/properties.md",
@@ -63652,10 +64157,20 @@
       "file_path": "documentation/SwiftUI/uigesturerecognizerrepresentable/coordinator.md",
       "hash": "4856564764d609e9e70fd4cb1e85c7566cf17090bfe3ffcf018ac36322f9b658"
     },
+    "https://developer.apple.com/tutorials/data/documentation/swiftui/uigesturerecognizerrepresentable/handleuigesturerecognizeraction(_:context:)-8u4zs.json": {
+      "etag": "\"2722-65d55df682166-df\"",
+      "file_path": "documentation/SwiftUI/uigesturerecognizerrepresentable/handleuigesturerecognizeraction(_,context)-8u4zs.md",
+      "hash": "139a9d7a128e879ad28735f0a20a5c9948d944f891980c7992a84dc7819284ba"
+    },
     "https://developer.apple.com/tutorials/data/documentation/swiftui/uigesturerecognizerrepresentable/handleuigesturerecognizeraction(_:context:).json": {
       "etag": "\"2d8f-65d55df682166-df\"",
       "file_path": "documentation/SwiftUI/uigesturerecognizerrepresentable/handleuigesturerecognizeraction(_,context).md",
       "hash": "2a2edb7abf0f11b1118419b097b0547f83d1f3c9013106d729afb4cb99d24776"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/swiftui/uigesturerecognizerrepresentable/makecoordinator(converter:)-504ge.json": {
+      "etag": "\"1e20-65d55df682166-df\"",
+      "file_path": "documentation/SwiftUI/uigesturerecognizerrepresentable/makecoordinator(converter)-504ge.md",
+      "hash": "67ca24b8aeee73ebecc23bd0c7ade3380a8607e5489703ad99e8cf11e5114be9"
     },
     "https://developer.apple.com/tutorials/data/documentation/swiftui/uigesturerecognizerrepresentable/makecoordinator(converter:).json": {
       "etag": "\"2b8e-65d55df682166-df\"",
@@ -63671,6 +64186,11 @@
       "etag": "\"169d-65d55df682166-df\"",
       "file_path": "documentation/SwiftUI/uigesturerecognizerrepresentable/uigesturerecognizertype.md",
       "hash": "43384c3758895a02c4f5470e970f7eb335f2761cbf2f13d96f59d96619c8135d"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/swiftui/uigesturerecognizerrepresentable/updateuigesturerecognizer(_:context:)-10jv.json": {
+      "etag": "\"262d-65d55df682166-df\"",
+      "file_path": "documentation/SwiftUI/uigesturerecognizerrepresentable/updateuigesturerecognizer(_,context)-10jv.md",
+      "hash": "a767ea56e816c7d0bfe7290ccb685ed56c60e7b26e08e023ab6bf9eec6079e4f"
     },
     "https://developer.apple.com/tutorials/data/documentation/swiftui/uigesturerecognizerrepresentable/updateuigesturerecognizer(_:context:).json": {
       "etag": "\"2cbe-65d55df682166-df\"",
@@ -64037,6 +64557,11 @@
       "file_path": "documentation/SwiftUI/uiviewcontrollerrepresentable.md",
       "hash": "965ad73f804376e4662937058f391ce849f0c061eca12d04fd162df2996c3608"
     },
+    "https://developer.apple.com/tutorials/data/documentation/swiftui/uiviewcontrollerrepresentable/body.json": {
+      "etag": "\"16cf-65d55dee7d60b-df\"",
+      "file_path": "documentation/SwiftUI/uiviewcontrollerrepresentable/body.md",
+      "hash": "66020c5f5490d5e88bfe94740462b6640b3923997ee6a8dbe8823755b3e97c5d"
+    },
     "https://developer.apple.com/tutorials/data/documentation/swiftui/uiviewcontrollerrepresentable/context.json": {
       "etag": "\"22c4-65d55dee6b513-df\"",
       "file_path": "documentation/SwiftUI/uiviewcontrollerrepresentable/context.md",
@@ -64046,6 +64571,11 @@
       "etag": "\"18e6-65d55dee6b513-df\"",
       "file_path": "documentation/SwiftUI/uiviewcontrollerrepresentable/coordinator.md",
       "hash": "c5f854ce6c95a45d1bd5d527e92df5b1bcaf75799d114bfb51b044fa42db2b01"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/swiftui/uiviewcontrollerrepresentable/dismantleuiviewcontroller(_:coordinator:)-30a1m.json": {
+      "etag": "\"2762-65d55dee7d60b-df\"",
+      "file_path": "documentation/SwiftUI/uiviewcontrollerrepresentable/dismantleuiviewcontroller(_,coordinator)-30a1m.md",
+      "hash": "2d7c184237c9e3e6121ea4f6c5c18f0abaf7a70d1a220a7f46085cbd5376a2fe"
     },
     "https://developer.apple.com/tutorials/data/documentation/swiftui/uiviewcontrollerrepresentable/dismantleuiviewcontroller(_:coordinator:).json": {
       "etag": "\"2e0b-65d55dee7d60b-df\"",
@@ -64057,6 +64587,11 @@
       "file_path": "documentation/SwiftUI/uiviewcontrollerrepresentable/layoutoptions.md",
       "hash": "42ab6354da526d70f388314c6567d74211bf59c5a36e61a475d7a2dff83c14ca"
     },
+    "https://developer.apple.com/tutorials/data/documentation/swiftui/uiviewcontrollerrepresentable/makecoordinator()-9vwm8.json": {
+      "etag": "\"2778-65d55dee6b513-df\"",
+      "file_path": "documentation/SwiftUI/uiviewcontrollerrepresentable/makecoordinator()-9vwm8.md",
+      "hash": "26297e42363e4cabf3120864f131925d1d8563e637f26a9c828cacd740b2f73a"
+    },
     "https://developer.apple.com/tutorials/data/documentation/swiftui/uiviewcontrollerrepresentable/makecoordinator().json": {
       "etag": "\"2c18-65d55dee6b513-df\"",
       "file_path": "documentation/SwiftUI/uiviewcontrollerrepresentable/makecoordinator().md",
@@ -64066,6 +64601,11 @@
       "etag": "\"2d2b-65d55dee6b513-df\"",
       "file_path": "documentation/SwiftUI/uiviewcontrollerrepresentable/makeuiviewcontroller(context).md",
       "hash": "a1ee405ec7fb433fb03f3a57b3b074927974ec3d2610dd77f0992df2fd169e23"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/swiftui/uiviewcontrollerrepresentable/sizethatfits(_:uiviewcontroller:context:)-7x9zd.json": {
+      "etag": "\"3130-65d55dee7d60b-df\"",
+      "file_path": "documentation/SwiftUI/uiviewcontrollerrepresentable/sizethatfits(_,uiviewcontroller,context)-7x9zd.md",
+      "hash": "01fadfd7da9db60d9bcfbe609c3674b8ad9611d2fc4757ab4b296da00080a840"
     },
     "https://developer.apple.com/tutorials/data/documentation/swiftui/uiviewcontrollerrepresentable/sizethatfits(_:uiviewcontroller:context:).json": {
       "etag": "\"3877-65d55dee6b513-df\"",
@@ -64112,6 +64652,11 @@
       "file_path": "documentation/SwiftUI/uiviewrepresentable.md",
       "hash": "88ecb91dc945d8ecf4f8bb8d7f89ebc13f06c1b9e01dc15cca3c9dea2bf0201c"
     },
+    "https://developer.apple.com/tutorials/data/documentation/swiftui/uiviewrepresentable/body.json": {
+      "etag": "\"16b2-65d55de31e7d0-df\"",
+      "file_path": "documentation/SwiftUI/uiviewrepresentable/body.md",
+      "hash": "04326cc099243c6a0ccea9205a652a13c324d5accf42e82dd95e423970c6acd2"
+    },
     "https://developer.apple.com/tutorials/data/documentation/swiftui/uiviewrepresentable/context.json": {
       "etag": "\"2079-65d55de31e7d0-df\"",
       "file_path": "documentation/SwiftUI/uiviewrepresentable/context.md",
@@ -64121,6 +64666,11 @@
       "etag": "\"1876-65d55de31e7d0-df\"",
       "file_path": "documentation/SwiftUI/uiviewrepresentable/coordinator.md",
       "hash": "d441a381f9df084ed17d3da48b76c20bd5661dbd3c72075252f093ca6b2bc35f"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/swiftui/uiviewrepresentable/dismantleuiview(_:coordinator:)-94s0o.json": {
+      "etag": "\"2598-65d55de31e7d0-df\"",
+      "file_path": "documentation/SwiftUI/uiviewrepresentable/dismantleuiview(_,coordinator)-94s0o.md",
+      "hash": "fc6bca8753c913088eeab1b5f93946bc62d36d69bd7ad1bc0da844452d7a157c"
     },
     "https://developer.apple.com/tutorials/data/documentation/swiftui/uiviewrepresentable/dismantleuiview(_:coordinator:).json": {
       "etag": "\"2ba5-65d55de31e7d0-df\"",
@@ -64132,6 +64682,11 @@
       "file_path": "documentation/SwiftUI/uiviewrepresentable/layoutoptions.md",
       "hash": "1229b72942a9fb2355bef6c10855deecb6d46b403082eb371f63d4361fd9cb6b"
     },
+    "https://developer.apple.com/tutorials/data/documentation/swiftui/uiviewrepresentable/makecoordinator()-9405l.json": {
+      "etag": "\"261c-65d55de31e7d0-df\"",
+      "file_path": "documentation/SwiftUI/uiviewrepresentable/makecoordinator()-9405l.md",
+      "hash": "770b41672343c6bce5c9c04c0bf78ec9259b2ff61a57276895d289191627166a"
+    },
     "https://developer.apple.com/tutorials/data/documentation/swiftui/uiviewrepresentable/makecoordinator().json": {
       "etag": "\"2a61-65d55de31e7d0-df\"",
       "file_path": "documentation/SwiftUI/uiviewrepresentable/makecoordinator().md",
@@ -64141,6 +64696,11 @@
       "etag": "\"2a18-65d55de31e7d0-df\"",
       "file_path": "documentation/SwiftUI/uiviewrepresentable/makeuiview(context).md",
       "hash": "0ef7dfa2bae986e7c70c3923f27a08e8b9e1043cb2a480115dfd5d1a028a399c"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/swiftui/uiviewrepresentable/sizethatfits(_:uiview:context:)-5tdxh.json": {
+      "etag": "\"2f78-65d55de31e7d0-df\"",
+      "file_path": "documentation/SwiftUI/uiviewrepresentable/sizethatfits(_,uiview,context)-5tdxh.md",
+      "hash": "15baa917d2cb987151c396397957a323d05bd546ae978a015ebf07cbd7f2aeba"
     },
     "https://developer.apple.com/tutorials/data/documentation/swiftui/uiviewrepresentable/sizethatfits(_:uiview:context:).json": {
       "etag": "\"3628-65d55de31e7d0-df\"",
@@ -64646,6 +65206,11 @@
       "etag": "\"242f-65d55dec50487-df\"",
       "file_path": "documentation/SwiftUI/vectorarithmetic/magnitudesquared.md",
       "hash": "cb74f6212465818bfbad32cfea02b6ffb3e31f00a81dae0e53d1d1df81407805"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/swiftui/vectorarithmetic/scale(by:)-1ojq4.json": {
+      "etag": "\"160d-65d55dec50487-df\"",
+      "file_path": "documentation/SwiftUI/vectorarithmetic/scale(by)-1ojq4.md",
+      "hash": "f11d1ee7efab928da68bf83f3661a675522ca9613008b2e4f545e01455d507e3"
     },
     "https://developer.apple.com/tutorials/data/documentation/swiftui/vectorarithmetic/scale(by:).json": {
       "etag": "\"29b3-65d55dec50487-df\"",
@@ -65571,6 +66136,11 @@
       "etag": "\"3079-65d55df1e64cf-df\"",
       "file_path": "documentation/SwiftUI/view/blur(radius,opaque).md",
       "hash": "8d2143b442445eabfe21c0ad05f5142b1dc12a3fb10be9c62f0e3130710dc0b4"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/swiftui/view/body-44706.json": {
+      "etag": "\"1540-65d55df2ee238-df\"",
+      "file_path": "documentation/SwiftUI/view/body-44706.md",
+      "hash": "a7dfb6f6cc2118efef97aa271f57ab3c6b9cd924953ba5549ca66dcb426dbcf2"
     },
     "https://developer.apple.com/tutorials/data/documentation/swiftui/view/body-8kl5o.json": {
       "etag": "\"3bc5-65d55df154054-df\"",
@@ -70111,6 +70681,11 @@
       "file_path": "documentation/SwiftUI/viewmodifier/animation(_).md",
       "hash": "f80774e257b06e11fe70ee4fe10bd4457790ea7eb6e3822a05a0f8894cd85ce6"
     },
+    "https://developer.apple.com/tutorials/data/documentation/swiftui/viewmodifier/body(content:)-70h6f.json": {
+      "etag": "\"1e95-65d55de3f60af-df\"",
+      "file_path": "documentation/SwiftUI/viewmodifier/body(content)-70h6f.md",
+      "hash": "3398d6dd575af2b49e19437362c3c01f659ed0d74d7370a2d4c1f152801b0184"
+    },
     "https://developer.apple.com/tutorials/data/documentation/swiftui/viewmodifier/body(content:).json": {
       "etag": "\"28ac-65d55de3f60af-df\"",
       "file_path": "documentation/SwiftUI/viewmodifier/body(content).md",
@@ -71131,6 +71706,11 @@
       "file_path": "documentation/SwiftUI/wkinterfaceobjectrepresentable.md",
       "hash": "8dc7d63d9fb1a3c1b46746140a3470dd7c65058e5206c0d0c463b06e16650ad5"
     },
+    "https://developer.apple.com/tutorials/data/documentation/swiftui/wkinterfaceobjectrepresentable/body.json": {
+      "etag": "\"1618-65d55df416b6c-df\"",
+      "file_path": "documentation/SwiftUI/wkinterfaceobjectrepresentable/body.md",
+      "hash": "98ef53df6df37a61ea2a64f73ee79de36eafe86cc713dcf2704004ef249fcbb2"
+    },
     "https://developer.apple.com/tutorials/data/documentation/swiftui/wkinterfaceobjectrepresentable/context.json": {
       "etag": "\"1ef6-65d55df416b6c-df\"",
       "file_path": "documentation/SwiftUI/wkinterfaceobjectrepresentable/context.md",
@@ -71141,10 +71721,20 @@
       "file_path": "documentation/SwiftUI/wkinterfaceobjectrepresentable/coordinator.md",
       "hash": "9dff611352ea203059981bd5a78779551151f1bf2895a6b265443e2f6ea6ed0e"
     },
+    "https://developer.apple.com/tutorials/data/documentation/swiftui/wkinterfaceobjectrepresentable/dismantlewkinterfaceobject(_:coordinator:)-qd0y.json": {
+      "etag": "\"22f3-65d55df416b6c-df\"",
+      "file_path": "documentation/SwiftUI/wkinterfaceobjectrepresentable/dismantlewkinterfaceobject(_,coordinator)-qd0y.md",
+      "hash": "af2ae78913e2c70adc5e6dc80b9b6721b869e96980f70db3fbeaecb9b721ce35"
+    },
     "https://developer.apple.com/tutorials/data/documentation/swiftui/wkinterfaceobjectrepresentable/dismantlewkinterfaceobject(_:coordinator:).json": {
       "etag": "\"2db5-65d55df416b6c-df\"",
       "file_path": "documentation/SwiftUI/wkinterfaceobjectrepresentable/dismantlewkinterfaceobject(_,coordinator).md",
       "hash": "bb12a31e0b094d455af7478bb60d3bc0526bc3b9b075280f2150043167b69f44"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/swiftui/wkinterfaceobjectrepresentable/makecoordinator()-80qlf.json": {
+      "etag": "\"26ca-65d55df416b6c-df\"",
+      "file_path": "documentation/SwiftUI/wkinterfaceobjectrepresentable/makecoordinator()-80qlf.md",
+      "hash": "52723b8e8c9b180a49d6a75a5c636d239c9a514f832f58b38b63dec31785a3a5"
     },
     "https://developer.apple.com/tutorials/data/documentation/swiftui/wkinterfaceobjectrepresentable/makecoordinator().json": {
       "etag": "\"2ede-65d55df416b6c-df\"",
@@ -71439,8 +72029,8 @@
   },
   "metadata": {
     "render": {
-      "version": 1
+      "version": 2
     },
-    "total_pages": 14291
+    "total_pages": 14409
   }
 }

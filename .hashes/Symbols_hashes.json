@@ -210,6 +210,526 @@
       "file_path": "documentation/Symbols/indefinitesymboleffect.md",
       "hash": "b0b0460894d46aacb42b54a3c53c17f74e13497a09adbbc02b727c31f210ce78"
     },
+    "https://developer.apple.com/documentation/symbols/nssymbolappeareffect": {
+      "etag": "\"2f6a-65d55af5a892c-df\"",
+      "file_path": "documentation/Symbols/nssymbolappeareffect.md",
+      "hash": "90223d71933497a7f560809dd90cd412b1cc154339944947eaece63e173f001b"
+    },
+    "https://developer.apple.com/documentation/symbols/nssymbolappeareffect/appeardowneffect": {
+      "etag": "\"1458-65d55af5a892c-df\"",
+      "file_path": "documentation/Symbols/nssymbolappeareffect/appeardowneffect.md",
+      "hash": "d55ee21ff591d54b68b30171efe04a2c705767902da24cac8262637b74f30f7c"
+    },
+    "https://developer.apple.com/documentation/symbols/nssymbolappeareffect/appearupeffect": {
+      "etag": "\"1448-65d55af5a892c-df\"",
+      "file_path": "documentation/Symbols/nssymbolappeareffect/appearupeffect.md",
+      "hash": "0029d12128855e30d113569ef47d877397747e455770e6b2af23b625894c2a6f"
+    },
+    "https://developer.apple.com/documentation/symbols/nssymbolappeareffect/effect": {
+      "etag": "\"140f-65d55af5a892c-df\"",
+      "file_path": "documentation/Symbols/nssymbolappeareffect/effect.md",
+      "hash": "c5c9b00cb85f0dc507a42c9976b2bcdf4a02e0d108fc937e2a456f433d678e02"
+    },
+    "https://developer.apple.com/documentation/symbols/nssymbolappeareffect/effectwithbylayer": {
+      "etag": "\"120a-65d55af5a892c-df\"",
+      "file_path": "documentation/Symbols/nssymbolappeareffect/effectwithbylayer.md",
+      "hash": "e0a2afea3bdf02d27bb0db95c40acecbe200130ef0fad4d7f4dc9af2454a54ef"
+    },
+    "https://developer.apple.com/documentation/symbols/nssymbolappeareffect/effectwithwholesymbol": {
+      "etag": "\"123d-65d55af5a892c-df\"",
+      "file_path": "documentation/Symbols/nssymbolappeareffect/effectwithwholesymbol.md",
+      "hash": "888c4dc8a3146e8fb4448a681d55525ff451bc10e358ac9c8e14e064131bdb55"
+    },
+    "https://developer.apple.com/documentation/symbols/nssymbolautomaticcontenttransition": {
+      "etag": "\"18ca-65d55af5a892c-df\"",
+      "file_path": "documentation/Symbols/nssymbolautomaticcontenttransition.md",
+      "hash": "a417e48009d5ce443e9896b68bcb768ba63fda2d8e7a24b3f7ce13b1fbc9b86f"
+    },
+    "https://developer.apple.com/documentation/symbols/nssymbolautomaticcontenttransition/transition": {
+      "etag": "\"fc3-65d55af5c44ba-df\"",
+      "file_path": "documentation/Symbols/nssymbolautomaticcontenttransition/transition.md",
+      "hash": "a6603ad48e49c5b74a705ab79603a9f2c8f7cdb84b933190b9933aa259377317"
+    },
+    "https://developer.apple.com/documentation/symbols/nssymbolbounceeffect": {
+      "etag": "\"3182-65d55af60319a-df\"",
+      "file_path": "documentation/Symbols/nssymbolbounceeffect.md",
+      "hash": "5f67017c7be063badc15ec582be94e1b8db90145b4cdfae75dde479480b00464"
+    },
+    "https://developer.apple.com/documentation/symbols/nssymbolbounceeffect/bouncedowneffect": {
+      "etag": "\"146c-65d55af5f67cc-df\"",
+      "file_path": "documentation/Symbols/nssymbolbounceeffect/bouncedowneffect.md",
+      "hash": "a3a734bbc7a1c80ec41c31e6cd871c06c1804d749d229ba956dd5618540c0bf3"
+    },
+    "https://developer.apple.com/documentation/symbols/nssymbolbounceeffect/bounceupeffect": {
+      "etag": "\"145c-65d55af5f67cc-df\"",
+      "file_path": "documentation/Symbols/nssymbolbounceeffect/bounceupeffect.md",
+      "hash": "3da9011c57fbeada0fcf45a49ad060ed195770473c1a16b7ae3115797238f242"
+    },
+    "https://developer.apple.com/documentation/symbols/nssymbolbounceeffect/effect": {
+      "etag": "\"1465-65d55af5f67cc-df\"",
+      "file_path": "documentation/Symbols/nssymbolbounceeffect/effect.md",
+      "hash": "849ecfb9f10e3816205576b377edd11154e10ed1704469c207d812e8fe3c85c3"
+    },
+    "https://developer.apple.com/documentation/symbols/nssymbolbounceeffect/effectwithbylayer": {
+      "etag": "\"122f-65d55af5f67cc-df\"",
+      "file_path": "documentation/Symbols/nssymbolbounceeffect/effectwithbylayer.md",
+      "hash": "de23ab8eebac9727ed7a888e43d7616e6db4ff085b7e75b94cc1b37792e0187e"
+    },
+    "https://developer.apple.com/documentation/symbols/nssymbolbounceeffect/effectwithwholesymbol": {
+      "etag": "\"124f-65d55af5f67cc-df\"",
+      "file_path": "documentation/Symbols/nssymbolbounceeffect/effectwithwholesymbol.md",
+      "hash": "734fbc44e6ffb57526872121e5acf3e5f4e0721c9ad45c113580332d47c12c30"
+    },
+    "https://developer.apple.com/documentation/symbols/nssymbolbreatheeffect": {
+      "etag": "\"2ff6-65d55af5dd9d0-df\"",
+      "file_path": "documentation/Symbols/nssymbolbreatheeffect.md",
+      "hash": "d0b2aa502eef684b0df50878aae8e08cdd0cc8d4f5b32207cc244e1245a21bc2"
+    },
+    "https://developer.apple.com/documentation/symbols/nssymbolbreatheeffect/breatheplaineffect": {
+      "etag": "\"f27-65d55af5c44ba-df\"",
+      "file_path": "documentation/Symbols/nssymbolbreatheeffect/breatheplaineffect.md",
+      "hash": "f47b82edeb8ba194853d5a91e7aa85efaecd6c872cc19d5ab6659cdd9751ee59"
+    },
+    "https://developer.apple.com/documentation/symbols/nssymbolbreatheeffect/breathepulseeffect": {
+      "etag": "\"f05-65d55af5c44ba-df\"",
+      "file_path": "documentation/Symbols/nssymbolbreatheeffect/breathepulseeffect.md",
+      "hash": "36b81039d733c7b7b051210cbba2b7cceb44ecf8ba03199ff941c9d394fe683c"
+    },
+    "https://developer.apple.com/documentation/symbols/nssymbolbreatheeffect/effect": {
+      "etag": "\"dd7-65d55af5c44ba-df\"",
+      "file_path": "documentation/Symbols/nssymbolbreatheeffect/effect.md",
+      "hash": "4a5f351830b6a5f0659ceef00bb58d991aa2c85c737d057090ddb1ee4a4b9298"
+    },
+    "https://developer.apple.com/documentation/symbols/nssymbolbreatheeffect/effectwithbylayer": {
+      "etag": "\"e7b-65d55af5c44ba-df\"",
+      "file_path": "documentation/Symbols/nssymbolbreatheeffect/effectwithbylayer.md",
+      "hash": "164ff0fdb8ee40ed7bf5e9c96d823341a5b68c92569c42b84a4a7a39febd6eed"
+    },
+    "https://developer.apple.com/documentation/symbols/nssymbolbreatheeffect/effectwithwholesymbol": {
+      "etag": "\"ecb-65d55af5c44ba-df\"",
+      "file_path": "documentation/Symbols/nssymbolbreatheeffect/effectwithwholesymbol.md",
+      "hash": "239932e53e571355687081a97f7e25cf10ecd57bff34841deac3e704ae060fad"
+    },
+    "https://developer.apple.com/documentation/symbols/nssymbolcontenttransition": {
+      "etag": "\"2288-65d55af5dd9d0-df\"",
+      "file_path": "documentation/Symbols/nssymbolcontenttransition.md",
+      "hash": "1d6c11ad0fe16584d4a2076dcd139af1fe322b5714a6b2d28b696d5a928bf14f"
+    },
+    "https://developer.apple.com/documentation/symbols/nssymboldisappeareffect": {
+      "etag": "\"2feb-65d55af5c44ba-df\"",
+      "file_path": "documentation/Symbols/nssymboldisappeareffect.md",
+      "hash": "05c0be6a15e4b1204aeaa9f03fda080804a3f845f50bc431cd9e50613927b48e"
+    },
+    "https://developer.apple.com/documentation/symbols/nssymboldisappeareffect/disappeardowneffect": {
+      "etag": "\"14d0-65d55af5a892c-df\"",
+      "file_path": "documentation/Symbols/nssymboldisappeareffect/disappeardowneffect.md",
+      "hash": "09151b5d473f0931992259e9889817997397a1c719a7347a02056a3ab6196859"
+    },
+    "https://developer.apple.com/documentation/symbols/nssymboldisappeareffect/disappearupeffect": {
+      "etag": "\"14c0-65d55af5a892c-df\"",
+      "file_path": "documentation/Symbols/nssymboldisappeareffect/disappearupeffect.md",
+      "hash": "d66087441e84172ecbce83add1dcec7645adcd88586efa1885974485300532ff"
+    },
+    "https://developer.apple.com/documentation/symbols/nssymboldisappeareffect/effect": {
+      "etag": "\"1477-65d55af5a892c-df\"",
+      "file_path": "documentation/Symbols/nssymboldisappeareffect/effect.md",
+      "hash": "bf40d90a05d2a6d88fb6558293715973ed8eccd13762f965019b8017d1ec131e"
+    },
+    "https://developer.apple.com/documentation/symbols/nssymboldisappeareffect/effectwithbylayer": {
+      "etag": "\"125c-65d55af5a892c-df\"",
+      "file_path": "documentation/Symbols/nssymboldisappeareffect/effectwithbylayer.md",
+      "hash": "9f82537f1012ebeec34b36b9d7158d3def7d5dccc596d96b999f93dd72d538d7"
+    },
+    "https://developer.apple.com/documentation/symbols/nssymboldisappeareffect/effectwithwholesymbol": {
+      "etag": "\"127c-65d55af5a892c-df\"",
+      "file_path": "documentation/Symbols/nssymboldisappeareffect/effectwithwholesymbol.md",
+      "hash": "8ba162e132733e9011f22f46c8bfc14a141ecfae53a4f95ea7264a62e8f93c46"
+    },
+    "https://developer.apple.com/documentation/symbols/nssymboldrawoffeffect": {
+      "etag": "\"2124-65d55af5dd9d0-df\"",
+      "file_path": "documentation/Symbols/nssymboldrawoffeffect.md",
+      "hash": "5d6ac9dfc56f22f3e2d45c022a4b0dc65a21a7253e755ad2ca230ae473d68db0"
+    },
+    "https://developer.apple.com/documentation/symbols/nssymboldrawoffeffect/effect": {
+      "etag": "\"da6-65d55af5f67cc-df\"",
+      "file_path": "documentation/Symbols/nssymboldrawoffeffect/effect.md",
+      "hash": "7a246ad21bfd6da1b88dabcc115030b2b8baeb589729b8f11711b4b9dc183741"
+    },
+    "https://developer.apple.com/documentation/symbols/nssymboldrawoffeffect/effectwithbylayer": {
+      "etag": "\"eee-65d55af5f67cc-df\"",
+      "file_path": "documentation/Symbols/nssymboldrawoffeffect/effectwithbylayer.md",
+      "hash": "9005283ecfa24962f0aea7953fa99cd7b84bfa4389475ff052499b95b5ddfd6b"
+    },
+    "https://developer.apple.com/documentation/symbols/nssymboldrawoffeffect/effectwithindividually": {
+      "etag": "\"ff4-65d55af5f67cc-df\"",
+      "file_path": "documentation/Symbols/nssymboldrawoffeffect/effectwithindividually.md",
+      "hash": "61b3d16f9f1145aed060438d3d8c196d1e534441f6db636dbc1ba62d9ac769d1"
+    },
+    "https://developer.apple.com/documentation/symbols/nssymboldrawoffeffect/effectwithnonreversed": {
+      "etag": "\"eaa-65d55af5f67cc-df\"",
+      "file_path": "documentation/Symbols/nssymboldrawoffeffect/effectwithnonreversed.md",
+      "hash": "db42011b85466da2766f9e144f5c02411898958469e350ac9c69c7e114d8f113"
+    },
+    "https://developer.apple.com/documentation/symbols/nssymboldrawoffeffect/effectwithreversed": {
+      "etag": "\"e86-65d55af5f67cc-df\"",
+      "file_path": "documentation/Symbols/nssymboldrawoffeffect/effectwithreversed.md",
+      "hash": "08d77482e82e93c385c700ee20646fcabbb6cf0ade318d2acabfb2be41db878a"
+    },
+    "https://developer.apple.com/documentation/symbols/nssymboldrawoffeffect/effectwithwholesymbol": {
+      "etag": "\"f26-65d55af5f67cc-df\"",
+      "file_path": "documentation/Symbols/nssymboldrawoffeffect/effectwithwholesymbol.md",
+      "hash": "6f6aead6526ef6ddf2f9b45632dd47886d2d15df22a2c3316f0d9f0173950c86"
+    },
+    "https://developer.apple.com/documentation/symbols/nssymboldrawoneffect": {
+      "etag": "\"1bb9-65d55af5c44ba-df\"",
+      "file_path": "documentation/Symbols/nssymboldrawoneffect.md",
+      "hash": "b86f4dc58dc72a446202b1fef168c1933aa64f43575400841b948ab0968154c4"
+    },
+    "https://developer.apple.com/documentation/symbols/nssymboldrawoneffect/effect": {
+      "etag": "\"d97-65d55af5f67cc-df\"",
+      "file_path": "documentation/Symbols/nssymboldrawoneffect/effect.md",
+      "hash": "0956523e61cde4bc5ead80e1d3ed586e403bfb72d99a500603c64af0d4ac2b01"
+    },
+    "https://developer.apple.com/documentation/symbols/nssymboldrawoneffect/effectwithbylayer": {
+      "etag": "\"ee1-65d55af5dd9d0-df\"",
+      "file_path": "documentation/Symbols/nssymboldrawoneffect/effectwithbylayer.md",
+      "hash": "c86cadd523063769235882fcf8f1d280512264ad91207fb16122a8e06562ac43"
+    },
+    "https://developer.apple.com/documentation/symbols/nssymboldrawoneffect/effectwithindividually": {
+      "etag": "\"fe7-65d55af5f67cc-df\"",
+      "file_path": "documentation/Symbols/nssymboldrawoneffect/effectwithindividually.md",
+      "hash": "2d5bbc32d40520d68fb6cb5c770e48a19d428d57d36ed42f2e48f9f90ddd90a7"
+    },
+    "https://developer.apple.com/documentation/symbols/nssymboldrawoneffect/effectwithwholesymbol": {
+      "etag": "\"f19-65d55af5f67cc-df\"",
+      "file_path": "documentation/Symbols/nssymboldrawoneffect/effectwithwholesymbol.md",
+      "hash": "0fa662557c4654cc0deb33c83cb6ff69dc22e2abc937d0a491dcd96ed2d5f805"
+    },
+    "https://developer.apple.com/documentation/symbols/nssymboleffect": {
+      "etag": "\"3473-65d55af5dd9d0-df\"",
+      "file_path": "documentation/Symbols/nssymboleffect.md",
+      "hash": "03c52c2e1c01c66e018f1fb2c67d33a59fb109d162e90a3c6c85a92adfef833a"
+    },
+    "https://developer.apple.com/documentation/symbols/nssymboleffectoptions": {
+      "etag": "\"3a8a-65d55af5f67cc-df\"",
+      "file_path": "documentation/Symbols/nssymboleffectoptions.md",
+      "hash": "eee47b30db910e078f3e6ca33b64519a2f125054db2643634cee0f0bef030ab6"
+    },
+    "https://developer.apple.com/documentation/symbols/nssymboleffectoptions/options": {
+      "etag": "\"e51-65d55af5a892c-df\"",
+      "file_path": "documentation/Symbols/nssymboleffectoptions/options.md",
+      "hash": "b47f07fb711ba896a5a4026eba65b0c57c5726aaf7c065a39730e4ce17301eaf"
+    },
+    "https://developer.apple.com/documentation/symbols/nssymboleffectoptions/optionswithnonrepeating-c.method": {
+      "etag": "\"1e29-65d55af5a892c-df\"",
+      "file_path": "documentation/Symbols/nssymboleffectoptions/optionswithnonrepeating-c.method.md",
+      "hash": "29f944526586fd61c6bc22aed2d883cec3502b3b6e6b6278c538465f286854a3"
+    },
+    "https://developer.apple.com/documentation/symbols/nssymboleffectoptions/optionswithnonrepeating-c.type.method": {
+      "etag": "\"1e36-65d55af5a892c-df\"",
+      "file_path": "documentation/Symbols/nssymboleffectoptions/optionswithnonrepeating-c.type.method.md",
+      "hash": "c9566bd139013495257530ddf0a797be2d8f96d4cb7518f333a2a4130e812b30"
+    },
+    "https://developer.apple.com/documentation/symbols/nssymboleffectoptions/optionswithrepeatbehavior:-c.method": {
+      "etag": "\"13e4-65d55af5a892c-df\"",
+      "file_path": "documentation/Symbols/nssymboleffectoptions/optionswithrepeatbehavior_-c.method.md",
+      "hash": "cd4dc75abb4ec1f7edafb3062a7d0e77ef1cb534c28c3a2f53cb906194fb2843"
+    },
+    "https://developer.apple.com/documentation/symbols/nssymboleffectoptions/optionswithrepeatbehavior:-c.type.method": {
+      "etag": "\"13ef-65d55af5a892c-df\"",
+      "file_path": "documentation/Symbols/nssymboleffectoptions/optionswithrepeatbehavior_-c.type.method.md",
+      "hash": "abff2b3150a8f4f622e5627e688b166c78c6434610821b2fd0ca275f1baa434d"
+    },
+    "https://developer.apple.com/documentation/symbols/nssymboleffectoptions/optionswithrepeatcount:-c.method": {
+      "etag": "\"23b0-65d55af5a892c-df\"",
+      "file_path": "documentation/Symbols/nssymboleffectoptions/optionswithrepeatcount_-c.method.md",
+      "hash": "56da9ccdd2cae6a6dd649411310c545051ec4a9301ecf37a1a1a154858a9371a"
+    },
+    "https://developer.apple.com/documentation/symbols/nssymboleffectoptions/optionswithrepeatcount:-c.type.method": {
+      "etag": "\"23b5-65d55af5a892c-df\"",
+      "file_path": "documentation/Symbols/nssymboleffectoptions/optionswithrepeatcount_-c.type.method.md",
+      "hash": "a82e602800c0e64f84ede4290e11c98323280d2cfed831cd6de6b425452bc328"
+    },
+    "https://developer.apple.com/documentation/symbols/nssymboleffectoptions/optionswithrepeating-c.method": {
+      "etag": "\"1ec3-65d55af5a892c-df\"",
+      "file_path": "documentation/Symbols/nssymboleffectoptions/optionswithrepeating-c.method.md",
+      "hash": "c95d0e308ee788a7e11af157635f00c1d6a82a33d18e2d5a124453b4d95554da"
+    },
+    "https://developer.apple.com/documentation/symbols/nssymboleffectoptions/optionswithrepeating-c.type.method": {
+      "etag": "\"1ed0-65d55af5a892c-df\"",
+      "file_path": "documentation/Symbols/nssymboleffectoptions/optionswithrepeating-c.type.method.md",
+      "hash": "f656c3df39bd2695f9ee5b2e202aa73406717b637dd41412322114860d873734"
+    },
+    "https://developer.apple.com/documentation/symbols/nssymboleffectoptions/optionswithspeed:-c.method": {
+      "etag": "\"1475-65d55af5a892c-df\"",
+      "file_path": "documentation/Symbols/nssymboleffectoptions/optionswithspeed_-c.method.md",
+      "hash": "180ed2c6fac4e551e0ba9b69e13a6b26be791b09f25535918c4a58d8273605ad"
+    },
+    "https://developer.apple.com/documentation/symbols/nssymboleffectoptions/optionswithspeed:-c.type.method": {
+      "etag": "\"147a-65d55af5a892c-df\"",
+      "file_path": "documentation/Symbols/nssymboleffectoptions/optionswithspeed_-c.type.method.md",
+      "hash": "4abca3f666dbc1b939f2b1ef75a3d57a3dfb61914394380ccf47456759a15e4a"
+    },
+    "https://developer.apple.com/documentation/symbols/nssymboleffectoptionsrepeatbehavior": {
+      "etag": "\"2e0c-65d55af5dd9d0-df\"",
+      "file_path": "documentation/Symbols/nssymboleffectoptionsrepeatbehavior.md",
+      "hash": "258029ebaf209e281e60d4a3627be2d059ea57e1ef84e58375c70a45d266812f"
+    },
+    "https://developer.apple.com/documentation/symbols/nssymboleffectoptionsrepeatbehavior/behaviorcontinuous": {
+      "etag": "\"1397-65d55af5f67cc-df\"",
+      "file_path": "documentation/Symbols/nssymboleffectoptionsrepeatbehavior/behaviorcontinuous.md",
+      "hash": "fef45cba4833a8bd99e09e22b703b4da33e36d01d50130fc0dfbda7fd8aa15c9"
+    },
+    "https://developer.apple.com/documentation/symbols/nssymboleffectoptionsrepeatbehavior/behaviorperiodic": {
+      "etag": "\"11b4-65d55af5f67cc-df\"",
+      "file_path": "documentation/Symbols/nssymboleffectoptionsrepeatbehavior/behaviorperiodic.md",
+      "hash": "3214fffbd3e8fdddc68c4e1bf95f64294078d8652d9f766b7af46391cb126ff0"
+    },
+    "https://developer.apple.com/documentation/symbols/nssymboleffectoptionsrepeatbehavior/behaviorperiodicwithcount:": {
+      "etag": "\"1791-65d55af5f67cc-df\"",
+      "file_path": "documentation/Symbols/nssymboleffectoptionsrepeatbehavior/behaviorperiodicwithcount_.md",
+      "hash": "7bf6299fa52144cb0e4699308b341403382aa814a2fa2c03b26552ccdf0f04b7"
+    },
+    "https://developer.apple.com/documentation/symbols/nssymboleffectoptionsrepeatbehavior/behaviorperiodicwithcount:delay:": {
+      "etag": "\"199b-65d55af5f67cc-df\"",
+      "file_path": "documentation/Symbols/nssymboleffectoptionsrepeatbehavior/behaviorperiodicwithcount_delay_.md",
+      "hash": "f9b1fb789f1f2aa7f3f6efa99ebc8c6f50f1ff54beb419f2e158569ecc0ad4bd"
+    },
+    "https://developer.apple.com/documentation/symbols/nssymboleffectoptionsrepeatbehavior/behaviorperiodicwithdelay:": {
+      "etag": "\"1403-65d55af5f67cc-df\"",
+      "file_path": "documentation/Symbols/nssymboleffectoptionsrepeatbehavior/behaviorperiodicwithdelay_.md",
+      "hash": "bb8e89ebe1d8efcd053f790e8f17412d0796b6844fe9dbb4407fcac8ec4619f0"
+    },
+    "https://developer.apple.com/documentation/symbols/nssymbolmagicreplacecontenttransition": {
+      "etag": "\"1707-65d55af5dd9d0-df\"",
+      "file_path": "documentation/Symbols/nssymbolmagicreplacecontenttransition.md",
+      "hash": "043ca4649d1d455771894dd63360519196445e0027fbd020d17636059d06b854"
+    },
+    "https://developer.apple.com/documentation/symbols/nssymbolpulseeffect": {
+      "etag": "\"2d69-65d55af5dd9d0-df\"",
+      "file_path": "documentation/Symbols/nssymbolpulseeffect.md",
+      "hash": "635db3a10572f9bcaa68b35cf809be3c5c0c089fe100e327f6dc7cac04d5aefc"
+    },
+    "https://developer.apple.com/documentation/symbols/nssymbolpulseeffect/effect": {
+      "etag": "\"e65-65d55af5a892c-df\"",
+      "file_path": "documentation/Symbols/nssymbolpulseeffect/effect.md",
+      "hash": "4c2bc4881c7687491398d27687df006d05647b20a4c74cf7c4425c992e68aca9"
+    },
+    "https://developer.apple.com/documentation/symbols/nssymbolpulseeffect/effectwithbylayer": {
+      "etag": "\"1288-65d55af5a892c-df\"",
+      "file_path": "documentation/Symbols/nssymbolpulseeffect/effectwithbylayer.md",
+      "hash": "28a1125ce4cb43b9c381e0da3646f1db3f08a69a26a69e4b75e31bbbed79a9ac"
+    },
+    "https://developer.apple.com/documentation/symbols/nssymbolpulseeffect/effectwithwholesymbol": {
+      "etag": "\"1286-65d55af5a892c-df\"",
+      "file_path": "documentation/Symbols/nssymbolpulseeffect/effectwithwholesymbol.md",
+      "hash": "7d32ecc5b5347c7644f99b9491d3ce68e0fe9af9d562041bfb42972b51b3c831"
+    },
+    "https://developer.apple.com/documentation/symbols/nssymbolreplacecontenttransition": {
+      "etag": "\"2e90-65d55af5dd9d0-df\"",
+      "file_path": "documentation/Symbols/nssymbolreplacecontenttransition.md",
+      "hash": "f6509d4baa5670828c656b734c676d749f83ab77add78354a3987bca99b3605b"
+    },
+    "https://developer.apple.com/documentation/symbols/nssymbolreplacecontenttransition/magictransitionwithfallback:": {
+      "etag": "\"1408-65d55af5c44ba-df\"",
+      "file_path": "documentation/Symbols/nssymbolreplacecontenttransition/magictransitionwithfallback_.md",
+      "hash": "9128a259841ebb60fd1a670e76bf34c89f98fc0d03391cc61c6be1ef02b739cb"
+    },
+    "https://developer.apple.com/documentation/symbols/nssymbolreplacecontenttransition/replacedownuptransition": {
+      "etag": "\"19ef-65d55af5c44ba-df\"",
+      "file_path": "documentation/Symbols/nssymbolreplacecontenttransition/replacedownuptransition.md",
+      "hash": "9746fc4e7dc55818a0f9c31f367e282eecafd51dd60c3b9500973eae2da3a58d"
+    },
+    "https://developer.apple.com/documentation/symbols/nssymbolreplacecontenttransition/replaceoffuptransition": {
+      "etag": "\"19e3-65d55af5c44ba-df\"",
+      "file_path": "documentation/Symbols/nssymbolreplacecontenttransition/replaceoffuptransition.md",
+      "hash": "3c080f04d77cc908de1c6bd3fad0588c3d72ae84d59bf32a3a1b8ea26ec0a99a"
+    },
+    "https://developer.apple.com/documentation/symbols/nssymbolreplacecontenttransition/replaceupuptransition": {
+      "etag": "\"19dd-65d55af5c44ba-df\"",
+      "file_path": "documentation/Symbols/nssymbolreplacecontenttransition/replaceupuptransition.md",
+      "hash": "860df0bd2f8b923c9a14247733e83f0c2a95a05e2309fa2ee516cd8c41cfae73"
+    },
+    "https://developer.apple.com/documentation/symbols/nssymbolreplacecontenttransition/transition": {
+      "etag": "\"187f-65d55af5c44ba-df\"",
+      "file_path": "documentation/Symbols/nssymbolreplacecontenttransition/transition.md",
+      "hash": "6d331109b2d1fc48ea5387a9fcb2cd0f56839ea2b0f27526638183fa3fe772d9"
+    },
+    "https://developer.apple.com/documentation/symbols/nssymbolreplacecontenttransition/transitionwithbylayer": {
+      "etag": "\"130c-65d55af5c44ba-df\"",
+      "file_path": "documentation/Symbols/nssymbolreplacecontenttransition/transitionwithbylayer.md",
+      "hash": "7e08ec610811294c9d72b80e1eecbcef373989f78c4ea344228a99462841a3bc"
+    },
+    "https://developer.apple.com/documentation/symbols/nssymbolreplacecontenttransition/transitionwithwholesymbol": {
+      "etag": "\"132c-65d55af5c44ba-df\"",
+      "file_path": "documentation/Symbols/nssymbolreplacecontenttransition/transitionwithwholesymbol.md",
+      "hash": "5cf2cee2fb8ef784c8b02d122f3abcd3ef1cb128f95353c7371bdc02a45d960f"
+    },
+    "https://developer.apple.com/documentation/symbols/nssymbolrotateeffect": {
+      "etag": "\"2fea-65d55af5f67cc-df\"",
+      "file_path": "documentation/Symbols/nssymbolrotateeffect.md",
+      "hash": "b06f67dc43aa840ff8022e35a716b4a850f3b423e063758f0b5204e4180d78f7"
+    },
+    "https://developer.apple.com/documentation/symbols/nssymbolrotateeffect/effect": {
+      "etag": "\"dc8-65d55af5a892c-df\"",
+      "file_path": "documentation/Symbols/nssymbolrotateeffect/effect.md",
+      "hash": "0ef3f12c31e8bf4122c0e858275a2adc53c4804f3a6465217fa128a52984df57"
+    },
+    "https://developer.apple.com/documentation/symbols/nssymbolrotateeffect/effectwithbylayer": {
+      "etag": "\"e6e-65d55af5a892c-df\"",
+      "file_path": "documentation/Symbols/nssymbolrotateeffect/effectwithbylayer.md",
+      "hash": "b30c1b679da016a9e96cf433f9c42383eb3d85353841d92682ba9b172deb1946"
+    },
+    "https://developer.apple.com/documentation/symbols/nssymbolrotateeffect/effectwithwholesymbol": {
+      "etag": "\"ebe-65d55af5a892c-df\"",
+      "file_path": "documentation/Symbols/nssymbolrotateeffect/effectwithwholesymbol.md",
+      "hash": "17a1308a449a51b79a47a84429c2be4b7c8cbfc149a55a2b7fb289452ee5d927"
+    },
+    "https://developer.apple.com/documentation/symbols/nssymbolrotateeffect/rotateclockwiseeffect": {
+      "etag": "\"e9a-65d55af5a892c-df\"",
+      "file_path": "documentation/Symbols/nssymbolrotateeffect/rotateclockwiseeffect.md",
+      "hash": "b38d7b9bb0e5716d34231b41228e261fa22d1ac34173ad66cd527b37988a05fe"
+    },
+    "https://developer.apple.com/documentation/symbols/nssymbolrotateeffect/rotatecounterclockwiseeffect": {
+      "etag": "\"efe-65d55af5a892c-df\"",
+      "file_path": "documentation/Symbols/nssymbolrotateeffect/rotatecounterclockwiseeffect.md",
+      "hash": "7cc59aa59db90c4c1d939667ff54e735ca717a219f1d817e58e2a02d79e4c591"
+    },
+    "https://developer.apple.com/documentation/symbols/nssymbolscaleeffect": {
+      "etag": "\"2ed4-65d55af5dd9d0-df\"",
+      "file_path": "documentation/Symbols/nssymbolscaleeffect.md",
+      "hash": "1e8457afb83199721bf11d4ae8eca1bf55cddf23b1b04f8f4af2eb018085a691"
+    },
+    "https://developer.apple.com/documentation/symbols/nssymbolscaleeffect/effect": {
+      "etag": "\"13b6-65d55af5c44ba-df\"",
+      "file_path": "documentation/Symbols/nssymbolscaleeffect/effect.md",
+      "hash": "6e76c16d2f7ecd4a1af773cbe60c6003b46c4760674927aec456f58331a3ec74"
+    },
+    "https://developer.apple.com/documentation/symbols/nssymbolscaleeffect/effectwithbylayer": {
+      "etag": "\"11ef-65d55af5c44ba-df\"",
+      "file_path": "documentation/Symbols/nssymbolscaleeffect/effectwithbylayer.md",
+      "hash": "e833a9d2bbea194cf25c348b4398f3585c20b6350315467f993d3ac38be5888a"
+    },
+    "https://developer.apple.com/documentation/symbols/nssymbolscaleeffect/effectwithwholesymbol": {
+      "etag": "\"120f-65d55af5c44ba-df\"",
+      "file_path": "documentation/Symbols/nssymbolscaleeffect/effectwithwholesymbol.md",
+      "hash": "25e6acfffb8814e327fee2ee995cabbde33fb31fcec568449c22e2f8cc5f85d7"
+    },
+    "https://developer.apple.com/documentation/symbols/nssymbolscaleeffect/scaledowneffect": {
+      "etag": "\"13d9-65d55af5c44ba-df\"",
+      "file_path": "documentation/Symbols/nssymbolscaleeffect/scaledowneffect.md",
+      "hash": "786af44f4b96841f9032a2ca75fd9a8c5f3236d04beff3f8de54cc884c9ab848"
+    },
+    "https://developer.apple.com/documentation/symbols/nssymbolscaleeffect/scaleupeffect": {
+      "etag": "\"13c9-65d55af5c44ba-df\"",
+      "file_path": "documentation/Symbols/nssymbolscaleeffect/scaleupeffect.md",
+      "hash": "aa0bbd08828dffbd9ab80b4cc30dc22a4162398006218a1a76d563d855bae361"
+    },
+    "https://developer.apple.com/documentation/symbols/nssymbolvariablecoloreffect": {
+      "etag": "\"3bbf-65d55af5f67cc-df\"",
+      "file_path": "documentation/Symbols/nssymbolvariablecoloreffect.md",
+      "hash": "682c0e9c57fa494b64dbf319e4f061ddf1e78bb50f01483f4483d794faf96626"
+    },
+    "https://developer.apple.com/documentation/symbols/nssymbolvariablecoloreffect/effect": {
+      "etag": "\"f57-65d55af60319a-df\"",
+      "file_path": "documentation/Symbols/nssymbolvariablecoloreffect/effect.md",
+      "hash": "69154abc5604d753597c180e76bf5e355fe9f4b0388e2d2bc28c345457de424e"
+    },
+    "https://developer.apple.com/documentation/symbols/nssymbolvariablecoloreffect/effectwithcumulative": {
+      "etag": "\"17de-65d55af60319a-df\"",
+      "file_path": "documentation/Symbols/nssymbolvariablecoloreffect/effectwithcumulative.md",
+      "hash": "7e67b7596ec72882816e002aa09955040b4f02d7d432e5421fc0035ae02fc1b8"
+    },
+    "https://developer.apple.com/documentation/symbols/nssymbolvariablecoloreffect/effectwithdiminactivelayers": {
+      "etag": "\"1441-65d55af60319a-df\"",
+      "file_path": "documentation/Symbols/nssymbolvariablecoloreffect/effectwithdiminactivelayers.md",
+      "hash": "6a4e8a3c2ae8fb75cfa11d2f9773a18789600664999e9aa492078dd98130c90e"
+    },
+    "https://developer.apple.com/documentation/symbols/nssymbolvariablecoloreffect/effectwithhideinactivelayers": {
+      "etag": "\"146e-65d55af60319a-df\"",
+      "file_path": "documentation/Symbols/nssymbolvariablecoloreffect/effectwithhideinactivelayers.md",
+      "hash": "211d25af8479547683f8f0dc455cc2d07a307ea4a3e8530d859e0db52d5a52bb"
+    },
+    "https://developer.apple.com/documentation/symbols/nssymbolvariablecoloreffect/effectwithiterative": {
+      "etag": "\"17f0-65d55af60319a-df\"",
+      "file_path": "documentation/Symbols/nssymbolvariablecoloreffect/effectwithiterative.md",
+      "hash": "80f9276145089af457f4774e9d38b6cc93dcefebe464eb0f739ceea1400a4f16"
+    },
+    "https://developer.apple.com/documentation/symbols/nssymbolvariablecoloreffect/effectwithnonreversing": {
+      "etag": "\"12d5-65d55af60319a-df\"",
+      "file_path": "documentation/Symbols/nssymbolvariablecoloreffect/effectwithnonreversing.md",
+      "hash": "fa8eebba6bad1d574e506dd8f9082cab500d1145bd5eace23ab88c5247e65576"
+    },
+    "https://developer.apple.com/documentation/symbols/nssymbolvariablecoloreffect/effectwithreversing": {
+      "etag": "\"12b1-65d55af60319a-df\"",
+      "file_path": "documentation/Symbols/nssymbolvariablecoloreffect/effectwithreversing.md",
+      "hash": "05b0de87448a6747ac2712e5695a7ffb50097f1967f4193f055aed17b0c4f824"
+    },
+    "https://developer.apple.com/documentation/symbols/nssymbolwiggleeffect": {
+      "etag": "\"44c1-65d55af5a892c-df\"",
+      "file_path": "documentation/Symbols/nssymbolwiggleeffect.md",
+      "hash": "96a7583ca63998a7fcce823bf1f38c38f392ac9c3d5a6ee8ca29d0fe5cb6dbf0"
+    },
+    "https://developer.apple.com/documentation/symbols/nssymbolwiggleeffect/effect": {
+      "etag": "\"d94-65d55af5f67cc-df\"",
+      "file_path": "documentation/Symbols/nssymbolwiggleeffect/effect.md",
+      "hash": "780419ffc386c094c38962328535009bc07369419d8ec24b931780fbe8eb0948"
+    },
+    "https://developer.apple.com/documentation/symbols/nssymbolwiggleeffect/effectwithbylayer": {
+      "etag": "\"e3a-65d55af5f67cc-df\"",
+      "file_path": "documentation/Symbols/nssymbolwiggleeffect/effectwithbylayer.md",
+      "hash": "a3e12858bbf792820c12533fbd5b9e598ae5e65ebbe6b008f0d3072329269f0a"
+    },
+    "https://developer.apple.com/documentation/symbols/nssymbolwiggleeffect/effectwithwholesymbol": {
+      "etag": "\"e8a-65d55af5f67cc-df\"",
+      "file_path": "documentation/Symbols/nssymbolwiggleeffect/effectwithwholesymbol.md",
+      "hash": "c8539aec308fd99387dc494beb8215301a04efe6fd76595a621fcbf44b018663"
+    },
+    "https://developer.apple.com/documentation/symbols/nssymbolwiggleeffect/wigglebackwardeffect": {
+      "etag": "\"f54-65d55af5f67cc-df\"",
+      "file_path": "documentation/Symbols/nssymbolwiggleeffect/wigglebackwardeffect.md",
+      "hash": "49fe501b94a5ad935b2092ce1cea43bc4da50b8e4a07f0cd6ca272e1d69f6cd7"
+    },
+    "https://developer.apple.com/documentation/symbols/nssymbolwiggleeffect/wiggleclockwiseeffect": {
+      "etag": "\"f18-65d55af5f67cc-df\"",
+      "file_path": "documentation/Symbols/nssymbolwiggleeffect/wiggleclockwiseeffect.md",
+      "hash": "55a14345507824f6508a2a7c42183c5e8fbc322fa685704f7438c47fecde58db"
+    },
+    "https://developer.apple.com/documentation/symbols/nssymbolwiggleeffect/wigglecounterclockwiseeffect": {
+      "etag": "\"f7c-65d55af5f67cc-df\"",
+      "file_path": "documentation/Symbols/nssymbolwiggleeffect/wigglecounterclockwiseeffect.md",
+      "hash": "8a9826fc44fe71fc0a7d453adcf9484b1be817afcf86cc7cae3d6b0fffe9dfa0"
+    },
+    "https://developer.apple.com/documentation/symbols/nssymbolwiggleeffect/wigglecustomangleeffect:": {
+      "etag": "\"10f4-65d55af5f67cc-df\"",
+      "file_path": "documentation/Symbols/nssymbolwiggleeffect/wigglecustomangleeffect_.md",
+      "hash": "c66c3c70ddbbfdff9676cffe316678a3c4aaf7928e948e366513ec683ca7d953"
+    },
+    "https://developer.apple.com/documentation/symbols/nssymbolwiggleeffect/wiggledowneffect": {
+      "etag": "\"ee0-65d55af5f67cc-df\"",
+      "file_path": "documentation/Symbols/nssymbolwiggleeffect/wiggledowneffect.md",
+      "hash": "60efee66dba622c85b52017c0864bd6dd50cb8fc0d2c31d52ed8151e61c01a4e"
+    },
+    "https://developer.apple.com/documentation/symbols/nssymbolwiggleeffect/wiggleforwardeffect": {
+      "etag": "\"f46-65d55af5f67cc-df\"",
+      "file_path": "documentation/Symbols/nssymbolwiggleeffect/wiggleforwardeffect.md",
+      "hash": "306d698bfd089c3cb543ae9dfb9d3488776e61b2dd760f521ed1f1a885025d05"
+    },
+    "https://developer.apple.com/documentation/symbols/nssymbolwiggleeffect/wigglelefteffect": {
+      "etag": "\"ee4-65d55af5f67cc-df\"",
+      "file_path": "documentation/Symbols/nssymbolwiggleeffect/wigglelefteffect.md",
+      "hash": "ecaaa0677117fcfa7acad580d6144463b1bdc2cc8c31bdaa864583a6f98e1a18"
+    },
+    "https://developer.apple.com/documentation/symbols/nssymbolwiggleeffect/wigglerighteffect": {
+      "etag": "\"ef2-65d55af5f67cc-df\"",
+      "file_path": "documentation/Symbols/nssymbolwiggleeffect/wigglerighteffect.md",
+      "hash": "ac8a770d8fbe7eadd5e15da56c7c8c86e586bfef97946ce944e26b231b2dd284"
+    },
+    "https://developer.apple.com/documentation/symbols/nssymbolwiggleeffect/wiggleupeffect": {
+      "etag": "\"ec4-65d55af5f67cc-df\"",
+      "file_path": "documentation/Symbols/nssymbolwiggleeffect/wiggleupeffect.md",
+      "hash": "25a61d4d6e669a9a1d466c8e143c0bb1507658d7bf122c3d6230751ee0c1d56b"
+    },
     "https://developer.apple.com/documentation/symbols/pulsesymboleffect": {
       "etag": "\"5175-65d55af5a892c-df\"",
       "file_path": "documentation/Symbols/pulsesymboleffect.md",
@@ -840,6 +1360,526 @@
       "file_path": "documentation/Symbols/indefinitesymboleffect.md",
       "hash": "b0b0460894d46aacb42b54a3c53c17f74e13497a09adbbc02b727c31f210ce78"
     },
+    "https://developer.apple.com/tutorials/data/documentation/symbols/nssymbolappeareffect.json": {
+      "etag": "\"2f6a-65d55af5a892c-df\"",
+      "file_path": "documentation/Symbols/nssymbolappeareffect.md",
+      "hash": "90223d71933497a7f560809dd90cd412b1cc154339944947eaece63e173f001b"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/symbols/nssymbolappeareffect/appeardowneffect.json": {
+      "etag": "\"1458-65d55af5a892c-df\"",
+      "file_path": "documentation/Symbols/nssymbolappeareffect/appeardowneffect.md",
+      "hash": "d55ee21ff591d54b68b30171efe04a2c705767902da24cac8262637b74f30f7c"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/symbols/nssymbolappeareffect/appearupeffect.json": {
+      "etag": "\"1448-65d55af5a892c-df\"",
+      "file_path": "documentation/Symbols/nssymbolappeareffect/appearupeffect.md",
+      "hash": "0029d12128855e30d113569ef47d877397747e455770e6b2af23b625894c2a6f"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/symbols/nssymbolappeareffect/effect.json": {
+      "etag": "\"140f-65d55af5a892c-df\"",
+      "file_path": "documentation/Symbols/nssymbolappeareffect/effect.md",
+      "hash": "c5c9b00cb85f0dc507a42c9976b2bcdf4a02e0d108fc937e2a456f433d678e02"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/symbols/nssymbolappeareffect/effectwithbylayer.json": {
+      "etag": "\"120a-65d55af5a892c-df\"",
+      "file_path": "documentation/Symbols/nssymbolappeareffect/effectwithbylayer.md",
+      "hash": "e0a2afea3bdf02d27bb0db95c40acecbe200130ef0fad4d7f4dc9af2454a54ef"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/symbols/nssymbolappeareffect/effectwithwholesymbol.json": {
+      "etag": "\"123d-65d55af5a892c-df\"",
+      "file_path": "documentation/Symbols/nssymbolappeareffect/effectwithwholesymbol.md",
+      "hash": "888c4dc8a3146e8fb4448a681d55525ff451bc10e358ac9c8e14e064131bdb55"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/symbols/nssymbolautomaticcontenttransition.json": {
+      "etag": "\"18ca-65d55af5a892c-df\"",
+      "file_path": "documentation/Symbols/nssymbolautomaticcontenttransition.md",
+      "hash": "a417e48009d5ce443e9896b68bcb768ba63fda2d8e7a24b3f7ce13b1fbc9b86f"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/symbols/nssymbolautomaticcontenttransition/transition.json": {
+      "etag": "\"fc3-65d55af5c44ba-df\"",
+      "file_path": "documentation/Symbols/nssymbolautomaticcontenttransition/transition.md",
+      "hash": "a6603ad48e49c5b74a705ab79603a9f2c8f7cdb84b933190b9933aa259377317"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/symbols/nssymbolbounceeffect.json": {
+      "etag": "\"3182-65d55af60319a-df\"",
+      "file_path": "documentation/Symbols/nssymbolbounceeffect.md",
+      "hash": "5f67017c7be063badc15ec582be94e1b8db90145b4cdfae75dde479480b00464"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/symbols/nssymbolbounceeffect/bouncedowneffect.json": {
+      "etag": "\"146c-65d55af5f67cc-df\"",
+      "file_path": "documentation/Symbols/nssymbolbounceeffect/bouncedowneffect.md",
+      "hash": "a3a734bbc7a1c80ec41c31e6cd871c06c1804d749d229ba956dd5618540c0bf3"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/symbols/nssymbolbounceeffect/bounceupeffect.json": {
+      "etag": "\"145c-65d55af5f67cc-df\"",
+      "file_path": "documentation/Symbols/nssymbolbounceeffect/bounceupeffect.md",
+      "hash": "3da9011c57fbeada0fcf45a49ad060ed195770473c1a16b7ae3115797238f242"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/symbols/nssymbolbounceeffect/effect.json": {
+      "etag": "\"1465-65d55af5f67cc-df\"",
+      "file_path": "documentation/Symbols/nssymbolbounceeffect/effect.md",
+      "hash": "849ecfb9f10e3816205576b377edd11154e10ed1704469c207d812e8fe3c85c3"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/symbols/nssymbolbounceeffect/effectwithbylayer.json": {
+      "etag": "\"122f-65d55af5f67cc-df\"",
+      "file_path": "documentation/Symbols/nssymbolbounceeffect/effectwithbylayer.md",
+      "hash": "de23ab8eebac9727ed7a888e43d7616e6db4ff085b7e75b94cc1b37792e0187e"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/symbols/nssymbolbounceeffect/effectwithwholesymbol.json": {
+      "etag": "\"124f-65d55af5f67cc-df\"",
+      "file_path": "documentation/Symbols/nssymbolbounceeffect/effectwithwholesymbol.md",
+      "hash": "734fbc44e6ffb57526872121e5acf3e5f4e0721c9ad45c113580332d47c12c30"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/symbols/nssymbolbreatheeffect.json": {
+      "etag": "\"2ff6-65d55af5dd9d0-df\"",
+      "file_path": "documentation/Symbols/nssymbolbreatheeffect.md",
+      "hash": "d0b2aa502eef684b0df50878aae8e08cdd0cc8d4f5b32207cc244e1245a21bc2"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/symbols/nssymbolbreatheeffect/breatheplaineffect.json": {
+      "etag": "\"f27-65d55af5c44ba-df\"",
+      "file_path": "documentation/Symbols/nssymbolbreatheeffect/breatheplaineffect.md",
+      "hash": "f47b82edeb8ba194853d5a91e7aa85efaecd6c872cc19d5ab6659cdd9751ee59"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/symbols/nssymbolbreatheeffect/breathepulseeffect.json": {
+      "etag": "\"f05-65d55af5c44ba-df\"",
+      "file_path": "documentation/Symbols/nssymbolbreatheeffect/breathepulseeffect.md",
+      "hash": "36b81039d733c7b7b051210cbba2b7cceb44ecf8ba03199ff941c9d394fe683c"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/symbols/nssymbolbreatheeffect/effect.json": {
+      "etag": "\"dd7-65d55af5c44ba-df\"",
+      "file_path": "documentation/Symbols/nssymbolbreatheeffect/effect.md",
+      "hash": "4a5f351830b6a5f0659ceef00bb58d991aa2c85c737d057090ddb1ee4a4b9298"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/symbols/nssymbolbreatheeffect/effectwithbylayer.json": {
+      "etag": "\"e7b-65d55af5c44ba-df\"",
+      "file_path": "documentation/Symbols/nssymbolbreatheeffect/effectwithbylayer.md",
+      "hash": "164ff0fdb8ee40ed7bf5e9c96d823341a5b68c92569c42b84a4a7a39febd6eed"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/symbols/nssymbolbreatheeffect/effectwithwholesymbol.json": {
+      "etag": "\"ecb-65d55af5c44ba-df\"",
+      "file_path": "documentation/Symbols/nssymbolbreatheeffect/effectwithwholesymbol.md",
+      "hash": "239932e53e571355687081a97f7e25cf10ecd57bff34841deac3e704ae060fad"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/symbols/nssymbolcontenttransition.json": {
+      "etag": "\"2288-65d55af5dd9d0-df\"",
+      "file_path": "documentation/Symbols/nssymbolcontenttransition.md",
+      "hash": "1d6c11ad0fe16584d4a2076dcd139af1fe322b5714a6b2d28b696d5a928bf14f"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/symbols/nssymboldisappeareffect.json": {
+      "etag": "\"2feb-65d55af5c44ba-df\"",
+      "file_path": "documentation/Symbols/nssymboldisappeareffect.md",
+      "hash": "05c0be6a15e4b1204aeaa9f03fda080804a3f845f50bc431cd9e50613927b48e"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/symbols/nssymboldisappeareffect/disappeardowneffect.json": {
+      "etag": "\"14d0-65d55af5a892c-df\"",
+      "file_path": "documentation/Symbols/nssymboldisappeareffect/disappeardowneffect.md",
+      "hash": "09151b5d473f0931992259e9889817997397a1c719a7347a02056a3ab6196859"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/symbols/nssymboldisappeareffect/disappearupeffect.json": {
+      "etag": "\"14c0-65d55af5a892c-df\"",
+      "file_path": "documentation/Symbols/nssymboldisappeareffect/disappearupeffect.md",
+      "hash": "d66087441e84172ecbce83add1dcec7645adcd88586efa1885974485300532ff"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/symbols/nssymboldisappeareffect/effect.json": {
+      "etag": "\"1477-65d55af5a892c-df\"",
+      "file_path": "documentation/Symbols/nssymboldisappeareffect/effect.md",
+      "hash": "bf40d90a05d2a6d88fb6558293715973ed8eccd13762f965019b8017d1ec131e"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/symbols/nssymboldisappeareffect/effectwithbylayer.json": {
+      "etag": "\"125c-65d55af5a892c-df\"",
+      "file_path": "documentation/Symbols/nssymboldisappeareffect/effectwithbylayer.md",
+      "hash": "9f82537f1012ebeec34b36b9d7158d3def7d5dccc596d96b999f93dd72d538d7"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/symbols/nssymboldisappeareffect/effectwithwholesymbol.json": {
+      "etag": "\"127c-65d55af5a892c-df\"",
+      "file_path": "documentation/Symbols/nssymboldisappeareffect/effectwithwholesymbol.md",
+      "hash": "8ba162e132733e9011f22f46c8bfc14a141ecfae53a4f95ea7264a62e8f93c46"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/symbols/nssymboldrawoffeffect.json": {
+      "etag": "\"2124-65d55af5dd9d0-df\"",
+      "file_path": "documentation/Symbols/nssymboldrawoffeffect.md",
+      "hash": "5d6ac9dfc56f22f3e2d45c022a4b0dc65a21a7253e755ad2ca230ae473d68db0"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/symbols/nssymboldrawoffeffect/effect.json": {
+      "etag": "\"da6-65d55af5f67cc-df\"",
+      "file_path": "documentation/Symbols/nssymboldrawoffeffect/effect.md",
+      "hash": "7a246ad21bfd6da1b88dabcc115030b2b8baeb589729b8f11711b4b9dc183741"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/symbols/nssymboldrawoffeffect/effectwithbylayer.json": {
+      "etag": "\"eee-65d55af5f67cc-df\"",
+      "file_path": "documentation/Symbols/nssymboldrawoffeffect/effectwithbylayer.md",
+      "hash": "9005283ecfa24962f0aea7953fa99cd7b84bfa4389475ff052499b95b5ddfd6b"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/symbols/nssymboldrawoffeffect/effectwithindividually.json": {
+      "etag": "\"ff4-65d55af5f67cc-df\"",
+      "file_path": "documentation/Symbols/nssymboldrawoffeffect/effectwithindividually.md",
+      "hash": "61b3d16f9f1145aed060438d3d8c196d1e534441f6db636dbc1ba62d9ac769d1"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/symbols/nssymboldrawoffeffect/effectwithnonreversed.json": {
+      "etag": "\"eaa-65d55af5f67cc-df\"",
+      "file_path": "documentation/Symbols/nssymboldrawoffeffect/effectwithnonreversed.md",
+      "hash": "db42011b85466da2766f9e144f5c02411898958469e350ac9c69c7e114d8f113"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/symbols/nssymboldrawoffeffect/effectwithreversed.json": {
+      "etag": "\"e86-65d55af5f67cc-df\"",
+      "file_path": "documentation/Symbols/nssymboldrawoffeffect/effectwithreversed.md",
+      "hash": "08d77482e82e93c385c700ee20646fcabbb6cf0ade318d2acabfb2be41db878a"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/symbols/nssymboldrawoffeffect/effectwithwholesymbol.json": {
+      "etag": "\"f26-65d55af5f67cc-df\"",
+      "file_path": "documentation/Symbols/nssymboldrawoffeffect/effectwithwholesymbol.md",
+      "hash": "6f6aead6526ef6ddf2f9b45632dd47886d2d15df22a2c3316f0d9f0173950c86"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/symbols/nssymboldrawoneffect.json": {
+      "etag": "\"1bb9-65d55af5c44ba-df\"",
+      "file_path": "documentation/Symbols/nssymboldrawoneffect.md",
+      "hash": "b86f4dc58dc72a446202b1fef168c1933aa64f43575400841b948ab0968154c4"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/symbols/nssymboldrawoneffect/effect.json": {
+      "etag": "\"d97-65d55af5f67cc-df\"",
+      "file_path": "documentation/Symbols/nssymboldrawoneffect/effect.md",
+      "hash": "0956523e61cde4bc5ead80e1d3ed586e403bfb72d99a500603c64af0d4ac2b01"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/symbols/nssymboldrawoneffect/effectwithbylayer.json": {
+      "etag": "\"ee1-65d55af5dd9d0-df\"",
+      "file_path": "documentation/Symbols/nssymboldrawoneffect/effectwithbylayer.md",
+      "hash": "c86cadd523063769235882fcf8f1d280512264ad91207fb16122a8e06562ac43"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/symbols/nssymboldrawoneffect/effectwithindividually.json": {
+      "etag": "\"fe7-65d55af5f67cc-df\"",
+      "file_path": "documentation/Symbols/nssymboldrawoneffect/effectwithindividually.md",
+      "hash": "2d5bbc32d40520d68fb6cb5c770e48a19d428d57d36ed42f2e48f9f90ddd90a7"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/symbols/nssymboldrawoneffect/effectwithwholesymbol.json": {
+      "etag": "\"f19-65d55af5f67cc-df\"",
+      "file_path": "documentation/Symbols/nssymboldrawoneffect/effectwithwholesymbol.md",
+      "hash": "0fa662557c4654cc0deb33c83cb6ff69dc22e2abc937d0a491dcd96ed2d5f805"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/symbols/nssymboleffect.json": {
+      "etag": "\"3473-65d55af5dd9d0-df\"",
+      "file_path": "documentation/Symbols/nssymboleffect.md",
+      "hash": "03c52c2e1c01c66e018f1fb2c67d33a59fb109d162e90a3c6c85a92adfef833a"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/symbols/nssymboleffectoptions.json": {
+      "etag": "\"3a8a-65d55af5f67cc-df\"",
+      "file_path": "documentation/Symbols/nssymboleffectoptions.md",
+      "hash": "eee47b30db910e078f3e6ca33b64519a2f125054db2643634cee0f0bef030ab6"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/symbols/nssymboleffectoptions/options.json": {
+      "etag": "\"e51-65d55af5a892c-df\"",
+      "file_path": "documentation/Symbols/nssymboleffectoptions/options.md",
+      "hash": "b47f07fb711ba896a5a4026eba65b0c57c5726aaf7c065a39730e4ce17301eaf"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/symbols/nssymboleffectoptions/optionswithnonrepeating-c.method.json": {
+      "etag": "\"1e29-65d55af5a892c-df\"",
+      "file_path": "documentation/Symbols/nssymboleffectoptions/optionswithnonrepeating-c.method.md",
+      "hash": "29f944526586fd61c6bc22aed2d883cec3502b3b6e6b6278c538465f286854a3"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/symbols/nssymboleffectoptions/optionswithnonrepeating-c.type.method.json": {
+      "etag": "\"1e36-65d55af5a892c-df\"",
+      "file_path": "documentation/Symbols/nssymboleffectoptions/optionswithnonrepeating-c.type.method.md",
+      "hash": "c9566bd139013495257530ddf0a797be2d8f96d4cb7518f333a2a4130e812b30"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/symbols/nssymboleffectoptions/optionswithrepeatbehavior:-c.method.json": {
+      "etag": "\"13e4-65d55af5a892c-df\"",
+      "file_path": "documentation/Symbols/nssymboleffectoptions/optionswithrepeatbehavior_-c.method.md",
+      "hash": "cd4dc75abb4ec1f7edafb3062a7d0e77ef1cb534c28c3a2f53cb906194fb2843"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/symbols/nssymboleffectoptions/optionswithrepeatbehavior:-c.type.method.json": {
+      "etag": "\"13ef-65d55af5a892c-df\"",
+      "file_path": "documentation/Symbols/nssymboleffectoptions/optionswithrepeatbehavior_-c.type.method.md",
+      "hash": "abff2b3150a8f4f622e5627e688b166c78c6434610821b2fd0ca275f1baa434d"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/symbols/nssymboleffectoptions/optionswithrepeatcount:-c.method.json": {
+      "etag": "\"23b0-65d55af5a892c-df\"",
+      "file_path": "documentation/Symbols/nssymboleffectoptions/optionswithrepeatcount_-c.method.md",
+      "hash": "56da9ccdd2cae6a6dd649411310c545051ec4a9301ecf37a1a1a154858a9371a"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/symbols/nssymboleffectoptions/optionswithrepeatcount:-c.type.method.json": {
+      "etag": "\"23b5-65d55af5a892c-df\"",
+      "file_path": "documentation/Symbols/nssymboleffectoptions/optionswithrepeatcount_-c.type.method.md",
+      "hash": "a82e602800c0e64f84ede4290e11c98323280d2cfed831cd6de6b425452bc328"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/symbols/nssymboleffectoptions/optionswithrepeating-c.method.json": {
+      "etag": "\"1ec3-65d55af5a892c-df\"",
+      "file_path": "documentation/Symbols/nssymboleffectoptions/optionswithrepeating-c.method.md",
+      "hash": "c95d0e308ee788a7e11af157635f00c1d6a82a33d18e2d5a124453b4d95554da"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/symbols/nssymboleffectoptions/optionswithrepeating-c.type.method.json": {
+      "etag": "\"1ed0-65d55af5a892c-df\"",
+      "file_path": "documentation/Symbols/nssymboleffectoptions/optionswithrepeating-c.type.method.md",
+      "hash": "f656c3df39bd2695f9ee5b2e202aa73406717b637dd41412322114860d873734"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/symbols/nssymboleffectoptions/optionswithspeed:-c.method.json": {
+      "etag": "\"1475-65d55af5a892c-df\"",
+      "file_path": "documentation/Symbols/nssymboleffectoptions/optionswithspeed_-c.method.md",
+      "hash": "180ed2c6fac4e551e0ba9b69e13a6b26be791b09f25535918c4a58d8273605ad"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/symbols/nssymboleffectoptions/optionswithspeed:-c.type.method.json": {
+      "etag": "\"147a-65d55af5a892c-df\"",
+      "file_path": "documentation/Symbols/nssymboleffectoptions/optionswithspeed_-c.type.method.md",
+      "hash": "4abca3f666dbc1b939f2b1ef75a3d57a3dfb61914394380ccf47456759a15e4a"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/symbols/nssymboleffectoptionsrepeatbehavior.json": {
+      "etag": "\"2e0c-65d55af5dd9d0-df\"",
+      "file_path": "documentation/Symbols/nssymboleffectoptionsrepeatbehavior.md",
+      "hash": "258029ebaf209e281e60d4a3627be2d059ea57e1ef84e58375c70a45d266812f"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/symbols/nssymboleffectoptionsrepeatbehavior/behaviorcontinuous.json": {
+      "etag": "\"1397-65d55af5f67cc-df\"",
+      "file_path": "documentation/Symbols/nssymboleffectoptionsrepeatbehavior/behaviorcontinuous.md",
+      "hash": "fef45cba4833a8bd99e09e22b703b4da33e36d01d50130fc0dfbda7fd8aa15c9"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/symbols/nssymboleffectoptionsrepeatbehavior/behaviorperiodic.json": {
+      "etag": "\"11b4-65d55af5f67cc-df\"",
+      "file_path": "documentation/Symbols/nssymboleffectoptionsrepeatbehavior/behaviorperiodic.md",
+      "hash": "3214fffbd3e8fdddc68c4e1bf95f64294078d8652d9f766b7af46391cb126ff0"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/symbols/nssymboleffectoptionsrepeatbehavior/behaviorperiodicwithcount:.json": {
+      "etag": "\"1791-65d55af5f67cc-df\"",
+      "file_path": "documentation/Symbols/nssymboleffectoptionsrepeatbehavior/behaviorperiodicwithcount_.md",
+      "hash": "7bf6299fa52144cb0e4699308b341403382aa814a2fa2c03b26552ccdf0f04b7"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/symbols/nssymboleffectoptionsrepeatbehavior/behaviorperiodicwithcount:delay:.json": {
+      "etag": "\"199b-65d55af5f67cc-df\"",
+      "file_path": "documentation/Symbols/nssymboleffectoptionsrepeatbehavior/behaviorperiodicwithcount_delay_.md",
+      "hash": "f9b1fb789f1f2aa7f3f6efa99ebc8c6f50f1ff54beb419f2e158569ecc0ad4bd"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/symbols/nssymboleffectoptionsrepeatbehavior/behaviorperiodicwithdelay:.json": {
+      "etag": "\"1403-65d55af5f67cc-df\"",
+      "file_path": "documentation/Symbols/nssymboleffectoptionsrepeatbehavior/behaviorperiodicwithdelay_.md",
+      "hash": "bb8e89ebe1d8efcd053f790e8f17412d0796b6844fe9dbb4407fcac8ec4619f0"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/symbols/nssymbolmagicreplacecontenttransition.json": {
+      "etag": "\"1707-65d55af5dd9d0-df\"",
+      "file_path": "documentation/Symbols/nssymbolmagicreplacecontenttransition.md",
+      "hash": "043ca4649d1d455771894dd63360519196445e0027fbd020d17636059d06b854"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/symbols/nssymbolpulseeffect.json": {
+      "etag": "\"2d69-65d55af5dd9d0-df\"",
+      "file_path": "documentation/Symbols/nssymbolpulseeffect.md",
+      "hash": "635db3a10572f9bcaa68b35cf809be3c5c0c089fe100e327f6dc7cac04d5aefc"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/symbols/nssymbolpulseeffect/effect.json": {
+      "etag": "\"e65-65d55af5a892c-df\"",
+      "file_path": "documentation/Symbols/nssymbolpulseeffect/effect.md",
+      "hash": "4c2bc4881c7687491398d27687df006d05647b20a4c74cf7c4425c992e68aca9"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/symbols/nssymbolpulseeffect/effectwithbylayer.json": {
+      "etag": "\"1288-65d55af5a892c-df\"",
+      "file_path": "documentation/Symbols/nssymbolpulseeffect/effectwithbylayer.md",
+      "hash": "28a1125ce4cb43b9c381e0da3646f1db3f08a69a26a69e4b75e31bbbed79a9ac"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/symbols/nssymbolpulseeffect/effectwithwholesymbol.json": {
+      "etag": "\"1286-65d55af5a892c-df\"",
+      "file_path": "documentation/Symbols/nssymbolpulseeffect/effectwithwholesymbol.md",
+      "hash": "7d32ecc5b5347c7644f99b9491d3ce68e0fe9af9d562041bfb42972b51b3c831"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/symbols/nssymbolreplacecontenttransition.json": {
+      "etag": "\"2e90-65d55af5dd9d0-df\"",
+      "file_path": "documentation/Symbols/nssymbolreplacecontenttransition.md",
+      "hash": "f6509d4baa5670828c656b734c676d749f83ab77add78354a3987bca99b3605b"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/symbols/nssymbolreplacecontenttransition/magictransitionwithfallback:.json": {
+      "etag": "\"1408-65d55af5c44ba-df\"",
+      "file_path": "documentation/Symbols/nssymbolreplacecontenttransition/magictransitionwithfallback_.md",
+      "hash": "9128a259841ebb60fd1a670e76bf34c89f98fc0d03391cc61c6be1ef02b739cb"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/symbols/nssymbolreplacecontenttransition/replacedownuptransition.json": {
+      "etag": "\"19ef-65d55af5c44ba-df\"",
+      "file_path": "documentation/Symbols/nssymbolreplacecontenttransition/replacedownuptransition.md",
+      "hash": "9746fc4e7dc55818a0f9c31f367e282eecafd51dd60c3b9500973eae2da3a58d"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/symbols/nssymbolreplacecontenttransition/replaceoffuptransition.json": {
+      "etag": "\"19e3-65d55af5c44ba-df\"",
+      "file_path": "documentation/Symbols/nssymbolreplacecontenttransition/replaceoffuptransition.md",
+      "hash": "3c080f04d77cc908de1c6bd3fad0588c3d72ae84d59bf32a3a1b8ea26ec0a99a"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/symbols/nssymbolreplacecontenttransition/replaceupuptransition.json": {
+      "etag": "\"19dd-65d55af5c44ba-df\"",
+      "file_path": "documentation/Symbols/nssymbolreplacecontenttransition/replaceupuptransition.md",
+      "hash": "860df0bd2f8b923c9a14247733e83f0c2a95a05e2309fa2ee516cd8c41cfae73"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/symbols/nssymbolreplacecontenttransition/transition.json": {
+      "etag": "\"187f-65d55af5c44ba-df\"",
+      "file_path": "documentation/Symbols/nssymbolreplacecontenttransition/transition.md",
+      "hash": "6d331109b2d1fc48ea5387a9fcb2cd0f56839ea2b0f27526638183fa3fe772d9"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/symbols/nssymbolreplacecontenttransition/transitionwithbylayer.json": {
+      "etag": "\"130c-65d55af5c44ba-df\"",
+      "file_path": "documentation/Symbols/nssymbolreplacecontenttransition/transitionwithbylayer.md",
+      "hash": "7e08ec610811294c9d72b80e1eecbcef373989f78c4ea344228a99462841a3bc"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/symbols/nssymbolreplacecontenttransition/transitionwithwholesymbol.json": {
+      "etag": "\"132c-65d55af5c44ba-df\"",
+      "file_path": "documentation/Symbols/nssymbolreplacecontenttransition/transitionwithwholesymbol.md",
+      "hash": "5cf2cee2fb8ef784c8b02d122f3abcd3ef1cb128f95353c7371bdc02a45d960f"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/symbols/nssymbolrotateeffect.json": {
+      "etag": "\"2fea-65d55af5f67cc-df\"",
+      "file_path": "documentation/Symbols/nssymbolrotateeffect.md",
+      "hash": "b06f67dc43aa840ff8022e35a716b4a850f3b423e063758f0b5204e4180d78f7"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/symbols/nssymbolrotateeffect/effect.json": {
+      "etag": "\"dc8-65d55af5a892c-df\"",
+      "file_path": "documentation/Symbols/nssymbolrotateeffect/effect.md",
+      "hash": "0ef3f12c31e8bf4122c0e858275a2adc53c4804f3a6465217fa128a52984df57"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/symbols/nssymbolrotateeffect/effectwithbylayer.json": {
+      "etag": "\"e6e-65d55af5a892c-df\"",
+      "file_path": "documentation/Symbols/nssymbolrotateeffect/effectwithbylayer.md",
+      "hash": "b30c1b679da016a9e96cf433f9c42383eb3d85353841d92682ba9b172deb1946"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/symbols/nssymbolrotateeffect/effectwithwholesymbol.json": {
+      "etag": "\"ebe-65d55af5a892c-df\"",
+      "file_path": "documentation/Symbols/nssymbolrotateeffect/effectwithwholesymbol.md",
+      "hash": "17a1308a449a51b79a47a84429c2be4b7c8cbfc149a55a2b7fb289452ee5d927"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/symbols/nssymbolrotateeffect/rotateclockwiseeffect.json": {
+      "etag": "\"e9a-65d55af5a892c-df\"",
+      "file_path": "documentation/Symbols/nssymbolrotateeffect/rotateclockwiseeffect.md",
+      "hash": "b38d7b9bb0e5716d34231b41228e261fa22d1ac34173ad66cd527b37988a05fe"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/symbols/nssymbolrotateeffect/rotatecounterclockwiseeffect.json": {
+      "etag": "\"efe-65d55af5a892c-df\"",
+      "file_path": "documentation/Symbols/nssymbolrotateeffect/rotatecounterclockwiseeffect.md",
+      "hash": "7cc59aa59db90c4c1d939667ff54e735ca717a219f1d817e58e2a02d79e4c591"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/symbols/nssymbolscaleeffect.json": {
+      "etag": "\"2ed4-65d55af5dd9d0-df\"",
+      "file_path": "documentation/Symbols/nssymbolscaleeffect.md",
+      "hash": "1e8457afb83199721bf11d4ae8eca1bf55cddf23b1b04f8f4af2eb018085a691"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/symbols/nssymbolscaleeffect/effect.json": {
+      "etag": "\"13b6-65d55af5c44ba-df\"",
+      "file_path": "documentation/Symbols/nssymbolscaleeffect/effect.md",
+      "hash": "6e76c16d2f7ecd4a1af773cbe60c6003b46c4760674927aec456f58331a3ec74"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/symbols/nssymbolscaleeffect/effectwithbylayer.json": {
+      "etag": "\"11ef-65d55af5c44ba-df\"",
+      "file_path": "documentation/Symbols/nssymbolscaleeffect/effectwithbylayer.md",
+      "hash": "e833a9d2bbea194cf25c348b4398f3585c20b6350315467f993d3ac38be5888a"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/symbols/nssymbolscaleeffect/effectwithwholesymbol.json": {
+      "etag": "\"120f-65d55af5c44ba-df\"",
+      "file_path": "documentation/Symbols/nssymbolscaleeffect/effectwithwholesymbol.md",
+      "hash": "25e6acfffb8814e327fee2ee995cabbde33fb31fcec568449c22e2f8cc5f85d7"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/symbols/nssymbolscaleeffect/scaledowneffect.json": {
+      "etag": "\"13d9-65d55af5c44ba-df\"",
+      "file_path": "documentation/Symbols/nssymbolscaleeffect/scaledowneffect.md",
+      "hash": "786af44f4b96841f9032a2ca75fd9a8c5f3236d04beff3f8de54cc884c9ab848"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/symbols/nssymbolscaleeffect/scaleupeffect.json": {
+      "etag": "\"13c9-65d55af5c44ba-df\"",
+      "file_path": "documentation/Symbols/nssymbolscaleeffect/scaleupeffect.md",
+      "hash": "aa0bbd08828dffbd9ab80b4cc30dc22a4162398006218a1a76d563d855bae361"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/symbols/nssymbolvariablecoloreffect.json": {
+      "etag": "\"3bbf-65d55af5f67cc-df\"",
+      "file_path": "documentation/Symbols/nssymbolvariablecoloreffect.md",
+      "hash": "682c0e9c57fa494b64dbf319e4f061ddf1e78bb50f01483f4483d794faf96626"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/symbols/nssymbolvariablecoloreffect/effect.json": {
+      "etag": "\"f57-65d55af60319a-df\"",
+      "file_path": "documentation/Symbols/nssymbolvariablecoloreffect/effect.md",
+      "hash": "69154abc5604d753597c180e76bf5e355fe9f4b0388e2d2bc28c345457de424e"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/symbols/nssymbolvariablecoloreffect/effectwithcumulative.json": {
+      "etag": "\"17de-65d55af60319a-df\"",
+      "file_path": "documentation/Symbols/nssymbolvariablecoloreffect/effectwithcumulative.md",
+      "hash": "7e67b7596ec72882816e002aa09955040b4f02d7d432e5421fc0035ae02fc1b8"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/symbols/nssymbolvariablecoloreffect/effectwithdiminactivelayers.json": {
+      "etag": "\"1441-65d55af60319a-df\"",
+      "file_path": "documentation/Symbols/nssymbolvariablecoloreffect/effectwithdiminactivelayers.md",
+      "hash": "6a4e8a3c2ae8fb75cfa11d2f9773a18789600664999e9aa492078dd98130c90e"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/symbols/nssymbolvariablecoloreffect/effectwithhideinactivelayers.json": {
+      "etag": "\"146e-65d55af60319a-df\"",
+      "file_path": "documentation/Symbols/nssymbolvariablecoloreffect/effectwithhideinactivelayers.md",
+      "hash": "211d25af8479547683f8f0dc455cc2d07a307ea4a3e8530d859e0db52d5a52bb"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/symbols/nssymbolvariablecoloreffect/effectwithiterative.json": {
+      "etag": "\"17f0-65d55af60319a-df\"",
+      "file_path": "documentation/Symbols/nssymbolvariablecoloreffect/effectwithiterative.md",
+      "hash": "80f9276145089af457f4774e9d38b6cc93dcefebe464eb0f739ceea1400a4f16"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/symbols/nssymbolvariablecoloreffect/effectwithnonreversing.json": {
+      "etag": "\"12d5-65d55af60319a-df\"",
+      "file_path": "documentation/Symbols/nssymbolvariablecoloreffect/effectwithnonreversing.md",
+      "hash": "fa8eebba6bad1d574e506dd8f9082cab500d1145bd5eace23ab88c5247e65576"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/symbols/nssymbolvariablecoloreffect/effectwithreversing.json": {
+      "etag": "\"12b1-65d55af60319a-df\"",
+      "file_path": "documentation/Symbols/nssymbolvariablecoloreffect/effectwithreversing.md",
+      "hash": "05b0de87448a6747ac2712e5695a7ffb50097f1967f4193f055aed17b0c4f824"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/symbols/nssymbolwiggleeffect.json": {
+      "etag": "\"44c1-65d55af5a892c-df\"",
+      "file_path": "documentation/Symbols/nssymbolwiggleeffect.md",
+      "hash": "96a7583ca63998a7fcce823bf1f38c38f392ac9c3d5a6ee8ca29d0fe5cb6dbf0"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/symbols/nssymbolwiggleeffect/effect.json": {
+      "etag": "\"d94-65d55af5f67cc-df\"",
+      "file_path": "documentation/Symbols/nssymbolwiggleeffect/effect.md",
+      "hash": "780419ffc386c094c38962328535009bc07369419d8ec24b931780fbe8eb0948"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/symbols/nssymbolwiggleeffect/effectwithbylayer.json": {
+      "etag": "\"e3a-65d55af5f67cc-df\"",
+      "file_path": "documentation/Symbols/nssymbolwiggleeffect/effectwithbylayer.md",
+      "hash": "a3e12858bbf792820c12533fbd5b9e598ae5e65ebbe6b008f0d3072329269f0a"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/symbols/nssymbolwiggleeffect/effectwithwholesymbol.json": {
+      "etag": "\"e8a-65d55af5f67cc-df\"",
+      "file_path": "documentation/Symbols/nssymbolwiggleeffect/effectwithwholesymbol.md",
+      "hash": "c8539aec308fd99387dc494beb8215301a04efe6fd76595a621fcbf44b018663"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/symbols/nssymbolwiggleeffect/wigglebackwardeffect.json": {
+      "etag": "\"f54-65d55af5f67cc-df\"",
+      "file_path": "documentation/Symbols/nssymbolwiggleeffect/wigglebackwardeffect.md",
+      "hash": "49fe501b94a5ad935b2092ce1cea43bc4da50b8e4a07f0cd6ca272e1d69f6cd7"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/symbols/nssymbolwiggleeffect/wiggleclockwiseeffect.json": {
+      "etag": "\"f18-65d55af5f67cc-df\"",
+      "file_path": "documentation/Symbols/nssymbolwiggleeffect/wiggleclockwiseeffect.md",
+      "hash": "55a14345507824f6508a2a7c42183c5e8fbc322fa685704f7438c47fecde58db"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/symbols/nssymbolwiggleeffect/wigglecounterclockwiseeffect.json": {
+      "etag": "\"f7c-65d55af5f67cc-df\"",
+      "file_path": "documentation/Symbols/nssymbolwiggleeffect/wigglecounterclockwiseeffect.md",
+      "hash": "8a9826fc44fe71fc0a7d453adcf9484b1be817afcf86cc7cae3d6b0fffe9dfa0"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/symbols/nssymbolwiggleeffect/wigglecustomangleeffect:.json": {
+      "etag": "\"10f4-65d55af5f67cc-df\"",
+      "file_path": "documentation/Symbols/nssymbolwiggleeffect/wigglecustomangleeffect_.md",
+      "hash": "c66c3c70ddbbfdff9676cffe316678a3c4aaf7928e948e366513ec683ca7d953"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/symbols/nssymbolwiggleeffect/wiggledowneffect.json": {
+      "etag": "\"ee0-65d55af5f67cc-df\"",
+      "file_path": "documentation/Symbols/nssymbolwiggleeffect/wiggledowneffect.md",
+      "hash": "60efee66dba622c85b52017c0864bd6dd50cb8fc0d2c31d52ed8151e61c01a4e"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/symbols/nssymbolwiggleeffect/wiggleforwardeffect.json": {
+      "etag": "\"f46-65d55af5f67cc-df\"",
+      "file_path": "documentation/Symbols/nssymbolwiggleeffect/wiggleforwardeffect.md",
+      "hash": "306d698bfd089c3cb543ae9dfb9d3488776e61b2dd760f521ed1f1a885025d05"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/symbols/nssymbolwiggleeffect/wigglelefteffect.json": {
+      "etag": "\"ee4-65d55af5f67cc-df\"",
+      "file_path": "documentation/Symbols/nssymbolwiggleeffect/wigglelefteffect.md",
+      "hash": "ecaaa0677117fcfa7acad580d6144463b1bdc2cc8c31bdaa864583a6f98e1a18"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/symbols/nssymbolwiggleeffect/wigglerighteffect.json": {
+      "etag": "\"ef2-65d55af5f67cc-df\"",
+      "file_path": "documentation/Symbols/nssymbolwiggleeffect/wigglerighteffect.md",
+      "hash": "ac8a770d8fbe7eadd5e15da56c7c8c86e586bfef97946ce944e26b231b2dd284"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/symbols/nssymbolwiggleeffect/wiggleupeffect.json": {
+      "etag": "\"ec4-65d55af5f67cc-df\"",
+      "file_path": "documentation/Symbols/nssymbolwiggleeffect/wiggleupeffect.md",
+      "hash": "25a61d4d6e669a9a1d466c8e143c0bb1507658d7bf122c3d6230751ee0c1d56b"
+    },
     "https://developer.apple.com/tutorials/data/documentation/symbols/pulsesymboleffect.json": {
       "etag": "\"5175-65d55af5a892c-df\"",
       "file_path": "documentation/Symbols/pulsesymboleffect.md",
@@ -1263,8 +2303,8 @@
   },
   "metadata": {
     "render": {
-      "version": 1
+      "version": 2
     },
-    "total_pages": 252
+    "total_pages": 460
   }
 }

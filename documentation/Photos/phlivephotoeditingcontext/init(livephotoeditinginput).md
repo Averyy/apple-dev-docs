@@ -32,7 +32,7 @@ A new Live Photo editing context, or `nil` if the provided content editing input
 
 In an app using the Photos framework, you obtain a [`PHContentEditingInput`](../phcontenteditinginput.md) object by calling [`requestContentEditingInput(with:completionHandler:)`](../phasset/requestcontenteditinginput%28with,completionhandler%29.md) method of a [`PHAsset`](../phasset.md) object that you’ve previously fetched.
 
-In a photo editing extension that runs within the Photos app, your extension’s main view controller (which adopts the [`PHContentEditingController`](https://developer.apple.com/documentation/photosui/phcontenteditingcontroller) protocol) receives a [`PHContentEditingInput`](../phcontenteditinginput.md) object when the user chooses to edit a Live Photo with your extension.
+In a photo editing extension that runs within the Photos app, your extension’s main view controller (which adopts the [`PHContentEditingController`](../../PhotosUI/phcontenteditingcontroller.md) protocol) receives a [`PHContentEditingInput`](../phcontenteditinginput.md) object when the user chooses to edit a Live Photo with your extension.
 
 You can create a Live Photo editing context only from [`PHContentEditingInput`](../phcontenteditinginput.md) object that represents a Live Photo. Use the [`livePhoto`](../phcontenteditinginput/livephoto.md) property of the editing input to verify that it has live Photo content.
 

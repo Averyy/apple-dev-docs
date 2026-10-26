@@ -42,6 +42,8 @@ Formats that don’t support high photo quality produce the same image quality r
   The maximum photo dimension this format supports.
 - [var isHighestPhotoQualitySupported: Bool](./ishighestphotoqualitysupported.md)
   A Boolean value that indicates whether this format supports the highest photo quality that the platform delivers.
+- [supportedMaxPhotoDimensions](../../avcapturedeviceformat/supportedmaxphotodimensions.md)
+  The maximum photo dimension this format supports.
 
 
 ---

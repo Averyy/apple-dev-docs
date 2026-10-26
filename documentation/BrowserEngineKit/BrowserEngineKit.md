@@ -121,8 +121,16 @@ Support for alternative browser engines varies by geographic region:
   Report download progress to the system to keep your networking extension active.
 - [class BEDownloadMonitor](./bedownloadmonitor-9bwls.md)
   An object that reports the status of web downloads to the system.
+- [BEDownloadMonitor](./bedownloadmonitor-9y4hu.md)
+  An object that reports the status of web downloads to the system.
 ### Enumerations
 - [enum BEAccessibilityOrientation](./beaccessibilityorientation.md)
+- [BEWebContentFilterPermissionDecision](./bewebcontentfilter/permissiondecision.md)
+### Macros
+- [BROWSERENGINEKIT_HAS_LIBXPC](./browserenginekit_has_libxpc.md)
+- [BROWSERENGINEKIT_HAS_UIINTERACTION](./browserenginekit_has_uiinteraction.md)
+- [BROWSERENGINEKIT_HAS_UIKIT](./browserenginekit_has_uikit.md)
+- [BROWSERENGINEKIT_HAS_UIVIEW](./browserenginekit_has_uiview.md)
 
 
 ---

@@ -49,6 +49,8 @@ You can override this method to create the store to save to or load from (invoke
   The managed object model of the document.
 - [func persistentStoreType(forFileType: String) -> String](./persistentstoretype%28forfiletype%29.md)
   Returns the type of persistent store associated with the specified file type.
+- [- configurePersistentStoreCoordinatorForURL:ofType:error:](./configurepersistentstorecoordinatorforurl_oftype_error_.md)
+  Configures the receiver’s persistent store coordinator for a given URL and document type.
 
 
 ---

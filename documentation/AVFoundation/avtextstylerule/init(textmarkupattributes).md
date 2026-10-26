@@ -43,6 +43,10 @@ This method sets the [`textSelector`](./textselector.md) property of the style o
   Creates an array of text style rule objects from the specified property-list object.
 - [init?(textMarkupAttributes: [String : Any], textSelector: String?)](./init%28textmarkupattributes,textselector%29.md)
   Creates a text style rule object with the specified style attributes and text range information.
+- [+ textStyleRuleWithTextMarkupAttributes:](./textstylerulewithtextmarkupattributes_.md)
+  Creates a new text style rule object using the style attributes in the specified dictionary.
+- [+ textStyleRuleWithTextMarkupAttributes:textSelector:](./textstylerulewithtextmarkupattributes_textselector_.md)
+  Creates a new text style rule object using the specified style attributes and text range information.
 
 
 ---

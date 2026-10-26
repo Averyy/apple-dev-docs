@@ -56,6 +56,8 @@ This type of observation results from a [`VNDetectFaceRectanglesRequest`](./vnde
 ### Determining Capture Quality
 - [var faceCaptureQuality: Float?](./vnfaceobservation/facecapturequality-bjg5.md)
   A value that indicates the quality of the face capture.
+- [faceCaptureQuality](./vnfaceobservation/facecapturequality-2o4xv.md)
+  A value that indicates the quality of the face capture.
 
 ## Relationships
 

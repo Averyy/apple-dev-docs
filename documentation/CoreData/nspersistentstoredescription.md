@@ -34,6 +34,8 @@ class NSPersistentStoreDescription
 ### Creating a Persistent Store Description
 - [init(url: URL)](./nspersistentstoredescription/init%28url%29-ko0l.md)
   Initializes the receiver with a URL for the store.
+- [+ persistentStoreDescriptionWithURL:](./nspersistentstoredescription/persistentstoredescriptionwithurl_.md)
+  Initializes and returns a persistent store description with the given URL.
 ### Configuring a Persistent Store Description
 - [var url: URL?](./nspersistentstoredescription/url.md)
   The URL that the store will use for its location.

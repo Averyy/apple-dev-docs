@@ -42,6 +42,10 @@ Using this initializer is typically not necessary. Instead, call the [`audioPlay
 ### Creating an Audio Player
 - [init(source: SCNAudioSource)](./init%28source%29.md)
   Initializes an audio player for playing the specified simple audio source.
+- [+ audioPlayerWithSource:](./audioplayerwithsource_.md)
+  Returns an audio player (creating one if necessary) to play a simple audio source.
+- [+ audioPlayerWithAVAudioNode:](./audioplayerwithavaudionode_.md)
+  Returns an audio player (creating one if necessary) to play an audio node.
 
 
 ---

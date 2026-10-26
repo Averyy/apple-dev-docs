@@ -34,6 +34,7 @@ MPSImageFeatureChannelFormatFloat32
   `uint16_t` type with value `[0,65535]` and encoding `[0,1.0]`.
 - [MPSImageFeatureChannelFormat.float16](./float16.md)
   IEEE-754 16-bit floating-point type (half precision). Representable normal range is `+-[2^-14, 65504], 0, INF, NaN`. 11 bits of precision + exponent.
+- [MPSImageFeatureChannelFormat_reserved0](./mpsimagefeaturechannelformat_reserved0.md)
 
 
 ---

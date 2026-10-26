@@ -40,6 +40,11 @@ In many cases, you won’t need to create a view of this type directly. Set a [`
 ### Instance Properties
 - [var isScrollEnabled: Bool](./uicontentunavailableview/isscrollenabled.md)
   A Boolean value that determines whether the view content can scroll.
+- [configuration](./uicontentunavailableview/configuration.md)
+  The content-unavailable configuration.
+### Instance Methods
+- [- initWithConfiguration:](./uicontentunavailableview/initwithconfiguration_.md)
+  Creates a new content-unavailable view with the specified configuration.
 
 ## Relationships
 
@@ -78,6 +83,7 @@ In many cases, you won’t need to create a view of this type directly. Set a [`
 - [UITraitChangeObservable](./uitraitchangeobservable-67e94.md)
 - [UITraitEnvironment](./uitraitenvironment.md)
 - [UIUserActivityRestoring](./uiuseractivityrestoring.md)
+- [UIContentView](./uicontentview-3zu2k.md)
 
 ## See Also
 

@@ -44,6 +44,7 @@ class IMKServer
 - [Equatable](../Swift/equatable.md)
 - [Hashable](../Swift/hashable.md)
 - [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- IMKServerProxy
 
 ## See Also
 

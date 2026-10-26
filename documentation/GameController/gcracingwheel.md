@@ -33,6 +33,10 @@ class GCRacingWheel
   A notification that posts after a racing wheel controller connects to the device.
 - [static let GCRacingWheelDidDisconnect: NSNotification.Name](../Foundation/nsnotification/name-swift.struct/gcracingwheeldiddisconnect.md)
   A notification that posts after a racing wheel controller disconnects from the device.
+- [GCRacingWheelDidConnectNotification](./gcracingwheeldidconnectnotification.md)
+  A notification that posts after a racing wheel controller connects to the device.
+- [GCRacingWheelDidDisconnectNotification](./gcracingwheeldiddisconnectnotification.md)
+  A notification that posts after a racing wheel controller disconnects from the device.
 ### Getting events
 - [func acquireDevice() throws](./gcracingwheel/acquiredevice%28%29.md)
   Starts receiving events from the racing wheel.

@@ -77,6 +77,13 @@ Applications that store pixel data in memory using ARGB format must take care in
 - [func symmetricDifference(CGBitmapInfo) -> CGBitmapInfo](./cgbitmapinfo/symmetricdifference%28_%29.md)
 - [func union(CGBitmapInfo) -> CGBitmapInfo](./cgbitmapinfo/union%28_%29.md)
 - [func update(with: CGBitmapInfo) -> CGBitmapInfo?](./cgbitmapinfo/update%28with%29.md)
+### Enumeration Cases
+- [kCGBitmapAlphaInfoMask](./cgbitmapinfo/kcgbitmapalphainfomask.md)
+- [kCGBitmapByteOrderInfoMask](./cgbitmapinfo/kcgbitmapbyteorderinfomask.md)
+- [kCGBitmapByteOrderMask](./cgbitmapinfo/kcgbitmapbyteordermask.md)
+- [kCGBitmapComponentInfoMask](./cgbitmapinfo/kcgbitmapcomponentinfomask.md)
+- [kCGBitmapFloatInfoMask](./cgbitmapinfo/kcgbitmapfloatinfomask.md)
+- [kCGBitmapPixelFormatInfoMask](./cgbitmapinfo/kcgbitmappixelformatinfomask.md)
 
 ## Relationships
 

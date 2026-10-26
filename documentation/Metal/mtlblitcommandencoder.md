@@ -89,6 +89,8 @@ For more information about stages and synchronization, see [`MTLStages`](./mtlst
 ### Filling buffers
 - [func fill(buffer: any MTLBuffer, range: Range<Int>, value: UInt8)](./mtlblitcommandencoder/fill%28buffer,range,value%29.md)
   Encodes a command that fills a buffer with a constant value for each byte.
+- [- fillBuffer:range:value:](./mtlblitcommandencoder/fillbuffer_range_value_.md)
+  Encodes a command that fills a buffer with a constant value for each byte.
 ### Generating texture mipmaps
 - [func generateMipmaps(for: any MTLTexture)](./mtlblitcommandencoder/generatemipmaps%28for%29.md)
   Encodes a command that generates mipmaps for a texture from the base mipmap level up to the highest mipmap level.
@@ -141,10 +143,18 @@ For more information about stages and synchronization, see [`MTLStages`](./mtlst
   Encodes a command that resets a range of commands in an indirect command buffer.
 - [func optimizeIndirectCommandBuffer(any MTLIndirectCommandBuffer, range: Range<Int>)](./mtlblitcommandencoder/optimizeindirectcommandbuffer%28_,range%29.md)
   Encodes a command that can improve the performance of a range of commands within an indirect command buffer.
+- [- copyIndirectCommandBuffer:sourceRange:destination:destinationIndex:](./mtlblitcommandencoder/copyindirectcommandbuffer_sourcerange_destination_destinationindex_.md)
+  Encodes a command that copies commands from one indirect command buffer into another.
+- [- resetCommandsInBuffer:withRange:](./mtlblitcommandencoder/resetcommandsinbuffer_withrange_.md)
+  Encodes a command that resets a range of commands in an indirect command buffer.
+- [- optimizeIndirectCommandBuffer:withRange:](./mtlblitcommandencoder/optimizeindirectcommandbuffer_withrange_.md)
+  Encodes a command that can improve the performance of a range of commands within an indirect command buffer.
 ### Sampling counters
 - [func sampleCounters(sampleBuffer: any MTLCounterSampleBuffer, sampleIndex: Int, barrier: Bool)](./mtlblitcommandencoder/samplecounters%28samplebuffer,sampleindex,barrier%29.md)
   Encodes a command that samples the GPU’s hardware counters during a blit pass and stores the data in a counter sample buffer.
 - [func resolveCounters(any MTLCounterSampleBuffer, range: Range<Int>, destinationBuffer: any MTLBuffer, destinationOffset: Int)](./mtlblitcommandencoder/resolvecounters%28_,range,destinationbuffer,destinationoffset%29.md)
+  Encodes a command that resolves the data from the samples in a sample counter buffer and stores the results into a buffer.
+- [- resolveCounters:inRange:destinationBuffer:destinationOffset:](./mtlblitcommandencoder/resolvecounters_inrange_destinationbuffer_destinationoffset_.md)
   Encodes a command that resolves the data from the samples in a sample counter buffer and stores the results into a buffer.
 ### Managing sparse texture access counters
 - [func getTextureAccessCounters(any MTLTexture, region: MTLRegion, mipLevel: Int, slice: Int, resetCounters: Bool, countersBuffer: any MTLBuffer, countersBufferOffset: Int)](./mtlblitcommandencoder/gettextureaccesscounters%28_,region,miplevel,slice,resetcounters,countersbuffer,countersbufferoffset%29.md)

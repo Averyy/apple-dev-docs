@@ -88,6 +88,9 @@ The Force Feedback API allows developers to control Force Feedback devices attac
 - [ForceFeedback Enumerations](./forcefeedback-enumerations.md)
 - [ForceFeedback Constants](./forcefeedback-constants.md)
 - [ForceFeedback Data Types](./forcefeedback-data-types.md)
+- [IOForceFeedbackLib.h](./ioforcefeedbacklib-h.md)
+  Public Interfaces and constants used to develop Force Feedback plugIns.
+- [ForceFeedback Structures](./forcefeedback-structures.md)
 
 
 ---

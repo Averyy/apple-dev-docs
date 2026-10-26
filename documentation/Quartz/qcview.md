@@ -94,6 +94,11 @@ If you want to perform custom operations while a composition is rendering such a
   Returns the OpenGL context used by the view.
 - [func openGLPixelFormat() -> NSOpenGLPixelFormat!](./qcview/openglpixelformat%28%29.md)
   Returns the OpenGL pixel format used by the view.
+### Notifications
+- [QCViewDidStartRenderingNotification](./qcviewdidstartrenderingnotification.md)
+  Posted when the view starts rendering.
+- [QCViewDidStopRenderingNotification](./qcviewdidstoprenderingnotification.md)
+  Posted when the view stops rendering.
 
 ## Relationships
 

@@ -88,6 +88,9 @@ If a change occurs in the format description on incoming [`CMSampleBuffer`](../C
   Include a property list dictionary to describe a video decoder.
 - [Video decoder entitlement](./video-decoder-entitlement.md)
   Include an entitlement to indicate your extension is a MediaExtension video decoder.
+### Notifications
+- [MEVideoDecoderReadyForMoreMediaDataDidChangeNotification](./mevideodecoderreadyformoremediadatadidchangenotification.md)
+  A notification that indicates a change to the decoder’s readiness to process additional media data.
 
 ## Relationships
 

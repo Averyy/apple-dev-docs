@@ -131,6 +131,8 @@ Because of the architecture and data model of NSXML, when it parses and processe
 - [init()](./xmldocument/init%28%29.md)
 - [convenience init(XMLString: String, options: XMLNode.Options) throws](./xmldocument/init%28xmlstring,options%29-87dms.md)
 - [convenience init(contentsOfURL: URL, options: XMLNode.Options) throws](./xmldocument/init%28contentsofurl,options%29.md)
+### Instance Variables
+- [padding](./nsxmldocument/padding.md)
 
 ## Relationships
 

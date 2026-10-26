@@ -64,6 +64,8 @@ enum NEVPNIKEv2PostQuantumKeyExchangeMethod : NSInteger;
   The duration of the lifetime of the Security Association, in minutes.
 - [var postQuantumKeyExchangeMethods: [NEVPNIKEv2PostQuantumKeyExchangeMethod]](./nevpnikev2securityassociationparameters/postquantumkeyexchangemethods-3173s.md)
   A list of the quantum-secure key exchange methods the Security Association uses.
+- [postQuantumKeyExchangeMethods](./nevpnikev2securityassociationparameters/postquantumkeyexchangemethods-56672.md)
+  A list of the quantum-secure key exchange methods the Security Association uses.
 
 
 ---

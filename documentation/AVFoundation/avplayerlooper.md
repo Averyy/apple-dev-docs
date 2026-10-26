@@ -48,6 +48,8 @@ queuePlayer.play()
   Creates a player looper that continuously plays the full duration of a player item.
 - [convenience init(player: AVQueuePlayer, templateItem: AVPlayerItem, timeRange: CMTimeRange)](./avplayerlooper/init%28player,templateitem,timerange%29.md)
   Creates a player looper that continuously plays the specified time range of a player item.
+- [+ playerLooperWithPlayer:templateItem:timeRange:](./avplayerlooper/playerlooperwithplayer_templateitem_timerange_.md)
+  Returns player looper that continuously plays the specified time range of a player item.
 ### Configuring looping
 - [var loopingPlayerItems: [AVPlayerItem]](./avplayerlooper/loopingplayeritems.md)
   An array containing replicas of the template player item used to accomplish the looping.

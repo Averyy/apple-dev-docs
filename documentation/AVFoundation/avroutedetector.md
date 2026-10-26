@@ -41,6 +41,8 @@ If you enable route detection, the object reports whether it detects multiple pl
   A Boolean value that indicates whether the object detects more than one playback route.
 - [static let AVRouteDetectorMultipleRoutesDetectedDidChange: NSNotification.Name](../Foundation/nsnotification/name-swift.struct/avroutedetectormultipleroutesdetecteddidchange.md)
   A notification the system posts when changes occur to its detected routes.
+- [AVRouteDetectorMultipleRoutesDetectedDidChangeNotification](./avroutedetectormultipleroutesdetecteddidchangenotification.md)
+  A notification the system posts when changes occur to its detected routes.
 ### Deprecated
 - [var detectsCustomRoutes: Bool](./avroutedetector/detectscustomroutes.md)
   A Boolean value that indicates whether route detection includes custom routes.

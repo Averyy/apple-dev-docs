@@ -29,6 +29,7 @@ class QuartzFilterManager
 - [func setDelegate(Any!)](./quartzfiltermanager/setdelegate%28_%29.md)
 ### Type Methods
 - [class func filters(inDomains: [Any]!) -> [Any]!](./quartzfiltermanager/filters%28indomains%29.md)
+- [+ filterManager](./quartzfiltermanager/filtermanager.md)
 
 ## Relationships
 

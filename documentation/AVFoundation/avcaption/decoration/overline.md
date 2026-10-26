@@ -29,6 +29,8 @@ AVCaptionDecorationOverline
   A decoration representing a line under the text.
 - [static var lineThrough: AVCaption.Decoration](./linethrough.md)
   A decoration representing a line through the text.
+- [AVCaptionDecorationNone](../../avcaptiondecoration/avcaptiondecorationnone.md)
+  No text decoration.
 
 
 ---

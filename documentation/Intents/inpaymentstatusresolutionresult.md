@@ -36,6 +36,8 @@ For additional resolution options, see [`INIntentResolutionResult`](./inintentre
   Creates an object whose resolution involves the successful matching of the specified value.
 - [class func confirmationRequired(with: INPaymentStatus) -> Self](./inpaymentstatusresolutionresult/confirmationrequired%28with%29.md)
   Creates an object whose resolution requires that the user confirm the value before proceeding.
+- [+ successWithResolvedValue:](./inpaymentstatusresolutionresult/successwithresolvedvalue_.md)
+- [+ confirmationRequiredWithValueToConfirm:](./inpaymentstatusresolutionresult/confirmationrequiredwithvaluetoconfirm_.md)
 
 ## Relationships
 

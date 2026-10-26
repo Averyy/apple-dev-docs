@@ -27,6 +27,12 @@ An initialized [`NSCIImageRep`](../nsciimagerep.md) object, or `nil` if the obje
 
 - `image`: The [`CIImage`](../../CoreImage/ciimage.md) instance.
 
+## See Also
+
+### Creating Representations of Core Image Objects
+- [+ imageRepWithCIImage:](./imagerepwithciimage_.md)
+  Creates and returns a representation of an image initialized to the specified Core Image instance.
+
 
 ---
 

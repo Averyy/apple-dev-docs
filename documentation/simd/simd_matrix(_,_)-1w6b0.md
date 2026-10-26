@@ -21,6 +21,8 @@ static simd_half2x2 simd_matrix(simd_half2 col0, simd_half2 col1);
 ### Matrix creation functions
 - [func simd_matrix_from_rows(simd_half2, simd_half2) -> simd_half2x2](./simd_matrix_from_rows%28_,_%29-9lrpr.md)
   Returns a new matrix with the specified rows.
+- [simd_diagonal_matrix](./simd_diagonal_matrix-2rg1i.md)
+  Returns a new matrix with the specified vector on the main diagonal.
 
 
 ---

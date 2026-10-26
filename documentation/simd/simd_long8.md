@@ -35,6 +35,8 @@ typedef long __attribute__((ext_vector_type(8))) simd_long8;
   Returns a new vector from the specified three-element vector, and other elements undefined.
 - [func simd_make_long8_undef(simd_long4) -> simd_long8](./simd_make_long8_undef%28_%29-59t0j.md)
   Returns a new vector from the specified four-element vector, and other elements undefined.
+- [vector8](./vector8-6qxy0.md)
+  Returns a new vector from the specified vectors.
 ### Functions to Create Eight-Element Vectors From Scalar Values
 - [func simd_make_long8(simd_long1) -> simd_long8](./simd_make_long8%28_%29-2kqft.md)
   Returns a new vector with the first element set to a scalar value, and other elements set to zero.
@@ -66,6 +68,51 @@ typedef long __attribute__((ext_vector_type(8))) simd_long8;
   Returns a vector that contains elements from either the first or second parameter, based on the corresponding element in the third parameter.
 ### Alternative Type Alias
 - [typealias vector_long8](./vector_long8.md)
+### Conversion to Signed 64-Bit (Round Half to Even) Functions
+- [simd_long_rte](./simd_long_rte-90anl.md)
+  Returns a new eight-element vector by rounding halves to the nearest even value.
+### Functions to Create Eight-Element Vectors From Vectors of Other Types
+- [simd_long](./simd_long-93qrw.md)
+  Returns a new vector from the specified vector of 8-bit, signed integer elements.
+- [simd_long](./simd_long-93gss.md)
+  Returns a new vector from the specified vector of 8-bit, unsigned integer elements.
+- [simd_long](./simd_long-93vu4.md)
+  Returns a new vector from the specified vector of 16-bit, signed integer elements.
+- [simd_long](./simd_long-93lpo.md)
+  Returns a new vector from the specified vector of 16-bit, unsigned integer elements.
+- [simd_long](./simd_long-93sno.md)
+  Returns a new vector from the specified vector of 32-bit, signed integer elements.
+- [simd_long](./simd_long-93iok.md)
+  Returns a new vector from the specified vector of 32-bit, unsigned integer elements.
+- [simd_long](./simd_long-93ti0.md)
+  Returns a new vector from the specified vector of 64-bit, signed integer elements.
+- [simd_long](./simd_long-93jiw.md)
+  Returns a new vector from the specified vector of 64-bit, unsigned integer elements.
+- [simd_long](./simd_long-93hmw.md)
+  Returns a new vector from the specified vector of 32-bit, floating-point elements.
+- [simd_long](./simd_long-93h2w.md)
+  Returns a new vector from the specified vector of 64-bit, floating-point elements.
+### Functions to Perform Saturating Conversion From Vectors of Other Types
+- [simd_long_sat](./simd_long_sat-6s8z2.md)
+  Returns a new vector from the specified vector of 8-bit, signed integer elements.
+- [simd_long_sat](./simd_long_sat-6rz5a.md)
+  Returns a new vector from the specified vector of 8-bit, unsigned integer elements.
+- [simd_long_sat](./simd_long_sat-6sdu6.md)
+  Returns a new vector from the specified vector of 16-bit, signed integer elements.
+- [simd_long_sat](./simd_long_sat-6s426.md)
+  Returns a new vector from the specified vector of 16-bit, unsigned integer elements.
+- [simd_long_sat](./simd_long_sat-6s5qq.md)
+  Returns a new vector from the specified vector of 32-bit, signed integer elements.
+- [simd_long_sat](./simd_long_sat-6rvv6.md)
+  Returns a new vector from the specified vector of 32-bit, unsigned integer elements.
+- [simd_long_sat](./simd_long_sat-6s53e.md)
+  Returns a new vector from the specified vector of 64-bit, signed integer elements.
+- [simd_long_sat](./simd_long_sat-6rux6.md)
+  Returns a new vector from the specified vector of 64-bit, unsigned integer elements.
+- [simd_long_sat](./simd_long_sat-6ry46.md)
+  Returns a new vector from the specified vector of 32-bit, floating point elements.
+- [simd_long_sat](./simd_long_sat-6rxje.md)
+  Returns a new vector from the specified vector of 64-bit, floating point elements.
 
 ## See Also
 

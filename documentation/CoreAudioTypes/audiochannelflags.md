@@ -34,6 +34,8 @@ enum AudioChannelFlags : UInt32;
   A flag that indicates the channel uses the speaker position’s cartesian coordinates.
 - [static var sphericalCoordinates: AudioChannelFlags](./audiochannelflags/sphericalcoordinates.md)
   A flag that indicates the channel uses the speaker position’s spherical coordinates.
+- [kAudioChannelFlags_AllOff](./audiochannelflags/kaudiochannelflags_alloff.md)
+  All flags are clear.
 ### Initializers
 - [init(rawValue: UInt32)](./audiochannelflags/init%28rawvalue%29.md)
   Creates a audio channel flags structure with a unsigned integer value.

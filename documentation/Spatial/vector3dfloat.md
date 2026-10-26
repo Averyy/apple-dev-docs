@@ -94,6 +94,12 @@ typedef union { ... } SPVector3DFloat;
 - [var x: Float](./vector3dfloat/x.md)
 - [var y: Float](./vector3dfloat/y.md)
 - [var z: Float](./vector3dfloat/z.md)
+- [x](./spvector3dfloat/x.md)
+  The first element of the vector.
+- [y](./spvector3dfloat/y.md)
+  The second element of the vector.
+- [z](./spvector3dfloat/z.md)
+  The third element of the vector.
 ### Instance Methods
 - [func applying(ScaledPose3DFloat) -> Vector3DFloat](./vector3dfloat/applying%28_%29-3mahk.md)
   Returns the primitive that results from applying a scaled pose to the primitive.

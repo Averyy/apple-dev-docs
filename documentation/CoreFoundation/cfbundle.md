@@ -118,6 +118,14 @@ Note that it is best to compile any unloadable bundles with the flag `-fno-const
   Returns an array containing the localizations for a bundle or executable at a particular location.
 - [func CFBundleCopyPreferredLocalizationsFromArray(CFArray!) -> CFArray!](./cfbundlecopypreferredlocalizationsfromarray%28_%29.md)
   Given an array of possible localizations, returns the one or more of them that CFBundle would use in the current application context.
+- [CFCopyLocalizedString](./cfcopylocalizedstring.md)
+  Searches the default strings file `Localizable.strings` for the string associated with the specified key.
+- [CFCopyLocalizedStringFromTable](./cfcopylocalizedstringfromtable.md)
+  Searches the specified strings file for the string associated with the specified key.
+- [CFCopyLocalizedStringFromTableInBundle](./cfcopylocalizedstringfromtableinbundle.md)
+  Returns a localized version of the specified string.
+- [CFCopyLocalizedStringWithDefaultValue](./cfcopylocalizedstringwithdefaultvalue.md)
+  Returns a localized version of a localization string.
 ### Managing Executable Code
 - [func CFBundleGetDataPointerForName(CFBundle!, CFString!) -> UnsafeMutableRawPointer!](./cfbundlegetdatapointerforname%28_,_%29.md)
   Returns a data pointer to a symbol of the given name.

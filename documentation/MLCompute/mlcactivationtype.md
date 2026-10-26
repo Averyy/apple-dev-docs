@@ -70,6 +70,8 @@ enum MLCActivationType : int32_t;
   An activation type that implements the threshold activation function.
 - [var debugDescription: String](./mlcactivationtype/debugdescription.md)
   A textual description of the activation type, suitable for debugging.
+- [MLCActivationTypeCount](./mlcactivationtype/mlcactivationtypecount.md)
+  The count of activation types.
 ### Initializers
 - [init?(rawValue: Int32)](./mlcactivationtype/init%28rawvalue%29.md)
 

@@ -275,6 +275,8 @@ You can use the resulting object types to request permission to access the data,
 - [static let appleSleepingWristTemperature: HKQuantityTypeIdentifier](./hkquantitytypeidentifier/applesleepingwristtemperature.md)
   A quantity sample type that records the wrist temperature during sleep.
 - [enum HKAppleSleepingBreathingDisturbancesClassification](./hkapplesleepingbreathingdisturbancesclassification.md)
+- [HKCategoryValueSleepAnalysisAsleepValues](./hkcategoryvaluesleepanalysisasleepvalues.md)
+- [HKAppleSleepingBreathingDisturbancesClassificationForQuantity](./hkapplesleepingbreathingdisturbancesclassificationforquantity.md)
 ### Self care
 - [static let toothbrushingEvent: HKCategoryTypeIdentifier](./hkcategorytypeidentifier/toothbrushingevent.md)
   A category sample type for toothbrushing events.

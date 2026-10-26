@@ -56,6 +56,8 @@ This version 3 property is partially bridged to the version 2 `kAudioUnitPropert
   Determines whether an effect should route input directly to output, without any processing.
 - [var isRenderingOffline: Bool](./isrenderingoffline.md)
   Communicates to an audio unit that it is rendering offline.
+- [osWorkgroup](./osworkgroup.md)
+  The workgroup associated with the audio device underlying this Audio Unit.
 
 
 ---

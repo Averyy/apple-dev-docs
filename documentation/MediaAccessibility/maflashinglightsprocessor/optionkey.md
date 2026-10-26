@@ -48,6 +48,10 @@ typedef NSString * MAFlashingLightsProcessorOptionKey;
   Processes a surface by analyzing pixels for sequences of flashing lights and mitigates them by dimming the content.
 - [MAFlashingLightsProcessor.Result](./result.md)
   An object that reports the result of the flashing lights processor.
+- [- processSurface:outSurface:timestamp:options:](./processsurface_outsurface_timestamp_options_.md)
+  Processes a surface by analyzing pixels for sequences of flashing lights and mitigates them by dimming the content.
+- [MAFlashingLightsProcessorResult](../maflashinglightsprocessorresult.md)
+  An object that reports the result of the flashing lights processor.
 
 
 ---

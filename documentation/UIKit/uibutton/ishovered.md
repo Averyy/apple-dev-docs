@@ -41,6 +41,8 @@ If you enable pointer interaction by setting [`isPointerInteractionEnabled`](./i
   A type alias defining a closure that returns a pointer style to apply to a button.
 - [typealias UIButtonPointerStyleProvider](../uibuttonpointerstyleprovider.md)
   A type alias defining a block that returns a pointer style to apply to a button.
+- [pointerStyleProvider](./pointerstyleprovider-1d4d2.md)
+  A block that returns the pointer style to use when the pointer hovers over the button.
 
 
 ---

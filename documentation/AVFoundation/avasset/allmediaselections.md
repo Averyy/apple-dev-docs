@@ -26,6 +26,14 @@ var allMediaSelections: [AVMediaSelection] { get }
 @property (nonatomic, readonly) NSArray<AVMediaSelection *> * allMediaSelections;
 ```
 
+## See Also
+
+### Accessing media selections
+- [availableMediaCharacteristicsWithMediaSelectionOptions](./availablemediacharacteristicswithmediaselectionoptions.md)
+  An array of media characteristics for which a media selection option is available.
+- [- mediaSelectionGroupForMediaCharacteristic:](./mediaselectiongroup%28formediacharacteristic%29.md)
+  Returns a media selection group that contains one or more options with the specified media characteristic.
+
 
 ---
 

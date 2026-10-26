@@ -88,7 +88,7 @@ Here’s a list of frameworks and features that behave differently in visionOS:
 - **Nearby Interaction.** The framework does nothing in visionOS. Check the [`deviceCapabilities`](../NearbyInteraction/nisession/devicecapabilities.md) property of your session to determine whether features are available.
 - **Parental controls.** Calls to the [Family Controls](../FamilyControls/FamilyControls.md) framework do nothing in visionOS.
 - **PencilKit.** visionOS doesn’t report touches of type [`UITouch.TouchType.pencil`](../UIKit/uitouch/touchtype/pencil.md), but it does report other types of touches.
-- **PhotoKit.** Use the [`PHPhotoLibrary`](https://developer.apple.com/documentation/photos/phphotolibrary) class to determine your app’s authorization status.
+- **PhotoKit.** Use the [`PHPhotoLibrary`](../Photos/phphotolibrary.md) class to determine your app’s authorization status.
 - **ProximityReader.** Check the [`isSupported`](../ProximityReader/paymentcardreader/issupported.md) property of the card reader object to determine if Tap to Pay on iPhone is available.
 - **Push to Talk.** These services are unavailable in visionOS. Check for errors when creating a [`PTChannelManager`](../PushToTalk/ptchannelmanager.md).
 - **ReplayKit.** Check the [`isAvailable`](../ReplayKit/rpscreenrecorder/isavailable.md) property of [`RPScreenRecorder`](../ReplayKit/rpscreenrecorder.md) to determine if screen recording support is available.

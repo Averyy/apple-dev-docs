@@ -30,6 +30,8 @@ var dimension: Int { get }
   The function reduction type the system uses for reduction.
 - [var dimensions: [Int]](./dimensions-9oph6.md)
   The dimensions to perform the reduction operation on.
+- [dimensions](./dimensions-4359b.md)
+  The dimensions to perform the reduction operation on.
 
 
 ---

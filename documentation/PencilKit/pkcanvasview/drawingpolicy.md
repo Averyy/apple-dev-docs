@@ -33,6 +33,8 @@ var drawingPolicy: PKCanvasViewDrawingPolicy { get set }
   A Boolean value that indicates whether the canvas accepts input from the user’s finger in addition to Apple Pencil.
 - [enum PKCanvasViewDrawingPolicy](../pkcanvasviewdrawingpolicy.md)
   Constants that you use to specify the type of drawing gestures your app permits while the user draws on the canvas.
+- [tool](./tool-6str6.md)
+  The currently selected tool used for drawing.
 
 
 ---

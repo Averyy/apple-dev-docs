@@ -40,6 +40,16 @@ You can call this method without blocking the current thread after you’ve load
 
 - `format`: The format of the metadata items to retrieve.
 
+## See Also
+
+### Accessing metadata
+- [metadata](./metadata.md)
+  An array of metadata items for all metadata identifiers that have a value.
+- [commonMetadata](./commonmetadata.md)
+  An array of metadata items for all common metadata keys that have a value.
+- [availableMetadataFormats](./availablemetadataformats.md)
+  An array of metadata formats available for the track.
+
 
 ---
 

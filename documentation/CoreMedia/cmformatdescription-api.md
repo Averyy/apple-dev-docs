@@ -96,6 +96,8 @@ A media format descriptor that describes the samples in a sample buffer.
   Converts an image description data structure from big-endian to host-endian, in place.
 - [func CMSwapHostEndianImageDescriptionToBig(UnsafeMutablePointer<UInt8>, Int) -> OSStatus](./cmswaphostendianimagedescriptiontobig%28_,_%29.md)
   Converts an image description data structure from host-endian to big-endian, in place.
+- [CMVideoFormatDescriptionCopyTagCollectionArray](./cmvideoformatdescriptioncopytagcollectionarray.md)
+  Copies the multi-image encoding properties as an array of CMTagCollections.
 ### Working with Muxed Descriptions
 - [func CMMuxedFormatDescriptionCreate(allocator: CFAllocator?, muxType: CMMuxedStreamType, extensions: CFDictionary?, formatDescriptionOut: UnsafeMutablePointer<CMMuxedFormatDescription?>) -> OSStatus](./cmmuxedformatdescriptioncreate%28allocator,muxtype,extensions,formatdescriptionout%29.md)
   Creates a format description for a muxed media stream.

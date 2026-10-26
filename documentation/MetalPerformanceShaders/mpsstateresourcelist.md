@@ -31,6 +31,10 @@ class MPSStateResourceList
 ### Instance Methods
 - [func appendBuffer(Int)](./mpsstateresourcelist/appendbuffer%28_%29.md)
 - [func appendTexture(MTLTextureDescriptor)](./mpsstateresourcelist/appendtexture%28_%29.md)
+### Type Methods
+- [+ resourceList](./mpsstateresourcelist/resourcelist.md)
+- [+ resourceListWithBufferSizes:](./mpsstateresourcelist/resourcelistwithbuffersizes_.md)
+- [+ resourceListWithTextureDescriptors:](./mpsstateresourcelist/resourcelistwithtexturedescriptors_.md)
 
 ## Relationships
 

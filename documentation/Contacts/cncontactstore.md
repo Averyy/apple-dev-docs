@@ -59,6 +59,8 @@ Because `CNContactStore` fetch methods perform I/O, it’s recommended that you 
   Fetches a unified contact for the specified contact identifier.
 - [func unifiedContacts(matching: NSPredicate, keysToFetch: [any CNKeyDescriptor]) throws -> [CNContact]](./cncontactstore/unifiedcontacts%28matching,keystofetch%29.md)
   Fetches all unified contacts matching the specified predicate.
+- [- enumeratorForContactFetchRequest:error:](./cncontactstore/enumeratorforcontactfetchrequest_error_.md)
+  Enumerates a contact fetch request.
 ### Fetching groups and containers
 - [func defaultContainerIdentifier() -> String](./cncontactstore/defaultcontaineridentifier%28%29.md)
   Returns the identifier of the default container.
@@ -69,11 +71,15 @@ Because `CNContactStore` fetch methods perform I/O, it’s recommended that you 
 ### Fetching change history info
 - [var currentHistoryToken: Data?](./cncontactstore/currenthistorytoken.md)
   The current history token.
+- [- enumeratorForChangeHistoryFetchRequest:error:](./cncontactstore/enumeratorforchangehistoryfetchrequest_error_.md)
+  Enumerates a change history fetch request.
 ### Saving changes
 - [func execute(CNSaveRequest) throws](./cncontactstore/execute%28_%29.md)
   Executes a save request and returns success or failure.
 ### Responding to contact store changes
 - [static let CNContactStoreDidChange: NSNotification.Name](../Foundation/nsnotification/name-swift.struct/cncontactstoredidchange.md)
+  Posted when changes occur to the contact store.
+- [CNContactStoreDidChangeNotification](./cncontactstoredidchangenotification.md)
   Posted when changes occur to the contact store.
 
 ## Relationships

@@ -43,6 +43,8 @@ Use [`SK3DNode`](./sk3dnode.md) objects to incorporate 3D SceneKit content into 
   Initializes a new 3D node.
 - [init?(coder: NSCoder)](./sk3dnode/init%28coder%29.md)
   Tells you when to initialize a 3D node that has been unarchived.
+- [+ nodeWithViewportSize:](./sk3dnode/nodewithviewportsize_.md)
+  Creates and initializes a new 3D node.
 ### Configuring a 3D Node
 - [var viewportSize: CGSize](./sk3dnode/viewportsize.md)
   The size of the image rendered by the node.

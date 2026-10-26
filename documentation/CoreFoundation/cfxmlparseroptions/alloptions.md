@@ -33,6 +33,8 @@ kCFXMLParserAllOptions
   Resolves all external entities.
 - [static var addImpliedAttributes: CFXMLParserOptions](./addimpliedattributes.md)
   Where the DTD specifies implied attribute-value pairs for a particular element, add those pairs to any occurrences of the element in the element tree. Currently not supported.
+- [kCFXMLParserNoOptions](./kcfxmlparsernooptions.md)
+  Leaves the XML as “intact” as possible (reports all structures; performs no replacements).
 
 
 ---

@@ -42,6 +42,10 @@ By default, the provided name value is used to name the persistent store and is 
 ### Creating a Container
 - [init(name: String, managedObjectModel: NSManagedObjectModel)](./init%28name,managedobjectmodel%29.md)
   Create a container with the specified name and managed object model.
+- [+ persistentContainerWithName:](./persistentcontainerwithname_.md)
+  Initializes a new persistent container using the provided name for the container.
+- [+ persistentContainerWithName:managedObjectModel:](./persistentcontainerwithname_managedobjectmodel_.md)
+  Initializes a new persistent container using the provided name and managed object model.
 
 
 ---

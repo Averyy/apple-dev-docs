@@ -50,6 +50,16 @@ A line join specifies how [`strokePath()`](./cgcontext/strokepath%28%29.md) draw
 - [Sendable](../Swift/sendable.md)
 - [SendableMetatype](../Swift/sendablemetatype.md)
 
+## See Also
+
+### Constants
+- [CGPathDrawingMode](./cgpathdrawingmode.md)
+  Options for rendering a path.
+- [CGPathElementType](./cgpathelementtype.md)
+  The type of element found in a path.
+- [CGLineCap](./cglinecap.md)
+  Styles for rendering the endpoint of a stroked line.
+
 
 ---
 

@@ -24,6 +24,12 @@ init(gaugeProvider: CLKGaugeProvider, centerTextProvider: CLKTextProvider)
 - `gaugeProvider`: The gauge provider for the template.
 - `centerTextProvider`: The text provider for the center text. The template supports multicolored text from this text provider.
 
+## See Also
+
+### Creating the Template
+- [+ templateWithGaugeProvider:centerTextProvider:](./templatewithgaugeprovider_centertextprovider_.md)
+  Returns a new template that has a closed circular gauge with a small amount of text in the center.
+
 
 ---
 

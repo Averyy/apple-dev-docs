@@ -38,6 +38,8 @@ kCFStringTokenizerTokenIsCJWordMask
   Appears to contain a number.
 - [static var hasNonLettersMask: CFStringTokenizerTokenType](./hasnonlettersmask.md)
   Contains punctuation, symbols, and so on.
+- [kCFStringTokenizerTokenNone](./kcfstringtokenizertokennone.md)
+  Has no token.
 
 
 ---

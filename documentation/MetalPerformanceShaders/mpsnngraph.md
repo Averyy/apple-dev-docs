@@ -75,6 +75,10 @@ Note that certain operations such as neuron filters that follow convolution filt
 - [func readCountForSourceImage(at: Int) -> Int](./mpsnngraph/readcountforsourceimage%28at%29.md)
 - [func readCountForSourceState(at: Int) -> Int](./mpsnngraph/readcountforsourcestate%28at%29.md)
 - [func reloadFromDataSources()](./mpsnngraph/reloadfromdatasources%28%29.md)
+### Type Methods
+- [+ graphWithDevice:resultImage:](./mpsnngraph/graphwithdevice_resultimage_.md)
+- [+ graphWithDevice:resultImage:resultImageIsNeeded:](./mpsnngraph/graphwithdevice_resultimage_resultimageisneeded_.md)
+- [+ graphWithDevice:resultImages:resultsAreNeeded:](./mpsnngraph/graphwithdevice_resultimages_resultsareneeded_.md)
 
 ## Relationships
 

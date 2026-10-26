@@ -235,6 +235,16 @@
       "file_path": "documentation/EventKitUI/ekeventviewdelegate/eventviewcontroller(_,didcompletewith).md",
       "hash": "ac0ee701827e2a268fb816da03f336024f613713b9d0551678dc8b8b7765e5c2"
     },
+    "https://developer.apple.com/documentation/eventkitui/ekui_extension_available_ios": {
+      "etag": "\"1916-65d5609c74ff5-df\"",
+      "file_path": "documentation/EventKitUI/ekui_extension_available_ios.md",
+      "hash": "661870f9c28df6c0bf330148876cc04a9374a0512cda0bae1319739821b44553"
+    },
+    "https://developer.apple.com/documentation/eventkitui/ekui_has_header": {
+      "etag": "\"188c-65d5609c74ff5-df\"",
+      "file_path": "documentation/EventKitUI/ekui_has_header.md",
+      "hash": "d093164815c29b0c00bfdbd2bbd6060e7e277766c7f6f8ae6b18562353d1d855"
+    },
     "https://developer.apple.com/documentation/eventkitui/ekui_is_ios": {
       "etag": "\"21a0-65d5609c74ff5-df\"",
       "file_path": "documentation/EventKitUI/ekui_is_ios.md",
@@ -249,6 +259,16 @@
       "etag": "\"17f6-6590297deaaf3-df\"",
       "file_path": "documentation/EventKitUI/eventkitui-constants.md",
       "hash": "c1a2e4791b8019df1173bd349bc5096c5bb717cc58b60b6d3e04328a434ad051"
+    },
+    "https://developer.apple.com/documentation/eventkitui/eventkitui_class_available": {
+      "etag": "\"18ce-65d5609c74ff5-df\"",
+      "file_path": "documentation/EventKitUI/eventkitui_class_available.md",
+      "hash": "6119ed426c9b572936a80825be186a3e8ab6089339e97b7f7716d72d92c8e870"
+    },
+    "https://developer.apple.com/documentation/eventkitui/eventkitui_extern": {
+      "etag": "\"1833-65d5609c74ff5-df\"",
+      "file_path": "documentation/EventKitUI/eventkitui_extern.md",
+      "hash": "9732407b525b9d8705c71a54cfc4a552df28869ff93344c0ae223b9757828902"
     },
     "https://developer.apple.com/documentation/eventkitui/eventkituibundle()": {
       "etag": "\"1c75-65d5609c74ff5-df\"",
@@ -490,6 +510,16 @@
       "file_path": "documentation/EventKitUI/ekeventviewdelegate/eventviewcontroller(_,didcompletewith).md",
       "hash": "ac0ee701827e2a268fb816da03f336024f613713b9d0551678dc8b8b7765e5c2"
     },
+    "https://developer.apple.com/tutorials/data/documentation/eventkitui/ekui_extension_available_ios.json": {
+      "etag": "\"1916-65d5609c74ff5-df\"",
+      "file_path": "documentation/EventKitUI/ekui_extension_available_ios.md",
+      "hash": "661870f9c28df6c0bf330148876cc04a9374a0512cda0bae1319739821b44553"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/eventkitui/ekui_has_header.json": {
+      "etag": "\"188c-65d5609c74ff5-df\"",
+      "file_path": "documentation/EventKitUI/ekui_has_header.md",
+      "hash": "d093164815c29b0c00bfdbd2bbd6060e7e277766c7f6f8ae6b18562353d1d855"
+    },
     "https://developer.apple.com/tutorials/data/documentation/eventkitui/ekui_is_ios.json": {
       "etag": "\"21a0-65d5609c74ff5-df\"",
       "file_path": "documentation/EventKitUI/ekui_is_ios.md",
@@ -505,6 +535,16 @@
       "file_path": "documentation/EventKitUI/eventkitui-constants.md",
       "hash": "c1a2e4791b8019df1173bd349bc5096c5bb717cc58b60b6d3e04328a434ad051"
     },
+    "https://developer.apple.com/tutorials/data/documentation/eventkitui/eventkitui_class_available.json": {
+      "etag": "\"18ce-65d5609c74ff5-df\"",
+      "file_path": "documentation/EventKitUI/eventkitui_class_available.md",
+      "hash": "6119ed426c9b572936a80825be186a3e8ab6089339e97b7f7716d72d92c8e870"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/eventkitui/eventkitui_extern.json": {
+      "etag": "\"1833-65d5609c74ff5-df\"",
+      "file_path": "documentation/EventKitUI/eventkitui_extern.md",
+      "hash": "9732407b525b9d8705c71a54cfc4a552df28869ff93344c0ae223b9757828902"
+    },
     "https://developer.apple.com/tutorials/data/documentation/eventkitui/eventkituibundle().json": {
       "etag": "\"1c75-65d5609c74ff5-df\"",
       "file_path": "documentation/EventKitUI/eventkituibundle().md",
@@ -513,8 +553,8 @@
   },
   "metadata": {
     "render": {
-      "version": 1
+      "version": 2
     },
-    "total_pages": 102
+    "total_pages": 110
   }
 }

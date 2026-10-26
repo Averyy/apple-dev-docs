@@ -46,6 +46,8 @@ NSString *MLCReductionTypeDebugDescription(MLCReductionType reductionType);
   A reduction operation that applies to the sum of the dimensions.
 - [MLCReductionType.l1Norm](./l1norm.md)
   A reduction operation that applies a lasso regularization penalty.
+- [MLCReductionTypeCount](./mlcreductiontypecount.md)
+  The total number of reduction operations.
 
 
 ---

@@ -39,6 +39,8 @@ By default, the system displays your app’s name.
   The document target view.
 - [var browserViewController: UIDocumentBrowserViewController](./browserviewcontroller.md)
   The document browser view controller.
+- [background](../../uidocumentviewcontrollerlaunchoptions/background.md)
+  A configuration that describes the launch scene’s background.
 
 
 ---

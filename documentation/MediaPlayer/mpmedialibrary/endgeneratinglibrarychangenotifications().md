@@ -33,6 +33,8 @@ To completely turn off notifications, you must call this method the same number 
   Asks the media library to turn on notifications for whenever the library changes.
 - [var lastModifiedDate: Date](./lastmodifieddate.md)
   The calendar date on which the media library was last modified.
+- [MPMediaLibraryDidChangeNotification](../mpmedialibrarydidchangenotification.md)
+  Indicates the media library has changed.
 
 
 ---

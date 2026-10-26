@@ -48,6 +48,8 @@ kCTFontSansSerifClass
   The font’s style is among those typefaces designed to simulate handwriting.
 - [static var symbolicClass: CTFontStylisticClass](./symbolicclass.md)
   The font’s style is generally design independent.
+- [kCTFontUnknownClass](./kctfontunknownclass.md)
+  The font has no design classification.
 
 
 ---

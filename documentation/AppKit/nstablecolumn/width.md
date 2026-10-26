@@ -38,6 +38,10 @@ This property posts [`columnDidResizeNotification`](../nstableview/columndidresi
   The table column’s resizing mask.
 - [func sizeToFit()](./sizetofit%28%29.md)
   Resizes the table column to fit the width of its header cell.
+- [- isResizable](./isresizable.md)
+  Returns whether the column is resizable.
+- [- setResizable:](./setresizable_.md)
+  Sets whether the user can resize the receiver in its NSTableView.
 
 
 ---

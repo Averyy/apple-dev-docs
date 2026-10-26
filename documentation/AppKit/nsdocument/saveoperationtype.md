@@ -38,6 +38,8 @@ These values are used with method parameters of type [`NSDocument.SaveOperationT
   An operation that overwrites the document’s current contents with autosave data.
 - [NSDocument.SaveOperationType.autosaveAsOperation](./saveoperationtype/autosaveasoperation.md)
   An operation that writes a document’s contents to a new file or file package even though the user has not explicitly requested it, then changes the document’s current location to point to the just-written file or file package.
+- [NSAutosaveOperation](../nssaveoperationtype/nsautosaveoperation.md)
+  Old name for the [`NSAutosaveElsewhereOperation`](./saveoperationtype/autosaveelsewhereoperation.md) operation type.
 ### Initializers
 - [init?(rawValue: UInt)](./saveoperationtype/init%28rawvalue%29.md)
 

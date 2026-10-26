@@ -29,6 +29,8 @@ extern void dispatch_debugv(dispatch_object_t object, const char *message, va_li
 ### Functions
 - [func dispatch_get_current_queue() -> dispatch_queue_t](./dispatch_get_current_queue%28%29.md)
   Returns the queue on which the currently executing block is running.
+- [dispatch_debug](./dispatch_debug.md)
+  Programmatically logs debug information about a dispatch object.
 
 
 ---

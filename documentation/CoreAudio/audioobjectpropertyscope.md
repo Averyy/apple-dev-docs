@@ -42,6 +42,8 @@ The scope specifies the section of the object in which to look for the property,
 - [typealias AudioObjectPropertyListenerProc](./audioobjectpropertylistenerproc.md)
 - [typealias AudioObjectPropertySelector](./audioobjectpropertyselector.md)
 - [typealias AudioStreamID](./audiostreamid.md)
+- [AudioDriverPlugInDevicePropertyChangedProc](./audiodriverplugindevicepropertychangedproc.md)
+- [AudioDriverPlugInStreamPropertyChangedProc](./audiodriverpluginstreampropertychangedproc.md)
 
 
 ---

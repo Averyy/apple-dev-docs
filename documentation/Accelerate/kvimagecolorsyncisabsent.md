@@ -54,6 +54,7 @@ kvImageColorSyncIsAbsent
 - [var kvImageInternalError: Int](./kvimageinternalerror.md)
   A serious error occured inside vImage, which prevented vImage from continuing.
 - [var kvImageInvalidCVImageFormat: Int](./kvimageinvalidcvimageformat.md)
+- [kvImageInvalidImageFormat](./kvimageinvalidimageformat.md)
 
 
 ---

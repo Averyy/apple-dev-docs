@@ -170,6 +170,16 @@
       "file_path": "documentation/visionentitlementservices/enterpriselicensedetails/status/valid.md",
       "hash": "9c481513ab4f448a16dea0a58410d635a78f785819f2d9fe6ba6b7543f111398"
     },
+    "https://developer.apple.com/documentation/visionentitlementservices/visionentitlementservicesversionnumber": {
+      "etag": "\"c17-65e2ec913aa35-df\"",
+      "file_path": "documentation/visionentitlementservices/visionentitlementservicesversionnumber.md",
+      "hash": "a96dc62bd07a42b839884d9cadaf6cbf2ce47bff9e47847a76fba20d0b31b679"
+    },
+    "https://developer.apple.com/documentation/visionentitlementservices/visionentitlementservicesversionstring": {
+      "etag": "\"c5d-65e2ec913aa35-df\"",
+      "file_path": "documentation/visionentitlementservices/visionentitlementservicesversionstring.md",
+      "hash": "7f5dcd208f2d4552d4c6d8dbefc63909b9005ac7a22b7ca92ceff19b8cc57e7f"
+    },
     "https://developer.apple.com/tutorials/data/documentation/visionentitlementservices.json": {
       "etag": "\"2bb0-65e2ec913aa35-df\"",
       "file_path": "documentation/visionentitlementservices/visionentitlementservices.md",
@@ -339,12 +349,22 @@
       "etag": "\"1165-65e2ec913aa35-df\"",
       "file_path": "documentation/visionentitlementservices/enterpriselicensedetails/status/valid.md",
       "hash": "9c481513ab4f448a16dea0a58410d635a78f785819f2d9fe6ba6b7543f111398"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/visionentitlementservices/visionentitlementservicesversionnumber.json": {
+      "etag": "\"c17-65e2ec913aa35-df\"",
+      "file_path": "documentation/visionentitlementservices/visionentitlementservicesversionnumber.md",
+      "hash": "a96dc62bd07a42b839884d9cadaf6cbf2ce47bff9e47847a76fba20d0b31b679"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/visionentitlementservices/visionentitlementservicesversionstring.json": {
+      "etag": "\"c5d-65e2ec913aa35-df\"",
+      "file_path": "documentation/visionentitlementservices/visionentitlementservicesversionstring.md",
+      "hash": "7f5dcd208f2d4552d4c6d8dbefc63909b9005ac7a22b7ca92ceff19b8cc57e7f"
     }
   },
   "metadata": {
     "render": {
-      "version": 1
+      "version": 2
     },
-    "total_pages": 68
+    "total_pages": 72
   }
 }

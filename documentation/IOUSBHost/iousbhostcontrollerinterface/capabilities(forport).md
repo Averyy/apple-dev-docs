@@ -29,6 +29,7 @@ func capabilities(forPort port: Int) -> UnsafePointer<IOUSBHostCIMessage>
 - [func enqueueInterrupts(UnsafePointer<IOUSBHostCIMessage>, count: Int, expedite: Bool) throws](./enqueueinterrupts%28_,count,expedite%29.md)
 - [func getPortStateMachine(forCommand: UnsafePointer<IOUSBHostCIMessage>, error: NSErrorPointer) -> IOUSBHostCIPortStateMachine](./getportstatemachine%28forcommand,error%29.md)
 - [func getPortStateMachine(forPort: Int, error: NSErrorPointer) -> IOUSBHostCIPortStateMachine](./getportstatemachine%28forport,error%29.md)
+- [- initWithCapabilities:queue:interruptRateHz:error:commandHandler:doorbellHandler:interestHandler:](./initwithcapabilities_queue_interruptratehz_error_commandhandler_doorbellhandler_interesthandler_.md)
 
 
 ---

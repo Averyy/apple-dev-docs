@@ -33,6 +33,12 @@ Graphics attributes that are set on the cell (such as `backgroundColor`, `alignm
   The font that the cell uses to display text.
 - [func setButtonType(NSButton.ButtonType)](./setbuttontype%28_%29.md)
   Sets how the button highlights while pressed and how it shows its state.
+- [- setAlternateMnemonicLocation:](./setalternatemnemoniclocation_.md)
+  Sets the character in the alternate title that should be the “keyboard mnemonic.”
+- [- setAlternateTitleWithMnemonic:](./setalternatetitlewithmnemonic_.md)
+  Sets the title the button displays when it’s in its alternate state to the given string with an embedded mnemonic.
+- [- alternateMnemonic](./alternatemnemonic.md)
+  Returns the character in the alternate title that’s marked as the “keyboard mnemonic.”
 ### Setting Titles
 - [var alternateTitle: String](./alternatetitle.md)
   The string displayed by the button when it’s in its alternate state.

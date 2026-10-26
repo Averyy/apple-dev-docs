@@ -29,7 +29,7 @@ To run this sample app, you need the following:
 
 ##### Selecting the selfies
 
-The sample uses [`PhotosPicker`](https://developer.apple.com/documentation/photosui/photospicker) to allow a person to select the selfies to analyze, and sets the maximum number of images to 5 through the `maxSelectionCount` parameter. For more information on using `PhotosPicker`, see [Bringing Photos picker to your SwiftUI app](../PhotoKit/bringing-photos-picker-to-your-swiftui-app.md):
+The sample uses [`PhotosPicker`](../PhotosUI/photospicker.md) to allow a person to select the selfies to analyze, and sets the maximum number of images to 5 through the `maxSelectionCount` parameter. For more information on using `PhotosPicker`, see [Bringing Photos picker to your SwiftUI app](../PhotoKit/bringing-photos-picker-to-your-swiftui-app.md):
 
 ```swift
 PhotosPicker(selection: $selectedPhotos, maxSelectionCount: 5, matching: .images) {
@@ -37,7 +37,7 @@ PhotosPicker(selection: $selectedPhotos, maxSelectionCount: 5, matching: .images
 }
 ```
 
-The sample performs the `Vision` requests and displays the images using data, so the app converts each [`PhotosPickerItem`](https://developer.apple.com/documentation/photosui/photospickeritem) to data:
+The sample performs the `Vision` requests and displays the images using data, so the app converts each [`PhotosPickerItem`](../PhotosUI/photospickeritem.md) to data:
 
 ```swift
 for photo in selectedPhotos {

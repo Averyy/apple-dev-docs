@@ -74,6 +74,14 @@ Because this method does not return error information, it has been deprecated as
   An `NSFileManager` object sends this message to a handler immediately before attempting to move, copy, rename, or delete, or before attempting to link to a given path.
 - [func replaceItemAtURL(originalItemURL: NSURL, withItemAtURL: NSURL, backupItemName: String?, options: FileManager.ItemReplacementOptions) throws -> NSURL?](./replaceitematurl%28originalitemurl,withitematurl,backupitemname,options%29.md)
   Replaces the contents of the item at the specified URL in a manner that ensures no data loss occurs.
+- [- copyPath:toPath:handler:](../nsfilemanager/copypath_topath_handler_.md)
+  Copies the directory or file specified in a given path to a different location in the file system identified by another path.
+- [- movePath:toPath:handler:](../nsfilemanager/movepath_topath_handler_.md)
+  Moves the directory or file specified by a given path to a different location in the file system identified by another path.
+- [- removeFileAtPath:handler:](../nsfilemanager/removefileatpath_handler_.md)
+  Deletes the file, link, or directory (including, recursively, all subdirectories, files, and links in the directory) identified by a given path.
+- [- linkPath:toPath:handler:](../nsfilemanager/linkpath_topath_handler_.md)
+  Creates a link from a source to a destination.
 
 
 ---

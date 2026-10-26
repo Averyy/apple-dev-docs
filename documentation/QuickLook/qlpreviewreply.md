@@ -37,6 +37,12 @@ To provide a data-based preview, you have to return a QLPreviewReply object.
 - [var stringEncoding: String.Encoding](./qlpreviewreply/stringencoding-8rrio.md)
 - [var title: String](./qlpreviewreply/title.md)
   Custom display title for the preview. If left as the empty string, QuickLook will use the file name.
+- [stringEncoding](./qlpreviewreply/stringencoding-1k9kb.md)
+  String encoding for text or html based previews. Defaults to NSUTF8StringEncoding.
+### Instance Methods
+- [- initForPDFWithPageSize:documentCreationBlock:](./qlpreviewreply/initforpdfwithpagesize_documentcreationblock_.md)
+- [- initWithContextSize:isBitmap:drawingBlock:](./qlpreviewreply/initwithcontextsize_isbitmap_drawingblock_.md)
+- [- initWithDataOfContentType:contentSize:dataCreationBlock:](./qlpreviewreply/initwithdataofcontenttype_contentsize_datacreationblock_.md)
 
 ## Relationships
 

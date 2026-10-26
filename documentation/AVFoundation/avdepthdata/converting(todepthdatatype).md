@@ -45,6 +45,8 @@ This method raises an exception if you pass an invalid `depthDataType` value.
   The list of depth data formats to which you can convert this depth data.
 - [func replacingDepthDataMap(with: CVPixelBuffer) throws -> Self](./replacingdepthdatamap%28with%29.md)
   Returns a derivative depth data object by replacing the depth data map.
+- [availableDepthDataTypes](./availabledepthdatatypes-472g0.md)
+  The list of depth data formats to which you can convert this depth data.
 
 
 ---

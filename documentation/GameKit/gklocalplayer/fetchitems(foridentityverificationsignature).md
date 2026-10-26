@@ -77,6 +77,8 @@ If the generated and retrieved signatures match, GameKit authenticates the local
   A Boolean value that indicates whether a local player has signed in to Game Center.
 - [static let GKPlayerAuthenticationDidChangeNotificationName: NSNotification.Name](../../Foundation/nsnotification/name-swift.struct/gkplayerauthenticationdidchangenotificationname.md)
   A notification that posts after GameKit authenticates the local player.
+- [GKPlayerAuthenticationDidChangeNotificationName](../gkplayerauthenticationdidchangenotificationname.md)
+  A notification that posts after GameKit initializes the local player.
 
 
 ---

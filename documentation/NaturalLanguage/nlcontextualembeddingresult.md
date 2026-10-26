@@ -43,6 +43,10 @@ This object returns embeddings at the subword level, meaning a single word may g
   Iterates over the embedding vectors corresponding to the subword tokens within the specified range of the input string.
 - [func tokenVector(at: String.Index) -> ([Double], Range<String.Index>)?](./nlcontextualembeddingresult/tokenvector%28at%29.md)
   Gets a token vector at the index you specify.
+- [- enumerateTokenVectorsInRange:usingBlock:](./nlcontextualembeddingresult/enumeratetokenvectorsinrange_usingblock_.md)
+  Iterates over the embedding vectors corresponding to the subword tokens within the specified range of the input string.
+- [- tokenVectorAtIndex:tokenRange:](./nlcontextualembeddingresult/tokenvectoratindex_tokenrange_.md)
+  Returns a token vector at the specified character index.
 
 ## Relationships
 

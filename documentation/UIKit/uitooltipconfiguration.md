@@ -44,6 +44,8 @@ A [`UIToolTipInteraction`](./uitooltipinteraction.md) object asks for a configur
   The text to display in the tooltip.
 - [var sourceRect: CGRect?](./uitooltipconfiguration/sourcerect-8zvo1.md)
   The region of the view or control where the pointer must hover to trigger the appearance of the tooltip.
+- [sourceRect](./uitooltipconfiguration/sourcerect-iltv.md)
+  The region of the view or control where the pointer must hover to trigger the appearance of the tooltip.
 ### Initializers
 - [convenience init(toolTip: String, inRect: CGRect)](./uitooltipconfiguration/init%28tooltip,inrect%29.md)
 

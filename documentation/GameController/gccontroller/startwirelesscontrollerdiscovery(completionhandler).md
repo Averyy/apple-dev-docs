@@ -49,6 +49,10 @@ If you call the [`startWirelessControllerDiscovery(completionHandler:)`](./start
   A notification that posts after a controller connects to the device.
 - [static let GCControllerDidDisconnect: NSNotification.Name](../../Foundation/nsnotification/name-swift.struct/gccontrollerdiddisconnect.md)
   A notification that posts after a controller disconnects from the device.
+- [GCControllerDidConnectNotification](../gccontrollerdidconnectnotification.md)
+  A notification that posts after a controller connects to the device.
+- [GCControllerDidDisconnectNotification](../gccontrollerdiddisconnectnotification.md)
+  A notification that posts after a controller disconnects from the device.
 
 
 ---

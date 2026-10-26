@@ -45,6 +45,9 @@ To specify the IPv6 settings of a packet tunnel, set its [`NEPacketTunnelNetwork
   The IPv6 network traffic that the system routes to the primary physical interface, not the TUN interface.
 - [class NEIPv6Route](./neipv6route.md)
   The settings for an IPv6 route.
+### Type Methods
+- [+ settingsWithAutomaticAddressing](./neipv6settings/settingswithautomaticaddressing.md)
+- [+ settingsWithLinkLocalAddressing](./neipv6settings/settingswithlinklocaladdressing.md)
 
 ## Relationships
 

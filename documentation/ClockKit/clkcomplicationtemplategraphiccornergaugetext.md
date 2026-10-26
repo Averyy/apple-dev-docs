@@ -36,6 +36,10 @@ The system always displays the outer text as white. The gauge’s text can be mu
   Creates a template that has a gauge and an outer text element.
 - [init(gaugeProvider: CLKGaugeProvider, leadingTextProvider: CLKTextProvider?, trailingTextProvider: CLKTextProvider?, outerTextProvider: CLKTextProvider)](./clkcomplicationtemplategraphiccornergaugetext/init%28gaugeprovider,leadingtextprovider,trailingtextprovider,outertextprovider%29.md)
   Creates a template that has a gauge with leading and trailing text, and an outer text element.
+- [+ templateWithGaugeProvider:outerTextProvider:](./clkcomplicationtemplategraphiccornergaugetext/templatewithgaugeprovider_outertextprovider_.md)
+  Returns a template that has a gauge and an outer text element.
+- [+ templateWithGaugeProvider:leadingTextProvider:trailingTextProvider:outerTextProvider:](./clkcomplicationtemplategraphiccornergaugetext/templatewithgaugeprovider_leadingtextprovider_trailingtextprovider_outertextprovider_.md)
+  Returns a template that has a gauge with leading and trailing text, and an outer text element.
 ### Setting the Complication Data
 - [var outerTextProvider: CLKTextProvider](./clkcomplicationtemplategraphiccornergaugetext/outertextprovider.md)
   The outer text to display in the complication.

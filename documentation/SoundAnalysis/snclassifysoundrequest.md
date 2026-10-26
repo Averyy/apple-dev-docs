@@ -82,8 +82,12 @@ For more information about creating and using classify sound requests, see:
   A string array that contains every prediction label in the request’s underlying sound classifier model.
 - [enum SNTimeDurationConstraint](./sntimedurationconstraint-swift.enum.md)
   Defines the time duration windows the request’s underlying sound classifier accepts with a range, or an array, of durations.
+- [SNTimeDurationConstraint](./sntimedurationconstraint-c.class.md)
+  Defines the time duration windows the request’s underlying sound classifier accepts with a range, or an array, of durations.
 ### Instance Properties
 - [var windowDurationConstraint: SNTimeDurationConstraint](./snclassifysoundrequest/windowdurationconstraint-5no60.md)
+  A range or list of sound duration times the request’s underlying sound classifier supports.
+- [windowDurationConstraint](./snclassifysoundrequest/windowdurationconstraint-5aqvx.md)
   A range or list of sound duration times the request’s underlying sound classifier supports.
 ### Initializers
 - [init(MLModel: MLModel) throws](./snclassifysoundrequest/init%28mlmodel%29-9p7qz.md)

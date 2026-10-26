@@ -26,7 +26,7 @@ func editVoiceShortcutViewController(_ controller: INUIEditVoiceShortcutViewCont
 
 #### Discussion
 
-The system calls this method after the user re-records the invocation phrase for the shortcut. If your app displays the phrase, the app should update its screen to show the new phrase by retrieving the phrase text from the [`invocationPhrase`](https://developer.apple.com/documentation/intents/invoiceshortcut/invocationphrase) property on voiceShortcut.
+The system calls this method after the user re-records the invocation phrase for the shortcut. If your app displays the phrase, the app should update its screen to show the new phrase by retrieving the phrase text from the [`invocationPhrase`](../../Intents/invoiceshortcut/invocationphrase.md) property on voiceShortcut.
 
 ## Parameters
 

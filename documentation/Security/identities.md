@@ -50,12 +50,24 @@ An identity consists of a private key packaged with the certificate that contain
   Sets the identity that should be preferred for the specified name and key use.
 - [func SecIdentityCopyPreferred(CFString, CFArray?, CFArray?) -> SecIdentity?](./secidentitycopypreferred%28_,_,_%29.md)
   Retrieves the preferred identity for the specified name and key use.
+- [SecIdentityCopyPreference](./secidentitycopypreference.md)
+  Returns the preferred identity for the specified name and key use.
+- [SecIdentitySetPreference](./secidentitysetpreference.md)
+  Sets the preferred identity for the specified name and key use.
 ### Identity Search
 - [class SecIdentitySearch](./secidentitysearch.md)
   Contains information about an identity search.
+- [SecIdentitySearchCopyNext](./secidentitysearchcopynext.md)
+  Finds the next identity matching specified search criteria
+- [SecIdentitySearchCreate](./secidentitysearchcreate.md)
+  Creates a search object for finding identities.
+- [SecIdentitySearchGetTypeID](./secidentitysearchgettypeid.md)
+  Returns the unique identifier of the opaque type to which a `SecIdentitySearch` object belongs.
 ### Creating an Identity for Local Network TLS
 - [Creating an Identity for Local Network TLS](../Network/creating-an-identity-for-local-network-tls.md)
   Learn how to create and use a digital identity in your application for local network TLS.
+### Legacy Symbols
+- [OpaqueSecIdentityRef](./opaquesecidentityref.md)
 
 
 ---

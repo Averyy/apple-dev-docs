@@ -48,6 +48,8 @@ protocol WebFrameLoadDelegate : NSObjectProtocol
   Called when a frame will be closed.
 - [func webView(WebView!, willPerformClientRedirectTo: URL!, delay: TimeInterval, fire: Date!, for: WebFrame!)](./webframeloaddelegate/webview%28_,willperformclientredirectto,delay,fire,for%29.md)
   Called when a frame receives a client redirect and before it is fired.
+- [- webView:windowScriptObjectAvailable:](./webframeloaddelegate/webview_windowscriptobjectavailable_.md)
+  Called when a frame’s scripting object for a page is available. Use the [`webView:didClearWindowObject:forFrame:`](./webframeloaddelegate/webview%28_,didclearwindowobject,for%29.md) method instead.
 
 ## Relationships
 

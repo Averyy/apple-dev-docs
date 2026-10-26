@@ -31,6 +31,12 @@ The system requires your app to have the [`Background GPU Access`](../../../Bund
 
 Not all devices support background GPU use. For more information, see [Performing long-running tasks on iOS and iPadOS](../../performing-long-running-tasks-on-ios-and-ipados.md).
 
+## See Also
+
+### Identiying a resource
+- [BGContinuedProcessingTaskRequestResourcesDefault](../../bgcontinuedprocessingtaskrequestresources/bgcontinuedprocessingtaskrequestresourcesdefault.md)
+  An option for a task with no additional required system resources.
+
 
 ---
 

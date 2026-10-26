@@ -131,6 +131,14 @@ A typical app that implements copy, paste, and duplicate operations also manages
   An object that contains common types of data that the data detection system matches for a pasteboard.
 - [UIPasteboard.DetectionPattern](./uipasteboard/detectionpattern.md)
   An object that represents a pattern to detect for the pasteboard, such as a URL, text, or a number.
+- [- detectPatternsForPatterns:completionHandler:](./uipasteboard/detectpatternsforpatterns_completionhandler_.md)
+  Determines whether the first pasteboard item matches the specified patterns, without notifying the user.
+- [- detectPatternsForPatterns:inItemSet:completionHandler:](./uipasteboard/detectpatternsforpatterns_initemset_completionhandler_.md)
+  Determines whether pasteboard items match the specified patterns, without notifying the user.
+- [- detectValuesForPatterns:completionHandler:](./uipasteboard/detectvaluesforpatterns_completionhandler_.md)
+  Determines whether the first pasteboard item matches the specified patterns, reading the contents if it finds a match.
+- [- detectValuesForPatterns:inItemSet:completionHandler:](./uipasteboard/detectvaluesforpatterns_initemset_completionhandler_.md)
+  Determines whether pasteboard items match the specified patterns, reading the contents if it finds a match.
 ### Determining types of pasteboard items
 - [var types: [String]](./uipasteboard/types.md)
   The types of the first item on the pasteboard.

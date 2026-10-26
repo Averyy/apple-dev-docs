@@ -40,6 +40,8 @@ enum MLCComparisonOperation : int32_t;
 - [MLCComparisonOperation.notEqual](./mlccomparisonoperation/notequal.md)
 - [var debugDescription: String](./mlccomparisonoperation/debugdescription.md)
   A textual description of the comparison operation, suitable for debugging.
+- [MLCComparisonOperationCount](./mlccomparisonoperation/mlccomparisonoperationcount.md)
+  A number that represents the operation count.
 ### Initializers
 - [init?(rawValue: Int32)](./mlccomparisonoperation/init%28rawvalue%29.md)
 

@@ -36,6 +36,8 @@ class NSMutableOrderedSet
   Returns an initialized mutable ordered set with a given initial capacity.
 - [init()](./nsmutableorderedset/init%28%29.md)
   Initializes a newly allocated mutable ordered set.
+- [+ orderedSetWithCapacity:](./nsmutableorderedset/orderedsetwithcapacity_.md)
+  Creates and returns an mutable ordered set with a given initial capacity.
 ### Adding, Removing, and Reordering Entries
 - [func add(Any)](./nsmutableorderedset/add%28_%29.md)
   Appends a given object to the end of the mutable ordered set, if it is not already a member.
@@ -73,6 +75,8 @@ class NSMutableOrderedSet
   Exchanges the object at the specified index with the object at the other index.
 - [func filter(using: NSPredicate)](./nsmutableorderedset/filter%28using%29.md)
   Evaluates a given predicate against the mutable ordered set’s content and leaves only objects that match.
+- [- setObject:atIndexedSubscript:](./nsmutableorderedset/setobject_atindexedsubscript_.md)
+  Replaces the given object at the specified index of the mutable ordered set.
 ### Sorting Entries
 - [func sort(using: [NSSortDescriptor])](./nsmutableorderedset/sort%28using%29.md)
   Sorts the receiving ordered set using a given array of sort descriptors.
@@ -98,6 +102,8 @@ class NSMutableOrderedSet
 ### Initializers
 - [init?(coder: NSCoder)](./nsmutableorderedset/init%28coder%29.md)
 - [convenience init(objects: UnsafePointer<AnyObject>, count: Int)](./nsmutableorderedset/init%28objects,count%29.md)
+### Instance Methods
+- [- applyDifference:](./nsmutableorderedset/applydifference_.md)
 
 ## Relationships
 

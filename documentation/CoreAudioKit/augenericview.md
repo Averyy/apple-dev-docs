@@ -69,6 +69,8 @@ class AUGenericView
   A view that provides a specialized user interface for a Cocoa-based panner audio unit.
 - [protocol AUCustomViewPersistentData](./aucustomviewpersistentdata.md)
   A protocol that defines the methods an Audio Unit host calls to manage view data.
+- [AUViewControllerBase](./auviewcontrollerbase.md)
+  A type definition that indicates the the platform’s Audio Unit view controller base class.
 
 
 ---

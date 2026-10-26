@@ -40,6 +40,8 @@ This enumeration defines the possible values for the photo picker configuration 
   A capability that prompts for confirmation if a person selects a photo that contains nudity.
 - [static var stagingArea: PHPickerCapabilities](./phpickercapabilities/stagingarea.md)
   A capability that corresponds to an area in which the selected photos display.
+- [PHPickerCapabilitiesNone](./phpickercapabilities/phpickercapabilitiesnone.md)
+  An option that represents no capabilities.
 ### Creating a capability
 - [init(rawValue: UInt)](./phpickercapabilities/init%28rawvalue%29.md)
   Creates a photo picker capability.
@@ -55,6 +57,20 @@ This enumeration defines the possible values for the photo picker configuration 
 - [Sendable](../Swift/sendable.md)
 - [SendableMetatype](../Swift/sendablemetatype.md)
 - [SetAlgebra](../Swift/setalgebra.md)
+
+## See Also
+
+### Customizing picker appearance and behavior
+- [mode](./phpickerconfiguration-c.class/mode.md)
+  A layout type for the photos in the picker’s view.
+- [PHPickerMode](./phpickermode-c.enum.md)
+  Layout options that determine how the picker orders photos visually.
+- [disabledCapabilities](./phpickerconfiguration-c.class/disabledcapabilities.md)
+  The aspects of a photo picker’s default appearance that your app can disable.
+- [edgesWithoutContentMargins](./phpickerconfiguration-c.class/edgeswithoutcontentmargins.md)
+  The portions of a photo picker’s perimeter that are borderless.
+- [PHPickerUpdateConfiguration](./phpickerupdateconfiguration.md)
+  An object that defines the aspects of a photo picker’s appearance that can change while it’s presented.
 
 
 ---

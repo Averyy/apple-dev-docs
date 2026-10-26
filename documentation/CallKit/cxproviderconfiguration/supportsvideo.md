@@ -39,6 +39,8 @@ By default, this property is set to [`false`](../../Swift/false.md).
   The supported handle types.
 - [var includesCallsInRecents: Bool](./includescallsinrecents.md)
   A Boolean value that indicates whether the provider includes a call in the system’s Recents list after the call ends.
+- [supportedHandleTypes](./supportedhandletypes-995uh.md)
+  The supported handle types.
 
 
 ---

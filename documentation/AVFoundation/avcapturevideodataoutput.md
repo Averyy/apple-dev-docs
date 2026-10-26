@@ -63,6 +63,8 @@ This object supports compressed video data output for macOS only. It can output 
   Returns a dictionary of recommended output settings for writing the specified code, file type, and output URL.
 - [func recommendedVideoSettingsForAssetWriter(writingTo: AVFileType) -> [String : Any]?](./avcapturevideodataoutput/recommendedvideosettingsforassetwriter%28writingto%29.md)
   Specifies the recommended settings for use with an AVAssetWriterInput.
+- [minFrameDuration](./avcapturevideodataoutput/minframeduration.md)
+  The minimum frame duration.
 ### Retrieving supported video types
 - [var availableVideoPixelFormatTypes: [OSType]](./avcapturevideodataoutput/availablevideopixelformattypes.md)
   The video pixel formats the output supports.
@@ -72,6 +74,8 @@ This object supports compressed video data output for macOS only. It can output 
   The video codecs that the output supports for writing video to the output file.
 - [struct AVVideoCodecType](./avvideocodectype.md)
   A set of constants that describe the codecs the system supports for video capture.
+- [availableVideoCVPixelFormatTypes](./avcapturevideodataoutput/availablevideocvpixelformattypes.md)
+  The video pixel formats the output supports.
 ### Receiving captured video data
 - [func setSampleBufferDelegate((any AVCaptureVideoDataOutputSampleBufferDelegate)?, queue: dispatch_queue_t?)](./avcapturevideodataoutput/setsamplebufferdelegate%28_,queue%29.md)
   Sets the sample buffer delegate and the queue for invoking callbacks.
@@ -83,6 +87,8 @@ This object supports compressed video data output for macOS only. It can output 
   Methods for receiving sample buffers from, and monitoring the status of, a video data output.
 ### Creating video capture output
 - [init()](./avcapturevideodataoutput/init%28%29.md)
+  Creates a new video file output.
+- [+ new](./avcapturevideodataoutput/new.md)
   Creates a new video file output.
 
 ## Relationships

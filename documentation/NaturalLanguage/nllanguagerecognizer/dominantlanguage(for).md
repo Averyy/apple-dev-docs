@@ -44,6 +44,8 @@ The most probable language of the piece of text.
   Generates the probabilities of possible languages for the processed text.
 - [func reset()](./reset%28%29.md)
   Resets the recognizer to its initial state.
+- [- languageHypothesesWithMaximum:](./languagehypotheseswithmaximum_.md)
+  Generates the probabilities of possible languages for the processed text.
 
 
 ---

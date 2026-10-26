@@ -31,6 +31,22 @@ var isEnabled: Bool { get }
 
 For file-based media, you can change its [`isEnabled`](../avplayeritemtrack/isenabled.md) presentation state using [`AVPlayerItemTrack`](../avplayeritemtrack.md).
 
+## See Also
+
+### Accessing track information
+- [formatDescriptions](./formatdescriptions.md)
+  The format descriptions of the media samples that a track references.
+- [playable](./isplayable.md)
+  A Boolean value that indicates whether the track is playable in the current environment.
+- [decodable](./isdecodable.md)
+  A Boolean value that indicates whether the track is decodable in the current environment.
+- [selfContained](./isselfcontained.md)
+  A Boolean value that indicates whether this track references sample data only within its container file.
+- [totalSampleDataLength](./totalsampledatalength.md)
+  The total number of bytes of sample data the track requires.
+- [- hasMediaCharacteristic:](./hasmediacharacteristic%28_%29.md)
+  Returns a Boolean value that indicates whether the track references media with the specified media characteristic.
+
 
 ---
 

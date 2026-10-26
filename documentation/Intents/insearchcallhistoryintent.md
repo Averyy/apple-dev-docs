@@ -47,6 +47,8 @@ The following table lists additional attributes of this intent object:
   Creates a search call history intent object with the specified search criteria.
 - [convenience init(callType: INCallRecordType, dateCreated: INDateComponentsRange?, recipient: INPerson?, callCapabilities: INCallCapabilityOptions)](./insearchcallhistoryintent/init%28calltype,datecreated,recipient,callcapabilities%29.md)
   Creates a search call history intent object with the specified search criteria.
+- [- initWithDateCreated:recipient:callCapabilities:callTypes:unseen:](./insearchcallhistoryintent/initwithdatecreated_recipient_callcapabilities_calltypes_unseen_.md)
+  Initializes the search call history intent object with the specified search criteria.
 ### Getting the Recipient
 - [var recipient: INPerson?](./insearchcallhistoryintent/recipient.md)
   The person involved in the call.
@@ -60,6 +62,8 @@ The following table lists additional attributes of this intent object:
 - [var callCapabilities: INCallCapabilityOptions](./insearchcallhistoryintent/callcapabilities.md)
   The audio-video capabilities of the call.
 - [var unseen: Bool?](./insearchcallhistoryintent/unseen-9ua7o.md)
+  A Boolean value that indicates whether the user has seen the call yet.
+- [unseen](./insearchcallhistoryintent/unseen-1mohp.md)
   A Boolean value that indicates whether the user has seen the call yet.
 ### Initializers
 - [convenience init(call: INCallRecordType, dateCreated: INDateComponentsRange?, recipient: INPerson?, callCapabilities: INCallCapabilityOptions)](./insearchcallhistoryintent/init%28call,datecreated,recipient,callcapabilities%29.md)

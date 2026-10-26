@@ -26,6 +26,10 @@ class CWNetworkProfile
   Creates and returns a CWNetworkProfile object.
 - [init(networkProfile: CWNetworkProfile)](./cwnetworkprofile/init%28networkprofile%29.md)
   Creates and returns a CWNetworkProfile object initialized with the given CWNetworkProfile object.
+- [+ networkProfile](./cwnetworkprofile/networkprofile.md)
+  Convenience method for getting a CWNetworkProfile object.
+- [+ networkProfileWithNetworkProfile:](./cwnetworkprofile/networkprofilewithnetworkprofile_.md)
+  Convenience method for getting a CWNetworkProfile object initialized with the given CWNetworkProfile object.
 ### Comparing network profiles
 - [func isEqual(to: CWNetworkProfile) -> Bool](./cwnetworkprofile/isequal%28to%29.md)
   Determine CWNetworkProfile object equality.

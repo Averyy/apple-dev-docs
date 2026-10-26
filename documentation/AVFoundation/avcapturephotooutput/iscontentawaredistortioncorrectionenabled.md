@@ -43,6 +43,8 @@ Enabling this property requires a lengthy reconfiguration of the capture render 
   A Swift array of flash settings this capture output currently supports.
 - [var isAutoRedEyeReductionSupported: Bool](./isautoredeyereductionsupported.md)
   A Boolean value indicating whether the capture output supports automatic red-eye reduction.
+- [supportedFlashModes](./supportedflashmodes-4u69s.md)
+  The flash settings this capture output currently supports.
 
 
 ---

@@ -40,6 +40,8 @@ Don’t create instances of this class directly. Instead, create instances of th
   Translates a point index into a unit distance along the shape.
 - [func locations(at: IndexSet) -> [CGFloat]](./mkmultipoint/locations%28at%29.md)
   Translates a point index set into a unit distance along the shape.
+- [- locationsAtPointIndexes:](./mkmultipoint/locationsatpointindexes_.md)
+  Returns a set of unit distance values that correspond to the point indexes along the shape.
 ### Getting coordinate values
 - [func getCoordinates(UnsafeMutablePointer<CLLocationCoordinate2D>, range: NSRange)](./mkmultipoint/getcoordinates%28_,range%29.md)
   Retrieves one or more points associated with the shape and converts them to coordinate values.

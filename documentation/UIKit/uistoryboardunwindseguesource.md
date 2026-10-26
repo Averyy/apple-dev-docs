@@ -62,6 +62,8 @@ You don’t create instances of this class yourself. UIKit creates an unwind seg
   An encapsulation of the design-time view controller graph represented in an Interface Builder storyboard resource file.
 - [class UIStoryboardSegue](./uistoryboardsegue.md)
   An object that prepares for and performs the visual transition between two view controllers.
+- [UIStoryboardViewControllerCreator](./uistoryboardviewcontrollercreator.md)
+  A handler block that contains the custom initialization code for a view controller you instantiate from a storyboard.
 
 
 ---

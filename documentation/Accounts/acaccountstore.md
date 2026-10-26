@@ -35,6 +35,8 @@ The [`ACAccountStore`](./acaccountstore.md) class provides an interface for acce
   Obtains permission to access protected user properties.
 - [typealias ACAccountStoreRequestAccessCompletionHandler](./acaccountstorerequestaccesscompletionhandler.md)
   Specifies a handler to call when access is granted or denied.
+- [- requestAccessToAccountsWithType:withCompletionHandler:](./acaccountstore/requestaccesstoaccountswithtype_withcompletionhandler_.md)
+  Requests access to accounts of the specified type.
 ### Getting Accounts
 - [var accounts: NSArray!](./acaccountstore/accounts.md)
   The accounts managed by this account store.
@@ -62,6 +64,9 @@ The [`ACAccountStore`](./acaccountstore.md) class provides an interface for acce
   Removes an account from the account store.
 - [typealias ACAccountStoreRemoveCompletionHandler](./acaccountstoreremovecompletionhandler.md)
   Specifies a handler to call when an account is removed from the store.
+### Responding to Changes
+- [ACAccountStoreDidChangeNotification](./acaccountstoredidchangenotification.md)
+  Posted when the accounts managed by this account store changed in the database.
 
 ## Relationships
 

@@ -24,6 +24,12 @@ init(dictionary propertiesDictionary: [CMIOExtensionProperty : CMIOExtensionProp
 
 - `propertiesDictionary`: A dictionary of properties and their initial states.
 
+## See Also
+
+### Creating Stream Properties
+- [+ streamPropertiesWithDictionary:](./streampropertieswithdictionary_.md)
+  Returns a new properties object that provides the specified properties and default states.
+
 
 ---
 

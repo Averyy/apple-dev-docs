@@ -89,6 +89,7 @@ A [`CGSize`](./cgsize.md) structure is sometimes used to represent a distance ve
 - [struct CGRect](./cgrect.md)
 - [struct CGVector](./cgvector.md)
   A structure that contains a two-dimensional vector.
+- [IUnknownVTbl](./iunknownvtbl.md)
 
 
 ---

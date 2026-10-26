@@ -23,6 +23,8 @@ static simd_double4 simd_make_double4(double x, double y, double z, double w);
   Returns a new vector with the first element set to a scalar value, and other elements set to zero.
 - [func simd_make_double4_undef(Double) -> simd_double4](./simd_make_double4_undef%28_%29-22old.md)
   Returns a new vector with the first element set to a scalar value, and other elements undefined.
+- [vector4](./vector4-4b8da.md)
+  Returns a new vector from the specified scalar values.
 
 
 ---

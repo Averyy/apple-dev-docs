@@ -58,6 +58,8 @@ If you are drawing the custom `NSBox` entirely by yourself, and you want it to l
   The rectangle in which the receiver’s title is drawn.
 - [var borderType: NSBorderType](./nsbox/bordertype.md)
   The receiver’s border type.
+- [- setTitleWithMnemonic:](./nsbox/settitlewithmnemonic_.md)
+  Sets the title of the receiver with a character denoted as an access key.
 ### Customizing
 - [var borderColor: NSColor](./nsbox/bordercolor.md)
   The color of the receiver’s border when the receiver is a custom box with a simple line border.

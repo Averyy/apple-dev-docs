@@ -66,6 +66,27 @@ You initialize a `PDFDocument` object with PDF data or with a URL to a PDF file.
 - [init?(URL: URL)](./pdfdocument/init%28url%29-7sttu.md)
 ### Instance Methods
 - [func selection(from: PDFPage, at: CGPoint, to: PDFPage, at: CGPoint, with: PDFSelectionGranularity) -> PDFSelection?](./pdfdocument/selection%28from,at,to,at,with%29.md)
+### Notifications
+- [PDFDocumentDidUnlockNotification](./pdfdocumentdidunlocknotification.md)
+  A notification that a document unlocks after a [`unlockWithPassword:`](./pdfdocument/unlock%28withpassword%29.md) message.
+- [PDFDocumentDidBeginFindNotification](./pdfdocumentdidbeginfindnotification.md)
+  A notification that the [`beginFindString:withOptions:`](./pdfdocument/beginfindstring%28_,withoptions%29.md) or [`findString:withOptions:`](./pdfdocument/findstring%28_,withoptions%29.md) method begins finding.
+- [PDFDocumentDidEndFindNotification](./pdfdocumentdidendfindnotification.md)
+  A notification that the [`beginFindString:withOptions:`](./pdfdocument/beginfindstring%28_,withoptions%29.md) or [`findString:withOptions:`](./pdfdocument/findstring%28_,withoptions%29.md) method returns.
+- [PDFDocumentDidBeginPageFindNotification](./pdfdocumentdidbeginpagefindnotification.md)
+  A notification that a find operation begins working on a new page of a document.
+- [PDFDocumentDidEndPageFindNotification](./pdfdocumentdidendpagefindnotification.md)
+  A notification that a find operation finishes working on a page in a document.
+- [PDFDocumentDidFindMatchNotification](./pdfdocumentdidfindmatchnotification.md)
+  A notification that a string match is found in a document.
+- [PDFDocumentDidBeginWriteNotification](./pdfdocumentdidbeginwritenotification.md)
+  A notification that a write operation begins working on a document.
+- [PDFDocumentDidEndWriteNotification](./pdfdocumentdidendwritenotification.md)
+  A notification that a write operation finishes working on a document.
+- [PDFDocumentDidBeginPageWriteNotification](./pdfdocumentdidbeginpagewritenotification.md)
+  A notification that a write operation begins working on a page in a document.
+- [PDFDocumentDidEndPageWriteNotification](./pdfdocumentdidendpagewritenotification.md)
+  A notification that a write operation finishes working on a page in a document.
 
 ## Relationships
 

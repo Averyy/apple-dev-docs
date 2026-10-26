@@ -44,7 +44,7 @@ After adding your Intents extension target to your project, specify the intents 
 
 1. In Xcode’s Project editor, select the extension target  and expand the Supported Intents section in the General pane.
 2. Add the class name of each intent you support.
-3. If you support the [`INPlayMediaIntent`](https://developer.apple.com/documentation/intents/inplaymediaintent), also select each type of media your app plays in the Media Categories list. For more details about these categories, see [`SupportedMediaCategories`](../BundleResources/information-property-list/nsextension/nsextensionattributes/supportedmediacategories.md).
+3. If you support the [`INPlayMediaIntent`](../Intents/inplaymediaintent.md), also select each type of media your app plays in the Media Categories list. For more details about these categories, see [`SupportedMediaCategories`](../BundleResources/information-property-list/nsextension/nsextensionattributes/supportedmediacategories.md).
 4. For each intent you support, select the appropriate Authentication requirement.
 
 Choose Restricted While Locked to specify that the intent requires an unlocked device. Some intents, such as those involving financial transactions, always require the user’s device to be unlocked. For those intents, Siri automatically asks the user to unlock the device, even if you leave the Authentication set to None. In watchOS, all intents require the device to be unlocked.

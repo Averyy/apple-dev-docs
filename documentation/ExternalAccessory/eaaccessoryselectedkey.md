@@ -40,6 +40,10 @@ The value assigned to this key is the [`EAAccessory`](./eaaccessory.md) object t
   A notification that is posted when an accessory is disconnected and no longer available for your application to use.
 - [let EAAccessoryKey: String](./eaaccessorykey.md)
   A key that indicates the accessory object whose status changed.
+- [EAAccessoryDidConnectNotification](./eaaccessorydidconnectnotification.md)
+  A notification that the system sends when an accessory becomes connected and available for your application to use.
+- [EAAccessoryDidDisconnectNotification](./eaaccessorydiddisconnectnotification.md)
+  A notification that is posted when an accessory is disconnected and no longer available for your application to use.
 
 
 ---

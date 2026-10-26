@@ -56,6 +56,8 @@ You use this method to clear out custom data caches—transient values declared 
   Provides an opportunity to add code into the life cycle of the managed object before converting it to a fault.
 - [class func fetchRequest() -> NSFetchRequest<any NSFetchRequestResult>](./fetchrequest%28%29.md)
   Returns an initialized fetch request with the entity this subclass represents.
+- [+ fetchRequest](./fetchrequest.md)
+  Returns an initialized fetch request with the entity this subclass represents.
 
 
 ---

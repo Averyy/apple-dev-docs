@@ -57,6 +57,8 @@ PHPhotosErrorRelinquishingLibraryBundleToWriter
   An error that indicates the request for an asset resource fails because of a network connection error.
 - [PHPhotosError.Code.notEnoughSpace](./notenoughspace.md)
   An error that indicates there’s not enough space to perform the requested change.
+- [PHPhotosErrorOperationInterrupted](./operationinterrupted.md)
+  An error that indicates an interruption occurs and the operation can’t complete.
 
 
 ---

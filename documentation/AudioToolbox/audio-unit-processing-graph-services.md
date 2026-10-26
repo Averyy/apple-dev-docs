@@ -82,6 +82,18 @@ A graph object will have a single head node––an output unit. The output unit
   Disposes of an audio processing graph.
 - [func NewAUGraph(UnsafeMutablePointer<AUGraph?>) -> OSStatus](./newaugraph%28_%29.md)
   Creates a new audio processing graph.
+- [AUGraphCountNodeConnections](./augraphcountnodeconnections.md)
+  Deprecated in OS X v10.5. Instead, use [`AUGraphCountNodeInteractions`](./augraphcountnodeinteractions%28_,_,_%29.md).
+- [AUGraphGetConnectionInfo](./augraphgetconnectioninfo.md)
+  Deprecated in OS X v10.5. Instead, use [`AUGraphGetInteractionInfo`](./augraphgetinteractioninfo%28_,_,_%29.md).
+- [AUGraphGetNodeConnections](./augraphgetnodeconnections.md)
+  Deprecated in OS X v10.5. Instead, use [`AUGraphGetNodeInteractions`](./augraphgetnodeinteractions%28_,_,_,_%29.md).
+- [AUGraphGetNodeInfo](./augraphgetnodeinfo.md)
+  Deprecated in OS X v10.5. Instead, use [`AUGraphNodeInfo`](./augraphnodeinfo%28_,_,_,_%29.md).
+- [AUGraphGetNumberOfConnections](./augraphgetnumberofconnections.md)
+  Deprecated in OS X v10.5. Instead, use [`AUGraphGetNumberOfInteractions`](./augraphgetnumberofinteractions%28_,_%29.md).
+- [AUGraphNewNode](./augraphnewnode.md)
+  Deprecated in OS X v10.5. Instead, use [`AUGraphAddNode`](./augraphaddnode%28_,_,_%29.md).
 ### Data Types
 - [struct AudioUnitNodeConnection](./audiounitnodeconnection.md)
   A connection between two node objects in an audio processing graph.

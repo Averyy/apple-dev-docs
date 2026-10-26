@@ -65,6 +65,7 @@ For information about other capabilities that you can enable by using this view 
 
 ### Inherits From
 - [UIViewController](../UIKit/uiviewcontroller.md)
+- [NSViewController](../AppKit/nsviewcontroller.md)
 ### Conforms To
 - [CVarArg](../Swift/cvararg.md)
 - [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)

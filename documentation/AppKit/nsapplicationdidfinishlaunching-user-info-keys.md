@@ -12,6 +12,8 @@ The keys you use to access values in the launch options dictionary that the syst
   A Boolean value that indicates if the app launch is a default launch.
 - [class let launchUserNotificationUserInfoKey: String](./nsapplication/launchusernotificationuserinfokey.md)
   A key that indicates your app was launched because a user activated a notification in the Notification Center.
+- [NSApplicationLaunchRemoteNotificationKey](./nsapplicationlaunchremotenotificationkey.md)
+  Use this key to access the JSON push-notification payload from the user info dictionary of the `didFinishLaunchingNotification` notification.
 
 ## See Also
 

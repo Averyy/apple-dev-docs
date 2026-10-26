@@ -117,6 +117,8 @@ ClockKit calls your data source methods on your watchOS app’s main thread.
   An identifier representing a default complication.
 - [class CLKComplicationDescriptor](./clkcomplicationdescriptor.md)
   A descriptor that defines a complication and the families that it supports.
+- [CLKAllComplicationFamilies](./clkallcomplicationfamilies.md)
+  Returns an array containing all possible values of the complication family enumeration.
 
 
 ---

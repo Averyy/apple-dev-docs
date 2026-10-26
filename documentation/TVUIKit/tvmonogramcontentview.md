@@ -47,9 +47,16 @@ override func updateConfiguration(using state: UICellConfigurationState) {
   Creates a monogram content view with the configuration you specify.
 - [struct TVMonogramContentConfiguration](./tvmonogramcontentconfiguration-swift.struct.md)
   A content configuration for a monogram view.
+- [- initWithConfiguration:](./tvmonogramcontentview/initwithconfiguration_.md)
+  Creates a monogram content view with the configuration you specify.
+- [TVMonogramContentConfiguration](./tvmonogramcontentconfiguration-c.class.md)
+  A content configuration for a monogram view.
 ### Managing the Content Layout
 - [var focusedFrameGuide: UILayoutGuide](./tvmonogramcontentview/focusedframeguide.md)
   A guide for positioning other elements with the content view image’s focused frame.
+### Managing the Content Configuration
+- [configuration](./tvmonogramcontentview/configuration.md)
+  The current configuration of the view.
 
 ## Relationships
 
@@ -84,6 +91,7 @@ override func updateConfiguration(using state: UICellConfigurationState) {
 - [UITraitChangeObservable](../UIKit/uitraitchangeobservable-67e94.md)
 - [UITraitEnvironment](../UIKit/uitraitenvironment.md)
 - [UIUserActivityRestoring](../UIKit/uiuseractivityrestoring.md)
+- [UIContentView](../UIKit/uicontentview-3zu2k.md)
 
 ## See Also
 

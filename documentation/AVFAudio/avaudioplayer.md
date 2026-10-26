@@ -87,6 +87,8 @@ For more information about preparing your app to play audio, see [Configuring yo
 ### Configuring the Spatial Audio experience
 - [var intendedSpatialExperience: any SpatialAudioExperience](./avaudioplayer/intendedspatialexperience-27klj.md)
   The intended spatial experience for this player.
+- [intendedSpatialExperience](./avaudioplayer/intendedspatialexperience-6py9z.md)
+  The intended spatial experience for this player.
 ### Managing audio channels
 - [var numberOfChannels: Int](./avaudioplayer/numberofchannels.md)
   The number of audio channels in the player’s audio.

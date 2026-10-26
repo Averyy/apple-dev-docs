@@ -58,6 +58,8 @@ enum SCContentSharingPickerMode : NSUInteger;
   An instance for configuring the system content-sharing picker.
 - [protocol SCContentSharingPickerObserver](./sccontentsharingpickerobserver.md)
   An observer protocol your app implements to receive messages from the operating system’s content picker.
+- [SCContentSharingPickerConfiguration](./sccontentsharingpickerconfiguration-c.class.md)
+  An instance for configuring the system content-sharing picker.
 
 
 ---

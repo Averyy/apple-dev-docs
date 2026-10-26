@@ -80,6 +80,10 @@ If you intend to display an image only once and don’t want it added to the sys
 - [convenience init(resource: ImageResource)](./init%28resource%29.md)
 - [Building high-performance lists and collection views](../building-high-performance-lists-and-collection-views.md)
   Improve the performance of lists and collections in your app with prefetching and image preparation.
+- [+ imageNamed:inBundle:variableValue:withConfiguration:](./imagenamed_inbundle_variablevalue_withconfiguration_.md)
+  Creates an image by using the name, configuration, and variable value you specify.
+- [+ systemImageNamed:variableValue:withConfiguration:](./systemimagenamed_variablevalue_withconfiguration_.md)
+  Creates an image object that contains a system symbol image with the configuration and variable value you specify.
 
 
 ---

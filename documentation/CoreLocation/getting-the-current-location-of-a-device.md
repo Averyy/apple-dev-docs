@@ -66,6 +66,11 @@ Another way to improve power usage is to add the [`NSLocationDefaultAccuracyRedu
   Define boundaries and act on user location updates.
 - [class CLServiceSession](./clservicesession-pt7n.md)
   An object that provides diagnostics about an app’s authorization to use location services.
+- [CLServiceSession](./clservicesession-2ddhd.md)
+- [CLServiceSessionDiagnostic](./clservicesessiondiagnostic.md)
+- [CLBackgroundActivitySessionDiagnostic](./clbackgroundactivitysessiondiagnostic.md)
+- [CLLocationUpdater](./cllocationupdater.md)
+  An object that provides device location updates.
 
 
 ---

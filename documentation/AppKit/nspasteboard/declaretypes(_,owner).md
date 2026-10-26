@@ -45,6 +45,8 @@ In general, you should not use this method with [`writeObjects(_:)`](./writeobje
   Clears the existing contents of the pasteboard.
 - [var changeCount: Int](./changecount.md)
   The receiver’s change count.
+- [- pasteboard:provideDataForType:](../../ObjectiveC/nsobject-swift.class/pasteboard_providedatafortype_.md)
+  Implemented by an owner object to provide promised data.
 ### Writing data (macOS 10.5 and earlier)
 - [func addTypes([NSPasteboard.PasteboardType], owner: Any?) -> Int](./addtypes%28_,owner%29.md)
   Adds promises for the specified types to the first pasteboard item.

@@ -33,6 +33,10 @@ init(row1Column1TextProvider: CLKTextProvider, row1Column2TextProvider: CLKTextP
 ### Creating the Template
 - [init(row1ImageProvider: CLKImageProvider?, row1Column1TextProvider: CLKTextProvider, row1Column2TextProvider: CLKTextProvider, row2ImageProvider: CLKImageProvider?, row2Column1TextProvider: CLKTextProvider, row2Column2TextProvider: CLKTextProvider, row3ImageProvider: CLKImageProvider?, row3Column1TextProvider: CLKTextProvider, row3Column2TextProvider: CLKTextProvider)](./init%28row1imageprovider,row1column1textprovider,row1column2textprovider,row2imageprovider,row2column1textprovider,row2column2textprovider,row3imageprovider,row3column1textprovider,row3column2textprovider%29.md)
   Creates a template that has a column of images and two columns of text.
+- [+ templateWithRow1Column1TextProvider:row1Column2TextProvider:row2Column1TextProvider:row2Column2TextProvider:row3Column1TextProvider:row3Column2TextProvider:](./templatewithrow1column1textprovider_row1column2textprovider_row2column1textprovider_row2column2textprovider_row3column1textprovider_row3column2textprovider_.md)
+  Returns a template that has two columns of text.
+- [+ templateWithRow1ImageProvider:row1Column1TextProvider:row1Column2TextProvider:row2ImageProvider:row2Column1TextProvider:row2Column2TextProvider:row3ImageProvider:row3Column1TextProvider:row3Column2TextProvider:](./templatewithrow1imageprovider_row1column1textprovider_row1column2textprovider_row2imageprovider_row2column1textprovider_row2column2textprovider_row3imageprovider_row3column1textprovider_row3column2textprovider_.md)
+  Returns a template that has a column of images and two columns of text.
 
 
 ---

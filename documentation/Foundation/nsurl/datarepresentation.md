@@ -62,6 +62,12 @@ If the URL was initialized with `initWithData:relativeToURL:`, the data represen
   Initializes a newly created NSURL that points to a location specified by resolving bookmark data.
 - [class func fileURL(withFileSystemRepresentation: UnsafePointer<CChar>, isDirectory: Bool, relativeTo: URL?) -> URL](./fileurl%28withfilesystemrepresentation,isdirectory,relativeto%29.md)
   Returns a new URL object initialized with a C string representing a local file system path.
+- [+ URLWithString:](./urlwithstring_.md)
+  Creates and returns an NSURL object initialized with a provided URL string.
+- [+ URLWithString:encodingInvalidCharacters:](./urlwithstring_encodinginvalidcharacters_.md)
+  Creates and returns an instance from the provided string, optionally IDNA- and percent-encoding any invalid characters.
+- [+ URLWithString:relativeToURL:](./urlwithstring_relativetourl_.md)
+  Creates and returns an NSURL object initialized with a base URL and a relative string.
 
 
 ---

@@ -43,6 +43,14 @@ enum CKSyncEnginePendingRecordZoneChangeType : NSInteger;
 - [Sendable](../Swift/sendable.md)
 - [SendableMetatype](../Swift/sendablemetatype.md)
 
+## See Also
+
+### Accessing the modified record
+- [recordID](./cksyncenginependingrecordzonechange/recordid.md)
+  The identifier of the modified record.
+- [type](./cksyncenginependingrecordzonechange/type.md)
+  The type of change to make.
+
 
 ---
 

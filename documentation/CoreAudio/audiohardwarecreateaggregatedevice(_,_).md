@@ -51,6 +51,10 @@ This routine creates a new AudioAggregateDevice using the provided description.
 - [func AudioGetHostClockFrequency() -> Float64](./audiogethostclockfrequency%28%29.md)
 - [func AudioGetHostClockMinimumTimeDelta() -> UInt32](./audiogethostclockminimumtimedelta%28%29.md)
 - [func AudioHardwareDestroyAggregateDevice(AudioObjectID) -> OSStatus](./audiohardwaredestroyaggregatedevice%28_%29.md)
+- [AudioDriverPlugInClose](./audiodriverpluginclose.md)
+- [AudioDriverPlugInDeviceGetProperty](./audiodriverplugindevicegetproperty.md)
+- [AudioDriverPlugInDeviceGetPropertyInfo](./audiodriverplugindevicegetpropertyinfo.md)
+- [AudioDriverPlugInDeviceSetProperty](./audiodriverplugindevicesetproperty.md)
 
 
 ---

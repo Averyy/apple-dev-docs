@@ -37,6 +37,8 @@ These options are used when setting the [`availablePermissions`](./availableperm
   The option that gives participants read-only permission to the shared data.
 - [static var allowReadWrite: UICloudSharingController.PermissionOptions](./permissionoptions/allowreadwrite.md)
   The option that gives participants read/write permission to the shared data.
+- [UICloudSharingPermissionStandard](../uicloudsharingpermissionoptions/uicloudsharingpermissionstandard.md)
+  The option that makes all user options available.
 ### Initializers
 - [init(rawValue: UInt)](./permissionoptions/init%28rawvalue%29.md)
   Creates a new permission option set with the given raw integer value.

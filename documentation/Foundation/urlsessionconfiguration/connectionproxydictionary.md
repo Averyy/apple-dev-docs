@@ -44,6 +44,8 @@ See `Global Proxy Configuration` for more information about these dictionaries.
   A Boolean value that determines whether the session should use HTTP pipelining.
 - [var proxyConfigurations: [ProxyConfiguration]](./proxyconfigurations.md)
   An array of proxy configuration objects containing information about the proxies to use within this session.
+- [proxyConfigurations](../nsurlsessionconfiguration/proxyconfigurations.md)
+  An array of proxy configuration objects containing information about the proxies to use within this session.
 
 
 ---

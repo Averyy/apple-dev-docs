@@ -40,6 +40,10 @@ Use this method when you don’t need or use the value of a parameter to process
   Creates an object whose resolution indicates that a required parameter value is missing.
 - [class func unsupported() -> Self](./unsupported%28%29.md)
   Creates an object whose resolution indicates that your app doesn’t support the specified value.
+- [+ confirmationRequiredWithItemToConfirm:forReason:](./confirmationrequiredwithitemtoconfirm_forreason_.md)
+  Creates an object whose resolution indicates that your app requires confirmation of the specified value.
+- [+ unsupportedWithReason:](./unsupportedwithreason_.md)
+  Creates an object whose resolution indicates that your app doesn’t support the specified value.
 
 
 ---

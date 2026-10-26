@@ -31,6 +31,14 @@ var nominalFrameRate: Float { get }
 
 The nominal frame rate indicates the number of frames per second for tracks that contain a full frame per media sample. For field-based (interlaced) video tracks, the value of this property indicates the field rate, not the frame rate.
 
+## See Also
+
+### Accessing frame-based characteristics
+- [minFrameDuration](./minframeduration.md)
+  The minimum duration of the track’s frames.
+- [requiresFrameReordering](./requiresframereordering.md)
+  A Boolean value that indicates whether samples in the track may have different presentation and decode timestamps.
+
 
 ---
 

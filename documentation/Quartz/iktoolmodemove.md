@@ -52,6 +52,12 @@ extern NSString * const IKToolModeMove;
   A key for the outline color for an item in the image browser view.
 - [let IKImageBrowserCellsSubtitleAttributesKey: String](./ikimagebrowsercellssubtitleattributeskey.md)
   A key for  a subtitle attribute for an item in the image browser view.
+- [IKFilterBrowserFilterDoubleClickNotification](./ikfilterbrowserfilterdoubleclicknotification.md)
+  Posted when the user double-clicks a filter in the filter browser.
+- [IKFilterBrowserFilterSelectedNotification](./ikfilterbrowserfilterselectednotification.md)
+  Posted when the user clicks a filter name in the filter browser.
+- [IKFilterBrowserWillPreviewFilterNotification](./ikfilterbrowserwillpreviewfilternotification.md)
+  Posted before showing a filter preview, allowing an application to set the parameters of a filter.
 
 
 ---

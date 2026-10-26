@@ -79,6 +79,10 @@ If an error occurs during the creation of the string, then `pStr` is not dealloc
   Creates an immutable CFString object from a Pascal string.
 - [func CFStringCreateWithSubstring(CFAllocator!, CFString!, CFRange) -> CFString!](./cfstringcreatewithsubstring%28_,_,_%29.md)
   Creates an immutable string from a segment (substring) of an existing string.
+- [CFSTR](./cfstr.md)
+  Creates an immutable string from a constant compile-time string.
+- [CFStringCreateWithFormat](./cfstringcreatewithformat.md)
+  Creates an immutable string from a formatted string and a variable number of arguments.
 
 
 ---

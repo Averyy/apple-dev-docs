@@ -48,6 +48,8 @@ The modification date reflects the most recent time that CloudKit saved a record
   The server change token for the record.
 - [CKRecord.ID](./id.md)
   An object that uniquely identifies a record in a database.
+- [recordType](./recordtype-9s09b.md)
+  The value that your app defines to identify the type of record.
 
 
 ---

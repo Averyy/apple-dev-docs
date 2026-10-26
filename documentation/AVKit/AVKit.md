@@ -43,6 +43,37 @@ It builds on [AVFoundation](../AVFoundation/AVFoundation.md), which does the wor
   Error code constants for framework operations.
 ### Macros
 - [Macros](./avkit-macros.md)
+### Classes
+- [AVInterfaceAlbumArtwork](./avinterfacealbumartwork.md)
+  Base class representing album artwork or cover art for media content.
+- [AVInterfaceMediaSelectionOptionSource](./avinterfacemediaselectionoptionsource.md)
+  Represents a media selection option for audio tracks or subtitle tracks.
+- [AVInterfaceMetadata](./avinterfacemetadata.md)
+  Provides metadata information about media content including title, artwork, and content type.
+- [AVInterfaceMetadataTemplate](./avinterfacemetadatatemplate.md)
+  A mutable template for configuring media metadata before creating immutable metadata objects.
+- [AVInterfaceTimelineSegment](./avinterfacetimelinesegment.md)
+  Represents a contiguous segment of timeline content with specific playback characteristics.
+- [AVInterfaceURLAlbumArtwork](./avinterfaceurlalbumartwork.md)
+  An album artwork subclass that references artwork via a URL and content type.
+### Protocols
+- [AVInterfaceControllable](./avinterfacecontrollable.md)
+  A comprehensive protocol that provides complete media control and information for playback, timeline navigation, audio/subtitle selection, volume control, and metadata access.
+- [AVInterfaceMediaSelectionControllable](./avinterfacemediaselectioncontrollable.md)
+  Provides audio and subtitle selection capabilities for media content.
+- [AVInterfaceMetadataProviding](./avinterfacemetadataproviding.md)
+  Provides metadata information about media content including title, artwork, and content type.
+- [AVInterfacePlaybackControllable](./avinterfaceplaybackcontrollable.md)
+  Provides playback control and state management for media content.
+- [AVInterfaceTimeControllable](./avinterfacetimecontrollable.md)
+  Provides time control and navigation capabilities for media content.
+- [AVInterfaceVolumeControllable](./avinterfacevolumecontrollable.md)
+  Provides volume and audio muting control for media content.
+### Enumerations
+- [AVInterfacePlaybackState](./avinterfaceplaybackstate.md)
+  Describes possible playback states of the interface source.
+- [AVInterfaceSeekCapabilities](./avinterfaceseekcapabilities.md)
+  Describes navigation capabilities of the media source.
 
 
 ---

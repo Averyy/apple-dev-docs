@@ -32,6 +32,9 @@ enum PHPickerMetadataOptions : NSUInteger;
   Remove captions metadata.
 - [static var removeLocation: PHPickerMetadataOptions](./phpickermetadataoptions/removelocation.md)
   Remove location metadata.
+### Enumeration Cases
+- [PHPickerMetadataOptionsNone](./phpickermetadataoptions/phpickermetadataoptionsnone.md)
+  No metadata options.
 
 ## Relationships
 

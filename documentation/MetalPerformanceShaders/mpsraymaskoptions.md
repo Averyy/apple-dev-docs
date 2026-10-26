@@ -31,6 +31,8 @@ enum MPSRayMaskOptions : NSUInteger;
 ### Type Properties
 - [static var instance: MPSRayMaskOptions](./mpsraymaskoptions/instance.md)
 - [static var primitive: MPSRayMaskOptions](./mpsraymaskoptions/primitive.md)
+### Enumeration Cases
+- [MPSRayMaskOptionNone](./mpsraymaskoptions/mpsraymaskoptionnone.md)
 
 ## Relationships
 

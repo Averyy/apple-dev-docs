@@ -67,6 +67,13 @@ If you change the primitive behavior, you must also override the primitive metho
   Returns the count associated with a given object in the set.
 - [func objectEnumerator() -> NSEnumerator](./nscountedset/objectenumerator%28%29.md)
   Returns an enumerator object that lets you access each object in the set once, independent of its count.
+### Combining and Recombining Sets
+- [unionSet:](./nscountedset-unionset.md)
+  Adds each object in another given set to the receiving set, if not present.
+- [minusSet:](./nscountedset-minusset.md)
+  Removes each object in another given set from the receiving set, if present.
+- [intersectSet:](./nscountedset-intersectset.md)
+  Removes from the receiving set each object that isn’t a member of another given set.
 
 ## Relationships
 

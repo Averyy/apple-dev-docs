@@ -66,8 +66,38 @@ typedef struct { ... } SPAngle;
   Returns the inverse hyperbolic tangent of the specified value.
 - [var normalized: Angle2D](./angle2d/normalized.md)
   Returns the specified angle normalized between –180° and 180.0°.
+- [SPAngleAcos](./spangleacos.md)
+  Returns the inverse cosine of the specified value.
+- [SPAngleAcosh](./spangleacosh.md)
+  Returns the inverse hyperbolic cosine of the specified value.
+- [SPAngleAsin](./spangleasin.md)
+  Returns the inverse sine of the specified value.
+- [SPAngleAsinh](./spangleasinh.md)
+  Returns the inverse hyperbolic sine of the specified value.
+- [SPAngleAtan](./spangleatan.md)
+  Returns the inverse hyperbolic tangent of the specified value.
+- [SPAngleAtan2](./spangleatan2.md)
+  Returns the two-argument arctangent of the specified values.
+- [SPAngleAtanh](./spangleatanh.md)
+  Returns the hyperbolic tangent of the specified angle.
+- [SPAngleCos](./spanglecos.md)
+  Returns the cosine of the specified angle.
+- [SPAngleCosh](./spanglecosh.md)
+  Returns the hyperbolic cosine of the specified angle.
+- [SPAngleNormalize](./spanglenormalize.md)
+  Returns the specified angle normalized between –180° and 180.0°.
+- [SPAngleSin](./spanglesin.md)
+  Returns the sine of the specified angle.
+- [SPAngleSinh](./spanglesinh.md)
+  Returns the hyperbolic sine of the specified angle.
+- [SPAngleTan](./spangletan.md)
+  Returns the tangent of the specified angle.
+- [SPAngleTanh](./spangletanh.md)
+  Returns the hyperbolic tangent of the specified angle.
 ### Comparing values
 - [static func == (Angle2D, Angle2D) -> Bool](./angle2d/eqeq%28_,_%29.md)
+  Returns a Boolean value that indicates whether two angles are equal.
+- [SPAngleEqualToAngle](./spangleequaltoangle.md)
   Returns a Boolean value that indicates whether two angles are equal.
 ### Encoding and decoding an angle structure
 - [init(from: any Decoder) throws](./angle2d/init%28from%29.md)
@@ -87,6 +117,8 @@ typedef struct { ... } SPAngle;
   Subtracts one angle from another and produces their difference.
 - [static func -= (inout Angle2D, Angle2D)](./angle2d/minuseq%28_,_%29.md)
   Subtracts the second angle from the first and stores the difference in the left-hand-side variable.
+- [SPAngleNegate](./spanglenegate.md)
+  Returns the additive inverse of the given angle.
 ### Initializers
 - [init(Angle)](./angle2d/init%28_%29-44cs8.md)
 - [init(Angle2DFloat)](./angle2d/init%28_%29-7nf6j.md)
@@ -99,6 +131,9 @@ typedef struct { ... } SPAngle;
 - [Encodable Implementations](./angle2d/encodable-implementations.md)
 - [Equatable Implementations](./angle2d/equatable-implementations.md)
 - [Hashable Implementations](./angle2d/hashable-implementations.md)
+### Constants
+- [SPAngleZero](./spanglezero.md)
+  The angle with the zero value.
 
 ## Relationships
 

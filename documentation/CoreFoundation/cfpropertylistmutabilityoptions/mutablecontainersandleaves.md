@@ -30,6 +30,8 @@ kCFPropertyListMutableContainersAndLeaves
 ### Constants
 - [static var mutableContainers: CFPropertyListMutabilityOptions](./mutablecontainers.md)
   Specifies that the property list should have mutable containers but immutable leaves.
+- [kCFPropertyListImmutable](./kcfpropertylistimmutable.md)
+  Specifies that the property list should be immutable.
 
 
 ---

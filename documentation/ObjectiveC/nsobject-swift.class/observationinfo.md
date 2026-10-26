@@ -44,6 +44,8 @@ For improved performance, both this property and [`observationInfo`](./observati
   Returns a set of key paths for properties whose values affect the value of the specified key.
 - [protocol NSKeyValueObservingCustomization](../../Foundation/nskeyvalueobservingcustomization.md)
   Conforming to NSKeyValueObservingCustomization is not required to use Key-Value Observing. Provide an implementation of these functions if you need to disable auto-notifying for a key, or add dependent keys
+- [+ setKeys:triggerChangeNotificationsForDependentKey:](./setkeys_triggerchangenotificationsfordependentkey_.md)
+  Configures the observed object to post change notifications for a given property if any of the properties specified in a given array changes.
 
 
 ---

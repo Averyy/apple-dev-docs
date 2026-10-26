@@ -22,6 +22,12 @@ init()
 - (instancetype) init;
 ```
 
+## See Also
+
+### Creating a depth data output
+- [+ new](./new.md)
+  Creates a depth data output object.
+
 
 ---
 

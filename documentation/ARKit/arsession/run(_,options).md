@@ -50,6 +50,8 @@ This method returns immediately when called, but the session continues to run.
   An object that defines motion and scene tracking behaviors for the session.
 - [func pause()](./pause%28%29.md)
   Pauses processing in the session.
+- [- runWithConfiguration:](./runwithconfiguration_.md)
+  Starts AR processing for the session with the specified configuration.
 
 
 ---

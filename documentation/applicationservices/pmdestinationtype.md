@@ -34,6 +34,18 @@ typedef UInt16 PMDestinationType;
   Specifies output to print preview.
 - [var kPMDestinationProcessPDF: Int](./kpmdestinationprocesspdf.md)
   Specifies output to a PDF workflow option.
+- [kPMDestinationInvalid](./api-1506831-anonymous/kpmdestinationinvalid.md)
+  Specifies the destination is invalid.
+- [kPMDestinationPrinter](./api-1506831-anonymous/kpmdestinationprinter.md)
+  Specifies output to a printer.
+- [kPMDestinationFile](./api-1506831-anonymous/kpmdestinationfile.md)
+  Specifies output to a file.
+- [kPMDestinationFax](./api-1506831-anonymous/kpmdestinationfax.md)
+  Specifies output to a fax. This destination is currently not supported.
+- [kPMDestinationPreview](./api-1506831-anonymous/kpmdestinationpreview.md)
+  Specifies output to print preview.
+- [kPMDestinationProcessPDF](./api-1506831-anonymous/kpmdestinationprocesspdf.md)
+  Specifies output to a PDF workflow option.
 
 
 ---

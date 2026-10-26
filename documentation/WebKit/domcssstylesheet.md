@@ -28,6 +28,7 @@ class DOMCSSStyleSheet
 - [func deleteRule(UInt32)](./domcssstylesheet/deleterule%28_%29.md)
 - [func insertRule(String!, index: UInt32) -> UInt32](./domcssstylesheet/insertrule%28_,index%29.md)
 - [func removeRule(UInt32)](./domcssstylesheet/removerule%28_%29.md)
+- [- insertRule::](./domcssstylesheet/insertrule__.md)
 
 ## Relationships
 

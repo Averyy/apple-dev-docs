@@ -707,6 +707,8 @@ Access Network framework functions used in C.
 - [Network Constants](./network-constants.md)
   Access Network framework constants used in C.
 - [Network Data Types](./network-data-types.md)
+- [Network Enumerations](./network-enumerations.md)
+- [Network Macros](./network-macros.md)
 
 
 ---

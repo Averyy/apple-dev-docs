@@ -44,6 +44,10 @@ Improve the performance of lists and collections in your app with prefetching an
 - [init?(systemName: String)](./uiimage/init%28systemname%29.md)
   Creates an image object that contains a system symbol image.
 - [convenience init(resource: ImageResource)](./uiimage/init%28resource%29.md)
+- [+ imageNamed:inBundle:variableValue:withConfiguration:](./uiimage/imagenamed_inbundle_variablevalue_withconfiguration_.md)
+  Creates an image by using the name, configuration, and variable value you specify.
+- [+ systemImageNamed:variableValue:withConfiguration:](./uiimage/systemimagenamed_variablevalue_withconfiguration_.md)
+  Creates an image object that contains a system symbol image with the configuration and variable value you specify.
 
 
 ---

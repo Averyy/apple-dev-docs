@@ -47,6 +47,8 @@ To specify the IPv4 settings of a packet tunnel, set its [`NEPacketTunnelNetwork
   The IPv4 network traffic that the system routes to the primary physical interface, not the TUN interface.
 - [class NEIPv4Route](./neipv4route.md)
   The settings for an IPv4 route.
+### Type Methods
+- [+ settingsWithAutomaticAddressing](./neipv4settings/settingswithautomaticaddressing.md)
 
 ## Relationships
 

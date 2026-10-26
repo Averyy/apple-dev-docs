@@ -30,6 +30,31 @@
       "file_path": "documentation/MediaAccessibility/kmadimflashinglightschangednotification.md",
       "hash": "a6361089d2bb85bfebf42f46bea33bf5d49f7d5eee7fdd30cd63feb4ac120b72"
     },
+    "https://developer.apple.com/documentation/mediaaccessibility/ma_export": {
+      "etag": "\"12b8-65d55edc54b1e-df\"",
+      "file_path": "documentation/MediaAccessibility/ma_export.md",
+      "hash": "0988b7dedb374b8fd91a40e175461c1a0b34777dee28cccf8e8e1e3cc5a5766b"
+    },
+    "https://developer.apple.com/documentation/mediaaccessibility/ma_extern": {
+      "etag": "\"12b8-65d55edc54b1e-df\"",
+      "file_path": "documentation/MediaAccessibility/ma_extern.md",
+      "hash": "67f532b3329b73e7dd31628d7a73e175f3e7ab5b77ec976a9d173d207c7088aa"
+    },
+    "https://developer.apple.com/documentation/mediaaccessibility/ma_extern_c_begin": {
+      "etag": "\"12e8-65d55edc3968d-df\"",
+      "file_path": "documentation/MediaAccessibility/ma_extern_c_begin.md",
+      "hash": "b6e017086eb55c5b2e4cacee56f35c8e01333da85e4a54fde18008dc0beefc6f"
+    },
+    "https://developer.apple.com/documentation/mediaaccessibility/ma_extern_c_end": {
+      "etag": "\"12dc-65d55edc3968d-df\"",
+      "file_path": "documentation/MediaAccessibility/ma_extern_c_end.md",
+      "hash": "03ab31ba6d8daac9c6a8dc92fa6dc0cb658fb9849d0686e29e1a3ad91d4bb7a7"
+    },
+    "https://developer.apple.com/documentation/mediaaccessibility/ma_visible": {
+      "etag": "\"12be-65d55edc3968d-df\"",
+      "file_path": "documentation/MediaAccessibility/ma_visible.md",
+      "hash": "6face7569c893930b0aba5b255e15eafdfcf4e43b20214034fa3461974847551"
+    },
     "https://developer.apple.com/documentation/mediaaccessibility/maaudiblemediacopypreferredcharacteristics()": {
       "etag": "\"3d90-65d55edc54b1e-df\"",
       "file_path": "documentation/MediaAccessibility/maaudiblemediacopypreferredcharacteristics().md",
@@ -340,6 +365,11 @@
       "file_path": "documentation/MediaAccessibility/maflashinglightsprocessor/processsurface(_,outsurface,timestamp,options).md",
       "hash": "9ea1feec86f629d46729db88def62cf07cef768fa4459113f191d7eaa89f4bb4"
     },
+    "https://developer.apple.com/documentation/mediaaccessibility/maflashinglightsprocessor/processsurface:outsurface:timestamp:options:": {
+      "etag": "\"2fbd-65d55edc3968d-df\"",
+      "file_path": "documentation/MediaAccessibility/maflashinglightsprocessor/processsurface_outsurface_timestamp_options_.md",
+      "hash": "031ae48676a11813f35bff1ea7559dee18a089453c9a7c855e6b2f894335bc7c"
+    },
     "https://developer.apple.com/documentation/mediaaccessibility/maflashinglightsprocessor/result": {
       "etag": "\"3017-65d55edc3968d-df\"",
       "file_path": "documentation/MediaAccessibility/maflashinglightsprocessor/result.md",
@@ -359,6 +389,26 @@
       "etag": "\"262b-65d55edc3968d-df\"",
       "file_path": "documentation/MediaAccessibility/maflashinglightsprocessor/result/surfaceprocessed.md",
       "hash": "5aa0f9b6e72ee401f4a4f79f8bdf04781b3b5973d8e17ede14d11bc0ee088630"
+    },
+    "https://developer.apple.com/documentation/mediaaccessibility/maflashinglightsprocessorresult": {
+      "etag": "\"27ec-65d55edc54b1e-df\"",
+      "file_path": "documentation/MediaAccessibility/maflashinglightsprocessorresult.md",
+      "hash": "fa488d5e9372585c64b2c4425838a33d53ab94b5800990116e5b9777d1ae3ef7"
+    },
+    "https://developer.apple.com/documentation/mediaaccessibility/maflashinglightsprocessorresult/intensitylevel": {
+      "etag": "\"185c-65d55edc3968d-df\"",
+      "file_path": "documentation/MediaAccessibility/maflashinglightsprocessorresult/intensitylevel.md",
+      "hash": "6a6e7caf8ef957b94a37016136ec7b28921b6c0acd46e0a9651ce5849517c930"
+    },
+    "https://developer.apple.com/documentation/mediaaccessibility/maflashinglightsprocessorresult/mitigationlevel": {
+      "etag": "\"1895-65d55edc3968d-df\"",
+      "file_path": "documentation/MediaAccessibility/maflashinglightsprocessorresult/mitigationlevel.md",
+      "hash": "727fc31e3e4573f2fa3cd5d8aea7ac36973098969d44b7b6e61d0975a77dda19"
+    },
+    "https://developer.apple.com/documentation/mediaaccessibility/maflashinglightsprocessorresult/surfaceprocessed": {
+      "etag": "\"1d31-65d55edc3968d-df\"",
+      "file_path": "documentation/MediaAccessibility/maflashinglightsprocessorresult/surfaceprocessed.md",
+      "hash": "7c4e5a4739a2adf3bc0239c388a967f0934f0c3eae742e365d846d10ea6f3f60"
     },
     "https://developer.apple.com/documentation/mediaaccessibility/maimagecaptioningcopycaption(_:_:)": {
       "etag": "\"3be2-65d55edc54b1e-df\"",
@@ -440,6 +490,11 @@
       "file_path": "documentation/MediaAccessibility/mamusichapticsmanager/shared.md",
       "hash": "9fb5b4a6d67250ff281835be69c37dd1b72341cc697185de049765d4ddd86d88"
     },
+    "https://developer.apple.com/documentation/mediaaccessibility/mediaaccessibility_mamusichapticsmanager_h": {
+      "etag": "\"c70-65d55edc3968d-df\"",
+      "file_path": "documentation/MediaAccessibility/mediaaccessibility_mamusichapticsmanager_h.md",
+      "hash": "adfafdbddf28f853da970b15ee3d8073ca6b81324a9a47e22207b360952eac1b"
+    },
     "https://developer.apple.com/documentation/mediaaccessibility/music-haptics": {
       "etag": "\"55c8-6590263bb999e-df\"",
       "file_path": "documentation/MediaAccessibility/music-haptics.md",
@@ -479,6 +534,31 @@
       "etag": "\"2c0c-65d55edc54b1e-df\"",
       "file_path": "documentation/MediaAccessibility/kmadimflashinglightschangednotification.md",
       "hash": "a6361089d2bb85bfebf42f46bea33bf5d49f7d5eee7fdd30cd63feb4ac120b72"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/mediaaccessibility/ma_export.json": {
+      "etag": "\"12b8-65d55edc54b1e-df\"",
+      "file_path": "documentation/MediaAccessibility/ma_export.md",
+      "hash": "0988b7dedb374b8fd91a40e175461c1a0b34777dee28cccf8e8e1e3cc5a5766b"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/mediaaccessibility/ma_extern.json": {
+      "etag": "\"12b8-65d55edc54b1e-df\"",
+      "file_path": "documentation/MediaAccessibility/ma_extern.md",
+      "hash": "67f532b3329b73e7dd31628d7a73e175f3e7ab5b77ec976a9d173d207c7088aa"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/mediaaccessibility/ma_extern_c_begin.json": {
+      "etag": "\"12e8-65d55edc3968d-df\"",
+      "file_path": "documentation/MediaAccessibility/ma_extern_c_begin.md",
+      "hash": "b6e017086eb55c5b2e4cacee56f35c8e01333da85e4a54fde18008dc0beefc6f"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/mediaaccessibility/ma_extern_c_end.json": {
+      "etag": "\"12dc-65d55edc3968d-df\"",
+      "file_path": "documentation/MediaAccessibility/ma_extern_c_end.md",
+      "hash": "03ab31ba6d8daac9c6a8dc92fa6dc0cb658fb9849d0686e29e1a3ad91d4bb7a7"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/mediaaccessibility/ma_visible.json": {
+      "etag": "\"12be-65d55edc3968d-df\"",
+      "file_path": "documentation/MediaAccessibility/ma_visible.md",
+      "hash": "6face7569c893930b0aba5b255e15eafdfcf4e43b20214034fa3461974847551"
     },
     "https://developer.apple.com/tutorials/data/documentation/mediaaccessibility/maaudiblemediacopypreferredcharacteristics().json": {
       "etag": "\"3d90-65d55edc54b1e-df\"",
@@ -790,6 +870,11 @@
       "file_path": "documentation/MediaAccessibility/maflashinglightsprocessor/processsurface(_,outsurface,timestamp,options).md",
       "hash": "9ea1feec86f629d46729db88def62cf07cef768fa4459113f191d7eaa89f4bb4"
     },
+    "https://developer.apple.com/tutorials/data/documentation/mediaaccessibility/maflashinglightsprocessor/processsurface:outsurface:timestamp:options:.json": {
+      "etag": "\"2fbd-65d55edc3968d-df\"",
+      "file_path": "documentation/MediaAccessibility/maflashinglightsprocessor/processsurface_outsurface_timestamp_options_.md",
+      "hash": "031ae48676a11813f35bff1ea7559dee18a089453c9a7c855e6b2f894335bc7c"
+    },
     "https://developer.apple.com/tutorials/data/documentation/mediaaccessibility/maflashinglightsprocessor/result.json": {
       "etag": "\"3017-65d55edc3968d-df\"",
       "file_path": "documentation/MediaAccessibility/maflashinglightsprocessor/result.md",
@@ -809,6 +894,26 @@
       "etag": "\"262b-65d55edc3968d-df\"",
       "file_path": "documentation/MediaAccessibility/maflashinglightsprocessor/result/surfaceprocessed.md",
       "hash": "5aa0f9b6e72ee401f4a4f79f8bdf04781b3b5973d8e17ede14d11bc0ee088630"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/mediaaccessibility/maflashinglightsprocessorresult.json": {
+      "etag": "\"27ec-65d55edc54b1e-df\"",
+      "file_path": "documentation/MediaAccessibility/maflashinglightsprocessorresult.md",
+      "hash": "fa488d5e9372585c64b2c4425838a33d53ab94b5800990116e5b9777d1ae3ef7"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/mediaaccessibility/maflashinglightsprocessorresult/intensitylevel.json": {
+      "etag": "\"185c-65d55edc3968d-df\"",
+      "file_path": "documentation/MediaAccessibility/maflashinglightsprocessorresult/intensitylevel.md",
+      "hash": "6a6e7caf8ef957b94a37016136ec7b28921b6c0acd46e0a9651ce5849517c930"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/mediaaccessibility/maflashinglightsprocessorresult/mitigationlevel.json": {
+      "etag": "\"1895-65d55edc3968d-df\"",
+      "file_path": "documentation/MediaAccessibility/maflashinglightsprocessorresult/mitigationlevel.md",
+      "hash": "727fc31e3e4573f2fa3cd5d8aea7ac36973098969d44b7b6e61d0975a77dda19"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/mediaaccessibility/maflashinglightsprocessorresult/surfaceprocessed.json": {
+      "etag": "\"1d31-65d55edc3968d-df\"",
+      "file_path": "documentation/MediaAccessibility/maflashinglightsprocessorresult/surfaceprocessed.md",
+      "hash": "7c4e5a4739a2adf3bc0239c388a967f0934f0c3eae742e365d846d10ea6f3f60"
     },
     "https://developer.apple.com/tutorials/data/documentation/mediaaccessibility/maimagecaptioningcopycaption(_:_:).json": {
       "etag": "\"3be2-65d55edc54b1e-df\"",
@@ -890,6 +995,11 @@
       "file_path": "documentation/MediaAccessibility/mamusichapticsmanager/shared.md",
       "hash": "9fb5b4a6d67250ff281835be69c37dd1b72341cc697185de049765d4ddd86d88"
     },
+    "https://developer.apple.com/tutorials/data/documentation/mediaaccessibility/mediaaccessibility_mamusichapticsmanager_h.json": {
+      "etag": "\"c70-65d55edc3968d-df\"",
+      "file_path": "documentation/MediaAccessibility/mediaaccessibility_mamusichapticsmanager_h.md",
+      "hash": "adfafdbddf28f853da970b15ee3d8073ca6b81324a9a47e22207b360952eac1b"
+    },
     "https://developer.apple.com/tutorials/data/documentation/mediaaccessibility/music-haptics.json": {
       "etag": "\"55c8-6590263bb999e-df\"",
       "file_path": "documentation/MediaAccessibility/music-haptics.md",
@@ -903,8 +1013,8 @@
   },
   "metadata": {
     "render": {
-      "version": 1
+      "version": 2
     },
-    "total_pages": 180
+    "total_pages": 202
   }
 }

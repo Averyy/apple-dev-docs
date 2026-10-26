@@ -1,0 +1,27 @@
+# ancestorFromSpaceTransform()
+
+**Framework**: Spatial  
+**Kind**: method  
+**Role**: Instance Method
+
+This space’s transform relative to its ancestor.
+
+**Availability**:
+- iOS 26.0+
+- iPadOS 26.0+
+- Mac Catalyst 26.0+
+- macOS 26.0+
+- tvOS 26.0+
+- visionOS 26.0+
+- watchOS 26.0+
+
+## Declaration
+
+```swift
+func ancestorFromSpaceTransform() throws -> ProjectiveTransform3D
+```
+
+
+---
+
+*[View on Apple Developer](https://developer.apple.com/documentation/spatial/coordinatespace3d/ancestorfromspacetransform()-6mxwu)*

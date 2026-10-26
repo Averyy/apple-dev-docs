@@ -60,6 +60,8 @@ If you plan to actually convert a string, the `dataUsingEncoding:...` methods re
 - [struct StringEncodingDetectionOptionsKey](../stringencodingdetectionoptionskey.md)
 - [NSString Handling Exception Names](../nsstring-handling-exception-names.md)
   These constants define the names of exceptions raised if `NSString` cannot represent a string in a given encoding, or parse a string as a property list.
+- [NSStringEncoding](../nsstringencoding.md)
+  The following constants are provided by `NSString` as possible string encodings.
 
 
 ---

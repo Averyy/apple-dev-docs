@@ -30,6 +30,8 @@ class MPSCNNYOLOLossNode
 - [init(source: MPSNNImageNode, lossDescriptor: MPSCNNYOLOLossDescriptor)](./mpscnnyololossnode/init%28source,lossdescriptor%29.md)
 ### Instance Properties
 - [var inputLabels: MPSNNLabelsNode](./mpscnnyololossnode/inputlabels.md)
+### Type Methods
+- [+ nodeWithSource:lossDescriptor:](./mpscnnyololossnode/nodewithsource_lossdescriptor_.md)
 
 ## Relationships
 

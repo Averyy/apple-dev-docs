@@ -43,6 +43,11 @@ This method is a designated initializer of [`NSIndexPath`](../nsindexpath.md).
 ### Creating and Initializing Index Paths
 - [convenience init(index: Int)](./init%28index%29.md)
   Initializes an index path with a single node.
+- [+ indexPathWithIndex:](./indexpathwithindex_.md)
+  Creates a one-node index path.
+### Related Documentation
+- [+ indexPathWithIndexes:length:](./indexpathwithindexes_length_.md)
+  Creates an index path with one or more nodes.
 
 
 ---

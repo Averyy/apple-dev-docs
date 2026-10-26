@@ -24,6 +24,14 @@ class List
 ### Creating a list parameter object
 - [convenience init(name: String, key: String, description: String, list: [MERAWProcessingParameter.ListElement], initialValue: Int, neutralValue: Int?, cameraValue: Int?)](./list/init%28name,key,description,list,initialvalue,neutralvalue,cameravalue%29.md)
   Creates a list parameter object.
+- [- initWithName:key:description:list:initialValue:](../merawprocessinglistparameter/initwithname_key_description_list_initialvalue_.md)
+  Creates a list parameter object with the initial value.
+- [- initWithName:key:description:list:initialValue:cameraValue:](../merawprocessinglistparameter/initwithname_key_description_list_initialvalue_cameravalue_.md)
+  Creates a list parameter object with the initial and camera values.
+- [- initWithName:key:description:list:initialValue:neutralValue:](../merawprocessinglistparameter/initwithname_key_description_list_initialvalue_neutralvalue_.md)
+  Creates a list parameter object with the initial and neutral values.
+- [- initWithName:key:description:list:initialValue:neutralValue:cameraValue:](../merawprocessinglistparameter/initwithname_key_description_list_initialvalue_neutralvalue_cameravalue_.md)
+  Creates a list parameter object with the initial, neutral, and camera values.
 ### Properties
 - [var currentValue: Int](./list/currentvalue.md)
   Get or set the current value for this parameter.
@@ -34,6 +42,11 @@ class List
 ### Instance Properties
 - [var cameraValue: Int?](./list/cameravalue.md)
 - [var neutralValue: Int?](./list/neutralvalue.md)
+### Inspecting a parameter
+- [- hasCameraValue:](../merawprocessinglistparameter/hascameravalue_.md)
+  The optional camera value for this parameter.
+- [- hasNeutralValue:](../merawprocessinglistparameter/hasneutralvalue_.md)
+  The optional neutral value for this parameter.
 
 ## Relationships
 

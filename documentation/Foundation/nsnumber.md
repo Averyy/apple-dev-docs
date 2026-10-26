@@ -99,6 +99,10 @@ As with any class cluster, subclasses of `NSNumber` must override the primitive 
   Returns an `NSNumber` object initialized to contain a given value, treated as an `unsigned long long`.
 - [init(value: UInt16)](./nsnumber/init%28value%29-87y9m.md)
   Returns an `NSNumber` object initialized to contain a given value, treated as an `unsigned short`.
+- [- initWithLong:](./nsnumber/initwithlong_.md)
+  Returns an `NSNumber` object initialized to contain a given value, treated as a signed `long`.
+- [- initWithUnsignedLong:](./nsnumber/initwithunsignedlong_.md)
+  Returns an `NSNumber` object initialized to contain a given value, treated as an `unsigned long`.
 ### Accessing Numeric Values
 - [var boolValue: Bool](./nsnumber/boolvalue.md)
   The number object’s value expressed as a Boolean value.
@@ -128,6 +132,10 @@ As with any class cluster, subclasses of `NSNumber` must override the primitive 
   The number object’s value expressed as an unsigned `long long`, converted as necessary.
 - [var uint16Value: UInt16](./nsnumber/uint16value.md)
   The number object’s value expressed as an unsigned `short`, converted as necessary.
+- [longValue](./nsnumber/longvalue.md)
+  The number object’s value expressed as a `long`, converted as necessary.
+- [unsignedLongValue](./nsnumber/unsignedlongvalue.md)
+  The number object’s value expressed as an unsigned `long`, converted as necessary.
 ### Retrieving String Representations
 - [func description(withLocale: Any?) -> String](./nsnumber/description%28withlocale%29.md)
   Returns a string that represents the contents of the number object for a given locale.
@@ -160,6 +168,37 @@ As with any class cluster, subclasses of `NSNumber` must override the primitive 
 - [ExpressibleByBooleanLiteral Implementations](./nsnumber/expressiblebybooleanliteral-implementations.md)
 - [ExpressibleByFloatLiteral Implementations](./nsnumber/expressiblebyfloatliteral-implementations.md)
 - [ExpressibleByIntegerLiteral Implementations](./nsnumber/expressiblebyintegerliteral-implementations.md)
+### Creating an NSNumber Object
+- [+ numberWithBool:](./nsnumber/numberwithbool_.md)
+  Creates and returns an `NSNumber` object containing a given value, treating it as a `BOOL`.
+- [+ numberWithChar:](./nsnumber/numberwithchar_.md)
+  Creates and returns an `NSNumber` object containing a given value, treating it as a signed `char`.
+- [+ numberWithDouble:](./nsnumber/numberwithdouble_.md)
+  Creates and returns an `NSNumber` object containing a given value, treating it as a `double`.
+- [+ numberWithFloat:](./nsnumber/numberwithfloat_.md)
+  Creates and returns an `NSNumber` object containing a given value, treating it as a `float`.
+- [+ numberWithInt:](./nsnumber/numberwithint_.md)
+  Creates and returns an `NSNumber` object containing a given value, treating it as a signed `int`.
+- [+ numberWithInteger:](./nsnumber/numberwithinteger_.md)
+  Creates and returns an `NSNumber` object containing a given value, treating it as an `NSInteger`.
+- [+ numberWithLong:](./nsnumber/numberwithlong_.md)
+  Creates and returns an `NSNumber` object containing a given value, treating it as a signed `long`.
+- [+ numberWithLongLong:](./nsnumber/numberwithlonglong_.md)
+  Creates and returns an `NSNumber` object containing a given value, treating it as a signed `long long`.
+- [+ numberWithShort:](./nsnumber/numberwithshort_.md)
+  Creates and returns an `NSNumber` object containing `value`, treating it as a signed `short`.
+- [+ numberWithUnsignedChar:](./nsnumber/numberwithunsignedchar_.md)
+  Creates and returns an `NSNumber` object containing a given value, treating it as an `unsigned char`.
+- [+ numberWithUnsignedInt:](./nsnumber/numberwithunsignedint_.md)
+  Creates and returns an `NSNumber` object containing a given value, treating it as an `unsigned int`.
+- [+ numberWithUnsignedInteger:](./nsnumber/numberwithunsignedinteger_.md)
+  Creates and returns an `NSNumber` object containing a given value, treating it as an `NSUInteger`.
+- [+ numberWithUnsignedLong:](./nsnumber/numberwithunsignedlong_.md)
+  Creates and returns an `NSNumber` object containing a given value, treating it as an `unsigned long`.
+- [+ numberWithUnsignedLongLong:](./nsnumber/numberwithunsignedlonglong_.md)
+  Creates and returns an `NSNumber` object containing a given value, treating it as an `unsigned long long`.
+- [+ numberWithUnsignedShort:](./nsnumber/numberwithunsignedshort_.md)
+  Creates and returns an `NSNumber` object containing a given value, treating it as an `unsigned short`.
 
 ## Relationships
 
@@ -187,6 +226,20 @@ As with any class cluster, subclasses of `NSNumber` must override the primitive 
 - [NSSecureCoding](./nssecurecoding.md)
 - [Sendable](../Swift/sendable.md)
 - [SendableMetatype](../Swift/sendablemetatype.md)
+
+## See Also
+
+### Numbers
+- [NSInteger](../ObjectiveC/nsinteger.md)
+  Describes an integer.
+- [NSUInteger](../ObjectiveC/nsuinteger.md)
+  Describes an unsigned integer.
+- [NSDecimal](./decimal.md)
+  A structure representing a base-10 number.
+- [NSDecimalNumber](./nsdecimalnumber.md)
+  An object for representing and performing arithmetic on base-10 numbers.
+- [NSNumberFormatter](./numberformatter.md)
+  A formatter that converts between numeric values and their textual representations.
 
 
 ---

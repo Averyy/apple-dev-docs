@@ -39,6 +39,8 @@ In the layer map, you provide separate rasterization rates for the grid’s rows
   Initializes the layer map with an empty grid.
 - [convenience init(horizontal: [Float], vertical: [Float])](./mtlrasterizationratelayerdescriptor/init%28horizontal,vertical%29.md)
   Initializes a layer rate map with a set of horizontal and vertical rasterization rates.
+- [- initWithSampleCount:horizontal:vertical:](./mtlrasterizationratelayerdescriptor/initwithsamplecount_horizontal_vertical_.md)
+  Initializes the layer map with the provided grid size and rasterization rates.
 ### Inspecting the layer rate function parameters
 - [var sampleCount: MTLSize](./mtlrasterizationratelayerdescriptor/samplecount.md)
   The number of rows and columns in the layer map.
@@ -50,6 +52,12 @@ In the layer map, you provide separate rasterization rates for the grid’s rows
   The vertical rasterization rates for the layer map’s rows.
 - [class MTLRasterizationRateSampleArray](./mtlrasterizationratesamplearray.md)
   An array instance that contains rasterization rates.
+- [horizontalSampleStorage](./mtlrasterizationratelayerdescriptor/horizontalsamplestorage.md)
+  A pointer to the storage for the layer map’s horizontal rasterization rates.
+- [verticalSampleStorage](./mtlrasterizationratelayerdescriptor/verticalsamplestorage.md)
+  A pointer to the storage for the layer map’s vertical rasterization rates.
+### Instance Methods
+- [- init](./mtlrasterizationratelayerdescriptor/init.md)
 
 ## Relationships
 
@@ -69,6 +77,8 @@ In the layer map, you provide separate rasterization rates for the grid’s rows
 ### Accessing members of the array
 - [subscript(Int) -> MTLRasterizationRateLayerDescriptor?](./mtlrasterizationratelayerarray/subscript%28_%29.md)
   Retrieves the sample value at the specified index.
+- [- setObject:atIndexedSubscript:](./mtlrasterizationratelayerarray/setobject_atindexedsubscript_.md)
+  Stores a sample value at the specified index.
 
 
 ---

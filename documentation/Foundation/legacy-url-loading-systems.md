@@ -24,6 +24,8 @@ Migrate your code away from using these legacy objects.
 ### URL Handle
 - [class NSURLHandle](./nsurlhandle.md)
   An object that accesses and manages resource data indicated by a URL.
+- [NSURLHandleClient](./nsurlhandleclient.md)
+  The interface implemented by URL handle clients.
 ### URL Authentication Challenge Sender
 - [protocol URLAuthenticationChallengeSender](./urlauthenticationchallengesender.md)
   The `URLAuthenticationChallengeSender` protocol represents the interface that the sender of an authentication challenge must implement.

@@ -27,6 +27,8 @@ uint8_t reserved[64];
   The source file of this event.
 - [var attrlist: attrlist](./attrlist.md)
   The attributes to set, such as volume, directory, file, and fork attributes.
+- [attrlist](../../kernel/attrlist.md)
+  A list of attributes associated with a file.
 
 
 ---

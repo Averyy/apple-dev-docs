@@ -22,7 +22,7 @@ protocol AnimatableData
 
 #### Overview
 
-The templated animation objects, for example [`BlendTreeAnimation`](./blendtreeanimation.md) `<Value>`, determine that the type you specify for `Value` adopts this protocol. The types that the framework accepts are: [`JointTransforms`](./jointtransforms.md), [`Transform`](./transform.md), [`Float`](../Swift/float.md), [`Double`](../Swift/double.md), [`SIMD2`](../Swift/simd2.md), [`SIMD3`](../Swift/simd3.md), [`SIMD4`](../Swift/simd4.md), and [`simd_quatf`](https://developer.apple.com/documentation/simd/simd_quatf).
+The templated animation objects, for example [`BlendTreeAnimation`](./blendtreeanimation.md) `<Value>`, determine that the type you specify for `Value` adopts this protocol. The types that the framework accepts are: [`JointTransforms`](./jointtransforms.md), [`Transform`](./transform.md), [`Float`](../Swift/float.md), [`Double`](../Swift/double.md), [`SIMD2`](../Swift/simd2.md), [`SIMD3`](../Swift/simd3.md), [`SIMD4`](../Swift/simd4.md), and [`simd_quatf`](../simd/simd_quatf.md).
 
 ## Relationships
 

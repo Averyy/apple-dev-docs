@@ -56,6 +56,8 @@ Implementation of a window controller to handle pairing with a bluetooth device.
   Sets the search attributes that control the panel’s search/inquiry behavior.
 - [func setTitle(String!)](./iobluetoothpairingcontroller/settitle%28_%29.md)
   Sets the title of the panel when not run as a sheet.
+### Type Methods
+- [+ pairingController](./iobluetoothpairingcontroller/pairingcontroller.md)
 
 ## Relationships
 

@@ -47,6 +47,8 @@ Description of the change to the element.
 - [func changedElements() -> (some Sequence<any GCPhysicalInputElement>)?
 ](./changedelements%28%29-2zzwm.md)
   Returns the elements that changed since the previous input state.
+- [- changedElements](./changedelements.md)
+  Returns the elements that changed since the previous input state.
 
 
 ---

@@ -41,6 +41,8 @@ NSViewControllerTransitionSlideForward
   A transition animation that reflects the user interface layout direction ([`userInterfaceLayoutDirection`](../../nsapplication/userinterfacelayoutdirection.md)) in a “backward” manner, as follows
 - [static var allowUserInteraction: NSViewController.TransitionOptions](./allowuserinteraction.md)
   A transition animation that allows user interaction during the transition.
+- [NSViewControllerTransitionNone](../../nsviewcontrollertransitionoptions/nsviewcontrollertransitionnone.md)
+  A transition with no animation (the default). Specifying another animation option from this enumeration overrides this option.
 
 
 ---

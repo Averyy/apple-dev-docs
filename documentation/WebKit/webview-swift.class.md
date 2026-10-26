@@ -320,6 +320,22 @@ You can also extend WebKit by implementing your own document view and representa
   Posted by a WebView object when the load has finished.
 - [static let WebViewProgressStarted: NSNotification.Name](../Foundation/nsnotification/name-swift.struct/webviewprogressstarted.md)
   Posted by a WebView object when a load begins, including a load that is initiated in a subframe.
+- [WebViewDidBeginEditingNotification](./webviewdidbegineditingnotification.md)
+  Posted when a web view begins any operation that changes its contents in response to user editing.
+- [WebViewDidChangeNotification](./webviewdidchangenotification.md)
+  Posted when a web view performs any operation that changes its contents in response to user editing.
+- [WebViewDidChangeSelectionNotification](./webviewdidchangeselectionnotification.md)
+  Posted when a web view changes its typing selection.
+- [WebViewDidChangeTypingStyleNotification](./webviewdidchangetypingstylenotification.md)
+  Posted when a web view changes its typing style.
+- [WebViewDidEndEditingNotification](./webviewdidendeditingnotification.md)
+  Posted when a web view ends any operation that changes its contents in response to user editing.
+- [WebViewProgressEstimateChangedNotification](./webviewprogressestimatechangednotification.md)
+  Posted by a WebView object when the estimated progress value of a load changes.
+- [WebViewProgressFinishedNotification](./webviewprogressfinishednotification.md)
+  Posted by a WebView object when the load has finished.
+- [WebViewProgressStartedNotification](./webviewprogressstartednotification.md)
+  Posted by a WebView object when a load begins, including a load that is initiated in a subframe.
 ### Instance Methods
 - [func overWrite(Any?)](./webview-swift.class/overwrite%28_%29.md)
 

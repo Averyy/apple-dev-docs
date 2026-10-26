@@ -30,6 +30,8 @@ typedef FourCharCode CMTaggedBufferGroupFormatType;
 ### Types
 - [typealias CMTaggedBufferGroupFormatDescription](./cmtaggedbuffergroupformatdescription.md)
   A type for tagged buffer format descriptions.
+- [CMTaggedBufferGroupRef](./cmtaggedbuffergroupref.md)
+  A reference to a tagged buffer group instance.
 
 
 ---

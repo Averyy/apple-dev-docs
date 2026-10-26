@@ -39,6 +39,8 @@ If YES, the player’s audio output is suppressed. The player is muted while on 
   A Boolean value that indicates whether the player item allows spatialized audio playback.
 - [var intendedSpatialAudioExperience: any SpatialAudioExperience](./intendedspatialaudioexperience-1bd87.md)
   The player’s intended Spatial Audio experience.
+- [intendedSpatialAudioExperience](./intendedspatialaudioexperience-3uy8g.md)
+  The AVPlayer’s intended spatial audio experience.
 
 
 ---

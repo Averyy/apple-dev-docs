@@ -34,6 +34,34 @@ typedef struct { ... } simd_half4x4;
   Returns a new matrix with the specified columns.
 - [func simd_matrix_from_rows(simd_half4, simd_half4, simd_half4, simd_half4) -> simd_half4x4](./simd_matrix_from_rows%28_,_,_,_%29-31gpp.md)
   Returns a new matrix with the specified rows.
+- [simd_diagonal_matrix](./simd_diagonal_matrix-2l1as.md)
+  Returns a new matrix with the specified vector on the main diagonal.
+### Math functions
+- [simd_add](./simd_add-436ij.md)
+  Returns the sum of two matrices.
+- [simd_sub](./simd_sub-5jbjv.md)
+  Returns the difference of two matrices.
+### Matrix-scalar multiplication functions
+- [matrix_scale](./matrix_scale-ltd4.md)
+  Returns the product of a scalar value and a matrix.
+### Equality functions
+- [simd_equal](./simd_equal-gjgs.md)
+  Returns true if every element in a matrix is exactly equal to the corresponding element in a second matrix.
+- [simd_almost_equal_elements](./simd_almost_equal_elements-9gmpl.md)
+  Returns true if every element in a matrix is within a specified tolerance to the corresponding element in a second matrix.
+- [simd_almost_equal_elements_relative](./simd_almost_equal_elements_relative-5kt4x.md)
+  Returns true if every element in a matrix is within a specified single-precision relative tolerance to the corresponding element in a second matrix.
+### Determinant and inverse functions
+- [simd_determinant](./simd_determinant-4smx3.md)
+  Returns the determinant of the specified matrix.
+- [simd_inverse](./simd_inverse-4dsqu.md)
+  Returns the inverse of the specified matrix.
+### Linear combination function
+- [simd_linear_combination](./simd_linear_combination-8upzt.md)
+  Returns the linear combination of two scalar values and two matrices.
+### Transpose function
+- [simd_transpose](./simd_transpose-4uhs6.md)
+  Returns the transpose of a matrix.
 
 ## Relationships
 

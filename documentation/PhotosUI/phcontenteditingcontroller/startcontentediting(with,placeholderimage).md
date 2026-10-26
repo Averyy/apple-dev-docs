@@ -44,11 +44,11 @@ func startContentEditing(with contentEditingInput: PHContentEditingInput, placeh
 
 Photos calls this method before your extension view controller’s view appears.
 
-For a photo asset, use the [`displaySizeImage`](https://developer.apple.com/documentation/photos/phcontenteditinginput/displaysizeimage) property of the provided [`PHContentEditingInput`](https://developer.apple.com/documentation/photos/phcontenteditinginput) object to perform editing in your extension’s UI. If your extension returned `true` from the [`canHandle(_:)`](./canhandle%28_%29.md) method, this image represents the previous version of the asset—you need to use the [`adjustmentData`](https://developer.apple.com/documentation/photos/phcontenteditinginput/adjustmentdata) object to reconstruct the last edit made to the asset. Because asynchronously rendering the results of the previous edit may take some time, you can display the `placeholderImage` until your extension is ready to begin editing.
+For a photo asset, use the [`displaySizeImage`](../../Photos/phcontenteditinginput/displaysizeimage.md) property of the provided [`PHContentEditingInput`](../../Photos/phcontenteditinginput.md) object to perform editing in your extension’s UI. If your extension returned `true` from the [`canHandle(_:)`](./canhandle%28_%29.md) method, this image represents the previous version of the asset—you need to use the [`adjustmentData`](../../Photos/phcontenteditinginput/adjustmentdata.md) object to reconstruct the last edit made to the asset. Because asynchronously rendering the results of the previous edit may take some time, you can display the `placeholderImage` until your extension is ready to begin editing.
 
-You don’t need to use the content editing input’s [`fullSizeImageURL`](https://developer.apple.com/documentation/photos/phcontenteditinginput/fullsizeimageurl) property until the user has finished editing and you need to render final output.
+You don’t need to use the content editing input’s [`fullSizeImageURL`](../../Photos/phcontenteditinginput/fullsizeimageurl.md) property until the user has finished editing and you need to render final output.
 
-For a video asset, use the [`PHContentEditingInput`](https://developer.apple.com/documentation/photos/phcontenteditinginput) object to retrieve AVFoundation objects for editing audio and video content.
+For a video asset, use the [`PHContentEditingInput`](../../Photos/phcontenteditinginput.md) object to retrieve AVFoundation objects for editing audio and video content.
 
 ## Parameters
 

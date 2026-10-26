@@ -400,6 +400,11 @@
       "file_path": "documentation/SpriteKit/sk3dnode/loops.md",
       "hash": "0495c70910c0088ea1666e9c9bab1cac5f0ed32f9855d02351628d69bb6b331b"
     },
+    "https://developer.apple.com/documentation/spritekit/sk3dnode/nodewithviewportsize:": {
+      "etag": "\"212c-65d55d080f560-df\"",
+      "file_path": "documentation/SpriteKit/sk3dnode/nodewithviewportsize_.md",
+      "hash": "bf52e0f97fac98702cf0145bd95507825c25f1f9ba930224c3acb94b2dadc2f9"
+    },
     "https://developer.apple.com/documentation/spritekit/sk3dnode/pointofview": {
       "etag": "\"38a8-65d55d080f560-df\"",
       "file_path": "documentation/SpriteKit/sk3dnode/pointofview.md",
@@ -430,10 +435,25 @@
       "file_path": "documentation/SpriteKit/sk3dnode/viewportsize.md",
       "hash": "71ed416835733950860601dead7d24fc0343acc69b48008e06a8129daa9f491c"
     },
+    "https://developer.apple.com/documentation/spritekit/sk_available": {
+      "etag": "\"16b2-65d55d07d7c74-df\"",
+      "file_path": "documentation/SpriteKit/sk_available.md",
+      "hash": "c5f77cda109a69514b1adbcc6be47c6a6b45bf084afe3cfa6f6dcd52de60de9f"
+    },
+    "https://developer.apple.com/documentation/spritekit/sk_export": {
+      "etag": "\"16a0-65d55d07a30d1-df\"",
+      "file_path": "documentation/SpriteKit/sk_export.md",
+      "hash": "f96d529a44b296f26cb29deef0f9f5fca93cf53afb2f8823c044cbf82ec14c18"
+    },
     "https://developer.apple.com/documentation/spritekit/sk_version": {
       "etag": "\"2033-65d55d074fbc1-df\"",
       "file_path": "documentation/SpriteKit/sk_version.md",
       "hash": "81638a059a3bb267bf96aa457c98a604b02c95f05258b8c9258cb14cc1d3df7f"
+    },
+    "https://developer.apple.com/documentation/spritekit/sk_weak_link": {
+      "etag": "\"16b2-65d55d06c3fd8-df\"",
+      "file_path": "documentation/SpriteKit/sk_weak_link.md",
+      "hash": "59e7d68a1112beb3a0921be2d964f022eec55d27ad2556e7a9577dbfebf1dc52"
     },
     "https://developer.apple.com/documentation/spritekit/skaction": {
       "etag": "\"7b34-65d55d080f560-df\"",
@@ -995,6 +1015,11 @@
       "file_path": "documentation/SpriteKit/skattribute.md",
       "hash": "ff07ab97553ded370018e8c9dad67eb0c14629857ee74a68b5fe444079607d0c"
     },
+    "https://developer.apple.com/documentation/spritekit/skattribute/attributewithname:type:": {
+      "etag": "\"199e-65d55d05f1ebc-df\"",
+      "file_path": "documentation/SpriteKit/skattribute/attributewithname_type_.md",
+      "hash": "e1c0750194d83ffec04799d57ee2571b50f884cc0ff2745f87ebe40870a681b4"
+    },
     "https://developer.apple.com/documentation/spritekit/skattribute/init(coder:)": {
       "etag": "\"1493-65d55d05f1ebc-df\"",
       "file_path": "documentation/SpriteKit/skattribute/init(coder).md",
@@ -1239,6 +1264,11 @@
       "etag": "\"3607-65d55d062c119-df\"",
       "file_path": "documentation/SpriteKit/skcameranode/contains(_).md",
       "hash": "c1cb5524227f1559a242420245cc3643ad267b63101099c7291da41b42ce4282"
+    },
+    "https://developer.apple.com/documentation/spritekit/skcolor-c.macro": {
+      "etag": "\"169c-65d55d076f368-df\"",
+      "file_path": "documentation/SpriteKit/skcolor-c.macro.md",
+      "hash": "1e5b544692e46d0918be1e0ef27664ac8bfaae5a3c9d16ab9b4cee814ed0da18"
     },
     "https://developer.apple.com/documentation/spritekit/skcolor-swift.typealias": {
       "etag": "\"f6c-65d55d080f560-df\"",
@@ -1960,6 +1990,11 @@
       "file_path": "documentation/SpriteKit/sklabelnode/init(text).md",
       "hash": "45cee4790ffb8198183024d3514fc734c2f1da725409cdaba79b442c8ecfee77"
     },
+    "https://developer.apple.com/documentation/spritekit/sklabelnode/labelnodewithfontnamed:": {
+      "etag": "\"2747-65d55d07f32b5-df\"",
+      "file_path": "documentation/SpriteKit/sklabelnode/labelnodewithfontnamed_.md",
+      "hash": "5cf0776deab46a46abb8be952b2712fb031622a16889837b426adf0d7ed936e3"
+    },
     "https://developer.apple.com/documentation/spritekit/sklabelnode/linebreakmode": {
       "etag": "\"2a93-65d55d07f32b5-df\"",
       "file_path": "documentation/SpriteKit/sklabelnode/linebreakmode.md",
@@ -2069,6 +2104,11 @@
       "etag": "\"3984-65d55d07f32b5-df\"",
       "file_path": "documentation/SpriteKit/skmutabletexture/modifypixeldata(_).md",
       "hash": "375ad280feae85664b9cbaf28c45ee0f884b9f8126568390ef1896adb865ab62"
+    },
+    "https://developer.apple.com/documentation/spritekit/skmutabletexture/mutabletexturewithsize:": {
+      "etag": "\"28c8-65d55d07f32b5-df\"",
+      "file_path": "documentation/SpriteKit/skmutabletexture/mutabletexturewithsize_.md",
+      "hash": "9f98b0ba2a00f6305a2ab8b8ea75bb0d6d99076e70563a1ae17360569e45578b"
     },
     "https://developer.apple.com/documentation/spritekit/sknode": {
       "etag": "\"26b15-65d757820fe45-df\"",
@@ -2279,6 +2319,11 @@
       "etag": "\"39b6-65d55d05b7bf1-df\"",
       "file_path": "documentation/SpriteKit/sknode/name.md",
       "hash": "c920e4c14da85ea2dd4c936e47ba3d9757a0cb4d33b603fbf1fc62e52bdc22ec"
+    },
+    "https://developer.apple.com/documentation/spritekit/sknode/node": {
+      "etag": "\"2840-65d55d05d978d-df\"",
+      "file_path": "documentation/SpriteKit/sknode/node.md",
+      "hash": "2a67c93961769a4dcd319cda74d3ec721d37113b7da5b297d5db97cdbfbaea54"
     },
     "https://developer.apple.com/documentation/spritekit/sknode/nodes(at:)": {
       "etag": "\"45b4-65d55d05d978d-df\"",
@@ -3010,6 +3055,11 @@
       "file_path": "documentation/SpriteKit/skrange/lowerlimit.md",
       "hash": "a3d54431d3971181d6f7d5afdcbbad12dbe4fe25bc6b77ba46d3d8a6f4434034"
     },
+    "https://developer.apple.com/documentation/spritekit/skrange/rangewithlowerlimit:upperlimit:": {
+      "etag": "\"3855-65d55d06493e8-df\"",
+      "file_path": "documentation/SpriteKit/skrange/rangewithlowerlimit_upperlimit_.md",
+      "hash": "0298c9da2ccf86f02aecf610856c74b16eb346d60231f8158c9a982fde11de13"
+    },
     "https://developer.apple.com/documentation/spritekit/skrange/upperlimit": {
       "etag": "\"2458-65d55d06493e8-df\"",
       "file_path": "documentation/SpriteKit/skrange/upperlimit.md",
@@ -3335,6 +3385,11 @@
       "file_path": "documentation/SpriteKit/skscene/scenedidload().md",
       "hash": "a9c5ca44ddd9e2e301c4c6ce7407eff0becca27e05c19f6b74136161f28626dd"
     },
+    "https://developer.apple.com/documentation/spritekit/skscene/scenewithsize:": {
+      "etag": "\"1f25-65d55d06493e8-df\"",
+      "file_path": "documentation/SpriteKit/skscene/scenewithsize_.md",
+      "hash": "71b4c402ea291525f63ee4de9406dfd572a868dae17fcf06fadbe4248c01f334"
+    },
     "https://developer.apple.com/documentation/spritekit/skscene/size": {
       "etag": "\"3c06-65d55d06493e8-df\"",
       "file_path": "documentation/SpriteKit/skscene/size.md",
@@ -3454,6 +3509,21 @@
       "etag": "\"3368-65d55d060e493-df\"",
       "file_path": "documentation/SpriteKit/skshader/removeuniformnamed(_).md",
       "hash": "92df88faec6cea3c60f19437309aabc7010ed9255c0faa0447bcb307a038b141"
+    },
+    "https://developer.apple.com/documentation/spritekit/skshader/shader": {
+      "etag": "\"290b-65d55d060e493-df\"",
+      "file_path": "documentation/SpriteKit/skshader/shader.md",
+      "hash": "779607ca8269c2ea3e77db33a2ac79daa39961bd6997b24957d3451e8c4b0971"
+    },
+    "https://developer.apple.com/documentation/spritekit/skshader/shaderwithsource:": {
+      "etag": "\"2cbe-65d55d060e493-df\"",
+      "file_path": "documentation/SpriteKit/skshader/shaderwithsource_.md",
+      "hash": "cec027b0be99204446af94dc2637d55fb9ebf15849a8bccbe420c7039ca8b78c"
+    },
+    "https://developer.apple.com/documentation/spritekit/skshader/shaderwithsource:uniforms:": {
+      "etag": "\"3258-65d55d060e493-df\"",
+      "file_path": "documentation/SpriteKit/skshader/shaderwithsource_uniforms_.md",
+      "hash": "6f934940597c39525ae66e7c6b22814d20e47d5e38ed8ff637499aad58560f6e"
     },
     "https://developer.apple.com/documentation/spritekit/skshader/source": {
       "etag": "\"2089-65d55d060e493-df\"",
@@ -3764,6 +3834,21 @@
       "etag": "\"29af-65d55d0668401-df\"",
       "file_path": "documentation/SpriteKit/skspritenode/size.md",
       "hash": "c93ac8db047fc0168470040623063a7a06444bf176dd7142cf37d4a3dd51413a"
+    },
+    "https://developer.apple.com/documentation/spritekit/skspritenode/spritenodewithcolor:size:": {
+      "etag": "\"3ecf-65d55d0668401-df\"",
+      "file_path": "documentation/SpriteKit/skspritenode/spritenodewithcolor_size_.md",
+      "hash": "2bdf110443fe1c250da8609d76f2348670249d2174883044c39145d221228f1c"
+    },
+    "https://developer.apple.com/documentation/spritekit/skspritenode/spritenodewithimagenamed:": {
+      "etag": "\"37be-65d55d0668401-df\"",
+      "file_path": "documentation/SpriteKit/skspritenode/spritenodewithimagenamed_.md",
+      "hash": "51d8b07a3c914723ddab88152570afc6bbe0d64abaef7680b4af3f9a2bd55dc4"
+    },
+    "https://developer.apple.com/documentation/spritekit/skspritenode/spritenodewithtexture:": {
+      "etag": "\"38ee-65d55d0668401-df\"",
+      "file_path": "documentation/SpriteKit/skspritenode/spritenodewithtexture_.md",
+      "hash": "79be19f1c290b794614583f235518f841e8bd32af4428361833d6c1dde00f0da"
     },
     "https://developer.apple.com/documentation/spritekit/skspritenode/texture": {
       "etag": "\"4ca8-65d55d0668401-df\"",
@@ -4230,6 +4315,31 @@
       "file_path": "documentation/SpriteKit/sktiledefinition/textures.md",
       "hash": "441a656e14fda289b9dcc21a00bee17189f613c4d800595d0a3376d1b9d2b0db"
     },
+    "https://developer.apple.com/documentation/spritekit/sktiledefinition/tiledefinitionwithtexture:": {
+      "etag": "\"1b63-65d55d06c3fd8-df\"",
+      "file_path": "documentation/SpriteKit/sktiledefinition/tiledefinitionwithtexture_.md",
+      "hash": "d0eb457e9c2888d0e4f26bb93a5acf51c2ebe3a871e9380e22fea1edb34cff5c"
+    },
+    "https://developer.apple.com/documentation/spritekit/sktiledefinition/tiledefinitionwithtexture:normaltexture:size:": {
+      "etag": "\"23f4-65d55d06c3fd8-df\"",
+      "file_path": "documentation/SpriteKit/sktiledefinition/tiledefinitionwithtexture_normaltexture_size_.md",
+      "hash": "2978d558d7ef1fde2425a03105700afe8d993479555ec63a352442e797b2e16d"
+    },
+    "https://developer.apple.com/documentation/spritekit/sktiledefinition/tiledefinitionwithtexture:size:": {
+      "etag": "\"207f-65d55d06c3fd8-df\"",
+      "file_path": "documentation/SpriteKit/sktiledefinition/tiledefinitionwithtexture_size_.md",
+      "hash": "9a5f5a85cf59d3a9f0a23a51015a49f5758322e2f495a2fc9dba05b00371e732"
+    },
+    "https://developer.apple.com/documentation/spritekit/sktiledefinition/tiledefinitionwithtextures:normaltextures:size:timeperframe:": {
+      "etag": "\"2e8c-65d55d06c3fd8-df\"",
+      "file_path": "documentation/SpriteKit/sktiledefinition/tiledefinitionwithtextures_normaltextures_size_timeperframe_.md",
+      "hash": "ade7d7f702aee3cde29c530f167c089fe3feb86deb863ebde2757501e6d52619"
+    },
+    "https://developer.apple.com/documentation/spritekit/sktiledefinition/tiledefinitionwithtextures:size:timeperframe:": {
+      "etag": "\"2d2b-65d55d06a3c2d-df\"",
+      "file_path": "documentation/SpriteKit/sktiledefinition/tiledefinitionwithtextures_size_timeperframe_.md",
+      "hash": "fc8a43c5e4a315c93baa2ebea6484efbf0bd1e7cc1e400aa763af7d14f26324a"
+    },
     "https://developer.apple.com/documentation/spritekit/sktiledefinition/timeperframe": {
       "etag": "\"3145-65d55d06c3fd8-df\"",
       "file_path": "documentation/SpriteKit/sktiledefinition/timeperframe.md",
@@ -4305,6 +4415,16 @@
       "file_path": "documentation/SpriteKit/sktilegroup/rules.md",
       "hash": "5c4d684ca63010b53add84c494972f9e01f0960e13708e30d251608efb29e220"
     },
+    "https://developer.apple.com/documentation/spritekit/sktilegroup/tilegroupwithrules:": {
+      "etag": "\"201f-65d55d0728821-df\"",
+      "file_path": "documentation/SpriteKit/sktilegroup/tilegroupwithrules_.md",
+      "hash": "672e809ca0670c70ee44f401a45cbe91caa3863895601ca55b5797d55f96a961"
+    },
+    "https://developer.apple.com/documentation/spritekit/sktilegroup/tilegroupwithtiledefinition:": {
+      "etag": "\"24e6-65d55d0728821-df\"",
+      "file_path": "documentation/SpriteKit/sktilegroup/tilegroupwithtiledefinition_.md",
+      "hash": "64ade2432ae3dca9df667732f37a74f8783987735d00d1839f992ec6bdc5b4ce"
+    },
     "https://developer.apple.com/documentation/spritekit/sktilegrouprule": {
       "etag": "\"6d75-65d55d05b7bf1-df\"",
       "file_path": "documentation/SpriteKit/sktilegrouprule.md",
@@ -4334,6 +4454,11 @@
       "etag": "\"3159-65d55d08339ea-df\"",
       "file_path": "documentation/SpriteKit/sktilegrouprule/tiledefinitions.md",
       "hash": "17de3b962650bbc61591e9a35d9327a3652c2f5e801253256eaf60462bf77acc"
+    },
+    "https://developer.apple.com/documentation/spritekit/sktilegrouprule/tilegrouprulewithadjacency:tiledefinitions:": {
+      "etag": "\"1f6f-65d55d08339ea-df\"",
+      "file_path": "documentation/SpriteKit/sktilegrouprule/tilegrouprulewithadjacency_tiledefinitions_.md",
+      "hash": "197b0c71175f9c43a7a5e1158549ff2dfd14bd0f859f1641954c4e9ca8f1c244"
     },
     "https://developer.apple.com/documentation/spritekit/sktilemapnode": {
       "etag": "\"120ba-65d55d074fbc1-df\"",
@@ -4465,6 +4590,21 @@
       "file_path": "documentation/SpriteKit/sktilemapnode/tilemapnodes(tileset,columns,rows,tilesize,from,tiletypenoisemapthresholds).md",
       "hash": "56961da59d4b02348dfe9b83fdc7e7f6897bd43cf386b5c69f3f418545f3e69e"
     },
+    "https://developer.apple.com/documentation/spritekit/sktilemapnode/tilemapnodewithtileset:columns:rows:tilesize:": {
+      "etag": "\"500a-65d55d06865ab-df\"",
+      "file_path": "documentation/SpriteKit/sktilemapnode/tilemapnodewithtileset_columns_rows_tilesize_.md",
+      "hash": "cf45660a5e8f3bfccd7988e993a8bfc7f593d06cb07116075e08fa4fa7d440cc"
+    },
+    "https://developer.apple.com/documentation/spritekit/sktilemapnode/tilemapnodewithtileset:columns:rows:tilesize:fillwithtilegroup:": {
+      "etag": "\"55c6-65d55d06865ab-df\"",
+      "file_path": "documentation/SpriteKit/sktilemapnode/tilemapnodewithtileset_columns_rows_tilesize_fillwithtilegroup_.md",
+      "hash": "f991ba29fa474b3042ca26695e06c599648d10f8f4f2c2d546f38ddc711d082e"
+    },
+    "https://developer.apple.com/documentation/spritekit/sktilemapnode/tilemapnodewithtileset:columns:rows:tilesize:tilegrouplayout:": {
+      "etag": "\"5174-65d55d06865ab-df\"",
+      "file_path": "documentation/SpriteKit/sktilemapnode/tilemapnodewithtileset_columns_rows_tilesize_tilegrouplayout_.md",
+      "hash": "a89b35eac3061d1100b5f581fd472abcc0be2095974a70549f169f62f0f46b99"
+    },
     "https://developer.apple.com/documentation/spritekit/sktilemapnode/tilerowindex(fromposition:)": {
       "etag": "\"48fb-65d55d06865ab-df\"",
       "file_path": "documentation/SpriteKit/sktilemapnode/tilerowindex(fromposition).md",
@@ -4539,6 +4679,16 @@
       "etag": "\"3708-65d55d06a3c2d-df\"",
       "file_path": "documentation/SpriteKit/sktileset/tilegroups.md",
       "hash": "cca8e1c9d940be47e4c952c55504c242e995fa28c51f6b31bdc48e2ead82ef8d"
+    },
+    "https://developer.apple.com/documentation/spritekit/sktileset/tilesetwithtilegroups:": {
+      "etag": "\"1f1e-65d55d06a3c2d-df\"",
+      "file_path": "documentation/SpriteKit/sktileset/tilesetwithtilegroups_.md",
+      "hash": "c72d0dc722b5ddf372a775849aab870761b4e0c7e18f7e1dab7f16c398c9e5f1"
+    },
+    "https://developer.apple.com/documentation/spritekit/sktileset/tilesetwithtilegroups:tilesettype:": {
+      "etag": "\"24c1-65d55d06a3c2d-df\"",
+      "file_path": "documentation/SpriteKit/sktileset/tilesetwithtilegroups_tilesettype_.md",
+      "hash": "8611a19077970fa7c6b5131925b6a34e09b06442ebf84ed4349dc465d139ac82"
     },
     "https://developer.apple.com/documentation/spritekit/sktileset/type": {
       "etag": "\"33b0-65d55d06a3c2d-df\"",
@@ -4950,6 +5100,81 @@
       "file_path": "documentation/SpriteKit/skuniform/uniformtype.md",
       "hash": "ed45baccb58af695409d4e47362653c3e6863e51eb15ced631c8d9f301f327e2"
     },
+    "https://developer.apple.com/documentation/spritekit/skuniform/uniformwithname:": {
+      "etag": "\"5b7d-65d55d07a30d1-df\"",
+      "file_path": "documentation/SpriteKit/skuniform/uniformwithname_.md",
+      "hash": "b1bc1e161fb838ae9b99584c5eb796f16a9782b072dfc5dd58a5463646a69c63"
+    },
+    "https://developer.apple.com/documentation/spritekit/skuniform/uniformwithname:float:": {
+      "etag": "\"5a93-65d55d07beba2-df\"",
+      "file_path": "documentation/SpriteKit/skuniform/uniformwithname_float_.md",
+      "hash": "aaae69dae24b1d02ae0cb7da7d671000c6a3ad0fd9619d5c171b55cfbc4b1586"
+    },
+    "https://developer.apple.com/documentation/spritekit/skuniform/uniformwithname:floatmatrix2:": {
+      "etag": "\"5b6c-65d55d07beba2-df\"",
+      "file_path": "documentation/SpriteKit/skuniform/uniformwithname_floatmatrix2_.md",
+      "hash": "86aa0faa22b1783c41b289a37d6e61d6eb901e83b70ec70cebb09aa89eb2c78e"
+    },
+    "https://developer.apple.com/documentation/spritekit/skuniform/uniformwithname:floatmatrix3:": {
+      "etag": "\"5b6c-65d55d07a30d1-df\"",
+      "file_path": "documentation/SpriteKit/skuniform/uniformwithname_floatmatrix3_.md",
+      "hash": "b848852d6641f42f805f0fdf06a6e287ebedf6731f73d1532f27f823064173b2"
+    },
+    "https://developer.apple.com/documentation/spritekit/skuniform/uniformwithname:floatmatrix4:": {
+      "etag": "\"5b6c-65d55d07beba2-df\"",
+      "file_path": "documentation/SpriteKit/skuniform/uniformwithname_floatmatrix4_.md",
+      "hash": "3e24f4b308a8d7cc0cb8f6accd8d1f3c22b95466246d99a0e5f81d2279c3fac7"
+    },
+    "https://developer.apple.com/documentation/spritekit/skuniform/uniformwithname:floatvector2:": {
+      "etag": "\"5af1-65d55d07beba2-df\"",
+      "file_path": "documentation/SpriteKit/skuniform/uniformwithname_floatvector2_.md",
+      "hash": "18a467bc40a6c23ab31b3a1c408e828dc3407c819e71d36977719ff49781241f"
+    },
+    "https://developer.apple.com/documentation/spritekit/skuniform/uniformwithname:floatvector3:": {
+      "etag": "\"5af5-65d55d07a30d1-df\"",
+      "file_path": "documentation/SpriteKit/skuniform/uniformwithname_floatvector3_.md",
+      "hash": "ad673932e635d58c0cec5a51e6abe4659d47256710769222b790e021123a5cc3"
+    },
+    "https://developer.apple.com/documentation/spritekit/skuniform/uniformwithname:floatvector4:": {
+      "etag": "\"5af3-65d55d07beba2-df\"",
+      "file_path": "documentation/SpriteKit/skuniform/uniformwithname_floatvector4_.md",
+      "hash": "c08a7f92915dc2026c767c30ad171bde5709fd9d50f561bd6212a461204e712f"
+    },
+    "https://developer.apple.com/documentation/spritekit/skuniform/uniformwithname:matrixfloat2x2:": {
+      "etag": "\"2457-65d55d07beba2-df\"",
+      "file_path": "documentation/SpriteKit/skuniform/uniformwithname_matrixfloat2x2_.md",
+      "hash": "75a7fa3d21fdae44f3e7c2548688e3320e5a4a9219c3aba98fbe9f1dcc8cfb07"
+    },
+    "https://developer.apple.com/documentation/spritekit/skuniform/uniformwithname:matrixfloat3x3:": {
+      "etag": "\"240d-65d55d07a30d1-df\"",
+      "file_path": "documentation/SpriteKit/skuniform/uniformwithname_matrixfloat3x3_.md",
+      "hash": "289728f7c38a79188fe5fb5baff7b54b9196704fa702bd957e0771e430e6d176"
+    },
+    "https://developer.apple.com/documentation/spritekit/skuniform/uniformwithname:matrixfloat4x4:": {
+      "etag": "\"2457-65d55d07a30d1-df\"",
+      "file_path": "documentation/SpriteKit/skuniform/uniformwithname_matrixfloat4x4_.md",
+      "hash": "15f83af889565a120df52146f3175d90ce4b8354bad109069784b5973dcc06c7"
+    },
+    "https://developer.apple.com/documentation/spritekit/skuniform/uniformwithname:texture:": {
+      "etag": "\"5f21-65d55d07a30d1-df\"",
+      "file_path": "documentation/SpriteKit/skuniform/uniformwithname_texture_.md",
+      "hash": "fbaed62987ab1eccc8b5b222eb224b5c8ba17f10bd0038a9abe6a329bde9d253"
+    },
+    "https://developer.apple.com/documentation/spritekit/skuniform/uniformwithname:vectorfloat2:": {
+      "etag": "\"23eb-65d55d07beba2-df\"",
+      "file_path": "documentation/SpriteKit/skuniform/uniformwithname_vectorfloat2_.md",
+      "hash": "0cde6b8d2bc18a9f98f1a17612ab80d816968d178e07696a8f86f5a03cf97744"
+    },
+    "https://developer.apple.com/documentation/spritekit/skuniform/uniformwithname:vectorfloat3:": {
+      "etag": "\"231f-65d55d07a30d1-df\"",
+      "file_path": "documentation/SpriteKit/skuniform/uniformwithname_vectorfloat3_.md",
+      "hash": "c6de5a936931ec0662c98e64c8e3682de23668ba969fca8574823c904371e2fb"
+    },
+    "https://developer.apple.com/documentation/spritekit/skuniform/uniformwithname:vectorfloat4:": {
+      "etag": "\"23eb-65d55d07beba2-df\"",
+      "file_path": "documentation/SpriteKit/skuniform/uniformwithname_vectorfloat4_.md",
+      "hash": "d3ef482ff398f2b34c598e430d95c54d9d3123451e58abe05cd81cfdf1e23e39"
+    },
     "https://developer.apple.com/documentation/spritekit/skuniform/vectorfloat2value": {
       "etag": "\"3594-65d55d07beba2-df\"",
       "file_path": "documentation/SpriteKit/skuniform/vectorfloat2value.md",
@@ -5094,6 +5319,31 @@
       "etag": "\"2502-65d55d05f1ebc-df\"",
       "file_path": "documentation/SpriteKit/skvideonode/size.md",
       "hash": "d8a5cc11573c0e152cf095efbf7a6e4efd34453088a7875003741aea23eacedf"
+    },
+    "https://developer.apple.com/documentation/spritekit/skvideonode/videonodewithavplayer:": {
+      "etag": "\"3b23-65d55d05f1ebc-df\"",
+      "file_path": "documentation/SpriteKit/skvideonode/videonodewithavplayer_.md",
+      "hash": "27ab7fbff539554eb31f32dc45c1480a38f422edcf201c00554284eabcc924f4"
+    },
+    "https://developer.apple.com/documentation/spritekit/skvideonode/videonodewithfilenamed:": {
+      "etag": "\"3d22-65d55d05f1ebc-df\"",
+      "file_path": "documentation/SpriteKit/skvideonode/videonodewithfilenamed_.md",
+      "hash": "3db810a2591f4cb813d6fea572b47d0bb7e1a0faa4c5c8ad98b7a5999ff95028"
+    },
+    "https://developer.apple.com/documentation/spritekit/skvideonode/videonodewithurl:": {
+      "etag": "\"3d29-65d55d05f1ebc-df\"",
+      "file_path": "documentation/SpriteKit/skvideonode/videonodewithurl_.md",
+      "hash": "879271c7489e8df9698870570c9ff5b25be18053f478aaba2c46e806e875a25a"
+    },
+    "https://developer.apple.com/documentation/spritekit/skvideonode/videonodewithvideofilenamed:": {
+      "etag": "\"1e04-65d55d05f1ebc-df\"",
+      "file_path": "documentation/SpriteKit/skvideonode/videonodewithvideofilenamed_.md",
+      "hash": "6372d097d3b4be2783fe813b8c5b672f6621a25c16222205d42de6380bbb74b8"
+    },
+    "https://developer.apple.com/documentation/spritekit/skvideonode/videonodewithvideourl:": {
+      "etag": "\"1ddf-65d55d05f1ebc-df\"",
+      "file_path": "documentation/SpriteKit/skvideonode/videonodewithvideourl_.md",
+      "hash": "4bc78f355921611839942ec180790d776c011d85fe3f009751733d6b628be0d9"
     },
     "https://developer.apple.com/documentation/spritekit/skview": {
       "etag": "\"144be-65d55d06a3c2d-df\"",
@@ -5265,6 +5515,26 @@
       "file_path": "documentation/SpriteKit/skwarpgeometrygrid/destposition(at).md",
       "hash": "6b14f17f557321952d53dbdbb9dbd397fd150b3c6ad06300d992a3728aff7871"
     },
+    "https://developer.apple.com/documentation/spritekit/skwarpgeometrygrid/grid": {
+      "etag": "\"2769-65d55d05d978d-df\"",
+      "file_path": "documentation/SpriteKit/skwarpgeometrygrid/grid.md",
+      "hash": "48a08215d18acafb0cbea815fef1a2d375074f6ec8a5c129d95e6ef2224fbb11"
+    },
+    "https://developer.apple.com/documentation/spritekit/skwarpgeometrygrid/gridbyreplacingdestpositions:": {
+      "etag": "\"2a4a-65d55d05d978d-df\"",
+      "file_path": "documentation/SpriteKit/skwarpgeometrygrid/gridbyreplacingdestpositions_.md",
+      "hash": "d915b5ae3d5116ad765eb016779a0de10175a9c32d3b270b4b9323387865e607"
+    },
+    "https://developer.apple.com/documentation/spritekit/skwarpgeometrygrid/gridbyreplacingsourcepositions:": {
+      "etag": "\"29ed-65d55d05f1ebc-df\"",
+      "file_path": "documentation/SpriteKit/skwarpgeometrygrid/gridbyreplacingsourcepositions_.md",
+      "hash": "b2b822d630a645471a1d84fe0ad9550ca12d099dc5788e995d190a96d394840e"
+    },
+    "https://developer.apple.com/documentation/spritekit/skwarpgeometrygrid/gridwithcolumns:rows:sourcepositions:destpositions:": {
+      "etag": "\"32cc-65d55d05d978d-df\"",
+      "file_path": "documentation/SpriteKit/skwarpgeometrygrid/gridwithcolumns_rows_sourcepositions_destpositions_.md",
+      "hash": "9a70b1cbd33f62a0d12556048f2ed686bdc3f2c08b2584641bffb0a69886fee7"
+    },
     "https://developer.apple.com/documentation/spritekit/skwarpgeometrygrid/init(coder:)": {
       "etag": "\"3ba8-65d55d05d978d-df\"",
       "file_path": "documentation/SpriteKit/skwarpgeometrygrid/init(coder).md",
@@ -5279,6 +5549,11 @@
       "etag": "\"3f87-65d55d05f1ebc-df\"",
       "file_path": "documentation/SpriteKit/skwarpgeometrygrid/init(columns,rows,sourcepositions,destinationpositions).md",
       "hash": "cfc95efea294f72febb548c7694a9a9088e6e2d539828eceb503c7995605dd68"
+    },
+    "https://developer.apple.com/documentation/spritekit/skwarpgeometrygrid/initwithcolumns:rows:sourcepositions:destpositions:": {
+      "etag": "\"3b6d-65d55d05d978d-df\"",
+      "file_path": "documentation/SpriteKit/skwarpgeometrygrid/initwithcolumns_rows_sourcepositions_destpositions_.md",
+      "hash": "8d5d9d34d13c1ab2290afc086e978204c0c861f4b35f5738d49fd1daf894786c"
     },
     "https://developer.apple.com/documentation/spritekit/skwarpgeometrygrid/numberofcolumns": {
       "etag": "\"303f-65d55d05d978d-df\"",
@@ -5459,6 +5734,11 @@
       "etag": "\"2e2a-65d55d074fbc1-df\"",
       "file_path": "documentation/SpriteKit/using-the-anchor-point-to-move-a-sprite.md",
       "hash": "0a2022715147cef1bc6cf1de4d0888656e84dd98cce373b1f8cd3254138ec8cd"
+    },
+    "https://developer.apple.com/documentation/spritekit/vector_float3": {
+      "etag": "\"15b4-65d55d07d7c74-df\"",
+      "file_path": "documentation/SpriteKit/vector_float3.md",
+      "hash": "c6b932c578db9588f599f4575ee35a31ad1a7b0f2d78a66036e86bd4543e4233"
     },
     "https://developer.apple.com/documentation/spritekit/warping-spritekit-content-by-using-an-effect-node": {
       "etag": "\"2d25-65d55d080f560-df\"",
@@ -5870,6 +6150,11 @@
       "file_path": "documentation/SpriteKit/sk3dnode/loops.md",
       "hash": "0495c70910c0088ea1666e9c9bab1cac5f0ed32f9855d02351628d69bb6b331b"
     },
+    "https://developer.apple.com/tutorials/data/documentation/spritekit/sk3dnode/nodewithviewportsize:.json": {
+      "etag": "\"212c-65d55d080f560-df\"",
+      "file_path": "documentation/SpriteKit/sk3dnode/nodewithviewportsize_.md",
+      "hash": "bf52e0f97fac98702cf0145bd95507825c25f1f9ba930224c3acb94b2dadc2f9"
+    },
     "https://developer.apple.com/tutorials/data/documentation/spritekit/sk3dnode/pointofview.json": {
       "etag": "\"38a8-65d55d080f560-df\"",
       "file_path": "documentation/SpriteKit/sk3dnode/pointofview.md",
@@ -5900,10 +6185,25 @@
       "file_path": "documentation/SpriteKit/sk3dnode/viewportsize.md",
       "hash": "71ed416835733950860601dead7d24fc0343acc69b48008e06a8129daa9f491c"
     },
+    "https://developer.apple.com/tutorials/data/documentation/spritekit/sk_available.json": {
+      "etag": "\"16b2-65d55d07d7c74-df\"",
+      "file_path": "documentation/SpriteKit/sk_available.md",
+      "hash": "c5f77cda109a69514b1adbcc6be47c6a6b45bf084afe3cfa6f6dcd52de60de9f"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/spritekit/sk_export.json": {
+      "etag": "\"16a0-65d55d07a30d1-df\"",
+      "file_path": "documentation/SpriteKit/sk_export.md",
+      "hash": "f96d529a44b296f26cb29deef0f9f5fca93cf53afb2f8823c044cbf82ec14c18"
+    },
     "https://developer.apple.com/tutorials/data/documentation/spritekit/sk_version.json": {
       "etag": "\"2033-65d55d074fbc1-df\"",
       "file_path": "documentation/SpriteKit/sk_version.md",
       "hash": "81638a059a3bb267bf96aa457c98a604b02c95f05258b8c9258cb14cc1d3df7f"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/spritekit/sk_weak_link.json": {
+      "etag": "\"16b2-65d55d06c3fd8-df\"",
+      "file_path": "documentation/SpriteKit/sk_weak_link.md",
+      "hash": "59e7d68a1112beb3a0921be2d964f022eec55d27ad2556e7a9577dbfebf1dc52"
     },
     "https://developer.apple.com/tutorials/data/documentation/spritekit/skaction.json": {
       "etag": "\"7b34-65d55d080f560-df\"",
@@ -6465,6 +6765,11 @@
       "file_path": "documentation/SpriteKit/skattribute.md",
       "hash": "ff07ab97553ded370018e8c9dad67eb0c14629857ee74a68b5fe444079607d0c"
     },
+    "https://developer.apple.com/tutorials/data/documentation/spritekit/skattribute/attributewithname:type:.json": {
+      "etag": "\"199e-65d55d05f1ebc-df\"",
+      "file_path": "documentation/SpriteKit/skattribute/attributewithname_type_.md",
+      "hash": "e1c0750194d83ffec04799d57ee2571b50f884cc0ff2745f87ebe40870a681b4"
+    },
     "https://developer.apple.com/tutorials/data/documentation/spritekit/skattribute/init(coder:).json": {
       "etag": "\"1493-65d55d05f1ebc-df\"",
       "file_path": "documentation/SpriteKit/skattribute/init(coder).md",
@@ -6709,6 +7014,11 @@
       "etag": "\"3607-65d55d062c119-df\"",
       "file_path": "documentation/SpriteKit/skcameranode/contains(_).md",
       "hash": "c1cb5524227f1559a242420245cc3643ad267b63101099c7291da41b42ce4282"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/spritekit/skcolor-c.macro.json": {
+      "etag": "\"169c-65d55d076f368-df\"",
+      "file_path": "documentation/SpriteKit/skcolor-c.macro.md",
+      "hash": "1e5b544692e46d0918be1e0ef27664ac8bfaae5a3c9d16ab9b4cee814ed0da18"
     },
     "https://developer.apple.com/tutorials/data/documentation/spritekit/skcolor-swift.typealias.json": {
       "etag": "\"f6c-65d55d080f560-df\"",
@@ -7430,6 +7740,11 @@
       "file_path": "documentation/SpriteKit/sklabelnode/init(text).md",
       "hash": "45cee4790ffb8198183024d3514fc734c2f1da725409cdaba79b442c8ecfee77"
     },
+    "https://developer.apple.com/tutorials/data/documentation/spritekit/sklabelnode/labelnodewithfontnamed:.json": {
+      "etag": "\"2747-65d55d07f32b5-df\"",
+      "file_path": "documentation/SpriteKit/sklabelnode/labelnodewithfontnamed_.md",
+      "hash": "5cf0776deab46a46abb8be952b2712fb031622a16889837b426adf0d7ed936e3"
+    },
     "https://developer.apple.com/tutorials/data/documentation/spritekit/sklabelnode/linebreakmode.json": {
       "etag": "\"2a93-65d55d07f32b5-df\"",
       "file_path": "documentation/SpriteKit/sklabelnode/linebreakmode.md",
@@ -7539,6 +7854,11 @@
       "etag": "\"3984-65d55d07f32b5-df\"",
       "file_path": "documentation/SpriteKit/skmutabletexture/modifypixeldata(_).md",
       "hash": "375ad280feae85664b9cbaf28c45ee0f884b9f8126568390ef1896adb865ab62"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/spritekit/skmutabletexture/mutabletexturewithsize:.json": {
+      "etag": "\"28c8-65d55d07f32b5-df\"",
+      "file_path": "documentation/SpriteKit/skmutabletexture/mutabletexturewithsize_.md",
+      "hash": "9f98b0ba2a00f6305a2ab8b8ea75bb0d6d99076e70563a1ae17360569e45578b"
     },
     "https://developer.apple.com/tutorials/data/documentation/spritekit/sknode.json": {
       "etag": "\"26b15-65d757820fe45-df\"",
@@ -7749,6 +8069,11 @@
       "etag": "\"39b6-65d55d05b7bf1-df\"",
       "file_path": "documentation/SpriteKit/sknode/name.md",
       "hash": "c920e4c14da85ea2dd4c936e47ba3d9757a0cb4d33b603fbf1fc62e52bdc22ec"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/spritekit/sknode/node.json": {
+      "etag": "\"2840-65d55d05d978d-df\"",
+      "file_path": "documentation/SpriteKit/sknode/node.md",
+      "hash": "2a67c93961769a4dcd319cda74d3ec721d37113b7da5b297d5db97cdbfbaea54"
     },
     "https://developer.apple.com/tutorials/data/documentation/spritekit/sknode/nodes(at:).json": {
       "etag": "\"45b4-65d55d05d978d-df\"",
@@ -8480,6 +8805,11 @@
       "file_path": "documentation/SpriteKit/skrange/lowerlimit.md",
       "hash": "a3d54431d3971181d6f7d5afdcbbad12dbe4fe25bc6b77ba46d3d8a6f4434034"
     },
+    "https://developer.apple.com/tutorials/data/documentation/spritekit/skrange/rangewithlowerlimit:upperlimit:.json": {
+      "etag": "\"3855-65d55d06493e8-df\"",
+      "file_path": "documentation/SpriteKit/skrange/rangewithlowerlimit_upperlimit_.md",
+      "hash": "0298c9da2ccf86f02aecf610856c74b16eb346d60231f8158c9a982fde11de13"
+    },
     "https://developer.apple.com/tutorials/data/documentation/spritekit/skrange/upperlimit.json": {
       "etag": "\"2458-65d55d06493e8-df\"",
       "file_path": "documentation/SpriteKit/skrange/upperlimit.md",
@@ -8805,6 +9135,11 @@
       "file_path": "documentation/SpriteKit/skscene/scenedidload().md",
       "hash": "a9c5ca44ddd9e2e301c4c6ce7407eff0becca27e05c19f6b74136161f28626dd"
     },
+    "https://developer.apple.com/tutorials/data/documentation/spritekit/skscene/scenewithsize:.json": {
+      "etag": "\"1f25-65d55d06493e8-df\"",
+      "file_path": "documentation/SpriteKit/skscene/scenewithsize_.md",
+      "hash": "71b4c402ea291525f63ee4de9406dfd572a868dae17fcf06fadbe4248c01f334"
+    },
     "https://developer.apple.com/tutorials/data/documentation/spritekit/skscene/size.json": {
       "etag": "\"3c06-65d55d06493e8-df\"",
       "file_path": "documentation/SpriteKit/skscene/size.md",
@@ -8924,6 +9259,21 @@
       "etag": "\"3368-65d55d060e493-df\"",
       "file_path": "documentation/SpriteKit/skshader/removeuniformnamed(_).md",
       "hash": "92df88faec6cea3c60f19437309aabc7010ed9255c0faa0447bcb307a038b141"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/spritekit/skshader/shader.json": {
+      "etag": "\"290b-65d55d060e493-df\"",
+      "file_path": "documentation/SpriteKit/skshader/shader.md",
+      "hash": "779607ca8269c2ea3e77db33a2ac79daa39961bd6997b24957d3451e8c4b0971"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/spritekit/skshader/shaderwithsource:.json": {
+      "etag": "\"2cbe-65d55d060e493-df\"",
+      "file_path": "documentation/SpriteKit/skshader/shaderwithsource_.md",
+      "hash": "cec027b0be99204446af94dc2637d55fb9ebf15849a8bccbe420c7039ca8b78c"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/spritekit/skshader/shaderwithsource:uniforms:.json": {
+      "etag": "\"3258-65d55d060e493-df\"",
+      "file_path": "documentation/SpriteKit/skshader/shaderwithsource_uniforms_.md",
+      "hash": "6f934940597c39525ae66e7c6b22814d20e47d5e38ed8ff637499aad58560f6e"
     },
     "https://developer.apple.com/tutorials/data/documentation/spritekit/skshader/source.json": {
       "etag": "\"2089-65d55d060e493-df\"",
@@ -9234,6 +9584,21 @@
       "etag": "\"29af-65d55d0668401-df\"",
       "file_path": "documentation/SpriteKit/skspritenode/size.md",
       "hash": "c93ac8db047fc0168470040623063a7a06444bf176dd7142cf37d4a3dd51413a"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/spritekit/skspritenode/spritenodewithcolor:size:.json": {
+      "etag": "\"3ecf-65d55d0668401-df\"",
+      "file_path": "documentation/SpriteKit/skspritenode/spritenodewithcolor_size_.md",
+      "hash": "2bdf110443fe1c250da8609d76f2348670249d2174883044c39145d221228f1c"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/spritekit/skspritenode/spritenodewithimagenamed:.json": {
+      "etag": "\"37be-65d55d0668401-df\"",
+      "file_path": "documentation/SpriteKit/skspritenode/spritenodewithimagenamed_.md",
+      "hash": "51d8b07a3c914723ddab88152570afc6bbe0d64abaef7680b4af3f9a2bd55dc4"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/spritekit/skspritenode/spritenodewithtexture:.json": {
+      "etag": "\"38ee-65d55d0668401-df\"",
+      "file_path": "documentation/SpriteKit/skspritenode/spritenodewithtexture_.md",
+      "hash": "79be19f1c290b794614583f235518f841e8bd32af4428361833d6c1dde00f0da"
     },
     "https://developer.apple.com/tutorials/data/documentation/spritekit/skspritenode/texture.json": {
       "etag": "\"4ca8-65d55d0668401-df\"",
@@ -9700,6 +10065,31 @@
       "file_path": "documentation/SpriteKit/sktiledefinition/textures.md",
       "hash": "441a656e14fda289b9dcc21a00bee17189f613c4d800595d0a3376d1b9d2b0db"
     },
+    "https://developer.apple.com/tutorials/data/documentation/spritekit/sktiledefinition/tiledefinitionwithtexture:.json": {
+      "etag": "\"1b63-65d55d06c3fd8-df\"",
+      "file_path": "documentation/SpriteKit/sktiledefinition/tiledefinitionwithtexture_.md",
+      "hash": "d0eb457e9c2888d0e4f26bb93a5acf51c2ebe3a871e9380e22fea1edb34cff5c"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/spritekit/sktiledefinition/tiledefinitionwithtexture:normaltexture:size:.json": {
+      "etag": "\"23f4-65d55d06c3fd8-df\"",
+      "file_path": "documentation/SpriteKit/sktiledefinition/tiledefinitionwithtexture_normaltexture_size_.md",
+      "hash": "2978d558d7ef1fde2425a03105700afe8d993479555ec63a352442e797b2e16d"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/spritekit/sktiledefinition/tiledefinitionwithtexture:size:.json": {
+      "etag": "\"207f-65d55d06c3fd8-df\"",
+      "file_path": "documentation/SpriteKit/sktiledefinition/tiledefinitionwithtexture_size_.md",
+      "hash": "9a5f5a85cf59d3a9f0a23a51015a49f5758322e2f495a2fc9dba05b00371e732"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/spritekit/sktiledefinition/tiledefinitionwithtextures:normaltextures:size:timeperframe:.json": {
+      "etag": "\"2e8c-65d55d06c3fd8-df\"",
+      "file_path": "documentation/SpriteKit/sktiledefinition/tiledefinitionwithtextures_normaltextures_size_timeperframe_.md",
+      "hash": "ade7d7f702aee3cde29c530f167c089fe3feb86deb863ebde2757501e6d52619"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/spritekit/sktiledefinition/tiledefinitionwithtextures:size:timeperframe:.json": {
+      "etag": "\"2d2b-65d55d06a3c2d-df\"",
+      "file_path": "documentation/SpriteKit/sktiledefinition/tiledefinitionwithtextures_size_timeperframe_.md",
+      "hash": "fc8a43c5e4a315c93baa2ebea6484efbf0bd1e7cc1e400aa763af7d14f26324a"
+    },
     "https://developer.apple.com/tutorials/data/documentation/spritekit/sktiledefinition/timeperframe.json": {
       "etag": "\"3145-65d55d06c3fd8-df\"",
       "file_path": "documentation/SpriteKit/sktiledefinition/timeperframe.md",
@@ -9775,6 +10165,16 @@
       "file_path": "documentation/SpriteKit/sktilegroup/rules.md",
       "hash": "5c4d684ca63010b53add84c494972f9e01f0960e13708e30d251608efb29e220"
     },
+    "https://developer.apple.com/tutorials/data/documentation/spritekit/sktilegroup/tilegroupwithrules:.json": {
+      "etag": "\"201f-65d55d0728821-df\"",
+      "file_path": "documentation/SpriteKit/sktilegroup/tilegroupwithrules_.md",
+      "hash": "672e809ca0670c70ee44f401a45cbe91caa3863895601ca55b5797d55f96a961"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/spritekit/sktilegroup/tilegroupwithtiledefinition:.json": {
+      "etag": "\"24e6-65d55d0728821-df\"",
+      "file_path": "documentation/SpriteKit/sktilegroup/tilegroupwithtiledefinition_.md",
+      "hash": "64ade2432ae3dca9df667732f37a74f8783987735d00d1839f992ec6bdc5b4ce"
+    },
     "https://developer.apple.com/tutorials/data/documentation/spritekit/sktilegrouprule.json": {
       "etag": "\"6d75-65d55d05b7bf1-df\"",
       "file_path": "documentation/SpriteKit/sktilegrouprule.md",
@@ -9804,6 +10204,11 @@
       "etag": "\"3159-65d55d08339ea-df\"",
       "file_path": "documentation/SpriteKit/sktilegrouprule/tiledefinitions.md",
       "hash": "17de3b962650bbc61591e9a35d9327a3652c2f5e801253256eaf60462bf77acc"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/spritekit/sktilegrouprule/tilegrouprulewithadjacency:tiledefinitions:.json": {
+      "etag": "\"1f6f-65d55d08339ea-df\"",
+      "file_path": "documentation/SpriteKit/sktilegrouprule/tilegrouprulewithadjacency_tiledefinitions_.md",
+      "hash": "197b0c71175f9c43a7a5e1158549ff2dfd14bd0f859f1641954c4e9ca8f1c244"
     },
     "https://developer.apple.com/tutorials/data/documentation/spritekit/sktilemapnode.json": {
       "etag": "\"120ba-65d55d074fbc1-df\"",
@@ -9935,6 +10340,21 @@
       "file_path": "documentation/SpriteKit/sktilemapnode/tilemapnodes(tileset,columns,rows,tilesize,from,tiletypenoisemapthresholds).md",
       "hash": "56961da59d4b02348dfe9b83fdc7e7f6897bd43cf386b5c69f3f418545f3e69e"
     },
+    "https://developer.apple.com/tutorials/data/documentation/spritekit/sktilemapnode/tilemapnodewithtileset:columns:rows:tilesize:.json": {
+      "etag": "\"500a-65d55d06865ab-df\"",
+      "file_path": "documentation/SpriteKit/sktilemapnode/tilemapnodewithtileset_columns_rows_tilesize_.md",
+      "hash": "cf45660a5e8f3bfccd7988e993a8bfc7f593d06cb07116075e08fa4fa7d440cc"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/spritekit/sktilemapnode/tilemapnodewithtileset:columns:rows:tilesize:fillwithtilegroup:.json": {
+      "etag": "\"55c6-65d55d06865ab-df\"",
+      "file_path": "documentation/SpriteKit/sktilemapnode/tilemapnodewithtileset_columns_rows_tilesize_fillwithtilegroup_.md",
+      "hash": "f991ba29fa474b3042ca26695e06c599648d10f8f4f2c2d546f38ddc711d082e"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/spritekit/sktilemapnode/tilemapnodewithtileset:columns:rows:tilesize:tilegrouplayout:.json": {
+      "etag": "\"5174-65d55d06865ab-df\"",
+      "file_path": "documentation/SpriteKit/sktilemapnode/tilemapnodewithtileset_columns_rows_tilesize_tilegrouplayout_.md",
+      "hash": "a89b35eac3061d1100b5f581fd472abcc0be2095974a70549f169f62f0f46b99"
+    },
     "https://developer.apple.com/tutorials/data/documentation/spritekit/sktilemapnode/tilerowindex(fromposition:).json": {
       "etag": "\"48fb-65d55d06865ab-df\"",
       "file_path": "documentation/SpriteKit/sktilemapnode/tilerowindex(fromposition).md",
@@ -10009,6 +10429,16 @@
       "etag": "\"3708-65d55d06a3c2d-df\"",
       "file_path": "documentation/SpriteKit/sktileset/tilegroups.md",
       "hash": "cca8e1c9d940be47e4c952c55504c242e995fa28c51f6b31bdc48e2ead82ef8d"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/spritekit/sktileset/tilesetwithtilegroups:.json": {
+      "etag": "\"1f1e-65d55d06a3c2d-df\"",
+      "file_path": "documentation/SpriteKit/sktileset/tilesetwithtilegroups_.md",
+      "hash": "c72d0dc722b5ddf372a775849aab870761b4e0c7e18f7e1dab7f16c398c9e5f1"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/spritekit/sktileset/tilesetwithtilegroups:tilesettype:.json": {
+      "etag": "\"24c1-65d55d06a3c2d-df\"",
+      "file_path": "documentation/SpriteKit/sktileset/tilesetwithtilegroups_tilesettype_.md",
+      "hash": "8611a19077970fa7c6b5131925b6a34e09b06442ebf84ed4349dc465d139ac82"
     },
     "https://developer.apple.com/tutorials/data/documentation/spritekit/sktileset/type.json": {
       "etag": "\"33b0-65d55d06a3c2d-df\"",
@@ -10420,6 +10850,81 @@
       "file_path": "documentation/SpriteKit/skuniform/uniformtype.md",
       "hash": "ed45baccb58af695409d4e47362653c3e6863e51eb15ced631c8d9f301f327e2"
     },
+    "https://developer.apple.com/tutorials/data/documentation/spritekit/skuniform/uniformwithname:.json": {
+      "etag": "\"5b7d-65d55d07a30d1-df\"",
+      "file_path": "documentation/SpriteKit/skuniform/uniformwithname_.md",
+      "hash": "b1bc1e161fb838ae9b99584c5eb796f16a9782b072dfc5dd58a5463646a69c63"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/spritekit/skuniform/uniformwithname:float:.json": {
+      "etag": "\"5a93-65d55d07beba2-df\"",
+      "file_path": "documentation/SpriteKit/skuniform/uniformwithname_float_.md",
+      "hash": "aaae69dae24b1d02ae0cb7da7d671000c6a3ad0fd9619d5c171b55cfbc4b1586"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/spritekit/skuniform/uniformwithname:floatmatrix2:.json": {
+      "etag": "\"5b6c-65d55d07beba2-df\"",
+      "file_path": "documentation/SpriteKit/skuniform/uniformwithname_floatmatrix2_.md",
+      "hash": "86aa0faa22b1783c41b289a37d6e61d6eb901e83b70ec70cebb09aa89eb2c78e"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/spritekit/skuniform/uniformwithname:floatmatrix3:.json": {
+      "etag": "\"5b6c-65d55d07a30d1-df\"",
+      "file_path": "documentation/SpriteKit/skuniform/uniformwithname_floatmatrix3_.md",
+      "hash": "b848852d6641f42f805f0fdf06a6e287ebedf6731f73d1532f27f823064173b2"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/spritekit/skuniform/uniformwithname:floatmatrix4:.json": {
+      "etag": "\"5b6c-65d55d07beba2-df\"",
+      "file_path": "documentation/SpriteKit/skuniform/uniformwithname_floatmatrix4_.md",
+      "hash": "3e24f4b308a8d7cc0cb8f6accd8d1f3c22b95466246d99a0e5f81d2279c3fac7"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/spritekit/skuniform/uniformwithname:floatvector2:.json": {
+      "etag": "\"5af1-65d55d07beba2-df\"",
+      "file_path": "documentation/SpriteKit/skuniform/uniformwithname_floatvector2_.md",
+      "hash": "18a467bc40a6c23ab31b3a1c408e828dc3407c819e71d36977719ff49781241f"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/spritekit/skuniform/uniformwithname:floatvector3:.json": {
+      "etag": "\"5af5-65d55d07a30d1-df\"",
+      "file_path": "documentation/SpriteKit/skuniform/uniformwithname_floatvector3_.md",
+      "hash": "ad673932e635d58c0cec5a51e6abe4659d47256710769222b790e021123a5cc3"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/spritekit/skuniform/uniformwithname:floatvector4:.json": {
+      "etag": "\"5af3-65d55d07beba2-df\"",
+      "file_path": "documentation/SpriteKit/skuniform/uniformwithname_floatvector4_.md",
+      "hash": "c08a7f92915dc2026c767c30ad171bde5709fd9d50f561bd6212a461204e712f"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/spritekit/skuniform/uniformwithname:matrixfloat2x2:.json": {
+      "etag": "\"2457-65d55d07beba2-df\"",
+      "file_path": "documentation/SpriteKit/skuniform/uniformwithname_matrixfloat2x2_.md",
+      "hash": "75a7fa3d21fdae44f3e7c2548688e3320e5a4a9219c3aba98fbe9f1dcc8cfb07"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/spritekit/skuniform/uniformwithname:matrixfloat3x3:.json": {
+      "etag": "\"240d-65d55d07a30d1-df\"",
+      "file_path": "documentation/SpriteKit/skuniform/uniformwithname_matrixfloat3x3_.md",
+      "hash": "289728f7c38a79188fe5fb5baff7b54b9196704fa702bd957e0771e430e6d176"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/spritekit/skuniform/uniformwithname:matrixfloat4x4:.json": {
+      "etag": "\"2457-65d55d07a30d1-df\"",
+      "file_path": "documentation/SpriteKit/skuniform/uniformwithname_matrixfloat4x4_.md",
+      "hash": "15f83af889565a120df52146f3175d90ce4b8354bad109069784b5973dcc06c7"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/spritekit/skuniform/uniformwithname:texture:.json": {
+      "etag": "\"5f21-65d55d07a30d1-df\"",
+      "file_path": "documentation/SpriteKit/skuniform/uniformwithname_texture_.md",
+      "hash": "fbaed62987ab1eccc8b5b222eb224b5c8ba17f10bd0038a9abe6a329bde9d253"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/spritekit/skuniform/uniformwithname:vectorfloat2:.json": {
+      "etag": "\"23eb-65d55d07beba2-df\"",
+      "file_path": "documentation/SpriteKit/skuniform/uniformwithname_vectorfloat2_.md",
+      "hash": "0cde6b8d2bc18a9f98f1a17612ab80d816968d178e07696a8f86f5a03cf97744"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/spritekit/skuniform/uniformwithname:vectorfloat3:.json": {
+      "etag": "\"231f-65d55d07a30d1-df\"",
+      "file_path": "documentation/SpriteKit/skuniform/uniformwithname_vectorfloat3_.md",
+      "hash": "c6de5a936931ec0662c98e64c8e3682de23668ba969fca8574823c904371e2fb"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/spritekit/skuniform/uniformwithname:vectorfloat4:.json": {
+      "etag": "\"23eb-65d55d07beba2-df\"",
+      "file_path": "documentation/SpriteKit/skuniform/uniformwithname_vectorfloat4_.md",
+      "hash": "d3ef482ff398f2b34c598e430d95c54d9d3123451e58abe05cd81cfdf1e23e39"
+    },
     "https://developer.apple.com/tutorials/data/documentation/spritekit/skuniform/vectorfloat2value.json": {
       "etag": "\"3594-65d55d07beba2-df\"",
       "file_path": "documentation/SpriteKit/skuniform/vectorfloat2value.md",
@@ -10564,6 +11069,31 @@
       "etag": "\"2502-65d55d05f1ebc-df\"",
       "file_path": "documentation/SpriteKit/skvideonode/size.md",
       "hash": "d8a5cc11573c0e152cf095efbf7a6e4efd34453088a7875003741aea23eacedf"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/spritekit/skvideonode/videonodewithavplayer:.json": {
+      "etag": "\"3b23-65d55d05f1ebc-df\"",
+      "file_path": "documentation/SpriteKit/skvideonode/videonodewithavplayer_.md",
+      "hash": "27ab7fbff539554eb31f32dc45c1480a38f422edcf201c00554284eabcc924f4"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/spritekit/skvideonode/videonodewithfilenamed:.json": {
+      "etag": "\"3d22-65d55d05f1ebc-df\"",
+      "file_path": "documentation/SpriteKit/skvideonode/videonodewithfilenamed_.md",
+      "hash": "3db810a2591f4cb813d6fea572b47d0bb7e1a0faa4c5c8ad98b7a5999ff95028"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/spritekit/skvideonode/videonodewithurl:.json": {
+      "etag": "\"3d29-65d55d05f1ebc-df\"",
+      "file_path": "documentation/SpriteKit/skvideonode/videonodewithurl_.md",
+      "hash": "879271c7489e8df9698870570c9ff5b25be18053f478aaba2c46e806e875a25a"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/spritekit/skvideonode/videonodewithvideofilenamed:.json": {
+      "etag": "\"1e04-65d55d05f1ebc-df\"",
+      "file_path": "documentation/SpriteKit/skvideonode/videonodewithvideofilenamed_.md",
+      "hash": "6372d097d3b4be2783fe813b8c5b672f6621a25c16222205d42de6380bbb74b8"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/spritekit/skvideonode/videonodewithvideourl:.json": {
+      "etag": "\"1ddf-65d55d05f1ebc-df\"",
+      "file_path": "documentation/SpriteKit/skvideonode/videonodewithvideourl_.md",
+      "hash": "4bc78f355921611839942ec180790d776c011d85fe3f009751733d6b628be0d9"
     },
     "https://developer.apple.com/tutorials/data/documentation/spritekit/skview.json": {
       "etag": "\"144be-65d55d06a3c2d-df\"",
@@ -10735,6 +11265,26 @@
       "file_path": "documentation/SpriteKit/skwarpgeometrygrid/destposition(at).md",
       "hash": "6b14f17f557321952d53dbdbb9dbd397fd150b3c6ad06300d992a3728aff7871"
     },
+    "https://developer.apple.com/tutorials/data/documentation/spritekit/skwarpgeometrygrid/grid.json": {
+      "etag": "\"2769-65d55d05d978d-df\"",
+      "file_path": "documentation/SpriteKit/skwarpgeometrygrid/grid.md",
+      "hash": "48a08215d18acafb0cbea815fef1a2d375074f6ec8a5c129d95e6ef2224fbb11"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/spritekit/skwarpgeometrygrid/gridbyreplacingdestpositions:.json": {
+      "etag": "\"2a4a-65d55d05d978d-df\"",
+      "file_path": "documentation/SpriteKit/skwarpgeometrygrid/gridbyreplacingdestpositions_.md",
+      "hash": "d915b5ae3d5116ad765eb016779a0de10175a9c32d3b270b4b9323387865e607"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/spritekit/skwarpgeometrygrid/gridbyreplacingsourcepositions:.json": {
+      "etag": "\"29ed-65d55d05f1ebc-df\"",
+      "file_path": "documentation/SpriteKit/skwarpgeometrygrid/gridbyreplacingsourcepositions_.md",
+      "hash": "b2b822d630a645471a1d84fe0ad9550ca12d099dc5788e995d190a96d394840e"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/spritekit/skwarpgeometrygrid/gridwithcolumns:rows:sourcepositions:destpositions:.json": {
+      "etag": "\"32cc-65d55d05d978d-df\"",
+      "file_path": "documentation/SpriteKit/skwarpgeometrygrid/gridwithcolumns_rows_sourcepositions_destpositions_.md",
+      "hash": "9a70b1cbd33f62a0d12556048f2ed686bdc3f2c08b2584641bffb0a69886fee7"
+    },
     "https://developer.apple.com/tutorials/data/documentation/spritekit/skwarpgeometrygrid/init(coder:).json": {
       "etag": "\"3ba8-65d55d05d978d-df\"",
       "file_path": "documentation/SpriteKit/skwarpgeometrygrid/init(coder).md",
@@ -10749,6 +11299,11 @@
       "etag": "\"3f87-65d55d05f1ebc-df\"",
       "file_path": "documentation/SpriteKit/skwarpgeometrygrid/init(columns,rows,sourcepositions,destinationpositions).md",
       "hash": "cfc95efea294f72febb548c7694a9a9088e6e2d539828eceb503c7995605dd68"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/spritekit/skwarpgeometrygrid/initwithcolumns:rows:sourcepositions:destpositions:.json": {
+      "etag": "\"3b6d-65d55d05d978d-df\"",
+      "file_path": "documentation/SpriteKit/skwarpgeometrygrid/initwithcolumns_rows_sourcepositions_destpositions_.md",
+      "hash": "8d5d9d34d13c1ab2290afc086e978204c0c861f4b35f5738d49fd1daf894786c"
     },
     "https://developer.apple.com/tutorials/data/documentation/spritekit/skwarpgeometrygrid/numberofcolumns.json": {
       "etag": "\"303f-65d55d05d978d-df\"",
@@ -10930,6 +11485,11 @@
       "file_path": "documentation/SpriteKit/using-the-anchor-point-to-move-a-sprite.md",
       "hash": "0a2022715147cef1bc6cf1de4d0888656e84dd98cce373b1f8cd3254138ec8cd"
     },
+    "https://developer.apple.com/tutorials/data/documentation/spritekit/vector_float3.json": {
+      "etag": "\"15b4-65d55d07d7c74-df\"",
+      "file_path": "documentation/SpriteKit/vector_float3.md",
+      "hash": "c6b932c578db9588f599f4575ee35a31ad1a7b0f2d78a66036e86bd4543e4233"
+    },
     "https://developer.apple.com/tutorials/data/documentation/spritekit/warping-spritekit-content-by-using-an-effect-node.json": {
       "etag": "\"2d25-65d55d080f560-df\"",
       "file_path": "documentation/SpriteKit/warping-spritekit-content-by-using-an-effect-node.md",
@@ -10943,8 +11503,8 @@
   },
   "metadata": {
     "render": {
-      "version": 1
+      "version": 2
     },
-    "total_pages": 2188
+    "total_pages": 2300
   }
 }

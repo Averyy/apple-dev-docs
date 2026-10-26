@@ -36,6 +36,12 @@ If you don’t specify minimum, maximum, or valid values, the property supports 
 - `validValues`: An optional array of valid values for the property.
 - `readOnly`: A Boolean value that indicates whether the property is read-only.
 
+## See Also
+
+### Creating Property Attributes
+- [+ propertyAttributesWithMinValue:maxValue:validValues:readOnly:](./propertyattributeswithminvalue_maxvalue_validvalues_readonly_.md)
+  Returns a new property attributes object with the specified configuration.
+
 
 ---
 

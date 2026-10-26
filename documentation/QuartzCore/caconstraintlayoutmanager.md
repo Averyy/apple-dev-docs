@@ -74,6 +74,12 @@ layer.layoutManager = CAConstraintLayoutManager()
 
 This class is not meant to be subclassed.
 
+## Topics
+
+### Creating the layout manager
+- [+ layoutManager](./caconstraintlayoutmanager/layoutmanager.md)
+  Returns the shared layout manager object.
+
 ## Relationships
 
 ### Inherits From

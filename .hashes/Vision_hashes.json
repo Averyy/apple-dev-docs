@@ -430,6 +430,11 @@
       "file_path": "documentation/Vision/boundingboxproviding/boundingbox.md",
       "hash": "47e6f15a8545a0647f18b4dc432e9ec4a1915777faa65e784c621dbd99f0f510"
     },
+    "https://developer.apple.com/documentation/vision/boundingboxproviding/boundingbox-73688": {
+      "etag": "\"11a0-65d55e1603fd7-df\"",
+      "file_path": "documentation/Vision/boundingboxproviding/boundingbox-73688.md",
+      "hash": "353017061cf47fd7d8c12f3a6d1b523fe2649ed5e4edd9103a918fe8552b8529"
+    },
     "https://developer.apple.com/documentation/vision/boundingregionproviding": {
       "etag": "\"2eb2-65d55e1278059-df\"",
       "file_path": "documentation/Vision/boundingregionproviding.md",
@@ -1775,10 +1780,20 @@
       "file_path": "documentation/Vision/downloadableassetsrequest/downloadassets().md",
       "hash": "2db975332ca9db391e580a65538fc0a1c1f845e7be924c6d68c2a7229caeaec9"
     },
+    "https://developer.apple.com/documentation/vision/downloadableassetsrequest/downloadassets()-8lzdp": {
+      "etag": "\"10ec-65d55e14327f7-df\"",
+      "file_path": "documentation/Vision/downloadableassetsrequest/downloadassets()-8lzdp.md",
+      "hash": "51d26b39e80b74dfc49ca35557e2121f2259f393a503b10d709abad880026404"
+    },
     "https://developer.apple.com/documentation/vision/downloadableassetsrequest/downloadassets(progress:)": {
       "etag": "\"240b-65d55e14327f7-df\"",
       "file_path": "documentation/Vision/downloadableassetsrequest/downloadassets(progress).md",
       "hash": "62b804e7220af7734920b907661e8e61fbb5da9ee35633515a51f136f1688984"
+    },
+    "https://developer.apple.com/documentation/vision/downloadableassetsrequest/downloadassets(progress:)-3mcyi": {
+      "etag": "\"18d1-65d55e14327f7-df\"",
+      "file_path": "documentation/Vision/downloadableassetsrequest/downloadassets(progress)-3mcyi.md",
+      "hash": "506f65296a7926d412fa2743078fa5bc26f24736a1e546dfbc334d30bb6b6bf4"
     },
     "https://developer.apple.com/documentation/vision/downloadableassetsrequeststatus": {
       "etag": "\"3d24-65d55e1575c24-df\"",
@@ -3024,6 +3039,16 @@
       "file_path": "documentation/Vision/imageprocessingrequest.md",
       "hash": "06bc2208808a48cae4360a667d3782f43a545375a1a266c2e48e35c7d919e204"
     },
+    "https://developer.apple.com/documentation/vision/imageprocessingrequest/perform(on:orientation:)-1mquz": {
+      "etag": "\"1fda-65d55e150101c-df\"",
+      "file_path": "documentation/Vision/imageprocessingrequest/perform(on,orientation)-1mquz.md",
+      "hash": "7cc6126e990d995bff7363f082b56e2a8a8db405ae4344b1397b2f1302327677"
+    },
+    "https://developer.apple.com/documentation/vision/imageprocessingrequest/perform(on:orientation:)-2q3hx": {
+      "etag": "\"1f25-65d55e150101c-df\"",
+      "file_path": "documentation/Vision/imageprocessingrequest/perform(on,orientation)-2q3hx.md",
+      "hash": "a9291495871ca041b1bf4051586627e25d91b5770459a7bec39e9d3ea8b78b44"
+    },
     "https://developer.apple.com/documentation/vision/imageprocessingrequest/perform(on:orientation:)-3f3f1": {
       "etag": "\"5ec1-65d55e150101c-df\"",
       "file_path": "documentation/Vision/imageprocessingrequest/perform(on,orientation)-3f3f1.md",
@@ -3034,15 +3059,35 @@
       "file_path": "documentation/Vision/imageprocessingrequest/perform(on,orientation)-3hddl.md",
       "hash": "ec21e2ccf8103fa2ebb78f55e38a335de47a05223b9b3dcd28cf7554af16194f"
     },
+    "https://developer.apple.com/documentation/vision/imageprocessingrequest/perform(on:orientation:)-6hrxe": {
+      "etag": "\"1f71-65d55e150101c-df\"",
+      "file_path": "documentation/Vision/imageprocessingrequest/perform(on,orientation)-6hrxe.md",
+      "hash": "d819a0c2aed35a325fb0b90df803ea1575ae85b6bbc885592fd73de918d0599c"
+    },
     "https://developer.apple.com/documentation/vision/imageprocessingrequest/perform(on:orientation:)-80bya": {
       "etag": "\"5f0f-65d55e150101c-df\"",
       "file_path": "documentation/Vision/imageprocessingrequest/perform(on,orientation)-80bya.md",
       "hash": "c69f486556d32237bfa22205fd895394e1034f1409c878ec17e77fb0d15748d3"
     },
+    "https://developer.apple.com/documentation/vision/imageprocessingrequest/perform(on:orientation:)-82mjf": {
+      "etag": "\"21ae-65d55e150101c-df\"",
+      "file_path": "documentation/Vision/imageprocessingrequest/perform(on,orientation)-82mjf.md",
+      "hash": "9f22c39c0473773f3846fc67bb80ffcb9a83b01393595f06cceb94b741ea149e"
+    },
     "https://developer.apple.com/documentation/vision/imageprocessingrequest/perform(on:orientation:)-85ex1": {
       "etag": "\"5f81-65d55e150101c-df\"",
       "file_path": "documentation/Vision/imageprocessingrequest/perform(on,orientation)-85ex1.md",
       "hash": "d7faf86938c3c1f3ebe6b797073d6a2bd452636352597efbeedaf00b608d1669"
+    },
+    "https://developer.apple.com/documentation/vision/imageprocessingrequest/perform(on:orientation:)-8wluq": {
+      "etag": "\"21a2-65d55e150101c-df\"",
+      "file_path": "documentation/Vision/imageprocessingrequest/perform(on,orientation)-8wluq.md",
+      "hash": "e6acc11d6d7bf978f554bfd8a2e75fcb9a6e32b63058f5558e3c2056c27685b6"
+    },
+    "https://developer.apple.com/documentation/vision/imageprocessingrequest/perform(on:orientation:)-967mr": {
+      "etag": "\"2122-65d55e14e7862-df\"",
+      "file_path": "documentation/Vision/imageprocessingrequest/perform(on,orientation)-967mr.md",
+      "hash": "7f6184f5b37ef948ab0e7f92a6c1aa49bb368c0a4d08a940e0b151688b0437f4"
     },
     "https://developer.apple.com/documentation/vision/imageprocessingrequest/perform(on:orientation:)-qxxx": {
       "etag": "\"60d0-65d55e14e7862-df\"",
@@ -4229,6 +4274,11 @@
       "file_path": "documentation/Vision/statefulrequest/minimumlatencyframecount.md",
       "hash": "430f8188c76545d79a9cd4a2f88ae9d4590e9e17fa78bbf9a607ed02de579654"
     },
+    "https://developer.apple.com/documentation/vision/statefulrequest/minimumlatencyframecount-2h8se": {
+      "etag": "\"1161-65d55e150101c-df\"",
+      "file_path": "documentation/Vision/statefulrequest/minimumlatencyframecount-2h8se.md",
+      "hash": "4cd463f069c72fd66a44a5d9dd07ececb8fb18d1c3789757a2b3bafc352b58f9"
+    },
     "https://developer.apple.com/documentation/vision/supporting-pose-types": {
       "etag": "\"1ad4-659026beaff51-df\"",
       "file_path": "documentation/Vision/supporting-pose-types.md",
@@ -4779,6 +4829,11 @@
       "file_path": "documentation/Vision/visionrequest/computedevice(for).md",
       "hash": "c8cc520a9857722014ca04f70494cddb3399324ad9929b1133155ff192071ad4"
     },
+    "https://developer.apple.com/documentation/vision/visionrequest/computedevice(for:)-52l0g": {
+      "etag": "\"195c-65d55e14e7862-df\"",
+      "file_path": "documentation/Vision/visionrequest/computedevice(for)-52l0g.md",
+      "hash": "78f40fa6749979d69e45e6f885f8650cdcf043a057fa4da769458bba678e03eb"
+    },
     "https://developer.apple.com/documentation/vision/visionrequest/customstringconvertible-implementations": {
       "etag": "\"b7a-659026bd7603e-df\"",
       "file_path": "documentation/Vision/visionrequest/customstringconvertible-implementations.md",
@@ -4988,6 +5043,21 @@
       "etag": "\"2726-65d55e133485a-df\"",
       "file_path": "documentation/Vision/visionresult/tracktranslationalimageregistration(_,_).md",
       "hash": "e331b8306bde678af23cf532a507c4135f6edc2568009e8bc228e97148a0d607"
+    },
+    "https://developer.apple.com/documentation/vision/vn_export": {
+      "etag": "\"c17-659026bcb1b04-df\"",
+      "file_path": "documentation/Vision/vn_export.md",
+      "hash": "f0c419c340562e92b32fa5a809377acf457953b92d7c0f64f23db15e1bd0efee"
+    },
+    "https://developer.apple.com/documentation/vision/vn_extern_c_begin": {
+      "etag": "\"c47-659026bcb1b04-df\"",
+      "file_path": "documentation/Vision/vn_extern_c_begin.md",
+      "hash": "ba56fe624a212d19b80665be45bfb8e3a21cdf78bdd30812f3eb216bc7ea288a"
+    },
+    "https://developer.apple.com/documentation/vision/vn_extern_c_end": {
+      "etag": "\"c3b-659026bae4d75-df\"",
+      "file_path": "documentation/Vision/vn_extern_c_end.md",
+      "hash": "309acc1631fa76052f823f6c0bd730241049ff346d343b701575e2fab221fa4b"
     },
     "https://developer.apple.com/documentation/vision/vnanimalbodyposeobservation": {
       "etag": "\"6b44-65d55e12e37a9-df\"",
@@ -5719,6 +5789,11 @@
       "file_path": "documentation/Vision/vncontour/normalizedpath.md",
       "hash": "c43304ee8588400237aa7e03e61fef8a00f4efdb448998b0bcf3d2ff208bd54f"
     },
+    "https://developer.apple.com/documentation/vision/vncontour/normalizedpoints-2orqj": {
+      "etag": "\"2d3c-65d55e155576b-df\"",
+      "file_path": "documentation/Vision/vncontour/normalizedpoints-2orqj.md",
+      "hash": "49d393760e80053dce1ff6c3e0eebe4b675e1a1cc7de6e04140e7ce432b24c43"
+    },
     "https://developer.apple.com/documentation/vision/vncontour/normalizedpoints-8n2s5": {
       "etag": "\"2e91-65d55e155576b-df\"",
       "file_path": "documentation/Vision/vncontour/normalizedpoints-8n2s5.md",
@@ -5859,10 +5934,20 @@
       "file_path": "documentation/Vision/vndetectanimalbodyposerequest/supportedjointnames.md",
       "hash": "54136495107db7965db5a9ac1934ea2627966a357f66b0103d8a41f96716b939"
     },
+    "https://developer.apple.com/documentation/vision/vndetectanimalbodyposerequest/supportedjointnamesandreturnerror:": {
+      "etag": "\"1b5a-65d55e155576b-df\"",
+      "file_path": "documentation/Vision/vndetectanimalbodyposerequest/supportedjointnamesandreturnerror_.md",
+      "hash": "c76cd48f215317d374ddc5b9c331480011efa0d0e4b698523d57a7d29a54b193"
+    },
     "https://developer.apple.com/documentation/vision/vndetectanimalbodyposerequest/supportedjointsgroupnames": {
       "etag": "\"243d-65d55e155576b-df\"",
       "file_path": "documentation/Vision/vndetectanimalbodyposerequest/supportedjointsgroupnames.md",
       "hash": "ffcf73492c037d74ba3e3dbd5559057d32d649f095abdebb152c3ba3a5cf2d0e"
+    },
+    "https://developer.apple.com/documentation/vision/vndetectanimalbodyposerequest/supportedjointsgroupnamesandreturnerror:": {
+      "etag": "\"1b8a-65d55e155576b-df\"",
+      "file_path": "documentation/Vision/vndetectanimalbodyposerequest/supportedjointsgroupnamesandreturnerror_.md",
+      "hash": "92b394c4f6f9cc2612b113c458c39608e9c155933fd653e4ba0685bcfc05a428"
     },
     "https://developer.apple.com/documentation/vision/vndetectanimalbodyposerequestrevision1": {
       "etag": "\"6898-65d55e133485a-df\"",
@@ -6134,10 +6219,20 @@
       "file_path": "documentation/Vision/vndetecthumanbodypose3drequest/supportedjointnames.md",
       "hash": "2ccea6dd25940cdfd07dcf5dc70fefcd1d12026066ced4c07a02104ce134edc5"
     },
+    "https://developer.apple.com/documentation/vision/vndetecthumanbodypose3drequest/supportedjointnamesandreturnerror:": {
+      "etag": "\"1a96-65d55e13d21af-df\"",
+      "file_path": "documentation/Vision/vndetecthumanbodypose3drequest/supportedjointnamesandreturnerror_.md",
+      "hash": "c0764057c899221880853cda5f3c8eaf9be494b7ef5956a843c14803fa9c10bd"
+    },
     "https://developer.apple.com/documentation/vision/vndetecthumanbodypose3drequest/supportedjointsgroupnames": {
       "etag": "\"26c9-65d55e13d21af-df\"",
       "file_path": "documentation/Vision/vndetecthumanbodypose3drequest/supportedjointsgroupnames.md",
       "hash": "8db300d0704b9aeb27949fd5c8c83f58225ecdf4222eedffd2e44c0ec8d93901"
+    },
+    "https://developer.apple.com/documentation/vision/vndetecthumanbodypose3drequest/supportedjointsgroupnamesandreturnerror:": {
+      "etag": "\"1ac6-65d55e13d21af-df\"",
+      "file_path": "documentation/Vision/vndetecthumanbodypose3drequest/supportedjointsgroupnamesandreturnerror_.md",
+      "hash": "371d71da936ffa65a50e0946ed9b3ac2df12e98c42ad93bbf208b123fbb2ef42"
     },
     "https://developer.apple.com/documentation/vision/vndetecthumanbodypose3drequestrevision1": {
       "etag": "\"68a2-65d55e12c9be0-df\"",
@@ -6164,6 +6259,11 @@
       "file_path": "documentation/Vision/vndetecthumanbodyposerequest/supportedjointnames(forrevision).md",
       "hash": "c4157c1522aff80246c62381015b9b3ed8a8c7649e98176ec30e467d01dd0421"
     },
+    "https://developer.apple.com/documentation/vision/vndetecthumanbodyposerequest/supportedjointnamesandreturnerror:": {
+      "etag": "\"29c0-65d55e163d43b-df\"",
+      "file_path": "documentation/Vision/vndetecthumanbodyposerequest/supportedjointnamesandreturnerror_.md",
+      "hash": "1d5b4959a1ed37998585854abfaf263eef6bc55c7f6f22634c812c8c5e51bd04"
+    },
     "https://developer.apple.com/documentation/vision/vndetecthumanbodyposerequest/supportedjointsgroupnames": {
       "etag": "\"3339-65d55e163d43b-df\"",
       "file_path": "documentation/Vision/vndetecthumanbodyposerequest/supportedjointsgroupnames.md",
@@ -6173,6 +6273,11 @@
       "etag": "\"50ab-65d55e163d43b-df\"",
       "file_path": "documentation/Vision/vndetecthumanbodyposerequest/supportedjointsgroupnames(forrevision).md",
       "hash": "82cc1a7aa9a4a0ec423c075e65f093e3ca0d0fcce59a743cf822bbd43d65aedf"
+    },
+    "https://developer.apple.com/documentation/vision/vndetecthumanbodyposerequest/supportedjointsgroupnamesandreturnerror:": {
+      "etag": "\"29ea-65d55e163d43b-df\"",
+      "file_path": "documentation/Vision/vndetecthumanbodyposerequest/supportedjointsgroupnamesandreturnerror_.md",
+      "hash": "179a48cd0746fec21a78a24a17153845cb78fa48dcd9021795fe549a9eb18d2e"
     },
     "https://developer.apple.com/documentation/vision/vndetecthumanbodyposerequestrevision1": {
       "etag": "\"189c-65d55e12e37a9-df\"",
@@ -6204,6 +6309,11 @@
       "file_path": "documentation/Vision/vndetecthumanhandposerequest/supportedjointnames(forrevision).md",
       "hash": "d20dd2a787d1ece8a1e9673a84b47f89f9ccd8136480ec2fafe9ebbf9846167f"
     },
+    "https://developer.apple.com/documentation/vision/vndetecthumanhandposerequest/supportedjointnamesandreturnerror:": {
+      "etag": "\"29c0-65d55e1539d9f-df\"",
+      "file_path": "documentation/Vision/vndetecthumanhandposerequest/supportedjointnamesandreturnerror_.md",
+      "hash": "6bf601681757edd370b079d26ef98b8231919e5c5f9080a594bc723167f6c12d"
+    },
     "https://developer.apple.com/documentation/vision/vndetecthumanhandposerequest/supportedjointsgroupnames": {
       "etag": "\"3339-65d55e1539d9f-df\"",
       "file_path": "documentation/Vision/vndetecthumanhandposerequest/supportedjointsgroupnames.md",
@@ -6213,6 +6323,11 @@
       "etag": "\"50ab-65d55e1539d9f-df\"",
       "file_path": "documentation/Vision/vndetecthumanhandposerequest/supportedjointsgroupnames(forrevision).md",
       "hash": "e2623de7196a8f9030f016317f4175bfa23093613265931b13ee8fa4c6fdfec0"
+    },
+    "https://developer.apple.com/documentation/vision/vndetecthumanhandposerequest/supportedjointsgroupnamesandreturnerror:": {
+      "etag": "\"29ea-65d55e1539d9f-df\"",
+      "file_path": "documentation/Vision/vndetecthumanhandposerequest/supportedjointsgroupnamesandreturnerror_.md",
+      "hash": "365786f149d4c6c1466919aa24d827886e840544f444ffb9543d0f5cb07e8eed"
     },
     "https://developer.apple.com/documentation/vision/vndetecthumanhandposerequestrevision1": {
       "etag": "\"189c-65d55e1593177-df\"",
@@ -6554,6 +6669,11 @@
       "file_path": "documentation/Vision/vnfacelandmarkregion2d.md",
       "hash": "02dbf472372ed2a59bb3221e99bdb1c4ce6773095aeeee8fd338e1560283234e"
     },
+    "https://developer.apple.com/documentation/vision/vnfacelandmarkregion2d/normalizedpoints-1o38f": {
+      "etag": "\"1a5d-65d55e1603fd7-df\"",
+      "file_path": "documentation/Vision/vnfacelandmarkregion2d/normalizedpoints-1o38f.md",
+      "hash": "d82d351b6ece93fdec69ac649ed446bf794320bf9341d6c1e3dff9008efabd9a"
+    },
     "https://developer.apple.com/documentation/vision/vnfacelandmarkregion2d/normalizedpoints-7s7im": {
       "etag": "\"18f2-65d55e1603fd7-df\"",
       "file_path": "documentation/Vision/vnfacelandmarkregion2d/normalizedpoints-7s7im.md",
@@ -6568,6 +6688,16 @@
       "etag": "\"1d3d-65d55e1603fd7-df\"",
       "file_path": "documentation/Vision/vnfacelandmarkregion2d/pointsinimage(imagesize).md",
       "hash": "a67e60dad74a7f41af3ae032a3ba1b04227ba3cdfd729e18da431facf218309f"
+    },
+    "https://developer.apple.com/documentation/vision/vnfacelandmarkregion2d/pointsinimageofsize:": {
+      "etag": "\"1aaa-65d55e1603fd7-df\"",
+      "file_path": "documentation/Vision/vnfacelandmarkregion2d/pointsinimageofsize_.md",
+      "hash": "50417dc304ce53010763669b676bfe1f1c09d04a4efcb150493131dc5325036e"
+    },
+    "https://developer.apple.com/documentation/vision/vnfacelandmarkregion2d/precisionestimatesperpoint-3kx5a": {
+      "etag": "\"203b-65d55e1603fd7-df\"",
+      "file_path": "documentation/Vision/vnfacelandmarkregion2d/precisionestimatesperpoint-3kx5a.md",
+      "hash": "4f484caad8dfdfc7ae063d9e8e716a88ba27bf2c98652e88332df415240f6abd"
     },
     "https://developer.apple.com/documentation/vision/vnfacelandmarkregion2d/precisionestimatesperpoint-5jl22": {
       "etag": "\"2440-65d55e1603fd7-df\"",
@@ -6663,6 +6793,11 @@
       "etag": "\"84b5-65d55e163d43b-df\"",
       "file_path": "documentation/Vision/vnfaceobservation.md",
       "hash": "58e5e14524f53b4c8c03c3f271606e1a33dfaa1fbcc3b92e7cbb77e6f5acb902"
+    },
+    "https://developer.apple.com/documentation/vision/vnfaceobservation/facecapturequality-2o4xv": {
+      "etag": "\"182a-65d55e149be75-df\"",
+      "file_path": "documentation/Vision/vnfaceobservation/facecapturequality-2o4xv.md",
+      "hash": "e8d32de5030cdb99ef3915497d315a6ca96121ecbbf2dee240aa8e4ef9978df8"
     },
     "https://developer.apple.com/documentation/vision/vnfaceobservation/facecapturequality-bjg5": {
       "etag": "\"17e0-65d55e149be75-df\"",
@@ -6909,6 +7044,11 @@
       "file_path": "documentation/Vision/vngeneratepersonsegmentationrequest/init(completionhandler).md",
       "hash": "315298675647654f7faf455026335f5e413ab37a6c4ccb8edbae7c9f76355941"
     },
+    "https://developer.apple.com/documentation/vision/vngeneratepersonsegmentationrequest/new": {
+      "etag": "\"1b06-65d55e139e4f1-df\"",
+      "file_path": "documentation/Vision/vngeneratepersonsegmentationrequest/new.md",
+      "hash": "b0aeb79f99ec9c291daf6bfc7153f5bdc897bb63f4c986dff8acf7bee763a540"
+    },
     "https://developer.apple.com/documentation/vision/vngeneratepersonsegmentationrequest/outputpixelformat": {
       "etag": "\"3d08-65d55e13b6d0c-df\"",
       "file_path": "documentation/Vision/vngeneratepersonsegmentationrequest/outputpixelformat.md",
@@ -7053,6 +7193,11 @@
       "etag": "\"2923-65d55e15b274f-df\"",
       "file_path": "documentation/Vision/vnhumanbodypose3dobservation/camerarelativeposition(_).md",
       "hash": "fed84c6753cabbaa29881a6499117c4616d7769b7b06160bf0a94eef35733bb7"
+    },
+    "https://developer.apple.com/documentation/vision/vnhumanbodypose3dobservation/getcamerarelativeposition:forjointname:error:": {
+      "etag": "\"2b4e-65d55e15b274f-df\"",
+      "file_path": "documentation/Vision/vnhumanbodypose3dobservation/getcamerarelativeposition_forjointname_error_.md",
+      "hash": "a7fde25d21f466eda66e6652325f2320c3c056a2d9363b1e0fddfc7c3ed83ef4"
     },
     "https://developer.apple.com/documentation/vision/vnhumanbodypose3dobservation/heightestimation-swift.enum": {
       "etag": "\"45d1-659026be338cb-df\"",
@@ -8389,6 +8534,11 @@
       "file_path": "documentation/Vision/vnrecognizedtext/boundingbox(for).md",
       "hash": "8a19b42e6abdd55422b276339caa88efba5af4edf944450667be2f9e53c39bb8"
     },
+    "https://developer.apple.com/documentation/vision/vnrecognizedtext/boundingboxforrange:error:": {
+      "etag": "\"3286-65d55e1603fd7-df\"",
+      "file_path": "documentation/Vision/vnrecognizedtext/boundingboxforrange_error_.md",
+      "hash": "293f16a4aa6a3cf8c7624c8dc53dfa4bf191797555a2f14ffe7d5e1ccea1f149"
+    },
     "https://developer.apple.com/documentation/vision/vnrecognizedtext/confidence": {
       "etag": "\"251f-65d55e1603fd7-df\"",
       "file_path": "documentation/Vision/vnrecognizedtext/confidence.md",
@@ -8534,6 +8684,11 @@
       "file_path": "documentation/Vision/vnrequest/computedevice(for).md",
       "hash": "dd25a9a73adfcb4ee277ed033440baa54483dfe711fa2e32321d83d50bd9ace1"
     },
+    "https://developer.apple.com/documentation/vision/vnrequest/computedeviceforcomputestage:": {
+      "etag": "\"1cce-65d55e14007d0-df\"",
+      "file_path": "documentation/Vision/vnrequest/computedeviceforcomputestage_.md",
+      "hash": "b146961026c6f6fe264f438bf63ef88971097c78b431db6646c78b6ae890dda5"
+    },
     "https://developer.apple.com/documentation/vision/vnrequest/currentrevision": {
       "etag": "\"2beb-65d55e14007d0-df\"",
       "file_path": "documentation/Vision/vnrequest/currentrevision.md",
@@ -8574,10 +8729,20 @@
       "file_path": "documentation/Vision/vnrequest/setcomputedevice(_,for).md",
       "hash": "f9a696c28db08f15a0577ca1ba6c836e40ab076a00a165a3dc3d54e48dd6e305"
     },
+    "https://developer.apple.com/documentation/vision/vnrequest/setcomputedevice:forcomputestage:": {
+      "etag": "\"2080-65d55e14007d0-df\"",
+      "file_path": "documentation/Vision/vnrequest/setcomputedevice_forcomputestage_.md",
+      "hash": "da0058e8992a639ab30c1b7fe76e0897722d643c660bff2d1f2fe3c02f6e7eb1"
+    },
     "https://developer.apple.com/documentation/vision/vnrequest/supportedcomputestagedevices": {
       "etag": "\"2380-65d55e14007d0-df\"",
       "file_path": "documentation/Vision/vnrequest/supportedcomputestagedevices.md",
       "hash": "a3f00fa4fa1f6f2ec46c7fc8f1bd8e8518e2e380bed5e7d4a0475ce7975c2266"
+    },
+    "https://developer.apple.com/documentation/vision/vnrequest/supportedcomputestagedevicesandreturnerror:": {
+      "etag": "\"1bf1-65d55e14007d0-df\"",
+      "file_path": "documentation/Vision/vnrequest/supportedcomputestagedevicesandreturnerror_.md",
+      "hash": "b2967a45bf17f9c35aef87af133581797746a9c293727ecbbca4434ac99290b3"
     },
     "https://developer.apple.com/documentation/vision/vnrequest/supportedrevisions": {
       "etag": "\"2e82-65d55e14007d0-df\"",
@@ -8858,6 +9023,66 @@
       "etag": "\"c72f-65d55e1243c74-df\"",
       "file_path": "documentation/Vision/vntargetedimagerequest/init(targetedimageurl,orientation,options,completionhandler).md",
       "hash": "b748d8974e4c83cd1792f86087d3adc60c8221f7d952ff962e4b56b736d68e53"
+    },
+    "https://developer.apple.com/documentation/vision/vntargetedimagerequest/initwithtargetedcgimage:options:": {
+      "etag": "\"7537-65d55e1224589-df\"",
+      "file_path": "documentation/Vision/vntargetedimagerequest/initwithtargetedcgimage_options_.md",
+      "hash": "62370888b1656cd4a999349be3153d1772d2cdb3067e9ae5b0f1cb34f283c81f"
+    },
+    "https://developer.apple.com/documentation/vision/vntargetedimagerequest/initwithtargetedcgimage:orientation:options:": {
+      "etag": "\"80a8-65d55e1224589-df\"",
+      "file_path": "documentation/Vision/vntargetedimagerequest/initwithtargetedcgimage_orientation_options_.md",
+      "hash": "c491abdce6f2d47654828901148f17bf9ffb6984f4e32ae1c2873b5349322801"
+    },
+    "https://developer.apple.com/documentation/vision/vntargetedimagerequest/initwithtargetedciimage:options:": {
+      "etag": "\"74af-65d55e1224589-df\"",
+      "file_path": "documentation/Vision/vntargetedimagerequest/initwithtargetedciimage_options_.md",
+      "hash": "3076fb0781445d40d5c973b60aaed186f29b245004e7ca233c45fc7067be65d4"
+    },
+    "https://developer.apple.com/documentation/vision/vntargetedimagerequest/initwithtargetedciimage:orientation:options:": {
+      "etag": "\"8020-65d55e1224589-df\"",
+      "file_path": "documentation/Vision/vntargetedimagerequest/initwithtargetedciimage_orientation_options_.md",
+      "hash": "535ba289e69068499382dbd80494e245f81fea28b4cd5d5137b652059f787330"
+    },
+    "https://developer.apple.com/documentation/vision/vntargetedimagerequest/initwithtargetedcmsamplebuffer:options:": {
+      "etag": "\"7914-65d55e1243c74-df\"",
+      "file_path": "documentation/Vision/vntargetedimagerequest/initwithtargetedcmsamplebuffer_options_.md",
+      "hash": "48aa6388b323e06d58b1ac9ded6e60c909612f54088e512a66be0232da8dd5af"
+    },
+    "https://developer.apple.com/documentation/vision/vntargetedimagerequest/initwithtargetedcmsamplebuffer:orientation:options:": {
+      "etag": "\"7f84-65d55e1224589-df\"",
+      "file_path": "documentation/Vision/vntargetedimagerequest/initwithtargetedcmsamplebuffer_orientation_options_.md",
+      "hash": "3f2068791336f101650b697d20fccbc5e0060d1dac75b3f8fe23d29e251036b6"
+    },
+    "https://developer.apple.com/documentation/vision/vntargetedimagerequest/initwithtargetedcvpixelbuffer:options:": {
+      "etag": "\"75d2-65d55e1243c74-df\"",
+      "file_path": "documentation/Vision/vntargetedimagerequest/initwithtargetedcvpixelbuffer_options_.md",
+      "hash": "e71655d4cb1ed83d84d73ddaf30fb4c103e4ab68101476a33c05aedcfdb9391c"
+    },
+    "https://developer.apple.com/documentation/vision/vntargetedimagerequest/initwithtargetedcvpixelbuffer:orientation:options:": {
+      "etag": "\"8143-65d55e1224589-df\"",
+      "file_path": "documentation/Vision/vntargetedimagerequest/initwithtargetedcvpixelbuffer_orientation_options_.md",
+      "hash": "e375445a21ca7cd219a393e8e219593c1d4e90c0325f029dca74ed2942eccb9e"
+    },
+    "https://developer.apple.com/documentation/vision/vntargetedimagerequest/initwithtargetedimagedata:options:": {
+      "etag": "\"6cde-65d55e1224589-df\"",
+      "file_path": "documentation/Vision/vntargetedimagerequest/initwithtargetedimagedata_options_.md",
+      "hash": "8448cde5d5ff7135bebb2acb028d5aa731e32bc3ad567df79abebc114ed60892"
+    },
+    "https://developer.apple.com/documentation/vision/vntargetedimagerequest/initwithtargetedimagedata:orientation:options:": {
+      "etag": "\"78a4-65d55e1243c74-df\"",
+      "file_path": "documentation/Vision/vntargetedimagerequest/initwithtargetedimagedata_orientation_options_.md",
+      "hash": "dd441018e47ed5d705df1914f142c0f8f19b59f84168f967846f24395078b1b2"
+    },
+    "https://developer.apple.com/documentation/vision/vntargetedimagerequest/initwithtargetedimageurl:options:": {
+      "etag": "\"6d24-65d55e1224589-df\"",
+      "file_path": "documentation/Vision/vntargetedimagerequest/initwithtargetedimageurl_options_.md",
+      "hash": "38d5786fc85bdd64047b04a64fbb1a75f6961040b9bcd19e04444fca43d8237f"
+    },
+    "https://developer.apple.com/documentation/vision/vntargetedimagerequest/initwithtargetedimageurl:orientation:options:": {
+      "etag": "\"78f4-65d55e1224589-df\"",
+      "file_path": "documentation/Vision/vntargetedimagerequest/initwithtargetedimageurl_orientation_options_.md",
+      "hash": "82893a1cb908bde4310e99acd13db1e78757905e1fdcaafa99fab2a9b3e9322e"
     },
     "https://developer.apple.com/documentation/vision/vntextobservation": {
       "etag": "\"483b-65d55e133485a-df\"",
@@ -9753,6 +9978,11 @@
       "etag": "\"3828-65d55e139e4f1-df\"",
       "file_path": "documentation/Vision/boundingboxproviding.md",
       "hash": "aa64de2dd0f1ab07d5b42d12bdf239bd3a7aff42464c45ce9fc49b65bedd16ba"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/vision/boundingboxproviding/boundingbox-73688.json": {
+      "etag": "\"11a0-65d55e1603fd7-df\"",
+      "file_path": "documentation/Vision/boundingboxproviding/boundingbox-73688.md",
+      "hash": "353017061cf47fd7d8c12f3a6d1b523fe2649ed5e4edd9103a918fe8552b8529"
     },
     "https://developer.apple.com/tutorials/data/documentation/vision/boundingboxproviding/boundingbox.json": {
       "etag": "\"1665-65d55e1603fd7-df\"",
@@ -11099,10 +11329,20 @@
       "file_path": "documentation/Vision/downloadableassetsrequest/assetstatus.md",
       "hash": "104810e0b455d99c281a3b087c6b950f1f001d60b53c1da917fd64fae8de1c9f"
     },
+    "https://developer.apple.com/tutorials/data/documentation/vision/downloadableassetsrequest/downloadassets()-8lzdp.json": {
+      "etag": "\"10ec-65d55e14327f7-df\"",
+      "file_path": "documentation/Vision/downloadableassetsrequest/downloadassets()-8lzdp.md",
+      "hash": "51d26b39e80b74dfc49ca35557e2121f2259f393a503b10d709abad880026404"
+    },
     "https://developer.apple.com/tutorials/data/documentation/vision/downloadableassetsrequest/downloadassets().json": {
       "etag": "\"1c26-65d55e144a876-df\"",
       "file_path": "documentation/Vision/downloadableassetsrequest/downloadassets().md",
       "hash": "2db975332ca9db391e580a65538fc0a1c1f845e7be924c6d68c2a7229caeaec9"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/vision/downloadableassetsrequest/downloadassets(progress:)-3mcyi.json": {
+      "etag": "\"18d1-65d55e14327f7-df\"",
+      "file_path": "documentation/Vision/downloadableassetsrequest/downloadassets(progress)-3mcyi.md",
+      "hash": "506f65296a7926d412fa2743078fa5bc26f24736a1e546dfbc334d30bb6b6bf4"
     },
     "https://developer.apple.com/tutorials/data/documentation/vision/downloadableassetsrequest/downloadassets(progress:).json": {
       "etag": "\"240b-65d55e14327f7-df\"",
@@ -12353,6 +12593,16 @@
       "file_path": "documentation/Vision/imageprocessingrequest.md",
       "hash": "06bc2208808a48cae4360a667d3782f43a545375a1a266c2e48e35c7d919e204"
     },
+    "https://developer.apple.com/tutorials/data/documentation/vision/imageprocessingrequest/perform(on:orientation:)-1mquz.json": {
+      "etag": "\"1fda-65d55e150101c-df\"",
+      "file_path": "documentation/Vision/imageprocessingrequest/perform(on,orientation)-1mquz.md",
+      "hash": "7cc6126e990d995bff7363f082b56e2a8a8db405ae4344b1397b2f1302327677"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/vision/imageprocessingrequest/perform(on:orientation:)-2q3hx.json": {
+      "etag": "\"1f25-65d55e150101c-df\"",
+      "file_path": "documentation/Vision/imageprocessingrequest/perform(on,orientation)-2q3hx.md",
+      "hash": "a9291495871ca041b1bf4051586627e25d91b5770459a7bec39e9d3ea8b78b44"
+    },
     "https://developer.apple.com/tutorials/data/documentation/vision/imageprocessingrequest/perform(on:orientation:)-3f3f1.json": {
       "etag": "\"5ec1-65d55e150101c-df\"",
       "file_path": "documentation/Vision/imageprocessingrequest/perform(on,orientation)-3f3f1.md",
@@ -12363,15 +12613,35 @@
       "file_path": "documentation/Vision/imageprocessingrequest/perform(on,orientation)-3hddl.md",
       "hash": "ec21e2ccf8103fa2ebb78f55e38a335de47a05223b9b3dcd28cf7554af16194f"
     },
+    "https://developer.apple.com/tutorials/data/documentation/vision/imageprocessingrequest/perform(on:orientation:)-6hrxe.json": {
+      "etag": "\"1f71-65d55e150101c-df\"",
+      "file_path": "documentation/Vision/imageprocessingrequest/perform(on,orientation)-6hrxe.md",
+      "hash": "d819a0c2aed35a325fb0b90df803ea1575ae85b6bbc885592fd73de918d0599c"
+    },
     "https://developer.apple.com/tutorials/data/documentation/vision/imageprocessingrequest/perform(on:orientation:)-80bya.json": {
       "etag": "\"5f0f-65d55e150101c-df\"",
       "file_path": "documentation/Vision/imageprocessingrequest/perform(on,orientation)-80bya.md",
       "hash": "c69f486556d32237bfa22205fd895394e1034f1409c878ec17e77fb0d15748d3"
     },
+    "https://developer.apple.com/tutorials/data/documentation/vision/imageprocessingrequest/perform(on:orientation:)-82mjf.json": {
+      "etag": "\"21ae-65d55e150101c-df\"",
+      "file_path": "documentation/Vision/imageprocessingrequest/perform(on,orientation)-82mjf.md",
+      "hash": "9f22c39c0473773f3846fc67bb80ffcb9a83b01393595f06cceb94b741ea149e"
+    },
     "https://developer.apple.com/tutorials/data/documentation/vision/imageprocessingrequest/perform(on:orientation:)-85ex1.json": {
       "etag": "\"5f81-65d55e150101c-df\"",
       "file_path": "documentation/Vision/imageprocessingrequest/perform(on,orientation)-85ex1.md",
       "hash": "d7faf86938c3c1f3ebe6b797073d6a2bd452636352597efbeedaf00b608d1669"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/vision/imageprocessingrequest/perform(on:orientation:)-8wluq.json": {
+      "etag": "\"21a2-65d55e150101c-df\"",
+      "file_path": "documentation/Vision/imageprocessingrequest/perform(on,orientation)-8wluq.md",
+      "hash": "e6acc11d6d7bf978f554bfd8a2e75fcb9a6e32b63058f5558e3c2056c27685b6"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/vision/imageprocessingrequest/perform(on:orientation:)-967mr.json": {
+      "etag": "\"2122-65d55e14e7862-df\"",
+      "file_path": "documentation/Vision/imageprocessingrequest/perform(on,orientation)-967mr.md",
+      "hash": "7f6184f5b37ef948ab0e7f92a6c1aa49bb368c0a4d08a940e0b151688b0437f4"
     },
     "https://developer.apple.com/tutorials/data/documentation/vision/imageprocessingrequest/perform(on:orientation:)-qxxx.json": {
       "etag": "\"60d0-65d55e14e7862-df\"",
@@ -13553,6 +13823,11 @@
       "file_path": "documentation/Vision/statefulrequest/hashable-implementations.md",
       "hash": "853c5bdb6587a33aa5380933908cacbd26ccb4646b2cffb98f093742daf09111"
     },
+    "https://developer.apple.com/tutorials/data/documentation/vision/statefulrequest/minimumlatencyframecount-2h8se.json": {
+      "etag": "\"1161-65d55e150101c-df\"",
+      "file_path": "documentation/Vision/statefulrequest/minimumlatencyframecount-2h8se.md",
+      "hash": "4cd463f069c72fd66a44a5d9dd07ececb8fb18d1c3789757a2b3bafc352b58f9"
+    },
     "https://developer.apple.com/tutorials/data/documentation/vision/statefulrequest/minimumlatencyframecount.json": {
       "etag": "\"1c89-65d55e150101c-df\"",
       "file_path": "documentation/Vision/statefulrequest/minimumlatencyframecount.md",
@@ -14103,6 +14378,11 @@
       "file_path": "documentation/Vision/visionrequest.md",
       "hash": "a167fc7dfbc72e9658716d3fb3ea33109b3ff8cd4d66152cfe690823c9201c39"
     },
+    "https://developer.apple.com/tutorials/data/documentation/vision/visionrequest/computedevice(for:)-52l0g.json": {
+      "etag": "\"195c-65d55e14e7862-df\"",
+      "file_path": "documentation/Vision/visionrequest/computedevice(for)-52l0g.md",
+      "hash": "78f40fa6749979d69e45e6f885f8650cdcf043a057fa4da769458bba678e03eb"
+    },
     "https://developer.apple.com/tutorials/data/documentation/vision/visionrequest/computedevice(for:).json": {
       "etag": "\"21a3-65d55e14e7862-df\"",
       "file_path": "documentation/Vision/visionrequest/computedevice(for).md",
@@ -14317,6 +14597,21 @@
       "etag": "\"2726-65d55e133485a-df\"",
       "file_path": "documentation/Vision/visionresult/tracktranslationalimageregistration(_,_).md",
       "hash": "e331b8306bde678af23cf532a507c4135f6edc2568009e8bc228e97148a0d607"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/vision/vn_export.json": {
+      "etag": "\"c17-659026bcb1b04-df\"",
+      "file_path": "documentation/Vision/vn_export.md",
+      "hash": "f0c419c340562e92b32fa5a809377acf457953b92d7c0f64f23db15e1bd0efee"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/vision/vn_extern_c_begin.json": {
+      "etag": "\"c47-659026bcb1b04-df\"",
+      "file_path": "documentation/Vision/vn_extern_c_begin.md",
+      "hash": "ba56fe624a212d19b80665be45bfb8e3a21cdf78bdd30812f3eb216bc7ea288a"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/vision/vn_extern_c_end.json": {
+      "etag": "\"c3b-659026bae4d75-df\"",
+      "file_path": "documentation/Vision/vn_extern_c_end.md",
+      "hash": "309acc1631fa76052f823f6c0bd730241049ff346d343b701575e2fab221fa4b"
     },
     "https://developer.apple.com/tutorials/data/documentation/vision/vnanimalbodyposeobservation.json": {
       "etag": "\"6b44-65d55e12e37a9-df\"",
@@ -15048,6 +15343,11 @@
       "file_path": "documentation/Vision/vncontour/normalizedpath.md",
       "hash": "c43304ee8588400237aa7e03e61fef8a00f4efdb448998b0bcf3d2ff208bd54f"
     },
+    "https://developer.apple.com/tutorials/data/documentation/vision/vncontour/normalizedpoints-2orqj.json": {
+      "etag": "\"2d3c-65d55e155576b-df\"",
+      "file_path": "documentation/Vision/vncontour/normalizedpoints-2orqj.md",
+      "hash": "49d393760e80053dce1ff6c3e0eebe4b675e1a1cc7de6e04140e7ce432b24c43"
+    },
     "https://developer.apple.com/tutorials/data/documentation/vision/vncontour/normalizedpoints-8n2s5.json": {
       "etag": "\"2e91-65d55e155576b-df\"",
       "file_path": "documentation/Vision/vncontour/normalizedpoints-8n2s5.md",
@@ -15188,10 +15488,20 @@
       "file_path": "documentation/Vision/vndetectanimalbodyposerequest/supportedjointnames.md",
       "hash": "54136495107db7965db5a9ac1934ea2627966a357f66b0103d8a41f96716b939"
     },
+    "https://developer.apple.com/tutorials/data/documentation/vision/vndetectanimalbodyposerequest/supportedjointnamesandreturnerror:.json": {
+      "etag": "\"1b5a-65d55e155576b-df\"",
+      "file_path": "documentation/Vision/vndetectanimalbodyposerequest/supportedjointnamesandreturnerror_.md",
+      "hash": "c76cd48f215317d374ddc5b9c331480011efa0d0e4b698523d57a7d29a54b193"
+    },
     "https://developer.apple.com/tutorials/data/documentation/vision/vndetectanimalbodyposerequest/supportedjointsgroupnames.json": {
       "etag": "\"243d-65d55e155576b-df\"",
       "file_path": "documentation/Vision/vndetectanimalbodyposerequest/supportedjointsgroupnames.md",
       "hash": "ffcf73492c037d74ba3e3dbd5559057d32d649f095abdebb152c3ba3a5cf2d0e"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/vision/vndetectanimalbodyposerequest/supportedjointsgroupnamesandreturnerror:.json": {
+      "etag": "\"1b8a-65d55e155576b-df\"",
+      "file_path": "documentation/Vision/vndetectanimalbodyposerequest/supportedjointsgroupnamesandreturnerror_.md",
+      "hash": "92b394c4f6f9cc2612b113c458c39608e9c155933fd653e4ba0685bcfc05a428"
     },
     "https://developer.apple.com/tutorials/data/documentation/vision/vndetectanimalbodyposerequestrevision1.json": {
       "etag": "\"6898-65d55e133485a-df\"",
@@ -15463,10 +15773,20 @@
       "file_path": "documentation/Vision/vndetecthumanbodypose3drequest/supportedjointnames.md",
       "hash": "2ccea6dd25940cdfd07dcf5dc70fefcd1d12026066ced4c07a02104ce134edc5"
     },
+    "https://developer.apple.com/tutorials/data/documentation/vision/vndetecthumanbodypose3drequest/supportedjointnamesandreturnerror:.json": {
+      "etag": "\"1a96-65d55e13d21af-df\"",
+      "file_path": "documentation/Vision/vndetecthumanbodypose3drequest/supportedjointnamesandreturnerror_.md",
+      "hash": "c0764057c899221880853cda5f3c8eaf9be494b7ef5956a843c14803fa9c10bd"
+    },
     "https://developer.apple.com/tutorials/data/documentation/vision/vndetecthumanbodypose3drequest/supportedjointsgroupnames.json": {
       "etag": "\"26c9-65d55e13d21af-df\"",
       "file_path": "documentation/Vision/vndetecthumanbodypose3drequest/supportedjointsgroupnames.md",
       "hash": "8db300d0704b9aeb27949fd5c8c83f58225ecdf4222eedffd2e44c0ec8d93901"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/vision/vndetecthumanbodypose3drequest/supportedjointsgroupnamesandreturnerror:.json": {
+      "etag": "\"1ac6-65d55e13d21af-df\"",
+      "file_path": "documentation/Vision/vndetecthumanbodypose3drequest/supportedjointsgroupnamesandreturnerror_.md",
+      "hash": "371d71da936ffa65a50e0946ed9b3ac2df12e98c42ad93bbf208b123fbb2ef42"
     },
     "https://developer.apple.com/tutorials/data/documentation/vision/vndetecthumanbodypose3drequestrevision1.json": {
       "etag": "\"68a2-65d55e12c9be0-df\"",
@@ -15493,6 +15813,11 @@
       "file_path": "documentation/Vision/vndetecthumanbodyposerequest/supportedjointnames.md",
       "hash": "01c637bae07f56c71172cf1ffa36cdb66c42f966f4ad440bfa2fcf05fdebea73"
     },
+    "https://developer.apple.com/tutorials/data/documentation/vision/vndetecthumanbodyposerequest/supportedjointnamesandreturnerror:.json": {
+      "etag": "\"29c0-65d55e163d43b-df\"",
+      "file_path": "documentation/Vision/vndetecthumanbodyposerequest/supportedjointnamesandreturnerror_.md",
+      "hash": "1d5b4959a1ed37998585854abfaf263eef6bc55c7f6f22634c812c8c5e51bd04"
+    },
     "https://developer.apple.com/tutorials/data/documentation/vision/vndetecthumanbodyposerequest/supportedjointsgroupnames(forrevision:).json": {
       "etag": "\"50ab-65d55e163d43b-df\"",
       "file_path": "documentation/Vision/vndetecthumanbodyposerequest/supportedjointsgroupnames(forrevision).md",
@@ -15502,6 +15827,11 @@
       "etag": "\"3339-65d55e163d43b-df\"",
       "file_path": "documentation/Vision/vndetecthumanbodyposerequest/supportedjointsgroupnames.md",
       "hash": "708be44651f76301f0dee5bd7db9439dd178a6661e5ccfe37e146607421726e2"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/vision/vndetecthumanbodyposerequest/supportedjointsgroupnamesandreturnerror:.json": {
+      "etag": "\"29ea-65d55e163d43b-df\"",
+      "file_path": "documentation/Vision/vndetecthumanbodyposerequest/supportedjointsgroupnamesandreturnerror_.md",
+      "hash": "179a48cd0746fec21a78a24a17153845cb78fa48dcd9021795fe549a9eb18d2e"
     },
     "https://developer.apple.com/tutorials/data/documentation/vision/vndetecthumanbodyposerequestrevision1.json": {
       "etag": "\"189c-65d55e12e37a9-df\"",
@@ -15533,6 +15863,11 @@
       "file_path": "documentation/Vision/vndetecthumanhandposerequest/supportedjointnames.md",
       "hash": "3ce1cb0fc9308fac01731c6f0dcfff6a83dba70d7af8ee0040b2fdab4dc076be"
     },
+    "https://developer.apple.com/tutorials/data/documentation/vision/vndetecthumanhandposerequest/supportedjointnamesandreturnerror:.json": {
+      "etag": "\"29c0-65d55e1539d9f-df\"",
+      "file_path": "documentation/Vision/vndetecthumanhandposerequest/supportedjointnamesandreturnerror_.md",
+      "hash": "6bf601681757edd370b079d26ef98b8231919e5c5f9080a594bc723167f6c12d"
+    },
     "https://developer.apple.com/tutorials/data/documentation/vision/vndetecthumanhandposerequest/supportedjointsgroupnames(forrevision:).json": {
       "etag": "\"50ab-65d55e1539d9f-df\"",
       "file_path": "documentation/Vision/vndetecthumanhandposerequest/supportedjointsgroupnames(forrevision).md",
@@ -15542,6 +15877,11 @@
       "etag": "\"3339-65d55e1539d9f-df\"",
       "file_path": "documentation/Vision/vndetecthumanhandposerequest/supportedjointsgroupnames.md",
       "hash": "9362619987636f4316f9ead9e8ce59f919501071d43af0e0fca66053e87429b6"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/vision/vndetecthumanhandposerequest/supportedjointsgroupnamesandreturnerror:.json": {
+      "etag": "\"29ea-65d55e1539d9f-df\"",
+      "file_path": "documentation/Vision/vndetecthumanhandposerequest/supportedjointsgroupnamesandreturnerror_.md",
+      "hash": "365786f149d4c6c1466919aa24d827886e840544f444ffb9543d0f5cb07e8eed"
     },
     "https://developer.apple.com/tutorials/data/documentation/vision/vndetecthumanhandposerequestrevision1.json": {
       "etag": "\"189c-65d55e1593177-df\"",
@@ -15883,6 +16223,11 @@
       "file_path": "documentation/Vision/vnfacelandmarkregion2d.md",
       "hash": "02dbf472372ed2a59bb3221e99bdb1c4ce6773095aeeee8fd338e1560283234e"
     },
+    "https://developer.apple.com/tutorials/data/documentation/vision/vnfacelandmarkregion2d/normalizedpoints-1o38f.json": {
+      "etag": "\"1a5d-65d55e1603fd7-df\"",
+      "file_path": "documentation/Vision/vnfacelandmarkregion2d/normalizedpoints-1o38f.md",
+      "hash": "d82d351b6ece93fdec69ac649ed446bf794320bf9341d6c1e3dff9008efabd9a"
+    },
     "https://developer.apple.com/tutorials/data/documentation/vision/vnfacelandmarkregion2d/normalizedpoints-7s7im.json": {
       "etag": "\"18f2-65d55e1603fd7-df\"",
       "file_path": "documentation/Vision/vnfacelandmarkregion2d/normalizedpoints-7s7im.md",
@@ -15897,6 +16242,16 @@
       "etag": "\"1d3d-65d55e1603fd7-df\"",
       "file_path": "documentation/Vision/vnfacelandmarkregion2d/pointsinimage(imagesize).md",
       "hash": "a67e60dad74a7f41af3ae032a3ba1b04227ba3cdfd729e18da431facf218309f"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/vision/vnfacelandmarkregion2d/pointsinimageofsize:.json": {
+      "etag": "\"1aaa-65d55e1603fd7-df\"",
+      "file_path": "documentation/Vision/vnfacelandmarkregion2d/pointsinimageofsize_.md",
+      "hash": "50417dc304ce53010763669b676bfe1f1c09d04a4efcb150493131dc5325036e"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/vision/vnfacelandmarkregion2d/precisionestimatesperpoint-3kx5a.json": {
+      "etag": "\"203b-65d55e1603fd7-df\"",
+      "file_path": "documentation/Vision/vnfacelandmarkregion2d/precisionestimatesperpoint-3kx5a.md",
+      "hash": "4f484caad8dfdfc7ae063d9e8e716a88ba27bf2c98652e88332df415240f6abd"
     },
     "https://developer.apple.com/tutorials/data/documentation/vision/vnfacelandmarkregion2d/precisionestimatesperpoint-5jl22.json": {
       "etag": "\"2440-65d55e1603fd7-df\"",
@@ -15992,6 +16347,11 @@
       "etag": "\"84b5-65d55e163d43b-df\"",
       "file_path": "documentation/Vision/vnfaceobservation.md",
       "hash": "58e5e14524f53b4c8c03c3f271606e1a33dfaa1fbcc3b92e7cbb77e6f5acb902"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/vision/vnfaceobservation/facecapturequality-2o4xv.json": {
+      "etag": "\"182a-65d55e149be75-df\"",
+      "file_path": "documentation/Vision/vnfaceobservation/facecapturequality-2o4xv.md",
+      "hash": "e8d32de5030cdb99ef3915497d315a6ca96121ecbbf2dee240aa8e4ef9978df8"
     },
     "https://developer.apple.com/tutorials/data/documentation/vision/vnfaceobservation/facecapturequality-bjg5.json": {
       "etag": "\"17e0-65d55e149be75-df\"",
@@ -16238,6 +16598,11 @@
       "file_path": "documentation/Vision/vngeneratepersonsegmentationrequest/init(completionhandler).md",
       "hash": "315298675647654f7faf455026335f5e413ab37a6c4ccb8edbae7c9f76355941"
     },
+    "https://developer.apple.com/tutorials/data/documentation/vision/vngeneratepersonsegmentationrequest/new.json": {
+      "etag": "\"1b06-65d55e139e4f1-df\"",
+      "file_path": "documentation/Vision/vngeneratepersonsegmentationrequest/new.md",
+      "hash": "b0aeb79f99ec9c291daf6bfc7153f5bdc897bb63f4c986dff8acf7bee763a540"
+    },
     "https://developer.apple.com/tutorials/data/documentation/vision/vngeneratepersonsegmentationrequest/outputpixelformat.json": {
       "etag": "\"3d08-65d55e13b6d0c-df\"",
       "file_path": "documentation/Vision/vngeneratepersonsegmentationrequest/outputpixelformat.md",
@@ -16382,6 +16747,11 @@
       "etag": "\"2923-65d55e15b274f-df\"",
       "file_path": "documentation/Vision/vnhumanbodypose3dobservation/camerarelativeposition(_).md",
       "hash": "fed84c6753cabbaa29881a6499117c4616d7769b7b06160bf0a94eef35733bb7"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/vision/vnhumanbodypose3dobservation/getcamerarelativeposition:forjointname:error:.json": {
+      "etag": "\"2b4e-65d55e15b274f-df\"",
+      "file_path": "documentation/Vision/vnhumanbodypose3dobservation/getcamerarelativeposition_forjointname_error_.md",
+      "hash": "a7fde25d21f466eda66e6652325f2320c3c056a2d9363b1e0fddfc7c3ed83ef4"
     },
     "https://developer.apple.com/tutorials/data/documentation/vision/vnhumanbodypose3dobservation/heightestimation-swift.enum.json": {
       "etag": "\"45d1-659026be338cb-df\"",
@@ -17718,6 +18088,11 @@
       "file_path": "documentation/Vision/vnrecognizedtext/boundingbox(for).md",
       "hash": "8a19b42e6abdd55422b276339caa88efba5af4edf944450667be2f9e53c39bb8"
     },
+    "https://developer.apple.com/tutorials/data/documentation/vision/vnrecognizedtext/boundingboxforrange:error:.json": {
+      "etag": "\"3286-65d55e1603fd7-df\"",
+      "file_path": "documentation/Vision/vnrecognizedtext/boundingboxforrange_error_.md",
+      "hash": "293f16a4aa6a3cf8c7624c8dc53dfa4bf191797555a2f14ffe7d5e1ccea1f149"
+    },
     "https://developer.apple.com/tutorials/data/documentation/vision/vnrecognizedtext/confidence.json": {
       "etag": "\"251f-65d55e1603fd7-df\"",
       "file_path": "documentation/Vision/vnrecognizedtext/confidence.md",
@@ -17863,6 +18238,11 @@
       "file_path": "documentation/Vision/vnrequest/computedevice(for).md",
       "hash": "dd25a9a73adfcb4ee277ed033440baa54483dfe711fa2e32321d83d50bd9ace1"
     },
+    "https://developer.apple.com/tutorials/data/documentation/vision/vnrequest/computedeviceforcomputestage:.json": {
+      "etag": "\"1cce-65d55e14007d0-df\"",
+      "file_path": "documentation/Vision/vnrequest/computedeviceforcomputestage_.md",
+      "hash": "b146961026c6f6fe264f438bf63ef88971097c78b431db6646c78b6ae890dda5"
+    },
     "https://developer.apple.com/tutorials/data/documentation/vision/vnrequest/currentrevision.json": {
       "etag": "\"2beb-65d55e14007d0-df\"",
       "file_path": "documentation/Vision/vnrequest/currentrevision.md",
@@ -17903,10 +18283,20 @@
       "file_path": "documentation/Vision/vnrequest/setcomputedevice(_,for).md",
       "hash": "f9a696c28db08f15a0577ca1ba6c836e40ab076a00a165a3dc3d54e48dd6e305"
     },
+    "https://developer.apple.com/tutorials/data/documentation/vision/vnrequest/setcomputedevice:forcomputestage:.json": {
+      "etag": "\"2080-65d55e14007d0-df\"",
+      "file_path": "documentation/Vision/vnrequest/setcomputedevice_forcomputestage_.md",
+      "hash": "da0058e8992a639ab30c1b7fe76e0897722d643c660bff2d1f2fe3c02f6e7eb1"
+    },
     "https://developer.apple.com/tutorials/data/documentation/vision/vnrequest/supportedcomputestagedevices.json": {
       "etag": "\"2380-65d55e14007d0-df\"",
       "file_path": "documentation/Vision/vnrequest/supportedcomputestagedevices.md",
       "hash": "a3f00fa4fa1f6f2ec46c7fc8f1bd8e8518e2e380bed5e7d4a0475ce7975c2266"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/vision/vnrequest/supportedcomputestagedevicesandreturnerror:.json": {
+      "etag": "\"1bf1-65d55e14007d0-df\"",
+      "file_path": "documentation/Vision/vnrequest/supportedcomputestagedevicesandreturnerror_.md",
+      "hash": "b2967a45bf17f9c35aef87af133581797746a9c293727ecbbca4434ac99290b3"
     },
     "https://developer.apple.com/tutorials/data/documentation/vision/vnrequest/supportedrevisions.json": {
       "etag": "\"2e82-65d55e14007d0-df\"",
@@ -18187,6 +18577,66 @@
       "etag": "\"c72f-65d55e1243c74-df\"",
       "file_path": "documentation/Vision/vntargetedimagerequest/init(targetedimageurl,orientation,options,completionhandler).md",
       "hash": "b748d8974e4c83cd1792f86087d3adc60c8221f7d952ff962e4b56b736d68e53"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/vision/vntargetedimagerequest/initwithtargetedcgimage:options:.json": {
+      "etag": "\"7537-65d55e1224589-df\"",
+      "file_path": "documentation/Vision/vntargetedimagerequest/initwithtargetedcgimage_options_.md",
+      "hash": "62370888b1656cd4a999349be3153d1772d2cdb3067e9ae5b0f1cb34f283c81f"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/vision/vntargetedimagerequest/initwithtargetedcgimage:orientation:options:.json": {
+      "etag": "\"80a8-65d55e1224589-df\"",
+      "file_path": "documentation/Vision/vntargetedimagerequest/initwithtargetedcgimage_orientation_options_.md",
+      "hash": "c491abdce6f2d47654828901148f17bf9ffb6984f4e32ae1c2873b5349322801"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/vision/vntargetedimagerequest/initwithtargetedciimage:options:.json": {
+      "etag": "\"74af-65d55e1224589-df\"",
+      "file_path": "documentation/Vision/vntargetedimagerequest/initwithtargetedciimage_options_.md",
+      "hash": "3076fb0781445d40d5c973b60aaed186f29b245004e7ca233c45fc7067be65d4"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/vision/vntargetedimagerequest/initwithtargetedciimage:orientation:options:.json": {
+      "etag": "\"8020-65d55e1224589-df\"",
+      "file_path": "documentation/Vision/vntargetedimagerequest/initwithtargetedciimage_orientation_options_.md",
+      "hash": "535ba289e69068499382dbd80494e245f81fea28b4cd5d5137b652059f787330"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/vision/vntargetedimagerequest/initwithtargetedcmsamplebuffer:options:.json": {
+      "etag": "\"7914-65d55e1243c74-df\"",
+      "file_path": "documentation/Vision/vntargetedimagerequest/initwithtargetedcmsamplebuffer_options_.md",
+      "hash": "48aa6388b323e06d58b1ac9ded6e60c909612f54088e512a66be0232da8dd5af"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/vision/vntargetedimagerequest/initwithtargetedcmsamplebuffer:orientation:options:.json": {
+      "etag": "\"7f84-65d55e1224589-df\"",
+      "file_path": "documentation/Vision/vntargetedimagerequest/initwithtargetedcmsamplebuffer_orientation_options_.md",
+      "hash": "3f2068791336f101650b697d20fccbc5e0060d1dac75b3f8fe23d29e251036b6"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/vision/vntargetedimagerequest/initwithtargetedcvpixelbuffer:options:.json": {
+      "etag": "\"75d2-65d55e1243c74-df\"",
+      "file_path": "documentation/Vision/vntargetedimagerequest/initwithtargetedcvpixelbuffer_options_.md",
+      "hash": "e71655d4cb1ed83d84d73ddaf30fb4c103e4ab68101476a33c05aedcfdb9391c"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/vision/vntargetedimagerequest/initwithtargetedcvpixelbuffer:orientation:options:.json": {
+      "etag": "\"8143-65d55e1224589-df\"",
+      "file_path": "documentation/Vision/vntargetedimagerequest/initwithtargetedcvpixelbuffer_orientation_options_.md",
+      "hash": "e375445a21ca7cd219a393e8e219593c1d4e90c0325f029dca74ed2942eccb9e"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/vision/vntargetedimagerequest/initwithtargetedimagedata:options:.json": {
+      "etag": "\"6cde-65d55e1224589-df\"",
+      "file_path": "documentation/Vision/vntargetedimagerequest/initwithtargetedimagedata_options_.md",
+      "hash": "8448cde5d5ff7135bebb2acb028d5aa731e32bc3ad567df79abebc114ed60892"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/vision/vntargetedimagerequest/initwithtargetedimagedata:orientation:options:.json": {
+      "etag": "\"78a4-65d55e1243c74-df\"",
+      "file_path": "documentation/Vision/vntargetedimagerequest/initwithtargetedimagedata_orientation_options_.md",
+      "hash": "dd441018e47ed5d705df1914f142c0f8f19b59f84168f967846f24395078b1b2"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/vision/vntargetedimagerequest/initwithtargetedimageurl:options:.json": {
+      "etag": "\"6d24-65d55e1224589-df\"",
+      "file_path": "documentation/Vision/vntargetedimagerequest/initwithtargetedimageurl_options_.md",
+      "hash": "38d5786fc85bdd64047b04a64fbb1a75f6961040b9bcd19e04444fca43d8237f"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/vision/vntargetedimagerequest/initwithtargetedimageurl:orientation:options:.json": {
+      "etag": "\"78f4-65d55e1224589-df\"",
+      "file_path": "documentation/Vision/vntargetedimagerequest/initwithtargetedimageurl_orientation_options_.md",
+      "hash": "82893a1cb908bde4310e99acd13db1e78757905e1fdcaafa99fab2a9b3e9322e"
     },
     "https://developer.apple.com/tutorials/data/documentation/vision/vntextobservation.json": {
       "etag": "\"483b-65d55e133485a-df\"",
@@ -18661,8 +19111,8 @@
   },
   "metadata": {
     "render": {
-      "version": 1
+      "version": 2
     },
-    "total_pages": 3732
+    "total_pages": 3822
   }
 }

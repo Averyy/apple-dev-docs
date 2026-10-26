@@ -43,6 +43,8 @@ This method allocates and initializes the returned object if there is no existin
   Returns the `NSBundle` instance that has the specified bundle identifier.
 - [init?(path: String)](./init%28path%29.md)
   Returns an `NSBundle` object initialized to correspond to the specified directory.
+- [+ bundleWithPath:](../nsbundle/bundlewithpath_.md)
+  Returns an `NSBundle` object that corresponds to the specified directory.
 
 
 ---

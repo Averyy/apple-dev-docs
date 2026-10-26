@@ -29,6 +29,8 @@ func activityMoveMode() throws -> HKActivityMoveModeObject
 ### Accessing the move mode
 - [static let HKUserPreferencesDidChange: NSNotification.Name](../../Foundation/nsnotification/name-swift.struct/hkuserpreferencesdidchange.md)
   Notifies observers whenever the user changes his or her preferred units.
+- [HKUserPreferencesDidChangeNotification](../hkuserpreferencesdidchangenotification.md)
+  Notifies observers whenever the user changes his or her preferred units.
 
 
 ---

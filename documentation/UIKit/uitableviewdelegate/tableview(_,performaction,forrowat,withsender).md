@@ -42,6 +42,8 @@ The table view invokes this method for a given `action` if the user taps Copy or
   Asks the delegate if the editing menu should omit the Copy or Paste command for a given row.
 - [func tableView(UITableView, editActionsForRowAt: IndexPath) -> [UITableViewRowAction]?](./tableview%28_,editactionsforrowat%29.md)
   Asks the delegate for the actions to display in response to a swipe in the specified row.
+- [- tableView:accessoryTypeForRowWithIndexPath:](./tableview_accessorytypeforrowwithindexpath_.md)
+  Asks the delegate for the type of standard accessory view to use as a disclosure control for the specified row.
 
 
 ---

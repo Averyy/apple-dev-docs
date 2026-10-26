@@ -28,6 +28,8 @@ class GKSCNNodeComponent
 - [init(node: SCNNode)](./gkscnnodecomponent/init%28node%29.md)
 ### Instance Properties
 - [var node: SCNNode](./gkscnnodecomponent/node.md)
+### Type Methods
+- [+ componentWithNode:](./gkscnnodecomponent/componentwithnode_.md)
 
 ## Relationships
 

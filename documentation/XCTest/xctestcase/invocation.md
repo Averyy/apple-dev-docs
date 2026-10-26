@@ -33,6 +33,10 @@ var invocation: NSInvocation? { get set }
   Records a failure during text execution.
 - [class var defaultTestSuite: XCTestSuite](./defaulttestsuite.md)
   A test suite that contains test cases for all of the tests in the class.
+- [+ testCaseWithInvocation:](./testcasewithinvocation_.md)
+  Creates a test case with an invocation.
+- [+ testCaseWithSelector:](./testcasewithselector_.md)
+  Creates a test case with a selector.
 
 
 ---

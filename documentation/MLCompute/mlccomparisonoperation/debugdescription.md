@@ -38,6 +38,8 @@ NSString *MLCComparisonOperationDebugDescription(MLCComparisonOperation operatio
 - [MLCComparisonOperation.logicalOR](./logicalor.md)
 - [MLCComparisonOperation.logicalXOR](./logicalxor.md)
 - [MLCComparisonOperation.notEqual](./notequal.md)
+- [MLCComparisonOperationCount](./mlccomparisonoperationcount.md)
+  A number that represents the operation count.
 
 
 ---

@@ -53,6 +53,14 @@ For more information on integrating with Messages, Mail, and FaceTime, see [Addi
   An object that tracks participants in a collaboration.
 - [struct SWCollaborationIdentifier](./swcollaborationidentifier.md)
   A unique identifier for a collaboration.
+### Track collaboration version information
+- [SharedWithYouCoreVersionNumber](./sharedwithyoucoreversionnumber.md)
+  Project version number for Shared with You Core.
+- [SharedWithYouCoreVersionString](./sharedwithyoucoreversionstring.md)
+  Project version string for Shared with You Core.
+### Macros
+- [SW_EXTERN](./sw_extern.md)
+- [SW_HIDDEN](./sw_hidden.md)
 
 
 ---

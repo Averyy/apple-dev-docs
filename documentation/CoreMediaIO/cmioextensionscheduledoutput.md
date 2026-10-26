@@ -25,6 +25,8 @@ class CMIOExtensionScheduledOutput
 ### Creating a Scheduled Output
 - [init(sequenceNumber: UInt64, hostTimeInNanoseconds: UInt64)](./cmioextensionscheduledoutput/init%28sequencenumber,hosttimeinnanoseconds%29.md)
   Creates a scheduled output object.
+- [+ scheduledOutputWithSequenceNumber:hostTimeInNanoseconds:](./cmioextensionscheduledoutput/scheduledoutputwithsequencenumber_hosttimeinnanoseconds_.md)
+  Returns a new scheduled output object.
 ### Inspecting the Output
 - [var sequenceNumber: UInt64](./cmioextensionscheduledoutput/sequencenumber.md)
   The buffer sequence number that was output.

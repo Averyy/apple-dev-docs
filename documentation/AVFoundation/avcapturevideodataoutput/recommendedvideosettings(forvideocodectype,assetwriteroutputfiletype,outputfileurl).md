@@ -58,6 +58,8 @@ A fully populated output settings dictionary suitable for configuring an asset w
   Returns a video settings dictionary appropriate for capturing video to a file with the specified codec and type.
 - [func recommendedVideoSettingsForAssetWriter(writingTo: AVFileType) -> [String : Any]?](./recommendedvideosettingsforassetwriter%28writingto%29.md)
   Specifies the recommended settings for use with an AVAssetWriterInput.
+- [minFrameDuration](./minframeduration.md)
+  The minimum frame duration.
 
 
 ---

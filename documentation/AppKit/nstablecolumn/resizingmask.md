@@ -36,6 +36,10 @@ When the value of this property is `0`, the column is not resizable. The default
   The table column’s maximum width, in points.
 - [func sizeToFit()](./sizetofit%28%29.md)
   Resizes the table column to fit the width of its header cell.
+- [- isResizable](./isresizable.md)
+  Returns whether the column is resizable.
+- [- setResizable:](./setresizable_.md)
+  Sets whether the user can resize the receiver in its NSTableView.
 
 
 ---

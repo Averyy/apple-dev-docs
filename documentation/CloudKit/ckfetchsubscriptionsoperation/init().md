@@ -34,6 +34,8 @@ You must set the [`subscriptionIDs`](./subscriptionids-714ct.md) property before
 ### Creating a Fetch Subscriptions Operation
 - [convenience init(subscriptionIDs: [CKSubscription.ID])](./init%28subscriptionids%29.md)
   Creates an operation for fetching the specified subscriptions.
+- [- initWithSubscriptionIDs:](./initwithsubscriptionids_.md)
+  Creates an operation for fetching the specified subscriptions.
 
 
 ---

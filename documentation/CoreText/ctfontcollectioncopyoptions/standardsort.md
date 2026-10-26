@@ -30,6 +30,8 @@ kCTFontCollectionCopyStandardSort
 ### Constants
 - [static var unique: CTFontCollectionCopyOptions](./unique.md)
   Passing this option indicates that duplicate values should be removed from the results.
+- [kCTFontCollectionCopyDefaultOptions](./kctfontcollectioncopydefaultoptions.md)
+  Passing this option indicates that defaults are to be used.
 
 
 ---

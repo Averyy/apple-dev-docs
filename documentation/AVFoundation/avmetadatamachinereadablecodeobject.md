@@ -40,6 +40,8 @@ On supported platforms, the [`AVCaptureMetadataOutput`](./avcapturemetadataoutpu
   A barcode description for use in Core Image.
 - [var stringValue: String?](./avmetadatamachinereadablecodeobject/stringvalue.md)
   Returns the error-corrected data decoded into a human-readable string.
+- [corners](./avmetadatamachinereadablecodeobject/corners-8f6bv.md)
+  The points defining the (x, 	y) locations of the corners.
 ### Constants
 - [Machine-readable object types](./machine-readable-object-types.md)
   Constants used to specify the type of barcode to scan.

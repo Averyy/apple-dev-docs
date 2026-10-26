@@ -52,6 +52,11 @@ When multiple rows are selected, this property contains only the index of the la
   Selects all rows or all columns, according to whether rows or columns were most recently selected.
 - [func deselectAll(Any?)](./deselectall%28_%29.md)
   Deselects all selected rows or columns if empty selection is allowed; otherwise does nothing.
+### Related Documentation
+- [- selectRow:byExtendingSelection:](./selectrow_byextendingselection_.md)
+  Selects a row at the specified index, optionally extending any existing selection.
+- [- selectedRowEnumerator](./selectedrowenumerator.md)
+  This method has been deprecated.
 
 
 ---

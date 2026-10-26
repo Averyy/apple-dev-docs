@@ -23,13 +23,13 @@ To include an asset in your article, provide a well-formatted and encoded URL to
 
 Apple News uses its user agent, AppleNewsBot, to access remote URLs. Apple News uses this user agent only for the purposes of accessing remote resources included in Apple News articles.
 
-To learn which URL property to use, see [`Audio`](https://developer.apple.com/documentation/applenewsformat/audio), [`ArticleThumbnail`](https://developer.apple.com/documentation/applenewsformat/articlethumbnail), [`DataTable`](https://developer.apple.com/documentation/applenewsformat/datatable), [`Figure`](https://developer.apple.com/documentation/applenewsformat/figure), [`Image`](https://developer.apple.com/documentation/applenewsformat/image), [`Logo`](https://developer.apple.com/documentation/applenewsformat/logo), [`Music`](https://developer.apple.com/documentation/applenewsformat/music), [`Photo`](https://developer.apple.com/documentation/applenewsformat/photo), [`Portrait`](https://developer.apple.com/documentation/applenewsformat/portrait), [`Video`](https://developer.apple.com/documentation/applenewsformat/video), [`ImageFill`](https://developer.apple.com/documentation/applenewsformat/imagefill), [`RepeatableImageFill`](https://developer.apple.com/documentation/applenewsformat/repeatableimagefill), [`VideoFill`](https://developer.apple.com/documentation/applenewsformat/videofill), [`GalleryItem`](https://developer.apple.com/documentation/applenewsformat/galleryitem), [`Mosaic`](https://developer.apple.com/documentation/applenewsformat/mosaic), [`Metadata`](https://developer.apple.com/documentation/applenewsformat/metadata), or [`ARKit`](https://developer.apple.com/documentation/applenewsformat/arkit).
+To learn which URL property to use, see [`Audio`](../AppleNewsFormat/audio.md), [`ArticleThumbnail`](../AppleNewsFormat/articlethumbnail.md), [`DataTable`](../AppleNewsFormat/datatable.md), [`Figure`](../AppleNewsFormat/figure.md), [`Image`](../AppleNewsFormat/image.md), [`Logo`](../AppleNewsFormat/logo.md), [`Music`](../AppleNewsFormat/music.md), [`Photo`](../AppleNewsFormat/photo.md), [`Portrait`](../AppleNewsFormat/portrait.md), [`Video`](../AppleNewsFormat/video.md), [`ImageFill`](../AppleNewsFormat/imagefill.md), [`RepeatableImageFill`](../AppleNewsFormat/repeatableimagefill.md), [`VideoFill`](../AppleNewsFormat/videofill.md), [`GalleryItem`](../AppleNewsFormat/galleryitem.md), [`Mosaic`](../AppleNewsFormat/mosaic.md), [`Metadata`](../AppleNewsFormat/metadata.md), or [`ARKit`](../AppleNewsFormat/arkit.md).
 
 **Include the URL’s prefix**. Apple News Format supports the following prefixes for URLs:
 
 - `http://`
 - `https://`
-- `bundle://` — If you are using the `URL` property, Apple News Format doesn’t support the `bundle://` prefix for [`Video`](https://developer.apple.com/documentation/applenewsformat/video) and [`Audio`](https://developer.apple.com/documentation/applenewsformat/audio) objects. For [`Audio`](https://developer.apple.com/documentation/applenewsformat/audio),  [`Music`](https://developer.apple.com/documentation/applenewsformat/music),  [`Video`](https://developer.apple.com/documentation/applenewsformat/video), and  [`VideoFill`](https://developer.apple.com/documentation/applenewsformat/videofill) objects use, `bundle://` for `imageURL` and `stillURL`. When a URL begins with `bundle://`, you must include the referenced file in the same directory as the JSON document.
+- `bundle://` — If you are using the `URL` property, Apple News Format doesn’t support the `bundle://` prefix for [`Video`](../AppleNewsFormat/video.md) and [`Audio`](../AppleNewsFormat/audio.md) objects. For [`Audio`](../AppleNewsFormat/audio.md),  [`Music`](../AppleNewsFormat/music.md),  [`Video`](../AppleNewsFormat/video.md), and  [`VideoFill`](../AppleNewsFormat/videofill.md) objects use, `bundle://` for `imageURL` and `stillURL`. When a URL begins with `bundle://`, you must include the referenced file in the same directory as the JSON document.
 
 **Use layered encoding for links nested within special characters or formats**. This example shows layered encoding for `markdown` format.
 
@@ -57,13 +57,13 @@ Follow the steps below to include an image in your article.
 
 The recommended minimum widths are as follows:
 
-- [`Photo`](https://developer.apple.com/documentation/applenewsformat/photo), [`Portrait`](https://developer.apple.com/documentation/applenewsformat/portrait), [`Gallery`](https://developer.apple.com/documentation/applenewsformat/gallery), and [`Mosaic`](https://developer.apple.com/documentation/applenewsformat/mosaic) components: 640 pixels.
-- [`Logo`](https://developer.apple.com/documentation/applenewsformat/logo) component: 300 pixels.
-- [`Figure`](https://developer.apple.com/documentation/applenewsformat/figure) component: 1,080 pixels.
+- [`Photo`](../AppleNewsFormat/photo.md), [`Portrait`](../AppleNewsFormat/portrait.md), [`Gallery`](../AppleNewsFormat/gallery.md), and [`Mosaic`](../AppleNewsFormat/mosaic.md) components: 640 pixels.
+- [`Logo`](../AppleNewsFormat/logo.md) component: 300 pixels.
+- [`Figure`](../AppleNewsFormat/figure.md) component: 1,080 pixels.
 
 For images that span the full width of the document or the device, the recommended widths are as follows:
 
-- Full width of the document.  At least as wide as the document, as specified in `layout.width`. See [`Layout`](https://developer.apple.com/documentation/applenewsformat/layout).
+- Full width of the document.  At least as wide as the document, as specified in `layout.width`. See [`Layout`](../AppleNewsFormat/layout.md).
 - Full width of the device. At least 1,366 pixels, to support larger devices.
 
 **Use only RGB color mode for images**. RGB — Red, Green, and Blue — is the only color mode that is compatible with Apple News. Don’t use CMYK — Cyan, Magenta, Yellow, and Key (black).
@@ -75,7 +75,7 @@ For images that span the full width of the document or the device, the recommend
 
 ##### Prepare a Thumbnail Image Asset
 
-For each article you publish, Apple News Format automatically creates an *article tile*. An article tile provides information about the article. It uses information from the article’s [`Metadata`](https://developer.apple.com/documentation/applenewsformat/metadata) object and appears in feeds, such as the Today feed, channel feeds, and topic feeds. Use `thumbnailURL` in your article metadata to specify the image you want to use in the article tile.
+For each article you publish, Apple News Format automatically creates an *article tile*. An article tile provides information about the article. It uses information from the article’s [`Metadata`](../AppleNewsFormat/metadata.md) object and appears in feeds, such as the Today feed, channel feeds, and topic feeds. Use `thumbnailURL` in your article metadata to specify the image you want to use in the article tile.
 
 **Use a supported image type**. JPEG (`.jpg` or `.jpeg` extension), WebP, PNG, and GIF are all supported, but JPEG with high-quality compression setting is preferred. Use PNG only if you need transparency. Note that animations are removed from WebP and GIF images.
 
@@ -91,9 +91,9 @@ For each article you publish, Apple News Format automatically creates an *articl
 
 ##### Prepare a Video Asset
 
-Follow the steps below to include a [`Video`](https://developer.apple.com/documentation/applenewsformat/video) or a [`VideoFill`](https://developer.apple.com/documentation/applenewsformat/videofill) in your article.
+Follow the steps below to include a [`Video`](../AppleNewsFormat/video.md) or a [`VideoFill`](../AppleNewsFormat/videofill.md) in your article.
 
-**Include a still image.** Use the `stillURL` property to specify the URL of the image file to use as a still image when the video isn’t playing. This property is required for [`VideoFill`](https://developer.apple.com/documentation/applenewsformat/videofill) and optional for [`Video`](https://developer.apple.com/documentation/applenewsformat/video). To avoid letterboxing, make the aspect ratio of the `stillURL` image file match that of  the video.
+**Include a still image.** Use the `stillURL` property to specify the URL of the image file to use as a still image when the video isn’t playing. This property is required for [`VideoFill`](../AppleNewsFormat/videofill.md) and optional for [`Video`](../AppleNewsFormat/video.md). To avoid letterboxing, make the aspect ratio of the `stillURL` image file match that of  the video.
 
 **Use the URL property to specify the location of the video file**. The video URL should begin with `https://` (preferred) or `http://`.
 
@@ -101,22 +101,22 @@ Follow the steps below to include a [`Video`](https://developer.apple.com/docume
 
 ##### Prepare a Video for Feeds
 
-To add a video to your article, specify the `videoURL` property to the [`Metadata`](https://developer.apple.com/documentation/applenewsformat/metadata) object. You can also specify an image to use as the thumbnail image (`thumbnailURL`) when the video hasn’t played yet. A glyph appears on the thumbnail image, allowing people to play the video in feeds, such as the Today feed, channel feeds, and topic feeds.
+To add a video to your article, specify the `videoURL` property to the [`Metadata`](../AppleNewsFormat/metadata.md) object. You can also specify an image to use as the thumbnail image (`thumbnailURL`) when the video hasn’t played yet. A glyph appears on the thumbnail image, allowing people to play the video in feeds, such as the Today feed, channel feeds, and topic feeds.
 
 **Provide a URL**. Apple News Format supports the following prefixes for video URLs:
 
 - `https://` (preferred)
 - `http://`
 
-**Use the same video URL for the Metadata** `videoURL` **property**. Provide the same `videoURL` property value to the [`Metadata`](https://developer.apple.com/documentation/applenewsformat/metadata) object and the [`Video`](https://developer.apple.com/documentation/applenewsformat/video) component in the article.
+**Use the same video URL for the Metadata** `videoURL` **property**. Provide the same `videoURL` property value to the [`Metadata`](../AppleNewsFormat/metadata.md) object and the [`Video`](../AppleNewsFormat/video.md) component in the article.
 
-**Use the same image for the Metadata** `thumbnailURL` **property.** Provide the same `thumbnailURL` property value to the [`Metadata`](https://developer.apple.com/documentation/applenewsformat/metadata) object and the [`Video`](https://developer.apple.com/documentation/applenewsformat/video) component’s `stillURL`. Using the same image ensures that playback continues seamlessly from a video playing in the feed to the same video that plays when the article opens.
+**Use the same image for the Metadata** `thumbnailURL` **property.** Provide the same `thumbnailURL` property value to the [`Metadata`](../AppleNewsFormat/metadata.md) object and the [`Video`](../AppleNewsFormat/video.md) component’s `stillURL`. Using the same image ensures that playback continues seamlessly from a video playing in the feed to the same video that plays when the article opens.
 
 **Use supported HLS formats**. M3U playlist is the preferred format. For more information about HLS, see [HTTP Live Streaming](https://developer.apple.com/streaming/).
 
 ##### Prepare an Audio Asset
 
-Configure the [`Audio`](https://developer.apple.com/documentation/applenewsformat/audio) or [`Music`](https://developer.apple.com/documentation/applenewsformat/music) component to include an audio file in your article.
+Configure the [`Audio`](../AppleNewsFormat/audio.md) or [`Music`](../AppleNewsFormat/music.md) component to include an audio file in your article.
 
 **Provide a URL.** Apple News Format supports the following prefixes for audio URLs:
 
@@ -132,7 +132,7 @@ Configure the [`Audio`](https://developer.apple.com/documentation/applenewsforma
 ### Component Measurements and Media Guidelines
 - [Specifying Measurements for Components](./specifying-measurements-for-components.md)
   Specify the units of measure to use for margins, minimum heights, and other dimensions.
-- [type SupportedUnits](https://developer.apple.com/documentation/applenewsformat/supportedunits)
+- [type SupportedUnits](../AppleNewsFormat/supportedunits.md)
   The units of measurement Apple News Format supports.
 
 

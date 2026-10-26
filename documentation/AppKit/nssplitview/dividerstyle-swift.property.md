@@ -34,6 +34,10 @@ See [`NSSplitView.DividerStyle`](./dividerstyle-swift.enum.md) for the possible 
   The thickness of the dividers for the split view.
 - [func drawDivider(in: NSRect)](./drawdivider%28in%29.md)
   Draws a divider between two of the split view’s subviews.
+- [- isPaneSplitter](./ispanesplitter.md)
+  The type of pane splitter.
+- [- setIsPaneSplitter:](./setispanesplitter_.md)
+  Sets the type of splitter.
 
 
 ---

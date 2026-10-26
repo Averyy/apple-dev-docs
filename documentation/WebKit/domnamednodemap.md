@@ -29,6 +29,8 @@ class DOMNamedNodeMap
 - [func removeNamedItemNS(String!, localName: String!) -> DOMNode!](./domnamednodemap/removenameditemns%28_,localname%29.md)
 - [func setNamedItem(DOMNode!) -> DOMNode!](./domnamednodemap/setnameditem%28_%29.md)
 - [func setNamedItemNS(DOMNode!) -> DOMNode!](./domnamednodemap/setnameditemns%28_%29.md)
+- [- getNamedItemNS::](./domnamednodemap/getnameditemns__.md)
+- [- removeNamedItemNS::](./domnamednodemap/removenameditemns__.md)
 
 ## Relationships
 

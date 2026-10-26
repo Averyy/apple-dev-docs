@@ -19,6 +19,12 @@ var psm: BluetoothL2CAPPSM { get }
 @property (assign, readonly) BluetoothL2CAPPSM PSM;
 ```
 
+## See Also
+
+### Related Documentation
+- [- getPSM](./getpsm.md)
+  Returns the PSM for the target L2CAP channel.
+
 
 ---
 

@@ -7,7 +7,7 @@ Choose a font family for Apple News Format that’s supported in iOS, iPadOS, an
 
 #### Overview
 
-Fonts determine the look of text in your article. Within font families, the properties `fontWeight`, `fontWidth`, and `fontStyle` provide variations on the font for bolder or lighter, condensed or expanded, and regular or italicized text. To specify a font variant in Apple News Format, you can also use an explicit font variant’s PostScript name (listed in parentheses) in a `fontName` property without style modifiers (see [`TextStyle`](https://developer.apple.com/documentation/applenewsformat/textstyle)). For information about using fonts in Apple News Format, see [Defining and Applying Text Styles](./defining-and-applying-text-styles.md).
+Fonts determine the look of text in your article. Within font families, the properties `fontWeight`, `fontWidth`, and `fontStyle` provide variations on the font for bolder or lighter, condensed or expanded, and regular or italicized text. To specify a font variant in Apple News Format, you can also use an explicit font variant’s PostScript name (listed in parentheses) in a `fontName` property without style modifiers (see [`TextStyle`](../AppleNewsFormat/textstyle.md)). For information about using fonts in Apple News Format, see [Defining and Applying Text Styles](./defining-and-applying-text-styles.md).
 
 ##### Choose a Font Family
 
@@ -105,15 +105,15 @@ The following example code shows how to apply the Arial font family to your arti
 ### Text Styles
 - [Defining and Applying Text Styles](./defining-and-applying-text-styles.md)
   Define and apply custom, default, and inline text styles, or use HTML tags or Markdown syntax to style your text.
-- [object TextStyle](https://developer.apple.com/documentation/applenewsformat/textstyle)
+- [object TextStyle](../AppleNewsFormat/textstyle.md)
   The object for defining the text style, such as font family, size, and color, that you can apply to ranges of text.
-- [object ComponentTextStyle](https://developer.apple.com/documentation/applenewsformat/componenttextstyle)
+- [object ComponentTextStyle](../AppleNewsFormat/componenttextstyle.md)
   The object for defining the style for a text component, including spacing, alignment, and drop caps.
-- [object DropCapStyle](https://developer.apple.com/documentation/applenewsformat/dropcapstyle)
+- [object DropCapStyle](../AppleNewsFormat/dropcapstyle.md)
   The object for defining the drop cap text style to use in the first paragraph in a text component.
-- [object ListItemStyle](https://developer.apple.com/documentation/applenewsformat/listitemstyle)
+- [object ListItemStyle](../AppleNewsFormat/listitemstyle.md)
   The object for defining the style for bulleted or numbered lists in an article.
-- [object InlineTextStyle](https://developer.apple.com/documentation/applenewsformat/inlinetextstyle)
+- [object InlineTextStyle](../AppleNewsFormat/inlinetextstyle.md)
   The object for applying text styling when not using HTML or Markdown formatting.
 
 

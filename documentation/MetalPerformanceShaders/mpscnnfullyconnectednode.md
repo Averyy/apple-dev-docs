@@ -28,6 +28,8 @@ class MPSCNNFullyConnectedNode
 
 ### Initializers
 - [init(source: MPSNNImageNode, weights: any MPSCNNConvolutionDataSource)](./mpscnnfullyconnectednode/init%28source,weights%29.md)
+### Type Methods
+- [+ nodeWithSource:weights:](./mpscnnfullyconnectednode/nodewithsource_weights_.md)
 
 ## Relationships
 

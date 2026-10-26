@@ -39,6 +39,8 @@ func canRepresent(_ displayGamut: NSDisplayGamut) -> Bool
 - [enum NSDisplayGamut](../nsdisplaygamut.md)
 - [class var screensHaveSeparateSpaces: Bool](./screenshaveseparatespaces.md)
   Returns a Boolean value indicating whether each screen can have its own set of spaces.
+- [- userSpaceScaleFactor](./userspacescalefactor.md)
+  Returns the scaling factor from user space to device space on the screen.
 
 
 ---

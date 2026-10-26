@@ -23,6 +23,12 @@ Enumerations for use with multiple classes.
   Constants that specify the Writing Tools experience for the underlying view.
 - [struct NSWritingToolsResultOptions](./nswritingtoolsresultoptions.md)
   Constants to specify what type of content to allow in Writing Tools suggestions or rewrites.
+- [NSCursorFrameResizeDirections](./nscursorframeresizedirections.md)
+  The directions in which a rectangular frame can be resized.
+- [NSHorizontalDirections](./nshorizontaldirections.md)
+  The absolute directions on the horizontal axis.
+- [NSVerticalDirections](./nsverticaldirections.md)
+  The directions on the vertical axis.
 
 ## See Also
 

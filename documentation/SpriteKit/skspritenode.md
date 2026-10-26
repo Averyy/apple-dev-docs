@@ -59,6 +59,12 @@ class SKSpriteNode
   Initializes a textured sprite with a normal map to simulate 3D lighting.
 - [var texture: SKTexture?](./skspritenode/texture.md)
   The texture used to draw the sprite.
+- [+ spriteNodeWithColor:size:](./skspritenode/spritenodewithcolor_size_.md)
+  Initializes a single-color sprite.
+- [+ spriteNodeWithImageNamed:](./skspritenode/spritenodewithimagenamed_.md)
+  Initializes a textured sprite using an image file.
+- [+ spriteNodeWithTexture:](./skspritenode/spritenodewithtexture_.md)
+  Initializes a textured sprite using an existing texture object.
 ### Creating a Solid-Color Sprite
 - [convenience init(color: UIColor, size: CGSize)](./skspritenode/init%28color,size%29.md)
   Initializes a single-color sprite node.

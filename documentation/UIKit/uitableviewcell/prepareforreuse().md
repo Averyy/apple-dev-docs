@@ -40,6 +40,9 @@ If you override this method, you must be sure to invoke the superclass implement
 ### Reusing cells
 - [var reuseIdentifier: String?](./reuseidentifier.md)
   A string for identifying a reusable cell.
+### Related Documentation
+- [- initWithFrame:reuseIdentifier:](./initwithframe_reuseidentifier_.md)
+  Initializes and returns a table cell object.
 
 
 ---

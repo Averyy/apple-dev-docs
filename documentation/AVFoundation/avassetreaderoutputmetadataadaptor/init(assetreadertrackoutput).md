@@ -36,6 +36,12 @@ You can only create an adaptor with a track output that vends metadata, and that
 
 - `trackOutput`: A track output that vends sample buffers that contain metadata.
 
+## See Also
+
+### Creating a metadata adaptor
+- [+ assetReaderOutputMetadataAdaptorWithAssetReaderTrackOutput:](./assetreaderoutputmetadataadaptorwithassetreadertrackoutput_.md)
+  Returns a new object that reads timed metadata groups from an asset reader output.
+
 
 ---
 

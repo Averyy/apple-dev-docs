@@ -32,6 +32,12 @@ An [`MTLTileRenderPipelineColorAttachmentDescriptor`](../mtltilerenderpipelineco
 
 - `attachmentIndex`: An index in the color attachment array.
 
+## See Also
+
+### Instance methods
+- [- setObject:atIndexedSubscript:](./setobject_atindexedsubscript_.md)
+  Sets the render pipeline state for a specified color attachment.
+
 
 ---
 

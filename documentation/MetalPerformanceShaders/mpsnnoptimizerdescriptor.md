@@ -37,6 +37,9 @@ class MPSNNOptimizerDescriptor
 - [var learningRate: Float](./mpsnnoptimizerdescriptor/learningrate.md)
 - [var regularizationScale: Float](./mpsnnoptimizerdescriptor/regularizationscale.md)
 - [var regularizationType: MPSNNRegularizationType](./mpsnnoptimizerdescriptor/regularizationtype.md)
+### Type Methods
+- [+ optimizerDescriptorWithLearningRate:gradientRescale:applyGradientClipping:gradientClipMax:gradientClipMin:regularizationType:regularizationScale:](./mpsnnoptimizerdescriptor/optimizerdescriptorwithlearningrate_gradientrescale_applygradientclipping_gradientclipmax_gradientclipmin_regularizationtype_regularizationscale_.md)
+- [+ optimizerDescriptorWithLearningRate:gradientRescale:regularizationType:regularizationScale:](./mpsnnoptimizerdescriptor/optimizerdescriptorwithlearningrate_gradientrescale_regularizationtype_regularizationscale_.md)
 
 ## Relationships
 

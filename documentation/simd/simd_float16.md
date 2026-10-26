@@ -39,6 +39,8 @@ typedef float __attribute__((ext_vector_type(16))) simd_float16;
   Returns a new vector from the specified four-element vector, and other elements undefined.
 - [func simd_make_float16_undef(simd_float8) -> simd_float16](./simd_make_float16_undef%28_%29-4f6xc.md)
   Returns a new vector from the specified three-element vector, and other elements undefined.
+- [vector16](./vector16-8kycm.md)
+  Returns a new vector from the specified vectors.
 ### Functions to Create 16-Element Vectors From Scalar Values
 - [func simd_make_float16(Float) -> simd_float16](./simd_make_float16%28_%29-4r3a8.md)
   Returns a new vector with the first element set to a scalar value, and other elements set to zero.
@@ -185,6 +187,58 @@ typedef float __attribute__((ext_vector_type(16))) simd_float16;
   Returns true for each element that is not a number (NaN) in a vector.
 - [func isnormal(simd_float16) -> simd_int16](./isnormal%28_%29-86aj9.md)
   Returns true for each element that is normal in a vector.
+### Functions to Create 16-Element Vectors From Vectors of Other Types
+- [simd_float](./simd_float-33quw.md)
+  Returns a new vector from the specified vector of 8-bit, signed-integer elements.
+- [simd_float](./simd_float-33h14.md)
+  Returns a new vector from the specified vector of 8-bit, unsigned-integer elements.
+- [simd_float](./simd_float-33lyw.md)
+  Returns a new vector from the specified vector of 16-bit, signed-integer elements.
+- [simd_float](./simd_float-33bqw.md)
+  Returns a new vector from the specified vector of 16-bit, unsigned-integer elements.
+- [simd_float](./simd_float-33os8.md)
+  Returns a new vector from the specified vector of 32-bit, signed-integer elements.
+- [simd_float](./simd_float-33eyg.md)
+  Returns a new vector from the specified vector of 32-bit, unsigned-integer elements.
+- [simd_float](./simd_float-33i8s.md)
+  Returns a new vector from the specified vector of 32-bit, floating-point elements.
+### Geometry Functions
+- [simd_dot](./simd_dot-z7ab.md)
+  Returns the dot product of two vectors.
+- [simd_project](./simd_project-4ofki.md)
+  Returns the first vector projected onto the second vector.
+- [simd_fast_project](./simd_fast_project-4kt3u.md)
+  Returns the fast projected vector.
+- [simd_precise_project](./simd_precise_project-39090.md)
+  Returns the precise projected vector.
+- [simd_normalize](./simd_normalize-3r4t9.md)
+  Returns a vector pointing in the same direction of the supplied vector, with a length of 1.
+- [simd_fast_normalize](./simd_fast_normalize-fjva.md)
+  Returns the fast normalized vector.
+- [simd_precise_normalize](./simd_precise_normalize-53f8a.md)
+  Returns the precise normalized vector.
+### Vector Norm Functions
+- [simd_norm_one](./simd_norm_one-2dgnq.md)
+  Returns the sum of the absolute values of a vector.
+- [simd_norm_inf](./simd_norm_inf-2x7vw.md)
+  Returns the maximum absolute value of a vector.
+### Length and Distance Functions
+- [simd_length](./simd_length-575we.md)
+  Returns the length of a vector.
+- [simd_fast_length](./simd_fast_length-3edeo.md)
+  Returns the fast length of a vector.
+- [simd_precise_length](./simd_precise_length-bswz.md)
+  Returns the precise length of a vector.
+- [simd_length_squared](./simd_length_squared-7moqe.md)
+  Returns the square of the length of a vector.
+- [simd_distance](./simd_distance-7xk9e.md)
+  Returns the distance between two vectors.
+- [simd_fast_distance](./simd_fast_distance-56een.md)
+  Returns the fast distance between two vectors.
+- [simd_precise_distance](./simd_precise_distance-5ci0y.md)
+  Returns the precise distance between two vectors.
+- [simd_distance_squared](./simd_distance_squared-57ui2.md)
+  Returns the square of the distance between two vectors.
 
 ## See Also
 

@@ -36,6 +36,8 @@ typedef struct { ... } SPRay3D;
   Creates a ray with the specified origin and the specified direction from single-precision vectors.
 - [init(origin: simd_double3, direction: simd_double3)](./ray3d/init%28origin,direction%29-47w1c.md)
   Creates a ray with the specified origin and the specified direction from double-precision vectors.
+- [SPRay3DMakeWithVector](./spray3dmakewithvector.md)
+  Creates a ray with the specified origin and the specified direction from double-precision vectors.
 ### Inspecting a 3D ray’s properties
 - [var origin: Point3D](./ray3d/origin.md)
   The origin of the ray.
@@ -68,6 +70,34 @@ typedef struct { ... } SPRay3D;
   Returns a ray that’s transformed by the specified scaled pose.
 - [func unapplying(ScaledPose3D) -> Ray3D](./ray3d/unapplying%28_%29-9x164.md)
   Returns a ray that’s transformed by the inverse of the specified scaled pose.
+- [SPRay3DApplyAffineTransform](./spray3dapplyaffinetransform.md)
+  Returns a ray that results from applying the specified affine transform.
+- [SPRay3DApplyProjectiveTransform](./spray3dapplyprojectivetransform.md)
+  Returns a ray that results from applying the specified projective transform.
+- [SPRay3DTranslate](./spray3dtranslate-13y4m.md)
+  Returns a ray with an origin that’s offset by the specified size.
+- [SPRay3DTranslate](./spray3dtranslate-2t6zr.md)
+  Returns a ray with an origin that’s offset by the specified vector.
+- [SPRay3DApplyPose](./spray3dapplypose.md)
+  Returns a ray that results from applying the specified pose.
+- [SPRay3DUnapplyAffineTransform](./spray3dunapplyaffinetransform.md)
+  Returns a ray that results from unapplying the specified affine transform.
+- [SPRay3DUnapplyProjectiveTransform](./spray3dunapplyprojectivetransform.md)
+  Returns a ray that results from unapplying the specified projective transform.
+- [SPRay3DUnapplyPose](./spray3dunapplypose.md)
+  Returns a ray that results from unapplying the specified projective transform.
+- [SPRay3DRotate](./spray3drotate.md)
+  Returns a ray that results from applying the specified rotation.
+- [SPRay3DRotateAroundPoint](./spray3drotatearoundpoint.md)
+  Returns a ray that’s rotated by the specified rotation around a specified pivot.
+- [SPRay3DRotateByQuaternion](./spray3drotatebyquaternion.md)
+  Returns a ray that results from rotating with the specified quaternion.
+- [SPRay3DRotateByQuaternionAroundPoint](./spray3drotatebyquaternionaroundpoint.md)
+  Returns a ray that’s rotated by the specified quaternion around a specified pivot.
+- [SPRay3DApplyScaledPose](./spray3dapplyscaledpose.md)
+  Returns a ray that’s transformed by the specified scaled pose.
+- [SPRay3DUnapplyScaledPose](./spray3dunapplyscaledpose.md)
+  Returns a ray that’s transformed by the inverse of the specified scaled pose.
 ### Checking characteristics
 - [var isFinite: Bool](./ray3d/isfinite.md)
   A Boolean value that indicates whether all of the values of the ray are finite.
@@ -79,8 +109,18 @@ typedef struct { ... } SPRay3D;
   Returns a Boolean value that indicates whether a ray intersects a rectangle.
 - [func intersects(sphereOrigin: Point3D, sphereRadius: Double) -> Bool](./ray3d/intersects%28sphereorigin,sphereradius%29.md)
   Returns a Boolean value that indicates whether the ray intersects a specified sphere.
+- [SPRay3DIsFinite](./spray3disfinite.md)
+  A Boolean value that indicates whether all of the values of the ray are finite.
+- [SPRay3DIsNaN](./spray3disnan.md)
+  A Boolean value that indicates whether the ray contains any NaN values.
+- [SPRay3DIsZero](./spray3diszero.md)
+  A Boolean value that indicates whether all of the values of the ray are zero.
+- [SPRay3DIntersectsRect](./spray3dintersectsrect.md)
+  Returns a Boolean value that indicates whether a ray intersects a rectangle.
 ### Comparing values
 - [static func == (Ray3D, Ray3D) -> Bool](./ray3d/eqeq%28_,_%29.md)
+  Returns a Boolean value that indicates whether two values are equal.
+- [SPRay3DEqualToRay](./spray3dequaltoray.md)
   Returns a Boolean value that indicates whether two values are equal.
 ### Applying arithmetic operations
 - [static func * (Pose3D, Ray3D) -> Ray3D](./ray3d/star%28_,_%29.md)
@@ -99,6 +139,9 @@ typedef struct { ... } SPRay3D;
 - [Primitive3DProtocol Implementations](./ray3d/primitive3dprotocol-implementations.md)
 - [ProjectiveTransformable3D Implementations](./ray3d/projectivetransformable3d-implementations.md)
 - [Rotatable3DProtocol Implementations](./ray3d/rotatable3dprotocol-implementations.md)
+### Ray constants
+- [SPRay3DInfinity](./spray3dinfinity.md)
+- [SPRay3DZero](./spray3dzero.md)
 
 ## Relationships
 

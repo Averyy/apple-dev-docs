@@ -25,6 +25,12 @@ init(gaugeProvider: CLKGaugeProvider, bottomTextProvider: CLKTextProvider, cente
 - `bottomTextProvider`: The text provider for the bottom text. The template supports multicolored text from this text provider.
 - `centerTextProvider`: The text provider for the central text. The template supports multicolored text from this text provider.
 
+## See Also
+
+### Creating the Template
+- [+ templateWithGaugeProvider:bottomTextProvider:centerTextProvider:](./templatewithgaugeprovider_bottomtextprovider_centertextprovider_.md)
+  Returns a new template with an open circular gauge, a small text element at the bottom, and a larger text element in the center.
+
 
 ---
 

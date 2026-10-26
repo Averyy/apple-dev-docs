@@ -28,6 +28,8 @@ kCWCipherKeyFlagsRx
   A flag that indicates to use the cipher key for multicast packets.
 - [static var tx: CWCipherKeyFlags](./tx.md)
   A flag that indicates to use the cipher key for packets sent from the interface.
+- [kCWCipherKeyFlagsNone](./kcwcipherkeyflagsnone.md)
+  Open System authentication.
 
 
 ---

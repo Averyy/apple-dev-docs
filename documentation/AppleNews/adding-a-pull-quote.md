@@ -291,13 +291,13 @@ Ellipses (`...`) indicate lines of code that have been omitted from this example
 ## See Also
 
 ### Related Documentation
-- [object PullQuote](https://developer.apple.com/documentation/applenewsformat/pullquote)
+- [object PullQuote](../AppleNewsFormat/pullquote.md)
   The component for including a pull quote.
-- [object TextStyle](https://developer.apple.com/documentation/applenewsformat/textstyle)
+- [object TextStyle](../AppleNewsFormat/textstyle.md)
   The object for defining the text style, such as font family, size, and color, that you can apply to ranges of text.
-- [object ComponentTextStyle](https://developer.apple.com/documentation/applenewsformat/componenttextstyle)
+- [object ComponentTextStyle](../AppleNewsFormat/componenttextstyle.md)
   The object for defining the style for a text component, including spacing, alignment, and drop caps.
-- [object ComponentLayout](https://developer.apple.com/documentation/applenewsformat/componentlayout)
+- [object ComponentLayout](../AppleNewsFormat/componentlayout.md)
   The object for defining the positioning for a specific component within the article’s column system.
 ### Introductory Design Tutorial
 - [Setting Up the Introductory Tutorial](./setting-up-the-introductory-tutorial.md)

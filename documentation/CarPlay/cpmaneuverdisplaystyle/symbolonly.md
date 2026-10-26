@@ -39,6 +39,8 @@ The map template should include a [`mapDelegate`](../cpmaptemplate/mapdelegate.m
   The symbol appears after the instructions for the maneuver.
 - [static var instructionOnly: CPManeuverDisplayStyle](./instructiononly.md)
   Only the instructions appear for the maneuver.
+- [CPManeuverDisplayStyleDefault](./cpmaneuverdisplaystyledefault.md)
+  The default display style for the maneuver.
 
 
 ---

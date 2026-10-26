@@ -311,6 +311,8 @@ For more information about how the system determines which view controllers to p
 ### Observing trait changes
 - [protocol UITraitChangeObservable](./uitraitchangeobservable-67e94.md)
   A type that calls your code in reaction to changes in the trait environment.
+- [UITraitChangeObservable](./uitraitchangeobservable-7qoet.md)
+  A type that calls your code in reaction to changes in the trait environment.
 ### Overriding trait values
 - [var traitOverrides: UITraitOverrides](./uiviewcontroller/traitoverrides-1z1cc.md)
   A mutable container of traits you use to set trait changes for this view controller and its views.
@@ -318,6 +320,10 @@ For more information about how the system determines which view controllers to p
   A mutable container of traits you use to set trait changes for an object and its descendants.
 - [func updateTraitsIfNeeded()](./uiviewcontroller/updatetraitsifneeded%28%29.md)
   Updates traits immediately for this view controller and its view, including any view controllers and views in this subtree.
+- [traitOverrides](./uiviewcontroller/traitoverrides-8u19n.md)
+  A mutable container of traits you use to set trait changes for this view controller and its views.
+- [UITraitOverrides](./uitraitoverrides-c.protocol.md)
+  A mutable container of traits you use to set trait changes for an object and its descendants.
 ### Managing child view controllers in a custom container
 - [var children: [UIViewController]](./uiviewcontroller/children.md)
   An array of view controllers that are children of the current view controller.
@@ -388,6 +394,14 @@ For more information about how the system determines which view controllers to p
 - [func updateContentUnavailableConfiguration(using: UIContentUnavailableConfigurationState)](./uiviewcontroller/updatecontentunavailableconfiguration%28using%29.md)
   Updates the content-unavailable configuration for the provided state.
 - [struct UIContentUnavailableConfiguration](./uicontentunavailableconfiguration-swift.struct.md)
+  A content configuration for a content-unavailable view.
+- [contentUnavailableConfiguration](./uiviewcontroller/contentunavailableconfiguration-6kqfk.md)
+  Setting a content unavailable configuration replaces the existing content unavailable view of the view controller with a new content unavailable view instance from the configuration, or directly applies the configuration to the existing content unavailable view if the configuration is compatible with the existing content unavailable view type. The default value is nil.
+- [contentUnavailableConfigurationState](./uiviewcontroller/contentunavailableconfigurationstate-9bvga.md)
+  Returns the current content unavailable configuration state for the view. To add your own custom state(s), override the getter and call super to obtain an instance with the system properties set, then set your own custom states as desired.
+- [- updateContentUnavailableConfigurationUsingState:](./uiviewcontroller/updatecontentunavailableconfigurationusingstate_.md)
+  Updates the content-unavailable configuration for the provided state.
+- [UIContentUnavailableConfiguration](./uicontentunavailableconfiguration-c.class.md)
   A content configuration for a content-unavailable view.
 ### Supporting app extensions
 - [var extensionContext: NSExtensionContext?](./uiviewcontroller/extensioncontext.md)
@@ -544,6 +558,7 @@ For more information about how the system determines which view controllers to p
 - [UITraitChangeObservable](./uitraitchangeobservable-67e94.md)
 - [UITraitEnvironment](./uitraitenvironment.md)
 - [UIUserActivityRestoring](./uiuseractivityrestoring.md)
+- [UITraitChangeObservable](./uitraitchangeobservable-7qoet.md)
 
 ## See Also
 

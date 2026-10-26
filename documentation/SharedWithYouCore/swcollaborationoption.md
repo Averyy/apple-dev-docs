@@ -34,6 +34,8 @@ The `SWCollaborationOption` represents a user-configurable setting for a collabo
   Creates and initializes a collaboration option object with a provided title and identifier.
 - [convenience init(title: String, identifier: String, subtitle: String, selected: Bool, requiredOptionsIdentifiers: [String])](./swcollaborationoption/init%28title,identifier,subtitle,selected,requiredoptionsidentifiers%29.md)
   Creates and initializes a collaboration option object with the provided values.
+- [- initWithTitle:identifier:](./swcollaborationoption/initwithtitle_identifier_.md)
+  Creates and initializes a collaboration option object.
 ### Accessing option attributes
 - [var identifier: String](./swcollaborationoption/identifier.md)
   A unique identifier.

@@ -42,11 +42,19 @@ This method is a designated initializer of `NSDictionary`.
 ### Related Documentation
 - [init()](./init%28%29.md)
   Initializes a newly allocated dictionary.
+- [- initWithObjectsAndKeys:](./initwithobjectsandkeys_.md)
+  Initializes a newly allocated dictionary with entries constructed from the specified set of values and keys.
+- [+ dictionaryWithObjects:forKeys:count:](./dictionarywithobjects_forkeys_count_.md)
+  Creates a dictionary containing a specified number of objects from a C array.
 ### Creating a Dictionary from Objects and Keys
 - [convenience init(objects: [Any], forKeys: [any NSCopying])](./init%28objects,forkeys%29.md)
   Initializes a newly allocated dictionary with key-value pairs constructed from the provided arrays of keys and objects.
 - [convenience init(object: Any, forKey: any NSCopying)](./init%28object,forkey%29.md)
   Creates a dictionary containing a given key and value.
+- [+ dictionaryWithObjects:forKeys:](./dictionarywithobjects_forkeys_.md)
+  Creates a dictionary containing entries constructed from the contents of an array of keys and an array of values.
+- [+ dictionaryWithObjectsAndKeys:](./dictionarywithobjectsandkeys_.md)
+  Creates a dictionary containing entries constructed from the specified set of values and keys.
 
 
 ---

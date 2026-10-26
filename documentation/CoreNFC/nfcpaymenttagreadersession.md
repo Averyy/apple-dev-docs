@@ -43,6 +43,10 @@ The system only supports one active [`NFCReaderSession`](./nfcreadersession-swif
   Creates a new session instance for processing NFC payment tags.
 - [protocol NFCTagReaderSessionDelegate](./nfctagreadersessiondelegate-2joku.md)
   A protocol that an object implements to receive callbacks sent from an NFC tag reader session.
+- [- initWithDelegate:queue:](./nfcpaymenttagreadersession/initwithdelegate_queue_.md)
+  Creates a new session instance for processing NFC payment tags.
+- [NFCTagReaderSessionDelegate](./nfctagreadersessiondelegate-5gxiw.md)
+  A protocol that an object implements to receive callbacks sent from an NFC tag reader session.
 
 ## Relationships
 
@@ -72,6 +76,8 @@ The system only supports one active [`NFCReaderSession`](./nfcreadersession-swif
   A general interface for interacting with a reader session.
 - [Near Field Communication Tag Reader Session Formats Entitlement](../BundleResources/entitlements/com.apple.developer.nfc.readersession.formats.md)
   The Near Field Communication data formats an app can read.
+- [NFCReaderSessionDelegate](./nfcreadersessiondelegate.md)
+  A collection of callbacks that provide information about the status of an NFC reader session.
 
 
 ---

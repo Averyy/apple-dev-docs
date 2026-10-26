@@ -41,7 +41,7 @@ class SWRemoveParticipantAlert
 ## See Also
 
 ### Participants
-- [class SWPerson](https://developer.apple.com/documentation/sharedwithyoucore/swperson)
+- [class SWPerson](../SharedWithYouCore/swperson.md)
   An object that tracks participants in a collaboration.
 
 

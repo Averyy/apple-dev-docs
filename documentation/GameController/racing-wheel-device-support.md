@@ -31,6 +31,10 @@ For macOS apps that support racing wheel devices, follow these steps for your ap
   The name for the left paddle input.
 - [var GCInputRightPaddle: String](./gcinputrightpaddle-5klic.md)
   The name for the right paddle input.
+- [GCInputLeftPaddle](./gcinputleftpaddle-818ad.md)
+  The name for the left paddle input.
+- [GCInputRightPaddle](./gcinputrightpaddle-1p8hd.md)
+  The name for the right paddle input.
 ### Gear shifter elements
 - [protocol GCAxisInput](./gcaxisinput.md)
   The common properties of inputs that provide absolute values along an axis with a fixed origin.
@@ -38,14 +42,20 @@ For macOS apps that support racing wheel devices, follow these steps for your ap
   An element that represents either a pattern or a sequential gear shift.
 - [protocol GCRelativeInput](./gcrelativeinput.md)
   The common properties of inputs that provide positions along an axis that are relative to the previous position.
+- [GCInputAxisName](./gcinputaxisname.md)
+  The Objective-C type for an input axis name.
 ### Steering and switch elements
 - [class GCSteeringWheelElement](./gcsteeringwheelelement.md)
   The element that represents the wheel of a racing wheel controller.
 - [protocol GCSwitchPositionInput](./gcswitchpositioninput.md)
   The common properties of inputs that switch between two or more positions.
+- [GCInputSwitchName](./gcinputswitchname.md)
+  The Objective-C type for an input switch name.
 ### Directional pad elements
 - [protocol GCLinearInput](./gclinearinput.md)
   The common properties of inputs that provide values in unit coordinates.
+- [GCInputDirectionPadName](./gcinputdirectionpadname.md)
+  The Objective-C type for the name of a directional pad.
 
 
 ---

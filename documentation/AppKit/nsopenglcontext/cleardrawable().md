@@ -32,6 +32,11 @@ This method disassociates the receiver from any associated `NSView` object. If t
   Returns the OpenGL context’s view.
 - [func update()](./update%28%29.md)
   Updates the OpenGL context’s drawable object.
+### Related Documentation
+- [- setOffScreen:width:height:rowbytes:](./setoffscreen_width_height_rowbytes_.md)
+  Instructs the OpenGL context to render into an offscreen buffer with the specified attributes.
+- [- setFullScreen](./setfullscreen.md)
+  Sets the OpenGL context to full-screen mode.
 
 
 ---

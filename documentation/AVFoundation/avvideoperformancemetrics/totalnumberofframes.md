@@ -35,6 +35,12 @@ var totalNumberOfFrames: Int { get }
   The total number of full screen frames rendered in a special power-efficient mode that didn’t require compositing with other UI elements.
 - [var totalAccumulatedFrameDelay: TimeInterval](./totalaccumulatedframedelay.md)
   The accumulated amount of time between the prescribed presentation times of displayed video frames and their actual time of display.
+- [numberOfCorruptedVideoFrames](./numberofcorruptedvideoframes.md)
+- [numberOfDisplayCompositedVideoFrames](./numberofdisplaycompositedvideoframes.md)
+- [numberOfDroppedVideoFrames](./numberofdroppedvideoframes.md)
+- [numberOfNonDisplayCompositedVideoFrames](./numberofnondisplaycompositedvideoframes.md)
+- [totalFrameDelay](./totalframedelay.md)
+- [totalNumberOfVideoFrames](./totalnumberofvideoframes.md)
 
 
 ---

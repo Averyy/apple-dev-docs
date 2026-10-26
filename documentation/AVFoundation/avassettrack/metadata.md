@@ -30,6 +30,16 @@ var metadata: [AVMetadataItem] { get }
 
 You can filter the array of metadata items according to language using the [`metadataItems(from:filteredAndSortedAccordingToPreferredLanguages:)`](../avmetadataitem/metadataitems%28from,filteredandsortedaccordingtopreferredlanguages%29.md) method. Filter the results by identifier using the [`metadataItems(from:filteredByIdentifier:)`](../avmetadataitem/metadataitems%28from,filteredbyidentifier%29.md) method.
 
+## See Also
+
+### Accessing metadata
+- [commonMetadata](./commonmetadata.md)
+  An array of metadata items for all common metadata keys that have a value.
+- [availableMetadataFormats](./availablemetadataformats.md)
+  An array of metadata formats available for the track.
+- [- metadataForFormat:](./metadata%28forformat%29.md)
+  Returns metadata items that a track contains for the specified format.
+
 
 ---
 

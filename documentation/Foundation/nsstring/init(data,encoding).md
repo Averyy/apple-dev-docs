@@ -58,6 +58,18 @@ An `NSString` object initialized by converting the bytes in `data` into UTF-16 c
 - [class func localizedStringWithFormat(NSString, any CVarArg...) -> Self](./localizedstringwithformat%28_,_%29.md)
 - [typealias unichar](../unichar.md)
   Type for UTF-16 code units.
+- [+ string](./string.md)
+  Returns an empty string.
+- [- initWithFormat:](./initwithformat_.md)
+  Returns an `NSString` object initialized by using a given format string as a template into which the remaining argument values are substituted.
+- [- initWithFormat:locale:](./initwithformat_locale_.md)
+  Returns an `NSString` object initialized by using a given format string as a template into which the remaining argument values are substituted according to given locale.
+- [+ stringWithFormat:](./stringwithformat_.md)
+  Returns a string created by using a given format string as a template into which the remaining argument values are substituted.
+- [+ localizedStringWithFormat:](./localizedstringwithformat_.md)
+  Returns a string created by using a given format string as a template into which the remaining argument values are substituted according to the current locale.
+- [+ stringWithCharacters:length:](./stringwithcharacters_length_.md)
+  Returns a string containing a given number of characters taken from a given C array of UTF-16 code units.
 
 
 ---

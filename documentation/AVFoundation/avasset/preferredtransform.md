@@ -31,6 +31,20 @@ var preferredTransform: CGAffineTransform { get }
 
 The value is typically, but not always, the identity transform.
 
+## See Also
+
+### Accessing asset preferences
+- [preferredRate](./preferredrate.md)
+  The asset’s rate preference for playing its media.
+- [preferredVolume](./preferredvolume.md)
+  The asset’s volume preference for playing its audible media.
+- [preferredMediaSelection](./preferredmediaselection.md)
+  The default media selections for this asset’s media selection groups.
+- [preferredDisplayCriteria](./preferreddisplaycriteria.md)
+  The asset’s display mode preference for optimal playback of its content.
+- [AVDisplayCriteria](../avdisplaycriteria.md)
+  An object the system uses to guide the selection of a display mode in tvOS.
+
 
 ---
 

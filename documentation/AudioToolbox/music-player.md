@@ -195,6 +195,7 @@ Create and play a sequence of tracks, and manage aspects of playback in response
   Describes a MIDI note.
 - [struct MIDIRawData](./midirawdata.md)
   Describes a MIDI system-exclusive (SysEx) message.
+- [NewMusicTrackFrom](./newmusictrackfrom.md)
 ### Interacting with Music Devices
 - [func MusicDeviceMIDIEvent(MusicDeviceComponent, UInt32, UInt32, UInt32, UInt32) -> OSStatus](./musicdevicemidievent%28_,_,_,_,_%29.md)
 - [func MusicDeviceMIDIEventList(MusicDeviceComponent, UInt32, UnsafePointer<MIDIEventList>) -> OSStatus](./musicdevicemidieventlist%28_,_,_%29.md)

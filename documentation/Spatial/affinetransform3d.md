@@ -54,6 +54,19 @@ typedef struct { ... } SPAffineTransform3D;
   Returns a new affine transform structure from the specified single-precision 4 x 4 matrix truncated to a  4 x 3 matrix.
 - [init(truncating: simd_double4x4)](./affinetransform3d/init%28truncating%29-9fd9g.md)
   Returns a new affine transform structure from the specified 4 x 4 matrix truncated to a  4 x 3 matrix.
+- [SPAffineTransform3DMake](./spaffinetransform3dmake-3a37f.md)
+- [SPAffineTransform3DMake](./spaffinetransform3dmake-94le1.md)
+  Creates an affine transform from the specified scale, rotate, and translate transforms.
+- [SPAffineTransform3DMakeShear](./spaffinetransform3dmakeshear.md)
+  Creates an affine transform from the specified shear transform.
+- [SPAffineTransform3DMakeWith4x4Matrix](./spaffinetransform3dmakewith4x4matrix.md)
+  Creates an affine transform from the specified 4 x 4 double-precision matrix.
+- [SPAffineTransform3DMakeWithPose](./spaffinetransform3dmakewithpose.md)
+  Creates an affine transform from the specified pose structure.
+- [SPAffineTransform3DMakeWithProjective](./spaffinetransform3dmakewithprojective.md)
+  Creates an affine transform from the specified projective transform.
+- [SPAffineTransform3DMakeWithScaledPose](./spaffinetransform3dmakewithscaledpose.md)
+  Returns a new affine transform structure from the specified scaled pose structure.
 ### Transforming a 3D affine transform structure
 - [struct Axis3D](./axis3d.md)
   Constants that describe an axis.
@@ -71,6 +84,32 @@ typedef struct { ... } SPAffineTransform3D;
   Returns a transform that results from scaling with specified double-precision values.
 - [func sheared(AxisWithFactors) -> AffineTransform3D](./affinetransform3d/sheared%28_%29.md)
   Returns an affine transform that results from shearing over an axis by shear factors for the other two axes.
+- [SPAffineTransform3DChangeBasis](./spaffinetransform3dchangebasis.md)
+  Returns a new affine transform structure by applying a change-of-basis.
+- [SPAffineTransform3DFlip](./spaffinetransform3dflip.md)
+  Returns an affine transform that results from flipping it along the specified axis.
+- [SPAffineTransform3DInvalid](./spaffinetransform3dinvalid.md)
+  An affine transform that represents an invalid transform.
+- [SPAffineTransform3DInverted](./spaffinetransform3dinverted.md)
+  Returns a new transform that results from inverting an existing affine transform.
+- [SPAffineTransform3DRotate](./spaffinetransform3drotate.md)
+  Returns a transform that results from applying the specified rotation.
+- [SPAffineTransform3DRotateByQuaternion](./spaffinetransform3drotatebyquaternion.md)
+  Returns a transform that results from rotating with the specified quaternion.
+- [SPAffineTransform3DScaleBy](./spaffinetransform3dscaleby.md)
+  Returns a transform that results from scaling with the specified double-precision values.
+- [SPAffineTransform3DScaleBySize](./spaffinetransform3dscalebysize.md)
+  Returns a transform that results from scaling with the specified size structure.
+- [SPAffineTransform3DScaleUniform](./spaffinetransform3dscaleuniform.md)
+  Returns a transform that results from uniformly scaling with the specified double-precision value.
+- [SPAffineTransform3DSetTranslation](./spaffinetransform3dsettranslation.md)
+  Sets the translation of an affine transform.
+- [SPAffineTransform3DShear](./spaffinetransform3dshear.md)
+  Returns an affine transform that results from shearing over an axis by shear factors for the other two axes.
+- [SPAffineTransform3DTranslate](./spaffinetransform3dtranslate-5pm5m.md)
+  Returns a transform with an origin that’s offset by the specified size.
+- [SPAffineTransform3DTranslate](./spaffinetransform3dtranslate-yb5g.md)
+  Returns a transform with an origin that’s offset by the specified vector.
 ### Decomposing a 3D affine transform
 - [var rotation: Rotation3D?](./affinetransform3d/rotation.md)
   The affine transform’s rotation.
@@ -78,6 +117,10 @@ typedef struct { ... } SPAffineTransform3D;
   The affine transform’s scale.
 - [var translation: Vector3D](./affinetransform3d/translation.md)
   The translation component of the affine transform.
+- [SPAffineTransform3DGetOffset](./spaffinetransform3dgetoffset.md)
+  The affine transform’s translation.
+- [SPAffineTransform3DGetRotation](./spaffinetransform3dgetrotation.md)
+  The affine transform’s rotation.
 ### Checking characteristics
 - [struct Dimension3DSet](./dimension3dset.md)
   A set of dimensions.
@@ -91,11 +134,17 @@ typedef struct { ... } SPAffineTransform3D;
   The first three columns of an affine transform’s underlying matrix.
 - [var matrix4x4: simd_double4x4](./affinetransform3d/matrix4x4.md)
   A 4 x 4 matrix that results from constructing the affine transform’s underlying matrix.
+- [SPAffineTransform3DIsUniformOverDimensions](./spaffinetransform3disuniformoverdimensions.md)
+  Returns a Boolean value that indicates whether the transform scales equally over the specified dimensions.
+- [SPAffineTransform3DIsValid](./spaffinetransform3disvalid.md)
+  A Boolean value that indicates whether the transform is a valid transform.
 ### Comparing values
 - [static func == (AffineTransform3D, AffineTransform3D) -> Bool](./affinetransform3d/eqeq%28_,_%29.md)
   Returns a Boolean value that indicates whether two values are equal.
 - [func isApproximatelyEqual(to: AffineTransform3D, tolerance: Double) -> Bool](./affinetransform3d/isapproximatelyequal%28to,tolerance%29.md)
   Returns a Boolean value that indicates whether two transforms are equal within a specified tolerance.
+- [SPAffineTransform3DAlmostEqualToTransform](./spaffinetransform3dalmostequaltotransform-16ryg.md)
+- [SPAffineTransform3DAlmostEqualToTransform](./spaffinetransform3dalmostequaltotransform-9ma98.md)
 ### Applying arithmetic operations
 - [static func * (AffineTransform3D, AffineTransform3D) -> AffineTransform3D](./affinetransform3d/star%28_,_%29.md)
   Returns the concatenation of two affine transforms.
@@ -121,6 +170,12 @@ typedef struct { ... } SPAffineTransform3D;
   Returns a new transform that results from inverting an existing affine transform.
 - [var offset: Vector3D](./affinetransform3d/offset.md)
   The affine transform’s translation.
+- [SPAffineTransform3DGetTranslation](./spaffinetransform3dgettranslation.md)
+  The affine transform’s translation.
+- [SPAffineTransform3DMakeTranslation](./spaffinetransform3dmaketranslation-2y1t6.md)
+  Creates an affine transform from the specified translate transform.
+- [SPAffineTransform3DSetOffset](./spaffinetransform3dsetoffset.md)
+  Sets the translation of an affine transform.
 ### Initializers
 - [init(AffineTransform3DFloat)](./affinetransform3d/init%28_%29-7eksa.md)
   Returns a double-precision affine transformation from a single-precision affine transformation.

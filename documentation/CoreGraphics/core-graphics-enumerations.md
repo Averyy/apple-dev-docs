@@ -83,6 +83,11 @@
 - [Core Graphics Constants](./core-graphics-constants.md)
 - [Core Graphics Functions](./core-graphics-functions.md)
 - [Core Graphics Data Types](./core-graphics-data-types.md)
+- [CGAffineTransform](./cgaffinetransform.md)
+  An affine transformation matrix for use in drawing 2D graphics.
+- [CGGeometry](./cggeometry.md)
+  Various structures and associated functions for 2D geometric primitives.
+- [Core Graphics Macros](./core-graphics-macros.md)
 
 
 ---

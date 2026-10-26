@@ -41,6 +41,22 @@ struct PGPhysicalMemoryRange_s;
 - [BitwiseCopyable](../Swift/bitwisecopyable.md)
 - [Sendable](../Swift/sendable.md)
 
+## See Also
+
+### Managing Memory Operations
+- [mapMemory](./pgdevicedescriptor/mapmemory.md)
+  A handler that the framework calls to map memory into the virtual machine.
+- [unmapMemory](./pgdevicedescriptor/unmapmemory.md)
+  A handler that the framework calls to unmap memory from the virtual machine.
+- [readMemory](./pgdevicedescriptor/readmemory.md)
+  A handler that the framework calls to read data from the guest’s memory.
+- [PGMapMemory](./pgmapmemory.md)
+  The block signature for a routine that maps guest physical memory into a task.
+- [PGUnmapMemory](./pgunmapmemory.md)
+  The block signature for a routine that unmaps guest physical memory from a task.
+- [PGReadMemory](./pgreadmemory.md)
+  The block signature for a routine that copies data from guest physical memory into host memory.
+
 
 ---
 

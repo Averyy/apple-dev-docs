@@ -47,6 +47,10 @@ The error you provide and its optional message appear on the Apple Pay sheet. Th
   Returns an error object that indicates an invalid coupon.
 - [static func paymentCouponCodeExpiredError(localizedDescription: String?) -> any Error](./paymentcouponcodeexpirederror%28localizeddescription%29.md)
   Returns an error object that indicates an expired coupon.
+- [+ paymentCouponCodeInvalidErrorWithLocalizedDescription:](./paymentcouponcodeinvaliderrorwithlocalizeddescription_.md)
+  Returns an error object that indicates an invalid coupon.
+- [+ paymentCouponCodeExpiredErrorWithLocalizedDescription:](./paymentcouponcodeexpirederrorwithlocalizeddescription_.md)
+  Returns an error object that indicates an expired coupon.
 
 
 ---

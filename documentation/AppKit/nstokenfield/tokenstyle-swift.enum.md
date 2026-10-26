@@ -29,6 +29,13 @@ enum NSTokenStyle : NSUInteger;
 - [NSTokenField.TokenStyle.squared](./tokenstyle-swift.enum/squared.md)
 ### Initializers
 - [init?(rawValue: UInt)](./tokenstyle-swift.enum/init%28rawvalue%29.md)
+### Deprecated
+- [NSDefaultTokenStyle](../nsdefaulttokenstyle.md)
+  Style best used for keyword type tokens.
+- [NSPlainTextTokenStyle](../nsplaintexttokenstyle.md)
+  Style to use for data you want represented as plain-text and without any token background.
+- [NSRoundedTokenStyle](../nsroundedtokenstyle.md)
+  Style best used for address type tokens.
 
 ## Relationships
 

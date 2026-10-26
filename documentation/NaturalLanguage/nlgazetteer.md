@@ -42,6 +42,8 @@ Typically, you create a gazetteer at development time, such as in a macOS playgr
   Creates a gazetteer from a set of labels for terms represented by a dictionary.
 - [class func write([String : [String]], language: NLLanguage?, to: URL) throws](./nlgazetteer/write%28_,language,to%29.md)
   Creates a gazetteer from a set of labels for terms represented by a dictionary and saves the gazetteer to a file.
+- [+ gazetteerWithContentsOfURL:error:](./nlgazetteer/gazetteerwithcontentsofurl_error_.md)
+  Creates a Natural Language gazetteer from a model created with the Create ML framework.
 ### Looking Up Labels for Terms
 - [func label(for: String) -> String?](./nlgazetteer/label%28for%29.md)
   Retrieves the label for the given term.

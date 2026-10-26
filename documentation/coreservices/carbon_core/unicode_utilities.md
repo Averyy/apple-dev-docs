@@ -91,6 +91,50 @@ Work with Unicode text.
   Specifies kinds of text boundaries.
 - [Text Boundary Operation Class](./unicode_utilities/api-1390460-text_boundary_operation_class.md)
   Identifies the class of Unicode utility operations that find text boundaries.
+- [Fixed Ordering Scheme](../api-1390361-fixed_ordering_scheme.md)
+  Specifies to use the fixed ordering scheme.
+- [Fixed Ordering Masks 1](../api-1390370-fixed_ordering_masks_1.md)
+  Set and test the `UCCollateOptions` field that specifies a fixed ordering scheme.
+- [Fixed Ordering Masks 2](../api-1390573-fixed_ordering_masks_2.md)
+  Test the `UCCollateOptions` field that specifies a fixed ordering scheme.
+- [Key Actions](../api-1390619-key_actions.md)
+  Indicate the current key action.
+- [Key Format Codes](../api-1390609-key_format_codes.md)
+  Indicate a structure format used in a `'uchr'` resource.
+- [Key Output Index Masks](../api-1390638-key_output_index_masks.md)
+  Test the bits in `UCKeyOutput` values.
+- [Key State Entry Formats](../api-1390376-key_state_entry_formats.md)
+  Indicate the format for dead-key state records.
+- [Key Translation Options Flag](../api-1390507-key_translation_options_flag.md)
+  Indicates the dead-key processing state.
+- [Key Translation Options Mask](../api-1390568-key_translation_options_mask.md)
+  Specifies the mask for the bit that controls dead-key processing state.
+- [Operation Class](../api-1390359-operation_class.md)
+  Identifies collation as a class of Unicode utility operations.
+- [Standard Options Mask](../api-1390444-standard_options_mask.md)
+  Specifies standard options for Unicode string comparison.
+- [Text Boundary Operation Class](../api-1390460-text_boundary_operation_class.md)
+  Identifies the class of Unicode utility operations that find text boundaries.
+- [UniCharArrayHandle](../unichararrayhandle.md)
+- [UniCharArrayPtr](../unichararrayptr.md)
+- [UnicodeMappingPtr](../unicodemappingptr.md)
+- [UntokenTableHandle](../untokentablehandle.md)
+- [UntokenTablePtr](../untokentableptr.md)
+### Identifying Unicode Text Boundaries
+- [UCCreateTextBreakLocator](../api-1390362-uccreatetextbreaklocator.md)
+  Creates an object encapsulating locale and text-break information, for the purpose of finding boundaries in Unicode text.
+- [UCFindTextBreak](../api-1390429-ucfindtextbreak.md)
+  Uses locale-specific text-break information to find boundaries in Unicode text.
+- [UCDisposeTextBreakLocator](../api-1390419-ucdisposetextbreaklocator.md)
+  Disposes a text-break locator object.
+
+## See Also
+
+### Utilities
+- [Mathematical and Logical Utilities](./mathematical_and_logical_utilities.md)
+  Perform mathematical and logical operations.
+- [Pascal String Utilities](./pascal_string_utilities.md)
+  Performing common string manipulations on Pascal strings.
 
 
 ---

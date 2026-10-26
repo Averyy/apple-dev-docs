@@ -29,6 +29,9 @@ enum MIDIProtocolID : SInt32;
 
 ### Initializers
 - [init?(rawValue: Int32)](./midiprotocolid/init%28rawvalue%29.md)
+### Protocol Versions
+- [kMIDIProtocol_1_0](./midiprotocolid/kmidiprotocol_1_0.md)
+- [kMIDIProtocol_2_0](./midiprotocolid/kmidiprotocol_2_0.md)
 
 ## Relationships
 

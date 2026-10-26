@@ -40,6 +40,14 @@ var tensorAllocationSizeInBytes: Int { get }
   A Boolean that indicates whether you provided the sequence lengths sorted in descending order.
 - [var batchSizePerSequenceStep: [Int]?](./batchsizepersequencestep-6iz59.md)
   The batch size for each sequence.
+- [shape](./shape-91vng.md)
+  An array that contains the size in each dimension.
+- [stride](./stride-3ydik.md)
+  An array that contains the stride, in bytes, in each dimension.
+- [sequenceLengths](./sequencelengths-3ntsa.md)
+  An array that contains the variable lengths of sequences stored in the tensor.
+- [batchSizePerSequenceStep](./batchsizepersequencestep-55mp8.md)
+  The batch size for each sequence.
 
 
 ---

@@ -42,6 +42,8 @@ For best results when analyzing sleep samples, it’s recommended that you use [
 - [static let appleSleepingWristTemperature: HKQuantityTypeIdentifier](../hkquantitytypeidentifier/applesleepingwristtemperature.md)
   A quantity sample type that records the wrist temperature during sleep.
 - [enum HKAppleSleepingBreathingDisturbancesClassification](../hkapplesleepingbreathingdisturbancesclassification.md)
+- [HKCategoryValueSleepAnalysisAsleepValues](../hkcategoryvaluesleepanalysisasleepvalues.md)
+- [HKAppleSleepingBreathingDisturbancesClassificationForQuantity](../hkapplesleepingbreathingdisturbancesclassificationforquantity.md)
 
 
 ---

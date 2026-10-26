@@ -28,6 +28,10 @@ typedef enum AXUnderlineStyle : UInt32 {
 - [AXUnderlineStyle.none](./axunderlinestyle/none.md)
 - [AXUnderlineStyle.single](./axunderlinestyle/single.md)
 - [AXUnderlineStyle.thick](./axunderlinestyle/thick.md)
+- [kAXUnderlineStyleDouble](./axunderlinestyle/kaxunderlinestyledouble.md)
+- [kAXUnderlineStyleNone](./axunderlinestyle/kaxunderlinestylenone.md)
+- [kAXUnderlineStyleSingle](./axunderlinestyle/kaxunderlinestylesingle.md)
+- [kAXUnderlineStyleThick](./axunderlinestyle/kaxunderlinestylethick.md)
 
 ## Relationships
 

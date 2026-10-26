@@ -44,6 +44,12 @@ This method removes the given ranges from the resource’s buffer cache. This pr
   Clears the given ranges within the buffer cache.
 - [class FSMetadataRange](../fsmetadatarange.md)
   A range that describes contiguous metadata segments on disk.
+- [- metadataReadInto:startingAt:length:error:](./metadatareadinto_startingat_length_error_.md)
+  Synchronously reads file system metadata from the resource into a buffer.
+- [- metadataWriteFrom:startingAt:length:error:](./metadatawritefrom_startingat_length_error_.md)
+  Synchronously writes file system metadata from a buffer to the resource.
+- [- delayedMetadataWriteFrom:startingAt:length:error:](./delayedmetadatawritefrom_startingat_length_error_.md)
+  Writes file system metadata from a buffer to a cache, prior to flushing it to the resource.
 
 
 ---

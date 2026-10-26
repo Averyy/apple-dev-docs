@@ -34,6 +34,14 @@ If you create a context without specifying a rendering destination, Core Image a
 
 To specify additional options for the context, use the [`contextWithOptions:`](./contextwithoptions_.md) initializer instead.
 
+## See Also
+
+### Creating a Context Without Specifying a Destination
+- [+ context](./context.md)
+  Creates a context without a specific rendering destination, using default options.
+- [+ contextWithOptions:](./contextwithoptions_.md)
+  Initializes a context without a specific rendering destination, using the specified options.
+
 
 ---
 

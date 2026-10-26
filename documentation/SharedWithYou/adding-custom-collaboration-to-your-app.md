@@ -7,7 +7,7 @@ Integrate your custom collaboration app with Messages.
 
 #### Overview
 
-If your app uses iCloud to store shared content, you can use the steps in [Adding shared content collaboration to your app](./adding-shared-content-collaboration-to-your-app.md) to add collaboration. To share content without using iCloud, the Shared with You framework provides an [`SWCollaborationMetadata`](https://developer.apple.com/documentation/sharedwithyoucore/swcollaborationmetadata) object wrapped in [`NSItemProvider`](../Foundation/nsitemprovider.md) to implement a custom collaboration infrastructure.
+If your app uses iCloud to store shared content, you can use the steps in [Adding shared content collaboration to your app](./adding-shared-content-collaboration-to-your-app.md) to add collaboration. To share content without using iCloud, the Shared with You framework provides an [`SWCollaborationMetadata`](../SharedWithYouCore/swcollaborationmetadata.md) object wrapped in [`NSItemProvider`](../Foundation/nsitemprovider.md) to implement a custom collaboration infrastructure.
 
 Before you can use this collaboration infrastructure, your app needs to support universal links to share content with other apps. For more details about implementing universal links, see [Making your app content shareable](./making-your-app-content-shareable.md).
 
@@ -19,7 +19,7 @@ Before you can use this collaboration infrastructure, your app needs to support 
 
 When a user decides to share a collaboration from your app through the Messages app, you first create metadata to represent the content. The metadata includes share options the user can configure prior to sending the message, and many other properties you can customize. Next, you provide that metadata to the share sheet, or to drag and drop using the steps below in the “Present a collaboration view” section.
 
-The string you pass to [`SWLocalCollaborationIdentifier`](https://developer.apple.com/documentation/sharedwithyoucore/swlocalcollaborationidentifier) doesn’t need to be unique across devices, it’s only for your app to use locally. Similarly, the system displays the initiator’s account handle and name that your app retrieves from [`personNameComponents(from:)`](../Foundation/personnamecomponentsformatter/personnamecomponents%28from%29.md) locally so the collaborator can confirm their account.
+The string you pass to [`SWLocalCollaborationIdentifier`](../SharedWithYouCore/swlocalcollaborationidentifier.md) doesn’t need to be unique across devices, it’s only for your app to use locally. Similarly, the system displays the initiator’s account handle and name that your app retrieves from [`personNameComponents(from:)`](../Foundation/personnamecomponentsformatter/personnamecomponents%28from%29.md) locally so the collaborator can confirm their account.
 
 ```swift
 // Configure the SWCollaborationMetadata.
@@ -35,11 +35,11 @@ if let components = formatter.personNameComponents(from: "Devin") {
 }
 ```
 
-After your app sets the identifier and initiator for the metadata, configure [`SWCollaborationShareOptions`](https://developer.apple.com/documentation/sharedwithyoucore/swcollaborationshareoptions). Share options are the settings a person configures on the collaboration in Messages or the share sheet. Options represent individual switches, or mutually exclusive values for a setting. Options have a title and an identifier, and are either in a selected or an unselected state.
+After your app sets the identifier and initiator for the metadata, configure [`SWCollaborationShareOptions`](../SharedWithYouCore/swcollaborationshareoptions.md). Share options are the settings a person configures on the collaboration in Messages or the share sheet. Options represent individual switches, or mutually exclusive values for a setting. Options have a title and an identifier, and are either in a selected or an unselected state.
 
-There are two classes to represent a group of options: [`SWCollaborationOptionsGroup`](https://developer.apple.com/documentation/sharedwithyoucore/swcollaborationoptionsgroup) and [`SWCollaborationOptionsPickerGroup`](https://developer.apple.com/documentation/sharedwithyoucore/swcollaborationoptionspickergroup). Use `SWCollaborationOptionsGroup` to represent a collection of switches, and use `SWCollaborationOptionsPickerGroup` to represent mutually exclusive values for a setting.
+There are two classes to represent a group of options: [`SWCollaborationOptionsGroup`](../SharedWithYouCore/swcollaborationoptionsgroup.md) and [`SWCollaborationOptionsPickerGroup`](../SharedWithYouCore/swcollaborationoptionspickergroup.md). Use `SWCollaborationOptionsGroup` to represent a collection of switches, and use `SWCollaborationOptionsPickerGroup` to represent mutually exclusive values for a setting.
 
-In the example below, a person can choose either the “Can make changes” or the “Read only” option. The collaborator can choose “Allow mentions” and the “Allow comments” options independent of each other. The app then passes both the option groups to `SWCollaborationShareOptions` to initialize the [`defaultShareOptions`](https://developer.apple.com/documentation/sharedwithyoucore/swcollaborationmetadata/defaultshareoptions).
+In the example below, a person can choose either the “Can make changes” or the “Read only” option. The collaborator can choose “Allow mentions” and the “Allow comments” options independent of each other. The app then passes both the option groups to `SWCollaborationShareOptions` to initialize the [`defaultShareOptions`](../SharedWithYouCore/swcollaborationmetadata/defaultshareoptions.md).
 
 ```swift
 // Configure the SWCollaborationShareOptions.
@@ -64,7 +64,7 @@ metadata.defaultShareOptions = SWCollaborationShareOptions(optionsGroups: option
 
 ##### Present a collaboration view
 
-If your app uses SwiftUI, [`SWCollaborationMetadata`](https://developer.apple.com/documentation/sharedwithyoucore/swcollaborationmetadata) is compatible with the [`Transferable`](../CoreTransferable/transferable.md) protocol and the [`ShareLink`](../SwiftUI/sharelink.md) view. In the example below, the app defines a `Transferable` model object and creates a [`ProxyRepresentation`](../CoreTransferable/proxyrepresentation.md) to return a collaboration metadata instance. Then, the app passes that model object to a `ShareLink` instance in the view.
+If your app uses SwiftUI, [`SWCollaborationMetadata`](../SharedWithYouCore/swcollaborationmetadata.md) is compatible with the [`Transferable`](../CoreTransferable/transferable.md) protocol and the [`ShareLink`](../SwiftUI/sharelink.md) view. In the example below, the app defines a `Transferable` model object and creates a [`ProxyRepresentation`](../CoreTransferable/proxyrepresentation.md) to return a collaboration metadata instance. Then, the app passes that model object to a `ShareLink` instance in the view.
 
 ```swift
 // Configure the SwiftUI TransferRepresentation object.
@@ -153,7 +153,7 @@ The system stages a draft of your collaborative content in Messages. After a per
 
 ##### Prepare the collaboration coordinator
 
-`SWCollaborationCoordinator` is a singleton, meaning there’s a global shared instance that your app uses to respond to action requests. Your app defines an action handler that conforms to the [`SWCollaborationActionHandler`](https://developer.apple.com/documentation/sharedwithyoucore/swcollaborationactionhandler) protocol. Because the collaboration coordinator runs in the background and can send requests for actions to your app at any time, define your action handler early in the launch process. The app in the example below registers the handler in the [`application(_:didFinishLaunchingWithOptions:)`](../UIKit/uiapplicationdelegate/application%28_,didfinishlaunchingwithoptions%29.md) method:
+`SWCollaborationCoordinator` is a singleton, meaning there’s a global shared instance that your app uses to respond to action requests. Your app defines an action handler that conforms to the [`SWCollaborationActionHandler`](../SharedWithYouCore/swcollaborationactionhandler.md) protocol. Because the collaboration coordinator runs in the background and can send requests for actions to your app at any time, define your action handler early in the launch process. The app in the example below registers the handler in the [`application(_:didFinishLaunchingWithOptions:)`](../UIKit/uiapplicationdelegate/application%28_,didfinishlaunchingwithoptions%29.md) method:
 
 ```swift
 // Assign your action handler to the SWCollaborationCoordinator.
@@ -167,9 +167,9 @@ func application(_ application: UIApplication, didFinishLaunchingWithOptions lau
 
 ```
 
-Your action handler is responsible for responding to [`SWAction`](https://developer.apple.com/documentation/sharedwithyoucore/swaction) requests from the system. An `SWAction` represents work your app needs to handle during a collaboration. Your app calls [`fulfill()`](https://developer.apple.com/documentation/sharedwithyoucore/swaction/fulfill()) after it completes a request. If your app can’t complete an action, it responds with [`fail()`](https://developer.apple.com/documentation/sharedwithyoucore/swaction/fail()). It’s important to respond to `SWAction` requests quickly to avoid a system timeout.
+Your action handler is responsible for responding to [`SWAction`](../SharedWithYouCore/swaction.md) requests from the system. An `SWAction` represents work your app needs to handle during a collaboration. Your app calls [`fulfill()`](../SharedWithYouCore/swaction/fulfill%28%29.md) after it completes a request. If your app can’t complete an action, it responds with [`fail()`](../SharedWithYouCore/swaction/fail%28%29.md). It’s important to respond to `SWAction` requests quickly to avoid a system timeout.
 
-The example code below retrieves the [`localIdentifier`](https://developer.apple.com/documentation/sharedwithyoucore/swcollaborationmetadata/localidentifier) and [`userSelectedShareOptions`](https://developer.apple.com/documentation/sharedwithyoucore/swcollaborationmetadata/userselectedshareoptions) from the [`SWCollaborationMetadata`](https://developer.apple.com/documentation/sharedwithyoucore/swcollaborationmetadata) in the action. The `APIRequest` object in this example is the API for processing collaboration requests on a web server.
+The example code below retrieves the [`localIdentifier`](../SharedWithYouCore/swcollaborationmetadata/localidentifier.md) and [`userSelectedShareOptions`](../SharedWithYouCore/swcollaborationmetadata/userselectedshareoptions.md) from the [`SWCollaborationMetadata`](../SharedWithYouCore/swcollaborationmetadata.md) in the action. The `APIRequest` object in this example is the API for processing collaboration requests on a web server.
 
 ```swift
 // Handle a system request for an SWStartCollaborationAction.
@@ -193,13 +193,13 @@ func collaborationCoordinator(_ coordinator: SWCollaborationCoordinator,
 
 ```
 
-If the [`SWStartCollaborationAction`](https://developer.apple.com/documentation/sharedwithyoucore/swstartcollaborationaction) is successful, the system sends your app a second action to update the collaboration participants. Before you can add or remove participants, your app needs to have a way to verify participants.
+If the [`SWStartCollaborationAction`](../SharedWithYouCore/swstartcollaborationaction.md) is successful, the system sends your app a second action to update the collaboration participants. Before you can add or remove participants, your app needs to have a way to verify participants.
 
 ##### Verify participant access
 
-The [`SWUpdateCollaborationParticipantsAction`](https://developer.apple.com/documentation/sharedwithyoucore/swupdatecollaborationparticipantsaction) contains the cryptographic identities for the participants. The system derives the identities from the collaboration identifier that `SWStartCollaborationAction` provides. Your shared content server is responsible for identity storage and verification of recipient devices.
+The [`SWUpdateCollaborationParticipantsAction`](../SharedWithYouCore/swupdatecollaborationparticipantsaction.md) contains the cryptographic identities for the participants. The system derives the identities from the collaboration identifier that `SWStartCollaborationAction` provides. Your shared content server is responsible for identity storage and verification of recipient devices.
 
-To verify a participant, use the [`SWPerson.Identity`](https://developer.apple.com/documentation/sharedwithyoucore/swperson/identity) [`rootHash`](https://developer.apple.com/documentation/sharedwithyoucore/swperson/identity/roothash) property. A root hash is a secure value your app sends to your server to uniquely identify a participant on their devices. To perform a verification, your server needs to compute a root hash.
+To verify a participant, use the [`SWPerson.Identity`](../SharedWithYouCore/swperson/identity.md) [`rootHash`](../SharedWithYouCore/swperson/identity/roothash.md) property. A root hash is a secure value your app sends to your server to uniquely identify a participant on their devices. To perform a verification, your server needs to compute a root hash.
 
 When the system sends a collaboration message for a participant, it actually sends individual messages to each device for that participant. The Messages app identifies each device using a cryptographic public key. Because the goal is to allow access only on this participant’s set of devices, the system derives the root hash from the set of public keys registered to each recipient.
 
@@ -219,7 +219,7 @@ It’s important to note that you can prove the system uses the public key P3 to
 
 ##### Verify a collaboration link
 
-[`SWCollaborationHighlight`](./swcollaborationhighlight.md) represents a collaborative link that your app retrieves from [`SWHighlightCenter`](./swhighlightcenter.md). Use that collaboration highlight to generate the proof of inclusion. To represent a proof of inclusion, use [`SWPerson.IdentityProof`](https://developer.apple.com/documentation/sharedwithyoucore/swperson/identityproof). To perform verification, first generate this object along with a cryptographic signature to send to your server. Retrieve the proof using the [`getSignedIdentityProof(for:using:completionHandler:)`](./swhighlightcenter/getsignedidentityproof%28for,using,completionhandler%29.md) method on `SWHighlightCenter`.
+[`SWCollaborationHighlight`](./swcollaborationhighlight.md) represents a collaborative link that your app retrieves from [`SWHighlightCenter`](./swhighlightcenter.md). Use that collaboration highlight to generate the proof of inclusion. To represent a proof of inclusion, use [`SWPerson.IdentityProof`](../SharedWithYouCore/swperson/identityproof.md). To perform verification, first generate this object along with a cryptographic signature to send to your server. Retrieve the proof using the [`getSignedIdentityProof(for:using:completionHandler:)`](./swhighlightcenter/getsignedidentityproof%28for,using,completionhandler%29.md) method on `SWHighlightCenter`.
 
 Use the signature to ensure that a bad actor can’t send the request to gain access to your collaboration. The data can be a challenge you request from your server, or a nonce that the device generates. The example below uses the challenge approach.
 
@@ -288,9 +288,9 @@ Next, sign some data and retrieve the proof of inclusion. Send the signed data a
 
 ##### Add a participant
 
-The example below shows how to handle the update participants action. First, retrieve the collaboration identifier from the action’s metadata — this is the identifier you supply to the [`fulfill()`](https://developer.apple.com/documentation/sharedwithyoucore/swaction/fulfill()) method while handling `SWStartCollaborationAction`.
+The example below shows how to handle the update participants action. First, retrieve the collaboration identifier from the action’s metadata — this is the identifier you supply to the [`fulfill()`](../SharedWithYouCore/swaction/fulfill%28%29.md) method while handling `SWStartCollaborationAction`.
 
-Next, use the action’s [`addedIdentities`](https://developer.apple.com/documentation/sharedwithyoucore/swupdatecollaborationparticipantsaction/addedidentities) property to retrieve the participant data to store on your content server. Each identity has a [`rootHash`](https://developer.apple.com/documentation/sharedwithyoucore/swperson/identity/roothash) property, which is the data you store on your server to validate participants during the collaboration process.
+Next, use the action’s [`addedIdentities`](../SharedWithYouCore/swupdatecollaborationparticipantsaction/addedidentities.md) property to retrieve the participant data to store on your content server. Each identity has a [`rootHash`](../SharedWithYouCore/swperson/identity/roothash.md) property, which is the data you store on your server to validate participants during the collaboration process.
 
 After you retrieve this data, create another server request to add the participants to the collaboration with the target identifier. Then, send the request to your server, and fulfill or fail the action. This time, the fulfill method doesn’t take any parameters. After you set up the collaboration, your app has everything it needs to grant immediate access to the recipients of the message.
 
@@ -316,7 +316,7 @@ func collaborationCoordinator(_ coordinator: SWCollaborationCoordinator,
 
 ##### Remove a participant
 
-To remove a participant, look up any account associated with a removed identity and revoke their access. If your app doesn’t have any associated accounts for this collaboration, delete the root hash from your database. The example code below uses the [`removedIdentities`](https://developer.apple.com/documentation/sharedwithyoucore/swupdatecollaborationparticipantsaction/removedidentities) property on the action and passes it to a similar removal API request:
+To remove a participant, look up any account associated with a removed identity and revoke their access. If your app doesn’t have any associated accounts for this collaboration, delete the root hash from your database. The example code below uses the [`removedIdentities`](../SharedWithYouCore/swupdatecollaborationparticipantsaction/removedidentities.md) property on the action and passes it to a similar removal API request:
 
 ```swift
 // Remove a participant.

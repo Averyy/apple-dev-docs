@@ -35,6 +35,8 @@ If you don’t use array-based textures for drawing, fetch the index using [`tex
   The index of the view’s textures in the drawable.
 - [var viewport: MTLViewport](./viewport.md)
   The portion of the texture that the view uses to draw its content.
+- [cp_view_texture_map_t](../../../../cp_view_texture_map_t.md)
+  A type that provides details about the textures associated with a view.
 
 
 ---

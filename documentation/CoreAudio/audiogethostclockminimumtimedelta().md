@@ -46,6 +46,10 @@ Gets the smallest number of ticks that two succeeding values will ever differ. b
 - [func AudioGetHostClockFrequency() -> Float64](./audiogethostclockfrequency%28%29.md)
 - [func AudioHardwareCreateAggregateDevice(CFDictionary, UnsafeMutablePointer<AudioObjectID>) -> OSStatus](./audiohardwarecreateaggregatedevice%28_,_%29.md)
 - [func AudioHardwareDestroyAggregateDevice(AudioObjectID) -> OSStatus](./audiohardwaredestroyaggregatedevice%28_%29.md)
+- [AudioDriverPlugInClose](./audiodriverpluginclose.md)
+- [AudioDriverPlugInDeviceGetProperty](./audiodriverplugindevicegetproperty.md)
+- [AudioDriverPlugInDeviceGetPropertyInfo](./audiodriverplugindevicegetpropertyinfo.md)
+- [AudioDriverPlugInDeviceSetProperty](./audiodriverplugindevicesetproperty.md)
 
 
 ---

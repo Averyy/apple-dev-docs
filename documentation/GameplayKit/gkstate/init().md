@@ -34,6 +34,12 @@ Override this method to perform custom initialization in your state classes.
 
 For more information, see [GameplayKit Programming Guide](https://developer.apple.com/library/archive/documentation/General/Conceptual/GameplayKit_Guide/index.html#//apple_ref/doc/uid/TP40015172).
 
+## See Also
+
+### Creating a State
+- [+ state](./state.md)
+  Creates a state object with the specified list of valid next states.
+
 
 ---
 

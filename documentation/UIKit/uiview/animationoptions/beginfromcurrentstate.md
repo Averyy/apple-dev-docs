@@ -60,6 +60,8 @@ If this key is not present, all in-flight animations are allowed to finish befor
   A transition that flips a view around its vertical axis from left to right (the left side of the view moves toward the front and right side toward the back).
 - [static var transitionFlipFromRight: UIView.AnimationOptions](./transitionflipfromright.md)
   A transition that flips a view around its vertical axis from right to left (the right side of the view moves toward the front and left side toward the back).
+- [UIViewAnimationOptionTransitionNone](../../uiviewanimationoptions/uiviewanimationoptiontransitionnone.md)
+  No transition is specified.
 
 
 ---

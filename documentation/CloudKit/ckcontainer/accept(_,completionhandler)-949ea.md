@@ -44,6 +44,8 @@ The closure doesn’t return a value and takes the following parameters:
   Fetches the share metadata for the specified share URL.
 - [static let CKAccountChanged: NSNotification.Name](../../Foundation/nsnotification/name-swift.struct/ckaccountchanged.md)
   A notification that a container posts when the status of an iCloud account changes.
+- [CKAccountChangedNotification](../ckaccountchangednotification.md)
+  A notification that a container posts when the status of an iCloud account changes.
 
 
 ---

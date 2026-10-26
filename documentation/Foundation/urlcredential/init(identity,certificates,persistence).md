@@ -52,6 +52,10 @@ In most cases you should pass `nil` to the `certArray` parameter. You only need 
   Creates a URL credential instance initialized with a given user name and password, using a given persistence setting.
 - [URLCredential.Persistence](./persistence-swift.enum.md)
   Constants that specify how long the credential will be kept.
+- [+ credentialWithUser:password:persistence:](../nsurlcredential/credentialwithuser_password_persistence_.md)
+  Creates a URL credential instance for internet password authentication with a given user name and password, using a given persistence setting.
+- [+ credentialWithIdentity:certificates:persistence:](../nsurlcredential/credentialwithidentity_certificates_persistence_.md)
+  Creates a URL credential instance for resolving a client certificate authentication challenge.
 
 
 ---

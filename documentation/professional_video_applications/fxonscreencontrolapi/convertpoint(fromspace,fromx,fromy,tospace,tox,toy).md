@@ -22,7 +22,7 @@ func convertPoint(fromSpace: FxDrawingCoordinates, fromX: Double, fromY: Double,
 
 ## Mentions
 
-- [Adding onscreen controls to plug-ins](https://developer.apple.com/documentation/professional-video-applications/adding-onscreen-controls-to-plug-ins)
+- [Adding onscreen controls to plug-ins](../../Professional-Video-Applications/adding-onscreen-controls-to-plug-ins.md)
 
 ## Parameters
 

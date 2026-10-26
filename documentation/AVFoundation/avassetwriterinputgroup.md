@@ -35,6 +35,8 @@ Assets may contain multiple tracks of media that are mutually exclusive to each 
 ### Creating an input group
 - [init(inputs: [AVAssetWriterInput], defaultInput: AVAssetWriterInput?)](./avassetwriterinputgroup/init%28inputs,defaultinput%29.md)
   Creates a group for the asset writer inputs.
+- [+ assetWriterInputGroupWithInputs:defaultInput:](./avassetwriterinputgroup/assetwriterinputgroupwithinputs_defaultinput_.md)
+  Returns a new group for the asset writer inputs.
 ### Accessing the inputs
 - [var inputs: [AVAssetWriterInput]](./avassetwriterinputgroup/inputs.md)
   The inputs with tracks that are mutually exclusive to each other for playback or processing.

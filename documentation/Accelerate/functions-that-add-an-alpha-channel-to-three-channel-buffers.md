@@ -14,6 +14,10 @@ Add a constant alpha value or planar alpha buffer to an RGB image.
   Combines an 8-bit-per-channel, 3-channel RGB buffer and either an 8-bit alpha buffer or constant alpha value to produce a BGRA result.
 - [func vImageConvert_RGB888toRGBA8888(UnsafePointer<vImage_Buffer>, UnsafePointer<vImage_Buffer>!, Pixel_8, UnsafePointer<vImage_Buffer>, Bool, vImage_Flags) -> vImage_Error](./vimageconvert_rgb888torgba8888%28_,_,_,_,_,_%29.md)
   Combines an 8-bit-per-channel, 3-channel RGB buffer and either an 8-bit alpha buffer or constant alpha value to produce an RGBA result.
+- [vImageConvert_BGR888toBGRA8888](./vimageconvert_bgr888tobgra8888.md)
+  Combines an 8-bit-per-channel, 3-channel BGR buffer and either an 8-bit alpha buffer or constant alpha value to produce a BGRA result.
+- [vImageConvert_BGR888toRGBA8888](./vimageconvert_bgr888torgba8888.md)
+  Combines an 8-bit-per-channel, 3-channel BGR buffer and either an 8-bit alpha buffer or constant alpha value to produce an RGBA result.
 ### Conversion from unsigned 16-bit-per-channel, 3-channel interleaved buffers
 - [func vImageConvert_RGB16UToARGB8888(UnsafePointer<vImage_Buffer>, UnsafePointer<vImage_Buffer>, UnsafePointer<UInt8>, UInt8, UnsafePointer<UInt8>, vImage_Flags) -> vImage_Error](./vimageconvert_rgb16utoargb8888%28_,_,_,_,_,_%29.md)
   Converts an unsigned 16-bit-per-channel, 3-channel interleaved buffer to an 8-bit-per-channel, 4-channel interleaved buffer using permutation.

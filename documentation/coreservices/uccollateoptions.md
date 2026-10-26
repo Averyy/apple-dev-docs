@@ -36,6 +36,15 @@ For a description of the `UCCollateOptions` values, see [Standard Options Mask](
 - [var kUCCollatePunctuationSignificantMask: Int](./kuccollatepunctuationsignificantmask.md)
 - [var kUCCollateDigitsOverrideMask: Int](./kuccollatedigitsoverridemask.md)
 - [var kUCCollateDigitsAsNumberMask: Int](./kuccollatedigitsasnumbermask.md)
+- [kUCCollateComposeInsensitiveMask](./api-1390427-anonymous/kuccollatecomposeinsensitivemask.md)
+- [kUCCollateWidthInsensitiveMask](./api-1390427-anonymous/kuccollatewidthinsensitivemask.md)
+- [kUCCollateCaseInsensitiveMask](./api-1390427-anonymous/kuccollatecaseinsensitivemask.md)
+  If the corresponding bit is set, then uppercase and titlecase characters are treated as equivalent to the corresponding lowercase characters.
+- [kUCCollateDiacritInsensitiveMask](./api-1390427-anonymous/kuccollatediacritinsensitivemask.md)
+  If the corresponding bit is set, then characters with diacritics are treated as equivalent to the corresponding characters without diacritics.
+- [kUCCollatePunctuationSignificantMask](./api-1390427-anonymous/kuccollatepunctuationsignificantmask.md)
+- [kUCCollateDigitsOverrideMask](./api-1390427-anonymous/kuccollatedigitsoverridemask.md)
+- [kUCCollateDigitsAsNumberMask](./api-1390427-anonymous/kuccollatedigitsasnumbermask.md)
 
 
 ---

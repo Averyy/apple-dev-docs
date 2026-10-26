@@ -15,6 +15,7 @@ Encapsulate data in objects that represent primitive types, collections, and mor
 - [protocol OS_xpc_object](./os_xpc_object.md)
   The interface for an XPC object.
 - [class OS_xpc_listener](./os_xpc_listener-swift.class.md)
+- [OS_xpc_listener](./os_xpc_listener-c.protocol.md)
 ### Identity
 - [func xpc_get_type(xpc_object_t) -> xpc_type_t](./xpc_get_type%28_%29.md)
   Returns the type of an object.
@@ -38,6 +39,10 @@ Encapsulate data in objects that represent primitive types, collections, and mor
 - [var XPC_BOOL_TRUE: xpc_object_t](./xpc_bool_true-swift.var.md)
   A constant that represents a Boolean value of true.
 - [var XPC_BOOL_FALSE: xpc_object_t](./xpc_bool_false-swift.var.md)
+  A constant that represents a Boolean value of false.
+- [XPC_BOOL_TRUE](./xpc_bool_true-c.macro.md)
+  A constant that represents a Boolean value of true.
+- [XPC_BOOL_FALSE](./xpc_bool_false-c.macro.md)
   A constant that represents a Boolean value of false.
 ### Data objects
 - [func xpc_data_create(UnsafeRawPointer?, Int) -> xpc_object_t](./xpc_data_create%28_,_%29.md)
@@ -128,6 +133,8 @@ Encapsulate data in objects that represent primitive types, collections, and mor
   A block to invoke for every value in the array.
 - [var XPC_ARRAY_APPEND: size_t](./xpc_array_append-swift.var.md)
   A constant to pass as the destination index to the class of primitive XPC array setters indicating that the specified primitive needs to append to the array.
+- [XPC_ARRAY_APPEND](./xpc_array_append-c.macro.md)
+  A constant to pass as the destination index to the class of primitive XPC array setters indicating that the specified primitive needs to append to the array.
 ### Dictionary objects
 - [struct XPCDictionary](./xpcdictionary.md)
   A type that contains key-value pairs, notably used as the container of messages between a client and listener.
@@ -204,6 +211,8 @@ Encapsulate data in objects that represent primitive types, collections, and mor
   Returns the length of the underlying string.
 - [func xpc_string_get_string_ptr(xpc_object_t) -> UnsafePointer<CChar>?](./xpc_string_get_string_ptr%28_%29.md)
   Returns a pointer to the internal storage of a string object.
+- [xpc_string_create_with_format](./xpc_string_create_with_format.md)
+  Creates an XPC object that represents a C-string that the specified format string and arguments generate.
 ### File Descriptor objects
 - [func xpc_fd_create(Int32) -> xpc_object_t?](./xpc_fd_create%28_%29.md)
   Creates an XPC object that represents a POSIX file descriptor.
@@ -232,6 +241,10 @@ Encapsulate data in objects that represent primitive types, collections, and mor
 ### Object life cycle
 - [func xpc_retain(xpc_object_t) -> xpc_object_t](./xpc_retain%28_%29.md)
 - [func xpc_release(xpc_object_t)](./xpc_release%28_%29.md)
+- [xpc_retain](./xpc_retain.md)
+  Increments the reference count of an object.
+- [xpc_release](./xpc_release.md)
+  Decrements the reference count of an object.
 ### Types of objects
 - [var XPC_TYPE_ACTIVITY: xpc_type_t](./xpc_type_activity-swift.var.md)
   A type that represents the XPC activity object.
@@ -265,6 +278,38 @@ Encapsulate data in objects that represent primitive types, collections, and mor
   A type that represents an unsigned, 64-bit integer value.
 - [var XPC_TYPE_UUID: xpc_type_t](./xpc_type_uuid-swift.var.md)
   A type that represents a universally unique identifier.
+- [XPC_TYPE_ACTIVITY](./xpc_type_activity-c.macro.md)
+  A type that represents the XPC activity object.
+- [XPC_TYPE_ARRAY](./xpc_type_array-c.macro.md)
+  A type that represents an array of XPC objects.
+- [XPC_TYPE_BOOL](./xpc_type_bool-c.macro.md)
+  A type that represents a Boolean value.
+- [XPC_TYPE_CONNECTION](./xpc_type_connection-c.macro.md)
+  A type that represents a connection to a named service.
+- [XPC_TYPE_DATA](./xpc_type_data-c.macro.md)
+  A type that represents an arbitrary buffer of bytes.
+- [XPC_TYPE_DATE](./xpc_type_date-c.macro.md)
+  A type that represents a date interval.
+- [XPC_TYPE_DICTIONARY](./xpc_type_dictionary-c.macro.md)
+  A type that represents a dictionary of XPC objects keyed off of C-strings.
+- [XPC_TYPE_DOUBLE](./xpc_type_double-c.macro.md)
+  A type that represents an IEEE-compliant, double-precision floating point value.
+- [XPC_TYPE_ENDPOINT](./xpc_type_endpoint-c.macro.md)
+  A type that represents a connection in serialized form.
+- [XPC_TYPE_FD](./xpc_type_fd-c.macro.md)
+  A type that represents a POSIX file descriptor.
+- [XPC_TYPE_INT64](./xpc_type_int64-c.macro.md)
+  A type that represents a signed, 64-bit integer value.
+- [XPC_TYPE_NULL](./xpc_type_null-c.macro.md)
+  A type that represents a null object.
+- [XPC_TYPE_SHMEM](./xpc_type_shmem-c.macro.md)
+  A type that represents a region of shared memory.
+- [XPC_TYPE_STRING](./xpc_type_string-c.macro.md)
+  A type that represents a null-terminated C-string.
+- [XPC_TYPE_UINT64](./xpc_type_uint64-c.macro.md)
+  A type that represents an unsigned, 64-bit integer value.
+- [XPC_TYPE_UUID](./xpc_type_uuid-c.macro.md)
+  A type that represents a universally unique identifier.
 ### Errors
 - [struct XPCRichError](./xpcricherror.md)
   An error that contains a description and indicates if you can retry the operation that caused the error.
@@ -275,6 +320,10 @@ Encapsulate data in objects that represent primitive types, collections, and mor
 - [let XPC_ERROR_KEY_DESCRIPTION: UnsafePointer<CChar>](./xpc_error_key_description-swift.var.md)
   A key for querying an error dictionary to retrieve a string with a human-readable description of the error.
 - [var XPC_ERROR_PEER_CODE_SIGNING_REQUIREMENT: xpc_object_t](./xpc_error_peer_code_signing_requirement-swift.var.md)
+- [XPC_TYPE_ERROR](./xpc_type_error-c.macro.md)
+  A type that represents an error object.
+- [XPC_ERROR_KEY_DESCRIPTION](./xpc_error_key_description-c.macro.md)
+  A key for querying an error dictionary to retrieve a string with a human-readable description of the error.
 
 ## See Also
 
@@ -283,6 +332,9 @@ Encapsulate data in objects that represent primitive types, collections, and mor
   Browse debugging utilities and constants to use with the XPC APIs.
 - [XPC connections](./xpc-connections.md)
   Create and manage connections to services using connection-based APIs.
+### Additional types
+- [launchd](./launchd.md)
+  Browse APIs for interacting with `launchd`.
 
 
 ---

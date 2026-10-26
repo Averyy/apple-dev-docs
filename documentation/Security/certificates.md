@@ -83,6 +83,25 @@ For more details about how certificates work, read [Digital Certificates](https:
   Returns a copy of a certificate’s serial number.
 - [func SecCertificateCopyPublicKey(SecCertificate) -> SecKey?](./seccertificatecopypublickey%28_%29.md)
   Retrieves the public key from a certificate.
+- [OpaqueSecCertificateRef](./opaqueseccertificateref.md)
+- [SecCertificateCreateFromData](./seccertificatecreatefromdata.md)
+  Creates a certificate object based on the specified data, type, and encoding.
+- [SecCertificateCopyPreference](./seccertificatecopypreference.md)
+  Retrieves the preferred certificate for the specified name and key use.
+- [SecCertificateGetAlgorithmID](./seccertificategetalgorithmid.md)
+  Retrieves the algorithm identifier for a certificate.
+- [SecCertificateGetCLHandle](./seccertificategetclhandle.md)
+  Retrieves the certificate library handle from a certificate object.
+- [SecCertificateGetData](./seccertificategetdata.md)
+  Retrieves the data for a certificate.
+- [SecCertificateGetIssuer](./seccertificategetissuer.md)
+  Unsupported.
+- [SecCertificateGetSubject](./seccertificategetsubject.md)
+  Unsupported.
+- [SecCertificateGetType](./seccertificategettype.md)
+  Retrieves the type of a specified certificate.
+- [SecCertificateSetPreference](./seccertificatesetpreference.md)
+  Sets the preferred certificate for a specified name, key use, and date.
 
 
 ---

@@ -1,0 +1,42 @@
+# changedElements
+
+**Framework**: Game Controller  
+**Kind**: method  
+**Role**: Instance Method
+
+Returns the elements that changed since the previous input state.
+
+**Availability**:
+- iOS 16.0+
+- iPadOS 16.0+
+- Mac Catalyst 16.0+
+- macOS 13.0+
+- tvOS 16.0+
+- visionOS 1.0+
+
+## Declaration
+
+```objc
+- (NSEnumerator<id<GCPhysicalInputElement>> *) changedElements;
+```
+
+#### Return Value
+
+An enumerator that contains the changed elements in no particular order.
+
+#### Discussion
+
+Returns `nil` if there’s no previous input state, either because this is the first input state or Game Controller discards the prior input state because the queue is full.
+
+## See Also
+
+### Getting changes
+- [func change(for: any GCPhysicalInputElement) -> GCDevicePhysicalInputElementChange](./change%28for%29.md)
+  Returns whether the input value of an element changes.
+- [enum GCDevicePhysicalInputElementChange](../gcdevicephysicalinputelementchange.md)
+  Possible values that describe whether the input value of an element changes.
+
+
+---
+
+*[View on Apple Developer](https://developer.apple.com/documentation/gamecontroller/gcdevicephysicalinputstatediff/changedelements)*

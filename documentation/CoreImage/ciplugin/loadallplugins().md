@@ -36,6 +36,8 @@ Call this method once. If you call this method more than once, Core Image loads 
 ### Deprecated
 - [class func load(URL!, allowExecutableCode: Bool)](./load%28_,allowexecutablecode%29.md)
   Loads filters from an image unit that have the appropriate executable status.
+- [+ loadPlugIn:allowNonExecutable:](./loadplugin_allownonexecutable_.md)
+  Loads filters from an image unit that have the appropriate executable status.
 
 
 ---

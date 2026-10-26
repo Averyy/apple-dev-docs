@@ -64,6 +64,16 @@ For more information, see [Securing File Operations](https://developer.apple.com
   Initializes a newly allocated data object by adding the given number of bytes from the given buffer.
 - [init(data: Data)](./nsdata/init%28data%29.md)
   Initializes a data object with the contents of another data object.
+- [+ data](./nsdata/data.md)
+  Creates an empty data object.
+- [+ dataWithBytes:length:](./nsdata/datawithbytes_length_.md)
+  Creates a data object containing a given number of bytes copied from a given buffer.
+- [+ dataWithBytesNoCopy:length:](./nsdata/datawithbytesnocopy_length_.md)
+  Creates a data object that holds a given number of bytes from a given buffer.
+- [+ dataWithBytesNoCopy:length:freeWhenDone:](./nsdata/datawithbytesnocopy_length_freewhendone_.md)
+  Creates a data object that holds a given number of bytes from a given buffer.
+- [+ dataWithData:](./nsdata/datawithdata_.md)
+  Creates a data object containing the contents of another data object.
 ### Reading Data from a File
 - [init?(contentsOfFile: String)](./nsdata/init%28contentsoffile%29.md)
   Initializes a data object with the content of the file at a given path.
@@ -75,6 +85,10 @@ For more information, see [Securing File Operations](https://developer.apple.com
   Initializes a data object with the contents of the mapped file specified by a given path.
 - [class func dataWithContentsOfMappedFile(String) -> Any?](./nsdata/datawithcontentsofmappedfile%28_%29.md)
   Creates a data object from the mapped file at a given path.
+- [+ dataWithContentsOfFile:](./nsdata/datawithcontentsoffile_.md)
+  Creates a data object by reading every byte from the file at a given path.
+- [+ dataWithContentsOfFile:options:error:](./nsdata/datawithcontentsoffile_options_error_.md)
+  Creates a data object by reading every byte from the file at a given path.
 ### Writing Data to a File
 - [func write(toFile: String, atomically: Bool) -> Bool](./nsdata/write%28tofile,atomically%29.md)
   Writes the data object’s bytes to the file specified by a given path.
@@ -156,6 +170,11 @@ For more information, see [Securing File Operations](https://developer.apple.com
   Creates a data object from the data at the provided file URL using specific reading options.
 ### Default Implementations
 - [NSData Implementations](./nsdata/nsdata-implementations.md)
+### Type Methods
+- [+ dataWithContentsOfURL:](./nsdata/datawithcontentsofurl_.md)
+  Creates a data object from the data at the specified file URL.
+- [+ dataWithContentsOfURL:options:error:](./nsdata/datawithcontentsofurl_options_error_.md)
+  Creates a data object from the data at the provided file URL using specific reading options.
 
 ## Relationships
 
@@ -183,6 +202,12 @@ For more information, see [Securing File Operations](https://developer.apple.com
 - [NSSecureCoding](./nssecurecoding.md)
 - [RandomAccessCollection](../Swift/randomaccesscollection.md)
 - [Sequence](../Swift/sequence.md)
+
+## See Also
+
+### Binary Data
+- [NSMutableData](./nsmutabledata.md)
+  An object representing a dynamic byte buffer in memory.
 
 
 ---

@@ -34,6 +34,8 @@ enum AVAudioSpatializationFormats : NSUInteger;
   A value that indicates the player item only supports multichannel layouts for audio spatialization.
 - [static var monoStereoAndMultichannel: AVAudioSpatializationFormats](./avaudiospatializationformats/monostereoandmultichannel.md)
   A value that indicates the player item supports mono, stereo, and multichannel layouts for audio spatialization.
+- [AVAudioSpatializationFormatNone](./avaudiospatializationformats/avaudiospatializationformatnone.md)
+  A value that indicates the player item doesn’t support audio spatialization.
 ### Initializers
 - [init(rawValue: UInt)](./avaudiospatializationformats/init%28rawvalue%29.md)
   Initializes a format with a string value.

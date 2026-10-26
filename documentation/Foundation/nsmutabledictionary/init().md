@@ -40,6 +40,8 @@ This method is a designated initializer of `NSMutableDictionary`.
   Initializes a newly allocated mutable dictionary, allocating enough memory to hold `numItems` entries.
 - [init(sharedKeySet: Any)](./init%28sharedkeyset%29.md)
   Creates a mutable dictionary which is optimized for dealing with a known set of keys.
+- [+ dictionaryWithCapacity:](./dictionarywithcapacity_.md)
+  Creates and returns a mutable dictionary, initially giving it enough allocated memory to hold a given number of entries.
 
 
 ---

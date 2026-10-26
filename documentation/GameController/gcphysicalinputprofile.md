@@ -76,6 +76,8 @@ This class provides properties and methods for accessing common elements of cont
   Returns the physical input elements to which the user remaps the given input element.
 - [static let GCControllerUserCustomizationsDidChange: NSNotification.Name](../Foundation/nsnotification/name-swift.struct/gccontrollerusercustomizationsdidchange.md)
   A notification that posts when the user customizes the button mappings or other settings of a controller.
+- [GCControllerUserCustomizationsDidChangeNotification](./gccontrollerusercustomizationsdidchangenotification.md)
+  A notification that posts when the user customizes the button mappings or other settings of a controller.
 
 ## Relationships
 

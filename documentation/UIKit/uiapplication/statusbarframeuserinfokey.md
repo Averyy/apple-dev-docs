@@ -57,6 +57,8 @@ The key’s value is an [`NSValue`](../../Foundation/nsvalue.md) object that enc
   The current style of the status bar.
 - [var windows: [UIWindow]](./windows.md)
   The app’s visible and hidden windows.
+- [proximitySensingEnabled](./proximitysensingenabled.md)
+  A Boolean value that determines whether proximity sensing is enabled.
 
 
 ---

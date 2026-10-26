@@ -26,6 +26,8 @@ NSTableViewSolidHorizontalGridLineMask
   Specifies that vertical grid lines should be displayed.
 - [static var dashedHorizontalGridLineMask: NSTableView.GridLineStyle](./dashedhorizontalgridlinemask.md)
   Specifies that the horizontal grid lines should be drawn dashed.
+- [NSTableViewGridNone](../../nstableviewgridlinestyle/nstableviewgridnone.md)
+  Specifies that no grid lines should be displayed.
 
 
 ---

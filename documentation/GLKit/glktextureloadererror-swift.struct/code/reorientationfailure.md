@@ -54,6 +54,8 @@ GLKTextureLoaderErrorReorientationFailure
   The file was in an unrecognized format.
 - [GLKTextureLoaderError.Code.unknownPathType](./unknownpathtype.md)
   The path type was unrecognized.
+- [GLKTextureLoaderErrorUnsupportedBitDepth](./unsupportedbitdepth.md)
+  The data in the source image has an unsupported bit depth.
 
 
 ---

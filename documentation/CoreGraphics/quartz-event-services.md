@@ -54,6 +54,18 @@ Introduced in OS X version 10.4, event taps provide functionality similar to the
   Returns the floating-point value of a field in a Quartz event.
 - [func setDoubleValueField(CGEventField, value: Double)](./cgevent/setdoublevaluefield%28_,value%29.md)
   Sets the floating-point value of a field in a Quartz event.
+- [CGEventCreateData](./cgeventcreatedata.md)
+  Returns a flattened data representation of a Quartz event.
+- [CGEventCreateScrollWheelEvent](./cgeventcreatescrollwheelevent.md)
+  Returns a new Quartz scrolling event.
+- [CGEventSetType](./cgeventsettype.md)
+  Sets the event type of a Quartz event (left mouse down, for example).
+- [CGEventSetTimestamp](./cgeventsettimestamp.md)
+  Sets the timestamp of a Quartz event.
+- [CGEventSetLocation](./cgeventsetlocation.md)
+  Sets the location of a Quartz mouse event.
+- [CGEventSetFlags](./cgeventsetflags.md)
+  Sets the event flags of a Quartz event.
 ### Working With Event Taps
 - [class func tapCreate(tap: CGEventTapLocation, place: CGEventTapPlacement, options: CGEventTapOptions, eventsOfInterest: CGEventMask, callback: CGEventTapCallBack, userInfo: UnsafeMutableRawPointer?) -> CFMachPort?](./cgevent/tapcreate%28tap,place,options,eventsofinterest,callback,userinfo%29.md)
   Creates an event tap.
@@ -71,6 +83,8 @@ Introduced in OS X version 10.4, event taps provide functionality similar to the
   Posts a Quartz event into the event stream for a specific application.
 - [func CGGetEventTapList(UInt32, UnsafeMutablePointer<CGEventTapInformation>?, UnsafeMutablePointer<UInt32>?) -> CGError](./cggeteventtaplist%28_,_,_%29.md)
   Gets a list of currently installed event taps.
+- [CGEventMaskBit](./cgeventmaskbit.md)
+  Generates an event mask for a single type of event.
 ### Working With Event Sources
 - [class var typeID: CFTypeID](./cgeventsource/typeid.md)
   Returns the type identifier for the opaque type `CGEventSourceRef`.
@@ -100,6 +114,14 @@ Introduced in OS X version 10.4, event taps provide functionality similar to the
   Returns the interval that local hardware events may be suppressed following the posting of a Quartz event.
 - [var pixelsPerLine: Double](./cgeventsource/pixelsperline.md)
   Gets the scale of pixels per line in a scrolling event source.
+- [CGEventSourceSetKeyboardType](./cgeventsourcesetkeyboardtype.md)
+  Sets the keyboard type to be used with a Quartz event source.
+- [CGEventSourceSetUserData](./cgeventsourcesetuserdata.md)
+  Sets the 64-bit user-specified data for a Quartz event source.
+- [CGEventSourceSetLocalEventsSuppressionInterval](./cgeventsourcesetlocaleventssuppressioninterval.md)
+  Sets the interval that local hardware events may be suppressed following the posting of a Quartz event.
+- [CGEventSourceSetPixelsPerLine](./cgeventsourcesetpixelsperline.md)
+  Sets the scale of pixels per line in a scrolling event source.
 ### Callbacks
 - [typealias CGEventTapCallBack](./cgeventtapcallback.md)
   A client-supplied callback function that’s invoked whenever an associated event tap receives a Quartz event.
@@ -166,6 +188,11 @@ Introduced in OS X version 10.4, event taps provide functionality similar to the
   Filters local hardware events from the keyboard and mouse during the short interval after a synthetic event is posted.
 - [func CGSetLocalEventsSuppressionInterval(CFTimeInterval) -> CGError](./cgsetlocaleventssuppressioninterval%28_%29.md)
   Sets the time interval in seconds that local hardware events are suppressed after posting a synthetic event.
+- [CGPostMouseEvent](./cgpostmouseevent.md)
+  Synthesizes a low-level mouse-button event on the local machine.
+- [CGPostScrollWheelEvent](./cgpostscrollwheelevent.md)
+  Synthesizes a low-level scrolling event on the local machine.
+- [CGSetLocalEventsFilterDuringSupressionState](./cgsetlocaleventsfilterduringsupressionstate.md)
 
 ## See Also
 

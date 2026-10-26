@@ -61,6 +61,9 @@ The default implementation of this method invokes `[self saveToURL:absoluteURL o
   Returns the attributes to write to the file or file package at the specified URL, and targeting the specified type of save operation.
 - [NSDocument.SaveOperationType](./saveoperationtype.md)
   Constants for specifying the type of document-save operation to perform.
+### Related Documentation
+- [- saveToURL:ofType:forSaveOperation:error:](./savetourl_oftype_forsaveoperation_error_.md)
+  Saves the contents of the document to a file or file package located by a URL, formatted to a specified type, for a particular kind of save operation.
 
 
 ---

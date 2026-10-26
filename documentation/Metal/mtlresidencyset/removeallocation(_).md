@@ -40,6 +40,8 @@ Finalize the removal of these resource allocations, and all others changes you s
   Stages all the resources in the residency set to leave its list of allocations.
 - [func removeAllocations([any MTLAllocation])](./removeallocations%28_%29.md)
   Stages multiple resources to leave the residency set’s list of allocations.
+- [- removeAllocations:count:](./removeallocations_count_.md)
+  Stages multiple resources to leave the residency set’s list of allocations.
 
 
 ---

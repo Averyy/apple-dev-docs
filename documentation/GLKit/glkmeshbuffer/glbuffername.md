@@ -29,6 +29,7 @@ var glBufferName: GLuint { get }
 - [var length: Int](./length.md)
 - [var offset: Int](./offset.md)
 - [var type: MDLMeshBufferType](./type.md)
+- [zone](./zone.md)
 
 
 ---

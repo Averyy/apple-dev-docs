@@ -43,6 +43,8 @@ This method is a designated initializer for `NSSet`.
 ### Related Documentation
 - [convenience init(objects: UnsafePointer<AnyObject>, count: Int)](./init%28objects,count%29-65ni4.md)
   Creates and returns a set containing a specified number of objects from a given C array of objects.
+- [- initWithObjects:](./initwithobjects_.md)
+  Initializes a newly allocated set with members taken from the specified list of objects.
 ### Initializing a Set
 - [convenience init(array: [Any])](./init%28array%29.md)
   Initializes a newly allocated set with the objects that are contained in a given array.

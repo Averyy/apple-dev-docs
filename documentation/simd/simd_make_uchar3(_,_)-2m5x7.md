@@ -21,6 +21,8 @@ static simd_uchar3 simd_make_uchar3(unsigned char x, simd_uchar2 yz);
 ### Functions to Create Three-Element Vectors From Combinations of Vectors and Scalar Values
 - [func simd_make_uchar3(simd_uchar2, UInt8) -> simd_uchar3](./simd_make_uchar3%28_,_%29-5tgih.md)
   Returns a new vector from a vector and a scalar value.
+- [vector3](./vector3-9kx6s.md)
+  Returns a new vector from a vector and a scalar value.
 
 
 ---

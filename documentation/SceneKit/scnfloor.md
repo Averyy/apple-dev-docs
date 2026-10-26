@@ -51,6 +51,9 @@ If a floor’s [`reflectivity`](./scnfloor/reflectivity.md) property is greater 
   The extent of the floor along its x-axis. Animatable.
 - [var length: CGFloat](./scnfloor/length.md)
   The extent of the floor along its z-axis. Animatable.
+### Creating a Floor
+- [+ floor](./scnfloor/floor.md)
+  Creates a floor geometry.
 
 ## Relationships
 

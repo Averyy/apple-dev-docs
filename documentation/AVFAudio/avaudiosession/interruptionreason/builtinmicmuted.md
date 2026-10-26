@@ -39,6 +39,7 @@ This interruption reason typically occurs when a user closes an iPad’s Smart F
   The system backgrounds the scene and interrupts the audio session.
 - [AVAudioSession.InterruptionReason.appWasSuspended](./appwassuspended.md)
   The system suspends the app and interrupts the audio session.
+- [AVAudioSessionInterruptionReasonDeviceUnauthenticated](../../avaudiosessioninterruptionreason/avaudiosessioninterruptionreasondeviceunauthenticated.md)
 
 
 ---

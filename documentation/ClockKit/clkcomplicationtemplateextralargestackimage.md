@@ -45,6 +45,8 @@ Instead of providing multiple images with different resolutions, you can provide
 ### Creating the Template
 - [init(line1ImageProvider: CLKImageProvider, line2TextProvider: CLKTextProvider)](./clkcomplicationtemplateextralargestackimage/init%28line1imageprovider,line2textprovider%29.md)
   Creates a new template from the provided image and text.
+- [+ templateWithLine1ImageProvider:line2TextProvider:](./clkcomplicationtemplateextralargestackimage/templatewithline1imageprovider_line2textprovider_.md)
+  Returns a new template from the provided image and text.
 ### Setting the Complication Data
 - [var highlightLine2: Bool](./clkcomplicationtemplateextralargestackimage/highlightline2.md)
   A Boolean value indicating which line should be drawn with a highlight.

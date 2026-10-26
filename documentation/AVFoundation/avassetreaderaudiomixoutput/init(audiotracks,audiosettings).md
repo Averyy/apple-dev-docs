@@ -31,6 +31,12 @@ init(audioTracks: [AVAssetTrack], audioSettings: [String : Any]?)
 
   For non-`nil` audio settings, the dictionary must contain values for the [Linear PCM format settings](../linear-pcm-format-settings.md) keys. The output doesn’t support the [`AVSampleRateConverterAudioQualityKey`](../../AVFAudio/avsamplerateconverteraudioqualitykey.md) constant.
 
+## See Also
+
+### Creating an audio mix output
+- [+ assetReaderAudioMixOutputWithAudioTracks:audioSettings:](./assetreaderaudiomixoutputwithaudiotracks_audiosettings_.md)
+  Creates an object that reads mixed audio from the specified audio tracks.
+
 
 ---
 

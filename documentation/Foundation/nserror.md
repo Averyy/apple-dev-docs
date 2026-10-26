@@ -42,6 +42,8 @@ Applications may choose to create subclasses of `NSError`, for example, to provi
 ### Creating Error Objects
 - [init(domain: String, code: Int, userInfo: [String : Any]?)](./nserror/init%28domain,code,userinfo%29.md)
   Returns an `NSError` object initialized for a given domain and code with a given `userInfo` dictionary.
+- [+ errorWithDomain:code:userInfo:](./nserror/errorwithdomain_code_userinfo_.md)
+  Creates and initializes an `NSError` object for a given domain and code with a given `userInfo` dictionary.
 ### Getting Error Properties
 - [var code: Int](./nserror/code.md)
   The error code.

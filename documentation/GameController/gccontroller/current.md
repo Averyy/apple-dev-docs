@@ -35,6 +35,10 @@ Use this property for a single-player game when you don’t need to distinguish 
   A notification that posts when a controller becomes the current controller.
 - [static let GCControllerDidStopBeingCurrent: NSNotification.Name](../../Foundation/nsnotification/name-swift.struct/gccontrollerdidstopbeingcurrent.md)
   A notification that posts when a controller stops being the current controller.
+- [GCControllerDidBecomeCurrentNotification](../gccontrollerdidbecomecurrentnotification.md)
+  A notification that posts when a controller becomes the current controller.
+- [GCControllerDidStopBeingCurrentNotification](../gccontrollerdidstopbeingcurrentnotification.md)
+  A notification that posts when a controller stops being the current controller.
 
 
 ---

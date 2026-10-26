@@ -30,6 +30,8 @@ class ASPasswordCredential
 ### Creating a credential
 - [init(user: String, password: String)](./aspasswordcredential/init%28user,password%29.md)
   Initializes a password credential.
+- [+ credentialWithUser:password:](./aspasswordcredential/credentialwithuser_password_.md)
+  Creates a password credential instance with a given user name and password.
 ### Accessing the username and password
 - [var user: String](./aspasswordcredential/user.md)
   The user for a password credential object.

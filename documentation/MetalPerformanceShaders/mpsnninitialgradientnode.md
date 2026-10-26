@@ -26,6 +26,8 @@ class MPSNNInitialGradientNode
 
 ### Initializers
 - [init(source: MPSNNImageNode)](./mpsnninitialgradientnode/init%28source%29.md)
+### Type Methods
+- [+ nodeWithSource:](./mpsnninitialgradientnode/nodewithsource_.md)
 
 ## Relationships
 

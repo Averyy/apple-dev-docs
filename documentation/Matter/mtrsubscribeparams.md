@@ -27,6 +27,7 @@ class MTRSubscribeParams
 
 ### Initializers
 - [init(minInterval: NSNumber, maxInterval: NSNumber)](./mtrsubscribeparams/init%28mininterval,maxinterval%29.md)
+- [- init](./mtrsubscribeparams/init.md)
 ### Instance Properties
 - [var autoResubscribe: NSNumber?](./mtrsubscribeparams/autoresubscribe.md)
 - [var keepPreviousSubscriptions: NSNumber?](./mtrsubscribeparams/keepprevioussubscriptions.md)

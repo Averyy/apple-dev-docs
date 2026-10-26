@@ -93,6 +93,12 @@ tcoordSource = [SCNGeometrySource geometrySourceWithData:data
   Creates a geometry source from an array of normal vectors.
 - [convenience init(textureCoordinates: [CGPoint])](./scngeometrysource/init%28texturecoordinates%29.md)
   Creates a geometry source from an array of texture coordinate points.
+- [+ geometrySourceWithVertices:count:](./scngeometrysource/geometrysourcewithvertices_count_.md)
+  Creates a geometry source from an array of vertex positions.
+- [+ geometrySourceWithNormals:count:](./scngeometrysource/geometrysourcewithnormals_count_.md)
+  Creates a geometry source from an array of normal vectors.
+- [+ geometrySourceWithTextureCoordinates:count:](./scngeometrysource/geometrysourcewithtexturecoordinates_count_.md)
+  Creates a geometry source from an array of texture coordinate points.
 ### Inspecting a Geometry Source
 - [var data: Data](./scngeometrysource/data.md)
   The data for the geometry source.

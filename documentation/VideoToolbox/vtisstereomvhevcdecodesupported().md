@@ -37,6 +37,10 @@ A return value of [`true`](../Swift/true.md) doesn’t guarantee that decoding r
 ### Decoding Multi-Image Frames
 - [typealias VTDecompressionMultiImageCapableOutputHandler](./vtdecompressionmultiimagecapableoutputhandler.md)
   A type alias for callback that the system invokes when it finishes decompressing a frame.
+- [VTDecompressionSessionSetMultiImageCallback](./vtdecompressionsessionsetmultiimagecallback.md)
+  Provides a callback capable of receiving multiple images for individual frame decoding requests.
+- [VTDecompressionSessionDecodeFrameWithMultiImageCapableOutputHandler](./vtdecompressionsessiondecodeframewithmultiimagecapableoutputhandler.md)
+  Decompresses a multi-image frame and calls the specified output handler upon completion.
 
 
 ---

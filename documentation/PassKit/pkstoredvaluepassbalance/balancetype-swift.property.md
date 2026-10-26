@@ -35,6 +35,8 @@ var balanceType: PKStoredValuePassBalance.BalanceType { get }
   The ISO 4217 currency code of the balance.
 - [PKStoredValuePassBalance.BalanceType](./balancetype-swift.struct.md)
   The type of value that the balance represents, such as money or points.
+- [amount](./amount-2vfd3.md)
+  The current balance in money or points.
 
 
 ---

@@ -36,6 +36,8 @@ The data source must adopt the [`UICollectionViewDataSource`](../uicollectionvie
   The methods adopted by the object you use to manage data and provide cells for a collection view.
 - [Building high-performance lists and collection views](../building-high-performance-lists-and-collection-views.md)
   Improve the performance of lists and collections in your app with prefetching and image preparation.
+- [UICollectionViewDiffableDataSource](../uicollectionviewdiffabledatasourcereference.md)
+  The object you use to manage data and provide cells for a collection view.
 
 
 ---

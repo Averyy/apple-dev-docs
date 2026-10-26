@@ -24,6 +24,13 @@ union { ... } result;
 
 This type is a `union` of an [`es_auth_result_t`](../es_auth_result_t.md) named `auth` and a [`uint32_t`](../../kernel/uint32_t.md) named `flags`. Use the [`result_type`](./result_type.md) field to determine which type this result represents.
 
+## Topics
+
+### Instance Properties
+- [auth](./result/auth.md)
+- [flags](./result/flags.md)
+- [reserved](./result/reserved.md)
+
 ## See Also
 
 ### Inspecting Result Properties

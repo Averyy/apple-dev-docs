@@ -52,6 +52,15 @@ The color object. The color information represented by this object is in an RGB 
   Creates a color object using the information from the named asset.
 - [init?(named: String, inBundle: Bundle?, compatibleWithTraitCollection: UITraitCollection?)](./init%28named,inbundle,compatiblewithtraitcollection%29.md)
   Creates a color object using the named asset that’s compatible with the specified trait collection.
+- [+ colorWithWhite:alpha:](./colorwithwhite_alpha_.md)
+  Creates a color object using the specified opacity and grayscale values.
+- [+ colorWithHue:saturation:brightness:alpha:](./colorwithhue_saturation_brightness_alpha_.md)
+  Creates a color object using the specified opacity and HSB color space component values.
+- [+ colorWithDisplayP3Red:green:blue:alpha:](./colorwithdisplayp3red_green_blue_alpha_.md)
+  Creates a color object using the specified opacity and RGB component values in the Display P3 color space.
+### Related Documentation
+- [+ colorWithRed:green:blue:alpha:](./colorwithred_green_blue_alpha_.md)
+  Creates a color object using the specified opacity and RGB component values.
 
 
 ---

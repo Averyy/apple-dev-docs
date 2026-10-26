@@ -34,6 +34,8 @@ A lasso item represents a [`PKLassoTool`](./pklassotool-swift.struct.md) — a t
 ### Accessing the lasso tool
 - [var lassoTool: PKLassoTool](./pktoolpickerlassoitem/lassotool-2xuhy.md)
   A lasso tool for selecting parts of a drawing.
+- [lassoTool](./pktoolpickerlassoitem/lassotool-1urgb.md)
+  A lasso tool for selecting parts of a drawing.
 
 ## Relationships
 

@@ -33,6 +33,8 @@ The sample’s start time must be equal to or later than the target’s start ti
 ### Constants
 - [static var strictEndDate: HKQueryOptions](./strictenddate.md)
   The sample’s end time must fall within the target time period.
+- [HKQueryOptionNone](./hkqueryoptionnone.md)
+  The sample’s time period must overlap part of the target time period.
 
 
 ---

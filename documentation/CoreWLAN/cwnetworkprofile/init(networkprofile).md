@@ -32,6 +32,10 @@ A CWNetworkProfile object.
 ### Getting a network profile
 - [init()](./init%28%29.md)
   Creates and returns a CWNetworkProfile object.
+- [+ networkProfile](./networkprofile.md)
+  Convenience method for getting a CWNetworkProfile object.
+- [+ networkProfileWithNetworkProfile:](./networkprofilewithnetworkprofile_.md)
+  Convenience method for getting a CWNetworkProfile object initialized with the given CWNetworkProfile object.
 
 
 ---

@@ -47,6 +47,9 @@ You should only use this object if your application needs to know about in-range
   Tells inquiry object to begin the inquiry and name updating process, if specified.
 - [func stop() -> IOReturn](./iobluetoothdeviceinquiry/stop%28%29.md)
   Halts the inquiry object. Could either stop the search for new devices, or the updating of found device names.
+### Type Methods
+- [+ inquiryWithDelegate:](./iobluetoothdeviceinquiry/inquirywithdelegate_.md)
+  Class method to create an inquiry object.
 
 ## Relationships
 

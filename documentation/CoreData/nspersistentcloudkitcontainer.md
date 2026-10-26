@@ -51,6 +51,18 @@ For more information about setting up multiple stores, see [Setting Up Core Data
 ### Sharing Objects
 - [Accepting Share Invitations in a SwiftUI App](./accepting-share-invitations-in-a-swiftui-app.md)
   Adapt your app to use UIKit’s application and scene delegates so it can process CloudKit share invitations.
+- [- acceptShareInvitationsFromMetadata:intoPersistentStore:completion:](./nspersistentcloudkitcontainer/acceptshareinvitationsfrommetadata_intopersistentstore_completion_.md)
+  Accepts one or more invitations to participate in sharing using the specified metadata.
+- [- fetchParticipantsMatchingLookupInfos:intoPersistentStore:completion:](./nspersistentcloudkitcontainer/fetchparticipantsmatchinglookupinfos_intopersistentstore_completion_.md)
+  Fetches all participants that match the specified critieria.
+- [- fetchSharesInPersistentStore:error:](./nspersistentcloudkitcontainer/fetchsharesinpersistentstore_error_.md)
+  Returns an array that contains all share records in the specified persistent store.
+- [- fetchSharesMatchingObjectIDs:error:](./nspersistentcloudkitcontainer/fetchsharesmatchingobjectids_error_.md)
+  Returns a dictionary that contains the share records that CloudKit associates with specified managed object IDs.
+- [- persistUpdatedShare:inPersistentStore:completion:](./nspersistentcloudkitcontainer/persistupdatedshare_inpersistentstore_completion_.md)
+  Saves the share record and schedules it for export to iCloud.
+- [- shareManagedObjects:toShare:completion:](./nspersistentcloudkitcontainer/sharemanagedobjects_toshare_completion_.md)
+  Associates the specified managed objects with a new or existing share record.
 ### Promoting Your Schema
 - [func initializeCloudKitSchema(options: NSPersistentCloudKitContainerSchemaInitializationOptions) throws](./nspersistentcloudkitcontainer/initializecloudkitschema%28options%29.md)
   Creates the CloudKit schema for all stores in the container that manage a CloudKit database.
@@ -72,6 +84,18 @@ For more information about setting up multiple stores, see [Setting Up Core Data
 ### Structures
 - [NSPersistentCloudKitContainer.EventChangedMessage](./nspersistentcloudkitcontainer/eventchangedmessage.md)
   Posted when a CloudKit event occurs on the CloudKit private serial queue.
+### Accessing Records
+- [- recordForManagedObjectID:](./nspersistentcloudkitcontainer/recordformanagedobjectid_.md)
+  Returns the CloudKit record for the specified managed object ID.
+- [- recordsForManagedObjectIDs:](./nspersistentcloudkitcontainer/recordsformanagedobjectids_.md)
+  Returns a dictionary that contains the CloudKit records for the specified managed object IDs.
+- [- recordIDForManagedObjectID:](./nspersistentcloudkitcontainer/recordidformanagedobjectid_.md)
+  Returns the CloudKit record ID for the specified managed object ID.
+- [- recordIDsForManagedObjectIDs:](./nspersistentcloudkitcontainer/recordidsformanagedobjectids_.md)
+  Returns a dictionary that contains the CloudKit record IDs for the specified managed object IDs.
+### Purging Record Zones
+- [- purgeObjectsAndRecordsInZoneWithID:inPersistentStore:completion:](./nspersistentcloudkitcontainer/purgeobjectsandrecordsinzonewithid_inpersistentstore_completion_.md)
+  Deletes all CloudKit records in the specified record zone, along with their corresponding managed objects.
 
 ## Relationships
 

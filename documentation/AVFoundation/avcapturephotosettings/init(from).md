@@ -48,6 +48,8 @@ To reuse a specific combination of settings, use this initializer to create a ne
   Creates a photo settings object for capture in both RAW format and a processed format.
 - [convenience init(rawPixelFormatType: OSType, rawFileType: AVFileType?, processedFormat: [String : Any]?, processedFileType: AVFileType?)](./init%28rawpixelformattype,rawfiletype,processedformat,processedfiletype%29.md)
   Creates a photo settings object for capture in both RAW format and a processed format with the specified output file types.
+- [+ photoSettings](./photosettings.md)
+  Creates a photo settings object with default settings.
 
 
 ---

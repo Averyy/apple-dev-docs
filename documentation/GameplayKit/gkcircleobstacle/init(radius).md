@@ -38,6 +38,12 @@ For more information, see [GameplayKit Programming Guide](https://developer.appl
 
 - `radius`: The radius for the new obstacle.
 
+## See Also
+
+### Creating an Obstacle
+- [+ obstacleWithRadius:](./obstaclewithradius_.md)
+  Creates a circular obstacle with the specified radius.
+
 
 ---
 

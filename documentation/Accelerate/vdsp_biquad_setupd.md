@@ -30,6 +30,10 @@ typedef struct vDSP_biquad_SetupStructD * vDSP_biquad_SetupD;
 ### Creating a single-channel biquadratic filter setup
 - [typealias vDSP_biquad_Setup](./vdsp_biquad_setup.md)
   A data structure that contains precalculated data for use by the single-precision cascaded biquadratic IIR filter function.
+- [vDSP_biquad_CreateSetup](./vdsp_biquad_createsetup.md)
+  Builds a data structure that contains precalculated data for use by a single-precision cascaded biquadratic filter function.
+- [vDSP_biquad_CreateSetupD](./vdsp_biquad_createsetupd.md)
+  Builds a data structure that contains precalculated data for use by a double-precision cascaded biquadratic filter function.
 
 
 ---

@@ -117,6 +117,8 @@ For additional information on background task management, see [Background task m
   A set of methods that manage your app’s life cycle and its interaction with common system services.
 - [func NSApplicationMain(Int32, UnsafeMutablePointer<UnsafeMutablePointer<CChar>?>) -> Int32](./nsapplicationmain%28_,_%29.md)
   Called by the main function to create and run the application.
+- [NSApplicationMain](./nsapplicationmain.md)
+  Called by the main function to create and run the application.
 
 
 ---

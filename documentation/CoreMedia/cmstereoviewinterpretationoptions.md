@@ -35,6 +35,9 @@ enum CMStereoViewInterpretationOptions : uint64_t;
 ### Initializers
 - [init(rawValue: UInt64)](./cmstereoviewinterpretationoptions/init%28rawvalue%29.md)
   Create a new option set with a given value.
+### Enumeration Cases
+- [kCMStereoViewInterpretation_Default](./cmstereoviewinterpretationoptions/kcmstereoviewinterpretation_default.md)
+  The default options for stereo video views.
 
 ## Relationships
 

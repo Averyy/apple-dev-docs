@@ -24,6 +24,7 @@ func respond(toCommand command: UnsafePointer<IOUSBHostCIMessage>, status: IOUSB
 - [func enqueueTransferCompletion(for: UnsafePointer<IOUSBHostCIMessage>, status: IOUSBHostCIMessageStatus, transferLength: Int) throws](./enqueuetransfercompletion%28for,status,transferlength%29.md)
 - [func inspectCommand(UnsafePointer<IOUSBHostCIMessage>) throws](./inspectcommand%28_%29.md)
 - [func processDoorbell(IOUSBHostCIDoorbell) throws](./processdoorbell%28_%29.md)
+- [- initWithInterface:command:error:](./initwithinterface_command_error_.md)
 
 
 ---

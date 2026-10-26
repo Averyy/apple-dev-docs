@@ -45,6 +45,12 @@ Use this property to adjust the fan speed to the next or previous setting. The v
   An integer value indicating the desired fan speed position.
 - [var fanSpeedPercentage: Double?](./fanspeedpercentage-7i2hq.md)
   A floating-point value indicating the requested fan speed specified as a percentage of the maximum speed.
+- [enableFan](./enablefan-3bu9e.md)
+  A Boolean value indicating whether to turn on the cabin fan system.
+- [fanSpeedIndex](./fanspeedindex-4c1rr.md)
+  An integer value indicating the desired fan speed position.
+- [fanSpeedPercentage](./fanspeedpercentage-ep0u.md)
+  A floating-point value indicating the requested fan speed specified as a percentage of the maximum speed.
 
 
 ---

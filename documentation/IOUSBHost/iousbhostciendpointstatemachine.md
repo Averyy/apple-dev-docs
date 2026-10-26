@@ -31,6 +31,7 @@ class IOUSBHostCIEndpointStateMachine
 - [func inspectCommand(UnsafePointer<IOUSBHostCIMessage>) throws](./iousbhostciendpointstatemachine/inspectcommand%28_%29.md)
 - [func processDoorbell(IOUSBHostCIDoorbell) throws](./iousbhostciendpointstatemachine/processdoorbell%28_%29.md)
 - [func respond(toCommand: UnsafePointer<IOUSBHostCIMessage>, status: IOUSBHostCIMessageStatus) throws](./iousbhostciendpointstatemachine/respond%28tocommand,status%29.md)
+- [- initWithInterface:command:error:](./iousbhostciendpointstatemachine/initwithinterface_command_error_.md)
 
 ## Relationships
 

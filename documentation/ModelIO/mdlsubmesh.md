@@ -64,6 +64,9 @@ Submeshes are contained in [`MDLMesh`](./mdlmesh.md) objects, which provide vert
   Types of geometric primitives for rendering a submesh, used by the [`geometryType`](./mdlsubmesh/geometrytype.md) property.
 ### Initializers
 - [init?(MDLSubmesh: MDLSubmesh, indexType: MDLIndexBitDepth, geometryType: MDLGeometryType)](./mdlsubmesh/init%28mdlsubmesh,indextype,geometrytype%29-6b9cm.md)
+### Type Methods
+- [+ submeshWithSCNGeometryElement:](./mdlsubmesh/submeshwithscngeometryelement_.md)
+- [+ submeshWithSCNGeometryElement:bufferAllocator:](./mdlsubmesh/submeshwithscngeometryelement_bufferallocator_.md)
 
 ## Relationships
 

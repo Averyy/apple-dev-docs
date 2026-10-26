@@ -25,6 +25,36 @@
       "file_path": "documentation/ExecutionPolicy/epdevelopertool/requestaccess(completionhandler).md",
       "hash": "baa8988ce39eafc9dd4314a5e85b7d3cafe0c64a8458ed7aaecc08b20afb2350"
     },
+    "https://developer.apple.com/documentation/executionpolicy/epdevelopertoolstatus": {
+      "etag": "\"3cf6-65d55ae587785-df\"",
+      "file_path": "documentation/ExecutionPolicy/epdevelopertoolstatus.md",
+      "hash": "09b58b57836b5aefda1aebd3c39074b76b29ce4b2d4dcfd5373153d5811bfbcc"
+    },
+    "https://developer.apple.com/documentation/executionpolicy/epdevelopertoolstatus/authorized": {
+      "etag": "\"2679-65d55ae587785-df\"",
+      "file_path": "documentation/ExecutionPolicy/epdevelopertoolstatus/authorized.md",
+      "hash": "ec464df1db6eaa86c3c37b2317e7c03afa3bead98b8b958c548499965f6e8a4a"
+    },
+    "https://developer.apple.com/documentation/executionpolicy/epdevelopertoolstatus/denied": {
+      "etag": "\"2655-65d55ae587785-df\"",
+      "file_path": "documentation/ExecutionPolicy/epdevelopertoolstatus/denied.md",
+      "hash": "1b167b261088b84796b4ef5d897d0538f0f19afdd8fe5c7ffcd623b198ec964c"
+    },
+    "https://developer.apple.com/documentation/executionpolicy/epdevelopertoolstatus/init(rawvalue:)": {
+      "etag": "\"1367-65d55ae587785-df\"",
+      "file_path": "documentation/ExecutionPolicy/epdevelopertoolstatus/init(rawvalue).md",
+      "hash": "a307072425f2d6f31c5fd206870e79e74d61c8dea4e1ddee24961740ce2d8504"
+    },
+    "https://developer.apple.com/documentation/executionpolicy/epdevelopertoolstatus/notdetermined": {
+      "etag": "\"2694-65d55ae587785-df\"",
+      "file_path": "documentation/ExecutionPolicy/epdevelopertoolstatus/notdetermined.md",
+      "hash": "9bc624220582c9dffb87a4a9bd5675cd2b3eeb733ecb4bbb1879b38a38e13f73"
+    },
+    "https://developer.apple.com/documentation/executionpolicy/epdevelopertoolstatus/restricted": {
+      "etag": "\"2679-65d55ae587785-df\"",
+      "file_path": "documentation/ExecutionPolicy/epdevelopertoolstatus/restricted.md",
+      "hash": "3ef062e3135081efb2a24bd7d5938504cf7d93598e0f569aa15177cf12ebe4d1"
+    },
     "https://developer.apple.com/documentation/executionpolicy/eperror-swift.struct": {
       "etag": "\"29ad-65d55ae587785-df\"",
       "file_path": "documentation/ExecutionPolicy/eperror-swift.struct.md",
@@ -90,6 +120,11 @@
       "file_path": "documentation/ExecutionPolicy/executionpolicy-constants.md",
       "hash": "7c3db21e54ea43eac4e805116cf59a6a4f89af98a402f8adfb8a41e1c62ebfb0"
     },
+    "https://developer.apple.com/documentation/executionpolicy/executionpolicy-enumerations": {
+      "etag": "\"1042-659023673fc51-df\"",
+      "file_path": "documentation/ExecutionPolicy/executionpolicy-enumerations.md",
+      "hash": "32feb3241c7589ad2c8defd90f9e794c6aeecb10a1b6307a2b408712d5229682"
+    },
     "https://developer.apple.com/tutorials/data/documentation/ExecutionPolicy.json": {
       "etag": "\"1c05-65d55ae587785-df\"",
       "file_path": "documentation/ExecutionPolicy/ExecutionPolicy.md",
@@ -114,6 +149,36 @@
       "etag": "\"2bf8-65d55ae587785-df\"",
       "file_path": "documentation/ExecutionPolicy/epdevelopertool/requestaccess(completionhandler).md",
       "hash": "baa8988ce39eafc9dd4314a5e85b7d3cafe0c64a8458ed7aaecc08b20afb2350"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/executionpolicy/epdevelopertoolstatus.json": {
+      "etag": "\"3cf6-65d55ae587785-df\"",
+      "file_path": "documentation/ExecutionPolicy/epdevelopertoolstatus.md",
+      "hash": "09b58b57836b5aefda1aebd3c39074b76b29ce4b2d4dcfd5373153d5811bfbcc"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/executionpolicy/epdevelopertoolstatus/authorized.json": {
+      "etag": "\"2679-65d55ae587785-df\"",
+      "file_path": "documentation/ExecutionPolicy/epdevelopertoolstatus/authorized.md",
+      "hash": "ec464df1db6eaa86c3c37b2317e7c03afa3bead98b8b958c548499965f6e8a4a"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/executionpolicy/epdevelopertoolstatus/denied.json": {
+      "etag": "\"2655-65d55ae587785-df\"",
+      "file_path": "documentation/ExecutionPolicy/epdevelopertoolstatus/denied.md",
+      "hash": "1b167b261088b84796b4ef5d897d0538f0f19afdd8fe5c7ffcd623b198ec964c"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/executionpolicy/epdevelopertoolstatus/init(rawvalue:).json": {
+      "etag": "\"1367-65d55ae587785-df\"",
+      "file_path": "documentation/ExecutionPolicy/epdevelopertoolstatus/init(rawvalue).md",
+      "hash": "a307072425f2d6f31c5fd206870e79e74d61c8dea4e1ddee24961740ce2d8504"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/executionpolicy/epdevelopertoolstatus/notdetermined.json": {
+      "etag": "\"2694-65d55ae587785-df\"",
+      "file_path": "documentation/ExecutionPolicy/epdevelopertoolstatus/notdetermined.md",
+      "hash": "9bc624220582c9dffb87a4a9bd5675cd2b3eeb733ecb4bbb1879b38a38e13f73"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/executionpolicy/epdevelopertoolstatus/restricted.json": {
+      "etag": "\"2679-65d55ae587785-df\"",
+      "file_path": "documentation/ExecutionPolicy/epdevelopertoolstatus/restricted.md",
+      "hash": "3ef062e3135081efb2a24bd7d5938504cf7d93598e0f569aa15177cf12ebe4d1"
     },
     "https://developer.apple.com/tutorials/data/documentation/executionpolicy/eperror-swift.struct.json": {
       "etag": "\"29ad-65d55ae587785-df\"",
@@ -179,12 +244,17 @@
       "etag": "\"f83-659023673fc51-df\"",
       "file_path": "documentation/ExecutionPolicy/executionpolicy-constants.md",
       "hash": "7c3db21e54ea43eac4e805116cf59a6a4f89af98a402f8adfb8a41e1c62ebfb0"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/executionpolicy/executionpolicy-enumerations.json": {
+      "etag": "\"1042-659023673fc51-df\"",
+      "file_path": "documentation/ExecutionPolicy/executionpolicy-enumerations.md",
+      "hash": "32feb3241c7589ad2c8defd90f9e794c6aeecb10a1b6307a2b408712d5229682"
     }
   },
   "metadata": {
     "render": {
-      "version": 1
+      "version": 2
     },
-    "total_pages": 36
+    "total_pages": 50
   }
 }

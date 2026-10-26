@@ -48,6 +48,14 @@ You can obtain `locArray` using the [`CFBundleCopyBundleLocalizations(_:)`](./cf
   Given an array of possible localizations and preferred locations, returns the one or more of them that CFBundle would use, without reference to the current application context.
 - [func CFBundleCopyLocalizationsForURL(CFURL!) -> CFArray!](./cfbundlecopylocalizationsforurl%28_%29.md)
   Returns an array containing the localizations for a bundle or executable at a particular location.
+- [CFCopyLocalizedString](./cfcopylocalizedstring.md)
+  Searches the default strings file `Localizable.strings` for the string associated with the specified key.
+- [CFCopyLocalizedStringFromTable](./cfcopylocalizedstringfromtable.md)
+  Searches the specified strings file for the string associated with the specified key.
+- [CFCopyLocalizedStringFromTableInBundle](./cfcopylocalizedstringfromtableinbundle.md)
+  Returns a localized version of the specified string.
+- [CFCopyLocalizedStringWithDefaultValue](./cfcopylocalizedstringwithdefaultvalue.md)
+  Returns a localized version of a localization string.
 
 
 ---

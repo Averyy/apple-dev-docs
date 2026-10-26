@@ -44,6 +44,9 @@ An `NSDate` object initialized relative to the current date and time by `secs` s
   Returns a date object initialized relative to 00:00:00 UTC on 1 January 1970 by a given number of seconds.
 - [init?(coder: NSCoder)](./init%28coder%29.md)
   Returns a date object initialized from data in the given unarchiver.
+### Related Documentation
+- [+ dateWithTimeIntervalSinceNow:](./datewithtimeintervalsincenow_.md)
+  Creates and returns a date object set to a given number of seconds from the current date and time.
 
 
 ---

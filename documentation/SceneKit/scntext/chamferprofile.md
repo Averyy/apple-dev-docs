@@ -58,6 +58,9 @@ The value of this property must be a two-dimensional path starting at the point 
   The extent of the extruded text in the z-axis direction. Animatable.
 - [var chamferRadius: CGFloat](./chamferradius.md)
   The width or depth of each chamfered edge. Animatable.
+### Related Documentation
+- [chamferSegmentCount](./chamfersegmentcount.md)
+  The number of divisions SceneKit uses to create each chamfered edge of the text geometry. Animatable.
 
 
 ---

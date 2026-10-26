@@ -55,6 +55,10 @@ typedef NSString * AVAssetExportSessionResumptionFailureReason;
   Configures the export session for resumable export.
 - [AVAssetExportSession.ResumptionState](./resumptionstate.md)
   Represents the resumption state of the export session.
+- [- configureForResumableExportWithCompletionHandler:](./configureforresumableexportwithcompletionhandler_.md)
+  Attempts to configure the export session into resumption mode.
+- [AVAssetExportSessionResumptionState](../avassetexportsessionresumptionstate.md)
+  The current resumption state of the export session.
 
 
 ---

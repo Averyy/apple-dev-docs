@@ -30,6 +30,22 @@ var isDecodable: Bool { get }
 
 When this property is [`true`](../../Swift/true.md), the system can decode the track, even if decoding may be too slow for real-time playback.
 
+## See Also
+
+### Accessing track information
+- [formatDescriptions](./formatdescriptions.md)
+  The format descriptions of the media samples that a track references.
+- [playable](./isplayable.md)
+  A Boolean value that indicates whether the track is playable in the current environment.
+- [enabled](./isenabled.md)
+  A Boolean value that indicates whether the track’s container enables it.
+- [selfContained](./isselfcontained.md)
+  A Boolean value that indicates whether this track references sample data only within its container file.
+- [totalSampleDataLength](./totalsampledatalength.md)
+  The total number of bytes of sample data the track requires.
+- [- hasMediaCharacteristic:](./hasmediacharacteristic%28_%29.md)
+  Returns a Boolean value that indicates whether the track references media with the specified media characteristic.
+
 
 ---
 

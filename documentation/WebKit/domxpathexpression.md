@@ -21,6 +21,7 @@ class DOMXPathExpression
 
 ### Instance Methods
 - [func evaluate(DOMNode!, type: UInt16, in: DOMXPathResult!) -> DOMXPathResult!](./domxpathexpression/evaluate%28_,type,in%29.md)
+- [- evaluate:::](./domxpathexpression/evaluate___.md)
 
 ## Relationships
 

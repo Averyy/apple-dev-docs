@@ -35,6 +35,8 @@ To avoid an orphan word on the last line of a paragraph before a page break, the
   The text system prohibits breaking between Hangul characters.
 - [static var standard: NSParagraphStyle.LineBreakStrategy](./standard.md)
   The text system uses the same configuration of line-break strategies that it uses for standard UI labels.
+- [NSLineBreakStrategyNone](../../nslinebreakstrategy/nslinebreakstrategynone.md)
+  The text system doesn’t use any line-break strategies.
 
 
 ---

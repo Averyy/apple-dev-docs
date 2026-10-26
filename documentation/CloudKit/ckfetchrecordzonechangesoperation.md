@@ -102,6 +102,8 @@ operation.qualityOfService = NSQualityOfServiceUtility;
   Creates an operation for fetching record zone changes.
 - [init()](./ckfetchrecordzonechangesoperation/init%28%29.md)
   Creates an empty fetch record zone changes operation.
+- [- initWithRecordZoneIDs:configurationsByRecordZoneID:](./ckfetchrecordzonechangesoperation/initwithrecordzoneids_configurationsbyrecordzoneid_.md)
+  Creates an operation for fetching record zone changes.
 ### Configuring the Zone Change Operation
 - [var configurationsByRecordZoneID: [CKRecordZone.ID : CKFetchRecordZoneChangesOperation.ZoneConfiguration]?](./ckfetchrecordzonechangesoperation/configurationsbyrecordzoneid.md)
   A dictionary of configurations for fetching change operations by zone identifier.
@@ -122,6 +124,8 @@ operation.qualityOfService = NSQualityOfServiceUtility;
   The closure to execute when a record zone’s fetch finishes.
 - [var fetchRecordZoneChangesCompletionBlock: (((any Error)?) -> Void)?](./ckfetchrecordzonechangesoperation/fetchrecordzonechangescompletionblock.md)
   The closure to execute when the operation finishes.
+- [recordWithIDWasDeletedBlock](./ckfetchrecordzonechangesoperation/recordwithidwasdeletedblock-912xy.md)
+  The block to execute when a record no longer exists.
 ### Deprecated
 - [Deprecated Symbols](./ckfetchrecordzonechangesoperation-deprecated-symbols.md)
   Review unsupported symbols and their replacements.
@@ -132,6 +136,8 @@ operation.qualityOfService = NSQualityOfServiceUtility;
   The closure to execute with the results of retrieving a record change.
 - [var recordZoneFetchResultBlock: ((CKRecordZone.ID, Result<(serverChangeToken: CKServerChangeToken, clientChangeTokenData: Data?, moreComing: Bool), any Error>) -> Void)?](./ckfetchrecordzonechangesoperation/recordzonefetchresultblock.md)
   The closure to execute when a record zone’s fetch finishes.
+- [recordWasChangedBlock](./ckfetchrecordzonechangesoperation/recordwaschangedblock-90bon.md)
+  The closure to execute with the results of retrieving a record change.
 
 ## Relationships
 

@@ -34,6 +34,12 @@ simd_double3 vector;
   The y-element value.
 - [var z: Double](./z.md)
   The z-element value.
+- [x](../spvector3d/x.md)
+  The x-element value.
+- [y](../spvector3d/y.md)
+  The y-element value.
+- [z](../spvector3d/z.md)
+  The z-element value.
 
 
 ---

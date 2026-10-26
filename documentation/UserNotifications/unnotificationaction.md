@@ -61,6 +61,8 @@ For information on how to handle actions, see [Handling notifications and notifi
   The behaviors associated with the action.
 - [struct UNNotificationActionOptions](./unnotificationactionoptions.md)
   The behaviors you can apply to an action.
+- [UNNotificationActionOptionNone](./unnotificationactionoptionnone.md)
+  The action has the default behavior.
 ### Initializers
 - [init?(coder: NSCoder)](./unnotificationaction/init%28coder%29.md)
 

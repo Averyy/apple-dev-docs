@@ -121,6 +121,12 @@ Load a compute plan with [`load(contentsOf:configuration:)`](./mlcomputeplan-1w2
 
 For each operation, [`deviceUsage(for:)`](./mlcomputeplan-1w21n/deviceusage%28for%29.md) returns where it can run and [`estimatedCost(of:)`](./mlcomputeplan-1w21n/estimatedcost%28of%29.md) returns its cost. These return values expose properties you read in code, not controls in Xcode: read [`supported`](./mlcomputeplan-1w21n/deviceusage/supported.md) for the compute devices that can run the operation, [`preferred`](./mlcomputeplan-1w21n/deviceusage/preferred.md) for the device Core ML runs it on, and [`weight`](./mlcomputeplan-1w21n/cost/weight.md) to compare how expensive operations are relative to each other.
 
+## See Also
+
+### Optimization
+- [MLOptimizationHints](./mloptimizationhints-c.class.md)
+  MLOptimizationHints
+
 
 ---
 

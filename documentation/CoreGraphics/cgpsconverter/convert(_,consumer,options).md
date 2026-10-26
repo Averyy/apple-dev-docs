@@ -43,6 +43,9 @@ The conversion is thread safe, however it is not possible to have more than one 
 ### Instance Methods
 - [func abort() -> Bool](./abort%28%29.md)
   Tells a PostScript converter to abort a conversion at the next available opportunity.
+### Miscellaneous Functions
+- [CGPSConverterIsConverting](./isconverting.md)
+  Checks whether the converter is currently converting data.
 
 
 ---

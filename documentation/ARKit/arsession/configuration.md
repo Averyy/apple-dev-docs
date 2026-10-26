@@ -32,6 +32,8 @@ var configuration: ARConfiguration? { get }
   Options for transitioning an AR session’s current state when you change its configuration.
 - [func pause()](./pause%28%29.md)
   Pauses processing in the session.
+- [- runWithConfiguration:](./runwithconfiguration_.md)
+  Starts AR processing for the session with the specified configuration.
 
 
 ---

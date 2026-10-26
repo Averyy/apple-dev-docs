@@ -44,6 +44,8 @@ Use this method when you cannot search for the specified type of content but can
   Creates an object whose resolution involves the successful matching of the specified parameter.
 - [static func disambiguation(with: [INNotebookItemType]) -> Self](./disambiguation%28with%29.md)
   Creates an object whose resolution requires the user to select from among the specified objects.
+- [+ disambiguationWithNotebookItemTypesToDisambiguate:](./disambiguationwithnotebookitemtypestodisambiguate_.md)
+  Creates an object whose resolution requires the user to select from among the specified objects.
 
 
 ---

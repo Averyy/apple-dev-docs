@@ -41,6 +41,10 @@ class HKMedicationDoseEvent
   The quantity of the medication scheduled to be taken.
 - [var unit: HKUnit](./hkmedicationdoseevent/unit.md)
   The unit that the system associates with the medication when the person logs the dose.
+- [doseQuantity](./hkmedicationdoseevent/dosequantity-52hxr.md)
+  The dose quantity the person reports as taken.
+- [scheduledDoseQuantity](./hkmedicationdoseevent/scheduleddosequantity-7ffhr.md)
+  The dose quantity a person is expected to take based on their medication schedule.
 ### Enumerations
 - [HKMedicationDoseEvent.LogStatus](./hkmedicationdoseevent/logstatus-swift.enum.md)
   The statuses the system assigns to a logged medication dose event.

@@ -5,6 +5,16 @@
       "file_path": "documentation/AppTrackingTransparency/AppTrackingTransparency.md",
       "hash": "9127e8100518185319a184caba30ea9f83f7ca22ee819f783bd35f02086e0928"
     },
+    "https://developer.apple.com/documentation/apptrackingtransparency/apptrackingtransparencyversionnumber": {
+      "etag": "\"11a3-65d55dd03bc15-df\"",
+      "file_path": "documentation/AppTrackingTransparency/apptrackingtransparencyversionnumber.md",
+      "hash": "d307d56c8bb28c53a3e0ea8e573ebc41683b92c5ae7d24ab2bc2a674eeb9de42"
+    },
+    "https://developer.apple.com/documentation/apptrackingtransparency/apptrackingtransparencyversionstring": {
+      "etag": "\"11e9-65d55dd03bc15-df\"",
+      "file_path": "documentation/AppTrackingTransparency/apptrackingtransparencyversionstring.md",
+      "hash": "30436b130f86c6780aa052971d7ea57a5db542a4f81ad04e7bec8022064eafb1"
+    },
     "https://developer.apple.com/documentation/apptrackingtransparency/attrackingmanager": {
       "etag": "\"60b5-65da2d9d1e69a-df\"",
       "file_path": "documentation/AppTrackingTransparency/attrackingmanager.md",
@@ -60,6 +70,16 @@
       "file_path": "documentation/AppTrackingTransparency/AppTrackingTransparency.md",
       "hash": "9127e8100518185319a184caba30ea9f83f7ca22ee819f783bd35f02086e0928"
     },
+    "https://developer.apple.com/tutorials/data/documentation/apptrackingtransparency/apptrackingtransparencyversionnumber.json": {
+      "etag": "\"11a3-65d55dd03bc15-df\"",
+      "file_path": "documentation/AppTrackingTransparency/apptrackingtransparencyversionnumber.md",
+      "hash": "d307d56c8bb28c53a3e0ea8e573ebc41683b92c5ae7d24ab2bc2a674eeb9de42"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/apptrackingtransparency/apptrackingtransparencyversionstring.json": {
+      "etag": "\"11e9-65d55dd03bc15-df\"",
+      "file_path": "documentation/AppTrackingTransparency/apptrackingtransparencyversionstring.md",
+      "hash": "30436b130f86c6780aa052971d7ea57a5db542a4f81ad04e7bec8022064eafb1"
+    },
     "https://developer.apple.com/tutorials/data/documentation/apptrackingtransparency/attrackingmanager.json": {
       "etag": "\"60b5-65da2d9d1e69a-df\"",
       "file_path": "documentation/AppTrackingTransparency/attrackingmanager.md",
@@ -113,8 +133,8 @@
   },
   "metadata": {
     "render": {
-      "version": 1
+      "version": 2
     },
-    "total_pages": 22
+    "total_pages": 26
   }
 }

@@ -566,6 +566,10 @@ A single [`NSWindow`](./nswindow.md) object corresponds to, at most, one on-scre
   Returns whether the specified window depth is planar.
 - [func canRepresent(NSDisplayGamut) -> Bool](./nswindow/canrepresent%28_%29.md)
   A Boolean value that indicates if the window and its screen use a color space that can represent the specified display gamut.
+- [NSAvailableWindowDepths](./nsavailablewindowdepths.md)
+  Returns the available window depth values.
+- [NSBestDepth](./nsbestdepth.md)
+  Attempts to return a window depth adequate for the specified parameters.
 ### Getting Information About Scripting Attributes
 - [var hasCloseBox: Bool](./nswindow/hasclosebox.md)
   A Boolean value that indicates if the window has a close box.

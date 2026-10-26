@@ -32,6 +32,8 @@ class Sidebar
 ### Scrolling
 - [func scroll(to: UITabBarController.Sidebar.ScrollTarget, animated: Bool)](./sidebar-swift.class/scroll%28to,animated%29.md)
 - [UITabBarController.Sidebar.ScrollTarget](./sidebar-swift.class/scrolltarget.md)
+- [- scrollToTarget:animated:](../uitabbarcontrollersidebar/scrolltotarget_animated_.md)
+  Scrolls to the specified target in the sidebar with an option to animate the change.
 ### Managing customization
 - [var isHidden: Bool](./sidebar-swift.class/ishidden.md)
   Determines if the sidebar is currently hidden.
@@ -45,6 +47,10 @@ class Sidebar
   A view to display at the bottom of the sidebar, like a UIToolbar. The width of this view will be managed by the sidebar itself, and its height will be set to the value it returns from `systemLayoutSizeFittingSize:withHorizontalFittingPriority:verticalFittingPriority:` Default is nil.
 - [var footerContentConfiguration: (any UIContentConfiguration)?](./sidebar-swift.class/footercontentconfiguration.md)
 - [var headerContentConfiguration: (any UIContentConfiguration)?](./sidebar-swift.class/headercontentconfiguration.md)
+- [footerContentConfiguration](../uitabbarcontrollersidebar/footercontentconfiguration.md)
+  Content configuration for an optional header to display in the sidebar. The footer is displayed below all tab content in the sidebar.
+- [headerContentConfiguration](../uitabbarcontrollersidebar/headercontentconfiguration.md)
+  Content configuration for an optional header to display in the sidebar. The header is displayed above all tab content in the sidebar.
 ### Instance Properties
 - [var isAvailable: Bool](./sidebar-swift.class/isavailable.md)
   Indicates when the tab sidebar is available to be displayed in the current context. When available, the sidebar is either visible, or can become visible depending on `isHidden`. Use this property to gate behaviors or UI that is dependent on the availability of the sidebar (like child tabs, or landing pages for groups).
@@ -80,6 +86,7 @@ class Sidebar
 - [class UITabSidebarItem](../uitabsidebaritem.md)
 - [UITabSidebarItem.Request](../uitabsidebaritem/request.md)
 - [UITabBarController.Sidebar.Animating](./sidebar-swift.class/animating.md)
+- [UITabSidebarScrollTarget](../uitabsidebarscrolltarget.md)
 
 
 ---

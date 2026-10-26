@@ -53,6 +53,12 @@ A struct representing a range of a Metal buffer. The offset into the buffer is i
 - [func MTLPackedFloat3Make(Float, Float, Float) -> MTLPackedFloat3](./mtlpackedfloat3make%28_,_,_%29.md)
   Returns a new packed vector with three floating-point values.
 - [func MTL4BufferRangeMake(MTLGPUAddress, UInt64) -> MTL4BufferRange](./mtl4bufferrangemake%28_,_%29.md)
+- [MTLAxisAlignedBoundingBox](./mtlaxisalignedboundingbox-c.struct.md)
+  The bounds for an axis-aligned bounding box.
+- [MTLPackedFloat3](./mtlpackedfloat3-c.struct.md)
+  A structure that contains three 32-bit floating-point values with no additional padding.
+- [MTLPackedFloat4x3](./mtlpackedfloat4x3-c.struct.md)
+  A structure that contains the top three rows of a 4x4 matrix of 32-bit floating-point values, in column-major order.
 
 
 ---

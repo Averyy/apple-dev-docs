@@ -67,6 +67,8 @@ UIView.animate(withDuration: 1.0) {
   Performs a view animation using a timing curve corresponding to the motion of a physical spring.
 - [class func performWithoutAnimation(() -> Void)](./performwithoutanimation%28_%29.md)
   Disables a view transition animation.
+- [+ animateWithSpringDuration:bounce:initialSpringVelocity:delay:options:animations:completion:](./animatewithspringduration_bounce_initialspringvelocity_delay_options_animations_completion_.md)
+  Animates changes to one or more views using a spring animation with the specified duration, bounce, initial velocity, delay, options, and completion handler.
 
 
 ---

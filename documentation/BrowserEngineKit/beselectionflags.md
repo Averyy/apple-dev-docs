@@ -36,6 +36,8 @@ The [`BETextInput`](./betextinput.md) protocol provides your app an instance of 
   A flag that indicates whether a text selection is reversed or flipped in direction from its original direction.
 - [static var wordIsNearTap: BESelectionFlags](./beselectionflags/wordisneartap.md)
   A flag that indicates whether a word resides near the person’s tap gesture.
+- [BESelectionFlagsNone](./beselectionflags/beselectionflagsnone.md)
+  An option that indicates no active flags.
 ### Creating a selection flag
 - [init(rawValue: UInt)](./beselectionflags/init%28rawvalue%29.md)
   Creates a selection flags instance with the given underlying value.

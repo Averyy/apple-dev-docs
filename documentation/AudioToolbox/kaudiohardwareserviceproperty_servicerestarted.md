@@ -24,6 +24,10 @@ kAudioHardwareServiceProperty_ServiceRestarted
 ### Constants
 - [var kAudioHardwareServiceDeviceProperty_VirtualMainBalance: AudioObjectPropertySelector](./kaudiohardwareservicedeviceproperty_virtualmainbalance.md)
 - [var kAudioHardwareServiceDeviceProperty_VirtualMainVolume: AudioObjectPropertySelector](./kaudiohardwareservicedeviceproperty_virtualmainvolume.md)
+- [kAudioHardwareServiceDeviceProperty_VirtualMasterVolume](./kaudiohardwareservicedeviceproperty_virtualmastervolume.md)
+  A `Float32` value that represents the value of the volume control.
+- [kAudioHardwareServiceDeviceProperty_VirtualMasterBalance](./kaudiohardwareservicedeviceproperty_virtualmasterbalance.md)
+  A `Float32` value that represents the value of a hardware device’s stereo balance control.
 
 
 ---

@@ -46,6 +46,8 @@ To retrieve media items from the media library, build a custom query as describe
   Asks the media library to turn off notifications for whenever the library changes.
 - [var lastModifiedDate: Date](./mpmedialibrary/lastmodifieddate.md)
   The calendar date on which the media library was last modified.
+- [MPMediaLibraryDidChangeNotification](./mpmedialibrarydidchangenotification.md)
+  Indicates the media library has changed.
 ### Retrieving a playlist from the media library
 - [func getPlaylist(with: UUID, creationMetadata: MPMediaPlaylistCreationMetadata?, completionHandler: (MPMediaPlaylist?, (any Error)?) -> Void)](./mpmedialibrary/getplaylist%28with,creationmetadata,completionhandler%29.md)
   Retrieves an app maintained existing playlist or creates a new playlist when no playlist exists.

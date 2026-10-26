@@ -52,6 +52,10 @@ class VZEFIVariableStore
   Enrolls the given signatures to Secure Boot databases.
 - [func resetSecureBoot() throws](./vzefivariablestore/resetsecureboot%28%29.md)
   Clears any previously applied Secure Boot configuration and disables Secure Boot.
+- [- getEnrolledSecureBootSignaturesWithError:](./vzefivariablestore/getenrolledsecurebootsignatureswitherror_.md)
+  Returns the currently enrolled Secure Boot signatures in the Key Exchange Key (KEK), allowed signature (db), and forbidden signature (dbx) databases.
+- [- getSecureBootEnabled:error:](./vzefivariablestore/getsecurebootenabled_error_.md)
+  Returns a Boolean value that indicates whether Secure Boot is in an enabled state in the variable store.
 
 ## Relationships
 

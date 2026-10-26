@@ -29,6 +29,14 @@ typedef enum { ... } MPSCustomKernelIndex;
 - [init(rawValue: UInt32)](./mpscustomkernelindex/init%28rawvalue%29.md)
 ### Instance Properties
 - [var rawValue: UInt32](./mpscustomkernelindex/rawvalue.md)
+### Enumeration Cases
+- [MPSCustomKernelIndexDestIndex](./mpscustomkernelindexdestindex.md)
+- [MPSCustomKernelIndexSrc0Index](./mpscustomkernelindexsrc0index.md)
+- [MPSCustomKernelIndexSrc1Index](./mpscustomkernelindexsrc1index.md)
+- [MPSCustomKernelIndexSrc2Index](./mpscustomkernelindexsrc2index.md)
+- [MPSCustomKernelIndexSrc3Index](./mpscustomkernelindexsrc3index.md)
+- [MPSCustomKernelIndexSrc4Index](./mpscustomkernelindexsrc4index.md)
+- [MPSCustomKernelIndexUserDataIndex](./mpscustomkernelindexuserdataindex.md)
 
 ## Relationships
 

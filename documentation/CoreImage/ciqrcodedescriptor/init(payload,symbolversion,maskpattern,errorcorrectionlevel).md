@@ -35,6 +35,12 @@ init?(payload errorCorrectedPayload: Data, symbolVersion: Int, maskPattern: UInt
 - `maskPattern`: The mask pattern to use in the QR code, from 0 to 7.
 - `errorCorrectionLevel`: The QR code’s error correction level: L, M, Q, or H.
 
+## See Also
+
+### Creating a Descriptor
+- [+ descriptorWithPayload:symbolVersion:maskPattern:errorCorrectionLevel:](./descriptorwithpayload_symbolversion_maskpattern_errorcorrectionlevel_.md)
+  Creates a QR code descriptor for the given payload and parameters.
+
 
 ---
 

@@ -45,6 +45,8 @@ Use this method to get the alias for an input element. For example, if the user 
   Returns the physical input elements to which the user remaps the given input element.
 - [static let GCControllerUserCustomizationsDidChange: NSNotification.Name](../../Foundation/nsnotification/name-swift.struct/gccontrollerusercustomizationsdidchange.md)
   A notification that posts when the user customizes the button mappings or other settings of a controller.
+- [GCControllerUserCustomizationsDidChangeNotification](../gccontrollerusercustomizationsdidchangenotification.md)
+  A notification that posts when the user customizes the button mappings or other settings of a controller.
 
 
 ---

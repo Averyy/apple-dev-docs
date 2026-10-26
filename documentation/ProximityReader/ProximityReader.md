@@ -114,6 +114,11 @@ The use of this framework requires you to coordinate with a participating paymen
 ### Structures
 - [struct MobileDocumentHolderName](./mobiledocumentholdername.md)
   A type that represents the mobile identity document holder’s name.
+### Variables
+- [ProximityReaderVersionNumber](./proximityreaderversionnumber.md)
+  Project version number for ProximityReader.
+- [ProximityReaderVersionString](./proximityreaderversionstring.md)
+  Project version string for ProximityReader.
 
 
 ---

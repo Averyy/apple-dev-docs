@@ -29,6 +29,10 @@ UIStatusBarStyleDefault
   A light status bar, intended for use on dark backgrounds.
 - [UIStatusBarStyle.darkContent](./darkcontent.md)
   A dark status bar, intended for use on light backgrounds.
+- [UIStatusBarStyleBlackTranslucent](./uistatusbarstyleblacktranslucent.md)
+  A transparent black style.
+- [UIStatusBarStyleBlackOpaque](./uistatusbarstyleblackopaque.md)
+  An opaque black style.
 
 
 ---

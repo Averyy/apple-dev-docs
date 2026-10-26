@@ -35,6 +35,8 @@ Assets from shared albums cannot be edited and do not appear in Moments collecti
   The asset is part of the user’s main Photos library.
 - [static var typeiTunesSynced: PHAssetSourceType](./typeitunessynced.md)
   The asset originates from a Mac or PC and is present on the device through iTunes sync.
+- [PHAssetSourceTypeNone](./phassetsourcetypenone.md)
+  Source information is not available for the asset.
 
 
 ---

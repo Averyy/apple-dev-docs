@@ -40,6 +40,8 @@ convenience init(object: any NSItemProviderWriting)
   Creates an item provider with an object, according to the item provider type coercion policy.
 - [init()](./init%28%29.md)
   Creates an empty item provider to which you can later register a data or file representation.
+- [- initWithContentsOfURL:contentType:openInPlace:coordinated:visibility:](./initwithcontentsofurl_contenttype_openinplace_coordinated_visibility_.md)
+  Provides data-backed content from an existing file with the specified parameters.
 
 
 ---

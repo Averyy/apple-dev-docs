@@ -31,6 +31,8 @@ You can create multiple [`MTLRenderPipelineState`](./mtlrenderpipelinestate.md) 
   Synchronously creates a mesh render pipeline state and reflection information in a tuple.
 - [func makeRenderPipelineState(descriptor: MTLMeshRenderPipelineDescriptor, options: MTLPipelineOption, completionHandler: ((any MTLRenderPipelineState)?, MTLRenderPipelineReflection?, (any Error)?) -> Void)](./mtldevice/makerenderpipelinestate%28descriptor,options,completionhandler%29-1wvya.md)
   Asynchronously creates a mesh render pipeline state and reflection information.
+- [- newRenderPipelineStateWithMeshDescriptor:options:reflection:error:](./mtldevice/newrenderpipelinestatewithmeshdescriptor_options_reflection_error_.md)
+  Synchronously creates a mesh render pipeline state and reflection information.
 ### Creating tile render pipeline states
 - [func makeRenderPipelineState(tileDescriptor: MTLTileRenderPipelineDescriptor, options: MTLPipelineOption) throws -> (any MTLRenderPipelineState, MTLRenderPipelineReflection?)](./mtldevice/makerenderpipelinestate%28tiledescriptor,options%29.md)
   Synchronously creates a tile shader’s render pipeline state and reflection information in a tuple.

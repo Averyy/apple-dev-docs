@@ -23,56 +23,56 @@ You can provide a custom interface for ride-booking intents using an Intents UI 
 ### List Ride Options
 - [Generating a List of Ride Options](./generating-a-list-of-ride-options.md)
   Generate ride options for Maps to display to the user.
-- [protocol INListRideOptionsIntentHandling](https://developer.apple.com/documentation/intents/inlistrideoptionsintenthandling)
+- [protocol INListRideOptionsIntentHandling](../Intents/inlistrideoptionsintenthandling.md)
   The handler interface for fetching the list of rides currently available from your ride-booking service.
-- [class INListRideOptionsIntent](https://developer.apple.com/documentation/intents/inlistrideoptionsintent)
+- [class INListRideOptionsIntent](../Intents/inlistrideoptionsintent.md)
   An intent for getting the types of rides available from a ride-booking service.
-- [class INListRideOptionsIntentResponse](https://developer.apple.com/documentation/intents/inlistrideoptionsintentresponse)
+- [class INListRideOptionsIntentResponse](../Intents/inlistrideoptionsintentresponse.md)
   Your app’s response to a list ride options intent.
 ### Request a Ride
-- [protocol INRequestRideIntentHandling](https://developer.apple.com/documentation/intents/inrequestrideintenthandling)
+- [protocol INRequestRideIntentHandling](../Intents/inrequestrideintenthandling.md)
   The handler interface for booking a ride for the user.
-- [class INRequestRideIntent](https://developer.apple.com/documentation/intents/inrequestrideintent)
+- [class INRequestRideIntent](../Intents/inrequestrideintent.md)
   A request to book the specified ride from your service.
-- [class INRequestRideIntentResponse](https://developer.apple.com/documentation/intents/inrequestrideintentresponse)
+- [class INRequestRideIntentResponse](../Intents/inrequestrideintentresponse.md)
   Your app’s response to a request ride intent.
 ### Get the Ride Status
-- [protocol INGetRideStatusIntentHandling](https://developer.apple.com/documentation/intents/ingetridestatusintenthandling)
+- [protocol INGetRideStatusIntentHandling](../Intents/ingetridestatusintenthandling.md)
   The handler interface for fetching the status of the user’s current ride.
-- [class INGetRideStatusIntent](https://developer.apple.com/documentation/intents/ingetridestatusintent)
+- [class INGetRideStatusIntent](../Intents/ingetridestatusintent.md)
   A request for the current status of a previously booked ride.
-- [class INGetRideStatusIntentResponse](https://developer.apple.com/documentation/intents/ingetridestatusintentresponse)
+- [class INGetRideStatusIntentResponse](../Intents/ingetridestatusintentresponse.md)
   Your app’s response to a get ride status intent.
-- [protocol INGetRideStatusIntentResponseObserver](https://developer.apple.com/documentation/intents/ingetridestatusintentresponseobserver)
+- [protocol INGetRideStatusIntentResponseObserver](../Intents/ingetridestatusintentresponseobserver.md)
   An interface for providing updated status for an active ride.
 ### Cancel Ride
-- [protocol INCancelRideIntentHandling](https://developer.apple.com/documentation/intents/incancelrideintenthandling)
+- [protocol INCancelRideIntentHandling](../Intents/incancelrideintenthandling.md)
   The handler interface for canceling a previously booked ride.
-- [class INCancelRideIntent](https://developer.apple.com/documentation/intents/incancelrideintent)
+- [class INCancelRideIntent](../Intents/incancelrideintent.md)
   An intent requesting the cancellation of a previously booked ride.
-- [class INCancelRideIntentResponse](https://developer.apple.com/documentation/intents/incancelrideintentresponse)
+- [class INCancelRideIntentResponse](../Intents/incancelrideintentresponse.md)
   Your app’s response to a cancel ride intent.
 ### Send Ride Feedback
-- [protocol INSendRideFeedbackIntentHandling](https://developer.apple.com/documentation/intents/insendridefeedbackintenthandling)
+- [protocol INSendRideFeedbackIntentHandling](../Intents/insendridefeedbackintenthandling.md)
   The handler interface for sending ride feedback to your service.
-- [class INSendRideFeedbackIntent](https://developer.apple.com/documentation/intents/insendridefeedbackintent)
+- [class INSendRideFeedbackIntent](../Intents/insendridefeedbackintent.md)
   An intent indicating that the user provided feedback for a completed ride.
-- [class INSendRideFeedbackIntentResponse](https://developer.apple.com/documentation/intents/insendridefeedbackintentresponse)
+- [class INSendRideFeedbackIntentResponse](../Intents/insendridefeedbackintentresponse.md)
   Your app’s response to a send ride feedback intent.
 ### Data Objects
-- [class INRideOption](https://developer.apple.com/documentation/intents/inrideoption)
+- [class INRideOption](../Intents/inrideoption.md)
   Details about a type of ride offered by your ride-booking service.
-- [class INRideStatus](https://developer.apple.com/documentation/intents/inridestatus)
+- [class INRideStatus](../Intents/inridestatus.md)
   The status of a ride booked through a ride-booking service.
-- [class INRideDriver](https://developer.apple.com/documentation/intents/inridedriver)
+- [class INRideDriver](../Intents/inridedriver.md)
   Identifying information about a driver of a ride service.
-- [class INRideVehicle](https://developer.apple.com/documentation/intents/inridevehicle)
+- [class INRideVehicle](../Intents/inridevehicle.md)
   A specific vehicle used by a ride-booking service.
-- [class INRideFareLineItem](https://developer.apple.com/documentation/intents/inridefarelineitem)
+- [class INRideFareLineItem](../Intents/inridefarelineitem.md)
   A specific type of ride-related charge.
-- [class INRidePartySizeOption](https://developer.apple.com/documentation/intents/inridepartysizeoption)
+- [class INRidePartySizeOption](../Intents/inridepartysizeoption.md)
   The price of a ride involving the specified number of people.
-- [class INRideCompletionStatus](https://developer.apple.com/documentation/intents/inridecompletionstatus)
+- [class INRideCompletionStatus](../Intents/inridecompletionstatus.md)
   Additional details about whether a ride completed successfully or someone canceled the ride.
 
 ## See Also

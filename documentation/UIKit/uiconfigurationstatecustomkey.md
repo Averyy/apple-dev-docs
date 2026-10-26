@@ -170,6 +170,12 @@ NSString* const UICONFIGURATIONSTATECUSTOMKEY_IS_ARCHIVED = @"com.my-app.MyCell.
   A structure that encapsulates a cell’s state.
 - [protocol UIConfigurationState](./uiconfigurationstate-8d7pd.md)
   The requirements for an object that encapsulates a view’s state.
+- [UIViewConfigurationState](./uiviewconfigurationstate-c.class.md)
+  A structure that encapsulates a view’s state.
+- [UICellConfigurationState](./uicellconfigurationstate-c.class.md)
+  An object that encapsulates a cell’s state.
+- [UIConfigurationState](./uiconfigurationstate-1smq1.md)
+  The requirements for an object that encapsulates a view’s state.
 
 
 ---

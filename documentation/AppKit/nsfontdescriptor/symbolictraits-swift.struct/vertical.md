@@ -52,6 +52,8 @@ NSFontDescriptorTraitVertical
   The font’s characters use square transitions, without brackets, between strokes and serifs.
 - [static var classFreeformSerifs: NSFontDescriptor.SymbolicTraits](./classfreeformserifs.md)
   The font’s characters include serifs, and don’t generally fit within other serif design classifications.
+- [NSFontDescriptorClassUnknown](../../nsfontdescriptorsymbolictraits/nsfontdescriptorclassunknown.md)
+  The font has no design classification.
 
 
 ---

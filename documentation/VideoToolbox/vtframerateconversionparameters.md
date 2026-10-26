@@ -33,6 +33,8 @@ The parameters within VTFrameRateConversionParameters are frame level parameters
 ### Creating conversion parameters
 - [convenience init?(sourceFrame: VTFrameProcessorFrame, nextFrame: VTFrameProcessorFrame, opticalFlow: VTFrameProcessorOpticalFlow?, interpolationPhase: [Float], submissionMode: VTFrameRateConversionParameters.SubmissionMode, destinationFrames: [VTFrameProcessorFrame])](./vtframerateconversionparameters/init%28sourceframe,nextframe,opticalflow,interpolationphase,submissionmode,destinationframes%29.md)
   Creates a new frame rate conversion parameters object.
+- [- initWithSourceFrame:nextFrame:opticalFlow:interpolationPhase:submissionMode:destinationFrames:](./vtframerateconversionparameters/initwithsourceframe_nextframe_opticalflow_interpolationphase_submissionmode_destinationframes_.md)
+  Creates a new frame rate conversion parameters object.
 ### Inspecting the parameters
 - [var sourceFrame: VTFrameProcessorFrame](./vtframerateconversionparameters/sourceframe.md)
   The current source frame.
@@ -46,6 +48,10 @@ The parameters within VTFrameRateConversionParameters are frame level parameters
   A value describing the processing request in a parameters submission object.
 - [VTFrameRateConversionParameters.SubmissionMode](./vtframerateconversionparameters/submissionmode-swift.enum.md)
   A value describing the processing request in a parameters submission object.
+- [interpolationPhase](./vtframerateconversionparameters/interpolationphase-6wdns.md)
+  An array of floating-point values that indicate which intervals to insert a frame between the current and next frame.
+- [destinationFrames](./vtframerateconversionparameters/destinationframes.md)
+  A caller-allocated array of frames that contains the pixel buffers to receive the results.
 
 ## Relationships
 

@@ -49,6 +49,10 @@ SensorKit places a 24-hour holding period on newly recorded data before an app c
   Provides the current absolute time.
 - [func toCFAbsoluteTime() -> CFAbsoluteTime](./srabsolutetime/tocfabsolutetime%28%29.md)
   Converts an absolute time to a core-foundation absolute time.
+- [SRAbsoluteTimeFromCFAbsoluteTime](./srabsolutetimefromcfabsolutetime.md)
+  Provides an absolute time equivalent to the argument core-foundation absolute time.
+- [SRAbsoluteTimeFromContinuousTime](./srabsolutetimefromcontinuoustime.md)
+  Provides an absolute time equivalent to the argument continuous time.
 
 ## Relationships
 

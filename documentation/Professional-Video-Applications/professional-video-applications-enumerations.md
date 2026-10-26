@@ -18,6 +18,37 @@
   The type of lighting.
 - [typealias FxAnalysisLocation](../professional_video_applications/fxanalysislocation.md)
   Indicates the type of hardware to use for analysis, either CPU or GPU.
+### Anonymous enumerations
+- [enum (unnamed)](../professional_video_applications/enum_%28unnamed%29-14vbr.md)
+  The field order.
+- [enum (unnamed)](../professional_video_applications/enum_%28unnamed%29-187sa.md)
+- [enum (unnamed)](../professional_video_applications/enum_%28unnamed%29-1tjh8.md)
+  The possible states of analysis, as reported by the host application when queried with [`analysisStateForEffect`](../professional_video_applications/fxanalysisapi/analysisstateforeffect%28%29.md).
+- [enum (unnamed)](../professional_video_applications/enum_%28unnamed%29-2epbe.md)
+- [enum (unnamed)](../professional_video_applications/enum_%28unnamed%29-35krj.md)
+  The path blend mode.
+- [enum (unnamed)](../professional_video_applications/enum_%28unnamed%29-3fxly.md)
+  The bit-depth
+- [enum (unnamed)](../professional_video_applications/enum_%28unnamed%29-3hmov.md)
+  The render quality.
+- [enum (unnamed)](../professional_video_applications/enum_%28unnamed%29-424rv.md)
+- [enum (unnamed)](../professional_video_applications/enum_%28unnamed%29-5fh3s.md)
+  Errors returned by plug-in hosts applications.
+- [enum (unnamed)](../professional_video_applications/enum_%28unnamed%29-5key8.md)
+- [enum (unnamed)](../professional_video_applications/enum_%28unnamed%29-5ml7h.md)
+- [enum (unnamed)](../professional_video_applications/enum_%28unnamed%29-5r2wt.md)
+  Constants used to describe a set of color primaries.
+- [enum (unnamed)](../professional_video_applications/enum_%28unnamed%29-5zg4z.md)
+- [enum (unnamed)](../professional_video_applications/enum_%28unnamed%29-74key.md)
+- [enum (unnamed)](../professional_video_applications/enum_%28unnamed%29-7b48r.md)
+- [enum (unnamed)](../professional_video_applications/enum_%28unnamed%29-7jahq.md)
+- [enum (unnamed)](../professional_video_applications/enum_%28unnamed%29-97fc6.md)
+  The path style.
+- [enum (unnamed)](../professional_video_applications/enum_%28unnamed%29-9p3nd.md)
+- [enum (unnamed)](../professional_video_applications/enum_%28unnamed%29-9xe5i.md)
+  The field.
+- [enum (unnamed)](../professional_video_applications/enum_%28unnamed%29-rvg5.md)
+  The path color.
 
 ## See Also
 

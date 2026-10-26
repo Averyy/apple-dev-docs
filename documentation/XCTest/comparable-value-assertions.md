@@ -16,6 +16,14 @@ Compare two values to determine whether one is larger or smaller than the other.
   Asserts that the value of the first expression is less than or equal to the value of the second expression.
 - [func XCTAssertLessThan<T>(@autoclosure () throws -> T, @autoclosure () throws -> T, @autoclosure () -> String, file: StaticString, line: UInt)](./xctassertlessthan%28_,_,_,file,line%29.md)
   Asserts that the value of the first expression is less than the value of the second expression.
+- [XCTAssertGreaterThan](./xctassertgreaterthan.md)
+  Asserts that the value of the first expression is greater than the value of the second expression.
+- [XCTAssertGreaterThanOrEqual](./xctassertgreaterthanorequal.md)
+  Asserts that the value of the first expression is greater than or equal to the value of the second expression.
+- [XCTAssertLessThanOrEqual](./xctassertlessthanorequal.md)
+  Asserts that the value of the first expression is less than or equal to the value of the second expression.
+- [XCTAssertLessThan](./xctassertlessthan.md)
+  Asserts that the value of the first expression is less than the value of the second expression.
 
 ## See Also
 

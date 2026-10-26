@@ -26,6 +26,8 @@ class MPSNNReshapeGradientNode
 
 ### Initializers
 - [init(sourceGradient: MPSNNImageNode, sourceImage: MPSNNImageNode, gradientState: MPSNNGradientStateNode)](./mpsnnreshapegradientnode/init%28sourcegradient,sourceimage,gradientstate%29.md)
+### Type Methods
+- [+ nodeWithSourceGradient:sourceImage:gradientState:](./mpsnnreshapegradientnode/nodewithsourcegradient_sourceimage_gradientstate_.md)
 
 ## Relationships
 

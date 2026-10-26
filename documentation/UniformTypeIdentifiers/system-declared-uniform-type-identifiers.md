@@ -18,12 +18,24 @@ Uniform type identifiers declare common types for resources an app loads, saves,
   A type that represents Universal Scene Description content.
 - [static var usdz: UTType](./uttype-swift.struct/usdz.md)
   A type that represents Universal Scene Description Package content.
+- [UTType3DContent](./uttype3dcontent.md)
+  A base type that represents 3D content.
+- [UTTypeUSD](./uttypeusd.md)
+  A type that represents Universal Scene Description content.
+- [UTTypeUSDZ](./uttypeusdz.md)
+  A type that represents Universal Scene Description Package content.
 ### Apple 3D content
 - [static var realityFile: UTType](./uttype-swift.struct/realityfile.md)
   A type that represents a Reality Composer file.
 - [static var sceneKitScene: UTType](./uttype-swift.struct/scenekitscene.md)
   A type that represents a SceneKit serialized scene.
 - [static var arReferenceObject: UTType](./uttype-swift.struct/arreferenceobject.md)
+  A type that represents an augmented reality reference object.
+- [UTTypeRealityFile](./uttyperealityfile.md)
+  A type that represents a Reality Composer file.
+- [UTTypeSceneKitScene](./uttypescenekitscene.md)
+  A type that represents a SceneKit serialized scene.
+- [UTTypeARReferenceObject](./uttypearreferenceobject.md)
   A type that represents an augmented reality reference object.
 ### Apple file system objects
 - [static var directory: UTType](./uttype-swift.struct/directory.md)
@@ -40,12 +52,32 @@ Uniform type identifiers declare common types for resources an app loads, saves,
   A type that represents the root folder of a volume or mount point.
 - [static var diskImage: UTType](./uttype-swift.struct/diskimage.md)
   A type that represents a data item that’s mountable as a volume.
+- [UTTypeDirectory](./uttypedirectory.md)
+  A type that represents a file system directory, including packages and folders.
+- [UTTypeSymbolicLink](./uttypesymboliclink.md)
+  A type that represents a symbolic link.
+- [UTTypeMountPoint](./uttypemountpoint.md)
+  A type that represents a volume mount point.
+- [UTTypeAliasFile](./uttypealiasfile.md)
+  A type that represents an alias file.
+- [UTTypeFolder](./uttypefolder.md)
+  A type that represents a user-browsable directory.
+- [UTTypeVolume](./uttypevolume.md)
+  A type that represents the root folder of a volume or mount point.
+- [UTTypeDiskImage](./uttypediskimage.md)
+  A type that represents a data item that’s mountable as a volume.
 ### Apple image formats
 - [static var heic: UTType](./uttype-swift.struct/heic.md)
   A type that represents High Efficiency Image Coding images.
 - [static var heif: UTType](./uttype-swift.struct/heif.md)
   A type that represents High Efficiency Image File Format images.
 - [static var livePhoto: UTType](./uttype-swift.struct/livephoto.md)
+  A type that represents Live Photos.
+- [UTTypeHEIC](./uttypeheic.md)
+  A type that represents High Efficiency Image Coding images.
+- [UTTypeHEIF](./uttypeheif.md)
+  A type that represents High Efficiency Image File Format images.
+- [UTTypeLivePhoto](./uttypelivephoto.md)
   A type that represents Live Photos.
 ### Apple system types
 - [static var framework: UTType](./uttype-swift.struct/framework.md)
@@ -62,6 +94,20 @@ Uniform type identifiers declare common types for resources an app loads, saves,
   A type that represents an XPC service bundle.
 - [static var systemPreferencesPane: UTType](./uttype-swift.struct/systempreferencespane.md)
   A type that represents a System Preferences pane.
+- [UTTypeFramework](./uttypeframework.md)
+  A type that represents an Apple framework bundle.
+- [UTTypeApplicationBundle](./uttypeapplicationbundle.md)
+  A type that represents a bundled app.
+- [UTTypeApplicationExtension](./uttypeapplicationextension.md)
+  A type that represents an app extension.
+- [UTTypeSpotlightImporter](./uttypespotlightimporter.md)
+  A type that represents a Spotlight metadata importer bundle.
+- [UTTypeQuickLookGenerator](./uttypequicklookgenerator.md)
+  A type that represents a QuickLook preview generator bundle.
+- [UTTypeXPCService](./uttypexpcservice.md)
+  A type that represents an XPC service bundle.
+- [UTTypeSystemPreferencesPane](./uttypesystempreferencespane.md)
+  A type that represents a System Preferences pane.
 ### Application files
 - [static var pdf: UTType](./uttype-swift.struct/pdf.md)
   A type that represents Adobe Portable Document Format (PDF) documents.
@@ -70,6 +116,14 @@ Uniform type identifiers declare common types for resources an app loads, saves,
 - [static var flatRTFD: UTType](./uttype-swift.struct/flatrtfd.md)
   A type that represents flattened Rich Text Format Directory documents.
 - [static var epub: UTType](./uttype-swift.struct/epub.md)
+  A type that represents data in the electronic publication (EPUB) format.
+- [UTTypePDF](./uttypepdf.md)
+  A type that represents Adobe Portable Document Format (PDF) documents.
+- [UTTypeRTFD](./uttypertfd.md)
+  A type that represents Rich Text Format Directory documents.
+- [UTTypeFlatRTFD](./uttypeflatrtfd.md)
+  A type that represents flattened Rich Text Format Directory documents.
+- [UTTypeEPUB](./uttypeepub.md)
   A type that represents data in the electronic publication (EPUB) format.
 ### Audio
 - [static var mp3: UTType](./uttype-swift.struct/mp3.md)
@@ -83,6 +137,18 @@ Uniform type identifiers declare common types for resources an app loads, saves,
 - [static var playlist: UTType](./uttype-swift.struct/playlist.md)
   A base type that represents a playlist.
 - [static var m3uPlaylist: UTType](./uttype-swift.struct/m3uplaylist.md)
+  A type that represents an M3U or M3U8 playlist.
+- [UTTypeMP3](./uttypemp3.md)
+  A type that represents MP3 audio.
+- [UTTypeAIFF](./uttypeaiff.md)
+  A type that represents data in AIFF audio format.
+- [UTTypeWAV](./uttypewav.md)
+  A type that represents data in Microsoft Waveform Audio File Format.
+- [UTTypeMIDI](./uttypemidi.md)
+  A type that represents data in MIDI audio format.
+- [UTTypePlaylist](./uttypeplaylist.md)
+  A base type that represents a playlist.
+- [UTTypeM3UPlaylist](./uttypem3uplaylist.md)
   A type that represents an M3U or M3U8 playlist.
 ### Audio and video
 - [static var quickTimeMovie: UTType](./uttype-swift.struct/quicktimemovie.md)
@@ -103,6 +169,24 @@ Uniform type identifiers declare common types for resources an app loads, saves,
   A type that represents data in Apple-protected MPEG-4 format.
 - [static var avi: UTType](./uttype-swift.struct/avi.md)
   A type that represents data in AVI movie format.
+- [UTTypeQuickTimeMovie](./uttypequicktimemovie.md)
+  A type that represents a QuickTime movie.
+- [UTTypeMPEG](./uttypempeg.md)
+  A type that represents an MPEG-1 or MPEG-2 movie.
+- [UTTypeMPEG2Video](./uttypempeg2video.md)
+  A type that represents an MPEG-2 video.
+- [UTTypeMPEG2TransportStream](./uttypempeg2transportstream.md)
+  A type that represents data in MPEG-2 transport stream movie format.
+- [UTTypeMPEG4Movie](./uttypempeg4movie.md)
+  A type that represents an MPEG-4 movie.
+- [UTTypeMPEG4Audio](./uttypempeg4audio.md)
+  A type that represents an MPEG-4 audio layer file.
+- [UTTypeAppleProtectedMPEG4Video](./uttypeappleprotectedmpeg4video.md)
+  A type that represents data in Apple-protected MPEG-4 format.
+- [UTTypeAppleProtectedMPEG4Audio](./uttypeappleprotectedmpeg4audio.md)
+  A type that represents data in Apple-protected MPEG-4 format.
+- [UTTypeAVI](./uttypeavi.md)
+  A type that represents data in AVI movie format.
 ### Compiled programming language sources
 - [static var assemblyLanguageSource: UTType](./uttype-swift.struct/assemblylanguagesource.md)
   A type that represents assembly language source code.
@@ -120,6 +204,22 @@ Uniform type identifiers declare common types for resources an app loads, saves,
   A type that represents an Objective-C source code file.
 - [static var swiftSource: UTType](./uttype-swift.struct/swiftsource.md)
   A type that represents a Swift source code file.
+- [UTTypeAssemblyLanguageSource](./uttypeassemblylanguagesource.md)
+  A type that represents assembly language source code.
+- [UTTypeCHeader](./uttypecheader.md)
+  A type that represents a C header file.
+- [UTTypeCSource](./uttypecsource.md)
+  A type that represents a C source code file.
+- [UTTypeCPlusPlusHeader](./uttypecplusplusheader.md)
+  A type that represents a C++ header file.
+- [UTTypeCPlusPlusSource](./uttypecplusplussource.md)
+  A type that represents a C++ source code file.
+- [UTTypeObjectiveCPlusPlusSource](./uttypeobjectivecplusplussource.md)
+  A type that represents an Objective-C++ source code file.
+- [UTTypeObjectiveCSource](./uttypeobjectivecsource.md)
+  A type that represents an Objective-C source code file.
+- [UTTypeSwiftSource](./uttypeswiftsource.md)
+  A type that represents a Swift source code file.
 ### Compressed archives
 - [static var archive: UTType](./uttype-swift.struct/archive.md)
   A base type that represents an archive of files and directories.
@@ -131,10 +231,24 @@ Uniform type identifiers declare common types for resources an app loads, saves,
   A type that represents a bzip2 archive.
 - [static var appleArchive: UTType](./uttype-swift.struct/applearchive.md)
   A type that represents an Apple archive of files and directories.
+- [UTTypeArchive](./uttypearchive.md)
+  A base type that represents an archive of files and directories.
+- [UTTypeZIP](./uttypezip.md)
+  A type that represents a zip archive.
+- [UTTypeGZIP](./uttypegzip.md)
+  A type that represents a GNU zip archive.
+- [UTTypeBZ2](./uttypebz2.md)
+  A type that represents a bzip2 archive.
+- [UTTypeAppleArchive](./uttypeapplearchive.md)
+  A type that represents an Apple archive of files and directories.
 ### Cryptographic files
 - [static var pkcs12: UTType](./uttype-swift.struct/pkcs12.md)
   A type that represents Public Key Cryptography Standard (PKCS) 12 data.
 - [static var x509Certificate: UTType](./uttype-swift.struct/x509certificate.md)
+  A type that represents an X.509 certificate.
+- [UTTypePKCS12](./uttypepkcs12.md)
+  A type that represents Public Key Cryptography Standard (PKCS) 12 data.
+- [UTTypeX509Certificate](./uttypex509certificate.md)
   A type that represents an X.509 certificate.
 ### Data interchange formats
 - [static var delimitedText: UTType](./uttype-swift.struct/delimitedtext.md)
@@ -155,6 +269,24 @@ Uniform type identifiers declare common types for resources an app loads, saves,
   A type that represents JavaScript Object Notation (JSON) data.
 - [static var vCard: UTType](./uttype-swift.struct/vcard.md)
   A type that represents a vCard file.
+- [UTTypeDelimitedText](./uttypedelimitedtext.md)
+  A base type that represents text containing delimited values.
+- [UTTypeCommaSeparatedText](./uttypecommaseparatedtext.md)
+  A type that represents text containing comma-separated values.
+- [UTTypeTabSeparatedText](./uttypetabseparatedtext.md)
+  A type that represents text containing tab-separated values.
+- [UTTypeUTF8TabSeparatedText](./uttypeutf8tabseparatedtext.md)
+  A type that represents UTF-8–encoded text containing tab-separated values.
+- [UTTypeRTF](./uttypertf.md)
+  A type that represents Rich Text Format data.
+- [UTTypeXML](./uttypexml.md)
+  A type that represents generic XML data.
+- [UTTypeYAML](./uttypeyaml.md)
+  A type that represents Yet Another Markup Language data.
+- [UTTypeJSON](./uttypejson.md)
+  A type that represents JavaScript Object Notation (JSON) data.
+- [UTTypeVCard](./uttypevcard.md)
+  A type that represents a vCard file.
 ### Executables
 - [static var executable: UTType](./uttype-swift.struct/executable.md)
   A type that represents an executable.
@@ -162,10 +294,20 @@ Uniform type identifiers declare common types for resources an app loads, saves,
   A type that represents a UNIX executable.
 - [static var exe: UTType](./uttype-swift.struct/exe.md)
   A type that represents a Windows executable.
+- [UTTypeExecutable](./uttypeexecutable.md)
+  A type that represents an executable.
+- [UTTypeUnixExecutable](./uttypeunixexecutable.md)
+  A type that represents a UNIX executable.
+- [UTTypeEXE](./uttypeexe.md)
+  A type that represents a Windows executable.
 ### Icon images
 - [static var ico: UTType](./uttype-swift.struct/ico.md)
   A type that represents Windows icon data.
 - [static var icns: UTType](./uttype-swift.struct/icns.md)
+  A type that represents Apple icon data.
+- [UTTypeICO](./uttypeico.md)
+  A type that represents Windows icon data.
+- [UTTypeICNS](./uttypeicns.md)
   A type that represents Apple icon data.
 ### Images
 - [static var png: UTType](./uttype-swift.struct/png.md)
@@ -184,6 +326,22 @@ Uniform type identifiers declare common types for resources an app loads, saves,
   A type that represents a scalable vector graphics (SVG) image.
 - [static var rawImage: UTType](./uttype-swift.struct/rawimage.md)
   A base type that represents a raw image format that you use in digital photography.
+- [UTTypePNG](./uttypepng.md)
+  A type that represents a PNG image.
+- [UTTypeGIF](./uttypegif.md)
+  A type that represents a GIF image.
+- [UTTypeJPEG](./uttypejpeg.md)
+  A type that represents a JPEG image.
+- [UTTypeWebP](./uttypewebp.md)
+  A type that represents a WebP image.
+- [UTTypeTIFF](./uttypetiff.md)
+  A type that represents a TIFF image.
+- [UTTypeBMP](./uttypebmp.md)
+  A type that represents a Windows bitmap image.
+- [UTTypeSVG](./uttypesvg.md)
+  A type that represents a scalable vector graphics (SVG) image.
+- [UTTypeRAWImage](./uttyperawimage.md)
+  A base type that represents a raw image format that you use in digital photography.
 ### Internet-specific
 - [static var html: UTType](./uttype-swift.struct/html.md)
   A type that represents any version of HTML.
@@ -193,12 +351,26 @@ Uniform type identifiers declare common types for resources an app loads, saves,
   A base type that represents an Apple internet location file.
 - [static var internetShortcut: UTType](./uttype-swift.struct/internetshortcut.md)
   A type that represents a Microsoft internet shortcut file.
+- [UTTypeHTML](./uttypehtml.md)
+  A type that represents any version of HTML.
+- [UTTypeWebArchive](./uttypewebarchive.md)
+  A type that represents WebKit web archive data.
+- [UTTypeInternetLocation](./uttypeinternetlocation.md)
+  A base type that represents an Apple internet location file.
+- [UTTypeInternetShortcut](./uttypeinternetshortcut.md)
+  A type that represents a Microsoft internet shortcut file.
 ### Property lists
 - [static var propertyList: UTType](./uttype-swift.struct/propertylist.md)
   A base type that represents a property list.
 - [static var xmlPropertyList: UTType](./uttype-swift.struct/xmlpropertylist.md)
   A type that represents an XML property list.
 - [static var binaryPropertyList: UTType](./uttype-swift.struct/binarypropertylist.md)
+  A type that represents a binary property list.
+- [UTTypePropertyList](./uttypepropertylist.md)
+  A base type that represents a property list.
+- [UTTypeXMLPropertyList](./uttypexmlpropertylist.md)
+  A type that represents an XML property list.
+- [UTTypeBinaryPropertyList](./uttypebinarypropertylist.md)
   A type that represents a binary property list.
 ### Shazam
 - [static var shazamSignature: UTType](./uttype-swift.struct/shazamsignature.md)
@@ -228,6 +400,28 @@ Uniform type identifiers declare common types for resources an app loads, saves,
   A type that represents a Perl script.
 - [static var phpScript: UTType](./uttype-swift.struct/phpscript.md)
   A type that represents a PHP script.
+- [UTTypeScript](./uttypescript.md)
+  A base type that represents any scripting language source.
+- [UTTypeAppleScript](./uttypeapplescript.md)
+  A type that represents an AppleScript text-based script.
+- [UTTypeJavaScript](./uttypejavascript.md)
+  A type that represents JavaScript source code.
+- [UTTypeOSAScript](./uttypeosascript.md)
+  A type that represents an Open Scripting Architecture binary script.
+- [UTTypeOSAScriptBundle](./uttypeosascriptbundle.md)
+  A type that represents an Open Scripting Architecture script bundle.
+- [UTTypeMakefile](./uttypemakefile.md)
+  A type that represents a Makefile.
+- [UTTypeShellScript](./uttypeshellscript.md)
+  A base type that represents a shell script.
+- [UTTypePythonScript](./uttypepythonscript.md)
+  A type that represents a Python script.
+- [UTTypeRubyScript](./uttyperubyscript.md)
+  A type that represents a Ruby script.
+- [UTTypePerlScript](./uttypeperlscript.md)
+  A type that represents a Perl script.
+- [UTTypePHPScript](./uttypephpscript.md)
+  A type that represents a PHP script.
 ### Text files
 - [static var text: UTType](./uttype-swift.struct/text.md)
   A base type that represents all text-encoded data, including text with markup.
@@ -239,12 +433,30 @@ Uniform type identifiers declare common types for resources an app loads, saves,
   A type that represents plain text encoded as UTF-16 in native byte order with an optional bill of materials.
 - [static var utf16ExternalPlainText: UTType](./uttype-swift.struct/utf16externalplaintext.md)
   A type that represents plain text encoded as UTF-16 with an optional bill of materials.
+- [UTTypeText](./uttypetext.md)
+  A base type that represents all text-encoded data, including text with markup.
+- [UTTypePlainText](./uttypeplaintext.md)
+  A type that represents text with no markup and an unspecified encoding.
+- [UTTypeUTF8PlainText](./uttypeutf8plaintext.md)
+  A type that represents plain text encoded as UTF-8.
+- [UTTypeUTF16PlainText](./uttypeutf16plaintext.md)
+  A type that represents plain text encoded as UTF-16 in native byte order with an optional bill of materials.
+- [UTTypeUTF16ExternalPlainText](./uttypeutf16externalplaintext.md)
+  A type that represents plain text encoded as UTF-16 with an optional BOM.
+- [UTTypeMarkdown](./uttypemarkdown.md)
+  A type that represents Markdown data.
 ### URLs
 - [static var url: UTType](./uttype-swift.struct/url.md)
   A type that represents a URL.
 - [static var fileURL: UTType](./uttype-swift.struct/fileurl.md)
   A type that represents a URL to a file in the file system.
 - [static var urlBookmarkData: UTType](./uttype-swift.struct/urlbookmarkdata.md)
+  A type that represents a URL bookmark.
+- [UTTypeURL](./uttypeurl.md)
+  A type that represents a URL.
+- [UTTypeFileURL](./uttypefileurl.md)
+  A type that represents a URL to a file in the file system.
+- [UTTypeURLBookmarkData](./uttypeurlbookmarkdata.md)
   A type that represents a URL bookmark.
 ### Apple system base types
 - [static var item: UTType](./uttype-swift.struct/item.md)
@@ -271,6 +483,30 @@ Uniform type identifiers declare common types for resources an app loads, saves,
   A base type that represents bookmark data.
 - [static var log: UTType](./uttype-swift.struct/log.md)
   A base type that represents console log data.
+- [UTTypeItem](./uttypeitem.md)
+  A generic base type for most objects, such as files or directories.
+- [UTTypeContent](./uttypecontent.md)
+  A base type that represents anything containing user-viewable content.
+- [UTTypeCompositeContent](./uttypecompositecontent.md)
+  A base type that represents a content format supporting mixed embedded content.
+- [UTTypeData](./uttypedata.md)
+  A base type that represents any sort of byte stream, including files and in-memory data.
+- [UTTypeResolvable](./uttyperesolvable.md)
+  A base type that represents a resolvable reference, including symbolic links and aliases.
+- [UTTypePackage](./uttypepackage.md)
+  A base type that represents a packaged directory.
+- [UTTypeBundle](./uttypebundle.md)
+  A base type that represents a directory that conforms to one of the bundle layouts.
+- [UTTypePluginBundle](./uttypepluginbundle.md)
+  A base type that represents a bundle-based plug-in.
+- [UTTypeApplication](./uttypeapplication.md)
+  A base type that represents a macOS, iOS, iPadOS, watchOS, and tvOS app.
+- [UTTypeSourceCode](./uttypesourcecode.md)
+  A base type that represents source code of any programming language.
+- [UTTypeBookmark](./uttypebookmark.md)
+  A base type that represents bookmark data.
+- [UTTypeLog](./uttypelog.md)
+  A base type that represents console log data.
 ### Application base types
 - [static var spreadsheet: UTType](./uttype-swift.struct/spreadsheet.md)
   A base type that represents a spreadsheet document.
@@ -290,6 +526,24 @@ Uniform type identifiers declare common types for resources an app loads, saves,
   A type that represents an email message.
 - [static var font: UTType](./uttype-swift.struct/font.md)
   A base type that represents a font.
+- [UTTypeSpreadsheet](./uttypespreadsheet.md)
+  A base type that represents a spreadsheet document.
+- [UTTypePresentation](./uttypepresentation.md)
+  A base type that represents a presentation document.
+- [UTTypeDatabase](./uttypedatabase.md)
+  A base type that represents a database store.
+- [UTTypeMessage](./uttypemessage.md)
+  A base type that represents a message.
+- [UTTypeContact](./uttypecontact.md)
+  A base type that represents contact information.
+- [UTTypeCalendarEvent](./uttypecalendarevent.md)
+  A base type that represents a calendar event.
+- [UTTypeToDoItem](./uttypetodoitem.md)
+  A type that represents a to-do item.
+- [UTTypeEmailMessage](./uttypeemailmessage.md)
+  A type that represents an email message.
+- [UTTypeFont](./uttypefont.md)
+  A base type that represents a font.
 ### Image, audio, and video base types
 - [static var image: UTType](./uttype-swift.struct/image.md)
   A base type that represents image data.
@@ -301,11 +555,25 @@ Uniform type identifiers declare common types for resources an app loads, saves,
   A base type representing media formats that may contain both video and audio.
 - [static var video: UTType](./uttype-swift.struct/video.md)
   A type that represents video that doesn’t contain audio.
+- [UTTypeImage](./uttypeimage.md)
+  A base type that represents image data.
+- [UTTypeAudio](./uttypeaudio.md)
+  A type that represents audio that doesn’t contain video.
+- [UTTypeAudiovisualContent](./uttypeaudiovisualcontent.md)
+  A base type that represents data that contains video content that may or may not also include audio.
+- [UTTypeMovie](./uttypemovie.md)
+  A base type representing media formats that may contain both video and audio.
+- [UTTypeVideo](./uttypevideo.md)
+  A type that represents video that doesn’t contain audio.
 ### Tag classes
 - [static var filenameExtension: UTTagClass](./uttagclass/filenameextension.md)
   A type property that returns the tag class used to map a type to a filename extension.
 - [static var mimeType: UTTagClass](./uttagclass/mimetype.md)
   A type property that returns the tag class used to map a type to a MIME type.
+- [UTTagClassFilenameExtension](./uttagclassfilenameextension.md)
+  The string identifier for the tag that maps to filename extensions.
+- [UTTagClassMIMEType](./uttagclassmimetype.md)
+  The string identifier for the tag that maps to MIME types.
 
 ## See Also
 

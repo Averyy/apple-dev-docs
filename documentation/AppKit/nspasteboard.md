@@ -122,6 +122,12 @@ The general pasteboard, available by way of the [`general`](./nspasteboard/gener
   An object that contains common types of metadata that the data detection system matches for a pasteboard.
 - [Pasteboard detection metadata types](./nspasteboard-detection-metadata-types.md)
   Common types of metadata that the data detection system matches for a pasteboard.
+- [- detectPatternsForPatterns:completionHandler:](./nspasteboard/detectpatternsforpatterns_completionhandler_.md)
+  Determines whether the first pasteboard item matches the specified patterns, without notifying the person using the app.
+- [- detectValuesForPatterns:completionHandler:](./nspasteboard/detectvaluesforpatterns_completionhandler_.md)
+  Determines whether the first pasteboard item matches the specified patterns, reading the contents if it finds a match.
+- [- detectMetadataForTypes:completionHandler:](./nspasteboard/detectmetadatafortypes_completionhandler_.md)
+  Determines available metadata from the specified metadata types for the first pasteboard item, without notifying the person using the app.
 ### Preparing the pasteboard for content
 - [func prepareForNewContents(with: NSPasteboard.ContentsOptions) -> Int](./nspasteboard/preparefornewcontents%28with%29.md)
   Prepares the pasteboard to receive new contents, removing the existing pasteboard contents.

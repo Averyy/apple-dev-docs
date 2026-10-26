@@ -50,6 +50,16 @@ A structure that represents Euler angles and ordering.
   A quaternion that represents the rotation.
 - [var vector: simd_double4](./vector.md)
   The underlying vector of the rotation.
+- [SPRotation3DGetAngle](../sprotation3dgetangle.md)
+  The angle of the rotation.
+- [SPRotation3DGetAxis](../sprotation3dgetaxis.md)
+  The axis of the rotation.
+- [vector](../sprotation3d/vector.md)
+  The underlying vector of the rotation.
+- [SPRotation3DGetQuaternion](../sprotation3dgetquaternion.md)
+  A quaternion that represents the rotation.
+- [SPRotationAxis3DGetVector](../sprotationaxis3dgetvector.md)
+  A simd three-element vector that contains the x-, y-, and z-coordinate values.
 
 
 ---

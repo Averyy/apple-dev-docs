@@ -36,6 +36,10 @@ static void SparseMultiply(SparseMatrix_Complex_Double A, DenseVector_Complex_Do
 ### Complex multiplication functions
 - [func SparseMultiply(SparseMatrix_Complex_Float, DenseVector_Complex_Float, DenseVector_Complex_Float)](./sparsemultiply%28_,_,_%29-6gzb3.md)
   Performs the multiplication `y = Ax` for complex float values
+- [SparseMultiply](./sparsemultiply-15ysy.md)
+  Performs the multiplication `y = alpha * Ax` for complex double values.
+- [SparseMultiply](./sparsemultiply-4xaml.md)
+  Performs the multiplication `y = alpha * Ax` for complex float values.
 
 
 ---

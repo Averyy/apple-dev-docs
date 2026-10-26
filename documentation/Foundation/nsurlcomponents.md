@@ -46,6 +46,12 @@ You create a URL components object in one of three ways: from an [`NSString`](./
   Creates a URL components instance from the provided string, optionally IDNA- and percent-encoding any invalid characters.
 - [init?(url: URL, resolvingAgainstBaseURL: Bool)](./nsurlcomponents/init%28url,resolvingagainstbaseurl%29-3bbte.md)
   Creates a URL components object by parsing the URL from an `NSURL` object.
+- [+ componentsWithString:](./nsurlcomponents/componentswithstring_.md)
+  Returns a URL components object by parsing a URL in string form.
+- [+ componentsWithString:encodingInvalidCharacters:](./nsurlcomponents/componentswithstring_encodinginvalidcharacters_.md)
+  Returns a URL components instance from the provided string, optionally IDNA- and percent-encoding any invalid characters.
+- [+ componentsWithURL:resolvingAgainstBaseURL:](./nsurlcomponents/componentswithurl_resolvingagainstbaseurl_.md)
+  Returns a URL components object by parsing the URL from an `NSURL` object.
 ### Getting the URL
 - [var string: String?](./nsurlcomponents/string.md)
   A URL derived from the components object, in string form.
@@ -123,6 +129,14 @@ You create a URL components object in one of three ways: from an [`NSString`](./
 - [Hashable](../Swift/hashable.md)
 - [NSCopying](./nscopying.md)
 - [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+
+## See Also
+
+### URLs
+- [NSURL](./nsurl.md)
+  An object that represents the location of a resource, such as an item on a remote server or the path to a local file.
+- [NSURLQueryItem](./nsurlqueryitem.md)
+  An object representing a single name/value pair for an item in the query portion of a URL.
 
 
 ---

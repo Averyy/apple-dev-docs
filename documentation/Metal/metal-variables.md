@@ -18,6 +18,7 @@
   The default performance profile for a device.
 - [static let sustained: NSProcessPerformanceProfile](./nsprocessperformanceprofile/sustained.md)
   The performance profile for a device representing sustained performance.
+- [NSProcessInfoPerformanceProfileDidChangeNotification](./nsprocessinfoperformanceprofiledidchangenotification.md)
 
 ## See Also
 
@@ -26,6 +27,8 @@
 - [Metal enumerations](./metal-enumerations.md)
 - [Metal constants](./metal-constants.md)
 - [Metal data types](./metal-data-types.md)
+- [Metal functions](./metal-functions.md)
+- [Metal macros](./metal-macros.md)
 
 
 ---

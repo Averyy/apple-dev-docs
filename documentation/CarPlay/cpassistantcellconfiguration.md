@@ -25,7 +25,7 @@ class CPAssistantCellConfiguration
 
 An audio or communication CarPlay app can choose to display an *assistant cell* in a list template that allows the user to interact with the app using Siri. You create an instance of this configuration object that describes the position, visibility, and supported Siri intent, and provide that to your app’s list template using the [`init(title:sections:assistantCellConfiguration:)`](./cplisttemplate/init%28title,sections,assistantcellconfiguration%29.md) initializer or the [`assistantCellConfiguration`](./cplisttemplate/assistantcellconfiguration.md) property.
 
-Your app must include an Intents Extension that handles the intent corresponding to the action you specify in the [`assistantAction`](./cpassistantcellconfiguration/assistantaction.md) property; audio apps must support [`INPlayMediaIntent`](https://developer.apple.com/documentation/intents/inplaymediaintent) and communication apps must support [`INStartCallIntent`](https://developer.apple.com/documentation/intents/instartcallintent). For more information, see [Creating an Intents App Extension](../SiriKit/creating-an-intents-app-extension.md).
+Your app must include an Intents Extension that handles the intent corresponding to the action you specify in the [`assistantAction`](./cpassistantcellconfiguration/assistantaction.md) property; audio apps must support [`INPlayMediaIntent`](../Intents/inplaymediaintent.md) and communication apps must support [`INStartCallIntent`](../Intents/instartcallintent.md). For more information, see [Creating an Intents App Extension](../SiriKit/creating-an-intents-app-extension.md).
 
 ## Topics
 

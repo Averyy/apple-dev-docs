@@ -21,7 +21,7 @@ object AdvertisementAutoPlacement
 
 #### Discussion
 
-Use the `AdvertisementAutoPlacement` object to insert dynamic advertisements between [`Body`](./body.md), [`Chapter`](./chapter.md), [`Section`](https://developer.apple.com/documentation/applenewsapi/section), or [`Container`](./container.md) components in an article.
+Use the `AdvertisementAutoPlacement` object to insert dynamic advertisements between [`Body`](./body.md), [`Chapter`](./chapter.md), [`Section`](../AppleNewsAPI/section.md), or [`Container`](./container.md) components in an article.
 
 ##### Example
 

@@ -48,6 +48,12 @@ An initialized video node.
   Tells you when to initialize a video node that was created from an archive.
 - [init(videoURL: URL)](./init%28videourl%29.md)
   Initializes a video node using a URL that points to a video file.
+- [+ videoNodeWithFileNamed:](./videonodewithfilenamed_.md)
+  Creates and initializes a new video node using a video file stored in the app bundle.
+- [+ videoNodeWithAVPlayer:](./videonodewithavplayer_.md)
+  Creates and initializes a video node using an existing video player object.
+- [+ videoNodeWithURL:](./videonodewithurl_.md)
+  Creates and initializes a video node using a URL that points to a video file.
 
 
 ---

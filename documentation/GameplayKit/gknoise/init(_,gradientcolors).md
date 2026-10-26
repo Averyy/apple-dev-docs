@@ -62,6 +62,10 @@ The `gradientColors` parameter specifies a color ramp as metadata to accompany t
 ### Creating Noise
 - [convenience init(GKNoiseSource)](./init%28_%29.md)
   Initializes a noise object with the specified noise source.
+- [+ noiseWithNoiseSource:](./noisewithnoisesource_.md)
+  Creates a noise object with the specified noise source.
+- [+ noiseWithNoiseSource:gradientColors:](./noisewithnoisesource_gradientcolors_.md)
+  Creates a noise object with the specified noise source, with colors for later use in generating noise textures.
 
 
 ---

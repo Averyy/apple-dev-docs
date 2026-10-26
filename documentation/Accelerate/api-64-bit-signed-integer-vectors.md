@@ -8,22 +8,22 @@ Perform operations on vectors that contain signed 64-bit integer elements.
 ## Topics
 
 ### Vector Data Types
-- [typealias simd_long1](https://developer.apple.com/documentation/simd/simd_long1)
+- [typealias simd_long1](../simd/simd_long1.md)
   A vector of one 64-bit signed integer element.
-- [typealias simd_long2](https://developer.apple.com/documentation/simd/simd_long2)
+- [typealias simd_long2](../simd/simd_long2.md)
   A vector of two 64-bit signed integer elements.
-- [typealias simd_long3](https://developer.apple.com/documentation/simd/simd_long3)
+- [typealias simd_long3](../simd/simd_long3.md)
   A vector of three 64-bit signed integer elements.
-- [typealias simd_long4](https://developer.apple.com/documentation/simd/simd_long4)
+- [typealias simd_long4](../simd/simd_long4.md)
   A vector of four 64-bit signed integer elements.
-- [typealias simd_long8](https://developer.apple.com/documentation/simd/simd_long8)
+- [typealias simd_long8](../simd/simd_long8.md)
   A vector of eight 64-bit signed integer elements.
 ### Packed Vector Data Types
-- [typealias simd_packed_long2](https://developer.apple.com/documentation/simd/simd_packed_long2)
+- [typealias simd_packed_long2](../simd/simd_packed_long2.md)
   A packed vector of two 64-bit signed integer elements.
-- [typealias simd_packed_long4](https://developer.apple.com/documentation/simd/simd_packed_long4)
+- [typealias simd_packed_long4](../simd/simd_packed_long4.md)
   A packed vector of four 64-bit signed integer elements.
-- [typealias simd_packed_long8](https://developer.apple.com/documentation/simd/simd_packed_long8)
+- [typealias simd_packed_long8](../simd/simd_packed_long8.md)
   A packed vector of eight 64-bit signed integer elements.
 
 ## See Also

@@ -43,6 +43,8 @@ This property doesn’t indicate whether a video contains HDR content, HDR video
   A bitfield type that specifies an HDR mode.
 - [class let eligibleForHDRPlaybackDidChangeNotification: NSNotification.Name](./eligibleforhdrplaybackdidchangenotification.md)
   A notification that’s posted whenever HDR playback eligibility changes.
+- [AVPlayerAvailableHDRModesDidChangeNotification](../avplayeravailablehdrmodesdidchangenotification.md)
+  A notification that fires whenever availableHDRModes changes.
 
 
 ---

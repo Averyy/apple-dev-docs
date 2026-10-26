@@ -52,6 +52,10 @@ When called, the bytes are immediately copied and then the buffer is freed.
   Returns an initialized mutable data object capable of holding the specified number of bytes.
 - [init?(length: Int)](./nsmutabledata/init%28length%29.md)
   Initializes and returns a mutable data object containing a given number of zeroed bytes.
+- [+ dataWithCapacity:](./nsmutabledata/datawithcapacity_.md)
+  Creates and returns a mutable data object capable of holding the specified number of bytes.
+- [+ dataWithLength:](./nsmutabledata/datawithlength_.md)
+  Creates and returns an mutable data object containing a given number of zeroed bytes.
 ### Accessing Raw Bytes
 - [var mutableBytes: UnsafeMutableRawPointer](./nsmutabledata/mutablebytes.md)
   A pointer to the data contained by the mutable data object.
@@ -89,6 +93,14 @@ When called, the bytes are immediately copied and then the buffer is freed.
   An error code value that indicates a failure to compress data using the provided algorithm.
 - [var NSDecompressionFailedError: Int](./nsdecompressionfailederror-swift.var.md)
   An error code value that indicates a failure to decompress data using the provided algorithm.
+- [NSCompressionErrorMaximum](./nscompressionerrormaximum-c.enum.case.md)
+  The end of the range of error codes reserved for compression errors.
+- [NSCompressionErrorMinimum](./nscompressionerrorminimum-c.enum.case.md)
+  The start of the range of error codes reserved for compression errors.
+- [NSCompressionFailedError](./nscompressionfailederror-c.enum.case.md)
+  An error code value that indicates a failure to compress data using the provided algorithm.
+- [NSDecompressionFailedError](./nsdecompressionfailederror-c.enum.case.md)
+  An error code value that indicates a failure to decompress data using the provided algorithm.
 
 ## Relationships
 
@@ -114,6 +126,12 @@ When called, the bytes are immediately copied and then the buffer is freed.
 - [Sendable](../Swift/sendable.md)
 - [SendableMetatype](../Swift/sendablemetatype.md)
 - [Sequence](../Swift/sequence.md)
+
+## See Also
+
+### Binary Data
+- [NSData](./nsdata.md)
+  A static byte buffer in memory.
 
 
 ---

@@ -17,6 +17,36 @@ You distribute the encoder extension inside a macOS app. When a user installs th
 
 > ❗ **Important**:  The Compressor SDK is only available for encoder extensions written in Objective-C.
 
+## Topics
+
+### Essentials
+- [Building an Encoder Extension](./building-an-encoder-extension.md)
+  Create an encoder extension in Xcode by using the Encoder Extension template.
+### Information Property List Keys
+- [ProExtensionPrincipalClass](../BundleResources/information-property-list/nsextension/proextensionprincipalclass.md)
+  The name of the class with the principal implementation of your extension.
+- [ProExtensionPrincipalViewControllerClass](../BundleResources/information-property-list/nsextension/proextensionprincipalviewcontrollerclass.md)
+  The name of the principal view controller class of your extension.
+- [ProExtensionUUID](../BundleResources/information-property-list/nsextension/proextensionuuid.md)
+  A UUID string that uniquely identifies your extension to the Compressor app.
+### Encoder Extension Settings
+- [CompressorExtensionSettings](../professional_video_applications/compressorextensionsettings.md)
+  A set of methods you use to manage the extension UI that displays the current encoder settings for users to view and customize.
+- [CompressorExtensionColorSpaces](../professional_video_applications/compressorextensioncolorspaces.md)
+  An interface you use to specify the supported color spaces in an extension.
+### Source Attributes
+- [CompressorExtensionSettingsOptional](../professional_video_applications/compressorextensionsettingsoptional.md)
+  An interface you use to receive updated values of source media attributes.
+### Encoder Attributes
+- [Encoder Attributes Settings](./encoder-attributes-settings.md)
+  Encoder attributes specify the audio and video configuration values for the output format.
+### Source File Decoding
+- [CompressorMediaDecoder](../professional_video_applications/compressormediadecoder.md)
+  An interface with methods you use to retrieve decoded video, audio, and image data from a source media file.
+### Source File Encoding
+- [CompressorExtensionEncoder](../professional_video_applications/compressorextensionencoder.md)
+  An interface an extension implements to convert source media to the output format supported in your extension.
+
 
 ---
 

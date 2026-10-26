@@ -39,6 +39,9 @@ Do not include the control’s type in the label (for example, use `Canvas`, not
   The child accessibility element with the current focus.
 - [func accessibilitySelectedChildren() -> [Any]?](./accessibilityselectedchildren%28%29.md)
   Returns the layout area’s currently selected children.
+### Related Documentation
+- [accessibilityLabel](../nsaccessibility-c.protocol/accessibilitylabel.md)
+  A short description of the accessibility element.
 
 
 ---

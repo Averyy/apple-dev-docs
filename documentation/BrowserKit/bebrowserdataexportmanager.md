@@ -38,6 +38,10 @@ This class coordinates the transfer of browsing data by presenting an *export sh
   Exports the given browser data.
 - [func requestExport(for: BEExportMetadata, token: UUID?, completionHandler: (BEExportOptions?, (any Error)?) -> Void)](./bebrowserdataexportmanager/requestexport%28for,token,completionhandler%29.md)
   Requests that the system display the browsing-data transfer sheet to export data to another browser.
+- [- exportBrowserData:completionHandler:](./bebrowserdataexportmanager/exportbrowserdata_completionhandler_.md)
+  Exports the given browser data with the given completion handler.
+- [- exportFinishedWithCompletionHandler:](./bebrowserdataexportmanager/exportfinishedwithcompletionhandler_.md)
+  A callback the system invokes when an export of browsing data completes.
 ### Managing export tokens
 - [static var exportTokenUserInfoKey: String](./bebrowserdataexportmanager/exporttokenuserinfokey-1y5l1.md)
   A key for accessing the data transfer token in the export launch activity’s info dictionary.

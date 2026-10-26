@@ -27,6 +27,16 @@ typedef enum IOURLError : int {
 - [init(rawValue: Int32)](./iourlerror/api-1514762-init.md)
 ### Instance Properties
 - [var rawValue: Int32](./iourlerror/api-1514452-rawvalue.md)
+### Constants
+- [kIOURLImproperArgumentsError](./iourlerror/kiourlimproperargumentserror.md)
+- [kIOURLPropertyKeyUnavailableError](./iourlerror/kiourlpropertykeyunavailableerror.md)
+- [kIOURLRemoteHostUnavailableError](./iourlerror/kiourlremotehostunavailableerror.md)
+- [kIOURLResourceAccessViolationError](./iourlerror/kiourlresourceaccessviolationerror.md)
+- [kIOURLResourceNotFoundError](./iourlerror/kiourlresourcenotfounderror.md)
+- [kIOURLTimeoutError](./iourlerror/kiourltimeouterror.md)
+- [kIOURLUnknownError](./iourlerror/kiourlunknownerror.md)
+- [kIOURLUnknownPropertyKeyError](./iourlerror/kiourlunknownpropertykeyerror.md)
+- [kIOURLUnknownSchemeError](./iourlerror/kiourlunknownschemeerror.md)
 
 ## Relationships
 

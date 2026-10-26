@@ -16,12 +16,18 @@
 - [struct NSKeyValueObservingOptions](./nskeyvalueobservingoptions.md)
   The values that can be returned in a change dictionary.
 - [enum NSKeyValueSetMutationKind](./nskeyvaluesetmutationkind.md)
+- [NSPresentationIntentKind](./nspresentationintentkind.md)
+  An enumeration of intended display styles for blocks of text like paragraphs, lists, and code blocks.
 
 ## See Also
 
 ### Reference
 - [Foundation Data Types](./foundation-data-types.md)
   This document describes the data types and constants found in the Foundation framework.
+- [Foundation Constants](./foundation-constants.md)
+  This document defines constants in the Foundation framework that are not associated with a particular class.
+- [Foundation Functions](./foundation-functions.md)
+  This document describes the functions and function-like macros defined in the Foundation Framework.
 
 
 ---

@@ -48,6 +48,8 @@ A Javascript implementation of this class is also available for use by web-based
 ### Notifications
 - [let MPMoviePlayerTimedMetadataUserInfoKey: String](./mpmovieplayertimedmetadatauserinfokey.md)
   An NSDictionary object containing the most recent `MPTimedMetadata` objects.
+- [MPMoviePlayerTimedMetadataUpdatedNotification](./mpmovieplayertimedmetadataupdatednotification.md)
+  Posted when new timed metadata arrives.
 
 ## Relationships
 

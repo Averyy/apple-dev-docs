@@ -42,6 +42,8 @@ func selectRow(_ row: Int, inColumn column: Int)
   The index path of the item selected in the browser.
 - [var selectionIndexPaths: [IndexPath]](./selectionindexpaths.md)
   An array containing the index paths of all items selected in the browser.
+- [selectedCell](./selectedcell.md)
+  The last (rightmost and lowest) selected cell.
 
 
 ---

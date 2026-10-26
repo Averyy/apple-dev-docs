@@ -46,6 +46,8 @@ Currently, the supported data detectors `checkingTypes` are:  [`date`](../nstext
 ### Related Documentation
 - [var checkingTypes: NSTextCheckingTypes](./checkingtypes.md)
   Returns the checking types for the data detector.
+- [+ dataDetectorWithTypes:error:](./datadetectorwithtypes_error_.md)
+  Creates and returns a new data detector instance.
 
 
 ---

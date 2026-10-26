@@ -54,6 +54,8 @@ Antialiasing is a graphics state parameter.
   Sets the pattern phase of a context.
 - [func setFillPattern(CGPattern, colorComponents: UnsafePointer<CGFloat>)](./setfillpattern%28_,colorcomponents%29.md)
   Sets the fill pattern in the specified graphics context.
+- [CGContextSetLineDash](../cgcontextsetlinedash.md)
+  Sets the pattern for dashed lines in a graphics context.
 
 
 ---

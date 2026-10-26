@@ -55,6 +55,10 @@ builder.insertSibling(refreshMenuItem, beforeMenu: .close)
   A type that represents an action identifier.
 - [typealias UIActionHandler](./uiactionhandler.md)
   A type that defines the closure for an action handler.
+- [+ actionWithTitle:image:identifier:handler:](./uiaction/actionwithtitle_image_identifier_handler_.md)
+  Creates an action with the specified title, image, identifier, and handler.
+- [+ actionWithHandler:](./uiaction/actionwithhandler_.md)
+  Creates an action with the specified handler.
 ### Getting information about the action
 - [var title: String](./uiaction/title.md)
   The action’s title.

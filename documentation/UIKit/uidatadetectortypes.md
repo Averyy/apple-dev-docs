@@ -45,6 +45,8 @@ enum UIDataDetectorTypes : NSUInteger;
   An option to detect strings with the format of a physical value, such as length or temperature.
 - [static var all: UIDataDetectorTypes](./uidatadetectortypes/all.md)
   An option to detect all available types of data.
+- [UIDataDetectorTypeNone](./uidatadetectortypes/uidatadetectortypenone.md)
+  An option to do no data detection.
 ### Initializers
 - [init(rawValue: UInt)](./uidatadetectortypes/init%28rawvalue%29.md)
   Creates a data detector type with the specified raw value.

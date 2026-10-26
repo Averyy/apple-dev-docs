@@ -53,6 +53,10 @@ if (library)
   Initializes an instance of `ITLibrary` that can retrieve media entities.
 - [enum ITLibInitOptions](../itlibinitoptions.md)
   These constants describe initialization options for an iTunes library.
+- [+ libraryWithAPIVersion:error:](./librarywithapiversion_error_.md)
+  Creates and initializes an instance of `ITLibrary` that can retrieve media entities.
+- [+ libraryWithAPIVersion:options:error:](./librarywithapiversion_options_error_.md)
+  Creates and initializes an instance of ITLibrary that can retrieve media entities.
 
 
 ---

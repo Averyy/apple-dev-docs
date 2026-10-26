@@ -41,6 +41,10 @@ class AVAssetVariant
   The average bit rate for the variant.
 - [var peakBitRate: Double?](./avassetvariant/peakbitrate-9hzpi.md)
   The peak bit rate for the variant.
+- [averageBitRate](./avassetvariant/averagebitrate-7bnsq.md)
+  The average bit rate for the variant.
+- [peakBitRate](./avassetvariant/peakbitrate-38p2b.md)
+  The peak bit rate for the variant.
 ### Accessing the URL
 - [var url: URL](./avassetvariant/url.md)
   Provides URL to media playlist corresponding to variant
@@ -66,6 +70,10 @@ class AVAssetVariant
   Creates a variant qualifier with an asset variant.
 - [convenience init(predicate: NSPredicate)](./avassetvariantqualifier/init%28predicate%29.md)
   Creates a variant qualifier with a predicate.
+- [+ assetVariantQualifierForMaximumValueInKeyPath:](./avassetvariantqualifier/assetvariantqualifierformaximumvalueinkeypath_.md)
+  Returns a qualifer for finding variant with maximum value in the input key path
+- [+ assetVariantQualifierForMinimumValueInKeyPath:](./avassetvariantqualifier/assetvariantqualifierforminimumvalueinkeypath_.md)
+  Returns a qualifer for finding variant with minimum value in the input key path.
 
 
 ---

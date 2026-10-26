@@ -46,6 +46,9 @@ When the telephony provider receives an incoming call or the user starts an outg
   The possible types of handles.
 ### Initializers
 - [init?(coder: NSCoder)](./cxhandle/init%28coder%29.md)
+### Comparing Handles
+- [- isEqualToHandle:](./cxhandle/isequaltohandle_.md)
+  Returns a Boolean value that indicates whether a given handle is equal to the receiver.
 
 ## Relationships
 

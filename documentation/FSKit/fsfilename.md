@@ -39,6 +39,18 @@ A filename is usually a valid UTF-8 sequence, but can be an arbitrary byte seque
   Creates a filename by copying a character sequence data object.
 - [convenience init(string: String)](./fsfilename/init%28string%29.md)
   Creates a filename by copying a character sequence from a string instance.
+- [- initWithBytes:length:](./fsfilename/initwithbytes_length_.md)
+  Initializes a file name by copying a character sequence from a byte array.
+- [+ nameWithBytes:length:](./fsfilename/namewithbytes_length_.md)
+  Creates a filename by copying a character sequence from a byte array.
+- [- initWithCString:](./fsfilename/initwithcstring_.md)
+  Initializes a filename from a null-terminated character sequence.
+- [+ nameWithCString:](./fsfilename/namewithcstring_.md)
+  Creates a filename from a null-terminated character sequence.
+- [+ nameWithData:](./fsfilename/namewithdata_.md)
+  Creates a filename by copying a character sequence data object.
+- [+ nameWithString:](./fsfilename/namewithstring_.md)
+  Creates a filename by copying a character sequence from a string instance.
 ### Accessing filename properties
 - [var data: Data](./fsfilename/data.md)
   The byte sequence of the filename, as a data object.
@@ -71,6 +83,8 @@ A filename is usually a valid UTF-8 sequence, but can be an arbitrary byte seque
   An abstract base class for implementing a minimal file system.
 - [protocol FSFileSystemBase](./fsfilesystembase.md)
   A protocol containing functionality supplied by FSKit to file system implementations.
+- [FSFileSystem](./fsfilesystem.md)
+  An abstract base class for implementing a full-featured file system.
 
 
 ---

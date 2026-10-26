@@ -49,6 +49,20 @@ The Wallet app allows users to organize their boarding passes, tickets, gift car
 - [struct ApplePayMerchandisingStyle](./applepaymerchandisingstyle.md)
   Styling layout of the ApplePayMerchandisingView
 - [struct ApplePayMerchandisingView](./applepaymerchandisingview.md)
+### Variables
+- [PKPaymentNetworkConecs](./pkpaymentnetwork/conecs.md)
+- [PKPaymentNetworkElCorteIngles](./pkpaymentnetwork/elcorteingles.md)
+- [PKPaymentNetworkElcard](./pkpaymentnetwork/elcard.md)
+- [PKPaymentNetworkHimyan](./pkpaymentnetwork/himyan.md)
+- [PKPaymentNetworkHumo](./pkpaymentnetwork/humo.md)
+- [PKPaymentNetworkJaywan](./pkpaymentnetwork/jaywan.md)
+  A Jaywan payment card.
+- [PKPaymentNetworkMaal](./pkpaymentnetwork/maal.md)
+- [PKPaymentNetworkMyDebit](./pkpaymentnetwork/mydebit.md)
+- [PKPaymentNetworkPayPak](./pkpaymentnetwork/paypak.md)
+- [PKPaymentNetworkRuPay](./pkpaymentnetwork/rupay.md)
+- [PKPaymentNetworkUzCard](./pkpaymentnetwork/uzcard.md)
+- [PKPaymentNetworkVerve](./pkpaymentnetwork/verve.md)
 
 ## See Also
 

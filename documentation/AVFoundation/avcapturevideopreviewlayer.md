@@ -57,6 +57,10 @@ class PreviewView: UIView {
   Creates a layer to preview the visual output of a capture session.
 - [init(sessionWithNoConnection: AVCaptureSession)](./avcapturevideopreviewlayer/init%28sessionwithnoconnection%29.md)
   Creates a layer to preview the visual output of a capture session, without making connections to eligible video inputs.
+- [+ layerWithSession:](./avcapturevideopreviewlayer/layerwithsession_.md)
+  Returns a new layer to preview the visual output of a capture session.
+- [+ layerWithSessionWithNoConnection:](./avcapturevideopreviewlayer/layerwithsessionwithnoconnection_.md)
+  Returns a new layer to preview the visual output of a capture session, without making connections to eligible video inputs.
 ### Layer configuration
 - [var isPreviewing: Bool](./avcapturevideopreviewlayer/ispreviewing.md)
   A Boolean value that indicates whether the layer is rendering video frames from its source.

@@ -1,0 +1,41 @@
+# loadedTimeRanges
+
+**Framework**: AVFoundation  
+**Kind**: property  
+**Role**: Instance Property
+
+The time ranges for the segment that have media data is readily available.
+
+**Availability**:
+- iOS 18.0+
+- iPadOS 18.0+
+- Mac Catalyst 18.0+
+- macOS 15.0+
+- tvOS 18.0+
+- visionOS 2.0+
+- watchOS 11.0+
+
+## Declaration
+
+```objc
+@property (readonly) NSArray<NSValue *> * loadedTimeRanges;
+```
+
+#### Discussion
+
+The loaded time ranges might be discontinuous.
+
+## See Also
+
+### Inspecting the segment
+- [var timeMapping: CMTimeMapping](./timemapping.md)
+  The time mapping for this segment.
+- [var startDate: Date?](./startdate.md)
+  The date at which a segment starts.
+- [var interstitialEvent: AVPlayerInterstitialEvent?](./interstitialevent.md)
+  The associated interstitial event for this segment.
+
+
+---
+
+*[View on Apple Developer](https://developer.apple.com/documentation/avfoundation/avplayeritemsegment/loadedtimeranges-2p0fl)*

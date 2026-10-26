@@ -48,6 +48,8 @@ If the size of the new border is different from that of the old border, the cont
   The cell used to display the receiver’s title.
 - [var titleRect: NSRect](./titlerect.md)
   The rectangle in which the receiver’s title is drawn.
+- [- setTitleWithMnemonic:](./settitlewithmnemonic_.md)
+  Sets the title of the receiver with a character denoted as an access key.
 
 
 ---

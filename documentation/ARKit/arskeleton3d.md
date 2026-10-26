@@ -35,6 +35,14 @@ An [`ARBodyAnchor`](./arbodyanchor.md) contains one instance of this [`ARSkeleto
   Returns the local transform for a joint with a given name.
 - [func modelTransform(for: ARSkeleton.JointName) -> simd_float4x4?](./arskeleton3d/modeltransform%28for%29.md)
   Returns the model transform for a joint with a given name.
+- [jointLocalTransforms](./arskeleton3d/jointlocaltransforms-1m5a1.md)
+  The local space transforms for each joint.
+- [jointModelTransforms](./arskeleton3d/jointmodeltransforms-dno4.md)
+  The model space transforms for each joint.
+- [- localTransformForJointName:](./arskeleton3d/localtransformforjointname_.md)
+  Returns the local transform for a joint with a given name.
+- [- modelTransformForJointName:](./arskeleton3d/modeltransformforjointname_.md)
+  Returns the model transform for a joint with a given name.
 
 ## Relationships
 

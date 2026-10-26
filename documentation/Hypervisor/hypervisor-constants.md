@@ -53,6 +53,10 @@
 - [var VMENTRY_LOAD_PKRS: UInt32](./vmentry_load_pkrs.md)
 - [var VMEXIT_LOAD_PKRS: UInt32](./vmexit_load_pkrs.md)
 - [var VMX_EPT_VPID_ADV_VMEXIT_INFO: UInt32](./vmx_ept_vpid_adv_vmexit_info.md)
+- [err_common_hypervisor](./err_common_hypervisor.md)
+- [err_sub_hypervisor](./err_sub_hypervisor.md)
+- [HV_API_AVAILABLE_ARM64](./hv_api_available_arm64.md)
+- [HV_API_AVAILABLE_X86_64](./hv_api_available_x86_64.md)
 
 ## See Also
 

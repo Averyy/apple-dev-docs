@@ -33,6 +33,8 @@ An [`MTLVertexBufferLayoutDescriptorArray`](./mtlvertexbufferlayoutdescriptorarr
 ### Accessing a specified vertex buffer layout
 - [subscript(Int) -> MTLVertexBufferLayoutDescriptor!](./mtlvertexbufferlayoutdescriptorarray/subscript%28_%29.md)
   Returns the state of the specified vertex buffer layout.
+- [- setObject:atIndexedSubscript:](./mtlvertexbufferlayoutdescriptorarray/setobject_atindexedsubscript_.md)
+  Sets the state of the specified vertex buffer layout.
 
 ## Relationships
 

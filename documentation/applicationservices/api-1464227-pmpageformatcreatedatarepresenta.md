@@ -58,6 +58,18 @@ Before calling this function, you should call the function [`PMSessionValidatePa
   Obtains a list of page format objects, each of which describes a paper size available on the specified printer.
 - [func PMPageFormatCreateWithDataRepresentation(CFData, UnsafeMutablePointer<PMPageFormat?>) -> OSStatus](./api-1462876-pmpageformatcreatewithdatarepres.md)
   Creates a page format object from a data representation.
+- [PMFlattenPageFormat](./core_printing/api-1805421-pmflattenpageformat.md)
+  Flattens a page format object into a Memory Manager handle for storage in a user document.
+- [PMFlattenPageFormatToCFData](./core_printing/api-1805425-pmflattenpageformattocfdata.md)
+  Flattens a page format object into a Core Foundation data object for storage in a user document.
+- [PMFlattenPageFormatToURL](./core_printing/api-1805429-pmflattenpageformattourl.md)
+  Flattens a page format object into a file for storage in a user document.
+- [PMUnflattenPageFormat](./core_printing/api-1805434-pmunflattenpageformat.md)
+  Rebuilds a page format object from a Memory Manager handle that contains flattened page format data.
+- [PMUnflattenPageFormatWithCFData](./core_printing/api-1805439-pmunflattenpageformatwithcfdata.md)
+  Rebuilds a page format object from a Core Foundation data object that contains flattened page format data.
+- [PMUnflattenPageFormatWithURL](./core_printing/api-1805441-pmunflattenpageformatwithurl.md)
+  Rebuilds a page format object from a file system URL that contains flattened page format data.
 
 
 ---

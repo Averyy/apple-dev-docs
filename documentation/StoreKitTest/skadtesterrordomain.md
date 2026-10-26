@@ -27,6 +27,8 @@ extern NSErrorDomain const SKAdTestErrorDomain;
 ### Ad impression and postback errors
 - [struct SKAdTestError](./skadtesterror.md)
   An error the testing environment returns for SKAdNetwork testing errors.
+- [SKAdTestErrorCode](./skadtesterror/code.md)
+  Enumerated error codes related to ad network testing in the testing environment.
 
 
 ---

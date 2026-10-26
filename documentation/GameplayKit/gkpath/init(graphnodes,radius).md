@@ -41,6 +41,20 @@ To use the newly created path to constrain an agent’s behavior, create a goal 
 - `graphNodes`: An array of graph node objects containing 2D points.
 - `radius`: The radius of the path.
 
+## See Also
+
+### Creating a Path
+- [- initWithPoints:count:radius:cyclical:](./initwithpoints_count_radius_cyclical_.md)
+  Initializes a path with the specified array of 2D points.
+- [+ pathWithPoints:count:radius:cyclical:](./pathwithpoints_count_radius_cyclical_.md)
+  Creates a path with the specified array of 2D points.
+- [- initWithFloat3Points:count:radius:cyclical:](./initwithfloat3points_count_radius_cyclical_.md)
+  Initializes a path with the specified array of 3D points.
+- [+ pathWithFloat3Points:count:radius:cyclical:](./pathwithfloat3points_count_radius_cyclical_.md)
+  Creates a path with the specified array of 3D points.
+- [+ pathWithGraphNodes:radius:](./pathwithgraphnodes_radius_.md)
+  Creates a path using the positions of the specified graph nodes.
+
 
 ---
 

@@ -102,6 +102,11 @@ A Core Video pixel buffer is an image buffer that holds pixels in main memory. A
 ### Constants
 - [Pixel Buffer Attribute Keys](./pixel-buffer-attribute-keys.md)
   The attributes associated with a pixel buffer.
+### Retaining and Releasing Pixel Buffers
+- [CVPixelBufferRetain](./cvpixelbufferretain.md)
+  Retains a pixel buffer.
+- [CVPixelBufferRelease](./cvpixelbufferrelease.md)
+  Releases a pixel buffer.
 
 ## See Also
 

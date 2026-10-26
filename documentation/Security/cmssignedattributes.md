@@ -41,6 +41,8 @@ Use these flags with the [`CMSEncoderAddSignedAttributes(_:_:)`](./cmsencoderadd
   Include Apple codesigning hash agility, version 2.
 - [static var attrAppleExpirationTime: CMSSignedAttributes](./cmssignedattributes/attrappleexpirationtime.md)
   Include the expiration time.
+- [kCMSAttrNone](./cmssignedattributes/kcmsattrnone.md)
+  No attributes.
 ### Initializers
 - [init(rawValue: UInt32)](./cmssignedattributes/init%28rawvalue%29.md)
   Initializes a new attributes structure.

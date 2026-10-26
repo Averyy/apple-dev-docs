@@ -33,6 +33,8 @@ The allocator uses Model I/O for copy and re-layout operations, such as when a n
 ### Originating Objects
 - [var type: MDLMeshBufferType](./type.md)
   The type of data contained in the originating Model I/O buffer.
+- [zone](./zone.md)
+  The zone, if any, from which this mesh buffer was created.
 
 
 ---

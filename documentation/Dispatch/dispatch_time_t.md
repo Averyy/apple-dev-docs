@@ -51,6 +51,10 @@ typedef uint64_t dispatch_time_t;
   The current time.
 - [Wall Time Constants](./api-2963138-wall-time-constants.md)
   Constants for wall time values.
+- [dispatch_time](./dispatch_time.md)
+  Creates a `dispatch_time_t` relative to the default clock or modifies an existing `dispatch_time_t`.
+- [dispatch_walltime](./dispatch_walltime.md)
+  Creates a `dispatch_time_t` using an absolute time according to the wall clock.
 
 
 ---

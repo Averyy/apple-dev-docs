@@ -55,6 +55,8 @@ An initialized media query.
   Creates a media query that matches all media items and that groups and sorts collections by composer name.
 - [class func genres() -> MPMediaQuery](./genres%28%29.md)
   Creates a media query that matches all media items and that groups and sorts collections by genre name.
+- [init](../mpmediaquery-init.md)
+  Initializes a generic media query.
 
 
 ---

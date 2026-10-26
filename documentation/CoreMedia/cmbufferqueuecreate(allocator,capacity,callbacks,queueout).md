@@ -47,6 +47,8 @@ On return, the caller owns the returned `CMBufferQueue`, and must release it whe
   Creates a buffer queue with handlers to inspect buffers.
 - [struct CMBufferCallbacks](./cmbuffercallbacks.md)
   A structure that stores the callbacks that perform buffer operations.
+- [CMBufferHandlers](./cmbufferhandlers.md)
+  A structure that stores the handlers that perform buffer operations.
 
 
 ---

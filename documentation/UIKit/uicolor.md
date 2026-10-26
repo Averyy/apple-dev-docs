@@ -96,6 +96,9 @@ Use color to customize your app’s appearance, communicate status, and help peo
 - [init?(named: String, in: Bundle?, compatibleWith: UITraitCollection?)](./uicolor/init%28named,in,compatiblewith%29.md)
 ### Default Implementations
 - [UIColor Implementations](./uicolor/uicolor-implementations.md)
+### Type Methods
+- [+ colorWithRed:green:blue:alpha:exposure:](./uicolor/colorwithred_green_blue_alpha_exposure_.md)
+- [+ colorWithRed:green:blue:alpha:linearExposure:](./uicolor/colorwithred_green_blue_alpha_linearexposure_.md)
 
 ## Relationships
 

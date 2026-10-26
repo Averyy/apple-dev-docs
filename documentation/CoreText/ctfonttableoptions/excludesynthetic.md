@@ -29,6 +29,8 @@ kCTFontTableOptionExcludeSynthetic
 ### Constants
 - [init(rawValue: UInt32)](./init%28rawvalue%29.md)
   Creates a font table options structure with the specified raw value.
+- [kCTFontTableOptionNoOptions](./kctfonttableoptionnooptions.md)
+  No font table options are specified.
 
 
 ---

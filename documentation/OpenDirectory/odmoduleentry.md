@@ -31,6 +31,13 @@ class ODModuleEntry
 ### Instance Methods
 - [func option(String!) -> Any!](./odmoduleentry/option%28_%29.md)
 - [func setOption(String!, value: Any!)](./odmoduleentry/setoption%28_,value%29.md)
+### Instance Variables
+- [mappings](./odmoduleentry/mappings-c.ivar.md)
+- [name](./odmoduleentry/name-c.ivar.md)
+- [options](./odmoduleentry/options.md)
+- [supportedOptions](./odmoduleentry/supportedoptions-c.ivar.md)
+- [uuidString](./odmoduleentry/uuidstring-c.ivar.md)
+- [xpcServiceName](./odmoduleentry/xpcservicename-c.ivar.md)
 
 ## Relationships
 

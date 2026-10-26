@@ -94,6 +94,24 @@ Then, you generate the current state of the data and display the data in the UI 
 - [Sendable](../Swift/sendable.md)
 - [UITableViewDataSource](./uitableviewdatasource.md)
 
+## See Also
+
+### Data
+- [Filling a table with data](./filling-a-table-with-data.md)
+  Create and configure cells for your table dynamically using a data source object, or provide them statically from your storyboard.
+- [UITableViewDataSource](./uitableviewdatasource.md)
+  The methods that an object adopts to manage data and provide cells for a table view.
+- [UITableViewDataSourcePrefetching](./uitableviewdatasourceprefetching.md)
+  A protocol that provides advance warning of the data requirements for a table view, allowing you to start potentially long-running data operations early.
+- [NSDiffableDataSourceSnapshot](./nsdiffabledatasourcesnapshotreference.md)
+  A representation of the state of the data in a view at a specific point in time.
+- [UILocalizedIndexedCollation](./uilocalizedindexedcollation.md)
+  An object that organizes, sorts, and localizes the data for a table view that has a section index.
+- [UIDataSourceTranslating](./uidatasourcetranslating.md)
+  An advanced interface for managing a data source object.
+- [UIRefreshControl](./uirefreshcontrol.md)
+  A standard control that can initiate the refreshing of a scroll view’s contents.
+
 
 ---
 

@@ -269,6 +269,10 @@ After the driver stores the callback, the client app can perform multiple simula
 ### External drivers
 - [com.apple.developer.driverkit.userclient-access](../BundleResources/entitlements/com.apple.developer.driverkit.userclient-access.md)
   An array of strings that represent macOS driver extensions that may communicate with other DriverKit services.
+- [IOUserClient](./iouserclient.md)
+  A connection to another service that the system manages.
+- [IOUserServer](./iouserserver.md)
+  A system-managed service.
 
 
 ---

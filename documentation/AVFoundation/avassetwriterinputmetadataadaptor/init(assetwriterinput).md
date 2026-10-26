@@ -30,6 +30,12 @@ init(assetWriterInput input: AVAssetWriterInput)
 
 - `input`: The metadata input to which to append groups of timed metadata.
 
+## See Also
+
+### Creating an input metadata adaptor
+- [+ assetWriterInputMetadataAdaptorWithAssetWriterInput:](./assetwriterinputmetadataadaptorwithassetwriterinput_.md)
+  Returns a new metadata adaptor to append timed metadata groups to write to an output file.
+
 
 ---
 

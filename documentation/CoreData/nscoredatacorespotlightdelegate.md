@@ -63,6 +63,8 @@ class NSCoreDataCoreSpotlightDelegate
 ### Initializers
 - [init(forStoreWithDescription: NSPersistentStoreDescription, coordinator: NSPersistentStoreCoordinator)](./nscoredatacorespotlightdelegate/init%28forstorewithdescription,coordinator%29.md)
 - [convenience init(forStoreWithDescription: NSPersistentStoreDescription, model: NSManagedObjectModel)](./nscoredatacorespotlightdelegate/init%28forstorewithdescription,model%29.md)
+### Notifications
+- [NSCoreDataCoreSpotlightDelegateIndexDidUpdateNotification](./nscoredatacorespotlightdelegateindexdidupdatenotification.md)
 
 ## Relationships
 

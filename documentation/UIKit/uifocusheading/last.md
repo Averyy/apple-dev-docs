@@ -40,6 +40,8 @@ UIFocusHeadingLast
   The focus update is heading to the previous item.
 - [static var first: UIFocusHeading](./first.md)
   The focus update is heading to the first item.
+- [UIFocusHeadingNone](./uifocusheadingnone.md)
+  No focus update heading.
 
 
 ---

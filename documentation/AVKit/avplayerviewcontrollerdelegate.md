@@ -77,6 +77,8 @@ protocol AVPlayerViewControllerDelegate : NSObjectProtocol
 ### Responding to media selection
 - [func playerViewController(AVPlayerViewController, didSelect: AVMediaSelectionOption?, in: AVMediaSelectionGroup)](./avplayerviewcontrollerdelegate/playerviewcontroller%28_,didselect,in%29.md)
   Tells the delegate when the user selects a media option from a media selection group.
+- [- playerViewController:didSelectExternalSubtitleOptionLanguage:](./avplayerviewcontrollerdelegate/playerviewcontroller_didselectexternalsubtitleoptionlanguage_.md)
+  Tells the delegate when the user selects a specific subtitle option.
 ### Responding to transport bar changes
 - [func playerViewController(AVPlayerViewController, willTransitionToVisibilityOfTransportBar: Bool, with: any AVPlayerViewControllerAnimationCoordinator)](./avplayerviewcontrollerdelegate/playerviewcontroller%28_,willtransitiontovisibilityoftransportbar,with%29.md)
   Tells the delegate when the transport bar’s visibility is about to change.

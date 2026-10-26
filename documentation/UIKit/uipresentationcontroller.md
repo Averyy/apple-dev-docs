@@ -159,12 +159,17 @@ Subclasses may override other methods of this class as needed to provide custom 
 ### Observing trait changes
 - [protocol UITraitChangeObservable](./uitraitchangeobservable-67e94.md)
   A type that calls your code in reaction to changes in the trait environment.
+- [UITraitChangeObservable](./uitraitchangeobservable-7qoet.md)
+  A type that calls your code in reaction to changes in the trait environment.
 ### Overriding trait values
 - [var traitOverrides: UITraitOverrides](./uipresentationcontroller/traitoverrides-629ka.md)
 - [struct UITraitOverrides](./uitraitoverrides-swift.struct.md)
   A mutable container of traits you use to set trait changes for an object and its descendants.
 - [var overrideTraitCollection: UITraitCollection?](./uipresentationcontroller/overridetraitcollection.md)
   Interface traits for the presented view controller, to use in place of traits from the iOS environment.
+- [traitOverrides](./uipresentationcontroller/traitoverrides-9o0j4.md)
+- [UITraitOverrides](./uitraitoverrides-c.protocol.md)
+  A mutable container of traits you use to set trait changes for an object and its descendants.
 ### Initializers
 - [init(presentedViewController: UIViewController, presentingViewController: UIViewController?)](./uipresentationcontroller/init%28presentedviewcontroller,presentingviewcontroller%29.md)
 ### Instance Properties
@@ -192,6 +197,7 @@ Subclasses may override other methods of this class as needed to provide custom 
 - [UIFocusEnvironment](./uifocusenvironment.md)
 - [UITraitChangeObservable](./uitraitchangeobservable-67e94.md)
 - [UITraitEnvironment](./uitraitenvironment.md)
+- [UITraitChangeObservable](./uitraitchangeobservable-7qoet.md)
 
 ## See Also
 

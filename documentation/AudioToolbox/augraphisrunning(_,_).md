@@ -70,6 +70,12 @@ A result code.
   Retrieves information about the interactions in an audio processing graph for a given node.
 - [func AUGraphGetNumberOfInteractions(AUGraph, UnsafeMutablePointer<UInt32>) -> OSStatus](./augraphgetnumberofinteractions%28_,_%29.md)
   Retrieves the number of interactions for an audio processing graph.
+- [AUGraphCountNodeConnections](./augraphcountnodeconnections.md)
+  Deprecated in OS X v10.5. Instead, use [`AUGraphCountNodeInteractions`](./augraphcountnodeinteractions%28_,_,_%29.md).
+- [AUGraphGetConnectionInfo](./augraphgetconnectioninfo.md)
+  Deprecated in OS X v10.5. Instead, use [`AUGraphGetInteractionInfo`](./augraphgetinteractioninfo%28_,_,_%29.md).
+- [AUGraphGetNodeConnections](./augraphgetnodeconnections.md)
+  Deprecated in OS X v10.5. Instead, use [`AUGraphGetNodeInteractions`](./augraphgetnodeinteractions%28_,_,_,_%29.md).
 
 
 ---

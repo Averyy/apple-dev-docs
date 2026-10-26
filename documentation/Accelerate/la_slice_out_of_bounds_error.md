@@ -41,6 +41,10 @@ var LA_SLICE_OUT_OF_BOUNDS_ERROR: Int32 { get }
 - [var LA_PRECISION_MISMATCH_ERROR: Int32](./la_precision_mismatch_error.md)
 - [var LA_SCALAR_TYPE_DOUBLE: Int32](./la_scalar_type_double.md)
 - [var LA_SCALAR_TYPE_FLOAT: Int32](./la_scalar_type_float.md)
+- [LA_AVAILABILITY](./la_availability.md)
+- [LA_CONST](./la_const.md)
+- [LA_EXPORT](./la_export.md)
+- [LA_FUNCTION](./la_function.md)
 
 
 ---

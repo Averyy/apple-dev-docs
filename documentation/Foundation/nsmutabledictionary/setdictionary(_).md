@@ -42,6 +42,8 @@ All entries are removed from the receiving dictionary (with [`removeAllObjects()
   Adds a given key-value pair to the dictionary.
 - [func addEntries(from: [AnyHashable : Any])](./addentries%28from%29.md)
   Adds to the receiving dictionary the entries from another dictionary.
+- [- setObject:forKeyedSubscript:](./setobject_forkeyedsubscript_.md)
+  Adds a given key-value pair to the dictionary.
 
 
 ---

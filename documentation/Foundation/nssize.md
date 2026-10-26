@@ -67,6 +67,8 @@ When building for 64 bit systems, or building 32 bit like 64 bit, `NSSize` is ty
   A graphics coordinate transformation.
 - [struct NSEdgeInsets](./nsedgeinsets.md)
   A description of the distance between the edges of two rectangles.
+- [NSAffineTransform](./nsaffinetransform.md)
+  A graphics coordinate transformation.
 
 
 ---

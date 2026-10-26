@@ -36,6 +36,8 @@ The cells in the array are row-ordered; that is, the first row of cells appears 
   Returns the cell at the specified row and column.
 - [func cell(withTag: Int) -> NSCell?](./cell%28withtag%29.md)
   Searches the receiver and returns the last cell matching the specified tag.
+- [selectedCell](./selectedcell.md)
+  The most recently selected cell.
 
 
 ---

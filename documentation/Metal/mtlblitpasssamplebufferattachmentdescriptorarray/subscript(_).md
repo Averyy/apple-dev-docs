@@ -28,6 +28,12 @@ subscript(attachmentIndex: Int) -> MTLBlitPassSampleBufferAttachmentDescriptor! 
 
 - `attachmentIndex`: An index of one of the array’s [`MTLBlitPassSampleBufferAttachmentDescriptor`](../mtlblitpasssamplebufferattachmentdescriptor.md) instances.
 
+## See Also
+
+### Accessing a sample buffer attachment descriptor
+- [- setObject:atIndexedSubscript:](./setobject_atindexedsubscript_.md)
+  Copies the properties of a blit pass sample buffer attachment descriptor instance to the properties of one of the array’s instances.
+
 
 ---
 

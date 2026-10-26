@@ -61,6 +61,9 @@ Use a [`UIFocusSystem`](./uifocussystem.md) object to obtain the focus-related s
 ### Type Methods
 - [class func focusSystem(for: any UIFocusEnvironment) -> UIFocusSystem?](./uifocussystem/focussystem%28for%29-5htbd.md)
 - [class func focusSystem(for: any UIFocusEnvironment) -> UIFocusSystem?](./uifocussystem/focussystem%28for%29-7tm2f.md)
+### Checking the ancestry of the environment
+- [+ environment:containsEnvironment:](./uifocussystem/environment_containsenvironment_.md)
+  Returns a Boolean value that indicates whether one focus environment is contained by another.
 
 ## Relationships
 

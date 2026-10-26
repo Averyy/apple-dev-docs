@@ -55,6 +55,8 @@ enum PKCanvasViewDrawingPolicy : NSUInteger;
   A Boolean value that indicates whether the canvas accepts input from the user’s finger in addition to Apple Pencil.
 - [var drawingPolicy: PKCanvasViewDrawingPolicy](./pkcanvasview/drawingpolicy.md)
   The policy that controls the types of touches allowed when drawing on the canvas.
+- [tool](./pkcanvasview/tool-6str6.md)
+  The currently selected tool used for drawing.
 
 
 ---

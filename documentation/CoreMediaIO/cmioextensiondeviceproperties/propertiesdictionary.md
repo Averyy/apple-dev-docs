@@ -33,6 +33,10 @@ var propertiesDictionary: [CMIOExtensionProperty : CMIOExtensionPropertyState<An
   A Boolean value that indicates whether the device is in a suspended state.
 - [func setPropertyState(CMIOExtensionPropertyState<AnyObject>?, forProperty: CMIOExtensionProperty)](./setpropertystate%28_,forproperty%29.md)
   Sets the value of a device property.
+- [transportType](./transporttype-25qzh.md)
+  The transport type of the device, such as USB or HDMI.
+- [suspended](./suspended-2ja7h.md)
+  A Boolean value that indicates whether the device is in a suspended state.
 
 
 ---

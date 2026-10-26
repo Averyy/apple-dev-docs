@@ -50,6 +50,8 @@ class ZoomSourceViewProviderContext
   Creates a zoom transition from the view that the source provider specifies.
 - [UIViewController.Transition.ZoomOptions](./zoomoptions.md)
   Options for a zoom transition.
+- [+ zoomWithOptions:sourceViewProvider:](../../uiviewcontrollertransition/zoomwithoptions_sourceviewprovider_.md)
+  Creates a zoom transition from the view specified by the source provider.
 
 
 ---

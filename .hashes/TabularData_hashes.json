@@ -2306,6 +2306,11 @@
       "file_path": "documentation/TabularData/dataframeprotocol/subscript(_).md",
       "hash": "4326f32326d0ca8e66fd289eb12e0deca6518d98df68de2802781faa9c97d61b"
     },
+    "https://developer.apple.com/documentation/tabulardata/dataframeprotocol/subscript(_:)-2p37h": {
+      "etag": "\"1e76-65d560dad9250-df\"",
+      "file_path": "documentation/TabularData/dataframeprotocol/subscript(_)-2p37h.md",
+      "hash": "4d8ee06bad8319b2fe8bfd6a6567860388aa872e3fd5ffd837953a3a01d63c62"
+    },
     "https://developer.apple.com/documentation/tabulardata/dataframeprotocol/subscript(_:)-8hly3": {
       "etag": "\"2710-65d560dad9250-df\"",
       "file_path": "documentation/TabularData/dataframeprotocol/subscript(_)-8hly3.md",
@@ -3286,6 +3291,11 @@
       "file_path": "documentation/TabularData/rowgroupingprotocol/aggregated(on,naming,transform).md",
       "hash": "eff11b402a6ebf32956174a22e31cdeb1a6320be7deb2dea069fa7d16b4b8214"
     },
+    "https://developer.apple.com/documentation/tabulardata/rowgroupingprotocol/aggregated(on:naming:transform:)-7s4mf": {
+      "etag": "\"2a8a-65d560da5754b-df\"",
+      "file_path": "documentation/TabularData/rowgroupingprotocol/aggregated(on,naming,transform)-7s4mf.md",
+      "hash": "8cdacf64c08fc09e016eec6920a67ee370ccbba975f42ecba81cf9a8f19ae57f"
+    },
     "https://developer.apple.com/documentation/tabulardata/rowgroupingprotocol/count": {
       "etag": "\"11ea-65d560da5754b-df\"",
       "file_path": "documentation/TabularData/rowgroupingprotocol/count.md",
@@ -3375,6 +3385,11 @@
       "etag": "\"20bc-65d560da5754b-df\"",
       "file_path": "documentation/TabularData/rowgroupingprotocol/summary(of).md",
       "hash": "70366b481e2f76fa701c58294d79a85455696115c56a33c6c487bfb4296deac3"
+    },
+    "https://developer.apple.com/documentation/tabulardata/rowgroupingprotocol/summary(of:)-n5ia": {
+      "etag": "\"19e6-65d560da5754b-df\"",
+      "file_path": "documentation/TabularData/rowgroupingprotocol/summary(of)-n5ia.md",
+      "hash": "b1fd719b2731ea2203e43c9c00bcbdacef18942374c6d3caa4eb1d5a85792468"
     },
     "https://developer.apple.com/documentation/tabulardata/rowgroupingprotocol/sums(_:_:order:)": {
       "etag": "\"6403-65d560da5754b-df\"",
@@ -5847,6 +5862,11 @@
       "file_path": "documentation/TabularData/dataframeprotocol/stratifiedsplit(on,by,randomseed)-9iauf.md",
       "hash": "7bf87c4a0d7aa3a64ad8c746a98f9bdba1ab055091852181067896c59d7bace3"
     },
+    "https://developer.apple.com/tutorials/data/documentation/tabulardata/dataframeprotocol/subscript(_:)-2p37h.json": {
+      "etag": "\"1e76-65d560dad9250-df\"",
+      "file_path": "documentation/TabularData/dataframeprotocol/subscript(_)-2p37h.md",
+      "hash": "4d8ee06bad8319b2fe8bfd6a6567860388aa872e3fd5ffd837953a3a01d63c62"
+    },
     "https://developer.apple.com/tutorials/data/documentation/tabulardata/dataframeprotocol/subscript(_:)-8hly3.json": {
       "etag": "\"2710-65d560dad9250-df\"",
       "file_path": "documentation/TabularData/dataframeprotocol/subscript(_)-8hly3.md",
@@ -6827,6 +6847,11 @@
       "file_path": "documentation/TabularData/rowgroupingprotocol/aggregated(on,into,transform).md",
       "hash": "617ede3e3ffb08640f73f1f74af2266e84c4b3a7cc0de540fe2ddab8d8b37227"
     },
+    "https://developer.apple.com/tutorials/data/documentation/tabulardata/rowgroupingprotocol/aggregated(on:naming:transform:)-7s4mf.json": {
+      "etag": "\"2a8a-65d560da5754b-df\"",
+      "file_path": "documentation/TabularData/rowgroupingprotocol/aggregated(on,naming,transform)-7s4mf.md",
+      "hash": "8cdacf64c08fc09e016eec6920a67ee370ccbba975f42ecba81cf9a8f19ae57f"
+    },
     "https://developer.apple.com/tutorials/data/documentation/tabulardata/rowgroupingprotocol/aggregated(on:naming:transform:).json": {
       "etag": "\"6c65-65d560da73612-df\"",
       "file_path": "documentation/TabularData/rowgroupingprotocol/aggregated(on,naming,transform).md",
@@ -6916,6 +6941,11 @@
       "etag": "\"17bc-65d560da5754b-df\"",
       "file_path": "documentation/TabularData/rowgroupingprotocol/summary().md",
       "hash": "a33edf742f45870ab7789079498362b7723f417424625cac8a961371065d7c1a"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/tabulardata/rowgroupingprotocol/summary(of:)-n5ia.json": {
+      "etag": "\"19e6-65d560da5754b-df\"",
+      "file_path": "documentation/TabularData/rowgroupingprotocol/summary(of)-n5ia.md",
+      "hash": "b1fd719b2731ea2203e43c9c00bcbdacef18942374c6d3caa4eb1d5a85792468"
     },
     "https://developer.apple.com/tutorials/data/documentation/tabulardata/rowgroupingprotocol/summary(of:).json": {
       "etag": "\"20bc-65d560da5754b-df\"",
@@ -7095,8 +7125,8 @@
   },
   "metadata": {
     "render": {
-      "version": 1
+      "version": 2
     },
-    "total_pages": 1420
+    "total_pages": 1426
   }
 }

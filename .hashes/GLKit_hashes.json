@@ -5,6 +5,16 @@
       "file_path": "documentation/GLKit/GLKit.md",
       "hash": "462e3596854790f407f846fbe95bfaf3211cfcc70ba024664f111c69a4b01a67"
     },
+    "https://developer.apple.com/documentation/glkit/glk_extern": {
+      "etag": "\"9bb-65d55d9b6856a-df\"",
+      "file_path": "documentation/GLKit/glk_extern.md",
+      "hash": "e04818928757cefbcac81a6d5999f857fbec13b926858e042c85765eaf756af2"
+    },
+    "https://developer.apple.com/documentation/glkit/glk_inline": {
+      "etag": "\"9bb-65d55d9b47870-df\"",
+      "file_path": "documentation/GLKit/glk_inline.md",
+      "hash": "4c894b96acb2a212b476f08cd0c4453bc1eed1064148eb5b64d2fea77632ad43"
+    },
     "https://developer.apple.com/documentation/glkit/glk_sse3_intrinsics": {
       "etag": "\"44ea-65d55d9b0ae2b-df\"",
       "file_path": "documentation/GLKit/glk_sse3_intrinsics.md",
@@ -1045,6 +1055,11 @@
       "file_path": "documentation/GLKit/glkmeshbuffer/type.md",
       "hash": "4a902e3e2ae327fd7fad5d0ac9051d925c36dd9d611cf44593c36259fab7e320"
     },
+    "https://developer.apple.com/documentation/glkit/glkmeshbuffer/zone": {
+      "etag": "\"2344-65d55d9b6856a-df\"",
+      "file_path": "documentation/GLKit/glkmeshbuffer/zone.md",
+      "hash": "2541c95a2d057e5c630cdf5a04bca083832420ca9672ed545645cab65bd3c2da"
+    },
     "https://developer.apple.com/documentation/glkit/glkmeshbuffer/zone()": {
       "etag": "\"1671-65d55d9b6856a-df\"",
       "file_path": "documentation/GLKit/glkmeshbuffer/zone().md",
@@ -1320,50 +1335,100 @@
       "file_path": "documentation/GLKit/glktextureinfo.md",
       "hash": "18481167fd491367d52f88ebaffdf4ce410359ce248ef1cd2a8808b2b443d5be"
     },
+    "https://developer.apple.com/documentation/glkit/glktextureinfo/alphastate-c.ivar": {
+      "etag": "\"1971-65d55d9b47870-df\"",
+      "file_path": "documentation/GLKit/glktextureinfo/alphastate-c.ivar.md",
+      "hash": "69069051733b627ba8212b9e6a5bd47d672907508ac26bb0e1e13100be4ea757"
+    },
     "https://developer.apple.com/documentation/glkit/glktextureinfo/alphastate-swift.property": {
       "etag": "\"45c6-65d55d9b47870-df\"",
       "file_path": "documentation/GLKit/glktextureinfo/alphastate-swift.property.md",
       "hash": "0876f161524bedb98c9e75b8b34fe18cd6568ab8681541731f9ecef23dfdfb7c"
+    },
+    "https://developer.apple.com/documentation/glkit/glktextureinfo/arraylength-c.ivar": {
+      "etag": "\"1723-65d55d9b47870-df\"",
+      "file_path": "documentation/GLKit/glktextureinfo/arraylength-c.ivar.md",
+      "hash": "c55433859cba4c4b10f9af217ce15e51fb23a79f4f90c462433144be388825b3"
     },
     "https://developer.apple.com/documentation/glkit/glktextureinfo/arraylength-swift.property": {
       "etag": "\"2eaa-65d55d9b47870-df\"",
       "file_path": "documentation/GLKit/glktextureinfo/arraylength-swift.property.md",
       "hash": "7c7364bfd374b2e5e1d95183ed9d5315c16ecf3a005489056ea6d8fa2781af72"
     },
+    "https://developer.apple.com/documentation/glkit/glktextureinfo/containsmipmaps-c.ivar": {
+      "etag": "\"169f-65d55d9b47870-df\"",
+      "file_path": "documentation/GLKit/glktextureinfo/containsmipmaps-c.ivar.md",
+      "hash": "a8f28610aff8583623fbde5a51067c152784d02bd3290fc4b1eadccea7146b1d"
+    },
     "https://developer.apple.com/documentation/glkit/glktextureinfo/containsmipmaps-swift.property": {
       "etag": "\"44f0-65d55d9b47870-df\"",
       "file_path": "documentation/GLKit/glktextureinfo/containsmipmaps-swift.property.md",
       "hash": "fc8c6175d4aef1f8063ceb7eb27c0e561092ceadbe05ddf7a7ca8ade465f5c05"
+    },
+    "https://developer.apple.com/documentation/glkit/glktextureinfo/depth-c.ivar": {
+      "etag": "\"16db-65d55d9b47870-df\"",
+      "file_path": "documentation/GLKit/glktextureinfo/depth-c.ivar.md",
+      "hash": "56489eb248dba7bb4c86f2dd7fbf8aa7c8e86f14902fdfc6f9a5c87491d19105"
     },
     "https://developer.apple.com/documentation/glkit/glktextureinfo/depth-swift.property": {
       "etag": "\"2e74-65d55d9b47870-df\"",
       "file_path": "documentation/GLKit/glktextureinfo/depth-swift.property.md",
       "hash": "af8b4e03fab72a91445a2a9568356f9b1f53a514bd050e3d233027748dec65b4"
     },
+    "https://developer.apple.com/documentation/glkit/glktextureinfo/height-c.ivar": {
+      "etag": "\"16e7-65d55d9b47870-df\"",
+      "file_path": "documentation/GLKit/glktextureinfo/height-c.ivar.md",
+      "hash": "f453d5079d69309536025b05cad133a5424aa0260d7c74bce6e273248302e6e6"
+    },
     "https://developer.apple.com/documentation/glkit/glktextureinfo/height-swift.property": {
       "etag": "\"42e3-65d55d9b47870-df\"",
       "file_path": "documentation/GLKit/glktextureinfo/height-swift.property.md",
       "hash": "857ac68dc7198c353849cdfc75d211b8bd375b3f88a15528d3f251a9e8c01451"
+    },
+    "https://developer.apple.com/documentation/glkit/glktextureinfo/mimaplevelcount-c.ivar": {
+      "etag": "\"1753-65d55d9b47870-df\"",
+      "file_path": "documentation/GLKit/glktextureinfo/mimaplevelcount-c.ivar.md",
+      "hash": "c6d3998f480ea5dc14695dd2f9307d45b6e99d07a5b644d49c8c1b47777e34ea"
     },
     "https://developer.apple.com/documentation/glkit/glktextureinfo/mimaplevelcount-swift.property": {
       "etag": "\"2ece-65d55d9b47870-df\"",
       "file_path": "documentation/GLKit/glktextureinfo/mimaplevelcount-swift.property.md",
       "hash": "cfcdd01949d89e374f3b5e1b23310959f4b878b3eb698c10102b7ac5b3b8edd2"
     },
+    "https://developer.apple.com/documentation/glkit/glktextureinfo/name-c.ivar": {
+      "etag": "\"16cf-65d55d9b47870-df\"",
+      "file_path": "documentation/GLKit/glktextureinfo/name-c.ivar.md",
+      "hash": "d4d27574614abb098e0d8cfe0554698509ecb25adb44fa8e95ce549076079abe"
+    },
     "https://developer.apple.com/documentation/glkit/glktextureinfo/name-swift.property": {
       "etag": "\"43d4-65d55d9b47870-df\"",
       "file_path": "documentation/GLKit/glktextureinfo/name-swift.property.md",
       "hash": "ee29bdf4f0e781f6330d792de120ce309d56a945d69413eab2a28cc9812023e0"
+    },
+    "https://developer.apple.com/documentation/glkit/glktextureinfo/target-c.ivar": {
+      "etag": "\"16e7-65d55d9b47870-df\"",
+      "file_path": "documentation/GLKit/glktextureinfo/target-c.ivar.md",
+      "hash": "6ccd3860dcce0da4f41b87afb82d1bfe2c17396fda89707a3cf706322373e11c"
     },
     "https://developer.apple.com/documentation/glkit/glktextureinfo/target-swift.property": {
       "etag": "\"43ea-65d55d9b47870-df\"",
       "file_path": "documentation/GLKit/glktextureinfo/target-swift.property.md",
       "hash": "2b188ad4fa276141dbebd235fa89677eb9a46312024aa873021c5ab9c3e7ef8a"
     },
+    "https://developer.apple.com/documentation/glkit/glktextureinfo/textureorigin-c.ivar": {
+      "etag": "\"193e-65d55d9b47870-df\"",
+      "file_path": "documentation/GLKit/glktextureinfo/textureorigin-c.ivar.md",
+      "hash": "56c06882ac1bb0449372d80baec04a496671756538cb039da770bbc6273c0157"
+    },
     "https://developer.apple.com/documentation/glkit/glktextureinfo/textureorigin-swift.property": {
       "etag": "\"4570-65d55d9b47870-df\"",
       "file_path": "documentation/GLKit/glktextureinfo/textureorigin-swift.property.md",
       "hash": "fe6a58029b1fa350e970ed2ef35527031e28f404fa4d094c25aff1feab0b6e57"
+    },
+    "https://developer.apple.com/documentation/glkit/glktextureinfo/width-c.ivar": {
+      "etag": "\"16db-65d55d9b47870-df\"",
+      "file_path": "documentation/GLKit/glktextureinfo/width-c.ivar.md",
+      "hash": "bedc55782c2f3730bec7c47f62078d33fa7d8449b7458c7591708e783c579580"
     },
     "https://developer.apple.com/documentation/glkit/glktextureinfo/width-swift.property": {
       "etag": "\"42d9-65d55d9b47870-df\"",
@@ -1556,7 +1621,7 @@
       "hash": "75099b6becdfd62ee02fa52f8cd5808cdcdf06713bf9c343058d8010f14258b8"
     },
     "https://developer.apple.com/documentation/glkit/glktextureloadererror-swift.struct/code/cubemapinvalidnumfiles": {
-      "etag": "\"722b-65d55d9a9e7ad-df\"",
+      "etag": "\"722b-65d55d9a9e7ad\"",
       "file_path": "documentation/GLKit/glktextureloadererror-swift.struct/code/cubemapinvalidnumfiles.md",
       "hash": "b7c19c601ecc6493d3fd95beba05c8716950a6d3b6d444d2bead17834229b254"
     },
@@ -2570,6 +2635,16 @@
       "file_path": "documentation/GLKit/nsstringfromglkvector4(_).md",
       "hash": "5da97796fbbb4d87579b13e8ca532608b82680f402ce0f9c027d00c08b8e9e3e"
     },
+    "https://developer.apple.com/documentation/glkit/opengl_deprecated": {
+      "etag": "\"9ff-65d55d9bea70c-df\"",
+      "file_path": "documentation/GLKit/opengl_deprecated.md",
+      "hash": "ab39430396ea2ca5df8018aecc53cf92c55b44a673dbeb575a706326c3a26ebb"
+    },
+    "https://developer.apple.com/documentation/glkit/opengles_deprecated": {
+      "etag": "\"9b1-65d55d9b24b26-df\"",
+      "file_path": "documentation/GLKit/opengles_deprecated.md",
+      "hash": "ab6e5da52e673502b8f71196a12052317d869a79b31969dafce953135c9b6843"
+    },
     "https://developer.apple.com/documentation/glkit/texture-error-handling": {
       "etag": "\"2979-65902616bf8e1-df\"",
       "file_path": "documentation/GLKit/texture-error-handling.md",
@@ -2584,6 +2659,16 @@
       "etag": "\"a3d7-65d55d9a9e7ad-df\"",
       "file_path": "documentation/GLKit/GLKit.md",
       "hash": "462e3596854790f407f846fbe95bfaf3211cfcc70ba024664f111c69a4b01a67"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/glkit/glk_extern.json": {
+      "etag": "\"9bb-65d55d9b6856a-df\"",
+      "file_path": "documentation/GLKit/glk_extern.md",
+      "hash": "e04818928757cefbcac81a6d5999f857fbec13b926858e042c85765eaf756af2"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/glkit/glk_inline.json": {
+      "etag": "\"9bb-65d55d9b47870-df\"",
+      "file_path": "documentation/GLKit/glk_inline.md",
+      "hash": "4c894b96acb2a212b476f08cd0c4453bc1eed1064148eb5b64d2fea77632ad43"
     },
     "https://developer.apple.com/tutorials/data/documentation/glkit/glk_sse3_intrinsics.json": {
       "etag": "\"44ea-65d55d9b0ae2b-df\"",
@@ -3630,6 +3715,11 @@
       "file_path": "documentation/GLKit/glkmeshbuffer/zone().md",
       "hash": "3863f8f9dcc695df4dcc42e5d0e8c6bdedb9cd065e27a4ced40a9b9ad0e8246c"
     },
+    "https://developer.apple.com/tutorials/data/documentation/glkit/glkmeshbuffer/zone.json": {
+      "etag": "\"2344-65d55d9b6856a-df\"",
+      "file_path": "documentation/GLKit/glkmeshbuffer/zone.md",
+      "hash": "2541c95a2d057e5c630cdf5a04bca083832420ca9672ed545645cab65bd3c2da"
+    },
     "https://developer.apple.com/tutorials/data/documentation/glkit/glkmeshbufferallocator.json": {
       "etag": "\"402d-65d55d9b83c81-df\"",
       "file_path": "documentation/GLKit/glkmeshbufferallocator.md",
@@ -3900,50 +3990,100 @@
       "file_path": "documentation/GLKit/glktextureinfo.md",
       "hash": "18481167fd491367d52f88ebaffdf4ce410359ce248ef1cd2a8808b2b443d5be"
     },
+    "https://developer.apple.com/tutorials/data/documentation/glkit/glktextureinfo/alphastate-c.ivar.json": {
+      "etag": "\"1971-65d55d9b47870-df\"",
+      "file_path": "documentation/GLKit/glktextureinfo/alphastate-c.ivar.md",
+      "hash": "69069051733b627ba8212b9e6a5bd47d672907508ac26bb0e1e13100be4ea757"
+    },
     "https://developer.apple.com/tutorials/data/documentation/glkit/glktextureinfo/alphastate-swift.property.json": {
       "etag": "\"45c6-65d55d9b47870-df\"",
       "file_path": "documentation/GLKit/glktextureinfo/alphastate-swift.property.md",
       "hash": "0876f161524bedb98c9e75b8b34fe18cd6568ab8681541731f9ecef23dfdfb7c"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/glkit/glktextureinfo/arraylength-c.ivar.json": {
+      "etag": "\"1723-65d55d9b47870-df\"",
+      "file_path": "documentation/GLKit/glktextureinfo/arraylength-c.ivar.md",
+      "hash": "c55433859cba4c4b10f9af217ce15e51fb23a79f4f90c462433144be388825b3"
     },
     "https://developer.apple.com/tutorials/data/documentation/glkit/glktextureinfo/arraylength-swift.property.json": {
       "etag": "\"2eaa-65d55d9b47870-df\"",
       "file_path": "documentation/GLKit/glktextureinfo/arraylength-swift.property.md",
       "hash": "7c7364bfd374b2e5e1d95183ed9d5315c16ecf3a005489056ea6d8fa2781af72"
     },
+    "https://developer.apple.com/tutorials/data/documentation/glkit/glktextureinfo/containsmipmaps-c.ivar.json": {
+      "etag": "\"169f-65d55d9b47870-df\"",
+      "file_path": "documentation/GLKit/glktextureinfo/containsmipmaps-c.ivar.md",
+      "hash": "a8f28610aff8583623fbde5a51067c152784d02bd3290fc4b1eadccea7146b1d"
+    },
     "https://developer.apple.com/tutorials/data/documentation/glkit/glktextureinfo/containsmipmaps-swift.property.json": {
       "etag": "\"44f0-65d55d9b47870-df\"",
       "file_path": "documentation/GLKit/glktextureinfo/containsmipmaps-swift.property.md",
       "hash": "fc8c6175d4aef1f8063ceb7eb27c0e561092ceadbe05ddf7a7ca8ade465f5c05"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/glkit/glktextureinfo/depth-c.ivar.json": {
+      "etag": "\"16db-65d55d9b47870-df\"",
+      "file_path": "documentation/GLKit/glktextureinfo/depth-c.ivar.md",
+      "hash": "56489eb248dba7bb4c86f2dd7fbf8aa7c8e86f14902fdfc6f9a5c87491d19105"
     },
     "https://developer.apple.com/tutorials/data/documentation/glkit/glktextureinfo/depth-swift.property.json": {
       "etag": "\"2e74-65d55d9b47870-df\"",
       "file_path": "documentation/GLKit/glktextureinfo/depth-swift.property.md",
       "hash": "af8b4e03fab72a91445a2a9568356f9b1f53a514bd050e3d233027748dec65b4"
     },
+    "https://developer.apple.com/tutorials/data/documentation/glkit/glktextureinfo/height-c.ivar.json": {
+      "etag": "\"16e7-65d55d9b47870-df\"",
+      "file_path": "documentation/GLKit/glktextureinfo/height-c.ivar.md",
+      "hash": "f453d5079d69309536025b05cad133a5424aa0260d7c74bce6e273248302e6e6"
+    },
     "https://developer.apple.com/tutorials/data/documentation/glkit/glktextureinfo/height-swift.property.json": {
       "etag": "\"42e3-65d55d9b47870-df\"",
       "file_path": "documentation/GLKit/glktextureinfo/height-swift.property.md",
       "hash": "857ac68dc7198c353849cdfc75d211b8bd375b3f88a15528d3f251a9e8c01451"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/glkit/glktextureinfo/mimaplevelcount-c.ivar.json": {
+      "etag": "\"1753-65d55d9b47870-df\"",
+      "file_path": "documentation/GLKit/glktextureinfo/mimaplevelcount-c.ivar.md",
+      "hash": "c6d3998f480ea5dc14695dd2f9307d45b6e99d07a5b644d49c8c1b47777e34ea"
     },
     "https://developer.apple.com/tutorials/data/documentation/glkit/glktextureinfo/mimaplevelcount-swift.property.json": {
       "etag": "\"2ece-65d55d9b47870-df\"",
       "file_path": "documentation/GLKit/glktextureinfo/mimaplevelcount-swift.property.md",
       "hash": "cfcdd01949d89e374f3b5e1b23310959f4b878b3eb698c10102b7ac5b3b8edd2"
     },
+    "https://developer.apple.com/tutorials/data/documentation/glkit/glktextureinfo/name-c.ivar.json": {
+      "etag": "\"16cf-65d55d9b47870-df\"",
+      "file_path": "documentation/GLKit/glktextureinfo/name-c.ivar.md",
+      "hash": "d4d27574614abb098e0d8cfe0554698509ecb25adb44fa8e95ce549076079abe"
+    },
     "https://developer.apple.com/tutorials/data/documentation/glkit/glktextureinfo/name-swift.property.json": {
       "etag": "\"43d4-65d55d9b47870-df\"",
       "file_path": "documentation/GLKit/glktextureinfo/name-swift.property.md",
       "hash": "ee29bdf4f0e781f6330d792de120ce309d56a945d69413eab2a28cc9812023e0"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/glkit/glktextureinfo/target-c.ivar.json": {
+      "etag": "\"16e7-65d55d9b47870-df\"",
+      "file_path": "documentation/GLKit/glktextureinfo/target-c.ivar.md",
+      "hash": "6ccd3860dcce0da4f41b87afb82d1bfe2c17396fda89707a3cf706322373e11c"
     },
     "https://developer.apple.com/tutorials/data/documentation/glkit/glktextureinfo/target-swift.property.json": {
       "etag": "\"43ea-65d55d9b47870-df\"",
       "file_path": "documentation/GLKit/glktextureinfo/target-swift.property.md",
       "hash": "2b188ad4fa276141dbebd235fa89677eb9a46312024aa873021c5ab9c3e7ef8a"
     },
+    "https://developer.apple.com/tutorials/data/documentation/glkit/glktextureinfo/textureorigin-c.ivar.json": {
+      "etag": "\"193e-65d55d9b47870-df\"",
+      "file_path": "documentation/GLKit/glktextureinfo/textureorigin-c.ivar.md",
+      "hash": "56c06882ac1bb0449372d80baec04a496671756538cb039da770bbc6273c0157"
+    },
     "https://developer.apple.com/tutorials/data/documentation/glkit/glktextureinfo/textureorigin-swift.property.json": {
       "etag": "\"4570-65d55d9b47870-df\"",
       "file_path": "documentation/GLKit/glktextureinfo/textureorigin-swift.property.md",
       "hash": "fe6a58029b1fa350e970ed2ef35527031e28f404fa4d094c25aff1feab0b6e57"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/glkit/glktextureinfo/width-c.ivar.json": {
+      "etag": "\"16db-65d55d9b47870-df\"",
+      "file_path": "documentation/GLKit/glktextureinfo/width-c.ivar.md",
+      "hash": "bedc55782c2f3730bec7c47f62078d33fa7d8449b7458c7591708e783c579580"
     },
     "https://developer.apple.com/tutorials/data/documentation/glkit/glktextureinfo/width-swift.property.json": {
       "etag": "\"42d9-65d55d9b47870-df\"",
@@ -4136,7 +4276,7 @@
       "hash": "75099b6becdfd62ee02fa52f8cd5808cdcdf06713bf9c343058d8010f14258b8"
     },
     "https://developer.apple.com/tutorials/data/documentation/glkit/glktextureloadererror-swift.struct/code/cubemapinvalidnumfiles.json": {
-      "etag": "\"722b-65d55d9a9e7ad-df\"",
+      "etag": "\"722b-65d55d9a9e7ad\"",
       "file_path": "documentation/GLKit/glktextureloadererror-swift.struct/code/cubemapinvalidnumfiles.md",
       "hash": "b7c19c601ecc6493d3fd95beba05c8716950a6d3b6d444d2bead17834229b254"
     },
@@ -5150,6 +5290,16 @@
       "file_path": "documentation/GLKit/nsstringfromglkvector4(_).md",
       "hash": "5da97796fbbb4d87579b13e8ca532608b82680f402ce0f9c027d00c08b8e9e3e"
     },
+    "https://developer.apple.com/tutorials/data/documentation/glkit/opengl_deprecated.json": {
+      "etag": "\"9ff-65d55d9bea70c-df\"",
+      "file_path": "documentation/GLKit/opengl_deprecated.md",
+      "hash": "ab39430396ea2ca5df8018aecc53cf92c55b44a673dbeb575a706326c3a26ebb"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/glkit/opengles_deprecated.json": {
+      "etag": "\"9b1-65d55d9b24b26-df\"",
+      "file_path": "documentation/GLKit/opengles_deprecated.md",
+      "hash": "ab6e5da52e673502b8f71196a12052317d869a79b31969dafce953135c9b6843"
+    },
     "https://developer.apple.com/tutorials/data/documentation/glkit/texture-error-handling.json": {
       "etag": "\"2979-65902616bf8e1-df\"",
       "file_path": "documentation/GLKit/texture-error-handling.md",
@@ -5163,8 +5313,8 @@
   },
   "metadata": {
     "render": {
-      "version": 1
+      "version": 2
     },
-    "total_pages": 1032
+    "total_pages": 1062
   }
 }

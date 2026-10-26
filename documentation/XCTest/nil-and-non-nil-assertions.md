@@ -10,11 +10,15 @@ Check whether a test condition has, or doesn’t have, a value.
 ### Tests for a Nil Condition
 - [func XCTAssertNil(@autoclosure () throws -> Any?, @autoclosure () -> String, file: StaticString, line: UInt)](./xctassertnil%28_,_,file,line%29.md)
   Asserts that an expression is `nil`.
+- [XCTAssertNil](./xctassertnil.md)
+  Asserts that an expression is `nil`.
 ### Tests for a Non-Nil Condition
 - [func XCTAssertNotNil(@autoclosure () throws -> Any?, @autoclosure () -> String, file: StaticString, line: UInt)](./xctassertnotnil%28_,_,file,line%29.md)
   Asserts that an expression is not `nil`.
 - [func XCTUnwrap<T>(@autoclosure () throws -> T?, @autoclosure () -> String, file: StaticString, line: UInt) throws -> T](./xctunwrap%28_,_,file,line%29.md)
   Asserts that an expression is not `nil,` and returns the unwrapped value.
+- [XCTAssertNotNil](./xctassertnotnil.md)
+  Asserts that an expression is not `nil`.
 
 ## See Also
 

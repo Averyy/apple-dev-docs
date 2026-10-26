@@ -29,6 +29,8 @@ class AVAssetReaderVideoCompositionOutput
 ### Creating a video composition output
 - [init(videoTracks: [AVAssetTrack], videoSettings: [String : Any]?)](./avassetreadervideocompositionoutput/init%28videotracks,videosettings%29.md)
   Creates an object that reads composited video frames from the specified video tracks.
+- [+ assetReaderVideoCompositionOutputWithVideoTracks:videoSettings:](./avassetreadervideocompositionoutput/assetreadervideocompositionoutputwithvideotracks_videosettings_.md)
+  Returns a new object that reads composited video from the specified video tracks.
 ### Configuring video settings
 - [var videoComposition: AVVideoComposition?](./avassetreadervideocompositionoutput/videocomposition.md)
   The video composition to use for the output.

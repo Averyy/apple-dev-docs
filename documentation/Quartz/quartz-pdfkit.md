@@ -9,6 +9,14 @@ Create and modify PDF documents.
 
 For full documentation of these symbols, see [PDFKit](../PDFKit/PDFKit.md)
 
+## Topics
+
+### Quartz PDFKit
+- [kQuartzFilterManagerDidAddFilterNotification](./kquartzfiltermanagerdidaddfilternotification.md)
+- [kQuartzFilterManagerDidModifyFilterNotification](./kquartzfiltermanagerdidmodifyfilternotification.md)
+- [kQuartzFilterManagerDidRemoveFilterNotification](./kquartzfiltermanagerdidremovefilternotification.md)
+- [kQuartzFilterManagerDidSelectFilterNotification](./kquartzfiltermanagerdidselectfilternotification.md)
+
 
 ---
 

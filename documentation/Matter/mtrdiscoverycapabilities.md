@@ -32,6 +32,9 @@ enum MTRDiscoveryCapabilities : NSUInteger;
 - [static var allMask: MTRDiscoveryCapabilities](./mtrdiscoverycapabilities/allmask.md)
 - [static var onNetwork: MTRDiscoveryCapabilities](./mtrdiscoverycapabilities/onnetwork.md)
 - [static var softAP: MTRDiscoveryCapabilities](./mtrdiscoverycapabilities/softap.md)
+- [MTRDiscoveryCapabilitiesNone](./mtrdiscoverycapabilities/mtrdiscoverycapabilitiesnone.md)
+### Constants
+- [MTRDiscoveryCapabilitiesUnknown](./mtrdiscoverycapabilities/mtrdiscoverycapabilitiesunknown.md)
 
 ## Relationships
 

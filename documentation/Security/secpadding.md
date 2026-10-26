@@ -50,6 +50,8 @@ enum SecPadding : uint32_t;
   Data to be signed is a SHA384 hash.
 - [static var PKCS1SHA512: SecPadding](./secpadding/pkcs1sha512.md)
   Data to be signed is a SHA512 hash.
+- [kSecPaddingNone](./secpadding/ksecpaddingnone.md)
+  No padding.
 
 ## Relationships
 

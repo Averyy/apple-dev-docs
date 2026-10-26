@@ -74,6 +74,7 @@ If you no longer require an asset that’s on the server, you don’t delete it.
 - [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 - [Sendable](../Swift/sendable.md)
 - [SendableMetatype](../Swift/sendablemetatype.md)
+- [CKRecordValue](./ckrecordvalue-c.protocol.md)
 
 ## See Also
 

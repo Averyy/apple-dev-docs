@@ -60,6 +60,20 @@
 - [var kAudioSubTapExtraInputLatencyKey: String](./kaudiosubtapextrainputlatencykey.md)
 - [var kAudioSubTapExtraOutputLatencyKey: String](./kaudiosubtapextraoutputlatencykey.md)
 - [var kAudioSubTapUIDKey: String](./kaudiosubtapuidkey.md)
+- [AudioHardwareTapping_h](./audiohardwaretapping_h.md)
+- [CATapDescription_h](./catapdescription_h.md)
+- [kAudioDevicePropertyClockAlgorithm](./kaudiodevicepropertyclockalgorithm.md)
+- [kAudioDevicePropertyClockIsStable](./kaudiodevicepropertyclockisstable.md)
+- [kAudioDevicePropertyZeroTimeStampPeriod](./kaudiodevicepropertyzerotimestampperiod.md)
+- [kAudioObjectPlugInObject](./kaudioobjectpluginobject.md)
+- [kAudioObjectPropertyCustomPropertyInfoList](./kaudioobjectpropertycustompropertyinfolist.md)
+- [kAudioPlugInPropertyResourceBundle](./kaudiopluginpropertyresourcebundle.md)
+- [kAudioServerPlugInCustomPropertyDataTypeCFPropertyList](./kaudioserverplugincustompropertydatatypecfpropertylist.md)
+- [kAudioServerPlugInCustomPropertyDataTypeCFString](./kaudioserverplugincustompropertydatatypecfstring.md)
+- [kAudioServerPlugInCustomPropertyDataTypeNone](./kaudioserverplugincustompropertydatatypenone.md)
+- [kAudioServerPlugInDriverInterfaceUUID](./kaudioserverplugindriverinterfaceuuid.md)
+- [kAudioServerPlugInHostClientID](./kaudioserverpluginhostclientid.md)
+- [kAudioServerPlugInTypeUUID](./kaudioserverplugintypeuuid.md)
 
 ## See Also
 

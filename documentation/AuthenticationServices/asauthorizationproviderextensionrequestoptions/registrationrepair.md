@@ -24,6 +24,8 @@ ASAuthorizationProviderExtensionRequestOptionsRegistrationRepair
 ### Identifying the options
 - [static var userInteractionEnabled: ASAuthorizationProviderExtensionRequestOptions](./userinteractionenabled.md)
   Indicates that the user interface is in an enabled state.
+- [ASAuthorizationProviderExtensionRequestOptionsNone](./asauthorizationproviderextensionrequestoptionsnone.md)
+  Options aren’t available.
 
 
 ---

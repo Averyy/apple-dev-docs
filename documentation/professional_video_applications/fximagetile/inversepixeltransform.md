@@ -22,7 +22,7 @@ var inversePixelTransform: FxMatrix44! { get }
 
 ## Mentions
 
-- [Optimizing FxPlug plug-ins](https://developer.apple.com/documentation/professional-video-applications/optimizing-fxplug-plug-ins)
+- [Optimizing FxPlug plug-ins](../../Professional-Video-Applications/optimizing-fxplug-plug-ins.md)
 
 ## See Also
 

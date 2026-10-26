@@ -1,0 +1,20 @@
+# MAXIMUM_PREFETCH_CEILING
+
+**Framework**: IOKit  
+**Kind**: structp  
+**Role**: Instance Property
+
+**Availability**:
+- Mac Catalyst 13.0+
+- macOS 10.3+
+
+## Declaration
+
+```c
+UInt16 MAXIMUM_PREFETCH_CEILING;
+```
+
+
+---
+
+*[View on Apple Developer](https://developer.apple.com/documentation/iokit/sbcmodepagecaching/1555455-maximum_prefetch_ceiling)*

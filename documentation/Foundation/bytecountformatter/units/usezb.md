@@ -46,6 +46,8 @@ NSByteCountFormatterUseZB
   Displays yottabytes in the formatter content.
 - [static var useAll: ByteCountFormatter.Units](./useall.md)
   Can use any unit in the formatter content.
+- [NSByteCountFormatterUseDefault](../../nsbytecountformatterunits/nsbytecountformatterusedefault.md)
+  This causes default units appropriate for the platform to be used. This is the default.
 
 
 ---

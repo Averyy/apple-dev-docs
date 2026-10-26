@@ -60,6 +60,8 @@ AEAssessmentSession *session = [[AEAssessmentSession alloc] initWithConfiguratio
   A mode in which autocorrect checks punctuation as the user types.
 - [static var spelling: AEAssessmentConfiguration.AutocorrectMode](./autocorrectmode-swift.struct/spelling.md)
   A mode in which autocorrect checks for spelling as the user types.
+- [AEAutocorrectModeNone](../aeautocorrectmode/aeautocorrectmodenone.md)
+  A mode that indicates autocorrect doesn’t check anything.
 
 ## Relationships
 

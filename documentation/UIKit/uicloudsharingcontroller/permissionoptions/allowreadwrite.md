@@ -35,6 +35,8 @@ To give the user the option to allow other people to edit the shared data, inclu
   The option that restricts access to people who have been invited.
 - [static var allowReadOnly: UICloudSharingController.PermissionOptions](./allowreadonly.md)
   The option that gives participants read-only permission to the shared data.
+- [UICloudSharingPermissionStandard](../../uicloudsharingpermissionoptions/uicloudsharingpermissionstandard.md)
+  The option that makes all user options available.
 
 
 ---

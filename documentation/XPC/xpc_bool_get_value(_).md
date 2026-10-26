@@ -42,6 +42,10 @@ The underlying Boolean value.
   A constant that represents a Boolean value of true.
 - [var XPC_BOOL_FALSE: xpc_object_t](./xpc_bool_false-swift.var.md)
   A constant that represents a Boolean value of false.
+- [XPC_BOOL_TRUE](./xpc_bool_true-c.macro.md)
+  A constant that represents a Boolean value of true.
+- [XPC_BOOL_FALSE](./xpc_bool_false-c.macro.md)
+  A constant that represents a Boolean value of false.
 
 
 ---

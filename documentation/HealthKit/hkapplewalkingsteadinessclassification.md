@@ -62,6 +62,16 @@ Walking Steadiness classifications measures the ability of the user to move with
 - [Sendable](../Swift/sendable.md)
 - [SendableMetatype](../Swift/sendablemetatype.md)
 
+## See Also
+
+### Walking steadiness classifications
+- [HKAppleWalkingSteadinessClassificationForQuantity](./hkapplewalkingsteadinessclassificationforquantity.md)
+  Provides a classification for a score that measures the steadiness of the user’s gait.
+- [HKAppleWalkingSteadinessMaximumQuantityForClassification](./hkapplewalkingsteadinessmaximumquantityforclassification.md)
+  Returns the maximum score for the steadiness of the user’s gait based on the provided classification.
+- [HKAppleWalkingSteadinessMinimumQuantityForClassification](./hkapplewalkingsteadinessminimumquantityforclassification.md)
+  Returns the minimum score for the steadiness of the user’s gait based on the provided classification.
+
 
 ---
 

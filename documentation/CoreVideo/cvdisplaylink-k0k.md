@@ -60,6 +60,11 @@ A Core Video display link provides a separate high-priority thread to notify you
 - [typealias CVDisplayLinkOutputCallback](./cvdisplaylinkoutputcallback.md)
   A type for a display link callback function that the system invokes when it’s time for the app to output a video frame.
 - [typealias CVDisplayLinkOutputHandler](./cvdisplaylinkoutputhandler.md)
+### Retaining and Releasing Display Links
+- [CVDisplayLinkRelease](./cvdisplaylinkrelease.md)
+  Releases a display link.
+- [CVDisplayLinkRetain](./cvdisplaylinkretain.md)
+  Retains a display link.
 
 ## See Also
 

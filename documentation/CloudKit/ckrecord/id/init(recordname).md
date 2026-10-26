@@ -44,6 +44,8 @@ Use this method when you’re creating or searching for records in the default z
   Creates a new record ID with the specified name and zone information.
 - [let CKRecordNameZoneWideShare: String](../../ckrecordnamezonewideshare.md)
   The name of a share record that manages a shared record zone.
+- [- initWithRecordName:zoneID:](../../ckrecordid/initwithrecordname_zoneid_.md)
+  Creates a new record ID with the specified name and zone information.
 
 
 ---

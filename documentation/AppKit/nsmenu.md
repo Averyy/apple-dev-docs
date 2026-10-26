@@ -120,6 +120,10 @@ class NSMenu
 ### Working with Palettes
 - [static func palette(colors: [NSColor], titles: [String], template: NSImage?, onSelectionChange: ((NSMenu) -> Void)?) -> NSMenu](./nsmenu/palette%28colors,titles,template,onselectionchange%29.md)
   Creates a palette style menu displaying user-selectable color tags that tint using the specified array of colors.
+- [+ paletteMenuWithColors:titles:selectionHandler:](./nsmenu/palettemenuwithcolors_titles_selectionhandler_.md)
+  Creates a palette style menu displaying user-selectable color tags.
+- [+ paletteMenuWithColors:titles:templateImage:selectionHandler:](./nsmenu/palettemenuwithcolors_titles_templateimage_selectionhandler_.md)
+  Creates a palette style menu displaying user-selectable color tags that tint using the specified array of colors.
 ### Displaying Contextual Menus
 - [var allowsContextMenuPlugIns: Bool](./nsmenu/allowscontextmenuplugins.md)
   Indicates whether the pop-up menu allows appending of contextual menu plug-in items.

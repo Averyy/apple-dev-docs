@@ -66,6 +66,14 @@ You are responsible for adjusting the size and position of the returned view to 
   Sent to the view controller before performing a one-step user interface rotation.
 - [func willRotate(to: UIInterfaceOrientation, duration: TimeInterval)](./willrotate%28to,duration%29.md)
   Sent to the view controller just before the user interface begins rotating.
+- [- automaticallyForwardAppearanceAndRotationMethodsToChildViewControllers](./automaticallyforwardappearanceandrotationmethodstochildviewcontrollers.md)
+  Returns a Boolean value that indicates whether appearance and rotation methods are forwarded.
+- [- didAnimateFirstHalfOfRotationToInterfaceOrientation:](./didanimatefirsthalfofrotationtointerfaceorientation_.md)
+  Sent to the view controller after the completion of the first half of the user interface rotation.
+- [- dismissModalViewControllerAnimated:](./dismissmodalviewcontrolleranimated_.md)
+  Dismisses the view controller that was presented by the receiver.
+- [- presentModalViewController:animated:](./presentmodalviewcontroller_animated_.md)
+  Presents a modal view managed by the given view controller to the user.
 
 
 ---

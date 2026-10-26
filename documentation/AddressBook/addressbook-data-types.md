@@ -10,6 +10,14 @@ Get the data types you use to specify Address Book information.
 ### Callbacks
 - [typealias ABImageClientCallback](./abimageclientcallback.md)
   Prototype of a callback function used to notify an application when an asynchronous image fetch is complete.
+- [ABActionCopyTitleCallback](./abactioncopytitlecallback.md)
+  The title of the menu item for the action.
+- [ABActionEnabledCallback](./abactionenabledcallback.md)
+  Return `true` ifthe action menu item should be enabled, `false` otherwise.If the property returned by `ABActionGetPropertyCallback` isa multi-value property, `identifier` contains theunique identifier of the value selected.
+- [ABActionGetPropertyCallback](./abactiongetpropertycallback.md)
+  Return the property the action applies to.
+- [ABActionSelectedCallback](./abactionselectedcallback.md)
+  Execute the action. If the property returnedby [`ABActionGetPropertyCallback`](./abactiongetpropertycallback.md) isa multi-value property, `identifier` containsthe unique identifier of the value selected; otherwise, identifieris `NULL`.
 ### Miscellaneous
 - [typealias ABPropertyType](./abpropertytype.md)
   These are the possible types of ABRecord properties.
@@ -17,6 +25,8 @@ Get the data types you use to specify Address Book information.
   Constants used to specify the type of comparison beingmade.
 - [typealias ABSearchConjunction](./absearchconjunction.md)
   Constants used to create compound search elements.
+- [ABPickerAttributes](./abpickerattributes.md)
+  A bitfield used to specify the selection behavior for the values of multi-value properties.
 ### Deprecated
 - [typealias ABRecord](./abrecord-swift.typealias.md)
   A reference to an ABRecord object or any of its derivedopaque types.

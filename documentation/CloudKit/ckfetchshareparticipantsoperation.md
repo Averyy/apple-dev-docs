@@ -96,6 +96,8 @@ The operation calls [`shareParticipantFetchedBlock`](./ckfetchshareparticipantso
   The closure to execute when the operation finishes.
 - [var perShareParticipantResultBlock: ((CKUserIdentity.LookupInfo, Result<CKShare.Participant, any Error>) -> Void)?](./ckfetchshareparticipantsoperation/pershareparticipantresultblock.md)
   The closure to execute as the operation generates individual participants.
+- [perShareParticipantCompletionBlock](./ckfetchshareparticipantsoperation/pershareparticipantcompletionblock.md)
+  The closure to execute as the operation generates individual participants.
 
 ## Relationships
 

@@ -24,6 +24,12 @@ union { ... } action;
 
 The action is a `union` of an [`es_event_id_t`](../es_event_id_t.md) named `auth` and an [`es_result_t`](../es_result_t.md) named `notify`. Use the [`action_type`](./action_type.md) field to determine which kind of action this message represents.
 
+## Topics
+
+### Instance Properties
+- [auth](./action/auth.md)
+- [notify](./action/notify.md)
+
 ## See Also
 
 ### Inspecting Message Properties

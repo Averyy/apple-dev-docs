@@ -32,6 +32,8 @@ This template belongs to the [`CLKComplicationFamily.modularSmall`](./clkcomplic
 ### Creating the Template
 - [init(line1TextProvider: CLKTextProvider, line2TextProvider: CLKTextProvider)](./clkcomplicationtemplatemodularsmallstacktext/init%28line1textprovider,line2textprovider%29.md)
   Creates a new template that has two lines of text.
+- [+ templateWithLine1TextProvider:line2TextProvider:](./clkcomplicationtemplatemodularsmallstacktext/templatewithline1textprovider_line2textprovider_.md)
+  Returns a new template that has two lines of text.
 ### Setting the Complication Data
 - [var line1TextProvider: CLKTextProvider](./clkcomplicationtemplatemodularsmallstacktext/line1textprovider.md)
   The text to display on the top line of the complication.

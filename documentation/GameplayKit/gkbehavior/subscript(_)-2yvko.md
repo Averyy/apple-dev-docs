@@ -41,6 +41,8 @@ This method is equivalent to the [`weight(for:)`](./weight%28for%29.md) method, 
 ### Working with Goals Using Subscript Syntax
 - [subscript(Int) -> GKGoal](./subscript%28_%29-997a9.md)
   Returns the goal at the specified index in the behavior’s list of goals.
+- [- setObject:forKeyedSubscript:](./setobject_forkeyedsubscript_.md)
+  Sets the weight for the goal specified by subscript syntax.
 
 
 ---

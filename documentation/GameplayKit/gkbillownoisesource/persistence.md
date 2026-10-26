@@ -35,6 +35,8 @@ Persistence determines the change in amplitude between octaves. Smaller values r
 ### Creating a Noise Source
 - [init(frequency: Double, octaveCount: Int, persistence: Double, lacunarity: Double, seed: Int32)](./init%28frequency,octavecount,persistence,lacunarity,seed%29.md)
   Creates a billow noise source with the specified parameters.
+- [+ billowNoiseSourceWithFrequency:octaveCount:persistence:lacunarity:seed:](./billownoisesourcewithfrequency_octavecount_persistence_lacunarity_seed_.md)
+  Initializes a billow noise source with the specified parameters.
 
 
 ---

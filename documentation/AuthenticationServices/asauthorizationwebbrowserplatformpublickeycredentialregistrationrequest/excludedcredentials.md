@@ -30,6 +30,8 @@ var excludedCredentials: [ASAuthorizationPlatformPublicKeyCredentialDescriptor]?
   The client data to supply to the relying party.
 - [var shouldShowHybridTransport: Bool](./shouldshowhybridtransport.md)
   Whether a remote authenticator that communicates with the operating system using Bluetooth can resolve the challenge.
+- [clientData](./clientdata-7scep.md)
+  The client data to supply to the relying party.
 
 
 ---

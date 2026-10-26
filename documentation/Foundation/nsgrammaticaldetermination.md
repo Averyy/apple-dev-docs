@@ -54,6 +54,8 @@ enum NSGrammaticalDetermination : NSInteger;
 - [struct NSKeyValueObservingOptions](./nskeyvalueobservingoptions.md)
   The values that can be returned in a change dictionary.
 - [enum NSKeyValueSetMutationKind](./nskeyvaluesetmutationkind.md)
+- [NSPresentationIntentKind](./nspresentationintentkind.md)
+  An enumeration of intended display styles for blocks of text like paragraphs, lists, and code blocks.
 
 
 ---

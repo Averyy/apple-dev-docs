@@ -53,6 +53,12 @@ If ARKit fails to populate a location anchor, the session calls [`session(_:didR
   Initializes a named location anchor with the given coordinates and altitude.
 - [convenience init(name: String, coordinate: CLLocationCoordinate2D, altitude: CLLocationDistance?)](./argeoanchor/init%28name,coordinate,altitude%29-csze.md)
   Initializes a named location anchor with the given coordinates and altitude.
+- [- initWithCoordinate:](./argeoanchor/initwithcoordinate_.md)
+  Initializes a new location anchor with the given coordinates.
+- [- initWithCoordinate:altitude:](./argeoanchor/initwithcoordinate_altitude_.md)
+  Initializes a location anchor with the given coordinate and altitude.
+- [- initWithName:coordinate:](./argeoanchor/initwithname_coordinate_.md)
+  Initializes a named location anchor with the given coordinates.
 ### Accessing Latitude and Longitude
 - [var coordinate: CLLocationCoordinate2D](./argeoanchor/coordinate.md)
   The lattitude and longitude of the anchor’s geographic location.
@@ -63,6 +69,8 @@ If ARKit fails to populate a location anchor, the session calls [`session(_:didR
   A record of the source from which an altitude came.
 - [ARGeoAnchor.AltitudeSource](./argeoanchor/altitudesource-swift.enum.md)
   Options for setting a location anchor’s altitude.
+- [altitude](./argeoanchor/altitude-9kges.md)
+  Vertical distance, in meters, between this anchor and sea level.
 
 ## Relationships
 

@@ -15,7 +15,7 @@ However, sometimes there are actions in your app the user hasn’t performed tha
 
 ##### Suggest a Shortcut
 
-To suggest a shortcut to an action that the user hasn’t performed but may want to add to Siri, create an [`INShortcutReference`](https://developer.apple.com/documentation/intents/inshortcutreference) object with either an [`INIntent`](https://developer.apple.com/documentation/intents/inintent) or [`NSUserActivity`](../Foundation/nsuseractivity.md) object that defines the action. Then add the shortcut to an array. Repeat for each suggestion your app wants to make. After creating the list of shortcut suggestions, call [`setShortcutSuggestions(_:)`](https://developer.apple.com/documentation/intents/invoiceshortcutcenter/setshortcutsuggestions(_:)), passing in the shortcuts.
+To suggest a shortcut to an action that the user hasn’t performed but may want to add to Siri, create an [`INShortcutReference`](../Intents/inshortcutreference.md) object with either an [`INIntent`](../Intents/inintent.md) or [`NSUserActivity`](../Foundation/nsuseractivity.md) object that defines the action. Then add the shortcut to an array. Repeat for each suggestion your app wants to make. After creating the list of shortcut suggestions, call [`setShortcutSuggestions(_:)`](../Intents/invoiceshortcutcenter/setshortcutsuggestions%28_%29.md), passing in the shortcuts.
 
 ```swift
 import Intents
@@ -40,7 +40,7 @@ Provide shortcut suggestions that represent actions that pertain to the user. Th
 - The addition or removal of features from your app.
 - A change in the way the user interacts with your app.
 
-To update the shortcut suggestion list, replace the existing list by calling [`setShortcutSuggestions(_:)`](https://developer.apple.com/documentation/intents/invoiceshortcutcenter/setshortcutsuggestions(_:)) and passing in a new list of suggestions. If you want to remove all suggestions made by your app, call the same method, passing in an empty array.
+To update the shortcut suggestion list, replace the existing list by calling [`setShortcutSuggestions(_:)`](../Intents/invoiceshortcutcenter/setshortcutsuggestions%28_%29.md) and passing in a new list of suggestions. If you want to remove all suggestions made by your app, call the same method, passing in an empty array.
 
 Changes to the list of shortcut suggestions don’t affect shortcuts the user adds to Siri. For instance, if the user adds the suggested *order favorite beverage* shortcut to Siri and the app removes the suggestion from the list some time later, that shortcut is still available to the user.
 

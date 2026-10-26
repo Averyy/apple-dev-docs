@@ -42,6 +42,8 @@ Sets the string to scan by invoking [`init(string:)`](./init%28string%29.md) wit
 ### Creating a Scanner
 - [init(string: String)](./init%28string%29.md)
   Returns an `NSScanner` object initialized to scan a given string.
+- [+ scannerWithString:](../nsscanner/scannerwithstring_.md)
+  Returns an `NSScanner` object that scans a given string.
 
 
 ---

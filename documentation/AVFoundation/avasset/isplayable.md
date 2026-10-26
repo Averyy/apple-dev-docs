@@ -30,6 +30,20 @@ var isPlayable: Bool { get }
 
 This property value is [`true`](../../Swift/true.md) if you can use the asset to create an [`AVPlayerItem`](../avplayeritem.md).
 
+## See Also
+
+### Accessing suitability
+- [exportable](./isexportable.md)
+  A Boolean value that indicates whether you can export this asset using an export session.
+- [readable](./isreadable.md)
+  A Boolean value that indicates whether you can extract the asset’s media data using an asset reader.
+- [composable](./iscomposable.md)
+  A Boolean value that indicates whether you can use the asset as a segment of a composition track.
+- [compatibleWithAirPlayVideo](./iscompatiblewithairplayvideo.md)
+  A Boolean value that indicates whether the asset is compatible with AirPlay Video.
+- [compatibleWithSavedPhotosAlbum](./iscompatiblewithsavedphotosalbum.md)
+  A Boolean value that indicates whether you can write the asset to the Saved Photos album.
+
 
 ---
 

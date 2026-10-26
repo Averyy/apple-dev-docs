@@ -36,6 +36,24 @@ You can use ordered sets as an alternative to arrays when the order of elements 
 ### Creating an Ordered Set
 - [convenience init(objects: UnsafePointer<AnyObject>, count: Int)](./nsorderedset/init%28objects,count%29-3ny0m.md)
   Creates and returns a set containing a specified number of objects from a given C array of objects.
+- [+ orderedSet](./nsorderedset/orderedset.md)
+  Creates and returns an empty ordered set
+- [+ orderedSetWithArray:](./nsorderedset/orderedsetwitharray_.md)
+  Creates and returns a set containing a uniqued collection of the objects contained in a given array.
+- [+ orderedSetWithArray:range:copyItems:](./nsorderedset/orderedsetwitharray_range_copyitems_.md)
+  Creates and returns a new ordered set for a specified range of objects in an array.
+- [+ orderedSetWithObject:](./nsorderedset/orderedsetwithobject_.md)
+  Creates and returns a ordered set that contains a single given object.
+- [+ orderedSetWithObjects:](./nsorderedset/orderedsetwithobjects_.md)
+  Creates and returns a ordered set containing the objects in a given argument list.
+- [+ orderedSetWithOrderedSet:](./nsorderedset/orderedsetwithorderedset_.md)
+  Creates and returns an ordered set containing the objects from another ordered set.
+- [+ orderedSetWithOrderedSet:range:copyItems:](./nsorderedset/orderedsetwithorderedset_range_copyitems_.md)
+  Creates and returns a new ordered set for a specified range of objects in an ordered set.
+- [+ orderedSetWithSet:](./nsorderedset/orderedsetwithset_.md)
+  Creates and returns an ordered set with the contents of a set.
+- [+ orderedSetWithSet:copyItems:](./nsorderedset/orderedsetwithset_copyitems_.md)
+  Creates and returns an ordered set with the contents of a set, optionally copying the items.
 ### Initializing an Ordered Set
 - [convenience init(array: [Any])](./nsorderedset/init%28array%29.md)
   Initializes a newly allocated set with the objects that are contained in a given array.
@@ -59,6 +77,8 @@ You can use ordered sets as an alternative to arrays when the order of elements 
   Initializes a new ordered set with the contents of a set, optionally copying the objects in the set.
 - [init()](./nsorderedset/init%28%29.md)
   Initializes a newly allocated ordered set.
+- [- initWithObjects:](./nsorderedset/initwithobjects_.md)
+  Initializes a newly allocated set with members taken from the specified list of objects.
 ### Counting Entries
 - [var count: Int](./nsorderedset/count.md)
   The number of members in the set.
@@ -103,6 +123,8 @@ You can use ordered sets as an alternative to arrays when the order of elements 
   Returns an enumerator object that lets you access each object in the ordered set.
 - [var reversed: NSOrderedSet](./nsorderedset/reversed.md)
   An ordered set in the reverse order.
+- [- getObjects:range:](./nsorderedset/getobjects_range_.md)
+  Copies the objects contained in the ordered set that fall within the specified range to `objects`.
 ### Key-Value Coding Support
 - [func setValue(Any?, forKey: String)](./nsorderedset/setvalue%28_,forkey%29.md)
   Invokes `setValue:forKey:` on each of the receiver’s members using the specified value and key
@@ -153,12 +175,21 @@ You can use ordered sets as an alternative to arrays when the order of elements 
   An object representing the difference between two ordered collections.
 - [struct NSOrderedCollectionDifferenceCalculationOptions](./nsorderedcollectiondifferencecalculationoptions.md)
   Constants that specify the options to use when creating an ordered collection difference.
+- [- differenceFromOrderedSet:](./nsorderedset/differencefromorderedset_.md)
+  Compares two ordered sets to create a difference object that represents the changes between them.
+- [- differenceFromOrderedSet:withOptions:](./nsorderedset/differencefromorderedset_withoptions_.md)
+  Compares two ordered sets, with options, to create a difference object that represents the changes between them.
+- [- differenceFromOrderedSet:withOptions:usingEquivalenceTest:](./nsorderedset/differencefromorderedset_withoptions_usingequivalencetest_.md)
+  Compares two ordered sets, using the provided block and with options, to create a difference object that represents the changes between them.
 ### Initializers
 - [init?(coder: NSCoder)](./nsorderedset/init%28coder%29.md)
 - [convenience init(objects: Any...)](./nsorderedset/init%28objects%29.md)
 ### Default Implementations
 - [ExpressibleByArrayLiteral Implementations](./nsorderedset/expressiblebyarrayliteral-implementations.md)
 - [Sequence Implementations](./nsorderedset/sequence-implementations.md)
+### Instance Methods
+- [- orderedSetByApplyingDifference:](./nsorderedset/orderedsetbyapplyingdifference_.md)
+  Creates a new ordered set by applying a difference object to an existing ordered set.
 
 ## Relationships
 

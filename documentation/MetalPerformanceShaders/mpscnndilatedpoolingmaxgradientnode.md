@@ -31,6 +31,8 @@ class MPSCNNDilatedPoolingMaxGradientNode
 ### Instance Properties
 - [var dilationRateX: Int](./mpscnndilatedpoolingmaxgradientnode/dilationratex.md)
 - [var dilationRateY: Int](./mpscnndilatedpoolingmaxgradientnode/dilationratey.md)
+### Type Methods
+- [+ nodeWithSourceGradient:sourceImage:gradientState:kernelWidth:kernelHeight:strideInPixelsX:strideInPixelsY:dilationRateX:dilationRateY:](./mpscnndilatedpoolingmaxgradientnode/nodewithsourcegradient_sourceimage_gradientstate_kernelwidth_kernelheight_strideinpixelsx_strideinpixelsy_dilationratex_dilationratey_.md)
 
 ## Relationships
 

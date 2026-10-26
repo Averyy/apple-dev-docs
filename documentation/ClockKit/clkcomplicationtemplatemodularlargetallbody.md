@@ -32,6 +32,8 @@ This template belongs to the [`CLKComplicationFamily.modularLarge`](./clkcomplic
 ### Creating the Template
 - [init(headerTextProvider: CLKTextProvider, bodyTextProvider: CLKTextProvider)](./clkcomplicationtemplatemodularlargetallbody/init%28headertextprovider,bodytextprovider%29.md)
   Creates a template that has a header and a row of tall body text.
+- [+ templateWithHeaderTextProvider:bodyTextProvider:](./clkcomplicationtemplatemodularlargetallbody/templatewithheadertextprovider_bodytextprovider_.md)
+  Returns a template that has a header and a row of tall body text.
 ### Setting the Complication Data
 - [var headerTextProvider: CLKTextProvider](./clkcomplicationtemplatemodularlargetallbody/headertextprovider.md)
   The text to display in the header line.

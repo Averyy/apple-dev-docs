@@ -37,6 +37,8 @@ var defroster: INCarDefroster { get }
 ### Getting Details About the Defroster Settings to Set
 - [var enable: Bool?](./enable-9xte9.md)
   A Boolean indicating whether to enable or disable the defroster.
+- [enable](./enable-8tf0i.md)
+  A Boolean indicating whether to enable or disable the defroster.
 
 
 ---

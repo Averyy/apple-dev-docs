@@ -30,6 +30,8 @@ extern CGColorConversionInfoRefCGColorConversionInfoCreateWithOptions(CGColorSpa
   Creates a conversion between two specified color spaces.
 - [enum CGColorConversionInfoTransformType](../cgcolorconversioninfotransformtype.md)
   Constants describing how a color conversion uses color spaces.
+- [CGColorConversionInfoCreateFromList](../cgcolorconversioninfocreatefromlist.md)
+  Creates a conversion between an arbitrary number of specified color spaces.
 
 
 ---

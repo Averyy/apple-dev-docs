@@ -53,6 +53,8 @@ protocol GCAxisElement : GCPhysicalInputElement
   The common properties for an element that represents a switch.
 - [protocol GCDirectionPadElement](./gcdirectionpadelement.md)
   The common properties of elements that represent directional pads.
+- [GCPhysicalInputElementCollection](./gcphysicalinputelementcollection-c.class.md)
+  A collection of physical input elements.
 
 
 ---

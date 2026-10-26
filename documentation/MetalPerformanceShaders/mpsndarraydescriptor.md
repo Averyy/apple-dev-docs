@@ -41,6 +41,8 @@ class MPSNDArrayDescriptor
 - [func sliceDimension(Int, withSubrange: MPSDimensionSlice)](./mpsndarraydescriptor/slicedimension%28_,withsubrange%29.md)
 - [func sliceRange(forDimension: Int) -> MPSDimensionSlice](./mpsndarraydescriptor/slicerange%28fordimension%29.md)
 - [func transposeDimension(Int, withDimension: Int)](./mpsndarraydescriptor/transposedimension%28_,withdimension%29.md)
+### Type Methods
+- [+ descriptorWithDataType:dimensionSizes:](./mpsndarraydescriptor/descriptorwithdatatype_dimensionsizes_.md)
 
 ## Relationships
 

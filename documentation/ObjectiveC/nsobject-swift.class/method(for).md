@@ -42,6 +42,10 @@ If the receiver is an instance, `aSelector` should refer to an instance method; 
 ### Obtaining Information About Methods
 - [class func instanceMethod(for: Selector!) -> IMP!](./instancemethod%28for%29.md)
   Locates and returns the address of the implementation of the instance method identified by a given selector.
+- [+ instanceMethodSignatureForSelector:](./instancemethodsignatureforselector_.md)
+  Returns an `NSMethodSignature` object that contains a description of the instance method identified by a given selector.
+- [- methodSignatureForSelector:](./methodsignatureforselector_.md)
+  Returns an `NSMethodSignature` object that contains a description of the method identified by a given selector.
 
 
 ---

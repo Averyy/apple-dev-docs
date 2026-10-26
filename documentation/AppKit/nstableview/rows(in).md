@@ -60,6 +60,9 @@ The location of the range is the index of the first row in the rectangle, and th
   Sizes the  table view based on a uniform column autoresizing style.
 - [func noteHeightOfRows(withIndexesChanged: IndexSet)](./noteheightofrows%28withindexeschanged%29.md)
   Informs the table view that the rows specified in `indexSet` have changed height.
+### Related Documentation
+- [- columnsInRect:](./columnsinrect_.md)
+  Returns a range of indexes for the table view’s columns that lie wholly or partially within the horizontal boundaries of the specified rectangle.
 
 
 ---

@@ -23,6 +23,11 @@ func advancePasskeyIndicator()
 - [func resetPasskeyIndicator()](./resetpasskeyindicator%28%29.md)
 - [func retreatPasskeyIndicator()](./retreatpasskeyindicator%28%29.md)
 - [func setPasskey(String!, for: IOBluetoothDevice!, usingSSP: Bool)](./setpasskey%28_,for,usingssp%29.md)
+- [- resetAll](./resetall.md)
+- [- setPasskeyIndicatorEnabled:](./setpasskeyindicatorenabled_.md)
+- [- setPasskeyString:](./setpasskeystring_.md)
+- [- setupUIForDevice:](./setupuifordevice_.md)
+- [- setupUIForSSPDevice:](./setupuiforsspdevice_.md)
 
 
 ---

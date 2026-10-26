@@ -46,6 +46,8 @@ var scaleFactor: Int { get }
   A parameter to control quality and performance levels.
 - [VTSuperResolutionScalerConfiguration.QualityPrioritization](./qualityprioritization-swift.enum.md)
   Configuration value you set to prioritize quality or performance.
+- [frameSupportedPixelFormats](./framesupportedpixelformats.md)
+  Available supported pixel formats for source frames for current configuration.
 
 
 ---

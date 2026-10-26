@@ -49,6 +49,11 @@ Contains properties and methods to handle message exchanges with a web extension
   Disconnects the port, terminating all further messages with an optional error.
 - [func sendMessage(Any?, completionHandler: (((any Error)?) -> Void)?)](./messageport/sendmessage%28_,completionhandler%29.md)
   Sends a message to the connected web extension.
+### Errors
+- [WKWebExtensionMessagePortError](./messageport/error/code.md)
+  Constants that indicate errors in the [`WKWebExtensionMessagePort`](./messageport.md) domain.
+- [WKWebExtensionMessagePortErrorDomain](./messageport/errordomain.md)
+  A string that identifies the error domain.
 
 ## Relationships
 

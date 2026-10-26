@@ -52,6 +52,8 @@ In your own code, you can use change tokens to distinguish between two different
   The ID of the user who most recently modified the record.
 - [CKRecord.ID](./id.md)
   An object that uniquely identifies a record in a database.
+- [recordType](./recordtype-9s09b.md)
+  The value that your app defines to identify the type of record.
 
 
 ---

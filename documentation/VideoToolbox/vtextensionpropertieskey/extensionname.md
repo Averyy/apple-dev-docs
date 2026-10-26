@@ -34,6 +34,8 @@ This key points to a `CFStringRef` value with the localized extension name.
   A dictionary key for the video decoder extension identifier.
 - [static let extensionURL: VTExtensionPropertiesKey](./extensionurl.md)
   A dictionary key for the URL of the extension.
+- [kVTExtensionProperties_CodecNameKey](../kvtextensionproperties_codecnamekey.md)
+  A dictionary key for the user readable name string of the codec.
 
 
 ---

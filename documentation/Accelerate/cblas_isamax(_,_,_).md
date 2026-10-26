@@ -48,6 +48,12 @@ Returns an index in the range 0..N-1 corresponding with the element with the lar
   Returns the index of the element with the largest absolute value in a vector (double-precision).
 - [func cblas_izamax(__LAPACK_int, OpaquePointer?, __LAPACK_int) -> __LAPACK_int](./cblas_izamax%28_,_,_%29.md)
   Returns the index of the element with the largest absolute value in a vector (double-precision complex).
+- [SetBLASParamErrorProc](./setblasparamerrorproc.md)
+  Sets an error handler function.
+- [cblas_errprn](./cblas_errprn.md)
+  Prints an error message.
+- [cblas_xerbla](./cblas_xerbla.md)
+  The default error handler for BLAS routines.
 
 
 ---

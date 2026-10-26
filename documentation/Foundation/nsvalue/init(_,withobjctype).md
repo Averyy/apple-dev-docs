@@ -47,6 +47,9 @@ This method has the same effect as [`valueWithBytes:objCType:`](./valuewithbytes
   Copies the value into the specified buffer.
 - [var objCType: UnsafePointer<CChar>](./objctype.md)
   A C string containing the Objective-C type of the data contained in the value object.
+### Related Documentation
+- [+ valueWithBytes:objCType:](./valuewithbytes_objctype_.md)
+  Creates a value object containing the specified value, interpreted with the specified Objective-C type.
 
 
 ---

@@ -34,6 +34,10 @@ init(timeRange: CMTimeRange)
 ### Creating a segment
 - [init(url: URL, trackID: CMPersistentTrackID, sourceTimeRange: CMTimeRange, targetTimeRange: CMTimeRange)](./init%28url,trackid,sourcetimerange,targettimerange%29-4rc2g.md)
   Creates an object that presents a segment of a media file that the specified URL references.
+- [+ compositionTrackSegmentWithTimeRange:](./compositiontracksegmentwithtimerange_.md)
+  Returns a new object that presents an empty composition track segment.
+- [+ compositionTrackSegmentWithURL:trackID:sourceTimeRange:targetTimeRange:](./compositiontracksegmentwithurl_trackid_sourcetimerange_targettimerange_.md)
+  Returns a new an object that presents a segment of a media file that the specified URL references.
 
 
 ---

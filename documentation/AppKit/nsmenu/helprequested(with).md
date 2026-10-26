@@ -39,6 +39,28 @@ In macOS 10.6 and later this method has no effect. This method may be deprecated
 ### Deprecated methods
 - [class func menuZone() -> NSZone!](./menuzone%28%29.md)
   Returns the zone from which `NSMenu` objects should be allocated.
+- [- attachedMenu](./attachedmenu.md)
+  Returns the menu currently attached to the menu.
+- [- isAttached](./isattached.md)
+  Returns a Boolean value that indicates whether the menu is currently attached to another menu.
+- [- locationForSubmenu:](./locationforsubmenu_.md)
+  Returns the location in screen coordinates where the given submenu is displayed when opened as a submenu of the menu.
+- [- sizeToFit](./sizetofit.md)
+  Resizes the menu to exactly fit its items.
+- [+ setMenuZone:](./setmenuzone_.md)
+  Sets the zone from which `NSMenu` objects should be allocated
+- [- contextMenuRepresentation](./contextmenurepresentation.md)
+  Deprecated.
+- [- setContextMenuRepresentation:](./setcontextmenurepresentation_.md)
+  Deprecated.
+- [- tearOffMenuRepresentation](./tearoffmenurepresentation.md)
+  Deprecated.
+- [- setTearOffMenuRepresentation:](./settearoffmenurepresentation_.md)
+  Deprecated.
+- [- setMenuRepresentation:](./setmenurepresentation_.md)
+  Deprecated.
+- [- menuRepresentation](./menurepresentation.md)
+  Deprecated.
 
 
 ---

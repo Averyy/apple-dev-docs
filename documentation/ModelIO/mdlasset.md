@@ -48,6 +48,8 @@ An asset may contain timed information, such as a series of mesh morphs. In such
   Returns a Boolean value that indicates whether the [`MDLAsset`](./mdlasset.md) class can write asset data as a file with the specified format extension.
 - [func export(to: URL) throws](./mdlasset/export%28to%29.md)
   Writes asset data to a file at the specified URL and reports errors that occur during export.
+- [- exportAssetToURL:](./mdlasset/exportassettourl_.md)
+  Writes asset data to a file at the specified URL.
 ### Working with Asset Content
 - [func object(at: Int) -> MDLObject](./mdlasset/object%28at%29.md)
   Returns the top-level object at the specified index in the asset.
@@ -100,6 +102,9 @@ An asset may contain timed information, such as a series of mesh morphs. In such
 ### Instance Methods
 - [func loadTextures()](./mdlasset/loadtextures%28%29.md)
 - [func object(atPath: String) -> MDLObject](./mdlasset/object%28atpath%29.md)
+### Type Methods
+- [+ assetWithSCNScene:](./mdlasset/assetwithscnscene_.md)
+- [+ assetWithSCNScene:bufferAllocator:](./mdlasset/assetwithscnscene_bufferallocator_.md)
 
 ## Relationships
 

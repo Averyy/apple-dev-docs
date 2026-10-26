@@ -35,6 +35,8 @@ init?(coder aDecoder: NSCoder)
 - [convenience init?(fileNamed: String)](./init%28filenamed%29.md)
   Creates a new node by loading an archive file from the game’s main bundle.
 - [convenience init(fileNamed: String, securelyWithClasses: Set<AnyHashable>) throws](./init%28filenamed,securelywithclasses%29.md)
+- [+ node](./node.md)
+  Creates a new node.
 
 
 ---

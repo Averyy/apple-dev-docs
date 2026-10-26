@@ -30,6 +30,11 @@
       "file_path": "documentation/CoreSpotlight/contactresolver/useridentity().md",
       "hash": "a716934bf2a4d39cfac8b00ebe83be7b8f7b6d6ae7c620556d4ea3403d7265d8"
     },
+    "https://developer.apple.com/documentation/corespotlight/corespotlight_export": {
+      "etag": "\"b23-65d55cab2d408-df\"",
+      "file_path": "documentation/CoreSpotlight/corespotlight_export.md",
+      "hash": "3bdbcc5e3818bb1ed892e7b5f4f60568fbd9ff4299e16aa87c257b5580c99a2a"
+    },
     "https://developer.apple.com/documentation/corespotlight/corespotlightapiversion": {
       "etag": "\"1ce1-65d55cab2d408-df\"",
       "file_path": "documentation/CoreSpotlight/corespotlightapiversion.md",
@@ -69,6 +74,36 @@
       "etag": "\"24bd-65d55cab2d408-df\"",
       "file_path": "documentation/CoreSpotlight/corespotlightsource/sourceoptions.md",
       "hash": "cdc2397f7c2079079b526ded58aa35dc5600a3b9a7cd8a339eb625a4f21dc16d"
+    },
+    "https://developer.apple.com/documentation/corespotlight/corespotlightversionnumber": {
+      "etag": "\"1412-65d55cab2d408-df\"",
+      "file_path": "documentation/CoreSpotlight/corespotlightversionnumber.md",
+      "hash": "128954d45d6ca5af74eea1dd4a2e92bccfdd11dfddec4b4b89c0e1a5ca0d47f1"
+    },
+    "https://developer.apple.com/documentation/corespotlight/corespotlightversionstring": {
+      "etag": "\"1458-65d55caa47300-df\"",
+      "file_path": "documentation/CoreSpotlight/corespotlightversionstring.md",
+      "hash": "165990aa99c598bb71530c688e113f7379fd39bf4979d4a1757b95486d5e15bb"
+    },
+    "https://developer.apple.com/documentation/corespotlight/cs_available": {
+      "etag": "\"b61-65d55cab2d408-df\"",
+      "file_path": "documentation/CoreSpotlight/cs_available.md",
+      "hash": "6230bc34b3422e0a6caf2bf0d3b2cb218b3d1e2d7037835cb748f8898a55c97d"
+    },
+    "https://developer.apple.com/documentation/corespotlight/cs_class_available": {
+      "etag": "\"ba9-65d55ca955a21-df\"",
+      "file_path": "documentation/CoreSpotlight/cs_class_available.md",
+      "hash": "e693808c26275045e24707af3b8d1462a68c7acb5b59c20ccb0a86de4f5216a1"
+    },
+    "https://developer.apple.com/documentation/corespotlight/cs_deprecated": {
+      "etag": "\"c0a-65d55ca955a21-df\"",
+      "file_path": "documentation/CoreSpotlight/cs_deprecated.md",
+      "hash": "49ef8be723dce053ba6ebd23b51f88394b3aef4781a6d62b87780473e73de828"
+    },
+    "https://developer.apple.com/documentation/corespotlight/cs_tvos_unavailable": {
+      "etag": "\"b17-65d55cab2d408-df\"",
+      "file_path": "documentation/CoreSpotlight/cs_tvos_unavailable.md",
+      "hash": "735e386e161af9b9c3e9f69b36c8d7fe705af3ab1009b835a39d7b0dea90c336"
     },
     "https://developer.apple.com/documentation/corespotlight/csactionidentifier": {
       "etag": "\"425c-65d55caae6431-df\"",
@@ -1590,6 +1625,11 @@
       "file_path": "documentation/CoreSpotlight/cssearchableitemattributeset/whitebalance.md",
       "hash": "5e26a15514b233d4d8d23d16caaa31c17c6212f1048a6439af30694bd65d670c"
     },
+    "https://developer.apple.com/documentation/corespotlight/cssearchableitemupdatelisteneroptions/cssearchableitemupdatelisteneroptiondefault": {
+      "etag": "\"1355-65d55cab161e0-df\"",
+      "file_path": "documentation/CoreSpotlight/cssearchableitemupdatelisteneroptions/cssearchableitemupdatelisteneroptiondefault.md",
+      "hash": "d6b21b75a6de9253c707d53f87bc5915cd10b21b83dd396e75f775d48a92b207"
+    },
     "https://developer.apple.com/documentation/corespotlight/cssearchquery": {
       "etag": "\"9ab3-65d55caab1f95-df\"",
       "file_path": "documentation/CoreSpotlight/cssearchquery.md",
@@ -1780,6 +1820,11 @@
       "file_path": "documentation/CoreSpotlight/cssearchqueryerrordomain.md",
       "hash": "a517f4f7d08e6d199c679cc80ac0b7631d3cdb723207713124fa85f1666ed42b"
     },
+    "https://developer.apple.com/documentation/corespotlight/cssearchquerysourceoptions/cssearchquerysourceoptiondefault": {
+      "etag": "\"1250-65d55ca955a21-df\"",
+      "file_path": "documentation/CoreSpotlight/cssearchquerysourceoptions/cssearchquerysourceoptiondefault.md",
+      "hash": "9c3ab405ed1cf28fb40f9876937c8e47fe70a29d1e6f26d03808b420ada75edc"
+    },
     "https://developer.apple.com/documentation/corespotlight/cssearchquerystring": {
       "etag": "\"2163-65d55cab2d408-df\"",
       "file_path": "documentation/CoreSpotlight/cssearchquerystring.md",
@@ -1810,6 +1855,11 @@
       "file_path": "documentation/CoreSpotlight/cssuggestion/localizedattributedsuggestion-3ssly.md",
       "hash": "b9a5f66bf69fc4f836de7d3e272e598978d07acd93a4fc76555e0b002a33878a"
     },
+    "https://developer.apple.com/documentation/corespotlight/cssuggestion/localizedattributedsuggestion-oq3b": {
+      "etag": "\"15cc-65d55caac7a1b-df\"",
+      "file_path": "documentation/CoreSpotlight/cssuggestion/localizedattributedsuggestion-oq3b.md",
+      "hash": "2e85b97e43839a31cd75ecc2dc6106f215945b1d83bb6c76e096bc53286cdbc8"
+    },
     "https://developer.apple.com/documentation/corespotlight/cssuggestion/suggestionkind-swift.enum": {
       "etag": "\"49ed-65d55caac7a1b-df\"",
       "file_path": "documentation/CoreSpotlight/cssuggestion/suggestionkind-swift.enum.md",
@@ -1839,6 +1889,11 @@
       "etag": "\"28b8-65d55caac7a1b-df\"",
       "file_path": "documentation/CoreSpotlight/cssuggestion/suggestionkind-swift.property.md",
       "hash": "b61735065c13ca7beae88c43fd91cb2142103d39527e4bce5643b001f9d91941"
+    },
+    "https://developer.apple.com/documentation/corespotlight/cssuggestionhighlightattributename": {
+      "etag": "\"11d0-65d55cab2d408-df\"",
+      "file_path": "documentation/CoreSpotlight/cssuggestionhighlightattributename.md",
+      "hash": "f427068a814ad4d02fd23841e478c6ac0a8a62deab9d175fb8b70c219065466f"
     },
     "https://developer.apple.com/documentation/corespotlight/csuserquery": {
       "etag": "\"b415-65d55caa47300-df\"",
@@ -1955,6 +2010,16 @@
       "file_path": "documentation/CoreSpotlight/csuserquery/userengaged(_,visiblesuggestions,interaction).md",
       "hash": "39c5e3133efa6b4ab1cc9afe622da719d2df9b0a76f98e38a01e97f61750de21"
     },
+    "https://developer.apple.com/documentation/corespotlight/csuserquery/userengagedwithitem:visibleitems:userinteractiontype:": {
+      "etag": "\"2010-65d55ca955a21-df\"",
+      "file_path": "documentation/CoreSpotlight/csuserquery/userengagedwithitem_visibleitems_userinteractiontype_.md",
+      "hash": "6d08940680ff4460d83018d3e7a22cca4ce7b0f95a9433334a2ea621bf5f8bdd"
+    },
+    "https://developer.apple.com/documentation/corespotlight/csuserquery/userengagedwithsuggestion:visiblesuggestions:userinteractiontype:": {
+      "etag": "\"2009-65d55ca955a21-df\"",
+      "file_path": "documentation/CoreSpotlight/csuserquery/userengagedwithsuggestion_visiblesuggestions_userinteractiontype_.md",
+      "hash": "8f71d4f7d2d7a4f0545d640251500c7d3ab6f901c8c4543d38fb90107f0d82fc"
+    },
     "https://developer.apple.com/documentation/corespotlight/csuserquery/userinteractionkind": {
       "etag": "\"4d24-65d55ca955a21-df\"",
       "file_path": "documentation/CoreSpotlight/csuserquery/userinteractionkind.md",
@@ -2015,6 +2080,11 @@
       "file_path": "documentation/CoreSpotlight/csuserquerycontext/maxsuggestioncount.md",
       "hash": "7bb7fa5a6168fd986fbe25528b57d7e7572604ef2583c79b7823b586048a6cba"
     },
+    "https://developer.apple.com/documentation/corespotlight/csuserquerycontext/userquerycontext": {
+      "etag": "\"1376-65d55caa5ef67-df\"",
+      "file_path": "documentation/CoreSpotlight/csuserquerycontext/userquerycontext.md",
+      "hash": "a75b0a2dfc9046f272b5d439cdcea17bea39817b7607b8669aa8e95cf6a3887e"
+    },
     "https://developer.apple.com/documentation/corespotlight/customstage": {
       "etag": "\"78bb-65d55cab2d408-df\"",
       "file_path": "documentation/CoreSpotlight/customstage.md",
@@ -2030,35 +2100,70 @@
       "file_path": "documentation/CoreSpotlight/customstage/execute(count).md",
       "hash": "3657b63cb57619fea2138e324d3560ea50f71781141c232222a4c3c9c3ee7522"
     },
+    "https://developer.apple.com/documentation/corespotlight/customstage/execute(count:)-7gyx8": {
+      "etag": "\"222c-65d55cab3d385-df\"",
+      "file_path": "documentation/CoreSpotlight/customstage/execute(count)-7gyx8.md",
+      "hash": "ff91be7f6925bafe30ad1ce0d577f3fd05867e23d4ddbec0eddcac3aa18488a8"
+    },
     "https://developer.apple.com/documentation/corespotlight/customstage/execute(groupeditems:)": {
       "etag": "\"4c55-65d55cab3d385-df\"",
       "file_path": "documentation/CoreSpotlight/customstage/execute(groupeditems).md",
       "hash": "fe7e604a4c5760d950b5db9ec4c25a0ee606ca6437080fbffa7453c7df1bf544"
+    },
+    "https://developer.apple.com/documentation/corespotlight/customstage/execute(groupeditems:)-7asba": {
+      "etag": "\"2ee4-65d55cab3d385-df\"",
+      "file_path": "documentation/CoreSpotlight/customstage/execute(groupeditems)-7asba.md",
+      "hash": "027125460cbf695f4721cc0367cba5c5c0766b2e3256dd3f4cda7cea8b52b77c"
     },
     "https://developer.apple.com/documentation/corespotlight/customstage/execute(items:)": {
       "etag": "\"467c-65d55cab3d385-df\"",
       "file_path": "documentation/CoreSpotlight/customstage/execute(items).md",
       "hash": "4666383387063be52ded844686ab3722711bc8a714bbc25bc457d2688661b8bd"
     },
+    "https://developer.apple.com/documentation/corespotlight/customstage/execute(items:)-2t5wu": {
+      "etag": "\"290b-65d55cab3d385-df\"",
+      "file_path": "documentation/CoreSpotlight/customstage/execute(items)-2t5wu.md",
+      "hash": "44dcb3576ee0190fdddb16b5a8a4598e1c52a8e4487e35025a7c17daa21569d9"
+    },
     "https://developer.apple.com/documentation/corespotlight/customstage/execute(scoreditems:)": {
       "etag": "\"4786-65d55cab3d385-df\"",
       "file_path": "documentation/CoreSpotlight/customstage/execute(scoreditems).md",
       "hash": "7c6e98a0fc6fb886c4801e46c2fb4342a02688b749d2afd6bfc9b92a16416b32"
+    },
+    "https://developer.apple.com/documentation/corespotlight/customstage/execute(scoreditems:)-5v16i": {
+      "etag": "\"2a15-65d55cab3d385-df\"",
+      "file_path": "documentation/CoreSpotlight/customstage/execute(scoreditems)-5v16i.md",
+      "hash": "144d556ea728901a6fb99a516a79e46e368c8e476c1670b5f8f8988c60614519"
     },
     "https://developer.apple.com/documentation/corespotlight/customstage/execute(statistic:value:)": {
       "etag": "\"2d83-65d55cab3d385-df\"",
       "file_path": "documentation/CoreSpotlight/customstage/execute(statistic,value).md",
       "hash": "32aa4db8eec486332d6134cef0e12aa5933f099990f51ab94346a8f6d56a46b1"
     },
+    "https://developer.apple.com/documentation/corespotlight/customstage/execute(statistic:value:)-9tt52": {
+      "etag": "\"27de-65d55cab3d385-df\"",
+      "file_path": "documentation/CoreSpotlight/customstage/execute(statistic,value)-9tt52.md",
+      "hash": "2327e4db0fe64bcf40e948d12659e17bd5a956ab8ce5721a818b74034689efa5"
+    },
     "https://developer.apple.com/documentation/corespotlight/customstage/execute(table:)": {
       "etag": "\"412c-65d55cab3d385-df\"",
       "file_path": "documentation/CoreSpotlight/customstage/execute(table).md",
       "hash": "ee5d3782e7f3be2ec892c67f27900d195d69bd4f7522cadbabed2bd6370529a3"
     },
+    "https://developer.apple.com/documentation/corespotlight/customstage/execute(table:)-1kaw6": {
+      "etag": "\"23bb-65d55cab3d385-df\"",
+      "file_path": "documentation/CoreSpotlight/customstage/execute(table)-1kaw6.md",
+      "hash": "03b54177c2d87ff8704af6a52ba105f4073bb2ccb33f7a2437f7af5c9fabe97a"
+    },
     "https://developer.apple.com/documentation/corespotlight/customstage/execute(text:)": {
       "etag": "\"3c5f-65d55cab3d385-df\"",
       "file_path": "documentation/CoreSpotlight/customstage/execute(text).md",
       "hash": "eaaae15bc2429a55a715e066b5245b1fb73a4adc84c80e267095a5d8e867a9c8"
+    },
+    "https://developer.apple.com/documentation/corespotlight/customstage/execute(text:)-6l4oy": {
+      "etag": "\"1eee-65d55cab3d385-df\"",
+      "file_path": "documentation/CoreSpotlight/customstage/execute(text)-6l4oy.md",
+      "hash": "ff4cda525da2e83282c797b29c3b6d123622dead39a1ca36a6ca66adddb8c080"
     },
     "https://developer.apple.com/documentation/corespotlight/customstage/inputtypes": {
       "etag": "\"21df-65d55cab3d385-df\"",
@@ -3990,6 +4095,11 @@
       "file_path": "documentation/CoreSpotlight/contactresolver/useridentity().md",
       "hash": "a716934bf2a4d39cfac8b00ebe83be7b8f7b6d6ae7c620556d4ea3403d7265d8"
     },
+    "https://developer.apple.com/tutorials/data/documentation/corespotlight/corespotlight_export.json": {
+      "etag": "\"b23-65d55cab2d408-df\"",
+      "file_path": "documentation/CoreSpotlight/corespotlight_export.md",
+      "hash": "3bdbcc5e3818bb1ed892e7b5f4f60568fbd9ff4299e16aa87c257b5580c99a2a"
+    },
     "https://developer.apple.com/tutorials/data/documentation/corespotlight/corespotlightapiversion.json": {
       "etag": "\"1ce1-65d55cab2d408-df\"",
       "file_path": "documentation/CoreSpotlight/corespotlightapiversion.md",
@@ -4029,6 +4139,36 @@
       "etag": "\"24bd-65d55cab2d408-df\"",
       "file_path": "documentation/CoreSpotlight/corespotlightsource/sourceoptions.md",
       "hash": "cdc2397f7c2079079b526ded58aa35dc5600a3b9a7cd8a339eb625a4f21dc16d"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/corespotlight/corespotlightversionnumber.json": {
+      "etag": "\"1412-65d55cab2d408-df\"",
+      "file_path": "documentation/CoreSpotlight/corespotlightversionnumber.md",
+      "hash": "128954d45d6ca5af74eea1dd4a2e92bccfdd11dfddec4b4b89c0e1a5ca0d47f1"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/corespotlight/corespotlightversionstring.json": {
+      "etag": "\"1458-65d55caa47300-df\"",
+      "file_path": "documentation/CoreSpotlight/corespotlightversionstring.md",
+      "hash": "165990aa99c598bb71530c688e113f7379fd39bf4979d4a1757b95486d5e15bb"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/corespotlight/cs_available.json": {
+      "etag": "\"b61-65d55cab2d408-df\"",
+      "file_path": "documentation/CoreSpotlight/cs_available.md",
+      "hash": "6230bc34b3422e0a6caf2bf0d3b2cb218b3d1e2d7037835cb748f8898a55c97d"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/corespotlight/cs_class_available.json": {
+      "etag": "\"ba9-65d55ca955a21-df\"",
+      "file_path": "documentation/CoreSpotlight/cs_class_available.md",
+      "hash": "e693808c26275045e24707af3b8d1462a68c7acb5b59c20ccb0a86de4f5216a1"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/corespotlight/cs_deprecated.json": {
+      "etag": "\"c0a-65d55ca955a21-df\"",
+      "file_path": "documentation/CoreSpotlight/cs_deprecated.md",
+      "hash": "49ef8be723dce053ba6ebd23b51f88394b3aef4781a6d62b87780473e73de828"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/corespotlight/cs_tvos_unavailable.json": {
+      "etag": "\"b17-65d55cab2d408-df\"",
+      "file_path": "documentation/CoreSpotlight/cs_tvos_unavailable.md",
+      "hash": "735e386e161af9b9c3e9f69b36c8d7fe705af3ab1009b835a39d7b0dea90c336"
     },
     "https://developer.apple.com/tutorials/data/documentation/corespotlight/csactionidentifier.json": {
       "etag": "\"425c-65d55caae6431-df\"",
@@ -5554,6 +5694,11 @@
       "file_path": "documentation/CoreSpotlight/cssearchableitemattributeset/whitebalance.md",
       "hash": "5e26a15514b233d4d8d23d16caaa31c17c6212f1048a6439af30694bd65d670c"
     },
+    "https://developer.apple.com/tutorials/data/documentation/corespotlight/cssearchableitemupdatelisteneroptions/cssearchableitemupdatelisteneroptiondefault.json": {
+      "etag": "\"1355-65d55cab161e0-df\"",
+      "file_path": "documentation/CoreSpotlight/cssearchableitemupdatelisteneroptions/cssearchableitemupdatelisteneroptiondefault.md",
+      "hash": "d6b21b75a6de9253c707d53f87bc5915cd10b21b83dd396e75f775d48a92b207"
+    },
     "https://developer.apple.com/tutorials/data/documentation/corespotlight/cssearchquery-errors.json": {
       "etag": "\"1b34-659024d486193-df\"",
       "file_path": "documentation/CoreSpotlight/cssearchquery-errors.md",
@@ -5744,6 +5889,11 @@
       "file_path": "documentation/CoreSpotlight/cssearchqueryerrordomain.md",
       "hash": "a517f4f7d08e6d199c679cc80ac0b7631d3cdb723207713124fa85f1666ed42b"
     },
+    "https://developer.apple.com/tutorials/data/documentation/corespotlight/cssearchquerysourceoptions/cssearchquerysourceoptiondefault.json": {
+      "etag": "\"1250-65d55ca955a21-df\"",
+      "file_path": "documentation/CoreSpotlight/cssearchquerysourceoptions/cssearchquerysourceoptiondefault.md",
+      "hash": "9c3ab405ed1cf28fb40f9876937c8e47fe70a29d1e6f26d03808b420ada75edc"
+    },
     "https://developer.apple.com/tutorials/data/documentation/corespotlight/cssearchquerystring.json": {
       "etag": "\"2163-65d55cab2d408-df\"",
       "file_path": "documentation/CoreSpotlight/cssearchquerystring.md",
@@ -5774,6 +5924,11 @@
       "file_path": "documentation/CoreSpotlight/cssuggestion/localizedattributedsuggestion-3ssly.md",
       "hash": "b9a5f66bf69fc4f836de7d3e272e598978d07acd93a4fc76555e0b002a33878a"
     },
+    "https://developer.apple.com/tutorials/data/documentation/corespotlight/cssuggestion/localizedattributedsuggestion-oq3b.json": {
+      "etag": "\"15cc-65d55caac7a1b-df\"",
+      "file_path": "documentation/CoreSpotlight/cssuggestion/localizedattributedsuggestion-oq3b.md",
+      "hash": "2e85b97e43839a31cd75ecc2dc6106f215945b1d83bb6c76e096bc53286cdbc8"
+    },
     "https://developer.apple.com/tutorials/data/documentation/corespotlight/cssuggestion/suggestionkind-swift.enum.json": {
       "etag": "\"49ed-65d55caac7a1b-df\"",
       "file_path": "documentation/CoreSpotlight/cssuggestion/suggestionkind-swift.enum.md",
@@ -5803,6 +5958,11 @@
       "etag": "\"28b8-65d55caac7a1b-df\"",
       "file_path": "documentation/CoreSpotlight/cssuggestion/suggestionkind-swift.property.md",
       "hash": "b61735065c13ca7beae88c43fd91cb2142103d39527e4bce5643b001f9d91941"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/corespotlight/cssuggestionhighlightattributename.json": {
+      "etag": "\"11d0-65d55cab2d408-df\"",
+      "file_path": "documentation/CoreSpotlight/cssuggestionhighlightattributename.md",
+      "hash": "f427068a814ad4d02fd23841e478c6ac0a8a62deab9d175fb8b70c219065466f"
     },
     "https://developer.apple.com/tutorials/data/documentation/corespotlight/csuserquery.json": {
       "etag": "\"b415-65d55caa47300-df\"",
@@ -5919,6 +6079,16 @@
       "file_path": "documentation/CoreSpotlight/csuserquery/userengaged(_,visiblesuggestions,interaction).md",
       "hash": "39c5e3133efa6b4ab1cc9afe622da719d2df9b0a76f98e38a01e97f61750de21"
     },
+    "https://developer.apple.com/tutorials/data/documentation/corespotlight/csuserquery/userengagedwithitem:visibleitems:userinteractiontype:.json": {
+      "etag": "\"2010-65d55ca955a21-df\"",
+      "file_path": "documentation/CoreSpotlight/csuserquery/userengagedwithitem_visibleitems_userinteractiontype_.md",
+      "hash": "6d08940680ff4460d83018d3e7a22cca4ce7b0f95a9433334a2ea621bf5f8bdd"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/corespotlight/csuserquery/userengagedwithsuggestion:visiblesuggestions:userinteractiontype:.json": {
+      "etag": "\"2009-65d55ca955a21-df\"",
+      "file_path": "documentation/CoreSpotlight/csuserquery/userengagedwithsuggestion_visiblesuggestions_userinteractiontype_.md",
+      "hash": "8f71d4f7d2d7a4f0545d640251500c7d3ab6f901c8c4543d38fb90107f0d82fc"
+    },
     "https://developer.apple.com/tutorials/data/documentation/corespotlight/csuserquery/userinteractionkind.json": {
       "etag": "\"4d24-65d55ca955a21-df\"",
       "file_path": "documentation/CoreSpotlight/csuserquery/userinteractionkind.md",
@@ -5979,6 +6149,11 @@
       "file_path": "documentation/CoreSpotlight/csuserquerycontext/maxsuggestioncount.md",
       "hash": "7bb7fa5a6168fd986fbe25528b57d7e7572604ef2583c79b7823b586048a6cba"
     },
+    "https://developer.apple.com/tutorials/data/documentation/corespotlight/csuserquerycontext/userquerycontext.json": {
+      "etag": "\"1376-65d55caa5ef67-df\"",
+      "file_path": "documentation/CoreSpotlight/csuserquerycontext/userquerycontext.md",
+      "hash": "a75b0a2dfc9046f272b5d439cdcea17bea39817b7607b8669aa8e95cf6a3887e"
+    },
     "https://developer.apple.com/tutorials/data/documentation/corespotlight/customstage.json": {
       "etag": "\"78bb-65d55cab2d408-df\"",
       "file_path": "documentation/CoreSpotlight/customstage.md",
@@ -5989,35 +6164,70 @@
       "file_path": "documentation/CoreSpotlight/customstage/description.md",
       "hash": "b963e3ea631fd6eaed1c559ab610d219c80e45cadb063a9cffb48856068ac006"
     },
+    "https://developer.apple.com/tutorials/data/documentation/corespotlight/customstage/execute(count:)-7gyx8.json": {
+      "etag": "\"222c-65d55cab3d385-df\"",
+      "file_path": "documentation/CoreSpotlight/customstage/execute(count)-7gyx8.md",
+      "hash": "ff91be7f6925bafe30ad1ce0d577f3fd05867e23d4ddbec0eddcac3aa18488a8"
+    },
     "https://developer.apple.com/tutorials/data/documentation/corespotlight/customstage/execute(count:).json": {
       "etag": "\"3f9d-65d55cab3d385-df\"",
       "file_path": "documentation/CoreSpotlight/customstage/execute(count).md",
       "hash": "3657b63cb57619fea2138e324d3560ea50f71781141c232222a4c3c9c3ee7522"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/corespotlight/customstage/execute(groupeditems:)-7asba.json": {
+      "etag": "\"2ee4-65d55cab3d385-df\"",
+      "file_path": "documentation/CoreSpotlight/customstage/execute(groupeditems)-7asba.md",
+      "hash": "027125460cbf695f4721cc0367cba5c5c0766b2e3256dd3f4cda7cea8b52b77c"
     },
     "https://developer.apple.com/tutorials/data/documentation/corespotlight/customstage/execute(groupeditems:).json": {
       "etag": "\"4c55-65d55cab3d385-df\"",
       "file_path": "documentation/CoreSpotlight/customstage/execute(groupeditems).md",
       "hash": "fe7e604a4c5760d950b5db9ec4c25a0ee606ca6437080fbffa7453c7df1bf544"
     },
+    "https://developer.apple.com/tutorials/data/documentation/corespotlight/customstage/execute(items:)-2t5wu.json": {
+      "etag": "\"290b-65d55cab3d385-df\"",
+      "file_path": "documentation/CoreSpotlight/customstage/execute(items)-2t5wu.md",
+      "hash": "44dcb3576ee0190fdddb16b5a8a4598e1c52a8e4487e35025a7c17daa21569d9"
+    },
     "https://developer.apple.com/tutorials/data/documentation/corespotlight/customstage/execute(items:).json": {
       "etag": "\"467c-65d55cab3d385-df\"",
       "file_path": "documentation/CoreSpotlight/customstage/execute(items).md",
       "hash": "4666383387063be52ded844686ab3722711bc8a714bbc25bc457d2688661b8bd"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/corespotlight/customstage/execute(scoreditems:)-5v16i.json": {
+      "etag": "\"2a15-65d55cab3d385-df\"",
+      "file_path": "documentation/CoreSpotlight/customstage/execute(scoreditems)-5v16i.md",
+      "hash": "144d556ea728901a6fb99a516a79e46e368c8e476c1670b5f8f8988c60614519"
     },
     "https://developer.apple.com/tutorials/data/documentation/corespotlight/customstage/execute(scoreditems:).json": {
       "etag": "\"4786-65d55cab3d385-df\"",
       "file_path": "documentation/CoreSpotlight/customstage/execute(scoreditems).md",
       "hash": "7c6e98a0fc6fb886c4801e46c2fb4342a02688b749d2afd6bfc9b92a16416b32"
     },
+    "https://developer.apple.com/tutorials/data/documentation/corespotlight/customstage/execute(statistic:value:)-9tt52.json": {
+      "etag": "\"27de-65d55cab3d385-df\"",
+      "file_path": "documentation/CoreSpotlight/customstage/execute(statistic,value)-9tt52.md",
+      "hash": "2327e4db0fe64bcf40e948d12659e17bd5a956ab8ce5721a818b74034689efa5"
+    },
     "https://developer.apple.com/tutorials/data/documentation/corespotlight/customstage/execute(statistic:value:).json": {
       "etag": "\"2d83-65d55cab3d385-df\"",
       "file_path": "documentation/CoreSpotlight/customstage/execute(statistic,value).md",
       "hash": "32aa4db8eec486332d6134cef0e12aa5933f099990f51ab94346a8f6d56a46b1"
     },
+    "https://developer.apple.com/tutorials/data/documentation/corespotlight/customstage/execute(table:)-1kaw6.json": {
+      "etag": "\"23bb-65d55cab3d385-df\"",
+      "file_path": "documentation/CoreSpotlight/customstage/execute(table)-1kaw6.md",
+      "hash": "03b54177c2d87ff8704af6a52ba105f4073bb2ccb33f7a2437f7af5c9fabe97a"
+    },
     "https://developer.apple.com/tutorials/data/documentation/corespotlight/customstage/execute(table:).json": {
       "etag": "\"412c-65d55cab3d385-df\"",
       "file_path": "documentation/CoreSpotlight/customstage/execute(table).md",
       "hash": "ee5d3782e7f3be2ec892c67f27900d195d69bd4f7522cadbabed2bd6370529a3"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/corespotlight/customstage/execute(text:)-6l4oy.json": {
+      "etag": "\"1eee-65d55cab3d385-df\"",
+      "file_path": "documentation/CoreSpotlight/customstage/execute(text)-6l4oy.md",
+      "hash": "ff4cda525da2e83282c797b29c3b6d123622dead39a1ca36a6ca66adddb8c080"
     },
     "https://developer.apple.com/tutorials/data/documentation/corespotlight/customstage/execute(text:).json": {
       "etag": "\"3c5f-65d55cab3d385-df\"",
@@ -7931,8 +8141,8 @@
   },
   "metadata": {
     "render": {
-      "version": 1
+      "version": 2
     },
-    "total_pages": 1586
+    "total_pages": 1628
   }
 }

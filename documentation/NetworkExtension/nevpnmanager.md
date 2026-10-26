@@ -65,6 +65,8 @@ The [`NEVPNManager`](./nevpnmanager.md) API gives apps the ability to create and
 ### Notifications
 - [static let NEVPNConfigurationChange: NSNotification.Name](../Foundation/nsnotification/name-swift.struct/nevpnconfigurationchange.md)
   Posted after the VPN configuration stored in the Network Extension preferences changes.
+- [NEVPNConfigurationChangeNotification](./nevpnconfigurationchangenotification.md)
+  Posted after the VPN configuration stored in the Network Extension preferences changes.
 ### Entitlements
 - [Personal VPN Entitlement](../BundleResources/entitlements/com.apple.developer.networking.vpn.api.md)
   The API an app can use to create and control a custom system VPN configuration.

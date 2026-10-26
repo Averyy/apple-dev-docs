@@ -42,6 +42,10 @@ You must set the path’s current point (using the [`move(to:)`](./move%28to%29.
   Appends the outlines of the specified glyphs to the path.
 - [func appendPackedGlyphs(UnsafePointer<CChar>)](./appendpackedglyphs%28_%29.md)
   Appends an array of packed glyphs to the path.
+- [- cachesBezierPath](./cachesbezierpath.md)
+  Returns a Boolean value that indicates whether this object maintains a cached image of its path.
+- [- setCachesBezierPath:](./setcachesbezierpath_.md)
+  Sets whether the path should cache its path information.
 
 
 ---

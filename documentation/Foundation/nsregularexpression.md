@@ -343,6 +343,8 @@ All trademarks and registered trademarks mentioned herein are the property of th
 ### Creating Regular Expressions
 - [init(pattern: String, options: NSRegularExpression.Options) throws](./nsregularexpression/init%28pattern,options%29.md)
   Returns an initialized NSRegularExpression instance with the specified regular expression pattern and options.
+- [+ regularExpressionWithPattern:options:error:](./nsregularexpression/regularexpressionwithpattern_options_error_.md)
+  Creates an NSRegularExpression instance with the specified regular expression pattern and options.
 ### Getting the Regular Expression and Options
 - [var pattern: String](./nsregularexpression/pattern.md)
   Returns the regular expression pattern.

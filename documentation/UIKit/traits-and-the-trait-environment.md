@@ -49,6 +49,10 @@ Avoid using custom traits in cases where you can directly set properties on a vi
   A set of methods that, in conjunction with a presentation controller, determine how to respond to trait changes in your app.
 - [protocol UIContentContainer](./uicontentcontainer.md)
   A set of methods for adapting the contents of your view controllers to size and trait changes.
+- [UITraitChangeObservable](./uitraitchangeobservable-7qoet.md)
+  A type that calls your code in reaction to changes in the trait environment.
+- [UIMutableTraits](./uimutabletraits-8l00o.md)
+  A mutable container of traits.
 ### Custom traits
 - [Providing data to the view hierarchy with custom traits](./providing-data-to-the-view-hierarchy-with-custom-traits.md)
   Share data that needs to flow hierarchically across multiple levels of your view hierarchy.
@@ -59,6 +63,12 @@ Avoid using custom traits in cases where you can directly set properties on a vi
 - [protocol UITraitDefinition](./uitraitdefinition-64c15.md)
   A type representing a trait in a trait collection.
 - [protocol UITraitBridgedEnvironmentKey](./uitraitbridgedenvironmentkey.md)
+- [UITrait](./uitrait-1dbah.md)
+- [UITraitDefinition](./uitraitdefinition-3572h.md)
+  A type representing a trait in a trait collection.
+- [UIObjectTraitDefinition](./uiobjecttraitdefinition.md)
+- [UICGFloatTraitDefinition](./uicgfloattraitdefinition.md)
+- [UINSIntegerTraitDefinition](./uinsintegertraitdefinition.md)
 ### System traits
 - [struct UITraitNavigationTitleAlignment](./uitraitnavigationtitlealignment-swift.struct.md)
 - [struct UITraitSystemPrefersReducedResourceUsage](./uitraitsystemprefersreducedresourceusage-swift.struct.md)

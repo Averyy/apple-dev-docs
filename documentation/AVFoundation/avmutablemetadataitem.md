@@ -66,6 +66,9 @@ You can initialize a mutable metadata item from an existing [`AVMetadataItem`](.
   The locale for a mutable metadata item.
 - [var extendedLanguageTag: String?](./avmutablemetadataitem/extendedlanguagetag.md)
   The IETF BCP 47 (RFC 4646) language identifier of the metadata item.
+### Creating a metadata item
+- [+ metadataItem](./avmutablemetadataitem/metadataitem.md)
+  Returns a new mutable metadata item.
 
 ## Relationships
 

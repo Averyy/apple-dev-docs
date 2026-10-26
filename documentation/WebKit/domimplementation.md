@@ -25,6 +25,10 @@ class DOMImplementation
 - [func createDocumentType(String!, publicId: String!, systemId: String!) -> DOMDocumentType!](./domimplementation/createdocumenttype%28_,publicid,systemid%29.md)
 - [func createHTMLDocument(String!) -> DOMHTMLDocument!](./domimplementation/createhtmldocument%28_%29.md)
 - [func hasFeature(String!, version: String!) -> Bool](./domimplementation/hasfeature%28_,version%29.md)
+- [- createCSSStyleSheet::](./domimplementation/createcssstylesheet__.md)
+- [- createDocument:::](./domimplementation/createdocument___.md)
+- [- createDocumentType:::](./domimplementation/createdocumenttype___.md)
+- [- hasFeature::](./domimplementation/hasfeature__.md)
 
 ## Relationships
 

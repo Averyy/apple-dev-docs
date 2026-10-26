@@ -64,6 +64,8 @@ Because `CVImageBuffers` hold visual data, the format description provided is a 
   Creates a sample buffer with an image buffer and a callback to make the data ready for use.
 - [func CMAudioSampleBufferCreateWithPacketDescriptions(allocator: CFAllocator?, dataBuffer: CMBlockBuffer?, dataReady: Bool, makeDataReadyCallback: CMSampleBufferMakeDataReadyCallback?, refcon: UnsafeMutableRawPointer?, formatDescription: CMFormatDescription, sampleCount: CMItemCount, presentationTimeStamp: CMTime, packetDescriptions: UnsafePointer<AudioStreamPacketDescription>?, sampleBufferOut: UnsafeMutablePointer<CMSampleBuffer?>) -> OSStatus](./cmaudiosamplebuffercreatewithpacketdescriptions%28allocator,databuffer,dataready,makedatareadycallback,refcon,formatdescription,samplecount,presentationtimestamp,packetdescriptions,samplebufferout%29.md)
   Creates a sample buffer with packet descriptions and a callback to make the data ready for use.
+- [CMSampleBufferCreateForTaggedBufferGroup](./cmsamplebuffercreatefortaggedbuffergroup.md)
+  Creates a new sample buffer from a tagged buffer group.
 
 
 ---

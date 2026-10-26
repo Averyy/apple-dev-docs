@@ -57,6 +57,8 @@ class PDFThumbnailView
 ### Instance Properties
 - [var contentInset: UIEdgeInsets](./pdfthumbnailview/contentinset.md)
 - [var layoutMode: PDFThumbnailLayoutMode](./pdfthumbnailview/layoutmode.md)
+### Constants
+- [PDFThumbnailViewDocumentEditedNotification](./pdfthumbnailviewdocumenteditednotification.md)
 
 ## Relationships
 

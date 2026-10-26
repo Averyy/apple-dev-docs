@@ -101,6 +101,20 @@ typedef NSObject<OS_nw_connection> * nw_connection_t;
 - [func nw_connection_copy_description(nw_connection_t) -> UnsafeMutablePointer<CChar>](./nw_connection_copy_description%28_%29.md)
   Copies the description of the connection as a string.
 
+## See Also
+
+### Connections and Listeners
+- [Implementing netcat with Network Framework](./implementing-netcat-with-network-framework.md)
+  Build a simple `netcat` tool that establishes network connections and transfers data.
+- [nw_listener_t](./nw_listener_t.md)
+  An object you use to listen for incoming network connections.
+- [nw_browser_t](./nw_browser_t.md)
+  An object you use to browse for available network services.
+- [nw_connection_group_t](./nw_connection_group_t.md)
+  An object you use to communicate with a group of endpoints, such as an IP multicast group on a local network.
+- [nw_ethernet_channel_t](./nw_ethernet_channel_t.md)
+  An object you use to send and receive custom Ethernet frames.
+
 
 ---
 

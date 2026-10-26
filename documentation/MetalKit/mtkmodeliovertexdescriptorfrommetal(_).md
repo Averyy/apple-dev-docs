@@ -41,6 +41,10 @@ This function is equivalent to the [`MTKModelIOVertexDescriptorFromMetalWithErro
 ### Converting Between Model I/O and Metal Vertex Descriptors
 - [func MTKMetalVertexDescriptorFromModelIO(MDLVertexDescriptor) -> MTLVertexDescriptor?](./mtkmetalvertexdescriptorfrommodelio%28_%29.md)
   Returns a partially converted Metal vertex descriptor.
+- [MTKMetalVertexDescriptorFromModelIOWithError](./mtkmetalvertexdescriptorfrommodeliowitherror.md)
+  Returns a partially converted Metal vertex descriptor, reporting any error that occurs.
+- [MTKModelIOVertexDescriptorFromMetalWithError](./mtkmodeliovertexdescriptorfrommetalwitherror.md)
+  Returns a partially converted Model I/O vertex descriptor, reporting any error that occurs.
 
 
 ---

@@ -195,6 +195,13 @@ Most apps shouldn’t use this API, and instead should use a higher-level servic
 - [var kDNSServiceType_UNSPEC: Int](./kdnsservicetype_unspec.md)
 - [var kDNSServiceType_WKS: Int](./kdnsservicetype_wks.md)
 - [var kDNSServiceType_X25: Int](./kdnsservicetype_x25.md)
+### Macros
+- [DNSSD_API](./dnssd_api.md)
+- [DNSSD_EXPORT](./dnssd_export.md)
+- [DNS_SD_API_AVAILABLE](./dns_sd_api_available.md)
+- [DNS_SD_NONNULL](./dns_sd_nonnull.md)
+- [DNS_SD_NULLABLE](./dns_sd_nullable.md)
+- [DNS_SERVICE_FLAGS_ENUM](./dns_service_flags_enum.md)
 
 
 ---

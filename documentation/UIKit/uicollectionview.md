@@ -121,6 +121,8 @@ For general information about making your interface accessible, see [Accessibili
   The methods adopted by the object you use to manage data and provide cells for a collection view.
 - [Building high-performance lists and collection views](./building-high-performance-lists-and-collection-views.md)
   Improve the performance of lists and collections in your app with prefetching and image preparation.
+- [UICollectionViewDiffableDataSource](./uicollectionviewdiffabledatasourcereference.md)
+  The object you use to manage data and provide cells for a collection view.
 ### Prefetching collection view cells and data
 - [var isPrefetchingEnabled: Bool](./uicollectionview/isprefetchingenabled.md)
   A Boolean value that indicates whether cell and data prefetching are enabled.
@@ -144,6 +146,10 @@ For general information about making your interface accessible, see [Accessibili
   Registers a nib file for use in creating new collection view cells.
 - [func dequeueReusableCell(withReuseIdentifier: String, for: IndexPath) -> UICollectionViewCell](./uicollectionview/dequeuereusablecell%28withreuseidentifier,for%29.md)
   Dequeues a reusable cell object located by its identifier.
+- [UICollectionViewCellRegistration](./uicollectionviewcellregistration.md)
+  A registration for the collection view’s cells.
+- [- dequeueConfiguredReusableCellWithRegistration:forIndexPath:item:](./uicollectionview/dequeueconfiguredreusablecellwithregistration_forindexpath_item_.md)
+  Dequeues a configured reusable cell object.
 ### Creating headers and footers
 - [UICollectionView.SupplementaryRegistration](./uicollectionview/supplementaryregistration.md)
   A registration for the collection view’s supplementary views.
@@ -155,6 +161,10 @@ For general information about making your interface accessible, see [Accessibili
   Registers a nib file for use in creating supplementary views for the collection view.
 - [func dequeueReusableSupplementaryView(ofKind: String, withReuseIdentifier: String, for: IndexPath) -> UICollectionReusableView](./uicollectionview/dequeuereusablesupplementaryview%28ofkind,withreuseidentifier,for%29.md)
   Dequeues a reusable supplementary view located by its identifier and kind.
+- [UICollectionViewSupplementaryRegistration](./uicollectionviewsupplementaryregistration.md)
+  A registration for the collection view’s supplementary views.
+- [- dequeueConfiguredReusableSupplementaryViewWithRegistration:forIndexPath:](./uicollectionview/dequeueconfiguredreusablesupplementaryviewwithregistration_forindexpath_.md)
+  Dequeues a configured reusable supplementary view object.
 ### Configuring the background view
 - [var backgroundView: UIView?](./uicollectionview/backgroundview.md)
   The view that provides the background appearance.

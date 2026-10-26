@@ -28,6 +28,8 @@ To receive all the delegate calls, always assign a value to this property before
 ### Creating a Session
 - [protocol WKExtendedRuntimeSessionDelegate](../wkextendedruntimesessiondelegate.md)
   A set of optional methods for monitoring an extended runtime session.
+- [+ session](./session.md)
+  Instantiates a new session object.
 
 
 ---

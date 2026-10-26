@@ -30,6 +30,8 @@ The value of this property is the string that appears on the button when it’s 
   The font that the cell uses to display text.
 - [func setButtonType(NSButton.ButtonType)](./setbuttontype%28_%29.md)
   Sets how the button highlights while pressed and how it shows its state.
+- [- alternateMnemonic](./alternatemnemonic.md)
+  Returns the character in the alternate title that’s marked as the “keyboard mnemonic.”
 ### Setting Titles
 - [var attributedAlternateTitle: NSAttributedString](./attributedalternatetitle.md)
   The title displayed by the button when it’s in its alternate state, as an attributed string.

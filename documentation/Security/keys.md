@@ -106,6 +106,17 @@ Keys vary based on the operations they support. For example, you use public and 
   A block called with the results of a call to [`SecKeyGeneratePairAsync(_:_:_:)`](./seckeygeneratepairasync%28_,_,_%29.md).
 - [enum SecCredentialType](./seccredentialtype.md)
   The credential type to be returned by [`SecKeyGetCredentials`](./seckeygetcredentials.md).
+- [SecKeyGetCredentials](./seckeygetcredentials.md)
+  Returns an access credential for a key.
+- [SecKeyGetCSPHandle](./seckeygetcsphandle.md)
+  Returns the CSSM CSP handle for a key.
+- [SecKeyGetCSSMKey](./seckeygetcssmkey.md)
+  Retrieves a pointer to the `CSSM_KEY` structure containing the key stored in a keychain item.
+- [SecKeyCreatePair](./seckeycreatepair.md)
+  Creates an asymmetric key pair and stores it in a keychain.
+- [SecKeyGenerate](./seckeygenerate.md)
+  Creates a symmetric key and optionally stores it in a keychain.
+- [OpaqueSecKeyRef](./opaqueseckeyref.md)
 
 
 ---

@@ -55,6 +55,14 @@ When you use a `FSBlockDeviceResource`, your file system implementation also con
   Asynchronously writes data from from a buffer to the resource.
 - [func write(from: UnsafeRawBufferPointer, startingAt: off_t, length: Int, completionHandler: (Int, (any Error)?) -> Void)](./fsblockdeviceresource/write%28from,startingat,length,completionhandler%29.md)
   Writes data from from a buffer to the resource and executes a closure afterwards.
+- [- readInto:startingAt:length:error:](./fsblockdeviceresource/readinto_startingat_length_error_.md)
+  Synchronously reads data from the resource into a buffer.
+- [- readInto:startingAt:length:completionHandler:](./fsblockdeviceresource/readinto_startingat_length_completionhandler_.md)
+  Reads data from the resource into a buffer and executes a block afterwards.
+- [- writeFrom:startingAt:length:error:](./fsblockdeviceresource/writefrom_startingat_length_error_.md)
+  Synchronously writes data from from a buffer to the resource and executes a block afterwards.
+- [- writeFrom:startingAt:length:completionHandler:](./fsblockdeviceresource/writefrom_startingat_length_completionhandler_.md)
+  Writes data from from a buffer to the resource and executes a block afterwards.
 ### Reading and writing data with kernel buffer cache
 - [func metadataRead(into: UnsafeMutableRawBufferPointer, startingAt: off_t, length: Int) throws](./fsblockdeviceresource/metadataread%28into,startingat,length%29.md)
   Synchronously reads file system metadata from the resource into a buffer.
@@ -72,6 +80,12 @@ When you use a `FSBlockDeviceResource`, your file system implementation also con
   Synchronously purges the given ranges from the buffer cache.
 - [class FSMetadataRange](./fsmetadatarange.md)
   A range that describes contiguous metadata segments on disk.
+- [- metadataReadInto:startingAt:length:error:](./fsblockdeviceresource/metadatareadinto_startingat_length_error_.md)
+  Synchronously reads file system metadata from the resource into a buffer.
+- [- metadataWriteFrom:startingAt:length:error:](./fsblockdeviceresource/metadatawritefrom_startingat_length_error_.md)
+  Synchronously writes file system metadata from a buffer to the resource.
+- [- delayedMetadataWriteFrom:startingAt:length:error:](./fsblockdeviceresource/delayedmetadatawritefrom_startingat_length_error_.md)
+  Writes file system metadata from a buffer to a cache, prior to flushing it to the resource.
 
 ## Relationships
 

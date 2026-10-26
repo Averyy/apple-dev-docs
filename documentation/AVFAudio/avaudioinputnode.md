@@ -47,6 +47,7 @@ In manual rendering mode, the format of the output scope is initially the same a
   Supplies the data through the input node to the engine while operating in the manual rendering mode.
 - [typealias AVAudioIONodeInputBlock](./avaudioionodeinputblock.md)
   The type that represents a block to render operation calls to get input data when in manual rendering mode.
+- [- setRealtimeSafeManualRenderingInputPCMFormat:inputBlock:](./avaudioinputnode/setrealtimesafemanualrenderinginputpcmformat_inputblock_.md)
 ### Configuring voice processing
 - [var isVoiceProcessingInputMuted: Bool](./avaudioinputnode/isvoiceprocessinginputmuted.md)
   A Boolean that indicates whether the input of the voice processing unit is in a muted state.
@@ -93,6 +94,7 @@ In manual rendering mode, the format of the output scope is initially the same a
   An object that performs audio input or output in the engine.
 - [class AVAudioNode](./avaudionode.md)
   An object you use for audio generation, processing, or an I/O block.
+- [AVAudioIONodeInputBlockRealtimeSafe](./avaudioionodeinputblockrealtimesafe.md)
 
 
 ---

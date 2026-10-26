@@ -41,6 +41,15 @@ This method steps through the `objects` and `keys` arrays, creating entries in t
   Initializes a newly allocated dictionary with the specified number of key-value pairs constructed from the provided C arrays of keys and objects.
 - [convenience init(object: Any, forKey: any NSCopying)](./init%28object,forkey%29.md)
   Creates a dictionary containing a given key and value.
+- [+ dictionaryWithObjects:forKeys:count:](./dictionarywithobjects_forkeys_count_.md)
+  Creates a dictionary containing a specified number of objects from a C array.
+- [+ dictionaryWithObjectsAndKeys:](./dictionarywithobjectsandkeys_.md)
+  Creates a dictionary containing entries constructed from the specified set of values and keys.
+### Related Documentation
+- [- initWithObjectsAndKeys:](./initwithobjectsandkeys_.md)
+  Initializes a newly allocated dictionary with entries constructed from the specified set of values and keys.
+- [+ dictionaryWithObjects:forKeys:](./dictionarywithobjects_forkeys_.md)
+  Creates a dictionary containing entries constructed from the contents of an array of keys and an array of values.
 
 
 ---

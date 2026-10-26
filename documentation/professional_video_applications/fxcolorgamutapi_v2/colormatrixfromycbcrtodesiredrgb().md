@@ -22,7 +22,7 @@ func colorMatrixFromYCbCrToDesiredRGB() -> FxMatrix44!
 
 ## Mentions
 
-- [Managing color space and gamut in plug-ins](https://developer.apple.com/documentation/professional-video-applications/managing-color-space-and-gamut-in-plug-ins)
+- [Managing color space and gamut in plug-ins](../../Professional-Video-Applications/managing-color-space-and-gamut-in-plug-ins.md)
 
 #### Return Value
 

@@ -47,6 +47,8 @@ Use this property to schedule a vehicle to arrive at the specified time at the u
   The user’s starting location.
 - [var dropOffLocation: CLPlacemark?](./dropofflocation.md)
   The user’s destination.
+- [partySize](./partysize-64kfc.md)
+  The number of passengers that the ride must accommodate.
 
 
 ---

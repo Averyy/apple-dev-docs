@@ -30,6 +30,8 @@ If no item is selected, the value in this property is `-1`.
   The menu item that was last selected by the user.
 - [var titleOfSelectedItem: String?](./titleofselecteditem.md)
   The title of the item that was last selected by the user.
+- [selectedTag](./selectedtag.md)
+  The tag of the menu item that was last selected by the user.
 
 
 ---

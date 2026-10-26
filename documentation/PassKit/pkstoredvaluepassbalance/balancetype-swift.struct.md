@@ -55,6 +55,8 @@ typedef NSString * PKStoredValuePassBalanceType;
   The type of value that the balance represents, such as money or points.
 - [var currencyCode: String?](./currencycode.md)
   The ISO 4217 currency code of the balance.
+- [amount](./amount-2vfd3.md)
+  The current balance in money or points.
 
 
 ---

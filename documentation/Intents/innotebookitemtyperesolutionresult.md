@@ -40,6 +40,8 @@ For additional resolution operators, see [`INIntentResolutionResult`](./inintent
   Creates an object whose resolution requires confirmation from the user before proceeding.
 - [static func disambiguation(with: [INNotebookItemType]) -> Self](./innotebookitemtyperesolutionresult/disambiguation%28with%29.md)
   Creates an object whose resolution requires the user to select from among the specified objects.
+- [+ disambiguationWithNotebookItemTypesToDisambiguate:](./innotebookitemtyperesolutionresult/disambiguationwithnotebookitemtypestodisambiguate_.md)
+  Creates an object whose resolution requires the user to select from among the specified objects.
 
 ## Relationships
 

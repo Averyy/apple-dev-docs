@@ -65,6 +65,11 @@
       "file_path": "documentation/HomeKit/enabling-homekit-in-your-app.md",
       "hash": "b2c392da619404f14b9bc7fb933065870d8f6d9aec69121d8cca71b0d390e21a"
     },
+    "https://developer.apple.com/documentation/homekit/hm_extern": {
+      "etag": "\"9b9-65d55fa740d7b-df\"",
+      "file_path": "documentation/HomeKit/hm_extern.md",
+      "hash": "84d8a8ef7c54ec787cf8df64774e557e1fb4cc94e0a6f477c68d38836adc3d3a"
+    },
     "https://developer.apple.com/documentation/homekit/hmaccesscontrol": {
       "etag": "\"44c7-65d55fa724835-df\"",
       "file_path": "documentation/HomeKit/hmaccesscontrol.md",
@@ -104,6 +109,11 @@
       "etag": "\"137f-65d55fa79211b-df\"",
       "file_path": "documentation/HomeKit/hmaccessory/hapinstanceid-3cusx.md",
       "hash": "0486f6365b5ebc339cecd68a84f5e7c75d2244e28cc0f39f21026444278fada9"
+    },
+    "https://developer.apple.com/documentation/homekit/hmaccessory/hapinstanceid-667fy": {
+      "etag": "\"1505-65d55fa7ab68f-df\"",
+      "file_path": "documentation/HomeKit/hmaccessory/hapinstanceid-667fy.md",
+      "hash": "d28a6a4997dece2d9f1ac4011f65b9cb6a23ea0c64019fd33b5c777519fa003d"
     },
     "https://developer.apple.com/documentation/homekit/hmaccessory/home": {
       "etag": "\"1ec0-65d55fa7ab68f-df\"",
@@ -214,6 +224,11 @@
       "etag": "\"1b53-65d55fa79211b-df\"",
       "file_path": "documentation/HomeKit/hmaccessory/manufacturerfeatures.md",
       "hash": "c07cae5048296f7c4c53f5209f83deb42c44f7ba2c54bc8ea6fa8e8e4648cf1e"
+    },
+    "https://developer.apple.com/documentation/homekit/hmaccessory/matternodeid-5zfqo": {
+      "etag": "\"137f-65d55fa79211b-df\"",
+      "file_path": "documentation/HomeKit/hmaccessory/matternodeid-5zfqo.md",
+      "hash": "94fdcb7f5a6c510328ef1d5d1659b05f1c906fc13626a0b7a563f936edd4b6bd"
     },
     "https://developer.apple.com/documentation/homekit/hmaccessory/matternodeid-67v1j": {
       "etag": "\"1373-65d55fa79211b-df\"",
@@ -1419,6 +1434,11 @@
       "etag": "\"395e-65d55fa62b778-df\"",
       "file_path": "documentation/HomeKit/hmcharacteristicpropertyrequiresauthorizationdata.md",
       "hash": "fcb431d941cee8a4e59b31ed22aa5e805e6face04a7dff2cf9a978ed39163b11"
+    },
+    "https://developer.apple.com/documentation/homekit/hmcharacteristicpropertysupportseventnotification-19wy1": {
+      "etag": "\"1ef6-65d55fa75a54b-df\"",
+      "file_path": "documentation/HomeKit/hmcharacteristicpropertysupportseventnotification-19wy1.md",
+      "hash": "540131af3bc4bfea823f0cd54439f0320d50080aa5db7f9b5be9f854e5f49cf6"
     },
     "https://developer.apple.com/documentation/homekit/hmcharacteristicpropertysupportseventnotification-2f0ml": {
       "etag": "\"5852-65d55fa724835-df\"",
@@ -4930,6 +4950,11 @@
       "file_path": "documentation/HomeKit/hmerrorblock.md",
       "hash": "feeaba9e818932bf76ebd4d5218102f5b5a61b2dcf2d58c8fed69bc1dea241ff"
     },
+    "https://developer.apple.com/documentation/homekit/hmerrorcode/hmerrorcodeincompatiblehomehub": {
+      "etag": "\"152f-65d55fa64f027-df\"",
+      "file_path": "documentation/HomeKit/hmerrorcode/hmerrorcodeincompatiblehomehub.md",
+      "hash": "a3fbd8568eaacb3d6e84f5588db2924f6660a437aa30b44170d403ebeeb7804a"
+    },
     "https://developer.apple.com/documentation/homekit/hmerrordomain": {
       "etag": "\"252a-65d55fa7768d0-df\"",
       "file_path": "documentation/HomeKit/hmerrordomain.md",
@@ -6215,6 +6240,11 @@
       "file_path": "documentation/HomeKit/hmservice/localizeddescription.md",
       "hash": "32cbd977fb09ca080acb49d1a0917afec321a5cbb9c516df1a61ae37ee9ec29c"
     },
+    "https://developer.apple.com/documentation/homekit/hmservice/matterendpointid-4egvi": {
+      "etag": "\"1515-65d55fa8bccff-df\"",
+      "file_path": "documentation/HomeKit/hmservice/matterendpointid-4egvi.md",
+      "hash": "d5a6e8db1960f63ecc799a87639c5c73af6715bc33795b38bc795cb93f808e23"
+    },
     "https://developer.apple.com/documentation/homekit/hmservice/matterendpointid-62vu6": {
       "etag": "\"1388-65d55fa8bccff-df\"",
       "file_path": "documentation/HomeKit/hmservice/matterendpointid-62vu6.md",
@@ -6805,6 +6835,11 @@
       "file_path": "documentation/HomeKit/enabling-homekit-in-your-app.md",
       "hash": "b2c392da619404f14b9bc7fb933065870d8f6d9aec69121d8cca71b0d390e21a"
     },
+    "https://developer.apple.com/tutorials/data/documentation/homekit/hm_extern.json": {
+      "etag": "\"9b9-65d55fa740d7b-df\"",
+      "file_path": "documentation/HomeKit/hm_extern.md",
+      "hash": "84d8a8ef7c54ec787cf8df64774e557e1fb4cc94e0a6f477c68d38836adc3d3a"
+    },
     "https://developer.apple.com/tutorials/data/documentation/homekit/hmaccesscontrol.json": {
       "etag": "\"44c7-65d55fa724835-df\"",
       "file_path": "documentation/HomeKit/hmaccesscontrol.md",
@@ -6844,6 +6879,11 @@
       "etag": "\"137f-65d55fa79211b-df\"",
       "file_path": "documentation/HomeKit/hmaccessory/hapinstanceid-3cusx.md",
       "hash": "0486f6365b5ebc339cecd68a84f5e7c75d2244e28cc0f39f21026444278fada9"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/homekit/hmaccessory/hapinstanceid-667fy.json": {
+      "etag": "\"1505-65d55fa7ab68f-df\"",
+      "file_path": "documentation/HomeKit/hmaccessory/hapinstanceid-667fy.md",
+      "hash": "d28a6a4997dece2d9f1ac4011f65b9cb6a23ea0c64019fd33b5c777519fa003d"
     },
     "https://developer.apple.com/tutorials/data/documentation/homekit/hmaccessory/home.json": {
       "etag": "\"1ec0-65d55fa7ab68f-df\"",
@@ -6954,6 +6994,11 @@
       "etag": "\"1b53-65d55fa79211b-df\"",
       "file_path": "documentation/HomeKit/hmaccessory/manufacturerfeatures.md",
       "hash": "c07cae5048296f7c4c53f5209f83deb42c44f7ba2c54bc8ea6fa8e8e4648cf1e"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/homekit/hmaccessory/matternodeid-5zfqo.json": {
+      "etag": "\"137f-65d55fa79211b-df\"",
+      "file_path": "documentation/HomeKit/hmaccessory/matternodeid-5zfqo.md",
+      "hash": "94fdcb7f5a6c510328ef1d5d1659b05f1c906fc13626a0b7a563f936edd4b6bd"
     },
     "https://developer.apple.com/tutorials/data/documentation/homekit/hmaccessory/matternodeid-67v1j.json": {
       "etag": "\"1373-65d55fa79211b-df\"",
@@ -8159,6 +8204,11 @@
       "etag": "\"395e-65d55fa62b778-df\"",
       "file_path": "documentation/HomeKit/hmcharacteristicpropertyrequiresauthorizationdata.md",
       "hash": "fcb431d941cee8a4e59b31ed22aa5e805e6face04a7dff2cf9a978ed39163b11"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/homekit/hmcharacteristicpropertysupportseventnotification-19wy1.json": {
+      "etag": "\"1ef6-65d55fa75a54b-df\"",
+      "file_path": "documentation/HomeKit/hmcharacteristicpropertysupportseventnotification-19wy1.md",
+      "hash": "540131af3bc4bfea823f0cd54439f0320d50080aa5db7f9b5be9f854e5f49cf6"
     },
     "https://developer.apple.com/tutorials/data/documentation/homekit/hmcharacteristicpropertysupportseventnotification-2f0ml.json": {
       "etag": "\"5852-65d55fa724835-df\"",
@@ -11670,6 +11720,11 @@
       "file_path": "documentation/HomeKit/hmerrorblock.md",
       "hash": "feeaba9e818932bf76ebd4d5218102f5b5a61b2dcf2d58c8fed69bc1dea241ff"
     },
+    "https://developer.apple.com/tutorials/data/documentation/homekit/hmerrorcode/hmerrorcodeincompatiblehomehub.json": {
+      "etag": "\"152f-65d55fa64f027-df\"",
+      "file_path": "documentation/HomeKit/hmerrorcode/hmerrorcodeincompatiblehomehub.md",
+      "hash": "a3fbd8568eaacb3d6e84f5588db2924f6660a437aa30b44170d403ebeeb7804a"
+    },
     "https://developer.apple.com/tutorials/data/documentation/homekit/hmerrordomain.json": {
       "etag": "\"252a-65d55fa7768d0-df\"",
       "file_path": "documentation/HomeKit/hmerrordomain.md",
@@ -12955,6 +13010,11 @@
       "file_path": "documentation/HomeKit/hmservice/localizeddescription.md",
       "hash": "32cbd977fb09ca080acb49d1a0917afec321a5cbb9c516df1a61ae37ee9ec29c"
     },
+    "https://developer.apple.com/tutorials/data/documentation/homekit/hmservice/matterendpointid-4egvi.json": {
+      "etag": "\"1515-65d55fa8bccff-df\"",
+      "file_path": "documentation/HomeKit/hmservice/matterendpointid-4egvi.md",
+      "hash": "d5a6e8db1960f63ecc799a87639c5c73af6715bc33795b38bc795cb93f808e23"
+    },
     "https://developer.apple.com/tutorials/data/documentation/homekit/hmservice/matterendpointid-62vu6.json": {
       "etag": "\"1388-65d55fa8bccff-df\"",
       "file_path": "documentation/HomeKit/hmservice/matterendpointid-62vu6.md",
@@ -13483,8 +13543,8 @@
   },
   "metadata": {
     "render": {
-      "version": 1
+      "version": 2
     },
-    "total_pages": 2696
+    "total_pages": 2708
   }
 }

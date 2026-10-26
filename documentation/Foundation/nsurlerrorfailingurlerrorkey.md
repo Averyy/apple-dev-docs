@@ -44,6 +44,8 @@ The corresponding value is an [`NSURL`](./nsurl.md) instance.
   The reason the network was unavailable for a task.
 - [URLError.NetworkUnavailableReason](./urlerror/networkunavailablereason-swift.enum.md)
   An enumeration of reasons explaining why a task couldn’t satisfy networking constraints.
+- [NSURLErrorNetworkUnavailableReason](./nsurlerrornetworkunavailablereason.md)
+  An enumeration of reasons why a task couldn’t satisfy networking constraints.
 
 
 ---

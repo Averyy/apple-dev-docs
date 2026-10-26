@@ -61,6 +61,7 @@ This document describes constants defined in the Core Media framework not define
 ### Reference
 - [Core Media Functions](./core-media-functions.md)
 - [Core Media Type Aliases](./core-media-type-aliases.md)
+- [Core Media Macros](./core-media-macros.md)
 
 
 ---

@@ -51,6 +51,10 @@ Queries an AudioObject about whether or not it has the given property.
 - [func AudioGetHostClockFrequency() -> Float64](./audiogethostclockfrequency%28%29.md)
 - [func AudioGetHostClockMinimumTimeDelta() -> UInt32](./audiogethostclockminimumtimedelta%28%29.md)
 - [func AudioHardwareCreateAggregateDevice(CFDictionary, UnsafeMutablePointer<AudioObjectID>) -> OSStatus](./audiohardwarecreateaggregatedevice%28_,_%29.md)
+- [AudioDriverPlugInClose](./audiodriverpluginclose.md)
+- [AudioDriverPlugInDeviceGetProperty](./audiodriverplugindevicegetproperty.md)
+- [AudioDriverPlugInDeviceGetPropertyInfo](./audiodriverplugindevicegetpropertyinfo.md)
+- [AudioDriverPlugInDeviceSetProperty](./audiodriverplugindevicesetproperty.md)
 
 
 ---

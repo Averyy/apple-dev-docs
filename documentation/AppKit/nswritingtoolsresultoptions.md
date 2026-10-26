@@ -38,6 +38,8 @@ When configuring a text view, specify what type of text input you want Writing T
 - [init(rawValue: UInt)](./nswritingtoolsresultoptions/init%28rawvalue%29.md)
 ### Type Properties
 - [static var presentationIntent: NSWritingToolsResultOptions](./nswritingtoolsresultoptions/presentationintent.md)
+### Enumeration Cases
+- [NSWritingToolsResultDefault](./nswritingtoolsresultoptions/nswritingtoolsresultdefault.md)
 
 ## Relationships
 
@@ -67,6 +69,12 @@ When configuring a text view, specify what type of text input you want Writing T
   A direction on the vertical axis.
 - [enum NSWritingToolsBehavior](./nswritingtoolsbehavior.md)
   Constants that specify the Writing Tools experience for the underlying view.
+- [NSCursorFrameResizeDirections](./nscursorframeresizedirections.md)
+  The directions in which a rectangular frame can be resized.
+- [NSHorizontalDirections](./nshorizontaldirections.md)
+  The absolute directions on the horizontal axis.
+- [NSVerticalDirections](./nsverticaldirections.md)
+  The directions on the vertical axis.
 
 
 ---

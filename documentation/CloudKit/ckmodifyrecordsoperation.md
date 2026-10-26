@@ -50,6 +50,8 @@ If you assign a completion handler to the [`completionBlock`](../Foundation/oper
   Creates an operation for modifying the specified records.
 - [init()](./ckmodifyrecordsoperation/init%28%29.md)
   Creates an empty modify records operation.
+- [- initWithRecordsToSave:recordIDsToDelete:](./ckmodifyrecordsoperation/initwithrecordstosave_recordidstodelete_.md)
+  Creates an operation for modifying the specified records.
 ### Configuring the Modify Record Operation
 - [var recordsToSave: [CKRecord]?](./ckmodifyrecordsoperation/recordstosave.md)
   The records to save to the database.
@@ -76,6 +78,10 @@ If you assign a completion handler to the [`completionBlock`](../Foundation/oper
 - [var perRecordDeleteBlock: ((CKRecord.ID, Result<Void, any Error>) -> Void)?](./ckmodifyrecordsoperation/perrecorddeleteblock-9czoo.md)
   The closure to execute when CloudKit deletes a record.
 - [var perRecordSaveBlock: ((CKRecord.ID, Result<CKRecord, any Error>) -> Void)?](./ckmodifyrecordsoperation/perrecordsaveblock-7yq9d.md)
+  The closure to execute when CloudKit saves a record.
+- [perRecordDeleteBlock](./ckmodifyrecordsoperation/perrecorddeleteblock-7gaqj.md)
+  The closure to execute when CloudKit deletes a record.
+- [perRecordSaveBlock](./ckmodifyrecordsoperation/perrecordsaveblock-80dn4.md)
   The closure to execute when CloudKit saves a record.
 
 ## Relationships

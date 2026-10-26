@@ -15,6 +15,36 @@
       "file_path": "documentation/CoreTelephony/cellulardatarestrictiondidupdatenotifier.md",
       "hash": "7ee9cef5e649d2973652d148e622c6ba6f82c37215ad774fc4b73b09d0e36d7d"
     },
+    "https://developer.apple.com/documentation/coretelephony/coretelephony-macros": {
+      "etag": "\"127f-6590284dae718-df\"",
+      "file_path": "documentation/CoreTelephony/coretelephony-macros.md",
+      "hash": "6f9046ace34c812aac8edc3555cafd8362ae10e7da0ac0c530bc57eb541dd28f"
+    },
+    "https://developer.apple.com/documentation/coretelephony/coretelephony_class_available": {
+      "etag": "\"13f8-65d55e9e52a94-df\"",
+      "file_path": "documentation/CoreTelephony/coretelephony_class_available.md",
+      "hash": "942ac353f9c343826b39185d2b58e5744dd95dda12e1f1593a8c00d2056cac3a"
+    },
+    "https://developer.apple.com/documentation/coretelephony/coretelephony_class_deprecated": {
+      "etag": "\"1489-65d55e9e2cc3e-df\"",
+      "file_path": "documentation/CoreTelephony/coretelephony_class_deprecated.md",
+      "hash": "9328cd58bf1889c7c7cddc1ddad6621171912e102e37ac8a6055eebc8bca1fc8"
+    },
+    "https://developer.apple.com/documentation/coretelephony/coretelephony_cpp_extern": {
+      "etag": "\"1375-65d55e9ebaf12-df\"",
+      "file_path": "documentation/CoreTelephony/coretelephony_cpp_extern.md",
+      "hash": "7c24e0f1e9dd04a2fc1a5bcbfc1a7c094fdf2490659fd410be5385d8e53a1ca9"
+    },
+    "https://developer.apple.com/documentation/coretelephony/coretelephony_extern": {
+      "etag": "\"135d-65d55e9e2cc3e-df\"",
+      "file_path": "documentation/CoreTelephony/coretelephony_extern.md",
+      "hash": "9820dd9485439f644a01162fb5dbaf8e16cfbf2c0607c2708a3a0bc99103a293"
+    },
+    "https://developer.apple.com/documentation/coretelephony/coretelephony_extern_class": {
+      "etag": "\"1381-65d55e9e52a94-df\"",
+      "file_path": "documentation/CoreTelephony/coretelephony_extern_class.md",
+      "hash": "690c7b0465b91c48618bb04c9a7dc9c5858fa5a151528318bb7a6a3a70cb00cf"
+    },
     "https://developer.apple.com/documentation/coretelephony/ctcall": {
       "etag": "\"48fa-65d55e9ea1758-df\"",
       "file_path": "documentation/CoreTelephony/ctcall.md",
@@ -194,6 +224,11 @@
       "etag": "\"45d7-65d55e9ea1758-df\"",
       "file_path": "documentation/CoreTelephony/ctcellularplanproperties/simcapability.md",
       "hash": "c5cc44ba298388a7dbe10bfb253ecea11968a497c64f1d1a36c72fe4b7c995f4"
+    },
+    "https://developer.apple.com/documentation/coretelephony/ctcellularplanproperties/supportedregioncodes-5elox": {
+      "etag": "\"2aeb-65d55e9ea1758-df\"",
+      "file_path": "documentation/CoreTelephony/ctcellularplanproperties/supportedregioncodes-5elox.md",
+      "hash": "7a5360d93240f82b0888110acc771ca9d205ee7241331fb9b7abecb612b5a80a"
     },
     "https://developer.apple.com/documentation/coretelephony/ctcellularplanproperties/supportedregioncodes-yhu5": {
       "etag": "\"32f9-65d55e9ea1758-df\"",
@@ -515,6 +550,11 @@
       "file_path": "documentation/CoreTelephony/ctradioaccesstechnologycdmaevdorevb.md",
       "hash": "98602fe3ecc1db041ecf8e41e0d85b6ba98ace70c564413b1bdb8f5de6fd5349"
     },
+    "https://developer.apple.com/documentation/coretelephony/ctradioaccesstechnologydidchangenotification": {
+      "etag": "\"40cb-65d55e9e52a94-df\"",
+      "file_path": "documentation/CoreTelephony/ctradioaccesstechnologydidchangenotification.md",
+      "hash": "094cd151cdd40e1b34139466b196ef374e96647ebb677716f5fd7903703a73e9"
+    },
     "https://developer.apple.com/documentation/coretelephony/ctradioaccesstechnologyedge": {
       "etag": "\"5bb7-65d55e9ebaf12-df\"",
       "file_path": "documentation/CoreTelephony/ctradioaccesstechnologyedge.md",
@@ -559,6 +599,11 @@
       "etag": "\"5bc2-65d55e9e52a94-df\"",
       "file_path": "documentation/CoreTelephony/ctradioaccesstechnologywcdma.md",
       "hash": "1c29d4bf1f5946645e574da7fa50b7350de95d1b311b4ac9e0f4beeafd4590ba"
+    },
+    "https://developer.apple.com/documentation/coretelephony/ctserviceradioaccesstechnologydidchangenotification": {
+      "etag": "\"3314-65d55e9ebaf12-df\"",
+      "file_path": "documentation/CoreTelephony/ctserviceradioaccesstechnologydidchangenotification.md",
+      "hash": "1b39f230d726683ed8ead4927f194a3c53c4998b55e846e8d6ba59bc1ead3959"
     },
     "https://developer.apple.com/documentation/coretelephony/ctslicingmanager": {
       "etag": "\"403f-65d55e9e2cc3e-df\"",
@@ -865,6 +910,36 @@
       "file_path": "documentation/CoreTelephony/cellulardatarestrictiondidupdatenotifier.md",
       "hash": "7ee9cef5e649d2973652d148e622c6ba6f82c37215ad774fc4b73b09d0e36d7d"
     },
+    "https://developer.apple.com/tutorials/data/documentation/coretelephony/coretelephony-macros.json": {
+      "etag": "\"127f-6590284dae718-df\"",
+      "file_path": "documentation/CoreTelephony/coretelephony-macros.md",
+      "hash": "6f9046ace34c812aac8edc3555cafd8362ae10e7da0ac0c530bc57eb541dd28f"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/coretelephony/coretelephony_class_available.json": {
+      "etag": "\"13f8-65d55e9e52a94-df\"",
+      "file_path": "documentation/CoreTelephony/coretelephony_class_available.md",
+      "hash": "942ac353f9c343826b39185d2b58e5744dd95dda12e1f1593a8c00d2056cac3a"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/coretelephony/coretelephony_class_deprecated.json": {
+      "etag": "\"1489-65d55e9e2cc3e-df\"",
+      "file_path": "documentation/CoreTelephony/coretelephony_class_deprecated.md",
+      "hash": "9328cd58bf1889c7c7cddc1ddad6621171912e102e37ac8a6055eebc8bca1fc8"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/coretelephony/coretelephony_cpp_extern.json": {
+      "etag": "\"1375-65d55e9ebaf12-df\"",
+      "file_path": "documentation/CoreTelephony/coretelephony_cpp_extern.md",
+      "hash": "7c24e0f1e9dd04a2fc1a5bcbfc1a7c094fdf2490659fd410be5385d8e53a1ca9"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/coretelephony/coretelephony_extern.json": {
+      "etag": "\"135d-65d55e9e2cc3e-df\"",
+      "file_path": "documentation/CoreTelephony/coretelephony_extern.md",
+      "hash": "9820dd9485439f644a01162fb5dbaf8e16cfbf2c0607c2708a3a0bc99103a293"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/coretelephony/coretelephony_extern_class.json": {
+      "etag": "\"1381-65d55e9e52a94-df\"",
+      "file_path": "documentation/CoreTelephony/coretelephony_extern_class.md",
+      "hash": "690c7b0465b91c48618bb04c9a7dc9c5858fa5a151528318bb7a6a3a70cb00cf"
+    },
     "https://developer.apple.com/tutorials/data/documentation/coretelephony/ctcall.json": {
       "etag": "\"48fa-65d55e9ea1758-df\"",
       "file_path": "documentation/CoreTelephony/ctcall.md",
@@ -1044,6 +1119,11 @@
       "etag": "\"45d7-65d55e9ea1758-df\"",
       "file_path": "documentation/CoreTelephony/ctcellularplanproperties/simcapability.md",
       "hash": "c5cc44ba298388a7dbe10bfb253ecea11968a497c64f1d1a36c72fe4b7c995f4"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/coretelephony/ctcellularplanproperties/supportedregioncodes-5elox.json": {
+      "etag": "\"2aeb-65d55e9ea1758-df\"",
+      "file_path": "documentation/CoreTelephony/ctcellularplanproperties/supportedregioncodes-5elox.md",
+      "hash": "7a5360d93240f82b0888110acc771ca9d205ee7241331fb9b7abecb612b5a80a"
     },
     "https://developer.apple.com/tutorials/data/documentation/coretelephony/ctcellularplanproperties/supportedregioncodes-yhu5.json": {
       "etag": "\"32f9-65d55e9ea1758-df\"",
@@ -1365,6 +1445,11 @@
       "file_path": "documentation/CoreTelephony/ctradioaccesstechnologycdmaevdorevb.md",
       "hash": "98602fe3ecc1db041ecf8e41e0d85b6ba98ace70c564413b1bdb8f5de6fd5349"
     },
+    "https://developer.apple.com/tutorials/data/documentation/coretelephony/ctradioaccesstechnologydidchangenotification.json": {
+      "etag": "\"40cb-65d55e9e52a94-df\"",
+      "file_path": "documentation/CoreTelephony/ctradioaccesstechnologydidchangenotification.md",
+      "hash": "094cd151cdd40e1b34139466b196ef374e96647ebb677716f5fd7903703a73e9"
+    },
     "https://developer.apple.com/tutorials/data/documentation/coretelephony/ctradioaccesstechnologyedge.json": {
       "etag": "\"5bb7-65d55e9ebaf12-df\"",
       "file_path": "documentation/CoreTelephony/ctradioaccesstechnologyedge.md",
@@ -1409,6 +1494,11 @@
       "etag": "\"5bc2-65d55e9e52a94-df\"",
       "file_path": "documentation/CoreTelephony/ctradioaccesstechnologywcdma.md",
       "hash": "1c29d4bf1f5946645e574da7fa50b7350de95d1b311b4ac9e0f4beeafd4590ba"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/coretelephony/ctserviceradioaccesstechnologydidchangenotification.json": {
+      "etag": "\"3314-65d55e9ebaf12-df\"",
+      "file_path": "documentation/CoreTelephony/ctserviceradioaccesstechnologydidchangenotification.md",
+      "hash": "1b39f230d726683ed8ead4927f194a3c53c4998b55e846e8d6ba59bc1ead3959"
     },
     "https://developer.apple.com/tutorials/data/documentation/coretelephony/ctslicingmanager.json": {
       "etag": "\"403f-65d55e9e2cc3e-df\"",
@@ -1703,8 +1793,8 @@
   },
   "metadata": {
     "render": {
-      "version": 1
+      "version": 2
     },
-    "total_pages": 340
+    "total_pages": 358
   }
 }

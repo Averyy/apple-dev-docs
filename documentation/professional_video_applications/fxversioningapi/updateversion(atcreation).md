@@ -22,7 +22,7 @@ func updateVersion(atCreation newVersion: UInt32) -> Bool
 
 ## Mentions
 
-- [Versioning and obsoleting old plug-ins](https://developer.apple.com/documentation/professional-video-applications/versioning-and-obsoleting-old-plug-ins)
+- [Versioning and obsoleting old plug-ins](../../Professional-Video-Applications/versioning-and-obsoleting-old-plug-ins.md)
 
 #### Return Value
 

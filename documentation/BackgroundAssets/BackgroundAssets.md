@@ -57,6 +57,18 @@ Alternatively, you can manage and host asset downloads yourself using the low-le
   The app group identifier that you share between your app and the extension that uses asset packs.
 - [BAHasManagedAssetPacks](../BundleResources/information-property-list/bahasmanagedassetpacks.md)
   A Boolean value that indicates whether you let the system automatically manage your asset packs.
+- [BAAssetPack](./baassetpack.md)
+  An archive of assets that the system downloads together.
+- [BAAssetPackStatus](./baassetpackstatus.md)
+  The status of an asset pack.
+- [BAAssetPackManager](./baassetpackmanager.md)
+  A class that manages asset packs.
+- [BAAssetPackManifest](./baassetpackmanifest.md)
+  A manifest of asset packs that are available to download.
+- [BAManagedDownloaderExtension](./bamanageddownloaderextension.md)
+  An application extension that uses the system implementation to schedule asset-pack downloads automatically.
+- [BAManagedAssetPackDownloadDelegate](./bamanagedassetpackdownloaddelegate.md)
+  An object that handles status updates when downloading an asset pack.
 ### Apple-hosted managed asset packs
 - [BAUsesAppleHosting](../BundleResources/information-property-list/bausesapplehosting.md)
   A Boolean value that indicates whether you use Apple’s service to host your asset packs.
@@ -85,6 +97,8 @@ Alternatively, you can manage and host asset downloads yourself using the low-le
   An object that represents a remote asset to download.
 - [class BADownload](./badownload.md)
   An object that represents an in-progress or concluded asset download.
+- [BADownloaderExtension](./badownloaderextension-zuvm.md)
+  An interface for reacting to app life-cycle events and processing concluded asset downloads while your app isn’t running.
 ### Errors
 - [enum ManagedBackgroundAssetsError](./managedbackgroundassetserror.md)
   An error for a managed asset pack.
@@ -92,9 +106,24 @@ Alternatively, you can manage and host asset downloads yourself using the low-le
 - [enum BAErrorCode](./baerrorcode.md)
 - [AssetPackManager.LocalAvailabilityError](./assetpackmanager/localavailabilityerror.md)
   An error that provides information about local asset pack availability, distinguishing between successes and failures.
+- [BAAssetPackIdentifierErrorKey](./baassetpackidentifiererrorkey.md)
+  The `-[NSError userInfo]` key for an asset pack’s identifier.
+- [BAManagedErrorDomain](./bamanagederrordomain.md)
+  The error domain for managed asset packs.
+- [BAManagedErrorCode](./bamanagederrorcode.md)
+  An error code for a managed asset pack.
 ### Enumerations
 - [enum SizeCalculationMethod](./sizecalculationmethod.md)
   Methods for calculating a file’s size.
+### Macros
+- [BA_EXPORT](./ba_export.md)
+- [BA_HIDDEN](./ba_hidden.md)
+- [BA_HIDDEN_EXTERN](./ba_hidden_extern.md)
+### Variables
+- [BAFailuresErrorKey](./bafailureserrorkey.md)
+  The `-[NSError userInfo]` key for the set of asset packs the local availability of which the system couldn’t ensure and their respective associated underlying errors.
+- [BASuccessesErrorKey](./basuccesseserrorkey.md)
+  The `-[NSError userInfo]` key for the set of asset packs the local availability of which the system successfully ensured.
 
 
 ---

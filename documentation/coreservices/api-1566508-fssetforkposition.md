@@ -1,0 +1,28 @@
+# FSSetForkPosition
+
+**Framework**: Core Services  
+**Kind**: func  
+**Role**: Function
+
+**Availability**:
+- macOS 10.0+ - Deprecated in 10.8
+
+## Declaration
+
+```c
+OSErr FSSetForkPosition(FSIORefNum forkRefNum, UInt16 positionMode, SInt64 positionOffset);
+```
+
+## See Also
+
+### Manipulating File Position
+- [FSGetForkPosition](./api-1565089-fsgetforkposition.md)
+- [PBSetForkPositionSync](./api-1566035-pbsetforkpositionsync.md)
+- [PBGetForkPositionSync](./api-1565594-pbgetforkpositionsync.md)
+- [PBGetForkPositionAsync](./api-1566418-pbgetforkpositionasync.md)
+- [PBSetForkPositionAsync](./api-1565887-pbsetforkpositionasync.md)
+
+
+---
+
+*[View on Apple Developer](https://developer.apple.com/documentation/coreservices/1566508-fssetforkposition)*

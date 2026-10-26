@@ -38,6 +38,8 @@ The Accounts framework provides access to user accounts stored in the Accounts d
 ### Deprecated
 - [Deprecated Symbols](./deprecated-symbols.md)
   Avoid using deprecated symbols in your apps.
+### Macros
+- [ACCOUNTS_EXTERN](./accounts_extern.md)
 
 
 ---

@@ -49,6 +49,10 @@ Use this property to get the precise temperature requested by the user. This pro
   A relative temperature setting.
 - [var climateZone: INCarSeat](./climatezone.md)
   The seat position to have its climate settings modified.
+- [enableClimateControl](./enableclimatecontrol-tviy.md)
+  A Boolean value indicating whether to turn on the climate control system.
+- [enableAutoMode](./enableautomode-6ye2n.md)
+  A Boolean value indicating whether to enable automatic mode for the climate control system.
 
 
 ---

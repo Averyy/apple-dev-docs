@@ -21,7 +21,7 @@ string reservationId
 
 #### Discussion
 
-Use a consistent, unique identifier for each reservation. If you also provide reservation information with [Siri Event Suggestions](../SiriKit/siri-event-suggestions.md) in your app, use a single, consistent value for that [`reservationNumber`](https://developer.apple.com/documentation/intents/inreservation/reservationnumber) and this `reservationId`.
+Use a consistent, unique identifier for each reservation. If you also provide reservation information with [Siri Event Suggestions](../SiriKit/siri-event-suggestions.md) in your app, use a single, consistent value for that [`reservationNumber`](../Intents/inreservation/reservationnumber.md) and this `reservationId`.
 
 ## See Also
 

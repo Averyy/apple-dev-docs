@@ -45,6 +45,12 @@ The data handle returned in the `result` parameter contains a text string format
   Allows you to encapsulate calls to `AEBuildDesc` in your own wrapper routines.
 - [func vAEBuildParameters(UnsafeMutablePointer<AppleEvent>!, UnsafeMutablePointer<AEBuildError>!, UnsafePointer<CChar>!, CVaListPointer) -> OSStatus](./api-1448040-vaebuildparameters.md)
   Allows you to encapsulate calls to `AEBuildParameters` in your own `stdarg`-style wrapper routines, using techniques similar to those allowed by vsprintf.
+- [AEBuildAppleEvent](./api-1573757-aebuildappleevent.md)
+  Constructs an entire Apple event in a single call.
+- [AEBuildDesc](./api-1573758-aebuilddesc.md)
+  Provides a facility for compiling AEBuild descriptor strings into Apple event descriptors (`AEDesc`).
+- [AEBuildParameters](./api-1573755-aebuildparameters.md)
+  Adds additional parameters or attributes to an existing Apple event.
 
 
 ---

@@ -127,6 +127,11 @@ The number and type of lights in a scene is a key factor in SceneKit’s renderi
 - [var sampleDistributedShadowMaps: Bool](./scnlight/sampledistributedshadowmaps.md)
 - [var shadowCascadeCount: Int](./scnlight/shadowcascadecount.md)
 - [var shadowCascadeSplittingFactor: CGFloat](./scnlight/shadowcascadesplittingfactor.md)
+### Creating a Light
+- [+ light](./scnlight/light.md)
+  Creates a new light object.
+- [+ lightWithMDLLight:](./scnlight/lightwithmdllight_.md)
+  Creates a light from the specified Model I/O light object.
 
 ## Relationships
 

@@ -27,6 +27,8 @@ static simd_short4 simd_make_short4(short x, short y, simd_short2 zw);
   Returns a new vector from a scalar value, a vector, and a scalar value.
 - [func simd_make_short4(Int16, simd_short3) -> simd_short4](./simd_make_short4%28_,_%29-46aby.md)
   Returns a new vector from a scalar value and a vector.
+- [vector4](./vector4-8l9kg.md)
+  Returns a new vector from a vector and a scalar value.
 
 
 ---

@@ -87,6 +87,8 @@ ASCredentialIdentityStore *store = [ASCredentialIdentityStore sharedStore];
   An identifier representing a particular service for which the user needs a credential, like a web site.
 - [ASCredentialIdentityStore.IdentityTypes](./ascredentialidentitystore/identitytypes.md)
   The defined identity types for use in retrieving credentials.
+- [- getCredentialIdentitiesForService:credentialIdentityTypes:completionHandler:](./ascredentialidentitystore/getcredentialidentitiesforservice_credentialidentitytypes_completionhandler_.md)
+  Retrieves an array of all previously saved credential identities in the store for your extension.
 ### Recognizing errors
 - [struct ASCredentialIdentityStoreError](./ascredentialidentitystoreerror.md)
   A credential identity store error.

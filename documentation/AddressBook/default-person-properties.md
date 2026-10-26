@@ -68,6 +68,16 @@ You can add your own properties with the `ABPerson` method [`addPropertiesAndTyp
   Title, such as “Mr.,” “Mrs.,” “General,” “Cardinal,” or “Lord.” Type: [`kABStringProperty`](./kabstringproperty.md).
 - [let kABSuffixProperty: String](./kabsuffixproperty.md)
   Suffix, such as “Sr.,” “Jr.,” “III.,” or “Esq.” Type: [`kABStringProperty`](./kabstringproperty.md).
+- [kABAIMInstantProperty](./kabaiminstantproperty.md)
+  AOL instant messaging ID. Type: [`kABMultiStringProperty`](./kabmultistringproperty.md).
+- [kABJabberInstantProperty](./kabjabberinstantproperty.md)
+  Jabber instant messaging ID. Type: [`kABMultiStringProperty`](./kabmultistringproperty.md).
+- [kABMSNInstantProperty](./kabmsninstantproperty.md)
+  MSN instant messaging ID. Type: [`kABMultiStringProperty`](./kabmultistringproperty.md).
+- [kABYahooInstantProperty](./kabyahooinstantproperty.md)
+  Yahoo instant messaging ID. Type: [`kABMultiStringProperty`](./kabmultistringproperty.md).
+- [kABICQInstantProperty](./kabicqinstantproperty.md)
+  ICQ instant messaging ID. Type: [`kABMultiStringProperty`](./kabmultistringproperty.md).
 
 ## See Also
 

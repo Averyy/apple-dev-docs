@@ -66,6 +66,10 @@ Divider indices are zero-based. If the [`isVertical`](./nssplitview/isvertical.m
   The thickness of the dividers for the split view.
 - [func drawDivider(in: NSRect)](./nssplitview/drawdivider%28in%29.md)
   Draws a divider between two of the split view’s subviews.
+- [- isPaneSplitter](./nssplitview/ispanesplitter.md)
+  The type of pane splitter.
+- [- setIsPaneSplitter:](./nssplitview/setispanesplitter_.md)
+  Sets the type of splitter.
 ### Saving Subview Positions
 - [var autosaveName: NSSplitView.AutosaveName?](./nssplitview/autosavename-swift.property.md)
   The name to use when the system automatically saves the split view’s divider configuration.

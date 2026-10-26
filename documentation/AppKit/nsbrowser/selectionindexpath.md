@@ -38,6 +38,8 @@ When the value of this property is `nil`, there is no selection.
   Selects the cell at the specified row and column index.
 - [var selectionIndexPaths: [IndexPath]](./selectionindexpaths.md)
   An array containing the index paths of all items selected in the browser.
+- [selectedCell](./selectedcell.md)
+  The last (rightmost and lowest) selected cell.
 
 
 ---

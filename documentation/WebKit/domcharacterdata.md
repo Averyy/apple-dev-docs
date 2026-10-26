@@ -28,6 +28,10 @@ class DOMCharacterData
 - [func insertData(UInt32, data: String!)](./domcharacterdata/insertdata%28_,data%29.md)
 - [func replaceData(UInt32, length: UInt32, data: String!)](./domcharacterdata/replacedata%28_,length,data%29.md)
 - [func substringData(UInt32, length: UInt32) -> String!](./domcharacterdata/substringdata%28_,length%29.md)
+- [- deleteData::](./domcharacterdata/deletedata__.md)
+- [- insertData::](./domcharacterdata/insertdata__.md)
+- [- replaceData:::](./domcharacterdata/replacedata___.md)
+- [- substringData::](./domcharacterdata/substringdata__.md)
 
 ## Relationships
 

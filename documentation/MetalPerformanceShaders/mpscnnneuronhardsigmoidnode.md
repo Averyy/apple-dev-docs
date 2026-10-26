@@ -29,6 +29,9 @@ class MPSCNNNeuronHardSigmoidNode
 ### Initializers
 - [init(source: MPSNNImageNode, a: Float, b: Float)](./mpscnnneuronhardsigmoidnode/init%28source,a,b%29.md)
 - [init(source: MPSNNImageNode)](./mpscnnneuronhardsigmoidnode/init%28source%29.md)
+### Type Methods
+- [+ nodeWithSource:a:b:](./mpscnnneuronhardsigmoidnode/nodewithsource_a_b_.md)
+- [+ nodeWithSource:](./mpscnnneuronhardsigmoidnode/nodewithsource_.md)
 
 ## Relationships
 

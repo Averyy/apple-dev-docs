@@ -54,7 +54,7 @@ For more information about steps above, please see [Transferring your apps and u
 There are two ways of obtaining access tokens for user migration:
 
 - fetching the access token for the entire developer team; or
-- using the access token received for each user when [validating auth or refresh tokens](https://developer.apple.com/documentation/signinwithapplerestapi/generate-and-validate-tokens) after the user authorization.
+- using the access token received for each user when [validating auth or refresh tokens](../SigninwithAppleRESTAPI/generate-and-validate-tokens.md) after the user authorization.
 
 The request below fetches the access token for Team A. The request also contains the following:
 
@@ -110,7 +110,7 @@ For more information about steps above, please see [https://developer.apple.com/
 There are two ways of obtaining access tokens for user migration:
 
 - fetching the access token for the entire developer team; or
-- using the access token received for each user when [validating auth or refresh tokens](https://developer.apple.com/documentation/signinwithapplerestapi/generate-and-validate-tokens) after the user authorization.
+- using the access token received for each user when [validating auth or refresh tokens](../SigninwithAppleRESTAPI/generate-and-validate-tokens.md) after the user authorization.
 
 The request below fetches the access token for Team B. The request also contains the following:
 

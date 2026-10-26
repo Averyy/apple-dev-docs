@@ -28,6 +28,8 @@ If the system decodes the asset using a MediaExtension format reader, the proper
 ### Accessing Media Extension properties
 - [class AVMediaExtensionProperties](../avmediaextensionproperties.md)
   An object that describes a Media Extension.
+- [sidecarURL](./sidecarurl.md)
+  The sidecar URL used by the MediaExtension.
 
 
 ---

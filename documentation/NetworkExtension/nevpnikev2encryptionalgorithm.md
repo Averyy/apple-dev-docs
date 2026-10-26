@@ -39,6 +39,9 @@ enum NEVPNIKEv2EncryptionAlgorithm : NSInteger;
   ChaCha20 and Poly1305 (ChaCha20Poly1305).
 ### Initializers
 - [init?(rawValue: Int)](./nevpnikev2encryptionalgorithm/init%28rawvalue%29.md)
+### Enumeration Cases
+- [NEVPNIKEv2EncryptionAlgorithm3DES](./nevpnikev2encryptionalgorithm/nevpnikev2encryptionalgorithm3des.md)
+- [NEVPNIKEv2EncryptionAlgorithmDES](./nevpnikev2encryptionalgorithm/nevpnikev2encryptionalgorithmdes.md)
 
 ## Relationships
 
@@ -68,6 +71,8 @@ enum NEVPNIKEv2EncryptionAlgorithm : NSInteger;
   A list of the quantum-secure key exchange methods the Security Association uses.
 - [enum NEVPNIKEv2PostQuantumKeyExchangeMethod](./nevpnikev2postquantumkeyexchangemethod.md)
   Quantum-secure key exchange methods you use with IKEv2 servers.
+- [postQuantumKeyExchangeMethods](./nevpnikev2securityassociationparameters/postquantumkeyexchangemethods-56672.md)
+  A list of the quantum-secure key exchange methods the Security Association uses.
 
 
 ---

@@ -59,6 +59,8 @@ For design guidance, see [Human Interface Guidelines](https://developer.apple.co
   Returns a new font descriptor that’s the same as the existing font descriptor, but with the specified point size.
 - [func withSymbolicTraits(UIFontDescriptor.SymbolicTraits) -> UIFontDescriptor?](./uifontdescriptor/withsymbolictraits%28_%29.md)
   Returns a new font descriptor that’s the same as the existing font descriptor, but with the specified symbolic traits.
+- [+ fontDescriptorWithFontAttributes:](./uifontdescriptor/fontdescriptorwithfontattributes_.md)
+  Returns a font descriptor with a dictionary of attributes.
 ### Initializing a font descriptor
 - [init(fontAttributes: [UIFontDescriptor.AttributeName : Any])](./uifontdescriptor/init%28fontattributes%29.md)
   Creates a font descriptor with the specified attributes.

@@ -40,6 +40,10 @@ A text style rule object initialized with the specified attributes and range inf
   Creates an array of text style rule objects from the specified property-list object.
 - [convenience init?(textMarkupAttributes: [String : Any])](./init%28textmarkupattributes%29.md)
   Creates a text style rule object with the specified style attributes.
+- [+ textStyleRuleWithTextMarkupAttributes:](./textstylerulewithtextmarkupattributes_.md)
+  Creates a new text style rule object using the style attributes in the specified dictionary.
+- [+ textStyleRuleWithTextMarkupAttributes:textSelector:](./textstylerulewithtextmarkupattributes_textselector_.md)
+  Creates a new text style rule object using the specified style attributes and text range information.
 
 
 ---

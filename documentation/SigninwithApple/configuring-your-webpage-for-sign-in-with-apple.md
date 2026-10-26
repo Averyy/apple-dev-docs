@@ -23,7 +23,7 @@ Embedding the framework gives you access to the Sign in with Apple authorization
 
 To get started quickly, configure Sign in with Apple JS with a default markup setup. Alternatively, use JavaScript to configure the authorization object, or use a combination of the two.
 
-Configure the authorization object using only markup by setting the meta tags in the header section and displaying a Sign in with Apple button. For more information about the client configuration, see [`ClientConfigI`](https://developer.apple.com/documentation/signinwithapplejs/clientconfigi).
+Configure the authorization object using only markup by setting the meta tags in the header section and displaying a Sign in with Apple button. For more information about the client configuration, see [`ClientConfigI`](../SigninwithAppleJS/clientconfigi.md).
 
 ```html
 <html>
@@ -73,12 +73,12 @@ Additionally, you can combine the two configuration options: you can set the met
 
 ##### Handle the Authorization Response
 
-After the user clicks the Sign in with Apple button, the framework sends the authorization information to Apple. Apple processes the authorization request, and sends an HTTP POST request containing the results of the authorization to the URL provided in [`redirectURI`](https://developer.apple.com/documentation/signinwithapplejs/clientconfigi/redirecturi). The HTTP body contains the result parameters with a content-type of `application/x-www-form-urlencoded`. A successful response contains the following parameters:
+After the user clicks the Sign in with Apple button, the framework sends the authorization information to Apple. Apple processes the authorization request, and sends an HTTP POST request containing the results of the authorization to the URL provided in [`redirectURI`](../SigninwithAppleJS/clientconfigi/redirecturi.md). The HTTP body contains the result parameters with a content-type of `application/x-www-form-urlencoded`. A successful response contains the following parameters:
 
-- **`code`**: A single-use authentication code that expires after five minutes. To learn how to validate this code to obtain user tokens, see [`Token validation`](https://developer.apple.com/documentation/signinwithapplerestapi/generate-and-validate-tokens).
-- **`id_token`**: A JSON web token (JWT) containing the user’s identification information. For more information, see [`id_token`](https://developer.apple.com/documentation/signinwithapplejs/authorizationi/id_token).
-- **`state`**: An arbitrary string  passed by the [`init`](https://developer.apple.com/documentation/signinwithapplejs/authi/init) function, representing the current state of the authorization request. This value is also used to mitigate cross-site request forgery attacks, by comparing against the state value contained in the authorization response.
-- **`user`**: A JSON string containing the data requested in the [`scope`](https://developer.apple.com/documentation/signinwithapplejs/clientconfigi/scope) property. The returned data is in the following format:
+- **`code`**: A single-use authentication code that expires after five minutes. To learn how to validate this code to obtain user tokens, see [`Token validation`](../SigninwithAppleRESTAPI/generate-and-validate-tokens.md).
+- **`id_token`**: A JSON web token (JWT) containing the user’s identification information. For more information, see [`id_token`](../SigninwithAppleJS/authorizationi/id_token.md).
+- **`state`**: An arbitrary string  passed by the [`init`](../SigninwithAppleJS/authi/init.md) function, representing the current state of the authorization request. This value is also used to mitigate cross-site request forgery attacks, by comparing against the state value contained in the authorization response.
+- **`user`**: A JSON string containing the data requested in the [`scope`](../SigninwithAppleJS/clientconfigi/scope.md) property. The returned data is in the following format:
 
 `{ "name": { "firstName": string, "lastName": string }, "email": string }`
 
@@ -87,7 +87,7 @@ After the user clicks the Sign in with Apple button, the framework sends the aut
 If an error occurs, the HTTP body contains the following parameters:
 
 - **`error`**: The returned error code.
-- **`state`**: The state passed by the [`init`](https://developer.apple.com/documentation/signinwithapplejs/authi/init) function. Compare against the state value provided in the initial authorization request to mitigate cross-site request forgery attacks.
+- **`state`**: The state passed by the [`init`](../SigninwithAppleJS/authi/init.md) function. Compare against the state value provided in the initial authorization request to mitigate cross-site request forgery attacks.
 
 > **Note**:  Currently, the only error code returned is `user_cancelled_authorize`. The framework returns this error code when the user clicks the Cancel button.
 
@@ -109,9 +109,9 @@ document.addEventListener('AppleIDSignInOnFailure', (event) => {
 });
 ```
 
-If the [`signIn`](https://developer.apple.com/documentation/signinwithapplejs/authi/signin) function started the authorization process, the function returns a promise object that resolves if the authorization succeeds. If the authorization fails, the function rejects the promise object.
+If the [`signIn`](../SigninwithAppleJS/authi/signin.md) function started the authorization process, the function returns a promise object that resolves if the authorization succeeds. If the authorization fails, the function rejects the promise object.
 
-Here’s an example of how to handle the response when using the [`signIn`](https://developer.apple.com/documentation/signinwithapplejs/authi/signin) function.
+Here’s an example of how to handle the response when using the [`signIn`](../SigninwithAppleJS/authi/signin.md) function.
 
 ```javascript
 try {

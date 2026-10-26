@@ -58,6 +58,8 @@ The extension reports the status of discovered devices to the system using the [
   An identifier to communicate with the device through Bluetooth wireless technology.
 - [var networkEndpoint: NWEndpoint?](./dddevice/networkendpoint-3lah1.md)
   An object that describes a local-network device.
+- [networkEndpoint](./dddevice/networkendpoint-7excg.md)
+  An object that describes a local-network device.
 ### Setting the device state
 - [var state: DDDeviceState](./dddevice/state.md)
   A state that represents the level of user interaction with the device.
@@ -67,6 +69,8 @@ The extension reports the status of discovered devices to the system using the [
   A resource locator for the simple service discovery protocol.
 - [var supportsGrouping: Bool](./dddevice/supportsgrouping.md)
   A Boolean value that indicates whether to group the device with others in the AirPlay UI.
+- [txtRecordData](./dddevice/txtrecorddata.md)
+  A dictionary of metadata for the device that the extension communicates with over the local network.
 ### Communicating device content and playback status
 - [var mediaContentTitle: String?](./dddevice/mediacontenttitle.md)
   A title for the current media that the device plays.

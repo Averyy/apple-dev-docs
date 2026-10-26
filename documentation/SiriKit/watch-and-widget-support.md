@@ -10,7 +10,7 @@ Display relevant shortcuts on the Siri watch face.
 
 #### Overview
 
-An [`INRelevantShortcut`](https://developer.apple.com/documentation/intents/inrelevantshortcut) describes an action that might be useful or meaningful to the user within a particular context. For instance, a user might want to start a workout when they arrive at the gym, meditate in the morning, or find out about a new episode of their favorite TV show as soon it’s available. The system uses the shortcut’s relevance providers, as well as other signals, to determine when the shortcut is likely relevant to the user.
+An [`INRelevantShortcut`](../Intents/inrelevantshortcut.md) describes an action that might be useful or meaningful to the user within a particular context. For instance, a user might want to start a workout when they arrive at the gym, meditate in the morning, or find out about a new episode of their favorite TV show as soon it’s available. The system uses the shortcut’s relevance providers, as well as other signals, to determine when the shortcut is likely relevant to the user.
 
 > ❗ **Important**: The Siri Watch Face is available in watchOS 11 and earlier. To make content available in the Smart Stack on Apple Watch using widgets, refer to [WidgetKit](../WidgetKit/WidgetKit.md), [Increasing the visibility of widgets in Smart Stacks](../WidgetKit/widget-suggestions-in-smart-stacks.md), and [App Intents](../AppIntents/AppIntents.md). For more information about migrating your SiriKit code to App Intents, refer to [Migrating widgets from SiriKit Intents to App Intents](../WidgetKit/migrating-from-sirikit-intents-to-app-intents.md) and [Soup Chef with App Intents: Migrating custom intents](./soup-chef-with-app-intents-migrating-custom-intents.md).
 
@@ -23,22 +23,22 @@ Users can collect multiple widgets into a Smart Stack. A Smart Stack rotates to 
 ### Siri watch face
 - [Displaying Shortcut Information in a Siri Watch Face Card](./displaying-shortcut-information-in-a-siri-watch-face-card.md)
   Display and customize watch-specific shortcut information with a default card template.
-- [class INDefaultCardTemplate](https://developer.apple.com/documentation/intents/indefaultcardtemplate)
+- [class INDefaultCardTemplate](../Intents/indefaultcardtemplate.md)
   A card template for customizing the Siri watch face for a shortcut.
 - [Defining Relevant Shortcuts for the Siri Watch Face](./defining-relevant-shortcuts-for-the-siri-watch-face.md)
   Inform Siri when your app’s shortcuts may be useful to the user.
-- [class INRelevantShortcut](https://developer.apple.com/documentation/intents/inrelevantshortcut)
+- [class INRelevantShortcut](../Intents/inrelevantshortcut.md)
   An object that defines a shortcut and its relevance to the user.
-- [class INRelevantShortcutStore](https://developer.apple.com/documentation/intents/inrelevantshortcutstore)
+- [class INRelevantShortcutStore](../Intents/inrelevantshortcutstore.md)
   An object that saves relevant shortcuts.
 ### Relevance Providers
-- [class INRelevanceProvider](https://developer.apple.com/documentation/intents/inrelevanceprovider)
+- [class INRelevanceProvider](../Intents/inrelevanceprovider.md)
   An abstract class that represents a relevance provider.
-- [class INDailyRoutineRelevanceProvider](https://developer.apple.com/documentation/intents/indailyroutinerelevanceprovider)
+- [class INDailyRoutineRelevanceProvider](../Intents/indailyroutinerelevanceprovider.md)
   The provider class that specifies a relevant daily routine.
-- [class INDateRelevanceProvider](https://developer.apple.com/documentation/intents/indaterelevanceprovider)
+- [class INDateRelevanceProvider](../Intents/indaterelevanceprovider.md)
   The provider class that specifies a relevant day and time.
-- [class INLocationRelevanceProvider](https://developer.apple.com/documentation/intents/inlocationrelevanceprovider)
+- [class INLocationRelevanceProvider](../Intents/inlocationrelevanceprovider.md)
   The provider class that specifies a relevant location.
 
 ## See Also
@@ -58,21 +58,23 @@ Users can collect multiple widgets into a Smart Stack. A Smart Stack rotates to 
   Integrating App Intents to provide your appʼs actions to Siri and Shortcuts.
 - [Adding Shortcuts for Wind Down](./adding-shortcuts-for-wind-down.md)
   Reveal your app’s shortcuts inside the Health app.
-- [class INShortcutReference](https://developer.apple.com/documentation/intents/inshortcutreference)
+- [class INShortcutReference](../Intents/inshortcutreference.md)
   An object representing an action available in your app that the system may suggest to a user or a user may add to Siri.
-- [class INInteraction](https://developer.apple.com/documentation/intents/ininteraction)
+- [class INInteraction](../Intents/ininteraction.md)
   An interaction between the user and your app involving an intent object.
-- [enum INShortcut](https://developer.apple.com/documentation/intents/inshortcut-swift.enum)
+- [enum INShortcut](../Intents/inshortcut-swift.enum.md)
   An action available in your app that the system may suggest to a user or a user may add to Siri.
-- [class INVoiceShortcutCenter](https://developer.apple.com/documentation/intents/invoiceshortcutcenter)
+- [class INVoiceShortcutCenter](../Intents/invoiceshortcutcenter.md)
   Retrieve the user’s shortcuts and make shortcut suggestions.
-- [class INVoiceShortcut](https://developer.apple.com/documentation/intents/invoiceshortcut)
+- [class INVoiceShortcut](../Intents/invoiceshortcut.md)
   A shortcut the user added to Siri.
-- [struct INShortcutAvailabilityOptions](https://developer.apple.com/documentation/intents/inshortcutavailabilityoptions)
+- [struct INShortcutAvailabilityOptions](../Intents/inshortcutavailabilityoptions.md)
   Defined contexts in which an intent or activity might be relevant to a user.
-- [class INShortcutReference](https://developer.apple.com/documentation/intents/inshortcutreference)
+- [class INShortcutReference](../Intents/inshortcutreference.md)
   An object representing an action available in your app that the system may suggest to a user or a user may add to Siri.
-- [class INIntentDonationMetadata](https://developer.apple.com/documentation/intents/inintentdonationmetadata)
+- [class INIntentDonationMetadata](../Intents/inintentdonationmetadata.md)
+- [Siri Event Suggestions](./siri-event-suggestions.md)
+  Provide users with current, actionable information connected to a reservation.
 
 
 ---

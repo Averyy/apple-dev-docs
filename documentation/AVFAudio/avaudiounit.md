@@ -33,6 +33,8 @@ class AVAudioUnit
   Provides scoped access to the audio unit’s AudioUnit
 - [var audioUnit: AudioUnit](./avaudiounit/audiounit-5vuo0.md)
 - [var audioUnit: AudioUnit](./avaudiounit/audiounit-7dsac.md)
+- [audioUnit](./avaudiounit/audiounit-4wpas.md)
+  The underlying Core Audio audio unit.
 ### Loading an audio preset file
 - [func loadPreset(at: URL) throws](./avaudiounit/loadpreset%28at%29.md)
   Loads an audio unit using a specified preset.
@@ -48,6 +50,8 @@ class AVAudioUnit
   The name of the audio unit.
 - [var version: Int](./avaudiounit/version.md)
   The version number of the audio unit.
+- [AUAudioUnit](./avaudiounit/auaudiounit.md)
+  The audio unit class wrapping or underlying the implementation’s audio unit.
 
 ## Relationships
 

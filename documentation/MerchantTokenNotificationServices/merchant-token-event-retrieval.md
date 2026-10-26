@@ -12,7 +12,7 @@ Get the details of a merchant token event after receiving a notification.
 
 ## Mentions
 
-- [Receiving and handling merchant token notifications](https://developer.apple.com/documentation/applepaymerchanttokenmanagementapi/receiving-and-handling-merchant-token-notifications)
+- [Receiving and handling merchant token notifications](../ApplePayMerchantTokenManagementAPI/receiving-and-handling-merchant-token-notifications.md)
 
 #### Discussion
 

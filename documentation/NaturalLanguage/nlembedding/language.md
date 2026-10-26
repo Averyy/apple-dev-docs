@@ -38,6 +38,10 @@ var language: NLLanguage? { get }
   Requests the vector for the given term.
 - [var revision: Int](./revision.md)
   The revision of the word embedding.
+- [- vectorForString:](./vectorforstring_.md)
+  Requests the vector for the given term.
+- [- getVector:forString:](./getvector_forstring_.md)
+  Copies a vector into the given a pointer to a float array.
 
 
 ---

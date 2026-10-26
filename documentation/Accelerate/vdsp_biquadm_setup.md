@@ -30,6 +30,10 @@ typedef struct vDSP_biquadm_SetupStruct * vDSP_biquadm_Setup;
 ### Creating a multichannel biquadratic filter setup
 - [typealias vDSP_biquadm_SetupD](./vdsp_biquadm_setupd.md)
   A data structure that contains precalculated data for use by a double-precision, multichannel cascaded biquadratic filter function.
+- [vDSP_biquadm_CreateSetup](./vdsp_biquadm_createsetup.md)
+  Builds a data structure that contains precalculated data for use by a single-precision, multichannel cascaded biquadratic filter function.
+- [vDSP_biquadm_CreateSetupD](./vdsp_biquadm_createsetupd.md)
+  Builds a data structure that contains precalculated data for use by a double-precision, multichannel cascaded biquadratic filter function.
 
 
 ---

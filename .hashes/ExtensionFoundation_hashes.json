@@ -40,6 +40,11 @@
       "file_path": "documentation/ExtensionFoundation/appextension/extensionpoint.md",
       "hash": "580b80e22daa0e52ed3aadbe225fc687ddbc0c1f86317705d735e07a791b0290"
     },
+    "https://developer.apple.com/documentation/extensionfoundation/appextension/extensionpoint-y2zv": {
+      "etag": "\"16db-65d5603a3e4b3-df\"",
+      "file_path": "documentation/ExtensionFoundation/appextension/extensionpoint-y2zv.md",
+      "hash": "6647f3725d6fee438345f0147b623fe815ebf93a7e4889347088c28e3391f072"
+    },
     "https://developer.apple.com/documentation/extensionfoundation/appextension/identifier": {
       "etag": "\"1619-65d5603a3e4b3-df\"",
       "file_path": "documentation/ExtensionFoundation/appextension/identifier.md",
@@ -515,6 +520,11 @@
       "file_path": "documentation/ExtensionFoundation/appextension/configuration-swift.property.md",
       "hash": "8f60aef4e8146319135230e3a0ffd6693dfc0acc937718c50c73127629d69feb"
     },
+    "https://developer.apple.com/tutorials/data/documentation/extensionfoundation/appextension/extensionpoint-y2zv.json": {
+      "etag": "\"16db-65d5603a3e4b3-df\"",
+      "file_path": "documentation/ExtensionFoundation/appextension/extensionpoint-y2zv.md",
+      "hash": "6647f3725d6fee438345f0147b623fe815ebf93a7e4889347088c28e3391f072"
+    },
     "https://developer.apple.com/tutorials/data/documentation/extensionfoundation/appextension/extensionpoint.json": {
       "etag": "\"1ee8-65d5603a3e4b3-df\"",
       "file_path": "documentation/ExtensionFoundation/appextension/extensionpoint.md",
@@ -963,8 +973,8 @@
   },
   "metadata": {
     "render": {
-      "version": 1
+      "version": 2
     },
-    "total_pages": 192
+    "total_pages": 194
   }
 }

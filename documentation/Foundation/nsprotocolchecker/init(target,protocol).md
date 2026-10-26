@@ -24,6 +24,12 @@ init(target anObject: NSObject, protocol aProtocol: Protocol)
 
 Thus, the checker can be vended in lieu of `anObject` to restrict the messages that can be sent to `anObject`. If `anObject` is allowed to be freed or dereferenced by clients, the `free` method should be included in `aProtocol`.
 
+## See Also
+
+### Creating a checker
+- [+ protocolCheckerWithTarget:protocol:](./protocolcheckerwithtarget_protocol_.md)
+  Allocates and initializes an `NSProtocolChecker` instance that will forward any messages in `aProtocol` to `anObject`, the protocol checker’s target.
+
 
 ---
 

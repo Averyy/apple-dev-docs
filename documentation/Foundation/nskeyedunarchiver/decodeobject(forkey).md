@@ -61,6 +61,8 @@ The object associated with the key `key`. Returns `nil` if `key` does not exist,
   Tells the receiver that you are finished decoding objects.
 - [var decodingFailurePolicy: NSCoder.DecodingFailurePolicy](./decodingfailurepolicy.md)
   The action to take when this unarchiver fails to decode an entry.
+- [- decodeIntForKey:](./decodeintforkey_.md)
+  Decodes an integer value associated with a given key.
 
 
 ---

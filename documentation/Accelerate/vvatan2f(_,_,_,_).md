@@ -119,6 +119,36 @@ printf("[%g, %g, %g]\n", z[0], z[1], z[2]);
   Returns the arctangent of each pair of elements in two vectors of single-precision values.
 - [static func atan2<T, U, V>(x: T, y: U, result: inout V)](./vforce/atan2%28x,y,result%29-184b6.md)
   Calculates the arctangent of each pair of elements in two vectors of double-precision values.
+- [vvsin](./vvsin%28_,_,_%29.md)
+  Calculates the sine of each element in an array of double-precision values.
+- [vvsinf](./vvsinf%28_,_,_%29.md)
+  Calculates the sine of each element in an array of single-precision values.
+- [vvsinpi](./vvsinpi%28_,_,_%29.md)
+  Calculates the sine of pi multiplied by each element in an array of double-precision values.
+- [vvsinpif](./vvsinpif%28_,_,_%29.md)
+  Calculates the sine of pi multiplied by each element in an array of single-precision values.
+- [vvcos](./vvcos%28_,_,_%29.md)
+  Calculates the cosine of each element in an array of double-precision values.
+- [vvcosf](./vvcosf%28_,_,_%29.md)
+  Calculates the cosine of each element in an array of single-precision values.
+- [vvcospi](./vvcospi%28_,_,_%29.md)
+  Calculates the cosine of pi multiplied by each element in an array of double-precision values.
+- [vvcospif](./vvcospif%28_,_,_%29.md)
+  Calculates the cosine of pi multiplied by each element in an array of single-precision values.
+- [vvcosisin](./vvcosisin%28_,_,_%29.md)
+  Calculates the cosine and sine of each element in an array of double-precision values.
+- [vvcosisinf](./vvcosisinf%28_,_,_%29.md)
+  Calculates the cosine and sine of each element in an array of single-precision values.
+- [vvsincos](./vvsincos%28_,_,_,_%29.md)
+  Calculates the cosine and sine of each element in an array of double-precision values.
+- [vvsincosf](./vvsincosf%28_,_,_,_%29.md)
+  Calculates the cosine and sine of each element in an array of single-precision values.
+- [vvtan](./vvtan%28_,_,_%29.md)
+  Calculates the tangent of each element in an array of double-precision values.
+- [vvtanf](./vvtanf%28_,_,_%29.md)
+  Calculates the tangent of each element in an array of single-precision values.
+- [vvtanpi](./vvtanpi%28_,_,_%29.md)
+  Calculates the tangent of pi multiplied by each element in an array of double-precision values.
 
 
 ---

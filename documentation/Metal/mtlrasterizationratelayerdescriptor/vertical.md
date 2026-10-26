@@ -35,6 +35,10 @@ var vertical: MTLRasterizationRateSampleArray { get }
   The horizontal rasterization rates for the layer map’s rows.
 - [class MTLRasterizationRateSampleArray](../mtlrasterizationratesamplearray.md)
   An array instance that contains rasterization rates.
+- [horizontalSampleStorage](./horizontalsamplestorage.md)
+  A pointer to the storage for the layer map’s horizontal rasterization rates.
+- [verticalSampleStorage](./verticalsamplestorage.md)
+  A pointer to the storage for the layer map’s vertical rasterization rates.
 
 
 ---

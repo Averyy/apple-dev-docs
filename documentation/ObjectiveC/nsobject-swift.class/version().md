@@ -73,6 +73,8 @@ The version number applies to `NSArchiver`/`NSUnarchiver`, but not to `NSKeyedAr
   Overridden by subclasses to substitute another object for itself during keyed archiving.
 - [class func setVersion(Int)](./setversion%28_%29.md)
   Sets the receiver’s version number.
+- [classForPortCoder](./classforportcoder.md)
+  Class to substitute for the receiver in distribution encoding.
 
 
 ---

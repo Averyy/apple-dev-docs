@@ -42,6 +42,8 @@ func isSupertype(of type: UTType) -> Bool
   Returns a Boolean value that indicates whether a type conforms to the type.
 - [func isSubtype(of: UTType) -> Bool](./issubtype%28of%29.md)
   Returns a Boolean value that indicates whether a type is higher in a hierarchy than the type.
+- [supertypes](./supertypes.md)
+  The set of types the type directly or indirectly conforms to.
 
 
 ---

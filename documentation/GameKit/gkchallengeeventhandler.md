@@ -36,6 +36,9 @@ To use it, call the [`challengeEventHandler`](./gkchallengeeventhandler/challeng
 ### Getting and Setting the Delegate
 - [var delegate: (any GKChallengeEventHandlerDelegate)!](./gkchallengeeventhandler/delegate.md)
   The delegate for the event handler.
+### Retrieving the Shared Instance
+- [+ challengeEventHandler](./gkchallengeeventhandler/challengeeventhandler.md)
+  Returns the shared instance of the event handler
 
 ## Relationships
 

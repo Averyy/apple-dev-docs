@@ -1,0 +1,40 @@
+# availableDepthDataTypes
+
+**Framework**: AVFoundation  
+**Kind**: property  
+**Role**: Instance Property
+
+The list of depth data formats to which you can convert this depth data.
+
+**Availability**:
+- iOS 11.0+
+- iPadOS 11.0+
+- Mac Catalyst 14.0+
+- macOS 10.13+
+- tvOS 11.0+
+- visionOS 1.0+
+
+## Declaration
+
+```objc
+@property (readonly) NSArray<NSNumber *> * availableDepthDataTypes;
+```
+
+#### Discussion
+
+Use the [`converting(toDepthDataType:)`](./converting%28todepthdatatype%29.md) method to obtain a converted depth data object using one of the types in this list.
+
+## See Also
+
+### Transforming and processing
+- [func applyingExifOrientation(CGImagePropertyOrientation) -> Self](./applyingexiforientation%28_%29.md)
+  Returns a derivative depth data object by mirroring or rotating it to the specified orientation.
+- [func converting(toDepthDataType: OSType) -> Self](./converting%28todepthdatatype%29.md)
+  Returns a derivative depth data object by converting the depth data map to the specified data type.
+- [func replacingDepthDataMap(with: CVPixelBuffer) throws -> Self](./replacingdepthdatamap%28with%29.md)
+  Returns a derivative depth data object by replacing the depth data map.
+
+
+---
+
+*[View on Apple Developer](https://developer.apple.com/documentation/avfoundation/avdepthdata/availabledepthdatatypes-472g0)*

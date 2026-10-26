@@ -77,6 +77,8 @@ Use this class to perform registration and authentication tasks, and to repair r
 - [func attestPendingKey(ofType: ASAuthorizationProviderExtensionKeyType, clientDataHash: Data) async throws -> [SecCertificate]](./asauthorizationproviderextensionloginmanager/attestpendingkey%28oftype,clientdatahash%29.md)
 - [func beginKeyRotation(ASAuthorizationProviderExtensionKeyType) -> SecKey?](./asauthorizationproviderextensionloginmanager/beginkeyrotation%28_%29.md)
 - [func completeKeyRotation(ASAuthorizationProviderExtensionKeyType)](./asauthorizationproviderextensionloginmanager/completekeyrotation%28_%29.md)
+- [- attestKey:clientDataHash:completion:](./asauthorizationproviderextensionloginmanager/attestkey_clientdatahash_completion_.md)
+- [- attestPendingKey:clientDataHash:completion:](./asauthorizationproviderextensionloginmanager/attestpendingkey_clientdatahash_completion_.md)
 
 ## Relationships
 

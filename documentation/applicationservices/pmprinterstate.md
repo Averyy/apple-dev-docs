@@ -28,6 +28,12 @@ typedef UInt16 PMPrinterState;
   Specifies the processing state.
 - [var kPMPrinterStopped: Int](./kpmprinterstopped.md)
   Specifies the stopped state.
+- [kPMPrinterIdle](./api-1506818-anonymous/kpmprinteridle.md)
+  Specifies the idle state.
+- [kPMPrinterProcessing](./api-1506818-anonymous/kpmprinterprocessing.md)
+  Specifies the processing state.
+- [kPMPrinterStopped](./api-1506818-anonymous/kpmprinterstopped.md)
+  Specifies the stopped state.
 
 
 ---

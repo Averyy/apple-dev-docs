@@ -67,6 +67,10 @@ Apps typically call the method for a resource in an argument buffer as a part of
   Ensures the shaders in the render pass’s subsequent draw commands have access to the resources you allocate from multiple heaps.
 - [func textureBarrier()](./texturebarrier%28%29.md)
   Adds a barrier, which forces any texture read operations to wait until write operations to the same texture finish.
+- [- useResources:count:usage:](./useresources_count_usage_.md)
+  Ensures the shaders in the render pass’s subsequent draw commands have access to multiple resources.
+- [- useHeaps:count:](./useheaps_count_.md)
+  Ensures the shaders in the render pass’s subsequent draw commands have access to the resources you allocate from multiple heaps.
 
 
 ---

@@ -89,12 +89,64 @@ Core Graphics can both display and generate files that are compliant with the PD
 ### Instance Properties
 - [var accessPermissions: CGPDFAccessPermissions](./cgpdfdocument/accesspermissions.md)
 - [var outline: CFDictionary?](./cgpdfdocument/outline.md)
+### Retaining and Releasing PDF Documents
+- [CGPDFDocumentRelease](./cgpdfdocumentrelease.md)
+  Decrements the retain count of a PDF document.
+- [CGPDFDocumentRetain](./cgpdfdocumentretain.md)
+  Increments the retain count of a Core Graphics PDF document.
+### Getting Page Information
+- [CGPDFDocumentGetArtBox](./cgpdfdocumentgetartbox.md)
+  Returns the art box of a page in a PDF document.
+- [CGPDFDocumentGetBleedBox](./cgpdfdocumentgetbleedbox.md)
+  Returns the bleed box of a page in a PDF document.
+- [CGPDFDocumentGetCropBox](./cgpdfdocumentgetcropbox.md)
+  Returns the crop box of a page in a PDF document.
+- [CGPDFDocumentGetMediaBox](./cgpdfdocumentgetmediabox.md)
+  Returns the media box of a page in a PDF document.
+- [CGPDFDocumentGetRotationAngle](./cgpdfdocumentgetrotationangle.md)
+  Returns the rotation angle of a page in a PDF document.
+- [CGPDFDocumentGetTrimBox](./cgpdfdocumentgettrimbox.md)
+  Returns the trim box of a page in a PDF document.
 
 ## Relationships
 
 ### Conforms To
 - [Equatable](../Swift/equatable.md)
 - [Hashable](../Swift/hashable.md)
+
+## See Also
+
+### Opaque Types
+- [CGContextRef](./cgcontext.md)
+  A Quartz 2D drawing environment.
+- [CGColorRef](./cgcolor.md)
+  A set of components that define a color, with a color space specifying how to interpret them.
+- [CGColorConversionInfoRef](./cgcolorconversioninfo.md)
+  An object that describes how to convert between color spaces for use by other system services.
+- [CGColorSpaceRef](./cgcolorspace.md)
+  A profile that specifies how to interpret a color value for display.
+- [CGDataConsumerRef](./cgdataconsumer.md)
+  An abstraction for data-writing tasks that eliminates the need to manage a raw memory buffer.
+- [CGDataProviderRef](./cgdataprovider.md)
+  An abstraction for data-reading tasks that eliminates the need to manage a raw memory buffer.
+- [CGFontRef](./cgfont.md)
+  A set of character glyphs and layout information for drawing text.
+- [CGFunctionRef](./cgfunction.md)
+  A general facility for defining and using callback functions.
+- [CGGradientRef](./cggradient.md)
+  A definition for a smooth transition between colors for drawing radial and axial gradient fills.
+- [CGImageRef](./cgimage.md)
+  A bitmap image or image mask.
+- [CGLayerRef](./cglayer.md)
+  An offscreen context for reusing content drawn with Core Graphics.
+- [CGPathRef](./cgpath.md)
+  An immutable graphics path: a mathematical description of shapes or lines to be drawn in a graphics context.
+- [CGPatternRef](./cgpattern.md)
+  A 2D pattern to be used for drawing graphics paths.
+- [CGPDFArray](./cgpdfarray.md)
+  An array structure within a PDF document.
+- [CGPDFContentStream](./cgpdfcontentstream.md)
+  A representation of one or more content data streams in a PDF page.
 
 
 ---

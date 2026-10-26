@@ -35,6 +35,8 @@ To learn more about using goals and agents, see [Agents, Goals, and Behaviors](h
 ### Creating an Obstacle
 - [init(radius: Float)](./gkcircleobstacle/init%28radius%29.md)
   Initializes a circular obstacle with the specified radius.
+- [+ obstacleWithRadius:](./gkcircleobstacle/obstaclewithradius_.md)
+  Creates a circular obstacle with the specified radius.
 ### Placing an Obstacle
 - [var position: vector_float2](./gkcircleobstacle/position.md)
   The position of the obstacle.

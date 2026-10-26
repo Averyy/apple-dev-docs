@@ -23,6 +23,8 @@ enum NSScreenTouchCapabilities : NSUInteger;
 - [static var multiTouch: NSScreen.TouchCapabilities](./touchcapabilities-swift.struct/multitouch.md)
 ### Initializers
 - [init(rawValue: UInt)](./touchcapabilities-swift.struct/init%28rawvalue%29.md)
+### Enumeration Cases
+- [NSScreenTouchCapabilitiesNone](../nsscreentouchcapabilities/nsscreentouchcapabilitiesnone.md)
 
 ## Relationships
 

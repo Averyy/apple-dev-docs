@@ -35,6 +35,8 @@ static simd_uint8 simd_make_uint8_undef(simd_uint4 other);
   Returns a new vector from the specified two-element vector, and other elements undefined.
 - [func simd_make_uint8_undef(simd_uint3) -> simd_uint8](./simd_make_uint8_undef%28_%29-hojv.md)
   Returns a new vector from the specified three-element vector, and other elements undefined.
+- [vector8](./vector8-2a1px.md)
+  Returns a new vector from the specified vectors.
 
 
 ---

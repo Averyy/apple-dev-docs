@@ -24,6 +24,10 @@ init()
 ### Creating a configuration
 - [init(configuration: CWConfiguration)](./init%28configuration%29.md)
   Creates and returns a CWConfiguration object initialized with the given CWConfiguration object.
+- [+ configuration](./configuration.md)
+  Convenience method for getting an empty CWConfiguration object.
+- [+ configurationWithConfiguration:](./configurationwithconfiguration_.md)
+  Convenience method for getting a CWConfiguration object initialized with the given CWConfiguration object.
 
 
 ---

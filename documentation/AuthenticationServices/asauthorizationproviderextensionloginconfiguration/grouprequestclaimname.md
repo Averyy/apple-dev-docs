@@ -39,6 +39,7 @@ var groupRequestClaimName: String? { get set }
 - [var federationUserPreauthenticationURL: URL?](./federationuserpreauthenticationurl.md)
 - [var groupResponseClaimName: String?](./groupresponseclaimname.md)
 - [var jwksTrustedRootCertificates: [SecCertificate]](./jwkstrustedrootcertificates-5y2pc.md)
+- [keyEndpointURL](./keyendpointurl.md)
 
 
 ---

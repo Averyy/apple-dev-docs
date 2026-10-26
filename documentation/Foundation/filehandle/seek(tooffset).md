@@ -40,6 +40,10 @@ func seek(toOffset offset: UInt64) throws
   Gets the position of the file pointer within the file.
 - [func seekToEnd() throws -> UInt64](./seektoend%28%29.md)
   Places the file pointer at the end of the file referenced by the file handle and returns the new file offset.
+- [- getOffset:error:](../nsfilehandle/getoffset_error_.md)
+  Get the current position of the file pointer within the file.
+- [- seekToEndReturningOffset:error:](../nsfilehandle/seektoendreturningoffset_error_.md)
+  Places the file pointer at the end of the file referenced by the file handle and returns the new file offset.
 
 
 ---

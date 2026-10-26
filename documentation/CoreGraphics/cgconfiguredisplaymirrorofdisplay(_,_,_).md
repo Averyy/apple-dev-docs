@@ -81,6 +81,9 @@ You can use the function [`CGGetActiveDisplayList(_:_:_:)`](./cggetactivedisplay
   Returns a Boolean value indicating whether the mouse cursor is visible.
 - [func CGDirectDisplayCopyCurrentMetalDevice(CGDirectDisplayID) -> (any MTLDevice)?](./cgdirectdisplaycopycurrentmetaldevice%28_%29.md)
   Returns the GPU device instance that’s currently driving a display.
+- [CGColorConversionInfoCreateFromList](./cgcolorconversioninfocreatefromlist.md)
+  Creates a conversion between an arbitrary number of specified color spaces.
+- [CGContextDrawPDFDocument](./cgcontextdrawpdfdocument.md)
 
 
 ---

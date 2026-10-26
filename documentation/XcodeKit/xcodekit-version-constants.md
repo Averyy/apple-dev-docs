@@ -12,6 +12,8 @@ Determine the version of XcodeKit available in an instance of Xcode.
   The current version of XcodeKit.
 - [var XCXcodeKitVersionNumber_Xcode_8_0: Double](./xcxcodekitversionnumber_xcode_8_0.md)
   The version of XcodeKit included in Xcode 8.0.
+### Macros
+- [XCODE_EXPORT](./xcode_export.md)
 
 
 ---

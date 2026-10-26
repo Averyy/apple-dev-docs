@@ -415,6 +415,16 @@
       "file_path": "documentation/OSLog/oslogstore.md",
       "hash": "3602358c4eeabbd9535aa5ffea844e0540d188ab7c6aab1d8a615628747daced"
     },
+    "https://developer.apple.com/documentation/oslog/oslogstore/entriesenumeratorandreturnerror:": {
+      "etag": "\"1ecc-65d560b75c7dd-df\"",
+      "file_path": "documentation/OSLog/oslogstore/entriesenumeratorandreturnerror_.md",
+      "hash": "338cdb8559b5c862b89687cce0d94a43a42b9986769754844d41f6bcef263109"
+    },
+    "https://developer.apple.com/documentation/oslog/oslogstore/entriesenumeratorwithoptions:position:predicate:error:": {
+      "etag": "\"2e11-65d560b75c7dd-df\"",
+      "file_path": "documentation/OSLog/oslogstore/entriesenumeratorwithoptions_position_predicate_error_.md",
+      "hash": "337df342439962a55390280f1539c6e7c97b89746818071a70666d67e5bc434c"
+    },
     "https://developer.apple.com/documentation/oslog/oslogstore/getentries(with:at:matching:)": {
       "etag": "\"3423-65d560b75c7dd-df\"",
       "file_path": "documentation/OSLog/oslogstore/getentries(with,at,matching).md",
@@ -895,6 +905,16 @@
       "file_path": "documentation/OSLog/oslogstore.md",
       "hash": "3602358c4eeabbd9535aa5ffea844e0540d188ab7c6aab1d8a615628747daced"
     },
+    "https://developer.apple.com/tutorials/data/documentation/oslog/oslogstore/entriesenumeratorandreturnerror:.json": {
+      "etag": "\"1ecc-65d560b75c7dd-df\"",
+      "file_path": "documentation/OSLog/oslogstore/entriesenumeratorandreturnerror_.md",
+      "hash": "338cdb8559b5c862b89687cce0d94a43a42b9986769754844d41f6bcef263109"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/oslog/oslogstore/entriesenumeratorwithoptions:position:predicate:error:.json": {
+      "etag": "\"2e11-65d560b75c7dd-df\"",
+      "file_path": "documentation/OSLog/oslogstore/entriesenumeratorwithoptions_position_predicate_error_.md",
+      "hash": "337df342439962a55390280f1539c6e7c97b89746818071a70666d67e5bc434c"
+    },
     "https://developer.apple.com/tutorials/data/documentation/oslog/oslogstore/getentries(with:at:matching:).json": {
       "etag": "\"3423-65d560b75c7dd-df\"",
       "file_path": "documentation/OSLog/oslogstore/getentries(with,at,matching).md",
@@ -963,8 +983,8 @@
   },
   "metadata": {
     "render": {
-      "version": 1
+      "version": 2
     },
-    "total_pages": 192
+    "total_pages": 196
   }
 }

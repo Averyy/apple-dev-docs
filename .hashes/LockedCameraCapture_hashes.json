@@ -168,6 +168,16 @@
       "file_path": "documentation/LockedCameraCapture/lockedcameracaptureuiscene/session.md",
       "hash": "e48e4e79694bd8250e21584aa83e33b16ae538d5d5d4867568b805b97812dfcb"
     },
+    "https://developer.apple.com/documentation/lockedcameracapture/lockedcameracaptureversionnumber": {
+      "etag": "\"c5e-65d560bb47522-df\"",
+      "file_path": "documentation/LockedCameraCapture/lockedcameracaptureversionnumber.md",
+      "hash": "4595678e0cf7f042c3b4d3fe13c72b70a6d37c8a45db3c4bfeef557664a173f3"
+    },
+    "https://developer.apple.com/documentation/lockedcameracapture/lockedcameracaptureversionstring": {
+      "etag": "\"ca4-65d560bb47522-df\"",
+      "file_path": "documentation/LockedCameraCapture/lockedcameracaptureversionstring.md",
+      "hash": "fc262917417d73f576b32e5906b1fd7b1de2e985f83f8858d4484ab6fe048b88"
+    },
     "https://developer.apple.com/documentation/lockedcameracapture/nsuseractivitytypelockedcameracapture": {
       "etag": "\"2290-65d560bb47522-df\"",
       "file_path": "documentation/LockedCameraCapture/nsuseractivitytypelockedcameracapture.md",
@@ -341,6 +351,16 @@
       "file_path": "documentation/LockedCameraCapture/lockedcameracaptureuiscene/session.md",
       "hash": "e48e4e79694bd8250e21584aa83e33b16ae538d5d5d4867568b805b97812dfcb"
     },
+    "https://developer.apple.com/tutorials/data/documentation/lockedcameracapture/lockedcameracaptureversionnumber.json": {
+      "etag": "\"c5e-65d560bb47522-df\"",
+      "file_path": "documentation/LockedCameraCapture/lockedcameracaptureversionnumber.md",
+      "hash": "4595678e0cf7f042c3b4d3fe13c72b70a6d37c8a45db3c4bfeef557664a173f3"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/lockedcameracapture/lockedcameracaptureversionstring.json": {
+      "etag": "\"ca4-65d560bb47522-df\"",
+      "file_path": "documentation/LockedCameraCapture/lockedcameracaptureversionstring.md",
+      "hash": "fc262917417d73f576b32e5906b1fd7b1de2e985f83f8858d4484ab6fe048b88"
+    },
     "https://developer.apple.com/tutorials/data/documentation/lockedcameracapture/nsuseractivitytypelockedcameracapture.json": {
       "etag": "\"2290-65d560bb47522-df\"",
       "file_path": "documentation/LockedCameraCapture/nsuseractivitytypelockedcameracapture.md",
@@ -349,8 +369,8 @@
   },
   "metadata": {
     "render": {
-      "version": 1
+      "version": 2
     },
-    "total_pages": 70
+    "total_pages": 74
   }
 }

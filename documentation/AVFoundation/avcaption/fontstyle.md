@@ -57,6 +57,12 @@ enum AVCaptionFontStyle : NSInteger;
   Returns the text decoration at the index position.
 - [AVCaption.Decoration](./decoration.md)
   Text decorations for caption text.
+- [- fontStyleAtIndex:range:](./fontstyleatindex_range_.md)
+  Returns the font style and range at the index position.
+- [- fontWeightAtIndex:range:](./fontweightatindex_range_.md)
+  Returns the font weight and range at the index position.
+- [- decorationAtIndex:range:](./decorationatindex_range_.md)
+  Returns the text decoration at the index position.
 
 
 ---

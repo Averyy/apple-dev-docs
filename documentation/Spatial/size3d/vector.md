@@ -34,6 +34,14 @@ simd_double3 vector;
   The depth value.
 - [var size: Size3D](./size.md)
   The size value.
+- [width](../spsize3d/width.md)
+  The width value.
+- [height](../spsize3d/height.md)
+  The height value.
+- [depth](../spsize3d/depth.md)
+  The depth value.
+- [SPSize3DGetVector](../spsize3dgetvector.md)
+  A simd three-element vector that contains the width, height, and depth values.
 
 
 ---

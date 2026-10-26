@@ -54,6 +54,7 @@ kvImageInvalidImageObject
 - [var kvImageCoreVideoIsAbsent: Int](./kvimagecorevideoisabsent.md)
 - [var kvImageInternalError: Int](./kvimageinternalerror.md)
   A serious error occured inside vImage, which prevented vImage from continuing.
+- [kvImageInvalidCVImageFormat](./kvimageinvalidcvimageformat.md)
 
 
 ---

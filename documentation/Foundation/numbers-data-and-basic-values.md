@@ -16,6 +16,14 @@ Work with primitive values and other fundamental types used throughout Cocoa.
   A structure representing a base-10 number.
 - [class NumberFormatter](./numberformatter.md)
   A formatter that converts between numeric values and their textual representations.
+- [NSInteger](../ObjectiveC/nsinteger.md)
+  Describes an integer.
+- [NSUInteger](../ObjectiveC/nsuinteger.md)
+  Describes an unsigned integer.
+- [NSDecimalNumber](./nsdecimalnumber.md)
+  An object for representing and performing arithmetic on base-10 numbers.
+- [NSNumber](./nsnumber.md)
+  An object wrapper for primitive scalar numeric values.
 ### Binary Data
 - [struct Data](./data.md)
   A byte buffer in memory.
@@ -25,6 +33,10 @@ Work with primitive values and other fundamental types used throughout Cocoa.
   A protocol that provides consistent data access to the bytes underlying contiguous and noncontiguous mutable data buffers.
 - [protocol ContiguousBytes](./contiguousbytes.md)
   A protocol that declares the type offers direct access to the underlying raw bytes in a contiguous manner.
+- [NSData](./nsdata.md)
+  A static byte buffer in memory.
+- [NSMutableData](./nsmutabledata.md)
+  An object representing a dynamic byte buffer in memory.
 ### URLs
 - [struct URL](./url.md)
   A value that identifies the location of a resource, such as an item on a remote server or the path to a local file.
@@ -32,9 +44,17 @@ Work with primitive values and other fundamental types used throughout Cocoa.
   A structure that parses URLs into and constructs URLs from their constituent parts.
 - [struct URLQueryItem](./urlqueryitem.md)
   A single name-value pair from the query portion of a URL.
+- [NSURL](./nsurl.md)
+  An object that represents the location of a resource, such as an item on a remote server or the path to a local file.
+- [NSURLComponents](./nsurlcomponents.md)
+  An object that parses URLs into and constructs URLs from their constituent parts.
+- [NSURLQueryItem](./nsurlqueryitem.md)
+  An object representing a single name/value pair for an item in the query portion of a URL.
 ### Unique Identifiers
 - [struct UUID](./uuid.md)
   A universally unique value to identify types, interfaces, and other items.
+- [NSUUID](./nsuuid.md)
+  A universally unique value that can be used to identify types, interfaces, and other items.
 ### Geometry
 - [struct CGFloat](../CoreFoundation/cgfloat-swift.struct.md)
   The basic type for floating-point scalar values in Core Graphics and related frameworks.
@@ -48,8 +68,12 @@ Work with primitive values and other fundamental types used throughout Cocoa.
   A graphics coordinate transformation.
 - [struct NSEdgeInsets](./nsedgeinsets.md)
   A description of the distance between the edges of two rectangles.
+- [NSAffineTransform](./nsaffinetransform.md)
+  A graphics coordinate transformation.
 ### Ranges
 - [typealias NSRange](./nsrange-swift.typealias.md)
+  A structure used to describe a portion of a series, such as characters in a string or objects in an array.
+- [NSRange](./nsrange-c.struct.md)
   A structure used to describe a portion of a series, such as characters in a string or objects in an array.
 
 ## See Also

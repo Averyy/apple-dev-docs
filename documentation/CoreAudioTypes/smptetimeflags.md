@@ -32,6 +32,8 @@ enum SMPTETimeFlags : UInt32;
 ### Type Properties
 - [static var running: SMPTETimeFlags](./smptetimeflags/running.md)
 - [static var valid: SMPTETimeFlags](./smptetimeflags/valid.md)
+### Constants
+- [kSMPTETimeUnknown](./smptetimeflags/ksmptetimeunknown.md)
 
 ## Relationships
 

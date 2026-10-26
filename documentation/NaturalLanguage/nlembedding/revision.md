@@ -38,6 +38,10 @@ var revision: Int { get }
   Requests a Boolean value that indicates whether the term is in the vocabulary.
 - [func vector(for: String) -> [Double]?](./vector%28for%29.md)
   Requests the vector for the given term.
+- [- vectorForString:](./vectorforstring_.md)
+  Requests the vector for the given term.
+- [- getVector:forString:](./getvector_forstring_.md)
+  Copies a vector into the given a pointer to a float array.
 
 
 ---

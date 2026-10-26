@@ -40,6 +40,8 @@ enum NSDragOperation : NSUInteger;
   Use [`every`](./nsdragoperation/every.md) instead.
 - [static var all_Obsolete: NSDragOperation](./nsdragoperation/all_obsolete.md)
   The `NSDragOperationAll` constant is deprecated. Use [`every`](./nsdragoperation/every.md) instead.
+- [NSDragOperationNone](./nsdragoperation/nsdragoperationnone.md)
+  A constant that indicates that the drag cannot perform any operations.
 ### Initializers
 - [init(rawValue: UInt)](./nsdragoperation/init%28rawvalue%29.md)
   Creates a new instance with the specified raw value.

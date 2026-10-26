@@ -25,6 +25,8 @@ static simd_float3x3 simd_matrix(simd_float3 col0, simd_float3 col1, simd_float3
   Returns a new matrix with the specified rows.
 - [func simd_matrix3x3(simd_quatf) -> simd_float3x3](./simd_matrix3x3%28_%29-60cx9.md)
   Returns a new matrix with the specified quarternion.
+- [simd_diagonal_matrix](./simd_diagonal_matrix-2nvn1.md)
+  Returns a new matrix with the specified vector on the main diagonal.
 
 
 ---

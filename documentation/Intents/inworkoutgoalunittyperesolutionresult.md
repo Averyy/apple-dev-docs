@@ -34,6 +34,8 @@ An [`INWorkoutGoalUnitTypeResolutionResult`](./inworkoutgoalunittyperesolutionre
   Creates an object whose resolution involves successfully matching the specified parameter.
 - [class func confirmationRequired(with: INWorkoutGoalUnitType) -> Self](./inworkoutgoalunittyperesolutionresult/confirmationrequired%28with%29.md)
   Creates an object whose resolution requires the user to confirm the workout unit goal value before proceeding.
+- [+ successWithResolvedValue:](./inworkoutgoalunittyperesolutionresult/successwithresolvedvalue_.md)
+- [+ confirmationRequiredWithValueToConfirm:](./inworkoutgoalunittyperesolutionresult/confirmationrequiredwithvaluetoconfirm_.md)
 
 ## Relationships
 

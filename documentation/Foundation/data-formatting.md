@@ -58,6 +58,8 @@ Foundation supports two approaches for data formatting:
   A formatter that provides localized representations of the components of a person’s name.
 - [struct PersonNameComponents](./personnamecomponents.md)
   The separate parts of a person’s name, allowing locale-aware formatting.
+- [NSPersonNameComponents](./nspersonnamecomponents.md)
+  An object that manages the separate parts of a person’s name to allow locale-aware formatting.
 ### Dates and times
 - [class DateFormatter](./dateformatter.md)
   A formatter that converts between dates and their textual representations.
@@ -81,6 +83,8 @@ Foundation supports two approaches for data formatting:
 ### Internationalization
 - [struct Locale](./locale.md)
   Information about linguistic, cultural, and technological conventions for use in formatting data for presentation.
+- [NSLocale](./nslocale.md)
+  Information about linguistic, cultural, and technological conventions for use in formatting data for presentation.
 ### Custom formatters
 - [class Formatter](./formatter.md)
   An abstract class that declares an interface for objects that create, interpret, and validate the textual representation of values.
@@ -94,6 +98,16 @@ Foundation supports two approaches for data formatting:
 - [enum InflectionConcept](./inflectionconcept.md)
   An inflection method to use when localizing text.
 - [Morphology.Pronoun](./morphology/pronoun.md)
+  A custom pronoun for referring to a third person.
+- [NSInflectionRule](./nsinflectionrule.md)
+  A rule that affects how an attributed string performs automatic grammatical agreement.
+- [NSInflectionRuleExplicit](./nsinflectionruleexplicit.md)
+  An inflection rule that uses a morphology instance to determine how to inflect attribued strings.
+- [NSMorphology](./nsmorphology.md)
+  A description of the grammatical properties of a string.
+- [NSTermOfAddress](./nstermofaddress.md)
+  The type for representing grammatical gender in localized text.
+- [NSMorphologyPronoun](./nsmorphologypronoun.md)
   A custom pronoun for referring to a third person.
 ### Deprecated
 - [class LengthFormatter](./lengthformatter.md)

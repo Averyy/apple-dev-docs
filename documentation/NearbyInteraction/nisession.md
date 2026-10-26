@@ -66,6 +66,10 @@ For more information, see [Initiating and maintaining a session](./initiating-an
   Provides the framework with an existing AR session to use for Camera Assistance.
 - [func worldTransform(for: NINearbyObject) -> simd_float4x4?](./nisession/worldtransform%28for%29.md)
   Returns a world transform to integrate a nearby object in an AR experience.
+- [- worldTransformForObject:](./nisession/worldtransformforobject_.md)
+  Returns a world transform to integrate a nearby object in an AR experience.
+- [NINearbyObjectWorldTransformNotAvailable](./ninearbyobjectworldtransformnotavailable.md)
+  A constant that indicates that the framework is unable to provide a world transform for a nearby object.
 ### Providing accessory state information
 - [func updateMotionState(NIMotionActivityState, forObjectWithToken: NIDiscoveryToken)](./nisession/updatemotionstate%28_,forobjectwithtoken%29.md)
   Notifies the session of an accessory’s motion state change.

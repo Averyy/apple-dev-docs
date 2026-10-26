@@ -36,6 +36,8 @@ The run is reordered so that the string indices associated with the glyphs arenâ
   The run proceeds from right to left.
 - [static var hasNonIdentityMatrix: CTRunStatus](./hasnonidentitymatrix.md)
   The run requires a specific text matrix to be set in the current Core Graphics context for proper drawing.
+- [kCTRunStatusNoStatus](./kctrunstatusnostatus.md)
+  The run has no special attributes.
 
 
 ---

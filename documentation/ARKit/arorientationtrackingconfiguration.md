@@ -37,6 +37,8 @@ This basic level of motion tracking can create limited AR experiences: A virtual
 ### Creating a Configuration
 - [init()](./arorientationtrackingconfiguration/init%28%29.md)
   Initializes a new orientation tracking configuration.
+- [+ new](./arorientationtrackingconfiguration/new.md)
+  Creates a new orientation tracking configuration.
 ### Managing Device Camera Behavior
 - [var isAutoFocusEnabled: Bool](./arorientationtrackingconfiguration/isautofocusenabled.md)
   A Boolean value that determines whether the device camera uses fixed focus or autofocus behavior.

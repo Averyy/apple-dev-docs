@@ -160,10 +160,16 @@ For more information about stages and synchronization, see [`MTLStages`](./mtlst
   Creates a memory barrier that enforces the order of write and read operations for specific resources.
 - [func memoryBarrier(scope: MTLBarrierScope, after: MTLRenderStages, before: MTLRenderStages)](./mtlrendercommandencoder/memorybarrier%28scope,after,before%29.md)
   Creates a memory barrier that enforces the order of write and read operations for specific resource types.
+- [- memoryBarrierWithResources:count:afterStages:beforeStages:](./mtlrendercommandencoder/memorybarrierwithresources_count_afterstages_beforestages_.md)
+  Creates a memory barrier that enforces the order of write and read operations for specific resources.
 ### Running commands from indirect command buffers
 - [func executeCommandsInBuffer(any MTLIndirectCommandBuffer, range: Range<Int>)](./mtlrendercommandencoder/executecommandsinbuffer%28_,range%29.md)
   Encodes a command that runs a range of commands from an indirect command buffer (ICB).
 - [func executeCommandsInBuffer(any MTLIndirectCommandBuffer, indirectBuffer: any MTLBuffer, offset: Int)](./mtlrendercommandencoder/executecommandsinbuffer%28_,indirectbuffer,offset%29.md)
+  Encodes a command that runs an indirect range of commands from an indirect command buffer (ICB).
+- [- executeCommandsInBuffer:withRange:](./mtlrendercommandencoder/executecommandsinbuffer_withrange_.md)
+  Encodes a command that runs a range of commands from an indirect command buffer (ICB).
+- [- executeCommandsInBuffer:indirectBuffer:indirectBufferOffset:](./mtlrendercommandencoder/executecommandsinbuffer_indirectbuffer_indirectbufferoffset_.md)
   Encodes a command that runs an indirect range of commands from an indirect command buffer (ICB).
 ### Sampling counters
 - [func sampleCounters(sampleBuffer: any MTLCounterSampleBuffer, sampleIndex: Int, barrier: Bool)](./mtlrendercommandencoder/samplecounters%28samplebuffer,sampleindex,barrier%29.md)

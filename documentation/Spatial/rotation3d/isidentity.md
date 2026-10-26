@@ -25,6 +25,14 @@ var isIdentity: Bool { get }
 static bool SPRotation3DIsIdentity(SPRotation3D rotation);
 ```
 
+## See Also
+
+### Checking characteristics
+- [SPRotation3DIsValid](../sprotation3disvalid.md)
+  A Boolean value that indicates whether the rotation represents a valid value.
+- [SPRotation3DInvalid](../sprotation3dinvalid.md)
+  The null rotation that represents an invalid value.
+
 
 ---
 

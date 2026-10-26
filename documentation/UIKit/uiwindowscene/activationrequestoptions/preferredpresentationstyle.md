@@ -42,6 +42,16 @@ The presentation style determines how the system displays the new window scene r
   A placement that indicates the system should present the window using the default style of the system in the space.
 - [struct UIWindowScenePushPlacement](../../uiwindowscenepushplacement-swift.struct.md)
   A placement that indicates the system needs to present the window by pushing it onto another window.
+- [placement](../../uiwindowsceneactivationrequestoptions/placement.md)
+  The placement you prefer when the system activates the window scene.
+- [UIWindowScenePlacement](../../uiwindowsceneplacement-c.class.md)
+  The placement of a window scene in the workspace.
+- [UIWindowSceneProminentPlacement](../../uiwindowsceneprominentplacement-c.class.md)
+  A placement that indicates the system should present the window more prominently than others in the space.
+- [UIWindowSceneStandardPlacement](../../uiwindowscenestandardplacement-c.class.md)
+  A placement that indicates the system should present the window using the default style of the system in the space.
+- [UIWindowScenePushPlacement](../../uiwindowscenepushplacement-c.class.md)
+  A placement that indicates the system needs to present the window by pushing it onto another window.
 
 
 ---

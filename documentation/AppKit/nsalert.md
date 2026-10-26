@@ -90,6 +90,9 @@ By design, each [`NSAlert`](./nsalert.md) object represents a single alert with 
 ### Getting alert windows
 - [var window: NSWindow](./nsalert/window.md)
   The app-modal panel or document-modal sheet that corresponds to the alert.
+### Type Methods
+- [+ alertWithMessageText:defaultButton:alternateButton:otherButton:informativeTextWithFormat:](./nsalert/alertwithmessagetext_defaultbutton_alternatebutton_otherbutton_informativetextwithformat_.md)
+  Creates an alert compatible with alerts created using the [`NSRunAlertPanel`](./nsrunalertpanel.md) function for display as a warning-style alert.
 
 ## Relationships
 

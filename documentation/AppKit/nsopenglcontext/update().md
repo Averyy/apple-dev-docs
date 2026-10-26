@@ -33,6 +33,10 @@ Call this method whenever the receiver’s drawable object changes size or locat
   Returns the OpenGL context’s view.
 - [func clearDrawable()](./cleardrawable%28%29.md)
   Disassociates the OpenGL context from its viewport.
+- [- setFullScreen](./setfullscreen.md)
+  Sets the OpenGL context to full-screen mode.
+- [- setOffScreen:width:height:rowbytes:](./setoffscreen_width_height_rowbytes_.md)
+  Instructs the OpenGL context to render into an offscreen buffer with the specified attributes.
 
 
 ---

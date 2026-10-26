@@ -52,6 +52,8 @@ kCFXMLErrorNoData
   Indicates a malformed comment.
 - [static var errorMalformedCharacterReference: CFXMLParserStatusCode](./errormalformedcharacterreference.md)
   Indicates a malformed character reference.
+- [kCFXMLStatusParseSuccessful](./kcfxmlstatusparsesuccessful.md)
+  Indicates the parser was successful.
 
 
 ---

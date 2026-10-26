@@ -39,6 +39,8 @@ If you’re using a [`UICollectionView`](./uicollectionview.md) or [`UITableView
   Creates a list content view with the specified content configuration.
 - [init?(coder: NSCoder)](./uilistcontentview/init%28coder%29.md)
   Creates a list content view from data in an unarchiver.
+- [- initWithConfiguration:](./uilistcontentview/initwithconfiguration_.md)
+  Creates a list content view with the specified content configuration.
 ### Managing the content layout
 - [var textLayoutGuide: UILayoutGuide?](./uilistcontentview/textlayoutguide.md)
   A guide for positioning the primary text in the content view.
@@ -46,6 +48,9 @@ If you’re using a [`UICollectionView`](./uicollectionview.md) or [`UITableView
   A guide for positioning the secondary text in the content view.
 - [var imageLayoutGuide: UILayoutGuide?](./uilistcontentview/imagelayoutguide.md)
   A guide for positioning the image in the content view.
+### Managing the content configuration
+- [configuration](./uilistcontentview/configuration.md)
+  The current configuration of the view.
 
 ## Relationships
 
@@ -84,6 +89,7 @@ If you’re using a [`UICollectionView`](./uicollectionview.md) or [`UITableView
 - [UITraitChangeObservable](./uitraitchangeobservable-67e94.md)
 - [UITraitEnvironment](./uitraitenvironment.md)
 - [UIUserActivityRestoring](./uiuseractivityrestoring.md)
+- [UIContentView](./uicontentview-3zu2k.md)
 
 ## See Also
 
@@ -93,6 +99,12 @@ If you’re using a [`UICollectionView`](./uicollectionview.md) or [`UITableView
 - [protocol UIContentConfiguration](./uicontentconfiguration-9eib5.md)
   The requirements for an object that provides the configuration for a content view.
 - [protocol UIContentView](./uicontentview-5fh3z.md)
+  The requirements for a content view that you create using a configuration.
+- [UIListContentConfiguration](./uilistcontentconfiguration-c.class.md)
+  A content configuration for a list-based content view.
+- [UIContentConfiguration](./uicontentconfiguration-2raci.md)
+  The requirements for an object that provides the configuration for a content view.
+- [UIContentView](./uicontentview-3zu2k.md)
   The requirements for a content view that you create using a configuration.
 
 

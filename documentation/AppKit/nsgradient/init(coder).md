@@ -30,6 +30,8 @@ init?(coder: NSCoder)
   Initializes a newly allocated gradient object with a comma-separated list of arguments.
 - [init?(colors: [NSColor], atLocations: UnsafePointer<CGFloat>?, colorSpace: NSColorSpace)](./init%28colors,atlocations,colorspace%29.md)
   Initializes a newly allocated gradient object with the specified colors, color locations, and color space.
+- [- initWithColorsAndLocations:](./initwithcolorsandlocations_.md)
+  Initializes a newly allocated gradient object with a comma-separated list of arguments.
 
 
 ---

@@ -60,6 +60,7 @@ enum HKErrorCode : NSInteger;
   The app attempted to write HealthKit data while in a Guest User session in visionOS.
 - [HKError.Code.errorWorkoutActivityNotAllowed](./code/errorworkoutactivitynotallowed.md)
 - [HKError.Code.unknownError](./code/unknownerror.md)
+- [HKNoError](../hkerrorcode/hknoerror.md)
 ### Initializers
 - [init?(rawValue: Int)](./code/init%28rawvalue%29.md)
 ### Type Properties

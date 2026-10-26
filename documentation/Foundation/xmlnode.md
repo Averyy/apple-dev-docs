@@ -156,6 +156,8 @@ Because of the architecture and data model of NSXML, when it parses and processe
   `NSXMLNode` declares the following constants of type NSXMLNodeKind for specifying a node’s kind in the initializer methods [`init(kind:)`](./xmlnode/init%28kind%29.md) and [`init(kind:options:)`](./xmlnode/init%28kind,options%29.md):
 - [XMLNode.Options](./xmlnode/options.md)
   These constants are input and output options for all `NSXMLNode` objects (unless otherwise indicated), including [`XMLDocument`](./xmldocument.md) objects. You can specify these options in the `NSXMLNode` methods [`init(kind:options:)`](./xmlnode/init%28kind,options%29.md) and [`xmlString(options:)`](./xmlnode/xmlstring%28options%29.md).
+- [NSXMLNodeOptionsNone](./nsxmlnodeoptions/nsxmlnodeoptionsnone.md)
+  No options are requested for this input or output action.
 ### Initializers
 - [init()](./xmlnode/init%28%29.md)
 

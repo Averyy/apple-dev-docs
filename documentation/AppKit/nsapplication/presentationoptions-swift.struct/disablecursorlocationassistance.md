@@ -46,6 +46,8 @@ NSApplicationPresentationDisableCursorLocationAssistance
   The app is in fullscreen mode.
 - [static var autoHideToolbar: NSApplication.PresentationOptions](./autohidetoolbar.md)
   When in fullscreen mode the window toolbar is detached from window and hides and shows with autoHidden menuBar.
+- [NSApplicationPresentationDefault](../../nsapplicationpresentationoptions/nsapplicationpresentationdefault.md)
+  This is the default presentation mode.
 
 
 ---

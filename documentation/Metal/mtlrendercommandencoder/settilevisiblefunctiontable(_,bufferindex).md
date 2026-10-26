@@ -39,6 +39,8 @@ By default, the visible function table at each index is `nil`.
 ### Assigning visible function tables
 - [func setTileVisibleFunctionTables([(any MTLVisibleFunctionTable)?], bufferRange: Range<Int>)](./settilevisiblefunctiontables%28_,bufferrange%29.md)
   Assigns multiple visible function tables to a range of entries in the tile shader argument table.
+- [- setTileVisibleFunctionTables:withBufferRange:](./settilevisiblefunctiontables_withbufferrange_.md)
+  Assigns multiple visible function tables to a range of entries in the tile shader argument table.
 
 
 ---

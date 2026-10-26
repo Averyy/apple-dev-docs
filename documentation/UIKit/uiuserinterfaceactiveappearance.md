@@ -77,6 +77,8 @@ enum UIUserInterfaceActiveAppearance : NSInteger;
   A property that indicates whether a scene has an active appearance.
 - [var toolbarItemPresentationSize: UINSToolbarItemPresentationSize](./uitraitcollection/toolbaritempresentationsize.md)
   The presentation size of a toolbar item in an AppKit toolbar.
+- [resolvesNaturalAlignmentWithBaseWritingDirection](./uitraitcollection/resolvesnaturalalignmentwithbasewritingdirection-97osy.md)
+  Specifies the behavior for resolving `NSTextAlignment.natural` to the visual alignment.
 
 
 ---

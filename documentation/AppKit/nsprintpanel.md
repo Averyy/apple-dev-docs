@@ -67,6 +67,17 @@ For design guidance, see [Human Interface Guidelines](https://developer.apple.co
 ### Deprecated
 - [func beginSheet(with: NSPrintInfo, modalFor: NSWindow, delegate: Any?, didEnd: Selector?, contextInfo: UnsafeMutableRawPointer?)](./nsprintpanel/beginsheet%28with,modalfor,delegate,didend,contextinfo%29.md)
   Displays a Print panel sheet and runs it modally for the specified window.
+- [- accessoryView](./nsprintpanel/accessoryview.md)
+  Returns the accessory view of the Print panel.
+- [- setAccessoryView:](./nsprintpanel/setaccessoryview_.md)
+  Sets the accessory view for the Print panel.
+- [- updateFromPrintInfo](./nsprintpanel/updatefromprintinfo.md)
+  Updates the Print panel with information from the current print operation object.
+- [- finalWritePrintInfo](./nsprintpanel/finalwriteprintinfo.md)
+  Writes the Print panel’s printing attributes to the current print operation object.
+### Creating the Printing Panel
+- [+ printPanel](./nsprintpanel/printpanel.md)
+  Returns a new print panel object.
 
 ## Relationships
 

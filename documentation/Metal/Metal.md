@@ -120,6 +120,8 @@ Many high-level Apple frameworks leverage the performance of Metal, including [R
 - [Metal constants](./metal-constants.md)
 - [Metal data types](./metal-data-types.md)
 - [Metal variables](./metal-variables.md)
+- [Metal functions](./metal-functions.md)
+- [Metal macros](./metal-macros.md)
 ### Classes
 - [class MTLTensorAuxiliaryPlaneDescriptor](./mtltensorauxiliaryplanedescriptor.md)
   A configuration for an auxiliary plane in a multi-plane tensor.
@@ -142,6 +144,8 @@ Many high-level Apple frameworks leverage the performance of Metal, including [R
 - [enum MTLForwardProgressUsage](./mtlforwardprogressusage.md)
 - [enum MTLTensorPlaneType](./mtltensorplanetype.md)
   The possible tensor plane types.
+- [MTLDeviceError](./mtldeviceerror-swift.struct/code.md)
+  Enumeration of kinds of errors that methods on MTLDevice can produce.
 
 ## See Also
 

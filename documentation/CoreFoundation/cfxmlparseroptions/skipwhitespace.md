@@ -36,6 +36,8 @@ Skip over all whitespace that does not abut non-whitespace character data. In ot
   Where the DTD specifies implied attribute-value pairs for a particular element, add those pairs to any occurrences of the element in the element tree. Currently not supported.
 - [static var allOptions: CFXMLParserOptions](./alloptions.md)
   Makes the parser do the most work, returning only the pure elementtree.
+- [kCFXMLParserNoOptions](./kcfxmlparsernooptions.md)
+  Leaves the XML as “intact” as possible (reports all structures; performs no replacements).
 
 
 ---

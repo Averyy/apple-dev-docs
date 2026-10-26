@@ -62,6 +62,8 @@ You typically call this method when, after calling the [`beginIgnoringInteractio
   Registers your preferred options for notifying the user.
 - [func registerForRemoteNotifications(matching: UIRemoteNotificationType)](./registerforremotenotifications%28matching%29.md)
   Register to receive remote notifications of the specified types via Apple Push Notification service.
+- [- setStatusBarHidden:animated:](./setstatusbarhidden_animated_.md)
+  Hides or shows the status bar, optionally animating the transition.
 
 
 ---

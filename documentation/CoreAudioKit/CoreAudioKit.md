@@ -30,6 +30,8 @@ Core Audio Kit provides views and controllers to use when building Audio Unit us
   A view that provides a specialized user interface for a Cocoa-based panner audio unit.
 - [protocol AUCustomViewPersistentData](./aucustomviewpersistentdata.md)
   A protocol that defines the methods an Audio Unit host calls to manage view data.
+- [AUViewControllerBase](./auviewcontrollerbase.md)
+  A type definition that indicates the the platform’s Audio Unit view controller base class.
 ### Bluetooth Devices
 - [class CABTLEMIDIWindowController](./cabtlemidiwindowcontroller.md)
   A window controller that displays nearby Bluetooth-based MIDI peripherals.
@@ -57,6 +59,8 @@ Core Audio Kit provides views and controllers to use when building Audio Unit us
 ### Structures
 - [struct AUGenericViewDisplayFlags](./augenericviewdisplayflags.md)
   Flags that describe the display of a generic view.
+### Reference
+- [Core Audio Kit Data Types](./core-audio-kit-data-types.md)
 
 
 ---

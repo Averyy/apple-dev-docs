@@ -66,6 +66,12 @@ A [`JSValue`](../jsvalue.md) that represents a new, unique JavaScript symbol obj
   Creates a JavaScript representation of the specified rectangle.
 - [init!(size: CGSize, inContext: JSContext!)](./init%28size,incontext%29.md)
   Creates a JavaScript representation of the specified width and height.
+- [+ valueWithNewPromiseInContext:fromExecutor:](./init%28newpromisein,fromexecutor%29.md)
+  Creates a promise object using the specified executor callback.
+- [+ valueWithNewPromiseRejectedWithReason:inContext:](./init%28newpromiserejectedwithreason,in%29.md)
+  Creates a rejected promise object with the specified value.
+- [+ valueWithNewPromiseResolvedWithResult:inContext:](./init%28newpromiseresolvedwithresult,in%29.md)
+  Creates a resolved promise object with the specified value.
 
 
 ---

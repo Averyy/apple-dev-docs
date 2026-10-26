@@ -45,6 +45,8 @@ CFStringRefSCDynamicStoreKeyCreateNetworkServiceEntity(CFAllocatorRef allocator,
   Creates a key that can be used to receive notifications when the location identifier changes.
 - [func SCDynamicStoreKeyCreateProxies(CFAllocator?) -> CFString](./scdynamicstorekeycreateproxies%28_%29.md)
   Creates a key that can be used to receive notifications when the current network proxy settings are changed.
+- [SCDynamicStoreKeyCreate](./scdynamicstorekeycreate.md)
+  Creates a dynamic store key using the specified format.
 
 
 ---

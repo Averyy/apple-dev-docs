@@ -224,6 +224,7 @@ Although not part of the Accelerate framework, the following libraries are close
   Approximate the definite integral of a function over a finite or infinite interval.
 ### Macros
 - [Macros](./macros.md)
+- [SPARSE_CHECK_VALID_MATRIX_STRUCTURE_COMMON](./sparse_check_valid_matrix_structure_common.md)
 ### Functions
 - [func clarf1f_(UnsafePointer<CChar>, UnsafePointer<__LAPACK_int>, UnsafePointer<__LAPACK_int>, OpaquePointer?, UnsafePointer<__LAPACK_int>, OpaquePointer, OpaquePointer?, UnsafePointer<__LAPACK_int>, OpaquePointer?)](./clarf1f_%28_,_,_,_,_,_,_,_,_%29.md)
 - [func clarf1l_(UnsafePointer<CChar>, UnsafePointer<__LAPACK_int>, UnsafePointer<__LAPACK_int>, OpaquePointer?, UnsafePointer<__LAPACK_int>, OpaquePointer, OpaquePointer?, UnsafePointer<__LAPACK_int>, OpaquePointer?)](./clarf1l_%28_,_,_,_,_,_,_,_,_%29.md)
@@ -233,6 +234,28 @@ Although not part of the Accelerate framework, the following libraries are close
 - [func slarf1l_(UnsafePointer<CChar>, UnsafePointer<__LAPACK_int>, UnsafePointer<__LAPACK_int>, UnsafePointer<Float>?, UnsafePointer<__LAPACK_int>, UnsafePointer<Float>, UnsafeMutablePointer<Float>?, UnsafePointer<__LAPACK_int>, UnsafeMutablePointer<Float>?)](./slarf1l_%28_,_,_,_,_,_,_,_,_%29.md)
 - [func zlarf1f_(UnsafePointer<CChar>, UnsafePointer<__LAPACK_int>, UnsafePointer<__LAPACK_int>, OpaquePointer?, UnsafePointer<__LAPACK_int>, OpaquePointer, OpaquePointer?, UnsafePointer<__LAPACK_int>, OpaquePointer?)](./zlarf1f_%28_,_,_,_,_,_,_,_,_%29.md)
 - [func zlarf1l_(UnsafePointer<CChar>, UnsafePointer<__LAPACK_int>, UnsafePointer<__LAPACK_int>, OpaquePointer?, UnsafePointer<__LAPACK_int>, OpaquePointer, OpaquePointer?, UnsafePointer<__LAPACK_int>, OpaquePointer?)](./zlarf1l_%28_,_,_,_,_,_,_,_,_%29.md)
+- [sparse_inner_product_dense_double_complex](./sparse_inner_product_dense_double_complex.md)
+- [sparse_inner_product_dense_float_complex](./sparse_inner_product_dense_float_complex.md)
+- [sparse_inner_product_sparse_double_complex](./sparse_inner_product_sparse_double_complex.md)
+- [sparse_inner_product_sparse_float_complex](./sparse_inner_product_sparse_float_complex.md)
+- [sparse_insert_entry_double_complex](./sparse_insert_entry_double_complex.md)
+- [sparse_insert_entry_float_complex](./sparse_insert_entry_float_complex.md)
+- [sparse_matrix_product_dense_double_complex](./sparse_matrix_product_dense_double_complex.md)
+- [sparse_matrix_product_dense_float_complex](./sparse_matrix_product_dense_float_complex.md)
+- [sparse_matrix_product_sparse_double_complex](./sparse_matrix_product_sparse_double_complex.md)
+- [sparse_matrix_product_sparse_float_complex](./sparse_matrix_product_sparse_float_complex.md)
+- [sparse_matrix_trace_double_complex](./sparse_matrix_trace_double_complex.md)
+- [sparse_matrix_trace_float_complex](./sparse_matrix_trace_float_complex.md)
+- [sparse_matrix_triangular_solve_dense_double_complex](./sparse_matrix_triangular_solve_dense_double_complex.md)
+- [sparse_matrix_triangular_solve_dense_float_complex](./sparse_matrix_triangular_solve_dense_float_complex.md)
+- [sparse_matrix_vector_product_dense_double_complex](./sparse_matrix_vector_product_dense_double_complex.md)
+- [sparse_matrix_vector_product_dense_float_complex](./sparse_matrix_vector_product_dense_float_complex.md)
+- [sparse_outer_product_dense_double_complex](./sparse_outer_product_dense_double_complex.md)
+- [sparse_outer_product_dense_float_complex](./sparse_outer_product_dense_float_complex.md)
+- [sparse_vector_add_with_scale_dense_double_complex](./sparse_vector_add_with_scale_dense_double_complex.md)
+- [sparse_vector_add_with_scale_dense_float_complex](./sparse_vector_add_with_scale_dense_float_complex.md)
+- [sparse_vector_triangular_solve_dense_double_complex](./sparse_vector_triangular_solve_dense_double_complex.md)
+- [sparse_vector_triangular_solve_dense_float_complex](./sparse_vector_triangular_solve_dense_float_complex.md)
 
 
 ---

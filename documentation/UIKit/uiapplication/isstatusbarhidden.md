@@ -64,6 +64,11 @@ Changing the value of this property changes the visibility of the status bar imm
   The current style of the status bar.
 - [var windows: [UIWindow]](./windows.md)
   The app’s visible and hidden windows.
+- [proximitySensingEnabled](./proximitysensingenabled.md)
+  A Boolean value that determines whether proximity sensing is enabled.
+### Related Documentation
+- [- setStatusBarHidden:animated:](./setstatusbarhidden_animated_.md)
+  Hides or shows the status bar, optionally animating the transition.
 
 
 ---

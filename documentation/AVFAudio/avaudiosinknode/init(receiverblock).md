@@ -42,6 +42,7 @@ When receiving data, the system sets the audio format using the node’s input f
 ### Creating an audio sink node
 - [typealias AVAudioSinkNodeReceiverBlock](../avaudiosinknodereceiverblock.md)
   A block that receives audio data from an audio sink node.
+- [- initWithRealtimeSafeReceiverBlock:](./initwithrealtimesafereceiverblock_.md)
 
 
 ---

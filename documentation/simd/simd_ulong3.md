@@ -36,10 +36,14 @@ typedef unsigned long __attribute__((ext_vector_type(3))) simd_ulong3;
   Returns a new vector from the specified scalar values.
 - [func simd_make_ulong3_undef(simd_ulong1) -> simd_ulong3](./simd_make_ulong3_undef%28_%29-7s0qh.md)
   Returns a new vector with the first element set to a scalar value, and other elements undefined.
+- [vector3](./vector3-6utbv.md)
+  Returns a new vector from the specified scalar values.
 ### Functions to Create Three-Element Vectors From Combinations of Vectors and Scalar Values
 - [func simd_make_ulong3(simd_ulong1, simd_ulong2) -> simd_ulong3](./simd_make_ulong3%28_,_%29-3zpz6.md)
   Returns a new vector from a scalar value and a vector.
 - [func simd_make_ulong3(simd_ulong2, simd_ulong1) -> simd_ulong3](./simd_make_ulong3%28_,_%29-3orcm.md)
+  Returns a new vector from a vector and a scalar value.
+- [vector3](./vector3-11y95.md)
   Returns a new vector from a vector and a scalar value.
 ### Common Functions
 - [func simd_clamp(simd_ulong3, simd_ulong3, simd_ulong3) -> simd_ulong3](./simd_clamp%28_,_,_%29-5ce6.md)
@@ -65,6 +69,48 @@ typedef unsigned long __attribute__((ext_vector_type(3))) simd_ulong3;
   Returns a vector that contains elements from either the first or second parameter, based on the corresponding element in the third parameter.
 ### Alternative Type Alias
 - [typealias vector_ulong3](./vector_ulong3.md)
+### Functions to Create Three-Element Vectors From Vectors of Other Types
+- [simd_ulong](./simd_ulong-1mphp.md)
+  Returns a new vector from the specified vector of 8-bit, signed integer elements.
+- [simd_ulong](./simd_ulong-1mfil.md)
+  Returns a new vector from the specified vector of 8-bit, unsigned integer elements.
+- [simd_ulong](./simd_ulong-1mkj1.md)
+  Returns a new vector from the specified vector of 16-bit, signed integer elements.
+- [simd_ulong](./simd_ulong-1malp.md)
+  Returns a new vector from the specified vector of 16-bit, unsigned integer elements.
+- [simd_ulong](./simd_ulong-1mrfp.md)
+  Returns a new vector from the specified vector of 32-bit, signed integer elements.
+- [simd_ulong](./simd_ulong-1mhet.md)
+  Returns a new vector from the specified vector of 32-bit, unsigned integer elements.
+- [simd_ulong](./simd_ulong-1mptj.md)
+  Returns a new vector from the specified vector of 64-bit, signed integer elements.
+- [simd_ulong](./simd_ulong-1mfw7.md)
+  Returns a new vector from the specified vector of 64-bit, unsigned integer elements.
+- [simd_ulong](./simd_ulong-1me03.md)
+  Returns a new vector from the specified vector of 32-bit, floating-point elements.
+- [simd_ulong](./simd_ulong-1mdc7.md)
+  Returns a new vector from the specified vector of 64-bit, floating-point elements.
+### Functions to Perform Saturating Conversion From Vectors of Other Types
+- [simd_ulong_sat](./simd_ulong_sat-1p4p3.md)
+  Returns a new vector from the specified vector of 8-bit, signed integer elements.
+- [simd_ulong_sat](./simd_ulong_sat-1pevb.md)
+  Returns a new vector from the specified vector of 8-bit, unsigned integer elements.
+- [simd_ulong_sat](./simd_ulong_sat-1ozs7.md)
+  Returns a new vector from the specified vector of 16-bit, signed integer elements.
+- [simd_ulong_sat](./simd_ulong_sat-1p9pj.md)
+  Returns a new vector from the specified vector of 16-bit, unsigned integer elements.
+- [simd_ulong_sat](./simd_ulong_sat-1p1l7.md)
+  Returns a new vector from the specified vector of 32-bit, signed integer elements.
+- [simd_ulong_sat](./simd_ulong_sat-1pbrf.md)
+  Returns a new vector from the specified vector of 32-bit, unsigned integer elements.
+- [simd_ulong_sat](./simd_ulong_sat-1p0xd.md)
+  Returns a new vector from the specified vector of 64-bit, signed integer elements.
+- [simd_ulong_sat](./simd_ulong_sat-1panl.md)
+  Returns a new vector from the specified vector of 64-bit, unsigned integer elements.
+- [simd_ulong_sat](./simd_ulong_sat-1pdyx.md)
+  Returns a new vector from the specified vector of 32-bit, floating-point elements.
+- [simd_ulong_sat](./simd_ulong_sat-1pdb5.md)
+  Returns a new vector from the specified vector of 64-bit, floating-point elements.
 
 ## See Also
 

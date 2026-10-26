@@ -47,6 +47,9 @@ During the WebSocket handshake, the task uses the provided protocols to negotiat
   A URL session task that communicates over the WebSockets protocol standard.
 - [protocol URLSessionWebSocketDelegate](../urlsessionwebsocketdelegate.md)
   A protocol that defines methods that URL session instances call on their delegates to handle task-level events specific to WebSocket tasks.
+- [NSURLSessionWebSocketMessage](../nsurlsessionwebsocketmessage.md)
+- [NSURLSessionWebSocketMessageType](../nsurlsessionwebsocketmessagetype.md)
+  An enumeration of the types of messages sent and received.
 
 
 ---

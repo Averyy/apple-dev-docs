@@ -30,7 +30,7 @@ An initialized content editing output.
 
 #### Discussion
 
-To complete the edit, use the [`renderedContentURL`](./renderedcontenturl.md) property to provide the edited asset content. Then, use the [`PHAssetChangeRequest`](../phassetchangerequest.md) class or [`PHContentEditingController`](https://developer.apple.com/documentation/photosui/phcontenteditingcontroller) protocol to commit the edit to storage.
+To complete the edit, use the [`renderedContentURL`](./renderedcontenturl.md) property to provide the edited asset content. Then, use the [`PHAssetChangeRequest`](../phassetchangerequest.md) class or [`PHContentEditingController`](../../PhotosUI/phcontenteditingcontroller.md) protocol to commit the edit to storage.
 
 ## Parameters
 

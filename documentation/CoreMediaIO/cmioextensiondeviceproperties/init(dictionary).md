@@ -24,6 +24,12 @@ init(dictionary propertiesDictionary: [CMIOExtensionProperty : CMIOExtensionProp
 
 - `propertiesDictionary`: The dictionary of properties and their states.
 
+## See Also
+
+### Creating Device Properties
+- [+ devicePropertiesWithDictionary:](./devicepropertieswithdictionary_.md)
+  Returns a new properties object with a dictionary of property states.
+
 
 ---
 

@@ -57,6 +57,9 @@ Do not include the control’s type in the label (for example, use `Employees`, 
   Sets the table’s currently selected rows.
 - [func accessibilityHeaderGroup() -> String?](./accessibilityheadergroup%28%29.md)
   Returns the header group for the table.
+### Related Documentation
+- [accessibilityLabel](../nsaccessibility-c.protocol/accessibilitylabel.md)
+  A short description of the accessibility element.
 
 
 ---

@@ -26,6 +26,8 @@ typedef struct { ... } XCSourceTextPosition;
   Creates a new source text position at the beginning of the source text.
 - [init(line: Int, column: Int)](./xcsourcetextposition/init%28line,column%29.md)
   Creates a source text position at the specified line and column.
+- [XCSourceTextPositionMake](./xcsourcetextpositionmake.md)
+  Creates a new text position for a specified line and column.
 ### Inspecting Source Text Positions
 - [var column: Int](./xcsourcetextposition/column.md)
   The horizontal component of a source text position.

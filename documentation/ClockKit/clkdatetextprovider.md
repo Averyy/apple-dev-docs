@@ -58,6 +58,10 @@ When formatting the date, the date text provider drops units starting at the end
   Creates and returns a text provider with the specified date and the default time zone.
 - [convenience init(date: Date, units: NSCalendar.Unit, timeZone: TimeZone?)](./clkdatetextprovider/init%28date,units,timezone%29.md)
   Creates and returns a text provider with the specified date and time zone.
+- [- initWithDate:units:](./clkdatetextprovider/initwithdate_units_.md)
+  Creates and returns a text provider with the specified date and the default time zone.
+- [- initWithDate:units:timeZone:](./clkdatetextprovider/initwithdate_units_timezone_.md)
+  Creates and returns a text provider with the specified date and time zone.
 ### Getting the Date Information
 - [var date: Date](./clkdatetextprovider/date.md)
   The date to display.

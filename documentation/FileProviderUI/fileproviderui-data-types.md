@@ -7,6 +7,9 @@
 
 ### Data Types
 - [struct FPUIActionIdentifier](./fpuiactionidentifier.md)
+### Macros
+- [FPUI_AVAILABLE](./fpui_available.md)
+- [FPUI_EXPORT](./fpui_export.md)
 
 
 ---

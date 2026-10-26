@@ -33,6 +33,9 @@ class MPSCNNDilatedPoolingMaxNode
 ### Instance Properties
 - [var dilationRateX: Int](./mpscnndilatedpoolingmaxnode/dilationratex.md)
 - [var dilationRateY: Int](./mpscnndilatedpoolingmaxnode/dilationratey.md)
+### Type Methods
+- [+ nodeWithSource:filterSize:](./mpscnndilatedpoolingmaxnode/nodewithsource_filtersize_.md)
+- [+ nodeWithSource:filterSize:stride:dilationRate:](./mpscnndilatedpoolingmaxnode/nodewithsource_filtersize_stride_dilationrate_.md)
 
 ## Relationships
 

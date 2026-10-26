@@ -56,6 +56,8 @@ The value of the property is a [`UIStatusBarStyle`](../uistatusbarstyle.md) cons
   The animation duration in seconds for the status bar during a 90 degree orientation change.
 - [var windows: [UIWindow]](./windows.md)
   The app’s visible and hidden windows.
+- [proximitySensingEnabled](./proximitysensingenabled.md)
+  A Boolean value that determines whether proximity sensing is enabled.
 
 
 ---

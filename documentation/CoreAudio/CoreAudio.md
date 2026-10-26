@@ -69,6 +69,8 @@ Use the Core Audio framework to interact with device’s audio hardware.
 - [var kAudioDevicePropertyWantsStreamFormatsRestored: AudioObjectPropertySelector](./kaudiodevicepropertywantsstreamformatsrestored.md)
 - [var kAudioDeviceTransportTypeRemoteScreen: UInt32](./kaudiodevicetransporttyperemotescreen.md)
 - [var kAudioDeviceTransportTypeRemoteStreaming: UInt32](./kaudiodevicetransporttyperemotestreaming.md)
+### Functions
+- [AudioServerPlugInRegisterMediaDeviceExtension](./audioserverpluginregistermediadeviceextension.md)
 
 
 ---

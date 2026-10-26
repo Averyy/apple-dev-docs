@@ -108,6 +108,8 @@ class AVAudioSequencer
   A timestamp you use to access all events in a music track through a beat range.
 - [typealias AVBeatRange](./avbeatrange-swift.typealias.md)
   A specific time range within a music track.
+- [AVBeatRange](./avbeatrange-c.struct.md)
+  A specific time range within a music track.
 ### Setting the user callback
 - [func setUserCallback(AVAudioSequencerUserCallback?)](./avaudiosequencer/setusercallback%28_%29.md)
   Adds a callback that the sequencer calls each time it encounters a user event during playback.

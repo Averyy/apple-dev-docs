@@ -34,6 +34,7 @@ class IOUSBHostCIPortStateMachine
 - [func inspectCommand(UnsafePointer<IOUSBHostCIMessage>) throws](./iousbhostciportstatemachine/inspectcommand%28_%29.md)
 - [func respond(toCommand: UnsafePointer<IOUSBHostCIMessage>, status: IOUSBHostCIMessageStatus) throws](./iousbhostciportstatemachine/respond%28tocommand,status%29.md)
 - [func updateLinkState(IOUSBHostCILinkState, speed: IOUSBHostCIDeviceSpeed, inhibitLinkStateChange: Bool) throws](./iousbhostciportstatemachine/updatelinkstate%28_,speed,inhibitlinkstatechange%29.md)
+- [- initWithInterface:portNumber:error:](./iousbhostciportstatemachine/initwithinterface_portnumber_error_.md)
 
 ## Relationships
 

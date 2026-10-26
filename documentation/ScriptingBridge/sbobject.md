@@ -50,6 +50,8 @@ You can discover the names of dynamically generated classes such as `iTunesAppli
 ### Sending Apple Events
 - [func setTo(Any?)](./sbobject/setto%28_%29.md)
   Sets the receiver to a specified value.
+- [- sendEvent:id:parameters:](./sbobject/sendevent_id_parameters_.md)
+  Sends an Apple event with the given event class, event ID, and format to the target application.
 ### Getting Properties and Elements
 - [func property(with: AnyClass, code: AEKeyword) -> SBObject](./sbobject/property%28with,code%29.md)
   Returns an object of the designated scripting class representing the specified property of the receiver

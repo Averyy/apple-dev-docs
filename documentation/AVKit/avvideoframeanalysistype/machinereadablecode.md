@@ -33,6 +33,8 @@ AVVideoFrameAnalysisTypeMachineReadableCode
   A type that finds a subject that a user can copy out of frame.
 - [static var visualSearch: AVVideoFrameAnalysisType](./visualsearch.md)
   A type that identifies objects, landmarks, art, and so on.
+- [AVVideoFrameAnalysisTypeNone](./avvideoframeanalysistypenone.md)
+  A type that performs no analysis.
 
 
 ---

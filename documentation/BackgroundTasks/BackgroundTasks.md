@@ -64,6 +64,8 @@ Your app can also use a framework-provided task to execute critical jobs in the 
 ### Development and testing
 - [Starting and Terminating Tasks During Development](./starting-and-terminating-tasks-during-development.md)
   Use the debugger during development to start tasks and to terminate them before completion.
+### Macros
+- [BG_EXTERN](./bg_extern.md)
 
 
 ---

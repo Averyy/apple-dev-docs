@@ -33,6 +33,8 @@ This class provides methods for managing the extension’s permissions, allowing
 ### Enumerations
 - [WKWebExtensionContext.PermissionStatus](./wkwebextensioncontext/permissionstatus.md)
   Constants used to indicate permission status in web extension context.
+- [WKWebExtensionContextError](./wkwebextensioncontext/error/code.md)
+  Constants that indicate errors in the [`WKWebExtensionContext`](./wkwebextensioncontext.md) domain.
 ### Structures
 - [WKWebExtensionContext.Error](./wkwebextensioncontext/error.md)
   Constants used to indicate errors in the web extension context domain.
@@ -179,6 +181,35 @@ This class provides methods for managing the extension’s permissions, allowing
   Sets the status of a match pattern with a specific expiration date.
 - [func userGesturePerformed(in: any WKWebExtensionTab)](./wkwebextensioncontext/usergestureperformed%28in%29.md)
   Should be called by the app when a user gesture is performed in a specific tab.
+- [- didActivateTab:previousActiveTab:](./wkwebextensioncontext/didactivatetab_previousactivetab_.md)
+  Called by the app when a tab is activated to notify only this specific extension.
+- [- didCloseTab:windowIsClosing:](./wkwebextensioncontext/didclosetab_windowisclosing_.md)
+  Called by the app when a tab is closed to fire appropriate events with only this extension.
+- [- didMoveTab:fromIndex:inWindow:](./wkwebextensioncontext/didmovetab_fromindex_inwindow_.md)
+  Called by the app when a tab is moved to fire appropriate events with only this extension.
+### Variables
+- [WKWebExtensionContextDeniedPermissionMatchPatternsWereRemovedNotification](./wkwebextensioncontext/deniedpermissionmatchpatternswereremovednotification.md)
+  A notification the system sends whenever a web extension context has newly removed denied permission match patterns.
+- [WKWebExtensionContextDeniedPermissionsWereRemovedNotification](./wkwebextensioncontext/deniedpermissionswereremovednotification.md)
+  A notification the system sends whenever a web extension context has newly removed denied permissions.
+- [WKWebExtensionContextErrorDomain](./wkwebextensioncontext/errordomain.md)
+- [WKWebExtensionContextErrorsDidUpdateNotification](./wkwebextensioncontext/errorsdidupdatenotification.md)
+  This notification is sent whenever a web extension context has new errors or errors were cleared.
+- [WKWebExtensionContextGrantedPermissionMatchPatternsWereRemovedNotification](./wkwebextensioncontext/grantedpermissionmatchpatternswereremovednotification.md)
+  This notification is sent whenever a web extension context has newly removed granted permission match patterns.
+- [WKWebExtensionContextGrantedPermissionsWereRemovedNotification](./wkwebextensioncontext/grantedpermissionswereremovednotification.md)
+  This notification is sent whenever a web extension context has newly removed granted permissions.
+- [WKWebExtensionContextPermissionMatchPatternsWereDeniedNotification](./wkwebextensioncontext/permissionmatchpatternsweredeniednotification.md)
+  This notification is sent whenever a web extension context has newly denied permission match patterns.
+- [WKWebExtensionContextPermissionMatchPatternsWereGrantedNotification](./wkwebextensioncontext/permissionmatchpatternsweregrantednotification.md)
+  This notification is sent whenever a web extension context has newly granted permission match patterns.
+- [WKWebExtensionContextPermissionsWereDeniedNotification](./wkwebextensioncontext/permissionsweredeniednotification.md)
+  This notification is sent whenever a web extension context has newly denied permissions.
+- [WKWebExtensionContextPermissionsWereGrantedNotification](./wkwebextensioncontext/permissionsweregrantednotification.md)
+  This notification is sent whenever a web extension context has newly granted permissions.
+### Type Methods
+- [+ contextForExtension:](./wkwebextensioncontext/contextforextension_.md)
+  Returns a web extension context initialized with the specified extension.
 
 ## Relationships
 

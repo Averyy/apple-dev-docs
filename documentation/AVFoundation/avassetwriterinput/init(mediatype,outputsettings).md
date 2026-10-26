@@ -56,6 +56,10 @@ You must fully specify the video settings dictionary when using this initializer
 ### Creating an input
 - [init(mediaType: AVMediaType, outputSettings: [String : Any]?, sourceFormatHint: CMFormatDescription?)](./init%28mediatype,outputsettings,sourceformathint%29.md)
   Creates an input that appends sample buffers of the specified type and format hint to the output file.
+- [+ assetWriterInputWithMediaType:outputSettings:](./assetwriterinputwithmediatype_outputsettings_.md)
+  Returns a new input to append sample buffers of the specified type to the output file.
+- [+ assetWriterInputWithMediaType:outputSettings:sourceFormatHint:](./assetwriterinputwithmediatype_outputsettings_sourceformathint_.md)
+  Returns a new input that appends sample buffers of the specified type and format hint to the output file.
 
 
 ---

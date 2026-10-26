@@ -38,6 +38,12 @@ A SceneKit particle file created by Xcode contains an archived [`SCNParticleSyst
 - `name`: The name of a particle system file in the app’s bundle resources directory, with or without the `.scnp` extension.
 - `directory`: The subdirectory path in the app’s bundle resources directory.
 
+## See Also
+
+### Creating a Particle System
+- [+ particleSystem](./particlesystem.md)
+  Creates a new particle system.
+
 
 ---
 

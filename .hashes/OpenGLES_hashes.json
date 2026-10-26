@@ -20,6 +20,16 @@
       "file_path": "documentation/OpenGLES/eagl-functions.md",
       "hash": "b7c5edbde915a6f3aa306171e6dc1566775ecdf860e84a626ace799d9d987782"
     },
+    "https://developer.apple.com/documentation/opengles/eagl_extern": {
+      "etag": "\"9f1-65d55b3eeb970-df\"",
+      "file_path": "documentation/OpenGLES/eagl_extern.md",
+      "hash": "d02e47cf36249a5c36e70f03f19714d8d6b29f821c02e2259f0bf3ebd24e08d8"
+    },
+    "https://developer.apple.com/documentation/opengles/eagl_extern_class": {
+      "etag": "\"a39-65d55b4005549-df\"",
+      "file_path": "documentation/OpenGLES/eagl_extern_class.md",
+      "hash": "b14b4cef792df91d5e20960b2aba9ed44bf9ab4328d1fa6a396e4a6df876f737"
+    },
     "https://developer.apple.com/documentation/opengles/eagl_major_version": {
       "etag": "\"15f6-65d55b4052931-df\"",
       "file_path": "documentation/OpenGLES/eagl_major_version.md",
@@ -329,6 +339,21 @@
       "etag": "\"1689-65d55b3f47957-df\"",
       "file_path": "documentation/OpenGLES/gl_any_samples_passed_ext.md",
       "hash": "ec8d5c93d4b120611a5e229518389e47377f30b5da84f6acee1e06c8bdd9d965"
+    },
+    "https://developer.apple.com/documentation/opengles/gl_api": {
+      "etag": "\"9b5-65d55b3f8cccb-df\"",
+      "file_path": "documentation/OpenGLES/gl_api.md",
+      "hash": "cb4587a2a48ab629a9819f87823be5e542785ea46b91cf7e09398e116dd27fad"
+    },
+    "https://developer.apple.com/documentation/opengles/gl_apientry": {
+      "etag": "\"9f1-65d55b3f8cccb-df\"",
+      "file_path": "documentation/OpenGLES/gl_apientry.md",
+      "hash": "5b67536bd91be06148f8b2a19a1c869113eea8b2ab8e3ce8bd10a386895aed1b"
+    },
+    "https://developer.apple.com/documentation/opengles/gl_apientryp": {
+      "etag": "\"9fd-65d55b40cc8f7-df\"",
+      "file_path": "documentation/OpenGLES/gl_apientryp.md",
+      "hash": "34f3b6cf23b91aa57ea581b11c0aec8b67f8736e6e40aa0daaee0f6d660d468b"
     },
     "https://developer.apple.com/documentation/opengles/gl_apple_clip_distance": {
       "etag": "\"164a-65d55b4116303-df\"",
@@ -931,7 +956,7 @@
       "hash": "11b5edf5e8a37dabdf29fd91194d203f6d9f6bdd962489d471361febb0c2e3a5"
     },
     "https://developer.apple.com/documentation/opengles/gl_compressed_rgba_astc_12x12_khr": {
-      "etag": "\"1731-65d55b3f15c5a\"",
+      "etag": "\"1731-65d55b3f15c5a-df\"",
       "file_path": "documentation/OpenGLES/gl_compressed_rgba_astc_12x12_khr.md",
       "hash": "4b016befd1814fd3972e42148fdb1dfe7f4d3e0b11ee7c25f753725160b0724d"
     },
@@ -6220,6 +6245,11 @@
       "file_path": "documentation/OpenGLES/glenum.md",
       "hash": "7da677975d4ae86f70cbe056d8a3e5bb587e1244f8dda28c881aaf887a2b76a9"
     },
+    "https://developer.apple.com/documentation/opengles/gles_api_depricated": {
+      "etag": "\"ab5-65d55b3ed4d2b-df\"",
+      "file_path": "documentation/OpenGLES/gles_api_depricated.md",
+      "hash": "d0b0ce4f4776d8801e2a84d5982e9af35303b9635cf4dab786da2135814e6ff2"
+    },
     "https://developer.apple.com/documentation/opengles/glfencesync(_:_:)": {
       "etag": "\"2836-65d55b3eba935-df\"",
       "file_path": "documentation/OpenGLES/glfencesync(_,_).md",
@@ -7900,6 +7930,11 @@
       "file_path": "documentation/OpenGLES/glviewport(_,_,_,_).md",
       "hash": "999b3e7483d621294528136602e871c7527c8dd082bc8bd010e3c0a4d0ffb6a2"
     },
+    "https://developer.apple.com/documentation/opengles/glvoid": {
+      "etag": "\"a32-65d55b4005549-df\"",
+      "file_path": "documentation/OpenGLES/glvoid.md",
+      "hash": "02614abf33bd2b1e5ce58501d25f949bc6d5f2f9ab28edb026267a11f1df3579"
+    },
     "https://developer.apple.com/documentation/opengles/glwaitsync(_:_:_:)": {
       "etag": "\"2994-65d55b3dce4e6-df\"",
       "file_path": "documentation/OpenGLES/glwaitsync(_,_,_).md",
@@ -7960,6 +7995,11 @@
       "file_path": "documentation/OpenGLES/opengl-es-functions.md",
       "hash": "4ceff9e8efde593333a041cf8de87887356f4bd2dcdf4199b2067537acdbd309"
     },
+    "https://developer.apple.com/documentation/opengles/opengles_deprecated": {
+      "etag": "\"a70-65d55b3f00efa-df\"",
+      "file_path": "documentation/OpenGLES/opengles_deprecated.md",
+      "hash": "598077aafdd549b087f28dd4a4f0617031aa153b29a8b746b36346ae318be23b"
+    },
     "https://developer.apple.com/tutorials/data/documentation/OpenGLES.json": {
       "etag": "\"567c-65d55b3dce4e6-df\"",
       "file_path": "documentation/OpenGLES/OpenGLES.md",
@@ -7979,6 +8019,16 @@
       "etag": "\"ecc-659024799eaa3-df\"",
       "file_path": "documentation/OpenGLES/eagl-functions.md",
       "hash": "b7c5edbde915a6f3aa306171e6dc1566775ecdf860e84a626ace799d9d987782"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/opengles/eagl_extern.json": {
+      "etag": "\"9f1-65d55b3eeb970-df\"",
+      "file_path": "documentation/OpenGLES/eagl_extern.md",
+      "hash": "d02e47cf36249a5c36e70f03f19714d8d6b29f821c02e2259f0bf3ebd24e08d8"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/opengles/eagl_extern_class.json": {
+      "etag": "\"a39-65d55b4005549-df\"",
+      "file_path": "documentation/OpenGLES/eagl_extern_class.md",
+      "hash": "b14b4cef792df91d5e20960b2aba9ed44bf9ab4328d1fa6a396e4a6df876f737"
     },
     "https://developer.apple.com/tutorials/data/documentation/opengles/eagl_major_version.json": {
       "etag": "\"15f6-65d55b4052931-df\"",
@@ -8289,6 +8339,21 @@
       "etag": "\"1689-65d55b3f47957-df\"",
       "file_path": "documentation/OpenGLES/gl_any_samples_passed_ext.md",
       "hash": "ec8d5c93d4b120611a5e229518389e47377f30b5da84f6acee1e06c8bdd9d965"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/opengles/gl_api.json": {
+      "etag": "\"9b5-65d55b3f8cccb-df\"",
+      "file_path": "documentation/OpenGLES/gl_api.md",
+      "hash": "cb4587a2a48ab629a9819f87823be5e542785ea46b91cf7e09398e116dd27fad"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/opengles/gl_apientry.json": {
+      "etag": "\"9f1-65d55b3f8cccb-df\"",
+      "file_path": "documentation/OpenGLES/gl_apientry.md",
+      "hash": "5b67536bd91be06148f8b2a19a1c869113eea8b2ab8e3ce8bd10a386895aed1b"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/opengles/gl_apientryp.json": {
+      "etag": "\"9fd-65d55b40cc8f7-df\"",
+      "file_path": "documentation/OpenGLES/gl_apientryp.md",
+      "hash": "34f3b6cf23b91aa57ea581b11c0aec8b67f8736e6e40aa0daaee0f6d660d468b"
     },
     "https://developer.apple.com/tutorials/data/documentation/opengles/gl_apple_clip_distance.json": {
       "etag": "\"164a-65d55b4116303-df\"",
@@ -8891,7 +8956,7 @@
       "hash": "11b5edf5e8a37dabdf29fd91194d203f6d9f6bdd962489d471361febb0c2e3a5"
     },
     "https://developer.apple.com/tutorials/data/documentation/opengles/gl_compressed_rgba_astc_12x12_khr.json": {
-      "etag": "\"1731-65d55b3f15c5a\"",
+      "etag": "\"1731-65d55b3f15c5a-df\"",
       "file_path": "documentation/OpenGLES/gl_compressed_rgba_astc_12x12_khr.md",
       "hash": "4b016befd1814fd3972e42148fdb1dfe7f4d3e0b11ee7c25f753725160b0724d"
     },
@@ -14180,6 +14245,11 @@
       "file_path": "documentation/OpenGLES/glenum.md",
       "hash": "7da677975d4ae86f70cbe056d8a3e5bb587e1244f8dda28c881aaf887a2b76a9"
     },
+    "https://developer.apple.com/tutorials/data/documentation/opengles/gles_api_depricated.json": {
+      "etag": "\"ab5-65d55b3ed4d2b-df\"",
+      "file_path": "documentation/OpenGLES/gles_api_depricated.md",
+      "hash": "d0b0ce4f4776d8801e2a84d5982e9af35303b9635cf4dab786da2135814e6ff2"
+    },
     "https://developer.apple.com/tutorials/data/documentation/opengles/glfencesync(_:_:).json": {
       "etag": "\"2836-65d55b3eba935-df\"",
       "file_path": "documentation/OpenGLES/glfencesync(_,_).md",
@@ -15860,6 +15930,11 @@
       "file_path": "documentation/OpenGLES/glviewport(_,_,_,_).md",
       "hash": "999b3e7483d621294528136602e871c7527c8dd082bc8bd010e3c0a4d0ffb6a2"
     },
+    "https://developer.apple.com/tutorials/data/documentation/opengles/glvoid.json": {
+      "etag": "\"a32-65d55b4005549-df\"",
+      "file_path": "documentation/OpenGLES/glvoid.md",
+      "hash": "02614abf33bd2b1e5ce58501d25f949bc6d5f2f9ab28edb026267a11f1df3579"
+    },
     "https://developer.apple.com/tutorials/data/documentation/opengles/glwaitsync(_:_:_:).json": {
       "etag": "\"2994-65d55b3dce4e6-df\"",
       "file_path": "documentation/OpenGLES/glwaitsync(_,_,_).md",
@@ -15919,12 +15994,17 @@
       "etag": "\"9c0d9-659024799eaa3-df\"",
       "file_path": "documentation/OpenGLES/opengl-es-functions.md",
       "hash": "4ceff9e8efde593333a041cf8de87887356f4bd2dcdf4199b2067537acdbd309"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/opengles/opengles_deprecated.json": {
+      "etag": "\"a70-65d55b3f00efa-df\"",
+      "file_path": "documentation/OpenGLES/opengles_deprecated.md",
+      "hash": "598077aafdd549b087f28dd4a4f0617031aa153b29a8b746b36346ae318be23b"
     }
   },
   "metadata": {
     "render": {
-      "version": 1
+      "version": 2
     },
-    "total_pages": 3184
+    "total_pages": 3200
   }
 }

@@ -99,6 +99,43 @@ typedef _Float16 __attribute__((ext_vector_type(32))) simd_half32;
 ### Math functions
 - [func simd_muladd(simd_half32, simd_half32, simd_half32) -> simd_half32](./simd_muladd%28_,_,_%29-bf1p.md)
   Returns the multiply-add result for corresponding elements in three vectors.
+### Geometry functions
+- [simd_dot](./simd_dot-14m5i.md)
+  Returns the dot product of two vectors.
+- [simd_normalize](./simd_normalize-4thje.md)
+  Returns a vector pointing in the same direction of the supplied vector, with a length of 1.
+- [simd_fast_normalize](./simd_fast_normalize-1kyde.md)
+  Returns the fast normalized vector.
+- [simd_precise_normalize](./simd_precise_normalize-3zlx2.md)
+  Returns the precise normalized vector.
+- [simd_project](./simd_project-40ksg.md)
+  Returns the first vector projected onto the second vector.
+- [simd_precise_project](./simd_precise_project-8q7gz.md)
+  Returns the precise projected vector.
+- [simd_fast_project](./simd_fast_project-56rgk.md)
+  Returns the fast projected vector.
+### Vector norm functions
+- [simd_norm_one](./simd_norm_one-jtbh.md)
+  Returns the sum of the absolute values of a vector.
+- [simd_norm_inf](./simd_norm_inf-74hug.md)
+  Returns the maximum absolute value of a vector.
+### Length and distance functions
+- [simd_length](./simd_length-zvvu.md)
+  Returns the length of a vector.
+- [simd_fast_length](./simd_fast_length-4jwws.md)
+  Returns the fast length of a vector.
+- [simd_precise_length](./simd_precise_length-916dp.md)
+  Returns the precise length of a vector.
+- [simd_length_squared](./simd_length_squared-9h8sy.md)
+  Returns the square of the length of a vector.
+- [simd_distance](./simd_distance-5389o.md)
+  Returns the distance between two vectors.
+- [simd_fast_distance](./simd_fast_distance-5ufke.md)
+  Returns the fast distance between two vectors.
+- [simd_precise_distance](./simd_precise_distance-3ed89.md)
+  Returns the precise distance between two vectors.
+- [simd_distance_squared](./simd_distance_squared-6xb9g.md)
+  Returns the square of the distance between two vectors.
 
 ## See Also
 

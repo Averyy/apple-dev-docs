@@ -29,6 +29,8 @@ A shared instance of the local session.
 ### Creating and Accessing Sessions
 - [init(options: [AnyHashable : Any]!) throws](./init%28options%29.md)
   Creates a session object directed over proxy to another host.
+- [+ sessionWithOptions:error:](./sessionwithoptions_error_.md)
+  Returns an autoreleased session object directed over proxy to another host.
 
 
 ---

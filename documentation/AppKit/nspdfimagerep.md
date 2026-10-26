@@ -24,6 +24,8 @@ class NSPDFImageRep
 ### Creating Representations of Images from PDF Data
 - [init?(data: Data)](./nspdfimagerep/init%28data%29.md)
   Returns a representation of an image initialized with the specified PDF data.
+- [+ imageRepWithData:](./nspdfimagerep/imagerepwithdata_.md)
+  Creates and returns a representation of an image initialized with the specified PDF data.
 ### Getting Data
 - [var bounds: NSRect](./nspdfimagerep/bounds.md)
   The image representation’s bounding rectangle.

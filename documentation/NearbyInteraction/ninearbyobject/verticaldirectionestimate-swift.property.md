@@ -41,6 +41,14 @@ The framework periodically sets the value of this property when vertical positio
   An angle in radians that indicates the azimuthal direction to the nearby object.
 - [NINearbyObject.VerticalDirectionEstimate](./verticaldirectionestimate-swift.enum.md)
   Estimations of a nearby object’s vertical position in relation to the user’s device.
+- [direction](./direction-5xcld.md)
+  A vector that points from the user’s device in the direction of the peer device.
+- [NINearbyObjectDirectionNotAvailable](../ninearbyobjectdirectionnotavailable.md)
+  A value that indicates that a nearby object’s direction is unavailable.
+- [horizontalAngle](./horizontalangle-9ibky.md)
+  An angle in radians that indicates the azimuthal direction to the nearby object.
+- [NINearbyObjectAngleNotAvailable](../ninearbyobjectanglenotavailable.md)
+  A value that indicates that a nearby object’s horizontal angle is unavailable.
 
 
 ---

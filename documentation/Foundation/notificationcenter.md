@@ -96,6 +96,8 @@ A notification center can deliver notifications only within a single program. On
   A container for information broadcast through a notification center to all registered observers.
 - [class NotificationQueue](./notificationqueue.md)
   A notification center buffer.
+- [NSNotification](./nsnotification.md)
+  A container for information broadcast through a notification center to all registered observers.
 
 
 ---

@@ -47,6 +47,8 @@ If you’re not using SwiftUI this property shouldn’t be necessary, as [`SWAtt
   A localized string the system uses as a custom title for the hide menu item.
 - [var supplementalMenu: UIMenu?](./supplementalmenu.md)
   A supplemental menu to augment the attribution view’s existing menu.
+- [enablesMarquee](./enablesmarquee.md)
+  Automatically enables a marquee effect.
 
 
 ---

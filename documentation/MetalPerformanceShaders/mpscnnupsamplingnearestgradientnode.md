@@ -31,6 +31,8 @@ class MPSCNNUpsamplingNearestGradientNode
 ### Instance Properties
 - [var scaleFactorX: Double](./mpscnnupsamplingnearestgradientnode/scalefactorx.md)
 - [var scaleFactorY: Double](./mpscnnupsamplingnearestgradientnode/scalefactory.md)
+### Type Methods
+- [+ nodeWithSourceGradient:sourceImage:gradientState:scaleFactorX:scaleFactorY:](./mpscnnupsamplingnearestgradientnode/nodewithsourcegradient_sourceimage_gradientstate_scalefactorx_scalefactory_.md)
 
 ## Relationships
 

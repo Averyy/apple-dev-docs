@@ -80,6 +80,8 @@ You use security transforms to assemble a chain of security-related operations t
   A type that may be either a string or an attribute reference.
 - [enum SecTransformMetaAttributeType](./sectransformmetaattributetype.md)
   The keys that describe the metadata attributes of transform attributes.
+- [SecTranformCustomGetAttribute](./sectranformcustomgetattribute.md)
+  Gets an attribute value from a custom transform.
 ### Actions
 - [func SecTransformSetDataAction(SecTransformImplementationRef, CFString, SecTransformDataBlock) -> CFError?](./sectransformsetdataaction%28_,_,_%29.md)
   Changes the way a custom transform processes data.

@@ -28,6 +28,12 @@ init(clockName: String, sourceIdentifier: UUID, getTimeCallMinimumInterval: CMTi
 - `numberOfEventsForRateSmoothing`: The number of events to use for rate smoothing. This value must be greater than `0`.
 - `numberOfAveragesForRateSmoothing`: The number of averages to use for rate smoothing. Specify `0`, to use the default smoothing algorithm.
 
+## See Also
+
+### Creating a Clock Configuration
+- [+ customClockConfigurationWithClockName:sourceIdentifier:getTimeCallMinimumInterval:numberOfEventsForRateSmoothing:numberOfAveragesForRateSmoothing:](./customclockconfigurationwithclockname_sourceidentifier_gettimecallminimuminterval_numberofeventsforratesmoothing_numberofaveragesforratesmoothing_.md)
+  Returns a new a custom clock configuration.
+
 
 ---
 

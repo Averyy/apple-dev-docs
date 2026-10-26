@@ -29,6 +29,8 @@ class MTLPipelineBufferDescriptorArray
 ### Accessing array elements
 - [subscript(Int) -> MTLPipelineBufferDescriptor!](./mtlpipelinebufferdescriptorarray/subscript%28_%29.md)
   Returns the pipeline buffer descriptor at the specified array index.
+- [- setObject:atIndexedSubscript:](./mtlpipelinebufferdescriptorarray/setobject_atindexedsubscript_.md)
+  Sets a pipeline buffer descriptor at the specified array index.
 
 ## Relationships
 

@@ -73,6 +73,8 @@ class BAURLDownload
 - [protocol BADownloaderExtensionConfiguration](./badownloaderextensionconfiguration.md)
 - [class BADownload](./badownload.md)
   An object that represents an in-progress or concluded asset download.
+- [BADownloaderExtension](./badownloaderextension-zuvm.md)
+  An interface for reacting to app life-cycle events and processing concluded asset downloads while your app isn’t running.
 
 
 ---

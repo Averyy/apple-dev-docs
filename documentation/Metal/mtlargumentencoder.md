@@ -55,15 +55,21 @@ If you construct your shaders dynamically at runtime, you can still construct ar
   Encodes a reference to a buffer into the argument buffer.
 - [func setBuffers([(any MTLBuffer)?], offsets: [Int], range: Range<Int>)](./mtlargumentencoder/setbuffers%28_,offsets,range%29.md)
   Encodes references to an array of buffers into the argument buffer.
+- [- setBuffers:offsets:withRange:](./mtlargumentencoder/setbuffers_offsets_withrange_.md)
+  Encodes references to an array of buffers into the argument buffer.
 ### Encoding textures
 - [func setTexture((any MTLTexture)?, index: Int)](./mtlargumentencoder/settexture%28_,index%29.md)
   Encodes a reference to a texture into the argument buffer.
 - [func setTextures([(any MTLTexture)?], range: Range<Int>)](./mtlargumentencoder/settextures%28_,range%29.md)
   Encodes references to an array of textures into the argument buffer.
+- [- setTextures:withRange:](./mtlargumentencoder/settextures_withrange_.md)
+  Encodes references to an array of textures into the argument buffer.
 ### Encoding samplers
 - [func setSamplerState((any MTLSamplerState)?, index: Int)](./mtlargumentencoder/setsamplerstate%28_,index%29.md)
   Encodes a sampler into the argument buffer.
 - [func setSamplerStates([(any MTLSamplerState)?], range: Range<Int>)](./mtlargumentencoder/setsamplerstates%28_,range%29.md)
+  Encodes an array of samplers into the argument buffer.
+- [- setSamplerStates:withRange:](./mtlargumentencoder/setsamplerstates_withrange_.md)
   Encodes an array of samplers into the argument buffer.
 ### Encoding pipeline states
 - [func setRenderPipelineState((any MTLRenderPipelineState)?, index: Int)](./mtlargumentencoder/setrenderpipelinestate%28_,index%29.md)
@@ -78,6 +84,10 @@ If you construct your shaders dynamically at runtime, you can still construct ar
   Encodes a reference to a compute pipeline state into the argument buffer.
 - [func setComputePipelineStates([(any MTLComputePipelineState)?], range: Range<Int>)](./mtlargumentencoder/setcomputepipelinestates%28_,range%29.md)
   Encodes references to an array of compute pipeline states into the argument buffer.
+- [- setRenderPipelineStates:withRange:](./mtlargumentencoder/setrenderpipelinestates_withrange_.md)
+  Encodes references to an array of render pipeline states into the argument buffer.
+- [- setComputePipelineStates:withRange:](./mtlargumentencoder/setcomputepipelinestates_withrange_.md)
+  Encodes references to an array of compute pipeline states into the argument buffer.
 ### Encoding inlined constant data
 - [func constantData(at: Int) -> UnsafeMutableRawPointer](./mtlargumentencoder/constantdata%28at%29.md)
   Returns a pointer to an inline, constant-data argument within the argument buffer.
@@ -85,6 +95,8 @@ If you construct your shaders dynamically at runtime, you can still construct ar
 - [func setIndirectCommandBuffer((any MTLIndirectCommandBuffer)?, index: Int)](./mtlargumentencoder/setindirectcommandbuffer%28_,index%29.md)
   Encodes a reference to an indirect command buffer into the argument buffer.
 - [func setIndirectCommandBuffers([(any MTLIndirectCommandBuffer)?], range: Range<Int>)](./mtlargumentencoder/setindirectcommandbuffers%28_,range%29.md)
+  Encodes an array of indirect command buffers into the argument buffer.
+- [- setIndirectCommandBuffers:withRange:](./mtlargumentencoder/setindirectcommandbuffers_withrange_.md)
   Encodes an array of indirect command buffers into the argument buffer.
 ### Encoding acceleration structures
 - [func setAccelerationStructure((any MTLAccelerationStructure)?, index: Int)](./mtlargumentencoder/setaccelerationstructure%28_,index%29.md)
@@ -97,6 +109,10 @@ If you construct your shaders dynamically at runtime, you can still construct ar
 - [func setIntersectionFunctionTables([(any MTLIntersectionFunctionTable)?], range: Range<Int>)](./mtlargumentencoder/setintersectionfunctiontables%28_,range%29.md)
   Encodes references to an array of ray-tracing intersection-function tables into the argument buffer.
 - [func setVisibleFunctionTables([(any MTLVisibleFunctionTable)?], range: Range<Int>)](./mtlargumentencoder/setvisiblefunctiontables%28_,range%29.md)
+  Encodes references to an array of ray-tracing intersection-function tables into the argument buffer.
+- [- setVisibleFunctionTables:withRange:](./mtlargumentencoder/setvisiblefunctiontables_withrange_.md)
+  Encodes references to an array of visible function tables into the argument buffer.
+- [- setIntersectionFunctionTables:withRange:](./mtlargumentencoder/setintersectionfunctiontables_withrange_.md)
   Encodes references to an array of ray-tracing intersection-function tables into the argument buffer.
 ### Creating a nested argument encoder
 - [func makeArgumentEncoderForBuffer(atIndex: Int) -> (any MTLArgumentEncoder)?](./mtlargumentencoder/makeargumentencoderforbuffer%28atindex%29.md)
@@ -112,6 +128,7 @@ If you construct your shaders dynamically at runtime, you can still construct ar
 ### Instance Methods
 - [func setDepthStencilState((any MTLDepthStencilState)?, index: Int)](./mtlargumentencoder/setdepthstencilstate%28_,index%29.md)
 - [func setDepthStencilStates([(any MTLDepthStencilState)?], range: Range<Int>)](./mtlargumentencoder/setdepthstencilstates%28_,range%29.md)
+- [- setDepthStencilStates:withRange:](./mtlargumentencoder/setdepthstencilstates_withrange_.md)
 
 ## Relationships
 

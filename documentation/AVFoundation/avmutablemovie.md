@@ -41,6 +41,12 @@ When performing media insertions, a movie interleaves media data from tracks in 
   Creates a mutable movie object from a movie stored in a data object.
 - [init(settingsFrom: AVMovie?, options: [String : Any]?) throws](./avmutablemovie/init%28settingsfrom,options%29.md)
   Creates a mutable movie object without tracks.
+- [+ movieWithURL:options:error:](./avmutablemovie/moviewithurl_options_error_.md)
+  Returns a new mutable movie object from a movie header stored in a QuickTime movie file of ISO base media file.
+- [+ movieWithData:options:error:](./avmutablemovie/moviewithdata_options_error_.md)
+  Returns a new mutable movie object from a movie stored in a data object.
+- [+ movieWithSettingsFromMovie:options:error:](./avmutablemovie/moviewithsettingsfrommovie_options_error_.md)
+  Returns a new mutable movie object without tracks.
 ### Configuring a movie
 - [var isModified: Bool](./avmutablemovie/ismodified.md)
   A Boolean value that indicates whether the movie is in a modified state.

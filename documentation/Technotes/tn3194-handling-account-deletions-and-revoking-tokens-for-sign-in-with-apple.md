@@ -13,7 +13,7 @@ To properly support both account creation, verification, and deletion in your ap
 
 #### Invalidate a user session
 
-The [Token revocation](https://developer.apple.com/documentation/signinwithapplerestapi/revoke-tokens) endpoint (`/auth/revoke`) is the only way to programmatically invalidate user tokens associated to your developer account without user interaction. Apps using Sign in with Apple are expected to securely transmit and store tokens when integrated with a server infrastructure. This allows you to validate all user tokens received from Apple, as well as verify the user’s identity and Apple’s public key before granting access to your app or its data. Because this endpoint manages your user sessions, either a valid refresh token or access token for invalidation is required.
+The [Token revocation](../SigninwithAppleRESTAPI/revoke-tokens.md) endpoint (`/auth/revoke`) is the only way to programmatically invalidate user tokens associated to your developer account without user interaction. Apps using Sign in with Apple are expected to securely transmit and store tokens when integrated with a server infrastructure. This allows you to validate all user tokens received from Apple, as well as verify the user’s identity and Apple’s public key before granting access to your app or its data. Because this endpoint manages your user sessions, either a valid refresh token or access token for invalidation is required.
 
 If you don’t have the user’s refresh token, access token, or authorization code, you must still fulfill the user’s account deletion request and meet the account deletion requirement. To manually revoke the user credentials, follow the steps below:
 
@@ -52,7 +52,7 @@ If you have questions about implementing these flows, including client authoriza
 
 - [Verifying a user](../SigninwithApple/verifying-a-user.md)
 - [Creating a client secret](../AccountOrganizationalDataSharing/creating-a-client-secret.md)
-- [Generate and validate tokens](https://developer.apple.com/documentation/signinwithapplerestapi/generate-and-validate-tokens)
+- [Generate and validate tokens](../SigninwithAppleRESTAPI/generate-and-validate-tokens.md)
 - [TN3107: Resolving Sign in with Apple response errors](./tn3107-resolving-sign-in-with-apple-response-errors.md)
 - [TN3159: Migrating Sign in with Apple users for an app transfer](./tn3159-migrating-sign-in-with-apple-users-for-an-app-transfer.md)
 

@@ -40,6 +40,8 @@ static const SPRotation3D SPRotation3DZero;
   Creates a rotation axis from the specified single-precision quaternion.
 - [var isZero: Bool](./iszero.md)
   A Boolean value that indicates whether the rotation is zero.
+- [SPEulerAngleOrder](../speulerangleorder.md)
+  Constants that describe the order of Euler angles.
 
 
 ---

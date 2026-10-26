@@ -35,6 +35,8 @@ init()
 - [init?(coder: NSCoder)](./init%28coder%29.md)
   Called when a node is initialized from an .sks file.
 - [convenience init(fileNamed: String, securelyWithClasses: Set<AnyHashable>) throws](./init%28filenamed,securelywithclasses%29.md)
+- [+ node](./node.md)
+  Creates a new node.
 
 
 ---

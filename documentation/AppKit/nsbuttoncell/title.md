@@ -30,6 +30,12 @@ If the button doesn’t display a title, the value of this property is the empty
   The font that the cell uses to display text.
 - [func setButtonType(NSButton.ButtonType)](./setbuttontype%28_%29.md)
   Sets how the button highlights while pressed and how it shows its state.
+- [- setTitleWithMnemonic:](./settitlewithmnemonic_.md)
+  Sets the title the button displays when it’s in its normal state to the given string with an embedded mnemonic.
+- [- mnemonicLocation](../nscell/mnemoniclocation.md)
+  Returns the position of the underlined mnemonic character in the receiver’s title.
+- [- mnemonic](../nscell/mnemonic.md)
+  Returns the character in the receiver’s title that appears underlined for use as a mnemonic.
 ### Setting Titles
 - [var alternateTitle: String](./alternatetitle.md)
   The string displayed by the button when it’s in its alternate state.

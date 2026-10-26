@@ -36,6 +36,7 @@ extern OSStatus CMIOStreamClockCreate(CFAllocatorRef allocator, CFStringRef cloc
 - [func CMIOObjectSetPropertyData(CMIOObjectID, UnsafePointer<CMIOObjectPropertyAddress>!, UInt32, UnsafeRawPointer!, UInt32, UnsafeRawPointer!) -> OSStatus](./cmioobjectsetpropertydata%28_,_,_,_,_,_%29.md)
 - [func CMIOObjectShow(CMIOObjectID)](./cmioobjectshow%28_%29.md)
 - [func CMIOStreamClockConvertHostTimeToDeviceTime(UInt64, CFTypeRef!) -> CMTime](./cmiostreamclockconverthosttimetodevicetime%28_,_%29.md)
+- [CMIOSampleBufferCopyNonRequiredAttachments](./cmiosamplebuffercopynonrequiredattachments.md)
 
 
 ---

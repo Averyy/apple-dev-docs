@@ -64,6 +64,8 @@ For more information about blocks, see [Blocks Programming Topics](https://devel
   A queue that regulates the execution of operations.
 - [class Operation](./operation.md)
   An abstract class that represents the code and data associated with a single task.
+- [NSInvocationOperation](./nsinvocationoperation.md)
+  An operation that manages the execution of a single encapsulated task specified as an invocation.
 
 
 ---

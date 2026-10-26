@@ -28,6 +28,10 @@ class var isSupported: Bool { get }
 
 ### Determining processor availability
 - [class func supportedScaleFactors(frameWidth: Int, frameHeight: Int) -> [Float]](./supportedscalefactors%28framewidth,frameheight%29.md)
+- [maximumDimensions](./maximumdimensions.md)
+  Maximum dimensions for a source frame for the processor.
+- [minimumDimensions](./minimumdimensions.md)
+  Minimum dimensions for a source frame for the processor.
 
 
 ---

@@ -40,6 +40,10 @@ init(name: NSNotification.Name, object: Any?, userInfo: [AnyHashable : Any]? = n
   Returns a new notification object with a specified name and object.
 - [NSNotification.Name](./name-swift.struct.md)
   A structure that defines the name of a notification.
+- [- init](./init.md)
+  Initializes an empty notification.
+- [+ notificationWithName:object:userInfo:](./notificationwithname_object_userinfo_.md)
+  Returns a notification object with a specified name, object, and user information.
 
 
 ---

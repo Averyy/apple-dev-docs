@@ -35,6 +35,8 @@ var isBlacklisted: Bool { get }
   The expiration date of a pass.
 - [var isBlocked: Bool](./isblocked.md)
   A Boolean value that indicates the pass issuer disabled a stored-value pass.
+- [blocked](./blocked.md)
+  A Boolean value that indicates the pass issuer disabled a stored-value pass.
 
 
 ---

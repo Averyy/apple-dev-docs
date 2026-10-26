@@ -35,6 +35,10 @@ var kEncodingString8Bit: String { get }
 - [var kOBEXHeaderIDKeyName: Unmanaged<CFString>!](./kobexheaderidkeyname.md)
 - [var kOBEXHeaderIDKeyObjectClass: Unmanaged<CFString>!](./kobexheaderidkeyobjectclass.md)
 - [var kOBEXHeaderIDKeyTarget: Unmanaged<CFString>!](./kobexheaderidkeytarget.md)
+- [IOBluetoothHostControllerPoweredOffNotification](./iobluetoothhostcontrollerpoweredoffnotification.md)
+- [IOBluetoothHostControllerPoweredOnNotification](./iobluetoothhostcontrollerpoweredonnotification.md)
+- [IOBluetoothL2CAPChannelPublishedNotification](./iobluetoothl2capchannelpublishednotification.md)
+- [IOBluetoothL2CAPChannelTerminatedNotification](./iobluetoothl2capchannelterminatednotification.md)
 
 
 ---

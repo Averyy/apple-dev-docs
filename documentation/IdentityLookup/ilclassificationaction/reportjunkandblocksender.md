@@ -28,7 +28,7 @@ The extension creates an SMS message based on the response, and displays the mes
 
 Next, the extension displays an alert to notify the user that the number will be blocked. To unblock the number, users must go to the Call Blocking & Identification settings in the Settings app.
 
-Finally, the extension dismisses the [`ILClassificationUIExtensionViewController`](https://developer.apple.com/documentation/identitylookupui/ilclassificationuiextensionviewcontroller).
+Finally, the extension dismisses the [`ILClassificationUIExtensionViewController`](../../IdentityLookupUI/ilclassificationuiextensionviewcontroller.md).
 
 ## See Also
 

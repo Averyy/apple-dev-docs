@@ -33,6 +33,12 @@ A new labeled value object.
 - `label`: A string value for the label portion of the object, or `nil` if the value doesn’t have a label.
 - `value`: A value for the labeled value object. For valid values, see [`CNContact`](../cncontact.md) properties that are arrays of labeled value objects.
 
+## See Also
+
+### Creating a labeled value
+- [+ labeledValueWithLabel:value:](./labeledvaluewithlabel_value_.md)
+  Returns a new labeled value identifier.
+
 
 ---
 

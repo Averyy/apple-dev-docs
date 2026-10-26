@@ -109,6 +109,31 @@ typedef enum { ... } BNNSActivationFunction;
   An activation function that returns its input minus the hyperbolic tangent of its input.
 - [var BNNSActivationFunctionThreshold: BNNSActivationFunction](./bnnsactivationfunctionthreshold.md)
   An activation function that returns beta if its input is less than a specified threshold, otherwise it returns its input.
+- [BNNSActivationFunctionClamp](./bnnsactivationfunction/bnnsactivationfunctionclamp.md)
+  An activation function that returns its input clamped to the specified range.
+- [BNNSActivationFunctionIntegerLinearSaturate](./bnnsactivationfunction/bnnsactivationfunctionintegerlinearsaturate.md)
+  An activation function that returns an arithmetic shift, preserving sign.
+- [BNNSActivationFunctionIntegerLinearSaturatePerChannel](./bnnsactivationfunction/bnnsactivationfunctionintegerlinearsaturateperchannel.md)
+  An activation function that returns an arithmetic shift, preserving sign for each channel.
+- [BNNSActivationFunctionLinear](./bnnsactivationfunction/bnnsactivationfunctionlinear.md)
+  An activation function that returns its input multiplied by a specified value.
+- [BNNSActivationFunctionSoftmax](./bnnsactivationfunction/bnnsactivationfunctionsoftmax.md)
+  An activation function that returns the softmax function of its input.
+### Enumeration Cases
+- [BNNSActivationFunctionAbs](./bnnsactivationfunction/bnnsactivationfunctionabs.md)
+  An activation function that returns the absolute value of its input.
+- [BNNSActivationFunctionIdentity](./bnnsactivationfunction/bnnsactivationfunctionidentity.md)
+  An activation function that returns its input.
+- [BNNSActivationFunctionLeakyRectifiedLinear](./bnnsactivationfunction/bnnsactivationfunctionleakyrectifiedlinear.md)
+  An activation function that returns its input when that is greater than or equal to zero, otherwise it returns its input multiplied by a specified value.
+- [BNNSActivationFunctionRectifiedLinear](./bnnsactivationfunction/bnnsactivationfunctionrectifiedlinear.md)
+  An activation function that returns its input when that is greater than or equal to zero, otherwise it returns zero.
+- [BNNSActivationFunctionScaledTanh](./bnnsactivationfunction/bnnsactivationfunctionscaledtanh.md)
+  An activation function that returns the scaled hyperbolic tangent of its input.
+- [BNNSActivationFunctionSigmoid](./bnnsactivationfunction/bnnsactivationfunctionsigmoid.md)
+  An activation function that returns the sigmoid function of its input.
+- [BNNSActivationFunctionTanh](./bnnsactivationfunction/bnnsactivationfunctiontanh.md)
+  An activation function that returns the hyperbolic tangent of its input.
 
 ## Relationships
 

@@ -88,6 +88,10 @@ Buffers inherently support the [`MTLResource`](./mtlresource.md) protocol’s pr
   Returns a partially converted Metal vertex descriptor.
 - [func MTKModelIOVertexDescriptorFromMetal(MTLVertexDescriptor) -> MDLVertexDescriptor](../MetalKit/mtkmodeliovertexdescriptorfrommetal%28_%29.md)
   Returns a partially converted Model I/O vertex descriptor.
+- [MTKMetalVertexDescriptorFromModelIOWithError](../MetalKit/mtkmetalvertexdescriptorfrommodeliowitherror.md)
+  Returns a partially converted Metal vertex descriptor, reporting any error that occurs.
+- [MTKModelIOVertexDescriptorFromMetalWithError](../MetalKit/mtkmodeliovertexdescriptorfrommetalwitherror.md)
+  Returns a partially converted Model I/O vertex descriptor, reporting any error that occurs.
 
 ## See Also
 

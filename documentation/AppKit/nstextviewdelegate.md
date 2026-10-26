@@ -92,6 +92,15 @@ protocol NSTextViewDelegate : NSTextDelegate
 ### Contextual Menu Management
 - [func textView(NSTextView, menu: NSMenu, for: NSEvent, at: Int) -> NSMenu?](./nstextviewdelegate/textview%28_,menu,for,at%29.md)
   Allows delegate to control the context menu returned by the text view.
+### Deprecated
+- [- textView:clickedOnLink:](./nstextviewdelegate/textview_clickedonlink_.md)
+  Sent after the user clicks on a link.
+- [- textView:draggedCell:inRect:event:](./nstextviewdelegate/textview_draggedcell_inrect_event_.md)
+  Sent when the user attempts to drag a cell.
+- [- textView:clickedOnCell:inRect:](./nstextviewdelegate/textview_clickedoncell_inrect_.md)
+  Sent when the user clicks a cell.
+- [- textView:doubleClickedOnCell:inRect:](./nstextviewdelegate/textview_doubleclickedoncell_inrect_.md)
+  Sent when the user double-clicks a cell.
 
 ## Relationships
 

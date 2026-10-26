@@ -77,6 +77,24 @@ If there is an entry that lists the operation, the system checks whether the cal
   Sets the access of a given keychain item.
 - [func SecKeychainItemCopyAccess(SecKeychainItem, UnsafeMutablePointer<SecAccess?>) -> OSStatus](./seckeychainitemcopyaccess%28_,_%29.md)
   Retrieves the access of a given keychain item.
+### Legacy Access Control Operations
+- [SecACLCreateFromSimpleContents](./secaclcreatefromsimplecontents.md)
+  Creates a new access control list entry from the application list, description, and prompt selector provided and adds it to an item’s access object.
+- [SecACLCopySimpleContents](./secaclcopysimplecontents.md)
+  Returns the application list, description, and CSSM prompt selector for a given access control list entry.
+- [SecACLSetSimpleContents](./secaclsetsimplecontents.md)
+  Sets the application list, description, and prompt selector for a given access control list entry.
+- [SecACLGetAuthorizations](./secaclgetauthorizations.md)
+  Retrieves the CSSM authorization tags of a given access control list entry.
+- [SecACLSetAuthorizations](./secaclsetauthorizations.md)
+  Sets the CSSM authorization tags for a given access control list entry.
+- [SecAccessCopySelectedACLList](./secaccesscopyselectedacllist.md)
+  Retrieves selected access control lists from a given access object.
+- [SecAccessCreateFromOwnerAndACL](./secaccesscreatefromownerandacl.md)
+  Creates a new access object using the owner and access control list you provide.
+- [SecAccessGetOwnerAndACL](./secaccessgetownerandacl.md)
+  Retrieves the owner and the access control list of a given access object.
+- [OpaqueSecAccessRef](./opaquesecaccessref.md)
 
 
 ---

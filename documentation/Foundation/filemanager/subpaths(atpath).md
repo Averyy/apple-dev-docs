@@ -71,6 +71,8 @@ In macOS 10.5 and later, use [`subpathsOfDirectory(atPath:)`](./subpathsofdirec
   Options for enumerating mounted volumes with the [`mountedVolumeURLs(includingResourceValuesForKeys:options:)`](./mountedvolumeurls%28includingresourcevaluesforkeys,options%29.md) method.
 - [func subpathsOfDirectory(atPath: String) throws -> [String]](./subpathsofdirectory%28atpath%29.md)
   Performs a deep enumeration of the specified directory and returns the paths of all of the contained subdirectories.
+- [- enumeratorAtURL:includingPropertiesForKeys:options:errorHandler:](../nsfilemanager/enumeratoraturl_includingpropertiesforkeys_options_errorhandler_.md)
+  Returns a directory enumerator object that can be used to perform a deep enumeration of the directory at the specified URL.
 
 
 ---

@@ -55,6 +55,8 @@ Each altitude source has unique performance and accuracy characteristics.
   Vertical distance, in meters, between this anchor and sea level.
 - [var altitudeSource: ARGeoAnchor.AltitudeSource](./altitudesource-swift.property.md)
   A record of the source from which an altitude came.
+- [altitude](./altitude-9kges.md)
+  Vertical distance, in meters, between this anchor and sea level.
 
 
 ---

@@ -102,6 +102,7 @@ Tab bar controllers serve the same purpose in tvOS as in iOS, but provide slight
 - [class UITabSidebarItem](./uitabsidebaritem.md)
 - [UITabSidebarItem.Request](./uitabsidebaritem/request.md)
 - [UITabBarController.Sidebar.Animating](./uitabbarcontroller/sidebar-swift.class/animating.md)
+- [UITabSidebarScrollTarget](./uitabsidebarscrolltarget.md)
 ### Adapting to the tab bar layout
 - [var contentLayoutGuide: UILayoutGuide](./uitabbarcontroller/contentlayoutguide.md)
   The content layout guide provides the layout area for the UITabBarController unobscured by the tab bar or sidebar.

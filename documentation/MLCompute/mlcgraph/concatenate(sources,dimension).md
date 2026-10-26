@@ -47,6 +47,14 @@ A result tensor.
   Adds a scatter layer to the graph.
 - [func transpose(dimensions: [Int], source: MLCTensor) -> MLCTensor?](./transpose%28dimensions,source%29.md)
   Adds a new transpose layer to the graph using the dimensions and source tensor you specify.
+- [- splitWithSource:splitSectionLengths:dimension:](./splitwithsource_splitsectionlengths_dimension_.md)
+  Adds a new split layer to the graph using the source tensor, lengths of each split section, and dimension to split the source tensor that you specify.
+- [- selectWithSources:condition:](./selectwithsources_condition_.md)
+  Adds a select layer to the graph using the condition mask and source tensors you specify.
+- [- reshapeWithShape:source:](./reshapewithshape_source_.md)
+  Adds a new reshape layer to the graph using the shape and source tensor you specify.
+- [- transposeWithDimensions:source:](./transposewithdimensions_source_.md)
+  Adds a new transpose layer to the graph using the dimensions and source tensor you specify.
 
 
 ---

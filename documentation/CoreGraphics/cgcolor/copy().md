@@ -48,6 +48,8 @@ A copy of the specified color. In Objective-C, you’re responsible for releasin
   Creates a color using a list of intensity values (including alpha) and an associated color space.
 - [init?(patternSpace: CGColorSpace, pattern: CGPattern, components: UnsafePointer<CGFloat>)](./init%28patternspace,pattern,components%29.md)
   Creates a color using a list of intensity values (including alpha), a pattern color space, and a pattern.
+- [CGColorGetConstantColor](../cgcolorgetconstantcolor.md)
+  Returns a color object that represents a constant color.
 
 
 ---

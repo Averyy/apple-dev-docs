@@ -44,6 +44,9 @@ Although these symbols are available for use, Apple is no longer actively develo
   Returns a Boolean value indicating whether animations are enabled.
 - [func forBaselineLayout() -> UIView](./uiview/forbaselinelayout%28%29.md)
   Returns a view used to satisfy baseline constraints.
+### Deprecated properties
+- [contentStretch](./uiview/contentstretch.md)
+  The rectangle that defines the stretchable and nonstretchable regions of a view.
 
 
 ---

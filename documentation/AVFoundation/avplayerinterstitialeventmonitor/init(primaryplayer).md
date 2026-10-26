@@ -29,6 +29,12 @@ init(primaryPlayer: AVPlayer)
 
 - `primaryPlayer`: An object that plays the primary content.
 
+## See Also
+
+### Creating a monitor
+- [+ interstitialEventMonitorWithPrimaryPlayer:](./interstitialeventmonitorwithprimaryplayer_.md)
+  A convenience initializer that creates an observer with a player item.
+
 
 ---
 

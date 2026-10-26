@@ -31,6 +31,8 @@ Properties and methods for programmatically debugging runtime issues with a comm
 ### Reading the runtime message logs
 - [var logs: MTLLogContainer](./mtlcommandbuffer/logs-518l2.md)
   The messages the command buffer records as the GPU runs its commands.
+- [logs](./mtlcommandbuffer/logs.md)
+  The messages the command buffer records as the GPU runs its commands.
 ### Checking scheduling times on the CPU
 - [var kernelStartTime: CFTimeInterval](./mtlcommandbuffer/kernelstarttime.md)
   The host time, in seconds, when the CPU begins to schedule the command buffer.

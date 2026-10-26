@@ -36,6 +36,8 @@ Use this class to express iOS-specific geometry preferences when you call [`requ
 ### Requesting preferred interface orientations
 - [var interfaceOrientations: UIInterfaceOrientationMask?](./ios/interfaceorientations.md)
   The preferred interface orientations for the scene.
+- [interfaceOrientations](../../uiwindowscenegeometrypreferencesios/interfaceorientations.md)
+  The preferred interface orientations for the scene.
 
 ## Relationships
 
@@ -58,6 +60,8 @@ Use this class to express iOS-specific geometry preferences when you call [`requ
   The current values for the window scene’s geometry in system space.
 - [func requestGeometryUpdate(UIWindowScene.GeometryPreferences, errorHandler: ((any Error) -> Void)?)](../requestgeometryupdate%28_,errorhandler%29.md)
   Requests an update to the window scene’s geometry using the specified geometry preferences object.
+- [interfaceOrientations](../../uiwindowscenegeometrypreferencesios/interfaceorientations.md)
+  The preferred interface orientations for the scene.
 ### Working with window geometry
 - [var effectiveGeometry: UIWindowScene.Geometry](../effectivegeometry.md)
   The current values for the window scene’s geometry in system space.

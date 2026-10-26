@@ -56,12 +56,20 @@ Color objects provide a fast and convenient way to manage and set colors, especi
   Creates a color using a list of intensity values (including alpha) and an associated color space.
 - [init?(patternSpace: CGColorSpace, pattern: CGPattern, components: UnsafePointer<CGFloat>)](./cgcolor/init%28patternspace,pattern,components%29.md)
   Creates a color using a list of intensity values (including alpha), a pattern color space, and a pattern.
+- [CGColorGetConstantColor](./cgcolorgetconstantcolor.md)
+  Returns a color object that represents a constant color.
 ### Getting System Colors
 - [class var black: CGColor](./cgcolor/black.md)
   The black color in the Generic gray color space.
 - [class var white: CGColor](./cgcolor/white.md)
   The white color in the Generic gray color space.
 - [class var clear: CGColor](./cgcolor/clear.md)
+  The clear color in the Generic gray color space.
+- [kCGColorBlack](./kcgcolorblack.md)
+  The black color in the Generic gray color space.
+- [kCGColorWhite](./kcgcolorwhite.md)
+  The white color in the Generic gray color space.
+- [kCGColorClear](./kcgcolorclear.md)
   The clear color in the Generic gray color space.
 ### Examining a Color
 - [var alpha: CGFloat](./cgcolor/alpha.md)
@@ -74,6 +82,10 @@ Color objects provide a fast and convenient way to manage and set colors, especi
   Returns the number of color components (including alpha) associated with a color.
 - [var pattern: CGPattern?](./cgcolor/pattern.md)
   Returns the pattern associated with a color in a pattern color space.
+- [CGColorEqualToColor](./cgcolorequaltocolor.md)
+  Indicates whether two colors are equal.
+- [CGColorGetComponents](./cgcolorgetcomponents.md)
+  Returns the values of the color components (including alpha) associated with a color.
 ### Converting Between Color Spaces
 - [class let conversionTRCSize: CFString](./cgcolor/conversiontrcsize.md)
 - [func converted(to: CGColorSpace, intent: CGColorRenderingIntent, options: CFDictionary?) -> CGColor?](./cgcolor/converted%28to,intent,options%29.md)
@@ -88,6 +100,11 @@ Color objects provide a fast and convenient way to manage and set colors, especi
 - [init?(headroom: Float, colorSpace: CGColorSpace, red: CGFloat, green: CGFloat, blue: CGFloat, alpha: CGFloat)](./cgcolor/init%28headroom,colorspace,red,green,blue,alpha%29.md)
 ### Instance Properties
 - [var contentHeadroom: Float](./cgcolor/contentheadroom.md)
+### Retaining and Releasing Color Objects
+- [CGColorRelease](./cgcolorrelease.md)
+  Decrements the retain count of a color.
+- [CGColorRetain](./cgcolorretain.md)
+  Increments the retain count of a color.
 
 ## Relationships
 
@@ -112,6 +129,31 @@ Color objects provide a fast and convenient way to manage and set colors, especi
   A profile that specifies how to interpret a color value for display.
 - [class CGFont](./cgfont.md)
   A set of character glyphs and layout information for drawing text.
+### Opaque Types
+- [CGContextRef](./cgcontext.md)
+  A Quartz 2D drawing environment.
+- [CGDataConsumerRef](./cgdataconsumer.md)
+  An abstraction for data-writing tasks that eliminates the need to manage a raw memory buffer.
+- [CGDataProviderRef](./cgdataprovider.md)
+  An abstraction for data-reading tasks that eliminates the need to manage a raw memory buffer.
+- [CGFunctionRef](./cgfunction.md)
+  A general facility for defining and using callback functions.
+- [CGGradientRef](./cggradient.md)
+  A definition for a smooth transition between colors for drawing radial and axial gradient fills.
+- [CGImageRef](./cgimage.md)
+  A bitmap image or image mask.
+- [CGLayerRef](./cglayer.md)
+  An offscreen context for reusing content drawn with Core Graphics.
+- [CGPathRef](./cgpath.md)
+  An immutable graphics path: a mathematical description of shapes or lines to be drawn in a graphics context.
+- [CGPatternRef](./cgpattern.md)
+  A 2D pattern to be used for drawing graphics paths.
+- [CGPDFArray](./cgpdfarray.md)
+  An array structure within a PDF document.
+- [CGPDFContentStream](./cgpdfcontentstream.md)
+  A representation of one or more content data streams in a PDF page.
+- [CGPDFDictionary](./cgpdfdictionary.md)
+  A dictionary structure within a PDF document.
 
 
 ---

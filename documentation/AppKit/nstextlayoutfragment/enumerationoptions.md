@@ -33,6 +33,9 @@ enum NSTextLayoutFragmentEnumerationOptions : NSUInteger;
   When enumerating, tell the layout fragments to estimate their size.
 - [static var reverse: NSTextLayoutFragment.EnumerationOptions](./enumerationoptions/reverse.md)
   Causes the enumeration to start from the last element.
+### Enumeration Cases
+- [NSTextLayoutFragmentEnumerationOptionsNone](../nstextlayoutfragmentenumerationoptions/nstextlayoutfragmentenumerationoptionsnone.md)
+  The value that represents no selected enumeration options.
 
 ## Relationships
 

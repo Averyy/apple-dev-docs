@@ -24,7 +24,7 @@ You start an Apple News Format article by creating a JSON article document file 
 
 ###### An Article Is a JSON Object
 
-At the most basic level, an `article.json` file contains a single JSON *object* — the [`ArticleDocument`](https://developer.apple.com/documentation/applenewsformat/articledocument) object. Like all JSON objects, the article document object begins and ends with curly brackets (`{}`) and is made up of *properties*.
+At the most basic level, an `article.json` file contains a single JSON *object* — the [`ArticleDocument`](../AppleNewsFormat/articledocument.md) object. Like all JSON objects, the article document object begins and ends with curly brackets (`{}`) and is made up of *properties*.
 
 ###### An Object Has Properties Structured as Name-Value Pairs
 
@@ -104,7 +104,7 @@ Because the value of a property can be an object or an array, properties are oft
 
 ###### Some Properties Are Optional
 
-Not all properties associated with an object are required. For example, the [`Layout`](https://developer.apple.com/documentation/applenewsformat/layout) component object has four properties (`columns`, `gutter`, `margin`, and `width`), but only two properties (`columns` and `width`) are required.
+Not all properties associated with an object are required. For example, the [`Layout`](../AppleNewsFormat/layout.md) component object has four properties (`columns`, `gutter`, `margin`, and `width`), but only two properties (`columns` and `width`) are required.
 
 > **Note**:  If a property is required by Apple News Format, omitting the property generates an error in your code. Required properties are noted in the documentation for each object.
 
@@ -149,7 +149,7 @@ Apple News Format supports both ASCII and Unicode character sets. You can includ
 ### Essentials
 - [Creating an Article: Main Steps](./creating-an-article-main-steps.md)
   Plan the design for your article and create it in Apple News Format.
-- [object ArticleDocument](https://developer.apple.com/documentation/applenewsformat/articledocument)
+- [object ArticleDocument](../AppleNewsFormat/articledocument.md)
   The root object of an Apple News article, that contains required properties, metadata, content, layout, and styles.
 
 

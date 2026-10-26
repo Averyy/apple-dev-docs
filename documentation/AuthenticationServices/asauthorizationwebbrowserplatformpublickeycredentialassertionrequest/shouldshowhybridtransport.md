@@ -28,6 +28,8 @@ var shouldShowHybridTransport: Bool { get set }
 ### Information about the assertion
 - [var clientData: ASPublicKeyCredentialClientData?](./clientdata-655pi.md)
   The client data to supply to the relying party.
+- [clientData](./clientdata-4b5aw.md)
+  The client data to supply to the relying party.
 
 
 ---

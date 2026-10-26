@@ -84,6 +84,8 @@ All the concrete `HKQuery` subclasses take a predicate. You can use this predica
   Returns a predicate that checks a category sample’s value.
 - [protocol HKCategoryValuePredicateProviding](./hkcategoryvaluepredicateproviding.md)
   A protocol for objects that produce predicates that match category value samples.
+- [+ predicateForCategorySamplesEqualToValues:](./hkquery/predicateforcategorysamplesequaltovalues_.md)
+  A predicate that returns category samples with a matching value.
 ### Creating clinical record predicates
 - [class func predicateForClinicalRecords(from: HKSource, fhirResourceType: HKFHIRResourceType, identifier: String) -> NSPredicate](./hkquery/predicateforclinicalrecords%28from,fhirresourcetype,identifier%29.md)
   Returns a predicate for a specific FHIR resource.

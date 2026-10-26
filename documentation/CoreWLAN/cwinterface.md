@@ -46,6 +46,8 @@ Provides access to various WLAN interface parameters, and operations such as sca
   Convenience method for getting an CWInterface object with the specified name.
 - [convenience init(name: String?)](./cwinterface/init%28name%29.md)
   An instance method for obtaining an CWInterface object.
+- [+ interface](./cwinterface/interface.md)
+  Convenience method for getting an CWInterface object for the default WLAN interface.
 ### Getting all attached interfaces
 - [class func interfaceNames() -> Set<String>?](./cwinterface/interfacenames%28%29.md)
   Returns the list of BSD names for WLAN interfaces available on the current system.

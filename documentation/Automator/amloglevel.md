@@ -44,6 +44,12 @@ enum AMLogLevel : NSUInteger;
 - [Sendable](../Swift/sendable.md)
 - [SendableMetatype](../Swift/sendablemetatype.md)
 
+## See Also
+
+### Performing Logging
+- [- logMessageWithLevel:format:](./amaction/logmessagewithlevel_format_.md)
+  Displays a message in Automator’s log area.
+
 
 ---
 

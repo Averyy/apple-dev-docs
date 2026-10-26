@@ -35,6 +35,21 @@
       "file_path": "documentation/TVMLKit/transition-style-values.md",
       "hash": "4dfd721ec22cda8504c45cb34685b457fc967e5d3fb855ef22385e92c487ec23"
     },
+    "https://developer.apple.com/documentation/tvmlkit/tv_extern": {
+      "etag": "\"8e0-65d55edcd1987-df\"",
+      "file_path": "documentation/TVMLKit/tv_extern.md",
+      "hash": "49ac215edf94f6d5b4ceae8b7549d7ad87345e2116a0c69757717b2d270cd6af"
+    },
+    "https://developer.apple.com/documentation/tvmlkit/tv_extern_class": {
+      "etag": "\"928-65d55edd0f86d-df\"",
+      "file_path": "documentation/TVMLKit/tv_extern_class.md",
+      "hash": "4441b90730644fc6d8ff72aa6e6579b75a3f3e56d4451919f42eaf918a18cab3"
+    },
+    "https://developer.apple.com/documentation/tvmlkit/tv_extern_class_available": {
+      "etag": "\"a00-65d55edd95078-df\"",
+      "file_path": "documentation/TVMLKit/tv_extern_class_available.md",
+      "hash": "860c479306c4e97853e6ca710fef937cde680fb7f740e6faaf3b7ce36c7c6a58"
+    },
     "https://developer.apple.com/documentation/tvmlkit/tvapplicationcontroller": {
       "etag": "\"6aaa-65d55edceb815-df\"",
       "file_path": "documentation/TVMLKit/tvapplicationcontroller.md",
@@ -380,10 +395,25 @@
       "file_path": "documentation/TVMLKit/tvdocumentviewcontroller/event/unload.md",
       "hash": "976791b08d4cbd1091da8a6c5e3419b38bffd8c4a6d415147744d43ed7873be8"
     },
+    "https://developer.apple.com/documentation/tvmlkit/tvdocumentviewcontroller/init": {
+      "etag": "\"ed6-659029086dbce-df\"",
+      "file_path": "documentation/TVMLKit/tvdocumentviewcontroller/init.md",
+      "hash": "f2f4bdfc114c76b8b3d071f6ea1de087d5d66990d742f014f48619699a950fed"
+    },
     "https://developer.apple.com/documentation/tvmlkit/tvdocumentviewcontroller/init(context:for:)": {
       "etag": "\"2ae0-65d55eddaa17e-df\"",
       "file_path": "documentation/TVMLKit/tvdocumentviewcontroller/init(context,for).md",
       "hash": "e768619c9589585a19466a007ed7d7149786421a890892bc32acc6504f46f5a7"
+    },
+    "https://developer.apple.com/documentation/tvmlkit/tvdocumentviewcontroller/initwithcoder:": {
+      "etag": "\"1343-659029085d69f-df\"",
+      "file_path": "documentation/TVMLKit/tvdocumentviewcontroller/initwithcoder_.md",
+      "hash": "4b400a6eb82c14713236b716a8351b26bc15246a6e0d6bb48903118fb8739993"
+    },
+    "https://developer.apple.com/documentation/tvmlkit/tvdocumentviewcontroller/initwithnibname:bundle:": {
+      "etag": "\"18c4-659029085d69f-df\"",
+      "file_path": "documentation/TVMLKit/tvdocumentviewcontroller/initwithnibname_bundle_.md",
+      "hash": "5716bc37bc29a980e4e5cd08fe60fbae9c0c6a96256721d0eee198d456f629f5"
     },
     "https://developer.apple.com/documentation/tvmlkit/tvdocumentviewcontroller/update(using:)": {
       "etag": "\"1f79-65d55edd95078-df\"",
@@ -979,6 +1009,26 @@
       "etag": "\"3e01-65d55edd756fe-df\"",
       "file_path": "documentation/TVMLKit/tvmediaitem/userinfo.md",
       "hash": "83281f4a0f482edd1be59fa330c52298238f86c5be02ffea1f464437c685f279"
+    },
+    "https://developer.apple.com/documentation/tvmlkit/tvml_deprecated": {
+      "etag": "\"947-65d55edcd1987-df\"",
+      "file_path": "documentation/TVMLKit/tvml_deprecated.md",
+      "hash": "14eae242ee393d925b00addaab8c1891325fe47289bce93fe523ce8ce6d85aac"
+    },
+    "https://developer.apple.com/documentation/tvmlkit/tvml_deprecated_begin": {
+      "etag": "\"98f-65d55edd95078-df\"",
+      "file_path": "documentation/TVMLKit/tvml_deprecated_begin.md",
+      "hash": "58b7d91d986dd5ea012399eca1979f04f89ab6ebcb00f1e06ad906a7b1b78a5c"
+    },
+    "https://developer.apple.com/documentation/tvmlkit/tvml_deprecated_end": {
+      "etag": "\"958-65d55edcd1987-df\"",
+      "file_path": "documentation/TVMLKit/tvml_deprecated_end.md",
+      "hash": "fc060567c3945a87686979b69cdaa9ab9b48fe480ed12282bc066508cbe1f071"
+    },
+    "https://developer.apple.com/documentation/tvmlkit/tvml_deprecated_ios": {
+      "etag": "\"9f2-65d55edd348ae-df\"",
+      "file_path": "documentation/TVMLKit/tvml_deprecated_ios.md",
+      "hash": "aed63f45b7f7c00853fd807c224e640a6a11c1c04105ef746e9dbc9b4a8ce18f"
     },
     "https://developer.apple.com/documentation/tvmlkit/tvmlkit-constants": {
       "etag": "\"f59-65902907fe9d6-df\"",
@@ -1775,6 +1825,21 @@
       "file_path": "documentation/TVMLKit/transition-style-values.md",
       "hash": "4dfd721ec22cda8504c45cb34685b457fc967e5d3fb855ef22385e92c487ec23"
     },
+    "https://developer.apple.com/tutorials/data/documentation/tvmlkit/tv_extern.json": {
+      "etag": "\"8e0-65d55edcd1987-df\"",
+      "file_path": "documentation/TVMLKit/tv_extern.md",
+      "hash": "49ac215edf94f6d5b4ceae8b7549d7ad87345e2116a0c69757717b2d270cd6af"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/tvmlkit/tv_extern_class.json": {
+      "etag": "\"928-65d55edd0f86d-df\"",
+      "file_path": "documentation/TVMLKit/tv_extern_class.md",
+      "hash": "4441b90730644fc6d8ff72aa6e6579b75a3f3e56d4451919f42eaf918a18cab3"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/tvmlkit/tv_extern_class_available.json": {
+      "etag": "\"a00-65d55edd95078-df\"",
+      "file_path": "documentation/TVMLKit/tv_extern_class_available.md",
+      "hash": "860c479306c4e97853e6ca710fef937cde680fb7f740e6faaf3b7ce36c7c6a58"
+    },
     "https://developer.apple.com/tutorials/data/documentation/tvmlkit/tvapplicationcontroller.json": {
       "etag": "\"6aaa-65d55edceb815-df\"",
       "file_path": "documentation/TVMLKit/tvapplicationcontroller.md",
@@ -2124,6 +2189,21 @@
       "etag": "\"2ae0-65d55eddaa17e-df\"",
       "file_path": "documentation/TVMLKit/tvdocumentviewcontroller/init(context,for).md",
       "hash": "e768619c9589585a19466a007ed7d7149786421a890892bc32acc6504f46f5a7"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/tvmlkit/tvdocumentviewcontroller/init.json": {
+      "etag": "\"ed6-659029086dbce-df\"",
+      "file_path": "documentation/TVMLKit/tvdocumentviewcontroller/init.md",
+      "hash": "f2f4bdfc114c76b8b3d071f6ea1de087d5d66990d742f014f48619699a950fed"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/tvmlkit/tvdocumentviewcontroller/initwithcoder:.json": {
+      "etag": "\"1343-659029085d69f-df\"",
+      "file_path": "documentation/TVMLKit/tvdocumentviewcontroller/initwithcoder_.md",
+      "hash": "4b400a6eb82c14713236b716a8351b26bc15246a6e0d6bb48903118fb8739993"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/tvmlkit/tvdocumentviewcontroller/initwithnibname:bundle:.json": {
+      "etag": "\"18c4-659029085d69f-df\"",
+      "file_path": "documentation/TVMLKit/tvdocumentviewcontroller/initwithnibname_bundle_.md",
+      "hash": "5716bc37bc29a980e4e5cd08fe60fbae9c0c6a96256721d0eee198d456f629f5"
     },
     "https://developer.apple.com/tutorials/data/documentation/tvmlkit/tvdocumentviewcontroller/update(using:).json": {
       "etag": "\"1f79-65d55edd95078-df\"",
@@ -2719,6 +2799,26 @@
       "etag": "\"3e01-65d55edd756fe-df\"",
       "file_path": "documentation/TVMLKit/tvmediaitem/userinfo.md",
       "hash": "83281f4a0f482edd1be59fa330c52298238f86c5be02ffea1f464437c685f279"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/tvmlkit/tvml_deprecated.json": {
+      "etag": "\"947-65d55edcd1987-df\"",
+      "file_path": "documentation/TVMLKit/tvml_deprecated.md",
+      "hash": "14eae242ee393d925b00addaab8c1891325fe47289bce93fe523ce8ce6d85aac"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/tvmlkit/tvml_deprecated_begin.json": {
+      "etag": "\"98f-65d55edd95078-df\"",
+      "file_path": "documentation/TVMLKit/tvml_deprecated_begin.md",
+      "hash": "58b7d91d986dd5ea012399eca1979f04f89ab6ebcb00f1e06ad906a7b1b78a5c"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/tvmlkit/tvml_deprecated_end.json": {
+      "etag": "\"958-65d55edcd1987-df\"",
+      "file_path": "documentation/TVMLKit/tvml_deprecated_end.md",
+      "hash": "fc060567c3945a87686979b69cdaa9ab9b48fe480ed12282bc066508cbe1f071"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/tvmlkit/tvml_deprecated_ios.json": {
+      "etag": "\"9f2-65d55edd348ae-df\"",
+      "file_path": "documentation/TVMLKit/tvml_deprecated_ios.md",
+      "hash": "aed63f45b7f7c00853fd807c224e640a6a11c1c04105ef746e9dbc9b4a8ce18f"
     },
     "https://developer.apple.com/tutorials/data/documentation/tvmlkit/tvmlkit-constants.json": {
       "etag": "\"f59-65902907fe9d6-df\"",
@@ -3483,8 +3583,8 @@
   },
   "metadata": {
     "render": {
-      "version": 1
+      "version": 2
     },
-    "total_pages": 696
+    "total_pages": 716
   }
 }

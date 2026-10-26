@@ -23,24 +23,24 @@ Once you add a table, you can apply styles (backgrounds, borders, and so on) and
 ### Tables with JSON Data
 - [Adding a JSON Table](./adding-a-json-table.md)
   Add a table to your article that displays JSON data in rows and columns.
-- [object DataTable](https://developer.apple.com/documentation/applenewsformat/datatable)
+- [object DataTable](../AppleNewsFormat/datatable.md)
   The component for adding a JSON data table.
-- [object RecordStore](https://developer.apple.com/documentation/applenewsformat/recordstore)
+- [object RecordStore](../AppleNewsFormat/recordstore.md)
   The object that contains JSON data for a data table.
-- [object DataDescriptor](https://developer.apple.com/documentation/applenewsformat/datadescriptor)
+- [object DataDescriptor](../AppleNewsFormat/datadescriptor.md)
   The object for providing the data type, data formatting, and label for a field in a table.
-- [object DataTableSorting](https://developer.apple.com/documentation/applenewsformat/datatablesorting)
+- [object DataTableSorting](../AppleNewsFormat/datatablesorting.md)
   A data category by which to sort the table in descending or ascending order.
-- [object DataFormat](https://developer.apple.com/documentation/applenewsformat/dataformat)
+- [object DataFormat](../AppleNewsFormat/dataformat.md)
   Properties shared by all data format obejct types.
-- [object FloatDataFormat](https://developer.apple.com/documentation/applenewsformat/floatdataformat)
+- [object FloatDataFormat](../AppleNewsFormat/floatdataformat.md)
   The object that allows you to specify the number of digits after the decimal point for numeric values in data table cells.
-- [object ImageDataFormat](https://developer.apple.com/documentation/applenewsformat/imagedataformat)
+- [object ImageDataFormat](../AppleNewsFormat/imagedataformat.md)
   The object that allows you to specify the minimum and maximum dimensions for images in data table cells.
 ### Tables with HTML Data
 - [Adding an HTML Table](./adding-an-html-table.md)
   Add a table formatted in HTML to your article.
-- [object HTMLTable](https://developer.apple.com/documentation/applenewsformat/htmltable)
+- [object HTMLTable](../AppleNewsFormat/htmltable.md)
   The component for adding tables with HTML data.
 
 

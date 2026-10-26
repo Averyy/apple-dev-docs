@@ -31,6 +31,7 @@ typedef DNSServiceAttribute * DNSServiceAttributeRef;
 - [typealias DNSServiceRef](./dnsserviceref.md)
 - [typealias DNSServiceSleepKeepaliveReply](./dnsservicesleepkeepalivereply.md)
 - [typealias dnssd_sock_t](./dnssd_sock_t.md)
+- [DNSServiceAttribute](./dnsserviceattribute.md)
 
 
 ---

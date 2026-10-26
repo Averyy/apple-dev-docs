@@ -38,6 +38,18 @@ The index of the column in which the specified matrix appears.
   Returns the matrix class used in the browser’s columns.
 - [func setMatrixClass(AnyClass)](./setmatrixclass%28_%29.md)
   Sets the matrix class to be used in the browser’s columns.
+- [- updateScroller](./updatescroller.md)
+  Updates the horizontal scroller to reflect column positions.
+- [- scrollViaScroller:](./scrollviascroller_.md)
+  Scrolls columns left or right based on an `NSScroller`.
+- [- displayAllColumns](./displayallcolumns.md)
+  Updates the browser to display all loaded columns.
+- [- displayColumn:](./displaycolumn_.md)
+  Updates the browser to display the given column.
+- [- acceptsArrowKeys](./acceptsarrowkeys.md)
+  Indicates whether the browser allows navigation using the arrow keys.
+- [- setAcceptsArrowKeys:](./setacceptsarrowkeys_.md)
+  Specifies whether the browser allows navigation using the arrow keys.
 
 
 ---

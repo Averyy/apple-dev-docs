@@ -58,6 +58,11 @@ Create, copy, and query Core Video image format descriptions.
   Returns the user data of a Core Video image format.
 - [func vImageCVImageFormat_SetUserData(vImageCVImageFormat, UnsafeMutableRawPointer!, ((vImageCVImageFormat?, UnsafeMutableRawPointer?) -> Void)!) -> vImage_Error](./vimagecvimageformat_setuserdata%28_,_,_%29.md)
   Sets the user data of a Core Video image format.
+### Image format memory management
+- [vImageCVImageFormat_Retain](./vimagecvimageformat_retain.md)
+  Retains a Core Video image format.
+- [vImageCVImageFormat_Release](./vimagecvimageformat_release.md)
+  Releases a Core Video image format.
 
 
 ---

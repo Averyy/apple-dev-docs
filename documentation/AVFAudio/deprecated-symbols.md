@@ -36,6 +36,9 @@ Review unsupported symbols and their replacements.
 ### Handling audio session interruptions
 - [var AVAudioSessionInterruptionFlags_ShouldResume: Int](./avaudiosessioninterruptionflags_shouldresume.md)
   Indicates that your audio session is active and ready for use.
+### Creating an audio session
+- [- init](./avaudiosession/init.md)
+  Gets a reference to the singleton audio session.
 
 
 ---

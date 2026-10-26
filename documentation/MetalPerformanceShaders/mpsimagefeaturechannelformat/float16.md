@@ -34,6 +34,7 @@ MPSImageFeatureChannelFormatFloat16
   `uint16_t` type with value `[0,65535]` and encoding `[0,1.0]`.
 - [MPSImageFeatureChannelFormat.float32](./float32.md)
   IEEE-754 32-bit floating-point type (single precision, standard `float` type in C). 24 bits of precision + exponent.
+- [MPSImageFeatureChannelFormat_reserved0](./mpsimagefeaturechannelformat_reserved0.md)
 
 
 ---

@@ -67,6 +67,8 @@ enum NSXMLNodeKind : NSUInteger;
 ### Constants
 - [XMLNode.Options](./options.md)
   These constants are input and output options for all `NSXMLNode` objects (unless otherwise indicated), including [`XMLDocument`](../xmldocument.md) objects. You can specify these options in the `NSXMLNode` methods [`init(kind:options:)`](./init%28kind,options%29.md) and [`xmlString(options:)`](./xmlstring%28options%29.md).
+- [NSXMLNodeOptionsNone](../nsxmlnodeoptions/nsxmlnodeoptionsnone.md)
+  No options are requested for this input or output action.
 
 
 ---

@@ -59,6 +59,20 @@ func isAccessibilitySelectorAllowed(_ selector: Selector) -> Bool
   Returns the accessibility element’s value.
 - [func setAccessibilityValue(Any?)](./setaccessibilityvalue%28_%29.md)
   Sets the accessibility element’s value.
+- [accessibilityElement](../nsaccessibility-c.protocol/accessibilityelement.md)
+  A Boolean value that determines whether the accessibility element participates in the accessibility hierarchy.
+- [accessibilityEnabled](../nsaccessibility-c.protocol/accessibilityenabled.md)
+  A Boolean value that determines whether the accessibility element responds to user events.
+- [accessibilityFrame](../nsaccessibility-c.protocol/accessibilityframe.md)
+  The accessibility element’s frame in screen coordinates.
+- [accessibilityHelp](../nsaccessibility-c.protocol/accessibilityhelp.md)
+  The help text for the accessibility element.
+- [accessibilityLabel](../nsaccessibility-c.protocol/accessibilitylabel.md)
+  A short description of the accessibility element.
+- [accessibilityTitle](../nsaccessibility-c.protocol/accessibilitytitle.md)
+  The title of the accessibility element—for example, a button’s visible text.
+- [accessibilityValue](../nsaccessibility-c.protocol/accessibilityvalue.md)
+  The accessibility element’s value.
 
 
 ---

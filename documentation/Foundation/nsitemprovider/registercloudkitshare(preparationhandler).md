@@ -88,6 +88,10 @@ func beginSharing(_ record: CKRecord) {
   Registers an existing collaboration object on a server.
 - [func registerCKShare(container: CKContainer, allowedSharingOptions: CKAllowedSharingOptions, preparationHandler: () async throws -> CKShare)](./registerckshare%28container,allowedsharingoptions,preparationhandler%29.md)
   Creates and registers a new collaboration object using a collection of records to share.
+- [- registerCKShare:container:allowedSharingOptions:](./registerckshare_container_allowedsharingoptions_.md)
+  Registers an existing collaboration object on a server.
+- [- registerCKShareWithContainer:allowedSharingOptions:preparationHandler:](./registercksharewithcontainer_allowedsharingoptions_preparationhandler_.md)
+  Creates and registers a new collaboration object using a collection of records to share.
 
 
 ---

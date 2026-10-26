@@ -43,6 +43,8 @@ This value must be non nil.
   A value describing the processing request in a parameters submission object.
 - [VTMotionBlurParameters.SubmissionMode](./submissionmode-swift.enum.md)
   A value describing the processing request in a parameters submission object.
+- [destinationFrame](./destinationframe.md)
+  A user-allocated pixel buffer that receives the results.
 
 
 ---

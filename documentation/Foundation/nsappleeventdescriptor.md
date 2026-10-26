@@ -75,6 +75,10 @@ If you need to send Apple events, or if you need more information on some of the
   Initializes a newly allocated instance as a descriptor with the specified descriptor type and data (from an instance of `NSData`).
 - [convenience init(eventClass: AEEventClass, eventID: AEEventID, targetDescriptor: NSAppleEventDescriptor?, returnID: AEReturnID, transactionID: AETransactionID)](./nsappleeventdescriptor/init%28eventclass,eventid,targetdescriptor,returnid,transactionid%29.md)
   Initializes a newly allocated instance as a descriptor for an Apple event, initialized with the specified values.
+- [+ descriptorWithDescriptorType:bytes:length:](./nsappleeventdescriptor/descriptorwithdescriptortype_bytes_length_.md)
+  Creates a descriptor initialized with the specified event type that stores the specified data (from a series of bytes).
+- [+ descriptorWithDescriptorType:data:](./nsappleeventdescriptor/descriptorwithdescriptortype_data_.md)
+  Creates a descriptor initialized with the specified event type that stores the specified data (from an instance of `NSData`).
 ### Getting Information About a Descriptor
 - [var aeDesc: UnsafePointer<AEDesc>?](./nsappleeventdescriptor/aedesc.md)
   The `AEDesc` structure encapsulated by the receiver, if it has one.

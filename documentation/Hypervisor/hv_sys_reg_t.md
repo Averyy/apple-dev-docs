@@ -300,6 +300,11 @@ typedef enum { ... } hv_sys_reg_t;
 ### Instance properties
 - [var rawValue: UInt16](./hv_sys_reg_t/rawvalue.md)
   An unsigned 16-bit integer that represents the system registers.
+### Enumeration Cases
+- [HV_SYS_REG_ID_AA64ISAR2_EL1](./hv_sys_reg_id_aa64isar2_el1.md)
+- [HV_SYS_REG_ID_AA64MMFR3_EL1](./hv_sys_reg_id_aa64mmfr3_el1.md)
+- [HV_SYS_REG_ID_AA64MMFR4_EL1](./hv_sys_reg_id_aa64mmfr4_el1.md)
+- [HV_SYS_REG_ID_AA64PFR2_EL1](./hv_sys_reg_id_aa64pfr2_el1.md)
 
 ## Relationships
 

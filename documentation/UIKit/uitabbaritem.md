@@ -71,6 +71,13 @@ A tab bar item can display a supplementary value in a badge that provides extra 
   Registers text attributes that the badge uses for the specified state.
 - [func badgeTextAttributes(for: UIControl.State) -> [NSAttributedString.Key : Any]?](./uitabbaritem/badgetextattributes%28for%29.md)
   Returns the badge’s text attributes for the specified state.
+### Deprecated
+- [- finishedSelectedImage](./uitabbaritem/finishedselectedimage.md)
+  Returns the finished selected image.
+- [- finishedUnselectedImage](./uitabbaritem/finishedunselectedimage.md)
+  Returns the finished unselected image.
+- [- setFinishedSelectedImage:withFinishedUnselectedImage:](./uitabbaritem/setfinishedselectedimage_withfinishedunselectedimage_.md)
+  Sets the finished selected and unselected images.
 
 ## Relationships
 

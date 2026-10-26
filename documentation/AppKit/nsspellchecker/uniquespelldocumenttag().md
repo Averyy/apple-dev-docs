@@ -54,6 +54,8 @@ Use this method to generate tags to avoid collisions with other objects that can
   Returns the default values for quote replacement.
 - [var userReplacementsDictionary: [String : String]](./userreplacementsdictionary.md)
   Returns the dictionary used when replacing words.
+- [- forgetWord:](./forgetword_.md)
+  Remove this word from the spelling dictionary.
 
 
 ---

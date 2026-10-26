@@ -55,6 +55,8 @@ A media item can have more than one media type; for example, an item could be of
   Creates a media query that matches all media items and that groups and sorts collections by genre name.
 - [init(filterPredicates: Set<MPMediaPredicate>?)](./init%28filterpredicates%29.md)
   Initializes a media query with a set of media property predicates.
+- [init](../mpmediaquery-init.md)
+  Initializes a generic media query.
 
 
 ---

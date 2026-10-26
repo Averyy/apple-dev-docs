@@ -29,6 +29,7 @@ The movie file contains audio media.
 
 ### Constants
 - [static var video: MPMovieMediaTypeMask](./video.md)
+- [MPMovieMediaTypeMaskNone](./mpmoviemediatypemasknone.md)
 
 
 ---

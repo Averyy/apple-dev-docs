@@ -42,6 +42,10 @@ The value is [`true`](../../Swift/true.md) if frame reordering occurs, otherwise
   Indicates the preferred affine display transform of the track media for visual display.
 - [var nominalFrameRate: Float32](./nominalframerate.md)
   The frame rate of the track in frames per second, as a 32-bit floating point number.
+- [formatDescriptions](./formatdescriptions.md)
+  An array of format descriptions for the track.
+- [trackEdits](./trackedits.md)
+  An array of edit segments for the given track.
 
 
 ---

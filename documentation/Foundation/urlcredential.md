@@ -50,6 +50,10 @@ When you create a credential, you can specify it for a single request, persist i
   Creates a URL credential instance initialized with a given user name and password, using a given persistence setting.
 - [URLCredential.Persistence](./urlcredential/persistence-swift.enum.md)
   Constants that specify how long the credential will be kept.
+- [+ credentialWithUser:password:persistence:](./nsurlcredential/credentialwithuser_password_persistence_.md)
+  Creates a URL credential instance for internet password authentication with a given user name and password, using a given persistence setting.
+- [+ credentialWithIdentity:certificates:persistence:](./nsurlcredential/credentialwithidentity_certificates_persistence_.md)
+  Creates a URL credential instance for resolving a client certificate authentication challenge.
 ### Getting credential properties
 - [var user: String?](./urlcredential/user.md)
   The credential’s user name.
@@ -69,6 +73,9 @@ When you create a credential, you can specify it for a single request, persist i
 - [init?(coder: NSCoder)](./urlcredential/init%28coder%29.md)
 ### Default Implementations
 - [NSURLCredential Implementations](./urlcredential/nsurlcredential-implementations.md)
+### Type Methods
+- [+ credentialForTrust:](./nsurlcredential/credentialfortrust_.md)
+  Creates a URL credential instance for server trust authentication with a given accepted trust.
 
 ## Relationships
 

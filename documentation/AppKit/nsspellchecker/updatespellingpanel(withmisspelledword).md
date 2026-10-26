@@ -50,6 +50,8 @@ You are responsible for highlighting `word` in the document and for extracting i
   Returns the default values for quote replacement.
 - [var userReplacementsDictionary: [String : String]](./userreplacementsdictionary.md)
   Returns the dictionary used when replacing words.
+- [- forgetWord:](./forgetword_.md)
+  Remove this word from the spelling dictionary.
 
 
 ---

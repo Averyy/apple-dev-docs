@@ -18,6 +18,7 @@
 
 ### Constants
 - [Scale Factors](./iotypes_h_user-space/api-1553154-scale_factors.md)
+- [Scale Factors](./api-1553154-scale_factors.md)
 
 
 ---

@@ -60,6 +60,13 @@ An initialized ordered set containing a uniqued collection of the objects contai
   Initializes a new ordered set with the contents of a set, optionally copying the objects in the set.
 - [init()](./init%28%29.md)
   Initializes a newly allocated ordered set.
+- [- initWithObjects:](./initwithobjects_.md)
+  Initializes a newly allocated set with members taken from the specified list of objects.
+### Related Documentation
+- [+ orderedSetWithArray:](./orderedsetwitharray_.md)
+  Creates and returns a set containing a uniqued collection of the objects contained in a given array.
+- [+ orderedSetWithArray:range:copyItems:](./orderedsetwitharray_range_copyitems_.md)
+  Creates and returns a new ordered set for a specified range of objects in an array.
 
 
 ---

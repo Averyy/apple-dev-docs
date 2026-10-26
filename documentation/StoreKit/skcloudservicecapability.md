@@ -38,6 +38,9 @@ enum SKCloudServiceCapability : NSUInteger;
   The device allows subscription to the Apple Music catalog.
 - [static var addToCloudMusicLibrary: SKCloudServiceCapability](./skcloudservicecapability/addtocloudmusiclibrary.md)
   The device allows tracks to be added to the user’s music library.
+### Enumeration Cases
+- [SKCloudServiceCapabilityNone](./skcloudservicecapability/skcloudservicecapabilitynone.md)
+  The device does not allow playback of Apple Music content or the addition of tracks to the music library.
 
 ## Relationships
 

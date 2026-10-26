@@ -61,6 +61,8 @@ To synchronize different stages within a single pass, create an *intrapass barri
   Creates a memory barrier that enforces the order of write and read operations for specific resources.
 - [func memoryBarrier(scope: MTLBarrierScope, after: MTLRenderStages, before: MTLRenderStages)](./memorybarrier%28scope,after,before%29.md)
   Creates a memory barrier that enforces the order of write and read operations for specific resource types.
+- [- memoryBarrierWithResources:count:afterStages:beforeStages:](./memorybarrierwithresources_count_afterstages_beforestages_.md)
+  Creates a memory barrier that enforces the order of write and read operations for specific resources.
 
 
 ---

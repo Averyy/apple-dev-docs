@@ -34,6 +34,10 @@ static SPRotation3D SPRotation3DInverse(SPRotation3D rotation);
   Constants that define the arc that a slerp operation takes.
 - [static let identity: Rotation3D](./identity.md)
   The identity rotation.
+- [SPRotation3DSlerp](../sprotation3dslerp.md)
+  Returns the spherical linear interpolation along the shortest arc between two rotations.
+- [SPRotation3DSlerpLongest](../sprotation3dslerplongest.md)
+  Returns the spherical linear interpolation along the longest arc between two rotations.
 
 
 ---

@@ -29,6 +29,20 @@ var isCompatibleWithAirPlayVideo: Bool { get }
 
 This property value is [`true`](../../Swift/true.md) if you can play this asset’s content to an external AirPlay device, like an Apple TV.
 
+## See Also
+
+### Accessing suitability
+- [playable](./isplayable.md)
+  A Boolean value that indicates whether the asset has playable content.
+- [exportable](./isexportable.md)
+  A Boolean value that indicates whether you can export this asset using an export session.
+- [readable](./isreadable.md)
+  A Boolean value that indicates whether you can extract the asset’s media data using an asset reader.
+- [composable](./iscomposable.md)
+  A Boolean value that indicates whether you can use the asset as a segment of a composition track.
+- [compatibleWithSavedPhotosAlbum](./iscompatiblewithsavedphotosalbum.md)
+  A Boolean value that indicates whether you can write the asset to the Saved Photos album.
+
 
 ---
 

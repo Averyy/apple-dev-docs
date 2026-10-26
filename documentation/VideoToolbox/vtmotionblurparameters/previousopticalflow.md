@@ -43,6 +43,8 @@ For the first frame this will always be nil. This object is only needed if optic
   A value describing the processing request in a parameters submission object.
 - [VTMotionBlurParameters.SubmissionMode](./submissionmode-swift.enum.md)
   A value describing the processing request in a parameters submission object.
+- [destinationFrame](./destinationframe.md)
+  A user-allocated pixel buffer that receives the results.
 
 
 ---

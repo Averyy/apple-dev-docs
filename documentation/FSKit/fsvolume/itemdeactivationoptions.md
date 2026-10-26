@@ -34,6 +34,8 @@ Callers may want to set a deactivation policy because `FSVolume/ItemDeactivation
   An option to process deactivation for for files with preallocated space.
 - [static var always: FSVolume.ItemDeactivationOptions](./itemdeactivationoptions/always.md)
   An option to always perform deactivation calls.
+- [FSItemDeactivationNever](../fsitemdeactivationoptions/fsitemdeactivationnever.md)
+  An option to never perform deactivation.
 ### Working with raw values
 - [init(rawValue: UInt)](./itemdeactivationoptions/init%28rawvalue%29.md)
 

@@ -53,6 +53,9 @@ Associate a fragmented asset with an instance of [`AVFragmentedAssetMinder`](./a
   Returns tracks that present media of a specified characteristic.
 ### Initializers
 - [convenience init(URL: URL, options: [String : Any]?)](./avfragmentedasset/init%28url,options%29.md)
+### Creating a fragmented asset
+- [+ fragmentedAssetWithURL:options:](./avfragmentedasset/fragmentedassetwithurl_options_.md)
+  Creates a fragmented asset for the media at the specified URL.
 
 ## Relationships
 

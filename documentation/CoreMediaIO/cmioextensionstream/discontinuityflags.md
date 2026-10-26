@@ -29,6 +29,8 @@ enum CMIOExtensionStreamDiscontinuityFlags : uint32_t;
   A flag that indicates a time discontinuity in the stream.
 - [static var sampleDropped: CMIOExtensionStream.DiscontinuityFlags](./discontinuityflags/sampledropped.md)
   A flag that indicates a discontinuity in the stream due to a dropped frame.
+- [CMIOExtensionStreamDiscontinuityFlagNone](../cmioextensionstreamdiscontinuityflags/cmioextensionstreamdiscontinuityflagnone.md)
+  A flag that indicates there’s no discontinuity in the stream.
 ### Initializers
 - [init(rawValue: UInt32)](./discontinuityflags/init%28rawvalue%29.md)
   Creates a flag with an integer value.

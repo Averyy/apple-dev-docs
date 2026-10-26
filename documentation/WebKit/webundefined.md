@@ -23,6 +23,9 @@ class WebUndefined
 
 ### Initializers
 - [init?(coder: NSCoder)](./webundefined/init%28coder%29.md)
+### Getting the shared instance
+- [+ undefined](./webundefined/undefined.md)
+  Returns the shared `WebUndefined` instance.
 
 ## Relationships
 

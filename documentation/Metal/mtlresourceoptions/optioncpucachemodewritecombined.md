@@ -26,6 +26,12 @@ static var optionCPUCacheModeWriteCombined: MTLResourceOptions { get }
 MTLResourceOptionCPUCacheModeWriteCombined
 ```
 
+## See Also
+
+### Deprecated options
+- [MTLResourceOptionCPUCacheModeDefault](./mtlresourceoptioncpucachemodedefault.md)
+  This constant was deprecated in iOS 9.0 and macOS 10.11.
+
 
 ---
 

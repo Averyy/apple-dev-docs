@@ -36,6 +36,8 @@ init(track: AVAssetTrack, outputSettings: [String : Any]?)
 ### Creating a track output
 - [Video settings](../video-settings.md)
   Configure video processing settings using standard key and value constants.
+- [+ assetReaderTrackOutputWithTrack:outputSettings:](./assetreadertrackoutputwithtrack_outputsettings_.md)
+  Returns a new object that reads media data from an asset track.
 
 
 ---

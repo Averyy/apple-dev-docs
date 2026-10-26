@@ -33,6 +33,8 @@ static simd_float4 simd_make_float4(simd_float2 other);
   Returns a new vector from the specified two-element vector, and other elements undefined.
 - [func simd_make_float4_undef(simd_float3) -> simd_float4](./simd_make_float4_undef%28_%29-3f7tu.md)
   Returns a new vector from the specified three-element vector, and other elements undefined.
+- [vector4](./vector4-1op5j.md)
+  Returns a new vector from the specified vectors.
 
 
 ---

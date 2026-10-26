@@ -61,6 +61,8 @@ Creating a composition with this method sets values for the following properties
   Creates a mutable video composition with the specified asset properties and a prototype video composition instruction.
 - [init(asset: AVAsset, applyingCIFiltersWithHandler: (AVAsynchronousCIImageFilteringRequest) -> Void)](./init%28asset,applyingcifilterswithhandler%29.md)
   Creates a mutable video composition configured to apply Core Image filters to each video frame of the specified asset.
+- [+ videoComposition](./videocomposition.md)
+  Creates a new mutable video composition.
 
 
 ---

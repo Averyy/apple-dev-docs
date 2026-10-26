@@ -38,6 +38,8 @@ When either the Sensitive Content Warning setting or Communication Safety parent
   A capability that corresponds to the search bar.
 - [static var stagingArea: PHPickerCapabilities](./stagingarea.md)
   A capability that corresponds to an area in which the selected photos display.
+- [PHPickerCapabilitiesNone](./phpickercapabilitiesnone.md)
+  An option that represents no capabilities.
 
 
 ---

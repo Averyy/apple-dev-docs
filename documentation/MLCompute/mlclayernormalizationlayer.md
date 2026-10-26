@@ -43,6 +43,11 @@ class MLCLayerNormalizationLayer
   The beta tensor parameter you use for optimizer updates.
 - [var gammaParameter: MLCTensorParameter?](./mlclayernormalizationlayer/gammaparameter.md)
   The gamma tensor parameter you use for optimizer updates.
+- [normalizedShape](./mlclayernormalizationlayer/normalizedshape-2cz6k.md)
+  The shape of the axes where normalization occurs.
+### Type Methods
+- [+ layerWithNormalizedShape:beta:gamma:varianceEpsilon:](./mlclayernormalizationlayer/layerwithnormalizedshape_beta_gamma_varianceepsilon_.md)
+  Creates a normalization layer with a shape, beta and gamma tensors, and variance epsilon you specify.
 
 ## Relationships
 

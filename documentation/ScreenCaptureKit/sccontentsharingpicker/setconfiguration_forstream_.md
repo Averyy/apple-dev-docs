@@ -1,0 +1,39 @@
+# setConfiguration:forStream:
+
+**Framework**: ScreenCaptureKit  
+**Kind**: method  
+**Role**: Instance Method
+
+Sets the configuration for the content capture picker for a capture stream, providing allowed selection modes and content excluded from selection.
+
+**Availability**:
+- iOS 27.0+
+- iPadOS 27.0+
+- Mac Catalyst 18.2+
+- macOS 14.0+
+- tvOS 27.0+
+- visionOS 27.0+
+
+## Declaration
+
+```objc
+- (void) setConfiguration:(SCContentSharingPickerConfiguration *) pickerConfig forStream:(SCStream *) stream;
+```
+
+## Parameters
+
+- `pickerConfig`: The configuration to set for the given capture stream. When this value is `nil`, changes the stream configuration to use [`defaultConfiguration`](./defaultconfiguration-9v5sa.md).
+- `stream`: The capture stream to set a configuration for. When this value is `nil`, applies to all currently active streams.
+
+## See Also
+
+### Stream configuration
+- [defaultConfiguration](./defaultconfiguration-9v5sa.md)
+  The default configuration to use for the content capture picker.
+- [maximumStreamCount](./maximumstreamcount-66khx.md)
+  The maximum number of streams the content capture picker allows.
+
+
+---
+
+*[View on Apple Developer](https://developer.apple.com/documentation/screencapturekit/sccontentsharingpicker/setconfiguration:forstream:)*

@@ -51,6 +51,10 @@ func open(_ url: URL, options: NSWorkspace.LaunchOptions = [], configuration: [N
   Returns the full pathnames of all currently mounted removable disks.
 - [func mountedLocalVolumePaths() -> [Any]?](./mountedlocalvolumepaths%28%29.md)
   Returns the mount points of all local volumes, not just the removable ones returned by [`mountedRemovableMedia()`](./mountedremovablemedia%28%29.md).
+- [- openTempFile:](./opentempfile_.md)
+  Opens the specified temporary file using the default app for its type.
+- [- findApplications](./findapplications.md)
+  Examines all apps and updates the records of registered services and file types.
 
 
 ---

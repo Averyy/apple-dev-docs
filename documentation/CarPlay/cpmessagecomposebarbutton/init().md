@@ -34,6 +34,8 @@ A message compose button with a system-provided image.
 ### Creating a Message Compose Bar Button
 - [init(image: UIImage)](./init%28image%29.md)
   Creates a message compose button that displays a custom image.
+- [+ new](./new.md)
+  Creates a message compose button with a system-provided image.
 
 
 ---

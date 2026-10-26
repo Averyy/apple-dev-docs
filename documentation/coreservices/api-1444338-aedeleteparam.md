@@ -37,6 +37,8 @@ Thread safe starting in OS X v10.2.
 ### Deleting Descriptors
 - [func AEDeleteItem(UnsafeMutablePointer<AEDescList>!, Int) -> OSErr](./api-1447164-aedeleteitem.md)
   Deletes a descriptor from a descriptor list, causing all subsequent descriptors to move up one place. 
+- [AEDeleteKeyDesc](../applicationservices/apple_event_manager/api-1806085-aedeletekeydesc.md)
+  Deletes a keyword-specified parameter from an Apple event record.
 
 
 ---

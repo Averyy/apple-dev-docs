@@ -97,6 +97,12 @@ By choosing custom styles for media text, people are requesting improved legibil
   A value that specifies a font style.
 - [enum MACaptionAppearanceTextEdgeStyle](./macaptionappearancetextedgestyle.md)
   A value that specifies a style for the outside of the text.
+### Macros
+- [MA_EXPORT](./ma_export.md)
+- [MA_EXTERN](./ma_extern.md)
+- [MA_VISIBLE](./ma_visible.md)
+- [MA_EXTERN_C_BEGIN](./ma_extern_c_begin.md)
+- [MA_EXTERN_C_END](./ma_extern_c_end.md)
 
 ## See Also
 

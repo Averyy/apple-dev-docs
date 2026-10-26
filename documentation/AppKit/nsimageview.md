@@ -78,6 +78,28 @@ Image views can be static or editable. A static image view only displays the ima
   Removes the symbol effect that matches the specified discrete effect type, using the specified options and animation setting.
 - [func removeAllSymbolEffects(options: SymbolEffectOptions, animated: Bool)](./nsimageview/removeallsymboleffects%28options,animated%29.md)
   Removes all symbol effects from the image view, using the specified options and animation setting.
+- [- addSymbolEffect:](./nsimageview/addsymboleffect_.md)
+  Adds a symbol effect to the image view with default options and animation.
+- [- addSymbolEffect:options:](./nsimageview/addsymboleffect_options_.md)
+  Adds a symbol effect to the image view with the specified options and default animation.
+- [- addSymbolEffect:options:animated:](./nsimageview/addsymboleffect_options_animated_.md)
+  Adds a symbol effect to the image view with the specified options and animation.
+- [- setSymbolImage:withContentTransition:](./nsimageview/setsymbolimage_withcontenttransition_.md)
+  Sets a symbol image using the specified content-transition effect.
+- [- setSymbolImage:withContentTransition:options:](./nsimageview/setsymbolimage_withcontenttransition_options_.md)
+  Sets a symbol image using the specified content-transition effect and options.
+- [- removeSymbolEffectOfType:](./nsimageview/removesymboleffectoftype_.md)
+  Removes the symbol effect that matches the specified effect type.
+- [- removeSymbolEffectOfType:options:](./nsimageview/removesymboleffectoftype_options_.md)
+  Removes the symbol effect that matches the specified effect type, using the specified options.
+- [- removeSymbolEffectOfType:options:animated:](./nsimageview/removesymboleffectoftype_options_animated_.md)
+  Removes the symbol effect that matches the specified effect type, using the specified options and animation setting.
+- [- removeAllSymbolEffects](./nsimageview/removeallsymboleffects.md)
+  Removes all symbol effects from the image view.
+- [- removeAllSymbolEffectsWithOptions:](./nsimageview/removeallsymboleffectswithoptions_.md)
+  Removes all symbol effects from the image view, using the specified options.
+- [- removeAllSymbolEffectsWithOptions:animated:](./nsimageview/removeallsymboleffectswithoptions_animated_.md)
+  Removes all symbol effects from the image view, using the specified options and animation setting.
 
 ## Relationships
 

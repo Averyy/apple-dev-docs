@@ -30,6 +30,7 @@ The buffering of data has stalled. If started now, playback may pause automatica
 ### Constants
 - [static var playable: MPMovieLoadState](./playable.md)
 - [static var playthroughOK: MPMovieLoadState](./playthroughok.md)
+- [MPMovieLoadStateUnknown](./mpmovieloadstateunknown.md)
 
 
 ---

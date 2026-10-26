@@ -53,6 +53,10 @@ SceneKit provides several ways to introduce geometry objects to your app:
 ### Creating a Geometry Object
 - [convenience init(sources: [SCNGeometrySource], elements: [SCNGeometryElement]?)](./scngeometry/init%28sources,elements%29.md)
   Creates a new geometry built from the specified geometry sources and elements.
+- [+ geometry](./scngeometry/geometry.md)
+  Creates a new geometry object with no content (or default content).
+- [+ geometryWithMDLMesh:](./scngeometry/geometrywithmdlmesh_.md)
+  Creates a geometry from the specified Model I/O mesh object.
 ### Managing Geometry Attributes
 - [var name: String?](./scngeometry/name.md)
   A name associated with the geometry object.

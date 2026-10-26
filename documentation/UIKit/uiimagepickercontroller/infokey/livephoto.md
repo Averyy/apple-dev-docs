@@ -26,7 +26,7 @@ extern UIImagePickerControllerInfoKey const UIImagePickerControllerLivePhoto;
 
 A Live Photo is a picture, that includes motion and sound from the moments just before and after its capture. On compatible devices, the Camera app captures all photos as Live Photos by default, but the [`imagePickerController:didFinishPickingImage:editingInfo:`](../../uiimagepickercontrollerdelegate/imagepickercontroller_didfinishpickingimage_editinginfo_.md) method’s `image` parameter contains only the still image representation.
 
-To obtain the motion and sound content of a live photo for display (using the [`PHLivePhotoView`](https://developer.apple.com/documentation/photosui/phlivephotoview) class), include the `kUTTypeImage` and `kUTTypeLivePhoto` identifiers in the allowed media types when configuring an image picker controller. When the user picks or captures a Live Photo, the `editingInfo` dictionary contains the [`livePhoto`](./livephoto.md) key, with a [`PHLivePhoto`](https://developer.apple.com/documentation/photos/phlivephoto) representation of the photo as the corresponding value.
+To obtain the motion and sound content of a live photo for display (using the [`PHLivePhotoView`](../../../PhotosUI/phlivephotoview.md) class), include the `kUTTypeImage` and `kUTTypeLivePhoto` identifiers in the allowed media types when configuring an image picker controller. When the user picks or captures a Live Photo, the `editingInfo` dictionary contains the [`livePhoto`](./livephoto.md) key, with a [`PHLivePhoto`](../../../Photos/phlivephoto.md) representation of the photo as the corresponding value.
 
 ## See Also
 

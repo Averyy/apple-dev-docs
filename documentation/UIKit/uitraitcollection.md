@@ -61,10 +61,17 @@ For information on creating custom traits, see [Providing data to the view hiera
 - [static var systemTraitsAffectingImageLookup: [UITrait]](./uitraitcollection/systemtraitsaffectingimagelookup-4jv5.md)
 - [static var systemTraitsAffectingVerticalBarEdge: [UITrait]](./uitraitcollection/systemtraitsaffectingverticalbaredge-475st.md)
   The system traits that affect the value of `verticalBarEdge`.
+- [systemTraitsAffectingColorAppearance](./uitraitcollection/systemtraitsaffectingcolorappearance-18zhm.md)
+- [systemTraitsAffectingImageLookup](./uitraitcollection/systemtraitsaffectingimagelookup-640w8.md)
+- [systemTraitsAffectingVerticalBarEdge](./uitraitcollection/systemtraitsaffectingverticalbaredge-8k87m.md)
+  The system traits that affect the value of `verticalBarEdge`.
 ### Modifying traits
 - [convenience init(mutations: UITraitCollection.TraitMutations)](./uitraitcollection/init%28mutations%29.md)
 - [func modifyingTraits(UITraitCollection.TraitMutations) -> UITraitCollection](./uitraitcollection/modifyingtraits%28_%29.md)
 - [UITraitCollection.TraitMutations](./uitraitcollection/traitmutations.md)
+- [+ traitCollectionWithTraits:](./uitraitcollection/traitcollectionwithtraits_.md)
+- [- traitCollectionByModifyingTraits:](./uitraitcollection/traitcollectionbymodifyingtraits_.md)
+- [UITraitMutations](./uitraitmutations.md)
 ### Getting trait changes
 - [func changedTraits(from: UITraitCollection?) -> [UITrait]](./uitraitcollection/changedtraits%28from%29.md)
 ### Comparing trait collections
@@ -128,6 +135,8 @@ For information on creating custom traits, see [Providing data to the view hiera
   The edge where the system places the vertical bar.
 - [enum UIVerticalBarEdge](./uiverticalbaredge.md)
   The edge where the system places the vertical bar.
+- [resolvesNaturalAlignmentWithBaseWritingDirection](./uitraitcollection/resolvesnaturalalignmentwithbasewritingdirection-97osy.md)
+  Specifies the behavior for resolving `NSTextAlignment.natural` to the visual alignment.
 ### Retrieving the force touch capability traits
 - [var forceTouchCapability: UIForceTouchCapability](./uitraitcollection/forcetouchcapability.md)
   The force touch capability value of the trait collection.
@@ -138,6 +147,10 @@ For information on creating custom traits, see [Providing data to the view hiera
   The font sizing option preferred by the user.
 - [struct UIContentSizeCategory](./uicontentsizecategory.md)
   Constants that indicate the preferred size of your content.
+- [UIContentSizeCategoryCompareToCategory](./uicontentsizecategorycomparetocategory.md)
+  Compares two content size category values to determine whether they are equal or whether one is larger than the other.
+- [UIContentSizeCategoryIsAccessibilityCategory](./uicontentsizecategoryisaccessibilitycategory.md)
+  Returns a Boolean value that indicates whether the content size category belongs to the group of accessibility-related sizes.
 ### Retrieving layout environment traits
 - [var listEnvironment: UIListEnvironment](./uitraitcollection/listenvironment.md)
   The list environment represents whether a given trait collection is from a view in a UITableView or a UICollectionView list section.
@@ -159,6 +172,7 @@ For information on creating custom traits, see [Providing data to the view hiera
   The imageDynamicRange determines how HDR images will render in the given trait environment. SDR images are unaffected.
 ### Retrieving typesetting language traits
 - [var typesettingLanguage: Locale.Language?](./uitraitcollection/typesettinglanguage-6i635.md)
+- [typesettingLanguage](./uitraitcollection/typesettinglanguage-1n1fs.md)
 ### Getting an image configuration object
 - [var imageConfiguration: UIImage.Configuration](./uitraitcollection/imageconfiguration.md)
   An image configuration object compatible with this trait collection.
@@ -235,6 +249,8 @@ For information on creating custom traits, see [Providing data to the view hiera
 - [var navigationTitleAlignment: UINavigationItem.TitleAlignment](./uitraitcollection/navigationtitlealignment.md)
   The alignment the navigation bar resolved for its title.
 - [var systemPrefersReducedResourceUsage: Bool](./uitraitcollection/systemprefersreducedresourceusage-1yl57.md)
+- [systemPrefersReducedResourceUsage](./uitraitcollection/systemprefersreducedresourceusage-4szzj.md)
+  A Boolean value that indicates whether the system prefers that the app reduce its resource usage.
 ### Instance Methods
 - [func replacing<T>(T.Type, value: T.Value) -> UITraitCollection](./uitraitcollection/replacing%28_,value%29-162et.md)
 - [func replacing<T>(T.Type, value: T.Value) -> UITraitCollection](./uitraitcollection/replacing%28_,value%29-1n0uk.md)
@@ -252,6 +268,13 @@ For information on creating custom traits, see [Providing data to the view hiera
 - [func replacing<T>(T.Type, value: T.Value) -> UITraitCollection](./uitraitcollection/replacing%28_,value%29-8zl00.md)
 - [func replacing<T>(T.Type, value: T.Value) -> UITraitCollection](./uitraitcollection/replacing%28_,value%29-9op5s.md)
 - [func replacing<T>(T.Type, value: T.Value) -> UITraitCollection](./uitraitcollection/replacing%28_,value%29-o6qa.md)
+- [- changedTraitsFromTraitCollection:](./uitraitcollection/changedtraitsfromtraitcollection_.md)
+- [- objectForTrait:](./uitraitcollection/objectfortrait_.md)
+- [- traitCollectionByReplacingCGFloatValue:forTrait:](./uitraitcollection/traitcollectionbyreplacingcgfloatvalue_fortrait_.md)
+- [- traitCollectionByReplacingNSIntegerValue:forTrait:](./uitraitcollection/traitcollectionbyreplacingnsintegervalue_fortrait_.md)
+- [- traitCollectionByReplacingObject:forTrait:](./uitraitcollection/traitcollectionbyreplacingobject_fortrait_.md)
+- [- valueForCGFloatTrait:](./uitraitcollection/valueforcgfloattrait_.md)
+- [- valueForNSIntegerTrait:](./uitraitcollection/valuefornsintegertrait_.md)
 ### Subscripts
 - [subscript<T>(T.Type) -> T.Value](./uitraitcollection/subscript%28_%29-10ujz.md)
 - [subscript<T>(T.Type) -> T.Value](./uitraitcollection/subscript%28_%29-1kkve.md)
@@ -269,6 +292,13 @@ For information on creating custom traits, see [Providing data to the view hiera
 - [subscript<T>(T.Type) -> T.Value](./uitraitcollection/subscript%28_%29-90z0t.md)
 - [subscript<T>(T.Type) -> T.Value](./uitraitcollection/subscript%28_%29-96v58.md)
 - [subscript<T>(T.Type) -> T.Value](./uitraitcollection/subscript%28_%29-9nfd8.md)
+### Type Methods
+- [+ traitCollectionWithCGFloatValue:forTrait:](./uitraitcollection/traitcollectionwithcgfloatvalue_fortrait_.md)
+- [+ traitCollectionWithNSIntegerValue:forTrait:](./uitraitcollection/traitcollectionwithnsintegervalue_fortrait_.md)
+- [+ traitCollectionWithObject:forTrait:](./uitraitcollection/traitcollectionwithobject_fortrait_.md)
+- [+ traitCollectionWithResolvesNaturalAlignmentWithBaseWritingDirection:](./uitraitcollection/traitcollectionwithresolvesnaturalalignmentwithbasewritingdirection_.md)
+- [+ traitCollectionWithSystemPrefersReducedResourceUsage:](./uitraitcollection/traitcollectionwithsystemprefersreducedresourceusage_.md)
+- [+ traitCollectionWithTypesettingLanguage:](./uitraitcollection/traitcollectionwithtypesettinglanguage_.md)
 
 ## Relationships
 

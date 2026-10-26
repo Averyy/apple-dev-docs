@@ -155,6 +155,8 @@ protocol NSApplicationDelegate : NSObjectProtocol
   Called by the main function to create and run the application.
 - [Managing ongoing background processes in your Mac](./managing-ongoing-background-processes-in-your-mac.md)
   Configure your app to help people understand when background processes may continue after they close your app.
+- [NSApplicationMain](./nsapplicationmain.md)
+  Called by the main function to create and run the application.
 
 
 ---

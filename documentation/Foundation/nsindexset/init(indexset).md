@@ -44,6 +44,12 @@ This method is a designated initializer for [`NSIndexSet`](../nsindexset.md).
   Initializes an allocated [`NSIndexSet`](../nsindexset.md) object with an index.
 - [init(indexesIn: NSRange)](./init%28indexesin%29.md)
   Initializes an allocated [`NSIndexSet`](../nsindexset.md) object with an index range.
+- [+ indexSet](./indexset.md)
+  Creates an empty index set.
+- [+ indexSetWithIndex:](./indexsetwithindex_.md)
+  Creates an index set with an index.
+- [+ indexSetWithIndexesInRange:](./indexsetwithindexesinrange_.md)
+  Creates an index set with an index range.
 
 
 ---

@@ -22,6 +22,12 @@ var mArgument: AudioUnitEvent.__Unnamed_union_mArgument
 union { ... } mArgument;
 ```
 
+## Topics
+
+### Instance Properties
+- [mParameter](./margument/mparameter.md)
+- [mProperty](./margument/mproperty.md)
+
 
 ---
 

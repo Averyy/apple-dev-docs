@@ -45,6 +45,8 @@ Each section can have its own background, header, and footer to distinguish it f
   Creates a list section with the specified list configuration and layout environment.
 - [class func orthogonalLayoutSectionForMediaItems() -> NSCollectionLayoutSection](./nscollectionlayoutsection/orthogonallayoutsectionformediaitems%28%29.md)
   Creates an orthogonally scrolling section with system default spacing.
+- [+ sectionWithListConfiguration:layoutEnvironment:](./nscollectionlayoutsection/sectionwithlistconfiguration_layoutenvironment_.md)
+  Creates a list section with the specified list configuration and layout environment.
 ### Specifying scrolling behavior
 - [var orthogonalScrollingBehavior: UICollectionLayoutSectionOrthogonalScrollingBehavior](./nscollectionlayoutsection/orthogonalscrollingbehavior.md)
   The section’s scrolling behavior in relation to the main layout axis.

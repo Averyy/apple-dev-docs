@@ -30,9 +30,9 @@ IntentsUI is a [SiriKit](../SiriKit/SiriKit.md) framework that enables people to
   Methods for presenting custom content in the Siri and Maps interfaces.
 - [protocol INUIHostedViewSiriProviding](./inuihostedviewsiriproviding.md)
   Methods for hiding portions of the default interfaces that Siri provides.
-- [class INParameter](https://developer.apple.com/documentation/intents/inparameter)
+- [class INParameter](../Intents/inparameter.md)
   A parameter of an interaction object.
-- [protocol INIntentSetImageKeyPath](https://developer.apple.com/documentation/intents/inintentsetimagekeypath)
+- [protocol INIntentSetImageKeyPath](../Intents/inintentsetimagekeypath.md)
 ### Custom UI for Shortcuts
 - [Shortcut-Related UI](../SiriKit/shortcut-related-ui.md)
   Incorporate standard buttons and interfaces into your user interface to offer easy shortcut creation.
@@ -42,7 +42,7 @@ IntentsUI is a [SiriKit](../SiriKit/SiriKit.md) framework that enables people to
 ## See Also
 
 ### Frameworks
-- [Intents](https://developer.apple.com/documentation/intents)
+- [Intents](../Intents/Intents.md)
   Empower people to customize interactions for your app on their device.
 
 

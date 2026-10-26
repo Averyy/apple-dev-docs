@@ -102,6 +102,12 @@ A `CMFormatDescription` object is an object that describes media types (audio, v
 ### Errors
 - [CMFormatDescription.Error](./cmformatdescription/error.md)
   A type that describes format description errors.
+- [kCMFormatDescriptionError_InvalidParameter](./kcmformatdescriptionerror_invalidparameter.md)
+  An error that indicates that the function recieves an empty value for a parameter it requires.
+- [kCMFormatDescriptionError_AllocationFailed](./kcmformatdescriptionerror_allocationfailed.md)
+  An error that indicates when an allocation fails.
+- [kCMFormatDescriptionError_ValueNotAvailable](./kcmformatdescriptionerror_valuenotavailable.md)
+  An error that indicates the format description doesn’t contain the value you request.
 ### Constants
 - [static var extensionKeysCommonWithImageBuffers: [CMFormatDescription.Extensions.Key]](./cmformatdescription/extensionkeyscommonwithimagebuffers.md)
   A constant that represents keys you use with video format description extensions and image buffers.

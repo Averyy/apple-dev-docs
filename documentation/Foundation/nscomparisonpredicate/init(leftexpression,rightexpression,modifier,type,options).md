@@ -46,6 +46,10 @@ The receiver, initialized to a predicate of type `type` formed by combining the 
   Creates a predicate that you form by combining specified left and right expressions using a specified selector.
 - [init?(coder: NSCoder)](./init%28coder%29.md)
   Creates a predicate by decoding from the coder you specify.
+- [+ predicateWithLeftExpression:rightExpression:customSelector:](./predicatewithleftexpression_rightexpression_customselector_.md)
+  Returns a new predicate formed by combining the left and right expressions using a given selector.
+- [+ predicateWithLeftExpression:rightExpression:modifier:type:options:](./predicatewithleftexpression_rightexpression_modifier_type_options_.md)
+  Creates and returns a predicate of a given type formed by combining given left and right expressions using a given modifier and options.
 
 
 ---

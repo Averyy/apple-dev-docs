@@ -30,6 +30,8 @@ var knownClassifications: [String] { get }
 ### Inspecting a Request
 - [enum SNTimeDurationConstraint](../sntimedurationconstraint-swift.enum.md)
   Defines the time duration windows the request’s underlying sound classifier accepts with a range, or an array, of durations.
+- [SNTimeDurationConstraint](../sntimedurationconstraint-c.class.md)
+  Defines the time duration windows the request’s underlying sound classifier accepts with a range, or an array, of durations.
 
 
 ---

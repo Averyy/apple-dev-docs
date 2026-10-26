@@ -50,6 +50,9 @@ This initializer fills each tile with a texture defined by the final argument wh
   Creates and initializes a tile map node using the provided tile set with a specified number of columns and rows.
 - [class func tileMapNodes(tileSet: SKTileSet, columns: Int, rows: Int, tileSize: CGSize, from: GKNoiseMap, tileTypeNoiseMapThresholds: [NSNumber]) -> [SKTileMapNode]](./tilemapnodes%28tileset,columns,rows,tilesize,from,tiletypenoisemapthresholds%29.md)
   Creates a tile map node by allowing a [`GKNoiseMap`](../../GameplayKit/gknoisemap.md) to choose its tiles.
+- [+ tileMapNodeWithTileSet:columns:rows:tileSize:](./tilemapnodewithtileset_columns_rows_tilesize_.md)
+- [+ tileMapNodeWithTileSet:columns:rows:tileSize:fillWithTileGroup:](./tilemapnodewithtileset_columns_rows_tilesize_fillwithtilegroup_.md)
+- [+ tileMapNodeWithTileSet:columns:rows:tileSize:tileGroupLayout:](./tilemapnodewithtileset_columns_rows_tilesize_tilegrouplayout_.md)
 
 
 ---

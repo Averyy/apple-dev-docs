@@ -255,6 +255,10 @@ Avoid preparing state for subsequent tests in teardown blocks. XCTest doesn’t 
   Registers a block of teardown code to run after the current test method ends.
 - [class func tearDown()](./xctestcase/teardown%28%29.md)
   Provides an opportunity to perform cleanup after a test case ends.
+- [- addAsyncTeardownBlock:](./xctestcase/addasyncteardownblock_.md)
+  Registers a block of asynchronous teardown code to run after the current test method ends.
+- [- addTeardownBlock:](./xctestcase/addteardownblock_.md)
+  Registers a block of teardown code to run after the current test method ends.
 
 
 ---

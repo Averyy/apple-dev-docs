@@ -39,6 +39,8 @@ class MTLStageInputOutputDescriptor
 ### Resetting the descriptor
 - [func reset()](./mtlstageinputoutputdescriptor/reset%28%29.md)
   Resets the default state for the descriptor.
+### Creating a input/output descriptor
+- [+ stageInputOutputDescriptor](./mtlstageinputoutputdescriptor/stageinputoutputdescriptor.md)
 
 ## Relationships
 

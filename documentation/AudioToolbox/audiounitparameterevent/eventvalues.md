@@ -40,6 +40,12 @@ If the parameter event type is [`AUParameterEventType.parameterEvent_Immediate`]
 - ****startValue****: An [`AudioUnitParameterValue`](../audiounitparametervalue.md) that indicates the starting parameter value.
 - ****endValue****: An [`AudioUnitParameterValue`](../audiounitparametervalue.md) that indicates the ending parameter value.
 
+## Topics
+
+### Instance Properties
+- [immediate](./eventvalues/immediate.md)
+- [ramp](./eventvalues/ramp.md)
+
 ## See Also
 
 ### Fields

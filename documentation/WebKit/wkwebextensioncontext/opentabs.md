@@ -34,6 +34,8 @@ Initially populated by the tabs in the windows returned by the extension control
 ### Related Documentation
 - [func didOpenTab(any WKWebExtensionTab)](./didopentab%28_%29.md)
   Called by the app when a new tab is opened to fire appropriate events with only this extension.
+- [- didCloseTab:windowIsClosing:](./didclosetab_windowisclosing_.md)
+  Called by the app when a tab is closed to fire appropriate events with only this extension.
 
 
 ---

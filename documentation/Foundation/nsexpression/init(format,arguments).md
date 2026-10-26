@@ -45,6 +45,9 @@ An initialized `NSExpression` object with the specified arguments.
   Creates the expression with the expression format and arguments list you specify.
 - [init?(coder: NSCoder)](./init%28coder%29.md)
   Creates an expression by decoding from the coder you specify.
+### Related Documentation
+- [+ expressionWithFormat:](./expressionwithformat_.md)
+  Creates the expression with the specified expression arguments.
 
 
 ---

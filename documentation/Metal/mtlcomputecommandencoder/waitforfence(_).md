@@ -58,6 +58,8 @@ The GPU driver evaluates the fences that apply to the pass and the commands that
   Creates a memory barrier that enforces the order of write and read operations for specific resource types.
 - [func memoryBarrier(resources: [any MTLResource])](./memorybarrier%28resources%29.md)
   Creates a memory barrier that enforces the order of write and read operations for specific resources.
+- [- memoryBarrierWithResources:count:](./memorybarrierwithresources_count_.md)
+  Creates a memory barrier that enforces the order of write and read operations for specific resources.
 
 
 ---

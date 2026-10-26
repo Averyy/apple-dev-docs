@@ -25,7 +25,7 @@ class UIPhotoSearchSuggestion
 
 When someone types text that could match a photo library search, such as “photos from Paris last summer,” the system recognizes the input as a photo library search and delivers a `UIPhotoSearchSuggestion` through the [`textField(_:insertInputSuggestion:)`](./uitextfielddelegate/textfield%28_,insertinputsuggestion%29.md) or [`textView(_:insertInputSuggestion:)`](./uitextviewdelegate/textview%28_,insertinputsuggestion%29.md) delegate method. Use `as? UIPhotoSearchSuggestion` to check whether the incoming [`UIInputSuggestion`](./uiinputsuggestion.md) is a photo search suggestion and access its metadata.
 
-After receiving a suggestion, you have two options: Pass the object directly to the [Photos](https://developer.apple.com/documentation/photos) framework to present a pre-populated photo picker, or read the `whoValues`, `whatValues`, `whereValues`, and `whenValues` arrays to build a custom search experience.
+After receiving a suggestion, you have two options: Pass the object directly to the [Photos](../Photos/Photos.md) framework to present a pre-populated photo picker, or read the `whoValues`, `whatValues`, `whereValues`, and `whenValues` arrays to build a custom search experience.
 
 You can’t create a `UIPhotoSearchSuggestion` directly. The system creates and delivers instances through the input suggestion system.
 

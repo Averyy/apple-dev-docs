@@ -39,6 +39,10 @@ This property doesn’t have an effect when the sheet is in a compact-width and 
   A Boolean value that determines whether the sheet attaches to the bottom edge of the screen in a compact-height size class.
 - [var preferredCornerRadius: CGFloat?](./preferredcornerradius-3mb5.md)
   The corner radius that the sheet attempts to present with.
+- [preferredCornerRadius](./preferredcornerradius-358tc.md)
+  The corner radius that the sheet attempts to present with.
+- [UISheetPresentationControllerAutomaticDimension](../uisheetpresentationcontrollerautomaticdimension.md)
+  The default value to apply to a dimension.
 
 
 ---

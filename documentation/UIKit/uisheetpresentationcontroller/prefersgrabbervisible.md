@@ -38,6 +38,10 @@ Set this value to [`true`](../../Swift/true.md) for the system to draw a grabber
   A Boolean value that determines whether the sheet’s width matches its view controller’s preferred content size.
 - [var preferredCornerRadius: CGFloat?](./preferredcornerradius-3mb5.md)
   The corner radius that the sheet attempts to present with.
+- [preferredCornerRadius](./preferredcornerradius-358tc.md)
+  The corner radius that the sheet attempts to present with.
+- [UISheetPresentationControllerAutomaticDimension](../uisheetpresentationcontrollerautomaticdimension.md)
+  The default value to apply to a dimension.
 
 
 ---

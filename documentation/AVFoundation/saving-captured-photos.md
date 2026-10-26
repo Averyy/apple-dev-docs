@@ -27,7 +27,7 @@ In macOS, you also need to enable the [`Photos Library Entitlement`](../BundleRe
 
 ##### Request permission to access the user’s photo library
 
-Use the [`PHPhotoLibrary`](https://developer.apple.com/documentation/photos/phphotolibrary) [`requestAuthorization(for:handler:)`](https://developer.apple.com/documentation/photos/phphotolibrary/requestauthorization(for:handler:)) to request access to the photo library at an appropriate time, such as when the user first opens your app’s camera feature. Here’s an example:
+Use the [`PHPhotoLibrary`](../Photos/phphotolibrary.md) [`requestAuthorization(for:handler:)`](../Photos/phphotolibrary/requestauthorization%28for,handler%29.md) to request access to the photo library at an appropriate time, such as when the user first opens your app’s camera feature. Here’s an example:
 
 ```swift
 var isPhotoLibraryReadWriteAccessGranted: Bool {
@@ -56,7 +56,7 @@ Perform these steps to receive a captured photo and save it to the photo library
 
 1. Adopt the [`AVCapturePhotoCaptureDelegate`](./avcapturephotocapturedelegate.md) protocol and implement its [`photoOutput(_:didFinishProcessingPhoto:error:)`](./avcapturephotocapturedelegate/photooutput%28_,didfinishprocessingphoto,error%29.md) method to receive a callback for each photo delivered in a capture request.
 2. Call [`fileDataRepresentation()`](./avcapturephoto/filedatarepresentation%28%29.md) on the [`AVCapturePhoto`](./avcapturephoto.md) object provided by the protocol method to receive a data object containing the photo image data and its attachments, such as camera metadata and auxilliary images.
-3. Create a [`PHAssetCreationRequest`](https://developer.apple.com/documentation/photos/phassetcreationrequest) to add the photo resource.
+3. Create a [`PHAssetCreationRequest`](../Photos/phassetcreationrequest.md) to add the photo resource.
 
 The following code provides an example of this workflow:
 

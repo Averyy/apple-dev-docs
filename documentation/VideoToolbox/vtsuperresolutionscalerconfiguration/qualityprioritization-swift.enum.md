@@ -63,6 +63,8 @@ enum VTSuperResolutionScalerConfigurationQualityPrioritization : NSInteger;
 - [var supportedPixelFormats: [OSType]](./supportedpixelformats.md)
 - [var qualityPrioritization: VTSuperResolutionScalerConfiguration.QualityPrioritization](./qualityprioritization-swift.property.md)
   A parameter to control quality and performance levels.
+- [frameSupportedPixelFormats](./framesupportedpixelformats.md)
+  Available supported pixel formats for source frames for current configuration.
 
 
 ---

@@ -45,6 +45,12 @@ These values are also OR’ed together in notifications to inform instances of `
 - [SendableMetatype](../Swift/sendablemetatype.md)
 - [SetAlgebra](../Swift/setalgebra.md)
 
+## See Also
+
+### Constants
+- [NSTextStorageEditedOptions](./nstextstorageeditedoptions.md)
+  ** Deprecations ***
+
 
 ---
 

@@ -71,6 +71,8 @@ Passing an empty array for `inValueOrValues` deletes the attribute.
   Sets node authentication credentials for a record using a specified authentication method.
 - [func ODRecordSynchronize(ODRecordRef!, UnsafeMutablePointer<Unmanaged<CFError>?>!) -> Bool](./odrecordsynchronize%28_,_%29.md)
   Synchronizes a record with the directory to get current data and commit changes.
+- [ODRecordCopyPasswordPolicy](./odrecordcopypasswordpolicy.md)
+  Returns the password policies of a record.
 
 
 ---

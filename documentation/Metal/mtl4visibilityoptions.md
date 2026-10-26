@@ -33,6 +33,9 @@ enum MTL4VisibilityOptions : NSUInteger;
   Flushes caches to the GPU (device) memory coherence point.
 - [static var resourceAlias: MTL4VisibilityOptions](./mtl4visibilityoptions/resourcealias.md)
   Flushes caches to ensure that aliased virtual addresses are memory consistent.
+### Enumeration Cases
+- [MTL4VisibilityOptionNone](./mtl4visibilityoptions/mtl4visibilityoptionnone.md)
+  Don’t flush caches. When you use this option on a barrier, it turns it into an execution barrier.
 
 ## Relationships
 

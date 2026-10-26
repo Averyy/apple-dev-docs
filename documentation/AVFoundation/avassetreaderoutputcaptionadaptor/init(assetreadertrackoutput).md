@@ -28,6 +28,12 @@ init(assetReaderTrackOutput trackOutput: AVAssetReaderTrackOutput)
 
 - `trackOutput`: The track output from which the system reads captions.
 
+## See Also
+
+### Creating a caption adaptor
+- [+ assetReaderOutputCaptionAdaptorWithAssetReaderTrackOutput:](./assetreaderoutputcaptionadaptorwithassetreadertrackoutput_.md)
+  A class method that creates a caption adaptor that reads from a track output.
+
 
 ---
 

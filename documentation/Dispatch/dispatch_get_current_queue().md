@@ -40,6 +40,8 @@ When called from outside of the context of a submitted block, this function retu
 
 ### Functions
 - [func dispatch_debugv(dispatch_object_t, UnsafePointer<CChar>, CVaListPointer)](./dispatch_debugv%28_,_,_%29.md)
+- [dispatch_debug](./dispatch_debug.md)
+  Programmatically logs debug information about a dispatch object.
 
 
 ---

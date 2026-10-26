@@ -50,6 +50,8 @@ The system uses the URL’s filename extension to select an appropriate universa
   Creates an empty item provider to which you can later register a data or file representation.
 - [convenience init(object: any NSItemProviderWriting)](./init%28object%29.md)
   Creates a new item provider, employing a specified object’s type identifiers to specify the data representations eligible for the provider to load.
+- [- initWithContentsOfURL:contentType:openInPlace:coordinated:visibility:](./initwithcontentsofurl_contenttype_openinplace_coordinated_visibility_.md)
+  Provides data-backed content from an existing file with the specified parameters.
 
 
 ---

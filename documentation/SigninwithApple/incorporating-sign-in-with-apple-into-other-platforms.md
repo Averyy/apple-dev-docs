@@ -7,7 +7,7 @@ Add Sign in with Apple capabilities to apps that can’t directly access Sign in
 
 #### Overview
 
-To add Sign in with Apple to apps that don’t have access to the [Sign in with Apple JS](https://developer.apple.com/documentation/signinwithapplejs) framework, you control the sign-in request manually. Perform this request by adding a custom Sign in with Apple button, sending the required query parameters, handling the return request, and returning control back to the app.
+To add Sign in with Apple to apps that don’t have access to the [Sign in with Apple JS](../SigninwithAppleJS/SigninwithAppleJS.md) framework, you control the sign-in request manually. Perform this request by adding a custom Sign in with Apple button, sending the required query parameters, handling the return request, and returning control back to the app.
 
 ##### Add a custom Sign in with Apple button
 
@@ -111,7 +111,7 @@ The URL contains the following parameters:
 - **`state`**: The current state of the request.
 - **`nonce`**: A String value used to associate a client session with an ID token. This value is also used to mitigate replay attacks.
 
-If the response contains an error, see [`ErrorResponse`](https://developer.apple.com/documentation/signinwithapplerestapi/errorresponse) for the specific error code provided in the response body.
+If the response contains an error, see [`ErrorResponse`](../SigninwithAppleRESTAPI/errorresponse.md) for the specific error code provided in the response body.
 
 You can also visit [Sign in with Apple button](https://account.apple.com/signinwithapple/button#center-align-button-section) to view and adjust live previews of web-based buttons and get the code.
 
@@ -119,16 +119,16 @@ You can also visit [Sign in with Apple button](https://account.apple.com/signinw
 
 When the Sign in with Apple UI appears in the opened browser tab, the user can sign in and accept any terms and conditions for your app. After Apple processes the authorization request, the handling of the response depends on the value in `response_mode:`
 
-- For the `query` value, the response parameters are added to the [`redirectURI`](https://developer.apple.com/documentation/signinwithapplejs/clientconfigi/redirecturi) value as query parameters, and the browser is redirected to the resulting value.
+- For the `query` value, the response parameters are added to the [`redirectURI`](../SigninwithAppleJS/clientconfigi/redirecturi.md) value as query parameters, and the browser is redirected to the resulting value.
 - For the `fragment` value, the response parameters are added to the `redirectURI` value as a fragment, and the browser is redirected.
 - For the `form_post` value, an HTTP `POST` request containing the results of the authorization is sent to the `redirectURI`. The HTTP body contains the result parameters with `application/x-www-form-urlencoded` content type.
 
 A successful response may contain the following parameters:
 
 - **`code`**: A single-use authorization code that’s valid for five minutes. This value is returned if the authorization request contained `code` as a value for `response_type`; otherwise this field is omitted.
-- **`id_token`**: A JSON web token containing the user’s identity information. This value is returned if the authorization request contained `code` and `id_token` as a value for `response_type`; otherwise this field is omitted. For more information, see [`id_token`](https://developer.apple.com/documentation/signinwithapplejs/authorizationi/id_token).
+- **`id_token`**: A JSON web token containing the user’s identity information. This value is returned if the authorization request contained `code` and `id_token` as a value for `response_type`; otherwise this field is omitted. For more information, see [`id_token`](../SigninwithAppleJS/authorizationi/id_token.md).
 - **`state`**: The state value contained in the authorization request, if provided; otherwise this field is omitted.
-- **`user`**: A JSON string containing the data requested in the [`scope`](https://developer.apple.com/documentation/signinwithapplejs/clientconfigi/scope) property. The returned data is dependent on what was requested in the in the `scope` parameter and uses the following format: `{ "name": { "firstName": string, "lastName": string }, "email": string }`.
+- **`user`**: A JSON string containing the data requested in the [`scope`](../SigninwithAppleJS/clientconfigi/scope.md) property. The returned data is dependent on what was requested in the in the `scope` parameter and uses the following format: `{ "name": { "firstName": string, "lastName": string }, "email": string }`.
 
 You receive a secure HTTP POST response in which the values returned are dependent on the query parameters used in the request. Use the `state`, `response_type`, and `scope` parameters to control what data is returned. The response is similar to the following example which contains all possible fields:
 
@@ -164,16 +164,16 @@ Platforms that support custom URL schemes — iOS 12.0 and earlier and Android �
 
 Use the following API endpoints to create a custom Sign in with Apple button:
 
-- [`Get a Sign in with Apple button that is center-aligned.`](https://developer.apple.com/documentation/signinwithapplerestapi/get-a-sign-in-with-apple-button-that-is-center-aligned.)
-- [`Get a Sign in with Apple button that is left-aligned.`](https://developer.apple.com/documentation/signinwithapplerestapi/get-a-sign-in-with-apple-button-that-is-left-aligned.)
-- [`Get a Sign in with Apple button that contains just the Apple logo.`](https://developer.apple.com/documentation/signinwithapplerestapi/get-a-sign-in-with-apple-button-that-contains-just-the-apple-logo.)
+- [`Get a Sign in with Apple button that is center-aligned.`](../SigninwithAppleRESTAPI/get-a-sign-in-with-apple-button-that-is-center-aligned.md)
+- [`Get a Sign in with Apple button that is left-aligned.`](../SigninwithAppleRESTAPI/get-a-sign-in-with-apple-button-that-is-left-aligned.md)
+- [`Get a Sign in with Apple button that contains just the Apple logo.`](../SigninwithAppleRESTAPI/get-a-sign-in-with-apple-button-that-contains-just-the-apple-logo.md)
 
 ## See Also
 
 ### Related Documentation
-- [Sign in with Apple JS](https://developer.apple.com/documentation/signinwithapplejs)
+- [Sign in with Apple JS](../SigninwithAppleJS/SigninwithAppleJS.md)
   Provide users a fast, secure way to sign in to your web service with their Apple Account.
-- [Sign in with Apple REST API](https://developer.apple.com/documentation/signinwithapplerestapi)
+- [Sign in with Apple REST API](../SigninwithAppleRESTAPI/SigninwithAppleRESTAPI.md)
   Communicate between your app servers and Apple’s authentication servers.
 
 

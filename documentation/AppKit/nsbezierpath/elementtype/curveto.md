@@ -19,6 +19,18 @@ static var curveTo: NSBezierPath.ElementType { get }
 NSBezierPathElementCurveTo
 ```
 
+## See Also
+
+### Deprecated
+- [NSMoveToBezierPathElement](../../nsmovetobezierpathelement.md)
+  Moves the path object’s current drawing point to the specified point.
+- [NSLineToBezierPathElement](../../nslinetobezierpathelement.md)
+  Creates a straight line from the current drawing point to the specified point.
+- [NSCurveToBezierPathElement](../../nscurvetobezierpathelement.md)
+  Creates a curved line segment from the current point to the specified endpoint using two control points to define the curve.
+- [NSClosePathBezierPathElement](../../nsclosepathbezierpathelement.md)
+  Marks the end of the current subpath at the specified point.
+
 
 ---
 

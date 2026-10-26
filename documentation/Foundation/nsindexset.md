@@ -52,6 +52,12 @@ The mutable subclass of `NSIndexSet` is [`NSMutableIndexSet`](./nsmutableindexse
   Initializes an allocated [`NSIndexSet`](./nsindexset.md) object with an index range.
 - [init(indexSet: IndexSet)](./nsindexset/init%28indexset%29.md)
   Initializes an allocated [`NSIndexSet`](./nsindexset.md) object with an index set.
+- [+ indexSet](./nsindexset/indexset.md)
+  Creates an empty index set.
+- [+ indexSetWithIndex:](./nsindexset/indexsetwithindex_.md)
+  Creates an index set with an index.
+- [+ indexSetWithIndexesInRange:](./nsindexset/indexsetwithindexesinrange_.md)
+  Creates an index set with an index range.
 ### Querying Index Sets
 - [func contains(Int) -> Bool](./nsindexset/contains%28_%29-bb19.md)
   Indicates whether the index set contains a specific index.
@@ -140,6 +146,14 @@ The mutable subclass of `NSIndexSet` is [`NSMutableIndexSet`](./nsmutableindexse
 - [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 - [NSSecureCoding](./nssecurecoding.md)
 - [Sequence](../Swift/sequence.md)
+
+## See Also
+
+### Indexes
+- [NSIndexPath](./nsindexpath.md)
+  A list of indexes that together represent the path to a specific location in a tree of nested arrays.
+- [NSMutableIndexSet](./nsmutableindexset.md)
+  A mutable collection of unique integer values that represent indexes in another collection.
 
 
 ---

@@ -40,6 +40,11 @@ static SPSphericalCoordinates3D SPSphericalCoordinates3DMake(double radius, SPAn
   Creates a new spherical coordinates structure from the specified Cartesian coordinates represented by a simd vector.
 - [init(x: Double, y: Double, z: Double)](./init%28x,y,z%29.md)
   Creates a new spherical coordinates structure from the specified Cartesian coordinates.
+- [SPSphericalCoordinates3DMakeWithCartesianPoint](../spsphericalcoordinates3dmakewithcartesianpoint.md)
+  Creates a spherical coordinates structure from the Cartesian coordinates represented by the specified Spatial point.
+- [SPSphericalCoordinates3DMakeWithCartesianVector](../spsphericalcoordinates3dmakewithcartesianvector-940l6.md)
+  Creates a spherical coordinates structure from the Cartesian coordinates represented by the specified simd vector.
+- [SPSphericalCoordinates3DMakeWithCartesianVector](../spsphericalcoordinates3dmakewithcartesianvector-9pfp3.md)
 
 
 ---

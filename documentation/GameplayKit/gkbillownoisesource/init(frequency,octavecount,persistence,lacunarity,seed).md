@@ -45,6 +45,8 @@ To make use of this noise source, create a [`GKNoise`](../gknoise.md) object fro
 ### Creating a Noise Source
 - [var persistence: Double](./persistence.md)
   The rate at which successive octaves of the noise function decrease in amplitude.
+- [+ billowNoiseSourceWithFrequency:octaveCount:persistence:lacunarity:seed:](./billownoisesourcewithfrequency_octavecount_persistence_lacunarity_seed_.md)
+  Initializes a billow noise source with the specified parameters.
 
 
 ---

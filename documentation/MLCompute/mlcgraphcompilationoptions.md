@@ -36,6 +36,9 @@ enum MLCGraphCompilationOptions : uint64_t;
   The option to link graphs during graph compilation.
 - [static var computeAllGradients: MLCGraphCompilationOptions](./mlcgraphcompilationoptions/computeallgradients.md)
   The option to compute all gradients during graph compilation.
+### Enumeration Cases
+- [MLCGraphCompilationOptionsNone](./mlcgraphcompilationoptions/mlcgraphcompilationoptionsnone.md)
+  The default option for graph compilation.
 
 ## Relationships
 

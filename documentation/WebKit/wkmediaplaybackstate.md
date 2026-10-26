@@ -58,6 +58,14 @@ enum WKMediaPlaybackState : NSInteger;
   Changes whether the webpage is suspending playback of all media in the page.
 - [func closeAllMediaPresentations(completionHandler: (() -> Void)?)](./wkwebview/closeallmediapresentations%28completionhandler%29.md)
   Closes all media the web view is presenting, including picture-in-picture video and fullscreen video.
+- [- pauseAllMediaPlayback:](./wkwebview/pauseallmediaplayback_.md)
+  Pauses playback of all media in the web view.
+- [- requestMediaPlaybackState:](./wkwebview/requestmediaplaybackstate_.md)
+  Requests the playback status of media in the web view.
+- [- suspendAllMediaPlayback:](./wkwebview/suspendallmediaplayback_.md)
+  Changes whether the webpage is suspending playback of all media in the page.
+- [- resumeAllMediaPlayback:](./wkwebview/resumeallmediaplayback_.md)
+  Resumes playback of all media in a web view.
 
 
 ---

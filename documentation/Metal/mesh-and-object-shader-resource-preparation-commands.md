@@ -20,10 +20,14 @@ Mesh shaders share argument tables for each resource type, such as buffers, text
   Creates a buffer from bytes and assigns it to an entry in the object shader argument table.
 - [func setObjectBufferOffset(Int, index: Int)](./mtlrendercommandencoder/setobjectbufferoffset%28_,index%29.md)
   Updates an entry in the object shader argument table with a new location within the entry’s current buffer.
+- [- setObjectBuffers:offsets:withRange:](./mtlrendercommandencoder/setobjectbuffers_offsets_withrange_.md)
+  Encodes a command that assigns multiple buffers to a range of entries in the object shader argument table.
 ### Assigning textures for object shaders
 - [func setObjectTexture((any MTLTexture)?, index: Int)](./mtlrendercommandencoder/setobjecttexture%28_,index%29.md)
   Assigns a texture to an entry in the object shader argument table.
 - [func setObjectTextures([(any MTLTexture)?], range: Range<Int>)](./mtlrendercommandencoder/setobjecttextures%28_,range%29.md)
+  Assigns multiple textures to a range of entries in the object shader argument table.
+- [- setObjectTextures:withRange:](./mtlrendercommandencoder/setobjecttextures_withrange_.md)
   Assigns multiple textures to a range of entries in the object shader argument table.
 ### Assigning sampler states for object shaders
 - [func setObjectSamplerState((any MTLSamplerState)?, index: Int)](./mtlrendercommandencoder/setobjectsamplerstate%28_,index%29.md)
@@ -34,6 +38,10 @@ Mesh shaders share argument tables for each resource type, such as buffers, text
   Assigns multiple sampler states to a range of entries in the object shader argument table.
 - [func setObjectSamplerStates([(any MTLSamplerState)?], lodMinClamps: [Float], lodMaxClamps: [Float], range: Range<Int>)](./mtlrendercommandencoder/setobjectsamplerstates%28_,lodminclamps,lodmaxclamps,range%29.md)
   Assigns multiple sampler states and clamp values to a range of entries in the object shader argument table.
+- [- setObjectSamplerStates:withRange:](./mtlrendercommandencoder/setobjectsamplerstates_withrange_.md)
+  Assigns multiple sampler states to a range of entries in the object shader argument table.
+- [- setObjectSamplerStates:lodMinClamps:lodMaxClamps:withRange:](./mtlrendercommandencoder/setobjectsamplerstates_lodminclamps_lodmaxclamps_withrange_.md)
+  Assigns multiple sampler states and clamp values to a range of entries in the object shader argument table.
 ### Assigning buffers for mesh shaders
 - [func setMeshBuffer((any MTLBuffer)?, offset: Int, index: Int)](./mtlrendercommandencoder/setmeshbuffer%28_,offset,index%29.md)
   Assigns a buffer to an entry in the mesh shader argument table.
@@ -43,10 +51,14 @@ Mesh shaders share argument tables for each resource type, such as buffers, text
   Creates a buffer from bytes and assigns it to an entry in the mesh shader argument table.
 - [func setMeshBufferOffset(Int, index: Int)](./mtlrendercommandencoder/setmeshbufferoffset%28_,index%29.md)
   Updates an entry in the mesh shader argument table with a new location within the entry’s current buffer.
+- [- setMeshBuffers:offsets:withRange:](./mtlrendercommandencoder/setmeshbuffers_offsets_withrange_.md)
+  Assigns multiple buffers to a range of entries in the mesh shader argument table.
 ### Assigning textures for mesh shaders
 - [func setMeshTexture((any MTLTexture)?, index: Int)](./mtlrendercommandencoder/setmeshtexture%28_,index%29.md)
   Assigns a texture to an entry in the mesh shader argument table.
 - [func setMeshTextures([(any MTLTexture)?], range: Range<Int>)](./mtlrendercommandencoder/setmeshtextures%28_,range%29.md)
+  Assigns multiple textures to a range of entries in the mesh shader argument table.
+- [- setMeshTextures:withRange:](./mtlrendercommandencoder/setmeshtextures_withrange_.md)
   Assigns multiple textures to a range of entries in the mesh shader argument table.
 ### Assigning sampler states for mesh shaders
 - [func setMeshSamplerState((any MTLSamplerState)?, index: Int)](./mtlrendercommandencoder/setmeshsamplerstate%28_,index%29.md)
@@ -56,6 +68,10 @@ Mesh shaders share argument tables for each resource type, such as buffers, text
 - [func setMeshSamplerStates([(any MTLSamplerState)?], range: Range<Int>)](./mtlrendercommandencoder/setmeshsamplerstates%28_,range%29.md)
   Assigns multiple sampler states to a range of entries in the mesh shader argument table.
 - [func setMeshSamplerStates([(any MTLSamplerState)?], lodMinClamps: [Float], lodMaxClamps: [Float], range: Range<Int>)](./mtlrendercommandencoder/setmeshsamplerstates%28_,lodminclamps,lodmaxclamps,range%29.md)
+  Assigns multiple sampler states and clamp values to a range of entries in the mesh shader argument table.
+- [- setMeshSamplerStates:withRange:](./mtlrendercommandencoder/setmeshsamplerstates_withrange_.md)
+  Assigns multiple sampler states to a range of entries in the mesh shader argument table.
+- [- setMeshSamplerStates:lodMinClamps:lodMaxClamps:withRange:](./mtlrendercommandencoder/setmeshsamplerstates_lodminclamps_lodmaxclamps_withrange_.md)
   Assigns multiple sampler states and clamp values to a range of entries in the mesh shader argument table.
 
 ## See Also

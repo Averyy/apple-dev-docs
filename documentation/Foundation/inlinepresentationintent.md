@@ -65,6 +65,18 @@ enum NSInlinePresentationIntent : NSUInteger;
 - [SendableMetatype](../Swift/sendablemetatype.md)
 - [SetAlgebra](../Swift/setalgebra.md)
 
+## See Also
+
+### Representing markdown attributes
+- [NSPresentationIntent](./nspresentationintent.md)
+  A type that contains the Markdown formatting for blocks of text, like paragraphs, lists, code blocks, and parts of tables.
+- [NSAttributedStringMarkdownSourcePosition](./nsattributedstringmarkdownsourceposition.md)
+  The position of attributed string text in its original Markdown source string.
+- [NSPresentationIntentKind](./nspresentationintentkind.md)
+  An enumeration of intended display styles for blocks of text like paragraphs, lists, and code blocks.
+- [NSPresentationIntentTableColumnAlignment](./nspresentationintenttablecolumnalignment.md)
+  An enumeration of values for aligning the contents of table columns.
+
 
 ---
 

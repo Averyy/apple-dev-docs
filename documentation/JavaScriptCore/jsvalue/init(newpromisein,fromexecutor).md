@@ -72,6 +72,12 @@ The `resolve` and `reject` callbacks each typically take a single value, which t
   Creates a JavaScript representation of the specified rectangle.
 - [init!(size: CGSize, inContext: JSContext!)](./init%28size,incontext%29.md)
   Creates a JavaScript representation of the specified width and height.
+- [+ valueWithNewSymbolFromDescription:inContext:](./init%28newsymbolfromdescription,in%29.md)
+  Creates a unique symbol object.
+- [+ valueWithNewPromiseRejectedWithReason:inContext:](./init%28newpromiserejectedwithreason,in%29.md)
+  Creates a rejected promise object with the specified value.
+- [+ valueWithNewPromiseResolvedWithResult:inContext:](./init%28newpromiseresolvedwithresult,in%29.md)
+  Creates a resolved promise object with the specified value.
 
 
 ---

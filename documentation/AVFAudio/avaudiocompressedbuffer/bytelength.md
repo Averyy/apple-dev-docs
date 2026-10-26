@@ -48,6 +48,8 @@ You can change this value as part of an operation that modifies the contents.
   The buffer’s array of packet descriptions.
 - [var packetDependencies: [AudioStreamPacketDependencyDescription]?](./packetdependencies-3a6ln.md)
   The buffer’s array of packet dependencies.
+- [packetDependencies](./packetdependencies-5oae6.md)
+  The buffer’s array of packet dependencies.
 
 
 ---

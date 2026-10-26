@@ -56,6 +56,9 @@ Use this descriptor with the following [`MPSGraph`](./mpsgraph.md) methods:
   A parameter that enables the GRU layer to support training.
 - [var updateGateActivation: MPSGraphRNNActivation](./mpsgraphgrudescriptor/updategateactivation.md)
   A parameter that defines the activation function to use with the update-gate of the GRU operation.
+### Type Methods
+- [+ descriptor](./mpsgraphgrudescriptor/descriptor.md)
+  Creates an GRU descriptor with default values.
 
 ## Relationships
 

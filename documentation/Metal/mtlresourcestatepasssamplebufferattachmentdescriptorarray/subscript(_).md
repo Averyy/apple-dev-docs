@@ -32,6 +32,12 @@ The requested [`MTLResourceStatePassSampleBufferAttachmentDescriptor`](../mtlres
 
 - `attachmentIndex`: An index for the object to fetch.
 
+## See Also
+
+### Accessing a sample buffer attachment
+- [- setObject:atIndexedSubscript:](./setobject_atindexedsubscript_.md)
+  Sets the descriptor object for the specified sample buffer attachment.
+
 
 ---
 

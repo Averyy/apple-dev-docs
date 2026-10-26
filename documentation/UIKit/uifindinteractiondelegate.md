@@ -60,6 +60,8 @@ protocol UIFindInteractionDelegate : NSObjectProtocol
   Constants that describe the method to use when searching text for words that match a string.
 - [UIFindSession.SearchResultDisplayStyle](./uifindsession/searchresultdisplaystyle-swift.enum.md)
   Constants that describe the results summary the find panel UI includes.
+- [UITextSearching](./uitextsearching-53wjq.md)
+  The methods you use on a find session’s searchable objects to perform search operations and decorate the found text results.
 
 
 ---

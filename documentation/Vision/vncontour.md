@@ -39,6 +39,8 @@ class VNContour
   The contour’s array of points in normalized coordinates.
 - [func polygonApproximation(epsilon: Float) throws -> VNContour](./vncontour/polygonapproximation%28epsilon%29.md)
   Simplifies the contour to a polygon using a Ramer-Douglas-Peucker algorithm.
+- [normalizedPoints](./vncontour/normalizedpoints-2orqj.md)
+  The contour’s array of points in normalized coordinates.
 ### Accessing Child Contours
 - [var childContourCount: Int](./vncontour/childcontourcount.md)
   The total number of detected child contours.

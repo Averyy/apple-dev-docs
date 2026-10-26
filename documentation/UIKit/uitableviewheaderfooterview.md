@@ -57,6 +57,10 @@ A simple alternative to creating custom header-footer views is to implement the 
   A Boolean value that determines whether the view automatically updates its background configuration when its state changes.
 - [var backgroundView: UIView?](./uitableviewheaderfooterview/backgroundview.md)
   The background view of the header or footer.
+- [- defaultBackgroundConfiguration](./uitableviewheaderfooterview/defaultbackgroundconfiguration.md)
+  Retrieves a background configuration with system default values.
+- [backgroundConfiguration](./uitableviewheaderfooterview/backgroundconfiguration-2o8ke.md)
+  The current background configuration of the view.
 ### Managing the content
 - [func defaultContentConfiguration() -> UIListContentConfiguration](./uitableviewheaderfooterview/defaultcontentconfiguration%28%29.md)
   Retrieves a default list content configuration for the view’s style.
@@ -70,6 +74,10 @@ A simple alternative to creating custom header-footer views is to implement the 
   A primary text label for the view.
 - [var detailTextLabel: UILabel?](./uitableviewheaderfooterview/detailtextlabel.md)
   A detail text label for the view.
+- [- defaultContentConfiguration](./uitableviewheaderfooterview/defaultcontentconfiguration.md)
+  Retrieves a default list content configuration for the view’s style.
+- [contentConfiguration](./uitableviewheaderfooterview/contentconfiguration-r49e.md)
+  The current content configuration of the view.
 ### Managing the state
 - [var configurationState: UIViewConfigurationState](./uitableviewheaderfooterview/configurationstate-7xj7r.md)
   The current configuration state of the view.
@@ -80,6 +88,14 @@ A simple alternative to creating custom header-footer views is to implement the 
 - [var configurationUpdateHandler: UITableViewHeaderFooterView.ConfigurationUpdateHandler?](./uitableviewheaderfooterview/configurationupdatehandler-49slo.md)
   A block for handling updates to the view’s configuration using the current state.
 - [UITableViewHeaderFooterView.ConfigurationUpdateHandler](./uitableviewheaderfooterview/configurationupdatehandler-swift.typealias.md)
+  The type of block for handling updates to the view’s configuration using the current state.
+- [configurationState](./uitableviewheaderfooterview/configurationstate-9l60r.md)
+  The current configuration state of the view.
+- [- updateConfigurationUsingState:](./uitableviewheaderfooterview/updateconfigurationusingstate_.md)
+  Updates the view’s configuration using the current state.
+- [configurationUpdateHandler](./uitableviewheaderfooterview/configurationupdatehandler-3oji2.md)
+  A block for handling updates to the view’s configuration using the current state.
+- [UITableViewHeaderFooterViewConfigurationUpdateHandler](./uitableviewheaderfooterviewconfigurationupdatehandler.md)
   The type of block for handling updates to the view’s configuration using the current state.
 
 ## Relationships

@@ -37,6 +37,18 @@ The value passed as `returnCode` is either `NSCancelButton` or `NSOKButton`.
 - `didEndSelector`: The selector sent to the delegate. Can be `nil`.
 - `contextInfo`: Context information object passed with `didEndSelector`.
 
+## See Also
+
+### Deprecated
+- [- accessoryView](./accessoryview.md)
+  Returns the page layout panel’s accessory view.
+- [- setAccessoryView:](./setaccessoryview_.md)
+  Adds a view object to the page layout panel.
+- [- readPrintInfo](./readprintinfo.md)
+  Sets the page layout’s values to those stored in the print info object used when the page layout panel is run.
+- [- writePrintInfo](./writeprintinfo.md)
+  Writes the page layout’s values to the print info object used when the page layout panel is run.
+
 
 ---
 

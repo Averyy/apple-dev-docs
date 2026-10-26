@@ -163,6 +163,11 @@ The Model I/O framework provides a system-level understanding of 3D model assets
 - [protocol MDLAssetResolver](./mdlassetresolver.md)
 - [protocol MDLJointAnimation](./mdljointanimation.md)
 - [protocol MDLTransformOp](./mdltransformop.md)
+### Macros
+- [MDL_CLASS_EXPORT](./mdl_class_export.md)
+- [MDL_CONST_INLINE](./mdl_const_inline.md)
+- [MDL_EXPORT](./mdl_export.md)
+- [MDL_INLINE](./mdl_inline.md)
 
 
 ---

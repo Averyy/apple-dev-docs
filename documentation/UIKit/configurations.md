@@ -27,6 +27,12 @@ There are two types of configurations:
   The requirements for an object that encapsulates a view’s state.
 - [struct UIConfigurationStateCustomKey](./uiconfigurationstatecustomkey.md)
   A key that defines a custom state for a view.
+- [UIViewConfigurationState](./uiviewconfigurationstate-c.class.md)
+  A structure that encapsulates a view’s state.
+- [UICellConfigurationState](./uicellconfigurationstate-c.class.md)
+  An object that encapsulates a cell’s state.
+- [UIConfigurationState](./uiconfigurationstate-1smq1.md)
+  The requirements for an object that encapsulates a view’s state.
 ### Content configurations
 - [struct UIListContentConfiguration](./uilistcontentconfiguration-swift.struct.md)
   A content configuration for a list-based content view.
@@ -36,19 +42,43 @@ There are two types of configurations:
   The requirements for an object that provides the configuration for a content view.
 - [protocol UIContentView](./uicontentview-5fh3z.md)
   The requirements for a content view that you create using a configuration.
+- [UIListContentConfiguration](./uilistcontentconfiguration-c.class.md)
+  A content configuration for a list-based content view.
+- [UIContentConfiguration](./uicontentconfiguration-2raci.md)
+  The requirements for an object that provides the configuration for a content view.
+- [UIContentView](./uicontentview-3zu2k.md)
+  The requirements for a content view that you create using a configuration.
 ### Unavailable content configurations
 - [struct UIContentUnavailableConfiguration](./uicontentunavailableconfiguration-swift.struct.md)
   A content configuration for a content-unavailable view.
 - [struct UIContentUnavailableConfigurationState](./uicontentunavailableconfigurationstate-swift.struct.md)
   A structure that encapsulates state for a content-unavailable view.
+- [UIContentUnavailableConfiguration](./uicontentunavailableconfiguration-c.class.md)
+  A content configuration for a content-unavailable view.
+- [UIContentUnavailableConfigurationState](./uicontentunavailableconfigurationstate-c.class.md)
+  An object that encapsulates state for a content-unavailable view.
+- [UIContentUnavailableButtonProperties](./uicontentunavailablebuttonproperties.md)
+  Properties configuring the appearance and behavior of a button in a content-unavailable view.
+- [UIContentUnavailableImageProperties](./uicontentunavailableimageproperties.md)
+  Properties configuring the appearance of images in a content-unavailable view.
+- [UIContentUnavailableTextProperties](./uicontentunavailabletextproperties.md)
+  Properties configuring the appearance of text in a content-unavailable view.
+- [UIContentUnavailableAlignment](./uicontentunavailablealignment.md)
+  Defines the alignment of views in a content-unavailable view.
 ### Background configurations
 - [struct UIBackgroundConfiguration](./uibackgroundconfiguration-swift.struct.md)
+  A configuration that describes a specific background appearance.
+- [UIBackgroundConfiguration](./uibackgroundconfiguration-c.class.md)
   A configuration that describes a specific background appearance.
 ### Color transformers
 - [struct UIConfigurationColorTransformer](./uiconfigurationcolortransformer-swift.struct.md)
   A transformer that generates a modified output color from an input color.
+- [UIConfigurationColorTransformer](./uiconfigurationcolortransformer-c.typealias.md)
+  Generates a modified output color from an input color.
 ### Text attributes transformers
 - [struct UIConfigurationTextAttributesTransformer](./uiconfigurationtextattributestransformer-swift.struct.md)
+  Defines a text transformation that can affect the visual appearance of a string.
+- [UIConfigurationTextAttributesTransformer](./uiconfigurationtextattributestransformer-c.typealias.md)
   Defines a text transformation that can affect the visual appearance of a string.
 
 

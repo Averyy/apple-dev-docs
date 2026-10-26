@@ -39,6 +39,14 @@ A maximum factor of `1.0` indicates that the format isn’t capable of zooming.
   The zoom ranges that support the delivery of depth data.
 - [var zoomFactorsOutsideOfVideoZoomRangesForDepthDeliverySupported: Bool](./zoomfactorsoutsideofvideozoomrangesfordepthdeliverysupported.md)
   A Boolean value that indicates whether the format supports zoom factors outside the range supported for depth delivery.
+- [systemRecommendedVideoZoomRange](../../avcapturedeviceformat/systemrecommendedvideozoomrange.md)
+  The system’s recommended zoom range for this device format.
+- [secondaryNativeResolutionZoomFactors](../../avcapturedeviceformat/secondarynativeresolutionzoomfactors.md)
+  The zoom factors at which this device transitions to secondary native resolution modes.
+- [supportedVideoZoomRangesForDepthDataDelivery](../../avcapturedeviceformat/supportedvideozoomrangesfordepthdatadelivery.md)
+  The zoom ranges that support the delivery of depth data.
+- [AVZoomRange](../../avzoomrange.md)
+  An object that defines an inclusive range of zoom values.
 
 
 ---

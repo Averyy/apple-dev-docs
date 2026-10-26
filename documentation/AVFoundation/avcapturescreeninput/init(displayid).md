@@ -34,6 +34,8 @@ A capture screen input initialized to provide media data from a given display. I
 ### Initializing a capture screen input
 - [init()](./init%28%29.md)
   Initializes a capture screen input that provides media data from the main screen.
+- [+ new](./new.md)
+  Creates a capture screen input that provides media data from the main screen.
 
 
 ---

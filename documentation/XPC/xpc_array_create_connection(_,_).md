@@ -67,6 +67,8 @@ A new connection created from the value at the specified index. You are responsi
   Returns the dictionary at the specified index in the array.
 - [func xpc_array_get_double(xpc_object_t, Int) -> Double](./xpc_array_get_double%28_,_%29.md)
   Gets a double-precision floating point primitive value from an array directly.
+- [xpc_array_get_int64](./xpc_array_get_int64%28_,_%29.md)
+  Gets a 64-bit integer primitive value from an array directly.
 
 
 ---

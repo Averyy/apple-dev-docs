@@ -172,6 +172,15 @@ If a subclass inherits [`NSCopying`](./nscopying.md) from its superclass and dec
 - [XMLDocument](./xmldocument.md)
 - [XMLElement](./xmlelement.md)
 - [XMLNode](./xmlnode.md)
+- [NSAttributedStringMarkdownParsingOptions](./nsattributedstringmarkdownparsingoptions.md)
+- [NSAttributedStringMarkdownSourcePosition](./nsattributedstringmarkdownsourceposition.md)
+- [NSInflectionRule](./nsinflectionrule.md)
+- [NSLocalizedNumberFormatRule](./nslocalizednumberformatrule.md)
+- [NSMorphology](./nsmorphology.md)
+- [NSMorphologyCustomPronoun](./nsmorphologycustompronoun.md)
+- [NSMorphologyPronoun](./nsmorphologypronoun.md)
+- [NSPresentationIntent](./nspresentationintent.md)
+- [NSTermOfAddress](./nstermofaddress.md)
 
 ## See Also
 

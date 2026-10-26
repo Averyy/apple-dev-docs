@@ -44,6 +44,10 @@
 - [struct MPSRayPackedOriginDirection](./mpsraypackedorigindirection.md)
 - [struct MPSStateTextureInfo](./mpsstatetextureinfo.md)
   An encapsulation of a texture’s dimensions, format, type, and usage.
+- [MPSAxisAlignedBoundingBox](./mpsaxisalignedboundingbox-c.struct.md)
+  An axis-aligned bounding box.
+- [MPSPackedFloat3](./mpspackedfloat3-c.struct.md)
+  A packed three-element vector.
 
 
 ---

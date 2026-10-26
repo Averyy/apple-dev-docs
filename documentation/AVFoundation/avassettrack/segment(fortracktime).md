@@ -38,6 +38,12 @@ Apple discourages using this method in iOS 15, tvOS 15, macOS 12, and watchOS 8 
 
 - `trackTime`: The track time for which you want the segment.
 
+## See Also
+
+### Accessing track segments
+- [segments](./segments.md)
+  The time mappings from the track’s media samples to its timeline.
+
 
 ---
 

@@ -88,6 +88,16 @@ After you set these keys, other apps can open and edit the contents of your `Doc
   Constants that describe why an external volume might not be eligible for storing a domain.
 ### Enumerations
 - [enum NSFileProviderNamespacePolicy](./nsfileprovidernamespacepolicy.md)
+### Global variables and macros
+- [Global variables and macros](./global-variables-and-macros.md)
+### Variables
+- [NSFileProviderUserInfoExperimentIDKey](./nsfileprovideruserinfokey/experimentid.md)
+  System interpreted user info key When setting a value to that user info on a domain, the system will ingest this value. If user has given their consent for telemetry, this value will be used to decorate telemetry messages sent by the FileProvider subsystem. The telemetry messages can be then later on retrieved by developers along with the other metrics through the CloudKit console as detailed here: https://developer.apple.com/documentation/fileprovider/exporting-file-provider-metrics-data?language=objc This will help developers triaging data they receive from testing population compared to regular users The value must either be a NSNumber between [0 - 31]. If it’s not in that range, or if it is not a NSNumber, any call to addDomain with that invalid UserInfo dictionary will fail with a EINVAL POSIX NSError. To update this value, the provider must call addDomain with an updated userInfo dictionary
+### Macros
+- [FILEPROVIDER_API_AVAILABILITY_FEEDBACK](./fileprovider_api_availability_feedback.md)
+- [FILEPROVIDER_API_AVAILABILITY_SEARCH](./fileprovider_api_availability_search.md)
+- [FILEPROVIDER_API_AVAILABILITY_SYNC_CONTROLS](./fileprovider_api_availability_sync_controls.md)
+- [FILE_PROVIDER_AVAILABILITY_NAMESPACE_POLICY](./file_provider_availability_namespace_policy.md)
 
 
 ---

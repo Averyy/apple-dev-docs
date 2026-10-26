@@ -38,7 +38,7 @@ This sample app can be run in the iOS Simulator without any special setup, but i
 
 ##### Recognize and Respond to Workout Requests
 
-In order for the Intent Extension to handle workout requests, the principal class of the extension must implement the [`handler(for:)`](https://developer.apple.com/documentation/intents/inintenthandlerproviding/handler(for:)) method of [`INIntentHandlerProviding`](https://developer.apple.com/documentation/intents/inintenthandlerproviding). Use this method to dispatch the request to a class configured to handle it.
+In order for the Intent Extension to handle workout requests, the principal class of the extension must implement the [`handler(for:)`](../Intents/inintenthandlerproviding/handler%28for%29.md) method of [`INIntentHandlerProviding`](../Intents/inintenthandlerproviding.md). Use this method to dispatch the request to a class configured to handle it.
 
 ```swift
 override func handler(for intent: INIntent) -> Any {
@@ -51,11 +51,11 @@ override func handler(for intent: INIntent) -> Any {
 
 In order for a class to handle a request from SiriKit to use the workout controls, the class must implement one of the workout intent handler protocols. In this sample project:
 
-- `StartWorkoutIntentHandler` implements [`INStartWorkoutIntentHandling`](https://developer.apple.com/documentation/intents/instartworkoutintenthandling).
-- `PauseWorkoutIntentHandler` implements [`INPauseWorkoutIntentHandling`](https://developer.apple.com/documentation/intents/inpauseworkoutintenthandling).
-- `ResumeWorkoutIntentHandler` implements [`INResumeWorkoutIntentHandling`](https://developer.apple.com/documentation/intents/inresumeworkoutintenthandling).
-- `CancelWorkoutIntentHandler` implements [`INCancelWorkoutIntentHandling`](https://developer.apple.com/documentation/intents/incancelworkoutintenthandling).
-- `EndWorkoutIntentHandler` implements [`INEndWorkoutIntentHandling`](https://developer.apple.com/documentation/intents/inendworkoutintenthandling).
+- `StartWorkoutIntentHandler` implements [`INStartWorkoutIntentHandling`](../Intents/instartworkoutintenthandling.md).
+- `PauseWorkoutIntentHandler` implements [`INPauseWorkoutIntentHandling`](../Intents/inpauseworkoutintenthandling.md).
+- `ResumeWorkoutIntentHandler` implements [`INResumeWorkoutIntentHandling`](../Intents/inresumeworkoutintenthandling.md).
+- `CancelWorkoutIntentHandler` implements [`INCancelWorkoutIntentHandling`](../Intents/incancelworkoutintenthandling.md).
+- `EndWorkoutIntentHandler` implements [`INEndWorkoutIntentHandling`](../Intents/inendworkoutintenthandling.md).
 
 ##### Resolve Parameters
 
@@ -65,9 +65,9 @@ The first step in handling a request from Siri with one of these classes is to r
 - “Start a wall climb workout with Ascent” specifies only the name of the workout.
 - “Start a workout with Ascent” specifies no parameters, only that a workout should be started.
 
-An app must decide how to handle these situations using the available resolution methods for the intent type. To handle parameter resolution for [`INStartWorkoutIntentHandling`](https://developer.apple.com/documentation/intents/instartworkoutintenthandling), implement one or more of the [`resolveWorkoutName(for:with:)`](https://developer.apple.com/documentation/intents/instartworkoutintenthandling/resolveworkoutname(for:with:)), [`resolveGoalValue(for:with:)`](https://developer.apple.com/documentation/intents/instartworkoutintenthandling/resolvegoalvalue(for:with:)), [`resolveWorkoutGoalUnitType(for:with:)`](https://developer.apple.com/documentation/intents/instartworkoutintenthandling/resolveworkoutgoalunittype(for:with:)), [`resolveWorkoutLocationType(for:with:)`](https://developer.apple.com/documentation/intents/instartworkoutintenthandling/resolveworkoutlocationtype(for:with:)), or [`resolveIsOpenEnded(for:with:)`](https://developer.apple.com/documentation/intents/instartworkoutintenthandling/resolveisopenended(for:with:)) methods.
+An app must decide how to handle these situations using the available resolution methods for the intent type. To handle parameter resolution for [`INStartWorkoutIntentHandling`](../Intents/instartworkoutintenthandling.md), implement one or more of the [`resolveWorkoutName(for:with:)`](../Intents/instartworkoutintenthandling/resolveworkoutname%28for,with%29.md), [`resolveGoalValue(for:with:)`](../Intents/instartworkoutintenthandling/resolvegoalvalue%28for,with%29.md), [`resolveWorkoutGoalUnitType(for:with:)`](../Intents/instartworkoutintenthandling/resolveworkoutgoalunittype%28for,with%29.md), [`resolveWorkoutLocationType(for:with:)`](../Intents/instartworkoutintenthandling/resolveworkoutlocationtype%28for,with%29.md), or [`resolveIsOpenEnded(for:with:)`](../Intents/instartworkoutintenthandling/resolveisopenended%28for,with%29.md) methods.
 
-In each of these calls, return an appropriate resolution result value by calling the `completion` block. For example, when handling the resolution of the workout name, return an [`INSpeakableStringResolutionResult`](https://developer.apple.com/documentation/intents/inspeakablestringresolutionresult) such as [`success(with:)`](https://developer.apple.com/documentation/intents/inspeakablestringresolutionresult/success(with:)), [`confirmationRequired(with:)`](https://developer.apple.com/documentation/intents/inspeakablestringresolutionresult/confirmationrequired(with:)), or [`disambiguation(with:)`](https://developer.apple.com/documentation/intents/inspeakablestringresolutionresult/disambiguation(with:)).
+In each of these calls, return an appropriate resolution result value by calling the `completion` block. For example, when handling the resolution of the workout name, return an [`INSpeakableStringResolutionResult`](../Intents/inspeakablestringresolutionresult.md) such as [`success(with:)`](../Intents/inspeakablestringresolutionresult/success%28with%29.md), [`confirmationRequired(with:)`](../Intents/inspeakablestringresolutionresult/confirmationrequired%28with%29.md), or [`disambiguation(with:)`](../Intents/inspeakablestringresolutionresult/disambiguation%28with%29.md).
 
 ```swift
 func resolveWorkoutName(for intent: INStartWorkoutIntent, with completion: @escaping (INSpeakableStringResolutionResult) -> Void) {
@@ -92,17 +92,17 @@ func resolveWorkoutName(for intent: INStartWorkoutIntent, with completion: @esca
 }
 ```
 
-> **Note**: It is not necessary to implement *all* of the available parameter resolution methods, only those that need additional logic. For example, the extension in this sample doesn’t need to do any special processing of the goal value when starting a workout, so there is no implementation of [`resolveGoalValue(for:with:)`](https://developer.apple.com/documentation/intents/instartworkoutintenthandling/resolvegoalvalue(for:with:)), although the app still recognizes and processes the goal value.
+> **Note**: It is not necessary to implement *all* of the available parameter resolution methods, only those that need additional logic. For example, the extension in this sample doesn’t need to do any special processing of the goal value when starting a workout, so there is no implementation of [`resolveGoalValue(for:with:)`](../Intents/instartworkoutintenthandling/resolvegoalvalue%28for,with%29.md), although the app still recognizes and processes the goal value.
 
 To aid Siri with recognition of parameter names like “wall climb” and “boulder climb,” add an `AppIntentVocabulary.plist` to a project. More information on this file and how it can add vocabulary to Siri can be found in [Registering Custom Vocabulary with SiriKit](./registering-custom-vocabulary-with-sirikit.md).
 
-Once all parameters have been resolved, the system calls [`confirm(intent:completion:)`](https://developer.apple.com/documentation/intents/instartworkoutintenthandling/confirm(intent:completion:)). Validate the resolved parameters and pass back an [`INStartWorkoutIntentResponse`](https://developer.apple.com/documentation/intents/instartworkoutintentresponse) with an [`INStartWorkoutIntentResponseCode`](https://developer.apple.com/documentation/intents/instartworkoutintentresponsecode).
+Once all parameters have been resolved, the system calls [`confirm(intent:completion:)`](../Intents/instartworkoutintenthandling/confirm%28intent,completion%29.md). Validate the resolved parameters and pass back an [`INStartWorkoutIntentResponse`](../Intents/instartworkoutintentresponse.md) with an [`INStartWorkoutIntentResponseCode`](../Intents/instartworkoutintentresponsecode.md).
 
 ##### Complete the Request
 
-Once the request to start the workout has been confirmed, the system calls [`handle(intent:completion:)`](https://developer.apple.com/documentation/intents/instartworkoutintenthandling/handle(intent:completion:)). Some requests from Siri will be better handled by the main app rather than the Intent Extension; for example, the main app can better respond to requests in which long-lived system services are needed to support the workout.
+Once the request to start the workout has been confirmed, the system calls [`handle(intent:completion:)`](../Intents/instartworkoutintenthandling/handle%28intent,completion%29.md). Some requests from Siri will be better handled by the main app rather than the Intent Extension; for example, the main app can better respond to requests in which long-lived system services are needed to support the workout.
 
-To transfer control to the main app, create a [`INStartWorkoutIntentResponse`](https://developer.apple.com/documentation/intents/instartworkoutintentresponse) with the [`handleInApp`](https://developer.apple.com/documentation/intents/instartworkoutintentresponsecode/handleinapp) code and pass it to the completion block.
+To transfer control to the main app, create a [`INStartWorkoutIntentResponse`](../Intents/instartworkoutintentresponse.md) with the [`handleInApp`](../Intents/instartworkoutintentresponsecode/handleinapp.md) code and pass it to the completion block.
 
 ```swift
 func handle(intent: INStartWorkoutIntent, completion: @escaping (INStartWorkoutIntentResponse) -> Void) {

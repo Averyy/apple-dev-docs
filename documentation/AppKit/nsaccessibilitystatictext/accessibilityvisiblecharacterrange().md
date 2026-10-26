@@ -34,6 +34,9 @@ This method is the getter for the [`NSAccessibilityProtocol`](../nsaccessibility
   Returns the attributed substring for the specified range of characters.
 - [func accessibilityValue() -> String?](./accessibilityvalue%28%29.md)
   Returns the text that the accessibility element displays.
+### Related Documentation
+- [accessibilityVisibleCharacterRange](../nsaccessibility-c.protocol/accessibilityvisiblecharacterrange.md)
+  The range of visible characters in the document.
 
 
 ---

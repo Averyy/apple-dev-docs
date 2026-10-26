@@ -34,6 +34,12 @@ Unlike normal references, a persistent reference may be stored on disk or passed
 - `itemRef`: A keychain item reference for the item for which you want a persistent reference.
 - `persistentItemRef`: On return, a persistent reference for the keychain item. You must call the `CFRelease` function to release this object when you are finished using it.
 
+## See Also
+
+### Related Documentation
+- [SecKeychainSearchCopyNext](./seckeychainsearchcopynext.md)
+  Finds the next keychain item matching the given search criteria.
+
 
 ---
 

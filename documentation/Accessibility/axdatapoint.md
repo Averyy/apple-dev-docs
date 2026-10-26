@@ -32,6 +32,12 @@ class AXDataPoint
   Creates a data point with the specified x-value, y-value, additional values, and label.
 - [convenience init(x: Double, y: Double?, additionalValues: [AXDataPoint.Value], label: String?)](./axdatapoint/init%28x,y,additionalvalues,label%29-4v3sb.md)
   Creates a data point with the specified x-value, y-value, additional values, and label.
+- [- initWithX:y:](./axdatapoint/initwithx_y_.md)
+  Creates a data point with the specified x- and y-values.
+- [- initWithX:y:additionalValues:](./axdatapoint/initwithx_y_additionalvalues_.md)
+  Creates a data point with the specified x-value, y-value, and additional values.
+- [- initWithX:y:additionalValues:label:](./axdatapoint/initwithx_y_additionalvalues_label_.md)
+  Creates a data point with the specified x-value, y-value, additional values, and label.
 ### Specifying the data value
 - [var xValue: AXDataPointValue](./axdatapoint/xvalue.md)
   The value of the x-axis for the data point.
@@ -41,6 +47,8 @@ class AXDataPoint
   A single data value.
 - [AXDataPoint.Value](./axdatapoint/value.md)
   Constants that describe types of data values.
+- [additionalValues](./axdatapoint/additionalvalues.md)
+  An array of values for additional axes for the data point.
 ### Specifying the label
 - [var label: String?](./axdatapoint/label.md)
   The label for the data point.

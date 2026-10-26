@@ -49,6 +49,16 @@ You can use this function to terminate a printing session if your application en
   Obtains the Quartz graphics context for the current page in a printing session.
 - [func PMSessionError(PMPrintSession) -> OSStatus](./api-1460003-pmsessionerror.md)
   Obtains the result code for any error returned by the printing session. 
+- [PMSessionSetCurrentPrinter](./core_printing/api-1805523-pmsessionsetcurrentprinter.md)
+  Changes the current printer for a printing session to a printer specified by name.
+- [PMSessionGetDocumentFormatGeneration](./core_printing/api-1805525-pmsessiongetdocumentformatgenera.md)
+  Obtains the spool file formats that can be generated for the specified printing session.
+- [PMSessionSetDocumentFormatGeneration](./core_printing/api-1805527-pmsessionsetdocumentformatgenera.md)
+  Requests a specified spool file format and supplies the graphics context type to use for drawing pages within the print loop.
+- [PMSessionGetGraphicsContext](./core_printing/api-1805529-pmsessiongetgraphicscontext.md)
+  Obtains the graphics context for the current page in a printing session.
+- [PMSessionGeneral](./core_printing/api-1805530-pmsessiongeneral.md)
+  Maintains compatibility with the `PrGeneral` function in the classic Printing Manager.
 
 
 ---

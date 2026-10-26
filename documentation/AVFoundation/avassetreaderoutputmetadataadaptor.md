@@ -31,6 +31,8 @@ class AVAssetReaderOutputMetadataAdaptor
 ### Creating a metadata adaptor
 - [init(assetReaderTrackOutput: AVAssetReaderTrackOutput)](./avassetreaderoutputmetadataadaptor/init%28assetreadertrackoutput%29.md)
   Creates an object that reads timed metadata groups from an asset reader output.
+- [+ assetReaderOutputMetadataAdaptorWithAssetReaderTrackOutput:](./avassetreaderoutputmetadataadaptor/assetreaderoutputmetadataadaptorwithassetreadertrackoutput_.md)
+  Returns a new object that reads timed metadata groups from an asset reader output.
 ### Retrieving timed metadata groups
 - [func nextTimedMetadataGroup() -> AVTimedMetadataGroup?](./avassetreaderoutputmetadataadaptor/nexttimedmetadatagroup%28%29.md)
   Returns the next timed metadata group for the asset reader output.

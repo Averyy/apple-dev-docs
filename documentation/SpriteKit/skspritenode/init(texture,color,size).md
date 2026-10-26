@@ -66,6 +66,12 @@ To colorize your texture, you also need to set the [`colorBlendFactor`](./colorb
   Initializes a textured sprite with a normal map to simulate 3D lighting.
 - [var texture: SKTexture?](./texture.md)
   The texture used to draw the sprite.
+- [+ spriteNodeWithColor:size:](./spritenodewithcolor_size_.md)
+  Initializes a single-color sprite.
+- [+ spriteNodeWithImageNamed:](./spritenodewithimagenamed_.md)
+  Initializes a textured sprite using an image file.
+- [+ spriteNodeWithTexture:](./spritenodewithtexture_.md)
+  Initializes a textured sprite using an existing texture object.
 
 
 ---

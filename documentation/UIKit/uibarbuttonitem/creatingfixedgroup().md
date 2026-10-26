@@ -37,6 +37,8 @@ A bar button item can only belong to one [`UIBarButtonItemGroup`](../uibarbutton
   Places the item in an optional group that a person can move, add to, or remove from the navigation bar during layout customization.
 - [func creatingMovableGroup(customizationIdentifier: String) -> UIBarButtonItemGroup](./creatingmovablegroup%28customizationidentifier%29.md)
   Places the item in a movable group that a person can move but can’t remove from the navigation bar during layout customization.
+- [- creatingOptionalGroupWithCustomizationIdentifier:inDefaultCustomization:](./creatingoptionalgroupwithcustomizationidentifier_indefaultcustomization_.md)
+  Places the item in an optional group that a person can move, add to, or remove from the navigation bar during layout customization.
 
 
 ---

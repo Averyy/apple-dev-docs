@@ -37,6 +37,8 @@ func beats(forSeconds seconds: TimeInterval) -> AVMusicTimeStamp
   A timestamp you use to access all events in a music track through a beat range.
 - [typealias AVBeatRange](../avbeatrange-swift.typealias.md)
   A specific time range within a music track.
+- [AVBeatRange](../avbeatrange-c.struct.md)
+  A specific time range within a music track.
 
 
 ---

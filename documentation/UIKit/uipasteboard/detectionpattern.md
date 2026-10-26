@@ -31,6 +31,22 @@ typedef NSString * UIPasteboardDetectionPattern;
   A pattern that indicates the pasteboard contains a string suitable for use as a web search term.
 - [static let probableWebURL: UIPasteboard.DetectionPattern](./detectionpattern/probableweburl.md)
   A pattern that indicates the pasteboard contains a string that consists of a URL.
+- [UIPasteboardDetectionPatternCalendarEvent](../uipasteboarddetectionpatterncalendarevent.md)
+  A pattern that indicates the pasteboard detects a string that contains a calendar event.
+- [UIPasteboardDetectionPatternEmailAddress](../uipasteboarddetectionpatternemailaddress.md)
+  A pattern that indicates the pasteboard detects a string that contains an email address.
+- [UIPasteboardDetectionPatternFlightNumber](../uipasteboarddetectionpatternflightnumber.md)
+  A pattern that indicates the pasteboard detects a string that contains a flight number.
+- [UIPasteboardDetectionPatternLink](../uipasteboarddetectionpatternlink.md)
+  A pattern that indicates the pasteboard detects of a string that contains a URL.
+- [UIPasteboardDetectionPatternMoneyAmount](../uipasteboarddetectionpatternmoneyamount.md)
+  A pattern that indicates the pasteboard detects a string that contains an amount of money.
+- [UIPasteboardDetectionPatternPhoneNumber](../uipasteboarddetectionpatternphonenumber.md)
+  A pattern that indicates the pasteboard detects a string that contains a phone number.
+- [UIPasteboardDetectionPatternPostalAddress](../uipasteboarddetectionpatternpostaladdress.md)
+  A pattern that indicates the pasteboard detects a string that contains a postal address.
+- [UIPasteboardDetectionPatternShipmentTrackingNumber](../uipasteboarddetectionpatternshipmenttrackingnumber.md)
+  A pattern that indicates the pasteboard detects a string that contains a parcel tracking number and carrier.
 ### Creating a detection pattern
 - [init(rawValue: String)](./detectionpattern/init%28rawvalue%29.md)
   Creates a detection pattern to detect different types of content on the pasteboard.
@@ -59,6 +75,14 @@ typedef NSString * UIPasteboardDetectionPattern;
   Requests that the data detection system asynchronously identify the types of values that you specify for the pasteboard item, and return the values that it matches for each pasteboard.
 - [UIPasteboard.DetectedValues](./detectedvalues.md)
   An object that contains common types of data that the data detection system matches for a pasteboard.
+- [- detectPatternsForPatterns:completionHandler:](./detectpatternsforpatterns_completionhandler_.md)
+  Determines whether the first pasteboard item matches the specified patterns, without notifying the user.
+- [- detectPatternsForPatterns:inItemSet:completionHandler:](./detectpatternsforpatterns_initemset_completionhandler_.md)
+  Determines whether pasteboard items match the specified patterns, without notifying the user.
+- [- detectValuesForPatterns:completionHandler:](./detectvaluesforpatterns_completionhandler_.md)
+  Determines whether the first pasteboard item matches the specified patterns, reading the contents if it finds a match.
+- [- detectValuesForPatterns:inItemSet:completionHandler:](./detectvaluesforpatterns_initemset_completionhandler_.md)
+  Determines whether pasteboard items match the specified patterns, reading the contents if it finds a match.
 
 
 ---

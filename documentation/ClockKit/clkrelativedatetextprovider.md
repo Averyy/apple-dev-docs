@@ -56,6 +56,10 @@ The format of the relative time value is dependent on the date style you choose 
   Creates a text provider that shows the difference between the current time and the specified date.
 - [convenience init(date: Date, relativeTo: Date?, style: CLKRelativeDateStyle, units: NSCalendar.Unit)](./clkrelativedatetextprovider/init%28date,relativeto,style,units%29.md)
   Creates a text provider that shows the difference in time between the provided dates.
+- [- initWithDate:style:units:](./clkrelativedatetextprovider/initwithdate_style_units_.md)
+  Creates a text provider that shows the difference between the current time and the specified date.
+- [- initWithDate:relativeToDate:style:units:](./clkrelativedatetextprovider/initwithdate_relativetodate_style_units_.md)
+  Creates a text provider that shows the difference in time between the provided dates.
 ### Getting the Date Information
 - [var date: Date](./clkrelativedatetextprovider/date.md)
   The target date to use for calculations.

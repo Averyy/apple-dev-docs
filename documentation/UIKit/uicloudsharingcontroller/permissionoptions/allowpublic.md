@@ -35,6 +35,8 @@ To give the user the option to allow anyone to access the shared data, include t
   The option that gives participants read-only permission to the shared data.
 - [static var allowReadWrite: UICloudSharingController.PermissionOptions](./allowreadwrite.md)
   The option that gives participants read/write permission to the shared data.
+- [UICloudSharingPermissionStandard](../../uicloudsharingpermissionoptions/uicloudsharingpermissionstandard.md)
+  The option that makes all user options available.
 
 
 ---

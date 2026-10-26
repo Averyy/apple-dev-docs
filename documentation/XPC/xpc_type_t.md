@@ -33,6 +33,7 @@ typedef const struct _xpc_type_s * xpc_type_t;
 - [protocol OS_xpc_object](./os_xpc_object.md)
   The interface for an XPC object.
 - [class OS_xpc_listener](./os_xpc_listener-swift.class.md)
+- [OS_xpc_listener](./os_xpc_listener-c.protocol.md)
 
 
 ---

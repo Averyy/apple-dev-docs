@@ -27,6 +27,12 @@ The POSIX GID of the group identity.
 
 The POSIX GID is an integer that can identify a group within an identity authority. GIDs are not guaranteed to be unique within an identity authority.
 
+## See Also
+
+### Group Identity Attributes
+- [members](./members.md)
+  Returns the members of the group.
+
 
 ---
 

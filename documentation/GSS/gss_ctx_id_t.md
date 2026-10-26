@@ -32,6 +32,12 @@ typedef struct gss_ctx_id_t_desc_struct * gss_ctx_id_t;
   A pointer to a channel bindings descriptor that specifies the communications channel used to carry a context.
 - [typealias gss_const_channel_bindings_t](./gss_const_channel_bindings_t.md)
   A pointer to an immutable channel bindings descriptor that you use to specify the communications channel used to carry a context.
+- [GSS_C_NO_CHANNEL_BINDINGS](./gss_c_no_channel_bindings.md)
+  Indicates a `NULL` [`gss_channel_bindings_t`](./gss_channel_bindings_t.md) object.
+- [GSS_C_NO_CONTEXT](./gss_c_no_context.md)
+  A macro that indicates an empty context id object.
+- [gss_const_ctx_id_t](./gss_const_ctx_id_t.md)
+  A pointer to an immutable opaque type that you use to communicate context pointers with GSS-API functions.
 
 
 ---

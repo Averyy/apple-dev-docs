@@ -32,6 +32,8 @@ enum NSMachPortOptions : NSUInteger;
   Remove a receive right when the `NSMachPort` object is invalidated or destroyed.
 - [static var deallocateSendRight: NSMachPort.Options](./options/deallocatesendright.md)
   Deallocate a send right when the `NSMachPort` object is invalidated or destroyed.
+- [NSMachPortDeallocateNone](../nsmachportoptions/nsmachportdeallocatenone.md)
+  Do not remove any send or receive rights.
 ### Initializers
 - [init(rawValue: UInt)](./options/init%28rawvalue%29.md)
 

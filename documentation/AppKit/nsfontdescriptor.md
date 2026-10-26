@@ -38,6 +38,8 @@ All attributes in the attributes dictionary are optional.
   Returns a font descriptor with the name and size attributes set to the given values.
 - [init(fontAttributes: [NSFontDescriptor.AttributeName : Any]?)](./nsfontdescriptor/init%28fontattributes%29.md)
   Initializes and returns a new font descriptor with the specified attributes.
+- [+ fontDescriptorWithFontAttributes:](./nsfontdescriptor/fontdescriptorwithfontattributes_.md)
+  Returns a font descriptor with a dictionary of attributes.
 ### Modifying an Existing Font Descriptor
 - [func addingAttributes([NSFontDescriptor.AttributeName : Any]) -> NSFontDescriptor](./nsfontdescriptor/addingattributes%28_%29.md)
   Returns a new font descriptor based on the current object, but with the specified attributes taking precedence over the existing ones.

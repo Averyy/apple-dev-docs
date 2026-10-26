@@ -35,6 +35,13 @@ If you set the display manager’s [`preferredDisplayCriteria`](./avdisplaymanag
   A Boolean value that indicates whether the user has enabled display critera matching.
 - [var isDisplayModeSwitchInProgress: Bool](./avdisplaymanager/isdisplaymodeswitchinprogress.md)
   A Boolean value that indicates whether a display mode switch is in progress.
+### Notifications
+- [AVDisplayManagerModeSwitchEndNotification](./avdisplaymanagermodeswitchendnotification.md)
+  Posted when a display mode switch has completed.
+- [AVDisplayManagerModeSwitchSettingsChangedNotification](./avdisplaymanagermodeswitchsettingschangednotification.md)
+  Posted when the user settings for display criteria matching have changed.
+- [AVDisplayManagerModeSwitchStartNotification](./avdisplaymanagermodeswitchstartnotification.md)
+  Posted when a display begins a display mode switch.
 
 ## Relationships
 

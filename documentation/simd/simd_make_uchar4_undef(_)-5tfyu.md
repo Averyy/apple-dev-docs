@@ -37,6 +37,8 @@ static simd_uchar4 simd_make_uchar4_undef(simd_uchar3 other);
   Returns a new vector from the specified vectors.
 - [func simd_make_uchar4_undef(simd_uchar2) -> simd_uchar4](./simd_make_uchar4_undef%28_%29-5we7j.md)
   Returns a new vector from the specified two-element vector, and other elements undefined.
+- [vector4](./vector4-3tea7.md)
+  Returns a new vector from the specified vectors.
 
 
 ---

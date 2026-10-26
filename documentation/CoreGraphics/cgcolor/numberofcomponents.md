@@ -36,6 +36,10 @@ extern size_t CGColorGetNumberOfComponents(CGColorRef color);
   Returns the values of the color components (including alpha) associated with a color.
 - [var pattern: CGPattern?](./pattern.md)
   Returns the pattern associated with a color in a pattern color space.
+- [CGColorEqualToColor](../cgcolorequaltocolor.md)
+  Indicates whether two colors are equal.
+- [CGColorGetComponents](../cgcolorgetcomponents.md)
+  Returns the values of the color components (including alpha) associated with a color.
 
 
 ---

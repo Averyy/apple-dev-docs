@@ -21,6 +21,7 @@ enum {
 
 ### Constants
 - [var formWhose: Int](../../coreservices/formwhose.md)
+- [formWhose](../../coreservices/api-1572727-anonymous/formwhose.md)
 
 
 ---

@@ -51,6 +51,9 @@ TextKit uses the abstract [`NSTextLocation`](./nstextlocation.md) protocol to id
   Returns a new attributed string for the text element.
 - [var includesTextListMarkers: Bool](./nstextcontentstorage/includestextlistmarkers.md)
   When `true`, `NSTextContentStorage` assumes the paragraph with `NSTextList` includes the text list marker string.
+### Notifications
+- [NSTextContentStorageUnsupportedAttributeAddedNotification](./nstextcontentstorageunsupportedattributeaddednotification.md)
+  Posted by `NSTextContentStorage` when a text attribute unsupported by `NSTextContentStorage` is added to the underlying text storage.
 
 ## Relationships
 
@@ -79,6 +82,8 @@ TextKit uses the abstract [`NSTextLocation`](./nstextlocation.md) protocol to id
   A string of text that manages data, layout, and stylistic information for ranges of characters to support rendering.
 - [class NSMutableAttributedString](../Foundation/nsmutableattributedstring.md)
   A mutable string with associated attributes (such as visual style, hyperlinks, or accessibility data) for portions of its text.
+- [TextKit string attributes](./textkit-string-attributes.md)
+  AppKit-specific keys and values for displaying text and managing documents.
 
 
 ---

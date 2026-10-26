@@ -22,6 +22,7 @@ class DOMHTMLLabelElement
 ### Instance Properties
 - [var form: DOMHTMLFormElement!](./domhtmllabelelement/form.md)
 - [var htmlFor: String!](./domhtmllabelelement/htmlfor.md)
+- [accessKey](./domhtmllabelelement/accesskey.md)
 
 ## Relationships
 

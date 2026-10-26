@@ -50,6 +50,10 @@ enum MLCSampleMode : int32_t;
   Creates an upsample layer with the shape you specify.
 - [convenience init?(shape: [Int], sampleMode: MLCSampleMode, alignsCorners: Bool)](./mlcupsamplelayer/init%28shape,samplemode,alignscorners%29.md)
   Creates an upsample layer with the shape, upsampling algorithm, and corner alignment option you specify.
+- [+ layerWithShape:](./mlcupsamplelayer/layerwithshape_.md)
+  Creates an upsample layer with the shape you specify.
+- [+ layerWithShape:sampleMode:alignsCorners:](./mlcupsamplelayer/layerwithshape_samplemode_alignscorners_.md)
+  Creates an upsample layer with the shape, upsampling algorithm, and corner alignement option you specify.
 
 
 ---

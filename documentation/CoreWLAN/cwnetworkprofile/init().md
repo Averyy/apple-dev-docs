@@ -32,6 +32,10 @@ This method is the designated initializer for the CWNetworkProfile class.
 ### Getting a network profile
 - [init(networkProfile: CWNetworkProfile)](./init%28networkprofile%29.md)
   Creates and returns a CWNetworkProfile object initialized with the given CWNetworkProfile object.
+- [+ networkProfile](./networkprofile.md)
+  Convenience method for getting a CWNetworkProfile object.
+- [+ networkProfileWithNetworkProfile:](./networkprofilewithnetworkprofile_.md)
+  Convenience method for getting a CWNetworkProfile object initialized with the given CWNetworkProfile object.
 
 
 ---

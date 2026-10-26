@@ -20,6 +20,10 @@ Transform vectors of temporal and spatial domain real values to the frequency do
 ### Discrete Cosine Transforms
 - [enum vDSP_DCT_Type](./vdsp_dct_type.md)
   Constants that indicate the type for a discrete cosine transform.
+- [vDSP_DCT_CreateSetup](./vdsp_dct_createsetup.md)
+  Builds a data structure that contains precalculated data to perform a discrete cosine transform.
+- [vDSP_DCT_Execute](./vdsp_dct_execute.md)
+  Calculates the discrete cosine transform for a vector.
 
 ## See Also
 

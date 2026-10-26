@@ -67,7 +67,7 @@ A user may already have an account in your system, but may attempt to use Sign i
   Check the validity and integrity of a user’s identity token.
 - [Processing changes for Sign in with Apple accounts](./processing-changes-for-sign-in-with-apple-accounts.md)
   Manage user-initiated modifications to maintain privacy with server-to-server notifications.
-- [Request an authorization to the Sign in with Apple server](https://developer.apple.com/documentation/signinwithapplerestapi/request-an-authorization-to-the-sign-in-with-apple-server.)
+- [Request an authorization to the Sign in with Apple server](../SigninwithAppleRESTAPI/request-an-authorization-to-the-sign-in-with-apple-server.md)
   Add a Sign in with Apple authorization flow to apps and web services that can’t directly access Sign in with Apple JS.
 
 

@@ -29,6 +29,12 @@ Array-based texture types such as [`MTLTextureType.type2DArray`](../../Metal/mtl
 ### Getting the layer’s texture topology
 - [var textureType: MTLTextureType](./texturetype.md)
   The texture type value that specifies how the underlying texture organizes its views.
+- [cp_layer_renderer_properties_get_texture_topology_count](../cp_layer_renderer_properties_get_texture_topology_count.md)
+  Returns the number of texture topologies available for you to inspect.
+- [cp_layer_renderer_properties_get_texture_topology](../cp_layer_renderer_properties_get_texture_topology.md)
+  Retrieves the texture topology at the specified index in the layer’s properties.
+- [cp_texture_topology_t](../cp_texture_topology_t.md)
+  A type that specifies the organization of one of the drawable’s textures.
 
 
 ---

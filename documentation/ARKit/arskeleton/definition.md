@@ -27,6 +27,8 @@ var definition: ARSkeletonDefinition { get }
   Tells you whether ARKit tracks a joint at a particular index.
 - [ARSkeleton.JointName](./jointname.md)
   A name identifier for a joint.
+- [jointCount](./jointcount.md)
+  The skeleton’s total number of joints.
 
 
 ---

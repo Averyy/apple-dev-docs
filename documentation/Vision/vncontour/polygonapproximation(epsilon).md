@@ -45,6 +45,8 @@ A simplified polygon contour from the points of the original contour.
   The contour’s number of points.
 - [var normalizedPoints: [simd_float2]](./normalizedpoints-8n2s5.md)
   The contour’s array of points in normalized coordinates.
+- [normalizedPoints](./normalizedpoints-2orqj.md)
+  The contour’s array of points in normalized coordinates.
 
 
 ---

@@ -226,6 +226,8 @@ To be thread-safe, the sample serializes data access with a dispatch queue ([`Di
   A view controller that presents standard screens for adding and removing people from a CloudKit share record.
 - [CKSharingSupported](../BundleResources/information-property-list/cksharingsupported.md)
   A Boolean value that indicates your app supports CloudKit Sharing.
+- [CKSharePreparationCompletionHandler](./cksharepreparationcompletionhandler.md)
+- [CKSharePreparationHandler](./cksharepreparationhandler.md)
 
 
 ---

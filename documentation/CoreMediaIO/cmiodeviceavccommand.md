@@ -44,6 +44,7 @@ struct CMIODeviceAVCCommand;
 - [struct CMIOObjectPropertyAddress](./cmioobjectpropertyaddress.md)
 - [struct CMIOStreamDeck](./cmiostreamdeck.md)
 - [struct CMIOStreamScheduledOutputNotificationProcAndRefCon](./cmiostreamscheduledoutputnotificationprocandrefcon.md)
+- [CMIOHardwarePlugInInterface](./cmiohardwareplugininterface.md)
 
 
 ---

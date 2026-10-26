@@ -58,6 +58,10 @@ An RFCOMM channel object can be obtained by opening an RFCOMM channel in a devic
   Sends a block of data in the channel asynchronously.
 - [func writeSync(UnsafeMutableRawPointer!, length: UInt16) -> IOReturn](./iobluetoothrfcommchannel/writesync%28_,length%29.md)
   Sends a block of data in the channel synchronously.
+- [- write:length:sleep:](./iobluetoothrfcommchannel/write_length_sleep_.md)
+  Sends a block of data in the channel syncronously.
+- [- writeSimple:length:sleep:bytesSent:](./iobluetoothrfcommchannel/writesimple_length_sleep_bytessent_.md)
+  Sends a block of data in the channel.
 ### Type Methods
 - [class func register(forChannelOpenNotifications: Any!, selector: Selector!) -> IOBluetoothUserNotification!](./iobluetoothrfcommchannel/register%28forchannelopennotifications,selector%29.md)
   Allows a client to register for RFCOMM channel open notifications for any RFCOMM channel.
@@ -67,6 +71,21 @@ An RFCOMM channel object can be obtained by opening an RFCOMM channel in a devic
   Returns the IObluetoothRFCOMMChannel with the given IOBluetoothObjectID.
 - [class func withRFCOMMChannelRef(IOBluetoothRFCOMMChannelRef!) -> Self!](./iobluetoothrfcommchannel/withrfcommchannelref%28_%29.md)
   Method call to convert an IOBluetoothRFCOMMChannelRef into an IOBluetoothRFCOMMChannel *.
+### Instance Variables
+- [delegate](./iobluetoothrfcommchannel/delegate-c.ivar.md)
+- [mChannelID](./iobluetoothrfcommchannel/mchannelid.md)
+- [mChannelIsOpen](./iobluetoothrfcommchannel/mchannelisopen.md)
+- [mDataAvailablePort](./iobluetoothrfcommchannel/mdataavailableport.md)
+- [mDevice](./iobluetoothrfcommchannel/mdevice.md)
+- [mEventDataListener](./iobluetoothrfcommchannel/meventdatalistener.md)
+- [mEventDataListenerRefCon](./iobluetoothrfcommchannel/meventdatalistenerrefcon.md)
+- [mIncomingDataListener](./iobluetoothrfcommchannel/mincomingdatalistener.md)
+- [mIncomingDataListenerRefCon](./iobluetoothrfcommchannel/mincomingdatalistenerrefcon.md)
+- [mIncomingDataQueue](./iobluetoothrfcommchannel/mincomingdataqueue.md)
+- [mIsIncoming](./iobluetoothrfcommchannel/misincoming.md)
+- [mL2Channel](./iobluetoothrfcommchannel/ml2channel.md)
+- [mMTU](./iobluetoothrfcommchannel/mmtu.md)
+- [mObjectID](./iobluetoothrfcommchannel/mobjectid.md)
 
 ## Relationships
 

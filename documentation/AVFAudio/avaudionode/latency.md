@@ -38,6 +38,7 @@ This latency reflects the delay due to signal processing. A value of `0` indicat
   An audio unit object that wraps or underlies the implementation’s audio unit.
 - [var outputPresentationLatency: TimeInterval](./outputpresentationlatency.md)
   The maximum render pipeline latency downstream of the node, in seconds.
+- [AUAudioUnit](./auaudiounit-1kkjr.md)
 
 
 ---

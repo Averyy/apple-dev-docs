@@ -66,6 +66,8 @@ struct AudioPacketRangeByteCountTranslation;
   A structure that specifies frame and packet translations.
 - [struct AudioBytePacketTranslation](./audiobytepackettranslation.md)
   A data structure used by the [`kAudioFilePropertyByteToPacket`](./kaudiofilepropertybytetopacket.md) and [`kAudioFilePropertyPacketToByte`](./kaudiofilepropertypackettobyte.md) properties.
+- [AudioFileFDFTable](./audiofilefdftable.md)
+- [AudioFileFDFTableExtended](./audiofilefdftableextended.md)
 
 
 ---

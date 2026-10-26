@@ -66,6 +66,8 @@ This function refetches any attributes which have been fetched previously, but i
   Sets node authentication credentials for a record using a specified authentication method.
 - [func ODRecordSetValue(ODRecordRef!, String!, CFTypeRef!, UnsafeMutablePointer<Unmanaged<CFError>?>!) -> Bool](./odrecordsetvalue%28_,_,_,_%29.md)
   Sets one or more attribute values of a record.
+- [ODRecordCopyPasswordPolicy](./odrecordcopypasswordpolicy.md)
+  Returns the password policies of a record.
 
 
 ---

@@ -89,6 +89,8 @@ A single audio converter may perform more than one of the listed transformations
   Returned from the [`AudioConverterFillComplexBuffer(_:_:_:_:_:_:)`](./audioconverterfillcomplexbuffer%28_,_,_,_,_,_%29.md) function if the underlying hardware codec has become unavailable, probably due to an audio interruption.
 - [var kAudioConverterErr_NoHardwarePermission: OSStatus](./kaudioconvertererr_nohardwarepermission.md)
   Returned from the [`AudioConverterNew(_:_:_:)`](./audioconverternew%28_,_,_%29.md) function if the new converter would use a hardware codec which the application does not have permission to use.
+### Deprecated Functions
+- [AudioConverterFillBuffer](./audioconverterfillbuffer.md)
 
 ## See Also
 

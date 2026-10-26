@@ -478,6 +478,12 @@
 - [var kPMUnsupportedPDEKindID: String](./kpmunsupportedpdekindid.md)
 - [var kPMWatermarkPDEKindID: String](./kpmwatermarkpdekindid.md)
 - [var kPrinterModuleTypeIDStr: String](./kprintermoduletypeidstr.md)
+- [kICHelper](./kichelper.md)
+- [kICHelperDesc](./kichelperdesc.md)
+- [kICHelperList](./kichelperlist.md)
+- [kICWebReadColor](./kicwebreadcolor.md)
+- [kICWebUnderlineLinks](./kicwebunderlinelinks.md)
+- [kICWebUnreadColor](./kicwebunreadcolor.md)
 
 
 ---

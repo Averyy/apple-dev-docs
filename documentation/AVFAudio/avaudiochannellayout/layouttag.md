@@ -30,6 +30,8 @@ var layoutTag: AudioChannelLayoutTag { get }
 ### Related Documentation
 - [convenience init?(layoutTag: AudioChannelLayoutTag)](./init%28layouttag%29.md)
   Creates an audio channel layout object from a layout tag.
+- [+ layoutWithLayoutTag:](./layoutwithlayouttag_.md)
+  Creates an audio channel layout object from an audio channel layout tag.
 ### Getting audio channel layout properties
 - [typealias AVAudioChannelCount](../avaudiochannelcount.md)
   The number of audio channels.

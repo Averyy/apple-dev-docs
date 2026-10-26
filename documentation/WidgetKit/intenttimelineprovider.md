@@ -32,7 +32,7 @@ For example, in a widget that displays the health status of a game character the
 
 ![A screenshot showing a custom intent definition file configured with an](https://developer.apple.com/tutorials/images/com.apple.WidgetKit/IntentTimelineProvider-IntentDefinition@2x.png)
 
-Xcode generates the following [`INIntent`](https://developer.apple.com/documentation/intents/inintent) custom intent:
+Xcode generates the following [`INIntent`](../Intents/inintent.md) custom intent:
 
 ```swift
 public class SelectCharacterIntent: INIntent {
@@ -96,7 +96,7 @@ struct CharacterDetailProvider: IntentTimelineProvider {
 ## See Also
 
 ### Related Documentation
-- [class INIntent](https://developer.apple.com/documentation/intents/inintent)
+- [class INIntent](../Intents/inintent.md)
   A request to fulfill in your app or Intents extension.
 ### Timeline updates
 - [Keeping a widget up to date](./keeping-a-widget-up-to-date.md)

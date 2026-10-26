@@ -164,6 +164,9 @@ The class’s delegate object must conform to IKImageBrowserDelegate Protocol pr
   Keys for group attributes.
 - [struct IKImageBrowserDropOperation](./ikimagebrowserdropoperation.md)
   These constants specify the locations for dropping items onto the browser view. Used by the method [`setDrop(_:dropOperation:)`](./ikimagebrowserview/setdrop%28_,dropoperation%29.md).
+### Initializing and Setting Up an Image Browser View
+- [- initWithFrame:](./ikimagebrowserview/initwithframe_.md)
+  Initializes a newly allocated image browser view with the provided frame rectangle.
 
 ## Relationships
 

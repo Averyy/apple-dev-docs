@@ -20,7 +20,7 @@ let r = 9.0
 let q = simd_quatd(ix: ix, iy: iy, iz: iz, r: r)
 ```
 
-The length of the quaternion can be calculated manually with `sqrt(ix*ix + iy*iy + iz*iz + r*r)`, or more simply accessed through its [`length`](https://developer.apple.com/documentation/simd/simd_quatd/length) property. Quaternions with a length of one are called *unit quaternions* and can represent rotations in 3D space. You can easily convert a nonunit quaternion representing a rotation into a unit quaternion by normalizing its axes. The following code shows `q1`, which contains rotations around all three axes with a length greater than 1, and `q2`, which contains the same rotation but has a length of 1 and is, therefore, suitable for applying a rotation to a 3D coordinate:
+The length of the quaternion can be calculated manually with `sqrt(ix*ix + iy*iy + iz*iz + r*r)`, or more simply accessed through its [`length`](../simd/simd_quatd/length.md) property. Quaternions with a length of one are called *unit quaternions* and can represent rotations in 3D space. You can easily convert a nonunit quaternion representing a rotation into a unit quaternion by normalizing its axes. The following code shows `q1`, which contains rotations around all three axes with a length greater than 1, and `q2`, which contains the same rotation but has a length of 1 and is, therefore, suitable for applying a rotation to a 3D coordinate:
 
 ```swift
 let axis = simd_double3(x: -2,
@@ -61,7 +61,7 @@ let quaternion = simd_quatf(angle: degreesToRadians(-60),
                                               z: 0))
 ```
 
-The rotation of the vector by a quaternion is known as an *action*; to apply the rotation to `originVector`, you call the [`act(_:)`](https://developer.apple.com/documentation/simd/simd_quatf/act(_:)) method:
+The rotation of the vector by a quaternion is known as an *action*; to apply the rotation to `originVector`, you call the [`act(_:)`](../simd/simd_quatf/act%28_%29.md) method:
 
 ```swift
 let rotatedVector = quaternion.act(originVector)
@@ -100,7 +100,7 @@ let q2 = simd_quatf(angle: .pi / 20,
                                                      z: -1)))
 ```
 
-The [`simd_slerp(_:_:_:)`](https://developer.apple.com/documentation/simd/simd_slerp(_:_:_:)-u2db) function linearly interpolates along the shortest arc between two quaternions. The following code calls [`simd_slerp(_:_:_:)`](https://developer.apple.com/documentation/simd/simd_slerp(_:_:_:)-u2db) with small increments to its `t` parameter, adding a line segment at each interpolated value to build the short arc between `q0` and `q1` shown in the preceding image:
+The [`simd_slerp(_:_:_:)`](../simd/simd_slerp%28_,_,_%29-u2db.md) function linearly interpolates along the shortest arc between two quaternions. The following code calls [`simd_slerp(_:_:_:)`](../simd/simd_slerp%28_,_,_%29-u2db.md) with small increments to its `t` parameter, adding a line segment at each interpolated value to build the short arc between `q0` and `q1` shown in the preceding image:
 
 ```swift
 for t: Float in stride(from: 0, to: 1, by: 0.001) {
@@ -109,7 +109,7 @@ for t: Float in stride(from: 0, to: 1, by: 0.001) {
 }
 ```
 
-The [`simd_slerp_longest(_:_:_:)`](https://developer.apple.com/documentation/simd/simd_slerp_longest(_:_:_:)-3qens) function linearly interpolates along the longest arc between two quaternions. The following code calls [`simd_slerp_longest(_:_:_:)`](https://developer.apple.com/documentation/simd/simd_slerp_longest(_:_:_:)-3qens) with small increments to its `t` parameter, adding a line segment at each interpolated value to build the long arc between `q1` and `q2` shown in the preceding image:
+The [`simd_slerp_longest(_:_:_:)`](../simd/simd_slerp_longest%28_,_,_%29-3qens.md) function linearly interpolates along the longest arc between two quaternions. The following code calls [`simd_slerp_longest(_:_:_:)`](../simd/simd_slerp_longest%28_,_,_%29-3qens.md) with small increments to its `t` parameter, adding a line segment at each interpolated value to build the long arc between `q1` and `q2` shown in the preceding image:
 
 ```swift
 for t: Float in stride(from: 0, to: 1, by: 0.001) {
@@ -120,13 +120,13 @@ for t: Float in stride(from: 0, to: 1, by: 0.001) {
 
 ##### Interpolate Between Multiple Points on a Sphere
 
-To interpolate between multiple quaternions that define positions on the surface of a sphere, the simd library provides the [`simd_spline(_:_:_:_:_:)`](https://developer.apple.com/documentation/simd/simd_spline(_:_:_:_:_:)-1ok51) function.
+To interpolate between multiple quaternions that define positions on the surface of a sphere, the simd library provides the [`simd_spline(_:_:_:_:_:)`](../simd/simd_spline%28_,_,_,_,_%29-1ok51.md) function.
 
 The following image illustrates a series of quaternions that define positions on the surface of a sphere, shown as points, and a line that shows the smooth interpolation between them.
 
 ![Image showing a spline passing through multiple points on a sphere.](https://developer.apple.com/tutorials/images/com.apple.accelerate/media-2969368@2x.png)
 
-Much like [`simd_slerp(_:_:_:)`](https://developer.apple.com/documentation/simd/simd_slerp(_:_:_:)-u2db), [`simd_spline(_:_:_:_:_:)`](https://developer.apple.com/documentation/simd/simd_spline(_:_:_:_:_:)-1ok51) accepts the two quaternions to interpolate between, but also requires the surrounding two quaternions. Given an array of quaternions named `rotations`, the following code iterates over each element, adding a line segment at each interpolated value to build the smooth line shown in the preceding image:
+Much like [`simd_slerp(_:_:_:)`](../simd/simd_slerp%28_,_,_%29-u2db.md), [`simd_spline(_:_:_:_:_:)`](../simd/simd_spline%28_,_,_,_,_%29-1ok51.md) accepts the two quaternions to interpolate between, but also requires the surrounding two quaternions. Given an array of quaternions named `rotations`, the following code iterates over each element, adding a line segment at each interpolated value to build the smooth line shown in the preceding image:
 
 ```swift
 let rotations: [simd_quatf] = ...

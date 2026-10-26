@@ -67,6 +67,8 @@ The underlying `bool` value for the specified key. false if the the value for th
   Returns the dictionary value for the specified key.
 - [func xpc_dictionary_get_double(xpc_object_t, UnsafePointer<CChar>) -> Double](./xpc_dictionary_get_double%28_,_%29.md)
   Gets a double-precision floating point primitive value from a dictionary directly.
+- [xpc_dictionary_get_int64](./xpc_dictionary_get_int64%28_,_%29.md)
+  Gets a 64-bit integer primitive value from a dictionary directly.
 
 
 ---

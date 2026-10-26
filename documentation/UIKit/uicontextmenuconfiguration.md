@@ -42,6 +42,8 @@ If you specify a default object without any custom handler blocks, the system di
   Returns the custom view controller to use when previewing your content.
 - [typealias UIContextMenuActionProvider](./uicontextmenuactionprovider.md)
   Returns an action-based contextual menu, optionally incorporating the system-suggested actions.
+- [+ configurationWithIdentifier:previewProvider:actionProvider:](./uicontextmenuconfiguration/configurationwithidentifier_previewprovider_actionprovider_.md)
+  Creates a menu configuration object with the specified action and preview providers.
 ### Getting the configuration identifier
 - [var identifier: any NSCopying](./uicontextmenuconfiguration/identifier.md)
   The unique identifier for this configuration object.

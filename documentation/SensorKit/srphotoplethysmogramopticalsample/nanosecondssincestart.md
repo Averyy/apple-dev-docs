@@ -45,6 +45,16 @@ var nanosecondsSinceStart: Int64 { get }
 - [SRPhotoplethysmogramOpticalSample.NoiseTerms](./noiseterms-swift.struct.md)
   The mathematical terms that you use to compute the photoplethysmogram (PPG) noise.
 - [var normalizedReflectance: Double?](./normalizedreflectance-15f2k.md)
+- [whiteNoise](./whitenoise.md)
+  An estimate of the white noise of the sensor.
+- [pinkNoise](./pinknoise.md)
+  An estimate of the pink noise of the sensor.
+- [backgroundNoise](./backgroundnoise.md)
+  An estimated timeseries of ambient noise intrusion.
+- [backgroundNoiseOffset](./backgroundnoiseoffset.md)
+  The white noise variance estimate in the background noise signal.
+- [normalizedReflectance](./normalizedreflectance-9aidm.md)
+  The photoplethysmogram waveform in normalized units.
 
 
 ---

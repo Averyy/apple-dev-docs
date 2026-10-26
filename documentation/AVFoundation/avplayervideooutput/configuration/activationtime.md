@@ -34,6 +34,8 @@ var activationTime: CMTime { get }
   An array of data channels selected for this configuration.
 - [var preferredTransform: CGAffineTransform](./preferredtransform.md)
   The preferred transform of the visual media.
+- [dataChannelDescriptions](../../avplayervideooutputconfiguration/datachanneldescriptions.md)
+  An array of data channels selected for this configuration.
 
 
 ---

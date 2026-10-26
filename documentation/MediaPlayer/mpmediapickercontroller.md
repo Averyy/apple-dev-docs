@@ -34,6 +34,8 @@ To respond to user selections and to dismiss a media item picker, use the [`MPMe
 ### Initializing a media item picker
 - [init(mediaTypes: MPMediaType)](./mpmediapickercontroller/init%28mediatypes%29.md)
   Initializes a media item picker for specified media types.
+- [init](./mpmediapickercontroller-init.md)
+  Initializes a media item picker for all media types.
 ### Responding to media item picker selections
 - [var delegate: (any MPMediaPickerControllerDelegate)?](./mpmediapickercontroller/delegate.md)
   The delegate for a media item picker.

@@ -84,6 +84,10 @@ When using a file handle object to communicate asynchronously with a socket, you
   Reads the available data synchronously up to the end of file or maximum number of bytes.
 - [func read(upToCount: Int) throws -> Data?](./filehandle/read%28uptocount%29.md)
   Reads data synchronously up to the specified number of bytes.
+- [- readDataToEndOfFileAndReturnError:](./nsfilehandle/readdatatoendoffileandreturnerror_.md)
+  Reads the available data synchronously up to the end of file or maximum number of bytes.
+- [- readDataUpToLength:error:](./nsfilehandle/readdatauptolength_error_.md)
+  Reads data synchronously up to the specified number of bytes.
 ### Reading asynchronously with notifications
 - [func acceptConnectionInBackgroundAndNotify()](./filehandle/acceptconnectioninbackgroundandnotify%28%29.md)
   Accepts a socket connection (for stream-type sockets only) in the background and creates a file handle for the “near” (client) end of the communications channel.
@@ -104,6 +108,8 @@ When using a file handle object to communicate asynchronously with a socket, you
 ### Writing to a file handle
 - [func write<T>(contentsOf: T) throws](./filehandle/write%28contentsof%29.md)
   Writes the specified data synchronously to the file handle.
+- [- writeData:error:](./nsfilehandle/writedata_error_.md)
+  Writes the specified data synchronously to the file handle.
 ### Seeking within a file
 - [func offset() throws -> UInt64](./filehandle/offset%28%29.md)
   Gets the position of the file pointer within the file.
@@ -111,6 +117,10 @@ When using a file handle object to communicate asynchronously with a socket, you
   Places the file pointer at the end of the file referenced by the file handle and returns the new file offset.
 - [func seek(toOffset: UInt64) throws](./filehandle/seek%28tooffset%29.md)
   Moves the file pointer to the specified offset within the file.
+- [- getOffset:error:](./nsfilehandle/getoffset_error_.md)
+  Get the current position of the file pointer within the file.
+- [- seekToEndReturningOffset:error:](./nsfilehandle/seektoendreturningoffset_error_.md)
+  Places the file pointer at the end of the file referenced by the file handle and returns the new file offset.
 ### Operating on a file
 - [func close() throws](./filehandle/close%28%29.md)
   Disallows further access to the represented file or communications channel and signals end of file on communications channels that permit writing.

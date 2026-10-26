@@ -36,6 +36,13 @@ enum NSTextBlockDimension : NSInteger;
   Maximum height of the text block.
 ### Initializers
 - [init?(rawValue: Int)](./dimension/init%28rawvalue%29.md)
+### Enumeration Cases
+- [NSTextBlockHeight](../nstextblockdimension/nstextblockheight.md)
+- [NSTextBlockMaximumHeight](../nstextblockdimension/nstextblockmaximumheight.md)
+- [NSTextBlockMaximumWidth](../nstextblockdimension/nstextblockmaximumwidth.md)
+- [NSTextBlockMinimumHeight](../nstextblockdimension/nstextblockminimumheight.md)
+- [NSTextBlockMinimumWidth](../nstextblockdimension/nstextblockminimumwidth.md)
+- [NSTextBlockWidth](../nstextblockdimension/nstextblockwidth.md)
 
 ## Relationships
 

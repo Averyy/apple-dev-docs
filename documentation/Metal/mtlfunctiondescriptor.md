@@ -45,6 +45,9 @@ class MTLFunctionDescriptor
   Options that define how Metal compiles a GPU function.
 - [class MTLLinkedFunctions](./mtllinkedfunctions.md)
   A set of related functions that Metal links to when necessary to create the function instance.
+### Creating a function descriptor
+- [+ functionDescriptor](./mtlfunctiondescriptor/functiondescriptor.md)
+  Creates a default function descriptor.
 
 ## Relationships
 

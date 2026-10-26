@@ -30,6 +30,12 @@ This method is the getter for the [`NSAccessibilityProtocol`](../nsaccessibility
 
 > **Note**:  This class must also post an [`valueChanged`](../nsaccessibility-swift.struct/notification/valuechanged.md) notification whenever its value changes.
 
+## See Also
+
+### Related Documentation
+- [accessibilityValue](../nsaccessibility-c.protocol/accessibilityvalue.md)
+  The accessibility element’s value.
+
 
 ---
 

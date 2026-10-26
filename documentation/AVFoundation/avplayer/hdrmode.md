@@ -63,6 +63,8 @@ These modes define the available HDR modes. Query [`availableHDRModes`](./availa
   The HDR modes that are available for playback.
 - [class let eligibleForHDRPlaybackDidChangeNotification: NSNotification.Name](./eligibleforhdrplaybackdidchangenotification.md)
   A notification that’s posted whenever HDR playback eligibility changes.
+- [AVPlayerAvailableHDRModesDidChangeNotification](../avplayeravailablehdrmodesdidchangenotification.md)
+  A notification that fires whenever availableHDRModes changes.
 
 
 ---

@@ -44,6 +44,10 @@ Each index in an index path represents the index into an array of children from 
   Initializes an index path with a single node.
 - [init(indexes: UnsafePointer<Int>?, length: Int)](./nsindexpath/init%28indexes,length%29.md)
   Initializes an index path with the given nodes and length.
+- [+ indexPathWithIndex:](./nsindexpath/indexpathwithindex_.md)
+  Creates a one-node index path.
+- [+ indexPathWithIndexes:length:](./nsindexpath/indexpathwithindexes_length_.md)
+  Creates an index path with one or more nodes.
 ### Using Special Node Names
 - [convenience init(forRow: Int, inSection: Int)](./nsindexpath/init%28forrow,insection%29.md)
   Initializes an index path with the indexes of a specific row and section in a table view.
@@ -92,6 +96,14 @@ Each index in an index path represents the index into an array of children from 
 - [NSCopying](./nscopying.md)
 - [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 - [NSSecureCoding](./nssecurecoding.md)
+
+## See Also
+
+### Indexes
+- [NSIndexSet](./nsindexset.md)
+  An immutable collection of unique integer values that represent indexes in another collection.
+- [NSMutableIndexSet](./nsmutableindexset.md)
+  A mutable collection of unique integer values that represent indexes in another collection.
 
 
 ---

@@ -96,6 +96,8 @@ func fetchShareMetadata(for shareURLs: [URL],
   The URLs of the shares to fetch.
 - [var shouldFetchRootRecord: Bool](./ckfetchsharemetadataoperation/shouldfetchrootrecord.md)
   A Boolean value that indicates whether to retrieve the root record.
+- [rootRecordDesiredKeys](./ckfetchsharemetadataoperation/rootrecorddesiredkeys-7gvr5.md)
+  The fields to return when fetching the root record.
 ### Processing the Operation’s Results
 - [var perShareMetadataBlock: ((URL, CKShare.Metadata?, (any Error)?) -> Void)?](./ckfetchsharemetadataoperation/persharemetadatablock.md)
   The closure to execute as the operation fetches individual shares.

@@ -50,6 +50,16 @@ static SPProjectiveTransform3D SPProjectiveTransform3DMakeWithRightHandPerspecti
   Creates a projective transform from the specified scale, rotate, and translate transforms.
 - [init(translation: Size3D)](./init%28translation%29.md)
 - [init(fovyRadians: Double, aspectRatio: Double, nearZ: Double, farZ: Double)](./init%28fovyradians,aspectratio,nearz,farz%29.md)
+- [SPProjectiveTransform3DSetOffset](../spprojectivetransform3dsetoffset.md)
+  Sets the translation of a projective transform.
+- [SPProjectiveTransform3DMakeTranslation](../spprojectivetransform3dmaketranslation-5hc37.md)
+  Creates a projective transform from the specified translate transform.
+- [SPProjectiveTransform3DMakeWithRHPerspective](../spprojectivetransform3dmakewithrhperspective-97qwp.md)
+  Returns a projective transform with right-hand side perspective.
+- [SPProjectiveTransform3DTranslate](../spprojectivetransform3dtranslate-4tynj.md)
+  Returns a transform with an origin that’s offset by the specified size.
+- [SPProjectiveTransform3DGetTranslation](../spprojectivetransform3dgettranslation.md)
+  The projective transform’s translation.
 
 
 ---

@@ -29,6 +29,8 @@ Create an instance of this object to manage the provider’s property state.
 ### Creating Provider Properties
 - [init(dictionary: [CMIOExtensionProperty : CMIOExtensionPropertyState<AnyObject>])](./cmioextensionproviderproperties/init%28dictionary%29.md)
   Creates a provider properties object with the specified properties.
+- [+ providerPropertiesWithDictionary:](./cmioextensionproviderproperties/providerpropertieswithdictionary_.md)
+  Returns a new provider properties object with the specified properties.
 ### Managing Properties
 - [var name: String?](./cmioextensionproviderproperties/name.md)
   The provider name.

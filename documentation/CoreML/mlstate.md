@@ -57,6 +57,8 @@ Each stateful prediction that uses the same `MLState` must be serialized. Otherw
 ### Getting a state buffer
 - [func withMultiArray<R>(for: String, (MLMultiArray) throws -> R) rethrows -> R](./mlstate/withmultiarray%28for,_%29.md)
 - [func withMultiArray<R>((MLMultiArray) -> R) throws -> R](./mlstate/withmultiarray%28_%29.md)
+- [- getMultiArrayForStateNamed:handler:](./mlstate/getmultiarrayforstatenamed_handler_.md)
+  Gets a mutable view into a state buffer.
 
 ## Relationships
 

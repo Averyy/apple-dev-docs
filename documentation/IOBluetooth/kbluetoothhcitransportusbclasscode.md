@@ -26,6 +26,9 @@ Wireless Controller
 ### Constants
 - [var kBluetoothHCITransportUSBProtocolCode: Int](./kbluetoothhcitransportusbprotocolcode.md)
 - [var kBluetoothHCITransportUSBSubClassCode: Int](./kbluetoothhcitransportusbsubclasscode.md)
+- [kBluetoothHCITransportUSBClassCode](../kernel/api-1639915-anonymous/kbluetoothhcitransportusbclasscode.md)
+- [kBluetoothHCITransportUSBSubClassCode](../kernel/api-1639915-anonymous/kbluetoothhcitransportusbsubclasscode.md)
+- [kBluetoothHCITransportUSBProtocolCode](../kernel/api-1639915-anonymous/kbluetoothhcitransportusbprotocolcode.md)
 
 
 ---

@@ -39,6 +39,10 @@ To learn more about graphs and pathfinding, see [Pathfinding](https://developer.
   Initializes a graph with the specified list of obstacles, using the specified node class.
 - [init(obstacles: [GKPolygonObstacle], bufferRadius: Float)](./gkobstaclegraph/init%28obstacles,bufferradius%29.md)
   Initializes a graph with the specified list of obstacles.
+- [+ graphWithObstacles:bufferRadius:nodeClass:](./gkobstaclegraph/graphwithobstacles_bufferradius_nodeclass_.md)
+  Creates a graph with the specified list of obstacles, using the specified node class.
+- [+ graphWithObstacles:bufferRadius:](./gkobstaclegraph/graphwithobstacles_bufferradius_.md)
+  Creates a graph with the specified list of obstacles.
 ### Working with Obstacles
 - [var obstacles: [GKPolygonObstacle]](./gkobstaclegraph/obstacles.md)
   The list of obstacle objects in the graph, each of which describes a polygon-shaped impassable area.

@@ -32,6 +32,8 @@ This template belongs to the [`CLKComplicationFamily.modularSmall`](./clkcomplic
 ### Creating the Template
 - [init(row1Column1TextProvider: CLKTextProvider, row1Column2TextProvider: CLKTextProvider, row2Column1TextProvider: CLKTextProvider, row2Column2TextProvider: CLKTextProvider)](./clkcomplicationtemplatemodularsmallcolumnstext/init%28row1column1textprovider,row1column2textprovider,row2column1textprovider,row2column2textprovider%29.md)
   Creates a new template that has two columns of text.
+- [+ templateWithRow1Column1TextProvider:row1Column2TextProvider:row2Column1TextProvider:row2Column2TextProvider:](./clkcomplicationtemplatemodularsmallcolumnstext/templatewithrow1column1textprovider_row1column2textprovider_row2column1textprovider_row2column2textprovider_.md)
+  Returns a new template that has two columns of text.
 ### Setting the Complication Data
 - [var row1Column1TextProvider: CLKTextProvider](./clkcomplicationtemplatemodularsmallcolumnstext/row1column1textprovider.md)
   The text to display in the first column of the first row.

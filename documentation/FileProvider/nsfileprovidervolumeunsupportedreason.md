@@ -31,6 +31,8 @@ enum NSFileProviderVolumeUnsupportedReason : NSUInteger;
 - [init(rawValue: UInt)](./nsfileprovidervolumeunsupportedreason/init%28rawvalue%29.md)
 ### Type Properties
 - [static var nonAPFS: NSFileProviderVolumeUnsupportedReason](./nsfileprovidervolumeunsupportedreason/nonapfs.md)
+### Enumeration Cases
+- [NSFileProviderVolumeUnsupportedReasonNone](./nsfileprovidervolumeunsupportedreason/nsfileprovidervolumeunsupportedreasonnone.md)
 
 ## Relationships
 

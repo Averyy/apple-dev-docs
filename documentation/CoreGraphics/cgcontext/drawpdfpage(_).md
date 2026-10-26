@@ -42,6 +42,12 @@ This function works in conjunction with the [`CGPDFPage`](../cgpdfpage.md) type 
   Returns the current level of interpolation quality for a graphics context.
 - [enum CGInterpolationQuality](../cginterpolationquality.md)
   Levels of interpolation quality for rendering an image.
+- [CGContextDrawTiledImage](../cgcontextdrawtiledimage.md)
+  Repeatedly draws an image, scaled to the provided rectangle, to fill the current clip region.
+- [CGContextDrawImage](../cgcontextdrawimage.md)
+  Draws an image into a graphics context.
+- [CGContextSetInterpolationQuality](../cgcontextsetinterpolationquality.md)
+  Sets the level of interpolation quality for a graphics context.
 
 
 ---

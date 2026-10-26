@@ -40,6 +40,8 @@ The main bundle lets you access the resources in the same directory as the curre
 - [init(for: AnyClass)](./init%28for%29.md)
   Returns the `NSBundle` object with which the specified class is associated.
 - [Bundle Programming Guide](https://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFBundles/Introduction/Introduction.html#//apple_ref/doc/uid/10000123i)
+- [+ bundleWithPath:](../nsbundle/bundlewithpath_.md)
+  Returns an `NSBundle` object that corresponds to the specified directory.
 ### Getting standard bundle objects
 - [class var allFrameworks: [Bundle]](./allframeworks.md)
   Returns an array of all of the application’s bundles that represent frameworks.

@@ -34,6 +34,8 @@ Scene sessions created from this configuration will have their role automaticall
   Creates a scene-configuration object with the specified role and app-specific name.
 - [convenience init(name: String?)](./init%28name%29.md)
   Creates a scene-configuration object with the specified name.
+- [+ configurationWithName:sessionRole:](./configurationwithname_sessionrole_.md)
+  Returns a scene-configuration object with the specified role and app-specific name.
 
 
 ---

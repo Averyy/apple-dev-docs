@@ -27,6 +27,7 @@ class DOMMutationEvent
 - [var relatedNode: DOMNode!](./dommutationevent/relatednode.md)
 ### Instance Methods
 - [func initMutationEvent(String!, canBubble: Bool, cancelable: Bool, relatedNode: DOMNode!, prevValue: String!, newValue: String!, attrName: String!, attrChange: UInt16)](./dommutationevent/initmutationevent%28_,canbubble,cancelable,relatednode,prevvalue,newvalue,attrname,attrchange%29.md)
+- [- initMutationEvent::::::::](./dommutationevent/initmutationevent________.md)
 
 ## Relationships
 

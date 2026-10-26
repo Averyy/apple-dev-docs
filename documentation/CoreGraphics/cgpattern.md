@@ -49,6 +49,11 @@ To create a dashed line, see [`CGContextSetLineDash`](./cgcontextsetlinedash.md)
 ### Working with Core Foundation Types
 - [class var typeID: CFTypeID](./cgpattern/typeid.md)
   Returns the type identifier for Core Graphics patterns.
+### Retaining and Releasing a Pattern
+- [CGPatternRetain](./cgpatternretain.md)
+  Increments the retain count of a Core Graphics pattern.
+- [CGPatternRelease](./cgpatternrelease.md)
+  Decrements the retain count of a Core Graphics pattern.
 
 ## Relationships
 
@@ -71,6 +76,29 @@ To create a dashed line, see [`CGContextSetLineDash`](./cgcontextsetlinedash.md)
   A definition for a smooth transition between colors for drawing radial and axial gradient fills.
 - [class CGFunction](./cgfunction.md)
   A general facility for defining and using callback functions.
+### Opaque Types
+- [CGContextRef](./cgcontext.md)
+  A Quartz 2D drawing environment.
+- [CGColorRef](./cgcolor.md)
+  A set of components that define a color, with a color space specifying how to interpret them.
+- [CGColorConversionInfoRef](./cgcolorconversioninfo.md)
+  An object that describes how to convert between color spaces for use by other system services.
+- [CGColorSpaceRef](./cgcolorspace.md)
+  A profile that specifies how to interpret a color value for display.
+- [CGFontRef](./cgfont.md)
+  A set of character glyphs and layout information for drawing text.
+- [CGImageRef](./cgimage.md)
+  A bitmap image or image mask.
+- [CGLayerRef](./cglayer.md)
+  An offscreen context for reusing content drawn with Core Graphics.
+- [CGPathRef](./cgpath.md)
+  An immutable graphics path: a mathematical description of shapes or lines to be drawn in a graphics context.
+- [CGPDFArray](./cgpdfarray.md)
+  An array structure within a PDF document.
+- [CGPDFContentStream](./cgpdfcontentstream.md)
+  A representation of one or more content data streams in a PDF page.
+- [CGPDFDictionary](./cgpdfdictionary.md)
+  A dictionary structure within a PDF document.
 
 
 ---

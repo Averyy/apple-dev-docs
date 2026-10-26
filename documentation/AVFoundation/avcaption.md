@@ -52,10 +52,20 @@ A caption contains a cue, which is a single sentence or paragraph of text for a 
   Returns the text decoration at the index position.
 - [AVCaption.Decoration](./avcaption/decoration.md)
   Text decorations for caption text.
+- [- fontStyleAtIndex:range:](./avcaption/fontstyleatindex_range_.md)
+  Returns the font style and range at the index position.
+- [- fontWeightAtIndex:range:](./avcaption/fontweightatindex_range_.md)
+  Returns the font weight and range at the index position.
+- [- decorationAtIndex:range:](./avcaption/decorationatindex_range_.md)
+  Returns the text decoration at the index position.
 ### Accessing colors
 - [func textColor(at: String.Index) -> (CGColor?, Range<String.Index>)](./avcaption/textcolor%28at%29.md)
   Returns the text color at the index position.
 - [func backgroundColor(at: String.Index) -> (CGColor?, Range<String.Index>)](./avcaption/backgroundcolor%28at%29.md)
+  Returns the background color at the index position.
+- [- textColorAtIndex:range:](./avcaption/textcoloratindex_range_.md)
+  Returns the text color at the index position.
+- [- backgroundColorAtIndex:range:](./avcaption/backgroundcoloratindex_range_.md)
   Returns the background color at the index position.
 ### Accessing alignment
 - [var textAlignment: AVCaption.TextAlignment](./avcaption/textalignment-swift.property.md)
@@ -76,6 +86,10 @@ A caption contains a cue, which is a single sentence or paragraph of text for a 
   Returns the text combine at the index position.
 - [AVCaption.TextCombine](./avcaption/textcombine.md)
   The caption’s supported rendering policy options.
+- [- rubyAtIndex:range:](./avcaption/rubyatindex_range_.md)
+  Returns the ruby text at the index position.
+- [- textCombineAtIndex:range:](./avcaption/textcombineatindex_range_.md)
+  Returns the text combine at the index position.
 ### Initializers
 - [init?(coder: NSCoder)](./avcaption/init%28coder%29.md)
 - [init(text: String, timeRange: CMTimeRange)](./avcaption/init%28text,timerange%29.md)

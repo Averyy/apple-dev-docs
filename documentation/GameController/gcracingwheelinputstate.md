@@ -44,6 +44,16 @@ class GCRacingWheelInputState
   The name of the accelerator element.
 - [var GCInputPedalBrake: String](./gcinputpedalbrake-6wpdc.md)
   The name of the brake element.
+- [GCInputSteeringWheel](./gcinputsteeringwheel-6eb58.md)
+  The name of the steering wheel element.
+- [GCInputShifter](./gcinputshifter-2p2b7.md)
+  The name of the shifter element.
+- [GCInputPedalClutch](./gcinputpedalclutch-3cn3p.md)
+  The name of the clutch element.
+- [GCInputPedalAccelerator](./gcinputpedalaccelerator-6kjfe.md)
+  The name of the accelerator element.
+- [GCInputPedalBrake](./gcinputpedalbrake-7jcp.md)
+  The name of the brake element.
 
 ## Relationships
 

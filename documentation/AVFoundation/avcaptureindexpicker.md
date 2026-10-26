@@ -43,6 +43,8 @@ Index pickers are appropriate for controls that provide an indexed container of 
 ### Handling interaction
 - [func setActionQueue(DispatchQueue, action: (Int) -> ())](./avcaptureindexpicker/setactionqueue%28_,action%29.md)
   Sets the action to perform on the specified dispatch queue when the control’s value changes.
+- [- setActionQueue:action:](./avcaptureindexpicker/setactionqueue_action_.md)
+  Sets the action to perform on the specified dispatch queue when the control’s value changes.
 ### Accessing the control value
 - [var selectedIndex: Int](./avcaptureindexpicker/selectedindex.md)
   The currently selected index.

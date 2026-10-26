@@ -29,6 +29,8 @@ class DOMCSSPrimitiveValue
 - [func getStringValue() -> String!](./domcssprimitivevalue/getstringvalue%28%29.md)
 - [func setFloat(UInt16, floatValue: Float)](./domcssprimitivevalue/setfloat%28_,floatvalue%29.md)
 - [func setString(UInt16, stringValue: String!)](./domcssprimitivevalue/setstring%28_,stringvalue%29.md)
+- [- setFloatValue::](./domcssprimitivevalue/setfloatvalue__.md)
+- [- setStringValue::](./domcssprimitivevalue/setstringvalue__.md)
 
 ## Relationships
 

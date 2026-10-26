@@ -41,6 +41,15 @@ Only a single audio session for an app can be a Now Playing candidate. Designati
   Constants that specify how to set the origin of audio in a head-tracked spatial experience.
 - [var isNowPlayingCandidate: Bool](./isnowplayingcandidate.md)
   A Boolean value that indicates whether the audio session is a candidate to be the Now Playing session.
+- [intendedSpatialExperience](./intendedspatialexperience-qlty.md)
+  The spatial audio experience your app intends to provide the user.
+- [- setIntendedSpatialExperience:options:error:](./setintendedspatialexperience_options_error_.md)
+  Sets the spatial audio experience your app intends to provide the user.
+- [AVAudioSessionSpatialExperience](../avaudiosessionspatialexperience-c.enum.md)
+- [intendedSpatialExperienceOptions](./intendedspatialexperienceoptions.md)
+  A dictionary of options that customize the spatial experience.
+- [AVAudioSessionSpatialExperienceOption](../avaudiosessionspatialexperienceoption.md)
+  A key that configures one characteristic of a spatial experience, such as its sound stage size or anchoring.
 
 
 ---

@@ -50,6 +50,10 @@ In Objective-C, use instances of this class to create [`OSLogEnumerator`](./oslo
 ### Accessing Entries
 - [func getEntries(with: OSLogEnumerator.Options, at: OSLogPosition?, matching: NSPredicate?) throws -> AnySequence<OSLogEntry>](./oslogstore/getentries%28with,at,matching%29.md)
   Returns a sequence of log entries filtered by the parameters passed in.
+- [- entriesEnumeratorAndReturnError:](./oslogstore/entriesenumeratorandreturnerror_.md)
+  Returns a log enumerator with default options for viewing the entries.
+- [- entriesEnumeratorWithOptions:position:predicate:error:](./oslogstore/entriesenumeratorwithoptions_position_predicate_error_.md)
+  Returns a log enumerator based on an underlying store.
 ### Initializers
 - [init()](./oslogstore/init%28%29.md)
 - [convenience init(scope: OSLogStore.Scope) throws](./oslogstore/init%28scope%29.md)

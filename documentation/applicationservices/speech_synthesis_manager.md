@@ -22,12 +22,18 @@ You can check for version and feature availability information by using the Spee
   Sets the speech pitch on a designated speech channel.
 - [func SetSpeechRate(SpeechChannel, Fixed) -> OSErr](./api-1459896-setspeechrate.md)
   Sets the speech rate of a designated speech channel.
+- [SetSpeechInfo](./api-1552223-setspeechinfo.md)
+  Changes a setting of a particular speech channel.
 ### Converting Text To Phonemes
 - [func CopyPhonemesFromText(SpeechChannel, CFString, UnsafeMutablePointer<CFString?>) -> OSErr](./api-1460918-copyphonemesfromtext.md)
   Converts the specified text string into its equivalent phonemic representation.
+- [TextToPhonemes](./api-1552235-texttophonemes.md)
+  Converts a buffer of textual data into phonemic data.
 ### Installing a Pronunciation Dictionary
 - [func UseSpeechDictionary(SpeechChannel, CFDictionary) -> OSErr](./api-1463688-usespeechdictionary.md)
   Registers a speech dictionary with a speech channel.
+- [UseDictionary](./api-1552255-usedictionary.md)
+  Installs the designated dictionary into a speech channel.
 ### Managing Speech Channels
 - [func DisposeSpeechChannel(SpeechChannel) -> OSErr](./api-1462081-disposespeechchannel.md)
   Disposes of an existing speech channel.
@@ -46,6 +52,8 @@ You can check for version and feature availability information by using the Spee
   Determines if any speech is currently being synthesizedin your application or elsewhere on the computer.
 - [func SpeechManagerVersion() -> NumVersion](./api-1462334-speechmanagerversion.md)
   Determines the current version of the Speech SynthesisManager installed in the system.
+- [GetSpeechInfo](./api-1552220-getspeechinfo.md)
+  Gets information about a designated speech channel.
 ### Getting Information About Voices
 - [func CountVoices(UnsafeMutablePointer<Int16>) -> OSErr](./api-1459947-countvoices.md)
   Determines how many voices are available.
@@ -68,6 +76,12 @@ You can check for version and feature availability information by using the Spee
   Terminates speech immediately on the specified channel.
 - [func StopSpeechAt(SpeechChannel, Int32) -> OSErr](./api-1459780-stopspeechat.md)
   Terminates speech delivery on a specified channel eitherimmediately or at the end of the current word or sentence.
+- [SpeakBuffer](./api-1552252-speakbuffer.md)
+  Speaks a buffer of text, using certain flags to controlspeech behavior.
+- [SpeakString](./api-1552250-speakstring.md)
+  Begins speaking a text string.
+- [SpeakText](./api-1552236-speaktext.md)
+  Begins speaking a buffer of text.
 ### Registering and Unregistering Synthesizers and Voices
 - [func SpeechSynthesisRegisterModuleURL(CFURL) -> OSErr](./api-1459624-speechsynthesisregistermoduleurl.md)
   Registers and makes available a speech synthesizer or voice.
@@ -168,6 +182,24 @@ You can check for version and feature availability information by using the Spee
   Keys used in a speech dictionary to override the synthesizer’s default pronunciation of a word.
 - [Error Callback User-Information String](./speech_synthesis_manager/error_callback_user-information_string.md)
   Specifies information about the text being synthesized when an error occurs.
+- [Control Flags Constants](./api-1552213-control_flags_constants.md)
+  Flags that indicate which synthesizer features are active.
+- [Gender Constants](./api-1552246-gender_constants.md)
+  Constants that indicate the gender of the individual represented by avoice.
+- [Audio Unit Constants](./api-1552263-audio_unit_constants.md)
+  Constants that identify values in a speech synthesis audio unit.
+- [Stop Speech Locations](./api-1552264-stop_speech_locations.md)
+  Locations that indicate where speech should be paused or stopped.
+- [Speech Synthesis Manager Operating System Types](./api-1552231-speech_synthesis_manager_operati.md)
+  The `OSType` definitions used by the Speech Synthesis Manager.
+- [Speech-Channel Modes](./api-1552256-speech-channel_modes.md)
+  The available text-processing and number-processing modes for a speech channel.
+- [Voice Information Selectors](./api-1552254-voice_information_selectors.md)
+  The types of voice data that can be requested by the `GetVoiceInfo` function.
+- [Speech-Channel Information Constants](./api-1552228-speech-channel_information_constants.md)
+  Selectors that can be passed to the `GetSpeechInfo` or `SetSpeechInfo` functions.
+- [Phoneme Generation Options](./api-1552233-phoneme_generation_options.md)
+  Flags that specify options for the generation of phonetic output.
 ### Result Codes
 - [var noSynthFound: Int](../coreservices/nosynthfound.md)
   Could not find the specified speech synthesizer
@@ -185,6 +217,59 @@ You can check for version and feature availability information by using the Spee
   Pronunciation dictionary format error
 - [var badInputText: Int](../coreservices/badinputtext.md)
   Raw phoneme text contains invalid characters
+- [noSynthFound](../coreservices/api-1560017-anonymous/nosynthfound.md)
+  Could not find the specified speech synthesizer
+- [synthOpenFailed](../coreservices/api-1560017-anonymous/synthopenfailed.md)
+  Could not open another speech synthesizerchannel
+- [synthNotReady](../coreservices/api-1560017-anonymous/synthnotready.md)
+  Speech synthesizer is still busy speaking
+- [bufTooSmall](../coreservices/api-1560017-anonymous/buftoosmall.md)
+  Output buffer is too small to hold result
+- [voiceNotFound](../coreservices/api-1560017-anonymous/voicenotfound.md)
+  Voice resource not found
+- [incompatibleVoice](../coreservices/api-1560017-anonymous/incompatiblevoice.md)
+  Specified voice cannot be used with synthesizer
+- [badDictFormat](../coreservices/api-1560017-anonymous/baddictformat.md)
+  Pronunciation dictionary format error
+- [badInputText](../coreservices/api-1560017-anonymous/badinputtext.md)
+  Raw phoneme text contains invalid characters
+### Creating, Invoking, and Disposing Universal Procedure Pointers
+- [DisposeSpeechDoneUPP](./api-1552237-disposespeechdoneupp.md)
+  Disposes of a universal procedure pointer (UPP) to a speech-donecallback function.
+- [DisposeSpeechErrorUPP](./api-1552245-disposespeecherrorupp.md)
+  Disposes of a universal procedure pointer (UPP) to anerror callback function.
+- [DisposeSpeechPhonemeUPP](./api-1552226-disposespeechphonemeupp.md)
+  Disposes of a universal procedure pointer (UPP) to a phonemecallback function.
+- [DisposeSpeechSyncUPP](./api-1552219-disposespeechsyncupp.md)
+  Disposes of a universal procedure pointer (UPP) to a synchronizationcallback function.
+- [DisposeSpeechTextDoneUPP](./api-1552229-disposespeechtextdoneupp.md)
+  Disposes of a universal procedure pointer (UPP) to a text-donecallback function. 
+- [DisposeSpeechWordUPP](./api-1552222-disposespeechwordupp.md)
+  Disposes of a universal procedure pointer (UPP) to a wordcallback function.
+- [InvokeSpeechDoneUPP](./api-1552215-invokespeechdoneupp.md)
+  Invokes your speech-done callback function.
+- [InvokeSpeechErrorUPP](./api-1552214-invokespeecherrorupp.md)
+  Invokes your error callback function.
+- [InvokeSpeechPhonemeUPP](./api-1552234-invokespeechphonemeupp.md)
+  Invokes your phoneme callback function.
+- [InvokeSpeechSyncUPP](./api-1552243-invokespeechsyncupp.md)
+  Invokes your synchronization callback function.
+- [InvokeSpeechTextDoneUPP](./api-1552249-invokespeechtextdoneupp.md)
+  Invokes your text-done callback function.
+- [InvokeSpeechWordUPP](./api-1552227-invokespeechwordupp.md)
+  Invokes your word callback function.
+- [NewSpeechDoneUPP](./api-1552218-newspeechdoneupp.md)
+  Creates a new universal procedure pointer (UPP) to a speech-donecallback function.
+- [NewSpeechErrorUPP](./api-1552224-newspeecherrorupp.md)
+  Creates a new universal procedure pointer to an errorcallback function.
+- [NewSpeechPhonemeUPP](./api-1552225-newspeechphonemeupp.md)
+  Disposes of a universal procedure pointer (UPP) to a phonemecallback function.
+- [NewSpeechSyncUPP](./api-1552244-newspeechsyncupp.md)
+  Creates a new universal procedure pointer (UPP) to a synchronizationcallback function.
+- [NewSpeechTextDoneUPP](./api-1552247-newspeechtextdoneupp.md)
+  Creates a new universal procedure pointer (UPP) to a text-donecallback function.
+- [NewSpeechWordUPP](./api-1552230-newspeechwordupp.md)
+  Creates a new universal procedure pointer (UPP) to a wordcallback function.
 
 ## See Also
 

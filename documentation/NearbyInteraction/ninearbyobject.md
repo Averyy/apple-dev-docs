@@ -40,6 +40,10 @@ For more information, see [Initiating and maintaining a session](./initiating-an
 ### Acquring relative distance
 - [var distance: Float?](./ninearbyobject/distance-676dm.md)
   The distance from the user’s device to the peer device in meters.
+- [distance](./ninearbyobject/distance-9atp7.md)
+  The distance from the user’s device to the peer device in meters.
+- [NINearbyObjectDistanceNotAvailable](./ninearbyobjectdistancenotavailable.md)
+  An object that indicates the peer’s distance is unavailable.
 ### Acquiring relative direction
 - [var direction: simd_float3?](./ninearbyobject/direction-4qh5w.md)
   A vector that points from the user’s device in the direction of the peer device.
@@ -49,6 +53,14 @@ For more information, see [Initiating and maintaining a session](./initiating-an
   The estimation of a nearby object’s vertical position as it relates to the user’s device.
 - [NINearbyObject.VerticalDirectionEstimate](./ninearbyobject/verticaldirectionestimate-swift.enum.md)
   Estimations of a nearby object’s vertical position in relation to the user’s device.
+- [direction](./ninearbyobject/direction-5xcld.md)
+  A vector that points from the user’s device in the direction of the peer device.
+- [NINearbyObjectDirectionNotAvailable](./ninearbyobjectdirectionnotavailable.md)
+  A value that indicates that a nearby object’s direction is unavailable.
+- [horizontalAngle](./ninearbyobject/horizontalangle-9ibky.md)
+  An angle in radians that indicates the azimuthal direction to the nearby object.
+- [NINearbyObjectAngleNotAvailable](./ninearbyobjectanglenotavailable.md)
+  A value that indicates that a nearby object’s horizontal angle is unavailable.
 ### Explaining participation
 - [NINearbyObject.RemovalReason](./ninearbyobject/removalreason.md)
   The reason a session removed a nearby object.

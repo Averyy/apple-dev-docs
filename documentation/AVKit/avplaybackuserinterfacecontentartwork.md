@@ -64,6 +64,14 @@ Use a concrete subclass such as [`AVPlaybackUserInterfaceContentURLArtwork`](./a
   A Swift-friendly structure representing media metadata.
 - [class AVPlaybackUserInterfaceContentURLArtwork](./avplaybackuserinterfacecontenturlartwork.md)
   An artwork subclass that references artwork via a URL and content type.
+- [AVPlaybackUserInterfaceMetadataProviding](./avplaybackuserinterfacemetadataproviding-1w04z.md)
+  Provides metadata information about media content including title, artwork, and content type.
+- [AVPlaybackUserInterfaceContentMetadata](./avplaybackuserinterfacecontentmetadata-c.class.md)
+  Provides metadata information about media content including title, artwork, and content type.
+- [AVPlaybackUserInterfaceContentMetadataTemplate](./avplaybackuserinterfacecontentmetadatatemplate.md)
+  A mutable template for configuring media metadata before creating immutable metadata objects.
+- [AVPlaybackUserInterfaceContentVideoProperties](./avplaybackuserinterfacecontentvideoproperties.md)
+  Properties specific to video content.
 
 
 ---

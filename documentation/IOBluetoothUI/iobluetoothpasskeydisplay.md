@@ -32,8 +32,25 @@ class IOBluetoothPasskeyDisplay
 - [func resetPasskeyIndicator()](./iobluetoothpasskeydisplay/resetpasskeyindicator%28%29.md)
 - [func retreatPasskeyIndicator()](./iobluetoothpasskeydisplay/retreatpasskeyindicator%28%29.md)
 - [func setPasskey(String!, for: IOBluetoothDevice!, usingSSP: Bool)](./iobluetoothpasskeydisplay/setpasskey%28_,for,usingssp%29.md)
+- [- resetAll](./iobluetoothpasskeydisplay/resetall.md)
+- [- setPasskeyIndicatorEnabled:](./iobluetoothpasskeydisplay/setpasskeyindicatorenabled_.md)
+- [- setPasskeyString:](./iobluetoothpasskeydisplay/setpasskeystring_.md)
+- [- setupUIForDevice:](./iobluetoothpasskeydisplay/setupuifordevice_.md)
+- [- setupUIForSSPDevice:](./iobluetoothpasskeydisplay/setupuiforsspdevice_.md)
 ### Type Methods
 - [class func sharedDisplayView() -> IOBluetoothPasskeyDisplay!](./iobluetoothpasskeydisplay/shareddisplayview%28%29.md)
+### Instance Variables
+- [isIncomingRequest](./iobluetoothpasskeydisplay/isincomingrequest-c.ivar.md)
+- [mBackgroundImage](./iobluetoothpasskeydisplay/mbackgroundimage.md)
+- [mPasskeyCharacters](./iobluetoothpasskeydisplay/mpasskeycharacters.md)
+- [mPasskeyIndex](./iobluetoothpasskeydisplay/mpasskeyindex.md)
+- [mPasskeyString](./iobluetoothpasskeydisplay/mpasskeystring.md)
+- [mReturnHighlightImage](./iobluetoothpasskeydisplay/mreturnhighlightimage.md)
+- [mReturnImage](./iobluetoothpasskeydisplay/mreturnimage.md)
+- [mReturnImageView](./iobluetoothpasskeydisplay/mreturnimageview.md)
+- [passkey](./iobluetoothpasskeydisplay/passkey-c.ivar.md)
+- [showFeedback](./iobluetoothpasskeydisplay/showfeedback.md)
+- [usePasskeyNotifications](./iobluetoothpasskeydisplay/usepasskeynotifications.md)
 
 ## Relationships
 

@@ -1,0 +1,19 @@
+# kcfindinternetpasswordwithpath
+
+**Framework**: Core Services  
+**Kind**: func  
+**Role**: Function
+
+**Availability**:
+- macOS 10.0+ - Deprecated in 10.6
+
+## Declaration
+
+```c
+OSStatus kcfindinternetpasswordwithpath(const char *serverName, const char *securityDomain, const char *accountName, const char *path, UInt16 port, OSType protocol, OSType authType, UInt32 maxLength, void *passwordData, UInt32 *actualLength, KCItemRef *item);
+```
+
+
+---
+
+*[View on Apple Developer](https://developer.apple.com/documentation/coreservices/1563135-kcfindinternetpasswordwithpath)*

@@ -38,6 +38,7 @@ protocol OS_xpc_object : NSObjectProtocol
 - [typealias xpc_type_t](./xpc_type_t.md)
   A type that describes XPC object types.
 - [class OS_xpc_listener](./os_xpc_listener-swift.class.md)
+- [OS_xpc_listener](./os_xpc_listener-c.protocol.md)
 
 
 ---

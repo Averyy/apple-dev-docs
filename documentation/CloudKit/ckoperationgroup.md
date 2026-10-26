@@ -84,6 +84,8 @@ Associate operation groups with operations by setting their [`group`](./ckoperat
   A conduit to your app’s databases.
 - [class CKDatabase](./ckdatabase.md)
   An object that represents a collection of record zones and subscriptions.
+- [CKRecordValue](./ckrecordvalue-c.protocol.md)
+  The protocol that provides strong type-checking for objects that the CloudKit framework stores on the server.
 
 
 ---

@@ -30,6 +30,7 @@ Without setting this property or setting the equivalent `Info.plist` key (`NSSup
   Disables automatic termination for the application.
 - [func enableAutomaticTermination(String)](./enableautomatictermination%28_%29.md)
   Enables automatic termination for the application.
+- [automaticTerminationOptOutCounter](../nsprocessinfo/automaticterminationoptoutcounter.md)
 
 
 ---

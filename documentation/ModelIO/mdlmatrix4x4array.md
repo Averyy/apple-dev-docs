@@ -33,6 +33,10 @@ class MDLMatrix4x4Array
 - [var precision: MDLDataPrecision](./mdlmatrix4x4array/precision.md)
 ### Instance Methods
 - [func clear()](./mdlmatrix4x4array/clear%28%29.md)
+- [- getDouble4x4Array:maxCount:](./mdlmatrix4x4array/getdouble4x4array_maxcount_.md)
+- [- getFloat4x4Array:maxCount:](./mdlmatrix4x4array/getfloat4x4array_maxcount_.md)
+- [- setDouble4x4Array:count:](./mdlmatrix4x4array/setdouble4x4array_count_.md)
+- [- setFloat4x4Array:count:](./mdlmatrix4x4array/setfloat4x4array_count_.md)
 
 ## Relationships
 

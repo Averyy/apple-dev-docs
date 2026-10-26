@@ -23,6 +23,12 @@ var eraserType: __PKEraserType { get }
 @property (nonatomic, readonly) PKEraserType eraserType;
 ```
 
+## See Also
+
+### Getting the eraser type
+- [PKEraserType](../pkerasertype.md)
+  Constants that indicate the behavior of the eraser.
+
 
 ---
 

@@ -62,6 +62,8 @@ The Disk button in an Open or Save panel invokes [`mountedRemovableMedia()`](./m
   Opens one or more files from an array of URLs.
 - [func mountedLocalVolumePaths() -> [Any]?](./mountedlocalvolumepaths%28%29.md)
   Returns the mount points of all local volumes, not just the removable ones returned by [`mountedRemovableMedia()`](./mountedremovablemedia%28%29.md).
+- [- openTempFile:](./opentempfile_.md)
+  Opens the specified temporary file using the default app for its type.
 
 
 ---

@@ -52,6 +52,20 @@ This method is automatically invoked when the graphics state object created usin
   Initiates a dragging operation from the view, allowing the user to drag a file icon to any application that has window or view objects that accept files.
 - [func dragPromisedFiles(ofTypes: [String], from: NSRect, source: Any, slideBack: Bool, event: NSEvent) -> Bool](./dragpromisedfiles%28oftypes,from,source,slideback,event%29.md)
   Initiates a dragging operation from the view, allowing the user to drag one or more promised files (or directories) into any application that has window or view objects that accept promised file data.
+- [- convertPointToBase:](./convertpointtobase_.md)
+  Converts the point from the view’s coordinate system to the base coordinate system.
+- [- convertPointFromBase:](./convertpointfrombase_.md)
+  Converts the point from the base coordinate system to the view’s coordinate system.
+- [- convertSizeToBase:](./convertsizetobase_.md)
+  Converts the size from the view’s coordinate system to the base coordinate system.
+- [- convertSizeFromBase:](./convertsizefrombase_.md)
+  Converts the size from the base coordinate system to the view’s coordinate system.
+- [- convertRectToBase:](./convertrecttobase_.md)
+  Converts the rectangle from the view’s coordinate system to the base coordinate system.
+- [- convertRectFromBase:](./convertrectfrombase_.md)
+  Converts the rectangle from the base coordinate system to the view’s coordinate system.
+- [- performMnemonic:](./performmnemonic_.md)
+  Implemented by subclasses to respond to mnemonics.
 
 
 ---

@@ -43,6 +43,8 @@ class NEFilterSocketFlow
 ### Instance Properties
 - [var localFlowEndpoint: NWEndpoint?](./nefiltersocketflow/localflowendpoint-89z3l.md)
 - [var remoteFlowEndpoint: NWEndpoint?](./nefiltersocketflow/remoteflowendpoint-6bnas.md)
+- [localFlowEndpoint](./nefiltersocketflow/localflowendpoint-4nt54.md)
+- [remoteFlowEndpoint](./nefiltersocketflow/remoteflowendpoint-52dxr.md)
 
 ## Relationships
 

@@ -47,7 +47,7 @@ Enabling Sign in with Apple for your app begins with registering your app in you
 ## See Also
 
 ### Web support
-- [Sign in with Apple REST API](https://developer.apple.com/documentation/signinwithapplerestapi)
+- [Sign in with Apple REST API](../SigninwithAppleRESTAPI/SigninwithAppleRESTAPI.md)
   Communicate between your app servers and Apple’s authentication servers.
 - [Displaying Sign in with Apple buttons on the web](../SigninwithApple/displaying-sign-in-with-apple-buttons-on-the-web.md)
   Configure the appearance of Sign in with Apple buttons with CSS styles.

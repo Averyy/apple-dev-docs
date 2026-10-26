@@ -146,6 +146,12 @@
 - [let IK_PhotosBundleIdentifier: String](./ik_photosbundleidentifier.md)
 - [let IK_iPhotoBundleIdentifier: String](./ik_iphotobundleidentifier.md)
   The iPhoto application—`com.apple.iPhoto`.
+- [IKFilterBrowserFilterDoubleClickNotification](./ikfilterbrowserfilterdoubleclicknotification.md)
+  Posted when the user double-clicks a filter in the filter browser.
+- [IKFilterBrowserFilterSelectedNotification](./ikfilterbrowserfilterselectednotification.md)
+  Posted when the user clicks a filter name in the filter browser.
+- [IKFilterBrowserWillPreviewFilterNotification](./ikfilterbrowserwillpreviewfilternotification.md)
+  Posted before showing a filter preview, allowing an application to set the parameters of a filter.
 ### Deprecated constants
 - [let IKPictureTakerCropAreaSizeKey: String](./ikpicturetakercropareasizekey.md)
   A key for the cropping area size. The associated value is an `NSValue` object (`NSSize`).

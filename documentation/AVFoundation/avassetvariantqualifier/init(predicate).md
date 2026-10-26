@@ -36,6 +36,10 @@ convenience init(predicate: NSPredicate)
   Creates a variant qualifier with an asset variant.
 - [class AVAssetVariant](../avassetvariant.md)
   An object that represents a bit rate variant.
+- [+ assetVariantQualifierForMaximumValueInKeyPath:](./assetvariantqualifierformaximumvalueinkeypath_.md)
+  Returns a qualifer for finding variant with maximum value in the input key path
+- [+ assetVariantQualifierForMinimumValueInKeyPath:](./assetvariantqualifierforminimumvalueinkeypath_.md)
+  Returns a qualifer for finding variant with minimum value in the input key path.
 
 
 ---

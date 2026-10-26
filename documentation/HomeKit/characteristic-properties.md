@@ -18,6 +18,8 @@ Check to see if a characteristic’s [`properties`](./hmcharacteristic/propertie
   The characteristic is writable.
 - [let HMCharacteristicPropertyHidden: String](./hmcharacteristicpropertyhidden.md)
   The characteristic should be hidden from the user.
+- [HMCharacteristicPropertySupportsEventNotification](./hmcharacteristicpropertysupportseventnotification-19wy1.md)
+  The characteristic supports event notifications.
 
 ## See Also
 

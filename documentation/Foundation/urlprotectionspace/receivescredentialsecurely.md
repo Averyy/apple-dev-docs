@@ -48,6 +48,8 @@ This value is [`true`](../../Swift/true.md) if the credentials for the protectio
   The receiver’s authentication realm
 - [var serverTrust: SecTrust?](./servertrust.md)
   A representation of the server’s SSL transaction state.
+- [isProxy](../nsurlprotectionspace/isproxy.md)
+  A Boolean value that indicates whether the receiver represents a proxy server.
 
 
 ---

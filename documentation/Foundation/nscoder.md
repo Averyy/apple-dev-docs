@@ -101,6 +101,10 @@ For details of how to create a subclass of `NSCoder`, see [Subclassing NSCoder](
   Encodes a size structure and associates it with the given string key.
 - [func encodeValue(ofObjCType: UnsafePointer<CChar>, at: UnsafeRawPointer)](./nscoder/encodevalue%28ofobjctype,at%29.md)
   Encodes a value of the given type at the given address.
+- [- encodeNXObject:](./nscoder/encodenxobject_.md)
+  Encodes an old-style object onto the coder.
+- [- encodeValuesOfObjCTypes:](./nscoder/encodevaluesofobjctypes_.md)
+  Encodes a series of values of potentially differing Objective-C types.
 ### Encoding Geometry-Based Data
 - [func encode(CGAffineTransform, forKey: String)](./nscoder/encode%28_,forkey%29-29jyx.md)
   Encodes an affine transform and associates it with the specified key in the receiver’s archive.
@@ -143,6 +147,14 @@ For details of how to create a subclass of `NSCoder`, see [Subclassing NSCoder](
   Decode an object as one of several expected types, failing if the archived type does not match.
 - [func decodeTopLevelObject(of: [AnyClass]?, forKey: String) throws -> Any?](./nscoder/decodetoplevelobject%28of,forkey%29-5lnnn.md)
   Decode an object as one of several expected types, failing if the archived type does not match.
+- [- decodeTopLevelObjectOfClass:forKey:error:](./nscoder/decodetoplevelobjectofclass_forkey_error_.md)
+  Decode an object as an expected type, failing if the archived type does not match.
+- [- decodeTopLevelObjectOfClasses:forKey:error:](./nscoder/decodetoplevelobjectofclasses_forkey_error_.md)
+  Decode an object as one of several expected types, failing if the archived type does not match.
+- [- decodeTopLevelObjectAndReturnError:](./nscoder/decodetoplevelobjectandreturnerror_.md)
+  Decodes a previously-encoded object, populating an error if decoding fails.
+- [- decodeTopLevelObjectForKey:error:](./nscoder/decodetoplevelobjectforkey_error_.md)
+  Decodes the previously-encoded object associated by a key, populating an error if decoding fails.
 ### Decoding General Data
 - [func decodeArray(ofObjCType: UnsafePointer<CChar>, count: Int, at: UnsafeMutableRawPointer)](./nscoder/decodearray%28ofobjctype,count,at%29.md)
   Decodes an array of `count` items, whose Objective-C type is given by `itemType`.
@@ -190,6 +202,14 @@ For details of how to create a subclass of `NSCoder`, see [Subclassing NSCoder](
   Decodes a single value of a known type from the specified data buffer.
 - [func decodePropertyList(forKey: String) -> Any?](./nscoder/decodepropertylist%28forkey%29.md)
   Returns a decoded property list for the specified key.
+- [- decodeNXObject](./nscoder/decodenxobject.md)
+  Decodes an object previously written with [`encodeNXObject:`](./nscoder/encodenxobject_.md).
+- [- decodeValuesOfObjCTypes:](./nscoder/decodevaluesofobjctypes_.md)
+  Decodes a series of potentially different Objective-C types.
+- [- decodeObjectOfClass:forKey:](./nscoder/decodeobjectofclass_forkey_.md)
+  Decodes an object for the key, restricted to the specified class.
+- [- decodeObjectOfClasses:forKey:](./nscoder/decodeobjectofclasses_forkey_.md)
+  Decodes an object for the key, restricted to the specified classes.
 ### Decoding Geometry-Based Data
 - [func decodeCGAffineTransform(forKey: String) -> CGAffineTransform](./nscoder/decodecgaffinetransform%28forkey%29.md)
   Decodes and returns the Core Graphics affine transform structure associated with the specified key in the coder’s archive.
@@ -257,6 +277,38 @@ For details of how to create a subclass of `NSCoder`, see [Subclassing NSCoder](
   Returns a string formatted to contain the data from an edge insets structure.
 - [class func string(for: UIOffset) -> String](./nscoder/string%28for%29-454dj.md)
   Returns a string formatted to contain the data from an offset structure.
+- [CGAffineTransformFromString](../UIKit/cgaffinetransformfromstring.md)
+  Returns a Core Graphics affine transform structure corresponding to the data in a given string.
+- [CGPointFromString](../UIKit/cgpointfromstring.md)
+  Returns a Core Graphics point structure corresponding to the data in a given string.
+- [CGRectFromString](../UIKit/cgrectfromstring.md)
+  Returns a Core Graphics rectangle structure corresponding to the data in a given string.
+- [CGSizeFromString](../UIKit/cgsizefromstring.md)
+  Returns a Core Graphics size structure corresponding to the data in a given string.
+- [CGVectorFromString](../UIKit/cgvectorfromstring.md)
+  Returns a Core Graphics vector corresponding to the data in a given string.
+- [NSDirectionalEdgeInsetsFromString](../UIKit/nsdirectionaledgeinsetsfromstring.md)
+  Returns a directional edge insets structure based on data in the specified string.
+- [UIEdgeInsetsFromString](../UIKit/uiedgeinsetsfromstring.md)
+  Returns a UIKit edge insets structure based on the data in the specified string.
+- [UIOffsetFromString](../UIKit/uioffsetfromstring.md)
+  Returns a UIKit offset structure corresponding to the data in a given string.
+- [NSStringFromCGRect](../UIKit/nsstringfromcgrect.md)
+  Returns a string formatted to contain the data from a rectangle.
+- [NSStringFromCGVector](../UIKit/nsstringfromcgvector.md)
+  Returns a string formatted to contain the data from a vector data structure.
+- [NSStringFromCGAffineTransform](../UIKit/nsstringfromcgaffinetransform.md)
+  Returns a string formatted to contain the data from an affine transform.
+- [NSStringFromCGPoint](../UIKit/nsstringfromcgpoint.md)
+  Returns a string formatted to contain the data from a point.
+- [NSStringFromCGSize](../UIKit/nsstringfromcgsize.md)
+  Returns a string formatted to contain the data from a size data structure.
+- [NSStringFromDirectionalEdgeInsets](../UIKit/nsstringfromdirectionaledgeinsets.md)
+  Returns a string formatted to contain the data from a directional edge insets structure.
+- [NSStringFromUIEdgeInsets](../UIKit/nsstringfromuiedgeinsets.md)
+  Returns a string formatted to contain the data from an edge insets structure.
+- [NSStringFromUIOffset](../UIKit/nsstringfromuioffset.md)
+  Returns a string formatted to contain the data from an offset structure.
 ### Error Codes
 - [var NSCoderErrorMaximum: Int](./nscodererrormaximum-swift.var.md)
   The end of the range of error codes reserved for coder errors.
@@ -268,6 +320,14 @@ For details of how to create a subclass of `NSCoder`, see [Subclassing NSCoder](
   The requested data wasn’t found.
 - [var NSCoderInvalidValueError: Int](./nscoderinvalidvalueerror-swift.var.md)
   Data wasn’t valid to encode.
+- [NSCoderErrorMaximum](./nscodererrormaximum-c.enum.case.md)
+  The end of the range of error codes reserved for coder errors.
+- [NSCoderErrorMinimum](./nscodererrorminimum-c.enum.case.md)
+  The start of the range of error codes reserved for coder errors.
+- [NSCoderReadCorruptError](./nscoderreadcorrupterror-c.enum.case.md)
+  Decoding failed due to corrupt data.
+- [NSCoderValueNotFoundError](./nscodervaluenotfounderror-c.enum.case.md)
+  The requested data wasn’t found.
 ### Instance Methods
 - [func decodeArrayOfObjects<DecodedObject>(ofClass: DecodedObject.Type, forKey: String) -> [DecodedObject]?](./nscoder/decodearrayofobjects%28ofclass,forkey%29.md)
 - [func decodeArrayOfObjects(ofClasses: [AnyClass], forKey: String) -> [Any]?](./nscoder/decodearrayofobjects%28ofclasses,forkey%29.md)
@@ -277,6 +337,22 @@ For details of how to create a subclass of `NSCoder`, see [Subclassing NSCoder](
   Decode bytes from the decoder. The length of the bytes must be greater than or equal to the `length` parameter. If the result exists, but is of insufficient length, then the decoder uses `failWithError` to fail the entire decode operation. The result of that is configurable on a per-NSCoder basis using `NSDecodingFailurePolicy`.
 - [func decodeDictionary<DecodedKey, DecodedObject>(withKeyClass: DecodedKey.Type, objectClass: DecodedObject.Type, forKey: String) -> [DecodedKey : DecodedObject]?](./nscoder/decodedictionary%28withkeyclass,objectclass,forkey%29.md)
 - [func decodeDictionary(withKeysOfClasses: [AnyClass], objectsOfClasses: [AnyClass], forKey: String) -> [AnyHashable : Any]?](./nscoder/decodedictionary%28withkeysofclasses,objectsofclasses,forkey%29.md)
+- [- decodeArrayOfObjectsOfClass:forKey:](./nscoder/decodearrayofobjectsofclass_forkey_.md)
+  Decodes the \c NSArray object for the given  \c key, which should be an \c NSArray, containing the given non-collection class (no nested arrays or arrays of dictionaries, etc) from the coder.
+- [- decodeArrayOfObjectsOfClasses:forKey:](./nscoder/decodearrayofobjectsofclasses_forkey_.md)
+  Decodes the \c NSArray object for the given \c key, which should be an \c NSArray, containing the given non-collection classes (no nested arrays or arrays of dictionaries, etc) from the coder.
+- [- decodeDictionaryWithKeysOfClass:objectsOfClass:forKey:](./nscoder/decodedictionarywithkeysofclass_objectsofclass_forkey_.md)
+  Decodes the \c NSDictionary object for the given \c key, which should be an \c NSDictionary<keyCls,objectCls> , with keys of type given in \c keyCls and objects of the given non-collection class \c objectCls (no nested dictionaries or other dictionaries contained in the dictionary, etc) from the coder.
+- [- decodeDictionaryWithKeysOfClasses:objectsOfClasses:forKey:](./nscoder/decodedictionarywithkeysofclasses_objectsofclasses_forkey_.md)
+  Decodes the \c NSDictionary object for the given \c key, which should be an \c NSDictionary, with keys of the types given in \c keyClasses and objects of the given non-collection classes in \c objectClasses (no nested dictionaries or other dictionaries contained in the dictionary, etc) from the given coder.
+### Decoding Color Struct Data
+- [- decodeNXColor](./nscoder/decodenxcolor.md)
+  Decodes a color structure from NEXTSTEP Release 3 or earlier.
+### Managing Zones
+- [- objectZone](./nscoder/objectzone.md)
+  This method is present for historical reasons and has no effect.
+- [- setObjectZone:](./nscoder/setobjectzone_.md)
+  This method is present for historical reasons and has no effect.
 
 ## Relationships
 
@@ -288,6 +364,7 @@ For details of how to create a subclass of `NSCoder`, see [Subclassing NSCoder](
 - [NSKeyedUnarchiver](./nskeyedunarchiver.md)
 - [NSUnarchiver](./nsunarchiver.md)
 - [NSXPCCoder](./nsxpccoder.md)
+- [NSPortCoder](./nsportcoder.md)
 ### Conforms To
 - [CVarArg](../Swift/cvararg.md)
 - [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)

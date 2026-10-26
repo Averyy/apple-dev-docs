@@ -44,6 +44,8 @@ You process input from a virtual controller similarly to a real controller. Use 
   Creates a new virtual controller using the configuration you specify.
 - [GCVirtualController.Configuration](./gcvirtualcontroller/configuration.md)
   The configuration of a virtual controller.
+- [+ virtualControllerWithConfiguration:](./gcvirtualcontroller/virtualcontrollerwithconfiguration_.md)
+  Creates a new virtual controller using the configuration you specify.
 ### Customizing the elements
 - [func updateConfiguration(forElement: String, configuration: (GCVirtualController.ElementConfiguration) -> GCVirtualController.ElementConfiguration)](./gcvirtualcontroller/updateconfiguration%28forelement,configuration%29.md)
   Changes the configuration for one of the virtual controller’s input elements.

@@ -33,6 +33,8 @@ convenience init(splitCount: Int, dimension: Int)
 ### Creating Split Layers
 - [convenience init(splitSectionLengths: [Int], dimension: Int)](./init%28splitsectionlengths,dimension%29.md)
   Creates a split layer with the lengths of each split section and dimension you specify.
+- [+ layerWithSplitSectionLengths:dimension:](./layerwithsplitsectionlengths_dimension_.md)
+  Creates a split layer with the lengths of each split section and dimension you specify.
 
 
 ---

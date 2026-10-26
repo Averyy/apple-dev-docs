@@ -41,6 +41,10 @@ The rotation between two points.
 - [var origin: Point3D](./origin.md)
 - [var simd: simd_double3](./simd.md)
   A simd three-element vector that contains the x-, y-, and z-coordinate values.
+- [SPPoint3DGetOrigin](../sppoint3dgetorigin.md)
+  The location of the point.
+- [SPPoint3DTranslate](../sppoint3dtranslate-8xo6b.md)
+  Returns a point with an origin that’s offset by the specified size.
 
 
 ---

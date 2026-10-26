@@ -30,6 +30,8 @@ WebDragSourceActionSelection
   Allows the user to drag a link in the source object.
 - [static var any: WebDragSourceAction](./any.md)
   Allows any defined action to occur.
+- [WebDragSourceActionNone](./webdragsourceactionnone.md)
+  No action.
 
 
 ---

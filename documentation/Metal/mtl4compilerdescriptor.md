@@ -70,6 +70,8 @@ class MTL4CompilerDescriptor
   Options for configuring the creation of binary functions.
 - [class MTL4PipelineStageDynamicLinkingDescriptor](./mtl4pipelinestagedynamiclinkingdescriptor.md)
   Groups together properties to drive the dynamic linking process of a pipeline stage.
+- [MTL4CompilerTask](./mtl4compilertask.md)
+  A reference to an asynchronous compilation task that you initiate from a compiler instance.
 
 
 ---

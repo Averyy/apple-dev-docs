@@ -49,6 +49,14 @@ BNNSActivationFunctionReLU6
   An activation function that returns random numbers from the Gumbel distribution.
 - [var BNNSActivationFunctionHardShrink: BNNSActivationFunction](./bnnsactivationfunctionhardshrink.md)
   An activation function that returns zero when the absolute input is less than alpha, otherwise it returns its input.
+- [BNNSActivationFunctionClamp](./bnnsactivationfunction/bnnsactivationfunctionclamp.md)
+  An activation function that returns its input clamped to the specified range.
+- [BNNSActivationFunctionHardSigmoid](./bnnsactivationfunctionhardsigmoid.md)
+  An activation function that returns the hard sigmoid function of its input.
+- [BNNSActivationFunctionHardSwish](./bnnsactivationfunctionhardswish.md)
+  An activation function that returns the hard swish function of its input.
+- [BNNSActivationFunctionIntegerLinearSaturate](./bnnsactivationfunction/bnnsactivationfunctionintegerlinearsaturate.md)
+  An activation function that returns an arithmetic shift, preserving sign.
 
 
 ---

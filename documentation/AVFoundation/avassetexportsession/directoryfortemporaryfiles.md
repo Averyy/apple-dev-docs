@@ -39,6 +39,10 @@ var directoryForTemporaryFiles: URL? { get set }
   The time range of the source asset to export.
 - [var fileLengthLimit: Int64](./filelengthlimit.md)
   The file length that the output of the session must not exceed.
+- [outputURL](./outputurl.md)
+  A URL where an asset export session writes its output.
+- [outputFileType](./outputfiletype.md)
+  The file type of the output an asset export session writes.
 
 
 ---

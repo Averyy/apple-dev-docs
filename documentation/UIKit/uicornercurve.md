@@ -48,6 +48,28 @@ enum UICornerCurve : NSInteger;
 - [Sendable](../Swift/sendable.md)
 - [SendableMetatype](../Swift/sendablemetatype.md)
 
+## See Also
+
+### Creating a hover shape
+- [rectShape](./uishape-c.class/rectshape.md)
+  Creates a rectangular shape.
+- [capsuleShape](./uishape-c.class/capsuleshape.md)
+  Creates a capsule shape, a rounded rectangle with a corner radius equal to half the length of the rectangle’s smallest edge.
+- [circleShape](./uishape-c.class/circleshape.md)
+  Creates a circular shape, with a radius equal to half the length of the frame rectangle’s smallest edge.
+- [+ rectShapeWithCornerRadius:](./uishape-c.class/rectshapewithcornerradius_.md)
+  Creates a rectangular shape with rounded corners, using the provided corner radius.
+- [+ rectShapeWithCornerRadius:cornerCurve:](./uishape-c.class/rectshapewithcornerradius_cornercurve_.md)
+  Creates a rectangular shape with rounded corners, using the provided corner radius and corner curve.
+- [+ rectShapeWithCornerRadius:cornerCurve:maskedCorners:](./uishape-c.class/rectshapewithcornerradius_cornercurve_maskedcorners_.md)
+  Creates a rectangular shape with rounded corners, using the provided corner radius, corner curve, and rectangle corners.
+- [+ fixedRectShapeWithRect:](./uishape-c.class/fixedrectshapewithrect_.md)
+  Creates a fixed rectangular shape that uses the provided rectangle as its shape, regardless of the frame that contains it.
+- [+ fixedRectShapeWithRect:cornerRadius:](./uishape-c.class/fixedrectshapewithrect_cornerradius_.md)
+  Creates a fixed rectangular shape with the provided corner radius, using the provided rectangle as its shape.
+- [+ fixedRectShapeWithRect:cornerRadius:cornerCurve:maskedCorners:](./uishape-c.class/fixedrectshapewithrect_cornerradius_cornercurve_maskedcorners_.md)
+  Creates a fixed rectangular shape with the provided corner radius and corner curve, using the provided rectangle as its shape.
+
 
 ---
 

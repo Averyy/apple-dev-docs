@@ -34,6 +34,15 @@ An instance of the class `cls`.
 - `cls`: The class that you want to allocate an instance of.
 - `extraBytes`: An integer indicating the number of extra bytes to allocate. The additional bytes can be used to store additional instance variables beyond those defined in the class definition.
 
+## See Also
+
+### Related Documentation
+- [objc_constructInstance](./objc_constructinstance.md)
+  Creates an instance of a class at the specified location.
+### Instantiating Classes
+- [objc_destructInstance](./objc_destructinstance.md)
+  Destroys an instance of a class without freeing memory and removes any of its associated references.
+
 
 ---
 

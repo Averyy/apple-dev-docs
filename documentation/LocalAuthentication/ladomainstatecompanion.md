@@ -26,6 +26,8 @@ class LADomainStateCompanion
 - [var availableCompanionTypes: Set<LACompanionType>](./ladomainstatecompanion/availablecompaniontypes-1t7ur.md)
 - [var stateHash: Data?](./ladomainstatecompanion/statehash.md)
   Contains combined state hash data for all available companion types. . Returns `nil` if no companion devices are paired.
+- [availableCompanionTypes](./ladomainstatecompanion/availablecompaniontypes-1ggnh.md)
+  Indicates types of companions paired with the device. The elements are NSNumber-wrapped instances of @c `LACompanionType`.
 ### Instance Methods
 - [func stateHash(for: LACompanionType) -> Data?](./ladomainstatecompanion/statehash%28for%29.md)
   Returns state hash data for the given companion type.

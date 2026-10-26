@@ -58,6 +58,10 @@ A `0` value always means [`false`](../../Swift/false.md), and any nonzero value 
   The number object’s value expressed as an unsigned `long long`, converted as necessary.
 - [var uint16Value: UInt16](./uint16value.md)
   The number object’s value expressed as an unsigned `short`, converted as necessary.
+- [longValue](./longvalue.md)
+  The number object’s value expressed as a `long`, converted as necessary.
+- [unsignedLongValue](./unsignedlongvalue.md)
+  The number object’s value expressed as an unsigned `long`, converted as necessary.
 
 
 ---

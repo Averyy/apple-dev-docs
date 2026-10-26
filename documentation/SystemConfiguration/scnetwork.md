@@ -14,6 +14,13 @@ A remote host is considered reachable when a data packet, sent by an application
 ### Constants
 - [typealias SCNetworkConnectionFlags](./scnetworkconnectionflags.md)
   Flags that indicate whether the specified network node name or address is reachable, whether a connection is required, and whether some user intervention may be required when establishing a connection.
+### Group
+- [SCNetworkCheckReachabilityByAddress](./scnetworkcheckreachabilitybyaddress.md)
+  Determines whether the specified network address is reachable using the current network configuration.
+- [SCNetworkCheckReachabilityByName](./scnetworkcheckreachabilitybyname.md)
+  Determines whether the specified network host or node name is reachable using the current network configuration.
+- [SCNetworkInterfaceRefreshConfiguration](./scnetworkinterfacerefreshconfiguration.md)
+  Sends a notification to interested configuration agents to have them immediately retry their configuration over a particular network interface.
 
 ## See Also
 
@@ -33,6 +40,8 @@ A remote host is considered reachable when a data packet, sent by an application
 - [SystemConfiguration Constants](./systemconfiguration-constants.md)
 - [SystemConfiguration Functions](./systemconfiguration-functions.md)
 - [SystemConfiguration Data Types](./systemconfiguration-data-types.md)
+- [DHCPClientPreferences](./dhcpclientpreferences.md)
+- [SCDynamicStoreCopyDHCPInfo](./scdynamicstorecopydhcpinfo-apicollection.md)
 
 
 ---

@@ -28,6 +28,8 @@ class NSPICTImageRep
 ### Creating Representations of Images from PICT Data
 - [init?(data: Data)](./nspictimagerep/init%28data%29.md)
   Returns a representation of an image from the specified data in the PICT file format.
+- [+ imageRepWithData:](./nspictimagerep/imagerepwithdata_.md)
+  Creates and returns a representation of an image from the specified data in the PICT file format.
 ### Getting Data
 - [var boundingBox: NSRect](./nspictimagerep/boundingbox.md)
   The rectangle that bounds the image representation.

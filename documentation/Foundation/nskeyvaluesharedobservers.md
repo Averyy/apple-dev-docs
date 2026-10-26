@@ -54,6 +54,9 @@ class NSKeyValueSharedObservers
 - [class NSKeyValueObservation](./nskeyvalueobservation.md)
 - [class NSKeyValueSharedObserversSnapshot](./nskeyvaluesharedobserverssnapshot.md)
   A collection of key-value observations which may be registered with multiple observable objects. Create using `-[NSKeyValueSharedObservers snapshot]`
+- [NSConstantString](./nsconstantstring.md)
+- [NSLocalizedNumberFormatRule](./nslocalizednumberformatrule.md)
+- [NSSimpleCString](./nssimplecstring.md)
 
 
 ---

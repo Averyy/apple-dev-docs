@@ -20,6 +20,14 @@ var isConverting: Bool { get }
 extern bool CGPSConverterIsConverting(CGPSConverterRef converter);
 ```
 
+## See Also
+
+### Miscellaneous Functions
+- [CGPSConverterConvert](./convert%28_,consumer,options%29.md)
+  Uses a PostScript converter to convert PostScript data to PDF data.
+- [CGPSConverterAbort](./abort%28%29.md)
+  Tells a PostScript converter to abort a conversion at the next available opportunity.
+
 
 ---
 

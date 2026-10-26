@@ -33,6 +33,14 @@ typedef enum SKDocumentIndexState : unsigned int {
   Specifies that the document is not in the index but will be added after the index is flushed or closed.
 - [var kSKDocumentStateDeletePending: SKDocumentIndexState](./kskdocumentstatedeletepending.md)
   Specifies that the document is in the index but will be deleted after the index is flushed or closed.
+- [kSKDocumentStateNotIndexed](./skdocumentindexstate/kskdocumentstatenotindexed.md)
+  Specifies that the document is not indexed.
+- [kSKDocumentStateIndexed](./skdocumentindexstate/kskdocumentstateindexed.md)
+  Specifies that the document is indexed.
+- [kSKDocumentStateAddPending](./skdocumentindexstate/kskdocumentstateaddpending.md)
+  Specifies that the document is not in the index but will be added after the index is flushed or closed.
+- [kSKDocumentStateDeletePending](./skdocumentindexstate/kskdocumentstatedeletepending.md)
+  Specifies that the document is in the index but will be deleted after the index is flushed or closed.
 ### Initializers
 - [init(UInt32)](./skdocumentindexstate/api-1450037-init.md)
 - [init(rawValue: UInt32)](./skdocumentindexstate/api-1441863-init.md)

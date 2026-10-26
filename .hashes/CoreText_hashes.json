@@ -430,6 +430,51 @@
       "file_path": "documentation/CoreText/coretext-macros.md",
       "hash": "6879522e8fa4291ac73a34c96e6701faad6380f71f6e771d79bafb569ba7c54d"
     },
+    "https://developer.apple.com/documentation/coretext/ct_available": {
+      "etag": "\"17dd-65d55cdc7c64f-df\"",
+      "file_path": "documentation/CoreText/ct_available.md",
+      "hash": "e304d2a28eb21bf61605d16245519438abaf88866f0f58142493a760df290015"
+    },
+    "https://developer.apple.com/documentation/coretext/ct_deprecated": {
+      "etag": "\"17e3-65d55cd7ef031-df\"",
+      "file_path": "documentation/CoreText/ct_deprecated.md",
+      "hash": "6594663c8d51b0f39a1c3dddc8bc40ca7953a13f79da8e01074ca37bc9889039"
+    },
+    "https://developer.apple.com/documentation/coretext/ct_deprecated_with_replacement": {
+      "etag": "\"1849-65d55cd9dd9a8-df\"",
+      "file_path": "documentation/CoreText/ct_deprecated_with_replacement.md",
+      "hash": "859b3a6d388112658140161ce06e9adb8841a4e54d30dc93b54ceed54b018714"
+    },
+    "https://developer.apple.com/documentation/coretext/ct_enum_available": {
+      "etag": "\"17fb-65d55cda9eede-df\"",
+      "file_path": "documentation/CoreText/ct_enum_available.md",
+      "hash": "b9655a6b874752843218e3b2b699d37bd1b09798526b12af6866dde22e1fa722"
+    },
+    "https://developer.apple.com/documentation/coretext/ct_enum_deprecated": {
+      "etag": "\"1801-65d55cd7d6a2c-df\"",
+      "file_path": "documentation/CoreText/ct_enum_deprecated.md",
+      "hash": "f88e5f4132a46296935531395cdda4da0d7d47eb3edd16b97fb63723cd10b6d9"
+    },
+    "https://developer.apple.com/documentation/coretext/ct_enum_unavailable": {
+      "etag": "\"1807-65d55cdb0dcca-df\"",
+      "file_path": "documentation/CoreText/ct_enum_unavailable.md",
+      "hash": "78fee9492445c8248b0573dd057329bc9645f2a50dc2e7c1f5d096fedd7190b8"
+    },
+    "https://developer.apple.com/documentation/coretext/ct_export": {
+      "etag": "\"17ac-65d55cd806fa0-df\"",
+      "file_path": "documentation/CoreText/ct_export.md",
+      "hash": "cdcaa69cd8444c92fe74621e9109cd9eeca42c900e956e41d726ad74fad64247"
+    },
+    "https://developer.apple.com/documentation/coretext/ct_swift_sendable": {
+      "etag": "\"17dc-65d55cd99c84d-df\"",
+      "file_path": "documentation/CoreText/ct_swift_sendable.md",
+      "hash": "ffb016d926949103aa176bbe591c9226ed2b3204054f29dc51269699f7a3da84"
+    },
+    "https://developer.apple.com/documentation/coretext/ct_unavailable": {
+      "etag": "\"17e9-65d55cd99c84d-df\"",
+      "file_path": "documentation/CoreText/ct_unavailable.md",
+      "hash": "5a99b54e2e671c5b8847931c9abbfb9a9786b906397f3a267bbbc6c557b37685"
+    },
     "https://developer.apple.com/documentation/coretext/ctadaptiveimageproviding": {
       "etag": "\"1eed-65d55cdcaab1d-df\"",
       "file_path": "documentation/CoreText/ctadaptiveimageproviding.md",
@@ -584,6 +629,11 @@
       "etag": "\"1579-65d55cd9dd9a8-df\"",
       "file_path": "documentation/CoreText/ctfontcollectioncopyoptions/init(rawvalue).md",
       "hash": "c624d6dab63206221dd3a82a2418ce8b0a1dc02f6bea6352987783d50bcf4ab0"
+    },
+    "https://developer.apple.com/documentation/coretext/ctfontcollectioncopyoptions/kctfontcollectioncopydefaultoptions": {
+      "etag": "\"1d95-65d55cd9dd9a8-df\"",
+      "file_path": "documentation/CoreText/ctfontcollectioncopyoptions/kctfontcollectioncopydefaultoptions.md",
+      "hash": "7846350dc2a46dbbb13478cb0b819b641ff5660b632fa95762505e2da1cc16cb"
     },
     "https://developer.apple.com/documentation/coretext/ctfontcollectioncopyoptions/standardsort": {
       "etag": "\"27a8-65d55cd9dd9a8-df\"",
@@ -1450,6 +1500,11 @@
       "file_path": "documentation/CoreText/ctfontoptions/init(rawvalue).md",
       "hash": "76248aa16d5585a5151f106beb079efdb045d17ba4d69e38a488478c61a5f3fe"
     },
+    "https://developer.apple.com/documentation/coretext/ctfontoptions/kctfontoptionsdefault": {
+      "etag": "\"19c5-65d55cdcaab1d-df\"",
+      "file_path": "documentation/CoreText/ctfontoptions/kctfontoptionsdefault.md",
+      "hash": "536d29484e1b643bd7cb7fdbcb9cde4abb0d70d4544cfb1322811ab3e0f384a6"
+    },
     "https://developer.apple.com/documentation/coretext/ctfontoptions/prefersystemfont": {
       "etag": "\"2291-65d55cdcaab1d-df\"",
       "file_path": "documentation/CoreText/ctfontoptions/prefersystemfont.md",
@@ -1579,6 +1634,16 @@
       "etag": "\"144b-65d55cdb6c6ed-df\"",
       "file_path": "documentation/CoreText/ctfontstylisticclass/init(rawvalue).md",
       "hash": "3d4f02f6f26f66f019f3321e2ea821a2c364f6bc839eadb3ac40ff02dc3502d6"
+    },
+    "https://developer.apple.com/documentation/coretext/ctfontstylisticclass/kctfontclassunknown": {
+      "etag": "\"44e0-65d55cdb6c6ed-df\"",
+      "file_path": "documentation/CoreText/ctfontstylisticclass/kctfontclassunknown.md",
+      "hash": "cbcd5a23914788d30d5ac558061bc837d4829823b40d6bd0300932dfa7fed9aa"
+    },
+    "https://developer.apple.com/documentation/coretext/ctfontstylisticclass/kctfontunknownclass": {
+      "etag": "\"48ed-65d55cdb6c6ed-df\"",
+      "file_path": "documentation/CoreText/ctfontstylisticclass/kctfontunknownclass.md",
+      "hash": "566d69271bd8e2599506496bf4b5f243bd1f9827e49ea3faec3a138e938c0335"
     },
     "https://developer.apple.com/documentation/coretext/ctfontstylisticclass/modernserifsclass": {
       "etag": "\"58fd-65d55cdb6c6ed-df\"",
@@ -1744,6 +1809,11 @@
       "etag": "\"19be-65d55cdc620fc-df\"",
       "file_path": "documentation/CoreText/ctfonttableoptions/init(rawvalue).md",
       "hash": "53be7217d7b8610ef4253160437f0502b4b882127e99d84f88d54be729de9a5a"
+    },
+    "https://developer.apple.com/documentation/coretext/ctfonttableoptions/kctfonttableoptionnooptions": {
+      "etag": "\"15a4-65d55cdc620fc-df\"",
+      "file_path": "documentation/CoreText/ctfonttableoptions/kctfonttableoptionnooptions.md",
+      "hash": "e4b48c6ce6c8d66663ccfee2267471b27d0c9759b995d3441bf86db24c37d032"
     },
     "https://developer.apple.com/documentation/coretext/ctfonttabletag": {
       "etag": "\"109f8-65d55cd89a1ab-df\"",
@@ -2915,6 +2985,11 @@
       "file_path": "documentation/CoreText/ctrunstatus/init(rawvalue).md",
       "hash": "372a0215d424b4e7109c8e6adf99594b31dd279fb1d5d00dbd236dbf2f126e5e"
     },
+    "https://developer.apple.com/documentation/coretext/ctrunstatus/kctrunstatusnostatus": {
+      "etag": "\"1e2a-65d55cd7ef031-df\"",
+      "file_path": "documentation/CoreText/ctrunstatus/kctrunstatusnostatus.md",
+      "hash": "0a4d573230b021904baf9edff09070b587d00d5e8f57aded48fd2752d9524c74"
+    },
     "https://developer.apple.com/documentation/coretext/ctrunstatus/nonmonotonic": {
       "etag": "\"2861-65d55cd7ef031-df\"",
       "file_path": "documentation/CoreText/ctrunstatus/nonmonotonic.md",
@@ -3084,6 +3159,11 @@
       "etag": "\"13e5-65d55cda83678-df\"",
       "file_path": "documentation/CoreText/ctunderlinestyle/init(rawvalue).md",
       "hash": "3ae96065b724c499a3cb092155973bb8067d0e91128223d9c808ab2ec714afe0"
+    },
+    "https://developer.apple.com/documentation/coretext/ctunderlinestyle/kctunderlinestylenone": {
+      "etag": "\"1e3f-65d55cda83678-df\"",
+      "file_path": "documentation/CoreText/ctunderlinestyle/kctunderlinestylenone.md",
+      "hash": "855ca064e33bef28cd315ccb7cee7ad28493351fdd83947185ee144ab30d1aa8"
     },
     "https://developer.apple.com/documentation/coretext/ctunderlinestyle/single": {
       "etag": "\"270d-65d55cda83678-df\"",
@@ -12075,6 +12155,51 @@
       "file_path": "documentation/CoreText/coretext-macros.md",
       "hash": "6879522e8fa4291ac73a34c96e6701faad6380f71f6e771d79bafb569ba7c54d"
     },
+    "https://developer.apple.com/tutorials/data/documentation/coretext/ct_available.json": {
+      "etag": "\"17dd-65d55cdc7c64f-df\"",
+      "file_path": "documentation/CoreText/ct_available.md",
+      "hash": "e304d2a28eb21bf61605d16245519438abaf88866f0f58142493a760df290015"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/coretext/ct_deprecated.json": {
+      "etag": "\"17e3-65d55cd7ef031-df\"",
+      "file_path": "documentation/CoreText/ct_deprecated.md",
+      "hash": "6594663c8d51b0f39a1c3dddc8bc40ca7953a13f79da8e01074ca37bc9889039"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/coretext/ct_deprecated_with_replacement.json": {
+      "etag": "\"1849-65d55cd9dd9a8-df\"",
+      "file_path": "documentation/CoreText/ct_deprecated_with_replacement.md",
+      "hash": "859b3a6d388112658140161ce06e9adb8841a4e54d30dc93b54ceed54b018714"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/coretext/ct_enum_available.json": {
+      "etag": "\"17fb-65d55cda9eede-df\"",
+      "file_path": "documentation/CoreText/ct_enum_available.md",
+      "hash": "b9655a6b874752843218e3b2b699d37bd1b09798526b12af6866dde22e1fa722"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/coretext/ct_enum_deprecated.json": {
+      "etag": "\"1801-65d55cd7d6a2c-df\"",
+      "file_path": "documentation/CoreText/ct_enum_deprecated.md",
+      "hash": "f88e5f4132a46296935531395cdda4da0d7d47eb3edd16b97fb63723cd10b6d9"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/coretext/ct_enum_unavailable.json": {
+      "etag": "\"1807-65d55cdb0dcca-df\"",
+      "file_path": "documentation/CoreText/ct_enum_unavailable.md",
+      "hash": "78fee9492445c8248b0573dd057329bc9645f2a50dc2e7c1f5d096fedd7190b8"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/coretext/ct_export.json": {
+      "etag": "\"17ac-65d55cd806fa0-df\"",
+      "file_path": "documentation/CoreText/ct_export.md",
+      "hash": "cdcaa69cd8444c92fe74621e9109cd9eeca42c900e956e41d726ad74fad64247"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/coretext/ct_swift_sendable.json": {
+      "etag": "\"17dc-65d55cd99c84d-df\"",
+      "file_path": "documentation/CoreText/ct_swift_sendable.md",
+      "hash": "ffb016d926949103aa176bbe591c9226ed2b3204054f29dc51269699f7a3da84"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/coretext/ct_unavailable.json": {
+      "etag": "\"17e9-65d55cd99c84d-df\"",
+      "file_path": "documentation/CoreText/ct_unavailable.md",
+      "hash": "5a99b54e2e671c5b8847931c9abbfb9a9786b906397f3a267bbbc6c557b37685"
+    },
     "https://developer.apple.com/tutorials/data/documentation/coretext/ctadaptiveimageproviding.json": {
       "etag": "\"1eed-65d55cdcaab1d-df\"",
       "file_path": "documentation/CoreText/ctadaptiveimageproviding.md",
@@ -12229,6 +12354,11 @@
       "etag": "\"1579-65d55cd9dd9a8-df\"",
       "file_path": "documentation/CoreText/ctfontcollectioncopyoptions/init(rawvalue).md",
       "hash": "c624d6dab63206221dd3a82a2418ce8b0a1dc02f6bea6352987783d50bcf4ab0"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/coretext/ctfontcollectioncopyoptions/kctfontcollectioncopydefaultoptions.json": {
+      "etag": "\"1d95-65d55cd9dd9a8-df\"",
+      "file_path": "documentation/CoreText/ctfontcollectioncopyoptions/kctfontcollectioncopydefaultoptions.md",
+      "hash": "7846350dc2a46dbbb13478cb0b819b641ff5660b632fa95762505e2da1cc16cb"
     },
     "https://developer.apple.com/tutorials/data/documentation/coretext/ctfontcollectioncopyoptions/standardsort.json": {
       "etag": "\"27a8-65d55cd9dd9a8-df\"",
@@ -13095,6 +13225,11 @@
       "file_path": "documentation/CoreText/ctfontoptions/init(rawvalue).md",
       "hash": "76248aa16d5585a5151f106beb079efdb045d17ba4d69e38a488478c61a5f3fe"
     },
+    "https://developer.apple.com/tutorials/data/documentation/coretext/ctfontoptions/kctfontoptionsdefault.json": {
+      "etag": "\"19c5-65d55cdcaab1d-df\"",
+      "file_path": "documentation/CoreText/ctfontoptions/kctfontoptionsdefault.md",
+      "hash": "536d29484e1b643bd7cb7fdbcb9cde4abb0d70d4544cfb1322811ab3e0f384a6"
+    },
     "https://developer.apple.com/tutorials/data/documentation/coretext/ctfontoptions/prefersystemfont.json": {
       "etag": "\"2291-65d55cdcaab1d-df\"",
       "file_path": "documentation/CoreText/ctfontoptions/prefersystemfont.md",
@@ -13224,6 +13359,16 @@
       "etag": "\"144b-65d55cdb6c6ed-df\"",
       "file_path": "documentation/CoreText/ctfontstylisticclass/init(rawvalue).md",
       "hash": "3d4f02f6f26f66f019f3321e2ea821a2c364f6bc839eadb3ac40ff02dc3502d6"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/coretext/ctfontstylisticclass/kctfontclassunknown.json": {
+      "etag": "\"44e0-65d55cdb6c6ed-df\"",
+      "file_path": "documentation/CoreText/ctfontstylisticclass/kctfontclassunknown.md",
+      "hash": "cbcd5a23914788d30d5ac558061bc837d4829823b40d6bd0300932dfa7fed9aa"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/coretext/ctfontstylisticclass/kctfontunknownclass.json": {
+      "etag": "\"48ed-65d55cdb6c6ed-df\"",
+      "file_path": "documentation/CoreText/ctfontstylisticclass/kctfontunknownclass.md",
+      "hash": "566d69271bd8e2599506496bf4b5f243bd1f9827e49ea3faec3a138e938c0335"
     },
     "https://developer.apple.com/tutorials/data/documentation/coretext/ctfontstylisticclass/modernserifsclass.json": {
       "etag": "\"58fd-65d55cdb6c6ed-df\"",
@@ -13389,6 +13534,11 @@
       "etag": "\"19be-65d55cdc620fc-df\"",
       "file_path": "documentation/CoreText/ctfonttableoptions/init(rawvalue).md",
       "hash": "53be7217d7b8610ef4253160437f0502b4b882127e99d84f88d54be729de9a5a"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/coretext/ctfonttableoptions/kctfonttableoptionnooptions.json": {
+      "etag": "\"15a4-65d55cdc620fc-df\"",
+      "file_path": "documentation/CoreText/ctfonttableoptions/kctfonttableoptionnooptions.md",
+      "hash": "e4b48c6ce6c8d66663ccfee2267471b27d0c9759b995d3441bf86db24c37d032"
     },
     "https://developer.apple.com/tutorials/data/documentation/coretext/ctfonttabletag.json": {
       "etag": "\"109f8-65d55cd89a1ab-df\"",
@@ -14560,6 +14710,11 @@
       "file_path": "documentation/CoreText/ctrunstatus/init(rawvalue).md",
       "hash": "372a0215d424b4e7109c8e6adf99594b31dd279fb1d5d00dbd236dbf2f126e5e"
     },
+    "https://developer.apple.com/tutorials/data/documentation/coretext/ctrunstatus/kctrunstatusnostatus.json": {
+      "etag": "\"1e2a-65d55cd7ef031-df\"",
+      "file_path": "documentation/CoreText/ctrunstatus/kctrunstatusnostatus.md",
+      "hash": "0a4d573230b021904baf9edff09070b587d00d5e8f57aded48fd2752d9524c74"
+    },
     "https://developer.apple.com/tutorials/data/documentation/coretext/ctrunstatus/nonmonotonic.json": {
       "etag": "\"2861-65d55cd7ef031-df\"",
       "file_path": "documentation/CoreText/ctrunstatus/nonmonotonic.md",
@@ -14729,6 +14884,11 @@
       "etag": "\"13e5-65d55cda83678-df\"",
       "file_path": "documentation/CoreText/ctunderlinestyle/init(rawvalue).md",
       "hash": "3ae96065b724c499a3cb092155973bb8067d0e91128223d9c808ab2ec714afe0"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/coretext/ctunderlinestyle/kctunderlinestylenone.json": {
+      "etag": "\"1e3f-65d55cda83678-df\"",
+      "file_path": "documentation/CoreText/ctunderlinestyle/kctunderlinestylenone.md",
+      "hash": "855ca064e33bef28cd315ccb7cee7ad28493351fdd83947185ee144ab30d1aa8"
     },
     "https://developer.apple.com/tutorials/data/documentation/coretext/ctunderlinestyle/single.json": {
       "etag": "\"270d-65d55cda83678-df\"",
@@ -23296,8 +23456,8 @@
       "applicationservices": {}
     },
     "render": {
-      "version": 1
+      "version": 2
     },
-    "total_pages": 4658
+    "total_pages": 4690
   }
 }

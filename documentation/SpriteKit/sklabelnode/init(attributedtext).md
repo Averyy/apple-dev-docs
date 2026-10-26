@@ -42,6 +42,8 @@ A lable initialized from attributed text.
   Initializes a new label object with a specified font.
 - [convenience init(text: String?)](./init%28text%29.md)
   Initializes a new label object with a text string.
+- [+ labelNodeWithFontNamed:](./labelnodewithfontnamed_.md)
+  Initializes a new label object.
 
 
 ---

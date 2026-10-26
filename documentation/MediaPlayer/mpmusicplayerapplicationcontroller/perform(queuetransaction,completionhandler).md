@@ -48,6 +48,8 @@ If you modify the queue outside of the completion handler, register for the [`MP
 ### Changing the queue contents
 - [static let MPMusicPlayerControllerQueueDidChange: NSNotification.Name](../../Foundation/nsnotification/name-swift.struct/mpmusicplayercontrollerqueuedidchange.md)
   Indicates the music player’s queue changed.
+- [MPMusicPlayerControllerQueueDidChangeNotification](../mpmusicplayercontrollerqueuedidchangenotification.md)
+  Indicates the music player’s queue changed.
 
 
 ---

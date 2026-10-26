@@ -35,6 +35,10 @@ class PGDisplayDescriptor
   A handler that the framework calls to change the cursor’s visibility.
 - [typealias PGDisplayCursorShowHandler](./pgdisplaycursorshowhandler.md)
   The block signature for a routine that handles changes to the cursor’s visibility.
+- [cursorGlyphHandler](./pgdisplaydescriptor/cursorglyphhandler.md)
+  A handler that the framework calls to change the cursor’s appearance.
+- [PGDisplayCursorGlyphHandler](./pgdisplaycursorglyphhandler.md)
+  The block signature for a routine that handles changes to the cursor’s appearance.
 ### Handling Mode Changes
 - [var modeChangeHandler: PGDisplayModeChangeHandler?](./pgdisplaydescriptor/modechangehandler.md)
   A handler that the framework calls to change the virtual display’s graphics mode.

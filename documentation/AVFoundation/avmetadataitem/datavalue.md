@@ -40,6 +40,10 @@ var dataValue: Data? { get }
   The value of the metadata item as a number.
 - [var dateValue: Date?](./datevalue.md)
   The value of the metadata item as a date.
+- [- loadValuesAsynchronouslyForKeys:completionHandler:](./loadvaluesasynchronouslyforkeys_completionhandler_.md)
+  Tells the object to load the values of any of the specified keys that aren’t already loaded.
+- [- statusOfValueForKey:error:](./statusofvalueforkey_error_.md)
+  Reports whether the value for a given key is immediately available without blocking.
 
 
 ---

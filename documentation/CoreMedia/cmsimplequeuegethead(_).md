@@ -44,6 +44,8 @@ If the queue is empty, the function returns `NULL`.
   Returns the number of elements that the queue can hold.
 - [func CMSimpleQueueGetCount(CMSimpleQueue) -> Int32](./cmsimplequeuegetcount%28_%29.md)
   Returns the number of elements currently in the queue.
+- [CMSimpleQueueGetFullness](./cmsimplequeuegetfullness.md)
+  A convenience macro that returns a queue’s fullness as a percentage of its capacity.
 
 
 ---

@@ -34,6 +34,10 @@ init(coder aDecoder: NSCoder)
 ### Creating a Subscription
 - [convenience init(recordType: CKRecord.RecordType, predicate: NSPredicate, subscriptionID: CKSubscription.ID, options: CKQuerySubscription.Options)](./init%28recordtype,predicate,subscriptionid,options%29.md)
   Creates a named query-based subscription that queries records of a specific type.
+- [- initWithRecordType:predicate:options:](./initwithrecordtype_predicate_options_.md)
+  Creates a query-based subscription that queries records of a specific type.
+- [- initWithRecordType:predicate:subscriptionID:options:](./initwithrecordtype_predicate_subscriptionid_options_.md)
+  Creates a named query-based subscription that queries records of a specific type.
 
 
 ---

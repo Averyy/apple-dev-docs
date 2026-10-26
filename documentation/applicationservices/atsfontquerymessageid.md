@@ -27,6 +27,8 @@ typedef enum ATSFontQueryMessageID : unsigned int {
 - [init(rawValue: UInt32)](./atsfontquerymessageid/api-1459713-init.md)
 ### Instance Properties
 - [var rawValue: UInt32](./atsfontquerymessageid/api-1461661-rawvalue.md)
+### Constants
+- [kATSQueryActivateFontMessage](./atsfontquerymessageid/katsqueryactivatefontmessage.md)
 
 ## Relationships
 

@@ -11,7 +11,7 @@ The Assets Library URL for the original version of the picked item.
 - iPadOS 4.1+ - Deprecated in 11.0
 - Mac Catalyst 13.1+ - Deprecated in 13.1
 
-> **Deprecated**: Use [`PHPickerViewController`](https://developer.apple.com/documentation/photosui/phpickerviewcontroller) instead.
+> **Deprecated**: Use [`PHPickerViewController`](../../../PhotosUI/phpickerviewcontroller.md) instead.
 
 ## Declaration
 

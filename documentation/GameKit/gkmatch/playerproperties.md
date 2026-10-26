@@ -35,6 +35,8 @@ For more information, see [Matchmaking rules](../matchmaking-rules.md).
 ### Getting matchmaking properties
 - [var properties: [String : Any]?](./properties.md)
   The local player’s properties that matchmaking rules used to find the players with some additions.
+- [GKMatchProperties](../gkmatchproperties.md)
+  A type for game-specific properties that Game Center uses to find players when using matchmaking rules.
 
 
 ---

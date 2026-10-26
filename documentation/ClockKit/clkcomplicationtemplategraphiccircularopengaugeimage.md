@@ -45,6 +45,8 @@ Instead of providing multiple images with different resolutions, you can provide
 ### Creating the Template
 - [init(gaugeProvider: CLKGaugeProvider, bottomImageProvider: CLKFullColorImageProvider, centerTextProvider: CLKTextProvider)](./clkcomplicationtemplategraphiccircularopengaugeimage/init%28gaugeprovider,bottomimageprovider,centertextprovider%29.md)
   Creates a new template that has an open circular gauge, a small image at the bottom, and a small amount of text in the center.
+- [+ templateWithGaugeProvider:bottomImageProvider:centerTextProvider:](./clkcomplicationtemplategraphiccircularopengaugeimage/templatewithgaugeprovider_bottomimageprovider_centertextprovider_.md)
+  Returns a new template that has an open circular gauge, a small image at the bottom, and a small amount of text in the center.
 ### Setting the Complication Data
 - [var bottomImageProvider: CLKFullColorImageProvider](./clkcomplicationtemplategraphiccircularopengaugeimage/bottomimageprovider.md)
   The image to display at the bottom of the gauge.

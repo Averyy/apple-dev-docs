@@ -45,6 +45,8 @@ For more information about setting up multiple stores, see [Setting Up Core Data
   The identifier of the CloudKit container associated with a given store description.
 - [var databaseScope: CKDatabase.Scope](./nspersistentcloudkitcontaineroptions/databasescope-4c72t.md)
   The database scope — public, private, or shared — to use for a specified store in a persistent CloudKit container.
+- [databaseScope](./nspersistentcloudkitcontaineroptions/databasescope-2784h.md)
+  The database scope — public, private, or shared — to use for a specified store in a persistent CloudKit container.
 
 ## Relationships
 

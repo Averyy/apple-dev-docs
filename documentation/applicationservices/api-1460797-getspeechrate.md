@@ -41,6 +41,8 @@ A resultcode. See [Result Codes](./speech_synthesis_manager.md#1659745).
   Determines if any speech is currently being synthesizedin your application or elsewhere on the computer.
 - [func SpeechManagerVersion() -> NumVersion](./api-1462334-speechmanagerversion.md)
   Determines the current version of the Speech SynthesisManager installed in the system.
+- [GetSpeechInfo](./api-1552220-getspeechinfo.md)
+  Gets information about a designated speech channel.
 
 
 ---

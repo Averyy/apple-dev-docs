@@ -43,6 +43,8 @@ init?(coder: NSCoder)
   Creates and returns a new Bézier path object with the reversed contents of the current path.
 - [init()](./init%28%29.md)
   Creates and returns an empty path object.
+- [+ bezierPath](./bezierpath.md)
+  Creates and returns a new Bézier path object.
 
 
 ---

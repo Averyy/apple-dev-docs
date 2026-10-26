@@ -55,6 +55,10 @@ typedef NSString * SHMediaItemProperty;
   The date the media item was created.
 - [static let timeRanges: SHMediaItemProperty](./shmediaitemproperty/timeranges.md)
   The key to access the time ranges property of a media item.
+- [SHMediaItemFrequencySkewRanges](./shmediaitemfrequencyskewranges.md)
+  The key to access the frequency skew ranges property of a media item.
+- [SHMediaItemTimeRanges](./shmediaitemtimeranges.md)
+  The key to access the time ranges property of a media item.
 ### Apple Music property keys
 - [static let appleMusicURL: SHMediaItemProperty](./shmediaitemproperty/applemusicurl.md)
   The key to access the Apple Music URL property of a media item.
@@ -92,6 +96,14 @@ typedef NSString * SHMediaItemProperty;
   An array of ranges that indicate the offsets within the reference signature that this media item describes.
 - [var frequencySkewRanges: [Range<Float>]](./shmediaitem/frequencyskewranges-1j7d3.md)
   An array of ranges that indicate the frequency skews in the reference signature that this media item describes.
+- [- valueForProperty:](./shmediaitem/valueforproperty_.md)
+  Accesses the property for the specified key for reading.
+- [timeRanges](./shmediaitem/timeranges-43654.md)
+  An array of ranges that indicate the offsets within the reference signature that this media item describes.
+- [frequencySkewRanges](./shmediaitem/frequencyskewranges-4yqx.md)
+  An array of ranges that indicate the frequency skews in the reference signature that this media item describes.
+- [SHRange](./shrange.md)
+  A half-open interval from a lower bound up to, but not including, an upper bound.
 
 
 ---

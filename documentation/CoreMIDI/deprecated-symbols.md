@@ -30,6 +30,11 @@ Review unsupported symbols and their replacements.
   A function receiving MIDI input.
 - [typealias MIDIReadBlock](./midireadblock.md)
   A block receiving MIDI input.
+### Deprecated Properties
+- [kMIDIPropertyFactoryPatchNameFile](./kmidipropertyfactorypatchnamefile.md)
+  An alias to the device’s current factory patch name file.
+- [kMIDIPropertyUserPatchNameFile](./kmidipropertyuserpatchnamefile.md)
+  An alias to the device’s current user patch name file.
 
 
 ---

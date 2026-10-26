@@ -27,6 +27,9 @@ class ILMessageCommunication
 ### Accessing Data
 - [var messageBody: String?](./ilmessagecommunication/messagebody.md)
   The content of the SMS message.
+### Comparing Communications
+- [- isEqualToMessageCommunication:](./ilmessagecommunication/isequaltomessagecommunication_.md)
+  Indicates whether the current message is equal to the provided argument.
 
 ## Relationships
 

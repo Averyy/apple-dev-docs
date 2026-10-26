@@ -42,6 +42,8 @@ If a person selects multiple devices in the menu, the selected devices reorder n
   A dictionary of metadata for the device that the extension communicates with over the local network.
 - [var url: URL](./url.md)
   A resource locator for the simple service discovery protocol.
+- [txtRecordData](./txtrecorddata.md)
+  A dictionary of metadata for the device that the extension communicates with over the local network.
 
 
 ---

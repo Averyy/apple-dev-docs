@@ -15,6 +15,11 @@
       "file_path": "documentation/CarPlay/carplay-enumerations.md",
       "hash": "74018678049fc6146ca524eb5584e81603998f035e91d3ed6735a453e5aa5777"
     },
+    "https://developer.apple.com/documentation/carplay/carplay_template_ui_actor": {
+      "etag": "\"a18-65d55edc5cac9-df\"",
+      "file_path": "documentation/CarPlay/carplay_template_ui_actor.md",
+      "hash": "9c9c5c7b7568e9c542335831c4c5ec06275dd37bb10c1e01b74e0c16070cf471"
+    },
     "https://developer.apple.com/documentation/carplay/carplayerrordomain": {
       "etag": "\"2276-65d55edc3c8e4-df\"",
       "file_path": "documentation/CarPlay/carplayerrordomain.md",
@@ -1835,6 +1840,16 @@
       "file_path": "documentation/CarPlay/cplistsection/init(items,header,sectionindextitle)-743we.md",
       "hash": "16a58474ede39c322675bd5684a3dc2de052a61997b599ee5a342d7bccc88643"
     },
+    "https://developer.apple.com/documentation/carplay/cplistsection/initwithitems:": {
+      "etag": "\"3656-65d55edc3c8e4-df\"",
+      "file_path": "documentation/CarPlay/cplistsection/initwithitems_.md",
+      "hash": "ccd1b6d708777b65ecf614af66a7179b44d4d1447a6226c3341b8a96c0dfd564"
+    },
+    "https://developer.apple.com/documentation/carplay/cplistsection/initwithitems:header:sectionindextitle:": {
+      "etag": "\"3dbe-65d55edc3c8e4-df\"",
+      "file_path": "documentation/CarPlay/cplistsection/initwithitems_header_sectionindextitle_.md",
+      "hash": "bc7b71211ee753d85ea7669a526b19caba707715541d2aaffae5b45fb2b41874"
+    },
     "https://developer.apple.com/documentation/carplay/cplistsection/item(at:)": {
       "etag": "\"3211-65d55edc22ba6-df\"",
       "file_path": "documentation/CarPlay/cplistsection/item(at).md",
@@ -2209,6 +2224,11 @@
       "etag": "\"503f-65d55edc78163-df\"",
       "file_path": "documentation/CarPlay/cpmaneuverdisplaystyle.md",
       "hash": "b6c6959ce9068841bdf3207a2be7eae75f767adc01fe17e2c81ebd92d69bc1b0"
+    },
+    "https://developer.apple.com/documentation/carplay/cpmaneuverdisplaystyle/cpmaneuverdisplaystyledefault": {
+      "etag": "\"26c1-65d55edc9b4c8-df\"",
+      "file_path": "documentation/CarPlay/cpmaneuverdisplaystyle/cpmaneuverdisplaystyledefault.md",
+      "hash": "9333031aa80fc684b284c53db091ce24925f7c49e4331228b4bb0e21548d5db1"
     },
     "https://developer.apple.com/documentation/carplay/cpmaneuverdisplaystyle/init(rawvalue:)": {
       "etag": "\"1464-65d55edc9b4c8-df\"",
@@ -3135,6 +3155,11 @@
       "file_path": "documentation/CarPlay/cpmessagecomposebarbutton/init(image).md",
       "hash": "bfdd32c7bb0380bf1194c489fcdf28805beff14b30f08e5000587a9098530017"
     },
+    "https://developer.apple.com/documentation/carplay/cpmessagecomposebarbutton/new": {
+      "etag": "\"1b5a-65d55edb2f737-df\"",
+      "file_path": "documentation/CarPlay/cpmessagecomposebarbutton/new.md",
+      "hash": "bba317c8fbbadc719e2265d92f36caa941dd63a8839326771975666fdc72897b"
+    },
     "https://developer.apple.com/documentation/carplay/cpmessagegriditemconfiguration": {
       "etag": "\"3ded-65d55edd2c7fb-df\"",
       "file_path": "documentation/CarPlay/cpmessagegriditemconfiguration.md",
@@ -3650,10 +3675,20 @@
       "file_path": "documentation/CarPlay/cpnavigationwaypoint/centerpoint.md",
       "hash": "c1d69e4a73920c3ac8a7190cb9cf50d2451969b6c5347029dcae0a5c6f7b3215"
     },
+    "https://developer.apple.com/documentation/carplay/cpnavigationwaypoint/entrypoints-6kbqa": {
+      "etag": "\"16c9-65d55edcbddb5-df\"",
+      "file_path": "documentation/CarPlay/cpnavigationwaypoint/entrypoints-6kbqa.md",
+      "hash": "57fe6abbb936049c69a7e42b25cc4cba09ef2e655f701b4c10e1351d849372ec"
+    },
     "https://developer.apple.com/documentation/carplay/cpnavigationwaypoint/entrypoints-obhb": {
       "etag": "\"16ef-65d55edcbddb5-df\"",
       "file_path": "documentation/CarPlay/cpnavigationwaypoint/entrypoints-obhb.md",
       "hash": "494d7e701c46169b1f552958660479801e6ec41e7f28af03baaf42068245eec6"
+    },
+    "https://developer.apple.com/documentation/carplay/cpnavigationwaypoint/entrypointscount": {
+      "etag": "\"137c-65d55edcbddb5-df\"",
+      "file_path": "documentation/CarPlay/cpnavigationwaypoint/entrypointscount.md",
+      "hash": "fa565f80f3c8411f56efa6b290d54649167a24af7a88680a41ca623c7ff311c9"
     },
     "https://developer.apple.com/documentation/carplay/cpnavigationwaypoint/init(centerpoint:locationthreshold:name:address:entrypoints:timezone:)": {
       "etag": "\"3278-65d55edcbddb5-df\"",
@@ -3674,6 +3709,21 @@
       "etag": "\"289e-65d55edcbddb5-df\"",
       "file_path": "documentation/CarPlay/cpnavigationwaypoint/init(mapitem,locationthreshold,entrypoints).md",
       "hash": "d7debcd8d2f8a6cd675b957459bf2836a6c92f9557ae304ddf08e632cadf5091"
+    },
+    "https://developer.apple.com/documentation/carplay/cpnavigationwaypoint/initwithcenterpoint:locationthreshold:name:address:entrypoints:entrypointscount:timezone:": {
+      "etag": "\"2a07-65d55edcbddb5-df\"",
+      "file_path": "documentation/CarPlay/cpnavigationwaypoint/initwithcenterpoint_locationthreshold_name_address_entrypoints_entrypointscount_timezone_.md",
+      "hash": "0355e18a8578d6b32658efa43dba003dce535c577ad12e50ca4c4adf39a7766b"
+    },
+    "https://developer.apple.com/documentation/carplay/cpnavigationwaypoint/initwithcenterpoint:locationthreshold:namevariants:addressvariants:entrypoints:entrypointscount:timezone:": {
+      "etag": "\"279f-65d55edcbddb5-df\"",
+      "file_path": "documentation/CarPlay/cpnavigationwaypoint/initwithcenterpoint_locationthreshold_namevariants_addressvariants_entrypoints_entrypointscount_timezone_.md",
+      "hash": "fa950371ad761e2d37ad5bfb9723ed8266888ee48f89384ef231244591a108d9"
+    },
+    "https://developer.apple.com/documentation/carplay/cpnavigationwaypoint/initwithmapitem:locationthreshold:entrypoints:entrypointscount:": {
+      "etag": "\"2134-65d55edcbddb5-df\"",
+      "file_path": "documentation/CarPlay/cpnavigationwaypoint/initwithmapitem_locationthreshold_entrypoints_entrypointscount_.md",
+      "hash": "b632129a8c1b37f97ba24a41e48d8355ef20ad40822219086d833d3fb79f2f53"
     },
     "https://developer.apple.com/documentation/carplay/cpnavigationwaypoint/locationthreshold": {
       "etag": "\"2426-65d55edcbddb5-df\"",
@@ -4019,6 +4069,11 @@
       "etag": "\"338c-65d55edc5cac9-df\"",
       "file_path": "documentation/CarPlay/cpnowplayingtemplateobserver/nowplayingtemplateupnextbuttontapped(_).md",
       "hash": "c2228f7ed8cf64e8885a51c0d2cedf8be6d1e59436ffbde8030fcb59273f21e4"
+    },
+    "https://developer.apple.com/documentation/carplay/cppandirection/cppandirectionnone": {
+      "etag": "\"23cf-65d55edd6b741-df\"",
+      "file_path": "documentation/CarPlay/cppandirection/cppandirectionnone.md",
+      "hash": "7b2288ad197dd32ddf418bf29296109d3fefe7af4617d6d21700e81e7991b5b2"
     },
     "https://developer.apple.com/documentation/carplay/cppanel": {
       "etag": "\"4d04-65d55edb2f737-df\"",
@@ -4580,6 +4635,16 @@
       "file_path": "documentation/CarPlay/cproutesegment/coordinates-8o5b.md",
       "hash": "572a0f26bb669dade5c74ca6ebff2415a664e252bcc2af6283c98b4dcf8544e3"
     },
+    "https://developer.apple.com/documentation/carplay/cproutesegment/coordinates-9mw42": {
+      "etag": "\"160e-65d55edbd3087-df\"",
+      "file_path": "documentation/CarPlay/cproutesegment/coordinates-9mw42.md",
+      "hash": "1cd59d74234088a3743e5a764b99cd85eaf3a418b4818ceaece974f0af8dad2d"
+    },
+    "https://developer.apple.com/documentation/carplay/cproutesegment/coordinatescount": {
+      "etag": "\"13bf-65d55edbd3087-df\"",
+      "file_path": "documentation/CarPlay/cproutesegment/coordinatescount.md",
+      "hash": "67a50780ab4581e69ca2b94392b17cb9a0eb1d0b4cf06375f4a74c9dd82b2192"
+    },
     "https://developer.apple.com/documentation/carplay/cproutesegment/currentlaneguidance": {
       "etag": "\"1fcf-65d55edbd3087-df\"",
       "file_path": "documentation/CarPlay/cproutesegment/currentlaneguidance.md",
@@ -4604,6 +4669,11 @@
       "etag": "\"421a-65d55edbd3087-df\"",
       "file_path": "documentation/CarPlay/cproutesegment/init(origin,destination,maneuvers,laneguidances,currentmaneuvers,currentlaneguidance,triptravelestimates,maneuvertravelestimates,coordinates).md",
       "hash": "a5f04246549761beb6bec8c314cf95e3385aaa814449c502f06c41155260c411"
+    },
+    "https://developer.apple.com/documentation/carplay/cproutesegment/initwithorigin:destination:maneuvers:laneguidances:currentmaneuvers:currentlaneguidance:triptravelestimates:maneuvertravelestimates:coordinates:coordinatescount:": {
+      "etag": "\"39d0-65d55edbd3087-df\"",
+      "file_path": "documentation/CarPlay/cproutesegment/initwithorigin_destination_maneuvers_laneguidances_currentmaneuvers_currentlaneguidance_triptravelestimates_maneuvertravelestimates_coordinates_coordinatescount_.md",
+      "hash": "9daf177933c76dd3aa804d497d3b4c1ecd907b117e0486322e6fe6206b44f4be"
     },
     "https://developer.apple.com/documentation/carplay/cproutesegment/laneguidances": {
       "etag": "\"1f08-65d55edbd3087-df\"",
@@ -4910,6 +4980,11 @@
       "file_path": "documentation/CarPlay/cptemplateapplicationdashboardscenedelegate/templateapplicationdashboardscene(_,diddisconnect,from).md",
       "hash": "e0108bb876aa1e1d5c7304d6c821a0c605a536b1872d56fbe5de040f97214001"
     },
+    "https://developer.apple.com/documentation/carplay/cptemplateapplicationdashboardscenesessionroleapplication": {
+      "etag": "\"11ad-65d55edc3c8e4-df\"",
+      "file_path": "documentation/CarPlay/cptemplateapplicationdashboardscenesessionroleapplication.md",
+      "hash": "c2f9a6a424a0a4d098cd0b5d910589ad0faa4a94f72b089e8345e9ef7165bd56"
+    },
     "https://developer.apple.com/documentation/carplay/cptemplateapplicationinstrumentclusterscene": {
       "etag": "\"6738-65d55edc0a176-df\"",
       "file_path": "documentation/CarPlay/cptemplateapplicationinstrumentclusterscene.md",
@@ -4949,6 +5024,11 @@
       "etag": "\"4387-65d55edbb72b1-df\"",
       "file_path": "documentation/CarPlay/cptemplateapplicationinstrumentclusterscenedelegate/templateapplicationinstrumentclusterscene(_,diddisconnectinstrumentclustercontroller).md",
       "hash": "00736f396ec4096a0f0893dc79dffe14fbbfa0514f87f3c256bdb669d22b49c5"
+    },
+    "https://developer.apple.com/documentation/carplay/cptemplateapplicationinstrumentclusterscenesessionroleapplication": {
+      "etag": "\"120d-65d55edb0e846-df\"",
+      "file_path": "documentation/CarPlay/cptemplateapplicationinstrumentclusterscenesessionroleapplication.md",
+      "hash": "fcfa41462838de36bc761a5decd910d799558c86aa6c08c4355f4566af8e1808"
     },
     "https://developer.apple.com/documentation/carplay/cptemplateapplicationscene": {
       "etag": "\"8b76-65d55edaee156-df\"",
@@ -5014,6 +5094,11 @@
       "etag": "\"3add-65d55edaee156-df\"",
       "file_path": "documentation/CarPlay/cptemplateapplicationscenedelegate/templateapplicationscene(_,didselect)-7bie0.md",
       "hash": "d67469cdd7916ac60a995a0ded316a53e3d6e0299f0eb5d5ab2bfea6329095d8"
+    },
+    "https://developer.apple.com/documentation/carplay/cptemplateapplicationscenesessionroleapplication": {
+      "etag": "\"1141-65d55edb6fcf4-df\"",
+      "file_path": "documentation/CarPlay/cptemplateapplicationscenesessionroleapplication.md",
+      "hash": "e477025626f09e8677230862a4931c2430fe9fbc4924affa1843abc4ab43d165"
     },
     "https://developer.apple.com/documentation/carplay/cptextbutton": {
       "etag": "\"56c4-65d55edb97d33-df\"",
@@ -5499,6 +5584,11 @@
       "etag": "\"262d-6590291f3fd8d-df\"",
       "file_path": "documentation/CarPlay/carplay-enumerations.md",
       "hash": "74018678049fc6146ca524eb5584e81603998f035e91d3ed6735a453e5aa5777"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/carplay/carplay_template_ui_actor.json": {
+      "etag": "\"a18-65d55edc5cac9-df\"",
+      "file_path": "documentation/CarPlay/carplay_template_ui_actor.md",
+      "hash": "9c9c5c7b7568e9c542335831c4c5ec06275dd37bb10c1e01b74e0c16070cf471"
     },
     "https://developer.apple.com/tutorials/data/documentation/carplay/carplayerrordomain.json": {
       "etag": "\"2276-65d55edc3c8e4-df\"",
@@ -7320,6 +7410,16 @@
       "file_path": "documentation/CarPlay/cplistsection/init(items,header,sectionindextitle)-743we.md",
       "hash": "16a58474ede39c322675bd5684a3dc2de052a61997b599ee5a342d7bccc88643"
     },
+    "https://developer.apple.com/tutorials/data/documentation/carplay/cplistsection/initwithitems:.json": {
+      "etag": "\"3656-65d55edc3c8e4-df\"",
+      "file_path": "documentation/CarPlay/cplistsection/initwithitems_.md",
+      "hash": "ccd1b6d708777b65ecf614af66a7179b44d4d1447a6226c3341b8a96c0dfd564"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/carplay/cplistsection/initwithitems:header:sectionindextitle:.json": {
+      "etag": "\"3dbe-65d55edc3c8e4-df\"",
+      "file_path": "documentation/CarPlay/cplistsection/initwithitems_header_sectionindextitle_.md",
+      "hash": "bc7b71211ee753d85ea7669a526b19caba707715541d2aaffae5b45fb2b41874"
+    },
     "https://developer.apple.com/tutorials/data/documentation/carplay/cplistsection/item(at:).json": {
       "etag": "\"3211-65d55edc22ba6-df\"",
       "file_path": "documentation/CarPlay/cplistsection/item(at).md",
@@ -7694,6 +7794,11 @@
       "etag": "\"503f-65d55edc78163-df\"",
       "file_path": "documentation/CarPlay/cpmaneuverdisplaystyle.md",
       "hash": "b6c6959ce9068841bdf3207a2be7eae75f767adc01fe17e2c81ebd92d69bc1b0"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/carplay/cpmaneuverdisplaystyle/cpmaneuverdisplaystyledefault.json": {
+      "etag": "\"26c1-65d55edc9b4c8-df\"",
+      "file_path": "documentation/CarPlay/cpmaneuverdisplaystyle/cpmaneuverdisplaystyledefault.md",
+      "hash": "9333031aa80fc684b284c53db091ce24925f7c49e4331228b4bb0e21548d5db1"
     },
     "https://developer.apple.com/tutorials/data/documentation/carplay/cpmaneuverdisplaystyle/init(rawvalue:).json": {
       "etag": "\"1464-65d55edc9b4c8-df\"",
@@ -8620,6 +8725,11 @@
       "file_path": "documentation/CarPlay/cpmessagecomposebarbutton/init(image).md",
       "hash": "bfdd32c7bb0380bf1194c489fcdf28805beff14b30f08e5000587a9098530017"
     },
+    "https://developer.apple.com/tutorials/data/documentation/carplay/cpmessagecomposebarbutton/new.json": {
+      "etag": "\"1b5a-65d55edb2f737-df\"",
+      "file_path": "documentation/CarPlay/cpmessagecomposebarbutton/new.md",
+      "hash": "bba317c8fbbadc719e2265d92f36caa941dd63a8839326771975666fdc72897b"
+    },
     "https://developer.apple.com/tutorials/data/documentation/carplay/cpmessagegriditemconfiguration.json": {
       "etag": "\"3ded-65d55edd2c7fb-df\"",
       "file_path": "documentation/CarPlay/cpmessagegriditemconfiguration.md",
@@ -9135,10 +9245,20 @@
       "file_path": "documentation/CarPlay/cpnavigationwaypoint/centerpoint.md",
       "hash": "c1d69e4a73920c3ac8a7190cb9cf50d2451969b6c5347029dcae0a5c6f7b3215"
     },
+    "https://developer.apple.com/tutorials/data/documentation/carplay/cpnavigationwaypoint/entrypoints-6kbqa.json": {
+      "etag": "\"16c9-65d55edcbddb5-df\"",
+      "file_path": "documentation/CarPlay/cpnavigationwaypoint/entrypoints-6kbqa.md",
+      "hash": "57fe6abbb936049c69a7e42b25cc4cba09ef2e655f701b4c10e1351d849372ec"
+    },
     "https://developer.apple.com/tutorials/data/documentation/carplay/cpnavigationwaypoint/entrypoints-obhb.json": {
       "etag": "\"16ef-65d55edcbddb5-df\"",
       "file_path": "documentation/CarPlay/cpnavigationwaypoint/entrypoints-obhb.md",
       "hash": "494d7e701c46169b1f552958660479801e6ec41e7f28af03baaf42068245eec6"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/carplay/cpnavigationwaypoint/entrypointscount.json": {
+      "etag": "\"137c-65d55edcbddb5-df\"",
+      "file_path": "documentation/CarPlay/cpnavigationwaypoint/entrypointscount.md",
+      "hash": "fa565f80f3c8411f56efa6b290d54649167a24af7a88680a41ca623c7ff311c9"
     },
     "https://developer.apple.com/tutorials/data/documentation/carplay/cpnavigationwaypoint/init(centerpoint:locationthreshold:name:address:entrypoints:timezone:).json": {
       "etag": "\"3278-65d55edcbddb5-df\"",
@@ -9159,6 +9279,21 @@
       "etag": "\"289e-65d55edcbddb5-df\"",
       "file_path": "documentation/CarPlay/cpnavigationwaypoint/init(mapitem,locationthreshold,entrypoints).md",
       "hash": "d7debcd8d2f8a6cd675b957459bf2836a6c92f9557ae304ddf08e632cadf5091"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/carplay/cpnavigationwaypoint/initwithcenterpoint:locationthreshold:name:address:entrypoints:entrypointscount:timezone:.json": {
+      "etag": "\"2a07-65d55edcbddb5-df\"",
+      "file_path": "documentation/CarPlay/cpnavigationwaypoint/initwithcenterpoint_locationthreshold_name_address_entrypoints_entrypointscount_timezone_.md",
+      "hash": "0355e18a8578d6b32658efa43dba003dce535c577ad12e50ca4c4adf39a7766b"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/carplay/cpnavigationwaypoint/initwithcenterpoint:locationthreshold:namevariants:addressvariants:entrypoints:entrypointscount:timezone:.json": {
+      "etag": "\"279f-65d55edcbddb5-df\"",
+      "file_path": "documentation/CarPlay/cpnavigationwaypoint/initwithcenterpoint_locationthreshold_namevariants_addressvariants_entrypoints_entrypointscount_timezone_.md",
+      "hash": "fa950371ad761e2d37ad5bfb9723ed8266888ee48f89384ef231244591a108d9"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/carplay/cpnavigationwaypoint/initwithmapitem:locationthreshold:entrypoints:entrypointscount:.json": {
+      "etag": "\"2134-65d55edcbddb5-df\"",
+      "file_path": "documentation/CarPlay/cpnavigationwaypoint/initwithmapitem_locationthreshold_entrypoints_entrypointscount_.md",
+      "hash": "b632129a8c1b37f97ba24a41e48d8355ef20ad40822219086d833d3fb79f2f53"
     },
     "https://developer.apple.com/tutorials/data/documentation/carplay/cpnavigationwaypoint/locationthreshold.json": {
       "etag": "\"2426-65d55edcbddb5-df\"",
@@ -9504,6 +9639,11 @@
       "etag": "\"338c-65d55edc5cac9-df\"",
       "file_path": "documentation/CarPlay/cpnowplayingtemplateobserver/nowplayingtemplateupnextbuttontapped(_).md",
       "hash": "c2228f7ed8cf64e8885a51c0d2cedf8be6d1e59436ffbde8030fcb59273f21e4"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/carplay/cppandirection/cppandirectionnone.json": {
+      "etag": "\"23cf-65d55edd6b741-df\"",
+      "file_path": "documentation/CarPlay/cppandirection/cppandirectionnone.md",
+      "hash": "7b2288ad197dd32ddf418bf29296109d3fefe7af4617d6d21700e81e7991b5b2"
     },
     "https://developer.apple.com/tutorials/data/documentation/carplay/cppanel.json": {
       "etag": "\"4d04-65d55edb2f737-df\"",
@@ -10065,6 +10205,16 @@
       "file_path": "documentation/CarPlay/cproutesegment/coordinates-8o5b.md",
       "hash": "572a0f26bb669dade5c74ca6ebff2415a664e252bcc2af6283c98b4dcf8544e3"
     },
+    "https://developer.apple.com/tutorials/data/documentation/carplay/cproutesegment/coordinates-9mw42.json": {
+      "etag": "\"160e-65d55edbd3087-df\"",
+      "file_path": "documentation/CarPlay/cproutesegment/coordinates-9mw42.md",
+      "hash": "1cd59d74234088a3743e5a764b99cd85eaf3a418b4818ceaece974f0af8dad2d"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/carplay/cproutesegment/coordinatescount.json": {
+      "etag": "\"13bf-65d55edbd3087-df\"",
+      "file_path": "documentation/CarPlay/cproutesegment/coordinatescount.md",
+      "hash": "67a50780ab4581e69ca2b94392b17cb9a0eb1d0b4cf06375f4a74c9dd82b2192"
+    },
     "https://developer.apple.com/tutorials/data/documentation/carplay/cproutesegment/currentlaneguidance.json": {
       "etag": "\"1fcf-65d55edbd3087-df\"",
       "file_path": "documentation/CarPlay/cproutesegment/currentlaneguidance.md",
@@ -10089,6 +10239,11 @@
       "etag": "\"421a-65d55edbd3087-df\"",
       "file_path": "documentation/CarPlay/cproutesegment/init(origin,destination,maneuvers,laneguidances,currentmaneuvers,currentlaneguidance,triptravelestimates,maneuvertravelestimates,coordinates).md",
       "hash": "a5f04246549761beb6bec8c314cf95e3385aaa814449c502f06c41155260c411"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/carplay/cproutesegment/initwithorigin:destination:maneuvers:laneguidances:currentmaneuvers:currentlaneguidance:triptravelestimates:maneuvertravelestimates:coordinates:coordinatescount:.json": {
+      "etag": "\"39d0-65d55edbd3087-df\"",
+      "file_path": "documentation/CarPlay/cproutesegment/initwithorigin_destination_maneuvers_laneguidances_currentmaneuvers_currentlaneguidance_triptravelestimates_maneuvertravelestimates_coordinates_coordinatescount_.md",
+      "hash": "9daf177933c76dd3aa804d497d3b4c1ecd907b117e0486322e6fe6206b44f4be"
     },
     "https://developer.apple.com/tutorials/data/documentation/carplay/cproutesegment/laneguidances.json": {
       "etag": "\"1f08-65d55edbd3087-df\"",
@@ -10395,6 +10550,11 @@
       "file_path": "documentation/CarPlay/cptemplateapplicationdashboardscenedelegate/templateapplicationdashboardscene(_,diddisconnect,from).md",
       "hash": "e0108bb876aa1e1d5c7304d6c821a0c605a536b1872d56fbe5de040f97214001"
     },
+    "https://developer.apple.com/tutorials/data/documentation/carplay/cptemplateapplicationdashboardscenesessionroleapplication.json": {
+      "etag": "\"11ad-65d55edc3c8e4-df\"",
+      "file_path": "documentation/CarPlay/cptemplateapplicationdashboardscenesessionroleapplication.md",
+      "hash": "c2f9a6a424a0a4d098cd0b5d910589ad0faa4a94f72b089e8345e9ef7165bd56"
+    },
     "https://developer.apple.com/tutorials/data/documentation/carplay/cptemplateapplicationinstrumentclusterscene.json": {
       "etag": "\"6738-65d55edc0a176-df\"",
       "file_path": "documentation/CarPlay/cptemplateapplicationinstrumentclusterscene.md",
@@ -10434,6 +10594,11 @@
       "etag": "\"4387-65d55edbb72b1-df\"",
       "file_path": "documentation/CarPlay/cptemplateapplicationinstrumentclusterscenedelegate/templateapplicationinstrumentclusterscene(_,diddisconnectinstrumentclustercontroller).md",
       "hash": "00736f396ec4096a0f0893dc79dffe14fbbfa0514f87f3c256bdb669d22b49c5"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/carplay/cptemplateapplicationinstrumentclusterscenesessionroleapplication.json": {
+      "etag": "\"120d-65d55edb0e846-df\"",
+      "file_path": "documentation/CarPlay/cptemplateapplicationinstrumentclusterscenesessionroleapplication.md",
+      "hash": "fcfa41462838de36bc761a5decd910d799558c86aa6c08c4355f4566af8e1808"
     },
     "https://developer.apple.com/tutorials/data/documentation/carplay/cptemplateapplicationscene.json": {
       "etag": "\"8b76-65d55edaee156-df\"",
@@ -10499,6 +10664,11 @@
       "etag": "\"3add-65d55edaee156-df\"",
       "file_path": "documentation/CarPlay/cptemplateapplicationscenedelegate/templateapplicationscene(_,didselect)-7bie0.md",
       "hash": "d67469cdd7916ac60a995a0ded316a53e3d6e0299f0eb5d5ab2bfea6329095d8"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/carplay/cptemplateapplicationscenesessionroleapplication.json": {
+      "etag": "\"1141-65d55edb6fcf4-df\"",
+      "file_path": "documentation/CarPlay/cptemplateapplicationscenesessionroleapplication.md",
+      "hash": "e477025626f09e8677230862a4931c2430fe9fbc4924affa1843abc4ab43d165"
     },
     "https://developer.apple.com/tutorials/data/documentation/carplay/cptextbutton.json": {
       "etag": "\"56c4-65d55edb97d33-df\"",
@@ -10973,8 +11143,8 @@
   },
   "metadata": {
     "render": {
-      "version": 1
+      "version": 2
     },
-    "total_pages": 2194
+    "total_pages": 2228
   }
 }

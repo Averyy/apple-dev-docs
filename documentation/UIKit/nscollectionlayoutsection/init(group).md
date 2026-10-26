@@ -30,6 +30,8 @@ convenience init(group: NSCollectionLayoutGroup)
   Creates a list section with the specified list configuration and layout environment.
 - [class func orthogonalLayoutSectionForMediaItems() -> NSCollectionLayoutSection](./orthogonallayoutsectionformediaitems%28%29.md)
   Creates an orthogonally scrolling section with system default spacing.
+- [+ sectionWithListConfiguration:layoutEnvironment:](./sectionwithlistconfiguration_layoutenvironment_.md)
+  Creates a list section with the specified list configuration and layout environment.
 
 
 ---

@@ -45,6 +45,8 @@ This class is used to present a view for posting assets to a shared album from A
   The identifier of the shared album that was posted to.
 - [var delegate: (any PHSharedAlbumPostingViewController.Delegate)?](./phsharedalbumpostingviewcontroller/delegate-swift.property.md)
   The delegate to respond to `PHSharedAlbumPostingViewController` events.
+### Instance Methods
+- [- initWithItems:defaultAlbumIdentifier:photoLibrary:](./phsharedalbumpostingviewcontroller/initwithitems_defaultalbumidentifier_photolibrary_.md)
 
 ## Relationships
 

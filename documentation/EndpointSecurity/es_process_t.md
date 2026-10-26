@@ -80,6 +80,7 @@ Endpoint Security provides clients the current state of the CS flags in the [`co
 - [var cs_validation_category: es_cs_validation_category_t](./es_process_t/cs_validation_category.md)
   es_cs_validation_category
 - [var reserved: (UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8)](./es_process_t/reserved-1o3sp.md)
+- [reserved](./es_process_t/reserved-5t1sy.md)
 
 ## See Also
 

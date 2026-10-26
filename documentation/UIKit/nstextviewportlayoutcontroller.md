@@ -55,6 +55,9 @@ A viewport is a rectangular area within a flipped coordinate system expanding al
   Performs layout in the viewport.
 - [func relocateViewport(to: any NSTextLocation) -> CGFloat](./nstextviewportlayoutcontroller/relocateviewport%28to%29.md)
   Relocates the viewport to the location you specify.
+### Instance Methods
+- [- renderingSurfaceForKey:](./nstextviewportlayoutcontroller/renderingsurfaceforkey_.md)
+  Returns a rendering surface corresponding to the specified key.
 
 ## Relationships
 

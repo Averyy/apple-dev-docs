@@ -44,6 +44,10 @@ This property may contain more that one element if the variant contains a collec
   Constants that describe a video variant’s dynamic range.
 - [AVAssetVariant.VideoAttributes.LayoutAttributes](./layoutattributes.md)
   Attributes that describe the layout of video content.
+- [codecTypes](../../avassetvariantvideoattributes/codectypes.md)
+  The video sample codec types present in the variant’s renditions.
+- [nominalFrameRate](../../avassetvariantvideoattributes/nominalframerate.md)
+  The nominal frame rate of the variant’s renditions.
 
 
 ---

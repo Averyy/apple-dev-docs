@@ -114,6 +114,7 @@ This class provides login configuration information for platform single sign-on.
 - [var loginRequestHPKEPreSharedKey: Data?](./asauthorizationproviderextensionloginconfiguration/loginrequesthpkepresharedkey.md)
 - [var loginRequestHPKEPreSharedKeyID: Data?](./asauthorizationproviderextensionloginconfiguration/loginrequesthpkepresharedkeyid.md)
 - [var serverNonceExpirationTime: NSNumber](./asauthorizationproviderextensionloginconfiguration/servernonceexpirationtime.md)
+- [jwksTrustedRootCertificates](./asauthorizationproviderextensionloginconfiguration/jwkstrustedrootcertificates-605jm.md)
 ### Instance Methods
 - [func setCustomKeyExchangeRequestBodyClaims([String : Any]) throws](./asauthorizationproviderextensionloginconfiguration/setcustomkeyexchangerequestbodyclaims%28_%29.md)
 - [func setCustomKeyExchangeRequestHeaderClaims([String : Any]) throws](./asauthorizationproviderextensionloginconfiguration/setcustomkeyexchangerequestheaderclaims%28_%29.md)

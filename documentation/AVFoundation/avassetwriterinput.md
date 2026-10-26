@@ -41,6 +41,10 @@ You can use an asset writer input to create tracks in a QuickTime movie file tha
   Creates an input to append sample buffers of the specified type to the output file.
 - [init(mediaType: AVMediaType, outputSettings: [String : Any]?, sourceFormatHint: CMFormatDescription?)](./avassetwriterinput/init%28mediatype,outputsettings,sourceformathint%29.md)
   Creates an input that appends sample buffers of the specified type and format hint to the output file.
+- [+ assetWriterInputWithMediaType:outputSettings:](./avassetwriterinput/assetwriterinputwithmediatype_outputsettings_.md)
+  Returns a new input to append sample buffers of the specified type to the output file.
+- [+ assetWriterInputWithMediaType:outputSettings:sourceFormatHint:](./avassetwriterinput/assetwriterinputwithmediatype_outputsettings_sourceformathint_.md)
+  Returns a new input that appends sample buffers of the specified type and format hint to the output file.
 ### Configuring presentation
 - [var naturalSize: CGSize](./avassetwriterinput/naturalsize.md)
   The natural display dimensions of the output’s visual media.

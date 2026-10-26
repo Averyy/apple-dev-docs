@@ -27,12 +27,12 @@ If a life-cycle event affects the token — for example, the card’s expiration
 ## Topics
 
 ### Essentials
-- [Adding merchant token usage information](https://developer.apple.com/documentation/applepaymerchanttokenmanagementapi/adding-merchant-token-usage-information)
+- [Adding merchant token usage information](../ApplePayMerchantTokenManagementAPI/adding-merchant-token-usage-information.md)
   Create directories and add files, images, and localization for your merchant token usage information package.
 - [Apple Pay Merchant Token Usage Information API](../ApplePayMerchantTokenUsageInformation/ApplePayMerchantTokenUsageInformation.md)
   Add details about your merchant token usage information package.
 ### Merchant token notification handling
-- [Receiving and handling merchant token notifications](https://developer.apple.com/documentation/applepaymerchanttokenmanagementapi/receiving-and-handling-merchant-token-notifications)
+- [Receiving and handling merchant token notifications](../ApplePayMerchantTokenManagementAPI/receiving-and-handling-merchant-token-notifications.md)
   Implement an endpoint to receive and handle merchant token life-cycle updates from Apple Pay.
 - [Send Merchant Token Event](./send-merchant-token-event.md)
   Receive and handle merchant token life-cycle updates from Apple Pay.

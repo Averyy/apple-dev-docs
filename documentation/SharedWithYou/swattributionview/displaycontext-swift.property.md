@@ -45,6 +45,8 @@ Set the `displayContext` prior to adding this view to your view hierarchy.
   A width the system uses to constrain the view contents.
 - [var supplementalMenu: UIMenu?](./supplementalmenu.md)
   A supplemental menu to augment the attribution view’s existing menu.
+- [enablesMarquee](./enablesmarquee.md)
+  Automatically enables a marquee effect.
 
 
 ---

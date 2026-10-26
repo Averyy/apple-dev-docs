@@ -62,8 +62,12 @@ enum NSFontDescriptorSymbolicTraits : uint32_t;
   The font’s characters simulate handwriting.
 - [static var classSymbolic: NSFontDescriptor.SymbolicTraits](./symbolictraits-swift.struct/classsymbolic.md)
   The font’s characters consist mainly of symbols rather than letters and numbers.
+- [NSFontDescriptorClassUnknown](../nsfontdescriptorsymbolictraits/nsfontdescriptorclassunknown.md)
+  The font has no design classification.
 ### Initializers
 - [init(rawValue: UInt32)](./symbolictraits-swift.struct/init%28rawvalue%29.md)
+### Enumeration Cases
+- [NSFontDescriptorTraitEmphasized](../nsfontdescriptorsymbolictraits/nsfontdescriptortraitemphasized.md)
 
 ## Relationships
 

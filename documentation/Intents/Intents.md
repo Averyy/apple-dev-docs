@@ -110,11 +110,16 @@ Intents is a [SiriKit](../SiriKit/SiriKit.md) framework you use to support inter
   A parameter of an interaction object.
 ### Protocols
 - [protocol INIntentSetImageKeyPath](./inintentsetimagekeypath.md)
+### Variables
+- [INCarChargingConnectorTypeNACSAC](./incar/chargingconnectortype/nacsac.md)
+- [INCarChargingConnectorTypeNACSDC](./incar/chargingconnectortype/nacsdc.md)
+### Enumerations
+- [INStickerType](./insticker/stickertype.md)
 
 ## See Also
 
 ### Frameworks
-- [IntentsUI](https://developer.apple.com/documentation/intentsui)
+- [IntentsUI](../IntentsUI/IntentsUI.md)
   Customize content in the interface for Siri and Maps.
 
 

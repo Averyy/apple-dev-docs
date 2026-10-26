@@ -21,9 +21,9 @@ protocol FxParameterCreationAPI_v5
 
 ## Mentions
 
-- [Adding parameters to plug-ins](https://developer.apple.com/documentation/professional-video-applications/adding-parameters-to-plug-ins)
-- [Managing color space and gamut in plug-ins](https://developer.apple.com/documentation/professional-video-applications/managing-color-space-and-gamut-in-plug-ins)
-- [Using FxPlug APIs](https://developer.apple.com/documentation/professional-video-applications/using-fxplug-apis)
+- [Adding parameters to plug-ins](../Professional-Video-Applications/adding-parameters-to-plug-ins.md)
+- [Managing color space and gamut in plug-ins](../Professional-Video-Applications/managing-color-space-and-gamut-in-plug-ins.md)
+- [Using FxPlug APIs](../Professional-Video-Applications/using-fxplug-apis.md)
 
 #### Overview
 

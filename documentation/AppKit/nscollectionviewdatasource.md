@@ -118,6 +118,10 @@ After returning an item object from your [`collectionView(_:itemForRepresentedOb
   The object you use to manage data and provide items for a collection view.
 - [struct NSDiffableDataSourceSnapshot](./nsdiffabledatasourcesnapshot-swift.struct.md)
   A representation of the state of the data in a view at a specific point in time.
+- [NSCollectionViewDiffableDataSource](./nscollectionviewdiffabledatasourcereference.md)
+  The object you use to manage data and provide items for a collection view.
+- [NSDiffableDataSourceSnapshot](./nsdiffabledatasourcesnapshotreference.md)
+  A representation of the state of the data in a view at a specific point in time.
 
 
 ---

@@ -57,6 +57,8 @@ enum HKAppleSleepingBreathingDisturbancesClassification : NSInteger;
   A category sample type for sleep analysis information.
 - [static let appleSleepingWristTemperature: HKQuantityTypeIdentifier](./hkquantitytypeidentifier/applesleepingwristtemperature.md)
   A quantity sample type that records the wrist temperature during sleep.
+- [HKCategoryValueSleepAnalysisAsleepValues](./hkcategoryvaluesleepanalysisasleepvalues.md)
+- [HKAppleSleepingBreathingDisturbancesClassificationForQuantity](./hkapplesleepingbreathingdisturbancesclassificationforquantity.md)
 
 
 ---

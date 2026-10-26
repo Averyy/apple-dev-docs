@@ -37,6 +37,14 @@ class MDLAnimatedQuaternionArray
 - [func reset(floatQuaternionArray: [simd_quatf], atTimes: [TimeInterval])](./mdlanimatedquaternionarray/reset%28floatquaternionarray,attimes%29.md)
 - [func set(doubleQuaternionArray: [simd_quatd], atTime: TimeInterval)](./mdlanimatedquaternionarray/set%28doublequaternionarray,attime%29.md)
 - [func set(floatQuaternionArray: [simd_quatf], atTime: TimeInterval)](./mdlanimatedquaternionarray/set%28floatquaternionarray,attime%29.md)
+- [- getDoubleQuaternionArray:maxCount:](./mdlanimatedquaternionarray/getdoublequaternionarray_maxcount_.md)
+- [- getDoubleQuaternionArray:maxCount:atTime:](./mdlanimatedquaternionarray/getdoublequaternionarray_maxcount_attime_.md)
+- [- getFloatQuaternionArray:maxCount:](./mdlanimatedquaternionarray/getfloatquaternionarray_maxcount_.md)
+- [- getFloatQuaternionArray:maxCount:atTime:](./mdlanimatedquaternionarray/getfloatquaternionarray_maxcount_attime_.md)
+- [- resetWithDoubleQuaternionArray:count:atTimes:count:](./mdlanimatedquaternionarray/resetwithdoublequaternionarray_count_attimes_count_.md)
+- [- resetWithFloatQuaternionArray:count:atTimes:count:](./mdlanimatedquaternionarray/resetwithfloatquaternionarray_count_attimes_count_.md)
+- [- setDoubleQuaternionArray:count:atTime:](./mdlanimatedquaternionarray/setdoublequaternionarray_count_attime_.md)
+- [- setFloatQuaternionArray:count:atTime:](./mdlanimatedquaternionarray/setfloatquaternionarray_count_attime_.md)
 
 ## Relationships
 

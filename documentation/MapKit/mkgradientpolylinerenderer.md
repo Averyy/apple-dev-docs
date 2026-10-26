@@ -41,6 +41,10 @@ The gradient displays itself along the direction of the line.
   An array that represents the gradient’s color transition points.
 - [var locations: [CGFloat]](./mkgradientpolylinerenderer/locations-7k6qz.md)
   An array of location indexes that correspond to their respective colors.
+- [- setColors:atLocations:](./mkgradientpolylinerenderer/setcolors_atlocations_.md)
+  Sets the colors and corresponding unit distance values to create gradients.
+- [locations](./mkgradientpolylinerenderer/locations-50knt.md)
+  An array of location indices corresponding to their respective colors.
 
 ## Relationships
 

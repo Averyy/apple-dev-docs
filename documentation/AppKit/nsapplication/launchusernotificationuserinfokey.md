@@ -36,6 +36,8 @@ NSUserNotification *userNotification = [[myNotification userInfo]
 ### Keys
 - [class let launchIsDefaultUserInfoKey: String](./launchisdefaultuserinfokey.md)
   A Boolean value that indicates if the app launch is a default launch.
+- [NSApplicationLaunchRemoteNotificationKey](../nsapplicationlaunchremotenotificationkey.md)
+  Use this key to access the JSON push-notification payload from the user info dictionary of the `didFinishLaunchingNotification` notification.
 
 
 ---

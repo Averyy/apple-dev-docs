@@ -31,6 +31,30 @@ typedef struct { ... } simd_half2x3;
   Returns a new matrix with the specified columns.
 - [func simd_matrix_from_rows(simd_half2, simd_half2, simd_half2) -> simd_half2x3](./simd_matrix_from_rows%28_,_,_%29-6y100.md)
   Returns a new matrix with the specified rows.
+### Math functions
+- [simd_add](./simd_add-66bt1.md)
+  Returns the sum of two matrices.
+- [simd_sub](./simd_sub-412d0.md)
+  Returns the difference of two matrices.
+### Matrix-scalar multiplication functions
+- [matrix_scale](./matrix_scale-3fyso.md)
+  Returns the product of a scalar value and a matrix.
+### Matrix-vector multiplication functions
+- [matrix_multiply](./matrix_multiply-1pxzt.md)
+  Returns the product of a vector and a matrix.
+### Equality functions
+- [simd_equal](./simd_equal-1qead.md)
+  Returns true if every element in a matrix is exactly equal to the corresponding element in a second matrix.
+- [simd_almost_equal_elements](./simd_almost_equal_elements-5ca3v.md)
+  Returns true if every element in a matrix is within a specified tolerance to the corresponding element in a second matrix.
+- [simd_almost_equal_elements_relative](./simd_almost_equal_elements_relative-30vug.md)
+  Returns true if every element in a matrix is within a specified single-precision relative tolerance to the corresponding element in a second matrix.
+### Linear combination function
+- [simd_linear_combination](./simd_linear_combination-3jc87.md)
+  Returns the linear combination of two scalar values and two matrices.
+### Transpose function
+- [simd_transpose](./simd_transpose-2zxop.md)
+  Returns the transpose of a matrix.
 
 ## Relationships
 

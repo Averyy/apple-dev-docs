@@ -12,7 +12,7 @@ Constants that indicate how to export images to the client app.
 - Mac Catalyst 13.1+ - Deprecated in 27.2
 - visionOS 1.0+ - Deprecated in 27.2
 
-> **Deprecated**: Use [`PHPickerViewController`](https://developer.apple.com/documentation/photosui/phpickerviewcontroller) instead.
+> **Deprecated**: Use [`PHPickerViewController`](../../PhotosUI/phpickerviewcontroller.md) instead.
 
 ## Declaration
 
@@ -51,6 +51,8 @@ enum UIImagePickerControllerImageURLExportPreset : NSInteger;
   The preset to use when preparing images for export to your app.
 - [var videoExportPreset: String](./videoexportpreset.md)
   The preset to use when preparing video for export to your app.
+- [allowsImageEditing](./allowsimageediting.md)
+  A Boolean value that indicates whether the user is allowed to edit a selected image.
 
 
 ---

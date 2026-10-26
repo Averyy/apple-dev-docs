@@ -23,6 +23,8 @@ static simd_short4 simd_make_short4(short other);
   Returns a new vector from the specified scalar values.
 - [func simd_make_short4_undef(Int16) -> simd_short4](./simd_make_short4_undef%28_%29-36i14.md)
   Returns a new vector with the first element set to a scalar value, and other elements undefined.
+- [vector4](./vector4-42vpa.md)
+  Returns a new vector from the specified scalar values.
 
 
 ---

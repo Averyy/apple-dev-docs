@@ -27,6 +27,12 @@ init(credentialIdentity: ASPasswordCredentialIdentity)
 
 - `credentialIdentity`: The credential identity for the requested password.
 
+## See Also
+
+### Creating password credential requests
+- [+ requestWithCredentialIdentity:](./requestwithcredentialidentity_.md)
+  Creates and initializes a password credential request object.
+
 
 ---
 

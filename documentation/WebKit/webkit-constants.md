@@ -139,6 +139,36 @@ WebKit constants affecting multiple classes.
   Posted by a WebView object when the load has finished.
 - [static let WebViewProgressStarted: NSNotification.Name](../Foundation/nsnotification/name-swift.struct/webviewprogressstarted.md)
   Posted by a WebView object when a load begins, including a load that is initiated in a subframe.
+- [WebHistoryAllItemsRemovedNotification](./webhistoryallitemsremovednotification.md)
+  Posted when all history items have been removed from the web history.
+- [WebHistoryItemChangedNotification](./webhistoryitemchangednotification.md)
+  Posted by a WebHistoryItem object when the value of the history item’s title, alternate title, URL strings, or last visited interval changes.
+- [WebHistoryItemsAddedNotification](./webhistoryitemsaddednotification.md)
+  Posted when history items have been added to a web history.
+- [WebHistoryItemsRemovedNotification](./webhistoryitemsremovednotification.md)
+  Posted when items have been removed from the web history.
+- [WebHistoryLoadedNotification](./webhistoryloadednotification.md)
+  Posted when web history items have been loaded from a URL.
+- [WebHistorySavedNotification](./webhistorysavednotification.md)
+  Posted when web history items have been saved to a URL.
+- [WebPreferencesChangedNotification](./webpreferenceschangednotification.md)
+  Posted when the web preference settings are changed.
+- [WebViewDidBeginEditingNotification](./webviewdidbegineditingnotification.md)
+  Posted when a web view begins any operation that changes its contents in response to user editing.
+- [WebViewDidChangeNotification](./webviewdidchangenotification.md)
+  Posted when a web view performs any operation that changes its contents in response to user editing.
+- [WebViewDidChangeSelectionNotification](./webviewdidchangeselectionnotification.md)
+  Posted when a web view changes its typing selection.
+- [WebViewDidChangeTypingStyleNotification](./webviewdidchangetypingstylenotification.md)
+  Posted when a web view changes its typing style.
+- [WebViewDidEndEditingNotification](./webviewdidendeditingnotification.md)
+  Posted when a web view ends any operation that changes its contents in response to user editing.
+- [WebViewProgressEstimateChangedNotification](./webviewprogressestimatechangednotification.md)
+  Posted by a WebView object when the estimated progress value of a load changes.
+- [WebViewProgressFinishedNotification](./webviewprogressfinishednotification.md)
+  Posted by a WebView object when the load has finished.
+- [WebViewProgressStartedNotification](./webviewprogressstartednotification.md)
+  Posted by a WebView object when a load begins, including a load that is initiated in a subframe.
 ### Constants
 - [let WKErrorDomain: String](./wkerrordomain.md)
   String that identifies the WebKit error domain.

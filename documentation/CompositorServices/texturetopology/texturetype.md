@@ -29,6 +29,12 @@ A texture might store the content of one view or multiple views. For example, a 
 ### Getting the layer’s texture topology
 - [var arrayLength: UInt64](./arraylength.md)
   The number of items in the texture array.
+- [cp_layer_renderer_properties_get_texture_topology_count](../cp_layer_renderer_properties_get_texture_topology_count.md)
+  Returns the number of texture topologies available for you to inspect.
+- [cp_layer_renderer_properties_get_texture_topology](../cp_layer_renderer_properties_get_texture_topology.md)
+  Retrieves the texture topology at the specified index in the layer’s properties.
+- [cp_texture_topology_t](../cp_texture_topology_t.md)
+  A type that specifies the organization of one of the drawable’s textures.
 
 
 ---

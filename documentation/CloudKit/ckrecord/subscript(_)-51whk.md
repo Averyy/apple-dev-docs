@@ -60,6 +60,30 @@ The object for the specified key, or `nil` if no such key exists in the record.
   A protocol for managing the key-value pairs of a CloudKit record.
 - [typealias CKRecordValue](../ckrecordvalue-swift.typealias.md)
   A data type for objects that CloudKit stores on the server.
+- [- objectForKey:](./objectforkey_.md)
+  Returns the object that the record stores for the specified key.
+- [- setObject:forKey:](./setobject_forkey_.md)
+  Stores an object in the record using the specified key.
+- [- setObject:forKeyedSubscript:](./setobject_forkeyedsubscript_.md)
+  Stores an object in the record using the specified key.
+- [- allKeys](./allkeys.md)
+  Returns an array of the record’s keys.
+- [- changedKeys](./changedkeys.md)
+  Returns an array of keys with recent changes to their values.
+- [CKRecordCreationDateKey](../ckrecordcreationdatekey.md)
+  A key constant that a record uses for its CKRecord.creationDate.
+- [CKRecordCreatorUserRecordIDKey](../ckrecordcreatoruserrecordidkey.md)
+  A key constant that a record uses for its CKRecord.creatorUserRecordID.
+- [CKRecordLastModifiedUserRecordIDKey](../ckrecordlastmodifieduserrecordidkey.md)
+  A key constant that a record uses for its CKRecord.lastModifiedUserRecordID.
+- [CKRecordModificationDateKey](../ckrecordmodificationdatekey.md)
+  A key constant that a record uses for its CKRecord.modificationDate.
+- [CKRecordRecordIDKey](../ckrecordrecordidkey.md)
+  A key constant that a record uses for its CKRecord.recordID.
+- [CKRecordParentKey](../ckrecordparentkey-2kx8l.md)
+  The key constant that a record uses for its CKRecord.parent.
+- [CKRecordShareKey](../ckrecordsharekey-rrat.md)
+  The key constant that a record uses for its CKRecord.share.
 
 
 ---

@@ -46,6 +46,10 @@ The default scissor rectangle is the same size as the current render attachment,
   Configures the render pipeline with multiple viewports that apply transformations and clipping rectangles.
 - [func setScissorRects([MTLScissorRect])](./setscissorrects%28_%29.md)
   Configures multiple rectangles for the fragment scissor test.
+- [- setViewports:count:](./setviewports_count_.md)
+  Configures the render pipeline with multiple viewports that apply transformations and clipping rectangles.
+- [- setScissorRects:count:](./setscissorrects_count_.md)
+  Configures multiple rectangles for the fragment scissor test.
 
 
 ---

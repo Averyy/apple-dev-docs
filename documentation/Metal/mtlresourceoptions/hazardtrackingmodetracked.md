@@ -33,6 +33,8 @@ For more information, see [`MTLHazardTrackingMode.tracked`](../mtlhazardtracking
 ### Specifying hazard tracking
 - [static var hazardTrackingModeUntracked: MTLResourceOptions](./hazardtrackingmodeuntracked.md)
   A resource option that instructs Metal to ignore memory hazards for a resource at runtime.
+- [MTLResourceHazardTrackingModeDefault](./mtlresourcehazardtrackingmodedefault.md)
+  An option specifying that the default tracking mode should be used.
 
 
 ---

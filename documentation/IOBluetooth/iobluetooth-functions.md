@@ -9,6 +9,8 @@
 - [func IOBluetoothNSStringFromDeviceAddressColon(UnsafePointer<BluetoothDeviceAddress>!) -> String!](./iobluetoothnsstringfromdeviceaddresscolon%28_%29.md)
 - [func IOBluetoothPackDataList(UnsafeMutableRawPointer!, UnsafePointer<CChar>!, CVaListPointer) -> Int](./iobluetoothpackdatalist%28_,_,_%29.md)
 - [func IOBluetoothUnpackDataList(Int, UnsafeRawPointer!, UnsafePointer<CChar>!, CVaListPointer) -> Int](./iobluetoothunpackdatalist%28_,_,_,_%29.md)
+- [OBEXSessionGetAvailableCommandPayloadLength](./obexsessiongetavailablecommandpayloadlength.md)
+  Gets space available for your data for a particular command response you are trying to send.
 
 ## See Also
 

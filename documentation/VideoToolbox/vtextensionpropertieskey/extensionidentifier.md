@@ -34,6 +34,8 @@ This key points to a `CFStringRef` value with the extension identifier, correspo
   A dictionary key for the localized extension name.
 - [static let extensionURL: VTExtensionPropertiesKey](./extensionurl.md)
   A dictionary key for the URL of the extension.
+- [kVTExtensionProperties_CodecNameKey](../kvtextensionproperties_codecnamekey.md)
+  A dictionary key for the user readable name string of the codec.
 
 
 ---

@@ -29,6 +29,16 @@ var reversesTitleShadowWhenHighlighted: Bool { get set }
 
 If [`true`](../../Swift/true.md), the shadow changes from engrave to emboss appearance when highlighted. The default value is [`false`](../../Swift/false.md).
 
+## See Also
+
+### Deprecated title effects
+- [font](./font.md)
+  The font used to display text on the button.
+- [lineBreakMode](./linebreakmode.md)
+  The line break mode to use when drawing text.
+- [titleShadowOffset](./titleshadowoffset.md)
+  The offset of the shadow used to display the receiver’s title.
+
 
 ---
 

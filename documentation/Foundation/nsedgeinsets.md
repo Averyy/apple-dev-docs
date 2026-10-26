@@ -71,6 +71,8 @@ A common use for this structure is to describe the relationship between a viewâ€
   A rectangle.
 - [struct AffineTransform](./affinetransform.md)
   A graphics coordinate transformation.
+- [NSAffineTransform](./nsaffinetransform.md)
+  A graphics coordinate transformation.
 
 
 ---

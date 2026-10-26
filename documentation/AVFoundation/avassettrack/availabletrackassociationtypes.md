@@ -26,6 +26,14 @@ var availableTrackAssociationTypes: [AVAssetTrack.AssociationType] { get }
 @property (nonatomic, readonly) NSArray<NSString *> * availableTrackAssociationTypes;
 ```
 
+## See Also
+
+### Accessing track associations
+- [- associatedTracksOfType:](./associatedtracks%28oftype%29.md)
+  Returns an array of associated tracks that have the specified association type.
+- [AVTrackAssociationType](./associationtype.md)
+  Constants that define track association types.
+
 
 ---
 

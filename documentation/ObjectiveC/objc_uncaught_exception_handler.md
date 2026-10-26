@@ -37,6 +37,8 @@ typedef void (*)(id) objc_uncaught_exception_handler;
 - [typealias objc_hook_lazyClassNamer](./objc_hook_lazyclassnamer.md)
 - [typealias objc_objectptr_t](./objc_objectptr_t.md)
 - [typealias objc_zone_t](./objc_zone_t.md)
+- [NSUInteger](./nsuinteger.md)
+  Describes an unsigned integer.
 
 
 ---

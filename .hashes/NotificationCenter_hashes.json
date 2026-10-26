@@ -240,6 +240,11 @@
       "file_path": "documentation/NotificationCenter/ncwidgetsearchviewdelegate/widgetsearchtermcleared(_).md",
       "hash": "34c19f7689be10c29cefe351d820387ea55f4cda9d2c40c05dd1186fa38504fd"
     },
+    "https://developer.apple.com/documentation/notificationcenter/notification_center_extern": {
+      "etag": "\"ae8-65d560abeb632-df\"",
+      "file_path": "documentation/NotificationCenter/notification_center_extern.md",
+      "hash": "4215331b439dceaf570c59406745839ba3add8150551bf9241227f2b5716c624"
+    },
     "https://developer.apple.com/tutorials/data/documentation/NotificationCenter.json": {
       "etag": "\"3227-65d560abeb632-df\"",
       "file_path": "documentation/NotificationCenter/NotificationCenter.md",
@@ -479,12 +484,17 @@
       "etag": "\"3387-65d560abeb632-df\"",
       "file_path": "documentation/NotificationCenter/ncwidgetsearchviewdelegate/widgetsearchtermcleared(_).md",
       "hash": "34c19f7689be10c29cefe351d820387ea55f4cda9d2c40c05dd1186fa38504fd"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/notificationcenter/notification_center_extern.json": {
+      "etag": "\"ae8-65d560abeb632-df\"",
+      "file_path": "documentation/NotificationCenter/notification_center_extern.md",
+      "hash": "4215331b439dceaf570c59406745839ba3add8150551bf9241227f2b5716c624"
     }
   },
   "metadata": {
     "render": {
-      "version": 1
+      "version": 2
     },
-    "total_pages": 96
+    "total_pages": 98
   }
 }

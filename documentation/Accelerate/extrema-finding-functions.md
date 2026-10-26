@@ -5,6 +5,14 @@
 
 Extract the values from a vector that fall outside a range.
 
+## Topics
+
+### Vector-to-Vector Extrema Finding
+- [vDSP_venvlp](./vdsp_venvlp.md)
+  Calculates whether each element in a single-precision vector falls within a specified range.
+- [vDSP_venvlpD](./vdsp_venvlpd.md)
+  Calculates whether each element in a double-precision vector falls within a specified range.
+
 ## See Also
 
 ### Vector-to-vector extrema functions

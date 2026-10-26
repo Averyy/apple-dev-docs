@@ -83,6 +83,9 @@ You don’t create a [`WKHTTPCookieStore`](./wkhttpcookiestore.md) object direct
   An interface that WebKit uses to request custom resources from your app.
 - [static let readAccessURL: NSAttributedString.DocumentReadingOptionKey](../Foundation/nsattributedstring/documentreadingoptionkey/readaccessurl.md)
   The local files WebKit can access when loading content.
+- [NSReadAccessURLDocumentOption](./nsreadaccessurldocumentoption.md)
+- [WKCookiePolicy](./wkhttpcookiestore/cookiepolicy.md)
+  An enumeration with cases that indicate whether a cookie store allows cookie storage.
 
 
 ---

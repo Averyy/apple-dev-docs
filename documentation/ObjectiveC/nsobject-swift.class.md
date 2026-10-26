@@ -39,11 +39,25 @@ class NSObject
   Returns the object returned by `copy(with:)`.
 - [func mutableCopy() -> Any](./nsobject-swift.class/mutablecopy%28%29.md)
   Returns the object returned by `mutableCopy(with:)` where the zone is `nil`.
+- [+ alloc](./nsobject-swift.class/alloc.md)
+  Returns a new instance of the receiving class.
+- [+ allocWithZone:](./nsobject-swift.class/allocwithzone_.md)
+  Returns a new instance of the receiving class.
+- [+ copyWithZone:](./nsobject-swift.class/copywithzone_.md)
+  Returns the receiver.
+- [+ mutableCopyWithZone:](./nsobject-swift.class/mutablecopywithzone_.md)
+  Returns the receiver.
+- [- dealloc](./nsobject-swift.class/dealloc.md)
+  Deallocates the memory occupied by the receiver.
+- [+ new](./nsobject-swift.class/new.md)
+  Allocates a new instance of the receiving class, sends it an [`init`](./nsobject-swift.class/init%28%29.md) message, and returns the initialized object.
 ### Identifying Classes
 - [class func superclass() -> AnyClass?](./nsobject-swift.class/superclass%28%29.md)
   Returns the class object for the receiver’s superclass.
 - [class func isSubclass(of: AnyClass) -> Bool](./nsobject-swift.class/issubclass%28of%29.md)
   Returns a Boolean value that indicates whether the receiving class is a subclass of, or identical to, a given class.
+- [+ class](./nsobject-swift.class/class.md)
+  Returns the class object.
 ### Testing Class Functionality
 - [class func instancesRespond(to: Selector!) -> Bool](./nsobject-swift.class/instancesrespond%28to%29.md)
   Returns a Boolean value that indicates whether instances of the receiver are capable of responding to a given selector.
@@ -55,6 +69,10 @@ class NSObject
   Locates and returns the address of the receiver’s implementation of a method so it can be called as a function.
 - [class func instanceMethod(for: Selector!) -> IMP!](./nsobject-swift.class/instancemethod%28for%29.md)
   Locates and returns the address of the implementation of the instance method identified by a given selector.
+- [+ instanceMethodSignatureForSelector:](./nsobject-swift.class/instancemethodsignatureforselector_.md)
+  Returns an `NSMethodSignature` object that contains a description of the instance method identified by a given selector.
+- [- methodSignatureForSelector:](./nsobject-swift.class/methodsignatureforselector_.md)
+  Returns an `NSMethodSignature` object that contains a description of the method identified by a given selector.
 ### Describing Objects
 - [class func description() -> String](./nsobject-swift.class/description%28%29.md)
   Returns a string that represents the contents of the receiving class.
@@ -83,6 +101,8 @@ class NSObject
 ### Forwarding Messages
 - [func forwardingTarget(for: Selector!) -> Any?](./nsobject-swift.class/forwardingtarget%28for%29.md)
   Returns the object to which unrecognized messages should first be directed.
+- [- forwardInvocation:](./nsobject-swift.class/forwardinvocation_.md)
+  Overridden by subclasses to forward messages to other objects.
 ### Dynamically Resolving Methods
 - [class func resolveClassMethod(Selector!) -> Bool](./nsobject-swift.class/resolveclassmethod%28_%29.md)
   Dynamically provides an implementation for a given selector for a class method.
@@ -114,6 +134,8 @@ class NSObject
   Sets the receiver’s version number.
 - [class func version() -> Int](./nsobject-swift.class/version%28%29.md)
   Returns the version number assigned to the class.
+- [classForPortCoder](./nsobject-swift.class/classforportcoder.md)
+  Class to substitute for the receiver in distribution encoding.
 ### Working with Class Descriptions
 - [var attributeKeys: [String]](./nsobject-swift.class/attributekeys.md)
   An array of `NSString` objects containing the names of immutable values that instances of the receiver’s class contain.
@@ -478,12 +500,96 @@ data into a MTLTexture when the image object is rendered.
 - [func workflowControllerDidStop(AMWorkflowController)](./nsobject-swift.class/workflowcontrollerdidstop%28_%29.md)
 - [func workflowControllerWillRun(AMWorkflowController)](./nsobject-swift.class/workflowcontrollerwillrun%28_%29.md)
 - [func workflowControllerWillStop(AMWorkflowController)](./nsobject-swift.class/workflowcontrollerwillstop%28_%29.md)
+- [- URL:resourceDataDidBecomeAvailable:](./nsobject-swift.class/url_resourcedatadidbecomeavailable_.md)
+- [- URL:resourceDidFailLoadingWithReason:](./nsobject-swift.class/url_resourcedidfailloadingwithreason_.md)
+- [- URLResourceDidCancelLoading:](./nsobject-swift.class/urlresourcedidcancelloading_.md)
+- [- URLResourceDidFinishLoading:](./nsobject-swift.class/urlresourcedidfinishloading_.md)
+- [- application:delegateHandlesKey:](./nsobject-swift.class/application_delegatehandleskey_.md)
+  Sent by Cocoa’s built-in scripting support during execution of `get` or `set` script commands to find out if the delegate can handle operations on the specified key-value key.
+- [- attributedStringForIdentityPropertiesWithNames:inRecord:comparisonRecords:firstLineAttributes:secondLineAttributes:](./nsobject-swift.class/attributedstringforidentitypropertieswithnames_inrecord_comparisonrecords_firstlineattributes_secondlineattributes_.md)
+- [- attributedStringForPropertiesWithNames:inRecord:comparisonRecords:defaultAttributes:](./nsobject-swift.class/attributedstringforpropertieswithnames_inrecord_comparisonrecords_defaultattributes_.md)
+- [- browserAccessibilityImageDataSize](./nsobject-swift.class/browseraccessibilityimagedatasize-c.method.md)
+- [- changeColor:](./nsobject-swift.class/changecolor_.md)
+  Sent to the first responder when the user selects a color in an `NSColorPanel` object.
+- [- changeFont:](./nsobject-swift.class/changefont_.md)
+  Informs responders of a font change.
+- [- commitEditing](./nsobject-swift.class/commitediting.md)
+  Returns whether the receiver was able to commit any pending edits.
+- [- commitEditingAndReturnError:](./nsobject-swift.class/commiteditingandreturnerror_.md)
+  Attempt to commit pending edits, returning an error in the case of failure.
+- [- commitEditingWithDelegate:didCommitSelector:contextInfo:](./nsobject-swift.class/commiteditingwithdelegate_didcommitselector_contextinfo_.md)
+  Attempt to commit any currently edited results of the receiver.
+- [- controlTextDidBeginEditing:](./nsobject-swift.class/controltextdidbeginediting_.md)
+  Sent when a control with editable text begins an editing session.
+- [- controlTextDidChange:](./nsobject-swift.class/controltextdidchange_.md)
+  Sent when the text in the receiving control changes.
+- [- controlTextDidEndEditing:](./nsobject-swift.class/controltextdidendediting_.md)
+  Sent when a control with editable text ends an editing session.
+- [- discardEditing](./nsobject-swift.class/discardediting.md)
+  Causes the receiver to discard any changes, restoring the previous values.
+- [- draggedImage:beganAt:](./nsobject-swift.class/draggedimage_beganat_.md)
+- [- draggedImage:endedAt:deposited:](./nsobject-swift.class/draggedimage_endedat_deposited_.md)
+- [- draggedImage:endedAt:operation:](./nsobject-swift.class/draggedimage_endedat_operation_.md)
+- [- draggedImage:movedTo:](./nsobject-swift.class/draggedimage_movedto_.md)
+- [- draggingSourceOperationMaskForLocal:](./nsobject-swift.class/draggingsourceoperationmaskforlocal_.md)
+- [- getL2CAPChannelRef](./nsobject-swift.class/getl2capchannelref.md)
+- [- getOpenGLBufferContext:pixelFormat:](./nsobject-swift.class/getopenglbuffercontext_pixelformat_.md)
+- [- getPixelBufferPixelFormat:](./nsobject-swift.class/getpixelbufferpixelformat_.md)
+- [- ignoreModifierKeysWhileDragging](./nsobject-swift.class/ignoremodifierkeyswhiledragging.md)
+- [- layer:shouldInheritContentsScale:fromWindow:](./nsobject-swift.class/layer_shouldinheritcontentsscale_fromwindow_.md)
+  Invoked when a resolution changes occurs for the window that hosts the layer.
+- [- objectDidBeginEditing:](./nsobject-swift.class/objectdidbeginediting_.md)
+  This message should be sent to the receiver when `editor` has uncommitted changes that can affect the receiver.
+- [- objectDidEndEditing:](./nsobject-swift.class/objectdidendediting_.md)
+  This message should be sent to the receiver when `editor` has finished editing a property belonging to the receiver.
+- [- panel:compareFilename:with:caseSensitive:](./nsobject-swift.class/panel_comparefilename_with_casesensitive_.md)
+  Controls the ordering of files presented by the `NSSavePanel` object specified.
+- [- panel:directoryDidChange:](./nsobject-swift.class/panel_directorydidchange_.md)
+  Tells the delegate that the user has changed the selected directory in the `NSSavePanel` object specified.
+- [- panel:isValidFilename:](./nsobject-swift.class/panel_isvalidfilename_.md)
+  Gives the delegate the opportunity to validate selected items.
+- [- panel:shouldShowFilename:](./nsobject-swift.class/panel_shouldshowfilename_.md)
+  Gives the delegate the opportunity to filter items that it doesn’t want the user to choose.
+- [- pasteboard:provideDataForType:](./nsobject-swift.class/pasteboard_providedatafortype_.md)
+  Implemented by an owner object to provide promised data.
+- [- pasteboardChangedOwner:](./nsobject-swift.class/pasteboardchangedowner_.md)
+  Notifies a prior owner of the specified pasteboard (and owners of representations on the pasteboard) that the pasteboard has changed owners.
+- [- registerIncomingDataListener:refCon:](./nsobject-swift.class/registerincomingdatalistener_refcon_.md)
+- [- renderIntoOpenGLBuffer:onScreen:forTime:](./nsobject-swift.class/renderintoopenglbuffer_onscreen_fortime_.md)
+  Called for each frame to be sent to Messages. This method will not be called on the main thread.
+- [- renderIntoPixelBuffer:forTime:](./nsobject-swift.class/renderintopixelbuffer_fortime_.md)
+- [- sessionDriver:didNegotiateAndReturnError:](./nsobject-swift.class/sessiondriver_didnegotiateandreturnerror_.md)
+- [- sessionDriver:didPullAndReturnError:](./nsobject-swift.class/sessiondriver_didpullandreturnerror_.md)
+- [- sessionDriver:didPushAndReturnError:](./nsobject-swift.class/sessiondriver_didpushandreturnerror_.md)
+- [- sessionDriver:didReceiveSyncAlertAndReturnError:](./nsobject-swift.class/sessiondriver_didreceivesyncalertandreturnerror_.md)
+- [- sessionDriver:didRegisterClientAndReturnError:](./nsobject-swift.class/sessiondriver_didregisterclientandreturnerror_.md)
+- [- sessionDriver:willFinishSessionAndReturnError:](./nsobject-swift.class/sessiondriver_willfinishsessionandreturnerror_.md)
+- [- sessionDriver:willNegotiateAndReturnError:](./nsobject-swift.class/sessiondriver_willnegotiateandreturnerror_.md)
+- [- sessionDriver:willPullAndReturnError:](./nsobject-swift.class/sessiondriver_willpullandreturnerror_.md)
+- [- sessionDriver:willPushAndReturnError:](./nsobject-swift.class/sessiondriver_willpushandreturnerror_.md)
+- [- sessionDriverDidCancelSession:](./nsobject-swift.class/sessiondriverdidcancelsession_.md)
+- [- sessionDriverDidFinishSession:](./nsobject-swift.class/sessiondriverdidfinishsession_.md)
+- [- sessionDriverWillCancelSession:](./nsobject-swift.class/sessiondriverwillcancelsession_.md)
+- [- tableView:writeRows:toPasteboard:](./nsobject-swift.class/tableview_writerows_topasteboard_.md)
+  Writes the specified rows to the specified pasteboard.
+- [- validModesForFontPanel:](./nsobject-swift.class/validmodesforfontpanel_.md)
+  Returns the mode mask corresponding to the expected font panel mode.
+- [- validateMenuItem:](./nsobject-swift.class/validatemenuitem_.md)
+  Implemented to override the default action of enabling or disabling a specific menu item.
+- [- validateToolbarItem:](./nsobject-swift.class/validatetoolbaritem_.md)
+  If this method is implemented and returns `false`, NSToolbar will disable `theItem`; returning `true` causes `theItem` to be enabled.
+- [- view:stringForToolTip:point:userData:](./nsobject-swift.class/view_stringfortooltip_point_userdata_.md)
+  Returns the tool tip string to be displayed due to the cursor pausing at location `point` within the tool tip rectangle identified by `tag` in the view `view`.
+- [- write:length:](./nsobject-swift.class/write_length_.md)
 ### Type Methods
 - [class func debugDescription() -> String](./nsobject-swift.class/debugdescription%28%29.md)
 - [class func hash() -> Int](./nsobject-swift.class/hash%28%29.md)
+- [+ withL2CAPChannelRef:](./nsobject-swift.class/withl2capchannelref_.md)
 ### Default Implementations
 - [Equatable Implementations](./nsobject-swift.class/equatable-implementations.md)
 - [Hashable Implementations](./nsobject-swift.class/hashable-implementations.md)
+### Instance Variables
+- [isa](./nsobject-swift.class/isa.md)
 
 ## Relationships
 

@@ -925,6 +925,11 @@
       "file_path": "documentation/VideoToolbox/kvtextensiondisablederr.md",
       "hash": "35201368f76cc359ec0232fe43c72bc11fdd25557a25c06c2f62830a4434a699"
     },
+    "https://developer.apple.com/documentation/videotoolbox/kvtextensionproperties_codecnamekey": {
+      "etag": "\"2ffd-65d55d4a71f7a-df\"",
+      "file_path": "documentation/VideoToolbox/kvtextensionproperties_codecnamekey.md",
+      "hash": "57c7e6bd4fd2539720730458aa527776fb06dbd224a449f4934984d0f97a0538"
+    },
     "https://developer.apple.com/documentation/videotoolbox/kvtformatdescriptionchangenotsupportederr": {
       "etag": "\"62b1-65d55d4accb0d-df\"",
       "file_path": "documentation/VideoToolbox/kvtformatdescriptionchangenotsupportederr.md",
@@ -965,6 +970,16 @@
       "file_path": "documentation/VideoToolbox/kvthdrmetadatainsertionmode_requestsdrrangepreservation.md",
       "hash": "0584cca5cba8e52f1c1c48858b4ee2ea626a21c05006ddad8fd10e176a09c43a"
     },
+    "https://developer.apple.com/documentation/videotoolbox/kvthdrperframemetadatagenerationhdrformattype_dolbyvision": {
+      "etag": "\"1e7e-65d55d4ab621f-df\"",
+      "file_path": "documentation/VideoToolbox/kvthdrperframemetadatagenerationhdrformattype_dolbyvision.md",
+      "hash": "27967d7ca03f60225fe79dc69b9d58640f6a80ce9066918bb405b705af9fda9b"
+    },
+    "https://developer.apple.com/documentation/videotoolbox/kvthdrperframemetadatagenerationoptionskey_hdrformats": {
+      "etag": "\"2ee5-65d55d4accb0d-df\"",
+      "file_path": "documentation/VideoToolbox/kvthdrperframemetadatagenerationoptionskey_hdrformats.md",
+      "hash": "f78756fb61a0a6736c4bf2f833c89ed3cf13631108517c1ef72c2276f7eafb86"
+    },
     "https://developer.apple.com/documentation/videotoolbox/kvtheroeye_left": {
       "etag": "\"1def-65d55d49ad031-df\"",
       "file_path": "documentation/VideoToolbox/kvtheroeye_left.md",
@@ -994,6 +1009,26 @@
       "etag": "\"158d-65d55d4a5460e-df\"",
       "file_path": "documentation/VideoToolbox/kvtlogtransferfunctionmismatcherr.md",
       "hash": "87cbc6ca8a7a47d792907fac303cbb0e584d1b37e31aa098f76b752f5824d7c9"
+    },
+    "https://developer.apple.com/documentation/videotoolbox/kvtmotionestimationsessioncreationoption_detecttruemotion": {
+      "etag": "\"27c4-659025e84b8a3-df\"",
+      "file_path": "documentation/VideoToolbox/kvtmotionestimationsessioncreationoption_detecttruemotion.md",
+      "hash": "e2b46135384ccebd40871313f85b6eff1f403077e6aae1f127fdce3e8737c350"
+    },
+    "https://developer.apple.com/documentation/videotoolbox/kvtmotionestimationsessioncreationoption_label": {
+      "etag": "\"367a-65d55d4a71f7a-df\"",
+      "file_path": "documentation/VideoToolbox/kvtmotionestimationsessioncreationoption_label.md",
+      "hash": "ec535b095440e6001bbf5a5e7c1db4e2a4405667267085fb5c228598975ed362"
+    },
+    "https://developer.apple.com/documentation/videotoolbox/kvtmotionestimationsessioncreationoption_motionvectorsize": {
+      "etag": "\"37a6-65d55d49ad031-df\"",
+      "file_path": "documentation/VideoToolbox/kvtmotionestimationsessioncreationoption_motionvectorsize.md",
+      "hash": "72bff88f1ef231853da0dc2860277eed4614cb7917155da2ec49827640e5c422"
+    },
+    "https://developer.apple.com/documentation/videotoolbox/kvtmotionestimationsessioncreationoption_usemultipasssearch": {
+      "etag": "\"37e5-65d55d49cd93a-df\"",
+      "file_path": "documentation/VideoToolbox/kvtmotionestimationsessioncreationoption_usemultipasssearch.md",
+      "hash": "1e935f08c92fc80d824fa645ba8db9de43adcf6a9aa2ea5fb8f3b7b38287c5bf"
     },
     "https://developer.apple.com/documentation/videotoolbox/kvtmultipassstoragecreationoption_donotdelete": {
       "etag": "\"2287-65d55d4a88559-df\"",
@@ -1470,6 +1505,126 @@
       "file_path": "documentation/VideoToolbox/kvtqpmodulationlevel_disable.md",
       "hash": "999703b29e9687d369fde2716dce612f3c2574d44f8f51e0450ef633c0eea00b"
     },
+    "https://developer.apple.com/documentation/videotoolbox/kvtrawprocessingparameter_cameravalue": {
+      "etag": "\"3d4d-65d55d4accb0d-df\"",
+      "file_path": "documentation/VideoToolbox/kvtrawprocessingparameter_cameravalue.md",
+      "hash": "08b8b9758d91324ac67ca1272897411447ba6020926ad176945be9a547901a92"
+    },
+    "https://developer.apple.com/documentation/videotoolbox/kvtrawprocessingparameter_currentvalue": {
+      "etag": "\"3d35-65d55d49ad031-df\"",
+      "file_path": "documentation/VideoToolbox/kvtrawprocessingparameter_currentvalue.md",
+      "hash": "7ef4cd03d3e92c04cd7d8234df7d54a083b463513f3f734e23e3f8983d8b5c7a"
+    },
+    "https://developer.apple.com/documentation/videotoolbox/kvtrawprocessingparameter_description": {
+      "etag": "\"3c88-65d55d4b3ea8e-df\"",
+      "file_path": "documentation/VideoToolbox/kvtrawprocessingparameter_description.md",
+      "hash": "13243f99c770d3087f6df558591369da8450e89db5736935661d53d016ecffc4"
+    },
+    "https://developer.apple.com/documentation/videotoolbox/kvtrawprocessingparameter_enabled": {
+      "etag": "\"3c47-65d55d4a25add-df\"",
+      "file_path": "documentation/VideoToolbox/kvtrawprocessingparameter_enabled.md",
+      "hash": "f344e757d5a2d7b6d45d240f43a62c332c835072894c7ba41768a1fb51ab6073"
+    },
+    "https://developer.apple.com/documentation/videotoolbox/kvtrawprocessingparameter_initialvalue": {
+      "etag": "\"3d6b-65d55d49e95c9-df\"",
+      "file_path": "documentation/VideoToolbox/kvtrawprocessingparameter_initialvalue.md",
+      "hash": "bf835113b4cb12b5f2793620c12b44b5d818e9fb41fa64696fcef0ae55eed958"
+    },
+    "https://developer.apple.com/documentation/videotoolbox/kvtrawprocessingparameter_key": {
+      "etag": "\"3c2d-65d55d4a5460e-df\"",
+      "file_path": "documentation/VideoToolbox/kvtrawprocessingparameter_key.md",
+      "hash": "e60c3d9cede9ff844a1b9242bdcbc463603f84d292a96696ac0d3f5ab7620f08"
+    },
+    "https://developer.apple.com/documentation/videotoolbox/kvtrawprocessingparameter_listarray": {
+      "etag": "\"3c48-65d55d49ad031-df\"",
+      "file_path": "documentation/VideoToolbox/kvtrawprocessingparameter_listarray.md",
+      "hash": "6f81f1c1bcf0a56676d92ca9db564ffd8b30d7ac6298d54747aea095bb492087"
+    },
+    "https://developer.apple.com/documentation/videotoolbox/kvtrawprocessingparameter_maximumvalue": {
+      "etag": "\"3d68-65d55d4b924fa-df\"",
+      "file_path": "documentation/VideoToolbox/kvtrawprocessingparameter_maximumvalue.md",
+      "hash": "e4fc6090900f97dad86b9c7d936c9306a0c376133b945d0616670ff26bee3dbe"
+    },
+    "https://developer.apple.com/documentation/videotoolbox/kvtrawprocessingparameter_minimumvalue": {
+      "etag": "\"3d68-65d55d4b5df2a-df\"",
+      "file_path": "documentation/VideoToolbox/kvtrawprocessingparameter_minimumvalue.md",
+      "hash": "515d15acddfe85f820fdd151d9d056aef85ecdeb7c38570b3a8b5f833d5c0723"
+    },
+    "https://developer.apple.com/documentation/videotoolbox/kvtrawprocessingparameter_name": {
+      "etag": "\"3c2a-65d55d4a5460e-df\"",
+      "file_path": "documentation/VideoToolbox/kvtrawprocessingparameter_name.md",
+      "hash": "7e403c0da80a2d7811bdd070bb0a56a91a85e2e49da76b771d695b91732a1732"
+    },
+    "https://developer.apple.com/documentation/videotoolbox/kvtrawprocessingparameter_neutralvalue": {
+      "etag": "\"3d1e-65d55d4accb0d-df\"",
+      "file_path": "documentation/VideoToolbox/kvtrawprocessingparameter_neutralvalue.md",
+      "hash": "b762418157fae491deeb1923175a4e8bcd44aa7e2d5e6c3bb787b7944a4a9e6c"
+    },
+    "https://developer.apple.com/documentation/videotoolbox/kvtrawprocessingparameter_subgroup": {
+      "etag": "\"3c64-65d55d4a5460e-df\"",
+      "file_path": "documentation/VideoToolbox/kvtrawprocessingparameter_subgroup.md",
+      "hash": "2aeab9b59e26556ebf03a942c1ca3d800e042a953f08c44dd56109833a48d7ee"
+    },
+    "https://developer.apple.com/documentation/videotoolbox/kvtrawprocessingparameter_valuetype": {
+      "etag": "\"410f-65d55d4aa0de8-df\"",
+      "file_path": "documentation/VideoToolbox/kvtrawprocessingparameter_valuetype.md",
+      "hash": "cd66f7babcf3968caa56458103020c3ca90763ba4a94826b61725d95ea75e098"
+    },
+    "https://developer.apple.com/documentation/videotoolbox/kvtrawprocessingparameterlistelement_description": {
+      "etag": "\"3cc4-65d55d4a5460e-df\"",
+      "file_path": "documentation/VideoToolbox/kvtrawprocessingparameterlistelement_description.md",
+      "hash": "f10218f00499f7d2aba4091a9059e8531dae9c51cdd9d5da3b0def1d99c18dfb"
+    },
+    "https://developer.apple.com/documentation/videotoolbox/kvtrawprocessingparameterlistelement_label": {
+      "etag": "\"3c8a-65d55d4accb0d-df\"",
+      "file_path": "documentation/VideoToolbox/kvtrawprocessingparameterlistelement_label.md",
+      "hash": "0e554eec6745cf8ce4089b65512e74c65257058b91f23a29b5ac9aa27a9c21dc"
+    },
+    "https://developer.apple.com/documentation/videotoolbox/kvtrawprocessingparameterlistelement_listelementid": {
+      "etag": "\"3cd1-65d55d4a88559-df\"",
+      "file_path": "documentation/VideoToolbox/kvtrawprocessingparameterlistelement_listelementid.md",
+      "hash": "af5ecf31e9c69a657ca7c35701e17737a8421e022a5eee4e10304ecc4a64fd0c"
+    },
+    "https://developer.apple.com/documentation/videotoolbox/kvtrawprocessingparametervaluetype_boolean": {
+      "etag": "\"3c66-65d55d4a71f7a-df\"",
+      "file_path": "documentation/VideoToolbox/kvtrawprocessingparametervaluetype_boolean.md",
+      "hash": "5cdd2fe482115dfa8ee754d4a789b17c44e8a3086c40964183cb40ce48d31969"
+    },
+    "https://developer.apple.com/documentation/videotoolbox/kvtrawprocessingparametervaluetype_float": {
+      "etag": "\"3c61-65d55d4b3ea8e-df\"",
+      "file_path": "documentation/VideoToolbox/kvtrawprocessingparametervaluetype_float.md",
+      "hash": "526d7d6be0d46872e71a5fefde95da78b2466fa15a798ed57a7cad523d8d9c4a"
+    },
+    "https://developer.apple.com/documentation/videotoolbox/kvtrawprocessingparametervaluetype_integer": {
+      "etag": "\"3c67-65d55d4ae2f73-df\"",
+      "file_path": "documentation/VideoToolbox/kvtrawprocessingparametervaluetype_integer.md",
+      "hash": "a671e51163760ba35ae627de0d45fb7818074e827d6fe98d7a145252826f2ec5"
+    },
+    "https://developer.apple.com/documentation/videotoolbox/kvtrawprocessingparametervaluetype_list": {
+      "etag": "\"3c51-65d55d49ad031-df\"",
+      "file_path": "documentation/VideoToolbox/kvtrawprocessingparametervaluetype_list.md",
+      "hash": "16a675c4e71f8fe05b36554181b6aafefd4b9fee1d8279a4a0219efd57cbad8e"
+    },
+    "https://developer.apple.com/documentation/videotoolbox/kvtrawprocessingparametervaluetype_subgroup": {
+      "etag": "\"3c6d-65d55d49ad031-df\"",
+      "file_path": "documentation/VideoToolbox/kvtrawprocessingparametervaluetype_subgroup.md",
+      "hash": "5f44bf1e0c189c0448707a3fe21217b479492b8c3d0d5ed27029430c97711e66"
+    },
+    "https://developer.apple.com/documentation/videotoolbox/kvtrawprocessingpropertykey_metadataforsidecarfile": {
+      "etag": "\"2722-65d55d4b3ea8e-df\"",
+      "file_path": "documentation/VideoToolbox/kvtrawprocessingpropertykey_metadataforsidecarfile.md",
+      "hash": "fe112a1483e01b3aa6f241d61033b93d26fb46753b96cbeedcaa53efabe32f89"
+    },
+    "https://developer.apple.com/documentation/videotoolbox/kvtrawprocessingpropertykey_metaldeviceregistryid": {
+      "etag": "\"1ea8-65d55d4ab621f-df\"",
+      "file_path": "documentation/VideoToolbox/kvtrawprocessingpropertykey_metaldeviceregistryid.md",
+      "hash": "baa251933b000eebc190e37e71782b425485820bdc9cf1d8a19ba535dad70702"
+    },
+    "https://developer.apple.com/documentation/videotoolbox/kvtrawprocessingpropertykey_outputcolorattachments": {
+      "etag": "\"26cd-65d55d4a71f7a-df\"",
+      "file_path": "documentation/VideoToolbox/kvtrawprocessingpropertykey_outputcolorattachments.md",
+      "hash": "c52c2105b7ddf76e0fc4d8cd59a9196bd2e9ae70cf3c90419337f4769ff6b4d0"
+    },
     "https://developer.apple.com/documentation/videotoolbox/kvtrotation_0": {
       "etag": "\"2852-65d55d4a88559-df\"",
       "file_path": "documentation/VideoToolbox/kvtrotation_0.md",
@@ -1685,6 +1840,11 @@
       "file_path": "documentation/VideoToolbox/kvtvideoencoderlist_supportsframereordering.md",
       "hash": "91258310fd5d8adb1275eb8c2f797c7065d486d761d79aa3d4c6a47d55ee1800"
     },
+    "https://developer.apple.com/documentation/videotoolbox/kvtvideoencoderlist_supportsmultipass": {
+      "etag": "\"515d-659025e87760d-df\"",
+      "file_path": "documentation/VideoToolbox/kvtvideoencoderlist_supportsmultipass.md",
+      "hash": "227203cd2cd0e908561e318a9c916227283521cc9a3646728a4a1de6d9a26520"
+    },
     "https://developer.apple.com/documentation/videotoolbox/kvtvideoencoderlistoption_includestandarddefinitiondvencoders": {
       "etag": "\"5fb4-65d55d4b3ea8e-df\"",
       "file_path": "documentation/VideoToolbox/kvtvideoencoderlistoption_includestandarddefinitiondvencoders.md",
@@ -1765,6 +1925,16 @@
       "file_path": "documentation/VideoToolbox/property-type-constants.md",
       "hash": "c34c1ad28dd453e186d374e9ad53bb22ccf5a26526fe1b87c1306243d3b1dfd4"
     },
+    "https://developer.apple.com/documentation/videotoolbox/raw-processing-parameters": {
+      "etag": "\"5456-659025e87760d-df\"",
+      "file_path": "documentation/VideoToolbox/raw-processing-parameters.md",
+      "hash": "c2406c5aa23e21d5225a001e974347c4558e10a578e4511d81e673fb2405389a"
+    },
+    "https://developer.apple.com/documentation/videotoolbox/raw-processing-properties": {
+      "etag": "\"2d98-659025e7e0ddb-df\"",
+      "file_path": "documentation/VideoToolbox/raw-processing-properties.md",
+      "hash": "48e82f81e0bb4d1c8e532f9955992d5442654c75a1133d6829e3992a7ce73b0c"
+    },
     "https://developer.apple.com/documentation/videotoolbox/read-write-status-constants": {
       "etag": "\"4087-659025e98f1da-df\"",
       "file_path": "documentation/VideoToolbox/read-write-status-constants.md",
@@ -1789,6 +1959,11 @@
       "etag": "\"f74-659025e9ecec6-df\"",
       "file_path": "documentation/VideoToolbox/videotoolbox-reference.md",
       "hash": "ea447e26347c17e45babbd7a9a7a108c062b39e08968cc2c4d03139a680663e3"
+    },
+    "https://developer.apple.com/documentation/videotoolbox/vt_available_starting": {
+      "etag": "\"10ab-65d55d4b1f2a8-df\"",
+      "file_path": "documentation/VideoToolbox/vt_available_starting.md",
+      "hash": "cbc0fb9d98f628e9479cef9eb8b7af261071b9e5592df03762a5c6bd926e0cbb"
     },
     "https://developer.apple.com/documentation/videotoolbox/vt_support_colorsync_pixel_transfer": {
       "etag": "\"1a80-65d55d4b1f2a8-df\"",
@@ -1840,10 +2015,20 @@
       "file_path": "documentation/VideoToolbox/vtcompressionsessionencodeframe(_,imagebuffer,presentationtimestamp,duration,frameproperties,sourceframerefcon,infoflagsout).md",
       "hash": "0b5356950907180bff13ea86e65eba1052b802e2114f0f8902d0eefaa1f799b3"
     },
+    "https://developer.apple.com/documentation/videotoolbox/vtcompressionsessionencodemultiimageframe": {
+      "etag": "\"4b1a-65d55d4b924fa-df\"",
+      "file_path": "documentation/VideoToolbox/vtcompressionsessionencodemultiimageframe.md",
+      "hash": "aac860b36631a48c5c139477b030a92c69ed3042074ea9a087cc6aa55aef4155"
+    },
     "https://developer.apple.com/documentation/videotoolbox/vtcompressionsessionencodemultiimageframe(_:taggedbuffers:presentationtimestamp:duration:frameproperties:infoflagsout:outputhandler:)": {
       "etag": "\"68d3-65d55d49ad031-df\"",
       "file_path": "documentation/VideoToolbox/vtcompressionsessionencodemultiimageframe(_,taggedbuffers,presentationtimestamp,duration,frameproperties,infoflagsout,outputhandler).md",
       "hash": "c8883659d2fa53a90f8d2f392469cf68b663327820acd9764eb6f497d80dc88f"
+    },
+    "https://developer.apple.com/documentation/videotoolbox/vtcompressionsessionencodemultiimageframewithoutputhandler": {
+      "etag": "\"58a0-65d55d4aa0de8-df\"",
+      "file_path": "documentation/VideoToolbox/vtcompressionsessionencodemultiimageframewithoutputhandler.md",
+      "hash": "e455b2224b2c566d86bad050ae78921d03e23dd5e9173f123ab1abc18aaee68c"
     },
     "https://developer.apple.com/documentation/videotoolbox/vtcompressionsessionendpass(_:furtherpassesrequestedout:_:)": {
       "etag": "\"5915-65d55d49cd93a-df\"",
@@ -1890,10 +2075,20 @@
       "file_path": "documentation/VideoToolbox/vtcompressionsessionpreparetoencodeframes(_).md",
       "hash": "8ab69235d1d7cb23beed1a36b2f72350db7862fd4c583f8e06f50e41ffb79477"
     },
+    "https://developer.apple.com/documentation/videotoolbox/vtcopyrawprocessorextensionproperties": {
+      "etag": "\"33dc-65d55d4a71f7a-df\"",
+      "file_path": "documentation/VideoToolbox/vtcopyrawprocessorextensionproperties.md",
+      "hash": "c5c1ac1f5c5cbfc08d1701ca53194245c4a20e69f9c0397bdcfe22e28e56f546"
+    },
     "https://developer.apple.com/documentation/videotoolbox/vtcopysupportedpropertydictionaryforencoder(width:height:codectype:encoderspecification:encoderidout:supportedpropertiesout:)": {
       "etag": "\"6991-65d55d4b924fa-df\"",
       "file_path": "documentation/VideoToolbox/vtcopysupportedpropertydictionaryforencoder(width,height,codectype,encoderspecification,encoderidout,supportedpropertiesout).md",
       "hash": "eb6791f6881db0a9ba703f5e56455225e4c8dceeec771efcca1658831b3cab09"
+    },
+    "https://developer.apple.com/documentation/videotoolbox/vtcopyvideodecoderextensionproperties": {
+      "etag": "\"2a41-65d55d4a88559-df\"",
+      "file_path": "documentation/VideoToolbox/vtcopyvideodecoderextensionproperties.md",
+      "hash": "d2d3551e194dbfbd5f368d988109eed2f293831d975793e45a693edd05eb97f9"
     },
     "https://developer.apple.com/documentation/videotoolbox/vtcopyvideoencoderlist(_:_:)": {
       "etag": "\"58cd-65d55d4accb0d-df\"",
@@ -1914,6 +2109,26 @@
       "etag": "\"158e-65d55d4b3ea8e-df\"",
       "file_path": "documentation/VideoToolbox/vtdecodeframeflags/init(rawvalue).md",
       "hash": "3c4764ef9ab6793f261e6e7a96320235ec36e8da3152de8864ff85ab59f36ded"
+    },
+    "https://developer.apple.com/documentation/videotoolbox/vtdecodeframeflags/kvtdecodeframe_1xrealtimeplayback": {
+      "etag": "\"1b58-65d55d4b3ea8e-df\"",
+      "file_path": "documentation/VideoToolbox/vtdecodeframeflags/kvtdecodeframe_1xrealtimeplayback.md",
+      "hash": "29e5ee7d838f406da58a453d825a89f7c88d921b11c49586e08dc9eddcf9ec52"
+    },
+    "https://developer.apple.com/documentation/videotoolbox/vtdecodeframeflags/kvtdecodeframe_donotoutputframe": {
+      "etag": "\"20d3-65d55d4b3ea8e-df\"",
+      "file_path": "documentation/VideoToolbox/vtdecodeframeflags/kvtdecodeframe_donotoutputframe.md",
+      "hash": "644dba511d5d0a36b7bdd55fc04c945861fb37cb95259cc6280b86596d6224f1"
+    },
+    "https://developer.apple.com/documentation/videotoolbox/vtdecodeframeflags/kvtdecodeframe_enableasynchronousdecompression": {
+      "etag": "\"1cb8-65d55d4b3ea8e-df\"",
+      "file_path": "documentation/VideoToolbox/vtdecodeframeflags/kvtdecodeframe_enableasynchronousdecompression.md",
+      "hash": "6e58ac2be5a7207447df9f583839ec8f2d160ba38f1f0bdf2144d18bc1e74599"
+    },
+    "https://developer.apple.com/documentation/videotoolbox/vtdecodeframeflags/kvtdecodeframe_enabletemporalprocessing": {
+      "etag": "\"28c9-65d55d4b3ea8e-df\"",
+      "file_path": "documentation/VideoToolbox/vtdecodeframeflags/kvtdecodeframe_enabletemporalprocessing.md",
+      "hash": "674e7c83ea6fd29a99a30f8b704a441f3d083020c88f0b4fb6295f65f65ccae6"
     },
     "https://developer.apple.com/documentation/videotoolbox/vtdecodeinfoflags": {
       "etag": "\"6734-65d55d4a25add-df\"",
@@ -1990,6 +2205,11 @@
       "file_path": "documentation/VideoToolbox/vtdecompressionoutputhandler.md",
       "hash": "3f1aaa5ef6fd88e04a8c8753008fbd2151611659e9b5910ddee7d411d390488e"
     },
+    "https://developer.apple.com/documentation/videotoolbox/vtdecompressionoutputmultiimagecallback": {
+      "etag": "\"65de-65d55d4b924fa-df\"",
+      "file_path": "documentation/VideoToolbox/vtdecompressionoutputmultiimagecallback.md",
+      "hash": "a1b738b9e0878ea9f01ccc90a2a7693fb72909aaf9ee6e4b1e484e6b540d6e99"
+    },
     "https://developer.apple.com/documentation/videotoolbox/vtdecompressionsession": {
       "etag": "\"38a4-65d55d4b3ea8e-df\"",
       "file_path": "documentation/VideoToolbox/vtdecompressionsession.md",
@@ -2045,6 +2265,11 @@
       "file_path": "documentation/VideoToolbox/vtdecompressionsessiondecodeframe(_,samplebuffer,flags,infoflagsout,outputhandler).md",
       "hash": "58b74923b0c0de280fd5e5f95587d044f51c3bac28e86a9b37272420706271d1"
     },
+    "https://developer.apple.com/documentation/videotoolbox/vtdecompressionsessiondecodeframewithmultiimagecapableoutputhandler": {
+      "etag": "\"3e7c-65d55d4b1f2a8-df\"",
+      "file_path": "documentation/VideoToolbox/vtdecompressionsessiondecodeframewithmultiimagecapableoutputhandler.md",
+      "hash": "8cf6cc8261bf305747eaa92609c93565079a3173620dbe0854edb08f01d42e7b"
+    },
     "https://developer.apple.com/documentation/videotoolbox/vtdecompressionsessionfinishdelayedframes(_:)": {
       "etag": "\"7c18-65d55d4afc75c-df\"",
       "file_path": "documentation/VideoToolbox/vtdecompressionsessionfinishdelayedframes(_).md",
@@ -2059,6 +2284,11 @@
       "etag": "\"24f5-65d55d4989bdf-df\"",
       "file_path": "documentation/VideoToolbox/vtdecompressionsessioninvalidate(_).md",
       "hash": "ee8edb85392cc4c89035caea9d42fe7f9b7ca26239c38c2e4d1377d63cf56c5f"
+    },
+    "https://developer.apple.com/documentation/videotoolbox/vtdecompressionsessionsetmultiimagecallback": {
+      "etag": "\"38c5-65d55d49e95c9-df\"",
+      "file_path": "documentation/VideoToolbox/vtdecompressionsessionsetmultiimagecallback.md",
+      "hash": "f356324b3b599bdb193cf2dd7aa551b087e19713f31c87f4064a2d569af91e4d"
     },
     "https://developer.apple.com/documentation/videotoolbox/vtdecompressionsessionwaitforasynchronousframes(_:)": {
       "etag": "\"77cf-65d55d49ad031-df\"",
@@ -2150,6 +2380,16 @@
       "file_path": "documentation/VideoToolbox/vtframeprocessor/process(with,parameters).md",
       "hash": "68ab892b96db4944303ade83755e1117bbf7d6c6a2b2d295bc9b0a607d4c2d05"
     },
+    "https://developer.apple.com/documentation/videotoolbox/vtframeprocessor/processwithparameters:error:": {
+      "etag": "\"2153-65d55d4ba366a-df\"",
+      "file_path": "documentation/VideoToolbox/vtframeprocessor/processwithparameters_error_.md",
+      "hash": "611652bc7a4ca4c4500d546dffa8ec2b849ac787a07a557df5bb47d47bfb366c"
+    },
+    "https://developer.apple.com/documentation/videotoolbox/vtframeprocessor/processwithparameters:frameoutputhandler:": {
+      "etag": "\"2942-65d55d4ba366a-df\"",
+      "file_path": "documentation/VideoToolbox/vtframeprocessor/processwithparameters_frameoutputhandler_.md",
+      "hash": "5a6d4d99644089a180a46e6f6e16d58ae6bb175d864f3dc3961d7686f22c1783"
+    },
     "https://developer.apple.com/documentation/videotoolbox/vtframeprocessor/startsession(configuration:)": {
       "etag": "\"4b62-65d55d4ba366a-df\"",
       "file_path": "documentation/VideoToolbox/vtframeprocessor/startsession(configuration).md",
@@ -2165,10 +2405,20 @@
       "file_path": "documentation/VideoToolbox/vtframeprocessorconfiguration/destinationpixelbufferattributes.md",
       "hash": "73f4996d13b16c6467e38f61290f3f14859c1964066dd2ef39c96a3a94b64bb6"
     },
+    "https://developer.apple.com/documentation/videotoolbox/vtframeprocessorconfiguration/framesupportedpixelformats": {
+      "etag": "\"2116-65d55d4aa0de8-df\"",
+      "file_path": "documentation/VideoToolbox/vtframeprocessorconfiguration/framesupportedpixelformats.md",
+      "hash": "d7cf00de2945ae4c6538390153bcc5f02dbebd44e70b318e3a7ee57e17eb780a"
+    },
     "https://developer.apple.com/documentation/videotoolbox/vtframeprocessorconfiguration/issupported": {
       "etag": "\"22e9-65d55d4aa0de8-df\"",
       "file_path": "documentation/VideoToolbox/vtframeprocessorconfiguration/issupported.md",
       "hash": "f0abd88edb475e01648728120efbc4b9751d8d5199486d7a0d0ffc9feaf07f51"
+    },
+    "https://developer.apple.com/documentation/videotoolbox/vtframeprocessorconfiguration/maximumdimensions-1x3l0": {
+      "etag": "\"1752-65d55d4aa0de8-df\"",
+      "file_path": "documentation/VideoToolbox/vtframeprocessorconfiguration/maximumdimensions-1x3l0.md",
+      "hash": "6fae55600cf19ac5fecb6f0f455291be9edc86b8f8eedf20a96f568558267077"
     },
     "https://developer.apple.com/documentation/videotoolbox/vtframeprocessorconfiguration/maximumdimensions-4vmra": {
       "etag": "\"1d00-65d55d4aa0de8-df\"",
@@ -2180,15 +2430,30 @@
       "file_path": "documentation/VideoToolbox/vtframeprocessorconfiguration/minimumdimensions-42b0h.md",
       "hash": "20837cdebdb0052994824f4d9350019cc25bf084ecba04636e23adbcdbb974f3"
     },
+    "https://developer.apple.com/documentation/videotoolbox/vtframeprocessorconfiguration/minimumdimensions-9n9r0": {
+      "etag": "\"1752-65d55d4aa0de8-df\"",
+      "file_path": "documentation/VideoToolbox/vtframeprocessorconfiguration/minimumdimensions-9n9r0.md",
+      "hash": "525608db90b49e4eb3bdf889ea13a3fe5dd9b933d3f347e5055f043f9e611779"
+    },
     "https://developer.apple.com/documentation/videotoolbox/vtframeprocessorconfiguration/nextframecount-18e47": {
       "etag": "\"1a3e-65d55d4aa0de8-df\"",
       "file_path": "documentation/VideoToolbox/vtframeprocessorconfiguration/nextframecount-18e47.md",
       "hash": "18cfa98ac40a4a6556642a4d84e7c887668a8458e336be354d324fea9a16620e"
     },
+    "https://developer.apple.com/documentation/videotoolbox/vtframeprocessorconfiguration/nextframecount-533br": {
+      "etag": "\"163a-65d55d4aa0de8-df\"",
+      "file_path": "documentation/VideoToolbox/vtframeprocessorconfiguration/nextframecount-533br.md",
+      "hash": "e767c412fe1c9863db8f4456aadaf42ff81d0ccad0088cabf7dd5d3676ac5973"
+    },
     "https://developer.apple.com/documentation/videotoolbox/vtframeprocessorconfiguration/previousframecount-1crhc": {
       "etag": "\"1a56-65d55d4aa0de8-df\"",
       "file_path": "documentation/VideoToolbox/vtframeprocessorconfiguration/previousframecount-1crhc.md",
       "hash": "110d14ec762967c81d96c207c64fe7d7d33e8ccaee95e423ccddffde53c7ed80"
+    },
+    "https://developer.apple.com/documentation/videotoolbox/vtframeprocessorconfiguration/previousframecount-20ke2": {
+      "etag": "\"1672-65d55d4aa0de8-df\"",
+      "file_path": "documentation/VideoToolbox/vtframeprocessorconfiguration/previousframecount-20ke2.md",
+      "hash": "e7194c2744c25d06f1b1b8b918ebe26c24e898d78fb25f5c6232e27821ddae0c"
     },
     "https://developer.apple.com/documentation/videotoolbox/vtframeprocessorconfiguration/sourcepixelbufferattributes": {
       "etag": "\"3047-65d55d4aa0de8-df\"",
@@ -2445,6 +2710,11 @@
       "file_path": "documentation/VideoToolbox/vtframeprocessorparameters.md",
       "hash": "7350a7f615f383bfc981713b1a7f3240ee2bf57183a906f0cccde985cac0adf0"
     },
+    "https://developer.apple.com/documentation/videotoolbox/vtframeprocessorparameters/destinationframe-3im3l": {
+      "etag": "\"188c-65d55d4afc75c-df\"",
+      "file_path": "documentation/VideoToolbox/vtframeprocessorparameters/destinationframe-3im3l.md",
+      "hash": "de186a3af68f64a42ae7936fe462158aa227d1bb96946e7241a8a34958be3ad1"
+    },
     "https://developer.apple.com/documentation/videotoolbox/vtframeprocessorparameters/destinationframe-5suam": {
       "etag": "\"24df-65d55d4afc75c-df\"",
       "file_path": "documentation/VideoToolbox/vtframeprocessorparameters/destinationframe-5suam.md",
@@ -2454,6 +2724,11 @@
       "etag": "\"251d-65d55d4afc75c-df\"",
       "file_path": "documentation/VideoToolbox/vtframeprocessorparameters/destinationframes-46ken.md",
       "hash": "b786bd71a7a6f38237c3be370a0afb05ea2f9d7d0c54e60f5ad567d6a93fe58e"
+    },
+    "https://developer.apple.com/documentation/videotoolbox/vtframeprocessorparameters/destinationframes-8yges": {
+      "etag": "\"1350-65d55d4afc75c-df\"",
+      "file_path": "documentation/VideoToolbox/vtframeprocessorparameters/destinationframes-8yges.md",
+      "hash": "93248bf9e45964f68f42bec56ea49163c08ff725fe56922aeb10821bb52e4675"
     },
     "https://developer.apple.com/documentation/videotoolbox/vtframeprocessorparameters/sourceframe": {
       "etag": "\"2ce0-65d55d4afc75c-df\"",
@@ -2484,6 +2759,11 @@
       "etag": "\"1e49-65d55d4989bdf-df\"",
       "file_path": "documentation/VideoToolbox/vtframerateconversionconfiguration/framesupportedpixelformats-54soi.md",
       "hash": "ed3e7194d0dde88d9b949e84c1ae0815eea7f903b0465a75832dc09a0c6f4fce"
+    },
+    "https://developer.apple.com/documentation/videotoolbox/vtframerateconversionconfiguration/framesupportedpixelformats-9w7f9": {
+      "etag": "\"13c9-65d55d4989bdf-df\"",
+      "file_path": "documentation/VideoToolbox/vtframerateconversionconfiguration/framesupportedpixelformats-9w7f9.md",
+      "hash": "268c72f685773aff200fb7175452a66303ca1fecc05f724458bc40dab3a0d3f5"
     },
     "https://developer.apple.com/documentation/videotoolbox/vtframerateconversionconfiguration/framewidth": {
       "etag": "\"4db3-65d55d4989bdf-df\"",
@@ -2575,15 +2855,30 @@
       "file_path": "documentation/VideoToolbox/vtframerateconversionparameters.md",
       "hash": "86ae8961e73da1db602040bfa5e7570ce053e49bb64b217d2f51ee13909443d2"
     },
+    "https://developer.apple.com/documentation/videotoolbox/vtframerateconversionparameters/destinationframes": {
+      "etag": "\"33a4-65d55d4b924fa-df\"",
+      "file_path": "documentation/VideoToolbox/vtframerateconversionparameters/destinationframes.md",
+      "hash": "cc62890a70ddec5fa9451ee726e8b2192593294d43b1765079fdd6db29ac9e3b"
+    },
     "https://developer.apple.com/documentation/videotoolbox/vtframerateconversionparameters/init(sourceframe:nextframe:opticalflow:interpolationphase:submissionmode:destinationframes:)": {
       "etag": "\"43c3-65d55d4b924fa-df\"",
       "file_path": "documentation/VideoToolbox/vtframerateconversionparameters/init(sourceframe,nextframe,opticalflow,interpolationphase,submissionmode,destinationframes).md",
       "hash": "ee929b7a1a0d890af1b2ef267c8242fd2ee356e1c60d26fca1b8f38915ad7740"
     },
+    "https://developer.apple.com/documentation/videotoolbox/vtframerateconversionparameters/initwithsourceframe:nextframe:opticalflow:interpolationphase:submissionmode:destinationframes:": {
+      "etag": "\"3744-65d55d4b924fa-df\"",
+      "file_path": "documentation/VideoToolbox/vtframerateconversionparameters/initwithsourceframe_nextframe_opticalflow_interpolationphase_submissionmode_destinationframes_.md",
+      "hash": "76bae1c10b45570ffe279f3bce08e6710f917379c8f4c3e1ffbde190f09d5a72"
+    },
     "https://developer.apple.com/documentation/videotoolbox/vtframerateconversionparameters/interpolationphase-2jky5": {
       "etag": "\"34ab-65d55d4b924fa-df\"",
       "file_path": "documentation/VideoToolbox/vtframerateconversionparameters/interpolationphase-2jky5.md",
       "hash": "3e67cef0d18269feb272f6bb91dbd6bfe823917845030601bbd3f6f3338da622"
+    },
+    "https://developer.apple.com/documentation/videotoolbox/vtframerateconversionparameters/interpolationphase-6wdns": {
+      "etag": "\"3448-65d55d4b924fa-df\"",
+      "file_path": "documentation/VideoToolbox/vtframerateconversionparameters/interpolationphase-6wdns.md",
+      "hash": "9da9d8e44d2fdd3329ed51df2e2e54d5e89f8c09c3b9529f4b17caa8a3c08cea"
     },
     "https://developer.apple.com/documentation/videotoolbox/vtframerateconversionparameters/nextframe": {
       "etag": "\"461e-65d55d4b924fa-df\"",
@@ -2675,10 +2970,30 @@
       "file_path": "documentation/VideoToolbox/vtframesilosettimerangesfornextpass(_,timerangecount,timerangearray).md",
       "hash": "7c78557cc0630cb592424f59745c42bab1edfcf1b9bd66a78f3b7e11231a6723"
     },
+    "https://developer.apple.com/documentation/videotoolbox/vthdrperframemetadatagenerationhdrformattype": {
+      "etag": "\"3fe3-65d55d4b3ea8e-df\"",
+      "file_path": "documentation/VideoToolbox/vthdrperframemetadatagenerationhdrformattype.md",
+      "hash": "39df8fa6a4067251a3f9e69b24257a57ff7e441d36e9801d5005bd707f2fdb3e"
+    },
+    "https://developer.apple.com/documentation/videotoolbox/vthdrperframemetadatagenerationhdrformattype/init(_:)": {
+      "etag": "\"1b07-65d55d4a25add-df\"",
+      "file_path": "documentation/VideoToolbox/vthdrperframemetadatagenerationhdrformattype/init(_).md",
+      "hash": "b2811d5331cb57a14971393c678b2a6fe23209f3150caed61778c63fdb9ae484"
+    },
+    "https://developer.apple.com/documentation/videotoolbox/vthdrperframemetadatagenerationhdrformattype/init(rawvalue:)": {
+      "etag": "\"1b27-65d55d4a25add-df\"",
+      "file_path": "documentation/VideoToolbox/vthdrperframemetadatagenerationhdrformattype/init(rawvalue).md",
+      "hash": "b156b2ff9c5e321e630756398198d2f0a166c49335c91382c6c202f8209845fd"
+    },
     "https://developer.apple.com/documentation/videotoolbox/vthdrperframemetadatagenerationsession": {
       "etag": "\"1ac7-65d55d4accb0d-df\"",
       "file_path": "documentation/VideoToolbox/vthdrperframemetadatagenerationsession.md",
       "hash": "1cb97622467d2df210b86c061a403f3e5b0d99f4527ce9083d90eda30bfa8bc5"
+    },
+    "https://developer.apple.com/documentation/videotoolbox/vthdrperframemetadatagenerationsession-api-collection": {
+      "etag": "\"28cb-659025e7e0ddb-df\"",
+      "file_path": "documentation/VideoToolbox/vthdrperframemetadatagenerationsession-api-collection.md",
+      "hash": "9061f17233e4c82ae1009ae275ffb84d05e75627e7e8c2c7f9cbf7896fc02335"
     },
     "https://developer.apple.com/documentation/videotoolbox/vthdrperframemetadatagenerationsession/attachmetadata(to:scenechange:)": {
       "etag": "\"1bf7-65d55d49cd93a-df\"",
@@ -2699,6 +3014,26 @@
       "etag": "\"1c23-65d55d49cd93a-df\"",
       "file_path": "documentation/VideoToolbox/vthdrperframemetadatagenerationsession/init(framespersecond,hdrformats).md",
       "hash": "7030b8752fe3029b9bc621ffef49f5e2e2d5ba2f320a631198be425e5036a91d"
+    },
+    "https://developer.apple.com/documentation/videotoolbox/vthdrperframemetadatagenerationsessionattachmetadata": {
+      "etag": "\"1a82-65d55d49ad031-df\"",
+      "file_path": "documentation/VideoToolbox/vthdrperframemetadatagenerationsessionattachmetadata.md",
+      "hash": "45ab7845854c4f88eed9a80ce3c57d74790c2bc2e8db69484b82cc304fad0b0a"
+    },
+    "https://developer.apple.com/documentation/videotoolbox/vthdrperframemetadatagenerationsessioncreate": {
+      "etag": "\"2656-65d55d4afc75c-df\"",
+      "file_path": "documentation/VideoToolbox/vthdrperframemetadatagenerationsessioncreate.md",
+      "hash": "21ba83e7e3cdd0db1d2a03857650a6975bd08b3db4192baada1dec45f1eb1d5f"
+    },
+    "https://developer.apple.com/documentation/videotoolbox/vthdrperframemetadatagenerationsessiongettypeid": {
+      "etag": "\"10fa-65d55d4b79256-df\"",
+      "file_path": "documentation/VideoToolbox/vthdrperframemetadatagenerationsessiongettypeid.md",
+      "hash": "d430260bdbdf17a3b58197adee045965fb16ae2aa8761f8f3896aec7778277eb"
+    },
+    "https://developer.apple.com/documentation/videotoolbox/vthdrperframemetadatagenerationsessionref": {
+      "etag": "\"1efc-65d55d4a5460e-df\"",
+      "file_path": "documentation/VideoToolbox/vthdrperframemetadatagenerationsessionref.md",
+      "hash": "3065267a4100b8b09149559a92c1cb8752d205e75c8cbd6decae36766e587501"
     },
     "https://developer.apple.com/documentation/videotoolbox/vtint32point": {
       "etag": "\"322b-65d55d4b79256-df\"",
@@ -2780,6 +3115,11 @@
       "file_path": "documentation/VideoToolbox/vtlowlatencyframeinterpolationconfiguration/frameheight.md",
       "hash": "8b2456a4dd1df969e5af2b025ad5b22db0658959b2d650c245e51a53a567fc19"
     },
+    "https://developer.apple.com/documentation/videotoolbox/vtlowlatencyframeinterpolationconfiguration/framesupportedpixelformats": {
+      "etag": "\"37d5-65d55d4afc75c-df\"",
+      "file_path": "documentation/VideoToolbox/vtlowlatencyframeinterpolationconfiguration/framesupportedpixelformats.md",
+      "hash": "e1cccdf70ae7729f235fd23cbcd960a65781bbffe00c0e63c6e870ef101ded3b"
+    },
     "https://developer.apple.com/documentation/videotoolbox/vtlowlatencyframeinterpolationconfiguration/framewidth": {
       "etag": "\"4a42-65d55d4afc75c-df\"",
       "file_path": "documentation/VideoToolbox/vtlowlatencyframeinterpolationconfiguration/framewidth.md",
@@ -2805,10 +3145,20 @@
       "file_path": "documentation/VideoToolbox/vtlowlatencyframeinterpolationconfiguration/maximumdimension(forspatialscalefactor).md",
       "hash": "af8184d0a0c233b5961a552fb7702236f091239416901ef4260b9207fe8f4d27"
     },
+    "https://developer.apple.com/documentation/videotoolbox/vtlowlatencyframeinterpolationconfiguration/maximumdimensionforspatialscalefactor:": {
+      "etag": "\"2344-65d55d4b1f2a8-df\"",
+      "file_path": "documentation/VideoToolbox/vtlowlatencyframeinterpolationconfiguration/maximumdimensionforspatialscalefactor_.md",
+      "hash": "d99217fd2cdb257270287f6bb46d7b045f567903e3fed526cc9b070bacaaf27e"
+    },
     "https://developer.apple.com/documentation/videotoolbox/vtlowlatencyframeinterpolationconfiguration/maximumpixelcount(forspatialscalefactor:)": {
       "etag": "\"22cb-65d55d4afc75c-df\"",
       "file_path": "documentation/VideoToolbox/vtlowlatencyframeinterpolationconfiguration/maximumpixelcount(forspatialscalefactor).md",
       "hash": "61b5a9259f358fdf91c7d2a8e7dd445d96c73e5887c43a809514d5dbcd53b487"
+    },
+    "https://developer.apple.com/documentation/videotoolbox/vtlowlatencyframeinterpolationconfiguration/maximumpixelcountforspatialscalefactor:": {
+      "etag": "\"20ac-65d55d4afc75c-df\"",
+      "file_path": "documentation/VideoToolbox/vtlowlatencyframeinterpolationconfiguration/maximumpixelcountforspatialscalefactor_.md",
+      "hash": "1df206d996da6920b07400d32fdfe21e6f00a113fd02d383e01d182df9de19f1"
     },
     "https://developer.apple.com/documentation/videotoolbox/vtlowlatencyframeinterpolationconfiguration/numberofinterpolatedframes": {
       "etag": "\"4afa-65d55d4afc75c-df\"",
@@ -2835,10 +3185,25 @@
       "file_path": "documentation/VideoToolbox/vtlowlatencyframeinterpolationparameters.md",
       "hash": "3b8da0bf219c4abd0e7b03d3aac20a15cd44e6ff95de9ceb3330df8015cf963f"
     },
+    "https://developer.apple.com/documentation/videotoolbox/vtlowlatencyframeinterpolationparameters/destinationframes": {
+      "etag": "\"1fd9-65d55d4a71f7a-df\"",
+      "file_path": "documentation/VideoToolbox/vtlowlatencyframeinterpolationparameters/destinationframes.md",
+      "hash": "a1c19aae30275e9dd15f5a767d5fd5305ab1d09e9e429b1e826da29cc9083ede"
+    },
     "https://developer.apple.com/documentation/videotoolbox/vtlowlatencyframeinterpolationparameters/init(sourceframe:previousframe:interpolationphase:destinationframes:)": {
       "etag": "\"265e-65d55d4a71f7a-df\"",
       "file_path": "documentation/VideoToolbox/vtlowlatencyframeinterpolationparameters/init(sourceframe,previousframe,interpolationphase,destinationframes).md",
       "hash": "166f93bfdbbbb0b46b53dc935ccbc176b297485eca6c27343867f6bf0931e204"
+    },
+    "https://developer.apple.com/documentation/videotoolbox/vtlowlatencyframeinterpolationparameters/initwithsourceframe:previousframe:interpolationphase:destinationframes:": {
+      "etag": "\"25b2-65d55d4a71f7a-df\"",
+      "file_path": "documentation/VideoToolbox/vtlowlatencyframeinterpolationparameters/initwithsourceframe_previousframe_interpolationphase_destinationframes_.md",
+      "hash": "18a3d9d3f6730bd5654bdea9671dddcc094691d3cc1ae118a39285cb165b9df7"
+    },
+    "https://developer.apple.com/documentation/videotoolbox/vtlowlatencyframeinterpolationparameters/interpolationphase-33m49": {
+      "etag": "\"149a-65d55d4a71f7a-df\"",
+      "file_path": "documentation/VideoToolbox/vtlowlatencyframeinterpolationparameters/interpolationphase-33m49.md",
+      "hash": "e74534ce7207d60f3f9236bafedcce77d151a431105c1ec0512e1d6306abd417"
     },
     "https://developer.apple.com/documentation/videotoolbox/vtlowlatencyframeinterpolationparameters/interpolationphase-886vi": {
       "etag": "\"220b-65d55d4a71f7a-df\"",
@@ -2870,6 +3235,11 @@
       "file_path": "documentation/VideoToolbox/vtlowlatencysuperresolutionscalerconfiguration/frameheight.md",
       "hash": "795afc1d890cc0f563731a4d52873496d1a71e4eed2203d7c87015be8ac8c1d3"
     },
+    "https://developer.apple.com/documentation/videotoolbox/vtlowlatencysuperresolutionscalerconfiguration/framesupportedpixelformats": {
+      "etag": "\"3271-65d55d4a88559-df\"",
+      "file_path": "documentation/VideoToolbox/vtlowlatencysuperresolutionscalerconfiguration/framesupportedpixelformats.md",
+      "hash": "c77781f3653aeb6064b7a445edd5feb82ee8b40f61902a585f0054e4d270c686"
+    },
     "https://developer.apple.com/documentation/videotoolbox/vtlowlatencysuperresolutionscalerconfiguration/framewidth": {
       "etag": "\"445b-65d55d4a88559-df\"",
       "file_path": "documentation/VideoToolbox/vtlowlatencysuperresolutionscalerconfiguration/framewidth.md",
@@ -2890,10 +3260,30 @@
       "file_path": "documentation/VideoToolbox/vtlowlatencysuperresolutionscalerconfiguration/maximumdimension(forspatialscalefactor).md",
       "hash": "a8df711d65473bee3f9ea76b50f2497e5a0cea9234420d3361b56154b9ed2455"
     },
+    "https://developer.apple.com/documentation/videotoolbox/vtlowlatencysuperresolutionscalerconfiguration/maximumdimensionforspatialscalefactor:": {
+      "etag": "\"2214-65d55d4a88559-df\"",
+      "file_path": "documentation/VideoToolbox/vtlowlatencysuperresolutionscalerconfiguration/maximumdimensionforspatialscalefactor_.md",
+      "hash": "5d43c21d117c260fb87d8769fa8b09eaea4e70c6ea0a810a4e36bcb2a972b049"
+    },
+    "https://developer.apple.com/documentation/videotoolbox/vtlowlatencysuperresolutionscalerconfiguration/maximumdimensions": {
+      "etag": "\"20da-65d55d4a88559-df\"",
+      "file_path": "documentation/VideoToolbox/vtlowlatencysuperresolutionscalerconfiguration/maximumdimensions.md",
+      "hash": "d10a440a86c3639ac2d1fdba1a9d55f9cd6f658b1b93485f7e1b773937a24d26"
+    },
     "https://developer.apple.com/documentation/videotoolbox/vtlowlatencysuperresolutionscalerconfiguration/maximumpixelcount(forspatialscalefactor:)": {
       "etag": "\"23f5-65d55d4a88559-df\"",
       "file_path": "documentation/VideoToolbox/vtlowlatencysuperresolutionscalerconfiguration/maximumpixelcount(forspatialscalefactor).md",
       "hash": "8dbce6618a8932717f449db48544a09af914ea21e520d3d1acd9c17544b9b40f"
+    },
+    "https://developer.apple.com/documentation/videotoolbox/vtlowlatencysuperresolutionscalerconfiguration/maximumpixelcountforspatialscalefactor:": {
+      "etag": "\"1f76-65d55d4a88559-df\"",
+      "file_path": "documentation/VideoToolbox/vtlowlatencysuperresolutionscalerconfiguration/maximumpixelcountforspatialscalefactor_.md",
+      "hash": "da16c970ec43678f177087d7f176b244995166b8cbda9d9f0a96b29cbcb9f394"
+    },
+    "https://developer.apple.com/documentation/videotoolbox/vtlowlatencysuperresolutionscalerconfiguration/minimumdimensions": {
+      "etag": "\"20da-65d55d4a88559-df\"",
+      "file_path": "documentation/VideoToolbox/vtlowlatencysuperresolutionscalerconfiguration/minimumdimensions.md",
+      "hash": "d5436771399f05b44779961a31e6d8ec3a039f98120782cab64faa891ddcd1dd"
     },
     "https://developer.apple.com/documentation/videotoolbox/vtlowlatencysuperresolutionscalerconfiguration/scalefactor": {
       "etag": "\"419f-65d55d4a88559-df\"",
@@ -2920,10 +3310,25 @@
       "file_path": "documentation/VideoToolbox/vtlowlatencysuperresolutionscalerconfiguration/supportedscalefactors-27vjh.md",
       "hash": "c83c2b7c2a67b68d6b74f3bcc3ad75183401aa2c049980f82ca0f7fe826e93d6"
     },
+    "https://developer.apple.com/documentation/videotoolbox/vtlowlatencysuperresolutionscalerconfiguration/supportedscalefactors-66l10": {
+      "etag": "\"1655-65d55d4a88559-df\"",
+      "file_path": "documentation/VideoToolbox/vtlowlatencysuperresolutionscalerconfiguration/supportedscalefactors-66l10.md",
+      "hash": "6427295ce010b7595a6d0b6b3b6d8f439a4e4df9210b34130eaea7e3addf8628"
+    },
+    "https://developer.apple.com/documentation/videotoolbox/vtlowlatencysuperresolutionscalerconfiguration/supportedscalefactorsforframewidth:frameheight:": {
+      "etag": "\"1adf-65d55d4a88559-df\"",
+      "file_path": "documentation/VideoToolbox/vtlowlatencysuperresolutionscalerconfiguration/supportedscalefactorsforframewidth_frameheight_.md",
+      "hash": "838e6bed3fb2037c3cd3a499dd5e5552f97e56f87aa353bb4ca2d43334805f82"
+    },
     "https://developer.apple.com/documentation/videotoolbox/vtlowlatencysuperresolutionscalerparameters": {
       "etag": "\"520f-65d55d4b79256-df\"",
       "file_path": "documentation/VideoToolbox/vtlowlatencysuperresolutionscalerparameters.md",
       "hash": "85dc51ca6107006bd99b06988c137a0aed45c3ffffb4c599785baca0c2c36f82"
+    },
+    "https://developer.apple.com/documentation/videotoolbox/vtlowlatencysuperresolutionscalerparameters/destinationframe": {
+      "etag": "\"1fb6-65d55d49cd93a-df\"",
+      "file_path": "documentation/VideoToolbox/vtlowlatencysuperresolutionscalerparameters/destinationframe.md",
+      "hash": "5e6534a88809c27ad633dfaf4a68815d8fff1f7801e5c1e5b09151502dcacc9b"
     },
     "https://developer.apple.com/documentation/videotoolbox/vtlowlatencysuperresolutionscalerparameters/init(sourceframe:destinationframe:)": {
       "etag": "\"2e9f-65d55d49cd93a-df\"",
@@ -2959,6 +3364,11 @@
       "etag": "\"1d4a-65d55d4b79256-df\"",
       "file_path": "documentation/VideoToolbox/vtmotionblurconfiguration/framesupportedpixelformats-1n4uq.md",
       "hash": "c4542d97b4b8ed506b3bf021bc59d27c598405bc4de9a3ff758c745423d3a655"
+    },
+    "https://developer.apple.com/documentation/videotoolbox/vtmotionblurconfiguration/framesupportedpixelformats-5a1iv": {
+      "etag": "\"131a-65d55d4b79256-df\"",
+      "file_path": "documentation/VideoToolbox/vtmotionblurconfiguration/framesupportedpixelformats-5a1iv.md",
+      "hash": "4bc9b52fc3bcc389685617e9c141f447431a697a563dae99ebc61788b503d0b1"
     },
     "https://developer.apple.com/documentation/videotoolbox/vtmotionblurconfiguration/framewidth": {
       "etag": "\"4afe-65d55d4b5df2a-df\"",
@@ -3050,6 +3460,11 @@
       "file_path": "documentation/VideoToolbox/vtmotionblurparameters.md",
       "hash": "aa89c3994a7ecb2ca8eaff8a05c41f98d985613457d33226855d508635c229f1"
     },
+    "https://developer.apple.com/documentation/videotoolbox/vtmotionblurparameters/destinationframe": {
+      "etag": "\"41f0-65d55d4989bdf-df\"",
+      "file_path": "documentation/VideoToolbox/vtmotionblurparameters/destinationframe.md",
+      "hash": "6d0d846b51c5c8446ffc07d6e9ee9f211ec8c8159ea541ab2b845aca7d8a83f7"
+    },
     "https://developer.apple.com/documentation/videotoolbox/vtmotionblurparameters/init(sourceframe:nextframe:previousframe:nextopticalflow:previousopticalflow:motionblurstrength:submissionmode:destinationframe:)": {
       "etag": "\"6739-65d55d4989bdf-df\"",
       "file_path": "documentation/VideoToolbox/vtmotionblurparameters/init(sourceframe,nextframe,previousframe,nextopticalflow,previousopticalflow,motionblurstrength,submissionmode,destinationframe).md",
@@ -3110,10 +3525,40 @@
       "file_path": "documentation/VideoToolbox/vtmotionblurparameters/submissionmode-swift.property.md",
       "hash": "1891a1084d905cee28f58174d4ac8ffeed1d4478d1c4271a203799c637ec36c1"
     },
+    "https://developer.apple.com/documentation/videotoolbox/vtmotionestimationframeflags": {
+      "etag": "\"1c1b-65d55d4b5df2a-df\"",
+      "file_path": "documentation/VideoToolbox/vtmotionestimationframeflags.md",
+      "hash": "0ebe58c2503812755643026545848a1877fc0ad2be54092d67cb980e29048c08"
+    },
+    "https://developer.apple.com/documentation/videotoolbox/vtmotionestimationframeflags/kvtmotionestimationframeflags_currentbufferwillbenextreferencebuffer": {
+      "etag": "\"1799-65d55d4ab621f-df\"",
+      "file_path": "documentation/VideoToolbox/vtmotionestimationframeflags/kvtmotionestimationframeflags_currentbufferwillbenextreferencebuffer.md",
+      "hash": "2e4acd662f4f7b72260bce8fe027c4db53b1d36034b411bd4e0a17061232168b"
+    },
+    "https://developer.apple.com/documentation/videotoolbox/vtmotionestimationinfoflags": {
+      "etag": "\"1662-65d55d4b3ea8e-df\"",
+      "file_path": "documentation/VideoToolbox/vtmotionestimationinfoflags.md",
+      "hash": "170043b0efa3d63b66c4875cc99c2cf5dbeb873e2edc721c184b8140da0f8cc8"
+    },
+    "https://developer.apple.com/documentation/videotoolbox/vtmotionestimationinfoflags/kvtmotionestimationinfoflags_reserved0": {
+      "etag": "\"e9b-65d55d4a88559-df\"",
+      "file_path": "documentation/VideoToolbox/vtmotionestimationinfoflags/kvtmotionestimationinfoflags_reserved0.md",
+      "hash": "5b04961919739225a4db3384b24972d397258914ddeb14555700a48aaa90ed10"
+    },
+    "https://developer.apple.com/documentation/videotoolbox/vtmotionestimationoutputhandler": {
+      "etag": "\"350e-65d55d4a25add-df\"",
+      "file_path": "documentation/VideoToolbox/vtmotionestimationoutputhandler.md",
+      "hash": "9f83434e6e8cb13d995df0b366a00fb589bd456b50d4dff182e35f21356db8cf"
+    },
     "https://developer.apple.com/documentation/videotoolbox/vtmotionestimationsession": {
       "etag": "\"3733-65d55d4989bdf-df\"",
       "file_path": "documentation/VideoToolbox/vtmotionestimationsession.md",
       "hash": "1ab083a448ba2c2af16579756e833480459bbb0afa215f27491ef6bb9d9498b8"
+    },
+    "https://developer.apple.com/documentation/videotoolbox/vtmotionestimationsession-api-collection": {
+      "etag": "\"4133-659025e9b1359-df\"",
+      "file_path": "documentation/VideoToolbox/vtmotionestimationsession-api-collection.md",
+      "hash": "f9f0d05901b54d1a23c8ad18a1ee9e1ffaba1b4a2331bb0303ee6ddca2cb12aa"
     },
     "https://developer.apple.com/documentation/videotoolbox/vtmotionestimationsession/blocksize": {
       "etag": "\"2980-65d55d4a88559-df\"",
@@ -3180,6 +3625,41 @@
       "file_path": "documentation/VideoToolbox/vtmotionestimationsession/usemultipasssearch.md",
       "hash": "da2e7bf0f1edc1ebce55fe2aff505938c744f130af61fc527453bdedcb527e33"
     },
+    "https://developer.apple.com/documentation/videotoolbox/vtmotionestimationsessioncompleteframes": {
+      "etag": "\"1df9-65d55d4a5460e-df\"",
+      "file_path": "documentation/VideoToolbox/vtmotionestimationsessioncompleteframes.md",
+      "hash": "dcf18cf4d0e62235f39144472d801452659e5231f3c4c260f0010d057db05565"
+    },
+    "https://developer.apple.com/documentation/videotoolbox/vtmotionestimationsessioncopysourcepixelbufferattributes": {
+      "etag": "\"2980-65d55d4accb0d-df\"",
+      "file_path": "documentation/VideoToolbox/vtmotionestimationsessioncopysourcepixelbufferattributes.md",
+      "hash": "551c02b15147e0de5f494115a89562df290b40da2a630abda45aa364bc2b5ce9"
+    },
+    "https://developer.apple.com/documentation/videotoolbox/vtmotionestimationsessioncreate": {
+      "etag": "\"3b6e-65d55d49ad031-df\"",
+      "file_path": "documentation/VideoToolbox/vtmotionestimationsessioncreate.md",
+      "hash": "c5d99d03f941751963bf177db5ae9bfb4b64bb7519e7634c17e800d5d523dab2"
+    },
+    "https://developer.apple.com/documentation/videotoolbox/vtmotionestimationsessionestimatemotionvectors": {
+      "etag": "\"3638-65d55d49cd93a-df\"",
+      "file_path": "documentation/VideoToolbox/vtmotionestimationsessionestimatemotionvectors.md",
+      "hash": "097fa7f2c3d6ccc3f5b675c9bffa73e95e2cb4a65c03a51b079686d301bd0987"
+    },
+    "https://developer.apple.com/documentation/videotoolbox/vtmotionestimationsessiongettypeid": {
+      "etag": "\"1077-65d55d4b5df2a-df\"",
+      "file_path": "documentation/VideoToolbox/vtmotionestimationsessiongettypeid.md",
+      "hash": "2ab2e8d3c8333d7041846de84f7ff2cfb79d156a0c7bbbfc5e7b11f943d45f8e"
+    },
+    "https://developer.apple.com/documentation/videotoolbox/vtmotionestimationsessioninvalidate": {
+      "etag": "\"12fc-65d55d4a71f7a-df\"",
+      "file_path": "documentation/VideoToolbox/vtmotionestimationsessioninvalidate.md",
+      "hash": "5d42f09acd07f4cc134f3e408dab872c9cc7b2f0032b3ab8603dcc514f063797"
+    },
+    "https://developer.apple.com/documentation/videotoolbox/vtmotionestimationsessionref": {
+      "etag": "\"1cb0-65d55d4accb0d-df\"",
+      "file_path": "documentation/VideoToolbox/vtmotionestimationsessionref.md",
+      "hash": "c6847d1519c65a01a4b20f66facd53fbcd07066dcd4d7b8f4d8d763e402fd478"
+    },
     "https://developer.apple.com/documentation/videotoolbox/vtmultipassstorage": {
       "etag": "\"1c80-65d55d4b924fa-df\"",
       "file_path": "documentation/VideoToolbox/vtmultipassstorage.md",
@@ -3224,6 +3704,11 @@
       "etag": "\"45c2-65d55d4ab621f-df\"",
       "file_path": "documentation/VideoToolbox/vtopticalflowconfiguration/frameheight.md",
       "hash": "155a4995e4c1bb981bc07f57929e70e20306d64901f2a5968ed82c86e643d9eb"
+    },
+    "https://developer.apple.com/documentation/videotoolbox/vtopticalflowconfiguration/framesupportedpixelformats-85kob": {
+      "etag": "\"131d-65d55d4ab621f-df\"",
+      "file_path": "documentation/VideoToolbox/vtopticalflowconfiguration/framesupportedpixelformats-85kob.md",
+      "hash": "42df5f60b2aa82eff83239847e3fad34f57f3d89f44a6eaff2f8576cc0d2ddb5"
     },
     "https://developer.apple.com/documentation/videotoolbox/vtopticalflowconfiguration/framesupportedpixelformats-gm6u": {
       "etag": "\"1d7c-65d55d4ab621f-df\"",
@@ -3420,10 +3905,25 @@
       "file_path": "documentation/VideoToolbox/vtpixeltransfersessiontransferimage(_,from,to).md",
       "hash": "b0d1b4c3dca3c57475b9421e3326e4ea65f6b601c096d13d406ab1d0a137b369"
     },
+    "https://developer.apple.com/documentation/videotoolbox/vtrawprocessingoutputhandler": {
+      "etag": "\"184e-65d55d4ae2f73-df\"",
+      "file_path": "documentation/VideoToolbox/vtrawprocessingoutputhandler.md",
+      "hash": "0aa6ba576a23c79bb8d651b14f256ff9fcb17516d08b7ec909d2935c9a25f5d0"
+    },
+    "https://developer.apple.com/documentation/videotoolbox/vtrawprocessingparameterchangehandler": {
+      "etag": "\"200f-65d55d4accb0d-df\"",
+      "file_path": "documentation/VideoToolbox/vtrawprocessingparameterchangehandler.md",
+      "hash": "a33901bd53b77050cabb937250f0dfb9287facc267b5790c43a834ecb50fc9ef"
+    },
     "https://developer.apple.com/documentation/videotoolbox/vtrawprocessingsession": {
       "etag": "\"44b3-65d55d4accb0d-df\"",
       "file_path": "documentation/VideoToolbox/vtrawprocessingsession.md",
       "hash": "cc8831271aad59213e5c0cfb6fb630217d94c57c80fed592536c80e2ec93e5d9"
+    },
+    "https://developer.apple.com/documentation/videotoolbox/vtrawprocessingsession-api-collection": {
+      "etag": "\"34c4-659025e9ff48a-df\"",
+      "file_path": "documentation/VideoToolbox/vtrawprocessingsession-api-collection.md",
+      "hash": "ceaee4e2e8805cf0e383ad1b4f0b920217a34719ae743203e3b87d2875cf4990"
     },
     "https://developer.apple.com/documentation/videotoolbox/vtrawprocessingsession/init(referencing:)": {
       "etag": "\"129a-65d55d4accb0d-df\"",
@@ -3645,6 +4145,56 @@
       "file_path": "documentation/VideoToolbox/vtrawprocessingsession/updateparameter(values).md",
       "hash": "16af628ea25ffcf1bf6b6df8975000ffe00e4fb3197dd9a50eb9b80dd4ba2b13"
     },
+    "https://developer.apple.com/documentation/videotoolbox/vtrawprocessingsessioncompleteframes": {
+      "etag": "\"18b4-65d55d4989bdf-df\"",
+      "file_path": "documentation/VideoToolbox/vtrawprocessingsessioncompleteframes.md",
+      "hash": "22363e4956c22e9a2e4d569c66a8d33bfbdde378b283c2e04866508044194ed2"
+    },
+    "https://developer.apple.com/documentation/videotoolbox/vtrawprocessingsessioncopyprocessingparameters": {
+      "etag": "\"2960-65d55d4ab621f-df\"",
+      "file_path": "documentation/VideoToolbox/vtrawprocessingsessioncopyprocessingparameters.md",
+      "hash": "634fab9c50f152dec966a03fb8989b0ff578c6d24bf70979a55594746f9537b0"
+    },
+    "https://developer.apple.com/documentation/videotoolbox/vtrawprocessingsessioncreate": {
+      "etag": "\"2e2f-65d55d4ab621f-df\"",
+      "file_path": "documentation/VideoToolbox/vtrawprocessingsessioncreate.md",
+      "hash": "7eed79c0c756f570c3b1a4ac413c94e198c402a5dc3ed4f8cd1a969b6943781a"
+    },
+    "https://developer.apple.com/documentation/videotoolbox/vtrawprocessingsessiongettypeid": {
+      "etag": "\"f45-65d55d4ae2f73-df\"",
+      "file_path": "documentation/VideoToolbox/vtrawprocessingsessiongettypeid.md",
+      "hash": "dd2a4df41c29c43071531e60814618f5da8a252a3e8a64acfe6aa4923c286e8f"
+    },
+    "https://developer.apple.com/documentation/videotoolbox/vtrawprocessingsessioninvalidate": {
+      "etag": "\"146a-65d55d4a88559-df\"",
+      "file_path": "documentation/VideoToolbox/vtrawprocessingsessioninvalidate.md",
+      "hash": "f1ec1185e2a154b84abd5265eed980ff95425accc1bfa6b3c02449b1178b44a8"
+    },
+    "https://developer.apple.com/documentation/videotoolbox/vtrawprocessingsessionprocessframe": {
+      "etag": "\"29b7-65d55d4b79256-df\"",
+      "file_path": "documentation/VideoToolbox/vtrawprocessingsessionprocessframe.md",
+      "hash": "de49db4234a401165620f50638563ada355bea72b9c239c0730ee78ddcbe8e8d"
+    },
+    "https://developer.apple.com/documentation/videotoolbox/vtrawprocessingsessionsetparameterchangedhander": {
+      "etag": "\"1d0b-65d55d4a71f7a-df\"",
+      "file_path": "documentation/VideoToolbox/vtrawprocessingsessionsetparameterchangedhander.md",
+      "hash": "8b08a97d762b287cf9d79c7737636ae8b6280d4a0ccf621f843742c6cbd84491"
+    },
+    "https://developer.apple.com/documentation/videotoolbox/vtrawprocessingsessionsetparameterchangedhandler": {
+      "etag": "\"2896-65d55d4b3ea8e-df\"",
+      "file_path": "documentation/VideoToolbox/vtrawprocessingsessionsetparameterchangedhandler.md",
+      "hash": "d12a52da50c4c960913996b0035a12ac645d16dfeefecd28dc919fdacc3c7ec0"
+    },
+    "https://developer.apple.com/documentation/videotoolbox/vtrawprocessingsessionsetprocessingparameters": {
+      "etag": "\"3863-65d55d49cd93a-df\"",
+      "file_path": "documentation/VideoToolbox/vtrawprocessingsessionsetprocessingparameters.md",
+      "hash": "c11f2bb5f2564c2bad8199b974bcb385a1b27fe62e5c07ef12497ef437b4bf8e"
+    },
+    "https://developer.apple.com/documentation/videotoolbox/vtrawprocessorextensionproperties(_:)": {
+      "etag": "\"1acb-65d55d4a25add-df\"",
+      "file_path": "documentation/VideoToolbox/vtrawprocessorextensionproperties(_).md",
+      "hash": "62baf0ed6963d9bc3f3b3b608d3681a7cbe2ec4fbd277c39bc265eb25e32770e"
+    },
     "https://developer.apple.com/documentation/videotoolbox/vtregisterprofessionalvideoworkflowvideodecoders()": {
       "etag": "\"47fa-65d55d4a71f7a-df\"",
       "file_path": "documentation/VideoToolbox/vtregisterprofessionalvideoworkflowvideodecoders().md",
@@ -3729,6 +4279,11 @@
       "etag": "\"6395-65d55d4b1f2a8-df\"",
       "file_path": "documentation/VideoToolbox/vtsuperresolutionscalerconfiguration/frameheight.md",
       "hash": "75f4d14db0a6dee5613a92817b7605ef96a369938cab56172293076c3907eaed"
+    },
+    "https://developer.apple.com/documentation/videotoolbox/vtsuperresolutionscalerconfiguration/framesupportedpixelformats": {
+      "etag": "\"4f6d-65d55d4b1f2a8-df\"",
+      "file_path": "documentation/VideoToolbox/vtsuperresolutionscalerconfiguration/framesupportedpixelformats.md",
+      "hash": "26111cbc9900d2fab3116cbcb71ac139d40436d116ff90ca074fc8eddaa28b6f"
     },
     "https://developer.apple.com/documentation/videotoolbox/vtsuperresolutionscalerconfiguration/framewidth": {
       "etag": "\"638b-65d55d4b1f2a8-df\"",
@@ -3860,6 +4415,11 @@
       "file_path": "documentation/VideoToolbox/vtsuperresolutionscalerconfiguration/supportedscalefactors-7ucur.md",
       "hash": "106f88b0faf6247b33f766289b3b3f5db77aa1dcd3806839dae92d0c4d2974bd"
     },
+    "https://developer.apple.com/documentation/videotoolbox/vtsuperresolutionscalerconfiguration/supportedscalefactors-94rce": {
+      "etag": "\"141f-65d55d4b1f2a8-df\"",
+      "file_path": "documentation/VideoToolbox/vtsuperresolutionscalerconfiguration/supportedscalefactors-94rce.md",
+      "hash": "c50705544643fa19a0e4f11645dd5b18c7c98c2220ef8492dbd36877203c71b9"
+    },
     "https://developer.apple.com/documentation/videotoolbox/vtsuperresolutionscalerconfiguration/usesprecomputedflow": {
       "etag": "\"62f3-65d55d4b1f2a8-df\"",
       "file_path": "documentation/VideoToolbox/vtsuperresolutionscalerconfiguration/usesprecomputedflow.md",
@@ -3869,6 +4429,11 @@
       "etag": "\"7677-65d55d4aa0de8-df\"",
       "file_path": "documentation/VideoToolbox/vtsuperresolutionscalerparameters.md",
       "hash": "c0ccd36c74916d2a293ef32616ce5756bac908d58eb1d55abaac18d8ba249d6d"
+    },
+    "https://developer.apple.com/documentation/videotoolbox/vtsuperresolutionscalerparameters/destinationframe": {
+      "etag": "\"3b9e-65d55d4accb0d-df\"",
+      "file_path": "documentation/VideoToolbox/vtsuperresolutionscalerparameters/destinationframe.md",
+      "hash": "11cf60945e8f613039859c1801b85d369978dbdd2a2f5be4f066d20e5c374755"
     },
     "https://developer.apple.com/documentation/videotoolbox/vtsuperresolutionscalerparameters/init(sourceframe:previousframe:previousoutputframe:opticalflow:submissionmode:destinationframe:)": {
       "etag": "\"5dcb-65d55d4accb0d-df\"",
@@ -3935,6 +4500,11 @@
       "file_path": "documentation/VideoToolbox/vttemporalnoisefilterconfiguration/frameheight.md",
       "hash": "e032be7234becf9f91a239a7075ec5dd6fefbdff46b7344bd2adb85d8791b6e1"
     },
+    "https://developer.apple.com/documentation/videotoolbox/vttemporalnoisefilterconfiguration/framesupportedpixelformats": {
+      "etag": "\"306c-65d55d4b79256-df\"",
+      "file_path": "documentation/VideoToolbox/vttemporalnoisefilterconfiguration/framesupportedpixelformats.md",
+      "hash": "b1de00bdfa4c67ded722cf4f25b3e5ba90cbc1ff36e9e92fa4ffe9169738b83a"
+    },
     "https://developer.apple.com/documentation/videotoolbox/vttemporalnoisefilterconfiguration/framewidth": {
       "etag": "\"44c4-65d55d4b79256-df\"",
       "file_path": "documentation/VideoToolbox/vttemporalnoisefilterconfiguration/framewidth.md",
@@ -3950,6 +4520,26 @@
       "file_path": "documentation/VideoToolbox/vttemporalnoisefilterconfiguration/issupported.md",
       "hash": "7694fec9b9f45e5565f5c338381720f8d708e078f4919e25de955ab382a5a873"
     },
+    "https://developer.apple.com/documentation/videotoolbox/vttemporalnoisefilterconfiguration/maximumdimensions": {
+      "etag": "\"1f33-65d55d4b79256-df\"",
+      "file_path": "documentation/VideoToolbox/vttemporalnoisefilterconfiguration/maximumdimensions.md",
+      "hash": "89577510653aa1e8643783991ec1d65f7096d7a1d2b910710f8bea0ebf6d7e18"
+    },
+    "https://developer.apple.com/documentation/videotoolbox/vttemporalnoisefilterconfiguration/minimumdimensions": {
+      "etag": "\"1f33-65d55d4b79256-df\"",
+      "file_path": "documentation/VideoToolbox/vttemporalnoisefilterconfiguration/minimumdimensions.md",
+      "hash": "cd1750ee08d87db2aba5c6328a5a27234e0cb2ed33d914876dde213ca70dd900"
+    },
+    "https://developer.apple.com/documentation/videotoolbox/vttemporalnoisefilterconfiguration/nextframecount": {
+      "etag": "\"332b-65d55d4b79256-df\"",
+      "file_path": "documentation/VideoToolbox/vttemporalnoisefilterconfiguration/nextframecount.md",
+      "hash": "4f1a3117ddbefe4829245842e40a0ce65ab69440b0651203bc03ee374a232444"
+    },
+    "https://developer.apple.com/documentation/videotoolbox/vttemporalnoisefilterconfiguration/previousframecount": {
+      "etag": "\"3341-65d55d4b79256-df\"",
+      "file_path": "documentation/VideoToolbox/vttemporalnoisefilterconfiguration/previousframecount.md",
+      "hash": "a4b4143ae0e9d3a1bba6a6b323d4db41279283567fa9f2777e8a7859a3541ab5"
+    },
     "https://developer.apple.com/documentation/videotoolbox/vttemporalnoisefilterconfiguration/sourcepixelbufferattributes": {
       "etag": "\"4847-65d55d4b79256-df\"",
       "file_path": "documentation/VideoToolbox/vttemporalnoisefilterconfiguration/sourcepixelbufferattributes.md",
@@ -3960,6 +4550,11 @@
       "file_path": "documentation/VideoToolbox/vttemporalnoisefilterconfiguration/supportedpixelformats.md",
       "hash": "9520e56cbc20fe6dd5911567740cbf458b34c68c25a121b1ae091efeabbca788"
     },
+    "https://developer.apple.com/documentation/videotoolbox/vttemporalnoisefilterconfiguration/supportedsourcepixelformats-1w5i2": {
+      "etag": "\"13ee-65d55d4b79256-df\"",
+      "file_path": "documentation/VideoToolbox/vttemporalnoisefilterconfiguration/supportedsourcepixelformats-1w5i2.md",
+      "hash": "0f49e8bd43253b7c7bff6861c9030764dbf3247cdbdaabd68037af5c021a3620"
+    },
     "https://developer.apple.com/documentation/videotoolbox/vttemporalnoisefilterconfiguration/supportedsourcepixelformats-4ipcg": {
       "etag": "\"3067-65d55d4b79256-df\"",
       "file_path": "documentation/VideoToolbox/vttemporalnoisefilterconfiguration/supportedsourcepixelformats-4ipcg.md",
@@ -3969,6 +4564,11 @@
       "etag": "\"7066-65d55d4a5460e-df\"",
       "file_path": "documentation/VideoToolbox/vttemporalnoisefilterparameters.md",
       "hash": "d5fbc30be3bd3fb567ce0bca8b3ac1232b982d7fdbbe14e63bb5c3e1b729d6f6"
+    },
+    "https://developer.apple.com/documentation/videotoolbox/vttemporalnoisefilterparameters/destinationframe": {
+      "etag": "\"33c4-65d55d4a5460e-df\"",
+      "file_path": "documentation/VideoToolbox/vttemporalnoisefilterparameters/destinationframe.md",
+      "hash": "ab89719e13249837e8e7b037c8b573407730ccf53188982d42e4bf2c177020f5"
     },
     "https://developer.apple.com/documentation/videotoolbox/vttemporalnoisefilterparameters/filterstrength": {
       "etag": "\"3a89-65d55d4a5460e-df\"",
@@ -4930,6 +5530,11 @@
       "file_path": "documentation/VideoToolbox/kvtextensiondisablederr.md",
       "hash": "35201368f76cc359ec0232fe43c72bc11fdd25557a25c06c2f62830a4434a699"
     },
+    "https://developer.apple.com/tutorials/data/documentation/videotoolbox/kvtextensionproperties_codecnamekey.json": {
+      "etag": "\"2ffd-65d55d4a71f7a-df\"",
+      "file_path": "documentation/VideoToolbox/kvtextensionproperties_codecnamekey.md",
+      "hash": "57c7e6bd4fd2539720730458aa527776fb06dbd224a449f4934984d0f97a0538"
+    },
     "https://developer.apple.com/tutorials/data/documentation/videotoolbox/kvtformatdescriptionchangenotsupportederr.json": {
       "etag": "\"62b1-65d55d4accb0d-df\"",
       "file_path": "documentation/VideoToolbox/kvtformatdescriptionchangenotsupportederr.md",
@@ -4970,6 +5575,16 @@
       "file_path": "documentation/VideoToolbox/kvthdrmetadatainsertionmode_requestsdrrangepreservation.md",
       "hash": "0584cca5cba8e52f1c1c48858b4ee2ea626a21c05006ddad8fd10e176a09c43a"
     },
+    "https://developer.apple.com/tutorials/data/documentation/videotoolbox/kvthdrperframemetadatagenerationhdrformattype_dolbyvision.json": {
+      "etag": "\"1e7e-65d55d4ab621f-df\"",
+      "file_path": "documentation/VideoToolbox/kvthdrperframemetadatagenerationhdrformattype_dolbyvision.md",
+      "hash": "27967d7ca03f60225fe79dc69b9d58640f6a80ce9066918bb405b705af9fda9b"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/videotoolbox/kvthdrperframemetadatagenerationoptionskey_hdrformats.json": {
+      "etag": "\"2ee5-65d55d4accb0d-df\"",
+      "file_path": "documentation/VideoToolbox/kvthdrperframemetadatagenerationoptionskey_hdrformats.md",
+      "hash": "f78756fb61a0a6736c4bf2f833c89ed3cf13631108517c1ef72c2276f7eafb86"
+    },
     "https://developer.apple.com/tutorials/data/documentation/videotoolbox/kvtheroeye_left.json": {
       "etag": "\"1def-65d55d49ad031-df\"",
       "file_path": "documentation/VideoToolbox/kvtheroeye_left.md",
@@ -4999,6 +5614,26 @@
       "etag": "\"158d-65d55d4a5460e-df\"",
       "file_path": "documentation/VideoToolbox/kvtlogtransferfunctionmismatcherr.md",
       "hash": "87cbc6ca8a7a47d792907fac303cbb0e584d1b37e31aa098f76b752f5824d7c9"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/videotoolbox/kvtmotionestimationsessioncreationoption_detecttruemotion.json": {
+      "etag": "\"27c4-659025e84b8a3-df\"",
+      "file_path": "documentation/VideoToolbox/kvtmotionestimationsessioncreationoption_detecttruemotion.md",
+      "hash": "e2b46135384ccebd40871313f85b6eff1f403077e6aae1f127fdce3e8737c350"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/videotoolbox/kvtmotionestimationsessioncreationoption_label.json": {
+      "etag": "\"367a-65d55d4a71f7a-df\"",
+      "file_path": "documentation/VideoToolbox/kvtmotionestimationsessioncreationoption_label.md",
+      "hash": "ec535b095440e6001bbf5a5e7c1db4e2a4405667267085fb5c228598975ed362"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/videotoolbox/kvtmotionestimationsessioncreationoption_motionvectorsize.json": {
+      "etag": "\"37a6-65d55d49ad031-df\"",
+      "file_path": "documentation/VideoToolbox/kvtmotionestimationsessioncreationoption_motionvectorsize.md",
+      "hash": "72bff88f1ef231853da0dc2860277eed4614cb7917155da2ec49827640e5c422"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/videotoolbox/kvtmotionestimationsessioncreationoption_usemultipasssearch.json": {
+      "etag": "\"37e5-65d55d49cd93a-df\"",
+      "file_path": "documentation/VideoToolbox/kvtmotionestimationsessioncreationoption_usemultipasssearch.md",
+      "hash": "1e935f08c92fc80d824fa645ba8db9de43adcf6a9aa2ea5fb8f3b7b38287c5bf"
     },
     "https://developer.apple.com/tutorials/data/documentation/videotoolbox/kvtmultipassstoragecreationoption_donotdelete.json": {
       "etag": "\"2287-65d55d4a88559-df\"",
@@ -5475,6 +6110,126 @@
       "file_path": "documentation/VideoToolbox/kvtqpmodulationlevel_disable.md",
       "hash": "999703b29e9687d369fde2716dce612f3c2574d44f8f51e0450ef633c0eea00b"
     },
+    "https://developer.apple.com/tutorials/data/documentation/videotoolbox/kvtrawprocessingparameter_cameravalue.json": {
+      "etag": "\"3d4d-65d55d4accb0d-df\"",
+      "file_path": "documentation/VideoToolbox/kvtrawprocessingparameter_cameravalue.md",
+      "hash": "08b8b9758d91324ac67ca1272897411447ba6020926ad176945be9a547901a92"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/videotoolbox/kvtrawprocessingparameter_currentvalue.json": {
+      "etag": "\"3d35-65d55d49ad031-df\"",
+      "file_path": "documentation/VideoToolbox/kvtrawprocessingparameter_currentvalue.md",
+      "hash": "7ef4cd03d3e92c04cd7d8234df7d54a083b463513f3f734e23e3f8983d8b5c7a"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/videotoolbox/kvtrawprocessingparameter_description.json": {
+      "etag": "\"3c88-65d55d4b3ea8e-df\"",
+      "file_path": "documentation/VideoToolbox/kvtrawprocessingparameter_description.md",
+      "hash": "13243f99c770d3087f6df558591369da8450e89db5736935661d53d016ecffc4"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/videotoolbox/kvtrawprocessingparameter_enabled.json": {
+      "etag": "\"3c47-65d55d4a25add-df\"",
+      "file_path": "documentation/VideoToolbox/kvtrawprocessingparameter_enabled.md",
+      "hash": "f344e757d5a2d7b6d45d240f43a62c332c835072894c7ba41768a1fb51ab6073"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/videotoolbox/kvtrawprocessingparameter_initialvalue.json": {
+      "etag": "\"3d6b-65d55d49e95c9-df\"",
+      "file_path": "documentation/VideoToolbox/kvtrawprocessingparameter_initialvalue.md",
+      "hash": "bf835113b4cb12b5f2793620c12b44b5d818e9fb41fa64696fcef0ae55eed958"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/videotoolbox/kvtrawprocessingparameter_key.json": {
+      "etag": "\"3c2d-65d55d4a5460e-df\"",
+      "file_path": "documentation/VideoToolbox/kvtrawprocessingparameter_key.md",
+      "hash": "e60c3d9cede9ff844a1b9242bdcbc463603f84d292a96696ac0d3f5ab7620f08"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/videotoolbox/kvtrawprocessingparameter_listarray.json": {
+      "etag": "\"3c48-65d55d49ad031-df\"",
+      "file_path": "documentation/VideoToolbox/kvtrawprocessingparameter_listarray.md",
+      "hash": "6f81f1c1bcf0a56676d92ca9db564ffd8b30d7ac6298d54747aea095bb492087"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/videotoolbox/kvtrawprocessingparameter_maximumvalue.json": {
+      "etag": "\"3d68-65d55d4b924fa-df\"",
+      "file_path": "documentation/VideoToolbox/kvtrawprocessingparameter_maximumvalue.md",
+      "hash": "e4fc6090900f97dad86b9c7d936c9306a0c376133b945d0616670ff26bee3dbe"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/videotoolbox/kvtrawprocessingparameter_minimumvalue.json": {
+      "etag": "\"3d68-65d55d4b5df2a-df\"",
+      "file_path": "documentation/VideoToolbox/kvtrawprocessingparameter_minimumvalue.md",
+      "hash": "515d15acddfe85f820fdd151d9d056aef85ecdeb7c38570b3a8b5f833d5c0723"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/videotoolbox/kvtrawprocessingparameter_name.json": {
+      "etag": "\"3c2a-65d55d4a5460e-df\"",
+      "file_path": "documentation/VideoToolbox/kvtrawprocessingparameter_name.md",
+      "hash": "7e403c0da80a2d7811bdd070bb0a56a91a85e2e49da76b771d695b91732a1732"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/videotoolbox/kvtrawprocessingparameter_neutralvalue.json": {
+      "etag": "\"3d1e-65d55d4accb0d-df\"",
+      "file_path": "documentation/VideoToolbox/kvtrawprocessingparameter_neutralvalue.md",
+      "hash": "b762418157fae491deeb1923175a4e8bcd44aa7e2d5e6c3bb787b7944a4a9e6c"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/videotoolbox/kvtrawprocessingparameter_subgroup.json": {
+      "etag": "\"3c64-65d55d4a5460e-df\"",
+      "file_path": "documentation/VideoToolbox/kvtrawprocessingparameter_subgroup.md",
+      "hash": "2aeab9b59e26556ebf03a942c1ca3d800e042a953f08c44dd56109833a48d7ee"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/videotoolbox/kvtrawprocessingparameter_valuetype.json": {
+      "etag": "\"410f-65d55d4aa0de8-df\"",
+      "file_path": "documentation/VideoToolbox/kvtrawprocessingparameter_valuetype.md",
+      "hash": "cd66f7babcf3968caa56458103020c3ca90763ba4a94826b61725d95ea75e098"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/videotoolbox/kvtrawprocessingparameterlistelement_description.json": {
+      "etag": "\"3cc4-65d55d4a5460e-df\"",
+      "file_path": "documentation/VideoToolbox/kvtrawprocessingparameterlistelement_description.md",
+      "hash": "f10218f00499f7d2aba4091a9059e8531dae9c51cdd9d5da3b0def1d99c18dfb"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/videotoolbox/kvtrawprocessingparameterlistelement_label.json": {
+      "etag": "\"3c8a-65d55d4accb0d-df\"",
+      "file_path": "documentation/VideoToolbox/kvtrawprocessingparameterlistelement_label.md",
+      "hash": "0e554eec6745cf8ce4089b65512e74c65257058b91f23a29b5ac9aa27a9c21dc"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/videotoolbox/kvtrawprocessingparameterlistelement_listelementid.json": {
+      "etag": "\"3cd1-65d55d4a88559-df\"",
+      "file_path": "documentation/VideoToolbox/kvtrawprocessingparameterlistelement_listelementid.md",
+      "hash": "af5ecf31e9c69a657ca7c35701e17737a8421e022a5eee4e10304ecc4a64fd0c"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/videotoolbox/kvtrawprocessingparametervaluetype_boolean.json": {
+      "etag": "\"3c66-65d55d4a71f7a-df\"",
+      "file_path": "documentation/VideoToolbox/kvtrawprocessingparametervaluetype_boolean.md",
+      "hash": "5cdd2fe482115dfa8ee754d4a789b17c44e8a3086c40964183cb40ce48d31969"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/videotoolbox/kvtrawprocessingparametervaluetype_float.json": {
+      "etag": "\"3c61-65d55d4b3ea8e-df\"",
+      "file_path": "documentation/VideoToolbox/kvtrawprocessingparametervaluetype_float.md",
+      "hash": "526d7d6be0d46872e71a5fefde95da78b2466fa15a798ed57a7cad523d8d9c4a"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/videotoolbox/kvtrawprocessingparametervaluetype_integer.json": {
+      "etag": "\"3c67-65d55d4ae2f73-df\"",
+      "file_path": "documentation/VideoToolbox/kvtrawprocessingparametervaluetype_integer.md",
+      "hash": "a671e51163760ba35ae627de0d45fb7818074e827d6fe98d7a145252826f2ec5"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/videotoolbox/kvtrawprocessingparametervaluetype_list.json": {
+      "etag": "\"3c51-65d55d49ad031-df\"",
+      "file_path": "documentation/VideoToolbox/kvtrawprocessingparametervaluetype_list.md",
+      "hash": "16a675c4e71f8fe05b36554181b6aafefd4b9fee1d8279a4a0219efd57cbad8e"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/videotoolbox/kvtrawprocessingparametervaluetype_subgroup.json": {
+      "etag": "\"3c6d-65d55d49ad031-df\"",
+      "file_path": "documentation/VideoToolbox/kvtrawprocessingparametervaluetype_subgroup.md",
+      "hash": "5f44bf1e0c189c0448707a3fe21217b479492b8c3d0d5ed27029430c97711e66"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/videotoolbox/kvtrawprocessingpropertykey_metadataforsidecarfile.json": {
+      "etag": "\"2722-65d55d4b3ea8e-df\"",
+      "file_path": "documentation/VideoToolbox/kvtrawprocessingpropertykey_metadataforsidecarfile.md",
+      "hash": "fe112a1483e01b3aa6f241d61033b93d26fb46753b96cbeedcaa53efabe32f89"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/videotoolbox/kvtrawprocessingpropertykey_metaldeviceregistryid.json": {
+      "etag": "\"1ea8-65d55d4ab621f-df\"",
+      "file_path": "documentation/VideoToolbox/kvtrawprocessingpropertykey_metaldeviceregistryid.md",
+      "hash": "baa251933b000eebc190e37e71782b425485820bdc9cf1d8a19ba535dad70702"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/videotoolbox/kvtrawprocessingpropertykey_outputcolorattachments.json": {
+      "etag": "\"26cd-65d55d4a71f7a-df\"",
+      "file_path": "documentation/VideoToolbox/kvtrawprocessingpropertykey_outputcolorattachments.md",
+      "hash": "c52c2105b7ddf76e0fc4d8cd59a9196bd2e9ae70cf3c90419337f4769ff6b4d0"
+    },
     "https://developer.apple.com/tutorials/data/documentation/videotoolbox/kvtrotation_0.json": {
       "etag": "\"2852-65d55d4a88559-df\"",
       "file_path": "documentation/VideoToolbox/kvtrotation_0.md",
@@ -5690,6 +6445,11 @@
       "file_path": "documentation/VideoToolbox/kvtvideoencoderlist_supportsframereordering.md",
       "hash": "91258310fd5d8adb1275eb8c2f797c7065d486d761d79aa3d4c6a47d55ee1800"
     },
+    "https://developer.apple.com/tutorials/data/documentation/videotoolbox/kvtvideoencoderlist_supportsmultipass.json": {
+      "etag": "\"515d-659025e87760d-df\"",
+      "file_path": "documentation/VideoToolbox/kvtvideoencoderlist_supportsmultipass.md",
+      "hash": "227203cd2cd0e908561e318a9c916227283521cc9a3646728a4a1de6d9a26520"
+    },
     "https://developer.apple.com/tutorials/data/documentation/videotoolbox/kvtvideoencoderlistoption_includestandarddefinitiondvencoders.json": {
       "etag": "\"5fb4-65d55d4b3ea8e-df\"",
       "file_path": "documentation/VideoToolbox/kvtvideoencoderlistoption_includestandarddefinitiondvencoders.md",
@@ -5770,6 +6530,16 @@
       "file_path": "documentation/VideoToolbox/property-type-constants.md",
       "hash": "c34c1ad28dd453e186d374e9ad53bb22ccf5a26526fe1b87c1306243d3b1dfd4"
     },
+    "https://developer.apple.com/tutorials/data/documentation/videotoolbox/raw-processing-parameters.json": {
+      "etag": "\"5456-659025e87760d-df\"",
+      "file_path": "documentation/VideoToolbox/raw-processing-parameters.md",
+      "hash": "c2406c5aa23e21d5225a001e974347c4558e10a578e4511d81e673fb2405389a"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/videotoolbox/raw-processing-properties.json": {
+      "etag": "\"2d98-659025e7e0ddb-df\"",
+      "file_path": "documentation/VideoToolbox/raw-processing-properties.md",
+      "hash": "48e82f81e0bb4d1c8e532f9955992d5442654c75a1133d6829e3992a7ce73b0c"
+    },
     "https://developer.apple.com/tutorials/data/documentation/videotoolbox/read-write-status-constants.json": {
       "etag": "\"4087-659025e98f1da-df\"",
       "file_path": "documentation/VideoToolbox/read-write-status-constants.md",
@@ -5794,6 +6564,11 @@
       "etag": "\"f74-659025e9ecec6-df\"",
       "file_path": "documentation/VideoToolbox/videotoolbox-reference.md",
       "hash": "ea447e26347c17e45babbd7a9a7a108c062b39e08968cc2c4d03139a680663e3"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/videotoolbox/vt_available_starting.json": {
+      "etag": "\"10ab-65d55d4b1f2a8-df\"",
+      "file_path": "documentation/VideoToolbox/vt_available_starting.md",
+      "hash": "cbc0fb9d98f628e9479cef9eb8b7af261071b9e5592df03762a5c6bd926e0cbb"
     },
     "https://developer.apple.com/tutorials/data/documentation/videotoolbox/vt_support_colorsync_pixel_transfer.json": {
       "etag": "\"1a80-65d55d4b1f2a8-df\"",
@@ -5850,6 +6625,16 @@
       "file_path": "documentation/VideoToolbox/vtcompressionsessionencodemultiimageframe(_,taggedbuffers,presentationtimestamp,duration,frameproperties,infoflagsout,outputhandler).md",
       "hash": "c8883659d2fa53a90f8d2f392469cf68b663327820acd9764eb6f497d80dc88f"
     },
+    "https://developer.apple.com/tutorials/data/documentation/videotoolbox/vtcompressionsessionencodemultiimageframe.json": {
+      "etag": "\"4b1a-65d55d4b924fa-df\"",
+      "file_path": "documentation/VideoToolbox/vtcompressionsessionencodemultiimageframe.md",
+      "hash": "aac860b36631a48c5c139477b030a92c69ed3042074ea9a087cc6aa55aef4155"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/videotoolbox/vtcompressionsessionencodemultiimageframewithoutputhandler.json": {
+      "etag": "\"58a0-65d55d4aa0de8-df\"",
+      "file_path": "documentation/VideoToolbox/vtcompressionsessionencodemultiimageframewithoutputhandler.md",
+      "hash": "e455b2224b2c566d86bad050ae78921d03e23dd5e9173f123ab1abc18aaee68c"
+    },
     "https://developer.apple.com/tutorials/data/documentation/videotoolbox/vtcompressionsessionendpass(_:furtherpassesrequestedout:_:).json": {
       "etag": "\"5915-65d55d49cd93a-df\"",
       "file_path": "documentation/VideoToolbox/vtcompressionsessionendpass(_,furtherpassesrequestedout,_).md",
@@ -5895,10 +6680,20 @@
       "file_path": "documentation/VideoToolbox/vtcompressionsessionpreparetoencodeframes(_).md",
       "hash": "8ab69235d1d7cb23beed1a36b2f72350db7862fd4c583f8e06f50e41ffb79477"
     },
+    "https://developer.apple.com/tutorials/data/documentation/videotoolbox/vtcopyrawprocessorextensionproperties.json": {
+      "etag": "\"33dc-65d55d4a71f7a-df\"",
+      "file_path": "documentation/VideoToolbox/vtcopyrawprocessorextensionproperties.md",
+      "hash": "c5c1ac1f5c5cbfc08d1701ca53194245c4a20e69f9c0397bdcfe22e28e56f546"
+    },
     "https://developer.apple.com/tutorials/data/documentation/videotoolbox/vtcopysupportedpropertydictionaryforencoder(width:height:codectype:encoderspecification:encoderidout:supportedpropertiesout:).json": {
       "etag": "\"6991-65d55d4b924fa-df\"",
       "file_path": "documentation/VideoToolbox/vtcopysupportedpropertydictionaryforencoder(width,height,codectype,encoderspecification,encoderidout,supportedpropertiesout).md",
       "hash": "eb6791f6881db0a9ba703f5e56455225e4c8dceeec771efcca1658831b3cab09"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/videotoolbox/vtcopyvideodecoderextensionproperties.json": {
+      "etag": "\"2a41-65d55d4a88559-df\"",
+      "file_path": "documentation/VideoToolbox/vtcopyvideodecoderextensionproperties.md",
+      "hash": "d2d3551e194dbfbd5f368d988109eed2f293831d975793e45a693edd05eb97f9"
     },
     "https://developer.apple.com/tutorials/data/documentation/videotoolbox/vtcopyvideoencoderlist(_:_:).json": {
       "etag": "\"58cd-65d55d4accb0d-df\"",
@@ -5919,6 +6714,26 @@
       "etag": "\"158e-65d55d4b3ea8e-df\"",
       "file_path": "documentation/VideoToolbox/vtdecodeframeflags/init(rawvalue).md",
       "hash": "3c4764ef9ab6793f261e6e7a96320235ec36e8da3152de8864ff85ab59f36ded"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/videotoolbox/vtdecodeframeflags/kvtdecodeframe_1xrealtimeplayback.json": {
+      "etag": "\"1b58-65d55d4b3ea8e-df\"",
+      "file_path": "documentation/VideoToolbox/vtdecodeframeflags/kvtdecodeframe_1xrealtimeplayback.md",
+      "hash": "29e5ee7d838f406da58a453d825a89f7c88d921b11c49586e08dc9eddcf9ec52"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/videotoolbox/vtdecodeframeflags/kvtdecodeframe_donotoutputframe.json": {
+      "etag": "\"20d3-65d55d4b3ea8e-df\"",
+      "file_path": "documentation/VideoToolbox/vtdecodeframeflags/kvtdecodeframe_donotoutputframe.md",
+      "hash": "644dba511d5d0a36b7bdd55fc04c945861fb37cb95259cc6280b86596d6224f1"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/videotoolbox/vtdecodeframeflags/kvtdecodeframe_enableasynchronousdecompression.json": {
+      "etag": "\"1cb8-65d55d4b3ea8e-df\"",
+      "file_path": "documentation/VideoToolbox/vtdecodeframeflags/kvtdecodeframe_enableasynchronousdecompression.md",
+      "hash": "6e58ac2be5a7207447df9f583839ec8f2d160ba38f1f0bdf2144d18bc1e74599"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/videotoolbox/vtdecodeframeflags/kvtdecodeframe_enabletemporalprocessing.json": {
+      "etag": "\"28c9-65d55d4b3ea8e-df\"",
+      "file_path": "documentation/VideoToolbox/vtdecodeframeflags/kvtdecodeframe_enabletemporalprocessing.md",
+      "hash": "674e7c83ea6fd29a99a30f8b704a441f3d083020c88f0b4fb6295f65f65ccae6"
     },
     "https://developer.apple.com/tutorials/data/documentation/videotoolbox/vtdecodeinfoflags.json": {
       "etag": "\"6734-65d55d4a25add-df\"",
@@ -5995,6 +6810,11 @@
       "file_path": "documentation/VideoToolbox/vtdecompressionoutputhandler.md",
       "hash": "3f1aaa5ef6fd88e04a8c8753008fbd2151611659e9b5910ddee7d411d390488e"
     },
+    "https://developer.apple.com/tutorials/data/documentation/videotoolbox/vtdecompressionoutputmultiimagecallback.json": {
+      "etag": "\"65de-65d55d4b924fa-df\"",
+      "file_path": "documentation/VideoToolbox/vtdecompressionoutputmultiimagecallback.md",
+      "hash": "a1b738b9e0878ea9f01ccc90a2a7693fb72909aaf9ee6e4b1e484e6b540d6e99"
+    },
     "https://developer.apple.com/tutorials/data/documentation/videotoolbox/vtdecompressionsession-api-collection.json": {
       "etag": "\"e8e4-659025e94b4d4-df\"",
       "file_path": "documentation/VideoToolbox/vtdecompressionsession-api-collection.md",
@@ -6050,6 +6870,11 @@
       "file_path": "documentation/VideoToolbox/vtdecompressionsessiondecodeframe(_,samplebuffer,flags,infoflagsout,outputhandler).md",
       "hash": "58b74923b0c0de280fd5e5f95587d044f51c3bac28e86a9b37272420706271d1"
     },
+    "https://developer.apple.com/tutorials/data/documentation/videotoolbox/vtdecompressionsessiondecodeframewithmultiimagecapableoutputhandler.json": {
+      "etag": "\"3e7c-65d55d4b1f2a8-df\"",
+      "file_path": "documentation/VideoToolbox/vtdecompressionsessiondecodeframewithmultiimagecapableoutputhandler.md",
+      "hash": "8cf6cc8261bf305747eaa92609c93565079a3173620dbe0854edb08f01d42e7b"
+    },
     "https://developer.apple.com/tutorials/data/documentation/videotoolbox/vtdecompressionsessionfinishdelayedframes(_:).json": {
       "etag": "\"7c18-65d55d4afc75c-df\"",
       "file_path": "documentation/VideoToolbox/vtdecompressionsessionfinishdelayedframes(_).md",
@@ -6064,6 +6889,11 @@
       "etag": "\"24f5-65d55d4989bdf-df\"",
       "file_path": "documentation/VideoToolbox/vtdecompressionsessioninvalidate(_).md",
       "hash": "ee8edb85392cc4c89035caea9d42fe7f9b7ca26239c38c2e4d1377d63cf56c5f"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/videotoolbox/vtdecompressionsessionsetmultiimagecallback.json": {
+      "etag": "\"38c5-65d55d49e95c9-df\"",
+      "file_path": "documentation/VideoToolbox/vtdecompressionsessionsetmultiimagecallback.md",
+      "hash": "f356324b3b599bdb193cf2dd7aa551b087e19713f31c87f4064a2d569af91e4d"
     },
     "https://developer.apple.com/tutorials/data/documentation/videotoolbox/vtdecompressionsessionwaitforasynchronousframes(_:).json": {
       "etag": "\"77cf-65d55d49ad031-df\"",
@@ -6155,6 +6985,16 @@
       "file_path": "documentation/VideoToolbox/vtframeprocessor/process(with,parameters).md",
       "hash": "68ab892b96db4944303ade83755e1117bbf7d6c6a2b2d295bc9b0a607d4c2d05"
     },
+    "https://developer.apple.com/tutorials/data/documentation/videotoolbox/vtframeprocessor/processwithparameters:error:.json": {
+      "etag": "\"2153-65d55d4ba366a-df\"",
+      "file_path": "documentation/VideoToolbox/vtframeprocessor/processwithparameters_error_.md",
+      "hash": "611652bc7a4ca4c4500d546dffa8ec2b849ac787a07a557df5bb47d47bfb366c"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/videotoolbox/vtframeprocessor/processwithparameters:frameoutputhandler:.json": {
+      "etag": "\"2942-65d55d4ba366a-df\"",
+      "file_path": "documentation/VideoToolbox/vtframeprocessor/processwithparameters_frameoutputhandler_.md",
+      "hash": "5a6d4d99644089a180a46e6f6e16d58ae6bb175d864f3dc3961d7686f22c1783"
+    },
     "https://developer.apple.com/tutorials/data/documentation/videotoolbox/vtframeprocessor/startsession(configuration:).json": {
       "etag": "\"4b62-65d55d4ba366a-df\"",
       "file_path": "documentation/VideoToolbox/vtframeprocessor/startsession(configuration).md",
@@ -6170,10 +7010,20 @@
       "file_path": "documentation/VideoToolbox/vtframeprocessorconfiguration/destinationpixelbufferattributes.md",
       "hash": "73f4996d13b16c6467e38f61290f3f14859c1964066dd2ef39c96a3a94b64bb6"
     },
+    "https://developer.apple.com/tutorials/data/documentation/videotoolbox/vtframeprocessorconfiguration/framesupportedpixelformats.json": {
+      "etag": "\"2116-65d55d4aa0de8-df\"",
+      "file_path": "documentation/VideoToolbox/vtframeprocessorconfiguration/framesupportedpixelformats.md",
+      "hash": "d7cf00de2945ae4c6538390153bcc5f02dbebd44e70b318e3a7ee57e17eb780a"
+    },
     "https://developer.apple.com/tutorials/data/documentation/videotoolbox/vtframeprocessorconfiguration/issupported.json": {
       "etag": "\"22e9-65d55d4aa0de8-df\"",
       "file_path": "documentation/VideoToolbox/vtframeprocessorconfiguration/issupported.md",
       "hash": "f0abd88edb475e01648728120efbc4b9751d8d5199486d7a0d0ffc9feaf07f51"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/videotoolbox/vtframeprocessorconfiguration/maximumdimensions-1x3l0.json": {
+      "etag": "\"1752-65d55d4aa0de8-df\"",
+      "file_path": "documentation/VideoToolbox/vtframeprocessorconfiguration/maximumdimensions-1x3l0.md",
+      "hash": "6fae55600cf19ac5fecb6f0f455291be9edc86b8f8eedf20a96f568558267077"
     },
     "https://developer.apple.com/tutorials/data/documentation/videotoolbox/vtframeprocessorconfiguration/maximumdimensions-4vmra.json": {
       "etag": "\"1d00-65d55d4aa0de8-df\"",
@@ -6185,15 +7035,30 @@
       "file_path": "documentation/VideoToolbox/vtframeprocessorconfiguration/minimumdimensions-42b0h.md",
       "hash": "20837cdebdb0052994824f4d9350019cc25bf084ecba04636e23adbcdbb974f3"
     },
+    "https://developer.apple.com/tutorials/data/documentation/videotoolbox/vtframeprocessorconfiguration/minimumdimensions-9n9r0.json": {
+      "etag": "\"1752-65d55d4aa0de8-df\"",
+      "file_path": "documentation/VideoToolbox/vtframeprocessorconfiguration/minimumdimensions-9n9r0.md",
+      "hash": "525608db90b49e4eb3bdf889ea13a3fe5dd9b933d3f347e5055f043f9e611779"
+    },
     "https://developer.apple.com/tutorials/data/documentation/videotoolbox/vtframeprocessorconfiguration/nextframecount-18e47.json": {
       "etag": "\"1a3e-65d55d4aa0de8-df\"",
       "file_path": "documentation/VideoToolbox/vtframeprocessorconfiguration/nextframecount-18e47.md",
       "hash": "18cfa98ac40a4a6556642a4d84e7c887668a8458e336be354d324fea9a16620e"
     },
+    "https://developer.apple.com/tutorials/data/documentation/videotoolbox/vtframeprocessorconfiguration/nextframecount-533br.json": {
+      "etag": "\"163a-65d55d4aa0de8-df\"",
+      "file_path": "documentation/VideoToolbox/vtframeprocessorconfiguration/nextframecount-533br.md",
+      "hash": "e767c412fe1c9863db8f4456aadaf42ff81d0ccad0088cabf7dd5d3676ac5973"
+    },
     "https://developer.apple.com/tutorials/data/documentation/videotoolbox/vtframeprocessorconfiguration/previousframecount-1crhc.json": {
       "etag": "\"1a56-65d55d4aa0de8-df\"",
       "file_path": "documentation/VideoToolbox/vtframeprocessorconfiguration/previousframecount-1crhc.md",
       "hash": "110d14ec762967c81d96c207c64fe7d7d33e8ccaee95e423ccddffde53c7ed80"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/videotoolbox/vtframeprocessorconfiguration/previousframecount-20ke2.json": {
+      "etag": "\"1672-65d55d4aa0de8-df\"",
+      "file_path": "documentation/VideoToolbox/vtframeprocessorconfiguration/previousframecount-20ke2.md",
+      "hash": "e7194c2744c25d06f1b1b8b918ebe26c24e898d78fb25f5c6232e27821ddae0c"
     },
     "https://developer.apple.com/tutorials/data/documentation/videotoolbox/vtframeprocessorconfiguration/sourcepixelbufferattributes.json": {
       "etag": "\"3047-65d55d4aa0de8-df\"",
@@ -6450,6 +7315,11 @@
       "file_path": "documentation/VideoToolbox/vtframeprocessorparameters.md",
       "hash": "7350a7f615f383bfc981713b1a7f3240ee2bf57183a906f0cccde985cac0adf0"
     },
+    "https://developer.apple.com/tutorials/data/documentation/videotoolbox/vtframeprocessorparameters/destinationframe-3im3l.json": {
+      "etag": "\"188c-65d55d4afc75c-df\"",
+      "file_path": "documentation/VideoToolbox/vtframeprocessorparameters/destinationframe-3im3l.md",
+      "hash": "de186a3af68f64a42ae7936fe462158aa227d1bb96946e7241a8a34958be3ad1"
+    },
     "https://developer.apple.com/tutorials/data/documentation/videotoolbox/vtframeprocessorparameters/destinationframe-5suam.json": {
       "etag": "\"24df-65d55d4afc75c-df\"",
       "file_path": "documentation/VideoToolbox/vtframeprocessorparameters/destinationframe-5suam.md",
@@ -6459,6 +7329,11 @@
       "etag": "\"251d-65d55d4afc75c-df\"",
       "file_path": "documentation/VideoToolbox/vtframeprocessorparameters/destinationframes-46ken.md",
       "hash": "b786bd71a7a6f38237c3be370a0afb05ea2f9d7d0c54e60f5ad567d6a93fe58e"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/videotoolbox/vtframeprocessorparameters/destinationframes-8yges.json": {
+      "etag": "\"1350-65d55d4afc75c-df\"",
+      "file_path": "documentation/VideoToolbox/vtframeprocessorparameters/destinationframes-8yges.md",
+      "hash": "93248bf9e45964f68f42bec56ea49163c08ff725fe56922aeb10821bb52e4675"
     },
     "https://developer.apple.com/tutorials/data/documentation/videotoolbox/vtframeprocessorparameters/sourceframe.json": {
       "etag": "\"2ce0-65d55d4afc75c-df\"",
@@ -6489,6 +7364,11 @@
       "etag": "\"1e49-65d55d4989bdf-df\"",
       "file_path": "documentation/VideoToolbox/vtframerateconversionconfiguration/framesupportedpixelformats-54soi.md",
       "hash": "ed3e7194d0dde88d9b949e84c1ae0815eea7f903b0465a75832dc09a0c6f4fce"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/videotoolbox/vtframerateconversionconfiguration/framesupportedpixelformats-9w7f9.json": {
+      "etag": "\"13c9-65d55d4989bdf-df\"",
+      "file_path": "documentation/VideoToolbox/vtframerateconversionconfiguration/framesupportedpixelformats-9w7f9.md",
+      "hash": "268c72f685773aff200fb7175452a66303ca1fecc05f724458bc40dab3a0d3f5"
     },
     "https://developer.apple.com/tutorials/data/documentation/videotoolbox/vtframerateconversionconfiguration/framewidth.json": {
       "etag": "\"4db3-65d55d4989bdf-df\"",
@@ -6580,15 +7460,30 @@
       "file_path": "documentation/VideoToolbox/vtframerateconversionparameters.md",
       "hash": "86ae8961e73da1db602040bfa5e7570ce053e49bb64b217d2f51ee13909443d2"
     },
+    "https://developer.apple.com/tutorials/data/documentation/videotoolbox/vtframerateconversionparameters/destinationframes.json": {
+      "etag": "\"33a4-65d55d4b924fa-df\"",
+      "file_path": "documentation/VideoToolbox/vtframerateconversionparameters/destinationframes.md",
+      "hash": "cc62890a70ddec5fa9451ee726e8b2192593294d43b1765079fdd6db29ac9e3b"
+    },
     "https://developer.apple.com/tutorials/data/documentation/videotoolbox/vtframerateconversionparameters/init(sourceframe:nextframe:opticalflow:interpolationphase:submissionmode:destinationframes:).json": {
       "etag": "\"43c3-65d55d4b924fa-df\"",
       "file_path": "documentation/VideoToolbox/vtframerateconversionparameters/init(sourceframe,nextframe,opticalflow,interpolationphase,submissionmode,destinationframes).md",
       "hash": "ee929b7a1a0d890af1b2ef267c8242fd2ee356e1c60d26fca1b8f38915ad7740"
     },
+    "https://developer.apple.com/tutorials/data/documentation/videotoolbox/vtframerateconversionparameters/initwithsourceframe:nextframe:opticalflow:interpolationphase:submissionmode:destinationframes:.json": {
+      "etag": "\"3744-65d55d4b924fa-df\"",
+      "file_path": "documentation/VideoToolbox/vtframerateconversionparameters/initwithsourceframe_nextframe_opticalflow_interpolationphase_submissionmode_destinationframes_.md",
+      "hash": "76bae1c10b45570ffe279f3bce08e6710f917379c8f4c3e1ffbde190f09d5a72"
+    },
     "https://developer.apple.com/tutorials/data/documentation/videotoolbox/vtframerateconversionparameters/interpolationphase-2jky5.json": {
       "etag": "\"34ab-65d55d4b924fa-df\"",
       "file_path": "documentation/VideoToolbox/vtframerateconversionparameters/interpolationphase-2jky5.md",
       "hash": "3e67cef0d18269feb272f6bb91dbd6bfe823917845030601bbd3f6f3338da622"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/videotoolbox/vtframerateconversionparameters/interpolationphase-6wdns.json": {
+      "etag": "\"3448-65d55d4b924fa-df\"",
+      "file_path": "documentation/VideoToolbox/vtframerateconversionparameters/interpolationphase-6wdns.md",
+      "hash": "9da9d8e44d2fdd3329ed51df2e2e54d5e89f8c09c3b9529f4b17caa8a3c08cea"
     },
     "https://developer.apple.com/tutorials/data/documentation/videotoolbox/vtframerateconversionparameters/nextframe.json": {
       "etag": "\"461e-65d55d4b924fa-df\"",
@@ -6680,6 +7575,26 @@
       "file_path": "documentation/VideoToolbox/vtframesilosettimerangesfornextpass(_,timerangecount,timerangearray).md",
       "hash": "7c78557cc0630cb592424f59745c42bab1edfcf1b9bd66a78f3b7e11231a6723"
     },
+    "https://developer.apple.com/tutorials/data/documentation/videotoolbox/vthdrperframemetadatagenerationhdrformattype.json": {
+      "etag": "\"3fe3-65d55d4b3ea8e-df\"",
+      "file_path": "documentation/VideoToolbox/vthdrperframemetadatagenerationhdrformattype.md",
+      "hash": "39df8fa6a4067251a3f9e69b24257a57ff7e441d36e9801d5005bd707f2fdb3e"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/videotoolbox/vthdrperframemetadatagenerationhdrformattype/init(_:).json": {
+      "etag": "\"1b07-65d55d4a25add-df\"",
+      "file_path": "documentation/VideoToolbox/vthdrperframemetadatagenerationhdrformattype/init(_).md",
+      "hash": "b2811d5331cb57a14971393c678b2a6fe23209f3150caed61778c63fdb9ae484"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/videotoolbox/vthdrperframemetadatagenerationhdrformattype/init(rawvalue:).json": {
+      "etag": "\"1b27-65d55d4a25add-df\"",
+      "file_path": "documentation/VideoToolbox/vthdrperframemetadatagenerationhdrformattype/init(rawvalue).md",
+      "hash": "b156b2ff9c5e321e630756398198d2f0a166c49335c91382c6c202f8209845fd"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/videotoolbox/vthdrperframemetadatagenerationsession-api-collection.json": {
+      "etag": "\"28cb-659025e7e0ddb-df\"",
+      "file_path": "documentation/VideoToolbox/vthdrperframemetadatagenerationsession-api-collection.md",
+      "hash": "9061f17233e4c82ae1009ae275ffb84d05e75627e7e8c2c7f9cbf7896fc02335"
+    },
     "https://developer.apple.com/tutorials/data/documentation/videotoolbox/vthdrperframemetadatagenerationsession.json": {
       "etag": "\"1ac7-65d55d4accb0d-df\"",
       "file_path": "documentation/VideoToolbox/vthdrperframemetadatagenerationsession.md",
@@ -6704,6 +7619,26 @@
       "etag": "\"1c23-65d55d49cd93a-df\"",
       "file_path": "documentation/VideoToolbox/vthdrperframemetadatagenerationsession/init(framespersecond,hdrformats).md",
       "hash": "7030b8752fe3029b9bc621ffef49f5e2e2d5ba2f320a631198be425e5036a91d"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/videotoolbox/vthdrperframemetadatagenerationsessionattachmetadata.json": {
+      "etag": "\"1a82-65d55d49ad031-df\"",
+      "file_path": "documentation/VideoToolbox/vthdrperframemetadatagenerationsessionattachmetadata.md",
+      "hash": "45ab7845854c4f88eed9a80ce3c57d74790c2bc2e8db69484b82cc304fad0b0a"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/videotoolbox/vthdrperframemetadatagenerationsessioncreate.json": {
+      "etag": "\"2656-65d55d4afc75c-df\"",
+      "file_path": "documentation/VideoToolbox/vthdrperframemetadatagenerationsessioncreate.md",
+      "hash": "21ba83e7e3cdd0db1d2a03857650a6975bd08b3db4192baada1dec45f1eb1d5f"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/videotoolbox/vthdrperframemetadatagenerationsessiongettypeid.json": {
+      "etag": "\"10fa-65d55d4b79256-df\"",
+      "file_path": "documentation/VideoToolbox/vthdrperframemetadatagenerationsessiongettypeid.md",
+      "hash": "d430260bdbdf17a3b58197adee045965fb16ae2aa8761f8f3896aec7778277eb"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/videotoolbox/vthdrperframemetadatagenerationsessionref.json": {
+      "etag": "\"1efc-65d55d4a5460e-df\"",
+      "file_path": "documentation/VideoToolbox/vthdrperframemetadatagenerationsessionref.md",
+      "hash": "3065267a4100b8b09149559a92c1cb8752d205e75c8cbd6decae36766e587501"
     },
     "https://developer.apple.com/tutorials/data/documentation/videotoolbox/vtint32point.json": {
       "etag": "\"322b-65d55d4b79256-df\"",
@@ -6785,6 +7720,11 @@
       "file_path": "documentation/VideoToolbox/vtlowlatencyframeinterpolationconfiguration/frameheight.md",
       "hash": "8b2456a4dd1df969e5af2b025ad5b22db0658959b2d650c245e51a53a567fc19"
     },
+    "https://developer.apple.com/tutorials/data/documentation/videotoolbox/vtlowlatencyframeinterpolationconfiguration/framesupportedpixelformats.json": {
+      "etag": "\"37d5-65d55d4afc75c-df\"",
+      "file_path": "documentation/VideoToolbox/vtlowlatencyframeinterpolationconfiguration/framesupportedpixelformats.md",
+      "hash": "e1cccdf70ae7729f235fd23cbcd960a65781bbffe00c0e63c6e870ef101ded3b"
+    },
     "https://developer.apple.com/tutorials/data/documentation/videotoolbox/vtlowlatencyframeinterpolationconfiguration/framewidth.json": {
       "etag": "\"4a42-65d55d4afc75c-df\"",
       "file_path": "documentation/VideoToolbox/vtlowlatencyframeinterpolationconfiguration/framewidth.md",
@@ -6810,10 +7750,20 @@
       "file_path": "documentation/VideoToolbox/vtlowlatencyframeinterpolationconfiguration/maximumdimension(forspatialscalefactor).md",
       "hash": "af8184d0a0c233b5961a552fb7702236f091239416901ef4260b9207fe8f4d27"
     },
+    "https://developer.apple.com/tutorials/data/documentation/videotoolbox/vtlowlatencyframeinterpolationconfiguration/maximumdimensionforspatialscalefactor:.json": {
+      "etag": "\"2344-65d55d4b1f2a8-df\"",
+      "file_path": "documentation/VideoToolbox/vtlowlatencyframeinterpolationconfiguration/maximumdimensionforspatialscalefactor_.md",
+      "hash": "d99217fd2cdb257270287f6bb46d7b045f567903e3fed526cc9b070bacaaf27e"
+    },
     "https://developer.apple.com/tutorials/data/documentation/videotoolbox/vtlowlatencyframeinterpolationconfiguration/maximumpixelcount(forspatialscalefactor:).json": {
       "etag": "\"22cb-65d55d4afc75c-df\"",
       "file_path": "documentation/VideoToolbox/vtlowlatencyframeinterpolationconfiguration/maximumpixelcount(forspatialscalefactor).md",
       "hash": "61b5a9259f358fdf91c7d2a8e7dd445d96c73e5887c43a809514d5dbcd53b487"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/videotoolbox/vtlowlatencyframeinterpolationconfiguration/maximumpixelcountforspatialscalefactor:.json": {
+      "etag": "\"20ac-65d55d4afc75c-df\"",
+      "file_path": "documentation/VideoToolbox/vtlowlatencyframeinterpolationconfiguration/maximumpixelcountforspatialscalefactor_.md",
+      "hash": "1df206d996da6920b07400d32fdfe21e6f00a113fd02d383e01d182df9de19f1"
     },
     "https://developer.apple.com/tutorials/data/documentation/videotoolbox/vtlowlatencyframeinterpolationconfiguration/numberofinterpolatedframes.json": {
       "etag": "\"4afa-65d55d4afc75c-df\"",
@@ -6840,10 +7790,25 @@
       "file_path": "documentation/VideoToolbox/vtlowlatencyframeinterpolationparameters.md",
       "hash": "3b8da0bf219c4abd0e7b03d3aac20a15cd44e6ff95de9ceb3330df8015cf963f"
     },
+    "https://developer.apple.com/tutorials/data/documentation/videotoolbox/vtlowlatencyframeinterpolationparameters/destinationframes.json": {
+      "etag": "\"1fd9-65d55d4a71f7a-df\"",
+      "file_path": "documentation/VideoToolbox/vtlowlatencyframeinterpolationparameters/destinationframes.md",
+      "hash": "a1c19aae30275e9dd15f5a767d5fd5305ab1d09e9e429b1e826da29cc9083ede"
+    },
     "https://developer.apple.com/tutorials/data/documentation/videotoolbox/vtlowlatencyframeinterpolationparameters/init(sourceframe:previousframe:interpolationphase:destinationframes:).json": {
       "etag": "\"265e-65d55d4a71f7a-df\"",
       "file_path": "documentation/VideoToolbox/vtlowlatencyframeinterpolationparameters/init(sourceframe,previousframe,interpolationphase,destinationframes).md",
       "hash": "166f93bfdbbbb0b46b53dc935ccbc176b297485eca6c27343867f6bf0931e204"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/videotoolbox/vtlowlatencyframeinterpolationparameters/initwithsourceframe:previousframe:interpolationphase:destinationframes:.json": {
+      "etag": "\"25b2-65d55d4a71f7a-df\"",
+      "file_path": "documentation/VideoToolbox/vtlowlatencyframeinterpolationparameters/initwithsourceframe_previousframe_interpolationphase_destinationframes_.md",
+      "hash": "18a3d9d3f6730bd5654bdea9671dddcc094691d3cc1ae118a39285cb165b9df7"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/videotoolbox/vtlowlatencyframeinterpolationparameters/interpolationphase-33m49.json": {
+      "etag": "\"149a-65d55d4a71f7a-df\"",
+      "file_path": "documentation/VideoToolbox/vtlowlatencyframeinterpolationparameters/interpolationphase-33m49.md",
+      "hash": "e74534ce7207d60f3f9236bafedcce77d151a431105c1ec0512e1d6306abd417"
     },
     "https://developer.apple.com/tutorials/data/documentation/videotoolbox/vtlowlatencyframeinterpolationparameters/interpolationphase-886vi.json": {
       "etag": "\"220b-65d55d4a71f7a-df\"",
@@ -6875,6 +7840,11 @@
       "file_path": "documentation/VideoToolbox/vtlowlatencysuperresolutionscalerconfiguration/frameheight.md",
       "hash": "795afc1d890cc0f563731a4d52873496d1a71e4eed2203d7c87015be8ac8c1d3"
     },
+    "https://developer.apple.com/tutorials/data/documentation/videotoolbox/vtlowlatencysuperresolutionscalerconfiguration/framesupportedpixelformats.json": {
+      "etag": "\"3271-65d55d4a88559-df\"",
+      "file_path": "documentation/VideoToolbox/vtlowlatencysuperresolutionscalerconfiguration/framesupportedpixelformats.md",
+      "hash": "c77781f3653aeb6064b7a445edd5feb82ee8b40f61902a585f0054e4d270c686"
+    },
     "https://developer.apple.com/tutorials/data/documentation/videotoolbox/vtlowlatencysuperresolutionscalerconfiguration/framewidth.json": {
       "etag": "\"445b-65d55d4a88559-df\"",
       "file_path": "documentation/VideoToolbox/vtlowlatencysuperresolutionscalerconfiguration/framewidth.md",
@@ -6895,10 +7865,30 @@
       "file_path": "documentation/VideoToolbox/vtlowlatencysuperresolutionscalerconfiguration/maximumdimension(forspatialscalefactor).md",
       "hash": "a8df711d65473bee3f9ea76b50f2497e5a0cea9234420d3361b56154b9ed2455"
     },
+    "https://developer.apple.com/tutorials/data/documentation/videotoolbox/vtlowlatencysuperresolutionscalerconfiguration/maximumdimensionforspatialscalefactor:.json": {
+      "etag": "\"2214-65d55d4a88559-df\"",
+      "file_path": "documentation/VideoToolbox/vtlowlatencysuperresolutionscalerconfiguration/maximumdimensionforspatialscalefactor_.md",
+      "hash": "5d43c21d117c260fb87d8769fa8b09eaea4e70c6ea0a810a4e36bcb2a972b049"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/videotoolbox/vtlowlatencysuperresolutionscalerconfiguration/maximumdimensions.json": {
+      "etag": "\"20da-65d55d4a88559-df\"",
+      "file_path": "documentation/VideoToolbox/vtlowlatencysuperresolutionscalerconfiguration/maximumdimensions.md",
+      "hash": "d10a440a86c3639ac2d1fdba1a9d55f9cd6f658b1b93485f7e1b773937a24d26"
+    },
     "https://developer.apple.com/tutorials/data/documentation/videotoolbox/vtlowlatencysuperresolutionscalerconfiguration/maximumpixelcount(forspatialscalefactor:).json": {
       "etag": "\"23f5-65d55d4a88559-df\"",
       "file_path": "documentation/VideoToolbox/vtlowlatencysuperresolutionscalerconfiguration/maximumpixelcount(forspatialscalefactor).md",
       "hash": "8dbce6618a8932717f449db48544a09af914ea21e520d3d1acd9c17544b9b40f"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/videotoolbox/vtlowlatencysuperresolutionscalerconfiguration/maximumpixelcountforspatialscalefactor:.json": {
+      "etag": "\"1f76-65d55d4a88559-df\"",
+      "file_path": "documentation/VideoToolbox/vtlowlatencysuperresolutionscalerconfiguration/maximumpixelcountforspatialscalefactor_.md",
+      "hash": "da16c970ec43678f177087d7f176b244995166b8cbda9d9f0a96b29cbcb9f394"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/videotoolbox/vtlowlatencysuperresolutionscalerconfiguration/minimumdimensions.json": {
+      "etag": "\"20da-65d55d4a88559-df\"",
+      "file_path": "documentation/VideoToolbox/vtlowlatencysuperresolutionscalerconfiguration/minimumdimensions.md",
+      "hash": "d5436771399f05b44779961a31e6d8ec3a039f98120782cab64faa891ddcd1dd"
     },
     "https://developer.apple.com/tutorials/data/documentation/videotoolbox/vtlowlatencysuperresolutionscalerconfiguration/scalefactor.json": {
       "etag": "\"419f-65d55d4a88559-df\"",
@@ -6925,10 +7915,25 @@
       "file_path": "documentation/VideoToolbox/vtlowlatencysuperresolutionscalerconfiguration/supportedscalefactors-27vjh.md",
       "hash": "c83c2b7c2a67b68d6b74f3bcc3ad75183401aa2c049980f82ca0f7fe826e93d6"
     },
+    "https://developer.apple.com/tutorials/data/documentation/videotoolbox/vtlowlatencysuperresolutionscalerconfiguration/supportedscalefactors-66l10.json": {
+      "etag": "\"1655-65d55d4a88559-df\"",
+      "file_path": "documentation/VideoToolbox/vtlowlatencysuperresolutionscalerconfiguration/supportedscalefactors-66l10.md",
+      "hash": "6427295ce010b7595a6d0b6b3b6d8f439a4e4df9210b34130eaea7e3addf8628"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/videotoolbox/vtlowlatencysuperresolutionscalerconfiguration/supportedscalefactorsforframewidth:frameheight:.json": {
+      "etag": "\"1adf-65d55d4a88559-df\"",
+      "file_path": "documentation/VideoToolbox/vtlowlatencysuperresolutionscalerconfiguration/supportedscalefactorsforframewidth_frameheight_.md",
+      "hash": "838e6bed3fb2037c3cd3a499dd5e5552f97e56f87aa353bb4ca2d43334805f82"
+    },
     "https://developer.apple.com/tutorials/data/documentation/videotoolbox/vtlowlatencysuperresolutionscalerparameters.json": {
       "etag": "\"520f-65d55d4b79256-df\"",
       "file_path": "documentation/VideoToolbox/vtlowlatencysuperresolutionscalerparameters.md",
       "hash": "85dc51ca6107006bd99b06988c137a0aed45c3ffffb4c599785baca0c2c36f82"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/videotoolbox/vtlowlatencysuperresolutionscalerparameters/destinationframe.json": {
+      "etag": "\"1fb6-65d55d49cd93a-df\"",
+      "file_path": "documentation/VideoToolbox/vtlowlatencysuperresolutionscalerparameters/destinationframe.md",
+      "hash": "5e6534a88809c27ad633dfaf4a68815d8fff1f7801e5c1e5b09151502dcacc9b"
     },
     "https://developer.apple.com/tutorials/data/documentation/videotoolbox/vtlowlatencysuperresolutionscalerparameters/init(sourceframe:destinationframe:).json": {
       "etag": "\"2e9f-65d55d49cd93a-df\"",
@@ -6964,6 +7969,11 @@
       "etag": "\"1d4a-65d55d4b79256-df\"",
       "file_path": "documentation/VideoToolbox/vtmotionblurconfiguration/framesupportedpixelformats-1n4uq.md",
       "hash": "c4542d97b4b8ed506b3bf021bc59d27c598405bc4de9a3ff758c745423d3a655"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/videotoolbox/vtmotionblurconfiguration/framesupportedpixelformats-5a1iv.json": {
+      "etag": "\"131a-65d55d4b79256-df\"",
+      "file_path": "documentation/VideoToolbox/vtmotionblurconfiguration/framesupportedpixelformats-5a1iv.md",
+      "hash": "4bc9b52fc3bcc389685617e9c141f447431a697a563dae99ebc61788b503d0b1"
     },
     "https://developer.apple.com/tutorials/data/documentation/videotoolbox/vtmotionblurconfiguration/framewidth.json": {
       "etag": "\"4afe-65d55d4b5df2a-df\"",
@@ -7055,6 +8065,11 @@
       "file_path": "documentation/VideoToolbox/vtmotionblurparameters.md",
       "hash": "aa89c3994a7ecb2ca8eaff8a05c41f98d985613457d33226855d508635c229f1"
     },
+    "https://developer.apple.com/tutorials/data/documentation/videotoolbox/vtmotionblurparameters/destinationframe.json": {
+      "etag": "\"41f0-65d55d4989bdf-df\"",
+      "file_path": "documentation/VideoToolbox/vtmotionblurparameters/destinationframe.md",
+      "hash": "6d0d846b51c5c8446ffc07d6e9ee9f211ec8c8159ea541ab2b845aca7d8a83f7"
+    },
     "https://developer.apple.com/tutorials/data/documentation/videotoolbox/vtmotionblurparameters/init(sourceframe:nextframe:previousframe:nextopticalflow:previousopticalflow:motionblurstrength:submissionmode:destinationframe:).json": {
       "etag": "\"6739-65d55d4989bdf-df\"",
       "file_path": "documentation/VideoToolbox/vtmotionblurparameters/init(sourceframe,nextframe,previousframe,nextopticalflow,previousopticalflow,motionblurstrength,submissionmode,destinationframe).md",
@@ -7114,6 +8129,36 @@
       "etag": "\"4ce1-65d55d4989bdf-df\"",
       "file_path": "documentation/VideoToolbox/vtmotionblurparameters/submissionmode-swift.property.md",
       "hash": "1891a1084d905cee28f58174d4ac8ffeed1d4478d1c4271a203799c637ec36c1"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/videotoolbox/vtmotionestimationframeflags.json": {
+      "etag": "\"1c1b-65d55d4b5df2a-df\"",
+      "file_path": "documentation/VideoToolbox/vtmotionestimationframeflags.md",
+      "hash": "0ebe58c2503812755643026545848a1877fc0ad2be54092d67cb980e29048c08"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/videotoolbox/vtmotionestimationframeflags/kvtmotionestimationframeflags_currentbufferwillbenextreferencebuffer.json": {
+      "etag": "\"1799-65d55d4ab621f-df\"",
+      "file_path": "documentation/VideoToolbox/vtmotionestimationframeflags/kvtmotionestimationframeflags_currentbufferwillbenextreferencebuffer.md",
+      "hash": "2e4acd662f4f7b72260bce8fe027c4db53b1d36034b411bd4e0a17061232168b"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/videotoolbox/vtmotionestimationinfoflags.json": {
+      "etag": "\"1662-65d55d4b3ea8e-df\"",
+      "file_path": "documentation/VideoToolbox/vtmotionestimationinfoflags.md",
+      "hash": "170043b0efa3d63b66c4875cc99c2cf5dbeb873e2edc721c184b8140da0f8cc8"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/videotoolbox/vtmotionestimationinfoflags/kvtmotionestimationinfoflags_reserved0.json": {
+      "etag": "\"e9b-65d55d4a88559-df\"",
+      "file_path": "documentation/VideoToolbox/vtmotionestimationinfoflags/kvtmotionestimationinfoflags_reserved0.md",
+      "hash": "5b04961919739225a4db3384b24972d397258914ddeb14555700a48aaa90ed10"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/videotoolbox/vtmotionestimationoutputhandler.json": {
+      "etag": "\"350e-65d55d4a25add-df\"",
+      "file_path": "documentation/VideoToolbox/vtmotionestimationoutputhandler.md",
+      "hash": "9f83434e6e8cb13d995df0b366a00fb589bd456b50d4dff182e35f21356db8cf"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/videotoolbox/vtmotionestimationsession-api-collection.json": {
+      "etag": "\"4133-659025e9b1359-df\"",
+      "file_path": "documentation/VideoToolbox/vtmotionestimationsession-api-collection.md",
+      "hash": "f9f0d05901b54d1a23c8ad18a1ee9e1ffaba1b4a2331bb0303ee6ddca2cb12aa"
     },
     "https://developer.apple.com/tutorials/data/documentation/videotoolbox/vtmotionestimationsession.json": {
       "etag": "\"3733-65d55d4989bdf-df\"",
@@ -7185,6 +8230,41 @@
       "file_path": "documentation/VideoToolbox/vtmotionestimationsession/usemultipasssearch.md",
       "hash": "da2e7bf0f1edc1ebce55fe2aff505938c744f130af61fc527453bdedcb527e33"
     },
+    "https://developer.apple.com/tutorials/data/documentation/videotoolbox/vtmotionestimationsessioncompleteframes.json": {
+      "etag": "\"1df9-65d55d4a5460e-df\"",
+      "file_path": "documentation/VideoToolbox/vtmotionestimationsessioncompleteframes.md",
+      "hash": "dcf18cf4d0e62235f39144472d801452659e5231f3c4c260f0010d057db05565"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/videotoolbox/vtmotionestimationsessioncopysourcepixelbufferattributes.json": {
+      "etag": "\"2980-65d55d4accb0d-df\"",
+      "file_path": "documentation/VideoToolbox/vtmotionestimationsessioncopysourcepixelbufferattributes.md",
+      "hash": "551c02b15147e0de5f494115a89562df290b40da2a630abda45aa364bc2b5ce9"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/videotoolbox/vtmotionestimationsessioncreate.json": {
+      "etag": "\"3b6e-65d55d49ad031-df\"",
+      "file_path": "documentation/VideoToolbox/vtmotionestimationsessioncreate.md",
+      "hash": "c5d99d03f941751963bf177db5ae9bfb4b64bb7519e7634c17e800d5d523dab2"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/videotoolbox/vtmotionestimationsessionestimatemotionvectors.json": {
+      "etag": "\"3638-65d55d49cd93a-df\"",
+      "file_path": "documentation/VideoToolbox/vtmotionestimationsessionestimatemotionvectors.md",
+      "hash": "097fa7f2c3d6ccc3f5b675c9bffa73e95e2cb4a65c03a51b079686d301bd0987"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/videotoolbox/vtmotionestimationsessiongettypeid.json": {
+      "etag": "\"1077-65d55d4b5df2a-df\"",
+      "file_path": "documentation/VideoToolbox/vtmotionestimationsessiongettypeid.md",
+      "hash": "2ab2e8d3c8333d7041846de84f7ff2cfb79d156a0c7bbbfc5e7b11f943d45f8e"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/videotoolbox/vtmotionestimationsessioninvalidate.json": {
+      "etag": "\"12fc-65d55d4a71f7a-df\"",
+      "file_path": "documentation/VideoToolbox/vtmotionestimationsessioninvalidate.md",
+      "hash": "5d42f09acd07f4cc134f3e408dab872c9cc7b2f0032b3ab8603dcc514f063797"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/videotoolbox/vtmotionestimationsessionref.json": {
+      "etag": "\"1cb0-65d55d4accb0d-df\"",
+      "file_path": "documentation/VideoToolbox/vtmotionestimationsessionref.md",
+      "hash": "c6847d1519c65a01a4b20f66facd53fbcd07066dcd4d7b8f4d8d763e402fd478"
+    },
     "https://developer.apple.com/tutorials/data/documentation/videotoolbox/vtmultipassstorage-api-collection.json": {
       "etag": "\"3db1-659025e9b1359-df\"",
       "file_path": "documentation/VideoToolbox/vtmultipassstorage-api-collection.md",
@@ -7229,6 +8309,11 @@
       "etag": "\"45c2-65d55d4ab621f-df\"",
       "file_path": "documentation/VideoToolbox/vtopticalflowconfiguration/frameheight.md",
       "hash": "155a4995e4c1bb981bc07f57929e70e20306d64901f2a5968ed82c86e643d9eb"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/videotoolbox/vtopticalflowconfiguration/framesupportedpixelformats-85kob.json": {
+      "etag": "\"131d-65d55d4ab621f-df\"",
+      "file_path": "documentation/VideoToolbox/vtopticalflowconfiguration/framesupportedpixelformats-85kob.md",
+      "hash": "42df5f60b2aa82eff83239847e3fad34f57f3d89f44a6eaff2f8576cc0d2ddb5"
     },
     "https://developer.apple.com/tutorials/data/documentation/videotoolbox/vtopticalflowconfiguration/framesupportedpixelformats-gm6u.json": {
       "etag": "\"1d7c-65d55d4ab621f-df\"",
@@ -7424,6 +8509,21 @@
       "etag": "\"35e1-65d55d4aa0de8-df\"",
       "file_path": "documentation/VideoToolbox/vtpixeltransfersessiontransferimage(_,from,to).md",
       "hash": "b0d1b4c3dca3c57475b9421e3326e4ea65f6b601c096d13d406ab1d0a137b369"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/videotoolbox/vtrawprocessingoutputhandler.json": {
+      "etag": "\"184e-65d55d4ae2f73-df\"",
+      "file_path": "documentation/VideoToolbox/vtrawprocessingoutputhandler.md",
+      "hash": "0aa6ba576a23c79bb8d651b14f256ff9fcb17516d08b7ec909d2935c9a25f5d0"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/videotoolbox/vtrawprocessingparameterchangehandler.json": {
+      "etag": "\"200f-65d55d4accb0d-df\"",
+      "file_path": "documentation/VideoToolbox/vtrawprocessingparameterchangehandler.md",
+      "hash": "a33901bd53b77050cabb937250f0dfb9287facc267b5790c43a834ecb50fc9ef"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/videotoolbox/vtrawprocessingsession-api-collection.json": {
+      "etag": "\"34c4-659025e9ff48a-df\"",
+      "file_path": "documentation/VideoToolbox/vtrawprocessingsession-api-collection.md",
+      "hash": "ceaee4e2e8805cf0e383ad1b4f0b920217a34719ae743203e3b87d2875cf4990"
     },
     "https://developer.apple.com/tutorials/data/documentation/videotoolbox/vtrawprocessingsession.json": {
       "etag": "\"44b3-65d55d4accb0d-df\"",
@@ -7650,6 +8750,56 @@
       "file_path": "documentation/VideoToolbox/vtrawprocessingsession/updateparameter(values).md",
       "hash": "16af628ea25ffcf1bf6b6df8975000ffe00e4fb3197dd9a50eb9b80dd4ba2b13"
     },
+    "https://developer.apple.com/tutorials/data/documentation/videotoolbox/vtrawprocessingsessioncompleteframes.json": {
+      "etag": "\"18b4-65d55d4989bdf-df\"",
+      "file_path": "documentation/VideoToolbox/vtrawprocessingsessioncompleteframes.md",
+      "hash": "22363e4956c22e9a2e4d569c66a8d33bfbdde378b283c2e04866508044194ed2"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/videotoolbox/vtrawprocessingsessioncopyprocessingparameters.json": {
+      "etag": "\"2960-65d55d4ab621f-df\"",
+      "file_path": "documentation/VideoToolbox/vtrawprocessingsessioncopyprocessingparameters.md",
+      "hash": "634fab9c50f152dec966a03fb8989b0ff578c6d24bf70979a55594746f9537b0"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/videotoolbox/vtrawprocessingsessioncreate.json": {
+      "etag": "\"2e2f-65d55d4ab621f-df\"",
+      "file_path": "documentation/VideoToolbox/vtrawprocessingsessioncreate.md",
+      "hash": "7eed79c0c756f570c3b1a4ac413c94e198c402a5dc3ed4f8cd1a969b6943781a"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/videotoolbox/vtrawprocessingsessiongettypeid.json": {
+      "etag": "\"f45-65d55d4ae2f73-df\"",
+      "file_path": "documentation/VideoToolbox/vtrawprocessingsessiongettypeid.md",
+      "hash": "dd2a4df41c29c43071531e60814618f5da8a252a3e8a64acfe6aa4923c286e8f"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/videotoolbox/vtrawprocessingsessioninvalidate.json": {
+      "etag": "\"146a-65d55d4a88559-df\"",
+      "file_path": "documentation/VideoToolbox/vtrawprocessingsessioninvalidate.md",
+      "hash": "f1ec1185e2a154b84abd5265eed980ff95425accc1bfa6b3c02449b1178b44a8"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/videotoolbox/vtrawprocessingsessionprocessframe.json": {
+      "etag": "\"29b7-65d55d4b79256-df\"",
+      "file_path": "documentation/VideoToolbox/vtrawprocessingsessionprocessframe.md",
+      "hash": "de49db4234a401165620f50638563ada355bea72b9c239c0730ee78ddcbe8e8d"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/videotoolbox/vtrawprocessingsessionsetparameterchangedhander.json": {
+      "etag": "\"1d0b-65d55d4a71f7a-df\"",
+      "file_path": "documentation/VideoToolbox/vtrawprocessingsessionsetparameterchangedhander.md",
+      "hash": "8b08a97d762b287cf9d79c7737636ae8b6280d4a0ccf621f843742c6cbd84491"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/videotoolbox/vtrawprocessingsessionsetparameterchangedhandler.json": {
+      "etag": "\"2896-65d55d4b3ea8e-df\"",
+      "file_path": "documentation/VideoToolbox/vtrawprocessingsessionsetparameterchangedhandler.md",
+      "hash": "d12a52da50c4c960913996b0035a12ac645d16dfeefecd28dc919fdacc3c7ec0"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/videotoolbox/vtrawprocessingsessionsetprocessingparameters.json": {
+      "etag": "\"3863-65d55d49cd93a-df\"",
+      "file_path": "documentation/VideoToolbox/vtrawprocessingsessionsetprocessingparameters.md",
+      "hash": "c11f2bb5f2564c2bad8199b974bcb385a1b27fe62e5c07ef12497ef437b4bf8e"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/videotoolbox/vtrawprocessorextensionproperties(_:).json": {
+      "etag": "\"1acb-65d55d4a25add-df\"",
+      "file_path": "documentation/VideoToolbox/vtrawprocessorextensionproperties(_).md",
+      "hash": "62baf0ed6963d9bc3f3b3b608d3681a7cbe2ec4fbd277c39bc265eb25e32770e"
+    },
     "https://developer.apple.com/tutorials/data/documentation/videotoolbox/vtregisterprofessionalvideoworkflowvideodecoders().json": {
       "etag": "\"47fa-65d55d4a71f7a-df\"",
       "file_path": "documentation/VideoToolbox/vtregisterprofessionalvideoworkflowvideodecoders().md",
@@ -7734,6 +8884,11 @@
       "etag": "\"6395-65d55d4b1f2a8-df\"",
       "file_path": "documentation/VideoToolbox/vtsuperresolutionscalerconfiguration/frameheight.md",
       "hash": "75f4d14db0a6dee5613a92817b7605ef96a369938cab56172293076c3907eaed"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/videotoolbox/vtsuperresolutionscalerconfiguration/framesupportedpixelformats.json": {
+      "etag": "\"4f6d-65d55d4b1f2a8-df\"",
+      "file_path": "documentation/VideoToolbox/vtsuperresolutionscalerconfiguration/framesupportedpixelformats.md",
+      "hash": "26111cbc9900d2fab3116cbcb71ac139d40436d116ff90ca074fc8eddaa28b6f"
     },
     "https://developer.apple.com/tutorials/data/documentation/videotoolbox/vtsuperresolutionscalerconfiguration/framewidth.json": {
       "etag": "\"638b-65d55d4b1f2a8-df\"",
@@ -7865,6 +9020,11 @@
       "file_path": "documentation/VideoToolbox/vtsuperresolutionscalerconfiguration/supportedscalefactors-7ucur.md",
       "hash": "106f88b0faf6247b33f766289b3b3f5db77aa1dcd3806839dae92d0c4d2974bd"
     },
+    "https://developer.apple.com/tutorials/data/documentation/videotoolbox/vtsuperresolutionscalerconfiguration/supportedscalefactors-94rce.json": {
+      "etag": "\"141f-65d55d4b1f2a8-df\"",
+      "file_path": "documentation/VideoToolbox/vtsuperresolutionscalerconfiguration/supportedscalefactors-94rce.md",
+      "hash": "c50705544643fa19a0e4f11645dd5b18c7c98c2220ef8492dbd36877203c71b9"
+    },
     "https://developer.apple.com/tutorials/data/documentation/videotoolbox/vtsuperresolutionscalerconfiguration/usesprecomputedflow.json": {
       "etag": "\"62f3-65d55d4b1f2a8-df\"",
       "file_path": "documentation/VideoToolbox/vtsuperresolutionscalerconfiguration/usesprecomputedflow.md",
@@ -7874,6 +9034,11 @@
       "etag": "\"7677-65d55d4aa0de8-df\"",
       "file_path": "documentation/VideoToolbox/vtsuperresolutionscalerparameters.md",
       "hash": "c0ccd36c74916d2a293ef32616ce5756bac908d58eb1d55abaac18d8ba249d6d"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/videotoolbox/vtsuperresolutionscalerparameters/destinationframe.json": {
+      "etag": "\"3b9e-65d55d4accb0d-df\"",
+      "file_path": "documentation/VideoToolbox/vtsuperresolutionscalerparameters/destinationframe.md",
+      "hash": "11cf60945e8f613039859c1801b85d369978dbdd2a2f5be4f066d20e5c374755"
     },
     "https://developer.apple.com/tutorials/data/documentation/videotoolbox/vtsuperresolutionscalerparameters/init(sourceframe:previousframe:previousoutputframe:opticalflow:submissionmode:destinationframe:).json": {
       "etag": "\"5dcb-65d55d4accb0d-df\"",
@@ -7940,6 +9105,11 @@
       "file_path": "documentation/VideoToolbox/vttemporalnoisefilterconfiguration/frameheight.md",
       "hash": "e032be7234becf9f91a239a7075ec5dd6fefbdff46b7344bd2adb85d8791b6e1"
     },
+    "https://developer.apple.com/tutorials/data/documentation/videotoolbox/vttemporalnoisefilterconfiguration/framesupportedpixelformats.json": {
+      "etag": "\"306c-65d55d4b79256-df\"",
+      "file_path": "documentation/VideoToolbox/vttemporalnoisefilterconfiguration/framesupportedpixelformats.md",
+      "hash": "b1de00bdfa4c67ded722cf4f25b3e5ba90cbc1ff36e9e92fa4ffe9169738b83a"
+    },
     "https://developer.apple.com/tutorials/data/documentation/videotoolbox/vttemporalnoisefilterconfiguration/framewidth.json": {
       "etag": "\"44c4-65d55d4b79256-df\"",
       "file_path": "documentation/VideoToolbox/vttemporalnoisefilterconfiguration/framewidth.md",
@@ -7955,6 +9125,26 @@
       "file_path": "documentation/VideoToolbox/vttemporalnoisefilterconfiguration/issupported.md",
       "hash": "7694fec9b9f45e5565f5c338381720f8d708e078f4919e25de955ab382a5a873"
     },
+    "https://developer.apple.com/tutorials/data/documentation/videotoolbox/vttemporalnoisefilterconfiguration/maximumdimensions.json": {
+      "etag": "\"1f33-65d55d4b79256-df\"",
+      "file_path": "documentation/VideoToolbox/vttemporalnoisefilterconfiguration/maximumdimensions.md",
+      "hash": "89577510653aa1e8643783991ec1d65f7096d7a1d2b910710f8bea0ebf6d7e18"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/videotoolbox/vttemporalnoisefilterconfiguration/minimumdimensions.json": {
+      "etag": "\"1f33-65d55d4b79256-df\"",
+      "file_path": "documentation/VideoToolbox/vttemporalnoisefilterconfiguration/minimumdimensions.md",
+      "hash": "cd1750ee08d87db2aba5c6328a5a27234e0cb2ed33d914876dde213ca70dd900"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/videotoolbox/vttemporalnoisefilterconfiguration/nextframecount.json": {
+      "etag": "\"332b-65d55d4b79256-df\"",
+      "file_path": "documentation/VideoToolbox/vttemporalnoisefilterconfiguration/nextframecount.md",
+      "hash": "4f1a3117ddbefe4829245842e40a0ce65ab69440b0651203bc03ee374a232444"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/videotoolbox/vttemporalnoisefilterconfiguration/previousframecount.json": {
+      "etag": "\"3341-65d55d4b79256-df\"",
+      "file_path": "documentation/VideoToolbox/vttemporalnoisefilterconfiguration/previousframecount.md",
+      "hash": "a4b4143ae0e9d3a1bba6a6b323d4db41279283567fa9f2777e8a7859a3541ab5"
+    },
     "https://developer.apple.com/tutorials/data/documentation/videotoolbox/vttemporalnoisefilterconfiguration/sourcepixelbufferattributes.json": {
       "etag": "\"4847-65d55d4b79256-df\"",
       "file_path": "documentation/VideoToolbox/vttemporalnoisefilterconfiguration/sourcepixelbufferattributes.md",
@@ -7965,6 +9155,11 @@
       "file_path": "documentation/VideoToolbox/vttemporalnoisefilterconfiguration/supportedpixelformats.md",
       "hash": "9520e56cbc20fe6dd5911567740cbf458b34c68c25a121b1ae091efeabbca788"
     },
+    "https://developer.apple.com/tutorials/data/documentation/videotoolbox/vttemporalnoisefilterconfiguration/supportedsourcepixelformats-1w5i2.json": {
+      "etag": "\"13ee-65d55d4b79256-df\"",
+      "file_path": "documentation/VideoToolbox/vttemporalnoisefilterconfiguration/supportedsourcepixelformats-1w5i2.md",
+      "hash": "0f49e8bd43253b7c7bff6861c9030764dbf3247cdbdaabd68037af5c021a3620"
+    },
     "https://developer.apple.com/tutorials/data/documentation/videotoolbox/vttemporalnoisefilterconfiguration/supportedsourcepixelformats-4ipcg.json": {
       "etag": "\"3067-65d55d4b79256-df\"",
       "file_path": "documentation/VideoToolbox/vttemporalnoisefilterconfiguration/supportedsourcepixelformats-4ipcg.md",
@@ -7974,6 +9169,11 @@
       "etag": "\"7066-65d55d4a5460e-df\"",
       "file_path": "documentation/VideoToolbox/vttemporalnoisefilterparameters.md",
       "hash": "d5fbc30be3bd3fb567ce0bca8b3ac1232b982d7fdbbe14e63bb5c3e1b729d6f6"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/videotoolbox/vttemporalnoisefilterparameters/destinationframe.json": {
+      "etag": "\"33c4-65d55d4a5460e-df\"",
+      "file_path": "documentation/VideoToolbox/vttemporalnoisefilterparameters/destinationframe.md",
+      "hash": "ab89719e13249837e8e7b037c8b573407730ccf53188982d42e4bf2c177020f5"
     },
     "https://developer.apple.com/tutorials/data/documentation/videotoolbox/vttemporalnoisefilterparameters/filterstrength.json": {
       "etag": "\"3a89-65d55d4a5460e-df\"",
@@ -8013,8 +9213,8 @@
   },
   "metadata": {
     "render": {
-      "version": 1
+      "version": 2
     },
-    "total_pages": 1602
+    "total_pages": 1842
   }
 }

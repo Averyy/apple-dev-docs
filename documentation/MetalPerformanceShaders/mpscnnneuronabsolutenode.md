@@ -28,6 +28,8 @@ class MPSCNNNeuronAbsoluteNode
 
 ### Initializers
 - [init(source: MPSNNImageNode)](./mpscnnneuronabsolutenode/init%28source%29.md)
+### Type Methods
+- [+ nodeWithSource:](./mpscnnneuronabsolutenode/nodewithsource_.md)
 
 ## Relationships
 

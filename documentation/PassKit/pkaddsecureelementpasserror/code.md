@@ -43,6 +43,9 @@ enum PKAddSecureElementPassErrorCode : NSInteger;
 - [static var unknownError: PKAddSecureElementPassError.Code](./code/unknownerror.md)
 ### Initializers
 - [init?(rawValue: Int)](./code/init%28rawvalue%29.md)
+### Enumeration Cases
+- [PKAddSecureElementPassUnknownError](../pkaddsecureelementpasserrorcode/pkaddsecureelementpassunknownerror.md)
+  The system canceled adding the pass due to an unknown failure.
 
 ## Relationships
 

@@ -37,6 +37,8 @@ Use this class to express macOS-specific geometry preferences when you call [`re
 ### Accessing geometry information
 - [var systemFrame: CGRect?](./mac/systemframe.md)
   The preferred frame of the scene, in system coordinates.
+- [systemFrame](../../uiwindowscenegeometrypreferencesmac/systemframe.md)
+  The preferred frame of the scene, in system coordinates.
 
 ## Relationships
 
@@ -59,6 +61,8 @@ Use this class to express macOS-specific geometry preferences when you call [`re
   The current values for the window scene’s geometry in system space.
 - [func requestGeometryUpdate(UIWindowScene.GeometryPreferences, errorHandler: ((any Error) -> Void)?)](../requestgeometryupdate%28_,errorhandler%29.md)
   Requests an update to the window scene’s geometry using the specified geometry preferences object.
+- [systemFrame](../../uiwindowscenegeometrypreferencesmac/systemframe.md)
+  The preferred frame of the scene, in system coordinates.
 ### Working with window geometry
 - [var effectiveGeometry: UIWindowScene.Geometry](../effectivegeometry.md)
   The current values for the window scene’s geometry in system space.

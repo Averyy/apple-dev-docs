@@ -1,0 +1,43 @@
+# nameWithCString:
+
+**Framework**: FSKit  
+**Kind**: method  
+**Role**: Type Method
+
+Creates a filename from a null-terminated character sequence.
+
+**Availability**:
+- macOS 15.4+
+
+## Declaration
+
+```objc
++ (instancetype) nameWithCString:(const char *) name;
+```
+
+## Parameters
+
+- `name`: A pointer to a C string.
+
+## See Also
+
+### Creating a filename
+- [- initWithBytes:length:](./initwithbytes_length_.md)
+  Initializes a file name by copying a character sequence from a byte array.
+- [+ nameWithBytes:length:](./namewithbytes_length_.md)
+  Creates a filename by copying a character sequence from a byte array.
+- [- initWithCString:](./initwithcstring_.md)
+  Initializes a filename from a null-terminated character sequence.
+- [convenience init(data: Data)](./init%28data%29.md)
+  Creates a filename by copying a character sequence data object.
+- [+ nameWithData:](./namewithdata_.md)
+  Creates a filename by copying a character sequence data object.
+- [convenience init(string: String)](./init%28string%29.md)
+  Creates a filename by copying a character sequence from a string instance.
+- [+ nameWithString:](./namewithstring_.md)
+  Creates a filename by copying a character sequence from a string instance.
+
+
+---
+
+*[View on Apple Developer](https://developer.apple.com/documentation/fskit/fsfilename/namewithcstring:)*

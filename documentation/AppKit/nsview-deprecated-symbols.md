@@ -38,6 +38,22 @@ Although these symbols are available for use, Apple is no longer actively develo
   Initiates a dragging operation from the view, allowing the user to drag a file icon to any application that has window or view objects that accept files.
 - [func dragPromisedFiles(ofTypes: [String], from: NSRect, source: Any, slideBack: Bool, event: NSEvent) -> Bool](./nsview/dragpromisedfiles%28oftypes,from,source,slideback,event%29.md)
   Initiates a dragging operation from the view, allowing the user to drag one or more promised files (or directories) into any application that has window or view objects that accept promised file data.
+- [- convertPointToBase:](./nsview/convertpointtobase_.md)
+  Converts the point from the view’s coordinate system to the base coordinate system.
+- [- convertPointFromBase:](./nsview/convertpointfrombase_.md)
+  Converts the point from the base coordinate system to the view’s coordinate system.
+- [- convertSizeToBase:](./nsview/convertsizetobase_.md)
+  Converts the size from the view’s coordinate system to the base coordinate system.
+- [- convertSizeFromBase:](./nsview/convertsizefrombase_.md)
+  Converts the size from the base coordinate system to the view’s coordinate system.
+- [- convertRectToBase:](./nsview/convertrecttobase_.md)
+  Converts the rectangle from the view’s coordinate system to the base coordinate system.
+- [- convertRectFromBase:](./nsview/convertrectfrombase_.md)
+  Converts the rectangle from the base coordinate system to the view’s coordinate system.
+- [- performMnemonic:](./nsview/performmnemonic_.md)
+  Implemented by subclasses to respond to mnemonics.
+- [- dragImage:at:offset:event:pasteboard:source:slideBack:](./nsview/dragimage_at_offset_event_pasteboard_source_slideback_.md)
+  Initiates a dragging operation from the view, allowing the user to drag arbitrary data with a specified icon into any application that has window or view objects that accept dragged data.
 ### Deprecated properties
 - [var wantsExtendedDynamicRangeOpenGLSurface: Bool](./nsview/wantsextendeddynamicrangeopenglsurface.md)
 - [var acceptsTouchEvents: Bool](./nsview/acceptstouchevents.md)
@@ -49,6 +65,10 @@ Although these symbols are available for use, Apple is no longer actively develo
 ### Deprecated notifications
 - [class let globalFrameDidChangeNotification: NSNotification.Name](./nsview/globalframedidchangenotification.md)
   Posted whenever an `NSView` object that has attached surfaces (that is, `NSOpenGLContext` objects) moves to a different screen, or other cases where the `NSOpenGLContext` object needs to be updated.
+- [NSViewNoInstrinsicMetric](./nsviewnoinstrinsicmetric.md)
+  Used to indicate that a view has no intrinsic metric for a given numeric property.
+- [NSViewFocusDidChangeNotification](./nsviewfocusdidchangenotification.md)
+  Deprecated in macOS 10.4 and later. Posted for an `NSView` object and each of its descendants (recursively) whenever the frame or bounds geometry of the view changed.
 
 
 ---

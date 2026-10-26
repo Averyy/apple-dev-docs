@@ -30,6 +30,14 @@ var overallDurationHint: CMTime { get }
 
 For QuickTime movie files and MPEG-4 files, the asset retrieves this value from the `mehd` box of the `mvex` box, if present. If no total fragment duration hint is available, the value of this property is [`invalid`](../../CoreMedia/cmtime/invalid.md).
 
+## See Also
+
+### Accessing fragment support
+- [canContainFragments](./cancontainfragments.md)
+  A Boolean value that indicates whether you can extend the asset by fragments.
+- [containsFragments](./containsfragments.md)
+  A Boolean value that indicates whether at least one movie fragment extends the asset.
+
 
 ---
 

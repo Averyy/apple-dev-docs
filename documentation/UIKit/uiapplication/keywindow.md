@@ -57,6 +57,8 @@ This property holds the [`UIWindow`](../uiwindow.md) object in the [`windows`](.
   The current style of the status bar.
 - [var windows: [UIWindow]](./windows.md)
   The app’s visible and hidden windows.
+- [proximitySensingEnabled](./proximitysensingenabled.md)
+  A Boolean value that determines whether proximity sensing is enabled.
 
 
 ---

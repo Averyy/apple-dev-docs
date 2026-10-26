@@ -47,6 +47,10 @@ The following table lists additional attributes of this intent object:
 ### Initializing the Intent Object
 - [convenience init(pickupLocation: CLPlacemark?, dropOffLocation: CLPlacemark?, rideOptionName: INSpeakableString?, partySize: Int?, paymentMethod: INPaymentMethod?, scheduledPickupTime: INDateComponentsRange?)](./inrequestrideintent/init%28pickuplocation,dropofflocation,rideoptionname,partysize,paymentmethod,scheduledpickuptime%29.md)
   Initializes an intent object with the specified ride information.
+- [- initWithPickupLocation:dropOffLocation:rideOptionName:partySize:paymentMethod:scheduledPickupTime:](./inrequestrideintent/initwithpickuplocation_dropofflocation_rideoptionname_partysize_paymentmethod_scheduledpickuptime_.md)
+  Initializes an intent object with the specified ride information.
+- [- initWithPickupLocation:dropOffLocation:rideOptionName:partySize:paymentMethod:](./inrequestrideintent/initwithpickuplocation_dropofflocation_rideoptionname_partysize_paymentmethod_.md)
+  Initializes an intent object with the specified ride information.
 ### Getting the Ride Details
 - [var rideOptionName: INSpeakableString?](./inrequestrideintent/rideoptionname.md)
   The name of the ride option selected by the user.
@@ -58,6 +62,8 @@ The following table lists additional attributes of this intent object:
   The time at which to pick up the user.
 - [var dropOffLocation: CLPlacemark?](./inrequestrideintent/dropofflocation.md)
   The user’s destination.
+- [partySize](./inrequestrideintent/partysize-64kfc.md)
+  The number of passengers that the ride must accommodate.
 ### Getting the Payment Information
 - [var paymentMethod: INPaymentMethod?](./inrequestrideintent/paymentmethod.md)
   The user’s requested payment method.

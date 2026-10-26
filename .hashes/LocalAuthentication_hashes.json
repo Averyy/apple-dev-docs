@@ -225,6 +225,16 @@
       "file_path": "documentation/LocalAuthentication/klapolicydeviceownerauthenticationwithwristdetection.md",
       "hash": "551d2223e630717838dd15abb425099a2ec9b8c35f45ef5d14f996c3743a8131"
     },
+    "https://developer.apple.com/documentation/localauthentication/la_export": {
+      "etag": "\"ace-65d55ce9c4c90-df\"",
+      "file_path": "documentation/LocalAuthentication/la_export.md",
+      "hash": "0e5fc30e2114272ada198f99421da4d9950da29668583157d86e90f67e2fe7a5"
+    },
+    "https://developer.apple.com/documentation/localauthentication/la_extern": {
+      "etag": "\"ace-65d55ce97f2ee-df\"",
+      "file_path": "documentation/LocalAuthentication/la_extern.md",
+      "hash": "39e985dec69750001c545bafd044da5f91e5bfb15111b5144e3ca4efd7cc6529"
+    },
     "https://developer.apple.com/documentation/localauthentication/laaccesscontroloperation": {
       "etag": "\"5dc6-65d55ce9c4c90-df\"",
       "file_path": "documentation/LocalAuthentication/laaccesscontroloperation.md",
@@ -505,6 +515,11 @@
       "file_path": "documentation/LocalAuthentication/ladomainstatecompanion.md",
       "hash": "9829e7623b47878971167bc2def8efbdc1dea594ba5318f1f856ea2c204cf159"
     },
+    "https://developer.apple.com/documentation/localauthentication/ladomainstatecompanion/availablecompaniontypes-1ggnh": {
+      "etag": "\"1456-65d55ce94a6c5-df\"",
+      "file_path": "documentation/LocalAuthentication/ladomainstatecompanion/availablecompaniontypes-1ggnh.md",
+      "hash": "927f9386a07c2bea09074a35430397eb903b53240bafd3534921060ee3f3a13f"
+    },
     "https://developer.apple.com/documentation/localauthentication/ladomainstatecompanion/availablecompaniontypes-1t7ur": {
       "etag": "\"1b85-65d55ce94a6c5-df\"",
       "file_path": "documentation/LocalAuthentication/ladomainstatecompanion/availablecompaniontypes-1t7ur.md",
@@ -654,6 +669,21 @@
       "etag": "\"235a-65d55ce92c325-df\"",
       "file_path": "documentation/LocalAuthentication/laenvironment/state-swift.property.md",
       "hash": "6c503ef948ee6caf985e4d98b461ef5f726725ffd364996f58bf5a735982242a"
+    },
+    "https://developer.apple.com/documentation/localauthentication/laerror-c.enum/laerrorbiometrylockout": {
+      "etag": "\"3781-65d55ce94a6c5-df\"",
+      "file_path": "documentation/LocalAuthentication/laerror-c.enum/laerrorbiometrylockout.md",
+      "hash": "8dfcbd7f037af038604399e4d7d0feb78fd0a67df97f3422c845b56c78f69b7b"
+    },
+    "https://developer.apple.com/documentation/localauthentication/laerror-c.enum/laerrorbiometrynotavailable": {
+      "etag": "\"312d-65d55ce94a6c5-df\"",
+      "file_path": "documentation/LocalAuthentication/laerror-c.enum/laerrorbiometrynotavailable.md",
+      "hash": "4b0c026338404f2199640dc1df7fc32de4393deab02ff7332c65879d3625d39f"
+    },
+    "https://developer.apple.com/documentation/localauthentication/laerror-c.enum/laerrorbiometrynotenrolled": {
+      "etag": "\"312d-65d55ce94a6c5-df\"",
+      "file_path": "documentation/LocalAuthentication/laerror-c.enum/laerrorbiometrynotenrolled.md",
+      "hash": "aeee084ae5d2bf886160cbc021ee03569a07d145c5b79e71ff50b37f583418e3"
     },
     "https://developer.apple.com/documentation/localauthentication/laerror-swift.struct": {
       "etag": "\"7538-65d8323cef308-df\"",
@@ -1420,6 +1450,16 @@
       "file_path": "documentation/LocalAuthentication/klapolicydeviceownerauthenticationwithwristdetection.md",
       "hash": "551d2223e630717838dd15abb425099a2ec9b8c35f45ef5d14f996c3743a8131"
     },
+    "https://developer.apple.com/tutorials/data/documentation/localauthentication/la_export.json": {
+      "etag": "\"ace-65d55ce9c4c90-df\"",
+      "file_path": "documentation/LocalAuthentication/la_export.md",
+      "hash": "0e5fc30e2114272ada198f99421da4d9950da29668583157d86e90f67e2fe7a5"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/localauthentication/la_extern.json": {
+      "etag": "\"ace-65d55ce97f2ee-df\"",
+      "file_path": "documentation/LocalAuthentication/la_extern.md",
+      "hash": "39e985dec69750001c545bafd044da5f91e5bfb15111b5144e3ca4efd7cc6529"
+    },
     "https://developer.apple.com/tutorials/data/documentation/localauthentication/laaccesscontroloperation.json": {
       "etag": "\"5dc6-65d55ce9c4c90-df\"",
       "file_path": "documentation/LocalAuthentication/laaccesscontroloperation.md",
@@ -1700,6 +1740,11 @@
       "file_path": "documentation/LocalAuthentication/ladomainstatecompanion.md",
       "hash": "9829e7623b47878971167bc2def8efbdc1dea594ba5318f1f856ea2c204cf159"
     },
+    "https://developer.apple.com/tutorials/data/documentation/localauthentication/ladomainstatecompanion/availablecompaniontypes-1ggnh.json": {
+      "etag": "\"1456-65d55ce94a6c5-df\"",
+      "file_path": "documentation/LocalAuthentication/ladomainstatecompanion/availablecompaniontypes-1ggnh.md",
+      "hash": "927f9386a07c2bea09074a35430397eb903b53240bafd3534921060ee3f3a13f"
+    },
     "https://developer.apple.com/tutorials/data/documentation/localauthentication/ladomainstatecompanion/availablecompaniontypes-1t7ur.json": {
       "etag": "\"1b85-65d55ce94a6c5-df\"",
       "file_path": "documentation/LocalAuthentication/ladomainstatecompanion/availablecompaniontypes-1t7ur.md",
@@ -1849,6 +1894,21 @@
       "etag": "\"235a-65d55ce92c325-df\"",
       "file_path": "documentation/LocalAuthentication/laenvironment/state-swift.property.md",
       "hash": "6c503ef948ee6caf985e4d98b461ef5f726725ffd364996f58bf5a735982242a"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/localauthentication/laerror-c.enum/laerrorbiometrylockout.json": {
+      "etag": "\"3781-65d55ce94a6c5-df\"",
+      "file_path": "documentation/LocalAuthentication/laerror-c.enum/laerrorbiometrylockout.md",
+      "hash": "8dfcbd7f037af038604399e4d7d0feb78fd0a67df97f3422c845b56c78f69b7b"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/localauthentication/laerror-c.enum/laerrorbiometrynotavailable.json": {
+      "etag": "\"312d-65d55ce94a6c5-df\"",
+      "file_path": "documentation/LocalAuthentication/laerror-c.enum/laerrorbiometrynotavailable.md",
+      "hash": "4b0c026338404f2199640dc1df7fc32de4393deab02ff7332c65879d3625d39f"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/localauthentication/laerror-c.enum/laerrorbiometrynotenrolled.json": {
+      "etag": "\"312d-65d55ce94a6c5-df\"",
+      "file_path": "documentation/LocalAuthentication/laerror-c.enum/laerrorbiometrynotenrolled.md",
+      "hash": "aeee084ae5d2bf886160cbc021ee03569a07d145c5b79e71ff50b37f583418e3"
     },
     "https://developer.apple.com/tutorials/data/documentation/localauthentication/laerror-swift.struct.json": {
       "etag": "\"7538-65d8323cef308-df\"",
@@ -2393,8 +2453,8 @@
   },
   "metadata": {
     "render": {
-      "version": 1
+      "version": 2
     },
-    "total_pages": 478
+    "total_pages": 490
   }
 }

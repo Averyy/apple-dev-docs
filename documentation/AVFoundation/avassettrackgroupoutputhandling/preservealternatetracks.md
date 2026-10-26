@@ -28,6 +28,14 @@ AVAssetTrackGroupOutputHandlingPreserveAlternateTracks
 
 Setting this policy tells the session to export alternate tracks in a track group without reencoding them.
 
+## See Also
+
+### Policies
+- [AVAssetTrackGroupOutputHandlingNone](./avassettrackgroupoutputhandlingnone.md)
+  A policy that doesn’t pass through alternate audio tracks from the source asset during export.
+- [AVAssetTrackGroupOutputHandlingDefaultPolicy](./avassettrackgroupoutputhandlingdefaultpolicy.md)
+  The default track group output handling policy.
+
 
 ---
 

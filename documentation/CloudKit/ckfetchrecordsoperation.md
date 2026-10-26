@@ -56,6 +56,8 @@ If you assign a closure to the [`completionBlock`](../Foundation/operation/compl
   The record IDs of the records to fetch.
 - [var desiredKeys: [CKRecord.FieldKey]?](./ckfetchrecordsoperation/desiredkeys-31bbq.md)
   The fields of the records to fetch.
+- [desiredKeys](./ckfetchrecordsoperation/desiredkeys-34l1l.md)
+  The fields of the records to fetch.
 ### Processing Record Fetch Results
 - [var perRecordProgressBlock: ((CKRecord.ID, Double) -> Void)?](./ckfetchrecordsoperation/perrecordprogressblock.md)
   The closure to execute with progress information for individual records.

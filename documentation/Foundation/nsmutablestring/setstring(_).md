@@ -44,6 +44,8 @@ func setString(_ aString: String)
   Replaces the characters from `range` with those in `aString`.
 - [func replaceOccurrences(of: String, with: String, options: NSString.CompareOptions, range: NSRange) -> Int](./replaceoccurrences%28of,with,options,range%29.md)
   Replaces all occurrences of a given string in a given range with another given string, returning the number of replacements.
+- [- appendFormat:](./appendformat_.md)
+  Adds a constructed string to the receiver.
 
 
 ---

@@ -35,6 +35,10 @@ An [`INCarDefrosterResolutionResult`](./incardefrosterresolutionresult.md) objec
   Creates an object whose resolution involves the successful matching of the specified parameter.
 - [class func confirmationRequired(with: INCarDefroster) -> Self](./incardefrosterresolutionresult/confirmationrequired%28with%29.md)
   Creates an object whose resolution requires that the user must confirm the value before proceeding.
+- [+ successWithResolvedValue:](./incardefrosterresolutionresult/successwithresolvedvalue_.md)
+  Creates an object whose resolution involves the successful matching of the specified parameter.
+- [+ confirmationRequiredWithValueToConfirm:](./incardefrosterresolutionresult/confirmationrequiredwithvaluetoconfirm_.md)
+  Creates an object whose resolution requires that the user must confirm the value before proceeding.
 
 ## Relationships
 

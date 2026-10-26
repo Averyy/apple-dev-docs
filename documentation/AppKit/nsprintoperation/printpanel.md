@@ -34,6 +34,15 @@ var printPanel: NSPrintPanel { get set }
   The custom title of the print job.
 - [var pdfPanel: NSPDFPanel](./pdfpanel.md)
   The PDF panel object to use during the operation.
+### Related Documentation
+- [- showPanels](./showpanels.md)
+  Returns a Boolean value that indicates whether the print panel is to be displayed.
+- [- accessoryView](./accessoryview.md)
+  Returns the accessory view used by the print operation’s print panel.
+- [- setAccessoryView:](./setaccessoryview_.md)
+  Sets the custom accessory view to be displayed by the print operation’s print panel.
+- [- setShowPanels:](./setshowpanels_.md)
+  Sets whether the print operation should display a print panel.
 
 
 ---

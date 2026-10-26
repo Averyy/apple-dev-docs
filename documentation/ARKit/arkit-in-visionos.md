@@ -186,6 +186,8 @@ ARKit in visionOS offers a new set of sensing capabilities that you adopt indivi
   A source of live data from ARKit.
 - [protocol Anchor](./anchor.md)
   The identity, location, and orientation of an object in world space.
+- [ARKit in visionOS C API](./arkit-in-visionos-c-api.md)
+  Integrate ARKit with low-level libraries and functionality.
 
 
 ---

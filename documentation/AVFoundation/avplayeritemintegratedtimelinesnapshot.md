@@ -46,6 +46,7 @@ A snapshot doesn’t reflect the new timeline state as playback progresses. You 
   The current date on the integrated timeline when the system created the snapshot.
 ### Time mapping
 - [func segmentAndOffsetIntoSegment(forTimelineTime: CMTime) -> (AVPlayerItemSegment, CMTime)](./avplayeritemintegratedtimelinesnapshot/segmentandoffsetintosegment%28fortimelinetime%29.md)
+- [- mapTime:toSegment:atSegmentOffset:](./avplayeritemintegratedtimelinesnapshot/maptime_tosegment_atsegmentoffset_.md)
 
 ## Relationships
 

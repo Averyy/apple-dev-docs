@@ -57,6 +57,8 @@ To fetch a record zone from the database, use a [`CKFetchRecordZonesOperation`](
 ### Creating a Record Zone ID
 - [convenience init(zoneName: String, ownerName: String)](./id/init%28zonename,ownername%29-22irr.md)
   Creates a record zone ID with the specified name and owner.
+- [- initWithZoneName:ownerName:](../ckrecordzoneid/initwithzonename_ownername_.md)
+  Creates a record zone ID with the specified name and owner.
 ### Getting the Record Zone ID Attributes
 - [var zoneName: String](./id/zonename.md)
   The unique name of the record zone.

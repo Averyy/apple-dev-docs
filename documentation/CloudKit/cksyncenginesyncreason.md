@@ -45,6 +45,16 @@ enum CKSyncEngineSyncReason : NSInteger;
 - [Sendable](../Swift/sendable.md)
 - [SendableMetatype](../Swift/sendablemetatype.md)
 
+## See Also
+
+### Accessing specific attributes
+- [reason](./cksyncenginesendchangescontext/reason.md)
+  The reason for the send operation.
+- [options](./cksyncenginesendchangescontext/options.md)
+  The additional options for the send operation.
+- [CKSyncEngineSendChangesOptions](./cksyncenginesendchangesoptions.md)
+  A set of options to use with a send operation.
+
 
 ---
 

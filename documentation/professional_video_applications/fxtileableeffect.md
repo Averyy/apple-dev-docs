@@ -21,10 +21,10 @@ protocol FxTileableEffect : NSObjectProtocol
 
 ## Mentions
 
-- [Building an FxPlug plug-in manually](https://developer.apple.com/documentation/professional-video-applications/building-an-fxplug-plug-in-manually)
-- [Migrating FxPlug 3 plug-ins to FxPlug 4](https://developer.apple.com/documentation/professional-video-applications/migrating-fxplug-3-plug-ins-to-fxplug-4)
-- [Adding parameters to plug-ins](https://developer.apple.com/documentation/professional-video-applications/adding-parameters-to-plug-ins)
-- [Thread safety in plug-ins](https://developer.apple.com/documentation/professional-video-applications/thread-safety-in-plug-ins)
+- [Building an FxPlug plug-in manually](../Professional-Video-Applications/building-an-fxplug-plug-in-manually.md)
+- [Migrating FxPlug 3 plug-ins to FxPlug 4](../Professional-Video-Applications/migrating-fxplug-3-plug-ins-to-fxplug-4.md)
+- [Adding parameters to plug-ins](../Professional-Video-Applications/adding-parameters-to-plug-ins.md)
+- [Thread safety in plug-ins](../Professional-Video-Applications/thread-safety-in-plug-ins.md)
 
 #### Overview
 
@@ -114,13 +114,13 @@ Using this protocol, your plug-in can render select portions of its output, or t
 ## See Also
 
 ### Rendering
-- [Rendering in FxPlug](https://developer.apple.com/documentation/professional-video-applications/rendering-in-fxplug)
+- [Rendering in FxPlug](../Professional-Video-Applications/rendering-in-fxplug.md)
   Use Metal or other frameworks to render images with your FxPlug plug-in.
-- [Communicating with the plug-in state](https://developer.apple.com/documentation/professional-video-applications/communicating-with-the-plug-in-state)
+- [Communicating with the plug-in state](../Professional-Video-Applications/communicating-with-the-plug-in-state.md)
   Prepare the necessary information, such as parameter values, for your FxPlug plug-in to render.
-- [Working with tiled images](https://developer.apple.com/documentation/professional-video-applications/working-with-tiled-images)
+- [Working with tiled images](../Professional-Video-Applications/working-with-tiled-images.md)
   Render only the necessary tiles of an image in your FxPlug plug-in to improve efficiency.
-- [Optimizing FxPlug plug-ins](https://developer.apple.com/documentation/professional-video-applications/optimizing-fxplug-plug-ins)
+- [Optimizing FxPlug plug-ins](../Professional-Video-Applications/optimizing-fxplug-plug-ins.md)
   Maintain consistent rendering at all resolutions and aspect ratios by using pixel transforms.
 
 

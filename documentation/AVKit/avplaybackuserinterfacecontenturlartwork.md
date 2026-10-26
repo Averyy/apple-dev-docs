@@ -55,6 +55,14 @@ class AVPlaybackUserInterfaceContentURLArtwork
   A Swift-friendly structure representing media metadata.
 - [class AVPlaybackUserInterfaceContentArtwork](./avplaybackuserinterfacecontentartwork.md)
   Base class representing artwork or cover art for media content.
+- [AVPlaybackUserInterfaceMetadataProviding](./avplaybackuserinterfacemetadataproviding-1w04z.md)
+  Provides metadata information about media content including title, artwork, and content type.
+- [AVPlaybackUserInterfaceContentMetadata](./avplaybackuserinterfacecontentmetadata-c.class.md)
+  Provides metadata information about media content including title, artwork, and content type.
+- [AVPlaybackUserInterfaceContentMetadataTemplate](./avplaybackuserinterfacecontentmetadatatemplate.md)
+  A mutable template for configuring media metadata before creating immutable metadata objects.
+- [AVPlaybackUserInterfaceContentVideoProperties](./avplaybackuserinterfacecontentvideoproperties.md)
+  Properties specific to video content.
 
 
 ---

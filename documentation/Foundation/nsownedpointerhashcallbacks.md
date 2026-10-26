@@ -40,6 +40,8 @@ extern const NSHashTableCallBacks NSOwnedPointerHashCallBacks;
   For sets of objects, with transfer of ownership upon insertion, using pointer equality.
 - [let NSPointerToStructHashCallBacks: NSHashTableCallBacks](./nspointertostructhashcallbacks.md)
   For sets of pointers to structs, when the first field of the struct is `int`-sized.
+- [NSIntHashCallBacks](./nsinthashcallbacks.md)
+  For sets of pointer-sized quantities or smaller (for example, `int`, `long`, or `unichar`).
 
 
 ---

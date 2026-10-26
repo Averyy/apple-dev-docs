@@ -33,6 +33,7 @@ Before you run the sample code project in Xcode, ensure you’re using iOS 17 or
   An object that performs audio input or output in the engine.
 - [class AVAudioNode](./avaudionode.md)
   An object you use for audio generation, processing, or an I/O block.
+- [AVAudioIONodeInputBlockRealtimeSafe](./avaudioionodeinputblockrealtimesafe.md)
 
 
 ---

@@ -34,6 +34,8 @@ kCALayerMaxYMargin
   The bottom margin between the receiver and its superview is flexible.
 - [static var layerHeightSizable: CAAutoresizingMask](./layerheightsizable.md)
   The receiver’s height is flexible.
+- [kCALayerNotSizable](./kcalayernotsizable.md)
+  The receiver cannot be resized.
 
 
 ---

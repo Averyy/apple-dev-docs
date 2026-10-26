@@ -30,6 +30,8 @@ func removeAllDebugMarkers()
 ### Debugging buffers
 - [func addDebugMarker(String, range: Range<Int>)](./adddebugmarker%28_,range%29.md)
   Adds a debug marker string to a specific buffer range.
+- [- addDebugMarker:range:](./adddebugmarker_range_.md)
+  Adds a debug marker string to a specific buffer range.
 
 
 ---

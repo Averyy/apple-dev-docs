@@ -56,6 +56,18 @@ The universal procedure pointer.
   Disposes of a universal procedure pointer (UPP) to a profile-iteration callback.
 - [InvokeCMProfileIterateUPP](./api-1805343-invokecmprofileiterateupp.md)
   Invokes a universal procedure pointer (UPP) to a profile-iteration callback.
+- [NewCMProfileAccessUPP](./api-1805327-newcmprofileaccessupp.md)
+  Creates a new universal procedure pointer (UPP) to a profile-access callback.
+- [DisposeCMProfileAccessUPP](./api-1805329-disposecmprofileaccessupp.md)
+  Disposes of a universal procedure pointer (UPP) to a profile-access callback.
+- [InvokeCMProfileAccessUPP](./api-1805333-invokecmprofileaccessupp.md)
+  Invokes a universal procedure pointer (UPP) to a profile-access callback.
+- [NewCMProfileFilterUPP](./api-1805336-newcmprofilefilterupp.md)
+  Creates a new universal procedure pointer (UPP) to a profile-filter callback.
+- [DisposeCMProfileFilterUPP](./api-1805337-disposecmprofilefilterupp.md)
+  Disposes of a universal procedure pointer (UPP) to a profile-filter callback.
+- [InvokeCMProfileFilterUPP](./api-1805338-invokecmprofilefilterupp.md)
+  Invokes a universal procedure pointer (UPP) to a profile-filter callback.
 
 
 ---

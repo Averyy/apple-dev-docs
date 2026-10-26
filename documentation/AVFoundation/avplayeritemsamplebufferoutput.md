@@ -51,6 +51,15 @@ Currently supported for HLS `AVPlayerItems` only, and only for delivering decode
   Returns next sample buffer once it becomes available.
 - [AVPlayerItemSampleBufferOutput.SampleBufferInSequence](./avplayeritemsamplebufferoutput/samplebufferinsequence.md)
   Holds the information necessary for processing generated sample buffers.
+- [- copyNextSampleBuffer](./avplayeritemsamplebufferoutput/copynextsamplebuffer.md)
+  Copies the next sample buffer for the output synchronously.
+### Configuring the delegate
+- [delegate](./avplayeritemsamplebufferoutput/delegate.md)
+  The receiver’s delegate.
+- [delegateQueue](./avplayeritemsamplebufferoutput/delegatequeue.md)
+  The dispatch queue where the delegate is messaged.
+- [- setDelegate:queue:](./avplayeritemsamplebufferoutput/setdelegate_queue_.md)
+  Sets the receiver’s delegate and a dispatch queue on which the delegate will be called.
 
 ## Relationships
 
@@ -91,6 +100,12 @@ Currently supported for HLS `AVPlayerItems` only, and only for delivering decode
   Configuration options specified when creating an [`AVPlayerItemSampleBufferOutput`](./avplayeritemsamplebufferoutput.md).
 - [class AVPlayerItemSampleBufferOutputAudioConfiguration](./avplayeritemsamplebufferoutputaudioconfiguration.md)
   Audio-specific configuration options specified when creating an [`AVPlayerItemSampleBufferOutput`](./avplayeritemsamplebufferoutput.md).
+- [CMTagCollectionCreateWithVideoOutputPreset](./cmtagcollectioncreatewithvideooutputpreset.md)
+  Creates a collection with the required tags to describe the specified video output requirements.
+- [CMTagCollectionVideoOutputPreset](./cmtagcollectionvideooutputpreset.md)
+  Constants that indicate the type of video content to output.
+- [AVPlayerItemSampleBufferOutputDelegate](./avplayeritemsamplebufferoutputdelegate.md)
+  Defines common delegate methods for objects participating in sample buffer output.
 
 
 ---

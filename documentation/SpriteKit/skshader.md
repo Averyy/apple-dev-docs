@@ -60,6 +60,12 @@ Compiling a shader and the uniform data associated with it can be expensive. Bec
   Initializes a new shader object using the specified source and uniform data.
 - [init(source: String)](./skshader/init%28source%29.md)
   Initializes a new shader object using the specified source code.
+- [+ shaderWithSource:uniforms:](./skshader/shaderwithsource_uniforms_.md)
+  Creates a new shader object using the specified source and uniform data.
+- [+ shaderWithSource:](./skshader/shaderwithsource_.md)
+  Creates a new shader object using the specified source code.
+- [+ shader](./skshader/shader.md)
+  Creates a new empty shader object.
 ### Providing Uniform Data to a Shader
 - [func addUniform(SKUniform)](./skshader/adduniform%28_%29.md)
   Adds a uniform to the shader.

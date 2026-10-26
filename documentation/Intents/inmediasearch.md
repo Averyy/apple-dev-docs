@@ -29,6 +29,8 @@ class INMediaSearch
 ### Initializing a Media Search Object
 - [convenience init(mediaType: INMediaItemType, sortOrder: INMediaSortOrder, mediaName: String?, artistName: String?, albumName: String?, genreNames: [String]?, moodNames: [String]?, releaseDate: INDateComponentsRange?, reference: INMediaReference, mediaIdentifier: String?)](./inmediasearch/init%28mediatype,sortorder,medianame,artistname,albumname,genrenames,moodnames,releasedate,reference,mediaidentifier%29.md)
   Creates a new media search object with the specified parameters.
+- [- initWithMediaType:sortOrder:mediaName:artistName:albumName:genreNames:moodNames:releaseDate:reference:mediaIdentifier:](./inmediasearch/initwithmediatype_sortorder_medianame_artistname_albumname_genrenames_moodnames_releasedate_reference_mediaidentifier_.md)
+  Creates a new media search object with the specified parameters.
 ### Retrieving Search Information
 - [var genreNames: [String]?](./inmediasearch/genrenames.md)
   The media genres to search.

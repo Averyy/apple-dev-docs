@@ -42,6 +42,8 @@ In macOS, after creating a filter with this method you must call [`setDefaults()
 - [Image Unit Tutorial](https://developer.apple.com/library/archive/documentation/GraphicsImaging/Conceptual/ImageUnitTutorial/Introduction/Introduction.html#//apple_ref/doc/uid/TP40004531)
 - [Core Image Filter Reference](https://developer.apple.com/library/archive/documentation/GraphicsImaging/Reference/CoreImageFilterReference/index.html#//apple_ref/doc/uid/TP40004346)
 - [Core Image Programming Guide](https://developer.apple.com/library/archive/documentation/GraphicsImaging/Conceptual/CoreImaging/ci_intro/ci_intro.html#//apple_ref/doc/uid/TP30001185)
+- [+ filterWithName:keysAndValues:](./filterwithname_keysandvalues_.md)
+  Creates a [`CIFilter`](../cifilter-swift.class.md) object for a specific kind of filter and initializes the input values with a `nil`-terminated list of arguments.
 ### Creating a filter
 - [init?(name: String, withInputParameters: [String : Any]?)](./init%28name,withinputparameters%29.md)
   Creates a [`CIFilter`](../cifilter-swift.class.md) object for a specific kind of filter and initializes the input values.

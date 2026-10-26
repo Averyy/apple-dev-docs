@@ -44,6 +44,9 @@ The new font descriptor.
   Returns a new font descriptor based on the current object, but with the specified design style.
 - [NSFontDescriptor.SystemDesign](./systemdesign.md)
   Constants for font designs, such as monospace, rounded, and serif.
+### Related Documentation
+- [+ fontDescriptorWithFontAttributes:](./fontdescriptorwithfontattributes_.md)
+  Returns a font descriptor with a dictionary of attributes.
 
 
 ---

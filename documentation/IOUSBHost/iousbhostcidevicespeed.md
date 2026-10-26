@@ -33,6 +33,8 @@ typedef enum { ... } IOUSBHostCIDeviceSpeed;
 - [var IOUSBHostCIDeviceSpeedSuperPlusBy2: IOUSBHostCIDeviceSpeed](./iousbhostcidevicespeedsuperplusby2.md)
 ### Instance Properties
 - [var rawValue: UInt32](./iousbhostcidevicespeed/rawvalue.md)
+### Enumeration Cases
+- [IOUSBHostCIDeviceSpeedOther](./iousbhostcidevicespeedother.md)
 
 ## Relationships
 
@@ -61,6 +63,17 @@ typedef enum { ... } IOUSBHostCIDeviceSpeed;
 - [Anonymous](./api-3612476-anonymous.md)
 - [Anonymous](./api-3612477-anonymous.md)
 - [Anonymous](./api-3612478-anonymous.md)
+- [IOUSBHostCIControllerState](./iousbhostcicontrollerstate.md)
+- [IOUSBHostCIDeviceState](./iousbhostcidevicestate.md)
+- [IOUSBHostCIEndpointState](./iousbhostciendpointstate.md)
+- [IOUSBHostCIExceptionType](./iousbhostciexceptiontype.md)
+- [IOUSBHostCILinkState](./iousbhostcilinkstate.md)
+- [IOUSBHostCIMessageStatus](./iousbhostcimessagestatus.md)
+- [IOUSBHostCIMessageType](./iousbhostcimessagetype.md)
+- [IOUSBHostCIPortState](./iousbhostciportstate.md)
+- [IOUSBHostCIUserClientVersion](./iousbhostciuserclientversion.md)
+- [IOUSBHostIsochronousTransactionOptions](./iousbhostisochronoustransactionoptions.md)
+- [IOUSBHostIsochronousTransferOptions](./iousbhostisochronoustransferoptions.md)
 
 
 ---

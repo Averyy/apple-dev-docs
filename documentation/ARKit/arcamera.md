@@ -36,6 +36,14 @@ You get camera information from the [`camera`](./arframe/camera.md) property of 
   The general quality of position tracking available when the camera captured a frame.
 - [ARCamera.TrackingState](./arcamera/trackingstate-swift.enum.md)
   Values for position tracking quality, with possible causes when tracking quality is limited.
+- [trackingState](./arcamera/trackingstate-9pgmq.md)
+  The general quality of position tracking available when the camera captured a frame.
+- [ARTrackingState](./artrackingstate.md)
+  Possible values for position-tracking quality.
+- [trackingStateReason](./arcamera/trackingstatereason.md)
+  A possible diagnosis for limited position-tracking quality as of when the camera captured a frame.
+- [ARTrackingStateReason](./artrackingstatereason.md)
+  Possible causes for limited position-tracking quality.
 ### Examining Camera Geometry
 - [var transform: simd_float4x4](./arcamera/transform.md)
   The position and orientation of the camera in world coordinate space.
@@ -50,6 +58,8 @@ You get camera information from the [`camera`](./arframe/camera.md) property of 
 - [var projectionMatrix: simd_float4x4](./arcamera/projectionmatrix.md)
   A transform matrix appropriate for rendering 3D content to match the image captured by the camera.
 - [func unprojectPoint(CGPoint, ontoPlane: simd_float4x4, orientation: UIInterfaceOrientation, viewportSize: CGSize) -> simd_float3?](./arcamera/unprojectpoint%28_,ontoplane,orientation,viewportsize%29.md)
+  Returns the projection of a point from the 2D space of a view rendering the scene onto a plane in the 3D world space detected by ARKit.
+- [- unprojectPoint:ontoPlaneWithTransform:orientation:viewportSize:](./arcamera/unprojectpoint_ontoplanewithtransform_orientation_viewportsize_.md)
   Returns the projection of a point from the 2D space of a view rendering the scene onto a plane in the 3D world space detected by ARKit.
 ### Applying Motion Blur
 - [var exposureDuration: TimeInterval](./arcamera/exposureduration.md)
@@ -66,6 +76,14 @@ You get camera information from the [`camera`](./arframe/camera.md) property of 
   Unprojects a 2D point in image space onto a 3D plane in world space.
 - [func viewMatrix(viewRotationAngle: CGFloat) -> simd_float4x4](./arcamera/viewmatrix%28viewrotationangle%29.md)
   Returns the view matrix for the camera with a given view angle.
+- [- projectPoint:orientation:viewportSize:](./arcamera/projectpoint_orientation_viewportsize_.md)
+  Returns the projection of a point from the 3D world space detected by ARKit into the 2D space of a view rendering the scene.
+- [- projectionMatrixForOrientation:viewportSize:zNear:zFar:](./arcamera/projectionmatrixfororientation_viewportsize_znear_zfar_.md)
+  Returns a transform matrix appropriate for rendering 3D content to match the image captured by the camera, using the specified parameters.
+- [- unprojectPoint:ontoPlaneWithTransform:viewRotationAngle:viewportSize:](./arcamera/unprojectpoint_ontoplanewithtransform_viewrotationangle_viewportsize_.md)
+  Unproject a 2D point from the viewport onto a plane in 3D world coordinates.
+- [- viewMatrixForOrientation:](./arcamera/viewmatrixfororientation_.md)
+  Returns a transform matrix for converting from world space to camera space.
 
 ## Relationships
 

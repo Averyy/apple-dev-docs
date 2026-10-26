@@ -36,6 +36,10 @@ This function will unregister the notification. Once the notification has been u
   Allows a client to register for a channel close notification.
 - [func IOBluetoothRemoveIgnoredHIDDevice(IOBluetoothDeviceRef!)](./iobluetoothremoveignoredhiddevice%28_%29.md)
   The counterpart to the above IOBluetoothIgnoreHIDDevice() API.
+- [IOBluetoothAddSCOAudioDevice](./iobluetoothaddscoaudiodevice.md)
+  Creates a persistent audio driver that will route audio data to/from the specified device.
+- [IOBluetoothRemoveSCOAudioDevice](./iobluetoothremovescoaudiodevice.md)
+  Removes a persistent audio driver for a device that had already been added using IOBluetoothAddAudioDevice().
 
 
 ---

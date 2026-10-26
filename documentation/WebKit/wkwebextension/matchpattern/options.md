@@ -34,6 +34,9 @@ enum WKWebExtensionMatchPatternOptions : NSUInteger;
   Indicates that the scheme components should be ignored while matching.
 - [static var matchBidirectionally: WKWebExtension.MatchPattern.Options](./options/matchbidirectionally.md)
   Indicates that two patterns should be checked in either direction while matching.
+### Enumeration Cases
+- [WKWebExtensionMatchPatternOptionsNone](../../wkwebextensionmatchpatternoptions/wkwebextensionmatchpatternoptionsnone.md)
+  Indicates no special matching options.
 
 ## Relationships
 

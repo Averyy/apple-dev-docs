@@ -29,6 +29,9 @@ extern NSErrorDomain const SCStreamErrorDomain;
 ### Stream errors (Swift)
 - [struct SCStreamError](./scstreamerror.md)
   An instance representing a ScreenCaptureKit framework error.
+### Stream errors (Objective-C)
+- [SCStreamErrorCode](./scstreamerror/code.md)
+  Codes for user cancellation events and errors that can occur in ScreenCaptureKit.
 
 
 ---

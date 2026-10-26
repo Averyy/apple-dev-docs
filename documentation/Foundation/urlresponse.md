@@ -54,6 +54,8 @@ The related [`HTTPURLResponse`](./httpurlresponse.md) class is a commonly used s
   The name of the text encoding provided by the response’s originating source.
 - [var url: URL?](./urlresponse/url.md)
   The URL for the response.
+- [NSURLResponseUnknownLength](./nsurlresponseunknownlength.md)
+  The response length cannot be determined in advance of receiving the data from the server.
 ### Initializers
 - [init(URL: URL, MIMEType: String?, expectedContentLength: Int, textEncodingName: String?)](./urlresponse/init%28url,mimetype,expectedcontentlength,textencodingname%29-3n1n4.md)
 - [init?(coder: NSCoder)](./urlresponse/init%28coder%29.md)

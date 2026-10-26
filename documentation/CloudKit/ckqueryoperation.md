@@ -66,6 +66,8 @@ If you assign a handler to the operation’s [`completionBlock`](../Foundation/o
   A constant value that represents the maximum number of results CloudKit retrieves.
 - [var desiredKeys: [CKRecord.FieldKey]?](./ckqueryoperation/desiredkeys-7qrse.md)
   The fields of the records to fetch.
+- [desiredKeys](./ckqueryoperation/desiredkeys-4a6vy.md)
+  The fields of the records to fetch.
 ### Processing the Query Results
 - [var recordFetchedBlock: ((CKRecord) -> Void)?](./ckqueryoperation/recordfetchedblock.md)
   The closure to execute when a record becomes available.
@@ -75,6 +77,8 @@ If you assign a handler to the operation’s [`completionBlock`](../Foundation/o
 - [var queryResultBlock: ((Result<CKQueryOperation.Cursor?, any Error>) -> Void)?](./ckqueryoperation/queryresultblock.md)
   The closure to execute after CloudKit retrieves all of the records.
 - [var recordMatchedBlock: ((CKRecord.ID, Result<CKRecord, any Error>) -> Void)?](./ckqueryoperation/recordmatchedblock-2qze7.md)
+  The closure to execute when a record match is available.
+- [recordMatchedBlock](./ckqueryoperation/recordmatchedblock-7kek0.md)
   The closure to execute when a record match is available.
 
 ## Relationships

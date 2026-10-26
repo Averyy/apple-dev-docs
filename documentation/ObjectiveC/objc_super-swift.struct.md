@@ -54,6 +54,8 @@ The compiler generates an `objc_super` data structure when it encounters the `su
 ### Instance Data Types
 - [struct objc_object](./objc_object.md)
   Represents an instance of a class.
+- [id](./id.md)
+  A pointer to an instance of a class.
 
 
 ---

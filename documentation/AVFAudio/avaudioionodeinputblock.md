@@ -42,6 +42,7 @@ Don’t clear or refill the data in the return value until the framework calls t
 ### Supplying manual rendering input
 - [func setManualRenderingInputPCMFormat(AVAudioFormat, inputBlock: AVAudioIONodeInputBlock) -> Bool](./avaudioinputnode/setmanualrenderinginputpcmformat%28_,inputblock%29.md)
   Supplies the data through the input node to the engine while operating in the manual rendering mode.
+- [- setRealtimeSafeManualRenderingInputPCMFormat:inputBlock:](./avaudioinputnode/setrealtimesafemanualrenderinginputpcmformat_inputblock_.md)
 
 
 ---

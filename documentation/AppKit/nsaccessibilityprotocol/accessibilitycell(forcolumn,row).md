@@ -52,6 +52,14 @@ This property is required for all elements that function as cell-based tables.
   Returns the visible cells for the table.
 - [func setAccessibilityVisibleCells([Any]?)](./setaccessibilityvisiblecells%28_%29.md)
   Sets the visible cells for the table.
+- [accessibilityColumnIndexRange](../nsaccessibility-c.protocol/accessibilitycolumnindexrange.md)
+  The column index range of the cell.
+- [accessibilityRowIndexRange](../nsaccessibility-c.protocol/accessibilityrowindexrange.md)
+  The row index range of the cell.
+- [accessibilitySelectedCells](../nsaccessibility-c.protocol/accessibilityselectedcells.md)
+  The currently selected cells for the table.
+- [accessibilityVisibleCells](../nsaccessibility-c.protocol/accessibilityvisiblecells.md)
+  The visible cells for the table.
 
 
 ---

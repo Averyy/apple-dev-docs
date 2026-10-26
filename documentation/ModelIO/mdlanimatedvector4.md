@@ -34,6 +34,10 @@ class MDLAnimatedVector4
 - [func reset(float4Array: [SIMD4<Float>], atTimes: [TimeInterval])](./mdlanimatedvector4/reset%28float4array,attimes%29.md)
 - [func setDouble4(vector_double4, atTime: TimeInterval)](./mdlanimatedvector4/setdouble4%28_,attime%29.md)
 - [func setFloat4(vector_float4, atTime: TimeInterval)](./mdlanimatedvector4/setfloat4%28_,attime%29.md)
+- [- getDouble4Array:maxCount:](./mdlanimatedvector4/getdouble4array_maxcount_.md)
+- [- getFloat4Array:maxCount:](./mdlanimatedvector4/getfloat4array_maxcount_.md)
+- [- resetWithDouble4Array:atTimes:count:](./mdlanimatedvector4/resetwithdouble4array_attimes_count_.md)
+- [- resetWithFloat4Array:atTimes:count:](./mdlanimatedvector4/resetwithfloat4array_attimes_count_.md)
 
 ## Relationships
 

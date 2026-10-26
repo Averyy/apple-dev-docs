@@ -47,7 +47,7 @@ HealthKit is also designed to manage and merge data from multiple sources. For e
   Respect and safeguard your user’s privacy.
 - [HealthKit updates](../Updates/healthkit.md)
   Learn about important changes to HealthKit.
-- [HealthKitUI](https://developer.apple.com/documentation/healthkitui)
+- [HealthKitUI](../HealthKitUI/HealthKitUI.md)
   Display user interface that enables a person to view and interact with their health data.
 ### Health data
 - [Saving data to HealthKit](./saving-data-to-healthkit.md)
@@ -86,6 +86,51 @@ HealthKit is also designed to manage and merge data from multiple sources. For e
 - [HealthKit Functions](./healthkit-functions.md)
 - [Macros](./healthkit-macros.md)
 - [HealthKit Variables](./healthkit-variables.md)
+### Variables
+- [HKHealthConceptDomainMedication](./hkhealthconceptdomain/medication.md)
+  The domain that represents medication concepts.
+- [HKMedicationGeneralFormCapsule](./hkmedicationgeneralform/capsule.md)
+  The medication comes in capsule form, such as a hard-shell capsule or softgel.
+- [HKMedicationGeneralFormCream](./hkmedicationgeneralform/cream.md)
+  The medication is applied as a cream.
+- [HKMedicationGeneralFormDevice](./hkmedicationgeneralform/device.md)
+  The medication is administered through a device, such as an infusion pump for controlled fluid delivery.
+- [HKMedicationGeneralFormDrops](./hkmedicationgeneralform/drops.md)
+  The medication is taken as drops, for example eye drops or ear drops.
+- [HKMedicationGeneralFormFoam](./hkmedicationgeneralform/foam.md)
+  The medication is applied as a foam.
+- [HKMedicationGeneralFormGel](./hkmedicationgeneralform/gel.md)
+  The medication is applied as a gel.
+- [HKMedicationGeneralFormInhaler](./hkmedicationgeneralform/inhaler.md)
+  The medication is delivered through an inhaler.
+- [HKMedicationGeneralFormInjection](./hkmedicationgeneralform/injection.md)
+  The medication is given as an injection.
+- [HKMedicationGeneralFormLiquid](./hkmedicationgeneralform/liquid.md)
+  The medication is taken as a liquid, such as a syrup.
+- [HKMedicationGeneralFormLotion](./hkmedicationgeneralform/lotion.md)
+  The medication is applied as a lotion.
+- [HKMedicationGeneralFormOintment](./hkmedicationgeneralform/ointment.md)
+  The medication is applied as an ointment.
+- [HKMedicationGeneralFormPatch](./hkmedicationgeneralform/patch.md)
+  The medication is applied as a patch worn on the skin.
+- [HKMedicationGeneralFormPowder](./hkmedicationgeneralform/powder.md)
+  The medication is taken as a powder.
+- [HKMedicationGeneralFormSpray](./hkmedicationgeneralform/spray.md)
+  The medication is delivered as a spray, for example a nasal spray or throat spray.
+- [HKMedicationGeneralFormSuppository](./hkmedicationgeneralform/suppository.md)
+  The medication is delivered as a suppository.
+- [HKMedicationGeneralFormTablet](./hkmedicationgeneralform/tablet.md)
+  The medication comes in tablet form, such as a pill or caplet.
+- [HKMedicationGeneralFormTopical](./hkmedicationgeneralform/topical.md)
+  The medication is applied topically in a form that wasn’t specified.
+- [HKMedicationGeneralFormUnknown](./hkmedicationgeneralform/unknown.md)
+  The system doesn’t know the general form of the medication.
+- [HKQuantityTypeIdentifierHeartRateVariabilityRMSSD](./hkquantitytypeidentifier/heartratevariabilityrmssd.md)
+### Enumerations
+- [HKMedicationDoseEventLogStatus](./hkmedicationdoseevent/logstatus-swift.enum.md)
+  The statuses the system assigns to a logged medication dose event.
+- [HKMedicationDoseEventScheduleType](./hkmedicationdoseevent/scheduletype-swift.enum.md)
+  The kind of schedule the system associates with a logged medication dose event.
 
 
 ---

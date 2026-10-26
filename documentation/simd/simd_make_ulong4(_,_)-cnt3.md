@@ -27,6 +27,8 @@ static simd_ulong4 simd_make_ulong4(simd_ulong3 xyz, simd_ulong1 w);
   Returns a new vector from a scalar value and a vector.
 - [func simd_make_ulong4(simd_ulong2, simd_ulong1, simd_ulong1) -> simd_ulong4](./simd_make_ulong4%28_,_,_%29-8g4ch.md)
   Returns a new vector from a vector and scalar values.
+- [vector4](./vector4-2st.md)
+  Returns a new vector from a vector and a scalar value.
 
 
 ---

@@ -62,6 +62,10 @@ An [`NSSet`](../nsset.md) containing objects that pass the test.
   Executes a given block using each object in the set, using the specified enumeration options.
 - [func objects(passingTest: (Any, UnsafeMutablePointer<ObjCBool>) -> Bool) -> Set<AnyHashable>](./objects%28passingtest%29.md)
   Returns a set of objects that pass a test in a given block.
+- [- makeObjectsPerformSelector:](./makeobjectsperformselector_.md)
+  Sends a message specified by a given selector to each object in the set.
+- [- makeObjectsPerformSelector:withObject:](./makeobjectsperformselector_withobject_.md)
+  Sends a message specified by a given selector to each object in the set.
 
 
 ---

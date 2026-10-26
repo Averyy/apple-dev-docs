@@ -35,6 +35,8 @@ The Notification Center framework helps you create and manage app extensions tha
 ### List View
 - [class NCWidgetListViewController](./ncwidgetlistviewcontroller.md)
   An object that provides a list view for displaying content in a macOS Today widget.
+### Macros
+- [NOTIFICATION_CENTER_EXTERN](./notification_center_extern.md)
 
 
 ---

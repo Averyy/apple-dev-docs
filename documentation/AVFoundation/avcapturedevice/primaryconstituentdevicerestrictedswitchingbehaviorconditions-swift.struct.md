@@ -44,6 +44,8 @@ When the video zoom factor increases and crosses a camera’s switch-over zoom f
   Restrict switching to a fallback camera only when the device’s focus mode changes.
 - [static var videoZoomChanged: AVCaptureDevice.PrimaryConstituentDeviceRestrictedSwitchingBehaviorConditions](./primaryconstituentdevicerestrictedswitchingbehaviorconditions-swift.struct/videozoomchanged.md)
   Restrict switching to a fallback camera only when the device’s video zoom changes.
+- [AVCapturePrimaryConstituentDeviceRestrictedSwitchingBehaviorConditionNone](../avcaptureprimaryconstituentdevicerestrictedswitchingbehaviorconditions/avcaptureprimaryconstituentdevicerestrictedswitchingbehaviorconditionnone.md)
+  Disallow switching to a fallback camera.
 ### Initializers
 - [init(rawValue: UInt)](./primaryconstituentdevicerestrictedswitchingbehaviorconditions-swift.struct/init%28rawvalue%29.md)
   Creates a switching behavior condition with an unsigned integer value.

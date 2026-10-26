@@ -47,6 +47,8 @@ To change the appearance of the pointer when it hovers over the button, create a
   A closure that returns the pointer style to use when the pointer hovers over the button.
 - [typealias PointerStyleProvider](./uibutton/pointerstyleprovider-swift.typealias.md)
   A type alias defining a closure that returns a pointer style to apply to a button.
+- [pointerStyleProvider](./uibutton/pointerstyleprovider-1d4d2.md)
+  A block that returns the pointer style to use when the pointer hovers over the button.
 
 
 ---

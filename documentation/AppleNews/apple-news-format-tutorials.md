@@ -91,7 +91,7 @@ Before beginning the tutorial, make sure you have the following installed:
 ## See Also
 
 ### Article Design and Creation
-- [Apple News Format](https://developer.apple.com/documentation/applenewsformat)
+- [Apple News Format](../AppleNewsFormat/AppleNewsFormat.md)
   Get Apple News Format reference information, and create signature content for Apple News.
 
 

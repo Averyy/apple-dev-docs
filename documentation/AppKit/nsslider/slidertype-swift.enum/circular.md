@@ -24,6 +24,8 @@ NSSliderTypeCircular
 ### Enumeration Cases
 - [NSSlider.SliderType.linear](./linear.md)
   A bar representing a range, and a knob indicating the currently selected value.
+- [NSLinearSlider](../../nslinearslider.md)
+- [NSCircularSlider](../../nscircularslider.md)
 
 
 ---

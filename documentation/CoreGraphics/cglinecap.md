@@ -51,6 +51,16 @@ A line cap specifies the method used by [`strokePath()`](./cgcontext/strokepath%
 - [Sendable](../Swift/sendable.md)
 - [SendableMetatype](../Swift/sendablemetatype.md)
 
+## See Also
+
+### Constants
+- [CGPathDrawingMode](./cgpathdrawingmode.md)
+  Options for rendering a path.
+- [CGPathElementType](./cgpathelementtype.md)
+  The type of element found in a path.
+- [CGLineJoin](./cglinejoin.md)
+  Junction types for stroked lines.
+
 
 ---
 

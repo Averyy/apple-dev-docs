@@ -33,6 +33,8 @@ class MPSCNNPoolingGradientNode
 - [var kernelWidth: Int](./mpscnnpoolinggradientnode/kernelwidth.md)
 - [var strideInPixelsX: Int](./mpscnnpoolinggradientnode/strideinpixelsx.md)
 - [var strideInPixelsY: Int](./mpscnnpoolinggradientnode/strideinpixelsy.md)
+### Type Methods
+- [+ nodeWithSourceGradient:sourceImage:gradientState:kernelWidth:kernelHeight:strideInPixelsX:strideInPixelsY:paddingPolicy:](./mpscnnpoolinggradientnode/nodewithsourcegradient_sourceimage_gradientstate_kernelwidth_kernelheight_strideinpixelsx_strideinpixelsy_paddingpolicy_.md)
 
 ## Relationships
 

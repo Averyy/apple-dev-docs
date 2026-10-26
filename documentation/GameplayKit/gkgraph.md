@@ -50,6 +50,8 @@ To learn more about graphs and pathfinding, see [Pathfinding](https://developer.
 ### Creating a Graph
 - [init([GKGraphNode])](./gkgraph/init%28_%29.md)
   Initializes a graph with the specified list of nodes.
+- [+ graphWithNodes:](./gkgraph/graphwithnodes_.md)
+  Creates a graph with the specified list of nodes.
 ### Working with Nodes in a Graph
 - [func add([GKGraphNode])](./gkgraph/add%28_%29.md)
   Adds the specified nodes to the graph.

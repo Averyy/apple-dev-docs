@@ -28,6 +28,8 @@ UITableViewCellStateShowingEditControlMask
 ### Constants
 - [static var showingDeleteConfirmation: UITableViewCell.StateMask](./showingdeleteconfirmation.md)
   The state of a table view cell that shows a button requesting confirmation of a delete gesture.
+- [UITableViewCellStateDefaultMask](../../uitableviewcellstatemask/uitableviewcellstatedefaultmask.md)
+  The normal state of a table cell.
 
 
 ---

@@ -50,6 +50,8 @@ Core Data repeatedly calls the provided closure until it returns `true`, then fi
   Creates a batch-insertion request for a named managed entity, and provides an array of data dictionaries for insertion.
 - [convenience init()](./init%28%29.md)
   Creates a Core Data batch-insertion request.
+- [+ batchInsertRequestWithEntityName:objects:](./batchinsertrequestwithentityname_objects_.md)
+  Creates a batch-insertion request for a named managed entity, and provides an array of data dictionaries for insertion.
 
 
 ---

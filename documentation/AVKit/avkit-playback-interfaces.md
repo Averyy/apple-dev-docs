@@ -110,6 +110,8 @@ For information about managing playback itself, see [Media playback](../AVFounda
   A protocol that defines the methods to adopt to respond to route picker view presentation events.
 - [enum AVRoutePickerViewButtonStyle](./avroutepickerviewbuttonstyle.md)
   Constants that define the button styles a route picker view supports.
+- [AVAudioSessionRouteSelection](./avaudiosessionrouteselection.md)
+  Constants that indicate the audio route selection.
 ### Third-party casting
 - [Third-party casting support](./third-party-casting-support.md)
   Provide custom playback controls for third-party casting services and other media sources.

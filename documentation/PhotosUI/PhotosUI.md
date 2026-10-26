@@ -43,6 +43,12 @@ The framework also provides a view you can use to display Live Photos.
   A type that defines the filter to apply to the photo library.
 - [struct PHPickerResult](./phpickerresult-swift.struct.md)
   Types that represent a selected asset from a person’s photo library.
+- [PHPickerConfiguration](./phpickerconfiguration-c.class.md)
+  An object that contains information about how to configure a picker view controller.
+- [PHPickerFilter](./phpickerfilter-c.class.md)
+  A type that defines the filter to apply to the photo library.
+- [PHPickerResult](./phpickerresult-c.class.md)
+  Types that represent a selected asset from a person’s photo library.
 ### Photos picker for SwiftUI
 - [Bringing Photos picker to your SwiftUI app](../PhotoKit/bringing-photos-picker-to-your-swiftui-app.md)
   Select media assets by using a Photos picker view that SwiftUI provides.
@@ -66,7 +72,7 @@ The framework also provides a view you can use to display Live Photos.
 ### macOS Photos project extensions
 - [Creating a Slideshow Project Extension for Photos](../PhotoKit/creating-a-slideshow-project-extension-for-photos.md)
   Augment the macOS Photos app with extensions that support project creation.
-- [class PHProject](https://developer.apple.com/documentation/photos/phproject)
+- [class PHProject](../Photos/phproject.md)
   A representation of a Photos app project extension.
 - [class PHProjectInfo](./phprojectinfo.md)
   Information about the project extension.
@@ -78,7 +84,7 @@ The framework also provides a view you can use to display Live Photos.
   A collection of content representing curated asset and text elements.
 - [class PHProjectRegionOfInterest](./phprojectregionofinterest.md)
   A representation of a region of interest in a photo asset.
-- [class PHProjectChangeRequest](https://developer.apple.com/documentation/photos/phprojectchangerequest)
+- [class PHProjectChangeRequest](../Photos/phprojectchangerequest.md)
   A request to change asset data in a Photos project extension.
 - [protocol PHProjectExtensionController](./phprojectextensioncontroller.md)
   A protocol defining the life cycle and supported types of project extensions.
@@ -88,6 +94,12 @@ The framework also provides a view you can use to display Live Photos.
 - [class PHSharedAlbumCreationViewController](./phsharedalbumcreationviewcontroller.md)
 - [class PHSharedAlbumCustomizationViewController](./phsharedalbumcustomizationviewcontroller.md)
 - [class PHSharedAlbumPostingViewController](./phsharedalbumpostingviewcontroller.md)
+- [PHPickerSearchText](./phpickersearchtext-c.class.md)
+  A search text for \c PHPickerViewController.
+- [PHSharedAlbumCreationConfiguration](./phsharedalbumcreationconfiguration-c.class.md)
+  An object used to configure a `PHSharedAlbumCreationViewController`.
+- [PHSharedAlbumCreationResult](./phsharedalbumcreationresult-c.class.md)
+  An object that contains useful information about a created shared album.
 ### Structures
 - [struct PHPickerMetadataOptions](./phpickermetadataoptions.md)
   Constants that specify metadata options for \c PHPickerViewController.
@@ -100,11 +112,15 @@ The framework also provides a view you can use to display Live Photos.
 ### Enumerations
 - [enum PHSharedAlbumCreationSharingPolicy](./phsharedalbumcreationsharingpolicy.md)
   The sharing policy for creating shared albums.
+### Protocols
+- [PHSharedAlbumCreationViewControllerDelegate](./phsharedalbumcreationviewcontroller/delegate-swift.protocol.md)
+- [PHSharedAlbumCustomizationViewControllerDelegate](./phsharedalbumcustomizationviewcontroller/delegate-swift.protocol.md)
+- [PHSharedAlbumPostingViewControllerDelegate](./phsharedalbumpostingviewcontroller/delegate-swift.protocol.md)
 
 ## See Also
 
 ### Frameworks
-- [Photos](https://developer.apple.com/documentation/photos)
+- [Photos](../Photos/Photos.md)
   Work with image and video assets that the Photos app manages, including those from iCloud Photos and Live Photos.
 
 

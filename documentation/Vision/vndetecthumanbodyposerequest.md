@@ -43,6 +43,10 @@ The framework provides the detected body pose as a [`VNHumanBodyPoseObservation`
   Retrieves the supported joint group names.
 - [class func supportedJointsGroupNames(forRevision: Int) throws -> [VNHumanBodyPoseObservation.JointsGroupName]](./vndetecthumanbodyposerequest/supportedjointsgroupnames%28forrevision%29.md)
   Retrieves the supported joint group names for a revision.
+- [- supportedJointNamesAndReturnError:](./vndetecthumanbodyposerequest/supportedjointnamesandreturnerror_.md)
+  Retrieves the supported joint names.
+- [- supportedJointsGroupNamesAndReturnError:](./vndetecthumanbodyposerequest/supportedjointsgroupnamesandreturnerror_.md)
+  Retrieves the supported joint group names.
 ### Accessing the Results
 - [var results: [VNHumanBodyPoseObservation]?](./vndetecthumanbodyposerequest/results.md)
   The observed body poses.

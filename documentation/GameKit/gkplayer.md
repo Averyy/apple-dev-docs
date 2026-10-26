@@ -75,6 +75,8 @@ Use the [`gamePlayerID`](./gkplayer/gameplayerid.md) property as a unique identi
 ### Observing notifications
 - [static let GKPlayerDidChangeNotificationName: NSNotification.Name](../Foundation/nsnotification/name-swift.struct/gkplayerdidchangenotificationname.md)
   A notification that posts when a player object’s data changes.
+- [GKPlayerDidChangeNotificationName](./gkplayerdidchangenotificationname.md)
+  A notification that posts when a player object’s data changes.
 ### Loading player details
 - [class func loadPlayers(forIdentifiers: [String], withCompletionHandler: (([GKPlayer]?, (any Error)?) -> Void)?)](./gkplayer/loadplayers%28foridentifiers,withcompletionhandler%29.md)
   Loads information about a list of players from Game Center.
@@ -112,6 +114,10 @@ Use the [`gamePlayerID`](./gkplayer/gameplayerid.md) property as a unique identi
 - [static let GKPlayerAuthenticationDidChangeNotificationName: NSNotification.Name](../Foundation/nsnotification/name-swift.struct/gkplayerauthenticationdidchangenotificationname.md)
   A notification that posts after GameKit authenticates the local player.
 - [static let GKPlayerDidChangeNotificationName: NSNotification.Name](../Foundation/nsnotification/name-swift.struct/gkplayerdidchangenotificationname.md)
+  A notification that posts when a player object’s data changes.
+- [GKPlayerAuthenticationDidChangeNotificationName](./gkplayerauthenticationdidchangenotificationname.md)
+  A notification that posts after GameKit initializes the local player.
+- [GKPlayerDidChangeNotificationName](./gkplayerdidchangenotificationname.md)
   A notification that posts when a player object’s data changes.
 
 

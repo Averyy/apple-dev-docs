@@ -26,6 +26,12 @@ extern NSString * const MFMessageComposeViewControllerTextMessageAvailabilityKey
 
 This value matches the result of the [`canSendText()`](./mfmessagecomposeviewcontroller/cansendtext%28%29.md) class method.The `userInfo` dictionary for the [`MFMessageComposeViewControllerTextMessageAvailabilityDidChangeNotification`](./mfmessagecomposeviewcontrollertextmessageavailabilitydidchangenotification.md) notification includes this key. The value of this key is an [`NSNumber`](../Foundation/nsnumber.md) object that contains a Boolean value. This value matches the result of the [`canSendText()`](./mfmessagecomposeviewcontroller/cansendtext%28%29.md) class method.
 
+## See Also
+
+### Handling notifications
+- [MFMessageComposeViewControllerTextMessageAvailabilityDidChangeNotification](./mfmessagecomposeviewcontrollertextmessageavailabilitydidchangenotification.md)
+  Posted when the value returned by the [`canSendText`](./mfmessagecomposeviewcontroller/cansendtext%28%29.md) class method has changed.
+
 
 ---
 

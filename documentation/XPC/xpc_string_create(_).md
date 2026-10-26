@@ -42,6 +42,8 @@ A new string object.
   Returns the length of the underlying string.
 - [func xpc_string_get_string_ptr(xpc_object_t) -> UnsafePointer<CChar>?](./xpc_string_get_string_ptr%28_%29.md)
   Returns a pointer to the internal storage of a string object.
+- [xpc_string_create_with_format](./xpc_string_create_with_format.md)
+  Creates an XPC object that represents a C-string that the specified format string and arguments generate.
 
 
 ---

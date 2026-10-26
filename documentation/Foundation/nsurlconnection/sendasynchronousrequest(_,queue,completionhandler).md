@@ -55,6 +55,8 @@ If authentication is required in order to download the request, the required cre
   Returns an initialized URL connection and begins to load the data for the URL request, if specified.
 - [func start()](./start%28%29.md)
   Causes the connection to begin loading data, if it has not already.
+- [+ connectionWithRequest:delegate:](./connectionwithrequest_delegate_.md)
+  Creates and returns an initialized URL connection and begins to load the data for the URL request.
 
 
 ---

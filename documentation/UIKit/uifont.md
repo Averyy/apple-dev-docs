@@ -126,6 +126,9 @@ Combine these metrics to calculate the size of a block of text without rendering
   A collection of attributes that describes a font.
 ### Initializers
 - [init?(coder: NSCoder)](./uifont/init%28coder%29.md)
+### Type Properties
+- [defaultFontSize](./uifont/defaultfontsize.md)
+- [systemMinimumFontSize](./uifont/systemminimumfontsize.md)
 
 ## Relationships
 

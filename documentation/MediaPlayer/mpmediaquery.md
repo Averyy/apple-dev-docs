@@ -71,6 +71,8 @@ This class includes several convenience constructors that each apply a grouping 
   Creates a media query that matches all media items and that groups and sorts collections by genre name.
 - [init(filterPredicates: Set<MPMediaPredicate>?)](./mpmediaquery/init%28filterpredicates%29.md)
   Initializes a media query with a set of media property predicates.
+- [init](./mpmediaquery-init.md)
+  Initializes a generic media query.
 ### Configuring media queries
 - [var filterPredicates: Set<MPMediaPredicate>?](./mpmediaquery/filterpredicates.md)
   The media property predicates of the media query.

@@ -42,6 +42,8 @@ Finalize the inclusion of these resource allocations, and all other changes you 
 ### Adding allocations
 - [func addAllocations([any MTLAllocation])](./addallocations%28_%29.md)
   Stages multiple resources to join the residency set’s list of allocations.
+- [- addAllocations:count:](./addallocations_count_.md)
+  Stages multiple resources to join the residency set’s list of allocations.
 
 
 ---

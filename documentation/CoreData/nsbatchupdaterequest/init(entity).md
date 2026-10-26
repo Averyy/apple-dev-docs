@@ -34,6 +34,8 @@ init(entity: NSEntityDescription)
 ### Creating a Request
 - [init(entityName: String)](./init%28entityname%29.md)
   Creates a batch-update request for a named managed entity.
+- [+ batchUpdateRequestWithEntityName:](./batchupdaterequestwithentityname_.md)
+  Creates a batch-update request for a named managed entity.
 
 
 ---

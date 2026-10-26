@@ -39,6 +39,8 @@ For more information on Entity-Component architecture, read [Entities and Compon
 ### Creating a SpriteKit Component
 - [init(node: SKNode)](./gksknodecomponent/init%28node%29.md)
   Initializes a component to manage the specified SpriteKit node.
+- [+ componentWithNode:](./gksknodecomponent/componentwithnode_.md)
+  Creates a component to manage the specified SpriteKit node.
 ### Accessing the Component’s SpriteKit Node
 - [var node: SKNode](./gksknodecomponent/node.md)
   The SpriteKit node managed by the component.

@@ -40,6 +40,10 @@ func setBuffer(_ buffer: (any MTLBuffer)?, offset: Int, index: Int)
   Sets a visible function table for the intersection functions.
 - [func setVisibleFunctionTables([(any MTLVisibleFunctionTable)?], bufferRange: Range<Int>)](./setvisiblefunctiontables%28_,bufferrange%29.md)
   Sets a range of visible function tables for the intersection functions.
+- [- setBuffers:offsets:withRange:](./setbuffers_offsets_withrange_.md)
+  Sets a range of buffers for the intersection functions.
+- [- setVisibleFunctionTables:withBufferRange:](./setvisiblefunctiontables_withbufferrange_.md)
+  Sets a range of visible function tables for the intersection functions.
 
 
 ---

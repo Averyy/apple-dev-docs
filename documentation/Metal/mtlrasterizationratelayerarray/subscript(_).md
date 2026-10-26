@@ -37,6 +37,8 @@ An [`NSNumber`](../../Foundation/nsnumber.md) instance describing the value of t
 ### Accessing members of the array
 - [class MTLRasterizationRateLayerDescriptor](../mtlrasterizationratelayerdescriptor.md)
   The minimum rasterization rates to apply to sections of a layer in the render target.
+- [- setObject:atIndexedSubscript:](./setobject_atindexedsubscript_.md)
+  Stores a sample value at the specified index.
 
 
 ---

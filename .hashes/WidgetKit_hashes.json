@@ -305,10 +305,20 @@
       "file_path": "documentation/WidgetKit/appintenttimelineprovider/recommendations().md",
       "hash": "c5a5d54236881e0155d77137fef73bc4933a5e2445339db4496cf92b1632513e"
     },
+    "https://developer.apple.com/documentation/widgetkit/appintenttimelineprovider/recommendations()-5xfj5": {
+      "etag": "\"1bb0-65d55d3c05d77-df\"",
+      "file_path": "documentation/WidgetKit/appintenttimelineprovider/recommendations()-5xfj5.md",
+      "hash": "7711c0036c52e1e33460ebcb68b8ba7f8596f4551f4bfe084a19b1c980141422"
+    },
     "https://developer.apple.com/documentation/widgetkit/appintenttimelineprovider/relevance()": {
       "etag": "\"47a6-65d55d3c05d77-df\"",
       "file_path": "documentation/WidgetKit/appintenttimelineprovider/relevance().md",
       "hash": "cc5018b0cc0fa3d3966b6a2fac1f6529aef91656565d5bf325926aef86d7bc1a"
+    },
+    "https://developer.apple.com/documentation/widgetkit/appintenttimelineprovider/relevance()-9vl5j": {
+      "etag": "\"23a6-65d55d3c05d77-df\"",
+      "file_path": "documentation/WidgetKit/appintenttimelineprovider/relevance()-9vl5j.md",
+      "hash": "1b37b196943eaad14852b13ed66c0eca1564fa014517a5bda1fce79769027a73"
     },
     "https://developer.apple.com/documentation/widgetkit/appintenttimelineprovider/snapshot(for:in:)": {
       "etag": "\"41be-65d55d3c05d77-df\"",
@@ -765,10 +775,20 @@
       "file_path": "documentation/WidgetKit/intenttimelineprovider/recommendations().md",
       "hash": "a9a4700a0d157bb118bd7c3838d56aa58d86060cc54326e1db12441a4627c0e7"
     },
+    "https://developer.apple.com/documentation/widgetkit/intenttimelineprovider/recommendations()-5qmcg": {
+      "etag": "\"1b23-65d55d3c44480-df\"",
+      "file_path": "documentation/WidgetKit/intenttimelineprovider/recommendations()-5qmcg.md",
+      "hash": "a748d6c93c8eaf3bd59931db9db0e4cd6599cbe323af071eab9abce9c317c6a7"
+    },
     "https://developer.apple.com/documentation/widgetkit/intenttimelineprovider/relevance()": {
       "etag": "\"2867-65d55d3c44480-df\"",
       "file_path": "documentation/WidgetKit/intenttimelineprovider/relevance().md",
       "hash": "483be2065108f6d0d925078e66b98a92d4f0f980619caf5d3927699c4a156028"
+    },
+    "https://developer.apple.com/documentation/widgetkit/intenttimelineprovider/relevance()-4bbqo": {
+      "etag": "\"2341-65d55d3c44480-df\"",
+      "file_path": "documentation/WidgetKit/intenttimelineprovider/relevance()-4bbqo.md",
+      "hash": "15c0c6ae09b90ca37ea720a59d038a4c27c522b2272c9776f254da4ba9a326e1"
     },
     "https://developer.apple.com/documentation/widgetkit/keeping-a-widget-up-to-date": {
       "etag": "\"b853-65d55d3c881a4-df\"",
@@ -1095,6 +1115,11 @@
       "file_path": "documentation/WidgetKit/timelineentry/relevance.md",
       "hash": "ad8cd1f49f7ca6971c5e56a3d0370744c14f0e349111c31b9379c953611b03ea"
     },
+    "https://developer.apple.com/documentation/widgetkit/timelineentry/relevance-9msg1": {
+      "etag": "\"140b-65d55d3c05d77-df\"",
+      "file_path": "documentation/WidgetKit/timelineentry/relevance-9msg1.md",
+      "hash": "3ef316cd20686fd0aa4e3ebde0254bbbc4a5c685eac23f9d270c7bced11f6ea4"
+    },
     "https://developer.apple.com/documentation/widgetkit/timelineentryrelevance": {
       "etag": "\"4b2c-65d55d3c21857-df\"",
       "file_path": "documentation/WidgetKit/timelineentryrelevance.md",
@@ -1149,6 +1174,11 @@
       "etag": "\"28f4-65d55d3c44480-df\"",
       "file_path": "documentation/WidgetKit/timelineprovider/relevance().md",
       "hash": "f28b31349d5d2e5f356e4a8179349a2f998d73b948fe7c7f3d86edb37cb5d303"
+    },
+    "https://developer.apple.com/documentation/widgetkit/timelineprovider/relevance()-7036j": {
+      "etag": "\"215d-65d55d3c44480-df\"",
+      "file_path": "documentation/WidgetKit/timelineprovider/relevance()-7036j.md",
+      "hash": "0ef56b08176496ff541295a49eafa487b09819c2ef6e9b6c9bbe819d1b03f4e3"
     },
     "https://developer.apple.com/documentation/widgetkit/timelineprovidercontext": {
       "etag": "\"49bf-65d55d3c21857-df\"",
@@ -1224,6 +1254,21 @@
       "etag": "\"813b-65d55d3c881a4-df\"",
       "file_path": "documentation/WidgetKit/updating-your-widgets-for-visionos.md",
       "hash": "e5649f7edf57202967613eda84ab8a71ceeba25726d67825ca0ff6b70768f557"
+    },
+    "https://developer.apple.com/documentation/widgetkit/wgwidgetuserinfokeyactivityid": {
+      "etag": "\"f68-65d55d3c67713-df\"",
+      "file_path": "documentation/WidgetKit/wgwidgetuserinfokeyactivityid.md",
+      "hash": "789373169332e178577fb17366d7d44bfba5d111350b8bf4f0add96c0966b4de"
+    },
+    "https://developer.apple.com/documentation/widgetkit/wgwidgetuserinfokeyfamily": {
+      "etag": "\"ef2-65d55d3bef765-df\"",
+      "file_path": "documentation/WidgetKit/wgwidgetuserinfokeyfamily.md",
+      "hash": "3b44c8717e6fc92ca3d8cf2b694cb1d96c9ad8ee2593e38c04e1d6e89dfc9aba"
+    },
+    "https://developer.apple.com/documentation/widgetkit/wgwidgetuserinfokeykind": {
+      "etag": "\"fe6-65d55d3c44480-df\"",
+      "file_path": "documentation/WidgetKit/wgwidgetuserinfokeykind.md",
+      "hash": "631f38f246f72bbefc1a85a81664a1ec6912dfbac659a9e380b2f803abd0da75"
     },
     "https://developer.apple.com/documentation/widgetkit/widget-suggestions-in-smart-stacks": {
       "etag": "\"13296-65d55d3c881a4-df\"",
@@ -1900,10 +1945,20 @@
       "file_path": "documentation/WidgetKit/appintenttimelineprovider/placeholder(in).md",
       "hash": "c23e3cd040b256539a96903db664904f90a1dccb98e1d271cd13387ca5226396"
     },
+    "https://developer.apple.com/tutorials/data/documentation/widgetkit/appintenttimelineprovider/recommendations()-5xfj5.json": {
+      "etag": "\"1bb0-65d55d3c05d77-df\"",
+      "file_path": "documentation/WidgetKit/appintenttimelineprovider/recommendations()-5xfj5.md",
+      "hash": "7711c0036c52e1e33460ebcb68b8ba7f8596f4551f4bfe084a19b1c980141422"
+    },
     "https://developer.apple.com/tutorials/data/documentation/widgetkit/appintenttimelineprovider/recommendations().json": {
       "etag": "\"447e-65d55d3c05d77-df\"",
       "file_path": "documentation/WidgetKit/appintenttimelineprovider/recommendations().md",
       "hash": "c5a5d54236881e0155d77137fef73bc4933a5e2445339db4496cf92b1632513e"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/widgetkit/appintenttimelineprovider/relevance()-9vl5j.json": {
+      "etag": "\"23a6-65d55d3c05d77-df\"",
+      "file_path": "documentation/WidgetKit/appintenttimelineprovider/relevance()-9vl5j.md",
+      "hash": "1b37b196943eaad14852b13ed66c0eca1564fa014517a5bda1fce79769027a73"
     },
     "https://developer.apple.com/tutorials/data/documentation/widgetkit/appintenttimelineprovider/relevance().json": {
       "etag": "\"47a6-65d55d3c05d77-df\"",
@@ -2360,10 +2415,20 @@
       "file_path": "documentation/WidgetKit/intenttimelineprovider/placeholder(in).md",
       "hash": "7e3899629dfdbc808858a31f4f996b1594a86fd6b9e965cf0ad98b671659a1c7"
     },
+    "https://developer.apple.com/tutorials/data/documentation/widgetkit/intenttimelineprovider/recommendations()-5qmcg.json": {
+      "etag": "\"1b23-65d55d3c44480-df\"",
+      "file_path": "documentation/WidgetKit/intenttimelineprovider/recommendations()-5qmcg.md",
+      "hash": "a748d6c93c8eaf3bd59931db9db0e4cd6599cbe323af071eab9abce9c317c6a7"
+    },
     "https://developer.apple.com/tutorials/data/documentation/widgetkit/intenttimelineprovider/recommendations().json": {
       "etag": "\"3bbd-65d55d3c44480-df\"",
       "file_path": "documentation/WidgetKit/intenttimelineprovider/recommendations().md",
       "hash": "a9a4700a0d157bb118bd7c3838d56aa58d86060cc54326e1db12441a4627c0e7"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/widgetkit/intenttimelineprovider/relevance()-4bbqo.json": {
+      "etag": "\"2341-65d55d3c44480-df\"",
+      "file_path": "documentation/WidgetKit/intenttimelineprovider/relevance()-4bbqo.md",
+      "hash": "15c0c6ae09b90ca37ea720a59d038a4c27c522b2272c9776f254da4ba9a326e1"
     },
     "https://developer.apple.com/tutorials/data/documentation/widgetkit/intenttimelineprovider/relevance().json": {
       "etag": "\"2867-65d55d3c44480-df\"",
@@ -2690,6 +2755,11 @@
       "file_path": "documentation/WidgetKit/timelineentry/date.md",
       "hash": "cba94e2662d73b4199c9abcfda1c509c1441d3ecdf93e1d49f447f2f8a25d665"
     },
+    "https://developer.apple.com/tutorials/data/documentation/widgetkit/timelineentry/relevance-9msg1.json": {
+      "etag": "\"140b-65d55d3c05d77-df\"",
+      "file_path": "documentation/WidgetKit/timelineentry/relevance-9msg1.md",
+      "hash": "3ef316cd20686fd0aa4e3ebde0254bbbc4a5c685eac23f9d270c7bced11f6ea4"
+    },
     "https://developer.apple.com/tutorials/data/documentation/widgetkit/timelineentry/relevance.json": {
       "etag": "\"1ad8-65d55d3c05d77-df\"",
       "file_path": "documentation/WidgetKit/timelineentry/relevance.md",
@@ -2744,6 +2814,11 @@
       "etag": "\"3759-65d55d3c44480-df\"",
       "file_path": "documentation/WidgetKit/timelineprovider/placeholder(in).md",
       "hash": "e17de411292a43ed546e61d42e794098c7cfd33a51ebcc39fded4723fcedb091"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/widgetkit/timelineprovider/relevance()-7036j.json": {
+      "etag": "\"215d-65d55d3c44480-df\"",
+      "file_path": "documentation/WidgetKit/timelineprovider/relevance()-7036j.md",
+      "hash": "0ef56b08176496ff541295a49eafa487b09819c2ef6e9b6c9bbe819d1b03f4e3"
     },
     "https://developer.apple.com/tutorials/data/documentation/widgetkit/timelineprovider/relevance().json": {
       "etag": "\"28f4-65d55d3c44480-df\"",
@@ -2824,6 +2899,21 @@
       "etag": "\"813b-65d55d3c881a4-df\"",
       "file_path": "documentation/WidgetKit/updating-your-widgets-for-visionos.md",
       "hash": "e5649f7edf57202967613eda84ab8a71ceeba25726d67825ca0ff6b70768f557"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/widgetkit/wgwidgetuserinfokeyactivityid.json": {
+      "etag": "\"f68-65d55d3c67713-df\"",
+      "file_path": "documentation/WidgetKit/wgwidgetuserinfokeyactivityid.md",
+      "hash": "789373169332e178577fb17366d7d44bfba5d111350b8bf4f0add96c0966b4de"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/widgetkit/wgwidgetuserinfokeyfamily.json": {
+      "etag": "\"ef2-65d55d3bef765-df\"",
+      "file_path": "documentation/WidgetKit/wgwidgetuserinfokeyfamily.md",
+      "hash": "3b44c8717e6fc92ca3d8cf2b694cb1d96c9ad8ee2593e38c04e1d6e89dfc9aba"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/widgetkit/wgwidgetuserinfokeykind.json": {
+      "etag": "\"fe6-65d55d3c44480-df\"",
+      "file_path": "documentation/WidgetKit/wgwidgetuserinfokeykind.md",
+      "hash": "631f38f246f72bbefc1a85a81664a1ec6912dfbac659a9e380b2f803abd0da75"
     },
     "https://developer.apple.com/tutorials/data/documentation/widgetkit/widget-suggestions-in-smart-stacks.json": {
       "etag": "\"13296-65d55d3c881a4-df\"",
@@ -3203,8 +3293,8 @@
   },
   "metadata": {
     "render": {
-      "version": 1
+      "version": 2
     },
-    "total_pages": 640
+    "total_pages": 658
   }
 }

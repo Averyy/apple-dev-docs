@@ -58,6 +58,8 @@ enum CBError : NSInteger;
   The device is unknown.
 - [CBError.Code.unkownDevice](./code/unkowndevice.md)
   A misspelled version of the unknown device error code.
+- [CBErrorUnknownDevice](../cberror-c.enum/cberrorunknowndevice.md)
+  The device is unknown.
 ### Enumeration Cases
 - [CBError.Code.channelSoundingConfigurationFailed](./code/channelsoundingconfigurationfailed.md)
 - [CBError.Code.channelSoundingProcedureFailed](./code/channelsoundingprocedurefailed.md)

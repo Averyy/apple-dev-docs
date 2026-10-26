@@ -360,6 +360,11 @@
       "file_path": "documentation/homeextensions/homeaccessorysettingscontainer/availablesettings.md",
       "hash": "4b6577275acc60ad2606ef2d7b39a44a6030ef11e2106fa4a62905e1a5039416"
     },
+    "https://developer.apple.com/documentation/homeextensions/homeaccessorysettingscontainer/availablesettings-2rw8h": {
+      "etag": "\"1654-65e5642c392cf-df\"",
+      "file_path": "documentation/homeextensions/homeaccessorysettingscontainer/availablesettings-2rw8h.md",
+      "hash": "7ed847a6bcad0ce9df6059335f8930cfcc022940f78ea6ba84b9165bdf819a9b"
+    },
     "https://developer.apple.com/documentation/homeextensions/homeaccessorysettingscontext": {
       "etag": "\"1eac-65e5642c026da-df\"",
       "file_path": "documentation/homeextensions/homeaccessorysettingscontext.md",
@@ -945,6 +950,11 @@
       "file_path": "documentation/homeextensions/homeaccessorysettingscontainer.md",
       "hash": "6d0fee6ec0db91d2473140bf78762e4d92d27e02acb161c42a8639699ffecf29"
     },
+    "https://developer.apple.com/tutorials/data/documentation/homeextensions/homeaccessorysettingscontainer/availablesettings-2rw8h.json": {
+      "etag": "\"1654-65e5642c392cf-df\"",
+      "file_path": "documentation/homeextensions/homeaccessorysettingscontainer/availablesettings-2rw8h.md",
+      "hash": "7ed847a6bcad0ce9df6059335f8930cfcc022940f78ea6ba84b9165bdf819a9b"
+    },
     "https://developer.apple.com/tutorials/data/documentation/homeextensions/homeaccessorysettingscontainer/availablesettings.json": {
       "etag": "\"1ad8-65e5642c392cf-df\"",
       "file_path": "documentation/homeextensions/homeaccessorysettingscontainer/availablesettings.md",
@@ -1183,8 +1193,8 @@
   },
   "metadata": {
     "render": {
-      "version": 1
+      "version": 2
     },
-    "total_pages": 236
+    "total_pages": 238
   }
 }

@@ -31,6 +31,7 @@ class AVMetricPlayerItemLikelyToKeepUpEvent
 - [var loadedTimeRanges: [CMTimeRange]](./avmetricplayeritemlikelytokeepupevent/loadedtimeranges-8yzws.md)
 - [var timeTaken: TimeInterval](./avmetricplayeritemlikelytokeepupevent/timetaken.md)
 - [var variant: AVAssetVariant?](./avmetricplayeritemlikelytokeepupevent/variant.md)
+- [loadedTimeRanges](./avmetricplayeritemlikelytokeepupevent/loadedtimeranges-960vi.md)
 
 ## Relationships
 

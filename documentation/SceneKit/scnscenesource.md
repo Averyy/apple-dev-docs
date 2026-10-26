@@ -55,6 +55,10 @@ The [`SCNSceneSource`](./scnscenesource.md) class can also load SceneKit archive
   Initializes a scene source for reading the scene graph from a specified file.
 - [init?(data: Data, options: [SCNSceneSource.LoadingOption : Any]?)](./scnscenesource/init%28data,options%29.md)
   Initializes a scene source for reading the scene graph contained in an `NSData` object.
+- [+ sceneSourceWithURL:options:](./scnscenesource/scenesourcewithurl_options_.md)
+  Creates a scene source that reads the scene graph from a specified file.
+- [+ sceneSourceWithData:options:](./scnscenesource/scenesourcewithdata_options_.md)
+  Creates a scene source that reads the scene graph contained in an `NSData` object.
 ### Loading a Complete Scene
 - [func scene(options: [SCNSceneSource.LoadingOption : Any]?, statusHandler: SCNSceneSourceStatusHandler?) -> SCNScene?](./scnscenesource/scene%28options,statushandler%29.md)
   Loads the entire scene graph from the scene source and calls the specified block to provide progress information.
@@ -67,6 +71,8 @@ The [`SCNSceneSource`](./scnscenesource.md) class can also load SceneKit archive
   Loads and returns a specific object in the scene source.
 - [func entries(passingTest: (Any, String, UnsafeMutablePointer<ObjCBool>) -> Bool) -> [Any]](./scnscenesource/entries%28passingtest%29.md)
   Loads and returns all objects in the scene source that pass the test in a given block.
+- [- entryWithIdentifier:withClass:](./scnscenesource/entrywithidentifier_withclass_.md)
+  Loads and returns a specific object in the scene source.
 ### Getting Information about the Scene
 - [var url: URL?](./scnscenesource/url.md)
   The URL identifying the file from which the scene source was created.

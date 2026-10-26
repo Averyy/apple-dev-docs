@@ -34,6 +34,8 @@ You must set at least one of the [`recordZonesToSave`](./recordzonestosave.md) o
 ### Creating a Modify Zones Operation
 - [convenience init(recordZonesToSave: [CKRecordZone]?, recordZoneIDsToDelete: [CKRecordZone.ID]?)](./init%28recordzonestosave,recordzoneidstodelete%29.md)
   Creates an operation for modifying the specified record zones.
+- [- initWithRecordZonesToSave:recordZoneIDsToDelete:](./initwithrecordzonestosave_recordzoneidstodelete_.md)
+  Creates an operation for modifying the specified record zones.
 
 
 ---

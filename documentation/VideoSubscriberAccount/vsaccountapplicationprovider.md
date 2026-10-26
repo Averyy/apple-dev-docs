@@ -58,6 +58,8 @@ The `VSAccountApplicationProvider` object represents an app account provider to 
   An Apple streaming service customer and their subscriptions.
 - [class VSSubscriptionRegistrationCenter](./vssubscriptionregistrationcenter.md)
   An object that stores subscription information that the system provides to the Apple TV app.
+- [VSAppleSubscription](./vsapplesubscription-c.class.md)
+  An Apple streaming service customer and their subscriptions.
 
 
 ---

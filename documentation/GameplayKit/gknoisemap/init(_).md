@@ -47,6 +47,10 @@ For more information, see [GameplayKit Programming Guide](https://developer.appl
   Creates a noise map by sampling from the specified noise object.
 - [convenience init()](./init%28%29.md)
   Initializes a noise map with a constant noise value of zero throughout.
+- [+ noiseMapWithNoise:](./noisemapwithnoise_.md)
+  Creates a noise map by sampling from the specified noise object.
+- [+ noiseMapWithNoise:size:origin:sampleCount:seamless:](./noisemapwithnoise_size_origin_samplecount_seamless_.md)
+  Creates a noise map by sampling from the specified noise object.
 
 
 ---

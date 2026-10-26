@@ -40,6 +40,8 @@ When you enable the [`isLightEstimationEnabled`](./arconfiguration/islightestima
 ### Creating a Configuration
 - [init()](./arfacetrackingconfiguration/init%28%29.md)
   Creates a new face-tracking configuration.
+- [+ new](./arfacetrackingconfiguration/new.md)
+  Allocates and initializes a new face-tracking configuration.
 ### Enabling World Tracking
 - [class var supportsWorldTracking: Bool](./arfacetrackingconfiguration/supportsworldtracking.md)
   A Boolean value that indicates whether the iOS device supports tracking the user’s facial features in a world-tracking session.

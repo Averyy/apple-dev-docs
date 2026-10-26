@@ -1,0 +1,34 @@
+# ar_object_tracking_configuration_add_reference_objects
+
+**Framework**: ARKit  
+**Kind**: func  
+**Role**: Function
+
+**Availability**:
+- visionOS 2.0+
+
+## Declaration
+
+```c
+extern void ar_object_tracking_configuration_add_reference_objects(ar_object_tracking_configuration_t object_tracking_configuration, ar_reference_objects_t reference_objects);
+```
+
+## See Also
+
+### Object tracking configuration functions
+- [ar_object_tracking_configuration_create](./ar_object_tracking_configuration_create.md)
+- [ar_object_tracking_configuration_get_detection_rate](./ar_object_tracking_configuration_get_detection_rate.md)
+- [ar_object_tracking_configuration_get_maximum_instances_per_reference_object](./ar_object_tracking_configuration_get_maximum_instances_per_reference_object.md)
+- [ar_object_tracking_configuration_get_maximum_trackable_instances](./ar_object_tracking_configuration_get_maximum_trackable_instances.md)
+- [ar_object_tracking_configuration_get_moving_object_tracking_rate](./ar_object_tracking_configuration_get_moving_object_tracking_rate.md)
+- [ar_object_tracking_configuration_get_stationary_object_tracking_rate](./ar_object_tracking_configuration_get_stationary_object_tracking_rate.md)
+- [ar_object_tracking_configuration_set_detection_rate](./ar_object_tracking_configuration_set_detection_rate.md)
+- [ar_object_tracking_configuration_set_maximum_instances_per_reference_object](./ar_object_tracking_configuration_set_maximum_instances_per_reference_object.md)
+- [ar_object_tracking_configuration_set_maximum_trackable_instances](./ar_object_tracking_configuration_set_maximum_trackable_instances.md)
+- [ar_object_tracking_configuration_set_moving_object_tracking_rate](./ar_object_tracking_configuration_set_moving_object_tracking_rate.md)
+- [ar_object_tracking_configuration_set_stationary_object_tracking_rate](./ar_object_tracking_configuration_set_stationary_object_tracking_rate.md)
+
+
+---
+
+*[View on Apple Developer](https://developer.apple.com/documentation/arkit/ar_object_tracking_configuration_add_reference_objects)*

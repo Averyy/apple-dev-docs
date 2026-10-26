@@ -16,6 +16,10 @@ A cache used to create and manage OpenGL texture objects.
   Performs internal housekeeping/recycling operations on the cache.
 - [func CVOpenGLTextureCacheGetTypeID() -> CFTypeID](./cvopengltexturecachegettypeid%28%29.md)
   Returns the Core Foundation type identifier for a the texture cache.
+- [CVOpenGLTextureCacheRetain](./cvopengltexturecacheretain.md)
+  Retains a texture cache object.
+- [CVOpenGLTextureCacheRelease](./cvopengltexturecacherelease.md)
+  Releases a texture cache object.
 ### Data Types
 - [class CVOpenGLTextureCache](./cvopengltexturecache.md)
 ### Constants

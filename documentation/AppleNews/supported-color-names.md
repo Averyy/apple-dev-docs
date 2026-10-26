@@ -7,7 +7,7 @@ Learn the color names supported in Apple News Format.
 
 #### Overview
 
-One of the ways to specify a color is by its name. (For other strings that can represent a color, see [`Color`](https://developer.apple.com/documentation/applenewsformat/color).)
+One of the ways to specify a color is by its name. (For other strings that can represent a color, see [`Color`](../AppleNewsFormat/color.md).)
 
 These are the name strings that Apple News Format supports.
 
@@ -57,13 +57,13 @@ These are the name strings that Apple News Format supports.
   Improve the appearance of the text and components in your article by using Apple News Format styles.
 - [Supporting Dark Mode for Your Article](./supporting-dark-mode-for-your-article.md)
   Update your article template so that your article adapts when Dark Mode is active.
-- [object DocumentStyle](https://developer.apple.com/documentation/applenewsformat/documentstyle)
+- [object DocumentStyle](../AppleNewsFormat/documentstyle.md)
   The object for setting the background color for your article.
 - [Text Styles](./text-styles.md)
   Learn about text styles and how to apply them to your text and text components.
 - [Component Styles](./component-styles.md)
   Learn to use component styles to add borders, set background colors, and apply background images to components and to set the styling for tables.
-- [type Color](https://developer.apple.com/documentation/applenewsformat/color)
+- [type Color](../AppleNewsFormat/color.md)
   The strings for defining colors in Apple News Format.
 
 

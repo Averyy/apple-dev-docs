@@ -76,6 +76,8 @@ You can use [`availableVideoPixelFormatTypes`](./availablevideopixelformattypes.
   Returns a dictionary of recommended output settings for writing the specified code, file type, and output URL.
 - [func recommendedVideoSettingsForAssetWriter(writingTo: AVFileType) -> [String : Any]?](./recommendedvideosettingsforassetwriter%28writingto%29.md)
   Specifies the recommended settings for use with an AVAssetWriterInput.
+- [minFrameDuration](./minframeduration.md)
+  The minimum frame duration.
 
 
 ---

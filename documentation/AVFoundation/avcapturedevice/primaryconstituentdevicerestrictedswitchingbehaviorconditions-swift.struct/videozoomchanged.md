@@ -36,6 +36,8 @@ This condition switches cameras when the video zoom factor changes, either by se
   Restrict switching to a fallback camera only when the device’s exposure mode changes.
 - [static var focusModeChanged: AVCaptureDevice.PrimaryConstituentDeviceRestrictedSwitchingBehaviorConditions](./focusmodechanged.md)
   Restrict switching to a fallback camera only when the device’s focus mode changes.
+- [AVCapturePrimaryConstituentDeviceRestrictedSwitchingBehaviorConditionNone](../../avcaptureprimaryconstituentdevicerestrictedswitchingbehaviorconditions/avcaptureprimaryconstituentdevicerestrictedswitchingbehaviorconditionnone.md)
+  Disallow switching to a fallback camera.
 
 
 ---

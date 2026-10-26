@@ -34,6 +34,14 @@ This class enables management of the device state, including sending control req
 ### Resetting the Device
 - [func reset() throws](./iousbhostdevice/reset%28%29.md)
   Terminates the device and attempts to re-enumerate it.
+### Finding Devices
+- [+ createMatchingDictionaryWithVendorID:productID:bcdDevice:deviceClass:deviceSubclass:deviceProtocol:speed:productIDArray:](./iousbhostdevice/creatematchingdictionarywithvendorid_productid_bcddevice_deviceclass_devicesubclass_deviceprotocol_speed_productidarray_.md)
+  Creates a matching dictionary to find a USB device.
+### Configuring the Device
+- [- configureWithValue:matchInterfaces:error:](./iousbhostdevice/configurewithvalue_matchinterfaces_error_.md)
+  Selects a new configuration for the device.
+- [- configureWithValue:error:](./iousbhostdevice/configurewithvalue_error_.md)
+  Selects a new configuration for the device and registers the interfaces for matching.
 
 ## Relationships
 

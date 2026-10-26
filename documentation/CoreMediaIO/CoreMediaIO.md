@@ -59,6 +59,32 @@ Use the Core Media I/O framework to enable support for custom camera devices in 
 ### DAL Plug-Ins
 - [Device Abstraction Layer (DAL) Plug-Ins](./device-abstraction-layer-dal-plug-ins.md)
   API reference for legacy DAL plug-ins.
+### Enumeration Cases
+- [kCMIOSampleBufferDiscontinuityFlag_BufferOverrun](./kcmiosamplebufferdiscontinuityflag_bufferoverrun.md)
+- [kCMIOSampleBufferDiscontinuityFlag_ClientSyncDiscontinuity](./kcmiosamplebufferdiscontinuityflag_clientsyncdiscontinuity.md)
+- [kCMIOSampleBufferDiscontinuityFlag_CodecSettingsChanged](./kcmiosamplebufferdiscontinuityflag_codecsettingschanged.md)
+- [kCMIOSampleBufferDiscontinuityFlag_DataFormatChanged](./kcmiosamplebufferdiscontinuityflag_dataformatchanged.md)
+- [kCMIOSampleBufferDiscontinuityFlag_DataWasDropped](./kcmiosamplebufferdiscontinuityflag_datawasdropped.md)
+- [kCMIOSampleBufferDiscontinuityFlag_DataWasFlushed](./kcmiosamplebufferdiscontinuityflag_datawasflushed.md)
+- [kCMIOSampleBufferDiscontinuityFlag_DiscontinuityInDTS](./kcmiosamplebufferdiscontinuityflag_discontinuityindts.md)
+- [kCMIOSampleBufferDiscontinuityFlag_DurationWasExtended](./kcmiosamplebufferdiscontinuityflag_durationwasextended.md)
+- [kCMIOSampleBufferDiscontinuityFlag_MalformedData](./kcmiosamplebufferdiscontinuityflag_malformeddata.md)
+- [kCMIOSampleBufferDiscontinuityFlag_NoDataMarker](./kcmiosamplebufferdiscontinuityflag_nodatamarker.md)
+- [kCMIOSampleBufferDiscontinuityFlag_PacketError](./kcmiosamplebufferdiscontinuityflag_packeterror.md)
+- [kCMIOSampleBufferDiscontinuityFlag_RelatedToDiscontinuity](./kcmiosamplebufferdiscontinuityflag_relatedtodiscontinuity.md)
+- [kCMIOSampleBufferDiscontinuityFlag_SleepWakeCycle](./kcmiosamplebufferdiscontinuityflag_sleepwakecycle.md)
+- [kCMIOSampleBufferDiscontinuityFlag_StreamDiscontinuity](./kcmiosamplebufferdiscontinuityflag_streamdiscontinuity.md)
+- [kCMIOSampleBufferDiscontinuityFlag_TimecodeDiscontinuity](./kcmiosamplebufferdiscontinuityflag_timecodediscontinuity.md)
+- [kCMIOSampleBufferDiscontinuityFlag_TimingReferenceJumped](./kcmiosamplebufferdiscontinuityflag_timingreferencejumped.md)
+- [kCMIOSampleBufferDiscontinuityFlag_TrickPlay](./kcmiosamplebufferdiscontinuityflag_trickplay.md)
+- [kCMIOSampleBufferDiscontinuityFlag_UnknownDiscontinuity](./kcmiosamplebufferdiscontinuityflag_unknowndiscontinuity.md)
+- [kCMIOSampleBufferNoDataEvent_DeviceDidNotSync](./kcmiosamplebuffernodataevent_devicedidnotsync.md)
+- [kCMIOSampleBufferNoDataEvent_DeviceInWrongMode](./kcmiosamplebuffernodataevent_deviceinwrongmode.md)
+- [kCMIOSampleBufferNoDataEvent_NoMedia](./kcmiosamplebuffernodataevent_nomedia.md)
+- [kCMIOSampleBufferNoDataEvent_ProcessingError](./kcmiosamplebuffernodataevent_processingerror.md)
+- [kCMIOSampleBufferNoDataEvent_SleepWakeCycle](./kcmiosamplebuffernodataevent_sleepwakecycle.md)
+- [kCMIOSampleBufferNoDataEvent_Unknown](./kcmiosamplebuffernodataevent_unknown.md)
+- [kCMIOSampleBufferNoDiscontinuities](./kcmiosamplebuffernodiscontinuities.md)
 
 
 ---

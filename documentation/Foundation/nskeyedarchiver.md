@@ -78,6 +78,8 @@ An [`NSArchiver`](./nsarchiver.md) object can write the archive data to a file o
   Encodes a given 64-bit integer value and associates it with a key.
 - [func encode(Any?, forKey: String)](./nskeyedarchiver/encode%28_,forkey%29-9f4n9.md)
   Encodes a given object and associates it with a given key.
+- [- encodeInt:forKey:](./nskeyedarchiver/encodeint_forkey_.md)
+  Encodes a given `int` value and associates it with a key.
 ### Managing the Delegate
 - [var delegate: (any NSKeyedArchiverDelegate)?](./nskeyedarchiver/delegate.md)
   The archiver’s delegate.

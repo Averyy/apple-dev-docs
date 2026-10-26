@@ -24,6 +24,12 @@ init(textProvider: CLKTextProvider, imageProvider: CLKFullColorImageProvider)
 - `textProvider`: The text provider for a row of text. The template supports multicolored text from this text provider.
 - `imageProvider`: A full-color image provider.
 
+## See Also
+
+### Creating the Template
+- [+ templateWithTextProvider:imageProvider:](./templatewithtextprovider_imageprovider_.md)
+  Creates a new template with a text provider and an image provider.
+
 
 ---
 

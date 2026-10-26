@@ -50,6 +50,8 @@ enum AVPlaybackUserInterfacePlaybackState : NSInteger;
   Provides playback control and state management for media content.
 - [struct AVPlaybackUserInterfaceSeekCapabilities](./avplaybackuserinterfaceseekcapabilities.md)
   Describes navigation capabilities of the media source.
+- [AVPlaybackUserInterfacePlaybackControllable](./avplaybackuserinterfaceplaybackcontrollable-81n66.md)
+  Provides playback control and state management for media content.
 
 
 ---

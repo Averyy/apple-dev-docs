@@ -34,6 +34,8 @@ var selectionIndexPaths: [IndexPath] { get set }
   Selects the cell at the specified row and column index.
 - [var selectionIndexPath: IndexPath?](./selectionindexpath.md)
   The index path of the item selected in the browser.
+- [selectedCell](./selectedcell.md)
+  The last (rightmost and lowest) selected cell.
 
 
 ---

@@ -30,6 +30,8 @@ var descriptor: CIBarcodeDescriptor? { get }
   A Swift array of corner points.
 - [var stringValue: String?](./stringvalue.md)
   Returns the error-corrected data decoded into a human-readable string.
+- [corners](./corners-8f6bv.md)
+  The points defining the (x, 	y) locations of the corners.
 
 
 ---

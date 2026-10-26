@@ -34,6 +34,10 @@ class MDLAnimatedScalar
 - [func reset(floatArray: [Float], atTimes: [TimeInterval])](./mdlanimatedscalar/reset%28floatarray,attimes%29.md)
 - [func setDouble(Double, atTime: TimeInterval)](./mdlanimatedscalar/setdouble%28_,attime%29.md)
 - [func setFloat(Float, atTime: TimeInterval)](./mdlanimatedscalar/setfloat%28_,attime%29.md)
+- [- getDoubleArray:maxCount:](./mdlanimatedscalar/getdoublearray_maxcount_.md)
+- [- getFloatArray:maxCount:](./mdlanimatedscalar/getfloatarray_maxcount_.md)
+- [- resetWithDoubleArray:atTimes:count:](./mdlanimatedscalar/resetwithdoublearray_attimes_count_.md)
+- [- resetWithFloatArray:atTimes:count:](./mdlanimatedscalar/resetwithfloatarray_attimes_count_.md)
 
 ## Relationships
 

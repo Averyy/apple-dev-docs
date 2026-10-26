@@ -45,6 +45,9 @@ Unlike the [`compositeToPoint:fromRect:operation:`](./compositetopoint_fromrect_
   Draws the image using the specified image representation object.
 - [enum NSCompositingOperation](../nscompositingoperation.md)
   Constants that describe compositing operators in terms of source and destination images, each having an opaque and transparent region.
+### Related Documentation
+- [- dissolveToPoint:fraction:](./dissolvetopoint_fraction_.md)
+  Composites the entire image to the specified location using the source-over operator.
 
 
 ---

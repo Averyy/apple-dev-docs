@@ -33,6 +33,16 @@ An `INCallRecord` object stores details about calls made by the user through you
 ### Initializing a Call Record
 - [convenience init(identifier: String, dateCreated: Date?, caller: INPerson?, callRecordType: INCallRecordType, callCapability: INCallCapability, callDuration: Double?, unseen: Bool?, numberOfCalls: Int?)](./incallrecord/init%28identifier,datecreated,caller,callrecordtype,callcapability,callduration,unseen,numberofcalls%29.md)
   Creates a call record with the details about the call.
+- [- initWithIdentifier:dateCreated:caller:callRecordType:callCapability:callDuration:unseen:numberOfCalls:](./incallrecord/initwithidentifier_datecreated_caller_callrecordtype_callcapability_callduration_unseen_numberofcalls_.md)
+  Initializes a call record with the details about the call.
+- [- initWithIdentifier:dateCreated:caller:callRecordType:callCapability:callDuration:unseen:](./incallrecord/initwithidentifier_datecreated_caller_callrecordtype_callcapability_callduration_unseen_.md)
+  Initializes a call record with the details about the call.
+- [- initWithIdentifier:dateCreated:callRecordType:callCapability:callDuration:unseen:](./incallrecord/initwithidentifier_datecreated_callrecordtype_callcapability_callduration_unseen_.md)
+  Creates a call record with the details about the call.
+- [- initWithIdentifier:dateCreated:callRecordType:callCapability:callDuration:unseen:numberOfCalls:](./incallrecord/initwithidentifier_datecreated_callrecordtype_callcapability_callduration_unseen_numberofcalls_.md)
+  Creates a call record with the details about the call.
+- [- initWithIdentifier:dateCreated:callRecordType:callCapability:callDuration:unseen:participants:numberOfCalls:isCallerIdBlocked:](./incallrecord/initwithidentifier_datecreated_callrecordtype_callcapability_callduration_unseen_participants_numberofcalls_iscalleridblocked_.md)
+  Creates a call record with the details about the call.
 ### Identifying the Call
 - [var identifier: String](./incallrecord/identifier.md)
   A unique string that you can use to locate the call in your app.
@@ -56,6 +66,14 @@ An `INCallRecord` object stores details about calls made by the user through you
   The number of calls in the call record.
 - [var participants: [INPerson]?](./incallrecord/participants.md)
   The recipient of the user’s call request.
+- [callDuration](./incallrecord/callduration-2d9u1.md)
+  The duration (measured in seconds) of the call.
+- [unseen](./incallrecord/unseen-8qab3.md)
+  A Boolean value indicating whether the user has seen the call.
+- [numberOfCalls](./incallrecord/numberofcalls-7vv6o.md)
+  The number of calls in the call record.
+- [isCallerIdBlocked](./incallrecord/iscalleridblocked.md)
+  A Boolean value indicating if user’s callerID is showing during a call.
 ### Initializers
 - [init?(coder: NSCoder)](./incallrecord/init%28coder%29.md)
 

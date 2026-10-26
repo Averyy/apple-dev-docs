@@ -52,6 +52,8 @@ You can use the [`metadataItems(from:filteredAndSortedAccordingToPreferredLangua
   The locales of an asset’s chapter metadata.
 - [func loadChapterMetadataGroups(withTitleLocale: Locale, containingItemsWithCommonKeys: [AVMetadataKey]) async throws -> [AVTimedMetadataGroup]](./loadchaptermetadatagroups%28withtitlelocale,containingitemswithcommonkeys%29.md)
   Loads chapter metadata that contains the specified title locale and common keys.
+- [- loadChapterMetadataGroupsWithTitleLocale:containingItemsWithCommonKeys:completionHandler:](./loadchaptermetadatagroupswithtitlelocale_containingitemswithcommonkeys_completionhandler_.md)
+  Loads chapter metadata that contains the specified title locale and common keys.
 
 
 ---

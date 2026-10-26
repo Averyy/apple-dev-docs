@@ -39,6 +39,14 @@ In older versions of macOS, these constants specify the various search types you
   Deprecated. Specifies a query that can include required (`'+'`) or excluded (`'-'`) terms.
 - [var kSKSearchPrefixRanked: SKSearchType](./ksksearchprefixranked.md)
   Deprecated. Specifies a prefix-based search, which matches terms that begin with the query string.
+- [kSKSearchRanked](./sksearchtype/ksksearchranked.md)
+  Deprecated. Specifies a basic ranked search.
+- [kSKSearchBooleanRanked](./sksearchtype/ksksearchbooleanranked.md)
+  Deprecated. Specifies a query that can include Boolean operators including `'|'`, `'&'`, `'!'`, `'('`, and `')'`.
+- [kSKSearchRequiredRanked](./sksearchtype/ksksearchrequiredranked.md)
+  Deprecated. Specifies a query that can include required (`'+'`) or excluded (`'-'`) terms.
+- [kSKSearchPrefixRanked](./sksearchtype/ksksearchprefixranked.md)
+  Deprecated. Specifies a prefix-based search, which matches terms that begin with the query string.
 ### Initializers
 - [init(UInt32)](./sksearchtype/api-1449367-init.md)
 - [init(rawValue: UInt32)](./sksearchtype/api-1448964-init.md)

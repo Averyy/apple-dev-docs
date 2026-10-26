@@ -28,6 +28,12 @@ var currentHistoryToken: Data? { get }
 
 When fetching contacts or change history events, use the token on [`CNFetchResult`](../cnfetchresult.md) instead.
 
+## See Also
+
+### Fetching change history info
+- [- enumeratorForChangeHistoryFetchRequest:error:](./enumeratorforchangehistoryfetchrequest_error_.md)
+  Enumerates a change history fetch request.
+
 
 ---
 

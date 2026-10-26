@@ -45,6 +45,8 @@ If you do not implement this method, the table view displays the standard access
   Asks the delegate if the editing menu should omit the Copy or Paste command for a given row.
 - [func tableView(UITableView, performAction: Selector, forRowAt: IndexPath, withSender: Any?)](./tableview%28_,performaction,forrowat,withsender%29.md)
   Tells the delegate to perform a copy or paste operation on the content of a given row.
+- [- tableView:accessoryTypeForRowWithIndexPath:](./tableview_accessorytypeforrowwithindexpath_.md)
+  Asks the delegate for the type of standard accessory view to use as a disclosure control for the specified row.
 
 
 ---

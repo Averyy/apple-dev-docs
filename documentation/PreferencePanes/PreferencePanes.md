@@ -34,6 +34,16 @@ System Preferences works with your bundle’s custom [`NSPreferencePane`](./nspr
   Notifies observers that the user selected a new preference pane.
 - [static let NSPreferencePaneUpdateHelpMenu: NSNotification.Name](../Foundation/nsnotification/name-swift.struct/nspreferencepaneupdatehelpmenu.md)
   Notifies observers that your help menu content changed.
+- [NSPreferencePrefPaneIsAvailableNotification](./nspreferenceprefpaneisavailablenotification.md)
+  Notifies observers that the system preferences app is available to display your preferences.
+- [NSPreferencePaneDoUnselectNotification](./nspreferencepanedounselectnotification.md)
+  Notifies observers that the preference pane may be deselected.
+- [NSPreferencePaneCancelUnselectNotification](./nspreferencepanecancelunselectnotification.md)
+  Notifies observers that the preference pane should not be deselected.
+- [NSPreferencePaneSwitchToPaneNotification](./nspreferencepaneswitchtopanenotification.md)
+  Notifies observers that the user selected a new preference pane.
+- [NSPreferencePaneUpdateHelpMenuNotification](./nspreferencepaneupdatehelpmenunotification.md)
+  Notifies observers that your help menu content changed.
 ### Help Menu Keys
 - [let NSPrefPaneHelpMenuInfoPListKey: String](./nsprefpanehelpmenuinfoplistkey.md)
   The global help menu items associated with a preference pane.

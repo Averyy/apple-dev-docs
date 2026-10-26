@@ -21,6 +21,8 @@ static simd_double3 simd_make_double3(double x, simd_double2 yz);
 ### Functions to Create Three-Element Vectors From Combinations of Vectors and Scalar Values
 - [func simd_make_double3(simd_double2, Double) -> simd_double3](./simd_make_double3%28_,_%29-3b3z3.md)
   Returns a new vector from a vector and a scalar value.
+- [vector3](./vector3-2regp.md)
+  Returns a new vector from a vector and a scalar value.
 
 
 ---

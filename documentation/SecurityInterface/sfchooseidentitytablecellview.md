@@ -21,6 +21,8 @@ class SFChooseIdentityTableCellView
 
 ### Instance Properties
 - [var issuerTextField: NSTextField!](./sfchooseidentitytablecellview/issuertextfield-swift.property.md)
+### Instance Variables
+- [issuerTextField](./sfchooseidentitytablecellview/issuertextfield-c.ivar.md)
 
 ## Relationships
 

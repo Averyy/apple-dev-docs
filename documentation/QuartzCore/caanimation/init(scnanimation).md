@@ -28,6 +28,12 @@ init(scnAnimation animation: SCNAnimation)
 + (CAAnimation *) animationWithSCNAnimation:(SCNAnimation *) animation;
 ```
 
+## See Also
+
+### Creating an Animation
+- [+ animation](./animation.md)
+  Creates and returns a new `CAAnimation` instance.
+
 
 ---
 

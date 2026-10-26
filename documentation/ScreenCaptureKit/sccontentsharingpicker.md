@@ -45,6 +45,12 @@ class SCContentSharingPicker
   The default configuration to use for the content capture picker.
 - [var maximumStreamCount: Int?](./sccontentsharingpicker/maximumstreamcount-2kuaa.md)
   The maximum number of streams the content capture picker allows.
+- [- setConfiguration:forStream:](./sccontentsharingpicker/setconfiguration_forstream_.md)
+  Sets the configuration for the content capture picker for a capture stream, providing allowed selection modes and content excluded from selection.
+- [defaultConfiguration](./sccontentsharingpicker/defaultconfiguration-9v5sa.md)
+  The default configuration to use for the content capture picker.
+- [maximumStreamCount](./sccontentsharingpicker/maximumstreamcount-66khx.md)
+  The maximum number of streams the content capture picker allows.
 ### Manage observers
 - [func add(any SCContentSharingPickerObserver)](./sccontentsharingpicker/add%28_%29.md)
   Adds an observer instance to notify of changes in the content-sharing picker.
@@ -85,6 +91,8 @@ class SCContentSharingPicker
   Available modes for selecting streaming content from a picker presented by the operating system.
 - [protocol SCContentSharingPickerObserver](./sccontentsharingpickerobserver.md)
   An observer protocol your app implements to receive messages from the operating system’s content picker.
+- [SCContentSharingPickerConfiguration](./sccontentsharingpickerconfiguration-c.class.md)
+  An instance for configuring the system content-sharing picker.
 
 
 ---

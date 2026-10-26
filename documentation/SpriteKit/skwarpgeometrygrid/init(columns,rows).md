@@ -54,6 +54,11 @@ Creating a warp geometry grid without explicit source and destination positions 
   Creates a warp geometry grid of a specific size and warp translation, in point arrays.
 - [init?(coder: NSCoder)](./init%28coder%29.md)
   Tells you when to intialize a grid that was loaded from an archive.
+- [- initWithColumns:rows:sourcePositions:destPositions:](./initwithcolumns_rows_sourcepositions_destpositions_.md)
+  Creates a warp geometry grid of a specific size and warp translation, in pointers to point arrays.
+- [+ gridWithColumns:rows:sourcePositions:destPositions:](./gridwithcolumns_rows_sourcepositions_destpositions_.md)
+- [+ grid](./grid.md)
+  Initializes a new empty grid.
 
 
 ---

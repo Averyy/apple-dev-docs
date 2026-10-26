@@ -30,6 +30,8 @@ var languageConstraints: [NLLanguage] { get set }
 ### Guiding the recognizer
 - [var languageHints: [NLLanguage : Double]](./languagehints-7dwgv.md)
   A dictionary that maps languages to their probabilities in the language identification process.
+- [languageHints](./languagehints-3gy00.md)
+  A dictionary that maps languages to their probabilities in the language identification process.
 
 
 ---

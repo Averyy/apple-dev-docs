@@ -13,6 +13,8 @@
 - [enum UIBarMinimizationBehavior](./uibarminimizationbehavior.md)
 - [enum UIBarMinimizationRestorationBehavior](./uibarminimizationrestorationbehavior.md)
 - [enum UIBarMinimizationSafeAreaAdjustment](./uibarminimizationsafeareaadjustment.md)
+- [UIPreferredPresentationStyle](./uipreferredpresentationstyle.md)
+  The presentation styles that determine how a view shows an item provider’s data.
 
 ## See Also
 

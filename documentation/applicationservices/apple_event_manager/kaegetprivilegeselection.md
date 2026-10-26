@@ -39,6 +39,12 @@ enum {
   The value of `operand1` is greater than or equal to the value of `operand2`.
 - [var kAELessThanEquals: OSType](../../coreservices/kaelessthanequals.md)
   The value of `operand1` is less than or equal to the value of `operand2`.
+- [kAEGreaterThan](../../coreservices/api-1556403-anonymous/kaegreaterthan.md)
+  The value of `operand1` is greater than the value of `operand2`.
+- [kAEGreaterThanEquals](../../coreservices/api-1556403-anonymous/kaegreaterthanequals.md)
+  The value of `operand1` is greater than or equal to the value of `operand2`.
+- [kAELessThanEquals](../../coreservices/api-1556403-anonymous/kaelessthanequals.md)
+  The value of `operand1` is less than or equal to the value of `operand2`.
 
 
 ---

@@ -31,6 +31,8 @@ The AccessoryAccess framework provides access to connected USB devices that use 
   Values that describe errors the AccessoryAccess framework returns.
 - [let AAErrorDomain: String](./aaerrordomain.md)
   The string that represents the framework’s error domain.
+### Macros
+- [AA_EXPORT](./aa_export.md)
 
 
 ---

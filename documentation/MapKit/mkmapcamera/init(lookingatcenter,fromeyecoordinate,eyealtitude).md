@@ -46,6 +46,8 @@ This method calculates the required pitch and heading angles to accommodate the 
   Returns a new camera object using the specified distance, pitch, and heading information.
 - [convenience init(lookingAt: MKMapItem, forViewSize: CGSize, allowPitch: Bool)](./init%28lookingat,forviewsize,allowpitch%29.md)
   Returns a new camera object using the specified map item, view size, and pitch.
+- [+ camera](./camera.md)
+  Returns a new camera object for you to configure.
 
 
 ---

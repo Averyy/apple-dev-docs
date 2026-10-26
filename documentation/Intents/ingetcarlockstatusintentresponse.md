@@ -42,6 +42,8 @@ You create an `INGetCarLockStatusIntentResponse` object in the [`confirm(intent:
 ### Providing the Locked Status
 - [var locked: Bool?](./ingetcarlockstatusintentresponse/locked-357ju.md)
   A Boolean value indicating the status of the car’s locks.
+- [locked](./ingetcarlockstatusintentresponse/locked-1eacd.md)
+  A Boolean value indicating the status of the car’s locks.
 
 ## Relationships
 

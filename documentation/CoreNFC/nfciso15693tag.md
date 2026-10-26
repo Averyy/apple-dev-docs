@@ -118,6 +118,16 @@ For the reader session to read and write data to the tag, it must be available t
 - [func sendRequest(requestFlags: Int, commandCode: Int, data: Data?) async throws -> (NFCISO15693ResponseFlag, Data?)](./nfciso15693tag/sendrequest%28requestflags,commandcode,data%29.md)
 - [func sendRequest(requestFlags: Int, commandCode: Int, data: Data?, resultHandler: (Result<(NFCISO15693ResponseFlag, Data?), any Error>) -> Void)](./nfciso15693tag/sendrequest%28requestflags,commandcode,data,resulthandler%29.md)
 - [func systemInfo(requestFlags: NFCISO15693RequestFlag) async throws -> NFCISO15693SystemInfo](./nfciso15693tag/systeminfo%28requestflags%29.md)
+- [- authenticateWithRequestFlags:cryptoSuiteIdentifier:message:completionHandler:](./nfciso15693tag/authenticatewithrequestflags_cryptosuiteidentifier_message_completionhandler_.md)
+- [- challengeWithRequestFlags:cryptoSuiteIdentifier:message:completionHandler:](./nfciso15693tag/challengewithrequestflags_cryptosuiteidentifier_message_completionhandler_.md)
+- [- extendedFastReadMultipleBlocksWithRequestFlag:blockRange:completionHandler:](./nfciso15693tag/extendedfastreadmultipleblockswithrequestflag_blockrange_completionhandler_.md)
+- [- extendedGetMultipleBlockSecurityStatusWithRequestFlag:blockRange:completionHandler:](./nfciso15693tag/extendedgetmultipleblocksecuritystatuswithrequestflag_blockrange_completionhandler_.md)
+- [- extendedWriteMultipleBlocksWithRequestFlags:blockRange:dataBlocks:completionHandler:](./nfciso15693tag/extendedwritemultipleblockswithrequestflags_blockrange_datablocks_completionhandler_.md)
+- [- fastReadMultipleBlocksWithRequestFlag:blockRange:completionHandler:](./nfciso15693tag/fastreadmultipleblockswithrequestflag_blockrange_completionhandler_.md)
+- [- getSystemInfoAndUIDWithRequestFlag:completionHandler:](./nfciso15693tag/getsysteminfoanduidwithrequestflag_completionhandler_.md)
+- [- keyUpdateWithRequestFlags:keyIdentifier:message:completionHandler:](./nfciso15693tag/keyupdatewithrequestflags_keyidentifier_message_completionhandler_.md)
+- [- readBufferWithRequestFlags:completionHandler:](./nfciso15693tag/readbufferwithrequestflags_completionhandler_.md)
+- [- sendRequestWithFlag:commandCode:data:completionHandler:](./nfciso15693tag/sendrequestwithflag_commandcode_data_completionhandler_.md)
 
 ## Relationships
 
@@ -127,6 +137,7 @@ For the reader session to read and write data to the tag, it must be available t
 - [NSCopying](../Foundation/nscopying.md)
 - [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 - [NSSecureCoding](../Foundation/nssecurecoding.md)
+- [NFCTag](./nfctag-c.protocol.md)
 
 ## See Also
 
@@ -145,6 +156,8 @@ For the reader session to read and write data to the tag, it must be available t
   An object that represents an NFC tag object.
 - [class NFCTagCommandConfiguration](./nfctagcommandconfiguration.md)
   A set of parameters you use to define the configuration of an NFC tag command.
+- [NFCTag](./nfctag-c.protocol.md)
+  An interface for interacting with an NFC or RFID tag.
 
 
 ---

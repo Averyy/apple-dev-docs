@@ -160,6 +160,11 @@ An [`SCNCamera`](./scncamera.md) object itself defines the shape and, in part, t
 - [var whiteBalanceTint: CGFloat](./scncamera/whitebalancetint.md)
 ### Instance Methods
 - [func projectionTransform(withViewportSize: CGSize) -> SCNMatrix4](./scncamera/projectiontransform%28withviewportsize%29.md)
+### Creating a Camera
+- [+ camera](./scncamera/camera.md)
+  Creates a new camera object.
+- [+ cameraWithMDLCamera:](./scncamera/camerawithmdlcamera_.md)
+  Creates a camera from the specified Model I/O camera object.
 
 ## Relationships
 

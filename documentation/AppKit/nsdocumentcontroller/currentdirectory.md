@@ -38,6 +38,9 @@ The first valid directory from the following list is returned:
   Presents a modal Open dialog and limits selection to specific file types.
 - [func urlsFromRunningOpenPanel() -> [URL]?](./urlsfromrunningopenpanel%28%29.md)
   An array of URLs that correspond to the selected files in a running Open dialog.
+### Related Documentation
+- [- documentForFileName:](./documentforfilename_.md)
+  Returns the document object for the file in which the document data is stored.
 
 
 ---

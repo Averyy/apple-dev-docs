@@ -21,25 +21,25 @@ For information about Final Cut Pro concepts, see [What are libraries](https://
 ## Topics
 
 ### Effects
-- [FxPlug](https://developer.apple.com/documentation/professional-video-applications/fxplug)
+- [FxPlug](../Professional-Video-Applications/fxplug.md)
   Create custom effects plug-ins for Final Cut Pro and Motion.
-- [Create an effect template for use in Final Cut Pro](https://developer.apple.com/documentation/professional-video-applications/create-an-effect-template-for-use-in-final-cut-pro)
+- [Create an effect template for use in Final Cut Pro](../Professional-Video-Applications/create-an-effect-template-for-use-in-final-cut-pro.md)
   Use Motion to create custom filters, generators, and transitions for Final Cut Pro.
 ### XML Data Exchange
-- [Content and Metadata Exchanges with Final Cut Pro](https://developer.apple.com/documentation/professional-video-applications/content-and-metadata-exchanges-with-final-cut-pro)
+- [Content and Metadata Exchanges with Final Cut Pro](../Professional-Video-Applications/content-and-metadata-exchanges-with-final-cut-pro.md)
   Send media assets and timeline sequences to Final Cut Pro for editing, and receive rendered media and editing decisions in your app.
-- [Workflow Extensions](https://developer.apple.com/documentation/professional-video-applications/workflow-extensions)
+- [Workflow Extensions](../Professional-Video-Applications/workflow-extensions.md)
   Integrate your app’s workflow within the Final Cut Pro interface to streamline data exchange.
-- [FCPXML Reference](https://developer.apple.com/documentation/professional-video-applications/fcpxml-reference)
+- [FCPXML Reference](../Professional-Video-Applications/fcpxml-reference.md)
   Create documents that describe the data your app or workflow extension exchanges with Final Cut Pro.
 ### Compressor Encoder Extensions
-- [Encoder Extensions](https://developer.apple.com/documentation/professional-video-applications/encoder-extensions)
+- [Encoder Extensions](../Professional-Video-Applications/encoder-extensions.md)
   Add custom output file formats to the Final Cut Pro workflow.
 ### Reference
-- [Professional Video Applications Enumerations](https://developer.apple.com/documentation/professional-video-applications/professional-video-applications-enumerations)
-- [Professional Video Applications Constants](https://developer.apple.com/documentation/professional-video-applications/professional-video-applications-constants)
-- [Professional Video Applications Data Types](https://developer.apple.com/documentation/professional-video-applications/professional-video-applications-data-types)
-- [Professional Video Applications Protocols](https://developer.apple.com/documentation/professional-video-applications/professional-video-applications-protocols)
+- [Professional Video Applications Enumerations](../Professional-Video-Applications/professional-video-applications-enumerations.md)
+- [Professional Video Applications Constants](../Professional-Video-Applications/professional-video-applications-constants.md)
+- [Professional Video Applications Data Types](../Professional-Video-Applications/professional-video-applications-data-types.md)
+- [Professional Video Applications Protocols](../Professional-Video-Applications/professional-video-applications-protocols.md)
 ### Variables
 - [var kFxPropertyKey_ChangesOutputSize: String](./kfxpropertykey_changesoutputsize.md)
   A key that determines whether your filter has the ability to change the size of its output to be different than the size of its input.

@@ -39,6 +39,8 @@ Applications should use the `valueForKey:` and `setValue:forKey:` methods instea
   Returns an object that will be used as the placeholder for the `binding`, when a key value coding compliant property of an instance of the receiving class returns the value specified by `marker`, and no other placeholder has been specified.
 - [class func setDefaultPlaceholder(Any?, for: Any?, with: NSBindingName)](./setdefaultplaceholder%28_,for,with%29.md)
   Sets `placeholder` as the default placeholder for the `binding`, when a key value coding compliant property of an instance of the receiving class returns the value specified by `marker`, and no other placeholder has been specified.
+- [+ setKeys:triggerChangeNotificationsForDependentKey:](./setkeys_triggerchangenotificationsfordependentkey_.md)
+  Configures the observed object to post change notifications for a given property if any of the properties specified in a given array changes.
 
 
 ---

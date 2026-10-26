@@ -49,6 +49,10 @@ The RGB values can be outside the `0...1` range if the `CGColorSpace` is unclamp
   Create a Core Image color object in the sRGB color space using a string containing the RGBA color component values.
 - [convenience init?(red: CGFloat, green: CGFloat, blue: CGFloat, colorSpace: CGColorSpace)](./init%28red,green,blue,colorspace%29-2og6y.md)
   Create a Core Image color object with the specified red, green, and blue component values as measured in the specified color space.
+- [+ colorWithCGColor:](./colorwithcgcolor_.md)
+  Create a Core Image color object with a Core Graphics color object.
+- [+ colorWithRed:green:blue:alpha:](./colorwithred_green_blue_alpha_.md)
+  Create a Core Image color object in the sRGB color space with the specified red, green, blue, and alpha component values.
 
 
 ---

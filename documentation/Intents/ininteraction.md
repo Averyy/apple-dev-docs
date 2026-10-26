@@ -133,6 +133,8 @@ You choose which of your app’s interactions you want to donate to the system. 
 - [class INIntentDonationMetadata](./inintentdonationmetadata.md)
 - [Apple Watch support](../SiriKit/watch-and-widget-support.md)
   Display relevant shortcuts on the Siri watch face.
+- [Siri Event Suggestions](../SiriKit/siri-event-suggestions.md)
+  Provide users with current, actionable information connected to a reservation.
 
 
 ---

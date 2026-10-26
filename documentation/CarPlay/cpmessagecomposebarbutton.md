@@ -32,6 +32,8 @@ class CPMessageComposeBarButton
   Creates a message compose button with a system-provided image.
 - [init(image: UIImage)](./cpmessagecomposebarbutton/init%28image%29.md)
   Creates a message compose button that displays a custom image.
+- [+ new](./cpmessagecomposebarbutton/new.md)
+  Creates a message compose button with a system-provided image.
 
 ## Relationships
 

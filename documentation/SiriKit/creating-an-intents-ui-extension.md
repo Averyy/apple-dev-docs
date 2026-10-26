@@ -26,13 +26,13 @@ SiriKit offers different levels of customization for its interface:
 ## See Also
 
 ### Custom UI for Siri and Maps
-- [protocol INUIHostedViewControlling](https://developer.apple.com/documentation/intentsui/inuihostedviewcontrolling)
+- [protocol INUIHostedViewControlling](../IntentsUI/inuihostedviewcontrolling.md)
   Methods for presenting custom content in the Siri and Maps interfaces.
-- [protocol INUIHostedViewSiriProviding](https://developer.apple.com/documentation/intentsui/inuihostedviewsiriproviding)
+- [protocol INUIHostedViewSiriProviding](../IntentsUI/inuihostedviewsiriproviding.md)
   Methods for hiding portions of the default interfaces that Siri provides.
-- [class INParameter](https://developer.apple.com/documentation/intents/inparameter)
+- [class INParameter](../Intents/inparameter.md)
   A parameter of an interaction object.
-- [protocol INIntentSetImageKeyPath](https://developer.apple.com/documentation/intents/inintentsetimagekeypath)
+- [protocol INIntentSetImageKeyPath](../Intents/inintentsetimagekeypath.md)
 
 
 ---

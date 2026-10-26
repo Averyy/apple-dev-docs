@@ -63,6 +63,14 @@ typedef NSObject<OS_nw_path> * nw_path_t;
 - [func nw_path_copy_effective_remote_endpoint(nw_path_t) -> nw_endpoint_t?](./nw_path_copy_effective_remote_endpoint%28_%29.md)
   Accesses the remote endpoint in use by a connection’s network path.
 
+## See Also
+
+### Paths and Interfaces
+- [nw_path_monitor_t](./nw_path_monitor_t.md)
+  An observer that you use to monitor and react to network changes.
+- [nw_interface_t](./nw_interface_t.md)
+  An interface that a network connection uses to send and receive data.
+
 
 ---
 

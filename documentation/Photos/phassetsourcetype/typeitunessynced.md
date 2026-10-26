@@ -35,6 +35,8 @@ iTunes-synced assets cannot be edited or deleted.
   The asset is part of the user’s main Photos library.
 - [static var typeCloudShared: PHAssetSourceType](./typecloudshared.md)
   The asset originates from an iCloud Shared Album.
+- [PHAssetSourceTypeNone](./phassetsourcetypenone.md)
+  Source information is not available for the asset.
 
 
 ---

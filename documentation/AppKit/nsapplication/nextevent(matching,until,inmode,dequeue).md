@@ -63,6 +63,8 @@ You can specify one of the run loop modes defined by AppKit or a custom run loop
   Dispatches an event to other objects.
 - [func postEvent(NSEvent, atStart: Bool)](./postevent%28_,atstart%29.md)
   Adds a given event to the receiver’s event queue.
+- [NSEventTrackingRunLoopMode](../nseventtrackingrunloopmode.md)
+  The mode set when tracking events modally, such as a mouse-dragging loop.
 
 
 ---

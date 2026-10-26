@@ -54,6 +54,8 @@ protocol GCRelativeInput : NSObjectProtocol
   The common properties of inputs that provide absolute values along an axis with a fixed origin.
 - [class GCGearShifterElement](./gcgearshifterelement.md)
   An element that represents either a pattern or a sequential gear shift.
+- [GCInputAxisName](./gcinputaxisname.md)
+  The Objective-C type for an input axis name.
 
 
 ---

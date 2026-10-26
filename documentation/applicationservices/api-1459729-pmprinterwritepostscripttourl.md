@@ -41,6 +41,18 @@ This function is synchronous; the conversion of the input file to PostScript is 
 ### Printing with PostScript Data
 - [func PMCGImageCreateWithEPSDataProvider(CGDataProvider?, CGImage) -> Unmanaged<CGImage>?](./api-1462361-pmcgimagecreatewithepsdataprovid.md)
   Creates an image that references both the PostScript contents of EPS data and a preview (proxy) image for the data.
+- [PMSessionPostScriptBegin](./core_printing/api-1805591-pmsessionpostscriptbegin.md)
+  Puts the current printer driver into PostScript mode, ready to accept PostScript data instead of QuickDraw data.
+- [PMSessionPostScriptData](./core_printing/api-1805595-pmsessionpostscriptdata.md)
+  Passes PostScript data, referenced by a pointer, to the current printer driver.
+- [PMSessionPostScriptEnd](./core_printing/api-1805601-pmsessionpostscriptend.md)
+  Restores the current driver to QuickDraw mode, ready to accept QuickDraw data instead of PostScript data.
+- [PMSessionPostScriptFile](./core_printing/api-1805604-pmsessionpostscriptfile.md)
+  Passes the PostScript data, contained in a file, to the current printer driver.
+- [PMSessionPostScriptHandle](./core_printing/api-1805605-pmsessionpostscripthandle.md)
+  Passes the PostScript data, referenced by a Memory Manager handle, to the current printer driver.
+- [PMSessionSetPSInjectionData](./core_printing/api-1805610-pmsessionsetpsinjectiondata.md)
+  Specifies a set of PostScript code injection points and the PostScript data to be injected.
 
 
 ---

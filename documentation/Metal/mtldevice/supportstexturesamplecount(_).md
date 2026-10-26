@@ -59,6 +59,8 @@ Consider a GPU device’s limitations for sample count by checking [`MTLTexture`
   Creates a sampler state instance.
 - [func getDefaultSamplePositions(sampleCount: Int) -> [MTLSamplePosition]](./getdefaultsamplepositions%28samplecount%29.md)
   Returns the default sample locations based on the number of samples.
+- [- getDefaultSamplePositions:count:](./getdefaultsamplepositions_count_.md)
+  Retrieves the default sample positions for a specific sample count.
 
 
 ---

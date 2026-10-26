@@ -39,6 +39,9 @@ When you create a Metal function instance using an [`MTLFunctionDescriptor`](./m
   An optional list of groups specifying which functions your shader can call at each call site.
 - [var privateFunctions: [any MTLFunction]?](./mtllinkedfunctions/privatefunctions.md)
   An array of function objects to link to the new function, without exporting the functions publicly.
+### Creating a linked functions instance
+- [+ linkedFunctions](./mtllinkedfunctions/linkedfunctions.md)
+  Creates an empty linked functions object.
 
 ## Relationships
 

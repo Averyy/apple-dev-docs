@@ -21,6 +21,9 @@
 - [typealias PFFENVELOPE](./pffenvelope.md)
 - [typealias PFFPERIODIC](./pffperiodic.md)
 - [typealias PFFRAMPFORCE](./pfframpforce.md)
+- [ForceFeedbackDeviceStatePtr](./forcefeedbackdevicestateptr.md)
+- [ForceFeedbackVersionPtr](./forcefeedbackversionptr.md)
+- [IOForceFeedbackDeviceInterfacePtr](./ioforcefeedbackdeviceinterfaceptr.md)
 
 ## See Also
 
@@ -31,6 +34,9 @@
   Constants used in the public interfaces to the Force Feedback implementation in macOS.
 - [ForceFeedback Enumerations](./forcefeedback-enumerations.md)
 - [ForceFeedback Constants](./forcefeedback-constants.md)
+- [IOForceFeedbackLib.h](./ioforcefeedbacklib-h.md)
+  Public Interfaces and constants used to develop Force Feedback plugIns.
+- [ForceFeedback Structures](./forcefeedback-structures.md)
 
 
 ---

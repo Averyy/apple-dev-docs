@@ -30,6 +30,8 @@ var sampleMode: MLCSampleMode { get }
   An array that contains the dimensions of the result tensor.
 - [var alignsCorners: Bool](./alignscorners.md)
   A Boolean that indicates whether the layer aligns the corner pixels of the input and output tensors.
+- [shape](./shape-7j6sf.md)
+  An array that contains the dimensions of the result tensor.
 
 
 ---

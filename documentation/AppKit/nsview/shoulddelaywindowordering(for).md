@@ -48,6 +48,9 @@ If, after delaying window ordering, the view actually initiates a dragging sessi
   Initiates a dragging session with a group of dragging items.
 - [func beginDraggingSession(items: [NSDraggingItem], gesture: NSGestureRecognizer, source: any NSDraggingSource) -> NSDraggingSession?](./begindraggingsession%28items,gesture,source%29.md)
   Initiates a drag operation using a gesture recognizer.
+### Related Documentation
+- [- dragImage:at:offset:event:pasteboard:source:slideBack:](./dragimage_at_offset_event_pasteboard_source_slideback_.md)
+  Initiates a dragging operation from the view, allowing the user to drag arbitrary data with a specified icon into any application that has window or view objects that accept dragged data.
 
 
 ---

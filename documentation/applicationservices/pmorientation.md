@@ -27,6 +27,11 @@ typedef UInt16 PMOrientation;
 - [var kPMLandscape: Int](./kpmlandscape.md)
 - [var kPMReversePortrait: Int](./kpmreverseportrait.md)
 - [var kPMReverseLandscape: Int](./kpmreverselandscape.md)
+- [kPMPortrait](./api-1506750-anonymous/kpmportrait.md)
+  Specifies portrait (vertical) page orientation. Portrait orientation performs no alteration of the logical page.
+- [kPMLandscape](./api-1506750-anonymous/kpmlandscape.md)
+- [kPMReversePortrait](./api-1506750-anonymous/kpmreverseportrait.md)
+- [kPMReverseLandscape](./api-1506750-anonymous/kpmreverselandscape.md)
 
 
 ---

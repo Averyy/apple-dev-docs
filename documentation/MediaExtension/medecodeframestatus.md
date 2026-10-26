@@ -27,6 +27,7 @@ enum MEDecodeFrameStatus : NSUInteger;
 ### Inspecting a status
 - [static var frameDropped: MEDecodeFrameStatus](./medecodeframestatus/framedropped.md)
   A frame decode operation status that indicates the system dropped the output of the frame for a reason other than an error.
+- [MEDecodeFrameNoStatus](./medecodeframestatus/medecodeframenostatus.md)
 
 ## Relationships
 

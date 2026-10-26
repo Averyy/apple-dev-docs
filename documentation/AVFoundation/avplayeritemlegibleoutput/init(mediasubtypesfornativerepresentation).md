@@ -50,6 +50,12 @@ If a media subtype for which there is no legible data in the current player item
 
 - `subtypes`: An [`NSArray`](../../Foundation/nsarray.md) of [`NSNumber`](../../Foundation/nsnumber.md) FourCC codes.
 
+## See Also
+
+### Creating a legible output
+- [init](../api-1805461-init.md)
+  Creates an initialized legible output object.
+
 
 ---
 

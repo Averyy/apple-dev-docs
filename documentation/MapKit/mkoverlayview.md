@@ -37,6 +37,33 @@ You can subclass `MKOverlayView` to create overlays based on custom shapes and c
 
 The implementation of your [`drawMapRect:zoomScale:inContext:`](./mkoverlayview/drawmaprect_zoomscale_incontext_.md) method must be safe to run from multiple threads simultaneously. To improve performance, the map view may tile overlays that are large enough and distribute the rendering of each tile to separate threads.
 
+## Topics
+
+### Initializing an overlay view
+- [- initWithOverlay:](./mkoverlayview/initwithoverlay_.md)
+  Initializes and returns the overlay view and associates it with the specified overlay object.
+### Attributes of the overlay
+- [overlay](./mkoverlayview/overlay.md)
+  The overlay object containing the data for drawing.
+### Converting points on the map
+- [- pointForMapPoint:](./mkoverlayview/pointformappoint_.md)
+  Returns the point in the overlay view that corresponds to specified point on the map.
+- [- mapPointForPoint:](./mkoverlayview/mappointforpoint_.md)
+  Returns the map point that corresponds to the specified point in the overlay view.
+- [- rectForMapRect:](./mkoverlayview/rectformaprect_.md)
+  Returns the rectangle in the overlay view that corresponds to the specified rectangle on the map.
+- [- mapRectForRect:](./mkoverlayview/maprectforrect_.md)
+  Returns the map rectangle that corresponds to the rectangle in the overlay view’s coordinate system.
+### Drawing the overlay
+- [- canDrawMapRect:zoomScale:](./mkoverlayview/candrawmaprect_zoomscale_.md)
+  Returns a Boolean value indicating whether the overlay view is ready to draw its content.
+- [- drawMapRect:zoomScale:inContext:](./mkoverlayview/drawmaprect_zoomscale_incontext_.md)
+  Draws the contents of the overlay view.
+- [- setNeedsDisplayInMapRect:](./mkoverlayview/setneedsdisplayinmaprect_.md)
+  Invalidates the view in the given map rectangle at all zoom scales.
+- [- setNeedsDisplayInMapRect:zoomScale:](./mkoverlayview/setneedsdisplayinmaprect_zoomscale_.md)
+  Invalidates the view in the given map rectangle but only at the specified zoom scale.
+
 ## Relationships
 
 ### Inherits From
@@ -87,6 +114,8 @@ The implementation of your [`drawMapRect:zoomScale:inContext:`](./mkoverlayview/
   Provides the visual representation for an [`MKPolyline`](./mkpolyline.md) annotation object.
 - [class MKPinAnnotationView](./mkpinannotationview.md)
   An annotation view that displays a pin image on the map.
+- [MKReverseGeocoder](./mkreversegeocoder.md)
+  Provides services for converting a map coordinate (specified as a latitude/longitude pair) into information about that coordinate, such as the country or region, city, or street.
 
 
 ---

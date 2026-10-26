@@ -20,6 +20,12 @@ optional func applicationProtectedDataWillBecomeUnavailable(_ notification: Noti
 - (void) applicationProtectedDataWillBecomeUnavailable:(NSNotification *) notification;
 ```
 
+## Topics
+
+### Related notification
+- [NSApplicationProtectedDataWillBecomeUnavailableNotification](../nsapplicationprotecteddatawillbecomeunavailablenotification.md)
+  Posted when protected data is about to become unavailable.
+
 ## See Also
 
 ### Restoring Application State

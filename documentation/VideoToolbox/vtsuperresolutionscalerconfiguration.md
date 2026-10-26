@@ -61,6 +61,8 @@ This configuration enables the super-resolution processor on a `VTFrameProcessor
   A parameter to control quality and performance levels.
 - [VTSuperResolutionScalerConfiguration.QualityPrioritization](./vtsuperresolutionscalerconfiguration/qualityprioritization-swift.enum.md)
   Configuration value you set to prioritize quality or performance.
+- [frameSupportedPixelFormats](./vtsuperresolutionscalerconfiguration/framesupportedpixelformats.md)
+  Available supported pixel formats for source frames for current configuration.
 ### Managing the configuration model
 - [var configurationModelStatus: VTSuperResolutionScalerConfiguration.ModelStatus](./vtsuperresolutionscalerconfiguration/configurationmodelstatus.md)
   Reports the download status of models that the system needs for the current configuration.
@@ -79,6 +81,9 @@ This configuration enables the super-resolution processor on a `VTFrameProcessor
   Provides the collection of currently supported algorithms or configuration revisions for the class of configuration.
 - [VTSuperResolutionScalerConfiguration.Revision](./vtsuperresolutionscalerconfiguration/revision-swift.enum.md)
   Available algorithm revisions.
+### Type Properties
+- [supportedScaleFactors](./vtsuperresolutionscalerconfiguration/supportedscalefactors-94rce.md)
+  Reports the set of supported scale factors to use when initializing a super-resolution scaler configuration.
 
 ## Relationships
 

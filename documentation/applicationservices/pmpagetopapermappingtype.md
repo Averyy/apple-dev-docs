@@ -26,6 +26,9 @@ typedef enum PMPageToPaperMappingType : unsigned int {
 - [init(rawValue: UInt32)](./pmpagetopapermappingtype/api-1461342-init.md)
 ### Instance Properties
 - [var rawValue: UInt32](./pmpagetopapermappingtype/api-1460449-rawvalue.md)
+### Constants
+- [kPMPageToPaperMappingNone](./pmpagetopapermappingtype/kpmpagetopapermappingnone.md)
+- [kPMPageToPaperMappingScaleToFit](./pmpagetopapermappingtype/kpmpagetopapermappingscaletofit.md)
 
 ## Relationships
 

@@ -50,6 +50,11 @@ This methods assumes mapped files are available from the underlying operating sy
   Options for methods used to read data objects.
 - [init?(contentsOfMappedFile: String)](./init%28contentsofmappedfile%29.md)
   Initializes a data object with the contents of the mapped file specified by a given path.
+- [+ dataWithContentsOfFile:options:error:](./datawithcontentsoffile_options_error_.md)
+  Creates a data object by reading every byte from the file at a given path.
+### Related Documentation
+- [+ dataWithContentsOfFile:](./datawithcontentsoffile_.md)
+  Creates a data object by reading every byte from the file at a given path.
 
 
 ---

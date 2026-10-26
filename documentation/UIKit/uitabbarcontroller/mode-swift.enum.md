@@ -57,6 +57,7 @@ enum UITabBarControllerMode : NSInteger;
 - [class UITabSidebarItem](../uitabsidebaritem.md)
 - [UITabSidebarItem.Request](../uitabsidebaritem/request.md)
 - [UITabBarController.Sidebar.Animating](./sidebar-swift.class/animating.md)
+- [UITabSidebarScrollTarget](../uitabsidebarscrolltarget.md)
 
 
 ---

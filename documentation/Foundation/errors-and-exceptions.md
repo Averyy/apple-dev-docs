@@ -21,6 +21,34 @@ Respond to problem situations in your interactions with APIs, and fine-tune your
 ### Assertions
 - [class NSAssertionHandler](./nsassertionhandler.md)
   An object that logs an assertion to the console.
+- [NSAssert](./nsassert.md)
+  Generates an assertion if a given condition is false.
+- [NSAssert1](./nsassert1.md)
+  Generates an assertion if a given condition is false.
+- [NSAssert2](./nsassert2.md)
+  Generates an assertion if a given condition is false.
+- [NSAssert3](./nsassert3.md)
+  Generates an assertion if a given condition is false.
+- [NSAssert4](./nsassert4.md)
+  Generates an assertion if a given condition is false.
+- [NSAssert5](./nsassert5.md)
+  Generates an assertion if a given condition is false.
+- [NSCAssert](./nscassert.md)
+  Generates an assertion if the given condition is false.
+- [NSCAssert1](./nscassert1.md)
+  Generates an assertion if a given condition is false.
+- [NSCAssert2](./nscassert2.md)
+  Generates an assertion if a given condition is false.
+- [NSCAssert3](./nscassert3.md)
+  Generates an assertion if a given condition is false.
+- [NSCAssert4](./nscassert4.md)
+  Generates an assertion if a given condition is false.
+- [NSCAssert5](./nscassert5.md)
+  Generates an assertion if a given condition is false.
+- [NSCParameterAssert](./nscparameterassert.md)
+  Evaluates the specified parameter.
+- [NSParameterAssert](./nsparameterassert.md)
+  Validates the specified parameter.
 ### Exceptions
 - [class NSException](./nsexception.md)
   An object that represents a special condition that interrupts the normal flow of program execution.
@@ -29,6 +57,16 @@ Respond to problem situations in your interactions with APIs, and fine-tune your
   Logs an error message to the Apple System Log facility.
 - [func NSLog(String, any CVarArg...)](./nslog%28_,_%29.md)
   Logs an error message to the Apple System Log facility.
+- [NSLog](./nslog.md)
+  Logs an error message to the Apple System Log facility.
+- [NSDeallocateZombies](./nsdeallocatezombies.md)
+  A global variable that determines whether or not the memory of zombie objects is deallocated.
+- [NSDebugEnabled](./nsdebugenabled.md)
+  A global variable that can be used to enable debug behavior in your app, such as extra logging.
+- [NSZombieEnabled](./nszombieenabled.md)
+  A global variable related to zombie objects that in practice has no effect.
+- [NSKeepAllocationStatistics](./nskeepallocationstatistics.md)
+  A no-longer-used global variable related to keeping statistics.
 
 ## See Also
 

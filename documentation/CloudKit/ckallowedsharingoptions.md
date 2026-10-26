@@ -86,6 +86,8 @@ Register an instance of this class with an [`NSItemProvider`](../Foundation/nsit
   A view controller that presents standard screens for adding and removing people from a CloudKit share record.
 - [CKSharingSupported](../BundleResources/information-property-list/cksharingsupported.md)
   A Boolean value that indicates your app supports CloudKit Sharing.
+- [CKSharePreparationCompletionHandler](./cksharepreparationcompletionhandler.md)
+- [CKSharePreparationHandler](./cksharepreparationhandler.md)
 
 
 ---

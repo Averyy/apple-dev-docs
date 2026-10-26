@@ -32,6 +32,8 @@ The font attribute corresponding to `anAttribute`. For valid values of `anAttrib
 ### Related Documentation
 - [var symbolicTraits: NSFontDescriptor.SymbolicTraits](./symbolictraits-swift.property.md)
   A bit mask that describes the traits of the receiver.
+- [+ fontDescriptorWithFontAttributes:](./fontdescriptorwithfontattributes_.md)
+  Returns a font descriptor with a dictionary of attributes.
 ### Getting the Font Attributes
 - [var fontAttributes: [NSFontDescriptor.AttributeName : Any]](./fontattributes.md)
   The receiver’s dictionary of attributes.

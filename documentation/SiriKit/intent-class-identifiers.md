@@ -8,65 +8,65 @@ Identify intents that user notifications specify.
 ## Topics
 
 ### Payments
-- [let INSendPaymentIntentIdentifier: String](https://developer.apple.com/documentation/intents/insendpaymentintentidentifier)
-  An [`INSendPaymentIntent`](https://developer.apple.com/documentation/intents/insendpaymentintent) object.
-- [let INRequestPaymentIntentIdentifier: String](https://developer.apple.com/documentation/intents/inrequestpaymentintentidentifier)
-  An [`INRequestPaymentIntent`](https://developer.apple.com/documentation/intents/inrequestpaymentintent) object.
+- [let INSendPaymentIntentIdentifier: String](../Intents/insendpaymentintentidentifier.md)
+  An [`INSendPaymentIntent`](../Intents/insendpaymentintent.md) object.
+- [let INRequestPaymentIntentIdentifier: String](../Intents/inrequestpaymentintentidentifier.md)
+  An [`INRequestPaymentIntent`](../Intents/inrequestpaymentintent.md) object.
 ### Photos
-- [let INSearchForPhotosIntentIdentifier: String](https://developer.apple.com/documentation/intents/insearchforphotosintentidentifier)
-  An [`INSearchForPhotosIntent`](https://developer.apple.com/documentation/intents/insearchforphotosintent) object.
-- [let INStartPhotoPlaybackIntentIdentifier: String](https://developer.apple.com/documentation/intents/instartphotoplaybackintentidentifier)
-  An [`INStartPhotoPlaybackIntent`](https://developer.apple.com/documentation/intents/instartphotoplaybackintent) object.
+- [let INSearchForPhotosIntentIdentifier: String](../Intents/insearchforphotosintentidentifier.md)
+  An [`INSearchForPhotosIntent`](../Intents/insearchforphotosintent.md) object.
+- [let INStartPhotoPlaybackIntentIdentifier: String](../Intents/instartphotoplaybackintentidentifier.md)
+  An [`INStartPhotoPlaybackIntent`](../Intents/instartphotoplaybackintent.md) object.
 ### Workouts
-- [let INStartWorkoutIntentIdentifier: String](https://developer.apple.com/documentation/intents/instartworkoutintentidentifier)
-  An [`INStartWorkoutIntent`](https://developer.apple.com/documentation/intents/instartworkoutintent) object.
-- [let INPauseWorkoutIntentIdentifier: String](https://developer.apple.com/documentation/intents/inpauseworkoutintentidentifier)
-  An [`INPauseWorkoutIntent`](https://developer.apple.com/documentation/intents/inpauseworkoutintent) object.
-- [let INResumeWorkoutIntentIdentifier: String](https://developer.apple.com/documentation/intents/inresumeworkoutintentidentifier)
-  An [`INResumeWorkoutIntent`](https://developer.apple.com/documentation/intents/inresumeworkoutintent) object.
-- [let INCancelWorkoutIntentIdentifier: String](https://developer.apple.com/documentation/intents/incancelworkoutintentidentifier)
-  An [`INCancelWorkoutIntent`](https://developer.apple.com/documentation/intents/incancelworkoutintent) object.
-- [let INEndWorkoutIntentIdentifier: String](https://developer.apple.com/documentation/intents/inendworkoutintentidentifier)
-  An [`INEndWorkoutIntent`](https://developer.apple.com/documentation/intents/inendworkoutintent) object.
+- [let INStartWorkoutIntentIdentifier: String](../Intents/instartworkoutintentidentifier.md)
+  An [`INStartWorkoutIntent`](../Intents/instartworkoutintent.md) object.
+- [let INPauseWorkoutIntentIdentifier: String](../Intents/inpauseworkoutintentidentifier.md)
+  An [`INPauseWorkoutIntent`](../Intents/inpauseworkoutintent.md) object.
+- [let INResumeWorkoutIntentIdentifier: String](../Intents/inresumeworkoutintentidentifier.md)
+  An [`INResumeWorkoutIntent`](../Intents/inresumeworkoutintent.md) object.
+- [let INCancelWorkoutIntentIdentifier: String](../Intents/incancelworkoutintentidentifier.md)
+  An [`INCancelWorkoutIntent`](../Intents/incancelworkoutintent.md) object.
+- [let INEndWorkoutIntentIdentifier: String](../Intents/inendworkoutintentidentifier.md)
+  An [`INEndWorkoutIntent`](../Intents/inendworkoutintent.md) object.
 ### Ride Booking
-- [let INListRideOptionsIntentIdentifier: String](https://developer.apple.com/documentation/intents/inlistrideoptionsintentidentifier)
-  An [`INListRideOptionsIntent`](https://developer.apple.com/documentation/intents/inlistrideoptionsintent) object.
-- [let INRequestRideIntentIdentifier: String](https://developer.apple.com/documentation/intents/inrequestrideintentidentifier)
-  An [`INRequestRideIntent`](https://developer.apple.com/documentation/intents/inrequestrideintent) object.
-- [let INGetRideStatusIntentIdentifier: String](https://developer.apple.com/documentation/intents/ingetridestatusintentidentifier)
-  An [`INGetRideStatusIntent`](https://developer.apple.com/documentation/intents/ingetridestatusintent) object.
+- [let INListRideOptionsIntentIdentifier: String](../Intents/inlistrideoptionsintentidentifier.md)
+  An [`INListRideOptionsIntent`](../Intents/inlistrideoptionsintent.md) object.
+- [let INRequestRideIntentIdentifier: String](../Intents/inrequestrideintentidentifier.md)
+  An [`INRequestRideIntent`](../Intents/inrequestrideintent.md) object.
+- [let INGetRideStatusIntentIdentifier: String](../Intents/ingetridestatusintentidentifier.md)
+  An [`INGetRideStatusIntent`](../Intents/ingetridestatusintent.md) object.
 ### CarPlay
-- [let INSetAudioSourceInCarIntentIdentifier: String](https://developer.apple.com/documentation/intents/insetaudiosourceincarintentidentifier)
-  An [`INSetAudioSourceInCarIntent`](https://developer.apple.com/documentation/intents/insetaudiosourceincarintent) object.
-- [let INSetClimateSettingsInCarIntentIdentifier: String](https://developer.apple.com/documentation/intents/insetclimatesettingsincarintentidentifier)
-  An [`INSetClimateSettingsInCarIntent`](https://developer.apple.com/documentation/intents/insetclimatesettingsincarintent) object.
-- [let INSetDefrosterSettingsInCarIntentIdentifier: String](https://developer.apple.com/documentation/intents/insetdefrostersettingsincarintentidentifier)
-  An [`INSetDefrosterSettingsInCarIntent`](https://developer.apple.com/documentation/intents/insetdefrostersettingsincarintent) object.
-- [let INSetSeatSettingsInCarIntentIdentifier: String](https://developer.apple.com/documentation/intents/insetseatsettingsincarintentidentifier)
-  An [`INSetSeatSettingsInCarIntent`](https://developer.apple.com/documentation/intents/insetseatsettingsincarintent) object.
-- [let INSaveProfileInCarIntentIdentifier: String](https://developer.apple.com/documentation/intents/insaveprofileincarintentidentifier)
-  An [`INSaveProfileInCarIntent`](https://developer.apple.com/documentation/intents/insaveprofileincarintent) object.
-- [let INSetProfileInCarIntentIdentifier: String](https://developer.apple.com/documentation/intents/insetprofileincarintentidentifier)
-  An [`INSetProfileInCarIntent`](https://developer.apple.com/documentation/intents/insetprofileincarintent) object.
-- [let INSetRadioStationIntentIdentifier: String](https://developer.apple.com/documentation/intents/insetradiostationintentidentifier)
-  An [`INSetRadioStationIntent`](https://developer.apple.com/documentation/intents/insetradiostationintent) object.
+- [let INSetAudioSourceInCarIntentIdentifier: String](../Intents/insetaudiosourceincarintentidentifier.md)
+  An [`INSetAudioSourceInCarIntent`](../Intents/insetaudiosourceincarintent.md) object.
+- [let INSetClimateSettingsInCarIntentIdentifier: String](../Intents/insetclimatesettingsincarintentidentifier.md)
+  An [`INSetClimateSettingsInCarIntent`](../Intents/insetclimatesettingsincarintent.md) object.
+- [let INSetDefrosterSettingsInCarIntentIdentifier: String](../Intents/insetdefrostersettingsincarintentidentifier.md)
+  An [`INSetDefrosterSettingsInCarIntent`](../Intents/insetdefrostersettingsincarintent.md) object.
+- [let INSetSeatSettingsInCarIntentIdentifier: String](../Intents/insetseatsettingsincarintentidentifier.md)
+  An [`INSetSeatSettingsInCarIntent`](../Intents/insetseatsettingsincarintent.md) object.
+- [let INSaveProfileInCarIntentIdentifier: String](../Intents/insaveprofileincarintentidentifier.md)
+  An [`INSaveProfileInCarIntent`](../Intents/insaveprofileincarintent.md) object.
+- [let INSetProfileInCarIntentIdentifier: String](../Intents/insetprofileincarintentidentifier.md)
+  An [`INSetProfileInCarIntent`](../Intents/insetprofileincarintent.md) object.
+- [let INSetRadioStationIntentIdentifier: String](../Intents/insetradiostationintentidentifier.md)
+  An [`INSetRadioStationIntent`](../Intents/insetradiostationintent.md) object.
 ### Messaging
-- [let INSearchForMessagesIntentIdentifier: String](https://developer.apple.com/documentation/intents/insearchformessagesintentidentifier)
-  An [`INSearchForMessagesIntent`](https://developer.apple.com/documentation/intents/insearchformessagesintent) object.
-- [let INSendMessageIntentIdentifier: String](https://developer.apple.com/documentation/intents/insendmessageintentidentifier)
-  An [`INSendMessageIntent`](https://developer.apple.com/documentation/intents/insendmessageintent) object.
-- [let INSetMessageAttributeIntentIdentifier: String](https://developer.apple.com/documentation/intents/insetmessageattributeintentidentifier)
-  An [`INSetMessageAttributeIntent`](https://developer.apple.com/documentation/intents/insetmessageattributeintent) object.
+- [let INSearchForMessagesIntentIdentifier: String](../Intents/insearchformessagesintentidentifier.md)
+  An [`INSearchForMessagesIntent`](../Intents/insearchformessagesintent.md) object.
+- [let INSendMessageIntentIdentifier: String](../Intents/insendmessageintentidentifier.md)
+  An [`INSendMessageIntent`](../Intents/insendmessageintent.md) object.
+- [let INSetMessageAttributeIntentIdentifier: String](../Intents/insetmessageattributeintentidentifier.md)
+  An [`INSetMessageAttributeIntent`](../Intents/insetmessageattributeintent.md) object.
 ### VoIP Calling
-- [let INStartCallIntentIdentifier: String](https://developer.apple.com/documentation/intents/instartcallintentidentifier)
-- [let INSearchCallHistoryIntentIdentifier: String](https://developer.apple.com/documentation/intents/insearchcallhistoryintentidentifier)
-  An [`INSearchCallHistoryIntent`](https://developer.apple.com/documentation/intents/insearchcallhistoryintent) object.
-- [let INAnswerCallIntentIdentifier: String](https://developer.apple.com/documentation/intents/inanswercallintentidentifier)
-- [let INHangUpCallIntentIdentifier: String](https://developer.apple.com/documentation/intents/inhangupcallintentidentifier)
-- [let INStartAudioCallIntentIdentifier: String](https://developer.apple.com/documentation/intents/instartaudiocallintentidentifier)
-  An [`INStartAudioCallIntent`](https://developer.apple.com/documentation/intents/instartaudiocallintent) object.
-- [let INStartVideoCallIntentIdentifier: String](https://developer.apple.com/documentation/intents/instartvideocallintentidentifier)
-  An [`INStartVideoCallIntent`](https://developer.apple.com/documentation/intents/instartvideocallintent) object.
+- [let INStartCallIntentIdentifier: String](../Intents/instartcallintentidentifier.md)
+- [let INSearchCallHistoryIntentIdentifier: String](../Intents/insearchcallhistoryintentidentifier.md)
+  An [`INSearchCallHistoryIntent`](../Intents/insearchcallhistoryintent.md) object.
+- [let INAnswerCallIntentIdentifier: String](../Intents/inanswercallintentidentifier.md)
+- [let INHangUpCallIntentIdentifier: String](../Intents/inhangupcallintentidentifier.md)
+- [let INStartAudioCallIntentIdentifier: String](../Intents/instartaudiocallintentidentifier.md)
+  An [`INStartAudioCallIntent`](../Intents/instartaudiocallintent.md) object.
+- [let INStartVideoCallIntentIdentifier: String](../Intents/instartvideocallintentidentifier.md)
+  An [`INStartVideoCallIntent`](../Intents/instartvideocallintent.md) object.
 
 ## See Also
 

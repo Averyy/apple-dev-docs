@@ -47,6 +47,8 @@ When creating a custom button — a button with the type [`UIButton.ButtonType.c
   Creates a new button with the specified type, registers the primary action event, and sets the title and image to the action’s title and image.
 - [UIButton.ButtonType](./buttontype-swift.enum.md)
   Specifies the style of a button.
+- [+ buttonWithType:primaryAction:](./buttonwithtype_primaryaction_.md)
+  Creates a new button with the specified type, registers the primary action event, and sets the title and image to the action’s title and image.
 
 
 ---

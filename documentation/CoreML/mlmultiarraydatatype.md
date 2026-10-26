@@ -73,6 +73,8 @@ All elements of an [`MLMultiArray`](./mlmultiarray.md) instance must be of the s
   Merges an array of multiarrays into one multiarray along an axis.
 - [init(pixelBuffer: CVPixelBuffer, shape: [NSNumber])](./mlmultiarray/init%28pixelbuffer,shape%29.md)
   Creates a multiarray sharing the surface of a pixel buffer.
+- [- initWithShape:dataType:strides:](./mlmultiarray/initwithshape_datatype_strides_.md)
+  Creates the object with specified strides.
 
 
 ---

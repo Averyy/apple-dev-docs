@@ -37,6 +37,10 @@ BNNSPoolingFunctionAverageCountIncludePadding
   A function for pooling that computes the average of each element in the pooling kernel, excluding zero-padding.
 - [var BNNSPoolingFunctionL2Norm: BNNSPoolingFunction](./bnnspoolingfunctionl2norm.md)
   A function for pooling that computes the square root of the sum of squares of each element in the pooling kernel.
+- [BNNSPoolingFunctionMax](./bnnspoolingfunction/bnnspoolingfunctionmax.md)
+  A function for pooling that computes the maximum of each element in the pooling kernel.
+- [BNNSPoolingFunctionAverage](./bnnspoolingfunction/bnnspoolingfunctionaverage.md)
+  A function for pooling that computes the average of each element in the pooling kernel.
 
 
 ---

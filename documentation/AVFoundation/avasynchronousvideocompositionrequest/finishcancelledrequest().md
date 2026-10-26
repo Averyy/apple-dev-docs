@@ -35,6 +35,8 @@ func finishCancelledRequest()
   The method that the custom compositor calls when composition succeeds.
 - [func finish(with: any Error)](./finish%28with%29.md)
   Finishes the request with an error.
+- [- finishWithComposedTaggedBufferGroup:](./finishwithcomposedtaggedbuffergroup_.md)
+  The method that the custom compositor calls when composition succeeds.
 
 
 ---

@@ -31,6 +31,10 @@ class var current: GCMouse? { get }
   A notification that posts when a mouse becomes the most recent mouse that the user connects.
 - [static let GCMouseDidStopBeingCurrent: NSNotification.Name](../../Foundation/nsnotification/name-swift.struct/gcmousedidstopbeingcurrent.md)
   A notification that posts when a mouse stops being the most recent mouse that the user connects.
+- [GCMouseDidBecomeCurrentNotification](../gcmousedidbecomecurrentnotification.md)
+  A notification that posts when a mouse becomes the most recent mouse that the user connects.
+- [GCMouseDidStopBeingCurrentNotification](../gcmousedidstopbeingcurrentnotification.md)
+  A notification that posts when a mouse stops being the most recent mouse that the user connects.
 
 
 ---

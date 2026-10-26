@@ -47,6 +47,8 @@ Not all papers have a printer ID associated with them. If the printer ID is know
   Obtains the localized name for a given paper.
 - [func PMPaperGetPPDPaperName(PMPaper, UnsafeMutablePointer<Unmanaged<CFString>?>) -> OSStatus](./api-1461039-pmpapergetppdpapername.md)
   Obtains the PPD paper name for a given paper.
+- [PMPaperGetName](./core_printing/api-1805534-pmpapergetname.md)
+  Obtains the name for a given paper.
 
 
 ---

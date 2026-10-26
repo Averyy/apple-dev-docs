@@ -1,0 +1,37 @@
+# index(after:)
+
+**Framework**: Swift  
+**Kind**: method  
+**Role**: Instance Method
+
+Returns the position immediately after the given index.
+
+**Availability**:
+- iOS 8.0+
+- iPadOS 8.0+
+- Mac Catalyst 13.0+
+- macOS 10.10+
+- tvOS 9.0+
+- visionOS 1.0+
+- watchOS 2.0+
+
+## Declaration
+
+```swift
+func index(after i: Self.Index) -> Self.Index
+```
+
+Available when `Index` conforms to `Strideable`, `Indices` is `Range<Self.Index>`, and `Index.Stride` is `Int`.
+
+#### Return Value
+
+The index value immediately after `i`.
+
+## Parameters
+
+- `i`: A valid index of the collection. `i` must be less than `endIndex`.
+
+
+---
+
+*[View on Apple Developer](https://developer.apple.com/documentation/swift/bidirectionalcollection/index(after:)-4zlq6)*

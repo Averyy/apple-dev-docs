@@ -85,7 +85,7 @@ The article now shows the tweet that you chose.
 ## See Also
 
 ### Related Documentation
-- [object Tweet](https://developer.apple.com/documentation/applenewsformat/tweet)
+- [object Tweet](../AppleNewsFormat/tweet.md)
   The component for adding a Tweet that was posted to Twitter.
 ### Introductory Design Tutorial
 - [Setting Up the Introductory Tutorial](./setting-up-the-introductory-tutorial.md)

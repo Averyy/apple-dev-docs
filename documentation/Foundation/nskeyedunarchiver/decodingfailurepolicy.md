@@ -58,6 +58,8 @@ The unarchiver may fail to decode an entry for the following reasons:
   Decodes and returns an object associated with a given key.
 - [func finishDecoding()](./finishdecoding%28%29.md)
   Tells the receiver that you are finished decoding objects.
+- [- decodeIntForKey:](./decodeintforkey_.md)
+  Decodes an integer value associated with a given key.
 
 
 ---

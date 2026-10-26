@@ -32,6 +32,8 @@ enum NSPropertyListMutabilityOptions : NSUInteger;
   Causes the returned property list to have mutable containers but immutable leaves.
 - [static var mutableContainersAndLeaves: PropertyListSerialization.MutabilityOptions](./mutabilityoptions/mutablecontainersandleaves.md)
   Causes the returned property list to have mutable containers and leaves.
+- [NSPropertyListImmutable](../nspropertylistmutabilityoptions/nspropertylistimmutable.md)
+  Causes the returned property list to contain immutable objects.
 ### Initializers
 - [init(rawValue: UInt)](./mutabilityoptions/init%28rawvalue%29.md)
 

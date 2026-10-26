@@ -42,6 +42,8 @@ The Cocoa root class [`NSObject`](./nsobject-swift.class.md) adopts this protoco
 ### Identifying Classes
 - [var superclass: AnyClass?](./nsobjectprotocol/superclass.md)
   Returns the class object for the receiver’s superclass.
+- [- class](./nsobject-c.protocol/class.md)
+  Returns the class object for the receiver’s class.
 ### Identifying and Comparing Objects
 - [func isEqual(Any?) -> Bool](./nsobjectprotocol/isequal%28_%29.md)
   Returns a Boolean value that indicates whether the receiver and a given object are equal.
@@ -73,6 +75,17 @@ The Cocoa root class [`NSObject`](./nsobject-swift.class.md) adopts this protoco
 ### Identifying Proxies
 - [func isProxy() -> Bool](./nsobjectprotocol/isproxy%28%29.md)
   Returns a Boolean value that indicates whether the receiver does not descend from [`NSObject`](./nsobject-swift.class.md).
+### Obsolete Methods
+- [- retain](./nsobject-c.protocol/retain.md)
+  Increments the receiver’s reference count.
+- [- release](./nsobject-c.protocol/release.md)
+  Decrements the receiver’s reference count.
+- [- autorelease](./nsobject-c.protocol/autorelease.md)
+  Decrements the receiver’s retain count at the end of the current autorelease pool block.
+- [- retainCount](./nsobject-c.protocol/retaincount.md)
+  Do not use this method.
+- [- zone](./nsobject-c.protocol/zone.md)
+  Zones are deprecated and ignored by most classes that have it as a parameter.
 
 ## Relationships
 

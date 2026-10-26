@@ -35,6 +35,9 @@ enum NSTextLayoutManagerSegmentOptions : NSUInteger;
   Returns the value that causes the framework to extend the segment to the tail edge.
 - [static var upstreamAffinity: NSTextLayoutManager.SegmentOptions](./segmentoptions/upstreamaffinity.md)
   Returns the value that causes the framework to the place the segment based on the upstream affinity for an empty range.
+### Enumeration Cases
+- [NSTextLayoutManagerSegmentOptionsNone](../nstextlayoutmanagersegmentoptions/nstextlayoutmanagersegmentoptionsnone.md)
+  The value that represents the empty options set.
 
 ## Relationships
 

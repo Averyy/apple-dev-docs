@@ -78,6 +78,8 @@ class INIntentDonationMetadata
   An object representing an action available in your app that the system may suggest to a user or a user may add to Siri.
 - [Apple Watch support](../SiriKit/watch-and-widget-support.md)
   Display relevant shortcuts on the Siri watch face.
+- [Siri Event Suggestions](../SiriKit/siri-event-suggestions.md)
+  Provide users with current, actionable information connected to a reservation.
 
 
 ---

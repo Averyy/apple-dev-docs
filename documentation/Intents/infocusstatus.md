@@ -33,8 +33,12 @@ When a user wants to focus, they can choose to prevent or delay notifications fr
 ### Creating a Status
 - [convenience init(isFocused: Bool?)](./infocusstatus/init%28isfocused%29.md)
   Creates an object that indicates the user’s focus status.
+- [- initWithIsFocused:](./infocusstatus/initwithisfocused_.md)
+  Creates an object that indicates the user’s ability to receive communication notifications.
 ### Accessing the User’s Status
 - [var isFocused: Bool?](./infocusstatus/isfocused-8ytve.md)
+  The user’s preference for receiving communication notifications.
+- [isFocused](./infocusstatus/isfocused-78wbx.md)
   The user’s preference for receiving communication notifications.
 ### Initializers
 - [init?(coder: NSCoder)](./infocusstatus/init%28coder%29.md)

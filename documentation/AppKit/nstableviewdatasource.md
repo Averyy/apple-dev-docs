@@ -82,6 +82,8 @@ For more information, see [Cocoa Bindings](./cocoa-bindings.md).
   A set of optional methods you implement in a table view delegate to customize the behavior of the table view.
 - [class NSTableViewDiffableDataSource](./nstableviewdiffabledatasource-c5gl.md)
   The object you use to manage data and provide items for a table view.
+- [NSTableViewDiffableDataSource](./nstableviewdiffabledatasourcereference.md)
+  The object you use to manage data and provide items for a table view.
 
 
 ---

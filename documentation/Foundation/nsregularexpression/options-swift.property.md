@@ -34,6 +34,8 @@ The options property specifies aspects of the regular expression matching that a
 ### Related Documentation
 - [init(pattern: String, options: NSRegularExpression.Options) throws](./init%28pattern,options%29.md)
   Returns an initialized NSRegularExpression instance with the specified regular expression pattern and options.
+- [+ regularExpressionWithPattern:options:error:](./regularexpressionwithpattern_options_error_.md)
+  Creates an NSRegularExpression instance with the specified regular expression pattern and options.
 ### Getting the Regular Expression and Options
 - [var pattern: String](./pattern.md)
   Returns the regular expression pattern.

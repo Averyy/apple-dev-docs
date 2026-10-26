@@ -38,6 +38,8 @@ Use this object in the `processWithParameters` call of `VTFrameProcessor` class.
 ### Inspecting the parameters
 - [var sourceFrame: VTFrameProcessorFrame](./vtlowlatencysuperresolutionscalerparameters/sourceframe.md)
   Current source frame, which must be non `nil`.
+- [destinationFrame](./vtlowlatencysuperresolutionscalerparameters/destinationframe.md)
+  Destination frame that contains user-allocated pixel buffer that receives the scaled processor output.
 
 ## Relationships
 

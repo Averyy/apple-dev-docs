@@ -32,6 +32,10 @@ func canRepresent(_ displayGamut: NSDisplayGamut) -> Bool
   Returns the number of color components in the specified color space.
 - [var isPlanar: Bool](./depth/isplanar.md)
   Returns whether the specified window depth is planar.
+- [NSAvailableWindowDepths](../nsavailablewindowdepths.md)
+  Returns the available window depth values.
+- [NSBestDepth](../nsbestdepth.md)
+  Attempts to return a window depth adequate for the specified parameters.
 
 
 ---

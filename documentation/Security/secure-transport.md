@@ -178,6 +178,44 @@ This API imposes no transport layer dependencies. You can use it with BSD Socket
 ### Legacy Operations
 - [func SSLSetEncryptionCertificate(SSLContext, CFArray) -> OSStatus](./sslsetencryptioncertificate%28_,_%29.md)
   Specifies the encryption certificates used for this connection.
+- [SSLNewContext](./sslnewcontext.md)
+  Creates a new Secure Sockets Layer (SSL) session context.
+- [SSLDisposeContext](./ssldisposecontext.md)
+  Disposes of a Secure Sockets Layer (SSL) session context.
+- [SSLSetProtocolVersionEnabled](./sslsetprotocolversionenabled.md)
+  Sets the allowed Secure Sockets Layer (SSL) protocol versions.
+- [SSLGetProtocolVersionEnabled](./sslgetprotocolversionenabled.md)
+  Retrieves the enabled status of a given protocol.
+- [SSLSetRsaBlinding](./sslsetrsablinding.md)
+  Enables or disables RSA blinding.
+- [SSLGetRsaBlinding](./sslgetrsablinding.md)
+  Obtains a value indicating whether RSA blinding is enabled.
+- [SSLSetProtocolVersion](./sslsetprotocolversion.md)
+  Sets the SSL protocol version.
+- [SSLGetProtocolVersion](./sslgetprotocolversion.md)
+  Gets the SSL protocol version.
+- [SSLSetAllowsAnyRoot](./sslsetallowsanyroot.md)
+  Specifies whether root certificates from unrecognized certification authorities are allowed.
+- [SSLGetAllowsAnyRoot](./sslgetallowsanyroot.md)
+  Obtains a value specifying whether an unknown root is allowed.
+- [SSLSetAllowsExpiredRoots](./sslsetallowsexpiredroots.md)
+  Specifies whether expired root certificates are allowed.
+- [SSLGetAllowsExpiredRoots](./sslgetallowsexpiredroots.md)
+  Retrieves the value indicating whether expired roots are allowed.
+- [SSLSetTrustedRoots](./sslsettrustedroots.md)
+  Augments or replaces the default set of trusted root certificates for this session.
+- [SSLCopyTrustedRoots](./sslcopytrustedroots.md)
+  Retrieves the current list of trusted root certificates.
+- [SSLSetAllowsExpiredCerts](./sslsetallowsexpiredcerts.md)
+  Specifies whether certificate expiration times are ignored.
+- [SSLGetAllowsExpiredCerts](./sslgetallowsexpiredcerts.md)
+  Retrieves the value specifying whether expired certificates are allowed.
+- [SSLSetEnableCertVerify](./sslsetenablecertverify.md)
+  Enables or disables peer certificate chain validation.
+- [SSLGetEnableCertVerify](./sslgetenablecertverify.md)
+  Determines whether peer certificate chain validation is currently enabled.
+- [SSLCopyPeerCertificates](./sslcopypeercertificates.md)
+  Retrieves a peer certificate and its certificate chain.
 
 
 ---

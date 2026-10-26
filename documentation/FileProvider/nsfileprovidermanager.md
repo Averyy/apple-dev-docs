@@ -54,6 +54,7 @@ class NSFileProviderManager
   Returns an enumerator for all the items the system currently stores on disk.
 - [func enumeratorForPendingItems() -> any NSFileProviderPendingSetEnumerator](./nsfileprovidermanager/enumeratorforpendingitems%28%29.md)
   Returns an enumerator for the set of pending items.
+- [- requestDownloadForItemWithIdentifier:requestedRange:completionHandler:](./nsfileprovidermanager/requestdownloadforitemwithidentifier_requestedrange_completionhandler_.md)
 ### Performing actions
 - [class func placeholderURL(for: URL) -> URL](./nsfileprovidermanager/placeholderurl%28for%29.md)
   Returns a placeholder URL for a given document URL.
@@ -114,6 +115,8 @@ class NSFileProviderManager
   Constants that specify whether a URL is eligible for storing a domain.
 - [protocol NSFileProviderExternalVolumeHandling](./nsfileproviderexternalvolumehandling.md)
   A protocol that defines the interface for handling external volumes.
+- [+ checkDomainsCanBeStored:onVolumeAtURL:unsupportedReason:error:](./nsfileprovidermanager/checkdomainscanbestored_onvolumeaturl_unsupportedreason_error_.md)
+  Check if a URL is eligible for storing a domain.
 ### Using services
 - [func getService(named: NSFileProviderServiceName, for: NSFileProviderItemIdentifier, completionHandler: (NSFileProviderService?, (any Error)?) -> Void)](./nsfileprovidermanager/getservice%28named,for,completionhandler%29.md)
 ### Testing

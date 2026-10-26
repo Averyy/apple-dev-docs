@@ -33,6 +33,12 @@ A signature if the raw data is a valid signature; otherwise, `nil`.
 
 - `dataRepresentation`: The raw data for the signature.
 
+## See Also
+
+### Creating a signature object
+- [+ signatureWithDataRepresentation:error:](./signaturewithdatarepresentation_error_.md)
+  Creates a signature object from raw data.
+
 
 ---
 

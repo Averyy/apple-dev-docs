@@ -37,6 +37,8 @@ The number of frames can vary from 0 to the number specified by the `previousFra
   A parameter to control the strength of noise-filtering. The value can range from the minimum strength of 0.0 to the maximum strength of 1.0. Change in filter strength causes the processor to flush all frames in the queue prior to processing the source frame.
 - [var hasDiscontinuity: Bool](./hasdiscontinuity.md)
   A Boolean that indicates sequence discontinuity, forcing the processor to reset prior to processing the source frame.
+- [destinationFrame](./destinationframe.md)
+  Destination frame that contains a user-allocated pixel buffer that receives the output frame.
 
 
 ---

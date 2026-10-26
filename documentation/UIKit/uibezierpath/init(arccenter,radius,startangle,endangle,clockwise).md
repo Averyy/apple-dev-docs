@@ -63,6 +63,8 @@ After calling this method, the current point is set to the point on the arc at t
   Creates and returns an empty path object.
 - [init?(coder: NSCoder)](./init%28coder%29.md)
   Creates a Bézier path object from data in an unarchiver.
+- [+ bezierPath](./bezierpath.md)
+  Creates and returns a new Bézier path object.
 
 
 ---

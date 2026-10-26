@@ -39,6 +39,8 @@ The paste button ([`UIPasteControl`](../uipastecontrol.md)) property [`configura
   A value that rounds the edges of a paste button.
 - [var cornerStyle: UIButton.Configuration.CornerStyle](./configuration-swift.class/cornerstyle.md)
   A shape for the button among a predetermined set of templates.
+- [cornerStyle](../uipastecontrolconfiguration/cornerstyle.md)
+  A shape for the button among a predetermined set of templates.
 ### Choosing control icon and text
 - [var displayMode: UIPasteControl.DisplayMode](./configuration-swift.class/displaymode.md)
   An option that determines whether the paste button composes an icon, textual label, or both.

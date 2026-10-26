@@ -68,6 +68,11 @@ Create a command buffer with a custom configuration by creating an [`MTLCommandB
   The command buffer error codes that indicate why the GPU doesn’t finish executing a command buffer.
 - [protocol MTLCommandEncoder](./mtlcommandencoder.md)
   An encoder that writes GPU commands into a command buffer.
+### Submitting work to a GPU
+- [MTLCommandBufferErrorDomain](./mtlcommandbuffererrordomain.md)
+  The domain for Metal command buffer errors.
+- [MTLCommandBufferError](./mtlcommandbuffererror-swift.struct/code.md)
+  Error codes that indicate why a GPU is unable to finish running a command buffer.
 
 
 ---

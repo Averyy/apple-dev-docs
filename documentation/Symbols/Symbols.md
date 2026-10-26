@@ -79,11 +79,35 @@ imageView.addSymbolEffect(.variableColor.reversing)
   An animation that scales the layers in a symbol-based image separately or as a whole.
 - [static var variableColor: VariableColorSymbolEffect](./symboleffect/variablecolor.md)
   An animation that replaces the opacity of variable layers in a symbol-based image in a repeatable sequence.
+- [NSSymbolAppearEffect](./nssymbolappeareffect.md)
+  A type that makes the layers of a symbol-based image appear separately or as a whole.
+- [NSSymbolBounceEffect](./nssymbolbounceeffect.md)
+  A type that applies a transitory scaling effect, or bounce, to the layers in a symbol-based image separately or as a whole.
+- [NSSymbolDisappearEffect](./nssymboldisappeareffect.md)
+  A type that makes the layers of a symbol-based image disappear separately or as a whole.
+- [NSSymbolPulseEffect](./nssymbolpulseeffect.md)
+  A type that fades the opacity of some or all layers in a symbol-based image.
+- [NSSymbolScaleEffect](./nssymbolscaleeffect.md)
+  A type that scales the layers in a symbol-based image separately or as a whole.
+- [NSSymbolVariableColorEffect](./nssymbolvariablecoloreffect.md)
+  A type that replaces the opacity of variable layers in a symbol-based image in a repeatable sequence.
+- [NSSymbolBreatheEffect](./nssymbolbreatheeffect.md)
+  A symbol effect that applies the Breathe animation to symbol images.
+- [NSSymbolRotateEffect](./nssymbolrotateeffect.md)
+  A symbol effect that applies the Rotate animation to symbol images.
+- [NSSymbolWiggleEffect](./nssymbolwiggleeffect.md)
+  A symbol effect that applies the Wiggle animation to symbol images.
 ### Symbol content transitions
 - [static var replace: ReplaceSymbolEffect](./symboleffect/replace.md)
   An animation that replaces the layers of one symbol-based image with those of another.
 - [static var automatic: AutomaticSymbolEffect](./symboleffect/automatic.md)
   A transition that applies the default animation to a symbol-based image in a context-sensitive manner.
+- [NSSymbolReplaceContentTransition](./nssymbolreplacecontenttransition.md)
+  A type that replaces the layers of one symbol-based image with those of another.
+- [NSSymbolAutomaticContentTransition](./nssymbolautomaticcontenttransition.md)
+  A type that applies the default animation to a symbol-based image in a context-sensitive manner.
+- [NSSymbolMagicReplaceContentTransition](./nssymbolmagicreplacecontenttransition.md)
+  A symbol effect applies the MagicReplace animation to symbol images.
 ### Symbol effect types
 - [struct AppearSymbolEffect](./appearsymboleffect.md)
   A type that makes the layers of a symbol-based image appear separately or as a whole.
@@ -110,6 +134,10 @@ imageView.addSymbolEffect(.variableColor.reversing)
 ### Symbol effect options
 - [struct SymbolEffectOptions](./symboleffectoptions.md)
   Options that configure how effects apply to symbol-based images.
+- [NSSymbolEffectOptions](./nssymboleffectoptions.md)
+  Options that configure how effects apply to symbol-based images.
+- [NSSymbolEffectOptionsRepeatBehavior](./nssymboleffectoptionsrepeatbehavior.md)
+  The behavior of repetition to use when a symbol effect is animating.
 ### Symbol effect protocols
 - [protocol SymbolEffect](./symboleffect.md)
   A presentation effect that you apply to a symbol-based image.
@@ -125,6 +153,16 @@ imageView.addSymbolEffect(.variableColor.reversing)
 - [struct DrawOffSymbolEffect](./drawoffsymboleffect.md)
   A symbol effect that applies the DrawOff animation to symbol images.
 - [struct DrawOnSymbolEffect](./drawonsymboleffect.md)
+  A symbol effect that applies the DrawOn animation to symbol images.
+### Symbol effect classes
+- [NSSymbolEffect](./nssymboleffect.md)
+  An abstract base class for effects that you can apply to a symbol-based image.
+- [NSSymbolContentTransition](./nssymbolcontenttransition.md)
+  An abstract base class for transitions you can apply to symbol-based images.
+### Classes
+- [NSSymbolDrawOffEffect](./nssymboldrawoffeffect.md)
+  A symbol effect that applies the DrawOff animation to symbol images.
+- [NSSymbolDrawOnEffect](./nssymboldrawoneffect.md)
   A symbol effect that applies the DrawOn animation to symbol images.
 
 

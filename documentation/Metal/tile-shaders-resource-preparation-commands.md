@@ -20,10 +20,14 @@ Tile shaders share argument tables for each resource type, such as buffers, text
   Creates a buffer from bytes and assigns it to an entry in the tile shader argument table.
 - [func setTileBufferOffset(Int, index: Int)](./mtlrendercommandencoder/settilebufferoffset%28_,index%29.md)
   Updates an entry in the tile shader argument table with a new location within the entry’s current buffer.
+- [- setTileBuffers:offsets:withRange:](./mtlrendercommandencoder/settilebuffers_offsets_withrange_.md)
+  Assigns multiple buffers to a range of entries in the tile shader argument table.
 ### Assigning textures
 - [func setTileTexture((any MTLTexture)?, index: Int)](./mtlrendercommandencoder/settiletexture%28_,index%29.md)
   Assigns a texture to an entry in the tile shader argument table.
 - [func setTileTextures([(any MTLTexture)?], range: Range<Int>)](./mtlrendercommandencoder/settiletextures%28_,range%29.md)
+  Assigns multiple textures to a range of entries in the tile shader argument table.
+- [- setTileTextures:withRange:](./mtlrendercommandencoder/settiletextures_withrange_.md)
   Assigns multiple textures to a range of entries in the tile shader argument table.
 ### Assigning sampler states
 - [func setTileSamplerState((any MTLSamplerState)?, index: Int)](./mtlrendercommandencoder/settilesamplerstate%28_,index%29.md)
@@ -34,6 +38,10 @@ Tile shaders share argument tables for each resource type, such as buffers, text
   Assigns multiple sampler states to a range of entries in the tile shader argument table.
 - [func setTileSamplerStates([(any MTLSamplerState)?], lodMinClamps: [Float], lodMaxClamps: [Float], range: Range<Int>)](./mtlrendercommandencoder/settilesamplerstates%28_,lodminclamps,lodmaxclamps,range%29.md)
   Assigns multiple sampler states and clamp values to a range of entries in the tile shader argument table.
+- [- setTileSamplerStates:withRange:](./mtlrendercommandencoder/settilesamplerstates_withrange_.md)
+  Assigns multiple sampler states to a range of entries in the tile shader argument table.
+- [- setTileSamplerStates:lodMinClamps:lodMaxClamps:withRange:](./mtlrendercommandencoder/settilesamplerstates_lodminclamps_lodmaxclamps_withrange_.md)
+  Assigns multiple sampler states and clamp values to a range of entries in the tile shader argument table.
 ### Assigning acceleration structures
 - [func setTileAccelerationStructure((any MTLAccelerationStructure)?, bufferIndex: Int)](./mtlrendercommandencoder/settileaccelerationstructure%28_,bufferindex%29.md)
   Assigns an acceleration structure to an entry in the tile shader argument table.
@@ -42,10 +50,14 @@ Tile shaders share argument tables for each resource type, such as buffers, text
   Assigns a visible function table to an entry in the tile shader argument table.
 - [func setTileVisibleFunctionTables([(any MTLVisibleFunctionTable)?], bufferRange: Range<Int>)](./mtlrendercommandencoder/settilevisiblefunctiontables%28_,bufferrange%29.md)
   Assigns multiple visible function tables to a range of entries in the tile shader argument table.
+- [- setTileVisibleFunctionTables:withBufferRange:](./mtlrendercommandencoder/settilevisiblefunctiontables_withbufferrange_.md)
+  Assigns multiple visible function tables to a range of entries in the tile shader argument table.
 ### Assigning intersection function tables
 - [func setTileIntersectionFunctionTable((any MTLIntersectionFunctionTable)?, bufferIndex: Int)](./mtlrendercommandencoder/settileintersectionfunctiontable%28_,bufferindex%29.md)
   Assigns an intersection function table to an entry in the tile shader argument table.
 - [func setTileIntersectionFunctionTables([(any MTLIntersectionFunctionTable)?], bufferRange: Range<Int>)](./mtlrendercommandencoder/settileintersectionfunctiontables%28_,bufferrange%29.md)
+  Assigns multiple intersection function tables to a range of entries in the tile shader argument table.
+- [- setTileIntersectionFunctionTables:withBufferRange:](./mtlrendercommandencoder/settileintersectionfunctiontables_withbufferrange_.md)
   Assigns multiple intersection function tables to a range of entries in the tile shader argument table.
 
 ## See Also

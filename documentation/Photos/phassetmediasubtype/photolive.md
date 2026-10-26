@@ -26,7 +26,7 @@ PHAssetMediaSubtypePhotoLive
 
 #### Discussion
 
-To display a Live Photo asset with its associated video content, retrieve a [`PHLivePhoto`](../phlivephoto.md) object using the [`PHImageManager`](../phimagemanager.md) class and assign it to a [`PHLivePhotoView`](https://developer.apple.com/documentation/photosui/phlivephotoview) object.
+To display a Live Photo asset with its associated video content, retrieve a [`PHLivePhoto`](../phlivephoto.md) object using the [`PHImageManager`](../phimagemanager.md) class and assign it to a [`PHLivePhotoView`](../../PhotosUI/phlivephotoview.md) object.
 
 ## See Also
 
@@ -47,6 +47,8 @@ To display a Live Photo asset with its associated video content, retrieve a [`PH
   The asset is a time-lapse video.
 - [static var photoDepthEffect: PHAssetMediaSubtype](./photodeptheffect.md)
   The asset is a photo captured with the Camera app’s Portrait mode depth effect.
+- [PHAssetMediaSubtypeNone](./phassetmediasubtypenone.md)
+  The asset has no subtype.
 
 
 ---

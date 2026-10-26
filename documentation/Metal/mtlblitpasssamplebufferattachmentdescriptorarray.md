@@ -33,6 +33,8 @@ The number of elements in the array is at least the number of elements in an [`M
 ### Accessing a sample buffer attachment descriptor
 - [subscript(Int) -> MTLBlitPassSampleBufferAttachmentDescriptor!](./mtlblitpasssamplebufferattachmentdescriptorarray/subscript%28_%29.md)
   Accesses one of the array’s blit pass sample buffer attachment descriptor instances.
+- [- setObject:atIndexedSubscript:](./mtlblitpasssamplebufferattachmentdescriptorarray/setobject_atindexedsubscript_.md)
+  Copies the properties of a blit pass sample buffer attachment descriptor instance to the properties of one of the array’s instances.
 
 ## Relationships
 

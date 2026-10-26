@@ -54,6 +54,8 @@ Invoking this method allows the receiver to notify its delegate and to perform a
   Decodes and returns an object associated with a given key.
 - [var decodingFailurePolicy: NSCoder.DecodingFailurePolicy](./decodingfailurepolicy.md)
   The action to take when this unarchiver fails to decode an entry.
+- [- decodeIntForKey:](./decodeintforkey_.md)
+  Decodes an integer value associated with a given key.
 
 
 ---

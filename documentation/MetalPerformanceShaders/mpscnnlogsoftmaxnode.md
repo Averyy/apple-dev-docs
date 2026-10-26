@@ -28,6 +28,8 @@ class MPSCNNLogSoftMaxNode
 
 ### Initializers
 - [init(source: MPSNNImageNode)](./mpscnnlogsoftmaxnode/init%28source%29.md)
+### Type Methods
+- [+ nodeWithSource:](./mpscnnlogsoftmaxnode/nodewithsource_.md)
 
 ## Relationships
 

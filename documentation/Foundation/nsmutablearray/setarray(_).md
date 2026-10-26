@@ -45,6 +45,8 @@ func setArray(_ otherArray: [Any])
   Replaces the objects in the receiving array specified by one given range with the objects in another array specified by another range.
 - [func replaceObjects(in: NSRange, withObjectsFrom: [Any])](./replaceobjects%28in,withobjectsfrom%29.md)
   Replaces the objects in the receiving array specified by a given range with all of the objects from a given array.
+- [- setObject:atIndexedSubscript:](./setobject_atindexedsubscript_.md)
+  Replaces the object at the index with the new object, possibly adding the object.
 
 
 ---

@@ -32,6 +32,10 @@ enum AVPlayerInterstitialEventRestrictions : NSUInteger;
   A restriction that indicates the event doesn’t allow seeking forward within an interstitial item.
 - [static var requiresPlaybackAtPreferredRateForAdvancement: AVPlayerInterstitialEvent.Restrictions](./restrictions-swift.struct/requiresplaybackatpreferredrateforadvancement.md)
   A restriction that indicates the event doesn’t allow advancing the current time within an interstitial item.
+- [AVPlayerInterstitialEventRestrictionDefaultPolicy](../avplayerinterstitialeventrestrictions/avplayerinterstitialeventrestrictiondefaultpolicy.md)
+  The default restriction policy.
+- [AVPlayerInterstitialEventRestrictionNone](../avplayerinterstitialeventrestrictions/avplayerinterstitialeventrestrictionnone.md)
+  A value that indicates no restrictions on playback of primary or interstitial content.
 ### Initializing a restriction
 - [init(rawValue: UInt)](./restrictions-swift.struct/init%28rawvalue%29.md)
   Creates a restriction with an integer.

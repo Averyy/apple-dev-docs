@@ -43,6 +43,10 @@ A table column object determines the width (including the maximum and minimum wi
   The table column’s resizing mask.
 - [func sizeToFit()](./nstablecolumn/sizetofit%28%29.md)
   Resizes the table column to fit the width of its header cell.
+- [- isResizable](./nstablecolumn/isresizable.md)
+  Returns whether the column is resizable.
+- [- setResizable:](./nstablecolumn/setresizable_.md)
+  Sets whether the user can resize the receiver in its NSTableView.
 ### Setting the Header
 - [var title: String](./nstablecolumn/title.md)
   The title of the table column’s header.

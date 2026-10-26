@@ -42,6 +42,12 @@ When you are creating a Core Foundation object sometimes you want to ensure that
 ### Memory Management
 - [func CFGetRetainCount(CFTypeRef!) -> CFIndex](./cfgetretaincount%28_%29.md)
   Returns the reference count of a Core Foundation object.
+- [CFMakeCollectable](./cfmakecollectable.md)
+  Makes a newly-allocated Core Foundation object eligible for garbage collection.
+- [CFRelease](./cfrelease.md)
+  Releases a Core Foundation object.
+- [CFRetain](./cfretain.md)
+  Retains a Core Foundation object.
 
 
 ---

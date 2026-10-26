@@ -28,6 +28,8 @@ class UIPointerRegion
 ### Creating a region
 - [convenience init(rect: CGRect, identifier: AnyHashable?)](./uipointerregion/init%28rect,identifier%29.md)
   Creates a pointer region with the specified rectangle and optional identifier.
+- [+ regionWithRect:identifier:](./uipointerregion/regionwithrect_identifier_.md)
+  Creates a pointer region with the specified rectangle and optional identifier.
 ### Configuring a region
 - [var rect: CGRect](./uipointerregion/rect.md)
   The rectangle bounds of the region.
@@ -35,6 +37,8 @@ class UIPointerRegion
   An optional identifier for the region.
 - [var latchingAxes: UIAxis](./uipointerregion/latchingaxes.md)
   Axes along which the region latches after a primary click.
+- [identifier](./uipointerregion/identifier-9i5wc.md)
+  An optional identifier for the region.
 
 ## Relationships
 

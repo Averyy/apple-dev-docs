@@ -89,6 +89,8 @@ You must override these methods:
   Returns the migration manager class for this store class.
 ### Initializers
 - [init(persistentStoreCoordinator: NSPersistentStoreCoordinator?, configurationName: String?, URL: URL, options: [AnyHashable : Any]?)](./nspersistentstore/init%28persistentstorecoordinator,configurationname,url,options%29.md)
+### Notifications
+- [NSPersistentStoreRemoteChangeNotification](./nspersistentstoreremotechangenotification.md)
 
 ## Relationships
 

@@ -41,6 +41,10 @@ This is the block for the `kIOGeneralInterest` handler, and handles underlying s
   The queue for servicing input/output requests.
 - [func destroy()](./iousbhostobject/destroy%28%29.md)
   Removes underlying allocations and connections from the USB host object.
+- [- initWithIOService:options:queue:error:interestHandler:](./iousbhostobject/initwithioservice_options_queue_error_interesthandler_.md)
+  Creates a USB host object and sets up a communication channel to the kernel.
+- [- initWithIOService:queue:error:interestHandler:](./iousbhostobject/initwithioservice_queue_error_interesthandler_.md)
+  Creates a USB host object and sets up a default communication channel to the kernel.
 
 
 ---

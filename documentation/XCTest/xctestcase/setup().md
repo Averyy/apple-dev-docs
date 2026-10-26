@@ -38,6 +38,10 @@ The [`setUp()`](./setup%28%29.md) class method is called exactly once for a test
   Registers a block of teardown code to run after the current test method ends.
 - [class func tearDown()](./teardown%28%29.md)
   Provides an opportunity to perform cleanup after a test case ends.
+- [- addAsyncTeardownBlock:](./addasyncteardownblock_.md)
+  Registers a block of asynchronous teardown code to run after the current test method ends.
+- [- addTeardownBlock:](./addteardownblock_.md)
+  Registers a block of teardown code to run after the current test method ends.
 
 
 ---

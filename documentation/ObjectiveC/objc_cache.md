@@ -35,6 +35,10 @@ To limit the need to perform linear searches of method lists for the definitions
   Defines an Objective-C method.
 - [struct objc_property_attribute_t](./objc_property_attribute_t.md)
   Defines a property attribute.
+- [Class](./class.md)
+  An opaque type that represents an Objective-C class.
+- [SEL](./sel.md)
+  Defines an opaque type that represents a method selector.
 
 
 ---

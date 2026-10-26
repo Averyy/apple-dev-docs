@@ -50,6 +50,8 @@ You should invoke this method from within your implementation of the NSIgnoreMis
   Returns the default values for quote replacement.
 - [var userReplacementsDictionary: [String : String]](./userreplacementsdictionary.md)
   Returns the dictionary used when replacing words.
+- [- forgetWord:](./forgetword_.md)
+  Remove this word from the spelling dictionary.
 
 
 ---

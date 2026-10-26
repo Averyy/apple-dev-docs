@@ -33,6 +33,12 @@ Initialized [`NSPersistentStoreDescription`](../nspersistentstoredescription.md)
 
 - `url`: Location for the store.
 
+## See Also
+
+### Creating a Persistent Store Description
+- [+ persistentStoreDescriptionWithURL:](./persistentstoredescriptionwithurl_.md)
+  Initializes and returns a persistent store description with the given URL.
+
 
 ---
 

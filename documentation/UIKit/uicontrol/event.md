@@ -112,6 +112,8 @@ You set up a control so that it sends an action message to a target object by as
 - [var allControlEvents: UIControl.Event](./allcontrolevents.md)
   Returns the events for which the control has associated actions.
 - [func enumerateEventHandlers((UIAction?, (Any?, Selector)?, UIControl.Event, inout Bool) -> Void)](./enumerateeventhandlers%28_%29.md)
+- [- enumerateEventHandlers:](./enumerateeventhandlers_.md)
+  Iterate over the event handlers installed on this control at the time this method is called. For each call, either actionHandler or action will be non-nil. controlEvents is always non-zero. Setting *stop to YES will terminate the enumeration early. It is legal to manipulate the control’s event handlers within the block.
 
 
 ---

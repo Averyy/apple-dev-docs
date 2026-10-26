@@ -34,9 +34,25 @@ class UITabSidebarItem
 - [var configurationState: UICellConfigurationState](./uitabsidebaritem/configurationstate-1knk1.md)
 - [var content: UITabSidebarItem.Content](./uitabsidebaritem/content-swift.property.md)
 - [var contentConfiguration: any UIContentConfiguration](./uitabsidebaritem/contentconfiguration-254nx.md)
+- [accessories](./uitabsidebaritem/accessories-6puxc.md)
+  Cell accessories to use when displaying this item. Some accessories may not be shown if it conflicts with system default accessories.
+- [action](./uitabsidebaritem/action.md)
+  The action that the receiver represents. Only one of `tab` or `action` will be valid for an item.
+- [backgroundConfiguration](./uitabsidebaritem/backgroundconfiguration-3i92z.md)
+  The background configuration to use when displaying this item.
+- [configurationState](./uitabsidebaritem/configurationstate-16oov.md)
+  The current configuration state of the sidebar item.
+- [contentConfiguration](./uitabsidebaritem/contentconfiguration-774sd.md)
+  The content configuration to use when displaying this item.
+- [tab](./uitabsidebaritem/tab.md)
+  The tab that the receiver represents. Only one of `tab` or `action` will be valid for an item.
 ### Instance Methods
 - [func defaultBackgroundConfiguration() -> UIBackgroundConfiguration](./uitabsidebaritem/defaultbackgroundconfiguration%28%29.md)
 - [func defaultContentConfiguration() -> UIListContentConfiguration](./uitabsidebaritem/defaultcontentconfiguration%28%29.md)
+- [- defaultBackgroundConfiguration](./uitabsidebaritem/defaultbackgroundconfiguration.md)
+  Returns the default background configuration for this item and the configuration state.
+- [- defaultContentConfiguration](./uitabsidebaritem/defaultcontentconfiguration.md)
+  Returns the default content configuration for this item and the configuration state.
 ### Enumerations
 - [UITabSidebarItem.Content](./uitabsidebaritem/content-swift.enum.md)
 
@@ -67,6 +83,7 @@ class UITabSidebarItem
   An object for managing and configuring the sidebar.
 - [UITabSidebarItem.Request](./uitabsidebaritem/request.md)
 - [UITabBarController.Sidebar.Animating](./uitabbarcontroller/sidebar-swift.class/animating.md)
+- [UITabSidebarScrollTarget](./uitabsidebarscrolltarget.md)
 
 
 ---

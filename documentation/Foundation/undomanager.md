@@ -45,6 +45,8 @@ Typically, apps with UI interactions work with [`UndoManager`](./undomanager.md)
   Registers the selector of the specified target to implement a single undo operation that the target receives.
 - [func prepare(withInvocationTarget: Any) -> Any](./undomanager/prepare%28withinvocationtarget%29.md)
   Prepares the undo manager for invocation-based undo with the given target as the subject of the next undo operation.
+- [- registerUndoWithTarget:handler:](./nsundomanager/registerundowithtarget_handler_.md)
+  Records a single undo operation for a given target so that when the manager performs an undo, it executes the specified block.
 ### Checking undo ability
 - [var canUndo: Bool](./undomanager/canundo.md)
   A Boolean value that indicates whether the manager has any actions to undo.

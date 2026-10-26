@@ -48,6 +48,16 @@ The `PMSessionError` function returns the last printing session error, not the l
   Obtains the Quartz graphics context for the current page in a printing session.
 - [func PMSessionSetError(PMPrintSession, OSStatus) -> OSStatus](./api-1460216-pmsessionseterror.md)
   Sets the value of the current result code for the specified printing session.
+- [PMSessionSetCurrentPrinter](./core_printing/api-1805523-pmsessionsetcurrentprinter.md)
+  Changes the current printer for a printing session to a printer specified by name.
+- [PMSessionGetDocumentFormatGeneration](./core_printing/api-1805525-pmsessiongetdocumentformatgenera.md)
+  Obtains the spool file formats that can be generated for the specified printing session.
+- [PMSessionSetDocumentFormatGeneration](./core_printing/api-1805527-pmsessionsetdocumentformatgenera.md)
+  Requests a specified spool file format and supplies the graphics context type to use for drawing pages within the print loop.
+- [PMSessionGetGraphicsContext](./core_printing/api-1805529-pmsessiongetgraphicscontext.md)
+  Obtains the graphics context for the current page in a printing session.
+- [PMSessionGeneral](./core_printing/api-1805530-pmsessiongeneral.md)
+  Maintains compatibility with the `PrGeneral` function in the classic Printing Manager.
 
 
 ---

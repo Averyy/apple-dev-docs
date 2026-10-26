@@ -37,6 +37,8 @@ The identity object, or `nil` if no identity is found with the matching criteria
   Returns the identity object with the given name from the specified identity authority.
 - [init?(persistentReference: Data)](./init%28persistentreference%29.md)
   Returns the identity object matching the persistent reference data.
+- [+ identityWithCSIdentity:](./identitywithcsidentity_.md)
+  Returns an identity object created from the specified Core Services Identity opaque object.
 
 
 ---

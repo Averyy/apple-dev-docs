@@ -1,0 +1,33 @@
+# translate(by:)
+
+**Framework**: Spatial  
+**Kind**: method  
+**Role**: Instance Method
+
+Translates the entity by the specified vector.
+
+**Availability**:
+- iOS 26.0+
+- iPadOS 26.0+
+- Mac Catalyst 26.0+
+- macOS 26.0+
+- tvOS 26.0+
+- visionOS 26.0+
+- watchOS 26.0+
+
+## Declaration
+
+```swift
+mutating func translate(by vector: Self.Vector)
+```
+
+Available when `Scalar` is `Float`.
+
+## Parameters
+
+- `vector`: The vector that defines that translation.
+
+
+---
+
+*[View on Apple Developer](https://developer.apple.com/documentation/spatial/translatable3dprotocol/translate(by:)-6jnsq)*

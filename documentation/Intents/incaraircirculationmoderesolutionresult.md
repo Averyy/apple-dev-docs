@@ -35,6 +35,10 @@ An [`INCarAirCirculationModeResolutionResult`](./incaraircirculationmoderesoluti
   Creates an object whose resolution involves the successful matching of the specified parameter.
 - [class func confirmationRequired(with: INCarAirCirculationMode) -> Self](./incaraircirculationmoderesolutionresult/confirmationrequired%28with%29.md)
   Creates an object whose resolution requires that the user must confirm the value before proceeding.
+- [+ successWithResolvedValue:](./incaraircirculationmoderesolutionresult/successwithresolvedvalue_.md)
+  Creates an object whose resolution involves the successful matching of the specified parameter.
+- [+ confirmationRequiredWithValueToConfirm:](./incaraircirculationmoderesolutionresult/confirmationrequiredwithvaluetoconfirm_.md)
+  Creates an object whose resolution requires that the user must confirm the value before proceeding.
 
 ## Relationships
 

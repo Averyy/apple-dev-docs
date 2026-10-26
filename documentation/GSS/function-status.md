@@ -116,6 +116,26 @@ Use the [`gss_display_status(_:_:_:_:_:_:)`](./gss_display_status%28_,_,_,_,_,_%
   A mask with a width that matches the supplementary information field.
 - [var GSS_C_SUPPLEMENTARY_OFFSET: Int32](./gss_c_supplementary_offset.md)
   The offset of the supplementary information field within the major status code.
+### Token Macros
+- [GSS_S_CONTINUE_NEEDED](./gss_s_continue_needed.md)
+  A request for continuation during context establishment.
+- [GSS_S_DUPLICATE_TOKEN](./gss_s_duplicate_token.md)
+  The detection of a duplicate per-message token.
+- [GSS_S_OLD_TOKEN](./gss_s_old_token.md)
+  The detection of a timed-out per-message token.
+- [GSS_S_UNSEQ_TOKEN](./gss_s_unseq_token.md)
+  The detection of a reordered (early) per-message token.
+- [GSS_S_GAP_TOKEN](./gss_s_gap_token.md)
+  The detection of a skipped predecessor token.
+### Extraction Macros
+- [GSS_ERROR](./gss_error.md)
+  A macro that masks the supplementary info out of a major status code, leaving both calling and routine error fields.
+- [GSS_CALLING_ERROR](./gss_calling_error.md)
+  A macro that masks out all but the calling error field from a major status code.
+- [GSS_ROUTINE_ERROR](./gss_routine_error.md)
+  A macro that masks out all but the routine error field from a major status code.
+- [GSS_SUPPLEMENTARY_INFO](./gss_supplementary_info.md)
+  A macro that masks out all but the supplementary information field from a major status code.
 
 ## See Also
 

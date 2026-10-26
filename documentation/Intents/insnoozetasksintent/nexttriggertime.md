@@ -41,6 +41,8 @@ var nextTriggerTime: INDateComponentsRange? { get }
   An array of tasks to snooze.
 - [var all: Bool?](./all-spsb.md)
   A Boolean value that indicates whether to snooze all of the tasks.
+- [all](./all-62ujw.md)
+  A Boolean value that indicates whether to snooze all of the tasks.
 
 
 ---

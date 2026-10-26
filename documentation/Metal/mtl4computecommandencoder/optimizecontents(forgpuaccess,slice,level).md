@@ -51,6 +51,8 @@ You typically run this command for:
   Encodes a command that modifies the contents of a texture to improve the performance of CPU accesses to its contents in a specific region.
 - [func optimizeContents(forGPUAccess: any MTLTexture)](./optimizecontents%28forgpuaccess%29.md)
   Encodes a command that modifies the contents of a texture to improve the performance of GPU accesses to its contents.
+- [- optimizeIndirectCommandBuffer:withRange:](./optimizeindirectcommandbuffer_withrange_.md)
+  Encode a command to attempt to improve the performance of a range of commands within an indirect command buffer.
 
 
 ---

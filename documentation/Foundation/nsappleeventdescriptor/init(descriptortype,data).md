@@ -60,6 +60,11 @@ An instance of `NSAppleEventDescriptor` with the specified type and data. Return
   Initializes a newly allocated instance as a descriptor with the specified descriptor type and data (from an arbitrary sequence of bytes and a length count).
 - [convenience init(eventClass: AEEventClass, eventID: AEEventID, targetDescriptor: NSAppleEventDescriptor?, returnID: AEReturnID, transactionID: AETransactionID)](./init%28eventclass,eventid,targetdescriptor,returnid,transactionid%29.md)
   Initializes a newly allocated instance as a descriptor for an Apple event, initialized with the specified values.
+- [+ descriptorWithDescriptorType:bytes:length:](./descriptorwithdescriptortype_bytes_length_.md)
+  Creates a descriptor initialized with the specified event type that stores the specified data (from a series of bytes).
+### Related Documentation
+- [+ descriptorWithDescriptorType:data:](./descriptorwithdescriptortype_data_.md)
+  Creates a descriptor initialized with the specified event type that stores the specified data (from an instance of `NSData`).
 
 
 ---

@@ -37,6 +37,12 @@ The data the `CopyPhonemesFromText` function stores in the `phonemes` parameter 
 - `text`: The text from which to extract phonemic data.
 - `phonemes`: On return, a `CFString` object that contains the extracted phonemic data. The caller is responsible for releasing this object.
 
+## See Also
+
+### Converting Text To Phonemes
+- [TextToPhonemes](./api-1552235-texttophonemes.md)
+  Converts a buffer of textual data into phonemic data.
+
 
 ---
 

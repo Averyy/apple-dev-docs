@@ -156,6 +156,16 @@ let snapshot = snapshotReference as NSDiffableDataSourceSnapshot<Int, UUID>
 - [NSCopying](../Foundation/nscopying.md)
 - [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
+## See Also
+
+### Data
+- [NSCollectionViewDataSource](./nscollectionviewdatasource.md)
+  A set of methods that a data source object implements to provide the information and view objects that a collection view requires to present content.
+- [NSCollectionViewDelegate](./nscollectionviewdelegate.md)
+  A set of methods that you use to manage the behavior of a collection view.
+- [NSCollectionViewDiffableDataSource](./nscollectionviewdiffabledatasourcereference.md)
+  The object you use to manage data and provide items for a collection view.
+
 
 ---
 

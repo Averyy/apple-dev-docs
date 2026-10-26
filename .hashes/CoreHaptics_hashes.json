@@ -5,6 +5,11 @@
       "file_path": "documentation/CoreHaptics/CoreHaptics.md",
       "hash": "9747959410286d2ba82336948b227e28a9c81c718d6612ff5c7fb020ed81ecf6"
     },
+    "https://developer.apple.com/documentation/corehaptics/ch_export": {
+      "etag": "\"a2b-65d55e11c79b3-df\"",
+      "file_path": "documentation/CoreHaptics/ch_export.md",
+      "hash": "ec6d15edc370defc3eb3a84c4de5912c88928d9d78101d2ae5954856c44372bc"
+    },
     "https://developer.apple.com/documentation/corehaptics/chhapticadvancedpatternplayer": {
       "etag": "\"75d3-65d55e11b314a-df\"",
       "file_path": "documentation/CoreHaptics/chhapticadvancedpatternplayer.md",
@@ -254,6 +259,11 @@
       "etag": "\"3a5e-65d55e11b314a-df\"",
       "file_path": "documentation/CoreHaptics/chhapticengine/init(audiosession).md",
       "hash": "49174fa17f25ec13eacdbb8ee22773db169888c535a73c4a707bb650c18c6438"
+    },
+    "https://developer.apple.com/documentation/corehaptics/chhapticengine/intendedspatialexperience-4hwkx": {
+      "etag": "\"15a3-65d55e11b314a-df\"",
+      "file_path": "documentation/CoreHaptics/chhapticengine/intendedspatialexperience-4hwkx.md",
+      "hash": "6d264db9600f8333e598e11df9fda7b6f95ebb059ddea836bd35e641a038c816"
     },
     "https://developer.apple.com/documentation/corehaptics/chhapticengine/intendedspatialexperience-55ca0": {
       "etag": "\"1b40-65d55e11b314a-df\"",
@@ -1100,6 +1110,11 @@
       "file_path": "documentation/CoreHaptics/CoreHaptics.md",
       "hash": "9747959410286d2ba82336948b227e28a9c81c718d6612ff5c7fb020ed81ecf6"
     },
+    "https://developer.apple.com/tutorials/data/documentation/corehaptics/ch_export.json": {
+      "etag": "\"a2b-65d55e11c79b3-df\"",
+      "file_path": "documentation/CoreHaptics/ch_export.md",
+      "hash": "ec6d15edc370defc3eb3a84c4de5912c88928d9d78101d2ae5954856c44372bc"
+    },
     "https://developer.apple.com/tutorials/data/documentation/corehaptics/chhapticadvancedpatternplayer.json": {
       "etag": "\"75d3-65d55e11b314a-df\"",
       "file_path": "documentation/CoreHaptics/chhapticadvancedpatternplayer.md",
@@ -1349,6 +1364,11 @@
       "etag": "\"3a5e-65d55e11b314a-df\"",
       "file_path": "documentation/CoreHaptics/chhapticengine/init(audiosession).md",
       "hash": "49174fa17f25ec13eacdbb8ee22773db169888c535a73c4a707bb650c18c6438"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/corehaptics/chhapticengine/intendedspatialexperience-4hwkx.json": {
+      "etag": "\"15a3-65d55e11b314a-df\"",
+      "file_path": "documentation/CoreHaptics/chhapticengine/intendedspatialexperience-4hwkx.md",
+      "hash": "6d264db9600f8333e598e11df9fda7b6f95ebb059ddea836bd35e641a038c816"
     },
     "https://developer.apple.com/tutorials/data/documentation/corehaptics/chhapticengine/intendedspatialexperience-55ca0.json": {
       "etag": "\"1b40-65d55e11b314a-df\"",
@@ -2193,8 +2213,8 @@
   },
   "metadata": {
     "render": {
-      "version": 1
+      "version": 2
     },
-    "total_pages": 438
+    "total_pages": 442
   }
 }

@@ -42,6 +42,8 @@ Before drawing text in a Core Graphics context, you must set the font in the cur
 ### Creating Font Objects
 - [init?(CGDataProvider)](./init%28_%29-9aour.md)
   Creates a font object from data supplied from a data provider.
+- [CGFontCreateWithPlatformFont](../cgfontcreatewithplatformfont.md)
+  Creates a font object from an Apple Type Services (ATS) font.
 
 
 ---

@@ -26,6 +26,11 @@ typedef enum CMFloatBitmapFlags : unsigned int {
 - [init(rawValue: UInt32)](./cmfloatbitmapflags/api-1463715-init.md)
 ### Instance Properties
 - [var rawValue: UInt32](./cmfloatbitmapflags/api-1462169-rawvalue.md)
+### Constants
+- [kCMFloatBitmapFlagsAlpha](./cmfloatbitmapflags/kcmfloatbitmapflagsalpha.md)
+- [kCMFloatBitmapFlagsAlphaPremul](./cmfloatbitmapflags/kcmfloatbitmapflagsalphapremul.md)
+- [kCMFloatBitmapFlagsNone](./cmfloatbitmapflags/kcmfloatbitmapflagsnone.md)
+- [kCMFloatBitmapFlagsRangeClipped](./cmfloatbitmapflags/kcmfloatbitmapflagsrangeclipped.md)
 
 ## Relationships
 

@@ -39,6 +39,9 @@ func drawRow(_ row: Int, clipRect: NSRect)
   Highlights the region of the table view in the specified rectangle.
 - [func drawBackground(inClipRect: NSRect)](./drawbackground%28incliprect%29.md)
   Draws the background of the table view in the clip rect specified by the rectangle.
+### Related Documentation
+- [- columnsInRect:](./columnsinrect_.md)
+  Returns a range of indexes for the table view’s columns that lie wholly or partially within the horizontal boundaries of the specified rectangle.
 
 
 ---

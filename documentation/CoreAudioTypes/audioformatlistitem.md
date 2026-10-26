@@ -67,6 +67,8 @@ This struct is used as output from the kAudioFormatProperty_FormatList property
   The canonical audio data sample type for input and output.
 - [typealias AudioUnitSampleType](./audiounitsampletype.md)
   The canonical audio data sample type for audio processing.
+- [AVAudioSessionErrorInsufficientPriority](./avaudiosessionerrorinsufficientpriority.md)
+  An error code that indicates the app isn’t allowed to set the audio category because it’s in use by another app.
 
 
 ---

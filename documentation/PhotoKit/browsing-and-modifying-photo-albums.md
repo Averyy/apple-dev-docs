@@ -30,13 +30,13 @@ If you build and run the project in Xcode, you may also add photos to the app in
 
 ##### List Albums and Built-in Collections
 
-When the app first launches, it fetches all of the user’s photo assets. All requests for asset data—single photos, albums, and user collections—go through PhotoKit’s shared [`PHPhotoLibrary`](https://developer.apple.com/documentation/photos/phphotolibrary) object, so the app registers the main view controller once its view loads:
+When the app first launches, it fetches all of the user’s photo assets. All requests for asset data—single photos, albums, and user collections—go through PhotoKit’s shared [`PHPhotoLibrary`](../Photos/phphotolibrary.md) object, so the app registers the main view controller once its view loads:
 
 ```swift
 PHPhotoLibrary.shared().register(self)
 ```
 
-To list all the user’s albums and collections, the app creates a [`PHFetchOptions`](https://developer.apple.com/documentation/photos/phfetchoptions) object and dispatches several fetch requests:
+To list all the user’s albums and collections, the app creates a [`PHFetchOptions`](../Photos/phfetchoptions.md) object and dispatches several fetch requests:
 
 ```swift
 let allPhotosOptions = PHFetchOptions()
@@ -46,7 +46,7 @@ smartAlbums = PHAssetCollection.fetchAssetCollections(with: .smartAlbum, subtype
 userCollections = PHCollectionList.fetchTopLevelUserCollections(with: nil)
 ```
 
-The resulting [`PHFetchResult`](https://developer.apple.com/documentation/photos/phfetchresult) informs the app about the structure of the user’s photo library, allowing the user interface to show the number of photos in each album.
+The resulting [`PHFetchResult`](../Photos/phfetchresult.md) informs the app about the structure of the user’s photo library, allowing the user interface to show the number of photos in each album.
 
 ##### Display Assets in a Thumbnail Grid
 
@@ -134,7 +134,7 @@ On tvOS, PhotoKit supports Live Photo playback:
 #endif
 ```
 
-The view controller supports playback by creating an [`AVPlayer`](../AVFoundation/avplayer.md) and layering it on top of the item once the [`PHImageManager`](https://developer.apple.com/documentation/photos/phimagemanager) fetches a video:
+The view controller supports playback by creating an [`AVPlayer`](../AVFoundation/avplayer.md) and layering it on top of the item once the [`PHImageManager`](../Photos/phimagemanager.md) fetches a video:
 
 ```swift
 // Request an AVPlayerItem for the displayed PHAsset.
@@ -181,7 +181,7 @@ if asset.canPerform(.content) {
 present(alertController, animated: true)
 ```
 
-Each option creates an edit request and prepares a [`PHContentEditingOutput`](https://developer.apple.com/documentation/photos/phcontenteditingoutput) to encapsulate edit results as data. A [`PHAssetChangeRequest`](https://developer.apple.com/documentation/photos/phassetchangerequest) object communicates the edit back to the user’s photo library.
+Each option creates an edit request and prepares a [`PHContentEditingOutput`](../Photos/phcontenteditingoutput.md) to encapsulate edit results as data. A [`PHAssetChangeRequest`](../Photos/phassetchangerequest.md) object communicates the edit back to the user’s photo library.
 
 ```swift
 DispatchQueue.global(qos: .userInitiated).async {
@@ -251,7 +251,7 @@ PHPhotoLibrary.shared().performChanges({
 
 ##### Delete Assets and Albums
 
-The user can delete an asset through the trash can button at the lower-right corner of `AssetViewController`. For removal from an album, PhotoBrowse wraps the deletion operation inside a [`PHAssetCollectionChangeRequest`](https://developer.apple.com/documentation/photos/phassetcollectionchangerequest) object. For  removal from the entire photo library, PhotoBrowse wraps the deletion operation inside a [`PHAssetChangeRequest`](https://developer.apple.com/documentation/photos/phassetchangerequest) object:
+The user can delete an asset through the trash can button at the lower-right corner of `AssetViewController`. For removal from an album, PhotoBrowse wraps the deletion operation inside a [`PHAssetCollectionChangeRequest`](../Photos/phassetcollectionchangerequest.md) object. For  removal from the entire photo library, PhotoBrowse wraps the deletion operation inside a [`PHAssetChangeRequest`](../Photos/phassetchangerequest.md) object:
 
 ```swift
 if assetCollection != nil {
@@ -270,7 +270,7 @@ if assetCollection != nil {
 
 ##### Favorite an Asset
 
-Users can favorite an asset by toggling the [`PHAsset`](https://developer.apple.com/documentation/photos/phasset) parameter [`isFavorite`](https://developer.apple.com/documentation/photos/phasset/isfavorite):
+Users can favorite an asset by toggling the [`PHAsset`](../Photos/phasset.md) parameter [`isFavorite`](../Photos/phasset/isfavorite.md):
 
 ```swift
 PHPhotoLibrary.shared().performChanges({

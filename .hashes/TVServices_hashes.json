@@ -550,6 +550,11 @@
       "file_path": "documentation/TVServices/tvtopshelfitemcollection/items.md",
       "hash": "0a3ea37634655ada101b99676926b0ac2fdd93e9118f3685fc38c896dbf0258d"
     },
+    "https://developer.apple.com/documentation/tvservices/tvtopshelfitemsdidchangenotification": {
+      "etag": "\"11c7-65d5606f926bb-df\"",
+      "file_path": "documentation/TVServices/tvtopshelfitemsdidchangenotification.md",
+      "hash": "c7ab4a342ee54e418ca1c836d8f5dc7033c4f54d1c568733a2548d7151dc88c4"
+    },
     "https://developer.apple.com/documentation/tvservices/tvtopshelfnamedattribute": {
       "etag": "\"4c5b-65d5606f763d1-df\"",
       "file_path": "documentation/TVServices/tvtopshelfnamedattribute.md",
@@ -1255,6 +1260,11 @@
       "file_path": "documentation/TVServices/tvtopshelfitemcollection/items.md",
       "hash": "0a3ea37634655ada101b99676926b0ac2fdd93e9118f3685fc38c896dbf0258d"
     },
+    "https://developer.apple.com/tutorials/data/documentation/tvservices/tvtopshelfitemsdidchangenotification.json": {
+      "etag": "\"11c7-65d5606f926bb-df\"",
+      "file_path": "documentation/TVServices/tvtopshelfitemsdidchangenotification.md",
+      "hash": "c7ab4a342ee54e418ca1c836d8f5dc7033c4f54d1c568733a2548d7151dc88c4"
+    },
     "https://developer.apple.com/tutorials/data/documentation/tvservices/tvtopshelfnamedattribute.json": {
       "etag": "\"4c5b-65d5606f763d1-df\"",
       "file_path": "documentation/TVServices/tvtopshelfnamedattribute.md",
@@ -1413,8 +1423,8 @@
   },
   "metadata": {
     "render": {
-      "version": 1
+      "version": 2
     },
-    "total_pages": 282
+    "total_pages": 284
   }
 }

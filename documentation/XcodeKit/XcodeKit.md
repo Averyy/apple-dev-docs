@@ -37,6 +37,9 @@ Using the XcodeKit framework, you can customize Xcode with source editor extensi
 ### XcodeKit Constants
 - [XcodeKit Version Constants](./xcodekit-version-constants.md)
   Determine the version of XcodeKit available in an instance of Xcode.
+### Variables
+- [XCSourceEditorCommandSystemSymbolNameKey](./xcsourceeditorcommanddefinitionkey/systemsymbolnamekey.md)
+  An SF Symbol from the system associated with the command.
 
 
 ---

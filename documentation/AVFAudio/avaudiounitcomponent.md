@@ -77,6 +77,8 @@ Details can include information such as type, subtype, manufacturer, and locatio
   An array of tags the user creates.
 - [AVAudioUnitComponent.TagsDidChangeMessage](./avaudiounitcomponent/tagsdidchangemessage.md)
   Type-safe notification message for audio unit component tag changes.
+- [AVAudioUnitComponentTagsDidChangeNotification](./avaudiounitcomponenttagsdidchangenotification.md)
+  A notification that indicates when component tags change.
 ### Identifying manufacturers
 - [let AVAudioUnitManufacturerNameApple: String](./avaudiounitmanufacturernameapple.md)
   The audio unit manufacturer is Apple.

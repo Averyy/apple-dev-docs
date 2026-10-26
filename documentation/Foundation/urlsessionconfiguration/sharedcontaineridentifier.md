@@ -38,6 +38,8 @@ For information about app extensions, see [App Extension Programming Guide](http
 ### Related Documentation
 - [var NSURLErrorBackgroundSessionRequiresSharedContainer: Int](../nsurlerrorbackgroundsessionrequiressharedcontainer-swift.var.md)
   The shared container identifier of the URL session configuration is needed but hasn’t been set.
+- [NSURLErrorBackgroundSessionRequiresSharedContainer](../nsurlerrorbackgroundsessionrequiressharedcontainer-c.enum.case.md)
+  The shared container identifier of the URL session configuration is needed but hasn’t been set.
 ### Setting general properties
 - [var identifier: String?](./identifier.md)
   The background session identifier of the configuration object.

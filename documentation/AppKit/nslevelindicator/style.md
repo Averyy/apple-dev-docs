@@ -32,6 +32,15 @@ enum NSLevelIndicatorStyle : NSUInteger;
   A style that indicates a rank, such as a star ranking display.
 ### Initializers
 - [init?(rawValue: UInt)](./style/init%28rawvalue%29.md)
+### Deprecated
+- [NSRelevancyLevelIndicatorStyle](../nsrelevancylevelindicatorstyle.md)
+  A style that indicates the relevancy of an item, such as a search result.
+- [NSRatingLevelIndicatorStyle](../nsratinglevelindicatorstyle.md)
+  A style that indicates a rank, such as a star ranking display.
+- [NSDiscreteCapacityLevelIndicatorStyle](../nsdiscretecapacitylevelindicatorstyle.md)
+  A style that displays discrete segments that indicate the capacity of something, such as an audio level.
+- [NSContinuousCapacityLevelIndicatorStyle](../nscontinuouscapacitylevelindicatorstyle.md)
+  A style that indicates the capacity of something, such as how much data is on a hard disk.
 
 ## Relationships
 

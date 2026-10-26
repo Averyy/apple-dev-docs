@@ -45,6 +45,10 @@ When formatting the time interval, the time text provider drops the morning/even
   Creates and returns a text provider with the specified start and end dates.
 - [convenience init(start: Date, end: Date, timeZone: TimeZone?)](./clktimeintervaltextprovider/init%28start,end,timezone%29.md)
   Creates and returns a text provider with the specified dates and time zone information.
+- [- initWithStartDate:endDate:](./clktimeintervaltextprovider/initwithstartdate_enddate_.md)
+  Creates and returns a text provider with the specified start and end dates.
+- [- initWithStartDate:endDate:timeZone:](./clktimeintervaltextprovider/initwithstartdate_enddate_timezone_.md)
+  Creates and returns a text provider with the specified dates and time zone information.
 ### Getting the Time Information
 - [var startDate: Date](./clktimeintervaltextprovider/startdate.md)
   The start date for the time interval.

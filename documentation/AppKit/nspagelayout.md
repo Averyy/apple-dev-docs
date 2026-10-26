@@ -50,6 +50,17 @@ For design guidance, see [Human Interface Guidelines](https://developer.apple.co
 ### Deprecated
 - [func beginSheet(with: NSPrintInfo, modalFor: NSWindow, delegate: Any?, didEnd: Selector?, contextInfo: UnsafeMutableRawPointer?)](./nspagelayout/beginsheet%28with,modalfor,delegate,didend,contextinfo%29.md)
   Presents a page setup sheet for the specified print info object, document-modal relative to the specified window.
+- [- accessoryView](./nspagelayout/accessoryview.md)
+  Returns the page layout panel’s accessory view.
+- [- setAccessoryView:](./nspagelayout/setaccessoryview_.md)
+  Adds a view object to the page layout panel.
+- [- readPrintInfo](./nspagelayout/readprintinfo.md)
+  Sets the page layout’s values to those stored in the print info object used when the page layout panel is run.
+- [- writePrintInfo](./nspagelayout/writeprintinfo.md)
+  Writes the page layout’s values to the print info object used when the page layout panel is run.
+### Creating the page layout object
+- [+ pageLayout](./nspagelayout/pagelayout.md)
+  Returns a newly created page layout object.
 
 ## Relationships
 

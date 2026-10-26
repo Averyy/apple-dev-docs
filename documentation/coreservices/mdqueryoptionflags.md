@@ -29,6 +29,10 @@ typedef enum MDQueryOptionFlags : unsigned int {
   Specifies that a query should block during the initial gather phase. The query’s run loop will run in the default mode. If this option is not specified the query function returns immediately after starting the query asynchronously.
 - [var kMDQueryWantsUpdates: MDQueryOptionFlags](./kmdquerywantsupdates.md)
 - [var kMDQueryAllowFSTranslation: MDQueryOptionFlags](./kmdqueryallowfstranslation.md)
+- [kMDQuerySynchronous](./mdqueryoptionflags/kmdquerysynchronous.md)
+  Specifies that a query should block during the initial gather phase. The query’s run loop will run in the default mode. If this option is not specified the query function returns immediately after starting the query asynchronously.
+- [kMDQueryWantsUpdates](./mdqueryoptionflags/kmdquerywantsupdates.md)
+- [kMDQueryAllowFSTranslation](./mdqueryoptionflags/kmdqueryallowfstranslation.md)
 ### Initializers
 - [init(UInt32)](./mdqueryoptionflags/api-1443626-init.md)
 - [init(rawValue: UInt32)](./mdqueryoptionflags/api-1444315-init.md)

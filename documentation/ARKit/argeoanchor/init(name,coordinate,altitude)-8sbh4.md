@@ -33,6 +33,12 @@ init(name: String, coordinate: CLLocationCoordinate2D, altitude: CLLocationDista
   Initializes a location anchor with the given coordinate and altitude.
 - [convenience init(name: String, coordinate: CLLocationCoordinate2D, altitude: CLLocationDistance?)](./init%28name,coordinate,altitude%29-csze.md)
   Initializes a named location anchor with the given coordinates and altitude.
+- [- initWithCoordinate:](./initwithcoordinate_.md)
+  Initializes a new location anchor with the given coordinates.
+- [- initWithCoordinate:altitude:](./initwithcoordinate_altitude_.md)
+  Initializes a location anchor with the given coordinate and altitude.
+- [- initWithName:coordinate:](./initwithname_coordinate_.md)
+  Initializes a named location anchor with the given coordinates.
 
 
 ---

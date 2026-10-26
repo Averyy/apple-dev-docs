@@ -64,6 +64,8 @@ protocol GCDirectionPadElement : GCPhysicalInputElement
   The common properties for an element that represents an absolute or relative input value along an axis.
 - [protocol GCSwitchElement](./gcswitchelement.md)
   The common properties for an element that represents a switch.
+- [GCPhysicalInputElementCollection](./gcphysicalinputelementcollection-c.class.md)
+  A collection of physical input elements.
 
 
 ---

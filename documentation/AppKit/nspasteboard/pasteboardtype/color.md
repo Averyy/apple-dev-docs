@@ -56,6 +56,8 @@ In macOS 10.6 and later, use [`color`](./color.md) (and you read and write colo
   Sound data.
 - [static let string: NSPasteboard.PasteboardType](./string.md)
   String data.
+- [NSPasteboardTypeTabularText](./tabulartext.md)
+  Tab-separated fields of text.
 
 
 ---

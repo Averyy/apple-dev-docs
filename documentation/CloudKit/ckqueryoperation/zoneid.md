@@ -47,6 +47,8 @@ When you create an operation using the [`init(cursor:)`](./init%28cursor%29.md) 
   A constant value that represents the maximum number of results CloudKit retrieves.
 - [var desiredKeys: [CKRecord.FieldKey]?](./desiredkeys-7qrse.md)
   The fields of the records to fetch.
+- [desiredKeys](./desiredkeys-4a6vy.md)
+  The fields of the records to fetch.
 
 
 ---

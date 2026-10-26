@@ -43,6 +43,8 @@ After creating a scene-configuration object, supply values for the [`sceneClass`
   Creates a scene-configuration object with the specified name.
 - [convenience init()](./init%28%29.md)
   Creates a scene-configuration object.
+- [+ configurationWithName:sessionRole:](./configurationwithname_sessionrole_.md)
+  Returns a scene-configuration object with the specified role and app-specific name.
 
 
 ---

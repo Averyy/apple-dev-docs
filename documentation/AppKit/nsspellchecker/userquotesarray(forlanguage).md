@@ -54,6 +54,8 @@ An array of quote replacements used by the [`quotes`](./optionkey/quotes.md) key
   Adds the word to the spell checker dictionary.
 - [var userReplacementsDictionary: [String : String]](./userreplacementsdictionary.md)
   Returns the dictionary used when replacing words.
+- [- forgetWord:](./forgetword_.md)
+  Remove this word from the spelling dictionary.
 
 
 ---

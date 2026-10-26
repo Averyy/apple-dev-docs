@@ -34,6 +34,8 @@ A CFArray of CFString attribute names, or `NULL` on failure.
   Returns the value of the specified attribute in the metadata item.
 - [func MDItemCopyAttributes(MDItem!, CFArray!) -> CFDictionary!](./api-1426980-mditemcopyattributes.md)
   Returns the values of the specified attributes in the metadata item.
+- [MDItemCopyAttributeList](./api-1427028-mditemcopyattributelist.md)
+  Returns the values of the specified attributes in the metadata item.
 
 
 ---

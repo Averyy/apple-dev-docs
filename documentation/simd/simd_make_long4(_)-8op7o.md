@@ -31,6 +31,8 @@ static simd_long4 simd_make_long4(simd_long4 other);
   Returns a new vector from the specified two-element vector, and other elements undefined.
 - [func simd_make_long4_undef(simd_long3) -> simd_long4](./simd_make_long4_undef%28_%29-345km.md)
   Returns a new vector from the specified three-element vector, and other elements undefined.
+- [vector4](./vector4-5mcxh.md)
+  Returns a new vector from the specified vectors.
 
 
 ---

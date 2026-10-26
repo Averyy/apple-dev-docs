@@ -52,6 +52,8 @@ If your app extension can’t make this determination by itself, it tells Messag
   An error type that indicates problems with network requests and responses related to IdentityLookup APIs.
 - [let ILMessageFilterErrorDomain: String](./ilmessagefiltererrordomain.md)
   The error domain for errors associated with the IdentityLookup APIs.
+- [ILMessageFilterError](./ilmessagefiltererror-swift.struct/code.md)
+  IdentityLookup error codes.
 
 
 ---

@@ -37,6 +37,10 @@ func setVisibleFunctionTable(_ visibleFunctionTable: (any MTLVisibleFunctionTabl
   Binds multiple visible function tables to the buffer argument table, allowing you to call their functions on the GPU.
 - [func setIntersectionFunctionTables([(any MTLIntersectionFunctionTable)?], bufferRange: Range<Int>)](./setintersectionfunctiontables%28_,bufferrange%29.md)
   Binds multiple intersection function tables to the buffer argument table, allowing you to call their functions on the GPU.
+- [- setVisibleFunctionTables:withBufferRange:](./setvisiblefunctiontables_withbufferrange_.md)
+  Binds multiple visible function tables to the buffer argument table, allowing you to call their functions on the GPU.
+- [- setIntersectionFunctionTables:withBufferRange:](./setintersectionfunctiontables_withbufferrange_.md)
+  Binds multiple intersection function tables to the buffer argument table, allowing you to call their functions on the GPU.
 
 
 ---

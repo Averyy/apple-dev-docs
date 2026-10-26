@@ -44,6 +44,8 @@ This method is a designated initializer of `NSSet`.
   Initializes a newly allocated set and adds to it objects from another given set.
 - [convenience init(set: Set<AnyHashable>, copyItems: Bool)](./init%28set,copyitems%29.md)
   Initializes a newly allocated set and adds to it members of another given set.
+- [- initWithObjects:](./initwithobjects_.md)
+  Initializes a newly allocated set with members taken from the specified list of objects.
 
 
 ---

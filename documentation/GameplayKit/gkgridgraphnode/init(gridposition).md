@@ -36,6 +36,12 @@ For more information, see [GameplayKit Programming Guide](https://developer.appl
 
 - `gridPosition`: The position for the node on a discrete integer grid.
 
+## See Also
+
+### Creating a Graph Node
+- [+ nodeWithGridPosition:](./nodewithgridposition_.md)
+  Creates a graph node with the specified position on a grid.
+
 
 ---
 

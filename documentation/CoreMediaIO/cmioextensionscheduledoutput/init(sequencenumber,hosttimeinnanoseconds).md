@@ -25,6 +25,12 @@ init(sequenceNumber: UInt64, hostTimeInNanoseconds: UInt64)
 - `sequenceNumber`: The buffer sequence number that was output.
 - `hostTimeInNanoseconds`: The host time in nanoseconds when the buffer was output.
 
+## See Also
+
+### Creating a Scheduled Output
+- [+ scheduledOutputWithSequenceNumber:hostTimeInNanoseconds:](./scheduledoutputwithsequencenumber_hosttimeinnanoseconds_.md)
+  Returns a new scheduled output object.
+
 
 ---
 

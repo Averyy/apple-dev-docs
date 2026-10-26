@@ -71,6 +71,10 @@ To support appearance customization, a class must conform to the [`UIAppearanceC
   Returns the appearance proxy for the object when it’s contained in the hierarchy the specified classes describe.
 - [static func appearance(for: UITraitCollection, whenContainedInInstancesOf: [any UIAppearanceContainer.Type]) -> Self](./uiappearance/appearance%28for,whencontainedininstancesof%29.md)
   Returns the appearance proxy for the object when it’s contained in the hierarchy the specified classes describe and has the specified trait collection.
+- [+ appearanceWhenContainedIn:](./uiappearance/appearancewhencontainedin_.md)
+  Returns the appearance proxy for object when it’s contained in the hierarchy the specified classes describe.
+- [+ appearanceForTraitCollection:whenContainedIn:](./uiappearance/appearancefortraitcollection_whencontainedin_.md)
+  Returns the appearance proxy for the object when it’s contained in the hierarchy the specified classes describe and has the specified trait collection.
 
 ## Relationships
 

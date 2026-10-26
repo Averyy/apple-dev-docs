@@ -56,6 +56,9 @@ This protocol supports basic transport operations including start, stop, and pau
   The current playback rate for the player.
 - [var currentPlaybackTime: TimeInterval](./mpmediaplayback/currentplaybacktime.md)
   The current position of the playhead.
+### Notifications
+- [MPMediaPlaybackIsPreparedToPlayDidChangeNotification](./mpmediaplaybackispreparedtoplaydidchangenotification.md)
+  Indicates that the prepared to play status of the media player has changed.
 
 ## Relationships
 

@@ -34,6 +34,8 @@ After this method is called, the connection makes no further delegate method cal
 ### Related Documentation
 - [init?(request: URLRequest, delegate: Any?)](./init%28request,delegate%29.md)
   Returns an initialized URL connection and begins to load the data for the URL request.
+- [+ connectionWithRequest:delegate:](./connectionwithrequest_delegate_.md)
+  Creates and returns an initialized URL connection and begins to load the data for the URL request.
 
 
 ---

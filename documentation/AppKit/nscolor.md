@@ -174,6 +174,18 @@ For design guidance, see Human Interface Guidelines > [Color](https://developer.
 - [class var quinaryLabelColor: NSColor](./nscolor/quinarylabelcolor.md)
 ### Default Implementations
 - [NSColor Implementations](./nscolor/nscolor-implementations.md)
+### Getting the standard grayscale colors
+- [NSWhite](./nswhite.md)
+  A constant that specifies the white shade in the 2-bit deep grayscale color space.
+- [NSLightGray](./nslightgray.md)
+  A constant that specifies the light gray shade in the 2-bit deep grayscale color space.
+- [NSDarkGray](./nsdarkgray.md)
+  A constant that specifies the dark gray shade in the 2-bit deep grayscale color space.
+- [NSBlack](./nsblack.md)
+  A constant that specifies the black shade in the 2-bit deep grayscale color space.
+### Supporting old versions of AppKit
+- [NSAppKitVersionNumberWithPatternColorLeakFix](./nsappkitversionnumberwithpatterncolorleakfix.md)
+  The specific version of the AppKit framework from OS X 10.1 that correctly autoreleases color objects.
 
 ## Relationships
 

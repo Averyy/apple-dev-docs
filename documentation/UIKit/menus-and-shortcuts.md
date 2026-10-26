@@ -79,6 +79,8 @@ Simplify interactions with your app using menu systems, contextual menus, Home S
   Constants that describe the method to use when searching text for words that match a string.
 - [UIFindSession.SearchResultDisplayStyle](./uifindsession/searchresultdisplaystyle-swift.enum.md)
   Constants that describe the results summary the find panel UI includes.
+- [UITextSearching](./uitextsearching-53wjq.md)
+  The methods you use on a find session’s searchable objects to perform search operations and decorate the found text results.
 ### Home Screen quick actions
 - [Add Home Screen quick actions](./add-home-screen-quick-actions.md)
   Expose commonly used functionality with static or dynamic 3D Touch Home Screen quick actions.

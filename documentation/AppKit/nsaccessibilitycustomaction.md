@@ -62,6 +62,8 @@ After creating an instance of this class, add it to the [`accessibilityCustomAct
   Returns the custom actions of the current accessibility element.
 - [func setAccessibilityCustomActions([NSAccessibilityCustomAction]?)](./nsaccessibilityprotocol/setaccessibilitycustomactions%28_%29.md)
   Sets the custom actions of the current accessibility element.
+- [accessibilityCustomActions](./nsaccessibility-c.protocol/accessibilitycustomactions.md)
+  The custom actions of the current accessibility element.
 
 
 ---

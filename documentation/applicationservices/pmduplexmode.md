@@ -26,6 +26,10 @@ typedef UInt32 PMDuplexMode;
 - [var kPMDuplexNoTumble: Int](./kpmduplexnotumble.md)
 - [var kPMDuplexTumble: Int](./kpmduplextumble.md)
 - [var kPMSimplexTumble: Int](./kpmsimplextumble.md)
+- [kPMDuplexNone](./api-1506751-anonymous/kpmduplexnone.md)
+- [kPMDuplexNoTumble](./api-1506751-anonymous/kpmduplexnotumble.md)
+- [kPMDuplexTumble](./api-1506751-anonymous/kpmduplextumble.md)
+- [kPMSimplexTumble](./api-1506751-anonymous/kpmsimplextumble.md)
 
 
 ---

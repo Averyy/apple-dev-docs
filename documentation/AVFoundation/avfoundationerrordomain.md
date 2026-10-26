@@ -30,6 +30,8 @@ extern NSErrorDomain const AVFoundationErrorDomain;
 ### Errors
 - [struct AVError](./averror-swift.struct.md)
   A structure that defines the errors that framework operations can generate.
+- [AVError](./averror-swift.struct/code.md)
+  An enumeration that defines the errors that framework operations can generate.
 
 
 ---

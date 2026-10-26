@@ -35,6 +35,9 @@ Do not include the accessibility element’s type in the label (for example, wri
 ### Supporting Accessibility
 - [func accessibilityPerformPress() -> Bool](./accessibilityperformpress%28%29.md)
   Simulates clicking the button.
+### Related Documentation
+- [accessibilityLabel](../nsaccessibility-c.protocol/accessibilitylabel.md)
+  A short description of the accessibility element.
 
 
 ---

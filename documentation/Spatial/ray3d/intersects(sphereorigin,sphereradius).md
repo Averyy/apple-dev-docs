@@ -36,6 +36,14 @@ static bool SPRay3DIntersectsSphere(SPRay3D ray, SPPoint3D sphereOrigin, double 
   A Boolean value that indicates whether all of the values of the ray are zero.
 - [func intersects(Rect3D) -> Bool](./intersects%28_%29.md)
   Returns a Boolean value that indicates whether a ray intersects a rectangle.
+- [SPRay3DIsFinite](../spray3disfinite.md)
+  A Boolean value that indicates whether all of the values of the ray are finite.
+- [SPRay3DIsNaN](../spray3disnan.md)
+  A Boolean value that indicates whether the ray contains any NaN values.
+- [SPRay3DIsZero](../spray3diszero.md)
+  A Boolean value that indicates whether all of the values of the ray are zero.
+- [SPRay3DIntersectsRect](../spray3dintersectsrect.md)
+  Returns a Boolean value that indicates whether a ray intersects a rectangle.
 
 
 ---

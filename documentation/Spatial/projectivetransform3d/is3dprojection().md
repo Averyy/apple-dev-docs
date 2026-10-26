@@ -34,6 +34,12 @@ static bool SPProjectiveTransform3DIs3DProjection(SPProjectiveTransform3D transf
   A Boolean value that indicates whether the transform is affine.
 - [var isInvertible: Bool](./isinvertible.md)
   Returns a Boolean value that indicates whether the transform is invertible.
+- [SPProjectiveTransform3DIsUniformOverDimensions](../spprojectivetransform3disuniformoverdimensions.md)
+  Returns a Boolean value that indicates whether the transform scales equally over the specified dimensions.
+- [SPProjectiveTransform3DIsValid](../spprojectivetransform3disvalid.md)
+  A Boolean value that indicates whether the transform is a valid transform.
+- [SPProjectiveTransform3DInvalid](../spprojectivetransform3dinvalid.md)
+  The null transform that represents an invalid value.
 
 
 ---

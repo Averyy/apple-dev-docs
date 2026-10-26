@@ -31,6 +31,10 @@ var width: CGFloat { get set }
   The configuration of the custom tool item.
 - [PKToolPickerCustomItem.Configuration](./configuration-swift.struct.md)
   A configuration that specifies the appearance and behavior of a custom tool item and its contents.
+- [configuration](./configuration-v7e5.md)
+  The configuration of the custom tool item.
+- [PKToolPickerCustomItemConfiguration](../pktoolpickercustomitemconfiguration.md)
+  A configuration that specifies the appearance and behavior of a custom tool item and its contents.
 
 
 ---

@@ -39,6 +39,8 @@ A blocked pass isn’t accepted at a transit terminal.
   A Boolean value that indicates whether the transit pass has tapped in at a station and has not tapped out.
 - [var isBlocked: Bool](./isblocked.md)
   A Boolean value that indicates the pass issuer disabled the pass.
+- [blocked](./blocked.md)
+  A Boolean value that indicates the pass issuer disabled the pass.
 
 
 ---

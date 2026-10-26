@@ -33,6 +33,8 @@ The functions in the `SCPreferencesSetSpecific` programming interface allow an a
 - [SystemConfiguration Constants](./systemconfiguration-constants.md)
 - [SystemConfiguration Functions](./systemconfiguration-functions.md)
 - [SystemConfiguration Data Types](./systemconfiguration-data-types.md)
+- [DHCPClientPreferences](./dhcpclientpreferences.md)
+- [SCDynamicStoreCopyDHCPInfo](./scdynamicstorecopydhcpinfo-apicollection.md)
 
 
 ---

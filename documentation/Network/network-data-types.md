@@ -149,6 +149,8 @@
   A WebSocket handshake reponse sent from a server to a client.
 - [typealias nw_ws_subprotocol_enumerator_t](./nw_ws_subprotocol_enumerator_t.md)
   A block that enumerates the supported subprotocols in a WebSocket client request.
+- [nw_ethernet_channel_state_t](./nw_ethernet_channel_state_t.md)
+  States indicating whether an Ethernet channel is able to send and receive frames.
 
 ## See Also
 
@@ -157,6 +159,8 @@
   Access Network framework constants used in C.
 - [Network Functions](./network-functions.md)
   Access Network framework functions used in C.
+- [Network Enumerations](./network-enumerations.md)
+- [Network Macros](./network-macros.md)
 
 
 ---

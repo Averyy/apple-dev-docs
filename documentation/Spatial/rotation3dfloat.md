@@ -63,6 +63,8 @@ typedef union { ... } SPRotation3DFloat;
 - [var isIdentity: Bool](./rotation3dfloat/isidentity.md)
 - [var quaternion: simd_quatf](./rotation3dfloat/quaternion.md)
 - [var vector: simd_float4](./rotation3dfloat/vector.md)
+- [vector](./sprotation3dfloat/vector.md)
+  The underlying vector of the quaternion.
 ### Instance Methods
 - [func eulerAngles(order: __SPEulerAngleOrder) -> EulerAnglesFloat](./rotation3dfloat/eulerangles%28order%29.md)
 - [func isApproximatelyEqual(to: Rotation3DFloat, tolerance: Float) -> Bool](./rotation3dfloat/isapproximatelyequal%28to,tolerance%29.md)

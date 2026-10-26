@@ -19,6 +19,8 @@ Display custom data in rows and columns.
   A set of optional methods you implement in a table view delegate to customize the behavior of the table view.
 - [class NSTableViewDiffableDataSource](./nstableviewdiffabledatasource-c5gl.md)
   The object you use to manage data and provide items for a table view.
+- [NSTableViewDiffableDataSource](./nstableviewdiffabledatasourcereference.md)
+  The object you use to manage data and provide items for a table view.
 ### Rows and Columns
 - [class NSTableHeaderView](./nstableheaderview.md)
   An object that draws headers over a table view’s columns and handles mouse events in those headers.

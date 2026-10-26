@@ -50,6 +50,12 @@ var mediaSearch: INMediaSearch? { get }
   The queue location for a media item during playback.
 - [enum INPlaybackQueueLocation](../inplaybackqueuelocation.md)
   Constants that describe the playback queue location for a media item.
+- [playShuffled](./playshuffled-93hn1.md)
+  A Boolean value that indicates whether the media plays in a shuffled order.
+- [resumePlayback](./resumeplayback-9zfyp.md)
+  The resume playback setting at the time the user plays the media item.
+- [playbackSpeed](./playbackspeed-6ngbq.md)
+  The playback speed for a media item.
 
 
 ---

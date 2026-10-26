@@ -34,6 +34,8 @@ This class provides a [CVPixelBufferPool](../CoreVideo/cvpixelbufferpool-77o.md)
 ### Creating an adaptor
 - [init(assetWriterInput: AVAssetWriterInput, sourcePixelBufferAttributes: [String : Any]?)](./avassetwriterinputtaggedpixelbuffergroupadaptor/init%28assetwriterinput,sourcepixelbufferattributes%29.md)
   Creates an object that appends tagged buffer groups to an asset writer input.
+- [+ assetWriterInputTaggedPixelBufferGroupAdaptorWithAssetWriterInput:sourcePixelBufferAttributes:](./avassetwriterinputtaggedpixelbuffergroupadaptor/assetwriterinputtaggedpixelbuffergroupadaptorwithassetwriterinput_sourcepixelbufferattributes_.md)
+  Returns a new object that appends tagged buffer groups to an asset writer input.
 ### Configuring the buffer pool
 - [var sourcePixelBufferAttributes: [String : any Sendable]?](./avassetwriterinputtaggedpixelbuffergroupadaptor/sourcepixelbufferattributes.md)
   The attributes of buffers that the adaptor’s pixel buffer pool vends.

@@ -57,6 +57,8 @@ A protection space defines a series of matching constraints that determine which
   A Boolean value that indicates whether the credentials for the protection space can be sent securely.
 - [var serverTrust: SecTrust?](./urlprotectionspace/servertrust.md)
   A representation of the server’s SSL transaction state.
+- [isProxy](./nsurlprotectionspace/isproxy.md)
+  A Boolean value that indicates whether the receiver represents a proxy server.
 ### Identifying protection space properties
 - [NSURLProtectionSpace protocol types](./nsurlprotectionspace-protocol-types.md)
   These constants describe the supported protocols for a protection space, as returned by [`protocol`](./urlprotectionspace/protocol.md).

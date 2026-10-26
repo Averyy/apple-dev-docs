@@ -45,6 +45,12 @@ This function and related “AEBuild” routines provide a very simple translati
   Allows you to encapsulate calls to `AEBuildAppleEvent` in a wrapper routine.
 - [func vAEBuildDesc(UnsafeMutablePointer<AEDesc>!, UnsafeMutablePointer<AEBuildError>!, UnsafePointer<CChar>!, CVaListPointer) -> OSStatus](./api-1446775-vaebuilddesc.md)
   Allows you to encapsulate calls to `AEBuildDesc` in your own wrapper routines.
+- [AEBuildAppleEvent](./api-1573757-aebuildappleevent.md)
+  Constructs an entire Apple event in a single call.
+- [AEBuildDesc](./api-1573758-aebuilddesc.md)
+  Provides a facility for compiling AEBuild descriptor strings into Apple event descriptors (`AEDesc`).
+- [AEBuildParameters](./api-1573755-aebuildparameters.md)
+  Adds additional parameters or attributes to an existing Apple event.
 
 
 ---

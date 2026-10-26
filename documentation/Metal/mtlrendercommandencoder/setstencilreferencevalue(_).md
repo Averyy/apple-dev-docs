@@ -48,6 +48,8 @@ The render pass’s default reference value for the front and back stencil compa
   Configures the range for depth bounds testing.
 - [func setStencilReferenceValues(front: UInt32, back: UInt32)](./setstencilreferencevalues%28front,back%29.md)
   Configures different comparison values for front- and back-facing primitives.
+- [- setDepthTestMinBound:maxBound:](./setdepthtestminbound_maxbound_.md)
+  Configures the minimum and maximum bounds for depth bounds testing.
 
 
 ---

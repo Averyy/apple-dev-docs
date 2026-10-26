@@ -30,6 +30,8 @@ It contains the interfaces that the [`MERAWProcessor`](./merawprocessor.md) uses
   A dictionary that contains the attributes Video Toolbox uses to create a pixel buffer for the video RAW processor.
 - [func makePixelBuffer() throws -> CVPixelBuffer](./merawprocessorpixelbuffermanager/makepixelbuffer%28%29.md)
   Generates a pixel buffer using the session’s pixel buffer pool.
+- [pixelBufferAttributes](./merawprocessorpixelbuffermanager/pixelbufferattributes-2cki6.md)
+  A dictionary that contains the attributes Video Toolbox uses to create a pixel buffer for the video RAW processor.
 
 ## Relationships
 

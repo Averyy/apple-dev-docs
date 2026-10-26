@@ -10,6 +10,8 @@ Default values for a display ID.
 ### Constants
 - [var kCGNullDirectDisplay: CGDirectDisplayID](./kcgnulldirectdisplay.md)
   A value that will never correspond to actual hardware.
+- [kCGDirectMainDisplay](./kcgdirectmaindisplay.md)
+  The current main display ID.
 
 ## See Also
 

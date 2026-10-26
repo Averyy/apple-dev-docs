@@ -70,6 +70,8 @@ Creating a composition with this method sets values for the following properties
   Returns a new video composition that’s configured to present the video tracks of the specified asset.
 - [init(propertiesOf: AVAsset)](./init%28propertiesof%29.md)
   Creates a video composition object configured to present the video tracks of the specified asset.
+- [+ videoCompositionWithVideoComposition:](./videocompositionwithvideocomposition_.md)
+  Pass-through initializer, for internal use in AVFoundation only
 
 
 ---

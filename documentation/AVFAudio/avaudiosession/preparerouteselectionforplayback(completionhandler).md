@@ -56,6 +56,8 @@ session.prepareRouteSelectionForPlayback { shouldStartPlayback, routeSelection i
 ### Preparing for long-form video playback
 - [AVAudioSession.RouteSelection](./routeselection.md)
   Constants used to define the active route selection.
+- [AVAudioSessionRouteSelection](../../AVKit/avaudiosessionrouteselection.md)
+  Constants that indicate the audio route selection.
 
 
 ---

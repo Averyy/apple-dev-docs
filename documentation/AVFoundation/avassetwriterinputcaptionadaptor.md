@@ -29,6 +29,8 @@ class AVAssetWriterInputCaptionAdaptor
 ### Creating a caption adaptor
 - [init(assetWriterInput: AVAssetWriterInput)](./avassetwriterinputcaptionadaptor/init%28assetwriterinput%29.md)
   Creates a new caption adaptor that writes to the specified asset writer input.
+- [+ assetWriterInputCaptionAdaptorWithAssetWriterInput:](./avassetwriterinputcaptionadaptor/assetwriterinputcaptionadaptorwithassetwriterinput_.md)
+  A class method that creates a new caption adaptor that writes to the specified asset writer input.
 ### Accessing the writer input
 - [var assetWriterInput: AVAssetWriterInput](./avassetwriterinputcaptionadaptor/assetwriterinput.md)
   The associated asset writer input.

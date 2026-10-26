@@ -58,6 +58,8 @@ When you subclass [`NEDNSProxyProvider`](./nednsproxyprovider.md), you must prov
 ### Getting system DNS settings
 - [var systemDNSSettings: [NEDNSSettings]?](./nednsproxyprovider/systemdnssettings.md)
   The current system DNS settings.
+### Instance Methods
+- [- handleNewUDPFlow:initialRemoteFlowEndpoint:](./nednsproxyprovider/handlenewudpflow_initialremoteflowendpoint_.md)
 
 ## Relationships
 

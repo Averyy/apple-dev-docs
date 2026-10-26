@@ -52,6 +52,8 @@ AVErrorAutoWhiteBalanceNotLocked
   The system can’t find a suitable decoder for the media.
 - [AVError.Code.decoderTemporarilyUnavailable](./decodertemporarilyunavailable.md)
   A suitable decoder for the media is temporarily available.
+- [AVErrorContentKeyInvalid](../../averror-c.enum/averrorcontentkeyinvalid.md)
+- [AVErrorContentKeyRequestPlaybackDestinationDoesNotSupportDeviceIdentifierRandomization](../../averror-c.enum/averrorcontentkeyrequestplaybackdestinationdoesnotsupportdeviceidentifierrandomization.md)
 
 
 ---

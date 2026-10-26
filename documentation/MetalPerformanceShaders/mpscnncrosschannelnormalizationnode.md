@@ -31,6 +31,8 @@ class MPSCNNCrossChannelNormalizationNode
 - [init(source: MPSNNImageNode, kernelSize: Int)](./mpscnncrosschannelnormalizationnode/init%28source,kernelsize%29.md)
 ### Instance Properties
 - [var kernelSizeInFeatureChannels: Int](./mpscnncrosschannelnormalizationnode/kernelsizeinfeaturechannels.md)
+### Type Methods
+- [+ nodeWithSource:kernelSize:](./mpscnncrosschannelnormalizationnode/nodewithsource_kernelsize_.md)
 
 ## Relationships
 

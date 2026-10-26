@@ -45,6 +45,8 @@ The row index of the selected cell in the specified column. Returns `-1` if ther
   The index path of the item selected in the browser.
 - [var selectionIndexPaths: [IndexPath]](./selectionindexpaths.md)
   An array containing the index paths of all items selected in the browser.
+- [selectedCell](./selectedcell.md)
+  The last (rightmost and lowest) selected cell.
 
 
 ---

@@ -42,6 +42,8 @@ The shared app object receives events and forwards them to the affected [`NSWind
   Dispatches an event to other objects.
 - [func postEvent(NSEvent, atStart: Bool)](./postevent%28_,atstart%29.md)
   Adds a given event to the receiver’s event queue.
+- [NSEventTrackingRunLoopMode](../nseventtrackingrunloopmode.md)
+  The mode set when tracking events modally, such as a mouse-dragging loop.
 
 
 ---

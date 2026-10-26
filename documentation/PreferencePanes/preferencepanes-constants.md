@@ -3,6 +3,13 @@
 **Framework**: Preference Panes  
 **Role**: API Collection
 
+## Topics
+
+### Constants
+- [kNSPrefPaneHelpMenuAnchorKey](./knsprefpanehelpmenuanchorkey.md)
+- [kNSPrefPaneHelpMenuInfoPListKey](./knsprefpanehelpmenuinfoplistkey.md)
+- [kNSPrefPaneHelpMenuTitleKey](./knsprefpanehelpmenutitlekey.md)
+
 
 ---
 

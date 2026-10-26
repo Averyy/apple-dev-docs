@@ -36,6 +36,8 @@ UIDirectionalRectEdgeTrailing
   The bottom edge.
 - [static var all: UIDirectionalRectEdge](./all.md)
   All edges.
+- [UIDirectionalRectEdgeNone](./uidirectionalrectedgenone.md)
+  No specified edge.
 
 
 ---

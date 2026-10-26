@@ -21,6 +21,8 @@ static simd_long3 simd_make_long3(simd_long1 x, simd_long2 yz);
 ### Functions to Create Three-Element Vectors From Combinations of Vectors and Scalar Values
 - [func simd_make_long3(simd_long2, simd_long1) -> simd_long3](./simd_make_long3%28_,_%29-36pz0.md)
   Returns a new vector from a vector and a scalar value.
+- [vector3](./vector3-6gwfj.md)
+  Returns a new vector from a vector and a scalar value.
 
 
 ---

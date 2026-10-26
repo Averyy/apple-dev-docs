@@ -217,6 +217,10 @@ Override these methods to customize the text layout process, including modifying
   An object that coordinates the layout and display of text characters.
 - [class NSATSTypesetter](./nsatstypesetter.md)
   A concrete typesetter object that places glyphs during the text layout process.
+- [NSLineSweepDirection](./nslinesweepdirection.md)
+  Values that describe the progression of text on a page.
+- [NSLineMovementDirection](./nslinemovementdirection.md)
+  The direction in which a line moves.
 
 
 ---

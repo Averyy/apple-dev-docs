@@ -39,6 +39,8 @@ HKStatisticsOptionDuration
   An option indicating that the system calculates the sum of all the quantities for the samples.
 - [static var mostRecent: HKStatisticsOptions](./mostrecent.md)
   An option indicating that the system returns the most recent quantity from the matching samples.
+- [HKStatisticsOptionNone](./hkstatisticsoptionnone.md)
+  An option indicating that the system will not calculate any statistics values.
 
 
 ---

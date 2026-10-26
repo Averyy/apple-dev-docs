@@ -38,6 +38,10 @@ class MapItemDetailPresentationStyle
   Display a small “Open in Apple Maps” link.
 - [class func sheet(presentedFrom: UIViewController) -> MKSelectionAccessory.MapItemDetailPresentationStyle](./mapitemdetailpresentationstyle/sheet%28presentedfrom%29.md)
   Show map item detail by presenting a sheet.
+- [+ automaticWithPresentationViewController:](../mkmapitemdetailselectionaccessorypresentationstyle/automaticwithpresentationviewcontroller_.md)
+  An appropriate presentation style will be chosen automatically.
+- [+ calloutWithCalloutStyle:](../mkmapitemdetailselectionaccessorypresentationstyle/calloutwithcalloutstyle_.md)
+  Show map item detail as an annotation callout on the map
 
 ## Relationships
 

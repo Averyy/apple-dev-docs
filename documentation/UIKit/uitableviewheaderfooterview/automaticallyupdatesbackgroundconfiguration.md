@@ -38,6 +38,10 @@ If you override [`updateConfiguration(using:)`](./updateconfiguration%28using%29
   The current background configuration of the view.
 - [var backgroundView: UIView?](./backgroundview.md)
   The background view of the header or footer.
+- [- defaultBackgroundConfiguration](./defaultbackgroundconfiguration.md)
+  Retrieves a background configuration with system default values.
+- [backgroundConfiguration](./backgroundconfiguration-2o8ke.md)
+  The current background configuration of the view.
 
 
 ---

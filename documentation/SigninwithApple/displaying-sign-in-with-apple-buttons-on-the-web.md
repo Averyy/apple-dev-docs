@@ -111,9 +111,9 @@ You can configure the position of the text in the Sign in with Apple button if y
 ## See Also
 
 ### Web support
-- [Sign in with Apple JS](https://developer.apple.com/documentation/signinwithapplejs)
+- [Sign in with Apple JS](../SigninwithAppleJS/SigninwithAppleJS.md)
   Provide users a fast, secure way to sign in to your web service with their Apple Account.
-- [Sign in with Apple REST API](https://developer.apple.com/documentation/signinwithapplerestapi)
+- [Sign in with Apple REST API](../SigninwithAppleRESTAPI/SigninwithAppleRESTAPI.md)
   Communicate between your app servers and Apple’s authentication servers.
 - [Configuring your environment for Sign in with Apple](./configuring-your-environment-for-sign-in-with-apple.md)
   Authenticate users with your web service by associating an existing app with a Services ID and private key.

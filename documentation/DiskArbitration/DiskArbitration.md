@@ -25,6 +25,7 @@ For related documentation, see [Mac Technology Overview](https://developer.apple
 - [DiskArbitration Enumerations](./diskarbitration-enumerations.md)
 - [DiskArbitration Constants](./diskarbitration-constants.md)
 - [DiskArbitration Data Types](./diskarbitration-data-types.md)
+- [DiskArbitration Functions](./diskarbitration-functions.md)
 ### Variables
 - [let kDADiskDescriptionFSKitPrefix: CFString](./kdadiskdescriptionfskitprefix.md)
 - [let kDADiskDescriptionRepairRunningKey: CFString](./kdadiskdescriptionrepairrunningkey.md)

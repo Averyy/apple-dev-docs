@@ -43,11 +43,23 @@ The VTFrameProcessorConfiguration protocol conformance starts a frame processing
   A dictionary of pixel buffer attributes that define what the source and reference frames passed to the processor must conform to.
 - [var destinationPixelBufferAttributes: [String : any Sendable]](./vtframeprocessorconfiguration/destinationpixelbufferattributes.md)
   A dictionary of pixel buffer attributes that define which output frames passed to the processor must conform to.
+- [frameSupportedPixelFormats](./vtframeprocessorconfiguration/framesupportedpixelformats.md)
+  A list of supported pixel formats for the current configuration.
 ### Inspecting frame requirements
 - [var nextFrameCount: Int?](./vtframeprocessorconfiguration/nextframecount-18e47.md)
   The number of next frames that the processor requires for processing.
 - [var previousFrameCount: Int?](./vtframeprocessorconfiguration/previousframecount-1crhc.md)
   The number of previous frames that the processor requires for processing.
+### Instance Properties
+- [nextFrameCount](./vtframeprocessorconfiguration/nextframecount-533br.md)
+  Returns the number of “next” frames that this processor requires for processing.
+- [previousFrameCount](./vtframeprocessorconfiguration/previousframecount-20ke2.md)
+  Returns the number of “previous” frames that this processor requires for processing.
+### Type Properties
+- [maximumDimensions](./vtframeprocessorconfiguration/maximumdimensions-1x3l0.md)
+  Returns the maximum dimensions for a `sourceFrame` for the processor.
+- [minimumDimensions](./vtframeprocessorconfiguration/minimumdimensions-9n9r0.md)
+  Returns the minimum dimensions for a `sourceFrame` for the processor.
 
 ## Relationships
 

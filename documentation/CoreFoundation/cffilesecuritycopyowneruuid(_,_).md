@@ -57,6 +57,7 @@ Returns `true` if an owner UUID was successfully copied, or `false` if there is 
   Copies the group UUID associated with a `CFFileSecurityRef` object.
 - [func CFFileSecurityCreate(CFAllocator!) -> CFFileSecurity!](./cffilesecuritycreate%28_%29.md)
   Creates a `CFFileSecurityRef` object.
+- [CFAutorelease](./cfautorelease.md)
 
 
 ---

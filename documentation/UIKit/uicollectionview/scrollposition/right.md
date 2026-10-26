@@ -40,6 +40,8 @@ This option is mutually exclusive with the [`left`](./left.md) and [`centeredHor
   Scroll so that the item is positioned at the left edge of the collection view’s bounds.
 - [static var centeredHorizontally: UICollectionView.ScrollPosition](./centeredhorizontally.md)
   Scroll so that the item is centered horizontally in the collection view.
+- [UICollectionViewScrollPositionNone](../../uicollectionviewscrollposition/uicollectionviewscrollpositionnone.md)
+  Don’t scroll the item into view.
 
 
 ---

@@ -33,6 +33,9 @@ class MTLResourceStatePassDescriptor
 ### Specifying sample buffers for GPU counters
 - [var sampleBufferAttachments: MTLResourceStatePassSampleBufferAttachmentDescriptorArray](./mtlresourcestatepassdescriptor/samplebufferattachments.md)
   The array of sample buffers that the resource state pass can access.
+### Creating a resource state pass descriptor
+- [+ resourceStatePassDescriptor](./mtlresourcestatepassdescriptor/resourcestatepassdescriptor.md)
+  Creates a new resource state pass descriptor.
 
 ## Relationships
 

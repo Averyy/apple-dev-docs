@@ -27,6 +27,16 @@ var naturalTimeScale: CMTimeScale { get }
 @property (nonatomic, readonly) CMTimeScale naturalTimeScale;
 ```
 
+## See Also
+
+### Accessing temporal information
+- [timeRange](./timerange.md)
+  The time range of the track within the overall timeline of the asset.
+- [estimatedDataRate](./estimateddatarate.md)
+  The estimated data rate, in bits per second, of the media that the track references.
+- [- samplePresentationTimeForTrackTime:](./samplepresentationtime%28fortracktime%29.md)
+  Maps the specified track time through the appropriate time mapping and returns the resulting sample presentation time.
+
 
 ---
 

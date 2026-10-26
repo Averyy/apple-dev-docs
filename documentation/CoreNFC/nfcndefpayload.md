@@ -61,6 +61,8 @@ An NDEF message payload consists of the Type Name Format field (as defined by th
 ### Getting Text from a Payload Record
 - [func wellKnownTypeTextPayload() -> (String?, Locale?)](./nfcndefpayload/wellknowntypetextpayload%28%29.md)
   Returns the text and locale of a valid Well Known Type Text payload.
+- [- wellKnownTypeTextPayloadWithLocale:](./nfcndefpayload/wellknowntypetextpayloadwithlocale_.md)
+  Returns the text of a valid Well Known Type Text payload.
 
 ## Relationships
 

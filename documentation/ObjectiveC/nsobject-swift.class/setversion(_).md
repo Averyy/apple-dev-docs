@@ -60,6 +60,8 @@ The version number applies to `NSArchiver`/`NSUnarchiver`, but not to `NSKeyedAr
   Overridden by subclasses to substitute another object for itself during keyed archiving.
 - [class func version() -> Int](./version%28%29.md)
   Returns the version number assigned to the class.
+- [classForPortCoder](./classforportcoder.md)
+  Class to substitute for the receiver in distribution encoding.
 
 
 ---

@@ -34,6 +34,7 @@ enum {
 
 ### Constants
 - [var typeStyledText: DescType](../../coreservices/typestyledtext.md)
+- [typeStyledText](../../coreservices/api-1556396-anonymous/typestyledtext.md)
 
 
 ---

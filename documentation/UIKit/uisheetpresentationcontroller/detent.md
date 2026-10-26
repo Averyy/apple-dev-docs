@@ -36,6 +36,12 @@ class Detent
   Resolves a detent to its value.
 - [protocol UISheetPresentationControllerDetentResolutionContext](../uisheetpresentationcontrollerdetentresolutioncontext.md)
   A context for resolving custom detent values.
+- [+ customDetentWithIdentifier:resolver:](../uisheetpresentationcontrollerdetent/customdetentwithidentifier_resolver_.md)
+  Creates a custom detent for a sheet by computing its value according to the properties of the provided context.
+- [- resolvedValueInContext:](../uisheetpresentationcontrollerdetent/resolvedvalueincontext_.md)
+  Resolves a detent to its value.
+- [UISheetPresentationControllerDetentInactive](../uisheetpresentationcontrollerdetentinactive.md)
+  A value that represents an inactive detent.
 ### Identifying a detent
 - [var identifier: UISheetPresentationController.Detent.Identifier](./detent/identifier-swift.property.md)
   The identifier of the detent.

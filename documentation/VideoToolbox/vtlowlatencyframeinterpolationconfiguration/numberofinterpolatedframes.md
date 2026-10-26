@@ -38,6 +38,8 @@ var numberOfInterpolatedFrames: Int { get }
 - [var destinationPixelBufferAttributes: [String : any Sendable]](./destinationpixelbufferattributes.md)
   Pixel buffer attributes dictionary that describes requirements for pixel buffers which represent destination frames.
 - [var supportedPixelFormats: [OSType]](./supportedpixelformats.md)
+- [frameSupportedPixelFormats](./framesupportedpixelformats.md)
+  Available supported pixel formats for current configuration.
 
 
 ---

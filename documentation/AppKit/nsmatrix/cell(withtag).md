@@ -45,6 +45,8 @@ The last (when viewing the matrix as a row-ordered array) [`NSCell`](../nscell.m
   Returns the cell at the specified row and column.
 - [var cells: [NSCell]](./cells.md)
   An array containing the cells of the matrix.
+- [selectedCell](./selectedcell.md)
+  The most recently selected cell.
 
 
 ---

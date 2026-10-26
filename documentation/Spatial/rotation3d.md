@@ -54,6 +54,15 @@ typedef union { ... } SPRotation3D;
   Creates a rotation with the specified forward and up vectors.
 - [init(forward: Vector3D, up: Vector3D)](./rotation3d/init%28forward,up%29.md)
   Creates a rotation with the specified forward and up vectors.
+- [SPRotation3DMakeWithQuaternion](./sprotation3dmakewithquaternion.md)
+- [SPRotation3DMake](./sprotation3dmake-2i9jt.md)
+  Creates a rotation structure.
+- [SPRotation3DMakeLookAt](./sprotation3dmakelookat-6ypo8.md)
+  Creates a rotation structure that’s the look-at direction from a position to a target.
+- [SPRotation3DMakeLookAt](./sprotation3dmakelookat-4xrh6.md)
+- [SPRotationAxis3DMakeWithVector](./sprotationaxis3dmakewithvector-1n9ib.md)
+  Creates a rotation axis from the specified double-precision vector.
+- [SPRotationAxis3DMakeWithVector](./sprotationaxis3dmakewithvector-kk1p.md)
 ### Inspecting a 3D rotation’s properties
 - [var angle: Angle2D](./rotation3d/angle.md)
   The angle of the rotation.
@@ -67,6 +76,16 @@ typedef union { ... } SPRotation3D;
   A quaternion that represents the rotation.
 - [var vector: simd_double4](./rotation3d/vector.md)
   The underlying vector of the rotation.
+- [SPRotation3DGetAngle](./sprotation3dgetangle.md)
+  The angle of the rotation.
+- [SPRotation3DGetAxis](./sprotation3dgetaxis.md)
+  The axis of the rotation.
+- [vector](./sprotation3d/vector.md)
+  The underlying vector of the rotation.
+- [SPRotation3DGetQuaternion](./sprotation3dgetquaternion.md)
+  A quaternion that represents the rotation.
+- [SPRotationAxis3DGetVector](./sprotationaxis3dgetvector.md)
+  A simd three-element vector that contains the x-, y-, and z-coordinate values.
 ### Transforming a 3D rotation structure
 - [static func slerp(from: Rotation3D, to: Rotation3D, t: Double, along: Rotation3D.SlerpPath) -> Rotation3D](./rotation3d/slerp%28from,to,t,along%29.md)
   Returns the spherical linear interpolation along either the shortest or the longest arc between two rotations.
@@ -76,6 +95,10 @@ typedef union { ... } SPRotation3D;
   The inverse of the rotation.
 - [static let identity: Rotation3D](./rotation3d/identity.md)
   The identity rotation.
+- [SPRotation3DSlerp](./sprotation3dslerp.md)
+  Returns the spherical linear interpolation along the shortest arc between two rotations.
+- [SPRotation3DSlerpLongest](./sprotation3dslerplongest.md)
+  Returns the spherical linear interpolation along the longest arc between two rotations.
 ### Decomposing a 3D rotation structure
 - [func swing(twistAxis: RotationAxis3D) -> Rotation3D](./rotation3d/swing%28twistaxis%29.md)
   Returns the swing component of the rotation’s swing-twist decomposition for a given twist axis.
@@ -92,10 +115,18 @@ typedef union { ... } SPRotation3D;
   A Boolean value that indicates whether the rotation is the identity rotation.
 - [var isIdentity: Bool](./rotation3d/isidentity.md)
   A Boolean value that indicates whether the rotation is the identity rotation.
+- [SPRotation3DIsValid](./sprotation3disvalid.md)
+  A Boolean value that indicates whether the rotation represents a valid value.
+- [SPRotation3DInvalid](./sprotation3dinvalid.md)
+  The null rotation that represents an invalid value.
 ### Comparing values
 - [func isApproximatelyEqual(to: Rotation3D, tolerance: Double) -> Bool](./rotation3d/isapproximatelyequal%28to,tolerance%29.md)
 - [static func == (Rotation3D, Rotation3D) -> Bool](./rotation3d/eqeq%28_,_%29.md)
   Returns a Boolean value that indicates whether two values are equal.
+- [SPRotation3DEqualToRotation](./sprotation3dequaltorotation.md)
+  Returns a Boolean value that indicates whether two values are equal.
+- [SPRotation3DAlmostEqualToRotation](./sprotation3dalmostequaltorotation-53c20.md)
+- [SPRotation3DAlmostEqualToRotation](./sprotation3dalmostequaltorotation-3deix.md)
 ### Applying arithmetic operations
 - [static func * (Rotation3D, Rotation3D) -> Rotation3D](./rotation3d/star%28_,_%29-1tc8f.md)
   Returns the product of two rotations.
@@ -110,6 +141,8 @@ typedef union { ... } SPRotation3D;
 ### Interpolating a 3D rotation structure
 - [static func spline(leftEndpoint: Rotation3D, from: Rotation3D, to: Rotation3D, rightEndpoint: Rotation3D, t: Double) -> Rotation3D](./rotation3d/spline%28leftendpoint,from,to,rightendpoint,t%29.md)
   Returns an interpolated value between two rotations along a spherical cubic spline.
+- [SPRotation3DSpline](./sprotation3dspline.md)
+  Returns an interpolated value between two rotations along a spherical cubic spline.
 ### Deprecated symbols
 - [init(Angle2D, Angle2D, Angle2D, order: EulerAngles.Order)](./eulerangles/init%28_,_,_,order%29.md)
   Creates a new Euler angles structure from the specified angle structures and order.
@@ -123,6 +156,8 @@ typedef union { ... } SPRotation3D;
   The rotation with the zero value.
 - [var isZero: Bool](./rotation3d/iszero.md)
   A Boolean value that indicates whether the rotation is zero.
+- [SPEulerAngleOrder](./speulerangleorder.md)
+  Constants that describe the order of Euler angles.
 ### Initializers
 - [init(Rotation3DFloat)](./rotation3d/init%28_%29-1r1iq.md)
   Returns a double-precision rotation from a single-precision rotation.
@@ -136,6 +171,11 @@ typedef union { ... } SPRotation3D;
 - [Equatable Implementations](./rotation3d/equatable-implementations.md)
 - [Hashable Implementations](./rotation3d/hashable-implementations.md)
 - [ProjectiveTransformable3D Implementations](./rotation3d/projectivetransformable3d-implementations.md)
+### Setting a 3D rotation’s properties
+- [SPRotation3DSetAngle](./sprotation3dsetangle.md)
+  Sets a rotation’s angle.
+- [SPRotation3DSetAxis](./sprotation3dsetaxis.md)
+  Sets a rotation’s axis.
 
 ## Relationships
 

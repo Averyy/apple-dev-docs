@@ -56,6 +56,10 @@ typedef void (^)(NSObject<OS_nw_connection> *) nw_connection_group_new_connectio
   A handler that delivers network path updates.
 - [typealias nw_connection_receive_completion_t](./nw_connection_receive_completion_t.md)
   A completion handler that indicates when content has been received by the connection, or that an error was encountered.
+- [nw_ethernet_channel_state_t](./nw_ethernet_channel_state_t.md)
+  States indicating whether an Ethernet channel is able to send and receive frames.
+- [nw_listener_new_connection_group_handler_t](./nw_listener_new_connection_group_handler_t.md)
+- [nw_proxy_domain_enumerator_t](./nw_proxy_domain_enumerator_t.md)
 
 
 ---

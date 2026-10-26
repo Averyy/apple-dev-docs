@@ -37,6 +37,12 @@ The number of characters indicated by `capacity` is simply a hint to increase th
 
 - `capacity`: The number of characters the string is expected to initially contain.
 
+## See Also
+
+### Creating and Initializing a Mutable String
+- [+ stringWithCapacity:](./stringwithcapacity_.md)
+  Returns an empty `NSMutableString` object with initial storage for a given number of characters.
+
 
 ---
 

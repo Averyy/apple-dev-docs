@@ -216,6 +216,8 @@ You are strongly discouraged from subclassing `NSManagedObjectContext`. The chan
   Refreshes all of the registered managed objects in the context.
 - [var retainsRegisteredObjects: Bool](./nsmanagedobjectcontext/retainsregisteredobjects.md)
   A Boolean value that indicates whether the context keeps strong references to all registered managed objects.
+- [- executeFetchRequest:error:](./nsmanagedobjectcontext/executefetchrequest_error_.md)
+  Returns an array of objects that meet the criteria of the specified fetch request.
 ### Handling managed objects
 - [var shouldDeleteInaccessibleFaults: Bool](./nsmanagedobjectcontext/shoulddeleteinaccessiblefaults.md)
   A Boolean value that determines whether the context turns inaccessible faults into deleted objects.

@@ -60,6 +60,8 @@ Before using CloudKit, make sure it’s the most suitable option for your app. F
   An object that manages the synchronization of local and remote record data.
 - [Shared Records](./shared-records.md)
   Share one or more records with other iCloud users.
+- [CKSyncEngine](./cksyncengine-4b4w9.md)
+  An object that manages the synchronization of local and remote record data.
 ### User discovery
 - [class CKUserIdentity](./ckuseridentity.md)
   The identity of a user.
@@ -72,6 +74,8 @@ Before using CloudKit, make sure it’s the most suitable option for your app. F
   An object that represents a collection of record zones and subscriptions.
 - [class CKOperationGroup](./ckoperationgroup.md)
   An explicit association between two or more operations.
+- [CKRecordValue](./ckrecordvalue-c.protocol.md)
+  The protocol that provides strong type-checking for objects that the CloudKit framework stores on the server.
 ### Privacy
 - [Encrypting User Data](./encrypting-user-data.md)
   Deploy industry-standard security technologies using CloudKit encryption.
@@ -105,6 +109,14 @@ Before using CloudKit, make sure it’s the most suitable option for your app. F
   Review unsupported symbols and their replacements.
 ### Classes
 - [class CKShareRequestAccessOperation](./cksharerequestaccessoperation.md)
+- [CKShareAccessRequester](./ckshare/accessrequester.md)
+- [CKShareBlockedIdentity](./ckshare/blockedidentity.md)
+- [CKSyncEngineFetchChangesContext](./cksyncenginefetchchangescontext.md)
+  The context of an attempt to fetch changes from the server.
+- [CKSyncEngineFetchChangesScope](./cksyncenginefetchchangesscope.md)
+  A scope in which the sync engine will fetch changes from the server.
+- [CKSyncEngineSendChangesScope](./cksyncenginesendchangesscope.md)
+  A scope in which the sync engine will send changes to the server.
 ### Variables
 - [let CKRecordParentKey: String](./ckrecordparentkey-1elhg.md)
 - [let CKRecordShareKey: String](./ckrecordsharekey-gc8w.md)
@@ -114,6 +126,24 @@ Before using CloudKit, make sure it’s the most suitable option for your app. F
 - [let CKShareThumbnailImageDataKey: String](./cksharethumbnailimagedatakey-rxjd.md)
 - [let CKShareTitleKey: String](./cksharetitlekey-1cs9j.md)
 - [let CKShareTypeKey: String](./cksharetypekey-5m83p.md)
+### Macros
+- [CKSHARE_REQUEST_ACCESS_INTERFACES_AVAILABILITY](./ckshare_request_access_interfaces_availability.md)
+- [CK_EXTERN](./ck_extern.md)
+- [CK_EXTERN_HIDDEN](./ck_extern_hidden.md)
+- [CK_HIDDEN](./ck_hidden.md)
+- [CK_NEWLY_UNAVAILABLE](./ck_newly_unavailable.md)
+- [CK_SHARE_ACCESS_REQUESTER_AVAILABILITY](./ck_share_access_requester_availability.md)
+- [CK_SHARE_BLOCKED_IDENTITY_AVAILABILITY](./ck_share_blocked_identity_availability.md)
+- [CK_SUBCLASSING_DEPRECATED](./ck_subclassing_deprecated.md)
+- [CK_SUBCLASSING_EXTERNALLY_RESTRICTED](./ck_subclassing_externally_restricted.md)
+- [CK_SUBCLASSING_RESTRICTED](./ck_subclassing_restricted.md)
+- [CK_SWIFT_AVAILABILITY](./ck_swift_availability.md)
+- [CK_SWIFT_DEPRECATED](./ck_swift_deprecated.md)
+- [CK_UNAVAILABLE](./ck_unavailable.md)
+### Enumerations
+- [CKRecordZoneEncryptionScope](./ckrecordzone/encryptionscope-swift.enum.md)
+- [CKShareParticipantType](./ckshareparticipanttype.md)
+  The role of a participant.
 
 
 ---

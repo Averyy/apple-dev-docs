@@ -27,6 +27,11 @@ var SK_VERSION: Int32 { get }
 
 ### Global variables
 - [var SKVIEW_AVAILABLE: Int32](./skview_available.md)
+### Macros
+- [SKColor](./skcolor-c.macro.md)
+- [SK_AVAILABLE](./sk_available.md)
+- [SK_EXPORT](./sk_export.md)
+- [SK_WEAK_LINK](./sk_weak_link.md)
 
 
 ---

@@ -39,6 +39,8 @@ A new [`MLCReductionLayer`](../mlcreductionlayer.md) instance.
   Creates a reduction layer using the reduction type and dimensions you specify.
 - [enum MLCReductionType](../mlcreductiontype.md)
   Constants that describe a reduction operation type.
+- [+ layerWithReductionType:dimensions:](./layerwithreductiontype_dimensions_.md)
+  Creates a reduction layer using the reduction type and dimensions you specify.
 
 
 ---

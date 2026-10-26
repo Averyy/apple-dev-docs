@@ -46,6 +46,8 @@ kCTFontClassScripts
   A font style that includes highly decorated or stylized character shapes such as those typically used in headlines.
 - [static var classSymbolic: CTFontStylisticClass](./classsymbolic.md)
   A generally design-independent font style.
+- [kCTFontClassUnknown](./kctfontclassunknown.md)
+  The font has no design classification.
 
 
 ---

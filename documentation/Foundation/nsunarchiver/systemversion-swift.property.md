@@ -33,6 +33,10 @@ This information is available as soon as the receiver has been initialized.
 ### Managing an NSUnarchiver
 - [var isAtEnd: Bool](./isatend.md)
   A Boolean value that indicates whether the receiver has reached the end of the encoded data while decoding.
+- [- objectZone](./objectzone-c.method.md)
+  Returns the memory zone used to allocate decoded objects.
+- [- setObjectZone:](./setobjectzone_.md)
+  Sets the memory zone used to allocate decoded objects.
 
 
 ---

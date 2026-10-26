@@ -68,6 +68,8 @@ To fill the gap, all elements beyond index are moved by subtracting 1 from their
   Appends or replaces the object at the specified index.
 - [func moveObjects(at: IndexSet, to: Int)](./moveobjects%28at,to%29.md)
   Moves the objects at the specified indexes to the new location.
+- [- setObject:atIndexedSubscript:](./setobject_atindexedsubscript_.md)
+  Replaces the given object at the specified index of the mutable ordered set.
 
 
 ---

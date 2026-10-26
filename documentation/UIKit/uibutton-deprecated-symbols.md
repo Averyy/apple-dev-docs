@@ -14,6 +14,12 @@ Although these symbols are available for use, Apple is no longer actively develo
 ### Deprecated title effects
 - [var reversesTitleShadowWhenHighlighted: Bool](./uibutton/reversestitleshadowwhenhighlighted.md)
   A Boolean value that determines whether the title shadow changes when the button is highlighted.
+- [font](./uibutton/font.md)
+  The font used to display text on the button.
+- [lineBreakMode](./uibutton/linebreakmode.md)
+  The line break mode to use when drawing text.
+- [titleShadowOffset](./uibutton/titleshadowoffset.md)
+  The offset of the shadow used to display the receiver’s title.
 ### Deprecated button presentation
 - [var adjustsImageWhenHighlighted: Bool](./uibutton/adjustsimagewhenhighlighted.md)
   A Boolean value that determines whether the image changes when the button is highlighted.

@@ -65,6 +65,10 @@ Return [`true`](../Swift/true.md) if the stream can currently accept more data, 
   Returns an initialized output stream for writing to a specified file.
 - [init?(url: URL, append: Bool)](./outputstream/init%28url,append%29-5soau.md)
   Returns an initialized output stream for writing to a specified URL.
+- [+ outputStreamToBuffer:capacity:](./nsoutputstream/outputstreamtobuffer_capacity_.md)
+  Creates and returns an initialized output stream that can write to a provided buffer.
+- [+ outputStreamToFileAtPath:append:](./nsoutputstream/outputstreamtofileatpath_append_.md)
+  Creates and returns an initialized output stream for writing to a specified file.
 ### Using Streams
 - [var hasSpaceAvailable: Bool](./outputstream/hasspaceavailable.md)
   A boolean value that indicates whether the receiver can be written to.
@@ -74,6 +78,9 @@ Return [`true`](../Swift/true.md) if the stream can currently accept more data, 
 - [init?(URL: URL, append: Bool)](./outputstream/init%28url,append%29-4dpt1.md)
 ### Default Implementations
 - [NSOutputStream Implementations](./outputstream/nsoutputstream-implementations.md)
+### Type Methods
+- [+ outputStreamWithURL:append:](./nsoutputstream/outputstreamwithurl_append_.md)
+  Creates and returns an initialized output stream for writing to a specified URL.
 
 ## Relationships
 

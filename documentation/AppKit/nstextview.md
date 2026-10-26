@@ -64,6 +64,7 @@ When the system invokes [`resignFirstResponder()`](./nsresponder/resignfirstresp
 - [convenience init(usingTextLayoutManager: Bool)](./nstextview/init%28usingtextlayoutmanager%29.md)
 - [init?(coder: NSCoder)](./nstextview/init%28coder%29.md)
   Initializes a text view with data in an unarchiver.
+- [+ textViewUsingTextLayoutManager:](./nstextview/textviewusingtextlayoutmanager_.md)
 ### Managing the text view’s content
 - [var delegate: (any NSTextViewDelegate)?](./nstextview/delegate.md)
   The delegate for all text views sharing the receiver’s layout manager.
@@ -450,6 +451,8 @@ When the system invokes [`resignFirstResponder()`](./nsresponder/resignfirstresp
   Inserts `aString` into the receiver’s text at the insertion point if there is one, otherwise replacing the selection.
 - [func toggleTraditionalCharacterShape(Any?)](./nstextview/toggletraditionalcharactershape%28_%29.md)
   Toggles the `NSCharacterShapeAttributeName` attribute at the current selection.
+- [- toggleBaseWritingDirection:](./nstextview/togglebasewritingdirection_.md)
+  Changes the base writing direction of a paragraph between left-to-right and right-to-left.
 ### Structures
 - [NSTextView.DidBeginEditingMessage](./nstextview/didbegineditingmessage.md)
 - [NSTextView.DidChangeMessage](./nstextview/didchangemessage.md)
@@ -470,6 +473,16 @@ When the system invokes [`resignFirstResponder()`](./nsresponder/resignfirstresp
   An action for toggling `NSTextHighlightStyleAttributeName` in the receiver’s selected range. The sender should be a menu item with a `representedObject` of type (`NSTextHighlightColorScheme`).
 - [func register(NSTextAttachmentViewProviderReusePolicy, forTextAttachmentViewProviderType: AnyClass)](./nstextview/register%28_,fortextattachmentviewprovidertype%29.md)
   Register the NSTextAttachmentViewProviderReusePolicy for all instances of a particular subclass of NSTextAttachmentViewProvider.
+- [- textViewportLayoutController:configureRenderingSurfaceForTextLayoutFragment:](./nstextview/textviewportlayoutcontroller_configurerenderingsurfacefortextlayoutfragment_.md)
+  `NSTextViewportLayoutControllerDelegate` method that the framework calls when the layout controller lays out a text layout fragment in the UI. Requires a call to super.
+- [- textViewportLayoutControllerDidLayout:](./nstextview/textviewportlayoutcontrollerdidlayout_.md)
+  `NSTextViewportLayoutControllerDelegate` method that the framework calls when the text viewport layout controller finishes its layout process. Requires a call to super.
+- [- textViewportLayoutControllerReceivedSetNeedsLayout:](./nstextview/textviewportlayoutcontrollerreceivedsetneedslayout_.md)
+  `NSTextViewportLayoutControllerDelegate` method that the framework calls when the text viewport layout controller receives a `setNeedsLayout` call. Requires a call to super.
+- [- textViewportLayoutControllerWillLayout:](./nstextview/textviewportlayoutcontrollerwilllayout_.md)
+  `NSTextViewportLayoutControllerDelegate` method that the framework calls when the text viewport layout controller starts its layout process. Requires a call to super.
+- [- viewportBoundsForTextViewportLayoutController:](./nstextview/viewportboundsfortextviewportlayoutcontroller_.md)
+  `NSTextViewportLayoutControllerDelegate` method that the framework calls to request the current viewport, which is the view visible bounds plus the overdraw area. Requires a call to super.
 
 ## Relationships
 

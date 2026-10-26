@@ -39,6 +39,8 @@ Use a `double` value for a numeric x-axis, or an [`NSString`](../../Foundation/n
   A single data value.
 - [AXDataPoint.Value](./value.md)
   Constants that describe types of data values.
+- [additionalValues](./additionalvalues.md)
+  An array of values for additional axes for the data point.
 
 
 ---

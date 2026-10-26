@@ -15,6 +15,16 @@
       "file_path": "documentation/SensorKit/sr_arkit_supported.md",
       "hash": "c93b7255060e3fe5473e56ec881983370148cd04806ec5745f8f54fd1b046827"
     },
+    "https://developer.apple.com/documentation/sensorkit/sr_extern": {
+      "etag": "\"8d7-6590247b63fa6-df\"",
+      "file_path": "documentation/SensorKit/sr_extern.md",
+      "hash": "1d19a2c0ba82d591696694e921f9bc5d90dda1c660d50bb2195d691e4d5888a9"
+    },
+    "https://developer.apple.com/documentation/sensorkit/sr_extern_hidden": {
+      "etag": "\"92b-6590247af1604-df\"",
+      "file_path": "documentation/SensorKit/sr_extern_hidden.md",
+      "hash": "435d281c0bd6c34fe702f6979b2c4e1f5194adedea3d84d545a9e2577c840e13"
+    },
     "https://developer.apple.com/documentation/sensorkit/srabsolutetime": {
       "etag": "\"529c-65d55eea15fbd-df\"",
       "file_path": "documentation/SensorKit/srabsolutetime.md",
@@ -39,6 +49,16 @@
       "etag": "\"345f-65d55eea15fbd-df\"",
       "file_path": "documentation/SensorKit/srabsolutetime/tocfabsolutetime().md",
       "hash": "239757d7b5eb37a6e0f160be5781aec9d2506c11889cd8388b820c8ab8147167"
+    },
+    "https://developer.apple.com/documentation/sensorkit/srabsolutetimefromcfabsolutetime": {
+      "etag": "\"2b84-65d55eea960cc-df\"",
+      "file_path": "documentation/SensorKit/srabsolutetimefromcfabsolutetime.md",
+      "hash": "4a3beee1368b9065c597b7b48f4e3a80f5bb6601d13ab2c8060b1007e1652676"
+    },
+    "https://developer.apple.com/documentation/sensorkit/srabsolutetimefromcontinuoustime": {
+      "etag": "\"2910-65d55ee950381-df\"",
+      "file_path": "documentation/SensorKit/srabsolutetimefromcontinuoustime.md",
+      "hash": "449d5c5a3be7625ceffb0740257e94c78556cc163ff866a178206a58fc2f37a5"
     },
     "https://developer.apple.com/documentation/sensorkit/sraccelerometersensor": {
       "etag": "\"1c0b-65d55ee984d32-df\"",
@@ -334,6 +354,11 @@
       "etag": "\"13a4-65d55eea68644-df\"",
       "file_path": "documentation/SensorKit/sracousticsettings/headphonesafetyaudiolevel-5lc1v.md",
       "hash": "f260de4e81806b2881413a2f5bdd03047e6fe809ffa7393ce5858c3e6963938b"
+    },
+    "https://developer.apple.com/documentation/sensorkit/sracousticsettings/headphonesafetyaudiolevel-9ziqo": {
+      "etag": "\"165e-65d55eea68644-df\"",
+      "file_path": "documentation/SensorKit/sracousticsettings/headphonesafetyaudiolevel-9ziqo.md",
+      "hash": "f558b99bd5bd469733f30736529ee0695c4335b78b199c7a649a6a6df8dc9f9a"
     },
     "https://developer.apple.com/documentation/sensorkit/sracousticsettings/isenvironmentalsoundmeasurementsenabled": {
       "etag": "\"1f90-65d55eea68644-df\"",
@@ -1174,6 +1199,11 @@
       "etag": "\"30be-65d55eea4f9f4-df\"",
       "file_path": "documentation/SensorKit/srelectrocardiogramdata/value.md",
       "hash": "49cf3dd5e2a8597a3d2329f9caeeec98358bdbf398cc91f2aa0dcb24db7f8c43"
+    },
+    "https://developer.apple.com/documentation/sensorkit/srelectrocardiogramdataflags/srelectrocardiogramdataflagsnone": {
+      "etag": "\"113d-65d55ee929bbc-df\"",
+      "file_path": "documentation/SensorKit/srelectrocardiogramdataflags/srelectrocardiogramdataflagsnone.md",
+      "hash": "35507b463dc60bf46b773fc3b9f444ba6e1996d64f29bb392964ad61b5a90242"
     },
     "https://developer.apple.com/documentation/sensorkit/srelectrocardiogramsample": {
       "etag": "\"6c01-65d55ee984d32-df\"",
@@ -2395,6 +2425,16 @@
       "file_path": "documentation/SensorKit/srphotoplethysmogramopticalsample/activephotodiodeindexes.md",
       "hash": "b918027724d7853fcfef50aa5a9288a662677238c67176d8a201342e58cffd70"
     },
+    "https://developer.apple.com/documentation/sensorkit/srphotoplethysmogramopticalsample/backgroundnoise": {
+      "etag": "\"5317-65d55eea7f85a-df\"",
+      "file_path": "documentation/SensorKit/srphotoplethysmogramopticalsample/backgroundnoise.md",
+      "hash": "6f84eed6dd6a018d060d85e5c73a869c595f1a77a426cff14c8915dd52997805"
+    },
+    "https://developer.apple.com/documentation/sensorkit/srphotoplethysmogramopticalsample/backgroundnoiseoffset": {
+      "etag": "\"53dc-65d55eea7f85a-df\"",
+      "file_path": "documentation/SensorKit/srphotoplethysmogramopticalsample/backgroundnoiseoffset.md",
+      "hash": "07bdf0073ea9114e83e242d576b2b36aac353b0b3e7428c661d5f02196c08ada"
+    },
     "https://developer.apple.com/documentation/sensorkit/srphotoplethysmogramopticalsample/condition": {
       "etag": "\"827c-65d55eea7f85a-df\"",
       "file_path": "documentation/SensorKit/srphotoplethysmogramopticalsample/condition.md",
@@ -2475,6 +2515,16 @@
       "file_path": "documentation/SensorKit/srphotoplethysmogramopticalsample/normalizedreflectance-15f2k.md",
       "hash": "08b87090c863025229528dce688998c1031caed10e628ac020c7f49e7efd27cc"
     },
+    "https://developer.apple.com/documentation/sensorkit/srphotoplethysmogramopticalsample/normalizedreflectance-9aidm": {
+      "etag": "\"54d5-65d55eea7f85a-df\"",
+      "file_path": "documentation/SensorKit/srphotoplethysmogramopticalsample/normalizedreflectance-9aidm.md",
+      "hash": "fb1a9711c8dce3b7e1a919ec9ae381e4b6af3c9b979cf08f1d6934c4fdb4b4ca"
+    },
+    "https://developer.apple.com/documentation/sensorkit/srphotoplethysmogramopticalsample/pinknoise": {
+      "etag": "\"52fc-65d55eea7f85a-df\"",
+      "file_path": "documentation/SensorKit/srphotoplethysmogramopticalsample/pinknoise.md",
+      "hash": "87f73cb4be773f7d0b178f5a221d8b1a7436c3548ddf2428bc67c987dbd1b221"
+    },
     "https://developer.apple.com/documentation/sensorkit/srphotoplethysmogramopticalsample/samplingfrequency": {
       "etag": "\"6c2a-65d55eea7f85a-df\"",
       "file_path": "documentation/SensorKit/srphotoplethysmogramopticalsample/samplingfrequency.md",
@@ -2484,6 +2534,11 @@
       "etag": "\"6810-65d55eea7f85a-df\"",
       "file_path": "documentation/SensorKit/srphotoplethysmogramopticalsample/signalidentifier.md",
       "hash": "f62c34977f7a86c5111c9b4dae9512b5c7047ab6edd59041a0807ad79db57a2c"
+    },
+    "https://developer.apple.com/documentation/sensorkit/srphotoplethysmogramopticalsample/whitenoise": {
+      "etag": "\"5392-65d55eea7f85a-df\"",
+      "file_path": "documentation/SensorKit/srphotoplethysmogramopticalsample/whitenoise.md",
+      "hash": "3ee5aa4613990f6d9e7292d3606ff3060046d70d9e0b831d3c874dc7b2b931b5"
     },
     "https://developer.apple.com/documentation/sensorkit/srphotoplethysmogramsample": {
       "etag": "\"8064-65d55ee8df8d0-df\"",
@@ -3020,6 +3075,11 @@
       "file_path": "documentation/SensorKit/srspeechmetrics/timestamp.md",
       "hash": "2fd2360cd9a512e388a700663308d1710c92beec888ace480811c1e775ca794e"
     },
+    "https://developer.apple.com/documentation/sensorkit/srspeechmetricssessionflags/srspeechmetricssessionflagsdefault": {
+      "etag": "\"1153-65d55eea960cc-df\"",
+      "file_path": "documentation/SensorKit/srspeechmetricssessionflags/srspeechmetricssessionflagsdefault.md",
+      "hash": "15ff0781dbc447d1c11b3745e1ebb7abfaabdd8d2fd6c46a8d78317980421848"
+    },
     "https://developer.apple.com/documentation/sensorkit/srsupplementalcategory": {
       "etag": "\"687f-65d55ee9d345d-df\"",
       "file_path": "documentation/SensorKit/srsupplementalcategory.md",
@@ -3285,6 +3345,11 @@
       "file_path": "documentation/SensorKit/srwristtemperature/value.md",
       "hash": "4aed33c4c32bb8a239e91443142e8ce9a62198b0d1bfdb91279881f4884889e4"
     },
+    "https://developer.apple.com/documentation/sensorkit/srwristtemperaturecondition/srwristtemperatureconditionnone": {
+      "etag": "\"1094-65d55eea337a4-df\"",
+      "file_path": "documentation/SensorKit/srwristtemperaturecondition/srwristtemperatureconditionnone.md",
+      "hash": "f2464c81baf4c64b370c5b83adbd829d68b2a2dc9b98e82f20cc4ded8a7fb89e"
+    },
     "https://developer.apple.com/documentation/sensorkit/srwristtemperaturesensor": {
       "etag": "\"1c3e-65d55eea337a4-df\"",
       "file_path": "documentation/SensorKit/srwristtemperaturesensor.md",
@@ -3309,6 +3374,11 @@
       "etag": "\"279c-65d55ee950381-df\"",
       "file_path": "documentation/SensorKit/srwristtemperaturesession/startdate.md",
       "hash": "38f203cb1dac04caf737c6a3f23775724cfb8a474c76a08577d802ed968700c0"
+    },
+    "https://developer.apple.com/documentation/sensorkit/srwristtemperaturesession/temperatures-7p7du": {
+      "etag": "\"1206-65d55ee929bbc-df\"",
+      "file_path": "documentation/SensorKit/srwristtemperaturesession/temperatures-7p7du.md",
+      "hash": "696cb4a80e1325b0b0d6e97a60590488036061b2503024c8db78f79d9c8dc850"
     },
     "https://developer.apple.com/documentation/sensorkit/srwristtemperaturesession/temperatures-8bqrl": {
       "etag": "\"1bb4-65d55ee950381-df\"",
@@ -3335,6 +3405,16 @@
       "file_path": "documentation/SensorKit/sr_arkit_supported.md",
       "hash": "c93b7255060e3fe5473e56ec881983370148cd04806ec5745f8f54fd1b046827"
     },
+    "https://developer.apple.com/tutorials/data/documentation/sensorkit/sr_extern.json": {
+      "etag": "\"8d7-6590247b63fa6-df\"",
+      "file_path": "documentation/SensorKit/sr_extern.md",
+      "hash": "1d19a2c0ba82d591696694e921f9bc5d90dda1c660d50bb2195d691e4d5888a9"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/sensorkit/sr_extern_hidden.json": {
+      "etag": "\"92b-6590247af1604-df\"",
+      "file_path": "documentation/SensorKit/sr_extern_hidden.md",
+      "hash": "435d281c0bd6c34fe702f6979b2c4e1f5194adedea3d84d545a9e2577c840e13"
+    },
     "https://developer.apple.com/tutorials/data/documentation/sensorkit/srabsolutetime.json": {
       "etag": "\"529c-65d55eea15fbd-df\"",
       "file_path": "documentation/SensorKit/srabsolutetime.md",
@@ -3359,6 +3439,16 @@
       "etag": "\"345f-65d55eea15fbd-df\"",
       "file_path": "documentation/SensorKit/srabsolutetime/tocfabsolutetime().md",
       "hash": "239757d7b5eb37a6e0f160be5781aec9d2506c11889cd8388b820c8ab8147167"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/sensorkit/srabsolutetimefromcfabsolutetime.json": {
+      "etag": "\"2b84-65d55eea960cc-df\"",
+      "file_path": "documentation/SensorKit/srabsolutetimefromcfabsolutetime.md",
+      "hash": "4a3beee1368b9065c597b7b48f4e3a80f5bb6601d13ab2c8060b1007e1652676"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/sensorkit/srabsolutetimefromcontinuoustime.json": {
+      "etag": "\"2910-65d55ee950381-df\"",
+      "file_path": "documentation/SensorKit/srabsolutetimefromcontinuoustime.md",
+      "hash": "449d5c5a3be7625ceffb0740257e94c78556cc163ff866a178206a58fc2f37a5"
     },
     "https://developer.apple.com/tutorials/data/documentation/sensorkit/sraccelerometersensor.json": {
       "etag": "\"1c0b-65d55ee984d32-df\"",
@@ -3654,6 +3744,11 @@
       "etag": "\"13a4-65d55eea68644-df\"",
       "file_path": "documentation/SensorKit/sracousticsettings/headphonesafetyaudiolevel-5lc1v.md",
       "hash": "f260de4e81806b2881413a2f5bdd03047e6fe809ffa7393ce5858c3e6963938b"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/sensorkit/sracousticsettings/headphonesafetyaudiolevel-9ziqo.json": {
+      "etag": "\"165e-65d55eea68644-df\"",
+      "file_path": "documentation/SensorKit/sracousticsettings/headphonesafetyaudiolevel-9ziqo.md",
+      "hash": "f558b99bd5bd469733f30736529ee0695c4335b78b199c7a649a6a6df8dc9f9a"
     },
     "https://developer.apple.com/tutorials/data/documentation/sensorkit/sracousticsettings/isenvironmentalsoundmeasurementsenabled.json": {
       "etag": "\"1f90-65d55eea68644-df\"",
@@ -4494,6 +4589,11 @@
       "etag": "\"30be-65d55eea4f9f4-df\"",
       "file_path": "documentation/SensorKit/srelectrocardiogramdata/value.md",
       "hash": "49cf3dd5e2a8597a3d2329f9caeeec98358bdbf398cc91f2aa0dcb24db7f8c43"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/sensorkit/srelectrocardiogramdataflags/srelectrocardiogramdataflagsnone.json": {
+      "etag": "\"113d-65d55ee929bbc-df\"",
+      "file_path": "documentation/SensorKit/srelectrocardiogramdataflags/srelectrocardiogramdataflagsnone.md",
+      "hash": "35507b463dc60bf46b773fc3b9f444ba6e1996d64f29bb392964ad61b5a90242"
     },
     "https://developer.apple.com/tutorials/data/documentation/sensorkit/srelectrocardiogramsample.json": {
       "etag": "\"6c01-65d55ee984d32-df\"",
@@ -5715,6 +5815,16 @@
       "file_path": "documentation/SensorKit/srphotoplethysmogramopticalsample/activephotodiodeindexes.md",
       "hash": "b918027724d7853fcfef50aa5a9288a662677238c67176d8a201342e58cffd70"
     },
+    "https://developer.apple.com/tutorials/data/documentation/sensorkit/srphotoplethysmogramopticalsample/backgroundnoise.json": {
+      "etag": "\"5317-65d55eea7f85a-df\"",
+      "file_path": "documentation/SensorKit/srphotoplethysmogramopticalsample/backgroundnoise.md",
+      "hash": "6f84eed6dd6a018d060d85e5c73a869c595f1a77a426cff14c8915dd52997805"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/sensorkit/srphotoplethysmogramopticalsample/backgroundnoiseoffset.json": {
+      "etag": "\"53dc-65d55eea7f85a-df\"",
+      "file_path": "documentation/SensorKit/srphotoplethysmogramopticalsample/backgroundnoiseoffset.md",
+      "hash": "07bdf0073ea9114e83e242d576b2b36aac353b0b3e7428c661d5f02196c08ada"
+    },
     "https://developer.apple.com/tutorials/data/documentation/sensorkit/srphotoplethysmogramopticalsample/condition.json": {
       "etag": "\"827c-65d55eea7f85a-df\"",
       "file_path": "documentation/SensorKit/srphotoplethysmogramopticalsample/condition.md",
@@ -5795,6 +5905,16 @@
       "file_path": "documentation/SensorKit/srphotoplethysmogramopticalsample/normalizedreflectance-15f2k.md",
       "hash": "08b87090c863025229528dce688998c1031caed10e628ac020c7f49e7efd27cc"
     },
+    "https://developer.apple.com/tutorials/data/documentation/sensorkit/srphotoplethysmogramopticalsample/normalizedreflectance-9aidm.json": {
+      "etag": "\"54d5-65d55eea7f85a-df\"",
+      "file_path": "documentation/SensorKit/srphotoplethysmogramopticalsample/normalizedreflectance-9aidm.md",
+      "hash": "fb1a9711c8dce3b7e1a919ec9ae381e4b6af3c9b979cf08f1d6934c4fdb4b4ca"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/sensorkit/srphotoplethysmogramopticalsample/pinknoise.json": {
+      "etag": "\"52fc-65d55eea7f85a-df\"",
+      "file_path": "documentation/SensorKit/srphotoplethysmogramopticalsample/pinknoise.md",
+      "hash": "87f73cb4be773f7d0b178f5a221d8b1a7436c3548ddf2428bc67c987dbd1b221"
+    },
     "https://developer.apple.com/tutorials/data/documentation/sensorkit/srphotoplethysmogramopticalsample/samplingfrequency.json": {
       "etag": "\"6c2a-65d55eea7f85a-df\"",
       "file_path": "documentation/SensorKit/srphotoplethysmogramopticalsample/samplingfrequency.md",
@@ -5804,6 +5924,11 @@
       "etag": "\"6810-65d55eea7f85a-df\"",
       "file_path": "documentation/SensorKit/srphotoplethysmogramopticalsample/signalidentifier.md",
       "hash": "f62c34977f7a86c5111c9b4dae9512b5c7047ab6edd59041a0807ad79db57a2c"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/sensorkit/srphotoplethysmogramopticalsample/whitenoise.json": {
+      "etag": "\"5392-65d55eea7f85a-df\"",
+      "file_path": "documentation/SensorKit/srphotoplethysmogramopticalsample/whitenoise.md",
+      "hash": "3ee5aa4613990f6d9e7292d3606ff3060046d70d9e0b831d3c874dc7b2b931b5"
     },
     "https://developer.apple.com/tutorials/data/documentation/sensorkit/srphotoplethysmogramsample.json": {
       "etag": "\"8064-65d55ee8df8d0-df\"",
@@ -6340,6 +6465,11 @@
       "file_path": "documentation/SensorKit/srspeechmetrics/timestamp.md",
       "hash": "2fd2360cd9a512e388a700663308d1710c92beec888ace480811c1e775ca794e"
     },
+    "https://developer.apple.com/tutorials/data/documentation/sensorkit/srspeechmetricssessionflags/srspeechmetricssessionflagsdefault.json": {
+      "etag": "\"1153-65d55eea960cc-df\"",
+      "file_path": "documentation/SensorKit/srspeechmetricssessionflags/srspeechmetricssessionflagsdefault.md",
+      "hash": "15ff0781dbc447d1c11b3745e1ebb7abfaabdd8d2fd6c46a8d78317980421848"
+    },
     "https://developer.apple.com/tutorials/data/documentation/sensorkit/srsupplementalcategory.json": {
       "etag": "\"687f-65d55ee9d345d-df\"",
       "file_path": "documentation/SensorKit/srsupplementalcategory.md",
@@ -6605,6 +6735,11 @@
       "file_path": "documentation/SensorKit/srwristtemperature/value.md",
       "hash": "4aed33c4c32bb8a239e91443142e8ce9a62198b0d1bfdb91279881f4884889e4"
     },
+    "https://developer.apple.com/tutorials/data/documentation/sensorkit/srwristtemperaturecondition/srwristtemperatureconditionnone.json": {
+      "etag": "\"1094-65d55eea337a4-df\"",
+      "file_path": "documentation/SensorKit/srwristtemperaturecondition/srwristtemperatureconditionnone.md",
+      "hash": "f2464c81baf4c64b370c5b83adbd829d68b2a2dc9b98e82f20cc4ded8a7fb89e"
+    },
     "https://developer.apple.com/tutorials/data/documentation/sensorkit/srwristtemperaturesensor.json": {
       "etag": "\"1c3e-65d55eea337a4-df\"",
       "file_path": "documentation/SensorKit/srwristtemperaturesensor.md",
@@ -6630,6 +6765,11 @@
       "file_path": "documentation/SensorKit/srwristtemperaturesession/startdate.md",
       "hash": "38f203cb1dac04caf737c6a3f23775724cfb8a474c76a08577d802ed968700c0"
     },
+    "https://developer.apple.com/tutorials/data/documentation/sensorkit/srwristtemperaturesession/temperatures-7p7du.json": {
+      "etag": "\"1206-65d55ee929bbc-df\"",
+      "file_path": "documentation/SensorKit/srwristtemperaturesession/temperatures-7p7du.md",
+      "hash": "696cb4a80e1325b0b0d6e97a60590488036061b2503024c8db78f79d9c8dc850"
+    },
     "https://developer.apple.com/tutorials/data/documentation/sensorkit/srwristtemperaturesession/temperatures-8bqrl.json": {
       "etag": "\"1bb4-65d55ee950381-df\"",
       "file_path": "documentation/SensorKit/srwristtemperaturesession/temperatures-8bqrl.md",
@@ -6643,8 +6783,8 @@
   },
   "metadata": {
     "render": {
-      "version": 1
+      "version": 2
     },
-    "total_pages": 1328
+    "total_pages": 1356
   }
 }

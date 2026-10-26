@@ -27,6 +27,8 @@ extern NSErrorDomain const ILMessageFilterErrorDomain;
 ### Errors
 - [struct ILMessageFilterError](./ilmessagefiltererror-swift.struct.md)
   An error type that indicates problems with network requests and responses related to IdentityLookup APIs.
+- [ILMessageFilterError](./ilmessagefiltererror-swift.struct/code.md)
+  IdentityLookup error codes.
 
 
 ---

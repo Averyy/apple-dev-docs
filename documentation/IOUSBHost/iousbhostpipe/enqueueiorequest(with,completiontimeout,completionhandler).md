@@ -55,6 +55,12 @@ Use this method to issue an asynchronous input/output request on a bulk or inter
   The default completion timeout for input/output requests.
 - [func clearStall() throws](./clearstall%28%29.md)
   Clears the halt condition of the pipe.
+- [- sendIORequestWithData:bytesTransferred:completionTimeout:error:](./sendiorequestwithdata_bytestransferred_completiontimeout_error_.md)
+  Sends an input/output request on the pipe.
+- [- abortWithOption:error:](./abortwithoption_error_.md)
+  Aborts pending input/output requests.
+- [- abortWithError:](./abortwitherror_.md)
+  Aborts pending input/output requests synchronously.
 
 
 ---

@@ -27,6 +27,8 @@ static simd_int4 simd_make_int4(int x, simd_int2 yz, int w);
   Returns a new vector from two scalar values and a vector.
 - [func simd_make_int4(Int32, simd_int3) -> simd_int4](./simd_make_int4%28_,_%29-6p0ui.md)
   Returns a new vector from a scalar value and a vector.
+- [vector4](./vector4-6wxif.md)
+  Returns a new vector from a vector and a scalar value.
 
 
 ---

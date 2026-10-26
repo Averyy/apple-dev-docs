@@ -43,6 +43,13 @@ class NEPacketTunnelNetworkSettings
   The number of bytes added to each tunneled packet for storing tunneling protocol headers.
 - [var mtu: NSNumber?](./nepackettunnelnetworksettings/mtu.md)
   The size of the maximum trasnmission unit, in bytes.
+### Instance Properties
+- [enforceRoutes](./nepackettunnelnetworksettings/enforceroutes.md)
+- [excludeAPNs](./nepackettunnelnetworksettings/excludeapns.md)
+- [excludeCellularServices](./nepackettunnelnetworksettings/excludecellularservices.md)
+- [excludeDeviceCommunication](./nepackettunnelnetworksettings/excludedevicecommunication.md)
+- [excludeLocalNetworks](./nepackettunnelnetworksettings/excludelocalnetworks.md)
+- [includeAllNetworks](./nepackettunnelnetworksettings/includeallnetworks.md)
 
 ## Relationships
 

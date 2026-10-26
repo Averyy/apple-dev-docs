@@ -30,6 +30,8 @@ class ASPasskeyCredentialIdentity
   Initializes a passkey credential identity.
 - [convenience init(relyingPartyIdentifier: String, userName: String, credentialID: Data, userHandle: Data, recordIdentifier: String?)](./aspasskeycredentialidentity/init%28relyingpartyidentifier,username,credentialid,userhandle,recordidentifier%29-9iuhb.md)
   Creates and initializes a passkey credential identity.
+- [- initWithRelyingPartyIdentifier:userName:credentialID:userHandle:recordIdentifier:](./aspasskeycredentialidentity/initwithrelyingpartyidentifier_username_credentialid_userhandle_recordidentifier_.md)
+  Initializes a passkey credential identity.
 ### Ordering credential identities
 - [var rank: Int](./aspasskeycredentialidentity/rank.md)
   An indicator that enables you to prioritize credential identities relative to each other.

@@ -40,6 +40,8 @@ The initialized locale.
 ### Initializing a Locale
 - [init(localeIdentifier: String)](./init%28localeidentifier%29.md)
   Initializes a locale using a given locale identifier.
+- [+ localeWithLocaleIdentifier:](./localewithlocaleidentifier_.md)
+  Returns a locale initialized using the given locale identifier.
 
 
 ---

@@ -36,6 +36,10 @@ You typically use this class to save a low-level representation of a composition
   Creates an object that presents an empty composition track segment.
 - [init(url: URL, trackID: CMPersistentTrackID, sourceTimeRange: CMTimeRange, targetTimeRange: CMTimeRange)](./avcompositiontracksegment/init%28url,trackid,sourcetimerange,targettimerange%29-4rc2g.md)
   Creates an object that presents a segment of a media file that the specified URL references.
+- [+ compositionTrackSegmentWithTimeRange:](./avcompositiontracksegment/compositiontracksegmentwithtimerange_.md)
+  Returns a new object that presents an empty composition track segment.
+- [+ compositionTrackSegmentWithURL:trackID:sourceTimeRange:targetTimeRange:](./avcompositiontracksegment/compositiontracksegmentwithurl_trackid_sourcetimerange_targettimerange_.md)
+  Returns a new an object that presents a segment of a media file that the specified URL references.
 ### Accessing segment properties
 - [var sourceURL: URL?](./avcompositiontracksegment/sourceurl.md)
   A URL of the container file whose media this track segment presents.

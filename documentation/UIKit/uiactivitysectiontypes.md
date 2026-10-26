@@ -26,6 +26,8 @@ enum UIActivitySectionTypes : NSUInteger;
 - [init(rawValue: UInt)](./uiactivitysectiontypes/init%28rawvalue%29.md)
 ### Type Properties
 - [static var peopleSuggestions: UIActivitySectionTypes](./uiactivitysectiontypes/peoplesuggestions.md)
+### Enumeration Cases
+- [UIActivitySectionTypesNone](./uiactivitysectiontypes/uiactivitysectiontypesnone.md)
 
 ## Relationships
 

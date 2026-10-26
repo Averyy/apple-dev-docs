@@ -40,6 +40,8 @@ Use an instance of this class to manage a queue of player items.
 ### Creating a queue player
 - [init(items: [AVPlayerItem])](./avqueueplayer/init%28items%29.md)
   Creates an object that plays a queue of items.
+- [+ queuePlayerWithItems:](./avqueueplayer/queueplayerwithitems_.md)
+  Returns an object that plays a queue of items.
 ### Managing the player queue
 - [func items() -> [AVPlayerItem]](./avqueueplayer/items%28%29.md)
   Returns an array of the currently enqueued items.

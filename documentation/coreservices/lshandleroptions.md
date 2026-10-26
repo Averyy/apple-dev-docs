@@ -29,6 +29,10 @@ typedef enum LSHandlerOptions : OptionBits {
 ### Constants
 - [static var ignoreCreator: LSHandlerOptions](./lshandleroptions/api-1445418-ignorecreator.md)
   When set, causes Launch Services to ignorethe content item’s creator when selecting a role handler for thespecified content type.
+- [kLSHandlerOptionsDefault](./lshandleroptions/klshandleroptionsdefault.md)
+  When set, causes Launch Services to use a contentitem’s creator (when available) to select a handler. This is thedefault setting.
+- [kLSHandlerOptionsIgnoreCreator](./lshandleroptions/klshandleroptionsignorecreator.md)
+  When set, causes Launch Services to ignorethe content item’s creator when selecting a role handler for thespecified content type.
 
 ## Relationships
 

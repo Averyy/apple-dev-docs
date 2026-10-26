@@ -37,6 +37,8 @@ struct CAFrameRateRange;
 - [var preferred: Float?](./caframeraterange/preferred-7l3ki.md)
 ### Type Properties
 - [static let `default`: CAFrameRateRange](./caframeraterange/default.md)
+### Operator Functions
+- [preferred](./caframeraterange/preferred-39tu4.md)
 
 ## Relationships
 

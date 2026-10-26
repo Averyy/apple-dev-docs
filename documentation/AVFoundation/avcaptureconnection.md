@@ -37,6 +37,10 @@ You can add an `AVCaptureConnection` instance to a session using the [`addConnec
   Creates a capture connection that represents a connection between multiple input ports and an output.
 - [init(inputPort: AVCaptureInput.Port, videoPreviewLayer: AVCaptureVideoPreviewLayer)](./avcaptureconnection/init%28inputport,videopreviewlayer%29.md)
   Creates a capture connection that represents a connection between an input port and a video preview layer.
+- [+ connectionWithInputPorts:output:](./avcaptureconnection/connectionwithinputports_output_.md)
+  Returns a capture connection that represents a connection between multiple input ports and an output.
+- [+ connectionWithInputPort:videoPreviewLayer:](./avcaptureconnection/connectionwithinputport_videopreviewlayer_.md)
+  Returns a capture connection that represents a connection between an input port and a video preview layer.
 ### Enabling a connection
 - [var isEnabled: Bool](./avcaptureconnection/isenabled.md)
   Turns the connection on and off.

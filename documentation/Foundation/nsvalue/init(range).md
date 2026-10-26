@@ -38,6 +38,9 @@ A new value object that contains the range information.
 ### Working with Range Values
 - [var rangeValue: NSRange](./rangevalue.md)
   The Foundation range structure representation of the value.
+### Related Documentation
+- [NSRange](../nsrange-c.struct.md)
+  A structure used to describe a portion of a series, such as characters in a string or objects in an array.
 
 
 ---

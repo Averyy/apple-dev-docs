@@ -30,6 +30,8 @@ Actually sending an Apple event to a Mach port is an advanced technique and is n
 ### Constants
 - [var typeMachPort: DescType](../../coreservices/typemachport.md)
   Indicates a descriptor that specifies a Mach port.
+- [typeMachPort](../../coreservices/api-1542936-typekernelprocessid/typemachport.md)
+  Indicates a descriptor that specifies a Mach port.
 
 
 ---

@@ -48,6 +48,10 @@ extern SHMediaItemProperty const SHMediaItemExplicitContent;
   The date the media item was created.
 - [static let timeRanges: SHMediaItemProperty](./timeranges.md)
   The key to access the time ranges property of a media item.
+- [SHMediaItemFrequencySkewRanges](../shmediaitemfrequencyskewranges.md)
+  The key to access the frequency skew ranges property of a media item.
+- [SHMediaItemTimeRanges](../shmediaitemtimeranges.md)
+  The key to access the time ranges property of a media item.
 
 
 ---

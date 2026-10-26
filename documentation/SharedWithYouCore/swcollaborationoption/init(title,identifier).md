@@ -33,6 +33,8 @@ init(title: String, identifier: String)
 ### Creating collaboration options
 - [convenience init(title: String, identifier: String, subtitle: String, selected: Bool, requiredOptionsIdentifiers: [String])](./init%28title,identifier,subtitle,selected,requiredoptionsidentifiers%29.md)
   Creates and initializes a collaboration option object with the provided values.
+- [- initWithTitle:identifier:](./initwithtitle_identifier_.md)
+  Creates and initializes a collaboration option object.
 
 
 ---

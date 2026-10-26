@@ -28,6 +28,8 @@ class ASPasswordCredentialRequest
 ### Creating password credential requests
 - [init(credentialIdentity: ASPasswordCredentialIdentity)](./aspasswordcredentialrequest/init%28credentialidentity%29.md)
   Initializes a password credential request object.
+- [+ requestWithCredentialIdentity:](./aspasswordcredentialrequest/requestwithcredentialidentity_.md)
+  Creates and initializes a password credential request object.
 ### Initializers
 - [init?(coder: NSCoder)](./aspasswordcredentialrequest/init%28coder%29.md)
 

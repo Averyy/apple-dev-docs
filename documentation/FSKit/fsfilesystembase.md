@@ -37,6 +37,7 @@ Both [`FSFileSystem`](./fsfilesystem.md) and [`FSUnaryFileSystem`](./fsunaryfile
 - [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 ### Conforming Types
 - [FSUnaryFileSystem](./fsunaryfilesystem.md)
+- [FSFileSystem](./fsfilesystem.md)
 
 ## See Also
 
@@ -45,6 +46,8 @@ Both [`FSFileSystem`](./fsfilesystem.md) and [`FSUnaryFileSystem`](./fsunaryfile
   An abstract base class for implementing a minimal file system.
 - [class FSFileName](./fsfilename.md)
   The name of a file, expressed as a data buffer.
+- [FSFileSystem](./fsfilesystem.md)
+  An abstract base class for implementing a full-featured file system.
 
 
 ---

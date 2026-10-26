@@ -97,6 +97,8 @@ The integer range for the set of generic audio unit property identifiers is 0 th
 - [var kAudioUnitProperty_SupportsMPE: AudioUnitPropertyID](./kaudiounitproperty_supportsmpe.md)
 - [var kAudioUnitProperty_TailTime: AudioUnitPropertyID](./kaudiounitproperty_tailtime.md)
   A read-only `Float64` value valid on the audio unit global scope.
+- [kAudioUnitProperty_RenderContextObserver](./kaudiounitproperty_rendercontextobserver.md)
+  The block that the system calls when the rendering context changes.
 
 ## See Also
 

@@ -39,6 +39,10 @@ For the last frame this value will be nil.
   A value describing the processing request in a parameters submission object.
 - [VTFrameRateConversionParameters.SubmissionMode](./submissionmode-swift.enum.md)
   A value describing the processing request in a parameters submission object.
+- [interpolationPhase](./interpolationphase-6wdns.md)
+  An array of floating-point values that indicate which intervals to insert a frame between the current and next frame.
+- [destinationFrames](./destinationframes.md)
+  A caller-allocated array of frames that contains the pixel buffers to receive the results.
 
 
 ---

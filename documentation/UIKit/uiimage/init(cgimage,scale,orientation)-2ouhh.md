@@ -50,6 +50,23 @@ An initialized `UIImage` object. In Objective-C, this method returns `nil` if th
 - [init(ciImage: CIImage, scale: CGFloat, orientation: UIImage.Orientation)](./init%28ciimage,scale,orientation%29-9gpyn.md)
   Initializes and returns an image object with the specified Core Image object and properties.
 - [struct UIImageReader](../uiimagereader-swift.struct.md)
+- [+ imageWithContentsOfFile:](./imagewithcontentsoffile_.md)
+  Creates and returns an image object by loading the image data from the file at the specified path.
+- [+ imageWithData:](./imagewithdata_.md)
+  Creates and returns an image object that uses the specified image data.
+- [+ imageWithData:scale:](./imagewithdata_scale_.md)
+  Creates and returns an image object that uses the specified image data and scale factor.
+- [+ imageWithCGImage:](./imagewithcgimage_.md)
+  Creates and returns an image object representing the specified Quartz image.
+- [+ imageWithCGImage:scale:orientation:](./imagewithcgimage_scale_orientation_.md)
+  Creates and returns an image object with the specified scale and orientation factors.
+- [+ imageWithCIImage:](./imagewithciimage_.md)
+  Creates and returns an image object that contains a Core Image object.
+- [+ imageWithCIImage:scale:orientation:](./imagewithciimage_scale_orientation_.md)
+  Creates and returns an image object based on a Core Image object and the specified attributes.
+- [UIImageReader](../uiimagereader-c.class.md)
+- [UIImageReaderConfiguration](../uiimagereaderconfiguration.md)
+  The properties that a reader uses to decode images.
 
 
 ---

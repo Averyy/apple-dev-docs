@@ -92,6 +92,8 @@ enum MLCArithmeticOperation : int32_t;
 ### Debugging
 - [var debugDescription: String](./mlcarithmeticoperation/debugdescription.md)
   A textual description of the arithmetic operation you use for debugging.
+- [MLCArithmeticOperationCount](./mlcarithmeticoperation/mlcarithmeticoperationcount.md)
+  The total number of arithmetic operations.
 ### Initializers
 - [init?(rawValue: Int32)](./mlcarithmeticoperation/init%28rawvalue%29.md)
 

@@ -120,6 +120,8 @@ You load the tracks for an asset by asynchronously loading its [`tracks`](./avpa
   Loads chapter metadata that contains the specified title locale and common keys.
 - [func loadChapterMetadataGroups(bestMatchingPreferredLanguages: [String], completionHandler: ([AVTimedMetadataGroup]?, (any Error)?) -> Void)](./avasset/loadchaptermetadatagroups%28bestmatchingpreferredlanguages,completionhandler%29.md)
   Loads chapter metadata with a locale that best matches the list of preferred languages.
+- [- loadChapterMetadataGroupsWithTitleLocale:containingItemsWithCommonKeys:completionHandler:](./avasset/loadchaptermetadatagroupswithtitlelocale_containingitemswithcommonkeys_completionhandler_.md)
+  Loads chapter metadata that contains the specified title locale and common keys.
 ### Loading content protections
 - [static var hasProtectedContent: AVAsyncProperty<Root, Bool>](./avpartialasyncproperty/hasprotectedcontent.md)
   A Boolean value that indicates whether the asset contains protected content.
@@ -143,6 +145,94 @@ You load the tracks for an asset by asynchronously loading its [`tracks`](./avpa
   Review unsupported symbols and their replacements.
 ### Initializers
 - [convenience init(URL: URL)](./avasset/init%28url%29-8cql6.md)
+### Accessing duration and timing
+- [duration](./avasset/duration.md)
+  A time value that indicates the asset’s duration.
+- [providesPreciseDurationAndTiming](./avasset/providesprecisedurationandtiming.md)
+  A Boolean value that indicates whether the asset provides precise duration and timing.
+- [minimumTimeOffsetFromLive](./avasset/minimumtimeoffsetfromlive.md)
+  A time value that indicates how closely playback follows the latest live stream content.
+### Accessing tracks
+- [tracks](./avasset/tracks.md)
+  The tracks an asset contains.
+- [- trackWithTrackID:](./avasset/track%28withtrackid%29.md)
+  Returns a track that contains the specified identifier.
+- [- tracksWithMediaType:](./avasset/tracks%28withmediatype%29.md)
+  Returns tracks that contain media of a specified type.
+- [- tracksWithMediaCharacteristic:](./avasset/tracks%28withmediacharacteristic%29.md)
+  Returns an array of asset tracks matching the specified media characteristic.
+- [- unusedTrackID](./avasset/unusedtrackid%28%29.md)
+  Returns an identifier that no other tracks in the asset use.
+### Accessing track groups
+- [trackGroups](./avasset/trackgroups.md)
+  The track groups an asset contains.
+### Accessing metadata
+- [metadata](./avasset/metadata.md)
+  An array of metadata items for all metadata identifiers for which a value is available.
+- [commonMetadata](./avasset/commonmetadata.md)
+  The metadata items an asset contains for common metadata identifiers that provide a value.
+- [availableMetadataFormats](./avasset/availablemetadataformats.md)
+  The metadata formats this asset contains.
+- [- metadataForFormat:](./avasset/metadata%28forformat%29.md)
+  Returns an array of metadata items from the container with the specified format.
+- [creationDate](./avasset/creationdate.md)
+  A metadata item that indicates the asset’s creation date.
+- [lyrics](./avasset/lyrics.md)
+  The lyrics of the asset in a language suitable for the current locale.
+### Accessing suitability
+- [playable](./avasset/isplayable.md)
+  A Boolean value that indicates whether the asset has playable content.
+- [exportable](./avasset/isexportable.md)
+  A Boolean value that indicates whether you can export this asset using an export session.
+- [readable](./avasset/isreadable.md)
+  A Boolean value that indicates whether you can extract the asset’s media data using an asset reader.
+- [composable](./avasset/iscomposable.md)
+  A Boolean value that indicates whether you can use the asset as a segment of a composition track.
+- [compatibleWithAirPlayVideo](./avasset/iscompatiblewithairplayvideo.md)
+  A Boolean value that indicates whether the asset is compatible with AirPlay Video.
+- [compatibleWithSavedPhotosAlbum](./avasset/iscompatiblewithsavedphotosalbum.md)
+  A Boolean value that indicates whether you can write the asset to the Saved Photos album.
+### Accessing asset preferences
+- [preferredRate](./avasset/preferredrate.md)
+  The asset’s rate preference for playing its media.
+- [preferredVolume](./avasset/preferredvolume.md)
+  The asset’s volume preference for playing its audible media.
+- [preferredTransform](./avasset/preferredtransform.md)
+  The asset’s transform preference to apply to its visual content during presentation or processing.
+- [preferredMediaSelection](./avasset/preferredmediaselection.md)
+  The default media selections for this asset’s media selection groups.
+- [preferredDisplayCriteria](./avasset/preferreddisplaycriteria.md)
+  The asset’s display mode preference for optimal playback of its content.
+### Accessing media selections
+- [allMediaSelections](./avasset/allmediaselections.md)
+  The array of available media selections for this asset.
+- [availableMediaCharacteristicsWithMediaSelectionOptions](./avasset/availablemediacharacteristicswithmediaselectionoptions.md)
+  An array of media characteristics for which a media selection option is available.
+- [- mediaSelectionGroupForMediaCharacteristic:](./avasset/mediaselectiongroup%28formediacharacteristic%29.md)
+  Returns a media selection group that contains one or more options with the specified media characteristic.
+### Accessing chapter metadata
+- [availableChapterLocales](./avasset/availablechapterlocales.md)
+  The locales of the asset’s chapter metadata.
+- [- chapterMetadataGroupsWithTitleLocale:containingItemsWithCommonKeys:](./avasset/chaptermetadatagroups%28withtitlelocale,containingitemswithcommonkeys%29.md)
+  Returns an array of chapters that contain the specified title locale and common keys.
+- [- chapterMetadataGroupsBestMatchingPreferredLanguages:](./avasset/chaptermetadatagroups%28bestmatchingpreferredlanguages%29.md)
+  Returns an array of chapters with a locale that best matches the list of preferred languages.
+### Accessing content protections
+- [hasProtectedContent](./avasset/hasprotectedcontent.md)
+  A Boolean value that indicates whether the asset contains protected content.
+### Accessing fragment support
+- [canContainFragments](./avasset/cancontainfragments.md)
+  A Boolean value that indicates whether you can extend the asset by fragments.
+- [containsFragments](./avasset/containsfragments.md)
+  A Boolean value that indicates whether at least one movie fragment extends the asset.
+- [overallDurationHint](./avasset/overalldurationhint.md)
+  The total duration of fragments that currently exist, or may exist in the future.
+### Inspecting visual attributes
+- [naturalSize](./avasset/naturalsize.md)
+  The encoded or authored size of the visual portion of the asset.
+### Instance Properties
+- [constituentFileURLs](./avasset/constituentfileurls.md)
+  The list of file URLs that collectively represent the media asset.
 
 ## Relationships
 

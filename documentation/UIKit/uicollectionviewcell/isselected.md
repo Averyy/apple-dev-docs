@@ -44,6 +44,14 @@ You typically don’t set the value of this property directly. Changing the valu
   The type of block for handling updates to the cell’s configuration using the current state.
 - [var isHighlighted: Bool](./ishighlighted.md)
   The highlight state of the cell.
+- [configurationState](./configurationstate-4269k.md)
+  The current configuration state of the cell.
+- [- updateConfigurationUsingState:](./updateconfigurationusingstate_.md)
+  Updates the cell’s configuration using the current state.
+- [configurationUpdateHandler](./configurationupdatehandler-ajhn.md)
+  A block for handling updates to the cell’s configuration using the current state.
+- [UICollectionViewCellConfigurationUpdateHandler](../uicollectionviewcellconfigurationupdatehandler.md)
+  The type of block for handling updates to the cell’s configuration using the current state.
 
 
 ---

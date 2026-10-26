@@ -46,6 +46,9 @@ Metal provides acceleration structures with a two-level hierarchy. The bottom la
   The mode to use when handling timestamps after the end time.
 - [enum MTLMotionBorderMode](./mtlmotionbordermode.md)
   Options for specifying how the acceleration structure handles timestamps that are outside the specified range.
+### Creating a primitive geometry descriptor
+- [+ descriptor](./mtlprimitiveaccelerationstructuredescriptor/descriptor.md)
+  Creates a new primitive descriptor.
 
 ## Relationships
 

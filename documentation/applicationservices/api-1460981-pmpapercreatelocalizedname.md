@@ -52,6 +52,8 @@ In macOS 10.5 and later, Apple recommends using this function instead of [PMPape
   Obtains the printer ID of the printer to which a given paper corresponds.
 - [func PMPaperGetPPDPaperName(PMPaper, UnsafeMutablePointer<Unmanaged<CFString>?>) -> OSStatus](./api-1461039-pmpapergetppdpapername.md)
   Obtains the PPD paper name for a given paper.
+- [PMPaperGetName](./core_printing/api-1805534-pmpapergetname.md)
+  Obtains the name for a given paper.
 
 
 ---

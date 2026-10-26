@@ -42,6 +42,8 @@ A newly initialized range object whose minimum value is `—Inf` and whose maxim
   Creates and initializes a new range object that specifies a constant value.
 - [init(lowerLimit: CGFloat, upperLimit: CGFloat)](./init%28lowerlimit,upperlimit%29.md)
   Initializes a new range object.
+- [+ rangeWithLowerLimit:upperLimit:](./rangewithlowerlimit_upperlimit_.md)
+  Creates and initializes a new range object.
 
 
 ---

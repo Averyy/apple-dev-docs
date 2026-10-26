@@ -58,6 +58,11 @@ typedef enum { ... } hv_feature_reg_t;
   Creates a new instance of the hardware feature registers.
 - [init(rawValue: UInt32)](./hv_feature_reg_t/init%28rawvalue%29.md)
   Creates a new instance of the hardware feature registers.
+### Enumeration Cases
+- [HV_FEATURE_REG_ID_AA64ISAR2_EL1](./hv_feature_reg_id_aa64isar2_el1.md)
+- [HV_FEATURE_REG_ID_AA64MMFR3_EL1](./hv_feature_reg_id_aa64mmfr3_el1.md)
+- [HV_FEATURE_REG_ID_AA64MMFR4_EL1](./hv_feature_reg_id_aa64mmfr4_el1.md)
+- [HV_FEATURE_REG_ID_AA64PFR2_EL1](./hv_feature_reg_id_aa64pfr2_el1.md)
 
 ## Relationships
 

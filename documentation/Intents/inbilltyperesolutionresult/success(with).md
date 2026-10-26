@@ -42,6 +42,10 @@ Use this method to create a result object when you’re able to resolve the para
 ### Creating a Resolution Result Object
 - [class func confirmationRequired(with: INBillType) -> Self](./confirmationrequired%28with%29.md)
   Creates an object whose resolution requires that the user must confirm the value before proceeding.
+- [+ successWithResolvedValue:](./successwithresolvedvalue_.md)
+  Creates an object whose resolution involves the successful matching of the specified attribute.
+- [+ confirmationRequiredWithValueToConfirm:](./confirmationrequiredwithvaluetoconfirm_.md)
+  Creates an object whose resolution requires that the user must confirm the value before proceeding.
 
 
 ---

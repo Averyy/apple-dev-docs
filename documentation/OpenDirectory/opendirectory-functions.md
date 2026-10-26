@@ -41,6 +41,8 @@ This document describes the functions, constants, and data types used to interac
   Sets credentials for interacting with a node.
 - [func ODNodeSetCredentialsExtended(ODNodeRef!, String!, String!, CFArray!, UnsafeMutablePointer<Unmanaged<CFArray>?>!, UnsafeMutablePointer<Unmanaged<ODContextRef>?>!, UnsafeMutablePointer<Unmanaged<CFError>?>!) -> Bool](./odnodesetcredentialsextended%28_,_,_,_,_,_,_%29.md)
   Sets credentials for interacting with a node using a specified authentication method.
+- [ODNodeSetCredentialsUsingKerberosCache](./odnodesetcredentialsusingkerberoscache.md)
+  Sets credentials for interacting with a node with the Kerberos cache.
 ### Working with Queries
 - [func ODQueryCopyResults(ODQueryRef!, Bool, UnsafeMutablePointer<Unmanaged<CFError>?>!) -> Unmanaged<CFArray>!](./odquerycopyresults%28_,_,_%29.md)
   Returns results from a query synchronously.
@@ -97,6 +99,10 @@ This document describes the functions, constants, and data types used to interac
   Verifies a given password for a record.
 - [func ODRecordVerifyPasswordExtended(ODRecordRef!, String!, CFArray!, UnsafeMutablePointer<Unmanaged<CFArray>?>!, UnsafeMutablePointer<Unmanaged<ODContextRef>?>!, UnsafeMutablePointer<Unmanaged<CFError>?>!) -> Bool](./odrecordverifypasswordextended%28_,_,_,_,_,_%29.md)
   Verifies a given password for a record given a specified authentication method.
+- [ODRecordCopyPasswordPolicy](./odrecordcopypasswordpolicy.md)
+  Returns the password policies of a record.
+- [ODRecordSetNodeCredentialsUsingKerberosCache](./odrecordsetnodecredentialsusingkerberoscache.md)
+  Sets credentials for interacting with a record’s node with the Kerberos cache.
 ### Working with Sessions
 - [func ODSessionCopyNodeNames(CFAllocator!, ODSessionRef!, UnsafeMutablePointer<Unmanaged<CFError>?>!) -> Unmanaged<CFArray>!](./odsessioncopynodenames%28_,_,_%29.md)
   Returns the names of nodes registered in a given session.

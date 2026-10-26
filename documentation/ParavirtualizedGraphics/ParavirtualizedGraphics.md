@@ -56,6 +56,10 @@ To implement accelerated graphics inside your virtualization solution, you need 
 - [var PG_SUPPORT_CREATE_DEVICE: Int32](./pg_support_create_device.md)
 ### Functions
 - [func PGCreateDeviceWithDescriptor(PGDeviceDescriptor) -> (any PGDevice)?](./pgcreatedevicewithdescriptor%28_%29.md)
+- [PGNewDeviceWithDescriptor](./pgnewdevicewithdescriptor.md)
+### Macros
+- [PG_EXPORT](./pg_export.md)
+- [PG_EXTERN](./pg_extern.md)
 
 
 ---

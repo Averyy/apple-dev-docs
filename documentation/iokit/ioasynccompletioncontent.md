@@ -26,6 +26,9 @@ typedef struct IOAsyncCompletionContent {
 - [init()](./ioasynccompletioncontent/api-1514427-init.md)
 ### Instance Properties
 - [var result: IOReturn](./ioasynccompletioncontent/api-1455594-result.md)
+- [args](./ioasynccompletioncontent/api-1425200-args.md)
+- [args](./ioasynccompletioncontent/api-1455614-args.md)
+- [result](./ioasynccompletioncontent/api-1425188-result.md)
 
 
 ---

@@ -1,0 +1,39 @@
+# kCMIOSampleBufferAttachment_MouseAndKeyboardModifiersKey_KeyboardModifiers
+
+**Framework**: Core Media I/O  
+**Kind**: var  
+**Role**: Global Variable
+
+**Availability**:
+- Mac Catalyst 13.0+
+- macOS 10.8+
+
+## Declaration
+
+```c
+extern CFStringRef kCMIOSampleBufferAttachment_MouseAndKeyboardModifiersKey_KeyboardModifiers;
+```
+
+## See Also
+
+### Constants
+- [kCMIOBlockBufferAttachmentKey_CVPixelBufferReference](./kcmioblockbufferattachmentkey_cvpixelbufferreference.md)
+- [kCMIOSampleBufferAttachment_MouseAndKeyboardModifiersKey_CursorFrameRect](./kcmiosamplebufferattachment_mouseandkeyboardmodifierskey_cursorframerect.md)
+- [kCMIOSampleBufferAttachment_MouseAndKeyboardModifiersKey_CursorIsDrawnInFramebuffer](./kcmiosamplebufferattachment_mouseandkeyboardmodifierskey_cursorisdrawninframebuffer.md)
+- [kCMIOSampleBufferAttachment_MouseAndKeyboardModifiersKey_CursorIsVisible](./kcmiosamplebufferattachment_mouseandkeyboardmodifierskey_cursorisvisible.md)
+- [kCMIOSampleBufferAttachment_MouseAndKeyboardModifiersKey_CursorPositionX](./kcmiosamplebufferattachment_mouseandkeyboardmodifierskey_cursorpositionx.md)
+- [kCMIOSampleBufferAttachment_MouseAndKeyboardModifiersKey_CursorPositionY](./kcmiosamplebufferattachment_mouseandkeyboardmodifierskey_cursorpositiony.md)
+- [kCMIOSampleBufferAttachment_MouseAndKeyboardModifiersKey_CursorReference](./kcmiosamplebufferattachment_mouseandkeyboardmodifierskey_cursorreference.md)
+- [kCMIOSampleBufferAttachment_MouseAndKeyboardModifiersKey_CursorScale](./kcmiosamplebufferattachment_mouseandkeyboardmodifierskey_cursorscale.md)
+- [kCMIOSampleBufferAttachment_MouseAndKeyboardModifiersKey_CursorSeed](./kcmiosamplebufferattachment_mouseandkeyboardmodifierskey_cursorseed.md)
+- [kCMIOSampleBufferAttachment_MouseAndKeyboardModifiersKey_KeyboardModifiersEvent](./kcmiosamplebufferattachment_mouseandkeyboardmodifierskey_keyboardmodifiersevent.md)
+- [kCMIOSampleBufferAttachment_MouseAndKeyboardModifiersKey_MouseButtonState](./kcmiosamplebufferattachment_mouseandkeyboardmodifierskey_mousebuttonstate.md)
+- [kCMIOSampleBufferAttachmentKey_CAAudioTimeStamp](./kcmiosamplebufferattachmentkey_caaudiotimestamp.md)
+- [kCMIOSampleBufferAttachmentKey_ClientSequenceID](./kcmiosamplebufferattachmentkey_clientsequenceid.md)
+- [kCMIOSampleBufferAttachmentKey_ClosedCaptionSampleBuffer](./kcmiosamplebufferattachmentkey_closedcaptionsamplebuffer.md)
+- [kCMIOSampleBufferAttachmentKey_DiscontinuityFlags](./kcmiosamplebufferattachmentkey_discontinuityflags.md)
+
+
+---
+
+*[View on Apple Developer](https://developer.apple.com/documentation/coremediaio/kcmiosamplebufferattachment_mouseandkeyboardmodifierskey_keyboardmodifiers)*

@@ -25,6 +25,14 @@ var kCMFormatDescriptionError_AllocationFailed: OSStatus { get }
 kCMFormatDescriptionError_AllocationFailed
 ```
 
+## See Also
+
+### Errors
+- [kCMFormatDescriptionError_InvalidParameter](./kcmformatdescriptionerror_invalidparameter.md)
+  An error that indicates that the function recieves an empty value for a parameter it requires.
+- [kCMFormatDescriptionError_ValueNotAvailable](./kcmformatdescriptionerror_valuenotavailable.md)
+  An error that indicates the format description doesn’t contain the value you request.
+
 
 ---
 

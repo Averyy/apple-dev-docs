@@ -30,6 +30,8 @@ class MPSCNNCrossChannelNormalizationGradientNode
 - [init(sourceGradient: MPSNNImageNode, sourceImage: MPSNNImageNode, gradientState: MPSNNGradientStateNode, kernelSize: Int)](./mpscnncrosschannelnormalizationgradientnode/init%28sourcegradient,sourceimage,gradientstate,kernelsize%29.md)
 ### Instance Properties
 - [var kernelSize: Int](./mpscnncrosschannelnormalizationgradientnode/kernelsize.md)
+### Type Methods
+- [+ nodeWithSourceGradient:sourceImage:gradientState:kernelSize:](./mpscnncrosschannelnormalizationgradientnode/nodewithsourcegradient_sourceimage_gradientstate_kernelsize_.md)
 
 ## Relationships
 

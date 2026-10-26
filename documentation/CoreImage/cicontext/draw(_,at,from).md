@@ -52,6 +52,8 @@ On iOS platforms, this method draws the image onto a render buffer for the OpenG
   Creates an OpenGL-based Core Image context using a GPU that is not currently driving a display, with the specified options.
 - [func createCGLayer(with: CGSize, info: CFDictionary?) -> CGLayer?](./createcglayer%28with,info%29.md)
   Creates a CGLayer object from the provided parameters.
+- [+ contextWithCGLContext:pixelFormat:options:](./contextwithcglcontext_pixelformat_options_.md)
+  Creates a Core Image context from a CGL context, using the specified options and pixel format object.
 
 
 ---

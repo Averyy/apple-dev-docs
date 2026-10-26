@@ -49,6 +49,10 @@ Pass a callback of this type to [`VTDecompressionSessionDecodeFrameWithMultiImag
 ### Decoding Multi-Image Frames
 - [func VTIsStereoMVHEVCDecodeSupported() -> Bool](./vtisstereomvhevcdecodesupported%28%29.md)
   Returns a Boolean value that indicates whether the system supports MV-HEVC decoding.
+- [VTDecompressionSessionSetMultiImageCallback](./vtdecompressionsessionsetmultiimagecallback.md)
+  Provides a callback capable of receiving multiple images for individual frame decoding requests.
+- [VTDecompressionSessionDecodeFrameWithMultiImageCapableOutputHandler](./vtdecompressionsessiondecodeframewithmultiimagecapableoutputhandler.md)
+  Decompresses a multi-image frame and calls the specified output handler upon completion.
 
 
 ---

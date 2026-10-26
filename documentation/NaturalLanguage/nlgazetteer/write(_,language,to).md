@@ -40,6 +40,8 @@ class func write(_ dictionary: [String : [String]], language: NLLanguage?, to ur
   Creates a gazetteer from a data instance.
 - [init(dictionary: [String : [String]], language: NLLanguage?) throws](./init%28dictionary,language%29.md)
   Creates a gazetteer from a set of labels for terms represented by a dictionary.
+- [+ gazetteerWithContentsOfURL:error:](./gazetteerwithcontentsofurl_error_.md)
+  Creates a Natural Language gazetteer from a model created with the Create ML framework.
 
 
 ---

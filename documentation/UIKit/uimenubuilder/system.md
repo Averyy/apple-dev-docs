@@ -52,6 +52,8 @@ override func buildMenu(with builder: UIMenuBuilder) {
   Gets the action for the specified action identifier.
 - [func command(for: Selector, propertyList: Any?) -> UICommand?](./command%28for,propertylist%29.md)
   Gets the command for the specified selector and property list.
+- [- commandForAction:propertyList:](./commandforaction_propertylist_.md)
+  Gets the command for the specified selector and property list.
 
 
 ---

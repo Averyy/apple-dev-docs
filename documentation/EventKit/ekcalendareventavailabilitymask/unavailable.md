@@ -33,6 +33,8 @@ EKCalendarEventAvailabilityUnavailable
   The calendar supports the free event availability setting.
 - [static var tentative: EKCalendarEventAvailabilityMask](./tentative.md)
   The calendar supports the tentative event availability setting.
+- [EKCalendarEventAvailabilityNone](./ekcalendareventavailabilitynone.md)
+  The calendar does not support event availability settings.
 
 
 ---

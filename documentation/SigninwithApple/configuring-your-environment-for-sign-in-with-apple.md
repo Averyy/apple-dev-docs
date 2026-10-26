@@ -7,7 +7,7 @@ Authenticate users with your web service by associating an existing app with a S
 
 #### Overview
 
-To support Sign in with Apple on your website, or in your app on another platform, configure your developer account to associate a Sign in with Apple-enabled app with a Services ID and a private key. To support email communication with your users, register your domain names and outbound email sources. Your server can register for notifications for user account changes that affect your developer account. After configuration, use the Services ID as the client identifier when authenticating or validating users with [Sign in with Apple JS](https://developer.apple.com/documentation/signinwithapplejs) and [Sign in with Apple REST API](https://developer.apple.com/documentation/signinwithapplerestapi).
+To support Sign in with Apple on your website, or in your app on another platform, configure your developer account to associate a Sign in with Apple-enabled app with a Services ID and a private key. To support email communication with your users, register your domain names and outbound email sources. Your server can register for notifications for user account changes that affect your developer account. After configuration, use the Services ID as the client identifier when authenticating or validating users with [Sign in with Apple JS](../SigninwithAppleJS/SigninwithAppleJS.md) and [Sign in with Apple REST API](../SigninwithAppleRESTAPI/SigninwithAppleRESTAPI.md).
 
 ##### Enable an App ID
 
@@ -73,9 +73,9 @@ For more information about server-to-server notifications, see [Processing chang
 ## See Also
 
 ### Web support
-- [Sign in with Apple JS](https://developer.apple.com/documentation/signinwithapplejs)
+- [Sign in with Apple JS](../SigninwithAppleJS/SigninwithAppleJS.md)
   Provide users a fast, secure way to sign in to your web service with their Apple Account.
-- [Sign in with Apple REST API](https://developer.apple.com/documentation/signinwithapplerestapi)
+- [Sign in with Apple REST API](../SigninwithAppleRESTAPI/SigninwithAppleRESTAPI.md)
   Communicate between your app servers and Apple’s authentication servers.
 - [Displaying Sign in with Apple buttons on the web](./displaying-sign-in-with-apple-buttons-on-the-web.md)
   Configure the appearance of Sign in with Apple buttons with CSS styles.

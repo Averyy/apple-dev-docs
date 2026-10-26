@@ -31,6 +31,14 @@ Network.framework objects are reference-counted objects that can be used with Au
 
 The objects also conform to the description method of [`NSObject`](../ObjectiveC/nsobject-swift.class.md) to be used for debugging.
 
+## See Also
+
+### Memory Management
+- [nw_release](./nw_release.md)
+  Releases a reference count on a Network.framework object.
+- [nw_retain](./nw_retain.md)
+  Adds a reference count to a Network.framework object.
+
 
 ---
 

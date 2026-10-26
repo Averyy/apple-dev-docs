@@ -12,6 +12,7 @@
 - [typealias DNSServiceSleepKeepaliveReply](./dnsservicesleepkeepalivereply.md)
 - [typealias dnssd_sock_t](./dnssd_sock_t.md)
 - [typealias DNSServiceAttributeRef](./dnsserviceattributeref.md)
+- [DNSServiceAttribute](./dnsserviceattribute.md)
 
 ## See Also
 

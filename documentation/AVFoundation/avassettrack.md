@@ -119,9 +119,78 @@ A track, like its containing [`AVAsset`](./avasset.md), doesn’t load all of it
   Creates a sample cursor and positions it at the track’s first media sample in decode order.
 - [func makeSampleCursorAtLastSampleInDecodeOrder() -> AVSampleCursor?](./avassettrack/makesamplecursoratlastsampleindecodeorder%28%29.md)
   Creates a sample cursor and positions it at the track’s last media sample in decode order.
+- [canProvideSampleCursors](./avassettrack/canprovidesamplecursors.md)
+  A Boolean value that indicates whether the track can provide instances of sample cursors to traverse its media samples and discover information.
 ### Deprecated
 - [Deprecated symbols](./avassettrack-deprecated-symbols.md)
   Review unsupported symbols and their replacements.
+### Accessing track information
+- [formatDescriptions](./avassettrack/formatdescriptions.md)
+  The format descriptions of the media samples that a track references.
+- [playable](./avassettrack/isplayable.md)
+  A Boolean value that indicates whether the track is playable in the current environment.
+- [decodable](./avassettrack/isdecodable.md)
+  A Boolean value that indicates whether the track is decodable in the current environment.
+- [enabled](./avassettrack/isenabled.md)
+  A Boolean value that indicates whether the track’s container enables it.
+- [selfContained](./avassettrack/isselfcontained.md)
+  A Boolean value that indicates whether this track references sample data only within its container file.
+- [totalSampleDataLength](./avassettrack/totalsampledatalength.md)
+  The total number of bytes of sample data the track requires.
+- [- hasMediaCharacteristic:](./avassettrack/hasmediacharacteristic%28_%29.md)
+  Returns a Boolean value that indicates whether the track references media with the specified media characteristic.
+### Accessing temporal information
+- [timeRange](./avassettrack/timerange.md)
+  The time range of the track within the overall timeline of the asset.
+- [naturalTimeScale](./avassettrack/naturaltimescale.md)
+  The natural time scale of the media that a track references.
+- [estimatedDataRate](./avassettrack/estimateddatarate.md)
+  The estimated data rate, in bits per second, of the media that the track references.
+- [- samplePresentationTimeForTrackTime:](./avassettrack/samplepresentationtime%28fortracktime%29.md)
+  Maps the specified track time through the appropriate time mapping and returns the resulting sample presentation time.
+### Accessing language support
+- [languageCode](./avassettrack/languagecode.md)
+  The language code of the track.
+- [extendedLanguageTag](./avassettrack/extendedlanguagetag.md)
+  The language tag of the track.
+### Accessing visual characteristics
+- [naturalSize](./avassettrack/naturalsize.md)
+  The natural dimensions of the media data that the track references.
+- [preferredTransform](./avassettrack/preferredtransform.md)
+  The track’s transform preference to apply to its visual content during presentation or processing.
+### Accessing audible characteristics
+- [preferredVolume](./avassettrack/preferredvolume.md)
+  The track’s volume preference for playing its audible media.
+- [hasAudioSampleDependencies](./avassettrack/hasaudiosampledependencies.md)
+  A Boolean value that indicates whether the track has sample dependencies.
+### Accessing frame-based characteristics
+- [nominalFrameRate](./avassettrack/nominalframerate.md)
+  The frame rate of the track, in frames per second.
+- [minFrameDuration](./avassettrack/minframeduration.md)
+  The minimum duration of the track’s frames.
+- [requiresFrameReordering](./avassettrack/requiresframereordering.md)
+  A Boolean value that indicates whether samples in the track may have different presentation and decode timestamps.
+### Accessing metadata
+- [metadata](./avassettrack/metadata.md)
+  An array of metadata items for all metadata identifiers that have a value.
+- [commonMetadata](./avassettrack/commonmetadata.md)
+  An array of metadata items for all common metadata keys that have a value.
+- [availableMetadataFormats](./avassettrack/availablemetadataformats.md)
+  An array of metadata formats available for the track.
+- [- metadataForFormat:](./avassettrack/metadata%28forformat%29.md)
+  Returns metadata items that a track contains for the specified format.
+### Accessing track segments
+- [segments](./avassettrack/segments.md)
+  The time mappings from the track’s media samples to its timeline.
+- [- segmentForTrackTime:](./avassettrack/segment%28fortracktime%29.md)
+  Retrieves a segment with a target time range that contains, or is closest to, the specified track time.
+### Accessing track associations
+- [availableTrackAssociationTypes](./avassettrack/availabletrackassociationtypes.md)
+  An array of association types that the track uses to associate with other tracks.
+- [- associatedTracksOfType:](./avassettrack/associatedtracks%28oftype%29.md)
+  Returns an array of associated tracks that have the specified association type.
+- [AVTrackAssociationType](./avassettrack/associationtype.md)
+  Constants that define track association types.
 
 ## Relationships
 

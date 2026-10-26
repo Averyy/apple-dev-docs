@@ -190,10 +190,20 @@
       "file_path": "documentation/CoreAudioKit/aupannerview/init(audiounit).md",
       "hash": "1544429c91a8739ad30bf699cc67a0796cd1d30df9b16568f1317f750880c841"
     },
+    "https://developer.apple.com/documentation/coreaudiokit/auviewcolor": {
+      "etag": "\"e51-65d55d1861d1f-df\"",
+      "file_path": "documentation/CoreAudioKit/auviewcolor.md",
+      "hash": "a159fc64f4f21a2b439914344352dd674d3742fe63a12a14de949a7b67a8e7af"
+    },
     "https://developer.apple.com/documentation/coreaudiokit/auviewcontroller": {
       "etag": "\"a38b-65d55d1861d1f-df\"",
       "file_path": "documentation/CoreAudioKit/auviewcontroller.md",
       "hash": "72281057be41cd72e622c2c0369284d88de5099dbac49038bdfa751398aca0f9"
+    },
+    "https://developer.apple.com/documentation/coreaudiokit/auviewcontrollerbase": {
+      "etag": "\"2c8b-65d55d1861d1f-df\"",
+      "file_path": "documentation/CoreAudioKit/auviewcontrollerbase.md",
+      "hash": "78d9e5449143549651a480e3746cd59794ae947ae0e8389daf1270893d482296"
     },
     "https://developer.apple.com/documentation/coreaudiokit/cabtlemidiwindowcontroller": {
       "etag": "\"4f0f-65d55d1861d1f-df\"",
@@ -309,6 +319,11 @@
       "etag": "\"25fc-65d55d1871532-df\"",
       "file_path": "documentation/CoreAudioKit/canetworkbrowserwindowcontroller/isavbsupported().md",
       "hash": "3b0d2fbe76131411c67e436f0fbbd4698abdc72ed4b2f3e697079c2ea2c0b2a8"
+    },
+    "https://developer.apple.com/documentation/coreaudiokit/core-audio-kit-data-types": {
+      "etag": "\"816-659026c4365d7-df\"",
+      "file_path": "documentation/CoreAudioKit/core-audio-kit-data-types.md",
+      "hash": "66340277cef27d8631994d2a7d8cc13cf2cfa8fe85a4af4ea4e60ec84a661aaf"
     },
     "https://developer.apple.com/tutorials/data/documentation/CoreAudioKit.json": {
       "etag": "\"6887-65d55d1871532-df\"",
@@ -500,10 +515,20 @@
       "file_path": "documentation/CoreAudioKit/aupannerview/init(audiounit).md",
       "hash": "1544429c91a8739ad30bf699cc67a0796cd1d30df9b16568f1317f750880c841"
     },
+    "https://developer.apple.com/tutorials/data/documentation/coreaudiokit/auviewcolor.json": {
+      "etag": "\"e51-65d55d1861d1f-df\"",
+      "file_path": "documentation/CoreAudioKit/auviewcolor.md",
+      "hash": "a159fc64f4f21a2b439914344352dd674d3742fe63a12a14de949a7b67a8e7af"
+    },
     "https://developer.apple.com/tutorials/data/documentation/coreaudiokit/auviewcontroller.json": {
       "etag": "\"a38b-65d55d1861d1f-df\"",
       "file_path": "documentation/CoreAudioKit/auviewcontroller.md",
       "hash": "72281057be41cd72e622c2c0369284d88de5099dbac49038bdfa751398aca0f9"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/coreaudiokit/auviewcontrollerbase.json": {
+      "etag": "\"2c8b-65d55d1861d1f-df\"",
+      "file_path": "documentation/CoreAudioKit/auviewcontrollerbase.md",
+      "hash": "78d9e5449143549651a480e3746cd59794ae947ae0e8389daf1270893d482296"
     },
     "https://developer.apple.com/tutorials/data/documentation/coreaudiokit/cabtlemidiwindowcontroller.json": {
       "etag": "\"4f0f-65d55d1861d1f-df\"",
@@ -619,12 +644,17 @@
       "etag": "\"25fc-65d55d1871532-df\"",
       "file_path": "documentation/CoreAudioKit/canetworkbrowserwindowcontroller/isavbsupported().md",
       "hash": "3b0d2fbe76131411c67e436f0fbbd4698abdc72ed4b2f3e697079c2ea2c0b2a8"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/coreaudiokit/core-audio-kit-data-types.json": {
+      "etag": "\"816-659026c4365d7-df\"",
+      "file_path": "documentation/CoreAudioKit/core-audio-kit-data-types.md",
+      "hash": "66340277cef27d8631994d2a7d8cc13cf2cfa8fe85a4af4ea4e60ec84a661aaf"
     }
   },
   "metadata": {
     "render": {
-      "version": 1
+      "version": 2
     },
-    "total_pages": 124
+    "total_pages": 130
   }
 }

@@ -54,6 +54,17 @@ When your app loads textures using the [`GLKTextureLoader`](./glktextureloader.m
 - [var arrayLength: GLuint](./glktextureinfo/arraylength-swift.property.md)
 - [var depth: GLuint](./glktextureinfo/depth-swift.property.md)
 - [var mimapLevelCount: GLuint](./glktextureinfo/mimaplevelcount-swift.property.md)
+### Instance Variables
+- [alphaState](./glktextureinfo/alphastate-c.ivar.md)
+- [arrayLength](./glktextureinfo/arraylength-c.ivar.md)
+- [containsMipmaps](./glktextureinfo/containsmipmaps-c.ivar.md)
+- [depth](./glktextureinfo/depth-c.ivar.md)
+- [height](./glktextureinfo/height-c.ivar.md)
+- [mimapLevelCount](./glktextureinfo/mimaplevelcount-c.ivar.md)
+- [name](./glktextureinfo/name-c.ivar.md)
+- [target](./glktextureinfo/target-c.ivar.md)
+- [textureOrigin](./glktextureinfo/textureorigin-c.ivar.md)
+- [width](./glktextureinfo/width-c.ivar.md)
 
 ## Relationships
 

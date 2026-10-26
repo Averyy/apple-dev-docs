@@ -54,6 +54,8 @@ protocol NSDrawerDelegate : NSObjectProtocol
   A set of methods that controllers can implement to enable an editor view to inform the controller when it has uncommitted changes.
 - [protocol NSInputServiceProvider](./nsinputserviceprovider.md)
 - [protocol NSInputServerMouseTracker](./nsinputservermousetracker.md)
+- [NSEditor](./nseditor-deprecated-symbols.md)
+  A set of methods that controllers and UI elements can implement to manage editing.
 
 
 ---

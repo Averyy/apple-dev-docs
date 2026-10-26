@@ -30,6 +30,8 @@ kCTFontOptionsPreferSystemFont
 ### Constants
 - [static var preventAutoActivation: CTFontOptions](./preventautoactivation.md)
   Prevents automatic font activation.
+- [kCTFontOptionsDefault](./kctfontoptionsdefault.md)
+  Default options are used.
 
 
 ---

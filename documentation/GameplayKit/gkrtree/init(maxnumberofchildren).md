@@ -40,6 +40,12 @@ For more information, see [GameplayKit Programming Guide](https://developer.appl
 
 - `maxNumberOfChildren`: The maximum number of children for each tree node.
 
+## See Also
+
+### Creating an R-Tree
+- [+ treeWithMaxNumberOfChildren:](./treewithmaxnumberofchildren_.md)
+  Creates a new R-tree object.
+
 
 ---
 

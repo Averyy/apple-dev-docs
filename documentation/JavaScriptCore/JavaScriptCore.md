@@ -56,6 +56,13 @@ The JavaScriptCore framework provides the ability to evaluate JavaScript program
 - [func JSValueToUInt64(JSContextRef, JSValueRef, UnsafeMutablePointer<JSValueRef?>?) -> UInt64](./jsvaluetouint64%28_,_,_%29.md)
 ### Enumerations
 - [enum JSRelationCondition](./jsrelationcondition.md)
+### Macros
+- [JSC_ASSUME_NONNULL_BEGIN](./jsc_assume_nonnull_begin.md)
+- [JSC_ASSUME_NONNULL_END](./jsc_assume_nonnull_end.md)
+- [JSC_CF_ENUM](./jsc_cf_enum.md)
+- [JSC_NONNULL](./jsc_nonnull.md)
+- [JSC_NULLABLE](./jsc_nullable.md)
+- [JSC_NULL_UNSPECIFIED](./jsc_null_unspecified.md)
 
 
 ---

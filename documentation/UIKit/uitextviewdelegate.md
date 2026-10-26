@@ -103,6 +103,8 @@ All of the methods in this protocol are optional. You can use them in situations
   An object for attaching custom actions and menus to links, text attachments, or other specific text in a text view.
 - [UITextItem.MenuConfiguration](./uitextitem/menuconfiguration.md)
   An object that describes what type of menu and preview to show for a text item.
+- [UITextItemContentType](./uitextitemcontenttype.md)
+  Constants that describe and capture the type of content a text item represents along with a specific related value.
 
 
 ---

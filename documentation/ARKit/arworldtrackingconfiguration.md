@@ -46,6 +46,8 @@ World-tracking sessions also provide several ways for your app to recognize or i
   Initializes a new world-tracking configuration.
 - [var initialWorldMap: ARWorldMap?](./arworldtrackingconfiguration/initialworldmap.md)
   The state from a previous AR session to attempt to resume with this session configuration.
+- [+ new](./arworldtrackingconfiguration/new.md)
+  Creates a new world-tracking configuration.
 ### Tracking Surfaces
 - [var planeDetection: ARWorldTrackingConfiguration.PlaneDetection](./arworldtrackingconfiguration/planedetection-swift.property.md)
   The configuration’s plane detection options.

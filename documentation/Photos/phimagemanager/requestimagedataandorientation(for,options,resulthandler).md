@@ -60,6 +60,8 @@ If the [`version`](../phimagerequestoptions/version.md) option is set to [`PHIma
   Requests an image representation for the specified asset.
 - [let PHImageManagerMaximumSize: CGSize](../phimagemanagermaximumsize.md)
   A special value for requesting original image data or the largest rendered image available. .
+- [- requestImageDataForAsset:options:resultHandler:](./requestimagedataforasset_options_resulthandler_.md)
+  Requests full-sized image data for the specified asset.
 
 
 ---

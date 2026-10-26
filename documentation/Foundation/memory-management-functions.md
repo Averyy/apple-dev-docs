@@ -10,6 +10,8 @@ Perform low-level memory management tasks.
 ### Core Foundation ARC Integration
 - [func CFBridgingRetain(Any?) -> CFTypeRef?](./cfbridgingretain%28_%29.md)
   Casts an Objective-C pointer to a Core Foundation pointer and also transfers ownership to the caller.
+- [CFBridgingRelease](./cfbridgingrelease.md)
+  Moves a non-Objective-C pointer to Objective-C and also transfers ownership to ARC.
 ### Memory Management
 - [func NSAllocateMemoryPages(Int) -> UnsafeMutableRawPointer](./nsallocatememorypages%28_%29.md)
   Allocates a new block of memory.
@@ -27,6 +29,12 @@ Perform low-level memory management tasks.
   Returns the specified number of bytes rounded down to a multiple of the page size.
 - [func NSRoundUpToMultipleOfPageSize(Int) -> Int](./nsrounduptomultipleofpagesize%28_%29.md)
   Returns the specified number of bytes rounded up to a multiple of the page size.
+
+## See Also
+
+### Memory Management
+- [NSAutoreleasePool](./nsautoreleasepool.md)
+  An object that supports Cocoa’s reference-counted memory management system.
 
 
 ---

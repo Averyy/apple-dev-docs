@@ -56,6 +56,8 @@ protocol GCAxisInput : NSObjectProtocol
   An element that represents either a pattern or a sequential gear shift.
 - [protocol GCRelativeInput](./gcrelativeinput.md)
   The common properties of inputs that provide positions along an axis that are relative to the previous position.
+- [GCInputAxisName](./gcinputaxisname.md)
+  The Objective-C type for an input axis name.
 
 
 ---

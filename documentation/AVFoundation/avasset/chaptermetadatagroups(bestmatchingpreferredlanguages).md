@@ -48,6 +48,14 @@ This method is callable without blocking the current thread after you’ve async
 
 - `preferredLanguages`: An array of BCP 47 language identifier strings. The order of the identifiers in the array reflects the preferred language order, with the most preferred language being first in the array. Typically, you pass the user’s preferred languages by retrieving this array from the [`preferredLanguages`](../../Foundation/nslocale/preferredlanguages.md) class method of [`NSLocale`](../../Foundation/nslocale.md).
 
+## See Also
+
+### Accessing chapter metadata
+- [availableChapterLocales](./availablechapterlocales.md)
+  The locales of the asset’s chapter metadata.
+- [- chapterMetadataGroupsWithTitleLocale:containingItemsWithCommonKeys:](./chaptermetadatagroups%28withtitlelocale,containingitemswithcommonkeys%29.md)
+  Returns an array of chapters that contain the specified title locale and common keys.
+
 
 ---
 

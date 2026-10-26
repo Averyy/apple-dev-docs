@@ -32,6 +32,8 @@ This template belongs to the [`CLKComplicationFamily.extraLarge`](./clkcomplicat
 ### Creating the Template
 - [init(line1TextProvider: CLKTextProvider, line2TextProvider: CLKTextProvider)](./clkcomplicationtemplateextralargestacktext/init%28line1textprovider,line2textprovider%29.md)
   Creates a new template that has two rows of text.
+- [+ templateWithLine1TextProvider:line2TextProvider:](./clkcomplicationtemplateextralargestacktext/templatewithline1textprovider_line2textprovider_.md)
+  Returns a new template that has two rows of text.
 ### Setting the Complication Data
 - [var highlightLine2: Bool](./clkcomplicationtemplateextralargestacktext/highlightline2.md)
   A Boolean value indicating which line should be drawn with a highlight.

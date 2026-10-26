@@ -53,6 +53,9 @@ Present a [`WKWebView`](./wkwebview.md) object from your custom view hierarchies
   An interface that WebKit uses to request custom resources from your app.
 - [static let readAccessURL: NSAttributedString.DocumentReadingOptionKey](../Foundation/nsattributedstring/documentreadingoptionkey/readaccessurl.md)
   The local files WebKit can access when loading content.
+- [NSReadAccessURLDocumentOption](./nsreadaccessurldocumentoption.md)
+- [WKCookiePolicy](./wkhttpcookiestore/cookiepolicy.md)
+  An enumeration with cases that indicate whether a cookie store allows cookie storage.
 ### Navigation
 - [protocol WKNavigationDelegate](./wknavigationdelegate.md)
   Methods for accepting or rejecting navigation changes, and for tracking the progress of navigation requests.
@@ -160,6 +163,10 @@ Present a [`WKWebView`](./wkwebview.md) object from your custom view hierarchies
   Constants that indicate errors in the [`WKWebExtension.MessagePort`](./wkwebextension/messageport.md) domain.
 - [WKWebExtension.MessagePort.Error](./wkwebextension/messageport/error.md)
   Constants that indicate errors in the [`WKWebExtension.MessagePort`](./wkwebextension/messageport.md) domain.
+### Macros
+- [WebKit Macros](./webkit-macros.md)
+### Data types
+- [NSAttributedStringCompletionHandler](./nsattributedstringcompletionhandler.md)
 
 ## See Also
 

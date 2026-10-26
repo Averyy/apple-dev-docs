@@ -31,6 +31,8 @@ Time is running.
 
 ### Type Properties
 - [static var valid: SMPTETimeFlags](./valid.md)
+### Constants
+- [kSMPTETimeUnknown](./ksmptetimeunknown.md)
 
 
 ---

@@ -89,6 +89,8 @@ In order to create a App Proxy Provider extension, you must create a subclass of
   Handle a new flow of network data.
 - [func handleNewUDPFlow(NEAppProxyUDPFlow, initialRemoteEndpoint: NWEndpoint) -> Bool](./neappproxyprovider/handlenewudpflow%28_,initialremoteendpoint%29.md)
   Handle a new UDP flow of network data.
+### Instance Methods
+- [- handleNewUDPFlow:initialRemoteFlowEndpoint:](./neappproxyprovider/handlenewudpflow_initialremoteflowendpoint_.md)
 
 ## Relationships
 

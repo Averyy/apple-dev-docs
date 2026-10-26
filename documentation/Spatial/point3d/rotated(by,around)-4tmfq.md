@@ -54,6 +54,30 @@ The point that results from applying the specified rotation.
   Returns a point that’s transformed by the inverse of the specified scaled pose.
 - [func unapplying(ScaledPose3D) -> Point3D](./unapplying%28_%29-7wdtv.md)
   Returns a point that’s transformed by the inverse of the specified scaled pose.
+- [SPPoint3DApplyAffineTransform](../sppoint3dapplyaffinetransform.md)
+  Returns a point that results from applying the specified affine transform.
+- [SPPoint3DApplyPose](../sppoint3dapplypose.md)
+  Returns a point that results from applying the specified pose.
+- [SPPoint3DApplyProjectiveTransform](../sppoint3dapplyprojectivetransform.md)
+  Returns a point that results from applying the specified projective transform.
+- [SPPoint3DApplyScaledPose](../sppoint3dapplyscaledpose.md)
+  Returns a point that’s transformed by the specified scaled pose.
+- [SPPoint3DRotate](../sppoint3drotate.md)
+  Returns a point that results from applying the specified rotation.
+- [SPPoint3DRotateByQuaternion](../sppoint3drotatebyquaternion.md)
+  Returns a point that results from rotating with the specified quaternion.
+- [SPPoint3DTranslate](../sppoint3dtranslate-8xo6b.md)
+  Returns a point with an origin that’s offset by the specified size.
+- [SPPoint3DTranslate](../sppoint3dtranslate-9aj4h.md)
+  Returns a point with an origin that’s offset by the specified vector.
+- [SPPoint3DUnapplyAffineTransform](../sppoint3dunapplyaffinetransform.md)
+  Returns a point that results from unapplying the specified affine transform.
+- [SPPoint3DUnapplyPose](../sppoint3dunapplypose.md)
+  Returns a point that results from unapplying the specified pose.
+- [SPPoint3DUnapplyProjectiveTransform](../sppoint3dunapplyprojectivetransform.md)
+  Returns a point that results from unapplying the specified projective transform.
+- [SPPoint3DUnapplyScaledPose](../sppoint3dunapplyscaledpose.md)
+  Returns a point that’s transformed by the inverse of the specified scaled pose.
 
 
 ---

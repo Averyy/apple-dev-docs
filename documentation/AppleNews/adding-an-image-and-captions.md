@@ -208,17 +208,17 @@ The `photo` component now displays your image.
 ## See Also
 
 ### Related Documentation
-- [object Photo](https://developer.apple.com/documentation/applenewsformat/photo)
+- [object Photo](../AppleNewsFormat/photo.md)
   The component for including a photograph.
-- [object Caption](https://developer.apple.com/documentation/applenewsformat/caption)
+- [object Caption](../AppleNewsFormat/caption.md)
   The component for adding caption text.
-- [object CaptionDescriptor](https://developer.apple.com/documentation/applenewsformat/captiondescriptor)
+- [object CaptionDescriptor](../AppleNewsFormat/captiondescriptor.md)
   The object you use in image components for displaying captions when the image is full-screen.
-- [object TextStyle](https://developer.apple.com/documentation/applenewsformat/textstyle)
+- [object TextStyle](../AppleNewsFormat/textstyle.md)
   The object for defining the text style, such as font family, size, and color, that you can apply to ranges of text.
-- [object ComponentTextStyle](https://developer.apple.com/documentation/applenewsformat/componenttextstyle)
+- [object ComponentTextStyle](../AppleNewsFormat/componenttextstyle.md)
   The object for defining the style for a text component, including spacing, alignment, and drop caps.
-- [object ComponentLayout](https://developer.apple.com/documentation/applenewsformat/componentlayout)
+- [object ComponentLayout](../AppleNewsFormat/componentlayout.md)
   The object for defining the positioning for a specific component within the article’s column system.
 ### Introductory Design Tutorial
 - [Setting Up the Introductory Tutorial](./setting-up-the-introductory-tutorial.md)

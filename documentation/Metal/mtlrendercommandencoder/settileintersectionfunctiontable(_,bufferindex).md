@@ -39,6 +39,8 @@ By default, the intersection function table at each index is `nil`.
 ### Assigning intersection function tables
 - [func setTileIntersectionFunctionTables([(any MTLIntersectionFunctionTable)?], bufferRange: Range<Int>)](./settileintersectionfunctiontables%28_,bufferrange%29.md)
   Assigns multiple intersection function tables to a range of entries in the tile shader argument table.
+- [- setTileIntersectionFunctionTables:withBufferRange:](./settileintersectionfunctiontables_withbufferrange_.md)
+  Assigns multiple intersection function tables to a range of entries in the tile shader argument table.
 
 
 ---

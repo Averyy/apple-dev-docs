@@ -23,6 +23,12 @@ init()
 - (instancetype) init;
 ```
 
+## See Also
+
+### Creating a photo output
+- [+ new](./new.md)
+  Creates a new photo capture output object.
+
 
 ---
 

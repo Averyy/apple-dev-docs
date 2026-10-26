@@ -45,6 +45,11 @@ An `NSString` object initialized by reading data from the file named by `path` u
 ### Creating and Initializing a String from a File
 - [convenience init(contentsOfFile: String, usedEncoding: UnsafeMutablePointer<UInt>?) throws](./init%28contentsoffile,usedencoding%29.md)
   Returns an `NSString` object initialized by reading data from the file at a given path and returns by reference the encoding used to interpret the characters.
+- [+ stringWithContentsOfFile:usedEncoding:error:](./stringwithcontentsoffile_usedencoding_error_.md)
+  Returns a string created by reading data from the file at a given path and returns by reference the encoding used to interpret the file.
+### Related Documentation
+- [+ stringWithContentsOfFile:encoding:error:](./stringwithcontentsoffile_encoding_error_.md)
+  Returns a string created by reading data from the file at a given path interpreted using a given encoding.
 
 
 ---

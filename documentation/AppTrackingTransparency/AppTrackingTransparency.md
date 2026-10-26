@@ -47,6 +47,9 @@ For more information about app tracking and privacy, see [User Privacy and Data 
   A value that indicates the status of the app’s tracking authorization.
 - [ATTrackingManager.AuthorizationStatus](./attrackingmanager/authorizationstatus.md)
   A type that represents the tracking-authorization status of an app.
+### Version information
+- [AppTrackingTransparencyVersionNumber](./apptrackingtransparencyversionnumber.md)
+- [AppTrackingTransparencyVersionString](./apptrackingtransparencyversionstring.md)
 
 
 ---

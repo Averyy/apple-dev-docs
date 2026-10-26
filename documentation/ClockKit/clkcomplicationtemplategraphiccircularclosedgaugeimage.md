@@ -45,6 +45,8 @@ Instead of providing multiple images with different resolutions, you can provide
 ### Creating the Tempate
 - [init(gaugeProvider: CLKGaugeProvider, imageProvider: CLKFullColorImageProvider)](./clkcomplicationtemplategraphiccircularclosedgaugeimage/init%28gaugeprovider,imageprovider%29.md)
   Creates a new template with a closed circular gauge, and an image in the center.
+- [+ templateWithGaugeProvider:imageProvider:](./clkcomplicationtemplategraphiccircularclosedgaugeimage/templatewithgaugeprovider_imageprovider_.md)
+  Returns a new template with a closed circular gauge, and an image in the center.
 ### Setting the Complication Data
 - [var gaugeProvider: CLKGaugeProvider](./clkcomplicationtemplategraphiccircularclosedgaugeimage/gaugeprovider.md)
   The gauge to display in the complication.

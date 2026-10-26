@@ -27,6 +27,8 @@ static simd_uchar4 simd_make_uchar4(unsigned char x, simd_uchar3 yzw);
   Returns a new vector from two scalar values and a vector.
 - [func simd_make_uchar4(UInt8, simd_uchar2, UInt8) -> simd_uchar4](./simd_make_uchar4%28_,_,_%29-53d7w.md)
   Returns a new vector from a scalar value, a vector, and a scalar value.
+- [vector4](./vector4-8y2oj.md)
+  Returns a new vector from a vector and a scalar value.
 
 
 ---

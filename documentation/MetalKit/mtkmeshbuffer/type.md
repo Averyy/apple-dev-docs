@@ -33,6 +33,8 @@ A [`MDLMeshBuffer`](../../ModelIO/mdlmeshbuffer.md) object can contain Model I/O
 ### Originating Objects
 - [var allocator: MTKMeshBufferAllocator](./allocator.md)
   The allocator object used to create this mesh buffer.
+- [zone](./zone.md)
+  The zone, if any, from which this mesh buffer was created.
 
 
 ---

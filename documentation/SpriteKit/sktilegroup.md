@@ -45,6 +45,8 @@ The preferred method to create tile groups is to use the editor tools in Xcode. 
   Creates and initializes a simple tile group with a single tile definition.
 - [init(rules: [SKTileGroupRule])](./sktilegroup/init%28rules%29.md)
   Creates and initializes a tile group with the specified tile group rules.
+- [+ tileGroupWithTileDefinition:](./sktilegroup/tilegroupwithtiledefinition_.md)
+- [+ tileGroupWithRules:](./sktilegroup/tilegroupwithrules_.md)
 ### Accessing or Setting a Tile Group’s Properties
 - [var name: String?](./sktilegroup/name.md)
   The receiver’s name.

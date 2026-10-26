@@ -30,6 +30,9 @@ class MPSNNGramMatrixCalculationNode
 ### Instance Properties
 - [var alpha: Float](./mpsnngrammatrixcalculationnode/alpha.md)
 - [var propertyCallBack: (any MPSNNGramMatrixCallback)?](./mpsnngrammatrixcalculationnode/propertycallback.md)
+### Type Methods
+- [+ nodeWithSource:](./mpsnngrammatrixcalculationnode/nodewithsource_.md)
+- [+ nodeWithSource:alpha:](./mpsnngrammatrixcalculationnode/nodewithsource_alpha_.md)
 
 ## Relationships
 

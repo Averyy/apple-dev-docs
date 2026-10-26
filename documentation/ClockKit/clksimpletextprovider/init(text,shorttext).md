@@ -37,6 +37,12 @@ A text provider initialized with the specified content.
   Creates and returns a text provider with the specified long form text.
 - [convenience init(text: String, shortText: String?, accessibilityLabel: String?)](./init%28text,shorttext,accessibilitylabel%29.md)
   Creates and returns a text provider with the text strings and an accessible string.
+- [- initWithText:](./initwithtext_.md)
+  Creates and returns a text provider with the specified long form text.
+- [- initWithText:shortText:](./initwithtext_shorttext_.md)
+  Creates and returns a text provider with both long and short versions of the text.
+- [- initWithText:shortText:accessibilityLabel:](./initwithtext_shorttext_accessibilitylabel_.md)
+  Creates and returns a text provider with the text strings and an accessible string.
 
 
 ---

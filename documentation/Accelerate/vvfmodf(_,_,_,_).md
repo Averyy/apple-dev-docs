@@ -95,6 +95,36 @@ printf("z: [%lf, %lf, %lf, %lf]\n", z[0], z[1], z[2], z[3]);
   Returns the nearest integer to each element in a vector of single-precision values.
 - [static func nearestInteger<U, V>(U, result: inout V)](./vforce/nearestinteger%28_,result%29-bbtt.md)
   Calculates the nearest integer to each element in a vector of double-precision values.
+- [vvceil](./vvceil%28_,_,_%29.md)
+  Calculates the ceiling of each element in an array of double-precision values.
+- [vvceilf](./vvceilf%28_,_,_%29.md)
+  Calculates the ceiling of each element in an array of single-precision values.
+- [vvfloor](./vvfloor%28_,_,_%29.md)
+  Calculates the floor of each element in an array of double-precision values.
+- [vvfloorf](./vvfloorf%28_,_,_%29.md)
+  Calculates the floor of each element in an array of single-precision values.
+- [vvcopysign](./vvcopysign%28_,_,_,_%29.md)
+  Copies an array, setting the sign of each element based on a second array of double-precision values.
+- [vvcopysignf](./vvcopysignf%28_,_,_,_%29.md)
+  Copies an array, setting the sign of each element based on a second array of single-precision values.
+- [vvdiv](./vvdiv%28_,_,_,_%29.md)
+  Divides each element in an array by the corresponding value in a second array of double-precision values.
+- [vvdivf](./vvdivf%28_,_,_,_%29.md)
+  Divides each element in an array by the corresponding value in a second array of single-precision values.
+- [vvfabs](./vvfabs%28_,_,_%29.md)
+  Calculates the absolute value for each element in an array of double-precision values.
+- [vvfabsf](./vvfabsf%28_,_,_%29.md)
+  Calculates the absolute value for each element in an array of single-precision values.
+- [vvfmod](./vvfmod%28_,_,_,_%29.md)
+  Calculates the modulus after dividing each element in an array by the corresponding element in a second array of double-precision values.
+- [vvremainder](./vvremainder%28_,_,_,_%29.md)
+  Calculates the remainder after dividing each element in an array by the corresponding element in a second array of double-precision values.
+- [vvremainderf](./vvremainderf%28_,_,_,_%29.md)
+  Calculates the remainder after dividing each element in an array by the corresponding element in a second array of single-precision values.
+- [vvint](./vvint%28_,_,_%29.md)
+  Calculates the integer truncation for each element in an array of double-precision values.
+- [vvintf](./vvintf%28_,_,_%29.md)
+  Calculates the integer truncation for each element in an array of single-precision values.
 
 
 ---

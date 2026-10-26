@@ -123,6 +123,14 @@ The [`NSAttributedString`](./nsattributedstring.md) class and its Core Foundatio
   Constants for the underline style and strikethrough style attribute keys.
 - [enum NSWritingDirectionFormatType](../UIKit/nswritingdirectionformattype.md)
   Constants for the writing direction attribute key.
+- [NSTextHighlightStyle](../UIKit/nstexthighlightstyle.md)
+  Constants that specify the type of highlight to apply to text.
+- [NSTextHighlightColorScheme](../UIKit/nstexthighlightcolorscheme.md)
+  Constants that specify the highlight color to use with the text.
+- [NSTextEffectStyle](../UIKit/nstexteffectstyle.md)
+  Constants for the type of effect to apply to the text.
+- [NSSpellingState](../AppKit/nsspellingstate.md)
+  Constants for the spelling state attribute key.
 ### Getting document-wide attributes
 - [NSAttributedString.DocumentAttributeKey](./nsattributedstring/documentattributekey.md)
   The attributes you apply to an entire document.
@@ -136,9 +144,25 @@ The [`NSAttributedString`](./nsattributedstring.md) class and its Core Foundatio
   Constants for the text layout sections document attribute key.
 - [enum NSTextScalingType](../UIKit/nstextscalingtype.md)
   Constants that specify the text scaling.
+- [NSAttributedStringDocumentAttributeKey](../UIKit/nsattributedstringdocumentattributekey.md)
+  The attributes you apply to an entire document.
+- [Document reading option keys](./document-reading-option-keys.md)
+  Keys for constructing an attributed string from data on disk.
+- [NSAttributedStringDocumentType](../UIKit/nsattributedstringdocumenttype.md)
+  Constants for the document type document attribute key.
+- [NSTextLayoutSectionKey](../UIKit/nstextlayoutsectionkey.md)
+  Constants for the text layout sections document attribute key.
 ### Representing markdown attributes
 - [struct InlinePresentationIntent](./inlinepresentationintent.md)
   A type that defines presentation intent for runs of characters for traits like emphasis, strikethrough, and code voice.
+- [NSPresentationIntent](./nspresentationintent.md)
+  A type that contains the Markdown formatting for blocks of text, like paragraphs, lists, code blocks, and parts of tables.
+- [NSAttributedStringMarkdownSourcePosition](./nsattributedstringmarkdownsourceposition.md)
+  The position of attributed string text in its original Markdown source string.
+- [NSPresentationIntentKind](./nspresentationintentkind.md)
+  An enumeration of intended display styles for blocks of text like paragraphs, lists, and code blocks.
+- [NSPresentationIntentTableColumnAlignment](./nspresentationintenttablecolumnalignment.md)
+  An enumeration of values for aligning the contents of table columns.
 ### Comparing strings
 - [func isEqual(to: NSAttributedString) -> Bool](./nsattributedstring/isequal%28to%29.md)
   Returns a Boolean value that indicates whether the attributed string is equal to the specified string.

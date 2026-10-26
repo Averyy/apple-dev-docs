@@ -13,7 +13,7 @@ Retrieve the merchant token usage information package from the merchant server.
 
 The user’s device calls this API to get the merchant token usage information package from the merchant server. Devices use the `webServiceURL` delivered to the Apple Pay server as part of the metadata.
 
-For more information on formatting your merchant token usage information, see [Adding merchant token usage information](https://developer.apple.com/documentation/applepaymerchanttokenmanagementapi/adding-merchant-token-usage-information)
+For more information on formatting your merchant token usage information, see [Adding merchant token usage information](../ApplePayMerchantTokenManagementAPI/adding-merchant-token-usage-information.md)
 
 ## Endpoint
 

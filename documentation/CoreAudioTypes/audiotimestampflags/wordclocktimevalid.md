@@ -38,6 +38,9 @@ kAudioTimeStampWordClockTimeValid
   A flag that indicates that the sample frame time is valid.
 - [static var smpteTimeValid: AudioTimeStampFlags](./smptetimevalid.md)
   A flag that indicates that the SMPTE time is valid.
+### Constants
+- [kAudioTimeStampNothingValid](./kaudiotimestampnothingvalid.md)
+  A flag that indicates no fields are valid.
 
 
 ---

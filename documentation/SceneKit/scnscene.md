@@ -52,6 +52,8 @@ The simplest way to create a scene is through Xcode’s SceneKit Scene Editor. S
   Loads a scene from a file with the specified name in a specific subdirectory of the app’s main bundle.
 - [convenience init(url: URL, options: [SCNSceneSource.LoadingOption : Any]?) throws](./scnscene/init%28url,options%29-7ugvv.md)
   Loads a scene from the specified URL.
+- [+ scene](./scnscene/scene.md)
+  Creates and returns an empty scene.
 ### Managing Animated Effects in a Scene
 - [var isPaused: Bool](./scnscene/ispaused.md)
   A Boolean value that determines whether to run actions, animations, particle systems, and physics simulations in the scene graph.
@@ -109,6 +111,9 @@ The simplest way to create a scene is through Xcode’s SceneKit Scene Editor. S
 - [var screenSpaceReflectionSampleCount: Int](./scnscene/screenspacereflectionsamplecount.md)
 - [var screenSpaceReflectionStride: CGFloat](./scnscene/screenspacereflectionstride.md)
 - [var wantsScreenSpaceReflection: Bool](./scnscene/wantsscreenspacereflection.md)
+### Creating a Scene from a Model I/O Asset
+- [+ sceneWithMDLAsset:](./scnscene/scenewithmdlasset_.md)
+  Creates a scene from the specified Model I/O asset.
 
 ## Relationships
 

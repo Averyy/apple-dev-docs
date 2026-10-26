@@ -46,6 +46,8 @@
   A `CFNumberRef` value that describes the underline style (see [`AXUnderlineStyle`](../axunderlinestyle.md) for possible values).
 - [var kAXVisibleNameKey: Unmanaged<CFString>](../kaxvisiblenamekey.md)
   Optional key of the [`kAXFontTextAttribute`](../kaxfonttextattribute.md) dictionary for the font display name in a `CFStringRef`.
+- [AVAILABLE_MAC_OS_X_VERSION_10_9_AND_LATER](./global_variables/available_mac_os_x_version_10_9_and_later.md)
+  A `CFBooleanRef` value that indicates whether the text is visibly shown as misspelled (for example, with a squiggle underneath the text).
 
 ## See Also
 

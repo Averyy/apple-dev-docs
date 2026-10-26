@@ -43,6 +43,12 @@ To get the process’ arguments, file descriptors, and environment variables fro
 - [var last_fd: Int32](./es_event_exec_t/last_fd-g0rc.md)
 - [var reserved: (UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8)](./es_event_exec_t/reserved-25qdu.md)
 - [var script: UnsafeMutablePointer<es_file_t>?](./es_event_exec_t/script-19tlj.md)
+- [cwd](./es_event_exec_t/cwd-2hhbs.md)
+- [image_cpusubtype](./es_event_exec_t/image_cpusubtype-y18r.md)
+- [image_cputype](./es_event_exec_t/image_cputype-94648.md)
+- [last_fd](./es_event_exec_t/last_fd-4hqd7.md)
+- [reserved](./es_event_exec_t/reserved-5f002.md)
+- [script](./es_event_exec_t/script-8c2sm.md)
 
 ## See Also
 

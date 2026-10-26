@@ -21,6 +21,8 @@ The Security Foundation framework contains a single class, [`SFAuthorization`](.
 ### Classes
 - [class SFAuthorization](./sfauthorization.md)
   A class that allows you to restrict a user’s access to particular features in your Mac app or daemon.
+### Macros
+- [SF_EXTERN](./sf_extern.md)
 
 
 ---

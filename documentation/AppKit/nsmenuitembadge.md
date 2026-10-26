@@ -146,6 +146,8 @@ The default value of this property is `nil`.
   Creates a badge with a count and an empty string.
 - [init(string: String)](./nsmenuitembadge/init%28string%29.md)
   Creates a badge with the provided custom string.
+- [- initWithCount:type:](./nsmenuitembadge/initwithcount_type_.md)
+  Initializes the badge with a count and a pre-defined badge type.
 ### Creating badges of a specific type
 - [class func alerts(count: Int) -> Self](./nsmenuitembadge/alerts%28count%29.md)
   Creates an alert-style badge with an integer count and a predefined label that represents the number of alerts.

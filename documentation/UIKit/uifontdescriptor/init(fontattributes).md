@@ -39,6 +39,9 @@ The new font descriptor.
   Creates a font descriptor.
 - [init?(coder: NSCoder)](./init%28coder%29.md)
   Creates a font descriptor from data in an unarchiver.
+### Related Documentation
+- [+ fontDescriptorWithFontAttributes:](./fontdescriptorwithfontattributes_.md)
+  Returns a font descriptor with a dictionary of attributes.
 
 
 ---

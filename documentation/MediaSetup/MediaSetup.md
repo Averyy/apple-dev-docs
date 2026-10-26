@@ -27,6 +27,11 @@ For details about applying for the SiriKit Media Intents on HomePod program, see
   An object that manages the transfer of configuration information between your app, the system, your media service, and HomePod speakers.
 - [class MSServiceAccount](./msserviceaccount.md)
   Account details for accessing a streaming media service.
+### Version
+- [MediaSetupVersionNumber](./mediasetupversionnumber.md)
+  The version number of the Media Setup framework.
+- [MediaSetupVersionString](./mediasetupversionstring.md)
+  The version of the Media Setup framework.
 
 
 ---

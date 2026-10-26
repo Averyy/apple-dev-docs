@@ -1,0 +1,103 @@
+# vDSP_vgathr
+
+**Framework**: Accelerate  
+**Kind**: func  
+**Role**: Function
+
+Generates a gathered copy of the specified single-precision vector using a vector that defines the one-based indices to keep.
+
+**Availability**:
+- iOS 4.0+
+- iPadOS 4.0+
+- Mac Catalyst 13.1+
+- macOS 10.4+
+- tvOS
+- visionOS 1.0+
+- watchOS 2.0+
+
+## Declaration
+
+```c
+extern void vDSP_vgathr(const float *__A, const vDSP_Length *__B, vDSP_Stride __IB, float *__C, vDSP_Stride __IC, vDSP_Length __N);
+```
+
+#### Discussion
+
+The following code shows an example of gathering the values in `source` using the values in `indices`:
+
+**Swift**:
+
+```swift
+    let source: [Float] = [10, 20,
+                            30, 40,
+                            50, 60,
+                            70, 80]
+
+    let indices: [UInt] = [1, 3, 5, 7]
+    
+    let n = indices.count
+    let stride = 1
+    
+    let result = [Float](unsafeUninitializedCapacity: n) {
+        buffer, initializedCount in
+        
+        vDSP_vgathr(source,
+                    indices, stride,
+                    buffer.baseAddress!, stride,
+                    vDSP_Length(n))
+        
+        initializedCount = n
+    }
+    
+    // Prints "[10.0, 30.0, 50.0, 70.0]".
+    print(result)
+```
+
+**Objective-C**:
+
+```objc
+float source[8] = {10, 20, 30, 40, 50, 60, 70, 80};
+
+vDSP_Length indices[4] = {1, 3, 5, 7};
+
+int n = 4;
+vDSP_Stride stride = 1;
+
+float result[4] = {0};
+
+vDSP_vgathr(source,
+            indices, stride,
+            result, stride,
+            (vDSP_Length)n);
+
+// Prints "[10, 30, 50, 70]".
+printf("[%g, %g, %g, %g]\n", result[0], result[1], result[2], result[3]);
+```
+
+## Parameters
+
+- `__A`: The input vector that defines the source values.
+- `__B`: The input vector that defines the indices.
+- `__IB`: The distance between the elements in the indices vector.` `
+- `__C`: The output vector.
+- `__IC`: The distance between the elements in the output vector.` `
+- `__N`: The number of elements in the output vector and the number of elements in the indices vector.
+
+## See Also
+
+### Vector gathering functions
+- [vDSP_vindex](./vdsp_vindex.md)
+  Generates a gathered copy of the specified single-precision vector using a vector that defines the zero-based indices to keep.
+- [vDSP_vindexD](./vdsp_vindexd.md)
+  Generates a gathered copy of the specified double-precision vector using a vector that defines the zero-based indices to keep.
+- [vDSP_vgathrD](./vdsp_vgathrd.md)
+  Generates a gathered copy of the specified double-precision vector using a vector that defines the one-based indices to keep.
+- [vDSP_vgathra](./vdsp_vgathra.md)
+  Generates a gathered copy of the specified single-precision vector using a vector that defines the pointers to the values to keep.
+- [vDSP_vgathraD](./vdsp_vgathrad.md)
+  Generates a gathered copy of the specified double-precision vector using a vector that defines the pointers to the values to keep.
+
+
+---
+
+*[View on Apple Developer](https://developer.apple.com/documentation/accelerate/vdsp_vgathr)*

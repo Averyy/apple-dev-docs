@@ -35,6 +35,8 @@ Use the [`identity()`](./identity%28%29.md) method to obtain the identity chosen
 ### Related Documentation
 - [func identity() -> Unmanaged<SecIdentity>!](./identity%28%29.md)
   Returns the identity that the user chose in the panel or sheet.
+- [SecIdentitySearchCopyNext](../../Security/secidentitysearchcopynext.md)
+  Finds the next identity matching specified search criteria
 ### Displaying a Sheet or Panel
 - [func beginSheet(for: NSWindow!, modalDelegate: Any!, didEnd: Selector!, contextInfo: UnsafeMutableRawPointer!, identities: [Any]!, message: String!)](./beginsheet%28for,modaldelegate,didend,contextinfo,identities,message%29.md)
   Displays a list of identities in a modal sheet from which the user can select an identity.

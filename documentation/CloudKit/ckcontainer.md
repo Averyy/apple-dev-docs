@@ -138,12 +138,18 @@ Before shipping your app, always test your app’s behavior in the production en
   Fetches the IDs of any long-lived operations that are running.
 - [func fetchLongLivedOperation(withID: CKOperation.ID, completionHandler: (CKOperation?, (any Error)?) -> Void)](./ckcontainer/fetchlonglivedoperation%28withid,completionhandler%29.md)
   Fetches the long-lived operation for the specified operation ID.
+- [- fetchAllLongLivedOperationIDsWithCompletionHandler:](./ckcontainer/fetchalllonglivedoperationidswithcompletionhandler_.md)
+  Fetches the IDs of any long-lived operations that are running.
+- [- fetchLongLivedOperationWithID:completionHandler:](./ckcontainer/fetchlonglivedoperationwithid_completionhandler_.md)
+  Fetches the long-lived operation for the specified operation ID.
 ### Accessing Container Metadata
 - [func fetchShareMetadata(with: URL, completionHandler: (CKShare.Metadata?, (any Error)?) -> Void)](./ckcontainer/fetchsharemetadata%28with,completionhandler%29.md)
   Fetches the share metadata for the specified share URL.
 - [func accept(CKShare.Metadata, completionHandler: (CKShare?, (any Error)?) -> Void)](./ckcontainer/accept%28_,completionhandler%29-949ea.md)
   Accepts the specified share metadata.
 - [static let CKAccountChanged: NSNotification.Name](../Foundation/nsnotification/name-swift.struct/ckaccountchanged.md)
+  A notification that a container posts when the status of an iCloud account changes.
+- [CKAccountChangedNotification](./ckaccountchangednotification.md)
   A notification that a container posts when the status of an iCloud account changes.
 ### Instance Methods
 - [func accept(CKShare.Metadata) async throws -> CKShare](./ckcontainer/accept%28_%29-5vv8p.md)
@@ -230,6 +236,8 @@ Before shipping your app, always test your app’s behavior in the production en
   An object that represents a collection of record zones and subscriptions.
 - [class CKOperationGroup](./ckoperationgroup.md)
   An explicit association between two or more operations.
+- [CKRecordValue](./ckrecordvalue-c.protocol.md)
+  The protocol that provides strong type-checking for objects that the CloudKit framework stores on the server.
 
 
 ---

@@ -31,6 +31,10 @@ class VNDetectAnimalBodyPoseRequest
   Retrieves the joint names the request supports.
 - [var supportedJointsGroupNames: [VNAnimalBodyPoseObservation.JointsGroupName]](./vndetectanimalbodyposerequest/supportedjointsgroupnames.md)
   Retrieves the joint group names the request supports.
+- [- supportedJointNamesAndReturnError:](./vndetectanimalbodyposerequest/supportedjointnamesandreturnerror_.md)
+  Retrieves the joint names the request supports.
+- [- supportedJointsGroupNamesAndReturnError:](./vndetectanimalbodyposerequest/supportedjointsgroupnamesandreturnerror_.md)
+  Retrieves the joint group names the request supports.
 ### Accessing the Results
 - [var results: [VNAnimalBodyPoseObservation]?](./vndetectanimalbodyposerequest/results.md)
   The animal body pose the request observes.

@@ -41,7 +41,7 @@ The following example shows what you might add to a messaging app’s entitlemen
 <true/>
 ```
 
-If your CarPlay-enabled communication app includes VoIP features, provide support for [`INStartCallIntent`](https://developer.apple.com/documentation/intents/instartcallintent). If the VoIP app targets iOS 14 or earlier, provide support for [`INStartAudioCallIntent`](https://developer.apple.com/documentation/intents/instartaudiocallintent) and [`INSearchCallHistoryIntent`](https://developer.apple.com/documentation/intents/insearchcallhistoryintent) in addition to [`INStartCallIntent`](https://developer.apple.com/documentation/intents/instartcallintent).
+If your CarPlay-enabled communication app includes VoIP features, provide support for [`INStartCallIntent`](../Intents/instartcallintent.md). If the VoIP app targets iOS 14 or earlier, provide support for [`INStartAudioCallIntent`](../Intents/instartaudiocallintent.md) and [`INSearchCallHistoryIntent`](../Intents/insearchcallhistoryintent.md) in addition to [`INStartCallIntent`](../Intents/instartcallintent.md).
 
 ## See Also
 

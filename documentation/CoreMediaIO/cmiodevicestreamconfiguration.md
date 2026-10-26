@@ -24,6 +24,7 @@ struct CMIODeviceStreamConfiguration;
 - [init()](./cmiodevicestreamconfiguration/init%28%29.md)
 ### Instance Properties
 - [var mNumberStreams: UInt32](./cmiodevicestreamconfiguration/mnumberstreams.md)
+- [mNumberChannels](./cmiodevicestreamconfiguration/mnumberchannels.md)
 
 ## Relationships
 
@@ -39,6 +40,7 @@ struct CMIODeviceStreamConfiguration;
 - [struct CMIOObjectPropertyAddress](./cmioobjectpropertyaddress.md)
 - [struct CMIOStreamDeck](./cmiostreamdeck.md)
 - [struct CMIOStreamScheduledOutputNotificationProcAndRefCon](./cmiostreamscheduledoutputnotificationprocandrefcon.md)
+- [CMIOHardwarePlugInInterface](./cmiohardwareplugininterface.md)
 
 
 ---

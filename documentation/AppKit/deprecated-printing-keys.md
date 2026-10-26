@@ -28,6 +28,11 @@ These keys refer to older printing properties that are no longer used.
   Deprecated. Do not use.
 - [NSPrintFaxJob](./nsprintfaxjob.md)
   Deprecated. Do not use.
+- [NSPrintFormName](./nsprintformname.md)
+- [NSPrintJobFeatures](./nsprintjobfeatures.md)
+- [NSPrintManualFeed](./nsprintmanualfeed.md)
+- [NSPrintPagesPerSheet](./nsprintpagespersheet.md)
+- [NSPrintPaperFeed](./nsprintpaperfeed.md)
 
 ## See Also
 
@@ -36,6 +41,10 @@ These keys refer to older printing properties that are no longer used.
   Deprecated.
 - [NSPrintInfo.Orientation](./nsprintinfo/orientation-swift.enum.md)
   Constants that specify page orientations.
+- [+ setDefaultPrinter:](./nsprintinfo/setdefaultprinter_.md)
+  Deprecated.
+- [+ sizeForPaperName:](./nsprintinfo/sizeforpapername_.md)
+  Deprecated.
 
 
 ---

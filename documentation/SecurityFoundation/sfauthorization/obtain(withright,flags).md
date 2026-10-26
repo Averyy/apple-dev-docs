@@ -39,6 +39,10 @@ Use this method to authorize or preauthorize a single right.
 ### Authorizing rights
 - [func obtain(withRights: UnsafePointer<AuthorizationRights>!, flags: AuthorizationFlags, environment: UnsafePointer<AuthorizationEnvironment>!, authorizedRights: UnsafeMutablePointer<UnsafeMutablePointer<AuthorizationRights>?>!) throws](./obtain%28withrights,flags,environment,authorizedrights%29.md)
   Authorizes and preauthorizes rights to access a privileged operation and returns the granted rights.
+- [- permitWithRights:flags:environment:authorizedRights:](./permitwithrights_flags_environment_authorizedrights_.md)
+  Authorizes and preauthorizes rights to access a privileged operation and returns the granted rights.
+- [- permitWithRight:flags:](./permitwithright_flags_.md)
+  Authorizes and preauthorizes one specific right.
 
 
 ---

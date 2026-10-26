@@ -19,6 +19,12 @@ var remoteChannelID: BluetoothL2CAPChannelID { get }
 @property (assign, readonly) BluetoothL2CAPChannelID remoteChannelID;
 ```
 
+## See Also
+
+### Related Documentation
+- [- getRemoteChannelID](./getremotechannelid.md)
+  Returns the remote L2CAP channel ID for the target L2CAP channel.
+
 
 ---
 

@@ -39,6 +39,8 @@ If the layer object was created by a view, the view typically assigns itself as 
   Override to copy or initialize custom fields of the specified layer.
 - [init(remoteClientId: UInt32)](./calayer/init%28remoteclientid%29.md)
   Initializes a layer with a remote client ID.
+- [+ layer](./calayer/layer.md)
+  Creates and returns an instance of the layer object.
 ### Accessing related layer objects
 - [func presentation() -> Self?](./calayer/presentation%28%29.md)
   Returns a copy of the presentation layer object that represents the state of the layer as it currently appears onscreen.

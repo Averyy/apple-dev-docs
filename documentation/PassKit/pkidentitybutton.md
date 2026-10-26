@@ -31,6 +31,8 @@ class PKIdentityButton
 ### Creating an identity button
 - [init(label: PKIdentityButton.Label, style: PKIdentityButton.Style)](./pkidentitybutton/init%28label,style%29.md)
   Creates a new identity button with the label and style.
+- [+ buttonWithLabel:style:](./pkidentitybutton/buttonwithlabel_style_.md)
+  Creates a new identity button with the label and style.
 ### Configuring the appearance
 - [PKIdentityButton.Label](./pkidentitybutton/label.md)
   A type that indicates the available labels for an identity button.

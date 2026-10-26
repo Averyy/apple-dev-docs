@@ -67,6 +67,8 @@ typedef NSString * NSDeviceDescriptionKey;
 - [enum NSDisplayGamut](./nsdisplaygamut.md)
 - [class var screensHaveSeparateSpaces: Bool](./nsscreen/screenshaveseparatespaces.md)
   Returns a Boolean value indicating whether each screen can have its own set of spaces.
+- [- userSpaceScaleFactor](./nsscreen/userspacescalefactor.md)
+  Returns the scaling factor from user space to device space on the screen.
 
 
 ---

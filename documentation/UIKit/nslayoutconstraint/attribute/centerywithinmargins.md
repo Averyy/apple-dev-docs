@@ -60,6 +60,8 @@ For [`UIView`](../../uiview.md) objects, the margins are defined by their [`layo
   The object’s right margin.
 - [NSLayoutConstraint.Attribute.topMargin](./topmargin.md)
   The object’s top margin.
+- [NSLayoutAttributeBaseline](../../nslayoutattribute/nslayoutattributebaseline.md)
+  The object’s baseline.
 
 
 ---

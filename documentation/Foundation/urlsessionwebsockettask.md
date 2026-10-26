@@ -48,6 +48,10 @@ You send data with [`send(_:completionHandler:)`](./urlsessionwebsockettask/send
   Reads a WebSocket message once all the frames of the message are available.
 - [var maximumMessageSize: Int](./urlsessionwebsockettask/maximummessagesize.md)
   The maximum number of bytes to buffer before the receive call fails with an error.
+- [- sendMessage:completionHandler:](./nsurlsessionwebsockettask/sendmessage_completionhandler_.md)
+  Sends a WebSocket message, receiving the result in a completion handler.
+- [- receiveMessageWithCompletionHandler:](./nsurlsessionwebsockettask/receivemessagewithcompletionhandler_.md)
+  Reads a WebSocket message once all the frames of the message are available.
 ### Sending ping frames
 - [func sendPing(pongReceiveHandler: ((any Error)?) -> Void)](./urlsessionwebsockettask/sendping%28pongreceivehandler%29.md)
   Sends a ping frame from the client side, with a closure to receive the pong from the server endpoint.
@@ -91,6 +95,9 @@ You send data with [`send(_:completionHandler:)`](./urlsessionwebsockettask/send
   Creates a WebSocket task given a URL and an array of protocols.
 - [protocol URLSessionWebSocketDelegate](./urlsessionwebsocketdelegate.md)
   A protocol that defines methods that URL session instances call on their delegates to handle task-level events specific to WebSocket tasks.
+- [NSURLSessionWebSocketMessage](./nsurlsessionwebsocketmessage.md)
+- [NSURLSessionWebSocketMessageType](./nsurlsessionwebsocketmessagetype.md)
+  An enumeration of the types of messages sent and received.
 
 
 ---

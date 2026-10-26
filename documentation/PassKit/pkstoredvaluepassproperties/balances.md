@@ -33,6 +33,8 @@ var balances: [PKStoredValuePassBalance] { get }
   A Boolean value that indicates the pass issuer disabled a stored-value pass.
 - [var isBlacklisted: Bool](./isblacklisted.md)
   A Boolean value that indicates the pass issuer disabled a stored-value pass.
+- [blocked](./blocked.md)
+  A Boolean value that indicates the pass issuer disabled a stored-value pass.
 
 
 ---

@@ -44,6 +44,10 @@ You can use this function to obtain information about the OpenGL buffers that wi
   Returns the pool attributes dictionary for an Open GL buffer pool.
 - [func CVOpenGLBufferPoolGetTypeID() -> CFTypeID](./cvopenglbufferpoolgettypeid%28%29.md)
   Obtains the Core Foundation ID for the OpenGL buffer pool type.
+- [CVOpenGLBufferPoolRetain](./cvopenglbufferpoolretain.md)
+  Retains an OpenGL buffer pool.
+- [CVOpenGLBufferPoolRelease](./cvopenglbufferpoolrelease.md)
+  Releases an OpenGL buffer pool.
 
 
 ---

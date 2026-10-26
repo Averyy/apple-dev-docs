@@ -74,6 +74,8 @@ It is more efficient to use the fast enumeration protocol (see [`NSFastEnumerati
   Applies a given block object to the entries of the dictionary, with options specifying how the enumeration is performed.
 - [func makeIterator() -> NSDictionary.Iterator](./makeiterator%28%29.md)
   Returns an iterator over the elements of this sequence.
+- [- countByEnumeratingWithState:objects:count:](./countbyenumeratingwithstate_objects_count_.md)
+  Returns by reference a C array of objects over which the sender should iterate.
 
 
 ---

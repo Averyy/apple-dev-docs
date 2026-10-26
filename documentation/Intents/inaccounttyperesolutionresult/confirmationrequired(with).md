@@ -40,6 +40,8 @@ Use this method when you can resolve the account type to a single value that is 
 ### Creating a Resolution Result Object
 - [class func success(with: INAccountType) -> Self](./success%28with%29.md)
   Creates an object whose resolution involves the successful matching of the specified attribute.
+- [+ successWithResolvedValue:](./successwithresolvedvalue_.md)
+- [+ confirmationRequiredWithValueToConfirm:](./confirmationrequiredwithvaluetoconfirm_.md)
 
 
 ---

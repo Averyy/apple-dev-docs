@@ -34,6 +34,8 @@ class AudioAttributes
   Returns specific attributes for the media option.
 - [AVAssetVariant.AudioAttributes.RenditionSpecificAttributes](./audioattributes-swift.class/renditionspecificattributes.md)
   An object that represents attributes specific to a particular rendition.
+- [formatIDs](../avassetvariantaudioattributes/formatids.md)
+  The audio formats of the renditions present in the variant.
 
 ## Relationships
 

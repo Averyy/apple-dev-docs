@@ -35,6 +35,10 @@ An [`INRadioTypeResolutionResult`](./inradiotyperesolutionresult.md) object is w
   Creates an object whose resolution involves the successful matching of the specified parameter.
 - [class func confirmationRequired(with: INRadioType) -> Self](./inradiotyperesolutionresult/confirmationrequired%28with%29.md)
   Creates an object whose resolution requires that the user must confirm the value before proceeding.
+- [+ successWithResolvedValue:](./inradiotyperesolutionresult/successwithresolvedvalue_.md)
+  Creates an object whose resolution involves the successful matching of the specified parameter.
+- [+ confirmationRequiredWithValueToConfirm:](./inradiotyperesolutionresult/confirmationrequiredwithvaluetoconfirm_.md)
+  Creates an object whose resolution requires that the user must confirm the value before proceeding.
 
 ## Relationships
 

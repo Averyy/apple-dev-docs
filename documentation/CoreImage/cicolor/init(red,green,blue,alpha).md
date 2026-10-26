@@ -45,6 +45,8 @@ On macOS before 10.10, the CIColor’s color space will be Generic RGB.
 - [init(cgColor: CGColor)](./init%28cgcolor%29-1hzk4.md)
   Create a Core Image color object with a Core Graphics color object.
 - [convenience init(color: UIColor)](./init%28color%29.md)
+- [- initWithRed:green:blue:](./initwithred_green_blue_.md)
+  Initialize a Core Image color object in the sRGB color space with the specified red, green, and blue component values.
 
 
 ---

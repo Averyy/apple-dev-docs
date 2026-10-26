@@ -28,6 +28,10 @@ Count the total number of path crossings. If the number of crossings is even, th
 ### Constants
 - [NSBezierPath.WindingRule.nonZero](./nonzero.md)
   Specifies the non-zero winding rule.
+- [NSNonZeroWindingRule](../../nsnonzerowindingrule.md)
+  Specifies the non-zero winding rule.
+- [NSEvenOddWindingRule](../../nsevenoddwindingrule.md)
+  Specifies the even-odd winding rule.
 
 
 ---

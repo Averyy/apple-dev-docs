@@ -37,6 +37,12 @@ The `minCellSize` parameter controls the memory usage and performance of the tre
 - `quad`: The axis-aligned bounding rectangle encompassing all possible elements of the tree. Elements added to the tree must lie entirely within this rectangle.
 - `minCellSize`: The minimum dimension (width and height) of a node in the tree.
 
+## See Also
+
+### Creating a Quadtree
+- [+ quadtreeWithBoundingQuad:minimumCellSize:](./quadtreewithboundingquad_minimumcellsize_.md)
+  Creates a quadtree with the specified dimensions.
+
 
 ---
 

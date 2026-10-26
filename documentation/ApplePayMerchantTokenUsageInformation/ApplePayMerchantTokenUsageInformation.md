@@ -9,7 +9,7 @@ Add details about your merchant token usage information package.
 ## Topics
 
 ### Essentials
-- [Adding merchant token usage information](https://developer.apple.com/documentation/applepaymerchanttokenmanagementapi/adding-merchant-token-usage-information)
+- [Adding merchant token usage information](../ApplePayMerchantTokenManagementAPI/adding-merchant-token-usage-information.md)
   Create directories and add files, images, and localization for your merchant token usage information package.
 ### Getting the currency amount
 - [object CurrencyAmount](./currencyamount.md)

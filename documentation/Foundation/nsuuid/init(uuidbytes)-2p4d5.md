@@ -40,6 +40,9 @@ A new UUID object.
   Initializes a new UUID with RFC 4122 version 4 random bytes.
 - [convenience init?(uuidString: String)](./init%28uuidstring%29-8t9n3.md)
   Initializes a new UUID with the formatted string.
+### Related Documentation
+- [+ UUID](./uuid.md)
+  Create and returns a new UUID with RFC 4122 version 4 random bytes.
 
 
 ---

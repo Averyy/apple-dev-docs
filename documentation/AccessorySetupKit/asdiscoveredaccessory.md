@@ -31,6 +31,8 @@ When your app’s picker uses the [`filterDiscoveryResults`](./aspickerdisplayse
   The Bluetooth advertisement data from the discovered accessory.
 - [var bluetoothRSSI: Int?](./asdiscoveredaccessory/bluetoothrssi-5a2gp.md)
   The Bluetooth RSSI (Received Signal Strength Indicator) value from the discovered accessory.
+- [bluetoothRSSI](./asdiscoveredaccessory/bluetoothrssi-3c75a.md)
+  The Bluetooth RSSI (Received Signal Strength Indicator) value from the discovered accessory.
 
 ## Relationships
 

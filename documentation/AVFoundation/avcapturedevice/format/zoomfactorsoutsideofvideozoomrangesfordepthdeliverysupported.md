@@ -40,6 +40,14 @@ Setting a zoom factor outside the range defined by the [`supportedVideoZoomFacto
   The zoom factors at which this device transitions to secondary native resolution modes.
 - [var supportedVideoZoomRangesForDepthDataDelivery: [ClosedRange<CGFloat>]](./supportedvideozoomrangesfordepthdatadelivery.md)
   The zoom ranges that support the delivery of depth data.
+- [systemRecommendedVideoZoomRange](../../avcapturedeviceformat/systemrecommendedvideozoomrange.md)
+  The system’s recommended zoom range for this device format.
+- [secondaryNativeResolutionZoomFactors](../../avcapturedeviceformat/secondarynativeresolutionzoomfactors.md)
+  The zoom factors at which this device transitions to secondary native resolution modes.
+- [supportedVideoZoomRangesForDepthDataDelivery](../../avcapturedeviceformat/supportedvideozoomrangesfordepthdatadelivery.md)
+  The zoom ranges that support the delivery of depth data.
+- [AVZoomRange](../../avzoomrange.md)
+  An object that defines an inclusive range of zoom values.
 
 
 ---

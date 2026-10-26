@@ -46,6 +46,10 @@ The default is [`false`](../../Swift/false.md).
   Sets the width of the segment at the index you specify.
 - [func widthForSegment(at: Int) -> CGFloat](./widthforsegment%28at%29.md)
   Returns the width of the segment at the index you specify.
+- [segmentedControlStyle](./segmentedcontrolstyle.md)
+  The style of the segmented control.
+- [UISegmentedControlStyle](../uisegmentedcontrolstyle.md)
+  The styles of the segmented control.
 
 
 ---

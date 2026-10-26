@@ -48,6 +48,8 @@ enum AVRoutePickerViewButtonStyle : NSInteger;
   A view that presents a list of nearby media receivers.
 - [protocol AVRoutePickerViewDelegate](./avroutepickerviewdelegate.md)
   A protocol that defines the methods to adopt to respond to route picker view presentation events.
+- [AVAudioSessionRouteSelection](./avaudiosessionrouteselection.md)
+  Constants that indicate the audio route selection.
 
 
 ---

@@ -47,6 +47,8 @@ An [`MTLIOCompressionStatus`](./mtliocompressionstatus.md) instance.
   Adds data to a compression context.
 - [enum MTLIOCompressionStatus](./mtliocompressionstatus.md)
   Represents the final state of a compression context.
+- [MTLIOCreateCompressionContext](./mtliocreatecompressioncontext.md)
+  Creates a compression context that you use to compress data into a single file.
 
 
 ---

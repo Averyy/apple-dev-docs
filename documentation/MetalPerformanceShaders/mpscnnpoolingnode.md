@@ -35,6 +35,9 @@ class MPSCNNPoolingNode
 - [var kernelWidth: Int](./mpscnnpoolingnode/kernelwidth.md)
 - [var strideInPixelsX: Int](./mpscnnpoolingnode/strideinpixelsx.md)
 - [var strideInPixelsY: Int](./mpscnnpoolingnode/strideinpixelsy.md)
+### Type Methods
+- [+ nodeWithSource:filterSize:stride:](./mpscnnpoolingnode/nodewithsource_filtersize_stride_.md)
+- [+ nodeWithSource:filterSize:](./mpscnnpoolingnode/nodewithsource_filtersize_.md)
 
 ## Relationships
 

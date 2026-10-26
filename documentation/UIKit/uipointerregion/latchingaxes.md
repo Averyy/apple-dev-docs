@@ -33,6 +33,8 @@ If you set this property, the [`UIPointerStyle`](../uipointerstyle.md) associate
   The rectangle bounds of the region.
 - [var identifier: AnyHashable?](./identifier-1tw1m.md)
   An optional identifier for the region.
+- [identifier](./identifier-9i5wc.md)
+  An optional identifier for the region.
 
 
 ---

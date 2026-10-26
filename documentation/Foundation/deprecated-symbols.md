@@ -17,6 +17,14 @@ Migrate your code away from using these symbols.
 ### Deprecated Properties
 - [var containsAttachments: Bool](./nsattributedstring/containsattachments.md)
   A Boolean value that indicates whether the attribute string contains any attachment attributes.
+- [+ textFileTypes](./nsattributedstring/textfiletypes.md)
+  Returns an array of strings that represent file types that can be loaded as text.
+- [+ textUnfilteredFileTypes](./nsattributedstring/textunfilteredfiletypes.md)
+  Returns an array of strings that represent file types that can be loaded as a text.
+- [+ textPasteboardTypes](./nsattributedstring/textpasteboardtypes.md)
+  Returns an array of pasteboard types that can be loaded as text.
+- [+ textUnfilteredPasteboardTypes](./nsattributedstring/textunfilteredpasteboardtypes.md)
+  Returns an array of pasteboard types that can be loaded as text.
 ### Deprecated Enumerations
 - [enum NSTextWritingDirection](../UIKit/nstextwritingdirection.md)
   Options for specifying text-writing direction.
@@ -27,6 +35,10 @@ Migrate your code away from using these symbols.
   Draws the attributed string with the specified options within the specified rectangle in the current graphics context.
 - [func boundingRect(with: NSSize, options: NSString.DrawingOptions) -> NSRect](./nsattributedstring/boundingrect%28with,options%29.md)
   Calculates and returns a bounding rectangle for the attributed string using the options specified within the specified rectangle in the current graphics context.
+### Deprecated Constants
+- [NSUnderlineByWordMask](../AppKit/nsunderlinebywordmask.md)
+  Draw the underline only underneath words, not underneath whitespace.
+- [NSUnderlineStrikethroughMask](../AppKit/nsunderlinestrikethroughmask.md)
 
 
 ---

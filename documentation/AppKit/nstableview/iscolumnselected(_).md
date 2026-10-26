@@ -56,6 +56,11 @@ func isColumnSelected(_ column: Int) -> Bool
   Selects all rows or all columns, according to whether rows or columns were most recently selected.
 - [func deselectAll(Any?)](./deselectall%28_%29.md)
   Deselects all selected rows or columns if empty selection is allowed; otherwise does nothing.
+### Related Documentation
+- [- selectedColumnEnumerator](./selectedcolumnenumerator.md)
+  This method has been deprecated.
+- [- selectColumn:byExtendingSelection:](./selectcolumn_byextendingselection_.md)
+  Selects the column at the specified index, optionally extending any existing selection.
 
 
 ---

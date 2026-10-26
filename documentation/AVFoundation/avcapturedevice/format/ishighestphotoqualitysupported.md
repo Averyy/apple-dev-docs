@@ -33,6 +33,8 @@ The simplest way to capture the highest quality photos is to set [`photo`](../..
   The maximum photo dimension this format supports.
 - [var isHighPhotoQualitySupported: Bool](./ishighphotoqualitysupported.md)
   A Boolean value that indicates whether this format supports high-quality capture with the current quality prioritization setting.
+- [supportedMaxPhotoDimensions](../../avcapturedeviceformat/supportedmaxphotodimensions.md)
+  The maximum photo dimension this format supports.
 
 
 ---

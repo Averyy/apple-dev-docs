@@ -33,6 +33,22 @@ When you include this pattern in calls to [`detectValues(for:inItemSet:completio
   A pattern that indicates the pasteboard contains a string suitable for use as a web search term.
 - [static let probableWebURL: UIPasteboard.DetectionPattern](./probableweburl.md)
   A pattern that indicates the pasteboard contains a string that consists of a URL.
+- [UIPasteboardDetectionPatternCalendarEvent](../../uipasteboarddetectionpatterncalendarevent.md)
+  A pattern that indicates the pasteboard detects a string that contains a calendar event.
+- [UIPasteboardDetectionPatternEmailAddress](../../uipasteboarddetectionpatternemailaddress.md)
+  A pattern that indicates the pasteboard detects a string that contains an email address.
+- [UIPasteboardDetectionPatternFlightNumber](../../uipasteboarddetectionpatternflightnumber.md)
+  A pattern that indicates the pasteboard detects a string that contains a flight number.
+- [UIPasteboardDetectionPatternLink](../../uipasteboarddetectionpatternlink.md)
+  A pattern that indicates the pasteboard detects of a string that contains a URL.
+- [UIPasteboardDetectionPatternMoneyAmount](../../uipasteboarddetectionpatternmoneyamount.md)
+  A pattern that indicates the pasteboard detects a string that contains an amount of money.
+- [UIPasteboardDetectionPatternPhoneNumber](../../uipasteboarddetectionpatternphonenumber.md)
+  A pattern that indicates the pasteboard detects a string that contains a phone number.
+- [UIPasteboardDetectionPatternPostalAddress](../../uipasteboarddetectionpatternpostaladdress.md)
+  A pattern that indicates the pasteboard detects a string that contains a postal address.
+- [UIPasteboardDetectionPatternShipmentTrackingNumber](../../uipasteboarddetectionpatternshipmenttrackingnumber.md)
+  A pattern that indicates the pasteboard detects a string that contains a parcel tracking number and carrier.
 
 
 ---

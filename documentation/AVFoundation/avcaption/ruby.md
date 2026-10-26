@@ -73,6 +73,10 @@ Ruby characters are small annotations, typically used in Japanese content, that 
   Returns the text combine at the index position.
 - [AVCaption.TextCombine](./textcombine.md)
   The caption’s supported rendering policy options.
+- [- rubyAtIndex:range:](./rubyatindex_range_.md)
+  Returns the ruby text at the index position.
+- [- textCombineAtIndex:range:](./textcombineatindex_range_.md)
+  Returns the text combine at the index position.
 
 
 ---

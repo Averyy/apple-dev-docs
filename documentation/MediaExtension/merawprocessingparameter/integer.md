@@ -24,6 +24,14 @@ class Integer
 ### Creating an integer parameter object
 - [convenience init(name: String, key: String, description: String, initialValue: Int, maximum: Int, minimum: Int, neutralValue: Int?, cameraValue: Int?)](./integer/init%28name,key,description,initialvalue,maximum,minimum,neutralvalue,cameravalue%29.md)
   Creates an integer parameter object.
+- [- initWithName:key:description:initialValue:maximum:minimum:](../merawprocessingintegerparameter/initwithname_key_description_initialvalue_maximum_minimum_.md)
+  Creates a integer parameter object with the initial value.
+- [- initWithName:key:description:initialValue:maximum:minimum:cameraValue:](../merawprocessingintegerparameter/initwithname_key_description_initialvalue_maximum_minimum_cameravalue_.md)
+  Creates an integer parameter object with the initial and camera values.
+- [- initWithName:key:description:initialValue:maximum:minimum:neutralValue:](../merawprocessingintegerparameter/initwithname_key_description_initialvalue_maximum_minimum_neutralvalue_.md)
+  Creates an integer parameter object with the initial and neutral values.
+- [- initWithName:key:description:initialValue:maximum:minimum:neutralValue:cameraValue:](../merawprocessingintegerparameter/initwithname_key_description_initialvalue_maximum_minimum_neutralvalue_cameravalue_.md)
+  Creates an integer parameter object with the initial, neutral, and camera values.
 ### Properties
 - [var currentValue: Int](./integer/currentvalue.md)
   Get or set the current value for this parameter.
@@ -36,6 +44,11 @@ class Integer
 ### Instance Properties
 - [var cameraValue: Int?](./integer/cameravalue.md)
 - [var neutralValue: Int?](./integer/neutralvalue.md)
+### Inspecting a parameter
+- [- hasCameraValue:](../merawprocessingintegerparameter/hascameravalue_.md)
+  The optional camera value for this parameter.
+- [- hasNeutralValue:](../merawprocessingintegerparameter/hasneutralvalue_.md)
+  The optional neutral value for this parameter.
 
 ## Relationships
 

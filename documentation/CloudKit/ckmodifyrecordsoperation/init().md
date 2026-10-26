@@ -34,6 +34,8 @@ You must set at least one of the [`recordsToSave`](./recordstosave.md) or [`reco
 ### Creating a Modify Record Operation
 - [convenience init(recordsToSave: [CKRecord]?, recordIDsToDelete: [CKRecord.ID]?)](./init%28recordstosave,recordidstodelete%29.md)
   Creates an operation for modifying the specified records.
+- [- initWithRecordsToSave:recordIDsToDelete:](./initwithrecordstosave_recordidstodelete_.md)
+  Creates an operation for modifying the specified records.
 
 
 ---

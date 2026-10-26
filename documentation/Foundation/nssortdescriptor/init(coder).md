@@ -44,6 +44,12 @@ init?(coder: NSCoder)
   Creates a sort descriptor with a specified key path and ordering, and a comparator block.
 - [convenience init<Compared>(SortDescriptor<Compared>)](./init%28_%29-7qf91.md)
   Creates a sort descriptor using a sort descriptor you specify.
+- [+ sortDescriptorWithKey:ascending:](./sortdescriptorwithkey_ascending_.md)
+  Creates and returns a sort descriptor with the specified key path and ordering.
+- [+ sortDescriptorWithKey:ascending:selector:](./sortdescriptorwithkey_ascending_selector_.md)
+  Creates a sort descriptor with the specified key path, ordering, and comparison selector.
+- [+ sortDescriptorWithKey:ascending:comparator:](./sortdescriptorwithkey_ascending_comparator_.md)
+  Creates and returns a sort descriptor initialized with the specified key path and ordering, and a comparator block.
 
 
 ---

@@ -23,6 +23,8 @@ static simd_float2 simd_make_float2_undef(float other);
   Returns a new vector with the first element set to a scalar value, and other elements set to zero.
 - [func simd_make_float2(Float, Float) -> simd_float2](./simd_make_float2%28_,_%29.md)
   Returns a new vector from the specified scalar values.
+- [vector2](./vector2-25p9a.md)
+  Returns a new vector from the specified scalar values.
 
 
 ---

@@ -41,6 +41,9 @@ The name of the declared type of the attribute or relationship identified by `ke
   Returns a Boolean value indicating whether the described class has a writable property identified by the specified key.
 - [func key(withAppleEventCode: FourCharCode) -> String?](./key%28withappleeventcode%29.md)
   Given an Apple event code that identifies a property or element class, returns the key for the corresponding attribute, one-to-one relationship, or one-to-many relationship.
+### Related Documentation
+- [- isReadOnlyKey:](./isreadonlykey_.md)
+  Returns a Boolean value indicating whether a specified property in the receiver is read-only.
 
 
 ---

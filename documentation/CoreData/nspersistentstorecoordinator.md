@@ -156,6 +156,9 @@ Use a coordinator to add or remove persistent stores, change the type or locatio
   Review unsupported symbols and their replacements.
 ### Instance Methods
 - [func managedObjectID(for: String) -> NSManagedObjectID?](./nspersistentstorecoordinator/managedobjectid%28for%29.md)
+- [- managedObjectIDFromUTF8String:length:](./nspersistentstorecoordinator/managedobjectidfromutf8string_length_.md)
+- [- setStoresFastSyncDetailsAtURL:forPersistentStore:](./nspersistentstorecoordinator/setstoresfastsyncdetailsaturl_forpersistentstore_.md)
+- [- syncWithClient:inBackground:handler:error:](./nspersistentstorecoordinator/syncwithclient_inbackground_handler_error_.md)
 ### Structures
 - [NSPersistentStoreCoordinator.RemoteChangeMessage](./nspersistentstorecoordinator/remotechangemessage.md)
   Posted when a store receives a remote change notification from another process.

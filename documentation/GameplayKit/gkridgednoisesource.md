@@ -37,6 +37,8 @@ Like all [`GKNoiseSource`](./gknoisesource.md) subclasses, a ridged noise source
 ### Creating a Noise Source
 - [init(frequency: Double, octaveCount: Int, lacunarity: Double, seed: Int32)](./gkridgednoisesource/init%28frequency,octavecount,lacunarity,seed%29.md)
   Initializes a ridged noise source with the specified parameters.
+- [+ ridgedNoiseSourceWithFrequency:octaveCount:lacunarity:seed:](./gkridgednoisesource/ridgednoisesourcewithfrequency_octavecount_lacunarity_seed_.md)
+  Creates a ridged noise source with the specified parameters.
 
 ## Relationships
 

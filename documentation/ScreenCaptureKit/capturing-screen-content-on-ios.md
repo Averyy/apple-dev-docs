@@ -148,7 +148,7 @@ The sample re-attaches the preview when the app returns to the foreground, becau
 
 #### Save recordings to Photos
 
-When a recording or clip finishes, the sample writes it to Photos through [`PHPhotoLibrary`](https://developer.apple.com/documentation/photos/phphotolibrary). Because the sample only writes to Photos, it requests the narrower [`PHAccessLevel.addOnly`](https://developer.apple.com/documentation/photos/phaccesslevel/addonly) authorization scope rather than full library access — the data-minimization pattern of requesting only what the feature needs. The sample hands the file off with [`shouldMoveFile`](https://developer.apple.com/documentation/photos/phassetresourcecreationoptions/shouldmovefile) set to `true` so the temporary file doesn’t linger on disk.
+When a recording or clip finishes, the sample writes it to Photos through [`PHPhotoLibrary`](../Photos/phphotolibrary.md). Because the sample only writes to Photos, it requests the narrower [`PHAccessLevel.addOnly`](../Photos/phaccesslevel/addonly.md) authorization scope rather than full library access — the data-minimization pattern of requesting only what the feature needs. The sample hands the file off with [`shouldMoveFile`](../Photos/phassetresourcecreationoptions/shouldmovefile.md) set to `true` so the temporary file doesn’t linger on disk.
 
 ```swift
 let status = await PHPhotoLibrary.requestAuthorization(for: .addOnly)

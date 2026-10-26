@@ -200,6 +200,9 @@ For more information about making iOS controls accessible, see the accessibility
 ### Configuring the track
 - [var trackConfiguration: UISlider.TrackConfiguration?](./uislider/trackconfiguration-6m55i.md)
 - [UISlider.TrackConfiguration](./uislider/trackconfiguration-swift.struct.md)
+- [trackConfiguration](./uislider/trackconfiguration-2f2qa.md)
+- [UISliderTrackConfiguration](./uislidertrackconfiguration.md)
+- [UISliderTick](./uislidertick.md)
 ### Overrides for subclasses
 - [func maximumValueImageRect(forBounds: CGRect) -> CGRect](./uislider/maximumvalueimagerect%28forbounds%29.md)
   Returns the drawing rectangle for the maximum value image.

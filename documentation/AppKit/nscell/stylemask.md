@@ -34,6 +34,8 @@ These contents are used by the [`highlightsBy`](../nsbuttoncell/highlightsby.md)
   The button cell swaps the “control color” (the [`controlColor`](../nscolor/controlcolor.md) method of `NSColor`) and white pixels on its background and icon.
 - [static var changeBackgroundCellMask: NSCell.StyleMask](./stylemask/changebackgroundcellmask.md)
   Same as `NSChangeGrayCellMask`, but only background pixels are changed.
+- [NSNoCellMask](../nscellstylemask/nsnocellmask.md)
+  The button cell doesn’t change.
 ### Initializers
 - [init(rawValue: UInt)](./stylemask/init%28rawvalue%29.md)
 

@@ -141,6 +141,10 @@ If your view descends from a class other than `NSView`, call `super` to let the 
 ### Deprecated
 - [Deprecated symbols](./nsview-deprecated-symbols.md)
   Review symbols that are no longer in active development, and their recommended replacements.
+### Instance Methods
+- [- edgeInsetsForLayoutRegion:](./nsview/edgeinsetsforlayoutregion_.md)
+- [- layoutGuideForLayoutRegion:](./nsview/layoutguideforlayoutregion_.md)
+- [- rectForLayoutRegion:](./nsview/rectforlayoutregion_.md)
 
 ## Relationships
 

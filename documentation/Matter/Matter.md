@@ -468,6 +468,18 @@ To access a Matter accessory on a network, you must commission it. Commissionin
 - [enum MTRTimeSynchronizationTimeZoneDatabase](./mtrtimesynchronizationtimezonedatabase.md)
 - [enum MTRWaterHeaterManagementBoostState](./mtrwaterheatermanagementbooststate.md)
 - [enum MTRWaterHeaterModeModeTag](./mtrwaterheatermodemodetag.md)
+### Macros
+- [MTRMaxErrorCode](./mtrmaxerrorcode.md)
+- [MTR_AVAILABLE](./mtr_available.md)
+- [MTR_DEPRECATED](./mtr_deprecated.md)
+- [MTR_DEPRECATED_WITH_REPLACEMENT](./mtr_deprecated_with_replacement.md)
+- [MTR_EXPORT](./mtr_export.md)
+- [MTR_EXTERN](./mtr_extern.md)
+- [MTR_NEWLY_AVAILABLE](./mtr_newly_available.md)
+- [MTR_NEWLY_DEPRECATED](./mtr_newly_deprecated.md)
+- [MTR_PROVISIONALLY_AVAILABLE](./mtr_provisionally_available.md)
+- [MTR_SWIFT_DISFAVORED_OVERLOAD](./mtr_swift_disfavored_overload.md)
+- [MTR_UNSTABLE_API](./mtr_unstable_api.md)
 
 
 ---

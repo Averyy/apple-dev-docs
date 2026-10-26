@@ -43,6 +43,8 @@ For information about localizing string resources, see [Internationalization and
   The filename of an image to use as a launch image.
 - [var soundName: String?](./soundname.md)
   The filename of the sound file to play when a notification arrives.
+- [alertLocalizationArgs](../../cknotificationinfo/alertlocalizationargs.md)
+  The fields for building a notification’s alert.
 
 
 ---

@@ -31,6 +31,8 @@ enum HKQueryOptions : NSUInteger;
   The sample’s start time must fall within the target time period.
 - [static var strictEndDate: HKQueryOptions](./hkqueryoptions/strictenddate.md)
   The sample’s end time must fall within the target time period.
+- [HKQueryOptionNone](./hkqueryoptions/hkqueryoptionnone.md)
+  The sample’s time period must overlap part of the target time period.
 ### Initializers
 - [init(rawValue: UInt)](./hkqueryoptions/init%28rawvalue%29.md)
   Returns a newly initialized query option using the provided integer.

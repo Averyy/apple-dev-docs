@@ -41,6 +41,18 @@ The `CGAffineTransform` structure’s `a`, `b`, `c`, `d`, `tx` and `ty` values a
   Create a Core Image vector object that is initialized with two values provided by a `CGPoint` structure.
 - [convenience init(cgRect: CGRect)](./init%28cgrect%29-3undj.md)
   Create a Core Image vector object that is initialized with four values provided by a `CGRect` structure.
+- [+ vectorWithValues:count:](./vectorwithvalues_count_.md)
+  Create a Core Image vector object that is initialized with the specified values.
+- [+ vectorWithX:](./vectorwithx_.md)
+  Create a Core Image vector object that is initialized with one value.
+- [+ vectorWithX:Y:](./vectorwithx_y_.md)
+  Create a Core Image vector object that is initialized with two values.
+- [+ vectorWithX:Y:Z:](./vectorwithx_y_z_.md)
+  Create a Core Image vector object that is initialized with three values.
+- [+ vectorWithX:Y:Z:W:](./vectorwithx_y_z_w_.md)
+  Create a Core Image vector object that is initialized with four values.
+- [+ vectorWithString:](./vectorwithstring_.md)
+  Create a Core Image vector object with values provided in a string representation.
 
 
 ---

@@ -56,6 +56,7 @@ enum MPSRNNMatrixId : NSUInteger;
 - [MPSRNNMatrixId.lstmOutputGateRecurrentWeights](./mpsrnnmatrixid/lstmoutputgaterecurrentweights.md)
 - [MPSRNNMatrixId.singleGateBiasTerms](./mpsrnnmatrixid/singlegatebiasterms.md)
 - [MPSRNNMatrixId.singleGateRecurrentWeights](./mpsrnnmatrixid/singlegaterecurrentweights.md)
+- [MPSRNNMatrixId_count](./mpsrnnmatrixid/mpsrnnmatrixid_count.md)
 ### Initializers
 - [init?(rawValue: UInt)](./mpsrnnmatrixid/init%28rawvalue%29.md)
 

@@ -77,6 +77,8 @@ SceneKit can render each element using a different material. For details, see th
   The width or depth of each chamfered edge. Animatable.
 - [var chamferProfile: UIBezierPath?](./scntext/chamferprofile.md)
   A path that determines the cross-sectional contour of each chamfered edge.
+- [chamferSegmentCount](./scntext/chamfersegmentcount.md)
+  The number of divisions SceneKit uses to create each chamfered edge of the text geometry. Animatable.
 
 ## Relationships
 

@@ -142,6 +142,8 @@ Background sessions let you perform uploads and downloads of content in the back
   An array of proxy configuration objects containing information about the proxies to use within this session.
 - [var connectionProxyDictionary: [AnyHashable : Any]?](./urlsessionconfiguration/connectionproxydictionary.md)
   A dictionary containing information about the proxy to use within this session.
+- [proxyConfigurations](./nsurlsessionconfiguration/proxyconfigurations.md)
+  An array of proxy configuration objects containing information about the proxies to use within this session.
 ### Supporting connectivity changes
 - [var waitsForConnectivity: Bool](./urlsessionconfiguration/waitsforconnectivity.md)
   A Boolean value that indicates whether the session should wait for connectivity to become available, or fail immediately.

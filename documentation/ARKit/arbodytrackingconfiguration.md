@@ -35,6 +35,8 @@ By default, [`frameSemantics`](./arconfiguration/framesemantics-swift.property.m
   Creates a new body tracking configuration.
 - [var initialWorldMap: ARWorldMap?](./arbodytrackingconfiguration/initialworldmap.md)
   The state from a previous AR session to attempt to resume with this session configuration.
+- [+ new](./arbodytrackingconfiguration/new.md)
+  Creates a new body tracking configuration.
 ### Estimating Body Scale
 - [var automaticSkeletonScaleEstimationEnabled: Bool](./arbodytrackingconfiguration/automaticskeletonscaleestimationenabled.md)
   A flag that determines whether ARKit estimates the height of a body that it’s tracking.

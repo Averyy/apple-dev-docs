@@ -41,6 +41,8 @@ Setting this option is a way to verify that binary archives contain all the func
   An option that instructs the compiler to store function information for inspecting binary archives.
 - [static var storeFunctionInMetalScript: MTLFunctionOptions](./storefunctioninmetalscript.md)
   An option that instructs the compiler to store function information for inspecting binary archives.
+- [MTLFunctionOptionNone](./mtlfunctionoptionnone.md)
+  A sentinel value that represents an empty set of options, which is the default behavior for creating functions.
 
 
 ---

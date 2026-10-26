@@ -33,7 +33,7 @@ var shortcutAvailability: INShortcutAvailabilityOptions { get set }
 
 #### Discussion
 
-When you donate an activity, include a set of relevant [`INShortcutAvailabilityOptions`](https://developer.apple.com/documentation/intents/inshortcutavailabilityoptions) to describe appropriate categories for offering a shortcut to the activity.
+When you donate an activity, include a set of relevant [`INShortcutAvailabilityOptions`](../../Intents/inshortcutavailabilityoptions.md) to describe appropriate categories for offering a shortcut to the activity.
 
 If none of the availability options apply to your intent, use the empty set. The empty set is the default value for this property.
 

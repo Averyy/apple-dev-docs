@@ -40,6 +40,8 @@ Set this property to [`true`](../../Swift/true.md) to have the button call [`upd
   A closure that executes when the button state changes.
 - [typealias ConfigurationUpdateHandler](./configurationupdatehandler-swift.typealias.md)
   A closure to update the configuration of a button.
+- [configuration](./configuration-7gz60.md)
+  The configuration for the button’s appearance.
 
 
 ---

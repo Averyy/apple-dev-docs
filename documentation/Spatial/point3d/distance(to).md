@@ -33,6 +33,13 @@ The distance between two points.
 
 - `other`: The point to calculate the distance to.
 
+## See Also
+
+### Checking characteristics
+- [SPPoint3DIsFinite](../sppoint3disfinite.md)
+- [SPPoint3DIsNaN](../sppoint3disnan.md)
+- [SPPoint3DIsZero](../sppoint3diszero.md)
+
 
 ---
 

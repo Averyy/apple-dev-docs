@@ -39,6 +39,7 @@ class MTROptionalQRCodeInfo
 - [func setStringValue(String)](./mtroptionalqrcodeinfo/setstringvalue%28_%29.md)
 - [func setTag(NSNumber)](./mtroptionalqrcodeinfo/settag%28_%29.md)
 - [func setType(MTROptionalQRCodeInfoType)](./mtroptionalqrcodeinfo/settype%28_%29.md)
+- [- init](./mtroptionalqrcodeinfo/init.md)
 
 ## Relationships
 

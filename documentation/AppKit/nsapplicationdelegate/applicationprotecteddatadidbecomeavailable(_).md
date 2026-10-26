@@ -20,6 +20,12 @@ optional func applicationProtectedDataDidBecomeAvailable(_ notification: Notific
 - (void) applicationProtectedDataDidBecomeAvailable:(NSNotification *) notification;
 ```
 
+## Topics
+
+### Related notification
+- [NSApplicationProtectedDataDidBecomeAvailableNotification](../nsapplicationprotecteddatadidbecomeavailablenotification.md)
+  Posted when protected data becomes available.
+
 ## See Also
 
 ### Restoring Application State

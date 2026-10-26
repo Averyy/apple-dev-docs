@@ -21,7 +21,7 @@ protocol FxTimingAPI_v4
 
 ## Mentions
 
-- [Understanding time in FxPlug](https://developer.apple.com/documentation/professional-video-applications/understanding-time-in-fxplug)
+- [Understanding time in FxPlug](../Professional-Video-Applications/understanding-time-in-fxplug.md)
 
 #### Overview
 
@@ -70,13 +70,13 @@ Using the FxTimingAPI, your plug-in can query the timing properties of its input
 ## See Also
 
 ### Time and analysis
-- [Understanding time in FxPlug](https://developer.apple.com/documentation/professional-video-applications/understanding-time-in-fxplug)
+- [Understanding time in FxPlug](../Professional-Video-Applications/understanding-time-in-fxplug.md)
   Learn about time handling in host apps and plug-ins.
-- [Scheduling media in plug-ins](https://developer.apple.com/documentation/professional-video-applications/scheduling-media-in-plug-ins)
+- [Scheduling media in plug-ins](../Professional-Video-Applications/scheduling-media-in-plug-ins.md)
   Use the scheduling APIs in FxPlug to retrieve frames from different times.
 - [protocol FxKeyframeAPI_v3](./fxkeyframeapi_v3.md)
   A collection of methods for manipulating the keyframes of your FxPlug 4 plug-in.
-- [Analyzing media](https://developer.apple.com/documentation/professional-video-applications/analyzing-media)
+- [Analyzing media](../Professional-Video-Applications/analyzing-media.md)
   Use the FxPlug analysis API to analyze frames of source media before rendering them.
 - [protocol FxAnalysisAPI](./fxanalysisapi.md)
   A protocol that host applications implement to provide information to plug-ins that support the FxAnalyzer protocol.

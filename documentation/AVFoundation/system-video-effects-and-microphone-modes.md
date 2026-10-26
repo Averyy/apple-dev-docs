@@ -33,6 +33,7 @@ Configure the state of system video effects like Center Stage, and inspect enhan
   A value that indicates the current mode of Center Stage control.
 - [AVCaptureDevice.CenterStageControlMode](./avcapturedevice/centerstagecontrolmode-swift.enum.md)
   Constants that indicate the current Center Stage control mode.
+- [centerStageRectOfInterestSupported](./avcapturedevice/centerstagerectofinterestsupported.md)
 ### Configuring Studio Light
 - [var isStudioLightActive: Bool](./avcapturedevice/isstudiolightactive.md)
   A Boolean value that indicates whether Studio Light is active on a device.

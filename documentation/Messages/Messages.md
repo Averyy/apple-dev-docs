@@ -109,6 +109,8 @@ In iOS and iPadOS 18.2 and later, a person may select an app other than the Mess
   Values that describe errors the Critical Messaging API returns.
 ### Classes
 - [class MSUPIRequest](./msupirequest.md)
+### Macros
+- [MESSAGES_EXTERN](./messages_extern.md)
 
 
 ---

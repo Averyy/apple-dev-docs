@@ -65,6 +65,12 @@ typedef NSObject<OS_nw_endpoint> * nw_endpoint_t;
 - [func nw_endpoint_get_url(nw_endpoint_t) -> UnsafePointer<CChar>](./nw_endpoint_get_url%28_%29.md)
   Accesses the URL string stored in an endpoint.
 
+## See Also
+
+### Essentials
+- [nw_parameters_t](./nw_parameters_t.md)
+  An object that stores the protocols to use for connections, options for sending data, and network path constraints.
+
 
 ---
 

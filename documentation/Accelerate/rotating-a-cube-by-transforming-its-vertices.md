@@ -12,13 +12,13 @@ Rotate a cube through a series of keyframes using quaternion interpolation to tr
 
 #### Overview
 
-Quaternions are fundamental to graphics programming and are often used as a compact representation of the rotation of an object in three dimensions. You can rotate a 3D object in space by applying unit quaternion actions to each of its vertices. The [simd](./simd-library.md) module includes functions to interpolate between a series of rotational keyframes — defined by unit quaternions — with either the [`simd_slerp(_:_:_:)`](https://developer.apple.com/documentation/simd/simd_slerp(_:_:_:)-u2db) (for linear interpolation) or the [`simd_spline(_:_:_:_:_:)`](https://developer.apple.com/documentation/simd/simd_spline(_:_:_:_:_:)-1ok51) (for smooth, spline-based interpolation) functions.
+Quaternions are fundamental to graphics programming and are often used as a compact representation of the rotation of an object in three dimensions. You can rotate a 3D object in space by applying unit quaternion actions to each of its vertices. The [simd](./simd-library.md) module includes functions to interpolate between a series of rotational keyframes — defined by unit quaternions — with either the [`simd_slerp(_:_:_:)`](../simd/simd_slerp%28_,_,_%29-u2db.md) (for linear interpolation) or the [`simd_spline(_:_:_:_:_:)`](../simd/simd_spline%28_,_,_,_,_%29-1ok51.md) (for smooth, spline-based interpolation) functions.
 
 This sample code project defines a cube using eight vertices and transforms it through a series of rotations. The sample app provides a SwiftUI [`Toggle`](../SwiftUI/toggle.md) control that switches between a series of discrete spherical linear interpolations (that is, a series of separate arcs between each keyframe) and a continuous spline (that is, a single, smooth path between each keyframe).
 
 ##### Define a cube by its vertices
 
-The sample code defines a cube with eight [`simd_double3`](https://developer.apple.com/documentation/simd/simd_double3) vectors. Each vector specifies the 3D position of one of the cube’s corners.
+The sample code defines a cube with eight [`simd_double3`](../simd/simd_double3.md) vectors. Each vector specifies the 3D position of one of the cube’s corners.
 
 ```swift
 let cubeVertexOrigins: [simd_double3] = [
@@ -114,7 +114,7 @@ let increment: Double = 0.02
 vertexRotationTime += increment
 ```
 
-The [`simd_slerp(_:_:_:)`](https://developer.apple.com/documentation/simd/simd_slerp(_:_:_:)-u2db) function returns a quaternion that’s spherically interpolated between the current and next quaternion keyframe at the specified time:
+The [`simd_slerp(_:_:_:)`](../simd/simd_slerp%28_,_,_%29-u2db.md) function returns a quaternion that’s spherically interpolated between the current and next quaternion keyframe at the specified time:
 
 ```swift
 quaternion = simd_slerp(
@@ -152,7 +152,7 @@ Over time, the cube animates through the series of keyframes. The following imag
 
 ##### Animate between keyframes with spline interpolation
 
-The sample code uses the identical code to the spherical interpolation sample for spline interpolation, apart from one difference: rather than generating the quaternion that acts upon the vertices with [`simd_slerp(_:_:_:)`](https://developer.apple.com/documentation/simd/simd_slerp(_:_:_:)-u2db), it uses the  [`simd_spline(_:_:_:_:_:)`](https://developer.apple.com/documentation/simd/simd_spline(_:_:_:_:_:)-1ok51) function.
+The sample code uses the identical code to the spherical interpolation sample for spline interpolation, apart from one difference: rather than generating the quaternion that acts upon the vertices with [`simd_slerp(_:_:_:)`](../simd/simd_slerp%28_,_,_%29-u2db.md), it uses the  [`simd_spline(_:_:_:_:_:)`](../simd/simd_spline%28_,_,_,_,_%29-1ok51.md) function.
 
 ```swift
 quaternion = simd_spline(

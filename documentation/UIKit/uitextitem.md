@@ -34,12 +34,21 @@ A text item represents a link with a URL destination, a custom tag for a topic t
   The content type and related value of the text item.
 - [UITextItem.Content](./uitextitem/content-swift.enum.md)
   Constants that describe and capture the type of content a text item represents along with a specific related value.
+- [contentType](./uitextitem/contenttype.md)
+  The content type and related value of the text item.
 ### Specifying the range
 - [var range: NSRange](./uitextitem/range.md)
   The range that delineates the text item in an attributed string.
 ### Creating a menu
 - [UITextItem.MenuConfiguration](./uitextitem/menuconfiguration.md)
   An object that describes what type of menu and preview to show for a text item.
+### Getting the value
+- [link](./uitextitem/link.md)
+  The URL associated with the link text.
+- [textAttachment](./uitextitem/textattachment.md)
+  The attachment for with the text item.
+- [tagIdentifier](./uitextitem/tagidentifier.md)
+  The tag associated with the text item.
 
 ## Relationships
 
@@ -61,6 +70,8 @@ A text item represents a link with a URL destination, a custom tag for a topic t
   An object that describes what type of menu and preview to show for a text item.
 - [protocol UITextViewDelegate](./uitextviewdelegate.md)
   The methods for receiving editing-related messages for text view objects.
+- [UITextItemContentType](./uitextitemcontenttype.md)
+  Constants that describe and capture the type of content a text item represents along with a specific related value.
 
 
 ---

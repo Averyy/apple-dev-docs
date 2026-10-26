@@ -39,6 +39,8 @@ Like all [`GKNoiseSource`](./gknoisesource.md) subclasses, a billow noise source
   Creates a billow noise source with the specified parameters.
 - [var persistence: Double](./gkbillownoisesource/persistence.md)
   The rate at which successive octaves of the noise function decrease in amplitude.
+- [+ billowNoiseSourceWithFrequency:octaveCount:persistence:lacunarity:seed:](./gkbillownoisesource/billownoisesourcewithfrequency_octavecount_persistence_lacunarity_seed_.md)
+  Initializes a billow noise source with the specified parameters.
 
 ## Relationships
 

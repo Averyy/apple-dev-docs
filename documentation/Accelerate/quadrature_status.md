@@ -62,6 +62,8 @@ typedef enum { ... } quadrature_status;
   A structure that approximates the definite integral of a function over a finite interval.
 - [struct quadrature_integrator](./quadrature_integrator.md)
   Constants that specify integration algorithms.
+- [quadrature_integrate](./quadrature_integrate.md)
+  Computes an approximation to the definite integral of a function on a specified interval.
 
 
 ---

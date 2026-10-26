@@ -71,6 +71,8 @@ Provides an optimization over `CMSampleBufferCreate`() when the caller already h
   Creates a sample buffer with a callback to make the data ready for use.
 - [func CMSampleBufferCreateForImageBuffer(allocator: CFAllocator?, imageBuffer: CVImageBuffer, dataReady: Bool, makeDataReadyCallback: CMSampleBufferMakeDataReadyCallback?, refcon: UnsafeMutableRawPointer?, formatDescription: CMVideoFormatDescription, sampleTiming: UnsafePointer<CMSampleTimingInfo>, sampleBufferOut: UnsafeMutablePointer<CMSampleBuffer?>) -> OSStatus](./cmsamplebuffercreateforimagebuffer%28allocator,imagebuffer,dataready,makedatareadycallback,refcon,formatdescription,sampletiming,samplebufferout%29.md)
   Creates a sample buffer with an image buffer and a callback to make the data ready for use.
+- [CMSampleBufferCreateForTaggedBufferGroup](./cmsamplebuffercreatefortaggedbuffergroup.md)
+  Creates a new sample buffer from a tagged buffer group.
 
 
 ---

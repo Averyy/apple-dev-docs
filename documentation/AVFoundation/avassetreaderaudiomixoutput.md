@@ -33,6 +33,8 @@ Read audio data that you mix from one or more asset tracks by adding an audio mi
 ### Creating an audio mix output
 - [init(audioTracks: [AVAssetTrack], audioSettings: [String : Any]?)](./avassetreaderaudiomixoutput/init%28audiotracks,audiosettings%29.md)
   Creates an object that reads mixed audio from the specified audio tracks.
+- [+ assetReaderAudioMixOutputWithAudioTracks:audioSettings:](./avassetreaderaudiomixoutput/assetreaderaudiomixoutputwithaudiotracks_audiosettings_.md)
+  Creates an object that reads mixed audio from the specified audio tracks.
 ### Configuring audio settings
 - [var audioMix: AVAudioMix?](./avassetreaderaudiomixoutput/audiomix.md)
   The audio mix to use with this output.

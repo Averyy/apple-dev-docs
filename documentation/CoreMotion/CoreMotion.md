@@ -139,6 +139,9 @@ Not all services are available on all devices, and some services might be unavai
   The base class for all motion-related data objects.
 ### Classes
 - [class CMRecordedDeviceMotion](./cmrecordeddevicemotion.md)
+### Macros
+- [CM_EXTERN](./cm_extern.md)
+- [COREMOTION_EXPORT](./coremotion_export.md)
 
 
 ---

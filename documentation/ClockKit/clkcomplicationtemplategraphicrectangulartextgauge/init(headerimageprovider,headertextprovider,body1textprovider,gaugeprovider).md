@@ -31,6 +31,10 @@ init(headerImageProvider: CLKFullColorImageProvider?, headerTextProvider: CLKTex
 ### Creating the Template
 - [init(headerTextProvider: CLKTextProvider, body1TextProvider: CLKTextProvider, gaugeProvider: CLKGaugeProvider)](./init%28headertextprovider,body1textprovider,gaugeprovider%29.md)
   Creates a new template that has header text, body text, and a gauge.
+- [+ templateWithHeaderTextProvider:body1TextProvider:gaugeProvider:](./templatewithheadertextprovider_body1textprovider_gaugeprovider_.md)
+  Returns a new template that has header text, body text, and a gauge.
+- [+ templateWithHeaderImageProvider:headerTextProvider:body1TextProvider:gaugeProvider:](./templatewithheaderimageprovider_headertextprovider_body1textprovider_gaugeprovider_.md)
+  Returns a new template that has a header row with an image and text, body text, and a gauge.
 
 
 ---

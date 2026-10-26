@@ -34,6 +34,12 @@ The new fragmented asset minder.
 - `asset`: The fragmented asset added to the fragmented asset minder.
 - `mindingInterval`: The amount of time between checking to see if the system appended additional fragments to the minded asset.
 
+## See Also
+
+### Creating an asset minder
+- [+ fragmentedAssetMinderWithAsset:mindingInterval:](./fragmentedassetminderwithasset_mindinginterval_.md)
+  Creates a fragmented asset minder containing the specified asset and minding interval.
+
 
 ---
 

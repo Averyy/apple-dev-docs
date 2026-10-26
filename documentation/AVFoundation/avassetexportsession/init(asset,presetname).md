@@ -34,6 +34,8 @@ init?(asset: AVAsset, presetName: String)
 ### Creating an export session
 - [Export presets](../export-presets.md)
   Configure an export session to output media in standard sizes and formats.
+- [+ exportSessionWithAsset:presetName:](./exportsessionwithasset_presetname_.md)
+  Returns a new asset export session that uses the specified preset.
 
 
 ---

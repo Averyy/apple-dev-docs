@@ -40,6 +40,16 @@ The value for this key must be an [`NSNumber`](../../Foundation/nsnumber.md) obj
   Initializes, using the specified format and options, an image with the contents of a specific data plane in an IOSurface.
 - [static let textureFormat: CIImageOption](./textureformat.md)
   The key for an OpenGL texture format.
+- [+ imageWithCGLayer:](../ciimage/imagewithcglayer_.md)
+  Creates and returns an image object from the contents supplied by a `CGLayer` object.
+- [+ imageWithCGLayer:options:](../ciimage/imagewithcglayer_options_.md)
+  Creates and returns an image object  from the contents supplied by a `CGLayer` object, using the  specified options.
+- [+ imageWithTexture:size:flipped:colorSpace:](../ciimage/imagewithtexture_size_flipped_colorspace_.md)
+  Creates and returns an image object initialized with data supplied by an OpenGL texture.
+- [+ imageWithTexture:size:flipped:options:](../ciimage/imagewithtexture_size_flipped_options_.md)
+  Creates and returns an image object initialized with data supplied by an OpenGL texture.
+- [+ imageWithIOSurface:options:](../ciimage/imagewithiosurface_options_.md)
+  Creates, using the specified options, and returns an image from the contents of an IOSurface.
 
 
 ---

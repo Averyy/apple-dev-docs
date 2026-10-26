@@ -44,9 +44,19 @@ If you need to use retain and release semantics in an ARC-enabled app with a lat
   A group of tasks that you monitor as a single unit.
 - [Workloop](./workloop.md)
   A dispatch object that prioritizes the execution of tasks based on their quality-of-service (QoS) level.
+- [dispatch_get_main_queue](./dispatch_get_main_queue.md)
+  Returns the serial dispatch queue associated with the application’s main thread.
+- [dispatch_get_global_queue](./dispatch_get_global_queue.md)
+  Returns a system-defined global concurrent queue with the specified quality-of-service class.
 ### Thread Scheduling
 - [struct DispatchQoS](./dispatchqos.md)
   The quality of service, or the execution priority, to apply to tasks.
+- [dispatch_qos_class_t](./dispatch_qos_class_t.md)
+  Quality-of-service classes that specify the priorities for executing tasks.
+- [dispatch_queue_priority_t](./dispatch_queue_priority_t.md)
+  The execution priority for tasks in a global concurrent queue.
+- [dispatch_set_qos_class_floor](./dispatch_set_qos_class_floor.md)
+  Specifies the minimum quality-of-service level for a dispatch queue, source, or workloop.
 ### System Event Monitoring
 - [class DispatchSource](./dispatchsource.md)
   An object that coordinates the processing of specific low-level system events, such as file-system events, timers, and UNIX signals.
@@ -86,6 +96,10 @@ If you need to use retain and release semantics in an ARC-enabled app with a lat
   The current time.
 - [Wall Time Constants](./api-2963138-wall-time-constants.md)
   Constants for wall time values.
+- [dispatch_time](./dispatch_time.md)
+  Creates a `dispatch_time_t` relative to the default clock or modifies an existing `dispatch_time_t`.
+- [dispatch_walltime](./dispatch_walltime.md)
+  Creates a `dispatch_time_t` using an absolute time according to the wall clock.
 ### Dispatch Objects
 - [class DispatchObject](./dispatchobject.md)
   The base class for most dispatch types.
@@ -103,6 +117,11 @@ If you need to use retain and release semantics in an ARC-enabled app with a lat
 - [Dispatch Constants](./dispatch-constants.md)
 - [Dispatch Data Types](./dispatch-data-types.md)
 - [Dispatch Functions](./dispatch-functions.md)
+### Protocols
+- [OS_dispatch_queue_serial_executor](./os_dispatch_queue_serial_executor.md)
+### Macros
+- [DISPATCH_ENUM_SPI_AVAILABLE](./dispatch_enum_spi_available.md)
+- [DISPATCH_NO_UBSAN](./dispatch_no_ubsan.md)
 
 
 ---

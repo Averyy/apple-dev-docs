@@ -41,6 +41,8 @@ static simd_char16 simd_make_char16(simd_char8 other);
   Returns a new vector from the specified four-element vector, and other elements undefined.
 - [func simd_make_char16_undef(simd_char8) -> simd_char16](./simd_make_char16_undef%28_%29-4yci9.md)
   Returns a new vector from the specified eight-element vector, and other elements undefined.
+- [vector16](./vector16-gwvj.md)
+  Returns a new vector from the specified vectors.
 
 
 ---

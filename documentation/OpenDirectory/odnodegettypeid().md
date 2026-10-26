@@ -55,6 +55,8 @@ The type ID for an Open Directory node.
   Sets credentials for interacting with a node.
 - [func ODNodeSetCredentialsExtended(ODNodeRef!, String!, String!, CFArray!, UnsafeMutablePointer<Unmanaged<CFArray>?>!, UnsafeMutablePointer<Unmanaged<ODContextRef>?>!, UnsafeMutablePointer<Unmanaged<CFError>?>!) -> Bool](./odnodesetcredentialsextended%28_,_,_,_,_,_,_%29.md)
   Sets credentials for interacting with a node using a specified authentication method.
+- [ODNodeSetCredentialsUsingKerberosCache](./odnodesetcredentialsusingkerberoscache.md)
+  Sets credentials for interacting with a node with the Kerberos cache.
 
 
 ---

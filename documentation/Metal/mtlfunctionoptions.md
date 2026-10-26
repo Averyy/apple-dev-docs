@@ -37,6 +37,8 @@ enum MTLFunctionOptions : NSUInteger;
   An option that instructs the compiler to store function information for inspecting binary archives.
 - [static var storeFunctionInMetalScript: MTLFunctionOptions](./mtlfunctionoptions/storefunctioninmetalscript.md)
   An option that instructs the compiler to store function information for inspecting binary archives.
+- [MTLFunctionOptionNone](./mtlfunctionoptions/mtlfunctionoptionnone.md)
+  A sentinel value that represents an empty set of options, which is the default behavior for creating functions.
 ### Swift support
 - [init(rawValue: UInt)](./mtlfunctionoptions/init%28rawvalue%29.md)
   Creates a new function options structure from a raw value.

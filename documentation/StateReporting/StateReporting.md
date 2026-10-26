@@ -29,6 +29,8 @@ Each domain holds up to one active state at a time, and you can combine states a
 ### Reporting
 - [class StateReporter](./statereporter.md)
   An object unique per domain that records state transitions and volatile metadata updates.
+- [SRStateReporter](./srstatereporter.md)
+  An object unique per domain that records state transitions and volatile metadata updates.
 ### Defining metadata
 - [protocol ReportableMetadata](./reportablemetadata.md)
   A protocol for types that can supply their metadata as a dictionary of reportable values.

@@ -275,6 +275,11 @@
       "file_path": "documentation/Network/framer.md",
       "hash": "132cc71742bd56a687ce21b6ee0a9544b62d349c51d88b2d3a38181e5d6611fe"
     },
+    "https://developer.apple.com/documentation/network/framer-protocol-options": {
+      "etag": "\"1122b-6590268ffa2b4-df\"",
+      "file_path": "documentation/Network/framer-protocol-options.md",
+      "hash": "4d7f13e6babb31ce5155763871a166d78d006cc50f5ecc0a51549a450ab51859"
+    },
     "https://developer.apple.com/documentation/network/framer/init(_:)-4jsj5": {
       "etag": "\"17ee-65d55fa9163a0-df\"",
       "file_path": "documentation/Network/framer/init(_)-4jsj5.md",
@@ -310,6 +315,11 @@
       "file_path": "documentation/Network/framerprotocol/definition.md",
       "hash": "b7156ad7c9646d591ca5b0a678f66de21069c3e1be8431d10d535adf8786ab7c"
     },
+    "https://developer.apple.com/documentation/network/implementing-netcat-with-network-framework": {
+      "etag": "\"10d39-65d55fa838d89-df\"",
+      "file_path": "documentation/Network/implementing-netcat-with-network-framework.md",
+      "hash": "1afe0f50793da845261852f9466464bb55eb7e083634cbce79427c7ac2264aa8"
+    },
     "https://developer.apple.com/documentation/network/indicating-the-source-of-network-activity": {
       "etag": "\"bded-65d55fa7ef8ab-df\"",
       "file_path": "documentation/Network/indicating-the-source-of-network-activity.md",
@@ -324,6 +334,11 @@
       "etag": "\"298a-65d55faab76a1-df\"",
       "file_path": "documentation/Network/ip.md",
       "hash": "968d24a19db2b6b2f3fd4cf92d4e1da91926c26e5b2c844a37ad3bb0c39b9d4e"
+    },
+    "https://developer.apple.com/documentation/network/ip-options": {
+      "etag": "\"6dda-6590268f4eb04-df\"",
+      "file_path": "documentation/Network/ip-options.md",
+      "hash": "b5a5bbb1efed1cc089c22afd588d4087d37d94d763c766f54f9552e062b00b9b"
     },
     "https://developer.apple.com/documentation/network/ip/fragmentationdisabled(_:)": {
       "etag": "\"15b2-65d55faab76a1-df\"",
@@ -685,10 +700,20 @@
       "file_path": "documentation/Network/network-data-types.md",
       "hash": "006d0d48d2db720a8f043fde3d1f5c45d8bc94878cb8f381bb2f85b699e5e678"
     },
+    "https://developer.apple.com/documentation/network/network-enumerations": {
+      "etag": "\"1f6b-6590268e50f22-df\"",
+      "file_path": "documentation/Network/network-enumerations.md",
+      "hash": "05d515c74fd84ecc88584245abdbceaac555b3a123e3c78be77685768273a5e6"
+    },
     "https://developer.apple.com/documentation/network/network-functions": {
       "etag": "\"86632-65902691fffb7-df\"",
       "file_path": "documentation/Network/network-functions.md",
       "hash": "9743d89d052cf7eb90b06530f31ab4fa0b42200d93d5c19d103ff0b6da272825"
+    },
+    "https://developer.apple.com/documentation/network/network-macros": {
+      "etag": "\"4890-659026933ff34-df\"",
+      "file_path": "documentation/Network/network-macros.md",
+      "hash": "2ec50ddddd13eeace4e1ffc9d73aa81499a389e9a02a44a63d5dad422971a1ac"
     },
     "https://developer.apple.com/documentation/network/networkbrowser": {
       "etag": "\"3724-65d55fa8fe220-df\"",
@@ -1470,6 +1495,31 @@
       "file_path": "documentation/Network/nw_advertise_descriptor_t.md",
       "hash": "9f010db90783e63b86972a70e079d782199b492d8dcaa0e9ae9eb07dbf6f3c3b"
     },
+    "https://developer.apple.com/documentation/network/nw_all_paths": {
+      "etag": "\"25b2-65d55fa7ef8ab-df\"",
+      "file_path": "documentation/Network/nw_all_paths.md",
+      "hash": "48d7b524a492ccf55cbe8bf921c422c757c136a9465f31e4e3c7f3c12e2b58b5"
+    },
+    "https://developer.apple.com/documentation/network/nw_assume_externally_retained_begin": {
+      "etag": "\"b39-65d55fa8e438f-df\"",
+      "file_path": "documentation/Network/nw_assume_externally_retained_begin.md",
+      "hash": "c49416bc6c46f6cef6273140189c921c954d1f7857e5b543dea49a2b86e49c26"
+    },
+    "https://developer.apple.com/documentation/network/nw_assume_externally_retained_end": {
+      "etag": "\"b21-65d55fab20111-df\"",
+      "file_path": "documentation/Network/nw_assume_externally_retained_end.md",
+      "hash": "3b21f17fe977d96444edc16b7d4cbf0d02e5cca516b03b17d93c20b7c7cdf2fb"
+    },
+    "https://developer.apple.com/documentation/network/nw_assume_nonnull_begin": {
+      "etag": "\"25f4-65d55fa8694b3-df\"",
+      "file_path": "documentation/Network/nw_assume_nonnull_begin.md",
+      "hash": "e8d89618fb1695dd9461d70bdac8aa809dccc93fbf18e3a52ea5b299eed101a9"
+    },
+    "https://developer.apple.com/documentation/network/nw_assume_nonnull_end": {
+      "etag": "\"25e8-65d55faa826aa-df\"",
+      "file_path": "documentation/Network/nw_assume_nonnull_end.md",
+      "hash": "089227d6253cc5c9fc6484e9373038e616621e1bed06b99716622b85c4adaf8f"
+    },
     "https://developer.apple.com/documentation/network/nw_browse_descriptor_create_application_service(_:)": {
       "etag": "\"d057-65d55fa8a10d6-df\"",
       "file_path": "documentation/Network/nw_browse_descriptor_create_application_service(_).md",
@@ -1745,6 +1795,21 @@
       "file_path": "documentation/Network/nw_connection_create_new_data_transfer_report(_).md",
       "hash": "3043522c149bac3c64b22bbe345849054b1781d84c0fb018f56a1c323a0720b5"
     },
+    "https://developer.apple.com/documentation/network/nw_connection_default_message_context": {
+      "etag": "\"2648-65d55fa9163a0-df\"",
+      "file_path": "documentation/Network/nw_connection_default_message_context.md",
+      "hash": "aa0aff3780045a0fe5c135df36e1fe067d32e27aaa8dfb73c95ad8588d30d697"
+    },
+    "https://developer.apple.com/documentation/network/nw_connection_default_stream_context": {
+      "etag": "\"2642-65d55fa8e438f-df\"",
+      "file_path": "documentation/Network/nw_connection_default_stream_context.md",
+      "hash": "a4fd759a6c9e3f2af6c31f5b01aab7acf84ce984678f2eccb04f57bc8dea485a"
+    },
+    "https://developer.apple.com/documentation/network/nw_connection_final_message_context": {
+      "etag": "\"263c-65d55fa8e438f-df\"",
+      "file_path": "documentation/Network/nw_connection_final_message_context.md",
+      "hash": "13322f7f511ece2324384bcb24931f74e830c2ff8c195ab2171b4ee847f1198a"
+    },
     "https://developer.apple.com/documentation/network/nw_connection_force_cancel(_:)": {
       "etag": "\"7dfc-65d55fab20111-df\"",
       "file_path": "documentation/Network/nw_connection_force_cancel(_).md",
@@ -1955,6 +2020,16 @@
       "file_path": "documentation/Network/nw_connection_send_completion_t.md",
       "hash": "13fa8ab72c67566a6e87a4bfdbbd2a71fa6d190721964d7f70ed11976241308a"
     },
+    "https://developer.apple.com/documentation/network/nw_connection_send_idempotent_content": {
+      "etag": "\"2648-65d55faa53a51-df\"",
+      "file_path": "documentation/Network/nw_connection_send_idempotent_content.md",
+      "hash": "0764838a678667a92fd66b9cf0c81af90ff67624d2aac6dbe04d5170f3a48656"
+    },
+    "https://developer.apple.com/documentation/network/nw_connection_send_type_decl": {
+      "etag": "\"266f-65d55fa8889b7-df\"",
+      "file_path": "documentation/Network/nw_connection_send_type_decl.md",
+      "hash": "a278e9de9a451e0dd0aa1cf06570cdd2a9962ef62630df9ec529b75a4d2c7004"
+    },
     "https://developer.apple.com/documentation/network/nw_connection_set_better_path_available_handler(_:_:)": {
       "etag": "\"897c-65d55fa850d27-df\"",
       "file_path": "documentation/Network/nw_connection_set_better_path_available_handler(_,_).md",
@@ -2115,6 +2190,11 @@
       "file_path": "documentation/Network/nw_content_context_t.md",
       "hash": "6ccdcf494ce5da5594a0f3a65f7c856542112fe134663338f53851aec1e340a2"
     },
+    "https://developer.apple.com/documentation/network/nw_content_context_type_decl": {
+      "etag": "\"266f-65d55faab76a1-df\"",
+      "file_path": "documentation/Network/nw_content_context_type_decl.md",
+      "hash": "34003036fa6f510177c828837fed58b2e8b731c0d12df58a3bfb3ac7fb5839ed"
+    },
     "https://developer.apple.com/documentation/network/nw_data_transfer_report_collect(_:_:_:)": {
       "etag": "\"8f91-65d55fa7ef8ab-df\"",
       "file_path": "documentation/Network/nw_data_transfer_report_collect(_,_,_).md",
@@ -2245,6 +2325,21 @@
       "file_path": "documentation/Network/nw_data_transfer_report_t.md",
       "hash": "9cdc7bf213b4f215bc0ccd19fbe361eb71714881453a5ce946f106c76e7dced6"
     },
+    "https://developer.apple.com/documentation/network/nw_default_privacy_context": {
+      "etag": "\"2606-65d55fa766570-df\"",
+      "file_path": "documentation/Network/nw_default_privacy_context.md",
+      "hash": "36471155147ba50d8424044b9d0a4c73084b7b147afb764fef2354126f9255af"
+    },
+    "https://developer.apple.com/documentation/network/nw_direct": {
+      "etag": "\"25a0-65d55fa9163a0-df\"",
+      "file_path": "documentation/Network/nw_direct.md",
+      "hash": "350b67c84c988634329d8f4dc6edf1f0d8661b42fc0444fe11eeee87d5ceaa01"
+    },
+    "https://developer.apple.com/documentation/network/nw_direct_members": {
+      "etag": "\"25d0-65d55fa8889b7-df\"",
+      "file_path": "documentation/Network/nw_direct_members.md",
+      "hash": "7a6ad45c37afd6e4de8c091431dacc8b71e1ee6ec5b245550cb8d49a8f575dcd"
+    },
     "https://developer.apple.com/documentation/network/nw_endpoint_copy_address_string(_:)": {
       "etag": "\"8666-65d55fa8e438f-df\"",
       "file_path": "documentation/Network/nw_endpoint_copy_address_string(_).md",
@@ -2374,6 +2469,11 @@
       "etag": "\"2e64-65d55fa7c13f0-df\"",
       "file_path": "documentation/Network/nw_endpoint_type_url.md",
       "hash": "08dac8de13865c97ed69bc95756205c8f6f1a2449ecddf8b2e26cf617811b61d"
+    },
+    "https://developer.apple.com/documentation/network/nw_enum": {
+      "etag": "\"25b3-65d55fa9da784-df\"",
+      "file_path": "documentation/Network/nw_enum.md",
+      "hash": "b3882f855a7228a92fd0c08f84ea3032a06010bb62351572c4cc24f0d2f0034b"
     },
     "https://developer.apple.com/documentation/network/nw_error_copy_cf_error(_:)": {
       "etag": "\"8793-65d55fa9f45c5-df\"",
@@ -2614,6 +2714,21 @@
       "etag": "\"7b59-65d55fab04ec5-df\"",
       "file_path": "documentation/Network/nw_ethernet_channel_t.md",
       "hash": "c9c6b74b700f7434d9ba7597886641fc63da3b00ad48f9a4c30a06996aa4079e"
+    },
+    "https://developer.apple.com/documentation/network/nw_export": {
+      "etag": "\"a01-65d55fa7a5580-df\"",
+      "file_path": "documentation/Network/nw_export.md",
+      "hash": "d7694a318f763e8f10d55466e6cde3e8886c7af6354329be71555cbcf8b7f2a3"
+    },
+    "https://developer.apple.com/documentation/network/nw_export_project": {
+      "etag": "\"25d0-65d55faad4f49-df\"",
+      "file_path": "documentation/Network/nw_export_project.md",
+      "hash": "b47971c1d162d794aab444db5f390739b12acd85f839c304a4db1c890b1997a2"
+    },
+    "https://developer.apple.com/documentation/network/nw_externally_retained": {
+      "etag": "\"a9d-65d55fa9be2ad-df\"",
+      "file_path": "documentation/Network/nw_externally_retained.md",
+      "hash": "3cc72bf6f4a4d4e80e561e571b6865632c5f43ead195e07ba99625a52c20bbba"
     },
     "https://developer.apple.com/documentation/network/nw_framer_async(_:_:)": {
       "etag": "\"3c03-65d55fa9833d0-df\"",
@@ -3525,10 +3640,40 @@
       "file_path": "documentation/Network/nw_multipath_version_unspecified.md",
       "hash": "113d2701dd6485080de4b52610ce4c7a5d82687e120d1f0cf3fee10729ebb350"
     },
+    "https://developer.apple.com/documentation/network/nw_no_destroy": {
+      "etag": "\"25a6-65d55fa7ef8ab-df\"",
+      "file_path": "documentation/Network/nw_no_destroy.md",
+      "hash": "fc24b64efc48f730efe04c34cfb8145583e4fbf0da4054b3e7c8b041001dc573"
+    },
+    "https://developer.apple.com/documentation/network/nw_noescape": {
+      "etag": "\"25ac-65d55fab20111-df\"",
+      "file_path": "documentation/Network/nw_noescape.md",
+      "hash": "4eb94056311856b708760fee8fb7d6642beac8cc8f73dba9f9a1e315a0679592"
+    },
+    "https://developer.apple.com/documentation/network/nw_nonnull_array": {
+      "etag": "\"25ca-65d55fa7ef8ab-df\"",
+      "file_path": "documentation/Network/nw_nonnull_array.md",
+      "hash": "e92842b48dfaff3241141b70ddc28eadaaf3b3498db91292c56d956875441029"
+    },
+    "https://developer.apple.com/documentation/network/nw_object_decl": {
+      "etag": "\"260f-65d55fab20111-df\"",
+      "file_path": "documentation/Network/nw_object_decl.md",
+      "hash": "bf6f2b96057e612afb428bda8dce2b92b956316aef5493474187e1adf7226e3d"
+    },
+    "https://developer.apple.com/documentation/network/nw_object_decl_subclass": {
+      "etag": "\"26bf-65d55fa9333af-df\"",
+      "file_path": "documentation/Network/nw_object_decl_subclass.md",
+      "hash": "28ff338a79d857978206ddc8fce9d0c15bc199062dbf569702b77357e761a3bb"
+    },
     "https://developer.apple.com/documentation/network/nw_object_t": {
       "etag": "\"22c1-65d55fab20111-df\"",
       "file_path": "documentation/Network/nw_object_t.md",
       "hash": "d8374039aca9c1a2eaf5ea13baa8e29179bb890c27ee2f05e7c6912e40b72cdf"
+    },
+    "https://developer.apple.com/documentation/network/nw_options": {
+      "etag": "\"2624-65d55faa68714-df\"",
+      "file_path": "documentation/Network/nw_options.md",
+      "hash": "68abd8f2dffad9ae665376d25ac9e0ed89407c274dde23be10e9bd6e0bb129d5"
     },
     "https://developer.apple.com/documentation/network/nw_parameters_attribution_t": {
       "etag": "\"475b-65d55fa9da784-df\"",
@@ -3550,15 +3695,85 @@
       "file_path": "documentation/Network/nw_parameters_attribution_t/user.md",
       "hash": "048ec95fd2ae13bce514713d98dbc78e07520a66c9dcb81e65cc17cbd3a7ac9d"
     },
+    "https://developer.apple.com/documentation/network/nw_parameters_clear_prohibited_interface_types(_:)": {
+      "etag": "\"7c09-65d55fa808026-df\"",
+      "file_path": "documentation/Network/nw_parameters_clear_prohibited_interface_types(_).md",
+      "hash": "fb1b6b3ac00ea7a9284ff1720b46f825cbb47187a0d2bca0b864aeb9a3d4c673"
+    },
+    "https://developer.apple.com/documentation/network/nw_parameters_clear_prohibited_interfaces(_:)": {
+      "etag": "\"7bdc-65d55fa9163a0-df\"",
+      "file_path": "documentation/Network/nw_parameters_clear_prohibited_interfaces(_).md",
+      "hash": "8c833fefc178f0e4fefd1dd91e29343b7fd8fce472a75b33fb4303147158a8f5"
+    },
+    "https://developer.apple.com/documentation/network/nw_parameters_configure_protocol_block_t": {
+      "etag": "\"4c77-65d55fa9833d0-df\"",
+      "file_path": "documentation/Network/nw_parameters_configure_protocol_block_t.md",
+      "hash": "39e3318e5748f1858184dfa6cfe0aaed54699462378ea6e95f4f13449254b002"
+    },
+    "https://developer.apple.com/documentation/network/nw_parameters_configure_protocol_type_decl": {
+      "etag": "\"275f-65d55fa8889b7-df\"",
+      "file_path": "documentation/Network/nw_parameters_configure_protocol_type_decl.md",
+      "hash": "8bbe5f17956cdb67cfa392e4c1e7704c1688db44a9a0ab485429c90335319366"
+    },
+    "https://developer.apple.com/documentation/network/nw_parameters_copy(_:)": {
+      "etag": "\"42bd-65d55fa8a10d6-df\"",
+      "file_path": "documentation/Network/nw_parameters_copy(_).md",
+      "hash": "6045eb0a19f81401f5d32919db65112abb08e0a4c74c50fc772c359abb27c8c7"
+    },
+    "https://developer.apple.com/documentation/network/nw_parameters_copy_default_protocol_stack(_:)": {
+      "etag": "\"2fab-65d55fa8e438f-df\"",
+      "file_path": "documentation/Network/nw_parameters_copy_default_protocol_stack(_).md",
+      "hash": "447c10cd1b0426e23b1484475d7a1fb4a7d777aff30bd9a14b3317f197b0eadd"
+    },
+    "https://developer.apple.com/documentation/network/nw_parameters_copy_local_endpoint(_:)": {
+      "etag": "\"8146-65d55fa7c13f0-df\"",
+      "file_path": "documentation/Network/nw_parameters_copy_local_endpoint(_).md",
+      "hash": "3b25b80f41e201c55f67957dfe12542b2751ce1c0fea14a5afb6ce6cfc7c002d"
+    },
+    "https://developer.apple.com/documentation/network/nw_parameters_copy_required_interface(_:)": {
+      "etag": "\"818e-65d55fab04ec5-df\"",
+      "file_path": "documentation/Network/nw_parameters_copy_required_interface(_).md",
+      "hash": "46a272f563ce70fe3f43895e4cd718ff53c95d8efedb02da833ada09e156294f"
+    },
+    "https://developer.apple.com/documentation/network/nw_parameters_create()": {
+      "etag": "\"4020-65d55faab76a1-df\"",
+      "file_path": "documentation/Network/nw_parameters_create().md",
+      "hash": "931182fab960a86f82ea91403b915312423a41923df41c79329ba9ae4cf86984"
+    },
     "https://developer.apple.com/documentation/network/nw_parameters_create_application_service()": {
       "etag": "\"c214-65d55fa94ab8c-df\"",
       "file_path": "documentation/Network/nw_parameters_create_application_service().md",
       "hash": "891fe15ae30a8570a98015344240f9cf21de7be4e2d3fece3326fe7a68dec629"
     },
+    "https://developer.apple.com/documentation/network/nw_parameters_create_custom_ip(_:_:)": {
+      "etag": "\"47cc-65d55faab76a1-df\"",
+      "file_path": "documentation/Network/nw_parameters_create_custom_ip(_,_).md",
+      "hash": "741dadc4279c3cdf1ecdd06dfab0b8e1423bf099483a2e9ef31fc5c998dd34ba"
+    },
     "https://developer.apple.com/documentation/network/nw_parameters_create_quic(_:)": {
       "etag": "\"9190-65d55fa7887ed-df\"",
       "file_path": "documentation/Network/nw_parameters_create_quic(_).md",
       "hash": "7a3461347e1d19104c18284c318548f677e02f2372359aee4daf97c718cf0406"
+    },
+    "https://developer.apple.com/documentation/network/nw_parameters_create_secure_tcp(_:_:)": {
+      "etag": "\"4a6a-65d55fa8fe220-df\"",
+      "file_path": "documentation/Network/nw_parameters_create_secure_tcp(_,_).md",
+      "hash": "60fd347613a42d7bc1d024de5c3091b27897512edd92d6ff99befb3e4d90f737"
+    },
+    "https://developer.apple.com/documentation/network/nw_parameters_create_secure_udp(_:_:)": {
+      "etag": "\"4a6f-65d55fa9da784-df\"",
+      "file_path": "documentation/Network/nw_parameters_create_secure_udp(_,_).md",
+      "hash": "ed34fff5b0f790f1705197d6638beaef9a69bbc4d134a9cdfc5465d4facc78ff"
+    },
+    "https://developer.apple.com/documentation/network/nw_parameters_default_configuration": {
+      "etag": "\"26ae-65d55fa7a5580-df\"",
+      "file_path": "documentation/Network/nw_parameters_default_configuration.md",
+      "hash": "26ca293a0529acc6207da73bfbeb204e41c3f16eff635fb4dd6a992a646d431a"
+    },
+    "https://developer.apple.com/documentation/network/nw_parameters_disable_protocol": {
+      "etag": "\"2672-65d55fa9da784-df\"",
+      "file_path": "documentation/Network/nw_parameters_disable_protocol.md",
+      "hash": "ebfa60923c7c8f6eaeb9ac5a6e29ed4637b980c84be384b283dc2b4ebffcec1e"
     },
     "https://developer.apple.com/documentation/network/nw_parameters_expired_dns_behavior_allow": {
       "etag": "\"29b0-65d55fa8cd849-df\"",
@@ -3620,6 +3835,16 @@
       "file_path": "documentation/Network/nw_parameters_get_fast_open_enabled(_).md",
       "hash": "e9062c55853a9c9b4b1dc89899345f3a7645c3e1b51516c205088853c2c25569"
     },
+    "https://developer.apple.com/documentation/network/nw_parameters_get_include_peer_to_peer(_:)": {
+      "etag": "\"7aba-65d55fa8e438f-df\"",
+      "file_path": "documentation/Network/nw_parameters_get_include_peer_to_peer(_).md",
+      "hash": "c7dcf41327d76eb36f7d02c2490037e995b1670a5af5844eaab6023a0019c73e"
+    },
+    "https://developer.apple.com/documentation/network/nw_parameters_get_local_only(_:)": {
+      "etag": "\"79ee-65d55fa7887ed-df\"",
+      "file_path": "documentation/Network/nw_parameters_get_local_only(_).md",
+      "hash": "d73528cb09e4fac57ef24fd3eb7c094764ebc07619a37e4b3d3b246644178192"
+    },
     "https://developer.apple.com/documentation/network/nw_parameters_get_multipath_service(_:)": {
       "etag": "\"7928-65d55fa7ef8ab-df\"",
       "file_path": "documentation/Network/nw_parameters_get_multipath_service(_).md",
@@ -3630,10 +3855,65 @@
       "file_path": "documentation/Network/nw_parameters_get_prefer_no_proxy(_).md",
       "hash": "9e73a369a769241baa38e003de975e3636624f2427c02aa2692692619c1f86b6"
     },
+    "https://developer.apple.com/documentation/network/nw_parameters_get_prohibit_constrained(_:)": {
+      "etag": "\"7f4f-65d55faa826aa-df\"",
+      "file_path": "documentation/Network/nw_parameters_get_prohibit_constrained(_).md",
+      "hash": "f5e3b6b8e563493469d0140d136cbefa0f140c1a9bc0fcb667ffe55b03641cb0"
+    },
+    "https://developer.apple.com/documentation/network/nw_parameters_get_prohibit_expensive(_:)": {
+      "etag": "\"7f2a-65d55fa7887ed-df\"",
+      "file_path": "documentation/Network/nw_parameters_get_prohibit_expensive(_).md",
+      "hash": "576c7cb774a65ad3d2af4f1d8cda1603e1aed0302553e2e1c91b7f178b01a3b9"
+    },
+    "https://developer.apple.com/documentation/network/nw_parameters_get_required_interface_type(_:)": {
+      "etag": "\"81f3-65d55fa808026-df\"",
+      "file_path": "documentation/Network/nw_parameters_get_required_interface_type(_).md",
+      "hash": "4f4fd87768e95718cfa69ed045b01bb1e1a92e4d194199e320f8a95f60aac40d"
+    },
+    "https://developer.apple.com/documentation/network/nw_parameters_get_reuse_local_address(_:)": {
+      "etag": "\"7a95-65d55fa8889b7-df\"",
+      "file_path": "documentation/Network/nw_parameters_get_reuse_local_address(_).md",
+      "hash": "ddcfc147ee734f5f5e2f5d9682fe5b2e3e25a4514f8fd72614134c9a66d77534"
+    },
     "https://developer.apple.com/documentation/network/nw_parameters_get_service_class(_:)": {
       "etag": "\"78ee-65d55fa9833d0-df\"",
       "file_path": "documentation/Network/nw_parameters_get_service_class(_).md",
       "hash": "9df692ef8f15a31073bb0c9481aaf0085998361640ebb206caeda35bb32fd0d7"
+    },
+    "https://developer.apple.com/documentation/network/nw_parameters_iterate_interface_types_block_t": {
+      "etag": "\"7ede-65d55fab04ec5-df\"",
+      "file_path": "documentation/Network/nw_parameters_iterate_interface_types_block_t.md",
+      "hash": "81a7535075c111ba718354a6ce306f8dc322e312371cd246919901ac509aa31c"
+    },
+    "https://developer.apple.com/documentation/network/nw_parameters_iterate_interfaces_block_t": {
+      "etag": "\"7eb5-65d55fa7ef8ab-df\"",
+      "file_path": "documentation/Network/nw_parameters_iterate_interfaces_block_t.md",
+      "hash": "c7c9249707bb9f1b8e44a8fac43fe4c4c64d9892446492988bf91fa51a6afedd"
+    },
+    "https://developer.apple.com/documentation/network/nw_parameters_iterate_prohibited_interface_types(_:_:)": {
+      "etag": "\"8745-65d55fa7887ed-df\"",
+      "file_path": "documentation/Network/nw_parameters_iterate_prohibited_interface_types(_,_).md",
+      "hash": "4efff4309a6f0733435d914047ad070bf83de39c08d90112d0e09afdb37a5464"
+    },
+    "https://developer.apple.com/documentation/network/nw_parameters_iterate_prohibited_interfaces(_:_:)": {
+      "etag": "\"8d01-65d55fa7ef8ab-df\"",
+      "file_path": "documentation/Network/nw_parameters_iterate_prohibited_interfaces(_,_).md",
+      "hash": "1c5184b947ac14dbd39667093b73985dec76ce028aeceefd3684163a2b9f0bd2"
+    },
+    "https://developer.apple.com/documentation/network/nw_parameters_prohibit_interface(_:_:)": {
+      "etag": "\"82a1-65d55fa8889b7-df\"",
+      "file_path": "documentation/Network/nw_parameters_prohibit_interface(_,_).md",
+      "hash": "5e26f1ff934a62bf5ecb107bd03f358bffd6e5e63cb0408eb0acc89ce6b36b16"
+    },
+    "https://developer.apple.com/documentation/network/nw_parameters_prohibit_interface_type(_:_:)": {
+      "etag": "\"834a-65d55fa8889b7-df\"",
+      "file_path": "documentation/Network/nw_parameters_prohibit_interface_type(_,_).md",
+      "hash": "d24971f452bf26a2c6030ca77eaf35c314463f66331aec514a3b955342f19b3d"
+    },
+    "https://developer.apple.com/documentation/network/nw_parameters_require_interface(_:_:)": {
+      "etag": "\"82a4-65d55fa8694b3-df\"",
+      "file_path": "documentation/Network/nw_parameters_require_interface(_,_).md",
+      "hash": "de883b42b9703dff453fee8775f06bd08237ea86a957a64f25682f1ab27d7a02"
     },
     "https://developer.apple.com/documentation/network/nw_parameters_requires_dnssec_validation(_:)": {
       "etag": "\"8753-65d55fa808026-df\"",
@@ -3665,6 +3945,16 @@
       "file_path": "documentation/Network/nw_parameters_set_include_peer_to_peer(_,_).md",
       "hash": "317739e68ccb2a56de82ffb0f2f1e734ff5226b8d20339275b2681049cecd5ff"
     },
+    "https://developer.apple.com/documentation/network/nw_parameters_set_local_endpoint(_:_:)": {
+      "etag": "\"8293-65d55fa9f45c5-df\"",
+      "file_path": "documentation/Network/nw_parameters_set_local_endpoint(_,_).md",
+      "hash": "47e9f89d7f6c726e740ea92639d8a6748255103ba77fe49baa77de171f192c5e"
+    },
+    "https://developer.apple.com/documentation/network/nw_parameters_set_local_only(_:_:)": {
+      "etag": "\"7b64-65d55fa8e438f-df\"",
+      "file_path": "documentation/Network/nw_parameters_set_local_only(_,_).md",
+      "hash": "2eaf5ad2df9d8417ea6439ee6187efe78175772ccf9db9d4ec29021ff5afd100"
+    },
     "https://developer.apple.com/documentation/network/nw_parameters_set_multipath_service(_:_:)": {
       "etag": "\"7ab5-65d55faab76a1-df\"",
       "file_path": "documentation/Network/nw_parameters_set_multipath_service(_,_).md",
@@ -3675,15 +3965,45 @@
       "file_path": "documentation/Network/nw_parameters_set_prefer_no_proxy(_,_).md",
       "hash": "2a75aab952379241b564b7f75b33da90b4887fe6e2538094955a8b37a19d2ab5"
     },
+    "https://developer.apple.com/documentation/network/nw_parameters_set_privacy_context(_:_:)": {
+      "etag": "\"26ba-65d55fa8694b3-df\"",
+      "file_path": "documentation/Network/nw_parameters_set_privacy_context(_,_).md",
+      "hash": "ed427cb297eb26150183b46038fe0ee3ec11976949502f9e3acaa6fbd8a34d17"
+    },
+    "https://developer.apple.com/documentation/network/nw_parameters_set_prohibit_constrained(_:_:)": {
+      "etag": "\"80b6-65d55faab76a1-df\"",
+      "file_path": "documentation/Network/nw_parameters_set_prohibit_constrained(_,_).md",
+      "hash": "650c29bc69cb621d61a841b4e03e71a680d163a8c25719d9555264c829e19204"
+    },
+    "https://developer.apple.com/documentation/network/nw_parameters_set_prohibit_expensive(_:_:)": {
+      "etag": "\"808d-65d55faa9b7c6-df\"",
+      "file_path": "documentation/Network/nw_parameters_set_prohibit_expensive(_,_).md",
+      "hash": "1a48777f468ff625a344b2f1d7b878c74e19cd1cee16e63b6c54fbb2eeac1e5a"
+    },
+    "https://developer.apple.com/documentation/network/nw_parameters_set_required_interface_type(_:_:)": {
+      "etag": "\"835a-65d55faab76a1-df\"",
+      "file_path": "documentation/Network/nw_parameters_set_required_interface_type(_,_).md",
+      "hash": "1f655cc986c8d2f743d967f13faf617653e6ff93b7e58e42693d5b608d26ad80"
+    },
     "https://developer.apple.com/documentation/network/nw_parameters_set_requires_dnssec_validation(_:_:)": {
       "etag": "\"88ab-65d55faa25043-df\"",
       "file_path": "documentation/Network/nw_parameters_set_requires_dnssec_validation(_,_).md",
       "hash": "48638b1b2627f55967139d10cb142aa988e0effec604dec1057e7a0ede2e97ba"
     },
+    "https://developer.apple.com/documentation/network/nw_parameters_set_reuse_local_address(_:_:)": {
+      "etag": "\"7c1f-65d55fa7a5580-df\"",
+      "file_path": "documentation/Network/nw_parameters_set_reuse_local_address(_,_).md",
+      "hash": "06b7f71819a0441defe71a051c6a6da7fbf7a01c388c969061037fc0a5a00997"
+    },
     "https://developer.apple.com/documentation/network/nw_parameters_set_service_class(_:_:)": {
       "etag": "\"7c2b-65d55fa9a3574-df\"",
       "file_path": "documentation/Network/nw_parameters_set_service_class(_,_).md",
       "hash": "67bb0b07eb8c49c64e279d97900ee2e8f1feb9a185a3a3e4050d34b9d39eaebf"
+    },
+    "https://developer.apple.com/documentation/network/nw_parameters_t": {
+      "etag": "\"15be0-65d55fa838d89-df\"",
+      "file_path": "documentation/Network/nw_parameters_t.md",
+      "hash": "dd26c8562414fa5dfd0ace0d49ce0782f44aff3b72a15fe159d2b8650df41466"
     },
     "https://developer.apple.com/documentation/network/nw_path_copy_effective_local_endpoint(_:)": {
       "etag": "\"846c-65d55fa9163a0-df\"",
@@ -3920,6 +4240,46 @@
       "file_path": "documentation/Network/nw_path_uses_interface_type(_,_).md",
       "hash": "f144727b36a6e7e70d2818aff27968de94283545f3d69f64703dc77bfd3be886"
     },
+    "https://developer.apple.com/documentation/network/nw_privacy_context_add_proxy(_:_:)": {
+      "etag": "\"30be-65d55fa73db56-df\"",
+      "file_path": "documentation/Network/nw_privacy_context_add_proxy(_,_).md",
+      "hash": "ad76da87b54c764010496eebfc19aa5b88a972298a51162ee1f7f81abb7e1187"
+    },
+    "https://developer.apple.com/documentation/network/nw_privacy_context_clear_proxies(_:)": {
+      "etag": "\"2b81-65d55faa0e1be-df\"",
+      "file_path": "documentation/Network/nw_privacy_context_clear_proxies(_).md",
+      "hash": "645f2132308a45e12e1a39114cc9652c903018b849e46b7ab4c3ff4781712da9"
+    },
+    "https://developer.apple.com/documentation/network/nw_privacy_context_create(_:)": {
+      "etag": "\"2f82-65d55fa8cd849-df\"",
+      "file_path": "documentation/Network/nw_privacy_context_create(_).md",
+      "hash": "f60df1720fe9db4924479117b5f1de2de436ad7be3fc88d83f68cecee85cef68"
+    },
+    "https://developer.apple.com/documentation/network/nw_privacy_context_disable_logging(_:)": {
+      "etag": "\"29b0-65d55fa8a10d6-df\"",
+      "file_path": "documentation/Network/nw_privacy_context_disable_logging(_).md",
+      "hash": "b766b897a49b14db9ef451de10c8ade28a7e49342a7040e230fa575cd72b8a54"
+    },
+    "https://developer.apple.com/documentation/network/nw_privacy_context_flush_cache(_:)": {
+      "etag": "\"2ae6-65d55faa826aa-df\"",
+      "file_path": "documentation/Network/nw_privacy_context_flush_cache(_).md",
+      "hash": "da93363d9fecedf80c6676778a37e9b03bc4b09ff26d46c454d8a58694692d4a"
+    },
+    "https://developer.apple.com/documentation/network/nw_privacy_context_require_encrypted_name_resolution(_:_:_:)": {
+      "etag": "\"3fe0-65d55fa9be2ad-df\"",
+      "file_path": "documentation/Network/nw_privacy_context_require_encrypted_name_resolution(_,_,_).md",
+      "hash": "70fc84104e65e0a92ec00c06c87e2fbc6646cce9a3820de381336aab03dc4657"
+    },
+    "https://developer.apple.com/documentation/network/nw_privacy_context_t": {
+      "etag": "\"659d-65d55faa0e1be-df\"",
+      "file_path": "documentation/Network/nw_privacy_context_t.md",
+      "hash": "43c216bf6012ab04be251df9e79e1e2affa71fefd47079f737a2cec09f585b16"
+    },
+    "https://developer.apple.com/documentation/network/nw_privacy_context_type_decl": {
+      "etag": "\"26b7-65d55fa9be2ad-df\"",
+      "file_path": "documentation/Network/nw_privacy_context_type_decl.md",
+      "hash": "025bdf24c49f49bb24aa7a6652cf69c5a521af318835c02d3cec8c637774ed9a"
+    },
     "https://developer.apple.com/documentation/network/nw_protocol_copy_ip_definition()": {
       "etag": "\"4bc0-65d55fa8a10d6-df\"",
       "file_path": "documentation/Network/nw_protocol_copy_ip_definition().md",
@@ -3949,6 +4309,16 @@
       "etag": "\"7d2d-65d55fa9be2ad-df\"",
       "file_path": "documentation/Network/nw_protocol_copy_ws_definition().md",
       "hash": "f5ae7cfba8823b7df9a5522660928b3386c01e9312e671eeb61038801cf61b95"
+    },
+    "https://developer.apple.com/documentation/network/nw_protocol_definition_is_equal(_:_:)": {
+      "etag": "\"24ea-65d55fa850d27-df\"",
+      "file_path": "documentation/Network/nw_protocol_definition_is_equal(_,_).md",
+      "hash": "c38e4afd29fcd797ac797758c01b5e099ddbb70f1550370aa7b842d06d8c3529"
+    },
+    "https://developer.apple.com/documentation/network/nw_protocol_definition_t": {
+      "etag": "\"339f-65d55fa8e438f-df\"",
+      "file_path": "documentation/Network/nw_protocol_definition_t.md",
+      "hash": "9c5a6ba06df714c4b5b6fbff4597b28b0c67a859f72a2c047c39af6c6faf4974"
     },
     "https://developer.apple.com/documentation/network/nw_protocol_metadata_copy_definition(_:)": {
       "etag": "\"85ef-65d55fa8889b7-df\"",
@@ -3995,10 +4365,60 @@
       "file_path": "documentation/Network/nw_protocol_metadata_t.md",
       "hash": "78ceb3512412997e5ef5301d8bb72b215e563150d6d480ad71fdbd744bf43b87"
     },
+    "https://developer.apple.com/documentation/network/nw_protocol_options_copy_definition(_:)": {
+      "etag": "\"2423-65d55fa808026-df\"",
+      "file_path": "documentation/Network/nw_protocol_options_copy_definition(_).md",
+      "hash": "8f18e43b9b29b23f3451602ea450bdb98054e22f8f32afad9136da061afbd375"
+    },
     "https://developer.apple.com/documentation/network/nw_protocol_options_is_quic(_:)": {
       "etag": "\"8593-65d55fa7ef8ab-df\"",
       "file_path": "documentation/Network/nw_protocol_options_is_quic(_).md",
       "hash": "b554ea8dbdd2479fec724c8de47815fc2b02193fff634b0aae62bfe3b282be35"
+    },
+    "https://developer.apple.com/documentation/network/nw_protocol_options_t": {
+      "etag": "\"32f9-65d55fa7ef8ab-df\"",
+      "file_path": "documentation/Network/nw_protocol_options_t.md",
+      "hash": "344f1f73e902e0d22f66f057951b79cfb2b0ce2e250a1c6f7a7694d523d42707"
+    },
+    "https://developer.apple.com/documentation/network/nw_protocol_stack_clear_application_protocols(_:)": {
+      "etag": "\"3366-65d55faa826aa-df\"",
+      "file_path": "documentation/Network/nw_protocol_stack_clear_application_protocols(_).md",
+      "hash": "1a4d38b3b6322c3a52882750bbe99cb95778744481177333d2ec559ee7cc421a"
+    },
+    "https://developer.apple.com/documentation/network/nw_protocol_stack_copy_internet_protocol(_:)": {
+      "etag": "\"3268-65d55fa8cd849-df\"",
+      "file_path": "documentation/Network/nw_protocol_stack_copy_internet_protocol(_).md",
+      "hash": "06857305f57fbf98eed2133f5dc044c9fc8b631f01b50fc5924a8341e26ac28c"
+    },
+    "https://developer.apple.com/documentation/network/nw_protocol_stack_copy_transport_protocol(_:)": {
+      "etag": "\"327a-65d55fa94ab8c-df\"",
+      "file_path": "documentation/Network/nw_protocol_stack_copy_transport_protocol(_).md",
+      "hash": "98c0f938a00e00aaec39ba636ff50c0a1095ef9acf8fe52017fb3b4fb48c753e"
+    },
+    "https://developer.apple.com/documentation/network/nw_protocol_stack_iterate_application_protocols(_:_:)": {
+      "etag": "\"3f26-65d55fab04ec5-df\"",
+      "file_path": "documentation/Network/nw_protocol_stack_iterate_application_protocols(_,_).md",
+      "hash": "bff6a7e68e1f2342407279d62d5d7489dc8c679750d0f46bf1d1553ed78ee618"
+    },
+    "https://developer.apple.com/documentation/network/nw_protocol_stack_iterate_protocols_block_t": {
+      "etag": "\"3592-65d55fa9163a0-df\"",
+      "file_path": "documentation/Network/nw_protocol_stack_iterate_protocols_block_t.md",
+      "hash": "9b0e0af656aabbbbd3eac82fca7a979dd099d957b4949b4b9bb27ac5cb55c979"
+    },
+    "https://developer.apple.com/documentation/network/nw_protocol_stack_prepend_application_protocol(_:_:)": {
+      "etag": "\"3af1-65d55fa7a5580-df\"",
+      "file_path": "documentation/Network/nw_protocol_stack_prepend_application_protocol(_,_).md",
+      "hash": "d0c24f53355224ceeaac3ac86b8e3a58ff47eeefaebec0805c8415da96884302"
+    },
+    "https://developer.apple.com/documentation/network/nw_protocol_stack_set_transport_protocol(_:_:)": {
+      "etag": "\"33be-65d55fa73db56-df\"",
+      "file_path": "documentation/Network/nw_protocol_stack_set_transport_protocol(_,_).md",
+      "hash": "8b711113609c5ede4bab53c855b567ee756c3abe0400653775bfd0e12e914905"
+    },
+    "https://developer.apple.com/documentation/network/nw_protocol_stack_t": {
+      "etag": "\"5b5c-65d55fa808026-df\"",
+      "file_path": "documentation/Network/nw_protocol_stack_t.md",
+      "hash": "7a2c84ace28b34e943fce543a5537867172d56cacd293581b24b4187799697a8"
     },
     "https://developer.apple.com/documentation/network/nw_proxy_config_add_excluded_domain(_:_:)": {
       "etag": "\"cbcd-65d55fa7ef8ab-df\"",
@@ -4020,6 +4440,26 @@
       "file_path": "documentation/Network/nw_proxy_config_clear_match_domains(_).md",
       "hash": "d22e4ea08c8e4e65bb4af68c6a8dac1aae51859f57f52e1979b48ebe0f8534d6"
     },
+    "https://developer.apple.com/documentation/network/nw_proxy_config_create_http_connect(_:_:)": {
+      "etag": "\"4acc-65d55fa9be2ad-df\"",
+      "file_path": "documentation/Network/nw_proxy_config_create_http_connect(_,_).md",
+      "hash": "3b6a5bb0a756cbe48c7a9488fc099ad67a398f847de063a1b113b9ed18cde08a"
+    },
+    "https://developer.apple.com/documentation/network/nw_proxy_config_create_oblivious_http(_:_:_:_:)": {
+      "etag": "\"58a3-65d55faab76a1-df\"",
+      "file_path": "documentation/Network/nw_proxy_config_create_oblivious_http(_,_,_,_).md",
+      "hash": "1fdaf3474660aa5df90ca631c234c262ac2fa8beec4ac64e69b47f9e8fc315ea"
+    },
+    "https://developer.apple.com/documentation/network/nw_proxy_config_create_relay(_:_:)": {
+      "etag": "\"40ab-65d55fa9da784-df\"",
+      "file_path": "documentation/Network/nw_proxy_config_create_relay(_,_).md",
+      "hash": "e126ccd919dfc6070fccfec2efd6283fbc0ed961d44a600558bfcfb79f566537"
+    },
+    "https://developer.apple.com/documentation/network/nw_proxy_config_create_socksv5(_:)": {
+      "etag": "\"40b4-65d55fa766570-df\"",
+      "file_path": "documentation/Network/nw_proxy_config_create_socksv5(_).md",
+      "hash": "30d69c1c04e0e4286f4e7dfa98c38c2b3df87b234b64a47cd97c8f086b18b6ef"
+    },
     "https://developer.apple.com/documentation/network/nw_proxy_config_enumerate_excluded_domains(_:_:)": {
       "etag": "\"d526-65d55fa7a5580-df\"",
       "file_path": "documentation/Network/nw_proxy_config_enumerate_excluded_domains(_,_).md",
@@ -4029,6 +4469,26 @@
       "etag": "\"d4e7-65d55fa7a5580-df\"",
       "file_path": "documentation/Network/nw_proxy_config_enumerate_match_domains(_,_).md",
       "hash": "33271418631fce262d7ef1dfeecbb1b79de576f0cb2d5e27297472fffb2ed11d"
+    },
+    "https://developer.apple.com/documentation/network/nw_proxy_config_get_failover_allowed(_:)": {
+      "etag": "\"24c1-65d55fa9833d0-df\"",
+      "file_path": "documentation/Network/nw_proxy_config_get_failover_allowed(_).md",
+      "hash": "864b8ca84a3785da93781631d3b3a090187ccec4800dd2aff86533d042dd3b44"
+    },
+    "https://developer.apple.com/documentation/network/nw_proxy_config_set_failover_allowed(_:_:)": {
+      "etag": "\"2ea5-65d55fa8694b3-df\"",
+      "file_path": "documentation/Network/nw_proxy_config_set_failover_allowed(_,_).md",
+      "hash": "bf6e1be14ec95b4c3cea4741d4650087c2ca0565f9d28de8cf3f6cc1a9c9530f"
+    },
+    "https://developer.apple.com/documentation/network/nw_proxy_config_set_username_and_password(_:_:_:)": {
+      "etag": "\"35a1-65d55faa9b7c6-df\"",
+      "file_path": "documentation/Network/nw_proxy_config_set_username_and_password(_,_,_).md",
+      "hash": "7db4f5f0dd2574320c5fe1d1b0921415a0b4a635381a6d4b399f9400e81a060d"
+    },
+    "https://developer.apple.com/documentation/network/nw_proxy_config_t": {
+      "etag": "\"5c7b-65d55fa8b79ff-df\"",
+      "file_path": "documentation/Network/nw_proxy_config_t.md",
+      "hash": "bc6d2efe92f3b8fc4b0168f5e3280b1f7b83acd2d0aa308a476ab4c851ec9628"
     },
     "https://developer.apple.com/documentation/network/nw_proxy_domain_enumerator_t": {
       "etag": "\"7835-65d55fa7887ed-df\"",
@@ -4295,6 +4755,31 @@
       "file_path": "documentation/Network/nw_quic_stream_type_unknown.md",
       "hash": "7997babcbe0678a0adbdd4d5cc6afaca10147f4592f0d64bab147bc624f0fbd9"
     },
+    "https://developer.apple.com/documentation/network/nw_relay_hop_add_additional_http_header_field(_:_:_:)": {
+      "etag": "\"3606-65d55fa94ab8c-df\"",
+      "file_path": "documentation/Network/nw_relay_hop_add_additional_http_header_field(_,_,_).md",
+      "hash": "029456066f0c864078381197d466d180b6daabf1e73850ae1203eebc93eee975"
+    },
+    "https://developer.apple.com/documentation/network/nw_relay_hop_create(_:_:_:)": {
+      "etag": "\"3dbe-65d55fa9621b9-df\"",
+      "file_path": "documentation/Network/nw_relay_hop_create(_,_,_).md",
+      "hash": "dbfbf8c09c0442d6a611f70aeb7cf921f3e0067c0411d46f36e123225d3ce8ee"
+    },
+    "https://developer.apple.com/documentation/network/nw_relay_hop_t": {
+      "etag": "\"47ec-65d55fa9da784-df\"",
+      "file_path": "documentation/Network/nw_relay_hop_t.md",
+      "hash": "ae0940760780fe7b2782d411cc66729c57f1548157b9c2718e370c4d69e89e7c"
+    },
+    "https://developer.apple.com/documentation/network/nw_release": {
+      "etag": "\"146e-65d55fa9163a0-df\"",
+      "file_path": "documentation/Network/nw_release.md",
+      "hash": "d230468cfb1d8da04f2e8aaae9eb8384ab245eb8a849dfcf9db77c034ad93f56"
+    },
+    "https://developer.apple.com/documentation/network/nw_releases_argument": {
+      "etag": "\"25fa-65d55faa68714-df\"",
+      "file_path": "documentation/Network/nw_releases_argument.md",
+      "hash": "24452a307967739e41f8d8bd914464e3481e7356cb6de4f06d18c9bb877996f3"
+    },
     "https://developer.apple.com/documentation/network/nw_report_protocol_enumerator_t": {
       "etag": "\"7304-65d55fa766570-df\"",
       "file_path": "documentation/Network/nw_report_protocol_enumerator_t.md",
@@ -4425,6 +4910,51 @@
       "file_path": "documentation/Network/nw_resolution_report_t.md",
       "hash": "dba8f1cac1027318997e3d5281a15b8126dac7a453c0dd7342b8ede47297b0b5"
     },
+    "https://developer.apple.com/documentation/network/nw_resolver_config_add_server_address(_:_:)": {
+      "etag": "\"39a3-65d55fa9da784-df\"",
+      "file_path": "documentation/Network/nw_resolver_config_add_server_address(_,_).md",
+      "hash": "f97ad2f3c0c36586c00a744042628e5e99417b21d099ee76d5f0664d34376791"
+    },
+    "https://developer.apple.com/documentation/network/nw_resolver_config_create_https(_:)": {
+      "etag": "\"3bf5-65d55fa9a3574-df\"",
+      "file_path": "documentation/Network/nw_resolver_config_create_https(_).md",
+      "hash": "31ebd835ccc0cdb44b85543ae0feb5733facd809ecd2797504f3f44318ac1247"
+    },
+    "https://developer.apple.com/documentation/network/nw_resolver_config_create_tls(_:)": {
+      "etag": "\"3bd9-65d55fa8cd849-df\"",
+      "file_path": "documentation/Network/nw_resolver_config_create_tls(_).md",
+      "hash": "33307b8cb11a5ac52af77be6e27bbce85901aa0d66a36db1eb94bb1753966d1f"
+    },
+    "https://developer.apple.com/documentation/network/nw_resolver_config_t": {
+      "etag": "\"34d4-65d55fa8a10d6-df\"",
+      "file_path": "documentation/Network/nw_resolver_config_t.md",
+      "hash": "7c3e8fd7433db2a326be732046e6f9d86d10884a29a4e0b3cc6c46224266c94e"
+    },
+    "https://developer.apple.com/documentation/network/nw_retain": {
+      "etag": "\"145e-65d55fa838d89-df\"",
+      "file_path": "documentation/Network/nw_retain.md",
+      "hash": "a134332a5a9a53f3fbce07d39c8f94461d1e27c2943d542ae049fd9f653c396d"
+    },
+    "https://developer.apple.com/documentation/network/nw_returns_inner_pointer": {
+      "etag": "\"262a-65d55fa808026-df\"",
+      "file_path": "documentation/Network/nw_returns_inner_pointer.md",
+      "hash": "94403c2eba42e9fb96f54135035a500c3783876d20763a50a06d9dcd4af7aa71"
+    },
+    "https://developer.apple.com/documentation/network/nw_returns_not_retained": {
+      "etag": "\"261e-65d55faad4f49-df\"",
+      "file_path": "documentation/Network/nw_returns_not_retained.md",
+      "hash": "edce4c64b8ce70fb4aac82cccc75e18626f636353a532115145a057aa94675e6"
+    },
+    "https://developer.apple.com/documentation/network/nw_returns_retained": {
+      "etag": "\"25ee-65d55faa3c960-df\"",
+      "file_path": "documentation/Network/nw_returns_retained.md",
+      "hash": "cf430fd22f4dcba9f7de349350fdd897e7853e2c39f548216345807282a74280"
+    },
+    "https://developer.apple.com/documentation/network/nw_sendable_object_decl": {
+      "etag": "\"267b-65d55fa7a5580-df\"",
+      "file_path": "documentation/Network/nw_sendable_object_decl.md",
+      "hash": "92c99fa7e6380af0a0268160845bfe599f48699cccae8982e0746504d467e7a2"
+    },
     "https://developer.apple.com/documentation/network/nw_service_class_background": {
       "etag": "\"34cb-65d55fa8e438f-df\"",
       "file_path": "documentation/Network/nw_service_class_background.md",
@@ -4474,6 +5004,16 @@
       "etag": "\"13b2-65d55fa766570-df\"",
       "file_path": "documentation/Network/nw_service_class_t/rawvalue.md",
       "hash": "39a4fef8d977501629c60edf98530af4952b423c139418c492ef9225de84daef"
+    },
+    "https://developer.apple.com/documentation/network/nw_swift_disable_async": {
+      "etag": "\"2612-65d55faa3c960-df\"",
+      "file_path": "documentation/Network/nw_swift_disable_async.md",
+      "hash": "e584850ea7dc8360b61e8a84bead039aa1b3bd2300c662e0bfca639bf1c1236d"
+    },
+    "https://developer.apple.com/documentation/network/nw_swift_sendable": {
+      "etag": "\"25d6-65d55faa53a51-df\"",
+      "file_path": "documentation/Network/nw_swift_sendable.md",
+      "hash": "0bc0c6cd92ad45487926e206461a00503aded544dcbc9bd1f2c02bab9b21590f"
     },
     "https://developer.apple.com/documentation/network/nw_tcp_create_options()": {
       "etag": "\"7c33-65d55fa9163a0-df\"",
@@ -4729,6 +5269,16 @@
       "etag": "\"857a-65d55fa7887ed-df\"",
       "file_path": "documentation/Network/nw_udp_options_set_prefer_no_checksum(_,_).md",
       "hash": "87cfdfaaa050c36bd359abc466d36a1c679ec82485fe2aebd083b58b4a14323a"
+    },
+    "https://developer.apple.com/documentation/network/nw_unsafe_unretained": {
+      "etag": "\"25fa-65d55faa3c960-df\"",
+      "file_path": "documentation/Network/nw_unsafe_unretained.md",
+      "hash": "4218bafa5d0dd0e2f221b4dcb0445ab634ab1ae38167a2965309fba387d28878"
+    },
+    "https://developer.apple.com/documentation/network/nw_valid_until_end_of_scope": {
+      "etag": "\"264e-65d55fa9621b9-df\"",
+      "file_path": "documentation/Network/nw_valid_until_end_of_scope.md",
+      "hash": "7770361a1d3e88d0acf0713c87288830edcb6239000c5e3369defe0dd7d8f61f"
     },
     "https://developer.apple.com/documentation/network/nw_ws_additional_header_enumerator_t": {
       "etag": "\"70da-65d55fa7ef8ab-df\"",
@@ -7000,55 +7550,110 @@
       "file_path": "documentation/Network/nwparametersprovider/constrainedpathsprohibited(_).md",
       "hash": "05d83d674f08befdc89f57a67c8d0d9faf1b860b43f5bd3ed642eaa577456ca2"
     },
+    "https://developer.apple.com/documentation/network/nwparametersprovider/constrainedpathsprohibited(_:)-5anfr": {
+      "etag": "\"16ea-65d55fab04ec5-df\"",
+      "file_path": "documentation/Network/nwparametersprovider/constrainedpathsprohibited(_)-5anfr.md",
+      "hash": "f07ef1eee5423eda16b447ba459375225e66542d8ec3d837edfbd7400f578054"
+    },
     "https://developer.apple.com/documentation/network/nwparametersprovider/dnssecvalidationrequired(_:)": {
       "etag": "\"2025-65d55fab04ec5-df\"",
       "file_path": "documentation/Network/nwparametersprovider/dnssecvalidationrequired(_).md",
       "hash": "95b3b8a78d033acb91aa2e82f5277b17b1f90b5de2880ca7a8bbffaa2413ca76"
+    },
+    "https://developer.apple.com/documentation/network/nwparametersprovider/dnssecvalidationrequired(_:)-6re5y": {
+      "etag": "\"1bbc-65d55fab04ec5-df\"",
+      "file_path": "documentation/Network/nwparametersprovider/dnssecvalidationrequired(_)-6re5y.md",
+      "hash": "f8ef08a03095b939c6956c30ae72aec4d8d525c859a6528c57b2d56a65ab08e8"
     },
     "https://developer.apple.com/documentation/network/nwparametersprovider/expensivepathsprohibited(_:)": {
       "etag": "\"1acb-65d55fab04ec5-df\"",
       "file_path": "documentation/Network/nwparametersprovider/expensivepathsprohibited(_).md",
       "hash": "79e58bf6bd1db9db7cdf4995932f11a97372e6bd6cc1ac08b866c0ae947a575d"
     },
+    "https://developer.apple.com/documentation/network/nwparametersprovider/expensivepathsprohibited(_:)-53yp0": {
+      "etag": "\"16c7-65d55fab04ec5-df\"",
+      "file_path": "documentation/Network/nwparametersprovider/expensivepathsprohibited(_)-53yp0.md",
+      "hash": "3a4312b6cba092d8a1c1cb1bdb2e84d17ce9e06ee4b75ab091f6b6fac9ecdc47"
+    },
     "https://developer.apple.com/documentation/network/nwparametersprovider/expireddnsbehavior(_:)": {
       "etag": "\"22be-65d55fab04ec5-df\"",
       "file_path": "documentation/Network/nwparametersprovider/expireddnsbehavior(_).md",
       "hash": "abdff35b755118d4e7cde7a04d085c8bedeec4aef20519dd6fc46fd2e9844fdc"
+    },
+    "https://developer.apple.com/documentation/network/nwparametersprovider/expireddnsbehavior(_:)-3w6lp": {
+      "etag": "\"1df9-65d55fab04ec5-df\"",
+      "file_path": "documentation/Network/nwparametersprovider/expireddnsbehavior(_)-3w6lp.md",
+      "hash": "78ace690352a497acf59435cafe18f11412568002758a0cc554561ddd2d69105"
     },
     "https://developer.apple.com/documentation/network/nwparametersprovider/fastopenallowed(_:)": {
       "etag": "\"1e9f-65d55fab04ec5-df\"",
       "file_path": "documentation/Network/nwparametersprovider/fastopenallowed(_).md",
       "hash": "f9c209080541dc08a8d24c99a5a74be2066bf2c385baf5c67d05d1fb47b9faa0"
     },
+    "https://developer.apple.com/documentation/network/nwparametersprovider/fastopenallowed(_:)-29iom": {
+      "etag": "\"1ac5-65d55fab04ec5-df\"",
+      "file_path": "documentation/Network/nwparametersprovider/fastopenallowed(_)-29iom.md",
+      "hash": "0f524ad0aa1b74a57589a15cdb31d48255748ee84aa47e9d43a601b983789b86"
+    },
     "https://developer.apple.com/documentation/network/nwparametersprovider/localendpoint(_:)": {
       "etag": "\"1a92-65d55fab04ec5-df\"",
       "file_path": "documentation/Network/nwparametersprovider/localendpoint(_).md",
       "hash": "24dd9fa259a05c1622e8cfafa3157780b8aea1ea267848aa8f3b5607df367634"
+    },
+    "https://developer.apple.com/documentation/network/nwparametersprovider/localendpoint(_:)-64i45": {
+      "etag": "\"169c-65d55fab04ec5-df\"",
+      "file_path": "documentation/Network/nwparametersprovider/localendpoint(_)-64i45.md",
+      "hash": "76820b6860477847a01ca67fe13cc3e3b440f76595df47262132457496060b09"
     },
     "https://developer.apple.com/documentation/network/nwparametersprovider/localendpointreuseallowed(_:)": {
       "etag": "\"1ac0-65d55fab04ec5-df\"",
       "file_path": "documentation/Network/nwparametersprovider/localendpointreuseallowed(_).md",
       "hash": "21b32c2b270bfca7755db48b196039cd3f77e5ec4b9e44e86cd9b2f938c67159"
     },
+    "https://developer.apple.com/documentation/network/nwparametersprovider/localendpointreuseallowed(_:)-1x9ep": {
+      "etag": "\"16ba-65d55fab04ec5-df\"",
+      "file_path": "documentation/Network/nwparametersprovider/localendpointreuseallowed(_)-1x9ep.md",
+      "hash": "81aee312213cbd6be6d7331db63560f7000b39e5bee7017696a4b5e6b46a68b4"
+    },
     "https://developer.apple.com/documentation/network/nwparametersprovider/localonly(_:)": {
       "etag": "\"19bd-65d55faaeb8c3-df\"",
       "file_path": "documentation/Network/nwparametersprovider/localonly(_).md",
       "hash": "6fb4c7dfbe6184ed165185be0d7860c0f778facb97b090d1ee3f2864eb6971f4"
+    },
+    "https://developer.apple.com/documentation/network/nwparametersprovider/localonly(_:)-8osdn": {
+      "etag": "\"15f4-65d55fab04ec5-df\"",
+      "file_path": "documentation/Network/nwparametersprovider/localonly(_)-8osdn.md",
+      "hash": "494f3c6e35d06e97a64e0a17e2eb41add808eb50e71de8f4ece78b55e18740c7"
     },
     "https://developer.apple.com/documentation/network/nwparametersprovider/localport(_:)": {
       "etag": "\"1fac-65d55fab04ec5-df\"",
       "file_path": "documentation/Network/nwparametersprovider/localport(_).md",
       "hash": "6a0e6a1a727781811fb068f4dc5861700b7458e67216dee037a890baa207e567"
     },
+    "https://developer.apple.com/documentation/network/nwparametersprovider/localport(_:)-9twr6": {
+      "etag": "\"1b01-65d55fab04ec5-df\"",
+      "file_path": "documentation/Network/nwparametersprovider/localport(_)-9twr6.md",
+      "hash": "7d8d39d64fa056765403af2bacd758f3a2fe08b1e722321f2b89a4dc0f50aad2"
+    },
     "https://developer.apple.com/documentation/network/nwparametersprovider/multipathservicetype(_:)": {
       "etag": "\"1ef2-65d55fab04ec5-df\"",
       "file_path": "documentation/Network/nwparametersprovider/multipathservicetype(_).md",
       "hash": "158c361dd15a892bf2948003d5435b9f98c3549b93389aafa3f664afa80eb298"
     },
+    "https://developer.apple.com/documentation/network/nwparametersprovider/multipathservicetype(_:)-11gez": {
+      "etag": "\"1a3d-65d55fab04ec5-df\"",
+      "file_path": "documentation/Network/nwparametersprovider/multipathservicetype(_)-11gez.md",
+      "hash": "e10b1c76433b2d4fcf56345d2e657d125e0e11602520033d3e982bea0723f5e4"
+    },
     "https://developer.apple.com/documentation/network/nwparametersprovider/noproxiespreferred(_:)": {
       "etag": "\"198c-65d55fab04ec5-df\"",
       "file_path": "documentation/Network/nwparametersprovider/noproxiespreferred(_).md",
       "hash": "e0e3092590e8fac3c64152f5a43d601903351410c2e5248cb2d43a2bd0b206da"
+    },
+    "https://developer.apple.com/documentation/network/nwparametersprovider/noproxiespreferred(_:)-ostv": {
+      "etag": "\"1690-65d55fab04ec5-df\"",
+      "file_path": "documentation/Network/nwparametersprovider/noproxiespreferred(_)-ostv.md",
+      "hash": "036fdb091f00ef8d15168608e084de00dc7b7450e1ef8296bb0cf59304f1922c"
     },
     "https://developer.apple.com/documentation/network/nwparametersprovider/parameters": {
       "etag": "\"12dd-65d55fab04ec5-df\"",
@@ -7060,35 +7665,70 @@
       "file_path": "documentation/Network/nwparametersprovider/peertopeerincluded(_).md",
       "hash": "030f41af01271f2f2a5c172d81ac5e4f35f745f6e2c9aaf2aa2a135e486a51a0"
     },
+    "https://developer.apple.com/documentation/network/nwparametersprovider/peertopeerincluded(_:)-60331": {
+      "etag": "\"1baa-65d55fab04ec5-df\"",
+      "file_path": "documentation/Network/nwparametersprovider/peertopeerincluded(_)-60331.md",
+      "hash": "658026e5e11d86a33ea090095985e1e02a0c356716292122b24045403ed6589e"
+    },
     "https://developer.apple.com/documentation/network/nwparametersprovider/prohibitedinterfaces(_:)": {
       "etag": "\"199e-65d55fab04ec5-df\"",
       "file_path": "documentation/Network/nwparametersprovider/prohibitedinterfaces(_).md",
       "hash": "ce2c6582fec0ea5427fd9c63c8b2ed325c3f95e9f18b0b91f2bc9ea91ea43cbd"
+    },
+    "https://developer.apple.com/documentation/network/nwparametersprovider/prohibitedinterfaces(_:)-99pe0": {
+      "etag": "\"1569-65d55fab04ec5-df\"",
+      "file_path": "documentation/Network/nwparametersprovider/prohibitedinterfaces(_)-99pe0.md",
+      "hash": "ecbb80129a484df5ae1bf2a29845312d78d9b70268950032192c926f989baa54"
     },
     "https://developer.apple.com/documentation/network/nwparametersprovider/prohibitedinterfacetypes(_:)": {
       "etag": "\"1ed7-65d55fab04ec5-df\"",
       "file_path": "documentation/Network/nwparametersprovider/prohibitedinterfacetypes(_).md",
       "hash": "df5f79011fd21e8c78ac3702fc1cb8511d6d248183bc1cef67f1e3c5c5bf54ab"
     },
+    "https://developer.apple.com/documentation/network/nwparametersprovider/prohibitedinterfacetypes(_:)-1xf6y": {
+      "etag": "\"19fa-65d55fab04ec5-df\"",
+      "file_path": "documentation/Network/nwparametersprovider/prohibitedinterfacetypes(_)-1xf6y.md",
+      "hash": "af10e389d41e70f86af2c3acbb6c551de28716d26c4b9bb0b215dd6542866900"
+    },
     "https://developer.apple.com/documentation/network/nwparametersprovider/requiredinterface(_:)": {
       "etag": "\"1a08-65d55fab04ec5-df\"",
       "file_path": "documentation/Network/nwparametersprovider/requiredinterface(_).md",
       "hash": "76cafc0c8a6329d2c18fe1af368beae38b07e6e671186ac3557dbe3d3890bc0d"
+    },
+    "https://developer.apple.com/documentation/network/nwparametersprovider/requiredinterface(_:)-tfqe": {
+      "etag": "\"1513-65d55fab04ec5-df\"",
+      "file_path": "documentation/Network/nwparametersprovider/requiredinterface(_)-tfqe.md",
+      "hash": "5eef7aaef0710ae48635eec0bf56d6a41cf1e1f27d24d0dab2bf6c1ce543a367"
     },
     "https://developer.apple.com/documentation/network/nwparametersprovider/requiredinterfacetype(_:)": {
       "etag": "\"1e62-65d55fab04ec5-df\"",
       "file_path": "documentation/Network/nwparametersprovider/requiredinterfacetype(_).md",
       "hash": "6ecee0d7a7fde9e03c9fcb2f89164b1fe06b0ea09a14e64e91e24c1031c43003"
     },
+    "https://developer.apple.com/documentation/network/nwparametersprovider/requiredinterfacetype(_:)-8w0cb": {
+      "etag": "\"19a6-65d55fab04ec5-df\"",
+      "file_path": "documentation/Network/nwparametersprovider/requiredinterfacetype(_)-8w0cb.md",
+      "hash": "753c3a874631508c49c2b929d639e22d5d737144abcbd3096203d8549663ce71"
+    },
     "https://developer.apple.com/documentation/network/nwparametersprovider/serviceclass(_:)": {
       "etag": "\"1e1b-65d55fab04ec5-df\"",
       "file_path": "documentation/Network/nwparametersprovider/serviceclass(_).md",
       "hash": "bded38a843d827d8f4d4a819353bde57f23c36faf062aee1037ebb5cbc1757fa"
     },
+    "https://developer.apple.com/documentation/network/nwparametersprovider/serviceclass(_:)-42fh6": {
+      "etag": "\"19a5-65d55fab04ec5-df\"",
+      "file_path": "documentation/Network/nwparametersprovider/serviceclass(_)-42fh6.md",
+      "hash": "9f3264b24c7d10e6972ce56f2ae316b4e82b6301b4deba457d6bdbb719579aa7"
+    },
     "https://developer.apple.com/documentation/network/nwparametersprovider/ultraconstrainedpathsallowed(_:)": {
       "etag": "\"1a9f-65d55fab04ec5-df\"",
       "file_path": "documentation/Network/nwparametersprovider/ultraconstrainedpathsallowed(_).md",
       "hash": "d2dafadcc0357aa92c2ac8bd440bfa2c098582e62f80ff15dcc82e1e3219a710"
+    },
+    "https://developer.apple.com/documentation/network/nwparametersprovider/ultraconstrainedpathsallowed(_:)-34tzk": {
+      "etag": "\"155c-65d55fab04ec5-df\"",
+      "file_path": "documentation/Network/nwparametersprovider/ultraconstrainedpathsallowed(_)-34tzk.md",
+      "hash": "ac8155fba58ac05ca0c7ca28ee44c35ee7be0ecee9e731d32b9a97a8483015d9"
     },
     "https://developer.apple.com/documentation/network/nwpath": {
       "etag": "\"5373-65d55fa8fe220-df\"",
@@ -8710,6 +9350,11 @@
       "file_path": "documentation/Network/quic.md",
       "hash": "41ba01d5debcd9b4710df4eee56ff7da22a0266f6dd23a035380500ca48411b1"
     },
+    "https://developer.apple.com/documentation/network/quic-options": {
+      "etag": "\"11eed-6590268eb554b-df\"",
+      "file_path": "documentation/Network/quic-options.md",
+      "hash": "40793f392ae5fb8a777d64cbbee05ec259c15f3556ad4162db4e9bbccfc064ff"
+    },
     "https://developer.apple.com/documentation/network/quic/datagrams": {
       "etag": "\"283b-65d55faaeb8c3-df\"",
       "file_path": "documentation/Network/quic/datagrams.md",
@@ -8915,6 +9560,11 @@
       "file_path": "documentation/Network/tcp.md",
       "hash": "13c17204857a3648efd88d6dc1d4115053555c31bec6da6eef9709f23f27336c"
     },
+    "https://developer.apple.com/documentation/network/tcp-options": {
+      "etag": "\"82bc-659026933ff34-df\"",
+      "file_path": "documentation/Network/tcp-options.md",
+      "hash": "94da633ce2ed77546836ad5fb2c5070549249c2def796c8282379e601a9bf738"
+    },
     "https://developer.apple.com/documentation/network/tcp/ackstretchingdisabled(_:)": {
       "etag": "\"156b-65d55fa9a3574-df\"",
       "file_path": "documentation/Network/tcp/ackstretchingdisabled(_).md",
@@ -8994,6 +9644,11 @@
       "etag": "\"3c2c-65d55fa7c13f0-df\"",
       "file_path": "documentation/Network/tls.md",
       "hash": "597ad1e083dfe18c98f0549710cb52ad1e7eef31e143e0cbd392ab9067f916a4"
+    },
+    "https://developer.apple.com/documentation/network/tls-options": {
+      "etag": "\"2c35-6590269245563-df\"",
+      "file_path": "documentation/Network/tls-options.md",
+      "hash": "841901fe88982b70f9174f64ae6f6cce03fc9724238ff108545f7cba6bf4c6f2"
     },
     "https://developer.apple.com/documentation/network/tls/applicationprotocols(_:)": {
       "etag": "\"14b8-65d55fa9a3574-df\"",
@@ -9120,6 +9775,11 @@
       "file_path": "documentation/Network/udp.md",
       "hash": "c1ed020e5bd215d8a043c6a6bb08cfa6fbd5d68bfbc1bf641cfc64e5f9a155ea"
     },
+    "https://developer.apple.com/documentation/network/udp-options": {
+      "etag": "\"2ba2-659026933ff34-df\"",
+      "file_path": "documentation/Network/udp-options.md",
+      "hash": "fd1c9b700976957b6c50fc2ba7b40b712326ec6f92c5da34e161ac0d4005b8a7"
+    },
     "https://developer.apple.com/documentation/network/udp/init()": {
       "etag": "\"bf8-65d55fa808026-df\"",
       "file_path": "documentation/Network/udp/init().md",
@@ -9154,6 +9814,11 @@
       "etag": "\"2e2e-65d55fa8889b7-df\"",
       "file_path": "documentation/Network/websocket.md",
       "hash": "b6ce380ec4482ec8bfea3a43f759aa153e5e90d976af3e581f3881e2ecb15f04"
+    },
+    "https://developer.apple.com/documentation/network/websocket-options": {
+      "etag": "\"c7c1-65902690e49f9-df\"",
+      "file_path": "documentation/Network/websocket-options.md",
+      "hash": "e4b99f1deb6852ef63dd1332071f2661e6adc34d651e38ee332d0eb3d5d2d137"
     },
     "https://developer.apple.com/documentation/network/websocket/additionalheaders(_:)": {
       "etag": "\"19b2-65d55fa7887ed-df\"",
@@ -9480,6 +10145,11 @@
       "file_path": "documentation/Network/dtls/version(min,max).md",
       "hash": "e1da7cf10ba36f73d5bfaf5b40a9079e172b1b2be0a61e4f8e94f93fabbe0ccf"
     },
+    "https://developer.apple.com/tutorials/data/documentation/network/framer-protocol-options.json": {
+      "etag": "\"1122b-6590268ffa2b4-df\"",
+      "file_path": "documentation/Network/framer-protocol-options.md",
+      "hash": "4d7f13e6babb31ce5155763871a166d78d006cc50f5ecc0a51549a450ab51859"
+    },
     "https://developer.apple.com/tutorials/data/documentation/network/framer.json": {
       "etag": "\"2844-65d55fa9da784-df\"",
       "file_path": "documentation/Network/framer.md",
@@ -9520,6 +10190,11 @@
       "file_path": "documentation/Network/framerprotocol/definition.md",
       "hash": "b7156ad7c9646d591ca5b0a678f66de21069c3e1be8431d10d535adf8786ab7c"
     },
+    "https://developer.apple.com/tutorials/data/documentation/network/implementing-netcat-with-network-framework.json": {
+      "etag": "\"10d39-65d55fa838d89-df\"",
+      "file_path": "documentation/Network/implementing-netcat-with-network-framework.md",
+      "hash": "1afe0f50793da845261852f9466464bb55eb7e083634cbce79427c7ac2264aa8"
+    },
     "https://developer.apple.com/tutorials/data/documentation/network/indicating-the-source-of-network-activity.json": {
       "etag": "\"bded-65d55fa7ef8ab-df\"",
       "file_path": "documentation/Network/indicating-the-source-of-network-activity.md",
@@ -9529,6 +10204,11 @@
       "etag": "\"6690-65d55fab20111-df\"",
       "file_path": "documentation/Network/inspecting-app-activity-data.md",
       "hash": "058ccb6a28338b3fa570f2c62b77db9f666a280826e077d5a41c9d56936e6b05"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/network/ip-options.json": {
+      "etag": "\"6dda-6590268f4eb04-df\"",
+      "file_path": "documentation/Network/ip-options.md",
+      "hash": "b5a5bbb1efed1cc089c22afd588d4087d37d94d763c766f54f9552e062b00b9b"
     },
     "https://developer.apple.com/tutorials/data/documentation/network/ip.json": {
       "etag": "\"298a-65d55faab76a1-df\"",
@@ -9895,10 +10575,20 @@
       "file_path": "documentation/Network/network-data-types.md",
       "hash": "006d0d48d2db720a8f043fde3d1f5c45d8bc94878cb8f381bb2f85b699e5e678"
     },
+    "https://developer.apple.com/tutorials/data/documentation/network/network-enumerations.json": {
+      "etag": "\"1f6b-6590268e50f22-df\"",
+      "file_path": "documentation/Network/network-enumerations.md",
+      "hash": "05d515c74fd84ecc88584245abdbceaac555b3a123e3c78be77685768273a5e6"
+    },
     "https://developer.apple.com/tutorials/data/documentation/network/network-functions.json": {
       "etag": "\"86632-65902691fffb7-df\"",
       "file_path": "documentation/Network/network-functions.md",
       "hash": "9743d89d052cf7eb90b06530f31ab4fa0b42200d93d5c19d103ff0b6da272825"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/network/network-macros.json": {
+      "etag": "\"4890-659026933ff34-df\"",
+      "file_path": "documentation/Network/network-macros.md",
+      "hash": "2ec50ddddd13eeace4e1ffc9d73aa81499a389e9a02a44a63d5dad422971a1ac"
     },
     "https://developer.apple.com/tutorials/data/documentation/network/networkbrowser.json": {
       "etag": "\"3724-65d55fa8fe220-df\"",
@@ -10680,6 +11370,31 @@
       "file_path": "documentation/Network/nw_advertise_descriptor_t.md",
       "hash": "9f010db90783e63b86972a70e079d782199b492d8dcaa0e9ae9eb07dbf6f3c3b"
     },
+    "https://developer.apple.com/tutorials/data/documentation/network/nw_all_paths.json": {
+      "etag": "\"25b2-65d55fa7ef8ab-df\"",
+      "file_path": "documentation/Network/nw_all_paths.md",
+      "hash": "48d7b524a492ccf55cbe8bf921c422c757c136a9465f31e4e3c7f3c12e2b58b5"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/network/nw_assume_externally_retained_begin.json": {
+      "etag": "\"b39-65d55fa8e438f-df\"",
+      "file_path": "documentation/Network/nw_assume_externally_retained_begin.md",
+      "hash": "c49416bc6c46f6cef6273140189c921c954d1f7857e5b543dea49a2b86e49c26"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/network/nw_assume_externally_retained_end.json": {
+      "etag": "\"b21-65d55fab20111-df\"",
+      "file_path": "documentation/Network/nw_assume_externally_retained_end.md",
+      "hash": "3b21f17fe977d96444edc16b7d4cbf0d02e5cca516b03b17d93c20b7c7cdf2fb"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/network/nw_assume_nonnull_begin.json": {
+      "etag": "\"25f4-65d55fa8694b3-df\"",
+      "file_path": "documentation/Network/nw_assume_nonnull_begin.md",
+      "hash": "e8d89618fb1695dd9461d70bdac8aa809dccc93fbf18e3a52ea5b299eed101a9"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/network/nw_assume_nonnull_end.json": {
+      "etag": "\"25e8-65d55faa826aa-df\"",
+      "file_path": "documentation/Network/nw_assume_nonnull_end.md",
+      "hash": "089227d6253cc5c9fc6484e9373038e616621e1bed06b99716622b85c4adaf8f"
+    },
     "https://developer.apple.com/tutorials/data/documentation/network/nw_browse_descriptor_create_application_service(_:).json": {
       "etag": "\"d057-65d55fa8a10d6-df\"",
       "file_path": "documentation/Network/nw_browse_descriptor_create_application_service(_).md",
@@ -10955,6 +11670,21 @@
       "file_path": "documentation/Network/nw_connection_create_new_data_transfer_report(_).md",
       "hash": "3043522c149bac3c64b22bbe345849054b1781d84c0fb018f56a1c323a0720b5"
     },
+    "https://developer.apple.com/tutorials/data/documentation/network/nw_connection_default_message_context.json": {
+      "etag": "\"2648-65d55fa9163a0-df\"",
+      "file_path": "documentation/Network/nw_connection_default_message_context.md",
+      "hash": "aa0aff3780045a0fe5c135df36e1fe067d32e27aaa8dfb73c95ad8588d30d697"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/network/nw_connection_default_stream_context.json": {
+      "etag": "\"2642-65d55fa8e438f-df\"",
+      "file_path": "documentation/Network/nw_connection_default_stream_context.md",
+      "hash": "a4fd759a6c9e3f2af6c31f5b01aab7acf84ce984678f2eccb04f57bc8dea485a"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/network/nw_connection_final_message_context.json": {
+      "etag": "\"263c-65d55fa8e438f-df\"",
+      "file_path": "documentation/Network/nw_connection_final_message_context.md",
+      "hash": "13322f7f511ece2324384bcb24931f74e830c2ff8c195ab2171b4ee847f1198a"
+    },
     "https://developer.apple.com/tutorials/data/documentation/network/nw_connection_force_cancel(_:).json": {
       "etag": "\"7dfc-65d55fab20111-df\"",
       "file_path": "documentation/Network/nw_connection_force_cancel(_).md",
@@ -11165,6 +11895,16 @@
       "file_path": "documentation/Network/nw_connection_send_completion_t.md",
       "hash": "13fa8ab72c67566a6e87a4bfdbbd2a71fa6d190721964d7f70ed11976241308a"
     },
+    "https://developer.apple.com/tutorials/data/documentation/network/nw_connection_send_idempotent_content.json": {
+      "etag": "\"2648-65d55faa53a51-df\"",
+      "file_path": "documentation/Network/nw_connection_send_idempotent_content.md",
+      "hash": "0764838a678667a92fd66b9cf0c81af90ff67624d2aac6dbe04d5170f3a48656"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/network/nw_connection_send_type_decl.json": {
+      "etag": "\"266f-65d55fa8889b7-df\"",
+      "file_path": "documentation/Network/nw_connection_send_type_decl.md",
+      "hash": "a278e9de9a451e0dd0aa1cf06570cdd2a9962ef62630df9ec529b75a4d2c7004"
+    },
     "https://developer.apple.com/tutorials/data/documentation/network/nw_connection_set_better_path_available_handler(_:_:).json": {
       "etag": "\"897c-65d55fa850d27-df\"",
       "file_path": "documentation/Network/nw_connection_set_better_path_available_handler(_,_).md",
@@ -11325,6 +12065,11 @@
       "file_path": "documentation/Network/nw_content_context_t.md",
       "hash": "6ccdcf494ce5da5594a0f3a65f7c856542112fe134663338f53851aec1e340a2"
     },
+    "https://developer.apple.com/tutorials/data/documentation/network/nw_content_context_type_decl.json": {
+      "etag": "\"266f-65d55faab76a1-df\"",
+      "file_path": "documentation/Network/nw_content_context_type_decl.md",
+      "hash": "34003036fa6f510177c828837fed58b2e8b731c0d12df58a3bfb3ac7fb5839ed"
+    },
     "https://developer.apple.com/tutorials/data/documentation/network/nw_data_transfer_report_collect(_:_:_:).json": {
       "etag": "\"8f91-65d55fa7ef8ab-df\"",
       "file_path": "documentation/Network/nw_data_transfer_report_collect(_,_,_).md",
@@ -11455,6 +12200,21 @@
       "file_path": "documentation/Network/nw_data_transfer_report_t.md",
       "hash": "9cdc7bf213b4f215bc0ccd19fbe361eb71714881453a5ce946f106c76e7dced6"
     },
+    "https://developer.apple.com/tutorials/data/documentation/network/nw_default_privacy_context.json": {
+      "etag": "\"2606-65d55fa766570-df\"",
+      "file_path": "documentation/Network/nw_default_privacy_context.md",
+      "hash": "36471155147ba50d8424044b9d0a4c73084b7b147afb764fef2354126f9255af"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/network/nw_direct.json": {
+      "etag": "\"25a0-65d55fa9163a0-df\"",
+      "file_path": "documentation/Network/nw_direct.md",
+      "hash": "350b67c84c988634329d8f4dc6edf1f0d8661b42fc0444fe11eeee87d5ceaa01"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/network/nw_direct_members.json": {
+      "etag": "\"25d0-65d55fa8889b7-df\"",
+      "file_path": "documentation/Network/nw_direct_members.md",
+      "hash": "7a6ad45c37afd6e4de8c091431dacc8b71e1ee6ec5b245550cb8d49a8f575dcd"
+    },
     "https://developer.apple.com/tutorials/data/documentation/network/nw_endpoint_copy_address_string(_:).json": {
       "etag": "\"8666-65d55fa8e438f-df\"",
       "file_path": "documentation/Network/nw_endpoint_copy_address_string(_).md",
@@ -11584,6 +12344,11 @@
       "etag": "\"2e64-65d55fa7c13f0-df\"",
       "file_path": "documentation/Network/nw_endpoint_type_url.md",
       "hash": "08dac8de13865c97ed69bc95756205c8f6f1a2449ecddf8b2e26cf617811b61d"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/network/nw_enum.json": {
+      "etag": "\"25b3-65d55fa9da784-df\"",
+      "file_path": "documentation/Network/nw_enum.md",
+      "hash": "b3882f855a7228a92fd0c08f84ea3032a06010bb62351572c4cc24f0d2f0034b"
     },
     "https://developer.apple.com/tutorials/data/documentation/network/nw_error_copy_cf_error(_:).json": {
       "etag": "\"8793-65d55fa9f45c5-df\"",
@@ -11824,6 +12589,21 @@
       "etag": "\"7b59-65d55fab04ec5-df\"",
       "file_path": "documentation/Network/nw_ethernet_channel_t.md",
       "hash": "c9c6b74b700f7434d9ba7597886641fc63da3b00ad48f9a4c30a06996aa4079e"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/network/nw_export.json": {
+      "etag": "\"a01-65d55fa7a5580-df\"",
+      "file_path": "documentation/Network/nw_export.md",
+      "hash": "d7694a318f763e8f10d55466e6cde3e8886c7af6354329be71555cbcf8b7f2a3"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/network/nw_export_project.json": {
+      "etag": "\"25d0-65d55faad4f49-df\"",
+      "file_path": "documentation/Network/nw_export_project.md",
+      "hash": "b47971c1d162d794aab444db5f390739b12acd85f839c304a4db1c890b1997a2"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/network/nw_externally_retained.json": {
+      "etag": "\"a9d-65d55fa9be2ad-df\"",
+      "file_path": "documentation/Network/nw_externally_retained.md",
+      "hash": "3cc72bf6f4a4d4e80e561e571b6865632c5f43ead195e07ba99625a52c20bbba"
     },
     "https://developer.apple.com/tutorials/data/documentation/network/nw_framer_async(_:_:).json": {
       "etag": "\"3c03-65d55fa9833d0-df\"",
@@ -12735,10 +13515,40 @@
       "file_path": "documentation/Network/nw_multipath_version_unspecified.md",
       "hash": "113d2701dd6485080de4b52610ce4c7a5d82687e120d1f0cf3fee10729ebb350"
     },
+    "https://developer.apple.com/tutorials/data/documentation/network/nw_no_destroy.json": {
+      "etag": "\"25a6-65d55fa7ef8ab-df\"",
+      "file_path": "documentation/Network/nw_no_destroy.md",
+      "hash": "fc24b64efc48f730efe04c34cfb8145583e4fbf0da4054b3e7c8b041001dc573"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/network/nw_noescape.json": {
+      "etag": "\"25ac-65d55fab20111-df\"",
+      "file_path": "documentation/Network/nw_noescape.md",
+      "hash": "4eb94056311856b708760fee8fb7d6642beac8cc8f73dba9f9a1e315a0679592"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/network/nw_nonnull_array.json": {
+      "etag": "\"25ca-65d55fa7ef8ab-df\"",
+      "file_path": "documentation/Network/nw_nonnull_array.md",
+      "hash": "e92842b48dfaff3241141b70ddc28eadaaf3b3498db91292c56d956875441029"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/network/nw_object_decl.json": {
+      "etag": "\"260f-65d55fab20111-df\"",
+      "file_path": "documentation/Network/nw_object_decl.md",
+      "hash": "bf6f2b96057e612afb428bda8dce2b92b956316aef5493474187e1adf7226e3d"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/network/nw_object_decl_subclass.json": {
+      "etag": "\"26bf-65d55fa9333af-df\"",
+      "file_path": "documentation/Network/nw_object_decl_subclass.md",
+      "hash": "28ff338a79d857978206ddc8fce9d0c15bc199062dbf569702b77357e761a3bb"
+    },
     "https://developer.apple.com/tutorials/data/documentation/network/nw_object_t.json": {
       "etag": "\"22c1-65d55fab20111-df\"",
       "file_path": "documentation/Network/nw_object_t.md",
       "hash": "d8374039aca9c1a2eaf5ea13baa8e29179bb890c27ee2f05e7c6912e40b72cdf"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/network/nw_options.json": {
+      "etag": "\"2624-65d55faa68714-df\"",
+      "file_path": "documentation/Network/nw_options.md",
+      "hash": "68abd8f2dffad9ae665376d25ac9e0ed89407c274dde23be10e9bd6e0bb129d5"
     },
     "https://developer.apple.com/tutorials/data/documentation/network/nw_parameters_attribution_t.json": {
       "etag": "\"475b-65d55fa9da784-df\"",
@@ -12760,15 +13570,85 @@
       "file_path": "documentation/Network/nw_parameters_attribution_t/user.md",
       "hash": "048ec95fd2ae13bce514713d98dbc78e07520a66c9dcb81e65cc17cbd3a7ac9d"
     },
+    "https://developer.apple.com/tutorials/data/documentation/network/nw_parameters_clear_prohibited_interface_types(_:).json": {
+      "etag": "\"7c09-65d55fa808026-df\"",
+      "file_path": "documentation/Network/nw_parameters_clear_prohibited_interface_types(_).md",
+      "hash": "fb1b6b3ac00ea7a9284ff1720b46f825cbb47187a0d2bca0b864aeb9a3d4c673"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/network/nw_parameters_clear_prohibited_interfaces(_:).json": {
+      "etag": "\"7bdc-65d55fa9163a0-df\"",
+      "file_path": "documentation/Network/nw_parameters_clear_prohibited_interfaces(_).md",
+      "hash": "8c833fefc178f0e4fefd1dd91e29343b7fd8fce472a75b33fb4303147158a8f5"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/network/nw_parameters_configure_protocol_block_t.json": {
+      "etag": "\"4c77-65d55fa9833d0-df\"",
+      "file_path": "documentation/Network/nw_parameters_configure_protocol_block_t.md",
+      "hash": "39e3318e5748f1858184dfa6cfe0aaed54699462378ea6e95f4f13449254b002"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/network/nw_parameters_configure_protocol_type_decl.json": {
+      "etag": "\"275f-65d55fa8889b7-df\"",
+      "file_path": "documentation/Network/nw_parameters_configure_protocol_type_decl.md",
+      "hash": "8bbe5f17956cdb67cfa392e4c1e7704c1688db44a9a0ab485429c90335319366"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/network/nw_parameters_copy(_:).json": {
+      "etag": "\"42bd-65d55fa8a10d6-df\"",
+      "file_path": "documentation/Network/nw_parameters_copy(_).md",
+      "hash": "6045eb0a19f81401f5d32919db65112abb08e0a4c74c50fc772c359abb27c8c7"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/network/nw_parameters_copy_default_protocol_stack(_:).json": {
+      "etag": "\"2fab-65d55fa8e438f-df\"",
+      "file_path": "documentation/Network/nw_parameters_copy_default_protocol_stack(_).md",
+      "hash": "447c10cd1b0426e23b1484475d7a1fb4a7d777aff30bd9a14b3317f197b0eadd"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/network/nw_parameters_copy_local_endpoint(_:).json": {
+      "etag": "\"8146-65d55fa7c13f0-df\"",
+      "file_path": "documentation/Network/nw_parameters_copy_local_endpoint(_).md",
+      "hash": "3b25b80f41e201c55f67957dfe12542b2751ce1c0fea14a5afb6ce6cfc7c002d"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/network/nw_parameters_copy_required_interface(_:).json": {
+      "etag": "\"818e-65d55fab04ec5-df\"",
+      "file_path": "documentation/Network/nw_parameters_copy_required_interface(_).md",
+      "hash": "46a272f563ce70fe3f43895e4cd718ff53c95d8efedb02da833ada09e156294f"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/network/nw_parameters_create().json": {
+      "etag": "\"4020-65d55faab76a1-df\"",
+      "file_path": "documentation/Network/nw_parameters_create().md",
+      "hash": "931182fab960a86f82ea91403b915312423a41923df41c79329ba9ae4cf86984"
+    },
     "https://developer.apple.com/tutorials/data/documentation/network/nw_parameters_create_application_service().json": {
       "etag": "\"c214-65d55fa94ab8c-df\"",
       "file_path": "documentation/Network/nw_parameters_create_application_service().md",
       "hash": "891fe15ae30a8570a98015344240f9cf21de7be4e2d3fece3326fe7a68dec629"
     },
+    "https://developer.apple.com/tutorials/data/documentation/network/nw_parameters_create_custom_ip(_:_:).json": {
+      "etag": "\"47cc-65d55faab76a1-df\"",
+      "file_path": "documentation/Network/nw_parameters_create_custom_ip(_,_).md",
+      "hash": "741dadc4279c3cdf1ecdd06dfab0b8e1423bf099483a2e9ef31fc5c998dd34ba"
+    },
     "https://developer.apple.com/tutorials/data/documentation/network/nw_parameters_create_quic(_:).json": {
       "etag": "\"9190-65d55fa7887ed-df\"",
       "file_path": "documentation/Network/nw_parameters_create_quic(_).md",
       "hash": "7a3461347e1d19104c18284c318548f677e02f2372359aee4daf97c718cf0406"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/network/nw_parameters_create_secure_tcp(_:_:).json": {
+      "etag": "\"4a6a-65d55fa8fe220-df\"",
+      "file_path": "documentation/Network/nw_parameters_create_secure_tcp(_,_).md",
+      "hash": "60fd347613a42d7bc1d024de5c3091b27897512edd92d6ff99befb3e4d90f737"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/network/nw_parameters_create_secure_udp(_:_:).json": {
+      "etag": "\"4a6f-65d55fa9da784-df\"",
+      "file_path": "documentation/Network/nw_parameters_create_secure_udp(_,_).md",
+      "hash": "ed34fff5b0f790f1705197d6638beaef9a69bbc4d134a9cdfc5465d4facc78ff"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/network/nw_parameters_default_configuration.json": {
+      "etag": "\"26ae-65d55fa7a5580-df\"",
+      "file_path": "documentation/Network/nw_parameters_default_configuration.md",
+      "hash": "26ca293a0529acc6207da73bfbeb204e41c3f16eff635fb4dd6a992a646d431a"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/network/nw_parameters_disable_protocol.json": {
+      "etag": "\"2672-65d55fa9da784-df\"",
+      "file_path": "documentation/Network/nw_parameters_disable_protocol.md",
+      "hash": "ebfa60923c7c8f6eaeb9ac5a6e29ed4637b980c84be384b283dc2b4ebffcec1e"
     },
     "https://developer.apple.com/tutorials/data/documentation/network/nw_parameters_expired_dns_behavior_allow.json": {
       "etag": "\"29b0-65d55fa8cd849-df\"",
@@ -12830,6 +13710,16 @@
       "file_path": "documentation/Network/nw_parameters_get_fast_open_enabled(_).md",
       "hash": "e9062c55853a9c9b4b1dc89899345f3a7645c3e1b51516c205088853c2c25569"
     },
+    "https://developer.apple.com/tutorials/data/documentation/network/nw_parameters_get_include_peer_to_peer(_:).json": {
+      "etag": "\"7aba-65d55fa8e438f-df\"",
+      "file_path": "documentation/Network/nw_parameters_get_include_peer_to_peer(_).md",
+      "hash": "c7dcf41327d76eb36f7d02c2490037e995b1670a5af5844eaab6023a0019c73e"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/network/nw_parameters_get_local_only(_:).json": {
+      "etag": "\"79ee-65d55fa7887ed-df\"",
+      "file_path": "documentation/Network/nw_parameters_get_local_only(_).md",
+      "hash": "d73528cb09e4fac57ef24fd3eb7c094764ebc07619a37e4b3d3b246644178192"
+    },
     "https://developer.apple.com/tutorials/data/documentation/network/nw_parameters_get_multipath_service(_:).json": {
       "etag": "\"7928-65d55fa7ef8ab-df\"",
       "file_path": "documentation/Network/nw_parameters_get_multipath_service(_).md",
@@ -12840,10 +13730,65 @@
       "file_path": "documentation/Network/nw_parameters_get_prefer_no_proxy(_).md",
       "hash": "9e73a369a769241baa38e003de975e3636624f2427c02aa2692692619c1f86b6"
     },
+    "https://developer.apple.com/tutorials/data/documentation/network/nw_parameters_get_prohibit_constrained(_:).json": {
+      "etag": "\"7f4f-65d55faa826aa-df\"",
+      "file_path": "documentation/Network/nw_parameters_get_prohibit_constrained(_).md",
+      "hash": "f5e3b6b8e563493469d0140d136cbefa0f140c1a9bc0fcb667ffe55b03641cb0"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/network/nw_parameters_get_prohibit_expensive(_:).json": {
+      "etag": "\"7f2a-65d55fa7887ed-df\"",
+      "file_path": "documentation/Network/nw_parameters_get_prohibit_expensive(_).md",
+      "hash": "576c7cb774a65ad3d2af4f1d8cda1603e1aed0302553e2e1c91b7f178b01a3b9"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/network/nw_parameters_get_required_interface_type(_:).json": {
+      "etag": "\"81f3-65d55fa808026-df\"",
+      "file_path": "documentation/Network/nw_parameters_get_required_interface_type(_).md",
+      "hash": "4f4fd87768e95718cfa69ed045b01bb1e1a92e4d194199e320f8a95f60aac40d"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/network/nw_parameters_get_reuse_local_address(_:).json": {
+      "etag": "\"7a95-65d55fa8889b7-df\"",
+      "file_path": "documentation/Network/nw_parameters_get_reuse_local_address(_).md",
+      "hash": "ddcfc147ee734f5f5e2f5d9682fe5b2e3e25a4514f8fd72614134c9a66d77534"
+    },
     "https://developer.apple.com/tutorials/data/documentation/network/nw_parameters_get_service_class(_:).json": {
       "etag": "\"78ee-65d55fa9833d0-df\"",
       "file_path": "documentation/Network/nw_parameters_get_service_class(_).md",
       "hash": "9df692ef8f15a31073bb0c9481aaf0085998361640ebb206caeda35bb32fd0d7"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/network/nw_parameters_iterate_interface_types_block_t.json": {
+      "etag": "\"7ede-65d55fab04ec5-df\"",
+      "file_path": "documentation/Network/nw_parameters_iterate_interface_types_block_t.md",
+      "hash": "81a7535075c111ba718354a6ce306f8dc322e312371cd246919901ac509aa31c"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/network/nw_parameters_iterate_interfaces_block_t.json": {
+      "etag": "\"7eb5-65d55fa7ef8ab-df\"",
+      "file_path": "documentation/Network/nw_parameters_iterate_interfaces_block_t.md",
+      "hash": "c7c9249707bb9f1b8e44a8fac43fe4c4c64d9892446492988bf91fa51a6afedd"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/network/nw_parameters_iterate_prohibited_interface_types(_:_:).json": {
+      "etag": "\"8745-65d55fa7887ed-df\"",
+      "file_path": "documentation/Network/nw_parameters_iterate_prohibited_interface_types(_,_).md",
+      "hash": "4efff4309a6f0733435d914047ad070bf83de39c08d90112d0e09afdb37a5464"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/network/nw_parameters_iterate_prohibited_interfaces(_:_:).json": {
+      "etag": "\"8d01-65d55fa7ef8ab-df\"",
+      "file_path": "documentation/Network/nw_parameters_iterate_prohibited_interfaces(_,_).md",
+      "hash": "1c5184b947ac14dbd39667093b73985dec76ce028aeceefd3684163a2b9f0bd2"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/network/nw_parameters_prohibit_interface(_:_:).json": {
+      "etag": "\"82a1-65d55fa8889b7-df\"",
+      "file_path": "documentation/Network/nw_parameters_prohibit_interface(_,_).md",
+      "hash": "5e26f1ff934a62bf5ecb107bd03f358bffd6e5e63cb0408eb0acc89ce6b36b16"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/network/nw_parameters_prohibit_interface_type(_:_:).json": {
+      "etag": "\"834a-65d55fa8889b7-df\"",
+      "file_path": "documentation/Network/nw_parameters_prohibit_interface_type(_,_).md",
+      "hash": "d24971f452bf26a2c6030ca77eaf35c314463f66331aec514a3b955342f19b3d"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/network/nw_parameters_require_interface(_:_:).json": {
+      "etag": "\"82a4-65d55fa8694b3-df\"",
+      "file_path": "documentation/Network/nw_parameters_require_interface(_,_).md",
+      "hash": "de883b42b9703dff453fee8775f06bd08237ea86a957a64f25682f1ab27d7a02"
     },
     "https://developer.apple.com/tutorials/data/documentation/network/nw_parameters_requires_dnssec_validation(_:).json": {
       "etag": "\"8753-65d55fa808026-df\"",
@@ -12875,6 +13820,16 @@
       "file_path": "documentation/Network/nw_parameters_set_include_peer_to_peer(_,_).md",
       "hash": "317739e68ccb2a56de82ffb0f2f1e734ff5226b8d20339275b2681049cecd5ff"
     },
+    "https://developer.apple.com/tutorials/data/documentation/network/nw_parameters_set_local_endpoint(_:_:).json": {
+      "etag": "\"8293-65d55fa9f45c5-df\"",
+      "file_path": "documentation/Network/nw_parameters_set_local_endpoint(_,_).md",
+      "hash": "47e9f89d7f6c726e740ea92639d8a6748255103ba77fe49baa77de171f192c5e"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/network/nw_parameters_set_local_only(_:_:).json": {
+      "etag": "\"7b64-65d55fa8e438f-df\"",
+      "file_path": "documentation/Network/nw_parameters_set_local_only(_,_).md",
+      "hash": "2eaf5ad2df9d8417ea6439ee6187efe78175772ccf9db9d4ec29021ff5afd100"
+    },
     "https://developer.apple.com/tutorials/data/documentation/network/nw_parameters_set_multipath_service(_:_:).json": {
       "etag": "\"7ab5-65d55faab76a1-df\"",
       "file_path": "documentation/Network/nw_parameters_set_multipath_service(_,_).md",
@@ -12885,15 +13840,45 @@
       "file_path": "documentation/Network/nw_parameters_set_prefer_no_proxy(_,_).md",
       "hash": "2a75aab952379241b564b7f75b33da90b4887fe6e2538094955a8b37a19d2ab5"
     },
+    "https://developer.apple.com/tutorials/data/documentation/network/nw_parameters_set_privacy_context(_:_:).json": {
+      "etag": "\"26ba-65d55fa8694b3-df\"",
+      "file_path": "documentation/Network/nw_parameters_set_privacy_context(_,_).md",
+      "hash": "ed427cb297eb26150183b46038fe0ee3ec11976949502f9e3acaa6fbd8a34d17"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/network/nw_parameters_set_prohibit_constrained(_:_:).json": {
+      "etag": "\"80b6-65d55faab76a1-df\"",
+      "file_path": "documentation/Network/nw_parameters_set_prohibit_constrained(_,_).md",
+      "hash": "650c29bc69cb621d61a841b4e03e71a680d163a8c25719d9555264c829e19204"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/network/nw_parameters_set_prohibit_expensive(_:_:).json": {
+      "etag": "\"808d-65d55faa9b7c6-df\"",
+      "file_path": "documentation/Network/nw_parameters_set_prohibit_expensive(_,_).md",
+      "hash": "1a48777f468ff625a344b2f1d7b878c74e19cd1cee16e63b6c54fbb2eeac1e5a"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/network/nw_parameters_set_required_interface_type(_:_:).json": {
+      "etag": "\"835a-65d55faab76a1-df\"",
+      "file_path": "documentation/Network/nw_parameters_set_required_interface_type(_,_).md",
+      "hash": "1f655cc986c8d2f743d967f13faf617653e6ff93b7e58e42693d5b608d26ad80"
+    },
     "https://developer.apple.com/tutorials/data/documentation/network/nw_parameters_set_requires_dnssec_validation(_:_:).json": {
       "etag": "\"88ab-65d55faa25043-df\"",
       "file_path": "documentation/Network/nw_parameters_set_requires_dnssec_validation(_,_).md",
       "hash": "48638b1b2627f55967139d10cb142aa988e0effec604dec1057e7a0ede2e97ba"
     },
+    "https://developer.apple.com/tutorials/data/documentation/network/nw_parameters_set_reuse_local_address(_:_:).json": {
+      "etag": "\"7c1f-65d55fa7a5580-df\"",
+      "file_path": "documentation/Network/nw_parameters_set_reuse_local_address(_,_).md",
+      "hash": "06b7f71819a0441defe71a051c6a6da7fbf7a01c388c969061037fc0a5a00997"
+    },
     "https://developer.apple.com/tutorials/data/documentation/network/nw_parameters_set_service_class(_:_:).json": {
       "etag": "\"7c2b-65d55fa9a3574-df\"",
       "file_path": "documentation/Network/nw_parameters_set_service_class(_,_).md",
       "hash": "67bb0b07eb8c49c64e279d97900ee2e8f1feb9a185a3a3e4050d34b9d39eaebf"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/network/nw_parameters_t.json": {
+      "etag": "\"15be0-65d55fa838d89-df\"",
+      "file_path": "documentation/Network/nw_parameters_t.md",
+      "hash": "dd26c8562414fa5dfd0ace0d49ce0782f44aff3b72a15fe159d2b8650df41466"
     },
     "https://developer.apple.com/tutorials/data/documentation/network/nw_path_copy_effective_local_endpoint(_:).json": {
       "etag": "\"846c-65d55fa9163a0-df\"",
@@ -13130,6 +14115,46 @@
       "file_path": "documentation/Network/nw_path_uses_interface_type(_,_).md",
       "hash": "f144727b36a6e7e70d2818aff27968de94283545f3d69f64703dc77bfd3be886"
     },
+    "https://developer.apple.com/tutorials/data/documentation/network/nw_privacy_context_add_proxy(_:_:).json": {
+      "etag": "\"30be-65d55fa73db56-df\"",
+      "file_path": "documentation/Network/nw_privacy_context_add_proxy(_,_).md",
+      "hash": "ad76da87b54c764010496eebfc19aa5b88a972298a51162ee1f7f81abb7e1187"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/network/nw_privacy_context_clear_proxies(_:).json": {
+      "etag": "\"2b81-65d55faa0e1be-df\"",
+      "file_path": "documentation/Network/nw_privacy_context_clear_proxies(_).md",
+      "hash": "645f2132308a45e12e1a39114cc9652c903018b849e46b7ab4c3ff4781712da9"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/network/nw_privacy_context_create(_:).json": {
+      "etag": "\"2f82-65d55fa8cd849-df\"",
+      "file_path": "documentation/Network/nw_privacy_context_create(_).md",
+      "hash": "f60df1720fe9db4924479117b5f1de2de436ad7be3fc88d83f68cecee85cef68"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/network/nw_privacy_context_disable_logging(_:).json": {
+      "etag": "\"29b0-65d55fa8a10d6-df\"",
+      "file_path": "documentation/Network/nw_privacy_context_disable_logging(_).md",
+      "hash": "b766b897a49b14db9ef451de10c8ade28a7e49342a7040e230fa575cd72b8a54"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/network/nw_privacy_context_flush_cache(_:).json": {
+      "etag": "\"2ae6-65d55faa826aa-df\"",
+      "file_path": "documentation/Network/nw_privacy_context_flush_cache(_).md",
+      "hash": "da93363d9fecedf80c6676778a37e9b03bc4b09ff26d46c454d8a58694692d4a"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/network/nw_privacy_context_require_encrypted_name_resolution(_:_:_:).json": {
+      "etag": "\"3fe0-65d55fa9be2ad-df\"",
+      "file_path": "documentation/Network/nw_privacy_context_require_encrypted_name_resolution(_,_,_).md",
+      "hash": "70fc84104e65e0a92ec00c06c87e2fbc6646cce9a3820de381336aab03dc4657"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/network/nw_privacy_context_t.json": {
+      "etag": "\"659d-65d55faa0e1be-df\"",
+      "file_path": "documentation/Network/nw_privacy_context_t.md",
+      "hash": "43c216bf6012ab04be251df9e79e1e2affa71fefd47079f737a2cec09f585b16"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/network/nw_privacy_context_type_decl.json": {
+      "etag": "\"26b7-65d55fa9be2ad-df\"",
+      "file_path": "documentation/Network/nw_privacy_context_type_decl.md",
+      "hash": "025bdf24c49f49bb24aa7a6652cf69c5a521af318835c02d3cec8c637774ed9a"
+    },
     "https://developer.apple.com/tutorials/data/documentation/network/nw_protocol_copy_ip_definition().json": {
       "etag": "\"4bc0-65d55fa8a10d6-df\"",
       "file_path": "documentation/Network/nw_protocol_copy_ip_definition().md",
@@ -13159,6 +14184,16 @@
       "etag": "\"7d2d-65d55fa9be2ad-df\"",
       "file_path": "documentation/Network/nw_protocol_copy_ws_definition().md",
       "hash": "f5ae7cfba8823b7df9a5522660928b3386c01e9312e671eeb61038801cf61b95"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/network/nw_protocol_definition_is_equal(_:_:).json": {
+      "etag": "\"24ea-65d55fa850d27-df\"",
+      "file_path": "documentation/Network/nw_protocol_definition_is_equal(_,_).md",
+      "hash": "c38e4afd29fcd797ac797758c01b5e099ddbb70f1550370aa7b842d06d8c3529"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/network/nw_protocol_definition_t.json": {
+      "etag": "\"339f-65d55fa8e438f-df\"",
+      "file_path": "documentation/Network/nw_protocol_definition_t.md",
+      "hash": "9c5a6ba06df714c4b5b6fbff4597b28b0c67a859f72a2c047c39af6c6faf4974"
     },
     "https://developer.apple.com/tutorials/data/documentation/network/nw_protocol_metadata_copy_definition(_:).json": {
       "etag": "\"85ef-65d55fa8889b7-df\"",
@@ -13205,10 +14240,60 @@
       "file_path": "documentation/Network/nw_protocol_metadata_t.md",
       "hash": "78ceb3512412997e5ef5301d8bb72b215e563150d6d480ad71fdbd744bf43b87"
     },
+    "https://developer.apple.com/tutorials/data/documentation/network/nw_protocol_options_copy_definition(_:).json": {
+      "etag": "\"2423-65d55fa808026-df\"",
+      "file_path": "documentation/Network/nw_protocol_options_copy_definition(_).md",
+      "hash": "8f18e43b9b29b23f3451602ea450bdb98054e22f8f32afad9136da061afbd375"
+    },
     "https://developer.apple.com/tutorials/data/documentation/network/nw_protocol_options_is_quic(_:).json": {
       "etag": "\"8593-65d55fa7ef8ab-df\"",
       "file_path": "documentation/Network/nw_protocol_options_is_quic(_).md",
       "hash": "b554ea8dbdd2479fec724c8de47815fc2b02193fff634b0aae62bfe3b282be35"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/network/nw_protocol_options_t.json": {
+      "etag": "\"32f9-65d55fa7ef8ab-df\"",
+      "file_path": "documentation/Network/nw_protocol_options_t.md",
+      "hash": "344f1f73e902e0d22f66f057951b79cfb2b0ce2e250a1c6f7a7694d523d42707"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/network/nw_protocol_stack_clear_application_protocols(_:).json": {
+      "etag": "\"3366-65d55faa826aa-df\"",
+      "file_path": "documentation/Network/nw_protocol_stack_clear_application_protocols(_).md",
+      "hash": "1a4d38b3b6322c3a52882750bbe99cb95778744481177333d2ec559ee7cc421a"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/network/nw_protocol_stack_copy_internet_protocol(_:).json": {
+      "etag": "\"3268-65d55fa8cd849-df\"",
+      "file_path": "documentation/Network/nw_protocol_stack_copy_internet_protocol(_).md",
+      "hash": "06857305f57fbf98eed2133f5dc044c9fc8b631f01b50fc5924a8341e26ac28c"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/network/nw_protocol_stack_copy_transport_protocol(_:).json": {
+      "etag": "\"327a-65d55fa94ab8c-df\"",
+      "file_path": "documentation/Network/nw_protocol_stack_copy_transport_protocol(_).md",
+      "hash": "98c0f938a00e00aaec39ba636ff50c0a1095ef9acf8fe52017fb3b4fb48c753e"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/network/nw_protocol_stack_iterate_application_protocols(_:_:).json": {
+      "etag": "\"3f26-65d55fab04ec5-df\"",
+      "file_path": "documentation/Network/nw_protocol_stack_iterate_application_protocols(_,_).md",
+      "hash": "bff6a7e68e1f2342407279d62d5d7489dc8c679750d0f46bf1d1553ed78ee618"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/network/nw_protocol_stack_iterate_protocols_block_t.json": {
+      "etag": "\"3592-65d55fa9163a0-df\"",
+      "file_path": "documentation/Network/nw_protocol_stack_iterate_protocols_block_t.md",
+      "hash": "9b0e0af656aabbbbd3eac82fca7a979dd099d957b4949b4b9bb27ac5cb55c979"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/network/nw_protocol_stack_prepend_application_protocol(_:_:).json": {
+      "etag": "\"3af1-65d55fa7a5580-df\"",
+      "file_path": "documentation/Network/nw_protocol_stack_prepend_application_protocol(_,_).md",
+      "hash": "d0c24f53355224ceeaac3ac86b8e3a58ff47eeefaebec0805c8415da96884302"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/network/nw_protocol_stack_set_transport_protocol(_:_:).json": {
+      "etag": "\"33be-65d55fa73db56-df\"",
+      "file_path": "documentation/Network/nw_protocol_stack_set_transport_protocol(_,_).md",
+      "hash": "8b711113609c5ede4bab53c855b567ee756c3abe0400653775bfd0e12e914905"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/network/nw_protocol_stack_t.json": {
+      "etag": "\"5b5c-65d55fa808026-df\"",
+      "file_path": "documentation/Network/nw_protocol_stack_t.md",
+      "hash": "7a2c84ace28b34e943fce543a5537867172d56cacd293581b24b4187799697a8"
     },
     "https://developer.apple.com/tutorials/data/documentation/network/nw_proxy_config_add_excluded_domain(_:_:).json": {
       "etag": "\"cbcd-65d55fa7ef8ab-df\"",
@@ -13230,6 +14315,26 @@
       "file_path": "documentation/Network/nw_proxy_config_clear_match_domains(_).md",
       "hash": "d22e4ea08c8e4e65bb4af68c6a8dac1aae51859f57f52e1979b48ebe0f8534d6"
     },
+    "https://developer.apple.com/tutorials/data/documentation/network/nw_proxy_config_create_http_connect(_:_:).json": {
+      "etag": "\"4acc-65d55fa9be2ad-df\"",
+      "file_path": "documentation/Network/nw_proxy_config_create_http_connect(_,_).md",
+      "hash": "3b6a5bb0a756cbe48c7a9488fc099ad67a398f847de063a1b113b9ed18cde08a"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/network/nw_proxy_config_create_oblivious_http(_:_:_:_:).json": {
+      "etag": "\"58a3-65d55faab76a1-df\"",
+      "file_path": "documentation/Network/nw_proxy_config_create_oblivious_http(_,_,_,_).md",
+      "hash": "1fdaf3474660aa5df90ca631c234c262ac2fa8beec4ac64e69b47f9e8fc315ea"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/network/nw_proxy_config_create_relay(_:_:).json": {
+      "etag": "\"40ab-65d55fa9da784-df\"",
+      "file_path": "documentation/Network/nw_proxy_config_create_relay(_,_).md",
+      "hash": "e126ccd919dfc6070fccfec2efd6283fbc0ed961d44a600558bfcfb79f566537"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/network/nw_proxy_config_create_socksv5(_:).json": {
+      "etag": "\"40b4-65d55fa766570-df\"",
+      "file_path": "documentation/Network/nw_proxy_config_create_socksv5(_).md",
+      "hash": "30d69c1c04e0e4286f4e7dfa98c38c2b3df87b234b64a47cd97c8f086b18b6ef"
+    },
     "https://developer.apple.com/tutorials/data/documentation/network/nw_proxy_config_enumerate_excluded_domains(_:_:).json": {
       "etag": "\"d526-65d55fa7a5580-df\"",
       "file_path": "documentation/Network/nw_proxy_config_enumerate_excluded_domains(_,_).md",
@@ -13239,6 +14344,26 @@
       "etag": "\"d4e7-65d55fa7a5580-df\"",
       "file_path": "documentation/Network/nw_proxy_config_enumerate_match_domains(_,_).md",
       "hash": "33271418631fce262d7ef1dfeecbb1b79de576f0cb2d5e27297472fffb2ed11d"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/network/nw_proxy_config_get_failover_allowed(_:).json": {
+      "etag": "\"24c1-65d55fa9833d0-df\"",
+      "file_path": "documentation/Network/nw_proxy_config_get_failover_allowed(_).md",
+      "hash": "864b8ca84a3785da93781631d3b3a090187ccec4800dd2aff86533d042dd3b44"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/network/nw_proxy_config_set_failover_allowed(_:_:).json": {
+      "etag": "\"2ea5-65d55fa8694b3-df\"",
+      "file_path": "documentation/Network/nw_proxy_config_set_failover_allowed(_,_).md",
+      "hash": "bf6e1be14ec95b4c3cea4741d4650087c2ca0565f9d28de8cf3f6cc1a9c9530f"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/network/nw_proxy_config_set_username_and_password(_:_:_:).json": {
+      "etag": "\"35a1-65d55faa9b7c6-df\"",
+      "file_path": "documentation/Network/nw_proxy_config_set_username_and_password(_,_,_).md",
+      "hash": "7db4f5f0dd2574320c5fe1d1b0921415a0b4a635381a6d4b399f9400e81a060d"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/network/nw_proxy_config_t.json": {
+      "etag": "\"5c7b-65d55fa8b79ff-df\"",
+      "file_path": "documentation/Network/nw_proxy_config_t.md",
+      "hash": "bc6d2efe92f3b8fc4b0168f5e3280b1f7b83acd2d0aa308a476ab4c851ec9628"
     },
     "https://developer.apple.com/tutorials/data/documentation/network/nw_proxy_domain_enumerator_t.json": {
       "etag": "\"7835-65d55fa7887ed-df\"",
@@ -13505,6 +14630,31 @@
       "file_path": "documentation/Network/nw_quic_stream_type_unknown.md",
       "hash": "7997babcbe0678a0adbdd4d5cc6afaca10147f4592f0d64bab147bc624f0fbd9"
     },
+    "https://developer.apple.com/tutorials/data/documentation/network/nw_relay_hop_add_additional_http_header_field(_:_:_:).json": {
+      "etag": "\"3606-65d55fa94ab8c-df\"",
+      "file_path": "documentation/Network/nw_relay_hop_add_additional_http_header_field(_,_,_).md",
+      "hash": "029456066f0c864078381197d466d180b6daabf1e73850ae1203eebc93eee975"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/network/nw_relay_hop_create(_:_:_:).json": {
+      "etag": "\"3dbe-65d55fa9621b9-df\"",
+      "file_path": "documentation/Network/nw_relay_hop_create(_,_,_).md",
+      "hash": "dbfbf8c09c0442d6a611f70aeb7cf921f3e0067c0411d46f36e123225d3ce8ee"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/network/nw_relay_hop_t.json": {
+      "etag": "\"47ec-65d55fa9da784-df\"",
+      "file_path": "documentation/Network/nw_relay_hop_t.md",
+      "hash": "ae0940760780fe7b2782d411cc66729c57f1548157b9c2718e370c4d69e89e7c"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/network/nw_release.json": {
+      "etag": "\"146e-65d55fa9163a0-df\"",
+      "file_path": "documentation/Network/nw_release.md",
+      "hash": "d230468cfb1d8da04f2e8aaae9eb8384ab245eb8a849dfcf9db77c034ad93f56"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/network/nw_releases_argument.json": {
+      "etag": "\"25fa-65d55faa68714-df\"",
+      "file_path": "documentation/Network/nw_releases_argument.md",
+      "hash": "24452a307967739e41f8d8bd914464e3481e7356cb6de4f06d18c9bb877996f3"
+    },
     "https://developer.apple.com/tutorials/data/documentation/network/nw_report_protocol_enumerator_t.json": {
       "etag": "\"7304-65d55fa766570-df\"",
       "file_path": "documentation/Network/nw_report_protocol_enumerator_t.md",
@@ -13635,6 +14785,51 @@
       "file_path": "documentation/Network/nw_resolution_report_t.md",
       "hash": "dba8f1cac1027318997e3d5281a15b8126dac7a453c0dd7342b8ede47297b0b5"
     },
+    "https://developer.apple.com/tutorials/data/documentation/network/nw_resolver_config_add_server_address(_:_:).json": {
+      "etag": "\"39a3-65d55fa9da784-df\"",
+      "file_path": "documentation/Network/nw_resolver_config_add_server_address(_,_).md",
+      "hash": "f97ad2f3c0c36586c00a744042628e5e99417b21d099ee76d5f0664d34376791"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/network/nw_resolver_config_create_https(_:).json": {
+      "etag": "\"3bf5-65d55fa9a3574-df\"",
+      "file_path": "documentation/Network/nw_resolver_config_create_https(_).md",
+      "hash": "31ebd835ccc0cdb44b85543ae0feb5733facd809ecd2797504f3f44318ac1247"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/network/nw_resolver_config_create_tls(_:).json": {
+      "etag": "\"3bd9-65d55fa8cd849-df\"",
+      "file_path": "documentation/Network/nw_resolver_config_create_tls(_).md",
+      "hash": "33307b8cb11a5ac52af77be6e27bbce85901aa0d66a36db1eb94bb1753966d1f"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/network/nw_resolver_config_t.json": {
+      "etag": "\"34d4-65d55fa8a10d6-df\"",
+      "file_path": "documentation/Network/nw_resolver_config_t.md",
+      "hash": "7c3e8fd7433db2a326be732046e6f9d86d10884a29a4e0b3cc6c46224266c94e"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/network/nw_retain.json": {
+      "etag": "\"145e-65d55fa838d89-df\"",
+      "file_path": "documentation/Network/nw_retain.md",
+      "hash": "a134332a5a9a53f3fbce07d39c8f94461d1e27c2943d542ae049fd9f653c396d"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/network/nw_returns_inner_pointer.json": {
+      "etag": "\"262a-65d55fa808026-df\"",
+      "file_path": "documentation/Network/nw_returns_inner_pointer.md",
+      "hash": "94403c2eba42e9fb96f54135035a500c3783876d20763a50a06d9dcd4af7aa71"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/network/nw_returns_not_retained.json": {
+      "etag": "\"261e-65d55faad4f49-df\"",
+      "file_path": "documentation/Network/nw_returns_not_retained.md",
+      "hash": "edce4c64b8ce70fb4aac82cccc75e18626f636353a532115145a057aa94675e6"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/network/nw_returns_retained.json": {
+      "etag": "\"25ee-65d55faa3c960-df\"",
+      "file_path": "documentation/Network/nw_returns_retained.md",
+      "hash": "cf430fd22f4dcba9f7de349350fdd897e7853e2c39f548216345807282a74280"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/network/nw_sendable_object_decl.json": {
+      "etag": "\"267b-65d55fa7a5580-df\"",
+      "file_path": "documentation/Network/nw_sendable_object_decl.md",
+      "hash": "92c99fa7e6380af0a0268160845bfe599f48699cccae8982e0746504d467e7a2"
+    },
     "https://developer.apple.com/tutorials/data/documentation/network/nw_service_class_background.json": {
       "etag": "\"34cb-65d55fa8e438f-df\"",
       "file_path": "documentation/Network/nw_service_class_background.md",
@@ -13684,6 +14879,16 @@
       "etag": "\"13b2-65d55fa766570-df\"",
       "file_path": "documentation/Network/nw_service_class_t/rawvalue.md",
       "hash": "39a4fef8d977501629c60edf98530af4952b423c139418c492ef9225de84daef"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/network/nw_swift_disable_async.json": {
+      "etag": "\"2612-65d55faa3c960-df\"",
+      "file_path": "documentation/Network/nw_swift_disable_async.md",
+      "hash": "e584850ea7dc8360b61e8a84bead039aa1b3bd2300c662e0bfca639bf1c1236d"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/network/nw_swift_sendable.json": {
+      "etag": "\"25d6-65d55faa53a51-df\"",
+      "file_path": "documentation/Network/nw_swift_sendable.md",
+      "hash": "0bc0c6cd92ad45487926e206461a00503aded544dcbc9bd1f2c02bab9b21590f"
     },
     "https://developer.apple.com/tutorials/data/documentation/network/nw_tcp_create_options().json": {
       "etag": "\"7c33-65d55fa9163a0-df\"",
@@ -13939,6 +15144,16 @@
       "etag": "\"857a-65d55fa7887ed-df\"",
       "file_path": "documentation/Network/nw_udp_options_set_prefer_no_checksum(_,_).md",
       "hash": "87cfdfaaa050c36bd359abc466d36a1c679ec82485fe2aebd083b58b4a14323a"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/network/nw_unsafe_unretained.json": {
+      "etag": "\"25fa-65d55faa3c960-df\"",
+      "file_path": "documentation/Network/nw_unsafe_unretained.md",
+      "hash": "4218bafa5d0dd0e2f221b4dcb0445ab634ab1ae38167a2965309fba387d28878"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/network/nw_valid_until_end_of_scope.json": {
+      "etag": "\"264e-65d55fa9621b9-df\"",
+      "file_path": "documentation/Network/nw_valid_until_end_of_scope.md",
+      "hash": "7770361a1d3e88d0acf0713c87288830edcb6239000c5e3369defe0dd7d8f61f"
     },
     "https://developer.apple.com/tutorials/data/documentation/network/nw_ws_additional_header_enumerator_t.json": {
       "etag": "\"70da-65d55fa7ef8ab-df\"",
@@ -16205,55 +17420,110 @@
       "file_path": "documentation/Network/nwparametersprovider.md",
       "hash": "a3032f90decfd9e16f33794149a71bd967fb84548e25215dad1a42e0eafb0547"
     },
+    "https://developer.apple.com/tutorials/data/documentation/network/nwparametersprovider/constrainedpathsprohibited(_:)-5anfr.json": {
+      "etag": "\"16ea-65d55fab04ec5-df\"",
+      "file_path": "documentation/Network/nwparametersprovider/constrainedpathsprohibited(_)-5anfr.md",
+      "hash": "f07ef1eee5423eda16b447ba459375225e66542d8ec3d837edfbd7400f578054"
+    },
     "https://developer.apple.com/tutorials/data/documentation/network/nwparametersprovider/constrainedpathsprohibited(_:).json": {
       "etag": "\"1afc-65d55fab04ec5-df\"",
       "file_path": "documentation/Network/nwparametersprovider/constrainedpathsprohibited(_).md",
       "hash": "05d83d674f08befdc89f57a67c8d0d9faf1b860b43f5bd3ed642eaa577456ca2"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/network/nwparametersprovider/dnssecvalidationrequired(_:)-6re5y.json": {
+      "etag": "\"1bbc-65d55fab04ec5-df\"",
+      "file_path": "documentation/Network/nwparametersprovider/dnssecvalidationrequired(_)-6re5y.md",
+      "hash": "f8ef08a03095b939c6956c30ae72aec4d8d525c859a6528c57b2d56a65ab08e8"
     },
     "https://developer.apple.com/tutorials/data/documentation/network/nwparametersprovider/dnssecvalidationrequired(_:).json": {
       "etag": "\"2025-65d55fab04ec5-df\"",
       "file_path": "documentation/Network/nwparametersprovider/dnssecvalidationrequired(_).md",
       "hash": "95b3b8a78d033acb91aa2e82f5277b17b1f90b5de2880ca7a8bbffaa2413ca76"
     },
+    "https://developer.apple.com/tutorials/data/documentation/network/nwparametersprovider/expensivepathsprohibited(_:)-53yp0.json": {
+      "etag": "\"16c7-65d55fab04ec5-df\"",
+      "file_path": "documentation/Network/nwparametersprovider/expensivepathsprohibited(_)-53yp0.md",
+      "hash": "3a4312b6cba092d8a1c1cb1bdb2e84d17ce9e06ee4b75ab091f6b6fac9ecdc47"
+    },
     "https://developer.apple.com/tutorials/data/documentation/network/nwparametersprovider/expensivepathsprohibited(_:).json": {
       "etag": "\"1acb-65d55fab04ec5-df\"",
       "file_path": "documentation/Network/nwparametersprovider/expensivepathsprohibited(_).md",
       "hash": "79e58bf6bd1db9db7cdf4995932f11a97372e6bd6cc1ac08b866c0ae947a575d"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/network/nwparametersprovider/expireddnsbehavior(_:)-3w6lp.json": {
+      "etag": "\"1df9-65d55fab04ec5-df\"",
+      "file_path": "documentation/Network/nwparametersprovider/expireddnsbehavior(_)-3w6lp.md",
+      "hash": "78ace690352a497acf59435cafe18f11412568002758a0cc554561ddd2d69105"
     },
     "https://developer.apple.com/tutorials/data/documentation/network/nwparametersprovider/expireddnsbehavior(_:).json": {
       "etag": "\"22be-65d55fab04ec5-df\"",
       "file_path": "documentation/Network/nwparametersprovider/expireddnsbehavior(_).md",
       "hash": "abdff35b755118d4e7cde7a04d085c8bedeec4aef20519dd6fc46fd2e9844fdc"
     },
+    "https://developer.apple.com/tutorials/data/documentation/network/nwparametersprovider/fastopenallowed(_:)-29iom.json": {
+      "etag": "\"1ac5-65d55fab04ec5-df\"",
+      "file_path": "documentation/Network/nwparametersprovider/fastopenallowed(_)-29iom.md",
+      "hash": "0f524ad0aa1b74a57589a15cdb31d48255748ee84aa47e9d43a601b983789b86"
+    },
     "https://developer.apple.com/tutorials/data/documentation/network/nwparametersprovider/fastopenallowed(_:).json": {
       "etag": "\"1e9f-65d55fab04ec5-df\"",
       "file_path": "documentation/Network/nwparametersprovider/fastopenallowed(_).md",
       "hash": "f9c209080541dc08a8d24c99a5a74be2066bf2c385baf5c67d05d1fb47b9faa0"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/network/nwparametersprovider/localendpoint(_:)-64i45.json": {
+      "etag": "\"169c-65d55fab04ec5-df\"",
+      "file_path": "documentation/Network/nwparametersprovider/localendpoint(_)-64i45.md",
+      "hash": "76820b6860477847a01ca67fe13cc3e3b440f76595df47262132457496060b09"
     },
     "https://developer.apple.com/tutorials/data/documentation/network/nwparametersprovider/localendpoint(_:).json": {
       "etag": "\"1a92-65d55fab04ec5-df\"",
       "file_path": "documentation/Network/nwparametersprovider/localendpoint(_).md",
       "hash": "24dd9fa259a05c1622e8cfafa3157780b8aea1ea267848aa8f3b5607df367634"
     },
+    "https://developer.apple.com/tutorials/data/documentation/network/nwparametersprovider/localendpointreuseallowed(_:)-1x9ep.json": {
+      "etag": "\"16ba-65d55fab04ec5-df\"",
+      "file_path": "documentation/Network/nwparametersprovider/localendpointreuseallowed(_)-1x9ep.md",
+      "hash": "81aee312213cbd6be6d7331db63560f7000b39e5bee7017696a4b5e6b46a68b4"
+    },
     "https://developer.apple.com/tutorials/data/documentation/network/nwparametersprovider/localendpointreuseallowed(_:).json": {
       "etag": "\"1ac0-65d55fab04ec5-df\"",
       "file_path": "documentation/Network/nwparametersprovider/localendpointreuseallowed(_).md",
       "hash": "21b32c2b270bfca7755db48b196039cd3f77e5ec4b9e44e86cd9b2f938c67159"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/network/nwparametersprovider/localonly(_:)-8osdn.json": {
+      "etag": "\"15f4-65d55fab04ec5-df\"",
+      "file_path": "documentation/Network/nwparametersprovider/localonly(_)-8osdn.md",
+      "hash": "494f3c6e35d06e97a64e0a17e2eb41add808eb50e71de8f4ece78b55e18740c7"
     },
     "https://developer.apple.com/tutorials/data/documentation/network/nwparametersprovider/localonly(_:).json": {
       "etag": "\"19bd-65d55faaeb8c3-df\"",
       "file_path": "documentation/Network/nwparametersprovider/localonly(_).md",
       "hash": "6fb4c7dfbe6184ed165185be0d7860c0f778facb97b090d1ee3f2864eb6971f4"
     },
+    "https://developer.apple.com/tutorials/data/documentation/network/nwparametersprovider/localport(_:)-9twr6.json": {
+      "etag": "\"1b01-65d55fab04ec5-df\"",
+      "file_path": "documentation/Network/nwparametersprovider/localport(_)-9twr6.md",
+      "hash": "7d8d39d64fa056765403af2bacd758f3a2fe08b1e722321f2b89a4dc0f50aad2"
+    },
     "https://developer.apple.com/tutorials/data/documentation/network/nwparametersprovider/localport(_:).json": {
       "etag": "\"1fac-65d55fab04ec5-df\"",
       "file_path": "documentation/Network/nwparametersprovider/localport(_).md",
       "hash": "6a0e6a1a727781811fb068f4dc5861700b7458e67216dee037a890baa207e567"
     },
+    "https://developer.apple.com/tutorials/data/documentation/network/nwparametersprovider/multipathservicetype(_:)-11gez.json": {
+      "etag": "\"1a3d-65d55fab04ec5-df\"",
+      "file_path": "documentation/Network/nwparametersprovider/multipathservicetype(_)-11gez.md",
+      "hash": "e10b1c76433b2d4fcf56345d2e657d125e0e11602520033d3e982bea0723f5e4"
+    },
     "https://developer.apple.com/tutorials/data/documentation/network/nwparametersprovider/multipathservicetype(_:).json": {
       "etag": "\"1ef2-65d55fab04ec5-df\"",
       "file_path": "documentation/Network/nwparametersprovider/multipathservicetype(_).md",
       "hash": "158c361dd15a892bf2948003d5435b9f98c3549b93389aafa3f664afa80eb298"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/network/nwparametersprovider/noproxiespreferred(_:)-ostv.json": {
+      "etag": "\"1690-65d55fab04ec5-df\"",
+      "file_path": "documentation/Network/nwparametersprovider/noproxiespreferred(_)-ostv.md",
+      "hash": "036fdb091f00ef8d15168608e084de00dc7b7450e1ef8296bb0cf59304f1922c"
     },
     "https://developer.apple.com/tutorials/data/documentation/network/nwparametersprovider/noproxiespreferred(_:).json": {
       "etag": "\"198c-65d55fab04ec5-df\"",
@@ -16265,35 +17535,70 @@
       "file_path": "documentation/Network/nwparametersprovider/parameters.md",
       "hash": "e52a5dcc8877a337afb8d6e8f19d3983c77bf571a15b4c3fc4d9b2d5303d6380"
     },
+    "https://developer.apple.com/tutorials/data/documentation/network/nwparametersprovider/peertopeerincluded(_:)-60331.json": {
+      "etag": "\"1baa-65d55fab04ec5-df\"",
+      "file_path": "documentation/Network/nwparametersprovider/peertopeerincluded(_)-60331.md",
+      "hash": "658026e5e11d86a33ea090095985e1e02a0c356716292122b24045403ed6589e"
+    },
     "https://developer.apple.com/tutorials/data/documentation/network/nwparametersprovider/peertopeerincluded(_:).json": {
       "etag": "\"1fb4-65d55fab04ec5-df\"",
       "file_path": "documentation/Network/nwparametersprovider/peertopeerincluded(_).md",
       "hash": "030f41af01271f2f2a5c172d81ac5e4f35f745f6e2c9aaf2aa2a135e486a51a0"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/network/nwparametersprovider/prohibitedinterfaces(_:)-99pe0.json": {
+      "etag": "\"1569-65d55fab04ec5-df\"",
+      "file_path": "documentation/Network/nwparametersprovider/prohibitedinterfaces(_)-99pe0.md",
+      "hash": "ecbb80129a484df5ae1bf2a29845312d78d9b70268950032192c926f989baa54"
     },
     "https://developer.apple.com/tutorials/data/documentation/network/nwparametersprovider/prohibitedinterfaces(_:).json": {
       "etag": "\"199e-65d55fab04ec5-df\"",
       "file_path": "documentation/Network/nwparametersprovider/prohibitedinterfaces(_).md",
       "hash": "ce2c6582fec0ea5427fd9c63c8b2ed325c3f95e9f18b0b91f2bc9ea91ea43cbd"
     },
+    "https://developer.apple.com/tutorials/data/documentation/network/nwparametersprovider/prohibitedinterfacetypes(_:)-1xf6y.json": {
+      "etag": "\"19fa-65d55fab04ec5-df\"",
+      "file_path": "documentation/Network/nwparametersprovider/prohibitedinterfacetypes(_)-1xf6y.md",
+      "hash": "af10e389d41e70f86af2c3acbb6c551de28716d26c4b9bb0b215dd6542866900"
+    },
     "https://developer.apple.com/tutorials/data/documentation/network/nwparametersprovider/prohibitedinterfacetypes(_:).json": {
       "etag": "\"1ed7-65d55fab04ec5-df\"",
       "file_path": "documentation/Network/nwparametersprovider/prohibitedinterfacetypes(_).md",
       "hash": "df5f79011fd21e8c78ac3702fc1cb8511d6d248183bc1cef67f1e3c5c5bf54ab"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/network/nwparametersprovider/requiredinterface(_:)-tfqe.json": {
+      "etag": "\"1513-65d55fab04ec5-df\"",
+      "file_path": "documentation/Network/nwparametersprovider/requiredinterface(_)-tfqe.md",
+      "hash": "5eef7aaef0710ae48635eec0bf56d6a41cf1e1f27d24d0dab2bf6c1ce543a367"
     },
     "https://developer.apple.com/tutorials/data/documentation/network/nwparametersprovider/requiredinterface(_:).json": {
       "etag": "\"1a08-65d55fab04ec5-df\"",
       "file_path": "documentation/Network/nwparametersprovider/requiredinterface(_).md",
       "hash": "76cafc0c8a6329d2c18fe1af368beae38b07e6e671186ac3557dbe3d3890bc0d"
     },
+    "https://developer.apple.com/tutorials/data/documentation/network/nwparametersprovider/requiredinterfacetype(_:)-8w0cb.json": {
+      "etag": "\"19a6-65d55fab04ec5-df\"",
+      "file_path": "documentation/Network/nwparametersprovider/requiredinterfacetype(_)-8w0cb.md",
+      "hash": "753c3a874631508c49c2b929d639e22d5d737144abcbd3096203d8549663ce71"
+    },
     "https://developer.apple.com/tutorials/data/documentation/network/nwparametersprovider/requiredinterfacetype(_:).json": {
       "etag": "\"1e62-65d55fab04ec5-df\"",
       "file_path": "documentation/Network/nwparametersprovider/requiredinterfacetype(_).md",
       "hash": "6ecee0d7a7fde9e03c9fcb2f89164b1fe06b0ea09a14e64e91e24c1031c43003"
     },
+    "https://developer.apple.com/tutorials/data/documentation/network/nwparametersprovider/serviceclass(_:)-42fh6.json": {
+      "etag": "\"19a5-65d55fab04ec5-df\"",
+      "file_path": "documentation/Network/nwparametersprovider/serviceclass(_)-42fh6.md",
+      "hash": "9f3264b24c7d10e6972ce56f2ae316b4e82b6301b4deba457d6bdbb719579aa7"
+    },
     "https://developer.apple.com/tutorials/data/documentation/network/nwparametersprovider/serviceclass(_:).json": {
       "etag": "\"1e1b-65d55fab04ec5-df\"",
       "file_path": "documentation/Network/nwparametersprovider/serviceclass(_).md",
       "hash": "bded38a843d827d8f4d4a819353bde57f23c36faf062aee1037ebb5cbc1757fa"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/network/nwparametersprovider/ultraconstrainedpathsallowed(_:)-34tzk.json": {
+      "etag": "\"155c-65d55fab04ec5-df\"",
+      "file_path": "documentation/Network/nwparametersprovider/ultraconstrainedpathsallowed(_)-34tzk.md",
+      "hash": "ac8155fba58ac05ca0c7ca28ee44c35ee7be0ecee9e731d32b9a97a8483015d9"
     },
     "https://developer.apple.com/tutorials/data/documentation/network/nwparametersprovider/ultraconstrainedpathsallowed(_:).json": {
       "etag": "\"1a9f-65d55fab04ec5-df\"",
@@ -17915,6 +19220,11 @@
       "file_path": "documentation/Network/proxyconfiguration/relayhop/init(http3relayendpoint,http2relayendpoint,tlsoptions,additionalhttpheaderfields).md",
       "hash": "42e18da9111d0e4db88bb36666bd81a46279922dc4536db8fc25d31b03840e12"
     },
+    "https://developer.apple.com/tutorials/data/documentation/network/quic-options.json": {
+      "etag": "\"11eed-6590268eb554b-df\"",
+      "file_path": "documentation/Network/quic-options.md",
+      "hash": "40793f392ae5fb8a777d64cbbee05ec259c15f3556ad4162db4e9bbccfc064ff"
+    },
     "https://developer.apple.com/tutorials/data/documentation/network/quic.json": {
       "etag": "\"4379-65d55fa8e438f-df\"",
       "file_path": "documentation/Network/quic.md",
@@ -18120,6 +19430,11 @@
       "file_path": "documentation/Network/taking-advantage-of-third-party-network-debugging-tools.md",
       "hash": "401c090d826b27467ac6c2707c7bc907921c25940863ee16f6580f05d9b449a0"
     },
+    "https://developer.apple.com/tutorials/data/documentation/network/tcp-options.json": {
+      "etag": "\"82bc-659026933ff34-df\"",
+      "file_path": "documentation/Network/tcp-options.md",
+      "hash": "94da633ce2ed77546836ad5fb2c5070549249c2def796c8282379e601a9bf738"
+    },
     "https://developer.apple.com/tutorials/data/documentation/network/tcp.json": {
       "etag": "\"401f-65d55fa8cd849-df\"",
       "file_path": "documentation/Network/tcp.md",
@@ -18199,6 +19514,11 @@
       "etag": "\"665c-65d55fa7ef8ab-df\"",
       "file_path": "documentation/Network/testing-and-debugging-l4s-in-your-app.md",
       "hash": "e114481e80f7392cfd7906ac010620db1743001ff009d46d0255a466874c6b1d"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/network/tls-options.json": {
+      "etag": "\"2c35-6590269245563-df\"",
+      "file_path": "documentation/Network/tls-options.md",
+      "hash": "841901fe88982b70f9174f64ae6f6cce03fc9724238ff108545f7cba6bf4c6f2"
     },
     "https://developer.apple.com/tutorials/data/documentation/network/tls.json": {
       "etag": "\"3c2c-65d55fa7c13f0-df\"",
@@ -18325,6 +19645,11 @@
       "file_path": "documentation/Network/txtrecorddecoder/init().md",
       "hash": "6f42dcd6c53d87efb0177c00b08e34a13ef7aa94ad8a93cf7fe54bb9aa84348a"
     },
+    "https://developer.apple.com/tutorials/data/documentation/network/udp-options.json": {
+      "etag": "\"2ba2-659026933ff34-df\"",
+      "file_path": "documentation/Network/udp-options.md",
+      "hash": "fd1c9b700976957b6c50fc2ba7b40b712326ec6f92c5da34e161ac0d4005b8a7"
+    },
     "https://developer.apple.com/tutorials/data/documentation/network/udp.json": {
       "etag": "\"1f77-65d55fa94ab8c-df\"",
       "file_path": "documentation/Network/udp.md",
@@ -18359,6 +19684,11 @@
       "etag": "\"11d7-65d55faab76a1-df\"",
       "file_path": "documentation/Network/unexpectedendpointtype/init(endpoint).md",
       "hash": "aa77a855047a8a074c9cb230ae6b98cf8a3d55cb4227a3024983f0b1d7b16ead"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/network/websocket-options.json": {
+      "etag": "\"c7c1-65902690e49f9-df\"",
+      "file_path": "documentation/Network/websocket-options.md",
+      "hash": "e4b99f1deb6852ef63dd1332071f2661e6adc34d651e38ee332d0eb3d5d2d137"
     },
     "https://developer.apple.com/tutorials/data/documentation/network/websocket.json": {
       "etag": "\"2e2e-65d55fa8889b7-df\"",
@@ -18423,8 +19753,8 @@
   },
   "metadata": {
     "render": {
-      "version": 1
+      "version": 2
     },
-    "total_pages": 3684
+    "total_pages": 3950
   }
 }

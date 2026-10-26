@@ -38,6 +38,8 @@ Create an eraser tool programmatically or display a [`PKToolPicker`](./pktoolpic
 ### Getting the eraser type
 - [var eraserType: __PKEraserType](./pkerasertoolreference/erasertype.md)
   The behavior adopted by the eraser when deleting content.
+- [PKEraserType](./pkerasertype.md)
+  Constants that indicate the behavior of the eraser.
 ### Getting the width information
 - [var width: CGFloat](./pkerasertoolreference/width.md)
   The width of the eraser.
@@ -60,6 +62,29 @@ Create an eraser tool programmatically or display a [`PKToolPicker`](./pktoolpic
 - [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 - [Sendable](../Swift/sendable.md)
 - [SendableMetatype](../Swift/sendablemetatype.md)
+### Inherits From
+- [PKTool](./pktool-c.class.md)
+
+## See Also
+
+### Tools
+- [Configuring the PencilKit tool picker](./configuring-the-pencilkit-tool-picker.md)
+  Incorporate a custom PencilKit tool picker with a variety of system and custom tools into a drawing app.
+- [PKToolPicker](./pktoolpicker.md)
+  A tool palette that displays a selection of drawing tools and colors for tools that a person can choose from.
+- [PKInkingTool](./pkinkingtoolreference.md)
+  An object that defines the drawing characteristics (width, color, pen style) to use when drawing lines on a canvas view.
+- [PKLassoTool](./pklassotoolreference.md)
+  A tool for selecting stroked lines and shapes in a canvas view.
+- [PKTool](./pktool-c.class.md)
+  An abstract base class for tools used by a canvas view.
+- [PKResponderState](./pkresponderstate.md)
+  An object that controls PencilKit behavior associated with a responder.
+- [PKToolPickerVisibility](./pktoolpickervisibility.md)
+  Constants that describe the visibility state of a tool picker.
+- [PKToolPickerDelegate](./pktoolpicker/delegate-swift.protocol.md)
+- [PKToolPickerCustomItemControlOptions](./pktoolpickercustomitem/controloptions.md)
+  Options for which controls to present.
 
 
 ---

@@ -38,6 +38,8 @@ Core Graphics provides a limited, low-level interface for drawing text. For info
   Creates a font object from data supplied from a data provider.
 - [init?(CFString)](./cgfont/init%28_%29-1p4b.md)
   Creates a font object corresponding to the font specified by a PostScript or full name.
+- [CGFontCreateWithPlatformFont](./cgfontcreatewithplatformfont.md)
+  Creates a font object from an Apple Type Services (ATS) font.
 ### Examining Font Metadata
 - [var fullName: CFString?](./cgfont/fullname.md)
   Returns the full name associated with a font object.
@@ -113,6 +115,11 @@ Core Graphics provides a limited, low-level interface for drawing text. For info
 ### Working with Core Foundation Types
 - [class var typeID: CFTypeID](./cgfont/typeid.md)
   Returns the Core Foundation type identifier for Core Graphics fonts.
+### Retaining and Releasing a CGFont Object
+- [CGFontRelease](./cgfontrelease.md)
+  Decrements the retain count of a font.
+- [CGFontRetain](./cgfontretain.md)
+  Increments the retain count of a font.
 
 ## Relationships
 
@@ -131,6 +138,31 @@ Core Graphics provides a limited, low-level interface for drawing text. For info
   An object that describes how to convert between color spaces for use by other system services.
 - [class CGColorSpace](./cgcolorspace.md)
   A profile that specifies how to interpret a color value for display.
+### Opaque Types
+- [CGContextRef](./cgcontext.md)
+  A Quartz 2D drawing environment.
+- [CGDataConsumerRef](./cgdataconsumer.md)
+  An abstraction for data-writing tasks that eliminates the need to manage a raw memory buffer.
+- [CGDataProviderRef](./cgdataprovider.md)
+  An abstraction for data-reading tasks that eliminates the need to manage a raw memory buffer.
+- [CGFunctionRef](./cgfunction.md)
+  A general facility for defining and using callback functions.
+- [CGGradientRef](./cggradient.md)
+  A definition for a smooth transition between colors for drawing radial and axial gradient fills.
+- [CGImageRef](./cgimage.md)
+  A bitmap image or image mask.
+- [CGLayerRef](./cglayer.md)
+  An offscreen context for reusing content drawn with Core Graphics.
+- [CGPathRef](./cgpath.md)
+  An immutable graphics path: a mathematical description of shapes or lines to be drawn in a graphics context.
+- [CGPatternRef](./cgpattern.md)
+  A 2D pattern to be used for drawing graphics paths.
+- [CGPDFArray](./cgpdfarray.md)
+  An array structure within a PDF document.
+- [CGPDFContentStream](./cgpdfcontentstream.md)
+  A representation of one or more content data streams in a PDF page.
+- [CGPDFDictionary](./cgpdfdictionary.md)
+  A dictionary structure within a PDF document.
 
 
 ---

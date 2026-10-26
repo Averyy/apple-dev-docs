@@ -21,8 +21,8 @@ protocol FxVersioningAPI
 
 ## Mentions
 
-- [Versioning and obsoleting old plug-ins](https://developer.apple.com/documentation/professional-video-applications/versioning-and-obsoleting-old-plug-ins)
-- [Adding parameters to plug-ins](https://developer.apple.com/documentation/professional-video-applications/adding-parameters-to-plug-ins)
+- [Versioning and obsoleting old plug-ins](../Professional-Video-Applications/versioning-and-obsoleting-old-plug-ins.md)
+- [Adding parameters to plug-ins](../Professional-Video-Applications/adding-parameters-to-plug-ins.md)
 
 #### Overview
 
@@ -41,9 +41,9 @@ This protocol was first introduced in FxPlug SDK 1.2.1.
 ## See Also
 
 ### Legacy plug-ins
-- [Migrating FxPlug 3 plug-ins to FxPlug 4](https://developer.apple.com/documentation/professional-video-applications/migrating-fxplug-3-plug-ins-to-fxplug-4)
+- [Migrating FxPlug 3 plug-ins to FxPlug 4](../Professional-Video-Applications/migrating-fxplug-3-plug-ins-to-fxplug-4.md)
   Update existing FxPlug 3 plug-ins to out-of-process FxPlug 4 plug-ins.
-- [Versioning and obsoleting old plug-ins](https://developer.apple.com/documentation/professional-video-applications/versioning-and-obsoleting-old-plug-ins)
+- [Versioning and obsoleting old plug-ins](../Professional-Video-Applications/versioning-and-obsoleting-old-plug-ins.md)
   Version plug-ins to add new capabilities, or obsolete them to remove them from the Motion Library.
 
 

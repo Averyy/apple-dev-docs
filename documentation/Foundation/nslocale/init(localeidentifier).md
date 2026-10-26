@@ -45,6 +45,8 @@ This method is the designated initializer for this class.
 ### Initializing a Locale
 - [init?(coder: NSCoder)](./init%28coder%29.md)
   Returns a locale initialized from data in the given unarchiver.
+- [+ localeWithLocaleIdentifier:](./localewithlocaleidentifier_.md)
+  Returns a locale initialized using the given locale identifier.
 
 
 ---

@@ -34,6 +34,7 @@ When a tile is filled in a tile map, the tile group rule defines how neighboring
 ### Creating a Tile Group Rule
 - [init(adjacency: SKTileAdjacencyMask, tileDefinitions: [SKTileDefinition])](./sktilegrouprule/init%28adjacency,tiledefinitions%29.md)
   Initializes a new tile group rule with adjacency rules and tile definitions.
+- [+ tileGroupRuleWithAdjacency:tileDefinitions:](./sktilegrouprule/tilegrouprulewithadjacency_tiledefinitions_.md)
 ### Accessing or Setting Tile Group Rule Properties
 - [var adjacency: SKTileAdjacencyMask](./sktilegrouprule/adjacency.md)
   The adjacency requirement for this rule.

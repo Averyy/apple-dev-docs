@@ -41,6 +41,10 @@ The [`EAAccessoryDidConnectNotification`](./eaaccessorydidconnectnotification.md
   A notification that is posted when an accessory is disconnected and no longer available for your application to use.
 - [let EAAccessorySelectedKey: String](./eaaccessoryselectedkey.md)
   A key that indicates the accessory object that the user selected.
+- [EAAccessoryDidConnectNotification](./eaaccessorydidconnectnotification.md)
+  A notification that the system sends when an accessory becomes connected and available for your application to use.
+- [EAAccessoryDidDisconnectNotification](./eaaccessorydiddisconnectnotification.md)
+  A notification that is posted when an accessory is disconnected and no longer available for your application to use.
 
 
 ---

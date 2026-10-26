@@ -42,6 +42,12 @@ A control that adopts this protocol has the ability to resize itself when space 
 - [NSSegmentedControl](./nssegmentedcontrol.md)
 - [NSStatusBarButton](./nsstatusbarbutton.md)
 
+## See Also
+
+### View Compression
+- [NSDictionaryOfVariableBindings](./nsdictionaryofvariablebindings.md)
+  Creates a dictionary wherein the keys are string representations of the corresponding values’ variable names.
+
 
 ---
 

@@ -25,10 +25,25 @@
       "file_path": "documentation/ExceptionHandling/exceptionhandling-functions.md",
       "hash": "ce46e1769eda380d9fadeac0b5e5e2824500ea43d9f850ea6dfac6c8ddb976ee"
     },
+    "https://developer.apple.com/documentation/exceptionhandling/exceptionhandling_export": {
+      "etag": "\"cf5-65d55f65f2e0c-df\"",
+      "file_path": "documentation/ExceptionHandling/exceptionhandling_export.md",
+      "hash": "bd798b7cb5d97409454f23d82b09a455d39956163b0d89e2a7c9a665821d6323"
+    },
+    "https://developer.apple.com/documentation/exceptionhandling/exceptionhandling_import": {
+      "etag": "\"cf5-65d55f65f2e0c-df\"",
+      "file_path": "documentation/ExceptionHandling/exceptionhandling_import.md",
+      "hash": "7649740732cc9f1077e8520caf5fd9c82636f2dade0157ba02f435e201a6dc63"
+    },
     "https://developer.apple.com/documentation/exceptionhandling/logging-and-handling-constants": {
       "etag": "\"754d-65902624a46ac-df\"",
       "file_path": "documentation/ExceptionHandling/logging-and-handling-constants.md",
       "hash": "6bd51478416dadf5711e271f31391173012fc72d775acddf7e92440dd8b806f3"
+    },
+    "https://developer.apple.com/documentation/exceptionhandling/mask-definitions": {
+      "etag": "\"33de-65902624a46ac-df\"",
+      "file_path": "documentation/ExceptionHandling/mask-definitions.md",
+      "hash": "0a0abb36054a8a8518b022ceaad2ef8531aaec6395889aa5cd6818dac7b973e7"
     },
     "https://developer.apple.com/documentation/exceptionhandling/nsexceptionhandler": {
       "etag": "\"8edf-65d55f65f2e0c-df\"",
@@ -105,6 +120,11 @@
       "file_path": "documentation/ExceptionHandling/nshandleuncaughtsystemexceptionmask.md",
       "hash": "a2a80b0ccdc0c50ef0e62b0df89e55574e0431fce084fc0f1acec5c56f78183f"
     },
+    "https://developer.apple.com/documentation/exceptionhandling/nshangoneveryexceptionmask": {
+      "etag": "\"1cfc-65d55f65f2e0c-df\"",
+      "file_path": "documentation/ExceptionHandling/nshangoneveryexceptionmask.md",
+      "hash": "be472d7dfdd6c279ead1be2bdcfa3d8d1df64e73e01840f2a4009a7d1768c8a2"
+    },
     "https://developer.apple.com/documentation/exceptionhandling/nshangonotherexceptionmask": {
       "etag": "\"2fa3-65d55f65f2e0c-df\"",
       "file_path": "documentation/ExceptionHandling/nshangonotherexceptionmask.md",
@@ -129,6 +149,11 @@
       "etag": "\"2f8c-65d55f65f2e0c-df\"",
       "file_path": "documentation/ExceptionHandling/nshangonuncaughtsystemexceptionmask.md",
       "hash": "e513389698dba8da6a60201cdd4f2c80da9ff52cbcc827386a8caa29d8e8d11b"
+    },
+    "https://developer.apple.com/documentation/exceptionhandling/nslogandhandleeveryexceptionmask": {
+      "etag": "\"1d4c-65d55f65f2e0c-df\"",
+      "file_path": "documentation/ExceptionHandling/nslogandhandleeveryexceptionmask.md",
+      "hash": "3e6056b295b949ce1d82e8f4660afebd81ac8260de1120b48ff0e96ce2d4af5a"
     },
     "https://developer.apple.com/documentation/exceptionhandling/nslogotherexceptionmask": {
       "etag": "\"50bb-65d55f65f2e0c-df\"",
@@ -200,10 +225,25 @@
       "file_path": "documentation/ExceptionHandling/exceptionhandling-functions.md",
       "hash": "ce46e1769eda380d9fadeac0b5e5e2824500ea43d9f850ea6dfac6c8ddb976ee"
     },
+    "https://developer.apple.com/tutorials/data/documentation/exceptionhandling/exceptionhandling_export.json": {
+      "etag": "\"cf5-65d55f65f2e0c-df\"",
+      "file_path": "documentation/ExceptionHandling/exceptionhandling_export.md",
+      "hash": "bd798b7cb5d97409454f23d82b09a455d39956163b0d89e2a7c9a665821d6323"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/exceptionhandling/exceptionhandling_import.json": {
+      "etag": "\"cf5-65d55f65f2e0c-df\"",
+      "file_path": "documentation/ExceptionHandling/exceptionhandling_import.md",
+      "hash": "7649740732cc9f1077e8520caf5fd9c82636f2dade0157ba02f435e201a6dc63"
+    },
     "https://developer.apple.com/tutorials/data/documentation/exceptionhandling/logging-and-handling-constants.json": {
       "etag": "\"754d-65902624a46ac-df\"",
       "file_path": "documentation/ExceptionHandling/logging-and-handling-constants.md",
       "hash": "6bd51478416dadf5711e271f31391173012fc72d775acddf7e92440dd8b806f3"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/exceptionhandling/mask-definitions.json": {
+      "etag": "\"33de-65902624a46ac-df\"",
+      "file_path": "documentation/ExceptionHandling/mask-definitions.md",
+      "hash": "0a0abb36054a8a8518b022ceaad2ef8531aaec6395889aa5cd6818dac7b973e7"
     },
     "https://developer.apple.com/tutorials/data/documentation/exceptionhandling/nsexceptionhandler.json": {
       "etag": "\"8edf-65d55f65f2e0c-df\"",
@@ -280,6 +320,11 @@
       "file_path": "documentation/ExceptionHandling/nshandleuncaughtsystemexceptionmask.md",
       "hash": "a2a80b0ccdc0c50ef0e62b0df89e55574e0431fce084fc0f1acec5c56f78183f"
     },
+    "https://developer.apple.com/tutorials/data/documentation/exceptionhandling/nshangoneveryexceptionmask.json": {
+      "etag": "\"1cfc-65d55f65f2e0c-df\"",
+      "file_path": "documentation/ExceptionHandling/nshangoneveryexceptionmask.md",
+      "hash": "be472d7dfdd6c279ead1be2bdcfa3d8d1df64e73e01840f2a4009a7d1768c8a2"
+    },
     "https://developer.apple.com/tutorials/data/documentation/exceptionhandling/nshangonotherexceptionmask.json": {
       "etag": "\"2fa3-65d55f65f2e0c-df\"",
       "file_path": "documentation/ExceptionHandling/nshangonotherexceptionmask.md",
@@ -304,6 +349,11 @@
       "etag": "\"2f8c-65d55f65f2e0c-df\"",
       "file_path": "documentation/ExceptionHandling/nshangonuncaughtsystemexceptionmask.md",
       "hash": "e513389698dba8da6a60201cdd4f2c80da9ff52cbcc827386a8caa29d8e8d11b"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/exceptionhandling/nslogandhandleeveryexceptionmask.json": {
+      "etag": "\"1d4c-65d55f65f2e0c-df\"",
+      "file_path": "documentation/ExceptionHandling/nslogandhandleeveryexceptionmask.md",
+      "hash": "3e6056b295b949ce1d82e8f4660afebd81ac8260de1120b48ff0e96ce2d4af5a"
     },
     "https://developer.apple.com/tutorials/data/documentation/exceptionhandling/nslogotherexceptionmask.json": {
       "etag": "\"50bb-65d55f65f2e0c-df\"",
@@ -353,8 +403,8 @@
   },
   "metadata": {
     "render": {
-      "version": 1
+      "version": 2
     },
-    "total_pages": 70
+    "total_pages": 80
   }
 }

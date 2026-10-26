@@ -101,11 +101,14 @@ Use PhotoKit to access image and video assets that the Photos app manages in iOS
 - [protocol PHBackgroundResourceUploadJobExtension](./phbackgroundresourceuploadjobextension.md)
   A protocol to interact with asset resource upload jobs during background processing.
 - [protocol PHPhotoLibraryPersistentChangesObserver](./phphotolibrarypersistentchangesobserver.md)
+### Enumerations
+- [PHAssetAdjustmentsState](./phasset/adjustmentsstate-swift.enum.md)
+- [PHAssetPlaybackVariation](./phasset/playbackvariation-swift.enum.md)
 
 ## See Also
 
 ### Frameworks
-- [PhotosUI](https://developer.apple.com/documentation/photosui)
+- [PhotosUI](../PhotosUI/PhotosUI.md)
   Present a person’s photo library using a picker interface, display Live Photos, or extend the Photos app with custom functionality.
 
 

@@ -5,6 +5,11 @@
 
 Defines the encoding type for window IDs.
 
+## Topics
+
+### Constants
+- [kCGWindowIDCFNumberType](./kcgwindowidcfnumbertype.md)
+
 ## See Also
 
 ### Constants

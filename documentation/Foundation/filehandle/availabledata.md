@@ -43,6 +43,10 @@ If the receiver is a file, this method returns the data obtained by reading the 
   Reads the available data synchronously up to the end of file or maximum number of bytes.
 - [func read(upToCount: Int) throws -> Data?](./read%28uptocount%29.md)
   Reads data synchronously up to the specified number of bytes.
+- [- readDataToEndOfFileAndReturnError:](../nsfilehandle/readdatatoendoffileandreturnerror_.md)
+  Reads the available data synchronously up to the end of file or maximum number of bytes.
+- [- readDataUpToLength:error:](../nsfilehandle/readdatauptolength_error_.md)
+  Reads data synchronously up to the specified number of bytes.
 
 
 ---

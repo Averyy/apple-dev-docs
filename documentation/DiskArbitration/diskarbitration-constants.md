@@ -44,6 +44,8 @@
 - [let kDADiskDescriptionDeviceTDMLockedKey: CFString](./kdadiskdescriptiondevicetdmlockedkey.md)
 - [let kDADiskDescriptionMediaEncryptedKey: CFString](./kdadiskdescriptionmediaencryptedkey.md)
 - [let kDADiskDescriptionMediaEncryptionDetailKey: CFString](./kdadiskdescriptionmediaencryptiondetailkey.md)
+### Macros
+- [err_local_diskarbitration](./err_local_diskarbitration.md)
 
 ## See Also
 
@@ -55,6 +57,7 @@
   Register for mount/unmount notifications, and block mount/unmount events.
 - [DiskArbitration Enumerations](./diskarbitration-enumerations.md)
 - [DiskArbitration Data Types](./diskarbitration-data-types.md)
+- [DiskArbitration Functions](./diskarbitration-functions.md)
 
 
 ---

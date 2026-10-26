@@ -36,6 +36,8 @@ kCFStreamEventErrorOccurred
   The stream can accept bytes for writing.
 - [static var endEncountered: CFStreamEventType](./endencountered.md)
   The end of the stream has been reached.
+- [kCFStreamEventNone](./kcfstreameventnone.md)
+  No event has occurred.
 
 
 ---

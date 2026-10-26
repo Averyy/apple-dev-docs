@@ -38,6 +38,11 @@ The line width and stroke color of the context’s graphics state are used to pa
   Options for rendering a path.
 - [func fillPath(using: CGPathFillRule)](./fillpath%28using%29.md)
   Paints the area within the current path, as determined by the specified fill rule.
+### Related Documentation
+- [CGContextFillPath](../cgcontextfillpath.md)
+  Paints the area within the current path, using the nonzero winding number rule.
+- [CGContextEOFillPath](../cgcontexteofillpath.md)
+  Paints the area within the current path, using the even-odd fill rule.
 
 
 ---

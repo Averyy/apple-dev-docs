@@ -39,6 +39,9 @@ class ASAuthorizationSingleSignOnCredential
   The complete response authentication, including technology-specific values.
 ### Initializers
 - [init?(coder: NSCoder)](./asauthorizationsinglesignoncredential/init%28coder%29.md)
+### Obtaining Keys
+- [privateKeys](./asauthorizationsinglesignoncredential/privatekeys.md)
+  An array of private keys.
 
 ## Relationships
 

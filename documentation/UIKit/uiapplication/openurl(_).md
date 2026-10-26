@@ -76,6 +76,8 @@ To check if there is an installed app that can handle a scheme, call the [`canOp
   Sets the app’s status bar to the specified orientation, optionally animating the transition.
 - [func registerUserNotificationSettings(UIUserNotificationSettings)](./registerusernotificationsettings%28_%29.md)
   Registers your preferred options for notifying the user.
+- [- setStatusBarHidden:animated:](./setstatusbarhidden_animated_.md)
+  Hides or shows the status bar, optionally animating the transition.
 
 
 ---

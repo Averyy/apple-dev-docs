@@ -42,6 +42,11 @@ The dictionary representation in the file identified by `path` must contain only
 ### Creating a Dictionary from an External Source
 - [convenience init(contentsOfURL: URL, error: ()) throws](./init%28contentsofurl,error%29.md)
   Initializes a newly allocated dictionary using the keys and values found at a given URL.
+- [+ dictionaryWithContentsOfURL:error:](./dictionarywithcontentsofurl_error_.md)
+  Creates a dictionary using the keys and values found in a resource specified by a given URL.
+### Related Documentation
+- [+ dictionaryWithContentsOfFile:](./dictionarywithcontentsoffile_.md)
+  Creates a dictionary using the keys and values found in a file specified by a given path.
 
 
 ---

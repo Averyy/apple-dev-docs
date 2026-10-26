@@ -70,6 +70,7 @@ For more information about Metal frame capture, see [Metal debugger](../Xcode/me
   A Boolean value that indicates whether Metal commands are being captured.
 ### Instance Methods
 - [func makeCaptureScope(commandQueue: any MTL4CommandQueue) -> any MTLCaptureScope](./mtlcapturemanager/makecapturescope%28commandqueue%29-9wie3.md)
+- [- init](./mtlcapturemanager/init.md)
 
 ## Relationships
 

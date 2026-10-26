@@ -47,6 +47,10 @@ If you previously registered a class or nib file with the same reuse identifier,
   Registers a class for use in creating new collection view cells.
 - [func dequeueReusableCell(withReuseIdentifier: String, for: IndexPath) -> UICollectionViewCell](./dequeuereusablecell%28withreuseidentifier,for%29.md)
   Dequeues a reusable cell object located by its identifier.
+- [UICollectionViewCellRegistration](../uicollectionviewcellregistration.md)
+  A registration for the collection view’s cells.
+- [- dequeueConfiguredReusableCellWithRegistration:forIndexPath:item:](./dequeueconfiguredreusablecellwithregistration_forindexpath_item_.md)
+  Dequeues a configured reusable cell object.
 
 
 ---

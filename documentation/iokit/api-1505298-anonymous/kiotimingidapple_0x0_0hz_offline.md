@@ -1,0 +1,20 @@
+# kIOTimingIDApple_0x0_0hz_Offline
+
+**Framework**: IOKit  
+**Kind**: econst  
+**Role**: Enumeration Case
+
+**Availability**:
+- Mac Catalyst 13.0+
+- macOS 10.3+
+
+## Declaration
+
+```c
+kIOTimingIDApple_0x0_0hz_Offline = 550
+```
+
+
+---
+
+*[View on Apple Developer](https://developer.apple.com/documentation/iokit/1505298-anonymous/kiotimingidapple_0x0_0hz_offline)*

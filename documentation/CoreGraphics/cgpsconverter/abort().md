@@ -29,6 +29,9 @@ A Boolean value that indicates whether the converter is currently converting dat
 ### Instance Methods
 - [func convert(CGDataProvider, consumer: CGDataConsumer, options: CFDictionary?) -> Bool](./convert%28_,consumer,options%29.md)
   Uses a PostScript converter to convert PostScript data to PDF data.
+### Miscellaneous Functions
+- [CGPSConverterIsConverting](./isconverting.md)
+  Checks whether the converter is currently converting data.
 
 
 ---

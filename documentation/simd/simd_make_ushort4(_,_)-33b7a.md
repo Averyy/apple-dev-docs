@@ -35,6 +35,8 @@ static simd_ushort4 simd_make_ushort4(simd_ushort2 xy, simd_ushort2 zw);
   Returns a new vector from the specified two-element vector, and other elements undefined.
 - [func simd_make_ushort4_undef(simd_ushort3) -> simd_ushort4](./simd_make_ushort4_undef%28_%29-22y87.md)
   Returns a new vector from the specified three-element vector, and other elements undefined.
+- [vector4](./vector4-stby.md)
+  Returns a new vector from the specified vectors.
 
 
 ---

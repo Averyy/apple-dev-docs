@@ -39,6 +39,9 @@ The initialized image accumulator object.
 ### Initializing an Image Accumulator
 - [init?(extent: CGRect, format: CIFormat)](./init%28extent,format%29.md)
   Initializes an image accumulator with the specified extent and pixel format.
+### Related Documentation
+- [+ imageAccumulatorWithExtent:format:](./imageaccumulatorwithextent_format_.md)
+  Creates an image accumulator with the specified extent and pixel format.
 
 
 ---

@@ -65,6 +65,8 @@ All three fields must be captured atomically by the conformer.
   Represents a contiguous segment of timeline content with specific playback characteristics.
 - [enum AVPlaybackUserInterfaceTimelineSegmentType](./avplaybackuserinterfacetimelinesegmenttype.md)
   Describes the type of content within a timeline segment.
+- [AVPlaybackUserInterfaceTimeControllable](./avplaybackuserinterfacetimecontrollable-62fq2.md)
+  Provides time control and navigation capabilities for media content.
 
 
 ---

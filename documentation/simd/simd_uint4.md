@@ -35,6 +35,8 @@ typedef unsigned int __attribute__((ext_vector_type(4))) simd_uint4;
   Returns a new vector from the specified two-element vector, and other elements undefined.
 - [func simd_make_uint4_undef(simd_uint3) -> simd_uint4](./simd_make_uint4_undef%28_%29-4lr3n.md)
   Returns a new vector from the specified two-element vector, and other elements undefined.
+- [vector4](./vector4-1wxcx.md)
+  Returns a new vector from the specified vectors.
 ### Functions to Create Four-Element Vectors From Scalar Values
 - [func simd_make_uint4(UInt32) -> simd_uint4](./simd_make_uint4%28_%29-1vdsn.md)
   Returns a new vector with the first element set to a scalar value, and other elements set to zero.
@@ -42,6 +44,8 @@ typedef unsigned int __attribute__((ext_vector_type(4))) simd_uint4;
   Returns a new vector from the specified scalar values.
 - [func simd_make_uint4_undef(UInt32) -> simd_uint4](./simd_make_uint4_undef%28_%29-5wuto.md)
   Returns a new vector with the first element set to a scalar value, and other elements undefined.
+- [vector4](./vector4-2s268.md)
+  Returns a new vector from the specified scalar values.
 ### Functions to Create Four-Element Vectors From Combinations of Vectors and Scalar Values
 - [func simd_make_uint4(simd_uint2, UInt32, UInt32) -> simd_uint4](./simd_make_uint4%28_,_,_%29-5ftg3.md)
   Returns a new vector from a vector and scalar values.
@@ -53,6 +57,8 @@ typedef unsigned int __attribute__((ext_vector_type(4))) simd_uint4;
   Returns a new vector from a scalar value, a vector, and a scalar value.
 - [func simd_make_uint4(UInt32, simd_uint3) -> simd_uint4](./simd_make_uint4%28_,_%29-4kh9u.md)
   Returns a new vector from a scalar value and a vector.
+- [vector4](./vector4-91xr7.md)
+  Returns a new vector from a vector and a scalar value.
 ### Common Functions
 - [func simd_clamp(simd_uint4, simd_uint4, simd_uint4) -> simd_uint4](./simd_clamp%28_,_,_%29-1y56u.md)
   Returns each element in a vector clamped to a specified range.
@@ -98,6 +104,48 @@ typedef unsigned int __attribute__((ext_vector_type(4))) simd_uint4;
 ### Alternative Type Alias
 - [typealias uint4](./uint4.md)
 - [typealias vector_uint4](./vector_uint4.md)
+### Functions to Create Four-Element Vectors From Vectors of Other Types
+- [simd_uint](./simd_uint-77qjk.md)
+  Returns a new vector from the specified vector of 8-bit, signed integer elements.
+- [simd_uint](./simd_uint-77gtc.md)
+  Returns a new vector from the specified vector of 8-bit, unsigned integer elements.
+- [simd_uint](./simd_uint-77lq8.md)
+  Returns a new vector from the specified vector of 16-bit, signed integer elements.
+- [simd_uint](./simd_uint-77br4.md)
+  Returns a new vector from the specified vector of 16-bit, unsigned integer elements.
+- [simd_uint](./simd_uint-77tvc.md)
+  Returns a new vector from the specified vector of 32-bit, signed integer elements.
+- [simd_uint](./simd_uint-77jy0.md)
+  Returns a new vector from the specified vector of 32-bit, unsigned integer elements.
+- [simd_uint](./simd_uint-77s4c.md)
+  Returns a new vector from the specified vector of 64-bit, signed integer elements.
+- [simd_uint](./simd_uint-77icc.md)
+  Returns a new vector from the specified vector of 64-bit, unsigned integer elements.
+- [simd_uint](./simd_uint-77f84.md)
+  Returns a new vector from the specified vector of 32-bit, floating-point elements.
+- [simd_uint](./simd_uint-77fp8.md)
+  Returns a new vector from the specified vector of 64-bit, floating-point elements.
+### Functions to Perform Saturating Conversion From Vectors of Other Types
+- [simd_uint_sat](./simd_uint_sat-716a.md)
+  Returns a new vector from the specified vector of 8-bit, signed integer elements.
+- [simd_uint_sat](./simd_uint_sat-7b76.md)
+  Returns a new vector from the specified vector of 8-bit, unsigned integer elements.
+- [simd_uint_sat](./simd_uint_sat-7642.md)
+  Returns a new vector from the specified vector of 16-bit, signed integer elements.
+- [simd_uint_sat](./simd_uint_sat-7g8i.md)
+  Returns a new vector from the specified vector of 16-bit, unsigned integer elements.
+- [simd_uint_sat](./simd_uint_sat-747a.md)
+  Returns a new vector from the specified vector of 32-bit, signed integer elements.
+- [simd_uint_sat](./simd_uint_sat-7e6e.md)
+  Returns a new vector from the specified vector of 32-bit, unsigned integer elements.
+- [simd_uint_sat](./simd_uint_sat-75su.md)
+  Returns a new vector from the specified vector of 64-bit, signed integer elements.
+- [simd_uint_sat](./simd_uint_sat-7foe.md)
+  Returns a new vector from the specified vector of 64-bit, unsigned integer elements.
+- [simd_uint_sat](./simd_uint_sat-7cmi.md)
+  Returns a new vector from the specified vector of 32-bit, floating-point elements.
+- [simd_uint_sat](./simd_uint_sat-7ddq.md)
+  Returns a new vector from the specified vector of 64-bit, floating-point elements.
 
 ## See Also
 

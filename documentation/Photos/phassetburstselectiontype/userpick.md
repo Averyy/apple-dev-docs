@@ -29,6 +29,8 @@ PHAssetBurstSelectionTypeUserPick
 ### Constants
 - [static var autoPick: PHAssetBurstSelectionType](./autopick.md)
   Photos has automatically identified the asset as a potential user favorite.
+- [PHAssetBurstSelectionTypeNone](./phassetburstselectiontypenone.md)
+  The asset is not marked as a favorite member of its burst sequence or is not a member of a burst sequence.
 
 
 ---

@@ -74,6 +74,12 @@ Use pasteboard items during a single pasteboard interaction, rather than retaini
 - [func detectedMetadata(for: Set<PartialKeyPath<NSPasteboardItem.DetectedMetadata>>) async throws -> NSPasteboardItem.DetectedMetadata](./nspasteboarditem/detectedmetadata%28for%29.md)
   Determines available metadata from the specified metadata types for this pasteboard item, without notifying the person using the app.
 - [NSPasteboardItem.DetectedMetadata](./nspasteboarditem/detectedmetadata.md)
+- [- detectPatternsForPatterns:completionHandler:](./nspasteboarditem/detectpatternsforpatterns_completionhandler_.md)
+  Determines whether this pasteboard item matches the specified patterns, without notifying the person using the app.
+- [- detectValuesForPatterns:completionHandler:](./nspasteboarditem/detectvaluesforpatterns_completionhandler_.md)
+  Determines whether this pasteboard item matches the specified patterns, reading the contents if it finds a match.
+- [- detectMetadataForTypes:completionHandler:](./nspasteboarditem/detectmetadatafortypes_completionhandler_.md)
+  Determines available metadata from the specified metadata types for this pasteboard item, without notifying the person using the app.
 ### Initializers
 - [init?(pasteboardPropertyList: Any, ofType: NSPasteboard.PasteboardType)](./nspasteboarditem/init%28pasteboardpropertylist,oftype%29.md)
 ### Instance Properties

@@ -23,6 +23,8 @@ static simd_uint4 simd_make_uint4(unsigned int x, unsigned int y, unsigned int z
   Returns a new vector with the first element set to a scalar value, and other elements set to zero.
 - [func simd_make_uint4_undef(UInt32) -> simd_uint4](./simd_make_uint4_undef%28_%29-5wuto.md)
   Returns a new vector with the first element set to a scalar value, and other elements undefined.
+- [vector4](./vector4-2s268.md)
+  Returns a new vector from the specified scalar values.
 
 
 ---

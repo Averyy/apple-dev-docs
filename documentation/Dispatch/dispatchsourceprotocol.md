@@ -67,6 +67,7 @@ You do not adopt this protocol in your objects. Instead, use the [`makeSignalSou
 
 ### Inherits From
 - [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [OS_dispatch_object](./os_dispatch_object.md)
 ### Inherited By
 - [DispatchSourceFileSystemObject](./dispatchsourcefilesystemobject.md)
 - [DispatchSourceMachReceive](./dispatchsourcemachreceive.md)

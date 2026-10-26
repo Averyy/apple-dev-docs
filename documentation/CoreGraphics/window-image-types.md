@@ -15,6 +15,7 @@ Specifies the options for capturing an image of a window.
   When capturing the window, return the best image resolution. The returned image size may be different than the screen size.
 - [static var nominalResolution: CGWindowImageOption](./cgwindowimageoption/nominalresolution.md)
   When capturing the window, return the nominal image resolution. The returned image size is the same as the screen size.
+- [kCGWindowImageDefault](./cgwindowimageoption/kcgwindowimagedefault.md)
 
 ## See Also
 

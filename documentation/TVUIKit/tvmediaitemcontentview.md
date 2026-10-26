@@ -45,9 +45,16 @@ override func updateConfiguration(using state: UICellConfigurationState) {
   Creates a media item content view with the configuration you specify.
 - [struct TVMediaItemContentConfiguration](./tvmediaitemcontentconfiguration-swift.struct.md)
   A content configuration for a media item view.
+- [- initWithConfiguration:](./tvmediaitemcontentview/initwithconfiguration_.md)
+  Creates a media item content view with the configuration you specify.
+- [TVMediaItemContentConfiguration](./tvmediaitemcontentconfiguration-c.class.md)
+  A content configuration for a media item view.
 ### Managing the Content Layout
 - [var focusedFrameGuide: UILayoutGuide](./tvmediaitemcontentview/focusedframeguide.md)
   A guide for positioning other elements with the content view image’s focused frame.
+### Managing the Content Configuration
+- [configuration](./tvmediaitemcontentview/configuration.md)
+  The current configuration of the view.
 
 ## Relationships
 
@@ -82,6 +89,7 @@ override func updateConfiguration(using state: UICellConfigurationState) {
 - [UITraitChangeObservable](../UIKit/uitraitchangeobservable-67e94.md)
 - [UITraitEnvironment](../UIKit/uitraitenvironment.md)
 - [UIUserActivityRestoring](../UIKit/uiuseractivityrestoring.md)
+- [UIContentView](../UIKit/uicontentview-3zu2k.md)
 
 ## See Also
 

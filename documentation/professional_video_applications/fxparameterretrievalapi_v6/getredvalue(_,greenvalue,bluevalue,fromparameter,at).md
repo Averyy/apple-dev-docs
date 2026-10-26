@@ -28,7 +28,7 @@ Returns `YES` if the values are retrieved successfully; otherwise `NO`.
 
 The returned color values are in the project working color space, unless the parameter has the [`kFxParameterFlag_DONT_REMAP_COLORS`](../kfxparameterflag_dont_remap_colors.md) flag set. If this flag is set, the color values are copied verbatim from the parameter with no conversion.
 
-Depending on the host application, the time value may be relative to the start of the timeline or to the start of the clip. See [Understanding time in FxPlug](https://developer.apple.com/documentation/professional-video-applications/understanding-time-in-fxplug).
+Depending on the host application, the time value may be relative to the start of the timeline or to the start of the clip. See [Understanding time in FxPlug](../../Professional-Video-Applications/understanding-time-in-fxplug.md).
 
 ## Parameters
 

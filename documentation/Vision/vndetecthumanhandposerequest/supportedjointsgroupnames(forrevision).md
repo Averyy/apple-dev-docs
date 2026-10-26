@@ -41,6 +41,10 @@ The array of joint group name objects for the revision.
   Retrieves the supported joint names for a revision.
 - [var supportedJointsGroupNames: [VNHumanHandPoseObservation.JointsGroupName]](./supportedjointsgroupnames.md)
   Retrieves the supported joint group names.
+- [- supportedJointNamesAndReturnError:](./supportedjointnamesandreturnerror_.md)
+  Retrieves the supported joint names.
+- [- supportedJointsGroupNamesAndReturnError:](./supportedjointsgroupnamesandreturnerror_.md)
+  Retrieves the supported joint group names.
 
 
 ---

@@ -35,6 +35,12 @@ init?(payload errorCorrectedPayload: Data, isCompact: Bool, layerCount: Int, dat
 - `layerCount`: The number of layers in the Aztec code, from 1 to 32.
 - `dataCodewordCount`: The number of codewords in the Aztec code, from 1 to 2048.
 
+## See Also
+
+### Creating a Descriptor
+- [+ descriptorWithPayload:isCompact:layerCount:dataCodewordCount:](./descriptorwithpayload_iscompact_layercount_datacodewordcount_.md)
+  Creates an Aztec code descriptor for the given payload and parameters.
+
 
 ---
 

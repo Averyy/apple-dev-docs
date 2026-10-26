@@ -62,6 +62,14 @@ A constrained interface is one the user marks as constrained by selecting “Low
   The manner in which a resource is fetched.
 - [var domainResolutionProtocol: URLSessionTaskMetrics.DomainResolutionProtocol](./domainresolutionprotocol.md)
   DNS protocol used for domain resolution.
+- [remotePort](../nsurlsessiontasktransactionmetrics/remoteport.md)
+  The port number of the remote interface for the connection.
+- [localPort](../nsurlsessiontasktransactionmetrics/localport.md)
+  The port number of the local interface for the connection.
+- [negotiatedTLSCipherSuite](../nsurlsessiontasktransactionmetrics/negotiatedtlsciphersuite.md)
+  The TLS cipher suite the task negotiated with the endpoint for the connection.
+- [negotiatedTLSProtocolVersion](../nsurlsessiontasktransactionmetrics/negotiatedtlsprotocolversion.md)
+  The TLS protocol version the task negotiated with the endpoint for the connection.
 
 
 ---

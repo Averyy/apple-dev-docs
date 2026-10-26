@@ -569,6 +569,11 @@
       "file_path": "documentation/ReplayKit/rpscreenrecorder/exportclip(to,duration,completionhandler).md",
       "hash": "79de9b75af34955825d701ad42fdf2de5367a91edd1b6f4c0f9256eb736ca2c6"
     },
+    "https://developer.apple.com/documentation/replaykit/rpscreenrecorder/init": {
+      "etag": "\"eb5-659029a2b7c5f-df\"",
+      "file_path": "documentation/ReplayKit/rpscreenrecorder/init.md",
+      "hash": "d47e59c228f06ab07cdec667c89518e8ed72d7e6d7cf9fdfc181f4819d03cabb"
+    },
     "https://developer.apple.com/documentation/replaykit/rpscreenrecorder/isavailable": {
       "etag": "\"4f83-65d5609c71a50-df\"",
       "file_path": "documentation/ReplayKit/rpscreenrecorder/isavailable.md",
@@ -1248,6 +1253,11 @@
       "file_path": "documentation/ReplayKit/rpscreenrecorder/exportclip(to,duration,completionhandler).md",
       "hash": "79de9b75af34955825d701ad42fdf2de5367a91edd1b6f4c0f9256eb736ca2c6"
     },
+    "https://developer.apple.com/tutorials/data/documentation/replaykit/rpscreenrecorder/init.json": {
+      "etag": "\"eb5-659029a2b7c5f-df\"",
+      "file_path": "documentation/ReplayKit/rpscreenrecorder/init.md",
+      "hash": "d47e59c228f06ab07cdec667c89518e8ed72d7e6d7cf9fdfc181f4819d03cabb"
+    },
     "https://developer.apple.com/tutorials/data/documentation/replaykit/rpscreenrecorder/isavailable.json": {
       "etag": "\"4f83-65d5609c71a50-df\"",
       "file_path": "documentation/ReplayKit/rpscreenrecorder/isavailable.md",
@@ -1361,8 +1371,8 @@
   },
   "metadata": {
     "render": {
-      "version": 1
+      "version": 2
     },
-    "total_pages": 272
+    "total_pages": 274
   }
 }

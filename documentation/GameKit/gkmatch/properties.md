@@ -41,6 +41,8 @@ For more information, see [Matchmaking rules](../matchmaking-rules.md).
 ### Getting matchmaking properties
 - [var playerProperties: [GKPlayer : [String : Any]]?](./playerproperties.md)
   The properties for other players that matchmaking rules uses to find players, with some additions.
+- [GKMatchProperties](../gkmatchproperties.md)
+  A type for game-specific properties that Game Center uses to find players when using matchmaking rules.
 
 
 ---

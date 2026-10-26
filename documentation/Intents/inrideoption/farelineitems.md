@@ -46,6 +46,8 @@ When the cost of a ride has multiple components, use [`INRideFareLineItem`](../i
   A template image for Maps to display when special prices apply.
 - [var usesMeteredFare: Bool?](./usesmeteredfare-1sig1.md)
   A Boolean value indicating whether the price uses a metered fare instead of a fixed price.
+- [usesMeteredFare](./usesmeteredfare-25g1c.md)
+  A Boolean value indicating whether the price uses a metered fare instead of a fixed price.
 
 
 ---

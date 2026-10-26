@@ -30,6 +30,8 @@ NSPropertyListMutableContainersAndLeaves
 ### Constants
 - [static var mutableContainers: PropertyListSerialization.MutabilityOptions](./mutablecontainers.md)
   Causes the returned property list to have mutable containers but immutable leaves.
+- [NSPropertyListImmutable](../../nspropertylistmutabilityoptions/nspropertylistimmutable.md)
+  Causes the returned property list to contain immutable objects.
 
 
 ---

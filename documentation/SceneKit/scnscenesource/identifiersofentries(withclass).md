@@ -63,6 +63,9 @@ NSArray *animations = [sceneSource identifiersOfEntriesWithClass:[CAAnimation cl
   Loads and returns a specific object in the scene source.
 - [func entries(passingTest: (Any, String, UnsafeMutablePointer<ObjCBool>) -> Bool) -> [Any]](./entries%28passingtest%29.md)
   Loads and returns all objects in the scene source that pass the test in a given block.
+### Related Documentation
+- [- entryWithIdentifier:withClass:](./entrywithidentifier_withclass_.md)
+  Loads and returns a specific object in the scene source.
 
 
 ---

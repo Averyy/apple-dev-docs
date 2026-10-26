@@ -97,6 +97,8 @@
 ### Reference
 - [IOSurface Structures](./iosurface-structures.md)
 - [IOSurface Constants](./iosurface-constants.md)
+- [IOSurface Enumerations](./iosurface-enumerations.md)
+- [IOSurface Data Types](./iosurface-data-types.md)
 
 
 ---

@@ -47,6 +47,7 @@ extern void *CFAllocatorReallocateTyped(CFAllocatorRef allocator, void *ptr, CFI
   Copies the owner UUID associated with a `CFFileSecurityRef` object.
 - [func CFFileSecurityCreate(CFAllocator!) -> CFFileSecurity!](./cffilesecuritycreate%28_%29.md)
   Creates a `CFFileSecurityRef` object.
+- [CFAutorelease](./cfautorelease.md)
 
 
 ---

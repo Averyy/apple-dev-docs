@@ -50,6 +50,11 @@ The value associated with `aKey`, or `nil` if no value is associated with `aKey`
   Returns the value associated with a given key.
 - [subscript(Any) -> Any?](./subscript%28_%29-1bt1b.md)
   Accesses the value associated with a given key.
+- [- getObjects:andKeys:count:](./getobjects_andkeys_count_.md)
+  Returns by reference C arrays of the keys and values in the dictionary.
+### Related Documentation
+- [- getObjects:andKeys:](./getobjects_andkeys_.md)
+  Returns by reference C arrays of the keys and values in the dictionary.
 
 
 ---

@@ -10,6 +10,8 @@ Check whether a function call throws, or doesn’t throw, an error.
 ### Tests for Errors
 - [func XCTAssertThrowsError<T>(@autoclosure () throws -> T, @autoclosure () -> String, file: StaticString, line: UInt, (any Error) -> Void)](./xctassertthrowserror%28_,_,file,line,_%29.md)
   Asserts that an expression throws an error.
+- [XCTAssertNoThrow](./xctassertnothrow.md)
+  Asserts that an expression doesn’t throw an `NSException`.
 
 ## See Also
 

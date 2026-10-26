@@ -33,8 +33,13 @@ To listen for the convergence status, implement [`session(_:didUpdateAlgorithmCo
 ### Determining convergence state
 - [var status: NIAlgorithmConvergenceStatus](./nialgorithmconvergence/status-654t.md)
   The current state of the framework’s Camera Assistance feature.
+- [status](./nialgorithmconvergence/status-j61c.md)
+  The current state of the framework’s Camera Assistance feature.
 ### Initializers
 - [init?(coder: NSCoder)](./nialgorithmconvergence/init%28coder%29.md)
+### Coaching the user based on convergence state
+- [reasons](./nialgorithmconvergence/reasons.md)
+  An array of reasons that contribute to the convergence status.
 
 ## Relationships
 

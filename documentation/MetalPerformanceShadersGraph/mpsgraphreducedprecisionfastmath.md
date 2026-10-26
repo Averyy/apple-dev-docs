@@ -37,6 +37,9 @@ enum MPSGraphReducedPrecisionFastMath : NSUInteger;
   Curated list allowing intermediates for multi-pass GPU kernels to be FP16.
 - [static var none: MPSGraphReducedPrecisionFastMath](./mpsgraphreducedprecisionfastmath/none.md)
   Full precision math with maximum accuracy.
+### Enumeration Cases
+- [MPSGraphReducedPrecisionFastMathDefault](./mpsgraphreducedprecisionfastmath/mpsgraphreducedprecisionfastmathdefault.md)
+  Default selection.
 
 ## Relationships
 

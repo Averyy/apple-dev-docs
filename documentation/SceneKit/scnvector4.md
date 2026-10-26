@@ -53,6 +53,8 @@ SceneKit uses four-component vectors to represent multiple kinds of data:
   Returns a four-element SceneKit vector structure corresponding to a GLKit vector structure.
 - [func SCNVector4ToGLKVector4(SCNVector4) -> GLKVector4](./scnvector4toglkvector4%28_%29.md)
   Returns a four-element GLKit vector structure corresponding to a SceneKit vector structure.
+- [SCNVector4FromFloat4](./scnvector4fromfloat4.md)
+- [SCNVector4ToFloat4](./scnvector4tofloat4.md)
 ### Comparing Vectors
 - [func SCNVector4EqualToVector4(SCNVector4, SCNVector4) -> Bool](./scnvector4equaltovector4%28_,_%29.md)
   Returns a Boolean value that indicates whether the corresponding components of two vectors are equal.

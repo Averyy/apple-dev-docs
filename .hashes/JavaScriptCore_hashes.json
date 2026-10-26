@@ -15,6 +15,11 @@
       "file_path": "documentation/JavaScriptCore/javascriptcore-constants.md",
       "hash": "8efb8f37daa4e6810a9f56791105e23c719bc91abeaf343546de445447903d0e"
     },
+    "https://developer.apple.com/documentation/javascriptcore/js_export": {
+      "etag": "\"c53-65d55dff751d9-df\"",
+      "file_path": "documentation/JavaScriptCore/js_export.md",
+      "hash": "e3b73109238390ae168f56e409cbbd1ba6bba818e5273f66786916f37cc0f709"
+    },
     "https://developer.apple.com/documentation/javascriptcore/jsbigintcreatewithdouble(_:_:_:)": {
       "etag": "\"3597-65d55dffb4d28-df\"",
       "file_path": "documentation/JavaScriptCore/jsbigintcreatewithdouble(_,_,_).md",
@@ -34,6 +39,36 @@
       "etag": "\"35a3-65d55dffd49a2-df\"",
       "file_path": "documentation/JavaScriptCore/jsbigintcreatewithuint64(_,_,_).md",
       "hash": "6e7e85aa2dd945ab18ec4e9204ee50dfa70ec666bc3baad76bb507b744e3588a"
+    },
+    "https://developer.apple.com/documentation/javascriptcore/jsc_assume_nonnull_begin": {
+      "etag": "\"afb-65d55dffb4d28-df\"",
+      "file_path": "documentation/JavaScriptCore/jsc_assume_nonnull_begin.md",
+      "hash": "4e76f5a76b6e183fa2d674535c1a8ee26958f3cc41a2d032ccd21f8a1d5f56f5"
+    },
+    "https://developer.apple.com/documentation/javascriptcore/jsc_assume_nonnull_end": {
+      "etag": "\"ae3-65d55dff940c0-df\"",
+      "file_path": "documentation/JavaScriptCore/jsc_assume_nonnull_end.md",
+      "hash": "b37befcf399e96078d2ba903070d2b4d10c7576ced419fde9eb5ddf82d9b8cdd"
+    },
+    "https://developer.apple.com/documentation/javascriptcore/jsc_cf_enum": {
+      "etag": "\"ac5-65d55dff751d9-df\"",
+      "file_path": "documentation/JavaScriptCore/jsc_cf_enum.md",
+      "hash": "716356920a0d125a5af80e9655eaa9cf0445a6e47623add9e514281eaa7f8000"
+    },
+    "https://developer.apple.com/documentation/javascriptcore/jsc_nonnull": {
+      "etag": "\"a5f-65d55dffd49a2-df\"",
+      "file_path": "documentation/JavaScriptCore/jsc_nonnull.md",
+      "hash": "f614874661505056265e00d5acf4a543d3e9ae44df8d87383371fb93c3b8a098"
+    },
+    "https://developer.apple.com/documentation/javascriptcore/jsc_null_unspecified": {
+      "etag": "\"acb-65d55dff751d9-df\"",
+      "file_path": "documentation/JavaScriptCore/jsc_null_unspecified.md",
+      "hash": "d9e363762fdbfadf573757b8b6766d6b9d471cbd9c90454cf8f74f0e7ad27a92"
+    },
+    "https://developer.apple.com/documentation/javascriptcore/jsc_nullable": {
+      "etag": "\"a6b-65d55dffeeba0-df\"",
+      "file_path": "documentation/JavaScriptCore/jsc_nullable.md",
+      "hash": "e1511bd064d11d4482bc769e7812cbf03a5fc7869f5fb54da03ee35b1d0ea561"
     },
     "https://developer.apple.com/documentation/javascriptcore/jsc_objc_api_enabled": {
       "etag": "\"16ea-65d55dffeeba0-df\"",
@@ -335,6 +370,11 @@
       "file_path": "documentation/JavaScriptCore/jsexport.md",
       "hash": "7e4fc49c26698e7033bb225bfac61feaf30320923be02fc1f2bc3a3b026d7b33"
     },
+    "https://developer.apple.com/documentation/javascriptcore/jsexportas": {
+      "etag": "\"d05-65d55dff940c0-df\"",
+      "file_path": "documentation/JavaScriptCore/jsexportas.md",
+      "hash": "f7a3b6b955f899887cc1c0277ad2ac2a18e4d4fae7f6b0e78a9742a00775ddab"
+    },
     "https://developer.apple.com/documentation/javascriptcore/jsgarbagecollect(_:)": {
       "etag": "\"35ed-65d55dff940c0-df\"",
       "file_path": "documentation/JavaScriptCore/jsgarbagecollect(_).md",
@@ -399,6 +439,11 @@
       "etag": "\"3955-65d55dffd49a2-df\"",
       "file_path": "documentation/JavaScriptCore/jsmanagedvalue/init(value,andowner).md",
       "hash": "3212e08d27cba6c355c442a972711422d24dc0d8721dbecee28f028c00e04176"
+    },
+    "https://developer.apple.com/documentation/javascriptcore/jsmanagedvalue/managedvaluewithvalue:": {
+      "etag": "\"2c11-65d55dffd49a2-df\"",
+      "file_path": "documentation/JavaScriptCore/jsmanagedvalue/managedvaluewithvalue_.md",
+      "hash": "80086fd7c57c9d66ee91763ba1f2ea155bae8e405c249d6f32b7fab8713a67f1"
     },
     "https://developer.apple.com/documentation/javascriptcore/jsmanagedvalue/value": {
       "etag": "\"20e5-65d55dffd49a2-df\"",
@@ -1825,6 +1870,11 @@
       "file_path": "documentation/JavaScriptCore/javascriptcore-constants.md",
       "hash": "8efb8f37daa4e6810a9f56791105e23c719bc91abeaf343546de445447903d0e"
     },
+    "https://developer.apple.com/tutorials/data/documentation/javascriptcore/js_export.json": {
+      "etag": "\"c53-65d55dff751d9-df\"",
+      "file_path": "documentation/JavaScriptCore/js_export.md",
+      "hash": "e3b73109238390ae168f56e409cbbd1ba6bba818e5273f66786916f37cc0f709"
+    },
     "https://developer.apple.com/tutorials/data/documentation/javascriptcore/jsbigintcreatewithdouble(_:_:_:).json": {
       "etag": "\"3597-65d55dffb4d28-df\"",
       "file_path": "documentation/JavaScriptCore/jsbigintcreatewithdouble(_,_,_).md",
@@ -1844,6 +1894,36 @@
       "etag": "\"35a3-65d55dffd49a2-df\"",
       "file_path": "documentation/JavaScriptCore/jsbigintcreatewithuint64(_,_,_).md",
       "hash": "6e7e85aa2dd945ab18ec4e9204ee50dfa70ec666bc3baad76bb507b744e3588a"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/javascriptcore/jsc_assume_nonnull_begin.json": {
+      "etag": "\"afb-65d55dffb4d28-df\"",
+      "file_path": "documentation/JavaScriptCore/jsc_assume_nonnull_begin.md",
+      "hash": "4e76f5a76b6e183fa2d674535c1a8ee26958f3cc41a2d032ccd21f8a1d5f56f5"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/javascriptcore/jsc_assume_nonnull_end.json": {
+      "etag": "\"ae3-65d55dff940c0-df\"",
+      "file_path": "documentation/JavaScriptCore/jsc_assume_nonnull_end.md",
+      "hash": "b37befcf399e96078d2ba903070d2b4d10c7576ced419fde9eb5ddf82d9b8cdd"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/javascriptcore/jsc_cf_enum.json": {
+      "etag": "\"ac5-65d55dff751d9-df\"",
+      "file_path": "documentation/JavaScriptCore/jsc_cf_enum.md",
+      "hash": "716356920a0d125a5af80e9655eaa9cf0445a6e47623add9e514281eaa7f8000"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/javascriptcore/jsc_nonnull.json": {
+      "etag": "\"a5f-65d55dffd49a2-df\"",
+      "file_path": "documentation/JavaScriptCore/jsc_nonnull.md",
+      "hash": "f614874661505056265e00d5acf4a543d3e9ae44df8d87383371fb93c3b8a098"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/javascriptcore/jsc_null_unspecified.json": {
+      "etag": "\"acb-65d55dff751d9-df\"",
+      "file_path": "documentation/JavaScriptCore/jsc_null_unspecified.md",
+      "hash": "d9e363762fdbfadf573757b8b6766d6b9d471cbd9c90454cf8f74f0e7ad27a92"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/javascriptcore/jsc_nullable.json": {
+      "etag": "\"a6b-65d55dffeeba0-df\"",
+      "file_path": "documentation/JavaScriptCore/jsc_nullable.md",
+      "hash": "e1511bd064d11d4482bc769e7812cbf03a5fc7869f5fb54da03ee35b1d0ea561"
     },
     "https://developer.apple.com/tutorials/data/documentation/javascriptcore/jsc_objc_api_enabled.json": {
       "etag": "\"16ea-65d55dffeeba0-df\"",
@@ -2145,6 +2225,11 @@
       "file_path": "documentation/JavaScriptCore/jsexport.md",
       "hash": "7e4fc49c26698e7033bb225bfac61feaf30320923be02fc1f2bc3a3b026d7b33"
     },
+    "https://developer.apple.com/tutorials/data/documentation/javascriptcore/jsexportas.json": {
+      "etag": "\"d05-65d55dff940c0-df\"",
+      "file_path": "documentation/JavaScriptCore/jsexportas.md",
+      "hash": "f7a3b6b955f899887cc1c0277ad2ac2a18e4d4fae7f6b0e78a9742a00775ddab"
+    },
     "https://developer.apple.com/tutorials/data/documentation/javascriptcore/jsgarbagecollect(_:).json": {
       "etag": "\"35ed-65d55dff940c0-df\"",
       "file_path": "documentation/JavaScriptCore/jsgarbagecollect(_).md",
@@ -2209,6 +2294,11 @@
       "etag": "\"3955-65d55dffd49a2-df\"",
       "file_path": "documentation/JavaScriptCore/jsmanagedvalue/init(value,andowner).md",
       "hash": "3212e08d27cba6c355c442a972711422d24dc0d8721dbecee28f028c00e04176"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/javascriptcore/jsmanagedvalue/managedvaluewithvalue:.json": {
+      "etag": "\"2c11-65d55dffd49a2-df\"",
+      "file_path": "documentation/JavaScriptCore/jsmanagedvalue/managedvaluewithvalue_.md",
+      "hash": "80086fd7c57c9d66ee91763ba1f2ea155bae8e405c249d6f32b7fab8713a67f1"
     },
     "https://developer.apple.com/tutorials/data/documentation/javascriptcore/jsmanagedvalue/value.json": {
       "etag": "\"20e5-65d55dffd49a2-df\"",
@@ -3623,8 +3713,8 @@
   },
   "metadata": {
     "render": {
-      "version": 1
+      "version": 2
     },
-    "total_pages": 724
+    "total_pages": 742
   }
 }

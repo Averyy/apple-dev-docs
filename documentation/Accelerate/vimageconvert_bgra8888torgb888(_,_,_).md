@@ -60,6 +60,10 @@ This function copies the red, green, and blue source channels to the destination
   Removes the alpha channel from an 8-bit-per-channel RGBA buffer to produce an RGB565 result.
 - [func vImageConvert_ARGB8888ToRGB16U(UnsafePointer<vImage_Buffer>, UnsafePointer<vImage_Buffer>, UnsafePointer<UInt8>, UInt8, UnsafePointer<Pixel_16U>, vImage_Flags) -> vImage_Error](./vimageconvert_argb8888torgb16u%28_,_,_,_,_,_%29.md)
   Removes the alpha channel from an 8-bit-per-channel ARGB buffer to produce an unsigned 16-bit-per-channel RGB result.
+- [vImageConvert_BGRA8888toBGR888](./vimageconvert_bgra8888tobgr888.md)
+  Removes the alpha channel from an 8-bit-per-channel BGRA buffer to produce an 8-bit-per-channel BGR result.
+- [vImageConvert_RGBA8888toBGR888](./vimageconvert_rgba8888tobgr888.md)
+  Removes the alpha channel from an 8-bit-per-channel RGBA buffer to produce an 8-bit-per-channel BGR result.
 
 
 ---

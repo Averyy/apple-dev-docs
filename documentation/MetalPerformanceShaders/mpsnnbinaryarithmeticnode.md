@@ -44,6 +44,9 @@ class MPSNNBinaryArithmeticNode
 ### Instance Methods
 - [func gradientClass() -> AnyClass](./mpsnnbinaryarithmeticnode/gradientclass%28%29.md)
 - [func gradientFilters(withSources: [MPSNNImageNode]) -> [MPSNNGradientFilterNode]](./mpsnnbinaryarithmeticnode/gradientfilters%28withsources%29.md)
+### Type Methods
+- [+ nodeWithLeftSource:rightSource:](./mpsnnbinaryarithmeticnode/nodewithleftsource_rightsource_.md)
+- [+ nodeWithSources:](./mpsnnbinaryarithmeticnode/nodewithsources_.md)
 
 ## Relationships
 

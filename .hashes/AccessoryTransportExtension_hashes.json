@@ -35,15 +35,30 @@
       "file_path": "documentation/AccessoryTransportExtension/accessoryfeaturesession/accessory.md",
       "hash": "975e30bd55206e0bf0b6f086cee45dd2b0eff03c7aff3d70475ef70bf04e4eb1"
     },
+    "https://developer.apple.com/documentation/accessorytransportextension/accessoryfeaturesession/accessory-33dc1": {
+      "etag": "\"149e-65d56082d0d67-df\"",
+      "file_path": "documentation/AccessoryTransportExtension/accessoryfeaturesession/accessory-33dc1.md",
+      "hash": "9fa13e5cbcd66d8018e63675843bed9c1f8f26e6c576152e9aece4b711a99f7c"
+    },
     "https://developer.apple.com/documentation/accessorytransportextension/accessoryfeaturesession/send(message:)": {
       "etag": "\"1b4c-65d56082d0d67-df\"",
       "file_path": "documentation/AccessoryTransportExtension/accessoryfeaturesession/send(message).md",
       "hash": "4eb04a2c2d6ccc73720700b5e91ce6bcb47deb984035804fcf5f90ef3ddb1392"
     },
+    "https://developer.apple.com/documentation/accessorytransportextension/accessoryfeaturesession/send(message:)-79qrl": {
+      "etag": "\"1660-65d56082d0d67-df\"",
+      "file_path": "documentation/AccessoryTransportExtension/accessoryfeaturesession/send(message)-79qrl.md",
+      "hash": "b43e81d193ba7114fbaab6e58d12e63d2d93fdcee6210d9c95f7c3f9007069f9"
+    },
     "https://developer.apple.com/documentation/accessorytransportextension/accessoryfeaturesession/sessionid": {
       "etag": "\"1753-65d56082d0d67-df\"",
       "file_path": "documentation/AccessoryTransportExtension/accessoryfeaturesession/sessionid.md",
       "hash": "f2456a80339aef15cf6c405ac06d6382297ec2b36a8536607122760dcacb6800"
+    },
+    "https://developer.apple.com/documentation/accessorytransportextension/accessoryfeaturesession/sessionid-1qpen": {
+      "etag": "\"1356-65d56082d0d67-df\"",
+      "file_path": "documentation/AccessoryTransportExtension/accessoryfeaturesession/sessionid-1qpen.md",
+      "hash": "961a50a4ff740d1f8af8c979633332996eef57b7a5aa6cc8e81116cadab9a56c"
     },
     "https://developer.apple.com/documentation/accessorytransportextension/accessorymessage": {
       "etag": "\"46ff-65d56082b53a2-df\"",
@@ -330,10 +345,20 @@
       "file_path": "documentation/AccessoryTransportExtension/accessorytransportsession/eventhandler/dataeventhandler(event).md",
       "hash": "8df9a494c9ab92f3998496413c2f67286f9ab88d388a69294569421ef9b23b98"
     },
+    "https://developer.apple.com/documentation/accessorytransportextension/accessorytransportsession/eventhandler/dataeventhandler(event:)-7c5yr": {
+      "etag": "\"1c1a-65d56082d0d67-df\"",
+      "file_path": "documentation/AccessoryTransportExtension/accessorytransportsession/eventhandler/dataeventhandler(event)-7c5yr.md",
+      "hash": "ef6c0d0ffd760ae5c73fb725f87046f4e996739fd3da98ababaf0c0cf8f50ec1"
+    },
     "https://developer.apple.com/documentation/accessorytransportextension/accessorytransportsession/eventhandler/invalidationhandler(error:)": {
       "etag": "\"233c-65d56082d0d67-df\"",
       "file_path": "documentation/AccessoryTransportExtension/accessorytransportsession/eventhandler/invalidationhandler(error).md",
       "hash": "dde8e76453290467903dac7e6c9e4d1f493f5eb06e1351c4814107f6e72f7759"
+    },
+    "https://developer.apple.com/documentation/accessorytransportextension/accessorytransportsession/eventhandler/invalidationhandler(error:)-3t0i7": {
+      "etag": "\"1c6d-65d56082d0d67-df\"",
+      "file_path": "documentation/AccessoryTransportExtension/accessorytransportsession/eventhandler/invalidationhandler(error)-3t0i7.md",
+      "hash": "5abb56ba1e7a550f63cae95dcbb9112be4413b0459cff110d41e3049a83a2deb"
     },
     "https://developer.apple.com/documentation/accessorytransportextension/accessorytransportsession/eventhandler/messagereceived(_:completion:)": {
       "etag": "\"44c2-65d56082d0d67-df\"",
@@ -530,15 +555,30 @@
       "file_path": "documentation/AccessoryTransportExtension/accessoryfeaturesession.md",
       "hash": "f54f9782079372ce0d98f1b61837a06fe374dc734f8390a98dda695a8b780bb7"
     },
+    "https://developer.apple.com/tutorials/data/documentation/accessorytransportextension/accessoryfeaturesession/accessory-33dc1.json": {
+      "etag": "\"149e-65d56082d0d67-df\"",
+      "file_path": "documentation/AccessoryTransportExtension/accessoryfeaturesession/accessory-33dc1.md",
+      "hash": "9fa13e5cbcd66d8018e63675843bed9c1f8f26e6c576152e9aece4b711a99f7c"
+    },
     "https://developer.apple.com/tutorials/data/documentation/accessorytransportextension/accessoryfeaturesession/accessory.json": {
       "etag": "\"18a3-65d56082d0d67-df\"",
       "file_path": "documentation/AccessoryTransportExtension/accessoryfeaturesession/accessory.md",
       "hash": "975e30bd55206e0bf0b6f086cee45dd2b0eff03c7aff3d70475ef70bf04e4eb1"
     },
+    "https://developer.apple.com/tutorials/data/documentation/accessorytransportextension/accessoryfeaturesession/send(message:)-79qrl.json": {
+      "etag": "\"1660-65d56082d0d67-df\"",
+      "file_path": "documentation/AccessoryTransportExtension/accessoryfeaturesession/send(message)-79qrl.md",
+      "hash": "b43e81d193ba7114fbaab6e58d12e63d2d93fdcee6210d9c95f7c3f9007069f9"
+    },
     "https://developer.apple.com/tutorials/data/documentation/accessorytransportextension/accessoryfeaturesession/send(message:).json": {
       "etag": "\"1b4c-65d56082d0d67-df\"",
       "file_path": "documentation/AccessoryTransportExtension/accessoryfeaturesession/send(message).md",
       "hash": "4eb04a2c2d6ccc73720700b5e91ce6bcb47deb984035804fcf5f90ef3ddb1392"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/accessorytransportextension/accessoryfeaturesession/sessionid-1qpen.json": {
+      "etag": "\"1356-65d56082d0d67-df\"",
+      "file_path": "documentation/AccessoryTransportExtension/accessoryfeaturesession/sessionid-1qpen.md",
+      "hash": "961a50a4ff740d1f8af8c979633332996eef57b7a5aa6cc8e81116cadab9a56c"
     },
     "https://developer.apple.com/tutorials/data/documentation/accessorytransportextension/accessoryfeaturesession/sessionid.json": {
       "etag": "\"1753-65d56082d0d67-df\"",
@@ -825,10 +865,20 @@
       "file_path": "documentation/AccessoryTransportExtension/accessorytransportsession/eventhandler.md",
       "hash": "101a950f7b6ecbdaaa352001d6953fa277b585f94ece495c664c7073a3e14cb5"
     },
+    "https://developer.apple.com/tutorials/data/documentation/accessorytransportextension/accessorytransportsession/eventhandler/dataeventhandler(event:)-7c5yr.json": {
+      "etag": "\"1c1a-65d56082d0d67-df\"",
+      "file_path": "documentation/AccessoryTransportExtension/accessorytransportsession/eventhandler/dataeventhandler(event)-7c5yr.md",
+      "hash": "ef6c0d0ffd760ae5c73fb725f87046f4e996739fd3da98ababaf0c0cf8f50ec1"
+    },
     "https://developer.apple.com/tutorials/data/documentation/accessorytransportextension/accessorytransportsession/eventhandler/dataeventhandler(event:).json": {
       "etag": "\"2b2c-65d56082d0d67-df\"",
       "file_path": "documentation/AccessoryTransportExtension/accessorytransportsession/eventhandler/dataeventhandler(event).md",
       "hash": "8df9a494c9ab92f3998496413c2f67286f9ab88d388a69294569421ef9b23b98"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/accessorytransportextension/accessorytransportsession/eventhandler/invalidationhandler(error:)-3t0i7.json": {
+      "etag": "\"1c6d-65d56082d0d67-df\"",
+      "file_path": "documentation/AccessoryTransportExtension/accessorytransportsession/eventhandler/invalidationhandler(error)-3t0i7.md",
+      "hash": "5abb56ba1e7a550f63cae95dcbb9112be4413b0459cff110d41e3049a83a2deb"
     },
     "https://developer.apple.com/tutorials/data/documentation/accessorytransportextension/accessorytransportsession/eventhandler/invalidationhandler(error:).json": {
       "etag": "\"233c-65d56082d0d67-df\"",
@@ -1003,8 +1053,8 @@
   },
   "metadata": {
     "render": {
-      "version": 1
+      "version": 2
     },
-    "total_pages": 200
+    "total_pages": 210
   }
 }

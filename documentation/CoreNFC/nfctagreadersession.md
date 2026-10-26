@@ -43,10 +43,18 @@ Only one reader session of any type can be active in the system at a time. The 
   Options that determine the type of tags that a reader session should detect during a polling sequence.
 - [protocol NFCTagReaderSessionDelegate](./nfctagreadersessiondelegate-2joku.md)
   A protocol that an object implements to receive callbacks sent from an NFC tag reader session.
+- [- initWithPollingOption:delegate:queue:](./nfctagreadersession/initwithpollingoption_delegate_queue_.md)
+  Intializes an NFC tag reader session.
+- [NFCTagReaderSessionDelegate](./nfctagreadersessiondelegate-5gxiw.md)
+  A protocol that an object implements to receive callbacks sent from an NFC tag reader session.
 ### Connecting to a Tag
 - [func connect(to: NFCTag, completionHandler: ((any Error)?) -> Void)](./nfctagreadersession/connect%28to,completionhandler%29.md)
   Connects the reader session to a tag and activates that tag.
 - [var connectedTag: NFCTag?](./nfctagreadersession/connectedtag-3mlqu.md)
+  The tag connected to the reader session.
+- [- connectToTag:completionHandler:](./nfctagreadersession/connecttotag_completionhandler_.md)
+  Connects the reader session to a tag and activates that tag.
+- [connectedTag](./nfctagreadersession/connectedtag-1mnjc.md)
   The tag connected to the reader session.
 ### Restarting the Polling Sequence
 - [func restartPolling()](./nfctagreadersession/restartpolling%28%29.md)
@@ -93,6 +101,8 @@ Only one reader session of any type can be active in the system at a time. The 
   A general interface for interacting with a reader session.
 - [Near Field Communication Tag Reader Session Formats Entitlement](../BundleResources/entitlements/com.apple.developer.nfc.readersession.formats.md)
   The Near Field Communication data formats an app can read.
+- [NFCReaderSessionDelegate](./nfcreadersessiondelegate.md)
+  A collection of callbacks that provide information about the status of an NFC reader session.
 
 
 ---

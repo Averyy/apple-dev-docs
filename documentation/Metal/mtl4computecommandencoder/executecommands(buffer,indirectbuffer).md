@@ -47,6 +47,8 @@ Use an instance of [`MTLResidencySet`](../mtlresidencyset.md) to mark residency 
 ### Encoding indirect command buffers
 - [func executeCommands(buffer: any MTLIndirectCommandBuffer, range: Range<Int>)](./executecommands%28buffer,range%29.md)
   Encodes a command to execute commands from an indirect command buffer.
+- [- executeCommandsInBuffer:withRange:](./executecommandsinbuffer_withrange_.md)
+  Encodes a command to execute a series of commands from an indirect command buffer.
 
 
 ---

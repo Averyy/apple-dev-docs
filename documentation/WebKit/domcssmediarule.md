@@ -25,6 +25,7 @@ class DOMCSSMediaRule
 ### Instance Methods
 - [func delete(UInt32)](./domcssmediarule/delete%28_%29.md)
 - [func insert(String!, index: UInt32) -> UInt32](./domcssmediarule/insert%28_,index%29.md)
+- [- insertRule::](./domcssmediarule/insertrule__.md)
 
 ## Relationships
 

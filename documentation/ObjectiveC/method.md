@@ -46,6 +46,10 @@ typedef struct objc_method * Method;
   Performance optimization for method calls. Contains pointers to recently used methods.
 - [struct objc_property_attribute_t](./objc_property_attribute_t.md)
   Defines a property attribute.
+- [Class](./class.md)
+  An opaque type that represents an Objective-C class.
+- [SEL](./sel.md)
+  Defines an opaque type that represents a method selector.
 
 
 ---

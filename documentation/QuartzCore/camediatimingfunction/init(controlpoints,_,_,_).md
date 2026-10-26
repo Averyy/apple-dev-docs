@@ -44,6 +44,8 @@ The end points of the Bézier curve are automatically set to (0.0,0.0) and (1.0,
 ### Creating Timing Functions
 - [convenience init(name: CAMediaTimingFunctionName)](./init%28name%29.md)
   Creates and returns a new instance of `CAMediaTimingFunction` configured with the predefined timing function specified by `name`.
+- [+ functionWithControlPoints::::](./functionwithcontrolpoints____.md)
+  Creates and returns a new instance of `CAMediaTimingFunction` timing function modeled as a cubic Bézier curve using the specified control points.
 
 
 ---

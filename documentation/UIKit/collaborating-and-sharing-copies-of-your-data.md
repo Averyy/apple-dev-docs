@@ -155,7 +155,7 @@ In this case, the share sheet shows the pop-up menu with the allowed sharing mod
 
 ##### Specify the people to share with
 
-In iOS 18 and later, you can also specify recipients for the shared data. Create an [`INPerson`](https://developer.apple.com/documentation/intents/inperson) instance for each recipient and add them to your activity configuration’s metadata.
+In iOS 18 and later, you can also specify recipients for the shared data. Create an [`INPerson`](../Intents/inperson.md) instance for each recipient and add them to your activity configuration’s metadata.
 
 ```swift
 // Gather data about the recipient.

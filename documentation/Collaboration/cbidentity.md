@@ -36,6 +36,8 @@ There are two subclasses of `CBIdentity`: `CBGroupIdentity` and `CBUserIdentity`
   Returns the identity object matching the persistent reference data.
 - [init?(uuidString: String, authority: CBIdentityAuthority)](./cbidentity/init%28uuidstring,authority%29-13vns.md)
   Returns the identity object with the given UUID from the specified identity authority.
+- [+ identityWithCSIdentity:](./cbidentity/identitywithcsidentity_.md)
+  Returns an identity object created from the specified Core Services Identity opaque object.
 ### Getting Identity Attributes
 - [var aliases: [String]](./cbidentity/aliases.md)
   Returns an array of aliases (alternate names) for the identity.
@@ -58,6 +60,8 @@ There are two subclasses of `CBIdentity`: `CBGroupIdentity` and `CBUserIdentity`
 ### Storing Identities
 - [var persistentReference: Data?](./cbidentity/persistentreference.md)
   Returns a persistent reference to store a reference to an identity.
+- [CSIdentity](./cbidentity/csidentity.md)
+  Returns an opaque object for use with the Core Services Identity API.
 ### Initializers
 - [init?(UUIDString: String, authority: CBIdentityAuthority)](./cbidentity/init%28uuidstring,authority%29-7xuzv.md)
 - [init?(coder: NSCoder)](./cbidentity/init%28coder%29.md)

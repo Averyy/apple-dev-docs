@@ -45,6 +45,8 @@ If the nib file contains any proxy objects beyond just the File’s Owner proxy 
 ### Retrieving objects from the nib file
 - [struct OptionsKey](./optionskey.md)
   Options that specify how to unarchive and instantiate the nib.
+- [UINibProxiedObjectsKey](../uinibproxiedobjectskey.md)
+  The runtime replacement objects for any proxy objects in the nib file.
 
 
 ---

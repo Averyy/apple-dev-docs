@@ -53,6 +53,11 @@ This method is a designated initializer.
   Initializes a newly allocated array using `anArray` as the source of data objects for the array.
 - [convenience init?(contentsOfFile: String)](./init%28contentsoffile%29.md)
   Initializes a newly allocated array with the contents of the file specified by a given path.
+### Related Documentation
+- [+ arrayWithObjects:](./arraywithobjects_.md)
+  Creates and returns an array containing the objects in the argument list.
+- [- initWithObjects:](./initwithobjects_.md)
+  Initializes a newly allocated array by placing in it the objects in the argument list.
 
 
 ---

@@ -57,6 +57,8 @@ You can load and run a workflow with minimal overhead by using the [`AMWorkflow`
   A Boolean value that indicates whether the controller’s workflow is currently paused.
 - [var isRunning: Bool](./amworkflowcontroller/isrunning.md)
   A Boolean value that indicates whether the controller’s workflow is currently running.
+### Instance Variables
+- [workflowView](./amworkflowcontroller/workflowview-c.ivar.md)
 
 ## Relationships
 

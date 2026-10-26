@@ -34,6 +34,11 @@ A new tile definition.
 - `texture`: The texture to reference for the definition’s content.
 - `size`: The size of the tile in points.
 
+## See Also
+
+### Creating a Tile with a Size
+- [+ tileDefinitionWithTexture:size:](./tiledefinitionwithtexture_size_.md)
+
 
 ---
 

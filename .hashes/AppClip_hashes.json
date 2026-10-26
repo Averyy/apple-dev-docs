@@ -5,6 +5,11 @@
       "file_path": "documentation/AppClip/AppClip.md",
       "hash": "4a0f6faa6aaa18432f2df89b52a5c8083b80fbf82deb15860e05e902f50fc87e"
     },
+    "https://developer.apple.com/documentation/appclip/ap_extern": {
+      "etag": "\"944-65d55e6c60a5f-df\"",
+      "file_path": "documentation/AppClip/ap_extern.md",
+      "hash": "3549c62859cdd6949401c2c654586746c19261539faa9a42ea5a8ab8ce03393c"
+    },
     "https://developer.apple.com/documentation/appclip/apactivationpayload": {
       "etag": "\"6cdc-65d55e6c741a9-df\"",
       "file_path": "documentation/AppClip/apactivationpayload.md",
@@ -184,6 +189,11 @@
       "file_path": "documentation/AppClip/AppClip.md",
       "hash": "4a0f6faa6aaa18432f2df89b52a5c8083b80fbf82deb15860e05e902f50fc87e"
     },
+    "https://developer.apple.com/tutorials/data/documentation/appclip/ap_extern.json": {
+      "etag": "\"944-65d55e6c60a5f-df\"",
+      "file_path": "documentation/AppClip/ap_extern.md",
+      "hash": "3549c62859cdd6949401c2c654586746c19261539faa9a42ea5a8ab8ce03393c"
+    },
     "https://developer.apple.com/tutorials/data/documentation/appclip/apactivationpayload.json": {
       "etag": "\"6cdc-65d55e6c741a9-df\"",
       "file_path": "documentation/AppClip/apactivationpayload.md",
@@ -361,8 +371,8 @@
   },
   "metadata": {
     "render": {
-      "version": 1
+      "version": 2
     },
-    "total_pages": 72
+    "total_pages": 74
   }
 }

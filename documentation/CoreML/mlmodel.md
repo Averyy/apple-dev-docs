@@ -61,6 +61,14 @@ If your app downloads and compiles a model on the user’s device, you must use 
   Creates a Core ML model instance from a compiled model file and a custom configuration.
 - [convenience init(contentsOfURL: URL) throws](./mlmodel/init%28contentsofurl%29.md)
 - [convenience init(contentsOfURL: URL, configuration: MLModelConfiguration) throws](./mlmodel/init%28contentsofurl,configuration%29.md)
+- [+ loadContentsOfURL:configuration:completionHandler:](./mlmodel/loadcontentsofurl_configuration_completionhandler_.md)
+  Creates a Core ML model instance asynchronously from a compiled model file, a custom configuration, and a completion handler.
+- [- predictionFromFeatures:completionHandler:](./mlmodel/predictionfromfeatures_completionhandler_.md)
+  Generates a prediction asynchronously from the feature values within the input feature provider.
+- [- predictionFromFeatures:options:completionHandler:](./mlmodel/predictionfromfeatures_options_completionhandler_.md)
+  Generates a prediction asynchronously from the feature values within the input feature provider using the prediction options.
+- [- predictionFromFeatures:usingState:options:completionHandler:](./mlmodel/predictionfromfeatures_usingstate_options_completionhandler_.md)
+  Run a stateful prediction asynchronously.
 ### Compiling a model
 - [class compileModel(at:)](./mlmodel/compilemodel%28at%29.md)
 - [class func compileModel(at: URL, completionHandler: (Result<URL, any Error>) -> Void)](./mlmodel/compilemodel%28at,completionhandler%29.md)
@@ -81,6 +89,8 @@ If your app downloads and compiles a model on the user’s device, you must use 
 ### Making state
 - [func makeState() -> MLState](./mlmodel/makestate%28%29.md)
   Creates a new state object.
+- [- newState](./mlmodel/newstate.md)
+  Creates a new state object.
 ### Inspecting a model
 - [static var availableComputeDevices: [MLComputeDevice]](./mlmodel/availablecomputedevices-6klyt.md)
   The list of available compute devices that the model’s prediction methods use.
@@ -94,6 +104,8 @@ If your app downloads and compiles a model on the user’s device, you must use 
   Returns a model parameter value for a key.
 - [class MLParameterKey](./mlparameterkey.md)
   The keys for the parameter dictionary in a model configuration or a model update context.
+- [availableComputeDevices](./mlmodel/availablecomputedevices-42uzt.md)
+  The list of available compute devices that the model’s prediction can use.
 ### Supporting types
 - [class MLModelConfiguration](./mlmodelconfiguration.md)
   The settings for creating or updating a machine learning model.

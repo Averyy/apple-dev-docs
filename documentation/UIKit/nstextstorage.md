@@ -94,6 +94,8 @@ These primitives should perform the change, then call [`edited(_:range:changeInL
 ### Constants
 - [NSTextStorage.EditActions](./nstextstorage/editactions.md)
   Constants that indicate the types of changes.
+- [NSTextStorageEditedOptions](../AppKit/nstextstorageeditedoptions.md)
+  ** Deprecations ***
 ### Notifications
 - [class let willProcessEditingNotification: NSNotification.Name](./nstextstorage/willprocesseditingnotification.md)
   A notification that posts before a text storage begins processing edits.

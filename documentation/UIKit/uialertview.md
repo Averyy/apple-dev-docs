@@ -149,6 +149,10 @@ The [`UIAlertView`](./uialertview.md) class is intended to be used as-is and doe
   A custom action that your app can perform in response to a remote or local notification.
 - [class UIUserNotificationCategory](./uiusernotificationcategory.md)
   Information about custom actions that your app can perform in response to a local or push notification.
+- [UIAcceleration](./uiacceleration.md)
+  An acceleration event that represents immediate, three-dimensional acceleration data.
+- [UIAccelerometer](./uiaccelerometer.md)
+  An object that lets you register to receive acceleration-related data from the onboard hardware.
 
 
 ---

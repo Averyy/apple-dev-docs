@@ -32,6 +32,10 @@ static SPSize3D SPAffineTransform3DGetScale(SPAffineTransform3D transform);
   The affine transform’s rotation.
 - [var translation: Vector3D](./translation.md)
   The translation component of the affine transform.
+- [SPAffineTransform3DGetOffset](../spaffinetransform3dgetoffset.md)
+  The affine transform’s translation.
+- [SPAffineTransform3DGetRotation](../spaffinetransform3dgetrotation.md)
+  The affine transform’s rotation.
 
 
 ---

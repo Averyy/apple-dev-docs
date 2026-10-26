@@ -56,6 +56,8 @@ Although these symbols are available for use, Apple is no longer actively develo
   Returns a Boolean value that indicates whether an app is available to handle a URL scheme.
 - [func supportedInterfaceOrientations(for: UIWindow?) -> UIInterfaceOrientationMask](./uiapplication/supportedinterfaceorientations%28for%29.md)
   Returns the default set of interface orientations to use for the view controllers in the specified window.
+- [- setStatusBarHidden:animated:](./uiapplication/setstatusbarhidden_animated_.md)
+  Hides or shows the status bar, optionally animating the transition.
 ### Deprecated notifications
 - [class let willChangeStatusBarFrameNotification: NSNotification.Name](./uiapplication/willchangestatusbarframenotification.md)
   Posted when the app is about to change the frame of the status bar.
@@ -94,6 +96,8 @@ Although these symbols are available for use, Apple is no longer actively develo
   The current style of the status bar.
 - [var windows: [UIWindow]](./uiapplication/windows.md)
   The app’s visible and hidden windows.
+- [proximitySensingEnabled](./uiapplication/proximitysensingenabled.md)
+  A Boolean value that determines whether proximity sensing is enabled.
 ### Deprecated constants
 - [let UIApplicationOpenNotificationSettingsURLString: String](./uiapplicationopennotificationsettingsurlstring.md)
   A constant that provides the URL string you use to deep link to your app’s notification settings in the Settings app.

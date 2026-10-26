@@ -33,6 +33,8 @@ The following properties are of this type:
 ### Identiying a resource
 - [static var gpu: BGContinuedProcessingTaskRequest.Resources](./resources/gpu.md)
   An option that indicates a long-running task requires the GPU.
+- [BGContinuedProcessingTaskRequestResourcesDefault](../bgcontinuedprocessingtaskrequestresources/bgcontinuedprocessingtaskrequestresourcesdefault.md)
+  An option for a task with no additional required system resources.
 ### Creating a resource
 - [init(rawValue: Int)](./resources/init%28rawvalue%29.md)
   Initializes a required resource for a Continuous Background Task by raw value.

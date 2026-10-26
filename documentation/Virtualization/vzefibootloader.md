@@ -30,6 +30,12 @@ class VZEFIBootLoader
 - [class VZEFISignatureList](./vzefisignaturelist.md)
   A class that represents a Unified Extensible Firmware Interface (UEFI) signature list.
 - [enum VZEFISignature](./vzefisignature-swift.enum.md)
+- [VZEFISignature](./vzefisignature-c.class.md)
+  A base class that represents a Unified Extensible Firmware Interface (UEFI) signature.
+- [VZEFISignatureX509Certificate](./vzefisignaturex509certificate.md)
+  A class that represents a Unified Extensible Firmware Interface (UEFI) signature based on an X.509 certificate.
+- [VZEFISignatureSHA256Hash](./vzefisignaturesha256hash.md)
+  A class that represents a Unified Extensible Firmware Interface (UEFI) signature based on a SHA-256 cryptographic hash.
 ### Accessing the boot loader’s EFI variables
 - [var variableStore: VZEFIVariableStore?](./vzefibootloader/variablestore.md)
   The boot loader’s EFI variable store.

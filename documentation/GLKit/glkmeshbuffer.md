@@ -30,6 +30,7 @@ class GLKMeshBuffer
 - [var length: Int](./glkmeshbuffer/length.md)
 - [var offset: Int](./glkmeshbuffer/offset.md)
 - [var type: MDLMeshBufferType](./glkmeshbuffer/type.md)
+- [zone](./glkmeshbuffer/zone.md)
 ### Instance methods
 - [func zone() -> (any MDLMeshBufferZone)?](./glkmeshbuffer/zone%28%29.md)
 

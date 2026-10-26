@@ -67,6 +67,8 @@ typedef struct MPSStateTextureInfo { ... } MPSStateTextureInfo;
   An intersection result that contains the origin-intersection distance, intersected primitive index, and intersection point coordinates.
 - [struct MPSIntersectionDistancePrimitiveIndexInstanceIndex](./mpsintersectiondistanceprimitiveindexinstanceindex.md)
   An intersection result that contains the origin-intersection distance, and intersected primitive and instance indices.
+- [MPSAxisAlignedBoundingBox](./mpsaxisalignedboundingbox-c.struct.md)
+  An axis-aligned bounding box.
 
 
 ---

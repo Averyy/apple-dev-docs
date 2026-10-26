@@ -20,6 +20,8 @@ MapKit classes, protocols, and entitlements that are no longer supported.
   Provides the visual representation for an [`MKPolyline`](./mkpolyline.md) annotation object.
 - [class MKPinAnnotationView](./mkpinannotationview.md)
   An annotation view that displays a pin image on the map.
+- [MKReverseGeocoder](./mkreversegeocoder.md)
+  Provides services for converting a map coordinate (specified as a latitude/longitude pair) into information about that coordinate, such as the country or region, city, or street.
 ### Properties
 - [var filterType: MKLocalSearchCompleter.FilterType](./mklocalsearchcompleter/filtertype-swift.property.md)
   The filter options for the search results.
@@ -41,6 +43,8 @@ MapKit classes, protocols, and entitlements that are no longer supported.
 ### Protocols
 - [struct MapPin](./mappin.md)
   A pin-shaped annotation used to indicate a location on a map.
+- [MKReverseGeocoderDelegate](./mkreversegeocoderdelegate.md)
+  Defines the interface for receiving messages from an [`MKReverseGeocoder`](./mkreversegeocoder.md) object.
 ### Enumerations
 - [MKLocalSearchCompleter.FilterType](./mklocalsearchcompleter/filtertype-swift.enum.md)
   Constants indicating the types of search completions to return.

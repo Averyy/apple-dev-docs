@@ -33,6 +33,9 @@ If you assign a custom view to the toolbar item, modifying this property updates
 ### Performing the item’s action
 - [var action: Selector?](./action.md)
   The action method to call when someone clicks on the toolbar item.
+### Related Documentation
+- [- validateToolbarItem:](../../ObjectiveC/nsobject-swift.class/validatetoolbaritem_.md)
+  If this method is implemented and returns `false`, NSToolbar will disable `theItem`; returning `true` causes `theItem` to be enabled.
 
 
 ---

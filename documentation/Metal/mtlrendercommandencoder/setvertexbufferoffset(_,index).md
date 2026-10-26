@@ -61,6 +61,9 @@ By default, the buffer at each index is `nil`.
   Creates a buffer from bytes and assigns it to an entry in the vertex shader argument table.
 - [func setVertexBytes(UnsafeRawPointer, length: Int, attributeStride: Int, index: Int)](./setvertexbytes%28_,length,attributestride,index%29.md)
 - [func setVertexBufferOffset(offset: Int, attributeStride: Int, index: Int)](./setvertexbufferoffset%28offset,attributestride,index%29.md)
+- [- setVertexBuffers:offsets:withRange:](./setvertexbuffers_offsets_withrange_.md)
+  Assigns multiple buffers to a range of entries in the vertex shader argument table.
+- [- setVertexBuffers:offsets:attributeStrides:withRange:](./setvertexbuffers_offsets_attributestrides_withrange_.md)
 
 
 ---

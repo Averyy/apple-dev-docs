@@ -36,6 +36,8 @@ NSStreamEventOpenCompleted
   An error has occurred on the stream.
 - [static var endEncountered: Stream.Event](./endencountered.md)
   The end of the stream has been reached.
+- [NSStreamEventNone](../../nsstreamevent/nsstreameventnone.md)
+  No event has occurred.
 
 
 ---

@@ -35,6 +35,12 @@ The client creates pipe objects using [`copyPipe(withAddress:)`](./iousbhostinte
   Enqueues an input/output request on the pipe.
 - [func clearStall() throws](./iousbhostpipe/clearstall%28%29.md)
   Clears the halt condition of the pipe.
+- [- sendIORequestWithData:bytesTransferred:completionTimeout:error:](./iousbhostpipe/sendiorequestwithdata_bytestransferred_completiontimeout_error_.md)
+  Sends an input/output request on the pipe.
+- [- abortWithOption:error:](./iousbhostpipe/abortwithoption_error_.md)
+  Aborts pending input/output requests.
+- [- abortWithError:](./iousbhostpipe/abortwitherror_.md)
+  Aborts pending input/output requests synchronously.
 ### Sending Isochronous I/O
 - [typealias IOUSBHostIsochronousCompletionHandler](./iousbhostisochronouscompletionhandler.md)
   A completion handler for asynchronous isochronous transfers.
@@ -53,6 +59,18 @@ The client creates pipe objects using [`copyPipe(withAddress:)`](./iousbhostinte
   The default completion timeout for input/output requests.
 - [typealias IOUSBHostCompletionHandler](./iousbhostcompletionhandler.md)
   The completion handler for asynchronous control, bulk, and interrupt transfers.
+- [- enqueueControlRequest:data:completionTimeout:error:completionHandler:](./iousbhostpipe/enqueuecontrolrequest_data_completiontimeout_error_completionhandler_.md)
+  Enqueues a request on a control endpoint.
+- [- enqueueControlRequest:data:error:completionHandler:](./iousbhostpipe/enqueuecontrolrequest_data_error_completionhandler_.md)
+  Enqueues a request on a control endpoint with a default completion timeout.
+- [- enqueueControlRequest:error:completionHandler:](./iousbhostpipe/enqueuecontrolrequest_error_completionhandler_.md)
+  Enqueues a request on a control endpoint without a data phase and a default completion timeout.
+- [- sendControlRequest:data:bytesTransferred:completionTimeout:error:](./iousbhostpipe/sendcontrolrequest_data_bytestransferred_completiontimeout_error_.md)
+  Sends a request on a control endpoint.
+- [- sendControlRequest:data:bytesTransferred:error:](./iousbhostpipe/sendcontrolrequest_data_bytestransferred_error_.md)
+  Sends a request on a control endpoint with a default timeout.
+- [- sendControlRequest:error:](./iousbhostpipe/sendcontrolrequest_error_.md)
+  Sends a request on a control endpoint without a data phase and a default completion timeout.
 ### Managing Periodic Bandwidth
 - [struct IOUSBHostIOSourceDescriptors](./iousbhostiosourcedescriptors.md)
   The descriptors for a single endpoint.

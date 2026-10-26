@@ -22,8 +22,8 @@ func mouseUp(atPositionX mousePositionX: Double, positionY mousePositionY: Doubl
 
 ## Mentions
 
-- [Adding onscreen controls to plug-ins](https://developer.apple.com/documentation/professional-video-applications/adding-onscreen-controls-to-plug-ins)
-- [Thread safety in plug-ins](https://developer.apple.com/documentation/professional-video-applications/thread-safety-in-plug-ins)
+- [Adding onscreen controls to plug-ins](../../Professional-Video-Applications/adding-onscreen-controls-to-plug-ins.md)
+- [Thread safety in plug-ins](../../Professional-Video-Applications/thread-safety-in-plug-ins.md)
 
 #### Discussion
 

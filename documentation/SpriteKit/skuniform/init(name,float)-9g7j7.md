@@ -50,6 +50,24 @@ An initialized uniform object whose type is set to [`SKUniformType.floatVector4`
   Initializes a new uniform object that holds a `4 x 4` matrix of floating-point numbers.
 - [init(name: String, texture: SKTexture?)](./init%28name,texture%29.md)
   Initializes a new uniform object that holds a reference to a texture.
+- [+ uniformWithName:](./uniformwithname_.md)
+  Creates and initializes a new uniform object.
+- [+ uniformWithName:float:](./uniformwithname_float_.md)
+  Creates and initializes a new uniform object that holds a floating-point number.
+- [+ uniformWithName:floatVector2:](./uniformwithname_floatvector2_.md)
+  Creates and initializes a new uniform object that holds a vector of two floating-point numbers.
+- [+ uniformWithName:floatVector3:](./uniformwithname_floatvector3_.md)
+  Creates and initializes a new uniform object that holds a vector of three floating-point numbers.
+- [+ uniformWithName:floatVector4:](./uniformwithname_floatvector4_.md)
+  Creates and initializes a new uniform object that holds a vector of four floating-point numbers.
+- [+ uniformWithName:floatMatrix2:](./uniformwithname_floatmatrix2_.md)
+  Creates and initializes a new uniform object that holds a `2 x 2` matrix of floating-point numbers.
+- [+ uniformWithName:floatMatrix3:](./uniformwithname_floatmatrix3_.md)
+  Creates and initializes a new uniform object that holds a `3 x 3` matrix of floating-point numbers.
+- [+ uniformWithName:floatMatrix4:](./uniformwithname_floatmatrix4_.md)
+  Creates and initializes a new uniform object that holds a `4 x 4` matrix of floating-point numbers.
+- [+ uniformWithName:texture:](./uniformwithname_texture_.md)
+  Creates and initializes a new uniform object that holds a reference to a texture.
 
 
 ---

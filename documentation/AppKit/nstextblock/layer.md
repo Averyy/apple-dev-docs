@@ -30,6 +30,10 @@ enum NSTextBlockLayer : NSInteger;
   Margin of the text block: space surrounding the border.
 ### Initializers
 - [init?(rawValue: Int)](./layer/init%28rawvalue%29.md)
+### Enumeration Cases
+- [NSTextBlockBorder](../nstextblocklayer/nstextblockborder.md)
+- [NSTextBlockMargin](../nstextblocklayer/nstextblockmargin.md)
+- [NSTextBlockPadding](../nstextblocklayer/nstextblockpadding.md)
 
 ## Relationships
 

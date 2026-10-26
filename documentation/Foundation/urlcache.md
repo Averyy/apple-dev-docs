@@ -63,6 +63,8 @@ When overriding methods of this class, be aware that methods that take a `task` 
   Creates a URL cache object with the specified memory and disk capacities, in the specified directory.
 - [init(memoryCapacity: Int, diskCapacity: Int, diskPath: String?)](./urlcache/init%28memorycapacity,diskcapacity,diskpath%29.md)
   Creates a URL cache object with the specified values.
+- [- initWithMemoryCapacity:diskCapacity:directoryURL:](./nsurlcache/initwithmemorycapacity_diskcapacity_directoryurl_.md)
+  Creates a URL cache object with the specified memory and disk capacities, in the specified directory.
 ### Getting and storing cached objects
 - [func cachedResponse(for: URLRequest) -> CachedURLResponse?](./urlcache/cachedresponse%28for%29.md)
   Returns the cached URL response in the cache for the specified URL request.

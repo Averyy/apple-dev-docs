@@ -46,6 +46,8 @@ typedef struct AVCaptionPoint { ... } AVCaptionPoint;
 ### Accessing the location
 - [var origin: AVCaptionPoint](./avcaptionregion/origin.md)
   The region’s top-left position.
+- [AVCaptionPointMake](./avcaptionpointmake.md)
+  Creates a caption point with the specified x and y positions.
 
 
 ---

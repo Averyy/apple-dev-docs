@@ -38,6 +38,10 @@ The text provider created by this method uses the default time zone information 
 ### Creating a Text Provider
 - [convenience init(date: Date, relativeTo: Date?, style: CLKRelativeDateStyle, units: NSCalendar.Unit)](./init%28date,relativeto,style,units%29.md)
   Creates a text provider that shows the difference in time between the provided dates.
+- [- initWithDate:style:units:](./initwithdate_style_units_.md)
+  Creates a text provider that shows the difference between the current time and the specified date.
+- [- initWithDate:relativeToDate:style:units:](./initwithdate_relativetodate_style_units_.md)
+  Creates a text provider that shows the difference in time between the provided dates.
 
 
 ---

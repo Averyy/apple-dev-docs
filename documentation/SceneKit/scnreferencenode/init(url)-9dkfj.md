@@ -37,6 +37,12 @@ Using this initializer does not load the node’s content. To load content from 
 
 - `referenceURL`: The URL to a scene file from which to load the node’s content.
 
+## See Also
+
+### Creating a Reference Node
+- [+ referenceNodeWithURL:](./referencenodewithurl_.md)
+  Creates a node whose content is to be loaded from the referenced URL.
+
 
 ---
 

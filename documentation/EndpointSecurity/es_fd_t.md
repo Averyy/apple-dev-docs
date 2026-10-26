@@ -31,6 +31,7 @@ typedef struct { ... } es_fd_t;
 - [init()](./es_fd_t/init%28%29.md)
 ### Instance Properties
 - [var pipe: es_fd_t.__Unnamed_union___Anonymous_field2.__Unnamed_struct_pipe](./es_fd_t/pipe-1gtm4.md)
+- [pipe](./es_fd_t/pipe-96tn9.md)
 
 ## Relationships
 

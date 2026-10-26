@@ -1,0 +1,29 @@
+# paperMarkupViewControllerDidBeginDrawing(_:)
+
+**Framework**: PaperKit  
+**Kind**: method  
+**Role**: Instance Method
+
+Tells the delegate when a person begins drawing.
+
+**Availability**:
+- iOS 26.0+
+- iPadOS 26.0+
+- Mac Catalyst 26.0+
+- macOS 26.0+
+- visionOS 26.0+
+
+## Declaration
+
+```swift
+func paperMarkupViewControllerDidBeginDrawing(_ paperMarkupViewController: PaperMarkupViewController)
+```
+
+## Parameters
+
+- `paperMarkupViewController`: The `PaperMarkupViewController` the person is interacting with.
+
+
+---
+
+*[View on Apple Developer](https://developer.apple.com/documentation/paperkit/papermarkupviewcontroller/delegate-swift.protocol/papermarkupviewcontrollerdidbegindrawing(_:)-3qawk)*

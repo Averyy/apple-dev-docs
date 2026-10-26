@@ -104,6 +104,9 @@ AppKit also works with [SwiftUI](../SwiftUI/SwiftUI.md), so you can implement pa
 ### Deprecated
 - [Deprecated symbols](./deprecated-symbols.md)
   Review symbols that are no longer in active development, and their recommended replacements.
+### Enumerations
+- [NSWritingToolsCoordinatorTextDecoration](./nswritingtoolscoordinator/textdecoration.md)
+  Use the `NSWritingToolsCoordinator.TextDecoration` constants to determine the type of decoration to be applied to a preview for grammar animation. The grammar animation needs previews of the text of the issue in two forms, without and with the grammar indication underline applied. If you use grammar animation, you must implement the delegate method [`writingToolsCoordinator:requestsPreviewForTextAnimation:ofRange:inContext:textDecoration:completion:`](./nswritingtoolscoordinator/delegate-swift.protocol/writingtoolscoordinator%28_,requestspreviewfor,of,in,textdecoration,completion%29.md) to provide both forms of previews, based on the specified decoration.
 
 
 ---

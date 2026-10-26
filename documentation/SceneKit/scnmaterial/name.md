@@ -31,6 +31,14 @@ You can provide a descriptive name for a material to make managing your scene gr
 
 Material names are saved when you export a scene to a file using its [`write(to:options:delegate:progressHandler:)`](../scnscene/write%28to,options,delegate,progresshandler%29.md) method, and appear in the Xcode scene editor.
 
+## See Also
+
+### Creating a Material
+- [+ material](./material.md)
+  Creates a new material object.
+- [+ materialWithMDLMaterial:](./materialwithmdlmaterial_.md)
+  Creates a material from the specified Model I/O material object.
+
 
 ---
 

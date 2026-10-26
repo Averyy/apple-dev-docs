@@ -41,9 +41,23 @@ The shape of a plane geometry is always convex. That is, the boundary polygon fo
   The number of triangles described by the [`triangleIndices`](./arplanegeometry/triangleindices-1azi3.md) buffer.
 - [var triangleIndices: [Int16]](./arplanegeometry/triangleindices-64epx.md)
   An array of indices describing the triangle mesh formed by the plane geometry’s vertex data.
+- [vertices](./arplanegeometry/vertices-3kgkm.md)
+  A buffer of vertex positions for each point in the plane mesh.
+- [vertexCount](./arplanegeometry/vertexcount.md)
+  The number of elements in the [`vertices`](./arplanegeometry/vertices-3kgkm.md) buffer.
+- [textureCoordinates](./arplanegeometry/texturecoordinates-91pbc.md)
+  A buffer of texture coordinate values for each point in the plane mesh.
+- [textureCoordinateCount](./arplanegeometry/texturecoordinatecount.md)
+  The number of elements in the [`textureCoordinates`](./arplanegeometry/texturecoordinates-91pbc.md) buffer.
+- [triangleIndices](./arplanegeometry/triangleindices-1azi3.md)
+  A buffer of indices describing the triangle mesh formed by the plane geometry’s vertex data.
 ### Finding Boundary Points
 - [var boundaryVertices: [simd_float3]](./arplanegeometry/boundaryvertices-3h98l.md)
   An array of vertex positions for each point along the plane’s boundary.
+- [boundaryVertices](./arplanegeometry/boundaryvertices-6nbee.md)
+  A buffer of vertex positions for each point along the plane’s boundary.
+- [boundaryVertexCount](./arplanegeometry/boundaryvertexcount.md)
+  The number of elements in the [`boundaryVertices`](./arplanegeometry/boundaryvertices-6nbee.md) buffer.
 ### Initializers
 - [init?(coder: NSCoder)](./arplanegeometry/init%28coder%29.md)
 

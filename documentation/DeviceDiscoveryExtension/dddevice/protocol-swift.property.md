@@ -38,6 +38,8 @@ The value is [`DDDevice.Protocol.dial`](./protocol-swift.enum/dial.md) for the d
   An identifier to communicate with the device through Bluetooth wireless technology.
 - [var networkEndpoint: NWEndpoint?](./networkendpoint-3lah1.md)
   An object that describes a local-network device.
+- [networkEndpoint](./networkendpoint-7excg.md)
+  An object that describes a local-network device.
 
 
 ---

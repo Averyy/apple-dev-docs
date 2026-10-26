@@ -32,6 +32,8 @@ An inking item represents a [`PKInkingTool`](./pkinkingtool-swift.struct.md) —
 ### Accessing the inking tool
 - [var inkingTool: PKInkingTool](./pktoolpickerinkingitem/inkingtool-1hcet.md)
   A tool for drawing on a canvas view.
+- [inkingTool](./pktoolpickerinkingitem/inkingtool-625y9.md)
+  A tool for drawing on a canvas view.
 ### Initializers
 - [convenience init(type: PKInkingTool.InkType, color: UIColor?, width: CGFloat?, azimuth: CGFloat?, identifier: String?)](./pktoolpickerinkingitem/init%28type,color,width,azimuth,identifier%29-7gkxh.md)
   Create a new inking tool item.
@@ -44,6 +46,18 @@ An inking item represents a [`PKInkingTool`](./pkinkingtool-swift.struct.md) —
 ### Instance Properties
 - [var allowsColorSelection: Bool](./pktoolpickerinkingitem/allowscolorselection.md)
   Present color selection UI to the user. Default value is YES.
+### Creating an inking item
+- [- initWithInkType:color:width:](./pktoolpickerinkingitem/initwithinktype_color_width_.md)
+  Creates a new inking item with the specified ink type, color, and width.
+- [- initWithInkType:color:width:identifier:](./pktoolpickerinkingitem/initwithinktype_color_width_identifier_.md)
+  Creates a new inking item with the specified ink type, color, width, and identifier.
+### Instance Methods
+- [- initWithInkType:](./pktoolpickerinkingitem/initwithinktype_.md)
+  Create a new tool picker item with a `PKInkType`.
+- [- initWithInkType:color:](./pktoolpickerinkingitem/initwithinktype_color_.md)
+- [- initWithInkType:color:width:azimuth:identifier:](./pktoolpickerinkingitem/initwithinktype_color_width_azimuth_identifier_.md)
+- [- initWithInkType:width:](./pktoolpickerinkingitem/initwithinktype_width_.md)
+  Create a new tool picker item with a `PKInkType`.
 
 ## Relationships
 

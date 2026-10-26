@@ -44,6 +44,8 @@ When SceneKit renders a geometry, each geometry element corresponds to a drawing
   Creates a geometry element from the specified array of index values.
 - [convenience init(data: Data?, primitiveType: SCNGeometryPrimitiveType, primitiveCount: Int, bytesPerIndex: Int)](./scngeometryelement/init%28data,primitivetype,primitivecount,bytesperindex%29.md)
   Creates a geometry element from the specified data and options.
+- [+ geometryElementWithMDLSubmesh:](./scngeometryelement/geometryelementwithmdlsubmesh_.md)
+  Creates a geometry element from the specified Model I/O submesh object.
 ### Working with Indexes
 - [var data: Data](./scngeometryelement/data.md)
   The data describing the geometry element.

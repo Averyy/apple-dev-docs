@@ -40,7 +40,7 @@ Use this method to generate preview versions of the edited Live Photo—for exam
 - `options`: Options that affect Live Photo rendering. See `Live Photo Processing Options`.
 - `handler`: A block that Photos calls on the main queue after processing is complete. The block takes the following parameters:
 
-  - **livePhoto**: The rendered Live Photo, suitable for displaying in a [`PHLivePhotoView`](https://developer.apple.com/documentation/photosui/phlivephotoview) object.
+  - **livePhoto**: The rendered Live Photo, suitable for displaying in a [`PHLivePhotoView`](../../PhotosUI/phlivephotoview.md) object.
   - **error**: If preparing the edited Live Photo for display succeeds, this parameter is `nil`. If processing fails, the `livePhoto` parameter is `nil`, and this parameter contains an error object describing the failure.
 
 ## See Also

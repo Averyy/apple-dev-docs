@@ -63,6 +63,8 @@ The canonical audio sample type for audio units and other audio processing in iP
 - [typealias AudioSampleType](./audiosampletype.md)
   The canonical audio data sample type for input and output.
 - [struct AudioFormatListItem](./audioformatlistitem.md)
+- [AVAudioSessionErrorInsufficientPriority](./avaudiosessionerrorinsufficientpriority.md)
+  An error code that indicates the app isn’t allowed to set the audio category because it’s in use by another app.
 
 
 ---

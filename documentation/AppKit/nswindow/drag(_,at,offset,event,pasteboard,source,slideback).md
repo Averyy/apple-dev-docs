@@ -64,6 +64,15 @@ This method should be invoked only from within a view’s implementation of the 
   Returns a Cocoa window created from a Carbon window.
 - [func disableScreenUpdatesUntilFlush()](./disablescreenupdatesuntilflush%28%29.md)
   Disables the window’s screen updates until the window is flushed.
+- [- convertBaseToScreen:](./convertbasetoscreen_.md)
+  Converts a given point from the window’s base coordinate system to the screen coordinate system.
+- [- convertScreenToBase:](./convertscreentobase_.md)
+  Converts a given point from the screen coordinate system to the window’s base coordinate system.
+- [- userSpaceScaleFactor](./userspacescalefactor.md)
+  Returns the scale factor applied to the window.
+### Related Documentation
+- [- dragImage:at:offset:event:pasteboard:source:slideBack:](../nsview/dragimage_at_offset_event_pasteboard_source_slideback_.md)
+  Initiates a dragging operation from the view, allowing the user to drag arbitrary data with a specified icon into any application that has window or view objects that accept dragged data.
 
 
 ---

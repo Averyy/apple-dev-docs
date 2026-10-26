@@ -40,6 +40,8 @@ Use this method when you can resolve the parameter to a similar workout location
 ### Creating a Resolution Result Object
 - [class func success(with: INWorkoutLocationType) -> Self](./success%28with%29.md)
   Creates an object whose resolution involves the successful matching of the specified parameter.
+- [+ successWithResolvedValue:](./successwithresolvedvalue_.md)
+- [+ confirmationRequiredWithValueToConfirm:](./confirmationrequiredwithvaluetoconfirm_.md)
 
 
 ---

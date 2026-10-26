@@ -89,7 +89,7 @@ if __name__ == '__main__':
 
 ##### Run the Script
 
-Start the command prompt and change to the directory containing `read_channel.py`. Run this script to make a properly authenticated [`Read Channel Information`](https://developer.apple.com/documentation/applenewsapi/get-channels-_channelid_) request to the Apple News API. This script takes four arguments: API URL `(https://news-api.apple.com`), Channel ID, Key ID, and the Secret.
+Start the command prompt and change to the directory containing `read_channel.py`. Run this script to make a properly authenticated [`Read Channel Information`](../AppleNewsAPI/get-channels-_channelid_.md) request to the Apple News API. This script takes four arguments: API URL `(https://news-api.apple.com`), Channel ID, Key ID, and the Secret.
 
 ```swift
 python read_channel.py https://news-api.apple.com channel_id key_id key_secret
@@ -97,7 +97,7 @@ python read_channel.py https://news-api.apple.com channel_id key_id key_secret
 
 ##### Result
 
-The server returns a  successful response. The response includes information about the channel, as shown here. See [`Channel`](https://developer.apple.com/documentation/applenewsapi/channel) and [`ChannelLinks`](https://developer.apple.com/documentation/applenewsapi/channellinks).
+The server returns a  successful response. The response includes information about the channel, as shown here. See [`Channel`](../AppleNewsAPI/channel.md) and [`ChannelLinks`](../AppleNewsAPI/channellinks.md).
 
 ```json
 {

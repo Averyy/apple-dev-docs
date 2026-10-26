@@ -38,6 +38,8 @@ protocol CKRecordKeyValueSetting : NSObjectProtocol
   Returns an array of the record’s keys.
 - [func changedKeys() -> [String]](./ckrecordkeyvaluesetting/changedkeys%28%29.md)
   Returns an array of keys with recent changes to their values.
+- [- setObject:forKeyedSubscript:](./ckrecordkeyvaluesetting/setobject_forkeyedsubscript_.md)
+  Stores an object in the record using the specified key.
 
 ## Relationships
 
@@ -70,6 +72,30 @@ protocol CKRecordKeyValueSetting : NSObjectProtocol
   A description of a CloudKit record value.
 - [typealias CKRecordValue](./ckrecordvalue-swift.typealias.md)
   A data type for objects that CloudKit stores on the server.
+- [- objectForKey:](./ckrecord/objectforkey_.md)
+  Returns the object that the record stores for the specified key.
+- [- setObject:forKey:](./ckrecord/setobject_forkey_.md)
+  Stores an object in the record using the specified key.
+- [- setObject:forKeyedSubscript:](./ckrecord/setobject_forkeyedsubscript_.md)
+  Stores an object in the record using the specified key.
+- [- allKeys](./ckrecord/allkeys.md)
+  Returns an array of the record’s keys.
+- [- changedKeys](./ckrecord/changedkeys.md)
+  Returns an array of keys with recent changes to their values.
+- [CKRecordCreationDateKey](./ckrecordcreationdatekey.md)
+  A key constant that a record uses for its CKRecord.creationDate.
+- [CKRecordCreatorUserRecordIDKey](./ckrecordcreatoruserrecordidkey.md)
+  A key constant that a record uses for its CKRecord.creatorUserRecordID.
+- [CKRecordLastModifiedUserRecordIDKey](./ckrecordlastmodifieduserrecordidkey.md)
+  A key constant that a record uses for its CKRecord.lastModifiedUserRecordID.
+- [CKRecordModificationDateKey](./ckrecordmodificationdatekey.md)
+  A key constant that a record uses for its CKRecord.modificationDate.
+- [CKRecordRecordIDKey](./ckrecordrecordidkey.md)
+  A key constant that a record uses for its CKRecord.recordID.
+- [CKRecordParentKey](./ckrecordparentkey-2kx8l.md)
+  The key constant that a record uses for its CKRecord.parent.
+- [CKRecordShareKey](./ckrecordsharekey-rrat.md)
+  The key constant that a record uses for its CKRecord.share.
 
 
 ---

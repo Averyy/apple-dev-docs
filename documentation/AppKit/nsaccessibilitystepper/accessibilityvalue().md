@@ -36,6 +36,9 @@ This method is the getter for the [`NSAccessibilityProtocol`](../nsaccessibility
   Decrements the stepper’s value.
 - [func accessibilityPerformIncrement() -> Bool](./accessibilityperformincrement%28%29.md)
   Increments the stepper’s value.
+### Related Documentation
+- [accessibilityValue](../nsaccessibility-c.protocol/accessibilityvalue.md)
+  The accessibility element’s value.
 
 
 ---

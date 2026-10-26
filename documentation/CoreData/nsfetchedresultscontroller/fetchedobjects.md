@@ -38,6 +38,8 @@ The results array reflects the in-memory state of managed objects in the control
 ### Related Documentation
 - [func fetch(NSFetchRequest<any NSFetchRequestResult>) throws -> [Any]](../nsmanagedobjectcontext/fetch%28_%29-38ys1.md)
   Returns an array of objects that meet the criteria of the specified fetch request.
+- [- executeFetchRequest:error:](../nsmanagedobjectcontext/executefetchrequest_error_.md)
+  Returns an array of objects that meet the criteria of the specified fetch request.
 ### Accessing Results
 - [func object(at: IndexPath) -> ResultType](./object%28at%29.md)
   Returns the object at the given index path in the fetch results.

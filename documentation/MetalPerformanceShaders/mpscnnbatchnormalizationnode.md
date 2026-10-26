@@ -31,6 +31,8 @@ class MPSCNNBatchNormalizationNode
 ### Instance Properties
 - [var flags: MPSCNNBatchNormalizationFlags](./mpscnnbatchnormalizationnode/flags.md)
 - [var trainingStyle: MPSNNTrainingStyle](./mpscnnbatchnormalizationnode/trainingstyle.md)
+### Type Methods
+- [+ nodeWithSource:dataSource:](./mpscnnbatchnormalizationnode/nodewithsource_datasource_.md)
 
 ## Relationships
 

@@ -66,6 +66,10 @@ CFString is “toll-free bridged” with its Cocoa Foundation counterpart, [`NSS
   Creates a CFString object from an external Pascal string buffer that might serve as the backing store for the object.
 - [func CFStringCreateWithSubstring(CFAllocator!, CFString!, CFRange) -> CFString!](./cfstringcreatewithsubstring%28_,_,_%29.md)
   Creates an immutable string from a segment (substring) of an existing string.
+- [CFSTR](./cfstr.md)
+  Creates an immutable string from a constant compile-time string.
+- [CFStringCreateWithFormat](./cfstringcreatewithformat.md)
+  Creates an immutable string from a formatted string and a variable number of arguments.
 ### Searching Strings
 - [func CFStringCreateArrayWithFindResults(CFAllocator!, CFString!, CFString!, CFRange, CFStringCompareFlags) -> CFArray!](./cfstringcreatearraywithfindresults%28_,_,_,_,_%29.md)
   Searches a string for multiple occurrences of a substring and creates an array of ranges identifying the locations of these substrings within the target string.

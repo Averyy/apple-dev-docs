@@ -61,6 +61,9 @@ class DOMNode
 - [func normalize()](./domnode/normalize%28%29.md)
 - [func removeChild(DOMNode!) -> DOMNode!](./domnode/removechild%28_%29.md)
 - [func replaceChild(DOMNode!, oldChild: DOMNode!) -> DOMNode!](./domnode/replacechild%28_,oldchild%29.md)
+- [- insertBefore::](./domnode/insertbefore__.md)
+- [- isSupported::](./domnode/issupported__.md)
+- [- replaceChild::](./domnode/replacechild__.md)
 
 ## Relationships
 

@@ -50,6 +50,10 @@ One of the objects in the set, or `nil` if the set contains no objects. The obje
   Returns a set of objects that pass a test in a given block.
 - [func objects(options: NSEnumerationOptions, passingTest: (Any, UnsafeMutablePointer<ObjCBool>) -> Bool) -> Set<AnyHashable>](./objects%28options,passingtest%29.md)
   Returns a set of objects that pass a test in a given block, using the specified enumeration options.
+- [- makeObjectsPerformSelector:](./makeobjectsperformselector_.md)
+  Sends a message specified by a given selector to each object in the set.
+- [- makeObjectsPerformSelector:withObject:](./makeobjectsperformselector_withobject_.md)
+  Sends a message specified by a given selector to each object in the set.
 
 
 ---

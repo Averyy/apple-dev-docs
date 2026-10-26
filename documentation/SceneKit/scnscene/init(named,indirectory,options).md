@@ -50,6 +50,8 @@ When creating a scene using Xcode’s Scene Editor or an external tool, you shou
   Loads a scene from a file with the specified name in the app’s main bundle.
 - [convenience init(url: URL, options: [SCNSceneSource.LoadingOption : Any]?) throws](./init%28url,options%29-7ugvv.md)
   Loads a scene from the specified URL.
+- [+ scene](./scene.md)
+  Creates and returns an empty scene.
 
 
 ---

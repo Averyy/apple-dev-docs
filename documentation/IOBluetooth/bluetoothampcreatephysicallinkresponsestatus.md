@@ -24,6 +24,14 @@ typedef enum { ... } BluetoothAMPCreatePhysicalLinkResponseStatus;
 - [init(rawValue: UInt32)](./bluetoothampcreatephysicallinkresponsestatus/init%28rawvalue%29.md)
 ### Instance Properties
 - [var rawValue: UInt32](./bluetoothampcreatephysicallinkresponsestatus/rawvalue.md)
+### Constants
+- [kBluetoothAMPManagerCreatePhysicalLinkResponseAMPDisconnectedPhysicalLinkRequestReceived](./kbluetoothampmanagercreatephysicallinkresponseampdisconnectedphysicallinkrequestreceived.md)
+- [kBluetoothAMPManagerCreatePhysicalLinkResponseCollisionOccurred](./kbluetoothampmanagercreatephysicallinkresponsecollisionoccurred.md)
+- [kBluetoothAMPManagerCreatePhysicalLinkResponseInvalidControllerID](./kbluetoothampmanagercreatephysicallinkresponseinvalidcontrollerid.md)
+- [kBluetoothAMPManagerCreatePhysicalLinkResponsePhysicalLinkAlreadyExists](./kbluetoothampmanagercreatephysicallinkresponsephysicallinkalreadyexists.md)
+- [kBluetoothAMPManagerCreatePhysicalLinkResponseSecurityViolation](./kbluetoothampmanagercreatephysicallinkresponsesecurityviolation.md)
+- [kBluetoothAMPManagerCreatePhysicalLinkResponseSuccess](./kbluetoothampmanagercreatephysicallinkresponsesuccess.md)
+- [kBluetoothAMPManagerCreatePhysicalLinkResponseUnableToStartLinkCreation](./kbluetoothampmanagercreatephysicallinkresponseunabletostartlinkcreation.md)
 
 ## Relationships
 

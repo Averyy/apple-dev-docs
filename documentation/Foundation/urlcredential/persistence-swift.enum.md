@@ -66,6 +66,10 @@ In macOS, credentials are stored in the user’s keychain. The credential’s in
   Creates a URL credential instance for server trust authentication, initialized with a accepted trust.
 - [init(user: String, password: String, persistence: URLCredential.Persistence)](./init%28user,password,persistence%29.md)
   Creates a URL credential instance initialized with a given user name and password, using a given persistence setting.
+- [+ credentialWithUser:password:persistence:](../nsurlcredential/credentialwithuser_password_persistence_.md)
+  Creates a URL credential instance for internet password authentication with a given user name and password, using a given persistence setting.
+- [+ credentialWithIdentity:certificates:persistence:](../nsurlcredential/credentialwithidentity_certificates_persistence_.md)
+  Creates a URL credential instance for resolving a client certificate authentication challenge.
 
 
 ---

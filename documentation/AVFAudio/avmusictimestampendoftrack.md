@@ -38,6 +38,8 @@ Pass this value as the length of an [`AVBeatRange`](./avbeatrange-c.struct.md) t
   Gets the beat position (timestamp) for the specified time in the track.
 - [typealias AVBeatRange](./avbeatrange-swift.typealias.md)
   A specific time range within a music track.
+- [AVBeatRange](./avbeatrange-c.struct.md)
+  A specific time range within a music track.
 
 
 ---

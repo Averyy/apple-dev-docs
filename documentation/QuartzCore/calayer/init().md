@@ -39,6 +39,8 @@ This is the designated initializer for layer objects that are not in the present
   Override to copy or initialize custom fields of the specified layer.
 - [init(remoteClientId: UInt32)](./init%28remoteclientid%29.md)
   Initializes a layer with a remote client ID.
+- [+ layer](./layer.md)
+  Creates and returns an instance of the layer object.
 
 
 ---

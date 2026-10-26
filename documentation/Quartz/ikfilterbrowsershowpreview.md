@@ -52,6 +52,12 @@ extern NSString * const IKFilterBrowserShowPreview;
   A key for  a subtitle attribute for an item in the image browser view.
 - [let IKImageBrowserCellsTitleAttributesKey: String](./ikimagebrowsercellstitleattributeskey.md)
   A key for  title attribute of an item in the image browser view.
+- [IKFilterBrowserFilterDoubleClickNotification](./ikfilterbrowserfilterdoubleclicknotification.md)
+  Posted when the user double-clicks a filter in the filter browser.
+- [IKFilterBrowserFilterSelectedNotification](./ikfilterbrowserfilterselectednotification.md)
+  Posted when the user clicks a filter name in the filter browser.
+- [IKFilterBrowserWillPreviewFilterNotification](./ikfilterbrowserwillpreviewfilternotification.md)
+  Posted before showing a filter preview, allowing an application to set the parameters of a filter.
 
 
 ---

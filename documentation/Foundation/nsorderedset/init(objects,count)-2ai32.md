@@ -66,6 +66,8 @@ This method is a designated initializer of `NSOrderedSet`.
   Initializes a new ordered set with the contents of a set, optionally copying the objects in the set.
 - [init()](./init%28%29.md)
   Initializes a newly allocated ordered set.
+- [- initWithObjects:](./initwithobjects_.md)
+  Initializes a newly allocated set with members taken from the specified list of objects.
 
 
 ---

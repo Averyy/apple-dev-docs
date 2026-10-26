@@ -82,6 +82,10 @@ To configure the content and appearance of your cell, you can set its [`contentC
   The view to use as the background for a selected cell.
 - [var multipleSelectionBackgroundView: UIView?](./uitableviewcell/multipleselectionbackgroundview.md)
   The background view to use for a selected cell when the table view allows multiple row selections.
+- [- defaultBackgroundConfiguration](./uitableviewcell/defaultbackgroundconfiguration.md)
+  Retrieves a background configuration with system default values.
+- [backgroundConfiguration](./uitableviewcell/backgroundconfiguration-93a2v.md)
+  The current background configuration of the cell.
 ### Managing the content
 - [func defaultContentConfiguration() -> UIListContentConfiguration](./uitableviewcell/defaultcontentconfiguration%28%29.md)
   Retrieves a default list content configuration for the cell’s style.
@@ -91,6 +95,10 @@ To configure the content and appearance of your cell, you can set its [`contentC
   A Boolean value that determines whether the cell automatically updates its content configuration when its state changes.
 - [var contentView: UIView](./uitableviewcell/contentview.md)
   The content view of the cell object.
+- [- defaultContentConfiguration](./uitableviewcell/defaultcontentconfiguration.md)
+  Retrieves a default list content configuration for the cell’s style.
+- [contentConfiguration](./uitableviewcell/contentconfiguration-2lzvp.md)
+  The current content configuration of the cell.
 ### Managing the state
 - [var configurationState: UICellConfigurationState](./uitableviewcell/configurationstate-4xwj0.md)
   The current configuration state of the cell.
@@ -101,6 +109,14 @@ To configure the content and appearance of your cell, you can set its [`contentC
 - [var configurationUpdateHandler: UITableViewCell.ConfigurationUpdateHandler?](./uitableviewcell/configurationupdatehandler-974.md)
   A block for handling updates to the cell’s configuration using the current state.
 - [UITableViewCell.ConfigurationUpdateHandler](./uitableviewcell/configurationupdatehandler-swift.typealias.md)
+  The type of block for handling updates to the cell’s configuration using the current state.
+- [configurationState](./uitableviewcell/configurationstate-5gw4n.md)
+  The current configuration state of the cell.
+- [- updateConfigurationUsingState:](./uitableviewcell/updateconfigurationusingstate_.md)
+  Updates the cell’s configuration using the current state.
+- [configurationUpdateHandler](./uitableviewcell/configurationupdatehandler-746ya.md)
+  A block for handling updates to the cell’s configuration using the current state.
+- [UITableViewCellConfigurationUpdateHandler](./uitableviewcellconfigurationupdatehandler.md)
   The type of block for handling updates to the cell’s configuration using the current state.
 ### Managing accessory views
 - [var accessoryType: UITableViewCell.AccessoryType](./uitableviewcell/accessorytype-swift.property.md)

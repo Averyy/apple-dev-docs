@@ -61,6 +61,10 @@ typedef NSString * UIActionIdentifier;
   Creates an action for capturing text using the device’s camera.
 - [typealias UIActionHandler](../uiactionhandler.md)
   A type that defines the closure for an action handler.
+- [+ actionWithTitle:image:identifier:handler:](./actionwithtitle_image_identifier_handler_.md)
+  Creates an action with the specified title, image, identifier, and handler.
+- [+ actionWithHandler:](./actionwithhandler_.md)
+  Creates an action with the specified handler.
 
 
 ---

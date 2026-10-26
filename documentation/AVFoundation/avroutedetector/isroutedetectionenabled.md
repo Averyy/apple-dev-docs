@@ -37,6 +37,8 @@ The default value is [`false`](../../Swift/false.md).
   A Boolean value that indicates whether the object detects more than one playback route.
 - [static let AVRouteDetectorMultipleRoutesDetectedDidChange: NSNotification.Name](../../Foundation/nsnotification/name-swift.struct/avroutedetectormultipleroutesdetecteddidchange.md)
   A notification the system posts when changes occur to its detected routes.
+- [AVRouteDetectorMultipleRoutesDetectedDidChangeNotification](../avroutedetectormultipleroutesdetecteddidchangenotification.md)
+  A notification the system posts when changes occur to its detected routes.
 
 
 ---

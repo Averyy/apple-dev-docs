@@ -40,6 +40,8 @@ static bool SPRotation3DIsZero(SPRotation3D rotation);
   Creates a rotation axis from the specified single-precision quaternion.
 - [static let zero: Rotation3D](./zero.md)
   The rotation with the zero value.
+- [SPEulerAngleOrder](../speulerangleorder.md)
+  Constants that describe the order of Euler angles.
 
 
 ---

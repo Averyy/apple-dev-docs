@@ -30,7 +30,7 @@ let targetLabColor = ColorConverter.rgbToLab(red: targetRGB[0],
                                              blue: targetRGB.count > 2 ? targetRGB[2] : targetRGB[0])
 ```
 
-The code below performs `entriesPerChannel` iterations from `0` to `1` over each color channel to populate the multidimensional lookup table data. With each iteration, the code calls [`simd_distance`](https://developer.apple.com/documentation/simd/simd_distance-2dror) to compute the Euclidean distance in L*a*b* color space between the target color and the color that red, green, and blue loops define.
+The code below performs `entriesPerChannel` iterations from `0` to `1` over each color channel to populate the multidimensional lookup table data. With each iteration, the code calls [`simd_distance`](../simd/simd_distance-2dror.md) to compute the Euclidean distance in L*a*b* color space between the target color and the color that red, green, and blue loops define.
 
 The distance between the two colors forms the basis for the amount of desaturation or darkening that the app applies to each color value in the lookup table.
 

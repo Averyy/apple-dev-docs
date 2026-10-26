@@ -35,6 +35,10 @@ HV_VM_EXITINFO_APIC_ACCESS_READ
 - [var HV_FAULT: Int](./hv_fault.md)
 - [var HV_IOAPIC_STATE_EXT_VER: Int32](./hv_ioapic_state_ext_ver.md)
 - [var HV_MEMORY_MAXPROT_EXEC: Int](./hv_memory_maxprot_exec.md)
+- [err_common_hypervisor](./err_common_hypervisor.md)
+- [err_sub_hypervisor](./err_sub_hypervisor.md)
+- [HV_API_AVAILABLE_ARM64](./hv_api_available_arm64.md)
+- [HV_API_AVAILABLE_X86_64](./hv_api_available_x86_64.md)
 
 
 ---

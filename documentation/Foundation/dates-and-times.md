@@ -14,12 +14,22 @@ Compare dates and times, and perform calendar and time zone calculations.
   The span of time between a specific start date and end date.
 - [typealias TimeInterval](./timeinterval.md)
   A number of seconds.
+- [NSDate](./nsdate.md)
+  A representation of a specific point in time, independent of any calendar or time zone.
+- [NSDateInterval](./nsdateinterval.md)
+  An object representing the span of time between a specific start date and end date.
 ### Calendrical Calculations
 - [struct DateComponents](./datecomponents.md)
   A date or time specified in terms of units (such as year, month, day, hour, and minute) to be evaluated in a calendar system and time zone.
 - [struct Calendar](./calendar.md)
   A definition of the relationships between calendar units and absolute points in time, providing features for calculation and comparison of dates.
 - [struct TimeZone](./timezone.md)
+  Information about standard time conventions associated with a specific geopolitical region.
+- [NSDateComponents](./nsdatecomponents.md)
+  An object that specifies a date or time in terms of units (such as year, month, day, hour, and minute) to be evaluated in a calendar system and time zone.
+- [NSCalendar](./nscalendar.md)
+  A definition of the relationships between calendar units and absolute points in time, providing features for calculation and comparison of dates.
+- [NSTimeZone](./nstimezone.md)
   Information about standard time conventions associated with a specific geopolitical region.
 ### Date Formatting
 - [class DateFormatter](./dateformatter.md)
@@ -33,6 +43,11 @@ Compare dates and times, and perform calendar and time zone calculations.
 ### Internationalization
 - [struct Locale](./locale.md)
   Information about linguistic, cultural, and technological conventions for use in formatting data for presentation.
+- [NSLocale](./nslocale.md)
+  Information about linguistic, cultural, and technological conventions for use in formatting data for presentation.
+### Deprecated
+- [NSCalendarDate](./nscalendardate.md)
+  A specialized date object with embedded calendar information.
 
 ## See Also
 

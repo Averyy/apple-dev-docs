@@ -30,6 +30,12 @@ The newly created media item collection.
 
 - `items`: The array of items you assign to the media item collection.
 
+## See Also
+
+### Creating a media item collection
+- [+ collectionWithItems:](./collectionwithitems_.md)
+  Creates a media item collection by copying an array of media items.
+
 
 ---
 

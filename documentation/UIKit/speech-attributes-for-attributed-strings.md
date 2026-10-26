@@ -22,6 +22,18 @@ Apply attributes to text in an attributed string to modify the pronunciation of 
 - [static let accessibilitySpeechSpellOut: NSAttributedString.Key](../Foundation/nsattributedstring/key/accessibilityspeechspellout.md)
 - [struct UIAccessibilityPriority](./uiaccessibilitypriority.md)
   Constants that specify priorities for accessibility announcements.
+- [UIAccessibilitySpeechAttributePunctuation](./uiaccessibilityspeechattributepunctuation.md)
+  A key that indicates whether to speak punctuation.
+- [UIAccessibilitySpeechAttributeLanguage](./uiaccessibilityspeechattributelanguage.md)
+  A key that indicates the language to use when speaking a string.
+- [UIAccessibilitySpeechAttributePitch](./uiaccessibilityspeechattributepitch.md)
+  A key that indicates the pitch to apply to spoken content.
+- [UIAccessibilitySpeechAttributeQueueAnnouncement](./uiaccessibilityspeechattributequeueannouncement.md)
+  A key that indicates whether to queue an announcement behind existing speech or to interrupt it.
+- [UIAccessibilitySpeechAttributeIPANotation](./uiaccessibilityspeechattributeipanotation.md)
+  A key that indicates the pronunciation of a specific word or phrase, such as a proper name.
+- [UIAccessibilitySpeechAttributeAnnouncementPriority](./uiaccessibilityspeechattributeannouncementpriority.md)
+- [UIAccessibilitySpeechAttributeSpellOut](./uiaccessibilityspeechattributespellout.md)
 
 ## See Also
 

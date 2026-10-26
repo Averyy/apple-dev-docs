@@ -40,7 +40,7 @@ To edit an asset’s photo or video content:
 4. Initialize a [`PHContentEditingOutput`](./phcontenteditingoutput.md) object. For photo- or video-only assets, use the editing output’s properties to provide edited asset data. For Live Photo assets, create a [`PHLivePhotoEditingContext`](./phlivephotoeditingcontext.md) object to edit the Live Photo content.
 5. Use a photo library change block to commit the edit. In the block, create a [`PHAssetChangeRequest`](./phassetchangerequest.md) object and set its [`contentEditingOutput`](./phassetchangerequest/contenteditingoutput.md) property to the editing output that you created. For more details, see [`PHPhotoLibrary`](./phphotolibrary.md).
 
-You can also edit assets from photo editing extensions. In this case, instead of working with a [`PHAsset`](./phasset.md) object, you implement methods in the [`PHContentEditingController`](https://developer.apple.com/documentation/photosui/phcontenteditingcontroller) protocol. Photos provides a [`PHContentEditingInput`](./phcontenteditinginput.md) object when your extension begins editing. When editing is complete, Photos requests a [`PHContentEditingOutput`](./phcontenteditingoutput.md) object that contains the edited asset content.
+You can also edit assets from photo editing extensions. In this case, instead of working with a [`PHAsset`](./phasset.md) object, you implement methods in the [`PHContentEditingController`](../PhotosUI/phcontenteditingcontroller.md) protocol. Photos provides a [`PHContentEditingInput`](./phcontenteditinginput.md) object when your extension begins editing. When editing is complete, Photos requests a [`PHContentEditingOutput`](./phcontenteditingoutput.md) object that contains the edited asset content.
 
 ## Topics
 

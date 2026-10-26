@@ -36,6 +36,8 @@ When a UI element draws to the screen, it automatically sets its appearance obje
   The appearance that the system uses for color and asset resolution, and that’s active for drawing, usually from locking focus on a view.
 - [func performAsCurrentDrawingAppearance(() -> Void)](./performascurrentdrawingappearance%28_%29.md)
   Sets the appearance to be the active drawing appearance and perform the specified block.
+- [currentDrawingAppearance](./currentdrawingappearance.md)
+  The appearance that the system uses for color and asset resolution, and that’s active for drawing, usually from locking focus on a view.
 
 
 ---

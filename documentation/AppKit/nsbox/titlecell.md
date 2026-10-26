@@ -38,6 +38,8 @@ var titleCell: Any { get }
   The rectangle in which the receiver’s title is drawn.
 - [var borderType: NSBorderType](./bordertype.md)
   The receiver’s border type.
+- [- setTitleWithMnemonic:](./settitlewithmnemonic_.md)
+  Sets the title of the receiver with a character denoted as an access key.
 
 
 ---

@@ -121,6 +121,18 @@ The function names begin with “v,” followed by a mnemonic for the type of op
   Unsigned 128-bit division.
 - [func vS128Divide(vSInt32, vSInt32, UnsafeMutablePointer<vSInt32>?) -> vSInt32](./vs128divide%28_,_,_%29.md)
   Signed 128-bit division.
+- [vU64Add](./vu64add.md)
+  Unsigned 64-bit addition (modular arithmetic).
+- [vS64Add](./vs64add.md)
+  Signed 64-bit addition (modular arithmetic).
+- [vU64Sub](./vu64sub.md)
+  Unsigned 64-bit subtraction (modular arithmetic).
+- [vS64Sub](./vs64sub.md)
+  Signed 64-bit subtraction (modular arithmetic).
+- [vU16HalfMultiply](./vu16halfmultiply.md)
+  Unsigned 16-bit multiplication; results are same width as multiplicands.
+- [vS16HalfMultiply](./vs16halfmultiply.md)
+  Signed 16-bit multiplication; results are same width as multiplicands.
 
 
 ---

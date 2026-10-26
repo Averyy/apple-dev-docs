@@ -28,6 +28,8 @@ The value for this key is an [`NSNumber`](../../Foundation/nsnumber.md) containi
 ### Keys
 - [class let launchUserNotificationUserInfoKey: String](./launchusernotificationuserinfokey.md)
   A key that indicates your app was launched because a user activated a notification in the Notification Center.
+- [NSApplicationLaunchRemoteNotificationKey](../nsapplicationlaunchremotenotificationkey.md)
+  Use this key to access the JSON push-notification payload from the user info dictionary of the `didFinishLaunchingNotification` notification.
 
 
 ---

@@ -23,6 +23,8 @@ protocol DOMEventTarget : NSCopying, NSObjectProtocol
 - [func addEventListener(String!, listener: (any DOMEventListener)!, useCapture: Bool)](./domeventtarget/addeventlistener%28_,listener,usecapture%29.md)
 - [func dispatchEvent(DOMEvent!) -> Bool](./domeventtarget/dispatchevent%28_%29.md)
 - [func removeEventListener(String!, listener: (any DOMEventListener)!, useCapture: Bool)](./domeventtarget/removeeventlistener%28_,listener,usecapture%29.md)
+- [- addEventListener:::](./domeventtarget/addeventlistener___.md)
+- [- removeEventListener:::](./domeventtarget/removeeventlistener___.md)
 
 ## Relationships
 

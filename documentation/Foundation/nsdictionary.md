@@ -149,6 +149,8 @@ If the behavior you want to add supplements that of the existing class, you coul
 ### Creating an Empty Dictionary
 - [init()](./nsdictionary/init%28%29.md)
   Initializes a newly allocated dictionary.
+- [+ dictionary](./nsdictionary/dictionary.md)
+  Creates an empty dictionary.
 ### Creating a Dictionary from Objects and Keys
 - [convenience init(objects: [Any], forKeys: [any NSCopying])](./nsdictionary/init%28objects,forkeys%29.md)
   Initializes a newly allocated dictionary with key-value pairs constructed from the provided arrays of keys and objects.
@@ -156,6 +158,14 @@ If the behavior you want to add supplements that of the existing class, you coul
   Initializes a newly allocated dictionary with the specified number of key-value pairs constructed from the provided C arrays of keys and objects.
 - [convenience init(object: Any, forKey: any NSCopying)](./nsdictionary/init%28object,forkey%29.md)
   Creates a dictionary containing a given key and value.
+- [+ dictionaryWithObjects:forKeys:](./nsdictionary/dictionarywithobjects_forkeys_.md)
+  Creates a dictionary containing entries constructed from the contents of an array of keys and an array of values.
+- [+ dictionaryWithObjects:forKeys:count:](./nsdictionary/dictionarywithobjects_forkeys_count_.md)
+  Creates a dictionary containing a specified number of objects from a C array.
+- [+ dictionaryWithObjectsAndKeys:](./nsdictionary/dictionarywithobjectsandkeys_.md)
+  Creates a dictionary containing entries constructed from the specified set of values and keys.
+- [- initWithObjectsAndKeys:](./nsdictionary/initwithobjectsandkeys_.md)
+  Initializes a newly allocated dictionary with entries constructed from the specified set of values and keys.
 ### Creating a Dictionary from Another Dictionary
 - [convenience init(dictionary: [AnyHashable : Any])](./nsdictionary/init%28dictionary%29-9fw1u.md)
   Initializes a newly allocated dictionary by placing in it the keys and values contained in another given dictionary.
@@ -163,11 +173,17 @@ If the behavior you want to add supplements that of the existing class, you coul
   Initializes a newly allocated dictionary using the objects contained in another given dictionary.
 - [convenience init(dictionaryLiteral: (Any, Any)...)](./nsdictionary/init%28dictionaryliteral%29.md)
   Initializes a newly allocated dictionary from the given key-value pairs.
+- [+ dictionaryWithDictionary:](./nsdictionary/dictionarywithdictionary_.md)
+  Creates a dictionary containing the keys and values from another given dictionary.
 ### Creating a Dictionary from an External Source
 - [convenience init(contentsOfURL: URL, error: ()) throws](./nsdictionary/init%28contentsofurl,error%29.md)
   Initializes a newly allocated dictionary using the keys and values found at a given URL.
 - [convenience init?(contentsOfFile: String)](./nsdictionary/init%28contentsoffile%29.md)
   Initializes a newly allocated dictionary using the keys and values found in a file at a given path.
+- [+ dictionaryWithContentsOfURL:error:](./nsdictionary/dictionarywithcontentsofurl_error_.md)
+  Creates a dictionary using the keys and values found in a resource specified by a given URL.
+- [+ dictionaryWithContentsOfFile:](./nsdictionary/dictionarywithcontentsoffile_.md)
+  Creates a dictionary using the keys and values found in a file specified by a given path.
 ### Creating a Dictionary from an NSCoder
 - [init?(coder: NSCoder)](./nsdictionary/init%28coder%29.md)
   Creates a dictionary initialized from data in the provided unarchiver.
@@ -197,6 +213,10 @@ If the behavior you want to add supplements that of the existing class, you coul
   Returns the value associated with a given key.
 - [subscript(Any) -> Any?](./nsdictionary/subscript%28_%29-1bt1b.md)
   Accesses the value associated with a given key.
+- [- getObjects:andKeys:count:](./nsdictionary/getobjects_andkeys_count_.md)
+  Returns by reference C arrays of the keys and values in the dictionary.
+- [- getObjects:andKeys:](./nsdictionary/getobjects_andkeys_.md)
+  Returns by reference C arrays of the keys and values in the dictionary.
 ### Enumerating Dictionaries
 - [func keyEnumerator() -> NSEnumerator](./nsdictionary/keyenumerator%28%29.md)
   Provides an enumerator to access the keys in the dictionary.
@@ -208,6 +228,8 @@ If the behavior you want to add supplements that of the existing class, you coul
   Applies a given block object to the entries of the dictionary, with options specifying how the enumeration is performed.
 - [func makeIterator() -> NSDictionary.Iterator](./nsdictionary/makeiterator%28%29.md)
   Returns an iterator over the elements of this sequence.
+- [- countByEnumeratingWithState:objects:count:](./nsdictionary/countbyenumeratingwithstate_objects_count_.md)
+  Returns by reference a C array of objects over which the sender should iterate.
 ### Sorting Dictionaries
 - [func keysSortedByValue(using: Selector) -> [Any]](./nsdictionary/keyssortedbyvalue%28using%29.md)
   Returns an array of the dictionary’s keys, in the order they would be in if the dictionary were sorted by its values.
@@ -283,6 +305,9 @@ If the behavior you want to add supplements that of the existing class, you coul
 - [ExpressibleByDictionaryLiteral Implementations](./nsdictionary/expressiblebydictionaryliteral-implementations.md)
 - [NSDictionary Implementations](./nsdictionary/nsdictionary-implementations.md)
 - [Sequence Implementations](./nsdictionary/sequence-implementations.md)
+### Type Methods
+- [+ dictionaryWithContentsOfURL:](./nsdictionary/dictionarywithcontentsofurl_.md)
+  Creates a dictionary using the keys and values found in a resource specified by a given URL.
 
 ## Relationships
 
@@ -308,6 +333,20 @@ If the behavior you want to add supplements that of the existing class, you coul
 - [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 - [NSSecureCoding](./nssecurecoding.md)
 - [Sequence](../Swift/sequence.md)
+
+## See Also
+
+### Basic Collections
+- [NSArray](./nsarray.md)
+  A static ordered collection of objects.
+- [NSMutableArray](./nsmutablearray.md)
+  A dynamic ordered collection of objects.
+- [NSMutableDictionary](./nsmutabledictionary.md)
+  A dynamic collection of objects associated with unique keys.
+- [NSSet](./nsset.md)
+  A static, unordered collection of unique objects.
+- [NSMutableSet](./nsmutableset.md)
+  A dynamic unordered collection of unique objects.
 
 
 ---

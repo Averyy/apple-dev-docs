@@ -42,6 +42,8 @@ When you load lights from an asset file using the [`MDLAsset`](./mdlasset.md) cl
 ### Constants
 - [enum MDLLightType](./mdllighttype.md)
   Options for the shape and style of illumination provided by a light, used by the [`lightType`](./mdllight/lighttype.md) property.
+### Type Methods
+- [+ lightWithSCNLight:](./mdllight/lightwithscnlight_.md)
 
 ## Relationships
 

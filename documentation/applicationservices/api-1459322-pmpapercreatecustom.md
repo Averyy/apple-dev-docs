@@ -42,6 +42,8 @@ This function creates a custom paper object appropriate for the specified printe
 ### Creating and Using Paper Objects
 - [func PMPaperIsCustom(PMPaper) -> Bool](./api-1459526-pmpaperiscustom.md)
   Returns a Boolean value indicating whether a specified paper is a custom paper.
+- [PMPaperCreate](./core_printing/api-1805531-pmpapercreate.md)
+  Creates a paper object.
 
 
 ---

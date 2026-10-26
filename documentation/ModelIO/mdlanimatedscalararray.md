@@ -37,6 +37,14 @@ class MDLAnimatedScalarArray
 - [func reset(floatArray: [Float], atTimes: [TimeInterval])](./mdlanimatedscalararray/reset%28floatarray,attimes%29.md)
 - [func set(doubleArray: [Double], atTime: TimeInterval)](./mdlanimatedscalararray/set%28doublearray,attime%29.md)
 - [func set(floatArray: [Float], atTime: TimeInterval)](./mdlanimatedscalararray/set%28floatarray,attime%29.md)
+- [- getDoubleArray:maxCount:](./mdlanimatedscalararray/getdoublearray_maxcount_.md)
+- [- getDoubleArray:maxCount:atTime:](./mdlanimatedscalararray/getdoublearray_maxcount_attime_.md)
+- [- getFloatArray:maxCount:](./mdlanimatedscalararray/getfloatarray_maxcount_.md)
+- [- getFloatArray:maxCount:atTime:](./mdlanimatedscalararray/getfloatarray_maxcount_attime_.md)
+- [- resetWithDoubleArray:count:atTimes:count:](./mdlanimatedscalararray/resetwithdoublearray_count_attimes_count_.md)
+- [- resetWithFloatArray:count:atTimes:count:](./mdlanimatedscalararray/resetwithfloatarray_count_attimes_count_.md)
+- [- setDoubleArray:count:atTime:](./mdlanimatedscalararray/setdoublearray_count_attime_.md)
+- [- setFloatArray:count:atTime:](./mdlanimatedscalararray/setfloatarray_count_attime_.md)
 
 ## Relationships
 

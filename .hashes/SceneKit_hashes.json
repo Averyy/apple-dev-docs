@@ -40,6 +40,16 @@
       "file_path": "documentation/SceneKit/contributor-keys.md",
       "hash": "730b2b310f563ed37cc2194e2b801415cb2370c642bfe617951cd5948b42b01a"
     },
+    "https://developer.apple.com/documentation/scenekit/glkmatrix4fromcatransform3d": {
+      "etag": "\"283c-65d55de878ca8-df\"",
+      "file_path": "documentation/SceneKit/glkmatrix4fromcatransform3d.md",
+      "hash": "db45e0466b938f310dc3ebf0f6bf04bdf290767cbdef8a67974a55f101fa1d06"
+    },
+    "https://developer.apple.com/documentation/scenekit/glkmatrix4tocatransform3d": {
+      "etag": "\"2830-65d55de96929b-df\"",
+      "file_path": "documentation/SceneKit/glkmatrix4tocatransform3d.md",
+      "hash": "bc891495c41a97703930dea53ac885995b5777117a1241569393e34d6801ebb8"
+    },
     "https://developer.apple.com/documentation/scenekit/lighting-attribute-keys": {
       "etag": "\"4af3-659025c3ae82e-df\"",
       "file_path": "documentation/SceneKit/lighting-attribute-keys.md",
@@ -155,10 +165,35 @@
       "file_path": "documentation/SceneKit/scn_enable_opengl.md",
       "hash": "4691dc05eeade1bfebf49e12d6ca9c72d2488157ba09c56ef5918e9f2ff14311"
     },
+    "https://developer.apple.com/documentation/scenekit/scn_export": {
+      "etag": "\"278a-65d55de8c9d9f-df\"",
+      "file_path": "documentation/SceneKit/scn_export.md",
+      "hash": "9a5e486ba1cd0bf40df8e83ff1e3af4922cb82fc32295ca531a9854fa1355643"
+    },
+    "https://developer.apple.com/documentation/scenekit/scn_gl_deprecated": {
+      "etag": "\"2904-65d55de89413f-df\"",
+      "file_path": "documentation/SceneKit/scn_gl_deprecated.md",
+      "hash": "fd089da9221bc975b5d271e64025f285d0bd18612ef173b38f5d7f488e199f08"
+    },
+    "https://developer.apple.com/documentation/scenekit/scn_gl_deprecated_ios": {
+      "etag": "\"28ac-65d55de8faf7d-df\"",
+      "file_path": "documentation/SceneKit/scn_gl_deprecated_ios.md",
+      "hash": "709ba29d9434ec19eb049ecfe7f6d16fee912c57d15cdd59a66052ea45ce14f2"
+    },
+    "https://developer.apple.com/documentation/scenekit/scn_gl_deprecated_mac": {
+      "etag": "\"28ac-65d55de89413f-df\"",
+      "file_path": "documentation/SceneKit/scn_gl_deprecated_mac.md",
+      "hash": "56225e69a515e9828197de728226e573aaaa8a620f5f692c59ad4458a7d638e5"
+    },
     "https://developer.apple.com/documentation/scenekit/scnaccelerationconstraint": {
       "etag": "\"59b4-65d55deac2972-df\"",
       "file_path": "documentation/SceneKit/scnaccelerationconstraint.md",
       "hash": "6404acd105d38636c2b8f26375210bdb6ce93306cbd5df1a574e36d68f6ca4bd"
+    },
+    "https://developer.apple.com/documentation/scenekit/scnaccelerationconstraint/accelerationconstraint": {
+      "etag": "\"11d6-65d55de878ca8-df\"",
+      "file_path": "documentation/SceneKit/scnaccelerationconstraint/accelerationconstraint.md",
+      "hash": "3b678f901f76038344be4259bc20f67817045b9ad65c94c79f4967ac827390ef"
     },
     "https://developer.apple.com/documentation/scenekit/scnaccelerationconstraint/damping": {
       "etag": "\"20ea-65d55de878ca8-df\"",
@@ -770,6 +805,16 @@
       "file_path": "documentation/SceneKit/scnaudioplayer/audionode.md",
       "hash": "0b2e420df65817c49185afa8fb726c722df7fac58811470fa008ad47c55b33b8"
     },
+    "https://developer.apple.com/documentation/scenekit/scnaudioplayer/audioplayerwithavaudionode:": {
+      "etag": "\"365f-65d55de8e1a60-df\"",
+      "file_path": "documentation/SceneKit/scnaudioplayer/audioplayerwithavaudionode_.md",
+      "hash": "c7e249823d0c1300087b7e397190dbf9af4ef64b991be3a2578d7084ba5654fe"
+    },
+    "https://developer.apple.com/documentation/scenekit/scnaudioplayer/audioplayerwithsource:": {
+      "etag": "\"2f0d-65d55de8e1a60-df\"",
+      "file_path": "documentation/SceneKit/scnaudioplayer/audioplayerwithsource_.md",
+      "hash": "2ab08a6536f1f4a35a26371dcdc5bc85aa112aa1dbf888c3927885700fc62b32"
+    },
     "https://developer.apple.com/documentation/scenekit/scnaudioplayer/audiosource": {
       "etag": "\"317f-65d55de8e1a60-df\"",
       "file_path": "documentation/SceneKit/scnaudioplayer/audiosource.md",
@@ -950,6 +995,11 @@
       "file_path": "documentation/SceneKit/scnbillboardconstraint.md",
       "hash": "84ced18aec0adcf09d97961fb1ffd601680208170a6516fee45608a28151b8a0"
     },
+    "https://developer.apple.com/documentation/scenekit/scnbillboardconstraint/billboardconstraint": {
+      "etag": "\"1e5a-65d55de89413f-df\"",
+      "file_path": "documentation/SceneKit/scnbillboardconstraint/billboardconstraint.md",
+      "hash": "ed452511142b92157e4a0498d278bacc357427e8aabad56b9cb072b3bdce71c7"
+    },
     "https://developer.apple.com/documentation/scenekit/scnbillboardconstraint/freeaxes": {
       "etag": "\"2dc0-65d55de89413f-df\"",
       "file_path": "documentation/SceneKit/scnbillboardconstraint/freeaxes.md",
@@ -1019,6 +1069,21 @@
       "etag": "\"2e7a-65d55de98b7c9-df\"",
       "file_path": "documentation/SceneKit/scnboundingvolume/boundingsphere.md",
       "hash": "5e0610402132481b9e8eb6c4b2ab62079d8768a6b04db6efbdc7d824c5239477"
+    },
+    "https://developer.apple.com/documentation/scenekit/scnboundingvolume/getboundingboxmin:max:": {
+      "etag": "\"3402-65d55de98b7c9-df\"",
+      "file_path": "documentation/SceneKit/scnboundingvolume/getboundingboxmin_max_.md",
+      "hash": "cb1af71f4adfaab324087f208212011f8c93c162596d295505a095ae2db37503"
+    },
+    "https://developer.apple.com/documentation/scenekit/scnboundingvolume/getboundingspherecenter:radius:": {
+      "etag": "\"35c5-65d55de98b7c9-df\"",
+      "file_path": "documentation/SceneKit/scnboundingvolume/getboundingspherecenter_radius_.md",
+      "hash": "2279575fe14f2f4559df301cf413420c4bd5562509a067ee107fd8dda731cd76"
+    },
+    "https://developer.apple.com/documentation/scenekit/scnboundingvolume/setboundingboxmin:max:": {
+      "etag": "\"26ba-65d55de98b7c9-df\"",
+      "file_path": "documentation/SceneKit/scnboundingvolume/setboundingboxmin_max_.md",
+      "hash": "c595c799b4a66f038606da4339c4c4b9df556e3891827012aed14a1112ae655b"
     },
     "https://developer.apple.com/documentation/scenekit/scnbox": {
       "etag": "\"bfa5-65d55deac2972-df\"",
@@ -1159,6 +1224,16 @@
       "etag": "\"4aae-65d55dea86ed3-df\"",
       "file_path": "documentation/SceneKit/scncamera/bloomthreshold.md",
       "hash": "c79c54bc646b6e4532bc8cf0b264365342cce5cd1154e7b18e46267524f8feff"
+    },
+    "https://developer.apple.com/documentation/scenekit/scncamera/camera": {
+      "etag": "\"1ef7-65d55dea6c452-df\"",
+      "file_path": "documentation/SceneKit/scncamera/camera.md",
+      "hash": "52ebb70bf37781e7bd9ee260a9e64d2727681090ec9be41a6a233ce238ccd657"
+    },
+    "https://developer.apple.com/documentation/scenekit/scncamera/camerawithmdlcamera:": {
+      "etag": "\"1e8b-65d55dea86ed3-df\"",
+      "file_path": "documentation/SceneKit/scncamera/camerawithmdlcamera_.md",
+      "hash": "162863f172b78f45f79749f8ebf0f600d2959cb4a74aa58d34e85e4018f33591"
     },
     "https://developer.apple.com/documentation/scenekit/scncamera/categorybitmask": {
       "etag": "\"29e7-65d55dea86ed3-df\"",
@@ -1670,6 +1745,11 @@
       "file_path": "documentation/SceneKit/scnclamptoborder.md",
       "hash": "97c514b10dcfb4ca7a1f976331b74537f9d3366ee8b0b1e3239cdaa3b2712f27"
     },
+    "https://developer.apple.com/documentation/scenekit/scncolor": {
+      "etag": "\"281a-65d55de96929b-df\"",
+      "file_path": "documentation/SceneKit/scncolor.md",
+      "hash": "bc51db4767bc3e35498bcf419eda7d54ace0fef5ec80c758251e476413d2f430"
+    },
     "https://developer.apple.com/documentation/scenekit/scncolormask": {
       "etag": "\"5786-65d55de8c9d9f-df\"",
       "file_path": "documentation/SceneKit/scncolormask.md",
@@ -1704,6 +1784,11 @@
       "etag": "\"1a14-65d55de92d716-df\"",
       "file_path": "documentation/SceneKit/scncolormask/red.md",
       "hash": "6eb95bdc3e5cc8a2313615277ac9af6baf2c03f24bbb4a356fc0b30391e56fef"
+    },
+    "https://developer.apple.com/documentation/scenekit/scncolormask/scncolormasknone": {
+      "etag": "\"fc2-65d55de92d716-df\"",
+      "file_path": "documentation/SceneKit/scncolormask/scncolormasknone.md",
+      "hash": "7e234c79f6aaacd9f2671d5ec6c4daf8ca50fac86b901fa9dac6b347eaedaab8"
     },
     "https://developer.apple.com/documentation/scenekit/scncone": {
       "etag": "\"b272-65d55de77030b-df\"",
@@ -1810,6 +1895,16 @@
       "file_path": "documentation/SceneKit/scnconstraint/isincremental.md",
       "hash": "d159c736403ceb266afa72682ac3139ea814c147ba118b4f7a173b336644a661"
     },
+    "https://developer.apple.com/documentation/scenekit/scncullback": {
+      "etag": "\"c1b-65d55de8faf7d-df\"",
+      "file_path": "documentation/SceneKit/scncullback.md",
+      "hash": "a8e0bf59e8358af287abb3c8b304ed7829eb21ea9b5811ac47f18020781807df"
+    },
+    "https://developer.apple.com/documentation/scenekit/scncullfront": {
+      "etag": "\"c27-65d55de96929b-df\"",
+      "file_path": "documentation/SceneKit/scncullfront.md",
+      "hash": "a8cb66d3053e760364548a4d2c661fa509b228daff34922dd6d0d23b06a2ffcd"
+    },
     "https://developer.apple.com/documentation/scenekit/scncullmode": {
       "etag": "\"4db1-65d55de8afb81-df\"",
       "file_path": "documentation/SceneKit/scncullmode.md",
@@ -1874,6 +1969,11 @@
       "etag": "\"3f26-65d55de8637be-df\"",
       "file_path": "documentation/SceneKit/scndebugoptions/renderaswireframe.md",
       "hash": "0168e6b3150aad2e90fe91470d57f786d9326be7f0fa01dc8451bd982cd61406"
+    },
+    "https://developer.apple.com/documentation/scenekit/scndebugoptions/scndebugoptionnone": {
+      "etag": "\"15f1-65d55de849dd5-df\"",
+      "file_path": "documentation/SceneKit/scndebugoptions/scndebugoptionnone.md",
+      "hash": "3e62a43dc1155df5bea45e95efc2c02861e6c1cd1bb9d2260e0304409c787e94"
     },
     "https://developer.apple.com/documentation/scenekit/scndebugoptions/showboundingboxes": {
       "etag": "\"3d5d-65d55de849dd5-df\"",
@@ -2035,6 +2135,11 @@
       "file_path": "documentation/SceneKit/scnfloor.md",
       "hash": "9f507ee4e7447de5d778aad1fe3c9c4f277e34affa73c9851bd24669f8bbdc63"
     },
+    "https://developer.apple.com/documentation/scenekit/scnfloor/floor": {
+      "etag": "\"1291-65d55deb23558-df\"",
+      "file_path": "documentation/SceneKit/scnfloor/floor.md",
+      "hash": "6b7b629faee6b3907e81bb55f3b96be3c661e893662b3c0837cfd268a322564d"
+    },
     "https://developer.apple.com/documentation/scenekit/scnfloor/length": {
       "etag": "\"2831-65d55deb23558-df\"",
       "file_path": "documentation/SceneKit/scnfloor/length.md",
@@ -2105,10 +2210,20 @@
       "file_path": "documentation/SceneKit/scngeometry/firstmaterial.md",
       "hash": "173253c095fe55a9cac603770e5e87cccf669094dde04db10707e049a9eeddab"
     },
+    "https://developer.apple.com/documentation/scenekit/scngeometry/geometry": {
+      "etag": "\"3320-65d55de8637be-df\"",
+      "file_path": "documentation/SceneKit/scngeometry/geometry.md",
+      "hash": "bddc7bb7fa55525415146753588431393102fdfde766bec7564fb157a5d47616"
+    },
     "https://developer.apple.com/documentation/scenekit/scngeometry/geometrysourcechannels": {
       "etag": "\"1fba-65d55de8637be-df\"",
       "file_path": "documentation/SceneKit/scngeometry/geometrysourcechannels.md",
       "hash": "febff9560e621ff39453a65fe7d6e441c4bd98c54f321a18955d88376dae95d4"
+    },
+    "https://developer.apple.com/documentation/scenekit/scngeometry/geometrywithmdlmesh:": {
+      "etag": "\"2f91-65d55de8637be-df\"",
+      "file_path": "documentation/SceneKit/scngeometry/geometrywithmdlmesh_.md",
+      "hash": "d19bba9bf7c3fbbb0cbddcd90e8d5fd98ea800558f2ee7ef736d1ed40b1ad401"
     },
     "https://developer.apple.com/documentation/scenekit/scngeometry/init(coder:)": {
       "etag": "\"1472-65d55de8637be-df\"",
@@ -2199,6 +2314,11 @@
       "etag": "\"3cd3-65d55de8e1a60-df\"",
       "file_path": "documentation/SceneKit/scngeometryelement/data.md",
       "hash": "8440d55ff725279ab71e4c630245f106c8312f8d5520888b0827b97fca90c398"
+    },
+    "https://developer.apple.com/documentation/scenekit/scngeometryelement/geometryelementwithmdlsubmesh:": {
+      "etag": "\"2f29-65d55de8e1a60-df\"",
+      "file_path": "documentation/SceneKit/scngeometryelement/geometryelementwithmdlsubmesh_.md",
+      "hash": "e5fc49ef0f1d9c60f5368974416e4f2968d4a0fb08a036d1fcff37f46b901f17"
     },
     "https://developer.apple.com/documentation/scenekit/scngeometryelement/hasinterleavedindiceschannels": {
       "etag": "\"2211-65d55de8e1a60-df\"",
@@ -2334,6 +2454,21 @@
       "etag": "\"46fb-65d55deafb69b-df\"",
       "file_path": "documentation/SceneKit/scngeometrysource/datastride.md",
       "hash": "89b634e98fd3b26db7fc6214999e8d8b1630310eeaa18d406bfffebdb1e3ef17"
+    },
+    "https://developer.apple.com/documentation/scenekit/scngeometrysource/geometrysourcewithnormals:count:": {
+      "etag": "\"476b-65d55deafb69b-df\"",
+      "file_path": "documentation/SceneKit/scngeometrysource/geometrysourcewithnormals_count_.md",
+      "hash": "eec6def864842d26873e3201f3f015242c9a8e48610876acee407d962c59fadb"
+    },
+    "https://developer.apple.com/documentation/scenekit/scngeometrysource/geometrysourcewithtexturecoordinates:count:": {
+      "etag": "\"4672-65d55deafb69b-df\"",
+      "file_path": "documentation/SceneKit/scngeometrysource/geometrysourcewithtexturecoordinates_count_.md",
+      "hash": "df7e025b1dc54f214a851f078091959c0a2a088808670e93da99d3678e09597c"
+    },
+    "https://developer.apple.com/documentation/scenekit/scngeometrysource/geometrysourcewithvertices:count:": {
+      "etag": "\"4779-65d55deafb69b-df\"",
+      "file_path": "documentation/SceneKit/scngeometrysource/geometrysourcewithvertices_count_.md",
+      "hash": "cf45aaa6b145d176faf79c8fc94d537a156b495b3b9b73208f19004c9149c2fa"
     },
     "https://developer.apple.com/documentation/scenekit/scngeometrysource/init(buffer:vertexformat:semantic:vertexcount:dataoffset:datastride:)": {
       "etag": "\"7a4c-65d55deafb69b-df\"",
@@ -2559,6 +2694,46 @@
       "etag": "\"414b-65d55dea2db72-df\"",
       "file_path": "documentation/SceneKit/scnhittestoption/sortresults.md",
       "hash": "76ead2a4782143689e20b77eb47e359134bcd720282963fba798573da4dfc720"
+    },
+    "https://developer.apple.com/documentation/scenekit/scnhittestoptionbackfaceculling": {
+      "etag": "\"28a4-65d55de92d716-df\"",
+      "file_path": "documentation/SceneKit/scnhittestoptionbackfaceculling.md",
+      "hash": "1ca9aef861264862433537ecf26943a54ab203095e5376f0adaba0e647d29de9"
+    },
+    "https://developer.apple.com/documentation/scenekit/scnhittestoptionboundingboxonly": {
+      "etag": "\"28a4-65d55de8637be-df\"",
+      "file_path": "documentation/SceneKit/scnhittestoptionboundingboxonly.md",
+      "hash": "0f3234d8a74a32b26b96bf14a4212a7cde9481c426a6bc1f395b9c63042342c0"
+    },
+    "https://developer.apple.com/documentation/scenekit/scnhittestoptioncliptozrange": {
+      "etag": "\"2892-65d55de8faf7d-df\"",
+      "file_path": "documentation/SceneKit/scnhittestoptioncliptozrange.md",
+      "hash": "10ac523b0da4fdf43cec13a079543179d353624b50c3b4b643c89be3eb935956"
+    },
+    "https://developer.apple.com/documentation/scenekit/scnhittestoptionfirstfoundonly": {
+      "etag": "\"289e-65d55de8afb81-df\"",
+      "file_path": "documentation/SceneKit/scnhittestoptionfirstfoundonly.md",
+      "hash": "d81959dd83d7e8b2d3a4227296e102bc9ab79f76779b057e80539ffa000e38dc"
+    },
+    "https://developer.apple.com/documentation/scenekit/scnhittestoptionignorechildnodes": {
+      "etag": "\"28aa-65d55de98b7c9-df\"",
+      "file_path": "documentation/SceneKit/scnhittestoptionignorechildnodes.md",
+      "hash": "8f0a4ed4398fb236669919c372dd25f43cff4804e260b87399ade7b48fe91122"
+    },
+    "https://developer.apple.com/documentation/scenekit/scnhittestoptionignorehiddennodes": {
+      "etag": "\"28b0-65d55de8637be-df\"",
+      "file_path": "documentation/SceneKit/scnhittestoptionignorehiddennodes.md",
+      "hash": "a23be2a30e6451ce55db8c70b6f375a9bf7d30395af0941d7b88da40e18c7f4d"
+    },
+    "https://developer.apple.com/documentation/scenekit/scnhittestoptionrootnode": {
+      "etag": "\"287a-65d55deb3c3f9-df\"",
+      "file_path": "documentation/SceneKit/scnhittestoptionrootnode.md",
+      "hash": "d5adee5fa82acf911ae84532eaadb83a55a37312b34bd994c08e5dda0f4cd59b"
+    },
+    "https://developer.apple.com/documentation/scenekit/scnhittestoptionsortresults": {
+      "etag": "\"288c-65d55de9c221d-df\"",
+      "file_path": "documentation/SceneKit/scnhittestoptionsortresults.md",
+      "hash": "574a0705eb29c26d92a7097f1c09d979b75e50c4bf78addb14f7b8595d1ac009"
     },
     "https://developer.apple.com/documentation/scenekit/scnhittestresult": {
       "etag": "\"b9d9-65d55de947fbe-df\"",
@@ -2885,6 +3060,11 @@
       "file_path": "documentation/SceneKit/scnlight/intensity.md",
       "hash": "d2c363f5106b3aa1513bb66232d71c10c873c772ee9ce0d7a2306c6eb8941acc"
     },
+    "https://developer.apple.com/documentation/scenekit/scnlight/light": {
+      "etag": "\"1417-65d55deaddc66-df\"",
+      "file_path": "documentation/SceneKit/scnlight/light.md",
+      "hash": "4499671b4433a807622388289e312e6deda4664754ea1717f477a1c72b3b9e1c"
+    },
     "https://developer.apple.com/documentation/scenekit/scnlight/lighttype": {
       "etag": "\"71da-65d55deafb69b-df\"",
       "file_path": "documentation/SceneKit/scnlight/lighttype.md",
@@ -2929,6 +3109,11 @@
       "etag": "\"48de-65d55deaddc66-df\"",
       "file_path": "documentation/SceneKit/scnlight/lighttype/spot.md",
       "hash": "75517b4a8f31f6868939edead5eeb91882c6b5adc44da136cbf6994cc76b3b0a"
+    },
+    "https://developer.apple.com/documentation/scenekit/scnlight/lightwithmdllight:": {
+      "etag": "\"1deb-65d55deaddc66-df\"",
+      "file_path": "documentation/SceneKit/scnlight/lightwithmdllight_.md",
+      "hash": "86f8957d4128231b1dad09e86d0ee5b57fdd5e5ed5b9dcc578b91d8358f3c23d"
     },
     "https://developer.apple.com/documentation/scenekit/scnlight/maximumshadowdistance": {
       "etag": "\"20a9-65d55deaddc66-df\"",
@@ -3335,6 +3520,16 @@
       "file_path": "documentation/SceneKit/scnmaterial/locksambientwithdiffuse.md",
       "hash": "cf321b6be503b76f257ac3d191027d2f8b08cb9ea9890a176910f68a355ddd30"
     },
+    "https://developer.apple.com/documentation/scenekit/scnmaterial/material": {
+      "etag": "\"245b-65d55de7ba182-df\"",
+      "file_path": "documentation/SceneKit/scnmaterial/material.md",
+      "hash": "371f339d4b3c9cd1770823087fe26ceba12506fb4d18e2fe1e7d5ef1470cbcc2"
+    },
+    "https://developer.apple.com/documentation/scenekit/scnmaterial/materialwithmdlmaterial:": {
+      "etag": "\"2317-65d55de7ba182-df\"",
+      "file_path": "documentation/SceneKit/scnmaterial/materialwithmdlmaterial_.md",
+      "hash": "37582c2542dc03ca89b2b42c3eedfd555e9fa40b971ed78cd5c696d6d5009413"
+    },
     "https://developer.apple.com/documentation/scenekit/scnmaterial/metalness": {
       "etag": "\"3b66-65d55de7ba182-df\"",
       "file_path": "documentation/SceneKit/scnmaterial/metalness.md",
@@ -3615,6 +3810,11 @@
       "file_path": "documentation/SceneKit/scnmatrix4fromglkmatrix4(_).md",
       "hash": "218935e7853e3352f2455218d3a37003c786c740e65a45ab122c6b2b18ff917a"
     },
+    "https://developer.apple.com/documentation/scenekit/scnmatrix4frommat4": {
+      "etag": "\"277c-65d55de82cc1d-df\"",
+      "file_path": "documentation/SceneKit/scnmatrix4frommat4.md",
+      "hash": "9ce047f73a46a78acd9b040eb8ecc89c1d285171cd3f9952c35c196b9b08f95b"
+    },
     "https://developer.apple.com/documentation/scenekit/scnmatrix4identity": {
       "etag": "\"23f9-65d55deafb69b-df\"",
       "file_path": "documentation/SceneKit/scnmatrix4identity.md",
@@ -3664,6 +3864,11 @@
       "etag": "\"2eff-65d55dea4f896-df\"",
       "file_path": "documentation/SceneKit/scnmatrix4toglkmatrix4(_).md",
       "hash": "84f38cc16e802c20ccea11ddd60df8086f2f3e911532a96259fe1ddc84cdfd63"
+    },
+    "https://developer.apple.com/documentation/scenekit/scnmatrix4tomat4": {
+      "etag": "\"276e-65d55de8c9d9f-df\"",
+      "file_path": "documentation/SceneKit/scnmatrix4tomat4.md",
+      "hash": "2f59881f8aac565039e4ba9d2fd4909061961414ae63b492b45d7f1d3729d068"
     },
     "https://developer.apple.com/documentation/scenekit/scnmatrix4translate(_:_:_:_:)": {
       "etag": "\"5de8-65d55deaa687a-df\"",
@@ -3999,6 +4204,16 @@
       "etag": "\"6c7e-65d55de9a5e3c-df\"",
       "file_path": "documentation/SceneKit/scnnode/name.md",
       "hash": "2e8dd53afd32af17c79e8f0bd43fdda630f48e230df0a61af43f68723a076668"
+    },
+    "https://developer.apple.com/documentation/scenekit/scnnode/node": {
+      "etag": "\"1996-65d55de9c221d-df\"",
+      "file_path": "documentation/SceneKit/scnnode/node.md",
+      "hash": "7dc85485e262438336091959553e85b54559d962b1d54d8c21827ed82d3d7fc7"
+    },
+    "https://developer.apple.com/documentation/scenekit/scnnode/nodewithmdlobject:": {
+      "etag": "\"2ba3-65d55de9c221d-df\"",
+      "file_path": "documentation/SceneKit/scnnode/nodewithmdlobject_.md",
+      "hash": "b9cb5e74bcae9e4583cc57599e59d8a05a1884cd51b85c51af2ec88dc18429a6"
     },
     "https://developer.apple.com/documentation/scenekit/scnnode/opacity": {
       "etag": "\"3dc9-65d55de98b7c9-df\"",
@@ -5010,6 +5225,11 @@
       "file_path": "documentation/SceneKit/scnparticlesystem/particlesizevariation.md",
       "hash": "639e0cc4daf3aec21e41e2c279a2cb56174581a76de8485fc1b55c30b16fbd61"
     },
+    "https://developer.apple.com/documentation/scenekit/scnparticlesystem/particlesystem": {
+      "etag": "\"1d33-65d55de9de029-df\"",
+      "file_path": "documentation/SceneKit/scnparticlesystem/particlesystem.md",
+      "hash": "d0bf59b05d13713ed098d70c8224cf61b95cd46a25f8e4c0858f2ab286712d8d"
+    },
     "https://developer.apple.com/documentation/scenekit/scnparticlesystem/particlevelocity": {
       "etag": "\"6e42-65d55dea0e5ae-df\"",
       "file_path": "documentation/SceneKit/scnparticlesystem/particlevelocity.md",
@@ -5750,6 +5970,21 @@
       "file_path": "documentation/SceneKit/scnphysicsshape/transforms.md",
       "hash": "8e2a80d51b4fd32324630f0171f6ce65a58292bebe6c2e67d0606deaa37b7353"
     },
+    "https://developer.apple.com/documentation/scenekit/scnphysicsshapeoptionkeepascompound": {
+      "etag": "\"28bc-65d55deaa687a-df\"",
+      "file_path": "documentation/SceneKit/scnphysicsshapeoptionkeepascompound.md",
+      "hash": "fb48782f0e52507e6bdb278a2071ef1a1f6954609a3672d27e7bb889ab5b946f"
+    },
+    "https://developer.apple.com/documentation/scenekit/scnphysicsshapeoptionscale": {
+      "etag": "\"2886-65d55de915c9a-df\"",
+      "file_path": "documentation/SceneKit/scnphysicsshapeoptionscale.md",
+      "hash": "c02eb73b6b55619bb05f7a022f434c75d341c0d0effd6070d69401307c613824"
+    },
+    "https://developer.apple.com/documentation/scenekit/scnphysicsshapeoptiontype": {
+      "etag": "\"2880-65d55de8faf7d-df\"",
+      "file_path": "documentation/SceneKit/scnphysicsshapeoptiontype.md",
+      "hash": "758f2ed9a4b80e7269468bb401d43a267a0c26aa704a9d353892d92d251baac1"
+    },
     "https://developer.apple.com/documentation/scenekit/scnphysicssliderjoint": {
       "etag": "\"a58c-65d55de82cc1d-df\"",
       "file_path": "documentation/SceneKit/scnphysicssliderjoint.md",
@@ -5834,6 +6069,21 @@
       "etag": "\"36d5-65d55de6acf75-df\"",
       "file_path": "documentation/SceneKit/scnphysicssliderjoint/motortargetlinearvelocity.md",
       "hash": "27e4b5e1c09316cb37b9b82670adab1e50bba2bd346618568e46db18fcc93415"
+    },
+    "https://developer.apple.com/documentation/scenekit/scnphysicstestoptionbackfaceculling": {
+      "etag": "\"28bc-65d55de8c9d9f-df\"",
+      "file_path": "documentation/SceneKit/scnphysicstestoptionbackfaceculling.md",
+      "hash": "788675e3a67cbffa9028e0dc6a9d6a077f0e217dd47fc0034cb62c0638334298"
+    },
+    "https://developer.apple.com/documentation/scenekit/scnphysicstestoptioncollisionbitmask": {
+      "etag": "\"28c2-65d55de9c221d-df\"",
+      "file_path": "documentation/SceneKit/scnphysicstestoptioncollisionbitmask.md",
+      "hash": "1964237b8ef84e268026611c101e7ce2eeb9cb3781434ab16c73a2cec1f732ff"
+    },
+    "https://developer.apple.com/documentation/scenekit/scnphysicstestoptionsearchmode": {
+      "etag": "\"287a-65d55de89413f-df\"",
+      "file_path": "documentation/SceneKit/scnphysicstestoptionsearchmode.md",
+      "hash": "886754fd4eedfd115883e073967b55b51181e4cbe25f4a6cd4e26ff9d2c3fd00"
     },
     "https://developer.apple.com/documentation/scenekit/scnphysicsvehicle": {
       "etag": "\"7168-65d55dea2db72-df\"",
@@ -6160,6 +6410,11 @@
       "file_path": "documentation/SceneKit/scnprogram/library.md",
       "hash": "395484dc15a67f73a79fc64afd8cace06798117ab44e4253e6e4f6e9f7eca698"
     },
+    "https://developer.apple.com/documentation/scenekit/scnprogram/program": {
+      "etag": "\"1e0b-65d55de947fbe-df\"",
+      "file_path": "documentation/SceneKit/scnprogram/program.md",
+      "hash": "5ec658a0eed58809fc7cf05d233ad531c45f58fcf137bb1bf7e2eaff1fff3d63"
+    },
     "https://developer.apple.com/documentation/scenekit/scnprogram/semantic(forsymbol:)": {
       "etag": "\"5330-65d55de947fbe-df\"",
       "file_path": "documentation/SceneKit/scnprogram/semantic(forsymbol).md",
@@ -6334,6 +6589,11 @@
       "etag": "\"47cd-65d55de947fbe-df\"",
       "file_path": "documentation/SceneKit/scnreferencenode/loadingpolicy.md",
       "hash": "bf46847cfe3dc1eb012b55fd849126b2b75b24acb4159f95f12f9b9ed09e3de8"
+    },
+    "https://developer.apple.com/documentation/scenekit/scnreferencenode/referencenodewithurl:": {
+      "etag": "\"22b5-65d55de947fbe-df\"",
+      "file_path": "documentation/SceneKit/scnreferencenode/referencenodewithurl_.md",
+      "hash": "f72d4c0ca581e2b104abc97604f65082845d38f2d7df29e474d007b7abe8ba2d"
     },
     "https://developer.apple.com/documentation/scenekit/scnreferencenode/referenceurl": {
       "etag": "\"38dd-65d55de947fbe-df\"",
@@ -6620,6 +6880,16 @@
       "file_path": "documentation/SceneKit/scnscene/rootnode.md",
       "hash": "21b2b97dfa2afa583022eb1bad6b2f3b215df4e927f6f6ed14813275789c49b8"
     },
+    "https://developer.apple.com/documentation/scenekit/scnscene/scene": {
+      "etag": "\"2feb-65d55deb3c3f9-df\"",
+      "file_path": "documentation/SceneKit/scnscene/scene.md",
+      "hash": "adb06d55ca05f14bbae17fad68e1b6ff3a57861a7f1495edf34cc663a935d27b"
+    },
+    "https://developer.apple.com/documentation/scenekit/scnscene/scenewithmdlasset:": {
+      "etag": "\"1ba3-65d55deb3c3f9-df\"",
+      "file_path": "documentation/SceneKit/scnscene/scenewithmdlasset_.md",
+      "hash": "11ebf24338be66959c9c2b1e43083b5ba2917c32566940d2cf540b6970c0da39"
+    },
     "https://developer.apple.com/documentation/scenekit/scnscene/screenspacereflectionmaximumdistance": {
       "etag": "\"2201-65d55deb3c3f9-df\"",
       "file_path": "documentation/SceneKit/scnscene/screenspacereflectionmaximumdistance.md",
@@ -6649,6 +6919,26 @@
       "etag": "\"67fe-65d55deb3c3f9-df\"",
       "file_path": "documentation/SceneKit/scnscene/write(to,options,delegate,progresshandler).md",
       "hash": "75756a6fd3600fe85c78f42e5d56814441e9fac42a69ac828f8e744abe4daf86"
+    },
+    "https://developer.apple.com/documentation/scenekit/scnsceneattributeendtime": {
+      "etag": "\"2832-65d55de8637be-df\"",
+      "file_path": "documentation/SceneKit/scnsceneattributeendtime.md",
+      "hash": "9760718c5d95f24a3c3d9128ad43ab1fccfc6d8e901bb9c2b73e68873f7fd7c6"
+    },
+    "https://developer.apple.com/documentation/scenekit/scnsceneattributeframerate": {
+      "etag": "\"284a-65d55de8afb81-df\"",
+      "file_path": "documentation/SceneKit/scnsceneattributeframerate.md",
+      "hash": "3200b46da085a6893cb1008ccda092b50032876b7b3311c48e972d6f63aa605b"
+    },
+    "https://developer.apple.com/documentation/scenekit/scnsceneattributestarttime": {
+      "etag": "\"284a-65d55de82cc1d-df\"",
+      "file_path": "documentation/SceneKit/scnsceneattributestarttime.md",
+      "hash": "797355bb161c88b728260af5002f535d7c12e56136f7cac33f7bc4acbc7c8f43"
+    },
+    "https://developer.apple.com/documentation/scenekit/scnsceneattributeupaxis": {
+      "etag": "\"2826-65d55de89413f-df\"",
+      "file_path": "documentation/SceneKit/scnsceneattributeupaxis.md",
+      "hash": "11e5848694b4d617e2ea97a1e044b2d14f010560cf6a55b870ad5f37556ebbd1"
     },
     "https://developer.apple.com/documentation/scenekit/scnsceneexportdelegate": {
       "etag": "\"37ad-65d55de89413f-df\"",
@@ -6940,6 +7230,11 @@
       "file_path": "documentation/SceneKit/scnscenesource/entrywithidentifier(_,withclass).md",
       "hash": "1a26ab583bb28d3865a00b668b76981e76bddb5e14d705fcef95295b2c11798b"
     },
+    "https://developer.apple.com/documentation/scenekit/scnscenesource/entrywithidentifier:withclass:": {
+      "etag": "\"6776-65d55de7f509b-df\"",
+      "file_path": "documentation/SceneKit/scnscenesource/entrywithidentifier_withclass_.md",
+      "hash": "57624210bcab486f17dadfb04ae380194ae921ba63c45fbd2ba6d248603f9c2a"
+    },
     "https://developer.apple.com/documentation/scenekit/scnscenesource/identifiersofentries(withclass:)": {
       "etag": "\"748d-65d55de7f509b-df\"",
       "file_path": "documentation/SceneKit/scnscenesource/identifiersofentries(withclass).md",
@@ -7045,6 +7340,16 @@
       "file_path": "documentation/SceneKit/scnscenesource/scene(options,statushandler).md",
       "hash": "ea2f1321a987da5c006f01ed2629a7f1ecdd648c7809315b57c091466d19eda2"
     },
+    "https://developer.apple.com/documentation/scenekit/scnscenesource/scenesourcewithdata:options:": {
+      "etag": "\"321a-65d55de7f509b-df\"",
+      "file_path": "documentation/SceneKit/scnscenesource/scenesourcewithdata_options_.md",
+      "hash": "8f5513906c4dfaf147e838af3941a0fa9734427783c1444221cbd6d1c6b38b33"
+    },
+    "https://developer.apple.com/documentation/scenekit/scnscenesource/scenesourcewithurl:options:": {
+      "etag": "\"2dd9-65d55de7f509b-df\"",
+      "file_path": "documentation/SceneKit/scnscenesource/scenesourcewithurl_options_.md",
+      "hash": "8eedc4f41bc1cf43974e169a9ca950d913d50433733db6420fd2b86d46ddb10b"
+    },
     "https://developer.apple.com/documentation/scenekit/scnscenesource/url": {
       "etag": "\"3706-65d55de7f509b-df\"",
       "file_path": "documentation/SceneKit/scnscenesource/url.md",
@@ -7094,6 +7399,56 @@
       "etag": "\"30ad-65d55de8637be-df\"",
       "file_path": "documentation/SceneKit/scnscenesourceassetupaxiskey.md",
       "hash": "bc9a0ceb9672a3b82d2812558cd4f7bca4be27efa4219af07a0e7a32ebac1b66"
+    },
+    "https://developer.apple.com/documentation/scenekit/scnscenesourceloadingoptionanimationimportpolicy": {
+      "etag": "\"2952-65d55deb3c3f9-df\"",
+      "file_path": "documentation/SceneKit/scnscenesourceloadingoptionanimationimportpolicy.md",
+      "hash": "6ee6510892a793dc669299c4d2bdb73b1a23c93edeab68b21fffe59a9b71ef8f"
+    },
+    "https://developer.apple.com/documentation/scenekit/scnscenesourceloadingoptionassetdirectoryurls": {
+      "etag": "\"292e-65d55de8afb81-df\"",
+      "file_path": "documentation/SceneKit/scnscenesourceloadingoptionassetdirectoryurls.md",
+      "hash": "772f2a6a3eec5d1a5844aaa7a44652c3eae5a4597e10ff04915c39170621fe75"
+    },
+    "https://developer.apple.com/documentation/scenekit/scnscenesourceloadingoptioncheckconsistency": {
+      "etag": "\"2916-65d55de96929b-df\"",
+      "file_path": "documentation/SceneKit/scnscenesourceloadingoptioncheckconsistency.md",
+      "hash": "e0d8a70542728bfb509742ff52fadae2f01faedc658311805365eb734ad71e1e"
+    },
+    "https://developer.apple.com/documentation/scenekit/scnscenesourceloadingoptionconverttoyup": {
+      "etag": "\"28e6-65d55deaa687a-df\"",
+      "file_path": "documentation/SceneKit/scnscenesourceloadingoptionconverttoyup.md",
+      "hash": "56d299c09a352fc4f8eea77431274550072300342ad378049f40931d9b8b2d23"
+    },
+    "https://developer.apple.com/documentation/scenekit/scnscenesourceloadingoptionconvertunitstometers": {
+      "etag": "\"2946-65d55de89413f-df\"",
+      "file_path": "documentation/SceneKit/scnscenesourceloadingoptionconvertunitstometers.md",
+      "hash": "1e9c0d296bc05813ad98a9bd9132f3d96980c66f106fcb447fcf53c03f857b97"
+    },
+    "https://developer.apple.com/documentation/scenekit/scnscenesourceloadingoptioncreatenormalsifabsent": {
+      "etag": "\"2952-65d55de947fbe-df\"",
+      "file_path": "documentation/SceneKit/scnscenesourceloadingoptioncreatenormalsifabsent.md",
+      "hash": "8db2265da6c9fc900a675d5eaee612c8d51a48e55c9648c505e8924c3c8851d3"
+    },
+    "https://developer.apple.com/documentation/scenekit/scnscenesourceloadingoptionflattenscene": {
+      "etag": "\"28e6-65d55de7d634b-df\"",
+      "file_path": "documentation/SceneKit/scnscenesourceloadingoptionflattenscene.md",
+      "hash": "2b225a0b9ccb6ab4135d12c8cf96524ee494b850898b212f8c0c919f64c09c9b"
+    },
+    "https://developer.apple.com/documentation/scenekit/scnscenesourceloadingoptionoverrideasseturls": {
+      "etag": "\"2922-65d55de8637be-df\"",
+      "file_path": "documentation/SceneKit/scnscenesourceloadingoptionoverrideasseturls.md",
+      "hash": "c5d5029dc57be81f084fcd1855a050567fcdf74418f675e725a7bb8c45b6ac03"
+    },
+    "https://developer.apple.com/documentation/scenekit/scnscenesourceloadingoptionstrictconformance": {
+      "etag": "\"2922-65d55deb23558-df\"",
+      "file_path": "documentation/SceneKit/scnscenesourceloadingoptionstrictconformance.md",
+      "hash": "7da7734b872e02ac85aeda22a8ac0c0a61105dda1dd7aca86b0315b0c26c69a9"
+    },
+    "https://developer.apple.com/documentation/scenekit/scnscenesourceloadingoptionusesafemode": {
+      "etag": "\"28da-65d55de947fbe-df\"",
+      "file_path": "documentation/SceneKit/scnscenesourceloadingoptionusesafemode.md",
+      "hash": "c22f6084737f8bc91526b31737f9cde6300eb2fa255345fb650b1349df03f50a"
     },
     "https://developer.apple.com/documentation/scenekit/scnscenesourcestatus": {
       "etag": "\"7176-65d55de8faf7d-df\"",
@@ -7325,6 +7680,11 @@
       "file_path": "documentation/SceneKit/scnsliderconstraint/radius.md",
       "hash": "d1b65d180e82e1daf68765fea17c799d07e43c67a3c059700f1cae92151d0967"
     },
+    "https://developer.apple.com/documentation/scenekit/scnsliderconstraint/sliderconstraint": {
+      "etag": "\"111c-65d55de915c9a-df\"",
+      "file_path": "documentation/SceneKit/scnsliderconstraint/sliderconstraint.md",
+      "hash": "149080a2b3e0dc05d1cd4ec100dfe6036ecbd0c33a68416b300bacdef257a212"
+    },
     "https://developer.apple.com/documentation/scenekit/scnsphere": {
       "etag": "\"99ac-65d55de915c9a-df\"",
       "file_path": "documentation/SceneKit/scnsphere.md",
@@ -7449,6 +7809,11 @@
       "etag": "\"3857-65d55dea2db72-df\"",
       "file_path": "documentation/SceneKit/scntext/chamferradius.md",
       "hash": "44bcb024f738ae7cbb87b06b5a14e73ec913cc3dca2510cdd4d68962ceeca3be"
+    },
+    "https://developer.apple.com/documentation/scenekit/scntext/chamfersegmentcount": {
+      "etag": "\"2d70-65d55dea2db72-df\"",
+      "file_path": "documentation/SceneKit/scntext/chamfersegmentcount.md",
+      "hash": "d7248089ba597754c157917bd4fb236dbc9eb853af6df66fda98a58902deb287"
     },
     "https://developer.apple.com/documentation/scenekit/scntext/containerframe": {
       "etag": "\"3d80-65d55dea2db72-df\"",
@@ -7775,6 +8140,11 @@
       "file_path": "documentation/SceneKit/scnvector3equaltovector3(_,_).md",
       "hash": "4096519aa5b1f6cf6ce5dc5d62f6d59dc6f61abb0a50ace62f4b896a5643d86d"
     },
+    "https://developer.apple.com/documentation/scenekit/scnvector3fromfloat3": {
+      "etag": "\"209b-65d55deac2972-df\"",
+      "file_path": "documentation/SceneKit/scnvector3fromfloat3.md",
+      "hash": "e70fff71e29a844865afb65f15e7f65b7fb65388fbd1b6550f0bd57b539fe4f2"
+    },
     "https://developer.apple.com/documentation/scenekit/scnvector3fromglkvector3(_:)": {
       "etag": "\"2a4e-65d55de82cc1d-df\"",
       "file_path": "documentation/SceneKit/scnvector3fromglkvector3(_).md",
@@ -7784,6 +8154,11 @@
       "etag": "\"388d-65d55de6acf75-df\"",
       "file_path": "documentation/SceneKit/scnvector3make(_,_,_).md",
       "hash": "0fb36ccebfe11f01fded0de7bfdbccfa1179ba1961e470ae9843196662c40948"
+    },
+    "https://developer.apple.com/documentation/scenekit/scnvector3tofloat3": {
+      "etag": "\"208f-65d55deb23558-df\"",
+      "file_path": "documentation/SceneKit/scnvector3tofloat3.md",
+      "hash": "2e139e31b6906535c23cea828099a4cca4f814f1914493d9d55b1d748fd56662"
     },
     "https://developer.apple.com/documentation/scenekit/scnvector3toglkvector3(_:)": {
       "etag": "\"2a3c-65d55de849dd5-df\"",
@@ -7870,6 +8245,11 @@
       "file_path": "documentation/SceneKit/scnvector4equaltovector4(_,_).md",
       "hash": "d13b7236cd09b00e7422e05efb2859f6d2a7656c842344d709498458f70c5b42"
     },
+    "https://developer.apple.com/documentation/scenekit/scnvector4fromfloat4": {
+      "etag": "\"2097-65d55de9c221d-df\"",
+      "file_path": "documentation/SceneKit/scnvector4fromfloat4.md",
+      "hash": "34873313a2c8bc47802f4cf6469df3b0270fa37fab09ac86634b8123563beb9c"
+    },
     "https://developer.apple.com/documentation/scenekit/scnvector4fromglkvector4(_:)": {
       "etag": "\"2a46-65d55de8c9d9f-df\"",
       "file_path": "documentation/SceneKit/scnvector4fromglkvector4(_).md",
@@ -7879,6 +8259,11 @@
       "etag": "\"3e89-65d55de8afb81-df\"",
       "file_path": "documentation/SceneKit/scnvector4make(_,_,_,_).md",
       "hash": "38b0d1be0b7c55cb3d7d3c9dcc3d2f3e902be4371e4421b965f40b6bfa7ccaaa"
+    },
+    "https://developer.apple.com/documentation/scenekit/scnvector4tofloat4": {
+      "etag": "\"208b-65d55de947fbe-df\"",
+      "file_path": "documentation/SceneKit/scnvector4tofloat4.md",
+      "hash": "f7f683bf07d9efd511b19267a6dd46f782ce647f5fadefd99d26d86f6d36fc78"
     },
     "https://developer.apple.com/documentation/scenekit/scnvector4toglkvector4(_:)": {
       "etag": "\"2a34-65d55deb52d2e-df\"",
@@ -8005,6 +8390,21 @@
       "file_path": "documentation/SceneKit/scnview/stop(_).md",
       "hash": "5afc163b7e62f04fe0691265e58a5849f3fb465437771d434ea18422380e1927"
     },
+    "https://developer.apple.com/documentation/scenekit/scnviewoptionpreferlowpowerdevice": {
+      "etag": "\"2881-65d55de96929b-df\"",
+      "file_path": "documentation/SceneKit/scnviewoptionpreferlowpowerdevice.md",
+      "hash": "de018ab1a6854179ea08f46c4cbd90723c246bf63a69e503cba319cab15fa736"
+    },
+    "https://developer.apple.com/documentation/scenekit/scnviewoptionpreferreddevice": {
+      "etag": "\"2845-65d55dea2db72-df\"",
+      "file_path": "documentation/SceneKit/scnviewoptionpreferreddevice.md",
+      "hash": "180b7f09383859dc500648204b6bd0cd1c4a76a5c46dbf659a7c9aee4421e014"
+    },
+    "https://developer.apple.com/documentation/scenekit/scnviewoptionpreferredrenderingapi": {
+      "etag": "\"2856-65d55de7ba182-df\"",
+      "file_path": "documentation/SceneKit/scnviewoptionpreferredrenderingapi.md",
+      "hash": "8ffdaadef495deab2655bdcf175b22356af9bcd90facbe8c89e7d61e29d5720e"
+    },
     "https://developer.apple.com/documentation/scenekit/scnviewtransform": {
       "etag": "\"46db-65d55dea6c452-df\"",
       "file_path": "documentation/SceneKit/scnviewtransform.md",
@@ -8084,6 +8484,16 @@
       "etag": "\"4898-659025c3ae82e-df\"",
       "file_path": "documentation/SceneKit/contributor-keys.md",
       "hash": "730b2b310f563ed37cc2194e2b801415cb2370c642bfe617951cd5948b42b01a"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/scenekit/glkmatrix4fromcatransform3d.json": {
+      "etag": "\"283c-65d55de878ca8-df\"",
+      "file_path": "documentation/SceneKit/glkmatrix4fromcatransform3d.md",
+      "hash": "db45e0466b938f310dc3ebf0f6bf04bdf290767cbdef8a67974a55f101fa1d06"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/scenekit/glkmatrix4tocatransform3d.json": {
+      "etag": "\"2830-65d55de96929b-df\"",
+      "file_path": "documentation/SceneKit/glkmatrix4tocatransform3d.md",
+      "hash": "bc891495c41a97703930dea53ac885995b5777117a1241569393e34d6801ebb8"
     },
     "https://developer.apple.com/tutorials/data/documentation/scenekit/lighting-attribute-keys.json": {
       "etag": "\"4af3-659025c3ae82e-df\"",
@@ -8200,10 +8610,35 @@
       "file_path": "documentation/SceneKit/scn_enable_opengl.md",
       "hash": "4691dc05eeade1bfebf49e12d6ca9c72d2488157ba09c56ef5918e9f2ff14311"
     },
+    "https://developer.apple.com/tutorials/data/documentation/scenekit/scn_export.json": {
+      "etag": "\"278a-65d55de8c9d9f-df\"",
+      "file_path": "documentation/SceneKit/scn_export.md",
+      "hash": "9a5e486ba1cd0bf40df8e83ff1e3af4922cb82fc32295ca531a9854fa1355643"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/scenekit/scn_gl_deprecated.json": {
+      "etag": "\"2904-65d55de89413f-df\"",
+      "file_path": "documentation/SceneKit/scn_gl_deprecated.md",
+      "hash": "fd089da9221bc975b5d271e64025f285d0bd18612ef173b38f5d7f488e199f08"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/scenekit/scn_gl_deprecated_ios.json": {
+      "etag": "\"28ac-65d55de8faf7d-df\"",
+      "file_path": "documentation/SceneKit/scn_gl_deprecated_ios.md",
+      "hash": "709ba29d9434ec19eb049ecfe7f6d16fee912c57d15cdd59a66052ea45ce14f2"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/scenekit/scn_gl_deprecated_mac.json": {
+      "etag": "\"28ac-65d55de89413f-df\"",
+      "file_path": "documentation/SceneKit/scn_gl_deprecated_mac.md",
+      "hash": "56225e69a515e9828197de728226e573aaaa8a620f5f692c59ad4458a7d638e5"
+    },
     "https://developer.apple.com/tutorials/data/documentation/scenekit/scnaccelerationconstraint.json": {
       "etag": "\"59b4-65d55deac2972-df\"",
       "file_path": "documentation/SceneKit/scnaccelerationconstraint.md",
       "hash": "6404acd105d38636c2b8f26375210bdb6ce93306cbd5df1a574e36d68f6ca4bd"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/scenekit/scnaccelerationconstraint/accelerationconstraint.json": {
+      "etag": "\"11d6-65d55de878ca8-df\"",
+      "file_path": "documentation/SceneKit/scnaccelerationconstraint/accelerationconstraint.md",
+      "hash": "3b678f901f76038344be4259bc20f67817045b9ad65c94c79f4967ac827390ef"
     },
     "https://developer.apple.com/tutorials/data/documentation/scenekit/scnaccelerationconstraint/damping.json": {
       "etag": "\"20ea-65d55de878ca8-df\"",
@@ -8815,6 +9250,16 @@
       "file_path": "documentation/SceneKit/scnaudioplayer/audionode.md",
       "hash": "0b2e420df65817c49185afa8fb726c722df7fac58811470fa008ad47c55b33b8"
     },
+    "https://developer.apple.com/tutorials/data/documentation/scenekit/scnaudioplayer/audioplayerwithavaudionode:.json": {
+      "etag": "\"365f-65d55de8e1a60-df\"",
+      "file_path": "documentation/SceneKit/scnaudioplayer/audioplayerwithavaudionode_.md",
+      "hash": "c7e249823d0c1300087b7e397190dbf9af4ef64b991be3a2578d7084ba5654fe"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/scenekit/scnaudioplayer/audioplayerwithsource:.json": {
+      "etag": "\"2f0d-65d55de8e1a60-df\"",
+      "file_path": "documentation/SceneKit/scnaudioplayer/audioplayerwithsource_.md",
+      "hash": "2ab08a6536f1f4a35a26371dcdc5bc85aa112aa1dbf888c3927885700fc62b32"
+    },
     "https://developer.apple.com/tutorials/data/documentation/scenekit/scnaudioplayer/audiosource.json": {
       "etag": "\"317f-65d55de8e1a60-df\"",
       "file_path": "documentation/SceneKit/scnaudioplayer/audiosource.md",
@@ -8995,6 +9440,11 @@
       "file_path": "documentation/SceneKit/scnbillboardconstraint.md",
       "hash": "84ced18aec0adcf09d97961fb1ffd601680208170a6516fee45608a28151b8a0"
     },
+    "https://developer.apple.com/tutorials/data/documentation/scenekit/scnbillboardconstraint/billboardconstraint.json": {
+      "etag": "\"1e5a-65d55de89413f-df\"",
+      "file_path": "documentation/SceneKit/scnbillboardconstraint/billboardconstraint.md",
+      "hash": "ed452511142b92157e4a0498d278bacc357427e8aabad56b9cb072b3bdce71c7"
+    },
     "https://developer.apple.com/tutorials/data/documentation/scenekit/scnbillboardconstraint/freeaxes.json": {
       "etag": "\"2dc0-65d55de89413f-df\"",
       "file_path": "documentation/SceneKit/scnbillboardconstraint/freeaxes.md",
@@ -9064,6 +9514,21 @@
       "etag": "\"2e7a-65d55de98b7c9-df\"",
       "file_path": "documentation/SceneKit/scnboundingvolume/boundingsphere.md",
       "hash": "5e0610402132481b9e8eb6c4b2ab62079d8768a6b04db6efbdc7d824c5239477"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/scenekit/scnboundingvolume/getboundingboxmin:max:.json": {
+      "etag": "\"3402-65d55de98b7c9-df\"",
+      "file_path": "documentation/SceneKit/scnboundingvolume/getboundingboxmin_max_.md",
+      "hash": "cb1af71f4adfaab324087f208212011f8c93c162596d295505a095ae2db37503"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/scenekit/scnboundingvolume/getboundingspherecenter:radius:.json": {
+      "etag": "\"35c5-65d55de98b7c9-df\"",
+      "file_path": "documentation/SceneKit/scnboundingvolume/getboundingspherecenter_radius_.md",
+      "hash": "2279575fe14f2f4559df301cf413420c4bd5562509a067ee107fd8dda731cd76"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/scenekit/scnboundingvolume/setboundingboxmin:max:.json": {
+      "etag": "\"26ba-65d55de98b7c9-df\"",
+      "file_path": "documentation/SceneKit/scnboundingvolume/setboundingboxmin_max_.md",
+      "hash": "c595c799b4a66f038606da4339c4c4b9df556e3891827012aed14a1112ae655b"
     },
     "https://developer.apple.com/tutorials/data/documentation/scenekit/scnbox.json": {
       "etag": "\"bfa5-65d55deac2972-df\"",
@@ -9204,6 +9669,16 @@
       "etag": "\"4aae-65d55dea86ed3-df\"",
       "file_path": "documentation/SceneKit/scncamera/bloomthreshold.md",
       "hash": "c79c54bc646b6e4532bc8cf0b264365342cce5cd1154e7b18e46267524f8feff"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/scenekit/scncamera/camera.json": {
+      "etag": "\"1ef7-65d55dea6c452-df\"",
+      "file_path": "documentation/SceneKit/scncamera/camera.md",
+      "hash": "52ebb70bf37781e7bd9ee260a9e64d2727681090ec9be41a6a233ce238ccd657"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/scenekit/scncamera/camerawithmdlcamera:.json": {
+      "etag": "\"1e8b-65d55dea86ed3-df\"",
+      "file_path": "documentation/SceneKit/scncamera/camerawithmdlcamera_.md",
+      "hash": "162863f172b78f45f79749f8ebf0f600d2959cb4a74aa58d34e85e4018f33591"
     },
     "https://developer.apple.com/tutorials/data/documentation/scenekit/scncamera/categorybitmask.json": {
       "etag": "\"29e7-65d55dea86ed3-df\"",
@@ -9715,6 +10190,11 @@
       "file_path": "documentation/SceneKit/scnclamptoborder.md",
       "hash": "97c514b10dcfb4ca7a1f976331b74537f9d3366ee8b0b1e3239cdaa3b2712f27"
     },
+    "https://developer.apple.com/tutorials/data/documentation/scenekit/scncolor.json": {
+      "etag": "\"281a-65d55de96929b-df\"",
+      "file_path": "documentation/SceneKit/scncolor.md",
+      "hash": "bc51db4767bc3e35498bcf419eda7d54ace0fef5ec80c758251e476413d2f430"
+    },
     "https://developer.apple.com/tutorials/data/documentation/scenekit/scncolormask.json": {
       "etag": "\"5786-65d55de8c9d9f-df\"",
       "file_path": "documentation/SceneKit/scncolormask.md",
@@ -9749,6 +10229,11 @@
       "etag": "\"1a14-65d55de92d716-df\"",
       "file_path": "documentation/SceneKit/scncolormask/red.md",
       "hash": "6eb95bdc3e5cc8a2313615277ac9af6baf2c03f24bbb4a356fc0b30391e56fef"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/scenekit/scncolormask/scncolormasknone.json": {
+      "etag": "\"fc2-65d55de92d716-df\"",
+      "file_path": "documentation/SceneKit/scncolormask/scncolormasknone.md",
+      "hash": "7e234c79f6aaacd9f2671d5ec6c4daf8ca50fac86b901fa9dac6b347eaedaab8"
     },
     "https://developer.apple.com/tutorials/data/documentation/scenekit/scncone.json": {
       "etag": "\"b272-65d55de77030b-df\"",
@@ -9855,6 +10340,16 @@
       "file_path": "documentation/SceneKit/scnconstraint/isincremental.md",
       "hash": "d159c736403ceb266afa72682ac3139ea814c147ba118b4f7a173b336644a661"
     },
+    "https://developer.apple.com/tutorials/data/documentation/scenekit/scncullback.json": {
+      "etag": "\"c1b-65d55de8faf7d-df\"",
+      "file_path": "documentation/SceneKit/scncullback.md",
+      "hash": "a8e0bf59e8358af287abb3c8b304ed7829eb21ea9b5811ac47f18020781807df"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/scenekit/scncullfront.json": {
+      "etag": "\"c27-65d55de96929b-df\"",
+      "file_path": "documentation/SceneKit/scncullfront.md",
+      "hash": "a8cb66d3053e760364548a4d2c661fa509b228daff34922dd6d0d23b06a2ffcd"
+    },
     "https://developer.apple.com/tutorials/data/documentation/scenekit/scncullmode.json": {
       "etag": "\"4db1-65d55de8afb81-df\"",
       "file_path": "documentation/SceneKit/scncullmode.md",
@@ -9919,6 +10414,11 @@
       "etag": "\"3f26-65d55de8637be-df\"",
       "file_path": "documentation/SceneKit/scndebugoptions/renderaswireframe.md",
       "hash": "0168e6b3150aad2e90fe91470d57f786d9326be7f0fa01dc8451bd982cd61406"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/scenekit/scndebugoptions/scndebugoptionnone.json": {
+      "etag": "\"15f1-65d55de849dd5-df\"",
+      "file_path": "documentation/SceneKit/scndebugoptions/scndebugoptionnone.md",
+      "hash": "3e62a43dc1155df5bea45e95efc2c02861e6c1cd1bb9d2260e0304409c787e94"
     },
     "https://developer.apple.com/tutorials/data/documentation/scenekit/scndebugoptions/showboundingboxes.json": {
       "etag": "\"3d5d-65d55de849dd5-df\"",
@@ -10080,6 +10580,11 @@
       "file_path": "documentation/SceneKit/scnfloor.md",
       "hash": "9f507ee4e7447de5d778aad1fe3c9c4f277e34affa73c9851bd24669f8bbdc63"
     },
+    "https://developer.apple.com/tutorials/data/documentation/scenekit/scnfloor/floor.json": {
+      "etag": "\"1291-65d55deb23558-df\"",
+      "file_path": "documentation/SceneKit/scnfloor/floor.md",
+      "hash": "6b7b629faee6b3907e81bb55f3b96be3c661e893662b3c0837cfd268a322564d"
+    },
     "https://developer.apple.com/tutorials/data/documentation/scenekit/scnfloor/length.json": {
       "etag": "\"2831-65d55deb23558-df\"",
       "file_path": "documentation/SceneKit/scnfloor/length.md",
@@ -10150,10 +10655,20 @@
       "file_path": "documentation/SceneKit/scngeometry/firstmaterial.md",
       "hash": "173253c095fe55a9cac603770e5e87cccf669094dde04db10707e049a9eeddab"
     },
+    "https://developer.apple.com/tutorials/data/documentation/scenekit/scngeometry/geometry.json": {
+      "etag": "\"3320-65d55de8637be-df\"",
+      "file_path": "documentation/SceneKit/scngeometry/geometry.md",
+      "hash": "bddc7bb7fa55525415146753588431393102fdfde766bec7564fb157a5d47616"
+    },
     "https://developer.apple.com/tutorials/data/documentation/scenekit/scngeometry/geometrysourcechannels.json": {
       "etag": "\"1fba-65d55de8637be-df\"",
       "file_path": "documentation/SceneKit/scngeometry/geometrysourcechannels.md",
       "hash": "febff9560e621ff39453a65fe7d6e441c4bd98c54f321a18955d88376dae95d4"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/scenekit/scngeometry/geometrywithmdlmesh:.json": {
+      "etag": "\"2f91-65d55de8637be-df\"",
+      "file_path": "documentation/SceneKit/scngeometry/geometrywithmdlmesh_.md",
+      "hash": "d19bba9bf7c3fbbb0cbddcd90e8d5fd98ea800558f2ee7ef736d1ed40b1ad401"
     },
     "https://developer.apple.com/tutorials/data/documentation/scenekit/scngeometry/init(coder:).json": {
       "etag": "\"1472-65d55de8637be-df\"",
@@ -10244,6 +10759,11 @@
       "etag": "\"3cd3-65d55de8e1a60-df\"",
       "file_path": "documentation/SceneKit/scngeometryelement/data.md",
       "hash": "8440d55ff725279ab71e4c630245f106c8312f8d5520888b0827b97fca90c398"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/scenekit/scngeometryelement/geometryelementwithmdlsubmesh:.json": {
+      "etag": "\"2f29-65d55de8e1a60-df\"",
+      "file_path": "documentation/SceneKit/scngeometryelement/geometryelementwithmdlsubmesh_.md",
+      "hash": "e5fc49ef0f1d9c60f5368974416e4f2968d4a0fb08a036d1fcff37f46b901f17"
     },
     "https://developer.apple.com/tutorials/data/documentation/scenekit/scngeometryelement/hasinterleavedindiceschannels.json": {
       "etag": "\"2211-65d55de8e1a60-df\"",
@@ -10379,6 +10899,21 @@
       "etag": "\"46fb-65d55deafb69b-df\"",
       "file_path": "documentation/SceneKit/scngeometrysource/datastride.md",
       "hash": "89b634e98fd3b26db7fc6214999e8d8b1630310eeaa18d406bfffebdb1e3ef17"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/scenekit/scngeometrysource/geometrysourcewithnormals:count:.json": {
+      "etag": "\"476b-65d55deafb69b-df\"",
+      "file_path": "documentation/SceneKit/scngeometrysource/geometrysourcewithnormals_count_.md",
+      "hash": "eec6def864842d26873e3201f3f015242c9a8e48610876acee407d962c59fadb"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/scenekit/scngeometrysource/geometrysourcewithtexturecoordinates:count:.json": {
+      "etag": "\"4672-65d55deafb69b-df\"",
+      "file_path": "documentation/SceneKit/scngeometrysource/geometrysourcewithtexturecoordinates_count_.md",
+      "hash": "df7e025b1dc54f214a851f078091959c0a2a088808670e93da99d3678e09597c"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/scenekit/scngeometrysource/geometrysourcewithvertices:count:.json": {
+      "etag": "\"4779-65d55deafb69b-df\"",
+      "file_path": "documentation/SceneKit/scngeometrysource/geometrysourcewithvertices_count_.md",
+      "hash": "cf45aaa6b145d176faf79c8fc94d537a156b495b3b9b73208f19004c9149c2fa"
     },
     "https://developer.apple.com/tutorials/data/documentation/scenekit/scngeometrysource/init(buffer:vertexformat:semantic:vertexcount:dataoffset:datastride:).json": {
       "etag": "\"7a4c-65d55deafb69b-df\"",
@@ -10604,6 +11139,46 @@
       "etag": "\"414b-65d55dea2db72-df\"",
       "file_path": "documentation/SceneKit/scnhittestoption/sortresults.md",
       "hash": "76ead2a4782143689e20b77eb47e359134bcd720282963fba798573da4dfc720"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/scenekit/scnhittestoptionbackfaceculling.json": {
+      "etag": "\"28a4-65d55de92d716-df\"",
+      "file_path": "documentation/SceneKit/scnhittestoptionbackfaceculling.md",
+      "hash": "1ca9aef861264862433537ecf26943a54ab203095e5376f0adaba0e647d29de9"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/scenekit/scnhittestoptionboundingboxonly.json": {
+      "etag": "\"28a4-65d55de8637be-df\"",
+      "file_path": "documentation/SceneKit/scnhittestoptionboundingboxonly.md",
+      "hash": "0f3234d8a74a32b26b96bf14a4212a7cde9481c426a6bc1f395b9c63042342c0"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/scenekit/scnhittestoptioncliptozrange.json": {
+      "etag": "\"2892-65d55de8faf7d-df\"",
+      "file_path": "documentation/SceneKit/scnhittestoptioncliptozrange.md",
+      "hash": "10ac523b0da4fdf43cec13a079543179d353624b50c3b4b643c89be3eb935956"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/scenekit/scnhittestoptionfirstfoundonly.json": {
+      "etag": "\"289e-65d55de8afb81-df\"",
+      "file_path": "documentation/SceneKit/scnhittestoptionfirstfoundonly.md",
+      "hash": "d81959dd83d7e8b2d3a4227296e102bc9ab79f76779b057e80539ffa000e38dc"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/scenekit/scnhittestoptionignorechildnodes.json": {
+      "etag": "\"28aa-65d55de98b7c9-df\"",
+      "file_path": "documentation/SceneKit/scnhittestoptionignorechildnodes.md",
+      "hash": "8f0a4ed4398fb236669919c372dd25f43cff4804e260b87399ade7b48fe91122"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/scenekit/scnhittestoptionignorehiddennodes.json": {
+      "etag": "\"28b0-65d55de8637be-df\"",
+      "file_path": "documentation/SceneKit/scnhittestoptionignorehiddennodes.md",
+      "hash": "a23be2a30e6451ce55db8c70b6f375a9bf7d30395af0941d7b88da40e18c7f4d"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/scenekit/scnhittestoptionrootnode.json": {
+      "etag": "\"287a-65d55deb3c3f9-df\"",
+      "file_path": "documentation/SceneKit/scnhittestoptionrootnode.md",
+      "hash": "d5adee5fa82acf911ae84532eaadb83a55a37312b34bd994c08e5dda0f4cd59b"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/scenekit/scnhittestoptionsortresults.json": {
+      "etag": "\"288c-65d55de9c221d-df\"",
+      "file_path": "documentation/SceneKit/scnhittestoptionsortresults.md",
+      "hash": "574a0705eb29c26d92a7097f1c09d979b75e50c4bf78addb14f7b8595d1ac009"
     },
     "https://developer.apple.com/tutorials/data/documentation/scenekit/scnhittestresult.json": {
       "etag": "\"b9d9-65d55de947fbe-df\"",
@@ -10930,6 +11505,11 @@
       "file_path": "documentation/SceneKit/scnlight/intensity.md",
       "hash": "d2c363f5106b3aa1513bb66232d71c10c873c772ee9ce0d7a2306c6eb8941acc"
     },
+    "https://developer.apple.com/tutorials/data/documentation/scenekit/scnlight/light.json": {
+      "etag": "\"1417-65d55deaddc66-df\"",
+      "file_path": "documentation/SceneKit/scnlight/light.md",
+      "hash": "4499671b4433a807622388289e312e6deda4664754ea1717f477a1c72b3b9e1c"
+    },
     "https://developer.apple.com/tutorials/data/documentation/scenekit/scnlight/lighttype.json": {
       "etag": "\"71da-65d55deafb69b-df\"",
       "file_path": "documentation/SceneKit/scnlight/lighttype.md",
@@ -10974,6 +11554,11 @@
       "etag": "\"48de-65d55deaddc66-df\"",
       "file_path": "documentation/SceneKit/scnlight/lighttype/spot.md",
       "hash": "75517b4a8f31f6868939edead5eeb91882c6b5adc44da136cbf6994cc76b3b0a"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/scenekit/scnlight/lightwithmdllight:.json": {
+      "etag": "\"1deb-65d55deaddc66-df\"",
+      "file_path": "documentation/SceneKit/scnlight/lightwithmdllight_.md",
+      "hash": "86f8957d4128231b1dad09e86d0ee5b57fdd5e5ed5b9dcc578b91d8358f3c23d"
     },
     "https://developer.apple.com/tutorials/data/documentation/scenekit/scnlight/maximumshadowdistance.json": {
       "etag": "\"20a9-65d55deaddc66-df\"",
@@ -11380,6 +11965,16 @@
       "file_path": "documentation/SceneKit/scnmaterial/locksambientwithdiffuse.md",
       "hash": "cf321b6be503b76f257ac3d191027d2f8b08cb9ea9890a176910f68a355ddd30"
     },
+    "https://developer.apple.com/tutorials/data/documentation/scenekit/scnmaterial/material.json": {
+      "etag": "\"245b-65d55de7ba182-df\"",
+      "file_path": "documentation/SceneKit/scnmaterial/material.md",
+      "hash": "371f339d4b3c9cd1770823087fe26ceba12506fb4d18e2fe1e7d5ef1470cbcc2"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/scenekit/scnmaterial/materialwithmdlmaterial:.json": {
+      "etag": "\"2317-65d55de7ba182-df\"",
+      "file_path": "documentation/SceneKit/scnmaterial/materialwithmdlmaterial_.md",
+      "hash": "37582c2542dc03ca89b2b42c3eedfd555e9fa40b971ed78cd5c696d6d5009413"
+    },
     "https://developer.apple.com/tutorials/data/documentation/scenekit/scnmaterial/metalness.json": {
       "etag": "\"3b66-65d55de7ba182-df\"",
       "file_path": "documentation/SceneKit/scnmaterial/metalness.md",
@@ -11660,6 +12255,11 @@
       "file_path": "documentation/SceneKit/scnmatrix4fromglkmatrix4(_).md",
       "hash": "218935e7853e3352f2455218d3a37003c786c740e65a45ab122c6b2b18ff917a"
     },
+    "https://developer.apple.com/tutorials/data/documentation/scenekit/scnmatrix4frommat4.json": {
+      "etag": "\"277c-65d55de82cc1d-df\"",
+      "file_path": "documentation/SceneKit/scnmatrix4frommat4.md",
+      "hash": "9ce047f73a46a78acd9b040eb8ecc89c1d285171cd3f9952c35c196b9b08f95b"
+    },
     "https://developer.apple.com/tutorials/data/documentation/scenekit/scnmatrix4identity.json": {
       "etag": "\"23f9-65d55deafb69b-df\"",
       "file_path": "documentation/SceneKit/scnmatrix4identity.md",
@@ -11709,6 +12309,11 @@
       "etag": "\"2eff-65d55dea4f896-df\"",
       "file_path": "documentation/SceneKit/scnmatrix4toglkmatrix4(_).md",
       "hash": "84f38cc16e802c20ccea11ddd60df8086f2f3e911532a96259fe1ddc84cdfd63"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/scenekit/scnmatrix4tomat4.json": {
+      "etag": "\"276e-65d55de8c9d9f-df\"",
+      "file_path": "documentation/SceneKit/scnmatrix4tomat4.md",
+      "hash": "2f59881f8aac565039e4ba9d2fd4909061961414ae63b492b45d7f1d3729d068"
     },
     "https://developer.apple.com/tutorials/data/documentation/scenekit/scnmatrix4translate(_:_:_:_:).json": {
       "etag": "\"5de8-65d55deaa687a-df\"",
@@ -12044,6 +12649,16 @@
       "etag": "\"6c7e-65d55de9a5e3c-df\"",
       "file_path": "documentation/SceneKit/scnnode/name.md",
       "hash": "2e8dd53afd32af17c79e8f0bd43fdda630f48e230df0a61af43f68723a076668"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/scenekit/scnnode/node.json": {
+      "etag": "\"1996-65d55de9c221d-df\"",
+      "file_path": "documentation/SceneKit/scnnode/node.md",
+      "hash": "7dc85485e262438336091959553e85b54559d962b1d54d8c21827ed82d3d7fc7"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/scenekit/scnnode/nodewithmdlobject:.json": {
+      "etag": "\"2ba3-65d55de9c221d-df\"",
+      "file_path": "documentation/SceneKit/scnnode/nodewithmdlobject_.md",
+      "hash": "b9cb5e74bcae9e4583cc57599e59d8a05a1884cd51b85c51af2ec88dc18429a6"
     },
     "https://developer.apple.com/tutorials/data/documentation/scenekit/scnnode/opacity.json": {
       "etag": "\"3dc9-65d55de98b7c9-df\"",
@@ -13055,6 +13670,11 @@
       "file_path": "documentation/SceneKit/scnparticlesystem/particlesizevariation.md",
       "hash": "639e0cc4daf3aec21e41e2c279a2cb56174581a76de8485fc1b55c30b16fbd61"
     },
+    "https://developer.apple.com/tutorials/data/documentation/scenekit/scnparticlesystem/particlesystem.json": {
+      "etag": "\"1d33-65d55de9de029-df\"",
+      "file_path": "documentation/SceneKit/scnparticlesystem/particlesystem.md",
+      "hash": "d0bf59b05d13713ed098d70c8224cf61b95cd46a25f8e4c0858f2ab286712d8d"
+    },
     "https://developer.apple.com/tutorials/data/documentation/scenekit/scnparticlesystem/particlevelocity.json": {
       "etag": "\"6e42-65d55dea0e5ae-df\"",
       "file_path": "documentation/SceneKit/scnparticlesystem/particlevelocity.md",
@@ -13795,6 +14415,21 @@
       "file_path": "documentation/SceneKit/scnphysicsshape/transforms.md",
       "hash": "8e2a80d51b4fd32324630f0171f6ce65a58292bebe6c2e67d0606deaa37b7353"
     },
+    "https://developer.apple.com/tutorials/data/documentation/scenekit/scnphysicsshapeoptionkeepascompound.json": {
+      "etag": "\"28bc-65d55deaa687a-df\"",
+      "file_path": "documentation/SceneKit/scnphysicsshapeoptionkeepascompound.md",
+      "hash": "fb48782f0e52507e6bdb278a2071ef1a1f6954609a3672d27e7bb889ab5b946f"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/scenekit/scnphysicsshapeoptionscale.json": {
+      "etag": "\"2886-65d55de915c9a-df\"",
+      "file_path": "documentation/SceneKit/scnphysicsshapeoptionscale.md",
+      "hash": "c02eb73b6b55619bb05f7a022f434c75d341c0d0effd6070d69401307c613824"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/scenekit/scnphysicsshapeoptiontype.json": {
+      "etag": "\"2880-65d55de8faf7d-df\"",
+      "file_path": "documentation/SceneKit/scnphysicsshapeoptiontype.md",
+      "hash": "758f2ed9a4b80e7269468bb401d43a267a0c26aa704a9d353892d92d251baac1"
+    },
     "https://developer.apple.com/tutorials/data/documentation/scenekit/scnphysicssliderjoint.json": {
       "etag": "\"a58c-65d55de82cc1d-df\"",
       "file_path": "documentation/SceneKit/scnphysicssliderjoint.md",
@@ -13879,6 +14514,21 @@
       "etag": "\"36d5-65d55de6acf75-df\"",
       "file_path": "documentation/SceneKit/scnphysicssliderjoint/motortargetlinearvelocity.md",
       "hash": "27e4b5e1c09316cb37b9b82670adab1e50bba2bd346618568e46db18fcc93415"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/scenekit/scnphysicstestoptionbackfaceculling.json": {
+      "etag": "\"28bc-65d55de8c9d9f-df\"",
+      "file_path": "documentation/SceneKit/scnphysicstestoptionbackfaceculling.md",
+      "hash": "788675e3a67cbffa9028e0dc6a9d6a077f0e217dd47fc0034cb62c0638334298"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/scenekit/scnphysicstestoptioncollisionbitmask.json": {
+      "etag": "\"28c2-65d55de9c221d-df\"",
+      "file_path": "documentation/SceneKit/scnphysicstestoptioncollisionbitmask.md",
+      "hash": "1964237b8ef84e268026611c101e7ce2eeb9cb3781434ab16c73a2cec1f732ff"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/scenekit/scnphysicstestoptionsearchmode.json": {
+      "etag": "\"287a-65d55de89413f-df\"",
+      "file_path": "documentation/SceneKit/scnphysicstestoptionsearchmode.md",
+      "hash": "886754fd4eedfd115883e073967b55b51181e4cbe25f4a6cd4e26ff9d2c3fd00"
     },
     "https://developer.apple.com/tutorials/data/documentation/scenekit/scnphysicsvehicle.json": {
       "etag": "\"7168-65d55dea2db72-df\"",
@@ -14205,6 +14855,11 @@
       "file_path": "documentation/SceneKit/scnprogram/library.md",
       "hash": "395484dc15a67f73a79fc64afd8cace06798117ab44e4253e6e4f6e9f7eca698"
     },
+    "https://developer.apple.com/tutorials/data/documentation/scenekit/scnprogram/program.json": {
+      "etag": "\"1e0b-65d55de947fbe-df\"",
+      "file_path": "documentation/SceneKit/scnprogram/program.md",
+      "hash": "5ec658a0eed58809fc7cf05d233ad531c45f58fcf137bb1bf7e2eaff1fff3d63"
+    },
     "https://developer.apple.com/tutorials/data/documentation/scenekit/scnprogram/semantic(forsymbol:).json": {
       "etag": "\"5330-65d55de947fbe-df\"",
       "file_path": "documentation/SceneKit/scnprogram/semantic(forsymbol).md",
@@ -14379,6 +15034,11 @@
       "etag": "\"47cd-65d55de947fbe-df\"",
       "file_path": "documentation/SceneKit/scnreferencenode/loadingpolicy.md",
       "hash": "bf46847cfe3dc1eb012b55fd849126b2b75b24acb4159f95f12f9b9ed09e3de8"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/scenekit/scnreferencenode/referencenodewithurl:.json": {
+      "etag": "\"22b5-65d55de947fbe-df\"",
+      "file_path": "documentation/SceneKit/scnreferencenode/referencenodewithurl_.md",
+      "hash": "f72d4c0ca581e2b104abc97604f65082845d38f2d7df29e474d007b7abe8ba2d"
     },
     "https://developer.apple.com/tutorials/data/documentation/scenekit/scnreferencenode/referenceurl.json": {
       "etag": "\"38dd-65d55de947fbe-df\"",
@@ -14665,6 +15325,16 @@
       "file_path": "documentation/SceneKit/scnscene/rootnode.md",
       "hash": "21b2b97dfa2afa583022eb1bad6b2f3b215df4e927f6f6ed14813275789c49b8"
     },
+    "https://developer.apple.com/tutorials/data/documentation/scenekit/scnscene/scene.json": {
+      "etag": "\"2feb-65d55deb3c3f9-df\"",
+      "file_path": "documentation/SceneKit/scnscene/scene.md",
+      "hash": "adb06d55ca05f14bbae17fad68e1b6ff3a57861a7f1495edf34cc663a935d27b"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/scenekit/scnscene/scenewithmdlasset:.json": {
+      "etag": "\"1ba3-65d55deb3c3f9-df\"",
+      "file_path": "documentation/SceneKit/scnscene/scenewithmdlasset_.md",
+      "hash": "11ebf24338be66959c9c2b1e43083b5ba2917c32566940d2cf540b6970c0da39"
+    },
     "https://developer.apple.com/tutorials/data/documentation/scenekit/scnscene/screenspacereflectionmaximumdistance.json": {
       "etag": "\"2201-65d55deb3c3f9-df\"",
       "file_path": "documentation/SceneKit/scnscene/screenspacereflectionmaximumdistance.md",
@@ -14694,6 +15364,26 @@
       "etag": "\"67fe-65d55deb3c3f9-df\"",
       "file_path": "documentation/SceneKit/scnscene/write(to,options,delegate,progresshandler).md",
       "hash": "75756a6fd3600fe85c78f42e5d56814441e9fac42a69ac828f8e744abe4daf86"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/scenekit/scnsceneattributeendtime.json": {
+      "etag": "\"2832-65d55de8637be-df\"",
+      "file_path": "documentation/SceneKit/scnsceneattributeendtime.md",
+      "hash": "9760718c5d95f24a3c3d9128ad43ab1fccfc6d8e901bb9c2b73e68873f7fd7c6"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/scenekit/scnsceneattributeframerate.json": {
+      "etag": "\"284a-65d55de8afb81-df\"",
+      "file_path": "documentation/SceneKit/scnsceneattributeframerate.md",
+      "hash": "3200b46da085a6893cb1008ccda092b50032876b7b3311c48e972d6f63aa605b"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/scenekit/scnsceneattributestarttime.json": {
+      "etag": "\"284a-65d55de82cc1d-df\"",
+      "file_path": "documentation/SceneKit/scnsceneattributestarttime.md",
+      "hash": "797355bb161c88b728260af5002f535d7c12e56136f7cac33f7bc4acbc7c8f43"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/scenekit/scnsceneattributeupaxis.json": {
+      "etag": "\"2826-65d55de89413f-df\"",
+      "file_path": "documentation/SceneKit/scnsceneattributeupaxis.md",
+      "hash": "11e5848694b4d617e2ea97a1e044b2d14f010560cf6a55b870ad5f37556ebbd1"
     },
     "https://developer.apple.com/tutorials/data/documentation/scenekit/scnsceneexportdelegate.json": {
       "etag": "\"37ad-65d55de89413f-df\"",
@@ -14985,6 +15675,11 @@
       "file_path": "documentation/SceneKit/scnscenesource/entrywithidentifier(_,withclass).md",
       "hash": "1a26ab583bb28d3865a00b668b76981e76bddb5e14d705fcef95295b2c11798b"
     },
+    "https://developer.apple.com/tutorials/data/documentation/scenekit/scnscenesource/entrywithidentifier:withclass:.json": {
+      "etag": "\"6776-65d55de7f509b-df\"",
+      "file_path": "documentation/SceneKit/scnscenesource/entrywithidentifier_withclass_.md",
+      "hash": "57624210bcab486f17dadfb04ae380194ae921ba63c45fbd2ba6d248603f9c2a"
+    },
     "https://developer.apple.com/tutorials/data/documentation/scenekit/scnscenesource/identifiersofentries(withclass:).json": {
       "etag": "\"748d-65d55de7f509b-df\"",
       "file_path": "documentation/SceneKit/scnscenesource/identifiersofentries(withclass).md",
@@ -15090,6 +15785,16 @@
       "file_path": "documentation/SceneKit/scnscenesource/scene(options,statushandler).md",
       "hash": "ea2f1321a987da5c006f01ed2629a7f1ecdd648c7809315b57c091466d19eda2"
     },
+    "https://developer.apple.com/tutorials/data/documentation/scenekit/scnscenesource/scenesourcewithdata:options:.json": {
+      "etag": "\"321a-65d55de7f509b-df\"",
+      "file_path": "documentation/SceneKit/scnscenesource/scenesourcewithdata_options_.md",
+      "hash": "8f5513906c4dfaf147e838af3941a0fa9734427783c1444221cbd6d1c6b38b33"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/scenekit/scnscenesource/scenesourcewithurl:options:.json": {
+      "etag": "\"2dd9-65d55de7f509b-df\"",
+      "file_path": "documentation/SceneKit/scnscenesource/scenesourcewithurl_options_.md",
+      "hash": "8eedc4f41bc1cf43974e169a9ca950d913d50433733db6420fd2b86d46ddb10b"
+    },
     "https://developer.apple.com/tutorials/data/documentation/scenekit/scnscenesource/url.json": {
       "etag": "\"3706-65d55de7f509b-df\"",
       "file_path": "documentation/SceneKit/scnscenesource/url.md",
@@ -15139,6 +15844,56 @@
       "etag": "\"30ad-65d55de8637be-df\"",
       "file_path": "documentation/SceneKit/scnscenesourceassetupaxiskey.md",
       "hash": "bc9a0ceb9672a3b82d2812558cd4f7bca4be27efa4219af07a0e7a32ebac1b66"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/scenekit/scnscenesourceloadingoptionanimationimportpolicy.json": {
+      "etag": "\"2952-65d55deb3c3f9-df\"",
+      "file_path": "documentation/SceneKit/scnscenesourceloadingoptionanimationimportpolicy.md",
+      "hash": "6ee6510892a793dc669299c4d2bdb73b1a23c93edeab68b21fffe59a9b71ef8f"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/scenekit/scnscenesourceloadingoptionassetdirectoryurls.json": {
+      "etag": "\"292e-65d55de8afb81-df\"",
+      "file_path": "documentation/SceneKit/scnscenesourceloadingoptionassetdirectoryurls.md",
+      "hash": "772f2a6a3eec5d1a5844aaa7a44652c3eae5a4597e10ff04915c39170621fe75"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/scenekit/scnscenesourceloadingoptioncheckconsistency.json": {
+      "etag": "\"2916-65d55de96929b-df\"",
+      "file_path": "documentation/SceneKit/scnscenesourceloadingoptioncheckconsistency.md",
+      "hash": "e0d8a70542728bfb509742ff52fadae2f01faedc658311805365eb734ad71e1e"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/scenekit/scnscenesourceloadingoptionconverttoyup.json": {
+      "etag": "\"28e6-65d55deaa687a-df\"",
+      "file_path": "documentation/SceneKit/scnscenesourceloadingoptionconverttoyup.md",
+      "hash": "56d299c09a352fc4f8eea77431274550072300342ad378049f40931d9b8b2d23"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/scenekit/scnscenesourceloadingoptionconvertunitstometers.json": {
+      "etag": "\"2946-65d55de89413f-df\"",
+      "file_path": "documentation/SceneKit/scnscenesourceloadingoptionconvertunitstometers.md",
+      "hash": "1e9c0d296bc05813ad98a9bd9132f3d96980c66f106fcb447fcf53c03f857b97"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/scenekit/scnscenesourceloadingoptioncreatenormalsifabsent.json": {
+      "etag": "\"2952-65d55de947fbe-df\"",
+      "file_path": "documentation/SceneKit/scnscenesourceloadingoptioncreatenormalsifabsent.md",
+      "hash": "8db2265da6c9fc900a675d5eaee612c8d51a48e55c9648c505e8924c3c8851d3"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/scenekit/scnscenesourceloadingoptionflattenscene.json": {
+      "etag": "\"28e6-65d55de7d634b-df\"",
+      "file_path": "documentation/SceneKit/scnscenesourceloadingoptionflattenscene.md",
+      "hash": "2b225a0b9ccb6ab4135d12c8cf96524ee494b850898b212f8c0c919f64c09c9b"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/scenekit/scnscenesourceloadingoptionoverrideasseturls.json": {
+      "etag": "\"2922-65d55de8637be-df\"",
+      "file_path": "documentation/SceneKit/scnscenesourceloadingoptionoverrideasseturls.md",
+      "hash": "c5d5029dc57be81f084fcd1855a050567fcdf74418f675e725a7bb8c45b6ac03"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/scenekit/scnscenesourceloadingoptionstrictconformance.json": {
+      "etag": "\"2922-65d55deb23558-df\"",
+      "file_path": "documentation/SceneKit/scnscenesourceloadingoptionstrictconformance.md",
+      "hash": "7da7734b872e02ac85aeda22a8ac0c0a61105dda1dd7aca86b0315b0c26c69a9"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/scenekit/scnscenesourceloadingoptionusesafemode.json": {
+      "etag": "\"28da-65d55de947fbe-df\"",
+      "file_path": "documentation/SceneKit/scnscenesourceloadingoptionusesafemode.md",
+      "hash": "c22f6084737f8bc91526b31737f9cde6300eb2fa255345fb650b1349df03f50a"
     },
     "https://developer.apple.com/tutorials/data/documentation/scenekit/scnscenesourcestatus.json": {
       "etag": "\"7176-65d55de8faf7d-df\"",
@@ -15370,6 +16125,11 @@
       "file_path": "documentation/SceneKit/scnsliderconstraint/radius.md",
       "hash": "d1b65d180e82e1daf68765fea17c799d07e43c67a3c059700f1cae92151d0967"
     },
+    "https://developer.apple.com/tutorials/data/documentation/scenekit/scnsliderconstraint/sliderconstraint.json": {
+      "etag": "\"111c-65d55de915c9a-df\"",
+      "file_path": "documentation/SceneKit/scnsliderconstraint/sliderconstraint.md",
+      "hash": "149080a2b3e0dc05d1cd4ec100dfe6036ecbd0c33a68416b300bacdef257a212"
+    },
     "https://developer.apple.com/tutorials/data/documentation/scenekit/scnsphere.json": {
       "etag": "\"99ac-65d55de915c9a-df\"",
       "file_path": "documentation/SceneKit/scnsphere.md",
@@ -15494,6 +16254,11 @@
       "etag": "\"3857-65d55dea2db72-df\"",
       "file_path": "documentation/SceneKit/scntext/chamferradius.md",
       "hash": "44bcb024f738ae7cbb87b06b5a14e73ec913cc3dca2510cdd4d68962ceeca3be"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/scenekit/scntext/chamfersegmentcount.json": {
+      "etag": "\"2d70-65d55dea2db72-df\"",
+      "file_path": "documentation/SceneKit/scntext/chamfersegmentcount.md",
+      "hash": "d7248089ba597754c157917bd4fb236dbc9eb853af6df66fda98a58902deb287"
     },
     "https://developer.apple.com/tutorials/data/documentation/scenekit/scntext/containerframe.json": {
       "etag": "\"3d80-65d55dea2db72-df\"",
@@ -15820,6 +16585,11 @@
       "file_path": "documentation/SceneKit/scnvector3equaltovector3(_,_).md",
       "hash": "4096519aa5b1f6cf6ce5dc5d62f6d59dc6f61abb0a50ace62f4b896a5643d86d"
     },
+    "https://developer.apple.com/tutorials/data/documentation/scenekit/scnvector3fromfloat3.json": {
+      "etag": "\"209b-65d55deac2972-df\"",
+      "file_path": "documentation/SceneKit/scnvector3fromfloat3.md",
+      "hash": "e70fff71e29a844865afb65f15e7f65b7fb65388fbd1b6550f0bd57b539fe4f2"
+    },
     "https://developer.apple.com/tutorials/data/documentation/scenekit/scnvector3fromglkvector3(_:).json": {
       "etag": "\"2a4e-65d55de82cc1d-df\"",
       "file_path": "documentation/SceneKit/scnvector3fromglkvector3(_).md",
@@ -15829,6 +16599,11 @@
       "etag": "\"388d-65d55de6acf75-df\"",
       "file_path": "documentation/SceneKit/scnvector3make(_,_,_).md",
       "hash": "0fb36ccebfe11f01fded0de7bfdbccfa1179ba1961e470ae9843196662c40948"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/scenekit/scnvector3tofloat3.json": {
+      "etag": "\"208f-65d55deb23558-df\"",
+      "file_path": "documentation/SceneKit/scnvector3tofloat3.md",
+      "hash": "2e139e31b6906535c23cea828099a4cca4f814f1914493d9d55b1d748fd56662"
     },
     "https://developer.apple.com/tutorials/data/documentation/scenekit/scnvector3toglkvector3(_:).json": {
       "etag": "\"2a3c-65d55de849dd5-df\"",
@@ -15915,6 +16690,11 @@
       "file_path": "documentation/SceneKit/scnvector4equaltovector4(_,_).md",
       "hash": "d13b7236cd09b00e7422e05efb2859f6d2a7656c842344d709498458f70c5b42"
     },
+    "https://developer.apple.com/tutorials/data/documentation/scenekit/scnvector4fromfloat4.json": {
+      "etag": "\"2097-65d55de9c221d-df\"",
+      "file_path": "documentation/SceneKit/scnvector4fromfloat4.md",
+      "hash": "34873313a2c8bc47802f4cf6469df3b0270fa37fab09ac86634b8123563beb9c"
+    },
     "https://developer.apple.com/tutorials/data/documentation/scenekit/scnvector4fromglkvector4(_:).json": {
       "etag": "\"2a46-65d55de8c9d9f-df\"",
       "file_path": "documentation/SceneKit/scnvector4fromglkvector4(_).md",
@@ -15924,6 +16704,11 @@
       "etag": "\"3e89-65d55de8afb81-df\"",
       "file_path": "documentation/SceneKit/scnvector4make(_,_,_,_).md",
       "hash": "38b0d1be0b7c55cb3d7d3c9dcc3d2f3e902be4371e4421b965f40b6bfa7ccaaa"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/scenekit/scnvector4tofloat4.json": {
+      "etag": "\"208b-65d55de947fbe-df\"",
+      "file_path": "documentation/SceneKit/scnvector4tofloat4.md",
+      "hash": "f7f683bf07d9efd511b19267a6dd46f782ce647f5fadefd99d26d86f6d36fc78"
     },
     "https://developer.apple.com/tutorials/data/documentation/scenekit/scnvector4toglkvector4(_:).json": {
       "etag": "\"2a34-65d55deb52d2e-df\"",
@@ -16050,6 +16835,21 @@
       "file_path": "documentation/SceneKit/scnview/stop(_).md",
       "hash": "5afc163b7e62f04fe0691265e58a5849f3fb465437771d434ea18422380e1927"
     },
+    "https://developer.apple.com/tutorials/data/documentation/scenekit/scnviewoptionpreferlowpowerdevice.json": {
+      "etag": "\"2881-65d55de96929b-df\"",
+      "file_path": "documentation/SceneKit/scnviewoptionpreferlowpowerdevice.md",
+      "hash": "de018ab1a6854179ea08f46c4cbd90723c246bf63a69e503cba319cab15fa736"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/scenekit/scnviewoptionpreferreddevice.json": {
+      "etag": "\"2845-65d55dea2db72-df\"",
+      "file_path": "documentation/SceneKit/scnviewoptionpreferreddevice.md",
+      "hash": "180b7f09383859dc500648204b6bd0cd1c4a76a5c46dbf659a7c9aee4421e014"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/scenekit/scnviewoptionpreferredrenderingapi.json": {
+      "etag": "\"2856-65d55de7ba182-df\"",
+      "file_path": "documentation/SceneKit/scnviewoptionpreferredrenderingapi.md",
+      "hash": "8ffdaadef495deab2655bdcf175b22356af9bcd90facbe8c89e7d61e29d5720e"
+    },
     "https://developer.apple.com/tutorials/data/documentation/scenekit/scnviewtransform.json": {
       "etag": "\"46db-65d55dea6c452-df\"",
       "file_path": "documentation/SceneKit/scnviewtransform.md",
@@ -16093,8 +16893,8 @@
   },
   "metadata": {
     "render": {
-      "version": 1
+      "version": 2
     },
-    "total_pages": 3218
+    "total_pages": 3378
   }
 }

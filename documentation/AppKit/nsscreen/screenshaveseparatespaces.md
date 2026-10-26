@@ -43,6 +43,8 @@ This method reflects whether the “Displays have separate Spaces” option is e
 - [func canRepresent(NSDisplayGamut) -> Bool](./canrepresent%28_%29.md)
   A Boolean value indicating whether the color space of the screen is capable of representing the specified display gamut.
 - [enum NSDisplayGamut](../nsdisplaygamut.md)
+- [- userSpaceScaleFactor](./userspacescalefactor.md)
+  Returns the scaling factor from user space to device space on the screen.
 
 
 ---

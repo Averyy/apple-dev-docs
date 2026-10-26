@@ -50,8 +50,24 @@ typedef struct { ... } SPPose3D;
   Returns a pose with a position and rotation defined by an affine transform.
 - [init?(transform: ProjectiveTransform3D)](./pose3d/init%28transform%29-4go9c.md)
   Returns a pose with a position and rotation defined by a projective transform.
+- [SPPose3DMakeLookAt](./sppose3dmakelookat-6y4bb.md)
+  Returns a pose at the specified position with the rotation towards the target.
+- [SPPose3DMakeLookAt](./sppose3dmakelookat-8brxe.md)
+- [SPPose3DMakeLookAt](./sppose3dmakelookat-dgpp.md)
+- [SPPose3DMakeWith4x4Matrix](./sppose3dmakewith4x4matrix.md)
+  Creates a pose from the specified 4 x 4 double-precision matrix.
+- [SPPose3DMakeWithAffineTransform](./sppose3dmakewithaffinetransform.md)
+  Returns a pose with a position and rotation that an affine transform defines.
+- [SPPose3DMakeWithProjectiveTransform](./sppose3dmakewithprojectivetransform.md)
+  Returns a pose with a position and rotation that a projective transform defines.
+- [SPPose3DMakeWithVector](./sppose3dmakewithvector.md)
+  Creates a pose with the specified position and rotation vectors.
 ### Constants
 - [static var identity: Pose3D](./pose3d/identity.md)
+  The identity pose.
+- [SPPose3DInvalid](./sppose3dinvalid.md)
+  A pose that represents an invalid pose.
+- [SPPose3DIdentity](./sppose3didentity.md)
   The identity pose.
 ### Inspecting a 3D pose’s properties
 - [var matrix: simd_double4x4](./pose3d/matrix.md)
@@ -62,6 +78,10 @@ typedef struct { ... } SPPose3D;
   The pose’s rotation.
 - [var inverse: Pose3D](./pose3d/inverse.md)
   The pose’s inverse.
+- [SPPose3DGet4x4Matrix](./sppose3dget4x4matrix.md)
+  Returns the pose’s underlying matrix.
+- [SPPose3DGetInverse](./sppose3dgetinverse.md)
+  Returns the affine pose’s inverse.
 ### Transforming a 3D pose structure
 - [func concatenating(ScaledPose3D) -> ScaledPose3D](./pose3d/concatenating%28_%29-4esra.md)
   Returns a pose that represents the concatenation of a scaled pose and a pose.
@@ -75,14 +95,35 @@ typedef struct { ... } SPPose3D;
   Returns a pose that results from rotating with the specified quaternion.
 - [func rotated(by: Rotation3D) -> Pose3D](./pose3d/rotated%28by%29-377u.md)
   Returns a pose that results from applying the specified rotation.
+- [SPPose3DConcatenation](./sppose3dconcatenation.md)
+  Returns a pose that represents the concatenation of two poses.
+- [SPPose3DFlip](./sppose3dflip.md)
+  Flips a pose along the specified axis.
+- [SPPose3DRotate](./sppose3drotate.md)
+  Returns a transform that results from rotating with the specified rotation structure.
+- [SPPose3DRotateByQuaternion](./sppose3drotatebyquaternion.md)
+  Returns a transform that results from rotating with the specified quaternion.
+- [SPPose3DTranslate](./sppose3dtranslate-6bwqc.md)
+  Returns a transform with an origin that’s offset by the specified size structure.
+- [SPPose3DTranslate](./sppose3dtranslate-8v4sq.md)
+  Returns a pose with an origin that’s offset by the specified vector.
 ### Checking characteristics
 - [var isIdentity: Bool](./pose3d/isidentity.md)
   A Boolean value that indicates whether the pose is the identity pose.
+- [SPPose3DIsIdentity](./sppose3disidentity.md)
+  Returns a Boolean value that indicates whether the pose is the identity pose.
+- [SPPose3DIsValid](./sppose3disvalid.md)
+  Returns a Boolean value that indicates whether the pose is a valid pose.
 ### Comparing values
 - [func isApproximatelyEqual(to: Pose3D, tolerance: Double) -> Bool](./pose3d/isapproximatelyequal%28to,tolerance%29.md)
   Returns a Boolean value that indicates whether two poses are equal within a specified tolerance.
 - [static func == (Pose3D, Pose3D) -> Bool](./pose3d/eqeq%28_,_%29.md)
   Returns a Boolean value that indicates whether two values are equal.
+- [SPPose3DEqualToPose](./sppose3dequaltopose.md)
+  Returns a Boolean value that indicates whether two values are equal.
+- [SPPose3DAlmostEqualToPose](./sppose3dalmostequaltopose-21t5f.md)
+  Returns a Boolean value that indicates whether two poses are equal within a specified tolerance.
+- [SPPose3DAlmostEqualToPose](./sppose3dalmostequaltopose-9hr1m.md)
 ### Applying arithmetic operations
 - [static func * (Pose3D, Pose3D) -> Pose3D](./pose3d/star%28_,_%29.md)
   Returns the concatenation of two poses.

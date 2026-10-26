@@ -20,6 +20,16 @@
       "file_path": "documentation/ClassKit/building-missing-contexts.md",
       "hash": "2dd625cca63b1053e68d518da9894216039efaaad0528560ffa4c502b8ea6798"
     },
+    "https://developer.apple.com/documentation/classkit/cls_extern": {
+      "etag": "\"9bf-65d55f158cbe4-df\"",
+      "file_path": "documentation/ClassKit/cls_extern.md",
+      "hash": "9a1ce1f895be9d50544ebdde4c0df007cfa67b579ac50e6c537b1e2ab80ed891"
+    },
+    "https://developer.apple.com/documentation/classkit/cls_extern_hidden": {
+      "etag": "\"a13-65d55f158cbe4-df\"",
+      "file_path": "documentation/ClassKit/cls_extern_hidden.md",
+      "hash": "7eccc18de35bbbf77f99e487473cc6d00825679fe34bb69ccfbf578b3bb5b55f"
+    },
     "https://developer.apple.com/documentation/classkit/clsactivity": {
       "etag": "\"8132-65d55f157362c-df\"",
       "file_path": "documentation/ClassKit/clsactivity.md",
@@ -915,6 +925,16 @@
       "file_path": "documentation/ClassKit/building-missing-contexts.md",
       "hash": "2dd625cca63b1053e68d518da9894216039efaaad0528560ffa4c502b8ea6798"
     },
+    "https://developer.apple.com/tutorials/data/documentation/classkit/cls_extern.json": {
+      "etag": "\"9bf-65d55f158cbe4-df\"",
+      "file_path": "documentation/ClassKit/cls_extern.md",
+      "hash": "9a1ce1f895be9d50544ebdde4c0df007cfa67b579ac50e6c537b1e2ab80ed891"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/classkit/cls_extern_hidden.json": {
+      "etag": "\"a13-65d55f158cbe4-df\"",
+      "file_path": "documentation/ClassKit/cls_extern_hidden.md",
+      "hash": "7eccc18de35bbbf77f99e487473cc6d00825679fe34bb69ccfbf578b3bb5b55f"
+    },
     "https://developer.apple.com/tutorials/data/documentation/classkit/clsactivity.json": {
       "etag": "\"8132-65d55f157362c-df\"",
       "file_path": "documentation/ClassKit/clsactivity.md",
@@ -1793,8 +1813,8 @@
   },
   "metadata": {
     "render": {
-      "version": 1
+      "version": 2
     },
-    "total_pages": 358
+    "total_pages": 362
   }
 }

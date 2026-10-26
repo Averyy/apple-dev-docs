@@ -43,6 +43,20 @@ extern IMPclass_lookupMethod(Class cls, SEL sel);
 - [func objc_exception_rethrow() -> Never](./objc_exception_rethrow%28%29.md)
 - [func objc_exception_throw(Any) -> Never](./objc_exception_throw%28_%29.md)
   Throw a runtime exception. This function is inserted by the compiler where \c @throw would otherwise be.
+- [class_createInstanceFromZone](./class_createinstancefromzone.md)
+- [NXCompareHashTables](./nxcomparehashtables.md)
+- [NXCopyHashTable](./nxcopyhashtable.md)
+- [NXCountHashTable](./nxcounthashtable.md)
+- [NXCreateHashTable](./nxcreatehashtable.md)
+- [NXCreateHashTableFromZone](./nxcreatehashtablefromzone.md)
+- [NXEmptyHashTable](./nxemptyhashtable.md)
+- [NXFreeHashTable](./nxfreehashtable.md)
+- [NXHashGet](./nxhashget.md)
+- [NXHashInsert](./nxhashinsert.md)
+- [NXHashInsertIfAbsent](./nxhashinsertifabsent.md)
+- [NXHashMember](./nxhashmember.md)
+- [NXHashRemove](./nxhashremove.md)
+- [NXInitHashState](./nxinithashstate.md)
 
 
 ---

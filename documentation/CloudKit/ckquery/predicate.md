@@ -37,6 +37,8 @@ A predicate contains one or more expressions that evaluate to [`true`](../../Swi
   The record type to search.
 - [var sortDescriptors: [NSSortDescriptor]?](./sortdescriptors.md)
   The sort descriptors for organizing the query’s results.
+- [recordType](./recordtype-3clp.md)
+  The record type to search.
 
 
 ---

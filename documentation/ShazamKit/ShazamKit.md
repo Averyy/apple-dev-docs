@@ -71,6 +71,11 @@ You can create a custom catalog with your own reference signatures and their ass
 ### Reference
 - [ShazamKit Enumerations](./shazamkit-enumerations.md)
 - [ShazamKit Constants](./shazamkit-constants.md)
+### Variables
+- [SHMediaItemConfidence](./shmediaitemproperty/confidence.md)
+  The value ranges from 0.0 to 1.0, where 1.0 indicates the highest level of confidence.
+### Macros
+- [SH_EXPORT_WITH_FULL_SDK](./sh_export_with_full_sdk.md)
 
 
 ---

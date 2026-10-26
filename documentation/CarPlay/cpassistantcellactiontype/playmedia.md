@@ -23,7 +23,7 @@ CPAssistantCellActionTypePlayMedia
 
 #### Discussion
 
-> **Note**:  This action is only available in audio apps that include an Intents Extension capable of handling [`INSearchCallHistoryIntent`](https://developer.apple.com/documentation/intents/insearchcallhistoryintent). For more information, see [Creating an Intents App Extension](../../SiriKit/creating-an-intents-app-extension.md).
+> **Note**:  This action is only available in audio apps that include an Intents Extension capable of handling [`INSearchCallHistoryIntent`](../../Intents/insearchcallhistoryintent.md). For more information, see [Creating an Intents App Extension](../../SiriKit/creating-an-intents-app-extension.md).
 
 The system provides the user’s response to your app’s Intents Extension. Your app must respond by searching for the requested media and, if it’s available, start its playback and display a [`CPNowPlayingTemplate`](../cpnowplayingtemplate.md).
 

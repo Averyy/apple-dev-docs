@@ -44,6 +44,7 @@ You do not create instances of this class. Instead, you create and use an instan
 - [NFCNDEFReaderSession](./nfcndefreadersession.md)
 - [NFCTagReaderSession](./nfctagreadersession.md)
 - [NFCVASReaderSession](./nfcvasreadersession.md)
+- [NFCISO15693ReaderSession](./nfciso15693readersession.md)
 ### Conforms To
 - [CVarArg](../Swift/cvararg.md)
 - [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
@@ -68,6 +69,8 @@ You do not create instances of this class. Instead, you create and use an instan
   A general interface for interacting with a reader session.
 - [Near Field Communication Tag Reader Session Formats Entitlement](../BundleResources/entitlements/com.apple.developer.nfc.readersession.formats.md)
   The Near Field Communication data formats an app can read.
+- [NFCReaderSessionDelegate](./nfcreadersessiondelegate.md)
+  A collection of callbacks that provide information about the status of an NFC reader session.
 
 
 ---

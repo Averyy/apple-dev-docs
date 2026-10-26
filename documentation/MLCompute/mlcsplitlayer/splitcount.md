@@ -34,6 +34,8 @@ The layer splits the tensor into equally sized chunks, however the last chunk ma
   The dimension or axis along which to split the tensor.
 - [var splitSectionLengths: [Int]?](./splitsectionlengths-5abch.md)
   An array that contains the lengths of each split section.
+- [splitSectionLengths](./splitsectionlengths-32abw.md)
+  An array that contains the lengths of each split section.
 
 
 ---

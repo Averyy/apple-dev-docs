@@ -39,6 +39,8 @@ An initialized counted set object with the contents of `array`. The returned obj
 - [Collections Programming Topics](https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/Collections/Collections.html#//apple_ref/doc/uid/10000034i)
 - [convenience init(array: [Any])](../nsset/init%28array%29.md)
   Initializes a newly allocated set with the objects that are contained in a given array.
+- [+ setWithArray:](../nsset/setwitharray_.md)
+  Creates and returns a set containing a uniqued collection of the objects contained in a given array.
 ### Initializing a Counted Set
 - [convenience init(set: Set<AnyHashable>)](./init%28set%29.md)
   Returns a counted set object initialized with the contents of a given set.

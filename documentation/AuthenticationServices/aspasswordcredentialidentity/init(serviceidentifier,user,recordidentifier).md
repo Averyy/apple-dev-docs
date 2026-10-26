@@ -34,6 +34,8 @@ init(serviceIdentifier: ASCredentialServiceIdentifier, user: String, recordIdent
 ### Creating a credential identity
 - [class ASCredentialServiceIdentifier](../ascredentialserviceidentifier.md)
   An identifier representing a particular service for which the user needs a credential, like a web site.
+- [+ identityWithServiceIdentifier:user:recordIdentifier:](./identitywithserviceidentifier_user_recordidentifier_.md)
+  Creates and returns a password credential identity object with a service identifier.
 
 
 ---

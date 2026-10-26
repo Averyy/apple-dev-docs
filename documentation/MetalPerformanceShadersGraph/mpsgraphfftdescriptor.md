@@ -37,6 +37,9 @@ Use this descriptor with [`fastFourierTransform(_:axes:descriptor:name:)`](./mps
   A parameter which controls how graph rounds the output tensor size for a Hermitean-to-real Fourier transform.
 - [var scalingMode: MPSGraphFFTScalingMode](./mpsgraphfftdescriptor/scalingmode.md)
   The scaling mode of the fast fourier transform (FFT) operation.
+### Type Methods
+- [+ descriptor](./mpsgraphfftdescriptor/descriptor.md)
+  Creates a fast Fourier transform descriptor with default parameter values.
 
 ## Relationships
 

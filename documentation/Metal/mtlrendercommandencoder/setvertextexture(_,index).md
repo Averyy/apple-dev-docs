@@ -39,6 +39,8 @@ By default, the texture at each index is `nil`.
 ### Assigning textures
 - [func setVertexTextures([(any MTLTexture)?], range: Range<Int>)](./setvertextextures%28_,range%29.md)
   Assigns multiple textures to a range of entries in the vertex shader argument table.
+- [- setVertexTextures:withRange:](./setvertextextures_withrange_.md)
+  Assigns multiple textures to a range of entries in the vertex shader argument table.
 
 
 ---

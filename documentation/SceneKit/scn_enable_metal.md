@@ -27,6 +27,21 @@ var SCN_ENABLE_METAL: Int32 { get }
 
 ### Macros
 - [var SCN_ENABLE_OPENGL: Int32](./scn_enable_opengl.md)
+- [GLKMatrix4FromCATransform3D](./glkmatrix4fromcatransform3d.md)
+- [GLKMatrix4ToCATransform3D](./glkmatrix4tocatransform3d.md)
+- [SCNColor](./scncolor.md)
+- [SCNHitTestOptionBackFaceCulling](./scnhittestoptionbackfaceculling.md)
+- [SCNHitTestOptionBoundingBoxOnly](./scnhittestoptionboundingboxonly.md)
+- [SCNHitTestOptionClipToZRange](./scnhittestoptioncliptozrange.md)
+- [SCNHitTestOptionFirstFoundOnly](./scnhittestoptionfirstfoundonly.md)
+- [SCNHitTestOptionIgnoreChildNodes](./scnhittestoptionignorechildnodes.md)
+- [SCNHitTestOptionIgnoreHiddenNodes](./scnhittestoptionignorehiddennodes.md)
+- [SCNHitTestOptionRootNode](./scnhittestoptionrootnode.md)
+- [SCNHitTestOptionSortResults](./scnhittestoptionsortresults.md)
+- [SCNPhysicsShapeOptionKeepAsCompound](./scnphysicsshapeoptionkeepascompound.md)
+- [SCNPhysicsShapeOptionScale](./scnphysicsshapeoptionscale.md)
+- [SCNPhysicsShapeOptionType](./scnphysicsshapeoptiontype.md)
+- [SCNPhysicsTestOptionBackfaceCulling](./scnphysicstestoptionbackfaceculling.md)
 
 
 ---

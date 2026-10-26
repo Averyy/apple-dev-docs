@@ -36,6 +36,8 @@ When the value of this property is `–1`, no cells are selected. If cells in mu
   Searches the receiver and returns the last cell matching the specified tag.
 - [var cells: [NSCell]](./cells.md)
   An array containing the cells of the matrix.
+- [selectedCell](./selectedcell.md)
+  The most recently selected cell.
 
 
 ---

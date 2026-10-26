@@ -66,6 +66,7 @@ A result code.
   Adds an event of type `MIDIRawData` to a music track.
 - [func MusicTrackNewMetaEvent(MusicTrack, MusicTimeStamp, UnsafePointer<MIDIMetaEvent>) -> OSStatus](./musictracknewmetaevent%28_,_,_%29.md)
   Adds an event of type `MIDIMetaEvent` to a music track.
+- [NewMusicTrackFrom](./newmusictrackfrom.md)
 
 
 ---

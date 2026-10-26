@@ -24,6 +24,12 @@ let MPMoviePlayerTimedMetadataUserInfoKey: String
 extern NSString * const MPMoviePlayerTimedMetadataUserInfoKey;
 ```
 
+## See Also
+
+### Notifications
+- [MPMoviePlayerTimedMetadataUpdatedNotification](./mpmovieplayertimedmetadataupdatednotification.md)
+  Posted when new timed metadata arrives.
+
 
 ---
 

@@ -29,6 +29,12 @@ typedef struct _IODataQueueEntry {
 
 This is a variable sized struct. The data field simply represents the start of the data region. The size of the data region is stored in the size field. The whole size of the specific entry is the size of a UInt32 plus the size of the data region.
 
+## Topics
+
+### Instance Properties
+- [data](./iodataqueueentry/api-1456748-data.md)
+- [size](./iodataqueueentry/api-1456739-size.md)
+
 
 ---
 

@@ -43,6 +43,8 @@ An `OSStatus` result code. When returning an error, consider the audio data inva
   Creates an audio source node with a block that supplies audio data.
 - [init(format: AVAudioFormat, renderBlock: AVAudioSourceNodeRenderBlock)](./avaudiosourcenode/init%28format,renderblock%29.md)
   Creates an audio source node with the audio format and a block that supplies audio data.
+- [- initWithRealtimeSafeRenderBlock:](./avaudiosourcenode/initwithrealtimesaferenderblock_.md)
+- [- initWithFormat:realtimeSafeRenderBlock:](./avaudiosourcenode/initwithformat_realtimesaferenderblock_.md)
 
 
 ---

@@ -38,6 +38,8 @@ This method is a designated initializer of `NSMutableSet`.
 ### Creating a mutable set
 - [init(capacity: Int)](./init%28capacity%29.md)
   Returns an initialized mutable set with a given initial capacity.
+- [+ setWithCapacity:](./setwithcapacity_.md)
+  Creates and returns a mutable set with a given initial capacity.
 
 
 ---

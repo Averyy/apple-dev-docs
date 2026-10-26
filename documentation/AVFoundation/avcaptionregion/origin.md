@@ -31,6 +31,8 @@ The caption’s origin may not provide undefined [`x`](../avcaptionpoint/x.md) a
 ### Accessing the location
 - [struct AVCaptionPoint](../avcaptionpoint.md)
   A structure that defines the origin point for a caption.
+- [AVCaptionPointMake](../avcaptionpointmake.md)
+  Creates a caption point with the specified x and y positions.
 
 
 ---

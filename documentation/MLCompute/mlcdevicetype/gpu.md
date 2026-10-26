@@ -32,6 +32,8 @@ MLCDeviceTypeGPU
   A device type that represents the CPU.
 - [MLCDeviceType.ane](./ane.md)
   A device type that represents the Apple Neural Engine.
+- [MLCDeviceTypeCount](./mlcdevicetypecount.md)
+  A number that represents the number of device types.
 
 
 ---

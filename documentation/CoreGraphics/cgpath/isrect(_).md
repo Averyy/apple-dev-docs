@@ -46,6 +46,10 @@ A Boolean value that indicates whether the specified path represents a rectangle
   Returns whether the specified point is interior to the path.
 - [var isEmpty: Bool](./isempty.md)
   Indicates whether or not a graphics path is empty.
+- [CGPathEqualToPath](../cgpathequaltopath.md)
+  Indicates whether two graphics paths are equivalent.
+- [CGPathContainsPoint](../cgpathcontainspoint.md)
+  Checks whether a point is contained in a graphics path.
 
 
 ---

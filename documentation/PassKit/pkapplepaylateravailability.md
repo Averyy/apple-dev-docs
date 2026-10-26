@@ -55,6 +55,8 @@ enum PKApplePayLaterAvailability : NSInteger;
   Values you use to enable or disable Apple Pay Later for a specific transaction.
 - [struct PKAddressField](./pkaddressfield.md)
   Billing or shipping address fields.
+- [applePayLaterAvailability](./pkpaymentrequest/applepaylateravailability-inpf.md)
+  A value that indicates whether Apple Pay Later is available for a transaction.
 
 
 ---

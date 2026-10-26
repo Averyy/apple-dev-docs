@@ -50,6 +50,9 @@ Only file provider extensions based on the [`NSFileProviderReplicatedExtension`]
   Creates a new version that supersedes the current version.
 ### Initializers
 - [init?(coder: NSCoder)](./nsfileproviderdomainversion/init%28coder%29.md)
+### Comparing Versions
+- [- compare:](./nsfileproviderdomainversion/compare_.md)
+  Compares another domain version with this one.
 
 ## Relationships
 

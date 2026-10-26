@@ -30,6 +30,8 @@ kCTFontCollectionCopyUnique
 ### Constants
 - [static var standardSort: CTFontCollectionCopyOptions](./standardsort.md)
   Passing this option indicates that the return values should be sorted in standard UI order, suitable for display to the user. This is the same sorting behavior used by `NSFontPanel` and Font Book.
+- [kCTFontCollectionCopyDefaultOptions](./kctfontcollectioncopydefaultoptions.md)
+  Passing this option indicates that defaults are to be used.
 
 
 ---

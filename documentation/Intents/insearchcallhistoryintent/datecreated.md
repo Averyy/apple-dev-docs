@@ -49,6 +49,8 @@ Use this property to limit your search to calls that occurred within the specifi
   The audio-video capabilities of the call.
 - [var unseen: Bool?](./unseen-9ua7o.md)
   A Boolean value that indicates whether the user has seen the call yet.
+- [unseen](./unseen-1mohp.md)
+  A Boolean value that indicates whether the user has seen the call yet.
 
 
 ---

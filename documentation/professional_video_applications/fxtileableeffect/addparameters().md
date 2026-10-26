@@ -22,10 +22,10 @@ func addParameters() throws
 
 ## Mentions
 
-- [Adding parameters to plug-ins](https://developer.apple.com/documentation/professional-video-applications/adding-parameters-to-plug-ins)
-- [Analyzing media](https://developer.apple.com/documentation/professional-video-applications/analyzing-media)
-- [Building an FxPlug plug-in manually](https://developer.apple.com/documentation/professional-video-applications/building-an-fxplug-plug-in-manually)
-- [Using FxPlug APIs](https://developer.apple.com/documentation/professional-video-applications/using-fxplug-apis)
+- [Adding parameters to plug-ins](../../Professional-Video-Applications/adding-parameters-to-plug-ins.md)
+- [Analyzing media](../../Professional-Video-Applications/analyzing-media.md)
+- [Building an FxPlug plug-in manually](../../Professional-Video-Applications/building-an-fxplug-plug-in-manually.md)
+- [Using FxPlug APIs](../../Professional-Video-Applications/using-fxplug-apis.md)
 
 #### Discussion
 

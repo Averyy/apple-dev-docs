@@ -39,6 +39,10 @@ To learn more about graphs and pathfinding, see [Pathfinding](https://developer.
   Initializes a graph to cover the specified area, using the specified node class.
 - [init(bufferRadius: Float, minCoordinate: vector_float2, maxCoordinate: vector_float2)](./gkmeshgraph/init%28bufferradius,mincoordinate,maxcoordinate%29.md)
   Initializes a graph to cover the specified area.
+- [+ graphWithBufferRadius:minCoordinate:maxCoordinate:nodeClass:](./gkmeshgraph/graphwithbufferradius_mincoordinate_maxcoordinate_nodeclass_.md)
+  Creates a graph to cover the specified area, using the specified node class.
+- [+ graphWithBufferRadius:minCoordinate:maxCoordinate:](./gkmeshgraph/graphwithbufferradius_mincoordinate_maxcoordinate_.md)
+  Creates a graph to cover the specified area.
 ### Working with Obstacles
 - [var obstacles: [GKPolygonObstacle]](./gkmeshgraph/obstacles.md)
   The list of obstacle objects in the graph, each of which describes a polygon-shaped impassable area.

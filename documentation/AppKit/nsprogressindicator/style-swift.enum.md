@@ -26,6 +26,10 @@ enum NSProgressIndicatorStyle : NSUInteger;
   A rectangular indicator that can be determinate or indeterminate.
 - [NSProgressIndicator.Style.spinning](./style-swift.enum/spinning.md)
   A small circular indicator that can be determinate or indeterminate.
+- [NSProgressIndicatorBarStyle](../nsprogressindicatorbarstyle.md)
+  A rectangular indicator that can be determinate or indeterminate.
+- [NSProgressIndicatorSpinningStyle](../nsprogressindicatorspinningstyle.md)
+  A small circular indicator that can be determinate or indeterminate.
 ### Initializers
 - [init?(rawValue: UInt)](./style-swift.enum/init%28rawvalue%29.md)
 

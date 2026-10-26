@@ -40,6 +40,12 @@ Custom metrics are a type of signpost saved to custom OS logs created using [`ma
   Posts a single custom metric, the start time of a custom metric, or the end time of a custom metric to the log system.
 - [func mxSignpostAnimationIntervalBegin(dso: UnsafeRawPointer, log: OSLog, name: StaticString, signpostID: OSSignpostID, StaticString, [any CVarArg])](./mxsignpostanimationintervalbegin%28dso,log,name,signpostid,_,_%29.md)
   Posts the start time of an animation interval to the log system.
+- [MXSignpostEventEmit](./mxsignposteventemit.md)
+  Post a custom metric event to a metric kit log.
+- [MXSignpostIntervalBegin](./mxsignpostintervalbegin.md)
+  Post the start time of a custom metric event to a metric kit log.
+- [MXSignpostIntervalEnd](./mxsignpostintervalend.md)
+  Post the end time of a custom metric event to a metric kit log.
 ### Reading custom metric data
 - [var signpostIntervalData: MXSignpostIntervalData?](./mxsignpostmetric/signpostintervaldata.md)
   The data captured for a custom metric.
@@ -79,6 +85,13 @@ Custom metrics are a type of signpost saved to custom OS logs created using [`ma
   Posts a single custom metric, the start time of a custom metric, or the end time of a custom metric to the log system.
 - [func mxSignpostAnimationIntervalBegin(dso: UnsafeRawPointer, log: OSLog, name: StaticString, signpostID: OSSignpostID, StaticString, [any CVarArg])](./mxsignpostanimationintervalbegin%28dso,log,name,signpostid,_,_%29.md)
   Posts the start time of an animation interval to the log system.
+- [MXSignpostEventEmit](./mxsignposteventemit.md)
+  Post a custom metric event to a metric kit log.
+- [MXSignpostAnimationIntervalBegin](./mxsignpostanimationintervalbegin.md)
+- [MXSignpostIntervalBegin](./mxsignpostintervalbegin.md)
+  Post the start time of a custom metric event to a metric kit log.
+- [MXSignpostIntervalEnd](./mxsignpostintervalend.md)
+  Post the end time of a custom metric event to a metric kit log.
 
 
 ---

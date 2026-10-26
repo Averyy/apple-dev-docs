@@ -1998,6 +1998,11 @@
       "file_path": "documentation/MetalPerformanceShadersGraph/mpsgraph/while(initialinputs,before,after,name).md",
       "hash": "08e3d882c97c4088d2a6f4886f06ea29dc8c8bfe14ea63d6e3672837ac4d7400"
     },
+    "https://developer.apple.com/documentation/metalperformanceshadersgraph/mpsgraphcallablemap": {
+      "etag": "\"dbb-65d560a539b13-df\"",
+      "file_path": "documentation/MetalPerformanceShadersGraph/mpsgraphcallablemap.md",
+      "hash": "c596559c6e8bbb00d4c7724f0d7681649d173880b007bfb0749fb2756f9d9f8d"
+    },
     "https://developer.apple.com/documentation/metalperformanceshadersgraph/mpsgraphcompilationcompletionhandler": {
       "etag": "\"26b3-65d560a539b13-df\"",
       "file_path": "documentation/MetalPerformanceShadersGraph/mpsgraphcompilationcompletionhandler.md",
@@ -2648,6 +2653,11 @@
       "file_path": "documentation/MetalPerformanceShadersGraph/mpsgraphfftdescriptor.md",
       "hash": "741e358c0bbcaa6c0deeee8485a4f3cb8ed91459671a892336248e5daa4f5190"
     },
+    "https://developer.apple.com/documentation/metalperformanceshadersgraph/mpsgraphfftdescriptor/descriptor": {
+      "etag": "\"13dd-65d560a539b13-df\"",
+      "file_path": "documentation/MetalPerformanceShadersGraph/mpsgraphfftdescriptor/descriptor.md",
+      "hash": "37589d1ffae07420c4d2e0f47e114666f6a9f4d15d1ca3af525d4a462c3a989c"
+    },
     "https://developer.apple.com/documentation/metalperformanceshadersgraph/mpsgraphfftdescriptor/inverse": {
       "etag": "\"2434-65d560a539b13-df\"",
       "file_path": "documentation/MetalPerformanceShadersGraph/mpsgraphfftdescriptor/inverse.md",
@@ -2702,6 +2712,11 @@
       "etag": "\"2394-65d560a607d9d-df\"",
       "file_path": "documentation/MetalPerformanceShadersGraph/mpsgraphgrudescriptor/bidirectional.md",
       "hash": "aa26dda562b11dd42d49744f59f877ff56c08ecd3531089659fb00983d4fee55"
+    },
+    "https://developer.apple.com/documentation/metalperformanceshadersgraph/mpsgraphgrudescriptor/descriptor": {
+      "etag": "\"13a3-65d560a607d9d-df\"",
+      "file_path": "documentation/MetalPerformanceShadersGraph/mpsgraphgrudescriptor/descriptor.md",
+      "hash": "5698874cd89a09085c69c7fbfa7147c0dc20263a6f1eb8baafbcf87fea1b451a"
     },
     "https://developer.apple.com/documentation/metalperformanceshadersgraph/mpsgraphgrudescriptor/flipz": {
       "etag": "\"23af-65d560a607d9d-df\"",
@@ -2872,6 +2887,11 @@
       "etag": "\"2784-65d560a607d9d-df\"",
       "file_path": "documentation/MetalPerformanceShadersGraph/mpsgraphlstmdescriptor/cellgateactivation.md",
       "hash": "72cda30e48c3688c0a7cdc989dab88baf354a1f5932c1241e4c3eac1ba3bbbf4"
+    },
+    "https://developer.apple.com/documentation/metalperformanceshadersgraph/mpsgraphlstmdescriptor/descriptor": {
+      "etag": "\"13bb-65d560a607d9d-df\"",
+      "file_path": "documentation/MetalPerformanceShadersGraph/mpsgraphlstmdescriptor/descriptor.md",
+      "hash": "e1f438c4c14bc10d9902e473715d6d1cc74c1de603d697ff231c227b92caa5cf"
     },
     "https://developer.apple.com/documentation/metalperformanceshadersgraph/mpsgraphlstmdescriptor/forgetgateactivation": {
       "etag": "\"27b5-65d560a607d9d-df\"",
@@ -3463,6 +3483,11 @@
       "file_path": "documentation/MetalPerformanceShadersGraph/mpsgraphreducedprecisionfastmath/init(rawvalue).md",
       "hash": "6672444f36f5fe448c204b544b64043b2de81dc14f4189b39400ab9d5ff4c45d"
     },
+    "https://developer.apple.com/documentation/metalperformanceshadersgraph/mpsgraphreducedprecisionfastmath/mpsgraphreducedprecisionfastmathdefault": {
+      "etag": "\"14d5-65d560a5ee2f9-df\"",
+      "file_path": "documentation/MetalPerformanceShadersGraph/mpsgraphreducedprecisionfastmath/mpsgraphreducedprecisionfastmathdefault.md",
+      "hash": "780b4900cb26131e34bcde8f926e186ea79cb7d35e203a152c18e486e27519a3"
+    },
     "https://developer.apple.com/documentation/metalperformanceshadersgraph/mpsgraphreducedprecisionfastmath/none": {
       "etag": "\"207e-65d560a5ee2f9-df\"",
       "file_path": "documentation/MetalPerformanceShadersGraph/mpsgraphreducedprecisionfastmath/none.md",
@@ -3723,6 +3748,11 @@
       "file_path": "documentation/MetalPerformanceShadersGraph/mpsgraphsinglegaternndescriptor/bidirectional.md",
       "hash": "ec77b7545021cee9434dcd3e34b2aa70fd028bcbdd989dc52dbbbfd9ba46bfc7"
     },
+    "https://developer.apple.com/documentation/metalperformanceshadersgraph/mpsgraphsinglegaternndescriptor/descriptor": {
+      "etag": "\"146c-65d560a607d9d-df\"",
+      "file_path": "documentation/MetalPerformanceShadersGraph/mpsgraphsinglegaternndescriptor/descriptor.md",
+      "hash": "7a5381c9b5370659f234993c80b1a2ed2fb74300ff40cc66cc69d3f1bc9f90b2"
+    },
     "https://developer.apple.com/documentation/metalperformanceshadersgraph/mpsgraphsinglegaternndescriptor/reverse": {
       "etag": "\"2433-65d560a607d9d-df\"",
       "file_path": "documentation/MetalPerformanceShadersGraph/mpsgraphsinglegaternndescriptor/reverse.md",
@@ -3963,6 +3993,11 @@
       "file_path": "documentation/MetalPerformanceShadersGraph/mpsgraphtensordata/shape.md",
       "hash": "9c994997fdf53cfa0f4065de45694beb79dc389bb668c165a1ae4638e0183dd0"
     },
+    "https://developer.apple.com/documentation/metalperformanceshadersgraph/mpsgraphtensordatadictionary": {
+      "etag": "\"e09-65d560a539b13-df\"",
+      "file_path": "documentation/MetalPerformanceShadersGraph/mpsgraphtensordatadictionary.md",
+      "hash": "7571f4bbcd3b8b9c13f6323448740b20136fe873a18d716b60b3ada6ec5dc4c8"
+    },
     "https://developer.apple.com/documentation/metalperformanceshadersgraph/mpsgraphtensornameddatalayout": {
       "etag": "\"69ca-65d560a539b13-df\"",
       "file_path": "documentation/MetalPerformanceShadersGraph/mpsgraphtensornameddatalayout.md",
@@ -4027,6 +4062,11 @@
       "etag": "\"1c4b-65d560a3d8b6d-df\"",
       "file_path": "documentation/MetalPerformanceShadersGraph/mpsgraphtensornameddatalayout/oihw.md",
       "hash": "6df6dea9a57ae856129c3e3f829dbac74afb0bf833b57a4e61d1336c910727db"
+    },
+    "https://developer.apple.com/documentation/metalperformanceshadersgraph/mpsgraphtensorshapedtypedictionary": {
+      "etag": "\"e59-65d560a607d9d-df\"",
+      "file_path": "documentation/MetalPerformanceShadersGraph/mpsgraphtensorshapedtypedictionary.md",
+      "hash": "791326215d65171cd08170fd3df54767335cd3523f2e43a2c9f3e1cbe6328765"
     },
     "https://developer.apple.com/documentation/metalperformanceshadersgraph/mpsgraphtype": {
       "etag": "\"9f22-65d560a539b13-df\"",
@@ -6065,6 +6105,11 @@
       "file_path": "documentation/MetalPerformanceShadersGraph/mpsgraph/while(initialinputs,before,after,name).md",
       "hash": "08e3d882c97c4088d2a6f4886f06ea29dc8c8bfe14ea63d6e3672837ac4d7400"
     },
+    "https://developer.apple.com/tutorials/data/documentation/metalperformanceshadersgraph/mpsgraphcallablemap.json": {
+      "etag": "\"dbb-65d560a539b13-df\"",
+      "file_path": "documentation/MetalPerformanceShadersGraph/mpsgraphcallablemap.md",
+      "hash": "c596559c6e8bbb00d4c7724f0d7681649d173880b007bfb0749fb2756f9d9f8d"
+    },
     "https://developer.apple.com/tutorials/data/documentation/metalperformanceshadersgraph/mpsgraphcompilationcompletionhandler.json": {
       "etag": "\"26b3-65d560a539b13-df\"",
       "file_path": "documentation/MetalPerformanceShadersGraph/mpsgraphcompilationcompletionhandler.md",
@@ -6715,6 +6760,11 @@
       "file_path": "documentation/MetalPerformanceShadersGraph/mpsgraphfftdescriptor.md",
       "hash": "741e358c0bbcaa6c0deeee8485a4f3cb8ed91459671a892336248e5daa4f5190"
     },
+    "https://developer.apple.com/tutorials/data/documentation/metalperformanceshadersgraph/mpsgraphfftdescriptor/descriptor.json": {
+      "etag": "\"13dd-65d560a539b13-df\"",
+      "file_path": "documentation/MetalPerformanceShadersGraph/mpsgraphfftdescriptor/descriptor.md",
+      "hash": "37589d1ffae07420c4d2e0f47e114666f6a9f4d15d1ca3af525d4a462c3a989c"
+    },
     "https://developer.apple.com/tutorials/data/documentation/metalperformanceshadersgraph/mpsgraphfftdescriptor/inverse.json": {
       "etag": "\"2434-65d560a539b13-df\"",
       "file_path": "documentation/MetalPerformanceShadersGraph/mpsgraphfftdescriptor/inverse.md",
@@ -6769,6 +6819,11 @@
       "etag": "\"2394-65d560a607d9d-df\"",
       "file_path": "documentation/MetalPerformanceShadersGraph/mpsgraphgrudescriptor/bidirectional.md",
       "hash": "aa26dda562b11dd42d49744f59f877ff56c08ecd3531089659fb00983d4fee55"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/metalperformanceshadersgraph/mpsgraphgrudescriptor/descriptor.json": {
+      "etag": "\"13a3-65d560a607d9d-df\"",
+      "file_path": "documentation/MetalPerformanceShadersGraph/mpsgraphgrudescriptor/descriptor.md",
+      "hash": "5698874cd89a09085c69c7fbfa7147c0dc20263a6f1eb8baafbcf87fea1b451a"
     },
     "https://developer.apple.com/tutorials/data/documentation/metalperformanceshadersgraph/mpsgraphgrudescriptor/flipz.json": {
       "etag": "\"23af-65d560a607d9d-df\"",
@@ -6939,6 +6994,11 @@
       "etag": "\"2784-65d560a607d9d-df\"",
       "file_path": "documentation/MetalPerformanceShadersGraph/mpsgraphlstmdescriptor/cellgateactivation.md",
       "hash": "72cda30e48c3688c0a7cdc989dab88baf354a1f5932c1241e4c3eac1ba3bbbf4"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/metalperformanceshadersgraph/mpsgraphlstmdescriptor/descriptor.json": {
+      "etag": "\"13bb-65d560a607d9d-df\"",
+      "file_path": "documentation/MetalPerformanceShadersGraph/mpsgraphlstmdescriptor/descriptor.md",
+      "hash": "e1f438c4c14bc10d9902e473715d6d1cc74c1de603d697ff231c227b92caa5cf"
     },
     "https://developer.apple.com/tutorials/data/documentation/metalperformanceshadersgraph/mpsgraphlstmdescriptor/forgetgateactivation.json": {
       "etag": "\"27b5-65d560a607d9d-df\"",
@@ -7530,6 +7590,11 @@
       "file_path": "documentation/MetalPerformanceShadersGraph/mpsgraphreducedprecisionfastmath/init(rawvalue).md",
       "hash": "6672444f36f5fe448c204b544b64043b2de81dc14f4189b39400ab9d5ff4c45d"
     },
+    "https://developer.apple.com/tutorials/data/documentation/metalperformanceshadersgraph/mpsgraphreducedprecisionfastmath/mpsgraphreducedprecisionfastmathdefault.json": {
+      "etag": "\"14d5-65d560a5ee2f9-df\"",
+      "file_path": "documentation/MetalPerformanceShadersGraph/mpsgraphreducedprecisionfastmath/mpsgraphreducedprecisionfastmathdefault.md",
+      "hash": "780b4900cb26131e34bcde8f926e186ea79cb7d35e203a152c18e486e27519a3"
+    },
     "https://developer.apple.com/tutorials/data/documentation/metalperformanceshadersgraph/mpsgraphreducedprecisionfastmath/none.json": {
       "etag": "\"207e-65d560a5ee2f9-df\"",
       "file_path": "documentation/MetalPerformanceShadersGraph/mpsgraphreducedprecisionfastmath/none.md",
@@ -7790,6 +7855,11 @@
       "file_path": "documentation/MetalPerformanceShadersGraph/mpsgraphsinglegaternndescriptor/bidirectional.md",
       "hash": "ec77b7545021cee9434dcd3e34b2aa70fd028bcbdd989dc52dbbbfd9ba46bfc7"
     },
+    "https://developer.apple.com/tutorials/data/documentation/metalperformanceshadersgraph/mpsgraphsinglegaternndescriptor/descriptor.json": {
+      "etag": "\"146c-65d560a607d9d-df\"",
+      "file_path": "documentation/MetalPerformanceShadersGraph/mpsgraphsinglegaternndescriptor/descriptor.md",
+      "hash": "7a5381c9b5370659f234993c80b1a2ed2fb74300ff40cc66cc69d3f1bc9f90b2"
+    },
     "https://developer.apple.com/tutorials/data/documentation/metalperformanceshadersgraph/mpsgraphsinglegaternndescriptor/reverse.json": {
       "etag": "\"2433-65d560a607d9d-df\"",
       "file_path": "documentation/MetalPerformanceShadersGraph/mpsgraphsinglegaternndescriptor/reverse.md",
@@ -8030,6 +8100,11 @@
       "file_path": "documentation/MetalPerformanceShadersGraph/mpsgraphtensordata/shape.md",
       "hash": "9c994997fdf53cfa0f4065de45694beb79dc389bb668c165a1ae4638e0183dd0"
     },
+    "https://developer.apple.com/tutorials/data/documentation/metalperformanceshadersgraph/mpsgraphtensordatadictionary.json": {
+      "etag": "\"e09-65d560a539b13-df\"",
+      "file_path": "documentation/MetalPerformanceShadersGraph/mpsgraphtensordatadictionary.md",
+      "hash": "7571f4bbcd3b8b9c13f6323448740b20136fe873a18d716b60b3ada6ec5dc4c8"
+    },
     "https://developer.apple.com/tutorials/data/documentation/metalperformanceshadersgraph/mpsgraphtensornameddatalayout.json": {
       "etag": "\"69ca-65d560a539b13-df\"",
       "file_path": "documentation/MetalPerformanceShadersGraph/mpsgraphtensornameddatalayout.md",
@@ -8095,6 +8170,11 @@
       "file_path": "documentation/MetalPerformanceShadersGraph/mpsgraphtensornameddatalayout/oihw.md",
       "hash": "6df6dea9a57ae856129c3e3f829dbac74afb0bf833b57a4e61d1336c910727db"
     },
+    "https://developer.apple.com/tutorials/data/documentation/metalperformanceshadersgraph/mpsgraphtensorshapedtypedictionary.json": {
+      "etag": "\"e59-65d560a607d9d-df\"",
+      "file_path": "documentation/MetalPerformanceShadersGraph/mpsgraphtensorshapedtypedictionary.md",
+      "hash": "791326215d65171cd08170fd3df54767335cd3523f2e43a2c9f3e1cbe6328765"
+    },
     "https://developer.apple.com/tutorials/data/documentation/metalperformanceshadersgraph/mpsgraphtype.json": {
       "etag": "\"9f22-65d560a539b13-df\"",
       "file_path": "documentation/MetalPerformanceShadersGraph/mpsgraphtype.md",
@@ -8137,8 +8217,8 @@
   },
   "metadata": {
     "render": {
-      "version": 1
+      "version": 2
     },
-    "total_pages": 1628
+    "total_pages": 1644
   }
 }

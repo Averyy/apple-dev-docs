@@ -97,6 +97,10 @@ CarPlay doesn’t support custom list item types. Instead, use the [`userInfo`](
   A selectable row in a list template.
 - [class CPListImageRowItem](./cplistimagerowitem.md)
   A list template row that displays a series of images.
+- [- initWithItems:](./cplistsection/initwithitems_.md)
+  Creates a section with list items.
+- [- initWithItems:header:sectionIndexTitle:](./cplistsection/initwithitems_header_sectionindextitle_.md)
+  Creates a section with list items, a header, and a section index title.
 
 
 ---

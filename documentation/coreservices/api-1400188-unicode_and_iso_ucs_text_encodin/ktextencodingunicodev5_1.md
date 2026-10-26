@@ -1,0 +1,20 @@
+# kTextEncodingUnicodeV5_1
+
+**Framework**: Core Services  
+**Kind**: econst  
+**Role**: Enumeration Case
+
+**Availability**:
+- Mac Catalyst 17.0+
+- macOS 10.6+
+
+## Declaration
+
+```c
+kTextEncodingUnicodeV5_1 = 0x010B
+```
+
+
+---
+
+*[View on Apple Developer](https://developer.apple.com/documentation/coreservices/1400188-unicode_and_iso_ucs_text_encodin/ktextencodingunicodev5_1)*

@@ -43,6 +43,10 @@ By default, the sampler state at each index is `nil`.
   Assigns multiple sampler states to a range of entries in the vertex shader argument table.
 - [func setVertexSamplerStates([(any MTLSamplerState)?], lodMinClamps: [Float], lodMaxClamps: [Float], range: Range<Int>)](./setvertexsamplerstates%28_,lodminclamps,lodmaxclamps,range%29.md)
   Assigns multiple sampler states and clamp values to a range of entries in the vertex shader argument table.
+- [- setVertexSamplerStates:withRange:](./setvertexsamplerstates_withrange_.md)
+  Assigns multiple sampler states to a range of entries in the vertex shader argument table.
+- [- setVertexSamplerStates:lodMinClamps:lodMaxClamps:withRange:](./setvertexsamplerstates_lodminclamps_lodmaxclamps_withrange_.md)
+  Assigns multiple sampler states and clamp values to a range of entries in the vertex shader argument table.
 
 
 ---

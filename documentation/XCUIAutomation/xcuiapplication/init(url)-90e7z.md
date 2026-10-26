@@ -31,6 +31,8 @@ This initializer is only available on macOS.
   Creates a proxy for the application that’s configured as the Target Application in Xcode’s target settings.
 - [init(bundleIdentifier: String)](./init%28bundleidentifier%29.md)
   Creates a proxy for an application for the specified bundle identifier.
+- [+ new](./new.md)
+  Creates a proxy for the application specified as the Target Application in Xcode’s target settings.
 
 
 ---

@@ -67,6 +67,12 @@ Except where noted, the color objects adapt automatically to Dark Mode changes w
 ### Deprecated
 - [class var groupTableViewBackground: UIColor](./uicolor/grouptableviewbackground.md)
   The system color to use for the background of a grouped table.
+- [scrollViewTexturedBackgroundColor](./uicolor/scrollviewtexturedbackgroundcolor.md)
+  The system pattern color to use for the area behind scrollable content.
+- [underPageBackgroundColor](./uicolor/underpagebackgroundcolor.md)
+  The system pattern color to use for the background of a page.
+- [viewFlipsideBackgroundColor](./uicolor/viewflipsidebackgroundcolor.md)
+  The system color to use for the back side of a view when it’s flipped.
 
 ## See Also
 

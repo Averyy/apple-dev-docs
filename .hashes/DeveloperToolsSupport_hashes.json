@@ -60,10 +60,20 @@
       "file_path": "documentation/DeveloperToolsSupport/librarycontentprovider/modifiers(base).md",
       "hash": "8692d5b1bfb280a4b3ce8a5e1a7370e0c29545b14250fba6de03d0dcbeecc827"
     },
+    "https://developer.apple.com/documentation/developertoolssupport/librarycontentprovider/modifiers(base:)-4gfkr": {
+      "etag": "\"2453-65d5606f15940-df\"",
+      "file_path": "documentation/DeveloperToolsSupport/librarycontentprovider/modifiers(base)-4gfkr.md",
+      "hash": "8cc1fe64e124b63611946ea96c058a20f9f9752963d5749eba573c1b56b2611a"
+    },
     "https://developer.apple.com/documentation/developertoolssupport/librarycontentprovider/views": {
       "etag": "\"2308-65d5606f15940-df\"",
       "file_path": "documentation/DeveloperToolsSupport/librarycontentprovider/views.md",
       "hash": "b9be89d11c0cd508d1249dea654705933bd4f0b64293ee5a4556823375883de5"
+    },
+    "https://developer.apple.com/documentation/developertoolssupport/librarycontentprovider/views-6n3zo": {
+      "etag": "\"1aec-65d5606f15940-df\"",
+      "file_path": "documentation/DeveloperToolsSupport/librarycontentprovider/views-6n3zo.md",
+      "hash": "ec16e755366e23af3d7e275df74ac1d8c0d8386641fefae10fdf1f06b52c0465"
     },
     "https://developer.apple.com/documentation/developertoolssupport/libraryitem": {
       "etag": "\"2949-65d5606f15940-df\"",
@@ -340,6 +350,11 @@
       "file_path": "documentation/DeveloperToolsSupport/previewregistry/preview.md",
       "hash": "1bd824e19955585b0ff56c0119d9b97bbdeebfef8b7e4c0f0166321bd5f8f29f"
     },
+    "https://developer.apple.com/documentation/developertoolssupport/previewregistry/preview-32pcg": {
+      "etag": "\"13d9-65d5606f01eee-df\"",
+      "file_path": "documentation/DeveloperToolsSupport/previewregistry/preview-32pcg.md",
+      "hash": "e829cd7f4faf17e3ab87d54164041acd252318cfe8e77621d166694b044cce4e"
+    },
     "https://developer.apple.com/documentation/developertoolssupport/previewtrait": {
       "etag": "\"61f2-65d5606f01eee-df\"",
       "file_path": "documentation/DeveloperToolsSupport/previewtrait.md",
@@ -465,10 +480,20 @@
       "file_path": "documentation/DeveloperToolsSupport/librarycontentprovider/modifierbase.md",
       "hash": "ef89d0ae276b9d71342701b230c2e28a0b188b36d5a1189f5920d9692214aa35"
     },
+    "https://developer.apple.com/tutorials/data/documentation/developertoolssupport/librarycontentprovider/modifiers(base:)-4gfkr.json": {
+      "etag": "\"2453-65d5606f15940-df\"",
+      "file_path": "documentation/DeveloperToolsSupport/librarycontentprovider/modifiers(base)-4gfkr.md",
+      "hash": "8cc1fe64e124b63611946ea96c058a20f9f9752963d5749eba573c1b56b2611a"
+    },
     "https://developer.apple.com/tutorials/data/documentation/developertoolssupport/librarycontentprovider/modifiers(base:).json": {
       "etag": "\"2f01-65d5606f15940-df\"",
       "file_path": "documentation/DeveloperToolsSupport/librarycontentprovider/modifiers(base).md",
       "hash": "8692d5b1bfb280a4b3ce8a5e1a7370e0c29545b14250fba6de03d0dcbeecc827"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/developertoolssupport/librarycontentprovider/views-6n3zo.json": {
+      "etag": "\"1aec-65d5606f15940-df\"",
+      "file_path": "documentation/DeveloperToolsSupport/librarycontentprovider/views-6n3zo.md",
+      "hash": "ec16e755366e23af3d7e275df74ac1d8c0d8386641fefae10fdf1f06b52c0465"
     },
     "https://developer.apple.com/tutorials/data/documentation/developertoolssupport/librarycontentprovider/views.json": {
       "etag": "\"2308-65d5606f15940-df\"",
@@ -745,6 +770,11 @@
       "file_path": "documentation/DeveloperToolsSupport/previewregistry/makepreview().md",
       "hash": "96ea8f3654648a27f0f1ea321ade86e017596ae87baad36d9d9792b07fdb411c"
     },
+    "https://developer.apple.com/tutorials/data/documentation/developertoolssupport/previewregistry/preview-32pcg.json": {
+      "etag": "\"13d9-65d5606f01eee-df\"",
+      "file_path": "documentation/DeveloperToolsSupport/previewregistry/preview-32pcg.md",
+      "hash": "e829cd7f4faf17e3ab87d54164041acd252318cfe8e77621d166694b044cce4e"
+    },
     "https://developer.apple.com/tutorials/data/documentation/developertoolssupport/previewregistry/preview.json": {
       "etag": "\"24eb-65d5606f01eee-df\"",
       "file_path": "documentation/DeveloperToolsSupport/previewregistry/preview.md",
@@ -823,8 +853,8 @@
   },
   "metadata": {
     "render": {
-      "version": 1
+      "version": 2
     },
-    "total_pages": 164
+    "total_pages": 170
   }
 }

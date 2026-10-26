@@ -60,6 +60,9 @@ For example, set [`table`](./beaccessibilitycontainertype/table.md) as the `brow
   A dialog that contains the element.
 ### Initializers
 - [init(rawValue: UInt)](./beaccessibilitycontainertype/init%28rawvalue%29.md)
+### Special case
+- [BEAccessibilityContainerTypeNone](./beaccessibilitycontainertype/beaccessibilitycontainertypenone.md)
+  An option that indicates the element has no container.
 
 ## Relationships
 

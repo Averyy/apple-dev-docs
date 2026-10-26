@@ -99,6 +99,9 @@ Note that from the perspective of [`RunLoop`](./runloop.md), [`Timer`](./timer.m
   A set of options that affect the operation of the run loop scheduler.
 ### Default Implementations
 - [Scheduler Implementations](./runloop/scheduler-implementations.md)
+### Configuring as Server Process
+- [- configureAsServer](./nsrunloop/configureasserver.md)
+  Deprecated. Does nothing.
 
 ## Relationships
 

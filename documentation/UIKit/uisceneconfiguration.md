@@ -44,6 +44,8 @@ When the user requests a new instance of your app’s user interface, UIKit look
   Creates a scene-configuration object with the specified name.
 - [convenience init()](./uisceneconfiguration/init%28%29.md)
   Creates a scene-configuration object.
+- [+ configurationWithName:sessionRole:](./uisceneconfiguration/configurationwithname_sessionrole_.md)
+  Returns a scene-configuration object with the specified role and app-specific name.
 ### Specifying the scene creation details
 - [var sceneClass: AnyClass?](./uisceneconfiguration/sceneclass.md)
   The class of the scene object that you want UIKit to create.

@@ -35,6 +35,10 @@ When you no longer need the [`IOUSBHostObject`](../iousbhostobject.md), call [`d
   A reference to the kernel object.
 - [var queue: dispatch_queue_t](./queue.md)
   The queue for servicing input/output requests.
+- [- initWithIOService:options:queue:error:interestHandler:](./initwithioservice_options_queue_error_interesthandler_.md)
+  Creates a USB host object and sets up a communication channel to the kernel.
+- [- initWithIOService:queue:error:interestHandler:](./initwithioservice_queue_error_interesthandler_.md)
+  Creates a USB host object and sets up a default communication channel to the kernel.
 
 
 ---

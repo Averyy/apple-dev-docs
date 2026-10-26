@@ -39,6 +39,8 @@ The functions of the `SCDynamicStoreCopySpecific` programming interface allow an
 - [SystemConfiguration Constants](./systemconfiguration-constants.md)
 - [SystemConfiguration Functions](./systemconfiguration-functions.md)
 - [SystemConfiguration Data Types](./systemconfiguration-data-types.md)
+- [DHCPClientPreferences](./dhcpclientpreferences.md)
+- [SCDynamicStoreCopyDHCPInfo](./scdynamicstorecopydhcpinfo-apicollection.md)
 
 
 ---

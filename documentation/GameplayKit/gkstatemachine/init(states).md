@@ -38,6 +38,12 @@ For more information, see [GameplayKit Programming Guide](https://developer.appl
 
 - `states`: An array of state objects. Each object in the array must be of a unique subclass of [`GKState`](../gkstate.md).
 
+## See Also
+
+### Creating a State Machine
+- [+ stateMachineWithStates:](./statemachinewithstates_.md)
+  Creates a state machine with the specified states.
+
 
 ---
 

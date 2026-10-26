@@ -52,6 +52,7 @@ enum INStartCallIntentResponseCode : NSInteger;
   A response code that indicates the current call failed.
 ### Enumeration Cases
 - [INStartCallIntentResponseCode.failureRequiringInAppAuthentication](./instartcallintentresponsecode/failurerequiringinappauthentication.md)
+- [INStartCallIntentResponseCodeFailureCallRinging](./instartcallintentresponsecode/instartcallintentresponsecodefailurecallringing.md)
 ### Initializers
 - [init?(rawValue: Int)](./instartcallintentresponsecode/init%28rawvalue%29.md)
 

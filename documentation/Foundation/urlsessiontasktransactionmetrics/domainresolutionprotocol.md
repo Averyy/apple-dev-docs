@@ -58,6 +58,14 @@ var domainResolutionProtocol: URLSessionTaskMetrics.DomainResolutionProtocol { g
   A value that indicates whether the resource was loaded, pushed, or retrieved from the local cache.
 - [URLSessionTaskMetrics.ResourceFetchType](../urlsessiontaskmetrics/resourcefetchtype.md)
   The manner in which a resource is fetched.
+- [remotePort](../nsurlsessiontasktransactionmetrics/remoteport.md)
+  The port number of the remote interface for the connection.
+- [localPort](../nsurlsessiontasktransactionmetrics/localport.md)
+  The port number of the local interface for the connection.
+- [negotiatedTLSCipherSuite](../nsurlsessiontasktransactionmetrics/negotiatedtlsciphersuite.md)
+  The TLS cipher suite the task negotiated with the endpoint for the connection.
+- [negotiatedTLSProtocolVersion](../nsurlsessiontasktransactionmetrics/negotiatedtlsprotocolversion.md)
+  The TLS protocol version the task negotiated with the endpoint for the connection.
 
 
 ---

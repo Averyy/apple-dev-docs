@@ -57,6 +57,7 @@ enum XCUIAccessibilityAuditType : uint64_t;
 ### Performing an accessibility audit
 - [func performAccessibilityAudit(for: XCUIAccessibilityAuditType, ((XCUIAccessibilityAuditIssue) throws -> Bool)?) throws](./xcuiapplication/performaccessibilityaudit%28for,_%29.md)
 - [class XCUIAccessibilityAuditIssue](./xcuiaccessibilityauditissue.md)
+- [- performAccessibilityAuditWithAuditTypes:issueHandler:error:](./xcuiapplication/performaccessibilityauditwithaudittypes_issuehandler_error_.md)
 
 
 ---

@@ -54,6 +54,8 @@ A new color. In Objective-C, you’re responsible for releasing this object usin
   Creates a color in the sRGB color space.
 - [init?(colorSpace: CGColorSpace, components: UnsafePointer<CGFloat>)](./init%28colorspace,components%29.md)
   Creates a color using a list of intensity values (including alpha) and an associated color space.
+- [CGColorGetConstantColor](../cgcolorgetconstantcolor.md)
+  Returns a color object that represents a constant color.
 
 
 ---

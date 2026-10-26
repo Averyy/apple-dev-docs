@@ -9,6 +9,7 @@ Values relating to fade operations.
 
 ### Constants
 - [var kCGDisplayFadeReservationInvalidToken: Int32](./kcgdisplayfadereservationinvalidtoken.md)
+- [kCGMaxDisplayReservationInterval](./kcgmaxdisplayreservationinterval.md)
 
 ## See Also
 

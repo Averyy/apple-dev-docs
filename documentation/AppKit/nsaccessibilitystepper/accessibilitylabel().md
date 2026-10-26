@@ -39,6 +39,9 @@ Do not include the control’s type in the label (for example, use `Volume`, not
   Increments the stepper’s value.
 - [func accessibilityValue() -> Any?](./accessibilityvalue%28%29.md)
   Returns the stepper’s value.
+### Related Documentation
+- [accessibilityLabel](../nsaccessibility-c.protocol/accessibilitylabel.md)
+  A short description of the accessibility element.
 
 
 ---

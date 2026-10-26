@@ -36,6 +36,14 @@ class AXChartDescriptor
   Creates a chart descriptor with the specified title, summary, x-axis descriptor, y-axis descriptor, descriptors for additional axes, and array of data series.
 - [convenience init(attributedTitle: NSAttributedString?, summary: String?, xAxis: any AXDataAxisDescriptor, yAxis: AXNumericDataAxisDescriptor?, additionalAxes: [any AXDataAxisDescriptor], series: [AXDataSeriesDescriptor])](./axchartdescriptor/init%28attributedtitle,summary,xaxis,yaxis,additionalaxes,series%29.md)
   Creates a chart descriptor with the specified attributed title, summary, x-axis descriptor, y-axis descriptor, descriptors for additional axes, and array of data series.
+- [- initWithTitle:summary:xAxisDescriptor:yAxisDescriptor:series:](./axchartdescriptor/initwithtitle_summary_xaxisdescriptor_yaxisdescriptor_series_.md)
+  Creates a chart descriptor with the specified title, summary, x-axis descriptor, y-axis descriptor, descriptors for additional axes, and array of data series.
+- [- initWithAttributedTitle:summary:xAxisDescriptor:yAxisDescriptor:series:](./axchartdescriptor/initwithattributedtitle_summary_xaxisdescriptor_yaxisdescriptor_series_.md)
+  Creates a chart descriptor with the specified attributed title, summary, x-axis descriptor, y-axis descriptor, and array of data series.
+- [- initWithTitle:summary:xAxisDescriptor:yAxisDescriptor:additionalAxes:series:](./axchartdescriptor/initwithtitle_summary_xaxisdescriptor_yaxisdescriptor_additionalaxes_series_.md)
+  Creates a chart descriptor with the specified title, summary, x-axis descriptor, y-axis descriptor, descriptors for additional axes, and array of data series.
+- [- initWithAttributedTitle:summary:xAxisDescriptor:yAxisDescriptor:additionalAxes:series:](./axchartdescriptor/initwithattributedtitle_summary_xaxisdescriptor_yaxisdescriptor_additionalaxes_series_.md)
+  Creates a chart descriptor with the specified attributed title, summary, x-axis descriptor, y-axis descriptor, descriptors for additional axes, and array of data series.
 ### Specifying the chart title
 - [var title: String?](./axchartdescriptor/title.md)
   The title of the chart.
@@ -53,6 +61,10 @@ class AXChartDescriptor
   The descriptors for additional categorical or numerical axes beyond the x-axis and y-axis.
 - [protocol AXDataAxisDescriptor](./axdataaxisdescriptor.md)
   The basic interface for a data axis in a chart.
+- [xAxis](./axchartdescriptor/xaxis-6dnxd.md)
+  The axis descriptor for the chart’s x-axis.
+- [additionalAxes](./axchartdescriptor/additionalaxes-9ldc0.md)
+  The descriptors for additional categorical or numerical axes beyond the x-axis and y-axis.
 ### Specifying a series of data points
 - [var series: [AXDataSeriesDescriptor]](./axchartdescriptor/series.md)
   The descriptors for each data series in the chart.

@@ -38,6 +38,8 @@ You use query items with the [`queryItems`](./nsurlcomponents/queryitems.md) pro
 ### Creating a Query Item
 - [init(name: String, value: String?)](./nsurlqueryitem/init%28name,value%29.md)
   Initializes a newly allocated query item with the specified name and value.
+- [+ queryItemWithName:value:](./nsurlqueryitem/queryitemwithname_value_.md)
+  Creates a new query item with the specified name and value.
 ### Reading a Query Item’s Name and Value
 - [var name: String](./nsurlqueryitem/name.md)
   The name of the query item.
@@ -64,6 +66,14 @@ You use query items with the [`queryItems`](./nsurlcomponents/queryitems.md) pro
 - [NSSecureCoding](./nssecurecoding.md)
 - [Sendable](../Swift/sendable.md)
 - [SendableMetatype](../Swift/sendablemetatype.md)
+
+## See Also
+
+### URLs
+- [NSURL](./nsurl.md)
+  An object that represents the location of a resource, such as an item on a remote server or the path to a local file.
+- [NSURLComponents](./nsurlcomponents.md)
+  An object that parses URLs into and constructs URLs from their constituent parts.
 
 
 ---

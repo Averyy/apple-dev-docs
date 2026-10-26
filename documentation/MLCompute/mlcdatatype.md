@@ -33,6 +33,8 @@ enum MLCDataType : int32_t;
 - [MLCDataType.int32](./mlcdatatype/int32.md)
 - [MLCDataType.int64](./mlcdatatype/int64.md)
 - [MLCDataType.uint8](./mlcdatatype/uint8.md)
+- [MLCDataTypeInvalid](./mlcdatatype/mlcdatatypeinvalid.md)
+- [MLCDataTypeCount](./mlcdatatype/mlcdatatypecount.md)
 ### Initializers
 - [init?(rawValue: Int32)](./mlcdatatype/init%28rawvalue%29.md)
 

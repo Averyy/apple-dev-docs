@@ -58,6 +58,8 @@ Building an app with this entitlement requires macOS 13 or later. For more infor
 ### Setting region information
 - [var region: Locale.Region?](./pkidentitynationalidcarddescriptor/region.md)
   A string used to specify the region associated with the ID.
+### Instance Properties
+- [regionCode](./pkidentitynationalidcarddescriptor/regioncode.md)
 
 ## Relationships
 

@@ -42,6 +42,8 @@ The property selector specifies the general classification of the property such 
 - [typealias AudioObjectPropertyListenerProc](./audioobjectpropertylistenerproc.md)
 - [typealias AudioObjectPropertyScope](./audioobjectpropertyscope.md)
 - [typealias AudioStreamID](./audiostreamid.md)
+- [AudioDriverPlugInDevicePropertyChangedProc](./audiodriverplugindevicepropertychangedproc.md)
+- [AudioDriverPlugInStreamPropertyChangedProc](./audiodriverpluginstreampropertychangedproc.md)
 
 
 ---

@@ -15,7 +15,7 @@ To receive server notifications for Sign in with Apple, your server must support
 
 ##### Decode and validate the notifications
 
-These notifications contain a cryptographically signed payload, in JSON Web Signature (JWS) format, signed by Apple’s private key. After your server receives a notification, examine the JWS payload and use the algorithm specified in the header’s `alg` parameter to validate the signature. For more information, see [`Fetch Apple’s public key to verify token signatures`](https://developer.apple.com/documentation/signinwithapplerestapi/fetch-apple's-public-key-for-verifying-token-signature).
+These notifications contain a cryptographically signed payload, in JSON Web Signature (JWS) format, signed by Apple’s private key. After your server receives a notification, examine the JWS payload and use the algorithm specified in the header’s `alg` parameter to validate the signature. For more information, see [`Fetch Apple’s public key to verify token signatures`](../SigninwithAppleRESTAPI/fetch-apples-public-key-for-verifying-token-signature.md).
 
 After validating the token signature, your server performs work according to the `type` value in the `events` claim of the token. The notification payload object contains information about user-initiated account modification events. The event types include the following:
 
@@ -118,9 +118,9 @@ To indicate when the user disables or permanently deletes their Apple Account, b
 ## See Also
 
 ### Web support
-- [Sign in with Apple JS](https://developer.apple.com/documentation/signinwithapplejs)
+- [Sign in with Apple JS](../SigninwithAppleJS/SigninwithAppleJS.md)
   Provide users a fast, secure way to sign in to your web service with their Apple Account.
-- [Sign in with Apple REST API](https://developer.apple.com/documentation/signinwithapplerestapi)
+- [Sign in with Apple REST API](../SigninwithAppleRESTAPI/SigninwithAppleRESTAPI.md)
   Communicate between your app servers and Apple’s authentication servers.
 - [Displaying Sign in with Apple buttons on the web](./displaying-sign-in-with-apple-buttons-on-the-web.md)
   Configure the appearance of Sign in with Apple buttons with CSS styles.

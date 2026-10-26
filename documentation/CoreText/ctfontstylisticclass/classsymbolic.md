@@ -50,6 +50,8 @@ A class typically assigned to fonts used for special characters, such as icons, 
   A font style that includes highly decorated or stylized character shapes such as those typically used in headlines.
 - [static var classScripts: CTFontStylisticClass](./classscripts.md)
   A font style among those typefaces designed to simulate handwriting.
+- [kCTFontClassUnknown](./kctfontclassunknown.md)
+  The font has no design classification.
 
 
 ---

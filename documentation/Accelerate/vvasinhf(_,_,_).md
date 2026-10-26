@@ -94,6 +94,28 @@ printf("[%g, %g, %g]\n", y[0], y[1], y[2]);
   Returns the hyperbolic cosine of each element in a vector of single-precision values.
 - [static func cosh<U, V>(U, result: inout V)](./vforce/cosh%28_,result%29-4f7in.md)
   Calculates the hyperbolic cosine of each element in a vector of double-precision values.
+- [vvsinh](./vvsinh%28_,_,_%29.md)
+  Calculates the hyperbolic sine of each element in an array of double-precision values.
+- [vvsinhf](./vvsinhf%28_,_,_%29.md)
+  Calculates the hyperbolic sine of each element in an array of single-precision values.
+- [vvcosh](./vvcosh%28_,_,_%29.md)
+  Calculates the hyperbolic cosine of each element in an array of double-precision values.
+- [vvcoshf](./vvcoshf%28_,_,_%29.md)
+  Calculates the hyperbolic cosine of each element in an array of single-precision values.
+- [vvtanh](./vvtanh%28_,_,_%29.md)
+  Calculates the hyperbolic tangent of each element in an array of double-precision values.
+- [vvtanhf](./vvtanhf%28_,_,_%29.md)
+  Calculates the hyperbolic tangent of each element in an array of single-precision values.
+- [vvasinh](./vvasinh%28_,_,_%29.md)
+  Calculates the inverse hyperbolic sine of each element in an array of double-precision values.
+- [vvacosh](./vvacosh%28_,_,_%29.md)
+  Calculates the inverse hyperbolic cosine of each element in an array of double-precision values.
+- [vvacoshf](./vvacoshf%28_,_,_%29.md)
+  Calculates the inverse hyperbolic cosine of each element in an array of single-precision values.
+- [vvatanh](./vvatanh%28_,_,_%29.md)
+  Calculates the inverse hyperbolic tangent of each element in an array of double-precision values.
+- [vvatanhf](./vvatanhf%28_,_,_%29.md)
+  Calculates the inverse hyperbolic tangent of each element in an array of single-precision values.
 
 
 ---

@@ -27,6 +27,13 @@ typedef enum ATSFontFilterSelector : unsigned int {
 - [init(rawValue: UInt32)](./atsfontfilterselector/api-1464100-init.md)
 ### Instance Properties
 - [var rawValue: UInt32](./atsfontfilterselector/api-1462941-rawvalue.md)
+### Constants
+- [kATSFileReferenceFilterSelector](./atsfontfilterselector/katsfilereferencefilterselector.md)
+- [kATSFontFilterSelectorFontApplierFunction](./atsfontfilterselector/katsfontfilterselectorfontapplierfunction.md)
+- [kATSFontFilterSelectorFontFamily](./atsfontfilterselector/katsfontfilterselectorfontfamily.md)
+- [kATSFontFilterSelectorFontFamilyApplierFunction](./atsfontfilterselector/katsfontfilterselectorfontfamilyapplierfunction.md)
+- [kATSFontFilterSelectorGeneration](./atsfontfilterselector/katsfontfilterselectorgeneration.md)
+- [kATSFontFilterSelectorUnspecified](./atsfontfilterselector/katsfontfilterselectorunspecified.md)
 
 ## Relationships
 

@@ -32,6 +32,8 @@ kCTRunStatusRightToLeft
   The run isn’t in strictly increasing or decreasing order.
 - [static var hasNonIdentityMatrix: CTRunStatus](./hasnonidentitymatrix.md)
   The run requires a specific text matrix to be set in the current Core Graphics context for proper drawing.
+- [kCTRunStatusNoStatus](./kctrunstatusnostatus.md)
+  The run has no special attributes.
 
 
 ---

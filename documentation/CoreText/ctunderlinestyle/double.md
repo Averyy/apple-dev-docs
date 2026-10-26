@@ -32,6 +32,8 @@ kCTUnderlineStyleDouble
   A specifier that indicates to draw an underline consisting of a single line.
 - [static var thick: CTUnderlineStyle](./thick.md)
   A specifier that indicates to draw an underline consisting of a thick line.
+- [kCTUnderlineStyleNone](./kctunderlinestylenone.md)
+  A specifier that indicates not to draw an underline.
 
 
 ---

@@ -108,6 +108,10 @@ Intercepting events is only rarely required and you should avoid it if possible.
   An object that contains information you want the system to use when activating the session associated with a scene.
 - [class UISceneDestructionRequestOptions](./uiscenedestructionrequestoptions.md)
   An object you pass to UIKit to permanently remove a scene and its associated session from your app.
+- [- activateSceneSessionForRequest:errorHandler:](./uiapplication/activatescenesessionforrequest_errorhandler_.md)
+  Asks the system to activate an existing scene or create a new scene and associate it with your app.
+- [UISceneSessionActivationRequest](./uiscenesessionactivationrequest-c.class.md)
+  A collection of properties that you use to request activation of a scene.
 ### Managing background tasks
 - [var backgroundRefreshStatus: UIBackgroundRefreshStatus](./uiapplication/backgroundrefreshstatus.md)
   Indicates whether the app can refresh content when running in the background.
@@ -202,6 +206,8 @@ Intercepting events is only rarely required and you should avoid it if possible.
 ### Tracking controls in the run loop
 - [static let tracking: RunLoop.Mode](../Foundation/runloop/mode/tracking.md)
   The mode set while tracking in controls takes place.
+- [UITrackingRunLoopMode](./uitrackingrunloopmode.md)
+  The mode set while tracking in controls takes place.
 ### Detecting screenshots
 - [class let userDidTakeScreenshotNotification: NSNotification.Name](./uiapplication/userdidtakescreenshotnotification.md)
   A notification that posts when a person takes a screenshot on the device.
@@ -212,6 +218,16 @@ Intercepting events is only rarely required and you should avoid it if possible.
   Constants that describe the types of apps in the system.
 - [UIApplication.CategoryDefaultError](./uiapplication/categorydefaulterror.md)
   Errors that can happen when the system checks if your app is the default app in a category.
+- [- defaultStatusForCategory:error:](./uiapplication/defaultstatusforcategory_error_.md)
+  Reports whether this app is the person’s default app in the given category.
+- [UIApplicationCategoryDefaultStatus](./uiapplicationcategorydefaultstatus.md)
+  The default status of an application for some category.
+- [UIApplicationCategoryDefaultErrorDomain](./uiapplicationcategorydefaulterrordomain.md)
+  A string that identifies errors the system encounters when it determines if your app is the default in a category.
+- [UIApplicationCategoryDefaultRetryAvailabilityDateErrorKey](./uiapplicationcategorydefaultretryavailabilitydateerrorkey.md)
+  A dictionary key, with a value that’s a date when a result is next available.
+- [UIApplicationCategoryDefaultStatusLastProvidedDateErrorKey](./uiapplicationcategorydefaultstatuslastprovideddateerrorkey.md)
+  A dictionary key, with a value that’s the date your app last received a successful result.
 ### Deprecated
 - [Deprecated symbols](./uiapplication-deprecated-symbols.md)
   Review symbols that are no longer in active development, and their recommended replacements.

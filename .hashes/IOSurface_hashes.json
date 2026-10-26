@@ -5,6 +5,31 @@
       "file_path": "documentation/IOSurface/IOSurface.md",
       "hash": "a3d61b98a4fb9bc59799ab39bb9854ec77dc269e2a8f442e9ba96c58bed80a1d"
     },
+    "https://developer.apple.com/documentation/iosurface/iosfc_deprecated_msg": {
+      "etag": "\"ee6-65d55cc93c554-df\"",
+      "file_path": "documentation/IOSurface/iosfc_deprecated_msg.md",
+      "hash": "3431793f5ef8473b1be0c3dadc1ba2497df2d2bf8bb482d30d62b9e53827d1cb"
+    },
+    "https://developer.apple.com/documentation/iosurface/iosfc_ios_deprecated_msg": {
+      "etag": "\"efe-65d55cc8f91af-df\"",
+      "file_path": "documentation/IOSurface/iosfc_ios_deprecated_msg.md",
+      "hash": "187dc04ea3870a361cf368653bc2f204f8148674da6b46ee991946cffda75a62"
+    },
+    "https://developer.apple.com/documentation/iosurface/iosfc_swift_name": {
+      "etag": "\"ed1-65d55cc915428-df\"",
+      "file_path": "documentation/IOSurface/iosfc_swift_name.md",
+      "hash": "40ac34b7896db7f105253f999739ec057dbfcd5de7d5d28757cd41d72c520c40"
+    },
+    "https://developer.apple.com/documentation/iosurface/iosfc_swift_nonsendable": {
+      "etag": "\"ac0-65d55cc93c554-df\"",
+      "file_path": "documentation/IOSurface/iosfc_swift_nonsendable.md",
+      "hash": "33bb78c93b20c66d597e43edf49b5990d7af7e25ef66d6702d9df76e4caba7ca"
+    },
+    "https://developer.apple.com/documentation/iosurface/iosfc_swift_sendable": {
+      "etag": "\"a9c-65d55cc9569b2-df\"",
+      "file_path": "documentation/IOSurface/iosfc_swift_sendable.md",
+      "hash": "ee90b93a16842d60b2802eb541b67b2c5a88dcd3546712f08d20e03d4f241ea1"
+    },
     "https://developer.apple.com/documentation/iosurface/iosurface": {
       "etag": "\"ed4a-65d55cc96825c-df\"",
       "file_path": "documentation/IOSurface/iosurface-page.md",
@@ -14,6 +39,16 @@
       "etag": "\"b02b-659028ea65910-df\"",
       "file_path": "documentation/IOSurface/iosurface-constants.md",
       "hash": "9829dcc8fa1b34c56298d676002c0a60f149e5b0030d5b55f01de7c7bed5dba1"
+    },
+    "https://developer.apple.com/documentation/iosurface/iosurface-data-types": {
+      "etag": "\"165f-659028ea65910-df\"",
+      "file_path": "documentation/IOSurface/iosurface-data-types.md",
+      "hash": "0076322f4bd9283893f3580d46d8543687ec6bc7fd8cf351e7d69ee728b495c1"
+    },
+    "https://developer.apple.com/documentation/iosurface/iosurface-enumerations": {
+      "etag": "\"28e3-659028ea65910-df\"",
+      "file_path": "documentation/IOSurface/iosurface-enumerations.md",
+      "hash": "06a9a3d0714eff6b273b242bd88c5c5b1662ebca4507823d33d9763a18739ddb"
     },
     "https://developer.apple.com/documentation/iosurface/iosurface-functions": {
       "etag": "\"13c05-659028e9d5f50-df\"",
@@ -510,6 +545,11 @@
       "file_path": "documentation/IOSurface/iosurfacegetwidthofplane(_,_).md",
       "hash": "4fe3daa361052656055e350110a3b9ab907fbc8b99639031c89e683921713d0a"
     },
+    "https://developer.apple.com/documentation/iosurface/iosurfaceid": {
+      "etag": "\"16eb-65d55cc96825c-df\"",
+      "file_path": "documentation/IOSurface/iosurfaceid.md",
+      "hash": "838dfeb7c0284a2fc5324dbf8d5b39afe5fbfa68b7c5e027baa158ecadffb952"
+    },
     "https://developer.apple.com/documentation/iosurface/iosurfaceincrementusecount(_:)": {
       "etag": "\"77bf-65d55cc93c554-df\"",
       "file_path": "documentation/IOSurface/iosurfaceincrementusecount(_).md",
@@ -744,6 +784,11 @@
       "etag": "\"1436-65d55cc96825c-df\"",
       "file_path": "documentation/IOSurface/iosurfacepurgeabilitystate/init(rawvalue).md",
       "hash": "7886eb7491c8c672c1f10dbecab45bc8113eed09267242743321b1965f002e3a"
+    },
+    "https://developer.apple.com/documentation/iosurface/iosurfacepurgeabilitystate/kiosurfacepurgeablenonvolatile": {
+      "etag": "\"1080-65d55cc96825c-df\"",
+      "file_path": "documentation/IOSurface/iosurfacepurgeabilitystate/kiosurfacepurgeablenonvolatile.md",
+      "hash": "888552cd3716076cef6378deb3ac7072d2fdd74a7e7bad43196cb025b398d64e"
     },
     "https://developer.apple.com/documentation/iosurface/iosurfacepurgeabilitystate/purgeableempty": {
       "etag": "\"2756-65d55cc96825c-df\"",
@@ -1080,10 +1125,45 @@
       "file_path": "documentation/IOSurface/IOSurface.md",
       "hash": "a3d61b98a4fb9bc59799ab39bb9854ec77dc269e2a8f442e9ba96c58bed80a1d"
     },
+    "https://developer.apple.com/tutorials/data/documentation/iosurface/iosfc_deprecated_msg.json": {
+      "etag": "\"ee6-65d55cc93c554-df\"",
+      "file_path": "documentation/IOSurface/iosfc_deprecated_msg.md",
+      "hash": "3431793f5ef8473b1be0c3dadc1ba2497df2d2bf8bb482d30d62b9e53827d1cb"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/iosurface/iosfc_ios_deprecated_msg.json": {
+      "etag": "\"efe-65d55cc8f91af-df\"",
+      "file_path": "documentation/IOSurface/iosfc_ios_deprecated_msg.md",
+      "hash": "187dc04ea3870a361cf368653bc2f204f8148674da6b46ee991946cffda75a62"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/iosurface/iosfc_swift_name.json": {
+      "etag": "\"ed1-65d55cc915428-df\"",
+      "file_path": "documentation/IOSurface/iosfc_swift_name.md",
+      "hash": "40ac34b7896db7f105253f999739ec057dbfcd5de7d5d28757cd41d72c520c40"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/iosurface/iosfc_swift_nonsendable.json": {
+      "etag": "\"ac0-65d55cc93c554-df\"",
+      "file_path": "documentation/IOSurface/iosfc_swift_nonsendable.md",
+      "hash": "33bb78c93b20c66d597e43edf49b5990d7af7e25ef66d6702d9df76e4caba7ca"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/iosurface/iosfc_swift_sendable.json": {
+      "etag": "\"a9c-65d55cc9569b2-df\"",
+      "file_path": "documentation/IOSurface/iosfc_swift_sendable.md",
+      "hash": "ee90b93a16842d60b2802eb541b67b2c5a88dcd3546712f08d20e03d4f241ea1"
+    },
     "https://developer.apple.com/tutorials/data/documentation/iosurface/iosurface-constants.json": {
       "etag": "\"b02b-659028ea65910-df\"",
       "file_path": "documentation/IOSurface/iosurface-constants.md",
       "hash": "9829dcc8fa1b34c56298d676002c0a60f149e5b0030d5b55f01de7c7bed5dba1"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/iosurface/iosurface-data-types.json": {
+      "etag": "\"165f-659028ea65910-df\"",
+      "file_path": "documentation/IOSurface/iosurface-data-types.md",
+      "hash": "0076322f4bd9283893f3580d46d8543687ec6bc7fd8cf351e7d69ee728b495c1"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/iosurface/iosurface-enumerations.json": {
+      "etag": "\"28e3-659028ea65910-df\"",
+      "file_path": "documentation/IOSurface/iosurface-enumerations.md",
+      "hash": "06a9a3d0714eff6b273b242bd88c5c5b1662ebca4507823d33d9763a18739ddb"
     },
     "https://developer.apple.com/tutorials/data/documentation/iosurface/iosurface-functions.json": {
       "etag": "\"13c05-659028e9d5f50-df\"",
@@ -1585,6 +1665,11 @@
       "file_path": "documentation/IOSurface/iosurfacegetwidthofplane(_,_).md",
       "hash": "4fe3daa361052656055e350110a3b9ab907fbc8b99639031c89e683921713d0a"
     },
+    "https://developer.apple.com/tutorials/data/documentation/iosurface/iosurfaceid.json": {
+      "etag": "\"16eb-65d55cc96825c-df\"",
+      "file_path": "documentation/IOSurface/iosurfaceid.md",
+      "hash": "838dfeb7c0284a2fc5324dbf8d5b39afe5fbfa68b7c5e027baa158ecadffb952"
+    },
     "https://developer.apple.com/tutorials/data/documentation/iosurface/iosurfaceincrementusecount(_:).json": {
       "etag": "\"77bf-65d55cc93c554-df\"",
       "file_path": "documentation/IOSurface/iosurfaceincrementusecount(_).md",
@@ -1819,6 +1904,11 @@
       "etag": "\"1436-65d55cc96825c-df\"",
       "file_path": "documentation/IOSurface/iosurfacepurgeabilitystate/init(rawvalue).md",
       "hash": "7886eb7491c8c672c1f10dbecab45bc8113eed09267242743321b1965f002e3a"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/iosurface/iosurfacepurgeabilitystate/kiosurfacepurgeablenonvolatile.json": {
+      "etag": "\"1080-65d55cc96825c-df\"",
+      "file_path": "documentation/IOSurface/iosurfacepurgeabilitystate/kiosurfacepurgeablenonvolatile.md",
+      "hash": "888552cd3716076cef6378deb3ac7072d2fdd74a7e7bad43196cb025b398d64e"
     },
     "https://developer.apple.com/tutorials/data/documentation/iosurface/iosurfacepurgeabilitystate/purgeableempty.json": {
       "etag": "\"2756-65d55cc96825c-df\"",
@@ -2153,8 +2243,8 @@
   },
   "metadata": {
     "render": {
-      "version": 1
+      "version": 2
     },
-    "total_pages": 430
+    "total_pages": 448
   }
 }

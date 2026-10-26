@@ -42,6 +42,8 @@ You can convert this string to a `CFStringEncoding` value by calling [`CFStringC
   The MIME type of the response.
 - [var url: URL?](./url.md)
   The URL for the response.
+- [NSURLResponseUnknownLength](../nsurlresponseunknownlength.md)
+  The response length cannot be determined in advance of receiving the data from the server.
 
 
 ---

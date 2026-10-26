@@ -34,6 +34,8 @@ The `NSCharacterShapeAttributeName` constant is defined in NSAttributedString Ap
 ### Deprecated
 - [func insertText(Any)](./inserttext%28_%29.md)
   Inserts `aString` into the receiver’s text at the insertion point if there is one, otherwise replacing the selection.
+- [- toggleBaseWritingDirection:](./togglebasewritingdirection_.md)
+  Changes the base writing direction of a paragraph between left-to-right and right-to-left.
 
 
 ---

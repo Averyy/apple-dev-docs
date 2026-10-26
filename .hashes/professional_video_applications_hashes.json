@@ -5,6 +5,396 @@
       "file_path": "documentation/professional_video_applications/professional_video_applications.md",
       "hash": "a8883e9d688da47deb8c1b64242960625ad242e5d1463abbf86f12ff6688ee62"
     },
+    "https://developer.apple.com/documentation/professional_video_applications/compressorextensioncolorspaces": {
+      "etag": "\"29db-65d55ac07c110-df\"",
+      "file_path": "documentation/professional_video_applications/compressorextensioncolorspaces.md",
+      "hash": "3298ae826e1462a024887ea917831d986709b7de2fbe6f460524a749093ef5c2"
+    },
+    "https://developer.apple.com/documentation/professional_video_applications/compressorextensioncolorspaces/supportedcolorspaces()": {
+      "etag": "\"3bc4-65d55abf6f078-df\"",
+      "file_path": "documentation/professional_video_applications/compressorextensioncolorspaces/supportedcolorspaces().md",
+      "hash": "0f70a7374ec2566d1b002477b3e76cf1c3b1574767a77af6b1d80c21049c8ea5"
+    },
+    "https://developer.apple.com/documentation/professional_video_applications/compressorextensionencoder": {
+      "etag": "\"86d3-65d55ac07c110-df\"",
+      "file_path": "documentation/professional_video_applications/compressorextensionencoder.md",
+      "hash": "b330253318804ad7c8c40b4b7c416773391bbd9954077d9ad052141fb05b238e"
+    },
+    "https://developer.apple.com/documentation/professional_video_applications/compressorextensionencoder/cancel(forpause:)": {
+      "etag": "\"3f24-65d55abff8bb4-df\"",
+      "file_path": "documentation/professional_video_applications/compressorextensionencoder/cancel(forpause).md",
+      "hash": "671a6cf278960b685ee46c92d241a8ef4d45a04fef956f6f662003b79ad52085"
+    },
+    "https://developer.apple.com/documentation/professional_video_applications/compressorextensionencoder/mergesegments(_:andaudio:tofile:)": {
+      "etag": "\"4b1f-65d55abff8bb4-df\"",
+      "file_path": "documentation/professional_video_applications/compressorextensionencoder/mergesegments(_,andaudio,tofile).md",
+      "hash": "2a49b9c5be8be5d5804f3317da26ef408d7cf92d0f11b5a78d4eb3cd33c54246"
+    },
+    "https://developer.apple.com/documentation/professional_video_applications/compressorextensionencoder/percentdone()": {
+      "etag": "\"2866-65d55abff8bb4-df\"",
+      "file_path": "documentation/professional_video_applications/compressorextensionencoder/percentdone().md",
+      "hash": "40c4f6d68d17eec6e1b1d7045a97ca1b36cd999b5e3b4a4043f463edbd6ea4da"
+    },
+    "https://developer.apple.com/documentation/professional_video_applications/compressorextensionencoder/percentlostonpause()": {
+      "etag": "\"3090-65d55abff8bb4-df\"",
+      "file_path": "documentation/professional_video_applications/compressorextensionencoder/percentlostonpause().md",
+      "hash": "88c0820080f2b42352fb5332daecc8ea5e611c8cd331ca2753d0408f8a790d56"
+    },
+    "https://developer.apple.com/documentation/professional_video_applications/compressorextensionencoder/runtranscode(for:start:duration:tofile:starttimecode:)": {
+      "etag": "\"6584-65d55abff8bb4-df\"",
+      "file_path": "documentation/professional_video_applications/compressorextensionencoder/runtranscode(for,start,duration,tofile,starttimecode).md",
+      "hash": "102e8334061f976b0def9a195024c78da2f91ea0db4e38f036a59c04790de861"
+    },
+    "https://developer.apple.com/documentation/professional_video_applications/compressorextensionencoder/setannotations(_:)": {
+      "etag": "\"3556-65d55abff8bb4-df\"",
+      "file_path": "documentation/professional_video_applications/compressorextensionencoder/setannotations(_).md",
+      "hash": "a3c011a3514117741fcd8193d52379ea0f8ef432efcda7a492005dad5e563b64"
+    },
+    "https://developer.apple.com/documentation/professional_video_applications/compressorextensionencoder/setchapters(_:)": {
+      "etag": "\"3229-65d55abff8bb4-df\"",
+      "file_path": "documentation/professional_video_applications/compressorextensionencoder/setchapters(_).md",
+      "hash": "f893bb4324416e515f6a8827ae576ec02a7539feeba3345600d2498957df3e30"
+    },
+    "https://developer.apple.com/documentation/professional_video_applications/compressorextensionencoder/setsettings(_:)": {
+      "etag": "\"405e-65d55abff8bb4-df\"",
+      "file_path": "documentation/professional_video_applications/compressorextensionencoder/setsettings(_).md",
+      "hash": "f824d4c73b6663cd21bbfb7b671eb8c17dd5aa34a45f232ee77b5ed2772bc1c5"
+    },
+    "https://developer.apple.com/documentation/professional_video_applications/compressorextensionencoder/setstatefrompause(_:)": {
+      "etag": "\"45a2-65d55abff8bb4-df\"",
+      "file_path": "documentation/professional_video_applications/compressorextensionencoder/setstatefrompause(_).md",
+      "hash": "7db1f2979f5c4d079013cdfc3cf77ea8a239287589d9334b9b0caccc133d5328"
+    },
+    "https://developer.apple.com/documentation/professional_video_applications/compressorextensionencoder/splitpoints(forframestart:duration:servicecount:)": {
+      "etag": "\"3a40-65d55abff8bb4-df\"",
+      "file_path": "documentation/professional_video_applications/compressorextensionencoder/splitpoints(forframestart,duration,servicecount).md",
+      "hash": "8688f11e496cd22fa61b8a0cdb079ed3a9c93bf0856012de54d7f378ace8f391"
+    },
+    "https://developer.apple.com/documentation/professional_video_applications/compressorextensionencoder/statusmessage()": {
+      "etag": "\"2e93-65d55abff8bb4-df\"",
+      "file_path": "documentation/professional_video_applications/compressorextensionencoder/statusmessage().md",
+      "hash": "c9d870b3c0aac4c96c329135614e7699f232d116a542e4fda00f489296e2902a"
+    },
+    "https://developer.apple.com/documentation/professional_video_applications/compressorextensionencoder/supportedpixelformats": {
+      "etag": "\"2193-65d55abff8bb4-df\"",
+      "file_path": "documentation/professional_video_applications/compressorextensionencoder/supportedpixelformats.md",
+      "hash": "e0379e80eb8e4479b10677f5cd5e1cebaab021fd334b783926e2970a881d81ab"
+    },
+    "https://developer.apple.com/documentation/professional_video_applications/compressorextensionencoderptr": {
+      "etag": "\"3908-65d55ac016bfb-df\"",
+      "file_path": "documentation/professional_video_applications/compressorextensionencoderptr.md",
+      "hash": "1e1448a0bb63d3493db0946dcff62b15b21c9ea91b33c0d56efbf8f287a37d6f"
+    },
+    "https://developer.apple.com/documentation/professional_video_applications/compressorextensionsettings": {
+      "etag": "\"64b5-65d55ac0df883-df\"",
+      "file_path": "documentation/professional_video_applications/compressorextensionsettings.md",
+      "hash": "f7809937f12bfaf6e68feb13e85ac166a05845975714102df72764b592458aad"
+    },
+    "https://developer.apple.com/documentation/professional_video_applications/compressorextensionsettings/audioenabled": {
+      "etag": "\"3be0-65d55ac016bfb-df\"",
+      "file_path": "documentation/professional_video_applications/compressorextensionsettings/audioenabled.md",
+      "hash": "ba08421fb5d3100b569504a6d32e29fe1f76be5fc3ccfe5655eb1d65c93df35e"
+    },
+    "https://developer.apple.com/documentation/professional_video_applications/compressorextensionsettings/edit(_:completionhandler:)": {
+      "etag": "\"4be9-65d55ac016bfb-df\"",
+      "file_path": "documentation/professional_video_applications/compressorextensionsettings/edit(_,completionhandler).md",
+      "hash": "a69d7731b5b35bf24d7585a519ece6fa386a4f15852f6b95f55df943d4fafe6e"
+    },
+    "https://developer.apple.com/documentation/professional_video_applications/compressorextensionsettings/encodername()": {
+      "etag": "\"3a9a-65d55ac016bfb-df\"",
+      "file_path": "documentation/professional_video_applications/compressorextensionsettings/encodername().md",
+      "hash": "640940bcb64009e88bafea962f2c6d7e8e32905581f57d247f4b5550140d3fd5"
+    },
+    "https://developer.apple.com/documentation/professional_video_applications/compressorextensionsettings/setsettingsstring(_:)": {
+      "etag": "\"3ba3-65d55ac016bfb-df\"",
+      "file_path": "documentation/professional_video_applications/compressorextensionsettings/setsettingsstring(_).md",
+      "hash": "4bff231c398794273494a9ef529fa44a200e3c487da63e4c219c77a104c4144d"
+    },
+    "https://developer.apple.com/documentation/professional_video_applications/compressorextensionsettings/settingsattributes()": {
+      "etag": "\"3d41-65d55ac016bfb-df\"",
+      "file_path": "documentation/professional_video_applications/compressorextensionsettings/settingsattributes().md",
+      "hash": "973b89daec00f2371fdcad52467fe199c41c38b98d20d9886bfe8cc417aa1870"
+    },
+    "https://developer.apple.com/documentation/professional_video_applications/compressorextensionsettings/settingsdescription()": {
+      "etag": "\"3b17-65d55ac016bfb-df\"",
+      "file_path": "documentation/professional_video_applications/compressorextensionsettings/settingsdescription().md",
+      "hash": "5876fdd04f74ac20899a351dd1234d6f7940843917558597a28e734bd3e50a46"
+    },
+    "https://developer.apple.com/documentation/professional_video_applications/compressorextensionsettings/settingsstring()": {
+      "etag": "\"3c19-65d55ac016bfb-df\"",
+      "file_path": "documentation/professional_video_applications/compressorextensionsettings/settingsstring().md",
+      "hash": "fbc1ad3b9400fd3da5452c0f96b47df1fb627702686ea3881f0427406bf56cae"
+    },
+    "https://developer.apple.com/documentation/professional_video_applications/compressorextensionsettings/videoenabled": {
+      "etag": "\"3be0-65d55ac016bfb-df\"",
+      "file_path": "documentation/professional_video_applications/compressorextensionsettings/videoenabled.md",
+      "hash": "458fdbafbd7b8c16b59249ff5df7a8fb7e4d07eb76b736277b5fce2f06e9b59d"
+    },
+    "https://developer.apple.com/documentation/professional_video_applications/compressorextensionsettingsoptional": {
+      "etag": "\"2198-65d55abf5085b-df\"",
+      "file_path": "documentation/professional_video_applications/compressorextensionsettingsoptional.md",
+      "hash": "07b232ec4fca2178086c85481e6bfd8f543f7717306b490f2b38b17763e9a602"
+    },
+    "https://developer.apple.com/documentation/professional_video_applications/compressorextensionsettingsoptional/setjobsourceattributes(_:)": {
+      "etag": "\"3b48-65d55ac039bb2-df\"",
+      "file_path": "documentation/professional_video_applications/compressorextensionsettingsoptional/setjobsourceattributes(_).md",
+      "hash": "7882bebec7f15141d9591fd4437dda46e5c6e1c3f2a9791fcc302767d60ce477"
+    },
+    "https://developer.apple.com/documentation/professional_video_applications/compressorextensionsettingsptr": {
+      "etag": "\"3821-65d55abf5085b-df\"",
+      "file_path": "documentation/professional_video_applications/compressorextensionsettingsptr.md",
+      "hash": "974823321c1cb52197cbe7c998b6023d1490c54010fd1b29f6ea82b68cc252e6"
+    },
+    "https://developer.apple.com/documentation/professional_video_applications/compressormediadecoder": {
+      "etag": "\"4fa7-65d55ac0bbcd0-df\"",
+      "file_path": "documentation/professional_video_applications/compressormediadecoder.md",
+      "hash": "5e362ee46d8ff7c8b259e1f0018b826ad07f593db9e01d406b85c0f2acc9aca2"
+    },
+    "https://developer.apple.com/documentation/professional_video_applications/compressormediadecoder/copyaudio(atstart:count:)": {
+      "etag": "\"55e1-65d55abfd2c80-df\"",
+      "file_path": "documentation/professional_video_applications/compressormediadecoder/copyaudio(atstart,count).md",
+      "hash": "d6517a7d18a327b0d57cda0f3cd972d3fd098a09af28b4d90ac300d22423d520"
+    },
+    "https://developer.apple.com/documentation/professional_video_applications/compressormediadecoder/copyclosecaptiondata(_:framecount:)": {
+      "etag": "\"52d0-65d55abfd2c80-df\"",
+      "file_path": "documentation/professional_video_applications/compressormediadecoder/copyclosecaptiondata(_,framecount).md",
+      "hash": "e1092681c3f4a7828caec689650effa3531b17ab3e22052b4682f7eda34b34bb"
+    },
+    "https://developer.apple.com/documentation/professional_video_applications/compressormediadecoder/copyframe(_:)": {
+      "etag": "\"5003-65d55abfd2c80-df\"",
+      "file_path": "documentation/professional_video_applications/compressormediadecoder/copyframe(_).md",
+      "hash": "4cab45ecaf71202ff650b52059c475b1a242ece1518d6fc1278f122b2e37a168"
+    },
+    "https://developer.apple.com/documentation/professional_video_applications/compressormediadecoder/decodingattributes()": {
+      "etag": "\"3a38-65d55abfd2c80-df\"",
+      "file_path": "documentation/professional_video_applications/compressormediadecoder/decodingattributes().md",
+      "hash": "ea3bdda76f922c28312824210f5735fc9fb7e3858e6aab596ed8022335be68ef"
+    },
+    "https://developer.apple.com/documentation/professional_video_applications/compressormediadecoder/releaseframe(_:)": {
+      "etag": "\"46a7-65d55abfd2c80-df\"",
+      "file_path": "documentation/professional_video_applications/compressormediadecoder/releaseframe(_).md",
+      "hash": "4d60fcf00a9e9ffc538549d68b38469ca4c5912449c2124fecf136869da024f4"
+    },
+    "https://developer.apple.com/documentation/professional_video_applications/compressormediadecoder/starttimecodeformedia()": {
+      "etag": "\"32c2-65d55abfd2c80-df\"",
+      "file_path": "documentation/professional_video_applications/compressormediadecoder/starttimecodeformedia().md",
+      "hash": "182098c927156de10d2c3574b794ba1f4a5236201bc3ea2a2cdac758e8ef1e54"
+    },
+    "https://developer.apple.com/documentation/professional_video_applications/compressormediadecoderptr": {
+      "etag": "\"422f-65d55abfb1076-df\"",
+      "file_path": "documentation/professional_video_applications/compressormediadecoderptr.md",
+      "hash": "9066737fdf7ed6af5b5e0b9858cc4c0e9c17f196a5ec5800cd702d219cd59fcb"
+    },
+    "https://developer.apple.com/documentation/professional_video_applications/ececolorspace": {
+      "etag": "\"8a63-65d55abf5085b-df\"",
+      "file_path": "documentation/professional_video_applications/ececolorspace.md",
+      "hash": "114a95508ccc1f252964648400fa76db9b9a5d7aef053cebbafe651e96943a39"
+    },
+    "https://developer.apple.com/documentation/professional_video_applications/ececolorspace/!=(_:_:)": {
+      "etag": "\"1c8f-6590231efaaaf-df\"",
+      "file_path": "documentation/professional_video_applications/ececolorspace/noteq(_,_).md",
+      "hash": "4069c3b5abc464026a210aefc79729072b66a63b9a1953e1038625301b11290e"
+    },
+    "https://developer.apple.com/documentation/professional_video_applications/ececolorspace/equatable-implementations": {
+      "etag": "\"19dc-6590231efaaaf-df\"",
+      "file_path": "documentation/professional_video_applications/ececolorspace/equatable-implementations.md",
+      "hash": "06c857f52dc609ad56ccb4a74f74498c54a5f57dbf38a1c4383c55460e4536f4"
+    },
+    "https://developer.apple.com/documentation/professional_video_applications/ececolorspace/init(_:)": {
+      "etag": "\"13a7-6590231efaaaf-df\"",
+      "file_path": "documentation/professional_video_applications/ececolorspace/init(_).md",
+      "hash": "45513ff59ce049f5a0dba3f7b96dd0ac0780ad6702bc6e38f3caceedb0597052"
+    },
+    "https://developer.apple.com/documentation/professional_video_applications/ececolorspace/init(rawvalue:)": {
+      "etag": "\"1431-6590231efaaaf-df\"",
+      "file_path": "documentation/professional_video_applications/ececolorspace/init(rawvalue).md",
+      "hash": "6a5ad10d5567dc87aef357e6fe02640877967d6003f6c11c40fe691a2bd8b641"
+    },
+    "https://developer.apple.com/documentation/professional_video_applications/ececolorspace/rawvalue": {
+      "etag": "\"13a2-6590231efaaaf-df\"",
+      "file_path": "documentation/professional_video_applications/ececolorspace/rawvalue.md",
+      "hash": "2e59d502da826e9875408a962c2984dcc071eaeecfcf998e9aa39dcf06071836"
+    },
+    "https://developer.apple.com/documentation/professional_video_applications/ececolorspace601ntsc": {
+      "etag": "\"6c89-65d55ac09e8db-df\"",
+      "file_path": "documentation/professional_video_applications/ececolorspace601ntsc.md",
+      "hash": "da7a07dec6db83387c75295dfea186f2b03d8a9782438e8c585a1f01d880953a"
+    },
+    "https://developer.apple.com/documentation/professional_video_applications/ececolorspace601pal": {
+      "etag": "\"6c80-65d55ac09e8db-df\"",
+      "file_path": "documentation/professional_video_applications/ececolorspace601pal.md",
+      "hash": "19ee30225c145bd4b674c2c59a20ee51c04f1b8aa96d8f95754311fd179a15ef"
+    },
+    "https://developer.apple.com/documentation/professional_video_applications/ececolorspace709": {
+      "etag": "\"6c65-65d55abf8c482-df\"",
+      "file_path": "documentation/professional_video_applications/ececolorspace709.md",
+      "hash": "c2f033b3257afd3a72706ded2f5913b1a278264b1b54dd52b8dcc165a0342a8e"
+    },
+    "https://developer.apple.com/documentation/professional_video_applications/ececolorspacedevicergb": {
+      "etag": "\"6c9b-65d55ac016bfb-df\"",
+      "file_path": "documentation/professional_video_applications/ececolorspacedevicergb.md",
+      "hash": "a5848ab446c7b8809cd3701815914075dba30dee5708709b8e191637b98dfc54"
+    },
+    "https://developer.apple.com/documentation/professional_video_applications/ececolorspaceunknown": {
+      "etag": "\"6c89-65d55ac09e8db-df\"",
+      "file_path": "documentation/professional_video_applications/ececolorspaceunknown.md",
+      "hash": "006979a19bd030d65783e9bb1c89acf96537d4e8296cbc043f69449b72769902"
+    },
+    "https://developer.apple.com/documentation/professional_video_applications/ececolorspecdcip3": {
+      "etag": "\"6c6e-65d55abf2d897-df\"",
+      "file_path": "documentation/professional_video_applications/ececolorspecdcip3.md",
+      "hash": "4516acad8dff1ea86278d60b6a036489b8225638a0a7fc33d9b77c2c50ccfae7"
+    },
+    "https://developer.apple.com/documentation/professional_video_applications/ececolorspecitur2020": {
+      "etag": "\"6c89-65d55abfb1076-df\"",
+      "file_path": "documentation/professional_video_applications/ececolorspecitur2020.md",
+      "hash": "d773a9d3b0ed29464259a21b9353cb818f75ae552c4a0ee0ea871d1ec479ecd7"
+    },
+    "https://developer.apple.com/documentation/professional_video_applications/ececolorspecp3d65": {
+      "etag": "\"6c6e-65d55ac0df883-df\"",
+      "file_path": "documentation/professional_video_applications/ececolorspecp3d65.md",
+      "hash": "e10894e3dbb022b077f642467574c543e77e2ef5641b3ead63b628e0a8daff7e"
+    },
+    "https://developer.apple.com/documentation/professional_video_applications/ececolorspecp3d65hlg": {
+      "etag": "\"6c89-65d55ac05c89d-df\"",
+      "file_path": "documentation/professional_video_applications/ececolorspecp3d65hlg.md",
+      "hash": "ed7474bf7ed18c2b0ebb4f46f6db1716d17eaf58749db14503ea9ebf6aede70c"
+    },
+    "https://developer.apple.com/documentation/professional_video_applications/ececolorspecp3d65pq": {
+      "etag": "\"6c80-65d55abf8c482-df\"",
+      "file_path": "documentation/professional_video_applications/ececolorspecp3d65pq.md",
+      "hash": "07fd733ece0725b87afe1ddd19ee6906218bb81644cba29f125e0d59afa6fcf4"
+    },
+    "https://developer.apple.com/documentation/professional_video_applications/ececolorspecp3dcipq": {
+      "etag": "\"6c80-65d55ac016bfb-df\"",
+      "file_path": "documentation/professional_video_applications/ececolorspecp3dcipq.md",
+      "hash": "3b5f8237e658eda14cd0b10954cba1d03483825ad832ccef3a5ce74d7fb3bcdf"
+    },
+    "https://developer.apple.com/documentation/professional_video_applications/ececolorspecrgbhdrlinear": {
+      "etag": "\"6cad-65d55ac0bbcd0-df\"",
+      "file_path": "documentation/professional_video_applications/ececolorspecrgbhdrlinear.md",
+      "hash": "23b3a8c4cf0b58134bdf3d45f04a2dd1128f4168427dbb9b50cb93e0211676a8"
+    },
+    "https://developer.apple.com/documentation/professional_video_applications/ececolorspecrgbsdrlinear": {
+      "etag": "\"6cad-65d55abf6f078-df\"",
+      "file_path": "documentation/professional_video_applications/ececolorspecrgbsdrlinear.md",
+      "hash": "b668eb720757b59b231e07074d7a29b28b13804b9d7d1c9848f259aca6cf8337"
+    },
+    "https://developer.apple.com/documentation/professional_video_applications/ececolorspecsrgb": {
+      "etag": "\"6c65-65d55ac09e8db-df\"",
+      "file_path": "documentation/professional_video_applications/ececolorspecsrgb.md",
+      "hash": "f43362a01751408eac04392e3eb36fecd6698ca0c67043549684b08edda3b044"
+    },
+    "https://developer.apple.com/documentation/professional_video_applications/ececolorspectitur2020hlg": {
+      "etag": "\"6cad-65d55abf6f078-df\"",
+      "file_path": "documentation/professional_video_applications/ececolorspectitur2020hlg.md",
+      "hash": "fa533be74e05e75ce26cd4fd6071d6038bb19bdc35ac537e99a02954784de540"
+    },
+    "https://developer.apple.com/documentation/professional_video_applications/ececolorspectitur2020pq": {
+      "etag": "\"6ca4-65d55abf8c482-df\"",
+      "file_path": "documentation/professional_video_applications/ececolorspectitur2020pq.md",
+      "hash": "137b20368fe449025a9b3c23946de4c4722c67743a2d3a47495cd8099a9a6b14"
+    },
+    "https://developer.apple.com/documentation/professional_video_applications/enum_(unnamed)-14vbr": {
+      "etag": "\"474c-6590231e09b11-df\"",
+      "file_path": "documentation/professional_video_applications/enum_(unnamed)-14vbr.md",
+      "hash": "8ca3066648191b0720d21475aa75b516acd990801d936e98a32beb36f950ce58"
+    },
+    "https://developer.apple.com/documentation/professional_video_applications/enum_(unnamed)-187sa": {
+      "etag": "\"4229-6590231f1d321-df\"",
+      "file_path": "documentation/professional_video_applications/enum_(unnamed)-187sa.md",
+      "hash": "7262e88352d411feed29349e76611d4b77f311be38dcdfaf3b4fa2a562ae3a15"
+    },
+    "https://developer.apple.com/documentation/professional_video_applications/enum_(unnamed)-1tjh8": {
+      "etag": "\"5b05-6590231f6427a-df\"",
+      "file_path": "documentation/professional_video_applications/enum_(unnamed)-1tjh8.md",
+      "hash": "316b6ed7567fc08a9a7d6ae8511af467327f5fae13bf13cbd90311c31dc1bef8"
+    },
+    "https://developer.apple.com/documentation/professional_video_applications/enum_(unnamed)-2epbe": {
+      "etag": "\"4796-6590231de5325-df\"",
+      "file_path": "documentation/professional_video_applications/enum_(unnamed)-2epbe.md",
+      "hash": "393d31b5ee864cdc840cdcb92f65af4f6fc972d9305e1456379e746508cb715d"
+    },
+    "https://developer.apple.com/documentation/professional_video_applications/enum_(unnamed)-35krj": {
+      "etag": "\"4cbb-6590231f9090f-df\"",
+      "file_path": "documentation/professional_video_applications/enum_(unnamed)-35krj.md",
+      "hash": "569b899e7fdfb15d3ee35359e8565b41f4d2aad8fa09af9d70a71d775e43b6f4"
+    },
+    "https://developer.apple.com/documentation/professional_video_applications/enum_(unnamed)-3fxly": {
+      "etag": "\"461c-6590231eb77e1-df\"",
+      "file_path": "documentation/professional_video_applications/enum_(unnamed)-3fxly.md",
+      "hash": "6b4a63d93d42e39d785d0531b4972ee78c129e22a0a56163906ae6cc13a1039e"
+    },
+    "https://developer.apple.com/documentation/professional_video_applications/enum_(unnamed)-3hmov": {
+      "etag": "\"4618-6590231fb0527-df\"",
+      "file_path": "documentation/professional_video_applications/enum_(unnamed)-3hmov.md",
+      "hash": "6055df1e3da33006a91f7c74e8b5ea97a6283f6d974bab90d19489dc737ddefe"
+    },
+    "https://developer.apple.com/documentation/professional_video_applications/enum_(unnamed)-424rv": {
+      "etag": "\"47f0-6590231de5325-df\"",
+      "file_path": "documentation/professional_video_applications/enum_(unnamed)-424rv.md",
+      "hash": "5929ffd1bdc1d2d526ebb525cc72b925e5c236677f2b83e061fd43a6bfbe6cf1"
+    },
+    "https://developer.apple.com/documentation/professional_video_applications/enum_(unnamed)-5fh3s": {
+      "etag": "\"fc54-6590231e382cc-df\"",
+      "file_path": "documentation/professional_video_applications/enum_(unnamed)-5fh3s.md",
+      "hash": "6c7bbcbd4c19c6fbb27ee555d42c48cfe3484c64a063219a87bde98c36e0de45"
+    },
+    "https://developer.apple.com/documentation/professional_video_applications/enum_(unnamed)-5key8": {
+      "etag": "\"508b-6590231e382cc-df\"",
+      "file_path": "documentation/professional_video_applications/enum_(unnamed)-5key8.md",
+      "hash": "33b3837da457dc400ecc10356c963267a691a39b40ca826d9b24db5924a60669"
+    },
+    "https://developer.apple.com/documentation/professional_video_applications/enum_(unnamed)-5ml7h": {
+      "etag": "\"5133-6590231f9090f-df\"",
+      "file_path": "documentation/professional_video_applications/enum_(unnamed)-5ml7h.md",
+      "hash": "8ab313b51b8e02f7aee4f4d4e96e0272ddf145ffffcdb1e80262c72908aa1a98"
+    },
+    "https://developer.apple.com/documentation/professional_video_applications/enum_(unnamed)-5r2wt": {
+      "etag": "\"423b-6590231de5325-df\"",
+      "file_path": "documentation/professional_video_applications/enum_(unnamed)-5r2wt.md",
+      "hash": "42c5b40d94c336c1d043020af1c8ad5245cd3ec0cdf4e62055b81452b48bfcd6"
+    },
+    "https://developer.apple.com/documentation/professional_video_applications/enum_(unnamed)-5zg4z": {
+      "etag": "\"4249-6590231e895d3-df\"",
+      "file_path": "documentation/professional_video_applications/enum_(unnamed)-5zg4z.md",
+      "hash": "586d4eee533a584f45c217648b7923b97cdab75bd57fb75361ad2aae0cefbc06"
+    },
+    "https://developer.apple.com/documentation/professional_video_applications/enum_(unnamed)-74key": {
+      "etag": "\"7e64-6590231efaaaf-df\"",
+      "file_path": "documentation/professional_video_applications/enum_(unnamed)-74key.md",
+      "hash": "4b91c1abfbd846ee3d839a23be184b7e53ad52abe21bddca79fee9bf502dfc43"
+    },
+    "https://developer.apple.com/documentation/professional_video_applications/enum_(unnamed)-7b48r": {
+      "etag": "\"4782-6590231f9090f-df\"",
+      "file_path": "documentation/professional_video_applications/enum_(unnamed)-7b48r.md",
+      "hash": "c3fbc7f5013d63009a16c097c8c54784216e3488802913771aab1f39e73f774c"
+    },
+    "https://developer.apple.com/documentation/professional_video_applications/enum_(unnamed)-7jahq": {
+      "etag": "\"7ace-6590231edaeba-df\"",
+      "file_path": "documentation/professional_video_applications/enum_(unnamed)-7jahq.md",
+      "hash": "78090c33fcc6a966610bfe2c0054c15e9b1e14a190ebdd71a5a5853281a9a24e"
+    },
+    "https://developer.apple.com/documentation/professional_video_applications/enum_(unnamed)-97fc6": {
+      "etag": "\"5146-6590231efaaaf-df\"",
+      "file_path": "documentation/professional_video_applications/enum_(unnamed)-97fc6.md",
+      "hash": "9a7dff115bf06575e66b185dd2fb6040d33ee635cc3f6bcc8f9a4af1b653da35"
+    },
+    "https://developer.apple.com/documentation/professional_video_applications/enum_(unnamed)-9p3nd": {
+      "etag": "\"4c44-6590231e382cc-df\"",
+      "file_path": "documentation/professional_video_applications/enum_(unnamed)-9p3nd.md",
+      "hash": "78ec14af21ccac3b8d8053bbfc5c3845bc176541a560998eec795b137d8eee3f"
+    },
+    "https://developer.apple.com/documentation/professional_video_applications/enum_(unnamed)-9xe5i": {
+      "etag": "\"45db-6590231edaeba-df\"",
+      "file_path": "documentation/professional_video_applications/enum_(unnamed)-9xe5i.md",
+      "hash": "2bceb87e101823c86fd319a6ac1e9deddaf39ebb962d1853d09f9da6bf74d38f"
+    },
+    "https://developer.apple.com/documentation/professional_video_applications/enum_(unnamed)-rvg5": {
+      "etag": "\"5fdb-6590231fe758d-df\"",
+      "file_path": "documentation/professional_video_applications/enum_(unnamed)-rvg5.md",
+      "hash": "bc57cb8602aab850d3bd9df5c59733e95cfbf3099050893d5b0e35e8be551341"
+    },
     "https://developer.apple.com/documentation/professional_video_applications/fcpxevent": {
       "etag": "\"5944-65d55ac016bfb-df\"",
       "file_path": "documentation/professional_video_applications/fcpxevent.md",
@@ -919,6 +1309,16 @@
       "etag": "\"142b-65d55ac05c89d-df\"",
       "file_path": "documentation/professional_video_applications/fximagetilerequestsource/rawvalue.md",
       "hash": "5876379367ec2c7120fb80ef28b9c19601ff80b05ea58b9ae16b496127c358d0"
+    },
+    "https://developer.apple.com/documentation/professional_video_applications/fxinitkeyframe": {
+      "etag": "\"1062-6590231e382cc-df\"",
+      "file_path": "documentation/professional_video_applications/fxinitkeyframe.md",
+      "hash": "d76b465afc8b6bde2d5ded40973c3080be8313a16f1b6df55d267b402cbf1389"
+    },
+    "https://developer.apple.com/documentation/professional_video_applications/fxinitlight": {
+      "etag": "\"1010-6590231fb0527-df\"",
+      "file_path": "documentation/professional_video_applications/fxinitlight.md",
+      "hash": "49489bdef72a25ca08bf17da45169bcf1a7b0e1068903c0b5595cf11ebc9e496"
     },
     "https://developer.apple.com/documentation/professional_video_applications/fxkeyframe": {
       "etag": "\"5115-65d55abf5085b-df\"",
@@ -2255,6 +2655,146 @@
       "file_path": "documentation/professional_video_applications/fxxpcprotocol/viewservicelistenerendpoint(_).md",
       "hash": "933f06481e7375a4da64d33d6c89220c2b2ca1c2e49543cafc190c465fd70a08"
     },
+    "https://developer.apple.com/documentation/professional_video_applications/kceallowssegmentationkey": {
+      "etag": "\"6df7-65d55ac09e8db-df\"",
+      "file_path": "documentation/professional_video_applications/kceallowssegmentationkey.md",
+      "hash": "a1acb929ad6d3c106699f4128b7e7b2a3d73cfb77a46a90fcf164a04417fad4f"
+    },
+    "https://developer.apple.com/documentation/professional_video_applications/kceaudiochannellayoutkey": {
+      "etag": "\"6cbb-65d55abf6f078-df\"",
+      "file_path": "documentation/professional_video_applications/kceaudiochannellayoutkey.md",
+      "hash": "44c039f297e55fec295242d43a343dc9b5b6e0e0a737ab6e6b9131c325957874"
+    },
+    "https://developer.apple.com/documentation/professional_video_applications/kceaudioenabledkey": {
+      "etag": "\"6c84-65d55abf8c482-df\"",
+      "file_path": "documentation/professional_video_applications/kceaudioenabledkey.md",
+      "hash": "0ccca239e3f394acd17b32fc69202340df9b7bb523ed149207eb549e6577248b"
+    },
+    "https://developer.apple.com/documentation/professional_video_applications/kceaudiosamplefloatkey": {
+      "etag": "\"6cae-65d55abf5085b-df\"",
+      "file_path": "documentation/professional_video_applications/kceaudiosamplefloatkey.md",
+      "hash": "0daa3e23290cacbf4daab8457bf3347714f995aa45cea187fc617090e28f327f"
+    },
+    "https://developer.apple.com/documentation/professional_video_applications/kceaudiosampleratekey": {
+      "etag": "\"6c9f-65d55abfd2c80-df\"",
+      "file_path": "documentation/professional_video_applications/kceaudiosampleratekey.md",
+      "hash": "28425b49466c6a387d2ec33da8101dd9050a0c2ec9ddf25505b166a95f5ec510"
+    },
+    "https://developer.apple.com/documentation/professional_video_applications/kceaudiosamplesizekey": {
+      "etag": "\"6caa-65d55ac0f8585-df\"",
+      "file_path": "documentation/professional_video_applications/kceaudiosamplesizekey.md",
+      "hash": "e6798f7f3f1ad08881ab96366bc2381e231240e5879f3c113a643b44bf967ff1"
+    },
+    "https://developer.apple.com/documentation/professional_video_applications/kceautoheightkey": {
+      "etag": "\"6e56-65d55abf8c482-df\"",
+      "file_path": "documentation/professional_video_applications/kceautoheightkey.md",
+      "hash": "a4f5c88c2c5e2578581f61b6fd3622083c3b99a0c64f02a1762963f409897bb8"
+    },
+    "https://developer.apple.com/documentation/professional_video_applications/kceautoratekey": {
+      "etag": "\"6e4f-65d55abf6f078-df\"",
+      "file_path": "documentation/professional_video_applications/kceautoratekey.md",
+      "hash": "9dabd7dc3d6039527952c622531430a3b7f7e864a719cccbc8ee44fc248b675f"
+    },
+    "https://developer.apple.com/documentation/professional_video_applications/kceautowidthkey": {
+      "etag": "\"6e49-65d55abf2d897-df\"",
+      "file_path": "documentation/professional_video_applications/kceautowidthkey.md",
+      "hash": "c6da7dd39a63ef984c032f8698dc77d56f08680a9ea6a9aa9ee73d09bef445ec"
+    },
+    "https://developer.apple.com/documentation/professional_video_applications/kcecolorspacekey": {
+      "etag": "\"72a5-65d55abf2d897-df\"",
+      "file_path": "documentation/professional_video_applications/kcecolorspacekey.md",
+      "hash": "cdd6a1820e7af8b4ff9dc25b0a5cdfa3c508d9c52cbf21a39b6f04204a8e64bc"
+    },
+    "https://developer.apple.com/documentation/professional_video_applications/kcedenominatorkey": {
+      "etag": "\"6c89-65d55abf5085b-df\"",
+      "file_path": "documentation/professional_video_applications/kcedenominatorkey.md",
+      "hash": "7ce3ea54ceb01cf44f105841b17f471b37c4269f35081aaa56dce3b5158b154e"
+    },
+    "https://developer.apple.com/documentation/professional_video_applications/kcefieldorderkey": {
+      "etag": "\"6d59-65d55abfb1076-df\"",
+      "file_path": "documentation/professional_video_applications/kcefieldorderkey.md",
+      "hash": "2ec8ac12bf81f0f83085ceb6f31c237bc4edf47884bdc7998bf3860bd98525a2"
+    },
+    "https://developer.apple.com/documentation/professional_video_applications/kcefileextensionkey": {
+      "etag": "\"6c82-65d55ac0f8585-df\"",
+      "file_path": "documentation/professional_video_applications/kcefileextensionkey.md",
+      "hash": "bd78bf5dd1b78dfd4630426b2dba7fafb56df96636cc2666b26148ba7957c587"
+    },
+    "https://developer.apple.com/documentation/professional_video_applications/kceframeratekey": {
+      "etag": "\"786c-65d55abf8c482-df\"",
+      "file_path": "documentation/professional_video_applications/kceframeratekey.md",
+      "hash": "3058493f826be0a988e3aa7662ae4ed1d21c1c6d34d5e0f7bfb174e5e9aa5530"
+    },
+    "https://developer.apple.com/documentation/professional_video_applications/kceheightkey": {
+      "etag": "\"6c42-65d55abff8bb4-df\"",
+      "file_path": "documentation/professional_video_applications/kceheightkey.md",
+      "hash": "472bf2ee7b0be424eb75f8e8fdc0a04c6f876e2e2f72397ade39f243f0965140"
+    },
+    "https://developer.apple.com/documentation/professional_video_applications/kcemarkerdurationkey": {
+      "etag": "\"6cd2-65d55abff8bb4-df\"",
+      "file_path": "documentation/professional_video_applications/kcemarkerdurationkey.md",
+      "hash": "81f0f5ab2e8bc7886df28ac74c89c4a742a02456941a950ed32b279f84f239e6"
+    },
+    "https://developer.apple.com/documentation/professional_video_applications/kcemarkerframenumberkey": {
+      "etag": "\"6d19-65d55ac039bb2-df\"",
+      "file_path": "documentation/professional_video_applications/kcemarkerframenumberkey.md",
+      "hash": "37f6aca8c6dce0491efe010f9e0b4c7341d90e9d9cf83c240d1fbb2689dd147b"
+    },
+    "https://developer.apple.com/documentation/professional_video_applications/kcemarkerimagefileurlkey": {
+      "etag": "\"88a1-65d55abfd2c80-df\"",
+      "file_path": "documentation/professional_video_applications/kcemarkerimagefileurlkey.md",
+      "hash": "3eae35ff06da363f00f5292e489c6f6798338c3bb4ab512571ae698f957df80e"
+    },
+    "https://developer.apple.com/documentation/professional_video_applications/kcemarkerimagesourceframenumberkey": {
+      "etag": "\"6e06-65d55abf8c482-df\"",
+      "file_path": "documentation/professional_video_applications/kcemarkerimagesourceframenumberkey.md",
+      "hash": "01c37563a7d9613b13475f3213cc7392ae5b3c586d1c8670d0dff98696e2ad77"
+    },
+    "https://developer.apple.com/documentation/professional_video_applications/kcemarkerimagesourcetimekey": {
+      "etag": "\"6d65-65d55abf5085b-df\"",
+      "file_path": "documentation/professional_video_applications/kcemarkerimagesourcetimekey.md",
+      "hash": "f45a50e1c02d62836621f779ff91745ee40cf472f6af62532de4d2a82e9aebf3"
+    },
+    "https://developer.apple.com/documentation/professional_video_applications/kcemarkerkindkey": {
+      "etag": "\"7630-65d55abf5085b-df\"",
+      "file_path": "documentation/professional_video_applications/kcemarkerkindkey.md",
+      "hash": "fa9201eb4ae07370bb46aae092f8c16bec87e25b0798932d52dc6acbfb4c0cb7"
+    },
+    "https://developer.apple.com/documentation/professional_video_applications/kcemarkernamekey": {
+      "etag": "\"6c3e-65d55abfd2c80-df\"",
+      "file_path": "documentation/professional_video_applications/kcemarkernamekey.md",
+      "hash": "eb4b6429dcc07d7dea231c1bb3cd6d0d87ddd3dc81e1257cc3727d6459265372"
+    },
+    "https://developer.apple.com/documentation/professional_video_applications/kcemarkertimekey": {
+      "etag": "\"6c62-65d55abf2d897-df\"",
+      "file_path": "documentation/professional_video_applications/kcemarkertimekey.md",
+      "hash": "1ab5bb34152dad2bfaaab5cf2323176e2229126002d4bb3de7c9400ff04cfdec"
+    },
+    "https://developer.apple.com/documentation/professional_video_applications/kcemarkerurlkey": {
+      "etag": "\"6ca9-65d55ac0f8585-df\"",
+      "file_path": "documentation/professional_video_applications/kcemarkerurlkey.md",
+      "hash": "65f30a613f0acec468adeb897327b72181010be86b299824fb981fa0b5100def"
+    },
+    "https://developer.apple.com/documentation/professional_video_applications/kcenumeratorkey": {
+      "etag": "\"6c5b-65d55abff8bb4-df\"",
+      "file_path": "documentation/professional_video_applications/kcenumeratorkey.md",
+      "hash": "12b2e1f54db0f3efc36c1114040d36d8eff20bd4b25500c3bbbe749d2bfe6dc4"
+    },
+    "https://developer.apple.com/documentation/professional_video_applications/kcepixelaspectkey": {
+      "etag": "\"6d6a-65d55abf2d897-df\"",
+      "file_path": "documentation/professional_video_applications/kcepixelaspectkey.md",
+      "hash": "fd408f84c95b7b7e0162ccf74d098765cf91feb287fcc0d89a390bfffacc0faa"
+    },
+    "https://developer.apple.com/documentation/professional_video_applications/kcevideoenabledkey": {
+      "etag": "\"6c84-65d55ac07c110-df\"",
+      "file_path": "documentation/professional_video_applications/kcevideoenabledkey.md",
+      "hash": "00121f4b7092e1bc8e76ae78c51aa77e6e02c6b50a73a31a92e3cf0657cde94d"
+    },
+    "https://developer.apple.com/documentation/professional_video_applications/kcewidthkey": {
+      "etag": "\"6c38-65d55ac0f8585-df\"",
+      "file_path": "documentation/professional_video_applications/kcewidthkey.md",
+      "hash": "4a99aca808b104b3a7bbc1f4eaef6a71a6a7809d4cc70279571b24a048ede775"
+    },
     "https://developer.apple.com/documentation/professional_video_applications/kfxanalysislocation_cpu": {
       "etag": "\"2435-65d55abf8c482-df\"",
       "file_path": "documentation/professional_video_applications/kfxanalysislocation_cpu.md",
@@ -2780,6 +3320,11 @@
       "file_path": "documentation/professional_video_applications/kfxparameterflag_dont_save.md",
       "hash": "b00fa1fc6c0017714316162051045f45bd65c424572272076b4b73341b101f69"
     },
+    "https://developer.apple.com/documentation/professional_video_applications/kfxparameterflag_expanded": {
+      "etag": "\"1006-6590231efaaaf-df\"",
+      "file_path": "documentation/professional_video_applications/kfxparameterflag_expanded.md",
+      "hash": "4edd0fbb3d40afde83338e94a1465a6239d80c725aa8e798ef060d8bfb267d57"
+    },
     "https://developer.apple.com/documentation/professional_video_applications/kfxparameterflag_hidden": {
       "etag": "\"6064-65d55abf6f078-df\"",
       "file_path": "documentation/professional_video_applications/kfxparameterflag_hidden.md",
@@ -2869,6 +3414,16 @@
       "etag": "\"24e8-65d55ac016bfb-df\"",
       "file_path": "documentation/professional_video_applications/kfxpathstyle_linear.md",
       "hash": "2b55bf107d7fe670d3e814b9accc3ec145df4caa723136e419fdaf4084e6702b"
+    },
+    "https://developer.apple.com/documentation/professional_video_applications/kfxpathstyle_rectangle": {
+      "etag": "\"308c-65d55ac0df883-df\"",
+      "file_path": "documentation/professional_video_applications/kfxpathstyle_rectangle.md",
+      "hash": "ff3a1060cef9c0f8550fb5d38e7bd278b238c8171a23425b3a176fdaa7a1848c"
+    },
+    "https://developer.apple.com/documentation/professional_video_applications/kfxpathstyle_superellipse": {
+      "etag": "\"30ab-65d55ac09e8db-df\"",
+      "file_path": "documentation/professional_video_applications/kfxpathstyle_superellipse.md",
+      "hash": "cbfc246502a64a261911f8e16e18436fd0f1d23ecf36913b2f9f7897e986a458"
     },
     "https://developer.apple.com/documentation/professional_video_applications/kfxpathstyle_xspline": {
       "etag": "\"24f3-65d55ac0df883-df\"",
@@ -2995,6 +3550,16 @@
       "file_path": "documentation/professional_video_applications/matrix44data.md",
       "hash": "fae245a47e306418fcbb4f476ccbdf177ccf6c8c6037a3addcdfb3c7e6c08f57"
     },
+    "https://developer.apple.com/documentation/professional_video_applications/pluginmanagerversionnumber": {
+      "etag": "\"2e44-6590231e382cc-df\"",
+      "file_path": "documentation/professional_video_applications/pluginmanagerversionnumber.md",
+      "hash": "611f9fa51d8975f176d5a0dd3ab95c69ada7be338ce3581973e3291e353cca11"
+    },
+    "https://developer.apple.com/documentation/professional_video_applications/pluginmanagerversionstring": {
+      "etag": "\"2e8a-6590231f9090f-df\"",
+      "file_path": "documentation/professional_video_applications/pluginmanagerversionstring.md",
+      "hash": "3665c02dd03231769e318a30120515ce95a8336b62cc262a8af6d6fb6b797735"
+    },
     "https://developer.apple.com/documentation/professional_video_applications/proapiaccessing": {
       "etag": "\"397c-6590231edaeba-df\"",
       "file_path": "documentation/professional_video_applications/proapiaccessing.md",
@@ -3069,6 +3634,396 @@
       "etag": "\"5234-6590231d89fbe-df\"",
       "file_path": "documentation/professional_video_applications/professional_video_applications.md",
       "hash": "a8883e9d688da47deb8c1b64242960625ad242e5d1463abbf86f12ff6688ee62"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/professional_video_applications/compressorextensioncolorspaces.json": {
+      "etag": "\"29db-65d55ac07c110-df\"",
+      "file_path": "documentation/professional_video_applications/compressorextensioncolorspaces.md",
+      "hash": "3298ae826e1462a024887ea917831d986709b7de2fbe6f460524a749093ef5c2"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/professional_video_applications/compressorextensioncolorspaces/supportedcolorspaces().json": {
+      "etag": "\"3bc4-65d55abf6f078-df\"",
+      "file_path": "documentation/professional_video_applications/compressorextensioncolorspaces/supportedcolorspaces().md",
+      "hash": "0f70a7374ec2566d1b002477b3e76cf1c3b1574767a77af6b1d80c21049c8ea5"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/professional_video_applications/compressorextensionencoder.json": {
+      "etag": "\"86d3-65d55ac07c110-df\"",
+      "file_path": "documentation/professional_video_applications/compressorextensionencoder.md",
+      "hash": "b330253318804ad7c8c40b4b7c416773391bbd9954077d9ad052141fb05b238e"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/professional_video_applications/compressorextensionencoder/cancel(forpause:).json": {
+      "etag": "\"3f24-65d55abff8bb4-df\"",
+      "file_path": "documentation/professional_video_applications/compressorextensionencoder/cancel(forpause).md",
+      "hash": "671a6cf278960b685ee46c92d241a8ef4d45a04fef956f6f662003b79ad52085"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/professional_video_applications/compressorextensionencoder/mergesegments(_:andaudio:tofile:).json": {
+      "etag": "\"4b1f-65d55abff8bb4-df\"",
+      "file_path": "documentation/professional_video_applications/compressorextensionencoder/mergesegments(_,andaudio,tofile).md",
+      "hash": "2a49b9c5be8be5d5804f3317da26ef408d7cf92d0f11b5a78d4eb3cd33c54246"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/professional_video_applications/compressorextensionencoder/percentdone().json": {
+      "etag": "\"2866-65d55abff8bb4-df\"",
+      "file_path": "documentation/professional_video_applications/compressorextensionencoder/percentdone().md",
+      "hash": "40c4f6d68d17eec6e1b1d7045a97ca1b36cd999b5e3b4a4043f463edbd6ea4da"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/professional_video_applications/compressorextensionencoder/percentlostonpause().json": {
+      "etag": "\"3090-65d55abff8bb4-df\"",
+      "file_path": "documentation/professional_video_applications/compressorextensionencoder/percentlostonpause().md",
+      "hash": "88c0820080f2b42352fb5332daecc8ea5e611c8cd331ca2753d0408f8a790d56"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/professional_video_applications/compressorextensionencoder/runtranscode(for:start:duration:tofile:starttimecode:).json": {
+      "etag": "\"6584-65d55abff8bb4-df\"",
+      "file_path": "documentation/professional_video_applications/compressorextensionencoder/runtranscode(for,start,duration,tofile,starttimecode).md",
+      "hash": "102e8334061f976b0def9a195024c78da2f91ea0db4e38f036a59c04790de861"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/professional_video_applications/compressorextensionencoder/setannotations(_:).json": {
+      "etag": "\"3556-65d55abff8bb4-df\"",
+      "file_path": "documentation/professional_video_applications/compressorextensionencoder/setannotations(_).md",
+      "hash": "a3c011a3514117741fcd8193d52379ea0f8ef432efcda7a492005dad5e563b64"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/professional_video_applications/compressorextensionencoder/setchapters(_:).json": {
+      "etag": "\"3229-65d55abff8bb4-df\"",
+      "file_path": "documentation/professional_video_applications/compressorextensionencoder/setchapters(_).md",
+      "hash": "f893bb4324416e515f6a8827ae576ec02a7539feeba3345600d2498957df3e30"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/professional_video_applications/compressorextensionencoder/setsettings(_:).json": {
+      "etag": "\"405e-65d55abff8bb4-df\"",
+      "file_path": "documentation/professional_video_applications/compressorextensionencoder/setsettings(_).md",
+      "hash": "f824d4c73b6663cd21bbfb7b671eb8c17dd5aa34a45f232ee77b5ed2772bc1c5"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/professional_video_applications/compressorextensionencoder/setstatefrompause(_:).json": {
+      "etag": "\"45a2-65d55abff8bb4-df\"",
+      "file_path": "documentation/professional_video_applications/compressorextensionencoder/setstatefrompause(_).md",
+      "hash": "7db1f2979f5c4d079013cdfc3cf77ea8a239287589d9334b9b0caccc133d5328"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/professional_video_applications/compressorextensionencoder/splitpoints(forframestart:duration:servicecount:).json": {
+      "etag": "\"3a40-65d55abff8bb4-df\"",
+      "file_path": "documentation/professional_video_applications/compressorextensionencoder/splitpoints(forframestart,duration,servicecount).md",
+      "hash": "8688f11e496cd22fa61b8a0cdb079ed3a9c93bf0856012de54d7f378ace8f391"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/professional_video_applications/compressorextensionencoder/statusmessage().json": {
+      "etag": "\"2e93-65d55abff8bb4-df\"",
+      "file_path": "documentation/professional_video_applications/compressorextensionencoder/statusmessage().md",
+      "hash": "c9d870b3c0aac4c96c329135614e7699f232d116a542e4fda00f489296e2902a"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/professional_video_applications/compressorextensionencoder/supportedpixelformats.json": {
+      "etag": "\"2193-65d55abff8bb4-df\"",
+      "file_path": "documentation/professional_video_applications/compressorextensionencoder/supportedpixelformats.md",
+      "hash": "e0379e80eb8e4479b10677f5cd5e1cebaab021fd334b783926e2970a881d81ab"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/professional_video_applications/compressorextensionencoderptr.json": {
+      "etag": "\"3908-65d55ac016bfb-df\"",
+      "file_path": "documentation/professional_video_applications/compressorextensionencoderptr.md",
+      "hash": "1e1448a0bb63d3493db0946dcff62b15b21c9ea91b33c0d56efbf8f287a37d6f"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/professional_video_applications/compressorextensionsettings.json": {
+      "etag": "\"64b5-65d55ac0df883-df\"",
+      "file_path": "documentation/professional_video_applications/compressorextensionsettings.md",
+      "hash": "f7809937f12bfaf6e68feb13e85ac166a05845975714102df72764b592458aad"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/professional_video_applications/compressorextensionsettings/audioenabled.json": {
+      "etag": "\"3be0-65d55ac016bfb-df\"",
+      "file_path": "documentation/professional_video_applications/compressorextensionsettings/audioenabled.md",
+      "hash": "ba08421fb5d3100b569504a6d32e29fe1f76be5fc3ccfe5655eb1d65c93df35e"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/professional_video_applications/compressorextensionsettings/edit(_:completionhandler:).json": {
+      "etag": "\"4be9-65d55ac016bfb-df\"",
+      "file_path": "documentation/professional_video_applications/compressorextensionsettings/edit(_,completionhandler).md",
+      "hash": "a69d7731b5b35bf24d7585a519ece6fa386a4f15852f6b95f55df943d4fafe6e"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/professional_video_applications/compressorextensionsettings/encodername().json": {
+      "etag": "\"3a9a-65d55ac016bfb-df\"",
+      "file_path": "documentation/professional_video_applications/compressorextensionsettings/encodername().md",
+      "hash": "640940bcb64009e88bafea962f2c6d7e8e32905581f57d247f4b5550140d3fd5"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/professional_video_applications/compressorextensionsettings/setsettingsstring(_:).json": {
+      "etag": "\"3ba3-65d55ac016bfb-df\"",
+      "file_path": "documentation/professional_video_applications/compressorextensionsettings/setsettingsstring(_).md",
+      "hash": "4bff231c398794273494a9ef529fa44a200e3c487da63e4c219c77a104c4144d"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/professional_video_applications/compressorextensionsettings/settingsattributes().json": {
+      "etag": "\"3d41-65d55ac016bfb-df\"",
+      "file_path": "documentation/professional_video_applications/compressorextensionsettings/settingsattributes().md",
+      "hash": "973b89daec00f2371fdcad52467fe199c41c38b98d20d9886bfe8cc417aa1870"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/professional_video_applications/compressorextensionsettings/settingsdescription().json": {
+      "etag": "\"3b17-65d55ac016bfb-df\"",
+      "file_path": "documentation/professional_video_applications/compressorextensionsettings/settingsdescription().md",
+      "hash": "5876fdd04f74ac20899a351dd1234d6f7940843917558597a28e734bd3e50a46"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/professional_video_applications/compressorextensionsettings/settingsstring().json": {
+      "etag": "\"3c19-65d55ac016bfb-df\"",
+      "file_path": "documentation/professional_video_applications/compressorextensionsettings/settingsstring().md",
+      "hash": "fbc1ad3b9400fd3da5452c0f96b47df1fb627702686ea3881f0427406bf56cae"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/professional_video_applications/compressorextensionsettings/videoenabled.json": {
+      "etag": "\"3be0-65d55ac016bfb-df\"",
+      "file_path": "documentation/professional_video_applications/compressorextensionsettings/videoenabled.md",
+      "hash": "458fdbafbd7b8c16b59249ff5df7a8fb7e4d07eb76b736277b5fce2f06e9b59d"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/professional_video_applications/compressorextensionsettingsoptional.json": {
+      "etag": "\"2198-65d55abf5085b-df\"",
+      "file_path": "documentation/professional_video_applications/compressorextensionsettingsoptional.md",
+      "hash": "07b232ec4fca2178086c85481e6bfd8f543f7717306b490f2b38b17763e9a602"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/professional_video_applications/compressorextensionsettingsoptional/setjobsourceattributes(_:).json": {
+      "etag": "\"3b48-65d55ac039bb2-df\"",
+      "file_path": "documentation/professional_video_applications/compressorextensionsettingsoptional/setjobsourceattributes(_).md",
+      "hash": "7882bebec7f15141d9591fd4437dda46e5c6e1c3f2a9791fcc302767d60ce477"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/professional_video_applications/compressorextensionsettingsptr.json": {
+      "etag": "\"3821-65d55abf5085b-df\"",
+      "file_path": "documentation/professional_video_applications/compressorextensionsettingsptr.md",
+      "hash": "974823321c1cb52197cbe7c998b6023d1490c54010fd1b29f6ea82b68cc252e6"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/professional_video_applications/compressormediadecoder.json": {
+      "etag": "\"4fa7-65d55ac0bbcd0-df\"",
+      "file_path": "documentation/professional_video_applications/compressormediadecoder.md",
+      "hash": "5e362ee46d8ff7c8b259e1f0018b826ad07f593db9e01d406b85c0f2acc9aca2"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/professional_video_applications/compressormediadecoder/copyaudio(atstart:count:).json": {
+      "etag": "\"55e1-65d55abfd2c80-df\"",
+      "file_path": "documentation/professional_video_applications/compressormediadecoder/copyaudio(atstart,count).md",
+      "hash": "d6517a7d18a327b0d57cda0f3cd972d3fd098a09af28b4d90ac300d22423d520"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/professional_video_applications/compressormediadecoder/copyclosecaptiondata(_:framecount:).json": {
+      "etag": "\"52d0-65d55abfd2c80-df\"",
+      "file_path": "documentation/professional_video_applications/compressormediadecoder/copyclosecaptiondata(_,framecount).md",
+      "hash": "e1092681c3f4a7828caec689650effa3531b17ab3e22052b4682f7eda34b34bb"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/professional_video_applications/compressormediadecoder/copyframe(_:).json": {
+      "etag": "\"5003-65d55abfd2c80-df\"",
+      "file_path": "documentation/professional_video_applications/compressormediadecoder/copyframe(_).md",
+      "hash": "4cab45ecaf71202ff650b52059c475b1a242ece1518d6fc1278f122b2e37a168"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/professional_video_applications/compressormediadecoder/decodingattributes().json": {
+      "etag": "\"3a38-65d55abfd2c80-df\"",
+      "file_path": "documentation/professional_video_applications/compressormediadecoder/decodingattributes().md",
+      "hash": "ea3bdda76f922c28312824210f5735fc9fb7e3858e6aab596ed8022335be68ef"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/professional_video_applications/compressormediadecoder/releaseframe(_:).json": {
+      "etag": "\"46a7-65d55abfd2c80-df\"",
+      "file_path": "documentation/professional_video_applications/compressormediadecoder/releaseframe(_).md",
+      "hash": "4d60fcf00a9e9ffc538549d68b38469ca4c5912449c2124fecf136869da024f4"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/professional_video_applications/compressormediadecoder/starttimecodeformedia().json": {
+      "etag": "\"32c2-65d55abfd2c80-df\"",
+      "file_path": "documentation/professional_video_applications/compressormediadecoder/starttimecodeformedia().md",
+      "hash": "182098c927156de10d2c3574b794ba1f4a5236201bc3ea2a2cdac758e8ef1e54"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/professional_video_applications/compressormediadecoderptr.json": {
+      "etag": "\"422f-65d55abfb1076-df\"",
+      "file_path": "documentation/professional_video_applications/compressormediadecoderptr.md",
+      "hash": "9066737fdf7ed6af5b5e0b9858cc4c0e9c17f196a5ec5800cd702d219cd59fcb"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/professional_video_applications/ececolorspace.json": {
+      "etag": "\"8a63-65d55abf5085b-df\"",
+      "file_path": "documentation/professional_video_applications/ececolorspace.md",
+      "hash": "114a95508ccc1f252964648400fa76db9b9a5d7aef053cebbafe651e96943a39"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/professional_video_applications/ececolorspace/!=(_:_:).json": {
+      "etag": "\"1c8f-6590231efaaaf-df\"",
+      "file_path": "documentation/professional_video_applications/ececolorspace/noteq(_,_).md",
+      "hash": "4069c3b5abc464026a210aefc79729072b66a63b9a1953e1038625301b11290e"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/professional_video_applications/ececolorspace/equatable-implementations.json": {
+      "etag": "\"19dc-6590231efaaaf-df\"",
+      "file_path": "documentation/professional_video_applications/ececolorspace/equatable-implementations.md",
+      "hash": "06c857f52dc609ad56ccb4a74f74498c54a5f57dbf38a1c4383c55460e4536f4"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/professional_video_applications/ececolorspace/init(_:).json": {
+      "etag": "\"13a7-6590231efaaaf-df\"",
+      "file_path": "documentation/professional_video_applications/ececolorspace/init(_).md",
+      "hash": "45513ff59ce049f5a0dba3f7b96dd0ac0780ad6702bc6e38f3caceedb0597052"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/professional_video_applications/ececolorspace/init(rawvalue:).json": {
+      "etag": "\"1431-6590231efaaaf-df\"",
+      "file_path": "documentation/professional_video_applications/ececolorspace/init(rawvalue).md",
+      "hash": "6a5ad10d5567dc87aef357e6fe02640877967d6003f6c11c40fe691a2bd8b641"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/professional_video_applications/ececolorspace/rawvalue.json": {
+      "etag": "\"13a2-6590231efaaaf-df\"",
+      "file_path": "documentation/professional_video_applications/ececolorspace/rawvalue.md",
+      "hash": "2e59d502da826e9875408a962c2984dcc071eaeecfcf998e9aa39dcf06071836"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/professional_video_applications/ececolorspace601ntsc.json": {
+      "etag": "\"6c89-65d55ac09e8db-df\"",
+      "file_path": "documentation/professional_video_applications/ececolorspace601ntsc.md",
+      "hash": "da7a07dec6db83387c75295dfea186f2b03d8a9782438e8c585a1f01d880953a"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/professional_video_applications/ececolorspace601pal.json": {
+      "etag": "\"6c80-65d55ac09e8db-df\"",
+      "file_path": "documentation/professional_video_applications/ececolorspace601pal.md",
+      "hash": "19ee30225c145bd4b674c2c59a20ee51c04f1b8aa96d8f95754311fd179a15ef"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/professional_video_applications/ececolorspace709.json": {
+      "etag": "\"6c65-65d55abf8c482-df\"",
+      "file_path": "documentation/professional_video_applications/ececolorspace709.md",
+      "hash": "c2f033b3257afd3a72706ded2f5913b1a278264b1b54dd52b8dcc165a0342a8e"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/professional_video_applications/ececolorspacedevicergb.json": {
+      "etag": "\"6c9b-65d55ac016bfb-df\"",
+      "file_path": "documentation/professional_video_applications/ececolorspacedevicergb.md",
+      "hash": "a5848ab446c7b8809cd3701815914075dba30dee5708709b8e191637b98dfc54"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/professional_video_applications/ececolorspaceunknown.json": {
+      "etag": "\"6c89-65d55ac09e8db-df\"",
+      "file_path": "documentation/professional_video_applications/ececolorspaceunknown.md",
+      "hash": "006979a19bd030d65783e9bb1c89acf96537d4e8296cbc043f69449b72769902"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/professional_video_applications/ececolorspecdcip3.json": {
+      "etag": "\"6c6e-65d55abf2d897-df\"",
+      "file_path": "documentation/professional_video_applications/ececolorspecdcip3.md",
+      "hash": "4516acad8dff1ea86278d60b6a036489b8225638a0a7fc33d9b77c2c50ccfae7"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/professional_video_applications/ececolorspecitur2020.json": {
+      "etag": "\"6c89-65d55abfb1076-df\"",
+      "file_path": "documentation/professional_video_applications/ececolorspecitur2020.md",
+      "hash": "d773a9d3b0ed29464259a21b9353cb818f75ae552c4a0ee0ea871d1ec479ecd7"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/professional_video_applications/ececolorspecp3d65.json": {
+      "etag": "\"6c6e-65d55ac0df883-df\"",
+      "file_path": "documentation/professional_video_applications/ececolorspecp3d65.md",
+      "hash": "e10894e3dbb022b077f642467574c543e77e2ef5641b3ead63b628e0a8daff7e"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/professional_video_applications/ececolorspecp3d65hlg.json": {
+      "etag": "\"6c89-65d55ac05c89d-df\"",
+      "file_path": "documentation/professional_video_applications/ececolorspecp3d65hlg.md",
+      "hash": "ed7474bf7ed18c2b0ebb4f46f6db1716d17eaf58749db14503ea9ebf6aede70c"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/professional_video_applications/ececolorspecp3d65pq.json": {
+      "etag": "\"6c80-65d55abf8c482-df\"",
+      "file_path": "documentation/professional_video_applications/ececolorspecp3d65pq.md",
+      "hash": "07fd733ece0725b87afe1ddd19ee6906218bb81644cba29f125e0d59afa6fcf4"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/professional_video_applications/ececolorspecp3dcipq.json": {
+      "etag": "\"6c80-65d55ac016bfb-df\"",
+      "file_path": "documentation/professional_video_applications/ececolorspecp3dcipq.md",
+      "hash": "3b5f8237e658eda14cd0b10954cba1d03483825ad832ccef3a5ce74d7fb3bcdf"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/professional_video_applications/ececolorspecrgbhdrlinear.json": {
+      "etag": "\"6cad-65d55ac0bbcd0-df\"",
+      "file_path": "documentation/professional_video_applications/ececolorspecrgbhdrlinear.md",
+      "hash": "23b3a8c4cf0b58134bdf3d45f04a2dd1128f4168427dbb9b50cb93e0211676a8"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/professional_video_applications/ececolorspecrgbsdrlinear.json": {
+      "etag": "\"6cad-65d55abf6f078-df\"",
+      "file_path": "documentation/professional_video_applications/ececolorspecrgbsdrlinear.md",
+      "hash": "b668eb720757b59b231e07074d7a29b28b13804b9d7d1c9848f259aca6cf8337"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/professional_video_applications/ececolorspecsrgb.json": {
+      "etag": "\"6c65-65d55ac09e8db-df\"",
+      "file_path": "documentation/professional_video_applications/ececolorspecsrgb.md",
+      "hash": "f43362a01751408eac04392e3eb36fecd6698ca0c67043549684b08edda3b044"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/professional_video_applications/ececolorspectitur2020hlg.json": {
+      "etag": "\"6cad-65d55abf6f078-df\"",
+      "file_path": "documentation/professional_video_applications/ececolorspectitur2020hlg.md",
+      "hash": "fa533be74e05e75ce26cd4fd6071d6038bb19bdc35ac537e99a02954784de540"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/professional_video_applications/ececolorspectitur2020pq.json": {
+      "etag": "\"6ca4-65d55abf8c482-df\"",
+      "file_path": "documentation/professional_video_applications/ececolorspectitur2020pq.md",
+      "hash": "137b20368fe449025a9b3c23946de4c4722c67743a2d3a47495cd8099a9a6b14"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/professional_video_applications/enum_(unnamed)-14vbr.json": {
+      "etag": "\"474c-6590231e09b11-df\"",
+      "file_path": "documentation/professional_video_applications/enum_(unnamed)-14vbr.md",
+      "hash": "8ca3066648191b0720d21475aa75b516acd990801d936e98a32beb36f950ce58"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/professional_video_applications/enum_(unnamed)-187sa.json": {
+      "etag": "\"4229-6590231f1d321-df\"",
+      "file_path": "documentation/professional_video_applications/enum_(unnamed)-187sa.md",
+      "hash": "7262e88352d411feed29349e76611d4b77f311be38dcdfaf3b4fa2a562ae3a15"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/professional_video_applications/enum_(unnamed)-1tjh8.json": {
+      "etag": "\"5b05-6590231f6427a-df\"",
+      "file_path": "documentation/professional_video_applications/enum_(unnamed)-1tjh8.md",
+      "hash": "316b6ed7567fc08a9a7d6ae8511af467327f5fae13bf13cbd90311c31dc1bef8"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/professional_video_applications/enum_(unnamed)-2epbe.json": {
+      "etag": "\"4796-6590231de5325-df\"",
+      "file_path": "documentation/professional_video_applications/enum_(unnamed)-2epbe.md",
+      "hash": "393d31b5ee864cdc840cdcb92f65af4f6fc972d9305e1456379e746508cb715d"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/professional_video_applications/enum_(unnamed)-35krj.json": {
+      "etag": "\"4cbb-6590231f9090f-df\"",
+      "file_path": "documentation/professional_video_applications/enum_(unnamed)-35krj.md",
+      "hash": "569b899e7fdfb15d3ee35359e8565b41f4d2aad8fa09af9d70a71d775e43b6f4"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/professional_video_applications/enum_(unnamed)-3fxly.json": {
+      "etag": "\"461c-6590231eb77e1-df\"",
+      "file_path": "documentation/professional_video_applications/enum_(unnamed)-3fxly.md",
+      "hash": "6b4a63d93d42e39d785d0531b4972ee78c129e22a0a56163906ae6cc13a1039e"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/professional_video_applications/enum_(unnamed)-3hmov.json": {
+      "etag": "\"4618-6590231fb0527-df\"",
+      "file_path": "documentation/professional_video_applications/enum_(unnamed)-3hmov.md",
+      "hash": "6055df1e3da33006a91f7c74e8b5ea97a6283f6d974bab90d19489dc737ddefe"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/professional_video_applications/enum_(unnamed)-424rv.json": {
+      "etag": "\"47f0-6590231de5325-df\"",
+      "file_path": "documentation/professional_video_applications/enum_(unnamed)-424rv.md",
+      "hash": "5929ffd1bdc1d2d526ebb525cc72b925e5c236677f2b83e061fd43a6bfbe6cf1"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/professional_video_applications/enum_(unnamed)-5fh3s.json": {
+      "etag": "\"fc54-6590231e382cc-df\"",
+      "file_path": "documentation/professional_video_applications/enum_(unnamed)-5fh3s.md",
+      "hash": "6c7bbcbd4c19c6fbb27ee555d42c48cfe3484c64a063219a87bde98c36e0de45"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/professional_video_applications/enum_(unnamed)-5key8.json": {
+      "etag": "\"508b-6590231e382cc-df\"",
+      "file_path": "documentation/professional_video_applications/enum_(unnamed)-5key8.md",
+      "hash": "33b3837da457dc400ecc10356c963267a691a39b40ca826d9b24db5924a60669"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/professional_video_applications/enum_(unnamed)-5ml7h.json": {
+      "etag": "\"5133-6590231f9090f-df\"",
+      "file_path": "documentation/professional_video_applications/enum_(unnamed)-5ml7h.md",
+      "hash": "8ab313b51b8e02f7aee4f4d4e96e0272ddf145ffffcdb1e80262c72908aa1a98"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/professional_video_applications/enum_(unnamed)-5r2wt.json": {
+      "etag": "\"423b-6590231de5325-df\"",
+      "file_path": "documentation/professional_video_applications/enum_(unnamed)-5r2wt.md",
+      "hash": "42c5b40d94c336c1d043020af1c8ad5245cd3ec0cdf4e62055b81452b48bfcd6"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/professional_video_applications/enum_(unnamed)-5zg4z.json": {
+      "etag": "\"4249-6590231e895d3-df\"",
+      "file_path": "documentation/professional_video_applications/enum_(unnamed)-5zg4z.md",
+      "hash": "586d4eee533a584f45c217648b7923b97cdab75bd57fb75361ad2aae0cefbc06"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/professional_video_applications/enum_(unnamed)-74key.json": {
+      "etag": "\"7e64-6590231efaaaf-df\"",
+      "file_path": "documentation/professional_video_applications/enum_(unnamed)-74key.md",
+      "hash": "4b91c1abfbd846ee3d839a23be184b7e53ad52abe21bddca79fee9bf502dfc43"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/professional_video_applications/enum_(unnamed)-7b48r.json": {
+      "etag": "\"4782-6590231f9090f-df\"",
+      "file_path": "documentation/professional_video_applications/enum_(unnamed)-7b48r.md",
+      "hash": "c3fbc7f5013d63009a16c097c8c54784216e3488802913771aab1f39e73f774c"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/professional_video_applications/enum_(unnamed)-7jahq.json": {
+      "etag": "\"7ace-6590231edaeba-df\"",
+      "file_path": "documentation/professional_video_applications/enum_(unnamed)-7jahq.md",
+      "hash": "78090c33fcc6a966610bfe2c0054c15e9b1e14a190ebdd71a5a5853281a9a24e"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/professional_video_applications/enum_(unnamed)-97fc6.json": {
+      "etag": "\"5146-6590231efaaaf-df\"",
+      "file_path": "documentation/professional_video_applications/enum_(unnamed)-97fc6.md",
+      "hash": "9a7dff115bf06575e66b185dd2fb6040d33ee635cc3f6bcc8f9a4af1b653da35"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/professional_video_applications/enum_(unnamed)-9p3nd.json": {
+      "etag": "\"4c44-6590231e382cc-df\"",
+      "file_path": "documentation/professional_video_applications/enum_(unnamed)-9p3nd.md",
+      "hash": "78ec14af21ccac3b8d8053bbfc5c3845bc176541a560998eec795b137d8eee3f"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/professional_video_applications/enum_(unnamed)-9xe5i.json": {
+      "etag": "\"45db-6590231edaeba-df\"",
+      "file_path": "documentation/professional_video_applications/enum_(unnamed)-9xe5i.md",
+      "hash": "2bceb87e101823c86fd319a6ac1e9deddaf39ebb962d1853d09f9da6bf74d38f"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/professional_video_applications/enum_(unnamed)-rvg5.json": {
+      "etag": "\"5fdb-6590231fe758d-df\"",
+      "file_path": "documentation/professional_video_applications/enum_(unnamed)-rvg5.md",
+      "hash": "bc57cb8602aab850d3bd9df5c59733e95cfbf3099050893d5b0e35e8be551341"
     },
     "https://developer.apple.com/tutorials/data/documentation/professional_video_applications/fcpxevent.json": {
       "etag": "\"5944-65d55ac016bfb-df\"",
@@ -3984,6 +4939,16 @@
       "etag": "\"142b-65d55ac05c89d-df\"",
       "file_path": "documentation/professional_video_applications/fximagetilerequestsource/rawvalue.md",
       "hash": "5876379367ec2c7120fb80ef28b9c19601ff80b05ea58b9ae16b496127c358d0"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/professional_video_applications/fxinitkeyframe.json": {
+      "etag": "\"1062-6590231e382cc-df\"",
+      "file_path": "documentation/professional_video_applications/fxinitkeyframe.md",
+      "hash": "d76b465afc8b6bde2d5ded40973c3080be8313a16f1b6df55d267b402cbf1389"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/professional_video_applications/fxinitlight.json": {
+      "etag": "\"1010-6590231fb0527-df\"",
+      "file_path": "documentation/professional_video_applications/fxinitlight.md",
+      "hash": "49489bdef72a25ca08bf17da45169bcf1a7b0e1068903c0b5595cf11ebc9e496"
     },
     "https://developer.apple.com/tutorials/data/documentation/professional_video_applications/fxkeyframe.json": {
       "etag": "\"5115-65d55abf5085b-df\"",
@@ -5320,6 +6285,146 @@
       "file_path": "documentation/professional_video_applications/fxxpcprotocol/viewservicelistenerendpoint(_).md",
       "hash": "933f06481e7375a4da64d33d6c89220c2b2ca1c2e49543cafc190c465fd70a08"
     },
+    "https://developer.apple.com/tutorials/data/documentation/professional_video_applications/kceallowssegmentationkey.json": {
+      "etag": "\"6df7-65d55ac09e8db-df\"",
+      "file_path": "documentation/professional_video_applications/kceallowssegmentationkey.md",
+      "hash": "a1acb929ad6d3c106699f4128b7e7b2a3d73cfb77a46a90fcf164a04417fad4f"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/professional_video_applications/kceaudiochannellayoutkey.json": {
+      "etag": "\"6cbb-65d55abf6f078-df\"",
+      "file_path": "documentation/professional_video_applications/kceaudiochannellayoutkey.md",
+      "hash": "44c039f297e55fec295242d43a343dc9b5b6e0e0a737ab6e6b9131c325957874"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/professional_video_applications/kceaudioenabledkey.json": {
+      "etag": "\"6c84-65d55abf8c482-df\"",
+      "file_path": "documentation/professional_video_applications/kceaudioenabledkey.md",
+      "hash": "0ccca239e3f394acd17b32fc69202340df9b7bb523ed149207eb549e6577248b"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/professional_video_applications/kceaudiosamplefloatkey.json": {
+      "etag": "\"6cae-65d55abf5085b-df\"",
+      "file_path": "documentation/professional_video_applications/kceaudiosamplefloatkey.md",
+      "hash": "0daa3e23290cacbf4daab8457bf3347714f995aa45cea187fc617090e28f327f"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/professional_video_applications/kceaudiosampleratekey.json": {
+      "etag": "\"6c9f-65d55abfd2c80-df\"",
+      "file_path": "documentation/professional_video_applications/kceaudiosampleratekey.md",
+      "hash": "28425b49466c6a387d2ec33da8101dd9050a0c2ec9ddf25505b166a95f5ec510"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/professional_video_applications/kceaudiosamplesizekey.json": {
+      "etag": "\"6caa-65d55ac0f8585-df\"",
+      "file_path": "documentation/professional_video_applications/kceaudiosamplesizekey.md",
+      "hash": "e6798f7f3f1ad08881ab96366bc2381e231240e5879f3c113a643b44bf967ff1"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/professional_video_applications/kceautoheightkey.json": {
+      "etag": "\"6e56-65d55abf8c482-df\"",
+      "file_path": "documentation/professional_video_applications/kceautoheightkey.md",
+      "hash": "a4f5c88c2c5e2578581f61b6fd3622083c3b99a0c64f02a1762963f409897bb8"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/professional_video_applications/kceautoratekey.json": {
+      "etag": "\"6e4f-65d55abf6f078-df\"",
+      "file_path": "documentation/professional_video_applications/kceautoratekey.md",
+      "hash": "9dabd7dc3d6039527952c622531430a3b7f7e864a719cccbc8ee44fc248b675f"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/professional_video_applications/kceautowidthkey.json": {
+      "etag": "\"6e49-65d55abf2d897-df\"",
+      "file_path": "documentation/professional_video_applications/kceautowidthkey.md",
+      "hash": "c6da7dd39a63ef984c032f8698dc77d56f08680a9ea6a9aa9ee73d09bef445ec"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/professional_video_applications/kcecolorspacekey.json": {
+      "etag": "\"72a5-65d55abf2d897-df\"",
+      "file_path": "documentation/professional_video_applications/kcecolorspacekey.md",
+      "hash": "cdd6a1820e7af8b4ff9dc25b0a5cdfa3c508d9c52cbf21a39b6f04204a8e64bc"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/professional_video_applications/kcedenominatorkey.json": {
+      "etag": "\"6c89-65d55abf5085b-df\"",
+      "file_path": "documentation/professional_video_applications/kcedenominatorkey.md",
+      "hash": "7ce3ea54ceb01cf44f105841b17f471b37c4269f35081aaa56dce3b5158b154e"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/professional_video_applications/kcefieldorderkey.json": {
+      "etag": "\"6d59-65d55abfb1076-df\"",
+      "file_path": "documentation/professional_video_applications/kcefieldorderkey.md",
+      "hash": "2ec8ac12bf81f0f83085ceb6f31c237bc4edf47884bdc7998bf3860bd98525a2"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/professional_video_applications/kcefileextensionkey.json": {
+      "etag": "\"6c82-65d55ac0f8585-df\"",
+      "file_path": "documentation/professional_video_applications/kcefileextensionkey.md",
+      "hash": "bd78bf5dd1b78dfd4630426b2dba7fafb56df96636cc2666b26148ba7957c587"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/professional_video_applications/kceframeratekey.json": {
+      "etag": "\"786c-65d55abf8c482-df\"",
+      "file_path": "documentation/professional_video_applications/kceframeratekey.md",
+      "hash": "3058493f826be0a988e3aa7662ae4ed1d21c1c6d34d5e0f7bfb174e5e9aa5530"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/professional_video_applications/kceheightkey.json": {
+      "etag": "\"6c42-65d55abff8bb4-df\"",
+      "file_path": "documentation/professional_video_applications/kceheightkey.md",
+      "hash": "472bf2ee7b0be424eb75f8e8fdc0a04c6f876e2e2f72397ade39f243f0965140"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/professional_video_applications/kcemarkerdurationkey.json": {
+      "etag": "\"6cd2-65d55abff8bb4-df\"",
+      "file_path": "documentation/professional_video_applications/kcemarkerdurationkey.md",
+      "hash": "81f0f5ab2e8bc7886df28ac74c89c4a742a02456941a950ed32b279f84f239e6"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/professional_video_applications/kcemarkerframenumberkey.json": {
+      "etag": "\"6d19-65d55ac039bb2-df\"",
+      "file_path": "documentation/professional_video_applications/kcemarkerframenumberkey.md",
+      "hash": "37f6aca8c6dce0491efe010f9e0b4c7341d90e9d9cf83c240d1fbb2689dd147b"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/professional_video_applications/kcemarkerimagefileurlkey.json": {
+      "etag": "\"88a1-65d55abfd2c80-df\"",
+      "file_path": "documentation/professional_video_applications/kcemarkerimagefileurlkey.md",
+      "hash": "3eae35ff06da363f00f5292e489c6f6798338c3bb4ab512571ae698f957df80e"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/professional_video_applications/kcemarkerimagesourceframenumberkey.json": {
+      "etag": "\"6e06-65d55abf8c482-df\"",
+      "file_path": "documentation/professional_video_applications/kcemarkerimagesourceframenumberkey.md",
+      "hash": "01c37563a7d9613b13475f3213cc7392ae5b3c586d1c8670d0dff98696e2ad77"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/professional_video_applications/kcemarkerimagesourcetimekey.json": {
+      "etag": "\"6d65-65d55abf5085b-df\"",
+      "file_path": "documentation/professional_video_applications/kcemarkerimagesourcetimekey.md",
+      "hash": "f45a50e1c02d62836621f779ff91745ee40cf472f6af62532de4d2a82e9aebf3"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/professional_video_applications/kcemarkerkindkey.json": {
+      "etag": "\"7630-65d55abf5085b-df\"",
+      "file_path": "documentation/professional_video_applications/kcemarkerkindkey.md",
+      "hash": "fa9201eb4ae07370bb46aae092f8c16bec87e25b0798932d52dc6acbfb4c0cb7"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/professional_video_applications/kcemarkernamekey.json": {
+      "etag": "\"6c3e-65d55abfd2c80-df\"",
+      "file_path": "documentation/professional_video_applications/kcemarkernamekey.md",
+      "hash": "eb4b6429dcc07d7dea231c1bb3cd6d0d87ddd3dc81e1257cc3727d6459265372"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/professional_video_applications/kcemarkertimekey.json": {
+      "etag": "\"6c62-65d55abf2d897-df\"",
+      "file_path": "documentation/professional_video_applications/kcemarkertimekey.md",
+      "hash": "1ab5bb34152dad2bfaaab5cf2323176e2229126002d4bb3de7c9400ff04cfdec"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/professional_video_applications/kcemarkerurlkey.json": {
+      "etag": "\"6ca9-65d55ac0f8585-df\"",
+      "file_path": "documentation/professional_video_applications/kcemarkerurlkey.md",
+      "hash": "65f30a613f0acec468adeb897327b72181010be86b299824fb981fa0b5100def"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/professional_video_applications/kcenumeratorkey.json": {
+      "etag": "\"6c5b-65d55abff8bb4-df\"",
+      "file_path": "documentation/professional_video_applications/kcenumeratorkey.md",
+      "hash": "12b2e1f54db0f3efc36c1114040d36d8eff20bd4b25500c3bbbe749d2bfe6dc4"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/professional_video_applications/kcepixelaspectkey.json": {
+      "etag": "\"6d6a-65d55abf2d897-df\"",
+      "file_path": "documentation/professional_video_applications/kcepixelaspectkey.md",
+      "hash": "fd408f84c95b7b7e0162ccf74d098765cf91feb287fcc0d89a390bfffacc0faa"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/professional_video_applications/kcevideoenabledkey.json": {
+      "etag": "\"6c84-65d55ac07c110-df\"",
+      "file_path": "documentation/professional_video_applications/kcevideoenabledkey.md",
+      "hash": "00121f4b7092e1bc8e76ae78c51aa77e6e02c6b50a73a31a92e3cf0657cde94d"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/professional_video_applications/kcewidthkey.json": {
+      "etag": "\"6c38-65d55ac0f8585-df\"",
+      "file_path": "documentation/professional_video_applications/kcewidthkey.md",
+      "hash": "4a99aca808b104b3a7bbc1f4eaef6a71a6a7809d4cc70279571b24a048ede775"
+    },
     "https://developer.apple.com/tutorials/data/documentation/professional_video_applications/kfxanalysislocation_cpu.json": {
       "etag": "\"2435-65d55abf8c482-df\"",
       "file_path": "documentation/professional_video_applications/kfxanalysislocation_cpu.md",
@@ -5845,6 +6950,11 @@
       "file_path": "documentation/professional_video_applications/kfxparameterflag_dont_save.md",
       "hash": "b00fa1fc6c0017714316162051045f45bd65c424572272076b4b73341b101f69"
     },
+    "https://developer.apple.com/tutorials/data/documentation/professional_video_applications/kfxparameterflag_expanded.json": {
+      "etag": "\"1006-6590231efaaaf-df\"",
+      "file_path": "documentation/professional_video_applications/kfxparameterflag_expanded.md",
+      "hash": "4edd0fbb3d40afde83338e94a1465a6239d80c725aa8e798ef060d8bfb267d57"
+    },
     "https://developer.apple.com/tutorials/data/documentation/professional_video_applications/kfxparameterflag_hidden.json": {
       "etag": "\"6064-65d55abf6f078-df\"",
       "file_path": "documentation/professional_video_applications/kfxparameterflag_hidden.md",
@@ -5934,6 +7044,16 @@
       "etag": "\"24e8-65d55ac016bfb-df\"",
       "file_path": "documentation/professional_video_applications/kfxpathstyle_linear.md",
       "hash": "2b55bf107d7fe670d3e814b9accc3ec145df4caa723136e419fdaf4084e6702b"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/professional_video_applications/kfxpathstyle_rectangle.json": {
+      "etag": "\"308c-65d55ac0df883-df\"",
+      "file_path": "documentation/professional_video_applications/kfxpathstyle_rectangle.md",
+      "hash": "ff3a1060cef9c0f8550fb5d38e7bd278b238c8171a23425b3a176fdaa7a1848c"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/professional_video_applications/kfxpathstyle_superellipse.json": {
+      "etag": "\"30ab-65d55ac09e8db-df\"",
+      "file_path": "documentation/professional_video_applications/kfxpathstyle_superellipse.md",
+      "hash": "cbfc246502a64a261911f8e16e18436fd0f1d23ecf36913b2f9f7897e986a458"
     },
     "https://developer.apple.com/tutorials/data/documentation/professional_video_applications/kfxpathstyle_xspline.json": {
       "etag": "\"24f3-65d55ac0df883-df\"",
@@ -6060,6 +7180,16 @@
       "file_path": "documentation/professional_video_applications/matrix44data.md",
       "hash": "fae245a47e306418fcbb4f476ccbdf177ccf6c8c6037a3addcdfb3c7e6c08f57"
     },
+    "https://developer.apple.com/tutorials/data/documentation/professional_video_applications/pluginmanagerversionnumber.json": {
+      "etag": "\"2e44-6590231e382cc-df\"",
+      "file_path": "documentation/professional_video_applications/pluginmanagerversionnumber.md",
+      "hash": "611f9fa51d8975f176d5a0dd3ab95c69ada7be338ce3581973e3291e353cca11"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/professional_video_applications/pluginmanagerversionstring.json": {
+      "etag": "\"2e8a-6590231f9090f-df\"",
+      "file_path": "documentation/professional_video_applications/pluginmanagerversionstring.md",
+      "hash": "3665c02dd03231769e318a30120515ce95a8336b62cc262a8af6d6fb6b797735"
+    },
     "https://developer.apple.com/tutorials/data/documentation/professional_video_applications/proapiaccessing.json": {
       "etag": "\"397c-6590231edaeba-df\"",
       "file_path": "documentation/professional_video_applications/proapiaccessing.md",
@@ -6136,8 +7266,8 @@
       "professional-video-applications": {}
     },
     "render": {
-      "version": 1
+      "version": 2
     },
-    "total_pages": 1226
+    "total_pages": 1452
   }
 }

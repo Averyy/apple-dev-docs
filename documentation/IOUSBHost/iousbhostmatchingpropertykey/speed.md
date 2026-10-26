@@ -20,6 +20,11 @@ static let speed: IOUSBHostMatchingPropertyKey
 extern IOUSBHostMatchingPropertyKey IOUSBHostMatchingPropertyKeySpeed;
 ```
 
+## Topics
+
+### Related Documentation
+- [tIOUSBHostConnectionSpeed](../../iokit/tiousbhostconnectionspeed.md)
+
 ## See Also
 
 ### Device Properties

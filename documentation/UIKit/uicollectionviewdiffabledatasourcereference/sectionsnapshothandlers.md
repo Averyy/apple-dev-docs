@@ -56,6 +56,12 @@ dataSource.sectionSnapshotHandlers.snapshotForExpandingParent = {
 }];
 ```
 
+## See Also
+
+### Supporting expanding and collapsing
+- [UICollectionViewDiffableDataSourceSectionSnapshotHandlers](../uicollectionviewdiffabledatasourcesectionsnapshothandlers.md)
+  Handlers for expanding and collapsing items.
+
 
 ---
 

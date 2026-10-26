@@ -80,6 +80,10 @@
 - [var kBluetoothRoleBecomeMaster: Int](./kbluetoothrolebecomemaster.md)
 - [var kBluetoothRoleRemainPeripheral: Int](./kbluetoothroleremainperipheral.md)
 - [var kBluetoothRoleRemainSlave: Int](./kbluetoothroleremainslave.md)
+- [IOBluetoothHostControllerPoweredOffNotification](./iobluetoothhostcontrollerpoweredoffnotification.md)
+- [IOBluetoothHostControllerPoweredOnNotification](./iobluetoothhostcontrollerpoweredonnotification.md)
+- [IOBluetoothL2CAPChannelPublishedNotification](./iobluetoothl2capchannelpublishednotification.md)
+- [IOBluetoothL2CAPChannelTerminatedNotification](./iobluetoothl2capchannelterminatednotification.md)
 
 ## See Also
 

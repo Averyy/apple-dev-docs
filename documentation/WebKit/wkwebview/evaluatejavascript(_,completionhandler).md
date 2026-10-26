@@ -50,6 +50,10 @@ After evaluating the script, this method executes the completion handler block w
   Executes the specified string as an asynchronous JavaScript function.
 - [func callAsyncJavaScript(String, arguments: [String : Any], in: WKFrameInfo?, contentWorld: WKContentWorld) async throws -> Any?](./callasyncjavascript%28_,arguments,in,contentworld%29.md)
   Executes the specified string as an asynchronous JavaScript function.
+- [- evaluateJavaScript:inFrame:inContentWorld:completionHandler:](./evaluatejavascript_inframe_incontentworld_completionhandler_.md)
+  Evaluates the specified JavaScript string in the specified frame and content world.
+- [- callAsyncJavaScript:arguments:inFrame:inContentWorld:completionHandler:](./callasyncjavascript_arguments_inframe_incontentworld_completionhandler_.md)
+  Executes the specified string as an asynchronous JavaScript function.
 
 
 ---

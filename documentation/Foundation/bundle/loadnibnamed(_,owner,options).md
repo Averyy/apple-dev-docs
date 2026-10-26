@@ -46,6 +46,12 @@ If the nib file contains any proxy objects beyond just the File’s Owner proxy 
 ### Loading nib files
 - [func loadNibNamed(NSNib.Name, owner: Any?, topLevelObjects: AutoreleasingUnsafeMutablePointer<NSArray?>?) -> Bool](./loadnibnamed%28_,owner,toplevelobjects%29.md)
   Loads a nib from the bundle with the specified file name and owner.
+- [+ loadNibNamed:owner:](../nsbundle/loadnibnamed_owner_.md)
+  Unarchives the contents of the nib file and links them to a specific owner object.
+- [+ loadNibFile:externalNameTable:withZone:](../nsbundle/loadnibfile_externalnametable_withzone_-c.type.method.md)
+  Unarchives the contents of the nib file and links them to objects in your program.
+- [- loadNibFile:externalNameTable:withZone:](../nsbundle/loadnibfile_externalnametable_withzone_-c.method.md)
+  Unarchives the contents of a nib file located in the receiver’s bundle.
 
 
 ---

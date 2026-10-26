@@ -28,6 +28,10 @@ class MTLLogicalToPhysicalColorAttachmentMap
 
 ### Instance Methods
 - [func reset()](./mtllogicaltophysicalcolorattachmentmap/reset%28%29.md)
+- [- getPhysicalIndexForLogicalIndex:](./mtllogicaltophysicalcolorattachmentmap/getphysicalindexforlogicalindex_.md)
+  Queries the physical color attachment index corresponding to a logical index.
+- [- setPhysicalIndex:forLogicalIndex:](./mtllogicaltophysicalcolorattachmentmap/setphysicalindex_forlogicalindex_.md)
+  Maps a physical color attachment index to a logical index.
 ### Subscripts
 - [subscript(Int) -> Int](./mtllogicaltophysicalcolorattachmentmap/subscript%28_%29.md)
   Maps a physical color attachment index to a logical index.

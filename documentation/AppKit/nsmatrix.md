@@ -134,6 +134,8 @@ The [`NSMatrix`](./nsmatrix.md) class has the notion of a single selected cell, 
   Searches the receiver and returns the last cell matching the specified tag.
 - [var cells: [NSCell]](./nsmatrix/cells.md)
   An array containing the cells of the matrix.
+- [selectedCell](./nsmatrix/selectedcell.md)
+  The most recently selected cell.
 ### Modifying Graphics Attributes
 - [var backgroundColor: NSColor](./nsmatrix/backgroundcolor.md)
   The background color of the matrix (the space between the cells).

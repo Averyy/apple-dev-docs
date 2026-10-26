@@ -156,6 +156,8 @@ If you subclass [`UIControl`](./uicontrol.md) directly, your subclass is respons
 - [func enumerateEventHandlers((UIAction?, (Any?, Selector)?, UIControl.Event, inout Bool) -> Void)](./uicontrol/enumerateeventhandlers%28_%29.md)
 - [UIControl.Event](./uicontrol/event.md)
   Constants describing the types of events possible for controls.
+- [- enumerateEventHandlers:](./uicontrol/enumerateeventhandlers_.md)
+  Iterate over the event handlers installed on this control at the time this method is called. For each call, either actionHandler or action will be non-nil. controlEvents is always non-zero. Setting *stop to YES will terminate the enumeration early. It is legal to manipulate the control’s event handlers within the block.
 ### Triggering actions
 - [func performPrimaryAction()](./uicontrol/performprimaryaction%28%29.md)
   Calls the method associated with the control’s primary action.

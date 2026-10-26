@@ -43,6 +43,11 @@ If you have the contents of a scene file but not the file itself (for example, i
 ### Creating a Scene Source
 - [init?(data: Data, options: [SCNSceneSource.LoadingOption : Any]?)](./init%28data,options%29.md)
   Initializes a scene source for reading the scene graph contained in an `NSData` object.
+### Related Documentation
+- [+ sceneSourceWithURL:options:](./scenesourcewithurl_options_.md)
+  Creates a scene source that reads the scene graph from a specified file.
+- [+ sceneSourceWithData:options:](./scenesourcewithdata_options_.md)
+  Creates a scene source that reads the scene graph contained in an `NSData` object.
 
 
 ---

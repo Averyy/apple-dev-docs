@@ -63,6 +63,12 @@ Writing Tools provide proofreading and rewriting support for the content of text
   A direction on the vertical axis.
 - [struct NSWritingToolsResultOptions](./nswritingtoolsresultoptions.md)
   Constants to specify what type of content to allow in Writing Tools suggestions or rewrites.
+- [NSCursorFrameResizeDirections](./nscursorframeresizedirections.md)
+  The directions in which a rectangular frame can be resized.
+- [NSHorizontalDirections](./nshorizontaldirections.md)
+  The absolute directions on the horizontal axis.
+- [NSVerticalDirections](./nsverticaldirections.md)
+  The directions on the vertical axis.
 
 
 ---

@@ -33,6 +33,12 @@ This method is a convenience constructor for creating a `UIButtonTypeSystem` typ
 - `target`: The object that receives the `action` message.
 - `action`: The action to send to `target` when this item is selected.
 
+## See Also
+
+### Creating system buttons
+- [+ systemButtonWithPrimaryAction:](./systembuttonwithprimaryaction_.md)
+  Creates and returns a system type button, registers the primary action event, and sets the title and image to the action’s title and image.
+
 
 ---
 

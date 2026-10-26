@@ -57,6 +57,8 @@ PHPhotosErrorOperationInterrupted
   An error that indicates the request for an asset resource fails because of a network connection error.
 - [PHPhotosError.Code.notEnoughSpace](./notenoughspace.md)
   An error that indicates there’s not enough space to perform the requested change.
+- [PHPhotosErrorPersistentChangeDetailsUnavailable](./persistentchangedetailsunavailable.md)
+  An error that indicates the change details aren’t available for the persistent change.
 
 
 ---

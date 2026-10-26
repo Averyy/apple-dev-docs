@@ -38,6 +38,11 @@ Initialized [`NSIndexPath`](../nsindexpath.md) object representing a one-node in
 ### Creating and Initializing Index Paths
 - [init(indexes: UnsafePointer<Int>?, length: Int)](./init%28indexes,length%29.md)
   Initializes an index path with the given nodes and length.
+- [+ indexPathWithIndexes:length:](./indexpathwithindexes_length_.md)
+  Creates an index path with one or more nodes.
+### Related Documentation
+- [+ indexPathWithIndex:](./indexpathwithindex_.md)
+  Creates a one-node index path.
 
 
 ---

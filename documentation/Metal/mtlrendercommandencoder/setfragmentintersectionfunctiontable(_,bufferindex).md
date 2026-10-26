@@ -39,6 +39,8 @@ By default, the intersection function table at each index is `nil`.
 ### Assigning intersection function tables
 - [func setFragmentIntersectionFunctionTables([(any MTLIntersectionFunctionTable)?], bufferRange: Range<Int>)](./setfragmentintersectionfunctiontables%28_,bufferrange%29.md)
   Assigns multiple intersection function tables to a range of entries in the fragment shader argument table.
+- [- setFragmentIntersectionFunctionTables:withBufferRange:](./setfragmentintersectionfunctiontables_withbufferrange_.md)
+  Assigns multiple intersection function tables to a range of entries in the fragment shader argument table.
 
 
 ---

@@ -63,6 +63,8 @@ extern OSStatus CMSwapHostEndianImageDescriptionToBig(uint8_t *imageDescriptionD
   Creates a video format description from a big-endian image description structure.
 - [func CMSwapBigEndianImageDescriptionToHost(UnsafeMutablePointer<UInt8>, Int) -> OSStatus](./cmswapbigendianimagedescriptiontohost%28_,_%29.md)
   Converts an image description data structure from big-endian to host-endian, in place.
+- [CMVideoFormatDescriptionCopyTagCollectionArray](./cmvideoformatdescriptioncopytagcollectionarray.md)
+  Copies the multi-image encoding properties as an array of CMTagCollections.
 
 
 ---

@@ -40,6 +40,10 @@ The returned text provider uses the default calendar information for the current
 ### Creating the Text Provider
 - [convenience init(start: Date, end: Date)](./init%28start,end%29.md)
   Creates and returns a text provider with the specified start and end dates.
+- [- initWithStartDate:endDate:](./initwithstartdate_enddate_.md)
+  Creates and returns a text provider with the specified start and end dates.
+- [- initWithStartDate:endDate:timeZone:](./initwithstartdate_enddate_timezone_.md)
+  Creates and returns a text provider with the specified dates and time zone information.
 
 
 ---

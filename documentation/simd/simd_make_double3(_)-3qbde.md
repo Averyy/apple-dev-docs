@@ -23,6 +23,8 @@ static simd_double3 simd_make_double3(double other);
   Returns a new vector from the specified scalar values.
 - [func simd_make_double3_undef(Double) -> simd_double3](./simd_make_double3_undef%28_%29-38cg2.md)
   Returns a new vector with the first element set to a scalar value, and other elements undefined.
+- [vector3](./vector3-kp2l.md)
+  Returns a new vector from the specified scalar values.
 
 
 ---

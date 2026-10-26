@@ -27,6 +27,7 @@ init?(coder: NSCoder)
 - [init(frame: NSRect)](./init%28frame%29.md)
   Initializes a text view.
 - [convenience init(usingTextLayoutManager: Bool)](./init%28usingtextlayoutmanager%29.md)
+- [+ textViewUsingTextLayoutManager:](./textviewusingtextlayoutmanager_.md)
 
 
 ---

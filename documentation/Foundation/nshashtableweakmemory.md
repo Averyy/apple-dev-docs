@@ -34,6 +34,8 @@ static const NSPointerFunctionsOptions NSHashTableWeakMemory;
   Equal to [`copyIn`](./nspointerfunctions/options/copyin.md).
 - [var NSHashTableObjectPointerPersonality: NSPointerFunctions.Options](./nshashtableobjectpointerpersonality.md)
   Equal to [`objectPointerPersonality`](./nspointerfunctions/options/objectpointerpersonality.md).
+- [NSHashTableZeroingWeakMemory](./nshashtablezeroingweakmemory.md)
+  This option has been deprecated. Instead use the `NSHashTableWeakMemory` option. Equal to [`NSPointerFunctionsZeroingWeakMemory`](./nspointerfunctionsoptions/nspointerfunctionszeroingweakmemory.md).
 
 
 ---

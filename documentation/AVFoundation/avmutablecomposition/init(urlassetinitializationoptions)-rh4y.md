@@ -29,6 +29,12 @@ convenience init(urlAssetInitializationOptions URLAssetInitializationOptions: [S
 
 - `URLAssetInitializationOptions`: The initialization options to use to create the composition.
 
+## See Also
+
+### Creating a composition
+- [+ composition](./composition.md)
+  Returns a new mutable composition.
+
 
 ---
 

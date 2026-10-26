@@ -30,6 +30,12 @@ init(items: [AVPlayerItem])
 
 - `items`: The array of player items with which to populate the queue.
 
+## See Also
+
+### Creating a queue player
+- [+ queuePlayerWithItems:](./queueplayerwithitems_.md)
+  Returns an object that plays a queue of items.
+
 
 ---
 

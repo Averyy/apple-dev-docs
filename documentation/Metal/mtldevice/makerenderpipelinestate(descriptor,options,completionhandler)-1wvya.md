@@ -52,6 +52,8 @@ Use the graphics-rendering pipeline state to configure a render pass by calling 
 ### Creating render pipeline states with mesh shaders
 - [func makeRenderPipelineState(descriptor: MTLMeshRenderPipelineDescriptor, options: MTLPipelineOption) throws -> (any MTLRenderPipelineState, MTLRenderPipelineReflection?)](./makerenderpipelinestate%28descriptor,options%29-yrak.md)
   Synchronously creates a mesh render pipeline state and reflection information in a tuple.
+- [- newRenderPipelineStateWithMeshDescriptor:options:reflection:error:](./newrenderpipelinestatewithmeshdescriptor_options_reflection_error_.md)
+  Synchronously creates a mesh render pipeline state and reflection information.
 
 
 ---

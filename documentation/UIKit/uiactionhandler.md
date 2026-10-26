@@ -38,6 +38,10 @@ typedef void (^)(__kindof UIAction *) UIActionHandler;
   Creates an action for capturing text using the device’s camera.
 - [UIAction.Identifier](./uiaction/identifier-swift.struct.md)
   A type that represents an action identifier.
+- [+ actionWithTitle:image:identifier:handler:](./uiaction/actionwithtitle_image_identifier_handler_.md)
+  Creates an action with the specified title, image, identifier, and handler.
+- [+ actionWithHandler:](./uiaction/actionwithhandler_.md)
+  Creates an action with the specified handler.
 
 
 ---

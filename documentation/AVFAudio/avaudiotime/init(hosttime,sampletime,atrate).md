@@ -46,6 +46,14 @@ A new [`AVAudioTime`](../avaudiotime.md) instance.
   Creates an audio time object with the specified timestamp and sample rate.
 - [func extrapolateTime(fromAnchor: AVAudioTime) -> AVAudioTime?](./extrapolatetime%28fromanchor%29.md)
   Creates an audio time object by converting between host time and sample time.
+- [+ timeWithAudioTimeStamp:sampleRate:](./timewithaudiotimestamp_samplerate_.md)
+  Creates an audio time object with the specified timestamp and sample rate.
+- [+ timeWithHostTime:sampleTime:atRate:](./timewithhosttime_sampletime_atrate_.md)
+  Creates an audio time object with the specified host time, sample time, and sample rate.
+- [+ timeWithSampleTime:atRate:](./timewithsampletime_atrate_.md)
+  Creates an audio time object with the specified sample time and sample rate.
+- [+ timeWithHostTime:](./timewithhosttime_.md)
+  Creates an audio time object with the specified host time.
 
 
 ---

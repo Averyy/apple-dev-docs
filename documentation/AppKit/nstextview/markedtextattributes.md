@@ -49,6 +49,9 @@ Text color, background color, and underline are the only supported attributes fo
 - [func characterIndexForInsertion(at: NSPoint) -> Int](./characterindexforinsertion%28at%29.md)
   Returns a character index appropriate for placing a zero-length selection for an insertion point associated with the mouse at the given point.
 - [func updateCandidates()](./updatecandidates%28%29.md)
+### Related Documentation
+- [- markedRange](../nstextinput/markedrange.md)
+  Returns the range of the marked text.
 
 
 ---

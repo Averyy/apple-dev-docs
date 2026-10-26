@@ -59,6 +59,9 @@ Use this descriptor with the following [`MPSGraph`](./mpsgraph.md) methods:
   A parameter that defines time direction of the input sequence.
 - [var training: Bool](./mpsgraphlstmdescriptor/training.md)
   A parameter that enables the LSTM layer to support training.
+### Type Methods
+- [+ descriptor](./mpsgraphlstmdescriptor/descriptor.md)
+  Creates an LSTM descriptor with default values.
 
 ## Relationships
 

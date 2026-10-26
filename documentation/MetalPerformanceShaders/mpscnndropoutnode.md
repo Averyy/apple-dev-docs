@@ -34,6 +34,10 @@ class MPSCNNDropoutNode
 - [var keepProbability: Float](./mpscnndropoutnode/keepprobability.md)
 - [var maskStrideInPixels: MTLSize](./mpscnndropoutnode/maskstrideinpixels.md)
 - [var seed: Int](./mpscnndropoutnode/seed.md)
+### Type Methods
+- [+ nodeWithSource:](./mpscnndropoutnode/nodewithsource_.md)
+- [+ nodeWithSource:keepProbability:](./mpscnndropoutnode/nodewithsource_keepprobability_.md)
+- [+ nodeWithSource:keepProbability:seed:maskStrideInPixels:](./mpscnndropoutnode/nodewithsource_keepprobability_seed_maskstrideinpixels_.md)
 
 ## Relationships
 

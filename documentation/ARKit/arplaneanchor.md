@@ -56,6 +56,14 @@ The width and length of a plane (the [`planeExtent`](./arplaneanchor/planeextent
   A general characterization of what kind of real-world surface the plane anchor represents.
 - [ARPlaneAnchor.Classification](./arplaneanchor/classification-swift.enum.md)
   Possible characterizations of real-world surfaces represented by plane anchors.
+- [classification](./arplaneanchor/classification-2hi2p.md)
+  A general characterization of what kind of real-world surface the plane anchor represents.
+- [ARPlaneClassification](./arplaneclassification.md)
+  Possible characterizations of real-world surfaces represented by plane anchors.
+- [classificationStatus](./arplaneanchor/classificationstatus.md)
+  The current state of ARKit’s process for classifying the plane anchor.
+- [ARPlaneClassificationStatus](./arplaneclassificationstatus.md)
+  Possible states of ARKit’s process for classifying plane anchors.
 
 ## Relationships
 

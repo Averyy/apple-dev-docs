@@ -49,6 +49,13 @@ If you want to play an asset more than once within a queue of items, you must cr
 ### Accessing the Item’s Status
 - [enum WKAudioFilePlayerItemStatus](./wkaudiofileplayeritemstatus.md)
   Constants that represent the status of a player item.
+### Receiving Notifications
+- [WKAudioFilePlayerItemTimeJumpedNotification](./wkaudiofileplayeritemtimejumpednotification.md)
+  A notification that the item’s current time has changed discontinuously.
+- [WKAudioFilePlayerItemDidPlayToEndTimeNotification](./wkaudiofileplayeritemdidplaytoendtimenotification.md)
+  A notification that the item has played successfully to its end.
+- [WKAudioFilePlayerItemFailedToPlayToEndTimeNotification](./wkaudiofileplayeritemfailedtoplaytoendtimenotification.md)
+  A notification that the item failed to play to its end.
 
 ## Relationships
 

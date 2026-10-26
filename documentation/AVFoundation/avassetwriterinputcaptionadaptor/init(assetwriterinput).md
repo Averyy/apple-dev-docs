@@ -28,6 +28,12 @@ init(assetWriterInput input: AVAssetWriterInput)
 
 - `input`: The asset writer input.
 
+## See Also
+
+### Creating a caption adaptor
+- [+ assetWriterInputCaptionAdaptorWithAssetWriterInput:](./assetwriterinputcaptionadaptorwithassetwriterinput_.md)
+  A class method that creates a new caption adaptor that writes to the specified asset writer input.
+
 
 ---
 

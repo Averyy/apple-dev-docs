@@ -39,6 +39,7 @@ The constant `keyAESearchText` is available starting in OS X v10.4.
 
 ### Constants
 - [var keyAESearchText: AEKeyword](../../coreservices/keyaesearchtext.md)
+- [keyAESearchText](../../coreservices/api-1556378-anonymous/keyaesearchtext.md)
 
 
 ---

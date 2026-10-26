@@ -36,12 +36,17 @@ All of the bits in the [`SecCSFlags`](./seccsflags.md) enumeration are reserved 
 - [static var noNetworkAccess: SecCSFlags](./seccsflags/nonetworkaccess.md)
 - [static var reportProgress: SecCSFlags](./seccsflags/reportprogress.md)
 - [static var quickCheck: SecCSFlags](./seccsflags/quickcheck.md)
+- [kSecCSDefaultFlags](./seccsflags/kseccsdefaultflags.md)
+  No flags (use the default behavior).
 ### Type Properties
 - [static var applyEmbeddedPolicy: SecCSFlags](./seccsflags/applyembeddedpolicy.md)
 - [static var matchGuestRequirementInKernel: SecCSFlags](./seccsflags/matchguestrequirementinkernel.md)
 - [static var stripDisallowedXattrs: SecCSFlags](./seccsflags/stripdisallowedxattrs.md)
 - [static var useClassicalSignature: SecCSFlags](./seccsflags/useclassicalsignature.md)
 - [static var usePostQuantumSignature: SecCSFlags](./seccsflags/usepostquantumsignature.md)
+### Enumeration Cases
+- [kSecCSUseSignature1](./seccsflags/kseccsusesignature1.md)
+- [kSecCSUseSignature2](./seccsflags/kseccsusesignature2.md)
 
 ## Relationships
 

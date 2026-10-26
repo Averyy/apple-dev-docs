@@ -81,6 +81,51 @@ typedef struct { ... } simd_float3x2;
 - [static func - (simd_float3x2) -> simd_float3x2](./simd_float3x2/minus%28_%29.md)
 - [static func - (simd_float3x2, simd_float3x2) -> simd_float3x2](./simd_float3x2/minus%28_,_%29.md)
 - [static func -= (inout simd_float3x2, simd_float3x2)](./simd_float3x2/minuseq%28_,_%29.md)
+### Math Functions
+- [simd_add](./simd_add-2n7i.md)
+  Returns the sum of two matrices.
+- [simd_sub](./simd_sub-5gv4w.md)
+  Returns the difference of two matrices.
+- [matrix_scale](./matrix_scale-27p9m.md)
+  Returns the product of a scalar value and a matrix.
+### Matrix-Scalar Multiplication Functions
+- [simd_mul](./simd_mul-63kuc.md)
+  Returns the product of a scalar value and a 3 x 2 matrix.
+### Matrix-Vector Multiplication Functions
+- [matrix_multiply](./matrix_multiply-1e54g.md)
+  Returns the product of a two-element vector and a 3 x 2 matrix.
+- [simd_mul](./simd_mul-6vmls.md)
+  Returns the product of a four-element vector and a 2 x 4 matrix.
+- [matrix_multiply](./matrix_multiply-3bktl.md)
+  Returns the product of a 3 x 2 matrix and a three-element vector.
+- [simd_mul](./simd_mul-3kx08.md)
+  Returns the product of a 3 x 2 matrix and a three-element vector.
+### Matrix-Matrix Multiplication Functions
+- [simd_mul](./simd_mul-5coc0.md)
+  Returns the product of a 2 x 2 matrix and a 3 x 2 matrix.
+- [matrix_multiply](./matrix_multiply-2syft.md)
+  Returns the product of a 2 x 2 matrix and a 3 x 2 matrix.
+- [simd_mul](./simd_mul-9m23z.md)
+  Returns the product of a 3 x 2 matrix and a 3 x 3 matrix.
+- [matrix_multiply](./matrix_multiply-2cyog.md)
+  Returns the product of a 3 x 2 matrix and a 3 x 3 matrix.
+- [simd_mul](./simd_mul-39sak.md)
+  Returns the product of a 4 x 2 matrix and a 3 x 4 matrix.
+- [matrix_multiply](./matrix_multiply-4o3v4.md)
+  Returns the product of a 4 x 2 matrix and a 3 x 4 matrix.
+### Equality Functions
+- [simd_equal](./simd_equal-6hbvw.md)
+  Returns true if every element in a matrix is exactly equal to the corresponding element in a second matrix.
+- [simd_almost_equal_elements](./simd_almost_equal_elements-2osqw.md)
+  Returns true if every element in a matrix is within a specified tolerance to the corresponding element in a second matrix.
+- [simd_almost_equal_elements_relative](./simd_almost_equal_elements_relative-80z14.md)
+  Returns true if every element in a matrix is within a specified single-precision relative tolerance to the corresponding element in a second matrix.
+### Linear Combination Function
+- [simd_linear_combination](./simd_linear_combination-7mkq9.md)
+  Returns the linear combination of two scalar values and two matrices.
+### Transpose Function
+- [simd_transpose](./simd_transpose-10k3m.md)
+  Returns the transpose of a matrix.
 
 ## Relationships
 

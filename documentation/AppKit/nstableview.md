@@ -314,6 +314,8 @@ Use the [`isEnabled`](./nscontrol/isenabled.md) property to enable or disable th
 ### Deprecated
 - [Deprecated symbols](./nstableview-deprecated-symbols.md)
   Review symbols that are no longer in active development, and their recommended replacements.
+- [- tableView:writeRows:toPasteboard:](../ObjectiveC/nsobject-swift.class/tableview_writerows_topasteboard_.md)
+  Writes the specified rows to the specified pasteboard.
 ### Structures
 - [NSTableView.ColumnDidMoveMessage](./nstableview/columndidmovemessage.md)
 - [NSTableView.ColumnDidResizeMessage](./nstableview/columndidresizemessage.md)

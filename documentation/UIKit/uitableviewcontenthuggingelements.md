@@ -28,6 +28,8 @@ enum UITableViewContentHuggingElements : NSInteger;
 ### Specifying content-hugging elements
 - [static var sectionHeaders: UITableViewContentHuggingElements](./uitableviewcontenthuggingelements/sectionheaders.md)
   A mode where section headers in the table view tightly hug their content.
+- [UITableViewContentHuggingElementsNone](./uitableviewcontenthuggingelements/uitableviewcontenthuggingelementsnone.md)
+  A mode where none of the items in the table view tightly hug their content.
 ### Creating a content-hugging elements structure
 - [init(rawValue: Int)](./uitableviewcontenthuggingelements/init%28rawvalue%29.md)
   Creates a content-hugging elements structure.

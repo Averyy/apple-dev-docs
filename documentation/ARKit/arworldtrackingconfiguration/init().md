@@ -29,6 +29,8 @@ To use the configuration in an AR experience, pass it as an argument to your app
 ### Creating a Configuration
 - [var initialWorldMap: ARWorldMap?](./initialworldmap.md)
   The state from a previous AR session to attempt to resume with this session configuration.
+- [+ new](./new.md)
+  Creates a new world-tracking configuration.
 
 
 ---

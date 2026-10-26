@@ -12,7 +12,7 @@ A Photos asset for the image.
 - Mac Catalyst 13.1+ - Deprecated in 27.2
 - visionOS 1.0+ - Deprecated in 27.2
 
-> **Deprecated**: Use [`PHPickerViewController`](https://developer.apple.com/documentation/photosui/phpickerviewcontroller) instead.
+> **Deprecated**: Use [`PHPickerViewController`](../../../PhotosUI/phpickerviewcontroller.md) instead.
 
 ## Declaration
 
@@ -26,7 +26,7 @@ extern UIImagePickerControllerInfoKey const UIImagePickerControllerPHAsset;
 
 #### Discussion
 
-The value of this key is a [`PHAsset`](https://developer.apple.com/documentation/photos/phasset) object.
+The value of this key is a [`PHAsset`](../../../Photos/phasset.md) object.
 
 ## See Also
 

@@ -44,6 +44,10 @@ The Automator framework supports the development of actions for the Automator ap
 ### Deprecated
 - [class AMAppleScriptAction](./amapplescriptaction.md)
   An object that represents Automator actions whose runtime behavior is driven by an AppleScript script.
+### Macros
+- [AM_RETURNS_NONRETAINED_FOR_ANALYZER](./am_returns_nonretained_for_analyzer.md)
+- [AM_RETURNS_RETAINED_FOR_ANALYZER](./am_returns_retained_for_analyzer.md)
+- [AM_UNUSED_FOR_ANALYZER](./am_unused_for_analyzer.md)
 
 
 ---

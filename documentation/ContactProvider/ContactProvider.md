@@ -50,6 +50,11 @@ A person using the device can see providers in the Settings app and selectively 
 ### Supporting types
 - [enum ContactProviderError](./contactprovidererror.md)
   Errors thrown by the Contact Provider framework.
+### Variables
+- [ContactProviderVersionNumber](./contactproviderversionnumber.md)
+  Project version number for ContactProvider.
+- [ContactProviderVersionString](./contactproviderversionstring.md)
+  Project version string for ContactProvider.
 
 
 ---

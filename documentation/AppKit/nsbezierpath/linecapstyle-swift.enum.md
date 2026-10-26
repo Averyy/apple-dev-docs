@@ -30,6 +30,13 @@ enum NSLineCapStyle : NSUInteger;
   Specifies a square line cap style for endpoints for an open path when stroked.
 ### Initializers
 - [init?(rawValue: UInt)](./linecapstyle-swift.enum/init%28rawvalue%29.md)
+### Deprecated
+- [NSButtLineCapStyle](../nsbuttlinecapstyle.md)
+  Specifies a butt line cap style for endpoints for an open path when stroked.
+- [NSRoundLineCapStyle](../nsroundlinecapstyle.md)
+  Specifies a round line cap style for endpoints for an open path when stroked.
+- [NSSquareLineCapStyle](../nssquarelinecapstyle.md)
+  Specifies a square line cap style for endpoints for an open path when stroked.
 
 ## Relationships
 

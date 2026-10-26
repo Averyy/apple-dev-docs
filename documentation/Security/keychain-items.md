@@ -81,6 +81,10 @@ When you want to store a secret such as a password or cryptographic key, you pac
   The import/export parameter structure version.
 - [struct SecKeyImportExportParameters](./seckeyimportexportparameters.md)
   The legacy import/export parameter structure.
+- [SecKeychainItemImport](./seckeychainitemimport.md)
+  Imports one or more certificates, keys, or identities and adds them to a keychain.
+- [SecKeychainItemExport](./seckeychainitemexport.md)
+  Exports one or more certificates, keys, or identities.
 ### Legacy keychain item creation
 - [func SecKeychainItemCreateFromContent(SecItemClass, UnsafeMutablePointer<SecKeychainAttributeList>, UInt32, UnsafeRawPointer?, SecKeychain?, SecAccess?, UnsafeMutablePointer<SecKeychainItem?>?) -> OSStatus](./seckeychainitemcreatefromcontent%28_,_,_,_,_,_,_%29.md)
   Creates a new keychain item from the supplied parameters.

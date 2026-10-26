@@ -37,7 +37,7 @@ For information about how to fully specify example phrases and custom terms, see
 
 ##### Register User-Specific Vocabulary
 
-You register user-specific vocabulary terms at runtime by calling the [`setVocabularyStrings(_:of:)`](https://developer.apple.com/documentation/intents/invocabulary/setvocabularystrings(_:of:)) method of an [`INVocabulary`](https://developer.apple.com/documentation/intents/invocabulary) object. Unlike the global terms, which you declare in your app bundle, you declare user-specific terms at runtime from your iOS app. The terms you declare must belong to one of the following categories:
+You register user-specific vocabulary terms at runtime by calling the [`setVocabularyStrings(_:of:)`](../Intents/invocabulary/setvocabularystrings%28_,of%29.md) method of an [`INVocabulary`](../Intents/invocabulary.md) object. Unlike the global terms, which you declare in your app bundle, you declare user-specific terms at runtime from your iOS app. The terms you declare must belong to one of the following categories:
 
 - Audiobook titles
 - Audiobook author names
@@ -58,7 +58,7 @@ You register user-specific vocabulary terms at runtime by calling the [`setVocab
 
 When selecting the vocabulary to register, choose terms that could be misunderstood by someone not familiar with your app. For example, include terms whose literal meanings differ from your app’s usage of those terms. Don’t register terms that are easily understood, such as “My Photo Album” or “My Workout”.
 
-Each call to the [`setVocabularyStrings(_:of:)`](https://developer.apple.com/documentation/intents/invocabulary/setvocabularystrings(_:of:)) method replaces any previously registered terms of the same type. As a result, each call to that method must include all of the terms that you want to associate with the user. In addition, you must arrange terms based on priority, placing the most important terms first in the list you provide.
+Each call to the [`setVocabularyStrings(_:of:)`](../Intents/invocabulary/setvocabularystrings%28_,of%29.md) method replaces any previously registered terms of the same type. As a result, each call to that method must include all of the terms that you want to associate with the user. In addition, you must arrange terms based on priority, placing the most important terms first in the list you provide.
 
 The listing below shows an example that registers a set of custom workout names for the user. The example assumes that the app provides a custom `sortedWorkoutNames` method that sorts the workout names based on how recently the user used them. You execute this code from your iOS app, and not from your Intents app extension.
 

@@ -44,6 +44,8 @@ You typically use a [`SKRange`](./skrange.md) to clamp a value so that it is wit
   Creates and initializes a new range object that specifies a constant value.
 - [init(lowerLimit: CGFloat, upperLimit: CGFloat)](./skrange/init%28lowerlimit,upperlimit%29.md)
   Initializes a new range object.
+- [+ rangeWithLowerLimit:upperLimit:](./skrange/rangewithlowerlimit_upperlimit_.md)
+  Creates and initializes a new range object.
 ### Inspecting a Range Object’s Limits
 - [var lowerLimit: CGFloat](./skrange/lowerlimit.md)
   The minimum possible value.

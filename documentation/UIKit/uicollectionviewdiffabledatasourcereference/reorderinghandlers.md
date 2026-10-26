@@ -75,6 +75,16 @@ dataSource.reorderingHandlers.didReorder = { [weak self] transaction in
 }];
 ```
 
+## See Also
+
+### Supporting reordering
+- [UICollectionViewDiffableDataSourceReorderingHandlers](../uicollectionviewdiffabledatasourcereorderinghandlers.md)
+  Handlers for reordering items.
+- [NSDiffableDataSourceTransaction](../nsdiffabledatasourcetransaction-c.class.md)
+  A transaction that describes the changes after reordering the items in the view.
+- [NSDiffableDataSourceSectionTransaction](../nsdiffabledatasourcesectiontransaction-c.class.md)
+  A transaction that describes the changes after reordering the items in a section.
+
 
 ---
 

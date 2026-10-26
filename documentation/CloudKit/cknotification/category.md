@@ -61,6 +61,8 @@ Categories allow you to present custom actions to the user on your push notifica
   The key that identifies the localized string for the notification’s subtitle.
 - [var subtitleLocalizationArgs: [String]?](./subtitlelocalizationargs.md)
   The fields for building a notification’s subtitle.
+- [subscriptionID](./subscriptionid-90zhj.md)
+  The ID of the subscription that triggers the notification.
 
 
 ---

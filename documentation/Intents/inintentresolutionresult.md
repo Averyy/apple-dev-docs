@@ -46,6 +46,10 @@ When creating resolution result objects, always strive toward successful resolut
   Creates an object whose resolution indicates that you don’t need the value of the parameter.
 - [class func unsupported() -> Self](./inintentresolutionresult/unsupported%28%29.md)
   Creates an object whose resolution indicates that your app doesn’t support the specified value.
+- [+ confirmationRequiredWithItemToConfirm:forReason:](./inintentresolutionresult/confirmationrequiredwithitemtoconfirm_forreason_.md)
+  Creates an object whose resolution indicates that your app requires confirmation of the specified value.
+- [+ unsupportedWithReason:](./inintentresolutionresult/unsupportedwithreason_.md)
+  Creates an object whose resolution indicates that your app doesn’t support the specified value.
 
 ## Relationships
 

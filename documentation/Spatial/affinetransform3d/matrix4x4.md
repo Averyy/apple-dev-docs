@@ -38,6 +38,10 @@ static simd_double4x4 SPAffineTransform3DGet4x4Matrix(SPAffineTransform3D transf
   The affine transform’s underlying matrix.
 - [var matrix3x3: simd_double3x3](./matrix3x3.md)
   The first three columns of an affine transform’s underlying matrix.
+- [SPAffineTransform3DIsUniformOverDimensions](../spaffinetransform3disuniformoverdimensions.md)
+  Returns a Boolean value that indicates whether the transform scales equally over the specified dimensions.
+- [SPAffineTransform3DIsValid](../spaffinetransform3disvalid.md)
+  A Boolean value that indicates whether the transform is a valid transform.
 
 
 ---

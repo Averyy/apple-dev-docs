@@ -35,6 +35,8 @@ func setTexture(_ texture: (any MTLTexture)?, index: Int)
 ### Encoding textures
 - [func setTextures([(any MTLTexture)?], range: Range<Int>)](./settextures%28_,range%29.md)
   Encodes references to an array of textures into the argument buffer.
+- [- setTextures:withRange:](./settextures_withrange_.md)
+  Encodes references to an array of textures into the argument buffer.
 
 
 ---

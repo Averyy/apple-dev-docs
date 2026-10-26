@@ -63,9 +63,17 @@ This NSWindowController subclass will bring up a generic Bluetooth search and SD
   Sets the search attributes that control the panel’s search/inquiry behavior.
 - [func setTitle(String!)](./iobluetoothservicebrowsercontroller/settitle%28_%29.md)
   Sets the title of the panel when not run as a sheet.
+- [- discover:](./iobluetoothservicebrowsercontroller/discover_.md)
+  Invoke an already created window controller to display, and run the modal dialog.
+- [- discoverAsSheetForWindow:withRecord:](./iobluetoothservicebrowsercontroller/discoverassheetforwindow_withrecord_.md)
+  Invoke an already created window controller to display, and run the modal dialog.
+- [- discoverWithDeviceAttributes:serviceList:serviceRecord:](./iobluetoothservicebrowsercontroller/discoverwithdeviceattributes_servicelist_servicerecord_.md)
+  Invoke an already created window controller to display, and run the modal dialog.
 ### Type Methods
 - [class func withServiceBrowserControllerRef(IOBluetoothServiceBrowserControllerRef!) -> IOBluetoothServiceBrowserController!](./iobluetoothservicebrowsercontroller/withservicebrowsercontrollerref%28_%29.md)
   Method call to convert an IOBluetoothServiceBrowserControllerRef into an IOBluetoothServiceBrowserController *.
+- [+ browseDevices:options:](./iobluetoothservicebrowsercontroller/browsedevices_options_.md)
+- [+ browseDevicesAsSheetForWindow:options:window:](./iobluetoothservicebrowsercontroller/browsedevicesassheetforwindow_options_window_.md)
 
 ## Relationships
 

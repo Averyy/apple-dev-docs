@@ -1,0 +1,32 @@
+# matrix_multiply
+
+**Framework**: simd  
+**Kind**: func  
+**Role**: Function
+
+Returns the product of a 3 x 4 matrix and a 4 x 3 matrix.
+
+## Declaration
+
+```c
+static simd_double4x4 matrix_multiply(simd_double3x4 __x, simd_double4x3 __y);
+```
+
+## See Also
+
+### Matrix-Matrix Multiplication Functions
+- [simd_mul](./simd_mul-tl8p.md)
+  Returns the product of a 2 x 4 matrix and a 4 x 2 matrix.
+- [matrix_multiply](./matrix_multiply-1tn9l.md)
+  Returns the product of a 2 x 4 matrix and a 4 x 2 matrix.
+- [simd_mul](./simd_mul-3whrl.md)
+  Returns the product of a 3 x 4 matrix and a 4 x 3 matrix.
+- [simd_mul](./simd_mul-2qe27.md)
+  Returns the product of a 4 x 4 matrix and a 4 x 4 matrix.
+- [matrix_multiply](./matrix_multiply-1f372.md)
+  Returns the product of a 4 x 4 matrix and a 4 x 4 matrix.
+
+
+---
+
+*[View on Apple Developer](https://developer.apple.com/documentation/simd/matrix_multiply-7esn4)*

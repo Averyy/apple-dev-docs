@@ -43,6 +43,7 @@ typedef UInt32 DADiskOptions;
   Options for DADiskUnmount().
 - [typealias DAReturn](./dareturn.md)
   A return code.
+- [DAApprovalSessionRef](./daapprovalsessionref.md)
 
 
 ---

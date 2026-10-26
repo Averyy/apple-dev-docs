@@ -26,6 +26,8 @@ class func orthogonalLayoutSectionForMediaItems() -> NSCollectionLayoutSection
   Creates a section containing the specified group.
 - [static func list(using: UICollectionLayoutListConfiguration, layoutEnvironment: any NSCollectionLayoutEnvironment) -> NSCollectionLayoutSection](./list%28using,layoutenvironment%29.md)
   Creates a list section with the specified list configuration and layout environment.
+- [+ sectionWithListConfiguration:layoutEnvironment:](./sectionwithlistconfiguration_layoutenvironment_.md)
+  Creates a list section with the specified list configuration and layout environment.
 
 
 ---

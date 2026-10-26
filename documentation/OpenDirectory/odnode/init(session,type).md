@@ -40,6 +40,10 @@ The created node object.
 ### Creating and Initializing a Node
 - [init(session: ODSession!, name: String!) throws](./init%28session,name%29.md)
   Creates a node object with a specified session and name.
+- [+ nodeWithSession:name:error:](./nodewithsession_name_error_.md)
+  Returns an autoreleased node object with a specified session and name.
+- [+ nodeWithSession:type:error:](./nodewithsession_type_error_.md)
+  Returns an autoreleased node object with a specified session and type.
 
 
 ---

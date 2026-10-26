@@ -57,6 +57,13 @@ Core Image passes the [`CIContext`](../cicontext.md) object as the `context` par
   Creates an OpenGL-based Core Image context using a GPU that is not currently driving a display, with the specified options.
 - [func draw(CIImage, at: CGPoint, from: CGRect)](./draw%28_,at,from%29.md)
   Renders a region of an image to a point in the context destination.
+- [+ contextWithCGLContext:pixelFormat:options:](./contextwithcglcontext_pixelformat_options_.md)
+  Creates a Core Image context from a CGL context, using the specified options and pixel format object.
+### Related Documentation
+- [+ imageWithCGLayer:](../ciimage/imagewithcglayer_.md)
+  Creates and returns an image object from the contents supplied by a `CGLayer` object.
+- [+ imageWithCGLayer:options:](../ciimage/imagewithcglayer_options_.md)
+  Creates and returns an image object  from the contents supplied by a `CGLayer` object, using the  specified options.
 
 
 ---

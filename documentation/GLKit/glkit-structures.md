@@ -7,6 +7,7 @@
 
 ### Structures
 - [struct GLKTextureLoaderError](./glktextureloadererror-swift.struct.md)
+- [GLKVertexAttributeParameters](./glkvertexattributeparameters.md)
 
 ## See Also
 

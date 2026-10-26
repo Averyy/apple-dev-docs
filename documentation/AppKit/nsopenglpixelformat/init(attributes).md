@@ -90,6 +90,8 @@ if(pixFmt == nil) {
 ### Creating an OpenGL Pixel Format
 - [init?(cglPixelFormatObj: CGLPixelFormatObj)](./init%28cglpixelformatobj%29-2zqw4.md)
   Returns an OpenGL pixel format object initialized with using an existing CGL pixel format object.
+- [- initWithData:](./initwithdata_.md)
+  Returns an OpenGL pixel format object initialized with specified pixel format attribute data.
 
 
 ---

@@ -16,6 +16,8 @@ Convert vectors that contain power or amplitude data to decibels.
   Converts single-precision amplitude values to decibel values.
 - [static func convert<U, V>(power: U, toDecibels: inout V, zeroReference: Float)](./vdsp/convert%28power,todecibels,zeroreference%29-5u3vs.md)
   Converts single-precision power values to decibel values.
+- [vDSP_vdbcon](./vdsp_vdbcon.md)
+  Converts single-precision power or amplitude values to decibel values.
 ### Converting double-precision power or amplitude values to decibel values
 - [static func amplitudeToDecibels<U>(U, zeroReference: Double) -> [Double]](./vdsp/amplitudetodecibels%28_,zeroreference%29-2cgik.md)
   Returns double-precision amplitude values converted to decibel values.
@@ -25,6 +27,8 @@ Convert vectors that contain power or amplitude data to decibels.
   Converts double-precision amplitude values to decibel values.
 - [static func convert<U, V>(power: U, toDecibels: inout V, zeroReference: Double)](./vdsp/convert%28power,todecibels,zeroreference%29-3aiv4.md)
   Converts double-precision power values to decibel values.
+- [vDSP_vdbconD](./vdsp_vdbcond.md)
+  Converts single-precision power or amplitude values to decibel values.
 
 ## See Also
 

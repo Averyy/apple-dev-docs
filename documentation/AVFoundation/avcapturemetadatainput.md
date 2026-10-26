@@ -31,6 +31,8 @@ This class provides input to an [`AVCaptureSession`](./avcapturesession.md). An 
 ### Creating metadata input
 - [init(formatDescription: CMMetadataFormatDescription, clock: CMClock)](./avcapturemetadatainput/init%28formatdescription,clock%29.md)
   Creates capture metadata input to provide timed groups to a capture session.
+- [+ metadataInputWithFormatDescription:clock:](./avcapturemetadatainput/metadatainputwithformatdescription_clock_.md)
+  Returns a metadata input instance that allows clients to provide timed metadata groups to a capture session.
 ### Providing metadata
 - [func append(AVTimedMetadataGroup) throws](./avcapturemetadatainput/append%28_%29.md)
   Provides metadata to the capture session.

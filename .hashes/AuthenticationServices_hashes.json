@@ -5,6 +5,31 @@
       "file_path": "documentation/AuthenticationServices/AuthenticationServices.md",
       "hash": "b62a12cd0f9dfa5888daa17fed2af832b6a640ae193531b61b4f07a4f41b7d92"
     },
+    "https://developer.apple.com/documentation/authenticationservices/as_api_available": {
+      "etag": "\"b74-65d560ab08233-df\"",
+      "file_path": "documentation/AuthenticationServices/as_api_available.md",
+      "hash": "7022713cfc5983a6c9690658ae3856a47ec4776dd9c1341690716e6c8fae914d"
+    },
+    "https://developer.apple.com/documentation/authenticationservices/as_extern": {
+      "etag": "\"b20-65d560ab9c9fa-df\"",
+      "file_path": "documentation/AuthenticationServices/as_extern.md",
+      "hash": "7bc892a3155136a0b57f6c6936c176a940d5870fdf1299bc54ff7a4754a55e4e"
+    },
+    "https://developer.apple.com/documentation/authenticationservices/as_header_audit_begin": {
+      "etag": "\"bb0-65d560aec3823-df\"",
+      "file_path": "documentation/AuthenticationServices/as_header_audit_begin.md",
+      "hash": "8d41e99d5cbdc029d2c3312850b7c33bbe9424f3bd4af1b37c62dd5bc7b9dd48"
+    },
+    "https://developer.apple.com/documentation/authenticationservices/as_header_audit_end": {
+      "etag": "\"b98-65d560ae80938-df\"",
+      "file_path": "documentation/AuthenticationServices/as_header_audit_end.md",
+      "hash": "211c73810cf63eacaf51717eea82cdd7317812ca5a940e73dd8fc069bcaf31d7"
+    },
+    "https://developer.apple.com/documentation/authenticationservices/as_swift_sendable": {
+      "etag": "\"b80-65d560aec3823-df\"",
+      "file_path": "documentation/AuthenticationServices/as_swift_sendable.md",
+      "hash": "2133188dbca42e7146235787a290fb54b6bdd1fa58658e67d95e6096da801c47"
+    },
     "https://developer.apple.com/documentation/authenticationservices/asaccountauthenticationmodificationcontroller": {
       "etag": "\"765d-65d560ae0acfb-df\"",
       "file_path": "documentation/AuthenticationServices/asaccountauthenticationmodificationcontroller.md",
@@ -820,6 +845,16 @@
       "file_path": "documentation/AuthenticationServices/asauthorizationplatformpublickeycredentialassertion/largeblob-29ggs.md",
       "hash": "787764860280edff72c96963a70d31f46323cae459a877e733d5b5de030406a2"
     },
+    "https://developer.apple.com/documentation/authenticationservices/asauthorizationplatformpublickeycredentialassertion/largeblob-97tbp": {
+      "etag": "\"19cd-65d560ab08233-df\"",
+      "file_path": "documentation/AuthenticationServices/asauthorizationplatformpublickeycredentialassertion/largeblob-97tbp.md",
+      "hash": "979e3c0e111af84a97bef31a5286d289a8528f67c44cd98dd84cb8627d3d8597"
+    },
+    "https://developer.apple.com/documentation/authenticationservices/asauthorizationplatformpublickeycredentialassertion/prf-8blir": {
+      "etag": "\"186f-65d560ab08233-df\"",
+      "file_path": "documentation/AuthenticationServices/asauthorizationplatformpublickeycredentialassertion/prf-8blir.md",
+      "hash": "b15c260a8e8e42ef6650ecbbb144a6301d5676b40bc69d8b66636d3c16dbe2ff"
+    },
     "https://developer.apple.com/documentation/authenticationservices/asauthorizationplatformpublickeycredentialassertion/prf-8o9sr": {
       "etag": "\"1b3f-65d560ab08233-df\"",
       "file_path": "documentation/AuthenticationServices/asauthorizationplatformpublickeycredentialassertion/prf-8o9sr.md",
@@ -835,6 +870,11 @@
       "file_path": "documentation/AuthenticationServices/asauthorizationplatformpublickeycredentialassertionrequest/allowedcredentials.md",
       "hash": "b4fd39a07da478289b75642951df672daa832101c0ab653a50135f8939da6212"
     },
+    "https://developer.apple.com/documentation/authenticationservices/asauthorizationplatformpublickeycredentialassertionrequest/largeblob-5mg1q": {
+      "etag": "\"245f-65d560ab85b1e-df\"",
+      "file_path": "documentation/AuthenticationServices/asauthorizationplatformpublickeycredentialassertionrequest/largeblob-5mg1q.md",
+      "hash": "b9b6e6d5b5d158da6704126172ac394e0b370920058f977511ad2e527fbebee0"
+    },
     "https://developer.apple.com/documentation/authenticationservices/asauthorizationplatformpublickeycredentialassertionrequest/largeblob-9kvvl": {
       "etag": "\"2821-65d560ab85b1e-df\"",
       "file_path": "documentation/AuthenticationServices/asauthorizationplatformpublickeycredentialassertionrequest/largeblob-9kvvl.md",
@@ -844,6 +884,11 @@
       "etag": "\"2778-65d560ab85b1e-df\"",
       "file_path": "documentation/AuthenticationServices/asauthorizationplatformpublickeycredentialassertionrequest/prf-47uoa.md",
       "hash": "6b4d38432b5dd048736b4724e364084a4d4d6d4a4fd4e8f3671ea02176517971"
+    },
+    "https://developer.apple.com/documentation/authenticationservices/asauthorizationplatformpublickeycredentialassertionrequest/prf-60tle": {
+      "etag": "\"189f-65d560ab85b1e-df\"",
+      "file_path": "documentation/AuthenticationServices/asauthorizationplatformpublickeycredentialassertionrequest/prf-60tle.md",
+      "hash": "bedbeb8e633f141cab27144c409a7329a4958438c32ea0fe6abec96a961a0a20"
     },
     "https://developer.apple.com/documentation/authenticationservices/asauthorizationplatformpublickeycredentialdescriptor": {
       "etag": "\"9f5d-65d560ac1939d-df\"",
@@ -910,15 +955,30 @@
       "file_path": "documentation/AuthenticationServices/asauthorizationplatformpublickeycredentialregistration/largeblob-5nvj9.md",
       "hash": "f129a58218490321d1374970a0d1748e8b328920a6f4836edd956a75cb1def0f"
     },
+    "https://developer.apple.com/documentation/authenticationservices/asauthorizationplatformpublickeycredentialregistration/largeblob-jhnw": {
+      "etag": "\"2073-65d560aea302f-df\"",
+      "file_path": "documentation/AuthenticationServices/asauthorizationplatformpublickeycredentialregistration/largeblob-jhnw.md",
+      "hash": "9c6eb022c26e77b982f2017bd8920220ce5ab311a70f338949173e3d421f850a"
+    },
     "https://developer.apple.com/documentation/authenticationservices/asauthorizationplatformpublickeycredentialregistration/prf-3xcqu": {
       "etag": "\"1bbd-65d560aea302f-df\"",
       "file_path": "documentation/AuthenticationServices/asauthorizationplatformpublickeycredentialregistration/prf-3xcqu.md",
       "hash": "b216f117b6551cecf3f91d824a88507b424854ab9c9d988660123b6ca98cbd0c"
     },
+    "https://developer.apple.com/documentation/authenticationservices/asauthorizationplatformpublickeycredentialregistration/prf-49gbm": {
+      "etag": "\"18db-65d560aea302f-df\"",
+      "file_path": "documentation/AuthenticationServices/asauthorizationplatformpublickeycredentialregistration/prf-49gbm.md",
+      "hash": "7f59616adf7ead2e29cf6ee9b7b80ed7714f31e0cab6918add16be7ea8c4b464"
+    },
     "https://developer.apple.com/documentation/authenticationservices/asauthorizationplatformpublickeycredentialregistrationrequest": {
       "etag": "\"9d31-65d560ae80938-df\"",
       "file_path": "documentation/AuthenticationServices/asauthorizationplatformpublickeycredentialregistrationrequest.md",
       "hash": "da9b33494edfcadf7a8f683597ad3b31d31113542ff971a5bff8598599ebaf97"
+    },
+    "https://developer.apple.com/documentation/authenticationservices/asauthorizationplatformpublickeycredentialregistrationrequest/largeblob-28v2m": {
+      "etag": "\"1993-65d560ad34ee4-df\"",
+      "file_path": "documentation/AuthenticationServices/asauthorizationplatformpublickeycredentialregistrationrequest/largeblob-28v2m.md",
+      "hash": "ce204373a79f457ffbb49374c6a667369630bd3235a4816389f221f73d30f65d"
     },
     "https://developer.apple.com/documentation/authenticationservices/asauthorizationplatformpublickeycredentialregistrationrequest/largeblob-5ismm": {
       "etag": "\"1d59-65d560ad34ee4-df\"",
@@ -929,6 +989,11 @@
       "etag": "\"1c2d-65d560ad34ee4-df\"",
       "file_path": "documentation/AuthenticationServices/asauthorizationplatformpublickeycredentialregistrationrequest/prf-3d9iw.md",
       "hash": "3dbcfb29c1a16f9ab4bc08f015af4bb43b0c5e14c8d1283bce54befda8839104"
+    },
+    "https://developer.apple.com/documentation/authenticationservices/asauthorizationplatformpublickeycredentialregistrationrequest/prf-8fus5": {
+      "etag": "\"18d5-65d560ad34ee4-df\"",
+      "file_path": "documentation/AuthenticationServices/asauthorizationplatformpublickeycredentialregistrationrequest/prf-8fus5.md",
+      "hash": "f1662cdf69c313f4999847130aff3a70e619690878968cab7ada675ad1b67d97"
     },
     "https://developer.apple.com/documentation/authenticationservices/asauthorizationplatformpublickeycredentialregistrationrequest/requeststyle-swift.enum": {
       "etag": "\"4d0e-65d560ad34ee4-df\"",
@@ -1184,6 +1249,11 @@
       "etag": "\"1fbe-65d560ab6d724-df\"",
       "file_path": "documentation/AuthenticationServices/asauthorizationproviderextensionauthorizationresult/init(httpresponse,httpbody)-48yla.md",
       "hash": "089f529c5ac7475a6eae196266afb7d0da02974de031dda71eff2dc020af7def"
+    },
+    "https://developer.apple.com/documentation/authenticationservices/asauthorizationproviderextensionauthorizationresult/privatekeys": {
+      "etag": "\"2a7e-65d560ab6d724-df\"",
+      "file_path": "documentation/AuthenticationServices/asauthorizationproviderextensionauthorizationresult/privatekeys.md",
+      "hash": "781059e72c0cb70a56ea31a61aa8a69454494d9aafa87dd0cbb0ad8fa23ffb6f"
     },
     "https://developer.apple.com/documentation/authenticationservices/asauthorizationproviderextensionencryptionalgorithm": {
       "etag": "\"4bb4-65d560aea302f-df\"",
@@ -1525,6 +1595,11 @@
       "file_path": "documentation/AuthenticationServices/asauthorizationproviderextensionloginconfiguration/jwkstrustedrootcertificates-5y2pc.md",
       "hash": "aca4ee2305f4f74147e6cd43dee11519b947eb799f4efbb362bef918b08cccfe"
     },
+    "https://developer.apple.com/documentation/authenticationservices/asauthorizationproviderextensionloginconfiguration/jwkstrustedrootcertificates-605jm": {
+      "etag": "\"751f-65d560ad011c7-df\"",
+      "file_path": "documentation/AuthenticationServices/asauthorizationproviderextensionloginconfiguration/jwkstrustedrootcertificates-605jm.md",
+      "hash": "05682d244347cc5a02d51e23272d3c144fb763a472d05f5744d00b156809495b"
+    },
     "https://developer.apple.com/documentation/authenticationservices/asauthorizationproviderextensionloginconfiguration/kerberosticketmappings": {
       "etag": "\"5b2c-65d560ad011c7-df\"",
       "file_path": "documentation/AuthenticationServices/asauthorizationproviderextensionloginconfiguration/kerberosticketmappings.md",
@@ -1695,10 +1770,20 @@
       "file_path": "documentation/AuthenticationServices/asauthorizationproviderextensionloginmanager/attestkey(oftype,clientdatahash).md",
       "hash": "30afe06e53b805734edb24682f86afe493f4df4c279c76ee01d8fd6213a67bbc"
     },
+    "https://developer.apple.com/documentation/authenticationservices/asauthorizationproviderextensionloginmanager/attestkey:clientdatahash:completion:": {
+      "etag": "\"2c7f-65d560ab22f63-df\"",
+      "file_path": "documentation/AuthenticationServices/asauthorizationproviderextensionloginmanager/attestkey_clientdatahash_completion_.md",
+      "hash": "f16f5f4d775cbff4c90f28f8ac12d995a2ebce8fb15695b1c72131d906b11317"
+    },
     "https://developer.apple.com/documentation/authenticationservices/asauthorizationproviderextensionloginmanager/attestpendingkey(oftype:clientdatahash:)": {
       "etag": "\"2991-65d560ab22f63-df\"",
       "file_path": "documentation/AuthenticationServices/asauthorizationproviderextensionloginmanager/attestpendingkey(oftype,clientdatahash).md",
       "hash": "8dc9d030485294b9dede073768d5dc1dcaa0b104a5878562efd2b58388d02395"
+    },
+    "https://developer.apple.com/documentation/authenticationservices/asauthorizationproviderextensionloginmanager/attestpendingkey:clientdatahash:completion:": {
+      "etag": "\"2ceb-65d560ab08233-df\"",
+      "file_path": "documentation/AuthenticationServices/asauthorizationproviderextensionloginmanager/attestpendingkey_clientdatahash_completion_.md",
+      "hash": "dda403d01be2bdc88d54820f5734a401701c4436e3c88aaa9193f5d8332e2018"
     },
     "https://developer.apple.com/documentation/authenticationservices/asauthorizationproviderextensionloginmanager/authenticationmethod": {
       "etag": "\"2761-65d560ab22f63-df\"",
@@ -1940,6 +2025,16 @@
       "file_path": "documentation/AuthenticationServices/asauthorizationproviderextensionrequestoptions.md",
       "hash": "2b405e620b17034713ed8e487cf127d5c4fa00ac9434ce3fa450303438aea91f"
     },
+    "https://developer.apple.com/documentation/authenticationservices/asauthorizationproviderextensionrequestoptions/asauthorizationproviderextensionrequestoptionsnone": {
+      "etag": "\"2307-65d560add323d-df\"",
+      "file_path": "documentation/AuthenticationServices/asauthorizationproviderextensionrequestoptions/asauthorizationproviderextensionrequestoptionsnone.md",
+      "hash": "7b94e55015e2dd1005749a6ac565024ff0bcafcc2d5e0e5fa0b7b0ba82a6ddf3"
+    },
+    "https://developer.apple.com/documentation/authenticationservices/asauthorizationproviderextensionrequestoptions/asauthorizationproviderextensionrequestoptionsopenidfallback": {
+      "etag": "\"16ed-659028edcd3d4-df\"",
+      "file_path": "documentation/AuthenticationServices/asauthorizationproviderextensionrequestoptions/asauthorizationproviderextensionrequestoptionsopenidfallback.md",
+      "hash": "8a323d6a1b18599fbd2fb6dc37ca922a9a29aaf072f6d3019d210ae869c82e97"
+    },
     "https://developer.apple.com/documentation/authenticationservices/asauthorizationproviderextensionrequestoptions/init(rawvalue:)": {
       "etag": "\"1738-65d560add323d-df\"",
       "file_path": "documentation/AuthenticationServices/asauthorizationproviderextensionrequestoptions/init(rawvalue).md",
@@ -2015,6 +2110,11 @@
       "file_path": "documentation/AuthenticationServices/asauthorizationproviderextensionsupportedgranttypes.md",
       "hash": "8e1d39dc54ffb8f7a2570e167a7c4db8971a7f4eccedff232b299309ac41d784"
     },
+    "https://developer.apple.com/documentation/authenticationservices/asauthorizationproviderextensionsupportedgranttypes/asauthorizationproviderextensionsupportedgranttypesnone": {
+      "etag": "\"140b-65d560ac33d30-df\"",
+      "file_path": "documentation/AuthenticationServices/asauthorizationproviderextensionsupportedgranttypes/asauthorizationproviderextensionsupportedgranttypesnone.md",
+      "hash": "172d95b55ff1c78e34f204d03b42d290d7d0977f1978fa0cd26541364a0694e3"
+    },
     "https://developer.apple.com/documentation/authenticationservices/asauthorizationproviderextensionsupportedgranttypes/init(rawvalue:)": {
       "etag": "\"161e-65d560ac33d30-df\"",
       "file_path": "documentation/AuthenticationServices/asauthorizationproviderextensionsupportedgranttypes/init(rawvalue).md",
@@ -2079,6 +2179,11 @@
       "etag": "\"43a8-65d560abb5ed0-df\"",
       "file_path": "documentation/AuthenticationServices/asauthorizationproviderextensionuserloginconfiguration/setcustomloginrequestheaderclaims(_).md",
       "hash": "bfd7dd3bed70e16ff8f9e26d5c41292060eb929225cdcd85daf4a65f32df8ecf"
+    },
+    "https://developer.apple.com/documentation/authenticationservices/asauthorizationproviderextensionusersecureenclavekeybiometricpolicy/asauthorizationproviderextensionusersecureenclavekeybiometricpolicynone": {
+      "etag": "\"16b5-65d560aec3823-df\"",
+      "file_path": "documentation/AuthenticationServices/asauthorizationproviderextensionusersecureenclavekeybiometricpolicy/asauthorizationproviderextensionusersecureenclavekeybiometricpolicynone.md",
+      "hash": "8956dc4948fec0b9ab0e24a8ab6d19c707ec79571bdb4e3a0d8b9d62ce353ae3"
     },
     "https://developer.apple.com/documentation/authenticationservices/asauthorizationpublickeycredentialassertion": {
       "etag": "\"757a-65d560add323d-df\"",
@@ -2190,6 +2295,26 @@
       "file_path": "documentation/AuthenticationServices/asauthorizationpublickeycredentialdescriptor/credentialid.md",
       "hash": "8c54d68e828c3d68720ae04d1db9761bf32db5773f0fa66ecd4ee61924c90cc7"
     },
+    "https://developer.apple.com/documentation/authenticationservices/asauthorizationpublickeycredentiallargeblobassertioninput-c.class": {
+      "etag": "\"2794-65d560ab85b1e-df\"",
+      "file_path": "documentation/AuthenticationServices/asauthorizationpublickeycredentiallargeblobassertioninput-c.class.md",
+      "hash": "5d0ef0b9f5185cda6d81eec6c9d03632679128ac5b418f904b44aec36453f859"
+    },
+    "https://developer.apple.com/documentation/authenticationservices/asauthorizationpublickeycredentiallargeblobassertioninput-c.class/datatowrite": {
+      "etag": "\"1c26-65d560ae2db90-df\"",
+      "file_path": "documentation/AuthenticationServices/asauthorizationpublickeycredentiallargeblobassertioninput-c.class/datatowrite.md",
+      "hash": "54da05b5bf367e5a6f41da465dd9cedc37e598ceff8632dd5e214b9b6c1878fe"
+    },
+    "https://developer.apple.com/documentation/authenticationservices/asauthorizationpublickeycredentiallargeblobassertioninput-c.class/initwithoperation:": {
+      "etag": "\"16f4-65d560ae2db90-df\"",
+      "file_path": "documentation/AuthenticationServices/asauthorizationpublickeycredentiallargeblobassertioninput-c.class/initwithoperation_.md",
+      "hash": "b641b62cf93fb3ae73ee2302a9ca302d57c903e27c542becd8f48c043a1ec7d9"
+    },
+    "https://developer.apple.com/documentation/authenticationservices/asauthorizationpublickeycredentiallargeblobassertioninput-c.class/operation": {
+      "etag": "\"19cd-65d560ae2db90-df\"",
+      "file_path": "documentation/AuthenticationServices/asauthorizationpublickeycredentiallargeblobassertioninput-c.class/operation.md",
+      "hash": "3dbd929e50df9c7e1223b94570b4a2e06915dc7f66fa3295988918de232d1da4"
+    },
     "https://developer.apple.com/documentation/authenticationservices/asauthorizationpublickeycredentiallargeblobassertioninput-swift.struct": {
       "etag": "\"301d-65d560aadb5e0-df\"",
       "file_path": "documentation/AuthenticationServices/asauthorizationpublickeycredentiallargeblobassertioninput-swift.struct.md",
@@ -2224,6 +2349,36 @@
       "etag": "\"1f96-65d560ac33d30-df\"",
       "file_path": "documentation/AuthenticationServices/asauthorizationpublickeycredentiallargeblobassertioninput-swift.struct/write(_).md",
       "hash": "0ef475c882e17bf379c4189abd9126023baa7ff721b8dbbdd36406ff780c1e83"
+    },
+    "https://developer.apple.com/documentation/authenticationservices/asauthorizationpublickeycredentiallargeblobassertionoperation": {
+      "etag": "\"533e-65d560adea589-df\"",
+      "file_path": "documentation/AuthenticationServices/asauthorizationpublickeycredentiallargeblobassertionoperation.md",
+      "hash": "8158da8ca6ff49e19d35e83ad6fdc018136f1e26ddbb9a2e44f189b97ebcc874"
+    },
+    "https://developer.apple.com/documentation/authenticationservices/asauthorizationpublickeycredentiallargeblobassertionoperation/asauthorizationpublickeycredentiallargeblobassertionoperationread": {
+      "etag": "\"178d-65d560ab3eb78-df\"",
+      "file_path": "documentation/AuthenticationServices/asauthorizationpublickeycredentiallargeblobassertionoperation/asauthorizationpublickeycredentiallargeblobassertionoperationread.md",
+      "hash": "66e6ea87f78f83234598e086f7d591c83aa8e2789c14c572d1bb1a87a5483c0e"
+    },
+    "https://developer.apple.com/documentation/authenticationservices/asauthorizationpublickeycredentiallargeblobassertionoperation/asauthorizationpublickeycredentiallargeblobassertionoperationwrite": {
+      "etag": "\"1792-65d560ab3eb78-df\"",
+      "file_path": "documentation/AuthenticationServices/asauthorizationpublickeycredentiallargeblobassertionoperation/asauthorizationpublickeycredentiallargeblobassertionoperationwrite.md",
+      "hash": "3a4cf6130a16ffb6e7618da410598568dc2e6374f5a0aed21d7932ee1124ab92"
+    },
+    "https://developer.apple.com/documentation/authenticationservices/asauthorizationpublickeycredentiallargeblobassertionoutput-c.class": {
+      "etag": "\"20c6-65d560ae80938-df\"",
+      "file_path": "documentation/AuthenticationServices/asauthorizationpublickeycredentiallargeblobassertionoutput-c.class.md",
+      "hash": "74cb102f526caa33fbc2b34283022d852203ebf23de3ef8d5e8289d99b054ce8"
+    },
+    "https://developer.apple.com/documentation/authenticationservices/asauthorizationpublickeycredentiallargeblobassertionoutput-c.class/didwrite": {
+      "etag": "\"17ff-65d560ab6d724-df\"",
+      "file_path": "documentation/AuthenticationServices/asauthorizationpublickeycredentiallargeblobassertionoutput-c.class/didwrite.md",
+      "hash": "4fa1c90d19afd2c5dc3d774c82b016835ed34d5d5da0cb1756ded3c3c2d0889a"
+    },
+    "https://developer.apple.com/documentation/authenticationservices/asauthorizationpublickeycredentiallargeblobassertionoutput-c.class/readdata": {
+      "etag": "\"1958-65d560ab6d724-df\"",
+      "file_path": "documentation/AuthenticationServices/asauthorizationpublickeycredentiallargeblobassertionoutput-c.class/readdata.md",
+      "hash": "312040180398ea2912708f50a8194f2958a90d229f6701b84686ba06cf34b710"
     },
     "https://developer.apple.com/documentation/authenticationservices/asauthorizationpublickeycredentiallargeblobassertionoutput-swift.struct": {
       "etag": "\"3392-65d560ad34ee4-df\"",
@@ -2260,6 +2415,21 @@
       "file_path": "documentation/AuthenticationServices/asauthorizationpublickeycredentiallargeblobassertionoutput-swift.struct/write(success).md",
       "hash": "d260e22f20ca161d626b8cee293b45efcf6490c23eb7e50ba3bc4858dbd56e6f"
     },
+    "https://developer.apple.com/documentation/authenticationservices/asauthorizationpublickeycredentiallargeblobregistrationinput-c.class": {
+      "etag": "\"1aea-65d560ae80938-df\"",
+      "file_path": "documentation/AuthenticationServices/asauthorizationpublickeycredentiallargeblobregistrationinput-c.class.md",
+      "hash": "e8c714375247bab81e4fe7d31a9f5ed8b4230667a30b17a3b73bd1822af37c73"
+    },
+    "https://developer.apple.com/documentation/authenticationservices/asauthorizationpublickeycredentiallargeblobregistrationinput-c.class/initwithsupportrequirement:": {
+      "etag": "\"1791-65d560ab57df4-df\"",
+      "file_path": "documentation/AuthenticationServices/asauthorizationpublickeycredentiallargeblobregistrationinput-c.class/initwithsupportrequirement_.md",
+      "hash": "cb0d96fc032fe772111a505848056a4c44c55e87daa271eeb458ac9efeeeb817"
+    },
+    "https://developer.apple.com/documentation/authenticationservices/asauthorizationpublickeycredentiallargeblobregistrationinput-c.class/supportrequirement": {
+      "etag": "\"15b0-65d560ab57df4-df\"",
+      "file_path": "documentation/AuthenticationServices/asauthorizationpublickeycredentiallargeblobregistrationinput-c.class/supportrequirement.md",
+      "hash": "77a4fd2c363dbc3ef123339c330ab63bf06eaf3b72f1f0c03abe8819c5a914ab"
+    },
     "https://developer.apple.com/documentation/authenticationservices/asauthorizationpublickeycredentiallargeblobregistrationinput-swift.struct": {
       "etag": "\"34ff-65d560adb8d11-df\"",
       "file_path": "documentation/AuthenticationServices/asauthorizationpublickeycredentiallargeblobregistrationinput-swift.struct.md",
@@ -2295,6 +2465,16 @@
       "file_path": "documentation/AuthenticationServices/asauthorizationpublickeycredentiallargeblobregistrationinput-swift.struct/supportrequirement-swift.property.md",
       "hash": "9e627ede79aac6827a1516305bd9d7328f08a8907b6170e54ace0d192f8a0ee6"
     },
+    "https://developer.apple.com/documentation/authenticationservices/asauthorizationpublickeycredentiallargeblobregistrationoutput-c.class": {
+      "etag": "\"24f1-65d560ab22f63-df\"",
+      "file_path": "documentation/AuthenticationServices/asauthorizationpublickeycredentiallargeblobregistrationoutput-c.class.md",
+      "hash": "04630f1557b3303c8961182d539d247b15d8a051488a27174e490c09d04f54e9"
+    },
+    "https://developer.apple.com/documentation/authenticationservices/asauthorizationpublickeycredentiallargeblobregistrationoutput-c.class/issupported": {
+      "etag": "\"1461-65d560add323d-df\"",
+      "file_path": "documentation/AuthenticationServices/asauthorizationpublickeycredentiallargeblobregistrationoutput-c.class/issupported.md",
+      "hash": "c95e6b5fde9ea18de4ee2ef469433f3d8d1e92ae6e4496f700d4d68f9e87d58d"
+    },
     "https://developer.apple.com/documentation/authenticationservices/asauthorizationpublickeycredentiallargeblobregistrationoutput-swift.struct": {
       "etag": "\"2d7a-65d560ab85b1e-df\"",
       "file_path": "documentation/AuthenticationServices/asauthorizationpublickeycredentiallargeblobregistrationoutput-swift.struct.md",
@@ -2315,6 +2495,21 @@
       "file_path": "documentation/AuthenticationServices/asauthorizationpublickeycredentiallargeblobregistrationoutput-swift.struct/unsupported.md",
       "hash": "b46caa705feaf558daa718668cfafe355e7639f7d0aec494011ce5edbb86d2db"
     },
+    "https://developer.apple.com/documentation/authenticationservices/asauthorizationpublickeycredentiallargeblobsupportrequirement": {
+      "etag": "\"53ac-65d560adea589-df\"",
+      "file_path": "documentation/AuthenticationServices/asauthorizationpublickeycredentiallargeblobsupportrequirement.md",
+      "hash": "4b67e73ebf7a6336294ccf17b23d6aefb88bce467da40e16e18a670089f2aae5"
+    },
+    "https://developer.apple.com/documentation/authenticationservices/asauthorizationpublickeycredentiallargeblobsupportrequirement/asauthorizationpublickeycredentiallargeblobsupportrequirementpreferred": {
+      "etag": "\"1832-65d560ab6d724-df\"",
+      "file_path": "documentation/AuthenticationServices/asauthorizationpublickeycredentiallargeblobsupportrequirement/asauthorizationpublickeycredentiallargeblobsupportrequirementpreferred.md",
+      "hash": "700adc131fbe3ddb59c15c34008b30b6d866ad92eae2d436a2f1e7e9cfa025f9"
+    },
+    "https://developer.apple.com/documentation/authenticationservices/asauthorizationpublickeycredentiallargeblobsupportrequirement/asauthorizationpublickeycredentiallargeblobsupportrequirementrequired": {
+      "etag": "\"182f-65d560ab57df4-df\"",
+      "file_path": "documentation/AuthenticationServices/asauthorizationpublickeycredentiallargeblobsupportrequirement/asauthorizationpublickeycredentiallargeblobsupportrequirementrequired.md",
+      "hash": "408314033c888b8176d76bc6213703f7b9e7a516edf7d7420720acb16fd79909"
+    },
     "https://developer.apple.com/documentation/authenticationservices/asauthorizationpublickeycredentialparameters": {
       "etag": "\"a4a1-65d560ae80938-df\"",
       "file_path": "documentation/AuthenticationServices/asauthorizationpublickeycredentialparameters.md",
@@ -2334,6 +2529,26 @@
       "etag": "\"1837-65d560ab57df4-df\"",
       "file_path": "documentation/AuthenticationServices/asauthorizationpublickeycredentialparameters/init(coder).md",
       "hash": "bf080443e19310068d27724a064c8c8f33c37972e940e20fa25025a834fb8f6a"
+    },
+    "https://developer.apple.com/documentation/authenticationservices/asauthorizationpublickeycredentialprfassertioninput-c.class": {
+      "etag": "\"2b32-65d560abb5ed0-df\"",
+      "file_path": "documentation/AuthenticationServices/asauthorizationpublickeycredentialprfassertioninput-c.class.md",
+      "hash": "54d15a93a2e8d3efc15575de640cecb5b3c7503bd79d8aeb414b27c72e1d84df"
+    },
+    "https://developer.apple.com/documentation/authenticationservices/asauthorizationpublickeycredentialprfassertioninput-c.class/initwithinputvalues:percredentialinputvalues:": {
+      "etag": "\"1b8c-65d560ae4aa18-df\"",
+      "file_path": "documentation/AuthenticationServices/asauthorizationpublickeycredentialprfassertioninput-c.class/initwithinputvalues_percredentialinputvalues_.md",
+      "hash": "b91d713a7d63747952b2870e2bbb37ee23d241f2903893381a3fa013d1dbd7c8"
+    },
+    "https://developer.apple.com/documentation/authenticationservices/asauthorizationpublickeycredentialprfassertioninput-c.class/inputvalues": {
+      "etag": "\"1aa8-65d560ae4aa18-df\"",
+      "file_path": "documentation/AuthenticationServices/asauthorizationpublickeycredentialprfassertioninput-c.class/inputvalues.md",
+      "hash": "2147c450838d37da9d01fa741c65315aeee80394335958f977b91512075644be"
+    },
+    "https://developer.apple.com/documentation/authenticationservices/asauthorizationpublickeycredentialprfassertioninput-c.class/percredentialinputvalues": {
+      "etag": "\"15a7-65d560ae4aa18-df\"",
+      "file_path": "documentation/AuthenticationServices/asauthorizationpublickeycredentialprfassertioninput-c.class/percredentialinputvalues.md",
+      "hash": "e93f65024bedf4d77fea789740c1e00e5ffa45e499eab4727631fb8cfe7773be"
     },
     "https://developer.apple.com/documentation/authenticationservices/asauthorizationpublickeycredentialprfassertioninput-swift.struct": {
       "etag": "\"3c7c-65d560add323d-df\"",
@@ -2385,6 +2600,41 @@
       "file_path": "documentation/AuthenticationServices/asauthorizationpublickeycredentialprfassertioninput-swift.struct/percredentialinputvalues(_).md",
       "hash": "5714e24aa590f40a39a852d8ea238d87eb53347862b140aabaa6fe899652b751"
     },
+    "https://developer.apple.com/documentation/authenticationservices/asauthorizationpublickeycredentialprfassertioninputvalues": {
+      "etag": "\"1f03-65d560aaf082f-df\"",
+      "file_path": "documentation/AuthenticationServices/asauthorizationpublickeycredentialprfassertioninputvalues.md",
+      "hash": "288c4c6c7e7143641808df1391b1b40ac8c401d4e82eae2ce3aa386f89969634"
+    },
+    "https://developer.apple.com/documentation/authenticationservices/asauthorizationpublickeycredentialprfassertioninputvalues/initwithsaltinput1:saltinput2:": {
+      "etag": "\"1839-65d560ad4a33f-df\"",
+      "file_path": "documentation/AuthenticationServices/asauthorizationpublickeycredentialprfassertioninputvalues/initwithsaltinput1_saltinput2_.md",
+      "hash": "237dfedf075aa54d58e832e3d915a9a3974d68dfeb042dfa4a0a1ce017a7b01a"
+    },
+    "https://developer.apple.com/documentation/authenticationservices/asauthorizationpublickeycredentialprfassertioninputvalues/saltinput1": {
+      "etag": "\"17fa-65d560ad4a33f-df\"",
+      "file_path": "documentation/AuthenticationServices/asauthorizationpublickeycredentialprfassertioninputvalues/saltinput1.md",
+      "hash": "fc96217a5a94ccc94492a0c944754c02d08d5a70f4e93f11af024677c04cbfaa"
+    },
+    "https://developer.apple.com/documentation/authenticationservices/asauthorizationpublickeycredentialprfassertioninputvalues/saltinput2": {
+      "etag": "\"184c-65d560ad4a33f-df\"",
+      "file_path": "documentation/AuthenticationServices/asauthorizationpublickeycredentialprfassertioninputvalues/saltinput2.md",
+      "hash": "18c01012d9fae3db5d2a5fab9d067682d1c242ebd2839cd237c6e9cac5c6bb8c"
+    },
+    "https://developer.apple.com/documentation/authenticationservices/asauthorizationpublickeycredentialprfassertionoutput-c.class": {
+      "etag": "\"1cc3-65d560adea589-df\"",
+      "file_path": "documentation/AuthenticationServices/asauthorizationpublickeycredentialprfassertionoutput-c.class.md",
+      "hash": "cb08ffe8cb8144f06f5689b73e5d1c271ea5a913d7271a0e03ecf26cbde7e377"
+    },
+    "https://developer.apple.com/documentation/authenticationservices/asauthorizationpublickeycredentialprfassertionoutput-c.class/first": {
+      "etag": "\"1880-65d560ae4aa18-df\"",
+      "file_path": "documentation/AuthenticationServices/asauthorizationpublickeycredentialprfassertionoutput-c.class/first.md",
+      "hash": "3467d77fbab84a8cb9edf0f8c627b450da528658ea5281de311717ef13881658"
+    },
+    "https://developer.apple.com/documentation/authenticationservices/asauthorizationpublickeycredentialprfassertionoutput-c.class/second": {
+      "etag": "\"1a24-65d560ae4aa18-df\"",
+      "file_path": "documentation/AuthenticationServices/asauthorizationpublickeycredentialprfassertionoutput-c.class/second.md",
+      "hash": "ea3b91fb1db19cd18521de752d4f6751c0a4d245fcfdb545091571e19f0ecdb7"
+    },
     "https://developer.apple.com/documentation/authenticationservices/asauthorizationpublickeycredentialprfassertionoutput-swift.struct": {
       "etag": "\"2d94-65d560ad1ec2a-df\"",
       "file_path": "documentation/AuthenticationServices/asauthorizationpublickeycredentialprfassertionoutput-swift.struct.md",
@@ -2404,6 +2654,31 @@
       "etag": "\"1be1-65d560ad4a33f-df\"",
       "file_path": "documentation/AuthenticationServices/asauthorizationpublickeycredentialprfassertionoutput-swift.struct/second.md",
       "hash": "8e3c91dd4bdd801d1ec69a3d4d8af24069bc42ad0aefb20bbf4b1e17da994cc4"
+    },
+    "https://developer.apple.com/documentation/authenticationservices/asauthorizationpublickeycredentialprfregistrationinput-c.class": {
+      "etag": "\"2274-65d560ab22f63-df\"",
+      "file_path": "documentation/AuthenticationServices/asauthorizationpublickeycredentialprfregistrationinput-c.class.md",
+      "hash": "aba0a1cd03a4e7484f9d7727b893fb746bfc439645c1e6acc6f1cfe6bccf0886"
+    },
+    "https://developer.apple.com/documentation/authenticationservices/asauthorizationpublickeycredentialprfregistrationinput-c.class/checkforsupport": {
+      "etag": "\"1550-65d560ae80938-df\"",
+      "file_path": "documentation/AuthenticationServices/asauthorizationpublickeycredentialprfregistrationinput-c.class/checkforsupport.md",
+      "hash": "88d13c15f6fbbc01c13fc3d39885cc3ae4cbf8bff088bc037a1c64f2a7b108f7"
+    },
+    "https://developer.apple.com/documentation/authenticationservices/asauthorizationpublickeycredentialprfregistrationinput-c.class/initwithinputvalues:": {
+      "etag": "\"174e-65d560ae80938-df\"",
+      "file_path": "documentation/AuthenticationServices/asauthorizationpublickeycredentialprfregistrationinput-c.class/initwithinputvalues_.md",
+      "hash": "58b032c8e8e9c58a2993da8573cdc78ce496b689a108f5c4f0d85accd5bdb16a"
+    },
+    "https://developer.apple.com/documentation/authenticationservices/asauthorizationpublickeycredentialprfregistrationinput-c.class/inputvalues": {
+      "etag": "\"16db-65d560ae80938-df\"",
+      "file_path": "documentation/AuthenticationServices/asauthorizationpublickeycredentialprfregistrationinput-c.class/inputvalues.md",
+      "hash": "9657099570ac49fce8cc970c1d66581010b7992db8119ac3c39320071d483fb7"
+    },
+    "https://developer.apple.com/documentation/authenticationservices/asauthorizationpublickeycredentialprfregistrationinput-c.class/shouldcheckforsupport": {
+      "etag": "\"17ff-65d560ae80938-df\"",
+      "file_path": "documentation/AuthenticationServices/asauthorizationpublickeycredentialprfregistrationinput-c.class/shouldcheckforsupport.md",
+      "hash": "3802596bf96a3562c3b809d8f4e983d9bd5574ad2efd450369a752526c7a44d2"
     },
     "https://developer.apple.com/documentation/authenticationservices/asauthorizationpublickeycredentialprfregistrationinput-swift.struct": {
       "etag": "\"368c-65d560abb5ed0-df\"",
@@ -2434,6 +2709,26 @@
       "etag": "\"1b32-65d560aaf082f-df\"",
       "file_path": "documentation/AuthenticationServices/asauthorizationpublickeycredentialprfregistrationinput-swift.struct/shouldcheckforsupport.md",
       "hash": "99dcdd0530b081f69f51cdaf49c7da1f6ce3f27d94d7877533c3eea656c351fd"
+    },
+    "https://developer.apple.com/documentation/authenticationservices/asauthorizationpublickeycredentialprfregistrationoutput-c.class": {
+      "etag": "\"20d0-65d560ab6d724-df\"",
+      "file_path": "documentation/AuthenticationServices/asauthorizationpublickeycredentialprfregistrationoutput-c.class.md",
+      "hash": "b5b71fc9cce45ddd25dee7ab0edf65fd503771291eadfea9c096c796c45a9150"
+    },
+    "https://developer.apple.com/documentation/authenticationservices/asauthorizationpublickeycredentialprfregistrationoutput-c.class/first": {
+      "etag": "\"190f-65d560ad34ee4-df\"",
+      "file_path": "documentation/AuthenticationServices/asauthorizationpublickeycredentialprfregistrationoutput-c.class/first.md",
+      "hash": "a66bcf0f31acc8404796d4966bc17e6dffd2cee1e61769810ecff3dba8d3c6db"
+    },
+    "https://developer.apple.com/documentation/authenticationservices/asauthorizationpublickeycredentialprfregistrationoutput-c.class/issupported": {
+      "etag": "\"13fe-65d560ad34ee4-df\"",
+      "file_path": "documentation/AuthenticationServices/asauthorizationpublickeycredentialprfregistrationoutput-c.class/issupported.md",
+      "hash": "bebd707d8d0f32585ee6356647b0eb3e22ed8e441a2d9236315d11e6fc73ae27"
+    },
+    "https://developer.apple.com/documentation/authenticationservices/asauthorizationpublickeycredentialprfregistrationoutput-c.class/second": {
+      "etag": "\"191e-65d560ad34ee4-df\"",
+      "file_path": "documentation/AuthenticationServices/asauthorizationpublickeycredentialprfregistrationoutput-c.class/second.md",
+      "hash": "6116d0cbe982fc6bf4ae0df47ef02f8914d417cd37ca70a7086ffdafd50aa893"
     },
     "https://developer.apple.com/documentation/authenticationservices/asauthorizationpublickeycredentialprfregistrationoutput-swift.struct": {
       "etag": "\"3caf-65d560ab6d724-df\"",
@@ -2655,6 +2950,11 @@
       "file_path": "documentation/AuthenticationServices/asauthorizationsecuritykeypublickeycredentialassertion/init(coder).md",
       "hash": "364bc3c1fdc125b7fae12c179c247b3a56089c35942538265bab2737ef9bb36d"
     },
+    "https://developer.apple.com/documentation/authenticationservices/asauthorizationsecuritykeypublickeycredentialassertion/prf-57nvr": {
+      "etag": "\"1883-65d560ab57df4-df\"",
+      "file_path": "documentation/AuthenticationServices/asauthorizationsecuritykeypublickeycredentialassertion/prf-57nvr.md",
+      "hash": "d3ca8eeb3bacc3baca7e83a6757cb81264a539db0367f598bb8fbfc93edd4ebb"
+    },
     "https://developer.apple.com/documentation/authenticationservices/asauthorizationsecuritykeypublickeycredentialassertion/prf-8ylo": {
       "etag": "\"1b44-65d560ab57df4-df\"",
       "file_path": "documentation/AuthenticationServices/asauthorizationsecuritykeypublickeycredentialassertion/prf-8ylo.md",
@@ -2780,6 +3080,11 @@
       "file_path": "documentation/AuthenticationServices/asauthorizationsecuritykeypublickeycredentialregistration/prf-2p2lg.md",
       "hash": "4868c1ce0243ad00e268dde226fa138b7a46528dba1d6d54e25252577a4b8ea8"
     },
+    "https://developer.apple.com/documentation/authenticationservices/asauthorizationsecuritykeypublickeycredentialregistration/prf-2x3x5": {
+      "etag": "\"18ef-65d560aec3823-df\"",
+      "file_path": "documentation/AuthenticationServices/asauthorizationsecuritykeypublickeycredentialregistration/prf-2x3x5.md",
+      "hash": "af33ffd8081dc505134607293010d021fc083861005d7993576d99eb5528abfb"
+    },
     "https://developer.apple.com/documentation/authenticationservices/asauthorizationsecuritykeypublickeycredentialregistration/transports": {
       "etag": "\"319f-65d560aec3823-df\"",
       "file_path": "documentation/AuthenticationServices/asauthorizationsecuritykeypublickeycredentialregistration/transports.md",
@@ -2799,6 +3104,11 @@
       "etag": "\"3a1f-65d560ae2db90-df\"",
       "file_path": "documentation/AuthenticationServices/asauthorizationsecuritykeypublickeycredentialregistrationrequest/excludedcredentials.md",
       "hash": "ec1631c8e89298680e777029ada9d28d6d601298c95e14a079f7bbf09bcb16e6"
+    },
+    "https://developer.apple.com/documentation/authenticationservices/asauthorizationsecuritykeypublickeycredentialregistrationrequest/prf-2ys9l": {
+      "etag": "\"18de-65d560ae2db90-df\"",
+      "file_path": "documentation/AuthenticationServices/asauthorizationsecuritykeypublickeycredentialregistrationrequest/prf-2ys9l.md",
+      "hash": "631a29877e3d6788f6e7bd0caad4d49a95a2ebcebf7e322360053b616d1c2200"
     },
     "https://developer.apple.com/documentation/authenticationservices/asauthorizationsecuritykeypublickeycredentialregistrationrequest/prf-964zl": {
       "etag": "\"1c2c-65d560ae2db90-df\"",
@@ -2839,6 +3149,11 @@
       "etag": "\"17b0-65d560aadb5e0-df\"",
       "file_path": "documentation/AuthenticationServices/asauthorizationsinglesignoncredential/init(coder).md",
       "hash": "f0d4d5a4b7ddd195c2d1cb3287951f2cfbcf61be061dd838ada320527e8f4fcc"
+    },
+    "https://developer.apple.com/documentation/authenticationservices/asauthorizationsinglesignoncredential/privatekeys": {
+      "etag": "\"16ff-65d560aadb5e0-df\"",
+      "file_path": "documentation/AuthenticationServices/asauthorizationsinglesignoncredential/privatekeys.md",
+      "hash": "007f890abe35d8f7f1b48083713bc4171bb9b001696c9328f91a3d431d8ad145"
     },
     "https://developer.apple.com/documentation/authenticationservices/asauthorizationsinglesignoncredential/state": {
       "etag": "\"383f-65d560aadb5e0-df\"",
@@ -2895,6 +3210,41 @@
       "file_path": "documentation/AuthenticationServices/asauthorizationwebbrowserexternallyauthenticatablerequest/authenticatedcontext.md",
       "hash": "64acbbd917492e340aa88e55ad0fde6f961f5e44331febe13d12f57240191800"
     },
+    "https://developer.apple.com/documentation/authenticationservices/asauthorizationwebbrowserplatformpublickeycredential-c.class": {
+      "etag": "\"2ae2-65d560acdd349-df\"",
+      "file_path": "documentation/AuthenticationServices/asauthorizationwebbrowserplatformpublickeycredential-c.class.md",
+      "hash": "644d7745812b33b3609a0e56e4a38187c67d009d83d77cf1f324e1697c1af353"
+    },
+    "https://developer.apple.com/documentation/authenticationservices/asauthorizationwebbrowserplatformpublickeycredential-c.class/credentialid": {
+      "etag": "\"1471-65d560ad616aa-df\"",
+      "file_path": "documentation/AuthenticationServices/asauthorizationwebbrowserplatformpublickeycredential-c.class/credentialid.md",
+      "hash": "9c364234b5c5d5400c527b709d7ac9673cee38f7d51d8ea066cee762dfa46954"
+    },
+    "https://developer.apple.com/documentation/authenticationservices/asauthorizationwebbrowserplatformpublickeycredential-c.class/customtitle": {
+      "etag": "\"14c4-65d560ad616aa-df\"",
+      "file_path": "documentation/AuthenticationServices/asauthorizationwebbrowserplatformpublickeycredential-c.class/customtitle.md",
+      "hash": "b2e6c1655cfbd114da83bc7a73211fd2eadfee5f236fd79dc9be108b68c10d65"
+    },
+    "https://developer.apple.com/documentation/authenticationservices/asauthorizationwebbrowserplatformpublickeycredential-c.class/name": {
+      "etag": "\"1435-65d560ad616aa-df\"",
+      "file_path": "documentation/AuthenticationServices/asauthorizationwebbrowserplatformpublickeycredential-c.class/name.md",
+      "hash": "2c1c9a63517c5ba9b752775d5481f9b6506d3dda0f18aebad398e69a455e819a"
+    },
+    "https://developer.apple.com/documentation/authenticationservices/asauthorizationwebbrowserplatformpublickeycredential-c.class/providername": {
+      "etag": "\"14dc-65d560ad616aa-df\"",
+      "file_path": "documentation/AuthenticationServices/asauthorizationwebbrowserplatformpublickeycredential-c.class/providername.md",
+      "hash": "885deadb2e26931bb86b18831cd831702e3dbed59cba27e4c820c610f57a6ad5"
+    },
+    "https://developer.apple.com/documentation/authenticationservices/asauthorizationwebbrowserplatformpublickeycredential-c.class/relyingparty": {
+      "etag": "\"1493-65d560ad616aa-df\"",
+      "file_path": "documentation/AuthenticationServices/asauthorizationwebbrowserplatformpublickeycredential-c.class/relyingparty.md",
+      "hash": "7edda37adea04c751e8e0a5d9ab1724958465b01b9ec7c33395a6cbe1d5c3f79"
+    },
+    "https://developer.apple.com/documentation/authenticationservices/asauthorizationwebbrowserplatformpublickeycredential-c.class/userhandle": {
+      "etag": "\"145b-65d560ad616aa-df\"",
+      "file_path": "documentation/AuthenticationServices/asauthorizationwebbrowserplatformpublickeycredential-c.class/userhandle.md",
+      "hash": "dd510fdff401dc957c5da0cd55e8bfce43a65142465b3284768c90a44c94654d"
+    },
     "https://developer.apple.com/documentation/authenticationservices/asauthorizationwebbrowserplatformpublickeycredential-swift.struct": {
       "etag": "\"3e7b-65d560ad4a33f-df\"",
       "file_path": "documentation/AuthenticationServices/asauthorizationwebbrowserplatformpublickeycredential-swift.struct.md",
@@ -2935,6 +3285,11 @@
       "file_path": "documentation/AuthenticationServices/asauthorizationwebbrowserplatformpublickeycredentialassertionrequest.md",
       "hash": "1f484029ad69ab57e4a1491403500bb05762a722d1cf52ee3ffeea187116ff35"
     },
+    "https://developer.apple.com/documentation/authenticationservices/asauthorizationwebbrowserplatformpublickeycredentialassertionrequest/clientdata-4b5aw": {
+      "etag": "\"2197-65d560aec3823-df\"",
+      "file_path": "documentation/AuthenticationServices/asauthorizationwebbrowserplatformpublickeycredentialassertionrequest/clientdata-4b5aw.md",
+      "hash": "cf370862faea3fedff852542ef53dd91ef1c773e50759da26bb4099fdab4b15d"
+    },
     "https://developer.apple.com/documentation/authenticationservices/asauthorizationwebbrowserplatformpublickeycredentialassertionrequest/clientdata-655pi": {
       "etag": "\"22ea-65d560aec3823-df\"",
       "file_path": "documentation/AuthenticationServices/asauthorizationwebbrowserplatformpublickeycredentialassertionrequest/clientdata-655pi.md",
@@ -2965,6 +3320,26 @@
       "file_path": "documentation/AuthenticationServices/asauthorizationwebbrowserplatformpublickeycredentialprovider-19bq/createcredentialregistrationrequest(clientdata,name,userid,requeststyle).md",
       "hash": "9b4675e24c4c279d21a320585795216a8526b40e203b8b8cbca7b18f1c9c0a18"
     },
+    "https://developer.apple.com/documentation/authenticationservices/asauthorizationwebbrowserplatformpublickeycredentialprovider-1c8cl": {
+      "etag": "\"234d-65d560ab9c9fa-df\"",
+      "file_path": "documentation/AuthenticationServices/asauthorizationwebbrowserplatformpublickeycredentialprovider-1c8cl.md",
+      "hash": "a955e9f667ca730574786bbff6a05956f6d8af97e21fb3b5506765c62399cdd9"
+    },
+    "https://developer.apple.com/documentation/authenticationservices/asauthorizationwebbrowserplatformpublickeycredentialprovider-1c8cl/createcredentialassertionrequestwithclientdata:": {
+      "etag": "\"233e-65d560ae0acfb-df\"",
+      "file_path": "documentation/AuthenticationServices/asauthorizationwebbrowserplatformpublickeycredentialprovider-1c8cl/createcredentialassertionrequestwithclientdata_.md",
+      "hash": "a406d4a94942763d4d05ff77120287776d2feee4012fcfd14c37b758238d1eea"
+    },
+    "https://developer.apple.com/documentation/authenticationservices/asauthorizationwebbrowserplatformpublickeycredentialprovider-1c8cl/createcredentialregistrationrequestwithclientdata:name:userid:": {
+      "etag": "\"2b94-65d560ae0acfb-df\"",
+      "file_path": "documentation/AuthenticationServices/asauthorizationwebbrowserplatformpublickeycredentialprovider-1c8cl/createcredentialregistrationrequestwithclientdata_name_userid_.md",
+      "hash": "18a8fdd2d5f813aece342927f04a672b275dcc401ef13ac9060219cdd914b7cc"
+    },
+    "https://developer.apple.com/documentation/authenticationservices/asauthorizationwebbrowserplatformpublickeycredentialprovider-1c8cl/createcredentialregistrationrequestwithclientdata:name:userid:requeststyle:": {
+      "etag": "\"30a8-65d560ae0acfb-df\"",
+      "file_path": "documentation/AuthenticationServices/asauthorizationwebbrowserplatformpublickeycredentialprovider-1c8cl/createcredentialregistrationrequestwithclientdata_name_userid_requeststyle_.md",
+      "hash": "bdce77ec941167c5728a42e69dd8bd5261b6c4b66c0cd3e4953a5269380ac328"
+    },
     "https://developer.apple.com/documentation/authenticationservices/asauthorizationwebbrowserplatformpublickeycredentialregistrationrequest": {
       "etag": "\"4d1f-65d560ab22f63-df\"",
       "file_path": "documentation/AuthenticationServices/asauthorizationwebbrowserplatformpublickeycredentialregistrationrequest.md",
@@ -2974,6 +3349,11 @@
       "etag": "\"2a7a-65d560ae2db90-df\"",
       "file_path": "documentation/AuthenticationServices/asauthorizationwebbrowserplatformpublickeycredentialregistrationrequest/clientdata-5dk66.md",
       "hash": "d2b5fcb3b451664f19eda021e8f115a8275c4a405eb95f9e145cccec75925db6"
+    },
+    "https://developer.apple.com/documentation/authenticationservices/asauthorizationwebbrowserplatformpublickeycredentialregistrationrequest/clientdata-7scep": {
+      "etag": "\"2927-65d560ae2db90-df\"",
+      "file_path": "documentation/AuthenticationServices/asauthorizationwebbrowserplatformpublickeycredentialregistrationrequest/clientdata-7scep.md",
+      "hash": "eca3f8a641bf4e9fad97e5c4c4350f11b2f70a1eb9c51f1c8e034332abd48640"
     },
     "https://developer.apple.com/documentation/authenticationservices/asauthorizationwebbrowserplatformpublickeycredentialregistrationrequest/excludedcredentials": {
       "etag": "\"3bf1-65d560ae2db90-df\"",
@@ -3035,6 +3415,11 @@
       "file_path": "documentation/AuthenticationServices/asauthorizationwebbrowserpublickeycredentialmanager/platformcredentials(forrelyingparty).md",
       "hash": "c68421f0cd805a1754968689effc331d8219bb01b2b3d7ea3fd07dba39f1ee49"
     },
+    "https://developer.apple.com/documentation/authenticationservices/asauthorizationwebbrowserpublickeycredentialmanager/platformcredentialsforrelyingparty:completionhandler:": {
+      "etag": "\"3c9c-65d560ab57df4-df\"",
+      "file_path": "documentation/AuthenticationServices/asauthorizationwebbrowserpublickeycredentialmanager/platformcredentialsforrelyingparty_completionhandler_.md",
+      "hash": "682a699e3d00deb3d1a35eef7963cff4439824d72bae86687a92f4ec2ea9fea7"
+    },
     "https://developer.apple.com/documentation/authenticationservices/asauthorizationwebbrowserpublickeycredentialmanager/requestauthorizationforpublickeycredentials(_:)": {
       "etag": "\"490b-65d560ab57df4-df\"",
       "file_path": "documentation/AuthenticationServices/asauthorizationwebbrowserpublickeycredentialmanager/requestauthorizationforpublickeycredentials(_).md",
@@ -3049,6 +3434,26 @@
       "etag": "\"1bea-65d560ad4a33f-df\"",
       "file_path": "documentation/AuthenticationServices/asauthorizationwebbrowsersecuritykeypublickeycredentialassertionrequest/clientdata-1ld1w.md",
       "hash": "90cea97119bdea08dd174503022afaca77e2566832e19a24da002d3aa61cfe74"
+    },
+    "https://developer.apple.com/documentation/authenticationservices/asauthorizationwebbrowsersecuritykeypublickeycredentialassertionrequest/clientdata-z5qa": {
+      "etag": "\"1a35-65d560ad4a33f-df\"",
+      "file_path": "documentation/AuthenticationServices/asauthorizationwebbrowsersecuritykeypublickeycredentialassertionrequest/clientdata-z5qa.md",
+      "hash": "a84c7d7bcfa558cbffb5b4d2defc67f56afebc17238eb7c7554b489def22a4b3"
+    },
+    "https://developer.apple.com/documentation/authenticationservices/asauthorizationwebbrowsersecuritykeypublickeycredentialprovider-4gzot": {
+      "etag": "\"1ffc-65d560ac1939d-df\"",
+      "file_path": "documentation/AuthenticationServices/asauthorizationwebbrowsersecuritykeypublickeycredentialprovider-4gzot.md",
+      "hash": "ec861f8a1bfad683ad2e9124f06b5778b9186df2e9693bf8a6815b97305f89a3"
+    },
+    "https://developer.apple.com/documentation/authenticationservices/asauthorizationwebbrowsersecuritykeypublickeycredentialprovider-4gzot/createcredentialassertionrequestwithclientdata:": {
+      "etag": "\"2628-65d560ae80938-df\"",
+      "file_path": "documentation/AuthenticationServices/asauthorizationwebbrowsersecuritykeypublickeycredentialprovider-4gzot/createcredentialassertionrequestwithclientdata_.md",
+      "hash": "3af61e8ae4a1feb07f2a5eaedd8720f5f35ee03714d80a82617a7021ee117ad3"
+    },
+    "https://developer.apple.com/documentation/authenticationservices/asauthorizationwebbrowsersecuritykeypublickeycredentialprovider-4gzot/createcredentialregistrationrequestwithclientdata:displayname:name:userid:": {
+      "etag": "\"31cf-65d560ae80938-df\"",
+      "file_path": "documentation/AuthenticationServices/asauthorizationwebbrowsersecuritykeypublickeycredentialprovider-4gzot/createcredentialregistrationrequestwithclientdata_displayname_name_userid_.md",
+      "hash": "86e60338efaad477d24beaa6efb9173781715a1ed5d538a8f84e6bb7507d3317"
     },
     "https://developer.apple.com/documentation/authenticationservices/asauthorizationwebbrowsersecuritykeypublickeycredentialprovider-8xc1s": {
       "etag": "\"26b0-65d560ae0acfb-df\"",
@@ -3074,6 +3479,11 @@
       "etag": "\"1c26-65d560ac1939d-df\"",
       "file_path": "documentation/AuthenticationServices/asauthorizationwebbrowsersecuritykeypublickeycredentialregistrationrequest/clientdata-3hz81.md",
       "hash": "5ec39c9d8ddc985eb5214012a0dbdfc224c4c92e4f1e32589faa28b5085c7736"
+    },
+    "https://developer.apple.com/documentation/authenticationservices/asauthorizationwebbrowsersecuritykeypublickeycredentialregistrationrequest/clientdata-t1ze": {
+      "etag": "\"1a71-65d560ac1939d-df\"",
+      "file_path": "documentation/AuthenticationServices/asauthorizationwebbrowsersecuritykeypublickeycredentialregistrationrequest/clientdata-t1ze.md",
+      "hash": "bb6fcd9d8c3ec83d0bff9af84dfc4861ad43ca10fcc2f9efcf8c3db5eb7173c5"
     },
     "https://developer.apple.com/documentation/authenticationservices/asautofillurlscope": {
       "etag": "\"39e1-65d560adb8d11-df\"",
@@ -3310,6 +3720,11 @@
       "file_path": "documentation/AuthenticationServices/ascredentialidentitystore/credentialidentities(forservice,credentialidentitytypes).md",
       "hash": "64772ee25d39ddaf53a49cec4e0e4f131246fbf3e1f30ddf30260eae56a0f5cd"
     },
+    "https://developer.apple.com/documentation/authenticationservices/ascredentialidentitystore/getcredentialidentitiesforservice:credentialidentitytypes:completionhandler:": {
+      "etag": "\"3010-65dbf914ed55c-df\"",
+      "file_path": "documentation/AuthenticationServices/ascredentialidentitystore/getcredentialidentitiesforservice_credentialidentitytypes_completionhandler_.md",
+      "hash": "ede3b5b902989c80db7fdd6d4adcb7eda53f366fd50d0db68ac71ff8892d1017"
+    },
     "https://developer.apple.com/documentation/authenticationservices/ascredentialidentitystore/getstate(_:)": {
       "etag": "\"33f0-65d560adb8d11-df\"",
       "file_path": "documentation/AuthenticationServices/ascredentialidentitystore/getstate(_).md",
@@ -3449,6 +3864,11 @@
       "etag": "\"2c4a-65d560ab85b1e-df\"",
       "file_path": "documentation/AuthenticationServices/ascredentialidentitystorestate/supportsincrementalupdates.md",
       "hash": "fc20784a63f293f9a7973c9838be90e2d349aa12df07d440bcdc43fab32b12b9"
+    },
+    "https://developer.apple.com/documentation/authenticationservices/ascredentialidentitytypes/ascredentialidentitytypesall": {
+      "etag": "\"12ea-65d560ac1939d-df\"",
+      "file_path": "documentation/AuthenticationServices/ascredentialidentitytypes/ascredentialidentitytypesall.md",
+      "hash": "55182ab80fc60276616eb2203d6305ca670c5d6063935ffc09e1cd40b2176a0d"
     },
     "https://developer.apple.com/documentation/authenticationservices/ascredentialimportmanager": {
       "etag": "\"468b-65d560aec3823-df\"",
@@ -4069,6 +4489,11 @@
       "etag": "\"24a8-65d560ac33d30-df\"",
       "file_path": "documentation/AuthenticationServices/asgeneratepasswordsrequest/serviceidentifier.md",
       "hash": "6b4cdac268b4f8c47cf49fd70e60028ea3a3f563c1262345dd9786e6dd1b7fac"
+    },
+    "https://developer.apple.com/documentation/authenticationservices/asimage": {
+      "etag": "\"122b-65d560ab08233-df\"",
+      "file_path": "documentation/AuthenticationServices/asimage.md",
+      "hash": "e59dc6a5f6fc98658e53a25a51d66dcff10379752ed6eab1fc164c23a07a67e8"
     },
     "https://developer.apple.com/documentation/authenticationservices/asimportableaccount": {
       "etag": "\"58c8-65d560acdd349-df\"",
@@ -5315,6 +5740,11 @@
       "file_path": "documentation/AuthenticationServices/asonetimecodecredential/code.md",
       "hash": "0c44b386418a97a9b1ee271dca098b05502ef9c2c4fa8e3380c743c3c2affc20"
     },
+    "https://developer.apple.com/documentation/authenticationservices/asonetimecodecredential/credentialwithcode:": {
+      "etag": "\"175a-65d560aea302f-df\"",
+      "file_path": "documentation/AuthenticationServices/asonetimecodecredential/credentialwithcode_.md",
+      "hash": "c25777d85b7079a444a33388525cdfb6b50b2ab0df539e8f999a9b391f6bdf49"
+    },
     "https://developer.apple.com/documentation/authenticationservices/asonetimecodecredential/init(code:)": {
       "etag": "\"23b3-65d560aea302f-df\"",
       "file_path": "documentation/AuthenticationServices/asonetimecodecredential/init(code).md",
@@ -5380,6 +5810,16 @@
       "file_path": "documentation/AuthenticationServices/aspasskeyassertioncredential/credentialid.md",
       "hash": "1c918fa99f3db4902cb9e71aba4550b79bcfda482429fc1f56bce5be43ea75e8"
     },
+    "https://developer.apple.com/documentation/authenticationservices/aspasskeyassertioncredential/credentialwithuserhandle:relyingparty:signature:clientdatahash:authenticatordata:credentialid:": {
+      "etag": "\"39b4-65d560ab3eb78-df\"",
+      "file_path": "documentation/AuthenticationServices/aspasskeyassertioncredential/credentialwithuserhandle_relyingparty_signature_clientdatahash_authenticatordata_credentialid_.md",
+      "hash": "f954193d6669a23996721071f568688270ae438dbe6458429666e358ccb131fc"
+    },
+    "https://developer.apple.com/documentation/authenticationservices/aspasskeyassertioncredential/extensionoutput-46ib3": {
+      "etag": "\"1859-65d560ab3eb78-df\"",
+      "file_path": "documentation/AuthenticationServices/aspasskeyassertioncredential/extensionoutput-46ib3.md",
+      "hash": "0d796b4f6c8c93839162cfeb55eecf045b62628307d8779b9b2d387282dab699"
+    },
     "https://developer.apple.com/documentation/authenticationservices/aspasskeyassertioncredential/extensionoutput-7t6rn": {
       "etag": "\"1b2b-65d560ab3eb78-df\"",
       "file_path": "documentation/AuthenticationServices/aspasskeyassertioncredential/extensionoutput-7t6rn.md",
@@ -5400,6 +5840,11 @@
       "file_path": "documentation/AuthenticationServices/aspasskeyassertioncredential/init(userhandle,relyingparty,signature,clientdatahash,authenticatordata,credentialid,extensionoutput).md",
       "hash": "2047fc795452992dd6df49963e607de89d0bae2eec0ca5cb9d1a5ef2780539bf"
     },
+    "https://developer.apple.com/documentation/authenticationservices/aspasskeyassertioncredential/initwithuserhandle:relyingparty:signature:clientdatahash:authenticatordata:credentialid:extensionoutput:": {
+      "etag": "\"3e63-65d560ab3eb78-df\"",
+      "file_path": "documentation/AuthenticationServices/aspasskeyassertioncredential/initwithuserhandle_relyingparty_signature_clientdatahash_authenticatordata_credentialid_extensionoutput_.md",
+      "hash": "4e3dcb9c5060512f3e2906a20fbeffc5546a71f032e86c0e538f7c2c7b755e95"
+    },
     "https://developer.apple.com/documentation/authenticationservices/aspasskeyassertioncredential/relyingparty": {
       "etag": "\"40db-65d560ab3eb78-df\"",
       "file_path": "documentation/AuthenticationServices/aspasskeyassertioncredential/relyingparty.md",
@@ -5414,6 +5859,16 @@
       "etag": "\"4098-65d560ab3eb78-df\"",
       "file_path": "documentation/AuthenticationServices/aspasskeyassertioncredential/userhandle.md",
       "hash": "a3aca516f4bd29cd0c77477c59e32165eca7588e23936566c8373dd6e994e537"
+    },
+    "https://developer.apple.com/documentation/authenticationservices/aspasskeyassertioncredentialextensioninput-c.class": {
+      "etag": "\"38ec-65d560adea589-df\"",
+      "file_path": "documentation/AuthenticationServices/aspasskeyassertioncredentialextensioninput-c.class.md",
+      "hash": "1aadf6795d9b70443ecba3e159b509788f602a85127af9e853665dba755e7adf"
+    },
+    "https://developer.apple.com/documentation/authenticationservices/aspasskeyassertioncredentialextensioninput-c.class/largeblob": {
+      "etag": "\"1672-65d560acdd349-df\"",
+      "file_path": "documentation/AuthenticationServices/aspasskeyassertioncredentialextensioninput-c.class/largeblob.md",
+      "hash": "28e51cb88816d4f0fa1969c2a5cebee0eb59d8e2b2cfa59b744a4b7f988c4e87"
     },
     "https://developer.apple.com/documentation/authenticationservices/aspasskeyassertioncredentialextensioninput-swift.struct": {
       "etag": "\"2a86-65d560aec3823-df\"",
@@ -5434,6 +5889,21 @@
       "etag": "\"1d3c-65d560ad4a33f-df\"",
       "file_path": "documentation/AuthenticationServices/aspasskeyassertioncredentialextensioninput-swift.struct/prf.md",
       "hash": "9cd36ccbe8e113652777be7bb5e2b266876e56081f261dde01156b1bfd597862"
+    },
+    "https://developer.apple.com/documentation/authenticationservices/aspasskeyassertioncredentialextensionoutput-c.class": {
+      "etag": "\"28ca-65d560ae4aa18-df\"",
+      "file_path": "documentation/AuthenticationServices/aspasskeyassertioncredentialextensionoutput-c.class.md",
+      "hash": "33143e6717efefd228a4cb615248612a3cec8251250bd20afd16b151bd20697d"
+    },
+    "https://developer.apple.com/documentation/authenticationservices/aspasskeyassertioncredentialextensionoutput-c.class/initwithlargebloboutput:": {
+      "etag": "\"176c-65d560ab22f63-df\"",
+      "file_path": "documentation/AuthenticationServices/aspasskeyassertioncredentialextensionoutput-c.class/initwithlargebloboutput_.md",
+      "hash": "549ed8a704ec901ddf1c061adcb7ba3ccaf6407913baa0914a51cb520f943fd6"
+    },
+    "https://developer.apple.com/documentation/authenticationservices/aspasskeyassertioncredentialextensionoutput-c.class/largeblobassertionoutput": {
+      "etag": "\"17d0-65d560ab22f63-df\"",
+      "file_path": "documentation/AuthenticationServices/aspasskeyassertioncredentialextensionoutput-c.class/largeblobassertionoutput.md",
+      "hash": "b3d3f70ee1375f79938aa617c064191ee1ad240edc2b62d3e6afd68f080eed86"
     },
     "https://developer.apple.com/documentation/authenticationservices/aspasskeyassertioncredentialextensionoutput-swift.struct": {
       "etag": "\"2b10-65d560ae2db90-df\"",
@@ -5500,6 +5970,11 @@
       "file_path": "documentation/AuthenticationServices/aspasskeycredentialidentity/init(relyingpartyidentifier,username,credentialid,userhandle,recordidentifier)-9iuhb.md",
       "hash": "daf136236fd400707b97fce972a075099c73d64a925628aedd1e73eb12ed66dd"
     },
+    "https://developer.apple.com/documentation/authenticationservices/aspasskeycredentialidentity/initwithrelyingpartyidentifier:username:credentialid:userhandle:recordidentifier:": {
+      "etag": "\"3189-65d560ac1939d-df\"",
+      "file_path": "documentation/AuthenticationServices/aspasskeycredentialidentity/initwithrelyingpartyidentifier_username_credentialid_userhandle_recordidentifier_.md",
+      "hash": "b5df67c0854f46125cb48072bd7697c6de24e0ce7e57d3d41b27980033d5bf7a"
+    },
     "https://developer.apple.com/documentation/authenticationservices/aspasskeycredentialidentity/rank": {
       "etag": "\"23be-65d560ac1939d-df\"",
       "file_path": "documentation/AuthenticationServices/aspasskeycredentialidentity/rank.md",
@@ -5529,6 +6004,11 @@
       "etag": "\"1081b-65d560aec3823-df\"",
       "file_path": "documentation/AuthenticationServices/aspasskeycredentialrequest.md",
       "hash": "178a62ded7b228946315bb1a7b43ac6cb8ee1662f9c9b105a50e0c00a0963404"
+    },
+    "https://developer.apple.com/documentation/authenticationservices/aspasskeycredentialrequest/assertionextensioninput": {
+      "etag": "\"2d7d-65d560ab85b1e-df\"",
+      "file_path": "documentation/AuthenticationServices/aspasskeycredentialrequest/assertionextensioninput.md",
+      "hash": "89c6ad0757907da7f1226e9e88759ea005bd2468f68da90044670d2556eae34a"
     },
     "https://developer.apple.com/documentation/authenticationservices/aspasskeycredentialrequest/clientdatahash": {
       "etag": "\"45b8-65d560ab6d724-df\"",
@@ -5570,6 +6050,31 @@
       "file_path": "documentation/AuthenticationServices/aspasskeycredentialrequest/init(credentialidentity,clientdatahash,userverificationpreference,supportedalgorithms,extensioninput)-9hsyv.md",
       "hash": "cb2a29f5849566967b292530b19421c7610359523f9a462930ab42781d631433"
     },
+    "https://developer.apple.com/documentation/authenticationservices/aspasskeycredentialrequest/initwithcredentialidentity:clientdatahash:userverificationpreference:supportedalgorithms:": {
+      "etag": "\"4d71-65d560ab6d724-df\"",
+      "file_path": "documentation/AuthenticationServices/aspasskeycredentialrequest/initwithcredentialidentity_clientdatahash_userverificationpreference_supportedalgorithms_.md",
+      "hash": "0d740ab6b96a0180afc5d053e51c9b6db51af41b9b0184bb337e65e096242334"
+    },
+    "https://developer.apple.com/documentation/authenticationservices/aspasskeycredentialrequest/initwithcredentialidentity:clientdatahash:userverificationpreference:supportedalgorithms:assertionextensioninput:": {
+      "etag": "\"4af2-65d560ab6d724-df\"",
+      "file_path": "documentation/AuthenticationServices/aspasskeycredentialrequest/initwithcredentialidentity_clientdatahash_userverificationpreference_supportedalgorithms_assertionextensioninput_.md",
+      "hash": "536a3978c98232674a01a709eb055de7f6fb986e1306ff9360ca03de390c862d"
+    },
+    "https://developer.apple.com/documentation/authenticationservices/aspasskeycredentialrequest/initwithcredentialidentity:clientdatahash:userverificationpreference:supportedalgorithms:registrationextensioninput:": {
+      "etag": "\"4b25-65d560ab85b1e-df\"",
+      "file_path": "documentation/AuthenticationServices/aspasskeycredentialrequest/initwithcredentialidentity_clientdatahash_userverificationpreference_supportedalgorithms_registrationextensioninput_.md",
+      "hash": "ecf36861cc6f4f18c0c3e920819b555a704829658294fc2cee9e0812c92c2f5a"
+    },
+    "https://developer.apple.com/documentation/authenticationservices/aspasskeycredentialrequest/registrationextensioninput": {
+      "etag": "\"2d98-65d560ab6d724-df\"",
+      "file_path": "documentation/AuthenticationServices/aspasskeycredentialrequest/registrationextensioninput.md",
+      "hash": "10fb3a482083f68891c1e5dacaaa26e5a220546e6d90585405919fd205bdcff4"
+    },
+    "https://developer.apple.com/documentation/authenticationservices/aspasskeycredentialrequest/supportedalgorithms-27z68": {
+      "etag": "\"33b1-65d560ab85b1e-df\"",
+      "file_path": "documentation/AuthenticationServices/aspasskeycredentialrequest/supportedalgorithms-27z68.md",
+      "hash": "1849f05b5cd84550a63a31064a4d82e83e74612673dfb7d48f7cc0bfa51eb878"
+    },
     "https://developer.apple.com/documentation/authenticationservices/aspasskeycredentialrequest/supportedalgorithms-74mad": {
       "etag": "\"2f5a-65d560ab85b1e-df\"",
       "file_path": "documentation/AuthenticationServices/aspasskeycredentialrequest/supportedalgorithms-74mad.md",
@@ -5599,6 +6104,11 @@
       "etag": "\"1ba7-65d560ab3eb78-df\"",
       "file_path": "documentation/AuthenticationServices/aspasskeycredentialrequestparameters/extensioninput-2edlv.md",
       "hash": "9261da64926e1a71eeaa73813ca14b4fe8626afc0644c14738ba50fb85d264ed"
+    },
+    "https://developer.apple.com/documentation/authenticationservices/aspasskeycredentialrequestparameters/extensioninput-5ny4g": {
+      "etag": "\"1946-65d560ab3eb78-df\"",
+      "file_path": "documentation/AuthenticationServices/aspasskeycredentialrequestparameters/extensioninput-5ny4g.md",
+      "hash": "35f487a4bb5f21bc1b26faf11a3d8c5fabc43b97d27532c603e9943dfb306ba7"
     },
     "https://developer.apple.com/documentation/authenticationservices/aspasskeycredentialrequestparameters/init(coder:)": {
       "etag": "\"1793-65d560ab3eb78-df\"",
@@ -5635,10 +6145,20 @@
       "file_path": "documentation/AuthenticationServices/aspasskeyregistrationcredential/credentialid.md",
       "hash": "f5e612dce52ab89d65a6777be4c052816fbe0c21ab85bc595cd08e47aec46463"
     },
+    "https://developer.apple.com/documentation/authenticationservices/aspasskeyregistrationcredential/credentialwithrelyingparty:clientdatahash:credentialid:attestationobject:": {
+      "etag": "\"32c3-65d560ab9c9fa-df\"",
+      "file_path": "documentation/AuthenticationServices/aspasskeyregistrationcredential/credentialwithrelyingparty_clientdatahash_credentialid_attestationobject_.md",
+      "hash": "36a923b7022423b87517477b36f77fdf0dc2525a3a025d99058677122e145b6d"
+    },
     "https://developer.apple.com/documentation/authenticationservices/aspasskeyregistrationcredential/extensionoutput-2lf9m": {
       "etag": "\"1b91-65d560ab9c9fa-df\"",
       "file_path": "documentation/AuthenticationServices/aspasskeyregistrationcredential/extensionoutput-2lf9m.md",
       "hash": "e14f6c6db25a08e6f0900f9ec379860c0e3e5b0cd65107a330f43bf648e710b7"
+    },
+    "https://developer.apple.com/documentation/authenticationservices/aspasskeyregistrationcredential/extensionoutput-95gvu": {
+      "etag": "\"18b3-65d560ab9c9fa-df\"",
+      "file_path": "documentation/AuthenticationServices/aspasskeyregistrationcredential/extensionoutput-95gvu.md",
+      "hash": "657a3b2b330d60188d17b2a52671ca594653fbc8ae43b291a4f9dc0792082db1"
     },
     "https://developer.apple.com/documentation/authenticationservices/aspasskeyregistrationcredential/init(coder:)": {
       "etag": "\"170f-65d560ab9c9fa-df\"",
@@ -5655,10 +6175,25 @@
       "file_path": "documentation/AuthenticationServices/aspasskeyregistrationcredential/init(relyingparty,clientdatahash,credentialid,attestationobject,extensionoutput).md",
       "hash": "0bc5492e7c587b20997117b02dc14fa2393dd9db33964988d538741b6653a44c"
     },
+    "https://developer.apple.com/documentation/authenticationservices/aspasskeyregistrationcredential/initwithrelyingparty:clientdatahash:credentialid:attestationobject:extensionoutput:": {
+      "etag": "\"382c-65d560ab9c9fa-df\"",
+      "file_path": "documentation/AuthenticationServices/aspasskeyregistrationcredential/initwithrelyingparty_clientdatahash_credentialid_attestationobject_extensionoutput_.md",
+      "hash": "feba693b8d5eb30b1b9b93fb698eed5041cb84894c1daf108b394c228e213ea4"
+    },
     "https://developer.apple.com/documentation/authenticationservices/aspasskeyregistrationcredential/relyingparty": {
       "etag": "\"35b9-65d560ab9c9fa-df\"",
       "file_path": "documentation/AuthenticationServices/aspasskeyregistrationcredential/relyingparty.md",
       "hash": "b4c4eb8fff818cf5593d4819a766687e7d7aefc4fc9acccfa1347d2afb9c29d0"
+    },
+    "https://developer.apple.com/documentation/authenticationservices/aspasskeyregistrationcredentialextensioninput-c.class": {
+      "etag": "\"3569-65d560ad34ee4-df\"",
+      "file_path": "documentation/AuthenticationServices/aspasskeyregistrationcredentialextensioninput-c.class.md",
+      "hash": "2fe129b04be286d1c647b4e8a355df26bd3f5558b7e610af21425caab4954688"
+    },
+    "https://developer.apple.com/documentation/authenticationservices/aspasskeyregistrationcredentialextensioninput-c.class/largeblob": {
+      "etag": "\"153c-65d560abd5f27-df\"",
+      "file_path": "documentation/AuthenticationServices/aspasskeyregistrationcredentialextensioninput-c.class/largeblob.md",
+      "hash": "95f7e3f8c11c2c4539b40b2270add2a968742ed352027516511c96a3bd3a2c1a"
     },
     "https://developer.apple.com/documentation/authenticationservices/aspasskeyregistrationcredentialextensioninput-swift.struct": {
       "etag": "\"2f9f-65d560ae2db90-df\"",
@@ -5674,6 +6209,21 @@
       "etag": "\"227e-65d560adb8d11-df\"",
       "file_path": "documentation/AuthenticationServices/aspasskeyregistrationcredentialextensioninput-swift.struct/prf.md",
       "hash": "62d967f3f00edaa606feed2f554e48a19be2a7b2671b9f9ae5fb5f50e39af4e1"
+    },
+    "https://developer.apple.com/documentation/authenticationservices/aspasskeyregistrationcredentialextensionoutput-c.class": {
+      "etag": "\"2928-65d560acdd349-df\"",
+      "file_path": "documentation/AuthenticationServices/aspasskeyregistrationcredentialextensionoutput-c.class.md",
+      "hash": "54e67ccf79e5f8bf06c716e116864d152f4552bc5b3c212fd76ff22750de01a9"
+    },
+    "https://developer.apple.com/documentation/authenticationservices/aspasskeyregistrationcredentialextensionoutput-c.class/initwithlargebloboutput:": {
+      "etag": "\"1794-65d560aec3823-df\"",
+      "file_path": "documentation/AuthenticationServices/aspasskeyregistrationcredentialextensionoutput-c.class/initwithlargebloboutput_.md",
+      "hash": "e64dd6ea5a802c542a4ad2ded0cb760af76f608459e6840026ac7328fe7b529e"
+    },
+    "https://developer.apple.com/documentation/authenticationservices/aspasskeyregistrationcredentialextensionoutput-c.class/largeblobregistrationoutput": {
+      "etag": "\"1825-65d560aec3823-df\"",
+      "file_path": "documentation/AuthenticationServices/aspasskeyregistrationcredentialextensionoutput-c.class/largeblobregistrationoutput.md",
+      "hash": "c9354f9cb28ace77fccfac44456bbdd4546eee652ba4cd05cfc291e1bc56024d"
     },
     "https://developer.apple.com/documentation/authenticationservices/aspasskeyregistrationcredentialextensionoutput-swift.struct": {
       "etag": "\"2ba0-65d560adea589-df\"",
@@ -5700,6 +6250,11 @@
       "file_path": "documentation/AuthenticationServices/aspasswordcredential.md",
       "hash": "a17481e19b88e9da15480e860e73262ce6ea83da3c5b98e73025192eae88a9e0"
     },
+    "https://developer.apple.com/documentation/authenticationservices/aspasswordcredential/credentialwithuser:password:": {
+      "etag": "\"212a-65d560adea589-df\"",
+      "file_path": "documentation/AuthenticationServices/aspasswordcredential/credentialwithuser_password_.md",
+      "hash": "ea7a39d1a321bce82e4284b50187152fa7ab92d70c5de1a9bb9179a431000ab5"
+    },
     "https://developer.apple.com/documentation/authenticationservices/aspasswordcredential/init(coder:)": {
       "etag": "\"1692-65d560adea589-df\"",
       "file_path": "documentation/AuthenticationServices/aspasswordcredential/init(coder).md",
@@ -5724,6 +6279,11 @@
       "etag": "\"a18a-65d560ad4a33f-df\"",
       "file_path": "documentation/AuthenticationServices/aspasswordcredentialidentity.md",
       "hash": "a158595f3ea6ce15753cc7a8ae1769391c433e19c0c329757403c0f13a5e3571"
+    },
+    "https://developer.apple.com/documentation/authenticationservices/aspasswordcredentialidentity/identitywithserviceidentifier:user:recordidentifier:": {
+      "etag": "\"2ced-65d560acdd349-df\"",
+      "file_path": "documentation/AuthenticationServices/aspasswordcredentialidentity/identitywithserviceidentifier_user_recordidentifier_.md",
+      "hash": "ce2ecd5271ca9f88aa9e96f227bb256757286b1c424939af1627bd560fdd38bd"
     },
     "https://developer.apple.com/documentation/authenticationservices/aspasswordcredentialidentity/init(coder:)": {
       "etag": "\"16fc-65d560acdd349-df\"",
@@ -5770,6 +6330,11 @@
       "file_path": "documentation/AuthenticationServices/aspasswordcredentialrequest/init(credentialidentity).md",
       "hash": "81adf20564c762f4f33c6027b3d96fc4d2f00a765b18537006fc1e034c6bbcdb"
     },
+    "https://developer.apple.com/documentation/authenticationservices/aspasswordcredentialrequest/requestwithcredentialidentity:": {
+      "etag": "\"230c-65d560ab57df4-df\"",
+      "file_path": "documentation/AuthenticationServices/aspasswordcredentialrequest/requestwithcredentialidentity_.md",
+      "hash": "74f9ab56145a4e750ad8c5f09ebb787c62e5171887e3713a6c4a125df46df3ee"
+    },
     "https://developer.apple.com/documentation/authenticationservices/asphonenumberidentifier": {
       "etag": "\"15f0-65d560ae2db90-df\"",
       "file_path": "documentation/AuthenticationServices/asphonenumberidentifier.md",
@@ -5799,6 +6364,36 @@
       "etag": "\"2b7b-65d560ab9c9fa-df\"",
       "file_path": "documentation/AuthenticationServices/aspublickeycredential/rawclientdatajson.md",
       "hash": "0697c4a9609c2f0c80290beaa442db449ea9eff1a6ffac6958579248be702ebe"
+    },
+    "https://developer.apple.com/documentation/authenticationservices/aspublickeycredentialclientdata-c.class": {
+      "etag": "\"2035-65d560ac33d30-df\"",
+      "file_path": "documentation/AuthenticationServices/aspublickeycredentialclientdata-c.class.md",
+      "hash": "50f4a323d4e8a41f10866f2c9dedfd16098c220645282084f116b457033cd9b3"
+    },
+    "https://developer.apple.com/documentation/authenticationservices/aspublickeycredentialclientdata-c.class/challenge": {
+      "etag": "\"12bf-65d560ac33d30-df\"",
+      "file_path": "documentation/AuthenticationServices/aspublickeycredentialclientdata-c.class/challenge.md",
+      "hash": "3364a1a723f9887b09868544ed581d3bf219d1dd45811f03e1af96157eb4637f"
+    },
+    "https://developer.apple.com/documentation/authenticationservices/aspublickeycredentialclientdata-c.class/crossorigin": {
+      "etag": "\"16b6-65d560ac33d30-df\"",
+      "file_path": "documentation/AuthenticationServices/aspublickeycredentialclientdata-c.class/crossorigin.md",
+      "hash": "1926ce29fb1a299ebb6c87b4c48fa15a2686b38c974bd8dbe3bbb494d8a07614"
+    },
+    "https://developer.apple.com/documentation/authenticationservices/aspublickeycredentialclientdata-c.class/initwithchallenge:origin:": {
+      "etag": "\"17ed-65d560ac33d30-df\"",
+      "file_path": "documentation/AuthenticationServices/aspublickeycredentialclientdata-c.class/initwithchallenge_origin_.md",
+      "hash": "3aaa65c4716f19321dd3ca449167e40293a5fd00bf36d25d8f54b6c19c5a7b50"
+    },
+    "https://developer.apple.com/documentation/authenticationservices/aspublickeycredentialclientdata-c.class/origin": {
+      "etag": "\"12bd-65d560ac33d30-df\"",
+      "file_path": "documentation/AuthenticationServices/aspublickeycredentialclientdata-c.class/origin.md",
+      "hash": "f9a07bffb6fdbb949582e81a19ea35dd8d8f16d1ee9efe899f13472b5cc2f42e"
+    },
+    "https://developer.apple.com/documentation/authenticationservices/aspublickeycredentialclientdata-c.class/toporigin": {
+      "etag": "\"1322-65d560ac33d30-df\"",
+      "file_path": "documentation/AuthenticationServices/aspublickeycredentialclientdata-c.class/toporigin.md",
+      "hash": "473a9dd262ac2791e8367acf12cb2f2ed9b26830a048605ae99433d86bf10db7"
     },
     "https://developer.apple.com/documentation/authenticationservices/aspublickeycredentialclientdata-swift.struct": {
       "etag": "\"2c64-65d560ae0acfb-df\"",
@@ -6054,6 +6649,11 @@
       "etag": "\"12d3-65d560adea589-df\"",
       "file_path": "documentation/AuthenticationServices/asverificationcode/timestamp.md",
       "hash": "66691463a3823e9832df376183f74d8128919801c0f8b39d98340597994493f2"
+    },
+    "https://developer.apple.com/documentation/authenticationservices/asviewcontroller": {
+      "etag": "\"163e-65d560adea589-df\"",
+      "file_path": "documentation/AuthenticationServices/asviewcontroller.md",
+      "hash": "12e98aaf17f6cb891ad6de39f4525975f5d4e2582f712be01f9cf2f1dae10830"
     },
     "https://developer.apple.com/documentation/authenticationservices/aswebauthenticationpresentationcontextproviding": {
       "etag": "\"3cda-65d560ad34ee4-df\"",
@@ -6674,6 +7274,31 @@
       "etag": "\"1b9c4-65d560aadb5e0-df\"",
       "file_path": "documentation/AuthenticationServices/AuthenticationServices.md",
       "hash": "b62a12cd0f9dfa5888daa17fed2af832b6a640ae193531b61b4f07a4f41b7d92"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/authenticationservices/as_api_available.json": {
+      "etag": "\"b74-65d560ab08233-df\"",
+      "file_path": "documentation/AuthenticationServices/as_api_available.md",
+      "hash": "7022713cfc5983a6c9690658ae3856a47ec4776dd9c1341690716e6c8fae914d"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/authenticationservices/as_extern.json": {
+      "etag": "\"b20-65d560ab9c9fa-df\"",
+      "file_path": "documentation/AuthenticationServices/as_extern.md",
+      "hash": "7bc892a3155136a0b57f6c6936c176a940d5870fdf1299bc54ff7a4754a55e4e"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/authenticationservices/as_header_audit_begin.json": {
+      "etag": "\"bb0-65d560aec3823-df\"",
+      "file_path": "documentation/AuthenticationServices/as_header_audit_begin.md",
+      "hash": "8d41e99d5cbdc029d2c3312850b7c33bbe9424f3bd4af1b37c62dd5bc7b9dd48"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/authenticationservices/as_header_audit_end.json": {
+      "etag": "\"b98-65d560ae80938-df\"",
+      "file_path": "documentation/AuthenticationServices/as_header_audit_end.md",
+      "hash": "211c73810cf63eacaf51717eea82cdd7317812ca5a940e73dd8fc069bcaf31d7"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/authenticationservices/as_swift_sendable.json": {
+      "etag": "\"b80-65d560aec3823-df\"",
+      "file_path": "documentation/AuthenticationServices/as_swift_sendable.md",
+      "hash": "2133188dbca42e7146235787a290fb54b6bdd1fa58658e67d95e6096da801c47"
     },
     "https://developer.apple.com/tutorials/data/documentation/authenticationservices/asaccountauthenticationmodificationcontroller.json": {
       "etag": "\"765d-65d560ae0acfb-df\"",
@@ -7490,6 +8115,16 @@
       "file_path": "documentation/AuthenticationServices/asauthorizationplatformpublickeycredentialassertion/largeblob-29ggs.md",
       "hash": "787764860280edff72c96963a70d31f46323cae459a877e733d5b5de030406a2"
     },
+    "https://developer.apple.com/tutorials/data/documentation/authenticationservices/asauthorizationplatformpublickeycredentialassertion/largeblob-97tbp.json": {
+      "etag": "\"19cd-65d560ab08233-df\"",
+      "file_path": "documentation/AuthenticationServices/asauthorizationplatformpublickeycredentialassertion/largeblob-97tbp.md",
+      "hash": "979e3c0e111af84a97bef31a5286d289a8528f67c44cd98dd84cb8627d3d8597"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/authenticationservices/asauthorizationplatformpublickeycredentialassertion/prf-8blir.json": {
+      "etag": "\"186f-65d560ab08233-df\"",
+      "file_path": "documentation/AuthenticationServices/asauthorizationplatformpublickeycredentialassertion/prf-8blir.md",
+      "hash": "b15c260a8e8e42ef6650ecbbb144a6301d5676b40bc69d8b66636d3c16dbe2ff"
+    },
     "https://developer.apple.com/tutorials/data/documentation/authenticationservices/asauthorizationplatformpublickeycredentialassertion/prf-8o9sr.json": {
       "etag": "\"1b3f-65d560ab08233-df\"",
       "file_path": "documentation/AuthenticationServices/asauthorizationplatformpublickeycredentialassertion/prf-8o9sr.md",
@@ -7505,6 +8140,11 @@
       "file_path": "documentation/AuthenticationServices/asauthorizationplatformpublickeycredentialassertionrequest/allowedcredentials.md",
       "hash": "b4fd39a07da478289b75642951df672daa832101c0ab653a50135f8939da6212"
     },
+    "https://developer.apple.com/tutorials/data/documentation/authenticationservices/asauthorizationplatformpublickeycredentialassertionrequest/largeblob-5mg1q.json": {
+      "etag": "\"245f-65d560ab85b1e-df\"",
+      "file_path": "documentation/AuthenticationServices/asauthorizationplatformpublickeycredentialassertionrequest/largeblob-5mg1q.md",
+      "hash": "b9b6e6d5b5d158da6704126172ac394e0b370920058f977511ad2e527fbebee0"
+    },
     "https://developer.apple.com/tutorials/data/documentation/authenticationservices/asauthorizationplatformpublickeycredentialassertionrequest/largeblob-9kvvl.json": {
       "etag": "\"2821-65d560ab85b1e-df\"",
       "file_path": "documentation/AuthenticationServices/asauthorizationplatformpublickeycredentialassertionrequest/largeblob-9kvvl.md",
@@ -7514,6 +8154,11 @@
       "etag": "\"2778-65d560ab85b1e-df\"",
       "file_path": "documentation/AuthenticationServices/asauthorizationplatformpublickeycredentialassertionrequest/prf-47uoa.md",
       "hash": "6b4d38432b5dd048736b4724e364084a4d4d6d4a4fd4e8f3671ea02176517971"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/authenticationservices/asauthorizationplatformpublickeycredentialassertionrequest/prf-60tle.json": {
+      "etag": "\"189f-65d560ab85b1e-df\"",
+      "file_path": "documentation/AuthenticationServices/asauthorizationplatformpublickeycredentialassertionrequest/prf-60tle.md",
+      "hash": "bedbeb8e633f141cab27144c409a7329a4958438c32ea0fe6abec96a961a0a20"
     },
     "https://developer.apple.com/tutorials/data/documentation/authenticationservices/asauthorizationplatformpublickeycredentialdescriptor.json": {
       "etag": "\"9f5d-65d560ac1939d-df\"",
@@ -7580,15 +8225,30 @@
       "file_path": "documentation/AuthenticationServices/asauthorizationplatformpublickeycredentialregistration/largeblob-5nvj9.md",
       "hash": "f129a58218490321d1374970a0d1748e8b328920a6f4836edd956a75cb1def0f"
     },
+    "https://developer.apple.com/tutorials/data/documentation/authenticationservices/asauthorizationplatformpublickeycredentialregistration/largeblob-jhnw.json": {
+      "etag": "\"2073-65d560aea302f-df\"",
+      "file_path": "documentation/AuthenticationServices/asauthorizationplatformpublickeycredentialregistration/largeblob-jhnw.md",
+      "hash": "9c6eb022c26e77b982f2017bd8920220ce5ab311a70f338949173e3d421f850a"
+    },
     "https://developer.apple.com/tutorials/data/documentation/authenticationservices/asauthorizationplatformpublickeycredentialregistration/prf-3xcqu.json": {
       "etag": "\"1bbd-65d560aea302f-df\"",
       "file_path": "documentation/AuthenticationServices/asauthorizationplatformpublickeycredentialregistration/prf-3xcqu.md",
       "hash": "b216f117b6551cecf3f91d824a88507b424854ab9c9d988660123b6ca98cbd0c"
     },
+    "https://developer.apple.com/tutorials/data/documentation/authenticationservices/asauthorizationplatformpublickeycredentialregistration/prf-49gbm.json": {
+      "etag": "\"18db-65d560aea302f-df\"",
+      "file_path": "documentation/AuthenticationServices/asauthorizationplatformpublickeycredentialregistration/prf-49gbm.md",
+      "hash": "7f59616adf7ead2e29cf6ee9b7b80ed7714f31e0cab6918add16be7ea8c4b464"
+    },
     "https://developer.apple.com/tutorials/data/documentation/authenticationservices/asauthorizationplatformpublickeycredentialregistrationrequest.json": {
       "etag": "\"9d31-65d560ae80938-df\"",
       "file_path": "documentation/AuthenticationServices/asauthorizationplatformpublickeycredentialregistrationrequest.md",
       "hash": "da9b33494edfcadf7a8f683597ad3b31d31113542ff971a5bff8598599ebaf97"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/authenticationservices/asauthorizationplatformpublickeycredentialregistrationrequest/largeblob-28v2m.json": {
+      "etag": "\"1993-65d560ad34ee4-df\"",
+      "file_path": "documentation/AuthenticationServices/asauthorizationplatformpublickeycredentialregistrationrequest/largeblob-28v2m.md",
+      "hash": "ce204373a79f457ffbb49374c6a667369630bd3235a4816389f221f73d30f65d"
     },
     "https://developer.apple.com/tutorials/data/documentation/authenticationservices/asauthorizationplatformpublickeycredentialregistrationrequest/largeblob-5ismm.json": {
       "etag": "\"1d59-65d560ad34ee4-df\"",
@@ -7599,6 +8259,11 @@
       "etag": "\"1c2d-65d560ad34ee4-df\"",
       "file_path": "documentation/AuthenticationServices/asauthorizationplatformpublickeycredentialregistrationrequest/prf-3d9iw.md",
       "hash": "3dbcfb29c1a16f9ab4bc08f015af4bb43b0c5e14c8d1283bce54befda8839104"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/authenticationservices/asauthorizationplatformpublickeycredentialregistrationrequest/prf-8fus5.json": {
+      "etag": "\"18d5-65d560ad34ee4-df\"",
+      "file_path": "documentation/AuthenticationServices/asauthorizationplatformpublickeycredentialregistrationrequest/prf-8fus5.md",
+      "hash": "f1662cdf69c313f4999847130aff3a70e619690878968cab7ada675ad1b67d97"
     },
     "https://developer.apple.com/tutorials/data/documentation/authenticationservices/asauthorizationplatformpublickeycredentialregistrationrequest/requeststyle-swift.enum.json": {
       "etag": "\"4d0e-65d560ad34ee4-df\"",
@@ -7854,6 +8519,11 @@
       "etag": "\"1fbe-65d560ab6d724-df\"",
       "file_path": "documentation/AuthenticationServices/asauthorizationproviderextensionauthorizationresult/init(httpresponse,httpbody)-48yla.md",
       "hash": "089f529c5ac7475a6eae196266afb7d0da02974de031dda71eff2dc020af7def"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/authenticationservices/asauthorizationproviderextensionauthorizationresult/privatekeys.json": {
+      "etag": "\"2a7e-65d560ab6d724-df\"",
+      "file_path": "documentation/AuthenticationServices/asauthorizationproviderextensionauthorizationresult/privatekeys.md",
+      "hash": "781059e72c0cb70a56ea31a61aa8a69454494d9aafa87dd0cbb0ad8fa23ffb6f"
     },
     "https://developer.apple.com/tutorials/data/documentation/authenticationservices/asauthorizationproviderextensionencryptionalgorithm.json": {
       "etag": "\"4bb4-65d560aea302f-df\"",
@@ -8195,6 +8865,11 @@
       "file_path": "documentation/AuthenticationServices/asauthorizationproviderextensionloginconfiguration/jwkstrustedrootcertificates-5y2pc.md",
       "hash": "aca4ee2305f4f74147e6cd43dee11519b947eb799f4efbb362bef918b08cccfe"
     },
+    "https://developer.apple.com/tutorials/data/documentation/authenticationservices/asauthorizationproviderextensionloginconfiguration/jwkstrustedrootcertificates-605jm.json": {
+      "etag": "\"751f-65d560ad011c7-df\"",
+      "file_path": "documentation/AuthenticationServices/asauthorizationproviderextensionloginconfiguration/jwkstrustedrootcertificates-605jm.md",
+      "hash": "05682d244347cc5a02d51e23272d3c144fb763a472d05f5744d00b156809495b"
+    },
     "https://developer.apple.com/tutorials/data/documentation/authenticationservices/asauthorizationproviderextensionloginconfiguration/kerberosticketmappings.json": {
       "etag": "\"5b2c-65d560ad011c7-df\"",
       "file_path": "documentation/AuthenticationServices/asauthorizationproviderextensionloginconfiguration/kerberosticketmappings.md",
@@ -8365,10 +9040,20 @@
       "file_path": "documentation/AuthenticationServices/asauthorizationproviderextensionloginmanager/attestkey(oftype,clientdatahash).md",
       "hash": "30afe06e53b805734edb24682f86afe493f4df4c279c76ee01d8fd6213a67bbc"
     },
+    "https://developer.apple.com/tutorials/data/documentation/authenticationservices/asauthorizationproviderextensionloginmanager/attestkey:clientdatahash:completion:.json": {
+      "etag": "\"2c7f-65d560ab22f63-df\"",
+      "file_path": "documentation/AuthenticationServices/asauthorizationproviderextensionloginmanager/attestkey_clientdatahash_completion_.md",
+      "hash": "f16f5f4d775cbff4c90f28f8ac12d995a2ebce8fb15695b1c72131d906b11317"
+    },
     "https://developer.apple.com/tutorials/data/documentation/authenticationservices/asauthorizationproviderextensionloginmanager/attestpendingkey(oftype:clientdatahash:).json": {
       "etag": "\"2991-65d560ab22f63-df\"",
       "file_path": "documentation/AuthenticationServices/asauthorizationproviderextensionloginmanager/attestpendingkey(oftype,clientdatahash).md",
       "hash": "8dc9d030485294b9dede073768d5dc1dcaa0b104a5878562efd2b58388d02395"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/authenticationservices/asauthorizationproviderextensionloginmanager/attestpendingkey:clientdatahash:completion:.json": {
+      "etag": "\"2ceb-65d560ab08233-df\"",
+      "file_path": "documentation/AuthenticationServices/asauthorizationproviderextensionloginmanager/attestpendingkey_clientdatahash_completion_.md",
+      "hash": "dda403d01be2bdc88d54820f5734a401701c4436e3c88aaa9193f5d8332e2018"
     },
     "https://developer.apple.com/tutorials/data/documentation/authenticationservices/asauthorizationproviderextensionloginmanager/authenticationmethod.json": {
       "etag": "\"2761-65d560ab22f63-df\"",
@@ -8610,6 +9295,16 @@
       "file_path": "documentation/AuthenticationServices/asauthorizationproviderextensionrequestoptions.md",
       "hash": "2b405e620b17034713ed8e487cf127d5c4fa00ac9434ce3fa450303438aea91f"
     },
+    "https://developer.apple.com/tutorials/data/documentation/authenticationservices/asauthorizationproviderextensionrequestoptions/asauthorizationproviderextensionrequestoptionsnone.json": {
+      "etag": "\"2307-65d560add323d-df\"",
+      "file_path": "documentation/AuthenticationServices/asauthorizationproviderextensionrequestoptions/asauthorizationproviderextensionrequestoptionsnone.md",
+      "hash": "7b94e55015e2dd1005749a6ac565024ff0bcafcc2d5e0e5fa0b7b0ba82a6ddf3"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/authenticationservices/asauthorizationproviderextensionrequestoptions/asauthorizationproviderextensionrequestoptionsopenidfallback.json": {
+      "etag": "\"16ed-659028edcd3d4-df\"",
+      "file_path": "documentation/AuthenticationServices/asauthorizationproviderextensionrequestoptions/asauthorizationproviderextensionrequestoptionsopenidfallback.md",
+      "hash": "8a323d6a1b18599fbd2fb6dc37ca922a9a29aaf072f6d3019d210ae869c82e97"
+    },
     "https://developer.apple.com/tutorials/data/documentation/authenticationservices/asauthorizationproviderextensionrequestoptions/init(rawvalue:).json": {
       "etag": "\"1738-65d560add323d-df\"",
       "file_path": "documentation/AuthenticationServices/asauthorizationproviderextensionrequestoptions/init(rawvalue).md",
@@ -8685,6 +9380,11 @@
       "file_path": "documentation/AuthenticationServices/asauthorizationproviderextensionsupportedgranttypes.md",
       "hash": "8e1d39dc54ffb8f7a2570e167a7c4db8971a7f4eccedff232b299309ac41d784"
     },
+    "https://developer.apple.com/tutorials/data/documentation/authenticationservices/asauthorizationproviderextensionsupportedgranttypes/asauthorizationproviderextensionsupportedgranttypesnone.json": {
+      "etag": "\"140b-65d560ac33d30-df\"",
+      "file_path": "documentation/AuthenticationServices/asauthorizationproviderextensionsupportedgranttypes/asauthorizationproviderextensionsupportedgranttypesnone.md",
+      "hash": "172d95b55ff1c78e34f204d03b42d290d7d0977f1978fa0cd26541364a0694e3"
+    },
     "https://developer.apple.com/tutorials/data/documentation/authenticationservices/asauthorizationproviderextensionsupportedgranttypes/init(rawvalue:).json": {
       "etag": "\"161e-65d560ac33d30-df\"",
       "file_path": "documentation/AuthenticationServices/asauthorizationproviderextensionsupportedgranttypes/init(rawvalue).md",
@@ -8749,6 +9449,11 @@
       "etag": "\"43a8-65d560abb5ed0-df\"",
       "file_path": "documentation/AuthenticationServices/asauthorizationproviderextensionuserloginconfiguration/setcustomloginrequestheaderclaims(_).md",
       "hash": "bfd7dd3bed70e16ff8f9e26d5c41292060eb929225cdcd85daf4a65f32df8ecf"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/authenticationservices/asauthorizationproviderextensionusersecureenclavekeybiometricpolicy/asauthorizationproviderextensionusersecureenclavekeybiometricpolicynone.json": {
+      "etag": "\"16b5-65d560aec3823-df\"",
+      "file_path": "documentation/AuthenticationServices/asauthorizationproviderextensionusersecureenclavekeybiometricpolicy/asauthorizationproviderextensionusersecureenclavekeybiometricpolicynone.md",
+      "hash": "8956dc4948fec0b9ab0e24a8ab6d19c707ec79571bdb4e3a0d8b9d62ce353ae3"
     },
     "https://developer.apple.com/tutorials/data/documentation/authenticationservices/asauthorizationpublickeycredentialassertion.json": {
       "etag": "\"757a-65d560add323d-df\"",
@@ -8860,6 +9565,26 @@
       "file_path": "documentation/AuthenticationServices/asauthorizationpublickeycredentialdescriptor/credentialid.md",
       "hash": "8c54d68e828c3d68720ae04d1db9761bf32db5773f0fa66ecd4ee61924c90cc7"
     },
+    "https://developer.apple.com/tutorials/data/documentation/authenticationservices/asauthorizationpublickeycredentiallargeblobassertioninput-c.class.json": {
+      "etag": "\"2794-65d560ab85b1e-df\"",
+      "file_path": "documentation/AuthenticationServices/asauthorizationpublickeycredentiallargeblobassertioninput-c.class.md",
+      "hash": "5d0ef0b9f5185cda6d81eec6c9d03632679128ac5b418f904b44aec36453f859"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/authenticationservices/asauthorizationpublickeycredentiallargeblobassertioninput-c.class/datatowrite.json": {
+      "etag": "\"1c26-65d560ae2db90-df\"",
+      "file_path": "documentation/AuthenticationServices/asauthorizationpublickeycredentiallargeblobassertioninput-c.class/datatowrite.md",
+      "hash": "54da05b5bf367e5a6f41da465dd9cedc37e598ceff8632dd5e214b9b6c1878fe"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/authenticationservices/asauthorizationpublickeycredentiallargeblobassertioninput-c.class/initwithoperation:.json": {
+      "etag": "\"16f4-65d560ae2db90-df\"",
+      "file_path": "documentation/AuthenticationServices/asauthorizationpublickeycredentiallargeblobassertioninput-c.class/initwithoperation_.md",
+      "hash": "b641b62cf93fb3ae73ee2302a9ca302d57c903e27c542becd8f48c043a1ec7d9"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/authenticationservices/asauthorizationpublickeycredentiallargeblobassertioninput-c.class/operation.json": {
+      "etag": "\"19cd-65d560ae2db90-df\"",
+      "file_path": "documentation/AuthenticationServices/asauthorizationpublickeycredentiallargeblobassertioninput-c.class/operation.md",
+      "hash": "3dbd929e50df9c7e1223b94570b4a2e06915dc7f66fa3295988918de232d1da4"
+    },
     "https://developer.apple.com/tutorials/data/documentation/authenticationservices/asauthorizationpublickeycredentiallargeblobassertioninput-swift.struct.json": {
       "etag": "\"301d-65d560aadb5e0-df\"",
       "file_path": "documentation/AuthenticationServices/asauthorizationpublickeycredentiallargeblobassertioninput-swift.struct.md",
@@ -8894,6 +9619,36 @@
       "etag": "\"1f96-65d560ac33d30-df\"",
       "file_path": "documentation/AuthenticationServices/asauthorizationpublickeycredentiallargeblobassertioninput-swift.struct/write(_).md",
       "hash": "0ef475c882e17bf379c4189abd9126023baa7ff721b8dbbdd36406ff780c1e83"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/authenticationservices/asauthorizationpublickeycredentiallargeblobassertionoperation.json": {
+      "etag": "\"533e-65d560adea589-df\"",
+      "file_path": "documentation/AuthenticationServices/asauthorizationpublickeycredentiallargeblobassertionoperation.md",
+      "hash": "8158da8ca6ff49e19d35e83ad6fdc018136f1e26ddbb9a2e44f189b97ebcc874"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/authenticationservices/asauthorizationpublickeycredentiallargeblobassertionoperation/asauthorizationpublickeycredentiallargeblobassertionoperationread.json": {
+      "etag": "\"178d-65d560ab3eb78-df\"",
+      "file_path": "documentation/AuthenticationServices/asauthorizationpublickeycredentiallargeblobassertionoperation/asauthorizationpublickeycredentiallargeblobassertionoperationread.md",
+      "hash": "66e6ea87f78f83234598e086f7d591c83aa8e2789c14c572d1bb1a87a5483c0e"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/authenticationservices/asauthorizationpublickeycredentiallargeblobassertionoperation/asauthorizationpublickeycredentiallargeblobassertionoperationwrite.json": {
+      "etag": "\"1792-65d560ab3eb78-df\"",
+      "file_path": "documentation/AuthenticationServices/asauthorizationpublickeycredentiallargeblobassertionoperation/asauthorizationpublickeycredentiallargeblobassertionoperationwrite.md",
+      "hash": "3a4cf6130a16ffb6e7618da410598568dc2e6374f5a0aed21d7932ee1124ab92"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/authenticationservices/asauthorizationpublickeycredentiallargeblobassertionoutput-c.class.json": {
+      "etag": "\"20c6-65d560ae80938-df\"",
+      "file_path": "documentation/AuthenticationServices/asauthorizationpublickeycredentiallargeblobassertionoutput-c.class.md",
+      "hash": "74cb102f526caa33fbc2b34283022d852203ebf23de3ef8d5e8289d99b054ce8"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/authenticationservices/asauthorizationpublickeycredentiallargeblobassertionoutput-c.class/didwrite.json": {
+      "etag": "\"17ff-65d560ab6d724-df\"",
+      "file_path": "documentation/AuthenticationServices/asauthorizationpublickeycredentiallargeblobassertionoutput-c.class/didwrite.md",
+      "hash": "4fa1c90d19afd2c5dc3d774c82b016835ed34d5d5da0cb1756ded3c3c2d0889a"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/authenticationservices/asauthorizationpublickeycredentiallargeblobassertionoutput-c.class/readdata.json": {
+      "etag": "\"1958-65d560ab6d724-df\"",
+      "file_path": "documentation/AuthenticationServices/asauthorizationpublickeycredentiallargeblobassertionoutput-c.class/readdata.md",
+      "hash": "312040180398ea2912708f50a8194f2958a90d229f6701b84686ba06cf34b710"
     },
     "https://developer.apple.com/tutorials/data/documentation/authenticationservices/asauthorizationpublickeycredentiallargeblobassertionoutput-swift.struct.json": {
       "etag": "\"3392-65d560ad34ee4-df\"",
@@ -8930,6 +9685,21 @@
       "file_path": "documentation/AuthenticationServices/asauthorizationpublickeycredentiallargeblobassertionoutput-swift.struct/write(success).md",
       "hash": "d260e22f20ca161d626b8cee293b45efcf6490c23eb7e50ba3bc4858dbd56e6f"
     },
+    "https://developer.apple.com/tutorials/data/documentation/authenticationservices/asauthorizationpublickeycredentiallargeblobregistrationinput-c.class.json": {
+      "etag": "\"1aea-65d560ae80938-df\"",
+      "file_path": "documentation/AuthenticationServices/asauthorizationpublickeycredentiallargeblobregistrationinput-c.class.md",
+      "hash": "e8c714375247bab81e4fe7d31a9f5ed8b4230667a30b17a3b73bd1822af37c73"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/authenticationservices/asauthorizationpublickeycredentiallargeblobregistrationinput-c.class/initwithsupportrequirement:.json": {
+      "etag": "\"1791-65d560ab57df4-df\"",
+      "file_path": "documentation/AuthenticationServices/asauthorizationpublickeycredentiallargeblobregistrationinput-c.class/initwithsupportrequirement_.md",
+      "hash": "cb0d96fc032fe772111a505848056a4c44c55e87daa271eeb458ac9efeeeb817"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/authenticationservices/asauthorizationpublickeycredentiallargeblobregistrationinput-c.class/supportrequirement.json": {
+      "etag": "\"15b0-65d560ab57df4-df\"",
+      "file_path": "documentation/AuthenticationServices/asauthorizationpublickeycredentiallargeblobregistrationinput-c.class/supportrequirement.md",
+      "hash": "77a4fd2c363dbc3ef123339c330ab63bf06eaf3b72f1f0c03abe8819c5a914ab"
+    },
     "https://developer.apple.com/tutorials/data/documentation/authenticationservices/asauthorizationpublickeycredentiallargeblobregistrationinput-swift.struct.json": {
       "etag": "\"34ff-65d560adb8d11-df\"",
       "file_path": "documentation/AuthenticationServices/asauthorizationpublickeycredentiallargeblobregistrationinput-swift.struct.md",
@@ -8965,6 +9735,16 @@
       "file_path": "documentation/AuthenticationServices/asauthorizationpublickeycredentiallargeblobregistrationinput-swift.struct/supportrequirement-swift.property.md",
       "hash": "9e627ede79aac6827a1516305bd9d7328f08a8907b6170e54ace0d192f8a0ee6"
     },
+    "https://developer.apple.com/tutorials/data/documentation/authenticationservices/asauthorizationpublickeycredentiallargeblobregistrationoutput-c.class.json": {
+      "etag": "\"24f1-65d560ab22f63-df\"",
+      "file_path": "documentation/AuthenticationServices/asauthorizationpublickeycredentiallargeblobregistrationoutput-c.class.md",
+      "hash": "04630f1557b3303c8961182d539d247b15d8a051488a27174e490c09d04f54e9"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/authenticationservices/asauthorizationpublickeycredentiallargeblobregistrationoutput-c.class/issupported.json": {
+      "etag": "\"1461-65d560add323d-df\"",
+      "file_path": "documentation/AuthenticationServices/asauthorizationpublickeycredentiallargeblobregistrationoutput-c.class/issupported.md",
+      "hash": "c95e6b5fde9ea18de4ee2ef469433f3d8d1e92ae6e4496f700d4d68f9e87d58d"
+    },
     "https://developer.apple.com/tutorials/data/documentation/authenticationservices/asauthorizationpublickeycredentiallargeblobregistrationoutput-swift.struct.json": {
       "etag": "\"2d7a-65d560ab85b1e-df\"",
       "file_path": "documentation/AuthenticationServices/asauthorizationpublickeycredentiallargeblobregistrationoutput-swift.struct.md",
@@ -8985,6 +9765,21 @@
       "file_path": "documentation/AuthenticationServices/asauthorizationpublickeycredentiallargeblobregistrationoutput-swift.struct/unsupported.md",
       "hash": "b46caa705feaf558daa718668cfafe355e7639f7d0aec494011ce5edbb86d2db"
     },
+    "https://developer.apple.com/tutorials/data/documentation/authenticationservices/asauthorizationpublickeycredentiallargeblobsupportrequirement.json": {
+      "etag": "\"53ac-65d560adea589-df\"",
+      "file_path": "documentation/AuthenticationServices/asauthorizationpublickeycredentiallargeblobsupportrequirement.md",
+      "hash": "4b67e73ebf7a6336294ccf17b23d6aefb88bce467da40e16e18a670089f2aae5"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/authenticationservices/asauthorizationpublickeycredentiallargeblobsupportrequirement/asauthorizationpublickeycredentiallargeblobsupportrequirementpreferred.json": {
+      "etag": "\"1832-65d560ab6d724-df\"",
+      "file_path": "documentation/AuthenticationServices/asauthorizationpublickeycredentiallargeblobsupportrequirement/asauthorizationpublickeycredentiallargeblobsupportrequirementpreferred.md",
+      "hash": "700adc131fbe3ddb59c15c34008b30b6d866ad92eae2d436a2f1e7e9cfa025f9"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/authenticationservices/asauthorizationpublickeycredentiallargeblobsupportrequirement/asauthorizationpublickeycredentiallargeblobsupportrequirementrequired.json": {
+      "etag": "\"182f-65d560ab57df4-df\"",
+      "file_path": "documentation/AuthenticationServices/asauthorizationpublickeycredentiallargeblobsupportrequirement/asauthorizationpublickeycredentiallargeblobsupportrequirementrequired.md",
+      "hash": "408314033c888b8176d76bc6213703f7b9e7a516edf7d7420720acb16fd79909"
+    },
     "https://developer.apple.com/tutorials/data/documentation/authenticationservices/asauthorizationpublickeycredentialparameters.json": {
       "etag": "\"a4a1-65d560ae80938-df\"",
       "file_path": "documentation/AuthenticationServices/asauthorizationpublickeycredentialparameters.md",
@@ -9004,6 +9799,26 @@
       "etag": "\"1837-65d560ab57df4-df\"",
       "file_path": "documentation/AuthenticationServices/asauthorizationpublickeycredentialparameters/init(coder).md",
       "hash": "bf080443e19310068d27724a064c8c8f33c37972e940e20fa25025a834fb8f6a"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/authenticationservices/asauthorizationpublickeycredentialprfassertioninput-c.class.json": {
+      "etag": "\"2b32-65d560abb5ed0-df\"",
+      "file_path": "documentation/AuthenticationServices/asauthorizationpublickeycredentialprfassertioninput-c.class.md",
+      "hash": "54d15a93a2e8d3efc15575de640cecb5b3c7503bd79d8aeb414b27c72e1d84df"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/authenticationservices/asauthorizationpublickeycredentialprfassertioninput-c.class/initwithinputvalues:percredentialinputvalues:.json": {
+      "etag": "\"1b8c-65d560ae4aa18-df\"",
+      "file_path": "documentation/AuthenticationServices/asauthorizationpublickeycredentialprfassertioninput-c.class/initwithinputvalues_percredentialinputvalues_.md",
+      "hash": "b91d713a7d63747952b2870e2bbb37ee23d241f2903893381a3fa013d1dbd7c8"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/authenticationservices/asauthorizationpublickeycredentialprfassertioninput-c.class/inputvalues.json": {
+      "etag": "\"1aa8-65d560ae4aa18-df\"",
+      "file_path": "documentation/AuthenticationServices/asauthorizationpublickeycredentialprfassertioninput-c.class/inputvalues.md",
+      "hash": "2147c450838d37da9d01fa741c65315aeee80394335958f977b91512075644be"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/authenticationservices/asauthorizationpublickeycredentialprfassertioninput-c.class/percredentialinputvalues.json": {
+      "etag": "\"15a7-65d560ae4aa18-df\"",
+      "file_path": "documentation/AuthenticationServices/asauthorizationpublickeycredentialprfassertioninput-c.class/percredentialinputvalues.md",
+      "hash": "e93f65024bedf4d77fea789740c1e00e5ffa45e499eab4727631fb8cfe7773be"
     },
     "https://developer.apple.com/tutorials/data/documentation/authenticationservices/asauthorizationpublickeycredentialprfassertioninput-swift.struct.json": {
       "etag": "\"3c7c-65d560add323d-df\"",
@@ -9055,6 +9870,41 @@
       "file_path": "documentation/AuthenticationServices/asauthorizationpublickeycredentialprfassertioninput-swift.struct/percredentialinputvalues.md",
       "hash": "eb8cb8f685b302db4a067f54c285a3670613027d742974b111165821689a378a"
     },
+    "https://developer.apple.com/tutorials/data/documentation/authenticationservices/asauthorizationpublickeycredentialprfassertioninputvalues.json": {
+      "etag": "\"1f03-65d560aaf082f-df\"",
+      "file_path": "documentation/AuthenticationServices/asauthorizationpublickeycredentialprfassertioninputvalues.md",
+      "hash": "288c4c6c7e7143641808df1391b1b40ac8c401d4e82eae2ce3aa386f89969634"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/authenticationservices/asauthorizationpublickeycredentialprfassertioninputvalues/initwithsaltinput1:saltinput2:.json": {
+      "etag": "\"1839-65d560ad4a33f-df\"",
+      "file_path": "documentation/AuthenticationServices/asauthorizationpublickeycredentialprfassertioninputvalues/initwithsaltinput1_saltinput2_.md",
+      "hash": "237dfedf075aa54d58e832e3d915a9a3974d68dfeb042dfa4a0a1ce017a7b01a"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/authenticationservices/asauthorizationpublickeycredentialprfassertioninputvalues/saltinput1.json": {
+      "etag": "\"17fa-65d560ad4a33f-df\"",
+      "file_path": "documentation/AuthenticationServices/asauthorizationpublickeycredentialprfassertioninputvalues/saltinput1.md",
+      "hash": "fc96217a5a94ccc94492a0c944754c02d08d5a70f4e93f11af024677c04cbfaa"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/authenticationservices/asauthorizationpublickeycredentialprfassertioninputvalues/saltinput2.json": {
+      "etag": "\"184c-65d560ad4a33f-df\"",
+      "file_path": "documentation/AuthenticationServices/asauthorizationpublickeycredentialprfassertioninputvalues/saltinput2.md",
+      "hash": "18c01012d9fae3db5d2a5fab9d067682d1c242ebd2839cd237c6e9cac5c6bb8c"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/authenticationservices/asauthorizationpublickeycredentialprfassertionoutput-c.class.json": {
+      "etag": "\"1cc3-65d560adea589-df\"",
+      "file_path": "documentation/AuthenticationServices/asauthorizationpublickeycredentialprfassertionoutput-c.class.md",
+      "hash": "cb08ffe8cb8144f06f5689b73e5d1c271ea5a913d7271a0e03ecf26cbde7e377"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/authenticationservices/asauthorizationpublickeycredentialprfassertionoutput-c.class/first.json": {
+      "etag": "\"1880-65d560ae4aa18-df\"",
+      "file_path": "documentation/AuthenticationServices/asauthorizationpublickeycredentialprfassertionoutput-c.class/first.md",
+      "hash": "3467d77fbab84a8cb9edf0f8c627b450da528658ea5281de311717ef13881658"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/authenticationservices/asauthorizationpublickeycredentialprfassertionoutput-c.class/second.json": {
+      "etag": "\"1a24-65d560ae4aa18-df\"",
+      "file_path": "documentation/AuthenticationServices/asauthorizationpublickeycredentialprfassertionoutput-c.class/second.md",
+      "hash": "ea3b91fb1db19cd18521de752d4f6751c0a4d245fcfdb545091571e19f0ecdb7"
+    },
     "https://developer.apple.com/tutorials/data/documentation/authenticationservices/asauthorizationpublickeycredentialprfassertionoutput-swift.struct.json": {
       "etag": "\"2d94-65d560ad1ec2a-df\"",
       "file_path": "documentation/AuthenticationServices/asauthorizationpublickeycredentialprfassertionoutput-swift.struct.md",
@@ -9074,6 +9924,31 @@
       "etag": "\"1be1-65d560ad4a33f-df\"",
       "file_path": "documentation/AuthenticationServices/asauthorizationpublickeycredentialprfassertionoutput-swift.struct/second.md",
       "hash": "8e3c91dd4bdd801d1ec69a3d4d8af24069bc42ad0aefb20bbf4b1e17da994cc4"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/authenticationservices/asauthorizationpublickeycredentialprfregistrationinput-c.class.json": {
+      "etag": "\"2274-65d560ab22f63-df\"",
+      "file_path": "documentation/AuthenticationServices/asauthorizationpublickeycredentialprfregistrationinput-c.class.md",
+      "hash": "aba0a1cd03a4e7484f9d7727b893fb746bfc439645c1e6acc6f1cfe6bccf0886"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/authenticationservices/asauthorizationpublickeycredentialprfregistrationinput-c.class/checkforsupport.json": {
+      "etag": "\"1550-65d560ae80938-df\"",
+      "file_path": "documentation/AuthenticationServices/asauthorizationpublickeycredentialprfregistrationinput-c.class/checkforsupport.md",
+      "hash": "88d13c15f6fbbc01c13fc3d39885cc3ae4cbf8bff088bc037a1c64f2a7b108f7"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/authenticationservices/asauthorizationpublickeycredentialprfregistrationinput-c.class/initwithinputvalues:.json": {
+      "etag": "\"174e-65d560ae80938-df\"",
+      "file_path": "documentation/AuthenticationServices/asauthorizationpublickeycredentialprfregistrationinput-c.class/initwithinputvalues_.md",
+      "hash": "58b032c8e8e9c58a2993da8573cdc78ce496b689a108f5c4f0d85accd5bdb16a"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/authenticationservices/asauthorizationpublickeycredentialprfregistrationinput-c.class/inputvalues.json": {
+      "etag": "\"16db-65d560ae80938-df\"",
+      "file_path": "documentation/AuthenticationServices/asauthorizationpublickeycredentialprfregistrationinput-c.class/inputvalues.md",
+      "hash": "9657099570ac49fce8cc970c1d66581010b7992db8119ac3c39320071d483fb7"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/authenticationservices/asauthorizationpublickeycredentialprfregistrationinput-c.class/shouldcheckforsupport.json": {
+      "etag": "\"17ff-65d560ae80938-df\"",
+      "file_path": "documentation/AuthenticationServices/asauthorizationpublickeycredentialprfregistrationinput-c.class/shouldcheckforsupport.md",
+      "hash": "3802596bf96a3562c3b809d8f4e983d9bd5574ad2efd450369a752526c7a44d2"
     },
     "https://developer.apple.com/tutorials/data/documentation/authenticationservices/asauthorizationpublickeycredentialprfregistrationinput-swift.struct.json": {
       "etag": "\"368c-65d560abb5ed0-df\"",
@@ -9104,6 +9979,26 @@
       "etag": "\"1b32-65d560aaf082f-df\"",
       "file_path": "documentation/AuthenticationServices/asauthorizationpublickeycredentialprfregistrationinput-swift.struct/shouldcheckforsupport.md",
       "hash": "99dcdd0530b081f69f51cdaf49c7da1f6ce3f27d94d7877533c3eea656c351fd"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/authenticationservices/asauthorizationpublickeycredentialprfregistrationoutput-c.class.json": {
+      "etag": "\"20d0-65d560ab6d724-df\"",
+      "file_path": "documentation/AuthenticationServices/asauthorizationpublickeycredentialprfregistrationoutput-c.class.md",
+      "hash": "b5b71fc9cce45ddd25dee7ab0edf65fd503771291eadfea9c096c796c45a9150"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/authenticationservices/asauthorizationpublickeycredentialprfregistrationoutput-c.class/first.json": {
+      "etag": "\"190f-65d560ad34ee4-df\"",
+      "file_path": "documentation/AuthenticationServices/asauthorizationpublickeycredentialprfregistrationoutput-c.class/first.md",
+      "hash": "a66bcf0f31acc8404796d4966bc17e6dffd2cee1e61769810ecff3dba8d3c6db"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/authenticationservices/asauthorizationpublickeycredentialprfregistrationoutput-c.class/issupported.json": {
+      "etag": "\"13fe-65d560ad34ee4-df\"",
+      "file_path": "documentation/AuthenticationServices/asauthorizationpublickeycredentialprfregistrationoutput-c.class/issupported.md",
+      "hash": "bebd707d8d0f32585ee6356647b0eb3e22ed8e441a2d9236315d11e6fc73ae27"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/authenticationservices/asauthorizationpublickeycredentialprfregistrationoutput-c.class/second.json": {
+      "etag": "\"191e-65d560ad34ee4-df\"",
+      "file_path": "documentation/AuthenticationServices/asauthorizationpublickeycredentialprfregistrationoutput-c.class/second.md",
+      "hash": "6116d0cbe982fc6bf4ae0df47ef02f8914d417cd37ca70a7086ffdafd50aa893"
     },
     "https://developer.apple.com/tutorials/data/documentation/authenticationservices/asauthorizationpublickeycredentialprfregistrationoutput-swift.struct.json": {
       "etag": "\"3caf-65d560ab6d724-df\"",
@@ -9325,6 +10220,11 @@
       "file_path": "documentation/AuthenticationServices/asauthorizationsecuritykeypublickeycredentialassertion/init(coder).md",
       "hash": "364bc3c1fdc125b7fae12c179c247b3a56089c35942538265bab2737ef9bb36d"
     },
+    "https://developer.apple.com/tutorials/data/documentation/authenticationservices/asauthorizationsecuritykeypublickeycredentialassertion/prf-57nvr.json": {
+      "etag": "\"1883-65d560ab57df4-df\"",
+      "file_path": "documentation/AuthenticationServices/asauthorizationsecuritykeypublickeycredentialassertion/prf-57nvr.md",
+      "hash": "d3ca8eeb3bacc3baca7e83a6757cb81264a539db0367f598bb8fbfc93edd4ebb"
+    },
     "https://developer.apple.com/tutorials/data/documentation/authenticationservices/asauthorizationsecuritykeypublickeycredentialassertion/prf-8ylo.json": {
       "etag": "\"1b44-65d560ab57df4-df\"",
       "file_path": "documentation/AuthenticationServices/asauthorizationsecuritykeypublickeycredentialassertion/prf-8ylo.md",
@@ -9450,6 +10350,11 @@
       "file_path": "documentation/AuthenticationServices/asauthorizationsecuritykeypublickeycredentialregistration/prf-2p2lg.md",
       "hash": "4868c1ce0243ad00e268dde226fa138b7a46528dba1d6d54e25252577a4b8ea8"
     },
+    "https://developer.apple.com/tutorials/data/documentation/authenticationservices/asauthorizationsecuritykeypublickeycredentialregistration/prf-2x3x5.json": {
+      "etag": "\"18ef-65d560aec3823-df\"",
+      "file_path": "documentation/AuthenticationServices/asauthorizationsecuritykeypublickeycredentialregistration/prf-2x3x5.md",
+      "hash": "af33ffd8081dc505134607293010d021fc083861005d7993576d99eb5528abfb"
+    },
     "https://developer.apple.com/tutorials/data/documentation/authenticationservices/asauthorizationsecuritykeypublickeycredentialregistration/transports.json": {
       "etag": "\"319f-65d560aec3823-df\"",
       "file_path": "documentation/AuthenticationServices/asauthorizationsecuritykeypublickeycredentialregistration/transports.md",
@@ -9469,6 +10374,11 @@
       "etag": "\"3a1f-65d560ae2db90-df\"",
       "file_path": "documentation/AuthenticationServices/asauthorizationsecuritykeypublickeycredentialregistrationrequest/excludedcredentials.md",
       "hash": "ec1631c8e89298680e777029ada9d28d6d601298c95e14a079f7bbf09bcb16e6"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/authenticationservices/asauthorizationsecuritykeypublickeycredentialregistrationrequest/prf-2ys9l.json": {
+      "etag": "\"18de-65d560ae2db90-df\"",
+      "file_path": "documentation/AuthenticationServices/asauthorizationsecuritykeypublickeycredentialregistrationrequest/prf-2ys9l.md",
+      "hash": "631a29877e3d6788f6e7bd0caad4d49a95a2ebcebf7e322360053b616d1c2200"
     },
     "https://developer.apple.com/tutorials/data/documentation/authenticationservices/asauthorizationsecuritykeypublickeycredentialregistrationrequest/prf-964zl.json": {
       "etag": "\"1c2c-65d560ae2db90-df\"",
@@ -9509,6 +10419,11 @@
       "etag": "\"17b0-65d560aadb5e0-df\"",
       "file_path": "documentation/AuthenticationServices/asauthorizationsinglesignoncredential/init(coder).md",
       "hash": "f0d4d5a4b7ddd195c2d1cb3287951f2cfbcf61be061dd838ada320527e8f4fcc"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/authenticationservices/asauthorizationsinglesignoncredential/privatekeys.json": {
+      "etag": "\"16ff-65d560aadb5e0-df\"",
+      "file_path": "documentation/AuthenticationServices/asauthorizationsinglesignoncredential/privatekeys.md",
+      "hash": "007f890abe35d8f7f1b48083713bc4171bb9b001696c9328f91a3d431d8ad145"
     },
     "https://developer.apple.com/tutorials/data/documentation/authenticationservices/asauthorizationsinglesignoncredential/state.json": {
       "etag": "\"383f-65d560aadb5e0-df\"",
@@ -9565,6 +10480,41 @@
       "file_path": "documentation/AuthenticationServices/asauthorizationwebbrowserexternallyauthenticatablerequest/authenticatedcontext.md",
       "hash": "64acbbd917492e340aa88e55ad0fde6f961f5e44331febe13d12f57240191800"
     },
+    "https://developer.apple.com/tutorials/data/documentation/authenticationservices/asauthorizationwebbrowserplatformpublickeycredential-c.class.json": {
+      "etag": "\"2ae2-65d560acdd349-df\"",
+      "file_path": "documentation/AuthenticationServices/asauthorizationwebbrowserplatformpublickeycredential-c.class.md",
+      "hash": "644d7745812b33b3609a0e56e4a38187c67d009d83d77cf1f324e1697c1af353"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/authenticationservices/asauthorizationwebbrowserplatformpublickeycredential-c.class/credentialid.json": {
+      "etag": "\"1471-65d560ad616aa-df\"",
+      "file_path": "documentation/AuthenticationServices/asauthorizationwebbrowserplatformpublickeycredential-c.class/credentialid.md",
+      "hash": "9c364234b5c5d5400c527b709d7ac9673cee38f7d51d8ea066cee762dfa46954"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/authenticationservices/asauthorizationwebbrowserplatformpublickeycredential-c.class/customtitle.json": {
+      "etag": "\"14c4-65d560ad616aa-df\"",
+      "file_path": "documentation/AuthenticationServices/asauthorizationwebbrowserplatformpublickeycredential-c.class/customtitle.md",
+      "hash": "b2e6c1655cfbd114da83bc7a73211fd2eadfee5f236fd79dc9be108b68c10d65"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/authenticationservices/asauthorizationwebbrowserplatformpublickeycredential-c.class/name.json": {
+      "etag": "\"1435-65d560ad616aa-df\"",
+      "file_path": "documentation/AuthenticationServices/asauthorizationwebbrowserplatformpublickeycredential-c.class/name.md",
+      "hash": "2c1c9a63517c5ba9b752775d5481f9b6506d3dda0f18aebad398e69a455e819a"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/authenticationservices/asauthorizationwebbrowserplatformpublickeycredential-c.class/providername.json": {
+      "etag": "\"14dc-65d560ad616aa-df\"",
+      "file_path": "documentation/AuthenticationServices/asauthorizationwebbrowserplatformpublickeycredential-c.class/providername.md",
+      "hash": "885deadb2e26931bb86b18831cd831702e3dbed59cba27e4c820c610f57a6ad5"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/authenticationservices/asauthorizationwebbrowserplatformpublickeycredential-c.class/relyingparty.json": {
+      "etag": "\"1493-65d560ad616aa-df\"",
+      "file_path": "documentation/AuthenticationServices/asauthorizationwebbrowserplatformpublickeycredential-c.class/relyingparty.md",
+      "hash": "7edda37adea04c751e8e0a5d9ab1724958465b01b9ec7c33395a6cbe1d5c3f79"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/authenticationservices/asauthorizationwebbrowserplatformpublickeycredential-c.class/userhandle.json": {
+      "etag": "\"145b-65d560ad616aa-df\"",
+      "file_path": "documentation/AuthenticationServices/asauthorizationwebbrowserplatformpublickeycredential-c.class/userhandle.md",
+      "hash": "dd510fdff401dc957c5da0cd55e8bfce43a65142465b3284768c90a44c94654d"
+    },
     "https://developer.apple.com/tutorials/data/documentation/authenticationservices/asauthorizationwebbrowserplatformpublickeycredential-swift.struct.json": {
       "etag": "\"3e7b-65d560ad4a33f-df\"",
       "file_path": "documentation/AuthenticationServices/asauthorizationwebbrowserplatformpublickeycredential-swift.struct.md",
@@ -9605,6 +10555,11 @@
       "file_path": "documentation/AuthenticationServices/asauthorizationwebbrowserplatformpublickeycredentialassertionrequest.md",
       "hash": "1f484029ad69ab57e4a1491403500bb05762a722d1cf52ee3ffeea187116ff35"
     },
+    "https://developer.apple.com/tutorials/data/documentation/authenticationservices/asauthorizationwebbrowserplatformpublickeycredentialassertionrequest/clientdata-4b5aw.json": {
+      "etag": "\"2197-65d560aec3823-df\"",
+      "file_path": "documentation/AuthenticationServices/asauthorizationwebbrowserplatformpublickeycredentialassertionrequest/clientdata-4b5aw.md",
+      "hash": "cf370862faea3fedff852542ef53dd91ef1c773e50759da26bb4099fdab4b15d"
+    },
     "https://developer.apple.com/tutorials/data/documentation/authenticationservices/asauthorizationwebbrowserplatformpublickeycredentialassertionrequest/clientdata-655pi.json": {
       "etag": "\"22ea-65d560aec3823-df\"",
       "file_path": "documentation/AuthenticationServices/asauthorizationwebbrowserplatformpublickeycredentialassertionrequest/clientdata-655pi.md",
@@ -9635,6 +10590,26 @@
       "file_path": "documentation/AuthenticationServices/asauthorizationwebbrowserplatformpublickeycredentialprovider-19bq/createcredentialregistrationrequest(clientdata,name,userid,requeststyle).md",
       "hash": "9b4675e24c4c279d21a320585795216a8526b40e203b8b8cbca7b18f1c9c0a18"
     },
+    "https://developer.apple.com/tutorials/data/documentation/authenticationservices/asauthorizationwebbrowserplatformpublickeycredentialprovider-1c8cl.json": {
+      "etag": "\"234d-65d560ab9c9fa-df\"",
+      "file_path": "documentation/AuthenticationServices/asauthorizationwebbrowserplatformpublickeycredentialprovider-1c8cl.md",
+      "hash": "a955e9f667ca730574786bbff6a05956f6d8af97e21fb3b5506765c62399cdd9"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/authenticationservices/asauthorizationwebbrowserplatformpublickeycredentialprovider-1c8cl/createcredentialassertionrequestwithclientdata:.json": {
+      "etag": "\"233e-65d560ae0acfb-df\"",
+      "file_path": "documentation/AuthenticationServices/asauthorizationwebbrowserplatformpublickeycredentialprovider-1c8cl/createcredentialassertionrequestwithclientdata_.md",
+      "hash": "a406d4a94942763d4d05ff77120287776d2feee4012fcfd14c37b758238d1eea"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/authenticationservices/asauthorizationwebbrowserplatformpublickeycredentialprovider-1c8cl/createcredentialregistrationrequestwithclientdata:name:userid:.json": {
+      "etag": "\"2b94-65d560ae0acfb-df\"",
+      "file_path": "documentation/AuthenticationServices/asauthorizationwebbrowserplatformpublickeycredentialprovider-1c8cl/createcredentialregistrationrequestwithclientdata_name_userid_.md",
+      "hash": "18a8fdd2d5f813aece342927f04a672b275dcc401ef13ac9060219cdd914b7cc"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/authenticationservices/asauthorizationwebbrowserplatformpublickeycredentialprovider-1c8cl/createcredentialregistrationrequestwithclientdata:name:userid:requeststyle:.json": {
+      "etag": "\"30a8-65d560ae0acfb-df\"",
+      "file_path": "documentation/AuthenticationServices/asauthorizationwebbrowserplatformpublickeycredentialprovider-1c8cl/createcredentialregistrationrequestwithclientdata_name_userid_requeststyle_.md",
+      "hash": "bdce77ec941167c5728a42e69dd8bd5261b6c4b66c0cd3e4953a5269380ac328"
+    },
     "https://developer.apple.com/tutorials/data/documentation/authenticationservices/asauthorizationwebbrowserplatformpublickeycredentialregistrationrequest.json": {
       "etag": "\"4d1f-65d560ab22f63-df\"",
       "file_path": "documentation/AuthenticationServices/asauthorizationwebbrowserplatformpublickeycredentialregistrationrequest.md",
@@ -9644,6 +10619,11 @@
       "etag": "\"2a7a-65d560ae2db90-df\"",
       "file_path": "documentation/AuthenticationServices/asauthorizationwebbrowserplatformpublickeycredentialregistrationrequest/clientdata-5dk66.md",
       "hash": "d2b5fcb3b451664f19eda021e8f115a8275c4a405eb95f9e145cccec75925db6"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/authenticationservices/asauthorizationwebbrowserplatformpublickeycredentialregistrationrequest/clientdata-7scep.json": {
+      "etag": "\"2927-65d560ae2db90-df\"",
+      "file_path": "documentation/AuthenticationServices/asauthorizationwebbrowserplatformpublickeycredentialregistrationrequest/clientdata-7scep.md",
+      "hash": "eca3f8a641bf4e9fad97e5c4c4350f11b2f70a1eb9c51f1c8e034332abd48640"
     },
     "https://developer.apple.com/tutorials/data/documentation/authenticationservices/asauthorizationwebbrowserplatformpublickeycredentialregistrationrequest/excludedcredentials.json": {
       "etag": "\"3bf1-65d560ae2db90-df\"",
@@ -9705,6 +10685,11 @@
       "file_path": "documentation/AuthenticationServices/asauthorizationwebbrowserpublickeycredentialmanager/platformcredentials(forrelyingparty).md",
       "hash": "c68421f0cd805a1754968689effc331d8219bb01b2b3d7ea3fd07dba39f1ee49"
     },
+    "https://developer.apple.com/tutorials/data/documentation/authenticationservices/asauthorizationwebbrowserpublickeycredentialmanager/platformcredentialsforrelyingparty:completionhandler:.json": {
+      "etag": "\"3c9c-65d560ab57df4-df\"",
+      "file_path": "documentation/AuthenticationServices/asauthorizationwebbrowserpublickeycredentialmanager/platformcredentialsforrelyingparty_completionhandler_.md",
+      "hash": "682a699e3d00deb3d1a35eef7963cff4439824d72bae86687a92f4ec2ea9fea7"
+    },
     "https://developer.apple.com/tutorials/data/documentation/authenticationservices/asauthorizationwebbrowserpublickeycredentialmanager/requestauthorizationforpublickeycredentials(_:).json": {
       "etag": "\"490b-65d560ab57df4-df\"",
       "file_path": "documentation/AuthenticationServices/asauthorizationwebbrowserpublickeycredentialmanager/requestauthorizationforpublickeycredentials(_).md",
@@ -9719,6 +10704,26 @@
       "etag": "\"1bea-65d560ad4a33f-df\"",
       "file_path": "documentation/AuthenticationServices/asauthorizationwebbrowsersecuritykeypublickeycredentialassertionrequest/clientdata-1ld1w.md",
       "hash": "90cea97119bdea08dd174503022afaca77e2566832e19a24da002d3aa61cfe74"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/authenticationservices/asauthorizationwebbrowsersecuritykeypublickeycredentialassertionrequest/clientdata-z5qa.json": {
+      "etag": "\"1a35-65d560ad4a33f-df\"",
+      "file_path": "documentation/AuthenticationServices/asauthorizationwebbrowsersecuritykeypublickeycredentialassertionrequest/clientdata-z5qa.md",
+      "hash": "a84c7d7bcfa558cbffb5b4d2defc67f56afebc17238eb7c7554b489def22a4b3"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/authenticationservices/asauthorizationwebbrowsersecuritykeypublickeycredentialprovider-4gzot.json": {
+      "etag": "\"1ffc-65d560ac1939d-df\"",
+      "file_path": "documentation/AuthenticationServices/asauthorizationwebbrowsersecuritykeypublickeycredentialprovider-4gzot.md",
+      "hash": "ec861f8a1bfad683ad2e9124f06b5778b9186df2e9693bf8a6815b97305f89a3"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/authenticationservices/asauthorizationwebbrowsersecuritykeypublickeycredentialprovider-4gzot/createcredentialassertionrequestwithclientdata:.json": {
+      "etag": "\"2628-65d560ae80938-df\"",
+      "file_path": "documentation/AuthenticationServices/asauthorizationwebbrowsersecuritykeypublickeycredentialprovider-4gzot/createcredentialassertionrequestwithclientdata_.md",
+      "hash": "3af61e8ae4a1feb07f2a5eaedd8720f5f35ee03714d80a82617a7021ee117ad3"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/authenticationservices/asauthorizationwebbrowsersecuritykeypublickeycredentialprovider-4gzot/createcredentialregistrationrequestwithclientdata:displayname:name:userid:.json": {
+      "etag": "\"31cf-65d560ae80938-df\"",
+      "file_path": "documentation/AuthenticationServices/asauthorizationwebbrowsersecuritykeypublickeycredentialprovider-4gzot/createcredentialregistrationrequestwithclientdata_displayname_name_userid_.md",
+      "hash": "86e60338efaad477d24beaa6efb9173781715a1ed5d538a8f84e6bb7507d3317"
     },
     "https://developer.apple.com/tutorials/data/documentation/authenticationservices/asauthorizationwebbrowsersecuritykeypublickeycredentialprovider-8xc1s.json": {
       "etag": "\"26b0-65d560ae0acfb-df\"",
@@ -9744,6 +10749,11 @@
       "etag": "\"1c26-65d560ac1939d-df\"",
       "file_path": "documentation/AuthenticationServices/asauthorizationwebbrowsersecuritykeypublickeycredentialregistrationrequest/clientdata-3hz81.md",
       "hash": "5ec39c9d8ddc985eb5214012a0dbdfc224c4c92e4f1e32589faa28b5085c7736"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/authenticationservices/asauthorizationwebbrowsersecuritykeypublickeycredentialregistrationrequest/clientdata-t1ze.json": {
+      "etag": "\"1a71-65d560ac1939d-df\"",
+      "file_path": "documentation/AuthenticationServices/asauthorizationwebbrowsersecuritykeypublickeycredentialregistrationrequest/clientdata-t1ze.md",
+      "hash": "bb6fcd9d8c3ec83d0bff9af84dfc4861ad43ca10fcc2f9efcf8c3db5eb7173c5"
     },
     "https://developer.apple.com/tutorials/data/documentation/authenticationservices/asautofillurlscope.json": {
       "etag": "\"39e1-65d560adb8d11-df\"",
@@ -9980,6 +10990,11 @@
       "file_path": "documentation/AuthenticationServices/ascredentialidentitystore/credentialidentities(forservice,credentialidentitytypes).md",
       "hash": "64772ee25d39ddaf53a49cec4e0e4f131246fbf3e1f30ddf30260eae56a0f5cd"
     },
+    "https://developer.apple.com/tutorials/data/documentation/authenticationservices/ascredentialidentitystore/getcredentialidentitiesforservice:credentialidentitytypes:completionhandler:.json": {
+      "etag": "\"3010-65dbf914ed55c-df\"",
+      "file_path": "documentation/AuthenticationServices/ascredentialidentitystore/getcredentialidentitiesforservice_credentialidentitytypes_completionhandler_.md",
+      "hash": "ede3b5b902989c80db7fdd6d4adcb7eda53f366fd50d0db68ac71ff8892d1017"
+    },
     "https://developer.apple.com/tutorials/data/documentation/authenticationservices/ascredentialidentitystore/getstate(_:).json": {
       "etag": "\"33f0-65d560adb8d11-df\"",
       "file_path": "documentation/AuthenticationServices/ascredentialidentitystore/getstate(_).md",
@@ -10119,6 +11134,11 @@
       "etag": "\"2c4a-65d560ab85b1e-df\"",
       "file_path": "documentation/AuthenticationServices/ascredentialidentitystorestate/supportsincrementalupdates.md",
       "hash": "fc20784a63f293f9a7973c9838be90e2d349aa12df07d440bcdc43fab32b12b9"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/authenticationservices/ascredentialidentitytypes/ascredentialidentitytypesall.json": {
+      "etag": "\"12ea-65d560ac1939d-df\"",
+      "file_path": "documentation/AuthenticationServices/ascredentialidentitytypes/ascredentialidentitytypesall.md",
+      "hash": "55182ab80fc60276616eb2203d6305ca670c5d6063935ffc09e1cd40b2176a0d"
     },
     "https://developer.apple.com/tutorials/data/documentation/authenticationservices/ascredentialimportmanager.json": {
       "etag": "\"468b-65d560aec3823-df\"",
@@ -10739,6 +11759,11 @@
       "etag": "\"24a8-65d560ac33d30-df\"",
       "file_path": "documentation/AuthenticationServices/asgeneratepasswordsrequest/serviceidentifier.md",
       "hash": "6b4cdac268b4f8c47cf49fd70e60028ea3a3f563c1262345dd9786e6dd1b7fac"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/authenticationservices/asimage.json": {
+      "etag": "\"122b-65d560ab08233-df\"",
+      "file_path": "documentation/AuthenticationServices/asimage.md",
+      "hash": "e59dc6a5f6fc98658e53a25a51d66dcff10379752ed6eab1fc164c23a07a67e8"
     },
     "https://developer.apple.com/tutorials/data/documentation/authenticationservices/asimportableaccount.json": {
       "etag": "\"58c8-65d560acdd349-df\"",
@@ -11985,6 +13010,11 @@
       "file_path": "documentation/AuthenticationServices/asonetimecodecredential/code.md",
       "hash": "0c44b386418a97a9b1ee271dca098b05502ef9c2c4fa8e3380c743c3c2affc20"
     },
+    "https://developer.apple.com/tutorials/data/documentation/authenticationservices/asonetimecodecredential/credentialwithcode:.json": {
+      "etag": "\"175a-65d560aea302f-df\"",
+      "file_path": "documentation/AuthenticationServices/asonetimecodecredential/credentialwithcode_.md",
+      "hash": "c25777d85b7079a444a33388525cdfb6b50b2ab0df539e8f999a9b391f6bdf49"
+    },
     "https://developer.apple.com/tutorials/data/documentation/authenticationservices/asonetimecodecredential/init(code:).json": {
       "etag": "\"23b3-65d560aea302f-df\"",
       "file_path": "documentation/AuthenticationServices/asonetimecodecredential/init(code).md",
@@ -12050,6 +13080,16 @@
       "file_path": "documentation/AuthenticationServices/aspasskeyassertioncredential/credentialid.md",
       "hash": "1c918fa99f3db4902cb9e71aba4550b79bcfda482429fc1f56bce5be43ea75e8"
     },
+    "https://developer.apple.com/tutorials/data/documentation/authenticationservices/aspasskeyassertioncredential/credentialwithuserhandle:relyingparty:signature:clientdatahash:authenticatordata:credentialid:.json": {
+      "etag": "\"39b4-65d560ab3eb78-df\"",
+      "file_path": "documentation/AuthenticationServices/aspasskeyassertioncredential/credentialwithuserhandle_relyingparty_signature_clientdatahash_authenticatordata_credentialid_.md",
+      "hash": "f954193d6669a23996721071f568688270ae438dbe6458429666e358ccb131fc"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/authenticationservices/aspasskeyassertioncredential/extensionoutput-46ib3.json": {
+      "etag": "\"1859-65d560ab3eb78-df\"",
+      "file_path": "documentation/AuthenticationServices/aspasskeyassertioncredential/extensionoutput-46ib3.md",
+      "hash": "0d796b4f6c8c93839162cfeb55eecf045b62628307d8779b9b2d387282dab699"
+    },
     "https://developer.apple.com/tutorials/data/documentation/authenticationservices/aspasskeyassertioncredential/extensionoutput-7t6rn.json": {
       "etag": "\"1b2b-65d560ab3eb78-df\"",
       "file_path": "documentation/AuthenticationServices/aspasskeyassertioncredential/extensionoutput-7t6rn.md",
@@ -12070,6 +13110,11 @@
       "file_path": "documentation/AuthenticationServices/aspasskeyassertioncredential/init(userhandle,relyingparty,signature,clientdatahash,authenticatordata,credentialid,extensionoutput).md",
       "hash": "2047fc795452992dd6df49963e607de89d0bae2eec0ca5cb9d1a5ef2780539bf"
     },
+    "https://developer.apple.com/tutorials/data/documentation/authenticationservices/aspasskeyassertioncredential/initwithuserhandle:relyingparty:signature:clientdatahash:authenticatordata:credentialid:extensionoutput:.json": {
+      "etag": "\"3e63-65d560ab3eb78-df\"",
+      "file_path": "documentation/AuthenticationServices/aspasskeyassertioncredential/initwithuserhandle_relyingparty_signature_clientdatahash_authenticatordata_credentialid_extensionoutput_.md",
+      "hash": "4e3dcb9c5060512f3e2906a20fbeffc5546a71f032e86c0e538f7c2c7b755e95"
+    },
     "https://developer.apple.com/tutorials/data/documentation/authenticationservices/aspasskeyassertioncredential/relyingparty.json": {
       "etag": "\"40db-65d560ab3eb78-df\"",
       "file_path": "documentation/AuthenticationServices/aspasskeyassertioncredential/relyingparty.md",
@@ -12084,6 +13129,16 @@
       "etag": "\"4098-65d560ab3eb78-df\"",
       "file_path": "documentation/AuthenticationServices/aspasskeyassertioncredential/userhandle.md",
       "hash": "a3aca516f4bd29cd0c77477c59e32165eca7588e23936566c8373dd6e994e537"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/authenticationservices/aspasskeyassertioncredentialextensioninput-c.class.json": {
+      "etag": "\"38ec-65d560adea589-df\"",
+      "file_path": "documentation/AuthenticationServices/aspasskeyassertioncredentialextensioninput-c.class.md",
+      "hash": "1aadf6795d9b70443ecba3e159b509788f602a85127af9e853665dba755e7adf"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/authenticationservices/aspasskeyassertioncredentialextensioninput-c.class/largeblob.json": {
+      "etag": "\"1672-65d560acdd349-df\"",
+      "file_path": "documentation/AuthenticationServices/aspasskeyassertioncredentialextensioninput-c.class/largeblob.md",
+      "hash": "28e51cb88816d4f0fa1969c2a5cebee0eb59d8e2b2cfa59b744a4b7f988c4e87"
     },
     "https://developer.apple.com/tutorials/data/documentation/authenticationservices/aspasskeyassertioncredentialextensioninput-swift.struct.json": {
       "etag": "\"2a86-65d560aec3823-df\"",
@@ -12104,6 +13159,21 @@
       "etag": "\"1d3c-65d560ad4a33f-df\"",
       "file_path": "documentation/AuthenticationServices/aspasskeyassertioncredentialextensioninput-swift.struct/prf.md",
       "hash": "9cd36ccbe8e113652777be7bb5e2b266876e56081f261dde01156b1bfd597862"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/authenticationservices/aspasskeyassertioncredentialextensionoutput-c.class.json": {
+      "etag": "\"28ca-65d560ae4aa18-df\"",
+      "file_path": "documentation/AuthenticationServices/aspasskeyassertioncredentialextensionoutput-c.class.md",
+      "hash": "33143e6717efefd228a4cb615248612a3cec8251250bd20afd16b151bd20697d"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/authenticationservices/aspasskeyassertioncredentialextensionoutput-c.class/initwithlargebloboutput:.json": {
+      "etag": "\"176c-65d560ab22f63-df\"",
+      "file_path": "documentation/AuthenticationServices/aspasskeyassertioncredentialextensionoutput-c.class/initwithlargebloboutput_.md",
+      "hash": "549ed8a704ec901ddf1c061adcb7ba3ccaf6407913baa0914a51cb520f943fd6"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/authenticationservices/aspasskeyassertioncredentialextensionoutput-c.class/largeblobassertionoutput.json": {
+      "etag": "\"17d0-65d560ab22f63-df\"",
+      "file_path": "documentation/AuthenticationServices/aspasskeyassertioncredentialextensionoutput-c.class/largeblobassertionoutput.md",
+      "hash": "b3d3f70ee1375f79938aa617c064191ee1ad240edc2b62d3e6afd68f080eed86"
     },
     "https://developer.apple.com/tutorials/data/documentation/authenticationservices/aspasskeyassertioncredentialextensionoutput-swift.struct.json": {
       "etag": "\"2b10-65d560ae2db90-df\"",
@@ -12170,6 +13240,11 @@
       "file_path": "documentation/AuthenticationServices/aspasskeycredentialidentity/init(relyingpartyidentifier,username,credentialid,userhandle,recordidentifier)-9iuhb.md",
       "hash": "daf136236fd400707b97fce972a075099c73d64a925628aedd1e73eb12ed66dd"
     },
+    "https://developer.apple.com/tutorials/data/documentation/authenticationservices/aspasskeycredentialidentity/initwithrelyingpartyidentifier:username:credentialid:userhandle:recordidentifier:.json": {
+      "etag": "\"3189-65d560ac1939d-df\"",
+      "file_path": "documentation/AuthenticationServices/aspasskeycredentialidentity/initwithrelyingpartyidentifier_username_credentialid_userhandle_recordidentifier_.md",
+      "hash": "b5df67c0854f46125cb48072bd7697c6de24e0ce7e57d3d41b27980033d5bf7a"
+    },
     "https://developer.apple.com/tutorials/data/documentation/authenticationservices/aspasskeycredentialidentity/rank.json": {
       "etag": "\"23be-65d560ac1939d-df\"",
       "file_path": "documentation/AuthenticationServices/aspasskeycredentialidentity/rank.md",
@@ -12199,6 +13274,11 @@
       "etag": "\"1081b-65d560aec3823-df\"",
       "file_path": "documentation/AuthenticationServices/aspasskeycredentialrequest.md",
       "hash": "178a62ded7b228946315bb1a7b43ac6cb8ee1662f9c9b105a50e0c00a0963404"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/authenticationservices/aspasskeycredentialrequest/assertionextensioninput.json": {
+      "etag": "\"2d7d-65d560ab85b1e-df\"",
+      "file_path": "documentation/AuthenticationServices/aspasskeycredentialrequest/assertionextensioninput.md",
+      "hash": "89c6ad0757907da7f1226e9e88759ea005bd2468f68da90044670d2556eae34a"
     },
     "https://developer.apple.com/tutorials/data/documentation/authenticationservices/aspasskeycredentialrequest/clientdatahash.json": {
       "etag": "\"45b8-65d560ab6d724-df\"",
@@ -12240,6 +13320,31 @@
       "file_path": "documentation/AuthenticationServices/aspasskeycredentialrequest/init(credentialidentity,clientdatahash,userverificationpreference,supportedalgorithms,extensioninput)-9hsyv.md",
       "hash": "cb2a29f5849566967b292530b19421c7610359523f9a462930ab42781d631433"
     },
+    "https://developer.apple.com/tutorials/data/documentation/authenticationservices/aspasskeycredentialrequest/initwithcredentialidentity:clientdatahash:userverificationpreference:supportedalgorithms:.json": {
+      "etag": "\"4d71-65d560ab6d724-df\"",
+      "file_path": "documentation/AuthenticationServices/aspasskeycredentialrequest/initwithcredentialidentity_clientdatahash_userverificationpreference_supportedalgorithms_.md",
+      "hash": "0d740ab6b96a0180afc5d053e51c9b6db51af41b9b0184bb337e65e096242334"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/authenticationservices/aspasskeycredentialrequest/initwithcredentialidentity:clientdatahash:userverificationpreference:supportedalgorithms:assertionextensioninput:.json": {
+      "etag": "\"4af2-65d560ab6d724-df\"",
+      "file_path": "documentation/AuthenticationServices/aspasskeycredentialrequest/initwithcredentialidentity_clientdatahash_userverificationpreference_supportedalgorithms_assertionextensioninput_.md",
+      "hash": "536a3978c98232674a01a709eb055de7f6fb986e1306ff9360ca03de390c862d"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/authenticationservices/aspasskeycredentialrequest/initwithcredentialidentity:clientdatahash:userverificationpreference:supportedalgorithms:registrationextensioninput:.json": {
+      "etag": "\"4b25-65d560ab85b1e-df\"",
+      "file_path": "documentation/AuthenticationServices/aspasskeycredentialrequest/initwithcredentialidentity_clientdatahash_userverificationpreference_supportedalgorithms_registrationextensioninput_.md",
+      "hash": "ecf36861cc6f4f18c0c3e920819b555a704829658294fc2cee9e0812c92c2f5a"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/authenticationservices/aspasskeycredentialrequest/registrationextensioninput.json": {
+      "etag": "\"2d98-65d560ab6d724-df\"",
+      "file_path": "documentation/AuthenticationServices/aspasskeycredentialrequest/registrationextensioninput.md",
+      "hash": "10fb3a482083f68891c1e5dacaaa26e5a220546e6d90585405919fd205bdcff4"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/authenticationservices/aspasskeycredentialrequest/supportedalgorithms-27z68.json": {
+      "etag": "\"33b1-65d560ab85b1e-df\"",
+      "file_path": "documentation/AuthenticationServices/aspasskeycredentialrequest/supportedalgorithms-27z68.md",
+      "hash": "1849f05b5cd84550a63a31064a4d82e83e74612673dfb7d48f7cc0bfa51eb878"
+    },
     "https://developer.apple.com/tutorials/data/documentation/authenticationservices/aspasskeycredentialrequest/supportedalgorithms-74mad.json": {
       "etag": "\"2f5a-65d560ab85b1e-df\"",
       "file_path": "documentation/AuthenticationServices/aspasskeycredentialrequest/supportedalgorithms-74mad.md",
@@ -12269,6 +13374,11 @@
       "etag": "\"1ba7-65d560ab3eb78-df\"",
       "file_path": "documentation/AuthenticationServices/aspasskeycredentialrequestparameters/extensioninput-2edlv.md",
       "hash": "9261da64926e1a71eeaa73813ca14b4fe8626afc0644c14738ba50fb85d264ed"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/authenticationservices/aspasskeycredentialrequestparameters/extensioninput-5ny4g.json": {
+      "etag": "\"1946-65d560ab3eb78-df\"",
+      "file_path": "documentation/AuthenticationServices/aspasskeycredentialrequestparameters/extensioninput-5ny4g.md",
+      "hash": "35f487a4bb5f21bc1b26faf11a3d8c5fabc43b97d27532c603e9943dfb306ba7"
     },
     "https://developer.apple.com/tutorials/data/documentation/authenticationservices/aspasskeycredentialrequestparameters/init(coder:).json": {
       "etag": "\"1793-65d560ab3eb78-df\"",
@@ -12305,10 +13415,20 @@
       "file_path": "documentation/AuthenticationServices/aspasskeyregistrationcredential/credentialid.md",
       "hash": "f5e612dce52ab89d65a6777be4c052816fbe0c21ab85bc595cd08e47aec46463"
     },
+    "https://developer.apple.com/tutorials/data/documentation/authenticationservices/aspasskeyregistrationcredential/credentialwithrelyingparty:clientdatahash:credentialid:attestationobject:.json": {
+      "etag": "\"32c3-65d560ab9c9fa-df\"",
+      "file_path": "documentation/AuthenticationServices/aspasskeyregistrationcredential/credentialwithrelyingparty_clientdatahash_credentialid_attestationobject_.md",
+      "hash": "36a923b7022423b87517477b36f77fdf0dc2525a3a025d99058677122e145b6d"
+    },
     "https://developer.apple.com/tutorials/data/documentation/authenticationservices/aspasskeyregistrationcredential/extensionoutput-2lf9m.json": {
       "etag": "\"1b91-65d560ab9c9fa-df\"",
       "file_path": "documentation/AuthenticationServices/aspasskeyregistrationcredential/extensionoutput-2lf9m.md",
       "hash": "e14f6c6db25a08e6f0900f9ec379860c0e3e5b0cd65107a330f43bf648e710b7"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/authenticationservices/aspasskeyregistrationcredential/extensionoutput-95gvu.json": {
+      "etag": "\"18b3-65d560ab9c9fa-df\"",
+      "file_path": "documentation/AuthenticationServices/aspasskeyregistrationcredential/extensionoutput-95gvu.md",
+      "hash": "657a3b2b330d60188d17b2a52671ca594653fbc8ae43b291a4f9dc0792082db1"
     },
     "https://developer.apple.com/tutorials/data/documentation/authenticationservices/aspasskeyregistrationcredential/init(coder:).json": {
       "etag": "\"170f-65d560ab9c9fa-df\"",
@@ -12325,10 +13445,25 @@
       "file_path": "documentation/AuthenticationServices/aspasskeyregistrationcredential/init(relyingparty,clientdatahash,credentialid,attestationobject,extensionoutput).md",
       "hash": "0bc5492e7c587b20997117b02dc14fa2393dd9db33964988d538741b6653a44c"
     },
+    "https://developer.apple.com/tutorials/data/documentation/authenticationservices/aspasskeyregistrationcredential/initwithrelyingparty:clientdatahash:credentialid:attestationobject:extensionoutput:.json": {
+      "etag": "\"382c-65d560ab9c9fa-df\"",
+      "file_path": "documentation/AuthenticationServices/aspasskeyregistrationcredential/initwithrelyingparty_clientdatahash_credentialid_attestationobject_extensionoutput_.md",
+      "hash": "feba693b8d5eb30b1b9b93fb698eed5041cb84894c1daf108b394c228e213ea4"
+    },
     "https://developer.apple.com/tutorials/data/documentation/authenticationservices/aspasskeyregistrationcredential/relyingparty.json": {
       "etag": "\"35b9-65d560ab9c9fa-df\"",
       "file_path": "documentation/AuthenticationServices/aspasskeyregistrationcredential/relyingparty.md",
       "hash": "b4c4eb8fff818cf5593d4819a766687e7d7aefc4fc9acccfa1347d2afb9c29d0"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/authenticationservices/aspasskeyregistrationcredentialextensioninput-c.class.json": {
+      "etag": "\"3569-65d560ad34ee4-df\"",
+      "file_path": "documentation/AuthenticationServices/aspasskeyregistrationcredentialextensioninput-c.class.md",
+      "hash": "2fe129b04be286d1c647b4e8a355df26bd3f5558b7e610af21425caab4954688"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/authenticationservices/aspasskeyregistrationcredentialextensioninput-c.class/largeblob.json": {
+      "etag": "\"153c-65d560abd5f27-df\"",
+      "file_path": "documentation/AuthenticationServices/aspasskeyregistrationcredentialextensioninput-c.class/largeblob.md",
+      "hash": "95f7e3f8c11c2c4539b40b2270add2a968742ed352027516511c96a3bd3a2c1a"
     },
     "https://developer.apple.com/tutorials/data/documentation/authenticationservices/aspasskeyregistrationcredentialextensioninput-swift.struct.json": {
       "etag": "\"2f9f-65d560ae2db90-df\"",
@@ -12344,6 +13479,21 @@
       "etag": "\"227e-65d560adb8d11-df\"",
       "file_path": "documentation/AuthenticationServices/aspasskeyregistrationcredentialextensioninput-swift.struct/prf.md",
       "hash": "62d967f3f00edaa606feed2f554e48a19be2a7b2671b9f9ae5fb5f50e39af4e1"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/authenticationservices/aspasskeyregistrationcredentialextensionoutput-c.class.json": {
+      "etag": "\"2928-65d560acdd349-df\"",
+      "file_path": "documentation/AuthenticationServices/aspasskeyregistrationcredentialextensionoutput-c.class.md",
+      "hash": "54e67ccf79e5f8bf06c716e116864d152f4552bc5b3c212fd76ff22750de01a9"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/authenticationservices/aspasskeyregistrationcredentialextensionoutput-c.class/initwithlargebloboutput:.json": {
+      "etag": "\"1794-65d560aec3823-df\"",
+      "file_path": "documentation/AuthenticationServices/aspasskeyregistrationcredentialextensionoutput-c.class/initwithlargebloboutput_.md",
+      "hash": "e64dd6ea5a802c542a4ad2ded0cb760af76f608459e6840026ac7328fe7b529e"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/authenticationservices/aspasskeyregistrationcredentialextensionoutput-c.class/largeblobregistrationoutput.json": {
+      "etag": "\"1825-65d560aec3823-df\"",
+      "file_path": "documentation/AuthenticationServices/aspasskeyregistrationcredentialextensionoutput-c.class/largeblobregistrationoutput.md",
+      "hash": "c9354f9cb28ace77fccfac44456bbdd4546eee652ba4cd05cfc291e1bc56024d"
     },
     "https://developer.apple.com/tutorials/data/documentation/authenticationservices/aspasskeyregistrationcredentialextensionoutput-swift.struct.json": {
       "etag": "\"2ba0-65d560adea589-df\"",
@@ -12370,6 +13520,11 @@
       "file_path": "documentation/AuthenticationServices/aspasswordcredential.md",
       "hash": "a17481e19b88e9da15480e860e73262ce6ea83da3c5b98e73025192eae88a9e0"
     },
+    "https://developer.apple.com/tutorials/data/documentation/authenticationservices/aspasswordcredential/credentialwithuser:password:.json": {
+      "etag": "\"212a-65d560adea589-df\"",
+      "file_path": "documentation/AuthenticationServices/aspasswordcredential/credentialwithuser_password_.md",
+      "hash": "ea7a39d1a321bce82e4284b50187152fa7ab92d70c5de1a9bb9179a431000ab5"
+    },
     "https://developer.apple.com/tutorials/data/documentation/authenticationservices/aspasswordcredential/init(coder:).json": {
       "etag": "\"1692-65d560adea589-df\"",
       "file_path": "documentation/AuthenticationServices/aspasswordcredential/init(coder).md",
@@ -12394,6 +13549,11 @@
       "etag": "\"a18a-65d560ad4a33f-df\"",
       "file_path": "documentation/AuthenticationServices/aspasswordcredentialidentity.md",
       "hash": "a158595f3ea6ce15753cc7a8ae1769391c433e19c0c329757403c0f13a5e3571"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/authenticationservices/aspasswordcredentialidentity/identitywithserviceidentifier:user:recordidentifier:.json": {
+      "etag": "\"2ced-65d560acdd349-df\"",
+      "file_path": "documentation/AuthenticationServices/aspasswordcredentialidentity/identitywithserviceidentifier_user_recordidentifier_.md",
+      "hash": "ce2ecd5271ca9f88aa9e96f227bb256757286b1c424939af1627bd560fdd38bd"
     },
     "https://developer.apple.com/tutorials/data/documentation/authenticationservices/aspasswordcredentialidentity/init(coder:).json": {
       "etag": "\"16fc-65d560acdd349-df\"",
@@ -12440,6 +13600,11 @@
       "file_path": "documentation/AuthenticationServices/aspasswordcredentialrequest/init(credentialidentity).md",
       "hash": "81adf20564c762f4f33c6027b3d96fc4d2f00a765b18537006fc1e034c6bbcdb"
     },
+    "https://developer.apple.com/tutorials/data/documentation/authenticationservices/aspasswordcredentialrequest/requestwithcredentialidentity:.json": {
+      "etag": "\"230c-65d560ab57df4-df\"",
+      "file_path": "documentation/AuthenticationServices/aspasswordcredentialrequest/requestwithcredentialidentity_.md",
+      "hash": "74f9ab56145a4e750ad8c5f09ebb787c62e5171887e3713a6c4a125df46df3ee"
+    },
     "https://developer.apple.com/tutorials/data/documentation/authenticationservices/asphonenumberidentifier.json": {
       "etag": "\"15f0-65d560ae2db90-df\"",
       "file_path": "documentation/AuthenticationServices/asphonenumberidentifier.md",
@@ -12469,6 +13634,36 @@
       "etag": "\"2b7b-65d560ab9c9fa-df\"",
       "file_path": "documentation/AuthenticationServices/aspublickeycredential/rawclientdatajson.md",
       "hash": "0697c4a9609c2f0c80290beaa442db449ea9eff1a6ffac6958579248be702ebe"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/authenticationservices/aspublickeycredentialclientdata-c.class.json": {
+      "etag": "\"2035-65d560ac33d30-df\"",
+      "file_path": "documentation/AuthenticationServices/aspublickeycredentialclientdata-c.class.md",
+      "hash": "50f4a323d4e8a41f10866f2c9dedfd16098c220645282084f116b457033cd9b3"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/authenticationservices/aspublickeycredentialclientdata-c.class/challenge.json": {
+      "etag": "\"12bf-65d560ac33d30-df\"",
+      "file_path": "documentation/AuthenticationServices/aspublickeycredentialclientdata-c.class/challenge.md",
+      "hash": "3364a1a723f9887b09868544ed581d3bf219d1dd45811f03e1af96157eb4637f"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/authenticationservices/aspublickeycredentialclientdata-c.class/crossorigin.json": {
+      "etag": "\"16b6-65d560ac33d30-df\"",
+      "file_path": "documentation/AuthenticationServices/aspublickeycredentialclientdata-c.class/crossorigin.md",
+      "hash": "1926ce29fb1a299ebb6c87b4c48fa15a2686b38c974bd8dbe3bbb494d8a07614"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/authenticationservices/aspublickeycredentialclientdata-c.class/initwithchallenge:origin:.json": {
+      "etag": "\"17ed-65d560ac33d30-df\"",
+      "file_path": "documentation/AuthenticationServices/aspublickeycredentialclientdata-c.class/initwithchallenge_origin_.md",
+      "hash": "3aaa65c4716f19321dd3ca449167e40293a5fd00bf36d25d8f54b6c19c5a7b50"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/authenticationservices/aspublickeycredentialclientdata-c.class/origin.json": {
+      "etag": "\"12bd-65d560ac33d30-df\"",
+      "file_path": "documentation/AuthenticationServices/aspublickeycredentialclientdata-c.class/origin.md",
+      "hash": "f9a07bffb6fdbb949582e81a19ea35dd8d8f16d1ee9efe899f13472b5cc2f42e"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/authenticationservices/aspublickeycredentialclientdata-c.class/toporigin.json": {
+      "etag": "\"1322-65d560ac33d30-df\"",
+      "file_path": "documentation/AuthenticationServices/aspublickeycredentialclientdata-c.class/toporigin.md",
+      "hash": "473a9dd262ac2791e8367acf12cb2f2ed9b26830a048605ae99433d86bf10db7"
     },
     "https://developer.apple.com/tutorials/data/documentation/authenticationservices/aspublickeycredentialclientdata-swift.struct.json": {
       "etag": "\"2c64-65d560ae0acfb-df\"",
@@ -12724,6 +13919,11 @@
       "etag": "\"12d3-65d560adea589-df\"",
       "file_path": "documentation/AuthenticationServices/asverificationcode/timestamp.md",
       "hash": "66691463a3823e9832df376183f74d8128919801c0f8b39d98340597994493f2"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/authenticationservices/asviewcontroller.json": {
+      "etag": "\"163e-65d560adea589-df\"",
+      "file_path": "documentation/AuthenticationServices/asviewcontroller.md",
+      "hash": "12e98aaf17f6cb891ad6de39f4525975f5d4e2582f712be01f9cf2f1dae10830"
     },
     "https://developer.apple.com/tutorials/data/documentation/authenticationservices/aswebauthenticationpresentationcontextproviding.json": {
       "etag": "\"3cda-65d560ad34ee4-df\"",
@@ -13343,8 +14543,8 @@
   },
   "metadata": {
     "render": {
-      "version": 1
+      "version": 2
     },
-    "total_pages": 2668
+    "total_pages": 2908
   }
 }

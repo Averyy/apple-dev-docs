@@ -24,6 +24,8 @@ enum IOUSBHostIsochronousTransactionOptions : UInt32;
 - [init(rawValue: UInt32)](./iousbhostisochronoustransactionoptions/init%28rawvalue%29.md)
 ### Type Properties
 - [static var wrap: IOUSBHostIsochronousTransactionOptions](./iousbhostisochronoustransactionoptions/wrap.md)
+### Constants
+- [IOUSBHostIsochronousTransactionOptionsNone](./iousbhostisochronoustransactionoptions/iousbhostisochronoustransactionoptionsnone.md)
 
 ## Relationships
 
@@ -55,6 +57,17 @@ enum IOUSBHostIsochronousTransactionOptions : UInt32;
 - [Anonymous](./api-3612476-anonymous.md)
 - [Anonymous](./api-3612477-anonymous.md)
 - [Anonymous](./api-3612478-anonymous.md)
+- [IOUSBHostCIControllerState](./iousbhostcicontrollerstate.md)
+- [IOUSBHostCIDeviceSpeed](./iousbhostcidevicespeed.md)
+- [IOUSBHostCIDeviceState](./iousbhostcidevicestate.md)
+- [IOUSBHostCIEndpointState](./iousbhostciendpointstate.md)
+- [IOUSBHostCIExceptionType](./iousbhostciexceptiontype.md)
+- [IOUSBHostCILinkState](./iousbhostcilinkstate.md)
+- [IOUSBHostCIMessageStatus](./iousbhostcimessagestatus.md)
+- [IOUSBHostCIMessageType](./iousbhostcimessagetype.md)
+- [IOUSBHostCIPortState](./iousbhostciportstate.md)
+- [IOUSBHostCIUserClientVersion](./iousbhostciuserclientversion.md)
+- [IOUSBHostIsochronousTransferOptions](./iousbhostisochronoustransferoptions.md)
 
 
 ---

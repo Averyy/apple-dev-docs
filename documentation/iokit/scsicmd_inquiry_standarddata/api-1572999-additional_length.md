@@ -1,0 +1,21 @@
+# ADDITIONAL_LENGTH
+
+**Framework**: IOKit  
+**Kind**: structp  
+**Role**: Instance Property
+
+**Availability**:
+- DriverKit 22.0+
+- Mac Catalyst 13.0+
+- macOS 10.0+
+
+## Declaration
+
+```c
+UInt8 ADDITIONAL_LENGTH;
+```
+
+
+---
+
+*[View on Apple Developer](https://developer.apple.com/documentation/iokit/scsicmd_inquiry_standarddata/1572999-additional_length)*

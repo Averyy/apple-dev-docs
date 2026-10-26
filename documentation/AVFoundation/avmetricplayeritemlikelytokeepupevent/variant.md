@@ -28,6 +28,7 @@ var variant: AVAssetVariant? { get }
 ### Inspecting the event
 - [var loadedTimeRanges: [CMTimeRange]](./loadedtimeranges-8yzws.md)
 - [var timeTaken: TimeInterval](./timetaken.md)
+- [loadedTimeRanges](./loadedtimeranges-960vi.md)
 
 
 ---

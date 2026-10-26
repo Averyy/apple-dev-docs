@@ -31,6 +31,8 @@ var httpResponse: HTTPURLResponse? { get set }
   A dictionary of authorization HTTP headers.
 - [var httpBody: Data?](./httpbody.md)
   The HTTP response body.
+- [privateKeys](./privatekeys.md)
+  An array of private security keys.
 
 
 ---

@@ -33,6 +33,8 @@ Create a [`WKPDFConfiguration`](./wkpdfconfiguration.md) object when you want to
 ### Specifying the snapshot dimensions
 - [var rect: CGRect?](./wkpdfconfiguration/rect-2a0vp.md)
   The portion of your web view to capture, specified as a rectangle in the view’s coordinate system.
+- [rect](./wkpdfconfiguration/rect-3xww9.md)
+  The portion of your web view to capture, specified as a rectangle in the view’s coordinate system.
 ### Specifying snapshot properties
 - [var allowTransparentBackground: Bool](./wkpdfconfiguration/allowtransparentbackground.md)
   A Boolean value that indicates whether the PDF may have a transparent background.

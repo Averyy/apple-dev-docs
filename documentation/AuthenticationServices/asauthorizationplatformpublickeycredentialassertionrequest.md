@@ -40,6 +40,12 @@ Use this class to sign in with an existing credential that the system stores in 
 - [var largeBlob: ASAuthorizationPublicKeyCredentialLargeBlobAssertionInput?](./asauthorizationplatformpublickeycredentialassertionrequest/largeblob-9kvvl.md)
   The request’s binary large object value.
 - [var prf: ASAuthorizationPublicKeyCredentialPRFAssertionInput?](./asauthorizationplatformpublickeycredentialassertionrequest/prf-47uoa.md)
+- [largeBlob](./asauthorizationplatformpublickeycredentialassertionrequest/largeblob-5mg1q.md)
+  The request’s binary large object value.
+- [ASAuthorizationPublicKeyCredentialPRFAssertionInput](./asauthorizationpublickeycredentialprfassertioninput-c.class.md)
+  A type that represents input for the web authentication PRF extension in passkey assertion requests.
+### Instance Properties
+- [prf](./asauthorizationplatformpublickeycredentialassertionrequest/prf-60tle.md)
 
 ## Relationships
 

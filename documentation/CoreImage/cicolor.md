@@ -56,6 +56,8 @@ Standard dynamic range (SDR) color color component values range from `0.0` to `1
 - [convenience init(color: UIColor)](./cicolor/init%28color%29.md)
 - [convenience init(red: CGFloat, green: CGFloat, blue: CGFloat, alpha: CGFloat)](./cicolor/init%28red,green,blue,alpha%29.md)
   Initialize a Core Image color object in the sRGB color space with the specified red, green, blue, and alpha component values.
+- [- initWithRed:green:blue:](./cicolor/initwithred_green_blue_.md)
+  Initialize a Core Image color object in the sRGB color space with the specified red, green, and blue component values.
 ### Creating Color Objects
 - [convenience init(red: CGFloat, green: CGFloat, blue: CGFloat)](./cicolor/init%28red,green,blue%29.md)
   Create a Core Image color object in the sRGB color space with the specified red, green, and blue component values.
@@ -65,6 +67,10 @@ Standard dynamic range (SDR) color color component values range from `0.0` to `1
   Create a Core Image color object with the specified red, green, and blue component values as measured in the specified color space.
 - [convenience init?(red: CGFloat, green: CGFloat, blue: CGFloat, alpha: CGFloat, colorSpace: CGColorSpace)](./cicolor/init%28red,green,blue,alpha,colorspace%29-5mvff.md)
   Create a Core Image color object with the specified red, green, blue, and alpha component values as measured in the specified color space.
+- [+ colorWithCGColor:](./cicolor/colorwithcgcolor_.md)
+  Create a Core Image color object with a Core Graphics color object.
+- [+ colorWithRed:green:blue:alpha:](./cicolor/colorwithred_green_blue_alpha_.md)
+  Create a Core Image color object in the sRGB color space with the specified red, green, blue, and alpha component values.
 ### Getting Color Components
 - [var colorSpace: CGColorSpace](./cicolor/colorspace.md)
   Returns the `CGColorSpace` associated with the color

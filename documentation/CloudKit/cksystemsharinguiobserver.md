@@ -39,6 +39,10 @@ The system only propagates changes on the local device using `CKSystemSharingUI
   A callback block the system invokes after the success or failure of a share save by the system sharing UI.
 - [var systemSharingUIDidStopSharingBlock: ((CKRecord.ID, Result<Void, any Error>) -> Void)?](./cksystemsharinguiobserver/systemsharinguididstopsharingblock-7nmiw.md)
   A callback block the system invokes after the success or failure of a share delete by the system sharing UI.
+- [systemSharingUIDidSaveShareBlock](./cksystemsharinguiobserver/systemsharinguididsaveshareblock-39zlv.md)
+  A callback block the system invokes after the success or failure of a share save by the system sharing UI.
+- [systemSharingUIDidStopSharingBlock](./cksystemsharinguiobserver/systemsharinguididstopsharingblock-4g5bn.md)
+  A callback block the system invokes after the success or failure of a share delete by the system sharing UI.
 
 ## Relationships
 
@@ -71,6 +75,8 @@ The system only propagates changes on the local device using `CKSystemSharingUI
   A view controller that presents standard screens for adding and removing people from a CloudKit share record.
 - [CKSharingSupported](../BundleResources/information-property-list/cksharingsupported.md)
   A Boolean value that indicates your app supports CloudKit Sharing.
+- [CKSharePreparationCompletionHandler](./cksharepreparationcompletionhandler.md)
+- [CKSharePreparationHandler](./cksharepreparationhandler.md)
 
 
 ---

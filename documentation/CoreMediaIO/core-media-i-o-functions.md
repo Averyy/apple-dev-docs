@@ -29,6 +29,21 @@
 - [func CMIOStreamDeckJog(CMIOStreamID, Int32) -> OSStatus](./cmiostreamdeckjog%28_,_%29.md)
 - [func CMIOStreamDeckPlay(CMIOStreamID) -> OSStatus](./cmiostreamdeckplay%28_%29.md)
 - [func CMIOStreamDeckStop(CMIOStreamID) -> OSStatus](./cmiostreamdeckstop%28_%29.md)
+- [CMIOSampleBufferCopyNonRequiredAttachments](./cmiosamplebuffercopynonrequiredattachments.md)
+- [CMIOSampleBufferCopySampleAttachments](./cmiosamplebuffercopysampleattachments.md)
+- [CMIOSampleBufferCreate](./cmiosamplebuffercreate.md)
+- [CMIOSampleBufferCreateForImageBuffer](./cmiosamplebuffercreateforimagebuffer.md)
+- [CMIOSampleBufferCreateNoDataMarker](./cmiosamplebuffercreatenodatamarker.md)
+- [CMIOSampleBufferGetDiscontinuityFlags](./cmiosamplebuffergetdiscontinuityflags.md)
+- [CMIOSampleBufferGetSequenceNumber](./cmiosamplebuffergetsequencenumber.md)
+- [CMIOSampleBufferSetDiscontinuityFlags](./cmiosamplebuffersetdiscontinuityflags.md)
+- [CMIOSampleBufferSetSequenceNumber](./cmiosamplebuffersetsequencenumber.md)
+- [CMIOObjectCreate](./cmioobjectcreate.md)
+- [CMIOObjectPropertiesChanged](./cmioobjectpropertieschanged.md)
+- [CMIOObjectsPublishedAndDied](./cmioobjectspublishedanddied.md)
+### Macros
+- [CMIODiscontinuityFlagsHaveHardDiscontinuities](./cmiodiscontinuityflagshaveharddiscontinuities.md)
+- [CMIOGetNextSequenceNumber](./cmiogetnextsequencenumber.md)
 
 ## See Also
 

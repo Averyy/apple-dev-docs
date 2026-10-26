@@ -40,6 +40,10 @@ If [`adjustsFontSizeToFitWidth`](./adjustsfontsizetofitwidth.md) is [`true`](../
   The maximum number of lines for rendering text.
 - [var sizingRule: UILetterformAwareSizingRule](../uiletterformawareadjusting/sizingrule.md)
   The typographic bounds-sizing behavior that handles text with fonts that contain oversize characters.
+- [adjustsLetterSpacingToFitWidth](./adjustsletterspacingtofitwidth.md)
+  A Boolean value that indicates whether the label adjusts spacing between letters to fit the string within the label’s bounds rectangle.
+- [minimumFontSize](./minimumfontsize.md)
+  The size of the smallest permissible font when drawing the label’s text.
 
 
 ---

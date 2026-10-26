@@ -29,6 +29,14 @@ This property returns an array of all currently connected stylus accessories. Th
 
 To be notified when the array changes, register for the `GCStylusDidConnectNotification` and `GCStylusDidDisconnectNotification`.
 
+## See Also
+
+### Accessing the styli
+- [GCStylusDidConnectNotification](../gcstylusdidconnectnotification.md)
+  A notification that posts after a stylus accessory connects to the device.
+- [GCStylusDidDisconnectNotification](../gcstylusdiddisconnectnotification.md)
+  A notification that posts after a stylus accessory disconnects from the device.
+
 
 ---
 

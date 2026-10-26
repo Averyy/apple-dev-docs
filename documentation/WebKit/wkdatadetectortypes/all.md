@@ -43,6 +43,8 @@ This option automatically includes new detection types when they become availabl
   Detect flight numbers in text and turn them into links.
 - [static var lookupSuggestion: WKDataDetectorTypes](./lookupsuggestion.md)
   Detect Spotlight suggestions and turn them into links.
+- [WKDataDetectorTypeNone](./wkdatadetectortypenone.md)
+  No data detection.
 
 
 ---

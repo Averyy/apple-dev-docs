@@ -30,6 +30,8 @@ If no item is selected, the value in this property is `nil`.
   The menu item that was last selected by the user.
 - [var indexOfSelectedItem: Int](./indexofselecteditem.md)
   The index of the item that was last selected by the user.
+- [selectedTag](./selectedtag.md)
+  The tag of the menu item that was last selected by the user.
 
 
 ---

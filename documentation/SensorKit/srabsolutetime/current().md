@@ -40,6 +40,10 @@ Each device has their own absolute time. This function returns the absolute time
   A value that describes when the system records the data.
 - [func toCFAbsoluteTime() -> CFAbsoluteTime](./tocfabsolutetime%28%29.md)
   Converts an absolute time to a core-foundation absolute time.
+- [SRAbsoluteTimeFromCFAbsoluteTime](../srabsolutetimefromcfabsolutetime.md)
+  Provides an absolute time equivalent to the argument core-foundation absolute time.
+- [SRAbsoluteTimeFromContinuousTime](../srabsolutetimefromcontinuoustime.md)
+  Provides an absolute time equivalent to the argument continuous time.
 
 
 ---

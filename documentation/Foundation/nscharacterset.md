@@ -135,6 +135,14 @@ The `NSCharacterSet` class declares the programmatic interface for an object tha
 - [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 - [NSSecureCoding](./nssecurecoding.md)
 
+## See Also
+
+### Characters
+- [NSMutableCharacterSet](./nsmutablecharacterset.md)
+  An object representing a mutable set of Unicode character values for use in search operations.
+- [unichar](./unichar.md)
+  Type for UTF-16 code units.
+
 
 ---
 

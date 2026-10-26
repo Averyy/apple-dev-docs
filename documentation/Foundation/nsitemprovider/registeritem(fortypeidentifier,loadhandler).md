@@ -45,6 +45,8 @@ Item providers know how to coerce known types of objects, such as images or stri
   Registers a data-backed representation for an item, specifiying item visibility and a load handler.
 - [func registerDataRepresentation(for: UTType, visibility: NSItemProviderRepresentationVisibility, loadHandler: ((Data?, (any Error)?) -> Void) -> Progress?)](./registerdatarepresentation%28for,visibility,loadhandler%29.md)
   Registers a data-backed representation for an item, specifiying item visibility and a load handler.
+- [- registerDataRepresentationForContentType:visibility:loadHandler:](./registerdatarepresentationforcontenttype_visibility_loadhandler_.md)
+  Lazily registers an item, according to the item provider type coercion policy.
 
 
 ---

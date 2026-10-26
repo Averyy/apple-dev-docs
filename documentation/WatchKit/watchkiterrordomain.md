@@ -23,6 +23,12 @@ extern NSString * const WatchKitErrorDomain;
 
 The system uses this value in the [`NSError`](../Foundation/nserror.md) class.
 
+## See Also
+
+### Errors
+- [WatchKitErrorCode](./watchkiterror/code.md)
+  Error codes reported by WatchKit.
+
 
 ---
 

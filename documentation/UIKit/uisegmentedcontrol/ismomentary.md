@@ -44,6 +44,10 @@ The default value of this property is [`false`](../../Swift/false.md). If it’s
   Returns the width of the segment at the index you specify.
 - [var apportionsSegmentWidthsByContent: Bool](./apportionssegmentwidthsbycontent.md)
   Indicates whether the control attempts to adjust segment widths based on their content widths.
+- [segmentedControlStyle](./segmentedcontrolstyle.md)
+  The style of the segmented control.
+- [UISegmentedControlStyle](../uisegmentedcontrolstyle.md)
+  The styles of the segmented control.
 
 
 ---

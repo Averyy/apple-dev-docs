@@ -32,6 +32,8 @@ class MLStateConstraint
   The shape of the state buffer.
 - [var dataType: MLMultiArrayDataType](./mlstateconstraint/datatype.md)
   The data type of scalars in the state buffer.
+- [bufferShape](./mlstateconstraint/buffershape-6o5vn.md)
+  The shape of the state buffer.
 ### Initializers
 - [init?(coder: NSCoder)](./mlstateconstraint/init%28coder%29.md)
 

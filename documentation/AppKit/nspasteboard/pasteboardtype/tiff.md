@@ -52,6 +52,8 @@ extern NSPasteboardType const NSPasteboardTypeTIFF;
   Paragraph formatting information.
 - [static let sound: NSPasteboard.PasteboardType](./sound.md)
   Sound data.
+- [NSPasteboardTypeString](./string.md)
+  String data.
 
 
 ---

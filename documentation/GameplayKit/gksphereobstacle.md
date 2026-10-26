@@ -35,6 +35,8 @@ To learn more about using goals and agents, see [Agents, Goals, and Behaviors](h
 ### Creating an Obstacle
 - [init(radius: Float)](./gksphereobstacle/init%28radius%29.md)
   Initializes a spherical obstacle with the specified radius.
+- [+ obstacleWithRadius:](./gksphereobstacle/obstaclewithradius_.md)
+  Creates a spherical obstacle with the specified radius.
 ### Placing an Obstacle
 - [var position: vector_float3](./gksphereobstacle/position.md)
   The position of the obstacle.

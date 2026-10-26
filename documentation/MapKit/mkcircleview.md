@@ -29,6 +29,15 @@ This view fills and strokes the circle represented by the annotation. You can ch
 
 Use of this class is discouraged in iOS 7 and later. Use the [`MKCircleRenderer`](./mkcirclerenderer.md) class instead.
 
+## Topics
+
+### Initializing the overlay view
+- [- initWithCircle:](./mkcircleview/initwithcircle_.md)
+  Initializes and returns a new overlay view using the specified circle overlay object.
+### Accessing the overlay
+- [circle](./mkcircleview/circle.md)
+  The circle overlay object that contains the information used to draw the overlay.
+
 ## Relationships
 
 ### Inherits From
@@ -77,6 +86,8 @@ Use of this class is discouraged in iOS 7 and later. Use the [`MKCircleRenderer`
   Provides the visual representation for an [`MKPolyline`](./mkpolyline.md) annotation object.
 - [class MKPinAnnotationView](./mkpinannotationview.md)
   An annotation view that displays a pin image on the map.
+- [MKReverseGeocoder](./mkreversegeocoder.md)
+  Provides services for converting a map coordinate (specified as a latitude/longitude pair) into information about that coordinate, such as the country or region, city, or street.
 
 
 ---

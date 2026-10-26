@@ -40,6 +40,12 @@ The initialized query.
 - `inReturnAttributeOrList`: The attribute or attributes to be returned from the query. Can be an `NSString` object for a single attribute or an `NSArray` object containing `NSString` objects for multiple attributes. Passing `nil` is equivalent to passing `kODAttributeTypeStandardOnly`.
 - `inMaximumResults`: The maximum number of values to return.
 
+## See Also
+
+### Creating and Initializing a Query
+- [+ queryWithNode:forRecordTypes:attribute:matchType:queryValues:returnAttributes:maximumResults:error:](./querywithnode_forrecordtypes_attribute_matchtype_queryvalues_returnattributes_maximumresults_error_.md)
+  Returns an autoreleased query object created with provided parameters.
+
 
 ---
 

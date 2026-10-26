@@ -43,6 +43,8 @@ The supported range for this value is from 1 and 100. The default value is 50.
   A value describing the processing request in a parameters submission object.
 - [VTMotionBlurParameters.SubmissionMode](./submissionmode-swift.enum.md)
   A value describing the processing request in a parameters submission object.
+- [destinationFrame](./destinationframe.md)
+  A user-allocated pixel buffer that receives the results.
 
 
 ---

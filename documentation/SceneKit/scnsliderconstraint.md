@@ -29,6 +29,8 @@ class SCNSliderConstraint
 - [var collisionCategoryBitMask: Int](./scnsliderconstraint/collisioncategorybitmask.md)
 - [var offset: SCNVector3](./scnsliderconstraint/offset.md)
 - [var radius: CGFloat](./scnsliderconstraint/radius.md)
+### Type Methods
+- [+ sliderConstraint](./scnsliderconstraint/sliderconstraint.md)
 
 ## Relationships
 

@@ -38,7 +38,7 @@ A `releaseDate` may refer to the publication of a specific media item, or to mus
 - `artistName` (string): The creator or performer of the media item.
 - `albumName` (string): The album that contains the media item.
 - `mediaType` (MediaItemType): The type of media the user wants.
-- `genreNames` ([string]): Genres that apply to this media item. These are the same genres as those at [`genreNames`](https://developer.apple.com/documentation/intents/inmediasearch/genrenames).
+- `genreNames` ([string]): Genres that apply to this media item. These are the same genres as those at [`genreNames`](../Intents/inmediasearch/genrenames.md).
 - `moodNames` ([string]): Feelings that describe the media item the user wants, such as `happy` or `focused`.
 - `releaseDate` (DateComponentsRange): The date of the media item’s first publication, or a period of time.
 - `sortOrder` (MediaSortOrder): The prioritization to apply to search results.

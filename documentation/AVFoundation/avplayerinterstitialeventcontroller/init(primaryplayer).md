@@ -29,6 +29,12 @@ init(primaryPlayer: AVPlayer)
 
 - `primaryPlayer`: A player that plays primary content. The system raises an exception you specify an interstitial player for this argument.
 
+## See Also
+
+### Creating an event controller
+- [+ interstitialEventControllerWithPrimaryPlayer:](./interstitialeventcontrollerwithprimaryplayer_.md)
+  A convenience initializer that creates an event controller with a player item.
+
 
 ---
 

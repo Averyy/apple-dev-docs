@@ -109,6 +109,13 @@ Widgets, watch complications, Live Activities, and controls are small and requir
   A specification for the context of a widget preview.
 - [Preview macros](./preview-macros.md)
   Use Swift macros to create widget previews in Xcode.
+### Variables
+- [WGWidgetUserInfoKeyActivityID](./wgwidgetuserinfokeyactivityid.md)
+  A key you use to access the activity ID if the widget represents a Live Activity.
+- [WGWidgetUserInfoKeyFamily](./wgwidgetuserinfokeyfamily.md)
+  A key you use to access the widget’s family.
+- [WGWidgetUserInfoKeyKind](./wgwidgetuserinfokeykind.md)
+  A key you use to access the widget’s kind. The value matches the `kind` property specified in the widget’s configuration.
 
 
 ---

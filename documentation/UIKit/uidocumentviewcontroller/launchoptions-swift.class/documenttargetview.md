@@ -31,6 +31,8 @@ var documentTargetView: UIView? { get set }
   A configuration that describes the launch scene’s background.
 - [var browserViewController: UIDocumentBrowserViewController](./browserviewcontroller.md)
   The document browser view controller.
+- [background](../../uidocumentviewcontrollerlaunchoptions/background.md)
+  A configuration that describes the launch scene’s background.
 
 
 ---

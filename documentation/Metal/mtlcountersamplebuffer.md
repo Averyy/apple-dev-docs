@@ -43,6 +43,8 @@ You can store a GPU device’s counter set data only with an [`MTLCounterSampleB
 ### Resolving the counter sample buffer’s data
 - [func resolveCounterRange(Range<Int>) throws -> Data?](./mtlcountersamplebuffer/resolvecounterrange%28_%29.md)
   Transforms samples of a GPU’s counter set from the driver’s internal format to a standard Metal data structure.
+- [- resolveCounterRange:](./mtlcountersamplebuffer/resolvecounterrange_.md)
+  Transforms samples of a GPU’s counter set from the driver’s internal format to a standard Metal data structure.
 ### Inspecting the counter sample buffer’s configuration
 - [var label: String](./mtlcountersamplebuffer/label.md)
   A string that identifies the counter sample buffer.

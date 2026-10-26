@@ -22,8 +22,8 @@ func versionAtCreation() -> UInt32
 
 ## Mentions
 
-- [Versioning and obsoleting old plug-ins](https://developer.apple.com/documentation/professional-video-applications/versioning-and-obsoleting-old-plug-ins)
-- [Adding parameters to plug-ins](https://developer.apple.com/documentation/professional-video-applications/adding-parameters-to-plug-ins)
+- [Versioning and obsoleting old plug-ins](../../Professional-Video-Applications/versioning-and-obsoleting-old-plug-ins.md)
+- [Adding parameters to plug-ins](../../Professional-Video-Applications/adding-parameters-to-plug-ins.md)
 
 #### Return Value
 

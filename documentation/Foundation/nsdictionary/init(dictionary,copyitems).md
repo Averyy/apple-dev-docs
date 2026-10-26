@@ -49,6 +49,8 @@ The [`copy(with:)`](../nscopying/copy%28with%29.md) method performs a shallow co
   Initializes a newly allocated dictionary by placing in it the keys and values contained in another given dictionary.
 - [convenience init(dictionaryLiteral: (Any, Any)...)](./init%28dictionaryliteral%29.md)
   Initializes a newly allocated dictionary from the given key-value pairs.
+- [+ dictionaryWithDictionary:](./dictionarywithdictionary_.md)
+  Creates a dictionary containing the keys and values from another given dictionary.
 
 
 ---

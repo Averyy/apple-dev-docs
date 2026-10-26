@@ -37,6 +37,22 @@ Manage the privacy and presentation of the message’s interpolated values using
   An object for writing interpolated string messages to the unified logging system.
 - [struct OSLogType](./oslogtype.md)
   The various log levels that the unified logging system provides.
+- [Legacy Logging Symbols](./legacy-logging-symbols.md)
+  Migrate your code away from using these legacy symbols.
+- [os_log_t](./os-log-t.md)
+  A log object that you pass to logging functions to send messages to that log.
+- [os_log_with_type](./os_log_with_type.md)
+  Sends a message at a specific logging level, such as default, info, debug, error, or fault, to the logging system.
+- [os_log](./os_log.md)
+  Sends a default-level message to the logging system.
+- [os_log_info](./os_log_info.md)
+  Sends an info-level message to the logging system.
+- [os_log_debug](./os_log_debug.md)
+  Sends a debug-level message to the logging system.
+- [os_log_error](./os_log_error.md)
+  Sends an error-level message to the logging system.
+- [os_log_fault](./os_log_fault.md)
+  Sends a fault-level message to the logging system.
 
 
 ---

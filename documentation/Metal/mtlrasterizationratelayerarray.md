@@ -31,6 +31,8 @@ class MTLRasterizationRateLayerArray
   Retrieves the sample value at the specified index.
 - [class MTLRasterizationRateLayerDescriptor](./mtlrasterizationratelayerdescriptor.md)
   The minimum rasterization rates to apply to sections of a layer in the render target.
+- [- setObject:atIndexedSubscript:](./mtlrasterizationratelayerarray/setobject_atindexedsubscript_.md)
+  Stores a sample value at the specified index.
 
 ## Relationships
 

@@ -42,6 +42,8 @@ When your app launches, the document view controller displays a view that contai
   The document target view.
 - [var browserViewController: UIDocumentBrowserViewController](./launchoptions-swift.class/browserviewcontroller.md)
   The document browser view controller.
+- [background](../uidocumentviewcontrollerlaunchoptions/background.md)
+  A configuration that describes the launch scene’s background.
 ### Adding accessory views
 - [var backgroundAccessoryView: UIView?](./launchoptions-swift.class/backgroundaccessoryview.md)
   A view that appears behind the title view in the launch scene.

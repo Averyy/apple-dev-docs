@@ -72,6 +72,8 @@ When you indicate that the progress is complete, if you asked the system to crea
 ### Downloads
 - [class BEDownloadMonitor](./bedownloadmonitor-9bwls.md)
   An object that reports the status of web downloads to the system.
+- [BEDownloadMonitor](./bedownloadmonitor-9y4hu.md)
+  An object that reports the status of web downloads to the system.
 
 
 ---

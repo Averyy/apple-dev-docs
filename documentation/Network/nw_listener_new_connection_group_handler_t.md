@@ -55,6 +55,9 @@ typedef void (^)(NSObject<OS_nw_connection_group> *) nw_listener_new_connection_
   An object you use to communicate with a group of endpoints, such as an IP multicast group on a local network.
 - [typealias nw_connection_path_event_handler_t](./nw_connection_path_event_handler_t.md)
   A handler that delivers network path updates.
+- [nw_ethernet_channel_state_t](./nw_ethernet_channel_state_t.md)
+  States indicating whether an Ethernet channel is able to send and receive frames.
+- [nw_proxy_domain_enumerator_t](./nw_proxy_domain_enumerator_t.md)
 
 
 ---

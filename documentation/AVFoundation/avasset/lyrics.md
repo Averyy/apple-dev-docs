@@ -27,6 +27,20 @@ var lyrics: String? { get }
 @property (nonatomic, readonly, nullable) NSString * lyrics;
 ```
 
+## See Also
+
+### Accessing metadata
+- [metadata](./metadata.md)
+  An array of metadata items for all metadata identifiers for which a value is available.
+- [commonMetadata](./commonmetadata.md)
+  The metadata items an asset contains for common metadata identifiers that provide a value.
+- [availableMetadataFormats](./availablemetadataformats.md)
+  The metadata formats this asset contains.
+- [- metadataForFormat:](./metadata%28forformat%29.md)
+  Returns an array of metadata items from the container with the specified format.
+- [creationDate](./creationdate.md)
+  A metadata item that indicates the asset’s creation date.
+
 
 ---
 

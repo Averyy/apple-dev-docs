@@ -29,6 +29,10 @@ class HKGAD7Assessment
 ### Instance Properties
 - [var answers: [HKGAD7Assessment.Answer]](./hkgad7assessment/answers-1zj1.md)
 - [var risk: HKGAD7Assessment.Risk](./hkgad7assessment/risk-swift.property.md)
+- [answers](./hkgad7assessment/answers-7k5w8.md)
+### Type Methods
+- [+ assessmentWithDate:answers:](./hkgad7assessment/assessmentwithdate_answers_.md)
+- [+ assessmentWithDate:answers:metadata:](./hkgad7assessment/assessmentwithdate_answers_metadata_.md)
 
 ## Relationships
 

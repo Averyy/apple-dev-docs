@@ -56,6 +56,13 @@ A new ordered set that contains a single member, `object`.
   Initializes a new ordered set with the contents of a set, optionally copying the objects in the set.
 - [init()](./init%28%29.md)
   Initializes a newly allocated ordered set.
+### Related Documentation
+- [- initWithObjects:](./initwithobjects_.md)
+  Initializes a newly allocated set with members taken from the specified list of objects.
+- [+ orderedSetWithObjects:](./orderedsetwithobjects_.md)
+  Creates and returns a ordered set containing the objects in a given argument list.
+- [+ orderedSetWithObject:](./orderedsetwithobject_.md)
+  Creates and returns a ordered set that contains a single given object.
 
 
 ---

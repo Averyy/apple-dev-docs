@@ -169,6 +169,8 @@ NSLayoutGuide *container = [[NSLayoutGuide alloc] init];
 ### Layout Guides
 - [class NSLayoutDimension](./nslayoutdimension.md)
   A factory class for creating size-based layout constraint objects using a fluent API.
+- [NSViewLayoutRegion](./nsviewlayoutregion.md)
+- [NSViewLayoutRegionAdaptivityAxis](./nsviewlayoutregionadaptivityaxis.md)
 
 
 ---

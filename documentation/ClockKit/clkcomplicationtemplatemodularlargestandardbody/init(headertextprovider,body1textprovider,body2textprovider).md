@@ -34,6 +34,14 @@ init(headerTextProvider: CLKTextProvider, body1TextProvider: CLKTextProvider, bo
   Creates a new template that has a header row with an image and text, and a row of body text.
 - [init(headerImageProvider: CLKImageProvider?, headerTextProvider: CLKTextProvider, body1TextProvider: CLKTextProvider, body2TextProvider: CLKTextProvider?)](./init%28headerimageprovider,headertextprovider,body1textprovider,body2textprovider%29.md)
   Creates a new template that has a header row with an image and text, and two rows of body text.
+- [+ templateWithHeaderTextProvider:body1TextProvider:](./templatewithheadertextprovider_body1textprovider_.md)
+  Returns a new template that has a row of header text and a row of body text.
+- [+ templateWithHeaderTextProvider:body1TextProvider:body2TextProvider:](./templatewithheadertextprovider_body1textprovider_body2textprovider_.md)
+  Returns a new template that has a row of header text and two rows of body text.
+- [+ templateWithHeaderImageProvider:headerTextProvider:body1TextProvider:](./templatewithheaderimageprovider_headertextprovider_body1textprovider_.md)
+  Returns a new template that has a header row with an image and text, and a row of body text.
+- [+ templateWithHeaderImageProvider:headerTextProvider:body1TextProvider:body2TextProvider:](./templatewithheaderimageprovider_headertextprovider_body1textprovider_body2textprovider_.md)
+  Returns a new template that has a header row with an image and text, and two rows of body text.
 
 
 ---

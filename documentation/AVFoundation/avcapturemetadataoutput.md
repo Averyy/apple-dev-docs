@@ -32,6 +32,8 @@ An `AVCaptureMetadataOutput` object intercepts metadata objects emitted by its a
 ### Creating metadata output
 - [init()](./avcapturemetadataoutput/init%28%29.md)
   Creates a new capture metadata output.
+- [+ new](./avcapturemetadataoutput/new.md)
+  Creates a new capture metadata output.
 ### Configuring metadata capture
 - [var availableMetadataObjectTypes: [AVMetadataObject.ObjectType]](./avcapturemetadataoutput/availablemetadataobjecttypes.md)
   An array of strings identifying the types of metadata objects that can be captured.

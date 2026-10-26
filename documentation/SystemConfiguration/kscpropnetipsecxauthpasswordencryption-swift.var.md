@@ -59,6 +59,18 @@ The value of this key is of type [`CFString`](../CoreFoundation/cfstring.md). Th
   The constant value KeyID.
 - [let kSCValNetIPSecSharedSecretEncryptionKeychain: CFString](./kscvalnetipsecsharedsecretencryptionkeychain-swift.var.md)
   The constant value Keychain.
+- [kCNNetworkInfoKeyBSSID](./kcnnetworkinfokeybssid.md)
+  The key for the network’s BSSID, which is represented as a [`CFStringRef`](../CoreFoundation/cfstring.md) object.
+- [kCNNetworkInfoKeySSID](./kcnnetworkinfokeyssid.md)
+  The key for the network’s SSID, which is represented as a [`CFStringRef`](../CoreFoundation/cfstring.md) object.
+- [kCNNetworkInfoKeySSIDData](./kcnnetworkinfokeyssiddata.md)
+  The key for the network’s SSID, which is represented as a [`CFDataRef`](../CoreFoundation/cfdata.md) object.
+- [kSCPropUsersConsoleUserGID](./kscpropusersconsoleusergid-c.var.md)
+  The deprecated key GID.
+- [kSCPropUsersConsoleUserName](./kscpropusersconsoleusername-c.var.md)
+  The deprecated key Name.
+- [kSCPropUsersConsoleUserUID](./kscpropusersconsoleuseruid-c.var.md)
+  The deprecated key UID.
 
 
 ---

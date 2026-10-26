@@ -35,6 +35,12 @@ init?(payload errorCorrectedPayload: Data, isCompact: Bool, rowCount: Int, colum
 - `rowCount`: The number of rows in the PDF417 code, from 3 to 90.
 - `columnCount`: The number of columns in the Aztec code, from 1 to 30.
 
+## See Also
+
+### Creating a Descriptor
+- [+ descriptorWithPayload:isCompact:rowCount:columnCount:](./descriptorwithpayload_iscompact_rowcount_columncount_.md)
+  Creates an PDF417 code descriptor for the given payload and parameters.
+
 
 ---
 

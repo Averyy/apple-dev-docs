@@ -40,6 +40,9 @@ A new UUID object. Returns `nil` for invalid strings.
   Initializes a new UUID with RFC 4122 version 4 random bytes.
 - [convenience init(uuidBytes: UnsafePointer<UInt8>?)](./init%28uuidbytes%29-2p4d5.md)
   Initializes a new UUID with the given bytes.
+### Related Documentation
+- [+ UUID](./uuid.md)
+  Create and returns a new UUID with RFC 4122 version 4 random bytes.
 
 
 ---

@@ -54,6 +54,8 @@ Instances of the proxy manager are thread safe.
 ### Notifications
 - [static let NEDNSProxyConfigurationDidChange: NSNotification.Name](../Foundation/nsnotification/name-swift.struct/nednsproxyconfigurationdidchange.md)
   A notification that is posted when the DNS proxy configuration changes.
+- [NEDNSProxyConfigurationDidChangeNotification](./nednsproxyconfigurationdidchangenotification.md)
+  A notification that is posted when the DNS proxy configuration changes.
 ### Errors
 - [let NEDNSProxyErrorDomain: String](./nednsproxyerrordomain.md)
   The DNS proxy error domain.

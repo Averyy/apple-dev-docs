@@ -37,6 +37,9 @@ Use the [`keychain()`](./keychain%28%29.md) method to obtain the keychain create
   Specifies the password for the keychain that will be created.
 - [func beginSheet(forDirectory: String!, file: String!, modalFor: NSWindow!, modalDelegate: Any!, didEnd: Selector!, contextInfo: UnsafeMutableRawPointer!)](./beginsheet%28fordirectory,file,modalfor,modaldelegate,didend,contextinfo%29.md)
   Displays a sheet that allows a user to create a new keychain.
+### Related Documentation
+- [- runModalForDirectory:file:types:](../../AppKit/nsopenpanel/runmodalfordirectory_file_types_.md)
+  Displays the panel and begins a modal event loop that is terminated when the user clicks either OK or Cancel.
 
 
 ---

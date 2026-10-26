@@ -41,6 +41,8 @@ An array of keys with changed values since downloading or saving the record. If 
   Stores an object in the record using the specified key.
 - [func allKeys() -> [String]](./allkeys%28%29.md)
   Returns an array of the record’s keys.
+- [- setObject:forKeyedSubscript:](./setobject_forkeyedsubscript_.md)
+  Stores an object in the record using the specified key.
 
 
 ---

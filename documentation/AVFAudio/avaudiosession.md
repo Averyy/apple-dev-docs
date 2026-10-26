@@ -93,6 +93,15 @@ The audio session uses this configuration when you activate the session using th
   A Boolean value that indicates whether the audio session is a candidate to be the Now Playing session.
 - [func setIsNowPlayingCandidate(Bool) throws](./avaudiosession/setisnowplayingcandidate%28_%29.md)
   Sets a Boolean value that indicates whether the audio session is a candidate to be the Now Playing session.
+- [intendedSpatialExperience](./avaudiosession/intendedspatialexperience-qlty.md)
+  The spatial audio experience your app intends to provide the user.
+- [- setIntendedSpatialExperience:options:error:](./avaudiosession/setintendedspatialexperience_options_error_.md)
+  Sets the spatial audio experience your app intends to provide the user.
+- [AVAudioSessionSpatialExperience](./avaudiosessionspatialexperience-c.enum.md)
+- [intendedSpatialExperienceOptions](./avaudiosession/intendedspatialexperienceoptions.md)
+  A dictionary of options that customize the spatial experience.
+- [AVAudioSessionSpatialExperienceOption](./avaudiosessionspatialexperienceoption.md)
+  A key that configures one characteristic of a spatial experience, such as its sound stage size or anchoring.
 ### Activating and deactivating the session
 - [func setActive(Bool, options: AVAudioSession.SetActiveOptions) throws](./avaudiosession/setactive%28_,options%29.md)
   Activates or deactivates your app’s audio session using the specified options.
@@ -104,6 +113,8 @@ The audio session uses this configuration when you activate the session using th
   Constants that describe the options to pass when activating the audio session.
 - [struct AVAudioSessionDeactivationOptions](./avaudiosessiondeactivationoptions.md)
   Options for deactivating an AVAudioSession
+- [- setActive:error:](./avaudiosession/setactive_error_.md)
+  Activates or deactivates your app’s audio session.
 ### Observing activation lifecycle
 - [class let didBecomeActiveNotification: NSNotification.Name](./avaudiosession/didbecomeactivenotification.md)
   Notification sent when the audio session becomes active.
@@ -187,6 +198,8 @@ The audio session uses this configuration when you activate the session using th
   Prepares the route selection for long-form video playback.
 - [AVAudioSession.RouteSelection](./avaudiosession/routeselection.md)
   Constants used to define the active route selection.
+- [AVAudioSessionRouteSelection](../AVKit/avaudiosessionrouteselection.md)
+  Constants that indicate the audio route selection.
 ### Handling interruptions
 - [var prefersNoInterruptionsFromSystemAlerts: Bool](./avaudiosession/prefersnointerruptionsfromsystemalerts.md)
   A Boolean value that indicates a preference for not interrupting the session with system alerts.

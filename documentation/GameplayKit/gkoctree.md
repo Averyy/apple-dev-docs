@@ -42,6 +42,8 @@ The [`GKOctree`](./gkoctree.md) class is one of three spatial partitioning data 
 ### Creating an Octree
 - [init(boundingBox: GKBox, minimumCellSize: Float)](./gkoctree/init%28boundingbox,minimumcellsize%29.md)
   Initializes an octree with the specified dimensions.
+- [+ octreeWithBoundingBox:minimumCellSize:](./gkoctree/octreewithboundingbox_minimumcellsize_.md)
+  Creates an octree with the specified dimensions.
 ### Adding and Removing Elements
 - [func add(ElementType, at: vector_float3) -> GKOctreeNode](./gkoctree/add%28_,at%29.md)
   Adds an object to the tree corresponding to the specified point in 3D space.

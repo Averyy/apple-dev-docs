@@ -43,6 +43,10 @@ The system creates instances of this class to handle active passkey requests, an
   An input for WebAuthn extensions.
 - [struct ASPasskeyAssertionCredentialExtensionInput](./aspasskeyassertioncredentialextensioninput-swift.struct.md)
   A type that encapsulates input for various WebAuthn extensions during passkey assertion.
+- [extensionInput](./aspasskeycredentialrequestparameters/extensioninput-5ny4g.md)
+  Inputs for WebAuthn extensions you use for passkey assertion.
+- [ASPasskeyAssertionCredentialExtensionInput](./aspasskeyassertioncredentialextensioninput-c.class.md)
+  A type that encapsulates input for various WebAuthn extensions during passkey assertion.
 ### Initializers
 - [init?(coder: NSCoder)](./aspasskeycredentialrequestparameters/init%28coder%29.md)
 

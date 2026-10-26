@@ -70,6 +70,11 @@ To maximize security, your app never gains access to any of the underlying authe
 - [class LADomainStateBiometry](./ladomainstatebiometry.md)
 - [class LADomainStateCompanion](./ladomainstatecompanion.md)
 - [class LAEnvironment](./laenvironment.md)
+- [LAEnvironmentMechanism](./laenvironment/mechanism.md)
+- [LAEnvironmentMechanismBiometry](./laenvironment/mechanismbiometry.md)
+- [LAEnvironmentMechanismCompanion](./laenvironment/mechanismcompanion.md)
+- [LAEnvironmentMechanismUserPassword](./laenvironment/mechanismuserpassword.md)
+- [LAEnvironmentState](./laenvironment/state-swift.class.md)
 ### Variables
 - [var kLAAccessControlOperationCreateItem: Int32](./klaaccesscontroloperationcreateitem.md)
 - [var kLAAccessControlOperationCreateKey: Int32](./klaaccesscontroloperationcreatekey.md)
@@ -86,6 +91,11 @@ To maximize security, your app never gains access to any of the underlying authe
 - [var kLAPolicyDeviceOwnerAuthenticationWithCompanion: Int32](./klapolicydeviceownerauthenticationwithcompanion.md)
 ### Enumerations
 - [enum LACompanionType](./lacompaniontype.md)
+### Protocols
+- [LAEnvironmentObserver](./laenvironment/observer.md)
+### Macros
+- [LA_EXPORT](./la_export.md)
+- [LA_EXTERN](./la_extern.md)
 
 
 ---

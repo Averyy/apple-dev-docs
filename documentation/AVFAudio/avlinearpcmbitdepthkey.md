@@ -29,6 +29,7 @@ extern NSString * const AVLinearPCMBitDepthKey;
 - [let AVLinearPCMIsBigEndianKey: String](./avlinearpcmisbigendiankey.md)
 - [let AVLinearPCMIsFloatKey: String](./avlinearpcmisfloatkey.md)
 - [let AVLinearPCMIsNonInterleaved: String](./avlinearpcmisnoninterleaved.md)
+- [AVLinearPCMIsNonInterleavedKey](./avlinearpcmisnoninterleavedkey.md)
 
 
 ---

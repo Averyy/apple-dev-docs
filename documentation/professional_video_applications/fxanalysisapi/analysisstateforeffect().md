@@ -22,7 +22,7 @@ func analysisStateForEffect() -> FxAnalysisState
 
 ## Mentions
 
-- [Analyzing media](https://developer.apple.com/documentation/professional-video-applications/analyzing-media)
+- [Analyzing media](../../Professional-Video-Applications/analyzing-media.md)
 
 #### Return Value
 

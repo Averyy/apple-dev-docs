@@ -86,6 +86,20 @@ If you store records in a local database, use the [`encodeSystemFields(with:)`](
   The data type that CloudKit requires for record field names.
 - [convenience init(recordType: CKRecord.RecordType, zoneID: CKRecordZone.ID)](./ckrecord/init%28recordtype,zoneid%29.md)
   Creates a record in the specified zone.
+- [- initWithRecordType:](./ckrecord/initwithrecordtype_.md)
+  Creates a new record of the specified type.
+- [- initWithRecordType:zoneID:](./ckrecord/initwithrecordtype_zoneid_.md)
+  Creates a record in the specified zone.
+- [- initWithRecordType:recordID:](./ckrecord/initwithrecordtype_recordid_.md)
+  Creates a record using an ID that you provide.
+- [CKRecordType](./ckrecordtype.md)
+  A data type that CloudKit requires for record types.
+- [CKRecordTypeShare](./ckrecordtypeshare-8b6yt.md)
+  The system type that identifies a share record.
+- [CKRecordTypeUserRecord](./ckrecordtypeuserrecord-49k30.md)
+  The system type that identifies a user record.
+- [CKRecordFieldKey](./ckrecordfieldkey.md)
+  A data type that CloudKit requires for record field names.
 ### Accessing the Record’s Fields
 - [func object(forKey: CKRecord.FieldKey) -> (any __CKRecordObjCValue)?](./ckrecord/object%28forkey%29.md)
   Returns the object that the record stores for the specified key.
@@ -109,6 +123,30 @@ If you store records in a local database, use the [`encodeSystemFields(with:)`](
   A protocol for managing the key-value pairs of a CloudKit record.
 - [typealias CKRecordValue](./ckrecordvalue-swift.typealias.md)
   A data type for objects that CloudKit stores on the server.
+- [- objectForKey:](./ckrecord/objectforkey_.md)
+  Returns the object that the record stores for the specified key.
+- [- setObject:forKey:](./ckrecord/setobject_forkey_.md)
+  Stores an object in the record using the specified key.
+- [- setObject:forKeyedSubscript:](./ckrecord/setobject_forkeyedsubscript_.md)
+  Stores an object in the record using the specified key.
+- [- allKeys](./ckrecord/allkeys.md)
+  Returns an array of the record’s keys.
+- [- changedKeys](./ckrecord/changedkeys.md)
+  Returns an array of keys with recent changes to their values.
+- [CKRecordCreationDateKey](./ckrecordcreationdatekey.md)
+  A key constant that a record uses for its CKRecord.creationDate.
+- [CKRecordCreatorUserRecordIDKey](./ckrecordcreatoruserrecordidkey.md)
+  A key constant that a record uses for its CKRecord.creatorUserRecordID.
+- [CKRecordLastModifiedUserRecordIDKey](./ckrecordlastmodifieduserrecordidkey.md)
+  A key constant that a record uses for its CKRecord.lastModifiedUserRecordID.
+- [CKRecordModificationDateKey](./ckrecordmodificationdatekey.md)
+  A key constant that a record uses for its CKRecord.modificationDate.
+- [CKRecordRecordIDKey](./ckrecordrecordidkey.md)
+  A key constant that a record uses for its CKRecord.recordID.
+- [CKRecordParentKey](./ckrecordparentkey-2kx8l.md)
+  The key constant that a record uses for its CKRecord.parent.
+- [CKRecordShareKey](./ckrecordsharekey-rrat.md)
+  The key constant that a record uses for its CKRecord.share.
 ### Accessing the Record’s Metadata
 - [var recordID: CKRecord.ID](./ckrecord/recordid.md)
   The unique ID of the record.
@@ -128,6 +166,8 @@ If you store records in a local database, use the [`encodeSystemFields(with:)`](
   The server change token for the record.
 - [CKRecord.ID](./ckrecord/id.md)
   An object that uniquely identifies a record in a database.
+- [recordType](./ckrecord/recordtype-9s09b.md)
+  The value that your app defines to identify the type of record.
 ### Encrypting the Record’s Values
 - [var encryptedValues: any CKRecordKeyValueSetting & Sendable](./ckrecord/encryptedvalues.md)
   An object that manages the record’s encrypted key-value pairs.

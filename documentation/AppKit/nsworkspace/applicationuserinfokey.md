@@ -19,6 +19,20 @@ class let applicationUserInfoKey: String
 extern NSString * const NSWorkspaceApplicationKey;
 ```
 
+## See Also
+
+### Deprecated constants
+- [NSPlainFileType](../nsplainfiletype.md)
+  Plain (untyped) file.
+- [NSDirectoryFileType](../nsdirectoryfiletype.md)
+  Directory.
+- [NSApplicationFileType](../nsapplicationfiletype.md)
+  Cocoa app.
+- [NSFilesystemFileType](../nsfilesystemfiletype.md)
+  File-system mount point.
+- [NSShellCommandFileType](../nsshellcommandfiletype.md)
+  Executable shell command.
+
 
 ---
 

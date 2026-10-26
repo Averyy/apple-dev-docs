@@ -52,6 +52,14 @@ extern vSInt32 vS64FullMulEven(vSInt32 vA, vSInt32 vB);
   Signed 8-bit multiplication; results are same width as multiplicands.
 - [func vU32HalfMultiply(vUInt32, vUInt32) -> vUInt32](./vu32halfmultiply%28_,_%29.md)
   Unsigned 32-bit multiplication; results are same width as multiplicands.
+- [vU64Add](./vu64add.md)
+  Unsigned 64-bit addition (modular arithmetic).
+- [vS64Add](./vs64add.md)
+  Signed 64-bit addition (modular arithmetic).
+- [vU64Sub](./vu64sub.md)
+  Unsigned 64-bit subtraction (modular arithmetic).
+- [vS64Sub](./vs64sub.md)
+  Signed 64-bit subtraction (modular arithmetic).
 
 
 ---

@@ -47,6 +47,8 @@ A newly created state machine’s [`currentState`](./currentstate.md) property i
   Attempts to transition the state machine from its current state to a state of the specified class.
 - [func update(deltaTime: TimeInterval)](./update%28deltatime%29.md)
   Tells the current state object to perform per-frame updates.
+- [- stateForClass:](./stateforclass_.md)
+  Returns the state object in the state machine corresponding to the specified class.
 
 
 ---

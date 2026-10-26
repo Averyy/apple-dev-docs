@@ -590,6 +590,16 @@
       "file_path": "documentation/ImageIO/exif-dictionary-keys.md",
       "hash": "fb6f710cb8b2ca88dd871256887404381c1c257d2eb24c9ce7c1478ef6c81845"
     },
+    "https://developer.apple.com/documentation/imageio/get_imageio_avail_but_depr_macro": {
+      "etag": "\"2c1e-65d55e833c431-df\"",
+      "file_path": "documentation/ImageIO/get_imageio_avail_but_depr_macro.md",
+      "hash": "2752aeb90d45de8a5deeaad130df3c4ba4e0d1ef117d53b501d6d084c5321611"
+    },
+    "https://developer.apple.com/documentation/imageio/get_imageio_avail_macro": {
+      "etag": "\"2ba7-65d55e85718a3-df\"",
+      "file_path": "documentation/ImageIO/get_imageio_avail_macro.md",
+      "hash": "edffa7ab3d9a56921695a12f5468b24ad10e9fabbcf4bdef115b102e26f6e65c"
+    },
     "https://developer.apple.com/documentation/imageio/gif-image-properties": {
       "etag": "\"4ae8-65902848cec5d-df\"",
       "file_path": "documentation/ImageIO/gif-image-properties.md",
@@ -604,6 +614,11 @@
       "etag": "\"4631-65902847a8696-df\"",
       "file_path": "documentation/ImageIO/heic-image-properties.md",
       "hash": "1824f69cbd78a2f4e19680ad607ac1ed27d4a9e8afd524f9c39e04e0db345292"
+    },
+    "https://developer.apple.com/documentation/imageio/iio_bridged_type": {
+      "etag": "\"2a74-65d55e8539bac-df\"",
+      "file_path": "documentation/ImageIO/iio_bridged_type.md",
+      "hash": "1e5fd8d44a0440d590a0a05659fad16426cc4e6e5f3c4cd96049d844019c18b8"
     },
     "https://developer.apple.com/documentation/imageio/iio_has_iosurface": {
       "etag": "\"3399-65d55e8369842-df\"",
@@ -629,6 +644,81 @@
       "etag": "\"93d5-659028473da64-df\"",
       "file_path": "documentation/ImageIO/image-properties.md",
       "hash": "d1521e9f14bb42fc0c17073f48c49f52584bd6d1593341f40165ad32058916e9"
+    },
+    "https://developer.apple.com/documentation/imageio/imageio_available_but_deprecated": {
+      "etag": "\"2a96-65d55e8553bbc-df\"",
+      "file_path": "documentation/ImageIO/imageio_available_but_deprecated.md",
+      "hash": "f8a4ef195db646d5e9691d62e4c5bfe2cd554081140a281b24f25a0952752bb4"
+    },
+    "https://developer.apple.com/documentation/imageio/imageio_available_but_deprecated1": {
+      "etag": "\"2ad8-65d55e85718a3-df\"",
+      "file_path": "documentation/ImageIO/imageio_available_but_deprecated1.md",
+      "hash": "d3ae7d3abb601a2ad1605be1264de303785cfaac890a1c511e402cd0094e0a83"
+    },
+    "https://developer.apple.com/documentation/imageio/imageio_available_but_deprecated2": {
+      "etag": "\"2b19-65d55e8369842-df\"",
+      "file_path": "documentation/ImageIO/imageio_available_but_deprecated2.md",
+      "hash": "2946b9e80fc2427a74d3b614cfb9397c53add8d033946b86eef26302ac65db34"
+    },
+    "https://developer.apple.com/documentation/imageio/imageio_available_but_deprecated3": {
+      "etag": "\"2b59-65d55e839e985-df\"",
+      "file_path": "documentation/ImageIO/imageio_available_but_deprecated3.md",
+      "hash": "32d832f30348327534f57be4c8f94cf387cf6b0779de6f121dfe37cdd2b9b145"
+    },
+    "https://developer.apple.com/documentation/imageio/imageio_available_but_deprecated4": {
+      "etag": "\"2b9b-65d55e83c0574-df\"",
+      "file_path": "documentation/ImageIO/imageio_available_but_deprecated4.md",
+      "hash": "0315b8ef9774d94615043636c8b3c21c5b5c04796a16093ab54839b704bc7aa8"
+    },
+    "https://developer.apple.com/documentation/imageio/imageio_available_but_deprecated5": {
+      "etag": "\"2bdb-65d55e846b4cc-df\"",
+      "file_path": "documentation/ImageIO/imageio_available_but_deprecated5.md",
+      "hash": "b0b9b26e808826de3bf795e334c8fbdd498bd74e9ab0b5b447accc6539dcc02c"
+    },
+    "https://developer.apple.com/documentation/imageio/imageio_available_starting": {
+      "etag": "\"2a72-65d55e85a038e-df\"",
+      "file_path": "documentation/ImageIO/imageio_available_starting.md",
+      "hash": "cee806c3327ba62a768c4cee732fb4cb8b8e235a13ba81c9e0f5dcdbbd1db89d"
+    },
+    "https://developer.apple.com/documentation/imageio/imageio_available_starting1": {
+      "etag": "\"2ab3-65d55e846b4cc-df\"",
+      "file_path": "documentation/ImageIO/imageio_available_starting1.md",
+      "hash": "c2c873b2618b1754184cfa3c644228afba4b89c200d7543c477751055ce263dc"
+    },
+    "https://developer.apple.com/documentation/imageio/imageio_available_starting2": {
+      "etag": "\"2af3-65d55e8447f0f-df\"",
+      "file_path": "documentation/ImageIO/imageio_available_starting2.md",
+      "hash": "dfebea1db5941af4216baaf1111f8a6fa65b1c19dc44f53324c887fe94bc6532"
+    },
+    "https://developer.apple.com/documentation/imageio/imageio_available_starting3": {
+      "etag": "\"2b33-65d55e83fb0b3-df\"",
+      "file_path": "documentation/ImageIO/imageio_available_starting3.md",
+      "hash": "a2c61586972220641d975927e4a666cc6fd29fcba596dd6871e33792af759334"
+    },
+    "https://developer.apple.com/documentation/imageio/imageio_available_starting4": {
+      "etag": "\"2b73-65d55e8384ab1-df\"",
+      "file_path": "documentation/ImageIO/imageio_available_starting4.md",
+      "hash": "c505cb56127891062194429b995b4abddf561b4531db48d899915efaf6f39260"
+    },
+    "https://developer.apple.com/documentation/imageio/imageio_extern": {
+      "etag": "\"2a0b-65d55e85718a3-df\"",
+      "file_path": "documentation/ImageIO/imageio_extern.md",
+      "hash": "5c4deb68b7fc1da42e865a019c248347264f235574c438dee9be9a9eaffa5f74"
+    },
+    "https://developer.apple.com/documentation/imageio/imageio_extern_c_begin": {
+      "etag": "\"2a6b-65d55e85718a3-df\"",
+      "file_path": "documentation/ImageIO/imageio_extern_c_begin.md",
+      "hash": "4570e886a0c1c64ec8456170c2ed2f081b7de902963f06f3638651b064920dff"
+    },
+    "https://developer.apple.com/documentation/imageio/imageio_extern_c_end": {
+      "etag": "\"2a53-65d55e833c431-df\"",
+      "file_path": "documentation/ImageIO/imageio_extern_c_end.md",
+      "hash": "1b7f22c9d8125736dbb3d60531c7a5873408e285ec2f05581bbf9e2da90ec9f0"
+    },
+    "https://developer.apple.com/documentation/imageio/imageio_png_all_filters": {
+      "etag": "\"2bde-65d55e8447f0f-df\"",
+      "file_path": "documentation/ImageIO/imageio_png_all_filters.md",
+      "hash": "8064f45ef3a7bc527979479e8a6443ad6d1c9b3301158422a19afea9d293e6bc"
     },
     "https://developer.apple.com/documentation/imageio/imageio_png_filter_avg": {
       "etag": "\"382d-65d55e858df68-df\"",
@@ -659,6 +749,16 @@
       "etag": "\"37bf-65d55e8553bbc-df\"",
       "file_path": "documentation/ImageIO/imageio_png_no_filters.md",
       "hash": "de3dd0648739cda6558b77f5e72f84c356b4bba9c8757e69cd01c0b3881b870e"
+    },
+    "https://developer.apple.com/documentation/imageio/imageio_unavailable_desktop": {
+      "etag": "\"2aa7-65d55e858df68-df\"",
+      "file_path": "documentation/ImageIO/imageio_unavailable_desktop.md",
+      "hash": "aae4a2109ea8ad044ecf31af169935dd7ed5dada60cd0b4244bd6f296b13574d"
+    },
+    "https://developer.apple.com/documentation/imageio/imageio_unavailable_embedded": {
+      "etag": "\"2ab3-65d55e8384ab1-df\"",
+      "file_path": "documentation/ImageIO/imageio_unavailable_embedded.md",
+      "hash": "3d749c595432684e5021b9d09655f1f006627a81eb52c73c4837c315db891a5b"
     },
     "https://developer.apple.com/documentation/imageio/individual-image-properties": {
       "etag": "\"aa05-659028482e329-df\"",
@@ -5065,6 +5165,16 @@
       "file_path": "documentation/ImageIO/exif-dictionary-keys.md",
       "hash": "fb6f710cb8b2ca88dd871256887404381c1c257d2eb24c9ce7c1478ef6c81845"
     },
+    "https://developer.apple.com/tutorials/data/documentation/imageio/get_imageio_avail_but_depr_macro.json": {
+      "etag": "\"2c1e-65d55e833c431-df\"",
+      "file_path": "documentation/ImageIO/get_imageio_avail_but_depr_macro.md",
+      "hash": "2752aeb90d45de8a5deeaad130df3c4ba4e0d1ef117d53b501d6d084c5321611"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/imageio/get_imageio_avail_macro.json": {
+      "etag": "\"2ba7-65d55e85718a3-df\"",
+      "file_path": "documentation/ImageIO/get_imageio_avail_macro.md",
+      "hash": "edffa7ab3d9a56921695a12f5468b24ad10e9fabbcf4bdef115b102e26f6e65c"
+    },
     "https://developer.apple.com/tutorials/data/documentation/imageio/gif-image-properties.json": {
       "etag": "\"4ae8-65902848cec5d-df\"",
       "file_path": "documentation/ImageIO/gif-image-properties.md",
@@ -5079,6 +5189,11 @@
       "etag": "\"4631-65902847a8696-df\"",
       "file_path": "documentation/ImageIO/heic-image-properties.md",
       "hash": "1824f69cbd78a2f4e19680ad607ac1ed27d4a9e8afd524f9c39e04e0db345292"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/imageio/iio_bridged_type.json": {
+      "etag": "\"2a74-65d55e8539bac-df\"",
+      "file_path": "documentation/ImageIO/iio_bridged_type.md",
+      "hash": "1e5fd8d44a0440d590a0a05659fad16426cc4e6e5f3c4cd96049d844019c18b8"
     },
     "https://developer.apple.com/tutorials/data/documentation/imageio/iio_has_iosurface.json": {
       "etag": "\"3399-65d55e8369842-df\"",
@@ -5104,6 +5219,81 @@
       "etag": "\"93d5-659028473da64-df\"",
       "file_path": "documentation/ImageIO/image-properties.md",
       "hash": "d1521e9f14bb42fc0c17073f48c49f52584bd6d1593341f40165ad32058916e9"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/imageio/imageio_available_but_deprecated.json": {
+      "etag": "\"2a96-65d55e8553bbc-df\"",
+      "file_path": "documentation/ImageIO/imageio_available_but_deprecated.md",
+      "hash": "f8a4ef195db646d5e9691d62e4c5bfe2cd554081140a281b24f25a0952752bb4"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/imageio/imageio_available_but_deprecated1.json": {
+      "etag": "\"2ad8-65d55e85718a3-df\"",
+      "file_path": "documentation/ImageIO/imageio_available_but_deprecated1.md",
+      "hash": "d3ae7d3abb601a2ad1605be1264de303785cfaac890a1c511e402cd0094e0a83"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/imageio/imageio_available_but_deprecated2.json": {
+      "etag": "\"2b19-65d55e8369842-df\"",
+      "file_path": "documentation/ImageIO/imageio_available_but_deprecated2.md",
+      "hash": "2946b9e80fc2427a74d3b614cfb9397c53add8d033946b86eef26302ac65db34"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/imageio/imageio_available_but_deprecated3.json": {
+      "etag": "\"2b59-65d55e839e985-df\"",
+      "file_path": "documentation/ImageIO/imageio_available_but_deprecated3.md",
+      "hash": "32d832f30348327534f57be4c8f94cf387cf6b0779de6f121dfe37cdd2b9b145"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/imageio/imageio_available_but_deprecated4.json": {
+      "etag": "\"2b9b-65d55e83c0574-df\"",
+      "file_path": "documentation/ImageIO/imageio_available_but_deprecated4.md",
+      "hash": "0315b8ef9774d94615043636c8b3c21c5b5c04796a16093ab54839b704bc7aa8"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/imageio/imageio_available_but_deprecated5.json": {
+      "etag": "\"2bdb-65d55e846b4cc-df\"",
+      "file_path": "documentation/ImageIO/imageio_available_but_deprecated5.md",
+      "hash": "b0b9b26e808826de3bf795e334c8fbdd498bd74e9ab0b5b447accc6539dcc02c"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/imageio/imageio_available_starting.json": {
+      "etag": "\"2a72-65d55e85a038e-df\"",
+      "file_path": "documentation/ImageIO/imageio_available_starting.md",
+      "hash": "cee806c3327ba62a768c4cee732fb4cb8b8e235a13ba81c9e0f5dcdbbd1db89d"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/imageio/imageio_available_starting1.json": {
+      "etag": "\"2ab3-65d55e846b4cc-df\"",
+      "file_path": "documentation/ImageIO/imageio_available_starting1.md",
+      "hash": "c2c873b2618b1754184cfa3c644228afba4b89c200d7543c477751055ce263dc"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/imageio/imageio_available_starting2.json": {
+      "etag": "\"2af3-65d55e8447f0f-df\"",
+      "file_path": "documentation/ImageIO/imageio_available_starting2.md",
+      "hash": "dfebea1db5941af4216baaf1111f8a6fa65b1c19dc44f53324c887fe94bc6532"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/imageio/imageio_available_starting3.json": {
+      "etag": "\"2b33-65d55e83fb0b3-df\"",
+      "file_path": "documentation/ImageIO/imageio_available_starting3.md",
+      "hash": "a2c61586972220641d975927e4a666cc6fd29fcba596dd6871e33792af759334"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/imageio/imageio_available_starting4.json": {
+      "etag": "\"2b73-65d55e8384ab1-df\"",
+      "file_path": "documentation/ImageIO/imageio_available_starting4.md",
+      "hash": "c505cb56127891062194429b995b4abddf561b4531db48d899915efaf6f39260"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/imageio/imageio_extern.json": {
+      "etag": "\"2a0b-65d55e85718a3-df\"",
+      "file_path": "documentation/ImageIO/imageio_extern.md",
+      "hash": "5c4deb68b7fc1da42e865a019c248347264f235574c438dee9be9a9eaffa5f74"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/imageio/imageio_extern_c_begin.json": {
+      "etag": "\"2a6b-65d55e85718a3-df\"",
+      "file_path": "documentation/ImageIO/imageio_extern_c_begin.md",
+      "hash": "4570e886a0c1c64ec8456170c2ed2f081b7de902963f06f3638651b064920dff"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/imageio/imageio_extern_c_end.json": {
+      "etag": "\"2a53-65d55e833c431-df\"",
+      "file_path": "documentation/ImageIO/imageio_extern_c_end.md",
+      "hash": "1b7f22c9d8125736dbb3d60531c7a5873408e285ec2f05581bbf9e2da90ec9f0"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/imageio/imageio_png_all_filters.json": {
+      "etag": "\"2bde-65d55e8447f0f-df\"",
+      "file_path": "documentation/ImageIO/imageio_png_all_filters.md",
+      "hash": "8064f45ef3a7bc527979479e8a6443ad6d1c9b3301158422a19afea9d293e6bc"
     },
     "https://developer.apple.com/tutorials/data/documentation/imageio/imageio_png_filter_avg.json": {
       "etag": "\"382d-65d55e858df68-df\"",
@@ -5134,6 +5324,16 @@
       "etag": "\"37bf-65d55e8553bbc-df\"",
       "file_path": "documentation/ImageIO/imageio_png_no_filters.md",
       "hash": "de3dd0648739cda6558b77f5e72f84c356b4bba9c8757e69cd01c0b3881b870e"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/imageio/imageio_unavailable_desktop.json": {
+      "etag": "\"2aa7-65d55e858df68-df\"",
+      "file_path": "documentation/ImageIO/imageio_unavailable_desktop.md",
+      "hash": "aae4a2109ea8ad044ecf31af169935dd7ed5dada60cd0b4244bd6f296b13574d"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/imageio/imageio_unavailable_embedded.json": {
+      "etag": "\"2ab3-65d55e8384ab1-df\"",
+      "file_path": "documentation/ImageIO/imageio_unavailable_embedded.md",
+      "hash": "3d749c595432684e5021b9d09655f1f006627a81eb52c73c4837c315db891a5b"
     },
     "https://developer.apple.com/tutorials/data/documentation/imageio/individual-image-properties.json": {
       "etag": "\"aa05-659028482e329-df\"",
@@ -8953,8 +9153,8 @@
   },
   "metadata": {
     "render": {
-      "version": 1
+      "version": 2
     },
-    "total_pages": 1790
+    "total_pages": 1830
   }
 }

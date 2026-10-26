@@ -37,6 +37,7 @@ typedef int (*)(void *, unsigned long long *, unsigned char *, unsigned int *) C
 - [typealias CMIOStreamScheduledOutputNotificationProc](./cmiostreamscheduledoutputnotificationproc.md)
 - [struct CMIOExtensionProperty](./cmioextensionproperty.md)
   A structure that defines the properties that providers, devices, and streams support.
+- [CMIOHardwarePlugInRef](./cmiohardwarepluginref.md)
 
 
 ---

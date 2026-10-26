@@ -36,6 +36,8 @@ enum AVVideoFrameAnalysisType : NSUInteger;
   A type that identifies objects, landmarks, art, and so on.
 - [static var machineReadableCode: AVVideoFrameAnalysisType](./avvideoframeanalysistype/machinereadablecode.md)
   A type that recognizes machine-readable codes, such as QR codes.
+- [AVVideoFrameAnalysisTypeNone](./avvideoframeanalysistype/avvideoframeanalysistypenone.md)
+  A type that performs no analysis.
 ### Initializers
 - [init(rawValue: UInt)](./avvideoframeanalysistype/init%28rawvalue%29.md)
   Creates a type from a string value.

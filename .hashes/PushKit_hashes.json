@@ -15,6 +15,11 @@
       "file_path": "documentation/PushKit/exporting-delivery-metrics-logs.md",
       "hash": "bbe6c40dfecb8dc5a00d90b5f13230d138cd31b1abbb0ece74bf6880cf75914c"
     },
+    "https://developer.apple.com/documentation/pushkit/pk_export": {
+      "etag": "\"9de-65d55f69abc4d-df\"",
+      "file_path": "documentation/PushKit/pk_export.md",
+      "hash": "faef8ec9ddfa66ffa31d86d099878f5487fc0279516f40c78fdeea64987aa02d"
+    },
     "https://developer.apple.com/documentation/pushkit/pkpushcredentials": {
       "etag": "\"4d95-65d55f69abc4d-df\"",
       "file_path": "documentation/PushKit/pkpushcredentials.md",
@@ -160,6 +165,11 @@
       "file_path": "documentation/PushKit/exporting-delivery-metrics-logs.md",
       "hash": "bbe6c40dfecb8dc5a00d90b5f13230d138cd31b1abbb0ece74bf6880cf75914c"
     },
+    "https://developer.apple.com/tutorials/data/documentation/pushkit/pk_export.json": {
+      "etag": "\"9de-65d55f69abc4d-df\"",
+      "file_path": "documentation/PushKit/pk_export.md",
+      "hash": "faef8ec9ddfa66ffa31d86d099878f5487fc0279516f40c78fdeea64987aa02d"
+    },
     "https://developer.apple.com/tutorials/data/documentation/pushkit/pkpushcredentials.json": {
       "etag": "\"4d95-65d55f69abc4d-df\"",
       "file_path": "documentation/PushKit/pkpushcredentials.md",
@@ -293,8 +303,8 @@
   },
   "metadata": {
     "render": {
-      "version": 1
+      "version": 2
     },
-    "total_pages": 58
+    "total_pages": 60
   }
 }

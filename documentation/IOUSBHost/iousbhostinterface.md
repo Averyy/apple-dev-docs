@@ -41,6 +41,11 @@ Use this class to create pipes, retrieve descriptors, send device requests, and 
   The current idle suspend timeout.
 - [func setIdleTimeout(TimeInterval) throws](./iousbhostinterface/setidletimeout%28_%29.md)
   Sets the desired idle suspend timeout for the interface.
+### Finding Interfaces
+- [+ createMatchingDictionaryWithVendorID:productID:bcdDevice:interfaceNumber:configurationValue:interfaceClass:interfaceSubclass:interfaceProtocol:speed:productIDArray:](./iousbhostinterface/creatematchingdictionarywithvendorid_productid_bcddevice_interfacenumber_configurationvalue_interfaceclass_interfacesubclass_interfaceprotocol_speed_productidarray_.md)
+  Creates a matching dictionary to find a USB interface.
+### Instance Methods
+- [- initWithIOService:options:queue:error:interestHandler:](./iousbhostinterface/initwithioservice_options_queue_error_interesthandler_.md)
 
 ## Relationships
 

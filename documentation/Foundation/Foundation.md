@@ -80,6 +80,10 @@ The Foundation framework provides a base layer of functionality for apps and fra
 - [Foundation Enumerations](./foundation-enumerations.md)
 - [Foundation Data Types](./foundation-data-types.md)
   This document describes the data types and constants found in the Foundation framework.
+- [Foundation Constants](./foundation-constants.md)
+  This document defines constants in the Foundation framework that are not associated with a particular class.
+- [Foundation Functions](./foundation-functions.md)
+  This document describes the functions and function-like macros defined in the Foundation Framework.
 ### Classes
 - [class ProgressManager](./progressmanager.md)
   An object that conveys ongoing progress to the user for a specified task.
@@ -90,6 +94,9 @@ The Foundation framework provides a base layer of functionality for apps and fra
 ### Structures
 - [struct Subprogress](./subprogress.md)
   Subprogress is used to establish parent-child relationship between two instances of `ProgressManager`.
+### Macros
+- [NS_SWIFT_MAIN_ACTOR](./ns_swift_main_actor.md)
+- [NS_SWIFT_SUPPRESS_SENDABLE](./ns_swift_suppress_sendable.md)
 
 
 ---

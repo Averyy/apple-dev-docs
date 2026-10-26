@@ -57,6 +57,9 @@ An `NSFormCell` object implements the user interface of an [`NSForm`](./nsform.m
 ### Instance Methods
 - [func titleWidth(NSSize) -> CGFloat](./nsformcell/titlewidth%28_%29.md)
   Returns the width of the title field constrained to the specified size.
+### Setting a Keyboard Equivalent
+- [- setTitleWithMnemonic:](./nsformcell/settitlewithmnemonic_.md)
+  Sets the cell title and mnemonic character.
 
 ## Relationships
 
@@ -94,6 +97,13 @@ An `NSFormCell` object implements the user interface of an [`NSForm`](./nsform.m
   An `NSForm` object is a vertical matrix of [`NSFormCell`](./nsformcell.md) objects to implement the fields.
 - [class NSMenuItemCell](./nsmenuitemcell.md)
   An object that handles the measurement and display of a single menu item in its encompassing frame.
+- [NSOpenGLPixelBuffer](./nsopenglpixelbuffer.md)
+  An object that provides access to accelerated offscreen rendering.
+- [NSCachedImageRep](./nscachedimagerep.md)
+  An object that stores image data in a form that can be readily transferred to the screen.
+- [NSInputManager](./nsinputmanager.md)
+- [NSInputServer](./nsinputserver.md)
+- [NSMovie](./nsmovie.md)
 
 
 ---

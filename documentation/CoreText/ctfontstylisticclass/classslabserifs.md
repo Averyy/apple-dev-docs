@@ -46,6 +46,8 @@ kCTFontClassSlabSerifs
   A font style among those typefaces designed to simulate handwriting.
 - [static var classSymbolic: CTFontStylisticClass](./classsymbolic.md)
   A generally design-independent font style.
+- [kCTFontClassUnknown](./kctfontclassunknown.md)
+  The font has no design classification.
 
 
 ---

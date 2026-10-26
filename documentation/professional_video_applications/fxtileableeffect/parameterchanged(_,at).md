@@ -21,10 +21,10 @@ optional func parameterChanged(_ paramID: UInt32, at time: CMTime) throws
 
 ## Mentions
 
-- [Adding parameters to plug-ins](https://developer.apple.com/documentation/professional-video-applications/adding-parameters-to-plug-ins)
-- [Building an FxPlug plug-in manually](https://developer.apple.com/documentation/professional-video-applications/building-an-fxplug-plug-in-manually)
-- [Thread safety in plug-ins](https://developer.apple.com/documentation/professional-video-applications/thread-safety-in-plug-ins)
-- [Versioning and obsoleting old plug-ins](https://developer.apple.com/documentation/professional-video-applications/versioning-and-obsoleting-old-plug-ins)
+- [Adding parameters to plug-ins](../../Professional-Video-Applications/adding-parameters-to-plug-ins.md)
+- [Building an FxPlug plug-in manually](../../Professional-Video-Applications/building-an-fxplug-plug-in-manually.md)
+- [Thread safety in plug-ins](../../Professional-Video-Applications/thread-safety-in-plug-ins.md)
+- [Versioning and obsoleting old plug-ins](../../Professional-Video-Applications/versioning-and-obsoleting-old-plug-ins.md)
 
 #### Discussion
 

@@ -40,6 +40,8 @@ var IMAGEIO_PNG_FILTER_PAETH: Int32 { get }
   A filter in which each byte is replaced with the difference between it and the byte above it.
 - [var IMAGEIO_PNG_FILTER_AVG: Int32](./imageio_png_filter_avg.md)
   A filter in which each byte is replaced with the difference between it and the average of the bytes above it and to its left.
+- [IMAGEIO_PNG_ALL_FILTERS](./imageio_png_all_filters.md)
+  All PNG filters.
 
 
 ---

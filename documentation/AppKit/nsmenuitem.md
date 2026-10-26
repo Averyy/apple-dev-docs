@@ -72,6 +72,8 @@ The [`NSMenuItem`](./nsmenuitem.md) class includes some private functionality ne
 ### Managing the section header
 - [var isSectionHeader: Bool](./nsmenuitem/issectionheader.md)
   A Boolean value indicating whether the menu item is a section header.
+- [+ sectionHeaderWithTitle:](./nsmenuitem/sectionheaderwithtitle_.md)
+  Returns a menu item representing a section header for a logical grouping of menu commands.
 ### Managing submenus
 - [var submenu: NSMenu?](./nsmenuitem/submenu.md)
   The submenu of the menu item.
@@ -131,6 +133,12 @@ The [`NSMenuItem`](./nsmenuitem.md) class includes some private functionality ne
   Sets the title of a menu item with a character denoting an access key.
 - [static func sectionHeader(withTitle: String) -> NSMenuItem](./nsmenuitem/sectionheader%28withtitle%29.md)
   Returns a menu item representing a section header for a logical grouping of menu commands.
+- [- setMnemonicLocation:](./nsmenuitem/setmnemoniclocation_.md)
+  Sets the character of the menu item title at location that is to be underlined.
+- [- mnemonicLocation](./nsmenuitem/mnemoniclocation.md)
+  Returns the position of the underlined character in the menu item title used as a mnemonic.
+- [- mnemonic](./nsmenuitem/mnemonic.md)
+  Returns the character in the menu item title that appears underlined for use as a mnemonic.
 ### Instance Properties
 - [var subtitle: String?](./nsmenuitem/subtitle.md)
 ### Type Properties

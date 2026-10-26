@@ -25,12 +25,18 @@ class CMIOExtensionStreamFormat
 ### Creating a Stream Format
 - [convenience init(formatDescription: CMFormatDescription, maxFrameDuration: CMTime, minFrameDuration: CMTime, validFrameDurations: [CMTime]?)](./cmioextensionstreamformat/init%28formatdescription,maxframeduration,minframeduration,validframedurations%29.md)
   Creates a stream format with a format description and frame durations.
+- [+ streamFormatWithFormatDescription:maxFrameDuration:minFrameDuration:validFrameDurations:](./cmioextensionstreamformat/streamformatwithformatdescription_maxframeduration_minframeduration_validframedurations_.md)
+  Returns a new stream format with a format description and frame durations.
+- [- initWithFormatDescription:maxFrameDuration:minFrameDuration:validFrameDurations:](./cmioextensionstreamformat/initwithformatdescription_maxframeduration_minframeduration_validframedurations_.md)
+  Creates a stream format with a format description and frame durations.
 ### Configuring Frame Durations
 - [var minFrameDuration: CMTime](./cmioextensionstreamformat/minframeduration.md)
   The minimum frame duration a stream supports.
 - [var maxFrameDuration: CMTime](./cmioextensionstreamformat/maxframeduration.md)
   The maximum duration a stream supports.
 - [var validFrameDurations: [CMTime]?](./cmioextensionstreamformat/validframedurations-707st.md)
+  An array of frame durations the stream supports.
+- [validFrameDurations](./cmioextensionstreamformat/validframedurations-4rbay.md)
   An array of frame durations the stream supports.
 ### Accessing the Format Description
 - [var formatDescription: CMFormatDescription](./cmioextensionstreamformat/formatdescription.md)

@@ -25,12 +25,12 @@ As an Apple News publisher, you can use the in-depth design capabilities of Appl
 ### Article Design and Creation
 - [Apple News Format Tutorials](./apple-news-format-tutorials.md)
   Create a basic article and then add advanced design features.
-- [Apple News Format](https://developer.apple.com/documentation/applenewsformat)
+- [Apple News Format](../AppleNewsFormat/AppleNewsFormat.md)
   Get Apple News Format reference information, and create signature content for Apple News.
 ### Article Publication and Management
 - [Apple News API Tutorial](./apple-news-api-tutorial.md)
   Request channel data and publish an article using the Apple News API.
-- [Apple News API](https://developer.apple.com/documentation/applenewsapi)
+- [Apple News API](../AppleNewsAPI/AppleNewsAPI.md)
   Publish and manage Apple News Format articles.
 
 

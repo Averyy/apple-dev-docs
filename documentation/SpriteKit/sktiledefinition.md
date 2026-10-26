@@ -36,17 +36,22 @@ Once a tile definition has been created, you encapsulate it in a [`SKTileGroup`]
 ### Creating a Tile with a Texture
 - [init(texture: SKTexture)](./sktiledefinition/init%28texture%29.md)
   Initializes a new tile definition with a single texture.
+- [+ tileDefinitionWithTexture:](./sktiledefinition/tiledefinitionwithtexture_.md)
 ### Creating a Tile with a Normal Texture
 - [init(texture: SKTexture, normalTexture: SKTexture, size: CGSize)](./sktiledefinition/init%28texture,normaltexture,size%29.md)
   Initializes a new tile definition with a single texture and separate normal texture for simulating 3D lighting.
+- [+ tileDefinitionWithTexture:normalTexture:size:](./sktiledefinition/tiledefinitionwithtexture_normaltexture_size_.md)
 ### Creating a Tile with a Size
 - [init(texture: SKTexture, size: CGSize)](./sktiledefinition/init%28texture,size%29.md)
   Initializes a new tile definition of a specified size with a single texture.
+- [+ tileDefinitionWithTexture:size:](./sktiledefinition/tiledefinitionwithtexture_size_.md)
 ### Creating an Animated Tile
 - [init(textures: [SKTexture], normalTextures: [SKTexture], size: CGSize, timePerFrame: CGFloat)](./sktiledefinition/init%28textures,normaltextures,size,timeperframe%29.md)
   Initializes a new tile definition with arrays of textures and normal textures for animation.
 - [init(textures: [SKTexture], size: CGSize, timePerFrame: CGFloat)](./sktiledefinition/init%28textures,size,timeperframe%29.md)
   Initializes a new tile definition with an array of textures for animation.
+- [+ tileDefinitionWithTextures:normalTextures:size:timePerFrame:](./sktiledefinition/tiledefinitionwithtextures_normaltextures_size_timeperframe_.md)
+- [+ tileDefinitionWithTextures:size:timePerFrame:](./sktiledefinition/tiledefinitionwithtextures_size_timeperframe_.md)
 ### Flipping a Tile Vertically or Horizontally
 - [var flipHorizontally: Bool](./sktiledefinition/fliphorizontally.md)
   A Boolean that flips the definition’s image vertically.

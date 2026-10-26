@@ -49,6 +49,8 @@ Don’t implement this protocol yourself; instead, create an [`MTLIndirectComman
 ### Resetting commands
 - [func reset(Range<Int>)](./mtlindirectcommandbuffer/reset%28_%29.md)
   Resets a range of commands to their default state.
+- [- resetWithRange:](./mtlindirectcommandbuffer/resetwithrange_.md)
+  Resets a range of commands to their default state.
 ### Instance Properties
 - [var gpuResourceID: MTLResourceID](./mtlindirectcommandbuffer/gpuresourceid.md)
 

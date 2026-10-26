@@ -87,9 +87,9 @@ Ellipses (`...`) indicate lines of code that have been omitted from this example
 ### Related Documentation
 - [Adding a Scene to a Chapter or a Section Header](./adding-a-scene-to-a-chapter-or-a-section-header.md)
   Add a scene to your article to create special effects.
-- [object FadingStickyHeader](https://developer.apple.com/documentation/applenewsformat/fadingstickyheader)
+- [object FadingStickyHeader](../AppleNewsFormat/fadingstickyheader.md)
   The scene that briefly keeps a header at the top of the screen as the person scrolls through the article.
-- [object Section](https://developer.apple.com/documentation/applenewsformat/section)
+- [object Section](../AppleNewsFormat/section.md)
   The component for organizing an article into sections.
 ### Advanced Design Tutorial 2: Layout and Positioning
 - [Creating a Complex, Layered Header](./creating-a-complex-layered-header.md)

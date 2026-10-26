@@ -38,6 +38,8 @@ For signatures longer than [`maximumQuerySignatureDuration`](./shcatalog/maximum
 ### Creating a signature object
 - [init(dataRepresentation: Data) throws](./shsignature/init%28datarepresentation%29.md)
   Creates a signature object from raw data.
+- [+ signatureWithDataRepresentation:error:](./shsignature/signaturewithdatarepresentation_error_.md)
+  Creates a signature object from raw data.
 ### Reading signature information
 - [var dataRepresentation: Data](./shsignature/datarepresentation.md)
   The raw data for the signature.
@@ -51,6 +53,8 @@ For signatures longer than [`maximumQuerySignatureDuration`](./shcatalog/maximum
 ### Getting the content type
 - [static var shazamSignature: UTType](../UniformTypeIdentifiers/uttype-swift.struct/shazamsignature.md)
   A type that represents a signature.
+- [SHSignatureContentType](../UniformTypeIdentifiers/uttype-c.class/shsignaturecontenttype.md)
+  A type representing the @c SHSignature file format with the .shazamsignature extension
 ### Initializers
 - [init?(coder: NSCoder)](./shsignature/init%28coder%29.md)
 

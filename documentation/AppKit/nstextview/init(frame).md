@@ -41,6 +41,7 @@ This method creates the text web in such a manner that the text view is the prin
 - [convenience init(usingTextLayoutManager: Bool)](./init%28usingtextlayoutmanager%29.md)
 - [init?(coder: NSCoder)](./init%28coder%29.md)
   Initializes a text view with data in an unarchiver.
+- [+ textViewUsingTextLayoutManager:](./textviewusingtextlayoutmanager_.md)
 
 
 ---

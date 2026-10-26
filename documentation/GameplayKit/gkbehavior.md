@@ -57,6 +57,8 @@ To learn more about using goals and agents, see [Agents, Goals, and Behaviors](h
   Returns the weight associated with the goal specified by subscript syntax.
 - [subscript(Int) -> GKGoal](./gkbehavior/subscript%28_%29-997a9.md)
   Returns the goal at the specified index in the behavior’s list of goals.
+- [- setObject:forKeyedSubscript:](./gkbehavior/setobject_forkeyedsubscript_.md)
+  Sets the weight for the goal specified by subscript syntax.
 
 ## Relationships
 

@@ -242,6 +242,9 @@ The URL session API is thread-safe. You can freely create sessions and tasks in 
   A URL session task that communicates over the WebSockets protocol standard.
 - [protocol URLSessionWebSocketDelegate](./urlsessionwebsocketdelegate.md)
   A protocol that defines methods that URL session instances call on their delegates to handle task-level events specific to WebSocket tasks.
+- [NSURLSessionWebSocketMessage](./nsurlsessionwebsocketmessage.md)
+- [NSURLSessionWebSocketMessageType](./nsurlsessionwebsocketmessagetype.md)
+  An enumeration of the types of messages sent and received.
 ### Managing the session
 - [func finishTasksAndInvalidate()](./urlsession/finishtasksandinvalidate%28%29.md)
   Invalidates the session, allowing any outstanding tasks to finish.

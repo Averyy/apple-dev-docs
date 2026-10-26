@@ -55,6 +55,9 @@ Create an [`NSWorkspace.OpenConfiguration`](./openconfiguration.md) object befor
   The set of environment variables to set in a new app instance.
 - [var architecture: cpu_type_t](./openconfiguration/architecture.md)
   The architecture version of the app to launch.
+### Creating a workspace configuration object
+- [+ configuration](../nsworkspaceopenconfiguration/configuration.md)
+  Creates and returns a new workspace configuration object containing default values.
 
 ## Relationships
 

@@ -31,6 +31,12 @@ var preferredTransform: CGAffineTransform { get }
 
 The value of this property is typically, but not always, [`CGAffineTransformIdentity`](../../CoreGraphics/cgaffinetransformidentity.md).
 
+## See Also
+
+### Accessing visual characteristics
+- [naturalSize](./naturalsize.md)
+  The natural dimensions of the media data that the track references.
+
 
 ---
 

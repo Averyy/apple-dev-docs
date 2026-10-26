@@ -52,6 +52,24 @@ ABSingleValueSelection
   Search for elements that are greater than thevalue.
 - [var kABGreaterThanOrEqual: _ABSearchComparison](./kabgreaterthanorequal.md)
   Search for elements that are greater than orequal to the value.
+- [ABPeoplePickerDisplayedPropertyDidChangeNotification](./abpeoplepickerdisplayedpropertydidchangenotification.md)
+  Posted when the displayed property in the record list is changed.
+- [ABPeoplePickerGroupSelectionDidChangeNotification](./abpeoplepickergroupselectiondidchangenotification.md)
+  Posted when the selection in the group list is changed.
+- [ABPeoplePickerNameSelectionDidChangeNotification](./abpeoplepickernameselectiondidchangenotification.md)
+  Posted when the selection in the name list is changed.
+- [ABPeoplePickerValueSelectionDidChangeNotification](./abpeoplepickervalueselectiondidchangenotification.md)
+  Posted when the selection in a multivalue property is changed.
+- [kABDatabaseChangedExternallyNotification](./kabdatabasechangedexternallynotification.md)
+  Posted when a process other than the current one has changed the Address Book database.
+- [kABDatabaseChangedNotification](./kabdatabasechangednotification.md)
+  Posted when this process has changed the Address Book database.
+- [kABInsertedRecords](./kabinsertedrecords.md)
+  Records that have been inserted.
+- [kABLastNameFirst](./kablastnamefirst.md)
+  Last name is displayed first in Address Book.
+- [kABMultiValueInvalidIdentifier](./kabmultivalueinvalididentifier.md)
+  Invalid multivalue property.
 
 
 ---

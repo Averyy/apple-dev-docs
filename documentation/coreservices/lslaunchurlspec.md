@@ -55,6 +55,10 @@ This data type defines a URL-based launch specification designating, by URL, an 
   A persistent list of file-system objects.
 - [class LSSharedFileListItem](./lssharedfilelistitem.md)
   A file-system object in the shared file list.
+- [LSSharedFileListRef](./lssharedfilelistref.md)
+  A persistent list of file-system objects.
+- [LSSharedFileListItemRef](./lssharedfilelistitemref.md)
+  A file-system object in the shared file list.
 
 
 ---

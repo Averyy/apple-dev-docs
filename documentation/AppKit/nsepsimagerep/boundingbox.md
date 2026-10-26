@@ -26,6 +26,8 @@ var boundingBox: NSRect { get }
 ### Related Documentation
 - [init?(data: Data)](./init%28data%29.md)
   Returns a representation of an image initialized with the specified EPS data.
+- [+ imageRepWithData:](./imagerepwithdata_.md)
+  Creates and returns a representation of an image initialized with the specified EPS data.
 ### Getting Data
 - [var epsRepresentation: Data](./epsrepresentation.md)
   The EPS representation of the image representation.

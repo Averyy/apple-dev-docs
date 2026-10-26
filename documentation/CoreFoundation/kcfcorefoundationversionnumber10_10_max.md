@@ -44,6 +44,9 @@ var kCFCoreFoundationVersionNumber10_10_Max: Int32 { get }
 - [var kCFCoreFoundationVersionNumber10_11_3: Double](./kcfcorefoundationversionnumber10_11_3.md)
 - [var kCFCoreFoundationVersionNumber10_11_4: Double](./kcfcorefoundationversionnumber10_11_4.md)
 - [var kCFCoreFoundationVersionNumber10_11_Max: Int32](./kcfcorefoundationversionnumber10_11_max.md)
+- [kCFCoreFoundationVersionNumber10_7_5](./kcfcorefoundationversionnumber10_7_5.md)
+- [kCFCoreFoundationVersionNumber10_8](./kcfcorefoundationversionnumber10_8.md)
+- [kCFCoreFoundationVersionNumber10_8_1](./kcfcorefoundationversionnumber10_8_1.md)
 
 
 ---

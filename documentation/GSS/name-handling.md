@@ -42,6 +42,27 @@ Manage names for GSS-API principals such as a person, a machine, or an applicati
   Returns a mechanism name in contiguous octet format.
 - [func gss_import_name(UnsafeMutablePointer<OM_uint32>, gss_buffer_t, gss_const_OID?, UnsafeMutablePointer<gss_name_t?>) -> OM_uint32](./gss_import_name%28_,_,_,_%29.md)
   Converts a name in contiguous octet format to the internal name format.
+### Name Types
+- [GSS_C_NO_NAME](./gss_c_no_name.md)
+  An empty name object.
+- [GSS_C_NT_USER_NAME](./gss_c_nt_user_name.md)
+  A name that specifies a user on a local system in the username format.
+- [GSS_C_NT_MACHINE_UID_NAME](./gss_c_nt_machine_uid_name.md)
+  A name used to specify a user on the local system by way of a numeric identifier.
+- [GSS_C_NT_STRING_UID_NAME](./gss_c_nt_string_uid_name.md)
+  A name that specifies a user on the local system by way of a string representation of a numeric identifier.
+- [GSS_C_NT_HOSTBASED_SERVICE_X](./gss_c_nt_hostbased_service_x.md)
+  A service that is related to a particular host.
+- [GSS_C_NT_HOSTBASED_SERVICE](./gss_c_nt_hostbased_service.md)
+  A name used to specify services provided by host computers in the service/hostname format.
+- [GSS_C_NT_ANONYMOUS](./gss_c_nt_anonymous.md)
+  A name that refers to an anonymous principal.
+- [GSS_C_NT_EXPORT_NAME](./gss_c_nt_export_name.md)
+  A name of the type exported by the export name function.
+- [GSS_KRB5_NT_PRINCIPAL_NAME](./gss_krb5_nt_principal_name.md)
+  A name composed as a single-string representation of a Kerberos name.
+- [GSS_KRB5_NT_PRINCIPAL](./gss_krb5_nt_principal.md)
+  A name composed as a single-string representation of a Kerberos name.
 
 ## See Also
 

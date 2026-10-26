@@ -15,6 +15,11 @@
       "file_path": "documentation/CoreMotion/adhering-to-the-movement-disorder-data-collection-requirements.md",
       "hash": "173169376b4bb0e438128ae17e075b5d9f914fe7f0f02e8769da1746a31ff3a4"
     },
+    "https://developer.apple.com/documentation/coremotion/cm_extern": {
+      "etag": "\"a30-65d55cc057297-df\"",
+      "file_path": "documentation/CoreMotion/cm_extern.md",
+      "hash": "78ab8a2eada84f128a9be0f946ec05b4efbcad9036832e68091d8edbfb349676"
+    },
     "https://developer.apple.com/documentation/coremotion/cmabsolutealtitudedata": {
       "etag": "\"5128-65d55cc0c4227-df\"",
       "file_path": "documentation/CoreMotion/cmabsolutealtitudedata.md",
@@ -1379,6 +1384,11 @@
       "file_path": "documentation/CoreMotion/cmodometerdata/init(coder).md",
       "hash": "b727008cb2d2120572f1f748618910f61d596ee393c80ab83369c1cd7cb0a8da"
     },
+    "https://developer.apple.com/documentation/coremotion/cmodometerdata/maxabsslope-96ulr": {
+      "etag": "\"1f99-65d55cc076a72-df\"",
+      "file_path": "documentation/CoreMotion/cmodometerdata/maxabsslope-96ulr.md",
+      "hash": "b3e686f294ad4e813317701ac7709dc2ae60a030698c65aebf439de36b8d8ae2"
+    },
     "https://developer.apple.com/documentation/coremotion/cmodometerdata/maxabsslope-9mnfd": {
       "etag": "\"200c-65d55cc076a72-df\"",
       "file_path": "documentation/CoreMotion/cmodometerdata/maxabsslope-9mnfd.md",
@@ -1388,6 +1398,11 @@
       "etag": "\"222a-65d55cc076a72-df\"",
       "file_path": "documentation/CoreMotion/cmodometerdata/origindevice.md",
       "hash": "6b10bb1497e54f31555f8d96cec18a50320521889cd6910c6be50bbe1fa4cf05"
+    },
+    "https://developer.apple.com/documentation/coremotion/cmodometerdata/slope-96hlt": {
+      "etag": "\"1f44-65d55cc076a72-df\"",
+      "file_path": "documentation/CoreMotion/cmodometerdata/slope-96hlt.md",
+      "hash": "e9eab1ff242da19a5d7afac3d15aca01a86d5a834907eb01b574456132ec7877"
     },
     "https://developer.apple.com/documentation/coremotion/cmodometerdata/slope-9h3m4": {
       "etag": "\"1fc8-65d55cc076a72-df\"",
@@ -2124,6 +2139,11 @@
       "file_path": "documentation/CoreMotion/cmwatertemperature/temperatureuncertainty.md",
       "hash": "e46f2b18eb4cf1eea403ce3706186b38c7f2e483d02734c62e1266f5ceec4eec"
     },
+    "https://developer.apple.com/documentation/coremotion/coremotion_export": {
+      "etag": "\"a90-65d55cc057297-df\"",
+      "file_path": "documentation/CoreMotion/coremotion_export.md",
+      "hash": "686cd46d54ed65ddf2a54dce18ff409af777b9afd8921143ff8282edcefb4e91"
+    },
     "https://developer.apple.com/documentation/coremotion/getting-motion-activity-data-from-headphones": {
       "etag": "\"2341-65d55cc0aaf89-df\"",
       "file_path": "documentation/CoreMotion/getting-motion-activity-data-from-headphones.md",
@@ -2168,6 +2188,11 @@
       "etag": "\"309d-659025000495e-df\"",
       "file_path": "documentation/CoreMotion/adhering-to-the-movement-disorder-data-collection-requirements.md",
       "hash": "173169376b4bb0e438128ae17e075b5d9f914fe7f0f02e8769da1746a31ff3a4"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/coremotion/cm_extern.json": {
+      "etag": "\"a30-65d55cc057297-df\"",
+      "file_path": "documentation/CoreMotion/cm_extern.md",
+      "hash": "78ab8a2eada84f128a9be0f946ec05b4efbcad9036832e68091d8edbfb349676"
     },
     "https://developer.apple.com/tutorials/data/documentation/coremotion/cmabsolutealtitudedata.json": {
       "etag": "\"5128-65d55cc0c4227-df\"",
@@ -3533,6 +3558,11 @@
       "file_path": "documentation/CoreMotion/cmodometerdata/init(coder).md",
       "hash": "b727008cb2d2120572f1f748618910f61d596ee393c80ab83369c1cd7cb0a8da"
     },
+    "https://developer.apple.com/tutorials/data/documentation/coremotion/cmodometerdata/maxabsslope-96ulr.json": {
+      "etag": "\"1f99-65d55cc076a72-df\"",
+      "file_path": "documentation/CoreMotion/cmodometerdata/maxabsslope-96ulr.md",
+      "hash": "b3e686f294ad4e813317701ac7709dc2ae60a030698c65aebf439de36b8d8ae2"
+    },
     "https://developer.apple.com/tutorials/data/documentation/coremotion/cmodometerdata/maxabsslope-9mnfd.json": {
       "etag": "\"200c-65d55cc076a72-df\"",
       "file_path": "documentation/CoreMotion/cmodometerdata/maxabsslope-9mnfd.md",
@@ -3542,6 +3572,11 @@
       "etag": "\"222a-65d55cc076a72-df\"",
       "file_path": "documentation/CoreMotion/cmodometerdata/origindevice.md",
       "hash": "6b10bb1497e54f31555f8d96cec18a50320521889cd6910c6be50bbe1fa4cf05"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/coremotion/cmodometerdata/slope-96hlt.json": {
+      "etag": "\"1f44-65d55cc076a72-df\"",
+      "file_path": "documentation/CoreMotion/cmodometerdata/slope-96hlt.md",
+      "hash": "e9eab1ff242da19a5d7afac3d15aca01a86d5a834907eb01b574456132ec7877"
     },
     "https://developer.apple.com/tutorials/data/documentation/coremotion/cmodometerdata/slope-9h3m4.json": {
       "etag": "\"1fc8-65d55cc076a72-df\"",
@@ -4278,6 +4313,11 @@
       "file_path": "documentation/CoreMotion/cmwatertemperature/temperatureuncertainty.md",
       "hash": "e46f2b18eb4cf1eea403ce3706186b38c7f2e483d02734c62e1266f5ceec4eec"
     },
+    "https://developer.apple.com/tutorials/data/documentation/coremotion/coremotion_export.json": {
+      "etag": "\"a90-65d55cc057297-df\"",
+      "file_path": "documentation/CoreMotion/coremotion_export.md",
+      "hash": "686cd46d54ed65ddf2a54dce18ff409af777b9afd8921143ff8282edcefb4e91"
+    },
     "https://developer.apple.com/tutorials/data/documentation/coremotion/getting-motion-activity-data-from-headphones.json": {
       "etag": "\"2341-65d55cc0aaf89-df\"",
       "file_path": "documentation/CoreMotion/getting-motion-activity-data-from-headphones.md",
@@ -4314,8 +4354,8 @@
       "applicationservices": {}
     },
     "render": {
-      "version": 1
+      "version": 2
     },
-    "total_pages": 862
+    "total_pages": 870
   }
 }

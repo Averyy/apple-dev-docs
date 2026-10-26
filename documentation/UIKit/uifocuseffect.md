@@ -22,6 +22,12 @@ class UIFocusEffect
 @interface UIFocusEffect : NSObject
 ```
 
+## Topics
+
+### Creating a focus effect
+- [+ effect](./uifocuseffect/effect.md)
+  Creates a default system effect with metrics from the focus item.
+
 ## Relationships
 
 ### Inherits From

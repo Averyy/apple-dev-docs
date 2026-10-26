@@ -37,6 +37,8 @@ MTLFunctionOptionStoreFunctionInMetalScript
   An option that generates the same function handle across all pipeline states that link a function, which lets you share function tables across pipeline states.
 - [static var storeFunctionInMetalPipelinesScript: MTLFunctionOptions](./storefunctioninmetalpipelinesscript.md)
   An option that instructs the compiler to store function information for inspecting binary archives.
+- [MTLFunctionOptionNone](./mtlfunctionoptionnone.md)
+  A sentinel value that represents an empty set of options, which is the default behavior for creating functions.
 
 
 ---

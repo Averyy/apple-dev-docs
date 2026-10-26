@@ -31,6 +31,8 @@ class AVMutableVideoCompositionLayerInstruction
 ### Creating an instruction
 - [convenience init(assetTrack: AVAssetTrack)](./avmutablevideocompositionlayerinstruction/init%28assettrack%29.md)
   Creates a new mutable video composition layer instruction for the given track.
+- [+ videoCompositionLayerInstruction](./avmutablevideocompositionlayerinstruction/videocompositionlayerinstruction.md)
+  Returns a new mutable video composition layer instruction.
 ### Configuring a track ID
 - [var trackID: CMPersistentTrackID](./avmutablevideocompositionlayerinstruction/trackid.md)
   The track identifier of the source track to which the compositor applies the instruction.

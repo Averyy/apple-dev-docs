@@ -38,6 +38,9 @@ When no stereo view components are available on a video track, even if it’s en
   The stereo video track includes a right eye layer.
 ### Initializers
 - [init(rawValue: UInt64)](./cmstereoviewcomponents/init%28rawvalue%29.md)
+### Enumeration Cases
+- [kCMStereoView_None](./cmstereoviewcomponents/kcmstereoview_none.md)
+  A constant for video metadata to have no available stereo frames.
 
 ## Relationships
 

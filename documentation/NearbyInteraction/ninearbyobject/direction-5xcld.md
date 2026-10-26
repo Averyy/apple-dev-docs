@@ -1,0 +1,62 @@
+# direction
+
+**Framework**: Nearby Interaction  
+**Kind**: property  
+**Role**: Instance Property
+
+A vector that points from the user’s device in the direction of the peer device.
+
+**Availability**:
+- iOS 14.0+
+- iPadOS 14.0+
+- Mac Catalyst 14.0+
+- watchOS 7.3+
+
+## Declaration
+
+```objc
+@property (nonatomic, readonly) simd_float3 direction;
+```
+
+## Mentions
+
+- [Initiating and maintaining a session](../initiating-and-maintaining-a-session.md)
+
+#### Discussion
+
+This property is [`NINearbyObjectDirectionNotAvailable`](../ninearbyobjectdirectionnotavailable.md) when direction is unavailable, such as when the app runs on Apple Watch.
+
+On iPhone, it’s possible to recieve direction for nearby third-party accessories in sessions that enable [`isCameraAssistanceEnabled`](../ninearbypeerconfiguration/iscameraassistanceenabled.md).
+
+##### Interpreting Direction
+
+This property is a Cartesian triplet (x,y,z) in normalized units with a range of `[0..1]`. Nearby Interaction models direction as a coordinate on a sphere, such that a ray cast from the sphere’s center through the coordinate points toward the peer device. For each axis, the sphere center is at coordinate 0, and the surface is at coordinate 1. As the user looks at the device’s screen,
+
+- The x-axis extends positively to the right.
+- The y-axis extends positively upward.
+- The z-axis extends negatively from the device’s center, away from the user.
+
+The following figure illustrates the direction-vector coordinate space from two different angles.
+
+![A diagram of a phone in two different orientations, each with a coordinate system that renders from an origin in the middle of the device. The phone on the left shows the back of the phone, with an up-axis labeled “+y”. Its horizontal axis points left, and is labeled “+x”. Its z-axis points toward the reader, and is labeled “-z”. The phone on the right faces toward the reader, with an up-axis labeled “+y”. Its horizontal axis points right and is labeled “+x”. Its z-axis points away from the reader, and is labeled “-z”.](https://developer.apple.com/tutorials/images/com.apple.nearbyinteraction/media-3798527@2x.png)
+
+For more information, see [Initiating and maintaining a session](../initiating-and-maintaining-a-session.md).
+
+## See Also
+
+### Acquiring relative direction
+- [NINearbyObjectDirectionNotAvailable](../ninearbyobjectdirectionnotavailable.md)
+  A value that indicates that a nearby object’s direction is unavailable.
+- [horizontalAngle](./horizontalangle-9ibky.md)
+  An angle in radians that indicates the azimuthal direction to the nearby object.
+- [NINearbyObjectAngleNotAvailable](../ninearbyobjectanglenotavailable.md)
+  A value that indicates that a nearby object’s horizontal angle is unavailable.
+- [var verticalDirectionEstimate: NINearbyObject.VerticalDirectionEstimate](./verticaldirectionestimate-swift.property.md)
+  The estimation of a nearby object’s vertical position as it relates to the user’s device.
+- [NINearbyObject.VerticalDirectionEstimate](./verticaldirectionestimate-swift.enum.md)
+  Estimations of a nearby object’s vertical position in relation to the user’s device.
+
+
+---
+
+*[View on Apple Developer](https://developer.apple.com/documentation/nearbyinteraction/ninearbyobject/direction-5xcld)*

@@ -42,6 +42,10 @@ The framework provides the detected hand pose as a `VNIdentifiedPointsObservatio
   Retrieves the supported joint group names.
 - [class func supportedJointsGroupNames(forRevision: Int) throws -> [VNHumanHandPoseObservation.JointsGroupName]](./vndetecthumanhandposerequest/supportedjointsgroupnames%28forrevision%29.md)
   Retrieves the supported joint group names for a revision.
+- [- supportedJointNamesAndReturnError:](./vndetecthumanhandposerequest/supportedjointnamesandreturnerror_.md)
+  Retrieves the supported joint names.
+- [- supportedJointsGroupNamesAndReturnError:](./vndetecthumanhandposerequest/supportedjointsgroupnamesandreturnerror_.md)
+  Retrieves the supported joint group names.
 ### Accessing the Results
 - [var results: [VNHumanHandPoseObservation]?](./vndetecthumanhandposerequest/results.md)
   The observed hand poses.

@@ -65,6 +65,26 @@
       "file_path": "documentation/Quartz/ik_aperturebundleidentifier.md",
       "hash": "0f991e4d53677a510178a3a7abaa0d71db901697a9f72c105b9983d61041d4db"
     },
+    "https://developer.apple.com/documentation/quartz/ik_api_deprecated": {
+      "etag": "\"16b0-65d55aef5f937-df\"",
+      "file_path": "documentation/Quartz/ik_api_deprecated.md",
+      "hash": "a5ecc03efe1be9ada2de1fc84a2992c43cfa7d3d411b5a1b4af2b5288c83b219"
+    },
+    "https://developer.apple.com/documentation/quartz/ik_available": {
+      "etag": "\"16f4-65d55af04a252-df\"",
+      "file_path": "documentation/Quartz/ik_available.md",
+      "hash": "a03a7fca4b12b140ff67cd160c0b804e01efa96a710f3ba45b45abb874960d71"
+    },
+    "https://developer.apple.com/documentation/quartz/ik_class_available": {
+      "etag": "\"1718-65d55af09e0f0-df\"",
+      "file_path": "documentation/Quartz/ik_class_available.md",
+      "hash": "bd7c015a4e5517106195083c6de69eab7d795a69912edf207e0a48bd81e8d686"
+    },
+    "https://developer.apple.com/documentation/quartz/ik_enum_available": {
+      "etag": "\"1712-65d55af08b519-df\"",
+      "file_path": "documentation/Quartz/ik_enum_available.md",
+      "hash": "df93e0e91b9a6c181817f021bbaf48a10ddffae8c05461025cf0bd6e11a2157d"
+    },
     "https://developer.apple.com/documentation/quartz/ik_iphotobundleidentifier": {
       "etag": "\"6cfc-65d55aef5f937-df\"",
       "file_path": "documentation/Quartz/ik_iphotobundleidentifier.md",
@@ -420,6 +440,16 @@
       "file_path": "documentation/Quartz/ikfilterbrowserexcludefilters.md",
       "hash": "ebdc2c28ae40c4134470b7abd34b3a16a24b744f76c3bc4011792afc04c6f3aa"
     },
+    "https://developer.apple.com/documentation/quartz/ikfilterbrowserfilterdoubleclicknotification": {
+      "etag": "\"15e6-65d55aefe9557-df\"",
+      "file_path": "documentation/Quartz/ikfilterbrowserfilterdoubleclicknotification.md",
+      "hash": "b1a3127d7dee8a10dd404602b67e79f07e8c6d418b7df7bd7ac629e8ec3e8a65"
+    },
+    "https://developer.apple.com/documentation/quartz/ikfilterbrowserfilterselectednotification": {
+      "etag": "\"15d2-65d55aefe9557-df\"",
+      "file_path": "documentation/Quartz/ikfilterbrowserfilterselectednotification.md",
+      "hash": "4d61d887e906d5deacc1a284ea7def54f361d64c20cf62cfb46dc1fd91e1ed11"
+    },
     "https://developer.apple.com/documentation/quartz/ikfilterbrowserpanel": {
       "etag": "\"e3f1-65d55aeee2cad-df\"",
       "file_path": "documentation/Quartz/ikfilterbrowserpanel.md",
@@ -484,6 +514,11 @@
       "etag": "\"2a2d-65d55af04a252-df\"",
       "file_path": "documentation/Quartz/ikfilterbrowserview/setpreviewstate(_).md",
       "hash": "2c5e98d1f700f322952382b48678539ba7d11302a05ccc2799ee726b8925ab23"
+    },
+    "https://developer.apple.com/documentation/quartz/ikfilterbrowserwillpreviewfilternotification": {
+      "etag": "\"15fa-65d55aef96e4c-df\"",
+      "file_path": "documentation/Quartz/ikfilterbrowserwillpreviewfilternotification.md",
+      "hash": "cbc0315e8ee5a268791b250e862243a238f7ecdd84ef8da40227250789097dd8"
     },
     "https://developer.apple.com/documentation/quartz/ikfiltercustomuiprovider": {
       "etag": "\"67ba-65d55af04a252-df\"",
@@ -939,6 +974,11 @@
       "etag": "\"36c5-65d55aeec482e-df\"",
       "file_path": "documentation/Quartz/ikimagebrowserview/indexofitem(at).md",
       "hash": "32046958968f1501ab8171a87dfb9b5fd640b2ff0e94543d1858b83cdfb6967e"
+    },
+    "https://developer.apple.com/documentation/quartz/ikimagebrowserview/initwithframe:": {
+      "etag": "\"14bf-65d55aeec482e-df\"",
+      "file_path": "documentation/Quartz/ikimagebrowserview/initwithframe_.md",
+      "hash": "c47ddafc9d62c71c0d05183601e3c69bc507f1e46493f49397f98fdb1fc4b0bd"
     },
     "https://developer.apple.com/documentation/quartz/ikimagebrowserview/intercellspacing()": {
       "etag": "\"39bf-65d55aeee2cad-df\"",
@@ -1555,6 +1595,11 @@
       "file_path": "documentation/Quartz/iksaveoptions/userselection.md",
       "hash": "a2d541989906b945fdc21c1c8334c9e01e4070718fa0acac0c2b95ae004ed846"
     },
+    "https://developer.apple.com/documentation/quartz/iksaveoptions_h": {
+      "etag": "\"16a4-65d55aef7a323-df\"",
+      "file_path": "documentation/Quartz/iksaveoptions_h.md",
+      "hash": "82774dbf4b52325717e51de5895359e4f6568338f93ddbb9f63f57dd65521242"
+    },
     "https://developer.apple.com/documentation/quartz/ikscannerdeviceview": {
       "etag": "\"e9c0-65d55af04a252-df\"",
       "file_path": "documentation/Quartz/ikscannerdeviceview.md",
@@ -1970,6 +2015,26 @@
       "file_path": "documentation/Quartz/kquartzfilterapplicationdomain.md",
       "hash": "1f6bb7c964bbdafbb5518015dccb48ae5c0daf148104cca1f90466a507f45109"
     },
+    "https://developer.apple.com/documentation/quartz/kquartzfiltermanagerdidaddfilternotification": {
+      "etag": "\"15ae-65d55aefe9557-df\"",
+      "file_path": "documentation/Quartz/kquartzfiltermanagerdidaddfilternotification.md",
+      "hash": "d7ecdc83f6a5a891f9b53e9964b3f28316ad27e856407f3d15361a39cfc5a601"
+    },
+    "https://developer.apple.com/documentation/quartz/kquartzfiltermanagerdidmodifyfilternotification": {
+      "etag": "\"15c0-65d55aef2852d-df\"",
+      "file_path": "documentation/Quartz/kquartzfiltermanagerdidmodifyfilternotification.md",
+      "hash": "030314e648864050160fad5c749038e71aad8733e5212adbe541eb37d26a4e87"
+    },
+    "https://developer.apple.com/documentation/quartz/kquartzfiltermanagerdidremovefilternotification": {
+      "etag": "\"15c0-65d55aefe9557-df\"",
+      "file_path": "documentation/Quartz/kquartzfiltermanagerdidremovefilternotification.md",
+      "hash": "7cf596d27d665584c0257c39134b1adb77b101707d5209bfeb3090255fb8224a"
+    },
+    "https://developer.apple.com/documentation/quartz/kquartzfiltermanagerdidselectfilternotification": {
+      "etag": "\"15c0-65d55aef2852d-df\"",
+      "file_path": "documentation/Quartz/kquartzfiltermanagerdidselectfilternotification.md",
+      "hash": "3cba0f2b81927396fe6972f1c06f28611d875990c1e8a73b652fad35f3de334d"
+    },
     "https://developer.apple.com/documentation/quartz/kquartzfilterpdfworkflowdomain": {
       "etag": "\"25e4-65d55af04a252-df\"",
       "file_path": "documentation/Quartz/kquartzfilterpdfworkflowdomain.md",
@@ -2009,6 +2074,26 @@
       "etag": "\"4675-6590237728508-df\"",
       "file_path": "documentation/Quartz/port-input-and-output-types.md",
       "hash": "3ae6997f0b248d0846a715d7beb84b8ea7512f9cfe85d0144815772d7b3e7fc5"
+    },
+    "https://developer.apple.com/documentation/quartz/qc_class_deprecated_mac": {
+      "etag": "\"172f-65d55aeee2cad-df\"",
+      "file_path": "documentation/Quartz/qc_class_deprecated_mac.md",
+      "hash": "744a4445de62d253a00db7ee387c8cd9ec585d8a2c0019d390012f4738c1627e"
+    },
+    "https://developer.apple.com/documentation/quartz/qc_deprecated_mac": {
+      "etag": "\"170b-65d55af069be8-df\"",
+      "file_path": "documentation/Quartz/qc_deprecated_mac.md",
+      "hash": "285f0de712c1d313a68b95920d16da65bebff7c2ac46eaf9a67d1fbc841894f6"
+    },
+    "https://developer.apple.com/documentation/quartz/qc_gl_class_deprecated": {
+      "etag": "\"176c-65d55aef429ef-df\"",
+      "file_path": "documentation/Quartz/qc_gl_class_deprecated.md",
+      "hash": "a81c83590bf9061c499fe0c97ed90a6bb8f555e18d627eb0916960438335bd62"
+    },
+    "https://developer.apple.com/documentation/quartz/qc_gl_deprecated": {
+      "etag": "\"1748-65d55af04a252-df\"",
+      "file_path": "documentation/Quartz/qc_gl_deprecated.md",
+      "hash": "0f60d76e5b4f0eb4a944f46eb20f0ffbe52f74fcca1e6dd1a1b90c6fe87daff6"
     },
     "https://developer.apple.com/documentation/quartz/qccomposition": {
       "etag": "\"a239-65d55aefe9557-df\"",
@@ -2195,6 +2280,16 @@
       "file_path": "documentation/Quartz/qccompositionlayer/composition().md",
       "hash": "c0a7b2970ef17dae4c865a2c0aaf6465c954d25c739d8c64287d173c6c7afa28"
     },
+    "https://developer.apple.com/documentation/quartz/qccompositionlayer/compositionlayerwithcomposition:": {
+      "etag": "\"26d2-65d55af08b519-df\"",
+      "file_path": "documentation/Quartz/qccompositionlayer/compositionlayerwithcomposition_.md",
+      "hash": "9a5331290cf6fdd6544710b8c0f8a69bc70b73820b503764b0599e992b6b74d6"
+    },
+    "https://developer.apple.com/documentation/quartz/qccompositionlayer/compositionlayerwithfile:": {
+      "etag": "\"28ae-65d55af08b519-df\"",
+      "file_path": "documentation/Quartz/qccompositionlayer/compositionlayerwithfile_.md",
+      "hash": "7f2d5c7cb9cabcf94ef24050254c890312aced991063da643d0ab534eca70179"
+    },
     "https://developer.apple.com/documentation/quartz/qccompositionlayer/init(composition:)": {
       "etag": "\"322a-65d55af08b519-df\"",
       "file_path": "documentation/Quartz/qccompositionlayer/init(composition).md",
@@ -2284,6 +2379,11 @@
       "etag": "\"20e9-65d55aeee2cad-df\"",
       "file_path": "documentation/Quartz/qccompositionpickerpanel/shared().md",
       "hash": "9b5d897d9e22ed2d9cc874ae47439b249d613088988d9ce5cbbafa67f2371eb6"
+    },
+    "https://developer.apple.com/documentation/quartz/qccompositionpickerpaneldidselectcompositionnotification": {
+      "etag": "\"fca-65d55aeee2cad-df\"",
+      "file_path": "documentation/Quartz/qccompositionpickerpaneldidselectcompositionnotification.md",
+      "hash": "5c6950ae3aef10281a284116f6ce8005938144e02aed731c65f8b03ede2ef390"
     },
     "https://developer.apple.com/documentation/quartz/qccompositionpickerview": {
       "etag": "\"13708-65d55af069be8-df\"",
@@ -2430,6 +2530,11 @@
       "file_path": "documentation/Quartz/qccompositionpickerviewdelegate.md",
       "hash": "ed0cb4dcaf6a5d1188919ce3dd24cd2bd031718bfb9b81843468926c2a229611"
     },
+    "https://developer.apple.com/documentation/quartz/qccompositionpickerviewdidselectcompositionnotification": {
+      "etag": "\"fe4-65d55aef5f937-df\"",
+      "file_path": "documentation/Quartz/qccompositionpickerviewdidselectcompositionnotification.md",
+      "hash": "85e207a329f678271dfdfe4714920b56b862a1a5bae4fb6390289a0a7625582f"
+    },
     "https://developer.apple.com/documentation/quartz/qccompositionprotocolgraphicanimation": {
       "etag": "\"8211-65d55aef2852d-df\"",
       "file_path": "documentation/Quartz/qccompositionprotocolgraphicanimation.md",
@@ -2535,10 +2640,20 @@
       "file_path": "documentation/Quartz/qccompositionrepository/compositions(withprotocols,andattributes).md",
       "hash": "f47fb8e55b590c8810c763a7921ff84adfb800da07b297178d2c3659fad4c09b"
     },
+    "https://developer.apple.com/documentation/quartz/qccompositionrepository/cq": {
+      "etag": "\"13b5-65d55aef2852d-df\"",
+      "file_path": "documentation/Quartz/qccompositionrepository/cq.md",
+      "hash": "358a463369d4be37bf162d437beb566d2e81c9c4f890fa26172f0f7781a38b5a"
+    },
     "https://developer.apple.com/documentation/quartz/qccompositionrepository/shared()": {
       "etag": "\"212b-65d55aef2852d-df\"",
       "file_path": "documentation/Quartz/qccompositionrepository/shared().md",
       "hash": "88c8a438fc1d6d81f446b5b80f57cc7da44e13cad69f46dbe00a7c536c03a384"
+    },
+    "https://developer.apple.com/documentation/quartz/qccompositionrepositorydidupdatenotification": {
+      "etag": "\"f88-65d55aef2852d-df\"",
+      "file_path": "documentation/Quartz/qccompositionrepositorydidupdatenotification.md",
+      "hash": "e66482e4b453807f6d9ad845b04c09901692fc7fb77562ab1fde9ef9149d2b2b"
     },
     "https://developer.apple.com/documentation/quartz/qcpatchcontroller": {
       "etag": "\"7869-65d55aef5f937-df\"",
@@ -2724,6 +2839,11 @@
       "etag": "\"24e2-65d55af00782f-df\"",
       "file_path": "documentation/Quartz/qcplugincontext/compositionurl().md",
       "hash": "508ed9eb71ef6d088827cf3a74e96fe01a02f19dc8cb1522c312531a8b091df3"
+    },
+    "https://developer.apple.com/documentation/quartz/qcplugincontext/logmessage:": {
+      "etag": "\"20ee-65d55af029f79-df\"",
+      "file_path": "documentation/Quartz/qcplugincontext/logmessage_.md",
+      "hash": "dee9b65ebd28c8ac7f9ba0d4cf045ba4a9085c2e1e29745ad7bfd193eee3d585"
     },
     "https://developer.apple.com/documentation/quartz/qcplugincontext/outputimageproviderfrombuffer(withpixelformat:pixelswide:pixelshigh:baseaddress:bytesperrow:releasecallback:releasecontext:colorspace:shouldcolormatch:)": {
       "etag": "\"91f4-65d55af029f79-df\"",
@@ -3280,6 +3400,16 @@
       "file_path": "documentation/Quartz/qcview/unloadcomposition().md",
       "hash": "392f366b19191bd4dc9005a1f042e4d91151124ebf625b57ebd94ae77f143b99"
     },
+    "https://developer.apple.com/documentation/quartz/qcviewdidstartrenderingnotification": {
+      "etag": "\"1186-65d55aef96e4c-df\"",
+      "file_path": "documentation/Quartz/qcviewdidstartrenderingnotification.md",
+      "hash": "26bc99a06086a2e735c043ca9b41de58d3f0cfdff3c4c9ea0785092df1346e75"
+    },
+    "https://developer.apple.com/documentation/quartz/qcviewdidstoprenderingnotification": {
+      "etag": "\"117f-65d55af029f79-df\"",
+      "file_path": "documentation/Quartz/qcviewdidstoprenderingnotification.md",
+      "hash": "9351ab1ad038d1fa6a3e1d728ef4e0df83dd93c50a74d884c8ea030bb0ac6bc5"
+    },
     "https://developer.apple.com/documentation/quartz/quartz-composer": {
       "etag": "\"8258-65d55aef7a323-df\"",
       "file_path": "documentation/Quartz/quartz-composer.md",
@@ -3319,6 +3449,11 @@
       "etag": "\"205e-659023779e355-df\"",
       "file_path": "documentation/Quartz/quartz-filter-constants.md",
       "hash": "7f3ea9cc0c569f38f720e19aa53549a4bdea6ee4d4adf8c7e76ef8113d19524f"
+    },
+    "https://developer.apple.com/documentation/quartz/quartz-macros": {
+      "etag": "\"1500-65902377611d1-df\"",
+      "file_path": "documentation/Quartz/quartz-macros.md",
+      "hash": "954fa8855d6107866495d159f9ad30c629f3065c3e548bba7100f6a98bb3aa5f"
     },
     "https://developer.apple.com/documentation/quartz/quartz-pdfkit": {
       "etag": "\"14e1-6590237728508-df\"",
@@ -3384,6 +3519,11 @@
       "etag": "\"165d-65d55aef2852d-df\"",
       "file_path": "documentation/Quartz/quartzfiltermanager/delegate().md",
       "hash": "80e23403aa1cd38a85c06269399b4920c6c7c8f6808f79890c4059424387719e"
+    },
+    "https://developer.apple.com/documentation/quartz/quartzfiltermanager/filtermanager": {
+      "etag": "\"f1b-65d55aef2852d-df\"",
+      "file_path": "documentation/Quartz/quartzfiltermanager/filtermanager.md",
+      "hash": "02b94401729fcf7d0276042a9fa31b0add03bdeb3af673f59185e33273ec6c9e"
     },
     "https://developer.apple.com/documentation/quartz/quartzfiltermanager/filterpanel()": {
       "etag": "\"1ad9-65d55aef2852d-df\"",
@@ -3539,6 +3679,26 @@
       "etag": "\"6d30-65d55af08b519-df\"",
       "file_path": "documentation/Quartz/ik_aperturebundleidentifier.md",
       "hash": "0f991e4d53677a510178a3a7abaa0d71db901697a9f72c105b9983d61041d4db"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/quartz/ik_api_deprecated.json": {
+      "etag": "\"16b0-65d55aef5f937-df\"",
+      "file_path": "documentation/Quartz/ik_api_deprecated.md",
+      "hash": "a5ecc03efe1be9ada2de1fc84a2992c43cfa7d3d411b5a1b4af2b5288c83b219"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/quartz/ik_available.json": {
+      "etag": "\"16f4-65d55af04a252-df\"",
+      "file_path": "documentation/Quartz/ik_available.md",
+      "hash": "a03a7fca4b12b140ff67cd160c0b804e01efa96a710f3ba45b45abb874960d71"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/quartz/ik_class_available.json": {
+      "etag": "\"1718-65d55af09e0f0-df\"",
+      "file_path": "documentation/Quartz/ik_class_available.md",
+      "hash": "bd7c015a4e5517106195083c6de69eab7d795a69912edf207e0a48bd81e8d686"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/quartz/ik_enum_available.json": {
+      "etag": "\"1712-65d55af08b519-df\"",
+      "file_path": "documentation/Quartz/ik_enum_available.md",
+      "hash": "df93e0e91b9a6c181817f021bbaf48a10ddffae8c05461025cf0bd6e11a2157d"
     },
     "https://developer.apple.com/tutorials/data/documentation/quartz/ik_iphotobundleidentifier.json": {
       "etag": "\"6cfc-65d55aef5f937-df\"",
@@ -3895,6 +4055,16 @@
       "file_path": "documentation/Quartz/ikfilterbrowserexcludefilters.md",
       "hash": "ebdc2c28ae40c4134470b7abd34b3a16a24b744f76c3bc4011792afc04c6f3aa"
     },
+    "https://developer.apple.com/tutorials/data/documentation/quartz/ikfilterbrowserfilterdoubleclicknotification.json": {
+      "etag": "\"15e6-65d55aefe9557-df\"",
+      "file_path": "documentation/Quartz/ikfilterbrowserfilterdoubleclicknotification.md",
+      "hash": "b1a3127d7dee8a10dd404602b67e79f07e8c6d418b7df7bd7ac629e8ec3e8a65"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/quartz/ikfilterbrowserfilterselectednotification.json": {
+      "etag": "\"15d2-65d55aefe9557-df\"",
+      "file_path": "documentation/Quartz/ikfilterbrowserfilterselectednotification.md",
+      "hash": "4d61d887e906d5deacc1a284ea7def54f361d64c20cf62cfb46dc1fd91e1ed11"
+    },
     "https://developer.apple.com/tutorials/data/documentation/quartz/ikfilterbrowserpanel.json": {
       "etag": "\"e3f1-65d55aeee2cad-df\"",
       "file_path": "documentation/Quartz/ikfilterbrowserpanel.md",
@@ -3959,6 +4129,11 @@
       "etag": "\"2a2d-65d55af04a252-df\"",
       "file_path": "documentation/Quartz/ikfilterbrowserview/setpreviewstate(_).md",
       "hash": "2c5e98d1f700f322952382b48678539ba7d11302a05ccc2799ee726b8925ab23"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/quartz/ikfilterbrowserwillpreviewfilternotification.json": {
+      "etag": "\"15fa-65d55aef96e4c-df\"",
+      "file_path": "documentation/Quartz/ikfilterbrowserwillpreviewfilternotification.md",
+      "hash": "cbc0315e8ee5a268791b250e862243a238f7ecdd84ef8da40227250789097dd8"
     },
     "https://developer.apple.com/tutorials/data/documentation/quartz/ikfiltercustomuiprovider.json": {
       "etag": "\"67ba-65d55af04a252-df\"",
@@ -4414,6 +4589,11 @@
       "etag": "\"36c5-65d55aeec482e-df\"",
       "file_path": "documentation/Quartz/ikimagebrowserview/indexofitem(at).md",
       "hash": "32046958968f1501ab8171a87dfb9b5fd640b2ff0e94543d1858b83cdfb6967e"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/quartz/ikimagebrowserview/initwithframe:.json": {
+      "etag": "\"14bf-65d55aeec482e-df\"",
+      "file_path": "documentation/Quartz/ikimagebrowserview/initwithframe_.md",
+      "hash": "c47ddafc9d62c71c0d05183601e3c69bc507f1e46493f49397f98fdb1fc4b0bd"
     },
     "https://developer.apple.com/tutorials/data/documentation/quartz/ikimagebrowserview/intercellspacing().json": {
       "etag": "\"39bf-65d55aeee2cad-df\"",
@@ -5030,6 +5210,11 @@
       "file_path": "documentation/Quartz/iksaveoptions/userselection.md",
       "hash": "a2d541989906b945fdc21c1c8334c9e01e4070718fa0acac0c2b95ae004ed846"
     },
+    "https://developer.apple.com/tutorials/data/documentation/quartz/iksaveoptions_h.json": {
+      "etag": "\"16a4-65d55aef7a323-df\"",
+      "file_path": "documentation/Quartz/iksaveoptions_h.md",
+      "hash": "82774dbf4b52325717e51de5895359e4f6568338f93ddbb9f63f57dd65521242"
+    },
     "https://developer.apple.com/tutorials/data/documentation/quartz/ikscannerdeviceview.json": {
       "etag": "\"e9c0-65d55af04a252-df\"",
       "file_path": "documentation/Quartz/ikscannerdeviceview.md",
@@ -5445,6 +5630,26 @@
       "file_path": "documentation/Quartz/kquartzfilterapplicationdomain.md",
       "hash": "1f6bb7c964bbdafbb5518015dccb48ae5c0daf148104cca1f90466a507f45109"
     },
+    "https://developer.apple.com/tutorials/data/documentation/quartz/kquartzfiltermanagerdidaddfilternotification.json": {
+      "etag": "\"15ae-65d55aefe9557-df\"",
+      "file_path": "documentation/Quartz/kquartzfiltermanagerdidaddfilternotification.md",
+      "hash": "d7ecdc83f6a5a891f9b53e9964b3f28316ad27e856407f3d15361a39cfc5a601"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/quartz/kquartzfiltermanagerdidmodifyfilternotification.json": {
+      "etag": "\"15c0-65d55aef2852d-df\"",
+      "file_path": "documentation/Quartz/kquartzfiltermanagerdidmodifyfilternotification.md",
+      "hash": "030314e648864050160fad5c749038e71aad8733e5212adbe541eb37d26a4e87"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/quartz/kquartzfiltermanagerdidremovefilternotification.json": {
+      "etag": "\"15c0-65d55aefe9557-df\"",
+      "file_path": "documentation/Quartz/kquartzfiltermanagerdidremovefilternotification.md",
+      "hash": "7cf596d27d665584c0257c39134b1adb77b101707d5209bfeb3090255fb8224a"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/quartz/kquartzfiltermanagerdidselectfilternotification.json": {
+      "etag": "\"15c0-65d55aef2852d-df\"",
+      "file_path": "documentation/Quartz/kquartzfiltermanagerdidselectfilternotification.md",
+      "hash": "3cba0f2b81927396fe6972f1c06f28611d875990c1e8a73b652fad35f3de334d"
+    },
     "https://developer.apple.com/tutorials/data/documentation/quartz/kquartzfilterpdfworkflowdomain.json": {
       "etag": "\"25e4-65d55af04a252-df\"",
       "file_path": "documentation/Quartz/kquartzfilterpdfworkflowdomain.md",
@@ -5484,6 +5689,26 @@
       "etag": "\"4675-6590237728508-df\"",
       "file_path": "documentation/Quartz/port-input-and-output-types.md",
       "hash": "3ae6997f0b248d0846a715d7beb84b8ea7512f9cfe85d0144815772d7b3e7fc5"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/quartz/qc_class_deprecated_mac.json": {
+      "etag": "\"172f-65d55aeee2cad-df\"",
+      "file_path": "documentation/Quartz/qc_class_deprecated_mac.md",
+      "hash": "744a4445de62d253a00db7ee387c8cd9ec585d8a2c0019d390012f4738c1627e"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/quartz/qc_deprecated_mac.json": {
+      "etag": "\"170b-65d55af069be8-df\"",
+      "file_path": "documentation/Quartz/qc_deprecated_mac.md",
+      "hash": "285f0de712c1d313a68b95920d16da65bebff7c2ac46eaf9a67d1fbc841894f6"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/quartz/qc_gl_class_deprecated.json": {
+      "etag": "\"176c-65d55aef429ef-df\"",
+      "file_path": "documentation/Quartz/qc_gl_class_deprecated.md",
+      "hash": "a81c83590bf9061c499fe0c97ed90a6bb8f555e18d627eb0916960438335bd62"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/quartz/qc_gl_deprecated.json": {
+      "etag": "\"1748-65d55af04a252-df\"",
+      "file_path": "documentation/Quartz/qc_gl_deprecated.md",
+      "hash": "0f60d76e5b4f0eb4a944f46eb20f0ffbe52f74fcca1e6dd1a1b90c6fe87daff6"
     },
     "https://developer.apple.com/tutorials/data/documentation/quartz/qccomposition.json": {
       "etag": "\"a239-65d55aefe9557-df\"",
@@ -5670,6 +5895,16 @@
       "file_path": "documentation/Quartz/qccompositionlayer/composition().md",
       "hash": "c0a7b2970ef17dae4c865a2c0aaf6465c954d25c739d8c64287d173c6c7afa28"
     },
+    "https://developer.apple.com/tutorials/data/documentation/quartz/qccompositionlayer/compositionlayerwithcomposition:.json": {
+      "etag": "\"26d2-65d55af08b519-df\"",
+      "file_path": "documentation/Quartz/qccompositionlayer/compositionlayerwithcomposition_.md",
+      "hash": "9a5331290cf6fdd6544710b8c0f8a69bc70b73820b503764b0599e992b6b74d6"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/quartz/qccompositionlayer/compositionlayerwithfile:.json": {
+      "etag": "\"28ae-65d55af08b519-df\"",
+      "file_path": "documentation/Quartz/qccompositionlayer/compositionlayerwithfile_.md",
+      "hash": "7f2d5c7cb9cabcf94ef24050254c890312aced991063da643d0ab534eca70179"
+    },
     "https://developer.apple.com/tutorials/data/documentation/quartz/qccompositionlayer/init(composition:).json": {
       "etag": "\"322a-65d55af08b519-df\"",
       "file_path": "documentation/Quartz/qccompositionlayer/init(composition).md",
@@ -5759,6 +5994,11 @@
       "etag": "\"20e9-65d55aeee2cad-df\"",
       "file_path": "documentation/Quartz/qccompositionpickerpanel/shared().md",
       "hash": "9b5d897d9e22ed2d9cc874ae47439b249d613088988d9ce5cbbafa67f2371eb6"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/quartz/qccompositionpickerpaneldidselectcompositionnotification.json": {
+      "etag": "\"fca-65d55aeee2cad-df\"",
+      "file_path": "documentation/Quartz/qccompositionpickerpaneldidselectcompositionnotification.md",
+      "hash": "5c6950ae3aef10281a284116f6ce8005938144e02aed731c65f8b03ede2ef390"
     },
     "https://developer.apple.com/tutorials/data/documentation/quartz/qccompositionpickerview.json": {
       "etag": "\"13708-65d55af069be8-df\"",
@@ -5905,6 +6145,11 @@
       "file_path": "documentation/Quartz/qccompositionpickerviewdelegate.md",
       "hash": "ed0cb4dcaf6a5d1188919ce3dd24cd2bd031718bfb9b81843468926c2a229611"
     },
+    "https://developer.apple.com/tutorials/data/documentation/quartz/qccompositionpickerviewdidselectcompositionnotification.json": {
+      "etag": "\"fe4-65d55aef5f937-df\"",
+      "file_path": "documentation/Quartz/qccompositionpickerviewdidselectcompositionnotification.md",
+      "hash": "85e207a329f678271dfdfe4714920b56b862a1a5bae4fb6390289a0a7625582f"
+    },
     "https://developer.apple.com/tutorials/data/documentation/quartz/qccompositionprotocolgraphicanimation.json": {
       "etag": "\"8211-65d55aef2852d-df\"",
       "file_path": "documentation/Quartz/qccompositionprotocolgraphicanimation.md",
@@ -6010,10 +6255,20 @@
       "file_path": "documentation/Quartz/qccompositionrepository/compositions(withprotocols,andattributes).md",
       "hash": "f47fb8e55b590c8810c763a7921ff84adfb800da07b297178d2c3659fad4c09b"
     },
+    "https://developer.apple.com/tutorials/data/documentation/quartz/qccompositionrepository/cq.json": {
+      "etag": "\"13b5-65d55aef2852d-df\"",
+      "file_path": "documentation/Quartz/qccompositionrepository/cq.md",
+      "hash": "358a463369d4be37bf162d437beb566d2e81c9c4f890fa26172f0f7781a38b5a"
+    },
     "https://developer.apple.com/tutorials/data/documentation/quartz/qccompositionrepository/shared().json": {
       "etag": "\"212b-65d55aef2852d-df\"",
       "file_path": "documentation/Quartz/qccompositionrepository/shared().md",
       "hash": "88c8a438fc1d6d81f446b5b80f57cc7da44e13cad69f46dbe00a7c536c03a384"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/quartz/qccompositionrepositorydidupdatenotification.json": {
+      "etag": "\"f88-65d55aef2852d-df\"",
+      "file_path": "documentation/Quartz/qccompositionrepositorydidupdatenotification.md",
+      "hash": "e66482e4b453807f6d9ad845b04c09901692fc7fb77562ab1fde9ef9149d2b2b"
     },
     "https://developer.apple.com/tutorials/data/documentation/quartz/qcpatchcontroller.json": {
       "etag": "\"7869-65d55aef5f937-df\"",
@@ -6199,6 +6454,11 @@
       "etag": "\"24e2-65d55af00782f-df\"",
       "file_path": "documentation/Quartz/qcplugincontext/compositionurl().md",
       "hash": "508ed9eb71ef6d088827cf3a74e96fe01a02f19dc8cb1522c312531a8b091df3"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/quartz/qcplugincontext/logmessage:.json": {
+      "etag": "\"20ee-65d55af029f79-df\"",
+      "file_path": "documentation/Quartz/qcplugincontext/logmessage_.md",
+      "hash": "dee9b65ebd28c8ac7f9ba0d4cf045ba4a9085c2e1e29745ad7bfd193eee3d585"
     },
     "https://developer.apple.com/tutorials/data/documentation/quartz/qcplugincontext/outputimageproviderfrombuffer(withpixelformat:pixelswide:pixelshigh:baseaddress:bytesperrow:releasecallback:releasecontext:colorspace:shouldcolormatch:).json": {
       "etag": "\"91f4-65d55af029f79-df\"",
@@ -6755,6 +7015,16 @@
       "file_path": "documentation/Quartz/qcview/unloadcomposition().md",
       "hash": "392f366b19191bd4dc9005a1f042e4d91151124ebf625b57ebd94ae77f143b99"
     },
+    "https://developer.apple.com/tutorials/data/documentation/quartz/qcviewdidstartrenderingnotification.json": {
+      "etag": "\"1186-65d55aef96e4c-df\"",
+      "file_path": "documentation/Quartz/qcviewdidstartrenderingnotification.md",
+      "hash": "26bc99a06086a2e735c043ca9b41de58d3f0cfdff3c4c9ea0785092df1346e75"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/quartz/qcviewdidstoprenderingnotification.json": {
+      "etag": "\"117f-65d55af029f79-df\"",
+      "file_path": "documentation/Quartz/qcviewdidstoprenderingnotification.md",
+      "hash": "9351ab1ad038d1fa6a3e1d728ef4e0df83dd93c50a74d884c8ea030bb0ac6bc5"
+    },
     "https://developer.apple.com/tutorials/data/documentation/quartz/quartz-composer-constants.json": {
       "etag": "\"19544-65902378b5382-df\"",
       "file_path": "documentation/Quartz/quartz-composer-constants.md",
@@ -6794,6 +7064,11 @@
       "etag": "\"16f0-659023787b16c-df\"",
       "file_path": "documentation/Quartz/quartz-filter.md",
       "hash": "c859fb835ebea8823d49c35bef85caa6eb14a1aa3abdb0415bf4f876244a9881"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/quartz/quartz-macros.json": {
+      "etag": "\"1500-65902377611d1-df\"",
+      "file_path": "documentation/Quartz/quartz-macros.md",
+      "hash": "954fa8855d6107866495d159f9ad30c629f3065c3e548bba7100f6a98bb3aa5f"
     },
     "https://developer.apple.com/tutorials/data/documentation/quartz/quartz-pdfkit.json": {
       "etag": "\"14e1-6590237728508-df\"",
@@ -6859,6 +7134,11 @@
       "etag": "\"165d-65d55aef2852d-df\"",
       "file_path": "documentation/Quartz/quartzfiltermanager/delegate().md",
       "hash": "80e23403aa1cd38a85c06269399b4920c6c7c8f6808f79890c4059424387719e"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/quartz/quartzfiltermanager/filtermanager.json": {
+      "etag": "\"f1b-65d55aef2852d-df\"",
+      "file_path": "documentation/Quartz/quartzfiltermanager/filtermanager.md",
+      "hash": "02b94401729fcf7d0276042a9fa31b0add03bdeb3af673f59185e33273ec6c9e"
     },
     "https://developer.apple.com/tutorials/data/documentation/quartz/quartzfiltermanager/filterpanel().json": {
       "etag": "\"1ad9-65d55aef2852d-df\"",
@@ -6953,8 +7233,8 @@
   },
   "metadata": {
     "render": {
-      "version": 1
+      "version": 2
     },
-    "total_pages": 1390
+    "total_pages": 1446
   }
 }

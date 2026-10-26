@@ -44,6 +44,8 @@ HTTP/2 and later ignore this property. HTTP/1.1 only considers this property in 
   An array of proxy configuration objects containing information about the proxies to use within this session.
 - [var connectionProxyDictionary: [AnyHashable : Any]?](./connectionproxydictionary.md)
   A dictionary containing information about the proxy to use within this session.
+- [proxyConfigurations](../nsurlsessionconfiguration/proxyconfigurations.md)
+  An array of proxy configuration objects containing information about the proxies to use within this session.
 
 
 ---

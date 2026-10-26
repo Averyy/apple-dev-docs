@@ -66,6 +66,8 @@ The [`shape`](./mlmultiarray/shape.md) property is an integer array that has an 
   Creates a multiarray sharing the surface of a pixel buffer.
 - [enum MLMultiArrayDataType](./mlmultiarraydatatype.md)
   Constants that define the underlying element types a multiarray can store.
+- [- initWithShape:dataType:strides:](./mlmultiarray/initwithshape_datatype_strides_.md)
+  Creates the object with specified strides.
 ### Inspecting a multiarray
 - [var count: Int](./mlmultiarray/count.md)
   The total number of elements in the multiarray.
@@ -93,6 +95,14 @@ The [`shape`](./mlmultiarray/shape.md) property is an integer array that has an 
   A reference to the multiarray’s underlying pixel buffer.
 - [var dataPointer: UnsafeMutableRawPointer](./mlmultiarray/datapointer.md)
   A pointer to the multiarray’s underlying memory.
+- [- setObject:atIndexedSubscript:](./mlmultiarray/setobject_atindexedsubscript_.md)
+  Assigns a number to the multiarray’s element at the location that the linear offset defines.
+- [- setObject:forKeyedSubscript:](./mlmultiarray/setobject_forkeyedsubscript_.md)
+  Assigns a number to the multiarray’s element at the location that the number array defines.
+- [- getBytesWithHandler:](./mlmultiarray/getbyteswithhandler_.md)
+  Get the underlying buffer pointer to read.
+- [- getMutableBytesWithHandler:](./mlmultiarray/getmutablebyteswithhandler_.md)
+  Get the underlying buffer pointer to mutate.
 ### Initializers
 - [init?(coder: NSCoder)](./mlmultiarray/init%28coder%29.md)
 - [convenience init(concatenating: [MLMultiArray], axis: Int, dataType: MLMultiArrayDataType)](./mlmultiarray/init%28concatenating,axis,datatype%29.md)

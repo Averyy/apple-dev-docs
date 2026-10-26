@@ -54,6 +54,17 @@ An [`Host`](./host.md) object contains all of the network addresses and names di
 ### Comparing Hosts
 - [func isEqual(to: Host) -> Bool](./host/isequal%28to%29.md)
   Indicates whether the receiver represents the same host as another `NSHost` object.
+### Managing the Host Cache
+- [+ isHostCacheEnabled](./nshost/ishostcacheenabled.md)
+  Indicates whether caching is turned on or off.
+- [+ setHostCacheEnabled:](./nshost/sethostcacheenabled_.md)
+  Specifies whether the receiver is to cache instances as it creates them to avoid creating duplicate instances.
+- [+ flushHostCache](./nshost/flushhostcache.md)
+  Releases the cache of existing `NSHost` objects so subsequent requests for `NSHost` objects create new ones.
+### Instance Variables
+- [addresses](./nshost/addresses-c.ivar.md)
+- [names](./nshost/names-c.ivar.md)
+- [reserved](./nshost/reserved.md)
 
 ## Relationships
 

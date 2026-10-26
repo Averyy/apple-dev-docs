@@ -36,6 +36,8 @@ When `nil`, the navigation bar will use the navigation item’s current title.
   The mode for displaying the title of the navigation bar.
 - [UINavigationItem.LargeTitleDisplayMode](./largetitledisplaymode-swift.enum.md)
   Constants that indicate how to size the title of this item.
+- [attributedTitle](./attributedtitle-9l8p2.md)
+  An attributed string that is rendered as the title in the navigation bar.
 
 
 ---

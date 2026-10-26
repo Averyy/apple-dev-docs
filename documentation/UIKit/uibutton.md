@@ -164,13 +164,21 @@ For more information about making iOS controls accessible, see the accessibility
   Creates a new button with the specified type, registers the primary action event, and sets the title and image to the action’s title and image.
 - [UIButton.ButtonType](./uibutton/buttontype-swift.enum.md)
   Specifies the style of a button.
+- [+ buttonWithType:primaryAction:](./uibutton/buttonwithtype_primaryaction_.md)
+  Creates a new button with the specified type, registers the primary action event, and sets the title and image to the action’s title and image.
 ### Creating system buttons
 - [class func systemButton(with: UIImage, target: Any?, action: Selector?) -> Self](./uibutton/systembutton%28with,target,action%29.md)
   Creates and returns a system type button with specified image, target, and action.
+- [+ systemButtonWithPrimaryAction:](./uibutton/systembuttonwithprimaryaction_.md)
+  Creates and returns a system type button, registers the primary action event, and sets the title and image to the action’s title and image.
 ### Creating buttons from a configuration object
 - [convenience init(configuration: UIButton.Configuration, primaryAction: UIAction?)](./uibutton/init%28configuration,primaryaction%29.md)
   Creates a new button with the specified configuration and registers the primary action event.
 - [UIButton.Configuration](./uibutton/configuration-swift.struct.md)
+  A configuration that specifies the appearance and behavior of a button and its contents.
+- [+ buttonWithConfiguration:primaryAction:](./uibutton/buttonwithconfiguration_primaryaction_.md)
+  Creates a new button with the specified configuration and registers the primary action event.
+- [UIButtonConfiguration](./uibuttonconfiguration.md)
   A configuration that specifies the appearance and behavior of a button and its contents.
 ### Managing the appearance with a configuration object
 - [var configuration: UIButton.Configuration?](./uibutton/configuration-5rlyb.md)
@@ -185,6 +193,8 @@ For more information about making iOS controls accessible, see the accessibility
   A closure that executes when the button state changes.
 - [typealias ConfigurationUpdateHandler](./uibutton/configurationupdatehandler-swift.typealias.md)
   A closure to update the configuration of a button.
+- [configuration](./uibutton/configuration-7gz60.md)
+  The configuration for the button’s appearance.
 ### Managing the title
 - [var titleLabel: UILabel?](./uibutton/titlelabel.md)
   A view that displays the value of the `currentTitle` property for a button.
@@ -263,6 +273,8 @@ For more information about making iOS controls accessible, see the accessibility
   A type alias defining a closure that returns a pointer style to apply to a button.
 - [typealias UIButtonPointerStyleProvider](./uibuttonpointerstyleprovider.md)
   A type alias defining a block that returns a pointer style to apply to a button.
+- [pointerStyleProvider](./uibutton/pointerstyleprovider-1d4d2.md)
+  A block that returns the pointer style to use when the pointer hovers over the button.
 ### Supporting menu and toggle buttons
 - [var menu: UIMenu?](./uibutton/menu.md)
   A menu that the button displays.

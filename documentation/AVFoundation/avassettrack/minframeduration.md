@@ -32,6 +32,14 @@ A track’s minimum frame duration is the reciprocal of its maximum frame rate. 
 
 The value of this property is [`invalid`](../../CoreMedia/cmtime/invalid.md) if the track can’t calculate its minimum frame duration, or if it’s unknown.
 
+## See Also
+
+### Accessing frame-based characteristics
+- [nominalFrameRate](./nominalframerate.md)
+  The frame rate of the track, in frames per second.
+- [requiresFrameReordering](./requiresframereordering.md)
+  A Boolean value that indicates whether samples in the track may have different presentation and decode timestamps.
+
 
 ---
 

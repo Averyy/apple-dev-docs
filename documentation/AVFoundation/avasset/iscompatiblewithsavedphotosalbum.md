@@ -24,6 +24,20 @@ var isCompatibleWithSavedPhotosAlbum: Bool { get }
 @property (nonatomic, readonly, getter=isCompatibleWithSavedPhotosAlbum) BOOL compatibleWithSavedPhotosAlbum;
 ```
 
+## See Also
+
+### Accessing suitability
+- [playable](./isplayable.md)
+  A Boolean value that indicates whether the asset has playable content.
+- [exportable](./isexportable.md)
+  A Boolean value that indicates whether you can export this asset using an export session.
+- [readable](./isreadable.md)
+  A Boolean value that indicates whether you can extract the asset’s media data using an asset reader.
+- [composable](./iscomposable.md)
+  A Boolean value that indicates whether you can use the asset as a segment of a composition track.
+- [compatibleWithAirPlayVideo](./iscompatiblewithairplayvideo.md)
+  A Boolean value that indicates whether the asset is compatible with AirPlay Video.
+
 
 ---
 

@@ -23,6 +23,16 @@ typedef NSControlStateValue NSCellStateValue;
 
 These constants are described in [Cell States](https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/ControlCell/Concepts/CellStates.html#//apple_ref/doc/uid/20000069).
 
+## Topics
+
+### Constants
+- [NSMixedState](../nsmixedstate.md)
+  The corresponding feature is in effect somewhere.
+- [NSOffState](../nsoffstate.md)
+  The corresponding feature is in effect nowhere.
+- [NSOnState](../nsonstate.md)
+  The corresponding feature is in effect everywhere.
+
 
 ---
 

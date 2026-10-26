@@ -34,6 +34,12 @@ Launch, communicate with, and invalidate browser extensions.
   A process that manages network connections in an app extension.
 - [struct RenderingProcess](./renderingprocess.md)
   A process that manages rendering in an app extension.
+- [BEWebContentProcess](./bewebcontentprocess.md)
+  A class that processes webpage content in an app extension.
+- [BENetworkingProcess](./benetworkingprocess.md)
+  An object that represents a networking extension process.
+- [BERenderingProcess](./berenderingprocess.md)
+  An object that represents a running browser rendering extension process.
 ### Extension capabilities
 - [enum ProcessCapability](./processcapability.md)
   Capabilities of a helper extension process.
@@ -47,6 +53,12 @@ Launch, communicate with, and invalidate browser extensions.
   An object that represents a web content filter.
 - [enum RenderingExtensionFeature](./renderingextensionfeature.md)
   Features of a rendering extension.
+- [BEProcessCapability](./beprocesscapability-7av05.md)
+  Capabilities of a helper extension process.
+- [BEMediaEnvironment](./bemediaenvironment-n91a.md)
+  An object that identifies a media playback or streaming environment.
+- [BEProcessCapabilityGrant](./beprocesscapabilitygrant.md)
+  An object that represents a granted capability.
 
 ## See Also
 

@@ -48,15 +48,21 @@ These methods support automatic observation tracking in views, view controllers,
   Updates the cell’s configuration using the current state.
 - [var configurationUpdateHandler: UICollectionViewCell.ConfigurationUpdateHandler?](./uicollectionviewcell/configurationupdatehandler-7rqbu.md)
   A block for handling updates to the cell’s configuration using the current state.
+- [configurationUpdateHandler](./uicollectionviewcell/configurationupdatehandler-ajhn.md)
+  A block for handling updates to the cell’s configuration using the current state.
 ### Observing data in table view cells
 - [func updateConfiguration(using: UICellConfigurationState)](./uitableviewcell/updateconfiguration%28using%29.md)
   Updates the cell’s configuration using the current state.
 - [var configurationUpdateHandler: UITableViewCell.ConfigurationUpdateHandler?](./uitableviewcell/configurationupdatehandler-974.md)
   A block for handling updates to the cell’s configuration using the current state.
+- [configurationUpdateHandler](./uitableviewcell/configurationupdatehandler-746ya.md)
+  A block for handling updates to the cell’s configuration using the current state.
 ### Observing data in table header and footer views
 - [func updateConfiguration(using: UIViewConfigurationState)](./uitableviewheaderfooterview/updateconfiguration%28using%29.md)
   Updates the view’s configuration using the current state.
 - [var configurationUpdateHandler: UITableViewHeaderFooterView.ConfigurationUpdateHandler?](./uitableviewheaderfooterview/configurationupdatehandler-49slo.md)
+  A block for handling updates to the view’s configuration using the current state.
+- [configurationUpdateHandler](./uitableviewheaderfooterview/configurationupdatehandler-3oji2.md)
   A block for handling updates to the view’s configuration using the current state.
 ### Observing data in collection view layouts
 - [typealias UICollectionViewCompositionalLayoutSectionProvider](./uicollectionviewcompositionallayoutsectionprovider.md)

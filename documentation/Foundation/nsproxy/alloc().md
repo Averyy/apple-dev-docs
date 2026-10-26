@@ -29,6 +29,9 @@ class func alloc() -> Self
 
 ### Related Documentation
 - [Distributed Objects Programming Topics](https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/DistrObjects/DistrObjects.html#//apple_ref/doc/uid/10000102i)
+### Creating Instances
+- [+ allocWithZone:](./allocwithzone_.md)
+  Returns a new instance of the receiving class
 
 
 ---

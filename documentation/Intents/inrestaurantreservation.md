@@ -31,12 +31,18 @@ class INRestaurantReservation
   Creates a restaurant reservation with the specified contents and attributes.
 - [convenience init(itemReference: INSpeakableString, reservationNumber: String?, bookingTime: Date?, reservationStatus: INReservationStatus, reservationHolderName: String?, actions: [INReservationAction]?, reservationDuration: INDateComponentsRange, partySize: Int?, restaurantLocation: CLPlacemark)](./inrestaurantreservation/init%28itemreference,reservationnumber,bookingtime,reservationstatus,reservationholdername,actions,reservationduration,partysize,restaurantlocation%29.md)
   Creates a new restaurant reservation with the provided information.
+- [- initWithItemReference:reservationNumber:bookingTime:reservationStatus:reservationHolderName:actions:URL:reservationDuration:partySize:restaurantLocation:](./inrestaurantreservation/initwithitemreference_reservationnumber_bookingtime_reservationstatus_reservationholdername_actions_url_reservationduration_partysize_restaurantlocation_.md)
+  Creates a restaurant reservation with the provided information.
+- [- initWithItemReference:reservationNumber:bookingTime:reservationStatus:reservationHolderName:actions:reservationDuration:partySize:restaurantLocation:](./inrestaurantreservation/initwithitemreference_reservationnumber_bookingtime_reservationstatus_reservationholdername_actions_reservationduration_partysize_restaurantlocation_.md)
+  Creates a new restaurant reservation with the provided information.
 ### Getting the Restaurant Reservation Information
 - [var reservationDuration: INDateComponentsRange](./inrestaurantreservation/reservationduration.md)
   The date and time range that defines beginning and end of the restaurant reservation.
 - [var restaurantLocation: CLPlacemark](./inrestaurantreservation/restaurantlocation.md)
   The name and location of the restaurant.
 - [var partySize: Int?](./inrestaurantreservation/partysize-9ux0p.md)
+  The number of people in the party.
+- [partySize](./inrestaurantreservation/partysize-9mtpk.md)
   The number of people in the party.
 
 ## Relationships

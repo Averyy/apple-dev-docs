@@ -36,6 +36,10 @@ The `AVAudioChannelLayout` class is a thin wrapper for Core Audio’s [`AudioCha
   Creates an audio channel layout object from an existing one.
 - [convenience init?(layoutTag: AudioChannelLayoutTag)](./avaudiochannellayout/init%28layouttag%29.md)
   Creates an audio channel layout object from a layout tag.
+- [+ layoutWithLayout:](./avaudiochannellayout/layoutwithlayout_.md)
+  Creates an audio channel layout object from an existing one.
+- [+ layoutWithLayoutTag:](./avaudiochannellayout/layoutwithlayouttag_.md)
+  Creates an audio channel layout object from an audio channel layout tag.
 ### Getting audio channel layout properties
 - [typealias AVAudioChannelCount](./avaudiochannelcount.md)
   The number of audio channels.

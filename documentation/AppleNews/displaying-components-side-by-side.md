@@ -7,7 +7,7 @@ Configure a side-by-side, horizontal arrangement of components for your article.
 
 #### Overview
 
-In Apple News Format, you can display child components of [`Container`](https://developer.apple.com/documentation/applenewsformat/container), [`Chapter`](https://developer.apple.com/documentation/applenewsformat/chapter), [`Section`](https://developer.apple.com/documentation/applenewsformat/section), and [`Aside`](https://developer.apple.com/documentation/applenewsformat/aside), side by side and horizontally by using the `contentDisplay` type [`HorizontalStackDisplay`](https://developer.apple.com/documentation/applenewsformat/horizontalstackdisplay). The child components are sized to match the `minimumWidth` and `maximumWidth` values defined in the [`ComponentLayout`](https://developer.apple.com/documentation/applenewsformat/componentlayout) object of these components. To redistribute the empty space inside a horizontal stack collection, use the [`FlexibleSpacer`](https://developer.apple.com/documentation/applenewsformat/flexiblespacer) object. This object provides flexible space between components in a container only when its `contentDisplay` value is set to `horizontal_stack`.
+In Apple News Format, you can display child components of [`Container`](../AppleNewsFormat/container.md), [`Chapter`](../AppleNewsFormat/chapter.md), [`Section`](../AppleNewsFormat/section.md), and [`Aside`](../AppleNewsFormat/aside.md), side by side and horizontally by using the `contentDisplay` type [`HorizontalStackDisplay`](../AppleNewsFormat/horizontalstackdisplay.md). The child components are sized to match the `minimumWidth` and `maximumWidth` values defined in the [`ComponentLayout`](../AppleNewsFormat/componentlayout.md) object of these components. To redistribute the empty space inside a horizontal stack collection, use the [`FlexibleSpacer`](../AppleNewsFormat/flexiblespacer.md) object. This object provides flexible space between components in a container only when its `contentDisplay` value is set to `horizontal_stack`.
 
 > **Note**: In versions of iOS before iOS 12, child components are vertically stacked if the container’s `contentDisplay` property is defined as the new `horizontal_stack` type.
 
@@ -20,29 +20,29 @@ In Apple News Format, you can display child components of [`Container`](https://
   Add a scene to your article to create special effects.
 - [Creating an Article Link](./creating-an-article-link.md)
   Link to an article by using the article-linking container component.
-- [object Header](https://developer.apple.com/documentation/applenewsformat/header)
+- [object Header](../AppleNewsFormat/header.md)
   The component for defining the top area of an article, chapter, or section.
-- [object Container](https://developer.apple.com/documentation/applenewsformat/container)
+- [object Container](../AppleNewsFormat/container.md)
   Properties shared by all container types.
-- [object Section](https://developer.apple.com/documentation/applenewsformat/section)
+- [object Section](../AppleNewsFormat/section.md)
   The component for organizing an article into sections.
-- [object Chapter](https://developer.apple.com/documentation/applenewsformat/chapter)
+- [object Chapter](../AppleNewsFormat/chapter.md)
   The component for organizing an article into chapters.
-- [object Aside](https://developer.apple.com/documentation/applenewsformat/aside)
+- [object Aside](../AppleNewsFormat/aside.md)
   The component for setting apart content that is not directly related to the article, such as promotional content.
-- [object CollectionDisplay](https://developer.apple.com/documentation/applenewsformat/collectiondisplay)
+- [object CollectionDisplay](../AppleNewsFormat/collectiondisplay.md)
   An object used in any container component type to define how the collection of child components is presented.
-- [object HorizontalStackDisplay](https://developer.apple.com/documentation/applenewsformat/horizontalstackdisplay)
+- [object HorizontalStackDisplay](../AppleNewsFormat/horizontalstackdisplay.md)
   The object for displaying components side by side in a Container component.
-- [object FlexibleSpacer](https://developer.apple.com/documentation/applenewsformat/flexiblespacer)
+- [object FlexibleSpacer](../AppleNewsFormat/flexiblespacer.md)
   The component for redistributing empty space inside a horizontal stack collection.
-- [object Divider](https://developer.apple.com/documentation/applenewsformat/divider)
+- [object Divider](../AppleNewsFormat/divider.md)
   The component for defining a horizontal line to visually divide parts of your article.
-- [object ArticleLink](https://developer.apple.com/documentation/applenewsformat/articlelink)
+- [object ArticleLink](../AppleNewsFormat/articlelink.md)
   The container component for creating a link to an article.
-- [type SupportedArticleIdentifier](https://developer.apple.com/documentation/applenewsformat/supportedarticleidentifier)
+- [type SupportedArticleIdentifier](../AppleNewsFormat/supportedarticleidentifier.md)
   The patterns supported for article identifiers in UUID format.
-- [type PublisherArticleIdentifier](https://developer.apple.com/documentation/applenewsformat/publisherarticleidentifier)
+- [type PublisherArticleIdentifier](../AppleNewsFormat/publisherarticleidentifier.md)
   The identifier provided by the publisher.
 
 

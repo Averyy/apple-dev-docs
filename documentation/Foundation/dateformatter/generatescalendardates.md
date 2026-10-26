@@ -29,6 +29,12 @@ var generatesCalendarDates: Bool { get set }
 
 This property is [`true`](../../Swift/true.md) if the formatter generates the deprecated [`NSCalendarDate`](../nscalendardate.md) type, and is [`false`](../../Swift/false.md) otherwise. You should use [`Date`](../date.md) and [`Calendar`](../calendar.md) rather than [`NSCalendarDate`](../nscalendardate.md).
 
+## See Also
+
+### Deprecated
+- [- initWithDateFormat:allowNaturalLanguage:](../nsdateformatter/initwithdateformat_allownaturallanguage_.md)
+  Initializes and returns an `NSDateFormatter` instance that uses the OS X 10.0 formatting behavior and the given date format string in its conversions.
+
 
 ---
 

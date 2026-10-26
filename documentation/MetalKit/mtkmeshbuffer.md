@@ -31,6 +31,8 @@ class MTKMeshBuffer
   The allocator object used to create this mesh buffer.
 - [var type: MDLMeshBufferType](./mtkmeshbuffer/type.md)
   The type of data contained in the originating Model I/O buffer.
+- [zone](./mtkmeshbuffer/zone.md)
+  The zone, if any, from which this mesh buffer was created.
 ### Metal Buffer Properties
 - [var buffer: any MTLBuffer](./mtkmeshbuffer/buffer.md)
   The Metal buffer backing all vertex and index data.

@@ -34,6 +34,11 @@ Represent the type of TCC modification event.
 - [init(rawValue: UInt32)](./es_tcc_event_type_t/init%28rawvalue%29.md)
 ### Instance Properties
 - [var rawValue: UInt32](./es_tcc_event_type_t/rawvalue.md)
+### Enumeration Cases
+- [ES_TCC_EVENT_TYPE_CREATE](./es_tcc_event_type_create.md)
+- [ES_TCC_EVENT_TYPE_DELETE](./es_tcc_event_type_delete.md)
+- [ES_TCC_EVENT_TYPE_MODIFY](./es_tcc_event_type_modify.md)
+- [ES_TCC_EVENT_TYPE_UNKNOWN](./es_tcc_event_type_unknown.md)
 
 ## Relationships
 

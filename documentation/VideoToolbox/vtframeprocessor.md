@@ -46,6 +46,11 @@ For successful processing, the caller needs to ensure that all buffers passed to
   Asynchronously performs the video effect specified in the start session specifically for Metal.
 - [func endSession()](./vtframeprocessor/endsession%28%29.md)
   Performs all necessary tasks to end the session.
+### Instance Methods
+- [- processWithParameters:error:](./vtframeprocessor/processwithparameters_error_.md)
+  Synchronously performs the configured video effect.
+- [- processWithParameters:frameOutputHandler:](./vtframeprocessor/processwithparameters_frameoutputhandler_.md)
+  Asynchronously performs the processor effects and outputs each frame separately.
 
 ## Relationships
 

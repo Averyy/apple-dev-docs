@@ -1,0 +1,51 @@
+# kCMTagCategory_MediaType
+
+**Framework**: Core Media  
+**Kind**: case  
+**Role**: Enumeration Case
+
+A category used for tagging media type metadata.
+
+**Availability**:
+- iOS 17.0+
+- iPadOS 17.0+
+- Mac Catalyst 17.0+
+- macOS 14.0+
+- tvOS 17.0+
+- visionOS 1.0+
+- watchOS 10.0+
+
+## Declaration
+
+```c
+kCMTagCategory_MediaType
+```
+
+## See Also
+
+### Tag Category Constants
+- [kCMTagCategory_ChannelID](./kcmtagcategory_channelid.md)
+  A category used for tagging a channel ID.
+- [kCMTagCategory_MediaSubType](./kcmtagcategory_mediasubtype.md)
+  A category used for tagging media subtype metadata.
+- [kCMTagCategory_PackingType](./kcmtagcategory_packingtype.md)
+  A category used for tagging frame-packing information.
+- [kCMTagCategory_PixelFormat](./kcmtagcategory_pixelformat.md)
+  A category used for tagging pixel format information.
+- [kCMTagCategory_ProjectionType](./kcmtagcategory_projectiontype.md)
+  A category used for tagging projection surface information.
+- [kCMTagCategory_StereoView](./kcmtagcategory_stereoview.md)
+  A category used for tagging eye information for 3D video.
+- [kCMTagCategory_StereoViewInterpretation](./kcmtagcategory_stereoviewinterpretation.md)
+  A category used for tagging how to interpret stereo view metadata.
+- [kCMTagCategory_TrackID](./kcmtagcategory_trackid.md)
+  A category used for tagging a track ID.
+- [kCMTagCategory_VideoLayerID](./kcmtagcategory_videolayerid.md)
+  A category used for tagging a video layer ID.
+- [kCMTagCategory_Undefined](./kcmtagcategory_undefined.md)
+  An unknown or undefined tag category.
+
+
+---
+
+*[View on Apple Developer](https://developer.apple.com/documentation/coremedia/cmtagcategory/kcmtagcategory_mediatype)*

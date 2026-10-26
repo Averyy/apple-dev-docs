@@ -41,6 +41,22 @@ Use MapKit to give your app a sense of place with maps and location information.
 ### Structures
 - [struct AnyMapContent](./anymapcontent.md)
   A type-erased map content.
+### Variables
+- [MKPointOfInterestCategoryAirportTerminal](./mkpointofinterestcategory/airportterminal.md)
+- [MKPointOfInterestCategoryAutomotiveDealership](./mkpointofinterestcategory/automotivedealership.md)
+- [MKPointOfInterestCategoryCommercialVehicleDealership](./mkpointofinterestcategory/commercialvehicledealership.md)
+- [MKPointOfInterestCategoryInformationBooth](./mkpointofinterestcategory/informationbooth.md)
+- [MKPointOfInterestCategoryMotorbikeDealership](./mkpointofinterestcategory/motorbikedealership.md)
+- [MKPointOfInterestCategoryPicnicArea](./mkpointofinterestcategory/picnicarea.md)
+- [MKPointOfInterestCategoryRangerStation](./mkpointofinterestcategory/rangerstation.md)
+- [MKPointOfInterestCategoryRestArea](./mkpointofinterestcategory/restarea.md)
+- [MKPointOfInterestCategoryScenicView](./mkpointofinterestcategory/scenicview.md)
+- [MKPointOfInterestCategoryTicketOffice](./mkpointofinterestcategory/ticketoffice.md)
+- [MKPointOfInterestCategoryVisitorCenter](./mkpointofinterestcategory/visitorcenter.md)
+### Macros
+- [MK_CLASS_AVAILABLE](./mk_class_available.md)
+- [MK_EXTERN](./mk_extern.md)
+- [MK_SUPPORTS_VIEW_CLASSES](./mk_supports_view_classes.md)
 
 ## See Also
 

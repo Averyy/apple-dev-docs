@@ -32,6 +32,8 @@ enum UIUserNotificationType : NSUInteger;
   The app plays a sound.
 - [static var alert: UIUserNotificationType](./uiusernotificationtype/alert.md)
   The app posts an alert.
+- [UIUserNotificationTypeNone](./uiusernotificationtype/uiusernotificationtypenone.md)
+  The app does not present any UI upon receiving a notification.
 ### Initializers
 - [init(rawValue: UInt)](./uiusernotificationtype/init%28rawvalue%29.md)
   Creates a notification type with the specified raw value.

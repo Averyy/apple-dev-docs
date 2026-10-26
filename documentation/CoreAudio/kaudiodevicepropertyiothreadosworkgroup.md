@@ -38,6 +38,8 @@ kAudioDevicePropertyIOThreadOSWorkgroup
 - [var kAudioAggregateDeviceUIDKey: String](./kaudioaggregatedeviceuidkey.md)
 - [var kAudioDevicePropertyProcessMute: AudioObjectPropertySelector](./kaudiodevicepropertyprocessmute.md)
 - [var kAudioDevicePropertyVoiceActivityDetectionEnable: AudioObjectPropertySelector](./kaudiodevicepropertyvoiceactivitydetectionenable.md)
+- [AudioHardwareTapping_h](./audiohardwaretapping_h.md)
+- [CATapDescription_h](./catapdescription_h.md)
 
 
 ---

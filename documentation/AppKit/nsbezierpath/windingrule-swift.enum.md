@@ -30,6 +30,10 @@ For more information, see [`NSBezierPath`](../nsbezierpath.md).
   Specifies the non-zero winding rule.
 - [NSBezierPath.WindingRule.evenOdd](./windingrule-swift.enum/evenodd.md)
   Specifies the even-odd winding rule.
+- [NSNonZeroWindingRule](../nsnonzerowindingrule.md)
+  Specifies the non-zero winding rule.
+- [NSEvenOddWindingRule](../nsevenoddwindingrule.md)
+  Specifies the even-odd winding rule.
 ### Initializers
 - [init?(rawValue: UInt)](./windingrule-swift.enum/init%28rawvalue%29.md)
 

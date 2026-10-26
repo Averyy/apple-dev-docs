@@ -30,13 +30,13 @@ class PHLivePhoto
 
 #### Overview
 
-In iOS and tvOS, you can use this class to reference Live Photos from the user’s library (fetched with the [`PHAsset`](./phasset.md) and [`PHImageManager`](./phimagemanager.md) classes), to load displayable Live Photo objects from data obtained elsewhere (such as pictures shared through a social network), and to assign Live Photos to [`PHLivePhotoView`](https://developer.apple.com/documentation/photosui/phlivephotoview) objects for display.
+In iOS and tvOS, you can use this class to reference Live Photos from the user’s library (fetched with the [`PHAsset`](./phasset.md) and [`PHImageManager`](./phimagemanager.md) classes), to load displayable Live Photo objects from data obtained elsewhere (such as pictures shared through a social network), and to assign Live Photos to [`PHLivePhotoView`](../PhotosUI/phlivephotoview.md) objects for display.
 
 In iOS, tvOS, and macOS, you can use this class to display edits in progress for Live Photo content in a photo editing extension.
 
 > **Note**:  For design guidance, see Human Interface Guidelines > [Live Photos](https://developer.apple.com/design/human-interface-guidelines/live-photos).
 
-The [`PHLivePhoto`](./phlivephoto.md) class serves in much the same role for Live Photos as the [`UIImage`](../UIKit/uiimage.md) or [`NSImage`](../AppKit/nsimage.md) class serves for static images. A [`UIImage`](../UIKit/uiimage.md) or [`NSImage`](../AppKit/nsimage.md) object represents not the data file an image is loaded from, but instead a ready-to-use image that can be displayed in a view—similarly, a [`PHLivePhoto`](./phlivephoto.md) object represents a Live Photo ready to display with motion and sound using a [`PHLivePhotoView`](https://developer.apple.com/documentation/photosui/phlivephotoview) object, not an entry in the Photos library or the data resources that constitute a Live Photo. (To work with Live Photos as elements of the Photos library, use the [`PHAsset`](./phasset.md) class. To work with the data files that constitute a Live Photo, use the [`PHAssetResource`](./phassetresource.md) class.)
+The [`PHLivePhoto`](./phlivephoto.md) class serves in much the same role for Live Photos as the [`UIImage`](../UIKit/uiimage.md) or [`NSImage`](../AppKit/nsimage.md) class serves for static images. A [`UIImage`](../UIKit/uiimage.md) or [`NSImage`](../AppKit/nsimage.md) object represents not the data file an image is loaded from, but instead a ready-to-use image that can be displayed in a view—similarly, a [`PHLivePhoto`](./phlivephoto.md) object represents a Live Photo ready to display with motion and sound using a [`PHLivePhotoView`](../PhotosUI/phlivephotoview.md) object, not an entry in the Photos library or the data resources that constitute a Live Photo. (To work with Live Photos as elements of the Photos library, use the [`PHAsset`](./phasset.md) class. To work with the data files that constitute a Live Photo, use the [`PHAssetResource`](./phassetresource.md) class.)
 
 > 💡 **Tip**:  To display Live Photo content on the web, use the [LivePhotosKit JS](../LivePhotosKitJS/LivePhotosKitJS.md) framework.
 

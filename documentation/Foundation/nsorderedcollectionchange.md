@@ -36,6 +36,10 @@ An ordered collection change represents changes by adding, removing, or moving o
   Creates a change object that represents inserting or removing an object from an ordered collection at a specific index.
 - [init(object: Any?, type: NSCollectionChangeType, index: Int, associatedIndex: Int)](./nsorderedcollectionchange/init%28object,type,index,associatedindex%29.md)
   Creates a change object that represents inserting, removing, or moving an object from an ordered collection at a specific index.
+- [+ changeWithObject:type:index:](./nsorderedcollectionchange/changewithobject_type_index_.md)
+  Creates an change object that represents inserting or removing an object from an ordered collection at a specific index.
+- [+ changeWithObject:type:index:associatedIndex:](./nsorderedcollectionchange/changewithobject_type_index_associatedindex_.md)
+  Creates an change object that represents inserting or removing an object from an ordered collection at a specific index, matched with an associated location that infers a move within the collection.
 ### Accessing the Change
 - [var changeType: NSCollectionChangeType](./nsorderedcollectionchange/changetype.md)
   The type of change.

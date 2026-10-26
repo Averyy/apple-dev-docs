@@ -78,6 +78,8 @@ NSArray *geometryNodes = [sceneSource entriesPassingTest:^BOOL(id entry, NSStrin
   Returns the identifiers for all objects in the scene source of the specified class.
 - [func entryWithIdentifier<T>(String, withClass: T.Type) -> T?](./entrywithidentifier%28_,withclass%29.md)
   Loads and returns a specific object in the scene source.
+- [- entryWithIdentifier:withClass:](./entrywithidentifier_withclass_.md)
+  Loads and returns a specific object in the scene source.
 
 
 ---

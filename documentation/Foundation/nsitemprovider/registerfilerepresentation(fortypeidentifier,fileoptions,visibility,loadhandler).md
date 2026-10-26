@@ -38,6 +38,8 @@ To offer a representation backed by a file to open in place, set the fileOptions
 ### Registering files
 - [func registerFileRepresentation(for: UTType, visibility: NSItemProviderRepresentationVisibility, openInPlace: Bool, loadHandler: ((URL?, Bool, (any Error)?) -> Void) -> Progress?)](./registerfilerepresentation%28for,visibility,openinplace,loadhandler%29.md)
   Registers a file-backed representation for an item with item visibility, an open-in-place option, and a load handler.
+- [- registerFileRepresentationForContentType:visibility:openInPlace:loadHandler:](./registerfilerepresentationforcontenttype_visibility_openinplace_loadhandler_.md)
+  Registers a file-backed representation for an item with item visibility, an open-in-place option, and a load handler.
 
 
 ---

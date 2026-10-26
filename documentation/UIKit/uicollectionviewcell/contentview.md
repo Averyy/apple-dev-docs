@@ -34,6 +34,8 @@ When configuring a cell, you add any custom views representing your cell’s con
   The current content configuration of the cell.
 - [var automaticallyUpdatesContentConfiguration: Bool](./automaticallyupdatescontentconfiguration.md)
   A Boolean value that determines whether the cell automatically updates its content configuration when its state changes.
+- [contentConfiguration](./contentconfiguration-1lcqh.md)
+  The current content configuration of the cell.
 
 
 ---

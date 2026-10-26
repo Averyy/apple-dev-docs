@@ -42,6 +42,10 @@ Use this method when you can resolve the parameter to a single value but want th
 ### Creating a Resolution Result Object
 - [class func success(with: INBillType) -> Self](./success%28with%29.md)
   Creates an object whose resolution involves the successful matching of the specified attribute.
+- [+ successWithResolvedValue:](./successwithresolvedvalue_.md)
+  Creates an object whose resolution involves the successful matching of the specified attribute.
+- [+ confirmationRequiredWithValueToConfirm:](./confirmationrequiredwithvaluetoconfirm_.md)
+  Creates an object whose resolution requires that the user must confirm the value before proceeding.
 
 
 ---

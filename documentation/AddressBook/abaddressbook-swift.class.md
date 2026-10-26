@@ -30,6 +30,8 @@ The `ABAddressBook` class is “toll-free bridged” with its procedural C opaqu
 ### Creating and Initializing an Address Book
 - [class func shared() -> ABAddressBook!](./abaddressbook-swift.class/shared%28%29.md)
   Returns the unique shared instance of `ABAddressBook`, or `nil` if the Address Book database can’t be initialized.
+- [+ addressBook](./abaddressbook-swift.class/addressbook.md)
+  Returns a new instance of `ABAddressBook`, or `nil` if the Address Book database can’t be initialized.
 ### Retrieving Groups and People
 - [func groups() -> [Any]!](./abaddressbook-swift.class/groups%28%29.md)
   Returns an array of all the groups in the Address Book database.
@@ -82,6 +84,10 @@ The `ABAddressBook` class is “toll-free bridged” with its procedural C opaqu
 - [static let abDatabaseChanged: NSNotification.Name](../Foundation/nsnotification/name-swift.struct/abdatabasechanged.md)
   Posted when this process has changed the Address Book database.
 - [static let abDatabaseChangedExternally: NSNotification.Name](../Foundation/nsnotification/name-swift.struct/abdatabasechangedexternally.md)
+  Posted when a process other than the current one has changed the Address Book database.
+- [kABDatabaseChangedNotification](./kabdatabasechangednotification.md)
+  Posted when this process has changed the Address Book database.
+- [kABDatabaseChangedExternallyNotification](./kabdatabasechangedexternallynotification.md)
   Posted when a process other than the current one has changed the Address Book database.
 
 ## Relationships

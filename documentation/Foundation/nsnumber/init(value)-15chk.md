@@ -60,6 +60,10 @@ An `NSNumber` object containing `value`, treating it as a `double`.
   Returns an `NSNumber` object initialized to contain a given value, treated as an `unsigned long long`.
 - [init(value: UInt16)](./init%28value%29-87y9m.md)
   Returns an `NSNumber` object initialized to contain a given value, treated as an `unsigned short`.
+- [- initWithLong:](./initwithlong_.md)
+  Returns an `NSNumber` object initialized to contain a given value, treated as a signed `long`.
+- [- initWithUnsignedLong:](./initwithunsignedlong_.md)
+  Returns an `NSNumber` object initialized to contain a given value, treated as an `unsigned long`.
 
 
 ---

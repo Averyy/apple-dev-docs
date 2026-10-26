@@ -40,6 +40,8 @@ Use the `GCDevicePhysicalInput` [`nextInputState()`](./gcdevicephysicalinput/nex
 - [func changedElements() -> (some Sequence<any GCPhysicalInputElement>)?
 ](./gcdevicephysicalinputstatediff/changedelements%28%29-2zzwm.md)
   Returns the elements that changed since the previous input state.
+- [- changedElements](./gcdevicephysicalinputstatediff/changedelements.md)
+  Returns the elements that changed since the previous input state.
 
 ## Relationships
 

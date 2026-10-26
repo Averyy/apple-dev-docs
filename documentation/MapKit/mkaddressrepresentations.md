@@ -39,6 +39,8 @@ Use this class to obtain formatted address strings for a place’s full address,
 - [var regionName: String?](./mkaddressrepresentations/regionname.md)
   The region name, such as “United States”.
 - [var region: Locale.Region?](./mkaddressrepresentations/region.md)
+- [regionCode](./mkaddressrepresentations/regioncode.md)
+  The region’s ISO 3166-2 region code, such as “US”.
 ### Getting a full address and city name
 - [func fullAddress(includingRegion: Bool, singleLine: Bool) -> String?](./mkaddressrepresentations/fulladdress%28includingregion,singleline%29.md)
   Returns the the location’s full address, optionally including the country or on a single link without line breaks.

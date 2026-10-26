@@ -29,6 +29,7 @@ enum MPMovieLoadState : NSUInteger;
 - [static var playable: MPMovieLoadState](./mpmovieloadstate/playable.md)
 - [static var playthroughOK: MPMovieLoadState](./mpmovieloadstate/playthroughok.md)
 - [static var stalled: MPMovieLoadState](./mpmovieloadstate/stalled.md)
+- [MPMovieLoadStateUnknown](./mpmovieloadstate/mpmovieloadstateunknown.md)
 ### Initializers
 - [init(rawValue: UInt)](./mpmovieloadstate/init%28rawvalue%29.md)
   Creates a new instance with the specified raw value.

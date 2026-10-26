@@ -37,6 +37,10 @@ class CKShareRequestAccessOperation
   The closure to execute after CloudKit processes each share access request.
 - [var shareURLs: [URL]?](./cksharerequestaccessoperation/shareurls.md)
   The URLs of the shares to request access to.
+- [perShareAccessRequestCompletionBlock](./cksharerequestaccessoperation/pershareaccessrequestcompletionblock.md)
+  The closure to execute when CloudKit processes a share access request.
+- [shareRequestAccessCompletionBlock](./cksharerequestaccessoperation/sharerequestaccesscompletionblock.md)
+  The closure to execute after CloudKit processes all share access requests.
 
 ## Relationships
 

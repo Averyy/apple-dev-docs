@@ -65,6 +65,8 @@ func filter(using p: NSPredicate)
   Replaces the objects in the receiving mutable ordered set at the range with the specified number of objects from a given C array.
 - [func setObject(Any, at: Int)](./setobject%28_,at%29.md)
   Appends or replaces the object at the specified index.
+- [- setObject:atIndexedSubscript:](./setobject_atindexedsubscript_.md)
+  Replaces the given object at the specified index of the mutable ordered set.
 
 
 ---

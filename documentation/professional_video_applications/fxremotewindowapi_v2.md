@@ -33,9 +33,9 @@ protocol FxRemoteWindowAPI_v2 : FxRemoteWindowAPI
 ## See Also
 
 ### User interface
-- [Adding parameters to plug-ins](https://developer.apple.com/documentation/professional-video-applications/adding-parameters-to-plug-ins)
+- [Adding parameters to plug-ins](../Professional-Video-Applications/adding-parameters-to-plug-ins.md)
   Create standard and custom user-facing parameters for your plug-in that will appear in the inspector.
-- [Adding onscreen controls to plug-ins](https://developer.apple.com/documentation/professional-video-applications/adding-onscreen-controls-to-plug-ins)
+- [Adding onscreen controls to plug-ins](../Professional-Video-Applications/adding-onscreen-controls-to-plug-ins.md)
   Simplify user interaction by using onscreen controls for your FxPlug plug-in.
 - [protocol FxPathAPI_v3](./fxpathapi_v3.md)
   An API that defines the methods to retrieve information about paths, shapes, and masks the user has drawn on an object.

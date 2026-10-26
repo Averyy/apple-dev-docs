@@ -60,6 +60,9 @@ class VTMotionBlurConfiguration
   A Boolean value that indicates whether the processor is supported.
 - [var frameSupportedPixelFormats: [NSNumber]](./vtmotionblurconfiguration/framesupportedpixelformats-1n4uq.md)
   A list of source frame supported pixel formats for the current configuration.
+### Instance Properties
+- [frameSupportedPixelFormats](./vtmotionblurconfiguration/framesupportedpixelformats-5a1iv.md)
+  Available supported pixel formats for source frames for current configuration.
 
 ## Relationships
 

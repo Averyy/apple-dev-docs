@@ -76,6 +76,16 @@ For backward compatibility on Mach, `-[NSPort allocWithZone:]` returns an instan
   Type for the platform-specific native socket handle.
 ### Initializers
 - [init?(coder: NSCoder)](./port/init%28coder%29.md)
+### Creating instances
+- [allocWithZone:](./nsport-allocwithzone.md)
+  Returns an instance of the `NSMachPort` class.
+- [+ port](./nsport/port.md)
+  Creates and returns a new `NSPort` object capable of both sending and receiving messages.
+### Creating connections
+- [- addConnection:toRunLoop:forMode:](./nsport/addconnection_torunloop_formode_.md)
+  Adds the receiver to the list of ports monitored by a given run loop for the given input mode.
+- [- removeConnection:fromRunLoop:forMode:](./nsport/removeconnection_fromrunloop_formode_.md)
+  Removes the receiver from the list of ports monitored by `runLoop` in the given input mode, `mode`.
 
 ## Relationships
 

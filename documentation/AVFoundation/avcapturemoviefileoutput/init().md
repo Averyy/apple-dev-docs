@@ -23,6 +23,12 @@ init()
 - (instancetype) init;
 ```
 
+## See Also
+
+### Creating a movie file output
+- [+ new](./new.md)
+  Returns a new movie file output object.
+
 
 ---
 

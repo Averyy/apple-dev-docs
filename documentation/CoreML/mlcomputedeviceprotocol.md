@@ -45,6 +45,8 @@ protocol MLComputeDeviceProtocol : NSObjectProtocol
   An object that represents a GPU compute device.
 - [class MLNeuralEngineComputeDevice](./mlneuralenginecomputedevice.md)
   An object that represents a Neural Engine compute device.
+- [MLAllComputeDevices](./mlallcomputedevices.md)
+  Returns an array that contains all of the compute devices that are accessible.
 
 
 ---

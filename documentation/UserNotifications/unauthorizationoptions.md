@@ -49,6 +49,9 @@ enum UNAuthorizationOptions : NSUInteger;
 - [static var announcement: UNAuthorizationOptions](./unauthorizationoptions/announcement.md)
   The ability for Siri to automatically read out messages over AirPods.
 - [static var timeSensitive: UNAuthorizationOptions](./unauthorizationoptions/timesensitive.md)
+### No Authorization
+- [UNAuthorizationOptionNone](./unauthorizationoptionnone.md)
+  No authorization options.
 
 ## Relationships
 

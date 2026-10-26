@@ -33,6 +33,12 @@ The size of the receiver is set using the bounding box information specified in 
 
 - `epsData`: The EPS data representing the desired image.
 
+## See Also
+
+### Creating Representations of Images from EPS Data
+- [+ imageRepWithData:](./imagerepwithdata_.md)
+  Creates and returns a representation of an image initialized with the specified EPS data.
+
 
 ---
 

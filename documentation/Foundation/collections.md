@@ -14,11 +14,29 @@ Use arrays, dictionaries, sets, and specialized collections to store and iterate
   A collection whose elements are key-value pairs.
 - [struct Set](../Swift/set.md)
   An unordered collection of unique elements.
+- [NSArray](./nsarray.md)
+  A static ordered collection of objects.
+- [NSMutableArray](./nsmutablearray.md)
+  A dynamic ordered collection of objects.
+- [NSDictionary](./nsdictionary.md)
+  A static collection of objects associated with unique keys.
+- [NSMutableDictionary](./nsmutabledictionary.md)
+  A dynamic collection of objects associated with unique keys.
+- [NSSet](./nsset.md)
+  A static, unordered collection of unique objects.
+- [NSMutableSet](./nsmutableset.md)
+  A dynamic unordered collection of unique objects.
 ### Indexes
 - [struct IndexPath](./indexpath.md)
   A list of indexes that together represent the path to a specific location in a tree of nested arrays.
 - [struct IndexSet](./indexset.md)
   A collection of unique integer values that represent the indexes of elements in another collection.
+- [NSIndexPath](./nsindexpath.md)
+  A list of indexes that together represent the path to a specific location in a tree of nested arrays.
+- [NSIndexSet](./nsindexset.md)
+  An immutable collection of unique integer values that represent indexes in another collection.
+- [NSMutableIndexSet](./nsmutableindexset.md)
+  A mutable collection of unique integer values that represent indexes in another collection.
 ### Specialized Sets
 - [class NSCountedSet](./nscountedset.md)
   A mutable, unordered collection of distinct objects that may appear more than once in the collection.

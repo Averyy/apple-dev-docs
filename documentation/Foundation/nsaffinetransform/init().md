@@ -25,6 +25,8 @@ init()
 ### Creating an Affine Transform
 - [convenience init(transform: NSAffineTransform)](./init%28transform%29.md)
   Initializes the receiver’s matrix using another transform object.
+- [+ transform](./transform.md)
+  Creates a new affine transform initialized to the identity matrix.
 
 
 ---

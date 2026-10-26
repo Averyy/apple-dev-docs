@@ -1,0 +1,19 @@
+# kPMIOMSymbolNotFound
+
+**Framework**: Application Services  
+**Kind**: econst  
+**Role**: Enumeration Case
+
+**Availability**:
+- macOS 10.0+
+
+## Declaration
+
+```c
+kPMIOMSymbolNotFound = -9661
+```
+
+
+---
+
+*[View on Apple Developer](https://developer.apple.com/documentation/applicationservices/1570866-anonymous/kpmiomsymbolnotfound)*

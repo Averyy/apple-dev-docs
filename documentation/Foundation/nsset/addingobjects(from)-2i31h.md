@@ -44,6 +44,15 @@ A new set formed by adding the objects in `other` to the receiving set.
   Returns a new set formed by adding a given object to the receiving set.
 - [func addingObjects(from: [Any]) -> Set<AnyHashable>](./addingobjects%28from%29-544m9.md)
   Returns a new set formed by adding the objects in a given array to the receiving set.
+- [+ setWithSet:](./setwithset_.md)
+  Creates and returns a set containing the objects from another set.
+### Related Documentation
+- [+ setWithArray:](./setwitharray_.md)
+  Creates and returns a set containing a uniqued collection of the objects contained in a given array.
+- [+ set](./set.md)
+  Creates and returns an empty set.
+- [+ setWithObjects:](./setwithobjects_.md)
+  Creates and returns a set containing the objects in a given argument list.
 
 
 ---

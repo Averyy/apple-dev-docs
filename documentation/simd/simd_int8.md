@@ -37,6 +37,8 @@ typedef int __attribute__((ext_vector_type(8))) simd_int8;
   Returns a new vector from the specified three-element vector, and other elements undefined.
 - [func simd_make_int8_undef(simd_int4) -> simd_int8](./simd_make_int8_undef%28_%29-5rem2.md)
   Returns a new vector from the specified four-element vector, and other elements undefined.
+- [vector8](./vector8-5snjo.md)
+  Returns a new vector from the specified vectors.
 ### Functions to Create Eight-Element Vectors From Scalar Values
 - [func simd_make_int8(Int32) -> simd_int8](./simd_make_int8%28_%29-9srg8.md)
   Returns a new vector with the first element set to a scalar value, and other elements set to zero.
@@ -68,6 +70,51 @@ typedef int __attribute__((ext_vector_type(8))) simd_int8;
   Returns a vector that contains elements from either the first or second parameter, based on the corresponding element in the third parameter.
 ### Alternative Type Alias
 - [typealias vector_int8](./vector_int8.md)
+### Functions to Create Eight-Element Vectors From Vectors of Other Types
+- [simd_int](./simd_int-nskx.md)
+  Returns a new vector from the specified vector of 8-bit, signed integer elements.
+- [simd_int](./simd_int-nik1.md)
+  Returns a new vector from the specified vector of 8-bit, unsigned integer elements.
+- [simd_int](./simd_int-nxm9.md)
+  Returns a new vector from the specified vector of 16-bit, signed integer elements.
+- [simd_int](./simd_int-nnht.md)
+  Returns a new vector from the specified vector of 16-bit, unsigned integer elements.
+- [simd_int](./simd_int-npcx.md)
+  Returns a new vector from the specified vector of 32-bit, signed integer elements.
+- [simd_int](./simd_int-nfj5.md)
+  Returns a new vector from the specified vector of 32-bit, unsigned integer elements.
+- [simd_int](./simd_int-nojf.md)
+  Returns a new vector from the specified vector of 64-bit, signed integer elements.
+- [simd_int](./simd_int-neij.md)
+  Returns a new vector from the specified vector of 64-bit, unsigned integer elements.
+- [simd_int](./simd_int-nhpj.md)
+  Returns a new vector from the specified vector of 32-bit, floating-point elements.
+- [simd_int](./simd_int-ngyj.md)
+  Returns a new vector from the specified vector of 64-bit, floating-point elements.
+### Functions to Perform Saturating Conversion From Vectors of Other Types
+- [simd_int_sat](./simd_int_sat-7dttd.md)
+  Returns a new vector from the specified vector of 8-bit, signed integer elements.
+- [simd_int_sat](./simd_int_sat-7e41d.md)
+  Returns a new vector from the specified vector of 8-bit, unsigned integer elements.
+- [simd_int_sat](./simd_int_sat-7dovl.md)
+  Returns a new vector from the specified vector of 16-bit, signed integer elements.
+- [simd_int_sat](./simd_int_sat-7dysx.md)
+  Returns a new vector from the specified vector of 16-bit, unsigned integer elements.
+- [simd_int_sat](./simd_int_sat-7dvvt.md)
+  Returns a new vector from the specified vector of 32-bit, signed integer elements.
+- [simd_int_sat](./simd_int_sat-7e5pl.md)
+  Returns a new vector from the specified vector of 32-bit, unsigned integer elements.
+- [simd_int_sat](./simd_int_sat-7dubn.md)
+  Returns a new vector from the specified vector of 64-bit, signed integer elements.
+- [simd_int_sat](./simd_int_sat-7e43n.md)
+  Returns a new vector from the specified vector of 64-bit, unsigned integer elements.
+- [simd_int_sat](./simd_int_sat-7e2fr.md)
+  Returns a new vector from the specified vector of 32-bit, floating-point elements.
+- [simd_int_sat](./simd_int_sat-7e1v7.md)
+  Returns a new vector from the specified vector of 64-bit, floating-point elements.
+### Functions to Perform Round-Half-to-Even Conversion From Single-Precision Vectors
+- [simd_int_rte](./simd_int_rte-7ziwq.md)
+  Returns a new vector from the specified eight-element vector.
 
 ## See Also
 

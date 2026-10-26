@@ -38,6 +38,8 @@ An initialized [`SK3DNode`](../sk3dnode.md) object.
 ### Creating 3D Nodes
 - [init?(coder: NSCoder)](./init%28coder%29.md)
   Tells you when to initialize a 3D node that has been unarchived.
+- [+ nodeWithViewportSize:](./nodewithviewportsize_.md)
+  Creates and initializes a new 3D node.
 
 
 ---

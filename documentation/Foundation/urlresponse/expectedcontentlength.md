@@ -42,6 +42,8 @@ Some protocol implementations report the content length as part of the response,
   The name of the text encoding provided by the response’s originating source.
 - [var url: URL?](./url.md)
   The URL for the response.
+- [NSURLResponseUnknownLength](../nsurlresponseunknownlength.md)
+  The response length cannot be determined in advance of receiving the data from the server.
 
 
 ---

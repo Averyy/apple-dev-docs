@@ -46,6 +46,8 @@ The acceleration structures you build with this option can affect their performa
   An option that instructs Metal to prioritize building an acceleration structure with better intersection performance.
 - [static var minimizeMemory: MTLAccelerationStructureUsage](./minimizememory.md)
   An option that instructs Metal to prioritize building an acceleration structure that needs less memory.
+- [MTLAccelerationStructureUsageNone](./mtlaccelerationstructureusagenone.md)
+  A sentinel value the represents an empty set of options, which is the default behavior for building new acceleration structures.
 
 
 ---

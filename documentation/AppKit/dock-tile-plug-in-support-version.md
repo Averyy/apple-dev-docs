@@ -5,6 +5,12 @@
 
 The version of the AppKit framework containing support for dock tile plug-ins.
 
+## Topics
+
+### Constants
+- [NSAppKitVersionNumberWithDockTilePlugInSupport](./nsappkitversionnumberwithdocktilepluginsupport.md)
+  The specific version of the AppKit framework that introduced support for dock tile plug-ins.
+
 
 ---
 

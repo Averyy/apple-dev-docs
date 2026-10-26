@@ -36,6 +36,10 @@ Returns [`true`](../../../Swift/true.md) if the specified window `depth` is plan
   Returns the number of color components in the specified color space.
 - [func canRepresent(NSDisplayGamut) -> Bool](../canrepresent%28_%29.md)
   A Boolean value that indicates if the window and its screen use a color space that can represent the specified display gamut.
+- [NSAvailableWindowDepths](../../nsavailablewindowdepths.md)
+  Returns the available window depth values.
+- [NSBestDepth](../../nsbestdepth.md)
+  Attempts to return a window depth adequate for the specified parameters.
 
 
 ---

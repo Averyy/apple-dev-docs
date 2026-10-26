@@ -92,6 +92,8 @@ class BADownload
 - [protocol BADownloaderExtensionConfiguration](./badownloaderextensionconfiguration.md)
 - [class BAURLDownload](./baurldownload.md)
   An object that represents a remote asset to download.
+- [BADownloaderExtension](./badownloaderextension-zuvm.md)
+  An interface for reacting to app life-cycle events and processing concluded asset downloads while your app isn’t running.
 
 
 ---

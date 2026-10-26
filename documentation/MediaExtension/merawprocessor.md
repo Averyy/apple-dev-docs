@@ -70,6 +70,11 @@ If the processor’s internal processing queue is full, and it cannot process mo
   Include an entitlement to indicate your extension is a MediaExtension RAW processor.
 ### Instance Properties
 - [var metadataForSidecarFile: Data](./merawprocessor/metadataforsidecarfile.md)
+### Notifications
+- [MERAWProcessorReadyForMoreMediaDataDidChangeNotification](./merawprocessorreadyformoremediadatadidchangenotification.md)
+  A notification that indicates a change to the object’s readiness to process additional media data.
+- [MERAWProcessorValuesDidChangeNotification](./merawprocessorvaluesdidchangenotification.md)
+  A notification that indicates a change to the object’s set of available processing parameters.
 
 ## Relationships
 

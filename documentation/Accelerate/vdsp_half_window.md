@@ -42,6 +42,18 @@ vDSP_HALF_WINDOW
   Specifies a denormalized Hann window.
 - [var vDSP_HANN_NORM: Int](./vdsp_hann_norm.md)
   Specifies a normalized Hann window
+- [vDSP_blkman_window](./vdsp_blkman_window.md)
+  Creates a single-precision Blackman window.
+- [vDSP_blkman_windowD](./vdsp_blkman_windowd.md)
+  Creates a double-precision Blackman window.
+- [vDSP_hamm_window](./vdsp_hamm_window.md)
+  Creates a single-precision Hamming window.
+- [vDSP_hamm_windowD](./vdsp_hamm_windowd.md)
+  Creates a double-precision Hamming window.
+- [vDSP_hann_window](./vdsp_hann_window.md)
+  Creates a single-precision Hann window.
+- [vDSP_hann_windowD](./vdsp_hann_windowd.md)
+  Creates a double-precision Hann window.
 
 
 ---

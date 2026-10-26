@@ -31,6 +31,7 @@ enum MTROnOffDelayedAllOffEffectVariant : uint8_t;
 - [MTROnOffDelayedAllOffEffectVariant.noFade](./mtronoffdelayedalloffeffectvariant/nofade.md)
 ### Type Properties
 - [static var fadeToOffIn0p8Seconds: MTROnOffDelayedAllOffEffectVariant](./mtronoffdelayedalloffeffectvariant/fadetooffin0p8seconds.md)
+- [MTROnOffDelayedAllOffEffectVariant50PercentDimDownIn0p8SecondsThenFadeToOffIn12Seconds](./mtronoffdelayedalloffeffectvariant/mtronoffdelayedalloffeffectvariant50percentdimdownin0p8secondsthenfadetooffin12seconds.md)
 ### Initializers
 - [init?(rawValue: UInt8)](./mtronoffdelayedalloffeffectvariant/init%28rawvalue%29.md)
 

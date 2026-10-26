@@ -37,6 +37,9 @@ This default decimal number handler rounds to the closest possible return value.
 
 ### Related Documentation
 - [Number and Value Programming Topics](https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/NumbersandValues/NumbersandValues.html#//apple_ref/doc/uid/10000038i)
+### Creating a Decimal Number Handler
+- [+ decimalNumberHandlerWithRoundingMode:scale:raiseOnExactness:raiseOnOverflow:raiseOnUnderflow:raiseOnDivideByZero:](./decimalnumberhandlerwithroundingmode_scale_raiseonexactness_raiseonoverflow_raiseonunderflow_raiseondividebyzero_.md)
+  Returns an `NSDecimalNumberHandler` object with customized behavior.
 
 
 ---

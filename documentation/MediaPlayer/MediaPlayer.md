@@ -136,6 +136,30 @@ You can’t play video media items directly using the Media Player framework. To
 - [class MPAppEntityIdentifier](./mpappentityidentifier.md)
 ### Variables
 - [let MPNowPlayingInfoPropertyAppEntityIdentifiers: String](./mpnowplayinginfopropertyappentityidentifiers.md)
+### Macros
+- [MP_API](./mp_api.md)
+- [MP_API_BEGIN](./mp_api_begin.md)
+- [MP_API_END](./mp_api_end.md)
+- [MP_COMPLETION](./mp_completion.md)
+- [MP_DEPRECATED](./mp_deprecated.md)
+- [MP_DEPRECATED_BEGIN](./mp_deprecated_begin.md)
+- [MP_DEPRECATED_END](./mp_deprecated_end.md)
+- [MP_DEPRECATED_WITH_REPLACEMENT](./mp_deprecated_with_replacement.md)
+- [MP_DEPRECATED_WITH_REPLACEMENT_BEGIN](./mp_deprecated_with_replacement_begin.md)
+- [MP_DEPRECATED_WITH_REPLACEMENT_END](./mp_deprecated_with_replacement_end.md)
+- [MP_EXTERN](./mp_extern.md)
+- [MP_FALLTHROUGH](./mp_fallthrough.md)
+- [MP_FINAL_CLASS](./mp_final_class.md)
+- [MP_HAS](./mp_has.md)
+- [MP_HAS_HEADER](./mp_has_header.md)
+- [MP_INIT_UNAVAILABLE](./mp_init_unavailable.md)
+- [MP_OVERLOAD](./mp_overload.md)
+- [MP_SWIFT_ERROR_NULLABLE_RESULT](./mp_swift_error_nullable_result.md)
+- [MP_SWIFT_MAIN_ACTOR](./mp_swift_main_actor.md)
+- [MP_TYPE_PROTOCOL](./mp_type_protocol.md)
+- [MP_UNAVAILABLE](./mp_unavailable.md)
+- [MP_UNAVAILABLE_BEGIN](./mp_unavailable_begin.md)
+- [MP_UNAVAILABLE_END](./mp_unavailable_end.md)
 
 
 ---

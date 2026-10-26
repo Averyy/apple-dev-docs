@@ -28,6 +28,7 @@ class IOUSBHostCIControllerStateMachine
 - [func inspectCommand(UnsafePointer<IOUSBHostCIMessage>) throws](./iousbhostcicontrollerstatemachine/inspectcommand%28_%29.md)
 - [func respond(toCommand: UnsafePointer<IOUSBHostCIMessage>, status: IOUSBHostCIMessageStatus) throws](./iousbhostcicontrollerstatemachine/respond%28tocommand,status%29.md)
 - [func respond(toCommand: UnsafePointer<IOUSBHostCIMessage>, status: IOUSBHostCIMessageStatus, frame: UInt64, timestamp: UInt64) throws](./iousbhostcicontrollerstatemachine/respond%28tocommand,status,frame,timestamp%29.md)
+- [- initWithInterface:error:](./iousbhostcicontrollerstatemachine/initwithinterface_error_.md)
 
 ## Relationships
 

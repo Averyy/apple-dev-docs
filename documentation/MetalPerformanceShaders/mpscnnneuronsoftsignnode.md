@@ -28,6 +28,8 @@ class MPSCNNNeuronSoftSignNode
 
 ### Initializers
 - [init(source: MPSNNImageNode)](./mpscnnneuronsoftsignnode/init%28source%29.md)
+### Type Methods
+- [+ nodeWithSource:](./mpscnnneuronsoftsignnode/nodewithsource_.md)
 
 ## Relationships
 

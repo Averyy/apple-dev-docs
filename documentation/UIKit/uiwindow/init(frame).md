@@ -27,6 +27,12 @@ init(frame: CGRect)
 
 ### Deprecated
 - [convenience init()](./init%28%29.md)
+- [UIKeyboardCenterBeginUserInfoKey](../uikeyboardcenterbeginuserinfokey.md)
+  A user info key to retrieve the center point of the keyboard before its animation begins.
+- [UIKeyboardCenterEndUserInfoKey](../uikeyboardcenterenduserinfokey.md)
+  A user info key to retrieve the center point of the keyboard after its animation completes.
+- [UIKeyboardBoundsUserInfoKey](../uikeyboardboundsuserinfokey.md)
+  A user info key to retrieve the bounds of the keyboard.
 
 
 ---

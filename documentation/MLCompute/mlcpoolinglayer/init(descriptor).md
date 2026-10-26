@@ -34,6 +34,8 @@ convenience init(descriptor: MLCPoolingDescriptor)
   A configuration object you use to create a pooling layer.
 - [enum MLCPoolingType](../mlcpoolingtype-wb8j.md)
   A pooling function type for a pooling layer.
+- [MLCPoolingType](../mlcpoolingtype-8hrit.md)
+  A pooling function type for a pooling layer.
 
 
 ---

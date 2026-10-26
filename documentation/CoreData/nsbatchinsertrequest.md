@@ -42,6 +42,8 @@ class NSBatchInsertRequest
   Creates a batch-insertion request for a named managed entity, and provides an array of data dictionaries for insertion.
 - [convenience init()](./nsbatchinsertrequest/init%28%29.md)
   Creates a Core Data batch-insertion request.
+- [+ batchInsertRequestWithEntityName:objects:](./nsbatchinsertrequest/batchinsertrequestwithentityname_objects_.md)
+  Creates a batch-insertion request for a named managed entity, and provides an array of data dictionaries for insertion.
 ### Configuring a Request
 - [var dictionaryHandler: ((NSMutableDictionary) -> Bool)?](./nsbatchinsertrequest/dictionaryhandler.md)
   A closure that provides a dictionary for your app to insert data into.

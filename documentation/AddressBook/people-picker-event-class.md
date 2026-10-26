@@ -5,6 +5,12 @@
 
 This is the People Picker event class.
 
+## Topics
+
+### Constants
+- [kEventClassABPeoplePicker](./keventclassabpeoplepicker.md)
+  The class of people-picker events.
+
 ## See Also
 
 ### Picker

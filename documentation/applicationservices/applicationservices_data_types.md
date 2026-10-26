@@ -218,6 +218,18 @@
 - [typealias VDGamRecPtr](./vdgamrecptr.md)
   Represents a type used by the Video Components API.
 - [typealias VoiceSpecPtr](./voicespecptr.md)
+- [CM2ProfileHandle](./cm2profilehandle.md)
+- [CMDeviceInfoPtr](./cmdeviceinfoptr.md)
+- [CMDeviceProfileArrayPtr](./cmdeviceprofilearrayptr.md)
+- [CMLabToLabProcPtr](./cmlabtolabprocptr.md)
+- [CMProfileMD5Ptr](./cmprofilemd5ptr.md)
+- [ColorSyncCMMRef](../ColorSync/colorsynccmm.md)
+- [ColorSyncMutableProfileRef](../ColorSync/colorsyncmutableprofile.md)
+- [ColorSyncProfileRef](../ColorSync/colorsyncprofile.md)
+- [ColorSyncTransformRef](../ColorSync/colorsynctransform.md)
+- [HIMutableShapeRef](./himutableshaperef.md)
+- [HIShapeRef](./hishaperef.md)
+- [TranslationRef](./translationref.md)
 
 
 ---

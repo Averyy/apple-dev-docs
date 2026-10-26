@@ -78,6 +78,8 @@ Create and configure a [`WKUserContentController`](./wkusercontentcontroller.md)
   Adds a data buffer that will be available to JavaScript through the `window.webkit.buffers` object.
 - [func removeBuffer(named: String, from: WKContentWorld)](./wkusercontentcontroller/removebuffer%28named,from%29.md)
   Removes a previously added data buffer from the given `WKContentWorld`.
+- [- addBuffer:name:contentWorld:](./wkusercontentcontroller/addbuffer_name_contentworld_.md)
+- [- removeBufferWithName:contentWorld:](./wkusercontentcontroller/removebufferwithname_contentworld_.md)
 
 ## Relationships
 

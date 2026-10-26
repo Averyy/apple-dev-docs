@@ -42,6 +42,10 @@ If the path is empty—that is, if it has no elements—this function returns [`
   Indicates whether or not a graphics path is empty.
 - [func isRect(UnsafeMutablePointer<CGRect>?) -> Bool](./isrect%28_%29.md)
   Indicates whether or not a graphics path represents a rectangle.
+- [CGPathEqualToPath](../cgpathequaltopath.md)
+  Indicates whether two graphics paths are equivalent.
+- [CGPathContainsPoint](../cgpathcontainspoint.md)
+  Checks whether a point is contained in a graphics path.
 
 
 ---

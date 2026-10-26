@@ -38,6 +38,10 @@ A new `AVAudioChannelLayout` object, or `nil` if `layoutTag` is [`kAudioChannelL
 ### Creating an audio channel layout
 - [init(layout: UnsafePointer<AudioChannelLayout>)](./init%28layout%29.md)
   Creates an audio channel layout object from an existing one.
+- [+ layoutWithLayout:](./layoutwithlayout_.md)
+  Creates an audio channel layout object from an existing one.
+- [+ layoutWithLayoutTag:](./layoutwithlayouttag_.md)
+  Creates an audio channel layout object from an audio channel layout tag.
 
 
 ---

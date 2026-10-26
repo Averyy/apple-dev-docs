@@ -41,6 +41,9 @@ The default value of this property is [`false`](../../Swift/false.md), which cau
   A Boolean value that indicates whether the document has unsaved changes.
 - [var isInViewingMode: Bool](./isinviewingmode.md)
   A Boolean value that indicates whether the document is in read-only mode.
+### Related Documentation
+- [- writeToFile:ofType:](./writetofile_oftype_.md)
+  Writes document data to a file.
 
 
 ---

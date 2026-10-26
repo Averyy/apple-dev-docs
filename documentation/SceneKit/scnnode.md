@@ -54,6 +54,10 @@ To improve performance, SceneKit can share attachments between multiple nodes. F
 ### Creating a Node
 - [init(geometry: SCNGeometry?)](./scnnode/init%28geometry%29.md)
   Creates and returns a node object with the specified geometry attached.
+- [+ node](./scnnode/node.md)
+  Creates and returns a node object.
+- [+ nodeWithMDLObject:](./scnnode/nodewithmdlobject_.md)
+  Creates a node from the specified Model I/O object.
 ### Managing the Node’s Transform
 - [var simdTransform: simd_float4x4](./scnnode/simdtransform.md)
   The transform applied to the node relative to its parent. Animatable.

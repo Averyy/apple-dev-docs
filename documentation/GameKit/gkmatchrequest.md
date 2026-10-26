@@ -86,6 +86,8 @@ For more information, see [Finding players using matchmaking rules](./finding-pl
   The criteria for the local player that Game Center uses to find other players when using matchmaking rules.
 - [var recipientProperties: [GKPlayer : [String : Any]]?](./gkmatchrequest/recipientproperties.md)
   The criteria for recipients of the match request that Game Center uses to find other players when using matchmaking rules.
+- [GKMatchProperties](./gkmatchproperties.md)
+  A type for game-specific properties that Game Center uses to find players when using matchmaking rules.
 ### Matching specific players
 - [var playerGroup: Int](./gkmatchrequest/playergroup.md)
   A number identifying a subset of players invited to join a match.

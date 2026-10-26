@@ -45,6 +45,8 @@ The [`Dimension`](./dimension.md) subclass is an abstract class that represents 
   Initializes a new unit with the specified symbol.
 ### Initializers
 - [init?(coder: NSCoder)](./unit/init%28coder%29.md)
+### Type Methods
+- [+ new](./nsunit/new.md)
 
 ## Relationships
 

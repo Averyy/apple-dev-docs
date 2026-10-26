@@ -32,6 +32,8 @@ NSTextLayoutFragmentEnumerationOptionsReverse
   When enumerating, tell the layout fragments to layout their contents.
 - [static var estimatesSize: NSTextLayoutFragment.EnumerationOptions](./estimatessize.md)
   When enumerating, tell the layout fragments to estimate their size.
+- [NSTextLayoutFragmentEnumerationOptionsNone](../../nstextlayoutfragmentenumerationoptions/nstextlayoutfragmentenumerationoptionsnone.md)
+  The value that represents no selected enumeration options.
 
 
 ---

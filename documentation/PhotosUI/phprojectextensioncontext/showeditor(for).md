@@ -21,7 +21,7 @@ func showEditor(for asset: PHAsset)
 
 #### Discussion
 
-To be notified when assets are edited, the extension should observe library changes by implementing the [`PHPhotoLibraryChangeObserver`](https://developer.apple.com/documentation/photos/phphotolibrarychangeobserver) protocol.
+To be notified when assets are edited, the extension should observe library changes by implementing the [`PHPhotoLibraryChangeObserver`](../../Photos/phphotolibrarychangeobserver.md) protocol.
 
 ## Parameters
 

@@ -28,6 +28,8 @@ MIDI-CI defines two roles in the communication between devices: *initiator* and 
   An object that provides the enabled and disabled profiles for a MIDI channel or port on a device.
 - [class MIDICIResponder](./midiciresponder.md)
   An object that responds to MIDI-CI inquiries from an initiator on behalf of a MIDI client, and handles profile and property exchange operations.
+- [MIDICIProfileStateList](./midiciprofilestatelist.md)
+  An array of profile state objects that describes the profile configuration for all channels of a reachable MIDI-CI node.
 
 ## See Also
 

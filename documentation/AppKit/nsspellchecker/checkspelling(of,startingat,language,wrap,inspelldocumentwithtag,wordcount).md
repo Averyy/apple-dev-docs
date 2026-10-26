@@ -47,6 +47,8 @@ The range of the first misspelled word and optionally (and by reference) the cou
   Requests that the string be checked in the background.
 - [func guesses(forWordRange: NSRange, in: String, language: String?, inSpellDocumentWithTag: Int) -> [String]?](./guesses%28forwordrange,in,language,inspelldocumentwithtag%29.md)
   Returns an array of possible substitutions for the specified string.
+- [- guessesForWord:](./guessesforword_.md)
+  Returns an array of suggested spellings for the misspelled word.
 
 
 ---

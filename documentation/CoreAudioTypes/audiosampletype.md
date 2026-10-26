@@ -63,6 +63,8 @@ The canonical audio sample type for input and output in iPhone OS is linear PCM 
 - [typealias AudioUnitSampleType](./audiounitsampletype.md)
   The canonical audio data sample type for audio processing.
 - [struct AudioFormatListItem](./audioformatlistitem.md)
+- [AVAudioSessionErrorInsufficientPriority](./avaudiosessionerrorinsufficientpriority.md)
+  An error code that indicates the app isn’t allowed to set the audio category because it’s in use by another app.
 
 
 ---

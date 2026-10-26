@@ -33,6 +33,8 @@ var version: Int { get }
   The name of the manufacturer of the audio unit.
 - [var name: String](./name.md)
   The name of the audio unit.
+- [AUAudioUnit](./auaudiounit.md)
+  The audio unit class wrapping or underlying the implementation’s audio unit.
 
 
 ---

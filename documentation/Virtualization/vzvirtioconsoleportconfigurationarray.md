@@ -31,6 +31,8 @@ This array stores a collection of port configurations for a [`VZVirtioConsoleDev
 ### Accessing a specific port
 - [subscript(Int) -> VZVirtioConsolePortConfiguration?](./vzvirtioconsoleportconfigurationarray/subscript%28_%29.md)
   Returns the Virtio console port configuration as the specified index.
+### Adding a configuration
+- [- setObject:atIndexedSubscript:](./vzvirtioconsoleportconfigurationarray/setobject_atindexedsubscript_.md)
 
 ## Relationships
 

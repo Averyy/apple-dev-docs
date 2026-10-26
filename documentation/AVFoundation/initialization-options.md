@@ -22,6 +22,10 @@ Specify options to configure the initialization of a movie.
   Creates a movie object from a movie header stored in a QuickTime movie file of ISO base media file.
 - [init(data: Data, options: [String : Any]?)](./avmovie/init%28data,options%29.md)
   Creates a movie object from a movie file’s data.
+- [+ movieWithURL:options:](./avmovie/moviewithurl_options_.md)
+  Returns a new movie object from a movie header stored in a QuickTime movie file of ISO base media file.
+- [+ movieWithData:options:](./avmovie/moviewithdata_options_.md)
+  Returns a new movie object from a movie file’s data.
 
 
 ---

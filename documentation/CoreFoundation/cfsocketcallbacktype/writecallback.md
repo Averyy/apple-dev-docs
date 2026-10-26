@@ -35,6 +35,8 @@ kCFSocketWriteCallBack
 - [static var dataCallBack: CFSocketCallBackType](./datacallback.md)
   Incoming data will be read in chunks in the background and the callback is called with the data argument being a CFData object containing the read data.
 - [static var connectCallBack: CFSocketCallBackType](./connectcallback.md)
+- [kCFSocketNoCallBack](./kcfsocketnocallback.md)
+  No callback should be made for any activity.
 
 
 ---

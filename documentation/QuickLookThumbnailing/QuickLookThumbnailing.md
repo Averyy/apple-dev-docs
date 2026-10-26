@@ -51,6 +51,18 @@ Many apps use custom file types to persist their data. Finder and Spotlight on m
   Error information that might return when you generate a thumbnail.
 - [QLThumbnailError.Code](./qlthumbnailerror-swift.struct/code.md)
   Error codes that may be returned when generating a thumbnail.
+### Macros
+- [QLT_DEPRECATED](./qlt_deprecated.md)
+- [QLT_EXPORT](./qlt_export.md)
+- [QLT_EXTERN_C_BEGIN](./qlt_extern_c_begin.md)
+- [QLT_EXTERN_C_END](./qlt_extern_c_end.md)
+- [QLT_FORMAT_ARG](./qlt_format_arg.md)
+- [QLT_INLINE](./qlt_inline.md)
+- [QLT_LIKELY](./qlt_likely.md)
+- [QLT_NOINLINE](./qlt_noinline.md)
+- [QLT_PRIVATE_EXPORT](./qlt_private_export.md)
+- [QLT_UNLIKELY](./qlt_unlikely.md)
+- [QLT_WEAK_EXPORT](./qlt_weak_export.md)
 
 
 ---

@@ -60,6 +60,8 @@ For a more complete example of creating a custom tool item, see [Configuring the
 ### Creating a custom item
 - [convenience init(configuration: PKToolPickerCustomItem.Configuration)](./pktoolpickercustomitem/init%28configuration%29.md)
   Creates a new custom item with the specified configuration.
+- [- initWithConfiguration:](./pktoolpickercustomitem/initwithconfiguration_.md)
+  Creates a new custom item with the specified configuration.
 ### Configuring the custom item
 - [var color: UIColor](./pktoolpickercustomitem/color.md)
   The current color of the custom tool item.
@@ -68,6 +70,10 @@ For a more complete example of creating a custom tool item, see [Configuring the
 - [var configuration: PKToolPickerCustomItem.Configuration](./pktoolpickercustomitem/configuration-41nm4.md)
   The configuration of the custom tool item.
 - [PKToolPickerCustomItem.Configuration](./pktoolpickercustomitem/configuration-swift.struct.md)
+  A configuration that specifies the appearance and behavior of a custom tool item and its contents.
+- [configuration](./pktoolpickercustomitem/configuration-v7e5.md)
+  The configuration of the custom tool item.
+- [PKToolPickerCustomItemConfiguration](./pktoolpickercustomitemconfiguration.md)
   A configuration that specifies the appearance and behavior of a custom tool item and its contents.
 ### Reloading the custom item image
 - [func reloadImage()](./pktoolpickercustomitem/reloadimage%28%29.md)

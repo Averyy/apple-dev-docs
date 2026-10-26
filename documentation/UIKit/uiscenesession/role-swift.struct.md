@@ -45,6 +45,9 @@ typedef NSString * UISceneSessionRole;
   A scene that displays navigation content on the CarPlay Instruments Cluster.
 - [static let windowExternalDisplay: UISceneSession.Role](./role-swift.struct/windowexternaldisplay.md)
   A scene that displays noninteractive windows on an externally connected display.
+- [CPTemplateApplicationSceneSessionRoleApplication](../../CarPlay/cptemplateapplicationscenesessionroleapplication.md)
+- [CPTemplateApplicationDashboardSceneSessionRoleApplication](../../CarPlay/cptemplateapplicationdashboardscenesessionroleapplication.md)
+- [CPTemplateApplicationInstrumentClusterSceneSessionRoleApplication](../../CarPlay/cptemplateapplicationinstrumentclusterscenesessionroleapplication.md)
 ### Creating scene roles
 - [init(rawValue: String)](./role-swift.struct/init%28rawvalue%29.md)
   Creates a scene role with the specified raw value.

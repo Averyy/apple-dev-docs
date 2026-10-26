@@ -53,6 +53,18 @@ See [RFC 2743](https://tools.ietf.org/html/rfc2743) for the definitive descripti
   Provide cryptographic protection to secure message integrity.
 - [Kerberos Implementation](./kerberos-implementation.md)
   Establish secure connections using the Kerberos implementation of GSS-API.
+### Structure and macros
+- [Structures and macros](./structures-and-macros.md)
+### Macros
+- [GSSAPI_CALLCONV](./gssapi_callconv.md)
+- [GSSAPI_CPP_END](./gssapi_cpp_end.md)
+- [GSSAPI_CPP_START](./gssapi_cpp_start.md)
+- [GSSAPI_LIB_CALL](./gssapi_lib_call.md)
+- [GSSAPI_LIB_FUNCTION](./gssapi_lib_function.md)
+- [GSSAPI_LIB_VARIABLE](./gssapi_lib_variable.md)
+- [GSS_LIB_CALL](./gss_lib_call.md)
+- [GSS_LIB_FUNCTION](./gss_lib_function.md)
+- [GSS_LIB_VARIABLE](./gss_lib_variable.md)
 
 
 ---

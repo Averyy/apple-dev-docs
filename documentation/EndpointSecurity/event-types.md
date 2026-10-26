@@ -187,6 +187,8 @@ For example, when the message’s [`event_type`](./es_message_t/event_type.md) i
   An opaque type that maintains Endpoint Security client state, and functions related to this type.
 - [Message](./message.md)
   A type used by Endpoint Security to notify your client when a monitored action occurs.
+- [Monitoring System Events with Endpoint Security](./monitoring-system-events-with-endpoint-security.md)
+  Receive notifications and authorization requests for sensitive operations by creating an Endpoint Security client for your app.
 
 
 ---

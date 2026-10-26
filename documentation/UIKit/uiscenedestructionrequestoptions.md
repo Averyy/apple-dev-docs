@@ -56,6 +56,10 @@ Create a [`UISceneDestructionRequestOptions`](./uiscenedestructionrequestoptions
   A collection of properties that you use to request activation of a scene.
 - [UIScene.ActivationRequestOptions](./uiscene/activationrequestoptions.md)
   An object that contains information you want the system to use when activating the session associated with a scene.
+- [- activateSceneSessionForRequest:errorHandler:](./uiapplication/activatescenesessionforrequest_errorhandler_.md)
+  Asks the system to activate an existing scene or create a new scene and associate it with your app.
+- [UISceneSessionActivationRequest](./uiscenesessionactivationrequest-c.class.md)
+  A collection of properties that you use to request activation of a scene.
 
 
 ---

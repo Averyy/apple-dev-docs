@@ -96,6 +96,10 @@ When you reverse geocode a geographic coordinate using a [`CLGeocoder`](./clgeoc
 ### Initializers
 - [init?(coder: NSCoder)](./clplacemark/init%28coder%29.md)
 - [convenience init(location: CLLocation, name: String?, postalAddress: CNPostalAddress?)](./clplacemark/init%28location,name,postaladdress%29.md)
+### Instance Methods
+- [- init](./clplacemark/init.md)
+### Type Methods
+- [+ new](./clplacemark/new.md)
 
 ## Relationships
 

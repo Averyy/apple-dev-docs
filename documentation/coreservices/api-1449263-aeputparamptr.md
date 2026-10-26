@@ -48,6 +48,10 @@ Thread safe starting in OS X v10.2.
   Adds a pointer to data, a descriptor type, and a keyword to an Apple event as an attribute.
 - [func AEPutParamDesc(UnsafeMutablePointer<AppleEvent>!, AEKeyword, UnsafePointer<AEDesc>!) -> OSErr](./api-1447576-aeputparamdesc.md)
   Inserts a descriptor and a keyword into an Apple event or Apple event record as an Apple event parameter.
+- [AEPutKeyDesc](../applicationservices/apple_event_manager/api-1805634-aeputkeydesc.md)
+  Inserts a descriptor and a keyword into an Apple event record as an Apple event parameter.
+- [AEPutKeyPtr](../applicationservices/apple_event_manager/api-1805645-aeputkeyptr.md)
+  Inserts data, a descriptor type, and a keyword into an Apple event record as an Apple event parameter.
 
 
 ---

@@ -41,6 +41,9 @@ This method currently supports file URLs (`file:`) and remote application URLs (
   Returns an instance of an `SBApplication` subclass that represents the target application identified by the given bundle identifier.
 - [init?(processIdentifier: pid_t)](./init%28processidentifier%29.md)
   Returns an instance of an `SBApplication` subclass that represents the target application identified by the given process identifier.
+### Related Documentation
+- [+ applicationWithURL:](./applicationwithurl_.md)
+  Returns the shared instance representing a target application specified by the given URL.
 
 
 ---

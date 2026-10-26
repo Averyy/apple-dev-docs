@@ -49,6 +49,12 @@ The value of each key in `automaticallyLoadedAssetKeys` will automatically be lo
 - [convenience init(asset: AVAsset, automaticallyLoadedAssetKeys: [AVPartialAsyncProperty<AVAsset>])](./init%28asset,automaticallyloadedassetkeys%29-5czjh.md)
   Creates a player item for the asset, and automatically loads values for the specified properties.
 - [convenience init(asset: any AVAsset & Sendable, automaticallyLoadedAssetKeys: [AVPartialAsyncProperty<AVAsset>])](./init%28asset,automaticallyloadedassetkeys%29-85hal.md)
+- [+ playerItemWithURL:](./playeritemwithurl_.md)
+  Returns a new player item with a specified URL.
+- [+ playerItemWithAsset:](./playeritemwithasset_.md)
+  Returns a new player item for a specified asset.
+- [+ playerItemWithAsset:automaticallyLoadedAssetKeys:](./playeritemwithasset_automaticallyloadedassetkeys_.md)
+  Creates a player item with the specified asset and the asset keys to automatically load.
 
 
 ---

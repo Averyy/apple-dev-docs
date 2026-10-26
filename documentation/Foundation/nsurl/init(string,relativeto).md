@@ -51,6 +51,8 @@ For apps linked before iOS 17, this method expects `URLString` to contain only c
 ### Related Documentation
 - [class NSURL](../nsurl.md)
   An object that represents the location of a resource, such as an item on a remote server or the path to a local file.
+- [+ URLWithString:relativeToURL:](./urlwithstring_relativetourl_.md)
+  Creates and returns an NSURL object initialized with a base URL and a relative string.
 ### Creating a URL object
 - [convenience init?(string: String)](./init%28string%29.md)
   Initializes an NSURL object with a provided URL string.
@@ -82,6 +84,10 @@ For apps linked before iOS 17, this method expects `URLString` to contain only c
   Returns a new URL object initialized with a C string representing a local file system path.
 - [func getFileSystemRepresentation(UnsafeMutablePointer<CChar>, maxLength: Int) -> Bool](./getfilesystemrepresentation%28_,maxlength%29.md)
   Fills the provided buffer with a C string representing a local file system path.
+- [+ URLWithString:](./urlwithstring_.md)
+  Creates and returns an NSURL object initialized with a provided URL string.
+- [+ URLWithString:encodingInvalidCharacters:](./urlwithstring_encodinginvalidcharacters_.md)
+  Creates and returns an instance from the provided string, optionally IDNA- and percent-encoding any invalid characters.
 
 
 ---

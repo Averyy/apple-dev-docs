@@ -77,6 +77,14 @@ It may be difficult to use this function to “clean up” unescaped or partiall
   Returns a representation of the receiver as a C string in the default C-string encoding, possibly losing information in converting to that encoding.
 - [func cStringLength() -> Int](./cstringlength%28%29.md)
   Returns the length in char-sized units of the receiver’s C-string representation in the default C-string encoding.
+- [- getCString:](./getcstring%28_%29.md)
+  Invokes [`getCString:maxLength:range:remainingRange:`](./getcstring%28_,maxlength,range,remaining%29.md) with `NSMaximumStringLength` as the maximum length, the receiver’s entire extent as the range, and `NULL` for the remaining range.
+- [- getCString:maxLength:](./getcstring%28_,maxlength%29.md)
+  Invokes [`getCString:maxLength:range:remainingRange:`](./getcstring%28_,maxlength,range,remaining%29.md) with `maxLength` as the maximum length in char-sized units, the receiver’s entire extent as the range, and `NULL` for the remaining range.
+- [- getCString:maxLength:range:remainingRange:](./getcstring%28_,maxlength,range,remaining%29.md)
+  Converts the receiver’s content to the default C-string encoding and stores them in a given buffer.
+- [- stringByReplacingPercentEscapesUsingEncoding:](./replacingpercentescapes%28using%29.md)
+  Returns a new string made by replacing in the receiver all percent escapes with the matching characters as determined by a given encoding.
 
 
 ---

@@ -10,6 +10,8 @@ Play sounds and haptic feedback, and incorporate speech recognition and synthesi
 ### Sounds
 - [class NSSound](./nssound.md)
   A simple interface for loading and playing audio files.
+- [NSBeep](./nsbeep.md)
+  Plays the system beep.
 ### Speech
 - [class NSSpeechRecognizer](./nsspeechrecognizer.md)
   The Cocoa interface to speech recognition in macOS.

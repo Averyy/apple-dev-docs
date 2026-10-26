@@ -1,0 +1,136 @@
+# Anonymous
+
+**Framework**: IOKit  
+**Kind**: enum  
+**Role**: Enumeration
+
+**Availability**:
+- Mac Catalyst 13.0+
+- macOS 10.0+
+
+## Declaration
+
+```c
+enum : unsigned int {
+    ...
+};
+```
+
+## Topics
+
+### Constants
+- [kHIDUsage_GD_ByteCount](./api-1592534-anonymous/khidusage_gd_bytecount.md)
+- [kHIDUsage_GD_CountedBuffer](./api-1592534-anonymous/khidusage_gd_countedbuffer.md)
+- [kHIDUsage_GD_DPadDown](./api-1592534-anonymous/khidusage_gd_dpaddown.md)
+- [kHIDUsage_GD_DPadLeft](./api-1592534-anonymous/khidusage_gd_dpadleft.md)
+- [kHIDUsage_GD_DPadRight](./api-1592534-anonymous/khidusage_gd_dpadright.md)
+- [kHIDUsage_GD_DPadUp](./api-1592534-anonymous/khidusage_gd_dpadup.md)
+- [kHIDUsage_GD_Dial](./api-1592534-anonymous/khidusage_gd_dial.md)
+- [kHIDUsage_GD_GamePad](./api-1592534-anonymous/khidusage_gd_gamepad.md)
+- [kHIDUsage_GD_Hatswitch](./api-1592534-anonymous/khidusage_gd_hatswitch.md)
+- [kHIDUsage_GD_Joystick](./api-1592534-anonymous/khidusage_gd_joystick.md)
+- [kHIDUsage_GD_Keyboard](./api-1592534-anonymous/khidusage_gd_keyboard.md)
+- [kHIDUsage_GD_Keypad](./api-1592534-anonymous/khidusage_gd_keypad.md)
+- [kHIDUsage_GD_MotionWakeup](./api-1592534-anonymous/khidusage_gd_motionwakeup.md)
+- [kHIDUsage_GD_Mouse](./api-1592534-anonymous/khidusage_gd_mouse.md)
+- [kHIDUsage_GD_MultiAxisController](./api-1592534-anonymous/khidusage_gd_multiaxiscontroller.md)
+- [kHIDUsage_GD_Pointer](./api-1592534-anonymous/khidusage_gd_pointer.md)
+- [kHIDUsage_GD_Reserved](./api-1592534-anonymous/khidusage_gd_reserved.md)
+- [kHIDUsage_GD_Rx](./api-1592534-anonymous/khidusage_gd_rx.md)
+- [kHIDUsage_GD_Ry](./api-1592534-anonymous/khidusage_gd_ry.md)
+- [kHIDUsage_GD_Rz](./api-1592534-anonymous/khidusage_gd_rz.md)
+- [kHIDUsage_GD_Select](./api-1592534-anonymous/khidusage_gd_select.md)
+- [kHIDUsage_GD_Slider](./api-1592534-anonymous/khidusage_gd_slider.md)
+- [kHIDUsage_GD_Start](./api-1592534-anonymous/khidusage_gd_start.md)
+- [kHIDUsage_GD_SystemAppMenu](./api-1592534-anonymous/khidusage_gd_systemappmenu.md)
+- [kHIDUsage_GD_SystemContextMenu](./api-1592534-anonymous/khidusage_gd_systemcontextmenu.md)
+- [kHIDUsage_GD_SystemControl](./api-1592534-anonymous/khidusage_gd_systemcontrol.md)
+- [kHIDUsage_GD_SystemMainMenu](./api-1592534-anonymous/khidusage_gd_systemmainmenu.md)
+- [kHIDUsage_GD_SystemMenu](./api-1592534-anonymous/khidusage_gd_systemmenu.md)
+- [kHIDUsage_GD_SystemMenuDown](./api-1592534-anonymous/khidusage_gd_systemmenudown.md)
+- [kHIDUsage_GD_SystemMenuExit](./api-1592534-anonymous/khidusage_gd_systemmenuexit.md)
+- [kHIDUsage_GD_SystemMenuHelp](./api-1592534-anonymous/khidusage_gd_systemmenuhelp.md)
+- [kHIDUsage_GD_SystemMenuLeft](./api-1592534-anonymous/khidusage_gd_systemmenuleft.md)
+- [kHIDUsage_GD_SystemMenuRight](./api-1592534-anonymous/khidusage_gd_systemmenuright.md)
+- [kHIDUsage_GD_SystemMenuSelect](./api-1592534-anonymous/khidusage_gd_systemmenuselect.md)
+- [kHIDUsage_GD_SystemMenuUp](./api-1592534-anonymous/khidusage_gd_systemmenuup.md)
+- [kHIDUsage_GD_SystemPowerDown](./api-1592534-anonymous/khidusage_gd_systempowerdown.md)
+- [kHIDUsage_GD_SystemSleep](./api-1592534-anonymous/khidusage_gd_systemsleep.md)
+- [kHIDUsage_GD_SystemWakeUp](./api-1592534-anonymous/khidusage_gd_systemwakeup.md)
+- [kHIDUsage_GD_Vbrx](./api-1592534-anonymous/khidusage_gd_vbrx.md)
+- [kHIDUsage_GD_Vbry](./api-1592534-anonymous/khidusage_gd_vbry.md)
+- [kHIDUsage_GD_Vbrz](./api-1592534-anonymous/khidusage_gd_vbrz.md)
+- [kHIDUsage_GD_Vno](./api-1592534-anonymous/khidusage_gd_vno.md)
+- [kHIDUsage_GD_Vx](./api-1592534-anonymous/khidusage_gd_vx.md)
+- [kHIDUsage_GD_Vy](./api-1592534-anonymous/khidusage_gd_vy.md)
+- [kHIDUsage_GD_Vz](./api-1592534-anonymous/khidusage_gd_vz.md)
+- [kHIDUsage_GD_Wheel](./api-1592534-anonymous/khidusage_gd_wheel.md)
+- [kHIDUsage_GD_X](./api-1592534-anonymous/khidusage_gd_x.md)
+- [kHIDUsage_GD_Y](./api-1592534-anonymous/khidusage_gd_y.md)
+- [kHIDUsage_GD_Z](./api-1592534-anonymous/khidusage_gd_z.md)
+- [kHIDUsage_GD_AssistiveControl](./api-1592534-anonymous/khidusage_gd_assistivecontrol.md)
+- [kHIDUsage_GD_TabletPCSystemControls](./api-1592534-anonymous/khidusage_gd_tabletpcsystemcontrols.md)
+- [kHIDUsage_GD_ApplicationBreak](./api-1592534-anonymous/khidusage_gd_applicationbreak.md)
+- [kHIDUsage_GD_ApplicationDebuggerBreak](./api-1592534-anonymous/khidusage_gd_applicationdebuggerbreak.md)
+- [kHIDUsage_GD_AssistiveControlCompatible](./api-1592534-anonymous/khidusage_gd_assistivecontrolcompatible.md)
+- [kHIDUsage_GD_CallActiveLED](./api-1592534-anonymous/khidusage_gd_callactiveled.md)
+- [kHIDUsage_GD_CallMuteLED](./api-1592534-anonymous/khidusage_gd_callmuteled.md)
+- [kHIDUsage_GD_CallMuteToggle](./api-1592534-anonymous/khidusage_gd_callmutetoggle.md)
+- [kHIDUsage_GD_ChassisEnclosure](./api-1592534-anonymous/khidusage_gd_chassisenclosure.md)
+- [kHIDUsage_GD_ControlEnable](./api-1592534-anonymous/khidusage_gd_controlenable.md)
+- [kHIDUsage_GD_CoolantCriticalLevel](./api-1592534-anonymous/khidusage_gd_coolantcriticallevel.md)
+- [kHIDUsage_GD_CoolantLevel](./api-1592534-anonymous/khidusage_gd_coolantlevel.md)
+- [kHIDUsage_GD_CoolantPump](./api-1592534-anonymous/khidusage_gd_coolantpump.md)
+- [kHIDUsage_GD_DoNotDisturb](./api-1592534-anonymous/khidusage_gd_donotdisturb.md)
+- [kHIDUsage_GD_DockableDeviceDisplayOcclusion](./api-1592534-anonymous/khidusage_gd_dockabledevicedisplayocclusion.md)
+- [kHIDUsage_GD_DockableDeviceDockingState](./api-1592534-anonymous/khidusage_gd_dockabledevicedockingstate.md)
+- [kHIDUsage_GD_DockableDeviceObjectType](./api-1592534-anonymous/khidusage_gd_dockabledeviceobjecttype.md)
+- [kHIDUsage_GD_DockableDevicePrimaryUsageID](./api-1592534-anonymous/khidusage_gd_dockabledeviceprimaryusageid.md)
+- [kHIDUsage_GD_DockableDevicePrimaryUsagePage](./api-1592534-anonymous/khidusage_gd_dockabledeviceprimaryusagepage.md)
+- [kHIDUsage_GD_DockableDeviceUniqueID](./api-1592534-anonymous/khidusage_gd_dockabledeviceuniqueid.md)
+- [kHIDUsage_GD_DockableDeviceVendorID](./api-1592534-anonymous/khidusage_gd_dockabledevicevendorid.md)
+- [kHIDUsage_GD_FeatureNotification](./api-1592534-anonymous/khidusage_gd_featurenotification.md)
+- [kHIDUsage_GD_IndexTrigger](./api-1592534-anonymous/khidusage_gd_indextrigger.md)
+- [kHIDUsage_GD_PalmTrigger](./api-1592534-anonymous/khidusage_gd_palmtrigger.md)
+- [kHIDUsage_GD_Qw](./api-1592534-anonymous/khidusage_gd_qw.md)
+- [kHIDUsage_GD_Qx](./api-1592534-anonymous/khidusage_gd_qx.md)
+- [kHIDUsage_GD_Qy](./api-1592534-anonymous/khidusage_gd_qy.md)
+- [kHIDUsage_GD_Qz](./api-1592534-anonymous/khidusage_gd_qz.md)
+- [kHIDUsage_GD_RPM](./api-1592534-anonymous/khidusage_gd_rpm.md)
+- [kHIDUsage_GD_ResolutionMultiplier](./api-1592534-anonymous/khidusage_gd_resolutionmultiplier.md)
+- [kHIDUsage_GD_SFShift](./api-1592534-anonymous/khidusage_gd_sfshift.md)
+- [kHIDUsage_GD_SFShiftLock](./api-1592534-anonymous/khidusage_gd_sfshiftlock.md)
+- [kHIDUsage_GD_SFShiftLockIndicator](./api-1592534-anonymous/khidusage_gd_sfshiftlockindicator.md)
+- [kHIDUsage_GD_SensorZone](./api-1592534-anonymous/khidusage_gd_sensorzone.md)
+- [kHIDUsage_GD_SpatialController](./api-1592534-anonymous/khidusage_gd_spatialcontroller.md)
+- [kHIDUsage_GD_SystemBreak](./api-1592534-anonymous/khidusage_gd_systembreak.md)
+- [kHIDUsage_GD_SystemColdRestart](./api-1592534-anonymous/khidusage_gd_systemcoldrestart.md)
+- [kHIDUsage_GD_SystemDebuggerBreak](./api-1592534-anonymous/khidusage_gd_systemdebuggerbreak.md)
+- [kHIDUsage_GD_SystemDismissNotification](./api-1592534-anonymous/khidusage_gd_systemdismissnotification.md)
+- [kHIDUsage_GD_SystemDisplayBoth](./api-1592534-anonymous/khidusage_gd_systemdisplayboth.md)
+- [kHIDUsage_GD_SystemDisplayDual](./api-1592534-anonymous/khidusage_gd_systemdisplaydual.md)
+- [kHIDUsage_GD_SystemDisplayExternal](./api-1592534-anonymous/khidusage_gd_systemdisplayexternal.md)
+- [kHIDUsage_GD_SystemDisplayInternal](./api-1592534-anonymous/khidusage_gd_systemdisplayinternal.md)
+- [kHIDUsage_GD_SystemDisplayInvert](./api-1592534-anonymous/khidusage_gd_systemdisplayinvert.md)
+- [kHIDUsage_GD_SystemDisplayRotationLockButton](./api-1592534-anonymous/khidusage_gd_systemdisplayrotationlockbutton.md)
+- [kHIDUsage_GD_SystemDisplayRotationLockSliderSwitch](./api-1592534-anonymous/khidusage_gd_systemdisplayrotationlocksliderswitch.md)
+- [kHIDUsage_GD_SystemDisplaySwap](./api-1592534-anonymous/khidusage_gd_systemdisplayswap.md)
+- [kHIDUsage_GD_SystemDisplayToggleLCDAutoscale](./api-1592534-anonymous/khidusage_gd_systemdisplaytogglelcdautoscale.md)
+- [kHIDUsage_GD_SystemDisplayToggleMode](./api-1592534-anonymous/khidusage_gd_systemdisplaytogglemode.md)
+- [kHIDUsage_GD_SystemDock](./api-1592534-anonymous/khidusage_gd_systemdock.md)
+- [kHIDUsage_GD_SystemHibernate](./api-1592534-anonymous/khidusage_gd_systemhibernate.md)
+- [kHIDUsage_GD_SystemMicrophoneMute](./api-1592534-anonymous/khidusage_gd_systemmicrophonemute.md)
+- [kHIDUsage_GD_SystemMultiAxisController](./api-1592534-anonymous/khidusage_gd_systemmultiaxiscontroller.md)
+- [kHIDUsage_GD_SystemSetup](./api-1592534-anonymous/khidusage_gd_systemsetup.md)
+- [kHIDUsage_GD_SystemSpeakerMute](./api-1592534-anonymous/khidusage_gd_systemspeakermute.md)
+- [kHIDUsage_GD_SystemUndock](./api-1592534-anonymous/khidusage_gd_systemundock.md)
+- [kHIDUsage_GD_SystemWarmRestart](./api-1592534-anonymous/khidusage_gd_systemwarmrestart.md)
+- [kHIDUsage_GD_Thumbstick](./api-1592534-anonymous/khidusage_gd_thumbstick.md)
+- [kHIDUsage_GD_WirelessRadioButton](./api-1592534-anonymous/khidusage_gd_wirelessradiobutton.md)
+- [kHIDUsage_GD_WirelessRadioLED](./api-1592534-anonymous/khidusage_gd_wirelessradioled.md)
+- [kHIDUsage_GD_WirelessRadioSliderSwitch](./api-1592534-anonymous/khidusage_gd_wirelessradiosliderswitch.md)
+
+
+---
+
+*[View on Apple Developer](https://developer.apple.com/documentation/iokit/1592534-anonymous)*

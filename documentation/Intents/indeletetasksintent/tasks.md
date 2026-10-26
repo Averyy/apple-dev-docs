@@ -40,6 +40,8 @@ var tasks: [INTask]? { get }
   The task list from which to delete tasks.
 - [var all: Bool?](./all-8gg59.md)
   A Boolean value that indicates whether to delete all the tasks from a task list.
+- [all](./all-1dt4g.md)
+  A Boolean value that indicates whether to delete all the tasks from a task list.
 
 
 ---

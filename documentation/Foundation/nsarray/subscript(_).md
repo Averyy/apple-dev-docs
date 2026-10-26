@@ -68,6 +68,13 @@ id value = array[3]; // equivalent to [array objectAtIndex:3]
   Returns an enumerator object that lets you access each object in the array.
 - [func reverseObjectEnumerator() -> NSEnumerator](./reverseobjectenumerator%28%29.md)
   Returns an enumerator object that lets you access each object in the array, in reverse order.
+- [- getObjects:](./getobjects_.md)
+  Copies all the objects contained in the array to `aBuffer`.
+- [- getObjects:range:](./getobjects_range_.md)
+  Copies references to objects contained in the array that fall within the specified range to `aBuffer`.
+### Related Documentation
+- [- setObject:atIndexedSubscript:](../nsmutablearray/setobject_atindexedsubscript_.md)
+  Replaces the object at the index with the new object, possibly adding the object.
 
 
 ---

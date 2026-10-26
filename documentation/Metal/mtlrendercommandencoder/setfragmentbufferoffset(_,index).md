@@ -57,6 +57,8 @@ By default, the buffer at each index is `nil`.
   Assigns multiple buffers to a range of entries in the fragment shader argument table.
 - [func setFragmentBytes(UnsafeRawPointer, length: Int, index: Int)](./setfragmentbytes%28_,length,index%29.md)
   Creates a buffer from bytes and assigns it to an entry in the fragment shader argument table.
+- [- setFragmentBuffers:offsets:withRange:](./setfragmentbuffers_offsets_withrange_.md)
+  Assigns multiple buffers to a range of entries in the fragment shader argument table.
 
 
 ---

@@ -42,6 +42,7 @@ extern CFStringRef const kVTVideoEncoderList_SupportedSelectionProperties;
 - [let kVTVideoEncoderList_QualityRating: CFString](./kvtvideoencoderlist_qualityrating.md)
 - [let kVTVideoEncoderList_SupportsFrameReordering: CFString](./kvtvideoencoderlist_supportsframereordering.md)
 - [let kVTVideoEncoderListOption_IncludeStandardDefinitionDVEncoders: CFString](./kvtvideoencoderlistoption_includestandarddefinitiondvencoders.md)
+- [kVTVideoEncoderList_SupportsMultiPass](./kvtvideoencoderlist_supportsmultipass.md)
 
 
 ---

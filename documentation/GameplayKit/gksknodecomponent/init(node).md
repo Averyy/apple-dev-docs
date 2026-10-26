@@ -36,6 +36,12 @@ When you add this component to a [`GKEntity`](../gkentity.md) object, the compon
 
 - `node`: The SpriteKit node to be managed by the component.
 
+## See Also
+
+### Creating a SpriteKit Component
+- [+ componentWithNode:](./componentwithnode_.md)
+  Creates a component to manage the specified SpriteKit node.
+
 
 ---
 

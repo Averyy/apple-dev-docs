@@ -36,6 +36,8 @@ If a formatter is set to be lenient, when parsing a string it uses heuristics to
 ### Managing Natural Language Support
 - [var doesRelativeDateFormatting: Bool](./doesrelativedateformatting.md)
   A Boolean value that indicates whether the receiver uses phrases such as “today” and “tomorrow” for the date component.
+- [- allowsNaturalLanguage](../nsdateformatter/allowsnaturallanguage.md)
+  Returns a Boolean value that indicates whether the receiver attempts to process dates entered as a vernacular string.
 
 
 ---

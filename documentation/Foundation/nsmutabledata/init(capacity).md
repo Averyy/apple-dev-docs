@@ -44,6 +44,11 @@ If the capacity specified in `capacity` is greater than four memory pages in siz
 ### Creating Mutable Data
 - [init?(length: Int)](./init%28length%29.md)
   Initializes and returns a mutable data object containing a given number of zeroed bytes.
+- [+ dataWithLength:](./datawithlength_.md)
+  Creates and returns an mutable data object containing a given number of zeroed bytes.
+### Related Documentation
+- [+ dataWithCapacity:](./datawithcapacity_.md)
+  Creates and returns a mutable data object capable of holding the specified number of bytes.
 
 
 ---

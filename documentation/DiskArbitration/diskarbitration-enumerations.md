@@ -19,6 +19,7 @@
   Register for mount/unmount notifications, and block mount/unmount events.
 - [DiskArbitration Constants](./diskarbitration-constants.md)
 - [DiskArbitration Data Types](./diskarbitration-data-types.md)
+- [DiskArbitration Functions](./diskarbitration-functions.md)
 
 
 ---

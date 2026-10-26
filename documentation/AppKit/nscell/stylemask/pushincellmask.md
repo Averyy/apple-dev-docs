@@ -28,6 +28,8 @@ NSPushInCellMask
   The button cell swaps the “control color” (the [`controlColor`](../../nscolor/controlcolor.md) method of `NSColor`) and white pixels on its background and icon.
 - [static var changeBackgroundCellMask: NSCell.StyleMask](./changebackgroundcellmask.md)
   Same as `NSChangeGrayCellMask`, but only background pixels are changed.
+- [NSNoCellMask](../../nscellstylemask/nsnocellmask.md)
+  The button cell doesn’t change.
 
 
 ---

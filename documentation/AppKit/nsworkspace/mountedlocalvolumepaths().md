@@ -56,6 +56,8 @@ An array of `NSString` objects, each of which contains the full pathname of the 
   Opens one or more files from an array of URLs.
 - [func mountedRemovableMedia() -> [Any]?](./mountedremovablemedia%28%29.md)
   Returns the full pathnames of all currently mounted removable disks.
+- [- openTempFile:](./opentempfile_.md)
+  Opens the specified temporary file using the default app for its type.
 
 
 ---

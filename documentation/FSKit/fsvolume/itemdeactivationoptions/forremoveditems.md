@@ -26,6 +26,8 @@ FSItemDeactivationForRemovedItems
   An option to process deactivation for for files with preallocated space.
 - [static var always: FSVolume.ItemDeactivationOptions](./always.md)
   An option to always perform deactivation calls.
+- [FSItemDeactivationNever](../../fsitemdeactivationoptions/fsitemdeactivationnever.md)
+  An option to never perform deactivation.
 
 
 ---

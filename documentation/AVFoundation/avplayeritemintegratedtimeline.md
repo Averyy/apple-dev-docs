@@ -59,6 +59,12 @@ The timeline models all regions to traverse during playback. A player may not pr
   An asynchronous sequence of periodic time values.
 - [protocol AVPlayerItemIntegratedTimelineObserver](./avplayeritemintegratedtimelineobserver.md)
   A protocol for objects that perform timeline observations.
+- [- addPeriodicTimeObserverForInterval:queue:usingBlock:](./avplayeritemintegratedtimeline/addperiodictimeobserverforinterval_queue_usingblock_.md)
+  Requests invocation of a block during playback to report changing time.
+- [- addBoundaryTimeObserverForSegment:offsetsIntoSegment:queue:usingBlock:](./avplayeritemintegratedtimeline/addboundarytimeobserverforsegment_offsetsintosegment_queue_usingblock_.md)
+  Requests invocation of a block when traversing an offset in a segment during playback.
+- [- removeTimeObserver:](./avplayeritemintegratedtimeline/removetimeobserver_.md)
+  Cancels a previously registered time observer.
 
 ## Relationships
 
@@ -91,6 +97,8 @@ The timeline models all regions to traverse during playback. A player may not pr
   userInfo dictionary key for the AVPlayerInterstitialEventMonitorScheduleRequestCompletedNotification. Value is NSString.
 - [let AVPlayerInterstitialEventMonitorScheduleRequestResponseKey: String](./avplayerinterstitialeventmonitorschedulerequestresponsekey.md)
   userInfo dictionary key for the AVPlayerInterstitialEventMonitorScheduleRequestCompletedNotification. Value is NSData. Absent if the request failed.
+- [AVPlayerInterstitialEventMonitorScheduleRequestCompletedNotification](./avplayerinterstitialeventmonitorschedulerequestcompletednotification.md)
+  A notification that is posted whenever a daterange-schedule request completes.
 
 
 ---

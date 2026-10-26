@@ -25,6 +25,7 @@ typedef enum AXCopyMultipleAttributeOptions : UInt32 {
 - [init(rawValue: UInt32)](./axcopymultipleattributeoptions/api-1459579-init.md)
 ### Type Properties
 - [static var stopOnError: AXCopyMultipleAttributeOptions](./axcopymultipleattributeoptions/api-1460788-stoponerror.md)
+- [kAXCopyMultipleAttributeOptionStopOnError](./axcopymultipleattributeoptions/kaxcopymultipleattributeoptionstoponerror.md)
 
 ## Relationships
 

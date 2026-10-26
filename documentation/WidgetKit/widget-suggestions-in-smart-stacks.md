@@ -268,7 +268,7 @@ For additional tips about debugging widgets, refer to [Debugging widgets](./debu
 
 In iOS 16, macOS 13, watchOS 9 and earlier, configurable widgets use [SiriKit](../SiriKit/SiriKit.md) and the system determines your widget’s relevance based on donations of SiriKit intents. For details about supporting older operating system versions, refer to [Migrating widgets from SiriKit Intents to App Intents](./migrating-from-sirikit-intents-to-app-intents.md).
 
-Donating SiriKit Intents is very similar to donating app intents. Instead of using [`IntentDonationManager`](../AppIntents/intentdonationmanager.md), you use [`INInteraction`](https://developer.apple.com/documentation/intents/ininteraction) to donate an [`INIntent`](https://developer.apple.com/documentation/intents/inintent). For more information about donating SiriKit Intents, refer to [Donating Shortcuts](../SiriKit/donating-shortcuts.md) and [Apple Watch support](../SiriKit/watch-and-widget-support.md).
+Donating SiriKit Intents is very similar to donating app intents. Instead of using [`IntentDonationManager`](../AppIntents/intentdonationmanager.md), you use [`INInteraction`](../Intents/ininteraction.md) to donate an [`INIntent`](../Intents/inintent.md). For more information about donating SiriKit Intents, refer to [Donating Shortcuts](../SiriKit/donating-shortcuts.md) and [Apple Watch support](../SiriKit/watch-and-widget-support.md).
 
 ## See Also
 

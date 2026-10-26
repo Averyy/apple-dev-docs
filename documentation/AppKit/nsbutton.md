@@ -82,6 +82,8 @@ For most types of buttons, the value of the button matches its state—the value
   Controls how strongly the tint color applies in a view.
 - [var borderShape: NSControl.BorderShape](./nsbutton/bordershape.md)
 - [NSControl.BorderShape](./nscontrol/bordershape.md)
+- [- setTitleWithMnemonic:](./nsbutton/settitlewithmnemonic_.md)
+  Sets the title of a button with a character denoting an access key.
 ### Configuring button images
 - [var image: NSImage?](./nsbutton/image.md)
   The image that appears on the button when it’s in an off state, or `nil` if there is no such image.

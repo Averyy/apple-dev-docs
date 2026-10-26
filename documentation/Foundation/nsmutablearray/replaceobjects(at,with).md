@@ -52,6 +52,8 @@ If `objects` or `indexes` is `nil`, this method raises an exception.
   Replaces the objects in the receiving array specified by a given range with all of the objects from a given array.
 - [func setArray([Any])](./setarray%28_%29.md)
   Sets the receiving array’s elements to those in another given array.
+- [- setObject:atIndexedSubscript:](./setobject_atindexedsubscript_.md)
+  Replaces the object at the index with the new object, possibly adding the object.
 
 
 ---

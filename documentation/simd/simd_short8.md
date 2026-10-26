@@ -39,6 +39,8 @@ typedef short __attribute__((ext_vector_type(8))) simd_short8;
   Returns a new vector from the specified three-element vector, and other elements undefined.
 - [func simd_make_short8_undef(simd_short4) -> simd_short8](./simd_make_short8_undef%28_%29-5ny5g.md)
   Returns a new vector from the specified four-element vector, and other elements undefined.
+- [vector8](./vector8-7jnqf.md)
+  Returns a new vector from the specified vectors.
 ### Functions to Create Eight-Element Vectors From Scalar Values
 - [func simd_make_short8(Int16) -> simd_short8](./simd_make_short8%28_%29-1jz7f.md)
   Returns a new vector with the first element set to a scalar value, and other elements set to zero.
@@ -70,6 +72,48 @@ typedef short __attribute__((ext_vector_type(8))) simd_short8;
   Returns a vector that contains elements from either the first or second parameter, based on the corresponding element in the third parameter.
 ### Alternative Type Alias
 - [typealias vector_short8](./vector_short8.md)
+### Functions to Create Eight-Element Vectors From Vectors of Other Types
+- [simd_short](./simd_short-7008o.md)
+  Returns a new vector from the specified vector of 8-bit, signed integer elements.
+- [simd_short](./simd_short-6zqew.md)
+  Returns a new vector from the specified vector of 8-bit, unsigned integer elements.
+- [simd_short](./simd_short-705iw.md)
+  Returns a new vector from the specified vector of 16-bit, signed integer elements.
+- [simd_short](./simd_short-6zvaw.md)
+  Returns a new vector from the specified vector of 16-bit, unsigned integer elements.
+- [simd_short](./simd_short-6zxf4.md)
+  Returns a new vector from the specified vector of 32-bit, signed integer elements.
+- [simd_short](./simd_short-6zn74.md)
+  Returns a new vector from the specified vector of 32-bit, unsigned integer elements.
+- [simd_short](./simd_short-6zy24.md)
+  Returns a new vector from the specified vector of 64-bit, signed integer element.
+- [simd_short](./simd_short-6zo8c.md)
+  Returns a new vector from the specified vector of 64-bit, unsigned integer elements.
+- [simd_short](./simd_short-6zrfo.md)
+  Returns a new vector from the specified vector of 32-bit, floating-point elements.
+- [simd_short](./simd_short-6zqvg.md)
+  Returns a new vector from the specified vector of 64-bit, floating-point elements.
+### Functions to Perform Saturating Conversion From Vectors of Other Types
+- [simd_short_sat](./simd_short_sat-31ieh.md)
+  Returns a new vector from the specified vector of 8-bit, signed integer elements.
+- [simd_short_sat](./simd_short_sat-318h5.md)
+  Returns a new vector from the specified vector of 8-bit, unsigned integer elements.
+- [simd_short_sat](./simd_short_sat-31nk9.md)
+  Returns a new vector from the specified vector of 16-bit, signed integer elements.
+- [simd_short_sat](./simd_short_sat-31de1.md)
+  Returns a new vector from the specified vector of 16-bit, unsigned integer elements.
+- [simd_short_sat](./simd_short_sat-31khl.md)
+  Returns a new vector from the specified vector of 32-bit, signed integer elements.
+- [simd_short_sat](./simd_short_sat-31ad5.md)
+  Returns a new vector from the specified vector of 32-bit, unsigned integer elements.
+- [simd_short_sat](./simd_short_sat-31jcj.md)
+  Returns a new vector from the specified vector of 64-bit, signed integer element.
+- [simd_short_sat](./simd_short_sat-319ir.md)
+  Returns a new vector from the specified vector of 64-bit, unsigned integer elements.
+- [simd_short_sat](./simd_short_sat-317n3.md)
+  Returns a new vector from the specified vector of 32-bit, floating-point elements.
+- [simd_short_sat](./simd_short_sat-3170j.md)
+  Returns a new vector from the specified vector of 64-bit, floating-point elements.
 
 ## See Also
 

@@ -28,6 +28,8 @@ class NSTreeNode
 ### Creating tree nodes
 - [init(representedObject: Any?)](./nstreenode/init%28representedobject%29.md)
   Initializes a newly allocated tree node that represents the specified object.
+- [+ treeNodeWithRepresentedObject:](./nstreenode/treenodewithrepresentedobject_.md)
+  Creates and returns a tree node that represents the specified object.
 ### Getting information about a node
 - [var representedObject: Any?](./nstreenode/representedobject.md)
   The object the tree node represents.

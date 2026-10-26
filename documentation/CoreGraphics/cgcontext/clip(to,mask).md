@@ -47,6 +47,12 @@ If the `mask` parameter is an image, then `mask` acts like an alpha mask and is 
   Sets the clipping path to the intersection of the current clipping path with the region defined by an array of rectangles.
 - [var boundingBoxOfClipPath: CGRect](./boundingboxofclippath.md)
   Returns the bounding box of a clipping path.
+- [CGContextClip](../cgcontextclip.md)
+  Modifies the current clipping path, using the nonzero winding number rule.
+- [CGContextEOClip](../cgcontexteoclip.md)
+  Modifies the current clipping path, using the even-odd rule.
+- [CGContextClipToRects](../cgcontextcliptorects.md)
+  Sets the clipping path to the intersection of the current clipping path with the region defined by an array of rectangles.
 
 
 ---

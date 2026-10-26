@@ -43,6 +43,7 @@ struct CMIOObjectPropertyAddress;
 - [struct CMIODeviceStreamConfiguration](./cmiodevicestreamconfiguration.md)
 - [struct CMIOStreamDeck](./cmiostreamdeck.md)
 - [struct CMIOStreamScheduledOutputNotificationProcAndRefCon](./cmiostreamscheduledoutputnotificationprocandrefcon.md)
+- [CMIOHardwarePlugInInterface](./cmiohardwareplugininterface.md)
 
 
 ---

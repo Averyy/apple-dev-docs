@@ -25,6 +25,10 @@ class Request
 
 ### Instance Properties
 - [var content: UITabSidebarItem.Content](./request/content.md)
+- [action](../uitabsidebaritemrequest/action.md)
+  The action that the receiver represents. Only one of `tab` or `action` will be valid for an item.
+- [tab](../uitabsidebaritemrequest/tab.md)
+  The tab that the receiver represents. Only one of `tab` or `action` will be valid for an item.
 
 ## Relationships
 
@@ -52,6 +56,7 @@ class Request
   An object for managing and configuring the sidebar.
 - [class UITabSidebarItem](../uitabsidebaritem.md)
 - [UITabBarController.Sidebar.Animating](../uitabbarcontroller/sidebar-swift.class/animating.md)
+- [UITabSidebarScrollTarget](../uitabsidebarscrolltarget.md)
 
 
 ---

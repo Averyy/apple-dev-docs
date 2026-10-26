@@ -109,6 +109,8 @@ If you know that a certificate comes unaltered from its sender, you can be confi
   Trust settings returned in usage constraints dictionaries.
 - [enum SecTrustSettingsDomain](./sectrustsettingsdomain.md)
   The trust settings domains.
+- [kSecTrustSettingsDefaultRootCertSetting](./ksectrustsettingsdefaultrootcertsetting.md)
+  A value indicating the default root certificate trust settings when used as a certificate object in a trust settings API function.
 ### Legacy Symbols
 - [func SecTrustEvaluate(SecTrust, UnsafeMutablePointer<SecTrustResultType>) -> OSStatus](./sectrustevaluate%28_,_%29.md)
   Evaluates trust for the specified certificate and policies.
@@ -118,6 +120,18 @@ If you know that a certificate comes unaltered from its sender, you can be confi
   A block called with the results of an asynchronous trust evaluation.
 - [func SecTrustSetKeychains(SecTrust, CFTypeRef?) -> OSStatus](./sectrustsetkeychains%28_,_%29.md)
   Sets the keychains searched for intermediate certificates when evaluating a trust management object.
+- [SecTrustUserSetting](./sectrustusersetting.md)
+  Represents user-specified trust settings.
+- [SecTrustSetParameters](./sectrustsetparameters.md)
+  Sets the action and action data for a trust management object.
+- [SecTrustGetCssmResult](./sectrustgetcssmresult.md)
+  Retrieves the CSSM trust result.
+- [SecTrustGetCssmResultCode](./sectrustgetcssmresultcode.md)
+  Retrieves the CSSM result code from the most recent trust evaluation for a trust management object.
+- [SecTrustGetTPHandle](./sectrustgettphandle.md)
+  Retrieves the trust policy handle.
+- [SecTrustGetResult](./sectrustgetresult.md)
+  Retrieves details on the outcome of a call to the function `SecTrustEvaluate`.
 
 
 ---

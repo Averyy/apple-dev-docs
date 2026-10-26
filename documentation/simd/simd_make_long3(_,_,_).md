@@ -23,6 +23,8 @@ static simd_long3 simd_make_long3(simd_long1 x, simd_long1 y, simd_long1 z);
   Returns a new vector with the first element set to a scalar value, and other elements set to zero.
 - [func simd_make_long3_undef(simd_long1) -> simd_long3](./simd_make_long3_undef%28_%29-4ehx.md)
   Returns a new vector with the first element set to a scalar value, and other elements undefined.
+- [vector3](./vector3-3pmc2.md)
+  Returns a new vector from the specified scalar values.
 
 
 ---

@@ -122,11 +122,11 @@ func photoOutput(_ output: AVCapturePhotoOutput,
 }
 ```
 
-> **Note**:  To display Live Photos after capture, see [`PHLivePhoto`](https://developer.apple.com/documentation/photos/phlivephoto) and [`PHLivePhotoView`](https://developer.apple.com/documentation/photosui/phlivephotoview).
+> **Note**:  To display Live Photos after capture, see [`PHLivePhoto`](../Photos/phlivephoto.md) and [`PHLivePhotoView`](../PhotosUI/phlivephotoview.md).
 
 ##### Save a Live Photo to the photos library
 
-Use the [`PHAssetCreationRequest`](https://developer.apple.com/documentation/photos/phassetcreationrequest) class to create a single Photos asset consisting of media from multiple files—in the case of a Live Photo, the still image and its paired video. As in [Saving captured photos](./saving-captured-photos.md), you’ll need to wrap that request in a [`PHPhotoLibrary`](https://developer.apple.com/documentation/photos/phphotolibrary) change block, and first make sure that your app has the user’s permission to access Photos.
+Use the [`PHAssetCreationRequest`](../Photos/phassetcreationrequest.md) class to create a single Photos asset consisting of media from multiple files—in the case of a Live Photo, the still image and its paired video. As in [Saving captured photos](./saving-captured-photos.md), you’ll need to wrap that request in a [`PHPhotoLibrary`](../Photos/phphotolibrary.md) change block, and first make sure that your app has the user’s permission to access Photos.
 
 ```swift
 func saveLivePhotoToPhotosLibrary(stillImageData: Data, livePhotoMovieURL: URL) {    PHPhotoLibrary.requestAuthorization { status in
@@ -148,7 +148,7 @@ func saveLivePhotoToPhotosLibrary(stillImageData: Data, livePhotoMovieURL: URL) 
 }
 ```
 
-> 💡 **Tip**:  Use the [`shouldMoveFile`](https://developer.apple.com/documentation/photos/phassetresourcecreationoptions/shouldmovefile) option so that iOS can transfer the movie file from your app’s sandbox to the system Photos library without an expensive data-copying operation.
+> 💡 **Tip**:  Use the [`shouldMoveFile`](../Photos/phassetresourcecreationoptions/shouldmovefile.md) option so that iOS can transfer the movie file from your app’s sandbox to the system Photos library without an expensive data-copying operation.
 
 ##### Track Live Photo progress
 

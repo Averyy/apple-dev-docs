@@ -63,6 +63,8 @@ func fetchShare(
   Creates a new record ID with the specified name in the default zone.
 - [convenience init(recordName: String, zoneID: CKRecordZone.ID)](./ckrecord/id/init%28recordname,zoneid%29.md)
   Creates a new record ID with the specified name and zone information.
+- [- initWithRecordName:zoneID:](./ckrecordid/initwithrecordname_zoneid_.md)
+  Creates a new record ID with the specified name and zone information.
 
 
 ---

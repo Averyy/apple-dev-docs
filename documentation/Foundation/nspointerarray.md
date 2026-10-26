@@ -50,6 +50,14 @@ When enumerating a pointer array with [`NSFastEnumeration`](./nsfastenumeration.
   Returns a new pointer array that maintains strong references to its elements.
 - [class func weakObjects() -> NSPointerArray](./nspointerarray/weakobjects%28%29.md)
   Returns a new pointer array that maintains weak references to its elements.
+- [+ pointerArrayWithOptions:](./nspointerarray/pointerarraywithoptions_.md)
+  Returns a new pointer array initialized to use the given options.
+- [+ pointerArrayWithPointerFunctions:](./nspointerarray/pointerarraywithpointerfunctions_.md)
+  A new pointer array initialized to use the given functions.
+- [+ pointerArrayWithStrongObjects](./nspointerarray/pointerarraywithstrongobjects.md)
+  Returns a new pointer array that maintains strong references to its elements.
+- [+ pointerArrayWithWeakObjects](./nspointerarray/pointerarraywithweakobjects.md)
+  Returns a new pointer array that maintains weak references to its elements.
 ### Managing the Collection
 - [var count: Int](./nspointerarray/count.md)
   The number of elements in the receiver.

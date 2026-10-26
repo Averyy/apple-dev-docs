@@ -33,6 +33,12 @@ The `NSAssertionHandler` object associated with the current thread.
 
 If no assertion handler is associated with the current thread, this method creates one and assigns it to the thread.
 
+## See Also
+
+### Handling Assertion Failures
+- [- handleFailureInFunction:file:lineNumber:description:](./handlefailureinfunction_file_linenumber_description_.md)
+- [- handleFailureInMethod:object:file:lineNumber:description:](./handlefailureinmethod_object_file_linenumber_description_.md)
+
 
 ---
 

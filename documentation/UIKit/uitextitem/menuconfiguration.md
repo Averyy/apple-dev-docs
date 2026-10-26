@@ -34,6 +34,12 @@ Create and return a menu configuration for a text item in [`textView(_:menuConfi
   Creates a text item menu configuration with the specified menu and preview.
 - [UITextItem.MenuConfiguration.Preview](./menuconfiguration/preview.md)
   Constants that indicate what type of preview to display alongside the text item’s menu.
+- [+ configurationWithMenu:](../uitextitemmenuconfiguration/configurationwithmenu_.md)
+  Creates a menu configuration with the specified menu and a default preview.
+- [+ configurationWithPreview:menu:](../uitextitemmenuconfiguration/configurationwithpreview_menu_.md)
+  Creates a menu configuration with the specified menu and custom preview.
+- [UITextItemMenuPreview](../uitextitemmenupreview.md)
+  An object representing the preview for a text item.
 
 ## Relationships
 
@@ -55,6 +61,8 @@ Create and return a menu configuration for a text item in [`textView(_:menuConfi
   An object for attaching custom actions and menus to links, text attachments, or other specific text in a text view.
 - [protocol UITextViewDelegate](../uitextviewdelegate.md)
   The methods for receiving editing-related messages for text view objects.
+- [UITextItemContentType](../uitextitemcontenttype.md)
+  Constants that describe and capture the type of content a text item represents along with a specific related value.
 
 
 ---

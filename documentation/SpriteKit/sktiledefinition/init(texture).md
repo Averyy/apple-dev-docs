@@ -37,6 +37,11 @@ The size of the newly created tile definition will be the same as the texture us
 
 - `texture`: The texture to reference for the definition’s size and content.
 
+## See Also
+
+### Creating a Tile with a Texture
+- [+ tileDefinitionWithTexture:](./tiledefinitionwithtexture_.md)
+
 
 ---
 

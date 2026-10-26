@@ -150,11 +150,11 @@ Because people probably won’t join the call at the same time, the app needs to
 
 #### Upload images
 
-The app uses a [`PhotosPicker`](https://developer.apple.com/documentation/photosui/photospicker) to allow people to upload images from their photo library. For more information on using `PhotosPicker` in SwiftUI, see [Bringing Photos picker to your SwiftUI app](../PhotoKit/bringing-photos-picker-to-your-swiftui-app.md).
+The app uses a [`PhotosPicker`](../PhotosUI/photospicker.md) to allow people to upload images from their photo library. For more information on using `PhotosPicker` in SwiftUI, see [Bringing Photos picker to your SwiftUI app](../PhotoKit/bringing-photos-picker-to-your-swiftui-app.md).
 
 The sample app represents images chosen from the photo picker as instances of `DisplayImage`, a [`Transferable`](../CoreTransferable/transferable.md) structure that stores image data and metadata like the date created and the owner.
 
-When someone chooses an image from the photo picker, the app loads a `Data` object from the [`PhotosPickerItem`](https://developer.apple.com/documentation/photosui/photospickeritem) that represents the image and updates the local images array with that data:
+When someone chooses an image from the photo picker, the app loads a `Data` object from the [`PhotosPickerItem`](../PhotosUI/photospickeritem.md) that represents the image and updates the local images array with that data:
 
 ```swift
  if let loadedData = try await photoPickerItem.loadTransferable(type: Data.self) {

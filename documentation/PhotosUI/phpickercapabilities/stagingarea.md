@@ -34,6 +34,8 @@ PHPickerCapabilitiesStagingArea
   A capability that corresponds to the search bar.
 - [static var sensitivityAnalysisIntervention: PHPickerCapabilities](./sensitivityanalysisintervention.md)
   A capability that prompts for confirmation if a person selects a photo that contains nudity.
+- [PHPickerCapabilitiesNone](./phpickercapabilitiesnone.md)
+  An option that represents no capabilities.
 
 
 ---

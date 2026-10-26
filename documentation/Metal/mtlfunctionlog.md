@@ -51,6 +51,8 @@ protocol MTLFunctionLog : NSObjectProtocol
 ### Shader logs
 - [struct MTLLogContainer](./mtllogcontainer-swift.struct.md)
   A collection of logged messages, created when a Metal device runs a command buffer.
+- [MTLLogContainer](./mtllogcontainer-c.protocol.md)
+  A collection of logged messages, created when a Metal device runs a command buffer.
 
 
 ---

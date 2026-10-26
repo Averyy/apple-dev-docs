@@ -302,13 +302,13 @@ Ellipses (`...`) indicate lines of code that have been omitted from this example
   Define the layout of a text component to wrap around another component.
 - [Nesting Components in an Article](./nesting-components-in-an-article.md)
   Use container components to create the component hierarchies you need for special article designs.
-- [object Anchor](https://developer.apple.com/documentation/applenewsformat/anchor)
+- [object Anchor](../AppleNewsFormat/anchor.md)
   The object for anchoring one component to another component in your article’s layout.
-- [object ComponentStyle](https://developer.apple.com/documentation/applenewsformat/componentstyle)
+- [object ComponentStyle](../AppleNewsFormat/componentstyle.md)
   The object for setting style properties for components, including background color and fill, borders, and table styles.
-- [object Border](https://developer.apple.com/documentation/applenewsformat/border)
+- [object Border](../AppleNewsFormat/border.md)
   The object for setting borders for component sides or tables.
-- [object StrokeStyle](https://developer.apple.com/documentation/applenewsformat/strokestyle)
+- [object StrokeStyle](../AppleNewsFormat/strokestyle.md)
   The object for defining the color, width, and style of a border or divider.
 ### Advanced Design Tutorial 2: Layout and Positioning
 - [Creating a Complex, Layered Header](./creating-a-complex-layered-header.md)

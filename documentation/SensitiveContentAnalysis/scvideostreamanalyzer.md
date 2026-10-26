@@ -78,6 +78,10 @@ For more information, see [Detecting sensitive content in media and providing in
   The results of the first detected sensitive video frame.
 - [func continueStream()](./scvideostreamanalyzer/continuestream%28%29.md)
   Indicates that your app is ready to resume video stream analysis.
+- [analysisChangedHandler](./scvideostreamanalyzer/analysischangedhandler.md)
+  A handler that your app provides to react to sensitive content detection.
+- [SCVideoStreamAnalysisChangeHandler](./scvideostreamanalysischangehandler.md)
+  A handler your app provides to receive video-stream analysis results.
 
 ## Relationships
 

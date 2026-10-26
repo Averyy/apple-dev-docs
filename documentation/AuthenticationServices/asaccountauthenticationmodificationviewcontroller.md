@@ -75,6 +75,7 @@ Adding an account modification extension lets your app seamlessly upgrade user p
 
 ### Inherits From
 - [UIViewController](../UIKit/uiviewcontroller.md)
+- [NSViewController](../AppKit/nsviewcontroller.md)
 ### Conforms To
 - [CVarArg](../Swift/cvararg.md)
 - [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)

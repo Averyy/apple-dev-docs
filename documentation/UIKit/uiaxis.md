@@ -35,6 +35,8 @@ enum UIAxis : NSUInteger;
 ### Initializers
 - [init(rawValue: UInt)](./uiaxis/init%28rawvalue%29.md)
   Creates an axis with the specified raw value.
+- [UIAxisNeither](./uiaxis/uiaxisneither.md)
+  A value that represents neither axis.
 
 ## Relationships
 

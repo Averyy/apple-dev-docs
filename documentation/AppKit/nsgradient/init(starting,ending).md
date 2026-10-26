@@ -39,6 +39,8 @@ The initialized `NSGradient` object.
   Initializes a newly allocated gradient object with the specified colors, color locations, and color space.
 - [init?(coder: NSCoder)](./init%28coder%29.md)
   Creates a gradient from data in an unarchiver.
+- [- initWithColorsAndLocations:](./initwithcolorsandlocations_.md)
+  Initializes a newly allocated gradient object with a comma-separated list of arguments.
 
 
 ---

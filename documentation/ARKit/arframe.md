@@ -97,6 +97,8 @@ Each frame can contain additional data, for example, EXIF ([`exifData`](./arfram
 ### Instance Methods
 - [func displayTransform(viewRotationAngle: CGFloat, viewportSize: CGSize) -> CGAffineTransform](./arframe/displaytransform%28viewrotationangle,viewportsize%29.md)
   Returns a display transform for the provided viewport size and view angle.
+- [- displayTransformForOrientation:viewportSize:](./arframe/displaytransformfororientation_viewportsize_.md)
+  Returns an affine transform for converting between normalized image coordinates and a coordinate space appropriate for rendering the camera image onscreen.
 
 ## Relationships
 

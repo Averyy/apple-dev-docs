@@ -49,6 +49,8 @@ let myDataDetector: WKDataDetectorTypes = []
   Detect Spotlight suggestions and turn them into links.
 - [static var all: WKDataDetectorTypes](./wkdatadetectortypes/all.md)
   Detect all data types and turn them into links.
+- [WKDataDetectorTypeNone](./wkdatadetectortypes/wkdatadetectortypenone.md)
+  No data detection.
 ### Initializers
 - [init(rawValue: UInt)](./wkdatadetectortypes/init%28rawvalue%29.md)
 ### Deprecated Types

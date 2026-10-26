@@ -23,6 +23,8 @@ static simd_long4 simd_make_long4(simd_long1 other);
   Returns a new vector from the specified scalar values.
 - [func simd_make_long4_undef(simd_long1) -> simd_long4](./simd_make_long4_undef%28_%29-6bf3i.md)
   Returns a new vector with the first element set to a scalar value, and other elements undefined.
+- [vector4](./vector4-96he8.md)
+  Returns a new vector from the specified scalar values.
 
 
 ---

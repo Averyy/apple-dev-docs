@@ -32,8 +32,8 @@ func setProjectPreviewImage(_ previewImage: NSImage)
 PhotoKit requires that you set a project preview in the following situations:
 
 - Whenever the project changes in a way that requires a new preview.
-- During or after execution of the [`beginProject(with:projectInfo:completion:)`](https://developer.apple.com/documentation/photosui/phprojectextensioncontroller/beginproject(with:projectinfo:completion:)) protocol method.
-- During or after execution of the [`resumeProject(with:completion:)`](https://developer.apple.com/documentation/photosui/phprojectextensioncontroller/resumeproject(with:completion:)) protocol method.
+- During or after execution of the [`beginProject(with:projectInfo:completion:)`](../../PhotosUI/phprojectextensioncontroller/beginproject%28with,projectinfo,completion%29.md) protocol method.
+- During or after execution of the [`resumeProject(with:completion:)`](../../PhotosUI/phprojectextensioncontroller/resumeproject%28with,completion%29.md) protocol method.
 
 ## Parameters
 

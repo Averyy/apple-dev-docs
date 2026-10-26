@@ -385,6 +385,11 @@
       "file_path": "documentation/MessageUI/mfmessagecomposeviewcontrollerdelegate/messagecomposeviewcontroller(_,didfinishwith).md",
       "hash": "00b0625f0950567a55ddf294dfb24aaa78850286de5d29930244b320ffcd95f4"
     },
+    "https://developer.apple.com/documentation/messageui/mfmessagecomposeviewcontrollertextmessageavailabilitydidchangenotification": {
+      "etag": "\"2116-65d55e5e021e7-df\"",
+      "file_path": "documentation/MessageUI/mfmessagecomposeviewcontrollertextmessageavailabilitydidchangenotification.md",
+      "hash": "ced8a2c4f9e3a9d068b2725f078e26cd8b24743d18eacde68885ce2b1e15b738"
+    },
     "https://developer.apple.com/documentation/messageui/mfmessagecomposeviewcontrollertextmessageavailabilitykey": {
       "etag": "\"2df1-65d55e5e167e4-df\"",
       "file_path": "documentation/MessageUI/mfmessagecomposeviewcontrollertextmessageavailabilitykey.md",
@@ -780,6 +785,11 @@
       "file_path": "documentation/MessageUI/mfmessagecomposeviewcontrollerdelegate/messagecomposeviewcontroller(_,didfinishwith).md",
       "hash": "00b0625f0950567a55ddf294dfb24aaa78850286de5d29930244b320ffcd95f4"
     },
+    "https://developer.apple.com/tutorials/data/documentation/messageui/mfmessagecomposeviewcontrollertextmessageavailabilitydidchangenotification.json": {
+      "etag": "\"2116-65d55e5e021e7-df\"",
+      "file_path": "documentation/MessageUI/mfmessagecomposeviewcontrollertextmessageavailabilitydidchangenotification.md",
+      "hash": "ced8a2c4f9e3a9d068b2725f078e26cd8b24743d18eacde68885ce2b1e15b738"
+    },
     "https://developer.apple.com/tutorials/data/documentation/messageui/mfmessagecomposeviewcontrollertextmessageavailabilitykey.json": {
       "etag": "\"2df1-65d55e5e167e4-df\"",
       "file_path": "documentation/MessageUI/mfmessagecomposeviewcontrollertextmessageavailabilitykey.md",
@@ -793,8 +803,8 @@
   },
   "metadata": {
     "render": {
-      "version": 1
+      "version": 2
     },
-    "total_pages": 158
+    "total_pages": 160
   }
 }

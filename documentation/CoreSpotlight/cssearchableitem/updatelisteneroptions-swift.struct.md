@@ -37,6 +37,8 @@ When you configure a [`CSSearchableItem`](../cssearchableitem.md) with a listene
   An option to summarize the contents of your searchable item. Specify this option only for items that contain emails, messages, or audio transcripts.
 - [static var priority: CSSearchableItem.UpdateListenerOptions](./updatelisteneroptions-swift.struct/priority.md)
   An option to classify the priority of SMS message content. Specify this option only if your item contains messages.
+### Enumeration Cases
+- [CSSearchableItemUpdateListenerOptionDefault](../cssearchableitemupdatelisteneroptions/cssearchableitemupdatelisteneroptiondefault.md)
 
 ## Relationships
 

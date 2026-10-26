@@ -36,6 +36,8 @@ A user generates and owns a personal voice.
 ### Inspecting a voice trait
 - [static var isNoveltyVoice: AVSpeechSynthesisVoice.Traits](./isnoveltyvoice.md)
   The trait that indicates a voice is a novelty voice.
+- [AVSpeechSynthesisVoiceTraitNone](../../avspeechsynthesisvoicetraits/avspeechsynthesisvoicetraitnone.md)
+  The trait that indicates a voice is a regular voice.
 
 
 ---

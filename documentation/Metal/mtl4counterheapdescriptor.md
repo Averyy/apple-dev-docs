@@ -76,6 +76,8 @@ class MTL4CounterHeapDescriptor
   Represents options to configure a commit operation on a command queue.
 - [protocol MTL4CommitFeedback](./mtl4commitfeedback.md)
   Describes an object containing debug information from Metal to your app after completing a workload.
+- [MTL4CommitFeedbackHandler](./mtl4commitfeedbackhandler.md)
+  Defines the block signature for a callback Metal invokes to provide your app feedback after completing a workload.
 
 
 ---

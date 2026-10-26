@@ -30,6 +30,8 @@ Provide a space for controls under a window’s title bar and above your custom 
   A toolbar separator that aligns with the vertical split view in the same window.
 - [class NSUIViewToolbarItem](./nsuiviewtoolbaritem.md)
   An item in a window’s toolbar that hosts a custom UIKit view.
+- [NSToolbarItemIdentifier](./nstoolbaritemidentifier.md)
+  UIKit-specific constants for the standard toolbar items that the system provides.
 ### Item validation
 - [protocol NSCloudSharingValidation](../AppKit/nscloudsharingvalidation.md)
   A protocol that a Cloud-sharing toolbar item uses to get validation of an item.

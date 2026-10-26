@@ -236,7 +236,7 @@ Ellipses (`...`) indicate lines of code that have been omitted from this example
 
 To view the dark color scheme in Dark Mode, switch your simulator device to a dark systemwide appearance (Features > Toggle Appearance).
 
-You can maintain the dark color scheme for your article even when a user switches between a light or dark appearance. Set the `preferredColorScheme` conditional to define the background color for a specific appearance. For more information about conditionals, see Apple News Format > [`Condition`](https://developer.apple.com/documentation/applenewsformat/condition).
+You can maintain the dark color scheme for your article even when a user switches between a light or dark appearance. Set the `preferredColorScheme` conditional to define the background color for a specific appearance. For more information about conditionals, see Apple News Format > [`Condition`](../AppleNewsFormat/condition.md).
 
 In [Define a Dark Background Color for Components](./giving-the-article-a-dark-color-scheme.md#Define-a-Dark-Background-Color-for-Components), you created a new `ComponentStyle` called `darkBackgroundStyle`. Now you’ll update that style with a conditional to explicitly set a value for your article’s  dark appearance.
 
@@ -316,9 +316,9 @@ For information about updating your article so that it adapts when Dark Mode is 
   Change the appearance of the backgrounds in your article.
 - [Defining a Component Style](./defining-a-component-style.md)
   Set style options for the components in your article.
-- [object ComponentStyle](https://developer.apple.com/documentation/applenewsformat/componentstyle)
+- [object ComponentStyle](../AppleNewsFormat/componentstyle.md)
   The object for setting style properties for components, including background color and fill, borders, and table styles.
-- [object TextStyle](https://developer.apple.com/documentation/applenewsformat/textstyle)
+- [object TextStyle](../AppleNewsFormat/textstyle.md)
   The object for defining the text style, such as font family, size, and color, that you can apply to ranges of text.
 ### Advanced Design Tutorial 3: More Ideas
 - [Adding a Video](./adding-a-video.md)

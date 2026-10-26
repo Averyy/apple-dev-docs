@@ -16,6 +16,8 @@ This includes the onscreen windows seen on the user’s desktop and any offscree
   Generates and returns information about the selected windows in the current user session.
 - [func CGWindowListCreateDescriptionFromArray(CFArray?) -> CFArray?](./cgwindowlistcreatedescriptionfromarray%28_%29.md)
   Generates and returns information about windows with the specified window IDs.
+- [CGWindowListCreate](./cgwindowlistcreate.md)
+  Returns the list of window IDs associated with the specified windows in the current user session.
 ### Data Types
 - [typealias CGWindowID](./cgwindowid.md)
   The data type used to store window identifiers.

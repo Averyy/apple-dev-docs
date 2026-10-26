@@ -490,6 +490,11 @@
       "file_path": "documentation/Speech/sfacousticfeature/acousticfeaturevalueperframe-5krkk.md",
       "hash": "4bf6d4a08ba9792441e231123bd8165facc63d6dbe3ba0503e53663f3103133c"
     },
+    "https://developer.apple.com/documentation/speech/sfacousticfeature/acousticfeaturevalueperframe-gsz5": {
+      "etag": "\"173a-65d55bf724b42-df\"",
+      "file_path": "documentation/Speech/sfacousticfeature/acousticfeaturevalueperframe-gsz5.md",
+      "hash": "b924ed7cf536fc776eb6144b2b7687f947ef00daa634583ed9820f2a579231ca"
+    },
     "https://developer.apple.com/documentation/speech/sfacousticfeature/frameduration": {
       "etag": "\"2633-65d55bf724b42-df\"",
       "file_path": "documentation/Speech/sfacousticfeature/frameduration.md",
@@ -2420,6 +2425,11 @@
       "file_path": "documentation/Speech/sfacousticfeature/acousticfeaturevalueperframe-5krkk.md",
       "hash": "4bf6d4a08ba9792441e231123bd8165facc63d6dbe3ba0503e53663f3103133c"
     },
+    "https://developer.apple.com/tutorials/data/documentation/speech/sfacousticfeature/acousticfeaturevalueperframe-gsz5.json": {
+      "etag": "\"173a-65d55bf724b42-df\"",
+      "file_path": "documentation/Speech/sfacousticfeature/acousticfeaturevalueperframe-gsz5.md",
+      "hash": "b924ed7cf536fc776eb6144b2b7687f947ef00daa634583ed9820f2a579231ca"
+    },
     "https://developer.apple.com/tutorials/data/documentation/speech/sfacousticfeature/frameduration.json": {
       "etag": "\"2633-65d55bf724b42-df\"",
       "file_path": "documentation/Speech/sfacousticfeature/frameduration.md",
@@ -3863,8 +3873,8 @@
   },
   "metadata": {
     "render": {
-      "version": 1
+      "version": 2
     },
-    "total_pages": 772
+    "total_pages": 774
   }
 }

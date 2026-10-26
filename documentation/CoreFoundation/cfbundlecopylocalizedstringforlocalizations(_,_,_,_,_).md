@@ -64,6 +64,7 @@ Returns a localized string given a list of possible localizations. The one most 
   Copies the owner UUID associated with a `CFFileSecurityRef` object.
 - [func CFFileSecurityCreate(CFAllocator!) -> CFFileSecurity!](./cffilesecuritycreate%28_%29.md)
   Creates a `CFFileSecurityRef` object.
+- [CFAutorelease](./cfautorelease.md)
 
 
 ---

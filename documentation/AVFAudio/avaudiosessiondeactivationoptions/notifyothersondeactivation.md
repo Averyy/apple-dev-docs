@@ -24,6 +24,11 @@ static var notifyOthersOnDeactivation: AVAudioSessionDeactivationOptions { get }
 AVAudioSessionDeactivationOptionNotifyOthersOnDeactivation
 ```
 
+## See Also
+
+### Getting standard deactivation options
+- [AVAudioSessionDeactivationOptionNone](./avaudiosessiondeactivationoptionnone.md)
+
 
 ---
 

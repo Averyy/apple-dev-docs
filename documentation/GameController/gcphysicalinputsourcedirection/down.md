@@ -33,6 +33,8 @@ GCPhysicalInputSourceDirectionDown
   The physical input source supports the right direction.
 - [static var left: GCPhysicalInputSourceDirection](./left.md)
   The physical input source supports the left direction.
+- [GCPhysicalInputSourceDirectionNotApplicable](./gcphysicalinputsourcedirectionnotapplicable.md)
+  The physical input source doesn’t support directions.
 
 
 ---

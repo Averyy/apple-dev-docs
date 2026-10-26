@@ -44,6 +44,8 @@ You create an [`INSearchForPhotosIntentResponse`](./insearchforphotosintentrespo
 ### Accessing the Response Details
 - [var searchResultsCount: Int?](./insearchforphotosintentresponse/searchresultscount-82lnb.md)
   The number of photos that match the search parameters.
+- [searchResultsCount](./insearchforphotosintentresponse/searchresultscount-3i5mz.md)
+  The number of photos that match the search parameters.
 
 ## Relationships
 

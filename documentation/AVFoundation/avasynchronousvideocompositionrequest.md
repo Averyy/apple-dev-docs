@@ -56,6 +56,12 @@ The video compositor must adopt the [`AVVideoCompositing`](./avvideocompositing.
   Returns a source timed metadata group for the track that contains the specified identifier.
 - [var sourceTrackIDs: [NSNumber]](./avasynchronousvideocompositionrequest/sourcetrackids.md)
   The identifiers of tracks that contain source video.
+- [- attachSpatialVideoConfiguration:toPixelBuffer:](./avasynchronousvideocompositionrequest/attachspatialvideoconfiguration_topixelbuffer_.md)
+  Associates the pixel buffer with the specified spatial configuration.
+- [sourceSampleDataTrackIDs](./avasynchronousvideocompositionrequest/sourcesampledatatrackids-9vxz5.md)
+  The identifiers of tracks that contain source metadata.
+- [- sourceTaggedBufferGroupByTrackID:](./avasynchronousvideocompositionrequest/sourcetaggedbuffergroupbytrackid_.md)
+  Returns the source CMTaggedBufferGroupRef for the given track ID.
 ### Finishing the request
 - [func finish(withComposedVideoFrame: CVPixelBuffer)](./avasynchronousvideocompositionrequest/finish%28withcomposedvideoframe%29.md)
   Finishes the request to compose the frame.
@@ -67,6 +73,8 @@ The video compositor must adopt the [`AVVideoCompositing`](./avvideocompositing.
   Finishes the request with an error.
 - [func finishCancelledRequest()](./avasynchronousvideocompositionrequest/finishcancelledrequest%28%29.md)
   Cancels the request to compose a video frame.
+- [- finishWithComposedTaggedBufferGroup:](./avasynchronousvideocompositionrequest/finishwithcomposedtaggedbuffergroup_.md)
+  The method that the custom compositor calls when composition succeeds.
 
 ## Relationships
 

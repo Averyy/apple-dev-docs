@@ -35,6 +35,10 @@ You can invoke this method after invoking `decodeObject` to discover whether the
 ### Managing an NSUnarchiver
 - [var systemVersion: UInt32](./systemversion-swift.property.md)
   The system version number in effect when the archive was created.
+- [- objectZone](./objectzone-c.method.md)
+  Returns the memory zone used to allocate decoded objects.
+- [- setObjectZone:](./setobjectzone_.md)
+  Sets the memory zone used to allocate decoded objects.
 
 
 ---

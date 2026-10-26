@@ -35,6 +35,8 @@ var frameDuration: CMTime { get set }
   The scale at which the video composition should render.
 - [var animationTool: AVVideoCompositionCoreAnimationTool?](./animationtool.md)
   A video composition tool to use with Core Animation in offline rendering.
+- [outputBufferDescription](./outputbufferdescription.md)
+  The output buffers of the video composition can be specified with the outputBufferDescription. The value is an array of CMTagCollectionRef objects that describes the output buffers.
 
 
 ---

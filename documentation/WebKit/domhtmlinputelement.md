@@ -45,6 +45,7 @@ class DOMHTMLInputElement
 - [var useMap: String!](./domhtmlinputelement/usemap.md)
 - [var value: String!](./domhtmlinputelement/value.md)
 - [var willValidate: Bool](./domhtmlinputelement/willvalidate.md)
+- [accessKey](./domhtmlinputelement/accesskey.md)
 ### Instance Methods
 - [func click()](./domhtmlinputelement/click%28%29.md)
 - [func select()](./domhtmlinputelement/select%28%29.md)

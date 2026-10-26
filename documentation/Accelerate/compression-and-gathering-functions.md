@@ -16,6 +16,10 @@ Compress vectors based on the nonzero elements in a gating vector, or gather vec
   Compresses the specified single-precision vector using the nonzero values in a gating vector.
 - [static func compress<T, U, V>(T, gatingVector: U, result: inout V)](./vdsp/compress%28_,gatingvector,result%29-2yse4.md)
   Compresses the specified double-precision vector using the nonzero values in a gating vector.
+- [vDSP_vcmprs](./vdsp_vcmprs.md)
+  Generates a compressed copy of the specified single-precision vector using the nonzero values in a gating vector.
+- [vDSP_vcmprsD](./vdsp_vcmprsd.md)
+  Generates a compressed copy of the specified double-precision vector using the nonzero values in a gating vector.
 ### Vector gathering functions
 - [static func gather<T, U>(T, indices: U) -> [Float]](./vdsp/gather%28_,indices%29-4jwvh.md)
   Returns a gathered copy of the specified single-precision vector using a vector that defines the indices to keep.
@@ -25,6 +29,18 @@ Compress vectors based on the nonzero elements in a gating vector, or gather vec
   Gathers the specified single-precision vector using a vector that defines the indices to keep.
 - [static func gather<T, U, V>(T, indices: U, result: inout V)](./vdsp/gather%28_,indices,result%29-34yzg.md)
   Gathers the specified double-precision vector using a vector that defines the indices to keep.
+- [vDSP_vindex](./vdsp_vindex.md)
+  Generates a gathered copy of the specified single-precision vector using a vector that defines the zero-based indices to keep.
+- [vDSP_vindexD](./vdsp_vindexd.md)
+  Generates a gathered copy of the specified double-precision vector using a vector that defines the zero-based indices to keep.
+- [vDSP_vgathr](./vdsp_vgathr.md)
+  Generates a gathered copy of the specified single-precision vector using a vector that defines the one-based indices to keep.
+- [vDSP_vgathrD](./vdsp_vgathrd.md)
+  Generates a gathered copy of the specified double-precision vector using a vector that defines the one-based indices to keep.
+- [vDSP_vgathra](./vdsp_vgathra.md)
+  Generates a gathered copy of the specified single-precision vector using a vector that defines the pointers to the values to keep.
+- [vDSP_vgathraD](./vdsp_vgathrad.md)
+  Generates a gathered copy of the specified double-precision vector using a vector that defines the pointers to the values to keep.
 
 ## See Also
 

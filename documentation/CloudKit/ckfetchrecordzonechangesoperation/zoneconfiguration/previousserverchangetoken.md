@@ -37,6 +37,8 @@ Each fetch request returns a unique token in addition to any changes. CloudKit p
   The maximum number of records to fetch from the record zone.
 - [var desiredKeys: [CKRecord.FieldKey]?](./desiredkeys.md)
   The fields to fetch for the requested records.
+- [desiredKeys](../../ckfetchrecordzonechangesconfiguration/desiredkeys.md)
+  The fields to fetch for the requested records.
 
 
 ---

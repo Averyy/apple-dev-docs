@@ -55,6 +55,8 @@ enum NSKeyValueSetMutationKind : NSUInteger;
   The kinds of changes that can be observed.
 - [struct NSKeyValueObservingOptions](./nskeyvalueobservingoptions.md)
   The values that can be returned in a change dictionary.
+- [NSPresentationIntentKind](./nspresentationintentkind.md)
+  An enumeration of intended display styles for blocks of text like paragraphs, lists, and code blocks.
 
 
 ---

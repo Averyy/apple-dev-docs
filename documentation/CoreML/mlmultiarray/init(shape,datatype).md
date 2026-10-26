@@ -107,6 +107,8 @@ NSLog(@"After: %@\n", multiarray3x3);
   Creates a multiarray sharing the surface of a pixel buffer.
 - [enum MLMultiArrayDataType](../mlmultiarraydatatype.md)
   Constants that define the underlying element types a multiarray can store.
+- [- initWithShape:dataType:strides:](./initwithshape_datatype_strides_.md)
+  Creates the object with specified strides.
 
 
 ---

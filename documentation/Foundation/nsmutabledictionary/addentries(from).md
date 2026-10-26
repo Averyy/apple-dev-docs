@@ -44,6 +44,8 @@ If both dictionaries contain the same key, the receiving dictionary’s previous
   Adds a given key-value pair to the dictionary.
 - [func setDictionary([AnyHashable : Any])](./setdictionary%28_%29.md)
   Sets the contents of the receiving dictionary to entries in a given dictionary.
+- [- setObject:forKeyedSubscript:](./setobject_forkeyedsubscript_.md)
+  Adds a given key-value pair to the dictionary.
 
 
 ---

@@ -16,6 +16,17 @@ See the Overview section above for header-level documentation.
 - <IOBluetooth/OBEX.h>
 - <IOBluetooth/IOBluetoothUserLib.h>
 
+## Topics
+
+### Miscellaneous
+- [IOBluetoothOBEXSessionCreateWithIncomingIOBluetoothRFCOMMChannel](./iobluetoothobexsessioncreatewithincomingiobluetoothrfcommchannel.md)
+  Create an OBEX session with an IOBluetoothRFCOMMchannel. This implies you are creating a OBEX SERVER session that will dole out info to remote Bluetooth clients.
+- [IOBluetoothOBEXSessionCreateWithIOBluetoothDeviceRefAndChannelNumber](./iobluetoothobexsessioncreatewithiobluetoothdevicerefandchannelnumber.md)
+  Create an OBEX session with a device ref and an RFCOMM channel ID. This allows you to bypass the browser if you already know the SDP information.
+- [IOBluetoothOBEXSessionCreateWithIOBluetoothSDPServiceRecordRef](./iobluetoothobexsessioncreatewithiobluetoothsdpservicerecordref.md)
+  Create an OBEX session with a service ref, usually obtained from the device browser.
+- [IOBluetoothOBEXSessionOpenTransportConnection](./iobluetoothobexsessionopentransportconnection.md)
+
 ## See Also
 
 ### Reference

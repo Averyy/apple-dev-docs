@@ -5,6 +5,11 @@
       "file_path": "documentation/SecurityFoundation/SecurityFoundation.md",
       "hash": "e6f301eb1b98d23a5d8077d05eca66451308a50909ff4f5311c6710a8204e1bb"
     },
+    "https://developer.apple.com/documentation/securityfoundation/sf_extern": {
+      "etag": "\"9ff-65d55d3e6b2f9-df\"",
+      "file_path": "documentation/SecurityFoundation/sf_extern.md",
+      "hash": "b309147b96d8f64593c6b5752d9069875ae5a02f656a6e0a8d5a4ca5516c6f3d"
+    },
     "https://developer.apple.com/documentation/securityfoundation/sfauthorization": {
       "etag": "\"83a6-65d55d3e6b2f9-df\"",
       "file_path": "documentation/SecurityFoundation/sfauthorization.md",
@@ -55,10 +60,25 @@
       "file_path": "documentation/SecurityFoundation/sfauthorization/obtain(withrights,flags,environment,authorizedrights).md",
       "hash": "77a4cd4686c4410112937bb693fc0b5e9afbfd76cab9411b39551e30c80a1902"
     },
+    "https://developer.apple.com/documentation/securityfoundation/sfauthorization/permitwithright:flags:": {
+      "etag": "\"353b-65d55d3e6b2f9-df\"",
+      "file_path": "documentation/SecurityFoundation/sfauthorization/permitwithright_flags_.md",
+      "hash": "6a8ebf16d29dd70ae26383cf6a660ca3e0977cb575c25f825bee88c96947a05a"
+    },
+    "https://developer.apple.com/documentation/securityfoundation/sfauthorization/permitwithrights:flags:environment:authorizedrights:": {
+      "etag": "\"96be-65d55d3e6b2f9-df\"",
+      "file_path": "documentation/SecurityFoundation/sfauthorization/permitwithrights_flags_environment_authorizedrights_.md",
+      "hash": "50cfc0fb7225b2fab63b3c83e450ac77b795c28080b737313759a5311a88bf4c"
+    },
     "https://developer.apple.com/tutorials/data/documentation/SecurityFoundation.json": {
       "etag": "\"1804-65d55d3e6b2f9-df\"",
       "file_path": "documentation/SecurityFoundation/SecurityFoundation.md",
       "hash": "e6f301eb1b98d23a5d8077d05eca66451308a50909ff4f5311c6710a8204e1bb"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/securityfoundation/sf_extern.json": {
+      "etag": "\"9ff-65d55d3e6b2f9-df\"",
+      "file_path": "documentation/SecurityFoundation/sf_extern.md",
+      "hash": "b309147b96d8f64593c6b5752d9069875ae5a02f656a6e0a8d5a4ca5516c6f3d"
     },
     "https://developer.apple.com/tutorials/data/documentation/securityfoundation/sfauthorization.json": {
       "etag": "\"83a6-65d55d3e6b2f9-df\"",
@@ -109,12 +129,22 @@
       "etag": "\"c351-65d55d3e6b2f9-df\"",
       "file_path": "documentation/SecurityFoundation/sfauthorization/obtain(withrights,flags,environment,authorizedrights).md",
       "hash": "77a4cd4686c4410112937bb693fc0b5e9afbfd76cab9411b39551e30c80a1902"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/securityfoundation/sfauthorization/permitwithright:flags:.json": {
+      "etag": "\"353b-65d55d3e6b2f9-df\"",
+      "file_path": "documentation/SecurityFoundation/sfauthorization/permitwithright_flags_.md",
+      "hash": "6a8ebf16d29dd70ae26383cf6a660ca3e0977cb575c25f825bee88c96947a05a"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/securityfoundation/sfauthorization/permitwithrights:flags:environment:authorizedrights:.json": {
+      "etag": "\"96be-65d55d3e6b2f9-df\"",
+      "file_path": "documentation/SecurityFoundation/sfauthorization/permitwithrights_flags_environment_authorizedrights_.md",
+      "hash": "50cfc0fb7225b2fab63b3c83e450ac77b795c28080b737313759a5311a88bf4c"
     }
   },
   "metadata": {
     "render": {
-      "version": 1
+      "version": 2
     },
-    "total_pages": 22
+    "total_pages": 28
   }
 }

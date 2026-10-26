@@ -29,6 +29,8 @@ enum MTLCommandBufferErrorOption : NSUInteger;
 ### Buffer error options
 - [static var encoderExecutionStatus: MTLCommandBufferErrorOption](./mtlcommandbuffererroroption/encoderexecutionstatus.md)
   An option that instructs a command buffer to save additional details about a GPU runtime error.
+- [MTLCommandBufferErrorOptionNone](./mtlcommandbuffererroroption/mtlcommandbuffererroroptionnone.md)
+  An option that clears a command buffer’s error options.
 ### Protocol support
 - [init(rawValue: UInt)](./mtlcommandbuffererroroption/init%28rawvalue%29.md)
   Creates a set of error options from a raw integer value.

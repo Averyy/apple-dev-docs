@@ -79,6 +79,16 @@ This function obtains a list of the papers that a given printer claims to suppor
   Determines whether a printer is a PostScript printer.
 - [func PMPrinterIsRemote(PMPrinter, UnsafeMutablePointer<DarwinBoolean>) -> OSStatus](./api-1461377-pmprinterisremote.md)
   Indicates whether a printer is hosted by a remote print server.
+- [PMPrinterGetDescriptionURL](./core_printing/api-1805546-pmprintergetdescriptionurl.md)
+  Obtains a reference to the specified printer’s description file.
+- [PMPrinterGetDeviceURI](./core_printing/api-1805547-pmprintergetdeviceuri.md)
+  Obtains a copy of a printer's device URI.
+- [PMPrinterGetDriverReleaseInfo](./api-1464149-pmprintergetdriverreleaseinfo.md)
+  Obtains version information for the driver associated with the specified printer.
+- [PMPrinterGetLanguageInfo](./api-1458956-pmprintergetlanguageinfo.md)
+  Obtains information about the imaging language for the specified printer.
+- [PMPrinterGetPrinterResolution](./core_printing/api-1805554-pmprintergetprinterresolution.md)
+  Obtains a resolution setting for the specified printer.
 
 
 ---

@@ -37,6 +37,8 @@ enum NSDirectionalRectEdge : NSUInteger;
   The trailing edge.
 - [static var all: NSDirectionalRectEdge](./nsdirectionalrectedge/all.md)
   All edges.
+- [NSDirectionalRectEdgeNone](./nsdirectionalrectedge/nsdirectionalrectedgenone.md)
+  No specified edge.
 ### Initializers
 - [init(rawValue: UInt)](./nsdirectionalrectedge/init%28rawvalue%29.md)
   Creates an edge with the specified raw value.

@@ -46,6 +46,8 @@ This method is typically used by frameworks and plug-ins to locate their own bun
   Returns the `NSBundle` object with which the specified class is associated.
 - [init?(path: String)](./init%28path%29.md)
   Returns an `NSBundle` object initialized to correspond to the specified directory.
+- [+ bundleWithPath:](../nsbundle/bundlewithpath_.md)
+  Returns an `NSBundle` object that corresponds to the specified directory.
 
 
 ---

@@ -53,6 +53,8 @@ An [`SKScene`](./skscene.md) object represents a scene of content in SpriteKit. 
   Initializes a new scene object.
 - [var size: CGSize](./skscene/size.md)
   The dimensions of the scene, in points.
+- [+ sceneWithSize:](./skscene/scenewithsize_.md)
+  Creates and returns a new scene object.
 ### Stretching Content to Fit the View
 - [Scaling a Scene’s Content to Fit the View](./scaling-a-scene-s-content-to-fit-the-view.md)
   Configure the scale mode to determine how a scene is sized to fit its view.

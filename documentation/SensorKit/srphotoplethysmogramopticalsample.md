@@ -98,6 +98,16 @@ For the third-generation sensors, the mapping of the optical heart sensor (Serie
 - [SRPhotoplethysmogramOpticalSample.NoiseTerms](./srphotoplethysmogramopticalsample/noiseterms-swift.struct.md)
   The mathematical terms that you use to compute the photoplethysmogram (PPG) noise.
 - [var normalizedReflectance: Double?](./srphotoplethysmogramopticalsample/normalizedreflectance-15f2k.md)
+- [whiteNoise](./srphotoplethysmogramopticalsample/whitenoise.md)
+  An estimate of the white noise of the sensor.
+- [pinkNoise](./srphotoplethysmogramopticalsample/pinknoise.md)
+  An estimate of the pink noise of the sensor.
+- [backgroundNoise](./srphotoplethysmogramopticalsample/backgroundnoise.md)
+  An estimated timeseries of ambient noise intrusion.
+- [backgroundNoiseOffset](./srphotoplethysmogramopticalsample/backgroundnoiseoffset.md)
+  The white noise variance estimate in the background noise signal.
+- [normalizedReflectance](./srphotoplethysmogramopticalsample/normalizedreflectance-9aidm.md)
+  The photoplethysmogram waveform in normalized units.
 
 ## Relationships
 

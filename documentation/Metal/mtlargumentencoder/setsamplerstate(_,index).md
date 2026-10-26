@@ -35,6 +35,8 @@ func setSamplerState(_ sampler: (any MTLSamplerState)?, index: Int)
 ### Encoding samplers
 - [func setSamplerStates([(any MTLSamplerState)?], range: Range<Int>)](./setsamplerstates%28_,range%29.md)
   Encodes an array of samplers into the argument buffer.
+- [- setSamplerStates:withRange:](./setsamplerstates_withrange_.md)
+  Encodes an array of samplers into the argument buffer.
 
 
 ---

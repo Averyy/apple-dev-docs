@@ -3997,6 +3997,16 @@
       "file_path": "documentation/ProximityReader/proximityreaderdiscovery/topic/payment/howtotap.md",
       "hash": "9a2adc564aadb16594226e5c5cc6d3fa5b0bba0c08ec2cdc63c3909cd3f3a19f"
     },
+    "https://developer.apple.com/documentation/proximityreader/proximityreaderversionnumber": {
+      "etag": "\"b1c-659023495031f-df\"",
+      "file_path": "documentation/ProximityReader/proximityreaderversionnumber.md",
+      "hash": "2a22cc86d57598d5660d52de4ebf4975ce4a39d536efa15d2f875730b2188075"
+    },
+    "https://developer.apple.com/documentation/proximityreader/proximityreaderversionstring": {
+      "etag": "\"b62-6590234a0dee3-df\"",
+      "file_path": "documentation/ProximityReader/proximityreaderversionstring.md",
+      "hash": "fbde3e520f9f172bd31d9063abf63e9ee6e9764444d0c2632c0fbd9dc65d8145"
+    },
     "https://developer.apple.com/documentation/proximityreader/setting-up-the-entitlement-for-tap-to-pay-on-iphone": {
       "etag": "\"45cc-65d55e9317dd8-df\"",
       "file_path": "documentation/ProximityReader/setting-up-the-entitlement-for-tap-to-pay-on-iphone.md",
@@ -8249,6 +8259,16 @@
       "file_path": "documentation/ProximityReader/proximityreaderdiscovery/topic/payment/howtotap.md",
       "hash": "9a2adc564aadb16594226e5c5cc6d3fa5b0bba0c08ec2cdc63c3909cd3f3a19f"
     },
+    "https://developer.apple.com/tutorials/data/documentation/proximityreader/proximityreaderversionnumber.json": {
+      "etag": "\"b1c-659023495031f-df\"",
+      "file_path": "documentation/ProximityReader/proximityreaderversionnumber.md",
+      "hash": "2a22cc86d57598d5660d52de4ebf4975ce4a39d536efa15d2f875730b2188075"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/proximityreader/proximityreaderversionstring.json": {
+      "etag": "\"b62-6590234a0dee3-df\"",
+      "file_path": "documentation/ProximityReader/proximityreaderversionstring.md",
+      "hash": "fbde3e520f9f172bd31d9063abf63e9ee6e9764444d0c2632c0fbd9dc65d8145"
+    },
     "https://developer.apple.com/tutorials/data/documentation/proximityreader/setting-up-the-entitlement-for-tap-to-pay-on-iphone.json": {
       "etag": "\"45cc-65d55e9317dd8-df\"",
       "file_path": "documentation/ProximityReader/setting-up-the-entitlement-for-tap-to-pay-on-iphone.md",
@@ -8507,8 +8527,8 @@
   },
   "metadata": {
     "render": {
-      "version": 1
+      "version": 2
     },
-    "total_pages": 1708
+    "total_pages": 1712
   }
 }

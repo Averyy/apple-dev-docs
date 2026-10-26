@@ -26,6 +26,22 @@ var isPlayable: Bool { get }
 @property (nonatomic, readonly, getter=isPlayable) BOOL playable;
 ```
 
+## See Also
+
+### Accessing track information
+- [formatDescriptions](./formatdescriptions.md)
+  The format descriptions of the media samples that a track references.
+- [decodable](./isdecodable.md)
+  A Boolean value that indicates whether the track is decodable in the current environment.
+- [enabled](./isenabled.md)
+  A Boolean value that indicates whether the track’s container enables it.
+- [selfContained](./isselfcontained.md)
+  A Boolean value that indicates whether this track references sample data only within its container file.
+- [totalSampleDataLength](./totalsampledatalength.md)
+  The total number of bytes of sample data the track requires.
+- [- hasMediaCharacteristic:](./hasmediacharacteristic%28_%29.md)
+  Returns a Boolean value that indicates whether the track references media with the specified media characteristic.
+
 
 ---
 

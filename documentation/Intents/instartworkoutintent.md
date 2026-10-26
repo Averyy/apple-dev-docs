@@ -47,6 +47,8 @@ The following table lists additional attributes of this intent object:
 ### Creating the Intent Object
 - [convenience init(workoutName: INSpeakableString?, goalValue: Double?, workoutGoalUnitType: INWorkoutGoalUnitType, workoutLocationType: INWorkoutLocationType, isOpenEnded: Bool?)](./instartworkoutintent/init%28workoutname,goalvalue,workoutgoalunittype,workoutlocationtype,isopenended%29.md)
   Initializes an intent object with the specified workout information.
+- [- initWithWorkoutName:goalValue:workoutGoalUnitType:workoutLocationType:isOpenEnded:](./instartworkoutintent/initwithworkoutname_goalvalue_workoutgoalunittype_workoutlocationtype_isopenended_.md)
+  Initializes an intent object with the specified workout information.
 ### Specifying Workout Details
 - [var workoutName: INSpeakableString?](./instartworkoutintent/workoutname.md)
   The name of the workout.
@@ -58,6 +60,10 @@ The following table lists additional attributes of this intent object:
   The location of the workout.
 - [var isOpenEnded: Bool?](./instartworkoutintent/isopenended-8hecn.md)
   A Boolean value that indicates whether the workout is open ended.
+- [goalValue](./instartworkoutintent/goalvalue-1dzvb.md)
+  The numerical goal of the workout.
+- [isOpenEnded](./instartworkoutintent/isopenended-avvd.md)
+  A Boolean value indicating whether the workout is open ended.
 
 ## Relationships
 

@@ -10,6 +10,12 @@
   An enum representing the structure of a model.
 - [enum MLShapedArrayBufferLayout](./mlshapedarraybufferlayout.md)
   Buffer layout enum
+- [MLReshapeFrequencyHint](./mlreshapefrequencyhint.md)
+- [MLSpecializationStrategy](./mlspecializationstrategy.md)
+  The optimization strategy for the model specialization.
+### Macros
+- [ML_EXPORT](./ml_export.md)
+- [MODELCOLLECTION_SUNSET](./modelcollection_sunset.md)
 
 
 ---

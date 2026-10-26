@@ -31,6 +31,8 @@ The full time is valid.
 
 ### Type Properties
 - [static var running: SMPTETimeFlags](./running.md)
+### Constants
+- [kSMPTETimeUnknown](./ksmptetimeunknown.md)
 
 
 ---

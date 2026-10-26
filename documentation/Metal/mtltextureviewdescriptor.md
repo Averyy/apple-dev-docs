@@ -34,6 +34,8 @@ class MTLTextureViewDescriptor
   A desired range of slices of a texture view.
 - [var swizzle: MTLTextureSwizzleChannels](./mtltextureviewdescriptor/swizzle.md)
 - [var textureType: MTLTextureType](./mtltextureviewdescriptor/texturetype.md)
+- [levelRange](./mtltextureviewdescriptor/levelrange-7e7f3.md)
+- [sliceRange](./mtltextureviewdescriptor/slicerange-3cs9b.md)
 
 ## Relationships
 

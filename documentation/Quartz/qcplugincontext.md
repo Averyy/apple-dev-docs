@@ -40,6 +40,9 @@ protocol QCPlugInContext
   Returns an image provider from an OpenGL texture.
 ### Instance Methods
 - [func compositionURL() -> URL!](./qcplugincontext/compositionurl%28%29.md)
+### Logging Messages
+- [- logMessage:](./qcplugincontext/logmessage_.md)
+  Writes a message to the Quartz Composer log.
 
 ## See Also
 

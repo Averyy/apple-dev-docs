@@ -38,6 +38,13 @@ Interpolation quality is a graphics state parameter that provides a hint for the
   Draws the content of a PDF page into the current graphics context.
 - [enum CGInterpolationQuality](../cginterpolationquality.md)
   Levels of interpolation quality for rendering an image.
+- [CGContextDrawTiledImage](../cgcontextdrawtiledimage.md)
+  Repeatedly draws an image, scaled to the provided rectangle, to fill the current clip region.
+- [CGContextDrawImage](../cgcontextdrawimage.md)
+  Draws an image into a graphics context.
+### Related Documentation
+- [CGContextSetInterpolationQuality](../cgcontextsetinterpolationquality.md)
+  Sets the level of interpolation quality for a graphics context.
 
 
 ---

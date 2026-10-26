@@ -27,6 +27,11 @@ typedef OSType CMDeviceClass;
 - [var cmDisplayDeviceClass: Int](./cmdisplaydeviceclass.md)
 - [var cmPrinterDeviceClass: Int](./cmprinterdeviceclass.md)
 - [var cmProofDeviceClass: Int](./cmproofdeviceclass.md)
+- [cmScannerDeviceClass](./api-1560667-anonymous/cmscannerdeviceclass.md)
+- [cmCameraDeviceClass](./api-1560667-anonymous/cmcameradeviceclass.md)
+- [cmDisplayDeviceClass](./api-1560667-anonymous/cmdisplaydeviceclass.md)
+- [cmPrinterDeviceClass](./api-1560667-anonymous/cmprinterdeviceclass.md)
+- [cmProofDeviceClass](./api-1560667-anonymous/cmproofdeviceclass.md)
 
 
 ---

@@ -34,6 +34,16 @@ Get the enumerations you use to specify Address Book information.
   These constants identify sort order for person lists.
 - [Source Types](./api-1619878-source-types.md)
   These constants identify the type of a source.
+- [Composite Name Format](./composite-name-format.md)
+  These constants identify the format to use for a person’s composite name order for person records.
+- [Record Property Types](./record-property-types.md)
+  These constants identify record property types.
+- [Record Types](./record-types.md)
+  These constants identify record types.
+- [Sort Order](./sort-order.md)
+  These constants identify sort order for person lists.
+- [Source Types](./source-types.md)
+  These constants identify the type of a source.
 ### Deprecated
 - [enum ABAuthorizationStatus](./abauthorizationstatus.md)
   Different possible values for the authorization status of an app with respect to address book data.

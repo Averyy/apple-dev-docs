@@ -174,6 +174,14 @@ For more information about how this relates to the NSXPC API, see [Creating XPC 
 - [UnitSpeed](./unitspeed.md)
 - [UnitTemperature](./unittemperature.md)
 - [UnitVolume](./unitvolume.md)
+- [NSAttributedStringMarkdownSourcePosition](./nsattributedstringmarkdownsourceposition.md)
+- [NSInflectionRule](./nsinflectionrule.md)
+- [NSLocalizedNumberFormatRule](./nslocalizednumberformatrule.md)
+- [NSMorphology](./nsmorphology.md)
+- [NSMorphologyCustomPronoun](./nsmorphologycustompronoun.md)
+- [NSMorphologyPronoun](./nsmorphologypronoun.md)
+- [NSPresentationIntent](./nspresentationintent.md)
+- [NSTermOfAddress](./nstermofaddress.md)
 
 ## See Also
 

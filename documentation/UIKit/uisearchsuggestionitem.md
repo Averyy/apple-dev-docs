@@ -43,6 +43,18 @@ This class provides a basic implementation of the [`UISearchSuggestion`](./uisea
   Creates a search suggestion with the specified label.
 - [init(localizedAttributedSuggestion: NSAttributedString)](./uisearchsuggestionitem/init%28localizedattributedsuggestion%29.md)
   Creates a search suggestion with the specified attributed label.
+- [+ suggestionWithLocalizedSuggestion:descriptionString:iconImage:](./uisearchsuggestionitem/suggestionwithlocalizedsuggestion_descriptionstring_iconimage_.md)
+  Creates a search suggestion with the specified text and image attributes.
+- [+ suggestionWithLocalizedAttributedSuggestion:descriptionString:iconImage:](./uisearchsuggestionitem/suggestionwithlocalizedattributedsuggestion_descriptionstring_iconimage_.md)
+  Creates a search suggestion with the specified attributed label, accessibility description, and image.
+- [+ suggestionWithLocalizedSuggestion:descriptionString:](./uisearchsuggestionitem/suggestionwithlocalizedsuggestion_descriptionstring_.md)
+  Creates a search suggestion with the specified label and accessibility description.
+- [+ suggestionWithLocalizedAttributedSuggestion:descriptionString:](./uisearchsuggestionitem/suggestionwithlocalizedattributedsuggestion_descriptionstring_.md)
+  Creates a search suggestion with the specified attributed label and accessibility description.
+- [+ suggestionWithLocalizedSuggestion:](./uisearchsuggestionitem/suggestionwithlocalizedsuggestion_.md)
+  Creates a search suggestion with the specified label.
+- [+ suggestionWithLocalizedAttributedSuggestion:](./uisearchsuggestionitem/suggestionwithlocalizedattributedsuggestion_.md)
+  Creates a search suggestion with the specified attributed label.
 ### Describing a search suggestion
 - [var localizedSuggestion: String?](./uisearchsuggestionitem/localizedsuggestion.md)
   A label for the suggestion, usually the search term the suggestion represents.

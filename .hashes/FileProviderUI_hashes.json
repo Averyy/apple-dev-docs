@@ -15,6 +15,16 @@
       "file_path": "documentation/FileProviderUI/fileproviderui-data-types.md",
       "hash": "b47e109593c4d7dd30a9e9d51f351161fd7768df6cd68fefda3a56845a23a4a4"
     },
+    "https://developer.apple.com/documentation/fileproviderui/fpui_available": {
+      "etag": "\"ca1-65d55dfe76ee8-df\"",
+      "file_path": "documentation/FileProviderUI/fpui_available.md",
+      "hash": "b02cc0bc926f3164d473b96bf9d0a3bbac02aa3751158522fb4289527915806e"
+    },
+    "https://developer.apple.com/documentation/fileproviderui/fpui_export": {
+      "etag": "\"c70-65d55dfe76ee8-df\"",
+      "file_path": "documentation/FileProviderUI/fpui_export.md",
+      "hash": "767b0d2b78c5362726fc0ae1452cbe4f296102c25a7ee6a15a3adfbef661288b"
+    },
     "https://developer.apple.com/documentation/fileproviderui/fpuiactionextensioncontext": {
       "etag": "\"61c2-65d55dfe76ee8-df\"",
       "file_path": "documentation/FileProviderUI/fpuiactionextensioncontext.md",
@@ -110,6 +120,16 @@
       "file_path": "documentation/FileProviderUI/fileproviderui-data-types.md",
       "hash": "b47e109593c4d7dd30a9e9d51f351161fd7768df6cd68fefda3a56845a23a4a4"
     },
+    "https://developer.apple.com/tutorials/data/documentation/fileproviderui/fpui_available.json": {
+      "etag": "\"ca1-65d55dfe76ee8-df\"",
+      "file_path": "documentation/FileProviderUI/fpui_available.md",
+      "hash": "b02cc0bc926f3164d473b96bf9d0a3bbac02aa3751158522fb4289527915806e"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/fileproviderui/fpui_export.json": {
+      "etag": "\"c70-65d55dfe76ee8-df\"",
+      "file_path": "documentation/FileProviderUI/fpui_export.md",
+      "hash": "767b0d2b78c5362726fc0ae1452cbe4f296102c25a7ee6a15a3adfbef661288b"
+    },
     "https://developer.apple.com/tutorials/data/documentation/fileproviderui/fpuiactionextensioncontext.json": {
       "etag": "\"61c2-65d55dfe76ee8-df\"",
       "file_path": "documentation/FileProviderUI/fpuiactionextensioncontext.md",
@@ -193,8 +213,8 @@
   },
   "metadata": {
     "render": {
-      "version": 1
+      "version": 2
     },
-    "total_pages": 38
+    "total_pages": 42
   }
 }

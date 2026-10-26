@@ -30,6 +30,8 @@ To avoid breaking between Hangul characters, this strategy is preferred for type
   The text system pushes out individual lines to avoid an orphan word on the last line of the paragraph.
 - [static var standard: NSParagraphStyle.LineBreakStrategy](./standard.md)
   The text system uses the same configuration of line-break strategies that it uses for standard UI labels.
+- [NSLineBreakStrategyNone](../../nslinebreakstrategy/nslinebreakstrategynone.md)
+  The text system doesn’t use any line-break strategies.
 
 
 ---

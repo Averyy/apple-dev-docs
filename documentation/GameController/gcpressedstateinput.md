@@ -49,6 +49,8 @@ protocol GCPressedStateInput : NSObjectProtocol
 ### Button elements and names
 - [protocol GCTouchedStateInput](./gctouchedstateinput.md)
   The common properties for an element that has touch state input.
+- [GCInputButtonName](./gcinputbuttonname.md)
+  The Objective-C type for an input button name.
 
 
 ---

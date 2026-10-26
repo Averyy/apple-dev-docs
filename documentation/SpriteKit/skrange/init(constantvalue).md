@@ -46,6 +46,8 @@ A newly initialized range object whose minimum and maximum value are both equal 
   Creates and initializes a new range object that specifies only a maximum value.
 - [init(lowerLimit: CGFloat, upperLimit: CGFloat)](./init%28lowerlimit,upperlimit%29.md)
   Initializes a new range object.
+- [+ rangeWithLowerLimit:upperLimit:](./rangewithlowerlimit_upperlimit_.md)
+  Creates and initializes a new range object.
 
 
 ---

@@ -38,6 +38,8 @@ When the user taps your complication, ClockKit includes the content of the `user
   The families that support this type of complication.
 - [var userActivity: NSUserActivity?](./useractivity.md)
   A user activity object that represents the state of the app at a moment in time.
+- [supportedFamilies](./supportedfamilies-50ink.md)
+  The families that support this type of complication.
 
 
 ---

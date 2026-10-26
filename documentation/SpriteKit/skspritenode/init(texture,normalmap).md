@@ -45,6 +45,12 @@ A newly initialized sprite object.
   Initializes a textured sprite using an existing texture object but with a specified size.
 - [var texture: SKTexture?](./texture.md)
   The texture used to draw the sprite.
+- [+ spriteNodeWithColor:size:](./spritenodewithcolor_size_.md)
+  Initializes a single-color sprite.
+- [+ spriteNodeWithImageNamed:](./spritenodewithimagenamed_.md)
+  Initializes a textured sprite using an image file.
+- [+ spriteNodeWithTexture:](./spritenodewithtexture_.md)
+  Initializes a textured sprite using an existing texture object.
 
 
 ---

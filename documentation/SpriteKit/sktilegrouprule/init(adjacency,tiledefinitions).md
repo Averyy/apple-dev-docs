@@ -34,6 +34,11 @@ A new tile group rule.
 - `adjacency`: The adjacency requirements for this rule.
 - `tileDefinitions`: The tile definitions used for this rule.
 
+## See Also
+
+### Creating a Tile Group Rule
+- [+ tileGroupRuleWithAdjacency:tileDefinitions:](./tilegrouprulewithadjacency_tiledefinitions_.md)
+
 
 ---
 

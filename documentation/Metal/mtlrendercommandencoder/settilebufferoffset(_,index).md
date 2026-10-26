@@ -57,6 +57,8 @@ By default, the buffer at each index is `nil`.
   Assigns multiple buffers to a range of entries in the tile shader argument table.
 - [func setTileBytes(UnsafeRawPointer, length: Int, index: Int)](./settilebytes%28_,length,index%29.md)
   Creates a buffer from bytes and assigns it to an entry in the tile shader argument table.
+- [- setTileBuffers:offsets:withRange:](./settilebuffers_offsets_withrange_.md)
+  Assigns multiple buffers to a range of entries in the tile shader argument table.
 
 
 ---

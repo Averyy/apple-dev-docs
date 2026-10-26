@@ -48,6 +48,12 @@ Your extension object must be able to return handler objects for all of the inte
 
 For more information about implementing your extension’s main dispatching method, see [`INIntentHandlerProviding`](./inintenthandlerproviding.md). For information about how to implement this class in your Intents extension, see [SiriKit Programming Guide](https://developer.apple.com/library/archive/documentation/Intents/Conceptual/SiriIntegrationGuide/index.html#//apple_ref/doc/uid/TP40016875).
 
+## Topics
+
+### Constants
+- [IntentsVersionNumber](./intentsversionnumber.md)
+- [IntentsVersionString](./intentsversionstring.md)
+
 ## Relationships
 
 ### Inherits From

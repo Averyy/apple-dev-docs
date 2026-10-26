@@ -29,6 +29,15 @@ This view strokes the path represented by the annotation. (This class does not f
 
 In iOS 7 and later, use the [`MKPolylineRenderer`](./mkpolylinerenderer.md) class to display polyline overlays instead.
 
+## Topics
+
+### Initializing the polyline view
+- [- initWithPolyline:](./mkpolylineview/initwithpolyline_.md)
+  Initializes and returns a new overlay view using the specified polyline overlay object
+### Accessing the polyline overlay
+- [polyline](./mkpolylineview/polyline.md)
+  The polyline overlay object that contains the information used to draw the overlay.
+
 ## Relationships
 
 ### Inherits From
@@ -77,6 +86,8 @@ In iOS 7 and later, use the [`MKPolylineRenderer`](./mkpolylinerenderer.md) clas
   Provides the visual representation for an [`MKPolygon`](./mkpolygon.md) annotation object.
 - [class MKPinAnnotationView](./mkpinannotationview.md)
   An annotation view that displays a pin image on the map.
+- [MKReverseGeocoder](./mkreversegeocoder.md)
+  Provides services for converting a map coordinate (specified as a latitude/longitude pair) into information about that coordinate, such as the country or region, city, or street.
 
 
 ---

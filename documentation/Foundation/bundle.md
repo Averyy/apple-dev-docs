@@ -117,11 +117,19 @@ For information about the bundle structure of iOS and macOS apps, see [Bundle Pr
   Returns the `NSBundle` instance that has the specified bundle identifier.
 - [init?(path: String)](./bundle/init%28path%29.md)
   Returns an `NSBundle` object initialized to correspond to the specified directory.
+- [+ bundleWithPath:](./nsbundle/bundlewithpath_.md)
+  Returns an `NSBundle` object that corresponds to the specified directory.
 ### Loading nib files
 - [func loadNibNamed(String, owner: Any?, options: [UINib.OptionsKey : Any]?) -> [Any]?](./bundle/loadnibnamed%28_,owner,options%29.md)
   Unarchives the contents of a nib file located in the receiver’s bundle.
 - [func loadNibNamed(NSNib.Name, owner: Any?, topLevelObjects: AutoreleasingUnsafeMutablePointer<NSArray?>?) -> Bool](./bundle/loadnibnamed%28_,owner,toplevelobjects%29.md)
   Loads a nib from the bundle with the specified file name and owner.
+- [+ loadNibNamed:owner:](./nsbundle/loadnibnamed_owner_.md)
+  Unarchives the contents of the nib file and links them to a specific owner object.
+- [+ loadNibFile:externalNameTable:withZone:](./nsbundle/loadnibfile_externalnametable_withzone_-c.type.method.md)
+  Unarchives the contents of the nib file and links them to objects in your program.
+- [- loadNibFile:externalNameTable:withZone:](./nsbundle/loadnibfile_externalnametable_withzone_-c.method.md)
+  Unarchives the contents of a nib file located in the receiver’s bundle.
 ### Finding resource files
 - [func url(forResource: String?, withExtension: String?, subdirectory: String?) -> URL?](./bundle/url%28forresource,withextension,subdirectory%29.md)
   Returns the file URL for the resource file identified by the specified name and extension and residing in a given bundle directory.
@@ -268,6 +276,20 @@ For information about the bundle structure of iOS and macOS apps, see [Bundle Pr
   The executable failed due to linking issues.
 - [var NSExecutableErrorMaximum: Int](./nsexecutableerrormaximum-swift.var.md)
   The end of the range of error codes reserved for errors related to executable files.
+- [NSExecutableErrorMinimum](./nsexecutableerrorminimum-c.enum.case.md)
+  The beginning of the range of error codes reserved for errors related to executable files.
+- [NSExecutableNotLoadableError](./nsexecutablenotloadableerror-c.enum.case.md)
+  The executable type isn’t loadable in the current process.
+- [NSExecutableArchitectureMismatchError](./nsexecutablearchitecturemismatcherror-c.enum.case.md)
+  The executable doesn’t provide an architecture compatible with the current process.
+- [NSExecutableRuntimeMismatchError](./nsexecutableruntimemismatcherror-c.enum.case.md)
+  The executable has Objective-C runtime information that’s incompatible with the current process.
+- [NSExecutableLoadError](./nsexecutableloaderror-c.enum.case.md)
+  Executable cannot be loaded for an otherwise-unspecified reason.
+- [NSExecutableLinkError](./nsexecutablelinkerror-c.enum.case.md)
+  The executable failed due to linking issues.
+- [NSExecutableErrorMaximum](./nsexecutableerrormaximum-c.enum.case.md)
+  The end of the range of error codes reserved for errors related to executable files.
 ### Initializers
 - [convenience init?(URL: URL)](./bundle/init%28url%29-16uva.md)
 - [convenience init?(URL: URL)](./bundle/init%28url%29-1y93d.md)
@@ -278,6 +300,9 @@ For information about the bundle structure of iOS and macOS apps, see [Bundle Pr
 - [func loadAppleScriptObjectiveCScripts()](./bundle/loadapplescriptobjectivecscripts%28%29.md)
 - [func localizedString(forKey: String, value: String?, table: String?, localizations: [Locale.Language]) -> String](./bundle/localizedstring%28forkey,value,table,localizations%29.md)
   Look up a localized string given a list of available languages.
+- [- localizedAttributedStringForKey:value:table:](./nsbundle/localizedattributedstringforkey_value_table_.md)
+- [- localizedStringForKey:value:table:localizations:](./nsbundle/localizedstringforkey_value_table_localizations_.md)
+  Look up a localized string given a list of available localizations.
 
 ## Relationships
 

@@ -44,6 +44,10 @@ If [`charging`](./charging-6xnqj.md) is [`true`](../../Swift/true.md), set this 
   The number of minutes it takes to fully charge the electric vehicle’s battery.
 - [var dateOfLastStateUpdate: DateComponents?](./dateoflaststateupdate.md)
   A timestamp that indicates the most recent charge status for the electric vehicle.
+- [charging](./charging-7aamu.md)
+  A Boolean value that indicates whether the electric vehicle is currently charging.
+- [minutesToFull](./minutestofull-25vcb.md)
+  The number of minutes it will take to fully charge the electric vehicle’s battery.
 
 
 ---

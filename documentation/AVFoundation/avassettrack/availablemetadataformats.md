@@ -27,6 +27,16 @@ var availableMetadataFormats: [AVMetadataFormat] { get }
 @property (nonatomic, readonly) NSArray<NSString *> * availableMetadataFormats;
 ```
 
+## See Also
+
+### Accessing metadata
+- [metadata](./metadata.md)
+  An array of metadata items for all metadata identifiers that have a value.
+- [commonMetadata](./commonmetadata.md)
+  An array of metadata items for all common metadata keys that have a value.
+- [- metadataForFormat:](./metadata%28forformat%29.md)
+  Returns metadata items that a track contains for the specified format.
+
 
 ---
 

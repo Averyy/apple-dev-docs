@@ -41,6 +41,8 @@ Cryptographic message syntax services provides encoder objects that perform encr
   Constants that can be set to specify what certificates to include in a signed message.
 - [func CMSEncoderSetSignerAlgorithm(CMSEncoder, CFString) -> OSStatus](./cmsencodersetsigneralgorithm%28_,_%29.md)
   Sets the digest algorithm to use for the signer.
+- [CMSEncoderSetEncapsulatedContentType](./cmsencodersetencapsulatedcontenttype.md)
+  Specifies an object identifier for the encapsulated data of a signed message.
 ### Message Characteristics
 - [func CMSEncoderCopySigners(CMSEncoder, UnsafeMutablePointer<CFArray?>) -> OSStatus](./cmsencodercopysigners%28_,_%29.md)
   Obtains the array of signers specified with the `CMSEncoderAddSigners` function.
@@ -60,6 +62,8 @@ Cryptographic message syntax services provides encoder objects that perform encr
 - [func CMSEncoderCopyEncodedContent(CMSEncoder, UnsafeMutablePointer<CFData?>) -> OSStatus](./cmsencodercopyencodedcontent%28_,_%29.md)
   Finishes encoding the message and obtains the encoded result.
 - [func CMSEncodeContent(CFTypeRef?, CFTypeRef?, CFTypeRef?, Bool, CMSSignedAttributes, UnsafeRawPointer, Int, UnsafeMutablePointer<CFData?>?) -> OSStatus](./cmsencodecontent%28_,_,_,_,_,_,_,_%29.md)
+  Encodes a message and obtains the result in one high-level function call.
+- [CMSEncode](./cmsencode.md)
   Encodes a message and obtains the result in one high-level function call.
 ### The Decoder
 - [func CMSDecoderCreate(UnsafeMutablePointer<CMSDecoder?>) -> OSStatus](./cmsdecodercreate%28_%29.md)

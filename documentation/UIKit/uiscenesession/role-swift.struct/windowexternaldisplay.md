@@ -41,6 +41,9 @@ extern UISceneSessionRole const UIWindowSceneSessionRoleExternalDisplay;
   A scene that displays navigation content on the CarPlay Dashboard.
 - [static let CPTemplateApplicationInstrumentClusterSceneSessionRoleApplication: UISceneSession.Role](./cptemplateapplicationinstrumentclusterscenesessionroleapplication.md)
   A scene that displays navigation content on the CarPlay Instruments Cluster.
+- [CPTemplateApplicationSceneSessionRoleApplication](../../../CarPlay/cptemplateapplicationscenesessionroleapplication.md)
+- [CPTemplateApplicationDashboardSceneSessionRoleApplication](../../../CarPlay/cptemplateapplicationdashboardscenesessionroleapplication.md)
+- [CPTemplateApplicationInstrumentClusterSceneSessionRoleApplication](../../../CarPlay/cptemplateapplicationinstrumentclusterscenesessionroleapplication.md)
 
 
 ---

@@ -34,6 +34,7 @@ class DOMEvent
 - [func initEvent(String!, canBubbleArg: Bool, cancelableArg: Bool)](./domevent/initevent%28_,canbubblearg,cancelablearg%29.md)
 - [func preventDefault()](./domevent/preventdefault%28%29.md)
 - [func stopPropagation()](./domevent/stoppropagation%28%29.md)
+- [- initEvent:::](./domevent/initevent___.md)
 
 ## Relationships
 

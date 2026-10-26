@@ -28,6 +28,8 @@ var frameDuration: TimeInterval { get }
 ### Inspecting a feature
 - [var acousticFeatureValuePerFrame: [Double]](./acousticfeaturevalueperframe-5krkk.md)
   An array of feature values, one value per audio frame, corresponding to a transcript segment of recorded audio.
+- [acousticFeatureValuePerFrame](./acousticfeaturevalueperframe-gsz5.md)
+  An array of feature values, one value per audio frame, corresponding to a transcript segment of recorded audio.
 
 
 ---

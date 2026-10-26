@@ -27,6 +27,8 @@ AEAutocorrectModeSpelling
 ### Modes
 - [static var punctuation: AEAssessmentConfiguration.AutocorrectMode](./punctuation.md)
   A mode in which autocorrect checks punctuation as the user types.
+- [AEAutocorrectModeNone](../../aeautocorrectmode/aeautocorrectmodenone.md)
+  A mode that indicates autocorrect doesn’t check anything.
 
 
 ---

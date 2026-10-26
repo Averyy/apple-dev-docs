@@ -60,6 +60,7 @@ The credential provider accesses public-private key pairs stored on a physical s
 - [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 - [Sendable](../Swift/sendable.md)
 - [SendableMetatype](../Swift/sendablemetatype.md)
+- [ASAuthorizationWebBrowserSecurityKeyPublicKeyCredentialProvider](./asauthorizationwebbrowsersecuritykeypublickeycredentialprovider-4gzot.md)
 
 ## See Also
 

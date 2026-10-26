@@ -120,6 +120,16 @@
       "file_path": "documentation/GameSave/gamesavesynceddirectory/version/url.md",
       "hash": "976f231e03a23920c7bbbe0399fe1edfbccfcb8ec90de27d02fee29856a90e86"
     },
+    "https://developer.apple.com/documentation/gamesave/gamesaveversionnumber": {
+      "etag": "\"b24-65d55ec9be8e8-df\"",
+      "file_path": "documentation/GameSave/gamesaveversionnumber.md",
+      "hash": "182d4db60d0ddddf05b104121e46398ab8c762bbd735777a1d14ddb79c179c99"
+    },
+    "https://developer.apple.com/documentation/gamesave/gamesaveversionstring": {
+      "etag": "\"b6a-65d55ec9be8e8-df\"",
+      "file_path": "documentation/GameSave/gamesaveversionstring.md",
+      "hash": "97b9bf7e8a38883d14682782b629efabe7303881b71abdffd74f4837b2a625d5"
+    },
     "https://developer.apple.com/documentation/gamesave/gssynceddirectory": {
       "etag": "\"6bf4-65d55ec9be8e8-df\"",
       "file_path": "documentation/GameSave/gssynceddirectory.md",
@@ -380,6 +390,16 @@
       "file_path": "documentation/GameSave/gamesavesynceddirectory/version/url.md",
       "hash": "976f231e03a23920c7bbbe0399fe1edfbccfcb8ec90de27d02fee29856a90e86"
     },
+    "https://developer.apple.com/tutorials/data/documentation/gamesave/gamesaveversionnumber.json": {
+      "etag": "\"b24-65d55ec9be8e8-df\"",
+      "file_path": "documentation/GameSave/gamesaveversionnumber.md",
+      "hash": "182d4db60d0ddddf05b104121e46398ab8c762bbd735777a1d14ddb79c179c99"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/gamesave/gamesaveversionstring.json": {
+      "etag": "\"b6a-65d55ec9be8e8-df\"",
+      "file_path": "documentation/GameSave/gamesaveversionstring.md",
+      "hash": "97b9bf7e8a38883d14682782b629efabe7303881b71abdffd74f4837b2a625d5"
+    },
     "https://developer.apple.com/tutorials/data/documentation/gamesave/gssynceddirectory.json": {
       "etag": "\"6bf4-65d55ec9be8e8-df\"",
       "file_path": "documentation/GameSave/gssynceddirectory.md",
@@ -523,8 +543,8 @@
   },
   "metadata": {
     "render": {
-      "version": 1
+      "version": 2
     },
-    "total_pages": 104
+    "total_pages": 108
   }
 }

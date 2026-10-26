@@ -32,6 +32,8 @@ The new credential identity object.
 ### Creating a credential identity
 - [convenience init(relyingPartyIdentifier: String, userName: String, credentialID: Data, userHandle: Data, recordIdentifier: String?)](./init%28relyingpartyidentifier,username,credentialid,userhandle,recordidentifier%29-7u7p1.md)
   Initializes a passkey credential identity.
+- [- initWithRelyingPartyIdentifier:userName:credentialID:userHandle:recordIdentifier:](./initwithrelyingpartyidentifier_username_credentialid_userhandle_recordidentifier_.md)
+  Initializes a passkey credential identity.
 
 
 ---

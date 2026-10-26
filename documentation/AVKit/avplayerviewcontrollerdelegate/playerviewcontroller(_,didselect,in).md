@@ -25,6 +25,12 @@ optional func playerViewController(_ playerViewController: AVPlayerViewControlle
 - `mediaSelectionOption`: The user’s selected media option, which may be `nil`.
 - `mediaSelectionGroup`: The media selection group in which the selected media option exists.
 
+## See Also
+
+### Responding to media selection
+- [- playerViewController:didSelectExternalSubtitleOptionLanguage:](./playerviewcontroller_didselectexternalsubtitleoptionlanguage_.md)
+  Tells the delegate when the user selects a specific subtitle option.
+
 
 ---
 

@@ -33,6 +33,8 @@ class CNContactRelation
 ### Creating a Contact Relation Object
 - [init(name: String)](./cncontactrelation/init%28name%29.md)
   Creates an object with the name of the related contact.
+- [+ contactRelationWithName:](./cncontactrelation/contactrelationwithname_.md)
+  Instantiate a class instance with the name of the related contact.
 ### Getting the Relation Name
 - [var name: String](./cncontactrelation/name.md)
   The name of the related contact.

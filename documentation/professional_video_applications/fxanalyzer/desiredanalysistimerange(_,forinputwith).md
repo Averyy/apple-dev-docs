@@ -22,7 +22,7 @@ func desiredAnalysisTimeRange(_ desiredRange: UnsafeMutablePointer<CMTimeRange>!
 
 ## Mentions
 
-- [Analyzing media](https://developer.apple.com/documentation/professional-video-applications/analyzing-media)
+- [Analyzing media](../../Professional-Video-Applications/analyzing-media.md)
 
 ## Parameters
 

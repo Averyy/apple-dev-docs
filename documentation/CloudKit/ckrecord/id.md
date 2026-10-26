@@ -58,6 +58,8 @@ Use a record ID to fetch the corresponding [`CKRecord`](../ckrecord.md) object f
   Creates a new record ID with the specified name and zone information.
 - [let CKRecordNameZoneWideShare: String](../ckrecordnamezonewideshare.md)
   The name of a share record that manages a shared record zone.
+- [- initWithRecordName:zoneID:](../ckrecordid/initwithrecordname_zoneid_.md)
+  Creates a new record ID with the specified name and zone information.
 ### Getting the Record ID’s Name
 - [var recordName: String](./id/recordname.md)
   The unique name of the record.
@@ -103,6 +105,8 @@ Use a record ID to fetch the corresponding [`CKRecord`](../ckrecord.md) object f
   The ID of the user who most recently modified the record.
 - [var recordChangeTag: String?](./recordchangetag.md)
   The server change token for the record.
+- [recordType](./recordtype-9s09b.md)
+  The value that your app defines to identify the type of record.
 
 
 ---

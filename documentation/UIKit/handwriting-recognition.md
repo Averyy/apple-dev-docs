@@ -22,6 +22,12 @@ Configure text fields and custom views that accept text to handle input from App
   Methods that customize behavior on views that aren’t formally text input views.
 - [associatedtype ElementIdentifier : Hashable = String](./uiindirectscribbleinteractiondelegate-hdh/elementidentifier.md)
   A unique identifier for a control that isn’t a text field in a Scribble interaction.
+- [UIIndirectScribbleInteraction](./uiindirectscribbleinteraction-2dap8.md)
+  An interaction for using Scribble to enter text by writing on a view that isn’t formally a text input.
+- [UIIndirectScribbleInteractionDelegate](./uiindirectscribbleinteractiondelegate-3jmnk.md)
+  Methods that customize behavior on views that aren’t formally text input views.
+- [UIScribbleElementIdentifier](./uiscribbleelementidentifier.md)
+  The element’s unique identifier.
 
 ## See Also
 

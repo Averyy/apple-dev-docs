@@ -33,6 +33,8 @@ Use special OIDs to cause a certificate to be evaluated based on security polici
 - [let kSecPolicyApplePassbookSigning: CFString](./ksecpolicyapplepassbooksigning.md)
 - [let kSecPolicyApplePayIssuerEncryption: CFString](./ksecpolicyapplepayissuerencryption.md)
 - [let kSecPolicyAppleRevocation: CFString](./ksecpolicyapplerevocation.md)
+- [kSecPolicyAppleiChat](./ksecpolicyappleichat.md)
+  Policy for use in iChat.
 
 
 ---

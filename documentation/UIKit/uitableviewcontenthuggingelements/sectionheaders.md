@@ -23,6 +23,12 @@ static var sectionHeaders: UITableViewContentHuggingElements { get }
 UITableViewContentHuggingElementsSectionHeaders
 ```
 
+## See Also
+
+### Specifying content-hugging elements
+- [UITableViewContentHuggingElementsNone](./uitableviewcontenthuggingelementsnone.md)
+  A mode where none of the items in the table view tightly hug their content.
+
 
 ---
 

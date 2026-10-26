@@ -28,6 +28,12 @@ enum MTLBindingAccess : NSUInteger;
 - [MTLBindingAccess.readOnly](./mtlbindingaccess/readonly.md)
 - [MTLBindingAccess.readWrite](./mtlbindingaccess/readwrite.md)
 - [MTLBindingAccess.writeOnly](./mtlbindingaccess/writeonly.md)
+- [MTLArgumentAccessReadOnly](./mtlbindingaccess/mtlargumentaccessreadonly.md)
+  The function can only read its argument data.
+- [MTLArgumentAccessReadWrite](./mtlbindingaccess/mtlargumentaccessreadwrite.md)
+  The function can either read or write its argument data.
+- [MTLArgumentAccessWriteOnly](./mtlbindingaccess/mtlargumentaccesswriteonly.md)
+  The function can only write its argument data.
 ### Initializers
 - [init?(rawValue: UInt)](./mtlbindingaccess/init%28rawvalue%29.md)
 

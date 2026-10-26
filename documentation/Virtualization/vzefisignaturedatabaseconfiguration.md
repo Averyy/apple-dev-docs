@@ -66,6 +66,12 @@ This class represents the signature lists used in UEFI Secure Boot configuration
 - [class VZEFISignatureList](./vzefisignaturelist.md)
   A class that represents a Unified Extensible Firmware Interface (UEFI) signature list.
 - [enum VZEFISignature](./vzefisignature-swift.enum.md)
+- [VZEFISignature](./vzefisignature-c.class.md)
+  A base class that represents a Unified Extensible Firmware Interface (UEFI) signature.
+- [VZEFISignatureX509Certificate](./vzefisignaturex509certificate.md)
+  A class that represents a Unified Extensible Firmware Interface (UEFI) signature based on an X.509 certificate.
+- [VZEFISignatureSHA256Hash](./vzefisignaturesha256hash.md)
+  A class that represents a Unified Extensible Firmware Interface (UEFI) signature based on a SHA-256 cryptographic hash.
 
 
 ---

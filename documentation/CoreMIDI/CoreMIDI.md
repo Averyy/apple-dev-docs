@@ -65,6 +65,10 @@ The Core MIDI framework provides APIs to communicate with MIDI (Musical Instrume
 - [var kMIDINoteAttributeNone: Int](./kmidinoteattributenone.md)
 - [var kMIDINoteAttributePitch: Int](./kmidinoteattributepitch.md)
 - [var kMIDINoteAttributeProfileSpecific: Int](./kmidinoteattributeprofilespecific.md)
+- [kMIDIPropertyUMPEnabled](./kmidipropertyumpenabled.md)
+  kMIDIPropertyUMPEnabled
+### Macros
+- [MIDI_REALTIME_API](./midi_realtime_api.md)
 
 
 ---

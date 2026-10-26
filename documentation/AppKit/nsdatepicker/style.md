@@ -27,6 +27,10 @@ enum NSDatePickerStyle : NSUInteger;
 - [NSDatePicker.Style.textFieldAndStepper](./style/textfieldandstepper.md)
 ### Initializers
 - [init?(rawValue: UInt)](./style/init%28rawvalue%29.md)
+### Deprecated
+- [NSTextFieldAndStepperDatePickerStyle](../nstextfieldandstepperdatepickerstyle.md)
+- [NSTextFieldDatePickerStyle](../nstextfielddatepickerstyle.md)
+- [NSClockAndCalendarDatePickerStyle](../nsclockandcalendardatepickerstyle.md)
 
 ## Relationships
 

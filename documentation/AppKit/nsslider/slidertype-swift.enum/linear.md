@@ -24,6 +24,8 @@ NSSliderTypeLinear
 ### Enumeration Cases
 - [NSSlider.SliderType.circular](./circular.md)
   A dial representing an angular range.
+- [NSLinearSlider](../../nslinearslider.md)
+- [NSCircularSlider](../../nscircularslider.md)
 
 
 ---

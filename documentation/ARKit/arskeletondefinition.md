@@ -45,6 +45,10 @@ ARKit names particular joints that are crucial to body tracking. You can access 
   Returns the index for a given joint identifier.
 - [var parentIndices: [Int]](./arskeletondefinition/parentindices-u2u9.md)
   The parent index for each joint.
+- [- indexForJointName:](./arskeletondefinition/indexforjointname_.md)
+  Returns the index for a given joint identifier.
+- [parentIndices](./arskeletondefinition/parentindices-82iw2.md)
+  The parent index for each joint.
 
 ## Relationships
 

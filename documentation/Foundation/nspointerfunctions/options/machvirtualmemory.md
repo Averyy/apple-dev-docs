@@ -40,6 +40,10 @@ NSPointerFunctionsMachVirtualMemory
   Equivalent to [`strongMemory`](./strongmemory.md).
 - [var NSMapTableWeakMemory: NSPointerFunctions.Options](../../nsmaptableweakmemory.md)
   Equivalent to [`weakMemory`](./weakmemory.md).
+- [NSPointerFunctionsZeroingWeakMemory](../../nspointerfunctionsoptions/nspointerfunctionszeroingweakmemory.md)
+  Use weak read and write barriers; use garbage-collected memory on copyIn.
+- [NSMapTableZeroingWeakMemory](../../nsmaptablezeroingweakmemory.md)
+  Equivalent to [`NSPointerFunctionsZeroingWeakMemory`](../../nspointerfunctionsoptions/nspointerfunctionszeroingweakmemory.md).
 
 
 ---

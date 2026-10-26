@@ -30,6 +30,8 @@ var name: NSExceptionName { get }
 ### Related Documentation
 - [init(name: NSExceptionName, reason: String?, userInfo: [AnyHashable : Any]?)](./init%28name,reason,userinfo%29.md)
   Initializes and returns a newly allocated exception object.
+- [+ exceptionWithName:reason:userInfo:](./exceptionwithname_reason_userinfo_.md)
+  Creates and returns an exception object .
 ### Querying an NSException Object
 - [var reason: String?](./reason-swift.property.md)
   A string containing a “human-readable” reason for the receiver.

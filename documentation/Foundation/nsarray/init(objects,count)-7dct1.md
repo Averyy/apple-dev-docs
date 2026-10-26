@@ -53,6 +53,17 @@ NSArray *stringsArray = [NSArray arrayWithObjects:strings count:2];
 ### Creating an Array
 - [convenience init(object: Any)](./init%28object%29.md)
   Creates and returns an array containing a given object.
+- [+ array](./array.md)
+  Creates and returns an empty array.
+- [+ arrayWithArray:](./arraywitharray_.md)
+  Creates and returns an array containing the objects in another given array.
+- [+ arrayWithContentsOfFile:](./arraywithcontentsoffile_.md)
+  Creates and returns an array containing the contents of the file specified by a given path.
+- [+ arrayWithObjects:](./arraywithobjects_.md)
+  Creates and returns an array containing the objects in the argument list.
+### Related Documentation
+- [- getObjects:range:](./getobjects_range_.md)
+  Copies references to objects contained in the array that fall within the specified range to `aBuffer`.
 
 
 ---

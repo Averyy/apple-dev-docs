@@ -128,6 +128,30 @@
 - [let kSCPropNetProxiesHTTPUser: CFString](./kscpropnetproxieshttpuser-swift.var.md)
 - [let kSCPropNetProxiesRTSPUser: CFString](./kscpropnetproxiesrtspuser-swift.var.md)
 - [let kSCPropNetProxiesSOCKSUser: CFString](./kscpropnetproxiessocksuser-swift.var.md)
+- [kCNNetworkInfoKeyBSSID](./kcnnetworkinfokeybssid.md)
+  The key for the network’s BSSID, which is represented as a [`CFStringRef`](../CoreFoundation/cfstring.md) object.
+- [kCNNetworkInfoKeySSID](./kcnnetworkinfokeyssid.md)
+  The key for the network’s SSID, which is represented as a [`CFStringRef`](../CoreFoundation/cfstring.md) object.
+- [kCNNetworkInfoKeySSIDData](./kcnnetworkinfokeyssiddata.md)
+  The key for the network’s SSID, which is represented as a [`CFDataRef`](../CoreFoundation/cfdata.md) object.
+- [kSCPropUsersConsoleUserGID](./kscpropusersconsoleusergid-c.var.md)
+  The deprecated key GID.
+- [kSCPropUsersConsoleUserName](./kscpropusersconsoleusername-c.var.md)
+  The deprecated key Name.
+- [kSCPropUsersConsoleUserUID](./kscpropusersconsoleuseruid-c.var.md)
+  The deprecated key UID.
+- [kSCValNetAirPortAuthPasswordEncryptionKeychain](./kscvalnetairportauthpasswordencryptionkeychain-c.var.md)
+  The deprecated value Keychain.
+- [kSCValNetAirPortJoinModeAutomatic](./kscvalnetairportjoinmodeautomatic-c.var.md)
+  The deprecated value Automatic.
+- [kSCValNetAirPortJoinModePreferred](./kscvalnetairportjoinmodepreferred-c.var.md)
+  The deprecated value Preferred.
+- [kSCValNetAirPortJoinModeRanked](./kscvalnetairportjoinmoderanked-c.var.md)
+  The deprecated value Ranked.
+- [kSCValNetAirPortJoinModeRecent](./kscvalnetairportjoinmoderecent-c.var.md)
+  The deprecated value Recent.
+- [kSCValNetAirPortJoinModeStrongest](./kscvalnetairportjoinmodestrongest-c.var.md)
+  The deprecated value Strongest.
 
 ## See Also
 
@@ -147,6 +171,8 @@
 - [SystemConfiguration Enumerations](./systemconfiguration-enumerations.md)
 - [SystemConfiguration Functions](./systemconfiguration-functions.md)
 - [SystemConfiguration Data Types](./systemconfiguration-data-types.md)
+- [DHCPClientPreferences](./dhcpclientpreferences.md)
+- [SCDynamicStoreCopyDHCPInfo](./scdynamicstorecopydhcpinfo-apicollection.md)
 
 
 ---

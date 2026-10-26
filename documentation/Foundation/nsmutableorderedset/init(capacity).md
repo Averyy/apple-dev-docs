@@ -44,6 +44,9 @@ This method is a designated initializer of `NSMutableOrderedSet`.
 ### Creating a Mutable Ordered Set
 - [init()](./init%28%29.md)
   Initializes a newly allocated mutable ordered set.
+### Related Documentation
+- [+ orderedSetWithCapacity:](./orderedsetwithcapacity_.md)
+  Creates and returns an mutable ordered set with a given initial capacity.
 
 
 ---

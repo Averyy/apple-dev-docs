@@ -34,6 +34,8 @@ enum UIAccessibilityHearingDeviceEar : NSUInteger;
 ### Initializers
 - [init(rawValue: UInt)](./hearingdeviceear/init%28rawvalue%29.md)
   Creates a structure that represents a hearing-device ear with the specified raw value.
+- [UIAccessibilityHearingDeviceEarNone](../uiaccessibilityhearingdeviceear/uiaccessibilityhearingdeviceearnone.md)
+  A constant that represents neither ear.
 
 ## Relationships
 

@@ -54,6 +54,10 @@ For buffers in the `constant` address space, the minimum alignment depends on th
   Binds multiple buffers with data in stride to the buffer argument table at once, allowing compute kernels to access their data on the GPU.
 - [func setBufferOffset(Int, index: Int)](./setbufferoffset%28_,index%29.md)
   Changes where the data begins in a buffer already bound to the buffer argument table.
+- [- setBuffers:offsets:withRange:](./setbuffers_offsets_withrange_.md)
+  Binds multiple buffers to the buffer argument table at once, allowing compute kernels to access their data on the GPU.
+- [- setBuffers:offsets:attributeStrides:withRange:](./setbuffers_offsets_attributestrides_withrange_.md)
+  Binds multiple buffers with data in stride to the buffer argument table at once, allowing compute kernels to access their data on the GPU.
 
 
 ---

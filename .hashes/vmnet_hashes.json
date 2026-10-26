@@ -100,6 +100,11 @@
       "file_path": "documentation/vmnet/vmnet_enable_tso_key.md",
       "hash": "ce7360d9755e14554cfbcca03138aa68d1342fcbc2c959cafce08d17c9ec01b0"
     },
+    "https://developer.apple.com/documentation/vmnet/vmnet_enable_virtio_header_key-c.macro": {
+      "etag": "\"9ff-65d56081a7c03-df\"",
+      "file_path": "documentation/vmnet/vmnet_enable_virtio_header_key-c.macro.md",
+      "hash": "526bdb38df7d4edcebf26d40b4251ac019c75bd92f1ccf22f1d8ad5958d1d1b3"
+    },
     "https://developer.apple.com/documentation/vmnet/vmnet_enable_virtio_header_key-swift.var": {
       "etag": "\"22f2-65d56081a7c03-df\"",
       "file_path": "documentation/vmnet/vmnet_enable_virtio_header_key-swift.var.md",
@@ -590,6 +595,11 @@
       "file_path": "documentation/vmnet/vmnet_enable_tso_key.md",
       "hash": "ce7360d9755e14554cfbcca03138aa68d1342fcbc2c959cafce08d17c9ec01b0"
     },
+    "https://developer.apple.com/tutorials/data/documentation/vmnet/vmnet_enable_virtio_header_key-c.macro.json": {
+      "etag": "\"9ff-65d56081a7c03-df\"",
+      "file_path": "documentation/vmnet/vmnet_enable_virtio_header_key-c.macro.md",
+      "hash": "526bdb38df7d4edcebf26d40b4251ac019c75bd92f1ccf22f1d8ad5958d1d1b3"
+    },
     "https://developer.apple.com/tutorials/data/documentation/vmnet/vmnet_enable_virtio_header_key-swift.var.json": {
       "etag": "\"22f2-65d56081a7c03-df\"",
       "file_path": "documentation/vmnet/vmnet_enable_virtio_header_key-swift.var.md",
@@ -983,8 +993,8 @@
   },
   "metadata": {
     "render": {
-      "version": 1
+      "version": 2
     },
-    "total_pages": 196
+    "total_pages": 198
   }
 }

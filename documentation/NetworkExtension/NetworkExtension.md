@@ -93,8 +93,28 @@ iOS supports Always-on VPN to ensure all IP traffic is tunneled back to the orga
   Information about an error encountered while configuring or using a VPN.
 ### Variables
 - [let NERelayClientErrorDomain: String](./nerelayclienterrordomain.md)
+- [NEDNSSettingsConfigurationDidChangeNotification](./nednssettingsconfigurationdidchangenotification.md)
+- [NERelayConfigurationDidChangeNotification](./nerelayconfigurationdidchangenotification.md)
 ### Enumerations
 - [enum NERelayManagerClientError](./nerelaymanagerclienterror.md)
+- [NEPacketTunnelNetworkSettingsIPFamily](./nepackettunnelnetworksettingsipfamily.md)
+  NEPacketTunnelNetworkSettings IP Family types
+### Macros
+- [NEAPPPROXYFLOW_EXPORT](./neappproxyflow_export.md)
+- [NEAPPPUSH_EXPORT](./neapppush_export.md)
+- [NECOPYNULLABLE](./necopynullable.md)
+- [NEDNSPROXY_EXPORT](./nednsproxy_export.md)
+- [NEDNSSETTINGS_EXPORT](./nednssettings_export.md)
+- [NEFILTER_DATA_PROVIDER_EXTERN](./nefilter_data_provider_extern.md)
+- [NEFILTER_EXPORT](./nefilter_export.md)
+- [NEHSCFG_EXPORT](./nehscfg_export.md)
+- [NEHS_EXPORT](./nehs_export.md)
+- [NERELAY_EXPORT](./nerelay_export.md)
+- [NETUNNELPROVIDER_EXPORT](./netunnelprovider_export.md)
+- [NEURLFILTER_EXPORT](./neurlfilter_export.md)
+- [NEVPN_EXPORT](./nevpn_export.md)
+### Type Aliases
+- [NWEndpointArray](./nwendpointarray.md)
 
 
 ---

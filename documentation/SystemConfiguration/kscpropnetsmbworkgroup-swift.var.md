@@ -28,6 +28,8 @@ extern CFStringRef const kSCPropNetSMBWorkgroup;
   The SMB key `NetBIOSNodeType`, whose value is of type `CFString`.
 - [let kSCPropNetSMBWINSAddresses: CFString](./kscpropnetsmbwinsaddresses-swift.var.md)
   The SMB key `WINSAddresses`, whose value is of type `CFArray`, containing elements of type `CFString`.
+- [kSCPropNetSMBNetBIOSScope](./kscpropnetsmbnetbiosscope-c.var.md)
+  The SMB key `NetBIOSScope`, whose value is of type `CFString`.
 
 
 ---

@@ -54,6 +54,8 @@ The default line width is `1` unit. When stroked, the line straddles the path, w
   Sets the fill pattern in the specified graphics context.
 - [func setShouldAntialias(Bool)](./setshouldantialias%28_%29.md)
   Sets antialiasing on or off for a graphics context.
+- [CGContextSetLineDash](../cgcontextsetlinedash.md)
+  Sets the pattern for dashed lines in a graphics context.
 
 
 ---

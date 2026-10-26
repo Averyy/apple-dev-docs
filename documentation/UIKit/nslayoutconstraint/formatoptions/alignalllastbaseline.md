@@ -56,6 +56,8 @@ NSLayoutFormatAlignAllLastBaseline
   A bit mask that can be combined with an [`NSLayoutConstraint.FormatOptions`](../formatoptions.md) variable to yield only the direction portion of the format options.
 - [static var spacingBaselineToBaseline: NSLayoutConstraint.FormatOptions](./spacingbaselinetobaseline.md)
   Align elements vertically according to their baseline positions.
+- [NSLayoutFormatAlignAllBaseline](../../nslayoutformatoptions/nslayoutformatalignallbaseline.md)
+  Align all specified interface elements using [`NSLayoutAttributeBaseline`](../../nslayoutattribute/nslayoutattributebaseline.md) on each.
 
 
 ---

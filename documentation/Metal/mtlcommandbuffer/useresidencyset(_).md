@@ -42,6 +42,8 @@ Each command buffer can maintain a list of up to 32 different residency sets. Se
 ### Attaching residency sets
 - [func useResidencySets([any MTLResidencySet])](./useresidencysets%28_%29.md)
   Applies multiple residency sets to a command buffer.
+- [- useResidencySets:count:](./useresidencysets_count_.md)
+  Applies multiple residency sets to a command buffer.
 
 
 ---

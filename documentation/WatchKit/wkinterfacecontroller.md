@@ -199,6 +199,8 @@ Override any methods of the class needed to configure your interface and get it 
 ### Managing Notifications
 - [let WKAccessibilityVoiceOverStatusChanged: String](./wkaccessibilityvoiceoverstatuschanged.md)
   Tells the interface controller that the VoiceOver status has changed.
+- [WKAccessibilityReduceMotionStatusDidChangeNotification](./wkaccessibilityreducemotionstatusdidchangenotification.md)
+  Tells the interface controller that the reduce motion status has changed.
 ### Deprecated symbols
 - [Text Response Key](./text-response-key.md)
   Keys for retrieving text response information.

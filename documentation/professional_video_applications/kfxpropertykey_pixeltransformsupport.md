@@ -21,7 +21,7 @@ var kFxPropertyKey_PixelTransformSupport: String { get }
 
 ## Mentions
 
-- [Optimizing FxPlug plug-ins](https://developer.apple.com/documentation/professional-video-applications/optimizing-fxplug-plug-ins)
+- [Optimizing FxPlug plug-ins](../Professional-Video-Applications/optimizing-fxplug-plug-ins.md)
 
 ## See Also
 
@@ -31,6 +31,8 @@ var kFxPropertyKey_PixelTransformSupport: String { get }
 - [var kFxPropertyKey_MayRemapTime: String](./kfxpropertykey_mayremaptime.md)
   A Boolean value, encoded as an `NSNumber` object, indicating whether or not this plug-in may try to sample its input image(s) at any time other than the output time.
 - [var kFxPropertyKey_UsesNonmatchingTextureLayout: String](./kfxpropertykey_usesnonmatchingtexturelayout.md)
+- [PluginManagerVersionNumber](./pluginmanagerversionnumber.md)
+- [PluginManagerVersionString](./pluginmanagerversionstring.md)
 
 
 ---

@@ -41,6 +41,19 @@ extern BOOL object_isClass(id obj);
 - [func objc_end_catch()](./objc_end_catch%28%29.md)
 - [func objc_enumerateClasses(fromImage: ObjCEnumerationImage, matchingNamePrefix: String?, conformingTo: Protocol?, subclassing: AnyClass?) -> ObjCClassList](./objc_enumerateclasses%28fromimage,matchingnameprefix,conformingto,subclassing%29.md)
 - [func objc_exception_rethrow() -> Never](./objc_exception_rethrow%28%29.md)
+- [class_createInstanceFromZone](./class_createinstancefromzone.md)
+- [NXCompareHashTables](./nxcomparehashtables.md)
+- [NXCopyHashTable](./nxcopyhashtable.md)
+- [NXCountHashTable](./nxcounthashtable.md)
+- [NXCreateHashTable](./nxcreatehashtable.md)
+- [NXCreateHashTableFromZone](./nxcreatehashtablefromzone.md)
+- [NXEmptyHashTable](./nxemptyhashtable.md)
+- [NXFreeHashTable](./nxfreehashtable.md)
+- [NXHashGet](./nxhashget.md)
+- [NXHashInsert](./nxhashinsert.md)
+- [NXHashInsertIfAbsent](./nxhashinsertifabsent.md)
+- [NXHashMember](./nxhashmember.md)
+- [NXHashRemove](./nxhashremove.md)
 
 
 ---

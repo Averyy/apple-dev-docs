@@ -56,6 +56,8 @@ typedef struct { ... } simd_double3x3;
   Returns a new matrix with the specified rows.
 - [func simd_matrix3x3(simd_quatd) -> simd_double3x3](./simd_matrix3x3%28_%29-60dhx.md)
   Returns a new matrix with the specified quarternion.
+- [simd_diagonal_matrix](./simd_diagonal_matrix-2nuo5.md)
+  Returns a new matrix with the specified vector on the main diagonal.
 ### Element Access
 - [subscript(Int) -> SIMD3<Double>](./simd_double3x3/subscript%28_%29.md)
   Accesses the column at the specified position.
@@ -98,6 +100,56 @@ typedef struct { ... } simd_double3x3;
 - [static func - (simd_double3x3) -> simd_double3x3](./simd_double3x3/minus%28_%29.md)
 - [static func - (simd_double3x3, simd_double3x3) -> simd_double3x3](./simd_double3x3/minus%28_,_%29.md)
 - [static func -= (inout simd_double3x3, simd_double3x3)](./simd_double3x3/minuseq%28_,_%29.md)
+### Math Functions
+- [simd_add](./simd_add-3e048.md)
+  Returns the sum of two matrices.
+- [simd_sub](./simd_sub-1bye8.md)
+  Returns the difference of two matrices.
+- [matrix_scale](./matrix_scale-5igd0.md)
+  Returns the product of a scalar value and a matrix.
+### Matrix-Scalar Multiplication Functions
+- [simd_mul](./simd_mul-6r1mg.md)
+  Returns the product of a scalar value and a 3 x 3 matrix.
+### Matrix-Vector Multiplication Functions
+- [simd_mul](./simd_mul-8vafd.md)
+  Returns the product of a three-element vector and a 3 x 3 matrix.
+- [matrix_multiply](./matrix_multiply-rhpr.md)
+  Returns the product of a three-element vector and a 3 x 3 matrix.
+- [simd_mul](./simd_mul-ulvl.md)
+  Returns the product of a 3 x 2 matrix and a three-element vector.
+- [matrix_multiply](./matrix_multiply-5o7k9.md)
+  Returns the product of a 3 x 3 matrix and a three-element vector.
+### Matrix-Matrix Multiplication Functions
+- [simd_mul](./simd_mul-6war0.md)
+  Returns the product of a 2 x 3 matrix and a 3 x 2 matrix.
+- [matrix_multiply](./matrix_multiply-9q6cz.md)
+  Returns the product of a 2 x 3 matrix and a 3 x 2 matrix.
+- [simd_mul](./simd_mul-4t2wx.md)
+  Returns the product of a 3 x 3 matrix and a 3 x 3 matrix.
+- [matrix_multiply](./matrix_multiply-7h3v.md)
+  Returns the product of a 3 x 3 matrix and a 3 x 3 matrix.
+- [simd_mul](./simd_mul-7a0d0.md)
+  Returns the product of a 4 x 3 matrix and a 3 x 4 matrix.
+- [matrix_multiply](./matrix_multiply-8gt1r.md)
+  Returns the product of a 4 x 3 matrix and a 3 x 4 matrix.
+### Equality Functions
+- [simd_equal](./simd_equal-77o8z.md)
+  Returns true if every element in a matrix is exactly equal to the corresponding element in a second matrix.
+- [simd_almost_equal_elements](./simd_almost_equal_elements-590ch.md)
+  Returns true if every element in a matrix is within a specified tolerance to the corresponding element in a second matrix.
+- [simd_almost_equal_elements_relative](./simd_almost_equal_elements_relative-1gaj5.md)
+  Returns true if every element in a matrix is within a specified double-precision relative tolerance to the corresponding element in a second matrix.
+### Determinant and Inverse Functions
+- [simd_determinant](./simd_determinant-3a4ma.md)
+  Returns the determinant of the specified matrix.
+- [simd_inverse](./simd_inverse-3q4en.md)
+  Returns the inverse of the specified matrix.
+### Linear Combination Function
+- [simd_linear_combination](./simd_linear_combination-4hhnj.md)
+  Returns the linear combination of two scalar values and two matrices.
+### Transpose Function
+- [simd_transpose](./simd_transpose-26qy0.md)
+  Returns the transpose of a matrix.
 
 ## Relationships
 

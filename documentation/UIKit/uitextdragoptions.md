@@ -27,6 +27,8 @@ enum UITextDragOptions : NSInteger;
 ### Text drag options
 - [static var stripTextColorFromPreviews: UITextDragOptions](./uitextdragoptions/striptextcolorfrompreviews.md)
   Strips the foreground and background colors for a system-provided text drag preview.
+- [UITextDragOptionsNone](./uitextdragoptions/uitextdragoptionsnone.md)
+  Indicates no text drag options.
 ### Initializers
 - [init(rawValue: Int)](./uitextdragoptions/init%28rawvalue%29.md)
   Creates a text-drag options structure with the specified raw value.

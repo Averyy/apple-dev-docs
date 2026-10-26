@@ -45,6 +45,8 @@ A custom compositor calls this method to indicate that it’s composed a frame s
   Finishes the request with an error.
 - [func finishCancelledRequest()](./finishcancelledrequest%28%29.md)
   Cancels the request to compose a video frame.
+- [- finishWithComposedTaggedBufferGroup:](./finishwithcomposedtaggedbuffergroup_.md)
+  The method that the custom compositor calls when composition succeeds.
 
 
 ---

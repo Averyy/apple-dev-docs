@@ -37,6 +37,12 @@ Use this method to create a color object whose component values change based on 
 
   - **traits**: The trait collection to use when generating the color information. Always use the traits in this collection, and not the traits of the current environment, when determining the color information.
 
+## See Also
+
+### Creating a color dynamically
+- [+ colorWithDynamicProvider:](./colorwithdynamicprovider_.md)
+  Returns a color object that uses the specified block to generate its color data dynamically.
+
 
 ---
 

@@ -324,6 +324,10 @@ Enable noncontiguous layout using the [`allowsNonContiguousLayout`](./nslayoutma
   A concrete typesetter object that places glyphs during the text layout process.
 - [class NSTypesetter](./nstypesetter.md)
   An abstract class that performs various type layout tasks.
+- [NSLineSweepDirection](./nslinesweepdirection.md)
+  Values that describe the progression of text on a page.
+- [NSLineMovementDirection](./nslinemovementdirection.md)
+  The direction in which a line moves.
 
 
 ---

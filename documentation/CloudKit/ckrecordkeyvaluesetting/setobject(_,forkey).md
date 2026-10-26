@@ -42,6 +42,8 @@ func setObject(_ object: (any __CKRecordObjCValue)?, forKey key: String)
   Returns an array of the record’s keys.
 - [func changedKeys() -> [String]](./changedkeys%28%29.md)
   Returns an array of keys with recent changes to their values.
+- [- setObject:forKeyedSubscript:](./setobject_forkeyedsubscript_.md)
+  Stores an object in the record using the specified key.
 
 
 ---

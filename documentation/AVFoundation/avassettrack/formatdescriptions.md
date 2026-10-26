@@ -79,6 +79,22 @@ extension FourCharCode {
 }
 ```
 
+## See Also
+
+### Accessing track information
+- [playable](./isplayable.md)
+  A Boolean value that indicates whether the track is playable in the current environment.
+- [decodable](./isdecodable.md)
+  A Boolean value that indicates whether the track is decodable in the current environment.
+- [enabled](./isenabled.md)
+  A Boolean value that indicates whether the track’s container enables it.
+- [selfContained](./isselfcontained.md)
+  A Boolean value that indicates whether this track references sample data only within its container file.
+- [totalSampleDataLength](./totalsampledatalength.md)
+  The total number of bytes of sample data the track requires.
+- [- hasMediaCharacteristic:](./hasmediacharacteristic%28_%29.md)
+  Returns a Boolean value that indicates whether the track references media with the specified media characteristic.
+
 
 ---
 

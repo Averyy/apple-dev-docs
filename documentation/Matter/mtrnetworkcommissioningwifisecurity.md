@@ -36,6 +36,10 @@ enum MTRNetworkCommissioningWiFiSecurity : uint8_t;
 - [static var wpa2Personal: MTRNetworkCommissioningWiFiSecurity](./mtrnetworkcommissioningwifisecurity/wpa2personal.md)
 - [static var wpa3Personal: MTRNetworkCommissioningWiFiSecurity](./mtrnetworkcommissioningwifisecurity/wpa3personal.md)
 - [static var wpaPersonal: MTRNetworkCommissioningWiFiSecurity](./mtrnetworkcommissioningwifisecurity/wpapersonal.md)
+### Enumeration Cases
+- [MTRNetworkCommissioningWiFiSecurityWpa2Personal](./mtrnetworkcommissioningwifisecurity/mtrnetworkcommissioningwifisecuritywpa2personal-90fyd.md)
+- [MTRNetworkCommissioningWiFiSecurityWpa3Personal](./mtrnetworkcommissioningwifisecurity/mtrnetworkcommissioningwifisecuritywpa3personal-3ldz.md)
+- [MTRNetworkCommissioningWiFiSecurityWpaPersonal](./mtrnetworkcommissioningwifisecurity/mtrnetworkcommissioningwifisecuritywpapersonal-1u5x5.md)
 
 ## Relationships
 

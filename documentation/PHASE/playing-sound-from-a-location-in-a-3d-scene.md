@@ -23,7 +23,7 @@ Before PHASE plays sound in 3D, you create several objects to model your app’s
 
 Each class derives from [`PHASEObject`](./phaseobject.md), which defines a transform to provide it with a unique 3D position and orientation in the scene.
 
-An app can define the scene as a level in a game that’s composed of a detailed set of visual properties, for example, textured pixel data, lighting, and animation. However, to play sound in accordance with the visual scene, PHASE only needs to know the scene’s geometric shape. PHASE interprets the shape through a tranform (of type [`simd_float4x4`](https://developer.apple.com/documentation/simd/simd_float4x4)), and in particular, its array of four-column vectors. The following transform defines a zeroed orientation and position for a board-game piece:
+An app can define the scene as a level in a game that’s composed of a detailed set of visual properties, for example, textured pixel data, lighting, and animation. However, to play sound in accordance with the visual scene, PHASE only needs to know the scene’s geometric shape. PHASE interprets the shape through a tranform (of type [`simd_float4x4`](../simd/simd_float4x4.md)), and in particular, its array of four-column vectors. The following transform defines a zeroed orientation and position for a board-game piece:
 
 ```swift
 var chessPiecePose: simd_float4x4 = matrix_identity_float4x4

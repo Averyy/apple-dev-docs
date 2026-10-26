@@ -21,6 +21,24 @@ Create attributed strings from existing content or raw text and apply the initia
   Creates a reference-type attributed string from the specified value-type attributed string, including an attribute scope.
 - [convenience init<S>(AttributedString, including: KeyPath<AttributeScopes, S.Type>) throws](./nsattributedstring/init%28_,including%29-8iy4i.md)
   Creates a reference-type attributed string from the specified value-type attributed string, including an attribute scope that a key path identifies.
+- [- initWithFormat:options:locale:](./nsattributedstring/initwithformat_options_locale_.md)
+  Initializes an attributed string by substituting arguments into a specially formatted string.
+- [- initWithFormat:options:locale:arguments:](./nsattributedstring/initwithformat_options_locale_arguments_.md)
+  Initializes an attributed string by substituting a list of function arguments into a specially formatted string.
+- [- initWithFormat:options:locale:context:](./nsattributedstring/initwithformat_options_locale_context_.md)
+  Initializes an attributed string by substituting arguments into a specially formatted string and applying additional contextual information.
+- [- initWithFormat:options:locale:context:arguments:](./nsattributedstring/initwithformat_options_locale_context_arguments_.md)
+  Initializes an attributed string by substituting a list of function arguments into a specially formatted string and applying additional contextual information.
+- [+ localizedAttributedStringWithFormat:](./nsattributedstring/localizedattributedstringwithformat_.md)
+  Creates an attributed string by substituting arguments into a specially formatted string.
+- [+ localizedAttributedStringWithFormat:options:](./nsattributedstring/localizedattributedstringwithformat_options_.md)
+  Creates an attributed string by substituting a list of function arguments into a specially formatted string.
+- [+ localizedAttributedStringWithFormat:context:](./nsattributedstring/localizedattributedstringwithformat_context_.md)
+  Creates an attributed string by substituting arguments into a specially formatted string and applying additional contextual information.
+- [+ localizedAttributedStringWithFormat:options:context:](./nsattributedstring/localizedattributedstringwithformat_options_context_.md)
+  Creates an attributed string by substituting a list of function arguments into a specially formatted string and applying additional contextual information.
+- [NSAttributedStringFormattingOptions](./nsattributedstringformattingoptions.md)
+  Options to use when creating an attributed string from a format string and variable list of arguments.
 ### Creating from a data file
 - [init(data: Data, options: [NSAttributedString.DocumentReadingOptionKey : Any], documentAttributes: AutoreleasingUnsafeMutablePointer<NSDictionary?>?) throws](./nsattributedstring/init%28data,options,documentattributes%29.md)
   Creates an attributed string from the contents of the specified data object.
@@ -59,6 +77,14 @@ Create attributed strings from existing content or raw text and apply the initia
   Creates an attributed string from Markdown-formatted data using the provided options.
 - [convenience init(contentsOf: URL, options: AttributedString.MarkdownParsingOptions, baseURL: URL?) throws](./nsattributedstring/init%28contentsof,options,baseurl%29.md)
   Creates an attributed string from the contents of a specified URL that contains Markdown-formatted data using the provided options.
+- [- initWithMarkdownString:options:baseURL:error:](./nsattributedstring/initwithmarkdownstring_options_baseurl_error_.md)
+  Creates an attributed string from a Markdown-formatted string using the provided options.
+- [- initWithMarkdown:options:baseURL:error:](./nsattributedstring/initwithmarkdown_options_baseurl_error_.md)
+  Creates an attributed string from Markdown-formatted data using the provided options.
+- [- initWithContentsOfMarkdownFileAtURL:options:baseURL:error:](./nsattributedstring/initwithcontentsofmarkdownfileaturl_options_baseurl_error_.md)
+  Creates an attributed string from the contents of a specified URL that contains Markdown-formatted data using the provided options.
+- [NSAttributedStringMarkdownParsingOptions](./nsattributedstringmarkdownparsingoptions.md)
+  Options that affect the parsing of Markdown content into an attributed string.
 ### Creating a string with an attachment
 - [init(attachment: NSTextAttachment)](./nsattributedstring/init%28attachment%29.md)
   Creates an attributed string with an attachment.

@@ -79,6 +79,8 @@ Locate and identify a GPU and the features it supports, and sample its counters.
 ### Sampling GPU and CPU timestamps simultaneously
 - [func sampleTimestamps() -> (cpu: MTLTimestamp, gpu: MTLTimestamp)](./mtldevice/sampletimestamps%28%29.md)
   Captures and returns a CPU timestamp and a GPU timestamp from the same moment in time.
+- [- sampleTimestamps:gpuTimestamp:](./mtldevice/sampletimestamps_gputimestamp_.md)
+  Captures and returns a CPU timestamp and a GPU timestamp from the same moment in time.
 ### Identifying a GPU device
 - [var name: String](./mtldevice/name.md)
   The full name of the GPU device.

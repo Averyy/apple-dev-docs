@@ -57,6 +57,8 @@ After receiving an object from an event store, don’t use that object with a di
   Creates an event store that contains data for the specified sources.
 - [var eventStoreIdentifier: String](./ekeventstore/eventstoreidentifier.md)
   The unique identifier for the event store.
+- [- initWithAccessToEntityTypes:](./ekeventstore/initwithaccesstoentitytypes_.md)
+  Initializes access to the event store with support for the given entity type.
 ### Requesting access to events and reminders
 - [func requestWriteOnlyAccessToEvents(completion: (Bool, (any Error)?) -> Void)](./ekeventstore/requestwriteonlyaccesstoevents%28completion%29.md)
   Prompts the person using your app to grant or deny write access to event data.

@@ -36,6 +36,9 @@ The default is [`false`](../../Swift/false.md), which prevents the user from sel
   A Boolean value indicating whether the table view allows the user to select zero columns or rows.
 - [var usesAutomaticRowHeights: Bool](./usesautomaticrowheights.md)
   A Boolean value that indicates whether the table view uses autolayout to calculate the height of rows.
+### Related Documentation
+- [- selectColumn:byExtendingSelection:](./selectcolumn_byextendingselection_.md)
+  Selects the column at the specified index, optionally extending any existing selection.
 
 
 ---

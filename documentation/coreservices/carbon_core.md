@@ -16,17 +16,29 @@ Interact with legacy technologies.
   Investigate the operating environment of your app.
 - [Text Encoding Conversion Manager](./carbon_core/text_encoding_conversion_manager.md)
   Handle text encoding conversion between apps and transfer text across different platforms.
+- [Alias Manager](./carbon_core/alias_manager.md)
+  Create and resolve alias records that describe file system objects such as files, directories, and volumes. 
+- [File Manager](./carbon_core/file_manager.md)
+  Interact with files, folders, and volumes.
 ### Services
 - [Multiprocessing Services](./carbon_core/multiprocessing_services.md)
   Support multitasking in your app.
+- [Debugger Services](./carbon_core/debugger_services.md)
+  Handle assertions and exceptions at run time.
 ### Utilities
 - [Unicode Utilities](./carbon_core/unicode_utilities.md)
   Work with Unicode text.
+- [Mathematical and Logical Utilities](./carbon_core/mathematical_and_logical_utilities.md)
+  Perform mathematical and logical operations.
+- [Pascal String Utilities](./carbon_core/pascal_string_utilities.md)
+  Performing common string manipulations on Pascal strings.
 ### Other Reference
 - [Carbon Core Structures](./carbon_core/carbon_core_structures.md)
 - [Carbon Core Enumerations](./carbon_core/carbon_core_enumerations.md)
 - [Carbon Core Functions](./carbon_core/carbon_core_functions.md)
 - [Carbon Core Data Types](./carbon_core/carbon_core_data_types.md)
+- [Core Endian](./carbon_core/core_endian.md)
+  Convert data between big endian and little endian format
 
 
 ---

@@ -53,6 +53,12 @@ enum WKWebExtensionContextPermissionStatus : NSInteger;
 - [Sendable](../../Swift/sendable.md)
 - [SendableMetatype](../../Swift/sendablemetatype.md)
 
+## See Also
+
+### Enumerations
+- [WKWebExtensionContextError](./error/code.md)
+  Constants that indicate errors in the [`WKWebExtensionContext`](../wkwebextensioncontext.md) domain.
+
 
 ---
 

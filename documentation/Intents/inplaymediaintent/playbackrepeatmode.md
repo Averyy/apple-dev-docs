@@ -49,6 +49,12 @@ var playbackRepeatMode: INPlaybackRepeatMode { get }
   Constants that describe the playback queue location for a media item.
 - [var mediaSearch: INMediaSearch?](./mediasearch.md)
   An object that contains the search parameters.
+- [playShuffled](./playshuffled-93hn1.md)
+  A Boolean value that indicates whether the media plays in a shuffled order.
+- [resumePlayback](./resumeplayback-9zfyp.md)
+  The resume playback setting at the time the user plays the media item.
+- [playbackSpeed](./playbackspeed-6ngbq.md)
+  The playback speed for a media item.
 
 
 ---

@@ -37,6 +37,12 @@ struct AudioUnitCocoaViewInfo;
 ### Configuring the Audio Unit UI
 - [func GetAudioUnitParameterDisplayType(AudioUnitParameterOptions) -> AudioUnitParameterOptions](./getaudiounitparameterdisplaytype%28_%29.md)
 - [func SetAudioUnitParameterDisplayType(AudioUnitParameterOptions, AudioUnitParameterOptions) -> AudioUnitParameterOptions](./setaudiounitparameterdisplaytype%28_,_%29.md)
+- [AUCocoaUIBase](./aucocoauibase.md)
+- [AudioUnitCarbonView](./audiounitcarbonview.md)
+- [AudioUnitCarbonViewEventID](./audiounitcarbonvieweventid.md)
+- [Audio Unit Carbon View Events](./api-1579365-audio_unit_carbon_view_events.md)
+- [Audio Unit Carbon View Selectors](./api-1579372-audio_unit_carbon_view_selectors.md)
+- [Audio Unit Carbon View Component Types](./api-1579363-audio_unit_carbon_view_component.md)
 
 
 ---

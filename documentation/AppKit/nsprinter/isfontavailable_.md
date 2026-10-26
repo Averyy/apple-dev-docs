@@ -1,0 +1,55 @@
+# isFontAvailable:
+
+**Framework**: AppKit  
+**Kind**: method  
+**Role**: Instance Method
+
+Deprecated.
+
+**Availability**:
+- macOS 10.0+ - Deprecated in 10.2
+
+## Declaration
+
+```objc
+- (BOOL) isFontAvailable:(NSString *) faceName;
+```
+
+## See Also
+
+### Deprecated methods
+- [- isKey:inTable:](./iskey_intable_.md)
+  Returns a Boolean value that indicates whether the specified key is in the specified table.
+- [- stringForKey:inTable:](./stringforkey_intable_.md)
+  Returns the first occurrence of a value associated with specified key.
+- [- stringListForKey:inTable:](./stringlistforkey_intable_.md)
+  Returns an array of strings, one for each occurrence, associated with specified key.
+- [- booleanForKey:inTable:](./booleanforkey_intable_.md)
+  Returns the Boolean value associated with the specified key.
+- [- floatForKey:inTable:](./floatforkey_intable_.md)
+  Returns the floating-point value associated with the specified key.
+- [- intForKey:inTable:](./intforkey_intable_.md)
+  Returns the integer value associated with the specified key.
+- [- rectForKey:inTable:](./rectforkey_intable_.md)
+  Returns the rectangle associated with the specified key.
+- [- sizeForKey:inTable:](./sizeforkey_intable_.md)
+  Returns the size data type associated with the specified key.
+- [- statusForTable:](./statusfortable_.md)
+  Returns the status of the specified table.
+- [+ printerWithName:domain:includeUnavailable:](./printerwithname_domain_includeunavailable_.md)
+  Deprecated.
+- [- acceptsBinary](./acceptsbinary.md)
+  Deprecated.
+- [- domain](./domain.md)
+  Deprecated.
+- [- host](./host.md)
+  Deprecated.
+- [- imageRectForPaper:](./imagerectforpaper_.md)
+  Deprecated.
+- [- isColor](./iscolor.md)
+  Deprecated.
+
+
+---
+
+*[View on Apple Developer](https://developer.apple.com/documentation/appkit/nsprinter/isfontavailable:)*

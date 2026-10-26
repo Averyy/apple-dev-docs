@@ -36,6 +36,8 @@ If you override [`updateConfiguration(using:)`](./updateconfiguration%28using%29
   The current content configuration of the cell.
 - [var contentView: UIView](./contentview.md)
   The main view that you add your cell’s custom content to.
+- [contentConfiguration](./contentconfiguration-1lcqh.md)
+  The current content configuration of the cell.
 
 
 ---

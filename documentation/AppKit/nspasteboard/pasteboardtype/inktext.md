@@ -34,6 +34,30 @@ For information on ink text objects, see Using Ink Services in Your Application.
   Encapsulated PostScript (EPS) code.
 - [static let vCard: NSPasteboard.PasteboardType](./vcard.md)
   VCard data.
+- [NSColorPboardType](../../nscolorpboardtype.md)
+  `NSColor` data.
+- [NSFilenamesPboardType](../../nsfilenamespboardtype.md)
+  An array of `NSString` objects designating one or more filenames.
+- [NSFontPboardType](../../nsfontpboardtype.md)
+  Font and character information.
+- [NSHTMLPboardType](../../nshtmlpboardtype.md)
+  HTML (which an `NSTextView` object can read from, but not write to).
+- [NSMultipleTextSelectionPboardType](../../nsmultipletextselectionpboardtype.md)
+  Multiple text selection.
+- [NSPDFPboardType](../../nspdfpboardtype.md)
+  PDF data.
+- [NSPICTPboardType](../../nspictpboardtype.md)
+  QuickDraw picture data.
+- [NSRTFDPboardType](../../nsrtfdpboardtype.md)
+  RTFD formatted file contents.
+- [NSRTFPboardType](../../nsrtfpboardtype.md)
+  Rich Text Format (RTF) data.
+- [NSRulerPboardType](../../nsrulerpboardtype.md)
+  Paragraph formatting information.
+- [NSStringPboardType](../../nsstringpboardtype.md)
+  `NSString` data.
+- [NSTIFFPboardType](../../nstiffpboardtype.md)
+  `NSString` data.
 
 
 ---

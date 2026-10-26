@@ -30,6 +30,11 @@
       "file_path": "documentation/Messages/icecreambuilder-building-an-imessage-extension.md",
       "hash": "3a61a30db70d8bc80bbf98919ca82efdaf37485d4d1a391ec7c37807be34c3b6"
     },
+    "https://developer.apple.com/documentation/messages/messages_extern": {
+      "etag": "\"9a1-65d55dfbbb76e-df\"",
+      "file_path": "documentation/Messages/messages_extern.md",
+      "hash": "1e499eb3c15819bd3e8c0df889319a350aa8b18172b28b0e0061635cf49324c3"
+    },
     "https://developer.apple.com/documentation/messages/msconversation": {
       "etag": "\"83fb-65d55dfbd7741-df\"",
       "file_path": "documentation/Messages/msconversation.md",
@@ -795,6 +800,11 @@
       "file_path": "documentation/Messages/icecreambuilder-building-an-imessage-extension.md",
       "hash": "3a61a30db70d8bc80bbf98919ca82efdaf37485d4d1a391ec7c37807be34c3b6"
     },
+    "https://developer.apple.com/tutorials/data/documentation/messages/messages_extern.json": {
+      "etag": "\"9a1-65d55dfbbb76e-df\"",
+      "file_path": "documentation/Messages/messages_extern.md",
+      "hash": "1e499eb3c15819bd3e8c0df889319a350aa8b18172b28b0e0061635cf49324c3"
+    },
     "https://developer.apple.com/tutorials/data/documentation/messages/msconversation.json": {
       "etag": "\"83fb-65d55dfbd7741-df\"",
       "file_path": "documentation/Messages/msconversation.md",
@@ -1533,8 +1543,8 @@
   },
   "metadata": {
     "render": {
-      "version": 1
+      "version": 2
     },
-    "total_pages": 306
+    "total_pages": 308
   }
 }

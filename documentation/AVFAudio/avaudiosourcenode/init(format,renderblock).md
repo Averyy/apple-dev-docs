@@ -45,6 +45,8 @@ Depending on the audio engine’s operating mode, call the block on real-time or
   A block that supplies audio data to an audio source node.
 - [init(renderBlock: AVAudioSourceNodeRenderBlock)](./init%28renderblock%29.md)
   Creates an audio source node with a block that supplies audio data.
+- [- initWithRealtimeSafeRenderBlock:](./initwithrealtimesaferenderblock_.md)
+- [- initWithFormat:realtimeSafeRenderBlock:](./initwithformat_realtimesaferenderblock_.md)
 
 
 ---

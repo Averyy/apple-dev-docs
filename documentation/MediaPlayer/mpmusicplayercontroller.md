@@ -105,6 +105,12 @@ Users can initiate audio playback commands through an external headset or access
   Starts the generation of playback notifications.
 - [func endGeneratingPlaybackNotifications()](./mpmusicplayercontroller/endgeneratingplaybacknotifications%28%29.md)
   Ends the generation of playback notifications.
+- [MPMusicPlayerControllerPlaybackStateDidChangeNotification](./mpmusicplayercontrollerplaybackstatedidchangenotification.md)
+  Posted when the playback state changes programmatically or by user action.
+- [MPMusicPlayerControllerNowPlayingItemDidChangeNotification](./mpmusicplayercontrollernowplayingitemdidchangenotification.md)
+  Posted when the currently playing media item has changed.
+- [MPMusicPlayerControllerVolumeDidChangeNotification](./mpmusicplayercontrollervolumedidchangenotification.md)
+  Posted when the audio playback volume for the music player has changed.
 ### Type Properties
 - [class var iPodMusicPlayer: MPMusicPlayerController](./mpmusicplayercontroller/ipodmusicplayer.md)
   Returns the iPod music player, which controls the iPod app’s state.

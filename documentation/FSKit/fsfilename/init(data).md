@@ -34,6 +34,18 @@ This initializer copies up to `name.length` characters of the sequence pointed t
 - [convenience init(cString: UnsafeBufferPointer<CChar>)](./init%28cstring%29.md)
 - [convenience init(string: String)](./init%28string%29.md)
   Creates a filename by copying a character sequence from a string instance.
+- [- initWithBytes:length:](./initwithbytes_length_.md)
+  Initializes a file name by copying a character sequence from a byte array.
+- [+ nameWithBytes:length:](./namewithbytes_length_.md)
+  Creates a filename by copying a character sequence from a byte array.
+- [- initWithCString:](./initwithcstring_.md)
+  Initializes a filename from a null-terminated character sequence.
+- [+ nameWithCString:](./namewithcstring_.md)
+  Creates a filename from a null-terminated character sequence.
+- [+ nameWithData:](./namewithdata_.md)
+  Creates a filename by copying a character sequence data object.
+- [+ nameWithString:](./namewithstring_.md)
+  Creates a filename by copying a character sequence from a string instance.
 
 
 ---

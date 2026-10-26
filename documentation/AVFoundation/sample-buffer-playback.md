@@ -27,6 +27,15 @@ Create custom controllers to play and synchronize the timing of sample buffer st
   An object that enqueues video sample buffers for rendering.
 - [class AVSampleBufferAudioRenderer](./avsamplebufferaudiorenderer.md)
   An object used to decompress audio and play compressed or uncompressed audio.
+### Notifications
+- [AVSampleBufferAudioRendererOutputConfigurationDidChangeNotification](./avsamplebufferaudiorendereroutputconfigurationdidchangenotification.md)
+  A notification that indicates the hardware configuration does not match the enqueued data format.
+- [AVSampleBufferAudioRendererWasFlushedAutomaticallyNotification](./avsamplebufferaudiorendererwasflushedautomaticallynotification.md)
+  A notification that fires whenever the receiver’s enqueued media data has been flushed for a reason other than a call to the -flush method.
+- [AVSampleBufferDisplayLayerOutputObscuredDueToInsufficientExternalProtectionDidChangeNotification](./avsamplebufferdisplaylayeroutputobscuredduetoinsufficientexternalprotectiondidchangenotification.md)
+- [AVSampleBufferDisplayLayerReadyForDisplayDidChangeNotification](./avsamplebufferdisplaylayerreadyfordisplaydidchangenotification.md)
+- [AVSampleBufferDisplayLayerRequiresFlushToResumeDecodingDidChangeNotification](./avsamplebufferdisplaylayerrequiresflushtoresumedecodingdidchangenotification.md)
+  A notification the system posts when a sample buffer display layer changes its decoding requirements.
 
 ## See Also
 

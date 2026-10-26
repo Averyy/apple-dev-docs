@@ -43,6 +43,8 @@ You can apply a single [`MTLFunctionConstantValues`](./mtlfunctionconstantvalues
   Sets a value for a function constant with a specific name.
 - [func setConstantValues(UnsafeRawPointer, type: MTLDataType, range: Range<Int>)](./mtlfunctionconstantvalues/setconstantvalues%28_,type,range%29.md)
   Sets values for a group of function constants within a specific index range.
+- [- setConstantValues:type:withRange:](./mtlfunctionconstantvalues/setconstantvalues_type_withrange_.md)
+  Sets values for a group of function constants within a specific index range.
 ### Resetting constant values
 - [func reset()](./mtlfunctionconstantvalues/reset%28%29.md)
   Deletes all previously set constant values.

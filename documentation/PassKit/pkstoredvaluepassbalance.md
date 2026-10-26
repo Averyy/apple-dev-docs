@@ -41,8 +41,12 @@ class PKStoredValuePassBalance
   The ISO 4217 currency code of the balance.
 - [PKStoredValuePassBalance.BalanceType](./pkstoredvaluepassbalance/balancetype-swift.struct.md)
   The type of value that the balance represents, such as money or points.
+- [amount](./pkstoredvaluepassbalance/amount-2vfd3.md)
+  The current balance in money or points.
 ### Comparing pass balance objects
 - [static func == (PKStoredValuePassBalance, PKStoredValuePassBalance) -> Bool](./pkstoredvaluepassbalance/eqeq%28_,_%29.md)
+  Returns a Boolean value that indicates whether two pass balance objects contain the same values.
+- [- isEqualToBalance:](./pkstoredvaluepassbalance/isequaltobalance_.md)
   Returns a Boolean value that indicates whether two pass balance objects contain the same values.
 
 ## Relationships

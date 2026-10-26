@@ -19,51 +19,51 @@ You can use an Intents UI app extension to provide a custom interface for workou
 - [Handling Workout Requests with SiriKit](./handling-workout-requests-with-sirikit.md)
   Add an Intent Extension to your app that handles requests to control workouts with Siri.
 ### Start a Workout
-- [protocol INStartWorkoutIntentHandling](https://developer.apple.com/documentation/intents/instartworkoutintenthandling)
+- [protocol INStartWorkoutIntentHandling](../Intents/instartworkoutintenthandling.md)
   An interface that handles requests to start a workout.
-- [class INStartWorkoutIntent](https://developer.apple.com/documentation/intents/instartworkoutintent)
+- [class INStartWorkoutIntent](../Intents/instartworkoutintent.md)
   A request to start a workout for the user.
-- [class INStartWorkoutIntentResponse](https://developer.apple.com/documentation/intents/instartworkoutintentresponse)
+- [class INStartWorkoutIntentResponse](../Intents/instartworkoutintentresponse.md)
   Your app’s response to a start workout intent.
 ### Pause a Workout
-- [protocol INPauseWorkoutIntentHandling](https://developer.apple.com/documentation/intents/inpauseworkoutintenthandling)
+- [protocol INPauseWorkoutIntentHandling](../Intents/inpauseworkoutintenthandling.md)
   An interface that handles requests to pause a workout.
-- [class INPauseWorkoutIntent](https://developer.apple.com/documentation/intents/inpauseworkoutintent)
+- [class INPauseWorkoutIntent](../Intents/inpauseworkoutintent.md)
   A request to pause the current workout that also stops the gathering of workout data.
-- [class INPauseWorkoutIntentResponse](https://developer.apple.com/documentation/intents/inpauseworkoutintentresponse)
+- [class INPauseWorkoutIntentResponse](../Intents/inpauseworkoutintentresponse.md)
   Your app’s response to a pause workout intent.
 ### Resume a Workout
-- [protocol INResumeWorkoutIntentHandling](https://developer.apple.com/documentation/intents/inresumeworkoutintenthandling)
+- [protocol INResumeWorkoutIntentHandling](../Intents/inresumeworkoutintenthandling.md)
   The interface that handles requests to resume a workout.
-- [class INResumeWorkoutIntent](https://developer.apple.com/documentation/intents/inresumeworkoutintent)
+- [class INResumeWorkoutIntent](../Intents/inresumeworkoutintent.md)
   A request to resume a paused workout.
-- [class INResumeWorkoutIntentResponse](https://developer.apple.com/documentation/intents/inresumeworkoutintentresponse)
+- [class INResumeWorkoutIntentResponse](../Intents/inresumeworkoutintentresponse.md)
   Your app’s response to a resume workout intent.
 ### Cancel a Workout
-- [protocol INCancelWorkoutIntentHandling](https://developer.apple.com/documentation/intents/incancelworkoutintenthandling)
+- [protocol INCancelWorkoutIntentHandling](../Intents/incancelworkoutintenthandling.md)
   The interface that handles requests to cancel a workout.
-- [class INCancelWorkoutIntent](https://developer.apple.com/documentation/intents/incancelworkoutintent)
+- [class INCancelWorkoutIntent](../Intents/incancelworkoutintent.md)
   A request to cancel an active workout.
-- [class INCancelWorkoutIntentResponse](https://developer.apple.com/documentation/intents/incancelworkoutintentresponse)
+- [class INCancelWorkoutIntentResponse](../Intents/incancelworkoutintentresponse.md)
   Your app’s response to a cancel workout intent.
 ### End a Workout
-- [protocol INEndWorkoutIntentHandling](https://developer.apple.com/documentation/intents/inendworkoutintenthandling)
+- [protocol INEndWorkoutIntentHandling](../Intents/inendworkoutintenthandling.md)
   An interface that handles requests to complete a workout.
-- [class INEndWorkoutIntent](https://developer.apple.com/documentation/intents/inendworkoutintent)
+- [class INEndWorkoutIntent](../Intents/inendworkoutintent.md)
   A request to end the current workout that also validates workout parameters and saves the results.
-- [class INEndWorkoutIntentResponse](https://developer.apple.com/documentation/intents/inendworkoutintentresponse)
+- [class INEndWorkoutIntentResponse](../Intents/inendworkoutintentresponse.md)
   Your app’s response to an end workout intent.
 ### Workout Data Objects
-- [struct INWorkoutNameIdentifier](https://developer.apple.com/documentation/intents/inworkoutnameidentifier)
+- [struct INWorkoutNameIdentifier](../Intents/inworkoutnameidentifier.md)
   Constants that indicate the type of workout.
-- [enum INWorkoutGoalUnitType](https://developer.apple.com/documentation/intents/inworkoutgoalunittype)
+- [enum INWorkoutGoalUnitType](../Intents/inworkoutgoalunittype.md)
   Describes the unit of measure with constants for a workout.
-- [enum INWorkoutLocationType](https://developer.apple.com/documentation/intents/inworkoutlocationtype)
+- [enum INWorkoutLocationType](../Intents/inworkoutlocationtype.md)
   Describes the location of a workout.
 ### Resolution Results
-- [class INWorkoutGoalUnitTypeResolutionResult](https://developer.apple.com/documentation/intents/inworkoutgoalunittyperesolutionresult)
+- [class INWorkoutGoalUnitTypeResolutionResult](../Intents/inworkoutgoalunittyperesolutionresult.md)
   A resolution result for the units of a workout goal.
-- [class INWorkoutLocationTypeResolutionResult](https://developer.apple.com/documentation/intents/inworkoutlocationtyperesolutionresult)
+- [class INWorkoutLocationTypeResolutionResult](../Intents/inworkoutlocationtyperesolutionresult.md)
   A resolution result for the location type where the workout occurs.
 
 ## See Also

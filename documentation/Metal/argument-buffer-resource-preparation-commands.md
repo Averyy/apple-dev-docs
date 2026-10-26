@@ -22,10 +22,14 @@ For more information, see [Improving CPU performance by using argument buffers](
   Ensures the shaders in the render pass’s subsequent draw commands have access to a resource.
 - [func useResources([any MTLResource], usage: MTLResourceUsage, stages: MTLRenderStages)](./mtlrendercommandencoder/useresources%28_,usage,stages%29.md)
   Ensures the shaders in the render pass’s subsequent draw commands have access to multiple resources.
+- [- useResources:count:usage:stages:](./mtlrendercommandencoder/useresources_count_usage_stages_.md)
+  Ensures the shaders in the render pass’s subsequent draw commands have access to multiple resources.
 ### Loading heaps and the resources they contain for argument buffers
 - [func useHeap(any MTLHeap, stages: MTLRenderStages)](./mtlrendercommandencoder/useheap%28_,stages%29.md)
   Ensures the shaders in the render pass’s subsequent draw commands have access to the resources you allocate from a heap.
 - [func useHeaps([any MTLHeap], stages: MTLRenderStages)](./mtlrendercommandencoder/useheaps%28_,stages%29.md)
+  Ensures the shaders in the render pass’s subsequent draw commands have access to the resources you allocate from multiple heaps.
+- [- useHeaps:count:stages:](./mtlrendercommandencoder/useheaps_count_stages_.md)
   Ensures the shaders in the render pass’s subsequent draw commands have access to the resources you allocate from multiple heaps.
 
 ## See Also

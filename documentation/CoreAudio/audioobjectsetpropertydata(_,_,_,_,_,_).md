@@ -57,6 +57,10 @@ Note that the value of the property should not be considered changed until the H
 - [func AudioGetHostClockFrequency() -> Float64](./audiogethostclockfrequency%28%29.md)
 - [func AudioGetHostClockMinimumTimeDelta() -> UInt32](./audiogethostclockminimumtimedelta%28%29.md)
 - [func AudioHardwareCreateAggregateDevice(CFDictionary, UnsafeMutablePointer<AudioObjectID>) -> OSStatus](./audiohardwarecreateaggregatedevice%28_,_%29.md)
+- [AudioDriverPlugInClose](./audiodriverpluginclose.md)
+- [AudioDriverPlugInDeviceGetProperty](./audiodriverplugindevicegetproperty.md)
+- [AudioDriverPlugInDeviceGetPropertyInfo](./audiodriverplugindevicegetpropertyinfo.md)
+- [AudioDriverPlugInDeviceSetProperty](./audiodriverplugindevicesetproperty.md)
 
 
 ---

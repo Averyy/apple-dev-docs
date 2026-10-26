@@ -28,6 +28,8 @@ extern BOOL UIFloatRangeIsInfinite(UIFloatRange range);
 ### Testing the range values
 - [func UIFloatRangeIsEqualToRange(UIFloatRange, UIFloatRange) -> Bool](../uifloatrangeisequaltorange%28_,_%29.md)
   Returns a Boolean indicating whether two float ranges are equivalent.
+- [UIFloatRangeIsEqualToRange](../uifloatrangeisequaltorange.md)
+  Returns a Boolean indicating whether two float ranges are equivalent.
 
 
 ---

@@ -34,6 +34,8 @@ enum MLCDeviceType : int32_t;
   A device type that represents the GPU.
 - [MLCDeviceType.ane](./mlcdevicetype/ane.md)
   A device type that represents the Apple Neural Engine.
+- [MLCDeviceTypeCount](./mlcdevicetype/mlcdevicetypecount.md)
+  A number that represents the number of device types.
 ### Initializers
 - [init?(rawValue: Int32)](./mlcdevicetype/init%28rawvalue%29.md)
 

@@ -49,6 +49,14 @@ An initialized color object. The returned object uses the color space specified 
   Creates a color object using the specified opacity and RGB component values in the Display P3 color space.
 - [init?(named: String, inBundle: Bundle?, compatibleWithTraitCollection: UITraitCollection?)](./init%28named,inbundle,compatiblewithtraitcollection%29.md)
   Creates a color object using the named asset that’s compatible with the specified trait collection.
+- [+ colorWithWhite:alpha:](./colorwithwhite_alpha_.md)
+  Creates a color object using the specified opacity and grayscale values.
+- [+ colorWithHue:saturation:brightness:alpha:](./colorwithhue_saturation_brightness_alpha_.md)
+  Creates a color object using the specified opacity and HSB color space component values.
+- [+ colorWithRed:green:blue:alpha:](./colorwithred_green_blue_alpha_.md)
+  Creates a color object using the specified opacity and RGB component values.
+- [+ colorWithDisplayP3Red:green:blue:alpha:](./colorwithdisplayp3red_green_blue_alpha_.md)
+  Creates a color object using the specified opacity and RGB component values in the Display P3 color space.
 
 
 ---

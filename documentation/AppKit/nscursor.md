@@ -153,6 +153,13 @@ There are corresponding cursor `hide` and `unhide` calls, thus the cursor will b
 ### Deprecated
 - [Deprecated symbols](./nscursor-deprecated-symbols.md)
   Review symbols that are no longer in active development, and their recommended replacements.
+### Type Methods
+- [+ columnResizeCursorInDirections:](./nscursor/columnresizecursorindirections_.md)
+  Returns the cursor for resizing a column (vertical divider) in the specified directions.
+- [+ frameResizeCursorFromPosition:inDirections:](./nscursor/frameresizecursorfromposition_indirections_.md)
+  Returns the cursor for resizing a rectangular frame from the specified edge or corner.
+- [+ rowResizeCursorInDirections:](./nscursor/rowresizecursorindirections_.md)
+  Returns the cursor for resizing a row (horizontal divider) in the specified directions.
 
 ## Relationships
 

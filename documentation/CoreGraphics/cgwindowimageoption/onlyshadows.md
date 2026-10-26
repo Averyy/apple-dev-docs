@@ -31,6 +31,7 @@ When capturing the window, only the shadow effects are captured.
 - [static var nominalResolution: CGWindowImageOption](./nominalresolution.md)
   When capturing the window, return the nominal image resolution. The returned image size is the same as the screen size.
 - [static var shouldBeOpaque: CGWindowImageOption](./shouldbeopaque.md)
+- [kCGWindowImageDefault](./kcgwindowimagedefault.md)
 
 
 ---

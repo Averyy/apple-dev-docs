@@ -44,6 +44,8 @@ You create an [`INStartPhotoPlaybackIntentResponse`](./instartphotoplaybackinten
 ### Accessing the Response Details
 - [var searchResultsCount: Int?](./instartphotoplaybackintentresponse/searchresultscount-5r7e7.md)
   The number of photos that match the search parameters.
+- [searchResultsCount](./instartphotoplaybackintentresponse/searchresultscount-6ns8y.md)
+  The number of photos that match the search parameters.
 
 ## Relationships
 

@@ -28,6 +28,8 @@ enum NSTableViewGridLineStyle : NSUInteger;
   Specifies that horizontal grid lines should be displayed.
 - [static var dashedHorizontalGridLineMask: NSTableView.GridLineStyle](./gridlinestyle/dashedhorizontalgridlinemask.md)
   Specifies that the horizontal grid lines should be drawn dashed.
+- [NSTableViewGridNone](../nstableviewgridlinestyle/nstableviewgridnone.md)
+  Specifies that no grid lines should be displayed.
 ### Initializers
 - [init(rawValue: UInt)](./gridlinestyle/init%28rawvalue%29.md)
 

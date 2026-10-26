@@ -42,6 +42,10 @@ For more information, see [Human Interface Guidelines](https://developer.apple.c
   Hides the pointer when it moves over the current region.
 - [class func system() -> Self](./uipointerstyle/system%28%29.md)
   Morphs the pointer into a default system-style pointer.
+- [+ styleWithEffect:shape:](./uipointerstyle/stylewitheffect_shape_.md)
+  Applies the provided content effect and pointer shape to the current region.
+- [+ styleWithShape:constrainedAxes:](./uipointerstyle/stylewithshape_constrainedaxes_.md)
+  Morphs the pointer into the provided shape when it moves over the current region.
 ### Specifying pointer accessories
 - [var accessories: [UIPointerAccessory]](./uipointerstyle/accessories.md)
   Accessories to display alongside the pointer.
@@ -72,6 +76,10 @@ For more information, see [Human Interface Guidelines](https://developer.apple.c
   An effect that alters a view’s appearance when a pointer enters the current region.
 - [class UIPointerAccessory](./uipointeraccessory.md)
   Constants that describe accessories to display alongside the primary pointer.
+- [UIPointerShape](./uipointershape-c.class.md)
+  An object that defines the shape of custom pointers.
+- [UIPointerEffect](./uipointereffect-c.class.md)
+  An effect that alters a view’s appearance when a pointer enters the current region.
 
 
 ---

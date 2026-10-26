@@ -63,6 +63,8 @@ If you use `%@` for your substitution variables, CloudKit replaces those variabl
   The notification’s subtitle.
 - [var subtitleLocalizationKey: String?](./subtitlelocalizationkey.md)
   The key that identifies the localized string for the notification’s subtitle.
+- [subscriptionID](./subscriptionid-90zhj.md)
+  The ID of the subscription that triggers the notification.
 
 
 ---

@@ -43,6 +43,14 @@ enum CKSyncEnginePendingDatabaseChangeType : NSInteger;
 - [Sendable](../Swift/sendable.md)
 - [SendableMetatype](../Swift/sendablemetatype.md)
 
+## See Also
+
+### Understanding the change
+- [type](./cksyncenginependingdatabasechange/type.md)
+  The type of database change.
+- [zoneID](./cksyncenginependingdatabasechange/zoneid.md)
+  The identifier of the record zone to change.
+
 
 ---
 

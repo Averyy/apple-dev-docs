@@ -36,6 +36,8 @@ Flattening a path converts all curved line segments into straight line approxima
 - [init(cgPath: CGPath)](./init%28cgpath%29-96cxk.md)
 - [var reversed: NSBezierPath](./reversed.md)
   A path containing the reversed contents of the current path object.
+- [+ bezierPath](./bezierpath.md)
+  Creates and returns a new Bézier path object.
 
 
 ---

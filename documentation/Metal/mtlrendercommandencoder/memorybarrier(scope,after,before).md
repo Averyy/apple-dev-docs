@@ -46,6 +46,8 @@ To determine whether a GPU supports memory barriers, see the [Metal feature set 
   Encodes a command that instructs the GPU to update a fence after one or more stages, which can unblock other passes waiting for the fence.
 - [func memoryBarrier(resources: [any MTLResource], after: MTLRenderStages, before: MTLRenderStages)](./memorybarrier%28resources,after,before%29.md)
   Creates a memory barrier that enforces the order of write and read operations for specific resources.
+- [- memoryBarrierWithResources:count:afterStages:beforeStages:](./memorybarrierwithresources_count_afterstages_beforestages_.md)
+  Creates a memory barrier that enforces the order of write and read operations for specific resources.
 
 
 ---

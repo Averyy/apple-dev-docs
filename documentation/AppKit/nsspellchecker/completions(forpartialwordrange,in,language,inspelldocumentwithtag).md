@@ -57,6 +57,8 @@ List of complete words from the spell checker dictionary in the order they shoul
   Returns the default values for quote replacement.
 - [var userReplacementsDictionary: [String : String]](./userreplacementsdictionary.md)
   Returns the dictionary used when replacing words.
+- [- forgetWord:](./forgetword_.md)
+  Remove this word from the spelling dictionary.
 
 
 ---

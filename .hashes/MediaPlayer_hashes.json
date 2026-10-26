@@ -65,6 +65,121 @@
       "file_path": "documentation/MediaPlayer/media-playback-mode-events.md",
       "hash": "41713db5ae30dd5f7afdb36e4751039156b1ce1646edf3724d67dc5fbff0da8c"
     },
+    "https://developer.apple.com/documentation/mediaplayer/mp_api": {
+      "etag": "\"9d7-65d55c2162671-df\"",
+      "file_path": "documentation/MediaPlayer/mp_api.md",
+      "hash": "23f7952bd99fb8e2fcf32dafff36660950ad6851f4bf700e7363fa251a1a5347"
+    },
+    "https://developer.apple.com/documentation/mediaplayer/mp_api_begin": {
+      "etag": "\"a00-65d55c20ecb13-df\"",
+      "file_path": "documentation/MediaPlayer/mp_api_begin.md",
+      "hash": "15b37a0a1e8d99b81970322b50f3c642e45eb044f9826e1f6cbb468a059ec898"
+    },
+    "https://developer.apple.com/documentation/mediaplayer/mp_api_end": {
+      "etag": "\"9e8-65d55c21853a6-df\"",
+      "file_path": "documentation/MediaPlayer/mp_api_end.md",
+      "hash": "a4f659540cf24652ae3b68ded1c6359fa5e9b4b23ebee0d3761e47371d94516a"
+    },
+    "https://developer.apple.com/documentation/mediaplayer/mp_completion": {
+      "etag": "\"a0c-65d55c2162671-df\"",
+      "file_path": "documentation/MediaPlayer/mp_completion.md",
+      "hash": "86c267bfd2dffcbc6846e34c219c06d87e1e3293be455cd9c061c09fcbb0d30f"
+    },
+    "https://developer.apple.com/documentation/mediaplayer/mp_deprecated": {
+      "etag": "\"a2b-65d55c221060f-df\"",
+      "file_path": "documentation/MediaPlayer/mp_deprecated.md",
+      "hash": "15d286f179bb472e485ec43582ec93d292a0186e5c23eab53cb7b3afae70643f"
+    },
+    "https://developer.apple.com/documentation/mediaplayer/mp_deprecated_begin": {
+      "etag": "\"a54-65d55c21268b5-df\"",
+      "file_path": "documentation/MediaPlayer/mp_deprecated_begin.md",
+      "hash": "87a89d7bc1f52d7feb60b0d6dc7f0fe5c779eb9db45ff1bfb0d47d9c9ee26675"
+    },
+    "https://developer.apple.com/documentation/mediaplayer/mp_deprecated_end": {
+      "etag": "\"a3c-65d55c21f30b4-df\"",
+      "file_path": "documentation/MediaPlayer/mp_deprecated_end.md",
+      "hash": "ba0020a76b1928359c26f2f6ad6381a611516f33fe52f8d1b5ebeac83a9f5046"
+    },
+    "https://developer.apple.com/documentation/mediaplayer/mp_deprecated_with_replacement": {
+      "etag": "\"af7-65d55c206ecba-df\"",
+      "file_path": "documentation/MediaPlayer/mp_deprecated_with_replacement.md",
+      "hash": "a33000a31c0c6f51357d51ff8c3058bc8e25763ed89934bb5a71dae25b729f5b"
+    },
+    "https://developer.apple.com/documentation/mediaplayer/mp_deprecated_with_replacement_begin": {
+      "etag": "\"b3f-65d55c21cf4fc-df\"",
+      "file_path": "documentation/MediaPlayer/mp_deprecated_with_replacement_begin.md",
+      "hash": "e8f746d698fdb47f350f725854e1468e6fc429f1e7df0ee38d338955d800203b"
+    },
+    "https://developer.apple.com/documentation/mediaplayer/mp_deprecated_with_replacement_end": {
+      "etag": "\"b08-65d55c20ce542-df\"",
+      "file_path": "documentation/MediaPlayer/mp_deprecated_with_replacement_end.md",
+      "hash": "33d477509522e3a9a4fe4d87f18ad5a33e26cdfa651c86a80d46d484dc97924c"
+    },
+    "https://developer.apple.com/documentation/mediaplayer/mp_extern": {
+      "etag": "\"9dc-65d55c210d082-df\"",
+      "file_path": "documentation/MediaPlayer/mp_extern.md",
+      "hash": "4022f8a21dc613cef787e4cd358399c702f7850854221bf5fb9f0ee69571ac7c"
+    },
+    "https://developer.apple.com/documentation/mediaplayer/mp_fallthrough": {
+      "etag": "\"a18-65d55c221060f-df\"",
+      "file_path": "documentation/MediaPlayer/mp_fallthrough.md",
+      "hash": "34b6b474f4a76764ee82c8253c732d227cc5b8f53c4c4d24fba49ac01074fb25"
+    },
+    "https://developer.apple.com/documentation/mediaplayer/mp_final_class": {
+      "etag": "\"a18-65d55c210d082-df\"",
+      "file_path": "documentation/MediaPlayer/mp_final_class.md",
+      "hash": "c22ecf0f5cdf1d5c8f8f03fd9b053bdb188955db30662bb68b5e962ca38b94f6"
+    },
+    "https://developer.apple.com/documentation/mediaplayer/mp_has": {
+      "etag": "\"a1a-65d55c20ecb13-df\"",
+      "file_path": "documentation/MediaPlayer/mp_has.md",
+      "hash": "7932ccef7813c53a5dc0ca31697a8e45122bf639ac0e99e360a8fa2e057e9ac0"
+    },
+    "https://developer.apple.com/documentation/mediaplayer/mp_has_header": {
+      "etag": "\"ab3-65d55c20ecb13-df\"",
+      "file_path": "documentation/MediaPlayer/mp_has_header.md",
+      "hash": "94e90f9f918c713ba71d79af476d5c4df61c3dfb319e871e1662cbce55687afc"
+    },
+    "https://developer.apple.com/documentation/mediaplayer/mp_init_unavailable": {
+      "etag": "\"a54-65d55c20ce542-df\"",
+      "file_path": "documentation/MediaPlayer/mp_init_unavailable.md",
+      "hash": "48d10df290c29d43b50c91e5942d06bc06f987549bfbbc318fdb1874975b041a"
+    },
+    "https://developer.apple.com/documentation/mediaplayer/mp_overload": {
+      "etag": "\"9f4-65d55c208bc13-df\"",
+      "file_path": "documentation/MediaPlayer/mp_overload.md",
+      "hash": "1f7035ddb6e5803164443d498b0e1b6ac3d819ad064cbd50b6f8cd41081686bf"
+    },
+    "https://developer.apple.com/documentation/mediaplayer/mp_swift_error_nullable_result": {
+      "etag": "\"ad8-65d55c2162671-df\"",
+      "file_path": "documentation/MediaPlayer/mp_swift_error_nullable_result.md",
+      "hash": "8213f893e5a587781c9c0bde7d927bdb94d00563db36473128830791a9111308"
+    },
+    "https://developer.apple.com/documentation/mediaplayer/mp_swift_main_actor": {
+      "etag": "\"a54-65d55c2162671-df\"",
+      "file_path": "documentation/MediaPlayer/mp_swift_main_actor.md",
+      "hash": "7ed8afa27151419b9f2a851b00caf8f2ea3742287ce0abb675442541ee089d5b"
+    },
+    "https://developer.apple.com/documentation/mediaplayer/mp_type_protocol": {
+      "etag": "\"a30-65d55c21f30b4-df\"",
+      "file_path": "documentation/MediaPlayer/mp_type_protocol.md",
+      "hash": "9b1434863409b0480e059ca08b229bc43da5de4f782a49db1a2ffd67074781be"
+    },
+    "https://developer.apple.com/documentation/mediaplayer/mp_unavailable": {
+      "etag": "\"a37-65d55c221060f-df\"",
+      "file_path": "documentation/MediaPlayer/mp_unavailable.md",
+      "hash": "8203b7fcba3f323bd74fb852ae351d77708502730a1fccefd81685d9fa9908b4"
+    },
+    "https://developer.apple.com/documentation/mediaplayer/mp_unavailable_begin": {
+      "etag": "\"a7f-65d55c206ecba-df\"",
+      "file_path": "documentation/MediaPlayer/mp_unavailable_begin.md",
+      "hash": "4618a5440668f272b41214d8639cb90bdc4f74ccc33a7f2e9a39c822981720f7"
+    },
+    "https://developer.apple.com/documentation/mediaplayer/mp_unavailable_end": {
+      "etag": "\"a48-65d55c21b54c8-df\"",
+      "file_path": "documentation/MediaPlayer/mp_unavailable_end.md",
+      "hash": "58ee55300f1d415f2886a8e558c5a96df3459a933ef33cecb31dc49e77f3c7f0"
+    },
     "https://developer.apple.com/documentation/mediaplayer/mpadtimerange": {
       "etag": "\"3f4b-65d55c2143c28-df\"",
       "file_path": "documentation/MediaPlayer/mpadtimerange.md",
@@ -825,6 +940,11 @@
       "file_path": "documentation/MediaPlayer/mpmediaitemcollection.md",
       "hash": "e71ed9daa17849b1fbb0a054f12f7da3e36454aad5da2a821c668c800a05ff12"
     },
+    "https://developer.apple.com/documentation/mediaplayer/mpmediaitemcollection/collectionwithitems:": {
+      "etag": "\"1a28-65d55c222978b-df\"",
+      "file_path": "documentation/MediaPlayer/mpmediaitemcollection/collectionwithitems_.md",
+      "hash": "fbbb9a1abddcc0085542d763429b400da2dac0c79c895357af5a44ae393aa9e3"
+    },
     "https://developer.apple.com/documentation/mediaplayer/mpmediaitemcollection/count": {
       "etag": "\"2e50-65d55c222978b-df\"",
       "file_path": "documentation/MediaPlayer/mpmediaitemcollection/count.md",
@@ -1125,10 +1245,20 @@
       "file_path": "documentation/MediaPlayer/mpmedialibraryauthorizationstatus/restricted.md",
       "hash": "a20d9ca4dd862786c525ea5d60f9fe093c6ca1da68bdd6d5d59544e3b5c0db0b"
     },
+    "https://developer.apple.com/documentation/mediaplayer/mpmedialibrarydidchangenotification": {
+      "etag": "\"2198-65d55c20ad39e-df\"",
+      "file_path": "documentation/MediaPlayer/mpmedialibrarydidchangenotification.md",
+      "hash": "b3697a536b03f5ee2f258cee1d1aeb55fd3739e97eb008bd5210b4c98dd1d5e0"
+    },
     "https://developer.apple.com/documentation/mediaplayer/mpmediapickercontroller": {
       "etag": "\"ab0e-65d55c2143c28-df\"",
       "file_path": "documentation/MediaPlayer/mpmediapickercontroller.md",
       "hash": "d8d4bb34d0d1061155d3243a6ad7d2ab118c7a83feb205a41be66b13e7dd14e7"
+    },
+    "https://developer.apple.com/documentation/mediaplayer/mpmediapickercontroller-init": {
+      "etag": "\"184a-6590236c297c9-df\"",
+      "file_path": "documentation/MediaPlayer/mpmediapickercontroller-init.md",
+      "hash": "13b5f6ab65677aefd2f5d867ee73b988bbf7271fbf8dd0f99bfaefe68cb6cdbe"
     },
     "https://developer.apple.com/documentation/mediaplayer/mpmediapickercontroller/allowspickingmultipleitems": {
       "etag": "\"3ce3-65d55c21f30b4-df\"",
@@ -1235,6 +1365,11 @@
       "file_path": "documentation/MediaPlayer/mpmediaplayback/stop().md",
       "hash": "a01144429c7a063c5a5f79f4b31b98aeccd02f6ddc01f88bd3bb3d50c633fa52"
     },
+    "https://developer.apple.com/documentation/mediaplayer/mpmediaplaybackispreparedtoplaydidchangenotification": {
+      "etag": "\"180d-65d55c221060f-df\"",
+      "file_path": "documentation/MediaPlayer/mpmediaplaybackispreparedtoplaydidchangenotification.md",
+      "hash": "5f89a7116a3afe3845119f45328a56ce0d3f763290c96b869b0534f1fc83e4fa"
+    },
     "https://developer.apple.com/documentation/mediaplayer/mpmediaplaylist": {
       "etag": "\"a0f8-65d55c20ecb13-df\"",
       "file_path": "documentation/MediaPlayer/mpmediaplaylist.md",
@@ -1299,6 +1434,11 @@
       "etag": "\"1474-65d55c20ecb13-df\"",
       "file_path": "documentation/MediaPlayer/mpmediaplaylistattribute/init(rawvalue).md",
       "hash": "4bbe45936bb413fa0c33b5e1316030f7d2541765d82511ab665d17b375135f0f"
+    },
+    "https://developer.apple.com/documentation/mediaplayer/mpmediaplaylistattribute/mpmediaplaylistattributenone": {
+      "etag": "\"20ee-65d55c20ecb13-df\"",
+      "file_path": "documentation/MediaPlayer/mpmediaplaylistattribute/mpmediaplaylistattributenone.md",
+      "hash": "8585a0d861ead292251dd2be540ec2737960c209989ab44dc41bc2ca77cbc7d2"
     },
     "https://developer.apple.com/documentation/mediaplayer/mpmediaplaylistattribute/onthego": {
       "etag": "\"2a3f-65d55c20ecb13-df\"",
@@ -1434,6 +1574,11 @@
       "etag": "\"11b54-65d55c208bc13-df\"",
       "file_path": "documentation/MediaPlayer/mpmediaquery.md",
       "hash": "471aef594c6d99ba1cd9dfdb1525bd72ff6411330d87eae04aa6618b6d52d3b2"
+    },
+    "https://developer.apple.com/documentation/mediaplayer/mpmediaquery-init": {
+      "etag": "\"41bf-6590236c4c85b-df\"",
+      "file_path": "documentation/MediaPlayer/mpmediaquery-init.md",
+      "hash": "ef41198241f09266114a965b7d8fcba9125f808f132f3c9937223f73e79d8a23"
     },
     "https://developer.apple.com/documentation/mediaplayer/mpmediaquery/addfilterpredicate(_:)": {
       "etag": "\"4383-65d55c20ad39e-df\"",
@@ -1750,6 +1895,11 @@
       "file_path": "documentation/MediaPlayer/mpmoviecontrolstyle/none.md",
       "hash": "c733dbcf272b4499524328bd2726ef833519558653495bd63ddd8da10338a78b"
     },
+    "https://developer.apple.com/documentation/mediaplayer/mpmoviedurationavailablenotification": {
+      "etag": "\"4ccf-65d55c21268b5-df\"",
+      "file_path": "documentation/MediaPlayer/mpmoviedurationavailablenotification.md",
+      "hash": "3619dd39a4dd3291213e7a9ffbe930fe0ffbac79428d0663afcc66db8c3121b6"
+    },
     "https://developer.apple.com/documentation/mediaplayer/mpmovieerrorlog": {
       "etag": "\"9619-65d55c21cf4fc-df\"",
       "file_path": "documentation/MediaPlayer/mpmovieerrorlog.md",
@@ -1845,6 +1995,11 @@
       "file_path": "documentation/MediaPlayer/mpmovieloadstate/init(rawvalue).md",
       "hash": "e269f8fb30c44db030de94e44f99b5425e069b71d44aa73e109008d3aa60e6ba"
     },
+    "https://developer.apple.com/documentation/mediaplayer/mpmovieloadstate/mpmovieloadstateunknown": {
+      "etag": "\"1f1f-65d55c2162671-df\"",
+      "file_path": "documentation/MediaPlayer/mpmovieloadstate/mpmovieloadstateunknown.md",
+      "hash": "a2e9528e3e51edc619903e520f5972e3bc4bde79090a07fcd609c56b784f5b83"
+    },
     "https://developer.apple.com/documentation/mediaplayer/mpmovieloadstate/playable": {
       "etag": "\"2a0a-65d55c2162671-df\"",
       "file_path": "documentation/MediaPlayer/mpmovieloadstate/playable.md",
@@ -1875,10 +2030,25 @@
       "file_path": "documentation/MediaPlayer/mpmoviemediatypemask/init(rawvalue).md",
       "hash": "6a0edc1f3be0d0b5138d3ae3bd231215b8a546090be2ee1e6c4bb7435bef7159"
     },
+    "https://developer.apple.com/documentation/mediaplayer/mpmoviemediatypemask/mpmoviemediatypemasknone": {
+      "etag": "\"1ad5-65d55c20ad39e-df\"",
+      "file_path": "documentation/MediaPlayer/mpmoviemediatypemask/mpmoviemediatypemasknone.md",
+      "hash": "dd927a0bf814431e1d5c173dbd55038d487c86e1c78dde2ef7084d5c12b99016"
+    },
     "https://developer.apple.com/documentation/mediaplayer/mpmoviemediatypemask/video": {
       "etag": "\"250d-65d55c20ad39e-df\"",
       "file_path": "documentation/MediaPlayer/mpmoviemediatypemask/video.md",
       "hash": "30c0351b4e1bc4ffba50d96bf51d939e436441c5c3057575721b8373f29e196e"
+    },
+    "https://developer.apple.com/documentation/mediaplayer/mpmoviemediatypesavailablenotification": {
+      "etag": "\"4d5f-65d55c20ad39e-df\"",
+      "file_path": "documentation/MediaPlayer/mpmoviemediatypesavailablenotification.md",
+      "hash": "30bd032b5c6bb1405aab59e593d3fc4d23bd6d75eaed1eab8bea8ecda5b3c14d"
+    },
+    "https://developer.apple.com/documentation/mediaplayer/mpmovienaturalsizeavailablenotification": {
+      "etag": "\"4d1a-65d55c221060f-df\"",
+      "file_path": "documentation/MediaPlayer/mpmovienaturalsizeavailablenotification.md",
+      "hash": "9070dc3fb58c168185b4e7f0c14d3045eb6a968b6199582bd5ddd5f1b9a21433"
     },
     "https://developer.apple.com/documentation/mediaplayer/mpmovieplaybackstate": {
       "etag": "\"8087-65d55c21268b5-df\"",
@@ -2070,6 +2240,16 @@
       "file_path": "documentation/MediaPlayer/mpmovieplayercontroller/view.md",
       "hash": "24bc7e1f5494c91ae4a6632c76b58f22e916c636da95a5723302e5045cc74a52"
     },
+    "https://developer.apple.com/documentation/mediaplayer/mpmovieplayerdidenterfullscreennotification": {
+      "etag": "\"4eaf-65d55c210d082-df\"",
+      "file_path": "documentation/MediaPlayer/mpmovieplayerdidenterfullscreennotification.md",
+      "hash": "b850650a64aa3016ed3d92e58d3681572ab48ef21ef3fe57f6c98ca002b18fb0"
+    },
+    "https://developer.apple.com/documentation/mediaplayer/mpmovieplayerdidexitfullscreennotification": {
+      "etag": "\"4ea7-65d55c221060f-df\"",
+      "file_path": "documentation/MediaPlayer/mpmovieplayerdidexitfullscreennotification.md",
+      "hash": "3c24d88360a254f4176acf493e729c55a6ffb6114b2b1022f49bbe9292da30db"
+    },
     "https://developer.apple.com/documentation/mediaplayer/mpmovieplayerfullscreenanimationcurveuserinfokey": {
       "etag": "\"2e0c-65d55c206ecba-df\"",
       "file_path": "documentation/MediaPlayer/mpmovieplayerfullscreenanimationcurveuserinfokey.md",
@@ -2080,10 +2260,45 @@
       "file_path": "documentation/MediaPlayer/mpmovieplayerfullscreenanimationdurationuserinfokey.md",
       "hash": "b6bb1e4d07ae6a9609cc50eeb3af722ec08e35fe861d7ab8c2f5663b8908e22a"
     },
+    "https://developer.apple.com/documentation/mediaplayer/mpmovieplayerisairplayvideoactivedidchangenotification": {
+      "etag": "\"4dd3-65d55c210d082-df\"",
+      "file_path": "documentation/MediaPlayer/mpmovieplayerisairplayvideoactivedidchangenotification.md",
+      "hash": "c5a4c0dbec3b856819836cc2cec68548b1a56d7e52c7e3c1b6a86a4670b76ab1"
+    },
+    "https://developer.apple.com/documentation/mediaplayer/mpmovieplayerloadstatedidchangenotification": {
+      "etag": "\"4d11-65d55c21853a6-df\"",
+      "file_path": "documentation/MediaPlayer/mpmovieplayerloadstatedidchangenotification.md",
+      "hash": "e84c65a225fc2a30d4615fe8089db1279e0fb0a44132705d62a945d5e82cdc88"
+    },
+    "https://developer.apple.com/documentation/mediaplayer/mpmovieplayernowplayingmoviedidchangenotification": {
+      "etag": "\"4d44-65d55c206ecba-df\"",
+      "file_path": "documentation/MediaPlayer/mpmovieplayernowplayingmoviedidchangenotification.md",
+      "hash": "e3b906f1d2790b839e0ebf85cd4cd7afa2f5c60f5ab6e84e5fcd457ec5b1877f"
+    },
+    "https://developer.apple.com/documentation/mediaplayer/mpmovieplayerplaybackdidfinishnotification": {
+      "etag": "\"4b4f-65d55c21853a6-df\"",
+      "file_path": "documentation/MediaPlayer/mpmovieplayerplaybackdidfinishnotification.md",
+      "hash": "e3df56c8687610c1822e72025d2782c477084a21721cf7d9309b07df8b3b4031"
+    },
     "https://developer.apple.com/documentation/mediaplayer/mpmovieplayerplaybackdidfinishreasonuserinfokey": {
       "etag": "\"2783-65d55c208bc13-df\"",
       "file_path": "documentation/MediaPlayer/mpmovieplayerplaybackdidfinishreasonuserinfokey.md",
       "hash": "722b1da39f6c0eb937b755a0991ecc6587f68b71f211e991de4227275d0fe04d"
+    },
+    "https://developer.apple.com/documentation/mediaplayer/mpmovieplayerplaybackstatedidchangenotification": {
+      "etag": "\"5292-65d55c20ad39e-df\"",
+      "file_path": "documentation/MediaPlayer/mpmovieplayerplaybackstatedidchangenotification.md",
+      "hash": "14e17dbe06ff6ae8702494e83ae6e39580a0826bf57e597e281fe4b617a6b4f4"
+    },
+    "https://developer.apple.com/documentation/mediaplayer/mpmovieplayerreadyfordisplaydidchangenotification": {
+      "etag": "\"4d27-65d55c221060f-df\"",
+      "file_path": "documentation/MediaPlayer/mpmovieplayerreadyfordisplaydidchangenotification.md",
+      "hash": "ad3faed0f351eb74beae67d32bc65f9abc4272825b7f40ff4c2fb83cb80c440a"
+    },
+    "https://developer.apple.com/documentation/mediaplayer/mpmovieplayerscalingmodedidchangenotification": {
+      "etag": "\"4d78-65d55c21268b5-df\"",
+      "file_path": "documentation/MediaPlayer/mpmovieplayerscalingmodedidchangenotification.md",
+      "hash": "7156a234278efefbbe5ea4b5db7070b5e04706933e51f33093c1ac2708e30483"
     },
     "https://developer.apple.com/documentation/mediaplayer/mpmovieplayerthumbnailerrorkey": {
       "etag": "\"2bbc-65d55c206ecba-df\"",
@@ -2094,6 +2309,11 @@
       "etag": "\"2b65-65d55c21268b5-df\"",
       "file_path": "documentation/MediaPlayer/mpmovieplayerthumbnailimagekey.md",
       "hash": "f798bbc05f3c060efecee2f8eb6869c2ed8ee2e45ecf0bb9adc99a976e53d047"
+    },
+    "https://developer.apple.com/documentation/mediaplayer/mpmovieplayerthumbnailimagerequestdidfinishnotification": {
+      "etag": "\"59db-65d55c20ad39e-df\"",
+      "file_path": "documentation/MediaPlayer/mpmovieplayerthumbnailimagerequestdidfinishnotification.md",
+      "hash": "b7da0777f9dd1b9901befd248f6651e52cd5ada28321cceb1eb898cf112309b0"
     },
     "https://developer.apple.com/documentation/mediaplayer/mpmovieplayerthumbnailtimekey": {
       "etag": "\"2be0-65d55c21853a6-df\"",
@@ -2125,6 +2345,11 @@
       "file_path": "documentation/MediaPlayer/mpmovieplayertimedmetadatakeyname.md",
       "hash": "49e1d1cc646927580281cee93be26a79c7aabf86ca03c64da4199d1b464ba996"
     },
+    "https://developer.apple.com/documentation/mediaplayer/mpmovieplayertimedmetadataupdatednotification": {
+      "etag": "\"465b-65d55c2162671-df\"",
+      "file_path": "documentation/MediaPlayer/mpmovieplayertimedmetadataupdatednotification.md",
+      "hash": "5d3b35587b38e71ae598dac3d84cca18845f48a54dc6f928b2c9918a9bea28ad"
+    },
     "https://developer.apple.com/documentation/mediaplayer/mpmovieplayertimedmetadatauserinfokey": {
       "etag": "\"2128-65d55c208bc13-df\"",
       "file_path": "documentation/MediaPlayer/mpmovieplayertimedmetadatauserinfokey.md",
@@ -2144,6 +2369,16 @@
       "etag": "\"2c8e-65d55c20ecb13-df\"",
       "file_path": "documentation/MediaPlayer/mpmovieplayerviewcontroller/movieplayer.md",
       "hash": "37513fd8808b48d9be7d8a083d7b4839b4988cc857751478375310da38b1ca5b"
+    },
+    "https://developer.apple.com/documentation/mediaplayer/mpmovieplayerwillenterfullscreennotification": {
+      "etag": "\"5238-65d55c20ecb13-df\"",
+      "file_path": "documentation/MediaPlayer/mpmovieplayerwillenterfullscreennotification.md",
+      "hash": "c5ccc9876f5d097baa2758bb2b0b0042f440755951a94b3b43fc83a0f5c50f92"
+    },
+    "https://developer.apple.com/documentation/mediaplayer/mpmovieplayerwillexitfullscreennotification": {
+      "etag": "\"522f-65d55c20ce542-df\"",
+      "file_path": "documentation/MediaPlayer/mpmovieplayerwillexitfullscreennotification.md",
+      "hash": "f351ca1ec7c4d2f2908dd0f0b2838d1ae5a13141ea84274862abfb667d985325"
     },
     "https://developer.apple.com/documentation/mediaplayer/mpmovierepeatmode": {
       "etag": "\"6d48-65d55c2162671-df\"",
@@ -2219,6 +2454,11 @@
       "etag": "\"2315-65d55c20ad39e-df\"",
       "file_path": "documentation/MediaPlayer/mpmoviesourcetype/unknown.md",
       "hash": "4a7fe21d839d08e3ed4ad8870c9ece24f434dd355045cd77b5254fd07ad3dfa7"
+    },
+    "https://developer.apple.com/documentation/mediaplayer/mpmoviesourcetypeavailablenotification": {
+      "etag": "\"4d37-65d55c21b54c8-df\"",
+      "file_path": "documentation/MediaPlayer/mpmoviesourcetypeavailablenotification.md",
+      "hash": "571ce1c8529a42b3315c436ab7b5a1eabdf2500803b103a028958b62da725f49"
     },
     "https://developer.apple.com/documentation/mediaplayer/mpmovietimeoption": {
       "etag": "\"6ddc-65d55c2162671-df\"",
@@ -2420,6 +2660,16 @@
       "file_path": "documentation/MediaPlayer/mpmusicplayercontrollermutablequeue/remove(_).md",
       "hash": "2627a5055180ec646af3f97a11f911dfc1cf86742d1dff6778ac6d22c03c1b22"
     },
+    "https://developer.apple.com/documentation/mediaplayer/mpmusicplayercontrollernowplayingitemdidchangenotification": {
+      "etag": "\"2695-65d55c20ad39e-df\"",
+      "file_path": "documentation/MediaPlayer/mpmusicplayercontrollernowplayingitemdidchangenotification.md",
+      "hash": "78a47db1f5edfec891aedea59eccbccb8547fca648f8cac0cf18425dfc7983ec"
+    },
+    "https://developer.apple.com/documentation/mediaplayer/mpmusicplayercontrollerplaybackstatedidchangenotification": {
+      "etag": "\"269e-65d55c206ecba-df\"",
+      "file_path": "documentation/MediaPlayer/mpmusicplayercontrollerplaybackstatedidchangenotification.md",
+      "hash": "99fd0e3866a9d9ba1308645e49c43ec892cf4576b86b92b7e85aac8ecacb5a2d"
+    },
     "https://developer.apple.com/documentation/mediaplayer/mpmusicplayercontrollerqueue": {
       "etag": "\"659a-65d55c206ecba-df\"",
       "file_path": "documentation/MediaPlayer/mpmusicplayercontrollerqueue.md",
@@ -2429,6 +2679,16 @@
       "etag": "\"215f-65d55c221060f-df\"",
       "file_path": "documentation/MediaPlayer/mpmusicplayercontrollerqueue/items.md",
       "hash": "fa25e077bccaaea49cb647e3817557ac6d059ed9c519cdfc546c68a71c2fc975"
+    },
+    "https://developer.apple.com/documentation/mediaplayer/mpmusicplayercontrollerqueuedidchangenotification": {
+      "etag": "\"1a67-65d55c221060f-df\"",
+      "file_path": "documentation/MediaPlayer/mpmusicplayercontrollerqueuedidchangenotification.md",
+      "hash": "ba3f999f1a872022af3b6cbae896b08bb1b5f1de1ab78b7d2054c9a2b8fb1379"
+    },
+    "https://developer.apple.com/documentation/mediaplayer/mpmusicplayercontrollervolumedidchangenotification": {
+      "etag": "\"264c-65d55c21268b5-df\"",
+      "file_path": "documentation/MediaPlayer/mpmusicplayercontrollervolumedidchangenotification.md",
+      "hash": "2045799b1f4a513be71a442347831b79af712c4c944d874c7018d5294bb63055"
     },
     "https://developer.apple.com/documentation/mediaplayer/mpmusicplayermediaitemqueuedescriptor": {
       "etag": "\"7e39-65d55c20ad39e-df\"",
@@ -3570,6 +3830,16 @@
       "file_path": "documentation/MediaPlayer/mpvolumeview/volumewarningsliderimage.md",
       "hash": "4477efbeb0e5f26d1500a2a78e75a6ce9f69ecc675982b327f602ec3178755d4"
     },
+    "https://developer.apple.com/documentation/mediaplayer/mpvolumeviewwirelessrouteactivedidchangenotification": {
+      "etag": "\"6379-65d55c208bc13-df\"",
+      "file_path": "documentation/MediaPlayer/mpvolumeviewwirelessrouteactivedidchangenotification.md",
+      "hash": "7beda404328c2ebf32364a37fdfe443dcd67a4de1d72d5936fa62f8ff6781ca5"
+    },
+    "https://developer.apple.com/documentation/mediaplayer/mpvolumeviewwirelessroutesavailabledidchangenotification": {
+      "etag": "\"63da-65d55c21268b5-df\"",
+      "file_path": "documentation/MediaPlayer/mpvolumeviewwirelessroutesavailabledidchangenotification.md",
+      "hash": "5c09e992e14c7f840727e23950d710e93f1fdd5699bce02b516f4204fc3b693f"
+    },
     "https://developer.apple.com/documentation/mediaplayer/playback-finished-notification-key": {
       "etag": "\"5380-6590236c0a175-df\"",
       "file_path": "documentation/MediaPlayer/playback-finished-notification-key.md",
@@ -3684,6 +3954,121 @@
       "etag": "\"45c4-6590236d06b59-df\"",
       "file_path": "documentation/MediaPlayer/media-playback-mode-events.md",
       "hash": "41713db5ae30dd5f7afdb36e4751039156b1ce1646edf3724d67dc5fbff0da8c"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/mediaplayer/mp_api.json": {
+      "etag": "\"9d7-65d55c2162671-df\"",
+      "file_path": "documentation/MediaPlayer/mp_api.md",
+      "hash": "23f7952bd99fb8e2fcf32dafff36660950ad6851f4bf700e7363fa251a1a5347"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/mediaplayer/mp_api_begin.json": {
+      "etag": "\"a00-65d55c20ecb13-df\"",
+      "file_path": "documentation/MediaPlayer/mp_api_begin.md",
+      "hash": "15b37a0a1e8d99b81970322b50f3c642e45eb044f9826e1f6cbb468a059ec898"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/mediaplayer/mp_api_end.json": {
+      "etag": "\"9e8-65d55c21853a6-df\"",
+      "file_path": "documentation/MediaPlayer/mp_api_end.md",
+      "hash": "a4f659540cf24652ae3b68ded1c6359fa5e9b4b23ebee0d3761e47371d94516a"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/mediaplayer/mp_completion.json": {
+      "etag": "\"a0c-65d55c2162671-df\"",
+      "file_path": "documentation/MediaPlayer/mp_completion.md",
+      "hash": "86c267bfd2dffcbc6846e34c219c06d87e1e3293be455cd9c061c09fcbb0d30f"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/mediaplayer/mp_deprecated.json": {
+      "etag": "\"a2b-65d55c221060f-df\"",
+      "file_path": "documentation/MediaPlayer/mp_deprecated.md",
+      "hash": "15d286f179bb472e485ec43582ec93d292a0186e5c23eab53cb7b3afae70643f"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/mediaplayer/mp_deprecated_begin.json": {
+      "etag": "\"a54-65d55c21268b5-df\"",
+      "file_path": "documentation/MediaPlayer/mp_deprecated_begin.md",
+      "hash": "87a89d7bc1f52d7feb60b0d6dc7f0fe5c779eb9db45ff1bfb0d47d9c9ee26675"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/mediaplayer/mp_deprecated_end.json": {
+      "etag": "\"a3c-65d55c21f30b4-df\"",
+      "file_path": "documentation/MediaPlayer/mp_deprecated_end.md",
+      "hash": "ba0020a76b1928359c26f2f6ad6381a611516f33fe52f8d1b5ebeac83a9f5046"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/mediaplayer/mp_deprecated_with_replacement.json": {
+      "etag": "\"af7-65d55c206ecba-df\"",
+      "file_path": "documentation/MediaPlayer/mp_deprecated_with_replacement.md",
+      "hash": "a33000a31c0c6f51357d51ff8c3058bc8e25763ed89934bb5a71dae25b729f5b"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/mediaplayer/mp_deprecated_with_replacement_begin.json": {
+      "etag": "\"b3f-65d55c21cf4fc-df\"",
+      "file_path": "documentation/MediaPlayer/mp_deprecated_with_replacement_begin.md",
+      "hash": "e8f746d698fdb47f350f725854e1468e6fc429f1e7df0ee38d338955d800203b"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/mediaplayer/mp_deprecated_with_replacement_end.json": {
+      "etag": "\"b08-65d55c20ce542-df\"",
+      "file_path": "documentation/MediaPlayer/mp_deprecated_with_replacement_end.md",
+      "hash": "33d477509522e3a9a4fe4d87f18ad5a33e26cdfa651c86a80d46d484dc97924c"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/mediaplayer/mp_extern.json": {
+      "etag": "\"9dc-65d55c210d082-df\"",
+      "file_path": "documentation/MediaPlayer/mp_extern.md",
+      "hash": "4022f8a21dc613cef787e4cd358399c702f7850854221bf5fb9f0ee69571ac7c"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/mediaplayer/mp_fallthrough.json": {
+      "etag": "\"a18-65d55c221060f-df\"",
+      "file_path": "documentation/MediaPlayer/mp_fallthrough.md",
+      "hash": "34b6b474f4a76764ee82c8253c732d227cc5b8f53c4c4d24fba49ac01074fb25"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/mediaplayer/mp_final_class.json": {
+      "etag": "\"a18-65d55c210d082-df\"",
+      "file_path": "documentation/MediaPlayer/mp_final_class.md",
+      "hash": "c22ecf0f5cdf1d5c8f8f03fd9b053bdb188955db30662bb68b5e962ca38b94f6"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/mediaplayer/mp_has.json": {
+      "etag": "\"a1a-65d55c20ecb13-df\"",
+      "file_path": "documentation/MediaPlayer/mp_has.md",
+      "hash": "7932ccef7813c53a5dc0ca31697a8e45122bf639ac0e99e360a8fa2e057e9ac0"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/mediaplayer/mp_has_header.json": {
+      "etag": "\"ab3-65d55c20ecb13-df\"",
+      "file_path": "documentation/MediaPlayer/mp_has_header.md",
+      "hash": "94e90f9f918c713ba71d79af476d5c4df61c3dfb319e871e1662cbce55687afc"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/mediaplayer/mp_init_unavailable.json": {
+      "etag": "\"a54-65d55c20ce542-df\"",
+      "file_path": "documentation/MediaPlayer/mp_init_unavailable.md",
+      "hash": "48d10df290c29d43b50c91e5942d06bc06f987549bfbbc318fdb1874975b041a"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/mediaplayer/mp_overload.json": {
+      "etag": "\"9f4-65d55c208bc13-df\"",
+      "file_path": "documentation/MediaPlayer/mp_overload.md",
+      "hash": "1f7035ddb6e5803164443d498b0e1b6ac3d819ad064cbd50b6f8cd41081686bf"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/mediaplayer/mp_swift_error_nullable_result.json": {
+      "etag": "\"ad8-65d55c2162671-df\"",
+      "file_path": "documentation/MediaPlayer/mp_swift_error_nullable_result.md",
+      "hash": "8213f893e5a587781c9c0bde7d927bdb94d00563db36473128830791a9111308"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/mediaplayer/mp_swift_main_actor.json": {
+      "etag": "\"a54-65d55c2162671-df\"",
+      "file_path": "documentation/MediaPlayer/mp_swift_main_actor.md",
+      "hash": "7ed8afa27151419b9f2a851b00caf8f2ea3742287ce0abb675442541ee089d5b"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/mediaplayer/mp_type_protocol.json": {
+      "etag": "\"a30-65d55c21f30b4-df\"",
+      "file_path": "documentation/MediaPlayer/mp_type_protocol.md",
+      "hash": "9b1434863409b0480e059ca08b229bc43da5de4f782a49db1a2ffd67074781be"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/mediaplayer/mp_unavailable.json": {
+      "etag": "\"a37-65d55c221060f-df\"",
+      "file_path": "documentation/MediaPlayer/mp_unavailable.md",
+      "hash": "8203b7fcba3f323bd74fb852ae351d77708502730a1fccefd81685d9fa9908b4"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/mediaplayer/mp_unavailable_begin.json": {
+      "etag": "\"a7f-65d55c206ecba-df\"",
+      "file_path": "documentation/MediaPlayer/mp_unavailable_begin.md",
+      "hash": "4618a5440668f272b41214d8639cb90bdc4f74ccc33a7f2e9a39c822981720f7"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/mediaplayer/mp_unavailable_end.json": {
+      "etag": "\"a48-65d55c21b54c8-df\"",
+      "file_path": "documentation/MediaPlayer/mp_unavailable_end.md",
+      "hash": "58ee55300f1d415f2886a8e558c5a96df3459a933ef33cecb31dc49e77f3c7f0"
     },
     "https://developer.apple.com/tutorials/data/documentation/mediaplayer/mpadtimerange.json": {
       "etag": "\"3f4b-65d55c2143c28-df\"",
@@ -4453,6 +4838,11 @@
       "file_path": "documentation/MediaPlayer/mpmediaitemcollection.md",
       "hash": "e71ed9daa17849b1fbb0a054f12f7da3e36454aad5da2a821c668c800a05ff12"
     },
+    "https://developer.apple.com/tutorials/data/documentation/mediaplayer/mpmediaitemcollection/collectionwithitems:.json": {
+      "etag": "\"1a28-65d55c222978b-df\"",
+      "file_path": "documentation/MediaPlayer/mpmediaitemcollection/collectionwithitems_.md",
+      "hash": "fbbb9a1abddcc0085542d763429b400da2dac0c79c895357af5a44ae393aa9e3"
+    },
     "https://developer.apple.com/tutorials/data/documentation/mediaplayer/mpmediaitemcollection/count.json": {
       "etag": "\"2e50-65d55c222978b-df\"",
       "file_path": "documentation/MediaPlayer/mpmediaitemcollection/count.md",
@@ -4753,6 +5143,16 @@
       "file_path": "documentation/MediaPlayer/mpmedialibraryauthorizationstatus/restricted.md",
       "hash": "a20d9ca4dd862786c525ea5d60f9fe093c6ca1da68bdd6d5d59544e3b5c0db0b"
     },
+    "https://developer.apple.com/tutorials/data/documentation/mediaplayer/mpmedialibrarydidchangenotification.json": {
+      "etag": "\"2198-65d55c20ad39e-df\"",
+      "file_path": "documentation/MediaPlayer/mpmedialibrarydidchangenotification.md",
+      "hash": "b3697a536b03f5ee2f258cee1d1aeb55fd3739e97eb008bd5210b4c98dd1d5e0"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/mediaplayer/mpmediapickercontroller-init.json": {
+      "etag": "\"184a-6590236c297c9-df\"",
+      "file_path": "documentation/MediaPlayer/mpmediapickercontroller-init.md",
+      "hash": "13b5f6ab65677aefd2f5d867ee73b988bbf7271fbf8dd0f99bfaefe68cb6cdbe"
+    },
     "https://developer.apple.com/tutorials/data/documentation/mediaplayer/mpmediapickercontroller.json": {
       "etag": "\"ab0e-65d55c2143c28-df\"",
       "file_path": "documentation/MediaPlayer/mpmediapickercontroller.md",
@@ -4863,6 +5263,11 @@
       "file_path": "documentation/MediaPlayer/mpmediaplayback/stop().md",
       "hash": "a01144429c7a063c5a5f79f4b31b98aeccd02f6ddc01f88bd3bb3d50c633fa52"
     },
+    "https://developer.apple.com/tutorials/data/documentation/mediaplayer/mpmediaplaybackispreparedtoplaydidchangenotification.json": {
+      "etag": "\"180d-65d55c221060f-df\"",
+      "file_path": "documentation/MediaPlayer/mpmediaplaybackispreparedtoplaydidchangenotification.md",
+      "hash": "5f89a7116a3afe3845119f45328a56ce0d3f763290c96b869b0534f1fc83e4fa"
+    },
     "https://developer.apple.com/tutorials/data/documentation/mediaplayer/mpmediaplaylist.json": {
       "etag": "\"a0f8-65d55c20ecb13-df\"",
       "file_path": "documentation/MediaPlayer/mpmediaplaylist.md",
@@ -4927,6 +5332,11 @@
       "etag": "\"1474-65d55c20ecb13-df\"",
       "file_path": "documentation/MediaPlayer/mpmediaplaylistattribute/init(rawvalue).md",
       "hash": "4bbe45936bb413fa0c33b5e1316030f7d2541765d82511ab665d17b375135f0f"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/mediaplayer/mpmediaplaylistattribute/mpmediaplaylistattributenone.json": {
+      "etag": "\"20ee-65d55c20ecb13-df\"",
+      "file_path": "documentation/MediaPlayer/mpmediaplaylistattribute/mpmediaplaylistattributenone.md",
+      "hash": "8585a0d861ead292251dd2be540ec2737960c209989ab44dc41bc2ca77cbc7d2"
     },
     "https://developer.apple.com/tutorials/data/documentation/mediaplayer/mpmediaplaylistattribute/onthego.json": {
       "etag": "\"2a3f-65d55c20ecb13-df\"",
@@ -5057,6 +5467,11 @@
       "etag": "\"2680-65d55c208bc13-df\"",
       "file_path": "documentation/MediaPlayer/mpmediapropertypredicate/value.md",
       "hash": "c197086e722c5f63f0a65f50429b1c2732f8ca718b1694f9b269ef2233eac1f3"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/mediaplayer/mpmediaquery-init.json": {
+      "etag": "\"41bf-6590236c4c85b-df\"",
+      "file_path": "documentation/MediaPlayer/mpmediaquery-init.md",
+      "hash": "ef41198241f09266114a965b7d8fcba9125f808f132f3c9937223f73e79d8a23"
     },
     "https://developer.apple.com/tutorials/data/documentation/mediaplayer/mpmediaquery.json": {
       "etag": "\"11b54-65d55c208bc13-df\"",
@@ -5378,6 +5793,11 @@
       "file_path": "documentation/MediaPlayer/mpmoviecontrolstyle/none.md",
       "hash": "c733dbcf272b4499524328bd2726ef833519558653495bd63ddd8da10338a78b"
     },
+    "https://developer.apple.com/tutorials/data/documentation/mediaplayer/mpmoviedurationavailablenotification.json": {
+      "etag": "\"4ccf-65d55c21268b5-df\"",
+      "file_path": "documentation/MediaPlayer/mpmoviedurationavailablenotification.md",
+      "hash": "3619dd39a4dd3291213e7a9ffbe930fe0ffbac79428d0663afcc66db8c3121b6"
+    },
     "https://developer.apple.com/tutorials/data/documentation/mediaplayer/mpmovieerrorlog.json": {
       "etag": "\"9619-65d55c21cf4fc-df\"",
       "file_path": "documentation/MediaPlayer/mpmovieerrorlog.md",
@@ -5473,6 +5893,11 @@
       "file_path": "documentation/MediaPlayer/mpmovieloadstate/init(rawvalue).md",
       "hash": "e269f8fb30c44db030de94e44f99b5425e069b71d44aa73e109008d3aa60e6ba"
     },
+    "https://developer.apple.com/tutorials/data/documentation/mediaplayer/mpmovieloadstate/mpmovieloadstateunknown.json": {
+      "etag": "\"1f1f-65d55c2162671-df\"",
+      "file_path": "documentation/MediaPlayer/mpmovieloadstate/mpmovieloadstateunknown.md",
+      "hash": "a2e9528e3e51edc619903e520f5972e3bc4bde79090a07fcd609c56b784f5b83"
+    },
     "https://developer.apple.com/tutorials/data/documentation/mediaplayer/mpmovieloadstate/playable.json": {
       "etag": "\"2a0a-65d55c2162671-df\"",
       "file_path": "documentation/MediaPlayer/mpmovieloadstate/playable.md",
@@ -5503,10 +5928,25 @@
       "file_path": "documentation/MediaPlayer/mpmoviemediatypemask/init(rawvalue).md",
       "hash": "6a0edc1f3be0d0b5138d3ae3bd231215b8a546090be2ee1e6c4bb7435bef7159"
     },
+    "https://developer.apple.com/tutorials/data/documentation/mediaplayer/mpmoviemediatypemask/mpmoviemediatypemasknone.json": {
+      "etag": "\"1ad5-65d55c20ad39e-df\"",
+      "file_path": "documentation/MediaPlayer/mpmoviemediatypemask/mpmoviemediatypemasknone.md",
+      "hash": "dd927a0bf814431e1d5c173dbd55038d487c86e1c78dde2ef7084d5c12b99016"
+    },
     "https://developer.apple.com/tutorials/data/documentation/mediaplayer/mpmoviemediatypemask/video.json": {
       "etag": "\"250d-65d55c20ad39e-df\"",
       "file_path": "documentation/MediaPlayer/mpmoviemediatypemask/video.md",
       "hash": "30c0351b4e1bc4ffba50d96bf51d939e436441c5c3057575721b8373f29e196e"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/mediaplayer/mpmoviemediatypesavailablenotification.json": {
+      "etag": "\"4d5f-65d55c20ad39e-df\"",
+      "file_path": "documentation/MediaPlayer/mpmoviemediatypesavailablenotification.md",
+      "hash": "30bd032b5c6bb1405aab59e593d3fc4d23bd6d75eaed1eab8bea8ecda5b3c14d"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/mediaplayer/mpmovienaturalsizeavailablenotification.json": {
+      "etag": "\"4d1a-65d55c221060f-df\"",
+      "file_path": "documentation/MediaPlayer/mpmovienaturalsizeavailablenotification.md",
+      "hash": "9070dc3fb58c168185b4e7f0c14d3045eb6a968b6199582bd5ddd5f1b9a21433"
     },
     "https://developer.apple.com/tutorials/data/documentation/mediaplayer/mpmovieplaybackstate.json": {
       "etag": "\"8087-65d55c21268b5-df\"",
@@ -5698,6 +6138,16 @@
       "file_path": "documentation/MediaPlayer/mpmovieplayercontroller/view.md",
       "hash": "24bc7e1f5494c91ae4a6632c76b58f22e916c636da95a5723302e5045cc74a52"
     },
+    "https://developer.apple.com/tutorials/data/documentation/mediaplayer/mpmovieplayerdidenterfullscreennotification.json": {
+      "etag": "\"4eaf-65d55c210d082-df\"",
+      "file_path": "documentation/MediaPlayer/mpmovieplayerdidenterfullscreennotification.md",
+      "hash": "b850650a64aa3016ed3d92e58d3681572ab48ef21ef3fe57f6c98ca002b18fb0"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/mediaplayer/mpmovieplayerdidexitfullscreennotification.json": {
+      "etag": "\"4ea7-65d55c221060f-df\"",
+      "file_path": "documentation/MediaPlayer/mpmovieplayerdidexitfullscreennotification.md",
+      "hash": "3c24d88360a254f4176acf493e729c55a6ffb6114b2b1022f49bbe9292da30db"
+    },
     "https://developer.apple.com/tutorials/data/documentation/mediaplayer/mpmovieplayerfullscreenanimationcurveuserinfokey.json": {
       "etag": "\"2e0c-65d55c206ecba-df\"",
       "file_path": "documentation/MediaPlayer/mpmovieplayerfullscreenanimationcurveuserinfokey.md",
@@ -5708,10 +6158,45 @@
       "file_path": "documentation/MediaPlayer/mpmovieplayerfullscreenanimationdurationuserinfokey.md",
       "hash": "b6bb1e4d07ae6a9609cc50eeb3af722ec08e35fe861d7ab8c2f5663b8908e22a"
     },
+    "https://developer.apple.com/tutorials/data/documentation/mediaplayer/mpmovieplayerisairplayvideoactivedidchangenotification.json": {
+      "etag": "\"4dd3-65d55c210d082-df\"",
+      "file_path": "documentation/MediaPlayer/mpmovieplayerisairplayvideoactivedidchangenotification.md",
+      "hash": "c5a4c0dbec3b856819836cc2cec68548b1a56d7e52c7e3c1b6a86a4670b76ab1"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/mediaplayer/mpmovieplayerloadstatedidchangenotification.json": {
+      "etag": "\"4d11-65d55c21853a6-df\"",
+      "file_path": "documentation/MediaPlayer/mpmovieplayerloadstatedidchangenotification.md",
+      "hash": "e84c65a225fc2a30d4615fe8089db1279e0fb0a44132705d62a945d5e82cdc88"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/mediaplayer/mpmovieplayernowplayingmoviedidchangenotification.json": {
+      "etag": "\"4d44-65d55c206ecba-df\"",
+      "file_path": "documentation/MediaPlayer/mpmovieplayernowplayingmoviedidchangenotification.md",
+      "hash": "e3b906f1d2790b839e0ebf85cd4cd7afa2f5c60f5ab6e84e5fcd457ec5b1877f"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/mediaplayer/mpmovieplayerplaybackdidfinishnotification.json": {
+      "etag": "\"4b4f-65d55c21853a6-df\"",
+      "file_path": "documentation/MediaPlayer/mpmovieplayerplaybackdidfinishnotification.md",
+      "hash": "e3df56c8687610c1822e72025d2782c477084a21721cf7d9309b07df8b3b4031"
+    },
     "https://developer.apple.com/tutorials/data/documentation/mediaplayer/mpmovieplayerplaybackdidfinishreasonuserinfokey.json": {
       "etag": "\"2783-65d55c208bc13-df\"",
       "file_path": "documentation/MediaPlayer/mpmovieplayerplaybackdidfinishreasonuserinfokey.md",
       "hash": "722b1da39f6c0eb937b755a0991ecc6587f68b71f211e991de4227275d0fe04d"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/mediaplayer/mpmovieplayerplaybackstatedidchangenotification.json": {
+      "etag": "\"5292-65d55c20ad39e-df\"",
+      "file_path": "documentation/MediaPlayer/mpmovieplayerplaybackstatedidchangenotification.md",
+      "hash": "14e17dbe06ff6ae8702494e83ae6e39580a0826bf57e597e281fe4b617a6b4f4"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/mediaplayer/mpmovieplayerreadyfordisplaydidchangenotification.json": {
+      "etag": "\"4d27-65d55c221060f-df\"",
+      "file_path": "documentation/MediaPlayer/mpmovieplayerreadyfordisplaydidchangenotification.md",
+      "hash": "ad3faed0f351eb74beae67d32bc65f9abc4272825b7f40ff4c2fb83cb80c440a"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/mediaplayer/mpmovieplayerscalingmodedidchangenotification.json": {
+      "etag": "\"4d78-65d55c21268b5-df\"",
+      "file_path": "documentation/MediaPlayer/mpmovieplayerscalingmodedidchangenotification.md",
+      "hash": "7156a234278efefbbe5ea4b5db7070b5e04706933e51f33093c1ac2708e30483"
     },
     "https://developer.apple.com/tutorials/data/documentation/mediaplayer/mpmovieplayerthumbnailerrorkey.json": {
       "etag": "\"2bbc-65d55c206ecba-df\"",
@@ -5722,6 +6207,11 @@
       "etag": "\"2b65-65d55c21268b5-df\"",
       "file_path": "documentation/MediaPlayer/mpmovieplayerthumbnailimagekey.md",
       "hash": "f798bbc05f3c060efecee2f8eb6869c2ed8ee2e45ecf0bb9adc99a976e53d047"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/mediaplayer/mpmovieplayerthumbnailimagerequestdidfinishnotification.json": {
+      "etag": "\"59db-65d55c20ad39e-df\"",
+      "file_path": "documentation/MediaPlayer/mpmovieplayerthumbnailimagerequestdidfinishnotification.md",
+      "hash": "b7da0777f9dd1b9901befd248f6651e52cd5ada28321cceb1eb898cf112309b0"
     },
     "https://developer.apple.com/tutorials/data/documentation/mediaplayer/mpmovieplayerthumbnailtimekey.json": {
       "etag": "\"2be0-65d55c21853a6-df\"",
@@ -5753,6 +6243,11 @@
       "file_path": "documentation/MediaPlayer/mpmovieplayertimedmetadatakeyname.md",
       "hash": "49e1d1cc646927580281cee93be26a79c7aabf86ca03c64da4199d1b464ba996"
     },
+    "https://developer.apple.com/tutorials/data/documentation/mediaplayer/mpmovieplayertimedmetadataupdatednotification.json": {
+      "etag": "\"465b-65d55c2162671-df\"",
+      "file_path": "documentation/MediaPlayer/mpmovieplayertimedmetadataupdatednotification.md",
+      "hash": "5d3b35587b38e71ae598dac3d84cca18845f48a54dc6f928b2c9918a9bea28ad"
+    },
     "https://developer.apple.com/tutorials/data/documentation/mediaplayer/mpmovieplayertimedmetadatauserinfokey.json": {
       "etag": "\"2128-65d55c208bc13-df\"",
       "file_path": "documentation/MediaPlayer/mpmovieplayertimedmetadatauserinfokey.md",
@@ -5772,6 +6267,16 @@
       "etag": "\"2c8e-65d55c20ecb13-df\"",
       "file_path": "documentation/MediaPlayer/mpmovieplayerviewcontroller/movieplayer.md",
       "hash": "37513fd8808b48d9be7d8a083d7b4839b4988cc857751478375310da38b1ca5b"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/mediaplayer/mpmovieplayerwillenterfullscreennotification.json": {
+      "etag": "\"5238-65d55c20ecb13-df\"",
+      "file_path": "documentation/MediaPlayer/mpmovieplayerwillenterfullscreennotification.md",
+      "hash": "c5ccc9876f5d097baa2758bb2b0b0042f440755951a94b3b43fc83a0f5c50f92"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/mediaplayer/mpmovieplayerwillexitfullscreennotification.json": {
+      "etag": "\"522f-65d55c20ce542-df\"",
+      "file_path": "documentation/MediaPlayer/mpmovieplayerwillexitfullscreennotification.md",
+      "hash": "f351ca1ec7c4d2f2908dd0f0b2838d1ae5a13141ea84274862abfb667d985325"
     },
     "https://developer.apple.com/tutorials/data/documentation/mediaplayer/mpmovierepeatmode.json": {
       "etag": "\"6d48-65d55c2162671-df\"",
@@ -5847,6 +6352,11 @@
       "etag": "\"2315-65d55c20ad39e-df\"",
       "file_path": "documentation/MediaPlayer/mpmoviesourcetype/unknown.md",
       "hash": "4a7fe21d839d08e3ed4ad8870c9ece24f434dd355045cd77b5254fd07ad3dfa7"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/mediaplayer/mpmoviesourcetypeavailablenotification.json": {
+      "etag": "\"4d37-65d55c21b54c8-df\"",
+      "file_path": "documentation/MediaPlayer/mpmoviesourcetypeavailablenotification.md",
+      "hash": "571ce1c8529a42b3315c436ab7b5a1eabdf2500803b103a028958b62da725f49"
     },
     "https://developer.apple.com/tutorials/data/documentation/mediaplayer/mpmovietimeoption.json": {
       "etag": "\"6ddc-65d55c2162671-df\"",
@@ -6048,6 +6558,16 @@
       "file_path": "documentation/MediaPlayer/mpmusicplayercontrollermutablequeue/remove(_).md",
       "hash": "2627a5055180ec646af3f97a11f911dfc1cf86742d1dff6778ac6d22c03c1b22"
     },
+    "https://developer.apple.com/tutorials/data/documentation/mediaplayer/mpmusicplayercontrollernowplayingitemdidchangenotification.json": {
+      "etag": "\"2695-65d55c20ad39e-df\"",
+      "file_path": "documentation/MediaPlayer/mpmusicplayercontrollernowplayingitemdidchangenotification.md",
+      "hash": "78a47db1f5edfec891aedea59eccbccb8547fca648f8cac0cf18425dfc7983ec"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/mediaplayer/mpmusicplayercontrollerplaybackstatedidchangenotification.json": {
+      "etag": "\"269e-65d55c206ecba-df\"",
+      "file_path": "documentation/MediaPlayer/mpmusicplayercontrollerplaybackstatedidchangenotification.md",
+      "hash": "99fd0e3866a9d9ba1308645e49c43ec892cf4576b86b92b7e85aac8ecacb5a2d"
+    },
     "https://developer.apple.com/tutorials/data/documentation/mediaplayer/mpmusicplayercontrollerqueue.json": {
       "etag": "\"659a-65d55c206ecba-df\"",
       "file_path": "documentation/MediaPlayer/mpmusicplayercontrollerqueue.md",
@@ -6057,6 +6577,16 @@
       "etag": "\"215f-65d55c221060f-df\"",
       "file_path": "documentation/MediaPlayer/mpmusicplayercontrollerqueue/items.md",
       "hash": "fa25e077bccaaea49cb647e3817557ac6d059ed9c519cdfc546c68a71c2fc975"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/mediaplayer/mpmusicplayercontrollerqueuedidchangenotification.json": {
+      "etag": "\"1a67-65d55c221060f-df\"",
+      "file_path": "documentation/MediaPlayer/mpmusicplayercontrollerqueuedidchangenotification.md",
+      "hash": "ba3f999f1a872022af3b6cbae896b08bb1b5f1de1ab78b7d2054c9a2b8fb1379"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/mediaplayer/mpmusicplayercontrollervolumedidchangenotification.json": {
+      "etag": "\"264c-65d55c21268b5-df\"",
+      "file_path": "documentation/MediaPlayer/mpmusicplayercontrollervolumedidchangenotification.md",
+      "hash": "2045799b1f4a513be71a442347831b79af712c4c944d874c7018d5294bb63055"
     },
     "https://developer.apple.com/tutorials/data/documentation/mediaplayer/mpmusicplayermediaitemqueuedescriptor.json": {
       "etag": "\"7e39-65d55c20ad39e-df\"",
@@ -7198,6 +7728,16 @@
       "file_path": "documentation/MediaPlayer/mpvolumeview/volumewarningsliderimage.md",
       "hash": "4477efbeb0e5f26d1500a2a78e75a6ce9f69ecc675982b327f602ec3178755d4"
     },
+    "https://developer.apple.com/tutorials/data/documentation/mediaplayer/mpvolumeviewwirelessrouteactivedidchangenotification.json": {
+      "etag": "\"6379-65d55c208bc13-df\"",
+      "file_path": "documentation/MediaPlayer/mpvolumeviewwirelessrouteactivedidchangenotification.md",
+      "hash": "7beda404328c2ebf32364a37fdfe443dcd67a4de1d72d5936fa62f8ff6781ca5"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/mediaplayer/mpvolumeviewwirelessroutesavailabledidchangenotification.json": {
+      "etag": "\"63da-65d55c21268b5-df\"",
+      "file_path": "documentation/MediaPlayer/mpvolumeviewwirelessroutesavailabledidchangenotification.md",
+      "hash": "5c09e992e14c7f840727e23950d710e93f1fdd5699bce02b516f4204fc3b693f"
+    },
     "https://developer.apple.com/tutorials/data/documentation/mediaplayer/playback-finished-notification-key.json": {
       "etag": "\"5380-6590236c0a175-df\"",
       "file_path": "documentation/MediaPlayer/playback-finished-notification-key.md",
@@ -7251,8 +7791,8 @@
   },
   "metadata": {
     "render": {
-      "version": 1
+      "version": 2
     },
-    "total_pages": 1450
+    "total_pages": 1558
   }
 }

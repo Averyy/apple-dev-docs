@@ -28,6 +28,16 @@ typedef NSWritingDirection UITextWritingDirection;
 
 Constants of this type are returned from the [`baseWritingDirection(for:in:)`](./uitextinput/basewritingdirection%28for,in%29.md) method and are used as arguments of the [`setBaseWritingDirection(_:for:)`](./uitextinput/setbasewritingdirection%28_,for%29.md) method.
 
+## Topics
+
+### Constants
+- [UITextWritingDirectionNatural](./uitextwritingdirectionnatural.md)
+  The natural writing direction as defined by the Bidi algorithm.
+- [UITextWritingDirectionLeftToRight](./uitextwritingdirectionlefttoright.md)
+  Writing that goes from left to right.
+- [UITextWritingDirectionRightToLeft](./uitextwritingdirectionrighttoleft.md)
+  Writing that goes from right to left.
+
 ## See Also
 
 ### Determining layout and writing direction

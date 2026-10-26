@@ -57,6 +57,8 @@ See the Overview section above for header-level documentation.
   Registers a callback function to be called whenever a volume is to be unmounted.
 - [func DAUnregisterCallback(DASession, UnsafeMutableRawPointer, UnsafeMutableRawPointer?)](./daunregistercallback%28_,_,_%29.md)
   Unregisters a registered callback function.
+- [DAUnregisterApprovalCallback](./daunregisterapprovalcallback.md)
+  Unregisters a registered callback function.
 ### Callbacks
 - [typealias DADiskAppearedCallback](./dadiskappearedcallback.md)
   Type of the callback function used by DARegisterDiskAppearedCallback().
@@ -108,6 +110,7 @@ See the Overview section above for header-level documentation.
 - [DiskArbitration Enumerations](./diskarbitration-enumerations.md)
 - [DiskArbitration Constants](./diskarbitration-constants.md)
 - [DiskArbitration Data Types](./diskarbitration-data-types.md)
+- [DiskArbitration Functions](./diskarbitration-functions.md)
 
 
 ---

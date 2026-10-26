@@ -40,9 +40,15 @@ This class represents the set of all facial landmark regions in 2D, exposed as p
   The array of normalized landmark points.
 - [var precisionEstimatesPerPoint: [Float]?](./vnfacelandmarkregion2d/precisionestimatesperpoint-5jl22.md)
   Requests an array of precision estimates for each landmark point.
+- [normalizedPoints](./vnfacelandmarkregion2d/normalizedpoints-1o38f.md)
+  A buffer in memory containing normalized landmark points.
+- [precisionEstimatesPerPoint](./vnfacelandmarkregion2d/precisionestimatesperpoint-3kx5a.md)
+  An array of precision estimates for each landmark point.
 ### Computing Feature Points
 - [func pointsInImage(imageSize: CGSize) -> [CGPoint]](./vnfacelandmarkregion2d/pointsinimage%28imagesize%29.md)
   Returns an array containing landmark points in the coordinate space of the specified image size.
+- [- pointsInImageOfSize:](./vnfacelandmarkregion2d/pointsinimageofsize_.md)
+  A buffer in memory containing landmark points in the coordinate space of the specified image size.
 
 ## Relationships
 

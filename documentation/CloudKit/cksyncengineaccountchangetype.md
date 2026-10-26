@@ -47,6 +47,16 @@ enum CKSyncEngineAccountChangeType : NSInteger;
 - [Sendable](../Swift/sendable.md)
 - [SendableMetatype](../Swift/sendablemetatype.md)
 
+## See Also
+
+### Understanding the change
+- [changeType](./cksyncengineaccountchangeevent/changetype.md)
+  The iCloud account’s change type.
+- [previousUser](./cksyncengineaccountchangeevent/previoususer.md)
+  The previous iCloud account’s record identifier.
+- [currentUser](./cksyncengineaccountchangeevent/currentuser.md)
+  The current iCloud account’s record identifier.
+
 
 ---
 

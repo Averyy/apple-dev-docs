@@ -66,6 +66,8 @@ MTLFunctionConstantValues* constantValues = [MTLFunctionConstantValues new];
   Sets a value for a function constant with a specific name.
 - [func setConstantValues(UnsafeRawPointer, type: MTLDataType, range: Range<Int>)](./setconstantvalues%28_,type,range%29.md)
   Sets values for a group of function constants within a specific index range.
+- [- setConstantValues:type:withRange:](./setconstantvalues_type_withrange_.md)
+  Sets values for a group of function constants within a specific index range.
 
 
 ---

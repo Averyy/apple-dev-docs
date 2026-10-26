@@ -23,6 +23,12 @@ init(identifier: String, options: [SWCollaborationOption])
 - (instancetype) initWithIdentifier:(NSString *) identifier options:(NSArray<SWCollaborationOption *> *) options;
 ```
 
+## See Also
+
+### Creating a collaboration options group
+- [+ optionsGroupWithIdentifier:options:](./optionsgroupwithidentifier_options_.md)
+  Creates and initializes a collaboration options group object.
+
 
 ---
 

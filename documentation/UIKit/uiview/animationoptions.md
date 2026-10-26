@@ -72,6 +72,10 @@ enum UIViewAnimationOptions : NSUInteger;
   A frame rate of 30 frames per second.
 - [static var preferredFramesPerSecond60: UIView.AnimationOptions](./animationoptions/preferredframespersecond60.md)
   A frame rate of 60 frames per second.
+- [UIViewAnimationOptionTransitionNone](../uiviewanimationoptions/uiviewanimationoptiontransitionnone.md)
+  No transition is specified.
+- [UIViewAnimationOptionPreferredFramesPerSecondDefault](../uiviewanimationoptions/uiviewanimationoptionpreferredframesperseconddefault.md)
+  The default number of frames per second.
 ### Initializers
 - [init(rawValue: UInt)](./animationoptions/init%28rawvalue%29.md)
   Creates an animation options structure with the specified raw value.

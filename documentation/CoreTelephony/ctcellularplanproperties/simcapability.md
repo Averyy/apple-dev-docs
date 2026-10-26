@@ -36,6 +36,8 @@ Use to define whether your eSIM is capable of data only or data and voice. Refer
   A type that contains lifecycle details for a time-limited cellular plan.
 - [var lifecycleProperties: CTCellularPlanProperties.lifecycle?](./lifecycleproperties.md)
   The lifecycle details for a time-limited cellular plan.
+- [supportedRegionCodes](./supportedregioncodes-5elox.md)
+  The available regions that your eSIM supports.
 
 
 ---

@@ -26,7 +26,7 @@ When ARKit first detects a plane, the resulting [`ARPlaneAnchor`](../arplaneanch
 
 As scene analysis and plane detection continues, ARKit may determine that a previously detected plane anchor is part of a larger real-world surface, increasing the [`extent`](./extent.md) width and length values. The plane’s new boundaries may not be symmetric around its initial position, so the [`center`](./center.md) point changes relative to the anchor’s (unchanged) [`transform`](../aranchor/transform.md) matrix.
 
-Although the type of this property is [`vector_float3`](https://developer.apple.com/documentation/simd/vector_float3), a plane anchor is always two-dimensional, and is always positioned in only the x and z directions relative to its [`transform`](../aranchor/transform.md) position. (That is, the y-component of this vector is always zero.)
+Although the type of this property is [`vector_float3`](../../simd/vector_float3.md), a plane anchor is always two-dimensional, and is always positioned in only the x and z directions relative to its [`transform`](../aranchor/transform.md) position. (That is, the y-component of this vector is always zero.)
 
 ## See Also
 

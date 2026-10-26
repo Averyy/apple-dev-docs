@@ -40,6 +40,8 @@ In the manual rendering mode, [`AVAudioInputNode`](./avaudioinputnode.md) and [`
   Provides scoped access to the I/O node’s AudioUnit
 - [var audioUnit: AudioUnit?](./avaudioionode/audiounit-1bqu3.md)
 - [var audioUnit: AudioUnit?](./avaudioionode/audiounit-1caha.md)
+- [audioUnit](./avaudioionode/audiounit-4xtq9.md)
+  The node’s underlying audio unit, if any.
 ### Getting the I/O latency
 - [var presentationLatency: TimeInterval](./avaudioionode/presentationlatency.md)
   The presentation or hardware latency, applicable when rendering to or from an audio device.
@@ -79,6 +81,7 @@ In the manual rendering mode, [`AVAudioInputNode`](./avaudioinputnode.md) and [`
   An object that connects to the system’s audio output.
 - [class AVAudioNode](./avaudionode.md)
   An object you use for audio generation, processing, or an I/O block.
+- [AVAudioIONodeInputBlockRealtimeSafe](./avaudioionodeinputblockrealtimesafe.md)
 
 
 ---

@@ -52,7 +52,7 @@ Once enabled, Photos asks the extension for its list of supported project types.
 ### macOS Photos project extensions
 - [Creating a Slideshow Project Extension for Photos](../PhotoKit/creating-a-slideshow-project-extension-for-photos.md)
   Augment the macOS Photos app with extensions that support project creation.
-- [class PHProject](https://developer.apple.com/documentation/photos/phproject)
+- [class PHProject](../Photos/phproject.md)
   A representation of a Photos app project extension.
 - [class PHProjectInfo](./phprojectinfo.md)
   Information about the project extension.
@@ -64,7 +64,7 @@ Once enabled, Photos asks the extension for its list of supported project types.
   A collection of content representing curated asset and text elements.
 - [class PHProjectRegionOfInterest](./phprojectregionofinterest.md)
   A representation of a region of interest in a photo asset.
-- [class PHProjectChangeRequest](https://developer.apple.com/documentation/photos/phprojectchangerequest)
+- [class PHProjectChangeRequest](../Photos/phprojectchangerequest.md)
   A request to change asset data in a Photos project extension.
 - [struct PHProjectCategory](./phprojectcategory.md)
   A representation of Photos project extension categories.

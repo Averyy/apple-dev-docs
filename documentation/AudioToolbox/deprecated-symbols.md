@@ -59,6 +59,21 @@ Review unsupported symbols and their replacements.
   Activates or deactivates your application’s audio session; provides flags for use by other audio sessions.
 - [func AudioSessionSetProperty(AudioSessionPropertyID, UInt32, UnsafeRawPointer!) -> OSStatus](./audiosessionsetproperty%28_,_,_%29.md)
   Sets the value of a specified audio session property.
+- [AudioFileCreate](./audiofilecreate.md)
+- [AudioFileInitialize](./audiofileinitialize.md)
+- [AudioFileOpen](./audiofileopen.md)
+- [MusicSequenceLoadSMFDataWithFlags](./musicsequenceloadsmfdatawithflags.md)
+- [MusicSequenceLoadSMFWithFlags](./musicsequenceloadsmfwithflags.md)
+- [MusicSequenceSaveMIDIFile](./musicsequencesavemidifile.md)
+- [MusicSequenceSaveSMFData](./musicsequencesavesmfdata.md)
+- [MusicTrackNewExtendedControlEvent](./musictracknewextendedcontrolevent.md)
+- [AudioFileComponentCreate](./audiofilecomponentcreate.md)
+- [AudioFileComponentDataIsThisFormat](./audiofilecomponentdataisthisformat.md)
+- [AudioFileComponentFileIsThisFormat](./audiofilecomponentfileisthisformat.md)
+- [AudioFileComponentInitialize](./audiofilecomponentinitialize.md)
+- [AudioFileComponentOpenFile](./audiofilecomponentopenfile.md)
+- [MusicDevicePrepareInstrument](./musicdeviceprepareinstrument.md)
+- [MusicDeviceReleaseInstrument](./musicdevicereleaseinstrument.md)
 ### Callbacks
 - [typealias AudioSessionInterruptionListener](./audiosessioninterruptionlistener.md)
   Invoked when an audio interruption in iOS begins or ends.

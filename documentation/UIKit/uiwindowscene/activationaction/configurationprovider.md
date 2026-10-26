@@ -35,6 +35,8 @@ An activation configuration you can use to request a window scene.
 ### Creating an activation action
 - [convenience init(title: String?, subtitle: String?, image: UIImage?, identifier: UIAction.Identifier?, discoverabilityTitle: String?, attributes: UIMenuElement.Attributes, alternate: UIAction?, UIWindowScene.ActivationAction.ConfigurationProvider)](./init%28title,subtitle,image,identifier,discoverabilitytitle,attributes,alternate,_%29.md)
   Creates an activation action using the specified parameters.
+- [+ actionWithIdentifier:alternateAction:configurationProvider:](../../uiwindowsceneactivationaction/actionwithidentifier_alternateaction_configurationprovider_.md)
+  Creates an activation action with the specified parameters.
 
 
 ---

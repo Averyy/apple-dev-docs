@@ -50,6 +50,10 @@ You can only read or sample resources in the specified heap. This method ignores
   Makes multiple resources available to the acceleration structure pass.
 - [struct MTLResourceUsage](../mtlresourceusage.md)
   Options that describe how a graphics or compute function uses an argument buffer’s resource.
+- [- useHeaps:count:](./useheaps_count_.md)
+  Specifies that an array of heaps containing resources in an argument buffer can be safely used by the acceleration structure pass.
+- [- useResources:count:usage:](./useresources_count_usage_.md)
+  Specifies that an array of resources in an argument buffer can be safely used by the acceleration structure pass.
 
 
 ---

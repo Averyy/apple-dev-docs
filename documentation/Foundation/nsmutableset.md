@@ -55,6 +55,8 @@ You must also override the primitive methods of the [`NSSet`](./nsset.md) class.
   Returns an initialized mutable set with a given initial capacity.
 - [init()](./nsmutableset/init%28%29.md)
   Initializes a newly allocated set.
+- [+ setWithCapacity:](./nsmutableset/setwithcapacity_.md)
+  Creates and returns a mutable set with a given initial capacity.
 ### Adding and removing entries
 - [func add(Any)](./nsmutableset/add%28_%29.md)
   Adds a given object to the set, if it is not already a member.
@@ -102,6 +104,20 @@ You must also override the primitive methods of the [`NSSet`](./nsset.md) class.
 - [Sendable](../Swift/sendable.md)
 - [SendableMetatype](../Swift/sendablemetatype.md)
 - [Sequence](../Swift/sequence.md)
+
+## See Also
+
+### Basic Collections
+- [NSArray](./nsarray.md)
+  A static ordered collection of objects.
+- [NSMutableArray](./nsmutablearray.md)
+  A dynamic ordered collection of objects.
+- [NSDictionary](./nsdictionary.md)
+  A static collection of objects associated with unique keys.
+- [NSMutableDictionary](./nsmutabledictionary.md)
+  A dynamic collection of objects associated with unique keys.
+- [NSSet](./nsset.md)
+  A static, unordered collection of unique objects.
 
 
 ---

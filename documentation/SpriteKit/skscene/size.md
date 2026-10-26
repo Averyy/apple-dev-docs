@@ -38,6 +38,8 @@ If you set the [`size`](./size.md) property to a new value, the scene’s [`didC
 ### Creating a Scene Programmatically
 - [init(size: CGSize)](./init%28size%29.md)
   Initializes a new scene object.
+- [+ sceneWithSize:](./scenewithsize_.md)
+  Creates and returns a new scene object.
 
 
 ---

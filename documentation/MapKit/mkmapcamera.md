@@ -40,6 +40,8 @@ After creating an instance of this class, configure it with the desired attribut
   Returns a new camera object using the specified distance, pitch, and heading information.
 - [convenience init(lookingAt: MKMapItem, forViewSize: CGSize, allowPitch: Bool)](./mkmapcamera/init%28lookingat,forviewsize,allowpitch%29.md)
   Returns a new camera object using the specified map item, view size, and pitch.
+- [+ camera](./mkmapcamera/camera.md)
+  Returns a new camera object for you to configure.
 ### Configuring the viewing angle
 - [var centerCoordinate: CLLocationCoordinate2D](./mkmapcamera/centercoordinate.md)
   The map coordinate at the center of the map view.

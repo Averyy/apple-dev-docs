@@ -55,6 +55,24 @@ The [`PortDelegate`](./portdelegate.md) protocol defines the optional methods im
   A low-level, operating system-independent type for inter-application (and inter-thread) messages.
 - [class NSProtocolChecker](./nsprotocolchecker.md)
   An object that restricts the messages that can be sent to another object (referred to as the checker’s delegate).
+- [NSConnectionDelegate](./nsconnectiondelegate.md)
+  An interface for interacting with low-level, interprocess connections.
+- [NSConnection](./nsconnection.md)
+  An object that manages the communication between objects in different threads or between a thread and a process running on a local or remote system.
+- [NSDistantObject](./nsdistantobject.md)
+  A proxy for objects in other applications or threads.
+- [NSDistantObjectRequest](./nsdistantobjectrequest.md)
+  An object used by the distributed objects system to help handle invocations between different processes.
+- [NSMachBootstrapServer](./nsmachbootstrapserver.md)
+  A port name server that takes and returns Mach port objects.
+- [NSMessagePortNameServer](./nsmessageportnameserver.md)
+  A server takes and returns message ports.
+- [NSPortCoder](./nsportcoder.md)
+  A coder used to transmit object proxies (and sometimes objects themselves) between connections.
+- [NSPortNameServer](./nsportnameserver.md)
+  An object-oriented interface to the port registration service used by the distributed objects system.
+- [NSSocketPortNameServer](./nssocketportnameserver.md)
+  A port name server that takes and returns socket ports.
 
 
 ---

@@ -31,6 +31,13 @@ These constants are used by [`horizontalPagination`](./horizontalpagination.md) 
 - [NSPrintInfo.PaginationMode.clip](./paginationmode/clip.md)
 ### Initializers
 - [init?(rawValue: UInt)](./paginationmode/init%28rawvalue%29.md)
+### Deprecated
+- [NSAutoPagination](../nsautopagination.md)
+  The image is divided into equal-sized rectangles and placed in one column of pages.
+- [NSFitPagination](../nsfitpagination.md)
+  The image is scaled to produce one column or one row of pages.
+- [NSClipPagination](../nsclippagination.md)
+  The image is clipped to produce one column or row of pages.
 
 ## Relationships
 

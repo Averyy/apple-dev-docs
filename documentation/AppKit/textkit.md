@@ -26,6 +26,8 @@ When using [`NSTextView`](./nstextview.md), access the TextKit engine through th
   A string of text that manages data, layout, and stylistic information for ranges of characters to support rendering.
 - [class NSMutableAttributedString](../Foundation/nsmutableattributedstring.md)
   A mutable string with associated attributes (such as visual style, hyperlinks, or accessibility data) for portions of its text.
+- [TextKit string attributes](./textkit-string-attributes.md)
+  AppKit-specific keys and values for displaying text and managing documents.
 ### Formatting and attributes
 - [class NSParagraphStyle](./nsparagraphstyle.md)
   The paragraph or ruler attributes for an attributed string.
@@ -123,6 +125,10 @@ When using [`NSTextView`](./nstextview.md), access the TextKit engine through th
   A concrete typesetter object that places glyphs during the text layout process.
 - [class NSTypesetter](./nstypesetter.md)
   An abstract class that performs various type layout tasks.
+- [NSLineSweepDirection](./nslinesweepdirection.md)
+  Values that describe the progression of text on a page.
+- [NSLineMovementDirection](./nslinemovementdirection.md)
+  The direction in which a line moves.
 
 ## See Also
 

@@ -53,7 +53,7 @@ The Apple News API returns the following responses:
 - A list of HTTP headers
 - A body that includes any error or warning codes
 
-For a list of status codes, see [`Status`](https://developer.apple.com/documentation/applenewsapi/status); for an explanation of error codes, see [`Error`](https://developer.apple.com/documentation/applenewsapi/error).
+For a list of status codes, see [`Status`](../AppleNewsAPI/status.md); for an explanation of error codes, see [`Error`](../AppleNewsAPI/error.md).
 
 ## See Also
 

@@ -260,6 +260,32 @@ You also use this type when inspecting a received message. The [`es_message_t`](
 - [init(rawValue: UInt32)](./es_event_type_t/init%28rawvalue%29.md)
 ### Instance Properties
 - [var rawValue: UInt32](./es_event_type_t/rawvalue.md)
+### Enumeration Cases
+- [ES_EVENT_TYPE_AUTH_BOOTSTRAP_CHECK_IN](./es_event_type_auth_bootstrap_check_in.md)
+- [ES_EVENT_TYPE_AUTH_BOOTSTRAP_LOOK_UP](./es_event_type_auth_bootstrap_look_up.md)
+- [ES_EVENT_TYPE_AUTH_XPC_CONNECT](./es_event_type_auth_xpc_connect.md)
+- [ES_EVENT_TYPE_NOTIFY_BOOTSTRAP_CHECK_IN](./es_event_type_notify_bootstrap_check_in.md)
+- [ES_EVENT_TYPE_NOTIFY_BOOTSTRAP_LOOK_UP](./es_event_type_notify_bootstrap_look_up.md)
+- [ES_EVENT_TYPE_NOTIFY_TCC_MODIFY](./es_event_type_notify_tcc_modify.md)
+- [ES_EVENT_TYPE_RESERVED_0](./es_event_type_reserved_0.md)
+- [ES_EVENT_TYPE_RESERVED_1](./es_event_type_reserved_1.md)
+- [ES_EVENT_TYPE_RESERVED_10](./es_event_type_reserved_10.md)
+- [ES_EVENT_TYPE_RESERVED_11](./es_event_type_reserved_11.md)
+- [ES_EVENT_TYPE_RESERVED_12](./es_event_type_reserved_12.md)
+- [ES_EVENT_TYPE_RESERVED_13](./es_event_type_reserved_13.md)
+- [ES_EVENT_TYPE_RESERVED_14](./es_event_type_reserved_14.md)
+- [ES_EVENT_TYPE_RESERVED_15](./es_event_type_reserved_15.md)
+- [ES_EVENT_TYPE_RESERVED_16](./es_event_type_reserved_16.md)
+- [ES_EVENT_TYPE_RESERVED_17](./es_event_type_reserved_17.md)
+- [ES_EVENT_TYPE_RESERVED_18](./es_event_type_reserved_18.md)
+- [ES_EVENT_TYPE_RESERVED_2](./es_event_type_reserved_2.md)
+- [ES_EVENT_TYPE_RESERVED_3](./es_event_type_reserved_3.md)
+- [ES_EVENT_TYPE_RESERVED_4](./es_event_type_reserved_4.md)
+- [ES_EVENT_TYPE_RESERVED_5](./es_event_type_reserved_5.md)
+- [ES_EVENT_TYPE_RESERVED_6](./es_event_type_reserved_6.md)
+- [ES_EVENT_TYPE_RESERVED_7](./es_event_type_reserved_7.md)
+- [ES_EVENT_TYPE_RESERVED_8](./es_event_type_reserved_8.md)
+- [ES_EVENT_TYPE_RESERVED_9](./es_event_type_reserved_9.md)
 
 ## Relationships
 

@@ -42,6 +42,8 @@ The array representation in the file identified by `aPath` must contain only pro
 ### Related Documentation
 - [func write(toFile: String, atomically: Bool) -> Bool](./write%28tofile,atomically%29.md)
   Writes the contents of the array to a file at a given path.
+- [+ arrayWithContentsOfFile:](./arraywithcontentsoffile_.md)
+  Creates and returns an array containing the contents of the file specified by a given path.
 ### Initializing an Array
 - [init()](./init%28%29.md)
   Initializes a newly allocated array.
@@ -51,6 +53,8 @@ The array representation in the file identified by `aPath` must contain only pro
   Initializes a newly allocated array using `anArray` as the source of data objects for the array.
 - [init(objects: UnsafePointer<AnyObject>?, count: Int)](./init%28objects,count%29-5odxv.md)
   Initializes a newly allocated array to include a given number of objects from a given C array.
+- [- initWithObjects:](./initwithobjects_.md)
+  Initializes a newly allocated array by placing in it the objects in the argument list.
 
 
 ---

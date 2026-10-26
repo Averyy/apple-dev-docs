@@ -30,6 +30,8 @@ The last selected menu item is the one that was highlighted when the user releas
   The title of the item that was last selected by the user.
 - [var indexOfSelectedItem: Int](./indexofselecteditem.md)
   The index of the item that was last selected by the user.
+- [selectedTag](./selectedtag.md)
+  The tag of the menu item that was last selected by the user.
 
 
 ---

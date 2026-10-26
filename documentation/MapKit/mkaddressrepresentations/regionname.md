@@ -33,6 +33,8 @@ var regionName: String? { get }
 - [var cityWithContext: String?](./citywithcontext.md)
   The city name along with the country name, to provide additional disambiguating context.
 - [var region: Locale.Region?](./region.md)
+- [regionCode](./regioncode.md)
+  The region’s ISO 3166-2 region code, such as “US”.
 
 
 ---

@@ -41,6 +41,9 @@ A new transform object initialized with the matrix values of `aTransform`.
 ### Creating an Affine Transform
 - [init()](./init%28%29.md)
   Initializes an affine transform matrix to the identity matrix.
+### Related Documentation
+- [+ transform](./transform.md)
+  Creates a new affine transform initialized to the identity matrix.
 
 
 ---

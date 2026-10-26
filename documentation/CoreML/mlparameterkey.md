@@ -118,6 +118,8 @@ See [Personalizing a Model with On-Device Updates](./personalizing-a-model-with-
   Information about a model, primarily the input and output format for each feature the model expects, and optional metadata.
 - [func parameterValue(for: MLParameterKey) throws -> Any](./mlmodel/parametervalue%28for%29.md)
   Returns a model parameter value for a key.
+- [availableComputeDevices](./mlmodel/availablecomputedevices-42uzt.md)
+  The list of available compute devices that the model’s prediction can use.
 
 
 ---

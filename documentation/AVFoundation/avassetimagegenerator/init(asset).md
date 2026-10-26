@@ -28,6 +28,12 @@ init(asset: AVAsset)
 
 - `asset`: A video asset from which to generate images.
 
+## See Also
+
+### Creating an image generator
+- [+ assetImageGeneratorWithAsset:](./assetimagegeneratorwithasset_.md)
+  Returns a new object that generates images for times within a video asset.
+
 
 ---
 

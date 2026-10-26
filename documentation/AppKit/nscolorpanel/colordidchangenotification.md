@@ -29,6 +29,8 @@ To observe this notification using Swift concurrency, use [`NSColorPanel.ColorDi
 
 ### Responding to a color change
 - [protocol NSColorChanging](../nscolorchanging.md)
+- [- changeColor:](../../ObjectiveC/nsobject-swift.class/changecolor_.md)
+  Sent to the first responder when the user selects a color in an `NSColorPanel` object.
 
 
 ---

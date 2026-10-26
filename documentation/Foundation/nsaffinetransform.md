@@ -39,6 +39,8 @@ Methods for applying affine transformations to the current graphics context and 
   Initializes an affine transform matrix to the identity matrix.
 - [convenience init(transform: NSAffineTransform)](./nsaffinetransform/init%28transform%29.md)
   Initializes the receiver’s matrix using another transform object.
+- [+ transform](./nsaffinetransform/transform.md)
+  Creates a new affine transform initialized to the identity matrix.
 ### Accumulating Transformations
 - [func rotate(byDegrees: Double)](./nsaffinetransform/rotate%28bydegrees%29.md)
   Applies a rotation factor (measured in degrees) to the receiver’s transformation matrix.
@@ -92,6 +94,18 @@ Methods for applying affine transformations to the current graphics context and 
 - [NSCopying](./nscopying.md)
 - [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 - [NSSecureCoding](./nssecurecoding.md)
+
+## See Also
+
+### Geometry
+- [NSPoint](./nspoint.md)
+  A point in a Cartesian coordinate system.
+- [NSSize](./nssize.md)
+  A two-dimensional size.
+- [NSRect](./nsrect.md)
+  A rectangle.
+- [NSEdgeInsets](./nsedgeinsets.md)
+  A description of the distance between the edges of two rectangles.
 
 
 ---

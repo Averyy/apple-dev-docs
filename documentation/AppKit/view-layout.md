@@ -27,6 +27,8 @@ When you design your app’s interface, you position views and other interface e
   A rectangular area that can interact with Auto Layout.
 - [class NSLayoutDimension](./nslayoutdimension.md)
   A factory class for creating size-based layout constraint objects using a fluent API.
+- [NSViewLayoutRegion](./nsviewlayoutregion.md)
+- [NSViewLayoutRegionAdaptivityAxis](./nsviewlayoutregionadaptivityaxis.md)
 ### Anchors
 - [class NSLayoutAnchor](./nslayoutanchor.md)
   A factory class for creating layout constraint objects using a fluent API.
@@ -37,6 +39,8 @@ When you design your app’s interface, you position views and other interface e
 ### View Compression
 - [protocol NSUserInterfaceCompression](./nsuserinterfacecompression.md)
   A protocol that describes how a UI control should redisplay when space is restricted.
+- [NSDictionaryOfVariableBindings](./nsdictionaryofvariablebindings.md)
+  Creates a dictionary wherein the keys are string representations of the corresponding values’ variable names.
 
 ## See Also
 

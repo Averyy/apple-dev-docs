@@ -24,6 +24,8 @@ class NSCIImageRep
 ### Creating Representations of Core Image Objects
 - [init(ciImage: CIImage)](./nsciimagerep/init%28ciimage%29-60ghw.md)
   Returns a representation of an image initialized to the specified Core Image instance.
+- [+ imageRepWithCIImage:](./nsciimagerep/imagerepwithciimage_.md)
+  Creates and returns a representation of an image initialized to the specified Core Image instance.
 ### Getting Data
 - [var ciImage: CIImage](./nsciimagerep/ciimage.md)
   The Core Image instance.

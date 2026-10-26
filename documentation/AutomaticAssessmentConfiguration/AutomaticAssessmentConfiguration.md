@@ -74,6 +74,50 @@ The framework reports an error if you try to start an assessment from an app run
 ### Enumerations
 - [enum AEUserAccountType](./aeuseraccounttype.md)
   Specifies the type of account required for an assessment session.
+### Variables
+- [AEAppleMenuItemAboutThisMac](./aeapplemenuitem/aboutthismac.md)
+  The About This Mac item, which remains visible during an assessment session whether or not [`allowedAppleMenuItems`](./aeassessmentconfiguration/allowedapplemenuitems.md) names it.
+- [AEAppleMenuItemAppStore](./aeapplemenuitem/appstore.md)
+  The App Store item.
+- [AEAppleMenuItemForceQuit](./aeapplemenuitem/forcequit.md)
+  The Force Quit item, covering both the Force Quit Applications window and quitting an app outright.
+- [AEAppleMenuItemLocation](./aeapplemenuitem/location.md)
+  The Location item.
+- [AEAppleMenuItemLockScreen](./aeapplemenuitem/lockscreen.md)
+  The Lock Screen item.
+- [AEAppleMenuItemLogout](./aeapplemenuitem/logout.md)
+  The Log Out item, covering both the command and its confirmation.
+- [AEAppleMenuItemRecent](./aeapplemenuitem/recent.md)
+  The Recent Items item.
+- [AEAppleMenuItemRestart](./aeapplemenuitem/restart.md)
+  The Restart item, covering both the command and its confirmation.
+- [AEAppleMenuItemShutDown](./aeapplemenuitem/shutdown.md)
+  The Shut Down item, covering both the command and its confirmation.
+- [AEAppleMenuItemSleep](./aeapplemenuitem/sleep.md)
+  The Sleep item.
+- [AEAppleMenuItemSystemInformation](./aeapplemenuitem/systeminformation.md)
+  The System Information item.
+- [AEAppleMenuItemSystemSettings](./aeapplemenuitem/systemsettings.md)
+  The System Settings item.
+- [AEMenuBarItemBattery](./aemenubaritem/battery.md)
+  The Battery system menu bar item.
+- [AEMenuBarItemBluetooth](./aemenubaritem/bluetooth.md)
+  The Bluetooth system menu bar item.
+- [AEMenuBarItemClock](./aemenubaritem/clock.md)
+  The Clock system menu bar item.
+- [AEMenuBarItemDisplays](./aemenubaritem/displays.md)
+  The Displays system menu bar item.
+- [AEMenuBarItemKeyboard](./aemenubaritem/keyboard.md)
+  The Input Menu system menu bar item, which selects keyboard layouts.
+- [AEMenuBarItemVolume](./aemenubaritem/volume.md)
+  The Volume system menu bar item.
+- [AEMenuBarItemWifi](./aemenubaritem/wifi.md)
+  The Wi-Fi system menu bar item.
+- [AENotInstalledParticipantsKey](./aenotinstalledparticipantskey.md)
+- [AERestrictedSystemParticipantsKey](./aerestrictedsystemparticipantskey.md)
+### Macros
+- [AE_HIDDEN](./ae_hidden.md)
+- [AE_VISIBLE](./ae_visible.md)
 
 
 ---

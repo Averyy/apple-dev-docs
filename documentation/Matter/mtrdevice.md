@@ -40,6 +40,7 @@ class MTRDevice
   The Product Identifier associated with the device.
 - [var vendorID: NSNumber?](./mtrdevice/vendorid.md)
   The Vendor Identifier associated with the device.
+- [nodeID](./mtrdevice/nodeid.md)
 ### Instance Methods
 - [func downloadLog(of: MTRDiagnosticLogType, timeout: TimeInterval, queue: dispatch_queue_t, completion: (URL?, (any Error)?) -> Void)](./mtrdevice/downloadlog%28of,timeout,queue,completion%29.md)
 - [func invokeCommand(withEndpointID: NSNumber, clusterID: NSNumber, commandID: NSNumber, commandFields: [String : Any]?, expectedValues: [[String : Any]]?, expectedValueInterval: NSNumber?, queue: dispatch_queue_t, completion: ([[String : Any]]?, (any Error)?) -> Void)](./mtrdevice/invokecommand%28withendpointid,clusterid,commandid,commandfields,expectedvalues,expectedvalueinterval,queue,completion%29.md)

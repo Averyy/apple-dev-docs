@@ -30,10 +30,20 @@ class UIHoverStyle
   Creates a hover style with the provided effect and shape.
 - [convenience init(shape: UIShape?)](./uihoverstyle/init%28shape%29.md)
   Creates a hover style with the provided shape and an automatic hover effect.
+- [+ styleWithShape:](./uihoverstyle/stylewithshape_.md)
+  Creates a hover style with the provided shape.
+- [+ styleWithEffect:shape:](./uihoverstyle/stylewitheffect_shape_.md)
+  Creates a hover style with the provided effect and shape.
+- [+ automaticStyle](./uihoverstyle/automaticstyle.md)
+  Creates an automatic hover style.
 ### Specifying a hover shape
 - [var shape: UIShape?](./uihoverstyle/shape-21npk.md)
   The shape to use for the hover effect.
 - [struct UIShape](./uishape-swift.struct.md)
+  An abstract representation of a shape.
+- [shape](./uihoverstyle/shape-55cmq.md)
+  The shape to use for the hover effect.
+- [UIShape](./uishape-c.class.md)
   An abstract representation of a shape.
 ### Specifying a hover effect
 - [var effect: any UIHoverEffect](./uihoverstyle/effect-4vdoj.md)
@@ -45,6 +55,16 @@ class UIHoverStyle
 - [struct UIHoverLiftEffect](./uihoverlifteffect-swift.struct.md)
   An effect that can visually lift the view on hover where appropriate.
 - [protocol UIHoverEffect](./uihovereffect-40091.md)
+  A hover effect that can apply to a view through a hover style.
+- [effect](./uihoverstyle/effect-12r83.md)
+  The effect to apply to the view with this style.
+- [UIHoverAutomaticEffect](./uihoverautomaticeffect-c.class.md)
+  A system-default hover effect that automatically selects the appropriate effect based on the view to which it applies.
+- [UIHoverHighlightEffect](./uihoverhighlighteffect-c.class.md)
+  An effect that applies a highlight to the view on hover.
+- [UIHoverLiftEffect](./uihoverlifteffect-c.class.md)
+  An effect that can visually lift the view on hover where appropriate.
+- [UIHoverEffect](./uihovereffect-ukid.md)
   A hover effect that can apply to a view through a hover style.
 ### Managing the state of the hover effect
 - [var isEnabled: Bool](./uihoverstyle/isenabled.md)

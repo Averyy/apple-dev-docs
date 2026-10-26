@@ -210,6 +210,11 @@
       "file_path": "documentation/CarKey/carkeyremotecontrolsessiondelegate/remotecontrolsession(_,didcreatekey,forvehicle).md",
       "hash": "585804389f2bb01aa01f211f8cba7d78897c058823a7cd51db041351e67dfe2b"
     },
+    "https://developer.apple.com/documentation/carkey/carkeyremotecontrolsessiondelegate/remotecontrolsession(_:didcreatekey:forvehicle:)-1djol": {
+      "etag": "\"1e7b-65d55e92e26e3-df\"",
+      "file_path": "documentation/CarKey/carkeyremotecontrolsessiondelegate/remotecontrolsession(_,didcreatekey,forvehicle)-1djol.md",
+      "hash": "12c6b538066a5242af2c811c611d911cac5b5a907a4306dace37f746fb8f77ab"
+    },
     "https://developer.apple.com/documentation/carkey/carkeyremotecontrolsessiondelegate/remotecontrolsession(_:didinvalidatewitherror:)": {
       "etag": "\"1f88-65d55e92e26e3-df\"",
       "file_path": "documentation/CarKey/carkeyremotecontrolsessiondelegate/remotecontrolsession(_,didinvalidatewitherror).md",
@@ -665,6 +670,11 @@
       "file_path": "documentation/CarKey/carkeyremotecontrolsessiondelegate.md",
       "hash": "225c494a051aab89963bc4b6a499e83312dae808da7362d49de87760251494ba"
     },
+    "https://developer.apple.com/tutorials/data/documentation/carkey/carkeyremotecontrolsessiondelegate/remotecontrolsession(_:didcreatekey:forvehicle:)-1djol.json": {
+      "etag": "\"1e7b-65d55e92e26e3-df\"",
+      "file_path": "documentation/CarKey/carkeyremotecontrolsessiondelegate/remotecontrolsession(_,didcreatekey,forvehicle)-1djol.md",
+      "hash": "12c6b538066a5242af2c811c611d911cac5b5a907a4306dace37f746fb8f77ab"
+    },
     "https://developer.apple.com/tutorials/data/documentation/carkey/carkeyremotecontrolsessiondelegate/remotecontrolsession(_:didcreatekey:forvehicle:).json": {
       "etag": "\"24a7-65d55e93168c8-df\"",
       "file_path": "documentation/CarKey/carkeyremotecontrolsessiondelegate/remotecontrolsession(_,didcreatekey,forvehicle).md",
@@ -923,8 +933,8 @@
   },
   "metadata": {
     "render": {
-      "version": 1
+      "version": 2
     },
-    "total_pages": 184
+    "total_pages": 186
   }
 }

@@ -35,6 +35,7 @@ NSString *MLCLossTypeDebugDescription(MLCLossType lossType);
 - [MLCLossType.meanSquaredError](./meansquarederror.md)
 - [MLCLossType.sigmoidCrossEntropy](./sigmoidcrossentropy.md)
 - [MLCLossType.softmaxCrossEntropy](./softmaxcrossentropy.md)
+- [MLCLossTypeCount](./mlclosstypecount.md)
 
 
 ---

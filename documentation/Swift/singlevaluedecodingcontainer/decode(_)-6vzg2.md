@@ -1,0 +1,43 @@
+# decode(_:)
+
+**Framework**: Swift  
+**Kind**: method  
+**Role**: Instance Method
+
+Decodes a single value of the given type.
+
+**Availability**:
+- iOS 18.0+
+- iPadOS 18.0+
+- Mac Catalyst 18.0+
+- macOS 15.0+
+- tvOS 18.0+
+- visionOS 2.0+
+- watchOS 11.0+
+
+## Declaration
+
+```swift
+func decode(_ type: UInt128.Type) throws -> UInt128
+```
+
+Available when `Self` conforms to `UnkeyedDecodingContainer`.
+
+#### Return Value
+
+A value of the requested type.
+
+#### Discussion
+
+> **Throws**: `DecodingError.typeMismatch` if the encountered encoded value cannot be converted to the requested type.
+
+> **Throws**: `DecodingError.valueNotFound` if the encountered encoded value is null.
+
+## Parameters
+
+- `type`: The type to decode as.
+
+
+---
+
+*[View on Apple Developer](https://developer.apple.com/documentation/swift/singlevaluedecodingcontainer/decode(_:)-6vzg2)*

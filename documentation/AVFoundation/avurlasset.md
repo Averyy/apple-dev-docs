@@ -53,6 +53,8 @@ let asset = AVURLAsset(url: url, options: options)
   Creates an asset that models the media resource at the specified URL.
 - [Initialization options](./avurlasset-initialization-options.md)
   Specify options to configure the initialization of a media asset.
+- [+ URLAssetWithURL:options:](./avurlasset/urlassetwithurl_options_.md)
+  Returns an asset that models the media resource found at the specified URL.
 ### Loading tracks
 - [static var tracks: AVAsyncProperty<Root, [AVAssetTrack]>](./avpartialasyncproperty/tracks-44ptx.md)
   The tracks an asset contains.
@@ -95,6 +97,8 @@ let asset = AVURLAsset(url: url, options: options)
   The properties of the media extension format reader that decodes the asset.
 - [class AVMediaExtensionProperties](./avmediaextensionproperties.md)
   An object that describes a Media Extension.
+- [sidecarURL](./avurlasset/sidecarurl.md)
+  The sidecar URL used by the MediaExtension.
 ### Initializers
 - [init(URL: URL, options: [String : Any]?)](./avurlasset/init%28url,options%29-1t08s.md)
 - [convenience init(URL: URL, options: [String : Any]?)](./avurlasset/init%28url,options%29-4zhx7.md)

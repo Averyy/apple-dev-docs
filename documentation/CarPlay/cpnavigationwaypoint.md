@@ -44,6 +44,17 @@ class CPNavigationWaypoint
   nameVariants is an array of @c NSString representing variants of the waypoint’s display name, arranged from most to least preferred. The variant strings should be provided as localized, displayable content.
 - [var timeZone: TimeZone?](./cpnavigationwaypoint/timezone.md)
   The timezone for the waypoint.
+- [entryPoints](./cpnavigationwaypoint/entrypoints-6kbqa.md)
+  entryPoints is an optional array of CPLocationCoordinate3D entry points. These represent alternative access points to reach the waypoint.
+- [entryPointsCount](./cpnavigationwaypoint/entrypointscount.md)
+  entryPointsCount is the number of entry points available in the entryPoints array.
+### Instance Methods
+- [- initWithCenterPoint:locationThreshold:name:address:entryPoints:entryPointsCount:timeZone:](./cpnavigationwaypoint/initwithcenterpoint_locationthreshold_name_address_entrypoints_entrypointscount_timezone_.md)
+  Initialize a CPNavigationWaypoint object with a center point, location threshold, optional name and address, optional entry points, and a timezone.
+- [- initWithCenterPoint:locationThreshold:nameVariants:addressVariants:entryPoints:entryPointsCount:timeZone:](./cpnavigationwaypoint/initwithcenterpoint_locationthreshold_namevariants_addressvariants_entrypoints_entrypointscount_timezone_.md)
+  Initialize a CPNavigationWaypoint object with a center point, location threshold, optional name and name variants, optional long address and short address, optional entry points, and a timezone.
+- [- initWithMapItem:locationThreshold:entryPoints:entryPointsCount:](./cpnavigationwaypoint/initwithmapitem_locationthreshold_entrypoints_entrypointscount_.md)
+  Initialize a CPNavigationWaypoint object from an MKMapItem with a location threshold and optional entry points.
 
 ## Relationships
 

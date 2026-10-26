@@ -41,6 +41,8 @@ A payment object identifies a product and the quantity of those items the user w
 ### Creating Payments
 - [convenience init(product: SKProduct)](./skpayment/init%28product%29.md)
   Returns a new payment for the specified product.
+- [+ paymentWithProductIdentifier:](./skpayment/paymentwithproductidentifier_.md)
+  Returns a new payment with the specified product identifier.
 ### Getting Payment Details
 - [var productIdentifier: String](./skpayment/productidentifier.md)
   A string used to identify a product that can be purchased from within your app.

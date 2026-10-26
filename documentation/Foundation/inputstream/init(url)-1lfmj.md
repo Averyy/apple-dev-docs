@@ -44,6 +44,10 @@ The stream must be opened before it can be used.
   Initializes and returns an `NSInputStream` object for reading from a given `NSData` object.
 - [convenience init?(fileAtPath: String)](./init%28fileatpath%29.md)
   Initializes and returns an `NSInputStream` object that reads data from the file at a given path.
+- [+ inputStreamWithData:](../nsinputstream/inputstreamwithdata_.md)
+  Creates and returns an initialized `NSInputStream` object for reading from a given `NSData` object.
+- [+ inputStreamWithFileAtPath:](../nsinputstream/inputstreamwithfileatpath_.md)
+  Creates and returns an initialized `NSInputStream` object that reads data from the file at a given path.
 
 
 ---

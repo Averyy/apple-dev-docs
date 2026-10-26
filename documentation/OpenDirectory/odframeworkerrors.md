@@ -137,6 +137,8 @@ enum ODFrameworkErrors : unsigned int;
 - [var kODErrorCredentialsAccountLocked: ODFrameworkErrors](./koderrorcredentialsaccountlocked.md)
 - [var kODErrorCredentialsAccountTemporarilyLocked: ODFrameworkErrors](./koderrorcredentialsaccounttemporarilylocked.md)
 - [var kODErrorCredentialsContactPrimary: ODFrameworkErrors](./koderrorcredentialscontactprimary.md)
+- [kODErrorCredentialsContactMaster](./odframeworkerrors/koderrorcredentialscontactmaster.md)
+  The authentication server contacted is not the primary server, and the requested operation requires the primary server.
 ### Initializers
 - [init(UInt32)](./odframeworkerrors/init%28_%29.md)
 - [init(rawValue: UInt32)](./odframeworkerrors/init%28rawvalue%29.md)

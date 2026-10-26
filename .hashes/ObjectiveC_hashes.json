@@ -35,10 +35,25 @@
       "file_path": "documentation/ObjectiveC/binding-dictionary-keys.md",
       "hash": "8a9e231282eb780ae1e2fe63ceb0698719c6e8cc2a6232ce2abe4451e545df50"
     },
+    "https://developer.apple.com/documentation/objectivec/bool": {
+      "etag": "\"1425-65d55e95a22da-df\"",
+      "file_path": "documentation/ObjectiveC/bool.md",
+      "hash": "162d46e449d8d631a814e27031f97a043cbea1f8c29f6ca6783a657a45427282"
+    },
+    "https://developer.apple.com/documentation/objectivec/boolean-values": {
+      "etag": "\"15ff-65902851d33a9-df\"",
+      "file_path": "documentation/ObjectiveC/boolean-values.md",
+      "hash": "0c049b753637da2329f60c07242757459eefb6cf6e33feee2eb00b53b78d5f51"
+    },
     "https://developer.apple.com/documentation/objectivec/category": {
       "etag": "\"3930-65d55e9602ae6-df\"",
       "file_path": "documentation/ObjectiveC/category.md",
       "hash": "7efe3522373ed91d4c55a71eafaf13a925e055ba1927effa9c341f87bac9b6ee"
+    },
+    "https://developer.apple.com/documentation/objectivec/class": {
+      "etag": "\"2dfd-65d55e95e964e-df\"",
+      "file_path": "documentation/ObjectiveC/class.md",
+      "hash": "4f7d5d628d58fcf794009ff44736bda4e2a6676f3b52428a328e70663a2e6ef5"
     },
     "https://developer.apple.com/documentation/objectivec/class_addivar(_:_:_:_:_:)": {
       "etag": "\"ab5d-65d55e96227ea-df\"",
@@ -89,6 +104,11 @@
       "etag": "\"2db1-65d55e95c2ae2-df\"",
       "file_path": "documentation/ObjectiveC/class_createinstance(_,_).md",
       "hash": "f2ad903756405c715af3f68ed519c730e2077a996e4a2f8b32a70ecd5965c0c1"
+    },
+    "https://developer.apple.com/documentation/objectivec/class_createinstancefromzone": {
+      "etag": "\"3246-65d55e95c2ae2-df\"",
+      "file_path": "documentation/ObjectiveC/class_createinstancefromzone.md",
+      "hash": "42e0f212552fa2e269e966172bc84325c3fd16b811f38153123255e0356ed989"
     },
     "https://developer.apple.com/documentation/objectivec/class_getclassmethod(_:_:)": {
       "etag": "\"963e-65d55e95e964e-df\"",
@@ -215,6 +235,16 @@
       "file_path": "documentation/ObjectiveC/deprecated-symbols.md",
       "hash": "4d97f3ed44f520c3d608db14c79159123fd47f35ef3ba6bdcefc8a0e6bfd8e1a"
     },
+    "https://developer.apple.com/documentation/objectivec/dispatch-function-prototypes": {
+      "etag": "\"18ec-6590285170389-df\"",
+      "file_path": "documentation/ObjectiveC/dispatch-function-prototypes.md",
+      "hash": "e9cf66aa8d94e79d50c8e078bbc9a7cfe38b9aa11bec85662ed92332a91b7fde"
+    },
+    "https://developer.apple.com/documentation/objectivec/id": {
+      "etag": "\"1d9b-65d55e96227ea-df\"",
+      "file_path": "documentation/ObjectiveC/id.md",
+      "hash": "797265f13173250f4fecdae11fc46fe0d2011ca2b8484f6924cc8b2d7b73af28"
+    },
     "https://developer.apple.com/documentation/objectivec/imp": {
       "etag": "\"3b39-65d55e95e964e-df\"",
       "file_path": "documentation/ObjectiveC/imp.md",
@@ -259,6 +289,11 @@
       "etag": "\"236d-65902851ae654-df\"",
       "file_path": "documentation/ObjectiveC/key-value-coding-exception-names.md",
       "hash": "8790206576626f73111fc94f9b2c592af020a02b6d9d8cd4dcef89ff7ba464dd"
+    },
+    "https://developer.apple.com/documentation/objectivec/local-variable-storage-duration": {
+      "etag": "\"15c1-659028526f9c8-df\"",
+      "file_path": "documentation/ObjectiveC/local-variable-storage-duration.md",
+      "hash": "a592498d1026b12ecd92142cdbedc256ab1fdcf5865f8f5ee3532f02cedd23c7"
     },
     "https://developer.apple.com/documentation/objectivec/method": {
       "etag": "\"3ccf-65d55e963ce9f-df\"",
@@ -315,10 +350,40 @@
       "file_path": "documentation/ObjectiveC/method_gettypeencoding(_).md",
       "hash": "7d5dc9e4f9978fba97eba0ea9c1e4aca7eabc03954dd73c716d0c26288fe1002"
     },
+    "https://developer.apple.com/documentation/objectivec/method_invoke": {
+      "etag": "\"5213-65d55e95e964e-df\"",
+      "file_path": "documentation/ObjectiveC/method_invoke.md",
+      "hash": "bbd5da0b4b0385abec108b129197fa6cb58db08b78f0fc26049a1946be52b067"
+    },
+    "https://developer.apple.com/documentation/objectivec/method_invoke_stret": {
+      "etag": "\"5085-65d55e96227ea-df\"",
+      "file_path": "documentation/ObjectiveC/method_invoke_stret.md",
+      "hash": "e8b8ddfae76482f167951aecedbb0657e2ac435b200998133607e9e83a4485df"
+    },
     "https://developer.apple.com/documentation/objectivec/method_setimplementation(_:_:)": {
       "etag": "\"65ea-65d55e96227ea-df\"",
       "file_path": "documentation/ObjectiveC/method_setimplementation(_,_).md",
       "hash": "53950cd84d5a112b40d8ca42c298ecef4888ce663b4bdf1e18c629fa0ef72cee"
+    },
+    "https://developer.apple.com/documentation/objectivec/nil-227m0": {
+      "etag": "\"c92-65d55e940c897-df\"",
+      "file_path": "documentation/ObjectiveC/nil-227m0.md",
+      "hash": "aa67a8806a300638db2df654ba1dc85f4e0ba9d5f181d311772fbf4ec8bcc591"
+    },
+    "https://developer.apple.com/documentation/objectivec/nil-565ns": {
+      "etag": "\"c10-65d55e963ce9f-df\"",
+      "file_path": "documentation/ObjectiveC/nil-565ns.md",
+      "hash": "965ca84d5b0f2863044d79b00e28964d9eb030a9a31f88a2c4dc5823d701955b"
+    },
+    "https://developer.apple.com/documentation/objectivec/no": {
+      "etag": "\"10ea-65d55e963ce9f-df\"",
+      "file_path": "documentation/ObjectiveC/no.md",
+      "hash": "2dba48be180ae18571dc46d3b07c46bb3da689e35acf89bedfbc5a1e649cb60d"
+    },
+    "https://developer.apple.com/documentation/objectivec/ns_designated_initializer": {
+      "etag": "\"2825-65d55e95a22da-df\"",
+      "file_path": "documentation/ObjectiveC/ns_designated_initializer.md",
+      "hash": "6a1ccf9fc1b10ae96a4817e21da36fee6a001a74159c65645508b2e316fce0f4"
     },
     "https://developer.apple.com/documentation/objectivec/ns_enforce_nsobject_designated_initializer": {
       "etag": "\"4a16-65d55e95c2ae2-df\"",
@@ -330,10 +395,20 @@
       "file_path": "documentation/ObjectiveC/nsinteger.md",
       "hash": "ebf97e41d462c1c9e15ff4373ce72bfc263e7806855a0d3201e0846cd714dc88"
     },
+    "https://developer.apple.com/documentation/objectivec/nsinteger_defined": {
+      "etag": "\"27f5-65d55e95c2ae2-df\"",
+      "file_path": "documentation/ObjectiveC/nsinteger_defined.md",
+      "hash": "efdf1f81d0ecc82bf41d02e3f7a70a1fb1e66aa899db1152c7fb8818b1340be2"
+    },
     "https://developer.apple.com/documentation/objectivec/nsintegermax": {
       "etag": "\"4932-65d55e95e964e-df\"",
       "file_path": "documentation/ObjectiveC/nsintegermax.md",
       "hash": "b393fe334dfc9615540c7d6bba9748908c34deea1f96e0a1df844417bd327da6"
+    },
+    "https://developer.apple.com/documentation/objectivec/nsintegermin": {
+      "etag": "\"fd0-65d55e95a22da-df\"",
+      "file_path": "documentation/ObjectiveC/nsintegermin.md",
+      "hash": "d02ab52900a61010c73b2d4315a98629450b00274cd87c3ff00b0937e6a07a5e"
     },
     "https://developer.apple.com/documentation/objectivec/nskeyvaluebindingcreation": {
       "etag": "\"6bba-65902852432cd-df\"",
@@ -349,6 +424,36 @@
       "etag": "\"9aeb-65902851ae654-df\"",
       "file_path": "documentation/ObjectiveC/nskeyvalueobserving.md",
       "hash": "cf1e0fbe80fe117809ee4328d178116833c5d2bc2c384cc1c6b1551c75d9bf93"
+    },
+    "https://developer.apple.com/documentation/objectivec/nsobject-c.protocol/autorelease": {
+      "etag": "\"23ca-65d55e95a22da-df\"",
+      "file_path": "documentation/ObjectiveC/nsobject-c.protocol/autorelease.md",
+      "hash": "1968eb7cffee22cc1f0b257f3dd798ad017855be3b48da1b8f51fc3ec5d41d4b"
+    },
+    "https://developer.apple.com/documentation/objectivec/nsobject-c.protocol/class": {
+      "etag": "\"1da1-65d55e95a22da-df\"",
+      "file_path": "documentation/ObjectiveC/nsobject-c.protocol/class.md",
+      "hash": "443385e368ceea06bf7ce3541d554c74162839e96c46f3d471824282e1327283"
+    },
+    "https://developer.apple.com/documentation/objectivec/nsobject-c.protocol/release": {
+      "etag": "\"2749-65d55e95a22da-df\"",
+      "file_path": "documentation/ObjectiveC/nsobject-c.protocol/release.md",
+      "hash": "9e7ea561c15e383476f7dfe09089675611f673fc1172f02944646bdd6357400a"
+    },
+    "https://developer.apple.com/documentation/objectivec/nsobject-c.protocol/retain": {
+      "etag": "\"2a66-65d55e95a22da-df\"",
+      "file_path": "documentation/ObjectiveC/nsobject-c.protocol/retain.md",
+      "hash": "79283b10b4426f04d65479874ca43932a7f340f03b69f0b8018a4c8a33f43857"
+    },
+    "https://developer.apple.com/documentation/objectivec/nsobject-c.protocol/retaincount": {
+      "etag": "\"28f9-65d55e95a22da-df\"",
+      "file_path": "documentation/ObjectiveC/nsobject-c.protocol/retaincount.md",
+      "hash": "dbbe093101e4e5ff81c2a1c1d15870b4dcabd66c981900c15a4684ee101955f5"
+    },
+    "https://developer.apple.com/documentation/objectivec/nsobject-c.protocol/zone": {
+      "etag": "\"1b41-65d55e95a22da-df\"",
+      "file_path": "documentation/ObjectiveC/nsobject-c.protocol/zone.md",
+      "hash": "48ae8160e2717ec9be366eda332f6339f86d5435e11093222d9a5e106adf0609"
     },
     "https://developer.apple.com/documentation/objectivec/nsobject-swift.class": {
       "etag": "\"77071-65d55e95c2ae2-df\"",
@@ -875,6 +980,21 @@
       "file_path": "documentation/ObjectiveC/nsobject-swift.class/addobserver(_,forkeypath,options,context).md",
       "hash": "0c2db34d4359730cec4e58f85b2fe2733e0ed367b2663d000fe1bc8660a0f16c"
     },
+    "https://developer.apple.com/documentation/objectivec/nsobject-swift.class/alloc": {
+      "etag": "\"332b-65d55e94e4f43-df\"",
+      "file_path": "documentation/ObjectiveC/nsobject-swift.class/alloc.md",
+      "hash": "38778f24fe9c388e4c821161d517cce6942a0a1898f38663a298de8c71bb84c3"
+    },
+    "https://developer.apple.com/documentation/objectivec/nsobject-swift.class/allocwithzone:": {
+      "etag": "\"3416-65d55e94cb1d4-df\"",
+      "file_path": "documentation/ObjectiveC/nsobject-swift.class/allocwithzone_.md",
+      "hash": "14ea71fbd9eedc0975a31128d92ade817398f563e5cfa3138f5a0af63994ac81"
+    },
+    "https://developer.apple.com/documentation/objectivec/nsobject-swift.class/application:delegatehandleskey:": {
+      "etag": "\"4608-65d55e952e551-df\"",
+      "file_path": "documentation/ObjectiveC/nsobject-swift.class/application_delegatehandleskey_.md",
+      "hash": "f5a2d31573a3d1b6305281fd5eb5950b2b0524ee5085593dcdd3568c6dbd95db"
+    },
     "https://developer.apple.com/documentation/objectivec/nsobject-swift.class/attemptrecovery(fromerror:optionindex:)": {
       "etag": "\"3ebc-65d55e954715d-df\"",
       "file_path": "documentation/ObjectiveC/nsobject-swift.class/attemptrecovery(fromerror,optionindex).md",
@@ -884,6 +1004,16 @@
       "etag": "\"50e3-65d55e94cb1d4-df\"",
       "file_path": "documentation/ObjectiveC/nsobject-swift.class/attemptrecovery(fromerror,optionindex,delegate,didrecoverselector,contextinfo).md",
       "hash": "ec1c5eb2868506f19a44f5677795e11fcc7d0d0443ed025b7ccf7db505c21e9e"
+    },
+    "https://developer.apple.com/documentation/objectivec/nsobject-swift.class/attributedstringforidentitypropertieswithnames:inrecord:comparisonrecords:firstlineattributes:secondlineattributes:": {
+      "etag": "\"24a1-65d55e94cb1d4-df\"",
+      "file_path": "documentation/ObjectiveC/nsobject-swift.class/attributedstringforidentitypropertieswithnames_inrecord_comparisonrecords_firstlineattributes_secondlineattributes_.md",
+      "hash": "0f8a2accb87846df5bff62fd0d9b1c593483b60c86be122f227148ace8d9bb71"
+    },
+    "https://developer.apple.com/documentation/objectivec/nsobject-swift.class/attributedstringforpropertieswithnames:inrecord:comparisonrecords:defaultattributes:": {
+      "etag": "\"21cb-65d55e952e551-df\"",
+      "file_path": "documentation/ObjectiveC/nsobject-swift.class/attributedstringforpropertieswithnames_inrecord_comparisonrecords_defaultattributes_.md",
+      "hash": "4f8f6aaf59bebee1d6f6d621773f74e75efb7faac04df4e597a29cc1972b2e79"
     },
     "https://developer.apple.com/documentation/objectivec/nsobject-swift.class/attributekeys": {
       "etag": "\"3c01-65d55e952e551-df\"",
@@ -995,6 +1125,11 @@
       "file_path": "documentation/ObjectiveC/nsobject-swift.class/browseraccessibilityimagedata(_).md",
       "hash": "77a294a4b831f3319e1e65dab4022ffaed1a1f76e925be8c72e52b92b7a00de3"
     },
+    "https://developer.apple.com/documentation/objectivec/nsobject-swift.class/browseraccessibilityimagedatasize-c.method": {
+      "etag": "\"1700-65d55e942e988-df\"",
+      "file_path": "documentation/ObjectiveC/nsobject-swift.class/browseraccessibilityimagedatasize-c.method.md",
+      "hash": "b14fd9b2ff0cf568acc5d14b3b9aedeb2986c7bb16461accb3a4d2705be0c3be"
+    },
     "https://developer.apple.com/documentation/objectivec/nsobject-swift.class/browseraccessibilityimagedatasize-swift.property": {
       "etag": "\"1816-65d55e954715d-df\"",
       "file_path": "documentation/ObjectiveC/nsobject-swift.class/browseraccessibilityimagedatasize-swift.property.md",
@@ -1085,10 +1220,25 @@
       "file_path": "documentation/ObjectiveC/nsobject-swift.class/certificatepanelshowhelp(_).md",
       "hash": "837364ea84965fd154d0a3f553ea21a8b98439f108fa265a962c64bc84d32893"
     },
+    "https://developer.apple.com/documentation/objectivec/nsobject-swift.class/changecolor:": {
+      "etag": "\"1797-65d55e954715d-df\"",
+      "file_path": "documentation/ObjectiveC/nsobject-swift.class/changecolor_.md",
+      "hash": "3a0857e84e4f9664f567da0e32b07f85accd12664db21705318f14de31fa3997"
+    },
+    "https://developer.apple.com/documentation/objectivec/nsobject-swift.class/changefont:": {
+      "etag": "\"6096-65d55e94e4f43-df\"",
+      "file_path": "documentation/ObjectiveC/nsobject-swift.class/changefont_.md",
+      "hash": "a169920c2d6a71f5999cdf416742dc59edb9b05559786aecb51af2d9db2f60d2"
+    },
     "https://developer.apple.com/documentation/objectivec/nsobject-swift.class/chooseidentitypanelshowhelp(_:)": {
       "etag": "\"353b-65d55e942e988-df\"",
       "file_path": "documentation/ObjectiveC/nsobject-swift.class/chooseidentitypanelshowhelp(_).md",
       "hash": "9ac3cccdd9fd2ca8231f35f1918db2cc0363b739d64c582c0693d0f9584b50b1"
+    },
+    "https://developer.apple.com/documentation/objectivec/nsobject-swift.class/class": {
+      "etag": "\"355e-65d55e94e4f43-df\"",
+      "file_path": "documentation/ObjectiveC/nsobject-swift.class/class.md",
+      "hash": "4cc5ba42c4dada76b5e1aaa770ba4792657cc48a13e19e1e04b2aec262bf0151"
     },
     "https://developer.apple.com/documentation/objectivec/nsobject-swift.class/classcode": {
       "etag": "\"426a-65d55e952e551-df\"",
@@ -1125,6 +1275,11 @@
       "file_path": "documentation/ObjectiveC/nsobject-swift.class/classforkeyedunarchiver().md",
       "hash": "4030b4fb7e5e0bc79f772b8b39c0d6e6501bb800ef3d929aa5f38ef08ee784d0"
     },
+    "https://developer.apple.com/documentation/objectivec/nsobject-swift.class/classforportcoder": {
+      "etag": "\"5612-65d55e94cb1d4-df\"",
+      "file_path": "documentation/ObjectiveC/nsobject-swift.class/classforportcoder.md",
+      "hash": "d85699d8e2b4dc4d0e9a239c1974ecf133da9a77e55013eb439750bf1baba1b0"
+    },
     "https://developer.apple.com/documentation/objectivec/nsobject-swift.class/classname": {
       "etag": "\"44a9-65d55e950be40-df\"",
       "file_path": "documentation/ObjectiveC/nsobject-swift.class/classname.md",
@@ -1139,6 +1294,21 @@
       "etag": "\"1e88-65d55e950be40-df\"",
       "file_path": "documentation/ObjectiveC/nsobject-swift.class/commitcomposition(_).md",
       "hash": "691f2722f37024395246d700536b743f3f55d6052d028ee997fb9b36ac31d269"
+    },
+    "https://developer.apple.com/documentation/objectivec/nsobject-swift.class/commitediting": {
+      "etag": "\"1c4c-65d55e942e988-df\"",
+      "file_path": "documentation/ObjectiveC/nsobject-swift.class/commitediting.md",
+      "hash": "a4cbcbb3ffb22b3382f5511b2e423229e91f4acf2688f952fa2aaa9f3d1fc04e"
+    },
+    "https://developer.apple.com/documentation/objectivec/nsobject-swift.class/commiteditingandreturnerror:": {
+      "etag": "\"2848-65d55e952e551-df\"",
+      "file_path": "documentation/ObjectiveC/nsobject-swift.class/commiteditingandreturnerror_.md",
+      "hash": "0dd6a0cea0103ecc3ac5c1e8690139c893c67c1ac4d82402d51f39a583ec18ed"
+    },
+    "https://developer.apple.com/documentation/objectivec/nsobject-swift.class/commiteditingwithdelegate:didcommitselector:contextinfo:": {
+      "etag": "\"1c3d-65d55e94e4f43-df\"",
+      "file_path": "documentation/ObjectiveC/nsobject-swift.class/commiteditingwithdelegate_didcommitselector_contextinfo_.md",
+      "hash": "1781f638bb1b3f7ca44a930a457b8b3deb224c532b1397dfd5fc4574cb3c4fef"
     },
     "https://developer.apple.com/documentation/objectivec/nsobject-swift.class/composedstring(_:)": {
       "etag": "\"2219-65d55e94e4f43-df\"",
@@ -1175,6 +1345,21 @@
       "file_path": "documentation/ObjectiveC/nsobject-swift.class/conforms(to).md",
       "hash": "e909cc93262b396625ba1a2c9215a33b2b7d036c39aabce7b2a3e7071269b8a8"
     },
+    "https://developer.apple.com/documentation/objectivec/nsobject-swift.class/controltextdidbeginediting:": {
+      "etag": "\"25bf-65d55e94b12c7-df\"",
+      "file_path": "documentation/ObjectiveC/nsobject-swift.class/controltextdidbeginediting_.md",
+      "hash": "611ca638036c5695efb73b4b301a04ae49ae916a1281aea402380e43780851bb"
+    },
+    "https://developer.apple.com/documentation/objectivec/nsobject-swift.class/controltextdidchange:": {
+      "etag": "\"1fc1-65d55e942e988-df\"",
+      "file_path": "documentation/ObjectiveC/nsobject-swift.class/controltextdidchange_.md",
+      "hash": "027c45ff1fae9ff7af43d2fd80b4c24aae63f92e0bb1afceeee7bad4ab0656e1"
+    },
+    "https://developer.apple.com/documentation/objectivec/nsobject-swift.class/controltextdidendediting:": {
+      "etag": "\"2660-65d55e952e551-df\"",
+      "file_path": "documentation/ObjectiveC/nsobject-swift.class/controltextdidendediting_.md",
+      "hash": "5c24ab5c404421c091d1f062aafd5aa9108555aeefbedb7cd378e6286c29b065"
+    },
     "https://developer.apple.com/documentation/objectivec/nsobject-swift.class/copy()": {
       "etag": "\"46f2-65d55e94e4f43-df\"",
       "file_path": "documentation/ObjectiveC/nsobject-swift.class/copy().md",
@@ -1184,6 +1369,16 @@
       "etag": "\"6650-65d55e952e551-df\"",
       "file_path": "documentation/ObjectiveC/nsobject-swift.class/copyscriptingvalue(_,forkey,withproperties).md",
       "hash": "d9858dab5d156762319cc412a4a75d762550493d378e7f1bf19c12a9264b7161"
+    },
+    "https://developer.apple.com/documentation/objectivec/nsobject-swift.class/copywithzone:": {
+      "etag": "\"33b4-65d55e9463adc-df\"",
+      "file_path": "documentation/ObjectiveC/nsobject-swift.class/copywithzone_.md",
+      "hash": "a301a686d4c977e3c6cee39d43d2c4bd6179509f6c9b4992562382614d4abc6a"
+    },
+    "https://developer.apple.com/documentation/objectivec/nsobject-swift.class/dealloc": {
+      "etag": "\"36cf-65d55e94e4f43-df\"",
+      "file_path": "documentation/ObjectiveC/nsobject-swift.class/dealloc.md",
+      "hash": "e20c73fb66c75c88f0e24b520488ded1d98f22eea2eb45469a9c7d92806d5469"
     },
     "https://developer.apple.com/documentation/objectivec/nsobject-swift.class/debugdescription()": {
       "etag": "\"211d-65d55e9563c47-df\"",
@@ -1225,6 +1420,11 @@
       "file_path": "documentation/ObjectiveC/nsobject-swift.class/didcommand(by,client).md",
       "hash": "e753ddb746a6162f6535c3ead0a7da741d0c7401bf24440d3eb7eb0ca6e2ba87"
     },
+    "https://developer.apple.com/documentation/objectivec/nsobject-swift.class/discardediting": {
+      "etag": "\"16ea-65d55e952e551-df\"",
+      "file_path": "documentation/ObjectiveC/nsobject-swift.class/discardediting.md",
+      "hash": "f963a885021269a6ff2274045d67aa626308c553490dce67f4f17844a3434b2b"
+    },
     "https://developer.apple.com/documentation/objectivec/nsobject-swift.class/doescontain(_:)": {
       "etag": "\"33cb-65d55e950be40-df\"",
       "file_path": "documentation/ObjectiveC/nsobject-swift.class/doescontain(_).md",
@@ -1234,6 +1434,31 @@
       "etag": "\"4b15-65d55e94cb1d4-df\"",
       "file_path": "documentation/ObjectiveC/nsobject-swift.class/doesnotrecognizeselector(_).md",
       "hash": "d528b3705201a357e9de3b8feddc37149fbc0b570ca05a210516d4df72f6d7da"
+    },
+    "https://developer.apple.com/documentation/objectivec/nsobject-swift.class/draggedimage:beganat:": {
+      "etag": "\"1812-65d55e954715d-df\"",
+      "file_path": "documentation/ObjectiveC/nsobject-swift.class/draggedimage_beganat_.md",
+      "hash": "5066c9d1176b38c777143855f1ca9708d3b3ee3fab43306822591680288b0a9f"
+    },
+    "https://developer.apple.com/documentation/objectivec/nsobject-swift.class/draggedimage:endedat:deposited:": {
+      "etag": "\"1b25-65d55e94e4f43-df\"",
+      "file_path": "documentation/ObjectiveC/nsobject-swift.class/draggedimage_endedat_deposited_.md",
+      "hash": "a1f94b90af0f04a094de29fa10d6c5dc3c3b02b0a298c98f000bf02ea0f7caeb"
+    },
+    "https://developer.apple.com/documentation/objectivec/nsobject-swift.class/draggedimage:endedat:operation:": {
+      "etag": "\"1cf4-65d55e950be40-df\"",
+      "file_path": "documentation/ObjectiveC/nsobject-swift.class/draggedimage_endedat_operation_.md",
+      "hash": "a19dde6cff419f816249200c945c94540ebab634dd1b35293231f94c356c403b"
+    },
+    "https://developer.apple.com/documentation/objectivec/nsobject-swift.class/draggedimage:movedto:": {
+      "etag": "\"1812-65d55e94e4f43-df\"",
+      "file_path": "documentation/ObjectiveC/nsobject-swift.class/draggedimage_movedto_.md",
+      "hash": "f08098f974f1522fcc19a58ec130732008113e6fb5ef2f0910d2e8915cef7926"
+    },
+    "https://developer.apple.com/documentation/objectivec/nsobject-swift.class/draggingsourceoperationmaskforlocal:": {
+      "etag": "\"171e-65d55e94b12c7-df\"",
+      "file_path": "documentation/ObjectiveC/nsobject-swift.class/draggingsourceoperationmaskforlocal_.md",
+      "hash": "692b506a4c1fe31c4e03aab09db63e26f8d6ad37e07bea731ed726abb3d81123"
     },
     "https://developer.apple.com/documentation/objectivec/nsobject-swift.class/endpreviewpanelcontrol(_:)": {
       "etag": "\"1eef-65d55e9563c47-df\"",
@@ -1370,6 +1595,26 @@
       "file_path": "documentation/ObjectiveC/nsobject-swift.class/forwardingtarget(for).md",
       "hash": "b92b751ebc9d0576ab65ba1b72c00ef8fc66bbe9c615ddfc025e442e738706ca"
     },
+    "https://developer.apple.com/documentation/objectivec/nsobject-swift.class/forwardinvocation:": {
+      "etag": "\"3f9f-65d55e94cb1d4-df\"",
+      "file_path": "documentation/ObjectiveC/nsobject-swift.class/forwardinvocation_.md",
+      "hash": "6ef89547c7d30215093d2e46017f5b48db0dde7b6b519fb429930438b83ebc16"
+    },
+    "https://developer.apple.com/documentation/objectivec/nsobject-swift.class/getl2capchannelref": {
+      "etag": "\"13e8-65d55e94e4f43-df\"",
+      "file_path": "documentation/ObjectiveC/nsobject-swift.class/getl2capchannelref.md",
+      "hash": "500aa683df3a6edc77aede167738d0760f726aacf6a06afd04b7d4d966e02f09"
+    },
+    "https://developer.apple.com/documentation/objectivec/nsobject-swift.class/getopenglbuffercontext:pixelformat:": {
+      "etag": "\"164e-65d55e940c897-df\"",
+      "file_path": "documentation/ObjectiveC/nsobject-swift.class/getopenglbuffercontext_pixelformat_.md",
+      "hash": "81b99f4dba2fc05ff6986afe136558ba7ed7c990f193e5a6aecbf863276078dd"
+    },
+    "https://developer.apple.com/documentation/objectivec/nsobject-swift.class/getpixelbufferpixelformat:": {
+      "etag": "\"1505-65d55e94b12c7-df\"",
+      "file_path": "documentation/ObjectiveC/nsobject-swift.class/getpixelbufferpixelformat_.md",
+      "hash": "c814022e0b3020fe44724d8ce5882229f75cda74d027bce969dd71b099aa48d5"
+    },
     "https://developer.apple.com/documentation/objectivec/nsobject-swift.class/handle(_:client:)": {
       "etag": "\"2ff9-65d55e942e988-df\"",
       "file_path": "documentation/ObjectiveC/nsobject-swift.class/handle(_,client).md",
@@ -1404,6 +1649,11 @@
       "etag": "\"1455-65d55e950be40-df\"",
       "file_path": "documentation/ObjectiveC/nsobject-swift.class/hashvalue.md",
       "hash": "82959e5e7602098e67aac09f40fb89742c7724474d8157f9425a1effd204fc49"
+    },
+    "https://developer.apple.com/documentation/objectivec/nsobject-swift.class/ignoremodifierkeyswhiledragging": {
+      "etag": "\"12b8-65d55e9563c47-df\"",
+      "file_path": "documentation/ObjectiveC/nsobject-swift.class/ignoremodifierkeyswhiledragging.md",
+      "hash": "f56a9766b188d84e6cb327073468afd3b2cf40a21f3955263abe13887bb1d5de"
     },
     "https://developer.apple.com/documentation/objectivec/nsobject-swift.class/imagebrowser(_:backgroundwasrightclickedwith:)": {
       "etag": "\"2c5a-65d55e94e4f43-df\"",
@@ -1530,6 +1780,11 @@
       "file_path": "documentation/ObjectiveC/nsobject-swift.class/instancemethod(for).md",
       "hash": "ce1a297d443533306ff630b121abf74aa4e1de2e3e17bf0315845a8488481530"
     },
+    "https://developer.apple.com/documentation/objectivec/nsobject-swift.class/instancemethodsignatureforselector:": {
+      "etag": "\"2ed6-65d55e94e4f43-df\"",
+      "file_path": "documentation/ObjectiveC/nsobject-swift.class/instancemethodsignatureforselector_.md",
+      "hash": "a213a06cc95288a9dedd4e78cb51bd0c61b2b815cc8ede2a6ee8e3f43df6735f"
+    },
     "https://developer.apple.com/documentation/objectivec/nsobject-swift.class/instancesrespond(to:)": {
       "etag": "\"42bd-65d55e950be40-df\"",
       "file_path": "documentation/ObjectiveC/nsobject-swift.class/instancesrespond(to).md",
@@ -1549,6 +1804,11 @@
       "etag": "\"3770-65d55e952e551-df\"",
       "file_path": "documentation/ObjectiveC/nsobject-swift.class/invokeundefinedmethod(fromwebscript,witharguments).md",
       "hash": "a4bdd936bedc20ded7ad7d5d6f5540fd98f63118269d29cd9230a88e8fca340e"
+    },
+    "https://developer.apple.com/documentation/objectivec/nsobject-swift.class/isa": {
+      "etag": "\"1211-65d55e94e4f43-df\"",
+      "file_path": "documentation/ObjectiveC/nsobject-swift.class/isa.md",
+      "hash": "6a48cc3bfcde55cd63bd6f2c3c7b0316b4971bdef77029c703de6bf3c9fb5d67"
     },
     "https://developer.apple.com/documentation/objectivec/nsobject-swift.class/isaccessibilityelement": {
       "etag": "\"220d-65d55e952e551-df\"",
@@ -1655,6 +1915,11 @@
       "file_path": "documentation/ObjectiveC/nsobject-swift.class/keyvalueobservingpublisher/options.md",
       "hash": "6ddc5e95ff537d4460b2abf66b3d019a242c465fdc418dd8870252b2777f3879"
     },
+    "https://developer.apple.com/documentation/objectivec/nsobject-swift.class/layer:shouldinheritcontentsscale:fromwindow:": {
+      "etag": "\"2e16-65d55e954715d-df\"",
+      "file_path": "documentation/ObjectiveC/nsobject-swift.class/layer_shouldinheritcontentsscale_fromwindow_.md",
+      "hash": "e134b19ec8b71d270ca0ca2331d02d4f2b0fdbf42ee3da23ef55276e87dccb97"
+    },
     "https://developer.apple.com/documentation/objectivec/nsobject-swift.class/load()": {
       "etag": "\"2c6f-65d55e9463adc-df\"",
       "file_path": "documentation/ObjectiveC/nsobject-swift.class/load().md",
@@ -1664,6 +1929,11 @@
       "etag": "\"4960-65d55e954715d-df\"",
       "file_path": "documentation/ObjectiveC/nsobject-swift.class/method(for).md",
       "hash": "5a33b8d7db2b35ca1dfd3a29f65700bc6bb3ef4207cd02954cbe52eb2278cae9"
+    },
+    "https://developer.apple.com/documentation/objectivec/nsobject-swift.class/methodsignatureforselector:": {
+      "etag": "\"348b-65d55e94b12c7-df\"",
+      "file_path": "documentation/ObjectiveC/nsobject-swift.class/methodsignatureforselector_.md",
+      "hash": "e68a1b8c4fa58d6c6f156f8f4f43b7eb88b6f2525d548a6d0560725f14afc01b"
     },
     "https://developer.apple.com/documentation/objectivec/nsobject-swift.class/mutablearrayvalue(forkey:)": {
       "etag": "\"74b1-65d55e952e551-df\"",
@@ -1679,6 +1949,11 @@
       "etag": "\"456a-65d55e94cb1d4-df\"",
       "file_path": "documentation/ObjectiveC/nsobject-swift.class/mutablecopy().md",
       "hash": "968bee749f44bb9ee30bb430c273fe6c0c3a852ab7a229ea242ab732449826f0"
+    },
+    "https://developer.apple.com/documentation/objectivec/nsobject-swift.class/mutablecopywithzone:": {
+      "etag": "\"3448-65d55e94e4f43-df\"",
+      "file_path": "documentation/ObjectiveC/nsobject-swift.class/mutablecopywithzone_.md",
+      "hash": "209fe760afa202d21298808f4514382f9ffa156624dda06417dc63b4de2618fe"
     },
     "https://developer.apple.com/documentation/objectivec/nsobject-swift.class/mutableorderedsetvalue(forkey:)": {
       "etag": "\"7681-65d55e94b12c7-df\"",
@@ -1705,6 +1980,11 @@
       "file_path": "documentation/ObjectiveC/nsobject-swift.class/namesofpromisedfilesdropped(atdestination).md",
       "hash": "b11ee5a913f06caf68ef6eb8a4a8c7808bb042bb2fd1413644f648096676fa36"
     },
+    "https://developer.apple.com/documentation/objectivec/nsobject-swift.class/new": {
+      "etag": "\"3207-65d55e942e988-df\"",
+      "file_path": "documentation/ObjectiveC/nsobject-swift.class/new.md",
+      "hash": "5610af403d110517e8e1579dccccf04ddbef8eba3d50a45dfa83758590c27245"
+    },
     "https://developer.apple.com/documentation/objectivec/nsobject-swift.class/newscriptingobject(of:forvalueforkey:withcontentsvalue:properties:)": {
       "etag": "\"6be2-65d55e94e4f43-df\"",
       "file_path": "documentation/ObjectiveC/nsobject-swift.class/newscriptingobject(of,forvalueforkey,withcontentsvalue,properties).md",
@@ -1719,6 +1999,16 @@
       "etag": "\"2d91-65d55e954715d-df\"",
       "file_path": "documentation/ObjectiveC/nsobject-swift.class/numberofitems(inimagebrowser).md",
       "hash": "c4433c81450484d2244e34cb33d7569a210b630c9d107a8b1fa0243eb82edd89"
+    },
+    "https://developer.apple.com/documentation/objectivec/nsobject-swift.class/objectdidbeginediting:": {
+      "etag": "\"1950-65d55e9563c47-df\"",
+      "file_path": "documentation/ObjectiveC/nsobject-swift.class/objectdidbeginediting_.md",
+      "hash": "c1aa2d1a61a3d9c136747f73279b283992a61778dbc2782d2e957fa326b1dbea"
+    },
+    "https://developer.apple.com/documentation/objectivec/nsobject-swift.class/objectdidendediting:": {
+      "etag": "\"164e-65d55e954715d-df\"",
+      "file_path": "documentation/ObjectiveC/nsobject-swift.class/objectdidendediting_.md",
+      "hash": "9d070b479805c0d8f7e1bf5df7633e563c729053c162db8f69886b02f1da7c64"
     },
     "https://developer.apple.com/documentation/objectivec/nsobject-swift.class/objectforwebscript": {
       "etag": "\"1c5e-65d55e952e551-df\"",
@@ -1749,6 +2039,36 @@
       "etag": "\"25d0-65d55e94b12c7-df\"",
       "file_path": "documentation/ObjectiveC/nsobject-swift.class/originalstring(_).md",
       "hash": "f401b9b1dbb434735ce13b4d91ca9d7e433b0fb46bfc1b45e1116d9a1e156c2f"
+    },
+    "https://developer.apple.com/documentation/objectivec/nsobject-swift.class/panel:comparefilename:with:casesensitive:": {
+      "etag": "\"2d45-65d55e94b12c7-df\"",
+      "file_path": "documentation/ObjectiveC/nsobject-swift.class/panel_comparefilename_with_casesensitive_.md",
+      "hash": "a7af649553990ada44e82350b9c7c60964eb7449620fb1bd284812b8a5aab8b1"
+    },
+    "https://developer.apple.com/documentation/objectivec/nsobject-swift.class/panel:directorydidchange:": {
+      "etag": "\"245c-65d55e9463adc-df\"",
+      "file_path": "documentation/ObjectiveC/nsobject-swift.class/panel_directorydidchange_.md",
+      "hash": "749548b2b52977b9b911c02c97aa9d12daab8207b528e18fa43f725203f15aa6"
+    },
+    "https://developer.apple.com/documentation/objectivec/nsobject-swift.class/panel:isvalidfilename:": {
+      "etag": "\"2ceb-65d55e954715d-df\"",
+      "file_path": "documentation/ObjectiveC/nsobject-swift.class/panel_isvalidfilename_.md",
+      "hash": "9823ec814d4eeee7274f6af2e48c48ba6d1d1fde4d25e8c9c59cd27f4b4ba158"
+    },
+    "https://developer.apple.com/documentation/objectivec/nsobject-swift.class/panel:shouldshowfilename:": {
+      "etag": "\"2cf8-65d55e94cb1d4-df\"",
+      "file_path": "documentation/ObjectiveC/nsobject-swift.class/panel_shouldshowfilename_.md",
+      "hash": "e09087e7b2ef9f06a310f79ba63b7ed8293a11e1ad782bfceb93ee284d1bb99a"
+    },
+    "https://developer.apple.com/documentation/objectivec/nsobject-swift.class/pasteboard:providedatafortype:": {
+      "etag": "\"4aed-65d55e94b12c7-df\"",
+      "file_path": "documentation/ObjectiveC/nsobject-swift.class/pasteboard_providedatafortype_.md",
+      "hash": "028bb273cd1db38570e688a6a31730f916c47b1a2e802425dae3e300e60a974f"
+    },
+    "https://developer.apple.com/documentation/objectivec/nsobject-swift.class/pasteboardchangedowner:": {
+      "etag": "\"2758-65d55e952e551-df\"",
+      "file_path": "documentation/ObjectiveC/nsobject-swift.class/pasteboardchangedowner_.md",
+      "hash": "5f7cabcc35de66c7795b945565235268ad53e77dfd5c3fb5bded05828560ea41"
     },
     "https://developer.apple.com/documentation/objectivec/nsobject-swift.class/perform(_:on:with:waituntildone:)": {
       "etag": "\"a1d9-65d55e940c897-df\"",
@@ -1835,6 +2155,11 @@
       "file_path": "documentation/ObjectiveC/nsobject-swift.class/readrssi(fordevicecomplete,device,info,error).md",
       "hash": "ccfcfefdce57d931d4efe116ebc5c8e9032398b2859deb89719d0f1b923ade45"
     },
+    "https://developer.apple.com/documentation/objectivec/nsobject-swift.class/registerincomingdatalistener:refcon:": {
+      "etag": "\"18e7-65d55e94b12c7-df\"",
+      "file_path": "documentation/ObjectiveC/nsobject-swift.class/registerincomingdatalistener_refcon_.md",
+      "hash": "9a3ea4ad16e6ffefebc3a121a70a6a43d02a6be7871d86ba342391028a4f97e9"
+    },
     "https://developer.apple.com/documentation/objectivec/nsobject-swift.class/removeobserver(_:forkeypath:)": {
       "etag": "\"411a-65d55e9463adc-df\"",
       "file_path": "documentation/ObjectiveC/nsobject-swift.class/removeobserver(_,forkeypath).md",
@@ -1850,6 +2175,16 @@
       "file_path": "documentation/ObjectiveC/nsobject-swift.class/removevalue(at,frompropertywithkey).md",
       "hash": "3ed924723406800e36f4ce37fc71e59a65274412c115dabf55b8bb18e76a6e1d"
     },
+    "https://developer.apple.com/documentation/objectivec/nsobject-swift.class/renderintoopenglbuffer:onscreen:fortime:": {
+      "etag": "\"238b-65d55e950be40-df\"",
+      "file_path": "documentation/ObjectiveC/nsobject-swift.class/renderintoopenglbuffer_onscreen_fortime_.md",
+      "hash": "a9c0c81ed9e075de59caadf9595af53269c502eb6cb583eba44bfa3ce922503f"
+    },
+    "https://developer.apple.com/documentation/objectivec/nsobject-swift.class/renderintopixelbuffer:fortime:": {
+      "etag": "\"2094-65d55e9463adc-df\"",
+      "file_path": "documentation/ObjectiveC/nsobject-swift.class/renderintopixelbuffer_fortime_.md",
+      "hash": "a6eeb2b566a404b69ec01472606e40f49e997726e342d17575f13337ec7fedee"
+    },
     "https://developer.apple.com/documentation/objectivec/nsobject-swift.class/replacementobject(for:)-2l8ox": {
       "etag": "\"65de-65d55e9563c47-df\"",
       "file_path": "documentation/ObjectiveC/nsobject-swift.class/replacementobject(for)-2l8ox.md",
@@ -1864,6 +2199,11 @@
       "etag": "\"664c-65d55e942e988-df\"",
       "file_path": "documentation/ObjectiveC/nsobject-swift.class/replacementobject(for)-8ih2x.md",
       "hash": "64dcdef538809af9c1c28143c4af48e9c2aa82707c9303c5eef8fa61063c7cb6"
+    },
+    "https://developer.apple.com/documentation/objectivec/nsobject-swift.class/replacementobjectforportcoder:": {
+      "etag": "\"8efd-65d55e9463adc-df\"",
+      "file_path": "documentation/ObjectiveC/nsobject-swift.class/replacementobjectforportcoder_.md",
+      "hash": "fc1d56d995476a1dd02886c452d9137b622f3b3e11fb5021f00add9ade93975a"
     },
     "https://developer.apple.com/documentation/objectivec/nsobject-swift.class/replacevalue(at:inpropertywithkey:withvalue:)": {
       "etag": "\"4733-65d55e94b12c7-df\"",
@@ -1935,10 +2275,75 @@
       "file_path": "documentation/ObjectiveC/nsobject-swift.class/scriptingvalue(for).md",
       "hash": "82a79953d6ab171a851181541d549ad3a183f098912aef6db658f076672196d6"
     },
+    "https://developer.apple.com/documentation/objectivec/nsobject-swift.class/sessiondriver:didnegotiateandreturnerror:": {
+      "etag": "\"182d-65d55e94b12c7-df\"",
+      "file_path": "documentation/ObjectiveC/nsobject-swift.class/sessiondriver_didnegotiateandreturnerror_.md",
+      "hash": "2d7aa602489113e6504dc26de27ca330a80d04bb3adb9a98f52b730e6f033370"
+    },
+    "https://developer.apple.com/documentation/objectivec/nsobject-swift.class/sessiondriver:didpullandreturnerror:": {
+      "etag": "\"17f1-65d55e942e988-df\"",
+      "file_path": "documentation/ObjectiveC/nsobject-swift.class/sessiondriver_didpullandreturnerror_.md",
+      "hash": "76cda3b1179c9b795932555fd3b12d4ab683e737f2d65f11f649bdfc91147529"
+    },
+    "https://developer.apple.com/documentation/objectivec/nsobject-swift.class/sessiondriver:didpushandreturnerror:": {
+      "etag": "\"17f1-65d55e94cb1d4-df\"",
+      "file_path": "documentation/ObjectiveC/nsobject-swift.class/sessiondriver_didpushandreturnerror_.md",
+      "hash": "edb0c76169b001b7f3f41232c0d72cea987598aceb850318644aeaa241282d89"
+    },
+    "https://developer.apple.com/documentation/objectivec/nsobject-swift.class/sessiondriver:didreceivesyncalertandreturnerror:": {
+      "etag": "\"1881-65d55e94cb1d4-df\"",
+      "file_path": "documentation/ObjectiveC/nsobject-swift.class/sessiondriver_didreceivesyncalertandreturnerror_.md",
+      "hash": "e7e4c22a653a63367bdd1094ed3a642de02bf9ba44b04bb03dfef374358c3232"
+    },
+    "https://developer.apple.com/documentation/objectivec/nsobject-swift.class/sessiondriver:didregisterclientandreturnerror:": {
+      "etag": "\"1869-65d55e942e988-df\"",
+      "file_path": "documentation/ObjectiveC/nsobject-swift.class/sessiondriver_didregisterclientandreturnerror_.md",
+      "hash": "365df5a0417bb43e885abbd2ae3634b6dbf56930aaa01fed77e9c9e7becb5783"
+    },
+    "https://developer.apple.com/documentation/objectivec/nsobject-swift.class/sessiondriver:willfinishsessionandreturnerror:": {
+      "etag": "\"1869-65d55e952e551-df\"",
+      "file_path": "documentation/ObjectiveC/nsobject-swift.class/sessiondriver_willfinishsessionandreturnerror_.md",
+      "hash": "dd6ef25b9c21356abede7bb1b0853d79c5d61e2e9a9e22a17c4cfaf39c5209f7"
+    },
+    "https://developer.apple.com/documentation/objectivec/nsobject-swift.class/sessiondriver:willnegotiateandreturnerror:": {
+      "etag": "\"1839-65d55e954715d-df\"",
+      "file_path": "documentation/ObjectiveC/nsobject-swift.class/sessiondriver_willnegotiateandreturnerror_.md",
+      "hash": "f59fc9c2f40b20cdd6b8218845f0f30770025cb574f9656d71f676b03668c9cf"
+    },
+    "https://developer.apple.com/documentation/objectivec/nsobject-swift.class/sessiondriver:willpullandreturnerror:": {
+      "etag": "\"17fd-65d55e950be40-df\"",
+      "file_path": "documentation/ObjectiveC/nsobject-swift.class/sessiondriver_willpullandreturnerror_.md",
+      "hash": "63f17c2197d3c9543d5c2bb73cc9d6bdf59f5492e83f84fbf3503f9add45a7e8"
+    },
+    "https://developer.apple.com/documentation/objectivec/nsobject-swift.class/sessiondriver:willpushandreturnerror:": {
+      "etag": "\"17fd-65d55e9563c47-df\"",
+      "file_path": "documentation/ObjectiveC/nsobject-swift.class/sessiondriver_willpushandreturnerror_.md",
+      "hash": "7bc029cb7bf57a2a8144bd9f4636ba6bd28e6fbc25f5ee020524ec7f07e88b3f"
+    },
+    "https://developer.apple.com/documentation/objectivec/nsobject-swift.class/sessiondriverdidcancelsession:": {
+      "etag": "\"11a8-65d55e9463adc-df\"",
+      "file_path": "documentation/ObjectiveC/nsobject-swift.class/sessiondriverdidcancelsession_.md",
+      "hash": "93b1d0d38539fde34da62695b0f831a588b8c8d3facd025fb881925fd7b36753"
+    },
+    "https://developer.apple.com/documentation/objectivec/nsobject-swift.class/sessiondriverdidfinishsession:": {
+      "etag": "\"11a8-65d55e94e4f43-df\"",
+      "file_path": "documentation/ObjectiveC/nsobject-swift.class/sessiondriverdidfinishsession_.md",
+      "hash": "21a6690c637b0184cc79f6884e9cc7cc593ca68c4c6557570186617fdb7747a4"
+    },
+    "https://developer.apple.com/documentation/objectivec/nsobject-swift.class/sessiondriverwillcancelsession:": {
+      "etag": "\"11b4-65d55e9463adc-df\"",
+      "file_path": "documentation/ObjectiveC/nsobject-swift.class/sessiondriverwillcancelsession_.md",
+      "hash": "7ca4709c3f81760a5f7f6faeb27322080c65e8f345e00e429db5c68440d3b30c"
+    },
     "https://developer.apple.com/documentation/objectivec/nsobject-swift.class/setdefaultplaceholder(_:for:with:)": {
       "etag": "\"508c-65d55e9463adc-df\"",
       "file_path": "documentation/ObjectiveC/nsobject-swift.class/setdefaultplaceholder(_,for,with).md",
       "hash": "bf1d1504b18472ac147ede957d05908ed1273136f26bc381a78346a7ffe81ecf"
+    },
+    "https://developer.apple.com/documentation/objectivec/nsobject-swift.class/setkeys:triggerchangenotificationsfordependentkey:": {
+      "etag": "\"520c-65d55e954715d-df\"",
+      "file_path": "documentation/ObjectiveC/nsobject-swift.class/setkeys_triggerchangenotificationsfordependentkey_.md",
+      "hash": "644a13fd49d66b85e630a62d821d089af25d7315b96aad8b3161b8b0a2501650"
     },
     "https://developer.apple.com/documentation/objectivec/nsobject-swift.class/setnilvalueforkey(_:)": {
       "etag": "\"439a-65d55e9463adc-df\"",
@@ -2020,6 +2425,11 @@
       "file_path": "documentation/ObjectiveC/nsobject-swift.class/superclass().md",
       "hash": "483f2ed3c7b05d14570ac27bf92054298803ad6b862de3e5c6d3490962ad8835"
     },
+    "https://developer.apple.com/documentation/objectivec/nsobject-swift.class/tableview:writerows:topasteboard:": {
+      "etag": "\"3481-65d55e954715d-df\"",
+      "file_path": "documentation/ObjectiveC/nsobject-swift.class/tableview_writerows_topasteboard_.md",
+      "hash": "db3046b6b209cf8b0c8bfd18ef33b2bea3534ce3bf4d4bbf429891a00fc84fae"
+    },
     "https://developer.apple.com/documentation/objectivec/nsobject-swift.class/takestoredvalue(_:forkey:)": {
       "etag": "\"d71f-65d55e9563c47-df\"",
       "file_path": "documentation/ObjectiveC/nsobject-swift.class/takestoredvalue(_,forkey).md",
@@ -2075,10 +2485,40 @@
       "file_path": "documentation/ObjectiveC/nsobject-swift.class/unbind(_).md",
       "hash": "da7ef45d010bb651bd0f83cdbb1a8ff3fccd2d5d7363dcdbcda605a2609d9bc8"
     },
+    "https://developer.apple.com/documentation/objectivec/nsobject-swift.class/url:resourcedatadidbecomeavailable:": {
+      "etag": "\"18d7-65d55e94e4f43-df\"",
+      "file_path": "documentation/ObjectiveC/nsobject-swift.class/url_resourcedatadidbecomeavailable_.md",
+      "hash": "01a8ff1e9c29ab4acecf157578628170c6091ac000bce1ba142789867f960e29"
+    },
+    "https://developer.apple.com/documentation/objectivec/nsobject-swift.class/url:resourcedidfailloadingwithreason:": {
+      "etag": "\"190f-65d55e942e988-df\"",
+      "file_path": "documentation/ObjectiveC/nsobject-swift.class/url_resourcedidfailloadingwithreason_.md",
+      "hash": "8baa102bbead670af32281678064b614e77b64ccef5edbc92f193df21f372e5f"
+    },
+    "https://developer.apple.com/documentation/objectivec/nsobject-swift.class/urlresourcedidcancelloading:": {
+      "etag": "\"14ab-65d55e94cb1d4-df\"",
+      "file_path": "documentation/ObjectiveC/nsobject-swift.class/urlresourcedidcancelloading_.md",
+      "hash": "9d12e12d593ac5f37d287d5a050e620ef5b910029820338205d6bebab14629ba"
+    },
+    "https://developer.apple.com/documentation/objectivec/nsobject-swift.class/urlresourcedidfinishloading:": {
+      "etag": "\"14ab-65d55e9463adc-df\"",
+      "file_path": "documentation/ObjectiveC/nsobject-swift.class/urlresourcedidfinishloading_.md",
+      "hash": "2e2d9f4073877b82145a3dbb245fb29e76ed7ce9e0581946fd04979c24fbeb98"
+    },
     "https://developer.apple.com/documentation/objectivec/nsobject-swift.class/usestoredaccessor()": {
       "etag": "\"63ad-65d55e9563c47-df\"",
       "file_path": "documentation/ObjectiveC/nsobject-swift.class/usestoredaccessor().md",
       "hash": "cc1c4507245c5fe4ede1b80872b5d168891301d7e0f34f1469da00b5422df28a"
+    },
+    "https://developer.apple.com/documentation/objectivec/nsobject-swift.class/validatemenuitem:": {
+      "etag": "\"22f7-65d55e94e4f43-df\"",
+      "file_path": "documentation/ObjectiveC/nsobject-swift.class/validatemenuitem_.md",
+      "hash": "a8bd61223164754d3d33af75e818b83ee3196ee3371578f923b1bc758c35980b"
+    },
+    "https://developer.apple.com/documentation/objectivec/nsobject-swift.class/validatetoolbaritem:": {
+      "etag": "\"34c3-65d55e954715d-df\"",
+      "file_path": "documentation/ObjectiveC/nsobject-swift.class/validatetoolbaritem_.md",
+      "hash": "1e8729fb7a84485cfc8bc426d95d744ab6cca1cfa31deac03e0c66da0d172e95"
     },
     "https://developer.apple.com/documentation/objectivec/nsobject-swift.class/validatevalue(_:forkey:)": {
       "etag": "\"5e51-65d55e942e988-df\"",
@@ -2089,6 +2529,11 @@
       "etag": "\"500b-65d55e94b12c7-df\"",
       "file_path": "documentation/ObjectiveC/nsobject-swift.class/validatevalue(_,forkeypath).md",
       "hash": "425dbd7ffff20f054d4d370bd432c99bd89f28a9d126f5ffc0eb288bf3d725c2"
+    },
+    "https://developer.apple.com/documentation/objectivec/nsobject-swift.class/validmodesforfontpanel:": {
+      "etag": "\"225f-65d55e942e988-df\"",
+      "file_path": "documentation/ObjectiveC/nsobject-swift.class/validmodesforfontpanel_.md",
+      "hash": "0a265762d69ffbeca4ad0e76db53776dc7d3a9dbc0a252cb8410eb0028f98229"
     },
     "https://developer.apple.com/documentation/objectivec/nsobject-swift.class/value(at:inpropertywithkey:)": {
       "etag": "\"4325-65d55e952e551-df\"",
@@ -2134,6 +2579,11 @@
       "etag": "\"7039-65d55e9463adc-df\"",
       "file_path": "documentation/ObjectiveC/nsobject-swift.class/version().md",
       "hash": "0bfc66a57b310ace40ed44746704bcc14637fc3518219bd2dd47507284a4b5ad"
+    },
+    "https://developer.apple.com/documentation/objectivec/nsobject-swift.class/view:stringfortooltip:point:userdata:": {
+      "etag": "\"314a-65d55e950be40-df\"",
+      "file_path": "documentation/ObjectiveC/nsobject-swift.class/view_stringfortooltip_point_userdata_.md",
+      "hash": "8843e28a90b89e65f5942f38c49e9462b92f5acc18cb17e70a8d3c84b53f6cbf"
     },
     "https://developer.apple.com/documentation/objectivec/nsobject-swift.class/webframe": {
       "etag": "\"28ca-65d55e942e988-df\"",
@@ -2225,6 +2675,11 @@
       "file_path": "documentation/ObjectiveC/nsobject-swift.class/willchangevalue(forkey,withsetmutation,using).md",
       "hash": "6dbca182467394c8b744a014e274878e91173932a1ee4e10a004ab7de55ce497"
     },
+    "https://developer.apple.com/documentation/objectivec/nsobject-swift.class/withl2capchannelref:": {
+      "etag": "\"188f-65d55e94e4f43-df\"",
+      "file_path": "documentation/ObjectiveC/nsobject-swift.class/withl2capchannelref_.md",
+      "hash": "33385caa7d63be92992c68bab71af31d9c2761ff43b5244ddf9105fa72cca42f"
+    },
     "https://developer.apple.com/documentation/objectivec/nsobject-swift.class/workflowcontroller(_:diderror:)": {
       "etag": "\"2a25-65d55e94b12c7-df\"",
       "file_path": "documentation/ObjectiveC/nsobject-swift.class/workflowcontroller(_,diderror).md",
@@ -2259,6 +2714,11 @@
       "etag": "\"2157-65d55e94b12c7-df\"",
       "file_path": "documentation/ObjectiveC/nsobject-swift.class/workflowcontrollerwillstop(_).md",
       "hash": "1065808a773051a3c2703092be4991301010f23ae7e2fbf9f6acb1d5c1329504"
+    },
+    "https://developer.apple.com/documentation/objectivec/nsobject-swift.class/write:length:": {
+      "etag": "\"1548-65d55e942e988-df\"",
+      "file_path": "documentation/ObjectiveC/nsobject-swift.class/write_length_.md",
+      "hash": "f9feb488e662b874f9e0c1f3318f3940d3653048a3c1cb80956c53faf4144b5e"
     },
     "https://developer.apple.com/documentation/objectivec/nsobjectprotocol": {
       "etag": "\"80b6-65d55e9602ae6-df\"",
@@ -2355,6 +2815,16 @@
       "file_path": "documentation/ObjectiveC/nstargetobjectuserinfokey.md",
       "hash": "f3552b26d895c022b55d22cd2df3aeeeabcfd7869dc4ffd507f2675dbbace0af"
     },
+    "https://developer.apple.com/documentation/objectivec/nsuinteger": {
+      "etag": "\"40a9-65d55e9563c47-df\"",
+      "file_path": "documentation/ObjectiveC/nsuinteger.md",
+      "hash": "45a94511a1033b5d58505fc0849bba022faadbf228c54d3271ecb35fe481d7da"
+    },
+    "https://developer.apple.com/documentation/objectivec/nsuintegermax": {
+      "etag": "\"b0c-65d55e963ce9f-df\"",
+      "file_path": "documentation/ObjectiveC/nsuintegermax.md",
+      "hash": "7fb65ffacb3184a8a3b1604264db6cebf77063e3aaf4219a555e93539b567411"
+    },
     "https://developer.apple.com/documentation/objectivec/nsundefinedkeyexception-userinfo-keys": {
       "etag": "\"2348-65902851ae654-df\"",
       "file_path": "documentation/ObjectiveC/nsundefinedkeyexception-userinfo-keys.md",
@@ -2369,6 +2839,136 @@
       "etag": "\"2e03-65d55e9602ae6-df\"",
       "file_path": "documentation/ObjectiveC/nszone.md",
       "hash": "c7274c871eebd31ce91be58a0a568253014e91e16e62ddd3b128146c5e8461b6"
+    },
+    "https://developer.apple.com/documentation/objectivec/null-values": {
+      "etag": "\"1578-65902851d33a9-df\"",
+      "file_path": "documentation/ObjectiveC/null-values.md",
+      "hash": "30e97e3bce8826c51c461d18343b31e372853622730293496404af75e9ad4b82"
+    },
+    "https://developer.apple.com/documentation/objectivec/nxcomparehashtables": {
+      "etag": "\"323b-65d55e963ce9f-df\"",
+      "file_path": "documentation/ObjectiveC/nxcomparehashtables.md",
+      "hash": "412443b8179c1a1e62af8f3176bd1117b4cf8ee4de23d576e90bd8bfcdc70e8a"
+    },
+    "https://developer.apple.com/documentation/objectivec/nxcopyhashtable": {
+      "etag": "\"2fc0-65d55e96227ea-df\"",
+      "file_path": "documentation/ObjectiveC/nxcopyhashtable.md",
+      "hash": "eb5612cfff8b3e9fa8778a174799dbe8c0e7d8022017a888c8b93a8a50f08434"
+    },
+    "https://developer.apple.com/documentation/objectivec/nxcounthashtable": {
+      "etag": "\"2f64-65d55e96457cb-df\"",
+      "file_path": "documentation/ObjectiveC/nxcounthashtable.md",
+      "hash": "87dcf4713370285a0a6db8c881bf3b87bc16cf0e4a369c42bb8c17e4e5d36a75"
+    },
+    "https://developer.apple.com/documentation/objectivec/nxcreatehashtable": {
+      "etag": "\"359a-65d55e95e964e-df\"",
+      "file_path": "documentation/ObjectiveC/nxcreatehashtable.md",
+      "hash": "1b167b215fa53c14aa3baaa04b4670206028ce1a96d61d50207f092cccb13233"
+    },
+    "https://developer.apple.com/documentation/objectivec/nxcreatehashtablefromzone": {
+      "etag": "\"366b-65d55e9602ae6-df\"",
+      "file_path": "documentation/ObjectiveC/nxcreatehashtablefromzone.md",
+      "hash": "1b7570e971024329521decaea598176d0d3d13aaa91f00f120a7edc10eab72f8"
+    },
+    "https://developer.apple.com/documentation/objectivec/nxemptyhashtable": {
+      "etag": "\"2f5c-65d55e95e964e-df\"",
+      "file_path": "documentation/ObjectiveC/nxemptyhashtable.md",
+      "hash": "05c3753bdb979c76477cbf37e389b895d5cbb3293f06933d3875f9ac49612ea4"
+    },
+    "https://developer.apple.com/documentation/objectivec/nxfreehashtable": {
+      "etag": "\"2f56-65d55e95e964e-df\"",
+      "file_path": "documentation/ObjectiveC/nxfreehashtable.md",
+      "hash": "f774f61ce1336c219c4aa335283c92f3b6a481c2890ea8a9aad2a3e4e9504cb7"
+    },
+    "https://developer.apple.com/documentation/objectivec/nxhashget": {
+      "etag": "\"3011-65d55e95c2ae2-df\"",
+      "file_path": "documentation/ObjectiveC/nxhashget.md",
+      "hash": "8e33f74d86fe6bd6ed6e31034f3559a4f1466e4690d6cfcfaea03992bf5548b6"
+    },
+    "https://developer.apple.com/documentation/objectivec/nxhashinsert": {
+      "etag": "\"3023-65d55e963ce9f-df\"",
+      "file_path": "documentation/ObjectiveC/nxhashinsert.md",
+      "hash": "2730f2fed699dc819cedd801c77c65b618fec8134bdce4d9a5797e61dcf543b6"
+    },
+    "https://developer.apple.com/documentation/objectivec/nxhashinsertifabsent": {
+      "etag": "\"3053-65d55e9563c47-df\"",
+      "file_path": "documentation/ObjectiveC/nxhashinsertifabsent.md",
+      "hash": "f0f29bdcd57da52addc466647a1f1d969798cb46f1c3dbc9d6c6f1c290c6fdab"
+    },
+    "https://developer.apple.com/documentation/objectivec/nxhashmember": {
+      "etag": "\"3021-65d55e95a22da-df\"",
+      "file_path": "documentation/ObjectiveC/nxhashmember.md",
+      "hash": "f30830c797c386aa1b1eb0c477345f60cc11f1d0951a49112211cd75ce39e83c"
+    },
+    "https://developer.apple.com/documentation/objectivec/nxhashremove": {
+      "etag": "\"3023-65d55e9602ae6-df\"",
+      "file_path": "documentation/ObjectiveC/nxhashremove.md",
+      "hash": "458705cc798114a31fd8c7cd50ef3ddcb0c818dc2b739aac3814d40c2d65b702"
+    },
+    "https://developer.apple.com/documentation/objectivec/nxhashstate": {
+      "etag": "\"285e-65d55e9563c47-df\"",
+      "file_path": "documentation/ObjectiveC/nxhashstate.md",
+      "hash": "46b197d8df47c4a710b1e0153c013e62b404f3d39ef00be781901f5f1828bbf0"
+    },
+    "https://developer.apple.com/documentation/objectivec/nxhashstate/i": {
+      "etag": "\"b2e-65d55e9602ae6-df\"",
+      "file_path": "documentation/ObjectiveC/nxhashstate/i.md",
+      "hash": "b14cae2604f59e3ba9fe159bca9dee5551483ee034d030b28ab31200d0907e92"
+    },
+    "https://developer.apple.com/documentation/objectivec/nxhashstate/j": {
+      "etag": "\"b2e-65d55e9602ae6-df\"",
+      "file_path": "documentation/ObjectiveC/nxhashstate/j.md",
+      "hash": "915d41fcea14509e66dc569314150e5c061c1dc9cc2fb0cabcfdf91a2b430161"
+    },
+    "https://developer.apple.com/documentation/objectivec/nxhashtable": {
+      "etag": "\"2e1f-65d55e9602ae6-df\"",
+      "file_path": "documentation/ObjectiveC/nxhashtable.md",
+      "hash": "9b56cab3e093e7d84ac32ca42140d9d8f37f1eaec2457301f785219f63af7272"
+    },
+    "https://developer.apple.com/documentation/objectivec/nxhashtable/buckets": {
+      "etag": "\"b9f-65d55e95e964e-df\"",
+      "file_path": "documentation/ObjectiveC/nxhashtable/buckets.md",
+      "hash": "d77b8170cdb68096069912c3f52897f79a53f15e99bf35ec9a14922f493ccdbd"
+    },
+    "https://developer.apple.com/documentation/objectivec/nxhashtable/count": {
+      "etag": "\"b8d-65d55e95e964e-df\"",
+      "file_path": "documentation/ObjectiveC/nxhashtable/count.md",
+      "hash": "eec49ea53ad9916714090a657a3ef8481b05f657eb2ff2c94b90afe0a811611d"
+    },
+    "https://developer.apple.com/documentation/objectivec/nxhashtable/info": {
+      "etag": "\"bb8-65d55e95e964e-df\"",
+      "file_path": "documentation/ObjectiveC/nxhashtable/info.md",
+      "hash": "5bbfeb0185148c8b23801b5941a4d9f86ddd185969eb8e828f9aa5768dc64ad3"
+    },
+    "https://developer.apple.com/documentation/objectivec/nxhashtable/nbbuckets": {
+      "etag": "\"bbd-65d55e95e964e-df\"",
+      "file_path": "documentation/ObjectiveC/nxhashtable/nbbuckets.md",
+      "hash": "6bcf1013714404d115371c7d6297ec2c9ed283e0614f859cac0c5a4afcde035c"
+    },
+    "https://developer.apple.com/documentation/objectivec/nxhashtable/prototype": {
+      "etag": "\"10e6-65d55e95e964e-df\"",
+      "file_path": "documentation/ObjectiveC/nxhashtable/prototype.md",
+      "hash": "178859c0686507792457a8f70eab58ba2a31dcf492f536c0293280be575093a9"
+    },
+    "https://developer.apple.com/documentation/objectivec/nxhashtable_ptrauth_free": {
+      "etag": "\"279c-65d55e95a22da-df\"",
+      "file_path": "documentation/ObjectiveC/nxhashtable_ptrauth_free.md",
+      "hash": "d2d983525704f10d92fa023f6f6c857a57dee604842d5ba48f266a1db95289cd"
+    },
+    "https://developer.apple.com/documentation/objectivec/nxhashtable_ptrauth_hash": {
+      "etag": "\"279c-65d55e9602ae6-df\"",
+      "file_path": "documentation/ObjectiveC/nxhashtable_ptrauth_hash.md",
+      "hash": "20c6a2f9f0b2255c7ba19c7e57711e0f38b7d1a8301b7e603b4d8e8a78c0f6c0"
+    },
+    "https://developer.apple.com/documentation/objectivec/nxhashtable_ptrauth_isequal": {
+      "etag": "\"27ae-65d55e95e964e-df\"",
+      "file_path": "documentation/ObjectiveC/nxhashtable_ptrauth_isequal.md",
+      "hash": "1665052312397809ed73900c9b6ace420c34c610efe33e42fad9597df00c2f29"
+    },
+    "https://developer.apple.com/documentation/objectivec/nxhashtable_ptrauth_prototype": {
+      "etag": "\"27ba-65d55e9563c47-df\"",
+      "file_path": "documentation/ObjectiveC/nxhashtable_ptrauth_prototype.md",
+      "hash": "5a2b3a44bbf0e9515096418f937c67e778a1c827c0ae025307378fc05e336b59"
     },
     "https://developer.apple.com/documentation/objectivec/nxhashtableprototype": {
       "etag": "\"56e4-65d55e95e964e-df\"",
@@ -2400,6 +3000,71 @@
       "file_path": "documentation/ObjectiveC/nxhashtableprototype/style.md",
       "hash": "23974373c0fefbe6da4c06cfb5e180b5ba555fa743168ce3ca32164c5b0d1581"
     },
+    "https://developer.apple.com/documentation/objectivec/nxinithashstate": {
+      "etag": "\"3114-65d55e96227ea-df\"",
+      "file_path": "documentation/ObjectiveC/nxinithashstate.md",
+      "hash": "9080d3f8a715ef5dc9a4e84ddbbb04ead81ff75dc63c82c84c9a1eee6ddf266a"
+    },
+    "https://developer.apple.com/documentation/objectivec/nxnexthashstate": {
+      "etag": "\"3257-65d55e958227b-df\"",
+      "file_path": "documentation/ObjectiveC/nxnexthashstate.md",
+      "hash": "6c2f33540893cc68261b452933889134576692dced7bbf77b13f2d77ba746f60"
+    },
+    "https://developer.apple.com/documentation/objectivec/nxnoeffectfree": {
+      "etag": "\"2e69-65d55e95a22da-df\"",
+      "file_path": "documentation/ObjectiveC/nxnoeffectfree.md",
+      "hash": "c24912663dda164fcf172098799ecfdc84ebd269f69414b04306b471c531e3f1"
+    },
+    "https://developer.apple.com/documentation/objectivec/nxptrhash": {
+      "etag": "\"2fd9-65d55e96227ea-df\"",
+      "file_path": "documentation/ObjectiveC/nxptrhash.md",
+      "hash": "1589942865bfd6c01570bd155425c165e349c8e7d00e175ea73a6a513f62a2f6"
+    },
+    "https://developer.apple.com/documentation/objectivec/nxptrisequal": {
+      "etag": "\"2f6d-65d55e9602ae6-df\"",
+      "file_path": "documentation/ObjectiveC/nxptrisequal.md",
+      "hash": "2a93dd458652e8d963d1e515a6c5160c4c416669136a549da420be0c2055ae81"
+    },
+    "https://developer.apple.com/documentation/objectivec/nxptrprototype": {
+      "etag": "\"41b8-65d55e95a22da-df\"",
+      "file_path": "documentation/ObjectiveC/nxptrprototype.md",
+      "hash": "f77d541208fdd2d56c3c99514831c8f088e40530e704200daa8f34de40f1d959"
+    },
+    "https://developer.apple.com/documentation/objectivec/nxptrstructkeyprototype": {
+      "etag": "\"41ee-65d55e95e964e-df\"",
+      "file_path": "documentation/ObjectiveC/nxptrstructkeyprototype.md",
+      "hash": "761b481597a9ba72e50355ee3c23db9c75defc72a4175873a3383db58047499b"
+    },
+    "https://developer.apple.com/documentation/objectivec/nxreallyfree": {
+      "etag": "\"2e51-65d55e9563c47-df\"",
+      "file_path": "documentation/ObjectiveC/nxreallyfree.md",
+      "hash": "8020b908f33f7f973b6a31b9bfb7afaeea591aa1665eb51008ee89bf19dba44e"
+    },
+    "https://developer.apple.com/documentation/objectivec/nxresethashtable": {
+      "etag": "\"2f62-65d55e95a22da-df\"",
+      "file_path": "documentation/ObjectiveC/nxresethashtable.md",
+      "hash": "d200b5367beed06fd48f6fd2f7c9b63a89ab8b1e6909d3dc67a407e710776fb3"
+    },
+    "https://developer.apple.com/documentation/objectivec/nxstrhash": {
+      "etag": "\"2fd9-65d55e958227b-df\"",
+      "file_path": "documentation/ObjectiveC/nxstrhash.md",
+      "hash": "31ff8eed309a714531dc75a0851b78b199f4f1a88cf4c3b9f181b4b8d01990e0"
+    },
+    "https://developer.apple.com/documentation/objectivec/nxstrisequal": {
+      "etag": "\"2f6d-65d55e9602ae6-df\"",
+      "file_path": "documentation/ObjectiveC/nxstrisequal.md",
+      "hash": "cedddb94253d94cb1790fb243cf2582a19e803a61185ed1e8b28150a5072ef5b"
+    },
+    "https://developer.apple.com/documentation/objectivec/nxstrprototype": {
+      "etag": "\"41b8-65d55e95e964e-df\"",
+      "file_path": "documentation/ObjectiveC/nxstrprototype.md",
+      "hash": "bf42ff8aeb68754f0cd508a4e8d13d9b9e95da3ae14be97122a7d29a39931ad2"
+    },
+    "https://developer.apple.com/documentation/objectivec/nxstrstructkeyprototype": {
+      "etag": "\"41ee-65d55e96227ea-df\"",
+      "file_path": "documentation/ObjectiveC/nxstrstructkeyprototype.md",
+      "hash": "a889b6e6576fc641c0c2d5c5a7f74a1b120c6800b69c6b0946b480297f7cf3b9"
+    },
     "https://developer.apple.com/documentation/objectivec/objc_addexceptionhandler(_:_:)": {
       "etag": "\"8250-65d55e963ce9f-df\"",
       "file_path": "documentation/ObjectiveC/objc_addexceptionhandler(_,_).md",
@@ -2414,6 +3079,11 @@
       "etag": "\"49a1-65d55e95a22da-df\"",
       "file_path": "documentation/ObjectiveC/objc_addloadimagefunc_defined.md",
       "hash": "1edd30cf3b45d492e75917b2b59afeadd5d7646177e454850203ff066fc94989"
+    },
+    "https://developer.apple.com/documentation/objectivec/objc_allocate_object": {
+      "etag": "\"307c-65d55e95c2ae2-df\"",
+      "file_path": "documentation/ObjectiveC/objc_allocate_object.md",
+      "hash": "bf5f32ed78572664224d2399e7eeb5901f4b5bc3645a5a0866e0efaca09e332b"
     },
     "https://developer.apple.com/documentation/objectivec/objc_allocateclasspair(_:_:_:)": {
       "etag": "\"58aa-65d55e95c2ae2-df\"",
@@ -2430,10 +3100,45 @@
       "file_path": "documentation/ObjectiveC/objc_api_version.md",
       "hash": "dbf920b93218f216f506fdc1fe459e6361ef7618a8b3984d50d4a8a9384649d4"
     },
+    "https://developer.apple.com/documentation/objectivec/objc_arc_unavailable": {
+      "etag": "\"2807-65d55e95e964e-df\"",
+      "file_path": "documentation/ObjectiveC/objc_arc_unavailable.md",
+      "hash": "d15c0b6f0d9f295c3b907a2afdc8c80bb5ec00fb6c311e22aef9d4c3f20c0991"
+    },
+    "https://developer.apple.com/documentation/objectivec/objc_arm64_unavailable": {
+      "etag": "\"2813-65d55e95c2ae2-df\"",
+      "file_path": "documentation/ObjectiveC/objc_arm64_unavailable.md",
+      "hash": "75166e61915c6ebd706c9816aff4bee3fdc4bd5b43fb1399d1be55778e9341ad"
+    },
     "https://developer.apple.com/documentation/objectivec/objc_assertregisteredthreadwithcollector()": {
       "etag": "\"7521-65d55e95c2ae2-df\"",
       "file_path": "documentation/ObjectiveC/objc_assertregisteredthreadwithcollector().md",
       "hash": "29db399386e19c3593f34681c8a0254107407421ff123ee68d740d90251fa2d8"
+    },
+    "https://developer.apple.com/documentation/objectivec/objc_assign_global": {
+      "etag": "\"2e44-65d55e96227ea-df\"",
+      "file_path": "documentation/ObjectiveC/objc_assign_global.md",
+      "hash": "111308fe253cb3a722ef59b5f527b9ae0a71b9d31751088987259c7adcb65e57"
+    },
+    "https://developer.apple.com/documentation/objectivec/objc_assign_ivar": {
+      "etag": "\"303d-65d55e95c2ae2-df\"",
+      "file_path": "documentation/ObjectiveC/objc_assign_ivar.md",
+      "hash": "f78fff7dbbf3e54315bea7cb1a5fae637fd5a61a9d990d05440f8e6e12ccc575"
+    },
+    "https://developer.apple.com/documentation/objectivec/objc_assign_strongcast": {
+      "etag": "\"2e74-65d55e9602ae6-df\"",
+      "file_path": "documentation/ObjectiveC/objc_assign_strongcast.md",
+      "hash": "86435296e83f16e6f0dcce7a48a3774e172ea337a047be305b987e51931d2980"
+    },
+    "https://developer.apple.com/documentation/objectivec/objc_assign_threadlocal": {
+      "etag": "\"2e80-65d55e95c2ae2-df\"",
+      "file_path": "documentation/ObjectiveC/objc_assign_threadlocal.md",
+      "hash": "17bd8bb0b50abc02c59eb36ebe85883e3d20bbfce5f20eae590f66cc08df1cd7"
+    },
+    "https://developer.apple.com/documentation/objectivec/objc_assign_weak": {
+      "etag": "\"2e32-65d55e963ce9f-df\"",
+      "file_path": "documentation/ObjectiveC/objc_assign_weak.md",
+      "hash": "0e094dfd87c86951042eac8ea03bb993f7e3164032faf86896f24f6eebb35273"
     },
     "https://developer.apple.com/documentation/objectivec/objc_associationpolicy": {
       "etag": "\"4201-65d55e95e964e-df\"",
@@ -2470,10 +3175,50 @@
       "file_path": "documentation/ObjectiveC/objc_associationpolicy/objc_association_retain_nonatomic.md",
       "hash": "15a302afdec9bef7cde8bb9490fd6549fabde1f8459cb9ab50869dcdde45dbb1"
     },
+    "https://developer.apple.com/documentation/objectivec/objc_atomiccompareandswapglobal": {
+      "etag": "\"31b2-65d55e963ce9f-df\"",
+      "file_path": "documentation/ObjectiveC/objc_atomiccompareandswapglobal.md",
+      "hash": "60c36b4b5f65e0b19331b3002fccabcf878d3ffcba2e5accfbb7e00e887332e2"
+    },
+    "https://developer.apple.com/documentation/objectivec/objc_atomiccompareandswapglobalbarrier": {
+      "etag": "\"3206-65d55e95e964e-df\"",
+      "file_path": "documentation/ObjectiveC/objc_atomiccompareandswapglobalbarrier.md",
+      "hash": "1cb3c45f552b644e4ea897165d0349368ba3c0028862b99a83170b97c35914c0"
+    },
+    "https://developer.apple.com/documentation/objectivec/objc_atomiccompareandswapinstancevariable": {
+      "etag": "\"322a-65d55e963ce9f-df\"",
+      "file_path": "documentation/ObjectiveC/objc_atomiccompareandswapinstancevariable.md",
+      "hash": "990771f91cdc03def2d3384339a37b43005b73eade981d7f129a4fb8b1f46b55"
+    },
+    "https://developer.apple.com/documentation/objectivec/objc_atomiccompareandswapinstancevariablebarrier": {
+      "etag": "\"327e-65d55e9602ae6-df\"",
+      "file_path": "documentation/ObjectiveC/objc_atomiccompareandswapinstancevariablebarrier.md",
+      "hash": "8d02f20d32fd768faf5c92d5bf5575ba5892b3e5e9fef2e475ce3a8b0a5bf768"
+    },
+    "https://developer.apple.com/documentation/objectivec/objc_atomiccompareandswapptr": {
+      "etag": "\"318e-65d55e95a22da-df\"",
+      "file_path": "documentation/ObjectiveC/objc_atomiccompareandswapptr.md",
+      "hash": "5be7fefc7713e1fd39de1912cd14ea6ee9c35402f8006dbcf14f85cafae50729"
+    },
+    "https://developer.apple.com/documentation/objectivec/objc_atomiccompareandswapptrbarrier": {
+      "etag": "\"31e2-65d55e9602ae6-df\"",
+      "file_path": "documentation/ObjectiveC/objc_atomiccompareandswapptrbarrier.md",
+      "hash": "6bc5b42765b881988e99c43810ac3db7af7069cc72f27e1e8690aee962162c36"
+    },
+    "https://developer.apple.com/documentation/objectivec/objc_available": {
+      "etag": "\"293d-65d55e95a22da-df\"",
+      "file_path": "documentation/ObjectiveC/objc_available.md",
+      "hash": "02c188bbc438e8b744a37965fc63855cecdeda0ccc01a584d7b9bd81c3bc62d3"
+    },
     "https://developer.apple.com/documentation/objectivec/objc_begin_catch(_:)": {
       "etag": "\"78a5-65d55e95e964e-df\"",
       "file_path": "documentation/ObjectiveC/objc_begin_catch(_).md",
       "hash": "6a8cf033c440a7210c6dcec982170b93eeee818829f0bb4210d59d79a03afc88"
+    },
+    "https://developer.apple.com/documentation/objectivec/objc_bool_defined": {
+      "etag": "\"27f5-65d55e95c2ae2-df\"",
+      "file_path": "documentation/ObjectiveC/objc_bool_defined.md",
+      "hash": "d372200c8eba93481884dfd23af60cad93715b26c889e1bcf45e73e308b83518"
     },
     "https://developer.apple.com/documentation/objectivec/objc_bool_is_bool": {
       "etag": "\"4935-65d55e958227b-df\"",
@@ -2500,6 +3245,11 @@
       "file_path": "documentation/ObjectiveC/objc_clear_stack(_).md",
       "hash": "1bb97c9be53605f3532af794b0b5213214eda04e90e7e6204de3f49f1975e905"
     },
+    "https://developer.apple.com/documentation/objectivec/objc_cold": {
+      "etag": "\"27c5-65d55e9602ae6-df\"",
+      "file_path": "documentation/ObjectiveC/objc_cold.md",
+      "hash": "0ee7a1b6961113187344a8bf6e0edd643e6b55613e6f23b1b17e1a88bf27a148"
+    },
     "https://developer.apple.com/documentation/objectivec/objc_collect(_:)": {
       "etag": "\"7819-65d55e958227b-df\"",
       "file_path": "documentation/ObjectiveC/objc_collect(_).md",
@@ -2524,6 +3274,11 @@
       "etag": "\"796f-65d55e95a22da-df\"",
       "file_path": "documentation/ObjectiveC/objc_collectingenabled().md",
       "hash": "940b86dffc80733e5927112579d828940d0fa270c1c30bf488c7390de1709bec"
+    },
+    "https://developer.apple.com/documentation/objectivec/objc_constructinstance": {
+      "etag": "\"1c7b-65d55e963ce9f-df\"",
+      "file_path": "documentation/ObjectiveC/objc_constructinstance.md",
+      "hash": "e9ab2f815ddbef67f8df306912e31f618fff7062c56176b78ee659e76668a217"
     },
     "https://developer.apple.com/documentation/objectivec/objc_copyclasslist(_:)": {
       "etag": "\"4ad5-65d55e95e964e-df\"",
@@ -2550,6 +3305,16 @@
       "file_path": "documentation/ObjectiveC/objc_copyprotocollist(_).md",
       "hash": "0dea876ef44d1d917efcac123e11e466c2515699843086c39fc36d41f9790a8a"
     },
+    "https://developer.apple.com/documentation/objectivec/objc_deprecated": {
+      "etag": "\"2846-65d55e95e964e-df\"",
+      "file_path": "documentation/ObjectiveC/objc_deprecated.md",
+      "hash": "5546ffb62906c7b03b04e807611e546f1c113e2344daaaccb5ed6bba7183310b"
+    },
+    "https://developer.apple.com/documentation/objectivec/objc_destructinstance": {
+      "etag": "\"183a-65d55e9602ae6-df\"",
+      "file_path": "documentation/ObjectiveC/objc_destructinstance.md",
+      "hash": "bdd6341463f61364163e7cd84518aa45a11b780e709cc12fb1aa54782279b201"
+    },
     "https://developer.apple.com/documentation/objectivec/objc_disposeclasspair(_:)": {
       "etag": "\"3357-65d55e96457cb-df\"",
       "file_path": "documentation/ObjectiveC/objc_disposeclasspair(_).md",
@@ -2560,10 +3325,25 @@
       "file_path": "documentation/ObjectiveC/objc_duplicateclass(_,_,_).md",
       "hash": "b424b8ec02ba4e45c493401d865c1f049af5737f9e1439eb1070d1663c166c36"
     },
+    "https://developer.apple.com/documentation/objectivec/objc_dynamic_classes": {
+      "etag": "\"2807-65d55e9563c47-df\"",
+      "file_path": "documentation/ObjectiveC/objc_dynamic_classes.md",
+      "hash": "f1fbc5157540a6b8aedb40ff3028a011492e0b2c7977917456caa28863f10175"
+    },
     "https://developer.apple.com/documentation/objectivec/objc_end_catch()": {
       "etag": "\"73b9-65d55e95e964e-df\"",
       "file_path": "documentation/ObjectiveC/objc_end_catch().md",
       "hash": "417abc64d094419749d7ea9b759501fb8661e98eaf6d75d71626b1b1baf9ef3c"
+    },
+    "https://developer.apple.com/documentation/objectivec/objc_enum": {
+      "etag": "\"2867-65d55e940c897-df\"",
+      "file_path": "documentation/ObjectiveC/objc_enum.md",
+      "hash": "d355815a20d96d27bfe73a0eb4429814253041220d1725c24e609759850d5836"
+    },
+    "https://developer.apple.com/documentation/objectivec/objc_enumerateclasses": {
+      "etag": "\"35e7-65d55e963ce9f-df\"",
+      "file_path": "documentation/ObjectiveC/objc_enumerateclasses.md",
+      "hash": "3414bf75a33a4881816c119a41603f5c2cbf63a7b9887bdb327536018c668934"
     },
     "https://developer.apple.com/documentation/objectivec/objc_enumerateclasses(fromimage:matchingnameprefix:conformingto:subclassing:)": {
       "etag": "\"67f6-65d55e9602ae6-df\"",
@@ -2605,6 +3385,16 @@
       "file_path": "documentation/ObjectiveC/objc_exhaustive_collection.md",
       "hash": "c5d0207b0859e1548d55080288779c54e72679839ab1d508d174ee5b2ee437eb"
     },
+    "https://developer.apple.com/documentation/objectivec/objc_export": {
+      "etag": "\"27d1-65d55e958227b-df\"",
+      "file_path": "documentation/ObjectiveC/objc_export.md",
+      "hash": "ba424f7f1467fb029cf82c53d9b93c39a9638b0515a61e1289892e63bcdc7f6f"
+    },
+    "https://developer.apple.com/documentation/objectivec/objc_extern": {
+      "etag": "\"27d1-65d55e95c2ae2-df\"",
+      "file_path": "documentation/ObjectiveC/objc_extern.md",
+      "hash": "9dff1080a84bf0f4434ecf8c99a093fe06e0b232d54c103a5534782b86510604"
+    },
     "https://developer.apple.com/documentation/objectivec/objc_finalizeonmainthread(_:)": {
       "etag": "\"7a2f-65d55e96457cb-df\"",
       "file_path": "documentation/ObjectiveC/objc_finalizeonmainthread(_).md",
@@ -2619,6 +3409,16 @@
       "etag": "\"5172-65d55e963ce9f-df\"",
       "file_path": "documentation/ObjectiveC/objc_func_loadimage.md",
       "hash": "c2661ac5adfc96ddec464df64ff70863f59f76207d6aefb5572b2d9263136fae"
+    },
+    "https://developer.apple.com/documentation/objectivec/objc_gc_deprecated": {
+      "etag": "\"2885-65d55e95e964e-df\"",
+      "file_path": "documentation/ObjectiveC/objc_gc_deprecated.md",
+      "hash": "d53aaecd2fb43ee60ba644fbdb78384e755a1010b55b5e071613efb3b71312ae"
+    },
+    "https://developer.apple.com/documentation/objectivec/objc_gc_unavailable": {
+      "etag": "\"2831-65d55e963ce9f-df\"",
+      "file_path": "documentation/ObjectiveC/objc_gc_unavailable.md",
+      "hash": "c8b8250401ed63886a879213eef33f44d0df7222983f4084f0e174fc4ad6ad67"
     },
     "https://developer.apple.com/documentation/objectivec/objc_generational_collection": {
       "etag": "\"3d3f-65d55e95a22da-df\"",
@@ -2645,6 +3445,11 @@
       "file_path": "documentation/ObjectiveC/objc_getclasslist(_,_).md",
       "hash": "6e737e40fdc196306e20c6ab4b52e7d7af31c0c295b095b7fd3c4b12fbca462c"
     },
+    "https://developer.apple.com/documentation/objectivec/objc_getfutureclass": {
+      "etag": "\"66aa-65d55e958227b-df\"",
+      "file_path": "documentation/ObjectiveC/objc_getfutureclass.md",
+      "hash": "145306e7da77e01f840953fd529a761230d22b386fac4ce583466d6c1ba1cb1d"
+    },
     "https://developer.apple.com/documentation/objectivec/objc_getmetaclass(_:)": {
       "etag": "\"421a-65d55e95c2ae2-df\"",
       "file_path": "documentation/ObjectiveC/objc_getmetaclass(_).md",
@@ -2659,6 +3464,11 @@
       "etag": "\"458a-65d55e96227ea-df\"",
       "file_path": "documentation/ObjectiveC/objc_getrequiredclass(_).md",
       "hash": "774e0d0d31d705245f74d60627579aed4f1b734a639ec81a13d147c386cdfe84"
+    },
+    "https://developer.apple.com/documentation/objectivec/objc_hash_availability": {
+      "etag": "\"27d2-65d55e95e964e-df\"",
+      "file_path": "documentation/ObjectiveC/objc_hash_availability.md",
+      "hash": "3db7b2167f301635e874704ef5afe1610e1b68e90f1580d0ff19d3b1cbbec1c6"
     },
     "https://developer.apple.com/documentation/objectivec/objc_hook_getclass": {
       "etag": "\"550e-65d55e95e964e-df\"",
@@ -2675,10 +3485,25 @@
       "file_path": "documentation/ObjectiveC/objc_hook_lazyclassnamer.md",
       "hash": "9e4df22f8aedaef19e421c2da9bca7570b4e0fc7ee7b4f2c518f856e3f85c1fd"
     },
+    "https://developer.apple.com/documentation/objectivec/objc_import": {
+      "etag": "\"27d1-65d55e95c2ae2-df\"",
+      "file_path": "documentation/ObjectiveC/objc_import.md",
+      "hash": "e04f216be6cc969199a6fee74ac76f43773dc172755a071fd559293a6bfb9c90"
+    },
+    "https://developer.apple.com/documentation/objectivec/objc_inline": {
+      "etag": "\"27d1-65d55e95a22da-df\"",
+      "file_path": "documentation/ObjectiveC/objc_inline.md",
+      "hash": "9e0fe9af3b7e5d3ba70e7ea59b5d5d4f872f4532b53e3c9b9f4829c2a89a5c99"
+    },
     "https://developer.apple.com/documentation/objectivec/objc_is_finalized(_:)": {
       "etag": "\"7d70-65d55e95a22da-df\"",
       "file_path": "documentation/ObjectiveC/objc_is_finalized(_).md",
       "hash": "f04e721604623aad6080619855728d58dcb7e2dbf7105bc0284e60d607349826"
+    },
+    "https://developer.apple.com/documentation/objectivec/objc_isa_availability": {
+      "etag": "\"2849-65d55e940c897-df\"",
+      "file_path": "documentation/ObjectiveC/objc_isa_availability.md",
+      "hash": "f69c2903fe557bd172beeb2a9e83a3ae1f6a273e427ed344e5c2db2f759838ee"
     },
     "https://developer.apple.com/documentation/objectivec/objc_loadweak(_:)": {
       "etag": "\"44ce-65d55e940c897-df\"",
@@ -2720,6 +3545,36 @@
       "file_path": "documentation/ObjectiveC/objc_method_description/types.md",
       "hash": "3aef76f00a3c450f80dc3b8a501e5c12ebf5296d14274061a2b9aa6f421f5331"
     },
+    "https://developer.apple.com/documentation/objectivec/objc_msgsend": {
+      "etag": "\"1d29-65d55e95a22da-df\"",
+      "file_path": "documentation/ObjectiveC/objc_msgsend.md",
+      "hash": "0a650fabc083fdb15546a39f73799cadb36d688bea8ad71ce70f7ee6de44df99"
+    },
+    "https://developer.apple.com/documentation/objectivec/objc_msgsend_fp2ret": {
+      "etag": "\"2cf1-65d55e958227b-df\"",
+      "file_path": "documentation/ObjectiveC/objc_msgsend_fp2ret.md",
+      "hash": "c5c9d8288519a9f124855b249f15e20b2dcebc144114f0978f0b98e753f3af09"
+    },
+    "https://developer.apple.com/documentation/objectivec/objc_msgsend_fpret": {
+      "etag": "\"1ac9-65d55e958227b-df\"",
+      "file_path": "documentation/ObjectiveC/objc_msgsend_fpret.md",
+      "hash": "b467eb5d45fba04179dfa977d8345fab56fd017ba514895a42e46a502d8b84bc"
+    },
+    "https://developer.apple.com/documentation/objectivec/objc_msgsend_stret": {
+      "etag": "\"1dd3-65d55e96227ea-df\"",
+      "file_path": "documentation/ObjectiveC/objc_msgsend_stret.md",
+      "hash": "181f2c981525c8644d21561476e90ad764c3a05fe92569a0a24efaafb1783534"
+    },
+    "https://developer.apple.com/documentation/objectivec/objc_msgsendsuper": {
+      "etag": "\"258c-65d55e958227b-df\"",
+      "file_path": "documentation/ObjectiveC/objc_msgsendsuper.md",
+      "hash": "7e4c3a86354f0dd1ecab072d782ccdb7a4faf51a2137d7f75bc53e9f23abc4b8"
+    },
+    "https://developer.apple.com/documentation/objectivec/objc_msgsendsuper_stret": {
+      "etag": "\"237c-65d55e95e964e-df\"",
+      "file_path": "documentation/ObjectiveC/objc_msgsendsuper_stret.md",
+      "hash": "a8540a2601a0cc62f94baf279d0b0db403ab60744f5bda9abe61d3dd627b6b19"
+    },
     "https://developer.apple.com/documentation/objectivec/objc_no_gc": {
       "etag": "\"3354-65d55e9563c47-df\"",
       "file_path": "documentation/ObjectiveC/objc_no_gc.md",
@@ -2729,6 +3584,21 @@
       "etag": "\"48e8-65d55e963ce9f-df\"",
       "file_path": "documentation/ObjectiveC/objc_no_gc_api.md",
       "hash": "46a058739881610cdc44713c4961ab947a0d044b28dd36515c8dcbc608a51cfb"
+    },
+    "https://developer.apple.com/documentation/objectivec/objc_noescape": {
+      "etag": "\"27e9-65d55e95a22da-df\"",
+      "file_path": "documentation/ObjectiveC/objc_noescape.md",
+      "hash": "63e1d09204f8a9ae7555c2ca048f52369c26f12a32a45d70cd3179b86086db47"
+    },
+    "https://developer.apple.com/documentation/objectivec/objc_noreturn": {
+      "etag": "\"27e9-65d55e95a22da-df\"",
+      "file_path": "documentation/ObjectiveC/objc_noreturn.md",
+      "hash": "488049e3c8777ae8cfc5ee5ce248c252b834bb12548be62e1aa79cc61393e4d9"
+    },
+    "https://developer.apple.com/documentation/objectivec/objc_not_tail_called": {
+      "etag": "\"283d-65d55e963ce9f-df\"",
+      "file_path": "documentation/ObjectiveC/objc_not_tail_called.md",
+      "hash": "194994c65beeb08b466b6baa00365dfd6cf055e0559bbf22eed3246a07049373"
     },
     "https://developer.apple.com/documentation/objectivec/objc_object": {
       "etag": "\"27f1-65d55e95e964e-df\"",
@@ -2754,6 +3624,21 @@
       "etag": "\"4a63-65d55e95a22da-df\"",
       "file_path": "documentation/ObjectiveC/objc_old_dispatch_prototypes.md",
       "hash": "3ced0769faa47573727bae1ccb38e2f7f1de5d4eaf3a88feab87e6449c9281c9"
+    },
+    "https://developer.apple.com/documentation/objectivec/objc_options": {
+      "etag": "\"287f-65d55e96227ea-df\"",
+      "file_path": "documentation/ObjectiveC/objc_options.md",
+      "hash": "f7d8e694ec00c23e01cac333e5ced7ebea22460ef55033ee8ac39f9e45d1c296"
+    },
+    "https://developer.apple.com/documentation/objectivec/objc_osx_available_others_unavailable": {
+      "etag": "\"2966-65d55e95c2ae2-df\"",
+      "file_path": "documentation/ObjectiveC/objc_osx_available_others_unavailable.md",
+      "hash": "86f031636c45e1852a4b1f7708c0da4d9eb7c493671ea96144923ef2cc1d4bcf"
+    },
+    "https://developer.apple.com/documentation/objectivec/objc_osx_deprecated_others_unavailable": {
+      "etag": "\"29fa-65d55e95c2ae2-df\"",
+      "file_path": "documentation/ObjectiveC/objc_osx_deprecated_others_unavailable.md",
+      "hash": "bf04e2407530f22e2601c72907d70e0d8206eb034a77c8f03cfbb899a65eb256"
     },
     "https://developer.apple.com/documentation/objectivec/objc_property_attribute_t": {
       "etag": "\"48d8-65d55e958227b-df\"",
@@ -2785,10 +3670,20 @@
       "file_path": "documentation/ObjectiveC/objc_ratio_collection.md",
       "hash": "944145fb3a6dd7c12e6aab3c5db27dbddd6d210e3408c11a493946d53aaacb86"
     },
+    "https://developer.apple.com/documentation/objectivec/objc_read_weak": {
+      "etag": "\"2d9c-65d55e9602ae6-df\"",
+      "file_path": "documentation/ObjectiveC/objc_read_weak.md",
+      "hash": "77cafa4d77dd29953e4d44aab379287326015cc20e484ea53100e0fa94770933"
+    },
     "https://developer.apple.com/documentation/objectivec/objc_realizeclassfromswift_defined": {
       "etag": "\"49ce-65d55e963ce9f-df\"",
       "file_path": "documentation/ObjectiveC/objc_realizeclassfromswift_defined.md",
       "hash": "1b061190cbab63f8296e292157f9bc3cd4c16f2f7e11f24584fff6cc6f503ed5"
+    },
+    "https://developer.apple.com/documentation/objectivec/objc_refined_for_swift": {
+      "etag": "\"2855-65d55e96227ea-df\"",
+      "file_path": "documentation/ObjectiveC/objc_refined_for_swift.md",
+      "hash": "6d4bd6396b04be363c8a1414f2c2584888a180ba8bd614ceb7cae8474783889e"
     },
     "https://developer.apple.com/documentation/objectivec/objc_registerclasspair(_:)": {
       "etag": "\"313c-65d55e95a22da-df\"",
@@ -2814,6 +3709,16 @@
       "etag": "\"7701-65d55e95e964e-df\"",
       "file_path": "documentation/ObjectiveC/objc_removeexceptionhandler(_).md",
       "hash": "51631a02ad5fabb32194c731ee7c4932047eba6b9bd30f5d453ab5dad70a3bcb"
+    },
+    "https://developer.apple.com/documentation/objectivec/objc_returns_retained": {
+      "etag": "\"2849-65d55e95c2ae2-df\"",
+      "file_path": "documentation/ObjectiveC/objc_returns_retained.md",
+      "hash": "f170626522e330969062d33aae09bd5b2d2197e4a509ef93c6b1808e40fc06ff"
+    },
+    "https://developer.apple.com/documentation/objectivec/objc_root_class": {
+      "etag": "\"d86-65d55e95c2ae2-df\"",
+      "file_path": "documentation/ObjectiveC/objc_root_class.md",
+      "hash": "0e51cb9016426fd66cb9edbb717af42bf05da72187a9ca17d6e9a532c707ad29"
     },
     "https://developer.apple.com/documentation/objectivec/objc_set_collection_ratio(_:)": {
       "etag": "\"7943-65d55e963ce9f-df\"",
@@ -2900,6 +3805,11 @@
       "file_path": "documentation/ObjectiveC/objc_storeweak(_,_).md",
       "hash": "7e869d4adeaf5f8835bef565d5eee6c8c81f97f07124db841f2fa49bd90c6731"
     },
+    "https://developer.apple.com/documentation/objectivec/objc_super-c.macro": {
+      "etag": "\"27ed-65d55e940c897-df\"",
+      "file_path": "documentation/ObjectiveC/objc_super-c.macro.md",
+      "hash": "e2dfdb1bd2fd10f0d778e2ebcefd58037bc2d11932003f48df2ca459ce26874e"
+    },
     "https://developer.apple.com/documentation/objectivec/objc_super-swift.struct": {
       "etag": "\"328a-65d55e95e964e-df\"",
       "file_path": "documentation/ObjectiveC/objc_super-swift.struct.md",
@@ -2920,6 +3830,21 @@
       "file_path": "documentation/ObjectiveC/objc_super-swift.struct/super_class.md",
       "hash": "d4ba232f4b8a4d950fe6bc5ffbba8fc92a27c6458267e0db73c3bff44fa1a5d6"
     },
+    "https://developer.apple.com/documentation/objectivec/objc_swift_unavailable": {
+      "etag": "\"28b2-65d55e95a22da-df\"",
+      "file_path": "documentation/ObjectiveC/objc_swift_unavailable.md",
+      "hash": "3b6f5b187f7df118926480023173b2479b581b4afb3655de60ddf39c8961af1d"
+    },
+    "https://developer.apple.com/documentation/objectivec/objc_sync_enter": {
+      "etag": "\"3156-65d55e958227b-df\"",
+      "file_path": "documentation/ObjectiveC/objc_sync_enter.md",
+      "hash": "64ea274e3d654b74deff2d80a4ca88198b8e4a8bb71d2ed0fd8dbd7316e10592"
+    },
+    "https://developer.apple.com/documentation/objectivec/objc_sync_exit": {
+      "etag": "\"305a-65d55e958227b-df\"",
+      "file_path": "documentation/ObjectiveC/objc_sync_exit.md",
+      "hash": "03e901b880343556a689d6989cb85232635d160fc4014b4828d59b461963f12b"
+    },
     "https://developer.apple.com/documentation/objectivec/objc_sync_not_owning_thread_error": {
       "etag": "\"3d68-65d55e95c2ae2-df\"",
       "file_path": "documentation/ObjectiveC/objc_sync_not_owning_thread_error.md",
@@ -2935,6 +3860,11 @@
       "file_path": "documentation/ObjectiveC/objc_terminate().md",
       "hash": "dc9749e8c95635c22fb91c5baf8613b01dd04a578322c351d4386abda7d67649"
     },
+    "https://developer.apple.com/documentation/objectivec/objc_unavailable": {
+      "etag": "\"286a-65d55e9602ae6-df\"",
+      "file_path": "documentation/ObjectiveC/objc_unavailable.md",
+      "hash": "aeb7d26a3070bb27cf976aa27deaa5c5ca4fd4704836398a351816e576956b54"
+    },
     "https://developer.apple.com/documentation/objectivec/objc_uncaught_exception_handler": {
       "etag": "\"4a71-65d55e95a22da-df\"",
       "file_path": "documentation/ObjectiveC/objc_uncaught_exception_handler.md",
@@ -2944,6 +3874,11 @@
       "etag": "\"7445-65d55e96227ea-df\"",
       "file_path": "documentation/ObjectiveC/objc_unregisterthreadwithcollector().md",
       "hash": "b8c6846e2854e534c19b393f6afe754bd4eca4c07a8c3bd57dac7cc6315aed14"
+    },
+    "https://developer.apple.com/documentation/objectivec/objc_visible": {
+      "etag": "\"27dd-65d55e963ce9f-df\"",
+      "file_path": "documentation/ObjectiveC/objc_visible.md",
+      "hash": "9b499f462dbccd5a2c4c7a5333e98eea5cc85344a2498a62015dcc127a87fb1e"
     },
     "https://developer.apple.com/documentation/objectivec/objc_wait_until_done": {
       "etag": "\"3cf7-65d55e9602ae6-df\"",
@@ -3020,6 +3955,21 @@
       "file_path": "documentation/ObjectiveC/objcenumerationimage/machheader(_).md",
       "hash": "ab137662dd71a516d488254ddeec5b900079473077fff3a6edf784b1488a55d1"
     },
+    "https://developer.apple.com/documentation/objectivec/object_copy": {
+      "etag": "\"34ec-65d55e95c2ae2-df\"",
+      "file_path": "documentation/ObjectiveC/object_copy.md",
+      "hash": "47684fe986573a377e09841af0fdb9a107e19f6139947caf4eff9c7a42ebe293"
+    },
+    "https://developer.apple.com/documentation/objectivec/object_copyfromzone": {
+      "etag": "\"3031-65d55e96227ea-df\"",
+      "file_path": "documentation/ObjectiveC/object_copyfromzone.md",
+      "hash": "6907903e3c6497d34b1f6bffd67883f4974bae4bdf62974e5d5f81f83bacba46"
+    },
+    "https://developer.apple.com/documentation/objectivec/object_dispose": {
+      "etag": "\"3254-65d55e940c897-df\"",
+      "file_path": "documentation/ObjectiveC/object_dispose.md",
+      "hash": "e19a35544d86c12f0a2cf84fd58f95127d9da31520aa716c69fd976dbe76f55c"
+    },
     "https://developer.apple.com/documentation/objectivec/object_getclass(_:)": {
       "etag": "\"44b8-65d55e958227b-df\"",
       "file_path": "documentation/ObjectiveC/object_getclass(_).md",
@@ -3035,6 +3985,11 @@
       "file_path": "documentation/ObjectiveC/object_getindexedivars(_).md",
       "hash": "fb986d5ce26325f888944a4dac5de8bd9a78b5e5d2c149ca1a7dc4498a0a02f0"
     },
+    "https://developer.apple.com/documentation/objectivec/object_getinstancevariable": {
+      "etag": "\"3b04-65d55e96227ea-df\"",
+      "file_path": "documentation/ObjectiveC/object_getinstancevariable.md",
+      "hash": "c712f42b16824a1185b5cb5bc5dcec1cc64b2315467c9c15b40589f9ccb1c2ca"
+    },
     "https://developer.apple.com/documentation/objectivec/object_getivar(_:_:)": {
       "etag": "\"4a0b-65d55e95a22da-df\"",
       "file_path": "documentation/ObjectiveC/object_getivar(_,_).md",
@@ -3049,6 +4004,16 @@
       "etag": "\"4806-65d55e96227ea-df\"",
       "file_path": "documentation/ObjectiveC/object_setclass(_,_).md",
       "hash": "72291eeb1acf01deac64426daf2383bf43005e18c2dd5871b434afa3dd9661af"
+    },
+    "https://developer.apple.com/documentation/objectivec/object_setinstancevariable": {
+      "etag": "\"3ae1-65d55e95e964e-df\"",
+      "file_path": "documentation/ObjectiveC/object_setinstancevariable.md",
+      "hash": "f621a4824721900636aa07a34575a1b77c4a91b4957a98bedb32d49c85b251ee"
+    },
+    "https://developer.apple.com/documentation/objectivec/object_setinstancevariablewithstrongdefault": {
+      "etag": "\"3526-65d55e96227ea-df\"",
+      "file_path": "documentation/ObjectiveC/object_setinstancevariablewithstrongdefault.md",
+      "hash": "91af4a4542aa9d968a07d9fd2b7a49c9188ca5c0a72832e843fc20f7f56a6f14"
     },
     "https://developer.apple.com/documentation/objectivec/object_setivar(_:_:_:)": {
       "etag": "\"485b-65d55e96227ea-df\"",
@@ -3084,6 +4049,11 @@
       "etag": "\"59fe-65902851ae654-df\"",
       "file_path": "documentation/ObjectiveC/objective-c-macros.md",
       "hash": "3b0123ce227fa264137598dbd28b2bc775a274aae072cef33a72abb9e51d7eed"
+    },
+    "https://developer.apple.com/documentation/objectivec/objective-c-root-class": {
+      "etag": "\"1541-65902851f55c5-df\"",
+      "file_path": "documentation/ObjectiveC/objective-c-root-class.md",
+      "hash": "32467da1db11fbe22448d0d956468b46574554bf262c669d362df894298bbf6d"
     },
     "https://developer.apple.com/documentation/objectivec/objective-c-runtime": {
       "etag": "\"2e0f2-65902851d33a9-df\"",
@@ -3180,6 +4150,11 @@
       "file_path": "documentation/ObjectiveC/protocol_isequal(_,_).md",
       "hash": "5b5750e9c58b25aa621aade26bef59f2e204680aad2cb2fc19f317cbce1cd070"
     },
+    "https://developer.apple.com/documentation/objectivec/sel": {
+      "etag": "\"3801-65d55e95a22da-df\"",
+      "file_path": "documentation/ObjectiveC/sel.md",
+      "hash": "bcc6b7649b2e10be25524280690c32ee6e02a0bf9e93cfc8682d147c80945444"
+    },
     "https://developer.apple.com/documentation/objectivec/sel_getname(_:)": {
       "etag": "\"3806-65d55e95a22da-df\"",
       "file_path": "documentation/ObjectiveC/sel_getname(_).md",
@@ -3270,6 +4245,11 @@
       "file_path": "documentation/ObjectiveC/webscripting.md",
       "hash": "c448ebf836e84e03d091baeb9068128e9c34318f105d08e8f03862d12276879b"
     },
+    "https://developer.apple.com/documentation/objectivec/yes": {
+      "etag": "\"10f1-65d55e958227b-df\"",
+      "file_path": "documentation/ObjectiveC/yes.md",
+      "hash": "9cb10f23eb3e84f532fef10667a37c90bbcb0880580ce8fb42f743fc75990fdf"
+    },
     "https://developer.apple.com/tutorials/data/documentation/ObjectiveC.json": {
       "etag": "\"31d2-65d55e940c897-df\"",
       "file_path": "documentation/ObjectiveC/ObjectiveC.md",
@@ -3305,10 +4285,25 @@
       "file_path": "documentation/ObjectiveC/binding-dictionary-keys.md",
       "hash": "8a9e231282eb780ae1e2fe63ceb0698719c6e8cc2a6232ce2abe4451e545df50"
     },
+    "https://developer.apple.com/tutorials/data/documentation/objectivec/bool.json": {
+      "etag": "\"1425-65d55e95a22da-df\"",
+      "file_path": "documentation/ObjectiveC/bool.md",
+      "hash": "162d46e449d8d631a814e27031f97a043cbea1f8c29f6ca6783a657a45427282"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/objectivec/boolean-values.json": {
+      "etag": "\"15ff-65902851d33a9-df\"",
+      "file_path": "documentation/ObjectiveC/boolean-values.md",
+      "hash": "0c049b753637da2329f60c07242757459eefb6cf6e33feee2eb00b53b78d5f51"
+    },
     "https://developer.apple.com/tutorials/data/documentation/objectivec/category.json": {
       "etag": "\"3930-65d55e9602ae6-df\"",
       "file_path": "documentation/ObjectiveC/category.md",
       "hash": "7efe3522373ed91d4c55a71eafaf13a925e055ba1927effa9c341f87bac9b6ee"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/objectivec/class.json": {
+      "etag": "\"2dfd-65d55e95e964e-df\"",
+      "file_path": "documentation/ObjectiveC/class.md",
+      "hash": "4f7d5d628d58fcf794009ff44736bda4e2a6676f3b52428a328e70663a2e6ef5"
     },
     "https://developer.apple.com/tutorials/data/documentation/objectivec/class_addivar(_:_:_:_:_:).json": {
       "etag": "\"ab5d-65d55e96227ea-df\"",
@@ -3359,6 +4354,11 @@
       "etag": "\"2db1-65d55e95c2ae2-df\"",
       "file_path": "documentation/ObjectiveC/class_createinstance(_,_).md",
       "hash": "f2ad903756405c715af3f68ed519c730e2077a996e4a2f8b32a70ecd5965c0c1"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/objectivec/class_createinstancefromzone.json": {
+      "etag": "\"3246-65d55e95c2ae2-df\"",
+      "file_path": "documentation/ObjectiveC/class_createinstancefromzone.md",
+      "hash": "42e0f212552fa2e269e966172bc84325c3fd16b811f38153123255e0356ed989"
     },
     "https://developer.apple.com/tutorials/data/documentation/objectivec/class_getclassmethod(_:_:).json": {
       "etag": "\"963e-65d55e95e964e-df\"",
@@ -3485,6 +4485,16 @@
       "file_path": "documentation/ObjectiveC/deprecated-symbols.md",
       "hash": "4d97f3ed44f520c3d608db14c79159123fd47f35ef3ba6bdcefc8a0e6bfd8e1a"
     },
+    "https://developer.apple.com/tutorials/data/documentation/objectivec/dispatch-function-prototypes.json": {
+      "etag": "\"18ec-6590285170389-df\"",
+      "file_path": "documentation/ObjectiveC/dispatch-function-prototypes.md",
+      "hash": "e9cf66aa8d94e79d50c8e078bbc9a7cfe38b9aa11bec85662ed92332a91b7fde"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/objectivec/id.json": {
+      "etag": "\"1d9b-65d55e96227ea-df\"",
+      "file_path": "documentation/ObjectiveC/id.md",
+      "hash": "797265f13173250f4fecdae11fc46fe0d2011ca2b8484f6924cc8b2d7b73af28"
+    },
     "https://developer.apple.com/tutorials/data/documentation/objectivec/imp.json": {
       "etag": "\"3b39-65d55e95e964e-df\"",
       "file_path": "documentation/ObjectiveC/imp.md",
@@ -3529,6 +4539,11 @@
       "etag": "\"236d-65902851ae654-df\"",
       "file_path": "documentation/ObjectiveC/key-value-coding-exception-names.md",
       "hash": "8790206576626f73111fc94f9b2c592af020a02b6d9d8cd4dcef89ff7ba464dd"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/objectivec/local-variable-storage-duration.json": {
+      "etag": "\"15c1-659028526f9c8-df\"",
+      "file_path": "documentation/ObjectiveC/local-variable-storage-duration.md",
+      "hash": "a592498d1026b12ecd92142cdbedc256ab1fdcf5865f8f5ee3532f02cedd23c7"
     },
     "https://developer.apple.com/tutorials/data/documentation/objectivec/method.json": {
       "etag": "\"3ccf-65d55e963ce9f-df\"",
@@ -3585,10 +4600,40 @@
       "file_path": "documentation/ObjectiveC/method_gettypeencoding(_).md",
       "hash": "7d5dc9e4f9978fba97eba0ea9c1e4aca7eabc03954dd73c716d0c26288fe1002"
     },
+    "https://developer.apple.com/tutorials/data/documentation/objectivec/method_invoke.json": {
+      "etag": "\"5213-65d55e95e964e-df\"",
+      "file_path": "documentation/ObjectiveC/method_invoke.md",
+      "hash": "bbd5da0b4b0385abec108b129197fa6cb58db08b78f0fc26049a1946be52b067"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/objectivec/method_invoke_stret.json": {
+      "etag": "\"5085-65d55e96227ea-df\"",
+      "file_path": "documentation/ObjectiveC/method_invoke_stret.md",
+      "hash": "e8b8ddfae76482f167951aecedbb0657e2ac435b200998133607e9e83a4485df"
+    },
     "https://developer.apple.com/tutorials/data/documentation/objectivec/method_setimplementation(_:_:).json": {
       "etag": "\"65ea-65d55e96227ea-df\"",
       "file_path": "documentation/ObjectiveC/method_setimplementation(_,_).md",
       "hash": "53950cd84d5a112b40d8ca42c298ecef4888ce663b4bdf1e18c629fa0ef72cee"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/objectivec/nil-227m0.json": {
+      "etag": "\"c92-65d55e940c897-df\"",
+      "file_path": "documentation/ObjectiveC/nil-227m0.md",
+      "hash": "aa67a8806a300638db2df654ba1dc85f4e0ba9d5f181d311772fbf4ec8bcc591"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/objectivec/nil-565ns.json": {
+      "etag": "\"c10-65d55e963ce9f-df\"",
+      "file_path": "documentation/ObjectiveC/nil-565ns.md",
+      "hash": "965ca84d5b0f2863044d79b00e28964d9eb030a9a31f88a2c4dc5823d701955b"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/objectivec/no.json": {
+      "etag": "\"10ea-65d55e963ce9f-df\"",
+      "file_path": "documentation/ObjectiveC/no.md",
+      "hash": "2dba48be180ae18571dc46d3b07c46bb3da689e35acf89bedfbc5a1e649cb60d"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/objectivec/ns_designated_initializer.json": {
+      "etag": "\"2825-65d55e95a22da-df\"",
+      "file_path": "documentation/ObjectiveC/ns_designated_initializer.md",
+      "hash": "6a1ccf9fc1b10ae96a4817e21da36fee6a001a74159c65645508b2e316fce0f4"
     },
     "https://developer.apple.com/tutorials/data/documentation/objectivec/ns_enforce_nsobject_designated_initializer.json": {
       "etag": "\"4a16-65d55e95c2ae2-df\"",
@@ -3600,10 +4645,20 @@
       "file_path": "documentation/ObjectiveC/nsinteger.md",
       "hash": "ebf97e41d462c1c9e15ff4373ce72bfc263e7806855a0d3201e0846cd714dc88"
     },
+    "https://developer.apple.com/tutorials/data/documentation/objectivec/nsinteger_defined.json": {
+      "etag": "\"27f5-65d55e95c2ae2-df\"",
+      "file_path": "documentation/ObjectiveC/nsinteger_defined.md",
+      "hash": "efdf1f81d0ecc82bf41d02e3f7a70a1fb1e66aa899db1152c7fb8818b1340be2"
+    },
     "https://developer.apple.com/tutorials/data/documentation/objectivec/nsintegermax.json": {
       "etag": "\"4932-65d55e95e964e-df\"",
       "file_path": "documentation/ObjectiveC/nsintegermax.md",
       "hash": "b393fe334dfc9615540c7d6bba9748908c34deea1f96e0a1df844417bd327da6"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/objectivec/nsintegermin.json": {
+      "etag": "\"fd0-65d55e95a22da-df\"",
+      "file_path": "documentation/ObjectiveC/nsintegermin.md",
+      "hash": "d02ab52900a61010c73b2d4315a98629450b00274cd87c3ff00b0937e6a07a5e"
     },
     "https://developer.apple.com/tutorials/data/documentation/objectivec/nskeyvaluebindingcreation.json": {
       "etag": "\"6bba-65902852432cd-df\"",
@@ -3619,6 +4674,36 @@
       "etag": "\"9aeb-65902851ae654-df\"",
       "file_path": "documentation/ObjectiveC/nskeyvalueobserving.md",
       "hash": "cf1e0fbe80fe117809ee4328d178116833c5d2bc2c384cc1c6b1551c75d9bf93"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/objectivec/nsobject-c.protocol/autorelease.json": {
+      "etag": "\"23ca-65d55e95a22da-df\"",
+      "file_path": "documentation/ObjectiveC/nsobject-c.protocol/autorelease.md",
+      "hash": "1968eb7cffee22cc1f0b257f3dd798ad017855be3b48da1b8f51fc3ec5d41d4b"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/objectivec/nsobject-c.protocol/class.json": {
+      "etag": "\"1da1-65d55e95a22da-df\"",
+      "file_path": "documentation/ObjectiveC/nsobject-c.protocol/class.md",
+      "hash": "443385e368ceea06bf7ce3541d554c74162839e96c46f3d471824282e1327283"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/objectivec/nsobject-c.protocol/release.json": {
+      "etag": "\"2749-65d55e95a22da-df\"",
+      "file_path": "documentation/ObjectiveC/nsobject-c.protocol/release.md",
+      "hash": "9e7ea561c15e383476f7dfe09089675611f673fc1172f02944646bdd6357400a"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/objectivec/nsobject-c.protocol/retain.json": {
+      "etag": "\"2a66-65d55e95a22da-df\"",
+      "file_path": "documentation/ObjectiveC/nsobject-c.protocol/retain.md",
+      "hash": "79283b10b4426f04d65479874ca43932a7f340f03b69f0b8018a4c8a33f43857"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/objectivec/nsobject-c.protocol/retaincount.json": {
+      "etag": "\"28f9-65d55e95a22da-df\"",
+      "file_path": "documentation/ObjectiveC/nsobject-c.protocol/retaincount.md",
+      "hash": "dbbe093101e4e5ff81c2a1c1d15870b4dcabd66c981900c15a4684ee101955f5"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/objectivec/nsobject-c.protocol/zone.json": {
+      "etag": "\"1b41-65d55e95a22da-df\"",
+      "file_path": "documentation/ObjectiveC/nsobject-c.protocol/zone.md",
+      "hash": "48ae8160e2717ec9be366eda332f6339f86d5435e11093222d9a5e106adf0609"
     },
     "https://developer.apple.com/tutorials/data/documentation/objectivec/nsobject-swift.class.json": {
       "etag": "\"77071-65d55e95c2ae2-df\"",
@@ -4145,6 +5230,21 @@
       "file_path": "documentation/ObjectiveC/nsobject-swift.class/addobserver(_,forkeypath,options,context).md",
       "hash": "0c2db34d4359730cec4e58f85b2fe2733e0ed367b2663d000fe1bc8660a0f16c"
     },
+    "https://developer.apple.com/tutorials/data/documentation/objectivec/nsobject-swift.class/alloc.json": {
+      "etag": "\"332b-65d55e94e4f43-df\"",
+      "file_path": "documentation/ObjectiveC/nsobject-swift.class/alloc.md",
+      "hash": "38778f24fe9c388e4c821161d517cce6942a0a1898f38663a298de8c71bb84c3"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/objectivec/nsobject-swift.class/allocwithzone:.json": {
+      "etag": "\"3416-65d55e94cb1d4-df\"",
+      "file_path": "documentation/ObjectiveC/nsobject-swift.class/allocwithzone_.md",
+      "hash": "14ea71fbd9eedc0975a31128d92ade817398f563e5cfa3138f5a0af63994ac81"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/objectivec/nsobject-swift.class/application:delegatehandleskey:.json": {
+      "etag": "\"4608-65d55e952e551-df\"",
+      "file_path": "documentation/ObjectiveC/nsobject-swift.class/application_delegatehandleskey_.md",
+      "hash": "f5a2d31573a3d1b6305281fd5eb5950b2b0524ee5085593dcdd3568c6dbd95db"
+    },
     "https://developer.apple.com/tutorials/data/documentation/objectivec/nsobject-swift.class/attemptrecovery(fromerror:optionindex:).json": {
       "etag": "\"3ebc-65d55e954715d-df\"",
       "file_path": "documentation/ObjectiveC/nsobject-swift.class/attemptrecovery(fromerror,optionindex).md",
@@ -4154,6 +5254,16 @@
       "etag": "\"50e3-65d55e94cb1d4-df\"",
       "file_path": "documentation/ObjectiveC/nsobject-swift.class/attemptrecovery(fromerror,optionindex,delegate,didrecoverselector,contextinfo).md",
       "hash": "ec1c5eb2868506f19a44f5677795e11fcc7d0d0443ed025b7ccf7db505c21e9e"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/objectivec/nsobject-swift.class/attributedstringforidentitypropertieswithnames:inrecord:comparisonrecords:firstlineattributes:secondlineattributes:.json": {
+      "etag": "\"24a1-65d55e94cb1d4-df\"",
+      "file_path": "documentation/ObjectiveC/nsobject-swift.class/attributedstringforidentitypropertieswithnames_inrecord_comparisonrecords_firstlineattributes_secondlineattributes_.md",
+      "hash": "0f8a2accb87846df5bff62fd0d9b1c593483b60c86be122f227148ace8d9bb71"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/objectivec/nsobject-swift.class/attributedstringforpropertieswithnames:inrecord:comparisonrecords:defaultattributes:.json": {
+      "etag": "\"21cb-65d55e952e551-df\"",
+      "file_path": "documentation/ObjectiveC/nsobject-swift.class/attributedstringforpropertieswithnames_inrecord_comparisonrecords_defaultattributes_.md",
+      "hash": "4f8f6aaf59bebee1d6f6d621773f74e75efb7faac04df4e597a29cc1972b2e79"
     },
     "https://developer.apple.com/tutorials/data/documentation/objectivec/nsobject-swift.class/attributekeys.json": {
       "etag": "\"3c01-65d55e952e551-df\"",
@@ -4265,6 +5375,11 @@
       "file_path": "documentation/ObjectiveC/nsobject-swift.class/browseraccessibilityimagedata(_).md",
       "hash": "77a294a4b831f3319e1e65dab4022ffaed1a1f76e925be8c72e52b92b7a00de3"
     },
+    "https://developer.apple.com/tutorials/data/documentation/objectivec/nsobject-swift.class/browseraccessibilityimagedatasize-c.method.json": {
+      "etag": "\"1700-65d55e942e988-df\"",
+      "file_path": "documentation/ObjectiveC/nsobject-swift.class/browseraccessibilityimagedatasize-c.method.md",
+      "hash": "b14fd9b2ff0cf568acc5d14b3b9aedeb2986c7bb16461accb3a4d2705be0c3be"
+    },
     "https://developer.apple.com/tutorials/data/documentation/objectivec/nsobject-swift.class/browseraccessibilityimagedatasize-swift.property.json": {
       "etag": "\"1816-65d55e954715d-df\"",
       "file_path": "documentation/ObjectiveC/nsobject-swift.class/browseraccessibilityimagedatasize-swift.property.md",
@@ -4355,10 +5470,25 @@
       "file_path": "documentation/ObjectiveC/nsobject-swift.class/certificatepanelshowhelp(_).md",
       "hash": "837364ea84965fd154d0a3f553ea21a8b98439f108fa265a962c64bc84d32893"
     },
+    "https://developer.apple.com/tutorials/data/documentation/objectivec/nsobject-swift.class/changecolor:.json": {
+      "etag": "\"1797-65d55e954715d-df\"",
+      "file_path": "documentation/ObjectiveC/nsobject-swift.class/changecolor_.md",
+      "hash": "3a0857e84e4f9664f567da0e32b07f85accd12664db21705318f14de31fa3997"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/objectivec/nsobject-swift.class/changefont:.json": {
+      "etag": "\"6096-65d55e94e4f43-df\"",
+      "file_path": "documentation/ObjectiveC/nsobject-swift.class/changefont_.md",
+      "hash": "a169920c2d6a71f5999cdf416742dc59edb9b05559786aecb51af2d9db2f60d2"
+    },
     "https://developer.apple.com/tutorials/data/documentation/objectivec/nsobject-swift.class/chooseidentitypanelshowhelp(_:).json": {
       "etag": "\"353b-65d55e942e988-df\"",
       "file_path": "documentation/ObjectiveC/nsobject-swift.class/chooseidentitypanelshowhelp(_).md",
       "hash": "9ac3cccdd9fd2ca8231f35f1918db2cc0363b739d64c582c0693d0f9584b50b1"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/objectivec/nsobject-swift.class/class.json": {
+      "etag": "\"355e-65d55e94e4f43-df\"",
+      "file_path": "documentation/ObjectiveC/nsobject-swift.class/class.md",
+      "hash": "4cc5ba42c4dada76b5e1aaa770ba4792657cc48a13e19e1e04b2aec262bf0151"
     },
     "https://developer.apple.com/tutorials/data/documentation/objectivec/nsobject-swift.class/classcode.json": {
       "etag": "\"426a-65d55e952e551-df\"",
@@ -4395,6 +5525,11 @@
       "file_path": "documentation/ObjectiveC/nsobject-swift.class/classforkeyedunarchiver().md",
       "hash": "4030b4fb7e5e0bc79f772b8b39c0d6e6501bb800ef3d929aa5f38ef08ee784d0"
     },
+    "https://developer.apple.com/tutorials/data/documentation/objectivec/nsobject-swift.class/classforportcoder.json": {
+      "etag": "\"5612-65d55e94cb1d4-df\"",
+      "file_path": "documentation/ObjectiveC/nsobject-swift.class/classforportcoder.md",
+      "hash": "d85699d8e2b4dc4d0e9a239c1974ecf133da9a77e55013eb439750bf1baba1b0"
+    },
     "https://developer.apple.com/tutorials/data/documentation/objectivec/nsobject-swift.class/classname.json": {
       "etag": "\"44a9-65d55e950be40-df\"",
       "file_path": "documentation/ObjectiveC/nsobject-swift.class/classname.md",
@@ -4409,6 +5544,21 @@
       "etag": "\"1e88-65d55e950be40-df\"",
       "file_path": "documentation/ObjectiveC/nsobject-swift.class/commitcomposition(_).md",
       "hash": "691f2722f37024395246d700536b743f3f55d6052d028ee997fb9b36ac31d269"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/objectivec/nsobject-swift.class/commitediting.json": {
+      "etag": "\"1c4c-65d55e942e988-df\"",
+      "file_path": "documentation/ObjectiveC/nsobject-swift.class/commitediting.md",
+      "hash": "a4cbcbb3ffb22b3382f5511b2e423229e91f4acf2688f952fa2aaa9f3d1fc04e"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/objectivec/nsobject-swift.class/commiteditingandreturnerror:.json": {
+      "etag": "\"2848-65d55e952e551-df\"",
+      "file_path": "documentation/ObjectiveC/nsobject-swift.class/commiteditingandreturnerror_.md",
+      "hash": "0dd6a0cea0103ecc3ac5c1e8690139c893c67c1ac4d82402d51f39a583ec18ed"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/objectivec/nsobject-swift.class/commiteditingwithdelegate:didcommitselector:contextinfo:.json": {
+      "etag": "\"1c3d-65d55e94e4f43-df\"",
+      "file_path": "documentation/ObjectiveC/nsobject-swift.class/commiteditingwithdelegate_didcommitselector_contextinfo_.md",
+      "hash": "1781f638bb1b3f7ca44a930a457b8b3deb224c532b1397dfd5fc4574cb3c4fef"
     },
     "https://developer.apple.com/tutorials/data/documentation/objectivec/nsobject-swift.class/composedstring(_:).json": {
       "etag": "\"2219-65d55e94e4f43-df\"",
@@ -4445,6 +5595,21 @@
       "file_path": "documentation/ObjectiveC/nsobject-swift.class/conforms(to).md",
       "hash": "e909cc93262b396625ba1a2c9215a33b2b7d036c39aabce7b2a3e7071269b8a8"
     },
+    "https://developer.apple.com/tutorials/data/documentation/objectivec/nsobject-swift.class/controltextdidbeginediting:.json": {
+      "etag": "\"25bf-65d55e94b12c7-df\"",
+      "file_path": "documentation/ObjectiveC/nsobject-swift.class/controltextdidbeginediting_.md",
+      "hash": "611ca638036c5695efb73b4b301a04ae49ae916a1281aea402380e43780851bb"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/objectivec/nsobject-swift.class/controltextdidchange:.json": {
+      "etag": "\"1fc1-65d55e942e988-df\"",
+      "file_path": "documentation/ObjectiveC/nsobject-swift.class/controltextdidchange_.md",
+      "hash": "027c45ff1fae9ff7af43d2fd80b4c24aae63f92e0bb1afceeee7bad4ab0656e1"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/objectivec/nsobject-swift.class/controltextdidendediting:.json": {
+      "etag": "\"2660-65d55e952e551-df\"",
+      "file_path": "documentation/ObjectiveC/nsobject-swift.class/controltextdidendediting_.md",
+      "hash": "5c24ab5c404421c091d1f062aafd5aa9108555aeefbedb7cd378e6286c29b065"
+    },
     "https://developer.apple.com/tutorials/data/documentation/objectivec/nsobject-swift.class/copy().json": {
       "etag": "\"46f2-65d55e94e4f43-df\"",
       "file_path": "documentation/ObjectiveC/nsobject-swift.class/copy().md",
@@ -4454,6 +5619,16 @@
       "etag": "\"6650-65d55e952e551-df\"",
       "file_path": "documentation/ObjectiveC/nsobject-swift.class/copyscriptingvalue(_,forkey,withproperties).md",
       "hash": "d9858dab5d156762319cc412a4a75d762550493d378e7f1bf19c12a9264b7161"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/objectivec/nsobject-swift.class/copywithzone:.json": {
+      "etag": "\"33b4-65d55e9463adc-df\"",
+      "file_path": "documentation/ObjectiveC/nsobject-swift.class/copywithzone_.md",
+      "hash": "a301a686d4c977e3c6cee39d43d2c4bd6179509f6c9b4992562382614d4abc6a"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/objectivec/nsobject-swift.class/dealloc.json": {
+      "etag": "\"36cf-65d55e94e4f43-df\"",
+      "file_path": "documentation/ObjectiveC/nsobject-swift.class/dealloc.md",
+      "hash": "e20c73fb66c75c88f0e24b520488ded1d98f22eea2eb45469a9c7d92806d5469"
     },
     "https://developer.apple.com/tutorials/data/documentation/objectivec/nsobject-swift.class/debugdescription().json": {
       "etag": "\"211d-65d55e9563c47-df\"",
@@ -4495,6 +5670,11 @@
       "file_path": "documentation/ObjectiveC/nsobject-swift.class/didcommand(by,client).md",
       "hash": "e753ddb746a6162f6535c3ead0a7da741d0c7401bf24440d3eb7eb0ca6e2ba87"
     },
+    "https://developer.apple.com/tutorials/data/documentation/objectivec/nsobject-swift.class/discardediting.json": {
+      "etag": "\"16ea-65d55e952e551-df\"",
+      "file_path": "documentation/ObjectiveC/nsobject-swift.class/discardediting.md",
+      "hash": "f963a885021269a6ff2274045d67aa626308c553490dce67f4f17844a3434b2b"
+    },
     "https://developer.apple.com/tutorials/data/documentation/objectivec/nsobject-swift.class/doescontain(_:).json": {
       "etag": "\"33cb-65d55e950be40-df\"",
       "file_path": "documentation/ObjectiveC/nsobject-swift.class/doescontain(_).md",
@@ -4504,6 +5684,31 @@
       "etag": "\"4b15-65d55e94cb1d4-df\"",
       "file_path": "documentation/ObjectiveC/nsobject-swift.class/doesnotrecognizeselector(_).md",
       "hash": "d528b3705201a357e9de3b8feddc37149fbc0b570ca05a210516d4df72f6d7da"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/objectivec/nsobject-swift.class/draggedimage:beganat:.json": {
+      "etag": "\"1812-65d55e954715d-df\"",
+      "file_path": "documentation/ObjectiveC/nsobject-swift.class/draggedimage_beganat_.md",
+      "hash": "5066c9d1176b38c777143855f1ca9708d3b3ee3fab43306822591680288b0a9f"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/objectivec/nsobject-swift.class/draggedimage:endedat:deposited:.json": {
+      "etag": "\"1b25-65d55e94e4f43-df\"",
+      "file_path": "documentation/ObjectiveC/nsobject-swift.class/draggedimage_endedat_deposited_.md",
+      "hash": "a1f94b90af0f04a094de29fa10d6c5dc3c3b02b0a298c98f000bf02ea0f7caeb"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/objectivec/nsobject-swift.class/draggedimage:endedat:operation:.json": {
+      "etag": "\"1cf4-65d55e950be40-df\"",
+      "file_path": "documentation/ObjectiveC/nsobject-swift.class/draggedimage_endedat_operation_.md",
+      "hash": "a19dde6cff419f816249200c945c94540ebab634dd1b35293231f94c356c403b"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/objectivec/nsobject-swift.class/draggedimage:movedto:.json": {
+      "etag": "\"1812-65d55e94e4f43-df\"",
+      "file_path": "documentation/ObjectiveC/nsobject-swift.class/draggedimage_movedto_.md",
+      "hash": "f08098f974f1522fcc19a58ec130732008113e6fb5ef2f0910d2e8915cef7926"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/objectivec/nsobject-swift.class/draggingsourceoperationmaskforlocal:.json": {
+      "etag": "\"171e-65d55e94b12c7-df\"",
+      "file_path": "documentation/ObjectiveC/nsobject-swift.class/draggingsourceoperationmaskforlocal_.md",
+      "hash": "692b506a4c1fe31c4e03aab09db63e26f8d6ad37e07bea731ed726abb3d81123"
     },
     "https://developer.apple.com/tutorials/data/documentation/objectivec/nsobject-swift.class/endpreviewpanelcontrol(_:).json": {
       "etag": "\"1eef-65d55e9563c47-df\"",
@@ -4640,6 +5845,26 @@
       "file_path": "documentation/ObjectiveC/nsobject-swift.class/forwardingtarget(for).md",
       "hash": "b92b751ebc9d0576ab65ba1b72c00ef8fc66bbe9c615ddfc025e442e738706ca"
     },
+    "https://developer.apple.com/tutorials/data/documentation/objectivec/nsobject-swift.class/forwardinvocation:.json": {
+      "etag": "\"3f9f-65d55e94cb1d4-df\"",
+      "file_path": "documentation/ObjectiveC/nsobject-swift.class/forwardinvocation_.md",
+      "hash": "6ef89547c7d30215093d2e46017f5b48db0dde7b6b519fb429930438b83ebc16"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/objectivec/nsobject-swift.class/getl2capchannelref.json": {
+      "etag": "\"13e8-65d55e94e4f43-df\"",
+      "file_path": "documentation/ObjectiveC/nsobject-swift.class/getl2capchannelref.md",
+      "hash": "500aa683df3a6edc77aede167738d0760f726aacf6a06afd04b7d4d966e02f09"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/objectivec/nsobject-swift.class/getopenglbuffercontext:pixelformat:.json": {
+      "etag": "\"164e-65d55e940c897-df\"",
+      "file_path": "documentation/ObjectiveC/nsobject-swift.class/getopenglbuffercontext_pixelformat_.md",
+      "hash": "81b99f4dba2fc05ff6986afe136558ba7ed7c990f193e5a6aecbf863276078dd"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/objectivec/nsobject-swift.class/getpixelbufferpixelformat:.json": {
+      "etag": "\"1505-65d55e94b12c7-df\"",
+      "file_path": "documentation/ObjectiveC/nsobject-swift.class/getpixelbufferpixelformat_.md",
+      "hash": "c814022e0b3020fe44724d8ce5882229f75cda74d027bce969dd71b099aa48d5"
+    },
     "https://developer.apple.com/tutorials/data/documentation/objectivec/nsobject-swift.class/handle(_:client:).json": {
       "etag": "\"2ff9-65d55e942e988-df\"",
       "file_path": "documentation/ObjectiveC/nsobject-swift.class/handle(_,client).md",
@@ -4674,6 +5899,11 @@
       "etag": "\"1455-65d55e950be40-df\"",
       "file_path": "documentation/ObjectiveC/nsobject-swift.class/hashvalue.md",
       "hash": "82959e5e7602098e67aac09f40fb89742c7724474d8157f9425a1effd204fc49"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/objectivec/nsobject-swift.class/ignoremodifierkeyswhiledragging.json": {
+      "etag": "\"12b8-65d55e9563c47-df\"",
+      "file_path": "documentation/ObjectiveC/nsobject-swift.class/ignoremodifierkeyswhiledragging.md",
+      "hash": "f56a9766b188d84e6cb327073468afd3b2cf40a21f3955263abe13887bb1d5de"
     },
     "https://developer.apple.com/tutorials/data/documentation/objectivec/nsobject-swift.class/imagebrowser(_:backgroundwasrightclickedwith:).json": {
       "etag": "\"2c5a-65d55e94e4f43-df\"",
@@ -4800,6 +6030,11 @@
       "file_path": "documentation/ObjectiveC/nsobject-swift.class/instancemethod(for).md",
       "hash": "ce1a297d443533306ff630b121abf74aa4e1de2e3e17bf0315845a8488481530"
     },
+    "https://developer.apple.com/tutorials/data/documentation/objectivec/nsobject-swift.class/instancemethodsignatureforselector:.json": {
+      "etag": "\"2ed6-65d55e94e4f43-df\"",
+      "file_path": "documentation/ObjectiveC/nsobject-swift.class/instancemethodsignatureforselector_.md",
+      "hash": "a213a06cc95288a9dedd4e78cb51bd0c61b2b815cc8ede2a6ee8e3f43df6735f"
+    },
     "https://developer.apple.com/tutorials/data/documentation/objectivec/nsobject-swift.class/instancesrespond(to:).json": {
       "etag": "\"42bd-65d55e950be40-df\"",
       "file_path": "documentation/ObjectiveC/nsobject-swift.class/instancesrespond(to).md",
@@ -4819,6 +6054,11 @@
       "etag": "\"3770-65d55e952e551-df\"",
       "file_path": "documentation/ObjectiveC/nsobject-swift.class/invokeundefinedmethod(fromwebscript,witharguments).md",
       "hash": "a4bdd936bedc20ded7ad7d5d6f5540fd98f63118269d29cd9230a88e8fca340e"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/objectivec/nsobject-swift.class/isa.json": {
+      "etag": "\"1211-65d55e94e4f43-df\"",
+      "file_path": "documentation/ObjectiveC/nsobject-swift.class/isa.md",
+      "hash": "6a48cc3bfcde55cd63bd6f2c3c7b0316b4971bdef77029c703de6bf3c9fb5d67"
     },
     "https://developer.apple.com/tutorials/data/documentation/objectivec/nsobject-swift.class/isaccessibilityelement.json": {
       "etag": "\"220d-65d55e952e551-df\"",
@@ -4925,6 +6165,11 @@
       "file_path": "documentation/ObjectiveC/nsobject-swift.class/keyvalueobservingpublisher/options.md",
       "hash": "6ddc5e95ff537d4460b2abf66b3d019a242c465fdc418dd8870252b2777f3879"
     },
+    "https://developer.apple.com/tutorials/data/documentation/objectivec/nsobject-swift.class/layer:shouldinheritcontentsscale:fromwindow:.json": {
+      "etag": "\"2e16-65d55e954715d-df\"",
+      "file_path": "documentation/ObjectiveC/nsobject-swift.class/layer_shouldinheritcontentsscale_fromwindow_.md",
+      "hash": "e134b19ec8b71d270ca0ca2331d02d4f2b0fdbf42ee3da23ef55276e87dccb97"
+    },
     "https://developer.apple.com/tutorials/data/documentation/objectivec/nsobject-swift.class/load().json": {
       "etag": "\"2c6f-65d55e9463adc-df\"",
       "file_path": "documentation/ObjectiveC/nsobject-swift.class/load().md",
@@ -4934,6 +6179,11 @@
       "etag": "\"4960-65d55e954715d-df\"",
       "file_path": "documentation/ObjectiveC/nsobject-swift.class/method(for).md",
       "hash": "5a33b8d7db2b35ca1dfd3a29f65700bc6bb3ef4207cd02954cbe52eb2278cae9"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/objectivec/nsobject-swift.class/methodsignatureforselector:.json": {
+      "etag": "\"348b-65d55e94b12c7-df\"",
+      "file_path": "documentation/ObjectiveC/nsobject-swift.class/methodsignatureforselector_.md",
+      "hash": "e68a1b8c4fa58d6c6f156f8f4f43b7eb88b6f2525d548a6d0560725f14afc01b"
     },
     "https://developer.apple.com/tutorials/data/documentation/objectivec/nsobject-swift.class/mutablearrayvalue(forkey:).json": {
       "etag": "\"74b1-65d55e952e551-df\"",
@@ -4949,6 +6199,11 @@
       "etag": "\"456a-65d55e94cb1d4-df\"",
       "file_path": "documentation/ObjectiveC/nsobject-swift.class/mutablecopy().md",
       "hash": "968bee749f44bb9ee30bb430c273fe6c0c3a852ab7a229ea242ab732449826f0"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/objectivec/nsobject-swift.class/mutablecopywithzone:.json": {
+      "etag": "\"3448-65d55e94e4f43-df\"",
+      "file_path": "documentation/ObjectiveC/nsobject-swift.class/mutablecopywithzone_.md",
+      "hash": "209fe760afa202d21298808f4514382f9ffa156624dda06417dc63b4de2618fe"
     },
     "https://developer.apple.com/tutorials/data/documentation/objectivec/nsobject-swift.class/mutableorderedsetvalue(forkey:).json": {
       "etag": "\"7681-65d55e94b12c7-df\"",
@@ -4975,6 +6230,11 @@
       "file_path": "documentation/ObjectiveC/nsobject-swift.class/namesofpromisedfilesdropped(atdestination).md",
       "hash": "b11ee5a913f06caf68ef6eb8a4a8c7808bb042bb2fd1413644f648096676fa36"
     },
+    "https://developer.apple.com/tutorials/data/documentation/objectivec/nsobject-swift.class/new.json": {
+      "etag": "\"3207-65d55e942e988-df\"",
+      "file_path": "documentation/ObjectiveC/nsobject-swift.class/new.md",
+      "hash": "5610af403d110517e8e1579dccccf04ddbef8eba3d50a45dfa83758590c27245"
+    },
     "https://developer.apple.com/tutorials/data/documentation/objectivec/nsobject-swift.class/newscriptingobject(of:forvalueforkey:withcontentsvalue:properties:).json": {
       "etag": "\"6be2-65d55e94e4f43-df\"",
       "file_path": "documentation/ObjectiveC/nsobject-swift.class/newscriptingobject(of,forvalueforkey,withcontentsvalue,properties).md",
@@ -4989,6 +6249,16 @@
       "etag": "\"2d91-65d55e954715d-df\"",
       "file_path": "documentation/ObjectiveC/nsobject-swift.class/numberofitems(inimagebrowser).md",
       "hash": "c4433c81450484d2244e34cb33d7569a210b630c9d107a8b1fa0243eb82edd89"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/objectivec/nsobject-swift.class/objectdidbeginediting:.json": {
+      "etag": "\"1950-65d55e9563c47-df\"",
+      "file_path": "documentation/ObjectiveC/nsobject-swift.class/objectdidbeginediting_.md",
+      "hash": "c1aa2d1a61a3d9c136747f73279b283992a61778dbc2782d2e957fa326b1dbea"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/objectivec/nsobject-swift.class/objectdidendediting:.json": {
+      "etag": "\"164e-65d55e954715d-df\"",
+      "file_path": "documentation/ObjectiveC/nsobject-swift.class/objectdidendediting_.md",
+      "hash": "9d070b479805c0d8f7e1bf5df7633e563c729053c162db8f69886b02f1da7c64"
     },
     "https://developer.apple.com/tutorials/data/documentation/objectivec/nsobject-swift.class/objectforwebscript.json": {
       "etag": "\"1c5e-65d55e952e551-df\"",
@@ -5019,6 +6289,36 @@
       "etag": "\"25d0-65d55e94b12c7-df\"",
       "file_path": "documentation/ObjectiveC/nsobject-swift.class/originalstring(_).md",
       "hash": "f401b9b1dbb434735ce13b4d91ca9d7e433b0fb46bfc1b45e1116d9a1e156c2f"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/objectivec/nsobject-swift.class/panel:comparefilename:with:casesensitive:.json": {
+      "etag": "\"2d45-65d55e94b12c7-df\"",
+      "file_path": "documentation/ObjectiveC/nsobject-swift.class/panel_comparefilename_with_casesensitive_.md",
+      "hash": "a7af649553990ada44e82350b9c7c60964eb7449620fb1bd284812b8a5aab8b1"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/objectivec/nsobject-swift.class/panel:directorydidchange:.json": {
+      "etag": "\"245c-65d55e9463adc-df\"",
+      "file_path": "documentation/ObjectiveC/nsobject-swift.class/panel_directorydidchange_.md",
+      "hash": "749548b2b52977b9b911c02c97aa9d12daab8207b528e18fa43f725203f15aa6"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/objectivec/nsobject-swift.class/panel:isvalidfilename:.json": {
+      "etag": "\"2ceb-65d55e954715d-df\"",
+      "file_path": "documentation/ObjectiveC/nsobject-swift.class/panel_isvalidfilename_.md",
+      "hash": "9823ec814d4eeee7274f6af2e48c48ba6d1d1fde4d25e8c9c59cd27f4b4ba158"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/objectivec/nsobject-swift.class/panel:shouldshowfilename:.json": {
+      "etag": "\"2cf8-65d55e94cb1d4-df\"",
+      "file_path": "documentation/ObjectiveC/nsobject-swift.class/panel_shouldshowfilename_.md",
+      "hash": "e09087e7b2ef9f06a310f79ba63b7ed8293a11e1ad782bfceb93ee284d1bb99a"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/objectivec/nsobject-swift.class/pasteboard:providedatafortype:.json": {
+      "etag": "\"4aed-65d55e94b12c7-df\"",
+      "file_path": "documentation/ObjectiveC/nsobject-swift.class/pasteboard_providedatafortype_.md",
+      "hash": "028bb273cd1db38570e688a6a31730f916c47b1a2e802425dae3e300e60a974f"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/objectivec/nsobject-swift.class/pasteboardchangedowner:.json": {
+      "etag": "\"2758-65d55e952e551-df\"",
+      "file_path": "documentation/ObjectiveC/nsobject-swift.class/pasteboardchangedowner_.md",
+      "hash": "5f7cabcc35de66c7795b945565235268ad53e77dfd5c3fb5bded05828560ea41"
     },
     "https://developer.apple.com/tutorials/data/documentation/objectivec/nsobject-swift.class/perform(_:on:with:waituntildone:).json": {
       "etag": "\"a1d9-65d55e940c897-df\"",
@@ -5105,6 +6405,11 @@
       "file_path": "documentation/ObjectiveC/nsobject-swift.class/readrssi(fordevicecomplete,device,info,error).md",
       "hash": "ccfcfefdce57d931d4efe116ebc5c8e9032398b2859deb89719d0f1b923ade45"
     },
+    "https://developer.apple.com/tutorials/data/documentation/objectivec/nsobject-swift.class/registerincomingdatalistener:refcon:.json": {
+      "etag": "\"18e7-65d55e94b12c7-df\"",
+      "file_path": "documentation/ObjectiveC/nsobject-swift.class/registerincomingdatalistener_refcon_.md",
+      "hash": "9a3ea4ad16e6ffefebc3a121a70a6a43d02a6be7871d86ba342391028a4f97e9"
+    },
     "https://developer.apple.com/tutorials/data/documentation/objectivec/nsobject-swift.class/removeobserver(_:forkeypath:).json": {
       "etag": "\"411a-65d55e9463adc-df\"",
       "file_path": "documentation/ObjectiveC/nsobject-swift.class/removeobserver(_,forkeypath).md",
@@ -5120,6 +6425,16 @@
       "file_path": "documentation/ObjectiveC/nsobject-swift.class/removevalue(at,frompropertywithkey).md",
       "hash": "3ed924723406800e36f4ce37fc71e59a65274412c115dabf55b8bb18e76a6e1d"
     },
+    "https://developer.apple.com/tutorials/data/documentation/objectivec/nsobject-swift.class/renderintoopenglbuffer:onscreen:fortime:.json": {
+      "etag": "\"238b-65d55e950be40-df\"",
+      "file_path": "documentation/ObjectiveC/nsobject-swift.class/renderintoopenglbuffer_onscreen_fortime_.md",
+      "hash": "a9c0c81ed9e075de59caadf9595af53269c502eb6cb583eba44bfa3ce922503f"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/objectivec/nsobject-swift.class/renderintopixelbuffer:fortime:.json": {
+      "etag": "\"2094-65d55e9463adc-df\"",
+      "file_path": "documentation/ObjectiveC/nsobject-swift.class/renderintopixelbuffer_fortime_.md",
+      "hash": "a6eeb2b566a404b69ec01472606e40f49e997726e342d17575f13337ec7fedee"
+    },
     "https://developer.apple.com/tutorials/data/documentation/objectivec/nsobject-swift.class/replacementobject(for:)-2l8ox.json": {
       "etag": "\"65de-65d55e9563c47-df\"",
       "file_path": "documentation/ObjectiveC/nsobject-swift.class/replacementobject(for)-2l8ox.md",
@@ -5134,6 +6449,11 @@
       "etag": "\"664c-65d55e942e988-df\"",
       "file_path": "documentation/ObjectiveC/nsobject-swift.class/replacementobject(for)-8ih2x.md",
       "hash": "64dcdef538809af9c1c28143c4af48e9c2aa82707c9303c5eef8fa61063c7cb6"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/objectivec/nsobject-swift.class/replacementobjectforportcoder:.json": {
+      "etag": "\"8efd-65d55e9463adc-df\"",
+      "file_path": "documentation/ObjectiveC/nsobject-swift.class/replacementobjectforportcoder_.md",
+      "hash": "fc1d56d995476a1dd02886c452d9137b622f3b3e11fb5021f00add9ade93975a"
     },
     "https://developer.apple.com/tutorials/data/documentation/objectivec/nsobject-swift.class/replacevalue(at:inpropertywithkey:withvalue:).json": {
       "etag": "\"4733-65d55e94b12c7-df\"",
@@ -5205,10 +6525,75 @@
       "file_path": "documentation/ObjectiveC/nsobject-swift.class/scriptingvalue(for).md",
       "hash": "82a79953d6ab171a851181541d549ad3a183f098912aef6db658f076672196d6"
     },
+    "https://developer.apple.com/tutorials/data/documentation/objectivec/nsobject-swift.class/sessiondriver:didnegotiateandreturnerror:.json": {
+      "etag": "\"182d-65d55e94b12c7-df\"",
+      "file_path": "documentation/ObjectiveC/nsobject-swift.class/sessiondriver_didnegotiateandreturnerror_.md",
+      "hash": "2d7aa602489113e6504dc26de27ca330a80d04bb3adb9a98f52b730e6f033370"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/objectivec/nsobject-swift.class/sessiondriver:didpullandreturnerror:.json": {
+      "etag": "\"17f1-65d55e942e988-df\"",
+      "file_path": "documentation/ObjectiveC/nsobject-swift.class/sessiondriver_didpullandreturnerror_.md",
+      "hash": "76cda3b1179c9b795932555fd3b12d4ab683e737f2d65f11f649bdfc91147529"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/objectivec/nsobject-swift.class/sessiondriver:didpushandreturnerror:.json": {
+      "etag": "\"17f1-65d55e94cb1d4-df\"",
+      "file_path": "documentation/ObjectiveC/nsobject-swift.class/sessiondriver_didpushandreturnerror_.md",
+      "hash": "edb0c76169b001b7f3f41232c0d72cea987598aceb850318644aeaa241282d89"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/objectivec/nsobject-swift.class/sessiondriver:didreceivesyncalertandreturnerror:.json": {
+      "etag": "\"1881-65d55e94cb1d4-df\"",
+      "file_path": "documentation/ObjectiveC/nsobject-swift.class/sessiondriver_didreceivesyncalertandreturnerror_.md",
+      "hash": "e7e4c22a653a63367bdd1094ed3a642de02bf9ba44b04bb03dfef374358c3232"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/objectivec/nsobject-swift.class/sessiondriver:didregisterclientandreturnerror:.json": {
+      "etag": "\"1869-65d55e942e988-df\"",
+      "file_path": "documentation/ObjectiveC/nsobject-swift.class/sessiondriver_didregisterclientandreturnerror_.md",
+      "hash": "365df5a0417bb43e885abbd2ae3634b6dbf56930aaa01fed77e9c9e7becb5783"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/objectivec/nsobject-swift.class/sessiondriver:willfinishsessionandreturnerror:.json": {
+      "etag": "\"1869-65d55e952e551-df\"",
+      "file_path": "documentation/ObjectiveC/nsobject-swift.class/sessiondriver_willfinishsessionandreturnerror_.md",
+      "hash": "dd6ef25b9c21356abede7bb1b0853d79c5d61e2e9a9e22a17c4cfaf39c5209f7"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/objectivec/nsobject-swift.class/sessiondriver:willnegotiateandreturnerror:.json": {
+      "etag": "\"1839-65d55e954715d-df\"",
+      "file_path": "documentation/ObjectiveC/nsobject-swift.class/sessiondriver_willnegotiateandreturnerror_.md",
+      "hash": "f59fc9c2f40b20cdd6b8218845f0f30770025cb574f9656d71f676b03668c9cf"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/objectivec/nsobject-swift.class/sessiondriver:willpullandreturnerror:.json": {
+      "etag": "\"17fd-65d55e950be40-df\"",
+      "file_path": "documentation/ObjectiveC/nsobject-swift.class/sessiondriver_willpullandreturnerror_.md",
+      "hash": "63f17c2197d3c9543d5c2bb73cc9d6bdf59f5492e83f84fbf3503f9add45a7e8"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/objectivec/nsobject-swift.class/sessiondriver:willpushandreturnerror:.json": {
+      "etag": "\"17fd-65d55e9563c47-df\"",
+      "file_path": "documentation/ObjectiveC/nsobject-swift.class/sessiondriver_willpushandreturnerror_.md",
+      "hash": "7bc029cb7bf57a2a8144bd9f4636ba6bd28e6fbc25f5ee020524ec7f07e88b3f"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/objectivec/nsobject-swift.class/sessiondriverdidcancelsession:.json": {
+      "etag": "\"11a8-65d55e9463adc-df\"",
+      "file_path": "documentation/ObjectiveC/nsobject-swift.class/sessiondriverdidcancelsession_.md",
+      "hash": "93b1d0d38539fde34da62695b0f831a588b8c8d3facd025fb881925fd7b36753"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/objectivec/nsobject-swift.class/sessiondriverdidfinishsession:.json": {
+      "etag": "\"11a8-65d55e94e4f43-df\"",
+      "file_path": "documentation/ObjectiveC/nsobject-swift.class/sessiondriverdidfinishsession_.md",
+      "hash": "21a6690c637b0184cc79f6884e9cc7cc593ca68c4c6557570186617fdb7747a4"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/objectivec/nsobject-swift.class/sessiondriverwillcancelsession:.json": {
+      "etag": "\"11b4-65d55e9463adc-df\"",
+      "file_path": "documentation/ObjectiveC/nsobject-swift.class/sessiondriverwillcancelsession_.md",
+      "hash": "7ca4709c3f81760a5f7f6faeb27322080c65e8f345e00e429db5c68440d3b30c"
+    },
     "https://developer.apple.com/tutorials/data/documentation/objectivec/nsobject-swift.class/setdefaultplaceholder(_:for:with:).json": {
       "etag": "\"508c-65d55e9463adc-df\"",
       "file_path": "documentation/ObjectiveC/nsobject-swift.class/setdefaultplaceholder(_,for,with).md",
       "hash": "bf1d1504b18472ac147ede957d05908ed1273136f26bc381a78346a7ffe81ecf"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/objectivec/nsobject-swift.class/setkeys:triggerchangenotificationsfordependentkey:.json": {
+      "etag": "\"520c-65d55e954715d-df\"",
+      "file_path": "documentation/ObjectiveC/nsobject-swift.class/setkeys_triggerchangenotificationsfordependentkey_.md",
+      "hash": "644a13fd49d66b85e630a62d821d089af25d7315b96aad8b3161b8b0a2501650"
     },
     "https://developer.apple.com/tutorials/data/documentation/objectivec/nsobject-swift.class/setnilvalueforkey(_:).json": {
       "etag": "\"439a-65d55e9463adc-df\"",
@@ -5290,6 +6675,11 @@
       "file_path": "documentation/ObjectiveC/nsobject-swift.class/superclass().md",
       "hash": "483f2ed3c7b05d14570ac27bf92054298803ad6b862de3e5c6d3490962ad8835"
     },
+    "https://developer.apple.com/tutorials/data/documentation/objectivec/nsobject-swift.class/tableview:writerows:topasteboard:.json": {
+      "etag": "\"3481-65d55e954715d-df\"",
+      "file_path": "documentation/ObjectiveC/nsobject-swift.class/tableview_writerows_topasteboard_.md",
+      "hash": "db3046b6b209cf8b0c8bfd18ef33b2bea3534ce3bf4d4bbf429891a00fc84fae"
+    },
     "https://developer.apple.com/tutorials/data/documentation/objectivec/nsobject-swift.class/takestoredvalue(_:forkey:).json": {
       "etag": "\"d71f-65d55e9563c47-df\"",
       "file_path": "documentation/ObjectiveC/nsobject-swift.class/takestoredvalue(_,forkey).md",
@@ -5345,10 +6735,40 @@
       "file_path": "documentation/ObjectiveC/nsobject-swift.class/unbind(_).md",
       "hash": "da7ef45d010bb651bd0f83cdbb1a8ff3fccd2d5d7363dcdbcda605a2609d9bc8"
     },
+    "https://developer.apple.com/tutorials/data/documentation/objectivec/nsobject-swift.class/url:resourcedatadidbecomeavailable:.json": {
+      "etag": "\"18d7-65d55e94e4f43-df\"",
+      "file_path": "documentation/ObjectiveC/nsobject-swift.class/url_resourcedatadidbecomeavailable_.md",
+      "hash": "01a8ff1e9c29ab4acecf157578628170c6091ac000bce1ba142789867f960e29"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/objectivec/nsobject-swift.class/url:resourcedidfailloadingwithreason:.json": {
+      "etag": "\"190f-65d55e942e988-df\"",
+      "file_path": "documentation/ObjectiveC/nsobject-swift.class/url_resourcedidfailloadingwithreason_.md",
+      "hash": "8baa102bbead670af32281678064b614e77b64ccef5edbc92f193df21f372e5f"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/objectivec/nsobject-swift.class/urlresourcedidcancelloading:.json": {
+      "etag": "\"14ab-65d55e94cb1d4-df\"",
+      "file_path": "documentation/ObjectiveC/nsobject-swift.class/urlresourcedidcancelloading_.md",
+      "hash": "9d12e12d593ac5f37d287d5a050e620ef5b910029820338205d6bebab14629ba"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/objectivec/nsobject-swift.class/urlresourcedidfinishloading:.json": {
+      "etag": "\"14ab-65d55e9463adc-df\"",
+      "file_path": "documentation/ObjectiveC/nsobject-swift.class/urlresourcedidfinishloading_.md",
+      "hash": "2e2d9f4073877b82145a3dbb245fb29e76ed7ce9e0581946fd04979c24fbeb98"
+    },
     "https://developer.apple.com/tutorials/data/documentation/objectivec/nsobject-swift.class/usestoredaccessor().json": {
       "etag": "\"63ad-65d55e9563c47-df\"",
       "file_path": "documentation/ObjectiveC/nsobject-swift.class/usestoredaccessor().md",
       "hash": "cc1c4507245c5fe4ede1b80872b5d168891301d7e0f34f1469da00b5422df28a"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/objectivec/nsobject-swift.class/validatemenuitem:.json": {
+      "etag": "\"22f7-65d55e94e4f43-df\"",
+      "file_path": "documentation/ObjectiveC/nsobject-swift.class/validatemenuitem_.md",
+      "hash": "a8bd61223164754d3d33af75e818b83ee3196ee3371578f923b1bc758c35980b"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/objectivec/nsobject-swift.class/validatetoolbaritem:.json": {
+      "etag": "\"34c3-65d55e954715d-df\"",
+      "file_path": "documentation/ObjectiveC/nsobject-swift.class/validatetoolbaritem_.md",
+      "hash": "1e8729fb7a84485cfc8bc426d95d744ab6cca1cfa31deac03e0c66da0d172e95"
     },
     "https://developer.apple.com/tutorials/data/documentation/objectivec/nsobject-swift.class/validatevalue(_:forkey:).json": {
       "etag": "\"5e51-65d55e942e988-df\"",
@@ -5359,6 +6779,11 @@
       "etag": "\"500b-65d55e94b12c7-df\"",
       "file_path": "documentation/ObjectiveC/nsobject-swift.class/validatevalue(_,forkeypath).md",
       "hash": "425dbd7ffff20f054d4d370bd432c99bd89f28a9d126f5ffc0eb288bf3d725c2"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/objectivec/nsobject-swift.class/validmodesforfontpanel:.json": {
+      "etag": "\"225f-65d55e942e988-df\"",
+      "file_path": "documentation/ObjectiveC/nsobject-swift.class/validmodesforfontpanel_.md",
+      "hash": "0a265762d69ffbeca4ad0e76db53776dc7d3a9dbc0a252cb8410eb0028f98229"
     },
     "https://developer.apple.com/tutorials/data/documentation/objectivec/nsobject-swift.class/value(at:inpropertywithkey:).json": {
       "etag": "\"4325-65d55e952e551-df\"",
@@ -5404,6 +6829,11 @@
       "etag": "\"7039-65d55e9463adc-df\"",
       "file_path": "documentation/ObjectiveC/nsobject-swift.class/version().md",
       "hash": "0bfc66a57b310ace40ed44746704bcc14637fc3518219bd2dd47507284a4b5ad"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/objectivec/nsobject-swift.class/view:stringfortooltip:point:userdata:.json": {
+      "etag": "\"314a-65d55e950be40-df\"",
+      "file_path": "documentation/ObjectiveC/nsobject-swift.class/view_stringfortooltip_point_userdata_.md",
+      "hash": "8843e28a90b89e65f5942f38c49e9462b92f5acc18cb17e70a8d3c84b53f6cbf"
     },
     "https://developer.apple.com/tutorials/data/documentation/objectivec/nsobject-swift.class/webframe.json": {
       "etag": "\"28ca-65d55e942e988-df\"",
@@ -5495,6 +6925,11 @@
       "file_path": "documentation/ObjectiveC/nsobject-swift.class/willchangevalue(forkey,withsetmutation,using).md",
       "hash": "6dbca182467394c8b744a014e274878e91173932a1ee4e10a004ab7de55ce497"
     },
+    "https://developer.apple.com/tutorials/data/documentation/objectivec/nsobject-swift.class/withl2capchannelref:.json": {
+      "etag": "\"188f-65d55e94e4f43-df\"",
+      "file_path": "documentation/ObjectiveC/nsobject-swift.class/withl2capchannelref_.md",
+      "hash": "33385caa7d63be92992c68bab71af31d9c2761ff43b5244ddf9105fa72cca42f"
+    },
     "https://developer.apple.com/tutorials/data/documentation/objectivec/nsobject-swift.class/workflowcontroller(_:diderror:).json": {
       "etag": "\"2a25-65d55e94b12c7-df\"",
       "file_path": "documentation/ObjectiveC/nsobject-swift.class/workflowcontroller(_,diderror).md",
@@ -5529,6 +6964,11 @@
       "etag": "\"2157-65d55e94b12c7-df\"",
       "file_path": "documentation/ObjectiveC/nsobject-swift.class/workflowcontrollerwillstop(_).md",
       "hash": "1065808a773051a3c2703092be4991301010f23ae7e2fbf9f6acb1d5c1329504"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/objectivec/nsobject-swift.class/write:length:.json": {
+      "etag": "\"1548-65d55e942e988-df\"",
+      "file_path": "documentation/ObjectiveC/nsobject-swift.class/write_length_.md",
+      "hash": "f9feb488e662b874f9e0c1f3318f3940d3653048a3c1cb80956c53faf4144b5e"
     },
     "https://developer.apple.com/tutorials/data/documentation/objectivec/nsobjectprotocol.json": {
       "etag": "\"80b6-65d55e9602ae6-df\"",
@@ -5625,6 +7065,16 @@
       "file_path": "documentation/ObjectiveC/nstargetobjectuserinfokey.md",
       "hash": "f3552b26d895c022b55d22cd2df3aeeeabcfd7869dc4ffd507f2675dbbace0af"
     },
+    "https://developer.apple.com/tutorials/data/documentation/objectivec/nsuinteger.json": {
+      "etag": "\"40a9-65d55e9563c47-df\"",
+      "file_path": "documentation/ObjectiveC/nsuinteger.md",
+      "hash": "45a94511a1033b5d58505fc0849bba022faadbf228c54d3271ecb35fe481d7da"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/objectivec/nsuintegermax.json": {
+      "etag": "\"b0c-65d55e963ce9f-df\"",
+      "file_path": "documentation/ObjectiveC/nsuintegermax.md",
+      "hash": "7fb65ffacb3184a8a3b1604264db6cebf77063e3aaf4219a555e93539b567411"
+    },
     "https://developer.apple.com/tutorials/data/documentation/objectivec/nsundefinedkeyexception-userinfo-keys.json": {
       "etag": "\"2348-65902851ae654-df\"",
       "file_path": "documentation/ObjectiveC/nsundefinedkeyexception-userinfo-keys.md",
@@ -5639,6 +7089,136 @@
       "etag": "\"2e03-65d55e9602ae6-df\"",
       "file_path": "documentation/ObjectiveC/nszone.md",
       "hash": "c7274c871eebd31ce91be58a0a568253014e91e16e62ddd3b128146c5e8461b6"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/objectivec/null-values.json": {
+      "etag": "\"1578-65902851d33a9-df\"",
+      "file_path": "documentation/ObjectiveC/null-values.md",
+      "hash": "30e97e3bce8826c51c461d18343b31e372853622730293496404af75e9ad4b82"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/objectivec/nxcomparehashtables.json": {
+      "etag": "\"323b-65d55e963ce9f-df\"",
+      "file_path": "documentation/ObjectiveC/nxcomparehashtables.md",
+      "hash": "412443b8179c1a1e62af8f3176bd1117b4cf8ee4de23d576e90bd8bfcdc70e8a"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/objectivec/nxcopyhashtable.json": {
+      "etag": "\"2fc0-65d55e96227ea-df\"",
+      "file_path": "documentation/ObjectiveC/nxcopyhashtable.md",
+      "hash": "eb5612cfff8b3e9fa8778a174799dbe8c0e7d8022017a888c8b93a8a50f08434"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/objectivec/nxcounthashtable.json": {
+      "etag": "\"2f64-65d55e96457cb-df\"",
+      "file_path": "documentation/ObjectiveC/nxcounthashtable.md",
+      "hash": "87dcf4713370285a0a6db8c881bf3b87bc16cf0e4a369c42bb8c17e4e5d36a75"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/objectivec/nxcreatehashtable.json": {
+      "etag": "\"359a-65d55e95e964e-df\"",
+      "file_path": "documentation/ObjectiveC/nxcreatehashtable.md",
+      "hash": "1b167b215fa53c14aa3baaa04b4670206028ce1a96d61d50207f092cccb13233"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/objectivec/nxcreatehashtablefromzone.json": {
+      "etag": "\"366b-65d55e9602ae6-df\"",
+      "file_path": "documentation/ObjectiveC/nxcreatehashtablefromzone.md",
+      "hash": "1b7570e971024329521decaea598176d0d3d13aaa91f00f120a7edc10eab72f8"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/objectivec/nxemptyhashtable.json": {
+      "etag": "\"2f5c-65d55e95e964e-df\"",
+      "file_path": "documentation/ObjectiveC/nxemptyhashtable.md",
+      "hash": "05c3753bdb979c76477cbf37e389b895d5cbb3293f06933d3875f9ac49612ea4"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/objectivec/nxfreehashtable.json": {
+      "etag": "\"2f56-65d55e95e964e-df\"",
+      "file_path": "documentation/ObjectiveC/nxfreehashtable.md",
+      "hash": "f774f61ce1336c219c4aa335283c92f3b6a481c2890ea8a9aad2a3e4e9504cb7"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/objectivec/nxhashget.json": {
+      "etag": "\"3011-65d55e95c2ae2-df\"",
+      "file_path": "documentation/ObjectiveC/nxhashget.md",
+      "hash": "8e33f74d86fe6bd6ed6e31034f3559a4f1466e4690d6cfcfaea03992bf5548b6"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/objectivec/nxhashinsert.json": {
+      "etag": "\"3023-65d55e963ce9f-df\"",
+      "file_path": "documentation/ObjectiveC/nxhashinsert.md",
+      "hash": "2730f2fed699dc819cedd801c77c65b618fec8134bdce4d9a5797e61dcf543b6"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/objectivec/nxhashinsertifabsent.json": {
+      "etag": "\"3053-65d55e9563c47-df\"",
+      "file_path": "documentation/ObjectiveC/nxhashinsertifabsent.md",
+      "hash": "f0f29bdcd57da52addc466647a1f1d969798cb46f1c3dbc9d6c6f1c290c6fdab"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/objectivec/nxhashmember.json": {
+      "etag": "\"3021-65d55e95a22da-df\"",
+      "file_path": "documentation/ObjectiveC/nxhashmember.md",
+      "hash": "f30830c797c386aa1b1eb0c477345f60cc11f1d0951a49112211cd75ce39e83c"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/objectivec/nxhashremove.json": {
+      "etag": "\"3023-65d55e9602ae6-df\"",
+      "file_path": "documentation/ObjectiveC/nxhashremove.md",
+      "hash": "458705cc798114a31fd8c7cd50ef3ddcb0c818dc2b739aac3814d40c2d65b702"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/objectivec/nxhashstate.json": {
+      "etag": "\"285e-65d55e9563c47-df\"",
+      "file_path": "documentation/ObjectiveC/nxhashstate.md",
+      "hash": "46b197d8df47c4a710b1e0153c013e62b404f3d39ef00be781901f5f1828bbf0"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/objectivec/nxhashstate/i.json": {
+      "etag": "\"b2e-65d55e9602ae6-df\"",
+      "file_path": "documentation/ObjectiveC/nxhashstate/i.md",
+      "hash": "b14cae2604f59e3ba9fe159bca9dee5551483ee034d030b28ab31200d0907e92"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/objectivec/nxhashstate/j.json": {
+      "etag": "\"b2e-65d55e9602ae6-df\"",
+      "file_path": "documentation/ObjectiveC/nxhashstate/j.md",
+      "hash": "915d41fcea14509e66dc569314150e5c061c1dc9cc2fb0cabcfdf91a2b430161"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/objectivec/nxhashtable.json": {
+      "etag": "\"2e1f-65d55e9602ae6-df\"",
+      "file_path": "documentation/ObjectiveC/nxhashtable.md",
+      "hash": "9b56cab3e093e7d84ac32ca42140d9d8f37f1eaec2457301f785219f63af7272"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/objectivec/nxhashtable/buckets.json": {
+      "etag": "\"b9f-65d55e95e964e-df\"",
+      "file_path": "documentation/ObjectiveC/nxhashtable/buckets.md",
+      "hash": "d77b8170cdb68096069912c3f52897f79a53f15e99bf35ec9a14922f493ccdbd"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/objectivec/nxhashtable/count.json": {
+      "etag": "\"b8d-65d55e95e964e-df\"",
+      "file_path": "documentation/ObjectiveC/nxhashtable/count.md",
+      "hash": "eec49ea53ad9916714090a657a3ef8481b05f657eb2ff2c94b90afe0a811611d"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/objectivec/nxhashtable/info.json": {
+      "etag": "\"bb8-65d55e95e964e-df\"",
+      "file_path": "documentation/ObjectiveC/nxhashtable/info.md",
+      "hash": "5bbfeb0185148c8b23801b5941a4d9f86ddd185969eb8e828f9aa5768dc64ad3"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/objectivec/nxhashtable/nbbuckets.json": {
+      "etag": "\"bbd-65d55e95e964e-df\"",
+      "file_path": "documentation/ObjectiveC/nxhashtable/nbbuckets.md",
+      "hash": "6bcf1013714404d115371c7d6297ec2c9ed283e0614f859cac0c5a4afcde035c"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/objectivec/nxhashtable/prototype.json": {
+      "etag": "\"10e6-65d55e95e964e-df\"",
+      "file_path": "documentation/ObjectiveC/nxhashtable/prototype.md",
+      "hash": "178859c0686507792457a8f70eab58ba2a31dcf492f536c0293280be575093a9"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/objectivec/nxhashtable_ptrauth_free.json": {
+      "etag": "\"279c-65d55e95a22da-df\"",
+      "file_path": "documentation/ObjectiveC/nxhashtable_ptrauth_free.md",
+      "hash": "d2d983525704f10d92fa023f6f6c857a57dee604842d5ba48f266a1db95289cd"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/objectivec/nxhashtable_ptrauth_hash.json": {
+      "etag": "\"279c-65d55e9602ae6-df\"",
+      "file_path": "documentation/ObjectiveC/nxhashtable_ptrauth_hash.md",
+      "hash": "20c6a2f9f0b2255c7ba19c7e57711e0f38b7d1a8301b7e603b4d8e8a78c0f6c0"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/objectivec/nxhashtable_ptrauth_isequal.json": {
+      "etag": "\"27ae-65d55e95e964e-df\"",
+      "file_path": "documentation/ObjectiveC/nxhashtable_ptrauth_isequal.md",
+      "hash": "1665052312397809ed73900c9b6ace420c34c610efe33e42fad9597df00c2f29"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/objectivec/nxhashtable_ptrauth_prototype.json": {
+      "etag": "\"27ba-65d55e9563c47-df\"",
+      "file_path": "documentation/ObjectiveC/nxhashtable_ptrauth_prototype.md",
+      "hash": "5a2b3a44bbf0e9515096418f937c67e778a1c827c0ae025307378fc05e336b59"
     },
     "https://developer.apple.com/tutorials/data/documentation/objectivec/nxhashtableprototype.json": {
       "etag": "\"56e4-65d55e95e964e-df\"",
@@ -5670,6 +7250,71 @@
       "file_path": "documentation/ObjectiveC/nxhashtableprototype/style.md",
       "hash": "23974373c0fefbe6da4c06cfb5e180b5ba555fa743168ce3ca32164c5b0d1581"
     },
+    "https://developer.apple.com/tutorials/data/documentation/objectivec/nxinithashstate.json": {
+      "etag": "\"3114-65d55e96227ea-df\"",
+      "file_path": "documentation/ObjectiveC/nxinithashstate.md",
+      "hash": "9080d3f8a715ef5dc9a4e84ddbbb04ead81ff75dc63c82c84c9a1eee6ddf266a"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/objectivec/nxnexthashstate.json": {
+      "etag": "\"3257-65d55e958227b-df\"",
+      "file_path": "documentation/ObjectiveC/nxnexthashstate.md",
+      "hash": "6c2f33540893cc68261b452933889134576692dced7bbf77b13f2d77ba746f60"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/objectivec/nxnoeffectfree.json": {
+      "etag": "\"2e69-65d55e95a22da-df\"",
+      "file_path": "documentation/ObjectiveC/nxnoeffectfree.md",
+      "hash": "c24912663dda164fcf172098799ecfdc84ebd269f69414b04306b471c531e3f1"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/objectivec/nxptrhash.json": {
+      "etag": "\"2fd9-65d55e96227ea-df\"",
+      "file_path": "documentation/ObjectiveC/nxptrhash.md",
+      "hash": "1589942865bfd6c01570bd155425c165e349c8e7d00e175ea73a6a513f62a2f6"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/objectivec/nxptrisequal.json": {
+      "etag": "\"2f6d-65d55e9602ae6-df\"",
+      "file_path": "documentation/ObjectiveC/nxptrisequal.md",
+      "hash": "2a93dd458652e8d963d1e515a6c5160c4c416669136a549da420be0c2055ae81"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/objectivec/nxptrprototype.json": {
+      "etag": "\"41b8-65d55e95a22da-df\"",
+      "file_path": "documentation/ObjectiveC/nxptrprototype.md",
+      "hash": "f77d541208fdd2d56c3c99514831c8f088e40530e704200daa8f34de40f1d959"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/objectivec/nxptrstructkeyprototype.json": {
+      "etag": "\"41ee-65d55e95e964e-df\"",
+      "file_path": "documentation/ObjectiveC/nxptrstructkeyprototype.md",
+      "hash": "761b481597a9ba72e50355ee3c23db9c75defc72a4175873a3383db58047499b"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/objectivec/nxreallyfree.json": {
+      "etag": "\"2e51-65d55e9563c47-df\"",
+      "file_path": "documentation/ObjectiveC/nxreallyfree.md",
+      "hash": "8020b908f33f7f973b6a31b9bfb7afaeea591aa1665eb51008ee89bf19dba44e"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/objectivec/nxresethashtable.json": {
+      "etag": "\"2f62-65d55e95a22da-df\"",
+      "file_path": "documentation/ObjectiveC/nxresethashtable.md",
+      "hash": "d200b5367beed06fd48f6fd2f7c9b63a89ab8b1e6909d3dc67a407e710776fb3"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/objectivec/nxstrhash.json": {
+      "etag": "\"2fd9-65d55e958227b-df\"",
+      "file_path": "documentation/ObjectiveC/nxstrhash.md",
+      "hash": "31ff8eed309a714531dc75a0851b78b199f4f1a88cf4c3b9f181b4b8d01990e0"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/objectivec/nxstrisequal.json": {
+      "etag": "\"2f6d-65d55e9602ae6-df\"",
+      "file_path": "documentation/ObjectiveC/nxstrisequal.md",
+      "hash": "cedddb94253d94cb1790fb243cf2582a19e803a61185ed1e8b28150a5072ef5b"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/objectivec/nxstrprototype.json": {
+      "etag": "\"41b8-65d55e95e964e-df\"",
+      "file_path": "documentation/ObjectiveC/nxstrprototype.md",
+      "hash": "bf42ff8aeb68754f0cd508a4e8d13d9b9e95da3ae14be97122a7d29a39931ad2"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/objectivec/nxstrstructkeyprototype.json": {
+      "etag": "\"41ee-65d55e96227ea-df\"",
+      "file_path": "documentation/ObjectiveC/nxstrstructkeyprototype.md",
+      "hash": "a889b6e6576fc641c0c2d5c5a7f74a1b120c6800b69c6b0946b480297f7cf3b9"
+    },
     "https://developer.apple.com/tutorials/data/documentation/objectivec/objc_addexceptionhandler(_:_:).json": {
       "etag": "\"8250-65d55e963ce9f-df\"",
       "file_path": "documentation/ObjectiveC/objc_addexceptionhandler(_,_).md",
@@ -5684,6 +7329,11 @@
       "etag": "\"49a1-65d55e95a22da-df\"",
       "file_path": "documentation/ObjectiveC/objc_addloadimagefunc_defined.md",
       "hash": "1edd30cf3b45d492e75917b2b59afeadd5d7646177e454850203ff066fc94989"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/objectivec/objc_allocate_object.json": {
+      "etag": "\"307c-65d55e95c2ae2-df\"",
+      "file_path": "documentation/ObjectiveC/objc_allocate_object.md",
+      "hash": "bf5f32ed78572664224d2399e7eeb5901f4b5bc3645a5a0866e0efaca09e332b"
     },
     "https://developer.apple.com/tutorials/data/documentation/objectivec/objc_allocateclasspair(_:_:_:).json": {
       "etag": "\"58aa-65d55e95c2ae2-df\"",
@@ -5700,10 +7350,45 @@
       "file_path": "documentation/ObjectiveC/objc_api_version.md",
       "hash": "dbf920b93218f216f506fdc1fe459e6361ef7618a8b3984d50d4a8a9384649d4"
     },
+    "https://developer.apple.com/tutorials/data/documentation/objectivec/objc_arc_unavailable.json": {
+      "etag": "\"2807-65d55e95e964e-df\"",
+      "file_path": "documentation/ObjectiveC/objc_arc_unavailable.md",
+      "hash": "d15c0b6f0d9f295c3b907a2afdc8c80bb5ec00fb6c311e22aef9d4c3f20c0991"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/objectivec/objc_arm64_unavailable.json": {
+      "etag": "\"2813-65d55e95c2ae2-df\"",
+      "file_path": "documentation/ObjectiveC/objc_arm64_unavailable.md",
+      "hash": "75166e61915c6ebd706c9816aff4bee3fdc4bd5b43fb1399d1be55778e9341ad"
+    },
     "https://developer.apple.com/tutorials/data/documentation/objectivec/objc_assertregisteredthreadwithcollector().json": {
       "etag": "\"7521-65d55e95c2ae2-df\"",
       "file_path": "documentation/ObjectiveC/objc_assertregisteredthreadwithcollector().md",
       "hash": "29db399386e19c3593f34681c8a0254107407421ff123ee68d740d90251fa2d8"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/objectivec/objc_assign_global.json": {
+      "etag": "\"2e44-65d55e96227ea-df\"",
+      "file_path": "documentation/ObjectiveC/objc_assign_global.md",
+      "hash": "111308fe253cb3a722ef59b5f527b9ae0a71b9d31751088987259c7adcb65e57"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/objectivec/objc_assign_ivar.json": {
+      "etag": "\"303d-65d55e95c2ae2-df\"",
+      "file_path": "documentation/ObjectiveC/objc_assign_ivar.md",
+      "hash": "f78fff7dbbf3e54315bea7cb1a5fae637fd5a61a9d990d05440f8e6e12ccc575"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/objectivec/objc_assign_strongcast.json": {
+      "etag": "\"2e74-65d55e9602ae6-df\"",
+      "file_path": "documentation/ObjectiveC/objc_assign_strongcast.md",
+      "hash": "86435296e83f16e6f0dcce7a48a3774e172ea337a047be305b987e51931d2980"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/objectivec/objc_assign_threadlocal.json": {
+      "etag": "\"2e80-65d55e95c2ae2-df\"",
+      "file_path": "documentation/ObjectiveC/objc_assign_threadlocal.md",
+      "hash": "17bd8bb0b50abc02c59eb36ebe85883e3d20bbfce5f20eae590f66cc08df1cd7"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/objectivec/objc_assign_weak.json": {
+      "etag": "\"2e32-65d55e963ce9f-df\"",
+      "file_path": "documentation/ObjectiveC/objc_assign_weak.md",
+      "hash": "0e094dfd87c86951042eac8ea03bb993f7e3164032faf86896f24f6eebb35273"
     },
     "https://developer.apple.com/tutorials/data/documentation/objectivec/objc_associationpolicy.json": {
       "etag": "\"4201-65d55e95e964e-df\"",
@@ -5740,10 +7425,50 @@
       "file_path": "documentation/ObjectiveC/objc_associationpolicy/objc_association_retain_nonatomic.md",
       "hash": "15a302afdec9bef7cde8bb9490fd6549fabde1f8459cb9ab50869dcdde45dbb1"
     },
+    "https://developer.apple.com/tutorials/data/documentation/objectivec/objc_atomiccompareandswapglobal.json": {
+      "etag": "\"31b2-65d55e963ce9f-df\"",
+      "file_path": "documentation/ObjectiveC/objc_atomiccompareandswapglobal.md",
+      "hash": "60c36b4b5f65e0b19331b3002fccabcf878d3ffcba2e5accfbb7e00e887332e2"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/objectivec/objc_atomiccompareandswapglobalbarrier.json": {
+      "etag": "\"3206-65d55e95e964e-df\"",
+      "file_path": "documentation/ObjectiveC/objc_atomiccompareandswapglobalbarrier.md",
+      "hash": "1cb3c45f552b644e4ea897165d0349368ba3c0028862b99a83170b97c35914c0"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/objectivec/objc_atomiccompareandswapinstancevariable.json": {
+      "etag": "\"322a-65d55e963ce9f-df\"",
+      "file_path": "documentation/ObjectiveC/objc_atomiccompareandswapinstancevariable.md",
+      "hash": "990771f91cdc03def2d3384339a37b43005b73eade981d7f129a4fb8b1f46b55"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/objectivec/objc_atomiccompareandswapinstancevariablebarrier.json": {
+      "etag": "\"327e-65d55e9602ae6-df\"",
+      "file_path": "documentation/ObjectiveC/objc_atomiccompareandswapinstancevariablebarrier.md",
+      "hash": "8d02f20d32fd768faf5c92d5bf5575ba5892b3e5e9fef2e475ce3a8b0a5bf768"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/objectivec/objc_atomiccompareandswapptr.json": {
+      "etag": "\"318e-65d55e95a22da-df\"",
+      "file_path": "documentation/ObjectiveC/objc_atomiccompareandswapptr.md",
+      "hash": "5be7fefc7713e1fd39de1912cd14ea6ee9c35402f8006dbcf14f85cafae50729"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/objectivec/objc_atomiccompareandswapptrbarrier.json": {
+      "etag": "\"31e2-65d55e9602ae6-df\"",
+      "file_path": "documentation/ObjectiveC/objc_atomiccompareandswapptrbarrier.md",
+      "hash": "6bc5b42765b881988e99c43810ac3db7af7069cc72f27e1e8690aee962162c36"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/objectivec/objc_available.json": {
+      "etag": "\"293d-65d55e95a22da-df\"",
+      "file_path": "documentation/ObjectiveC/objc_available.md",
+      "hash": "02c188bbc438e8b744a37965fc63855cecdeda0ccc01a584d7b9bd81c3bc62d3"
+    },
     "https://developer.apple.com/tutorials/data/documentation/objectivec/objc_begin_catch(_:).json": {
       "etag": "\"78a5-65d55e95e964e-df\"",
       "file_path": "documentation/ObjectiveC/objc_begin_catch(_).md",
       "hash": "6a8cf033c440a7210c6dcec982170b93eeee818829f0bb4210d59d79a03afc88"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/objectivec/objc_bool_defined.json": {
+      "etag": "\"27f5-65d55e95c2ae2-df\"",
+      "file_path": "documentation/ObjectiveC/objc_bool_defined.md",
+      "hash": "d372200c8eba93481884dfd23af60cad93715b26c889e1bcf45e73e308b83518"
     },
     "https://developer.apple.com/tutorials/data/documentation/objectivec/objc_bool_is_bool.json": {
       "etag": "\"4935-65d55e958227b-df\"",
@@ -5770,6 +7495,11 @@
       "file_path": "documentation/ObjectiveC/objc_clear_stack(_).md",
       "hash": "1bb97c9be53605f3532af794b0b5213214eda04e90e7e6204de3f49f1975e905"
     },
+    "https://developer.apple.com/tutorials/data/documentation/objectivec/objc_cold.json": {
+      "etag": "\"27c5-65d55e9602ae6-df\"",
+      "file_path": "documentation/ObjectiveC/objc_cold.md",
+      "hash": "0ee7a1b6961113187344a8bf6e0edd643e6b55613e6f23b1b17e1a88bf27a148"
+    },
     "https://developer.apple.com/tutorials/data/documentation/objectivec/objc_collect(_:).json": {
       "etag": "\"7819-65d55e958227b-df\"",
       "file_path": "documentation/ObjectiveC/objc_collect(_).md",
@@ -5794,6 +7524,11 @@
       "etag": "\"796f-65d55e95a22da-df\"",
       "file_path": "documentation/ObjectiveC/objc_collectingenabled().md",
       "hash": "940b86dffc80733e5927112579d828940d0fa270c1c30bf488c7390de1709bec"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/objectivec/objc_constructinstance.json": {
+      "etag": "\"1c7b-65d55e963ce9f-df\"",
+      "file_path": "documentation/ObjectiveC/objc_constructinstance.md",
+      "hash": "e9ab2f815ddbef67f8df306912e31f618fff7062c56176b78ee659e76668a217"
     },
     "https://developer.apple.com/tutorials/data/documentation/objectivec/objc_copyclasslist(_:).json": {
       "etag": "\"4ad5-65d55e95e964e-df\"",
@@ -5820,6 +7555,16 @@
       "file_path": "documentation/ObjectiveC/objc_copyprotocollist(_).md",
       "hash": "0dea876ef44d1d917efcac123e11e466c2515699843086c39fc36d41f9790a8a"
     },
+    "https://developer.apple.com/tutorials/data/documentation/objectivec/objc_deprecated.json": {
+      "etag": "\"2846-65d55e95e964e-df\"",
+      "file_path": "documentation/ObjectiveC/objc_deprecated.md",
+      "hash": "5546ffb62906c7b03b04e807611e546f1c113e2344daaaccb5ed6bba7183310b"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/objectivec/objc_destructinstance.json": {
+      "etag": "\"183a-65d55e9602ae6-df\"",
+      "file_path": "documentation/ObjectiveC/objc_destructinstance.md",
+      "hash": "bdd6341463f61364163e7cd84518aa45a11b780e709cc12fb1aa54782279b201"
+    },
     "https://developer.apple.com/tutorials/data/documentation/objectivec/objc_disposeclasspair(_:).json": {
       "etag": "\"3357-65d55e96457cb-df\"",
       "file_path": "documentation/ObjectiveC/objc_disposeclasspair(_).md",
@@ -5830,15 +7575,30 @@
       "file_path": "documentation/ObjectiveC/objc_duplicateclass(_,_,_).md",
       "hash": "b424b8ec02ba4e45c493401d865c1f049af5737f9e1439eb1070d1663c166c36"
     },
+    "https://developer.apple.com/tutorials/data/documentation/objectivec/objc_dynamic_classes.json": {
+      "etag": "\"2807-65d55e9563c47-df\"",
+      "file_path": "documentation/ObjectiveC/objc_dynamic_classes.md",
+      "hash": "f1fbc5157540a6b8aedb40ff3028a011492e0b2c7977917456caa28863f10175"
+    },
     "https://developer.apple.com/tutorials/data/documentation/objectivec/objc_end_catch().json": {
       "etag": "\"73b9-65d55e95e964e-df\"",
       "file_path": "documentation/ObjectiveC/objc_end_catch().md",
       "hash": "417abc64d094419749d7ea9b759501fb8661e98eaf6d75d71626b1b1baf9ef3c"
     },
+    "https://developer.apple.com/tutorials/data/documentation/objectivec/objc_enum.json": {
+      "etag": "\"2867-65d55e940c897-df\"",
+      "file_path": "documentation/ObjectiveC/objc_enum.md",
+      "hash": "d355815a20d96d27bfe73a0eb4429814253041220d1725c24e609759850d5836"
+    },
     "https://developer.apple.com/tutorials/data/documentation/objectivec/objc_enumerateclasses(fromimage:matchingnameprefix:conformingto:subclassing:).json": {
       "etag": "\"67f6-65d55e9602ae6-df\"",
       "file_path": "documentation/ObjectiveC/objc_enumerateclasses(fromimage,matchingnameprefix,conformingto,subclassing).md",
       "hash": "f1a74fa18215d644176ab25850edeaefae85fd969225a7e043018cec96f74324"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/objectivec/objc_enumerateclasses.json": {
+      "etag": "\"35e7-65d55e963ce9f-df\"",
+      "file_path": "documentation/ObjectiveC/objc_enumerateclasses.md",
+      "hash": "3414bf75a33a4881816c119a41603f5c2cbf63a7b9887bdb327536018c668934"
     },
     "https://developer.apple.com/tutorials/data/documentation/objectivec/objc_enumerationmutation(_:).json": {
       "etag": "\"3d9d-65d55e940c897-df\"",
@@ -5875,6 +7635,16 @@
       "file_path": "documentation/ObjectiveC/objc_exhaustive_collection.md",
       "hash": "c5d0207b0859e1548d55080288779c54e72679839ab1d508d174ee5b2ee437eb"
     },
+    "https://developer.apple.com/tutorials/data/documentation/objectivec/objc_export.json": {
+      "etag": "\"27d1-65d55e958227b-df\"",
+      "file_path": "documentation/ObjectiveC/objc_export.md",
+      "hash": "ba424f7f1467fb029cf82c53d9b93c39a9638b0515a61e1289892e63bcdc7f6f"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/objectivec/objc_extern.json": {
+      "etag": "\"27d1-65d55e95c2ae2-df\"",
+      "file_path": "documentation/ObjectiveC/objc_extern.md",
+      "hash": "9dff1080a84bf0f4434ecf8c99a093fe06e0b232d54c103a5534782b86510604"
+    },
     "https://developer.apple.com/tutorials/data/documentation/objectivec/objc_finalizeonmainthread(_:).json": {
       "etag": "\"7a2f-65d55e96457cb-df\"",
       "file_path": "documentation/ObjectiveC/objc_finalizeonmainthread(_).md",
@@ -5889,6 +7659,16 @@
       "etag": "\"5172-65d55e963ce9f-df\"",
       "file_path": "documentation/ObjectiveC/objc_func_loadimage.md",
       "hash": "c2661ac5adfc96ddec464df64ff70863f59f76207d6aefb5572b2d9263136fae"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/objectivec/objc_gc_deprecated.json": {
+      "etag": "\"2885-65d55e95e964e-df\"",
+      "file_path": "documentation/ObjectiveC/objc_gc_deprecated.md",
+      "hash": "d53aaecd2fb43ee60ba644fbdb78384e755a1010b55b5e071613efb3b71312ae"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/objectivec/objc_gc_unavailable.json": {
+      "etag": "\"2831-65d55e963ce9f-df\"",
+      "file_path": "documentation/ObjectiveC/objc_gc_unavailable.md",
+      "hash": "c8b8250401ed63886a879213eef33f44d0df7222983f4084f0e174fc4ad6ad67"
     },
     "https://developer.apple.com/tutorials/data/documentation/objectivec/objc_generational_collection.json": {
       "etag": "\"3d3f-65d55e95a22da-df\"",
@@ -5915,6 +7695,11 @@
       "file_path": "documentation/ObjectiveC/objc_getclasslist(_,_).md",
       "hash": "6e737e40fdc196306e20c6ab4b52e7d7af31c0c295b095b7fd3c4b12fbca462c"
     },
+    "https://developer.apple.com/tutorials/data/documentation/objectivec/objc_getfutureclass.json": {
+      "etag": "\"66aa-65d55e958227b-df\"",
+      "file_path": "documentation/ObjectiveC/objc_getfutureclass.md",
+      "hash": "145306e7da77e01f840953fd529a761230d22b386fac4ce583466d6c1ba1cb1d"
+    },
     "https://developer.apple.com/tutorials/data/documentation/objectivec/objc_getmetaclass(_:).json": {
       "etag": "\"421a-65d55e95c2ae2-df\"",
       "file_path": "documentation/ObjectiveC/objc_getmetaclass(_).md",
@@ -5929,6 +7714,11 @@
       "etag": "\"458a-65d55e96227ea-df\"",
       "file_path": "documentation/ObjectiveC/objc_getrequiredclass(_).md",
       "hash": "774e0d0d31d705245f74d60627579aed4f1b734a639ec81a13d147c386cdfe84"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/objectivec/objc_hash_availability.json": {
+      "etag": "\"27d2-65d55e95e964e-df\"",
+      "file_path": "documentation/ObjectiveC/objc_hash_availability.md",
+      "hash": "3db7b2167f301635e874704ef5afe1610e1b68e90f1580d0ff19d3b1cbbec1c6"
     },
     "https://developer.apple.com/tutorials/data/documentation/objectivec/objc_hook_getclass.json": {
       "etag": "\"550e-65d55e95e964e-df\"",
@@ -5945,10 +7735,25 @@
       "file_path": "documentation/ObjectiveC/objc_hook_lazyclassnamer.md",
       "hash": "9e4df22f8aedaef19e421c2da9bca7570b4e0fc7ee7b4f2c518f856e3f85c1fd"
     },
+    "https://developer.apple.com/tutorials/data/documentation/objectivec/objc_import.json": {
+      "etag": "\"27d1-65d55e95c2ae2-df\"",
+      "file_path": "documentation/ObjectiveC/objc_import.md",
+      "hash": "e04f216be6cc969199a6fee74ac76f43773dc172755a071fd559293a6bfb9c90"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/objectivec/objc_inline.json": {
+      "etag": "\"27d1-65d55e95a22da-df\"",
+      "file_path": "documentation/ObjectiveC/objc_inline.md",
+      "hash": "9e0fe9af3b7e5d3ba70e7ea59b5d5d4f872f4532b53e3c9b9f4829c2a89a5c99"
+    },
     "https://developer.apple.com/tutorials/data/documentation/objectivec/objc_is_finalized(_:).json": {
       "etag": "\"7d70-65d55e95a22da-df\"",
       "file_path": "documentation/ObjectiveC/objc_is_finalized(_).md",
       "hash": "f04e721604623aad6080619855728d58dcb7e2dbf7105bc0284e60d607349826"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/objectivec/objc_isa_availability.json": {
+      "etag": "\"2849-65d55e940c897-df\"",
+      "file_path": "documentation/ObjectiveC/objc_isa_availability.md",
+      "hash": "f69c2903fe557bd172beeb2a9e83a3ae1f6a273e427ed344e5c2db2f759838ee"
     },
     "https://developer.apple.com/tutorials/data/documentation/objectivec/objc_loadweak(_:).json": {
       "etag": "\"44ce-65d55e940c897-df\"",
@@ -5990,6 +7795,36 @@
       "file_path": "documentation/ObjectiveC/objc_method_description/types.md",
       "hash": "3aef76f00a3c450f80dc3b8a501e5c12ebf5296d14274061a2b9aa6f421f5331"
     },
+    "https://developer.apple.com/tutorials/data/documentation/objectivec/objc_msgsend.json": {
+      "etag": "\"1d29-65d55e95a22da-df\"",
+      "file_path": "documentation/ObjectiveC/objc_msgsend.md",
+      "hash": "0a650fabc083fdb15546a39f73799cadb36d688bea8ad71ce70f7ee6de44df99"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/objectivec/objc_msgsend_fp2ret.json": {
+      "etag": "\"2cf1-65d55e958227b-df\"",
+      "file_path": "documentation/ObjectiveC/objc_msgsend_fp2ret.md",
+      "hash": "c5c9d8288519a9f124855b249f15e20b2dcebc144114f0978f0b98e753f3af09"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/objectivec/objc_msgsend_fpret.json": {
+      "etag": "\"1ac9-65d55e958227b-df\"",
+      "file_path": "documentation/ObjectiveC/objc_msgsend_fpret.md",
+      "hash": "b467eb5d45fba04179dfa977d8345fab56fd017ba514895a42e46a502d8b84bc"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/objectivec/objc_msgsend_stret.json": {
+      "etag": "\"1dd3-65d55e96227ea-df\"",
+      "file_path": "documentation/ObjectiveC/objc_msgsend_stret.md",
+      "hash": "181f2c981525c8644d21561476e90ad764c3a05fe92569a0a24efaafb1783534"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/objectivec/objc_msgsendsuper.json": {
+      "etag": "\"258c-65d55e958227b-df\"",
+      "file_path": "documentation/ObjectiveC/objc_msgsendsuper.md",
+      "hash": "7e4c3a86354f0dd1ecab072d782ccdb7a4faf51a2137d7f75bc53e9f23abc4b8"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/objectivec/objc_msgsendsuper_stret.json": {
+      "etag": "\"237c-65d55e95e964e-df\"",
+      "file_path": "documentation/ObjectiveC/objc_msgsendsuper_stret.md",
+      "hash": "a8540a2601a0cc62f94baf279d0b0db403ab60744f5bda9abe61d3dd627b6b19"
+    },
     "https://developer.apple.com/tutorials/data/documentation/objectivec/objc_no_gc.json": {
       "etag": "\"3354-65d55e9563c47-df\"",
       "file_path": "documentation/ObjectiveC/objc_no_gc.md",
@@ -5999,6 +7834,21 @@
       "etag": "\"48e8-65d55e963ce9f-df\"",
       "file_path": "documentation/ObjectiveC/objc_no_gc_api.md",
       "hash": "46a058739881610cdc44713c4961ab947a0d044b28dd36515c8dcbc608a51cfb"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/objectivec/objc_noescape.json": {
+      "etag": "\"27e9-65d55e95a22da-df\"",
+      "file_path": "documentation/ObjectiveC/objc_noescape.md",
+      "hash": "63e1d09204f8a9ae7555c2ca048f52369c26f12a32a45d70cd3179b86086db47"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/objectivec/objc_noreturn.json": {
+      "etag": "\"27e9-65d55e95a22da-df\"",
+      "file_path": "documentation/ObjectiveC/objc_noreturn.md",
+      "hash": "488049e3c8777ae8cfc5ee5ce248c252b834bb12548be62e1aa79cc61393e4d9"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/objectivec/objc_not_tail_called.json": {
+      "etag": "\"283d-65d55e963ce9f-df\"",
+      "file_path": "documentation/ObjectiveC/objc_not_tail_called.md",
+      "hash": "194994c65beeb08b466b6baa00365dfd6cf055e0559bbf22eed3246a07049373"
     },
     "https://developer.apple.com/tutorials/data/documentation/objectivec/objc_object.json": {
       "etag": "\"27f1-65d55e95e964e-df\"",
@@ -6024,6 +7874,21 @@
       "etag": "\"4a63-65d55e95a22da-df\"",
       "file_path": "documentation/ObjectiveC/objc_old_dispatch_prototypes.md",
       "hash": "3ced0769faa47573727bae1ccb38e2f7f1de5d4eaf3a88feab87e6449c9281c9"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/objectivec/objc_options.json": {
+      "etag": "\"287f-65d55e96227ea-df\"",
+      "file_path": "documentation/ObjectiveC/objc_options.md",
+      "hash": "f7d8e694ec00c23e01cac333e5ced7ebea22460ef55033ee8ac39f9e45d1c296"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/objectivec/objc_osx_available_others_unavailable.json": {
+      "etag": "\"2966-65d55e95c2ae2-df\"",
+      "file_path": "documentation/ObjectiveC/objc_osx_available_others_unavailable.md",
+      "hash": "86f031636c45e1852a4b1f7708c0da4d9eb7c493671ea96144923ef2cc1d4bcf"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/objectivec/objc_osx_deprecated_others_unavailable.json": {
+      "etag": "\"29fa-65d55e95c2ae2-df\"",
+      "file_path": "documentation/ObjectiveC/objc_osx_deprecated_others_unavailable.md",
+      "hash": "bf04e2407530f22e2601c72907d70e0d8206eb034a77c8f03cfbb899a65eb256"
     },
     "https://developer.apple.com/tutorials/data/documentation/objectivec/objc_property_attribute_t.json": {
       "etag": "\"48d8-65d55e958227b-df\"",
@@ -6055,10 +7920,20 @@
       "file_path": "documentation/ObjectiveC/objc_ratio_collection.md",
       "hash": "944145fb3a6dd7c12e6aab3c5db27dbddd6d210e3408c11a493946d53aaacb86"
     },
+    "https://developer.apple.com/tutorials/data/documentation/objectivec/objc_read_weak.json": {
+      "etag": "\"2d9c-65d55e9602ae6-df\"",
+      "file_path": "documentation/ObjectiveC/objc_read_weak.md",
+      "hash": "77cafa4d77dd29953e4d44aab379287326015cc20e484ea53100e0fa94770933"
+    },
     "https://developer.apple.com/tutorials/data/documentation/objectivec/objc_realizeclassfromswift_defined.json": {
       "etag": "\"49ce-65d55e963ce9f-df\"",
       "file_path": "documentation/ObjectiveC/objc_realizeclassfromswift_defined.md",
       "hash": "1b061190cbab63f8296e292157f9bc3cd4c16f2f7e11f24584fff6cc6f503ed5"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/objectivec/objc_refined_for_swift.json": {
+      "etag": "\"2855-65d55e96227ea-df\"",
+      "file_path": "documentation/ObjectiveC/objc_refined_for_swift.md",
+      "hash": "6d4bd6396b04be363c8a1414f2c2584888a180ba8bd614ceb7cae8474783889e"
     },
     "https://developer.apple.com/tutorials/data/documentation/objectivec/objc_registerclasspair(_:).json": {
       "etag": "\"313c-65d55e95a22da-df\"",
@@ -6084,6 +7959,16 @@
       "etag": "\"7701-65d55e95e964e-df\"",
       "file_path": "documentation/ObjectiveC/objc_removeexceptionhandler(_).md",
       "hash": "51631a02ad5fabb32194c731ee7c4932047eba6b9bd30f5d453ab5dad70a3bcb"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/objectivec/objc_returns_retained.json": {
+      "etag": "\"2849-65d55e95c2ae2-df\"",
+      "file_path": "documentation/ObjectiveC/objc_returns_retained.md",
+      "hash": "f170626522e330969062d33aae09bd5b2d2197e4a509ef93c6b1808e40fc06ff"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/objectivec/objc_root_class.json": {
+      "etag": "\"d86-65d55e95c2ae2-df\"",
+      "file_path": "documentation/ObjectiveC/objc_root_class.md",
+      "hash": "0e51cb9016426fd66cb9edbb717af42bf05da72187a9ca17d6e9a532c707ad29"
     },
     "https://developer.apple.com/tutorials/data/documentation/objectivec/objc_set_collection_ratio(_:).json": {
       "etag": "\"7943-65d55e963ce9f-df\"",
@@ -6170,6 +8055,11 @@
       "file_path": "documentation/ObjectiveC/objc_storeweak(_,_).md",
       "hash": "7e869d4adeaf5f8835bef565d5eee6c8c81f97f07124db841f2fa49bd90c6731"
     },
+    "https://developer.apple.com/tutorials/data/documentation/objectivec/objc_super-c.macro.json": {
+      "etag": "\"27ed-65d55e940c897-df\"",
+      "file_path": "documentation/ObjectiveC/objc_super-c.macro.md",
+      "hash": "e2dfdb1bd2fd10f0d778e2ebcefd58037bc2d11932003f48df2ca459ce26874e"
+    },
     "https://developer.apple.com/tutorials/data/documentation/objectivec/objc_super-swift.struct.json": {
       "etag": "\"328a-65d55e95e964e-df\"",
       "file_path": "documentation/ObjectiveC/objc_super-swift.struct.md",
@@ -6190,6 +8080,21 @@
       "file_path": "documentation/ObjectiveC/objc_super-swift.struct/super_class.md",
       "hash": "d4ba232f4b8a4d950fe6bc5ffbba8fc92a27c6458267e0db73c3bff44fa1a5d6"
     },
+    "https://developer.apple.com/tutorials/data/documentation/objectivec/objc_swift_unavailable.json": {
+      "etag": "\"28b2-65d55e95a22da-df\"",
+      "file_path": "documentation/ObjectiveC/objc_swift_unavailable.md",
+      "hash": "3b6f5b187f7df118926480023173b2479b581b4afb3655de60ddf39c8961af1d"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/objectivec/objc_sync_enter.json": {
+      "etag": "\"3156-65d55e958227b-df\"",
+      "file_path": "documentation/ObjectiveC/objc_sync_enter.md",
+      "hash": "64ea274e3d654b74deff2d80a4ca88198b8e4a8bb71d2ed0fd8dbd7316e10592"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/objectivec/objc_sync_exit.json": {
+      "etag": "\"305a-65d55e958227b-df\"",
+      "file_path": "documentation/ObjectiveC/objc_sync_exit.md",
+      "hash": "03e901b880343556a689d6989cb85232635d160fc4014b4828d59b461963f12b"
+    },
     "https://developer.apple.com/tutorials/data/documentation/objectivec/objc_sync_not_owning_thread_error.json": {
       "etag": "\"3d68-65d55e95c2ae2-df\"",
       "file_path": "documentation/ObjectiveC/objc_sync_not_owning_thread_error.md",
@@ -6205,6 +8110,11 @@
       "file_path": "documentation/ObjectiveC/objc_terminate().md",
       "hash": "dc9749e8c95635c22fb91c5baf8613b01dd04a578322c351d4386abda7d67649"
     },
+    "https://developer.apple.com/tutorials/data/documentation/objectivec/objc_unavailable.json": {
+      "etag": "\"286a-65d55e9602ae6-df\"",
+      "file_path": "documentation/ObjectiveC/objc_unavailable.md",
+      "hash": "aeb7d26a3070bb27cf976aa27deaa5c5ca4fd4704836398a351816e576956b54"
+    },
     "https://developer.apple.com/tutorials/data/documentation/objectivec/objc_uncaught_exception_handler.json": {
       "etag": "\"4a71-65d55e95a22da-df\"",
       "file_path": "documentation/ObjectiveC/objc_uncaught_exception_handler.md",
@@ -6214,6 +8124,11 @@
       "etag": "\"7445-65d55e96227ea-df\"",
       "file_path": "documentation/ObjectiveC/objc_unregisterthreadwithcollector().md",
       "hash": "b8c6846e2854e534c19b393f6afe754bd4eca4c07a8c3bd57dac7cc6315aed14"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/objectivec/objc_visible.json": {
+      "etag": "\"27dd-65d55e963ce9f-df\"",
+      "file_path": "documentation/ObjectiveC/objc_visible.md",
+      "hash": "9b499f462dbccd5a2c4c7a5333e98eea5cc85344a2498a62015dcc127a87fb1e"
     },
     "https://developer.apple.com/tutorials/data/documentation/objectivec/objc_wait_until_done.json": {
       "etag": "\"3cf7-65d55e9602ae6-df\"",
@@ -6290,6 +8205,21 @@
       "file_path": "documentation/ObjectiveC/objcenumerationimage/machheader(_).md",
       "hash": "ab137662dd71a516d488254ddeec5b900079473077fff3a6edf784b1488a55d1"
     },
+    "https://developer.apple.com/tutorials/data/documentation/objectivec/object_copy.json": {
+      "etag": "\"34ec-65d55e95c2ae2-df\"",
+      "file_path": "documentation/ObjectiveC/object_copy.md",
+      "hash": "47684fe986573a377e09841af0fdb9a107e19f6139947caf4eff9c7a42ebe293"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/objectivec/object_copyfromzone.json": {
+      "etag": "\"3031-65d55e96227ea-df\"",
+      "file_path": "documentation/ObjectiveC/object_copyfromzone.md",
+      "hash": "6907903e3c6497d34b1f6bffd67883f4974bae4bdf62974e5d5f81f83bacba46"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/objectivec/object_dispose.json": {
+      "etag": "\"3254-65d55e940c897-df\"",
+      "file_path": "documentation/ObjectiveC/object_dispose.md",
+      "hash": "e19a35544d86c12f0a2cf84fd58f95127d9da31520aa716c69fd976dbe76f55c"
+    },
     "https://developer.apple.com/tutorials/data/documentation/objectivec/object_getclass(_:).json": {
       "etag": "\"44b8-65d55e958227b-df\"",
       "file_path": "documentation/ObjectiveC/object_getclass(_).md",
@@ -6305,6 +8235,11 @@
       "file_path": "documentation/ObjectiveC/object_getindexedivars(_).md",
       "hash": "fb986d5ce26325f888944a4dac5de8bd9a78b5e5d2c149ca1a7dc4498a0a02f0"
     },
+    "https://developer.apple.com/tutorials/data/documentation/objectivec/object_getinstancevariable.json": {
+      "etag": "\"3b04-65d55e96227ea-df\"",
+      "file_path": "documentation/ObjectiveC/object_getinstancevariable.md",
+      "hash": "c712f42b16824a1185b5cb5bc5dcec1cc64b2315467c9c15b40589f9ccb1c2ca"
+    },
     "https://developer.apple.com/tutorials/data/documentation/objectivec/object_getivar(_:_:).json": {
       "etag": "\"4a0b-65d55e95a22da-df\"",
       "file_path": "documentation/ObjectiveC/object_getivar(_,_).md",
@@ -6319,6 +8254,16 @@
       "etag": "\"4806-65d55e96227ea-df\"",
       "file_path": "documentation/ObjectiveC/object_setclass(_,_).md",
       "hash": "72291eeb1acf01deac64426daf2383bf43005e18c2dd5871b434afa3dd9661af"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/objectivec/object_setinstancevariable.json": {
+      "etag": "\"3ae1-65d55e95e964e-df\"",
+      "file_path": "documentation/ObjectiveC/object_setinstancevariable.md",
+      "hash": "f621a4824721900636aa07a34575a1b77c4a91b4957a98bedb32d49c85b251ee"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/objectivec/object_setinstancevariablewithstrongdefault.json": {
+      "etag": "\"3526-65d55e96227ea-df\"",
+      "file_path": "documentation/ObjectiveC/object_setinstancevariablewithstrongdefault.md",
+      "hash": "91af4a4542aa9d968a07d9fd2b7a49c9188ca5c0a72832e843fc20f7f56a6f14"
     },
     "https://developer.apple.com/tutorials/data/documentation/objectivec/object_setivar(_:_:_:).json": {
       "etag": "\"485b-65d55e96227ea-df\"",
@@ -6354,6 +8299,11 @@
       "etag": "\"59fe-65902851ae654-df\"",
       "file_path": "documentation/ObjectiveC/objective-c-macros.md",
       "hash": "3b0123ce227fa264137598dbd28b2bc775a274aae072cef33a72abb9e51d7eed"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/objectivec/objective-c-root-class.json": {
+      "etag": "\"1541-65902851f55c5-df\"",
+      "file_path": "documentation/ObjectiveC/objective-c-root-class.md",
+      "hash": "32467da1db11fbe22448d0d956468b46574554bf262c669d362df894298bbf6d"
     },
     "https://developer.apple.com/tutorials/data/documentation/objectivec/objective-c-runtime.json": {
       "etag": "\"2e0f2-65902851d33a9-df\"",
@@ -6450,6 +8400,11 @@
       "file_path": "documentation/ObjectiveC/protocol_isequal(_,_).md",
       "hash": "5b5750e9c58b25aa621aade26bef59f2e204680aad2cb2fc19f317cbce1cd070"
     },
+    "https://developer.apple.com/tutorials/data/documentation/objectivec/sel.json": {
+      "etag": "\"3801-65d55e95a22da-df\"",
+      "file_path": "documentation/ObjectiveC/sel.md",
+      "hash": "bcc6b7649b2e10be25524280690c32ee6e02a0bf9e93cfc8682d147c80945444"
+    },
     "https://developer.apple.com/tutorials/data/documentation/objectivec/sel_getname(_:).json": {
       "etag": "\"3806-65d55e95a22da-df\"",
       "file_path": "documentation/ObjectiveC/sel_getname(_).md",
@@ -6539,6 +8494,11 @@
       "etag": "\"57bd-65902852432cd-df\"",
       "file_path": "documentation/ObjectiveC/webscripting.md",
       "hash": "c448ebf836e84e03d091baeb9068128e9c34318f105d08e8f03862d12276879b"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/objectivec/yes.json": {
+      "etag": "\"10f1-65d55e958227b-df\"",
+      "file_path": "documentation/ObjectiveC/yes.md",
+      "hash": "9cb10f23eb3e84f532fef10667a37c90bbcb0880580ce8fb42f743fc75990fdf"
     }
   },
   "metadata": {
@@ -6546,8 +8506,8 @@
       "kernel": {}
     },
     "render": {
-      "version": 1
+      "version": 2
     },
-    "total_pages": 1308
+    "total_pages": 1700
   }
 }

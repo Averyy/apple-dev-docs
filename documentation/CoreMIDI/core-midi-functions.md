@@ -34,6 +34,24 @@
 - [func MIDIJitterReductionTimestampMessage(UInt16) -> MIDIMessage_32](./midijitterreductiontimestampmessage%28_%29.md)
 - [func MIDINoOpMessage() -> MIDIMessage_32](./midinoopmessage%28%29.md)
 - [func MIDITicksSinceLastEventMessage(UInt32) -> MIDIMessage_32](./miditickssincelasteventmessage%28_%29.md)
+- [MIDIGetSerialPortDrivers](./midigetserialportdrivers.md)
+  Returns a list of installed MIDI drivers for serial port MIDI devices.
+- [MIDIGetSerialPortOwner](./midigetserialportowner.md)
+  Returns the MIDI driver that owns a serial port.
+- [MIDISetSerialPortOwner](./midisetserialportowner.md)
+  Specifies the MIDI driver that owns a serial port.
+- [MIDISetupCreate](./midisetupcreate.md)
+  Queries drivers to discover what hardware is available.
+- [MIDISetupDispose](./midisetupdispose.md)
+  Disposes the specified setup object.
+- [MIDISetupFromData](./midisetupfromdata.md)
+  Creates a MIDISetup object from an XML stream.
+- [MIDISetupGetCurrent](./midisetupgetcurrent.md)
+  Returns the system’s current MIDISetup.
+- [MIDISetupInstall](./midisetupinstall.md)
+  Installs a MIDISetup as the system’s current state.
+- [MIDISetupToData](./midisetuptodata.md)
+  Creates an XML representation of a MIDISetup object.
 
 ## See Also
 

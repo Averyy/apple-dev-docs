@@ -48,6 +48,14 @@ For a directory URL, this is equivalent to calling the [`CFBundleCopyBundleLocal
   Given an array of possible localizations and preferred locations, returns the one or more of them that CFBundle would use, without reference to the current application context.
 - [func CFBundleCopyPreferredLocalizationsFromArray(CFArray!) -> CFArray!](./cfbundlecopypreferredlocalizationsfromarray%28_%29.md)
   Given an array of possible localizations, returns the one or more of them that CFBundle would use in the current application context.
+- [CFCopyLocalizedString](./cfcopylocalizedstring.md)
+  Searches the default strings file `Localizable.strings` for the string associated with the specified key.
+- [CFCopyLocalizedStringFromTable](./cfcopylocalizedstringfromtable.md)
+  Searches the specified strings file for the string associated with the specified key.
+- [CFCopyLocalizedStringFromTableInBundle](./cfcopylocalizedstringfromtableinbundle.md)
+  Returns a localized version of the specified string.
+- [CFCopyLocalizedStringWithDefaultValue](./cfcopylocalizedstringwithdefaultvalue.md)
+  Returns a localized version of a localization string.
 
 
 ---

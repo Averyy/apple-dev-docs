@@ -28,6 +28,8 @@ class Preview
 ### Instance Properties
 - [var ownerDisplayName: String?](./preview-swift.class/ownerdisplayname.md)
 - [var provisioningTemplateIdentifier: String?](./preview-swift.class/provisioningtemplateidentifier.md)
+### Type Methods
+- [+ previewWithTemplateIdentifier:](../pkshareablepassmetadatapreview/previewwithtemplateidentifier_.md)
 
 ## Relationships
 

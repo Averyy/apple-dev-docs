@@ -38,6 +38,9 @@ enum MLCExecutionOptions : uint64_t;
   The option to enable additional per-layer profiling information using signposts.
 - [static var forwardForInference: MLCExecutionOptions](./mlcexecutionoptions/forwardforinference.md)
   The option to execute the forward pass for inference only.
+### Enumeration Cases
+- [MLCExecutionOptionsNone](./mlcexecutionoptions/mlcexecutionoptionsnone.md)
+  The option to execute the graph in the most efficient way possible.
 
 ## Relationships
 

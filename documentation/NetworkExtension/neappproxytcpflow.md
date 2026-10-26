@@ -43,6 +43,7 @@ App Proxy Providers receive TCP connections to be proxied in the form of `NEAppP
   An [`NWEndpoint`](./nwendpoint.md) object containing information about the intended remote endpoint of the flow.
 ### Instance Properties
 - [var remoteFlowEndpoint: NWEndpoint](./neappproxytcpflow/remoteflowendpoint-4r7v1.md)
+- [remoteFlowEndpoint](./neappproxytcpflow/remoteflowendpoint-9lvob.md)
 
 ## Relationships
 

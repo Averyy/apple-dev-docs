@@ -172,6 +172,16 @@ Use [`axes(_:)`](./uisplitarrangement-swift.struct/axes%28_%29.md) in Swift or [
   A type that describes how an arrangement view controller lays out its view controllers.
 - [func updateArrangement<A>(A, animated: Bool)](./uiarrangementviewcontroller/updatearrangement%28_,animated%29.md)
   Updates the arrangement of the view controller.
+- [UIOverlayArrangement](./uioverlayarrangement-c.class.md)
+  An arrangement that layers the primary view over the secondary view, or places the views side by side on a folded display.
+- [UISplitArrangement](./uisplitarrangement-c.class.md)
+  An arrangement that places the primary and secondary views side by side along one or more axes.
+- [UIArrangement](./uiarrangement.md)
+  A type that describes how an arrangement view controller lays out its view controllers.
+- [- updateArrangement:](./uiarrangementviewcontroller/updatearrangement_.md)
+  Updates the arrangement of the view controller.
+- [- updateArrangement:animated:](./uiarrangementviewcontroller/updatearrangement_animated_.md)
+  Updates the arrangement of the view controller.
 ### Managing arrangement view controllers
 - [UIArrangementViewController.ViewPlacement](./uiarrangementviewcontroller/viewplacement.md)
   A placement of a view controller within an arrangement view controller.
@@ -181,11 +191,25 @@ Use [`axes(_:)`](./uisplitarrangement-swift.struct/axes%28_%29.md) in Swift or [
   Sets the view controller in the arrangement for the specific placement you provide.
 - [func placement(for: UIViewController) -> UIArrangementViewController.ViewPlacement?](./uiarrangementviewcontroller/placement%28for%29.md)
   Returns the placement for the view controller you provide in the arrangement.
+- [UIArrangementViewControllerViewPlacement](./uiarrangementviewcontrollerviewplacement.md)
+  A placement of a view controller within an arrangement view controller.
+- [- viewControllerForPlacement:](./uiarrangementviewcontroller/viewcontrollerforplacement_.md)
+  The view controller in the arrangement for the provided placement.
+- [- setViewController:forPlacement:](./uiarrangementviewcontroller/setviewcontroller_forplacement_.md)
+  Sets the view controller in the arrangement for a specific placement.
+- [- setViewController:forPlacement:animated:](./uiarrangementviewcontroller/setviewcontroller_forplacement_animated_.md)
+  Sets the view controller in the arrangement for a specific placement.
+- [- placementForViewController:](./uiarrangementviewcontroller/placementforviewcontroller_.md)
+  The placement for the provided view controller in the arrangement. Will return `UIArrangementViewControllerViewPlacementNone` if the provided view controller is not a view controller provided to the arrangement view controller with an explicit placement.
 ### Getting view state
 - [UIArrangementViewController.ViewState](./uiarrangementviewcontroller/viewstate.md)
   The state of a view within an arrangement.
 - [func state(for: UIArrangementViewController.ViewPlacement) -> UIArrangementViewController.ViewState?](./uiarrangementviewcontroller/state%28for%29.md)
   Returns the view state for a placement in the arrangement.
+- [UIArrangementViewState](./uiarrangementviewstate.md)
+  The state of a view within an arrangement.
+- [- stateForPlacement:](./uiarrangementviewcontroller/stateforplacement_.md)
+  Returns the arrangement view state for a placement.
 
 ## Relationships
 

@@ -40,20 +40,28 @@ If you assign a handler to the [`completionBlock`](../Foundation/operation/compl
   Creates an operation for fetching the specified subscriptions.
 - [init()](./ckfetchsubscriptionsoperation/init%28%29.md)
   Creates an empty fetch subscriptions operation.
+- [- initWithSubscriptionIDs:](./ckfetchsubscriptionsoperation/initwithsubscriptionids_.md)
+  Creates an operation for fetching the specified subscriptions.
 ### Getting All Subscriptions
 - [class func fetchAllSubscriptionsOperation() -> Self](./ckfetchsubscriptionsoperation/fetchallsubscriptionsoperation%28%29.md)
   Returns an operation that fetches all of the user’s subscriptions.
 ### Configuring the Fetch Subscriptions Operation
 - [var subscriptionIDs: [CKSubscription.ID]?](./ckfetchsubscriptionsoperation/subscriptionids-17f4q.md)
   The IDs of the subscriptions to fetch.
+- [subscriptionIDs](./ckfetchsubscriptionsoperation/subscriptionids-714ct.md)
+  The IDs of the subscriptions to fetch.
 ### Processing the Fetch Subscription Results
 - [var fetchSubscriptionCompletionBlock: (([CKSubscription.ID : CKSubscription]?, (any Error)?) -> Void)?](./ckfetchsubscriptionsoperation/fetchsubscriptioncompletionblock-6hhpi.md)
   The block to execute with the fetch results.
+- [fetchSubscriptionCompletionBlock](./ckfetchsubscriptionsoperation/fetchsubscriptioncompletionblock-207ep.md)
+  The block to execute after the operation fetches the subscriptions.
 ### Instance Properties
 - [var fetchSubscriptionsResultBlock: ((Result<Void, any Error>) -> Void)?](./ckfetchsubscriptionsoperation/fetchsubscriptionsresultblock.md)
   The closure to execute after CloudKit retrieves all of the subscriptions.
 - [var perSubscriptionResultBlock: ((CKSubscription.ID, Result<CKSubscription, any Error>) -> Void)?](./ckfetchsubscriptionsoperation/persubscriptionresultblock.md)
   The closure to execute when a subscription becomes available.
+- [perSubscriptionCompletionBlock](./ckfetchsubscriptionsoperation/persubscriptioncompletionblock.md)
+  The closure to execute as the operation fetches individual subscriptions.
 
 ## Relationships
 

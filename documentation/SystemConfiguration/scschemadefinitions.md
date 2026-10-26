@@ -59,6 +59,11 @@ This document describes keys and values used to access elements in the System Co
   Keys that correspond to values in the dynamic store.
 - [Reserved Keys](./reserved-keys.md)
   Keys that have a reserved usage.
+### Deprecated Constants
+- [AirPort Dictionary Keys](./airport-dictionary-keys.md)
+  Keys that correspond to values in the `kSCEntNetAirPort` dictionary.
+- [Deprecated Keys](./deprecated-keys.md)
+  Keys that are no longer supported.
 
 ## See Also
 
@@ -78,6 +83,8 @@ This document describes keys and values used to access elements in the System Co
 - [SystemConfiguration Constants](./systemconfiguration-constants.md)
 - [SystemConfiguration Functions](./systemconfiguration-functions.md)
 - [SystemConfiguration Data Types](./systemconfiguration-data-types.md)
+- [DHCPClientPreferences](./dhcpclientpreferences.md)
+- [SCDynamicStoreCopyDHCPInfo](./scdynamicstorecopydhcpinfo-apicollection.md)
 
 
 ---

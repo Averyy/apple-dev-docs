@@ -76,6 +76,18 @@ The property should not be considered changed until the HAL has called your prop
   Gets the size of the value for a specified audio session property.
 - [func AudioSessionInitialize(CFRunLoop!, CFString!, AudioSessionInterruptionListener!, UnsafeMutableRawPointer!) -> OSStatus](./audiosessioninitialize%28_,_,_,_%29.md)
   Initializes an iOS application’s audio session object.
+- [AudioFileCreate](./audiofilecreate.md)
+- [AudioFileInitialize](./audiofileinitialize.md)
+- [AudioFileOpen](./audiofileopen.md)
+- [MusicSequenceLoadSMFDataWithFlags](./musicsequenceloadsmfdatawithflags.md)
+- [MusicSequenceLoadSMFWithFlags](./musicsequenceloadsmfwithflags.md)
+- [MusicSequenceSaveMIDIFile](./musicsequencesavemidifile.md)
+- [MusicSequenceSaveSMFData](./musicsequencesavesmfdata.md)
+- [MusicTrackNewExtendedControlEvent](./musictracknewextendedcontrolevent.md)
+- [AudioFileComponentCreate](./audiofilecomponentcreate.md)
+- [AudioFileComponentDataIsThisFormat](./audiofilecomponentdataisthisformat.md)
+- [AudioFileComponentFileIsThisFormat](./audiofilecomponentfileisthisformat.md)
+- [AudioFileComponentInitialize](./audiofilecomponentinitialize.md)
 
 
 ---

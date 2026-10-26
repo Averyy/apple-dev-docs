@@ -46,6 +46,10 @@ The GPU fetches parameters from the indirect buffer just before the thread grid 
   Encodes an instruction to run commands from an indirect buffer, using another buffer to provide the command range.
 - [func executeCommands(in: any MTLIndirectCommandBuffer, with: NSRange)](./executecommands%28in,with%29.md)
   Encodes an instruction to run commands from an indirect buffer.
+- [- executeCommandsInBuffer:indirectBuffer:indirectBufferOffset:](./executecommandsinbuffer_indirectbuffer_indirectbufferoffset_.md)
+  Encodes an instruction to run commands from an indirect buffer, using another buffer to provide the command range.
+- [- executeCommandsInBuffer:withRange:](./executecommandsinbuffer_withrange_.md)
+  Encodes an instruction to run commands from an indirect buffer.
 
 
 ---

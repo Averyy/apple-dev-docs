@@ -40,6 +40,9 @@ enum BETextDocumentRequestOptions : NSInteger;
 ### Getting correction information
 - [static var autocorrectedRanges: BETextDocumentRequest.Options](./options-swift.struct/autocorrectedranges.md)
   An option that requests the ranges of text the system autocorrects within the document.
+### Specifying no options
+- [BETextDocumentOptionNone](../betextdocumentrequestoptions/betextdocumentoptionnone.md)
+  An option that specifies no information to request for the text document.
 
 ## Relationships
 

@@ -33,6 +33,22 @@ The unified logging system provides a comprehensive and performant API to captur
   Manage the privacy and presentation of the message’s interpolated values using type-aware formatters.
 - [struct OSLogType](./oslogtype.md)
   The various log levels that the unified logging system provides.
+- [Legacy Logging Symbols](./legacy-logging-symbols.md)
+  Migrate your code away from using these legacy symbols.
+- [os_log_t](./os-log-t.md)
+  A log object that you pass to logging functions to send messages to that log.
+- [os_log_with_type](./os_log_with_type.md)
+  Sends a message at a specific logging level, such as default, info, debug, error, or fault, to the logging system.
+- [os_log](./os_log.md)
+  Sends a default-level message to the logging system.
+- [os_log_info](./os_log_info.md)
+  Sends an info-level message to the logging system.
+- [os_log_debug](./os_log_debug.md)
+  Sends a debug-level message to the logging system.
+- [os_log_error](./os_log_error.md)
+  Sends an error-level message to the logging system.
+- [os_log_fault](./os_log_fault.md)
+  Sends a fault-level message to the logging system.
 ### Measure Events
 - [Recording Performance Data](./recording-performance-data.md)
   Add signposts to record interesting time-based events.
@@ -44,6 +60,19 @@ The unified logging system provides a comprehensive and performant API to captur
   The different kinds of signpost.
 - [typealias os_signpost_id_t](./os_signpost_id_t.md)
   An identifier you use to distinguish between signposts that have the same name and destination log.
+- [os_signpost_emit_with_type](./os_signpost_emit_with_type.md)
+  Logs a point of interest in your code as a time interval or as an event for debugging performance in Instruments.
+- [os_signpost_interval_begin](./os_signpost_interval_begin.md)
+  Marks the start of a time interval in your code using a signpost.
+- [os_signpost_interval_end](./os_signpost_interval_end.md)
+  Marks the end of a time interval in your code using a signpost.
+- [os_signpost_event_emit](./os_signpost_event_emit.md)
+  Marks a point of interest in time.
+### Trace Activities
+- [Collecting Log Messages in Activities](./collecting-log-messages-in-activities.md)
+  Find messages related to a specific user action or application event.
+- [os_activity_t](./os-activity-t.md)
+  An object that represents an activity triggered by the user.
 
 
 ---

@@ -40,6 +40,8 @@ The number of elements currently in the queue. Returns `0` if there is an error.
   Returns the element at the head of the queue.
 - [func CMSimpleQueueGetCapacity(CMSimpleQueue) -> Int32](./cmsimplequeuegetcapacity%28_%29.md)
   Returns the number of elements that the queue can hold.
+- [CMSimpleQueueGetFullness](./cmsimplequeuegetfullness.md)
+  A convenience macro that returns a queue’s fullness as a percentage of its capacity.
 
 
 ---

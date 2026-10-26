@@ -34,6 +34,11 @@ Link quality measurement is a representation of the expected capabilities of the
 - [init(rawValue: UInt8)](./nw_link_quality_t/init%28rawvalue%29.md)
 ### Instance Properties
 - [var rawValue: UInt8](./nw_link_quality_t/rawvalue.md)
+### Enumeration Cases
+- [nw_link_quality_good](./nw_link_quality_good.md)
+- [nw_link_quality_minimal](./nw_link_quality_minimal.md)
+- [nw_link_quality_moderate](./nw_link_quality_moderate.md)
+- [nw_link_quality_unknown](./nw_link_quality_unknown.md)
 
 ## Relationships
 

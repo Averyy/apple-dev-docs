@@ -32,6 +32,14 @@ For possible values, see [`AVAssetExportSession.Status`](./status-swift.enum.md)
 
 This value is key-value observable.
 
+## See Also
+
+### Monitoring export progress
+- [progress](./progress.md)
+  A value that indicates the progress of the export.
+- [error](./error.md)
+  An optional error object.
+
 
 ---
 

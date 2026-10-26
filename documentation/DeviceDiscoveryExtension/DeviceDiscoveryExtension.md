@@ -85,6 +85,11 @@ Because DDE runs in a system sandbox, the extension doesn’t need to ask the us
   A unique error domain for the framework.
 ### Reference
 - [DeviceDiscoveryExtension Enumerations](./devicediscoveryextension-enumerations.md)
+### Macros
+- [DD_EXTERN](./dd_extern.md)
+- [dd_os_ownership](./dd_os_ownership.md)
+### Enumerations
+- [DDDeviceWiFiAwareServiceRole](./dddevice/wifiawareservicerole-swift.enum.md)
 
 
 ---

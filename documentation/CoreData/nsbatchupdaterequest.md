@@ -32,6 +32,8 @@ class NSBatchUpdateRequest
   Creates a batch-update request for a managed entity.
 - [init(entityName: String)](./nsbatchupdaterequest/init%28entityname%29.md)
   Creates a batch-update request for a named managed entity.
+- [+ batchUpdateRequestWithEntityName:](./nsbatchupdaterequest/batchupdaterequestwithentityname_.md)
+  Creates a batch-update request for a named managed entity.
 ### Configuring a Request
 - [var entity: NSEntityDescription](./nsbatchupdaterequest/entity.md)
   The managed entity to update data for.

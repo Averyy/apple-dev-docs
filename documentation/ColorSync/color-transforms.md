@@ -141,6 +141,8 @@ A [`ColorSyncTransform`](./colorsynctransform.md) precomputes the conversion bet
 ### Choosing a color management module
 - [var kColorSyncPreferredCMM: Unmanaged<CFString>!](./kcolorsyncpreferredcmm.md)
   A key whose value is the [`ColorSyncCMM`](./colorsynccmm.md) of the preferred CMM.
+### Iterating asynchronously
+- [COLORSYNC_ITERATE_ASYNC](./colorsync_iterate_async.md)
 
 ## See Also
 

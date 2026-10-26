@@ -275,6 +275,8 @@ class DOMCSSStyleDeclaration
 - [func width() -> String!](./domcssstyledeclaration/width%28%29.md)
 - [func wordSpacing() -> String!](./domcssstyledeclaration/wordspacing%28%29.md)
 - [func zIndex() -> String!](./domcssstyledeclaration/zindex%28%29.md)
+- [- getPropertyShorthand:](./domcssstyledeclaration/getpropertyshorthand_.md)
+- [- setProperty:::](./domcssstyledeclaration/setproperty___.md)
 
 ## Relationships
 

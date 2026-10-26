@@ -36,6 +36,8 @@ You create assertions only using the assertion macros—you rarely need to invok
 ### Handling Assertion Failures
 - [class var current: NSAssertionHandler](./nsassertionhandler/current.md)
   Returns the `NSAssertionHandler` object associated with the current thread.
+- [- handleFailureInFunction:file:lineNumber:description:](./nsassertionhandler/handlefailureinfunction_file_linenumber_description_.md)
+- [- handleFailureInMethod:object:file:lineNumber:description:](./nsassertionhandler/handlefailureinmethod_object_file_linenumber_description_.md)
 
 ## Relationships
 
@@ -48,6 +50,38 @@ You create assertions only using the assertion macros—you rarely need to invok
 - [Equatable](../Swift/equatable.md)
 - [Hashable](../Swift/hashable.md)
 - [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+
+## See Also
+
+### Assertions
+- [NSAssert](./nsassert.md)
+  Generates an assertion if a given condition is false.
+- [NSAssert1](./nsassert1.md)
+  Generates an assertion if a given condition is false.
+- [NSAssert2](./nsassert2.md)
+  Generates an assertion if a given condition is false.
+- [NSAssert3](./nsassert3.md)
+  Generates an assertion if a given condition is false.
+- [NSAssert4](./nsassert4.md)
+  Generates an assertion if a given condition is false.
+- [NSAssert5](./nsassert5.md)
+  Generates an assertion if a given condition is false.
+- [NSCAssert](./nscassert.md)
+  Generates an assertion if the given condition is false.
+- [NSCAssert1](./nscassert1.md)
+  Generates an assertion if a given condition is false.
+- [NSCAssert2](./nscassert2.md)
+  Generates an assertion if a given condition is false.
+- [NSCAssert3](./nscassert3.md)
+  Generates an assertion if a given condition is false.
+- [NSCAssert4](./nscassert4.md)
+  Generates an assertion if a given condition is false.
+- [NSCAssert5](./nscassert5.md)
+  Generates an assertion if a given condition is false.
+- [NSCParameterAssert](./nscparameterassert.md)
+  Evaluates the specified parameter.
+- [NSParameterAssert](./nsparameterassert.md)
+  Validates the specified parameter.
 
 
 ---

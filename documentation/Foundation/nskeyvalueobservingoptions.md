@@ -66,6 +66,8 @@ These constants are passed to [`addObserver(_:forKeyPath:options:context:)`](../
 - [enum NSKeyValueChange](./nskeyvaluechange.md)
   The kinds of changes that can be observed.
 - [enum NSKeyValueSetMutationKind](./nskeyvaluesetmutationkind.md)
+- [NSPresentationIntentKind](./nspresentationintentkind.md)
+  An enumeration of intended display styles for blocks of text like paragraphs, lists, and code blocks.
 
 
 ---

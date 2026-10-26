@@ -34,7 +34,7 @@ Let users know when an action they perform in your app has an associated shortcu
 
 ![A screenshot of the order history screen in the Soup Chef app showing the invocation phrase for the shortcut.](https://developer.apple.com/tutorials/images/com.apple.sirikit/media-3027138@2x.png)
 
-The app uses the [`getAllVoiceShortcuts(completion:)`](./getallvoiceshortcuts%28completion%29.md) method to retrieve the list of shortcuts associated to the app. The list contains shortcuts added to Siri with [`INUIAddVoiceShortcutViewController`](https://developer.apple.com/documentation/intentsui/inuiaddvoiceshortcutviewcontroller) and those added by the user in the Settings app.
+The app uses the [`getAllVoiceShortcuts(completion:)`](./getallvoiceshortcuts%28completion%29.md) method to retrieve the list of shortcuts associated to the app. The list contains shortcuts added to Siri with [`INUIAddVoiceShortcutViewController`](../../IntentsUI/inuiaddvoiceshortcutviewcontroller.md) and those added by the user in the Settings app.
 
 The listing below retrieves shortcuts associated with the Soup Chef app.
 

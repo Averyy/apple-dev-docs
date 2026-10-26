@@ -38,6 +38,8 @@ var titleRect: NSRect { get }
   The cell used to display the receiver’s title.
 - [var borderType: NSBorderType](./bordertype.md)
   The receiver’s border type.
+- [- setTitleWithMnemonic:](./settitlewithmnemonic_.md)
+  Sets the title of the receiver with a character denoted as an access key.
 
 
 ---

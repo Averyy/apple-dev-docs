@@ -41,6 +41,8 @@ kAudioDeviceTransportTypeContinuityCapture
 - [var kAudioDevicePropertyIOThreadOSWorkgroup: AudioObjectPropertySelector](./kaudiodevicepropertyiothreadosworkgroup.md)
   The device’s workgroup object, which you use to coordinate your threads with the threads of the device.
 - [var kAudioDevicePropertyProcessMute: AudioObjectPropertySelector](./kaudiodevicepropertyprocessmute.md)
+- [AudioHardwareTapping_h](./audiohardwaretapping_h.md)
+- [CATapDescription_h](./catapdescription_h.md)
 
 
 ---

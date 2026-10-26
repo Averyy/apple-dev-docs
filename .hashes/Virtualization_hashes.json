@@ -125,6 +125,11 @@
       "file_path": "documentation/Virtualization/virtualization-enumerations.md",
       "hash": "ca87da012d2f693a7c407738ba78016f7de59d8a8e46bfb63c2739fe65394f2a"
     },
+    "https://developer.apple.com/documentation/virtualization/virtualization-macros": {
+      "etag": "\"994-659027065db45-df\"",
+      "file_path": "documentation/Virtualization/virtualization-macros.md",
+      "hash": "13ae41689b760d52fb7add20510f06ca3c8077951cbf26956ba02555e798dad1"
+    },
     "https://developer.apple.com/documentation/virtualization/virtualize-linux-on-a-mac": {
       "etag": "\"63a9-659027058f3e2-df\"",
       "file_path": "documentation/Virtualization/virtualize-linux-on-a-mac.md",
@@ -134,6 +139,11 @@
       "etag": "\"8196-65902705693be-df\"",
       "file_path": "documentation/Virtualization/virtualize-macos-on-a-mac.md",
       "hash": "6c5d156f5ff75797d5651852b1fbef207b0369565fbaf696b5eb1478028853f1"
+    },
+    "https://developer.apple.com/documentation/virtualization/vz_export": {
+      "etag": "\"922-65d55e4863582-df\"",
+      "file_path": "documentation/Virtualization/vz_export.md",
+      "hash": "8e6053660434bca7ff8d12c54be814966f9203ad429e647787f768f51f0b1f7c"
     },
     "https://developer.apple.com/documentation/virtualization/vzaudiodeviceconfiguration": {
       "etag": "\"4cca-65d55e475ab1c-df\"",
@@ -570,6 +580,11 @@
       "file_path": "documentation/Virtualization/vzefibootloader/variablestore.md",
       "hash": "1909135a18ef6d40a7de931c5c5a299e25ddaf2fbce56f43c0c583a9ccdba347"
     },
+    "https://developer.apple.com/documentation/virtualization/vzefisignature-c.class": {
+      "etag": "\"2939-65d55e4863582-df\"",
+      "file_path": "documentation/Virtualization/vzefisignature-c.class.md",
+      "hash": "6fe0b3e81e628c23adf51e65a3e07d3871c9102bdb5fc932f68af8f8494a3126"
+    },
     "https://developer.apple.com/documentation/virtualization/vzefisignature-swift.enum": {
       "etag": "\"1721-65d55e47290b4-df\"",
       "file_path": "documentation/Virtualization/vzefisignature-swift.enum.md",
@@ -630,10 +645,50 @@
       "file_path": "documentation/Virtualization/vzefisignaturelist/init(signatures).md",
       "hash": "cbba7753a6729b900e0de22d3c7c449340bf4f02226d19eb3823b10649a4b705"
     },
+    "https://developer.apple.com/documentation/virtualization/vzefisignaturelist/initwithsignatures:": {
+      "etag": "\"13d1-65d55e47290b4-df\"",
+      "file_path": "documentation/Virtualization/vzefisignaturelist/initwithsignatures_.md",
+      "hash": "e6ae2baba7d6d1fb59e00d000927e134c3c0f86b511b27122be220840ef8f75f"
+    },
     "https://developer.apple.com/documentation/virtualization/vzefisignaturelist/signatures-3cz50": {
       "etag": "\"1451-65d55e47290b4-df\"",
       "file_path": "documentation/Virtualization/vzefisignaturelist/signatures-3cz50.md",
       "hash": "838440e8dddffd2c9fd8e7f3fbe0455812eae46400b865da6d6043ad27d6bd7c"
+    },
+    "https://developer.apple.com/documentation/virtualization/vzefisignaturelist/signatures-78pcm": {
+      "etag": "\"1101-65d55e47290b4-df\"",
+      "file_path": "documentation/Virtualization/vzefisignaturelist/signatures-78pcm.md",
+      "hash": "346a354297aeda1bad36079131363ab89aaffb5608a28443222c543196ac6429"
+    },
+    "https://developer.apple.com/documentation/virtualization/vzefisignaturesha256hash": {
+      "etag": "\"2588-65d55e4740a1c-df\"",
+      "file_path": "documentation/Virtualization/vzefisignaturesha256hash.md",
+      "hash": "a45b3dbd9d2faf267ed7ba98271d0fcaa14687355b798b2ee7c648b230b06785"
+    },
+    "https://developer.apple.com/documentation/virtualization/vzefisignaturesha256hash/data": {
+      "etag": "\"1115-65d55e47290b4-df\"",
+      "file_path": "documentation/Virtualization/vzefisignaturesha256hash/data.md",
+      "hash": "b6f3c8ddd4d6ca8f56014712339a5b2112e744b4c076d56c2c4561da51c42a83"
+    },
+    "https://developer.apple.com/documentation/virtualization/vzefisignaturesha256hash/initwithdata:": {
+      "etag": "\"1370-65d55e47290b4-df\"",
+      "file_path": "documentation/Virtualization/vzefisignaturesha256hash/initwithdata_.md",
+      "hash": "4fca6c671fa082760ef6bc8dc9ba06a7e987ae82fff5a83e0b4340e1b94c2bbb"
+    },
+    "https://developer.apple.com/documentation/virtualization/vzefisignaturex509certificate": {
+      "etag": "\"2617-65d55e475ab1c-df\"",
+      "file_path": "documentation/Virtualization/vzefisignaturex509certificate.md",
+      "hash": "9ebfa4bf2022ad0206817adfc49de27a16ed1d669662839cd9892079edb8f8c5"
+    },
+    "https://developer.apple.com/documentation/virtualization/vzefisignaturex509certificate/certificate": {
+      "etag": "\"1333-65d55e489c3bb-df\"",
+      "file_path": "documentation/Virtualization/vzefisignaturex509certificate/certificate.md",
+      "hash": "78a0160b3e39cd3f4651f9e3802393753ab3b090d5b23dddfbad4dc7d7aa650b"
+    },
+    "https://developer.apple.com/documentation/virtualization/vzefisignaturex509certificate/initwithcertificate:": {
+      "etag": "\"14b5-65d55e489c3bb-df\"",
+      "file_path": "documentation/Virtualization/vzefisignaturex509certificate/initwithcertificate_.md",
+      "hash": "10811cf01830df30a68bf3ae5bf849dbe73e726cd7ec7db69983d74d7aed088b"
     },
     "https://developer.apple.com/documentation/virtualization/vzefivariablestore": {
       "etag": "\"92df-65d55e475ab1c-df\"",
@@ -669,6 +724,16 @@
       "etag": "\"32ca-65d55e4798a4d-df\"",
       "file_path": "documentation/Virtualization/vzefivariablestore/enrollsecurebootsignatures(_).md",
       "hash": "b3b240d68e605c8afd1b15583846a508d808702f6834c3c5dafe7f0532046dec"
+    },
+    "https://developer.apple.com/documentation/virtualization/vzefivariablestore/getenrolledsecurebootsignatureswitherror:": {
+      "etag": "\"1f7b-65d55e4798a4d-df\"",
+      "file_path": "documentation/Virtualization/vzefivariablestore/getenrolledsecurebootsignatureswitherror_.md",
+      "hash": "108fc9941e1732b864fde5657e2169825c83ae20e38c6b0e4370520c0b6cd1da"
+    },
+    "https://developer.apple.com/documentation/virtualization/vzefivariablestore/getsecurebootenabled:error:": {
+      "etag": "\"1bec-65d55e47770e2-df\"",
+      "file_path": "documentation/Virtualization/vzefivariablestore/getsecurebootenabled_error_.md",
+      "hash": "fa23fa5d5c73048158442fb7d423a398d8fffd78ab7871930560492fff50682f"
     },
     "https://developer.apple.com/documentation/virtualization/vzefivariablestore/init(creatingvariablestoreat:options:)": {
       "etag": "\"3dde-65d55e4798a4d-df\"",
@@ -1305,6 +1370,26 @@
       "file_path": "documentation/Virtualization/vzlinuxbootloader/kernelurl.md",
       "hash": "8e6c5b5163307bbaee0b1379e6ff0b5bf84eff9bae4f3e752693f1f7ebbe1140"
     },
+    "https://developer.apple.com/documentation/virtualization/vzlinuxrosettaabstractsocketcachingoptions": {
+      "etag": "\"2005-65d55e47290b4-df\"",
+      "file_path": "documentation/Virtualization/vzlinuxrosettaabstractsocketcachingoptions.md",
+      "hash": "70d1805eaa9d6cba351ec5723ef2bcac978a40bac7fa8404e4eb124ea410dab2"
+    },
+    "https://developer.apple.com/documentation/virtualization/vzlinuxrosettaabstractsocketcachingoptions/initwithname:error:": {
+      "etag": "\"19f2-65d55e47770e2-df\"",
+      "file_path": "documentation/Virtualization/vzlinuxrosettaabstractsocketcachingoptions/initwithname_error_.md",
+      "hash": "5165ae60d991c6241158e8ac5e8b8c8ad94b272b12adde99c2adee3752676363"
+    },
+    "https://developer.apple.com/documentation/virtualization/vzlinuxrosettaabstractsocketcachingoptions/maximumnamelength": {
+      "etag": "\"1536-65d55e47770e2-df\"",
+      "file_path": "documentation/Virtualization/vzlinuxrosettaabstractsocketcachingoptions/maximumnamelength.md",
+      "hash": "fbdec733ed0e40c6bca8ea176fe95e72719a6819ab0e5dcabdc93bebaca9924e"
+    },
+    "https://developer.apple.com/documentation/virtualization/vzlinuxrosettaabstractsocketcachingoptions/name": {
+      "etag": "\"11c7-65d55e47770e2-df\"",
+      "file_path": "documentation/Virtualization/vzlinuxrosettaabstractsocketcachingoptions/name.md",
+      "hash": "94079d6798e08a726347982650d75bbdb3959fd46a6dbc99c565f7c32d228b3b"
+    },
     "https://developer.apple.com/documentation/virtualization/vzlinuxrosettaavailability": {
       "etag": "\"40e1-65d55e4863582-df\"",
       "file_path": "documentation/Virtualization/vzlinuxrosettaavailability.md",
@@ -1329,6 +1414,11 @@
       "etag": "\"2555-65d55e4813965-df\"",
       "file_path": "documentation/Virtualization/vzlinuxrosettaavailability/notsupported.md",
       "hash": "c5687dd5acaaf14738d2d69f55042d1ff4ea195f22e90beab6fe5c52e6190804"
+    },
+    "https://developer.apple.com/documentation/virtualization/vzlinuxrosettacachingoptions": {
+      "etag": "\"1d99-65d55e4863582-df\"",
+      "file_path": "documentation/Virtualization/vzlinuxrosettacachingoptions.md",
+      "hash": "04bc94353c9f7de9566bad5952b51b9e15819ada9b010b2588b3a9d89eef3a97"
     },
     "https://developer.apple.com/documentation/virtualization/vzlinuxrosettadirectoryshare": {
       "etag": "\"9374-65d55e47770e2-df\"",
@@ -1390,10 +1480,40 @@
       "file_path": "documentation/Virtualization/vzlinuxrosettadirectoryshare/installrosetta(completionhandler).md",
       "hash": "4100a08f637b8de59ff5423168719648c0aae56a7e5ef68598cb24da888133e3"
     },
+    "https://developer.apple.com/documentation/virtualization/vzlinuxrosettadirectoryshare/options": {
+      "etag": "\"1ac0-65d55e4740a1c-df\"",
+      "file_path": "documentation/Virtualization/vzlinuxrosettadirectoryshare/options.md",
+      "hash": "5dfc806f65e158b019f7fc67d199b57327a49a2d4bda68df7206f3607276a7b8"
+    },
     "https://developer.apple.com/documentation/virtualization/vzlinuxrosettadirectoryshare/setcachingoptions(_:)": {
       "etag": "\"23be-65d55e4740a1c-df\"",
       "file_path": "documentation/Virtualization/vzlinuxrosettadirectoryshare/setcachingoptions(_).md",
       "hash": "6e3e5c9fbfb6506c48a3ea5d0a48af1deebc1922fd329152906cb14fd6a12b3a"
+    },
+    "https://developer.apple.com/documentation/virtualization/vzlinuxrosettaunixsocketcachingoptions": {
+      "etag": "\"22b7-65d55e47cbe27-df\"",
+      "file_path": "documentation/Virtualization/vzlinuxrosettaunixsocketcachingoptions.md",
+      "hash": "db5bed6f83dc217e5a9b864266368688aaa4d3eed9843790e157b228a2b87940"
+    },
+    "https://developer.apple.com/documentation/virtualization/vzlinuxrosettaunixsocketcachingoptions/init": {
+      "etag": "\"118f-65d55e48b79e3-df\"",
+      "file_path": "documentation/Virtualization/vzlinuxrosettaunixsocketcachingoptions/init.md",
+      "hash": "bada20261344d4bda8b7121b389a53c3e63709a397b5341b3900d2ad23d85f72"
+    },
+    "https://developer.apple.com/documentation/virtualization/vzlinuxrosettaunixsocketcachingoptions/initwithpath:error:": {
+      "etag": "\"22ec-65d55e48b79e3-df\"",
+      "file_path": "documentation/Virtualization/vzlinuxrosettaunixsocketcachingoptions/initwithpath_error_.md",
+      "hash": "da6d77f5a725bb03215060fa98541b3a75b026cb7fb4c7b46b3e051cfb4e6f88"
+    },
+    "https://developer.apple.com/documentation/virtualization/vzlinuxrosettaunixsocketcachingoptions/maximumpathlength": {
+      "etag": "\"1266-65d55e48b79e3-df\"",
+      "file_path": "documentation/Virtualization/vzlinuxrosettaunixsocketcachingoptions/maximumpathlength.md",
+      "hash": "a09d764a6bbf7de6952adfaee95e0c86e0fcbe80fed46d363ab7388f6ba2ba07"
+    },
+    "https://developer.apple.com/documentation/virtualization/vzlinuxrosettaunixsocketcachingoptions/path": {
+      "etag": "\"11b9-65d55e48b79e3-df\"",
+      "file_path": "documentation/Virtualization/vzlinuxrosettaunixsocketcachingoptions/path.md",
+      "hash": "2c6a010cb2cb045dfc1bce088eeb257fdd5ffd36d62449a43034661887d32d6c"
     },
     "https://developer.apple.com/documentation/virtualization/vzmacaddress": {
       "etag": "\"77f6-65d55e47b11a6-df\"",
@@ -2390,6 +2510,11 @@
       "file_path": "documentation/Virtualization/vzvirtioconsoleportconfigurationarray/maximumportcount.md",
       "hash": "8c446536ce23fc105cf2fa75b608df9473390a3be7077b7008b995828e427bb4"
     },
+    "https://developer.apple.com/documentation/virtualization/vzvirtioconsoleportconfigurationarray/setobject:atindexedsubscript:": {
+      "etag": "\"1bbe-65d55e47290b4-df\"",
+      "file_path": "documentation/Virtualization/vzvirtioconsoleportconfigurationarray/setobject_atindexedsubscript_.md",
+      "hash": "40111ed65b2c282fc13d42dcadc81c3f34d46eaeea42cd5486fc709bc2c3c83f"
+    },
     "https://developer.apple.com/documentation/virtualization/vzvirtioconsoleportconfigurationarray/subscript(_:)": {
       "etag": "\"2e01-65d55e47290b4-df\"",
       "file_path": "documentation/Virtualization/vzvirtioconsoleportconfigurationarray/subscript(_).md",
@@ -3370,6 +3495,11 @@
       "file_path": "documentation/Virtualization/virtualization-enumerations.md",
       "hash": "ca87da012d2f693a7c407738ba78016f7de59d8a8e46bfb63c2739fe65394f2a"
     },
+    "https://developer.apple.com/tutorials/data/documentation/virtualization/virtualization-macros.json": {
+      "etag": "\"994-659027065db45-df\"",
+      "file_path": "documentation/Virtualization/virtualization-macros.md",
+      "hash": "13ae41689b760d52fb7add20510f06ca3c8077951cbf26956ba02555e798dad1"
+    },
     "https://developer.apple.com/tutorials/data/documentation/virtualization/virtualize-linux-on-a-mac.json": {
       "etag": "\"63a9-659027058f3e2-df\"",
       "file_path": "documentation/Virtualization/virtualize-linux-on-a-mac.md",
@@ -3379,6 +3509,11 @@
       "etag": "\"8196-65902705693be-df\"",
       "file_path": "documentation/Virtualization/virtualize-macos-on-a-mac.md",
       "hash": "6c5d156f5ff75797d5651852b1fbef207b0369565fbaf696b5eb1478028853f1"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/virtualization/vz_export.json": {
+      "etag": "\"922-65d55e4863582-df\"",
+      "file_path": "documentation/Virtualization/vz_export.md",
+      "hash": "8e6053660434bca7ff8d12c54be814966f9203ad429e647787f768f51f0b1f7c"
     },
     "https://developer.apple.com/tutorials/data/documentation/virtualization/vzaudiodeviceconfiguration.json": {
       "etag": "\"4cca-65d55e475ab1c-df\"",
@@ -3815,6 +3950,11 @@
       "file_path": "documentation/Virtualization/vzefibootloader/variablestore.md",
       "hash": "1909135a18ef6d40a7de931c5c5a299e25ddaf2fbce56f43c0c583a9ccdba347"
     },
+    "https://developer.apple.com/tutorials/data/documentation/virtualization/vzefisignature-c.class.json": {
+      "etag": "\"2939-65d55e4863582-df\"",
+      "file_path": "documentation/Virtualization/vzefisignature-c.class.md",
+      "hash": "6fe0b3e81e628c23adf51e65a3e07d3871c9102bdb5fc932f68af8f8494a3126"
+    },
     "https://developer.apple.com/tutorials/data/documentation/virtualization/vzefisignature-swift.enum.json": {
       "etag": "\"1721-65d55e47290b4-df\"",
       "file_path": "documentation/Virtualization/vzefisignature-swift.enum.md",
@@ -3875,10 +4015,50 @@
       "file_path": "documentation/Virtualization/vzefisignaturelist/init(signatures).md",
       "hash": "cbba7753a6729b900e0de22d3c7c449340bf4f02226d19eb3823b10649a4b705"
     },
+    "https://developer.apple.com/tutorials/data/documentation/virtualization/vzefisignaturelist/initwithsignatures:.json": {
+      "etag": "\"13d1-65d55e47290b4-df\"",
+      "file_path": "documentation/Virtualization/vzefisignaturelist/initwithsignatures_.md",
+      "hash": "e6ae2baba7d6d1fb59e00d000927e134c3c0f86b511b27122be220840ef8f75f"
+    },
     "https://developer.apple.com/tutorials/data/documentation/virtualization/vzefisignaturelist/signatures-3cz50.json": {
       "etag": "\"1451-65d55e47290b4-df\"",
       "file_path": "documentation/Virtualization/vzefisignaturelist/signatures-3cz50.md",
       "hash": "838440e8dddffd2c9fd8e7f3fbe0455812eae46400b865da6d6043ad27d6bd7c"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/virtualization/vzefisignaturelist/signatures-78pcm.json": {
+      "etag": "\"1101-65d55e47290b4-df\"",
+      "file_path": "documentation/Virtualization/vzefisignaturelist/signatures-78pcm.md",
+      "hash": "346a354297aeda1bad36079131363ab89aaffb5608a28443222c543196ac6429"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/virtualization/vzefisignaturesha256hash.json": {
+      "etag": "\"2588-65d55e4740a1c-df\"",
+      "file_path": "documentation/Virtualization/vzefisignaturesha256hash.md",
+      "hash": "a45b3dbd9d2faf267ed7ba98271d0fcaa14687355b798b2ee7c648b230b06785"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/virtualization/vzefisignaturesha256hash/data.json": {
+      "etag": "\"1115-65d55e47290b4-df\"",
+      "file_path": "documentation/Virtualization/vzefisignaturesha256hash/data.md",
+      "hash": "b6f3c8ddd4d6ca8f56014712339a5b2112e744b4c076d56c2c4561da51c42a83"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/virtualization/vzefisignaturesha256hash/initwithdata:.json": {
+      "etag": "\"1370-65d55e47290b4-df\"",
+      "file_path": "documentation/Virtualization/vzefisignaturesha256hash/initwithdata_.md",
+      "hash": "4fca6c671fa082760ef6bc8dc9ba06a7e987ae82fff5a83e0b4340e1b94c2bbb"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/virtualization/vzefisignaturex509certificate.json": {
+      "etag": "\"2617-65d55e475ab1c-df\"",
+      "file_path": "documentation/Virtualization/vzefisignaturex509certificate.md",
+      "hash": "9ebfa4bf2022ad0206817adfc49de27a16ed1d669662839cd9892079edb8f8c5"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/virtualization/vzefisignaturex509certificate/certificate.json": {
+      "etag": "\"1333-65d55e489c3bb-df\"",
+      "file_path": "documentation/Virtualization/vzefisignaturex509certificate/certificate.md",
+      "hash": "78a0160b3e39cd3f4651f9e3802393753ab3b090d5b23dddfbad4dc7d7aa650b"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/virtualization/vzefisignaturex509certificate/initwithcertificate:.json": {
+      "etag": "\"14b5-65d55e489c3bb-df\"",
+      "file_path": "documentation/Virtualization/vzefisignaturex509certificate/initwithcertificate_.md",
+      "hash": "10811cf01830df30a68bf3ae5bf849dbe73e726cd7ec7db69983d74d7aed088b"
     },
     "https://developer.apple.com/tutorials/data/documentation/virtualization/vzefivariablestore.json": {
       "etag": "\"92df-65d55e475ab1c-df\"",
@@ -3914,6 +4094,16 @@
       "etag": "\"32ca-65d55e4798a4d-df\"",
       "file_path": "documentation/Virtualization/vzefivariablestore/enrollsecurebootsignatures(_).md",
       "hash": "b3b240d68e605c8afd1b15583846a508d808702f6834c3c5dafe7f0532046dec"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/virtualization/vzefivariablestore/getenrolledsecurebootsignatureswitherror:.json": {
+      "etag": "\"1f7b-65d55e4798a4d-df\"",
+      "file_path": "documentation/Virtualization/vzefivariablestore/getenrolledsecurebootsignatureswitherror_.md",
+      "hash": "108fc9941e1732b864fde5657e2169825c83ae20e38c6b0e4370520c0b6cd1da"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/virtualization/vzefivariablestore/getsecurebootenabled:error:.json": {
+      "etag": "\"1bec-65d55e47770e2-df\"",
+      "file_path": "documentation/Virtualization/vzefivariablestore/getsecurebootenabled_error_.md",
+      "hash": "fa23fa5d5c73048158442fb7d423a398d8fffd78ab7871930560492fff50682f"
     },
     "https://developer.apple.com/tutorials/data/documentation/virtualization/vzefivariablestore/init(creatingvariablestoreat:options:).json": {
       "etag": "\"3dde-65d55e4798a4d-df\"",
@@ -4550,6 +4740,26 @@
       "file_path": "documentation/Virtualization/vzlinuxbootloader/kernelurl.md",
       "hash": "8e6c5b5163307bbaee0b1379e6ff0b5bf84eff9bae4f3e752693f1f7ebbe1140"
     },
+    "https://developer.apple.com/tutorials/data/documentation/virtualization/vzlinuxrosettaabstractsocketcachingoptions.json": {
+      "etag": "\"2005-65d55e47290b4-df\"",
+      "file_path": "documentation/Virtualization/vzlinuxrosettaabstractsocketcachingoptions.md",
+      "hash": "70d1805eaa9d6cba351ec5723ef2bcac978a40bac7fa8404e4eb124ea410dab2"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/virtualization/vzlinuxrosettaabstractsocketcachingoptions/initwithname:error:.json": {
+      "etag": "\"19f2-65d55e47770e2-df\"",
+      "file_path": "documentation/Virtualization/vzlinuxrosettaabstractsocketcachingoptions/initwithname_error_.md",
+      "hash": "5165ae60d991c6241158e8ac5e8b8c8ad94b272b12adde99c2adee3752676363"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/virtualization/vzlinuxrosettaabstractsocketcachingoptions/maximumnamelength.json": {
+      "etag": "\"1536-65d55e47770e2-df\"",
+      "file_path": "documentation/Virtualization/vzlinuxrosettaabstractsocketcachingoptions/maximumnamelength.md",
+      "hash": "fbdec733ed0e40c6bca8ea176fe95e72719a6819ab0e5dcabdc93bebaca9924e"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/virtualization/vzlinuxrosettaabstractsocketcachingoptions/name.json": {
+      "etag": "\"11c7-65d55e47770e2-df\"",
+      "file_path": "documentation/Virtualization/vzlinuxrosettaabstractsocketcachingoptions/name.md",
+      "hash": "94079d6798e08a726347982650d75bbdb3959fd46a6dbc99c565f7c32d228b3b"
+    },
     "https://developer.apple.com/tutorials/data/documentation/virtualization/vzlinuxrosettaavailability.json": {
       "etag": "\"40e1-65d55e4863582-df\"",
       "file_path": "documentation/Virtualization/vzlinuxrosettaavailability.md",
@@ -4574,6 +4784,11 @@
       "etag": "\"2555-65d55e4813965-df\"",
       "file_path": "documentation/Virtualization/vzlinuxrosettaavailability/notsupported.md",
       "hash": "c5687dd5acaaf14738d2d69f55042d1ff4ea195f22e90beab6fe5c52e6190804"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/virtualization/vzlinuxrosettacachingoptions.json": {
+      "etag": "\"1d99-65d55e4863582-df\"",
+      "file_path": "documentation/Virtualization/vzlinuxrosettacachingoptions.md",
+      "hash": "04bc94353c9f7de9566bad5952b51b9e15819ada9b010b2588b3a9d89eef3a97"
     },
     "https://developer.apple.com/tutorials/data/documentation/virtualization/vzlinuxrosettadirectoryshare.json": {
       "etag": "\"9374-65d55e47770e2-df\"",
@@ -4635,10 +4850,40 @@
       "file_path": "documentation/Virtualization/vzlinuxrosettadirectoryshare/installrosetta(completionhandler).md",
       "hash": "4100a08f637b8de59ff5423168719648c0aae56a7e5ef68598cb24da888133e3"
     },
+    "https://developer.apple.com/tutorials/data/documentation/virtualization/vzlinuxrosettadirectoryshare/options.json": {
+      "etag": "\"1ac0-65d55e4740a1c-df\"",
+      "file_path": "documentation/Virtualization/vzlinuxrosettadirectoryshare/options.md",
+      "hash": "5dfc806f65e158b019f7fc67d199b57327a49a2d4bda68df7206f3607276a7b8"
+    },
     "https://developer.apple.com/tutorials/data/documentation/virtualization/vzlinuxrosettadirectoryshare/setcachingoptions(_:).json": {
       "etag": "\"23be-65d55e4740a1c-df\"",
       "file_path": "documentation/Virtualization/vzlinuxrosettadirectoryshare/setcachingoptions(_).md",
       "hash": "6e3e5c9fbfb6506c48a3ea5d0a48af1deebc1922fd329152906cb14fd6a12b3a"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/virtualization/vzlinuxrosettaunixsocketcachingoptions.json": {
+      "etag": "\"22b7-65d55e47cbe27-df\"",
+      "file_path": "documentation/Virtualization/vzlinuxrosettaunixsocketcachingoptions.md",
+      "hash": "db5bed6f83dc217e5a9b864266368688aaa4d3eed9843790e157b228a2b87940"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/virtualization/vzlinuxrosettaunixsocketcachingoptions/init.json": {
+      "etag": "\"118f-65d55e48b79e3-df\"",
+      "file_path": "documentation/Virtualization/vzlinuxrosettaunixsocketcachingoptions/init.md",
+      "hash": "bada20261344d4bda8b7121b389a53c3e63709a397b5341b3900d2ad23d85f72"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/virtualization/vzlinuxrosettaunixsocketcachingoptions/initwithpath:error:.json": {
+      "etag": "\"22ec-65d55e48b79e3-df\"",
+      "file_path": "documentation/Virtualization/vzlinuxrosettaunixsocketcachingoptions/initwithpath_error_.md",
+      "hash": "da6d77f5a725bb03215060fa98541b3a75b026cb7fb4c7b46b3e051cfb4e6f88"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/virtualization/vzlinuxrosettaunixsocketcachingoptions/maximumpathlength.json": {
+      "etag": "\"1266-65d55e48b79e3-df\"",
+      "file_path": "documentation/Virtualization/vzlinuxrosettaunixsocketcachingoptions/maximumpathlength.md",
+      "hash": "a09d764a6bbf7de6952adfaee95e0c86e0fcbe80fed46d363ab7388f6ba2ba07"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/virtualization/vzlinuxrosettaunixsocketcachingoptions/path.json": {
+      "etag": "\"11b9-65d55e48b79e3-df\"",
+      "file_path": "documentation/Virtualization/vzlinuxrosettaunixsocketcachingoptions/path.md",
+      "hash": "2c6a010cb2cb045dfc1bce088eeb257fdd5ffd36d62449a43034661887d32d6c"
     },
     "https://developer.apple.com/tutorials/data/documentation/virtualization/vzmacaddress.json": {
       "etag": "\"77f6-65d55e47b11a6-df\"",
@@ -5635,6 +5880,11 @@
       "file_path": "documentation/Virtualization/vzvirtioconsoleportconfigurationarray/maximumportcount.md",
       "hash": "8c446536ce23fc105cf2fa75b608df9473390a3be7077b7008b995828e427bb4"
     },
+    "https://developer.apple.com/tutorials/data/documentation/virtualization/vzvirtioconsoleportconfigurationarray/setobject:atindexedsubscript:.json": {
+      "etag": "\"1bbe-65d55e47290b4-df\"",
+      "file_path": "documentation/Virtualization/vzvirtioconsoleportconfigurationarray/setobject_atindexedsubscript_.md",
+      "hash": "40111ed65b2c282fc13d42dcadc81c3f34d46eaeea42cd5486fc709bc2c3c83f"
+    },
     "https://developer.apple.com/tutorials/data/documentation/virtualization/vzvirtioconsoleportconfigurationarray/subscript(_:).json": {
       "etag": "\"2e01-65d55e47290b4-df\"",
       "file_path": "documentation/Virtualization/vzvirtioconsoleportconfigurationarray/subscript(_).md",
@@ -6493,8 +6743,8 @@
   },
   "metadata": {
     "render": {
-      "version": 1
+      "version": 2
     },
-    "total_pages": 1298
+    "total_pages": 1348
   }
 }

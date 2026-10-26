@@ -42,6 +42,8 @@ Use this handler to create [`UIAction`](./uiaction.md) objects representing the 
   Creates a menu configuration object with the specified action and preview providers.
 - [typealias UIContextMenuContentPreviewProvider](./uicontextmenucontentpreviewprovider.md)
   Returns the custom view controller to use when previewing your content.
+- [+ configurationWithIdentifier:previewProvider:actionProvider:](./uicontextmenuconfiguration/configurationwithidentifier_previewprovider_actionprovider_.md)
+  Creates a menu configuration object with the specified action and preview providers.
 
 
 ---

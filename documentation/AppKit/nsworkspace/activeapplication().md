@@ -56,6 +56,8 @@ A dictionary with information about the app. The dictionary contains as many of 
   Opens one or more files from an array of URLs.
 - [func mountedRemovableMedia() -> [Any]?](./mountedremovablemedia%28%29.md)
   Returns the full pathnames of all currently mounted removable disks.
+- [- openTempFile:](./opentempfile_.md)
+  Opens the specified temporary file using the default app for its type.
 
 
 ---

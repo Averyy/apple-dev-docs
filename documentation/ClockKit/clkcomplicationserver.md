@@ -46,6 +46,9 @@ Don’t create instances of this class directly. Instead, use the shared object 
   The earliest Time Travel date for which you should provide data.
 - [var latestTimeTravelDate: Date](./clkcomplicationserver/latesttimetraveldate.md)
   The latest date supported by Time Travel.
+### Receiving Change Notifications
+- [CLKComplicationServerActiveComplicationsDidChangeNotification](./clkcomplicationserveractivecomplicationsdidchangenotification.md)
+  Posted when the set of active complications changes.
 
 ## Relationships
 

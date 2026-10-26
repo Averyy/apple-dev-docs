@@ -34,7 +34,7 @@ var timingFunction: SKActionTimingFunction { get set }
 
 If a timing function is provided, after the normal timing mode is applied, the result is sent to the timing function. The return [`SKActionTimingFunction`](../skactiontimingfunction.md) value of the timing function determines the actual time used to perform the animation.
 
-The following code shows how you can create a custom timing function using [`simd_smoothstep(_:_:_:)`](https://developer.apple.com/documentation/simd/simd_smoothstep(_:_:_:)-5839l) interpolation:
+The following code shows how you can create a custom timing function using [`simd_smoothstep(_:_:_:)`](../../simd/simd_smoothstep%28_,_,_%29-5839l.md) interpolation:
 
 ```swift
 import simd

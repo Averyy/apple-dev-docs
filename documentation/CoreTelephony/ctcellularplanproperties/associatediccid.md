@@ -32,6 +32,8 @@ var associatedIccid: String? { get set }
   A type that contains lifecycle details for a time-limited cellular plan.
 - [var lifecycleProperties: CTCellularPlanProperties.lifecycle?](./lifecycleproperties.md)
   The lifecycle details for a time-limited cellular plan.
+- [supportedRegionCodes](./supportedregioncodes-5elox.md)
+  The available regions that your eSIM supports.
 
 
 ---

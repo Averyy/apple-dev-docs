@@ -24,6 +24,16 @@ typealias MTLArgumentAccess = MTLBindingAccess
 typedef MTLBindingAccess MTLArgumentAccess;
 ```
 
+## Topics
+
+### Specifying access options
+- [MTLArgumentAccessReadOnly](./mtlbindingaccess/mtlargumentaccessreadonly.md)
+  The function can only read its argument data.
+- [MTLArgumentAccessWriteOnly](./mtlbindingaccess/mtlargumentaccesswriteonly.md)
+  The function can only write its argument data.
+- [MTLArgumentAccessReadWrite](./mtlbindingaccess/mtlargumentaccessreadwrite.md)
+  The function can either read or write its argument data.
+
 ## See Also
 
 ### Function arguments

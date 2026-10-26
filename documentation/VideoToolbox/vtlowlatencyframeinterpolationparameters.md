@@ -40,6 +40,14 @@ Use this object in the `processWithParameters` call of `VTFrameProcessor` class.
 - [var previousFrame: VTFrameProcessorFrame](./vtlowlatencyframeinterpolationparameters/previousframe.md)
   Previous frame that you provided when creating the low-latency frame interpolation parameters object.
 - [var interpolationPhase: [Float]](./vtlowlatencyframeinterpolationparameters/interpolationphase-886vi.md)
+- [destinationFrames](./vtlowlatencyframeinterpolationparameters/destinationframes.md)
+  Array of destination frames that you provided when creating the low-latency frame interpolation parameters object.
+### Instance Properties
+- [interpolationPhase](./vtlowlatencyframeinterpolationparameters/interpolationphase-33m49.md)
+  Array of interpolation phases that you provided when creating the low-latency frame interpolation parameters object.
+### Instance Methods
+- [- initWithSourceFrame:previousFrame:interpolationPhase:destinationFrames:](./vtlowlatencyframeinterpolationparameters/initwithsourceframe_previousframe_interpolationphase_destinationframes_.md)
+  Creates a new low-latency frame interpolation parameters object.
 
 ## Relationships
 

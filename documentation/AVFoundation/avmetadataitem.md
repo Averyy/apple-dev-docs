@@ -119,6 +119,10 @@ To filter arrays of metadata items, you use the methods of this class. For examp
   The value of the metadata item as a date.
 - [var dataValue: Data?](./avmetadataitem/datavalue.md)
   The value of the metadata item as a data value.
+- [- loadValuesAsynchronouslyForKeys:completionHandler:](./avmetadataitem/loadvaluesasynchronouslyforkeys_completionhandler_.md)
+  Tells the object to load the values of any of the specified keys that aren’t already loaded.
+- [- statusOfValueForKey:error:](./avmetadataitem/statusofvalueforkey_error_.md)
+  Reports whether the value for a given key is immediately available without blocking.
 ### Initializers
 - [init(propertiesOf: AVMetadataItem, valueLoadingHandler: (AVMetadataItemValueRequest) -> Void)](./avmetadataitem/init%28propertiesof,valueloadinghandler%29.md)
 ### Default Implementations

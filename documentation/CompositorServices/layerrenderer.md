@@ -41,11 +41,14 @@ For information about how to create and configure a layer renderer and use it to
   A type that stores the texture formats, layout information, and other details you use to configure your rendering loop code.
 - [LayerRenderer.Capabilities](./layerrenderer/capabilities.md)
   The color formats, depth formats, and features that you can use to configure your rendering engine.
+- [CP_OBJECT_cp_layer_renderer_configuration](./cp_object_cp_layer_renderer_configuration.md)
+- [CP_OBJECT_cp_layer_renderer_capabilities](./cp_object_cp_layer_renderer_capabilities.md)
 ### Getting the layer renderer properties
 - [var properties: LayerRenderer.Properties](./layerrenderer/properties-swift.property.md)
   The configured properties of the layer renderer.
 - [LayerRenderer.Properties](./layerrenderer/properties-swift.struct.md)
   A type that describes the organization of the layer renderer’s textures and the relationships between those textures and the views you use for drawing.
+- [CP_OBJECT_cp_layer_renderer_properties](./cp_object_cp_layer_renderer_properties.md)
 ### Getting the GPU device
 - [var device: any MTLDevice](./layerrenderer/device.md)
   The GPU device that the layer renderer uses for drawing operations
@@ -64,6 +67,8 @@ For information about how to create and configure a layer renderer and use it to
 - [LayerRenderer.Frame](./layerrenderer/frame.md)
   A type that provides access to the timing information and data types you need to render a single frame of content.
 - [LayerRenderer.Drawable](./layerrenderer/drawable.md)
+  A type that provides the textures and information you need to draw a frame of content.
+- [cp_drawable_t](./cp_drawable_t.md)
   A type that provides the textures and information you need to draw a frame of content.
 ### Configuring the frame update rate
 - [var minimumFrameRepeatCount: Int32](./layerrenderer/minimumframerepeatcount.md)

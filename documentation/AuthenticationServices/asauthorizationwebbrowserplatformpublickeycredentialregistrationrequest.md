@@ -31,6 +31,8 @@ protocol ASAuthorizationWebBrowserPlatformPublicKeyCredentialRegistrationRequest
   A list of passkeys that the relying party doesn’t accept for resolving the challenge.
 - [var shouldShowHybridTransport: Bool](./asauthorizationwebbrowserplatformpublickeycredentialregistrationrequest/shouldshowhybridtransport.md)
   Whether a remote authenticator that communicates with the operating system using Bluetooth can resolve the challenge.
+- [clientData](./asauthorizationwebbrowserplatformpublickeycredentialregistrationrequest/clientdata-7scep.md)
+  The client data to supply to the relying party.
 
 ## Relationships
 

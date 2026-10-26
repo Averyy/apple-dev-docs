@@ -33,6 +33,8 @@ An [`MTLAttributeDescriptorArray`](./mtlattributedescriptorarray.md) defines the
 ### Accessing attribute state objects
 - [subscript(Int) -> MTLAttributeDescriptor!](./mtlattributedescriptorarray/subscript%28_%29.md)
   Returns the state of the specified attribute.
+- [- setObject:atIndexedSubscript:](./mtlattributedescriptorarray/setobject_atindexedsubscript_.md)
+  Sets state for the specified attribute.
 
 ## Relationships
 

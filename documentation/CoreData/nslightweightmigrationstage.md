@@ -34,6 +34,8 @@ Use [`NSLightweightMigrationStage`](./nslightweightmigrationstage.md) when you h
 ### Creating a migration stage
 - [convenience init([String])](./nslightweightmigrationstage/init%28_%29.md)
   Creates a lightweight migration stage with the specified version checksums.
+- [- initWithVersionChecksums:](./nslightweightmigrationstage/initwithversionchecksums_.md)
+  Creates a lightweight migration stage with the specified version checksums.
 ### Accessing the checksums
 - [var versionChecksums: [String]](./nslightweightmigrationstage/versionchecksums.md)
   The array of version checksums.

@@ -38,6 +38,10 @@ Create an XPC connection for an extension process with the [`makeLibXPCConnectio
 
 ### Inherits From
 - [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+### Conforming Types
+- [BENetworkingProcess](./benetworkingprocess.md)
+- [BERenderingProcess](./berenderingprocess.md)
+- [BEWebContentProcess](./bewebcontentprocess.md)
 
 ## See Also
 

@@ -118,6 +118,8 @@ When you create a linguistic tagger, you specify one or more [`NLTagScheme`](./n
   Enumerates a block over the tagger’s string, given a range, token unit, and tag scheme.
 - [NLTagger.Options](./nltagger/options.md)
   Constants for linguistic tagger enumeration specifying which tokens to omit and whether to join names.
+- [- enumerateTagsInRange:unit:scheme:options:usingBlock:](./nltagger/enumeratetagsinrange_unit_scheme_options_usingblock_.md)
+  Enumerates a block over the tagger’s string, given a range, token unit, and tag scheme.
 
 
 ---

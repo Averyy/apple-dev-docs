@@ -28,6 +28,12 @@ init(asset: AVAsset) throws
 
 - `asset`: The asset from which to read media data.
 
+## See Also
+
+### Creating an asset reader
+- [+ assetReaderWithAsset:error:](./assetreaderwithasset_error_.md)
+  Returns a new object to read media data from an asset.
+
 
 ---
 

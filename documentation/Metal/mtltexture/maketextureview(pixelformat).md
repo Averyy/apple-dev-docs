@@ -63,6 +63,10 @@ Some format reinterpretations require you to create the source texture with a sp
   Creates a new view of the texture, reinterpreting a subset of its data using a different type and pixel format.
 - [func makeTextureView(pixelFormat: MTLPixelFormat, textureType: MTLTextureType, levels: Range<Int>, slices: Range<Int>, swizzle: MTLTextureSwizzleChannels) -> (any MTLTexture)?](./maketextureview%28pixelformat,texturetype,levels,slices,swizzle%29.md)
   Creates a new view of the texture, reinterpreting a subset of its data using a different type, pixel format, and swizzle pattern.
+- [- newTextureViewWithPixelFormat:textureType:levels:slices:](./newtextureviewwithpixelformat_texturetype_levels_slices_.md)
+  Creates a new view of the texture, reinterpreting a subset of its data using a different type and pixel format.
+- [- newTextureViewWithPixelFormat:textureType:levels:slices:swizzle:](./newtextureviewwithpixelformat_texturetype_levels_slices_swizzle_.md)
+  Creates a new view of the texture, reinterpreting a subset of its data using a different type, pixel format, and swizzle pattern.
 
 
 ---

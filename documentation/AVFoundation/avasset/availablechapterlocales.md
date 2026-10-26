@@ -30,6 +30,14 @@ var availableChapterLocales: [Locale] { get }
 
 - [Presenting chapter markers](../presenting-chapter-markers.md)
 
+## See Also
+
+### Accessing chapter metadata
+- [- chapterMetadataGroupsWithTitleLocale:containingItemsWithCommonKeys:](./chaptermetadatagroups%28withtitlelocale,containingitemswithcommonkeys%29.md)
+  Returns an array of chapters that contain the specified title locale and common keys.
+- [- chapterMetadataGroupsBestMatchingPreferredLanguages:](./chaptermetadatagroups%28bestmatchingpreferredlanguages%29.md)
+  Returns an array of chapters with a locale that best matches the list of preferred languages.
+
 
 ---
 

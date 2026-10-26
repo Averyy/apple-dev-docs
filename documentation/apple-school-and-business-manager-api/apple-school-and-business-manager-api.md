@@ -11,9 +11,9 @@ Apple School Manager and Apple Business help IT administrators automate device m
 ## Topics
 
 ### Apple School Manager and Apple Business APIs
-- [Apple School Manager API](https://developer.apple.com/documentation/appleschoolmanagerapi)
+- [Apple School Manager API](../AppleSchoolManagerAPI/AppleSchoolManagerAPI.md)
   Automate device management activities and view device information in Apple School Manager.
-- [Apple Business API](https://developer.apple.com/documentation/applebusinessapi)
+- [Apple Business API](../AppleBusinessAPI/AppleBusinessAPI.md)
   Automate device management activities, view device information, and manage users and user groups in Apple Business.
 ### Essentials
 - [Apple School Manager and Apple Business APIs changelog](./apple-school-manager-and-apple-business-api-changelog.md)

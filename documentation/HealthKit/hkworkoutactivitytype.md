@@ -212,6 +212,9 @@ enum HKWorkoutActivityType : NSUInteger;
   A constant for the transition time between activities in a multisport workout.
 ### Initializers
 - [init?(rawValue: UInt)](./hkworkoutactivitytype/init%28rawvalue%29.md)
+### Enumeration Cases
+- [HKWorkoutActivityTypeGroup](./hkworkoutactivitytype/hkworkoutactivitytypegroup.md)
+- [HKWorkoutActivityTypeRest](./hkworkoutactivitytype/hkworkoutactivitytyperest.md)
 
 ## Relationships
 

@@ -40,6 +40,9 @@ The value of this property is `nil` if it is called when the app is not active. 
   A Boolean value indicating whether the receiver has any documents with unsaved changes.
 - [func removeDocument(NSDocument)](./removedocument%28_%29.md)
   Removes the given document from the list of open documents.
+### Related Documentation
+- [- documentForFileName:](./documentforfilename_.md)
+  Returns the document object for the file in which the document data is stored.
 
 
 ---

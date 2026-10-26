@@ -10,6 +10,8 @@ Generate a failure immediately and unconditionally.
 ### Unconditional Test Failures
 - [func XCTFail(String, file: StaticString, line: UInt)](./xctfail%28_,file,line%29.md)
   This function generates a failure immediately and unconditionally.
+- [XCTFail](./xctfail.md)
+  This function generates a failure immediately and unconditionally.
 
 ## See Also
 

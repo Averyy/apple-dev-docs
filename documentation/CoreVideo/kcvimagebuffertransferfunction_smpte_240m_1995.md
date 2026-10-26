@@ -42,6 +42,10 @@ extern CFStringRef const kCVImageBufferTransferFunction_SMPTE_240M_1995;
 - [let kCVImageBufferTransferFunction_ITU_R_2100_HLG: CFString](./kcvimagebuffertransferfunction_itu_r_2100_hlg.md)
 - [let kCVImageBufferTransferFunction_SMPTE_ST_2084_PQ: CFString](./kcvimagebuffertransferfunction_smpte_st_2084_pq.md)
 - [let kCVImageBufferLogTransferFunction_AppleLog2: CFString](./kcvimagebufferlogtransferfunction_applelog2.md)
+- [kCVImageBufferTransferFunction_EBU_3213](./kcvimagebuffertransferfunction_ebu_3213.md)
+  A key to the transfer function that follows the EBU 3213 standard.
+- [kCVImageBufferTransferFunction_SMPTE_C](./kcvimagebuffertransferfunction_smpte_c.md)
+  A key to the transfer function for standard-definition video.
 
 
 ---

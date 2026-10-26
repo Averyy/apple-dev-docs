@@ -164,6 +164,8 @@ When the mouse button is pressed while the cursor is within the bounds of the re
 ### Deprecated
 - [Deprecated symbols](./nscontrol-deprecated-symbols.md)
   Review symbols that are no longer in active development, and their recommended replacements.
+- [- setFloatingPointFormat:left:right:](./nscontrol/setfloatingpointformat_left_right_.md)
+  Sets the auto-ranging and floating point number format of the receiver’s cell.
 ### Structures
 - [NSControl.TextDidBeginEditingMessage](./nscontrol/textdidbegineditingmessage.md)
 - [NSControl.TextDidChangeMessage](./nscontrol/textdidchangemessage.md)

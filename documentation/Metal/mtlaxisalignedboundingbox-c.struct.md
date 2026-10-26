@@ -1,0 +1,44 @@
+# MTLAxisAlignedBoundingBox
+
+**Framework**: Metal  
+**Kind**: struct  
+**Role**: Structure
+
+The bounds for an axis-aligned bounding box.
+
+**Availability**:
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+
+## Declaration
+
+```c
+typedef struct _MTLAxisAlignedBoundingBox { ... } MTLAxisAlignedBoundingBox;
+```
+
+## Topics
+
+### Instance Properties
+- [max](./mtlaxisalignedboundingbox-c.struct/max.md)
+- [min](./mtlaxisalignedboundingbox-c.struct/min.md)
+
+## See Also
+
+### Supporting types
+- [MTLPackedFloat3](./mtlpackedfloat3-c.struct.md)
+  A structure that contains three 32-bit floating-point values with no additional padding.
+- [MTLPackedFloat4x3](./mtlpackedfloat4x3-c.struct.md)
+  A structure that contains the top three rows of a 4x4 matrix of 32-bit floating-point values, in column-major order.
+- [func MTLPackedFloat3Make(Float, Float, Float) -> MTLPackedFloat3](./mtlpackedfloat3make%28_,_,_%29.md)
+  Returns a new packed vector with three floating-point values.
+- [struct MTL4BufferRange](./mtl4bufferrange.md)
+- [func MTL4BufferRangeMake(MTLGPUAddress, UInt64) -> MTL4BufferRange](./mtl4bufferrangemake%28_,_%29.md)
+
+
+---
+
+*[View on Apple Developer](https://developer.apple.com/documentation/metal/mtlaxisalignedboundingbox-c.struct)*

@@ -5,6 +5,11 @@
 
 Defines the encoding type for window backing types.
 
+## Topics
+
+### Constants
+- [kCGWindowBackingCFNumberType](./kcgwindowbackingcfnumbertype.md)
+
 ## See Also
 
 ### Constants

@@ -27,6 +27,8 @@ var maxFrameDuration: CMTime { get }
   The minimum frame duration a stream supports.
 - [var validFrameDurations: [CMTime]?](./validframedurations-707st.md)
   An array of frame durations the stream supports.
+- [validFrameDurations](./validframedurations-4rbay.md)
+  An array of frame durations the stream supports.
 
 
 ---

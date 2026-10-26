@@ -75,7 +75,7 @@ Use [`cameraRelativePosition(_:)`](./vnhumanbodypose3dobservation/camerarelative
 
 ##### Work with positions in 3D space
 
-The Vision framework represents a 3D position as a [`simd_float4x4`](https://developer.apple.com/documentation/simd/simd_float4x4) matrix. A [`VNHumanBodyRecognizedPoint3D`](./vnhumanbodyrecognizedpoint3d.md) object contains the position of the joint, in meters, along with an identifier that corresponds to the joint name. It also contains the [`localPosition`](./vnhumanbodyrecognizedpoint3d/localposition.md) of the joint, which describes the position relative to a [`parentJoint`](./vnhumanbodyrecognizedpoint3d/parentjoint.md).
+The Vision framework represents a 3D position as a [`simd_float4x4`](../simd/simd_float4x4.md) matrix. A [`VNHumanBodyRecognizedPoint3D`](./vnhumanbodyrecognizedpoint3d.md) object contains the position of the joint, in meters, along with an identifier that corresponds to the joint name. It also contains the [`localPosition`](./vnhumanbodyrecognizedpoint3d/localposition.md) of the joint, which describes the position relative to a [`parentJoint`](./vnhumanbodyrecognizedpoint3d/parentjoint.md).
 
 > ❗ **Important**:  A joint’s position is always relative to the root joint.
 

@@ -156,6 +156,8 @@ engine.stop()
   An object that supplies audio data.
 - [class AVAudioSinkNode](./avaudiosinknode.md)
   An object that receives audio data.
+- [AVAudioSourceNodeRenderBlockRealtimeSafe](./avaudiosourcenoderenderblockrealtimesafe.md)
+- [AVAudioSinkNodeReceiverBlockRealtimeSafe](./avaudiosinknodereceiverblockrealtimesafe.md)
 
 
 ---

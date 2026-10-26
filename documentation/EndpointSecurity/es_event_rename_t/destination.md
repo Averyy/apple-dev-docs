@@ -27,6 +27,12 @@ To parse this `union`, check the [`destination_type`](./destination_type.md) to 
 - If the [`destination_type`](./destination_type.md) is [`ES_DESTINATION_TYPE_EXISTING_FILE`](../es_destination_type_existing_file.md), the union contains an [`es_file_t`](../es_file_t.md) member called `existing_file`.
 - If the [`destination_type`](./destination_type.md) is [`ES_DESTINATION_TYPE_NEW_PATH`](../es_destination_type_new_path.md), the union contains a `struct` called `new_path`, indicating the file’s proposed destination. The structure consists of an [`es_file_t`](../es_file_t.md) called `dir` for the parent directory, and an [`es_string_token_t`](../es_string_token_t.md) called `filename`.
 
+## Topics
+
+### Instance Properties
+- [existing_file](./destination/existing_file.md)
+- [new_path](./destination/new_path.md)
+
 ## See Also
 
 ### Inspecting Event Properties

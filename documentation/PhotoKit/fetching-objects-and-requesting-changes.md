@@ -7,7 +7,7 @@ Get assets, asset collections, and collection lists matching a specified query.
 
 #### Overview
 
-Instances of the model classes [`PHAsset`](https://developer.apple.com/documentation/photos/phasset), [`PHAssetCollection`](https://developer.apple.com/documentation/photos/phassetcollection), and [`PHCollectionList`](https://developer.apple.com/documentation/photos/phcollectionlist) represent the items a user works with in the Photos app:
+Instances of the model classes [`PHAsset`](../Photos/phasset.md), [`PHAssetCollection`](../Photos/phassetcollection.md), and [`PHCollectionList`](../Photos/phcollectionlist.md) represent the items a user works with in the Photos app:
 
 - **Assets**: Images, videos, and Live Photos
 - **Collections of assets**: Albums or Moments
@@ -17,13 +17,13 @@ Instances of these classes are read-only and immutable, and contain only metadat
 
 ##### Commit Change Requests to the Shared Photo Library
 
-Fetch assets and collections you’re interested in, and use those objects to fetch the raw data you need to reference or edit. To make changes, create change request objects and explicitly commit them to the shared [`PHPhotoLibrary`](https://developer.apple.com/documentation/photos/phphotolibrary) object. This architecture makes it easy, safe, and efficient to work with the same assets from multiple threads or multiple apps and app extensions.
+Fetch assets and collections you’re interested in, and use those objects to fetch the raw data you need to reference or edit. To make changes, create change request objects and explicitly commit them to the shared [`PHPhotoLibrary`](../Photos/phphotolibrary.md) object. This architecture makes it easy, safe, and efficient to work with the same assets from multiple threads or multiple apps and app extensions.
 
 ##### Handle Special Assets
 
 PhotoKit supports a number of Photos app features for working directly with a user’s Photos library. For example, Live Photos are special assets with additional data that your app can display differently, as a video or sequence of frames.
 
-Use the [`PHCollectionList`](https://developer.apple.com/documentation/photos/phcollectionlist) class to find assets corresponding to the Moments hierarchy in the Photos App. Lists of collections are read-only, immutable, and contain only metadata. Use the [`PHAsset`](https://developer.apple.com/documentation/photos/phasset) class to identify burst photos, Live Photos, panoramic photos, and high-frame-rate videos. When iCloud Photos is enabled, assets and collections in the Photos framework reflect content available across all devices on the same iCloud account.
+Use the [`PHCollectionList`](../Photos/phcollectionlist.md) class to find assets corresponding to the Moments hierarchy in the Photos App. Lists of collections are read-only, immutable, and contain only metadata. Use the [`PHAsset`](../Photos/phasset.md) class to identify burst photos, Live Photos, panoramic photos, and high-frame-rate videos. When iCloud Photos is enabled, assets and collections in the Photos framework reflect content available across all devices on the same iCloud account.
 
 For more information about Live Photos, see [Displaying Live Photos](./displaying-live-photos.md).
 

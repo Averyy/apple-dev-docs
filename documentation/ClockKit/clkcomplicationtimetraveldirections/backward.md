@@ -26,6 +26,8 @@ CLKComplicationTimeTravelDirectionBackward
 ### Constants
 - [static var forward: CLKComplicationTimeTravelDirections](./forward.md)
   Future data support. Use this option when it makes sense to provide future data for your complication.
+- [CLKComplicationTimeTravelDirectionNone](./clkcomplicationtimetraveldirectionnone.md)
+  No past or future data support. Use this option when it doesn’t make sense to provide future or past data for your complication.
 
 
 ---

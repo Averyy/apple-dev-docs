@@ -43,6 +43,12 @@ If `encodingInvalidCharacters` is `true`, this initializer tries to encode the s
   Creates a URL components object by parsing a URL in string form.
 - [init?(url: URL, resolvingAgainstBaseURL: Bool)](./init%28url,resolvingagainstbaseurl%29-3bbte.md)
   Creates a URL components object by parsing the URL from an `NSURL` object.
+- [+ componentsWithString:](./componentswithstring_.md)
+  Returns a URL components object by parsing a URL in string form.
+- [+ componentsWithString:encodingInvalidCharacters:](./componentswithstring_encodinginvalidcharacters_.md)
+  Returns a URL components instance from the provided string, optionally IDNA- and percent-encoding any invalid characters.
+- [+ componentsWithURL:resolvingAgainstBaseURL:](./componentswithurl_resolvingagainstbaseurl_.md)
+  Returns a URL components object by parsing the URL from an `NSURL` object.
 
 
 ---

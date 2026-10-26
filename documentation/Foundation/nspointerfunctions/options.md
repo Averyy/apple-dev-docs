@@ -46,6 +46,10 @@ When specifying a value, you can use only one of the options listed in Memory Op
   Equivalent to [`strongMemory`](./options/strongmemory.md).
 - [var NSMapTableWeakMemory: NSPointerFunctions.Options](../nsmaptableweakmemory.md)
   Equivalent to [`weakMemory`](./options/weakmemory.md).
+- [NSPointerFunctionsZeroingWeakMemory](../nspointerfunctionsoptions/nspointerfunctionszeroingweakmemory.md)
+  Use weak read and write barriers; use garbage-collected memory on copyIn.
+- [NSMapTableZeroingWeakMemory](../nsmaptablezeroingweakmemory.md)
+  Equivalent to [`NSPointerFunctionsZeroingWeakMemory`](../nspointerfunctionsoptions/nspointerfunctionszeroingweakmemory.md).
 ### Personality Options
 - [static var cStringPersonality: NSPointerFunctions.Options](./options/cstringpersonality.md)
   Use a string hash and `strcmp`; C-string ‘`%s`’ style description.

@@ -42,6 +42,10 @@ A background configuration is mutually exclusive with background views, so you m
   The view to use as the background of the cell.
 - [var selectedBackgroundView: UIView?](./selectedbackgroundview.md)
   The view to use as the background for a selected cell.
+- [- defaultBackgroundConfiguration](./defaultbackgroundconfiguration.md)
+  Retrieves a background configuration with system default values.
+- [backgroundConfiguration](./backgroundconfiguration-93a2v.md)
+  The current background configuration of the cell.
 
 
 ---

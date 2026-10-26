@@ -40,11 +40,15 @@ typedef unsigned short __attribute__((ext_vector_type(3))) simd_ushort3;
   Returns a new vector from the specified scalar values.
 - [func simd_make_ushort3_undef(UInt16) -> simd_ushort3](./simd_make_ushort3_undef%28_%29-6cyga.md)
   Returns a new vector with the first element set to a scalar value, and other elements undefined.
+- [vector3](./vector3-6gujk.md)
+  Returns a new vector from the specified scalar values.
 ### Functions to Create Three-Element Vectors From Combinations of Vectors and Scalar Values
 - [func simd_make_ushort3(simd_ushort2, UInt16) -> simd_ushort3](./simd_make_ushort3%28_,_%29-3ap3r.md)
   Returns a new vector from a vector and a scalar value.
 - [func simd_make_ushort3(UInt16, simd_ushort2) -> simd_ushort3](./simd_make_ushort3%28_,_%29-9h935.md)
   Returns a new vector from a scalar value and a vector.
+- [vector3](./vector3-5er36.md)
+  Returns a new vector from a vector and a scalar value.
 ### Common Functions
 - [func simd_clamp(simd_ushort3, simd_ushort3, simd_ushort3) -> simd_ushort3](./simd_clamp%28_,_,_%29-4akg3.md)
   Returns each element in a vector clamped to a specified range.
@@ -69,6 +73,48 @@ typedef unsigned short __attribute__((ext_vector_type(3))) simd_ushort3;
   Returns a vector that contains elements from either the first or second parameter, based on the corresponding element in the third parameter.
 ### Alternative Type Alias
 - [typealias vector_ushort3](./vector_ushort3.md)
+### Functions to Create Three-Element Vectors From Vectors of Other Types
+- [simd_ushort](./simd_ushort-3fra2.md)
+  Returns a new vector from the specified vector of 8-bit, signed integer elements.
+- [simd_ushort](./simd_ushort-3g196.md)
+  Returns a new vector from the specified vector of 8-bit, unsigned integer elements.
+- [simd_ushort](./simd_ushort-3fw9m.md)
+  Returns a new vector from the specified vector of 16-bit, signed integer elements.
+- [simd_ushort](./simd_ushort-3g656.md)
+  Returns a new vector from the specified vector of 16-bit, unsigned integer elements.
+- [simd_ushort](./simd_ushort-3fudi.md)
+  Returns a new vector from the specified vector of 32-bit, signed integer elements.
+- [simd_ushort](./simd_ushort-3g492.md)
+  Returns a new vector from the specified vector of 32-bit, unsigned integer elements.
+- [simd_ushort](./simd_ushort-3fvby.md)
+  Returns a new vector from the specified vector of 64-bit, signed integer elements.
+- [simd_ushort](./simd_ushort-3g5b2.md)
+  Returns a new vector from the specified vector of 64-bit, unsigned integer element.
+- [simd_ushort](./simd_ushort-3g22q.md)
+  Returns a new vector from the specified vector of 32-bit, floating-point elements.
+- [simd_ushort](./simd_ushort-3g2v2.md)
+  Returns a new vector from the specified vector of 64-bit, floating-point elements.
+### Functions to Perform Saturating Conversion From Vectors of Other Types
+- [simd_ushort_sat](./simd_ushort_sat-7kfoj.md)
+  Returns a new vector from the specified vector of 8-bit, signed integer elements.
+- [simd_ushort_sat](./simd_ushort_sat-7kpib.md)
+  Returns a new vector from the specified vector of 8-bit, unsigned integer elements.
+- [simd_ushort_sat](./simd_ushort_sat-7kapv.md)
+  Returns a new vector from the specified vector of 16-bit, signed integer elements.
+- [simd_ushort_sat](./simd_ushort_sat-7kkoz.md)
+  Returns a new vector from the specified vector of 16-bit, unsigned integer elements.
+- [simd_ushort_sat](./simd_ushort_sat-7kipj.md)
+  Returns a new vector from the specified vector of 32-bit, signed integer elements.
+- [simd_ushort_sat](./simd_ushort_sat-7kstz.md)
+  Returns a new vector from the specified vector of 32-bit, unsigned integer elements.
+- [simd_ushort_sat](./simd_ushort_sat-7kk9d.md)
+  Returns a new vector from the specified vector of 64-bit, signed integer elements.
+- [simd_ushort_sat](./simd_ushort_sat-7kuc1.md)
+  Returns a new vector from the specified vector of 64-bit, unsigned integer element.
+- [simd_ushort_sat](./simd_ushort_sat-7kr89.md)
+  Returns a new vector from the specified vector of 32-bit, floating-point elements.
+- [simd_ushort_sat](./simd_ushort_sat-7kroh.md)
+  Returns a new vector from the specified vector of 64-bit, floating-point elements.
 
 ## See Also
 

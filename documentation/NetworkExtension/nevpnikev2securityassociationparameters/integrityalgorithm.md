@@ -48,6 +48,8 @@ The system infers its IKE psedo-random number generation algorithm based on the 
   A list of the quantum-secure key exchange methods the Security Association uses.
 - [enum NEVPNIKEv2PostQuantumKeyExchangeMethod](../nevpnikev2postquantumkeyexchangemethod.md)
   Quantum-secure key exchange methods you use with IKEv2 servers.
+- [postQuantumKeyExchangeMethods](./postquantumkeyexchangemethods-56672.md)
+  A list of the quantum-secure key exchange methods the Security Association uses.
 
 
 ---

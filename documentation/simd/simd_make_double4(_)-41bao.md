@@ -31,6 +31,8 @@ static simd_double4 simd_make_double4(simd_double8 other);
   Returns a new vector from the specified two-element vector, and other elements undefined.
 - [func simd_make_double4_undef(simd_double3) -> simd_double4](./simd_make_double4_undef%28_%29-68wqb.md)
   Returns a new vector from the specified three-element vector, and other elements undefined.
+- [vector4](./vector4-15myv.md)
+  Returns a new vector from the specified vectors.
 
 
 ---

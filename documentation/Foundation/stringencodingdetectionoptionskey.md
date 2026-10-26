@@ -69,6 +69,8 @@ typedef NSString * NSStringEncodingDetectionOptionsKey;
   The smallest encoding to which the receiver can be converted without loss of information.
 - [NSString Handling Exception Names](./nsstring-handling-exception-names.md)
   These constants define the names of exceptions raised if `NSString` cannot represent a string in a given encoding, or parse a string as a property list.
+- [NSStringEncoding](./nsstringencoding.md)
+  The following constants are provided by `NSString` as possible string encodings.
 
 
 ---

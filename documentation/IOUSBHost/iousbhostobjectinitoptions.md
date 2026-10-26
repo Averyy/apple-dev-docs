@@ -25,6 +25,8 @@ enum IOUSBHostObjectInitOptions : NSUInteger;
 ### Options
 - [static var deviceCapture: IOUSBHostObjectInitOptions](./iousbhostobjectinitoptions/devicecapture.md)
   The option to capture the device and terminate existing drivers.
+- [IOUSBHostObjectInitOptionsNone](./iousbhostobjectinitoptions/iousbhostobjectinitoptionsnone.md)
+  The default argument for initializing the host object.
 ### Initializing the Structure
 - [init(rawValue: UInt)](./iousbhostobjectinitoptions/init%28rawvalue%29.md)
   Initializes the object.
@@ -54,6 +56,10 @@ enum IOUSBHostObjectInitOptions : NSUInteger;
   The queue for servicing input/output requests.
 - [func destroy()](./iousbhostobject/destroy%28%29.md)
   Removes underlying allocations and connections from the USB host object.
+- [- initWithIOService:options:queue:error:interestHandler:](./iousbhostobject/initwithioservice_options_queue_error_interesthandler_.md)
+  Creates a USB host object and sets up a communication channel to the kernel.
+- [- initWithIOService:queue:error:interestHandler:](./iousbhostobject/initwithioservice_queue_error_interesthandler_.md)
+  Creates a USB host object and sets up a default communication channel to the kernel.
 
 
 ---

@@ -42,6 +42,9 @@ When configuring a text view, specify what type of text input you want Writing T
 ### Type Properties
 - [static var presentationIntent: UIWritingToolsResultOptions](./uiwritingtoolsresultoptions/presentationintent.md)
   implies `RichText`, `List`, and `Table`, and Writing Tools may provide text with presentation intent attributes. Writing Tools will use `NSPresentationIntent` instead of `NSTextList` and `NSTextTable` to represent lists and tables.
+### Enumeration Cases
+- [UIWritingToolsResultDefault](./uiwritingtoolsresultoptions/uiwritingtoolsresultdefault.md)
+  System-defined behavior
 
 ## Relationships
 

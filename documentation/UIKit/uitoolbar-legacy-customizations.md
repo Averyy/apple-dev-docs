@@ -31,6 +31,9 @@ In iOS 13 and later, customize your toolbar using the [`standardAppearance`](./u
   Returns the image to use for the toolbar shadow in a given position.
 - [func setShadowImage(UIImage?, forToolbarPosition: UIBarPosition)](./uitoolbar/setshadowimage%28_,fortoolbarposition%29.md)
   Sets the image to use for the toolbar shadow in a given position.
+### Deprecated
+- [UIToolbarPosition](./uitoolbarposition.md)
+  Constants to identify the position of a toolbar for appearance customization.
 
 ## See Also
 

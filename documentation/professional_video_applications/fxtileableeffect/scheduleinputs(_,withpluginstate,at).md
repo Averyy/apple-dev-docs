@@ -21,8 +21,8 @@ optional func scheduleInputs(_ inputImageRequests: AutoreleasingUnsafeMutablePoi
 
 ## Mentions
 
-- [Migrating FxPlug 3 plug-ins to FxPlug 4](https://developer.apple.com/documentation/professional-video-applications/migrating-fxplug-3-plug-ins-to-fxplug-4)
-- [Scheduling media in plug-ins](https://developer.apple.com/documentation/professional-video-applications/scheduling-media-in-plug-ins)
+- [Migrating FxPlug 3 plug-ins to FxPlug 4](../../Professional-Video-Applications/migrating-fxplug-3-plug-ins-to-fxplug-4.md)
+- [Scheduling media in plug-ins](../../Professional-Video-Applications/scheduling-media-in-plug-ins.md)
 
 #### Discussion
 

@@ -32,6 +32,8 @@ To set the type of alarm, define one of [`emailAddress`](./emailaddress.md), [`s
   The recipient of an email to send when the alarm triggers.
 - [var soundName: String?](./soundname.md)
   The name of the sound to play when the alarm triggers.
+- [url](./url.md)
+  The URL to open when the alarm triggers.
 
 
 ---

@@ -25,6 +25,18 @@ If your app has real-time rendering threads that operate on their own deadlines,
 ### Device Workgroup
 - [var kAudioDevicePropertyIOThreadOSWorkgroup: AudioObjectPropertySelector](../CoreAudio/kaudiodevicepropertyiothreadosworkgroup.md)
   The device’s workgroup object, which you use to coordinate your threads with the threads of the device.
+- [kAudioOutputUnitProperty_OSWorkgroup](./kaudiooutputunitproperty_osworkgroup.md)
+  The workgroup associated with the audio device underlying this Audio Unit.
+### Host App Workgroup
+- [kAudioUnitProperty_RenderContextObserver](./kaudiounitproperty_rendercontextobserver.md)
+  The block that the system calls when the rendering context changes.
+- [AURenderContextObserver](./aurendercontextobserver.md)
+  A custom block that tells the audio unit which thread context to use for the next render cycle.
+- [AudioUnitRenderContext](./audiounitrendercontext.md)
+  A structure that contains thread context information for a real-time rendering operation.
+### Custom Workgroups
+- [AudioWorkIntervalCreate](./audioworkintervalcreate.md)
+  Creates a new interval workgroup for managing real-time audio threads.
 
 ## See Also
 

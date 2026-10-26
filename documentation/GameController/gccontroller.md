@@ -58,12 +58,20 @@ Alternatively, you can create a snapshot of a real or virtual controller using t
   A notification that posts after a controller connects to the device.
 - [static let GCControllerDidDisconnect: NSNotification.Name](../Foundation/nsnotification/name-swift.struct/gccontrollerdiddisconnect.md)
   A notification that posts after a controller disconnects from the device.
+- [GCControllerDidConnectNotification](./gccontrollerdidconnectnotification.md)
+  A notification that posts after a controller connects to the device.
+- [GCControllerDidDisconnectNotification](./gccontrollerdiddisconnectnotification.md)
+  A notification that posts after a controller disconnects from the device.
 ### Handling multiple controllers
 - [class var current: GCController?](./gccontroller/current.md)
   The most recently used game controller.
 - [static let GCControllerDidBecomeCurrent: NSNotification.Name](../Foundation/nsnotification/name-swift.struct/gccontrollerdidbecomecurrent.md)
   A notification that posts when a controller becomes the current controller.
 - [static let GCControllerDidStopBeingCurrent: NSNotification.Name](../Foundation/nsnotification/name-swift.struct/gccontrollerdidstopbeingcurrent.md)
+  A notification that posts when a controller stops being the current controller.
+- [GCControllerDidBecomeCurrentNotification](./gccontrollerdidbecomecurrentnotification.md)
+  A notification that posts when a controller becomes the current controller.
+- [GCControllerDidStopBeingCurrentNotification](./gccontrollerdidstopbeingcurrentnotification.md)
   A notification that posts when a controller stops being the current controller.
 ### Inspecting a controller
 - [var isAttachedToDevice: Bool](./gccontroller/isattachedtodevice.md)

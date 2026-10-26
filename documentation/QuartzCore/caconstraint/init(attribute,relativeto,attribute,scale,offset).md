@@ -43,6 +43,8 @@ The value for the constraint is calculated as (`srcAttr` * `scale`) + `offset`).
   Creates and returns an `CAConstraint` object with the specified parameters.
 - [convenience init(attribute: CAConstraintAttribute, relativeTo: String, attribute: CAConstraintAttribute)](./init%28attribute,relativeto,attribute%29.md)
   Creates and returns an `CAConstraint` object with the specified parameters.
+- [+ constraintWithAttribute:relativeTo:attribute:scale:offset:](./constraintwithattribute_relativeto_attribute_scale_offset_.md)
+  Creates and returns an `CAConstraint` object with the specified parameters.
 
 
 ---

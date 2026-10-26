@@ -405,21 +405,21 @@ Ellipses (`...`) indicate lines of code that have been omitted from this example
   Use container components to create the component hierarchies you need for special article designs.
 - [Defining and Applying Text Styles](./defining-and-applying-text-styles.md)
   Define and apply custom, default, and inline text styles, or use HTML tags or Markdown syntax to style your text.
-- [object Anchor](https://developer.apple.com/documentation/applenewsformat/anchor)
+- [object Anchor](../AppleNewsFormat/anchor.md)
   The object for anchoring one component to another component in your article’s layout.
-- [object Header](https://developer.apple.com/documentation/applenewsformat/header)
+- [object Header](../AppleNewsFormat/header.md)
   The component for defining the top area of an article, chapter, or section.
-- [object Container](https://developer.apple.com/documentation/applenewsformat/container)
+- [object Container](../AppleNewsFormat/container.md)
   Properties shared by all container types.
-- [object Caption](https://developer.apple.com/documentation/applenewsformat/caption)
+- [object Caption](../AppleNewsFormat/caption.md)
   The component for adding caption text.
-- [object CaptionDescriptor](https://developer.apple.com/documentation/applenewsformat/captiondescriptor)
+- [object CaptionDescriptor](../AppleNewsFormat/captiondescriptor.md)
   The object you use in image components for displaying captions when the image is full-screen.
-- [object ComponentStyle](https://developer.apple.com/documentation/applenewsformat/componentstyle)
+- [object ComponentStyle](../AppleNewsFormat/componentstyle.md)
   The object for setting style properties for components, including background color and fill, borders, and table styles.
-- [object ImageFill](https://developer.apple.com/documentation/applenewsformat/imagefill)
+- [object ImageFill](../AppleNewsFormat/imagefill.md)
   The object for adding an image background fill to a component.
-- [object ComponentTextStyle](https://developer.apple.com/documentation/applenewsformat/componenttextstyle)
+- [object ComponentTextStyle](../AppleNewsFormat/componenttextstyle.md)
   The object for defining the style for a text component, including spacing, alignment, and drop caps.
 - [Specifying Measurements for Components](./specifying-measurements-for-components.md)
   Specify the units of measure to use for margins, minimum heights, and other dimensions.

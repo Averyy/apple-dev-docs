@@ -29,6 +29,12 @@ Each element in the array is an instance of [`UITextInputMode`](../uitextinputmo
 
 > ❗ **Important**:  This API has the potential of being misused to access device signals to try to identify the device or user, also known as fingerprinting. Regardless of whether a user gives your app permission to track, fingerprinting is not allowed. When you use this API in your app or third-party SDK (an SDK not provided by Apple), declare your usage and the reason for using the API in your app or third-party SDK’s `PrivacyInfo.xcprivacy` file. For more information, including the list of valid reasons for using the API, see [Describing use of required reason API](../../BundleResources/describing-use-of-required-reason-api.md).
 
+## See Also
+
+### Related Documentation
+- [+ currentInputMode](./currentinputmode.md)
+  Returns an instance representing the current text-input mode.
+
 
 ---
 

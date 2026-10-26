@@ -44,6 +44,12 @@ On initialization, the [`defaultMediaDataStorage`](./defaultmediadatastorage.md)
   Creates a mutable movie object from a movie header stored in a QuickTime movie file of ISO base media file.
 - [init(data: Data, options: [String : Any]?, error: ()) throws](./init%28data,options,error%29.md)
   Creates a mutable movie object from a movie stored in a data object.
+- [+ movieWithURL:options:error:](./moviewithurl_options_error_.md)
+  Returns a new mutable movie object from a movie header stored in a QuickTime movie file of ISO base media file.
+- [+ movieWithData:options:error:](./moviewithdata_options_error_.md)
+  Returns a new mutable movie object from a movie stored in a data object.
+- [+ movieWithSettingsFromMovie:options:error:](./moviewithsettingsfrommovie_options_error_.md)
+  Returns a new mutable movie object without tracks.
 
 
 ---

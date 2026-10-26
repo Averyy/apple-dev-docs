@@ -70,6 +70,11 @@ You should not use this method to encode C arrays of Objective-C objects. See [`
   Encodes a 64-bit integer value and associates it with the string key.
 - [func encode(Any?)](./encode%28_%29-9648d.md)
   Encodes an object.
+- [- encodeNXObject:](./encodenxobject_.md)
+  Encodes an old-style object onto the coder.
+### Related Documentation
+- [- encodeValuesOfObjCTypes:](./encodevaluesofobjctypes_.md)
+  Encodes a series of values of potentially differing Objective-C types.
 
 
 ---

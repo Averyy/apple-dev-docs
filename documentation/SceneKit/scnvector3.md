@@ -48,6 +48,8 @@ SceneKit uses three-component vectors for a variety of purposes, such as describ
   Returns a three-element SceneKit vector structure corresponding to a GLKit vector structure.
 - [func SCNVector3ToGLKVector3(SCNVector3) -> GLKVector3](./scnvector3toglkvector3%28_%29.md)
   Returns a three-element GLKit vector structure corresponding to a SceneKit vector structure.
+- [SCNVector3FromFloat3](./scnvector3fromfloat3.md)
+- [SCNVector3ToFloat3](./scnvector3tofloat3.md)
 ### Comparing Vectors
 - [func SCNVector3EqualToVector3(SCNVector3, SCNVector3) -> Bool](./scnvector3equaltovector3%28_,_%29.md)
   Returns a Boolean value that indicates whether the corresponding components of two vectors are equal.

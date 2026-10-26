@@ -30,6 +30,14 @@ var availableMediaCharacteristicsWithMediaSelectionOptions: [AVMediaCharacterist
 
 - [Selecting subtitles and alternative audio tracks](../selecting-subtitles-and-alternative-audio-tracks.md)
 
+## See Also
+
+### Accessing media selections
+- [allMediaSelections](./allmediaselections.md)
+  The array of available media selections for this asset.
+- [- mediaSelectionGroupForMediaCharacteristic:](./mediaselectiongroup%28formediacharacteristic%29.md)
+  Returns a media selection group that contains one or more options with the specified media characteristic.
+
 
 ---
 

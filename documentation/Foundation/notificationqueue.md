@@ -73,6 +73,8 @@ Every thread has a default notification queue, which is associated with the defa
   A container for information broadcast through a notification center to all registered observers.
 - [class NotificationCenter](./notificationcenter.md)
   A notification dispatch mechanism that enables the broadcast of information to registered observers.
+- [NSNotification](./nsnotification.md)
+  A container for information broadcast through a notification center to all registered observers.
 
 
 ---

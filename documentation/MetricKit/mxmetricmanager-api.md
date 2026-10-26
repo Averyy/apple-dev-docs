@@ -74,6 +74,13 @@ Measure app performance and diagnostics using MXMetricManager and related types.
   Posts a single custom metric, the start time of a custom metric, or the end time of a custom metric to the log system.
 - [func mxSignpostAnimationIntervalBegin(dso: UnsafeRawPointer, log: OSLog, name: StaticString, signpostID: OSSignpostID, StaticString, [any CVarArg])](./mxsignpostanimationintervalbegin%28dso,log,name,signpostid,_,_%29.md)
   Posts the start time of an animation interval to the log system.
+- [MXSignpostEventEmit](./mxsignposteventemit.md)
+  Post a custom metric event to a metric kit log.
+- [MXSignpostAnimationIntervalBegin](./mxsignpostanimationintervalbegin.md)
+- [MXSignpostIntervalBegin](./mxsignpostintervalbegin.md)
+  Post the start time of a custom metric event to a metric kit log.
+- [MXSignpostIntervalEnd](./mxsignpostintervalend.md)
+  Post the end time of a custom metric event to a metric kit log.
 ### Supporting types
 - [class MXCallStackTree](./mxcallstacktree.md)
   An object representing the call stack for an exception.

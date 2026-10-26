@@ -56,6 +56,8 @@ Used with the [`propertyList(forType:)`](../propertylist%28fortype%29.md) method
   Sound data.
 - [static let string: NSPasteboard.PasteboardType](./string.md)
   String data.
+- [NSPasteboardTypeTabularText](./tabulartext.md)
+  Tab-separated fields of text.
 
 
 ---

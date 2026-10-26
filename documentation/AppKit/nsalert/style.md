@@ -34,6 +34,12 @@ Currently, there’s no visual difference between informational and warning aler
   An alert style to inform someone about a current or impending event.
 ### Initializers
 - [init?(rawValue: UInt)](./style/init%28rawvalue%29.md)
+### Deprecated
+- [NSCriticalAlertStyle](../nscriticalalertstyle.md)
+- [NSWarningAlertStyle](../nswarningalertstyle.md)
+  An alert used to warn the user about a current or impending event. The purpose is more than informational but not critical. This is the default alert style.
+- [NSInformationalAlertStyle](../nsinformationalalertstyle.md)
+  An alert used to inform the user about a current or impending event.
 
 ## Relationships
 

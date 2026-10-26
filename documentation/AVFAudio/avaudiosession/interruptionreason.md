@@ -39,6 +39,7 @@ enum AVAudioSessionInterruptionReason : NSUInteger;
   The system backgrounds the scene and interrupts the audio session.
 - [AVAudioSession.InterruptionReason.appWasSuspended](./interruptionreason/appwassuspended.md)
   The system suspends the app and interrupts the audio session.
+- [AVAudioSessionInterruptionReasonDeviceUnauthenticated](../avaudiosessioninterruptionreason/avaudiosessioninterruptionreasondeviceunauthenticated.md)
 
 ## Relationships
 

@@ -19,65 +19,65 @@ SiriKit automatically asks the user to unlock their device when processing any p
 - [Handling Payment Requests with SiriKit](./handling-payment-requests-with-sirikit.md)
   Add an Intent Extension to your app to handle money transfer requests with Siri.
 ### Send a Payment
-- [protocol INSendPaymentIntentHandling](https://developer.apple.com/documentation/intents/insendpaymentintenthandling)
+- [protocol INSendPaymentIntentHandling](../Intents/insendpaymentintenthandling.md)
   The handler interface for transferring money from the current user’s account to a different user’s account.
-- [class INSendPaymentIntent](https://developer.apple.com/documentation/intents/insendpaymentintent)
+- [class INSendPaymentIntent](../Intents/insendpaymentintent.md)
   A request to transfer money from the current user’s account to a different user’s account.
-- [class INSendPaymentIntentResponse](https://developer.apple.com/documentation/intents/insendpaymentintentresponse)
+- [class INSendPaymentIntentResponse](../Intents/insendpaymentintentresponse.md)
   Your app’s response to a send payment intent.
 ### Request a Payment
-- [protocol INRequestPaymentIntentHandling](https://developer.apple.com/documentation/intents/inrequestpaymentintenthandling)
+- [protocol INRequestPaymentIntentHandling](../Intents/inrequestpaymentintenthandling.md)
   The handler interface for delivering a request for payment from another user of your app.
-- [class INRequestPaymentIntent](https://developer.apple.com/documentation/intents/inrequestpaymentintent)
+- [class INRequestPaymentIntent](../Intents/inrequestpaymentintent.md)
   An intent for requesting money from another user’s account.
-- [class INRequestPaymentIntentResponse](https://developer.apple.com/documentation/intents/inrequestpaymentintentresponse)
+- [class INRequestPaymentIntentResponse](../Intents/inrequestpaymentintentresponse.md)
   Your app’s response to a request payment intent.
 ### Search for Accounts
-- [protocol INSearchForAccountsIntentHandling](https://developer.apple.com/documentation/intents/insearchforaccountsintenthandling)
+- [protocol INSearchForAccountsIntentHandling](../Intents/insearchforaccountsintenthandling.md)
   The handler interface for searching for account information.
-- [class INSearchForAccountsIntent](https://developer.apple.com/documentation/intents/insearchforaccountsintent)
+- [class INSearchForAccountsIntent](../Intents/insearchforaccountsintent.md)
   A user request for information about their accounts in your app.
-- [class INSearchForAccountsIntentResponse](https://developer.apple.com/documentation/intents/insearchforaccountsintentresponse)
+- [class INSearchForAccountsIntentResponse](../Intents/insearchforaccountsintentresponse.md)
   Your app’s response to a request to search for account information.
 ### Data Objects
-- [enum INAccountType](https://developer.apple.com/documentation/intents/inaccounttype)
+- [enum INAccountType](../Intents/inaccounttype.md)
   Constants indicating the type of account involved in a financial transaction.
-- [class INCurrencyAmount](https://developer.apple.com/documentation/intents/incurrencyamount)
+- [class INCurrencyAmount](../Intents/incurrencyamount.md)
   An amount of money to transfer during a financial transaction.
-- [class INPaymentAccount](https://developer.apple.com/documentation/intents/inpaymentaccount)
+- [class INPaymentAccount](../Intents/inpaymentaccount.md)
   A user account that provides the funds when making a payment.
-- [class INPaymentAmount](https://developer.apple.com/documentation/intents/inpaymentamount)
+- [class INPaymentAmount](../Intents/inpaymentamount.md)
   The amount of money to apply to a bill payment.
-- [class INPaymentMethod](https://developer.apple.com/documentation/intents/inpaymentmethod)
+- [class INPaymentMethod](../Intents/inpaymentmethod.md)
   Information about a form of payment supported by your app.
-- [class INPaymentRecord](https://developer.apple.com/documentation/intents/inpaymentrecord)
+- [class INPaymentRecord](../Intents/inpaymentrecord.md)
   Detailed information about a financial transaction made between two users.
-- [enum INPaymentStatus](https://developer.apple.com/documentation/intents/inpaymentstatus)
+- [enum INPaymentStatus](../Intents/inpaymentstatus.md)
   Constants indicating the state of the financial transaction.
-- [class INPerson](https://developer.apple.com/documentation/intents/inperson)
+- [class INPerson](../Intents/inperson.md)
   Information about a person participating in a SiriKit interaction.
 ### Resolution Results
-- [class INAccountTypeResolutionResult](https://developer.apple.com/documentation/intents/inaccounttyperesolutionresult)
+- [class INAccountTypeResolutionResult](../Intents/inaccounttyperesolutionresult.md)
   A resolution result for account types.
-- [class INBalanceTypeResolutionResult](https://developer.apple.com/documentation/intents/inbalancetyperesolutionresult)
+- [class INBalanceTypeResolutionResult](../Intents/inbalancetyperesolutionresult.md)
   A resolution result for balance types.
-- [class INCurrencyAmountResolutionResult](https://developer.apple.com/documentation/intents/incurrencyamountresolutionresult)
+- [class INCurrencyAmountResolutionResult](../Intents/incurrencyamountresolutionresult.md)
   A resolution result for a currency amount associated with an intent.
-- [class INPaymentAccountResolutionResult](https://developer.apple.com/documentation/intents/inpaymentaccountresolutionresult)
+- [class INPaymentAccountResolutionResult](../Intents/inpaymentaccountresolutionresult.md)
   A resolution result for the user account that provides the funds to pay a bill.
-- [class INPaymentAmountResolutionResult](https://developer.apple.com/documentation/intents/inpaymentamountresolutionresult)
+- [class INPaymentAmountResolutionResult](../Intents/inpaymentamountresolutionresult.md)
   A resolution result for the amount to pay for a bill.
-- [class INPaymentMethodResolutionResult](https://developer.apple.com/documentation/intents/inpaymentmethodresolutionresult)
+- [class INPaymentMethodResolutionResult](../Intents/inpaymentmethodresolutionresult.md)
   Describes the result of resolving a payment method.
-- [class INPaymentStatusResolutionResult](https://developer.apple.com/documentation/intents/inpaymentstatusresolutionresult)
+- [class INPaymentStatusResolutionResult](../Intents/inpaymentstatusresolutionresult.md)
   A resolution result for the payment status of a bill during a search.
-- [class INRequestPaymentCurrencyAmountResolutionResult](https://developer.apple.com/documentation/intents/inrequestpaymentcurrencyamountresolutionresult)
+- [class INRequestPaymentCurrencyAmountResolutionResult](../Intents/inrequestpaymentcurrencyamountresolutionresult.md)
   A resolution result for the currency amount associated with a payment request.
-- [class INRequestPaymentPayerResolutionResult](https://developer.apple.com/documentation/intents/inrequestpaymentpayerresolutionresult)
+- [class INRequestPaymentPayerResolutionResult](../Intents/inrequestpaymentpayerresolutionresult.md)
   A resolution result for the person making the payment.
-- [class INSendPaymentCurrencyAmountResolutionResult](https://developer.apple.com/documentation/intents/insendpaymentcurrencyamountresolutionresult)
+- [class INSendPaymentCurrencyAmountResolutionResult](../Intents/insendpaymentcurrencyamountresolutionresult.md)
   A resolution result for the currency amount to send to another user.
-- [class INSendPaymentPayeeResolutionResult](https://developer.apple.com/documentation/intents/insendpaymentpayeeresolutionresult)
+- [class INSendPaymentPayeeResolutionResult](../Intents/insendpaymentpayeeresolutionresult.md)
   A resolution result for the recipient of a payment.
 
 ## See Also

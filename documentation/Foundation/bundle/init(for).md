@@ -38,6 +38,8 @@ The `NSBundle` object that dynamically loaded `aClass` (a loadable bundle), the 
 ### Related Documentation
 - [class var main: Bundle](./main.md)
   Returns the bundle object that contains the current executable.
+- [+ bundleWithPath:](../nsbundle/bundlewithpath_.md)
+  Returns an `NSBundle` object that corresponds to the specified directory.
 ### Creating and initializing a bundle
 - [convenience init?(url: URL)](./init%28url%29-a2t0.md)
   Returns an `NSBundle` object that corresponds to the specified file URL.

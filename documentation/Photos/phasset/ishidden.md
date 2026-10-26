@@ -28,7 +28,7 @@ var isHidden: Bool { get }
 
 Hidden assets are only available in the hidden Smart Album or in user Smart Albums. To include these assets, use the [`includeHiddenAssets`](../phfetchoptions/includehiddenassets.md) fetch option.
 
-Beginning with iOS 16, users can require authentication to view the hidden album, and the user setting is `true` by default. When `true`, the system doesn’t return hidden assets even if the [`includeHiddenAssets`](../phfetchoptions/includehiddenassets.md) fetch option is `true`. If you use [`PhotosPicker`](https://developer.apple.com/documentation/photosui/photospicker), a user can choose hidden assets to provide to your app.
+Beginning with iOS 16, users can require authentication to view the hidden album, and the user setting is `true` by default. When `true`, the system doesn’t return hidden assets even if the [`includeHiddenAssets`](../phfetchoptions/includehiddenassets.md) fetch option is `true`. If you use [`PhotosPicker`](../../PhotosUI/photospicker.md), a user can choose hidden assets to provide to your app.
 
 ## See Also
 

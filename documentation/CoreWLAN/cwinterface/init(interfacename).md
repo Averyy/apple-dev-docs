@@ -38,6 +38,8 @@ The interface name must be in the BSD name form (e.g. “en1”), and can be pas
 ### Getting an interface
 - [convenience init(name: String?)](./init%28name%29.md)
   An instance method for obtaining an CWInterface object.
+- [+ interface](./interface.md)
+  Convenience method for getting an CWInterface object for the default WLAN interface.
 
 
 ---

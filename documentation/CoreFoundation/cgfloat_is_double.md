@@ -48,6 +48,9 @@ Indicates whether [`CGFloat`](./cgfloat-swift.struct.md) is defined as a `float`
 - [var kCFCoreFoundationVersionNumber10_11_2: Double](./kcfcorefoundationversionnumber10_11_2.md)
 - [var kCFCoreFoundationVersionNumber10_11_3: Double](./kcfcorefoundationversionnumber10_11_3.md)
 - [var kCFCoreFoundationVersionNumber10_11_4: Double](./kcfcorefoundationversionnumber10_11_4.md)
+- [kCFCoreFoundationVersionNumber10_11_Max](./kcfcorefoundationversionnumber10_11_max.md)
+- [kCFCoreFoundationVersionNumber10_7_5](./kcfcorefoundationversionnumber10_7_5.md)
+- [kCFCoreFoundationVersionNumber10_8](./kcfcorefoundationversionnumber10_8.md)
 
 
 ---

@@ -43,6 +43,12 @@ Returns the initialized URL components object, or `nil` if the URL could not be 
   Creates a URL components object by parsing a URL in string form.
 - [init?(string: String, encodingInvalidCharacters: Bool)](./init%28string,encodinginvalidcharacters%29.md)
   Creates a URL components instance from the provided string, optionally IDNA- and percent-encoding any invalid characters.
+- [+ componentsWithString:](./componentswithstring_.md)
+  Returns a URL components object by parsing a URL in string form.
+- [+ componentsWithString:encodingInvalidCharacters:](./componentswithstring_encodinginvalidcharacters_.md)
+  Returns a URL components instance from the provided string, optionally IDNA- and percent-encoding any invalid characters.
+- [+ componentsWithURL:resolvingAgainstBaseURL:](./componentswithurl_resolvingagainstbaseurl_.md)
+  Returns a URL components object by parsing the URL from an `NSURL` object.
 
 
 ---

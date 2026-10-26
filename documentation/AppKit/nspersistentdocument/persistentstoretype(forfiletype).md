@@ -40,6 +40,8 @@ You set the persistent store type in the application’s property list.
   The managed object model of the document.
 - [func configurePersistentStoreCoordinator(for: URL, ofType: String, modelConfiguration: String?, storeOptions: [String : Any]?) throws](./configurepersistentstorecoordinator%28for,oftype,modelconfiguration,storeoptions%29.md)
   Configures the receiver’s persistent store coordinator with the appropriate stores for a given URL.
+- [- configurePersistentStoreCoordinatorForURL:ofType:error:](./configurepersistentstorecoordinatorforurl_oftype_error_.md)
+  Configures the receiver’s persistent store coordinator for a given URL and document type.
 
 
 ---

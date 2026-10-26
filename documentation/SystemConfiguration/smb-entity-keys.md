@@ -16,6 +16,8 @@ Keys that correspond to values in the `kSCEntNetSMB` dictionary.
   The SMB key `WINSAddresses`, whose value is of type `CFArray`, containing elements of type `CFString`.
 - [let kSCPropNetSMBWorkgroup: CFString](./kscpropnetsmbworkgroup-swift.var.md)
   The SMB key `Workgroup`, whose value is of type `CFString`.
+- [kSCPropNetSMBNetBIOSScope](./kscpropnetsmbnetbiosscope-c.var.md)
+  The SMB key `NetBIOSScope`, whose value is of type `CFString`.
 ### NetBIOS Node Type Values
 - [let kSCValNetSMBNetBIOSNodeTypeBroadcast: CFString](./kscvalnetsmbnetbiosnodetypebroadcast-swift.var.md)
   The constant value Broadcast.

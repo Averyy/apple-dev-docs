@@ -40,6 +40,8 @@ Use this method to create a result object when you are able to perform a search 
 ### Creating a Resolution Result Object
 - [class func confirmationRequired(with: INPaymentStatus) -> Self](./confirmationrequired%28with%29.md)
   Creates an object whose resolution requires that the user confirm the value before proceeding.
+- [+ successWithResolvedValue:](./successwithresolvedvalue_.md)
+- [+ confirmationRequiredWithValueToConfirm:](./confirmationrequiredwithvaluetoconfirm_.md)
 
 
 ---

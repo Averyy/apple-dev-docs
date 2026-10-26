@@ -34,6 +34,9 @@ var OS_TRACE_TYPE_DEBUG: UInt32 { get }
   Trace messages that occur when a debugger is attached and additional info is requested.
 - [var OS_TRACE_TYPE_RELEASE: UInt32](./os_trace_type_release.md)
   Trace messages to be captured on your app when instealled on a user’s device.
+- [os_activity_start](./os_activity_start.md)
+- [os_activity_set_breadcrumb](./os_activity_set_breadcrumb.md)
+  Flags the current activity as a breadcrumb, to signify an interesting event.
 
 
 ---

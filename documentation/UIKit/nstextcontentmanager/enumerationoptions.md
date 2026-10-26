@@ -31,6 +31,9 @@ enum NSTextContentManagerEnumerationOptions : NSUInteger;
 ### Accessing the enumeration setting
 - [static var reverse: NSTextContentManager.EnumerationOptions](./enumerationoptions/reverse.md)
   Returns whether enumerations start from the end of the text element.
+### Enumeration options
+- [NSTextContentManagerEnumerationOptionsNone](../nstextcontentmanagerenumerationoptions/nstextcontentmanagerenumerationoptionsnone.md)
+  The value that represents no custom enumeration handing in text element enumerations.
 
 ## Relationships
 

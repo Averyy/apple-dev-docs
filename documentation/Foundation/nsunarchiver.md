@@ -45,6 +45,10 @@ In macOS 10.2 and later, [`NSArchiver`](./nsarchiver.md) and [`NSUnarchiver`](./
   A Boolean value that indicates whether the receiver has reached the end of the encoded data while decoding.
 - [var systemVersion: UInt32](./nsunarchiver/systemversion-swift.property.md)
   The system version number in effect when the archive was created.
+- [- objectZone](./nsunarchiver/objectzone-c.method.md)
+  Returns the memory zone used to allocate decoded objects.
+- [- setObjectZone:](./nsunarchiver/setobjectzone_.md)
+  Sets the memory zone used to allocate decoded objects.
 ### Substituting classes or objects
 - [class func classNameDecoded(forArchiveClassName: String) -> String](./nsunarchiver/classnamedecoded%28forarchiveclassname%29-swift.type.method.md)
   Returns the name of the class used when instantiating objects whose ostensible class, according to the archived data, is a given name.
@@ -58,6 +62,22 @@ In macOS 10.2 and later, [`NSArchiver`](./nsarchiver.md) and [`NSUnarchiver`](./
   Causes the receiver to substitute one given object for another whenever the latter is extracted from the archive.
 ### Initializers
 - [init?(forReadingWithData: Data)](./nsunarchiver/init%28forreadingwithdata%29.md)
+### Instance Variables
+- [allUnarchivedObjects](./nsunarchiver/allunarchivedobjects.md)
+- [classVersions](./nsunarchiver/classversions.md)
+- [cursor](./nsunarchiver/cursor.md)
+- [datax](./nsunarchiver/datax.md)
+- [lastLabel](./nsunarchiver/lastlabel.md)
+- [map](./nsunarchiver/map.md)
+- [objectZone](./nsunarchiver/objectzone-c.ivar.md)
+- [pointerTable](./nsunarchiver/pointertable.md)
+- [reserved](./nsunarchiver/reserved.md)
+- [streamerVersion](./nsunarchiver/streamerversion.md)
+- [stringTable](./nsunarchiver/stringtable.md)
+- [swap](./nsunarchiver/swap.md)
+- [systemVersion](./nsunarchiver/systemversion-c.ivar.md)
+- [unused1](./nsunarchiver/unused1.md)
+- [unused2](./nsunarchiver/unused2.md)
 
 ## Relationships
 
@@ -78,6 +98,8 @@ In macOS 10.2 and later, [`NSArchiver`](./nsarchiver.md) and [`NSUnarchiver`](./
 ### Deprecated
 - [class NSArchiver](./nsarchiver.md)
   A coder that stores an object’s data to an archive.
+- [NXReadNSObjectFromCoder](./nxreadnsobjectfromcoder.md)
+  Returns the next object from the coder.
 
 
 ---

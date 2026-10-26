@@ -47,6 +47,14 @@ enum vDSP_DCT_Type : int;
 - [Sendable](../Swift/sendable.md)
 - [SendableMetatype](../Swift/sendablemetatype.md)
 
+## See Also
+
+### Discrete Cosine Transforms
+- [vDSP_DCT_CreateSetup](./vdsp_dct_createsetup.md)
+  Builds a data structure that contains precalculated data to perform a discrete cosine transform.
+- [vDSP_DCT_Execute](./vdsp_dct_execute.md)
+  Calculates the discrete cosine transform for a vector.
+
 
 ---
 

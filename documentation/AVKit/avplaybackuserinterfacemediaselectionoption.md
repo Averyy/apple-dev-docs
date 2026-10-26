@@ -40,6 +40,11 @@ This class represents individual media options (such as audio tracks or subtitle
   The language of this media selection option.
 - [var mediaCharacteristics: [AVMediaCharacteristic]](./avplaybackuserinterfacemediaselectionoption/mediacharacteristics.md)
   The media characteristics describing accessibility features and content properties of this option. Common values include `AVMediaCharacteristicContainsOnlyForcedSubtitles`, `AVMediaCharacteristicTranscribesSpokenDialogForAccessibility`, and `AVMediaCharacteristicDescribesMusicAndSoundForAccessibility`. May be empty if no characteristics apply.
+- [extendedLanguageTag](./avplaybackuserinterfacemediaselectionoption/extendedlanguagetag.md)
+  IETF BCP 47 language identifier (e.g., “en-US”, “es-419”, “zh-Hans-CN”) indicating the primary language and locale of this option. This standardized tag provides detailed language information including region, script, and variants. May be empty for language-neutral content such as music-only audio tracks, sound effects, or visual-only subtitles without spoken content.
+### Instance Methods
+- [- initWithDisplayName:identifier:extendedLanguageTag:mediaCharacteristics:](./avplaybackuserinterfacemediaselectionoption/initwithdisplayname_identifier_extendedlanguagetag_mediacharacteristics_.md)
+  Initializes a new media selection option with the specified attributes.
 
 ## Relationships
 
@@ -62,6 +67,8 @@ This class represents individual media options (such as audio tracks or subtitle
 
 ### Media selection
 - [protocol AVPlaybackUserInterfaceMediaSelectionControllable](./avplaybackuserinterfacemediaselectioncontrollable-8ee5z.md)
+  Provides audio and subtitle selection capabilities for media content.
+- [AVPlaybackUserInterfaceMediaSelectionControllable](./avplaybackuserinterfacemediaselectioncontrollable-2fftn.md)
   Provides audio and subtitle selection capabilities for media content.
 
 

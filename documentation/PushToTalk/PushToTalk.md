@@ -61,6 +61,8 @@ The Push to Talk framework is a power-efficient, user-friendly, and privacy-focu
   A string representation of the channel error domain.
 - [let PTInstantiationErrorDomain: String](./ptinstantiationerrordomain.md)
   A string representation of the instantiation error domain.
+### Macros
+- [PT_EXTERN](./pt_extern.md)
 
 
 ---

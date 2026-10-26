@@ -48,6 +48,8 @@ By default, this property is `nil`, specifying that the photo output should not 
   A dictionary describing the format for delivery of raw thumbnail images embedded in photo file output.
 - [var availableEmbeddedThumbnailPhotoCodecTypes: [AVVideoCodecType]](./availableembeddedthumbnailphotocodectypes.md)
   An array of video codec types compatible with the photo settings for embedding thumbnail images in photo file output.
+- [availablePreviewPhotoPixelFormatTypes](./availablepreviewphotopixelformattypes-2vfwu.md)
+  An array of pixel format types compatible with the photo settings for delivery of preview-sized images.
 
 
 ---

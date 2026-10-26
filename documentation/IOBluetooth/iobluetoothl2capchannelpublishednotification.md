@@ -1,0 +1,42 @@
+# IOBluetoothL2CAPChannelPublishedNotification
+
+**Framework**: IOBluetooth  
+**Kind**: var  
+**Role**: Global Variable
+
+**Availability**:
+- macOS
+
+## Declaration
+
+```c
+extern NSString * const IOBluetoothL2CAPChannelPublishedNotification;
+```
+
+## See Also
+
+### Related Documentation
+- [IOBluetoothHostControllerPoweredOffNotification](./iobluetoothhostcontrollerpoweredoffnotification.md)
+- [IOBluetoothHostControllerPoweredOnNotification](./iobluetoothhostcontrollerpoweredonnotification.md)
+- [IOBluetoothL2CAPChannelTerminatedNotification](./iobluetoothl2capchannelterminatednotification.md)
+### Constants
+- [IOBluetoothHostControllerPoweredOffNotification](./iobluetoothhostcontrollerpoweredoffnotification.md)
+- [IOBluetoothHostControllerPoweredOnNotification](./iobluetoothhostcontrollerpoweredonnotification.md)
+- [IOBluetoothL2CAPChannelTerminatedNotification](./iobluetoothl2capchannelterminatednotification.md)
+- [var kFTSProgressPrecentageKey: Unmanaged<CFString>!](./kftsprogressprecentagekey.md)
+- [var kOBEXHeaderIDKeyAppParameters: Unmanaged<CFString>!](./kobexheaderidkeyappparameters.md)
+- [var kOBEXHeaderIDKeyAuthorizationChallenge: Unmanaged<CFString>!](./kobexheaderidkeyauthorizationchallenge.md)
+- [var kOBEXHeaderIDKeyAuthorizationResponse: Unmanaged<CFString>!](./kobexheaderidkeyauthorizationresponse.md)
+- [var kOBEXHeaderIDKeyBody: Unmanaged<CFString>!](./kobexheaderidkeybody.md)
+- [var kOBEXHeaderIDKeyByteSequence: Unmanaged<CFString>!](./kobexheaderidkeybytesequence.md)
+- [var kOBEXHeaderIDKeyConnectionID: Unmanaged<CFString>!](./kobexheaderidkeyconnectionid.md)
+- [var kOBEXHeaderIDKeyCount: Unmanaged<CFString>!](./kobexheaderidkeycount.md)
+- [var kOBEXHeaderIDKeyDescription: Unmanaged<CFString>!](./kobexheaderidkeydescription.md)
+- [var kOBEXHeaderIDKeyEndOfBody: Unmanaged<CFString>!](./kobexheaderidkeyendofbody.md)
+- [var kOBEXHeaderIDKeyHTTP: Unmanaged<CFString>!](./kobexheaderidkeyhttp.md)
+- [var kOBEXHeaderIDKeyLength: Unmanaged<CFString>!](./kobexheaderidkeylength.md)
+
+
+---
+
+*[View on Apple Developer](https://developer.apple.com/documentation/iobluetooth/iobluetoothl2capchannelpublishednotification)*

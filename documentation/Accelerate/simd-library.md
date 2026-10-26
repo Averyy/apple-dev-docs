@@ -14,7 +14,7 @@ simd supports vectors containing up to 16 elements (for single-precision values)
 ## Topics
 
 ### Boolean Scalar Data Type
-- [typealias simd_bool](https://developer.apple.com/documentation/simd/simd_bool)
+- [typealias simd_bool](../simd/simd_bool.md)
   A Boolean scalar value.
 ### Signed Integer Vectors
 - [8-Bit Signed Integer Vectors](./api-8-bit-signed-integer-vectors.md)
@@ -57,13 +57,13 @@ simd supports vectors containing up to 16 elements (for single-precision values)
   Rotate points around the surface of a sphere, and interpolate between them.
 - [Rotating a cube by transforming its vertices](./rotating-a-cube-by-transforming-its-vertices.md)
   Rotate a cube through a series of keyframes using quaternion interpolation to transition between them.
-- [struct simd_quatf](https://developer.apple.com/documentation/simd/simd_quatf)
+- [struct simd_quatf](../simd/simd_quatf.md)
   A single-precision quaternion.
-- [struct simd_quatd](https://developer.apple.com/documentation/simd/simd_quatd)
+- [struct simd_quatd](../simd/simd_quatd.md)
   A double-precision quaternion.
 ### Constants
-- [var SIMD_COMPILER_HAS_REQUIRED_FEATURES: Int32](https://developer.apple.com/documentation/simd/simd_compiler_has_required_features)
-- [var SIMD_LIBRARY_VERSION: Int32](https://developer.apple.com/documentation/simd/simd_library_version)
+- [var SIMD_COMPILER_HAS_REQUIRED_FEATURES: Int32](../simd/simd_compiler_has_required_features.md)
+- [var SIMD_LIBRARY_VERSION: Int32](../simd/simd_library_version.md)
 ### Macros
 - [simd Macros](./simd-macros.md)
 

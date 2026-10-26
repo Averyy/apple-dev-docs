@@ -122,6 +122,13 @@ Keys to use with persistent stores and notifications from Core Data.
 - [let NSPersistentStoreRemoteChangeNotificationPostOptionKey: String](./nspersistentstoreremotechangenotificationpostoptionkey.md)
   A key that indicates a persistent store posts a remote change notification for every write to the store, including writes by other processes.
 - [let NSPersistentStoreModelVersionChecksumKey: String](./nspersistentstoremodelversionchecksumkey.md)
+### Notifications
+- [NSPersistentStoreCoordinatorStoresDidChangeNotification](./nspersistentstorecoordinatorstoresdidchangenotification.md)
+  A notification that the coordinator posts after its registered stores change.
+- [NSPersistentStoreCoordinatorStoresWillChangeNotification](./nspersistentstorecoordinatorstoreswillchangenotification.md)
+  A notification that posts before a coordinator changes its registered stores.
+- [NSPersistentStoreCoordinatorWillRemoveStoreNotification](./nspersistentstorecoordinatorwillremovestorenotification.md)
+  A notification that posts before a coordinator removes a store.
 
 
 ---

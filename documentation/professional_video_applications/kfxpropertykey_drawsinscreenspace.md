@@ -31,6 +31,8 @@ This property indicates that the drawing space behaves as if the layer its appli
 - [var kFxPropertyKey_PixelTransformSupport: String](./kfxpropertykey_pixeltransformsupport.md)
   A key in the `properties` dictionary in the `FXBaseEffect` Class that corresponds to an `NSNumber` containing one of the `FxImage` values. The default value is [`kFxPixelTransform_ScaleTranslate`](./kfxpixeltransform_scaletranslate.md)
 - [var kFxPropertyKey_UsesNonmatchingTextureLayout: String](./kfxpropertykey_usesnonmatchingtexturelayout.md)
+- [PluginManagerVersionNumber](./pluginmanagerversionnumber.md)
+- [PluginManagerVersionString](./pluginmanagerversionstring.md)
 
 
 ---

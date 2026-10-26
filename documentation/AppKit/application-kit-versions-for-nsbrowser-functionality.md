@@ -5,6 +5,14 @@
 
 The version of the AppKit.framework containing a specific bug fix or capability.
 
+## Topics
+
+### Constants
+- [NSAppKitVersionNumberWithContinuousScrollingBrowser](./nsappkitversionnumberwithcontinuousscrollingbrowser.md)
+  The specific version of the AppKit framework that introduced support the continuous scrolling in a browser view.
+- [NSAppKitVersionNumberWithColumnResizingBrowser](./nsappkitversionnumberwithcolumnresizingbrowser.md)
+  The specific version of the AppKit framework that introduced support for resizing individual browser columns.
+
 ## See Also
 
 ### Constants

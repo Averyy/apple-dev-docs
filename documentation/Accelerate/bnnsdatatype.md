@@ -59,6 +59,20 @@ typedef enum { ... } BNNSDataType;
 - [static var uint16: BNNSDataType](./bnnsdatatype/uint16.md)
 - [static var uint32: BNNSDataType](./bnnsdatatype/uint32.md)
 - [static var uint8: BNNSDataType](./bnnsdatatype/uint8.md)
+### Enumeration Cases
+- [BNNSDataTypeFloat16](./bnnsdatatype/bnnsdatatypefloat16.md)
+- [BNNSDataTypeFloat32](./bnnsdatatype/bnnsdatatypefloat32.md)
+- [BNNSDataTypeFloatBit](./bnnsdatatype/bnnsdatatypefloatbit.md)
+- [BNNSDataTypeIndexed8](./bnnsdatatype/bnnsdatatypeindexed8.md)
+- [BNNSDataTypeIndexedBit](./bnnsdatatype/bnnsdatatypeindexedbit.md)
+- [BNNSDataTypeInt16](./bnnsdatatype/bnnsdatatypeint16.md)
+- [BNNSDataTypeInt32](./bnnsdatatype/bnnsdatatypeint32.md)
+- [BNNSDataTypeInt8](./bnnsdatatype/bnnsdatatypeint8.md)
+- [BNNSDataTypeIntBit](./bnnsdatatype/bnnsdatatypeintbit.md)
+- [BNNSDataTypeUInt16](./bnnsdatatype/bnnsdatatypeuint16.md)
+- [BNNSDataTypeUInt32](./bnnsdatatype/bnnsdatatypeuint32.md)
+- [BNNSDataTypeUInt8](./bnnsdatatype/bnnsdatatypeuint8.md)
+- [BNNSDataTypeUIntBit](./bnnsdatatype/bnnsdatatypeuintbit.md)
 
 ## Relationships
 

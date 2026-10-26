@@ -41,6 +41,8 @@ Note: the new speech rate should be expressed as an integer (nota fixed point de
   Sets the value of the specified speech-channel property.
 - [func SetSpeechPitch(SpeechChannel, Fixed) -> OSErr](./api-1462674-setspeechpitch.md)
   Sets the speech pitch on a designated speech channel.
+- [SetSpeechInfo](./api-1552223-setspeechinfo.md)
+  Changes a setting of a particular speech channel.
 
 
 ---

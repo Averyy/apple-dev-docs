@@ -72,7 +72,7 @@ You can encode resources into argument buffers using the following types:
 - [`MTLBuffer`](./mtlbuffer.md)
 - [`MTLTexture`](./mtltexture.md)
 - [`MTLSamplerState`](./mtlsamplerstate.md)
-- [`simd_float1`](https://developer.apple.com/documentation/simd/simd_float1), [`simd_float4`](https://developer.apple.com/documentation/simd/simd_float4), and other inlined constant data
+- [`simd_float1`](../simd/simd_float1.md), [`simd_float4`](../simd/simd_float4.md), and other inlined constant data
 - [`MTLAccelerationStructure`](./mtlaccelerationstructure.md)
 - [`MTLIndirectCommandBuffer`](./mtlindirectcommandbuffer.md)
 - [`MTLComputePipelineState`](./mtlcomputepipelinestate.md)

@@ -26,6 +26,8 @@ class MTLAccelerationStructurePassSampleBufferAttachmentDescriptorArray
 
 ### Subscripts
 - [subscript(Int) -> MTLAccelerationStructurePassSampleBufferAttachmentDescriptor!](./mtlaccelerationstructurepasssamplebufferattachmentdescriptorarray/subscript%28_%29.md)
+### Instance Methods
+- [- setObject:atIndexedSubscript:](./mtlaccelerationstructurepasssamplebufferattachmentdescriptorarray/setobject_atindexedsubscript_.md)
 
 ## Relationships
 

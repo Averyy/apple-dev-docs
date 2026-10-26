@@ -43,6 +43,8 @@ If you assign a handler to the [`completionBlock`](../Foundation/operation/compl
   Creates an operation for modifying the specified record zones.
 - [init()](./ckmodifyrecordzonesoperation/init%28%29.md)
   Creates an empty modify record zones operation.
+- [- initWithRecordZonesToSave:recordZoneIDsToDelete:](./ckmodifyrecordzonesoperation/initwithrecordzonestosave_recordzoneidstodelete_.md)
+  Creates an operation for modifying the specified record zones.
 ### Configuring the Modify Zones Operation
 - [var recordZonesToSave: [CKRecordZone]?](./ckmodifyrecordzonesoperation/recordzonestosave.md)
   The record zones to save to the database.
@@ -57,6 +59,10 @@ If you assign a handler to the [`completionBlock`](../Foundation/operation/compl
 - [var perRecordZoneDeleteBlock: ((CKRecordZone.ID, Result<Void, any Error>) -> Void)?](./ckmodifyrecordzonesoperation/perrecordzonedeleteblock-6c82y.md)
   The closure to execute when CloudKit deletes a record zone.
 - [var perRecordZoneSaveBlock: ((CKRecordZone.ID, Result<CKRecordZone, any Error>) -> Void)?](./ckmodifyrecordzonesoperation/perrecordzonesaveblock-1m45y.md)
+  The closure to execute when CloudKit saves a record zone.
+- [perRecordZoneDeleteBlock](./ckmodifyrecordzonesoperation/perrecordzonedeleteblock-27i5g.md)
+  The closure to execute when CloudKit deletes a record zone.
+- [perRecordZoneSaveBlock](./ckmodifyrecordzonesoperation/perrecordzonesaveblock-3txst.md)
   The closure to execute when CloudKit saves a record zone.
 
 ## Relationships

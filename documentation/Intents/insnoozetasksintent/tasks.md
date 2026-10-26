@@ -40,6 +40,8 @@ var tasks: [INTask]? { get }
   The next time after the current time that triggers a task to snooze.
 - [var all: Bool?](./all-spsb.md)
   A Boolean value that indicates whether to snooze all of the tasks.
+- [all](./all-62ujw.md)
+  A Boolean value that indicates whether to snooze all of the tasks.
 
 
 ---

@@ -45,6 +45,10 @@ If the audio channel layout object’s tag is [`kAudioChannelLayoutTag_UseChanne
 ### Creating an audio channel layout
 - [convenience init?(layoutTag: AudioChannelLayoutTag)](./init%28layouttag%29.md)
   Creates an audio channel layout object from a layout tag.
+- [+ layoutWithLayout:](./layoutwithlayout_.md)
+  Creates an audio channel layout object from an existing one.
+- [+ layoutWithLayoutTag:](./layoutwithlayouttag_.md)
+  Creates an audio channel layout object from an audio channel layout tag.
 
 
 ---

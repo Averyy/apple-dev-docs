@@ -26,6 +26,7 @@ protocol UIPopoverPresentationControllerSourceItem : NSObjectProtocol
 
 ### Instance Methods
 - [func frame(in: UIView) -> CGRect?](./uipopoverpresentationcontrollersourceitem/frame%28in%29.md)
+- [- frameInView:](./uipopoverpresentationcontrollersourceitem/frameinview_.md)
 
 ## Relationships
 

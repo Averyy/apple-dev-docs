@@ -33,6 +33,8 @@ protocol PDEPanel
 - [func summaryInfo() -> [String : String]?](./pdepanel/api-3930830-summaryinfo.md)
 - [func supportedPPDOptionKeys() -> [String]?](./pdepanel/api-3930831-supportedppdoptionkeys.md)
 - [func willShow()](./pdepanel/api-3930832-willshow.md)
+- [- restoreValuesAndReturnError:](./pdepanel/api-3930825-restorevaluesandreturnerror.md)
+- [- saveValuesAndReturnError:](./pdepanel/api-3930826-savevaluesandreturnerror.md)
 
 ## Relationships
 

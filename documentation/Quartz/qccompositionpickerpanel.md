@@ -29,6 +29,9 @@ class QCCompositionPickerPanel
 ### Getting the Picker Panel View
 - [func compositionPickerView() -> QCCompositionPickerView!](./qccompositionpickerpanel/compositionpickerview%28%29.md)
   Returns the composition picker view used by the panel so that it can be configured.
+### Notifications
+- [QCCompositionPickerPanelDidSelectCompositionNotification](./qccompositionpickerpaneldidselectcompositionnotification.md)
+  Posted when the user chooses a composition.
 
 ## Relationships
 

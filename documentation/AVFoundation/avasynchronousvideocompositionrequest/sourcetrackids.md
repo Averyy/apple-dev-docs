@@ -43,6 +43,12 @@ var sourceTrackIDs: [NSNumber] { get }
   Returns the source tagged dynamic buffers for the given track ID. Returns nil if the video track does not contain tagged buffers, or if the track does not contain video. This function should only be called when supportsSourceTaggedBuffers is YES.
 - [func sourceTimedMetadata(byTrackID: CMPersistentTrackID) -> AVTimedMetadataGroup?](./sourcetimedmetadata%28bytrackid%29.md)
   Returns a source timed metadata group for the track that contains the specified identifier.
+- [- attachSpatialVideoConfiguration:toPixelBuffer:](./attachspatialvideoconfiguration_topixelbuffer_.md)
+  Associates the pixel buffer with the specified spatial configuration.
+- [sourceSampleDataTrackIDs](./sourcesampledatatrackids-9vxz5.md)
+  The identifiers of tracks that contain source metadata.
+- [- sourceTaggedBufferGroupByTrackID:](./sourcetaggedbuffergroupbytrackid_.md)
+  Returns the source CMTaggedBufferGroupRef for the given track ID.
 
 
 ---

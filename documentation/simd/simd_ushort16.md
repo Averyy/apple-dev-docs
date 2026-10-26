@@ -41,6 +41,8 @@ typedef unsigned short __attribute__((ext_vector_type(16))) simd_ushort16;
   Returns a new vector from the specified four-element vector, and other elements undefined.
 - [func simd_make_ushort16_undef(simd_ushort8) -> simd_ushort16](./simd_make_ushort16_undef%28_%29-957cx.md)
   Returns a new vector from the specified eight-element vector, and other elements undefined.
+- [vector16](./vector16-4zacu.md)
+  Returns a new vector from the specified vectors.
 ### Functions to Create Sixteen-Element Vectors From Scalar Values
 - [func simd_make_ushort16(UInt16) -> simd_ushort16](./simd_make_ushort16%28_%29-6sqah.md)
   Returns a new vector with the first element set to a scalar value, and other elements set to zero.
@@ -70,6 +72,36 @@ typedef unsigned short __attribute__((ext_vector_type(16))) simd_ushort16;
   Returns a vector that contains elements from either the first or second parameter, based on the corresponding element in the third parameter.
 ### Alternative Type Alias
 - [typealias vector_ushort16](./vector_ushort16.md)
+### Functions to Create Sixteen-Element Vectors From Vectors of Other Types
+- [simd_ushort](./simd_ushort-46anm.md)
+  Returns a new vector from the specified vector of 8-bit, signed integer elements.
+- [simd_ushort](./simd_ushort-46khe.md)
+  Returns a new vector from the specified vector of 8-bit, unsigned integer elements.
+- [simd_ushort](./simd_ushort-465ki.md)
+  Returns a new vector from the specified vector of 16-bit, signed integer elements.
+- [simd_ushort](./simd_ushort-46foy.md)
+  Returns a new vector from the specified vector of 16-bit, unsigned integer elements.
+- [simd_ushort](./simd_ushort-468rq.md)
+  Returns a new vector from the specified vector of 32-bit, signed integer elements.
+- [simd_ushort](./simd_ushort-46ism.md)
+  Returns a new vector from the specified vector of 32-bit, unsigned integer elements.
+- [simd_ushort](./simd_ushort-46ivu.md)
+  Returns a new vector from the specified vector of 32-bit, floating-point elements.
+### Functions to Perform Saturating Conversion From Vectors of Other Types
+- [simd_ushort_sat](./simd_ushort_sat-3mcov.md)
+  Returns a new vector from the specified vector of 8-bit, signed integer elements.
+- [simd_ushort_sat](./simd_ushort_sat-3mmin.md)
+  Returns a new vector from the specified vector of 8-bit, unsigned integer elements.
+- [simd_ushort_sat](./simd_ushort_sat-3m7r3.md)
+  Returns a new vector from the specified vector of 16-bit, signed integer elements.
+- [simd_ushort_sat](./simd_ushort_sat-3mhof.md)
+  Returns a new vector from the specified vector of 16-bit, unsigned integer elements.
+- [simd_ushort_sat](./simd_ushort_sat-3m9j7.md)
+  Returns a new vector from the specified vector of 32-bit, signed integer elements.
+- [simd_ushort_sat](./simd_ushort_sat-3mjb7.md)
+  Returns a new vector from the specified vector of 32-bit, unsigned integer elements.
+- [simd_ushort_sat](./simd_ushort_sat-3mlfl.md)
+  Returns a new vector from the specified vector of 32-bit, floating-point elements.
 
 ## See Also
 

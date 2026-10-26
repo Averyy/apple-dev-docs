@@ -60,6 +60,8 @@ If this error occurs during development, make sure the app includes a file provi
   An error indicating that the item contains unsynced changes.
 - [NSFileProviderError.Code.cannotSynchronize](./cannotsynchronize.md)
   An error indicating a failed sync attempt.
+- [NSFileProviderErrorDeletionRejected](./deletionrejected.md)
+  An error indicating a failed deletion action.
 
 
 ---

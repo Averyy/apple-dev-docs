@@ -37,6 +37,9 @@ enum MTLBlitOption : NSUInteger;
 ### Swift support
 - [init(rawValue: UInt)](./mtlblitoption/init%28rawvalue%29.md)
   Creates a blit option from a raw value.
+### Clearing options
+- [MTLBlitOptionNone](./mtlblitoption/mtlblitoptionnone.md)
+  A blit option that clears other blit options, which removes any optional behavior for a blit operation.
 
 ## Relationships
 

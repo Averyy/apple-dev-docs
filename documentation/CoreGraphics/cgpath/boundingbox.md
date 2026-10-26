@@ -42,6 +42,10 @@ The bounding box is the smallest rectangle completely enclosing all points in th
   Indicates whether or not a graphics path is empty.
 - [func isRect(UnsafeMutablePointer<CGRect>?) -> Bool](./isrect%28_%29.md)
   Indicates whether or not a graphics path represents a rectangle.
+- [CGPathEqualToPath](../cgpathequaltopath.md)
+  Indicates whether two graphics paths are equivalent.
+- [CGPathContainsPoint](../cgpathcontainspoint.md)
+  Checks whether a point is contained in a graphics path.
 
 
 ---

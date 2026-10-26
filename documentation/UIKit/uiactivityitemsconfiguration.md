@@ -34,6 +34,10 @@ class UIActivityItemsConfiguration
   Initializes and returns an activity items configuration with the specified objects.
 - [init(itemProviders: [NSItemProvider])](./uiactivityitemsconfiguration/init%28itemproviders%29.md)
   Initializes and returns an activity items configuration with the specified item providers.
+- [+ activityItemsConfigurationWithObjects:](./uiactivityitemsconfiguration/activityitemsconfigurationwithobjects_.md)
+  Creates an activity items configuration with the specified objects.
+- [+ activityItemsConfigurationWithItemProviders:](./uiactivityitemsconfiguration/activityitemsconfigurationwithitemproviders_.md)
+  Creates an activity items configuration with the specified item providers.
 ### Managing the configuration
 - [var localObject: Any?](./uiactivityitemsconfiguration/localobject.md)
   A local object that represents the configuration.

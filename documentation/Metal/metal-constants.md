@@ -15,6 +15,8 @@
 - [Metal enumerations](./metal-enumerations.md)
 - [Metal data types](./metal-data-types.md)
 - [Metal variables](./metal-variables.md)
+- [Metal functions](./metal-functions.md)
+- [Metal macros](./metal-macros.md)
 
 
 ---

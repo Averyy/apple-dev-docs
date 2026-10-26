@@ -74,6 +74,8 @@ When you execute commands on the GPU, those commands can only affect memory allo
 ### Querying the allocated size
 - [var allocatedSize: Int](./mtlresource/allocatedsize.md)
   The size of the resource, in bytes.
+### Instance Methods
+- [- setOwnerWithIdentity:](./mtlresource/setownerwithidentity_.md)
 
 ## Relationships
 

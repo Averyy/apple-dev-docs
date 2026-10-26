@@ -41,6 +41,8 @@ var COREAUDIOTYPES_VERSION: Int32 { get }
 - [typealias AudioUnitSampleType](./audiounitsampletype.md)
   The canonical audio data sample type for audio processing.
 - [struct AudioFormatListItem](./audioformatlistitem.md)
+- [AVAudioSessionErrorInsufficientPriority](./avaudiosessionerrorinsufficientpriority.md)
+  An error code that indicates the app isn’t allowed to set the audio category because it’s in use by another app.
 
 
 ---

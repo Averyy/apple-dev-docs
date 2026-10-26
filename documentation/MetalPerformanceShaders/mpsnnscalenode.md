@@ -29,6 +29,9 @@ class MPSNNScaleNode
 ### Initializers
 - [init(source: MPSNNImageNode, outputSize: MTLSize)](./mpsnnscalenode/init%28source,outputsize%29.md)
 - [init(source: MPSNNImageNode, transformProvider: (any MPSImageTransformProvider)?, outputSize: MTLSize)](./mpsnnscalenode/init%28source,transformprovider,outputsize%29.md)
+### Type Methods
+- [+ nodeWithSource:outputSize:](./mpsnnscalenode/nodewithsource_outputsize_.md)
+- [+ nodeWithSource:transformProvider:outputSize:](./mpsnnscalenode/nodewithsource_transformprovider_outputsize_.md)
 
 ## Relationships
 

@@ -40,6 +40,13 @@ class METrackInfo
   The frame rate of the track in frames per second, as a 32-bit floating point number.
 - [var requiresFrameReordering: Bool](./metrackinfo/requiresframereordering.md)
   A Boolean value that indicates whether frame reordering occurs in the track.
+- [formatDescriptions](./metrackinfo/formatdescriptions.md)
+  An array of format descriptions for the track.
+- [trackEdits](./metrackinfo/trackedits.md)
+  An array of edit segments for the given track.
+### Creating track info objects
+- [- initWithMediaType:trackID:formatDescriptions:](./metrackinfo/initwithmediatype_trackid_formatdescriptions_.md)
+  Creates a new track info object with the media type, track ID, and format descriptions that you specify.
 
 ## Relationships
 

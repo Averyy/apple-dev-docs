@@ -30,6 +30,7 @@ Enough data has been buffered for playback to continue uninterrupted.
 ### Constants
 - [static var playable: MPMovieLoadState](./playable.md)
 - [static var stalled: MPMovieLoadState](./stalled.md)
+- [MPMovieLoadStateUnknown](./mpmovieloadstateunknown.md)
 
 
 ---

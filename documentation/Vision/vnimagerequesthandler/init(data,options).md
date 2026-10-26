@@ -57,6 +57,18 @@ The intended use cases of this type of initializer include compressed images and
 - [init(CVPixelBuffer: CVPixelBuffer, depthData: AVDepthData, orientation: CGImagePropertyOrientation, options: [VNImageOption : Any])](./init%28cvpixelbuffer,depthdata,orientation,options%29-3u960.md)
 - [init(cvPixelBuffer: CVPixelBuffer, depthData: AVDepthData, orientation: CGImagePropertyOrientation, options: [VNImageOption : Any])](./init%28cvpixelbuffer,depthdata,orientation,options%29-3mj2d.md)
 - [init(CMSampleBuffer: CMSampleBuffer, options: [VNImageOption : Any])](./init%28cmsamplebuffer,options%29-4mpwd.md)
+- [- initWithCMSampleBuffer:options:](./init%28cmsamplebuffer,options%29-2yodn.md)
+  Creates a request handler that performs requests on an image contained within a sample buffer.
+- [- initWithCMSampleBuffer:orientation:options:](./init%28cmsamplebuffer,orientation,options%29-335k4.md)
+  Creates a request handler that performs requests on an image of a specified orientation contained within a sample buffer.
+- [- initWithCMSampleBuffer:depthData:orientation:options:](./init%28cmsamplebuffer,depthdata,orientation,options%29-8bjyh.md)
+  Creates a request handler that performs requests on an image in a sample buffer that contains depth data.
+- [- initWithData:orientation:options:](./init%28data,orientation,options%29.md)
+  Creates a handler to use for performing requests on an image of known orientation.
+- [- initWithURL:options:](./init%28url,options%29-4k623.md)
+  Creates a handler to be used for performing requests on an image at the specified URL.
+- [- initWithURL:orientation:options:](./init%28url,orientation,options%29-70nta.md)
+  Creates a handler to be used for performing requests on an image with known orientation, at the specified URL.
 
 
 ---

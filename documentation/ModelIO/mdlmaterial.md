@@ -71,6 +71,8 @@ Sets of certain material properties called *scattering functions* determine the 
   Loads textures using resolver for string paths and NSURLs.
 - [func resolveTextures(with: any MDLAssetResolver)](./mdlmaterial/resolvetextures%28with%29.md)
   Resolves all texture string paths as NSURLs with resolver.
+### Type Methods
+- [+ materialWithSCNMaterial:](./mdlmaterial/materialwithscnmaterial_.md)
 
 ## Relationships
 

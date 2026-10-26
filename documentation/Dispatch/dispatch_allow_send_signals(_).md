@@ -21,6 +21,11 @@ func dispatch_allow_send_signals(_ preserve_signum: Int32) -> Int32
 extern int dispatch_allow_send_signals(int preserve_signum);
 ```
 
+## See Also
+
+### Functions
+- [dispatch_workloop_set_os_workgroup](./dispatch_workloop_set_os_workgroup.md)
+
 
 ---
 

@@ -21,6 +21,8 @@ static simd_short3 simd_make_short3(simd_short2 xy, short z);
 ### Functions to Create Three-Element Vectors From Combinations of Vectors and Scalar Values
 - [func simd_make_short3(Int16, simd_short2) -> simd_short3](./simd_make_short3%28_,_%29-9bk9v.md)
   Returns a new vector from a scalar value and a vector.
+- [vector3](./vector3-3833i.md)
+  Returns a new vector from a vector and a scalar value.
 
 
 ---

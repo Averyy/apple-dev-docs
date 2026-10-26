@@ -67,6 +67,10 @@ For designing Game Center features in your app, see [Human Interface Guidelines 
   A notification that posts after GameKit authenticates the local player.
 - [static let GKPlayerDidChangeNotificationName: NSNotification.Name](../Foundation/nsnotification/name-swift.struct/gkplayerdidchangenotificationname.md)
   A notification that posts when a player object’s data changes.
+- [GKPlayerAuthenticationDidChangeNotificationName](./gkplayerauthenticationdidchangenotificationname.md)
+  A notification that posts after GameKit initializes the local player.
+- [GKPlayerDidChangeNotificationName](./gkplayerdidchangenotificationname.md)
+  A notification that posts when a player object’s data changes.
 ### Game Center interfaces
 - [Adding an access point to your game](./adding-an-access-point-to-your-game.md)
   Provide your users a convenient connection to the Game Center dashboard.
@@ -174,6 +178,10 @@ For designing Game Center features in your app, see [Human Interface Guidelines 
 ### Deprecated
 - [Deprecated symbols](./deprecated-symbols.md)
   Review unsupported symbols and their replacements.
+### Macros
+- [GKDialogController_h](./gkdialogcontroller_h.md)
+- [GK_EXTERN](./gk_extern.md)
+- [GK_EXTERN_WEAK](./gk_extern_weak.md)
 
 
 ---

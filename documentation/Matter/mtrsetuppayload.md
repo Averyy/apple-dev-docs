@@ -59,6 +59,7 @@ class MTRSetupPayload
 - [func qrCodeString(NSErrorPointer) -> String?](./mtrsetuppayload/qrcodestring%28_%29.md)
 - [func removeVendorElement(withTag: NSNumber)](./mtrsetuppayload/removevendorelement%28withtag%29.md)
 - [func vendorElement(withTag: NSNumber) -> MTROptionalQRCodeInfo?](./mtrsetuppayload/vendorelement%28withtag%29.md)
+- [- init](./mtrsetuppayload/init.md)
 ### Type Methods
 - [class func generateRandomPIN() -> Int](./mtrsetuppayload/generaterandompin%28%29.md)
 - [class func generateRandomSetupPasscode() -> NSNumber](./mtrsetuppayload/generaterandomsetuppasscode%28%29.md)

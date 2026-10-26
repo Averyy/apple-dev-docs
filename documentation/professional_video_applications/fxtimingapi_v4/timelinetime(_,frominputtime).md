@@ -22,11 +22,11 @@ func timelineTime(_ timelineTime: UnsafeMutablePointer<CMTime>!, fromInputTime t
 
 ## Mentions
 
-- [Understanding time in FxPlug](https://developer.apple.com/documentation/professional-video-applications/understanding-time-in-fxplug)
+- [Understanding time in FxPlug](../../Professional-Video-Applications/understanding-time-in-fxplug.md)
 
 #### Discussion
 
-In Motion, this timeline time and input time are always equal. In Final Cut Pro, this will provides the calculated timeline time for any given input time. For more information about how to handle time conversion, see [Understanding time in FxPlug](https://developer.apple.com/documentation/professional-video-applications/understanding-time-in-fxplug).
+In Motion, this timeline time and input time are always equal. In Final Cut Pro, this will provides the calculated timeline time for any given input time. For more information about how to handle time conversion, see [Understanding time in FxPlug](../../Professional-Video-Applications/understanding-time-in-fxplug.md).
 
 ## Parameters
 

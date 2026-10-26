@@ -94,6 +94,10 @@ In addition to registering your app’s alert types, you can also use this class
   A view that embeds web content in your app.
 - [class UIUserNotificationAction](./uiusernotificationaction.md)
   A custom action that your app can perform in response to a remote or local notification.
+- [UIAcceleration](./uiacceleration.md)
+  An acceleration event that represents immediate, three-dimensional acceleration data.
+- [UIAccelerometer](./uiaccelerometer.md)
+  An object that lets you register to receive acceleration-related data from the onboard hardware.
 
 
 ---

@@ -26,6 +26,7 @@ typedef struct NSDirectionalEdgeInsets { ... } NSDirectionalEdgeInsets;
   Creates a directional edge insets structure that contains default values.
 - [init(top: CGFloat, leading: CGFloat, bottom: CGFloat, trailing: CGFloat)](./nsdirectionaledgeinsets/init%28top,leading,bottom,trailing%29.md)
   Creates a directional edge insets structure that contains the specified values.
+- [NSDirectionalEdgeInsetsMake](./nsdirectionaledgeinsetsmake.md)
 ### Getting the edge values
 - [var bottom: CGFloat](./nsdirectionaledgeinsets/bottom.md)
   The bottom edge inset value.

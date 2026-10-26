@@ -36,6 +36,9 @@ protocol ICScannerDeviceDelegate : ICDeviceDelegate
   Tells the client when the scanner receives the requested scan progress notification and a band of data is sent for each notification received.
 - [func scannerDevice(ICScannerDevice, didScanTo: URL)](./icscannerdevicedelegate/scannerdevice%28_,didscanto%29-10whl.md)
   Tells the client when the scanner receives the requested scan.
+### Deprecated
+- [- scannerDevice:didScanToURL:data:](./icscannerdevicedelegate/scannerdevice_didscantourl_data_.md)
+  Tells the client when the scanner device receives the requested scan.
 
 ## Relationships
 

@@ -40,6 +40,8 @@ Use this method to create a result object when you are able to resolve a paramet
 ### Creating a Resolution Result Object
 - [class func confirmationRequired(with: INCarSignalOptions) -> Self](./confirmationrequired%28with%29.md)
   Creates a resolution object that requires confirmation of the provided value.
+- [+ successWithResolvedValue:](./successwithresolvedvalue_.md)
+- [+ confirmationRequiredWithValueToConfirm:](./confirmationrequiredwithvaluetoconfirm_.md)
 
 
 ---

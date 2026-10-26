@@ -30,6 +30,8 @@ class MPSCNNConvolutionTransposeNode
 - [protocol MPSCNNConvolutionDataSource](./mpscnnconvolutiondatasource.md)
   The protocol that provides convolution filter weights and bias terms.
 - [init(source: MPSNNImageNode, convolutionGradientState: MPSCNNConvolutionGradientStateNode?, weights: any MPSCNNConvolutionDataSource)](./mpscnnconvolutiontransposenode/init%28source,convolutiongradientstate,weights%29.md)
+### Type Methods
+- [+ nodeWithSource:convolutionGradientState:weights:](./mpscnnconvolutiontransposenode/nodewithsource_convolutiongradientstate_weights_.md)
 
 ## Relationships
 

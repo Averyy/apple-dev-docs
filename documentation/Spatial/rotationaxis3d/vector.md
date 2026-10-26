@@ -36,6 +36,12 @@ simd_double3 vector;
   The z-coordinate value.
 - [var isZero: Bool](./iszero.md)
   A Boolean value that indicates whether the rotation axis is zero.
+- [x](../sprotationaxis3d/x.md)
+  The x-axis value.
+- [y](../sprotationaxis3d/y.md)
+  The y-axis value.
+- [z](../sprotationaxis3d/z.md)
+  The z-axis value.
 
 
 ---

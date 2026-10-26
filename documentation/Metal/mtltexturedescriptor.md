@@ -85,6 +85,8 @@ When you create a texture, Metal copies property values from the descriptor into
   The dimension of each image, including whether multiple images are arranged into an array or a cube.
 - [struct MTLTextureUsage](./mtltextureusage.md)
   An enumeration for the various options that determine how you can use a texture.
+- [MTLTextureSwizzleChannelsMake](./mtltextureswizzlechannelsmake.md)
+  Creates a new swizzle pattern.
 ### Instance Properties
 - [var compressionType: MTLTextureCompressionType](./mtltexturedescriptor/compressiontype.md)
 - [var placementSparsePageSize: MTLSparsePageSize](./mtltexturedescriptor/placementsparsepagesize.md)

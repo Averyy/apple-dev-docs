@@ -19,6 +19,14 @@ var level: Str32
 Str32 level;
 ```
 
+## See Also
+
+### Fields
+- [version](./api-1459038-version.md)
+  Specifies the version of the imaging language.
+- [release](./api-1459131-release.md)
+  Specifies the release of the imaging language.
+
 
 ---
 

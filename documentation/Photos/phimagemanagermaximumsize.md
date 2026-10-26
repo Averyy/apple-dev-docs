@@ -35,6 +35,8 @@ When you use the [`PHImageManagerMaximumSize`](./phimagemanagermaximumsize.md) o
   Requests an image representation for the specified asset.
 - [func requestImageDataAndOrientation(for: PHAsset, options: PHImageRequestOptions?, resultHandler: (Data?, String?, CGImagePropertyOrientation, [AnyHashable : Any]?) -> Void) -> PHImageRequestID](./phimagemanager/requestimagedataandorientation%28for,options,resulthandler%29.md)
   Requests the largest represented image as data bytes and Exif orientation for the specified asset.
+- [- requestImageDataForAsset:options:resultHandler:](./phimagemanager/requestimagedataforasset_options_resulthandler_.md)
+  Requests full-sized image data for the specified asset.
 
 
 ---

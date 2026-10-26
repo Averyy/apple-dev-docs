@@ -35,6 +35,8 @@ The corresponding MSL function needs to contain the `world_space_data` tag in it
   A flag indicating that function signature uses instancing.
 - [static var triangleData: MTLIntersectionFunctionSignature](./triangledata.md)
   A flag indicating that function signature uses triangle data.
+- [MTLIntersectionFunctionSignatureNone](./mtlintersectionfunctionsignaturenone.md)
+  A constant indicating that the function uses the default signature.
 
 
 ---

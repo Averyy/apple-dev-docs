@@ -38,6 +38,8 @@ This method automatically determines the script for the specified language. For 
 ### Creating Orthography Objects
 - [init(dominantScript: String, languageMap: [String : [String]])](./init%28dominantscript,languagemap%29.md)
   Creates an orthography object with the specified dominant script and language map.
+- [+ orthographyWithDominantScript:languageMap:](./orthographywithdominantscript_languagemap_.md)
+  Creates and returns an orthography object with the specified dominant script and language map.
 
 
 ---

@@ -1,0 +1,111 @@
+# vDSP_vrampmuladd
+
+**Framework**: Accelerate  
+**Kind**: func  
+**Role**: Function
+
+Adds a single-precision vector that contains monotonically incrementing or decrementing values, and multiplies that vector by a source vector.
+
+**Availability**:
+- iOS 4.0+
+- iPadOS 4.0+
+- Mac Catalyst 13.1+
+- macOS 10.6+
+- tvOS
+- visionOS 1.0+
+- watchOS 2.0+
+
+## Declaration
+
+```c
+void vDSP_vrampmuladd(const float *__I, vDSP_Stride __IS, float *__Start, const float *__Step, float *__O, vDSP_Stride __OS, vDSP_Length __N);
+```
+
+#### Discussion
+
+Use this function to generate and return a vector populated with ramped values with each element multiplied by the corresponding element in a second vector. This function is similar to [`vDSP_vrampmul`](./vdsp_vrampmul.md) but adds the result to the output vector.
+
+The following code generates a ramped vector with values in the range `0 ... 7`. The function multiplies elements at even indices by `10` and multiplies elements at odd indices by `100`, and adds the ramp values to the existing values in the output buffer:
+
+**Swift**:
+
+```swift
+    let n = 8
+    let stride = 1
+    
+    var initialValue: Float = 0
+    var increment: Float = 1
+    
+    let ramp = [Float](unsafeUninitializedCapacity: n) {
+        buffer, initializedCount in
+        
+        for i in 0 ..< n {
+            buffer[i] = 1000
+        }
+        
+        vDSP_vrampmuladd([10, 100, 10, 100, 10, 100, 10, 100],
+                      stride,
+                      &initialValue,
+                      &increment,
+                      buffer.baseAddress!,
+                      stride,
+                      vDSP_Length(n))
+        
+        initializedCount = n
+    }
+    
+    // Prints "[1000.0, 1100.0, 1020.0, 1300.0, 1040.0, 1500.0, 1060.0, 1700.0]".
+    print(ramp)
+    
+    // Prints "8".
+    print(initialValue)
+```
+
+**Objective-C**:
+
+```objc
+float input[8] = {10, 100, 10, 100, 10, 100, 10, 100};
+float output[8] = {1000, 1000, 1000, 1000, 1000, 1000, 1000, 1000};
+
+float initialValue = 0;
+float increment = 1;
+
+vDSP_vrampmuladd(input, 1,
+                 &initialValue,
+                 &increment,
+                 output, 1,
+                 8);
+
+// Prints "[1000, 1100, 1020, 1300, 1040, 1500, 1060, 1700]".
+printf("[%g, %g, %g, %g, %g, %g, %g, %g]\n",
+       output[0], output[1], output[2], output[3],
+       output[4], output[5], output[6], output[7]);
+
+// Prints "8".
+printf("%g\n", initialValue);
+```
+
+## Parameters
+
+- `__I`: The input vector that the function multiplies by the ramp.
+- `__IS`: The distance between the elements in the input vector.
+- `__Start`: On input, the initial value of the ramp. On output, the next value in the ramp.
+- `__Step`: The increment, or decrement if negative, between each generated element.
+- `__O`: The output vector.
+- `__OS`: The distance between the elements in the output vector.
+- `__N`: The number of elements that the function processes.
+
+## See Also
+
+### Vector addition with ramps and multiplication by a second vector
+- [vDSP_vrampmuladdD](./vdsp_vrampmuladdd.md)
+  Adds a double-precision vector that contains monotonically incrementing or decrementing values, and multiplies that vector by a source vector.
+- [vDSP_vrampmuladd_s1_15](./vdsp_vrampmuladd_s1_15.md)
+  Adds a fixed-point 1.15 format vector that contains monotonically incrementing or decrementing values, and multiplies that vector by a source vector.
+- [vDSP_vrampmuladd_s8_24](./vdsp_vrampmuladd_s8_24.md)
+  Adds a fixed-point 8.24 format vector that contains monotonically incrementing or decrementing values, and multiplies that vector by a source vector.
+
+
+---
+
+*[View on Apple Developer](https://developer.apple.com/documentation/accelerate/vdsp_vrampmuladd)*

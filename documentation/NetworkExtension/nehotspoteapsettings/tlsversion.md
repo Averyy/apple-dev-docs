@@ -26,6 +26,13 @@ enum NEHotspotConfigurationEAPTLSVersion : NSInteger;
 
 ### Initializers
 - [init?(rawValue: Int)](./tlsversion/init%28rawvalue%29.md)
+### Enumeration Cases
+- [NEHotspotConfigurationEAPTLSVersion_1_0](../nehotspotconfigurationeaptlsversion/nehotspotconfigurationeaptlsversion_1_0.md)
+  Network EAPTLS version 1.0.
+- [NEHotspotConfigurationEAPTLSVersion_1_1](../nehotspotconfigurationeaptlsversion/nehotspotconfigurationeaptlsversion_1_1.md)
+  Network EAPTLS version 1.1.
+- [NEHotspotConfigurationEAPTLSVersion_1_2](../nehotspotconfigurationeaptlsversion/nehotspotconfigurationeaptlsversion_1_2.md)
+  Network EAPTLS version 1.2.
 
 ## Relationships
 

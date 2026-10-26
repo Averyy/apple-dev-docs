@@ -50,6 +50,11 @@ The `CIImageAccumulator` class enables feedback-based image processing for such 
 ### Resetting an Accumulator
 - [func clear()](./ciimageaccumulator/clear%28%29.md)
   Resets the accumulator, discarding any pending updates and the current content.
+### Creating an Image Accumulator
+- [+ imageAccumulatorWithExtent:format:](./ciimageaccumulator/imageaccumulatorwithextent_format_.md)
+  Creates an image accumulator with the specified extent and pixel format.
+- [+ imageAccumulatorWithExtent:format:colorSpace:](./ciimageaccumulator/imageaccumulatorwithextent_format_colorspace_.md)
+  Creates an image accumulator with the specified extent, pixel format, and color space.
 
 ## Relationships
 

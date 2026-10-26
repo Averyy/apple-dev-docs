@@ -34,6 +34,9 @@ You can combine these constants using the C bitwise `OR` operator.
 - [static var yearMonthDay: NSDatePicker.ElementFlags](./elementflags/yearmonthday.md)
 ### Initializers
 - [init(rawValue: UInt)](./elementflags/init%28rawvalue%29.md)
+### Deprecated
+- [Deprecated symbols](../elementflags-deprecated-symbols.md)
+  Review symbols that are no longer in active development, and their recommended replacements.
 
 ## Relationships
 

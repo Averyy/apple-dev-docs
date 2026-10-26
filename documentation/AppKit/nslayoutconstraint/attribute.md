@@ -50,6 +50,8 @@ enum NSLayoutAttribute : NSInteger;
   A placeholder value for indicating that the constraint’s second item and second attribute aren’t used in any calculations.
 ### Initializers
 - [init?(rawValue: Int)](./attribute/init%28rawvalue%29.md)
+### Enumeration Cases
+- [NSLayoutAttributeBaseline](../nslayoutattribute/nslayoutattributebaseline.md)
 
 ## Relationships
 

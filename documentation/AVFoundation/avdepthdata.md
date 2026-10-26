@@ -82,6 +82,8 @@ When editing images containing depth information, use the methods listed in Tran
   The list of depth data formats to which you can convert this depth data.
 - [func replacingDepthDataMap(with: CVPixelBuffer) throws -> Self](./avdepthdata/replacingdepthdatamap%28with%29.md)
   Returns a derivative depth data object by replacing the depth data map.
+- [availableDepthDataTypes](./avdepthdata/availabledepthdatatypes-472g0.md)
+  The list of depth data formats to which you can convert this depth data.
 ### Using calibration data
 - [var cameraCalibrationData: AVCameraCalibrationData?](./avdepthdata/cameracalibrationdata.md)
   The imaging parameters with which this depth data was captured.

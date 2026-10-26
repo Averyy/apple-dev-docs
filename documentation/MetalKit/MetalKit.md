@@ -40,6 +40,10 @@ Build Metal apps quicker and easier using a common set of utility classes.
 ### Reference
 - [MetalKit Functions](./metalkit-functions.md)
   The MetalKit framework defines helper functions that are used to efficiently interface with the Metal and Model I/O frameworks.
+### Macros
+- [MTK_EXPORT](./mtk_export.md)
+- [MTK_EXTERN](./mtk_extern.md)
+- [MTK_INLINE](./mtk_inline.md)
 
 
 ---

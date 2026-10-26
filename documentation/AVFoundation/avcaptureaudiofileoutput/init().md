@@ -19,6 +19,12 @@ init()
 - (instancetype) init;
 ```
 
+## See Also
+
+### Creating output
+- [+ new](./new.md)
+  Creates a new audio file output.
+
 
 ---
 

@@ -100,6 +100,10 @@
 - [struct SizeResourceRec](./sizeresourcerec.md)
 - [struct StyleTable](./styletable.md)
 - [struct VDGammaRecord](./vdgammarecord.md)
+- [CMFloatBitmap](./cmfloatbitmap.md)
+- [PasteboardRef](./pasteboardref.md)
+- [AXTextMarkerRef](./axtextmarkerref.md)
+- [AXTextMarkerRangeRef](./axtextmarkerrangeref.md)
 
 
 ---

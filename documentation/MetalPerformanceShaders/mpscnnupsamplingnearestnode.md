@@ -31,6 +31,8 @@ class MPSCNNUpsamplingNearestNode
 ### Instance Properties
 - [var scaleFactorX: Double](./mpscnnupsamplingnearestnode/scalefactorx.md)
 - [var scaleFactorY: Double](./mpscnnupsamplingnearestnode/scalefactory.md)
+### Type Methods
+- [+ nodeWithSource:integerScaleFactorX:integerScaleFactorY:](./mpscnnupsamplingnearestnode/nodewithsource_integerscalefactorx_integerscalefactory_.md)
 
 ## Relationships
 

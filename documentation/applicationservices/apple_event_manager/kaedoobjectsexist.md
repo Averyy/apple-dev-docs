@@ -39,6 +39,12 @@ enum {
   The value of `operand1` is equal to the value of `operand2`
 - [var kAEFinderEvents: OSType](../../coreservices/kaefinderevents.md)
   An event that the Finder accepts.
+- [kAEEndsWith](../../coreservices/api-1556390-anonymous/kaeendswith.md)
+  The value of `operand1` ends with the value of `operand2` (for example, the string `"operand"` ends with the string `"and"`).
+- [kAEEquals](../../coreservices/api-1556390-anonymous/kaeequals.md)
+  The value of `operand1` is equal to the value of `operand2`
+- [kAEFinderEvents](../../coreservices/api-1556390-anonymous/kaefinderevents.md)
+  An event that the Finder accepts.
 
 
 ---

@@ -60,6 +60,8 @@ For objects with more than one line of text, this is the baseline for the topmos
   The object’s top margin.
 - [NSLayoutConstraint.Attribute.bottomMargin](./bottommargin.md)
   The object’s bottom margin.
+- [NSLayoutAttributeBaseline](../../nslayoutattribute/nslayoutattributebaseline.md)
+  The object’s baseline.
 
 
 ---

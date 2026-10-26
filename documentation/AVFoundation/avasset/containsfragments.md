@@ -29,6 +29,14 @@ var containsFragments: Bool { get }
 
 For QuickTime movie files and MPEG-4 files, the value is [`true`](../../Swift/true.md) if [`canContainFragments`](./cancontainfragments.md) is [`true`](../../Swift/true.md) and at least one `moof` box is present after the `moov` box.
 
+## See Also
+
+### Accessing fragment support
+- [canContainFragments](./cancontainfragments.md)
+  A Boolean value that indicates whether you can extend the asset by fragments.
+- [overallDurationHint](./overalldurationhint.md)
+  The total duration of fragments that currently exist, or may exist in the future.
+
 
 ---
 

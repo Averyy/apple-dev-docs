@@ -72,6 +72,8 @@ Apps that use `NEFilterManager` are required to contain two Filter Provider exte
 ### Notifications
 - [static let NEFilterConfigurationDidChange: NSNotification.Name](../Foundation/nsnotification/name-swift.struct/nefilterconfigurationdidchange.md)
   Posted after the filter configuration stored in the Network Extension preferences changes.
+- [NEFilterConfigurationDidChangeNotification](./nefilterconfigurationdidchangenotification.md)
+  Posted after the filter configuration stored in the Network Extension preferences changes.
 ### Instance Properties
 - [var disableEncryptedDNSSettings: Bool](./nefiltermanager/disableencrypteddnssettings.md)
 

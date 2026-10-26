@@ -36,6 +36,10 @@ static void SparseMultiplyAdd(SparseMatrix_Complex_Float A, DenseVector_Complex_
 ### Complex multiply-add functions
 - [func SparseMultiplyAdd(SparseMatrix_Complex_Double, DenseVector_Complex_Double, DenseVector_Complex_Double)](./sparsemultiplyadd%28_,_,_%29-6qi0p.md)
   Performs `y += Ax` for complex double values
+- [SparseMultiplyAdd](./sparsemultiplyadd-47egy.md)
+  Performs `y += alpha * Ax` for complex double values
+- [SparseMultiplyAdd](./sparsemultiplyadd-8ym23.md)
+  Performs `y += alpha * Ax` for complex float values
 
 
 ---

@@ -68,6 +68,9 @@ Apple Archive provides fast compression that includes file attributes, such as, 
   The version of the framework at compile time.
 ### Reference
 - [Apple Archive structures](./apple-archive-structures.md)
+- [Apple Archive data types](./apple-archive-data-types.md)
+- [Apple Archive functions](./apple-archive-functions.md)
+- [Apple Archive macros](./apple-archive-macros.md)
 
 ## See Also
 

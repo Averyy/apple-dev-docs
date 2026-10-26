@@ -78,6 +78,8 @@ class SKNode
 - [init?(coder: NSCoder)](./sknode/init%28coder%29.md)
   Called when a node is initialized from an .sks file.
 - [convenience init(fileNamed: String, securelyWithClasses: Set<AnyHashable>) throws](./sknode/init%28filenamed,securelywithclasses%29.md)
+- [+ node](./sknode/node.md)
+  Creates a new node.
 ### Positioning Content in a Scene
 - [var position: CGPoint](./sknode/position.md)
   The position of the node in its parent’s coordinate system.

@@ -47,6 +47,29 @@ Create a lasso tool programmatically or display a [`PKToolPicker`](./pktoolpicke
 - [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 - [Sendable](../Swift/sendable.md)
 - [SendableMetatype](../Swift/sendablemetatype.md)
+### Inherits From
+- [PKTool](./pktool-c.class.md)
+
+## See Also
+
+### Tools
+- [Configuring the PencilKit tool picker](./configuring-the-pencilkit-tool-picker.md)
+  Incorporate a custom PencilKit tool picker with a variety of system and custom tools into a drawing app.
+- [PKToolPicker](./pktoolpicker.md)
+  A tool palette that displays a selection of drawing tools and colors for tools that a person can choose from.
+- [PKInkingTool](./pkinkingtoolreference.md)
+  An object that defines the drawing characteristics (width, color, pen style) to use when drawing lines on a canvas view.
+- [PKEraserTool](./pkerasertoolreference.md)
+  A tool for erasing previously drawn content in a canvas view.
+- [PKTool](./pktool-c.class.md)
+  An abstract base class for tools used by a canvas view.
+- [PKResponderState](./pkresponderstate.md)
+  An object that controls PencilKit behavior associated with a responder.
+- [PKToolPickerVisibility](./pktoolpickervisibility.md)
+  Constants that describe the visibility state of a tool picker.
+- [PKToolPickerDelegate](./pktoolpicker/delegate-swift.protocol.md)
+- [PKToolPickerCustomItemControlOptions](./pktoolpickercustomitem/controloptions.md)
+  Options for which controls to present.
 
 
 ---

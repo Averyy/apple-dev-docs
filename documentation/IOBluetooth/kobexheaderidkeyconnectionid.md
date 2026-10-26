@@ -35,6 +35,10 @@ extern CFStringRef kOBEXHeaderIDKeyConnectionID;
 - [var kOBEXHeaderIDKeyObjectClass: Unmanaged<CFString>!](./kobexheaderidkeyobjectclass.md)
 - [var kOBEXHeaderIDKeyTarget: Unmanaged<CFString>!](./kobexheaderidkeytarget.md)
 - [var kOBEXHeaderIDKeyTime4Byte: Unmanaged<CFString>!](./kobexheaderidkeytime4byte.md)
+- [IOBluetoothHostControllerPoweredOffNotification](./iobluetoothhostcontrollerpoweredoffnotification.md)
+- [IOBluetoothHostControllerPoweredOnNotification](./iobluetoothhostcontrollerpoweredonnotification.md)
+- [IOBluetoothL2CAPChannelPublishedNotification](./iobluetoothl2capchannelpublishednotification.md)
+- [IOBluetoothL2CAPChannelTerminatedNotification](./iobluetoothl2capchannelterminatednotification.md)
 
 
 ---

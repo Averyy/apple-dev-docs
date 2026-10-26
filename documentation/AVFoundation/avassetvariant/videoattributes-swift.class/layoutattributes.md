@@ -62,6 +62,10 @@ class LayoutAttributes
   Constants that describe a video variant’s dynamic range.
 - [var videoLayoutAttributes: [AVAssetVariant.VideoAttributes.LayoutAttributes]](./videolayoutattributes.md)
   Attributes that describe the layout of the video content.
+- [codecTypes](../../avassetvariantvideoattributes/codectypes.md)
+  The video sample codec types present in the variant’s renditions.
+- [nominalFrameRate](../../avassetvariantvideoattributes/nominalframerate.md)
+  The nominal frame rate of the variant’s renditions.
 
 
 ---

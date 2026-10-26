@@ -301,7 +301,7 @@ Ellipses (`...`) indicate lines of code that have been omitted from this example
   Define the layout of a text component to wrap around another component.
 - [Nesting Components in an Article](./nesting-components-in-an-article.md)
   Use container components to create the component hierarchies you need for special article designs.
-- [object Anchor](https://developer.apple.com/documentation/applenewsformat/anchor)
+- [object Anchor](../AppleNewsFormat/anchor.md)
   The object for anchoring one component to another component in your article’s layout.
 - [Using HTML with Apple News Format](./using-html-with-apple-news-format.md)
   Use HTML formatting for text components.

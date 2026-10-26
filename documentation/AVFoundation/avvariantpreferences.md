@@ -30,6 +30,8 @@ enum AVVariantPreferences : NSUInteger;
 ### Preference settings
 - [static var scalabilityToLosslessAudio: AVVariantPreferences](./avvariantpreferences/scalabilitytolosslessaudio.md)
   A preference that indicates the player item supports variant playlists that contain losslessly encoded audio when sufficient bandwidth is available.
+- [AVVariantPreferenceNone](./avvariantpreferences/avvariantpreferencenone.md)
+  Indicates that the player item uses the default behavior for determining variant playlist selection.
 ### Initializers
 - [init(rawValue: UInt)](./avvariantpreferences/init%28rawvalue%29.md)
   Creates a variant preferences structure with an integer value.

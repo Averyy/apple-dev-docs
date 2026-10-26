@@ -49,6 +49,11 @@ The stream must be opened before it can be used.
   Returns an initialized output stream that can write to a provided buffer.
 - [init?(url: URL, append: Bool)](./init%28url,append%29-5soau.md)
   Returns an initialized output stream for writing to a specified URL.
+- [+ outputStreamToBuffer:capacity:](../nsoutputstream/outputstreamtobuffer_capacity_.md)
+  Creates and returns an initialized output stream that can write to a provided buffer.
+### Related Documentation
+- [+ outputStreamToFileAtPath:append:](../nsoutputstream/outputstreamtofileatpath_append_.md)
+  Creates and returns an initialized output stream for writing to a specified file.
 
 
 ---

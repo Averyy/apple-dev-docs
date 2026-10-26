@@ -36,6 +36,8 @@ The default value is [`false`](../../Swift/false.md).
 ### Configuring the Operation
 - [var shareURLs: [URL]?](./shareurls.md)
   The URLs of the shares to fetch.
+- [rootRecordDesiredKeys](./rootrecorddesiredkeys-7gvr5.md)
+  The fields to return when fetching the root record.
 
 
 ---

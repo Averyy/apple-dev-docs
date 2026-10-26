@@ -29,6 +29,8 @@ The default color is gray.
 ### Related Documentation
 - [func drawGrid(inClipRect: NSRect)](./drawgrid%28incliprect%29.md)
   Draws the grid lines within the supplied rectangle.
+- [- drawsGrid](./drawsgrid.md)
+  Returns a Boolean value that indicates whether the table view draws a grid.
 ### Setting Display Attributes
 - [var intercellSpacing: NSSize](./intercellspacing.md)
   The horizontal and vertical spacing between cells.

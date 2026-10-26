@@ -38,6 +38,12 @@ For example, the speech synthesizer uses an `AVSpeechSynthesisIPANotationAttribu
   Creates an utterance with the attributed text string that you specify for the speech synthesizer to speak.
 - [init?(ssmlRepresentation: String)](./avspeechutterance/init%28ssmlrepresentation%29-8zam9.md)
   Creates a speech utterance with an Speech Synthesis Markup Language (SSML) string.
+- [+ speechUtteranceWithString:](./avspeechutterance/speechutterancewithstring_.md)
+  Creates an utterance with the text string that you specify for the speech synthesizer to speak.
+- [+ speechUtteranceWithAttributedString:](./avspeechutterance/speechutterancewithattributedstring_.md)
+  Creates an utterance with the attributed text string that you specify for the speech synthesizer to speak.
+- [+ speechUtteranceWithSSMLRepresentation:](./avspeechutterance/speechutterancewithssmlrepresentation_.md)
+  Returns a new speech utterance with an Speech Synthesis Markup Language (SSML) string.
 
 
 ---

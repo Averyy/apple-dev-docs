@@ -61,6 +61,14 @@ Create options and provide them to `XCTExpectFailure` functions to tell the test
   Instructs the test to expect a failure in an assertion in the provided block of code, with options to customize expected failure checking and handling.
 - [func XCTExpectFailure<R>(String?, enabled: Bool?, strict: Bool?, failingBlock: () throws -> R, issueMatcher: ((XCTIssue) -> Bool)?) rethrows -> R](../xctexpectfailure%28_,enabled,strict,failingblock,issuematcher%29.md)
   Instructs the test to expect a failure in an assertion in the provided block of code, with parameters to customize expected failure checking and handling.
+- [XCTExpectFailure](../xctexpectfailure.md)
+  Instructs the test to expect a failure in an upcoming assertion.
+- [XCTExpectFailureInBlock](../xctexpectfailureinblock.md)
+  Instructs the test to expect a failure in an assertion in the provided block of code.
+- [XCTExpectFailureWithOptions](../xctexpectfailurewithoptions.md)
+  Instructs the test to expect a failure in an upcoming assertion, with options to customize expected failure checking and handling.
+- [XCTExpectFailureWithOptionsInBlock](../xctexpectfailurewithoptionsinblock.md)
+  Instructs the test to expect a failure in an assertion in the provided block of code, with options to customize expected failure checking and handling.
 
 
 ---

@@ -31,6 +31,42 @@ If you subclass, you should override the [`createPath`](./mkoverlaypathview/crea
 
 In iOS 7 and later, use the [`MKOverlayPathRenderer`](./mkoverlaypathrenderer.md) class to display path-based overlays instead.
 
+## Topics
+
+### Accessing the drawing attributes
+- [fillColor](./mkoverlaypathview/fillcolor.md)
+  The fill color to use for the path.
+- [strokeColor](./mkoverlaypathview/strokecolor.md)
+  The stroke color to use for the path.
+- [lineWidth](./mkoverlaypathview/linewidth.md)
+  The stroke width to use for the path.
+- [lineJoin](./mkoverlaypathview/linejoin.md)
+  The line join style to apply to corners of the path.
+- [lineCap](./mkoverlaypathview/linecap.md)
+  The line cap style to apply to the open ends of the path.
+- [miterLimit](./mkoverlaypathview/miterlimit.md)
+  The limiting value that helps avoid spikes at junctions between connected line segments.
+- [lineDashPhase](./mkoverlaypathview/linedashphase.md)
+  The offset (in points) at which to start drawing the dash pattern.
+- [lineDashPattern](./mkoverlaypathview/linedashpattern.md)
+  An array of numbers indicating the dash pattern for paths.
+### Creating and managing the path
+- [path](./mkoverlaypathview/path.md)
+  The current path to use when drawing the overlay.
+- [- createPath](./mkoverlaypathview/createpath.md)
+  Creates the path for the overlay.
+- [- invalidatePath](./mkoverlaypathview/invalidatepath.md)
+  Releases the path associated with the receiver.
+### Drawing the Path
+- [- applyStrokePropertiesToContext:atZoomScale:](./mkoverlaypathview/applystrokepropertiestocontext_atzoomscale_.md)
+  Applies the receiver’s current stroke-related drawing properties to the specified graphics context.
+- [- applyFillPropertiesToContext:atZoomScale:](./mkoverlaypathview/applyfillpropertiestocontext_atzoomscale_.md)
+  Applies the receiver’s current fill-related drawing properties to the specified graphics context
+- [- strokePath:inContext:](./mkoverlaypathview/strokepath_incontext_.md)
+  Draws a line along the specified path.
+- [- fillPath:inContext:](./mkoverlaypathview/fillpath_incontext_.md)
+  Fills the area enclosed by the specified path.
+
 ## Relationships
 
 ### Inherits From
@@ -83,6 +119,8 @@ In iOS 7 and later, use the [`MKOverlayPathRenderer`](./mkoverlaypathrenderer.md
   Provides the visual representation for an [`MKPolyline`](./mkpolyline.md) annotation object.
 - [class MKPinAnnotationView](./mkpinannotationview.md)
   An annotation view that displays a pin image on the map.
+- [MKReverseGeocoder](./mkreversegeocoder.md)
+  Provides services for converting a map coordinate (specified as a latitude/longitude pair) into information about that coordinate, such as the country or region, city, or street.
 
 
 ---

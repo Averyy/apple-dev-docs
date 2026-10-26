@@ -58,6 +58,10 @@ Thread safe starting in OS X v10.2.
   Gets a copy of the descriptor for a keyword-specified Apple event parameter from an Apple event or an Apple event record.
 - [func AEGetParamPtr(UnsafePointer<AppleEvent>!, AEKeyword, DescType, UnsafeMutablePointer<DescType>!, UnsafeMutableRawPointer!, Size, UnsafeMutablePointer<Size>!) -> OSErr](./api-1444069-aegetparamptr.md)
   Gets a copy of the data for a specified Apple event parameter from an Apple event or an Apple event record.
+- [AEGetKeyDesc](../applicationservices/apple_event_manager/api-1806211-aegetkeydesc.md)
+  Gets a copy of the descriptor for a keyword-specified Apple event parameter from an Apple event record
+- [AEGetKeyPtr](../applicationservices/apple_event_manager/api-1806223-aegetkeyptr.md)
+  Gets a copy of the data for a specified Apple event parameter from an Apple event record.
 
 
 ---

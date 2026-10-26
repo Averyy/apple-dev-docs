@@ -38,6 +38,7 @@ class DOMMouseEvent
 - [var y: Int32](./dommouseevent/y.md)
 ### Instance Methods
 - [func initMouseEvent(String!, canBubble: Bool, cancelable: Bool, view: DOMAbstractView!, detail: Int32, screenX: Int32, screenY: Int32, clientX: Int32, clientY: Int32, ctrlKey: Bool, altKey: Bool, shiftKey: Bool, metaKey: Bool, button: UInt16, relatedTarget: (any DOMEventTarget)!)](./dommouseevent/initmouseevent%28_,canbubble,cancelable,view,detail,screenx,screeny,clientx,clienty,ctrlkey,altkey,shiftkey,metakey,button,relatedtarget%29.md)
+- [- initMouseEvent:::::::::::::::](./dommouseevent/initmouseevent_______________.md)
 
 ## Relationships
 

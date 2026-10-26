@@ -47,6 +47,10 @@ Instead of providing multiple images with different resolutions, you can provide
   Creates a new template that has a gauge and an image.
 - [init(gaugeProvider: CLKGaugeProvider, leadingTextProvider: CLKTextProvider?, trailingTextProvider: CLKTextProvider?, imageProvider: CLKFullColorImageProvider)](./clkcomplicationtemplategraphiccornergaugeimage/init%28gaugeprovider,leadingtextprovider,trailingtextprovider,imageprovider%29.md)
   Creates a new template that has a gauge with leading and trailing text and an image.
+- [+ templateWithGaugeProvider:imageProvider:](./clkcomplicationtemplategraphiccornergaugeimage/templatewithgaugeprovider_imageprovider_.md)
+  Returns a new template that has a gauge and an image.
+- [+ templateWithGaugeProvider:leadingTextProvider:trailingTextProvider:imageProvider:](./clkcomplicationtemplategraphiccornergaugeimage/templatewithgaugeprovider_leadingtextprovider_trailingtextprovider_imageprovider_.md)
+  Returns a new template that has a gauge with leading and trailing text and an image.
 ### Setting the Complication Data
 - [var imageProvider: CLKFullColorImageProvider](./clkcomplicationtemplategraphiccornergaugeimage/imageprovider.md)
   The image to display.

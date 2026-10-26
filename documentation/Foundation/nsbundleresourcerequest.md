@@ -77,6 +77,16 @@ Other properties and methods let you track the progress of a download, change th
   The application specified a tag that the system couldn’t find in the application tag manifest.
 - [var NSBundleOnDemandResourceOutOfSpaceError: Int](./nsbundleondemandresourceoutofspaceerror-swift.var.md)
   Insufficient space available to download the requested on-demand resources.
+- [NSBundleErrorMaximum](./nsbundleerrormaximum-c.enum.case.md)
+  The end of the range of error codes reserved for bundle errors.
+- [NSBundleErrorMinimum](./nsbundleerrorminimum-c.enum.case.md)
+  The start of the range of error codes reserved for bundle errors.
+- [NSBundleOnDemandResourceExceededMaximumSizeError](./nsbundleondemandresourceexceededmaximumsizeerror-c.enum.case.md)
+  The application exceeded the amount of on-demand resources content in use at one time.
+- [NSBundleOnDemandResourceInvalidTagError](./nsbundleondemandresourceinvalidtagerror-c.enum.case.md)
+  The application specified a tag that the system couldn’t find in the application tag manifest.
+- [NSBundleOnDemandResourceOutOfSpaceError](./nsbundleondemandresourceoutofspaceerror-c.enum.case.md)
+  Insufficient space available to download the requested On Demand Resources.
 ### Working with notifications
 - [static let NSBundleResourceRequestLowDiskSpace: NSNotification.Name](./nsnotification/name-swift.struct/nsbundleresourcerequestlowdiskspace.md)
   Posted after the system detects that the amount of available disk space is getting low. The notification is posted to the default notification center.

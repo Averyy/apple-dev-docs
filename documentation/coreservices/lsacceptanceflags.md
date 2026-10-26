@@ -36,6 +36,10 @@ These flags are passed to the functions `LSCanRefAcceptItem` and `LSCanURLAccept
   Requests the default behavior that does not require the user interface to log in be presented.
 - [static var acceptAllowLoginUI: LSAcceptanceFlags](./lsacceptanceflags/api-1443098-acceptallowloginui.md)
   Requests that the user interface to log in be presented.
+- [kLSAcceptDefault](./lsacceptanceflags/klsacceptdefault.md)
+  Requests the default behavior that does not require the user interface to log in be presented.
+- [kLSAcceptAllowLoginUI](./lsacceptanceflags/klsacceptallowloginui.md)
+  Requests that the user interface to log in be presented.
 
 ## Relationships
 

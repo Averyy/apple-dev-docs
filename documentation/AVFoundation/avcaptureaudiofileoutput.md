@@ -39,6 +39,8 @@ class AVCaptureAudioFileOutput
 ### Creating output
 - [init()](./avcaptureaudiofileoutput/init%28%29.md)
   Creates a new audio file output.
+- [+ new](./avcaptureaudiofileoutput/new.md)
+  Creates a new audio file output.
 
 ## Relationships
 

@@ -21,7 +21,7 @@ class PHProjectAssetElement
 
 #### Overview
 
-Access the underlying [`PHAsset`](https://developer.apple.com/documentation/photos/phasset) by converting the provided [`cloudAssetIdentifiers`](./phprojectsectioncontent/cloudassetidentifiers.md) to a [`assetLocalIdentifier`](https://developer.apple.com/documentation/photos/phassetresource/assetlocalidentifier), then calling [`fetchAssets(withLocalIdentifiers:options:)`](https://developer.apple.com/documentation/photos/phasset/fetchassets(withlocalidentifiers:options:)).
+Access the underlying [`PHAsset`](../Photos/phasset.md) by converting the provided [`cloudAssetIdentifiers`](./phprojectsectioncontent/cloudassetidentifiers.md) to a [`assetLocalIdentifier`](../Photos/phassetresource/assetlocalidentifier.md), then calling [`fetchAssets(withLocalIdentifiers:options:)`](../Photos/phasset/fetchassets%28withlocalidentifiers,options%29.md).
 
 ## Topics
 

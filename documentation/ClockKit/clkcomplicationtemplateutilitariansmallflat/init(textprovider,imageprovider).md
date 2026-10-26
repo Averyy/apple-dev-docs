@@ -29,6 +29,10 @@ init(textProvider: CLKTextProvider, imageProvider: CLKImageProvider?)
 ### Creating the Template
 - [init(textProvider: CLKTextProvider)](./init%28textprovider%29.md)
   Creates a new template that has a single line of text.
+- [+ templateWithTextProvider:](./templatewithtextprovider_.md)
+  Returns a new template that has a single line of text.
+- [+ templateWithTextProvider:imageProvider:](./templatewithtextprovider_imageprovider_.md)
+  Returns a new template that has a single row with an image and a line of text.
 
 
 ---

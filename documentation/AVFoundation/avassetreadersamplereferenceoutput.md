@@ -37,6 +37,8 @@ Because this output doesn’t return sample data, it ignores the value of the [`
 ### Creating a sample reference output
 - [init(track: AVAssetTrack)](./avassetreadersamplereferenceoutput/init%28track%29.md)
   Creates an object that supplies sample references.
+- [+ assetReaderSampleReferenceOutputWithTrack:](./avassetreadersamplereferenceoutput/assetreadersamplereferenceoutputwithtrack_.md)
+  Returns a new object that supplies sample references.
 ### Inspecting the track
 - [var track: AVAssetTrack](./avassetreadersamplereferenceoutput/track.md)
   The track from which the output reads sample references.

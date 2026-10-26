@@ -55,6 +55,22 @@ init(targetedCMSampleBuffer sampleBuffer: CMSampleBuffer, options: [VNImageOptio
   Creates a new request targeting an image at the specified URL, executing the completion handler when done.
 - [init(targetedImageURL: URL, orientation: CGImagePropertyOrientation, options: [VNImageOption : Any], completionHandler: VNRequestCompletionHandler?)](./init%28targetedimageurl,orientation,options,completionhandler%29.md)
   Creates a new request targeting an image of known orientation, at the specified URL, executing the completion handler when done.
+- [- initWithTargetedCGImage:options:](./initwithtargetedcgimage_options_.md)
+  Creates a new request targeting a Core Graphics image.
+- [- initWithTargetedCGImage:orientation:options:](./initwithtargetedcgimage_orientation_options_.md)
+  Creates a new request targeting a Core Graphics image of known orientation.
+- [- initWithTargetedCIImage:options:](./initwithtargetedciimage_options_.md)
+  Creates a new request targeting a Core Image image.
+- [- initWithTargetedCIImage:orientation:options:](./initwithtargetedciimage_orientation_options_.md)
+  Creates a new request targeting a Core Image image of known orientation.
+- [- initWithTargetedCVPixelBuffer:options:](./initwithtargetedcvpixelbuffer_options_.md)
+  Creates a new request targeting an image in a pixel buffer.
+- [- initWithTargetedCVPixelBuffer:orientation:options:](./initwithtargetedcvpixelbuffer_orientation_options_.md)
+  Creates a new request targeting an image in a pixel buffer of known orientation.
+- [- initWithTargetedCMSampleBuffer:options:](./initwithtargetedcmsamplebuffer_options_.md)
+  Creates a new request that targets an image in a sample buffer.
+- [- initWithTargetedCMSampleBuffer:orientation:options:](./initwithtargetedcmsamplebuffer_orientation_options_.md)
+  Creates a new request that targets an image of a known orientation in a sample buffer.
 
 
 ---

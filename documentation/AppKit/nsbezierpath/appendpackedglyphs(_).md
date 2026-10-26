@@ -39,6 +39,10 @@ You should avoid using this method directly. Instead, use the [`appendGlyph(_:in
   Appends an outline of the specified glyph to the path.
 - [func appendGlyphs(UnsafeMutablePointer<NSGlyph>, count: Int, in: NSFont)](./appendglyphs%28_,count,in%29.md)
   Appends the outlines of the specified glyphs to the path.
+- [- cachesBezierPath](./cachesbezierpath.md)
+  Returns a Boolean value that indicates whether this object maintains a cached image of its path.
+- [- setCachesBezierPath:](./setcachesbezierpath_.md)
+  Sets whether the path should cache its path information.
 
 
 ---

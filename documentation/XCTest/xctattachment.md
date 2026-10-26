@@ -29,6 +29,8 @@ class XCTAttachment
   Creates an attachment containing the provided data payload, with a custom UTI.
 - [init(uniformTypeIdentifier: String?, name: String?, payload: Data?, userInfo: [AnyHashable : Any]?)](./xctattachment/init%28uniformtypeidentifier,name,payload,userinfo%29.md)
   Creates an attachment containing the provided data payload, optionally with a custom UTI, name, and user-provided metadata dictionary.
+- [+ attachmentWithUniformTypeIdentifier:name:payload:userInfo:](./xctattachment/attachmentwithuniformtypeidentifier_name_payload_userinfo_.md)
+  Creates an attachment containing the provided data payload, optionally with a custom UTI, name, and user-provided metadata dictionary.
 ### Creating Attachments from Files and Folders
 - [convenience init(contentsOfFileAtURL: URL)](./xctattachment/init%28contentsoffileaturl%29.md)
   Creates an attachment from the contents of an existing file on disk.

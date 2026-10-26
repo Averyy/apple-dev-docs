@@ -31,6 +31,11 @@ class MLCReshapeLayer
 ### Inspecting Reshape Layers
 - [var shape: [Int]](./mlcreshapelayer/shape-8k50y.md)
   An array that contains the size of each dimension.
+- [shape](./mlcreshapelayer/shape-840ax.md)
+  An array that contains the size of each dimension.
+### Type Methods
+- [+ layerWithShape:](./mlcreshapelayer/layerwithshape_.md)
+  Creates a reshape layer with the shape you specify.
 
 ## Relationships
 

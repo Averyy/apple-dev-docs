@@ -29,6 +29,8 @@ Use a property attributes object to describe attributes such as the minimum and 
 ### Creating Property Attributes
 - [init(minValue: ObjectType?, maxValue: ObjectType?, validValues: [ObjectType]?, readOnly: Bool)](./cmioextensionpropertyattributes/init%28minvalue,maxvalue,validvalues,readonly%29.md)
   Creates a property attributes object with the specified configuration.
+- [+ propertyAttributesWithMinValue:maxValue:validValues:readOnly:](./cmioextensionpropertyattributes/propertyattributeswithminvalue_maxvalue_validvalues_readonly_.md)
+  Returns a new property attributes object with the specified configuration.
 ### Inspecting Attributes
 - [var isReadOnly: Bool](./cmioextensionpropertyattributes/isreadonly.md)
   A Boolean value that indicates whether a property is read-only.

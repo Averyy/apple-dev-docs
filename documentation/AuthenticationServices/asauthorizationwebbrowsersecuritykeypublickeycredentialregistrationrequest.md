@@ -27,6 +27,8 @@ protocol ASAuthorizationWebBrowserSecurityKeyPublicKeyCredentialRegistrationRequ
 ### Information about the registration
 - [var clientData: ASPublicKeyCredentialClientData?](./asauthorizationwebbrowsersecuritykeypublickeycredentialregistrationrequest/clientdata-3hz81.md)
   The client data to supply to the relying party.
+- [clientData](./asauthorizationwebbrowsersecuritykeypublickeycredentialregistrationrequest/clientdata-t1ze.md)
+  The client data to supply to the relying party.
 
 ## Relationships
 

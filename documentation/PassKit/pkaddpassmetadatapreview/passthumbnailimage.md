@@ -30,6 +30,8 @@ unowned(unsafe) var passThumbnailImage: CGImage? { get }
   Provides a preview of an image object that represents the pass you add to Wallet.
 - [var localizedDescription: String?](./localizeddescription.md)
   A localized description of the pass.
+- [+ previewWithPassThumbnail:localizedDescription:](./previewwithpassthumbnail_localizeddescription_.md)
+  Initializes properties you need to preview an object that represents the pass you add to Wallet.
 
 
 ---

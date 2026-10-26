@@ -51,6 +51,8 @@ When creating a scene using Xcode’s Scene Editor or an external tool, you shou
   Loads a scene from a file with the specified name in the app’s main bundle.
 - [convenience init?(named: String, inDirectory: String?, options: [SCNSceneSource.LoadingOption : Any]?)](./init%28named,indirectory,options%29.md)
   Loads a scene from a file with the specified name in a specific subdirectory of the app’s main bundle.
+- [+ scene](./scene.md)
+  Creates and returns an empty scene.
 
 
 ---

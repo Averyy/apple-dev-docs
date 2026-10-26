@@ -205,6 +205,12 @@ override func viewDidLoad() {
   A type that represents the radius the system uses to round a corner.
 - [func effectiveRadius(corner: UIRectCorner) -> CGFloat](./uiview/effectiveradius%28corner%29.md)
   Returns the effective radius for the corner you provide, calculated using the view’s current corner configuration.
+- [cornerConfiguration](./uiview/cornerconfiguration-3m8ya.md)
+  A configuration that defines the corners of the view.
+- [UICornerConfiguration](./uicornerconfiguration-c.class.md)
+  A configuration that defines how corner radii are mapped to the corners of a rectangle.
+- [UICornerRadius](./uicornerradius-c.class.md)
+  A type that represents the radius the system uses to round a corner.
 ### Configuring the event-related behavior
 - [var isUserInteractionEnabled: Bool](./uiview/isuserinteractionenabled.md)
   A Boolean value that determines whether user events are ignored and removed from the event queue.
@@ -266,12 +272,17 @@ override func viewDidLoad() {
 ### Observing trait changes
 - [protocol UITraitChangeObservable](./uitraitchangeobservable-67e94.md)
   A type that calls your code in reaction to changes in the trait environment.
+- [UITraitChangeObservable](./uitraitchangeobservable-7qoet.md)
+  A type that calls your code in reaction to changes in the trait environment.
 ### Requesting trait updates
 - [func updateTraitsIfNeeded()](./uiview/updatetraitsifneeded%28%29.md)
   Forces an immediate trait update for this view (and its view controller, if applicable) and any subviews, including any view controllers or views in its subtree. Any trait change callbacks are sent synchronously.
 ### Overriding trait values
 - [var traitOverrides: UITraitOverrides](./uiview/traitoverrides-fd9z.md)
 - [struct UITraitOverrides](./uitraitoverrides-swift.struct.md)
+  A mutable container of traits you use to set trait changes for an object and its descendants.
+- [traitOverrides](./uiview/traitoverrides-2tqxk.md)
+- [UITraitOverrides](./uitraitoverrides-c.protocol.md)
   A mutable container of traits you use to set trait changes for an object and its descendants.
 ### Configuring content margins
 - [Positioning content within layout margins](./positioning-content-within-layout-margins.md)
@@ -417,11 +428,19 @@ override func viewDidLoad() {
 - [func directionalEdgeInsets(for: UIView.LayoutRegion) -> NSDirectionalEdgeInsets](./uiview/directionaledgeinsets%28for%29.md)
 - [func edgeInsets(for: UIView.LayoutRegion) -> UIEdgeInsets](./uiview/edgeinsets%28for%29.md)
 - [func layoutGuide(for: UIView.LayoutRegion) -> UILayoutGuide](./uiview/layoutguide%28for%29.md)
+- [UIViewLayoutRegion](./uiviewlayoutregion.md)
+- [UIViewLayoutRegionAdaptivityAxis](./uiviewlayoutregionadaptivityaxis.md)
 ### Inspecting reserved regions
 - [UIView.ReservedRegion](./uiview/reservedregion.md)
   A region within a view’s coordinate space that another entity reserves.
 - [func reservedRegions(kind: UIView.ReservedRegion.Kind, options: UIView.ReservedRegion.QueryOptions) -> [UIView.ReservedRegion]](./uiview/reservedregions%28kind,options%29.md)
   Returns the reserved regions of a kind that overlap the view.
+- [UIViewReservedRegion](./uiviewreservedregion.md)
+  A region within a view’s coordinate space that another entity reserves.
+- [- reservedRegionsOfKind:](./uiview/reservedregionsofkind_.md)
+  Returns the reserved regions of a given kind.
+- [- reservedRegionsOfKind:options:](./uiview/reservedregionsofkind_options_.md)
+  Returns the reserved regions of a given kind and options.
 ### Adjusting the user interface
 - [var overrideUserInterfaceStyle: UIUserInterfaceStyle](./uiview/overrideuserinterfacestyle.md)
   The user interface style adopted by the view and all of its subviews.
@@ -584,6 +603,8 @@ override func viewDidLoad() {
   Disables a view transition animation.
 - [class func modifyAnimations(withRepeatCount: CGFloat, autoreverses: Bool, animations: () -> Void)](./uiview/modifyanimations%28withrepeatcount,autoreverses,animations%29.md)
   Repeats the specified animations a specific number of times, optionally running the animation forward and backward.
+- [+ animateWithSpringDuration:bounce:initialSpringVelocity:delay:options:animations:completion:](./uiview/animatewithspringduration_bounce_initialspringvelocity_delay_options_animations_completion_.md)
+  Animates changes to one or more views using a spring animation with the specified duration, bounce, initial velocity, delay, options, and completion handler.
 ### Sensor coordinate orientation
 - [protocol CLBodyIdentifiable](../CoreLocation/clbodyidentifiable.md)
   A type that identifies a physical body or view for heading calculations.
@@ -629,6 +650,9 @@ override func viewDidLoad() {
   Configures the view’s content and styling properties before layout.
 - [func updatePropertiesIfNeeded()](./uiview/updatepropertiesifneeded%28%29.md)
   Forces an immediate properties update for this view (and its view controller, if applicable) and any subviews, including any view controllers or views in its subtree.
+- [- directionalEdgeInsetsForLayoutRegion:](./uiview/directionaledgeinsetsforlayoutregion_.md)
+- [- edgeInsetsForLayoutRegion:](./uiview/edgeinsetsforlayoutregion_.md)
+- [- layoutGuideForLayoutRegion:](./uiview/layoutguideforlayoutregion_.md)
 ### Enumerations
 - [UIView.Invalidations](./uiview/invalidations.md)
   Changes that cause an aspect of a view to be invalid and require an update.
@@ -699,6 +723,7 @@ override func viewDidLoad() {
 - [UITraitChangeObservable](./uitraitchangeobservable-67e94.md)
 - [UITraitEnvironment](./uitraitenvironment.md)
 - [UIUserActivityRestoring](./uiuseractivityrestoring.md)
+- [UITraitChangeObservable](./uitraitchangeobservable-7qoet.md)
 
 ## See Also
 

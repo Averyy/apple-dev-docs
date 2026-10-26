@@ -56,6 +56,8 @@ NSLayoutFormatSpacingMask
   Arrange objects in order from right to left.
 - [static var directionMask: NSLayoutConstraint.FormatOptions](./directionmask.md)
   A bit mask that can be combined with an [`NSLayoutConstraint.FormatOptions`](../formatoptions.md) variable to yield only the direction portion of the format options.
+- [NSLayoutFormatAlignAllBaseline](../../nslayoutformatoptions/nslayoutformatalignallbaseline.md)
+  Align all specified interface elements using [`NSLayoutAttributeBaseline`](../../nslayoutattribute/nslayoutattributebaseline.md) on each.
 
 
 ---

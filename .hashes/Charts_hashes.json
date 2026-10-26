@@ -2115,6 +2115,26 @@
       "file_path": "documentation/Charts/plottable/init(primitiveplottable).md",
       "hash": "5e24bf258bab1a54f18d200b805877724683c0b1b269f80ff75c524b5d83123b"
     },
+    "https://developer.apple.com/documentation/charts/plottable/init(primitiveplottable:)-6vv53": {
+      "etag": "\"162a-65d55e8b17cc7-df\"",
+      "file_path": "documentation/Charts/plottable/init(primitiveplottable)-6vv53.md",
+      "hash": "ab1b95ce730d2248113f657dfe96f485d8051840899ea1687f0abca71ba06d71"
+    },
+    "https://developer.apple.com/documentation/charts/plottable/init(primitiveplottable:)-7l0ao": {
+      "etag": "\"16ed-65d55e8b17cc7-df\"",
+      "file_path": "documentation/Charts/plottable/init(primitiveplottable)-7l0ao.md",
+      "hash": "0dd0d053b4f0d78447d53f97a45cf2c61ef50dfc585fe9728dc11afeae8fadbe"
+    },
+    "https://developer.apple.com/documentation/charts/plottable/primitiveplottable-4a60p": {
+      "etag": "\"14c1-65d55e8b17cc7-df\"",
+      "file_path": "documentation/Charts/plottable/primitiveplottable-4a60p.md",
+      "hash": "2a4acecb7f567c6907af540c4a55d926f98e021a343782e271bdeba16edee195"
+    },
+    "https://developer.apple.com/documentation/charts/plottable/primitiveplottable-8wzif": {
+      "etag": "\"ea9-65d55e8b17cc7-df\"",
+      "file_path": "documentation/Charts/plottable/primitiveplottable-8wzif.md",
+      "hash": "17d33e00923a4010be1d0b498dfe9f8120f3ef61f63d81b104ff0bf764c0b6da"
+    },
     "https://developer.apple.com/documentation/charts/plottable/primitiveplottable-swift.associatedtype": {
       "etag": "\"14a7-65d55e8b17cc7-df\"",
       "file_path": "documentation/Charts/plottable/primitiveplottable-swift.associatedtype.md",
@@ -5069,10 +5089,30 @@
       "file_path": "documentation/Charts/plottable.md",
       "hash": "d2794f92dcf504da9aa3cb56f13d90cffbf57b1c6f9fdd40750a74300a6a51ce"
     },
+    "https://developer.apple.com/tutorials/data/documentation/charts/plottable/init(primitiveplottable:)-6vv53.json": {
+      "etag": "\"162a-65d55e8b17cc7-df\"",
+      "file_path": "documentation/Charts/plottable/init(primitiveplottable)-6vv53.md",
+      "hash": "ab1b95ce730d2248113f657dfe96f485d8051840899ea1687f0abca71ba06d71"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/charts/plottable/init(primitiveplottable:)-7l0ao.json": {
+      "etag": "\"16ed-65d55e8b17cc7-df\"",
+      "file_path": "documentation/Charts/plottable/init(primitiveplottable)-7l0ao.md",
+      "hash": "0dd0d053b4f0d78447d53f97a45cf2c61ef50dfc585fe9728dc11afeae8fadbe"
+    },
     "https://developer.apple.com/tutorials/data/documentation/charts/plottable/init(primitiveplottable:).json": {
       "etag": "\"1efc-65d55e8b17cc7-df\"",
       "file_path": "documentation/Charts/plottable/init(primitiveplottable).md",
       "hash": "5e24bf258bab1a54f18d200b805877724683c0b1b269f80ff75c524b5d83123b"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/charts/plottable/primitiveplottable-4a60p.json": {
+      "etag": "\"14c1-65d55e8b17cc7-df\"",
+      "file_path": "documentation/Charts/plottable/primitiveplottable-4a60p.md",
+      "hash": "2a4acecb7f567c6907af540c4a55d926f98e021a343782e271bdeba16edee195"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/charts/plottable/primitiveplottable-8wzif.json": {
+      "etag": "\"ea9-65d55e8b17cc7-df\"",
+      "file_path": "documentation/Charts/plottable/primitiveplottable-8wzif.md",
+      "hash": "17d33e00923a4010be1d0b498dfe9f8120f3ef61f63d81b104ff0bf764c0b6da"
     },
     "https://developer.apple.com/tutorials/data/documentation/charts/plottable/primitiveplottable-swift.associatedtype.json": {
       "etag": "\"14a7-65d55e8b17cc7-df\"",
@@ -5921,8 +5961,8 @@
   },
   "metadata": {
     "render": {
-      "version": 1
+      "version": 2
     },
-    "total_pages": 1184
+    "total_pages": 1192
   }
 }

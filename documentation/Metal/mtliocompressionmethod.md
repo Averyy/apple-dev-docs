@@ -69,6 +69,8 @@ For more information on the individual codecs, see the [`Algorithm`](../Compress
   Finishes compressing and saves the file that a compression context represents.
 - [enum MTLIOCompressionStatus](./mtliocompressionstatus.md)
   Represents the final state of a compression context.
+- [MTLIOCreateCompressionContext](./mtliocreatecompressioncontext.md)
+  Creates a compression context that you use to compress data into a single file.
 
 
 ---

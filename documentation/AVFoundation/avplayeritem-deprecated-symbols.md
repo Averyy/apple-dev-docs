@@ -22,6 +22,9 @@ Review unsupported symbols and their replacements.
 ### Selecting media options
 - [func selectedMediaOption(in: AVMediaSelectionGroup) -> AVMediaSelectionOption?](./avplayeritem/selectedmediaoption%28in%29.md)
   Returns the media selection option that’s currently selected from the specified group.
+### Setting subtitle options
+- [externalSubtitleOptionLanguages](./avplayeritem/externalsubtitleoptionlanguages.md)
+- [selectedExternalSubtitleOptionLanguage](./avplayeritem/selectedexternalsubtitleoptionlanguage.md)
 
 
 ---

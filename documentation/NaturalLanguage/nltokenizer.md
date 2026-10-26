@@ -60,6 +60,14 @@ For more information, see [Tokenizing natural language text](./tokenizing-natura
   Finds the range of the token at the given index.
 - [func tokenRange(for: Range<String.Index>) -> Range<String.Index>](./nltokenizer/tokenrange%28for%29.md)
   Finds the entire range of all tokens contained completely or partially within the specified range.
+- [- enumerateTokensInRange:usingBlock:](./nltokenizer/enumeratetokensinrange_usingblock_.md)
+  Enumerates over a given range of the string and calls the specified block for each token.
+- [- tokensForRange:](./nltokenizer/tokensforrange_.md)
+  Tokenizes the string within the provided range.
+- [- tokenRangeAtIndex:](./nltokenizer/tokenrangeatindex_.md)
+  Finds the range of the token at the given index.
+- [- tokenRangeForRange:](./nltokenizer/tokenrangeforrange_.md)
+  Finds the entire range of all tokens contained completely or partially within the specified range.
 
 ## Relationships
 

@@ -36,6 +36,10 @@ static SPPoint3D SPRect3DGetMaximum(SPRect3D rect);
   A point that represents the corner of the rectangle with the smallest x-, y-, and z-coordinates.
 - [var origin: Point3D](./origin.md)
   The origin of the rectangle.
+- [size](../sprect3d/size.md)
+  The size of the rectangle.
+- [SPRect3DGetCornerPoints](../sprect3dgetcornerpoints.md)
+  Returns the corner points of the rectangle.
 
 
 ---

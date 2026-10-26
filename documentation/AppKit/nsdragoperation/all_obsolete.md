@@ -38,6 +38,8 @@ NSDragOperationAll_Obsolete
   A constant that indicates that drag can perform all of the drag operations.
 - [static var all: NSDragOperation](./all.md)
   Use [`every`](./every.md) instead.
+- [NSDragOperationNone](./nsdragoperationnone.md)
+  A constant that indicates that the drag cannot perform any operations.
 
 
 ---

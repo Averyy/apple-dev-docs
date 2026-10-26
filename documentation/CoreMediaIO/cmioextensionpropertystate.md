@@ -31,6 +31,10 @@ Create a property state object by specifying the type of data it stores, which m
   Creates a property state with a value.
 - [init(value: ObjectType?, attributes: CMIOExtensionPropertyAttributes<ObjectType>?)](./cmioextensionpropertystate/init%28value,attributes%29.md)
   Creates a property state with a value and attributes.
+- [+ propertyStateWithValue:](./cmioextensionpropertystate/propertystatewithvalue_.md)
+  Returns a new property state with a value.
+- [+ propertyStateWithValue:attributes:](./cmioextensionpropertystate/propertystatewithvalue_attributes_.md)
+  Returns a new property state with a value and attributes.
 ### Inspecting a Property State
 - [var value: ObjectType?](./cmioextensionpropertystate/value.md)
   The value for a property state.

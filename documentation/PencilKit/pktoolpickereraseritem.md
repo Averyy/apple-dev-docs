@@ -34,8 +34,14 @@ An eraser item represents a [`PKEraserTool`](./pkerasertool-swift.struct.md)Â â€
   Creates a new eraser item.
 - [convenience init(type: PKEraserTool.EraserType, width: CGFloat)](./pktoolpickereraseritem/init%28type,width%29.md)
   Creates a new eraser item with the specified width.
+- [- initWithEraserType:](./pktoolpickereraseritem/initwitherasertype_.md)
+  Creates a new eraser item.
+- [- initWithEraserType:width:](./pktoolpickereraseritem/initwitherasertype_width_.md)
+  Creates a new eraser item with the specified width.
 ### Accessing the eraser tool
 - [var eraserTool: PKEraserTool](./pktoolpickereraseritem/erasertool-92wqj.md)
+  An eraser tool for erasing parts of a drawing.
+- [eraserTool](./pktoolpickereraseritem/erasertool-4q3hp.md)
   An eraser tool for erasing parts of a drawing.
 
 ## Relationships

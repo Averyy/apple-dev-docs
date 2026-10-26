@@ -48,6 +48,8 @@ For data that’s more than 4 KB, create an [`MTLBuffer`](../mtlbuffer.md) insta
   Assigns multiple buffers to a range of entries in the object shader argument table.
 - [func setObjectBufferOffset(Int, index: Int)](./setobjectbufferoffset%28_,index%29.md)
   Updates an entry in the object shader argument table with a new location within the entry’s current buffer.
+- [- setObjectBuffers:offsets:withRange:](./setobjectbuffers_offsets_withrange_.md)
+  Encodes a command that assigns multiple buffers to a range of entries in the object shader argument table.
 
 
 ---

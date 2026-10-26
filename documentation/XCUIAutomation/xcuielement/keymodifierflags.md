@@ -53,6 +53,9 @@ Use these flags with the [`typeKey(_:modifierFlags:)`](./typekey%28_,modifierfla
   The Caps Lock key in a combination keystroke.
 - [static var alternate: XCUIElement.KeyModifierFlags](./keymodifierflags/alternate.md)
   The Option key in a combination keystroke.
+### Enumeration Cases
+- [XCUIKeyModifierNone](../xcuikeymodifierflags/xcuikeymodifiernone.md)
+  Indicates no key modifier.
 
 ## Relationships
 

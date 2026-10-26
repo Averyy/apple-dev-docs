@@ -35,6 +35,8 @@ class MPSCNNLocalContrastNormalizationNode
 - [var p0: Float](./mpscnnlocalcontrastnormalizationnode/p0.md)
 - [var pm: Float](./mpscnnlocalcontrastnormalizationnode/pm.md)
 - [var ps: Float](./mpscnnlocalcontrastnormalizationnode/ps.md)
+### Type Methods
+- [+ nodeWithSource:kernelSize:](./mpscnnlocalcontrastnormalizationnode/nodewithsource_kernelsize_.md)
 
 ## Relationships
 

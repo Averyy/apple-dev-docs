@@ -310,6 +310,16 @@
       "file_path": "documentation/ContactProvider/contactprovidermanager/signalenumerator(for).md",
       "hash": "44c4b4be134f419d629f5a0288f9357b91fcb55346cac876e7fa431e78bd09c0"
     },
+    "https://developer.apple.com/documentation/contactprovider/contactproviderversionnumber": {
+      "etag": "\"b7d-65d560cea8e6f-df\"",
+      "file_path": "documentation/ContactProvider/contactproviderversionnumber.md",
+      "hash": "ef12fd363ec8023691cc51a1aaa172b2804241ac6de51fbb3b14b80b2c5d2ac2"
+    },
+    "https://developer.apple.com/documentation/contactprovider/contactproviderversionstring": {
+      "etag": "\"bc3-65d560ceb5794-df\"",
+      "file_path": "documentation/ContactProvider/contactproviderversionstring.md",
+      "hash": "78743cb2c170db3ea8f1b6490b0432a62dff2ca3a28fb9a5945a757c939d5032"
+    },
     "https://developer.apple.com/documentation/contactprovider/defaultcontactproviderdomain": {
       "etag": "\"1a2a-65d560cea8e6f-df\"",
       "file_path": "documentation/ContactProvider/defaultcontactproviderdomain.md",
@@ -640,6 +650,16 @@
       "file_path": "documentation/ContactProvider/contactprovidermanager/signalenumerator(for).md",
       "hash": "44c4b4be134f419d629f5a0288f9357b91fcb55346cac876e7fa431e78bd09c0"
     },
+    "https://developer.apple.com/tutorials/data/documentation/contactprovider/contactproviderversionnumber.json": {
+      "etag": "\"b7d-65d560cea8e6f-df\"",
+      "file_path": "documentation/ContactProvider/contactproviderversionnumber.md",
+      "hash": "ef12fd363ec8023691cc51a1aaa172b2804241ac6de51fbb3b14b80b2c5d2ac2"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/contactprovider/contactproviderversionstring.json": {
+      "etag": "\"bc3-65d560ceb5794-df\"",
+      "file_path": "documentation/ContactProvider/contactproviderversionstring.md",
+      "hash": "78743cb2c170db3ea8f1b6490b0432a62dff2ca3a28fb9a5945a757c939d5032"
+    },
     "https://developer.apple.com/tutorials/data/documentation/contactprovider/defaultcontactproviderdomain.json": {
       "etag": "\"1a2a-65d560cea8e6f-df\"",
       "file_path": "documentation/ContactProvider/defaultcontactproviderdomain.md",
@@ -663,8 +683,8 @@
   },
   "metadata": {
     "render": {
-      "version": 1
+      "version": 2
     },
-    "total_pages": 132
+    "total_pages": 136
   }
 }

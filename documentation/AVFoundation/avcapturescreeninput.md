@@ -34,6 +34,8 @@ Use instances of this class as input sources for [`AVCaptureSession`](./avcaptur
   Initializes a capture screen input that provides media data from the specified display.
 - [init()](./avcapturescreeninput/init%28%29.md)
   Initializes a capture screen input that provides media data from the main screen.
+- [+ new](./avcapturescreeninput/new.md)
+  Creates a capture screen input that provides media data from the main screen.
 ### Setting video capture options
 - [var minFrameDuration: CMTime](./avcapturescreeninput/minframeduration.md)
   The screen input’s minimum frame duration.

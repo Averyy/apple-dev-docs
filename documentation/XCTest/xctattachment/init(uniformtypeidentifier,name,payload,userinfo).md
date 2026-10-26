@@ -34,6 +34,8 @@ Creates an attachment with a [`uniformTypeIdentifier`](./uniformtypeidentifier.m
   Creates an attachment containing the provided data payload.
 - [convenience init(data: Data, uniformTypeIdentifier: String)](./init%28data,uniformtypeidentifier%29.md)
   Creates an attachment containing the provided data payload, with a custom UTI.
+- [+ attachmentWithUniformTypeIdentifier:name:payload:userInfo:](./attachmentwithuniformtypeidentifier_name_payload_userinfo_.md)
+  Creates an attachment containing the provided data payload, optionally with a custom UTI, name, and user-provided metadata dictionary.
 
 
 ---

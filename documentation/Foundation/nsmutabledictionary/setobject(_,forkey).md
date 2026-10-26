@@ -39,6 +39,8 @@ func setObject(_ anObject: Any, forKey aKey: any NSCopying)
 ### Related Documentation
 - [func removeObject(forKey: Any)](./removeobject%28forkey%29.md)
   Removes a given key and its associated value from the dictionary.
+- [- setObject:forKeyedSubscript:](./setobject_forkeyedsubscript_.md)
+  Adds a given key-value pair to the dictionary.
 ### Adding Entries to a Mutable Dictionary
 - [func setValue(Any?, forKey: String)](./setvalue%28_,forkey%29.md)
   Adds a given key-value pair to the dictionary.

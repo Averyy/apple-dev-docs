@@ -33,6 +33,8 @@ An Aztec code symbol is a 2D barcode format defined by the ISO/IEC 24778:2008 st
 ### Creating a Descriptor
 - [init?(payload: Data, isCompact: Bool, layerCount: Int, dataCodewordCount: Int)](./ciazteccodedescriptor/init%28payload,iscompact,layercount,datacodewordcount%29.md)
   Initializes an Aztec code descriptor for the given payload and parameters.
+- [+ descriptorWithPayload:isCompact:layerCount:dataCodewordCount:](./ciazteccodedescriptor/descriptorwithpayload_iscompact_layercount_datacodewordcount_.md)
+  Creates an Aztec code descriptor for the given payload and parameters.
 ### Examining a Descriptor
 - [var errorCorrectedPayload: Data](./ciazteccodedescriptor/errorcorrectedpayload-swift.property.md)
   The error-corrected payload that comprises the the Aztec code symbol.
@@ -42,6 +44,11 @@ An Aztec code symbol is a 2D barcode format defined by the ISO/IEC 24778:2008 st
   The number of data layers in the Aztec code symbol.
 - [var dataCodewordCount: Int](./ciazteccodedescriptor/datacodewordcount-swift.property.md)
   The number of non-error-correction codewords carried by the Aztec code symbol.
+### Instance Variables
+- [dataCodewordCount](./ciazteccodedescriptor/datacodewordcount-c.ivar.md)
+- [errorCorrectedPayload](./ciazteccodedescriptor/errorcorrectedpayload-c.ivar.md)
+- [isCompact](./ciazteccodedescriptor/iscompact-c.ivar.md)
+- [layerCount](./ciazteccodedescriptor/layercount-c.ivar.md)
 
 ## Relationships
 

@@ -36,6 +36,7 @@ class IOUSBHostControllerInterface
 - [func enqueueInterrupts(UnsafePointer<IOUSBHostCIMessage>, count: Int, expedite: Bool) throws](./iousbhostcontrollerinterface/enqueueinterrupts%28_,count,expedite%29.md)
 - [func getPortStateMachine(forCommand: UnsafePointer<IOUSBHostCIMessage>, error: NSErrorPointer) -> IOUSBHostCIPortStateMachine](./iousbhostcontrollerinterface/getportstatemachine%28forcommand,error%29.md)
 - [func getPortStateMachine(forPort: Int, error: NSErrorPointer) -> IOUSBHostCIPortStateMachine](./iousbhostcontrollerinterface/getportstatemachine%28forport,error%29.md)
+- [- initWithCapabilities:queue:interruptRateHz:error:commandHandler:doorbellHandler:interestHandler:](./iousbhostcontrollerinterface/initwithcapabilities_queue_interruptratehz_error_commandhandler_doorbellhandler_interesthandler_.md)
 
 ## Relationships
 

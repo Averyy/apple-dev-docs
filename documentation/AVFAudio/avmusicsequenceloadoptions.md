@@ -30,6 +30,8 @@ enum AVMusicSequenceLoadOptions : NSUInteger;
 ### Creating a load option
 - [init(rawValue: UInt)](./avmusicsequenceloadoptions/init%28rawvalue%29.md)
   Creates a new instance with the raw value you specify.
+- [AVMusicSequenceLoadSMF_PreserveTracks](./avmusicsequenceloadoptions/avmusicsequenceloadsmf_preservetracks.md)
+  An option that preserves the tracks as they are.
 ### Getting standard load options
 - [static var smf_ChannelsToTracks: AVMusicSequenceLoadOptions](./avmusicsequenceloadoptions/smf_channelstotracks.md)
   An option that represents data on different MIDI channels mapped to multiple tracks.

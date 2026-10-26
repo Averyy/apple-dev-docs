@@ -33,6 +33,8 @@ If an empty edit is encountered in the source asset’s track, the compositor co
 ### Identifying source tracks
 - [var sourceSampleDataTrackIDs: [CMPersistentTrackID]](./sourcesampledatatrackids-7i02t.md)
   The identifiers of source sample data tracks in the composition that the object requires to compose frames.
+- [sourceSampleDataTrackIDs](./sourcesampledatatrackids-21o6b.md)
+  The identifiers of source sample data tracks in the composition that the compositor requires to compose frames.
 
 
 ---

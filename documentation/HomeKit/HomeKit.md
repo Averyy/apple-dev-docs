@@ -78,6 +78,8 @@ Using HomeKit, your app can:
 ### Classes
 - [class HMAccessorySetupPayload](./hmaccessorysetuppayload.md)
   A payload for authenticating a HomeKit accessory.
+### Macros
+- [HM_EXTERN](./hm_extern.md)
 
 
 ---

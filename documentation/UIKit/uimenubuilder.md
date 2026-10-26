@@ -45,6 +45,8 @@ To see an example of how to use a menu builder object, see [Adding menus and sho
   Gets the action for the specified action identifier.
 - [func command(for: Selector, propertyList: Any?) -> UICommand?](./uimenubuilder/command%28for,propertylist%29.md)
   Gets the command for the specified selector and property list.
+- [- commandForAction:propertyList:](./uimenubuilder/commandforaction_propertylist_.md)
+  Gets the command for the specified selector and property list.
 ### Inserting child menus
 - [func insertChild(UIMenu, atStartOfMenu: UIMenu.Identifier)](./uimenubuilder/insertchild%28_,atstartofmenu%29.md)
   Adds a child menu as the first element of the specified parent menu.
@@ -86,6 +88,14 @@ To see an example of how to use a menu builder object, see [Adding menus and sho
   Replace an identified menu with menu elements.
 - [func replace(menu: UIMenu.Identifier, with: UIMenu)](./uimenubuilder/replace%28menu,with%29-95tg2.md)
   Replace an identified menu with a menu.
+- [- insertElements:afterCommandForAction:propertyList:](./uimenubuilder/insertelements_aftercommandforaction_propertylist_.md)
+  Insert elements after an identified command.
+- [- insertElements:beforeCommandForAction:propertyList:](./uimenubuilder/insertelements_beforecommandforaction_propertylist_.md)
+  Insert elements before an identified command.
+- [- removeCommandForAction:propertyList:](./uimenubuilder/removecommandforaction_propertylist_.md)
+  Remove an identified command.
+- [- replaceCommandForAction:propertyList:withElements:](./uimenubuilder/replacecommandforaction_propertylist_withelements_.md)
+  Replace an identified command with menu elements.
 
 ## See Also
 

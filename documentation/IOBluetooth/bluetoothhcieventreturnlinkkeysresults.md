@@ -23,6 +23,7 @@ struct BluetoothHCIEventReturnLinkKeysResults;
 - [init()](./bluetoothhcieventreturnlinkkeysresults/init%28%29.md)
 ### Instance Properties
 - [var numLinkKeys: UInt8](./bluetoothhcieventreturnlinkkeysresults/numlinkkeys.md)
+- [linkKeys](./bluetoothhcieventreturnlinkkeysresults/linkkeys.md)
 
 ## Relationships
 

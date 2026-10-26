@@ -53,6 +53,8 @@ A canvas view conforms to the [`PKToolPickerObserver`](./pktoolpickerobserver.md
   The policy that controls the types of touches allowed when drawing on the canvas.
 - [enum PKCanvasViewDrawingPolicy](./pkcanvasviewdrawingpolicy.md)
   Constants that you use to specify the type of drawing gestures your app permits while the user draws on the canvas.
+- [tool](./pkcanvasview/tool-6str6.md)
+  The currently selected tool used for drawing.
 ### Getting the drawing gesture recognizer
 - [var drawingGestureRecognizer: UIGestureRecognizer](./pkcanvasview/drawinggesturerecognizer.md)
   The gesture recognizer that the canvas uses to track touch events.
@@ -126,6 +128,23 @@ A canvas view conforms to the [`PKToolPickerObserver`](./pktoolpickerobserver.md
   A structure that represents the properties of a specific point along a stroke’s path.
 - [struct PKInk](./pkink-swift.struct.md)
   A structure that represents an ink that specifies its type, color, and width.
+- [PKDrawing](./pkdrawingreference.md)
+  A data structure that contains the drawing information captured by a canvas view.
+- [PKStroke](./pkstrokereference.md)
+  A class that represents the paths, boundaries and other properties of a stroke drawn on a canvas.
+- [PKStrokePath](./pkstrokepathreference.md)
+  A class that captures the components of a stroke and provides methods to find and interpolate points along the stroke’s path.
+- [PKStrokePoint](./pkstrokepointreference.md)
+  A class that represents the properties of a specific point along a stroke’s path.
+- [PKInk](./pkinkreference.md)
+  Provides a description of the creation and rendering of marks on a canvas.
+- [PKStrokeRenderState](./pkstrokerenderstatereference.md)
+  An object that captures the render-time state of a stroke, such as grain texture position.
+- [PKConvertedBezierPoint](./pkconvertedbezierpointreference.md)
+  An object that provides information about a B-spline control point converted from a Bézier path.
+- [PKFloatRange](./pkfloatrange.md)
+  A utility class that represents range components of a stroke.
+- [PKInkTypeReed](./pkinktypereed.md)
 
 
 ---

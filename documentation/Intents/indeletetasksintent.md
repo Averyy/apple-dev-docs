@@ -77,12 +77,16 @@ In the preceding examples, `<appName>` represents the name of the app whose Inte
 ### Initializing the Intent Object
 - [convenience init(taskList: INTaskList?, tasks: [INTask]?, all: Bool?)](./indeletetasksintent/init%28tasklist,tasks,all%29.md)
   Creates the intent object with information about the task list and the tasks to delete from it.
+- [- initWithTaskList:tasks:all:](./indeletetasksintent/initwithtasklist_tasks_all_.md)
+  Initializes the intent object with information about the task list and the tasks to delete from it.
 ### Getting the Task Information
 - [var taskList: INTaskList?](./indeletetasksintent/tasklist.md)
   The task list from which to delete tasks.
 - [var tasks: [INTask]?](./indeletetasksintent/tasks.md)
   The tasks to delete from a task list.
 - [var all: Bool?](./indeletetasksintent/all-8gg59.md)
+  A Boolean value that indicates whether to delete all the tasks from a task list.
+- [all](./indeletetasksintent/all-1dt4g.md)
   A Boolean value that indicates whether to delete all the tasks from a task list.
 
 ## Relationships

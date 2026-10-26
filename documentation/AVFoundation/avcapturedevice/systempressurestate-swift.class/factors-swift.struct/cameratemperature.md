@@ -32,6 +32,8 @@ AVCaptureSystemPressureFactorCameraTemperature
   The system’s peak power requirements exceed the battery’s current capacity.
 - [static var depthModuleTemperature: AVCaptureDevice.SystemPressureState.Factors](./depthmoduletemperature.md)
   The module capturing depth information is operating at an elevated temperature.
+- [AVCaptureSystemPressureFactorNone](../../../avcapturesystempressurefactors/avcapturesystempressurefactornone.md)
+  System pressure is currently nominal.
 
 
 ---

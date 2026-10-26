@@ -181,6 +181,9 @@ The majority of vDSP operations are single-threaded and run on a single core. Ho
 ### Constants
 - [vDSP Compile-Time Version Information](./vdsp-compile-time-version-information.md)
   The version of vDSP at compile time.
+### Macros
+- [vDSP_DeprecateTranslations](./vdsp_deprecatetranslations.md)
+- [vDSP_ENUM](./vdsp_enum.md)
 
 ## See Also
 

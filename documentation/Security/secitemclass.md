@@ -39,6 +39,8 @@ These enumerations define constants your application can use to specify the type
   Indicates that the item is a private key of a public-private pair.
 - [SecItemClass.symmetricKeyItemClass](./secitemclass/symmetrickeyitemclass.md)
   Indicates that the item is a private key used for symmetric-key encryption.
+- [kSecAppleSharePasswordItemClass](./secitemclass/ksecapplesharepassworditemclass.md)
+  Indicates that the item is an AppleShare password.
 ### Initializers
 - [init?(rawValue: FourCharCode)](./secitemclass/init%28rawvalue%29.md)
 

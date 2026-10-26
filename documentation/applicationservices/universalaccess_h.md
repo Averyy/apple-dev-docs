@@ -29,6 +29,8 @@ See the Overview section above for header-level documentation.
 ### Constants
 - [UAZoomFocusTypes](./universalaccess_h/api-1553162-uazoomfocustypes.md)
   Values that tell the Universal Access zoom feature what type of event is causing the change in zoom focus.
+- [UAZoomFocusTypes](./api-1553162-uazoomfocustypes.md)
+  Values that tell the Universal Access zoom feature what type of event is causing the change in zoom focus.
 
 
 ---

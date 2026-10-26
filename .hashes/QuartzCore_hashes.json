@@ -10,10 +10,75 @@
       "file_path": "documentation/QuartzCore/action-identifiers.md",
       "hash": "c9164a4ac07311c602f544fd7f4f502c57c9483944544ab5e35b05a8a5af0613"
     },
+    "https://developer.apple.com/documentation/quartzcore/ca_boxable": {
+      "etag": "\"21a1-65d55e1032c0e-df\"",
+      "file_path": "documentation/QuartzCore/ca_boxable.md",
+      "hash": "965e3223fdc8fdeeb37349674d4150a3334031db89353a93eee5c7b8b4440108"
+    },
+    "https://developer.apple.com/documentation/quartzcore/ca_const": {
+      "etag": "\"2195-65d55e1142cbf-df\"",
+      "file_path": "documentation/QuartzCore/ca_const.md",
+      "hash": "98e70dd58427e2c4fb2ba7c3bcad464017c4fe9d410e9ff5ba3dd287e59aca8d"
+    },
+    "https://developer.apple.com/documentation/quartzcore/ca_deprecated": {
+      "etag": "\"21b3-65d55e0fccef2-df\"",
+      "file_path": "documentation/QuartzCore/ca_deprecated.md",
+      "hash": "f3ff2c1c92bfa7b74b1a1dec13dc7de71defefc6f09f0e6f8b4ac54ac204b459"
+    },
+    "https://developer.apple.com/documentation/quartzcore/ca_extern": {
+      "etag": "\"219b-65d55e0ffa0da-df\"",
+      "file_path": "documentation/QuartzCore/ca_extern.md",
+      "hash": "56a5b46e242a4a1af5f1d807fb35c7908ddc8e06ae3fd98fc9f7cbd97f9f6ee9"
+    },
+    "https://developer.apple.com/documentation/quartzcore/ca_extern_c_begin": {
+      "etag": "\"21cb-65d55e1032c0e-df\"",
+      "file_path": "documentation/QuartzCore/ca_extern_c_begin.md",
+      "hash": "c58117bebfc5fce2c24b252bdf90c3b18adbb1202a51f97bd4ffbe83dc7e9ebd"
+    },
+    "https://developer.apple.com/documentation/quartzcore/ca_extern_c_end": {
+      "etag": "\"21bf-65d55e1015a5f-df\"",
+      "file_path": "documentation/QuartzCore/ca_extern_c_end.md",
+      "hash": "fea1afbfd1ad6cad6ffb4be137a6b39937f6cfe5578aa15398c060d110eb0e76"
+    },
+    "https://developer.apple.com/documentation/quartzcore/ca_gnuc": {
+      "etag": "\"2231-65d55e10b63e9-df\"",
+      "file_path": "documentation/QuartzCore/ca_gnuc.md",
+      "hash": "50024ed3e628f79f40915ef6e7c3d63d3ef6a7e21e271002087e8f8dd9fe5c31"
+    },
+    "https://developer.apple.com/documentation/quartzcore/ca_inline": {
+      "etag": "\"219b-65d55e0fe3ef5-df\"",
+      "file_path": "documentation/QuartzCore/ca_inline.md",
+      "hash": "9af14e073a948793f2c7d8f2c119620da365365d26d1fe697fbbb2bc1da623be"
+    },
+    "https://developer.apple.com/documentation/quartzcore/ca_malloc": {
+      "etag": "\"219b-65d55e10b63e9-df\"",
+      "file_path": "documentation/QuartzCore/ca_malloc.md",
+      "hash": "361df8126c53687f2f6eb6752cc00b92a756074455ef58cfc3aa458f7fe25663"
+    },
+    "https://developer.apple.com/documentation/quartzcore/ca_noinline": {
+      "etag": "\"21a7-65d55e112606d-df\"",
+      "file_path": "documentation/QuartzCore/ca_noinline.md",
+      "hash": "a66aed37009999d8ddc0c3b6061ce0e273674c6636c39fe683f217228c4f756a"
+    },
+    "https://developer.apple.com/documentation/quartzcore/ca_noreturn": {
+      "etag": "\"21a7-65d55e10b63e9-df\"",
+      "file_path": "documentation/QuartzCore/ca_noreturn.md",
+      "hash": "d7baa1cf01bb4b58419d5362e646102bd1e2641c0cd3b73c20385f09f798c358"
+    },
+    "https://developer.apple.com/documentation/quartzcore/ca_pure": {
+      "etag": "\"218f-65d55e0fe3ef5-df\"",
+      "file_path": "documentation/QuartzCore/ca_pure.md",
+      "hash": "71b194e7605cfb828f112cdc4d96cacc354f8e0d90ccc150833d7c17612592d8"
+    },
     "https://developer.apple.com/documentation/quartzcore/ca_warn_deprecated": {
       "etag": "\"2ac5-65d55e1142cbf-df\"",
       "file_path": "documentation/QuartzCore/ca_warn_deprecated.md",
       "hash": "ead802613c52eb3c6969f6f6560c73547420a077d4b9b878c2dd3472a4463452"
+    },
+    "https://developer.apple.com/documentation/quartzcore/ca_warn_unused": {
+      "etag": "\"21b9-65d55e1015a5f-df\"",
+      "file_path": "documentation/QuartzCore/ca_warn_unused.md",
+      "hash": "a5e72e6311acd3055984642a95a52402fa779cc903f12ede4761dee6e553de25"
     },
     "https://developer.apple.com/documentation/quartzcore/caaction": {
       "etag": "\"598c-65d55e112606d-df\"",
@@ -29,6 +94,11 @@
       "etag": "\"d6c5-65d55e0fccef2-df\"",
       "file_path": "documentation/QuartzCore/caanimation.md",
       "hash": "eaa043785f106d2f34f1a0797c52cbceba8fe00845dac3eff634481cd9d2a933"
+    },
+    "https://developer.apple.com/documentation/quartzcore/caanimation/animation": {
+      "etag": "\"175f-65d55e107ceaf-df\"",
+      "file_path": "documentation/QuartzCore/caanimation/animation.md",
+      "hash": "6a73178aa4c6f5a59e47164133f5b464afc0dd0f53fbe102e0c53fa07c5fb8bd"
     },
     "https://developer.apple.com/documentation/quartzcore/caanimation/animationevents": {
       "etag": "\"25ec-65d55e107ceaf-df\"",
@@ -180,6 +250,11 @@
       "file_path": "documentation/QuartzCore/caautoresizingmask/init(rawvalue).md",
       "hash": "a0579ace497d834cefb3b85654d2941692a81db1b3c5e00733b810b75a50d56e"
     },
+    "https://developer.apple.com/documentation/quartzcore/caautoresizingmask/kcalayernotsizable": {
+      "etag": "\"3335-65d55e1142cbf-df\"",
+      "file_path": "documentation/QuartzCore/caautoresizingmask/kcalayernotsizable.md",
+      "hash": "152f06e544cb2c6c96dcba98bb144ba4addd0ed6beb94f9e3ebfcadcfa467d2e"
+    },
     "https://developer.apple.com/documentation/quartzcore/caautoresizingmask/layerheightsizable": {
       "etag": "\"3fe2-65d55e1142cbf-df\"",
       "file_path": "documentation/QuartzCore/caautoresizingmask/layerheightsizable.md",
@@ -239,6 +314,11 @@
       "etag": "\"31bf-65d55e0fe3ef5-df\"",
       "file_path": "documentation/QuartzCore/caconstraint/attribute.md",
       "hash": "cbe5f61d302c722738411bb0cbd1304b80d9e83fe5acf377d3f98059a832cc52"
+    },
+    "https://developer.apple.com/documentation/quartzcore/caconstraint/constraintwithattribute:relativeto:attribute:scale:offset:": {
+      "etag": "\"46af-65d55e0fe3ef5-df\"",
+      "file_path": "documentation/QuartzCore/caconstraint/constraintwithattribute_relativeto_attribute_scale_offset_.md",
+      "hash": "a3fc871a32cf2dccf46f2e79ff85661cfc27c67e239c0994bb51f4b36b10b005"
     },
     "https://developer.apple.com/documentation/quartzcore/caconstraint/init(attribute:relativeto:attribute:)": {
       "etag": "\"50c4-65d55e0fe3ef5-df\"",
@@ -334,6 +414,11 @@
       "etag": "\"6c0e-65d55e10b63e9-df\"",
       "file_path": "documentation/QuartzCore/caconstraintlayoutmanager.md",
       "hash": "57161270d90e0ed340c439ac6543547c27ef3f59eaeb3190238742a40484661f"
+    },
+    "https://developer.apple.com/documentation/quartzcore/caconstraintlayoutmanager/layoutmanager": {
+      "etag": "\"164c-65d55e1032c0e-df\"",
+      "file_path": "documentation/QuartzCore/caconstraintlayoutmanager/layoutmanager.md",
+      "hash": "f3c634b0ea68f509069dae9f6f8d41a49210130fdf4893ce88b7d725ac9fddfa"
     },
     "https://developer.apple.com/documentation/quartzcore/cacornermask": {
       "etag": "\"84c2-65d55e1015a5f-df\"",
@@ -574,6 +659,11 @@
       "etag": "\"3606-65d55e112606d-df\"",
       "file_path": "documentation/QuartzCore/caemittercell/emissionrange.md",
       "hash": "70819cf7ac1ea5aa19d1b324b3518921be4c11cd8402b0d30c0fa6148a01e215"
+    },
+    "https://developer.apple.com/documentation/quartzcore/caemittercell/emittercell": {
+      "etag": "\"160e-65d55e112606d-df\"",
+      "file_path": "documentation/QuartzCore/caemittercell/emittercell.md",
+      "hash": "a5fefbecec65947effef2db04f85a50dd8a99cd4d1de95e8a3736e47eeddcacf"
     },
     "https://developer.apple.com/documentation/quartzcore/caemittercell/emittercells": {
       "etag": "\"3d9b-65d55e112606d-df\"",
@@ -915,10 +1005,25 @@
       "file_path": "documentation/QuartzCore/caframeraterange/minimum.md",
       "hash": "340ef77e2807ea3c7e5e860cb23a660d8b766cc852ecaf175a67500cb382c67f"
     },
+    "https://developer.apple.com/documentation/quartzcore/caframeraterange/preferred-39tu4": {
+      "etag": "\"f7a-65d55e0fccef2-df\"",
+      "file_path": "documentation/QuartzCore/caframeraterange/preferred-39tu4.md",
+      "hash": "ef19e841390cb3ec57213243e1c93da6590d33f72871c17f4fa14314035a2427"
+    },
     "https://developer.apple.com/documentation/quartzcore/caframeraterange/preferred-7l3ki": {
       "etag": "\"1f3e-65d55e0fccef2-df\"",
       "file_path": "documentation/QuartzCore/caframeraterange/preferred-7l3ki.md",
       "hash": "8c8bfb63c3b6ba28e3ecd82053a722221e6d5ec0f2f9e396638f4cc79dde210c"
+    },
+    "https://developer.apple.com/documentation/quartzcore/caframeraterangeisequaltorange": {
+      "etag": "\"1431-65d55e1142cbf-df\"",
+      "file_path": "documentation/QuartzCore/caframeraterangeisequaltorange.md",
+      "hash": "93525db77586eb9945bb91ecabf94a31ec4af8af4093a2e01565e1ed8cb77bd4"
+    },
+    "https://developer.apple.com/documentation/quartzcore/caframeraterangemake": {
+      "etag": "\"142a-65d55e1063e60-df\"",
+      "file_path": "documentation/QuartzCore/caframeraterangemake.md",
+      "hash": "1f8dd7b7fa8c79c628190bdf7d3dfb78a4281df651d0d5da0050df637a533a41"
     },
     "https://developer.apple.com/documentation/quartzcore/cagradientlayer": {
       "etag": "\"6c67-65d55e104c65a-df\"",
@@ -1359,6 +1464,11 @@
       "etag": "\"544d-65d55e1106ade-df\"",
       "file_path": "documentation/QuartzCore/calayer/isopaque.md",
       "hash": "f82d0b5bf6d149f56231f39f4298464efea26d696d3851d48ebecc627b646e2b"
+    },
+    "https://developer.apple.com/documentation/quartzcore/calayer/layer": {
+      "etag": "\"23c4-65d55e10cfa40-df\"",
+      "file_path": "documentation/QuartzCore/calayer/layer.md",
+      "hash": "022df4d50cec31b638f03c91da12da1393b1beb0474b6ec09ab00d400b89effb"
     },
     "https://developer.apple.com/documentation/quartzcore/calayer/layoutifneeded()": {
       "etag": "\"44e0-65d55e1106ade-df\"",
@@ -1914,6 +2024,11 @@
       "etag": "\"77ae-65d55e0fccef2-df\"",
       "file_path": "documentation/QuartzCore/camediatimingfunction.md",
       "hash": "19cadfc215fbd1ee63d44d2b4c781194394fd04a7b0379bd31ebbb45a1c40fcd"
+    },
+    "https://developer.apple.com/documentation/quartzcore/camediatimingfunction/functionwithcontrolpoints::::": {
+      "etag": "\"2a0c-65d55e1015a5f-df\"",
+      "file_path": "documentation/QuartzCore/camediatimingfunction/functionwithcontrolpoints____.md",
+      "hash": "59093cfea13d2fd146327f367ff0a93b84e6c24256b82ab6b5e50fa21b2b397f"
     },
     "https://developer.apple.com/documentation/quartzcore/camediatimingfunction/getcontrolpoint(at:values:)": {
       "etag": "\"2de1-65d55e1015a5f-df\"",
@@ -3250,6 +3365,11 @@
       "file_path": "documentation/QuartzCore/identity-transform.md",
       "hash": "3b1df0bcd9711983c8d2cf532cc6cd4bbf6a8183bb900cc2909c55df25658721"
     },
+    "https://developer.apple.com/documentation/quartzcore/kcafillmodefrozen": {
+      "etag": "\"278a-65902598fba8a-df\"",
+      "file_path": "documentation/QuartzCore/kcafillmodefrozen.md",
+      "hash": "e36b96e5f9fef379e1c036403487bf10d4aa9c88d760cc586b17d81102de6e80"
+    },
     "https://developer.apple.com/documentation/quartzcore/kcaonorderin": {
       "etag": "\"249c-65d55e1032c0e-df\"",
       "file_path": "documentation/QuartzCore/kcaonorderin.md",
@@ -3385,10 +3505,75 @@
       "file_path": "documentation/QuartzCore/action-identifiers.md",
       "hash": "c9164a4ac07311c602f544fd7f4f502c57c9483944544ab5e35b05a8a5af0613"
     },
+    "https://developer.apple.com/tutorials/data/documentation/quartzcore/ca_boxable.json": {
+      "etag": "\"21a1-65d55e1032c0e-df\"",
+      "file_path": "documentation/QuartzCore/ca_boxable.md",
+      "hash": "965e3223fdc8fdeeb37349674d4150a3334031db89353a93eee5c7b8b4440108"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/quartzcore/ca_const.json": {
+      "etag": "\"2195-65d55e1142cbf-df\"",
+      "file_path": "documentation/QuartzCore/ca_const.md",
+      "hash": "98e70dd58427e2c4fb2ba7c3bcad464017c4fe9d410e9ff5ba3dd287e59aca8d"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/quartzcore/ca_deprecated.json": {
+      "etag": "\"21b3-65d55e0fccef2-df\"",
+      "file_path": "documentation/QuartzCore/ca_deprecated.md",
+      "hash": "f3ff2c1c92bfa7b74b1a1dec13dc7de71defefc6f09f0e6f8b4ac54ac204b459"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/quartzcore/ca_extern.json": {
+      "etag": "\"219b-65d55e0ffa0da-df\"",
+      "file_path": "documentation/QuartzCore/ca_extern.md",
+      "hash": "56a5b46e242a4a1af5f1d807fb35c7908ddc8e06ae3fd98fc9f7cbd97f9f6ee9"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/quartzcore/ca_extern_c_begin.json": {
+      "etag": "\"21cb-65d55e1032c0e-df\"",
+      "file_path": "documentation/QuartzCore/ca_extern_c_begin.md",
+      "hash": "c58117bebfc5fce2c24b252bdf90c3b18adbb1202a51f97bd4ffbe83dc7e9ebd"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/quartzcore/ca_extern_c_end.json": {
+      "etag": "\"21bf-65d55e1015a5f-df\"",
+      "file_path": "documentation/QuartzCore/ca_extern_c_end.md",
+      "hash": "fea1afbfd1ad6cad6ffb4be137a6b39937f6cfe5578aa15398c060d110eb0e76"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/quartzcore/ca_gnuc.json": {
+      "etag": "\"2231-65d55e10b63e9-df\"",
+      "file_path": "documentation/QuartzCore/ca_gnuc.md",
+      "hash": "50024ed3e628f79f40915ef6e7c3d63d3ef6a7e21e271002087e8f8dd9fe5c31"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/quartzcore/ca_inline.json": {
+      "etag": "\"219b-65d55e0fe3ef5-df\"",
+      "file_path": "documentation/QuartzCore/ca_inline.md",
+      "hash": "9af14e073a948793f2c7d8f2c119620da365365d26d1fe697fbbb2bc1da623be"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/quartzcore/ca_malloc.json": {
+      "etag": "\"219b-65d55e10b63e9-df\"",
+      "file_path": "documentation/QuartzCore/ca_malloc.md",
+      "hash": "361df8126c53687f2f6eb6752cc00b92a756074455ef58cfc3aa458f7fe25663"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/quartzcore/ca_noinline.json": {
+      "etag": "\"21a7-65d55e112606d-df\"",
+      "file_path": "documentation/QuartzCore/ca_noinline.md",
+      "hash": "a66aed37009999d8ddc0c3b6061ce0e273674c6636c39fe683f217228c4f756a"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/quartzcore/ca_noreturn.json": {
+      "etag": "\"21a7-65d55e10b63e9-df\"",
+      "file_path": "documentation/QuartzCore/ca_noreturn.md",
+      "hash": "d7baa1cf01bb4b58419d5362e646102bd1e2641c0cd3b73c20385f09f798c358"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/quartzcore/ca_pure.json": {
+      "etag": "\"218f-65d55e0fe3ef5-df\"",
+      "file_path": "documentation/QuartzCore/ca_pure.md",
+      "hash": "71b194e7605cfb828f112cdc4d96cacc354f8e0d90ccc150833d7c17612592d8"
+    },
     "https://developer.apple.com/tutorials/data/documentation/quartzcore/ca_warn_deprecated.json": {
       "etag": "\"2ac5-65d55e1142cbf-df\"",
       "file_path": "documentation/QuartzCore/ca_warn_deprecated.md",
       "hash": "ead802613c52eb3c6969f6f6560c73547420a077d4b9b878c2dd3472a4463452"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/quartzcore/ca_warn_unused.json": {
+      "etag": "\"21b9-65d55e1015a5f-df\"",
+      "file_path": "documentation/QuartzCore/ca_warn_unused.md",
+      "hash": "a5e72e6311acd3055984642a95a52402fa779cc903f12ede4761dee6e553de25"
     },
     "https://developer.apple.com/tutorials/data/documentation/quartzcore/caaction.json": {
       "etag": "\"598c-65d55e112606d-df\"",
@@ -3404,6 +3589,11 @@
       "etag": "\"d6c5-65d55e0fccef2-df\"",
       "file_path": "documentation/QuartzCore/caanimation.md",
       "hash": "eaa043785f106d2f34f1a0797c52cbceba8fe00845dac3eff634481cd9d2a933"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/quartzcore/caanimation/animation.json": {
+      "etag": "\"175f-65d55e107ceaf-df\"",
+      "file_path": "documentation/QuartzCore/caanimation/animation.md",
+      "hash": "6a73178aa4c6f5a59e47164133f5b464afc0dd0f53fbe102e0c53fa07c5fb8bd"
     },
     "https://developer.apple.com/tutorials/data/documentation/quartzcore/caanimation/animationevents.json": {
       "etag": "\"25ec-65d55e107ceaf-df\"",
@@ -3555,6 +3745,11 @@
       "file_path": "documentation/QuartzCore/caautoresizingmask/init(rawvalue).md",
       "hash": "a0579ace497d834cefb3b85654d2941692a81db1b3c5e00733b810b75a50d56e"
     },
+    "https://developer.apple.com/tutorials/data/documentation/quartzcore/caautoresizingmask/kcalayernotsizable.json": {
+      "etag": "\"3335-65d55e1142cbf-df\"",
+      "file_path": "documentation/QuartzCore/caautoresizingmask/kcalayernotsizable.md",
+      "hash": "152f06e544cb2c6c96dcba98bb144ba4addd0ed6beb94f9e3ebfcadcfa467d2e"
+    },
     "https://developer.apple.com/tutorials/data/documentation/quartzcore/caautoresizingmask/layerheightsizable.json": {
       "etag": "\"3fe2-65d55e1142cbf-df\"",
       "file_path": "documentation/QuartzCore/caautoresizingmask/layerheightsizable.md",
@@ -3614,6 +3809,11 @@
       "etag": "\"31bf-65d55e0fe3ef5-df\"",
       "file_path": "documentation/QuartzCore/caconstraint/attribute.md",
       "hash": "cbe5f61d302c722738411bb0cbd1304b80d9e83fe5acf377d3f98059a832cc52"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/quartzcore/caconstraint/constraintwithattribute:relativeto:attribute:scale:offset:.json": {
+      "etag": "\"46af-65d55e0fe3ef5-df\"",
+      "file_path": "documentation/QuartzCore/caconstraint/constraintwithattribute_relativeto_attribute_scale_offset_.md",
+      "hash": "a3fc871a32cf2dccf46f2e79ff85661cfc27c67e239c0994bb51f4b36b10b005"
     },
     "https://developer.apple.com/tutorials/data/documentation/quartzcore/caconstraint/init(attribute:relativeto:attribute:).json": {
       "etag": "\"50c4-65d55e0fe3ef5-df\"",
@@ -3709,6 +3909,11 @@
       "etag": "\"6c0e-65d55e10b63e9-df\"",
       "file_path": "documentation/QuartzCore/caconstraintlayoutmanager.md",
       "hash": "57161270d90e0ed340c439ac6543547c27ef3f59eaeb3190238742a40484661f"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/quartzcore/caconstraintlayoutmanager/layoutmanager.json": {
+      "etag": "\"164c-65d55e1032c0e-df\"",
+      "file_path": "documentation/QuartzCore/caconstraintlayoutmanager/layoutmanager.md",
+      "hash": "f3c634b0ea68f509069dae9f6f8d41a49210130fdf4893ce88b7d725ac9fddfa"
     },
     "https://developer.apple.com/tutorials/data/documentation/quartzcore/cacornermask.json": {
       "etag": "\"84c2-65d55e1015a5f-df\"",
@@ -3949,6 +4154,11 @@
       "etag": "\"3606-65d55e112606d-df\"",
       "file_path": "documentation/QuartzCore/caemittercell/emissionrange.md",
       "hash": "70819cf7ac1ea5aa19d1b324b3518921be4c11cd8402b0d30c0fa6148a01e215"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/quartzcore/caemittercell/emittercell.json": {
+      "etag": "\"160e-65d55e112606d-df\"",
+      "file_path": "documentation/QuartzCore/caemittercell/emittercell.md",
+      "hash": "a5fefbecec65947effef2db04f85a50dd8a99cd4d1de95e8a3736e47eeddcacf"
     },
     "https://developer.apple.com/tutorials/data/documentation/quartzcore/caemittercell/emittercells.json": {
       "etag": "\"3d9b-65d55e112606d-df\"",
@@ -4290,10 +4500,25 @@
       "file_path": "documentation/QuartzCore/caframeraterange/minimum.md",
       "hash": "340ef77e2807ea3c7e5e860cb23a660d8b766cc852ecaf175a67500cb382c67f"
     },
+    "https://developer.apple.com/tutorials/data/documentation/quartzcore/caframeraterange/preferred-39tu4.json": {
+      "etag": "\"f7a-65d55e0fccef2-df\"",
+      "file_path": "documentation/QuartzCore/caframeraterange/preferred-39tu4.md",
+      "hash": "ef19e841390cb3ec57213243e1c93da6590d33f72871c17f4fa14314035a2427"
+    },
     "https://developer.apple.com/tutorials/data/documentation/quartzcore/caframeraterange/preferred-7l3ki.json": {
       "etag": "\"1f3e-65d55e0fccef2-df\"",
       "file_path": "documentation/QuartzCore/caframeraterange/preferred-7l3ki.md",
       "hash": "8c8bfb63c3b6ba28e3ecd82053a722221e6d5ec0f2f9e396638f4cc79dde210c"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/quartzcore/caframeraterangeisequaltorange.json": {
+      "etag": "\"1431-65d55e1142cbf-df\"",
+      "file_path": "documentation/QuartzCore/caframeraterangeisequaltorange.md",
+      "hash": "93525db77586eb9945bb91ecabf94a31ec4af8af4093a2e01565e1ed8cb77bd4"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/quartzcore/caframeraterangemake.json": {
+      "etag": "\"142a-65d55e1063e60-df\"",
+      "file_path": "documentation/QuartzCore/caframeraterangemake.md",
+      "hash": "1f8dd7b7fa8c79c628190bdf7d3dfb78a4281df651d0d5da0050df637a533a41"
     },
     "https://developer.apple.com/tutorials/data/documentation/quartzcore/cagradientlayer.json": {
       "etag": "\"6c67-65d55e104c65a-df\"",
@@ -4734,6 +4959,11 @@
       "etag": "\"544d-65d55e1106ade-df\"",
       "file_path": "documentation/QuartzCore/calayer/isopaque.md",
       "hash": "f82d0b5bf6d149f56231f39f4298464efea26d696d3851d48ebecc627b646e2b"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/quartzcore/calayer/layer.json": {
+      "etag": "\"23c4-65d55e10cfa40-df\"",
+      "file_path": "documentation/QuartzCore/calayer/layer.md",
+      "hash": "022df4d50cec31b638f03c91da12da1393b1beb0474b6ec09ab00d400b89effb"
     },
     "https://developer.apple.com/tutorials/data/documentation/quartzcore/calayer/layoutifneeded().json": {
       "etag": "\"44e0-65d55e1106ade-df\"",
@@ -5289,6 +5519,11 @@
       "etag": "\"77ae-65d55e0fccef2-df\"",
       "file_path": "documentation/QuartzCore/camediatimingfunction.md",
       "hash": "19cadfc215fbd1ee63d44d2b4c781194394fd04a7b0379bd31ebbb45a1c40fcd"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/quartzcore/camediatimingfunction/functionwithcontrolpoints::::.json": {
+      "etag": "\"2a0c-65d55e1015a5f-df\"",
+      "file_path": "documentation/QuartzCore/camediatimingfunction/functionwithcontrolpoints____.md",
+      "hash": "59093cfea13d2fd146327f367ff0a93b84e6c24256b82ab6b5e50fa21b2b397f"
     },
     "https://developer.apple.com/tutorials/data/documentation/quartzcore/camediatimingfunction/getcontrolpoint(at:values:).json": {
       "etag": "\"2de1-65d55e1015a5f-df\"",
@@ -6625,6 +6860,11 @@
       "file_path": "documentation/QuartzCore/identity-transform.md",
       "hash": "3b1df0bcd9711983c8d2cf532cc6cd4bbf6a8183bb900cc2909c55df25658721"
     },
+    "https://developer.apple.com/tutorials/data/documentation/quartzcore/kcafillmodefrozen.json": {
+      "etag": "\"278a-65902598fba8a-df\"",
+      "file_path": "documentation/QuartzCore/kcafillmodefrozen.md",
+      "hash": "e36b96e5f9fef379e1c036403487bf10d4aa9c88d760cc586b17d81102de6e80"
+    },
     "https://developer.apple.com/tutorials/data/documentation/quartzcore/kcaonorderin.json": {
       "etag": "\"249c-65d55e1032c0e-df\"",
       "file_path": "documentation/QuartzCore/kcaonorderin.md",
@@ -6753,8 +6993,8 @@
   },
   "metadata": {
     "render": {
-      "version": 1
+      "version": 2
     },
-    "total_pages": 1350
+    "total_pages": 1398
   }
 }

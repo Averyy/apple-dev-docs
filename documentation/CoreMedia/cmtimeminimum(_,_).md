@@ -41,6 +41,8 @@ The lesser of the two times.
   Returns the numerical relationship of two times.
 - [func CMTimeMaximum(CMTime, CMTime) -> CMTime](./cmtimemaximum%28_,_%29.md)
   Returns the greater of two time values.
+- [CMTIME_COMPARE_INLINE](./cmtime_compare_inline.md)
+  Returns a Boolean value that indicates whether the specified comparison is true.
 
 
 ---

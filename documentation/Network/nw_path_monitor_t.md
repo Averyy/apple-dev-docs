@@ -51,6 +51,14 @@ typedef NSObject<OS_nw_path_monitor> * nw_path_monitor_t;
 - [typealias nw_path_monitor_cancel_handler_t](./nw_path_monitor_cancel_handler_t.md)
   A handler that indicates when a monitor has been cancelled.
 
+## See Also
+
+### Paths and Interfaces
+- [nw_path_t](./nw_path_t.md)
+  An object that contains information about the properties of the network that a connection uses, or that are available to your app.
+- [nw_interface_t](./nw_interface_t.md)
+  An interface that a network connection uses to send and receive data.
+
 
 ---
 

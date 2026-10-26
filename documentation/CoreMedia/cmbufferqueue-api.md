@@ -38,6 +38,8 @@ Install triggers to observe the queue’s fullness rather than repeatedly pollin
   Creates a buffer queue with callbacks to inspect buffers.
 - [struct CMBufferCallbacks](./cmbuffercallbacks.md)
   A structure that stores the callbacks that perform buffer operations.
+- [CMBufferHandlers](./cmbufferhandlers.md)
+  A structure that stores the handlers that perform buffer operations.
 ### Managing a Queue
 - [func CMBufferQueueEnqueue(CMBufferQueue, buffer: CMBuffer) -> OSStatus](./cmbufferqueueenqueue%28_,buffer%29.md)
   Enqueues a buffer onto a queue.

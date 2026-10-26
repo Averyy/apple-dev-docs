@@ -32,6 +32,8 @@ enum AXHearingDeviceEar : NSUInteger;
   A constant that represents the left ear.
 - [static var right: AXMFiHearingDevice.Ear](./ear/right.md)
   A constant that represents the right ear.
+- [AXHearingDeviceEarNone](../axhearingdeviceear/axhearingdeviceearnone.md)
+  A constant that represents neither ear.
 ### Initializer
 - [init(rawValue: UInt)](./ear/init%28rawvalue%29.md)
   Creates a structure that represents a hearing device ear with the raw value you specify.

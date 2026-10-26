@@ -38,6 +38,8 @@ An extension may set this property to the Bluetooth identifier of a discovered [
   A custom universal type that describes the device’s manner of communication with the extension.
 - [var networkEndpoint: NWEndpoint?](./networkendpoint-3lah1.md)
   An object that describes a local-network device.
+- [networkEndpoint](./networkendpoint-7excg.md)
+  An object that describes a local-network device.
 
 
 ---

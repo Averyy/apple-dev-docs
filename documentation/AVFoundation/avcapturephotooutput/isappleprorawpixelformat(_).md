@@ -47,6 +47,14 @@ class func isAppleProRAWPixelFormat(_ pixelFormat: OSType) -> Bool
   Returns the list of Bayer RAW pixel formats supported for photo data in the specified file type.
 - [class func isBayerRAWPixelFormat(OSType) -> Bool](./isbayerrawpixelformat%28_%29.md)
   Returns a Boolean value that indicates whether the pixel format is a Bayer RAW format.
+- [availablePhotoPixelFormatTypes](./availablephotopixelformattypes-6eyb.md)
+  The pixel formats the capture output supports for photo capture.
+- [availableRawPhotoPixelFormatTypes](./availablerawphotopixelformattypes-5fatm.md)
+  The pixel formats the capture output supports for RAW photo capture.
+- [- supportedPhotoPixelFormatTypesForFileType:](./supportedphotopixelformattypesforfiletype_.md)
+  Returns the list of uncompressed pixel formats supported for photo data in the specified file type.
+- [- supportedRawPhotoPixelFormatTypesForFileType:](./supportedrawphotopixelformattypesforfiletype_.md)
+  Returns the list of Bayer RAW pixel formats supported for photo data in the specified file type.
 
 
 ---

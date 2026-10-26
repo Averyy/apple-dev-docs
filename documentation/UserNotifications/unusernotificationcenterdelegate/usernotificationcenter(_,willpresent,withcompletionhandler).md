@@ -61,6 +61,8 @@ If your delegate does not implement this method, the system behaves as if you ha
 ### Receiving Notifications
 - [struct UNNotificationPresentationOptions](../unnotificationpresentationoptions.md)
   Constants indicating how to present a notification in a foreground app.
+- [UNNotificationPresentationOptionNone](../unnotificationpresentationoptionnone.md)
+  No alert.
 
 
 ---

@@ -53,6 +53,18 @@ convenience init(width: Int, height: Int, featureChannelCount: Int, batchSize: I
   Creates a tensor with the sizes and number of feature channels, and filled with the data and type you specify.
 - [convenience init(width: Int, height: Int, featureChannelCount: Int, batchSize: Int, randomInitializerType: MLCRandomInitializerType)](./init%28width,height,featurechannelcount,batchsize,randominitializertype%29.md)
   Creates a tensor with the sizes, number of feature channels, and random data using the random initializer type you specify.
+- [+ tensorWithShape:](./tensorwithshape_.md)
+  Creates a tensor without data, with the shape you specify.
+- [+ tensorWithShape:dataType:](./tensorwithshape_datatype_.md)
+  Creates a tensor without data, with the shape and data type you specify.
+- [+ tensorWithShape:data:dataType:](./tensorwithshape_data_datatype_.md)
+  Creates a tensor with the shape, data, and data type you specify.
+- [+ tensorWithShape:fillWithData:dataType:](./tensorwithshape_fillwithdata_datatype_.md)
+  Creates a tensor with the shape, scalar value, and data type you specify.
+- [+ tensorWithShape:randomInitializerType:](./tensorwithshape_randominitializertype_.md)
+  Creates a tensor with the shape and random initializer type you specify.
+- [+ tensorWithShape:randomInitializerType:dataType:](./tensorwithshape_randominitializertype_datatype_.md)
+  Creates a tensor with the shape, random initializer, and data type you specify.
 
 
 ---

@@ -44,6 +44,8 @@ func setDepthBias(_ depthBias: Float, slopeScale: Float, clamp: Float)
   Configures this encoder with a reference value for stencil testing.
 - [func setStencilReferenceValue(front: UInt32, back: UInt32)](./setstencilreferencevalue%28front,back%29.md)
   Configures the encoder with different stencil test reference values for front-facing and back-facing primitives.
+- [- setDepthTestMinBound:maxBound:](./setdepthtestminbound_maxbound_.md)
+  Configures the minimum and maximum bounds for depth bounds testing.
 
 
 ---

@@ -38,6 +38,14 @@ typedef NSObject<OS_nw_interface> * nw_interface_t;
 - [func nw_interface_get_index(nw_interface_t) -> UInt32](./nw_interface_get_index%28_%29.md)
   Accesses the system interface index associated with the interface.
 
+## See Also
+
+### Paths and Interfaces
+- [nw_path_t](./nw_path_t.md)
+  An object that contains information about the properties of the network that a connection uses, or that are available to your app.
+- [nw_path_monitor_t](./nw_path_monitor_t.md)
+  An observer that you use to monitor and react to network changes.
+
 
 ---
 

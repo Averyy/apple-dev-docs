@@ -42,6 +42,10 @@ A background configuration is mutually exclusive with background views, so you m
   The current background configuration of the view.
 - [var automaticallyUpdatesBackgroundConfiguration: Bool](./automaticallyupdatesbackgroundconfiguration.md)
   A Boolean value that determines whether the view automatically updates its background configuration when its state changes.
+- [- defaultBackgroundConfiguration](./defaultbackgroundconfiguration.md)
+  Retrieves a background configuration with system default values.
+- [backgroundConfiguration](./backgroundconfiguration-2o8ke.md)
+  The current background configuration of the view.
 
 
 ---

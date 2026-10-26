@@ -34,6 +34,8 @@ var protocolType: UTType { get set }
   An identifier to communicate with the device through Bluetooth wireless technology.
 - [var networkEndpoint: NWEndpoint?](./networkendpoint-3lah1.md)
   An object that describes a local-network device.
+- [networkEndpoint](./networkendpoint-7excg.md)
+  An object that describes a local-network device.
 
 
 ---

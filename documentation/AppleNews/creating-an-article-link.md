@@ -7,9 +7,9 @@ Link to an article by using the article-linking container component.
 
 #### Overview
 
-Use the [`ArticleLink`](https://developer.apple.com/documentation/applenewsformat/articlelink) component to create a link to another Apple News Format article. To create a link, nest child components inside the `ArticleLink` component. You can use these child components to provide content, styling, and layout, like you do with any other Apple News Format component.
+Use the [`ArticleLink`](../AppleNewsFormat/articlelink.md) component to create a link to another Apple News Format article. To create a link, nest child components inside the `ArticleLink` component. You can use these child components to provide content, styling, and layout, like you do with any other Apple News Format component.
 
-The two special components that you can use inside an `ArticleLink` container are [`ArticleThumbnail`](https://developer.apple.com/documentation/applenewsformat/articlethumbnail) and [`ArticleTitle`](https://developer.apple.com/documentation/applenewsformat/articletitle).  VoiceOver uses these components to make Apple News content more accessible. Apple News automatically populates their content; for example, if you define the `ArticleTitle` component without explicitly defining the `text` property,  Apple News uses the title of the linked article.
+The two special components that you can use inside an `ArticleLink` container are [`ArticleThumbnail`](../AppleNewsFormat/articlethumbnail.md) and [`ArticleTitle`](../AppleNewsFormat/articletitle.md).  VoiceOver uses these components to make Apple News content more accessible. Apple News automatically populates their content; for example, if you define the `ArticleTitle` component without explicitly defining the `text` property,  Apple News uses the title of the linked article.
 
 ## See Also
 
@@ -20,29 +20,29 @@ The two special components that you can use inside an `ArticleLink` container ar
   Add a scene to your article to create special effects.
 - [Displaying Components Side By Side](./displaying-components-side-by-side.md)
   Configure a side-by-side, horizontal arrangement of components for your article.
-- [object Header](https://developer.apple.com/documentation/applenewsformat/header)
+- [object Header](../AppleNewsFormat/header.md)
   The component for defining the top area of an article, chapter, or section.
-- [object Container](https://developer.apple.com/documentation/applenewsformat/container)
+- [object Container](../AppleNewsFormat/container.md)
   Properties shared by all container types.
-- [object Section](https://developer.apple.com/documentation/applenewsformat/section)
+- [object Section](../AppleNewsFormat/section.md)
   The component for organizing an article into sections.
-- [object Chapter](https://developer.apple.com/documentation/applenewsformat/chapter)
+- [object Chapter](../AppleNewsFormat/chapter.md)
   The component for organizing an article into chapters.
-- [object Aside](https://developer.apple.com/documentation/applenewsformat/aside)
+- [object Aside](../AppleNewsFormat/aside.md)
   The component for setting apart content that is not directly related to the article, such as promotional content.
-- [object CollectionDisplay](https://developer.apple.com/documentation/applenewsformat/collectiondisplay)
+- [object CollectionDisplay](../AppleNewsFormat/collectiondisplay.md)
   An object used in any container component type to define how the collection of child components is presented.
-- [object HorizontalStackDisplay](https://developer.apple.com/documentation/applenewsformat/horizontalstackdisplay)
+- [object HorizontalStackDisplay](../AppleNewsFormat/horizontalstackdisplay.md)
   The object for displaying components side by side in a Container component.
-- [object FlexibleSpacer](https://developer.apple.com/documentation/applenewsformat/flexiblespacer)
+- [object FlexibleSpacer](../AppleNewsFormat/flexiblespacer.md)
   The component for redistributing empty space inside a horizontal stack collection.
-- [object Divider](https://developer.apple.com/documentation/applenewsformat/divider)
+- [object Divider](../AppleNewsFormat/divider.md)
   The component for defining a horizontal line to visually divide parts of your article.
-- [object ArticleLink](https://developer.apple.com/documentation/applenewsformat/articlelink)
+- [object ArticleLink](../AppleNewsFormat/articlelink.md)
   The container component for creating a link to an article.
-- [type SupportedArticleIdentifier](https://developer.apple.com/documentation/applenewsformat/supportedarticleidentifier)
+- [type SupportedArticleIdentifier](../AppleNewsFormat/supportedarticleidentifier.md)
   The patterns supported for article identifiers in UUID format.
-- [type PublisherArticleIdentifier](https://developer.apple.com/documentation/applenewsformat/publisherarticleidentifier)
+- [type PublisherArticleIdentifier](../AppleNewsFormat/publisherarticleidentifier.md)
   The identifier provided by the publisher.
 
 

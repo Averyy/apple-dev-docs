@@ -52,6 +52,8 @@ kCFXMLErrorElementlessDocument
   Indicates a malformed character reference.
 - [static var errorMalformedParsedCharacterData: CFXMLParserStatusCode](./errormalformedparsedcharacterdata.md)
   Indicates malformed character data.
+- [kCFXMLStatusParseSuccessful](./kcfxmlstatusparsesuccessful.md)
+  Indicates the parser was successful.
 
 
 ---

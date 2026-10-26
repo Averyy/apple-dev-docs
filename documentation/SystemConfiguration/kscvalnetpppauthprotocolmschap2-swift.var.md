@@ -56,6 +56,18 @@ This value applies to the [`kSCPropNetPPPAuthProtocol`](./kscpropnetpppauthproto
   The constant value SharedSecret.
 - [let kSCValNetIPSecLocalIdentifierTypeKeyID: CFString](./kscvalnetipseclocalidentifiertypekeyid-swift.var.md)
   The constant value KeyID.
+- [kCNNetworkInfoKeyBSSID](./kcnnetworkinfokeybssid.md)
+  The key for the network’s BSSID, which is represented as a [`CFStringRef`](../CoreFoundation/cfstring.md) object.
+- [kCNNetworkInfoKeySSID](./kcnnetworkinfokeyssid.md)
+  The key for the network’s SSID, which is represented as a [`CFStringRef`](../CoreFoundation/cfstring.md) object.
+- [kCNNetworkInfoKeySSIDData](./kcnnetworkinfokeyssiddata.md)
+  The key for the network’s SSID, which is represented as a [`CFDataRef`](../CoreFoundation/cfdata.md) object.
+- [kSCPropUsersConsoleUserGID](./kscpropusersconsoleusergid-c.var.md)
+  The deprecated key GID.
+- [kSCPropUsersConsoleUserName](./kscpropusersconsoleusername-c.var.md)
+  The deprecated key Name.
+- [kSCPropUsersConsoleUserUID](./kscpropusersconsoleuseruid-c.var.md)
+  The deprecated key UID.
 
 
 ---

@@ -8,13 +8,13 @@ Special values for the Live Photo request ID that are returned by asynchronous r
 ## Topics
 
 ### Constants
-- [var PHLivePhotoRequestIDInvalid: PHLivePhotoRequestID](https://developer.apple.com/documentation/photos/phlivephotorequestidinvalid)
+- [var PHLivePhotoRequestIDInvalid: PHLivePhotoRequestID](../Photos/phlivephotorequestidinvalid.md)
   The asynchronous Live Photo loading request cannot be canceled.
 
 ## See Also
 
 ### Constants
-- [typealias PHLivePhotoRequestID](https://developer.apple.com/documentation/photos/phlivephotorequestid)
+- [typealias PHLivePhotoRequestID](../Photos/phlivephotorequestid.md)
   A numeric identifier for an asynchronous Live Photo loading request.
 - [Result Handler Info Dictionary Keys](./result-handler-info-dictionary-keys.md)
   Info describing an attempt to load a Live Photo.

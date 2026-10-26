@@ -53,6 +53,8 @@ When AppKit draws a control, it automatically sets the current appearance on the
   Sets the appearance to be the active drawing appearance and perform the specified block.
 - [class var current: NSAppearance!](./nsappearance/current.md)
   Returns the appearance object that’s active on the current thread.
+- [currentDrawingAppearance](./nsappearance/currentdrawingappearance.md)
+  The appearance that the system uses for color and asset resolution, and that’s active for drawing, usually from locking focus on a view.
 ### Managing Vibrancy
 - [var allowsVibrancy: Bool](./nsappearance/allowsvibrancy.md)
   Specifies whether the current appearance allows vibrancy.

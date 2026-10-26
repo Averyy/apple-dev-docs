@@ -85,6 +85,10 @@ For more information about stages and synchronization, see [`MTLStages`](./mtlst
   Makes multiple resources available to the acceleration structure pass.
 - [struct MTLResourceUsage](./mtlresourceusage.md)
   Options that describe how a graphics or compute function uses an argument buffer’s resource.
+- [- useHeaps:count:](./mtlaccelerationstructurecommandencoder/useheaps_count_.md)
+  Specifies that an array of heaps containing resources in an argument buffer can be safely used by the acceleration structure pass.
+- [- useResources:count:usage:](./mtlaccelerationstructurecommandencoder/useresources_count_usage_.md)
+  Specifies that an array of resources in an argument buffer can be safely used by the acceleration structure pass.
 ### Sampling counters
 - [func sampleCounters(sampleBuffer: any MTLCounterSampleBuffer, sampleIndex: Int, barrier: Bool)](./mtlaccelerationstructurecommandencoder/samplecounters%28samplebuffer,sampleindex,barrier%29.md)
   Encodes a command to sample hardware counters at this point in the acceleration structure pass and store the samples into a counter sample buffer.

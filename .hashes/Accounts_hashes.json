@@ -140,6 +140,11 @@
       "file_path": "documentation/Accounts/acaccountstore/requestaccesstoaccounts(with,options,completion).md",
       "hash": "4d5d50a902b3786a26154ad9475965881f14f460b4d4be6fc99b0b0d2b02aaac"
     },
+    "https://developer.apple.com/documentation/accounts/acaccountstore/requestaccesstoaccountswithtype:withcompletionhandler:": {
+      "etag": "\"2cfb-65d55df007c24-df\"",
+      "file_path": "documentation/Accounts/acaccountstore/requestaccesstoaccountswithtype_withcompletionhandler_.md",
+      "hash": "1ca445fccfcaa79155a208cffe1e4f049966a7748e9fe97e2a6d92d35f4befe0"
+    },
     "https://developer.apple.com/documentation/accounts/acaccountstore/saveaccount(_:withcompletionhandler:)": {
       "etag": "\"47bc-65d55df007c24-df\"",
       "file_path": "documentation/Accounts/acaccountstore/saveaccount(_,withcompletionhandler).md",
@@ -149,6 +154,11 @@
       "etag": "\"2e4c-65d55defecffe-df\"",
       "file_path": "documentation/Accounts/acaccountstorecredentialrenewalhandler.md",
       "hash": "0e2ce2c98799db03fdfbafa7971d31c6357b84c4a5f3639d769087e0f80b1154"
+    },
+    "https://developer.apple.com/documentation/accounts/acaccountstoredidchangenotification": {
+      "etag": "\"1245-65d55defecffe-df\"",
+      "file_path": "documentation/Accounts/acaccountstoredidchangenotification.md",
+      "hash": "52c0b3aa6017e8fbccfae3bdf7faa395396cb42c35b6fd9687f5a625994c36e2"
     },
     "https://developer.apple.com/documentation/accounts/acaccountstoreremovecompletionhandler": {
       "etag": "\"2f79-65d55defecffe-df\"",
@@ -209,6 +219,11 @@
       "etag": "\"3264-65d55defecffe-df\"",
       "file_path": "documentation/Accounts/acaccounttypeidentifiertwitter.md",
       "hash": "2b8170ba7ee7b9917a57764a0f28cd9c3f734615ca1f359b2c38209d12d65fe6"
+    },
+    "https://developer.apple.com/documentation/accounts/accounts_extern": {
+      "etag": "\"9f8-65d55df007c24-df\"",
+      "file_path": "documentation/Accounts/accounts_extern.md",
+      "hash": "14c4047115edec5c6e0c08086c2fd7ae45199584f326e7a216eec03561a223e9"
     },
     "https://developer.apple.com/documentation/accounts/acerroraccessdeniedbyprotectionpolicy": {
       "etag": "\"6759-65d55defecffe-df\"",
@@ -540,6 +555,11 @@
       "file_path": "documentation/Accounts/acaccountstore/requestaccesstoaccounts(with,options,completion).md",
       "hash": "4d5d50a902b3786a26154ad9475965881f14f460b4d4be6fc99b0b0d2b02aaac"
     },
+    "https://developer.apple.com/tutorials/data/documentation/accounts/acaccountstore/requestaccesstoaccountswithtype:withcompletionhandler:.json": {
+      "etag": "\"2cfb-65d55df007c24-df\"",
+      "file_path": "documentation/Accounts/acaccountstore/requestaccesstoaccountswithtype_withcompletionhandler_.md",
+      "hash": "1ca445fccfcaa79155a208cffe1e4f049966a7748e9fe97e2a6d92d35f4befe0"
+    },
     "https://developer.apple.com/tutorials/data/documentation/accounts/acaccountstore/saveaccount(_:withcompletionhandler:).json": {
       "etag": "\"47bc-65d55df007c24-df\"",
       "file_path": "documentation/Accounts/acaccountstore/saveaccount(_,withcompletionhandler).md",
@@ -549,6 +569,11 @@
       "etag": "\"2e4c-65d55defecffe-df\"",
       "file_path": "documentation/Accounts/acaccountstorecredentialrenewalhandler.md",
       "hash": "0e2ce2c98799db03fdfbafa7971d31c6357b84c4a5f3639d769087e0f80b1154"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/accounts/acaccountstoredidchangenotification.json": {
+      "etag": "\"1245-65d55defecffe-df\"",
+      "file_path": "documentation/Accounts/acaccountstoredidchangenotification.md",
+      "hash": "52c0b3aa6017e8fbccfae3bdf7faa395396cb42c35b6fd9687f5a625994c36e2"
     },
     "https://developer.apple.com/tutorials/data/documentation/accounts/acaccountstoreremovecompletionhandler.json": {
       "etag": "\"2f79-65d55defecffe-df\"",
@@ -609,6 +634,11 @@
       "etag": "\"3264-65d55defecffe-df\"",
       "file_path": "documentation/Accounts/acaccounttypeidentifiertwitter.md",
       "hash": "2b8170ba7ee7b9917a57764a0f28cd9c3f734615ca1f359b2c38209d12d65fe6"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/accounts/accounts_extern.json": {
+      "etag": "\"9f8-65d55df007c24-df\"",
+      "file_path": "documentation/Accounts/accounts_extern.md",
+      "hash": "14c4047115edec5c6e0c08086c2fd7ae45199584f326e7a216eec03561a223e9"
     },
     "https://developer.apple.com/tutorials/data/documentation/accounts/acerroraccessdeniedbyprotectionpolicy.json": {
       "etag": "\"6759-65d55defecffe-df\"",
@@ -803,8 +833,8 @@
   },
   "metadata": {
     "render": {
-      "version": 1
+      "version": 2
     },
-    "total_pages": 160
+    "total_pages": 166
   }
 }

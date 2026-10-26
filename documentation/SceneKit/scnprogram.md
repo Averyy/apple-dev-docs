@@ -224,6 +224,9 @@ Custom uniform variables. To provide values for your own custom uniform variable
   The Metal shader library containing shader functions to be used by this program.
 ### Initializers
 - [init?(coder: NSCoder)](./scnprogram/init%28coder%29.md)
+### Creating a Program
+- [+ program](./scnprogram/program.md)
+  Creates a new program object.
 
 ## Relationships
 

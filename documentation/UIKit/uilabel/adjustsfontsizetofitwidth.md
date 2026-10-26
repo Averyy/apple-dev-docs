@@ -36,6 +36,8 @@ To enable [`adjustsFontSizeToFitWidth`](./adjustsfontsizetofitwidth.md) in Inter
   The font of the text.
 - [var enablesMarqueeWhenAncestorFocused: Bool](./enablesmarqueewhenancestorfocused.md)
   A Boolean value that determines whether the label scrolls its text while one of its containing views has focus.
+- [minimumFontSize](./minimumfontsize.md)
+  The size of the smallest permissible font when drawing the label’s text.
 ### Sizing the label’s text
 - [var allowsDefaultTighteningForTruncation: Bool](./allowsdefaulttighteningfortruncation.md)
   A Boolean value that determines whether the label tightens text before truncating.
@@ -47,6 +49,8 @@ To enable [`adjustsFontSizeToFitWidth`](./adjustsfontsizetofitwidth.md) in Inter
   The maximum number of lines for rendering text.
 - [var sizingRule: UILetterformAwareSizingRule](../uiletterformawareadjusting/sizingrule.md)
   The typographic bounds-sizing behavior that handles text with fonts that contain oversize characters.
+- [adjustsLetterSpacingToFitWidth](./adjustsletterspacingtofitwidth.md)
+  A Boolean value that indicates whether the label adjusts spacing between letters to fit the string within the label’s bounds rectangle.
 
 
 ---

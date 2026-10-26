@@ -50,6 +50,11 @@ If `persistence` is [`URLCredential.Persistence.permanent`](./persistence-swift.
   Creates a URL credential instance for server trust authentication, initialized with a accepted trust.
 - [URLCredential.Persistence](./persistence-swift.enum.md)
   Constants that specify how long the credential will be kept.
+- [+ credentialWithIdentity:certificates:persistence:](../nsurlcredential/credentialwithidentity_certificates_persistence_.md)
+  Creates a URL credential instance for resolving a client certificate authentication challenge.
+### Related Documentation
+- [+ credentialWithUser:password:persistence:](../nsurlcredential/credentialwithuser_password_persistence_.md)
+  Creates a URL credential instance for internet password authentication with a given user name and password, using a given persistence setting.
 
 
 ---

@@ -23,6 +23,8 @@ static simd_uint3 simd_make_uint3(unsigned int other);
   Returns a new vector from the specified scalar values.
 - [func simd_make_uint3_undef(UInt32) -> simd_uint3](./simd_make_uint3_undef%28_%29-1waea.md)
   Returns a new vector with the first element set to a scalar value, and other elements undefined.
+- [vector3](./vector3-3qyta.md)
+  Returns a new vector from the specified scalar values.
 
 
 ---

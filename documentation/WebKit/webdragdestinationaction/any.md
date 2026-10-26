@@ -28,6 +28,8 @@ WebDragDestinationActionAny
   Allows editable documents to be changed by the drag operation.
 - [static var load: WebDragDestinationAction](./load.md)
   Allows the drag operation to change the location.
+- [WebDragDestinationActionNone](./webdragdestinationactionnone.md)
+  No action.
 
 
 ---

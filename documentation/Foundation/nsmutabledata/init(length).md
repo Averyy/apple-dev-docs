@@ -38,6 +38,11 @@ An initialized `NSMutableData` object containing `length` zeroed bytes. The retu
 ### Creating Mutable Data
 - [init?(capacity: Int)](./init%28capacity%29.md)
   Returns an initialized mutable data object capable of holding the specified number of bytes.
+### Related Documentation
+- [+ dataWithCapacity:](./datawithcapacity_.md)
+  Creates and returns a mutable data object capable of holding the specified number of bytes.
+- [+ dataWithLength:](./datawithlength_.md)
+  Creates and returns an mutable data object containing a given number of zeroed bytes.
 
 
 ---

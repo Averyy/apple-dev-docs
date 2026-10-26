@@ -46,6 +46,8 @@ MLCReductionTypeSum
   A reduction operation that applies a lasso regularization penalty.
 - [var debugDescription: String](./debugdescription.md)
   A textual description of the reduction operation you use for debugging.
+- [MLCReductionTypeCount](./mlcreductiontypecount.md)
+  The total number of reduction operations.
 
 
 ---

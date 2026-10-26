@@ -52,6 +52,8 @@ NSFontDescriptorClassSlabSerifs
   The font’s characters include variations of old style and transitional serifs.
 - [static var classFreeformSerifs: NSFontDescriptor.SymbolicTraits](./classfreeformserifs.md)
   The font’s characters include serifs, and don’t generally fit within other serif design classifications.
+- [NSFontDescriptorClassUnknown](../../nsfontdescriptorsymbolictraits/nsfontdescriptorclassunknown.md)
+  The font has no design classification.
 
 
 ---

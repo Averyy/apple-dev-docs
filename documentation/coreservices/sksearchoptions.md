@@ -30,6 +30,13 @@ typedef UInt32 SKSearchOptions;
   This option alters query behavior so that spaces are interpreted as Boolean `OR` operators.
 - [var kSKSearchOptionFindSimilar: Int](./ksksearchoptionfindsimilar.md)
   This option alters query behavior so that Search Kit returns references to documents that are similar to an example text string. When this option is specified, Search Kit ignores all query operators.
+- [kSKSearchOptionDefault](./api-1448600-anonymous/ksksearchoptiondefault.md)
+- [kSKSearchOptionNoRelevanceScores](./api-1448600-anonymous/ksksearchoptionnorelevancescores.md)
+  This option saves time during a search by suppressing the computation of relevance scores.
+- [kSKSearchOptionSpaceMeansOR](./api-1448600-anonymous/ksksearchoptionspacemeansor.md)
+  This option alters query behavior so that spaces are interpreted as Boolean `OR` operators.
+- [kSKSearchOptionFindSimilar](./api-1448600-anonymous/ksksearchoptionfindsimilar.md)
+  This option alters query behavior so that Search Kit returns references to documents that are similar to an example text string. When this option is specified, Search Kit ignores all query operators.
 
 
 ---

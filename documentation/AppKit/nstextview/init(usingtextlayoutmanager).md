@@ -26,6 +26,7 @@ convenience init(usingTextLayoutManager: Bool)
   Initializes a text view.
 - [init?(coder: NSCoder)](./init%28coder%29.md)
   Initializes a text view with data in an unarchiver.
+- [+ textViewUsingTextLayoutManager:](./textviewusingtextlayoutmanager_.md)
 
 
 ---

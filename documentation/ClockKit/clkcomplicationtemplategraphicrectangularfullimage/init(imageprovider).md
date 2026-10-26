@@ -23,6 +23,12 @@ init(imageProvider: CLKFullColorImageProvider)
 
 - `imageProvider`: A full-color image provider.
 
+## See Also
+
+### Creating the Template
+- [+ templateWithImageProvider:](./templatewithimageprovider_.md)
+  Returns a template with a large rectangular image.
+
 
 ---
 

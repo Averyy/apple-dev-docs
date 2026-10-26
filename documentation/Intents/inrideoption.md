@@ -61,6 +61,8 @@ You create [`INRideOption`](./inrideoption.md) objects in response to ride reque
   A Boolean value indicating whether the price uses a metered fare instead of a fixed price.
 - [var fareLineItems: [INRideFareLineItem]?](./inrideoption/farelineitems.md)
   An array of price-related items that break down the costs of the ride.
+- [usesMeteredFare](./inrideoption/usesmeteredfare-25g1c.md)
+  A Boolean value indicating whether the price uses a metered fare instead of a fixed price.
 ### Identifying the Ride Option
 - [var identifier: String?](./inrideoption/identifier.md)
   A unique identifier for the ride option.

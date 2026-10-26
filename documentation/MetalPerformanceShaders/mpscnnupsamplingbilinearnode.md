@@ -33,6 +33,9 @@ class MPSCNNUpsamplingBilinearNode
 - [var scaleFactorX: Double](./mpscnnupsamplingbilinearnode/scalefactorx.md)
 - [var scaleFactorY: Double](./mpscnnupsamplingbilinearnode/scalefactory.md)
 - [var alignCorners: Bool](./mpscnnupsamplingbilinearnode/aligncorners.md)
+### Type Methods
+- [+ nodeWithSource:integerScaleFactorX:integerScaleFactorY:](./mpscnnupsamplingbilinearnode/nodewithsource_integerscalefactorx_integerscalefactory_.md)
+- [+ nodeWithSource:integerScaleFactorX:integerScaleFactorY:alignCorners:](./mpscnnupsamplingbilinearnode/nodewithsource_integerscalefactorx_integerscalefactory_aligncorners_.md)
 
 ## Relationships
 

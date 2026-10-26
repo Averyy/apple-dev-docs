@@ -25,6 +25,12 @@ init(source: any CMIOExtensionProviderSource, clientQueue: dispatch_queue_t?)
 - `source`: An extension-specific object that conforms to the [`CMIOExtensionProviderSource`](../cmioextensionprovidersource.md) protocol.
 - `clientQueue`: A client dispatch queue, or `nil` to use the default queue.
 
+## See Also
+
+### Creating a Provider
+- [+ providerWithSource:clientQueue:](./providerwithsource_clientqueue_.md)
+  Returns a new extension provider with the specified source and dispatch queue.
+
 
 ---
 

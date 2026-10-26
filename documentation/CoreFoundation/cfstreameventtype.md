@@ -42,6 +42,8 @@ This enumeration defines constants for stream-related events.
   An error has occurred on the stream.
 - [static var endEncountered: CFStreamEventType](./cfstreameventtype/endencountered.md)
   The end of the stream has been reached.
+- [kCFStreamEventNone](./cfstreameventtype/kcfstreameventnone.md)
+  No event has occurred.
 ### Initializers
 - [init(rawValue: CFOptionFlags)](./cfstreameventtype/init%28rawvalue%29.md)
 

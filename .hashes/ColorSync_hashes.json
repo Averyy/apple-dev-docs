@@ -65,6 +65,11 @@
       "file_path": "documentation/ColorSync/colorsync_api_version.md",
       "hash": "749d8a2ed3dde3ab058bc07e30f0e57dcd0091dc63f41c848af85a75535645d3"
     },
+    "https://developer.apple.com/documentation/colorsync/colorsync_iterate_async": {
+      "etag": "\"ac1-65d55ad4811b5-df\"",
+      "file_path": "documentation/ColorSync/colorsync_iterate_async.md",
+      "hash": "96fa35bdc71ba173f8bc51e783cd0042d8cbdbbc280a583ee12751e2c095269a"
+    },
     "https://developer.apple.com/documentation/colorsync/colorsync_md5_length": {
       "etag": "\"2740-65d55ad4e60b1-df\"",
       "file_path": "documentation/ColorSync/colorsync_md5_length.md",
@@ -550,6 +555,16 @@
       "file_path": "documentation/ColorSync/colorsyncprofilecopyheader(_).md",
       "hash": "0b3be2970093e94a1c9d437f84610cdf98b4a14d797f9d4ff404ba754d261581"
     },
+    "https://developer.apple.com/documentation/colorsync/colorsyncprofilecopyheadroomadaptivegaincurveinfodictionary": {
+      "etag": "\"1e59-65d55ad4e60b1-df\"",
+      "file_path": "documentation/ColorSync/colorsyncprofilecopyheadroomadaptivegaincurveinfodictionary.md",
+      "hash": "0705d5f75d481a8493102c08b974cd841d84800b840c9e84a9d7537fc61d092c"
+    },
+    "https://developer.apple.com/documentation/colorsync/colorsyncprofilecopyheadroomadaptivegaincurvemetadata": {
+      "etag": "\"1fce-65d55ad4a26df-df\"",
+      "file_path": "documentation/ColorSync/colorsyncprofilecopyheadroomadaptivegaincurvemetadata.md",
+      "hash": "4baf46996d44d02b01e5192c74bf26f5c1bda64e420a84f688320174334ebfae"
+    },
     "https://developer.apple.com/documentation/colorsync/colorsyncprofilecopytag(_:_:)": {
       "etag": "\"507f-65d55ad4811b5-df\"",
       "file_path": "documentation/ColorSync/colorsyncprofilecopytag(_,_).md",
@@ -564,6 +579,16 @@
       "etag": "\"3fc6-65d55ad509b06-df\"",
       "file_path": "documentation/ColorSync/colorsyncprofilecreate(_,_).md",
       "hash": "77a0685f890e96f84f6a8fd2555b1153223bb57f18abfd4ad00009c358ee7d24"
+    },
+    "https://developer.apple.com/documentation/colorsync/colorsyncprofilecreatecopywithheadroomadaptivegaincurveinfodictionary": {
+      "etag": "\"219f-65d55ad4e60b1-df\"",
+      "file_path": "documentation/ColorSync/colorsyncprofilecreatecopywithheadroomadaptivegaincurveinfodictionary.md",
+      "hash": "248b633a19192e612a32bd33799b79eaea4a05ae39a6b7e90dfdd156629472b2"
+    },
+    "https://developer.apple.com/documentation/colorsync/colorsyncprofilecreatecopywithheadroomadaptivegaincurvemetadata": {
+      "etag": "\"29be-65d55ad509b06-df\"",
+      "file_path": "documentation/ColorSync/colorsyncprofilecreatecopywithheadroomadaptivegaincurvemetadata.md",
+      "hash": "b9918beb6fabdd8a08950aff0e1c685f3aee7492c049b4c8591ac9d025b3336c"
     },
     "https://developer.apple.com/documentation/colorsync/colorsyncprofilecreatedeviceprofile(_:_:_:)": {
       "etag": "\"67f5-65d55ad42f81d-df\"",
@@ -739,6 +764,101 @@
       "etag": "\"52bd-65d55ad4e60b1-df\"",
       "file_path": "documentation/ColorSync/colorsyncunregisterdevice(_,_).md",
       "hash": "934876bdc4bb2169aefa7a135660f2f9c1afc083d643a1fe569ee495ade2d44d"
+    },
+    "https://developer.apple.com/documentation/colorsync/cs_available_but_deprecated": {
+      "etag": "\"1766-65d55ad51ca49-df\"",
+      "file_path": "documentation/ColorSync/cs_available_but_deprecated.md",
+      "hash": "96d98fd86b8a6103719e800ede6b2d3ae11efb0c5c79bacdc6c82d6b4d6fc946"
+    },
+    "https://developer.apple.com/documentation/colorsync/cs_available_but_deprecated1": {
+      "etag": "\"17a8-65d55ad42f81d-df\"",
+      "file_path": "documentation/ColorSync/cs_available_but_deprecated1.md",
+      "hash": "9a9d1d010e895a97289bc2b7d3b28bb9a4a905b7f336a7ebb418836e23d70d01"
+    },
+    "https://developer.apple.com/documentation/colorsync/cs_available_but_deprecated2": {
+      "etag": "\"17e9-65d55ad51ca49-df\"",
+      "file_path": "documentation/ColorSync/cs_available_but_deprecated2.md",
+      "hash": "9757433cd60a971d7bf89c85aa17ee44f5254a3e5d4b4173a86ec952642fd5b2"
+    },
+    "https://developer.apple.com/documentation/colorsync/cs_available_but_deprecated3": {
+      "etag": "\"1829-65d55ad509b06-df\"",
+      "file_path": "documentation/ColorSync/cs_available_but_deprecated3.md",
+      "hash": "9bda248acddb5f709dce11bd0015fb2503840b25c99fbeb65f46fe3f58f71107"
+    },
+    "https://developer.apple.com/documentation/colorsync/cs_available_but_deprecated4": {
+      "etag": "\"186b-65d55ad4e60b1-df\"",
+      "file_path": "documentation/ColorSync/cs_available_but_deprecated4.md",
+      "hash": "1d5a30c4a98cd2d91c40a0ab74e17ee890da727de6e08a55f2a8c7e96fa389da"
+    },
+    "https://developer.apple.com/documentation/colorsync/cs_available_but_deprecated5": {
+      "etag": "\"18ab-65d55ad4c16e0-df\"",
+      "file_path": "documentation/ColorSync/cs_available_but_deprecated5.md",
+      "hash": "d6eece5e21572c51b4d039cc3c955bbfd615983517f96d358cabb9459408fc91"
+    },
+    "https://developer.apple.com/documentation/colorsync/cs_available_desktop": {
+      "etag": "\"184f-65d55ad4e60b1-df\"",
+      "file_path": "documentation/ColorSync/cs_available_desktop.md",
+      "hash": "693a808bc6da7e5732408c519f06113305d7617a8b49a405c2fb847470d6f21d"
+    },
+    "https://developer.apple.com/documentation/colorsync/cs_available_starting": {
+      "etag": "\"1819-65d55ad4e60b1-df\"",
+      "file_path": "documentation/ColorSync/cs_available_starting.md",
+      "hash": "9ba606cca71a27953d14d09aaee7bb77629e252095266048fee949a79060d43d"
+    },
+    "https://developer.apple.com/documentation/colorsync/cs_available_starting1": {
+      "etag": "\"185a-65d55ad4e60b1-df\"",
+      "file_path": "documentation/ColorSync/cs_available_starting1.md",
+      "hash": "a8d23e6dbe3e12f87f25670af09fb6236e8ea04ee6d6c20452a6bcd5baeb0c5f"
+    },
+    "https://developer.apple.com/documentation/colorsync/cs_available_starting2": {
+      "etag": "\"189a-65d55ad4a26df-df\"",
+      "file_path": "documentation/ColorSync/cs_available_starting2.md",
+      "hash": "1e722eed1515f6f20ba7bf1fde06baa700c931ee61eca078690f4a4681322022"
+    },
+    "https://developer.apple.com/documentation/colorsync/cs_available_starting_ios": {
+      "etag": "\"186c-65d55ad4a26df-df\"",
+      "file_path": "documentation/ColorSync/cs_available_starting_ios.md",
+      "hash": "3370b208f3105e1db9dc7d7bf2203b3b8c697d04ed5658135f71000b658890ec"
+    },
+    "https://developer.apple.com/documentation/colorsync/cs_unavailable_desktop": {
+      "etag": "\"1800-65d55ad509b06-df\"",
+      "file_path": "documentation/ColorSync/cs_unavailable_desktop.md",
+      "hash": "70b53b6475d17b9b416d1c5246156862979d15096b04e345ec4d5421272f75ab"
+    },
+    "https://developer.apple.com/documentation/colorsync/cs_unavailable_embedded": {
+      "etag": "\"1806-65d55ad4811b5-df\"",
+      "file_path": "documentation/ColorSync/cs_unavailable_embedded.md",
+      "hash": "27d4690c62cf19082e1dc84692f80196a383fed6ba70f3a13848b75f7b0cd71c"
+    },
+    "https://developer.apple.com/documentation/colorsync/csexport": {
+      "etag": "\"f48-65d55ad4a26df-df\"",
+      "file_path": "documentation/ColorSync/csexport.md",
+      "hash": "e311662a06d34d170f22bde668edb3b858ecb4090028320d896944469484b890"
+    },
+    "https://developer.apple.com/documentation/colorsync/csextern": {
+      "etag": "\"f48-65d55ad42f81d-df\"",
+      "file_path": "documentation/ColorSync/csextern.md",
+      "hash": "c909835998ee90138900a39bf6a641e135090f5015fd2c2186a19e58facdc397"
+    },
+    "https://developer.apple.com/documentation/colorsync/csextern_desktop": {
+      "etag": "\"f78-65d55ad4a26df-df\"",
+      "file_path": "documentation/ColorSync/csextern_desktop.md",
+      "hash": "7ded9476a6e520e43a110bd254cc77c510d1d76b2197e6023abfc5e444b6bf15"
+    },
+    "https://developer.apple.com/documentation/colorsync/cslocal": {
+      "etag": "\"f42-65d55ad4a26df-df\"",
+      "file_path": "documentation/ColorSync/cslocal.md",
+      "hash": "64a2c499aabf1f3715acf7be2cb03a6bc2cd040bb904b12ee4f13ebf86586443"
+    },
+    "https://developer.apple.com/documentation/colorsync/get_cs_avail_but_depr_macro": {
+      "etag": "\"18ee-65d55ad4c16e0-df\"",
+      "file_path": "documentation/ColorSync/get_cs_avail_but_depr_macro.md",
+      "hash": "c16c995c01314265ce3918f50c018a63cf2e2d998edeb4f57cd26292e16e60bb"
+    },
+    "https://developer.apple.com/documentation/colorsync/get_cs_avail_macro": {
+      "etag": "\"18cc-65d55ad509b06-df\"",
+      "file_path": "documentation/ColorSync/get_cs_avail_macro.md",
+      "hash": "cad665268e84fc7d57dd64e1c8b899887ea23b90be44aa26d44abc369eaddf6d"
     },
     "https://developer.apple.com/documentation/colorsync/headroom-adaptive-gain-curve": {
       "etag": "\"113a6-65b3ae3135d35-df\"",
@@ -1820,6 +1940,11 @@
       "file_path": "documentation/ColorSync/colorsync_api_version.md",
       "hash": "749d8a2ed3dde3ab058bc07e30f0e57dcd0091dc63f41c848af85a75535645d3"
     },
+    "https://developer.apple.com/tutorials/data/documentation/colorsync/colorsync_iterate_async.json": {
+      "etag": "\"ac1-65d55ad4811b5-df\"",
+      "file_path": "documentation/ColorSync/colorsync_iterate_async.md",
+      "hash": "96fa35bdc71ba173f8bc51e783cd0042d8cbdbbc280a583ee12751e2c095269a"
+    },
     "https://developer.apple.com/tutorials/data/documentation/colorsync/colorsync_md5_length.json": {
       "etag": "\"2740-65d55ad4e60b1-df\"",
       "file_path": "documentation/ColorSync/colorsync_md5_length.md",
@@ -2305,6 +2430,16 @@
       "file_path": "documentation/ColorSync/colorsyncprofilecopyheader(_).md",
       "hash": "0b3be2970093e94a1c9d437f84610cdf98b4a14d797f9d4ff404ba754d261581"
     },
+    "https://developer.apple.com/tutorials/data/documentation/colorsync/colorsyncprofilecopyheadroomadaptivegaincurveinfodictionary.json": {
+      "etag": "\"1e59-65d55ad4e60b1-df\"",
+      "file_path": "documentation/ColorSync/colorsyncprofilecopyheadroomadaptivegaincurveinfodictionary.md",
+      "hash": "0705d5f75d481a8493102c08b974cd841d84800b840c9e84a9d7537fc61d092c"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/colorsync/colorsyncprofilecopyheadroomadaptivegaincurvemetadata.json": {
+      "etag": "\"1fce-65d55ad4a26df-df\"",
+      "file_path": "documentation/ColorSync/colorsyncprofilecopyheadroomadaptivegaincurvemetadata.md",
+      "hash": "4baf46996d44d02b01e5192c74bf26f5c1bda64e420a84f688320174334ebfae"
+    },
     "https://developer.apple.com/tutorials/data/documentation/colorsync/colorsyncprofilecopytag(_:_:).json": {
       "etag": "\"507f-65d55ad4811b5-df\"",
       "file_path": "documentation/ColorSync/colorsyncprofilecopytag(_,_).md",
@@ -2319,6 +2454,16 @@
       "etag": "\"3fc6-65d55ad509b06-df\"",
       "file_path": "documentation/ColorSync/colorsyncprofilecreate(_,_).md",
       "hash": "77a0685f890e96f84f6a8fd2555b1153223bb57f18abfd4ad00009c358ee7d24"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/colorsync/colorsyncprofilecreatecopywithheadroomadaptivegaincurveinfodictionary.json": {
+      "etag": "\"219f-65d55ad4e60b1-df\"",
+      "file_path": "documentation/ColorSync/colorsyncprofilecreatecopywithheadroomadaptivegaincurveinfodictionary.md",
+      "hash": "248b633a19192e612a32bd33799b79eaea4a05ae39a6b7e90dfdd156629472b2"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/colorsync/colorsyncprofilecreatecopywithheadroomadaptivegaincurvemetadata.json": {
+      "etag": "\"29be-65d55ad509b06-df\"",
+      "file_path": "documentation/ColorSync/colorsyncprofilecreatecopywithheadroomadaptivegaincurvemetadata.md",
+      "hash": "b9918beb6fabdd8a08950aff0e1c685f3aee7492c049b4c8591ac9d025b3336c"
     },
     "https://developer.apple.com/tutorials/data/documentation/colorsync/colorsyncprofilecreatedeviceprofile(_:_:_:).json": {
       "etag": "\"67f5-65d55ad42f81d-df\"",
@@ -2494,6 +2639,101 @@
       "etag": "\"52bd-65d55ad4e60b1-df\"",
       "file_path": "documentation/ColorSync/colorsyncunregisterdevice(_,_).md",
       "hash": "934876bdc4bb2169aefa7a135660f2f9c1afc083d643a1fe569ee495ade2d44d"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/colorsync/cs_available_but_deprecated.json": {
+      "etag": "\"1766-65d55ad51ca49-df\"",
+      "file_path": "documentation/ColorSync/cs_available_but_deprecated.md",
+      "hash": "96d98fd86b8a6103719e800ede6b2d3ae11efb0c5c79bacdc6c82d6b4d6fc946"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/colorsync/cs_available_but_deprecated1.json": {
+      "etag": "\"17a8-65d55ad42f81d-df\"",
+      "file_path": "documentation/ColorSync/cs_available_but_deprecated1.md",
+      "hash": "9a9d1d010e895a97289bc2b7d3b28bb9a4a905b7f336a7ebb418836e23d70d01"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/colorsync/cs_available_but_deprecated2.json": {
+      "etag": "\"17e9-65d55ad51ca49-df\"",
+      "file_path": "documentation/ColorSync/cs_available_but_deprecated2.md",
+      "hash": "9757433cd60a971d7bf89c85aa17ee44f5254a3e5d4b4173a86ec952642fd5b2"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/colorsync/cs_available_but_deprecated3.json": {
+      "etag": "\"1829-65d55ad509b06-df\"",
+      "file_path": "documentation/ColorSync/cs_available_but_deprecated3.md",
+      "hash": "9bda248acddb5f709dce11bd0015fb2503840b25c99fbeb65f46fe3f58f71107"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/colorsync/cs_available_but_deprecated4.json": {
+      "etag": "\"186b-65d55ad4e60b1-df\"",
+      "file_path": "documentation/ColorSync/cs_available_but_deprecated4.md",
+      "hash": "1d5a30c4a98cd2d91c40a0ab74e17ee890da727de6e08a55f2a8c7e96fa389da"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/colorsync/cs_available_but_deprecated5.json": {
+      "etag": "\"18ab-65d55ad4c16e0-df\"",
+      "file_path": "documentation/ColorSync/cs_available_but_deprecated5.md",
+      "hash": "d6eece5e21572c51b4d039cc3c955bbfd615983517f96d358cabb9459408fc91"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/colorsync/cs_available_desktop.json": {
+      "etag": "\"184f-65d55ad4e60b1-df\"",
+      "file_path": "documentation/ColorSync/cs_available_desktop.md",
+      "hash": "693a808bc6da7e5732408c519f06113305d7617a8b49a405c2fb847470d6f21d"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/colorsync/cs_available_starting.json": {
+      "etag": "\"1819-65d55ad4e60b1-df\"",
+      "file_path": "documentation/ColorSync/cs_available_starting.md",
+      "hash": "9ba606cca71a27953d14d09aaee7bb77629e252095266048fee949a79060d43d"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/colorsync/cs_available_starting1.json": {
+      "etag": "\"185a-65d55ad4e60b1-df\"",
+      "file_path": "documentation/ColorSync/cs_available_starting1.md",
+      "hash": "a8d23e6dbe3e12f87f25670af09fb6236e8ea04ee6d6c20452a6bcd5baeb0c5f"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/colorsync/cs_available_starting2.json": {
+      "etag": "\"189a-65d55ad4a26df-df\"",
+      "file_path": "documentation/ColorSync/cs_available_starting2.md",
+      "hash": "1e722eed1515f6f20ba7bf1fde06baa700c931ee61eca078690f4a4681322022"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/colorsync/cs_available_starting_ios.json": {
+      "etag": "\"186c-65d55ad4a26df-df\"",
+      "file_path": "documentation/ColorSync/cs_available_starting_ios.md",
+      "hash": "3370b208f3105e1db9dc7d7bf2203b3b8c697d04ed5658135f71000b658890ec"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/colorsync/cs_unavailable_desktop.json": {
+      "etag": "\"1800-65d55ad509b06-df\"",
+      "file_path": "documentation/ColorSync/cs_unavailable_desktop.md",
+      "hash": "70b53b6475d17b9b416d1c5246156862979d15096b04e345ec4d5421272f75ab"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/colorsync/cs_unavailable_embedded.json": {
+      "etag": "\"1806-65d55ad4811b5-df\"",
+      "file_path": "documentation/ColorSync/cs_unavailable_embedded.md",
+      "hash": "27d4690c62cf19082e1dc84692f80196a383fed6ba70f3a13848b75f7b0cd71c"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/colorsync/csexport.json": {
+      "etag": "\"f48-65d55ad4a26df-df\"",
+      "file_path": "documentation/ColorSync/csexport.md",
+      "hash": "e311662a06d34d170f22bde668edb3b858ecb4090028320d896944469484b890"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/colorsync/csextern.json": {
+      "etag": "\"f48-65d55ad42f81d-df\"",
+      "file_path": "documentation/ColorSync/csextern.md",
+      "hash": "c909835998ee90138900a39bf6a641e135090f5015fd2c2186a19e58facdc397"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/colorsync/csextern_desktop.json": {
+      "etag": "\"f78-65d55ad4a26df-df\"",
+      "file_path": "documentation/ColorSync/csextern_desktop.md",
+      "hash": "7ded9476a6e520e43a110bd254cc77c510d1d76b2197e6023abfc5e444b6bf15"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/colorsync/cslocal.json": {
+      "etag": "\"f42-65d55ad4a26df-df\"",
+      "file_path": "documentation/ColorSync/cslocal.md",
+      "hash": "64a2c499aabf1f3715acf7be2cb03a6bc2cd040bb904b12ee4f13ebf86586443"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/colorsync/get_cs_avail_but_depr_macro.json": {
+      "etag": "\"18ee-65d55ad4c16e0-df\"",
+      "file_path": "documentation/ColorSync/get_cs_avail_but_depr_macro.md",
+      "hash": "c16c995c01314265ce3918f50c018a63cf2e2d998edeb4f57cd26292e16e60bb"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/colorsync/get_cs_avail_macro.json": {
+      "etag": "\"18cc-65d55ad509b06-df\"",
+      "file_path": "documentation/ColorSync/get_cs_avail_macro.md",
+      "hash": "cad665268e84fc7d57dd64e1c8b899887ea23b90be44aa26d44abc369eaddf6d"
     },
     "https://developer.apple.com/tutorials/data/documentation/colorsync/headroom-adaptive-gain-curve.json": {
       "etag": "\"113a6-65b3ae3135d35-df\"",
@@ -3516,8 +3756,8 @@
       "applicationservices": {}
     },
     "render": {
-      "version": 1
+      "version": 2
     },
-    "total_pages": 702
+    "total_pages": 750
   }
 }

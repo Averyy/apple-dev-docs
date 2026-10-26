@@ -101,6 +101,8 @@ When configuring hash tables, note that only the options listed in [`NSHashTable
   Components in a bit-field to specify the behavior of elements in an [`NSHashTable`](./nshashtable.md) object.
 ### Deprecated
 - [Legacy Hash Table Implementation](./legacy-hash-table-implementation.md)
+- [+ hashTableWithWeakObjects](./nshashtable/hashtablewithweakobjects.md)
+  Returns a new hash table for storing weak references to its contents.
 ### Initializers
 - [init?(coder: NSCoder)](./nshashtable/init%28coder%29.md)
 

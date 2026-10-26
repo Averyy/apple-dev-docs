@@ -28,6 +28,10 @@ Count each left-to-right path as +1, and each right-to-left path as -1. If the s
 ### Constants
 - [NSBezierPath.WindingRule.evenOdd](./evenodd.md)
   Specifies the even-odd winding rule.
+- [NSNonZeroWindingRule](../../nsnonzerowindingrule.md)
+  Specifies the non-zero winding rule.
+- [NSEvenOddWindingRule](../../nsevenoddwindingrule.md)
+  Specifies the even-odd winding rule.
 
 
 ---

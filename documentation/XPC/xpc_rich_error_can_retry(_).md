@@ -44,6 +44,14 @@ extern bool xpc_rich_error_can_retry(xpc_rich_error_t error);
 - [func xpc_session_send_message_with_reply_async(any OS_xpc_object, xpc_object_t, xpc_session_reply_handler_t)](./xpc_session_send_message_with_reply_async%28_,_,_%29.md)
 - [typealias xpc_session_reply_handler_t](./xpc_session_reply_handler_t-2hf7c.md)
 - [func xpc_session_send_message_with_reply_sync(any OS_xpc_object, xpc_object_t, AutoreleasingUnsafeMutablePointer<xpc_rich_error_t?>?) -> xpc_object_t?](./xpc_session_send_message_with_reply_sync%28_,_,_%29.md)
+- [xpc_session_send_message](./xpc_session_send_message.md)
+  Sends a message over the session to the destination service.
+- [xpc_session_send_message_with_reply_async](./xpc_session_send_message_with_reply_async.md)
+  Sends a message asynchronously over the session to the destination service, calling a handler after receiving a reply.
+- [xpc_session_reply_handler_t](./xpc_session_reply_handler_t-7kfe4.md)
+  A block that receives the reply to a message a session sends.
+- [xpc_session_send_message_with_reply_sync](./xpc_session_send_message_with_reply_sync.md)
+  Sends a message over the session to the destination service, blocking the caller until receiving a reply.
 
 
 ---

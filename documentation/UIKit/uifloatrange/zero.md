@@ -31,6 +31,8 @@ extern const UIFloatRange UIFloatRangeZero;
   Returns a new float range structure from the given components.
 - [static let infinite: UIFloatRange](./infinite.md)
   A range whose range is minus infinity to infinity.
+- [UIFloatRangeMake](./init%28minimum,maximum%29-1vgoo.md)
+  Returns a new float range structure from the given components.
 
 
 ---

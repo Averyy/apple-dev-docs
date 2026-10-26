@@ -95,6 +95,16 @@
       "file_path": "documentation/CoreLocationUI/cllocationbuttonlabel/sharemycurrentlocation.md",
       "hash": "97b5e854b176ae52dc9cabc4e044b0aacaafb87d68f2218ac14a7e556a558e73"
     },
+    "https://developer.apple.com/documentation/corelocationui/corelocationuiversionnumber": {
+      "etag": "\"e95-65d560cf4855e-df\"",
+      "file_path": "documentation/CoreLocationUI/corelocationuiversionnumber.md",
+      "hash": "0f5c70a29accca875ae57b386f066e87544b5f84ea720d5d9e2b144c5522a3b0"
+    },
+    "https://developer.apple.com/documentation/corelocationui/corelocationuiversionstring": {
+      "etag": "\"edb-65d560cf4855e-df\"",
+      "file_path": "documentation/CoreLocationUI/corelocationuiversionstring.md",
+      "hash": "f0cc8cba0bf45fd6845501342c8409868456504c939f4bd61a7c9838d5d48cf7"
+    },
     "https://developer.apple.com/documentation/corelocationui/locationbutton": {
       "etag": "\"4e10-65d560cf4855e-df\"",
       "file_path": "documentation/CoreLocationUI/locationbutton.md",
@@ -235,6 +245,16 @@
       "file_path": "documentation/CoreLocationUI/cllocationbuttonlabel/sharemycurrentlocation.md",
       "hash": "97b5e854b176ae52dc9cabc4e044b0aacaafb87d68f2218ac14a7e556a558e73"
     },
+    "https://developer.apple.com/tutorials/data/documentation/corelocationui/corelocationuiversionnumber.json": {
+      "etag": "\"e95-65d560cf4855e-df\"",
+      "file_path": "documentation/CoreLocationUI/corelocationuiversionnumber.md",
+      "hash": "0f5c70a29accca875ae57b386f066e87544b5f84ea720d5d9e2b144c5522a3b0"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/corelocationui/corelocationuiversionstring.json": {
+      "etag": "\"edb-65d560cf4855e-df\"",
+      "file_path": "documentation/CoreLocationUI/corelocationuiversionstring.md",
+      "hash": "f0cc8cba0bf45fd6845501342c8409868456504c939f4bd61a7c9838d5d48cf7"
+    },
     "https://developer.apple.com/tutorials/data/documentation/corelocationui/locationbutton.json": {
       "etag": "\"4e10-65d560cf4855e-df\"",
       "file_path": "documentation/CoreLocationUI/locationbutton.md",
@@ -283,8 +303,8 @@
   },
   "metadata": {
     "render": {
-      "version": 1
+      "version": 2
     },
-    "total_pages": 56
+    "total_pages": 60
   }
 }

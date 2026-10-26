@@ -40,6 +40,8 @@ enum NSDateComponentsFormatterZeroFormattingBehavior : NSUInteger;
   The drop all zero units behavior. This behavior drops all units whose values are 0. For example, when days, hours, minutes, and seconds are allowed, the abbreviated version of one hour is displayed as “1h”.
 - [static var pad: DateComponentsFormatter.ZeroFormattingBehavior](./zeroformattingbehavior-swift.struct/pad.md)
   The add padding zeroes behavior. This behavior pads values with zeroes as appropriate. For example, consider the value of one hour formatted using the positional and abbreviated unit styles. When days, hours, minutes, and seconds are allowed, the value is displayed as “0d 1:00:00” using the positional style, and as “0d 1h 0m 0s” using the abbreviated style.
+- [NSDateComponentsFormatterZeroFormattingBehaviorNone](../nsdatecomponentsformatterzeroformattingbehavior/nsdatecomponentsformatterzeroformattingbehaviornone.md)
+  No formatting behavior. This behavior prevents the dropping of zero values or adding of zeroes for padding. For example, with hours, minutes, and seconds displayed, the abbreviated value for one hour and 10 seconds is “1h 0m 10s”.
 ### Initializers
 - [init(rawValue: UInt)](./zeroformattingbehavior-swift.struct/init%28rawvalue%29.md)
 

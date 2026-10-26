@@ -34,6 +34,8 @@ weak var sourcePlayerItem: AVPlayerItem? { get }
   The host time this configuration became active on its associated player object.
 - [var preferredTransform: CGAffineTransform](./preferredtransform.md)
   The preferred transform of the visual media.
+- [dataChannelDescriptions](../../avplayervideooutputconfiguration/datachanneldescriptions.md)
+  An array of data channels selected for this configuration.
 
 
 ---

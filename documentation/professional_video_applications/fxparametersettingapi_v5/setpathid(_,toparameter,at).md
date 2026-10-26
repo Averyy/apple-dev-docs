@@ -26,7 +26,7 @@ Returns `YES` if the pathID is set successfully; `NO` otherwise.
 
 #### Discussion
 
-Depending on the host application, the time value may be relative to the start of the timeline or to the start of the clip. See [Understanding time in FxPlug](https://developer.apple.com/documentation/professional-video-applications/understanding-time-in-fxplug).
+Depending on the host application, the time value may be relative to the start of the timeline or to the start of the clip. See [Understanding time in FxPlug](../../Professional-Video-Applications/understanding-time-in-fxplug.md).
 
 ## Parameters
 

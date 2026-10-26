@@ -52,6 +52,12 @@ class NENetworkRule
 ### Instance Properties
 - [var matchLocalNetworkEndpoint: NWEndpoint?](./nenetworkrule/matchlocalnetworkendpoint-62ttv.md)
 - [var matchRemoteHostOrNetworkEndpoint: NWEndpoint?](./nenetworkrule/matchremotehostornetworkendpoint-4a5ht.md)
+- [matchLocalNetworkEndpoint](./nenetworkrule/matchlocalnetworkendpoint-9dyor.md)
+- [matchRemoteHostOrNetworkEndpoint](./nenetworkrule/matchremotehostornetworkendpoint-80s0l.md)
+### Instance Methods
+- [- initWithDestinationHostEndpoint:protocol:](./nenetworkrule/initwithdestinationhostendpoint_protocol_.md)
+- [- initWithDestinationNetworkEndpoint:prefix:protocol:](./nenetworkrule/initwithdestinationnetworkendpoint_prefix_protocol_.md)
+- [- initWithRemoteNetworkEndpoint:remotePrefix:localNetworkEndpoint:localPrefix:protocol:direction:](./nenetworkrule/initwithremotenetworkendpoint_remoteprefix_localnetworkendpoint_localprefix_protocol_direction_.md)
 
 ## Relationships
 

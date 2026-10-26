@@ -12,61 +12,61 @@ Users can book restaurant reservations and view their current reservations from 
 ## Topics
 
 ### Book Restaurant Reservation
-- [protocol INBookRestaurantReservationIntentHandling](https://developer.apple.com/documentation/intents/inbookrestaurantreservationintenthandling)
+- [protocol INBookRestaurantReservationIntentHandling](../Intents/inbookrestaurantreservationintenthandling.md)
   The handler interface booking a reservation that the user selected.
-- [class INBookRestaurantReservationIntent](https://developer.apple.com/documentation/intents/inbookrestaurantreservationintent)
+- [class INBookRestaurantReservationIntent](../Intents/inbookrestaurantreservationintent.md)
   A request to create a reservation at the specified restaurant.
-- [class INBookRestaurantReservationIntentResponse](https://developer.apple.com/documentation/intents/inbookrestaurantreservationintentresponse)
+- [class INBookRestaurantReservationIntentResponse](../Intents/inbookrestaurantreservationintentresponse.md)
   Your app’s response to a book restaurant reservation intent.
 ### Get Available Restaurant Reservation Booking Defaults
-- [protocol INGetAvailableRestaurantReservationBookingDefaultsIntentHandling](https://developer.apple.com/documentation/intents/ingetavailablerestaurantreservationbookingdefaultsintenthandling)
+- [protocol INGetAvailableRestaurantReservationBookingDefaultsIntentHandling](../Intents/ingetavailablerestaurantreservationbookingdefaultsintenthandling.md)
   The handler interface for providing default values to the system when pre-fetching an initial set of possible reservation times.
-- [class INGetAvailableRestaurantReservationBookingDefaultsIntent](https://developer.apple.com/documentation/intents/ingetavailablerestaurantreservationbookingdefaultsintent)
+- [class INGetAvailableRestaurantReservationBookingDefaultsIntent](../Intents/ingetavailablerestaurantreservationbookingdefaultsintent.md)
   A request for the default values to use when fetching potential reservation options.
-- [class INGetAvailableRestaurantReservationBookingDefaultsIntentResponse](https://developer.apple.com/documentation/intents/ingetavailablerestaurantreservationbookingdefaultsintentresponse)
+- [class INGetAvailableRestaurantReservationBookingDefaultsIntentResponse](../Intents/ingetavailablerestaurantreservationbookingdefaultsintentresponse.md)
   Your app’s response to a get available restaurant reservation booking defaults intent.
 ### Get Available Restaurant Reservation Bookings
-- [protocol INGetAvailableRestaurantReservationBookingsIntentHandling](https://developer.apple.com/documentation/intents/ingetavailablerestaurantreservationbookingsintenthandling)
+- [protocol INGetAvailableRestaurantReservationBookingsIntentHandling](../Intents/ingetavailablerestaurantreservationbookingsintenthandling.md)
   The handler interface for generating a list of potential reservation times from which the user can select.
-- [class INGetAvailableRestaurantReservationBookingsIntent](https://developer.apple.com/documentation/intents/ingetavailablerestaurantreservationbookingsintent)
+- [class INGetAvailableRestaurantReservationBookingsIntent](../Intents/ingetavailablerestaurantreservationbookingsintent.md)
   A request for the time slots available for making a reservation.
-- [class INGetAvailableRestaurantReservationBookingsIntentResponse](https://developer.apple.com/documentation/intents/ingetavailablerestaurantreservationbookingsintentresponse)
+- [class INGetAvailableRestaurantReservationBookingsIntentResponse](../Intents/ingetavailablerestaurantreservationbookingsintentresponse.md)
   Your app’s response to a get available restaurant reservation bookings intent.
 ### Get Restaurant Guest
-- [protocol INGetRestaurantGuestIntentHandling](https://developer.apple.com/documentation/intents/ingetrestaurantguestintenthandling)
+- [protocol INGetRestaurantGuestIntentHandling](../Intents/ingetrestaurantguestintenthandling.md)
   The handler interface for fetching information about the person making a reservation.
-- [class INGetRestaurantGuestIntent](https://developer.apple.com/documentation/intents/ingetrestaurantguestintent)
+- [class INGetRestaurantGuestIntent](../Intents/ingetrestaurantguestintent.md)
   A request for information about the guest who is making reservations.
-- [class INGetRestaurantGuestIntentResponse](https://developer.apple.com/documentation/intents/ingetrestaurantguestintentresponse)
+- [class INGetRestaurantGuestIntentResponse](../Intents/ingetrestaurantguestintentresponse.md)
   Your app’s response to a get restaurant guest intent.
 ### Get User Current Restaurant Reservation Bookings
-- [protocol INGetUserCurrentRestaurantReservationBookingsIntentHandling](https://developer.apple.com/documentation/intents/ingetusercurrentrestaurantreservationbookingsintenthandling)
+- [protocol INGetUserCurrentRestaurantReservationBookingsIntentHandling](../Intents/ingetusercurrentrestaurantreservationbookingsintenthandling.md)
   The handler interface for fetching and delivering the user’s current reservations.
-- [class INGetUserCurrentRestaurantReservationBookingsIntent](https://developer.apple.com/documentation/intents/ingetusercurrentrestaurantreservationbookingsintent)
+- [class INGetUserCurrentRestaurantReservationBookingsIntent](../Intents/ingetusercurrentrestaurantreservationbookingsintent.md)
   A request for the list of the user’s current reservations.
-- [class INGetUserCurrentRestaurantReservationBookingsIntentResponse](https://developer.apple.com/documentation/intents/ingetusercurrentrestaurantreservationbookingsintentresponse)
+- [class INGetUserCurrentRestaurantReservationBookingsIntentResponse](../Intents/ingetusercurrentrestaurantreservationbookingsintentresponse.md)
   Your app’s response to a get user current restaurant reservation bookings intent.
 ### Data Objects
-- [class INRestaurant](https://developer.apple.com/documentation/intents/inrestaurant)
+- [class INRestaurant](../Intents/inrestaurant.md)
   A restaurant for which your app can make and manage reservations.
-- [class INRestaurantGuest](https://developer.apple.com/documentation/intents/inrestaurantguest)
+- [class INRestaurantGuest](../Intents/inrestaurantguest.md)
   The person assigned to a reservation.
-- [class INRestaurantGuestDisplayPreferences](https://developer.apple.com/documentation/intents/inrestaurantguestdisplaypreferences)
+- [class INRestaurantGuestDisplayPreferences](../Intents/inrestaurantguestdisplaypreferences.md)
   Options about how to display guest information from system interfaces.
-- [class INRestaurantOffer](https://developer.apple.com/documentation/intents/inrestaurantoffer)
+- [class INRestaurantOffer](../Intents/inrestaurantoffer.md)
   Information about special offers made by a restaurant.
-- [class INRestaurantReservationBooking](https://developer.apple.com/documentation/intents/inrestaurantreservationbooking)
+- [class INRestaurantReservationBooking](../Intents/inrestaurantreservationbooking.md)
   A potential reservation that a user can book.
-- [class INRestaurantReservationUserBooking](https://developer.apple.com/documentation/intents/inrestaurantreservationuserbooking)
+- [class INRestaurantReservationUserBooking](../Intents/inrestaurantreservationuserbooking.md)
   A reservation created by a user.
-- [class INTermsAndConditions](https://developer.apple.com/documentation/intents/intermsandconditions)
+- [class INTermsAndConditions](../Intents/intermsandconditions.md)
   The terms and conditions of service when making restaurant reservations.
-- [enum INRestaurantReservationUserBookingStatus](https://developer.apple.com/documentation/intents/inrestaurantreservationuserbookingstatus)
+- [enum INRestaurantReservationUserBookingStatus](../Intents/inrestaurantreservationuserbookingstatus.md)
   Constants indicating the status of a user reservation.
 ### Resolution Results
-- [class INRestaurantResolutionResult](https://developer.apple.com/documentation/intents/inrestaurantresolutionresult)
+- [class INRestaurantResolutionResult](../Intents/inrestaurantresolutionresult.md)
   A resolution result for the restaurant selected by a user.
-- [class INRestaurantGuestResolutionResult](https://developer.apple.com/documentation/intents/inrestaurantguestresolutionresult)
+- [class INRestaurantGuestResolutionResult](../Intents/inrestaurantguestresolutionresult.md)
   A resolution result for the identity of a user involved in booking a reservation at a restaurant.
 
 ## See Also

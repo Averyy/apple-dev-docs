@@ -311,6 +311,8 @@ Some images also contain the word “FreestandingTemplate”.  These images are 
   Permissions for a group of users.
 - [class let userGuestName: String](./userguestname.md)
   Permissions for guests.
+- [NSImageNameDotMac](../nsimagenamedotmac.md)
+  A Dot Mac icon.
 
 ## See Also
 

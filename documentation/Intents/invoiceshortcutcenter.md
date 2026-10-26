@@ -97,6 +97,8 @@ To suggest shortcuts for actions that the user hasn’t performed in your app bu
 - [class INIntentDonationMetadata](./inintentdonationmetadata.md)
 - [Apple Watch support](../SiriKit/watch-and-widget-support.md)
   Display relevant shortcuts on the Siri watch face.
+- [Siri Event Suggestions](../SiriKit/siri-event-suggestions.md)
+  Provide users with current, actionable information connected to a reservation.
 
 
 ---

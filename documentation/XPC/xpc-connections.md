@@ -105,6 +105,12 @@ But, in most situations, the listener- and session-based APIs are a better choic
   An error that sends to the connection’s event handler when the remote service exits.
 - [var XPC_ERROR_TERMINATION_IMMINENT: xpc_object_t](./xpc_error_termination_imminent-swift.var.md)
   An error that sends to a peer connection’s event handler when the XPC runtime determines that the program needs to exit and that all outstanding transactions must wind down.
+- [XPC_ERROR_CONNECTION_INVALID](./xpc_error_connection_invalid-c.macro.md)
+  An error that sends to the connection’s event handler to indicate that the connection is no longer usable.
+- [XPC_ERROR_CONNECTION_INTERRUPTED](./xpc_error_connection_interrupted-c.macro.md)
+  An error that sends to the connection’s event handler when the remote service exits.
+- [XPC_ERROR_TERMINATION_IMMINENT](./xpc_error_termination_imminent-c.macro.md)
+  An error that sends to a peer connection’s event handler when the XPC runtime determines that the program needs to exit and that all outstanding transactions must wind down.
 
 ## See Also
 
@@ -113,6 +119,9 @@ But, in most situations, the listener- and session-based APIs are a better choic
   Encapsulate data in objects that represent primitive types, collections, and more.
 - [Utilities](./utilities.md)
   Browse debugging utilities and constants to use with the XPC APIs.
+### Additional types
+- [launchd](./launchd.md)
+  Browse APIs for interacting with `launchd`.
 
 
 ---

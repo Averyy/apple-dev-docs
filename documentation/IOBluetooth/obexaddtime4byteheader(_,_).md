@@ -65,6 +65,8 @@ Time4Byte headers - OBEX Spec, 2.2.5: 4 Bytes
   Add bytes to a dictionary of OBEXheaders.
 - [func OBEXAddTypeHeader(CFString!, CFMutableDictionary!) -> OBEXError](./obexaddtypeheader%28_,_%29.md)
   Add a CFStringRef to a dictionary of OBEXheaders.
+- [GET_HEADER_ID_IS_NULL_TERMINATED_UNICODE_TEXT](./get_header_id_is_null_terminated_unicode_text.md)
+  Convenience Macros for working with OBEX Header Identifiers.
 
 
 ---

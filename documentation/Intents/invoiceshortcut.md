@@ -26,7 +26,7 @@ class INVoiceShortcut
 
 #### Overview
 
-To add a shortcut to Siri, create an [`INShortcutReference`](./inshortcutreference.md) object and add it using [`INUIAddVoiceShortcutViewController`](https://developer.apple.com/documentation/intentsui/inuiaddvoiceshortcutviewcontroller). You don’t create an instance of [`INVoiceShortcut`](./invoiceshortcut.md); the system creates the instance for you when an instance is needed.
+To add a shortcut to Siri, create an [`INShortcutReference`](./inshortcutreference.md) object and add it using [`INUIAddVoiceShortcutViewController`](../IntentsUI/inuiaddvoiceshortcutviewcontroller.md). You don’t create an instance of [`INVoiceShortcut`](./invoiceshortcut.md); the system creates the instance for you when an instance is needed.
 
 ## Topics
 
@@ -87,6 +87,8 @@ To add a shortcut to Siri, create an [`INShortcutReference`](./inshortcutreferen
 - [class INIntentDonationMetadata](./inintentdonationmetadata.md)
 - [Apple Watch support](../SiriKit/watch-and-widget-support.md)
   Display relevant shortcuts on the Siri watch face.
+- [Siri Event Suggestions](../SiriKit/siri-event-suggestions.md)
+  Provide users with current, actionable information connected to a reservation.
 
 
 ---

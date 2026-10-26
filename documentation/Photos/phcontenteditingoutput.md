@@ -43,7 +43,7 @@ For all asset types, provide your adjustment data with the [`adjustmentData`](./
 
 Each [`PHPhotoLibrary`](./phphotolibrary.md) `performChanges` call prompts the user for permission to edit the contents of the photo library—to edit multiple assets in one batch, create multiple [`PHAssetChangeRequest`](./phassetchangerequest.md) objects within the same change block, each with its own corresponding [`PHContentEditingOutput`](./phcontenteditingoutput.md) object.
 
-You can also edit assets from photo editing extensions. In this case, instead of working with a [`PHAsset`](./phasset.md) object, you implement methods in the [`PHContentEditingController`](https://developer.apple.com/documentation/photosui/phcontenteditingcontroller) protocol. Photos provides a [`PHContentEditingOutput`](./phcontenteditingoutput.md) object when your extension begins editing. When editing is complete, Photos requests a [`PHContentEditingOutput`](./phcontenteditingoutput.md) object that contains the edited asset content.
+You can also edit assets from photo editing extensions. In this case, instead of working with a [`PHAsset`](./phasset.md) object, you implement methods in the [`PHContentEditingController`](../PhotosUI/phcontenteditingcontroller.md) protocol. Photos provides a [`PHContentEditingOutput`](./phcontenteditingoutput.md) object when your extension begins editing. When editing is complete, Photos requests a [`PHContentEditingOutput`](./phcontenteditingoutput.md) object that contains the edited asset content.
 
 ## Topics
 

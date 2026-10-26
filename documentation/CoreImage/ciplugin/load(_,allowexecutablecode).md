@@ -33,6 +33,8 @@ You need to call this method only once to load a specific image unit. The behavi
 ### Deprecated
 - [class func loadAllPlugIns()](./loadallplugins%28%29.md)
   Scans directories for files that have the `.plugin` extension and then loads the image units.
+- [+ loadPlugIn:allowNonExecutable:](./loadplugin_allownonexecutable_.md)
+  Loads filters from an image unit that have the appropriate executable status.
 
 
 ---

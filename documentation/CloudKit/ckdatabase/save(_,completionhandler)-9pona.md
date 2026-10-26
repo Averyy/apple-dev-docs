@@ -50,6 +50,8 @@ For information on a more convenient way to save subscriptions, see [`modifySubs
   Deletes a specific subscription and returns the deleted subscription’s identifier to an awaiting caller.
 - [func delete(withSubscriptionID: CKSubscription.ID, completionHandler: (String?, (any Error)?) -> Void)](./delete%28withsubscriptionid,completionhandler%29.md)
   Deletes a specific subscription and delivers the deleted subscription’s identifier to a completion handler.
+- [- deleteSubscriptionWithID:completionHandler:](./deletesubscriptionwithid_completionhandler_.md)
+  Deletes a specific subscription and delivers the deleted subscription’s identifier to a completion handler.
 
 
 ---

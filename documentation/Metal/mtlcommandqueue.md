@@ -58,10 +58,14 @@ For more information about command buffers and encoding GPU commands to them —
   Applies a residency set to a queue, which Metal applies to the queue’s command buffers as you commit them.
 - [func addResidencySets([any MTLResidencySet])](./mtlcommandqueue/addresidencysets%28_%29.md)
   Applies multiple residency sets to a queue, which Metal applies to the queue’s command buffers as you commit them.
+- [- addResidencySets:count:](./mtlcommandqueue/addresidencysets_count_.md)
+  Applies multiple residency sets to a queue, which Metal applies to the queue’s command buffers as you commit them.
 ### Detaching residency sets
 - [func removeResidencySet(any MTLResidencySet)](./mtlcommandqueue/removeresidencyset%28_%29.md)
   Removes a residency set from a command queue’s list, which means Metal doesn’t apply it to the queue’s command buffers as you commit them.
 - [func removeResidencySets([any MTLResidencySet])](./mtlcommandqueue/removeresidencysets%28_%29.md)
+  Removes multiple residency sets from a command queue’s list, which means Metal doesn’t apply them to the queue’s command buffers as you commit them.
+- [- removeResidencySets:count:](./mtlcommandqueue/removeresidencysets_count_.md)
   Removes multiple residency sets from a command queue’s list, which means Metal doesn’t apply them to the queue’s command buffers as you commit them.
 ### Identifying the command queue
 - [var device: any MTLDevice](./mtlcommandqueue/device.md)
@@ -94,6 +98,11 @@ For more information about command buffers and encoding GPU commands to them —
   The command buffer error codes that indicate why the GPU doesn’t finish executing a command buffer.
 - [protocol MTLCommandEncoder](./mtlcommandencoder.md)
   An encoder that writes GPU commands into a command buffer.
+### Submitting work to a GPU
+- [MTLCommandBufferErrorDomain](./mtlcommandbuffererrordomain.md)
+  The domain for Metal command buffer errors.
+- [MTLCommandBufferError](./mtlcommandbuffererror-swift.struct/code.md)
+  Error codes that indicate why a GPU is unable to finish running a command buffer.
 
 
 ---

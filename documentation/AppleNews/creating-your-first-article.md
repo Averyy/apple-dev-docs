@@ -355,9 +355,9 @@ The drop cap in your article now uses the new height that you chose. If you chos
   Choose a font family for Apple News Format that’s supported in iOS, iPadOS, and macOS.
 - [Components](./components.md)
   Understand the types of components that can make up an article.
-- [object ComponentTextStyle](https://developer.apple.com/documentation/applenewsformat/componenttextstyle)
+- [object ComponentTextStyle](../AppleNewsFormat/componenttextstyle.md)
   The object for defining the style for a text component, including spacing, alignment, and drop caps.
-- [object DropCapStyle](https://developer.apple.com/documentation/applenewsformat/dropcapstyle)
+- [object DropCapStyle](../AppleNewsFormat/dropcapstyle.md)
   The object for defining the drop cap text style to use in the first paragraph in a text component.
 ### Introductory Design Tutorial
 - [Setting Up the Introductory Tutorial](./setting-up-the-introductory-tutorial.md)

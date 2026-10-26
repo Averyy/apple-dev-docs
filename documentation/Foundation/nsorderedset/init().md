@@ -56,6 +56,8 @@ This method is a designated initializer of `NSOrderedSet`.
   Initializes a new ordered set with the contents of a set.
 - [convenience init(set: Set<AnyHashable>, copyItems: Bool)](./init%28set,copyitems%29.md)
   Initializes a new ordered set with the contents of a set, optionally copying the objects in the set.
+- [- initWithObjects:](./initwithobjects_.md)
+  Initializes a newly allocated set with members taken from the specified list of objects.
 
 
 ---

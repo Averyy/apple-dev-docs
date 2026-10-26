@@ -87,6 +87,17 @@ No timeout mechanism has been implemented so far for an OBEXSessions. If you nee
   Sets the C-API callback refCon used when the session recieves data.
 - [func setEventSelector(Selector!, target: Any!, refCon: UnsafeMutableRawPointer!)](./obexsession/seteventselector%28_,target,refcon%29.md)
   Allow you to set a selector to be called when events occur on the OBEX session.
+### Instance Variables
+- [mHasOBEXConnection](./obexsession/mhasobexconnection.md)
+- [mIncompletePacketResponseCode](./obexsession/mincompletepacketresponsecode.md)
+- [mIsServer](./obexsession/misserver.md)
+- [mMaxPacketLength](./obexsession/mmaxpacketlength.md)
+- [mOurMaxPacketLength](./obexsession/mourmaxpacketlength.md)
+- [mPrivateOBEXSessionData](./obexsession/mprivateobexsessiondata.md)
+- [mReceivePacketBuffer](./obexsession/mreceivepacketbuffer.md)
+- [mResponsePacketDataLengthExpected](./obexsession/mresponsepacketdatalengthexpected.md)
+- [mResponsePacketDataLengthSoFar](./obexsession/mresponsepacketdatalengthsofar.md)
+- [mTheirMaxPacketLength](./obexsession/mtheirmaxpacketlength.md)
 
 ## Relationships
 

@@ -44,6 +44,8 @@ Binary archives are precompiled static libraries for specific GPU architectures 
   Options for configuring the creation of binary functions.
 - [class MTL4PipelineStageDynamicLinkingDescriptor](./mtl4pipelinestagedynamiclinkingdescriptor.md)
   Groups together properties to drive the dynamic linking process of a pipeline stage.
+- [MTL4CompilerTask](./mtl4compilertask.md)
+  A reference to an asynchronous compilation task that you initiate from a compiler instance.
 ### Pipeline compilation
 - [enum MTL4BlendState](./mtl4blendstate.md)
   Enumeration for controlling the blend state of a pipeline state object.

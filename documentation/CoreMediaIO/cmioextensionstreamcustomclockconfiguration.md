@@ -25,6 +25,8 @@ class CMIOExtensionStreamCustomClockConfiguration
 ### Creating a Clock Configuration
 - [init(clockName: String, sourceIdentifier: UUID, getTimeCallMinimumInterval: CMTime, numberOfEventsForRateSmoothing: UInt32, numberOfAveragesForRateSmoothing: UInt32)](./cmioextensionstreamcustomclockconfiguration/init%28clockname,sourceidentifier,gettimecallminimuminterval,numberofeventsforratesmoothing,numberofaveragesforratesmoothing%29.md)
   Creates a custom clock configuration.
+- [+ customClockConfigurationWithClockName:sourceIdentifier:getTimeCallMinimumInterval:numberOfEventsForRateSmoothing:numberOfAveragesForRateSmoothing:](./cmioextensionstreamcustomclockconfiguration/customclockconfigurationwithclockname_sourceidentifier_gettimecallminimuminterval_numberofeventsforratesmoothing_numberofaveragesforratesmoothing_.md)
+  Returns a new a custom clock configuration.
 ### Inspecting the Configuration
 - [var clockName: String](./cmioextensionstreamcustomclockconfiguration/clockname.md)
   The name of the clock.

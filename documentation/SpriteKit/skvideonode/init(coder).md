@@ -42,6 +42,12 @@ Do not call this initializer yourself; it is called by the system when you shoul
   Initializes a video node using a video file stored in the app bundle.
 - [init(videoURL: URL)](./init%28videourl%29.md)
   Initializes a video node using a URL that points to a video file.
+- [+ videoNodeWithFileNamed:](./videonodewithfilenamed_.md)
+  Creates and initializes a new video node using a video file stored in the app bundle.
+- [+ videoNodeWithAVPlayer:](./videonodewithavplayer_.md)
+  Creates and initializes a video node using an existing video player object.
+- [+ videoNodeWithURL:](./videonodewithurl_.md)
+  Creates and initializes a video node using a URL that points to a video file.
 
 
 ---

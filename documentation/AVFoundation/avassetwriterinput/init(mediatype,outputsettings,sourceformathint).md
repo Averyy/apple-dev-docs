@@ -41,6 +41,10 @@ To guarantee successful file writing, ensure that sample buffers you append are 
 ### Creating an input
 - [convenience init(mediaType: AVMediaType, outputSettings: [String : Any]?)](./init%28mediatype,outputsettings%29.md)
   Creates an input to append sample buffers of the specified type to the output file.
+- [+ assetWriterInputWithMediaType:outputSettings:](./assetwriterinputwithmediatype_outputsettings_.md)
+  Returns a new input to append sample buffers of the specified type to the output file.
+- [+ assetWriterInputWithMediaType:outputSettings:sourceFormatHint:](./assetwriterinputwithmediatype_outputsettings_sourceformathint_.md)
+  Returns a new input that appends sample buffers of the specified type and format hint to the output file.
 
 
 ---

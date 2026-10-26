@@ -34,6 +34,8 @@ The class object for the receiver’s superclass.
 ### Related Documentation
 - [var superclass: AnyClass?](../nsobjectprotocol/superclass.md)
   Returns the class object for the receiver’s superclass.
+- [+ class](./class.md)
+  Returns the class object.
 ### Identifying Classes
 - [class func isSubclass(of: AnyClass) -> Bool](./issubclass%28of%29.md)
   Returns a Boolean value that indicates whether the receiving class is a subclass of, or identical to, a given class.

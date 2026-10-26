@@ -36,6 +36,10 @@ static SPRect3D SPRect3DIntegral(SPRect3D rect);
   Returns the intersection of two rectangles.
 - [var standardized: Rect3D](./standardized.md)
   A rectangle with positive dimensions.
+- [SPRect3DIntersection](../sprect3dintersection.md)
+  Returns the intersection of two rectangles.
+- [SPRect3DUnion](../sprect3dunion.md)
+  Returns the smallest rectangle that contains two rectangles.
 
 
 ---

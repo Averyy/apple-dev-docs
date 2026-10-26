@@ -11,7 +11,7 @@ With the Media domain, users can play and control audio media in your app. Your 
 
 Siri can suggest shortcuts to audio available in your app when the user wants to listen to the content. For example, Siri may suggest a playlist to the user after they connect headphones to their iPhone. These suggestions give the user a convenient way to play the media in your app.
 
-In order for Siri to suggest media content, you should donate an [`INPlayMediaIntent`](https://developer.apple.com/documentation/intents/inplaymediaintent) object to Siri after the user plays the content (see [Donating Shortcuts](./donating-shortcuts.md)). To have Siri suggest new media that might be of interest to the user, save [`INPlayMediaIntent`](https://developer.apple.com/documentation/intents/inplaymediaintent) shortcuts for the new content to the [`INUpcomingMediaManager`](https://developer.apple.com/documentation/intents/inupcomingmediamanager).
+In order for Siri to suggest media content, you should donate an [`INPlayMediaIntent`](../Intents/inplaymediaintent.md) object to Siri after the user plays the content (see [Donating Shortcuts](./donating-shortcuts.md)). To have Siri suggest new media that might be of interest to the user, save [`INPlayMediaIntent`](../Intents/inplaymediaintent.md) shortcuts for the new content to the [`INUpcomingMediaManager`](../Intents/inupcomingmediamanager.md).
 
 ## Topics
 
@@ -21,68 +21,68 @@ In order for Siri to suggest media content, you should donate an [`INPlayMediaIn
 - [Managing Audio with SiriKit](./managing-audio-with-sirikit.md)
   Control audio playback and handle requests to add media using SiriKit Media Intents.
 ### Playable Media Intents
-- [protocol INPlayMediaIntentHandling](https://developer.apple.com/documentation/intents/inplaymediaintenthandling)
+- [protocol INPlayMediaIntentHandling](../Intents/inplaymediaintenthandling.md)
   The interface an object implements to confirm and handle play media intents.
-- [class INPlayMediaIntent](https://developer.apple.com/documentation/intents/inplaymediaintent)
+- [class INPlayMediaIntent](../Intents/inplaymediaintent.md)
   An intent that contains information about media playable from your app.
-- [class INPlayMediaIntentResponse](https://developer.apple.com/documentation/intents/inplaymediaintentresponse)
+- [class INPlayMediaIntentResponse](../Intents/inplaymediaintentresponse.md)
   An intents handler’s response to a play media intent.
 ### Add Media
-- [protocol INAddMediaIntentHandling](https://developer.apple.com/documentation/intents/inaddmediaintenthandling)
+- [protocol INAddMediaIntentHandling](../Intents/inaddmediaintenthandling.md)
   The handler interface that adds media.
-- [class INAddMediaIntent](https://developer.apple.com/documentation/intents/inaddmediaintent)
+- [class INAddMediaIntent](../Intents/inaddmediaintent.md)
   A request to add a media item.
-- [class INAddMediaIntentResponse](https://developer.apple.com/documentation/intents/inaddmediaintentresponse)
+- [class INAddMediaIntentResponse](../Intents/inaddmediaintentresponse.md)
   An intents handler’s response to an add media intent.
 ### Search for Media
-- [protocol INSearchForMediaIntentHandling](https://developer.apple.com/documentation/intents/insearchformediaintenthandling)
+- [protocol INSearchForMediaIntentHandling](../Intents/insearchformediaintenthandling.md)
   The interface that handles media search requests.
-- [class INSearchForMediaIntent](https://developer.apple.com/documentation/intents/insearchformediaintent)
+- [class INSearchForMediaIntent](../Intents/insearchformediaintent.md)
   A request to search for a media item.
-- [class INSearchForMediaIntentResponse](https://developer.apple.com/documentation/intents/insearchformediaintentresponse)
+- [class INSearchForMediaIntentResponse](../Intents/insearchformediaintentresponse.md)
   An intents handler’s response to a search media intent.
 ### Update Media Affinity
-- [protocol INUpdateMediaAffinityIntentHandling](https://developer.apple.com/documentation/intents/inupdatemediaaffinityintenthandling)
+- [protocol INUpdateMediaAffinityIntentHandling](../Intents/inupdatemediaaffinityintenthandling.md)
   The interface that handles requests to update the user’s preference for a media item.
-- [class INUpdateMediaAffinityIntent](https://developer.apple.com/documentation/intents/inupdatemediaaffinityintent)
+- [class INUpdateMediaAffinityIntent](../Intents/inupdatemediaaffinityintent.md)
   A request to update the user’s affinity for a media item.
-- [class INUpdateMediaAffinityIntentResponse](https://developer.apple.com/documentation/intents/inupdatemediaaffinityintentresponse)
+- [class INUpdateMediaAffinityIntentResponse](../Intents/inupdatemediaaffinityintentresponse.md)
   An intents handler’s response to an update media affinity intent.
 ### User Context
-- [class INUserContext](https://developer.apple.com/documentation/intents/inusercontext)
+- [class INUserContext](../Intents/inusercontext.md)
   An object that provides user information to Siri.
-- [class INMediaUserContext](https://developer.apple.com/documentation/intents/inmediausercontext)
+- [class INMediaUserContext](../Intents/inmediausercontext.md)
   An object that provides user information to Siri.
 ### Data Objects
-- [class INMediaItem](https://developer.apple.com/documentation/intents/inmediaitem)
+- [class INMediaItem](../Intents/inmediaitem.md)
   An object that describes a piece of media content, such as a song, TV show, artist, or podcast playlist.
-- [class INMediaSearch](https://developer.apple.com/documentation/intents/inmediasearch)
+- [class INMediaSearch](../Intents/inmediasearch.md)
   An object that describes a media type to search for, such as a station name, song name, or album name.
 ### Upcoming Media
-- [class INUpcomingMediaManager](https://developer.apple.com/documentation/intents/inupcomingmediamanager)
+- [class INUpcomingMediaManager](../Intents/inupcomingmediamanager.md)
   The manager object you use to suggest media to the user.
 ### Resolution Results
-- [class INAddMediaMediaDestinationResolutionResult](https://developer.apple.com/documentation/intents/inaddmediamediadestinationresolutionresult)
+- [class INAddMediaMediaDestinationResolutionResult](../Intents/inaddmediamediadestinationresolutionresult.md)
   A resolution result for the types of destinations when adding media.
-- [class INAddMediaMediaItemResolutionResult](https://developer.apple.com/documentation/intents/inaddmediamediaitemresolutionresult)
+- [class INAddMediaMediaItemResolutionResult](../Intents/inaddmediamediaitemresolutionresult.md)
   A resolution result for the media item to add.
-- [class INMediaDestinationResolutionResult](https://developer.apple.com/documentation/intents/inmediadestinationresolutionresult)
+- [class INMediaDestinationResolutionResult](../Intents/inmediadestinationresolutionresult.md)
   A resolution result for the media destination types.
-- [class INMediaItemResolutionResult](https://developer.apple.com/documentation/intents/inmediaitemresolutionresult)
+- [class INMediaItemResolutionResult](../Intents/inmediaitemresolutionresult.md)
   A resolution result for media item types.
-- [class INMediaAffinityTypeResolutionResult](https://developer.apple.com/documentation/intents/inmediaaffinitytyperesolutionresult)
+- [class INMediaAffinityTypeResolutionResult](../Intents/inmediaaffinitytyperesolutionresult.md)
   A resolution result for the user’s affinity for a media item.
-- [class INPlayMediaMediaItemResolutionResult](https://developer.apple.com/documentation/intents/inplaymediamediaitemresolutionresult)
+- [class INPlayMediaMediaItemResolutionResult](../Intents/inplaymediamediaitemresolutionresult.md)
   A resolution result for the media item to play.
-- [class INPlayMediaPlaybackSpeedResolutionResult](https://developer.apple.com/documentation/intents/inplaymediaplaybackspeedresolutionresult)
+- [class INPlayMediaPlaybackSpeedResolutionResult](../Intents/inplaymediaplaybackspeedresolutionresult.md)
   A resolution result that determines the playback speed of a media item.
-- [class INPlaybackRepeatModeResolutionResult](https://developer.apple.com/documentation/intents/inplaybackrepeatmoderesolutionresult)
+- [class INPlaybackRepeatModeResolutionResult](../Intents/inplaybackrepeatmoderesolutionresult.md)
   A resolution result for the playback repeat modes of a media item.
-- [class INPlaybackQueueLocationResolutionResult](https://developer.apple.com/documentation/intents/inplaybackqueuelocationresolutionresult)
+- [class INPlaybackQueueLocationResolutionResult](../Intents/inplaybackqueuelocationresolutionresult.md)
   A resolution result for the requested playback queue location.
-- [class INSearchForMediaMediaItemResolutionResult](https://developer.apple.com/documentation/intents/insearchformediamediaitemresolutionresult)
+- [class INSearchForMediaMediaItemResolutionResult](../Intents/insearchformediamediaitemresolutionresult.md)
   A resolution result for the media item for which to search.
-- [class INUpdateMediaAffinityMediaItemResolutionResult](https://developer.apple.com/documentation/intents/inupdatemediaaffinitymediaitemresolutionresult)
+- [class INUpdateMediaAffinityMediaItemResolutionResult](../Intents/inupdatemediaaffinitymediaitemresolutionresult.md)
   A resolution result for updating the user’s affinity for a media item.
 
 ## See Also

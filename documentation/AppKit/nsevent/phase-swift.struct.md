@@ -34,6 +34,8 @@ enum NSEventPhase : NSUInteger;
   The system canceled the event phase.
 - [static var mayBegin: NSEvent.Phase](./phase-swift.struct/maybegin.md)
   The system event phase may begin.
+- [NSEventPhaseNone](../nseventphase/nseventphasenone.md)
+  The event is not associated with a phase.
 ### Initializers
 - [init(rawValue: UInt)](./phase-swift.struct/init%28rawvalue%29.md)
 

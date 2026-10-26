@@ -44,6 +44,11 @@ The stream must be opened before it can be used.
   Initializes and returns an `NSInputStream` object for reading from a given `NSData` object.
 - [init?(url: URL)](./init%28url%29-1lfmj.md)
   Initializes and returns an `NSInputStream` object that reads data from the file at a given URL.
+- [+ inputStreamWithData:](../nsinputstream/inputstreamwithdata_.md)
+  Creates and returns an initialized `NSInputStream` object for reading from a given `NSData` object.
+### Related Documentation
+- [+ inputStreamWithFileAtPath:](../nsinputstream/inputstreamwithfileatpath_.md)
+  Creates and returns an initialized `NSInputStream` object that reads data from the file at a given path.
 
 
 ---

@@ -39,6 +39,10 @@ This call must be made periodically to give the texture cache a chance to make O
   Creates a CVOpenGLTexture object from an existing [CVImageBuffer](./cvimagebuffer-q40.md).
 - [func CVOpenGLTextureCacheGetTypeID() -> CFTypeID](./cvopengltexturecachegettypeid%28%29.md)
   Returns the Core Foundation type identifier for a the texture cache.
+- [CVOpenGLTextureCacheRetain](./cvopengltexturecacheretain.md)
+  Retains a texture cache object.
+- [CVOpenGLTextureCacheRelease](./cvopengltexturecacherelease.md)
+  Releases a texture cache object.
 
 
 ---

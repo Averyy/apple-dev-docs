@@ -29,6 +29,9 @@ Discriminator for the `target` union of `es_event_bootstrap_look_up_t`. Selects 
 - [init(rawValue: UInt32)](./es_bootstrap_target_type_t/init%28rawvalue%29.md)
 ### Instance Properties
 - [var rawValue: UInt32](./es_bootstrap_target_type_t/rawvalue.md)
+### Enumeration Cases
+- [ES_BOOTSTRAP_TARGET_TYPE_JOB](./es_bootstrap_target_type_job.md)
+- [ES_BOOTSTRAP_TARGET_TYPE_PROCESS](./es_bootstrap_target_type_process.md)
 
 ## Relationships
 

@@ -42,6 +42,10 @@ An empty path contains no elements.
   Returns whether the specified point is interior to the path.
 - [func isRect(UnsafeMutablePointer<CGRect>?) -> Bool](./isrect%28_%29.md)
   Indicates whether or not a graphics path represents a rectangle.
+- [CGPathEqualToPath](../cgpathequaltopath.md)
+  Indicates whether two graphics paths are equivalent.
+- [CGPathContainsPoint](../cgpathcontainspoint.md)
+  Checks whether a point is contained in a graphics path.
 
 
 ---

@@ -92,6 +92,8 @@ Camera parameters include basic information—such as the [`projectionMatrix`](.
   Red, green, and blue factors that scale each color channel in the camera’s image.
 - [var exposureCompression: vector_float2](./mdlcamera/exposurecompression.md)
   Two parameters that determine the brightness compression curve for colors in the camera’s image.
+### Type Methods
+- [+ cameraWithSCNCamera:](./mdlcamera/camerawithscncamera_.md)
 
 ## Relationships
 

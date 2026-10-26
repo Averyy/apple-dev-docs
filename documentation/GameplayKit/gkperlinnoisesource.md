@@ -33,6 +33,8 @@ Like all [`GKNoiseSource`](./gknoisesource.md) subclasses, a Perlin noise source
 ### Creating a Noise Source
 - [init(frequency: Double, octaveCount: Int, persistence: Double, lacunarity: Double, seed: Int32)](./gkperlinnoisesource/init%28frequency,octavecount,persistence,lacunarity,seed%29.md)
   Initializes a Perlin noise source with the specified parameters.
+- [+ perlinNoiseSourceWithFrequency:octaveCount:persistence:lacunarity:seed:](./gkperlinnoisesource/perlinnoisesourcewithfrequency_octavecount_persistence_lacunarity_seed_.md)
+  Creates a Perlin noise source with the specified parameters.
 ### Managing Noise Generation Parameters
 - [var persistence: Double](./gkperlinnoisesource/persistence.md)
   The rate at which successive octaves of the noise function decrease in amplitude.

@@ -35,6 +35,8 @@ func setTexture(_ texture: (any MTLTexture)?, index: Int)
 ### Binding textures
 - [func setTextures([(any MTLTexture)?], range: Range<Int>)](./settextures%28_,range%29.md)
   Binds multiple textures to the texture argument table, allowing compute functions to access their data on the GPU.
+- [- setTextures:withRange:](./settextures_withrange_.md)
+  Binds multiple textures to the texture argument table, allowing compute kernels to access their data on the GPU.
 
 
 ---

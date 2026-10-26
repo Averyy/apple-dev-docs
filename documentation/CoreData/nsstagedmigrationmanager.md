@@ -56,6 +56,8 @@ let store = coordinator.addPersistentStore(
 ### Creating a migration manager
 - [convenience init([NSMigrationStage])](./nsstagedmigrationmanager/init%28_%29.md)
   Creates a migration manager with the specified stages.
+- [- initWithMigrationStages:](./nsstagedmigrationmanager/initwithmigrationstages_.md)
+  Creates a migration manager with the specified stages.
 ### Accessing the persistent container
 - [var container: NSPersistentContainer?](./nsstagedmigrationmanager/container.md)
   The container that provides access to the migrating persistent store.

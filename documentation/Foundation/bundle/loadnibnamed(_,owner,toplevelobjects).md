@@ -42,6 +42,12 @@ For more information on Nibs, see [`NSNib`](../../AppKit/nsnib.md).
 ### Loading nib files
 - [func loadNibNamed(String, owner: Any?, options: [UINib.OptionsKey : Any]?) -> [Any]?](./loadnibnamed%28_,owner,options%29.md)
   Unarchives the contents of a nib file located in the receiver’s bundle.
+- [+ loadNibNamed:owner:](../nsbundle/loadnibnamed_owner_.md)
+  Unarchives the contents of the nib file and links them to a specific owner object.
+- [+ loadNibFile:externalNameTable:withZone:](../nsbundle/loadnibfile_externalnametable_withzone_-c.type.method.md)
+  Unarchives the contents of the nib file and links them to objects in your program.
+- [- loadNibFile:externalNameTable:withZone:](../nsbundle/loadnibfile_externalnametable_withzone_-c.method.md)
+  Unarchives the contents of a nib file located in the receiver’s bundle.
 
 
 ---

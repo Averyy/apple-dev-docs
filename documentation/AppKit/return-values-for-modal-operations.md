@@ -35,6 +35,10 @@ The system also reserves all values below these.
   Constants that specify additional options when setting the writing direction of attributed strings.
 - [Tags of Views in the FontPanel](./tags-of-views-in-the-fontpanel.md)
   These constants are obsolete and should not be used.
+- [NSInterfaceStyle](./nsinterfacestyle.md)
+  These constants are used in `NSResponder`’s [`interfaceStyle`](./nsresponder/interfacestyle.md) method.
+- [NSNoUnderlineStyle](./nsnounderlinestyle.md)
+- [NSSingleUnderlineStyle](./nssingleunderlinestyle.md)
 
 
 ---

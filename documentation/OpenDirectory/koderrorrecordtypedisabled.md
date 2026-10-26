@@ -53,6 +53,8 @@ kODErrorRecordTypeDisabled
   The password has expired and must be changed.
 - [var kODErrorCredentialsPasswordNeedsDigit: ODFrameworkErrors](./koderrorcredentialspasswordneedsdigit.md)
   The provided password needs at least one digit.
+- [kODErrorCredentialsContactMaster](./odframeworkerrors/koderrorcredentialscontactmaster.md)
+  The authentication server contacted is not the primary server, and the requested operation requires the primary server.
 
 
 ---

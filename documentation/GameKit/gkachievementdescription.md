@@ -57,6 +57,8 @@ Alternatively, either add the access point or display the dashboard so that the 
   A Boolean value that states whether the player can earn the achievement multiple times.
 - [var rarityPercent: Double?](./gkachievementdescription/raritypercent-4bh6k.md)
   The percentage of players of this game that earned the achievement.
+- [rarityPercent](./gkachievementdescription/raritypercent-3zqw6.md)
+  The percentage of players of this game that earned the achievement.
 ### Working with Achievement Images
 - [class func incompleteAchievementImage() -> UIImage](./gkachievementdescription/incompleteachievementimage%28%29.md)
   A common image that you can display when the player hasn’t completed the achievement.

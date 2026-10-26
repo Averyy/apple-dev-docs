@@ -55,6 +55,9 @@ typedef void (^)(const char *) nw_proxy_domain_enumerator_t;
   An object you use to communicate with a group of endpoints, such as an IP multicast group on a local network.
 - [typealias nw_connection_path_event_handler_t](./nw_connection_path_event_handler_t.md)
   A handler that delivers network path updates.
+- [nw_ethernet_channel_state_t](./nw_ethernet_channel_state_t.md)
+  States indicating whether an Ethernet channel is able to send and receive frames.
+- [nw_listener_new_connection_group_handler_t](./nw_listener_new_connection_group_handler_t.md)
 
 
 ---

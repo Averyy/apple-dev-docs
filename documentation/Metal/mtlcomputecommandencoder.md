@@ -80,6 +80,10 @@ For more information about stages and synchronization, see [`MTLStages`](./mtlst
   Changes where the data begins in a buffer already bound to the buffer argument table.
 - [func setBufferOffset(offset: Int, attributeStride: Int, index: Int)](./mtlcomputecommandencoder/setbufferoffset%28offset,attributestride,index%29.md)
   Changes where the data begins and the distance between adjacent elements in a buffer already bound to the buffer argument table.
+- [- setBuffers:offsets:withRange:](./mtlcomputecommandencoder/setbuffers_offsets_withrange_.md)
+  Binds multiple buffers to the buffer argument table at once, allowing compute kernels to access their data on the GPU.
+- [- setBuffers:offsets:attributeStrides:withRange:](./mtlcomputecommandencoder/setbuffers_offsets_attributestrides_withrange_.md)
+  Binds multiple buffers with data in stride to the buffer argument table at once, allowing compute kernels to access their data on the GPU.
 ### Binding raw bytes
 - [func setBytes(UnsafeRawPointer, length: Int, index: Int)](./mtlcomputecommandencoder/setbytes%28_,length,index%29.md)
   Copies data directly to the GPU to populate an entry in the buffer argument table.
@@ -90,6 +94,8 @@ For more information about stages and synchronization, see [`MTLStages`](./mtlst
   Binds a texture to the texture argument table, allowing compute kernels to access its data on the GPU.
 - [func setTextures([(any MTLTexture)?], range: Range<Int>)](./mtlcomputecommandencoder/settextures%28_,range%29.md)
   Binds multiple textures to the texture argument table, allowing compute functions to access their data on the GPU.
+- [- setTextures:withRange:](./mtlcomputecommandencoder/settextures_withrange_.md)
+  Binds multiple textures to the texture argument table, allowing compute kernels to access their data on the GPU.
 ### Binding texture samplers
 - [func setSamplerState((any MTLSamplerState)?, index: Int)](./mtlcomputecommandencoder/setsamplerstate%28_,index%29.md)
   Encodes a texture sampler, allowing compute kernels to use it for sampling textures on the GPU.
@@ -99,12 +105,20 @@ For more information about stages and synchronization, see [`MTLStages`](./mtlst
   Encodes multiple texture samplers to the sampler argument table, allowing compute kernels to use them for sampling textures on the GPU.
 - [func setSamplerStates([(any MTLSamplerState)?], lodMinClamps: [Float], lodMaxClamps: [Float], range: Range<Int>)](./mtlcomputecommandencoder/setsamplerstates%28_,lodminclamps,lodmaxclamps,range%29.md)
   Encodes multiple texture samplers for the compute function, specifying clamp values for the level of detail of each sampler.
+- [- setSamplerStates:withRange:](./mtlcomputecommandencoder/setsamplerstates_withrange_.md)
+  Encodes multiple texture samplers, allowing compute kernels to use them for sampling textures on the GPU.
+- [- setSamplerStates:lodMinClamps:lodMaxClamps:withRange:](./mtlcomputecommandencoder/setsamplerstates_lodminclamps_lodmaxclamps_withrange_.md)
+  Encodes multiple texture samplers with custom levels of detail clamping, allowing compute kernels to use them for sampling textures on the GPU.
 ### Binding function tables
 - [func setVisibleFunctionTable((any MTLVisibleFunctionTable)?, bufferIndex: Int)](./mtlcomputecommandencoder/setvisiblefunctiontable%28_,bufferindex%29.md)
   Binds a visible function table to the buffer argument table, allowing you to call its functions on the GPU.
 - [func setVisibleFunctionTables([(any MTLVisibleFunctionTable)?], bufferRange: Range<Int>)](./mtlcomputecommandencoder/setvisiblefunctiontables%28_,bufferrange%29.md)
   Binds multiple visible function tables to the buffer argument table, allowing you to call their functions on the GPU.
 - [func setIntersectionFunctionTables([(any MTLIntersectionFunctionTable)?], bufferRange: Range<Int>)](./mtlcomputecommandencoder/setintersectionfunctiontables%28_,bufferrange%29.md)
+  Binds multiple intersection function tables to the buffer argument table, allowing you to call their functions on the GPU.
+- [- setVisibleFunctionTables:withBufferRange:](./mtlcomputecommandencoder/setvisiblefunctiontables_withbufferrange_.md)
+  Binds multiple visible function tables to the buffer argument table, allowing you to call their functions on the GPU.
+- [- setIntersectionFunctionTables:withBufferRange:](./mtlcomputecommandencoder/setintersectionfunctiontables_withbufferrange_.md)
   Binds multiple intersection function tables to the buffer argument table, allowing you to call their functions on the GPU.
 ### Binding arguments for acceleration structures
 - [func setAccelerationStructure((any MTLAccelerationStructure)?, bufferIndex: Int)](./mtlcomputecommandencoder/setaccelerationstructure%28_,bufferindex%29.md)
@@ -119,6 +133,10 @@ For more information about stages and synchronization, see [`MTLStages`](./mtlst
 - [func useHeap(any MTLHeap)](./mtlcomputecommandencoder/useheap%28_%29.md)
   Ensures the shaders in the render pass’s subsequent draw commands have access to all of the resources you allocate from a heap.
 - [func useHeaps([any MTLHeap])](./mtlcomputecommandencoder/useheaps%28_%29.md)
+  Ensures the shaders in the render pass’s subsequent draw commands have access to all of the resources you allocate from multiple heaps.
+- [- useResources:count:usage:](./mtlcomputecommandencoder/useresources_count_usage_.md)
+  Ensures kernel calls that the system encodes in subsequent commands have access to multiple resources.
+- [- useHeaps:count:](./mtlcomputecommandencoder/useheaps_count_.md)
   Ensures the shaders in the render pass’s subsequent draw commands have access to all of the resources you allocate from multiple heaps.
 ### Configuring tile memory
 - [func setThreadgroupMemoryLength(Int, index: Int)](./mtlcomputecommandencoder/setthreadgroupmemorylength%28_,index%29.md)
@@ -146,6 +164,10 @@ For more information about stages and synchronization, see [`MTLStages`](./mtlst
   Encodes an instruction to run commands from an indirect buffer, using another buffer to provide the command range.
 - [func executeCommands(in: any MTLIndirectCommandBuffer, with: NSRange)](./mtlcomputecommandencoder/executecommands%28in,with%29.md)
   Encodes an instruction to run commands from an indirect buffer.
+- [- executeCommandsInBuffer:indirectBuffer:indirectBufferOffset:](./mtlcomputecommandencoder/executecommandsinbuffer_indirectbuffer_indirectbufferoffset_.md)
+  Encodes an instruction to run commands from an indirect buffer, using another buffer to provide the command range.
+- [- executeCommandsInBuffer:withRange:](./mtlcomputecommandencoder/executecommandsinbuffer_withrange_.md)
+  Encodes an instruction to run commands from an indirect buffer.
 ### Preventing resource access conflicts
 - [func waitForFence(any MTLFence)](./mtlcomputecommandencoder/waitforfence%28_%29.md)
   Encodes a command that instructs the GPU to pause the compute pass until another pass updates a fence.
@@ -154,6 +176,8 @@ For more information about stages and synchronization, see [`MTLStages`](./mtlst
 - [func memoryBarrier(scope: MTLBarrierScope)](./mtlcomputecommandencoder/memorybarrier%28scope%29.md)
   Creates a memory barrier that enforces the order of write and read operations for specific resource types.
 - [func memoryBarrier(resources: [any MTLResource])](./mtlcomputecommandencoder/memorybarrier%28resources%29.md)
+  Creates a memory barrier that enforces the order of write and read operations for specific resources.
+- [- memoryBarrierWithResources:count:](./mtlcomputecommandencoder/memorybarrierwithresources_count_.md)
   Creates a memory barrier that enforces the order of write and read operations for specific resources.
 ### Sampling counters
 - [func sampleCounters(sampleBuffer: any MTLCounterSampleBuffer, sampleIndex: Int, barrier: Bool)](./mtlcomputecommandencoder/samplecounters%28samplebuffer,sampleindex,barrier%29.md)

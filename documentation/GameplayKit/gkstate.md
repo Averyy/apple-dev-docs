@@ -35,6 +35,8 @@ For more information about state machines, read [State Machines](https://develop
 ### Creating a State
 - [init()](./gkstate/init%28%29.md)
   Initializes a state object.
+- [+ state](./gkstate/state.md)
+  Creates a state object with the specified list of valid next states.
 ### Working with State Machines
 - [var stateMachine: GKStateMachine?](./gkstate/statemachine.md)
   The state machine that owns this state object.

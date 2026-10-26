@@ -42,6 +42,9 @@ A frame semantic represents 2D information that ARKit extracts from a frame.
   An option that provides the distance from the device to real-world objects viewed through the camera.
 - [static var smoothedSceneDepth: ARConfiguration.FrameSemantics](./framesemantics-swift.struct/smoothedscenedepth.md)
   An option that provides the distance from the device to real-world objects, averaged across several frames.
+### Disabling Features
+- [ARFrameSemanticNone](../arframesemantics/arframesemanticnone.md)
+  An option that indicates no frame features are enabled.
 
 ## Relationships
 

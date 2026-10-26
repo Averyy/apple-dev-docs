@@ -68,6 +68,24 @@ Your custom embedding can use any kind of string that’s useful to your app, su
   Calculates the distance between two strings in the vocabulary space.
 - [typealias NLDistance](./nldistance.md)
   The distance between two strings in a text embedding.
+- [- neighborsForString:maximumCount:distanceType:](./nlembedding/neighborsforstring_maximumcount_distancetype_.md)
+  Retrieves a limited number of strings near a string in the vocabulary.
+- [- neighborsForString:maximumCount:maximumDistance:distanceType:](./nlembedding/neighborsforstring_maximumcount_maximumdistance_distancetype_.md)
+  Retrieves a limited number of strings, within a radius of a string, in the vocabulary.
+- [- neighborsForVector:maximumCount:distanceType:](./nlembedding/neighborsforvector_maximumcount_distancetype_.md)
+  Retrieves a limited number of strings near a location in the vocabulary space.
+- [- neighborsForVector:maximumCount:maximumDistance:distanceType:](./nlembedding/neighborsforvector_maximumcount_maximumdistance_distancetype_.md)
+  Retrieves a limited number of strings within a radius of a location in the vocabulary space.
+- [- enumerateNeighborsForString:maximumCount:distanceType:usingBlock:](./nlembedding/enumerateneighborsforstring_maximumcount_distancetype_usingblock_.md)
+  Passes the nearest strings of a string in the vocabulary to a block.
+- [- enumerateNeighborsForString:maximumCount:maximumDistance:distanceType:usingBlock:](./nlembedding/enumerateneighborsforstring_maximumcount_maximumdistance_distancetype_usingblock_.md)
+  Passes the nearest strings, within a radius of a string in the vocabulary, to a block.
+- [- enumerateNeighborsForVector:maximumCount:distanceType:usingBlock:](./nlembedding/enumerateneighborsforvector_maximumcount_distancetype_usingblock_.md)
+  Passes the nearest strings of a location in the vocabulary space to a closure.
+- [- enumerateNeighborsForVector:maximumCount:maximumDistance:distanceType:usingBlock:](./nlembedding/enumerateneighborsforvector_maximumcount_maximumdistance_distancetype_usingblock_.md)
+  Passes the nearest strings, within a radius of a location in the vocabulary space, to a block.
+- [- distanceBetweenString:andString:distanceType:](./nlembedding/distancebetweenstring_andstring_distancetype_.md)
+  Calculates the distance between two strings in the vocabulary space.
 ### Inspecting the vocabulary of an embedding
 - [var dimension: Int](./nlembedding/dimension.md)
   The number of dimensions in the vocabulary’s vector space.
@@ -81,8 +99,14 @@ Your custom embedding can use any kind of string that’s useful to your app, su
   Requests the vector for the given term.
 - [var revision: Int](./nlembedding/revision.md)
   The revision of the word embedding.
+- [- vectorForString:](./nlembedding/vectorforstring_.md)
+  Requests the vector for the given term.
+- [- getVector:forString:](./nlembedding/getvector_forstring_.md)
+  Copies a vector into the given a pointer to a float array.
 ### Saving an embedding
 - [class func write([String : [Double]], language: NLLanguage?, revision: Int, to: URL) throws](./nlembedding/write%28_,language,revision,to%29.md)
+  Exports the word embedding contained within a Core ML model file at the given URL.
+- [+ writeEmbeddingForDictionary:language:revision:toURL:error:](./nlembedding/writeembeddingfordictionary_language_revision_tourl_error_.md)
   Exports the word embedding contained within a Core ML model file at the given URL.
 ### Checking for Natural Language support
 - [class func currentRevision(for: NLLanguage) -> Int](./nlembedding/currentrevision%28for%29.md)

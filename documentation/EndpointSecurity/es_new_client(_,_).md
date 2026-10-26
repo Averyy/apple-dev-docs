@@ -48,6 +48,8 @@ When you no longer need to receive Endpoint Security messages, destroy the clien
   A block that handles a message received from Endpoint Security.
 - [struct es_new_client_result_t](./es_new_client_result_t.md)
   The result of an attempt to create a new client.
+- [es_client_t](./es_client_t.md)
+  An opaque type that stores the Endpoint Security client state.
 
 
 ---

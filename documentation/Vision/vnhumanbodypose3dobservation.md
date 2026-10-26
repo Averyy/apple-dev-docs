@@ -61,6 +61,8 @@ class VNHumanBodyPose3DObservation
   A transform from the skeleton hip to the camera.
 - [func cameraRelativePosition(VNHumanBodyPose3DObservation.JointName) throws -> simd_float4x4](./vnhumanbodypose3dobservation/camerarelativeposition%28_%29.md)
   Returns a position relative to the camera for the body joint you specify.
+- [- getCameraRelativePosition:forJointName:error:](./vnhumanbodypose3dobservation/getcamerarelativeposition_forjointname_error_.md)
+  Gets a position relative to the camera for the body joint you specify.
 
 ## Relationships
 

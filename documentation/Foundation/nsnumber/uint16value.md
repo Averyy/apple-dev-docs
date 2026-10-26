@@ -54,6 +54,10 @@ var uint16Value: UInt16 { get }
   The number object’s value expressed as an unsigned `int`, converted as necessary.
 - [var uint64Value: UInt64](./uint64value.md)
   The number object’s value expressed as an unsigned `long long`, converted as necessary.
+- [longValue](./longvalue.md)
+  The number object’s value expressed as a `long`, converted as necessary.
+- [unsignedLongValue](./unsignedlongvalue.md)
+  The number object’s value expressed as an unsigned `long`, converted as necessary.
 
 
 ---

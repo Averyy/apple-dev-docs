@@ -52,6 +52,8 @@ class AlignmentRectContext
   The dimming color.
 - [var dimmingVisualEffect: UIBlurEffect?](./dimmingvisualeffect.md)
   The dimming visual effect.
+- [alignmentRectProvider](../../../uizoomtransitionoptions/alignmentrectprovider.md)
+  A block that returns the alignment rectangle for the starting and ending views.
 
 
 ---

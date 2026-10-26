@@ -37,6 +37,9 @@ class NSNull
 
 ### Initializers
 - [init?(coder: NSCoder)](./nsnull/init%28coder%29.md)
+### Obtaining an instance
+- [+ null](./nsnull/null.md)
+  Returns the singleton instance of `NSNull`.
 
 ## Relationships
 

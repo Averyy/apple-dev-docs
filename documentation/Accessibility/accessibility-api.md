@@ -20,6 +20,14 @@ While many Apple frameworks provide built-in accessibility support, the Accessib
 ### System settings
 - [struct AccessibilitySettings](./accessibilitysettings.md)
   A structure for working with accessibility system settings.
+- [AXOpenSettingsFeature](./axopensettingsfeature.md)
+- [AXAnimatedImagesEnabled](./axanimatedimagesenabled.md)
+- [AXAnimatedImagesEnabledDidChangeNotification](./axanimatedimagesenableddidchangenotification.md)
+- [AXPrefersHorizontalTextLayout](./axprefershorizontaltextlayout.md)
+- [AXPrefersHorizontalTextLayoutDidChangeNotification](./axprefershorizontaltextlayoutdidchangenotification.md)
+- [AXPrefersHeadAnchorAlternative](./axprefersheadanchoralternative.md)
+- [AXPrefersHeadAnchorAlternativeDidChangeNotification](./axprefersheadanchoralternativedidchangenotification.md)
+- [AXPrefersNonBlinkingTextInsertionIndicator](./axprefersnonblinkingtextinsertionindicator.md)
 ### Notifications
 - [enum AccessibilityNotification](./accessibilitynotification.md)
   Types of accessibility notifications that an app can post.

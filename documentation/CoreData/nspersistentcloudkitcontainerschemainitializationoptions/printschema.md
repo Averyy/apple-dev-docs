@@ -30,6 +30,8 @@ NSPersistentCloudKitContainerSchemaInitializationOptionsPrintSchema
 ### Constants
 - [static var dryRun: NSPersistentCloudKitContainerSchemaInitializationOptions](./dryrun.md)
   A flag that indicates the container validates the model and generates the records, but doesn’t upload them to CloudKit.
+- [NSPersistentCloudKitContainerSchemaInitializationOptionsNone](./nspersistentcloudkitcontainerschemainitializationoptionsnone.md)
+  Indicates there are no specified schema options.
 
 
 ---

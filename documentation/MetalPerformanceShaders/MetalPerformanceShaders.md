@@ -251,6 +251,18 @@ The Metal Performance Shaders framework supports the following functionality:
 ### Type Aliases
 - [typealias MPSPackedFloat3](./mpspackedfloat3-swift.typealias.md)
   A packed three-element vector.
+### Macros
+- [MHDR_AVAILABILITY_v1](./mhdr_availability_v1.md)
+- [MPSF_AVAILABILITY_v1](./mpsf_availability_v1.md)
+- [MPSF_AVAILABLE_STARTING](./mpsf_available_starting.md)
+- [MPS_ALWAYS_INLINE](./mps_always_inline.md)
+- [MPS_AVAILABLE_STARTING](./mps_available_starting.md)
+- [MPS_AVAILABLE_STARTING_BUT_DEPRECATED](./mps_available_starting_but_deprecated.md)
+- [MPS_CLASS_AVAILABLE_STARTING](./mps_class_available_starting.md)
+- [MPS_ENUM_AVAILABLE_STARTING](./mps_enum_available_starting.md)
+- [MPS_ENUM_AVAILABLE_STARTING_BUT_DEPRECATED](./mps_enum_available_starting_but_deprecated.md)
+- [MPS_SWIFT_NAME](./mps_swift_name.md)
+- [MPS_UNAVAILABLE](./mps_unavailable.md)
 
 ## See Also
 

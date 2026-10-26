@@ -62,6 +62,8 @@ enum AVPlaybackUserInterfaceTimelineSegmentType : NSInteger;
   A snapshot comprising a playback position recorded at a known host time and the rate of position advancement.
 - [class AVPlaybackUserInterfaceTimelineSegment](./avplaybackuserinterfacetimelinesegment.md)
   Represents a contiguous segment of timeline content with specific playback characteristics.
+- [AVPlaybackUserInterfaceTimeControllable](./avplaybackuserinterfacetimecontrollable-62fq2.md)
+  Provides time control and navigation capabilities for media content.
 
 
 ---

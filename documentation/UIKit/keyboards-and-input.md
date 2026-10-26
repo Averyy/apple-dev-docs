@@ -54,6 +54,8 @@ Configure the system keyboard, create your own keyboards to handle input, or det
   An object that describes what type of menu and preview to show for a text item.
 - [protocol UITextViewDelegate](./uitextviewdelegate.md)
   The methods for receiving editing-related messages for text view objects.
+- [UITextItemContentType](./uitextitemcontenttype.md)
+  Constants that describe and capture the type of content a text item represents along with a specific related value.
 ### Smart Reply for messaging
 - [Adopting Smart Reply in your messaging or email app](./adopting-smart-reply-in-your-messaging-or-email-app.md)
   Generate reply suggestions by using Apple Intelligence and put selected text into your text UI.

@@ -94,6 +94,11 @@ You can call the [`insertDebugSignpost(_:)`](./mtlcommandencoder/insertdebugsign
   A configuration that customizes the behavior for a new command buffer.
 - [struct MTLCommandBufferError](./mtlcommandbuffererror-swift.struct.md)
   The command buffer error codes that indicate why the GPU doesn’t finish executing a command buffer.
+### Submitting work to a GPU
+- [MTLCommandBufferErrorDomain](./mtlcommandbuffererrordomain.md)
+  The domain for Metal command buffer errors.
+- [MTLCommandBufferError](./mtlcommandbuffererror-swift.struct/code.md)
+  Error codes that indicate why a GPU is unable to finish running a command buffer.
 
 
 ---

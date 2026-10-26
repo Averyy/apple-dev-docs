@@ -35,6 +35,8 @@ An [`AVVideoComposition`](./avvideocomposition.md) object maintains an array of 
   Initialize an AVVideoCompositionInstruction with a configuration.
 - [AVVideoCompositionInstruction.Configuration](./avvideocompositioninstruction-swift.class/configuration.md)
   Configurable properties for initializing a new AVVideoCompositionInstruction instance.
+- [+ videoCompositionInstructionWithInstruction:](./avvideocompositioninstruction-swift.class/videocompositioninstructionwithinstruction_.md)
+  Pass-through initializer, for internal use in AVFoundation only
 ### Inspecting the instruction
 - [var backgroundColor: CGColor?](./avvideocompositioninstruction-swift.class/backgroundcolor.md)
   The background color of the composition.

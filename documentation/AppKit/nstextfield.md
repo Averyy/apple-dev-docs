@@ -100,6 +100,8 @@ The parent class, [`NSControl`](./nscontrol.md), provides the methods for settin
 ### Using keyboard interface control
 - [var allowsCharacterPickerTouchBarItem: Bool](./nstextfield/allowscharacterpickertouchbaritem.md)
   A Boolean value that controls whether the Touch Bar displays the character picker item for rich text fields.
+- [- setTitleWithMnemonic:](./nstextfield/settitlewithmnemonic_.md)
+  Sets the text field’s string value using the embedded character as the keyboard mnemonic.
 ### Supporting text completion and suggestions
 - [var isAutomaticTextCompletionEnabled: Bool](./nstextfield/isautomatictextcompletionenabled.md)
   A Boolean value that indicates whether the text field automatically completes text as the user types.

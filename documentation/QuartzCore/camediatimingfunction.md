@@ -37,6 +37,8 @@ You can create a media timing function by supplying your own cubic Bézier curve
   Creates and returns a new instance of `CAMediaTimingFunction` configured with the predefined timing function specified by `name`.
 - [init(controlPoints: Float, Float, Float, Float)](./camediatimingfunction/init%28controlpoints,_,_,_%29.md)
   Returns an initialized timing function modeled as a cubic Bézier curve using the specified control points.
+- [+ functionWithControlPoints::::](./camediatimingfunction/functionwithcontrolpoints____.md)
+  Creates and returns a new instance of `CAMediaTimingFunction` timing function modeled as a cubic Bézier curve using the specified control points.
 ### Accessing the Control Points
 - [func getControlPoint(at: Int, values: UnsafeMutablePointer<Float>)](./camediatimingfunction/getcontrolpoint%28at,values%29.md)
   Returns the control point for the specified index.

@@ -44,6 +44,11 @@ typedef union { ... } SPSize3D;
   Creates a size structure from the specified Spatial point.
 - [init(Vector3D)](./size3d/init%28_%29-6nss1.md)
   Creates a size structure from the specified Spatial vector.
+- [SPSize3DMakeWithPoint](./spsize3dmakewithpoint.md)
+  Creates a size structure from the specified Spatial point.
+- [SPSize3DMakeWithVector](./spsize3dmakewithvector-5cgfq.md)
+  Creates a size structure from the specified double-precision vector.
+- [SPSize3DMakeWithVector](./spsize3dmakewithvector-6ar1t.md)
 ### Inspecting a 3D size’s properties
 - [var width: Double](./size3d/width.md)
   The width value.
@@ -54,6 +59,14 @@ typedef union { ... } SPSize3D;
 - [var size: Size3D](./size3d/size.md)
   The size value.
 - [var vector: simd_double3](./size3d/vector.md)
+- [width](./spsize3d/width.md)
+  The width value.
+- [height](./spsize3d/height.md)
+  The height value.
+- [depth](./spsize3d/depth.md)
+  The depth value.
+- [SPSize3DGetVector](./spsize3dgetvector.md)
+  A simd three-element vector that contains the width, height, and depth values.
 ### Transforming a 3D size structure
 - [func applying(Pose3D) -> Size3D](./size3d/applying%28_%29-85mlm.md)
   Returns a size that results from applying the specified pose.
@@ -73,18 +86,67 @@ typedef union { ... } SPSize3D;
   Returns a size that’s transformed by the specified scaled pose.
 - [func unapplying(ScaledPose3D) -> Size3D](./size3d/unapplying%28_%29-42rsa.md)
   Returns a size that’s transformed by the inverse of the specified scaled pose.
+- [SPSize3DScaleBySize](./spsize3dscalebysize.md)
+  Returns a size that results from scaling with the specified size structure.
+- [SPSize3DScaleUniform](./spsize3dscaleuniform.md)
+  Returns a size that results from uniformly scaling with the specified double-precision value.
+- [SPSize3DRotate](./spsize3drotate.md)
+  Returns a size that results from applying the specified rotation.
+- [SPSize3DRotateByQuaternion](./spsize3drotatebyquaternion.md)
+  Returns a size that results from rotating with the specified quaternion.
+- [SPSize3DApplyPose](./spsize3dapplypose.md)
+  Returns a size that results from applying the specified pose.
+- [SPSize3DUnapplyPose](./spsize3dunapplypose.md)
+  Returns a size that results from unapplying the specified pose.
+- [SPSize3DApplyAffineTransform](./spsize3dapplyaffinetransform.md)
+  Returns a size that results from applying the specified affine transform.
+- [SPSize3DApplyProjectiveTransform](./spsize3dapplyprojectivetransform.md)
+  Returns a size that results from applying the specified projective transform.
+- [SPSize3DUnapplyAffineTransform](./spsize3dunapplyaffinetransform.md)
+  Returns a size that results from unapplying the specified affine transform.
+- [SPSize3DUnapplyProjectiveTransform](./spsize3dunapplyprojectivetransform.md)
+  Returns a size that results from unapplying the specified projective transform.
+- [SPSize3DScaleBy](./spsize3dscaleby.md)
+  Returns a size that results from scaling with the specified double-precision values.
+- [SPSize3DShear](./spsize3dshear.md)
+  Returns a size that results from shearing over an axis by shear factors for the other two axes.
+- [SPSize3DApplyScaledPose](./spsize3dapplyscaledpose.md)
+  Returns a size that’s transformed by the specified scaled pose.
+- [SPSize3DUnapplyScaledPose](./spsize3dunapplyscaledpose.md)
+  Returns a size that’s transformed by the inverse of the specified scaled pose.
 ### Checking characteristics
 - [func contains(anyOf: [Point3D]) -> Bool](./size3d/contains%28anyof%29.md)
   Returns a Boolean value that indicates whether the size contains the specified point.
+- [SPSize3DContainsAnyPoint](./spsize3dcontainsanypoint.md)
+  Returns a Boolean value that indicates whether the size contains the specified point.
+- [SPSize3DContainsPoint](./spsize3dcontainspoint.md)
+  Returns a Boolean value that indicates whether the size contains the specified point.
+- [SPSize3DContainsSize](./spsize3dcontainssize.md)
+  Returns a Boolean value that indicates whether the size contains the specified size.
+- [SPSize3DIsValid](./spsize3disvalid.md)
+  A Boolean value that indicates whether the size represents a valid value.
+- [SPSize3DIsFinite](./spsize3disfinite.md)
+- [SPSize3DIsNaN](./spsize3disnan.md)
+- [SPSize3DIsZero](./spsize3diszero.md)
 ### Creating derived 3D sizes
 - [func intersection(Size3D) -> Size3D?](./size3d/intersection%28_%29.md)
   Returns the intersection of two sizes.
+- [SPSize3DIntersection](./spsize3dintersection.md)
+  Returns the intersection of two sizes.
+- [SPSize3DUnion](./spsize3dunion.md)
+  Returns the smallest size that contains two sizes.
 ### Comparing values
 - [static func == (Size3D, Size3D) -> Bool](./size3d/eqeq%28_,_%29.md)
+  Returns a Boolean value that indicates whether two values are equal.
+- [SPSize3DEqualToSize](./spsize3dequaltosize.md)
   Returns a Boolean value that indicates whether two values are equal.
 ### 3D size constants
 - [static let one: Size3D](./size3d/one.md)
   The size structure with width, height, and depth values of one.
+- [SPSize3DZero](./spsize3dzero.md)
+  The size structure with the zero value.
+- [SPSize3DInfinity](./spsize3dinfinity.md)
+  The size structure with infinite width, height, and depth values.
 ### Applying arithmetic operations
 - [static func * (Size3D, Double) -> Size3D](./size3d/star%28_,_%29-751dt.md)
   Returns a size that’s the product of a size and a scalar value.
@@ -120,6 +182,8 @@ typedef union { ... } SPSize3D;
 - [var simd: simd_double3](./size3d/simd.md)
 - [func containsAny(of: [Point3D]) -> Bool](./size3d/containsany%28of%29.md)
   Returns a Boolean value that indicates whether the size contains the specified point.
+- [SPSize3DInvalid](./spsize3dinvalid.md)
+  The null size that represents an invalid value.
 ### Initializers
 - [init(simd_packed_double4)](./size3d/init%28_%29-25dft.md)
   Creates a Spatial size from a simd packed vector.

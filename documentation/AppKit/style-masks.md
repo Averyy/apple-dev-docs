@@ -5,6 +5,18 @@
 
 Constants that specify panel styles.
 
+## Topics
+
+### Deprecated
+- [NSDocModalWindowMask](./nsdocmodalwindowmask.md)
+  The panel is created as a modal sheet.
+- [NSUtilityWindowMask](./nsutilitywindowmask.md)
+  The panel is created as a floating window.
+- [NSNonactivatingPanelMask](./nsnonactivatingpanelmask.md)
+  The panel can receive keyboard input without activating the owning app.
+- [NSHUDWindowMask](./nshudwindowmask.md)
+  The panel is created as a transparent panel (sometimes called a “heads-up display”).
+
 ## See Also
 
 ### Constants

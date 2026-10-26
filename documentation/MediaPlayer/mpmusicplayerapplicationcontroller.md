@@ -30,6 +30,8 @@ class MPMusicPlayerApplicationController
   Changes the contents of the media items in the queue.
 - [static let MPMusicPlayerControllerQueueDidChange: NSNotification.Name](../Foundation/nsnotification/name-swift.struct/mpmusicplayercontrollerqueuedidchange.md)
   Indicates the music player’s queue changed.
+- [MPMusicPlayerControllerQueueDidChangeNotification](./mpmusicplayercontrollerqueuedidchangenotification.md)
+  Indicates the music player’s queue changed.
 
 ## Relationships
 

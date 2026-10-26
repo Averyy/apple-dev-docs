@@ -37,6 +37,8 @@ The [`ARSkeleton2D`](./arskeleton2d.md) subclass provides you with the position 
   Tells you whether ARKit tracks a joint at a particular index.
 - [ARSkeleton.JointName](./arskeleton/jointname.md)
   A name identifier for a joint.
+- [jointCount](./arskeleton/jointcount.md)
+  The skeleton’s total number of joints.
 
 ## Relationships
 

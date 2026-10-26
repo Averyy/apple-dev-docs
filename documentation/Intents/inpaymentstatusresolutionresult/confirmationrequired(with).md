@@ -40,6 +40,8 @@ Use this method when you can resolve the parameter to a single value but want th
 ### Creating a Resolution Result Object
 - [class func success(with: INPaymentStatus) -> Self](./success%28with%29.md)
   Creates an object whose resolution involves the successful matching of the specified value.
+- [+ successWithResolvedValue:](./successwithresolvedvalue_.md)
+- [+ confirmationRequiredWithValueToConfirm:](./confirmationrequiredwithvaluetoconfirm_.md)
 
 
 ---

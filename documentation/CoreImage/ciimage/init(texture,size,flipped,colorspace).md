@@ -62,6 +62,17 @@ Core Image ignores the texture filtering and wrap modes (`GL_TEXTURE_FILTER` and
   The key for an OpenGL texture target.
 - [static let textureFormat: CIImageOption](../ciimageoption/textureformat.md)
   The key for an OpenGL texture format.
+- [+ imageWithCGLayer:](./imagewithcglayer_.md)
+  Creates and returns an image object from the contents supplied by a `CGLayer` object.
+- [+ imageWithCGLayer:options:](./imagewithcglayer_options_.md)
+  Creates and returns an image object  from the contents supplied by a `CGLayer` object, using the  specified options.
+- [+ imageWithTexture:size:flipped:options:](./imagewithtexture_size_flipped_options_.md)
+  Creates and returns an image object initialized with data supplied by an OpenGL texture.
+- [+ imageWithIOSurface:options:](./imagewithiosurface_options_.md)
+  Creates, using the specified options, and returns an image from the contents of an IOSurface.
+### Related Documentation
+- [+ imageWithTexture:size:flipped:colorSpace:](./imagewithtexture_size_flipped_colorspace_.md)
+  Creates and returns an image object initialized with data supplied by an OpenGL texture.
 
 
 ---

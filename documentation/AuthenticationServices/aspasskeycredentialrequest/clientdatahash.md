@@ -38,6 +38,16 @@ Use the client data hash for both registration and assertion challenges.
   An input for WebAuthn extensions.
 - [enum ASPasskeyCredentialExtensionInput](../aspasskeycredentialextensioninput.md)
   A type for WebAuthn extension inputs.
+- [supportedAlgorithms](./supportedalgorithms-27z68.md)
+  A list of cryptographic signature algorithms that the relying party supports.
+- [assertionExtensionInput](./assertionextensioninput.md)
+  An input for WebAuthn extensions.
+- [ASPasskeyAssertionCredentialExtensionInput](../aspasskeyassertioncredentialextensioninput-c.class.md)
+  A type that encapsulates input for various WebAuthn extensions during passkey assertion.
+- [registrationExtensionInput](./registrationextensioninput.md)
+  An input for WebAuthn extensions.
+- [ASPasskeyRegistrationCredentialExtensionInput](../aspasskeyregistrationcredentialextensioninput-c.class.md)
+  A type that encapsulates input for various WebAuthn extensions during passkey registration.
 
 
 ---

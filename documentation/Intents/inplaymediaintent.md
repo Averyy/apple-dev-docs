@@ -49,6 +49,10 @@ The following table lists additional attributes of this intent object:
 ### Creating a Play Media Intent
 - [convenience init(mediaItems: [INMediaItem]?, mediaContainer: INMediaItem?, playShuffled: Bool?, playbackRepeatMode: INPlaybackRepeatMode, resumePlayback: Bool?, playbackQueueLocation: INPlaybackQueueLocation, playbackSpeed: Double?, mediaSearch: INMediaSearch?)](./inplaymediaintent/init%28mediaitems,mediacontainer,playshuffled,playbackrepeatmode,resumeplayback,playbackqueuelocation,playbackspeed,mediasearch%29.md)
   Creates an intent that describes media content such as a song, podcast episode, or movie.
+- [- initWithMediaItems:mediaContainer:playShuffled:playbackRepeatMode:resumePlayback:playbackQueueLocation:playbackSpeed:mediaSearch:](./inplaymediaintent/initwithmediaitems_mediacontainer_playshuffled_playbackrepeatmode_resumeplayback_playbackqueuelocation_playbackspeed_mediasearch_.md)
+  Initialize an intent that describes media content such as a song, podcast episode, or movie.
+- [- initWithMediaItems:mediaContainer:playShuffled:playbackRepeatMode:resumePlayback:](./inplaymediaintent/initwithmediaitems_mediacontainer_playshuffled_playbackrepeatmode_resumeplayback_.md)
+  Initializes an intent that describes media content such as a song, podcast episode, or movie.
 ### Accessing Media Items
 - [var mediaContainer: INMediaItem?](./inplaymediaintent/mediacontainer.md)
   The media item container.
@@ -71,6 +75,12 @@ The following table lists additional attributes of this intent object:
   Constants that describe the playback queue location for a media item.
 - [var mediaSearch: INMediaSearch?](./inplaymediaintent/mediasearch.md)
   An object that contains the search parameters.
+- [playShuffled](./inplaymediaintent/playshuffled-93hn1.md)
+  A Boolean value that indicates whether the media plays in a shuffled order.
+- [resumePlayback](./inplaymediaintent/resumeplayback-9zfyp.md)
+  The resume playback setting at the time the user plays the media item.
+- [playbackSpeed](./inplaymediaintent/playbackspeed-6ngbq.md)
+  The playback speed for a media item.
 
 ## Relationships
 

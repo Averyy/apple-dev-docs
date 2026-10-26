@@ -29,6 +29,8 @@ init()
 ### Creating a Request
 - [init(completionHandler: VNRequestCompletionHandler?)](./init%28completionhandler%29.md)
   Creates a generate person segmentation request with a completion handler.
+- [+ new](./new.md)
+  Returns a new generate person segmentation request.
 
 
 ---

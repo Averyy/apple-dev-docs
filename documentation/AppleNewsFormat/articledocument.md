@@ -25,9 +25,9 @@ object ArticleDocument
 
 #### Discussion
 
-Every Apple News Format document must have the same filename: `article.json`. An `article.json` file must contain the `ArticleDocument` object. This is the object that is sent in [`Create an Article`](https://developer.apple.com/documentation/applenewsapi/post-channels-_channelid_-articles) and [`Update an Article`](https://developer.apple.com/documentation/applenewsapi/post-articles-_articleid_) requests.
+Every Apple News Format document must have the same filename: `article.json`. An `article.json` file must contain the `ArticleDocument` object. This is the object that is sent in [`Create an Article`](../AppleNewsAPI/post-channels-_channelid_-articles.md) and [`Update an Article`](../AppleNewsAPI/post-articles-_articleid_.md) requests.
 
-> ⚠️ **Warning**:  Every Apple News Format document must contain all items marked as required in the preceding Properties list. Apple News API and [News Preview](https://developer.apple.com/news-preview/) display errors if you omit any required properties. See [`Create an Article`](https://developer.apple.com/documentation/applenewsapi/post-channels-_channelid_-articles) and [`Update an Article`](https://developer.apple.com/documentation/applenewsapi/post-articles-_articleid_).
+> ⚠️ **Warning**:  Every Apple News Format document must contain all items marked as required in the preceding Properties list. Apple News API and [News Preview](https://developer.apple.com/news-preview/) display errors if you omit any required properties. See [`Create an Article`](../AppleNewsAPI/post-channels-_channelid_-articles.md) and [`Update an Article`](../AppleNewsAPI/post-articles-_articleid_.md).
 
 In JSON, the order of properties in an object is not important; however, as you create your JSON document, you may find it useful to follow the order shown in the example that follows.
 

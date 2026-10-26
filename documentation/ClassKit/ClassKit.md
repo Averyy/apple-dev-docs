@@ -72,6 +72,9 @@ For student-facing submission functionality, use the [ClassKit UI](../ClassKitUI
   Error codes that ClassKit issues.
 - [struct CLSErrorUserInfoKey](./clserroruserinfokey.md)
   Keys that appear in the user info dictionary in errors that ClassKit creates.
+### Macros
+- [CLS_EXTERN](./cls_extern.md)
+- [CLS_EXTERN_HIDDEN](./cls_extern_hidden.md)
 
 
 ---

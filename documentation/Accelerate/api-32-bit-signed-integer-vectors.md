@@ -8,26 +8,26 @@ Perform operations on vectors that contain signed 32-bit integer elements.
 ## Topics
 
 ### Vector Data Types
-- [typealias simd_int1](https://developer.apple.com/documentation/simd/simd_int1)
+- [typealias simd_int1](../simd/simd_int1.md)
   A vector of one 32-bit signed integer element.
-- [typealias simd_int2](https://developer.apple.com/documentation/simd/simd_int2)
+- [typealias simd_int2](../simd/simd_int2.md)
   A vector of two 32-bit signed integer elements.
-- [typealias simd_int3](https://developer.apple.com/documentation/simd/simd_int3)
+- [typealias simd_int3](../simd/simd_int3.md)
   A vector of three 32-bit signed integer elements.
-- [typealias simd_int4](https://developer.apple.com/documentation/simd/simd_int4)
+- [typealias simd_int4](../simd/simd_int4.md)
   A vector of four 32-bit signed integer elements.
-- [typealias simd_int8](https://developer.apple.com/documentation/simd/simd_int8)
+- [typealias simd_int8](../simd/simd_int8.md)
   A vector of eight 32-bit signed integer elements.
-- [typealias simd_int16](https://developer.apple.com/documentation/simd/simd_int16)
+- [typealias simd_int16](../simd/simd_int16.md)
   A vector of sixteen 32-bit signed integer elements.
 ### Packed Vector Data Types
-- [typealias simd_packed_int2](https://developer.apple.com/documentation/simd/simd_packed_int2)
+- [typealias simd_packed_int2](../simd/simd_packed_int2.md)
   A packed vector of two 32-bit signed integer elements.
-- [typealias simd_packed_int4](https://developer.apple.com/documentation/simd/simd_packed_int4)
+- [typealias simd_packed_int4](../simd/simd_packed_int4.md)
   A packed vector of four 32-bit signed integer elements.
-- [typealias simd_packed_int8](https://developer.apple.com/documentation/simd/simd_packed_int8)
+- [typealias simd_packed_int8](../simd/simd_packed_int8.md)
   A packed vector of eight 32-bit signed integer elements.
-- [typealias simd_packed_int16](https://developer.apple.com/documentation/simd/simd_packed_int16)
+- [typealias simd_packed_int16](../simd/simd_packed_int16.md)
   A packed vector of sixteen 32-bit signed integer elements.
 
 ## See Also

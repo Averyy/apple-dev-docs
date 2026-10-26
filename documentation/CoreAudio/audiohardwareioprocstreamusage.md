@@ -49,6 +49,12 @@ struct AudioHardwareIOProcStreamUsage;
   This structure allows a specific sample rate range to be associated with an AudioStreamBasicDescription that specifies its sample rate as kAudioStreamAnyRate.
 - [struct UnsafeMutableAudioBufferListPointer](./unsafemutableaudiobufferlistpointer.md)
   A wrapper for a pointer to an `AudioBufferList`.
+- [AudioDriverPlugInHostInfo](./audiodriverpluginhostinfo.md)
+- [AudioServerPlugInClientInfo](./audioserverpluginclientinfo.md)
+- [AudioServerPlugInCustomPropertyInfo](./audioserverplugincustompropertyinfo.md)
+- [AudioServerPlugInDriverInterface](./audioserverplugindriverinterface.md)
+- [AudioServerPlugInHostInterface](./audioserverpluginhostinterface.md)
+- [AudioServerPlugInIOCycleInfo](./audioserverpluginiocycleinfo.md)
 
 
 ---

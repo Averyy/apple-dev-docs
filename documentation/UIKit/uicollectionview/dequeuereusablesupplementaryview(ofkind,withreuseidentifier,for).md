@@ -52,6 +52,10 @@ If you registered a class for the specified `identifier` and a new cell must be 
   Registers a class for use in creating supplementary views for the collection view.
 - [func register(UINib?, forSupplementaryViewOfKind: String, withReuseIdentifier: String)](./register%28_,forsupplementaryviewofkind,withreuseidentifier%29-9hn73.md)
   Registers a nib file for use in creating supplementary views for the collection view.
+- [UICollectionViewSupplementaryRegistration](../uicollectionviewsupplementaryregistration.md)
+  A registration for the collection view’s supplementary views.
+- [- dequeueConfiguredReusableSupplementaryViewWithRegistration:forIndexPath:](./dequeueconfiguredreusablesupplementaryviewwithregistration_forindexpath_.md)
+  Dequeues a configured reusable supplementary view object.
 
 
 ---

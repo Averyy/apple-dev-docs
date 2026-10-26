@@ -54,6 +54,8 @@ You receive this type as the result of calling [`verdict(for:)`](./verdict%28for
 ### Evaluating a URL
 - [class func verdict(for: URL) async -> NEURLFilter.Verdict](./verdict%28for%29.md)
   Determines if accessing the specified URL is allowed or denied.
+- [+ verdictForURL:completionHandler:](./verdictforurl_completionhandler_.md)
+  Determines if accessing the specified URL is allowed or denied.
 
 
 ---

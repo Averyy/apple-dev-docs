@@ -67,6 +67,8 @@ The [`isDocumentEdited`](./nsdocument/isdocumentedited.md) method returns [`true
   Configures the receiver’s persistent store coordinator with the appropriate stores for a given URL.
 - [func persistentStoreType(forFileType: String) -> String](./nspersistentdocument/persistentstoretype%28forfiletype%29.md)
   Returns the type of persistent store associated with the specified file type.
+- [- configurePersistentStoreCoordinatorForURL:ofType:error:](./nspersistentdocument/configurepersistentstorecoordinatorforurl_oftype_error_.md)
+  Configures the receiver’s persistent store coordinator for a given URL and document type.
 ### Document Content Management
 - [func read(from: URL, ofType: String) throws](./nspersistentdocument/read%28from,oftype%29.md)
   Sets the contents of the receiver by reading from a file of a given type located by a given URL.

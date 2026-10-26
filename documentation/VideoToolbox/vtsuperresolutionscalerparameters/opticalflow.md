@@ -39,6 +39,8 @@ You only need this if optical flow is pre-computed. For the first frame this is 
   Ordering of the input frames in this submission relative to the previous submission.
 - [VTSuperResolutionScalerParameters.SubmissionMode](./submissionmode-swift.enum.md)
   Indicates the order of input frames.
+- [destinationFrame](./destinationframe.md)
+  Destination frame that contains user-allocated pixel buffer that receives the results.
 
 
 ---

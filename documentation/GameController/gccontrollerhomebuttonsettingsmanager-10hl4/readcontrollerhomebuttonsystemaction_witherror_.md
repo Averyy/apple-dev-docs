@@ -1,0 +1,25 @@
+# readControllerHomeButtonSystemAction:withError:
+
+**Framework**: Game Controller  
+**Kind**: method  
+**Role**: Instance Method
+
+Get the current controller Home button system action setting.
+
+**Availability**:
+- iOS 27.0+
+- iPadOS 27.0+
+- Mac Catalyst 27.0+
+- macOS 27.0+
+- visionOS 27.0+
+
+## Declaration
+
+```objc
+- (GCControllerHomeButtonSettingSystemAction) readControllerHomeButtonSystemAction:(GCControllerHomeButtonSettingCustomizationStatus *) customization withError:(NSError **) error;
+```
+
+
+---
+
+*[View on Apple Developer](https://developer.apple.com/documentation/gamecontroller/gccontrollerhomebuttonsettingsmanager-10hl4/readcontrollerhomebuttonsystemaction:witherror:)*

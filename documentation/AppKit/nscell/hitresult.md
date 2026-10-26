@@ -28,6 +28,8 @@ enum NSCellHitResult : NSUInteger;
   An editable text area of the cell.
 - [static var trackableArea: NSCell.HitResult](./hitresult/trackablearea.md)
   A trackable area in the cell.
+- [NSCellHitNone](../nscellhitresult/nscellhitnone.md)
+  An empty area, or did not hit in the cell.
 ### Initializers
 - [init(rawValue: UInt)](./hitresult/init%28rawvalue%29.md)
 

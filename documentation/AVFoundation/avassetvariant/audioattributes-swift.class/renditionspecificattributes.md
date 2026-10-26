@@ -36,6 +36,8 @@ class RenditionSpecificAttributes
   A Boolean value that indicates whether this variant contains virtualized or otherwise preprocessed audio content suitable for various purposes.
 - [var isDownmix: Bool](./renditionspecificattributes/isdownmix.md)
   A Boolean value that indicates whether the variant is a downmix derivative of other media of greater channel count.
+- [channelCount](../../avassetvariantaudiorenditionspecificattributes/channelcount.md)
+  The count of audio channels in the rendition.
 
 ## Relationships
 
@@ -58,6 +60,8 @@ class RenditionSpecificAttributes
   The audio formats of the renditions present in the variant.
 - [func renditionSpecificAttributes(for: AVMediaSelectionOption) -> AVAssetVariant.AudioAttributes.RenditionSpecificAttributes?](./renditionspecificattributes%28for%29.md)
   Returns specific attributes for the media option.
+- [formatIDs](../../avassetvariantaudioattributes/formatids.md)
+  The audio formats of the renditions present in the variant.
 
 
 ---

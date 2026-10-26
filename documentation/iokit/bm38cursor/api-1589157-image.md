@@ -1,0 +1,28 @@
+# image
+
+**Framework**: IOKit  
+**Kind**: structp  
+**Role**: Instance Property
+
+This array defines the cursor color values and transparency. The array is two dimensional and its first index is the cursor frame and the second index is the cursor pixel. The lower 24 bits of a pixel's value contain the RGB color, while the upper 8 bits contain the alpha value.
+
+**Availability**:
+- Mac Catalyst 18.4+
+- macOS 10.6+
+
+## Declaration
+
+```c
+unsigned int image[4][256];
+```
+
+## See Also
+
+### Fields
+- [save](./api-1589145-save.md)
+  This array stores the color values of the region underneath the cursor in its last drawn position.
+
+
+---
+
+*[View on Apple Developer](https://developer.apple.com/documentation/iokit/bm38cursor/1589157-image)*

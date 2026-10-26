@@ -49,6 +49,14 @@ var participants: [INPerson]? { get }
   A Boolean value indicating whether the user has seen the call.
 - [var numberOfCalls: Int?](./numberofcalls-r8kl.md)
   The number of calls in the call record.
+- [callDuration](./callduration-2d9u1.md)
+  The duration (measured in seconds) of the call.
+- [unseen](./unseen-8qab3.md)
+  A Boolean value indicating whether the user has seen the call.
+- [numberOfCalls](./numberofcalls-7vv6o.md)
+  The number of calls in the call record.
+- [isCallerIdBlocked](./iscalleridblocked.md)
+  A Boolean value indicating if user’s callerID is showing during a call.
 
 
 ---

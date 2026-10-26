@@ -34,6 +34,10 @@ The class properties of `VTTemporalNoiseFilterConfiguration` help to identify th
 ### Determining processor availability
 - [class var isSupported: Bool](./vttemporalnoisefilterconfiguration/issupported.md)
   Reports whether the system supports this processor.
+- [maximumDimensions](./vttemporalnoisefilterconfiguration/maximumdimensions.md)
+  The maximum dimensions of a source frame that the processor supports.
+- [minimumDimensions](./vttemporalnoisefilterconfiguration/minimumdimensions.md)
+  The minimum dimensions of a source frame that the processor supports.
 ### Inspecting the configuration
 - [var frameWidth: Int](./vttemporalnoisefilterconfiguration/framewidth.md)
   Width of source frame in pixels.
@@ -45,6 +49,15 @@ The class properties of `VTTemporalNoiseFilterConfiguration` help to identify th
   Pixel buffer attributes dictionary that describes requirements for pixel buffers which represent destination frames.
 - [var supportedPixelFormats: [OSType]](./vttemporalnoisefilterconfiguration/supportedpixelformats.md)
 - [class var supportedSourcePixelFormats: [OSType]](./vttemporalnoisefilterconfiguration/supportedsourcepixelformats-4ipcg.md)
+- [nextFrameCount](./vttemporalnoisefilterconfiguration/nextframecount.md)
+  Maximum number of future reference frames that the processor can use to process a source frame.
+- [previousFrameCount](./vttemporalnoisefilterconfiguration/previousframecount.md)
+  Maximum number of past reference frames that the processor can use to process a source frame.
+- [frameSupportedPixelFormats](./vttemporalnoisefilterconfiguration/framesupportedpixelformats.md)
+  Supported pixel formats for source frames for current configuration.
+### Type Properties
+- [supportedSourcePixelFormats](./vttemporalnoisefilterconfiguration/supportedsourcepixelformats-1w5i2.md)
+  List of all supported pixel formats for source frames.
 
 ## Relationships
 

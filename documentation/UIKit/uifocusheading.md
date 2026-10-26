@@ -46,6 +46,8 @@ You obtain the direction of the focus from the [`focusHeading`](./uifocusupdatec
   The focus update is heading to the first item.
 - [static var last: UIFocusHeading](./uifocusheading/last.md)
   The focus update is heading to the last item.
+- [UIFocusHeadingNone](./uifocusheading/uifocusheadingnone.md)
+  No focus update heading.
 ### Initializers
 - [init(rawValue: UInt)](./uifocusheading/init%28rawvalue%29.md)
   Creates a focus heading structure with the specified raw value.

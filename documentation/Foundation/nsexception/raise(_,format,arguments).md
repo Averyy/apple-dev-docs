@@ -42,6 +42,11 @@ The user-defined dictionary of the generated object is `nil`.
   Initializes and returns a newly allocated exception object.
 - [func raise()](./raise%28%29.md)
   Raises the receiver, causing program flow to jump to the local exception handler.
+- [+ exceptionWithName:reason:userInfo:](./exceptionwithname_reason_userinfo_.md)
+  Creates and returns an exception object .
+### Related Documentation
+- [+ raise:format:](./raise_format_.md)
+  A convenience method that creates and raises an exception.
 
 
 ---

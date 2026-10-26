@@ -76,6 +76,8 @@ Many system frameworks use these types. When working with external systems, such
   A coder that stores an object’s data to an archive.
 - [class NSUnarchiver](./nsunarchiver.md)
   A decoder that restores data from an archive.
+- [NXReadNSObjectFromCoder](./nxreadnsobjectfromcoder.md)
+  Returns the next object from the coder.
 
 ## See Also
 

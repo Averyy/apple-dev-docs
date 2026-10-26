@@ -885,10 +885,20 @@
       "file_path": "documentation/WebKit/domcharacterdata/deletedata(_,length).md",
       "hash": "a36e9977dea79595ade0203adf77fe77df1c99656158aa2515eaadbef4fa91a4"
     },
+    "https://developer.apple.com/documentation/webkit/domcharacterdata/deletedata::": {
+      "etag": "\"103c-65d55c8651098-df\"",
+      "file_path": "documentation/WebKit/domcharacterdata/deletedata__.md",
+      "hash": "565941c0ceb621151015d58bfb934b344db129e6fd3f0a98f34c81b5c120aa32"
+    },
     "https://developer.apple.com/documentation/webkit/domcharacterdata/insertdata(_:data:)": {
       "etag": "\"2380-65d55c866c3d9-df\"",
       "file_path": "documentation/WebKit/domcharacterdata/insertdata(_,data).md",
       "hash": "4da1e273806ce797b13fb07016ed5a9bcd0d91b3d30b7650fa4d4eb3c9b57ed6"
+    },
+    "https://developer.apple.com/documentation/webkit/domcharacterdata/insertdata::": {
+      "etag": "\"134d-65d55c866c3d9-df\"",
+      "file_path": "documentation/WebKit/domcharacterdata/insertdata__.md",
+      "hash": "a09a9935c697cd0c7dd1ef49101f28941369aa6e0cb458dceeb7882eac216c91"
     },
     "https://developer.apple.com/documentation/webkit/domcharacterdata/length": {
       "etag": "\"1952-65d55c866c3d9-df\"",
@@ -900,10 +910,20 @@
       "file_path": "documentation/WebKit/domcharacterdata/replacedata(_,length,data).md",
       "hash": "ad672732e82de9d1dcea3eee5f7fddb3b7722aa9e549a95ba8c67eef2d45b081"
     },
+    "https://developer.apple.com/documentation/webkit/domcharacterdata/replacedata:::": {
+      "etag": "\"144a-65d55c866c3d9-df\"",
+      "file_path": "documentation/WebKit/domcharacterdata/replacedata___.md",
+      "hash": "6ac7b81d007fbd546d7b378fddce547fa154388fdd15a9bb725a4064e7b94a0a"
+    },
     "https://developer.apple.com/documentation/webkit/domcharacterdata/substringdata(_:length:)": {
       "etag": "\"257e-65d55c8651098-df\"",
       "file_path": "documentation/WebKit/domcharacterdata/substringdata(_,length).md",
       "hash": "3cfba95fe12aca29d98f6989e4ed198f0a5fd935ae1e1153304287ea16ac30ec"
+    },
+    "https://developer.apple.com/documentation/webkit/domcharacterdata/substringdata::": {
+      "etag": "\"137b-65d55c866c3d9-df\"",
+      "file_path": "documentation/WebKit/domcharacterdata/substringdata__.md",
+      "hash": "e81a5b0a3039763de6f194dfea69df30df7c5f908757f8d6de5267b25cbb1c34"
     },
     "https://developer.apple.com/documentation/webkit/domcomment": {
       "etag": "\"6e20-65d55c88eb1eb-df\"",
@@ -990,6 +1010,11 @@
       "file_path": "documentation/WebKit/domcssmediarule/insert(_,index).md",
       "hash": "a37b0a06c7e58423d53f1661435ab994a82370d3c48095be0afc9289043a5133"
     },
+    "https://developer.apple.com/documentation/webkit/domcssmediarule/insertrule::": {
+      "etag": "\"1341-65d55c880141c-df\"",
+      "file_path": "documentation/WebKit/domcssmediarule/insertrule__.md",
+      "hash": "bff7848b63b412c0853c2e2a93e31f6cfbc87956e3eebdc8946273fef9bd46ad"
+    },
     "https://developer.apple.com/documentation/webkit/domcssmediarule/media": {
       "etag": "\"1bc0-65d55c880141c-df\"",
       "file_path": "documentation/WebKit/domcssmediarule/media.md",
@@ -1050,10 +1075,20 @@
       "file_path": "documentation/WebKit/domcssprimitivevalue/setfloat(_,floatvalue).md",
       "hash": "5696da078bfd9cf16f88a0ba75740edbddbb9627bc1e3d511564c7e68d23bd0e"
     },
+    "https://developer.apple.com/documentation/webkit/domcssprimitivevalue/setfloatvalue::": {
+      "etag": "\"10ad-65d55c87a4366-df\"",
+      "file_path": "documentation/WebKit/domcssprimitivevalue/setfloatvalue__.md",
+      "hash": "e69907ebf4a2bd82beb1c31bae5835484517d997ef7f2631d811b526d4b8500b"
+    },
     "https://developer.apple.com/documentation/webkit/domcssprimitivevalue/setstring(_:stringvalue:)": {
       "etag": "\"2493-65d55c87a4366-df\"",
       "file_path": "documentation/WebKit/domcssprimitivevalue/setstring(_,stringvalue).md",
       "hash": "3f73fb4a7e0a882a873f71f12912c9dde34c04fd1d23afca6a7da89b99648486"
+    },
+    "https://developer.apple.com/documentation/webkit/domcssprimitivevalue/setstringvalue::": {
+      "etag": "\"13d6-65d55c87a4366-df\"",
+      "file_path": "documentation/WebKit/domcssprimitivevalue/setstringvalue__.md",
+      "hash": "5d1fca40583107e78c690e7817b895af6146a8e439c649d37670cacba0b8f26f"
     },
     "https://developer.apple.com/documentation/webkit/domcssrule": {
       "etag": "\"8b0f-65d55c8898742-df\"",
@@ -1384,6 +1419,11 @@
       "etag": "\"210e-65d55c82d8bdc-df\"",
       "file_path": "documentation/WebKit/domcssstyledeclaration/getpropertypriority(_).md",
       "hash": "3d24448fcbef03d41f88a5d52fd6ebe655304caaea94f88a9fe8d8867e238242"
+    },
+    "https://developer.apple.com/documentation/webkit/domcssstyledeclaration/getpropertyshorthand:": {
+      "etag": "\"13b7-65d55c82f3ef7-df\"",
+      "file_path": "documentation/WebKit/domcssstyledeclaration/getpropertyshorthand_.md",
+      "hash": "1ab2623b73079226b720a70038cb112d90eabbbe6bc767f3ae3ca1abd865f662"
     },
     "https://developer.apple.com/documentation/webkit/domcssstyledeclaration/getpropertyvalue(_:)": {
       "etag": "\"20cf-65d55c82f3ef7-df\"",
@@ -2115,6 +2155,11 @@
       "file_path": "documentation/WebKit/domcssstyledeclaration/setproperty(_,value,priority).md",
       "hash": "a100949aaf015a6b77b105add7c55cb5d766359bb150c83567288ffe1c365160"
     },
+    "https://developer.apple.com/documentation/webkit/domcssstyledeclaration/setproperty:::": {
+      "etag": "\"1587-65d55c82a1941-df\"",
+      "file_path": "documentation/WebKit/domcssstyledeclaration/setproperty___.md",
+      "hash": "32c588555ada25959d0eded98743c8e76cad88b1b3f49975b55f52d3fde88808"
+    },
     "https://developer.apple.com/documentation/webkit/domcssstyledeclaration/setquotes(_:)": {
       "etag": "\"1e28-65d55c82f3ef7-df\"",
       "file_path": "documentation/WebKit/domcssstyledeclaration/setquotes(_).md",
@@ -2410,6 +2455,11 @@
       "file_path": "documentation/WebKit/domcssstylesheet/insertrule(_,index).md",
       "hash": "8f21233ab1aa349ebf04120d176a89ee5302fc63840076f1970cbc3a0d4f9734"
     },
+    "https://developer.apple.com/documentation/webkit/domcssstylesheet/insertrule::": {
+      "etag": "\"1354-65d55c82877c5-df\"",
+      "file_path": "documentation/WebKit/domcssstylesheet/insertrule__.md",
+      "hash": "9bfa4ba1170dab06d6c65c049989832f0df44a09bc69c02f81acd78ee2282f3a"
+    },
     "https://developer.apple.com/documentation/webkit/domcssstylesheet/ownerrule": {
       "etag": "\"1bff-65d55c82877c5-df\"",
       "file_path": "documentation/WebKit/domcssstylesheet/ownerrule.md",
@@ -2520,6 +2570,11 @@
       "file_path": "documentation/WebKit/domdocument/createattributens(_,qualifiedname).md",
       "hash": "e3f511e6ebe7ddf2fbcfd0ac408245929f2482755c74f79e702f8c6b47f945e9"
     },
+    "https://developer.apple.com/documentation/webkit/domdocument/createattributens::": {
+      "etag": "\"177c-65d55c82315e9-df\"",
+      "file_path": "documentation/WebKit/domdocument/createattributens__.md",
+      "hash": "a93d04ef4419ec9cd00e03763ebc92d855fd085f05677ce2f0add3ef01f196e4"
+    },
     "https://developer.apple.com/documentation/webkit/domdocument/createcdatasection(_:)": {
       "etag": "\"2422-65d55c82135b1-df\"",
       "file_path": "documentation/WebKit/domdocument/createcdatasection(_).md",
@@ -2550,6 +2605,11 @@
       "file_path": "documentation/WebKit/domdocument/createelementns(_,qualifiedname).md",
       "hash": "2cba48d7e2822a9114d69bbe837b3b2efb7d821810e07ea13bae1066251f4641"
     },
+    "https://developer.apple.com/documentation/webkit/domdocument/createelementns::": {
+      "etag": "\"1791-65d55c82135b1-df\"",
+      "file_path": "documentation/WebKit/domdocument/createelementns__.md",
+      "hash": "6d02d07e81c5607712d4fd2670451b37cf91ecba063b41c451f8e110118df3ad"
+    },
     "https://developer.apple.com/documentation/webkit/domdocument/createentityreference(_:)": {
       "etag": "\"24a3-65d55c82135b1-df\"",
       "file_path": "documentation/WebKit/domdocument/createentityreference(_).md",
@@ -2565,10 +2625,20 @@
       "file_path": "documentation/WebKit/domdocument/createexpression(_,resolver).md",
       "hash": "f96c275dc80eb81af100147402ac03a94470c37c7b7913e6c2be74a431539fb3"
     },
+    "https://developer.apple.com/documentation/webkit/domdocument/createexpression::": {
+      "etag": "\"17d2-65d55c82315e9-df\"",
+      "file_path": "documentation/WebKit/domdocument/createexpression__.md",
+      "hash": "f2d4e1f42aeeb49a8387118bb3ffd30ee33ad5a52f41dd68c2d9b3d43a50c0d5"
+    },
     "https://developer.apple.com/documentation/webkit/domdocument/createnodeiterator(_:whattoshow:filter:expandentityreferences:)": {
       "etag": "\"3a50-65d55c82315e9-df\"",
       "file_path": "documentation/WebKit/domdocument/createnodeiterator(_,whattoshow,filter,expandentityreferences).md",
       "hash": "de5244ca38b1ae82979b3a0fdb7aff8d964f976157cc05349b90a0a64d32bc70"
+    },
+    "https://developer.apple.com/documentation/webkit/domdocument/createnodeiterator::::": {
+      "etag": "\"1c48-65d55c82315e9-df\"",
+      "file_path": "documentation/WebKit/domdocument/createnodeiterator____.md",
+      "hash": "a6cf1e574cce68b2ecd8db681d58c20f28395b8ebe03ac9e7a38e05fa3695416"
     },
     "https://developer.apple.com/documentation/webkit/domdocument/creatensresolver(_:)": {
       "etag": "\"22e7-65d55c82315e9-df\"",
@@ -2579,6 +2649,11 @@
       "etag": "\"2983-65d55c82135b1-df\"",
       "file_path": "documentation/WebKit/domdocument/createprocessinginstruction(_,data).md",
       "hash": "02300ecd455d11f99cd27e464aada6558247f34e557686ca582b8dbe622ad15c"
+    },
+    "https://developer.apple.com/documentation/webkit/domdocument/createprocessinginstruction::": {
+      "etag": "\"18e4-65d55c82315e9-df\"",
+      "file_path": "documentation/WebKit/domdocument/createprocessinginstruction__.md",
+      "hash": "b0dcec62edabd30c5d6629bed8fd3777d40a676f4d66ae3e593f3871fbc1475e"
     },
     "https://developer.apple.com/documentation/webkit/domdocument/createrange()": {
       "etag": "\"1b32-65d55c82135b1-df\"",
@@ -2594,6 +2669,11 @@
       "etag": "\"39fa-65d55c82315e9-df\"",
       "file_path": "documentation/WebKit/domdocument/createtreewalker(_,whattoshow,filter,expandentityreferences).md",
       "hash": "8a612fae31f58ffc25dff58c01cc520117f2416bd967e74c5070e70fc16a0239"
+    },
+    "https://developer.apple.com/documentation/webkit/domdocument/createtreewalker::::": {
+      "etag": "\"1c12-65d55c82135b1-df\"",
+      "file_path": "documentation/WebKit/domdocument/createtreewalker____.md",
+      "hash": "3549108f1be4ad58a6185724294b1e51c820dbfbfd2d0a2e9ab8d25db6b22613"
     },
     "https://developer.apple.com/documentation/webkit/domdocument/defaultcharset": {
       "etag": "\"1cda-65d55c82315e9-df\"",
@@ -2635,6 +2715,11 @@
       "file_path": "documentation/WebKit/domdocument/evaluate(_,contextnode,resolver,type,in).md",
       "hash": "014ee0aa8f45db1967b365e59cef5076556e44de197f5ac383af4e7719becf48"
     },
+    "https://developer.apple.com/documentation/webkit/domdocument/evaluate:::::": {
+      "etag": "\"1e3a-65d55c82135b1-df\"",
+      "file_path": "documentation/WebKit/domdocument/evaluate_____.md",
+      "hash": "29c0f13cb437407e741f9a35eba38be244a00d8c16000a20d7a58def192a52c4"
+    },
     "https://developer.apple.com/documentation/webkit/domdocument/execcommand(_:)": {
       "etag": "\"22fc-65d55c82135b1-df\"",
       "file_path": "documentation/WebKit/domdocument/execcommand(_).md",
@@ -2659,6 +2744,11 @@
       "etag": "\"2d00-65d55c82135b1-df\"",
       "file_path": "documentation/WebKit/domdocument/getcomputedstyle(_,pseudoelement).md",
       "hash": "a374d4ee9dc12e47dbf1bdbd173a992c28b87d7afd48117c468af83586aaebf6"
+    },
+    "https://developer.apple.com/documentation/webkit/domdocument/getcomputedstyle::": {
+      "etag": "\"1bda-65d55c82135b1-df\"",
+      "file_path": "documentation/WebKit/domdocument/getcomputedstyle__.md",
+      "hash": "a9e5d4a554b9d11ea038aaa18619f1a2d77290582d4ec689ca7677dc439a9b47"
     },
     "https://developer.apple.com/documentation/webkit/domdocument/getelementbyid(_:)": {
       "etag": "\"236a-65d55c82135b1-df\"",
@@ -2685,6 +2775,11 @@
       "file_path": "documentation/WebKit/domdocument/getelementsbytagnamens(_,localname).md",
       "hash": "b70aabf55f23e52d8339662a10e1f33fcad475a44224c3db7af788401457b36e"
     },
+    "https://developer.apple.com/documentation/webkit/domdocument/getelementsbytagnamens::": {
+      "etag": "\"17f0-65d55c82315e9-df\"",
+      "file_path": "documentation/WebKit/domdocument/getelementsbytagnamens__.md",
+      "hash": "c8a87f133b03b86b7292c000d75de2c93995de62569eab31d69ddfc6bd9973a0"
+    },
     "https://developer.apple.com/documentation/webkit/domdocument/getmatchedcssrules(_:pseudoelement:)": {
       "etag": "\"2c7a-65d55c82315e9-df\"",
       "file_path": "documentation/WebKit/domdocument/getmatchedcssrules(_,pseudoelement).md",
@@ -2699,6 +2794,11 @@
       "etag": "\"2d00-65d55c82315e9-df\"",
       "file_path": "documentation/WebKit/domdocument/getoverridestyle(_,pseudoelement).md",
       "hash": "b276cdb04e9a92cd759f5f63dc0b695ae283d53dbcefaf5a642a159ab5d1c9f2"
+    },
+    "https://developer.apple.com/documentation/webkit/domdocument/getoverridestyle::": {
+      "etag": "\"1bda-65d55c82315e9-df\"",
+      "file_path": "documentation/WebKit/domdocument/getoverridestyle__.md",
+      "hash": "e13e60e7697d313bb7d0185fc4268615edd1ac2c0cd0d462209170ebd00600bb"
     },
     "https://developer.apple.com/documentation/webkit/domdocument/hasfocus()": {
       "etag": "\"1af4-65d55c82135b1-df\"",
@@ -2719,6 +2819,11 @@
       "etag": "\"25d9-65d55c82135b1-df\"",
       "file_path": "documentation/WebKit/domdocument/import(_,deep).md",
       "hash": "27098bdf1808df127a563eaa8aef638f235ffd2da670a4b97350369afc9ef03f"
+    },
+    "https://developer.apple.com/documentation/webkit/domdocument/importnode::": {
+      "etag": "\"15f6-65d55c82315e9-df\"",
+      "file_path": "documentation/WebKit/domdocument/importnode__.md",
+      "hash": "fea2d06222ae9ce305622022618979dbad9d492f2841dee4e72524f18cda929a"
     },
     "https://developer.apple.com/documentation/webkit/domdocument/inputencoding": {
       "etag": "\"1cc5-65d55c82315e9-df\"",
@@ -2945,10 +3050,20 @@
       "file_path": "documentation/WebKit/domelement/getattributenodens(_,localname).md",
       "hash": "f2c88b0983052da4d1f802807ef3f65826ce119e5de7420c8d19a3e8c9044404"
     },
+    "https://developer.apple.com/documentation/webkit/domelement/getattributenodens::": {
+      "etag": "\"1771-65d55c8638f2a-df\"",
+      "file_path": "documentation/WebKit/domelement/getattributenodens__.md",
+      "hash": "1c955ab5ba0ab56053d94c30f946d2b0f9eb883a6301da5ec50c3b24d1093aed"
+    },
     "https://developer.apple.com/documentation/webkit/domelement/getattributens(_:localname:)": {
       "etag": "\"23d9-65d55c8638f2a-df\"",
       "file_path": "documentation/WebKit/domelement/getattributens(_,localname).md",
       "hash": "48f33c0215608785bbaf3bffec5bf5636a8bf4b66c011a4b4cd6c6d9cc8a0d61"
+    },
+    "https://developer.apple.com/documentation/webkit/domelement/getattributens::": {
+      "etag": "\"13e0-65d55c8638f2a-df\"",
+      "file_path": "documentation/WebKit/domelement/getattributens__.md",
+      "hash": "bf8c350542fc76684fc521ac7838593521f0ec6febe1ecd33a3d4884f1748d7e"
     },
     "https://developer.apple.com/documentation/webkit/domelement/getelementsbyclassname(_:)": {
       "etag": "\"2407-65d55c8638f2a-df\"",
@@ -2965,6 +3080,11 @@
       "file_path": "documentation/WebKit/domelement/getelementsbytagnamens(_,localname).md",
       "hash": "0195d9abe23c60c6b61da30d03755bb1f3e65b42fff04c11c38565e9cdf7dbbb"
     },
+    "https://developer.apple.com/documentation/webkit/domelement/getelementsbytagnamens::": {
+      "etag": "\"17dd-65d55c8651098-df\"",
+      "file_path": "documentation/WebKit/domelement/getelementsbytagnamens__.md",
+      "hash": "1b0a1bc809646ab1807c72a59daefc4820014de1f75c4b24e3d2a5be42ffae63"
+    },
     "https://developer.apple.com/documentation/webkit/domelement/hasattribute(_:)": {
       "etag": "\"22f4-65d55c8651098-df\"",
       "file_path": "documentation/WebKit/domelement/hasattribute(_).md",
@@ -2974,6 +3094,11 @@
       "etag": "\"2776-65d55c8638f2a-df\"",
       "file_path": "documentation/WebKit/domelement/hasattributens(_,localname).md",
       "hash": "472db815dccf3d8bf1fc6d9fec1687ead0196c56819d7a05f2474535fd1c3000"
+    },
+    "https://developer.apple.com/documentation/webkit/domelement/hasattributens::": {
+      "etag": "\"1577-65d55c8651098-df\"",
+      "file_path": "documentation/WebKit/domelement/hasattributens__.md",
+      "hash": "958307a0dbbc6e5665eafbe2b985dc50d664a21368ee87279661f6b17fa109b3"
     },
     "https://developer.apple.com/documentation/webkit/domelement/image()": {
       "etag": "\"1d0c-65d55c8651098-df\"",
@@ -3060,6 +3185,11 @@
       "file_path": "documentation/WebKit/domelement/removeattributens(_,localname).md",
       "hash": "83afb9390e8955a3b29d5e063f7840e1549d2226e9be9777559a66b229e1684b"
     },
+    "https://developer.apple.com/documentation/webkit/domelement/removeattributens::": {
+      "etag": "\"139b-65d55c8638f2a-df\"",
+      "file_path": "documentation/WebKit/domelement/removeattributens__.md",
+      "hash": "a6da7416bbfa818333bc82ef312b9a056bdcf5f76a0210183b1ca361d167542f"
+    },
     "https://developer.apple.com/documentation/webkit/domelement/scroll(bylines:)": {
       "etag": "\"1b1f-65d55c8651098-df\"",
       "file_path": "documentation/WebKit/domelement/scroll(bylines).md",
@@ -3105,6 +3235,11 @@
       "file_path": "documentation/WebKit/domelement/setattribute(_,value).md",
       "hash": "f0ced4143a02c3406daca864a21d16852bd8802a955d25a6f8a13eadb9396218"
     },
+    "https://developer.apple.com/documentation/webkit/domelement/setattribute::": {
+      "etag": "\"1353-65d55c8638f2a-df\"",
+      "file_path": "documentation/WebKit/domelement/setattribute__.md",
+      "hash": "05658c72bd0b1a2337ed69e7c15b6d6fba7761b77f45aae5688503a83109bdd8"
+    },
     "https://developer.apple.com/documentation/webkit/domelement/setattributenode(_:)": {
       "etag": "\"1e9f-65d55c8651098-df\"",
       "file_path": "documentation/WebKit/domelement/setattributenode(_).md",
@@ -3119,6 +3254,11 @@
       "etag": "\"263f-65d55c8651098-df\"",
       "file_path": "documentation/WebKit/domelement/setattributens(_,qualifiedname,value).md",
       "hash": "244263b96800040fafeee42cea57af622597f598906961840e608375547ec379"
+    },
+    "https://developer.apple.com/documentation/webkit/domelement/setattributens:::": {
+      "etag": "\"14cc-65d55c8638f2a-df\"",
+      "file_path": "documentation/WebKit/domelement/setattributens___.md",
+      "hash": "9d563e093d8cd826b9809a77550658ed9a967e3840daed816768a842366e4fe6"
     },
     "https://developer.apple.com/documentation/webkit/domelement/style": {
       "etag": "\"1c29-65d55c8638f2a-df\"",
@@ -3194,6 +3334,11 @@
       "etag": "\"2a0f-65d55c84724d6-df\"",
       "file_path": "documentation/WebKit/domevent/initevent(_,canbubblearg,cancelablearg).md",
       "hash": "c3a0d64acb25b141dc307198e8597d67bf917dfcddcdeee3b3bc50e69c730113"
+    },
+    "https://developer.apple.com/documentation/webkit/domevent/initevent:::": {
+      "etag": "\"15f5-65d55c84724d6-df\"",
+      "file_path": "documentation/WebKit/domevent/initevent___.md",
+      "hash": "aab4502ec73b8cbc18ebde25e796cd8cead28933d6b9de18f9d52c0ca739b0e4"
     },
     "https://developer.apple.com/documentation/webkit/domevent/preventdefault()": {
       "etag": "\"15ae-65d55c84724d6-df\"",
@@ -3275,6 +3420,11 @@
       "file_path": "documentation/WebKit/domeventtarget/addeventlistener(_,listener,usecapture).md",
       "hash": "198eab98f72b74241b2801699dc927235735e6987159fe7ae5de48cd8e939518"
     },
+    "https://developer.apple.com/documentation/webkit/domeventtarget/addeventlistener:::": {
+      "etag": "\"1682-65d55c8492a71-df\"",
+      "file_path": "documentation/WebKit/domeventtarget/addeventlistener___.md",
+      "hash": "7897c817d5fed17aba3482871129c5d6e23a231d633fb8369e953d93f6f30b9d"
+    },
     "https://developer.apple.com/documentation/webkit/domeventtarget/dispatchevent(_:)": {
       "etag": "\"2277-65d55c8492a71-df\"",
       "file_path": "documentation/WebKit/domeventtarget/dispatchevent(_).md",
@@ -3284,6 +3434,11 @@
       "etag": "\"2f16-65d55c8492a71-df\"",
       "file_path": "documentation/WebKit/domeventtarget/removeeventlistener(_,listener,usecapture).md",
       "hash": "f3c75168493f4da158f43706c7a202cd538b84086a88eacdea8a0c3b10a4632d"
+    },
+    "https://developer.apple.com/documentation/webkit/domeventtarget/removeeventlistener:::": {
+      "etag": "\"16a6-65d55c8492a71-df\"",
+      "file_path": "documentation/WebKit/domeventtarget/removeeventlistener___.md",
+      "hash": "3b7fb5a8426cc35d995772074fb22c9f145bdf880888a47f466f55bd134cf0ef"
     },
     "https://developer.apple.com/documentation/webkit/domexception": {
       "etag": "\"5978-65d55c86f449b-df\"",
@@ -3344,6 +3499,11 @@
       "etag": "\"1e43-65d55c85b277a-df\"",
       "file_path": "documentation/WebKit/domhtmlanchorelement/absolutelinkurl.md",
       "hash": "17b66c08290f10a5f78d69df5b003eb7f169d3696fa26e6b14a83b12c300e176"
+    },
+    "https://developer.apple.com/documentation/webkit/domhtmlanchorelement/accesskey": {
+      "etag": "\"1201-65d55c85b277a-df\"",
+      "file_path": "documentation/WebKit/domhtmlanchorelement/accesskey.md",
+      "hash": "02f5aec0528cff2e8055b718a25c873572aedb2fdbeb2eef6c09a954d25cfab6"
     },
     "https://developer.apple.com/documentation/webkit/domhtmlanchorelement/charset": {
       "etag": "\"1d10-65d55c85b277a-df\"",
@@ -3505,6 +3665,11 @@
       "file_path": "documentation/WebKit/domhtmlareaelement/absolutelinkurl.md",
       "hash": "a3c6a3d2a40ac9a696e0d0012537d30e9bdbe8d8eaf5029490f35977b9503370"
     },
+    "https://developer.apple.com/documentation/webkit/domhtmlareaelement/accesskey": {
+      "etag": "\"11db-65d55c87111a7-df\"",
+      "file_path": "documentation/WebKit/domhtmlareaelement/accesskey.md",
+      "hash": "17711d1dd91cd2a7b92148e8f41062941940b13c72bd2cdf2b6d317852fa35c0"
+    },
     "https://developer.apple.com/documentation/webkit/domhtmlareaelement/alt": {
       "etag": "\"1c8e-65d55c87111a7-df\"",
       "file_path": "documentation/WebKit/domhtmlareaelement/alt.md",
@@ -3654,6 +3819,11 @@
       "etag": "\"97af-65d55c83ec0ef-df\"",
       "file_path": "documentation/WebKit/domhtmlbuttonelement.md",
       "hash": "201428214918566bcacad482927c01f25f5cae0a77bd7f82af3d9c4bd587a29b"
+    },
+    "https://developer.apple.com/documentation/webkit/domhtmlbuttonelement/accesskey": {
+      "etag": "\"1201-65d55c8651098-df\"",
+      "file_path": "documentation/WebKit/domhtmlbuttonelement/accesskey.md",
+      "hash": "654f895f0eb889a77a28623a388768aaee8d167b9c7f01c7162086cf759c272f"
     },
     "https://developer.apple.com/documentation/webkit/domhtmlbuttonelement/autofocus": {
       "etag": "\"1c04-65d55c8651098-df\"",
@@ -4410,6 +4580,11 @@
       "file_path": "documentation/WebKit/domhtmlinputelement/accept.md",
       "hash": "c438f8feac0bac1157926e4fe5380c95aa8a2629c347fa9f4c20f8664a0b02c5"
     },
+    "https://developer.apple.com/documentation/webkit/domhtmlinputelement/accesskey": {
+      "etag": "\"11ee-65d55c839507d-df\"",
+      "file_path": "documentation/WebKit/domhtmlinputelement/accesskey.md",
+      "hash": "7b20fbf9be423eb87bc8bf8d2e6346c190fb4e1e944d808ed9c9001f07bdcad3"
+    },
     "https://developer.apple.com/documentation/webkit/domhtmlinputelement/align": {
       "etag": "\"1ccf-65d55c839507d-df\"",
       "file_path": "documentation/WebKit/domhtmlinputelement/align.md",
@@ -4545,6 +4720,11 @@
       "file_path": "documentation/WebKit/domhtmllabelelement.md",
       "hash": "0ba8d0e3347bf960853aa4b5248e35fafcb91b771c9df48fbf59f2d176b8c52c"
     },
+    "https://developer.apple.com/documentation/webkit/domhtmllabelelement/accesskey": {
+      "etag": "\"11ee-65d55c8326652-df\"",
+      "file_path": "documentation/WebKit/domhtmllabelelement/accesskey.md",
+      "hash": "8321770649e80b97eb2055f0d6df7e89c547c845b74a8bcd42f68158d02b1110"
+    },
     "https://developer.apple.com/documentation/webkit/domhtmllabelelement/form": {
       "etag": "\"1c8b-65d55c8326652-df\"",
       "file_path": "documentation/WebKit/domhtmllabelelement/form.md",
@@ -4559,6 +4739,11 @@
       "etag": "\"7d65-65d55c8326652-df\"",
       "file_path": "documentation/WebKit/domhtmllegendelement.md",
       "hash": "4963f356e7aa267888c635b6ea152441beb0ae148def34e22ba27171ab519f82"
+    },
+    "https://developer.apple.com/documentation/webkit/domhtmllegendelement/accesskey": {
+      "etag": "\"1201-65d55c7ffae71-df\"",
+      "file_path": "documentation/WebKit/domhtmllegendelement/accesskey.md",
+      "hash": "cb0a001f3f94bdcaa4b0ba494b7c79501b284d61db376f907df6ddbd24faacb4"
     },
     "https://developer.apple.com/documentation/webkit/domhtmllegendelement/align": {
       "etag": "\"1ce6-65d55c7ffae71-df\"",
@@ -5060,6 +5245,11 @@
       "file_path": "documentation/WebKit/domhtmlselectelement/add(_,before).md",
       "hash": "83ae5f14cb79e4d2df0a4c4db698944b2a42bc2bb1a5c1f80e75151c0b789732"
     },
+    "https://developer.apple.com/documentation/webkit/domhtmlselectelement/add::": {
+      "etag": "\"14c8-65d55c85b277a-df\"",
+      "file_path": "documentation/WebKit/domhtmlselectelement/add__.md",
+      "hash": "3ff8b1deb90a572c89967c45d2be6aba0178243415ef64708bae0be65ad38c02"
+    },
     "https://developer.apple.com/documentation/webkit/domhtmlselectelement/autofocus": {
       "etag": "\"1c04-65d55c85b277a-df\"",
       "file_path": "documentation/WebKit/domhtmlselectelement/autofocus.md",
@@ -5500,6 +5690,11 @@
       "file_path": "documentation/WebKit/domhtmltextareaelement.md",
       "hash": "1ccd8ec8f750256d644346af765c0aad7d0505909306cccd36977a2b2321f0cf"
     },
+    "https://developer.apple.com/documentation/webkit/domhtmltextareaelement/accesskey": {
+      "etag": "\"1227-65d55c7ffae71-df\"",
+      "file_path": "documentation/WebKit/domhtmltextareaelement/accesskey.md",
+      "hash": "7fa1ac2e4286928c40dafab5344c5e2940c071c262e138047d83a933bb39f036"
+    },
     "https://developer.apple.com/documentation/webkit/domhtmltextareaelement/autofocus": {
       "etag": "\"1c32-65d55c7ffae71-df\"",
       "file_path": "documentation/WebKit/domhtmltextareaelement/autofocus.md",
@@ -5610,15 +5805,30 @@
       "file_path": "documentation/WebKit/domimplementation/createcssstylesheet(_,media).md",
       "hash": "646427d75662f742a273cb638881e0be554d244d92f9c3a8949b885ea7d4610d"
     },
+    "https://developer.apple.com/documentation/webkit/domimplementation/createcssstylesheet::": {
+      "etag": "\"187e-65d55c880141c-df\"",
+      "file_path": "documentation/WebKit/domimplementation/createcssstylesheet__.md",
+      "hash": "ce260b1631e88ccd8eb6f03a7a93bf79554d377c904b6c1d1bb879074f69acef"
+    },
     "https://developer.apple.com/documentation/webkit/domimplementation/createdocument(_:qualifiedname:doctype:)": {
       "etag": "\"3102-65d55c880141c-df\"",
       "file_path": "documentation/WebKit/domimplementation/createdocument(_,qualifiedname,doctype).md",
       "hash": "1466a734f172e7b60d91a991e6e8bb936c8ef8fccae4e94c3c995155347c28c0"
     },
+    "https://developer.apple.com/documentation/webkit/domimplementation/createdocument:::": {
+      "etag": "\"1d32-65d55c880141c-df\"",
+      "file_path": "documentation/WebKit/domimplementation/createdocument___.md",
+      "hash": "ef1df9210b73c58d18c7785a1376e60382c385c6ba817493a37ffb5d6ceb3ea2"
+    },
     "https://developer.apple.com/documentation/webkit/domimplementation/createdocumenttype(_:publicid:systemid:)": {
       "etag": "\"2d22-65d55c880141c-df\"",
       "file_path": "documentation/WebKit/domimplementation/createdocumenttype(_,publicid,systemid).md",
       "hash": "c34b7f2c307ce430c6cea21af2668091da933772c9ae6f50ede9be5b1ac18c65"
+    },
+    "https://developer.apple.com/documentation/webkit/domimplementation/createdocumenttype:::": {
+      "etag": "\"19c2-65d55c880141c-df\"",
+      "file_path": "documentation/WebKit/domimplementation/createdocumenttype___.md",
+      "hash": "a86cef89b0c455482abe61981d58c1ee5f5c02f850acd4fb529e99a85259ef3a"
     },
     "https://developer.apple.com/documentation/webkit/domimplementation/createhtmldocument(_:)": {
       "etag": "\"24ae-65d55c880141c-df\"",
@@ -5629,6 +5839,11 @@
       "etag": "\"278d-65d55c880141c-df\"",
       "file_path": "documentation/WebKit/domimplementation/hasfeature(_,version).md",
       "hash": "1b61657d8bb8907890e617009c1a2a9c99dcb9dc83572baf8d3cdc5d42fe85ca"
+    },
+    "https://developer.apple.com/documentation/webkit/domimplementation/hasfeature::": {
+      "etag": "\"15c5-65d55c880141c-df\"",
+      "file_path": "documentation/WebKit/domimplementation/hasfeature__.md",
+      "hash": "28dbb2cb7a2b8d95d116752691287af4c05c86d9c5aadcf4c145cc5d542177f0"
     },
     "https://developer.apple.com/documentation/webkit/domkeyboardevent": {
       "etag": "\"c2a2-65d55c83ec0ef-df\"",
@@ -5670,6 +5885,16 @@
       "file_path": "documentation/WebKit/domkeyboardevent/initkeyboardevent(_,canbubble,cancelable,view,keyidentifier,location,ctrlkey,altkey,shiftkey,metakey,altgraphkey).md",
       "hash": "adef6c8cb7288c7cfd633db261c564b3220151963f0f038ac53d3bf28be9382d"
     },
+    "https://developer.apple.com/documentation/webkit/domkeyboardevent/initkeyboardevent:canbubble:cancelable:view:keyidentifier:keylocation:ctrlkey:altkey:shiftkey:metakey:": {
+      "etag": "\"26db-65d55c8822ae9-df\"",
+      "file_path": "documentation/WebKit/domkeyboardevent/initkeyboardevent_canbubble_cancelable_view_keyidentifier_keylocation_ctrlkey_altkey_shiftkey_metakey_.md",
+      "hash": "fdf282e7cfba1bef4566a6d8c37bffcbc9f3c15aa60826c52b127515dca926cb"
+    },
+    "https://developer.apple.com/documentation/webkit/domkeyboardevent/initkeyboardevent:canbubble:cancelable:view:keyidentifier:keylocation:ctrlkey:altkey:shiftkey:metakey:altgraphkey:": {
+      "etag": "\"28a3-65d55c8822ae9-df\"",
+      "file_path": "documentation/WebKit/domkeyboardevent/initkeyboardevent_canbubble_cancelable_view_keyidentifier_keylocation_ctrlkey_altkey_shiftkey_metakey_altgraphkey_.md",
+      "hash": "6abed2be23266076fbc19274c3801b60d68b85cf5af2caa4c377de9ed12cffa8"
+    },
     "https://developer.apple.com/documentation/webkit/domkeyboardevent/keycode": {
       "etag": "\"194f-65d55c8822ae9-df\"",
       "file_path": "documentation/WebKit/domkeyboardevent/keycode.md",
@@ -5679,6 +5904,11 @@
       "etag": "\"1d38-65d55c8822ae9-df\"",
       "file_path": "documentation/WebKit/domkeyboardevent/keyidentifier.md",
       "hash": "59bb2c98f2470e1136ad4cba57c7e2ea6eac85ebbb7228a4431bd821e278bd76"
+    },
+    "https://developer.apple.com/documentation/webkit/domkeyboardevent/keylocation": {
+      "etag": "\"ebe-65d55c8822ae9-df\"",
+      "file_path": "documentation/WebKit/domkeyboardevent/keylocation.md",
+      "hash": "a271d327ee121823bf04fa5019c0e4d55d52e97f9083523d42d6f9820a4c4b68"
     },
     "https://developer.apple.com/documentation/webkit/domkeyboardevent/location": {
       "etag": "\"197c-65d55c8822ae9-df\"",
@@ -5765,6 +5995,11 @@
       "file_path": "documentation/WebKit/dommouseevent/initmouseevent(_,canbubble,cancelable,view,detail,screenx,screeny,clientx,clienty,ctrlkey,altkey,shiftkey,metakey,button,relatedtarget).md",
       "hash": "8e73f48d6a7061c181d22d0654ddb92319408467af79e7379b84258ef1021224"
     },
+    "https://developer.apple.com/documentation/webkit/dommouseevent/initmouseevent:::::::::::::::": {
+      "etag": "\"273f-65d55c86cea4d-df\"",
+      "file_path": "documentation/WebKit/dommouseevent/initmouseevent_______________.md",
+      "hash": "6ca209eab40b76f5e65a05f492c08ba0985a444ecb2fa7eefcae1f2a6e322261"
+    },
     "https://developer.apple.com/documentation/webkit/dommouseevent/metakey": {
       "etag": "\"1b40-65d55c86cea4d-df\"",
       "file_path": "documentation/WebKit/dommouseevent/metakey.md",
@@ -5835,6 +6070,11 @@
       "file_path": "documentation/WebKit/dommutationevent/initmutationevent(_,canbubble,cancelable,relatednode,prevvalue,newvalue,attrname,attrchange).md",
       "hash": "c79f24c47dc9e9fa789bb2d556706dae9e9068c2e8e669334e87553313fb6006"
     },
+    "https://developer.apple.com/documentation/webkit/dommutationevent/initmutationevent::::::::": {
+      "etag": "\"208b-65d55c836030a-df\"",
+      "file_path": "documentation/WebKit/dommutationevent/initmutationevent________.md",
+      "hash": "a6fe28034b4b02af4b1b5de0fe90b50de76ac4f8e53ddf80a6ab20912a845799"
+    },
     "https://developer.apple.com/documentation/webkit/dommutationevent/newvalue": {
       "etag": "\"1ccf-65d55c836030a-df\"",
       "file_path": "documentation/WebKit/dommutationevent/newvalue.md",
@@ -5865,6 +6105,11 @@
       "file_path": "documentation/WebKit/domnamednodemap/getnameditemns(_,localname).md",
       "hash": "84edea2032b4b2e121d16145f5fa237807bd30b8c18f961a15ffbeb5f93dc421"
     },
+    "https://developer.apple.com/documentation/webkit/domnamednodemap/getnameditemns::": {
+      "etag": "\"17a0-65d55c87111a7-df\"",
+      "file_path": "documentation/WebKit/domnamednodemap/getnameditemns__.md",
+      "hash": "27973039acdd246429560b1ce6bfc96485c112b0352d4adef1bcfeacf2831025"
+    },
     "https://developer.apple.com/documentation/webkit/domnamednodemap/item(_:)": {
       "etag": "\"1fc8-65d55c87111a7-df\"",
       "file_path": "documentation/WebKit/domnamednodemap/item(_).md",
@@ -5884,6 +6129,11 @@
       "etag": "\"2811-65d55c87111a7-df\"",
       "file_path": "documentation/WebKit/domnamednodemap/removenameditemns(_,localname).md",
       "hash": "2624db950606ec27988ee10f27fe7bf78531063cca5233ea3bc777b31adb9163"
+    },
+    "https://developer.apple.com/documentation/webkit/domnamednodemap/removenameditemns::": {
+      "etag": "\"17c4-65d55c87111a7-df\"",
+      "file_path": "documentation/WebKit/domnamednodemap/removenameditemns__.md",
+      "hash": "fcf2745ca290fd575f18af8ab3d868f8b8b37eefe100c05cc7fcff2109362662"
     },
     "https://developer.apple.com/documentation/webkit/domnamednodemap/setnameditem(_:)": {
       "etag": "\"1eb8-65d55c87111a7-df\"",
@@ -5965,6 +6215,11 @@
       "file_path": "documentation/WebKit/domnode/insert(before,refchild).md",
       "hash": "1cbbbc23f6e3ece0b66398bef0a9ef0caa2e11e0a8dd0ee8ee71a16ad5ed3b99"
     },
+    "https://developer.apple.com/documentation/webkit/domnode/insertbefore::": {
+      "etag": "\"10ae-65d55c83b0ea5-df\"",
+      "file_path": "documentation/WebKit/domnode/insertbefore__.md",
+      "hash": "4ac4e9d3aa3f3d0e007a14dee74458ceb3ba0c385559c1bef079742aa459af1a"
+    },
     "https://developer.apple.com/documentation/webkit/domnode/iscontenteditable": {
       "etag": "\"1b88-65d55c83b0ea5-df\"",
       "file_path": "documentation/WebKit/domnode/iscontenteditable.md",
@@ -5989,6 +6244,11 @@
       "etag": "\"26bc-65d55c83b0ea5-df\"",
       "file_path": "documentation/WebKit/domnode/issupported(_,version).md",
       "hash": "e8a5690ca102737f5e285b73c9d5de40a82c95670be2167974c74bc00eca796c"
+    },
+    "https://developer.apple.com/documentation/webkit/domnode/issupported::": {
+      "etag": "\"1513-65d55c83b0ea5-df\"",
+      "file_path": "documentation/WebKit/domnode/issupported__.md",
+      "hash": "61b0aef4ff4df6383741c7a815c62852edfd9ba9c2ecdec27aaaede8592bea00"
     },
     "https://developer.apple.com/documentation/webkit/domnode/lastchild": {
       "etag": "\"177f-65d55c83b0ea5-df\"",
@@ -6079,6 +6339,11 @@
       "etag": "\"1ee2-65d55c83b0ea5-df\"",
       "file_path": "documentation/WebKit/domnode/replacechild(_,oldchild).md",
       "hash": "bcacd46e1d3893f960c9fb32000182ac0bbeaaf49d65b064acf46d9cd971c340"
+    },
+    "https://developer.apple.com/documentation/webkit/domnode/replacechild::": {
+      "etag": "\"10ae-65d55c83b0ea5-df\"",
+      "file_path": "documentation/WebKit/domnode/replacechild__.md",
+      "hash": "b9eaa61c0c9c1ff9ce1d7fc0721f06d51b984741bb94a99e8668e634e1219933"
     },
     "https://developer.apple.com/documentation/webkit/domnode/textcontent": {
       "etag": "\"1c39-65d55c83b0ea5-df\"",
@@ -6280,6 +6545,11 @@
       "file_path": "documentation/WebKit/domrange/compareboundarypoints(_,sourcerange).md",
       "hash": "2abcdc7af4d024929720713508fa7ef9626394c49f81e2ef12c49fbcdb816b4a"
     },
+    "https://developer.apple.com/documentation/webkit/domrange/compareboundarypoints::": {
+      "etag": "\"1083-65d55c83d0d95-df\"",
+      "file_path": "documentation/WebKit/domrange/compareboundarypoints__.md",
+      "hash": "847ce9e6ff8c4da05d5554ab6770dde6c454d1448b75b65d297ff69e1a5831bc"
+    },
     "https://developer.apple.com/documentation/webkit/domrange/comparepoint(_:offset:)": {
       "etag": "\"252a-65d55c83ec0ef-df\"",
       "file_path": "documentation/WebKit/domrange/comparepoint(_,offset).md",
@@ -6350,6 +6620,11 @@
       "file_path": "documentation/WebKit/domrange/setend(_,offset).md",
       "hash": "5679539095345a8910209bcb8e5fdf8c109aa6334c557ac08c1f628730ed65d1"
     },
+    "https://developer.apple.com/documentation/webkit/domrange/setend::": {
+      "etag": "\"132e-65d55c83d0d95-df\"",
+      "file_path": "documentation/WebKit/domrange/setend__.md",
+      "hash": "473904ede9830c58bf8bcf6e3f14dc32712c84ed743743661d75ac9727a568ce"
+    },
     "https://developer.apple.com/documentation/webkit/domrange/setendafter(_:)": {
       "etag": "\"1c0f-65d55c83d0d95-df\"",
       "file_path": "documentation/WebKit/domrange/setendafter(_).md",
@@ -6364,6 +6639,11 @@
       "etag": "\"218b-65d55c83ec0ef-df\"",
       "file_path": "documentation/WebKit/domrange/setstart(_,offset).md",
       "hash": "52969dfecbf82b08937dfcdc042e436b738beb06cfd0a10be7413ec0d0ec0f11"
+    },
+    "https://developer.apple.com/documentation/webkit/domrange/setstart::": {
+      "etag": "\"1346-65d55c83d0d95-df\"",
+      "file_path": "documentation/WebKit/domrange/setstart__.md",
+      "hash": "0b51ea44279a30b50bd700ab709f6eca475af6a36dfa1738fa6c946443ac9eeb"
     },
     "https://developer.apple.com/documentation/webkit/domrange/setstartafter(_:)": {
       "etag": "\"1c39-65d55c83ec0ef-df\"",
@@ -6650,10 +6930,25 @@
       "file_path": "documentation/WebKit/domuievent/inituievent(_,canbubble,cancelable,view,detail).md",
       "hash": "60c347d1e101741e0aba36da7f69c3c382a6ff7aad19d36ed88cbf469a35a7c4"
     },
+    "https://developer.apple.com/documentation/webkit/domuievent/inituievent:::::": {
+      "etag": "\"1c36-65d55c83ec0ef-df\"",
+      "file_path": "documentation/WebKit/domuievent/inituievent_____.md",
+      "hash": "9eabe7aa088f5512e7791cb24afea8b66e15f56c6b5450cf851f60c507252e45"
+    },
     "https://developer.apple.com/documentation/webkit/domuievent/keycode": {
       "etag": "\"18c5-65d55c83ec0ef-df\"",
       "file_path": "documentation/WebKit/domuievent/keycode.md",
       "hash": "ac6f9967563d917852726073fc3aee30782eb265c4af642ca8607c26a04ef36b"
+    },
+    "https://developer.apple.com/documentation/webkit/domuievent/layerx": {
+      "etag": "\"e07-65d55c83ec0ef-df\"",
+      "file_path": "documentation/WebKit/domuievent/layerx.md",
+      "hash": "8042a16e25119990b3c9945aac77c9ecdfe980c69cdfac906f8a215634a08f04"
+    },
+    "https://developer.apple.com/documentation/webkit/domuievent/layery": {
+      "etag": "\"e07-65d55c83ec0ef-df\"",
+      "file_path": "documentation/WebKit/domuievent/layery.md",
+      "hash": "ccafdbfa7fc3efeec9550c17b2929deecece3ad0e2d545b0a5b33fa628680f7b"
     },
     "https://developer.apple.com/documentation/webkit/domuievent/pagex": {
       "etag": "\"189b-65d55c83ec0ef-df\"",
@@ -6739,6 +7034,11 @@
       "etag": "\"2cf0-65d55c84df8e2-df\"",
       "file_path": "documentation/WebKit/domxpathexpression/evaluate(_,type,in).md",
       "hash": "f9d06883398ef076b07c1cdd6348dfe71d26f48e1e98f7408d3a073c435ec60f"
+    },
+    "https://developer.apple.com/documentation/webkit/domxpathexpression/evaluate:::": {
+      "etag": "\"199f-65d55c84df8e2-df\"",
+      "file_path": "documentation/WebKit/domxpathexpression/evaluate___.md",
+      "hash": "a254ab724e38378b0ee3b401a5a1ec9a6fa9df0beed1ef900f1c3474b1ca5269"
     },
     "https://developer.apple.com/documentation/webkit/domxpathnsresolver": {
       "etag": "\"6061-65d55c85cd2d2-df\"",
@@ -6839,6 +7139,16 @@
       "etag": "\"bf13-659024a6f269f-df\"",
       "file_path": "documentation/WebKit/menu-item-tags.md",
       "hash": "90b41458ccab1776463c5aa18f59a18eee0083a320f7ccfd69851855482b7a54"
+    },
+    "https://developer.apple.com/documentation/webkit/nsattributedstringcompletionhandler": {
+      "etag": "\"d51-65d55c83d0d95-df\"",
+      "file_path": "documentation/WebKit/nsattributedstringcompletionhandler.md",
+      "hash": "03a568570e2621baee89dce474fb3a54e6275d35d7c53139e5a163a81aa95b3d"
+    },
+    "https://developer.apple.com/documentation/webkit/nsreadaccessurldocumentoption": {
+      "etag": "\"2d60-65d55c8174eaa-df\"",
+      "file_path": "documentation/WebKit/nsreadaccessurldocumentoption.md",
+      "hash": "88a9f6beff649c65462e80aa07b15163cccf87d4a84bea3b05242c1112706b2b"
     },
     "https://developer.apple.com/documentation/webkit/opening-a-file-legacy": {
       "etag": "\"28e4-659024a20bd3a-df\"",
@@ -7365,6 +7675,11 @@
       "file_path": "documentation/WebKit/webdragdestinationaction/load.md",
       "hash": "b59fc435abede2af282fb75de1153452b1574134df4ae596f6af3549ebab6055"
     },
+    "https://developer.apple.com/documentation/webkit/webdragdestinationaction/webdragdestinationactionnone": {
+      "etag": "\"2398-65d55c85cd2d2-df\"",
+      "file_path": "documentation/WebKit/webdragdestinationaction/webdragdestinationactionnone.md",
+      "hash": "b1ca1de977ea108b8ced648a728bc8fada76605bc9a1d19ec5e534541d091617"
+    },
     "https://developer.apple.com/documentation/webkit/webdragsourceaction": {
       "etag": "\"590d-65d55c8638f2a-df\"",
       "file_path": "documentation/WebKit/webdragsourceaction.md",
@@ -7399,6 +7714,11 @@
       "etag": "\"3046-65d55c866c3d9-df\"",
       "file_path": "documentation/WebKit/webdragsourceaction/selection.md",
       "hash": "f82e3eaf6f1e93f281e7b6b458b4791951b47aae83f63884a63d9b9e49a940a6"
+    },
+    "https://developer.apple.com/documentation/webkit/webdragsourceaction/webdragsourceactionnone": {
+      "etag": "\"2725-65d55c866c3d9-df\"",
+      "file_path": "documentation/WebKit/webdragsourceaction/webdragsourceactionnone.md",
+      "hash": "8ce8eba3bfea43a6a08718ed32929f30fa6851cbfdb6b0ff106d452112ea1f47"
     },
     "https://developer.apple.com/documentation/webkit/webeditingdelegate": {
       "etag": "\"afa0-65d55c8747917-df\"",
@@ -7725,6 +8045,11 @@
       "file_path": "documentation/WebKit/webframeloaddelegate/webview(_,willperformclientredirectto,delay,fire,for).md",
       "hash": "1ac354b0bc52f80a86e1b51a6b7512c2a0a8941923c110d4a2263a87a3e79503"
     },
+    "https://developer.apple.com/documentation/webkit/webframeloaddelegate/webview:windowscriptobjectavailable:": {
+      "etag": "\"3289-65d55c8248aad-df\"",
+      "file_path": "documentation/WebKit/webframeloaddelegate/webview_windowscriptobjectavailable_.md",
+      "hash": "a46f92abad55887c368e8025346661b8832b0f38a71a742bbba1c2a0eec95abb"
+    },
     "https://developer.apple.com/documentation/webkit/webframeview": {
       "etag": "\"9dcc-65d6161a23aae-df\"",
       "file_path": "documentation/WebKit/webframeview.md",
@@ -7830,6 +8155,11 @@
       "file_path": "documentation/WebKit/webhistory/setoptionalshared(_).md",
       "hash": "b3836d97f8231e7183ad4a31279946e18218b485cd582087ba80c93426042ab4"
     },
+    "https://developer.apple.com/documentation/webkit/webhistoryallitemsremovednotification": {
+      "etag": "\"2635-65d55c86f449b-df\"",
+      "file_path": "documentation/WebKit/webhistoryallitemsremovednotification.md",
+      "hash": "ba7476e3d630ac932a510e4286fb7f521a6f74609f71e4001cd7a77beabdfe7a"
+    },
     "https://developer.apple.com/documentation/webkit/webhistoryitem": {
       "etag": "\"95d1-65d55c86f449b-df\"",
       "file_path": "documentation/WebKit/webhistoryitem.md",
@@ -7875,10 +8205,35 @@
       "file_path": "documentation/WebKit/webhistoryitem/urlstring.md",
       "hash": "617f1d473db6d7af0ab8a1cd5a16e1e5138d2f4a1f1c806d15c41c3064deb072"
     },
+    "https://developer.apple.com/documentation/webkit/webhistoryitemchangednotification": {
+      "etag": "\"21ab-65d55c8747917-df\"",
+      "file_path": "documentation/WebKit/webhistoryitemchangednotification.md",
+      "hash": "e2ded6e3a3ceb8308f360192dc672db140f490f595257df1983a0ee717e2ff8b"
+    },
+    "https://developer.apple.com/documentation/webkit/webhistoryitemsaddednotification": {
+      "etag": "\"261e-65d55c83ec0ef-df\"",
+      "file_path": "documentation/WebKit/webhistoryitemsaddednotification.md",
+      "hash": "de2be7aac67af0c8e8ca61456817dc3936a89b928bbea0f5a7895e8f9caefb8b"
+    },
     "https://developer.apple.com/documentation/webkit/webhistoryitemskey": {
       "etag": "\"6c8f-65d55c88bd64f-df\"",
       "file_path": "documentation/WebKit/webhistoryitemskey.md",
       "hash": "82660481ac185cc029746fc67e66b2097ff0ae97debe03b59cfe8f4b97c13579"
+    },
+    "https://developer.apple.com/documentation/webkit/webhistoryitemsremovednotification": {
+      "etag": "\"264e-65d55c8267910-df\"",
+      "file_path": "documentation/WebKit/webhistoryitemsremovednotification.md",
+      "hash": "a95a7e5237dc6275d9b759bd85b0e74cba5d0e6fc668010a1b8fb54e3ca81cc2"
+    },
+    "https://developer.apple.com/documentation/webkit/webhistoryloadednotification": {
+      "etag": "\"21ec-65d55c7ffae71-df\"",
+      "file_path": "documentation/WebKit/webhistoryloadednotification.md",
+      "hash": "987d80d942dd1794e0ee5da18b28719701ce42579ad74fd323bbd7778cb058b5"
+    },
+    "https://developer.apple.com/documentation/webkit/webhistorysavednotification": {
+      "etag": "\"21c3-65d55c8898742-df\"",
+      "file_path": "documentation/WebKit/webhistorysavednotification.md",
+      "hash": "fb09b46ac498398df57939a5ac9dbcfec54c11d9feaca39e55e7ac1567854458"
     },
     "https://developer.apple.com/documentation/webkit/webkit-constants": {
       "etag": "\"20bd2-659024a5cc827-df\"",
@@ -7894,6 +8249,41 @@
       "etag": "\"5f57-65b3b2650513d-df\"",
       "file_path": "documentation/WebKit/webkit-for-swiftui.md",
       "hash": "a18cff2de8f346233b9b80ba62008406683272c8004cc9e6a938bd8356755047"
+    },
+    "https://developer.apple.com/documentation/webkit/webkit-macros": {
+      "etag": "\"21c8-659024a76e633-df\"",
+      "file_path": "documentation/WebKit/webkit-macros.md",
+      "hash": "34adf030ab8ae7cb52b128d2fa58fd1119113d45025c59ce2b51e15af50a59fc"
+    },
+    "https://developer.apple.com/documentation/webkit/webkit_available_mac": {
+      "etag": "\"2087-65d55c836030a-df\"",
+      "file_path": "documentation/WebKit/webkit_available_mac.md",
+      "hash": "d81a68ebdaf650e1f5699d8eb51f19f50b4de918a9cbd9ca1dda70e1593a8d0d"
+    },
+    "https://developer.apple.com/documentation/webkit/webkit_class_available_mac": {
+      "etag": "\"20ab-65d55c82315e9-df\"",
+      "file_path": "documentation/WebKit/webkit_class_available_mac.md",
+      "hash": "30ddacb8dae96fd16ca5dea7faa04e900742a132af27938ad8b2a0434fde2963"
+    },
+    "https://developer.apple.com/documentation/webkit/webkit_class_deprecated_mac": {
+      "etag": "\"20ff-65d55c8267910-df\"",
+      "file_path": "documentation/WebKit/webkit_class_deprecated_mac.md",
+      "hash": "ef6434e51b67985a7992114fe92128590d370ce992f83a7ffdcb2946fd9f0086"
+    },
+    "https://developer.apple.com/documentation/webkit/webkit_deprecated_mac": {
+      "etag": "\"20db-65d55c82135b1-df\"",
+      "file_path": "documentation/WebKit/webkit_deprecated_mac.md",
+      "hash": "86d65e77c011f36211140beae06945ed5132a7a1090ed88accec0e941bf4194a"
+    },
+    "https://developer.apple.com/documentation/webkit/webkit_enum_available_mac": {
+      "etag": "\"20a5-65d55c880141c-df\"",
+      "file_path": "documentation/WebKit/webkit_enum_available_mac.md",
+      "hash": "e93d1f546cdc56f8b47dfd3a105df55da4948c5cd1b1541a1b4ddd51526235a2"
+    },
+    "https://developer.apple.com/documentation/webkit/webkit_enum_deprecated_mac": {
+      "etag": "\"20f9-65d55c861be42-df\"",
+      "file_path": "documentation/WebKit/webkit_enum_deprecated_mac.md",
+      "hash": "2c32a79c807fd0adbdc314744440508bd3c779b14bcf45ef0419ec554b2f8f85"
     },
     "https://developer.apple.com/documentation/webkit/webkiterrorblockedpluginversion": {
       "etag": "\"22cb-65d55c7ffae71-df\"",
@@ -8455,20 +8845,40 @@
       "file_path": "documentation/WebKit/webpage/dialogpresenting/handlefileinputprompt(parameters,initiatedby).md",
       "hash": "03e7b361e627ddd55a050e7f972cfa48608af366f78e40da0b2c9b21c7858932"
     },
+    "https://developer.apple.com/documentation/webkit/webpage/dialogpresenting/handlefileinputprompt(parameters:initiatedby:)-1t7xa": {
+      "etag": "\"2aa0-65d55c8914302-df\"",
+      "file_path": "documentation/WebKit/webpage/dialogpresenting/handlefileinputprompt(parameters,initiatedby)-1t7xa.md",
+      "hash": "4a51f360f9f6d68a70fbe20105b4096b68e9348678dd7127e295d0fbbb4fcdb0"
+    },
     "https://developer.apple.com/documentation/webkit/webpage/dialogpresenting/handlejavascriptalert(message:initiatedby:)": {
       "etag": "\"2809-65d55c8914302-df\"",
       "file_path": "documentation/WebKit/webpage/dialogpresenting/handlejavascriptalert(message,initiatedby).md",
       "hash": "5fee9f49042f02032f922648dae7dcf3ec6e5e9c697fe56541fcb3773a5c3bd3"
+    },
+    "https://developer.apple.com/documentation/webkit/webpage/dialogpresenting/handlejavascriptalert(message:initiatedby:)-32742": {
+      "etag": "\"2062-65d55c8914302-df\"",
+      "file_path": "documentation/WebKit/webpage/dialogpresenting/handlejavascriptalert(message,initiatedby)-32742.md",
+      "hash": "f00be1557e323df744ed9a1902c01be94c228e89ccbcdba3da27108e1655301a"
     },
     "https://developer.apple.com/documentation/webkit/webpage/dialogpresenting/handlejavascriptconfirm(message:initiatedby:)": {
       "etag": "\"30a1-65d55c8914302-df\"",
       "file_path": "documentation/WebKit/webpage/dialogpresenting/handlejavascriptconfirm(message,initiatedby).md",
       "hash": "1238db5cf9ed9051c5040d04b7ad7ae01f8d3d0e9051939d852dc218c752b9b2"
     },
+    "https://developer.apple.com/documentation/webkit/webpage/dialogpresenting/handlejavascriptconfirm(message:initiatedby:)-86j9x": {
+      "etag": "\"2762-65d55c8914302-df\"",
+      "file_path": "documentation/WebKit/webpage/dialogpresenting/handlejavascriptconfirm(message,initiatedby)-86j9x.md",
+      "hash": "c9378a15cf0b66c63f3fe1ae07c7b426f1412b7265a610a93677dceab12a445e"
+    },
     "https://developer.apple.com/documentation/webkit/webpage/dialogpresenting/handlejavascriptprompt(message:defaulttext:initiatedby:)": {
       "etag": "\"3536-65d55c8914302-df\"",
       "file_path": "documentation/WebKit/webpage/dialogpresenting/handlejavascriptprompt(message,defaulttext,initiatedby).md",
       "hash": "236b3391bece4b36e82910c01b03464abc3e367070cb5a56a2e760b259ad1092"
+    },
+    "https://developer.apple.com/documentation/webkit/webpage/dialogpresenting/handlejavascriptprompt(message:defaulttext:initiatedby:)-9aik4": {
+      "etag": "\"2a00-65d55c8914302-df\"",
+      "file_path": "documentation/WebKit/webpage/dialogpresenting/handlejavascriptprompt(message,defaulttext,initiatedby)-9aik4.md",
+      "hash": "b90040973ac5ce60f88a60864fdfeb1d3a56188edddf98c1e0fe27da59f9e0a6"
     },
     "https://developer.apple.com/documentation/webkit/webpage/estimatedprogress": {
       "etag": "\"46ae-65d55c894eca1-df\"",
@@ -8800,20 +9210,40 @@
       "file_path": "documentation/WebKit/webpage/navigationdeciding/decideauthenticationchallengedisposition(for).md",
       "hash": "54b12de1c31cd59677cc218b258307c383f4819e0d0215c1620da329b8e557bf"
     },
+    "https://developer.apple.com/documentation/webkit/webpage/navigationdeciding/decideauthenticationchallengedisposition(for:)-693ex": {
+      "etag": "\"3470-65d55c8980747-df\"",
+      "file_path": "documentation/WebKit/webpage/navigationdeciding/decideauthenticationchallengedisposition(for)-693ex.md",
+      "hash": "8c1ac7d31a8ae972b59f575cc2849de668948eeabadd40e27a69e0307b7831b9"
+    },
     "https://developer.apple.com/documentation/webkit/webpage/navigationdeciding/decidepolicy(for:)": {
       "etag": "\"2b35-65d55c8980747-df\"",
       "file_path": "documentation/WebKit/webpage/navigationdeciding/decidepolicy(for).md",
       "hash": "03544682c88123269f379e057e72f91ea250e7c37120cfb1d3073edc75024268"
+    },
+    "https://developer.apple.com/documentation/webkit/webpage/navigationdeciding/decidepolicy(for:)-6v2aq": {
+      "etag": "\"23e6-65d55c8980747-df\"",
+      "file_path": "documentation/WebKit/webpage/navigationdeciding/decidepolicy(for)-6v2aq.md",
+      "hash": "560ca4eddeb3eacbd50edbd0700ba35b43bac177797e39d9dfba81358945111d"
     },
     "https://developer.apple.com/documentation/webkit/webpage/navigationdeciding/decidepolicy(for:preferences:)": {
       "etag": "\"367c-65d55c8980747-df\"",
       "file_path": "documentation/WebKit/webpage/navigationdeciding/decidepolicy(for,preferences).md",
       "hash": "d5088ba74312b648eb62b916fbf3a2c563c5da2c94bbbf847f84b79baeef1cd4"
     },
+    "https://developer.apple.com/documentation/webkit/webpage/navigationdeciding/decidepolicy(for:preferences:)-3lqmr": {
+      "etag": "\"2bb9-65d55c8980747-df\"",
+      "file_path": "documentation/WebKit/webpage/navigationdeciding/decidepolicy(for,preferences)-3lqmr.md",
+      "hash": "bdc6c724641b62bb15bf8f2987cfbcb5cbd22ec538ec1580d82ecca9a85b7fdc"
+    },
     "https://developer.apple.com/documentation/webkit/webpage/navigationdeciding/willsubmit(forminfo:)": {
       "etag": "\"2378-65d55c8980747-df\"",
       "file_path": "documentation/WebKit/webpage/navigationdeciding/willsubmit(forminfo).md",
       "hash": "909677b24084df6bcf1a9a9d943ef0838beef7e85ca25bf2d92c55b48e46c07c"
+    },
+    "https://developer.apple.com/documentation/webkit/webpage/navigationdeciding/willsubmit(forminfo:)-1wa4u": {
+      "etag": "\"1b34-65d55c8980747-df\"",
+      "file_path": "documentation/WebKit/webpage/navigationdeciding/willsubmit(forminfo)-1wa4u.md",
+      "hash": "f1f6e8a7b5b4309c194808b56263683cdbcdfaa04f35df9ccbd1ed7b0c1667cd"
     },
     "https://developer.apple.com/documentation/webkit/webpage/navigationerror": {
       "etag": "\"2d16-65d55c8980747-df\"",
@@ -9300,6 +9730,11 @@
       "file_path": "documentation/WebKit/webpreferences/usespagecache.md",
       "hash": "e6362f76830df362c3621a118103c54964f78edff6d52b8b4abc5107f0ce952c"
     },
+    "https://developer.apple.com/documentation/webkit/webpreferenceschangednotification": {
+      "etag": "\"5f7f-65d55c86f449b-df\"",
+      "file_path": "documentation/WebKit/webpreferenceschangednotification.md",
+      "hash": "b93c7c5fd3757870cfe13ba3afae8951d52f4b9e622e137a1a3f9ac825e5f136"
+    },
     "https://developer.apple.com/documentation/webkit/webresource": {
       "etag": "\"690d-65d55c8193a7d-df\"",
       "file_path": "documentation/WebKit/webresource.md",
@@ -9580,6 +10015,26 @@
       "file_path": "documentation/WebKit/webuidelegate/webview(_,willperform,from,with).md",
       "hash": "ca29d49acd905ac4fa8b0744d5e5005918f65d10811809d224ff288e6bbf18e3"
     },
+    "https://developer.apple.com/documentation/webkit/webuidelegate/webview:runjavascriptalertpanelwithmessage:": {
+      "etag": "\"5e8e-65d55c861be42-df\"",
+      "file_path": "documentation/WebKit/webuidelegate/webview_runjavascriptalertpanelwithmessage_.md",
+      "hash": "563ca1e02ae049eba23dadbaaae4882faaf254d6fe91e29d1d4fd5735bb12c99"
+    },
+    "https://developer.apple.com/documentation/webkit/webuidelegate/webview:runjavascriptconfirmpanelwithmessage:": {
+      "etag": "\"6608-65d55c861be42-df\"",
+      "file_path": "documentation/WebKit/webuidelegate/webview_runjavascriptconfirmpanelwithmessage_.md",
+      "hash": "952555ceaa46b5e817ff6d034f139aa67eb1aaf9f9d5e41cd16011eb2829d03e"
+    },
+    "https://developer.apple.com/documentation/webkit/webuidelegate/webview:runjavascripttextinputpanelwithprompt:defaulttext:": {
+      "etag": "\"61ab-65d55c85f83ba-df\"",
+      "file_path": "documentation/WebKit/webuidelegate/webview_runjavascripttextinputpanelwithprompt_defaulttext_.md",
+      "hash": "1480e0b9da74e68234579fa1d03378f322fbc100852b9536024457f386fb7b64"
+    },
+    "https://developer.apple.com/documentation/webkit/webuidelegate/webview:setcontentrect:": {
+      "etag": "\"3aca-65d55c861be42-df\"",
+      "file_path": "documentation/WebKit/webuidelegate/webview_setcontentrect_.md",
+      "hash": "8b44a4707bb45eeaab4a4952afe7ea0d7d3adee172e8919d3f0a323a114b9845"
+    },
     "https://developer.apple.com/documentation/webkit/webuidelegate/webviewaretoolbarsvisible(_:)": {
       "etag": "\"4c56-65d55c85f83ba-df\"",
       "file_path": "documentation/WebKit/webuidelegate/webviewaretoolbarsvisible(_).md",
@@ -9589,6 +10044,11 @@
       "etag": "\"46ec-65d55c85f83ba-df\"",
       "file_path": "documentation/WebKit/webuidelegate/webviewclose(_).md",
       "hash": "62ec522c862489f52c2c94b68799693cc06a8259805702c954bf2838ab7867ee"
+    },
+    "https://developer.apple.com/documentation/webkit/webuidelegate/webviewcontentrect:": {
+      "etag": "\"2a60-65d55c861be42-df\"",
+      "file_path": "documentation/WebKit/webuidelegate/webviewcontentrect_.md",
+      "hash": "730ca60b3b38aa736ab5c3d190c6850f154eb1898f7ea5cb6fcd284ca8be0084"
     },
     "https://developer.apple.com/documentation/webkit/webuidelegate/webviewfirstresponder(_:)": {
       "etag": "\"39ad-65d55c861be42-df\"",
@@ -9654,6 +10114,11 @@
       "etag": "\"149f-65d55c85941e6-df\"",
       "file_path": "documentation/WebKit/webundefined/init(coder).md",
       "hash": "03ad0225a496a6e8becb0f9baa1fe2944cf6d4fadd0f0ff459abd1039de5318c"
+    },
+    "https://developer.apple.com/documentation/webkit/webundefined/undefined": {
+      "etag": "\"14e3-65d55c85941e6-df\"",
+      "file_path": "documentation/WebKit/webundefined/undefined.md",
+      "hash": "964dae4540db269ccb1fc8ea36e1c59eeaa8ed5d17a9c5ce4ba822c2a1581f32"
     },
     "https://developer.apple.com/documentation/webkit/webview-swift.class": {
       "etag": "\"37309-65d55c8151394-df\"",
@@ -10340,6 +10805,31 @@
       "file_path": "documentation/WebKit/webview-swift.struct/magnificationgesturesbehavior/enabled.md",
       "hash": "7eddefc405f8fbe4b2a18b2bec1e57644bb2be4b9f40f8b4f41b0e4eebaa121a"
     },
+    "https://developer.apple.com/documentation/webkit/webviewdidbegineditingnotification": {
+      "etag": "\"22c7-65d55c861be42-df\"",
+      "file_path": "documentation/WebKit/webviewdidbegineditingnotification.md",
+      "hash": "98234608b16206b4a57b0db3600b5a87e15fb82904bfed6b13dcb78f5ec34f4e"
+    },
+    "https://developer.apple.com/documentation/webkit/webviewdidchangenotification": {
+      "etag": "\"22a5-65d55c84724d6-df\"",
+      "file_path": "documentation/WebKit/webviewdidchangenotification.md",
+      "hash": "ac52d89a488fa3f7eb6f15c6d2ea0a2e7b2ee5a490edb8006405c490a8df2bcb"
+    },
+    "https://developer.apple.com/documentation/webkit/webviewdidchangeselectionnotification": {
+      "etag": "\"22ad-65d55c88bd64f-df\"",
+      "file_path": "documentation/WebKit/webviewdidchangeselectionnotification.md",
+      "hash": "b4a832c26f0e8ecc79ee12a4b1f5d92b9c1ed1bf1c236461298700994f50374e"
+    },
+    "https://developer.apple.com/documentation/webkit/webviewdidchangetypingstylenotification": {
+      "etag": "\"2784-65d55c86cea4d-df\"",
+      "file_path": "documentation/WebKit/webviewdidchangetypingstylenotification.md",
+      "hash": "c71233ff8c1fd00a395c9db707d883f342438432be509962c933b861872ccdc5"
+    },
+    "https://developer.apple.com/documentation/webkit/webviewdidendeditingnotification": {
+      "etag": "\"22b2-65d55c88bd64f-df\"",
+      "file_path": "documentation/WebKit/webviewdidendeditingnotification.md",
+      "hash": "66b28ac76a48182ca4e1131cc718aaca7430ce163e37b7f394ba5165fea24ada"
+    },
     "https://developer.apple.com/documentation/webkit/webviewimmersiveenvironmentview": {
       "etag": "\"27b9-65d55c80bae70-df\"",
       "file_path": "documentation/WebKit/webviewimmersiveenvironmentview.md",
@@ -10380,6 +10870,61 @@
       "file_path": "documentation/WebKit/webviewinsertaction/typed.md",
       "hash": "85bd5540b3b365950daf995884832004336bca829163a30176d77632d8c20f63"
     },
+    "https://developer.apple.com/documentation/webkit/webviewprogressestimatechangednotification": {
+      "etag": "\"28b4-65d55c839507d-df\"",
+      "file_path": "documentation/WebKit/webviewprogressestimatechangednotification.md",
+      "hash": "e544af8b085009634cf9faccbebe30373d7defda6f8e6bfd00d3a2940dfeb81a"
+    },
+    "https://developer.apple.com/documentation/webkit/webviewprogressfinishednotification": {
+      "etag": "\"2768-65d55c8248aad-df\"",
+      "file_path": "documentation/WebKit/webviewprogressfinishednotification.md",
+      "hash": "fb9f26056119435a69019661675f5a49deeaedf08b4f9dbc0140e81aba5f5bb8"
+    },
+    "https://developer.apple.com/documentation/webkit/webviewprogressstartednotification": {
+      "etag": "\"2789-65d55c866c3d9-df\"",
+      "file_path": "documentation/WebKit/webviewprogressstartednotification.md",
+      "hash": "a13ac7c45a237ac2c4095fdf55dda6daec3bbb00c896a4b718fa87bede763e79"
+    },
+    "https://developer.apple.com/documentation/webkit/wk_extern": {
+      "etag": "\"2058-65d55c8151394-df\"",
+      "file_path": "documentation/WebKit/wk_extern.md",
+      "hash": "6fb3ecef201d1b0d8e48cbb8bb9caa80a10266c826c3451fb22ab3cadc3be035"
+    },
+    "https://developer.apple.com/documentation/webkit/wk_header_audit_begin": {
+      "etag": "\"20a0-65d55c88eb1eb-df\"",
+      "file_path": "documentation/WebKit/wk_header_audit_begin.md",
+      "hash": "d92d4f4802d28c8308524a02c6cdb211f20ec0291970a2db75f69ac73ba6400f"
+    },
+    "https://developer.apple.com/documentation/webkit/wk_header_audit_end": {
+      "etag": "\"2094-65d55c8651098-df\"",
+      "file_path": "documentation/WebKit/wk_header_audit_end.md",
+      "hash": "c128b26aaecaa4c1a3d690e6fa2a9901b00db3542471e7fb0a592e9cd24ee235"
+    },
+    "https://developer.apple.com/documentation/webkit/wk_nullable_result": {
+      "etag": "\"208e-65d55c8326652-df\"",
+      "file_path": "documentation/WebKit/wk_nullable_result.md",
+      "hash": "a6db3a5ab97668bd35425bb1675ffd29b14480d3c543c62c6c024beae3da410f"
+    },
+    "https://developer.apple.com/documentation/webkit/wk_swift_async": {
+      "etag": "\"2095-65d55c84724d6-df\"",
+      "file_path": "documentation/WebKit/wk_swift_async.md",
+      "hash": "1f95e002a7957961ac6a35d423c7b70ddb6244690a109b0357fd1dc2d8611823"
+    },
+    "https://developer.apple.com/documentation/webkit/wk_swift_async_name": {
+      "etag": "\"20b3-65d55c8151394-df\"",
+      "file_path": "documentation/WebKit/wk_swift_async_name.md",
+      "hash": "fcfad9443c43fcb1528afa2f3f485f7e24a091f9bfc2f695d25e2802d721d51e"
+    },
+    "https://developer.apple.com/documentation/webkit/wk_swift_async_throws_on_false": {
+      "etag": "\"20f5-65d55c8248aad-df\"",
+      "file_path": "documentation/WebKit/wk_swift_async_throws_on_false.md",
+      "hash": "c5830a056ae1456a1eb997a31e964ea65bc0083e58ef91f6b1cfebc925d826ed"
+    },
+    "https://developer.apple.com/documentation/webkit/wk_swift_ui_actor": {
+      "etag": "\"2088-65d55c86cea4d-df\"",
+      "file_path": "documentation/WebKit/wk_swift_ui_actor.md",
+      "hash": "c48673edc985508cc3483e239f66fccef02ffab95df51b14a328d2a8c71c684c"
+    },
     "https://developer.apple.com/documentation/webkit/wkaudiovisualmediatypes": {
       "etag": "\"5b4c-65d55c87a4366-df\"",
       "file_path": "documentation/WebKit/wkaudiovisualmediatypes.md",
@@ -10404,6 +10949,11 @@
       "etag": "\"2871-65d55c85f83ba-df\"",
       "file_path": "documentation/WebKit/wkaudiovisualmediatypes/video.md",
       "hash": "b91bda5720bc941eb5ede231124cda41ecb639d0748d1b9b22d9f2af1a96a3a6"
+    },
+    "https://developer.apple.com/documentation/webkit/wkaudiovisualmediatypes/wkaudiovisualmediatypenone": {
+      "etag": "\"1f56-65d55c85cd2d2-df\"",
+      "file_path": "documentation/WebKit/wkaudiovisualmediatypes/wkaudiovisualmediatypenone.md",
+      "hash": "733d6e3fd2b7b1565ed70e85b81913c2090fd2f3a89f254252f75d334fa42633"
     },
     "https://developer.apple.com/documentation/webkit/wkbackforwardlist": {
       "etag": "\"766f-65d55c86f449b-df\"",
@@ -10649,6 +11199,11 @@
       "etag": "\"41ad-65d55c8980747-df\"",
       "file_path": "documentation/WebKit/wkdatadetectortypes/trackingnumber.md",
       "hash": "458a3b3efb1b77edbfdbefd8ea80655e1244be6efd49b323347dbb3a0375d15e"
+    },
+    "https://developer.apple.com/documentation/webkit/wkdatadetectortypes/wkdatadetectortypenone": {
+      "etag": "\"36ba-65d55c8980747-df\"",
+      "file_path": "documentation/WebKit/wkdatadetectortypes/wkdatadetectortypenone.md",
+      "hash": "562cbf53e1dd831052ab6ca8ff15dff7f3eec0e6c7a09afabee94ddc22f5508e"
     },
     "https://developer.apple.com/documentation/webkit/wkdialogresult": {
       "etag": "\"5e75-65d55c85cd2d2-df\"",
@@ -11575,6 +12130,11 @@
       "file_path": "documentation/WebKit/wkpdfconfiguration/rect-2a0vp.md",
       "hash": "aac65d86705b6dc77f9efc092088f345fe32927cc1679182b20314e08b03f4c4"
     },
+    "https://developer.apple.com/documentation/webkit/wkpdfconfiguration/rect-3xww9": {
+      "etag": "\"1d98-65d55c837b61b-df\"",
+      "file_path": "documentation/WebKit/wkpdfconfiguration/rect-3xww9.md",
+      "hash": "bc7eca01519747aaa9b88832ac36df7511d8e378008590850f87f0bb60700252"
+    },
     "https://developer.apple.com/documentation/webkit/wkpermissiondecision": {
       "etag": "\"51c0-65d55c86cea4d-df\"",
       "file_path": "documentation/WebKit/wkpermissiondecision.md",
@@ -12065,6 +12625,11 @@
       "file_path": "documentation/WebKit/wkusercontentcontroller/addbuffer(_,name,to).md",
       "hash": "6d7f25bb2bb8ccd4eca3c3855e10a7b5b6952effd34abe5ef5ac5d9d0aefe78c"
     },
+    "https://developer.apple.com/documentation/webkit/wkusercontentcontroller/addbuffer:name:contentworld:": {
+      "etag": "\"21e6-65d55c80bae70-df\"",
+      "file_path": "documentation/WebKit/wkusercontentcontroller/addbuffer_name_contentworld_.md",
+      "hash": "df89212117da90be2c97c9c1d54ba299d4482dd51ee4878c20affd0441919f36"
+    },
     "https://developer.apple.com/documentation/webkit/wkusercontentcontroller/addscriptmessagehandler(_:contentworld:name:)": {
       "etag": "\"747b-65d55c80bae70-df\"",
       "file_path": "documentation/WebKit/wkusercontentcontroller/addscriptmessagehandler(_,contentworld,name).md",
@@ -12109,6 +12674,11 @@
       "etag": "\"228e-65d55c80bae70-df\"",
       "file_path": "documentation/WebKit/wkusercontentcontroller/removebuffer(named,from).md",
       "hash": "927829eaf70ea6b7b51213e9b06eaa82e49c605c121aa6a69beaff56489b9cbc"
+    },
+    "https://developer.apple.com/documentation/webkit/wkusercontentcontroller/removebufferwithname:contentworld:": {
+      "etag": "\"1c43-65d55c80bae70-df\"",
+      "file_path": "documentation/WebKit/wkusercontentcontroller/removebufferwithname_contentworld_.md",
+      "hash": "fa1d3c8689034cba6c11486e16716e62478bfc5ec33c0c02113b9488f033788f"
     },
     "https://developer.apple.com/documentation/webkit/wkusercontentcontroller/removescriptmessagehandler(forname:)": {
       "etag": "\"6879-65d55c80bae70-df\"",
@@ -12405,6 +12975,11 @@
       "file_path": "documentation/WebKit/wkwebextension/datarecord/error/unknown.md",
       "hash": "6375c2803ddcde9b2597dff7262a768eccbdc70438b5493c15a1d4bb29879dfe"
     },
+    "https://developer.apple.com/documentation/webkit/wkwebextension/datarecord/errordomain": {
+      "etag": "\"28f3-65d55c8517a87-df\"",
+      "file_path": "documentation/WebKit/wkwebextension/datarecord/errordomain.md",
+      "hash": "f34915cc65b87a32ec447aea717371d822828008b3e183537675046c4da220bb"
+    },
     "https://developer.apple.com/documentation/webkit/wkwebextension/datarecord/errors": {
       "etag": "\"21c5-65d55c84f86a7-df\"",
       "file_path": "documentation/WebKit/wkwebextension/datarecord/errors.md",
@@ -12590,10 +13165,25 @@
       "file_path": "documentation/WebKit/wkwebextension/error/unsupportedmanifestversion.md",
       "hash": "6b39cf25b6c98c43b96711220b41e12665f74100084a4dbbf68176339380582d"
     },
+    "https://developer.apple.com/documentation/webkit/wkwebextension/errordomain": {
+      "etag": "\"21cb-65d55c856fc62-df\"",
+      "file_path": "documentation/WebKit/wkwebextension/errordomain.md",
+      "hash": "bf5d9893032b7a7c91d2b50b3ad10f7c51cdd63cbdf60e32aadd6b404c5e6107"
+    },
     "https://developer.apple.com/documentation/webkit/wkwebextension/errors": {
       "etag": "\"1f7a-65d55c84f86a7-df\"",
       "file_path": "documentation/WebKit/wkwebextension/errors.md",
       "hash": "2e55d6e0fd342f88194d8fb6b0d20310b53bd2049daa62bbe4e8e2ed3190f8bd"
+    },
+    "https://developer.apple.com/documentation/webkit/wkwebextension/extensionwithappextensionbundle:completionhandler:": {
+      "etag": "\"20b4-65d55c84df8e2-df\"",
+      "file_path": "documentation/WebKit/wkwebextension/extensionwithappextensionbundle_completionhandler_.md",
+      "hash": "53f8f300ba316c42f6e7c9bd3b729b8533819d24dded2c0ae6cc0297e1dbf514"
+    },
+    "https://developer.apple.com/documentation/webkit/wkwebextension/extensionwithresourcebaseurl:completionhandler:": {
+      "etag": "\"2050-65d55c84f86a7-df\"",
+      "file_path": "documentation/WebKit/wkwebextension/extensionwithresourcebaseurl_completionhandler_.md",
+      "hash": "69a992dc847fb06c98f76cd3fb930ab547c7143a6d643f449e3aad65a462c811"
     },
     "https://developer.apple.com/documentation/webkit/wkwebextension/hasbackgroundcontent": {
       "etag": "\"20a6-65d55c84f86a7-df\"",
@@ -12904,6 +13494,11 @@
       "etag": "\"25e3-65d55c84f86a7-df\"",
       "file_path": "documentation/WebKit/wkwebextension/messageport/error/unknown.md",
       "hash": "fd224e6667bb97f74862c58cceb203e7c594e7e9c0bb2d9d168831fc5fd3f5d1"
+    },
+    "https://developer.apple.com/documentation/webkit/wkwebextension/messageport/errordomain": {
+      "etag": "\"2807-65d55c84f86a7-df\"",
+      "file_path": "documentation/WebKit/wkwebextension/messageport/errordomain.md",
+      "hash": "af791f578d3eea946524ac29dff676131554245afbf830b7ccda13fc1dc788c1"
     },
     "https://developer.apple.com/documentation/webkit/wkwebextension/messageport/isdisconnected": {
       "etag": "\"2458-65d55c84f86a7-df\"",
@@ -13270,6 +13865,11 @@
       "file_path": "documentation/WebKit/wkwebextensioncontext/commands.md",
       "hash": "31af2b96403437c12d5cf09f00594f52fd805db47b544b036e115aa45ec2f858"
     },
+    "https://developer.apple.com/documentation/webkit/wkwebextensioncontext/contextforextension:": {
+      "etag": "\"17d9-65d55c81d432b-df\"",
+      "file_path": "documentation/WebKit/wkwebextensioncontext/contextforextension_.md",
+      "hash": "d45f8c32c2791f4ee1ee6ccb8f0cf1c1ab1e8ef7f0ef3c86fef70a868648e347"
+    },
     "https://developer.apple.com/documentation/webkit/wkwebextensioncontext/currentpermissionmatchpatterns": {
       "etag": "\"3296-65d55c8193a7d-df\"",
       "file_path": "documentation/WebKit/wkwebextensioncontext/currentpermissionmatchpatterns.md",
@@ -13285,15 +13885,30 @@
       "file_path": "documentation/WebKit/wkwebextensioncontext/deniedpermissionmatchpatterns.md",
       "hash": "1f1938d46143292f82be5945bdad9d3409efb156936207f3443769fe38c934e1"
     },
+    "https://developer.apple.com/documentation/webkit/wkwebextensioncontext/deniedpermissionmatchpatternswereremovednotification": {
+      "etag": "\"64aa-65d55c81b0aed-df\"",
+      "file_path": "documentation/WebKit/wkwebextensioncontext/deniedpermissionmatchpatternswereremovednotification.md",
+      "hash": "de2ddc6f97b62aaa669c0393db4357ff205f20c75097a6ff2d8bf9cc51d23c91"
+    },
     "https://developer.apple.com/documentation/webkit/wkwebextensioncontext/deniedpermissions": {
       "etag": "\"3fcf-65d55c8193a7d-df\"",
       "file_path": "documentation/WebKit/wkwebextensioncontext/deniedpermissions.md",
       "hash": "1e8f3b5685c6ee10112a18f6aab5b489ff2c80e3e9a51db00d54b5fa4a1dd03c"
     },
+    "https://developer.apple.com/documentation/webkit/wkwebextensioncontext/deniedpermissionswereremovednotification": {
+      "etag": "\"6424-65d55c81d432b-df\"",
+      "file_path": "documentation/WebKit/wkwebextensioncontext/deniedpermissionswereremovednotification.md",
+      "hash": "b9fd6be6810d8034d3ff234b07f965f49343df569ad9ce235b68222e3d8b842b"
+    },
     "https://developer.apple.com/documentation/webkit/wkwebextensioncontext/didactivatetab(_:previousactivetab:)": {
       "etag": "\"220e-65d55c81d432b-df\"",
       "file_path": "documentation/WebKit/wkwebextensioncontext/didactivatetab(_,previousactivetab).md",
       "hash": "c111acb4d29d5a389c18cfc014980c18a3a0cce2110d4c6b81caaba473617627"
+    },
+    "https://developer.apple.com/documentation/webkit/wkwebextensioncontext/didactivatetab:previousactivetab:": {
+      "etag": "\"16db-65d55c8193a7d-df\"",
+      "file_path": "documentation/WebKit/wkwebextensioncontext/didactivatetab_previousactivetab_.md",
+      "hash": "951fe85320d2fa499acc1da827f5ba5cb173c89b9e73aa69136c009905e7f90b"
     },
     "https://developer.apple.com/documentation/webkit/wkwebextensioncontext/didchangetabproperties(_:for:)": {
       "etag": "\"360d-65d55c81f1044-df\"",
@@ -13304,6 +13919,11 @@
       "etag": "\"2d72-65d55c81d432b-df\"",
       "file_path": "documentation/WebKit/wkwebextensioncontext/didclosetab(_,windowisclosing).md",
       "hash": "43bf7d4a16fc2b0d0887defe0ec6a8dbb19d3278e0b2f97dd23eeca030fa7551"
+    },
+    "https://developer.apple.com/documentation/webkit/wkwebextensioncontext/didclosetab:windowisclosing:": {
+      "etag": "\"2289-65d55c81b0aed-df\"",
+      "file_path": "documentation/WebKit/wkwebextensioncontext/didclosetab_windowisclosing_.md",
+      "hash": "0c85c759064ee90c25e8c1941420dcd528c227f5617e65764bd96f6ab4066b7f"
     },
     "https://developer.apple.com/documentation/webkit/wkwebextensioncontext/didclosewindow(_:)": {
       "etag": "\"2f93-65d55c81b0aed-df\"",
@@ -13324,6 +13944,11 @@
       "etag": "\"2aea-65d55c81b0aed-df\"",
       "file_path": "documentation/WebKit/wkwebextensioncontext/didmovetab(_,from,in).md",
       "hash": "e251799d7b4ba9e32097e174d5d5ade904e358e702f8cdb44b28fc818a7aca24"
+    },
+    "https://developer.apple.com/documentation/webkit/wkwebextensioncontext/didmovetab:fromindex:inwindow:": {
+      "etag": "\"1a9e-65d55c81b0aed-df\"",
+      "file_path": "documentation/WebKit/wkwebextensioncontext/didmovetab_fromindex_inwindow_.md",
+      "hash": "4ed580d7cca65b5d1528a77a46a834bc645cbea35f7bd00563675ac13f1787c8"
     },
     "https://developer.apple.com/documentation/webkit/wkwebextensioncontext/didopentab(_:)": {
       "etag": "\"2c4c-65d55c81b0aed-df\"",
@@ -13425,10 +14050,20 @@
       "file_path": "documentation/WebKit/wkwebextensioncontext/error/unknown.md",
       "hash": "446335bade9ac40213d8f0c63c9d2d91132749cf3c20c5ebdfd87d4d36538d53"
     },
+    "https://developer.apple.com/documentation/webkit/wkwebextensioncontext/errordomain": {
+      "etag": "\"5aa8-65d55c81f1044-df\"",
+      "file_path": "documentation/WebKit/wkwebextensioncontext/errordomain.md",
+      "hash": "57c6574e4f5b79425775bf73db91f5bae7e855e5800afe61ee43071d0423ec4f"
+    },
     "https://developer.apple.com/documentation/webkit/wkwebextensioncontext/errors": {
       "etag": "\"1e49-65d55c81b0aed-df\"",
       "file_path": "documentation/WebKit/wkwebextensioncontext/errors.md",
       "hash": "857fe53ca50824c51ebadd21e7a85264c49692d56f4be7cbab35a23d7447e259"
+    },
+    "https://developer.apple.com/documentation/webkit/wkwebextensioncontext/errorsdidupdatenotification": {
+      "etag": "\"639d-65d55c81b0aed-df\"",
+      "file_path": "documentation/WebKit/wkwebextensioncontext/errorsdidupdatenotification.md",
+      "hash": "c68940f3c6082594aaa33150d2a263390a22104ee5250f326b9358f8c0d786a0"
     },
     "https://developer.apple.com/documentation/webkit/wkwebextensioncontext/focusedwindow": {
       "etag": "\"3242-65d55c81b0aed-df\"",
@@ -13440,10 +14075,20 @@
       "file_path": "documentation/WebKit/wkwebextensioncontext/grantedpermissionmatchpatterns.md",
       "hash": "24160e9b6f0fafee7b9df208459fe719367254cb505d70555f0db62c9f6b46d9"
     },
+    "https://developer.apple.com/documentation/webkit/wkwebextensioncontext/grantedpermissionmatchpatternswereremovednotification": {
+      "etag": "\"64af-65d55c81f1044-df\"",
+      "file_path": "documentation/WebKit/wkwebextensioncontext/grantedpermissionmatchpatternswereremovednotification.md",
+      "hash": "e8fb233841a519344dc95b9ef151674bb437bb98f1ef8365d74bb3105985d840"
+    },
     "https://developer.apple.com/documentation/webkit/wkwebextensioncontext/grantedpermissions": {
       "etag": "\"3fe5-65d55c81b0aed-df\"",
       "file_path": "documentation/WebKit/wkwebextensioncontext/grantedpermissions.md",
       "hash": "da0facbb2e6af455e4535223076e0ea5665d13b299d0eb123eea2fb7d4443ea5"
+    },
+    "https://developer.apple.com/documentation/webkit/wkwebextensioncontext/grantedpermissionswereremovednotification": {
+      "etag": "\"6429-65d55c81d432b-df\"",
+      "file_path": "documentation/WebKit/wkwebextensioncontext/grantedpermissionswereremovednotification.md",
+      "hash": "29c3b2186aa714371d79eac75697ab2a3921ddc04b01dfb07148e62750cd06fd"
     },
     "https://developer.apple.com/documentation/webkit/wkwebextensioncontext/hasaccess(to:)": {
       "etag": "\"5762-65d55c8193a7d-df\"",
@@ -13610,6 +14255,16 @@
       "file_path": "documentation/WebKit/wkwebextensioncontext/performcommand(for)-8btj0.md",
       "hash": "9e713bac3eeee305a057a6716db0ebf280c6190d70c771f1a87c48fa8f3a734a"
     },
+    "https://developer.apple.com/documentation/webkit/wkwebextensioncontext/permissionmatchpatternsweredeniednotification": {
+      "etag": "\"6456-65d55c8193a7d-df\"",
+      "file_path": "documentation/WebKit/wkwebextensioncontext/permissionmatchpatternsweredeniednotification.md",
+      "hash": "59719505ae123624c45ded93676b3b04bf33ad64f63cad2cdc178e20a176be0c"
+    },
+    "https://developer.apple.com/documentation/webkit/wkwebextensioncontext/permissionmatchpatternsweregrantednotification": {
+      "etag": "\"6461-65d55c81b0aed-df\"",
+      "file_path": "documentation/WebKit/wkwebextensioncontext/permissionmatchpatternsweregrantednotification.md",
+      "hash": "8bac59e537846f7afc5a92dceea380c5155af8b297a66fa446635a0396e8921e"
+    },
     "https://developer.apple.com/documentation/webkit/wkwebextensioncontext/permissionstatus": {
       "etag": "\"5be2-65d55c81b0aed-df\"",
       "file_path": "documentation/WebKit/wkwebextensioncontext/permissionstatus.md",
@@ -13684,6 +14339,16 @@
       "etag": "\"1e7e-65d55c81b0aed-df\"",
       "file_path": "documentation/WebKit/wkwebextensioncontext/permissionstatus/unknown.md",
       "hash": "9a136ff85e5e0aa3ebcd970d4016831fbbfadc83c68a1042f5a9c036f504767c"
+    },
+    "https://developer.apple.com/documentation/webkit/wkwebextensioncontext/permissionsweredeniednotification": {
+      "etag": "\"63d0-65d55c81d432b-df\"",
+      "file_path": "documentation/WebKit/wkwebextensioncontext/permissionsweredeniednotification.md",
+      "hash": "47ca75d35572b8a161b4ca968aca52851c2ea0cc70a7a1c2f70570e980d3be5a"
+    },
+    "https://developer.apple.com/documentation/webkit/wkwebextensioncontext/permissionsweregrantednotification": {
+      "etag": "\"63db-65d55c81d432b-df\"",
+      "file_path": "documentation/WebKit/wkwebextensioncontext/permissionsweregrantednotification.md",
+      "hash": "4482d9a1c683d521b0e93deaba5ff47fb14ffe740344509ce60d1a10a0513d11"
     },
     "https://developer.apple.com/documentation/webkit/wkwebextensioncontext/setpermissionstatus(_:for:)-4u95f": {
       "etag": "\"5f56-65d55c81b0aed-df\"",
@@ -13815,6 +14480,11 @@
       "file_path": "documentation/WebKit/wkwebextensioncontroller/didactivatetab(_,previousactivetab).md",
       "hash": "01f63760d2aa41e2e2bf0c7b0d3c111edc254f0219749d1b7354892b5a66b629"
     },
+    "https://developer.apple.com/documentation/webkit/wkwebextensioncontroller/didactivatetab:previousactivetab:": {
+      "etag": "\"1740-65d55c87e0e1c-df\"",
+      "file_path": "documentation/WebKit/wkwebextensioncontroller/didactivatetab_previousactivetab_.md",
+      "hash": "7f0a5698cb7964ec05f42b513cb0dc32783dcd7581cecebde61b1b0c52591b01"
+    },
     "https://developer.apple.com/documentation/webkit/wkwebextensioncontroller/didchangetabproperties(_:for:)": {
       "etag": "\"36c3-65d55c880141c-df\"",
       "file_path": "documentation/WebKit/wkwebextensioncontroller/didchangetabproperties(_,for).md",
@@ -13824,6 +14494,11 @@
       "etag": "\"2973-65d55c880141c-df\"",
       "file_path": "documentation/WebKit/wkwebextensioncontroller/didclosetab(_,windowisclosing).md",
       "hash": "997a204a3864d2753359875617ccce3391d421fc21c2f8aba8d87f0b6039974c"
+    },
+    "https://developer.apple.com/documentation/webkit/wkwebextensioncontroller/didclosetab:windowisclosing:": {
+      "etag": "\"1e8a-65d55c87e0e1c-df\"",
+      "file_path": "documentation/WebKit/wkwebextensioncontroller/didclosetab_windowisclosing_.md",
+      "hash": "c939d7b2ae06044019b3255d12cbf3c85c903cc135ab1b7da01d84f27c08bd54"
     },
     "https://developer.apple.com/documentation/webkit/wkwebextensioncontroller/didclosewindow(_:)": {
       "etag": "\"2a97-65d55c87e0e1c-df\"",
@@ -13844,6 +14519,11 @@
       "etag": "\"2b8e-65d55c87e0e1c-df\"",
       "file_path": "documentation/WebKit/wkwebextensioncontroller/didmovetab(_,from,in).md",
       "hash": "025d574a5735a5834431bc12dbade09b71a40d2bbad22870b50bfb9ae0d47736"
+    },
+    "https://developer.apple.com/documentation/webkit/wkwebextensioncontroller/didmovetab:fromindex:inwindow:": {
+      "etag": "\"1b42-65d55c87e0e1c-df\"",
+      "file_path": "documentation/WebKit/wkwebextensioncontroller/didmovetab_fromindex_inwindow_.md",
+      "hash": "a562bb6ecb9134da68acc6ee3a67f9bd2ab8d89670c68905dcb2df2f4bd8ae32"
     },
     "https://developer.apple.com/documentation/webkit/wkwebextensioncontroller/didopentab(_:)": {
       "etag": "\"291c-65d55c87e0e1c-df\"",
@@ -13984,6 +14664,21 @@
       "etag": "\"60f1-65d55c85941e6-df\"",
       "file_path": "documentation/WebKit/wkwebextensioncontrollerdelegate/webextensioncontroller(_,sendmessage,toapplicationwithidentifier,for,replyhandler).md",
       "hash": "5ed454b66053dbe1613767d80463466d8a1741c23409588b2f4753ecf0d77bdd"
+    },
+    "https://developer.apple.com/documentation/webkit/wkwebextensionmatchpattern/matchpatternwithscheme:host:path:": {
+      "etag": "\"20a8-65d55c837b61b-df\"",
+      "file_path": "documentation/WebKit/wkwebextensionmatchpattern/matchpatternwithscheme_host_path_.md",
+      "hash": "5300eaa8498d8b4ed6b681c89c19f2b4b321c252a13d22a92a663f92b9d0a563"
+    },
+    "https://developer.apple.com/documentation/webkit/wkwebextensionmatchpattern/matchpatternwithstring:": {
+      "etag": "\"1bbe-65d55c837b61b-df\"",
+      "file_path": "documentation/WebKit/wkwebextensionmatchpattern/matchpatternwithstring_.md",
+      "hash": "e8f18c1e3bb289b99e16b6732d010918c2f895adadd3f7232a5cc214032b7324"
+    },
+    "https://developer.apple.com/documentation/webkit/wkwebextensionmatchpatternoptions/wkwebextensionmatchpatternoptionsnone": {
+      "etag": "\"169a-65d55c8980747-df\"",
+      "file_path": "documentation/WebKit/wkwebextensionmatchpatternoptions/wkwebextensionmatchpatternoptionsnone.md",
+      "hash": "965c0c516b2dd1b5d8c8fdd99ead569dcdd5037826e0770edd55411a6d057eb3"
     },
     "https://developer.apple.com/documentation/webkit/wkwebextensiontab": {
       "etag": "\"14e70-65d55c87c159f-df\"",
@@ -14154,6 +14849,11 @@
       "etag": "\"351c-65d55c8326652-df\"",
       "file_path": "documentation/WebKit/wkwebextensiontab/zoomfactor(for).md",
       "hash": "ca1e8991130e3b8714a8018a3f1fce362d027c5069b8d029394bb0521c20a7aa"
+    },
+    "https://developer.apple.com/documentation/webkit/wkwebextensiontabchangedproperties/wkwebextensiontabchangedpropertiesnone": {
+      "etag": "\"11b8-65d55c8193a7d-df\"",
+      "file_path": "documentation/WebKit/wkwebextensiontabchangedproperties/wkwebextensiontabchangedpropertiesnone.md",
+      "hash": "7d4c64c9801c94b084e67879b494d648add9df25075f8066f3a1e45d7db52538"
     },
     "https://developer.apple.com/documentation/webkit/wkwebextensionwindow": {
       "etag": "\"afc1-65d55c856fc62-df\"",
@@ -14395,6 +15095,11 @@
       "file_path": "documentation/WebKit/wkwebsitedatastore/nonpersistent().md",
       "hash": "3a7ac00e40feb71d6c5e2b753a843cc537ddc7dc1ffe170b80c68e4605ced7dc"
     },
+    "https://developer.apple.com/documentation/webkit/wkwebsitedatastore/proxyconfigurations-6g21z": {
+      "etag": "\"1119-65d55c880141c-df\"",
+      "file_path": "documentation/WebKit/wkwebsitedatastore/proxyconfigurations-6g21z.md",
+      "hash": "1288575ba18f2a92f39b31adc52aaaaeb68e6350badd09206bdeb3a0f2ac232a"
+    },
     "https://developer.apple.com/documentation/webkit/wkwebsitedatastore/proxyconfigurations-cdc1": {
       "etag": "\"189d-65d55c880141c-df\"",
       "file_path": "documentation/WebKit/wkwebsitedatastore/proxyconfigurations-cdc1.md",
@@ -14580,10 +15285,20 @@
       "file_path": "documentation/WebKit/wkwebview/createpdf(configuration,completionhandler).md",
       "hash": "2298089f10acb92530356b938a04b770ea7dce8e1033cb2cf77a114e9a00f226"
     },
+    "https://developer.apple.com/documentation/webkit/wkwebview/createpdfwithconfiguration:completionhandler:": {
+      "etag": "\"31ee-65d55c84ae1a4-df\"",
+      "file_path": "documentation/WebKit/wkwebview/createpdfwithconfiguration_completionhandler_.md",
+      "hash": "301d80260d807eea87bedd2d9420097066e8c3031bfeb8652949dc651c112269"
+    },
     "https://developer.apple.com/documentation/webkit/wkwebview/createwebarchivedata(completionhandler:)": {
       "etag": "\"49cb-65d55c84c6412-df\"",
       "file_path": "documentation/WebKit/wkwebview/createwebarchivedata(completionhandler).md",
       "hash": "ea885a0aa701b463f4b9b21da22a492c21c7e12f6dec38d6caa7b899cfa9b2a5"
+    },
+    "https://developer.apple.com/documentation/webkit/wkwebview/createwebarchivedatawithcompletionhandler:": {
+      "etag": "\"2f99-65d55c84ae1a4-df\"",
+      "file_path": "documentation/WebKit/wkwebview/createwebarchivedatawithcompletionhandler_.md",
+      "hash": "81a4ff3b257433d11d7fe1632925774038af2a7980d82d654eeb0fe0f8949bbe"
     },
     "https://developer.apple.com/documentation/webkit/wkwebview/customuseragent": {
       "etag": "\"4ab7-65d55c84ae1a4-df\"",
@@ -14634,6 +15349,11 @@
       "etag": "\"22de-65d55c84ae1a4-df\"",
       "file_path": "documentation/WebKit/wkwebview/findinteraction.md",
       "hash": "964b6f4798eca98c89a423971adab67ebcd2ece7afa36f5e14910bd03b48c91b"
+    },
+    "https://developer.apple.com/documentation/webkit/wkwebview/findstring:withconfiguration:completionhandler:": {
+      "etag": "\"24a5-65d55c84c6412-df\"",
+      "file_path": "documentation/WebKit/wkwebview/findstring_withconfiguration_completionhandler_.md",
+      "hash": "d7140351b6430fb1bee27022da899848abb569ca2a4696f3aceba2b4d4fc37c5"
     },
     "https://developer.apple.com/documentation/webkit/wkwebview/fullscreenstate-swift.enum": {
       "etag": "\"6dd1-65d55c84ae1a4-df\"",
@@ -14845,6 +15565,11 @@
       "file_path": "documentation/WebKit/wkwebview/pauseallmediaplayback(completionhandler).md",
       "hash": "14a3f19c0dfcc14cba606b9981ca0f63bdffe173dfbe19145ea43f370e736e42"
     },
+    "https://developer.apple.com/documentation/webkit/wkwebview/pauseallmediaplayback:": {
+      "etag": "\"37db-65d55c84ae1a4-df\"",
+      "file_path": "documentation/WebKit/wkwebview/pauseallmediaplayback_.md",
+      "hash": "2e55950240baba7420f733aee7d92e4cd14ac32eeb0bb9d2d48789104ef3dcfc"
+    },
     "https://developer.apple.com/documentation/webkit/wkwebview/pdf(configuration:)": {
       "etag": "\"3ef9-65d55c84c6412-df\"",
       "file_path": "documentation/WebKit/wkwebview/pdf(configuration).md",
@@ -14885,10 +15610,20 @@
       "file_path": "documentation/WebKit/wkwebview/requestmediaplaybackstate(completionhandler).md",
       "hash": "57ab77dee9fe030a6044d5c172bdfd7f085e37c602f29fbf096c61479a1e9a59"
     },
+    "https://developer.apple.com/documentation/webkit/wkwebview/requestmediaplaybackstate:": {
+      "etag": "\"3e71-65d55c84ae1a4-df\"",
+      "file_path": "documentation/WebKit/wkwebview/requestmediaplaybackstate_.md",
+      "hash": "470113fcd7406927f0bcad62ac364f7ceca314200172ca31c025348e1b4518ec"
+    },
     "https://developer.apple.com/documentation/webkit/wkwebview/restoredata(_:completionhandler:)": {
       "etag": "\"3c5d-65d55c84c6412-df\"",
       "file_path": "documentation/WebKit/wkwebview/restoredata(_,completionhandler).md",
       "hash": "c86f656838d215cbd727ef73a96dbe59fb9f578d5dd85e4f462ef7aed78d2ec2"
+    },
+    "https://developer.apple.com/documentation/webkit/wkwebview/resumeallmediaplayback:": {
+      "etag": "\"37e0-65d55c84c6412-df\"",
+      "file_path": "documentation/WebKit/wkwebview/resumeallmediaplayback_.md",
+      "hash": "90aacacff0a2181b6b15ecd0d9c2a41c39bdcf3d766c72e6887c5fd3bd000ad4"
     },
     "https://developer.apple.com/documentation/webkit/wkwebview/resumedownload(fromresumedata:completionhandler:)": {
       "etag": "\"415b-65d55c84ae1a4-df\"",
@@ -14944,6 +15679,11 @@
       "etag": "\"33d7-65d55c84ae1a4-df\"",
       "file_path": "documentation/WebKit/wkwebview/stoploading(_).md",
       "hash": "b478c2e7127fe32ef981a958e181bd71877106afe9bb78314b93945476804e6c"
+    },
+    "https://developer.apple.com/documentation/webkit/wkwebview/suspendallmediaplayback:": {
+      "etag": "\"39b2-65d55c84c6412-df\"",
+      "file_path": "documentation/WebKit/wkwebview/suspendallmediaplayback_.md",
+      "hash": "a8b3a22fbae9b771d6ead505cdb174e23abfd3ef09609dc4b28703e321f2afba"
     },
     "https://developer.apple.com/documentation/webkit/wkwebview/takesnapshot(with:completionhandler:)": {
       "etag": "\"70d3-65d55c84c6412-df\"",
@@ -16080,10 +16820,20 @@
       "file_path": "documentation/WebKit/domcharacterdata/deletedata(_,length).md",
       "hash": "a36e9977dea79595ade0203adf77fe77df1c99656158aa2515eaadbef4fa91a4"
     },
+    "https://developer.apple.com/tutorials/data/documentation/webkit/domcharacterdata/deletedata::.json": {
+      "etag": "\"103c-65d55c8651098-df\"",
+      "file_path": "documentation/WebKit/domcharacterdata/deletedata__.md",
+      "hash": "565941c0ceb621151015d58bfb934b344db129e6fd3f0a98f34c81b5c120aa32"
+    },
     "https://developer.apple.com/tutorials/data/documentation/webkit/domcharacterdata/insertdata(_:data:).json": {
       "etag": "\"2380-65d55c866c3d9-df\"",
       "file_path": "documentation/WebKit/domcharacterdata/insertdata(_,data).md",
       "hash": "4da1e273806ce797b13fb07016ed5a9bcd0d91b3d30b7650fa4d4eb3c9b57ed6"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/webkit/domcharacterdata/insertdata::.json": {
+      "etag": "\"134d-65d55c866c3d9-df\"",
+      "file_path": "documentation/WebKit/domcharacterdata/insertdata__.md",
+      "hash": "a09a9935c697cd0c7dd1ef49101f28941369aa6e0cb458dceeb7882eac216c91"
     },
     "https://developer.apple.com/tutorials/data/documentation/webkit/domcharacterdata/length.json": {
       "etag": "\"1952-65d55c866c3d9-df\"",
@@ -16095,10 +16845,20 @@
       "file_path": "documentation/WebKit/domcharacterdata/replacedata(_,length,data).md",
       "hash": "ad672732e82de9d1dcea3eee5f7fddb3b7722aa9e549a95ba8c67eef2d45b081"
     },
+    "https://developer.apple.com/tutorials/data/documentation/webkit/domcharacterdata/replacedata:::.json": {
+      "etag": "\"144a-65d55c866c3d9-df\"",
+      "file_path": "documentation/WebKit/domcharacterdata/replacedata___.md",
+      "hash": "6ac7b81d007fbd546d7b378fddce547fa154388fdd15a9bb725a4064e7b94a0a"
+    },
     "https://developer.apple.com/tutorials/data/documentation/webkit/domcharacterdata/substringdata(_:length:).json": {
       "etag": "\"257e-65d55c8651098-df\"",
       "file_path": "documentation/WebKit/domcharacterdata/substringdata(_,length).md",
       "hash": "3cfba95fe12aca29d98f6989e4ed198f0a5fd935ae1e1153304287ea16ac30ec"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/webkit/domcharacterdata/substringdata::.json": {
+      "etag": "\"137b-65d55c866c3d9-df\"",
+      "file_path": "documentation/WebKit/domcharacterdata/substringdata__.md",
+      "hash": "e81a5b0a3039763de6f194dfea69df30df7c5f908757f8d6de5267b25cbb1c34"
     },
     "https://developer.apple.com/tutorials/data/documentation/webkit/domcomment.json": {
       "etag": "\"6e20-65d55c88eb1eb-df\"",
@@ -16185,6 +16945,11 @@
       "file_path": "documentation/WebKit/domcssmediarule/insert(_,index).md",
       "hash": "a37b0a06c7e58423d53f1661435ab994a82370d3c48095be0afc9289043a5133"
     },
+    "https://developer.apple.com/tutorials/data/documentation/webkit/domcssmediarule/insertrule::.json": {
+      "etag": "\"1341-65d55c880141c-df\"",
+      "file_path": "documentation/WebKit/domcssmediarule/insertrule__.md",
+      "hash": "bff7848b63b412c0853c2e2a93e31f6cfbc87956e3eebdc8946273fef9bd46ad"
+    },
     "https://developer.apple.com/tutorials/data/documentation/webkit/domcssmediarule/media.json": {
       "etag": "\"1bc0-65d55c880141c-df\"",
       "file_path": "documentation/WebKit/domcssmediarule/media.md",
@@ -16245,10 +17010,20 @@
       "file_path": "documentation/WebKit/domcssprimitivevalue/setfloat(_,floatvalue).md",
       "hash": "5696da078bfd9cf16f88a0ba75740edbddbb9627bc1e3d511564c7e68d23bd0e"
     },
+    "https://developer.apple.com/tutorials/data/documentation/webkit/domcssprimitivevalue/setfloatvalue::.json": {
+      "etag": "\"10ad-65d55c87a4366-df\"",
+      "file_path": "documentation/WebKit/domcssprimitivevalue/setfloatvalue__.md",
+      "hash": "e69907ebf4a2bd82beb1c31bae5835484517d997ef7f2631d811b526d4b8500b"
+    },
     "https://developer.apple.com/tutorials/data/documentation/webkit/domcssprimitivevalue/setstring(_:stringvalue:).json": {
       "etag": "\"2493-65d55c87a4366-df\"",
       "file_path": "documentation/WebKit/domcssprimitivevalue/setstring(_,stringvalue).md",
       "hash": "3f73fb4a7e0a882a873f71f12912c9dde34c04fd1d23afca6a7da89b99648486"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/webkit/domcssprimitivevalue/setstringvalue::.json": {
+      "etag": "\"13d6-65d55c87a4366-df\"",
+      "file_path": "documentation/WebKit/domcssprimitivevalue/setstringvalue__.md",
+      "hash": "5d1fca40583107e78c690e7817b895af6146a8e439c649d37670cacba0b8f26f"
     },
     "https://developer.apple.com/tutorials/data/documentation/webkit/domcssrule.json": {
       "etag": "\"8b0f-65d55c8898742-df\"",
@@ -16579,6 +17354,11 @@
       "etag": "\"210e-65d55c82d8bdc-df\"",
       "file_path": "documentation/WebKit/domcssstyledeclaration/getpropertypriority(_).md",
       "hash": "3d24448fcbef03d41f88a5d52fd6ebe655304caaea94f88a9fe8d8867e238242"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/webkit/domcssstyledeclaration/getpropertyshorthand:.json": {
+      "etag": "\"13b7-65d55c82f3ef7-df\"",
+      "file_path": "documentation/WebKit/domcssstyledeclaration/getpropertyshorthand_.md",
+      "hash": "1ab2623b73079226b720a70038cb112d90eabbbe6bc767f3ae3ca1abd865f662"
     },
     "https://developer.apple.com/tutorials/data/documentation/webkit/domcssstyledeclaration/getpropertyvalue(_:).json": {
       "etag": "\"20cf-65d55c82f3ef7-df\"",
@@ -17310,6 +18090,11 @@
       "file_path": "documentation/WebKit/domcssstyledeclaration/setproperty(_,value,priority).md",
       "hash": "a100949aaf015a6b77b105add7c55cb5d766359bb150c83567288ffe1c365160"
     },
+    "https://developer.apple.com/tutorials/data/documentation/webkit/domcssstyledeclaration/setproperty:::.json": {
+      "etag": "\"1587-65d55c82a1941-df\"",
+      "file_path": "documentation/WebKit/domcssstyledeclaration/setproperty___.md",
+      "hash": "32c588555ada25959d0eded98743c8e76cad88b1b3f49975b55f52d3fde88808"
+    },
     "https://developer.apple.com/tutorials/data/documentation/webkit/domcssstyledeclaration/setquotes(_:).json": {
       "etag": "\"1e28-65d55c82f3ef7-df\"",
       "file_path": "documentation/WebKit/domcssstyledeclaration/setquotes(_).md",
@@ -17605,6 +18390,11 @@
       "file_path": "documentation/WebKit/domcssstylesheet/insertrule(_,index).md",
       "hash": "8f21233ab1aa349ebf04120d176a89ee5302fc63840076f1970cbc3a0d4f9734"
     },
+    "https://developer.apple.com/tutorials/data/documentation/webkit/domcssstylesheet/insertrule::.json": {
+      "etag": "\"1354-65d55c82877c5-df\"",
+      "file_path": "documentation/WebKit/domcssstylesheet/insertrule__.md",
+      "hash": "9bfa4ba1170dab06d6c65c049989832f0df44a09bc69c02f81acd78ee2282f3a"
+    },
     "https://developer.apple.com/tutorials/data/documentation/webkit/domcssstylesheet/ownerrule.json": {
       "etag": "\"1bff-65d55c82877c5-df\"",
       "file_path": "documentation/WebKit/domcssstylesheet/ownerrule.md",
@@ -17715,6 +18505,11 @@
       "file_path": "documentation/WebKit/domdocument/createattributens(_,qualifiedname).md",
       "hash": "e3f511e6ebe7ddf2fbcfd0ac408245929f2482755c74f79e702f8c6b47f945e9"
     },
+    "https://developer.apple.com/tutorials/data/documentation/webkit/domdocument/createattributens::.json": {
+      "etag": "\"177c-65d55c82315e9-df\"",
+      "file_path": "documentation/WebKit/domdocument/createattributens__.md",
+      "hash": "a93d04ef4419ec9cd00e03763ebc92d855fd085f05677ce2f0add3ef01f196e4"
+    },
     "https://developer.apple.com/tutorials/data/documentation/webkit/domdocument/createcdatasection(_:).json": {
       "etag": "\"2422-65d55c82135b1-df\"",
       "file_path": "documentation/WebKit/domdocument/createcdatasection(_).md",
@@ -17745,6 +18540,11 @@
       "file_path": "documentation/WebKit/domdocument/createelementns(_,qualifiedname).md",
       "hash": "2cba48d7e2822a9114d69bbe837b3b2efb7d821810e07ea13bae1066251f4641"
     },
+    "https://developer.apple.com/tutorials/data/documentation/webkit/domdocument/createelementns::.json": {
+      "etag": "\"1791-65d55c82135b1-df\"",
+      "file_path": "documentation/WebKit/domdocument/createelementns__.md",
+      "hash": "6d02d07e81c5607712d4fd2670451b37cf91ecba063b41c451f8e110118df3ad"
+    },
     "https://developer.apple.com/tutorials/data/documentation/webkit/domdocument/createentityreference(_:).json": {
       "etag": "\"24a3-65d55c82135b1-df\"",
       "file_path": "documentation/WebKit/domdocument/createentityreference(_).md",
@@ -17760,10 +18560,20 @@
       "file_path": "documentation/WebKit/domdocument/createexpression(_,resolver).md",
       "hash": "f96c275dc80eb81af100147402ac03a94470c37c7b7913e6c2be74a431539fb3"
     },
+    "https://developer.apple.com/tutorials/data/documentation/webkit/domdocument/createexpression::.json": {
+      "etag": "\"17d2-65d55c82315e9-df\"",
+      "file_path": "documentation/WebKit/domdocument/createexpression__.md",
+      "hash": "f2d4e1f42aeeb49a8387118bb3ffd30ee33ad5a52f41dd68c2d9b3d43a50c0d5"
+    },
     "https://developer.apple.com/tutorials/data/documentation/webkit/domdocument/createnodeiterator(_:whattoshow:filter:expandentityreferences:).json": {
       "etag": "\"3a50-65d55c82315e9-df\"",
       "file_path": "documentation/WebKit/domdocument/createnodeiterator(_,whattoshow,filter,expandentityreferences).md",
       "hash": "de5244ca38b1ae82979b3a0fdb7aff8d964f976157cc05349b90a0a64d32bc70"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/webkit/domdocument/createnodeiterator::::.json": {
+      "etag": "\"1c48-65d55c82315e9-df\"",
+      "file_path": "documentation/WebKit/domdocument/createnodeiterator____.md",
+      "hash": "a6cf1e574cce68b2ecd8db681d58c20f28395b8ebe03ac9e7a38e05fa3695416"
     },
     "https://developer.apple.com/tutorials/data/documentation/webkit/domdocument/creatensresolver(_:).json": {
       "etag": "\"22e7-65d55c82315e9-df\"",
@@ -17774,6 +18584,11 @@
       "etag": "\"2983-65d55c82135b1-df\"",
       "file_path": "documentation/WebKit/domdocument/createprocessinginstruction(_,data).md",
       "hash": "02300ecd455d11f99cd27e464aada6558247f34e557686ca582b8dbe622ad15c"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/webkit/domdocument/createprocessinginstruction::.json": {
+      "etag": "\"18e4-65d55c82315e9-df\"",
+      "file_path": "documentation/WebKit/domdocument/createprocessinginstruction__.md",
+      "hash": "b0dcec62edabd30c5d6629bed8fd3777d40a676f4d66ae3e593f3871fbc1475e"
     },
     "https://developer.apple.com/tutorials/data/documentation/webkit/domdocument/createrange().json": {
       "etag": "\"1b32-65d55c82135b1-df\"",
@@ -17789,6 +18604,11 @@
       "etag": "\"39fa-65d55c82315e9-df\"",
       "file_path": "documentation/WebKit/domdocument/createtreewalker(_,whattoshow,filter,expandentityreferences).md",
       "hash": "8a612fae31f58ffc25dff58c01cc520117f2416bd967e74c5070e70fc16a0239"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/webkit/domdocument/createtreewalker::::.json": {
+      "etag": "\"1c12-65d55c82135b1-df\"",
+      "file_path": "documentation/WebKit/domdocument/createtreewalker____.md",
+      "hash": "3549108f1be4ad58a6185724294b1e51c820dbfbfd2d0a2e9ab8d25db6b22613"
     },
     "https://developer.apple.com/tutorials/data/documentation/webkit/domdocument/defaultcharset.json": {
       "etag": "\"1cda-65d55c82315e9-df\"",
@@ -17830,6 +18650,11 @@
       "file_path": "documentation/WebKit/domdocument/evaluate(_,contextnode,resolver,type,in).md",
       "hash": "014ee0aa8f45db1967b365e59cef5076556e44de197f5ac383af4e7719becf48"
     },
+    "https://developer.apple.com/tutorials/data/documentation/webkit/domdocument/evaluate:::::.json": {
+      "etag": "\"1e3a-65d55c82135b1-df\"",
+      "file_path": "documentation/WebKit/domdocument/evaluate_____.md",
+      "hash": "29c0f13cb437407e741f9a35eba38be244a00d8c16000a20d7a58def192a52c4"
+    },
     "https://developer.apple.com/tutorials/data/documentation/webkit/domdocument/execcommand(_:).json": {
       "etag": "\"22fc-65d55c82135b1-df\"",
       "file_path": "documentation/WebKit/domdocument/execcommand(_).md",
@@ -17854,6 +18679,11 @@
       "etag": "\"2d00-65d55c82135b1-df\"",
       "file_path": "documentation/WebKit/domdocument/getcomputedstyle(_,pseudoelement).md",
       "hash": "a374d4ee9dc12e47dbf1bdbd173a992c28b87d7afd48117c468af83586aaebf6"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/webkit/domdocument/getcomputedstyle::.json": {
+      "etag": "\"1bda-65d55c82135b1-df\"",
+      "file_path": "documentation/WebKit/domdocument/getcomputedstyle__.md",
+      "hash": "a9e5d4a554b9d11ea038aaa18619f1a2d77290582d4ec689ca7677dc439a9b47"
     },
     "https://developer.apple.com/tutorials/data/documentation/webkit/domdocument/getelementbyid(_:).json": {
       "etag": "\"236a-65d55c82135b1-df\"",
@@ -17880,6 +18710,11 @@
       "file_path": "documentation/WebKit/domdocument/getelementsbytagnamens(_,localname).md",
       "hash": "b70aabf55f23e52d8339662a10e1f33fcad475a44224c3db7af788401457b36e"
     },
+    "https://developer.apple.com/tutorials/data/documentation/webkit/domdocument/getelementsbytagnamens::.json": {
+      "etag": "\"17f0-65d55c82315e9-df\"",
+      "file_path": "documentation/WebKit/domdocument/getelementsbytagnamens__.md",
+      "hash": "c8a87f133b03b86b7292c000d75de2c93995de62569eab31d69ddfc6bd9973a0"
+    },
     "https://developer.apple.com/tutorials/data/documentation/webkit/domdocument/getmatchedcssrules(_:pseudoelement:).json": {
       "etag": "\"2c7a-65d55c82315e9-df\"",
       "file_path": "documentation/WebKit/domdocument/getmatchedcssrules(_,pseudoelement).md",
@@ -17894,6 +18729,11 @@
       "etag": "\"2d00-65d55c82315e9-df\"",
       "file_path": "documentation/WebKit/domdocument/getoverridestyle(_,pseudoelement).md",
       "hash": "b276cdb04e9a92cd759f5f63dc0b695ae283d53dbcefaf5a642a159ab5d1c9f2"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/webkit/domdocument/getoverridestyle::.json": {
+      "etag": "\"1bda-65d55c82315e9-df\"",
+      "file_path": "documentation/WebKit/domdocument/getoverridestyle__.md",
+      "hash": "e13e60e7697d313bb7d0185fc4268615edd1ac2c0cd0d462209170ebd00600bb"
     },
     "https://developer.apple.com/tutorials/data/documentation/webkit/domdocument/hasfocus().json": {
       "etag": "\"1af4-65d55c82135b1-df\"",
@@ -17914,6 +18754,11 @@
       "etag": "\"25d9-65d55c82135b1-df\"",
       "file_path": "documentation/WebKit/domdocument/import(_,deep).md",
       "hash": "27098bdf1808df127a563eaa8aef638f235ffd2da670a4b97350369afc9ef03f"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/webkit/domdocument/importnode::.json": {
+      "etag": "\"15f6-65d55c82315e9-df\"",
+      "file_path": "documentation/WebKit/domdocument/importnode__.md",
+      "hash": "fea2d06222ae9ce305622022618979dbad9d492f2841dee4e72524f18cda929a"
     },
     "https://developer.apple.com/tutorials/data/documentation/webkit/domdocument/inputencoding.json": {
       "etag": "\"1cc5-65d55c82315e9-df\"",
@@ -18140,10 +18985,20 @@
       "file_path": "documentation/WebKit/domelement/getattributenodens(_,localname).md",
       "hash": "f2c88b0983052da4d1f802807ef3f65826ce119e5de7420c8d19a3e8c9044404"
     },
+    "https://developer.apple.com/tutorials/data/documentation/webkit/domelement/getattributenodens::.json": {
+      "etag": "\"1771-65d55c8638f2a-df\"",
+      "file_path": "documentation/WebKit/domelement/getattributenodens__.md",
+      "hash": "1c955ab5ba0ab56053d94c30f946d2b0f9eb883a6301da5ec50c3b24d1093aed"
+    },
     "https://developer.apple.com/tutorials/data/documentation/webkit/domelement/getattributens(_:localname:).json": {
       "etag": "\"23d9-65d55c8638f2a-df\"",
       "file_path": "documentation/WebKit/domelement/getattributens(_,localname).md",
       "hash": "48f33c0215608785bbaf3bffec5bf5636a8bf4b66c011a4b4cd6c6d9cc8a0d61"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/webkit/domelement/getattributens::.json": {
+      "etag": "\"13e0-65d55c8638f2a-df\"",
+      "file_path": "documentation/WebKit/domelement/getattributens__.md",
+      "hash": "bf8c350542fc76684fc521ac7838593521f0ec6febe1ecd33a3d4884f1748d7e"
     },
     "https://developer.apple.com/tutorials/data/documentation/webkit/domelement/getelementsbyclassname(_:).json": {
       "etag": "\"2407-65d55c8638f2a-df\"",
@@ -18160,6 +19015,11 @@
       "file_path": "documentation/WebKit/domelement/getelementsbytagnamens(_,localname).md",
       "hash": "0195d9abe23c60c6b61da30d03755bb1f3e65b42fff04c11c38565e9cdf7dbbb"
     },
+    "https://developer.apple.com/tutorials/data/documentation/webkit/domelement/getelementsbytagnamens::.json": {
+      "etag": "\"17dd-65d55c8651098-df\"",
+      "file_path": "documentation/WebKit/domelement/getelementsbytagnamens__.md",
+      "hash": "1b0a1bc809646ab1807c72a59daefc4820014de1f75c4b24e3d2a5be42ffae63"
+    },
     "https://developer.apple.com/tutorials/data/documentation/webkit/domelement/hasattribute(_:).json": {
       "etag": "\"22f4-65d55c8651098-df\"",
       "file_path": "documentation/WebKit/domelement/hasattribute(_).md",
@@ -18169,6 +19029,11 @@
       "etag": "\"2776-65d55c8638f2a-df\"",
       "file_path": "documentation/WebKit/domelement/hasattributens(_,localname).md",
       "hash": "472db815dccf3d8bf1fc6d9fec1687ead0196c56819d7a05f2474535fd1c3000"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/webkit/domelement/hasattributens::.json": {
+      "etag": "\"1577-65d55c8651098-df\"",
+      "file_path": "documentation/WebKit/domelement/hasattributens__.md",
+      "hash": "958307a0dbbc6e5665eafbe2b985dc50d664a21368ee87279661f6b17fa109b3"
     },
     "https://developer.apple.com/tutorials/data/documentation/webkit/domelement/image().json": {
       "etag": "\"1d0c-65d55c8651098-df\"",
@@ -18255,6 +19120,11 @@
       "file_path": "documentation/WebKit/domelement/removeattributens(_,localname).md",
       "hash": "83afb9390e8955a3b29d5e063f7840e1549d2226e9be9777559a66b229e1684b"
     },
+    "https://developer.apple.com/tutorials/data/documentation/webkit/domelement/removeattributens::.json": {
+      "etag": "\"139b-65d55c8638f2a-df\"",
+      "file_path": "documentation/WebKit/domelement/removeattributens__.md",
+      "hash": "a6da7416bbfa818333bc82ef312b9a056bdcf5f76a0210183b1ca361d167542f"
+    },
     "https://developer.apple.com/tutorials/data/documentation/webkit/domelement/scroll(bylines:).json": {
       "etag": "\"1b1f-65d55c8651098-df\"",
       "file_path": "documentation/WebKit/domelement/scroll(bylines).md",
@@ -18300,6 +19170,11 @@
       "file_path": "documentation/WebKit/domelement/setattribute(_,value).md",
       "hash": "f0ced4143a02c3406daca864a21d16852bd8802a955d25a6f8a13eadb9396218"
     },
+    "https://developer.apple.com/tutorials/data/documentation/webkit/domelement/setattribute::.json": {
+      "etag": "\"1353-65d55c8638f2a-df\"",
+      "file_path": "documentation/WebKit/domelement/setattribute__.md",
+      "hash": "05658c72bd0b1a2337ed69e7c15b6d6fba7761b77f45aae5688503a83109bdd8"
+    },
     "https://developer.apple.com/tutorials/data/documentation/webkit/domelement/setattributenode(_:).json": {
       "etag": "\"1e9f-65d55c8651098-df\"",
       "file_path": "documentation/WebKit/domelement/setattributenode(_).md",
@@ -18314,6 +19189,11 @@
       "etag": "\"263f-65d55c8651098-df\"",
       "file_path": "documentation/WebKit/domelement/setattributens(_,qualifiedname,value).md",
       "hash": "244263b96800040fafeee42cea57af622597f598906961840e608375547ec379"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/webkit/domelement/setattributens:::.json": {
+      "etag": "\"14cc-65d55c8638f2a-df\"",
+      "file_path": "documentation/WebKit/domelement/setattributens___.md",
+      "hash": "9d563e093d8cd826b9809a77550658ed9a967e3840daed816768a842366e4fe6"
     },
     "https://developer.apple.com/tutorials/data/documentation/webkit/domelement/style.json": {
       "etag": "\"1c29-65d55c8638f2a-df\"",
@@ -18389,6 +19269,11 @@
       "etag": "\"2a0f-65d55c84724d6-df\"",
       "file_path": "documentation/WebKit/domevent/initevent(_,canbubblearg,cancelablearg).md",
       "hash": "c3a0d64acb25b141dc307198e8597d67bf917dfcddcdeee3b3bc50e69c730113"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/webkit/domevent/initevent:::.json": {
+      "etag": "\"15f5-65d55c84724d6-df\"",
+      "file_path": "documentation/WebKit/domevent/initevent___.md",
+      "hash": "aab4502ec73b8cbc18ebde25e796cd8cead28933d6b9de18f9d52c0ca739b0e4"
     },
     "https://developer.apple.com/tutorials/data/documentation/webkit/domevent/preventdefault().json": {
       "etag": "\"15ae-65d55c84724d6-df\"",
@@ -18470,6 +19355,11 @@
       "file_path": "documentation/WebKit/domeventtarget/addeventlistener(_,listener,usecapture).md",
       "hash": "198eab98f72b74241b2801699dc927235735e6987159fe7ae5de48cd8e939518"
     },
+    "https://developer.apple.com/tutorials/data/documentation/webkit/domeventtarget/addeventlistener:::.json": {
+      "etag": "\"1682-65d55c8492a71-df\"",
+      "file_path": "documentation/WebKit/domeventtarget/addeventlistener___.md",
+      "hash": "7897c817d5fed17aba3482871129c5d6e23a231d633fb8369e953d93f6f30b9d"
+    },
     "https://developer.apple.com/tutorials/data/documentation/webkit/domeventtarget/dispatchevent(_:).json": {
       "etag": "\"2277-65d55c8492a71-df\"",
       "file_path": "documentation/WebKit/domeventtarget/dispatchevent(_).md",
@@ -18479,6 +19369,11 @@
       "etag": "\"2f16-65d55c8492a71-df\"",
       "file_path": "documentation/WebKit/domeventtarget/removeeventlistener(_,listener,usecapture).md",
       "hash": "f3c75168493f4da158f43706c7a202cd538b84086a88eacdea8a0c3b10a4632d"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/webkit/domeventtarget/removeeventlistener:::.json": {
+      "etag": "\"16a6-65d55c8492a71-df\"",
+      "file_path": "documentation/WebKit/domeventtarget/removeeventlistener___.md",
+      "hash": "3b7fb5a8426cc35d995772074fb22c9f145bdf880888a47f466f55bd134cf0ef"
     },
     "https://developer.apple.com/tutorials/data/documentation/webkit/domexception.json": {
       "etag": "\"5978-65d55c86f449b-df\"",
@@ -18539,6 +19434,11 @@
       "etag": "\"1e43-65d55c85b277a-df\"",
       "file_path": "documentation/WebKit/domhtmlanchorelement/absolutelinkurl.md",
       "hash": "17b66c08290f10a5f78d69df5b003eb7f169d3696fa26e6b14a83b12c300e176"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/webkit/domhtmlanchorelement/accesskey.json": {
+      "etag": "\"1201-65d55c85b277a-df\"",
+      "file_path": "documentation/WebKit/domhtmlanchorelement/accesskey.md",
+      "hash": "02f5aec0528cff2e8055b718a25c873572aedb2fdbeb2eef6c09a954d25cfab6"
     },
     "https://developer.apple.com/tutorials/data/documentation/webkit/domhtmlanchorelement/charset.json": {
       "etag": "\"1d10-65d55c85b277a-df\"",
@@ -18700,6 +19600,11 @@
       "file_path": "documentation/WebKit/domhtmlareaelement/absolutelinkurl.md",
       "hash": "a3c6a3d2a40ac9a696e0d0012537d30e9bdbe8d8eaf5029490f35977b9503370"
     },
+    "https://developer.apple.com/tutorials/data/documentation/webkit/domhtmlareaelement/accesskey.json": {
+      "etag": "\"11db-65d55c87111a7-df\"",
+      "file_path": "documentation/WebKit/domhtmlareaelement/accesskey.md",
+      "hash": "17711d1dd91cd2a7b92148e8f41062941940b13c72bd2cdf2b6d317852fa35c0"
+    },
     "https://developer.apple.com/tutorials/data/documentation/webkit/domhtmlareaelement/alt.json": {
       "etag": "\"1c8e-65d55c87111a7-df\"",
       "file_path": "documentation/WebKit/domhtmlareaelement/alt.md",
@@ -18849,6 +19754,11 @@
       "etag": "\"97af-65d55c83ec0ef-df\"",
       "file_path": "documentation/WebKit/domhtmlbuttonelement.md",
       "hash": "201428214918566bcacad482927c01f25f5cae0a77bd7f82af3d9c4bd587a29b"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/webkit/domhtmlbuttonelement/accesskey.json": {
+      "etag": "\"1201-65d55c8651098-df\"",
+      "file_path": "documentation/WebKit/domhtmlbuttonelement/accesskey.md",
+      "hash": "654f895f0eb889a77a28623a388768aaee8d167b9c7f01c7162086cf759c272f"
     },
     "https://developer.apple.com/tutorials/data/documentation/webkit/domhtmlbuttonelement/autofocus.json": {
       "etag": "\"1c04-65d55c8651098-df\"",
@@ -19605,6 +20515,11 @@
       "file_path": "documentation/WebKit/domhtmlinputelement/accept.md",
       "hash": "c438f8feac0bac1157926e4fe5380c95aa8a2629c347fa9f4c20f8664a0b02c5"
     },
+    "https://developer.apple.com/tutorials/data/documentation/webkit/domhtmlinputelement/accesskey.json": {
+      "etag": "\"11ee-65d55c839507d-df\"",
+      "file_path": "documentation/WebKit/domhtmlinputelement/accesskey.md",
+      "hash": "7b20fbf9be423eb87bc8bf8d2e6346c190fb4e1e944d808ed9c9001f07bdcad3"
+    },
     "https://developer.apple.com/tutorials/data/documentation/webkit/domhtmlinputelement/align.json": {
       "etag": "\"1ccf-65d55c839507d-df\"",
       "file_path": "documentation/WebKit/domhtmlinputelement/align.md",
@@ -19740,6 +20655,11 @@
       "file_path": "documentation/WebKit/domhtmllabelelement.md",
       "hash": "0ba8d0e3347bf960853aa4b5248e35fafcb91b771c9df48fbf59f2d176b8c52c"
     },
+    "https://developer.apple.com/tutorials/data/documentation/webkit/domhtmllabelelement/accesskey.json": {
+      "etag": "\"11ee-65d55c8326652-df\"",
+      "file_path": "documentation/WebKit/domhtmllabelelement/accesskey.md",
+      "hash": "8321770649e80b97eb2055f0d6df7e89c547c845b74a8bcd42f68158d02b1110"
+    },
     "https://developer.apple.com/tutorials/data/documentation/webkit/domhtmllabelelement/form.json": {
       "etag": "\"1c8b-65d55c8326652-df\"",
       "file_path": "documentation/WebKit/domhtmllabelelement/form.md",
@@ -19754,6 +20674,11 @@
       "etag": "\"7d65-65d55c8326652-df\"",
       "file_path": "documentation/WebKit/domhtmllegendelement.md",
       "hash": "4963f356e7aa267888c635b6ea152441beb0ae148def34e22ba27171ab519f82"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/webkit/domhtmllegendelement/accesskey.json": {
+      "etag": "\"1201-65d55c7ffae71-df\"",
+      "file_path": "documentation/WebKit/domhtmllegendelement/accesskey.md",
+      "hash": "cb0a001f3f94bdcaa4b0ba494b7c79501b284d61db376f907df6ddbd24faacb4"
     },
     "https://developer.apple.com/tutorials/data/documentation/webkit/domhtmllegendelement/align.json": {
       "etag": "\"1ce6-65d55c7ffae71-df\"",
@@ -20255,6 +21180,11 @@
       "file_path": "documentation/WebKit/domhtmlselectelement/add(_,before).md",
       "hash": "83ae5f14cb79e4d2df0a4c4db698944b2a42bc2bb1a5c1f80e75151c0b789732"
     },
+    "https://developer.apple.com/tutorials/data/documentation/webkit/domhtmlselectelement/add::.json": {
+      "etag": "\"14c8-65d55c85b277a-df\"",
+      "file_path": "documentation/WebKit/domhtmlselectelement/add__.md",
+      "hash": "3ff8b1deb90a572c89967c45d2be6aba0178243415ef64708bae0be65ad38c02"
+    },
     "https://developer.apple.com/tutorials/data/documentation/webkit/domhtmlselectelement/autofocus.json": {
       "etag": "\"1c04-65d55c85b277a-df\"",
       "file_path": "documentation/WebKit/domhtmlselectelement/autofocus.md",
@@ -20695,6 +21625,11 @@
       "file_path": "documentation/WebKit/domhtmltextareaelement.md",
       "hash": "1ccd8ec8f750256d644346af765c0aad7d0505909306cccd36977a2b2321f0cf"
     },
+    "https://developer.apple.com/tutorials/data/documentation/webkit/domhtmltextareaelement/accesskey.json": {
+      "etag": "\"1227-65d55c7ffae71-df\"",
+      "file_path": "documentation/WebKit/domhtmltextareaelement/accesskey.md",
+      "hash": "7fa1ac2e4286928c40dafab5344c5e2940c071c262e138047d83a933bb39f036"
+    },
     "https://developer.apple.com/tutorials/data/documentation/webkit/domhtmltextareaelement/autofocus.json": {
       "etag": "\"1c32-65d55c7ffae71-df\"",
       "file_path": "documentation/WebKit/domhtmltextareaelement/autofocus.md",
@@ -20805,15 +21740,30 @@
       "file_path": "documentation/WebKit/domimplementation/createcssstylesheet(_,media).md",
       "hash": "646427d75662f742a273cb638881e0be554d244d92f9c3a8949b885ea7d4610d"
     },
+    "https://developer.apple.com/tutorials/data/documentation/webkit/domimplementation/createcssstylesheet::.json": {
+      "etag": "\"187e-65d55c880141c-df\"",
+      "file_path": "documentation/WebKit/domimplementation/createcssstylesheet__.md",
+      "hash": "ce260b1631e88ccd8eb6f03a7a93bf79554d377c904b6c1d1bb879074f69acef"
+    },
     "https://developer.apple.com/tutorials/data/documentation/webkit/domimplementation/createdocument(_:qualifiedname:doctype:).json": {
       "etag": "\"3102-65d55c880141c-df\"",
       "file_path": "documentation/WebKit/domimplementation/createdocument(_,qualifiedname,doctype).md",
       "hash": "1466a734f172e7b60d91a991e6e8bb936c8ef8fccae4e94c3c995155347c28c0"
     },
+    "https://developer.apple.com/tutorials/data/documentation/webkit/domimplementation/createdocument:::.json": {
+      "etag": "\"1d32-65d55c880141c-df\"",
+      "file_path": "documentation/WebKit/domimplementation/createdocument___.md",
+      "hash": "ef1df9210b73c58d18c7785a1376e60382c385c6ba817493a37ffb5d6ceb3ea2"
+    },
     "https://developer.apple.com/tutorials/data/documentation/webkit/domimplementation/createdocumenttype(_:publicid:systemid:).json": {
       "etag": "\"2d22-65d55c880141c-df\"",
       "file_path": "documentation/WebKit/domimplementation/createdocumenttype(_,publicid,systemid).md",
       "hash": "c34b7f2c307ce430c6cea21af2668091da933772c9ae6f50ede9be5b1ac18c65"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/webkit/domimplementation/createdocumenttype:::.json": {
+      "etag": "\"19c2-65d55c880141c-df\"",
+      "file_path": "documentation/WebKit/domimplementation/createdocumenttype___.md",
+      "hash": "a86cef89b0c455482abe61981d58c1ee5f5c02f850acd4fb529e99a85259ef3a"
     },
     "https://developer.apple.com/tutorials/data/documentation/webkit/domimplementation/createhtmldocument(_:).json": {
       "etag": "\"24ae-65d55c880141c-df\"",
@@ -20824,6 +21774,11 @@
       "etag": "\"278d-65d55c880141c-df\"",
       "file_path": "documentation/WebKit/domimplementation/hasfeature(_,version).md",
       "hash": "1b61657d8bb8907890e617009c1a2a9c99dcb9dc83572baf8d3cdc5d42fe85ca"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/webkit/domimplementation/hasfeature::.json": {
+      "etag": "\"15c5-65d55c880141c-df\"",
+      "file_path": "documentation/WebKit/domimplementation/hasfeature__.md",
+      "hash": "28dbb2cb7a2b8d95d116752691287af4c05c86d9c5aadcf4c145cc5d542177f0"
     },
     "https://developer.apple.com/tutorials/data/documentation/webkit/domkeyboardevent.json": {
       "etag": "\"c2a2-65d55c83ec0ef-df\"",
@@ -20865,6 +21820,16 @@
       "file_path": "documentation/WebKit/domkeyboardevent/initkeyboardevent(_,canbubble,cancelable,view,keyidentifier,location,ctrlkey,altkey,shiftkey,metakey,altgraphkey).md",
       "hash": "adef6c8cb7288c7cfd633db261c564b3220151963f0f038ac53d3bf28be9382d"
     },
+    "https://developer.apple.com/tutorials/data/documentation/webkit/domkeyboardevent/initkeyboardevent:canbubble:cancelable:view:keyidentifier:keylocation:ctrlkey:altkey:shiftkey:metakey:.json": {
+      "etag": "\"26db-65d55c8822ae9-df\"",
+      "file_path": "documentation/WebKit/domkeyboardevent/initkeyboardevent_canbubble_cancelable_view_keyidentifier_keylocation_ctrlkey_altkey_shiftkey_metakey_.md",
+      "hash": "fdf282e7cfba1bef4566a6d8c37bffcbc9f3c15aa60826c52b127515dca926cb"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/webkit/domkeyboardevent/initkeyboardevent:canbubble:cancelable:view:keyidentifier:keylocation:ctrlkey:altkey:shiftkey:metakey:altgraphkey:.json": {
+      "etag": "\"28a3-65d55c8822ae9-df\"",
+      "file_path": "documentation/WebKit/domkeyboardevent/initkeyboardevent_canbubble_cancelable_view_keyidentifier_keylocation_ctrlkey_altkey_shiftkey_metakey_altgraphkey_.md",
+      "hash": "6abed2be23266076fbc19274c3801b60d68b85cf5af2caa4c377de9ed12cffa8"
+    },
     "https://developer.apple.com/tutorials/data/documentation/webkit/domkeyboardevent/keycode.json": {
       "etag": "\"194f-65d55c8822ae9-df\"",
       "file_path": "documentation/WebKit/domkeyboardevent/keycode.md",
@@ -20874,6 +21839,11 @@
       "etag": "\"1d38-65d55c8822ae9-df\"",
       "file_path": "documentation/WebKit/domkeyboardevent/keyidentifier.md",
       "hash": "59bb2c98f2470e1136ad4cba57c7e2ea6eac85ebbb7228a4431bd821e278bd76"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/webkit/domkeyboardevent/keylocation.json": {
+      "etag": "\"ebe-65d55c8822ae9-df\"",
+      "file_path": "documentation/WebKit/domkeyboardevent/keylocation.md",
+      "hash": "a271d327ee121823bf04fa5019c0e4d55d52e97f9083523d42d6f9820a4c4b68"
     },
     "https://developer.apple.com/tutorials/data/documentation/webkit/domkeyboardevent/location.json": {
       "etag": "\"197c-65d55c8822ae9-df\"",
@@ -20960,6 +21930,11 @@
       "file_path": "documentation/WebKit/dommouseevent/initmouseevent(_,canbubble,cancelable,view,detail,screenx,screeny,clientx,clienty,ctrlkey,altkey,shiftkey,metakey,button,relatedtarget).md",
       "hash": "8e73f48d6a7061c181d22d0654ddb92319408467af79e7379b84258ef1021224"
     },
+    "https://developer.apple.com/tutorials/data/documentation/webkit/dommouseevent/initmouseevent:::::::::::::::.json": {
+      "etag": "\"273f-65d55c86cea4d-df\"",
+      "file_path": "documentation/WebKit/dommouseevent/initmouseevent_______________.md",
+      "hash": "6ca209eab40b76f5e65a05f492c08ba0985a444ecb2fa7eefcae1f2a6e322261"
+    },
     "https://developer.apple.com/tutorials/data/documentation/webkit/dommouseevent/metakey.json": {
       "etag": "\"1b40-65d55c86cea4d-df\"",
       "file_path": "documentation/WebKit/dommouseevent/metakey.md",
@@ -21030,6 +22005,11 @@
       "file_path": "documentation/WebKit/dommutationevent/initmutationevent(_,canbubble,cancelable,relatednode,prevvalue,newvalue,attrname,attrchange).md",
       "hash": "c79f24c47dc9e9fa789bb2d556706dae9e9068c2e8e669334e87553313fb6006"
     },
+    "https://developer.apple.com/tutorials/data/documentation/webkit/dommutationevent/initmutationevent::::::::.json": {
+      "etag": "\"208b-65d55c836030a-df\"",
+      "file_path": "documentation/WebKit/dommutationevent/initmutationevent________.md",
+      "hash": "a6fe28034b4b02af4b1b5de0fe90b50de76ac4f8e53ddf80a6ab20912a845799"
+    },
     "https://developer.apple.com/tutorials/data/documentation/webkit/dommutationevent/newvalue.json": {
       "etag": "\"1ccf-65d55c836030a-df\"",
       "file_path": "documentation/WebKit/dommutationevent/newvalue.md",
@@ -21060,6 +22040,11 @@
       "file_path": "documentation/WebKit/domnamednodemap/getnameditemns(_,localname).md",
       "hash": "84edea2032b4b2e121d16145f5fa237807bd30b8c18f961a15ffbeb5f93dc421"
     },
+    "https://developer.apple.com/tutorials/data/documentation/webkit/domnamednodemap/getnameditemns::.json": {
+      "etag": "\"17a0-65d55c87111a7-df\"",
+      "file_path": "documentation/WebKit/domnamednodemap/getnameditemns__.md",
+      "hash": "27973039acdd246429560b1ce6bfc96485c112b0352d4adef1bcfeacf2831025"
+    },
     "https://developer.apple.com/tutorials/data/documentation/webkit/domnamednodemap/item(_:).json": {
       "etag": "\"1fc8-65d55c87111a7-df\"",
       "file_path": "documentation/WebKit/domnamednodemap/item(_).md",
@@ -21079,6 +22064,11 @@
       "etag": "\"2811-65d55c87111a7-df\"",
       "file_path": "documentation/WebKit/domnamednodemap/removenameditemns(_,localname).md",
       "hash": "2624db950606ec27988ee10f27fe7bf78531063cca5233ea3bc777b31adb9163"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/webkit/domnamednodemap/removenameditemns::.json": {
+      "etag": "\"17c4-65d55c87111a7-df\"",
+      "file_path": "documentation/WebKit/domnamednodemap/removenameditemns__.md",
+      "hash": "fcf2745ca290fd575f18af8ab3d868f8b8b37eefe100c05cc7fcff2109362662"
     },
     "https://developer.apple.com/tutorials/data/documentation/webkit/domnamednodemap/setnameditem(_:).json": {
       "etag": "\"1eb8-65d55c87111a7-df\"",
@@ -21160,6 +22150,11 @@
       "file_path": "documentation/WebKit/domnode/insert(before,refchild).md",
       "hash": "1cbbbc23f6e3ece0b66398bef0a9ef0caa2e11e0a8dd0ee8ee71a16ad5ed3b99"
     },
+    "https://developer.apple.com/tutorials/data/documentation/webkit/domnode/insertbefore::.json": {
+      "etag": "\"10ae-65d55c83b0ea5-df\"",
+      "file_path": "documentation/WebKit/domnode/insertbefore__.md",
+      "hash": "4ac4e9d3aa3f3d0e007a14dee74458ceb3ba0c385559c1bef079742aa459af1a"
+    },
     "https://developer.apple.com/tutorials/data/documentation/webkit/domnode/iscontenteditable.json": {
       "etag": "\"1b88-65d55c83b0ea5-df\"",
       "file_path": "documentation/WebKit/domnode/iscontenteditable.md",
@@ -21184,6 +22179,11 @@
       "etag": "\"26bc-65d55c83b0ea5-df\"",
       "file_path": "documentation/WebKit/domnode/issupported(_,version).md",
       "hash": "e8a5690ca102737f5e285b73c9d5de40a82c95670be2167974c74bc00eca796c"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/webkit/domnode/issupported::.json": {
+      "etag": "\"1513-65d55c83b0ea5-df\"",
+      "file_path": "documentation/WebKit/domnode/issupported__.md",
+      "hash": "61b0aef4ff4df6383741c7a815c62852edfd9ba9c2ecdec27aaaede8592bea00"
     },
     "https://developer.apple.com/tutorials/data/documentation/webkit/domnode/lastchild.json": {
       "etag": "\"177f-65d55c83b0ea5-df\"",
@@ -21274,6 +22274,11 @@
       "etag": "\"1ee2-65d55c83b0ea5-df\"",
       "file_path": "documentation/WebKit/domnode/replacechild(_,oldchild).md",
       "hash": "bcacd46e1d3893f960c9fb32000182ac0bbeaaf49d65b064acf46d9cd971c340"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/webkit/domnode/replacechild::.json": {
+      "etag": "\"10ae-65d55c83b0ea5-df\"",
+      "file_path": "documentation/WebKit/domnode/replacechild__.md",
+      "hash": "b9eaa61c0c9c1ff9ce1d7fc0721f06d51b984741bb94a99e8668e634e1219933"
     },
     "https://developer.apple.com/tutorials/data/documentation/webkit/domnode/textcontent.json": {
       "etag": "\"1c39-65d55c83b0ea5-df\"",
@@ -21475,6 +22480,11 @@
       "file_path": "documentation/WebKit/domrange/compareboundarypoints(_,sourcerange).md",
       "hash": "2abcdc7af4d024929720713508fa7ef9626394c49f81e2ef12c49fbcdb816b4a"
     },
+    "https://developer.apple.com/tutorials/data/documentation/webkit/domrange/compareboundarypoints::.json": {
+      "etag": "\"1083-65d55c83d0d95-df\"",
+      "file_path": "documentation/WebKit/domrange/compareboundarypoints__.md",
+      "hash": "847ce9e6ff8c4da05d5554ab6770dde6c454d1448b75b65d297ff69e1a5831bc"
+    },
     "https://developer.apple.com/tutorials/data/documentation/webkit/domrange/comparepoint(_:offset:).json": {
       "etag": "\"252a-65d55c83ec0ef-df\"",
       "file_path": "documentation/WebKit/domrange/comparepoint(_,offset).md",
@@ -21545,6 +22555,11 @@
       "file_path": "documentation/WebKit/domrange/setend(_,offset).md",
       "hash": "5679539095345a8910209bcb8e5fdf8c109aa6334c557ac08c1f628730ed65d1"
     },
+    "https://developer.apple.com/tutorials/data/documentation/webkit/domrange/setend::.json": {
+      "etag": "\"132e-65d55c83d0d95-df\"",
+      "file_path": "documentation/WebKit/domrange/setend__.md",
+      "hash": "473904ede9830c58bf8bcf6e3f14dc32712c84ed743743661d75ac9727a568ce"
+    },
     "https://developer.apple.com/tutorials/data/documentation/webkit/domrange/setendafter(_:).json": {
       "etag": "\"1c0f-65d55c83d0d95-df\"",
       "file_path": "documentation/WebKit/domrange/setendafter(_).md",
@@ -21559,6 +22574,11 @@
       "etag": "\"218b-65d55c83ec0ef-df\"",
       "file_path": "documentation/WebKit/domrange/setstart(_,offset).md",
       "hash": "52969dfecbf82b08937dfcdc042e436b738beb06cfd0a10be7413ec0d0ec0f11"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/webkit/domrange/setstart::.json": {
+      "etag": "\"1346-65d55c83d0d95-df\"",
+      "file_path": "documentation/WebKit/domrange/setstart__.md",
+      "hash": "0b51ea44279a30b50bd700ab709f6eca475af6a36dfa1738fa6c946443ac9eeb"
     },
     "https://developer.apple.com/tutorials/data/documentation/webkit/domrange/setstartafter(_:).json": {
       "etag": "\"1c39-65d55c83ec0ef-df\"",
@@ -21845,10 +22865,25 @@
       "file_path": "documentation/WebKit/domuievent/inituievent(_,canbubble,cancelable,view,detail).md",
       "hash": "60c347d1e101741e0aba36da7f69c3c382a6ff7aad19d36ed88cbf469a35a7c4"
     },
+    "https://developer.apple.com/tutorials/data/documentation/webkit/domuievent/inituievent:::::.json": {
+      "etag": "\"1c36-65d55c83ec0ef-df\"",
+      "file_path": "documentation/WebKit/domuievent/inituievent_____.md",
+      "hash": "9eabe7aa088f5512e7791cb24afea8b66e15f56c6b5450cf851f60c507252e45"
+    },
     "https://developer.apple.com/tutorials/data/documentation/webkit/domuievent/keycode.json": {
       "etag": "\"18c5-65d55c83ec0ef-df\"",
       "file_path": "documentation/WebKit/domuievent/keycode.md",
       "hash": "ac6f9967563d917852726073fc3aee30782eb265c4af642ca8607c26a04ef36b"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/webkit/domuievent/layerx.json": {
+      "etag": "\"e07-65d55c83ec0ef-df\"",
+      "file_path": "documentation/WebKit/domuievent/layerx.md",
+      "hash": "8042a16e25119990b3c9945aac77c9ecdfe980c69cdfac906f8a215634a08f04"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/webkit/domuievent/layery.json": {
+      "etag": "\"e07-65d55c83ec0ef-df\"",
+      "file_path": "documentation/WebKit/domuievent/layery.md",
+      "hash": "ccafdbfa7fc3efeec9550c17b2929deecece3ad0e2d545b0a5b33fa628680f7b"
     },
     "https://developer.apple.com/tutorials/data/documentation/webkit/domuievent/pagex.json": {
       "etag": "\"189b-65d55c83ec0ef-df\"",
@@ -21934,6 +22969,11 @@
       "etag": "\"2cf0-65d55c84df8e2-df\"",
       "file_path": "documentation/WebKit/domxpathexpression/evaluate(_,type,in).md",
       "hash": "f9d06883398ef076b07c1cdd6348dfe71d26f48e1e98f7408d3a073c435ec60f"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/webkit/domxpathexpression/evaluate:::.json": {
+      "etag": "\"199f-65d55c84df8e2-df\"",
+      "file_path": "documentation/WebKit/domxpathexpression/evaluate___.md",
+      "hash": "a254ab724e38378b0ee3b401a5a1ec9a6fa9df0beed1ef900f1c3474b1ca5269"
     },
     "https://developer.apple.com/tutorials/data/documentation/webkit/domxpathnsresolver.json": {
       "etag": "\"6061-65d55c85cd2d2-df\"",
@@ -22034,6 +23074,16 @@
       "etag": "\"bf13-659024a6f269f-df\"",
       "file_path": "documentation/WebKit/menu-item-tags.md",
       "hash": "90b41458ccab1776463c5aa18f59a18eee0083a320f7ccfd69851855482b7a54"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/webkit/nsattributedstringcompletionhandler.json": {
+      "etag": "\"d51-65d55c83d0d95-df\"",
+      "file_path": "documentation/WebKit/nsattributedstringcompletionhandler.md",
+      "hash": "03a568570e2621baee89dce474fb3a54e6275d35d7c53139e5a163a81aa95b3d"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/webkit/nsreadaccessurldocumentoption.json": {
+      "etag": "\"2d60-65d55c8174eaa-df\"",
+      "file_path": "documentation/WebKit/nsreadaccessurldocumentoption.md",
+      "hash": "88a9f6beff649c65462e80aa07b15163cccf87d4a84bea3b05242c1112706b2b"
     },
     "https://developer.apple.com/tutorials/data/documentation/webkit/opening-a-file-legacy.json": {
       "etag": "\"28e4-659024a20bd3a-df\"",
@@ -22560,6 +23610,11 @@
       "file_path": "documentation/WebKit/webdragdestinationaction/load.md",
       "hash": "b59fc435abede2af282fb75de1153452b1574134df4ae596f6af3549ebab6055"
     },
+    "https://developer.apple.com/tutorials/data/documentation/webkit/webdragdestinationaction/webdragdestinationactionnone.json": {
+      "etag": "\"2398-65d55c85cd2d2-df\"",
+      "file_path": "documentation/WebKit/webdragdestinationaction/webdragdestinationactionnone.md",
+      "hash": "b1ca1de977ea108b8ced648a728bc8fada76605bc9a1d19ec5e534541d091617"
+    },
     "https://developer.apple.com/tutorials/data/documentation/webkit/webdragsourceaction.json": {
       "etag": "\"590d-65d55c8638f2a-df\"",
       "file_path": "documentation/WebKit/webdragsourceaction.md",
@@ -22594,6 +23649,11 @@
       "etag": "\"3046-65d55c866c3d9-df\"",
       "file_path": "documentation/WebKit/webdragsourceaction/selection.md",
       "hash": "f82e3eaf6f1e93f281e7b6b458b4791951b47aae83f63884a63d9b9e49a940a6"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/webkit/webdragsourceaction/webdragsourceactionnone.json": {
+      "etag": "\"2725-65d55c866c3d9-df\"",
+      "file_path": "documentation/WebKit/webdragsourceaction/webdragsourceactionnone.md",
+      "hash": "8ce8eba3bfea43a6a08718ed32929f30fa6851cbfdb6b0ff106d452112ea1f47"
     },
     "https://developer.apple.com/tutorials/data/documentation/webkit/webeditingdelegate.json": {
       "etag": "\"afa0-65d55c8747917-df\"",
@@ -22920,6 +23980,11 @@
       "file_path": "documentation/WebKit/webframeloaddelegate/webview(_,willperformclientredirectto,delay,fire,for).md",
       "hash": "1ac354b0bc52f80a86e1b51a6b7512c2a0a8941923c110d4a2263a87a3e79503"
     },
+    "https://developer.apple.com/tutorials/data/documentation/webkit/webframeloaddelegate/webview:windowscriptobjectavailable:.json": {
+      "etag": "\"3289-65d55c8248aad-df\"",
+      "file_path": "documentation/WebKit/webframeloaddelegate/webview_windowscriptobjectavailable_.md",
+      "hash": "a46f92abad55887c368e8025346661b8832b0f38a71a742bbba1c2a0eec95abb"
+    },
     "https://developer.apple.com/tutorials/data/documentation/webkit/webframeview.json": {
       "etag": "\"9dcc-65d6161a23aae-df\"",
       "file_path": "documentation/WebKit/webframeview.md",
@@ -23025,6 +24090,11 @@
       "file_path": "documentation/WebKit/webhistory/setoptionalshared(_).md",
       "hash": "b3836d97f8231e7183ad4a31279946e18218b485cd582087ba80c93426042ab4"
     },
+    "https://developer.apple.com/tutorials/data/documentation/webkit/webhistoryallitemsremovednotification.json": {
+      "etag": "\"2635-65d55c86f449b-df\"",
+      "file_path": "documentation/WebKit/webhistoryallitemsremovednotification.md",
+      "hash": "ba7476e3d630ac932a510e4286fb7f521a6f74609f71e4001cd7a77beabdfe7a"
+    },
     "https://developer.apple.com/tutorials/data/documentation/webkit/webhistoryitem.json": {
       "etag": "\"95d1-65d55c86f449b-df\"",
       "file_path": "documentation/WebKit/webhistoryitem.md",
@@ -23070,10 +24140,35 @@
       "file_path": "documentation/WebKit/webhistoryitem/urlstring.md",
       "hash": "617f1d473db6d7af0ab8a1cd5a16e1e5138d2f4a1f1c806d15c41c3064deb072"
     },
+    "https://developer.apple.com/tutorials/data/documentation/webkit/webhistoryitemchangednotification.json": {
+      "etag": "\"21ab-65d55c8747917-df\"",
+      "file_path": "documentation/WebKit/webhistoryitemchangednotification.md",
+      "hash": "e2ded6e3a3ceb8308f360192dc672db140f490f595257df1983a0ee717e2ff8b"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/webkit/webhistoryitemsaddednotification.json": {
+      "etag": "\"261e-65d55c83ec0ef-df\"",
+      "file_path": "documentation/WebKit/webhistoryitemsaddednotification.md",
+      "hash": "de2be7aac67af0c8e8ca61456817dc3936a89b928bbea0f5a7895e8f9caefb8b"
+    },
     "https://developer.apple.com/tutorials/data/documentation/webkit/webhistoryitemskey.json": {
       "etag": "\"6c8f-65d55c88bd64f-df\"",
       "file_path": "documentation/WebKit/webhistoryitemskey.md",
       "hash": "82660481ac185cc029746fc67e66b2097ff0ae97debe03b59cfe8f4b97c13579"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/webkit/webhistoryitemsremovednotification.json": {
+      "etag": "\"264e-65d55c8267910-df\"",
+      "file_path": "documentation/WebKit/webhistoryitemsremovednotification.md",
+      "hash": "a95a7e5237dc6275d9b759bd85b0e74cba5d0e6fc668010a1b8fb54e3ca81cc2"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/webkit/webhistoryloadednotification.json": {
+      "etag": "\"21ec-65d55c7ffae71-df\"",
+      "file_path": "documentation/WebKit/webhistoryloadednotification.md",
+      "hash": "987d80d942dd1794e0ee5da18b28719701ce42579ad74fd323bbd7778cb058b5"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/webkit/webhistorysavednotification.json": {
+      "etag": "\"21c3-65d55c8898742-df\"",
+      "file_path": "documentation/WebKit/webhistorysavednotification.md",
+      "hash": "fb09b46ac498398df57939a5ac9dbcfec54c11d9feaca39e55e7ac1567854458"
     },
     "https://developer.apple.com/tutorials/data/documentation/webkit/webkit-constants.json": {
       "etag": "\"20bd2-659024a5cc827-df\"",
@@ -23089,6 +24184,41 @@
       "etag": "\"5f57-65b3b2650513d-df\"",
       "file_path": "documentation/WebKit/webkit-for-swiftui.md",
       "hash": "a18cff2de8f346233b9b80ba62008406683272c8004cc9e6a938bd8356755047"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/webkit/webkit-macros.json": {
+      "etag": "\"21c8-659024a76e633-df\"",
+      "file_path": "documentation/WebKit/webkit-macros.md",
+      "hash": "34adf030ab8ae7cb52b128d2fa58fd1119113d45025c59ce2b51e15af50a59fc"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/webkit/webkit_available_mac.json": {
+      "etag": "\"2087-65d55c836030a-df\"",
+      "file_path": "documentation/WebKit/webkit_available_mac.md",
+      "hash": "d81a68ebdaf650e1f5699d8eb51f19f50b4de918a9cbd9ca1dda70e1593a8d0d"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/webkit/webkit_class_available_mac.json": {
+      "etag": "\"20ab-65d55c82315e9-df\"",
+      "file_path": "documentation/WebKit/webkit_class_available_mac.md",
+      "hash": "30ddacb8dae96fd16ca5dea7faa04e900742a132af27938ad8b2a0434fde2963"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/webkit/webkit_class_deprecated_mac.json": {
+      "etag": "\"20ff-65d55c8267910-df\"",
+      "file_path": "documentation/WebKit/webkit_class_deprecated_mac.md",
+      "hash": "ef6434e51b67985a7992114fe92128590d370ce992f83a7ffdcb2946fd9f0086"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/webkit/webkit_deprecated_mac.json": {
+      "etag": "\"20db-65d55c82135b1-df\"",
+      "file_path": "documentation/WebKit/webkit_deprecated_mac.md",
+      "hash": "86d65e77c011f36211140beae06945ed5132a7a1090ed88accec0e941bf4194a"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/webkit/webkit_enum_available_mac.json": {
+      "etag": "\"20a5-65d55c880141c-df\"",
+      "file_path": "documentation/WebKit/webkit_enum_available_mac.md",
+      "hash": "e93d1f546cdc56f8b47dfd3a105df55da4948c5cd1b1541a1b4ddd51526235a2"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/webkit/webkit_enum_deprecated_mac.json": {
+      "etag": "\"20f9-65d55c861be42-df\"",
+      "file_path": "documentation/WebKit/webkit_enum_deprecated_mac.md",
+      "hash": "2c32a79c807fd0adbdc314744440508bd3c779b14bcf45ef0419ec554b2f8f85"
     },
     "https://developer.apple.com/tutorials/data/documentation/webkit/webkiterrorblockedpluginversion.json": {
       "etag": "\"22cb-65d55c7ffae71-df\"",
@@ -23645,20 +24775,40 @@
       "file_path": "documentation/WebKit/webpage/dialogpresenting.md",
       "hash": "e9258e65f891e4de7a88a7e1d6eefe5dc0826921f29e1dd99b83ea09f257639e"
     },
+    "https://developer.apple.com/tutorials/data/documentation/webkit/webpage/dialogpresenting/handlefileinputprompt(parameters:initiatedby:)-1t7xa.json": {
+      "etag": "\"2aa0-65d55c8914302-df\"",
+      "file_path": "documentation/WebKit/webpage/dialogpresenting/handlefileinputprompt(parameters,initiatedby)-1t7xa.md",
+      "hash": "4a51f360f9f6d68a70fbe20105b4096b68e9348678dd7127e295d0fbbb4fcdb0"
+    },
     "https://developer.apple.com/tutorials/data/documentation/webkit/webpage/dialogpresenting/handlefileinputprompt(parameters:initiatedby:).json": {
       "etag": "\"3421-65d55c8914302-df\"",
       "file_path": "documentation/WebKit/webpage/dialogpresenting/handlefileinputprompt(parameters,initiatedby).md",
       "hash": "03e7b361e627ddd55a050e7f972cfa48608af366f78e40da0b2c9b21c7858932"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/webkit/webpage/dialogpresenting/handlejavascriptalert(message:initiatedby:)-32742.json": {
+      "etag": "\"2062-65d55c8914302-df\"",
+      "file_path": "documentation/WebKit/webpage/dialogpresenting/handlejavascriptalert(message,initiatedby)-32742.md",
+      "hash": "f00be1557e323df744ed9a1902c01be94c228e89ccbcdba3da27108e1655301a"
     },
     "https://developer.apple.com/tutorials/data/documentation/webkit/webpage/dialogpresenting/handlejavascriptalert(message:initiatedby:).json": {
       "etag": "\"2809-65d55c8914302-df\"",
       "file_path": "documentation/WebKit/webpage/dialogpresenting/handlejavascriptalert(message,initiatedby).md",
       "hash": "5fee9f49042f02032f922648dae7dcf3ec6e5e9c697fe56541fcb3773a5c3bd3"
     },
+    "https://developer.apple.com/tutorials/data/documentation/webkit/webpage/dialogpresenting/handlejavascriptconfirm(message:initiatedby:)-86j9x.json": {
+      "etag": "\"2762-65d55c8914302-df\"",
+      "file_path": "documentation/WebKit/webpage/dialogpresenting/handlejavascriptconfirm(message,initiatedby)-86j9x.md",
+      "hash": "c9378a15cf0b66c63f3fe1ae07c7b426f1412b7265a610a93677dceab12a445e"
+    },
     "https://developer.apple.com/tutorials/data/documentation/webkit/webpage/dialogpresenting/handlejavascriptconfirm(message:initiatedby:).json": {
       "etag": "\"30a1-65d55c8914302-df\"",
       "file_path": "documentation/WebKit/webpage/dialogpresenting/handlejavascriptconfirm(message,initiatedby).md",
       "hash": "1238db5cf9ed9051c5040d04b7ad7ae01f8d3d0e9051939d852dc218c752b9b2"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/webkit/webpage/dialogpresenting/handlejavascriptprompt(message:defaulttext:initiatedby:)-9aik4.json": {
+      "etag": "\"2a00-65d55c8914302-df\"",
+      "file_path": "documentation/WebKit/webpage/dialogpresenting/handlejavascriptprompt(message,defaulttext,initiatedby)-9aik4.md",
+      "hash": "b90040973ac5ce60f88a60864fdfeb1d3a56188edddf98c1e0fe27da59f9e0a6"
     },
     "https://developer.apple.com/tutorials/data/documentation/webkit/webpage/dialogpresenting/handlejavascriptprompt(message:defaulttext:initiatedby:).json": {
       "etag": "\"3536-65d55c8914302-df\"",
@@ -23990,20 +25140,40 @@
       "file_path": "documentation/WebKit/webpage/navigationdeciding.md",
       "hash": "1b9853d91724b41c14d26d71fc224f5c7d6880eeaedb77eeff64b067fce37678"
     },
+    "https://developer.apple.com/tutorials/data/documentation/webkit/webpage/navigationdeciding/decideauthenticationchallengedisposition(for:)-693ex.json": {
+      "etag": "\"3470-65d55c8980747-df\"",
+      "file_path": "documentation/WebKit/webpage/navigationdeciding/decideauthenticationchallengedisposition(for)-693ex.md",
+      "hash": "8c1ac7d31a8ae972b59f575cc2849de668948eeabadd40e27a69e0307b7831b9"
+    },
     "https://developer.apple.com/tutorials/data/documentation/webkit/webpage/navigationdeciding/decideauthenticationchallengedisposition(for:).json": {
       "etag": "\"3cf4-65d55c8980747-df\"",
       "file_path": "documentation/WebKit/webpage/navigationdeciding/decideauthenticationchallengedisposition(for).md",
       "hash": "54b12de1c31cd59677cc218b258307c383f4819e0d0215c1620da329b8e557bf"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/webkit/webpage/navigationdeciding/decidepolicy(for:)-6v2aq.json": {
+      "etag": "\"23e6-65d55c8980747-df\"",
+      "file_path": "documentation/WebKit/webpage/navigationdeciding/decidepolicy(for)-6v2aq.md",
+      "hash": "560ca4eddeb3eacbd50edbd0700ba35b43bac177797e39d9dfba81358945111d"
     },
     "https://developer.apple.com/tutorials/data/documentation/webkit/webpage/navigationdeciding/decidepolicy(for:).json": {
       "etag": "\"2b35-65d55c8980747-df\"",
       "file_path": "documentation/WebKit/webpage/navigationdeciding/decidepolicy(for).md",
       "hash": "03544682c88123269f379e057e72f91ea250e7c37120cfb1d3073edc75024268"
     },
+    "https://developer.apple.com/tutorials/data/documentation/webkit/webpage/navigationdeciding/decidepolicy(for:preferences:)-3lqmr.json": {
+      "etag": "\"2bb9-65d55c8980747-df\"",
+      "file_path": "documentation/WebKit/webpage/navigationdeciding/decidepolicy(for,preferences)-3lqmr.md",
+      "hash": "bdc6c724641b62bb15bf8f2987cfbcb5cbd22ec538ec1580d82ecca9a85b7fdc"
+    },
     "https://developer.apple.com/tutorials/data/documentation/webkit/webpage/navigationdeciding/decidepolicy(for:preferences:).json": {
       "etag": "\"367c-65d55c8980747-df\"",
       "file_path": "documentation/WebKit/webpage/navigationdeciding/decidepolicy(for,preferences).md",
       "hash": "d5088ba74312b648eb62b916fbf3a2c563c5da2c94bbbf847f84b79baeef1cd4"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/webkit/webpage/navigationdeciding/willsubmit(forminfo:)-1wa4u.json": {
+      "etag": "\"1b34-65d55c8980747-df\"",
+      "file_path": "documentation/WebKit/webpage/navigationdeciding/willsubmit(forminfo)-1wa4u.md",
+      "hash": "f1f6e8a7b5b4309c194808b56263683cdbcdfaa04f35df9ccbd1ed7b0c1667cd"
     },
     "https://developer.apple.com/tutorials/data/documentation/webkit/webpage/navigationdeciding/willsubmit(forminfo:).json": {
       "etag": "\"2378-65d55c8980747-df\"",
@@ -24495,6 +25665,11 @@
       "file_path": "documentation/WebKit/webpreferences/usespagecache.md",
       "hash": "e6362f76830df362c3621a118103c54964f78edff6d52b8b4abc5107f0ce952c"
     },
+    "https://developer.apple.com/tutorials/data/documentation/webkit/webpreferenceschangednotification.json": {
+      "etag": "\"5f7f-65d55c86f449b-df\"",
+      "file_path": "documentation/WebKit/webpreferenceschangednotification.md",
+      "hash": "b93c7c5fd3757870cfe13ba3afae8951d52f4b9e622e137a1a3f9ac825e5f136"
+    },
     "https://developer.apple.com/tutorials/data/documentation/webkit/webresource.json": {
       "etag": "\"690d-65d55c8193a7d-df\"",
       "file_path": "documentation/WebKit/webresource.md",
@@ -24775,6 +25950,26 @@
       "file_path": "documentation/WebKit/webuidelegate/webview(_,willperform,from,with).md",
       "hash": "ca29d49acd905ac4fa8b0744d5e5005918f65d10811809d224ff288e6bbf18e3"
     },
+    "https://developer.apple.com/tutorials/data/documentation/webkit/webuidelegate/webview:runjavascriptalertpanelwithmessage:.json": {
+      "etag": "\"5e8e-65d55c861be42-df\"",
+      "file_path": "documentation/WebKit/webuidelegate/webview_runjavascriptalertpanelwithmessage_.md",
+      "hash": "563ca1e02ae049eba23dadbaaae4882faaf254d6fe91e29d1d4fd5735bb12c99"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/webkit/webuidelegate/webview:runjavascriptconfirmpanelwithmessage:.json": {
+      "etag": "\"6608-65d55c861be42-df\"",
+      "file_path": "documentation/WebKit/webuidelegate/webview_runjavascriptconfirmpanelwithmessage_.md",
+      "hash": "952555ceaa46b5e817ff6d034f139aa67eb1aaf9f9d5e41cd16011eb2829d03e"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/webkit/webuidelegate/webview:runjavascripttextinputpanelwithprompt:defaulttext:.json": {
+      "etag": "\"61ab-65d55c85f83ba-df\"",
+      "file_path": "documentation/WebKit/webuidelegate/webview_runjavascripttextinputpanelwithprompt_defaulttext_.md",
+      "hash": "1480e0b9da74e68234579fa1d03378f322fbc100852b9536024457f386fb7b64"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/webkit/webuidelegate/webview:setcontentrect:.json": {
+      "etag": "\"3aca-65d55c861be42-df\"",
+      "file_path": "documentation/WebKit/webuidelegate/webview_setcontentrect_.md",
+      "hash": "8b44a4707bb45eeaab4a4952afe7ea0d7d3adee172e8919d3f0a323a114b9845"
+    },
     "https://developer.apple.com/tutorials/data/documentation/webkit/webuidelegate/webviewaretoolbarsvisible(_:).json": {
       "etag": "\"4c56-65d55c85f83ba-df\"",
       "file_path": "documentation/WebKit/webuidelegate/webviewaretoolbarsvisible(_).md",
@@ -24784,6 +25979,11 @@
       "etag": "\"46ec-65d55c85f83ba-df\"",
       "file_path": "documentation/WebKit/webuidelegate/webviewclose(_).md",
       "hash": "62ec522c862489f52c2c94b68799693cc06a8259805702c954bf2838ab7867ee"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/webkit/webuidelegate/webviewcontentrect:.json": {
+      "etag": "\"2a60-65d55c861be42-df\"",
+      "file_path": "documentation/WebKit/webuidelegate/webviewcontentrect_.md",
+      "hash": "730ca60b3b38aa736ab5c3d190c6850f154eb1898f7ea5cb6fcd284ca8be0084"
     },
     "https://developer.apple.com/tutorials/data/documentation/webkit/webuidelegate/webviewfirstresponder(_:).json": {
       "etag": "\"39ad-65d55c861be42-df\"",
@@ -24849,6 +26049,11 @@
       "etag": "\"149f-65d55c85941e6-df\"",
       "file_path": "documentation/WebKit/webundefined/init(coder).md",
       "hash": "03ad0225a496a6e8becb0f9baa1fe2944cf6d4fadd0f0ff459abd1039de5318c"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/webkit/webundefined/undefined.json": {
+      "etag": "\"14e3-65d55c85941e6-df\"",
+      "file_path": "documentation/WebKit/webundefined/undefined.md",
+      "hash": "964dae4540db269ccb1fc8ea36e1c59eeaa8ed5d17a9c5ce4ba822c2a1581f32"
     },
     "https://developer.apple.com/tutorials/data/documentation/webkit/webview-swift.class.json": {
       "etag": "\"37309-65d55c8151394-df\"",
@@ -25535,6 +26740,31 @@
       "file_path": "documentation/WebKit/webview-swift.struct/magnificationgesturesbehavior/enabled.md",
       "hash": "7eddefc405f8fbe4b2a18b2bec1e57644bb2be4b9f40f8b4f41b0e4eebaa121a"
     },
+    "https://developer.apple.com/tutorials/data/documentation/webkit/webviewdidbegineditingnotification.json": {
+      "etag": "\"22c7-65d55c861be42-df\"",
+      "file_path": "documentation/WebKit/webviewdidbegineditingnotification.md",
+      "hash": "98234608b16206b4a57b0db3600b5a87e15fb82904bfed6b13dcb78f5ec34f4e"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/webkit/webviewdidchangenotification.json": {
+      "etag": "\"22a5-65d55c84724d6-df\"",
+      "file_path": "documentation/WebKit/webviewdidchangenotification.md",
+      "hash": "ac52d89a488fa3f7eb6f15c6d2ea0a2e7b2ee5a490edb8006405c490a8df2bcb"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/webkit/webviewdidchangeselectionnotification.json": {
+      "etag": "\"22ad-65d55c88bd64f-df\"",
+      "file_path": "documentation/WebKit/webviewdidchangeselectionnotification.md",
+      "hash": "b4a832c26f0e8ecc79ee12a4b1f5d92b9c1ed1bf1c236461298700994f50374e"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/webkit/webviewdidchangetypingstylenotification.json": {
+      "etag": "\"2784-65d55c86cea4d-df\"",
+      "file_path": "documentation/WebKit/webviewdidchangetypingstylenotification.md",
+      "hash": "c71233ff8c1fd00a395c9db707d883f342438432be509962c933b861872ccdc5"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/webkit/webviewdidendeditingnotification.json": {
+      "etag": "\"22b2-65d55c88bd64f-df\"",
+      "file_path": "documentation/WebKit/webviewdidendeditingnotification.md",
+      "hash": "66b28ac76a48182ca4e1131cc718aaca7430ce163e37b7f394ba5165fea24ada"
+    },
     "https://developer.apple.com/tutorials/data/documentation/webkit/webviewimmersiveenvironmentview.json": {
       "etag": "\"27b9-65d55c80bae70-df\"",
       "file_path": "documentation/WebKit/webviewimmersiveenvironmentview.md",
@@ -25575,6 +26805,61 @@
       "file_path": "documentation/WebKit/webviewinsertaction/typed.md",
       "hash": "85bd5540b3b365950daf995884832004336bca829163a30176d77632d8c20f63"
     },
+    "https://developer.apple.com/tutorials/data/documentation/webkit/webviewprogressestimatechangednotification.json": {
+      "etag": "\"28b4-65d55c839507d-df\"",
+      "file_path": "documentation/WebKit/webviewprogressestimatechangednotification.md",
+      "hash": "e544af8b085009634cf9faccbebe30373d7defda6f8e6bfd00d3a2940dfeb81a"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/webkit/webviewprogressfinishednotification.json": {
+      "etag": "\"2768-65d55c8248aad-df\"",
+      "file_path": "documentation/WebKit/webviewprogressfinishednotification.md",
+      "hash": "fb9f26056119435a69019661675f5a49deeaedf08b4f9dbc0140e81aba5f5bb8"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/webkit/webviewprogressstartednotification.json": {
+      "etag": "\"2789-65d55c866c3d9-df\"",
+      "file_path": "documentation/WebKit/webviewprogressstartednotification.md",
+      "hash": "a13ac7c45a237ac2c4095fdf55dda6daec3bbb00c896a4b718fa87bede763e79"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/webkit/wk_extern.json": {
+      "etag": "\"2058-65d55c8151394-df\"",
+      "file_path": "documentation/WebKit/wk_extern.md",
+      "hash": "6fb3ecef201d1b0d8e48cbb8bb9caa80a10266c826c3451fb22ab3cadc3be035"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/webkit/wk_header_audit_begin.json": {
+      "etag": "\"20a0-65d55c88eb1eb-df\"",
+      "file_path": "documentation/WebKit/wk_header_audit_begin.md",
+      "hash": "d92d4f4802d28c8308524a02c6cdb211f20ec0291970a2db75f69ac73ba6400f"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/webkit/wk_header_audit_end.json": {
+      "etag": "\"2094-65d55c8651098-df\"",
+      "file_path": "documentation/WebKit/wk_header_audit_end.md",
+      "hash": "c128b26aaecaa4c1a3d690e6fa2a9901b00db3542471e7fb0a592e9cd24ee235"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/webkit/wk_nullable_result.json": {
+      "etag": "\"208e-65d55c8326652-df\"",
+      "file_path": "documentation/WebKit/wk_nullable_result.md",
+      "hash": "a6db3a5ab97668bd35425bb1675ffd29b14480d3c543c62c6c024beae3da410f"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/webkit/wk_swift_async.json": {
+      "etag": "\"2095-65d55c84724d6-df\"",
+      "file_path": "documentation/WebKit/wk_swift_async.md",
+      "hash": "1f95e002a7957961ac6a35d423c7b70ddb6244690a109b0357fd1dc2d8611823"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/webkit/wk_swift_async_name.json": {
+      "etag": "\"20b3-65d55c8151394-df\"",
+      "file_path": "documentation/WebKit/wk_swift_async_name.md",
+      "hash": "fcfad9443c43fcb1528afa2f3f485f7e24a091f9bfc2f695d25e2802d721d51e"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/webkit/wk_swift_async_throws_on_false.json": {
+      "etag": "\"20f5-65d55c8248aad-df\"",
+      "file_path": "documentation/WebKit/wk_swift_async_throws_on_false.md",
+      "hash": "c5830a056ae1456a1eb997a31e964ea65bc0083e58ef91f6b1cfebc925d826ed"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/webkit/wk_swift_ui_actor.json": {
+      "etag": "\"2088-65d55c86cea4d-df\"",
+      "file_path": "documentation/WebKit/wk_swift_ui_actor.md",
+      "hash": "c48673edc985508cc3483e239f66fccef02ffab95df51b14a328d2a8c71c684c"
+    },
     "https://developer.apple.com/tutorials/data/documentation/webkit/wkaudiovisualmediatypes.json": {
       "etag": "\"5b4c-65d55c87a4366-df\"",
       "file_path": "documentation/WebKit/wkaudiovisualmediatypes.md",
@@ -25599,6 +26884,11 @@
       "etag": "\"2871-65d55c85f83ba-df\"",
       "file_path": "documentation/WebKit/wkaudiovisualmediatypes/video.md",
       "hash": "b91bda5720bc941eb5ede231124cda41ecb639d0748d1b9b22d9f2af1a96a3a6"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/webkit/wkaudiovisualmediatypes/wkaudiovisualmediatypenone.json": {
+      "etag": "\"1f56-65d55c85cd2d2-df\"",
+      "file_path": "documentation/WebKit/wkaudiovisualmediatypes/wkaudiovisualmediatypenone.md",
+      "hash": "733d6e3fd2b7b1565ed70e85b81913c2090fd2f3a89f254252f75d334fa42633"
     },
     "https://developer.apple.com/tutorials/data/documentation/webkit/wkbackforwardlist.json": {
       "etag": "\"766f-65d55c86f449b-df\"",
@@ -25844,6 +27134,11 @@
       "etag": "\"41ad-65d55c8980747-df\"",
       "file_path": "documentation/WebKit/wkdatadetectortypes/trackingnumber.md",
       "hash": "458a3b3efb1b77edbfdbefd8ea80655e1244be6efd49b323347dbb3a0375d15e"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/webkit/wkdatadetectortypes/wkdatadetectortypenone.json": {
+      "etag": "\"36ba-65d55c8980747-df\"",
+      "file_path": "documentation/WebKit/wkdatadetectortypes/wkdatadetectortypenone.md",
+      "hash": "562cbf53e1dd831052ab6ca8ff15dff7f3eec0e6c7a09afabee94ddc22f5508e"
     },
     "https://developer.apple.com/tutorials/data/documentation/webkit/wkdialogresult.json": {
       "etag": "\"5e75-65d55c85cd2d2-df\"",
@@ -26774,6 +28069,11 @@
       "file_path": "documentation/WebKit/wkpdfconfiguration/rect-2a0vp.md",
       "hash": "aac65d86705b6dc77f9efc092088f345fe32927cc1679182b20314e08b03f4c4"
     },
+    "https://developer.apple.com/tutorials/data/documentation/webkit/wkpdfconfiguration/rect-3xww9.json": {
+      "etag": "\"1d98-65d55c837b61b-df\"",
+      "file_path": "documentation/WebKit/wkpdfconfiguration/rect-3xww9.md",
+      "hash": "bc7eca01519747aaa9b88832ac36df7511d8e378008590850f87f0bb60700252"
+    },
     "https://developer.apple.com/tutorials/data/documentation/webkit/wkpermissiondecision.json": {
       "etag": "\"51c0-65d55c86cea4d-df\"",
       "file_path": "documentation/WebKit/wkpermissiondecision.md",
@@ -27264,6 +28564,11 @@
       "file_path": "documentation/WebKit/wkusercontentcontroller/addbuffer(_,name,to).md",
       "hash": "6d7f25bb2bb8ccd4eca3c3855e10a7b5b6952effd34abe5ef5ac5d9d0aefe78c"
     },
+    "https://developer.apple.com/tutorials/data/documentation/webkit/wkusercontentcontroller/addbuffer:name:contentworld:.json": {
+      "etag": "\"21e6-65d55c80bae70-df\"",
+      "file_path": "documentation/WebKit/wkusercontentcontroller/addbuffer_name_contentworld_.md",
+      "hash": "df89212117da90be2c97c9c1d54ba299d4482dd51ee4878c20affd0441919f36"
+    },
     "https://developer.apple.com/tutorials/data/documentation/webkit/wkusercontentcontroller/addscriptmessagehandler(_:contentworld:name:).json": {
       "etag": "\"747b-65d55c80bae70-df\"",
       "file_path": "documentation/WebKit/wkusercontentcontroller/addscriptmessagehandler(_,contentworld,name).md",
@@ -27308,6 +28613,11 @@
       "etag": "\"228e-65d55c80bae70-df\"",
       "file_path": "documentation/WebKit/wkusercontentcontroller/removebuffer(named,from).md",
       "hash": "927829eaf70ea6b7b51213e9b06eaa82e49c605c121aa6a69beaff56489b9cbc"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/webkit/wkusercontentcontroller/removebufferwithname:contentworld:.json": {
+      "etag": "\"1c43-65d55c80bae70-df\"",
+      "file_path": "documentation/WebKit/wkusercontentcontroller/removebufferwithname_contentworld_.md",
+      "hash": "fa1d3c8689034cba6c11486e16716e62478bfc5ec33c0c02113b9488f033788f"
     },
     "https://developer.apple.com/tutorials/data/documentation/webkit/wkusercontentcontroller/removescriptmessagehandler(forname:).json": {
       "etag": "\"6879-65d55c80bae70-df\"",
@@ -27604,6 +28914,11 @@
       "file_path": "documentation/WebKit/wkwebextension/datarecord/error/unknown.md",
       "hash": "6375c2803ddcde9b2597dff7262a768eccbdc70438b5493c15a1d4bb29879dfe"
     },
+    "https://developer.apple.com/tutorials/data/documentation/webkit/wkwebextension/datarecord/errordomain.json": {
+      "etag": "\"28f3-65d55c8517a87-df\"",
+      "file_path": "documentation/WebKit/wkwebextension/datarecord/errordomain.md",
+      "hash": "f34915cc65b87a32ec447aea717371d822828008b3e183537675046c4da220bb"
+    },
     "https://developer.apple.com/tutorials/data/documentation/webkit/wkwebextension/datarecord/errors.json": {
       "etag": "\"21c5-65d55c84f86a7-df\"",
       "file_path": "documentation/WebKit/wkwebextension/datarecord/errors.md",
@@ -27789,10 +29104,25 @@
       "file_path": "documentation/WebKit/wkwebextension/error/unsupportedmanifestversion.md",
       "hash": "6b39cf25b6c98c43b96711220b41e12665f74100084a4dbbf68176339380582d"
     },
+    "https://developer.apple.com/tutorials/data/documentation/webkit/wkwebextension/errordomain.json": {
+      "etag": "\"21cb-65d55c856fc62-df\"",
+      "file_path": "documentation/WebKit/wkwebextension/errordomain.md",
+      "hash": "bf5d9893032b7a7c91d2b50b3ad10f7c51cdd63cbdf60e32aadd6b404c5e6107"
+    },
     "https://developer.apple.com/tutorials/data/documentation/webkit/wkwebextension/errors.json": {
       "etag": "\"1f7a-65d55c84f86a7-df\"",
       "file_path": "documentation/WebKit/wkwebextension/errors.md",
       "hash": "2e55d6e0fd342f88194d8fb6b0d20310b53bd2049daa62bbe4e8e2ed3190f8bd"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/webkit/wkwebextension/extensionwithappextensionbundle:completionhandler:.json": {
+      "etag": "\"20b4-65d55c84df8e2-df\"",
+      "file_path": "documentation/WebKit/wkwebextension/extensionwithappextensionbundle_completionhandler_.md",
+      "hash": "53f8f300ba316c42f6e7c9bd3b729b8533819d24dded2c0ae6cc0297e1dbf514"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/webkit/wkwebextension/extensionwithresourcebaseurl:completionhandler:.json": {
+      "etag": "\"2050-65d55c84f86a7-df\"",
+      "file_path": "documentation/WebKit/wkwebextension/extensionwithresourcebaseurl_completionhandler_.md",
+      "hash": "69a992dc847fb06c98f76cd3fb930ab547c7143a6d643f449e3aad65a462c811"
     },
     "https://developer.apple.com/tutorials/data/documentation/webkit/wkwebextension/hasbackgroundcontent.json": {
       "etag": "\"20a6-65d55c84f86a7-df\"",
@@ -28103,6 +29433,11 @@
       "etag": "\"25e3-65d55c84f86a7-df\"",
       "file_path": "documentation/WebKit/wkwebextension/messageport/error/unknown.md",
       "hash": "fd224e6667bb97f74862c58cceb203e7c594e7e9c0bb2d9d168831fc5fd3f5d1"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/webkit/wkwebextension/messageport/errordomain.json": {
+      "etag": "\"2807-65d55c84f86a7-df\"",
+      "file_path": "documentation/WebKit/wkwebextension/messageport/errordomain.md",
+      "hash": "af791f578d3eea946524ac29dff676131554245afbf830b7ccda13fc1dc788c1"
     },
     "https://developer.apple.com/tutorials/data/documentation/webkit/wkwebextension/messageport/isdisconnected.json": {
       "etag": "\"2458-65d55c84f86a7-df\"",
@@ -28469,6 +29804,11 @@
       "file_path": "documentation/WebKit/wkwebextensioncontext/commands.md",
       "hash": "31af2b96403437c12d5cf09f00594f52fd805db47b544b036e115aa45ec2f858"
     },
+    "https://developer.apple.com/tutorials/data/documentation/webkit/wkwebextensioncontext/contextforextension:.json": {
+      "etag": "\"17d9-65d55c81d432b-df\"",
+      "file_path": "documentation/WebKit/wkwebextensioncontext/contextforextension_.md",
+      "hash": "d45f8c32c2791f4ee1ee6ccb8f0cf1c1ab1e8ef7f0ef3c86fef70a868648e347"
+    },
     "https://developer.apple.com/tutorials/data/documentation/webkit/wkwebextensioncontext/currentpermissionmatchpatterns.json": {
       "etag": "\"3296-65d55c8193a7d-df\"",
       "file_path": "documentation/WebKit/wkwebextensioncontext/currentpermissionmatchpatterns.md",
@@ -28484,15 +29824,30 @@
       "file_path": "documentation/WebKit/wkwebextensioncontext/deniedpermissionmatchpatterns.md",
       "hash": "1f1938d46143292f82be5945bdad9d3409efb156936207f3443769fe38c934e1"
     },
+    "https://developer.apple.com/tutorials/data/documentation/webkit/wkwebextensioncontext/deniedpermissionmatchpatternswereremovednotification.json": {
+      "etag": "\"64aa-65d55c81b0aed-df\"",
+      "file_path": "documentation/WebKit/wkwebextensioncontext/deniedpermissionmatchpatternswereremovednotification.md",
+      "hash": "de2ddc6f97b62aaa669c0393db4357ff205f20c75097a6ff2d8bf9cc51d23c91"
+    },
     "https://developer.apple.com/tutorials/data/documentation/webkit/wkwebextensioncontext/deniedpermissions.json": {
       "etag": "\"3fcf-65d55c8193a7d-df\"",
       "file_path": "documentation/WebKit/wkwebextensioncontext/deniedpermissions.md",
       "hash": "1e8f3b5685c6ee10112a18f6aab5b489ff2c80e3e9a51db00d54b5fa4a1dd03c"
     },
+    "https://developer.apple.com/tutorials/data/documentation/webkit/wkwebextensioncontext/deniedpermissionswereremovednotification.json": {
+      "etag": "\"6424-65d55c81d432b-df\"",
+      "file_path": "documentation/WebKit/wkwebextensioncontext/deniedpermissionswereremovednotification.md",
+      "hash": "b9fd6be6810d8034d3ff234b07f965f49343df569ad9ce235b68222e3d8b842b"
+    },
     "https://developer.apple.com/tutorials/data/documentation/webkit/wkwebextensioncontext/didactivatetab(_:previousactivetab:).json": {
       "etag": "\"220e-65d55c81d432b-df\"",
       "file_path": "documentation/WebKit/wkwebextensioncontext/didactivatetab(_,previousactivetab).md",
       "hash": "c111acb4d29d5a389c18cfc014980c18a3a0cce2110d4c6b81caaba473617627"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/webkit/wkwebextensioncontext/didactivatetab:previousactivetab:.json": {
+      "etag": "\"16db-65d55c8193a7d-df\"",
+      "file_path": "documentation/WebKit/wkwebextensioncontext/didactivatetab_previousactivetab_.md",
+      "hash": "951fe85320d2fa499acc1da827f5ba5cb173c89b9e73aa69136c009905e7f90b"
     },
     "https://developer.apple.com/tutorials/data/documentation/webkit/wkwebextensioncontext/didchangetabproperties(_:for:).json": {
       "etag": "\"360d-65d55c81f1044-df\"",
@@ -28503,6 +29858,11 @@
       "etag": "\"2d72-65d55c81d432b-df\"",
       "file_path": "documentation/WebKit/wkwebextensioncontext/didclosetab(_,windowisclosing).md",
       "hash": "43bf7d4a16fc2b0d0887defe0ec6a8dbb19d3278e0b2f97dd23eeca030fa7551"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/webkit/wkwebextensioncontext/didclosetab:windowisclosing:.json": {
+      "etag": "\"2289-65d55c81b0aed-df\"",
+      "file_path": "documentation/WebKit/wkwebextensioncontext/didclosetab_windowisclosing_.md",
+      "hash": "0c85c759064ee90c25e8c1941420dcd528c227f5617e65764bd96f6ab4066b7f"
     },
     "https://developer.apple.com/tutorials/data/documentation/webkit/wkwebextensioncontext/didclosewindow(_:).json": {
       "etag": "\"2f93-65d55c81b0aed-df\"",
@@ -28523,6 +29883,11 @@
       "etag": "\"2aea-65d55c81b0aed-df\"",
       "file_path": "documentation/WebKit/wkwebextensioncontext/didmovetab(_,from,in).md",
       "hash": "e251799d7b4ba9e32097e174d5d5ade904e358e702f8cdb44b28fc818a7aca24"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/webkit/wkwebextensioncontext/didmovetab:fromindex:inwindow:.json": {
+      "etag": "\"1a9e-65d55c81b0aed-df\"",
+      "file_path": "documentation/WebKit/wkwebextensioncontext/didmovetab_fromindex_inwindow_.md",
+      "hash": "4ed580d7cca65b5d1528a77a46a834bc645cbea35f7bd00563675ac13f1787c8"
     },
     "https://developer.apple.com/tutorials/data/documentation/webkit/wkwebextensioncontext/didopentab(_:).json": {
       "etag": "\"2c4c-65d55c81b0aed-df\"",
@@ -28624,10 +29989,20 @@
       "file_path": "documentation/WebKit/wkwebextensioncontext/error/unknown.md",
       "hash": "446335bade9ac40213d8f0c63c9d2d91132749cf3c20c5ebdfd87d4d36538d53"
     },
+    "https://developer.apple.com/tutorials/data/documentation/webkit/wkwebextensioncontext/errordomain.json": {
+      "etag": "\"5aa8-65d55c81f1044-df\"",
+      "file_path": "documentation/WebKit/wkwebextensioncontext/errordomain.md",
+      "hash": "57c6574e4f5b79425775bf73db91f5bae7e855e5800afe61ee43071d0423ec4f"
+    },
     "https://developer.apple.com/tutorials/data/documentation/webkit/wkwebextensioncontext/errors.json": {
       "etag": "\"1e49-65d55c81b0aed-df\"",
       "file_path": "documentation/WebKit/wkwebextensioncontext/errors.md",
       "hash": "857fe53ca50824c51ebadd21e7a85264c49692d56f4be7cbab35a23d7447e259"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/webkit/wkwebextensioncontext/errorsdidupdatenotification.json": {
+      "etag": "\"639d-65d55c81b0aed-df\"",
+      "file_path": "documentation/WebKit/wkwebextensioncontext/errorsdidupdatenotification.md",
+      "hash": "c68940f3c6082594aaa33150d2a263390a22104ee5250f326b9358f8c0d786a0"
     },
     "https://developer.apple.com/tutorials/data/documentation/webkit/wkwebextensioncontext/focusedwindow.json": {
       "etag": "\"3242-65d55c81b0aed-df\"",
@@ -28639,10 +30014,20 @@
       "file_path": "documentation/WebKit/wkwebextensioncontext/grantedpermissionmatchpatterns.md",
       "hash": "24160e9b6f0fafee7b9df208459fe719367254cb505d70555f0db62c9f6b46d9"
     },
+    "https://developer.apple.com/tutorials/data/documentation/webkit/wkwebextensioncontext/grantedpermissionmatchpatternswereremovednotification.json": {
+      "etag": "\"64af-65d55c81f1044-df\"",
+      "file_path": "documentation/WebKit/wkwebextensioncontext/grantedpermissionmatchpatternswereremovednotification.md",
+      "hash": "e8fb233841a519344dc95b9ef151674bb437bb98f1ef8365d74bb3105985d840"
+    },
     "https://developer.apple.com/tutorials/data/documentation/webkit/wkwebextensioncontext/grantedpermissions.json": {
       "etag": "\"3fe5-65d55c81b0aed-df\"",
       "file_path": "documentation/WebKit/wkwebextensioncontext/grantedpermissions.md",
       "hash": "da0facbb2e6af455e4535223076e0ea5665d13b299d0eb123eea2fb7d4443ea5"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/webkit/wkwebextensioncontext/grantedpermissionswereremovednotification.json": {
+      "etag": "\"6429-65d55c81d432b-df\"",
+      "file_path": "documentation/WebKit/wkwebextensioncontext/grantedpermissionswereremovednotification.md",
+      "hash": "29c3b2186aa714371d79eac75697ab2a3921ddc04b01dfb07148e62750cd06fd"
     },
     "https://developer.apple.com/tutorials/data/documentation/webkit/wkwebextensioncontext/hasaccess(to:).json": {
       "etag": "\"5762-65d55c8193a7d-df\"",
@@ -28809,6 +30194,16 @@
       "file_path": "documentation/WebKit/wkwebextensioncontext/performcommand(for)-8btj0.md",
       "hash": "9e713bac3eeee305a057a6716db0ebf280c6190d70c771f1a87c48fa8f3a734a"
     },
+    "https://developer.apple.com/tutorials/data/documentation/webkit/wkwebextensioncontext/permissionmatchpatternsweredeniednotification.json": {
+      "etag": "\"6456-65d55c8193a7d-df\"",
+      "file_path": "documentation/WebKit/wkwebextensioncontext/permissionmatchpatternsweredeniednotification.md",
+      "hash": "59719505ae123624c45ded93676b3b04bf33ad64f63cad2cdc178e20a176be0c"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/webkit/wkwebextensioncontext/permissionmatchpatternsweregrantednotification.json": {
+      "etag": "\"6461-65d55c81b0aed-df\"",
+      "file_path": "documentation/WebKit/wkwebextensioncontext/permissionmatchpatternsweregrantednotification.md",
+      "hash": "8bac59e537846f7afc5a92dceea380c5155af8b297a66fa446635a0396e8921e"
+    },
     "https://developer.apple.com/tutorials/data/documentation/webkit/wkwebextensioncontext/permissionstatus(for:)-3qq2w.json": {
       "etag": "\"4557-65d55c8193a7d-df\"",
       "file_path": "documentation/WebKit/wkwebextensioncontext/permissionstatus(for)-3qq2w.md",
@@ -28883,6 +30278,16 @@
       "etag": "\"1e7e-65d55c81b0aed-df\"",
       "file_path": "documentation/WebKit/wkwebextensioncontext/permissionstatus/unknown.md",
       "hash": "9a136ff85e5e0aa3ebcd970d4016831fbbfadc83c68a1042f5a9c036f504767c"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/webkit/wkwebextensioncontext/permissionsweredeniednotification.json": {
+      "etag": "\"63d0-65d55c81d432b-df\"",
+      "file_path": "documentation/WebKit/wkwebextensioncontext/permissionsweredeniednotification.md",
+      "hash": "47ca75d35572b8a161b4ca968aca52851c2ea0cc70a7a1c2f70570e980d3be5a"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/webkit/wkwebextensioncontext/permissionsweregrantednotification.json": {
+      "etag": "\"63db-65d55c81d432b-df\"",
+      "file_path": "documentation/WebKit/wkwebextensioncontext/permissionsweregrantednotification.md",
+      "hash": "4482d9a1c683d521b0e93deaba5ff47fb14ffe740344509ce60d1a10a0513d11"
     },
     "https://developer.apple.com/tutorials/data/documentation/webkit/wkwebextensioncontext/setpermissionstatus(_:for:)-4u95f.json": {
       "etag": "\"5f56-65d55c81b0aed-df\"",
@@ -29014,6 +30419,11 @@
       "file_path": "documentation/WebKit/wkwebextensioncontroller/didactivatetab(_,previousactivetab).md",
       "hash": "01f63760d2aa41e2e2bf0c7b0d3c111edc254f0219749d1b7354892b5a66b629"
     },
+    "https://developer.apple.com/tutorials/data/documentation/webkit/wkwebextensioncontroller/didactivatetab:previousactivetab:.json": {
+      "etag": "\"1740-65d55c87e0e1c-df\"",
+      "file_path": "documentation/WebKit/wkwebextensioncontroller/didactivatetab_previousactivetab_.md",
+      "hash": "7f0a5698cb7964ec05f42b513cb0dc32783dcd7581cecebde61b1b0c52591b01"
+    },
     "https://developer.apple.com/tutorials/data/documentation/webkit/wkwebextensioncontroller/didchangetabproperties(_:for:).json": {
       "etag": "\"36c3-65d55c880141c-df\"",
       "file_path": "documentation/WebKit/wkwebextensioncontroller/didchangetabproperties(_,for).md",
@@ -29023,6 +30433,11 @@
       "etag": "\"2973-65d55c880141c-df\"",
       "file_path": "documentation/WebKit/wkwebextensioncontroller/didclosetab(_,windowisclosing).md",
       "hash": "997a204a3864d2753359875617ccce3391d421fc21c2f8aba8d87f0b6039974c"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/webkit/wkwebextensioncontroller/didclosetab:windowisclosing:.json": {
+      "etag": "\"1e8a-65d55c87e0e1c-df\"",
+      "file_path": "documentation/WebKit/wkwebextensioncontroller/didclosetab_windowisclosing_.md",
+      "hash": "c939d7b2ae06044019b3255d12cbf3c85c903cc135ab1b7da01d84f27c08bd54"
     },
     "https://developer.apple.com/tutorials/data/documentation/webkit/wkwebextensioncontroller/didclosewindow(_:).json": {
       "etag": "\"2a97-65d55c87e0e1c-df\"",
@@ -29043,6 +30458,11 @@
       "etag": "\"2b8e-65d55c87e0e1c-df\"",
       "file_path": "documentation/WebKit/wkwebextensioncontroller/didmovetab(_,from,in).md",
       "hash": "025d574a5735a5834431bc12dbade09b71a40d2bbad22870b50bfb9ae0d47736"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/webkit/wkwebextensioncontroller/didmovetab:fromindex:inwindow:.json": {
+      "etag": "\"1b42-65d55c87e0e1c-df\"",
+      "file_path": "documentation/WebKit/wkwebextensioncontroller/didmovetab_fromindex_inwindow_.md",
+      "hash": "a562bb6ecb9134da68acc6ee3a67f9bd2ab8d89670c68905dcb2df2f4bd8ae32"
     },
     "https://developer.apple.com/tutorials/data/documentation/webkit/wkwebextensioncontroller/didopentab(_:).json": {
       "etag": "\"291c-65d55c87e0e1c-df\"",
@@ -29183,6 +30603,21 @@
       "etag": "\"60f1-65d55c85941e6-df\"",
       "file_path": "documentation/WebKit/wkwebextensioncontrollerdelegate/webextensioncontroller(_,sendmessage,toapplicationwithidentifier,for,replyhandler).md",
       "hash": "5ed454b66053dbe1613767d80463466d8a1741c23409588b2f4753ecf0d77bdd"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/webkit/wkwebextensionmatchpattern/matchpatternwithscheme:host:path:.json": {
+      "etag": "\"20a8-65d55c837b61b-df\"",
+      "file_path": "documentation/WebKit/wkwebextensionmatchpattern/matchpatternwithscheme_host_path_.md",
+      "hash": "5300eaa8498d8b4ed6b681c89c19f2b4b321c252a13d22a92a663f92b9d0a563"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/webkit/wkwebextensionmatchpattern/matchpatternwithstring:.json": {
+      "etag": "\"1bbe-65d55c837b61b-df\"",
+      "file_path": "documentation/WebKit/wkwebextensionmatchpattern/matchpatternwithstring_.md",
+      "hash": "e8f18c1e3bb289b99e16b6732d010918c2f895adadd3f7232a5cc214032b7324"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/webkit/wkwebextensionmatchpatternoptions/wkwebextensionmatchpatternoptionsnone.json": {
+      "etag": "\"169a-65d55c8980747-df\"",
+      "file_path": "documentation/WebKit/wkwebextensionmatchpatternoptions/wkwebextensionmatchpatternoptionsnone.md",
+      "hash": "965c0c516b2dd1b5d8c8fdd99ead569dcdd5037826e0770edd55411a6d057eb3"
     },
     "https://developer.apple.com/tutorials/data/documentation/webkit/wkwebextensiontab.json": {
       "etag": "\"14e70-65d55c87c159f-df\"",
@@ -29353,6 +30788,11 @@
       "etag": "\"351c-65d55c8326652-df\"",
       "file_path": "documentation/WebKit/wkwebextensiontab/zoomfactor(for).md",
       "hash": "ca1e8991130e3b8714a8018a3f1fce362d027c5069b8d029394bb0521c20a7aa"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/webkit/wkwebextensiontabchangedproperties/wkwebextensiontabchangedpropertiesnone.json": {
+      "etag": "\"11b8-65d55c8193a7d-df\"",
+      "file_path": "documentation/WebKit/wkwebextensiontabchangedproperties/wkwebextensiontabchangedpropertiesnone.md",
+      "hash": "7d4c64c9801c94b084e67879b494d648add9df25075f8066f3a1e45d7db52538"
     },
     "https://developer.apple.com/tutorials/data/documentation/webkit/wkwebextensionwindow.json": {
       "etag": "\"afc1-65d55c856fc62-df\"",
@@ -29594,6 +31034,11 @@
       "file_path": "documentation/WebKit/wkwebsitedatastore/nonpersistent().md",
       "hash": "3a7ac00e40feb71d6c5e2b753a843cc537ddc7dc1ffe170b80c68e4605ced7dc"
     },
+    "https://developer.apple.com/tutorials/data/documentation/webkit/wkwebsitedatastore/proxyconfigurations-6g21z.json": {
+      "etag": "\"1119-65d55c880141c-df\"",
+      "file_path": "documentation/WebKit/wkwebsitedatastore/proxyconfigurations-6g21z.md",
+      "hash": "1288575ba18f2a92f39b31adc52aaaaeb68e6350badd09206bdeb3a0f2ac232a"
+    },
     "https://developer.apple.com/tutorials/data/documentation/webkit/wkwebsitedatastore/proxyconfigurations-cdc1.json": {
       "etag": "\"189d-65d55c880141c-df\"",
       "file_path": "documentation/WebKit/wkwebsitedatastore/proxyconfigurations-cdc1.md",
@@ -29734,6 +31179,10 @@
       "file_path": "documentation/WebKit/wkwebview/callasyncjavascript(_,arguments,in,in,completionhandler).md",
       "hash": "4396c1a2d513e9a8b142726a83312c2c51220b1a9af6c73f756b2c172f083d6c"
     },
+    "https://developer.apple.com/tutorials/data/documentation/webkit/wkwebview/callasyncjavascript:arguments:inframe:incontentworld:completionhandler:.json": {
+      "error": "HTTP 403",
+      "status": "error"
+    },
     "https://developer.apple.com/tutorials/data/documentation/webkit/wkwebview/cameracapturestate.json": {
       "etag": "\"34c9-65d55c84c6412-df\"",
       "file_path": "documentation/WebKit/wkwebview/cameracapturestate.md",
@@ -29779,10 +31228,20 @@
       "file_path": "documentation/WebKit/wkwebview/createpdf(configuration,completionhandler).md",
       "hash": "2298089f10acb92530356b938a04b770ea7dce8e1033cb2cf77a114e9a00f226"
     },
+    "https://developer.apple.com/tutorials/data/documentation/webkit/wkwebview/createpdfwithconfiguration:completionhandler:.json": {
+      "etag": "\"31ee-65d55c84ae1a4-df\"",
+      "file_path": "documentation/WebKit/wkwebview/createpdfwithconfiguration_completionhandler_.md",
+      "hash": "301d80260d807eea87bedd2d9420097066e8c3031bfeb8652949dc651c112269"
+    },
     "https://developer.apple.com/tutorials/data/documentation/webkit/wkwebview/createwebarchivedata(completionhandler:).json": {
       "etag": "\"49cb-65d55c84c6412-df\"",
       "file_path": "documentation/WebKit/wkwebview/createwebarchivedata(completionhandler).md",
       "hash": "ea885a0aa701b463f4b9b21da22a492c21c7e12f6dec38d6caa7b899cfa9b2a5"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/webkit/wkwebview/createwebarchivedatawithcompletionhandler:.json": {
+      "etag": "\"2f99-65d55c84ae1a4-df\"",
+      "file_path": "documentation/WebKit/wkwebview/createwebarchivedatawithcompletionhandler_.md",
+      "hash": "81a4ff3b257433d11d7fe1632925774038af2a7980d82d654eeb0fe0f8949bbe"
     },
     "https://developer.apple.com/tutorials/data/documentation/webkit/wkwebview/customuseragent.json": {
       "etag": "\"4ab7-65d55c84ae1a4-df\"",
@@ -29814,6 +31273,10 @@
       "file_path": "documentation/WebKit/wkwebview/evaluatejavascript(_,in,in,completionhandler).md",
       "hash": "1f7ef85b231e26bcc64770d829241f40fe0bcc7360dca8385fcd33cf58c28fc0"
     },
+    "https://developer.apple.com/tutorials/data/documentation/webkit/wkwebview/evaluatejavascript:inframe:incontentworld:completionhandler:.json": {
+      "error": "HTTP 403",
+      "status": "error"
+    },
     "https://developer.apple.com/tutorials/data/documentation/webkit/wkwebview/fetchdata(of:completionhandler:).json": {
       "etag": "\"3c76-65d55c84ae1a4-df\"",
       "file_path": "documentation/WebKit/wkwebview/fetchdata(of,completionhandler).md",
@@ -29833,6 +31296,11 @@
       "etag": "\"22de-65d55c84ae1a4-df\"",
       "file_path": "documentation/WebKit/wkwebview/findinteraction.md",
       "hash": "964b6f4798eca98c89a423971adab67ebcd2ece7afa36f5e14910bd03b48c91b"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/webkit/wkwebview/findstring:withconfiguration:completionhandler:.json": {
+      "etag": "\"24a5-65d55c84c6412-df\"",
+      "file_path": "documentation/WebKit/wkwebview/findstring_withconfiguration_completionhandler_.md",
+      "hash": "d7140351b6430fb1bee27022da899848abb569ca2a4696f3aceba2b4d4fc37c5"
     },
     "https://developer.apple.com/tutorials/data/documentation/webkit/wkwebview/fullscreenstate-swift.enum.json": {
       "etag": "\"6dd1-65d55c84ae1a4-df\"",
@@ -30044,6 +31512,11 @@
       "file_path": "documentation/WebKit/wkwebview/pauseallmediaplayback(completionhandler).md",
       "hash": "14a3f19c0dfcc14cba606b9981ca0f63bdffe173dfbe19145ea43f370e736e42"
     },
+    "https://developer.apple.com/tutorials/data/documentation/webkit/wkwebview/pauseallmediaplayback:.json": {
+      "etag": "\"37db-65d55c84ae1a4-df\"",
+      "file_path": "documentation/WebKit/wkwebview/pauseallmediaplayback_.md",
+      "hash": "2e55950240baba7420f733aee7d92e4cd14ac32eeb0bb9d2d48789104ef3dcfc"
+    },
     "https://developer.apple.com/tutorials/data/documentation/webkit/wkwebview/pdf(configuration:).json": {
       "etag": "\"3ef9-65d55c84c6412-df\"",
       "file_path": "documentation/WebKit/wkwebview/pdf(configuration).md",
@@ -30084,10 +31557,20 @@
       "file_path": "documentation/WebKit/wkwebview/requestmediaplaybackstate(completionhandler).md",
       "hash": "57ab77dee9fe030a6044d5c172bdfd7f085e37c602f29fbf096c61479a1e9a59"
     },
+    "https://developer.apple.com/tutorials/data/documentation/webkit/wkwebview/requestmediaplaybackstate:.json": {
+      "etag": "\"3e71-65d55c84ae1a4-df\"",
+      "file_path": "documentation/WebKit/wkwebview/requestmediaplaybackstate_.md",
+      "hash": "470113fcd7406927f0bcad62ac364f7ceca314200172ca31c025348e1b4518ec"
+    },
     "https://developer.apple.com/tutorials/data/documentation/webkit/wkwebview/restoredata(_:completionhandler:).json": {
       "etag": "\"3c5d-65d55c84c6412-df\"",
       "file_path": "documentation/WebKit/wkwebview/restoredata(_,completionhandler).md",
       "hash": "c86f656838d215cbd727ef73a96dbe59fb9f578d5dd85e4f462ef7aed78d2ec2"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/webkit/wkwebview/resumeallmediaplayback:.json": {
+      "etag": "\"37e0-65d55c84c6412-df\"",
+      "file_path": "documentation/WebKit/wkwebview/resumeallmediaplayback_.md",
+      "hash": "90aacacff0a2181b6b15ecd0d9c2a41c39bdcf3d766c72e6887c5fd3bd000ad4"
     },
     "https://developer.apple.com/tutorials/data/documentation/webkit/wkwebview/resumedownload(fromresumedata:completionhandler:).json": {
       "etag": "\"415b-65d55c84ae1a4-df\"",
@@ -30143,6 +31626,11 @@
       "etag": "\"33d7-65d55c84ae1a4-df\"",
       "file_path": "documentation/WebKit/wkwebview/stoploading(_).md",
       "hash": "b478c2e7127fe32ef981a958e181bd71877106afe9bb78314b93945476804e6c"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/webkit/wkwebview/suspendallmediaplayback:.json": {
+      "etag": "\"39b2-65d55c84c6412-df\"",
+      "file_path": "documentation/WebKit/wkwebview/suspendallmediaplayback_.md",
+      "hash": "a8b3a22fbae9b771d6ead505cdb174e23abfd3ef09609dc4b28703e321f2afba"
     },
     "https://developer.apple.com/tutorials/data/documentation/webkit/wkwebview/takesnapshot(with:completionhandler:).json": {
       "etag": "\"70d3-65d55c84c6412-df\"",
@@ -30397,8 +31885,8 @@
   },
   "metadata": {
     "render": {
-      "version": 1
+      "version": 2
     },
-    "total_pages": 6079
+    "total_pages": 6377
   }
 }

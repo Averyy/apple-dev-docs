@@ -47,6 +47,10 @@ Instead of providing multiple images with different resolutions, you can provide
   Creates a new template that has a long line of text.
 - [init(textProvider: CLKTextProvider, imageProvider: CLKImageProvider?)](./clkcomplicationtemplateutilitarianlargeflat/init%28textprovider,imageprovider%29.md)
   Creates a new template that has a single row with an image and a long line of text.
+- [+ templateWithTextProvider:](./clkcomplicationtemplateutilitarianlargeflat/templatewithtextprovider_.md)
+  Returns a new template that has a long line of text.
+- [+ templateWithTextProvider:imageProvider:](./clkcomplicationtemplateutilitarianlargeflat/templatewithtextprovider_imageprovider_.md)
+  Returns a new template that has a single row with an image and a long line of text.
 ### Setting the Complication Data
 - [var textProvider: CLKTextProvider](./clkcomplicationtemplateutilitarianlargeflat/textprovider.md)
   The text to display.

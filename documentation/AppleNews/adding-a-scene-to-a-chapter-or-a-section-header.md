@@ -11,22 +11,22 @@ Apple News Format provides animations (see [About Component Animations](./about-
 
 A scene combines animations and behaviors to create special effects that you can use with the headers in `section` and `chapter` components. Apple News Format has two scenes you can use to add interest to your article:
 
-- [`FadingStickyHeader`](https://developer.apple.com/documentation/applenewsformat/fadingstickyheader). Causes the header to briefly “stick” to the top of the screen and then fade to a defined color.
-- [`ParallaxScaleHeader`](https://developer.apple.com/documentation/applenewsformat/parallaxscaleheader). Causes the header to zoom out and scroll more slowly than the user is scrolling, giving the impression of a parallax effect.
+- [`FadingStickyHeader`](../AppleNewsFormat/fadingstickyheader.md). Causes the header to briefly “stick” to the top of the screen and then fade to a defined color.
+- [`ParallaxScaleHeader`](../AppleNewsFormat/parallaxscaleheader.md). Causes the header to zoom out and scroll more slowly than the user is scrolling, giving the impression of a parallax effect.
 
 To add a scene, do the following:
 
-1. In  the components array of your [`Section`](https://developer.apple.com/documentation/applenewsformat/section) or [`Chapter`](https://developer.apple.com/documentation/applenewsformat/chapter), add a [`Header`](https://developer.apple.com/documentation/applenewsformat/header).
-2. In the `scene` property of the section or chapter component, specify which scene you want to use (`fading_sticky_header` or `parallax_scale`). See the example code in [`FadingStickyHeader`](https://developer.apple.com/documentation/applenewsformat/fadingstickyheader).
+1. In  the components array of your [`Section`](../AppleNewsFormat/section.md) or [`Chapter`](../AppleNewsFormat/chapter.md), add a [`Header`](../AppleNewsFormat/header.md).
+2. In the `scene` property of the section or chapter component, specify which scene you want to use (`fading_sticky_header` or `parallax_scale`). See the example code in [`FadingStickyHeader`](../AppleNewsFormat/fadingstickyheader.md).
 
 ## Topics
 
 ### Scene Types
-- [object Scene](https://developer.apple.com/documentation/applenewsformat/scene)
+- [object Scene](../AppleNewsFormat/scene.md)
   A combination of animations and behaviors to use in sections and chapters that have headers.
-- [object FadingStickyHeader](https://developer.apple.com/documentation/applenewsformat/fadingstickyheader)
+- [object FadingStickyHeader](../AppleNewsFormat/fadingstickyheader.md)
   The scene that briefly keeps a header at the top of the screen as the person scrolls through the article.
-- [object ParallaxScaleHeader](https://developer.apple.com/documentation/applenewsformat/parallaxscaleheader)
+- [object ParallaxScaleHeader](../AppleNewsFormat/parallaxscaleheader.md)
   The scene that gives the impression of a parallax effect by zooming out and scrolling slightly more slowly than the person’s action.
 
 ## See Also
@@ -38,29 +38,29 @@ To add a scene, do the following:
   Link to an article by using the article-linking container component.
 - [Displaying Components Side By Side](./displaying-components-side-by-side.md)
   Configure a side-by-side, horizontal arrangement of components for your article.
-- [object Header](https://developer.apple.com/documentation/applenewsformat/header)
+- [object Header](../AppleNewsFormat/header.md)
   The component for defining the top area of an article, chapter, or section.
-- [object Container](https://developer.apple.com/documentation/applenewsformat/container)
+- [object Container](../AppleNewsFormat/container.md)
   Properties shared by all container types.
-- [object Section](https://developer.apple.com/documentation/applenewsformat/section)
+- [object Section](../AppleNewsFormat/section.md)
   The component for organizing an article into sections.
-- [object Chapter](https://developer.apple.com/documentation/applenewsformat/chapter)
+- [object Chapter](../AppleNewsFormat/chapter.md)
   The component for organizing an article into chapters.
-- [object Aside](https://developer.apple.com/documentation/applenewsformat/aside)
+- [object Aside](../AppleNewsFormat/aside.md)
   The component for setting apart content that is not directly related to the article, such as promotional content.
-- [object CollectionDisplay](https://developer.apple.com/documentation/applenewsformat/collectiondisplay)
+- [object CollectionDisplay](../AppleNewsFormat/collectiondisplay.md)
   An object used in any container component type to define how the collection of child components is presented.
-- [object HorizontalStackDisplay](https://developer.apple.com/documentation/applenewsformat/horizontalstackdisplay)
+- [object HorizontalStackDisplay](../AppleNewsFormat/horizontalstackdisplay.md)
   The object for displaying components side by side in a Container component.
-- [object FlexibleSpacer](https://developer.apple.com/documentation/applenewsformat/flexiblespacer)
+- [object FlexibleSpacer](../AppleNewsFormat/flexiblespacer.md)
   The component for redistributing empty space inside a horizontal stack collection.
-- [object Divider](https://developer.apple.com/documentation/applenewsformat/divider)
+- [object Divider](../AppleNewsFormat/divider.md)
   The component for defining a horizontal line to visually divide parts of your article.
-- [object ArticleLink](https://developer.apple.com/documentation/applenewsformat/articlelink)
+- [object ArticleLink](../AppleNewsFormat/articlelink.md)
   The container component for creating a link to an article.
-- [type SupportedArticleIdentifier](https://developer.apple.com/documentation/applenewsformat/supportedarticleidentifier)
+- [type SupportedArticleIdentifier](../AppleNewsFormat/supportedarticleidentifier.md)
   The patterns supported for article identifiers in UUID format.
-- [type PublisherArticleIdentifier](https://developer.apple.com/documentation/applenewsformat/publisherarticleidentifier)
+- [type PublisherArticleIdentifier](../AppleNewsFormat/publisherarticleidentifier.md)
   The identifier provided by the publisher.
 
 

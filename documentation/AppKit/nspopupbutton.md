@@ -60,6 +60,8 @@ Note that while a menu is tracking user input, programmatic changes to the menu,
   The title of the item that was last selected by the user.
 - [var indexOfSelectedItem: Int](./nspopupbutton/indexofselecteditem.md)
   The index of the item that was last selected by the user.
+- [selectedTag](./nspopupbutton/selectedtag.md)
+  The tag of the menu item that was last selected by the user.
 ### Setting the current selection
 - [func select(NSMenuItem?)](./nspopupbutton/select%28_%29.md)
   Selects the specified menu item.
@@ -125,6 +127,15 @@ Note that while a menu is tracking user input, programmatic changes to the menu,
   When the value of this property is `YES`, the selected menu item’s `state` is set to `NSControlStateValueOn`. When the value of this property is `NO`, the menu item’s `state` is not changed. When this property changes, the `state` of the currently selected item is updated appropriately. This property is ignored for pull-down buttons.
 - [var usesItemFromMenu: Bool](./nspopupbutton/usesitemfrommenu.md)
   When `usesItemFromMenu` is `YES`, a pull-down button uses the title of the first menu item and hides the first menu item. A pop-up button uses the title of the currently selected menu. The default value is `YES`.
+### Type Methods
+- [+ popUpButtonWithMenu:target:action:](./nspopupbutton/popupbuttonwithmenu_target_action_.md)
+  Creates a standard pop-up button with a menu, target, and action.
+- [+ pullDownButtonWithImage:menu:](./nspopupbutton/pulldownbuttonwithimage_menu_.md)
+  Creates a standard pull-down button with an image and menu.
+- [+ pullDownButtonWithTitle:image:menu:](./nspopupbutton/pulldownbuttonwithtitle_image_menu_.md)
+  Creates a standard pull-down button with a title, image, and menu.
+- [+ pullDownButtonWithTitle:menu:](./nspopupbutton/pulldownbuttonwithtitle_menu_.md)
+  Creates a standard pull-down button with a title and menu.
 
 ## Relationships
 

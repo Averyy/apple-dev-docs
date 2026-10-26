@@ -115,6 +115,11 @@
       "file_path": "documentation/WatchKit/using-extended-runtime-sessions.md",
       "hash": "dfc2f6dd1d2df8b6a5b4b07b88ac1f680a7c1bc940db81434606431a8fbcd226"
     },
+    "https://developer.apple.com/documentation/watchkit/watchkit-macros": {
+      "etag": "\"ee8-65902848cead5-df\"",
+      "file_path": "documentation/WatchKit/watchkit-macros.md",
+      "hash": "229d059d427deed958ccc1dba682bdeda5f98e587d5ad07110bf95ab4f48b030"
+    },
     "https://developer.apple.com/documentation/watchkit/watchkiterror": {
       "etag": "\"3c7a-65d55e8669e7d-df\"",
       "file_path": "documentation/WatchKit/watchkiterror.md",
@@ -200,6 +205,21 @@
       "file_path": "documentation/WatchKit/watchkiterrordomain.md",
       "hash": "1eabb4a6badd879ed82ade497fa9d25a31ee6a3ef1c19a3a6fe7dea7bdadf0c5"
     },
+    "https://developer.apple.com/documentation/watchkit/wk_available_watchos_only": {
+      "etag": "\"fcd-65d55e854c9fc-df\"",
+      "file_path": "documentation/WatchKit/wk_available_watchos_only.md",
+      "hash": "17ac98368328530f3b0bc4c6b0ee61685d019c8e03dc6e45e6f6fcbd031dfe42"
+    },
+    "https://developer.apple.com/documentation/watchkit/wk_deprecated_watchos": {
+      "etag": "\"1042-65d55e858c326-df\"",
+      "file_path": "documentation/WatchKit/wk_deprecated_watchos.md",
+      "hash": "71b365fba90cb62f827fd483ebcce7939e2ae2efde46afed4b65950c69b7da5f"
+    },
+    "https://developer.apple.com/documentation/watchkit/wk_deprecated_with_replacement": {
+      "etag": "\"107f-65d55e8612efd-df\"",
+      "file_path": "documentation/WatchKit/wk_deprecated_with_replacement.md",
+      "hash": "ad147a634aecf9117eb92a0b4fe7ec658cde2708ed91302223725d183f98aed2"
+    },
     "https://developer.apple.com/documentation/watchkit/wkaccessibilityimageregion": {
       "etag": "\"5b82-65d55e8669e7d-df\"",
       "file_path": "documentation/WatchKit/wkaccessibilityimageregion.md",
@@ -224,6 +244,11 @@
       "etag": "\"43df-65d55e8612efd-df\"",
       "file_path": "documentation/WatchKit/wkaccessibilityisvoiceoverrunning().md",
       "hash": "795c3bcf771a67637b7bb98f3639bd4bc58c1d95a8a702a6b1369a8341318c37"
+    },
+    "https://developer.apple.com/documentation/watchkit/wkaccessibilityreducemotionstatusdidchangenotification": {
+      "etag": "\"1d1b-65d55e854c9fc-df\"",
+      "file_path": "documentation/WatchKit/wkaccessibilityreducemotionstatusdidchangenotification.md",
+      "hash": "92fc723589d5b22536561a65b5305c2454bee0073e180071793ea5cd4f7ba499"
     },
     "https://developer.apple.com/documentation/watchkit/wkaccessibilityvoiceoverstatuschanged": {
       "etag": "\"255e-65d55e85f570f-df\"",
@@ -670,6 +695,16 @@
       "file_path": "documentation/WatchKit/wkaudiofileplayeritem/status.md",
       "hash": "41e4bad6d2244d35b5a73983ef77382ffdf75478d93f999e02478d91b7ca6b82"
     },
+    "https://developer.apple.com/documentation/watchkit/wkaudiofileplayeritemdidplaytoendtimenotification": {
+      "etag": "\"20e6-65d55e8647522-df\"",
+      "file_path": "documentation/WatchKit/wkaudiofileplayeritemdidplaytoendtimenotification.md",
+      "hash": "273552f7c428af07b475f2c99ed22d6198bcf794baaa809547cdbd90ca1f99e4"
+    },
+    "https://developer.apple.com/documentation/watchkit/wkaudiofileplayeritemfailedtoplaytoendtimenotification": {
+      "etag": "\"20fb-65d55e8669e7d-df\"",
+      "file_path": "documentation/WatchKit/wkaudiofileplayeritemfailedtoplaytoendtimenotification.md",
+      "hash": "9faac7c6f45a32d4b220088b2f6d2187af597a11c50867ca812bac104429b1f4"
+    },
     "https://developer.apple.com/documentation/watchkit/wkaudiofileplayeritemstatus": {
       "etag": "\"4214-65d55e862e417-df\"",
       "file_path": "documentation/WatchKit/wkaudiofileplayeritemstatus.md",
@@ -694,6 +729,11 @@
       "etag": "\"21e6-65d55e85db231-df\"",
       "file_path": "documentation/WatchKit/wkaudiofileplayeritemstatus/unknown.md",
       "hash": "1b5ccf0d16c763db1cfe6256dbf48c9eeee68b010c0d288f743a62d4a3bb8c50"
+    },
+    "https://developer.apple.com/documentation/watchkit/wkaudiofileplayeritemtimejumpednotification": {
+      "etag": "\"20cc-65d55e852a87b-df\"",
+      "file_path": "documentation/WatchKit/wkaudiofileplayeritemtimejumpednotification.md",
+      "hash": "f67363f51d4268a46191ab143fb68cd5b97376e7440df70a38ddbe22fef9c57a"
     },
     "https://developer.apple.com/documentation/watchkit/wkaudiofileplayerstatus": {
       "etag": "\"4665-65d55e8669e7d-df\"",
@@ -909,6 +949,11 @@
       "etag": "\"519d-65d55e8510922-df\"",
       "file_path": "documentation/WatchKit/wkextendedruntimesession/requestautolaunchauthorizationstatus(completion).md",
       "hash": "97f78801dd730c25311d7e066759ab061126c96fe1b71ef6872c6f20ebc18497"
+    },
+    "https://developer.apple.com/documentation/watchkit/wkextendedruntimesession/session": {
+      "etag": "\"1ec5-65d55e8510922-df\"",
+      "file_path": "documentation/WatchKit/wkextendedruntimesession/session.md",
+      "hash": "47b3c12c3409b928dff0b123666b51211ab96844dd2196b697f4ae5dd03ae597"
     },
     "https://developer.apple.com/documentation/watchkit/wkextendedruntimesession/start()": {
       "etag": "\"469c-65d55e8510922-df\"",
@@ -1494,6 +1539,11 @@
       "etag": "\"1605-65d55e8510922-df\"",
       "file_path": "documentation/WatchKit/wkhaptictype/underwaterdepthprompt.md",
       "hash": "a55713e1bd9ea83de678084ef9a76f8a048d2755a31fde38ca520b86bb0f0b23"
+    },
+    "https://developer.apple.com/documentation/watchkit/wki_extern": {
+      "etag": "\"f0d-65d55e854c9fc-df\"",
+      "file_path": "documentation/WatchKit/wki_extern.md",
+      "hash": "bfcbe6afaef4408ea7dde390c2dfb119632dbf1d5c60fa21b7c201986cfa17c1"
     },
     "https://developer.apple.com/documentation/watchkit/wkimage": {
       "etag": "\"798b-65d55e852a87b-df\"",
@@ -3755,6 +3805,11 @@
       "file_path": "documentation/WatchKit/using-extended-runtime-sessions.md",
       "hash": "dfc2f6dd1d2df8b6a5b4b07b88ac1f680a7c1bc940db81434606431a8fbcd226"
     },
+    "https://developer.apple.com/tutorials/data/documentation/watchkit/watchkit-macros.json": {
+      "etag": "\"ee8-65902848cead5-df\"",
+      "file_path": "documentation/WatchKit/watchkit-macros.md",
+      "hash": "229d059d427deed958ccc1dba682bdeda5f98e587d5ad07110bf95ab4f48b030"
+    },
     "https://developer.apple.com/tutorials/data/documentation/watchkit/watchkiterror.json": {
       "etag": "\"3c7a-65d55e8669e7d-df\"",
       "file_path": "documentation/WatchKit/watchkiterror.md",
@@ -3840,6 +3895,21 @@
       "file_path": "documentation/WatchKit/watchkiterrordomain.md",
       "hash": "1eabb4a6badd879ed82ade497fa9d25a31ee6a3ef1c19a3a6fe7dea7bdadf0c5"
     },
+    "https://developer.apple.com/tutorials/data/documentation/watchkit/wk_available_watchos_only.json": {
+      "etag": "\"fcd-65d55e854c9fc-df\"",
+      "file_path": "documentation/WatchKit/wk_available_watchos_only.md",
+      "hash": "17ac98368328530f3b0bc4c6b0ee61685d019c8e03dc6e45e6f6fcbd031dfe42"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/watchkit/wk_deprecated_watchos.json": {
+      "etag": "\"1042-65d55e858c326-df\"",
+      "file_path": "documentation/WatchKit/wk_deprecated_watchos.md",
+      "hash": "71b365fba90cb62f827fd483ebcce7939e2ae2efde46afed4b65950c69b7da5f"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/watchkit/wk_deprecated_with_replacement.json": {
+      "etag": "\"107f-65d55e8612efd-df\"",
+      "file_path": "documentation/WatchKit/wk_deprecated_with_replacement.md",
+      "hash": "ad147a634aecf9117eb92a0b4fe7ec658cde2708ed91302223725d183f98aed2"
+    },
     "https://developer.apple.com/tutorials/data/documentation/watchkit/wkaccessibilityimageregion.json": {
       "etag": "\"5b82-65d55e8669e7d-df\"",
       "file_path": "documentation/WatchKit/wkaccessibilityimageregion.md",
@@ -3864,6 +3934,11 @@
       "etag": "\"43df-65d55e8612efd-df\"",
       "file_path": "documentation/WatchKit/wkaccessibilityisvoiceoverrunning().md",
       "hash": "795c3bcf771a67637b7bb98f3639bd4bc58c1d95a8a702a6b1369a8341318c37"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/watchkit/wkaccessibilityreducemotionstatusdidchangenotification.json": {
+      "etag": "\"1d1b-65d55e854c9fc-df\"",
+      "file_path": "documentation/WatchKit/wkaccessibilityreducemotionstatusdidchangenotification.md",
+      "hash": "92fc723589d5b22536561a65b5305c2454bee0073e180071793ea5cd4f7ba499"
     },
     "https://developer.apple.com/tutorials/data/documentation/watchkit/wkaccessibilityvoiceoverstatuschanged.json": {
       "etag": "\"255e-65d55e85f570f-df\"",
@@ -4310,6 +4385,16 @@
       "file_path": "documentation/WatchKit/wkaudiofileplayeritem/status.md",
       "hash": "41e4bad6d2244d35b5a73983ef77382ffdf75478d93f999e02478d91b7ca6b82"
     },
+    "https://developer.apple.com/tutorials/data/documentation/watchkit/wkaudiofileplayeritemdidplaytoendtimenotification.json": {
+      "etag": "\"20e6-65d55e8647522-df\"",
+      "file_path": "documentation/WatchKit/wkaudiofileplayeritemdidplaytoendtimenotification.md",
+      "hash": "273552f7c428af07b475f2c99ed22d6198bcf794baaa809547cdbd90ca1f99e4"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/watchkit/wkaudiofileplayeritemfailedtoplaytoendtimenotification.json": {
+      "etag": "\"20fb-65d55e8669e7d-df\"",
+      "file_path": "documentation/WatchKit/wkaudiofileplayeritemfailedtoplaytoendtimenotification.md",
+      "hash": "9faac7c6f45a32d4b220088b2f6d2187af597a11c50867ca812bac104429b1f4"
+    },
     "https://developer.apple.com/tutorials/data/documentation/watchkit/wkaudiofileplayeritemstatus.json": {
       "etag": "\"4214-65d55e862e417-df\"",
       "file_path": "documentation/WatchKit/wkaudiofileplayeritemstatus.md",
@@ -4334,6 +4419,11 @@
       "etag": "\"21e6-65d55e85db231-df\"",
       "file_path": "documentation/WatchKit/wkaudiofileplayeritemstatus/unknown.md",
       "hash": "1b5ccf0d16c763db1cfe6256dbf48c9eeee68b010c0d288f743a62d4a3bb8c50"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/watchkit/wkaudiofileplayeritemtimejumpednotification.json": {
+      "etag": "\"20cc-65d55e852a87b-df\"",
+      "file_path": "documentation/WatchKit/wkaudiofileplayeritemtimejumpednotification.md",
+      "hash": "f67363f51d4268a46191ab143fb68cd5b97376e7440df70a38ddbe22fef9c57a"
     },
     "https://developer.apple.com/tutorials/data/documentation/watchkit/wkaudiofileplayerstatus.json": {
       "etag": "\"4665-65d55e8669e7d-df\"",
@@ -4549,6 +4639,11 @@
       "etag": "\"519d-65d55e8510922-df\"",
       "file_path": "documentation/WatchKit/wkextendedruntimesession/requestautolaunchauthorizationstatus(completion).md",
       "hash": "97f78801dd730c25311d7e066759ab061126c96fe1b71ef6872c6f20ebc18497"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/watchkit/wkextendedruntimesession/session.json": {
+      "etag": "\"1ec5-65d55e8510922-df\"",
+      "file_path": "documentation/WatchKit/wkextendedruntimesession/session.md",
+      "hash": "47b3c12c3409b928dff0b123666b51211ab96844dd2196b697f4ae5dd03ae597"
     },
     "https://developer.apple.com/tutorials/data/documentation/watchkit/wkextendedruntimesession/start().json": {
       "etag": "\"469c-65d55e8510922-df\"",
@@ -5134,6 +5229,11 @@
       "etag": "\"1605-65d55e8510922-df\"",
       "file_path": "documentation/WatchKit/wkhaptictype/underwaterdepthprompt.md",
       "hash": "a55713e1bd9ea83de678084ef9a76f8a048d2755a31fde38ca520b86bb0f0b23"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/watchkit/wki_extern.json": {
+      "etag": "\"f0d-65d55e854c9fc-df\"",
+      "file_path": "documentation/WatchKit/wki_extern.md",
+      "hash": "bfcbe6afaef4408ea7dde390c2dfb119632dbf1d5c60fa21b7c201986cfa17c1"
     },
     "https://developer.apple.com/tutorials/data/documentation/watchkit/wkimage.json": {
       "etag": "\"798b-65d55e852a87b-df\"",
@@ -7283,8 +7383,8 @@
   },
   "metadata": {
     "render": {
-      "version": 1
+      "version": 2
     },
-    "total_pages": 1456
+    "total_pages": 1476
   }
 }

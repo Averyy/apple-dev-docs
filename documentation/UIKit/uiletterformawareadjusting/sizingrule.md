@@ -41,6 +41,10 @@ For more information on sizing behaviors, see [`UILetterformAwareAdjusting`](../
   The minimum scale factor for the label’s text.
 - [var numberOfLines: Int](../uilabel/numberoflines.md)
   The maximum number of lines for rendering text.
+- [adjustsLetterSpacingToFitWidth](../uilabel/adjustsletterspacingtofitwidth.md)
+  A Boolean value that indicates whether the label adjusts spacing between letters to fit the string within the label’s bounds rectangle.
+- [minimumFontSize](../uilabel/minimumfontsize.md)
+  The size of the smallest permissible font when drawing the label’s text.
 
 
 ---

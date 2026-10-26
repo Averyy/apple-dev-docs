@@ -39,6 +39,8 @@ An [`HTTPCookie`](./httpcookie.md) object is immutable, initialized from a dicti
   Creates an array of HTTP cookies that corresponds to the provided response header fields for the provided URL.
 - [init?(properties: [HTTPCookiePropertyKey : Any])](./httpcookie/init%28properties%29.md)
   Initializes an HTTP cookie object with the given cookie properties.
+- [+ cookieWithProperties:](./nshttpcookie/cookiewithproperties_.md)
+  Creates and initializes an HTTP cookie object using the provided properties.
 ### Converting cookies to request headers
 - [class func requestHeaderFields(with: [HTTPCookie]) -> [String : String]](./httpcookie/requestheaderfields%28with%29.md)
   Converts an array of cookies to a dictionary of header fields.

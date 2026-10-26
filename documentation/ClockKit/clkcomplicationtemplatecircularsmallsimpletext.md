@@ -32,6 +32,8 @@ This template belongs to the circularSmall family.
 ### Creating the Template
 - [init(textProvider: CLKTextProvider)](./clkcomplicationtemplatecircularsmallsimpletext/init%28textprovider%29.md)
   Creates a new template from the provided text.
+- [+ templateWithTextProvider:](./clkcomplicationtemplatecircularsmallsimpletext/templatewithtextprovider_.md)
+  Returns a new template from the provided text.
 ### Setting the Complication Data
 - [var textProvider: CLKTextProvider](./clkcomplicationtemplatecircularsmallsimpletext/textprovider.md)
   The text to display in the complication.

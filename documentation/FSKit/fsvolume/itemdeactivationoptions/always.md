@@ -30,6 +30,8 @@ Use this option if the file system needs `deactivateItem` calls in circumstances
   An option to process deactivation for open-unlinked items at the moment of last close.
 - [static var forPreallocatedItems: FSVolume.ItemDeactivationOptions](./forpreallocateditems.md)
   An option to process deactivation for for files with preallocated space.
+- [FSItemDeactivationNever](../../fsitemdeactivationoptions/fsitemdeactivationnever.md)
+  An option to never perform deactivation.
 
 
 ---

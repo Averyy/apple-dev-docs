@@ -39,6 +39,8 @@ By default, the visible function table at each index is `nil`.
 ### Assigning visible function tables
 - [func setVertexVisibleFunctionTables([(any MTLVisibleFunctionTable)?], bufferRange: Range<Int>)](./setvertexvisiblefunctiontables%28_,bufferrange%29.md)
   Assigns multiple visible function tables to a range of entries in the vertex shader argument table.
+- [- setVertexVisibleFunctionTables:withBufferRange:](./setvertexvisiblefunctiontables_withbufferrange_.md)
+  Assigns multiple visible function tables to a range of entries in the vertex shader argument table.
 
 
 ---

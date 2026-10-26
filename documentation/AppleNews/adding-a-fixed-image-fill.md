@@ -192,7 +192,7 @@ Ellipses (`...`) indicate lines of code that have been omitted from this example
 ## See Also
 
 ### Related Documentation
-- [object ImageFill](https://developer.apple.com/documentation/applenewsformat/imagefill)
+- [object ImageFill](../AppleNewsFormat/imagefill.md)
   The object for adding an image background fill to a component.
 - [Specifying Measurements for Components](./specifying-measurements-for-components.md)
   Specify the units of measure to use for margins, minimum heights, and other dimensions.

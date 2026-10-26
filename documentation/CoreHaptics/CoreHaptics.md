@@ -72,6 +72,8 @@ Your app can play custom haptic patterns crafted from basic building blocks call
 ### Type Aliases
 - [typealias CHHapticAudioResourceKey](./chhapticaudioresourcekey.md)
   A type alias for a key that identifies the playback behavior of an audio resource.
+### Macros
+- [CH_EXPORT](./ch_export.md)
 
 
 ---

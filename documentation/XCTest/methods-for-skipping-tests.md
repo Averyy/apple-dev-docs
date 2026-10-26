@@ -43,6 +43,12 @@ func testSomethingNew() throws {
   Skips remaining tests in a test method unless the specified condition is met.
 - [struct XCTSkip](./xctskip-swift.struct.md)
   An error that causes the current test to cease executing and the test runner to mark the test as skipped when the test throws the error.
+- [XCTSkipIf](./xctskipif.md)
+  Skips remaining tests in a test method if the specified condition is met.
+- [XCTSkipUnless](./xctskipunless.md)
+  Skips remaining tests in a test method unless the specified condition is met.
+- [XCTSkip](./xctskip-c.macro.md)
+  Throws an exception that causes the test runner to cease executing the current test and mark the test skipped.
 
 ## See Also
 

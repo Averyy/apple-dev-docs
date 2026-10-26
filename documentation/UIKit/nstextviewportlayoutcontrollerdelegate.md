@@ -45,6 +45,9 @@ protocol NSTextViewportLayoutControllerDelegate : NSObjectProtocol
   Asks the delegate to cache a rendering surface for later retrieval.
 - [func textViewportLayoutController(NSTextViewportLayoutController, retrieveCachedRenderingSurfaceFor: any NSTextViewportRenderingSurfaceKey) -> any NSTextViewportRenderingSurface](./nstextviewportlayoutcontrollerdelegate/textviewportlayoutcontroller%28_,retrievecachedrenderingsurfacefor%29.md)
   Asks the delegate to return a previously cached rendering surface.
+### Instance Methods
+- [- textViewportLayoutController:renderingSurfaceForTextLayoutFragment:](./nstextviewportlayoutcontrollerdelegate/textviewportlayoutcontroller_renderingsurfacefortextlayoutfragment_.md)
+  Returns a rendering surface for the specified text layout fragment.
 
 ## Relationships
 

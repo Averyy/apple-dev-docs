@@ -90,6 +90,8 @@ class NSTextContentManager
   A string of text that manages data, layout, and stylistic information for ranges of characters to support rendering.
 - [class NSMutableAttributedString](../Foundation/nsmutableattributedstring.md)
   A mutable string with associated attributes (such as visual style, hyperlinks, or accessibility data) for portions of its text.
+- [TextKit string attributes](./textkit-string-attributes.md)
+  AppKit-specific keys and values for displaying text and managing documents.
 
 
 ---

@@ -44,6 +44,8 @@ Creating an instance of this class using this method is equivalent to calling [`
   Creates a player looper that continuously plays the full duration of a player item while adhering to the specified ordering of existing items in the queue.
 - [convenience init(player: AVQueuePlayer, templateItem: AVPlayerItem, timeRange: CMTimeRange)](./init%28player,templateitem,timerange%29.md)
   Creates a player looper that continuously plays the specified time range of a player item.
+- [+ playerLooperWithPlayer:templateItem:timeRange:](./playerlooperwithplayer_templateitem_timerange_.md)
+  Returns player looper that continuously plays the specified time range of a player item.
 
 
 ---

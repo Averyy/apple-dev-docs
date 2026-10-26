@@ -48,6 +48,12 @@ To detect rectangles in an image or video, choose [`CIDetectorTypeRectangle`](./
   The upper-left corner of the detected rectangle, in image coordinates.
 - [var topRight: CGPoint](./cirectanglefeature/topright-swift.property.md)
   The upper-right corner of the detected rectangle, in image coordinates.
+### Instance Variables
+- [bottomLeft](./cirectanglefeature/bottomleft-c.ivar.md)
+- [bottomRight](./cirectanglefeature/bottomright-c.ivar.md)
+- [bounds](./cirectanglefeature/bounds-c.ivar.md)
+- [topLeft](./cirectanglefeature/topleft-c.ivar.md)
+- [topRight](./cirectanglefeature/topright-c.ivar.md)
 
 ## Relationships
 

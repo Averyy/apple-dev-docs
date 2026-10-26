@@ -40,6 +40,13 @@ Create an instance of [`QLPreviewReply`](./qlpreviewreply.md) from the method [`
 - [var attachments: [String : QLPreviewReplyAttachment]](./qlpreviewreply/attachments.md)
   The attachments for a preview reply that provide additional data for the system to display the preview.
 - [var stringEncoding: String.Encoding](./qlpreviewreply/stringencoding-8ahm8.md)
+### Instance Properties
+- [stringEncoding](./qlpreviewreply/stringencoding-1k9kb.md)
+  String encoding for text or html based previews. Defaults to NSUTF8StringEncoding.
+### Instance Methods
+- [- initForPDFWithPageSize:documentCreationBlock:](./qlpreviewreply/initforpdfwithpagesize_documentcreationblock_.md)
+- [- initWithContextSize:isBitmap:drawingBlock:](./qlpreviewreply/initwithcontextsize_isbitmap_drawingblock_.md)
+- [- initWithDataOfContentType:contentSize:dataCreationBlock:](./qlpreviewreply/initwithdataofcontenttype_contentsize_datacreationblock_.md)
 
 ## Relationships
 

@@ -1,0 +1,43 @@
+# configurationWithIdentifier:previewProvider:actionProvider:
+
+**Framework**: UIKit  
+**Kind**: method  
+**Role**: Type Method
+
+Creates a menu configuration object with the specified action and preview providers.
+
+**Availability**:
+- iOS 13.0+
+- iPadOS 13.0+
+- Mac Catalyst 13.1+
+- tvOS 17.0+
+- visionOS 1.0+
+
+## Declaration
+
+```objc
++ (instancetype) configurationWithIdentifier:(id<NSCopying>) identifier previewProvider:(UIContextMenuContentPreviewProvider) previewProvider actionProvider:(UIContextMenuActionProvider) actionProvider;
+```
+
+#### Return Value
+
+A new menu configuration object with the specified provider blocks.
+
+## Parameters
+
+- `identifier`: A unique identifier for the menu configuration object. If you want this method to generate a unique identifier for you, specify `nil`.
+- `previewProvider`: An optional block that returns the custom view controller that you use to preview content. If you specify `nil`, UIKit uses a default preview view controller.
+- `actionProvider`: An optional block that provides a contextual menu to display with the preview. If you specify `nil`, UIKit doesn’t display a contextual menu with the previewed content.
+
+## See Also
+
+### Creating the menu configuration object
+- [typealias UIContextMenuContentPreviewProvider](../uicontextmenucontentpreviewprovider.md)
+  Returns the custom view controller to use when previewing your content.
+- [typealias UIContextMenuActionProvider](../uicontextmenuactionprovider.md)
+  Returns an action-based contextual menu, optionally incorporating the system-suggested actions.
+
+
+---
+
+*[View on Apple Developer](https://developer.apple.com/documentation/uikit/uicontextmenuconfiguration/configurationwithidentifier:previewprovider:actionprovider:)*

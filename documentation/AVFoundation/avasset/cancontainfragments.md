@@ -29,6 +29,14 @@ var canContainFragments: Bool { get }
 
 For QuickTime movie files and MPEG-4 files, the value is [`true`](../../Swift/true.md) if an `mvex` box is present in the `moov` box. For those types, the `mvex` box signals the possible presence of later `moof` boxes.
 
+## See Also
+
+### Accessing fragment support
+- [containsFragments](./containsfragments.md)
+  A Boolean value that indicates whether at least one movie fragment extends the asset.
+- [overallDurationHint](./overalldurationhint.md)
+  The total duration of fragments that currently exist, or may exist in the future.
+
 
 ---
 

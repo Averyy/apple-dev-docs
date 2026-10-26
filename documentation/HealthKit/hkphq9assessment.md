@@ -33,6 +33,10 @@ Represents the result of a PHQ-9 assessment. Learn more about Pfizer’s PHQ-9 a
 ### Instance Properties
 - [var answers: [HKPHQ9Assessment.Answer]](./hkphq9assessment/answers-4y95e.md)
 - [var risk: HKPHQ9Assessment.Risk](./hkphq9assessment/risk-swift.property.md)
+- [answers](./hkphq9assessment/answers-439dt.md)
+### Type Methods
+- [+ assessmentWithDate:answers:](./hkphq9assessment/assessmentwithdate_answers_.md)
+- [+ assessmentWithDate:answers:metadata:](./hkphq9assessment/assessmentwithdate_answers_metadata_.md)
 
 ## Relationships
 

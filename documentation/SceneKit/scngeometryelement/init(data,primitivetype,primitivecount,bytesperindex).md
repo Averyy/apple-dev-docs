@@ -47,6 +47,8 @@ To create a custom [`SCNGeometry`](../scngeometry.md) object from the geometry e
 ### Creating a Geometry Element
 - [convenience init<IndexType>(indices: [IndexType], primitiveType: SCNGeometryPrimitiveType)](./init%28indices,primitivetype%29.md)
   Creates a geometry element from the specified array of index values.
+- [+ geometryElementWithMDLSubmesh:](./geometryelementwithmdlsubmesh_.md)
+  Creates a geometry element from the specified Model I/O submesh object.
 
 
 ---

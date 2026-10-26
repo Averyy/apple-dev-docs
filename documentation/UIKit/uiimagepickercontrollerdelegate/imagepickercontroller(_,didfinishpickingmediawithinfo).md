@@ -42,6 +42,8 @@ Implementation of this method is optional, but expected.
 ### Closing the picker
 - [func imagePickerControllerDidCancel(UIImagePickerController)](./imagepickercontrollerdidcancel%28_%29.md)
   Tells the delegate that the user canceled the pick operation.
+- [- imagePickerController:didFinishPickingImage:editingInfo:](./imagepickercontroller_didfinishpickingimage_editinginfo_.md)
+  Tells the delegate that the user picked an image.
 
 
 ---

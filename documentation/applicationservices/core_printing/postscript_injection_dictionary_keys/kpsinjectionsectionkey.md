@@ -1,0 +1,11 @@
+# kPSInjectionSectionKey
+
+**Framework**: Application Services  
+**Kind**: econst
+
+Specifies a section.
+
+
+---
+
+*[View on Apple Developer](https://developer.apple.com/documentation/applicationservices/core_printing/postscript_injection_dictionary_keys/kpsinjectionsectionkey)*

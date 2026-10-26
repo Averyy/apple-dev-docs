@@ -36,6 +36,10 @@ An [`SCNAudioPlayer`](./scnaudioplayer.md) object controls playback of a positio
   Initializes an audio player for playing the specified simple audio source.
 - [init(avAudioNode: AVAudioNode)](./scnaudioplayer/init%28avaudionode%29-4u514.md)
   Initializes an audio player for playing the specified AVFoundation audio node.
+- [+ audioPlayerWithSource:](./scnaudioplayer/audioplayerwithsource_.md)
+  Returns an audio player (creating one if necessary) to play a simple audio source.
+- [+ audioPlayerWithAVAudioNode:](./scnaudioplayer/audioplayerwithavaudionode_.md)
+  Returns an audio player (creating one if necessary) to play an audio node.
 ### Working with Audio Sources
 - [var audioSource: SCNAudioSource?](./scnaudioplayer/audiosource.md)
   The source of audio played by this player.

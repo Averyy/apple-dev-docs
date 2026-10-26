@@ -77,6 +77,8 @@ Although you can subclass `NSScriptClassDescription`, it is unlikely that you wo
   Given an Apple event code that identifies a property or element class, returns the key for the corresponding attribute, one-to-one relationship, or one-to-many relationship.
 - [func type(forKey: String) -> String?](./nsscriptclassdescription/type%28forkey%29.md)
   Returns the name of the declared type of the attribute or relationship identified by the passed key.
+- [- isReadOnlyKey:](./nsscriptclassdescription/isreadonlykey_.md)
+  Returns a Boolean value indicating whether a specified property in the receiver is read-only.
 ### Getting command information
 - [func selector(forCommand: NSScriptCommandDescription) -> Selector?](./nsscriptclassdescription/selector%28forcommand%29.md)
   Returns the selector associated with the receiver for the specified command description.

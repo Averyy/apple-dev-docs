@@ -31,6 +31,8 @@ class MTKMesh
   Initializes a MetalKit mesh and its submeshes from a Model I/O mesh.
 ### Loading Meshes from an Asset
 - [class func newMeshes(asset: MDLAsset, device: any MTLDevice) throws -> (modelIOMeshes: [MDLMesh], metalKitMeshes: [MTKMesh])](./mtkmesh/newmeshes%28asset,device%29.md)
+- [+ newMeshesFromAsset:device:sourceMeshes:error:](./mtkmesh/newmeshesfromasset_device_sourcemeshes_error_.md)
+  Creates and initializes MetalKit meshes from all Model I/O meshes in a Model I/O asset.
 ### Submeshes
 - [var submeshes: [MTKSubmesh]](./mtkmesh/submeshes.md)
   An array of submeshes containing index buffers referencing the mesh vertices.

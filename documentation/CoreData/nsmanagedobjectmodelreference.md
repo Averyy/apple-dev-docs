@@ -62,6 +62,8 @@ class NSManagedObjectModelReference
 ### Creating a custom migration stage
 - [convenience init(migratingFrom: NSManagedObjectModelReference, to: NSManagedObjectModelReference)](./nscustommigrationstage/init%28migratingfrom,to%29.md)
   Creates a custom migration stage with the specified source and destination model references.
+- [- initWithCurrentModelReference:nextModelReference:](./nscustommigrationstage/initwithcurrentmodelreference_nextmodelreference_.md)
+  Creates a custom migration stage with the specified source and destination model references.
 
 
 ---

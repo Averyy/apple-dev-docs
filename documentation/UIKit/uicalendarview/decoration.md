@@ -30,11 +30,21 @@ class Decoration
   Creates a default calendar view decoration with a filled circle image, using the system fill color and medium size.
 - [static func `default`(color: UIColor?, size: UICalendarView.DecorationSize) -> UICalendarView.Decoration](./decoration/default%28color,size%29.md)
   Creates a default calendar view decoration with a filled circle image, using the color and size you specify.
+- [+ decorationWithColor:size:](../uicalendarviewdecoration/decorationwithcolor_size_.md)
+  Creates a new calendar view decoration with a filled circle image, using the color and size that you specify.
 ### Creating a Custom Decoration View
 - [class func customView(() -> UIView) -> Self](./decoration/customview%28_%29.md)
   Creates a new calendar view decoration with a custom view, using your view provider.
+- [- initWithCustomViewProvider:](../uicalendarviewdecoration/initwithcustomviewprovider_.md)
+  Creates a new calendar view decoration with a custom view, using your view provider.
 ### Creating Image Decoration Views
 - [static func image(UIImage?, color: UIColor?, size: UICalendarView.DecorationSize) -> UICalendarView.Decoration](./decoration/image%28_,color,size%29.md)
+  Creates a new calendar view decoration with the image, color, and size that you specify.
+- [- initWithImage:color:size:](../uicalendarviewdecoration/initwithimage_color_size_.md)
+  Creates a new calendar view decoration with the image, color, and size that you specify.
+- [+ decorationWithImage:](../uicalendarviewdecoration/decorationwithimage_.md)
+  Creates a new calendar view decoration with the image you specify, using the system fill color and medium relative size.
+- [+ decorationWithImage:color:size:](../uicalendarviewdecoration/decorationwithimage_color_size_.md)
   Creates a new calendar view decoration with the image, color, and size that you specify.
 ### Initializers
 - [convenience init(customViewProvider: () -> UIView)](./decoration/init%28customviewprovider%29.md)

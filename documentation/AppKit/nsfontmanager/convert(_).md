@@ -46,6 +46,9 @@ This method is invoked in response to an action message such as [`addFontTrait(_
   Returns a font object whose weight is greater or lesser than that of the given font.
 - [func convert(NSFont, toFace: String) -> NSFont?](./convert%28_,toface%29.md)
   Returns a font whose traits are as similar as possible to those of the given font except for the typeface, which is changed to the given typeface.
+### Converting Fonts Automatically
+- [- changeFont:](../../ObjectiveC/nsobject-swift.class/changefont_.md)
+  Informs responders of a font change.
 
 
 ---

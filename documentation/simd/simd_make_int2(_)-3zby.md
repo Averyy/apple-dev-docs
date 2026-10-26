@@ -23,6 +23,8 @@ static simd_int2 simd_make_int2(int other);
   Returns a new vector from the specified scalar values.
 - [func simd_make_int2_undef(Int32) -> simd_int2](./simd_make_int2_undef%28_%29.md)
   Returns a new vector with the first element set to a scalar value, and other elements undefined.
+- [vector2](./vector2-9gvdx.md)
+  Returns a new vector from the specified scalar values.
 
 
 ---

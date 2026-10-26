@@ -37,12 +37,20 @@ The receiver, initialized to use the given options.
 
 ### Related Documentation
 - [Collections Programming Topics](https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/Collections/Collections.html#//apple_ref/doc/uid/10000034i)
+- [+ pointerArrayWithOptions:](./pointerarraywithoptions_.md)
+  Returns a new pointer array initialized to use the given options.
+- [+ pointerArrayWithPointerFunctions:](./pointerarraywithpointerfunctions_.md)
+  A new pointer array initialized to use the given functions.
 ### Creating and Initializing a New Pointer Array
 - [init(pointerFunctions: NSPointerFunctions)](./init%28pointerfunctions%29.md)
   Initializes the receiver to use the given functions.
 - [class func strongObjects() -> NSPointerArray](./strongobjects%28%29.md)
   Returns a new pointer array that maintains strong references to its elements.
 - [class func weakObjects() -> NSPointerArray](./weakobjects%28%29.md)
+  Returns a new pointer array that maintains weak references to its elements.
+- [+ pointerArrayWithStrongObjects](./pointerarraywithstrongobjects.md)
+  Returns a new pointer array that maintains strong references to its elements.
+- [+ pointerArrayWithWeakObjects](./pointerarraywithweakobjects.md)
   Returns a new pointer array that maintains weak references to its elements.
 
 

@@ -34,6 +34,7 @@ class DOMHTMLAreaElement
 - [var search: String!](./domhtmlareaelement/search.md)
 - [var shape: String!](./domhtmlareaelement/shape.md)
 - [var target: String!](./domhtmlareaelement/target.md)
+- [accessKey](./domhtmlareaelement/accesskey.md)
 
 ## Relationships
 

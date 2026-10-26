@@ -33,6 +33,12 @@ When you add an input group to an asset writer, the system sets the default inpu
 - `inputs`: The inputs with tracks to arrange into a mutually exclusive group.
 - `defaultInput`: The group’s default input.
 
+## See Also
+
+### Creating an input group
+- [+ assetWriterInputGroupWithInputs:defaultInput:](./assetwriterinputgroupwithinputs_defaultinput_.md)
+  Returns a new group for the asset writer inputs.
+
 
 ---
 

@@ -9,19 +9,19 @@ Use Markdown formatting for text components.
 
 Apple News Format supports a subset of Markdown syntax. You can use Markdown in the following components by setting the `format` property to `markdown`.
 
-- [`Author`](https://developer.apple.com/documentation/applenewsformat/author)
-- [`Body`](https://developer.apple.com/documentation/applenewsformat/body)
-- [`Byline`](https://developer.apple.com/documentation/applenewsformat/byline)
-- [`Caption`](https://developer.apple.com/documentation/applenewsformat/caption)
-- [`Heading`](https://developer.apple.com/documentation/applenewsformat/heading)
-- [`Illustrator`](https://developer.apple.com/documentation/applenewsformat/illustrator)
-- [`Intro`](https://developer.apple.com/documentation/applenewsformat/intro)
-- [`Photographer`](https://developer.apple.com/documentation/applenewsformat/photographer)
-- [`PullQuote`](https://developer.apple.com/documentation/applenewsformat/pullquote)
-- [`Quote`](https://developer.apple.com/documentation/applenewsformat/quote)
-- [`Title`](https://developer.apple.com/documentation/applenewsformat/title)
+- [`Author`](../AppleNewsFormat/author.md)
+- [`Body`](../AppleNewsFormat/body.md)
+- [`Byline`](../AppleNewsFormat/byline.md)
+- [`Caption`](../AppleNewsFormat/caption.md)
+- [`Heading`](../AppleNewsFormat/heading.md)
+- [`Illustrator`](../AppleNewsFormat/illustrator.md)
+- [`Intro`](../AppleNewsFormat/intro.md)
+- [`Photographer`](../AppleNewsFormat/photographer.md)
+- [`PullQuote`](../AppleNewsFormat/pullquote.md)
+- [`Quote`](../AppleNewsFormat/quote.md)
+- [`Title`](../AppleNewsFormat/title.md)
 
-In addition to the components above, you can also use Markdown to format text in [`CaptionDescriptor`](https://developer.apple.com/documentation/applenewsformat/captiondescriptor), and [`FormattedText`](https://developer.apple.com/documentation/applenewsformat/formattedtext) objects.
+In addition to the components above, you can also use Markdown to format text in [`CaptionDescriptor`](../AppleNewsFormat/captiondescriptor.md), and [`FormattedText`](../AppleNewsFormat/formattedtext.md) objects.
 
 ##### Example
 
@@ -342,29 +342,29 @@ This is an underscore: _
 ### Text
 - [Using HTML with Apple News Format](./using-html-with-apple-news-format.md)
   Use HTML formatting for text components.
-- [object Body](https://developer.apple.com/documentation/applenewsformat/body)
+- [object Body](../AppleNewsFormat/body.md)
   The component for adding body text.
-- [object Title](https://developer.apple.com/documentation/applenewsformat/title)
+- [object Title](../AppleNewsFormat/title.md)
   The component for adding an article title.
-- [object Heading](https://developer.apple.com/documentation/applenewsformat/heading)
+- [object Heading](../AppleNewsFormat/heading.md)
   The text component for adding a heading.
-- [object Intro](https://developer.apple.com/documentation/applenewsformat/intro)
+- [object Intro](../AppleNewsFormat/intro.md)
   The component for adding introductory text.
-- [object Caption](https://developer.apple.com/documentation/applenewsformat/caption)
+- [object Caption](../AppleNewsFormat/caption.md)
   The component for adding caption text.
-- [object Author](https://developer.apple.com/documentation/applenewsformat/author)
+- [object Author](../AppleNewsFormat/author.md)
   The component for adding the name of the author.
-- [object Byline](https://developer.apple.com/documentation/applenewsformat/byline)
+- [object Byline](../AppleNewsFormat/byline.md)
   The component for adding the publication date or contributor credits, especially for articles with multiple contributors.
-- [object Illustrator](https://developer.apple.com/documentation/applenewsformat/illustrator)
+- [object Illustrator](../AppleNewsFormat/illustrator.md)
   The component for adding illustrator credit.
-- [object Photographer](https://developer.apple.com/documentation/applenewsformat/photographer)
+- [object Photographer](../AppleNewsFormat/photographer.md)
   The component for adding a photographer credit.
-- [object Quote](https://developer.apple.com/documentation/applenewsformat/quote)
+- [object Quote](../AppleNewsFormat/quote.md)
   The component for including a quote.
-- [object PullQuote](https://developer.apple.com/documentation/applenewsformat/pullquote)
+- [object PullQuote](../AppleNewsFormat/pullquote.md)
   The component for including a pull quote.
-- [object Text](https://developer.apple.com/documentation/applenewsformat/text)
+- [object Text](../AppleNewsFormat/text.md)
   Properties shared by all text component types.
 
 

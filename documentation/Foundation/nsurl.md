@@ -230,6 +230,16 @@ if (!success) {
   Initializes a newly created NSURL using the contents of the given data, relative to a base URL.
 - [var dataRepresentation: Data](./nsurl/datarepresentation.md)
   The data representation of the URL’s relativeString.
+- [+ URLWithString:](./nsurl/urlwithstring_.md)
+  Creates and returns an NSURL object initialized with a provided URL string.
+- [+ URLWithString:encodingInvalidCharacters:](./nsurl/urlwithstring_encodinginvalidcharacters_.md)
+  Creates and returns an instance from the provided string, optionally IDNA- and percent-encoding any invalid characters.
+- [+ URLWithString:relativeToURL:](./nsurl/urlwithstring_relativetourl_.md)
+  Creates and returns an NSURL object initialized with a base URL and a relative string.
+- [+ URLByResolvingBookmarkData:options:relativeToURL:bookmarkDataIsStale:error:](./nsurl/urlbyresolvingbookmarkdata_options_relativetourl_bookmarkdataisstale_error_.md)
+  Returns a new URL made by resolving bookmark data.
+- [+ URLWithDataRepresentation:relativeToURL:](./nsurl/urlwithdatarepresentation_relativetourl_.md)
+  Initializes and returns a newly created NSURL using the contents of the given data, relative to a base URL.
 ### Querying an NSURL
 - [func checkResourceIsReachableAndReturnError(NSErrorPointer) -> Bool](./nsurl/checkresourceisreachableandreturnerror%28_%29.md)
   Returns whether the resource pointed to by a file URL can be reached.
@@ -362,6 +372,18 @@ if (!success) {
 ### Deprecated
 - [convenience init?(scheme: String, host: String?, path: String)](./nsurl/init%28scheme,host,path%29.md)
   Initializes a newly created NSURL with a specified scheme, host, and path.
+- [- URLHandleUsingCache:](./nsurl/urlhandleusingcache_.md)
+  Returns a URL handle to service the receiver.
+- [- loadResourceDataNotifyingClient:usingCache:](./nsurl/loadresourcedatanotifyingclient_usingcache_.md)
+  Loads the receiver’s resource data in the background.
+- [- resourceDataUsingCache:](./nsurl/resourcedatausingcache_.md)
+  Returns the receiver’s resource data, loading it if necessary.
+- [- setResourceData:](./nsurl/setresourcedata_.md)
+  Attempts to set the resource data for the receiver.
+- [- propertyForKey:](./nsurl/propertyforkey_.md)
+  Returns the specified property of the receiver’s resource.
+- [- setProperty:forKey:](./nsurl/setproperty_forkey_.md)
+  Changes the specified property of the receiver’s resource.
 ### Initializers
 - [init(absoluteURLWithDataRepresentation: Data, relativeToURL: URL?)](./nsurl/init%28absoluteurlwithdatarepresentation,relativetourl%29.md)
 - [convenience init(byResolvingAliasFileAtURL: URL, options: NSURL.BookmarkResolutionOptions) throws](./nsurl/init%28byresolvingaliasfileaturl,options%29.md)
@@ -375,6 +397,9 @@ if (!success) {
 - [init?(pasteboardPropertyList: Any, ofType: NSPasteboard.PasteboardType)](./nsurl/init%28pasteboardpropertylist,oftype%29.md)
 - [convenience init?(string: String, relativeToURL: URL?)](./nsurl/init%28string,relativetourl%29-48a3i.md)
 - [init?(string: String, relativeToURL: URL?)](./nsurl/init%28string,relativetourl%29-6beup.md)
+### Identifying and Comparing Objects
+- [isEqual:](./nsurl-isequal.md)
+  Returns a Boolean value that indicates whether the receiver and a given object have identical URL strings and base URLs.
 
 ## Relationships
 
@@ -399,6 +424,14 @@ if (!success) {
 - [QLPreviewItem](../QuickLook/qlpreviewitem.md)
 - [Sendable](../Swift/sendable.md)
 - [SendableMetatype](../Swift/sendablemetatype.md)
+
+## See Also
+
+### URLs
+- [NSURLComponents](./nsurlcomponents.md)
+  An object that parses URLs into and constructs URLs from their constituent parts.
+- [NSURLQueryItem](./nsurlqueryitem.md)
+  An object representing a single name/value pair for an item in the query portion of a URL.
 
 
 ---

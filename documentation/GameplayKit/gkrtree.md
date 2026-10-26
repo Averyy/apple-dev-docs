@@ -50,6 +50,8 @@ The [`GKRTree`](./gkrtree.md) class is one of three spatial partitioning data st
 ### Creating an R-Tree
 - [init(maxNumberOfChildren: Int)](./gkrtree/init%28maxnumberofchildren%29.md)
   Initializes a new R-tree object.
+- [+ treeWithMaxNumberOfChildren:](./gkrtree/treewithmaxnumberofchildren_.md)
+  Creates a new R-tree object.
 ### Adding and Removing Elements
 - [func addElement(ElementType, boundingRectMin: vector_float2, boundingRectMax: vector_float2, splitStrategy: GKRTreeSplitStrategy)](./gkrtree/addelement%28_,boundingrectmin,boundingrectmax,splitstrategy%29.md)
   Adds the specified object to the tree.

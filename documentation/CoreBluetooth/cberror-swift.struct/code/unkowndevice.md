@@ -58,6 +58,8 @@ CBErrorUnkownDevice
   The operation isn’t supported.
 - [static var unknownDevice: CBError.Code](./unknowndevice.md)
   The device is unknown.
+- [CBErrorUnknownDevice](../../cberror-c.enum/cberrorunknowndevice.md)
+  The device is unknown.
 
 
 ---

@@ -46,6 +46,8 @@ The `NSUUID` class is *not* toll-free bridged with CoreFoundation’s [`CFUUID`]
   Initializes a new UUID with the formatted string.
 - [convenience init(uuidBytes: UnsafePointer<UInt8>?)](./nsuuid/init%28uuidbytes%29-2p4d5.md)
   Initializes a new UUID with the given bytes.
+- [+ UUID](./nsuuid/uuid.md)
+  Create and returns a new UUID with RFC 4122 version 4 random bytes.
 ### Get UUID Values
 - [func getBytes(UnsafeMutablePointer<UInt8>)](./nsuuid/getbytes%28_%29.md)
   Returns the UUID as bytes.

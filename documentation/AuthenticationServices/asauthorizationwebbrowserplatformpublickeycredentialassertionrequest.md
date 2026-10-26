@@ -29,6 +29,8 @@ protocol ASAuthorizationWebBrowserPlatformPublicKeyCredentialAssertionRequest
   The client data to supply to the relying party.
 - [var shouldShowHybridTransport: Bool](./asauthorizationwebbrowserplatformpublickeycredentialassertionrequest/shouldshowhybridtransport.md)
   Whether a remote authenticator that communicates with the operating system using Bluetooth can resolve the challenge.
+- [clientData](./asauthorizationwebbrowserplatformpublickeycredentialassertionrequest/clientdata-4b5aw.md)
+  The client data to supply to the relying party.
 
 ## Relationships
 

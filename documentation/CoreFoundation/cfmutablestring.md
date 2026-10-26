@@ -78,6 +78,8 @@ CFMutableString is “toll-free bridged” with its Cocoa Foundation counterpart
   Trims whitespace from the beginning and end of a CFMutableString object.
 - [func CFStringUppercase(CFMutableString!, CFLocale!)](./cfstringuppercase%28_,_%29.md)
   Changes all lowercase alphabetical characters in a CFMutableString object to uppercase.
+- [CFStringAppendFormat](./cfstringappendformat.md)
+  Appends a formatted string to the character contents of a CFMutableString object.
 ### Constants
 - [enum CFStringNormalizationForm](./cfstringnormalizationform.md)
   Unicode normalization forms as described in Unicode Technical Report #15.

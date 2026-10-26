@@ -35,6 +35,10 @@ An [`INCarAudioSourceResolutionResult`](./incaraudiosourceresolutionresult.md) o
   Creates an object whose resolution involves the successful matching of the specified parameter.
 - [class func confirmationRequired(with: INCarAudioSource) -> Self](./incaraudiosourceresolutionresult/confirmationrequired%28with%29.md)
   Creates an object whose resolution requires that the user must confirm the value before proceeding.
+- [+ successWithResolvedValue:](./incaraudiosourceresolutionresult/successwithresolvedvalue_.md)
+  Creates an object whose resolution involves the successful matching of the specified parameter.
+- [+ confirmationRequiredWithValueToConfirm:](./incaraudiosourceresolutionresult/confirmationrequiredwithvaluetoconfirm_.md)
+  Creates an object whose resolution requires that the user must confirm the value before proceeding.
 
 ## Relationships
 

@@ -53,6 +53,8 @@ To use this class, allocate and initialize a new instance, set the minimum value
 ### Strings
 - [struct NSStringDrawingOptions](../UIKit/nsstringdrawingoptions.md)
   Constants that specify the rendering options for drawing a string.
+- [NSStringDrawingOptions](./nsstringdrawingoptions.md)
+  Constants that specify the rendering options for drawing a string.
 
 
 ---

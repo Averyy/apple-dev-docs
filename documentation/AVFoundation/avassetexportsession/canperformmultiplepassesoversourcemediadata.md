@@ -47,6 +47,10 @@ You can’t set this property after the export starts.
   The file length that the output of the session must not exceed.
 - [var directoryForTemporaryFiles: URL?](./directoryfortemporaryfiles.md)
   A directory suitable to store temporary files that the export process generates.
+- [outputURL](./outputurl.md)
+  A URL where an asset export session writes its output.
+- [outputFileType](./outputfiletype.md)
+  The file type of the output an asset export session writes.
 
 
 ---

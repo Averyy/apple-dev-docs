@@ -260,7 +260,7 @@ Ellipses (`...`) indicate lines of code that have been omitted from this example
   Define and apply custom, default, and inline text styles, or use HTML tags or Markdown syntax to style your text.
 - [Using HTML with Apple News Format](./using-html-with-apple-news-format.md)
   Use HTML formatting for text components.
-- [object TextStyle](https://developer.apple.com/documentation/applenewsformat/textstyle)
+- [object TextStyle](../AppleNewsFormat/textstyle.md)
   The object for defining the text style, such as font family, size, and color, that you can apply to ranges of text.
 ### Advanced Design Tutorial 2: Layout and Positioning
 - [Creating a Complex, Layered Header](./creating-a-complex-layered-header.md)

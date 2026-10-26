@@ -296,11 +296,11 @@ Ellipses (`...`) indicate lines of code that have been omitted from this example
 ### Related Documentation
 - [About Component Behaviors](./about-component-behaviors.md)
   Learn how to affect components’ reactions to device motion and scrolling.
-- [object Parallax](https://developer.apple.com/documentation/applenewsformat/parallax)
+- [object Parallax](../AppleNewsFormat/parallax.md)
   The behavior whereby a component moves at a speed different from the scroll speed.
-- [object ComponentStyle](https://developer.apple.com/documentation/applenewsformat/componentstyle)
+- [object ComponentStyle](../AppleNewsFormat/componentstyle.md)
   The object for setting style properties for components, including background color and fill, borders, and table styles.
-- [object Section](https://developer.apple.com/documentation/applenewsformat/section)
+- [object Section](../AppleNewsFormat/section.md)
   The component for organizing an article into sections.
 ### Advanced Design Tutorial 1: Headers and Parallax Behavior
 - [Setting Up the Advanced Tutorials](./setting-up-the-advanced-tutorials.md)

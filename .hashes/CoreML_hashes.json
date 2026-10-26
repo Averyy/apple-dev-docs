@@ -65,6 +65,16 @@
       "file_path": "documentation/CoreML/making-predictions-with-a-sequence-of-inputs.md",
       "hash": "cc1805cad614608e9294179c008a4289ef587b0091bddadf9d326e0e82df28d6"
     },
+    "https://developer.apple.com/documentation/coreml/ml_export": {
+      "etag": "\"c17-65d55da5bad36-df\"",
+      "file_path": "documentation/CoreML/ml_export.md",
+      "hash": "df9145bc4b5b48a9d4c4befed36bc2ea9bca7cb6a6c240ce872f44c298086af0"
+    },
+    "https://developer.apple.com/documentation/coreml/mlallcomputedevices": {
+      "etag": "\"1f2e-65d55da5bad36-df\"",
+      "file_path": "documentation/CoreML/mlallcomputedevices.md",
+      "hash": "bbb68bed3fb7594f51954612ebde780d7476e24d5eb960712c9928c72a82a7c3"
+    },
     "https://developer.apple.com/documentation/coreml/mlarraybatchprovider": {
       "etag": "\"611b-65d55da5bad36-df\"",
       "file_path": "documentation/CoreML/mlarraybatchprovider.md",
@@ -199,6 +209,66 @@
       "etag": "\"123d-65d55da54085a-df\"",
       "file_path": "documentation/CoreML/mlcomputeplan-1w21n/modelstructure.md",
       "hash": "0a20654fa05a553778e43f9059812744dd55da2759b56efdfadef96b7a40a24f"
+    },
+    "https://developer.apple.com/documentation/coreml/mlcomputeplan-85vdw": {
+      "etag": "\"2f10-65d55da66b852-df\"",
+      "file_path": "documentation/CoreML/mlcomputeplan-85vdw.md",
+      "hash": "68fd98daade79b90d6761252ac5df7125ecbe6dcbf066f3d906d2a915fda8c79"
+    },
+    "https://developer.apple.com/documentation/coreml/mlcomputeplan-85vdw/computedeviceusageformlprogramoperation:": {
+      "etag": "\"1b1d-65d55da4a47bc-df\"",
+      "file_path": "documentation/CoreML/mlcomputeplan-85vdw/computedeviceusageformlprogramoperation_.md",
+      "hash": "5ec1a7087d3599d962fb384603c3a1b496efbd02c4ea448bad25550aaeb9731c"
+    },
+    "https://developer.apple.com/documentation/coreml/mlcomputeplan-85vdw/computedeviceusageforneuralnetworklayer:": {
+      "etag": "\"1b1f-65d55da4a47bc-df\"",
+      "file_path": "documentation/CoreML/mlcomputeplan-85vdw/computedeviceusageforneuralnetworklayer_.md",
+      "hash": "e267a6a2316c99f2f7b24257f6a1ae50d1960b47086ea8bcdcb80ee02260dd0e"
+    },
+    "https://developer.apple.com/documentation/coreml/mlcomputeplan-85vdw/estimatedcostofmlprogramoperation:": {
+      "etag": "\"16eb-65d55da4a47bc-df\"",
+      "file_path": "documentation/CoreML/mlcomputeplan-85vdw/estimatedcostofmlprogramoperation_.md",
+      "hash": "2edebcf71bbd8862ff619a3e97f96e7b612fff58e1baf67243ec947ade833e80"
+    },
+    "https://developer.apple.com/documentation/coreml/mlcomputeplan-85vdw/loadcontentsofurl:configuration:completionhandler:": {
+      "etag": "\"25ce-65d55da4a47bc-df\"",
+      "file_path": "documentation/CoreML/mlcomputeplan-85vdw/loadcontentsofurl_configuration_completionhandler_.md",
+      "hash": "799ee1f00d9c298cc108a72626828ed46ff3e20ab88c813cfdb58821cc729aa3"
+    },
+    "https://developer.apple.com/documentation/coreml/mlcomputeplan-85vdw/loadmodelasset:configuration:completionhandler:": {
+      "etag": "\"267d-65d55da4a47bc-df\"",
+      "file_path": "documentation/CoreML/mlcomputeplan-85vdw/loadmodelasset_configuration_completionhandler_.md",
+      "hash": "452e0043b46bf5cb9e8ea9d1e04b3d0663e29d49b4a7da326095b2e575e76f48"
+    },
+    "https://developer.apple.com/documentation/coreml/mlcomputeplan-85vdw/modelstructure": {
+      "etag": "\"108b-65d55da4a47bc-df\"",
+      "file_path": "documentation/CoreML/mlcomputeplan-85vdw/modelstructure.md",
+      "hash": "b3d0ac81fd28bbd7c2d80e6837ffb239c2cd87ef7e1d77dbb43a9a75546a4d11"
+    },
+    "https://developer.apple.com/documentation/coreml/mlcomputeplancost": {
+      "etag": "\"179c-65d55da5edd26-df\"",
+      "file_path": "documentation/CoreML/mlcomputeplancost.md",
+      "hash": "a5823dc7b09a8a4dc759f29c898c9d619c9ece0595318ae9512d9910b99cc9c5"
+    },
+    "https://developer.apple.com/documentation/coreml/mlcomputeplancost/weight": {
+      "etag": "\"ec7-65d55da639861-df\"",
+      "file_path": "documentation/CoreML/mlcomputeplancost/weight.md",
+      "hash": "63ff72ff31efb418d1fccdcf5a02d60c1abe4efe03233dded74d079273c2ddc8"
+    },
+    "https://developer.apple.com/documentation/coreml/mlcomputeplandeviceusage": {
+      "etag": "\"1aa9-65d55da5edd26-df\"",
+      "file_path": "documentation/CoreML/mlcomputeplandeviceusage.md",
+      "hash": "e3c62dda3e280bee0f597b89902083894bd28f649e7d3f45cd78e8be9408d30e"
+    },
+    "https://developer.apple.com/documentation/coreml/mlcomputeplandeviceusage/preferredcomputedevice": {
+      "etag": "\"12c9-65d55da60817b-df\"",
+      "file_path": "documentation/CoreML/mlcomputeplandeviceusage/preferredcomputedevice.md",
+      "hash": "fa7206bd12e0750c17cb71d1e2a892d68668888982fa113f42a5f6d0ec5bafd5"
+    },
+    "https://developer.apple.com/documentation/coreml/mlcomputeplandeviceusage/supportedcomputedevices": {
+      "etag": "\"12b4-65d55da60817b-df\"",
+      "file_path": "documentation/CoreML/mlcomputeplandeviceusage/supportedcomputedevices.md",
+      "hash": "807f22d4237226933d2c73a753355fda4424674376e22d83976613b1f110ac79"
     },
     "https://developer.apple.com/documentation/coreml/mlcomputepolicy": {
       "etag": "\"3e96-65d55da639861-df\"",
@@ -531,7 +601,7 @@
       "hash": "fba48cf97576fa8b0730211a075a2db21bb76b5b5299e86e90bdb6b4b1b1ebdc"
     },
     "https://developer.apple.com/documentation/coreml/mlfeaturevalue/imageoption/croprect": {
-      "etag": "\"3863-65d55da64e9a9\"",
+      "etag": "\"3863-65d55da64e9a9-df\"",
       "file_path": "documentation/CoreML/mlfeaturevalue/imageoption/croprect.md",
       "hash": "7b18aa737a6943849c05ccbc3055eebfab824d505d9f68538193e3f41870f0a1"
     },
@@ -885,6 +955,11 @@
       "file_path": "documentation/CoreML/mlmodel.md",
       "hash": "46219e0130a895e252d2534a49d8c03932831a40bbc02d874987eadc04cdab82"
     },
+    "https://developer.apple.com/documentation/coreml/mlmodel/availablecomputedevices-42uzt": {
+      "etag": "\"29b8-65d55da55a532-df\"",
+      "file_path": "documentation/CoreML/mlmodel/availablecomputedevices-42uzt.md",
+      "hash": "7caf1b105c80e94ab1ebd08f5e9524aeafcb04a3868ddc3a6e345b9e16068ddd"
+    },
     "https://developer.apple.com/documentation/coreml/mlmodel/availablecomputedevices-6klyt": {
       "etag": "\"2dae-65d55da55a532-df\"",
       "file_path": "documentation/CoreML/mlmodel/availablecomputedevices-6klyt.md",
@@ -940,6 +1015,11 @@
       "file_path": "documentation/CoreML/mlmodel/load(contentsof,configuration,completionhandler).md",
       "hash": "2415074e9de86b1c2c3d7060e4965a0c04c7b86522dd30dd4e8f969149eb382b"
     },
+    "https://developer.apple.com/documentation/coreml/mlmodel/loadcontentsofurl:configuration:completionhandler:": {
+      "etag": "\"4085-65d55da55a532-df\"",
+      "file_path": "documentation/CoreML/mlmodel/loadcontentsofurl_configuration_completionhandler_.md",
+      "hash": "9517e38182835b5b0ba25c6e981c79a99c353727365a8decaa3915da78f08341"
+    },
     "https://developer.apple.com/documentation/coreml/mlmodel/makestate()": {
       "etag": "\"18fd-65d55da55a532-df\"",
       "file_path": "documentation/CoreML/mlmodel/makestate().md",
@@ -949,6 +1029,11 @@
       "etag": "\"3692-65d55da55a532-df\"",
       "file_path": "documentation/CoreML/mlmodel/modeldescription.md",
       "hash": "e3460774daafcbb131d934b37b0135e172900b0a00c7b2b16f9c4c6c65b08e1a"
+    },
+    "https://developer.apple.com/documentation/coreml/mlmodel/newstate": {
+      "etag": "\"1913-65d55da55a532-df\"",
+      "file_path": "documentation/CoreML/mlmodel/newstate.md",
+      "hash": "0add5b2d1154f2c1ca53348ceb37bcfc11c15f16f27cbb85480fff59de662eae"
     },
     "https://developer.apple.com/documentation/coreml/mlmodel/parametervalue(for:)": {
       "etag": "\"3e91-65d55da55a532-df\"",
@@ -974,6 +1059,21 @@
       "etag": "\"49ad-65d55da55a532-df\"",
       "file_path": "documentation/CoreML/mlmodel/prediction(from,using,options).md",
       "hash": "ea90a89db0d0893a29f0c7626ec0ca3f232b37cc86f17aaa2dc2dff948575491"
+    },
+    "https://developer.apple.com/documentation/coreml/mlmodel/predictionfromfeatures:completionhandler:": {
+      "etag": "\"227b-65d55da55a532-df\"",
+      "file_path": "documentation/CoreML/mlmodel/predictionfromfeatures_completionhandler_.md",
+      "hash": "2aa31483992f0abd2f04e6e754379226bceeef7830be4d1945a657d4aaa5001b"
+    },
+    "https://developer.apple.com/documentation/coreml/mlmodel/predictionfromfeatures:options:completionhandler:": {
+      "etag": "\"28f7-65d55da55a532-df\"",
+      "file_path": "documentation/CoreML/mlmodel/predictionfromfeatures_options_completionhandler_.md",
+      "hash": "2636b44b6529c9684c092e4aa0d2681b6da70f9a6614107ee7669afee70bd12e"
+    },
+    "https://developer.apple.com/documentation/coreml/mlmodel/predictionfromfeatures:usingstate:options:completionhandler:": {
+      "etag": "\"2f81-65d55da55a532-df\"",
+      "file_path": "documentation/CoreML/mlmodel/predictionfromfeatures_usingstate_options_completionhandler_.md",
+      "hash": "2edbbde592e9e3d623b5c027d7f376a923933f5da61b988e25cc37d3258b9d65"
     },
     "https://developer.apple.com/documentation/coreml/mlmodel/predictions(from:options:)": {
       "etag": "\"4e22-65d55da55a532-df\"",
@@ -1029,6 +1129,11 @@
       "etag": "\"60fe-65d55da520e30-df\"",
       "file_path": "documentation/CoreML/mlmodelcollection.md",
       "hash": "a416028ccef4ec1c8612707d59b6c9a7aad9849085fca68b03dcdf1d393fa173"
+    },
+    "https://developer.apple.com/documentation/coreml/mlmodelcollection/beginaccessingmodelcollectionwithidentifier:completionhandler:": {
+      "etag": "\"548f-65d55da55a532-df\"",
+      "file_path": "documentation/CoreML/mlmodelcollection/beginaccessingmodelcollectionwithidentifier_completionhandler_.md",
+      "hash": "96f59312232b55845a2ba7c4a7776f90dff17303e72f8628d22fe25dcbb4404c"
     },
     "https://developer.apple.com/documentation/coreml/mlmodelcollection/deploymentid": {
       "etag": "\"2ea8-65d55da55a532-df\"",
@@ -1109,6 +1214,11 @@
       "etag": "\"158a-65d55da5edd26-df\"",
       "file_path": "documentation/CoreML/mlmodelconfiguration/optimizationhints-1oq0g.md",
       "hash": "30ac75283411cb57df145f7297b6deae13af43e5100caa11c5bfd55e83362e2f"
+    },
+    "https://developer.apple.com/documentation/coreml/mlmodelconfiguration/optimizationhints-81u6f": {
+      "etag": "\"13ed-65d55da5edd26-df\"",
+      "file_path": "documentation/CoreML/mlmodelconfiguration/optimizationhints-81u6f.md",
+      "hash": "cc28993081406341a09404633d4ce86a34a4bb6ebeef83c43b24babf0393b32a"
     },
     "https://developer.apple.com/documentation/coreml/mlmodelconfiguration/parameters": {
       "etag": "\"2cf1-65d55da5d4145-df\"",
@@ -1350,6 +1460,36 @@
       "file_path": "documentation/CoreML/mlmodelmetadatakey/versionstring.md",
       "hash": "9f979b93b491c4a65d25fbd7a3d4a65c980914fd1a9869b0bb641d4ed4ad442c"
     },
+    "https://developer.apple.com/documentation/coreml/mlmodelstructure-c.class": {
+      "etag": "\"3d22-65d55da5bad36-df\"",
+      "file_path": "documentation/CoreML/mlmodelstructure-c.class.md",
+      "hash": "a754ab6f113c549c9b67e4b4ed213e5cebd2574f7fcd68d9031c5652441c037d"
+    },
+    "https://developer.apple.com/documentation/coreml/mlmodelstructure-c.class/loadcontentsofurl:completionhandler:": {
+      "etag": "\"1ee6-65d55da60817b-df\"",
+      "file_path": "documentation/CoreML/mlmodelstructure-c.class/loadcontentsofurl_completionhandler_.md",
+      "hash": "84c3f400b0eab51d38f55e2ffba79e9f810638fc8ec9e57c18a11eb91a89a8ec"
+    },
+    "https://developer.apple.com/documentation/coreml/mlmodelstructure-c.class/loadmodelasset:completionhandler:": {
+      "etag": "\"1f96-65d55da60817b-df\"",
+      "file_path": "documentation/CoreML/mlmodelstructure-c.class/loadmodelasset_completionhandler_.md",
+      "hash": "77e702db6b15d34000dd1f0c75444a63e5e72a6a7f231ed5defe3efe0feaf7b0"
+    },
+    "https://developer.apple.com/documentation/coreml/mlmodelstructure-c.class/neuralnetwork": {
+      "etag": "\"17c0-65d55da5edd26-df\"",
+      "file_path": "documentation/CoreML/mlmodelstructure-c.class/neuralnetwork.md",
+      "hash": "8068bf59eb85593ba96bd2b7f8d781452368420998c578c087c1c2c3d792d21e"
+    },
+    "https://developer.apple.com/documentation/coreml/mlmodelstructure-c.class/pipeline": {
+      "etag": "\"176b-65d55da60817b-df\"",
+      "file_path": "documentation/CoreML/mlmodelstructure-c.class/pipeline.md",
+      "hash": "5809b7cac37175ac2eca1df1001e130ce6a4e718f3000f332dd008f29d72093d"
+    },
+    "https://developer.apple.com/documentation/coreml/mlmodelstructure-c.class/program": {
+      "etag": "\"1764-65d55da5edd26-df\"",
+      "file_path": "documentation/CoreML/mlmodelstructure-c.class/program.md",
+      "hash": "28ff8bf9b344a011e1976c2b7724d78860d94ecc1c8b05870950db0fdc08a142"
+    },
     "https://developer.apple.com/documentation/coreml/mlmodelstructure-swift.enum": {
       "etag": "\"44a5-65d55da639861-df\"",
       "file_path": "documentation/CoreML/mlmodelstructure-swift.enum.md",
@@ -1555,6 +1695,176 @@
       "file_path": "documentation/CoreML/mlmodelstructure-swift.enum/unsupported.md",
       "hash": "dd2ecc83a5d04818a779b834396ddc6ba0dc4c4778f2aaa2bef928a19183d123"
     },
+    "https://developer.apple.com/documentation/coreml/mlmodelstructureneuralnetwork": {
+      "etag": "\"2e99-65d55da60817b-df\"",
+      "file_path": "documentation/CoreML/mlmodelstructureneuralnetwork.md",
+      "hash": "ed08b89b00d4043887eb695abfe14e51ed9393e7bc8abd084f3d771993b1090d"
+    },
+    "https://developer.apple.com/documentation/coreml/mlmodelstructureneuralnetwork/layers": {
+      "etag": "\"f03-65d55da639861-df\"",
+      "file_path": "documentation/CoreML/mlmodelstructureneuralnetwork/layers.md",
+      "hash": "7ea1695275c4c82eaca800aad6139878fcfeb01fbeb140efeb0c5fcd7ca5ffc8"
+    },
+    "https://developer.apple.com/documentation/coreml/mlmodelstructureneuralnetworklayer": {
+      "etag": "\"355c-65d55da64e9a9-df\"",
+      "file_path": "documentation/CoreML/mlmodelstructureneuralnetworklayer.md",
+      "hash": "165690ac9f74c670cc67abe4b04e56481810b501594cecb1bb803f91ecae93d3"
+    },
+    "https://developer.apple.com/documentation/coreml/mlmodelstructureneuralnetworklayer/inputnames": {
+      "etag": "\"161f-65d55da684625-df\"",
+      "file_path": "documentation/CoreML/mlmodelstructureneuralnetworklayer/inputnames.md",
+      "hash": "0029744deb2a22eae348826f8811ab1e5b072f0fdcc79746013773bdf7affef3"
+    },
+    "https://developer.apple.com/documentation/coreml/mlmodelstructureneuralnetworklayer/name": {
+      "etag": "\"193c-65d55da684625-df\"",
+      "file_path": "documentation/CoreML/mlmodelstructureneuralnetworklayer/name.md",
+      "hash": "84e06c98a75a8480d62f74bb1923e46f0e71a51e17de0d5e94c9802bd334c226"
+    },
+    "https://developer.apple.com/documentation/coreml/mlmodelstructureneuralnetworklayer/outputnames": {
+      "etag": "\"1626-65d55da684625-df\"",
+      "file_path": "documentation/CoreML/mlmodelstructureneuralnetworklayer/outputnames.md",
+      "hash": "a3526b40753a9baf9ae76f5c29560e95d3cd82350987faa1d9c6b83005431dab"
+    },
+    "https://developer.apple.com/documentation/coreml/mlmodelstructureneuralnetworklayer/type": {
+      "etag": "\"196f-65d55da684625-df\"",
+      "file_path": "documentation/CoreML/mlmodelstructureneuralnetworklayer/type.md",
+      "hash": "aa09f598df5869a32c32aaf171e8db873c682336997a24dee9f87fdc2f6120e1"
+    },
+    "https://developer.apple.com/documentation/coreml/mlmodelstructurepipeline": {
+      "etag": "\"30c7-65d55da5bad36-df\"",
+      "file_path": "documentation/CoreML/mlmodelstructurepipeline.md",
+      "hash": "7e2bc1d7ea59213b633ce33cc28adc8cede5d55211b7acd3900e3a5f3500f72d"
+    },
+    "https://developer.apple.com/documentation/coreml/mlmodelstructurepipeline/submodelnames": {
+      "etag": "\"11a4-65d55da639861-df\"",
+      "file_path": "documentation/CoreML/mlmodelstructurepipeline/submodelnames.md",
+      "hash": "444869ad9ebefef25f5ffb1b18755f8c5e3ba81e0acfd91fe8b3359e7e766f03"
+    },
+    "https://developer.apple.com/documentation/coreml/mlmodelstructurepipeline/submodels": {
+      "etag": "\"1198-65d55da639861-df\"",
+      "file_path": "documentation/CoreML/mlmodelstructurepipeline/submodels.md",
+      "hash": "b7e77d899c9e2fd070f7309146706694e80cb2acfcb8f42e22c422c4c8aa8734"
+    },
+    "https://developer.apple.com/documentation/coreml/mlmodelstructureprogram": {
+      "etag": "\"2e6b-65d55da54085a-df\"",
+      "file_path": "documentation/CoreML/mlmodelstructureprogram.md",
+      "hash": "409bd3666ca40bb2099b6f69be24ecda4308d5849c5870419e7a872624d4a605"
+    },
+    "https://developer.apple.com/documentation/coreml/mlmodelstructureprogram/functions": {
+      "etag": "\"ebf-65d55da60817b-df\"",
+      "file_path": "documentation/CoreML/mlmodelstructureprogram/functions.md",
+      "hash": "d975e128e8b9bd71dc39a48867719a4ff65f280789bbe7bd997d82f1418ce27e"
+    },
+    "https://developer.apple.com/documentation/coreml/mlmodelstructureprogramargument": {
+      "etag": "\"2e92-65d55da66b852-df\"",
+      "file_path": "documentation/CoreML/mlmodelstructureprogramargument.md",
+      "hash": "b207e9af95ea2e31e2eba947b11e03b4fd566a65b0caada9b53c8ba2b4eae33f"
+    },
+    "https://developer.apple.com/documentation/coreml/mlmodelstructureprogramargument/bindings": {
+      "etag": "\"ee5-65d55da60817b-df\"",
+      "file_path": "documentation/CoreML/mlmodelstructureprogramargument/bindings.md",
+      "hash": "eba618059758a2d176f3082cbf74928a8037cd8c6ccef1e4df997af0f87d29ac"
+    },
+    "https://developer.apple.com/documentation/coreml/mlmodelstructureprogrambinding": {
+      "etag": "\"31c8-65d55da55a532-df\"",
+      "file_path": "documentation/CoreML/mlmodelstructureprogrambinding.md",
+      "hash": "81f5a45ce45d450f9810e4e1c150390949664507102e8d32cfa1ba8ebddb0950"
+    },
+    "https://developer.apple.com/documentation/coreml/mlmodelstructureprogrambinding/name": {
+      "etag": "\"14f8-65d55da520e30-df\"",
+      "file_path": "documentation/CoreML/mlmodelstructureprogrambinding/name.md",
+      "hash": "76f2ccbf7fdeda4de689d5c0e24ac0d4604e7db22c6d6803712073ae0ea150d6"
+    },
+    "https://developer.apple.com/documentation/coreml/mlmodelstructureprogrambinding/value": {
+      "etag": "\"1420-65d55da520e30-df\"",
+      "file_path": "documentation/CoreML/mlmodelstructureprogrambinding/value.md",
+      "hash": "3475437ed57991dd1cbc06a4893aff1cbff089426c5a518ea2f3e5a4968384bc"
+    },
+    "https://developer.apple.com/documentation/coreml/mlmodelstructureprogramblock": {
+      "etag": "\"32f0-65d55da60817b-df\"",
+      "file_path": "documentation/CoreML/mlmodelstructureprogramblock.md",
+      "hash": "2704e4adf5d014694d168a0d7e1ed6959de3c80b12efe40389c2a0e90606deda"
+    },
+    "https://developer.apple.com/documentation/coreml/mlmodelstructureprogramblock/inputs": {
+      "etag": "\"13ba-65d55da54085a-df\"",
+      "file_path": "documentation/CoreML/mlmodelstructureprogramblock/inputs.md",
+      "hash": "bf10950bea512bef2f700f65c3ccaa54f0636667d7568f1df220056f5084f8c9"
+    },
+    "https://developer.apple.com/documentation/coreml/mlmodelstructureprogramblock/operations": {
+      "etag": "\"13e8-65d55da54085a-df\"",
+      "file_path": "documentation/CoreML/mlmodelstructureprogramblock/operations.md",
+      "hash": "2bebad90c362b807e3d87561ad44e2bc150d829112c0da5548bf4b4b8650564b"
+    },
+    "https://developer.apple.com/documentation/coreml/mlmodelstructureprogramblock/outputnames": {
+      "etag": "\"13ae-65d55da54085a-df\"",
+      "file_path": "documentation/CoreML/mlmodelstructureprogramblock/outputnames.md",
+      "hash": "ec5f32add515ae186d464255c70725a7b0ff551f0337fe6a561cdd8b8ca8d1d6"
+    },
+    "https://developer.apple.com/documentation/coreml/mlmodelstructureprogramfunction": {
+      "etag": "\"30cf-65d55da4a47bc-df\"",
+      "file_path": "documentation/CoreML/mlmodelstructureprogramfunction.md",
+      "hash": "4a9d86d79442932ab165599e44620190b99641158d574708bc373fb98f55709b"
+    },
+    "https://developer.apple.com/documentation/coreml/mlmodelstructureprogramfunction/block": {
+      "etag": "\"13d5-65d55da66b852-df\"",
+      "file_path": "documentation/CoreML/mlmodelstructureprogramfunction/block.md",
+      "hash": "b1ede3388f576cf219550d24ba361b35e40dd0889e1d24e8c26fd8a673b2224f"
+    },
+    "https://developer.apple.com/documentation/coreml/mlmodelstructureprogramfunction/inputs": {
+      "etag": "\"11a2-65d55da684625-df\"",
+      "file_path": "documentation/CoreML/mlmodelstructureprogramfunction/inputs.md",
+      "hash": "e8c5dda693a449554733f12b885ec6eb9e6e97de4e3382775bfd819dc2484db2"
+    },
+    "https://developer.apple.com/documentation/coreml/mlmodelstructureprogramnamedvaluetype": {
+      "etag": "\"30fd-65d55da5edd26-df\"",
+      "file_path": "documentation/CoreML/mlmodelstructureprogramnamedvaluetype.md",
+      "hash": "12d14da32be155a966ee472932d24cb4cfea6f0839657947674cbc57079b7dea"
+    },
+    "https://developer.apple.com/documentation/coreml/mlmodelstructureprogramnamedvaluetype/name": {
+      "etag": "\"14ee-65d55da5a1bca-df\"",
+      "file_path": "documentation/CoreML/mlmodelstructureprogramnamedvaluetype/name.md",
+      "hash": "8b1f7d87e1d62e8cee6aec9abbadc1642f3451fec72b8fa5965deb492976308d"
+    },
+    "https://developer.apple.com/documentation/coreml/mlmodelstructureprogramnamedvaluetype/type": {
+      "etag": "\"143c-65d55da5a1bca-df\"",
+      "file_path": "documentation/CoreML/mlmodelstructureprogramnamedvaluetype/type.md",
+      "hash": "ba0ccecd6c1073c359f53b1c7455e2a0fffa317449ccd74d9de967a69d0b0d32"
+    },
+    "https://developer.apple.com/documentation/coreml/mlmodelstructureprogramoperation": {
+      "etag": "\"35b7-65d55da6219fd-df\"",
+      "file_path": "documentation/CoreML/mlmodelstructureprogramoperation.md",
+      "hash": "27edada4bea9e2609e1ef1b266ce7d4f6b475dba459034b7a29501765017be14"
+    },
+    "https://developer.apple.com/documentation/coreml/mlmodelstructureprogramoperation/blocks": {
+      "etag": "\"16c1-65d55da639861-df\"",
+      "file_path": "documentation/CoreML/mlmodelstructureprogramoperation/blocks.md",
+      "hash": "a82e12402c4526f9bf2c8b282ef3451068e1a3bb866e1fbee9a48609c0c5bb4e"
+    },
+    "https://developer.apple.com/documentation/coreml/mlmodelstructureprogramoperation/inputs": {
+      "etag": "\"1699-65d55da639861-df\"",
+      "file_path": "documentation/CoreML/mlmodelstructureprogramoperation/inputs.md",
+      "hash": "005934f82e08848938470be54f1c27fc9e5268b64b456e14672480a93d88a48f"
+    },
+    "https://developer.apple.com/documentation/coreml/mlmodelstructureprogramoperation/operatorname": {
+      "etag": "\"19ff-65d55da639861-df\"",
+      "file_path": "documentation/CoreML/mlmodelstructureprogramoperation/operatorname.md",
+      "hash": "4edd6176265e949700242c609c4ef37f724800c1cd3018b9470ecbc533e3791e"
+    },
+    "https://developer.apple.com/documentation/coreml/mlmodelstructureprogramoperation/outputs": {
+      "etag": "\"168e-65d55da639861-df\"",
+      "file_path": "documentation/CoreML/mlmodelstructureprogramoperation/outputs.md",
+      "hash": "68ae372aae5db8669435da323bd71ffd18936fe75d6993ea893944e555216133"
+    },
+    "https://developer.apple.com/documentation/coreml/mlmodelstructureprogramvalue": {
+      "etag": "\"2bfe-65d55da5edd26-df\"",
+      "file_path": "documentation/CoreML/mlmodelstructureprogramvalue.md",
+      "hash": "9fd771342b8df0ea6e8ab3c5688911a81015cc3f99a1541eae8d775a4efcf92e"
+    },
+    "https://developer.apple.com/documentation/coreml/mlmodelstructureprogramvaluetype": {
+      "etag": "\"2c27-65d55da5edd26-df\"",
+      "file_path": "documentation/CoreML/mlmodelstructureprogramvaluetype.md",
+      "hash": "dac8e5741f4bcc041a48224f560127c0b91b0ccb0967dfd8e5a5b961901670e3"
+    },
     "https://developer.apple.com/documentation/coreml/mlmultiarray": {
       "etag": "\"1079a-65d55da66b852-df\"",
       "file_path": "documentation/CoreML/mlmultiarray.md",
@@ -1574,6 +1884,16 @@
       "etag": "\"2dd1-65d55da5bad36-df\"",
       "file_path": "documentation/CoreML/mlmultiarray/datatype.md",
       "hash": "649268f2017caa5034b1c0d1bfa21ab62bfd150bb175e73bafd426d8d12c7e1e"
+    },
+    "https://developer.apple.com/documentation/coreml/mlmultiarray/getbyteswithhandler:": {
+      "etag": "\"3091-65d55da5bad36-df\"",
+      "file_path": "documentation/CoreML/mlmultiarray/getbyteswithhandler_.md",
+      "hash": "603e791e9453585c6d98d81dc825444c97c5e01271409b16490cd3f1e3ba6074"
+    },
+    "https://developer.apple.com/documentation/coreml/mlmultiarray/getmutablebyteswithhandler:": {
+      "etag": "\"2e26-65d55da5bad36-df\"",
+      "file_path": "documentation/CoreML/mlmultiarray/getmutablebyteswithhandler_.md",
+      "hash": "0bf45520e141a534db9c3c00e51fffc0a1f8070ae49e7461d38d2bb50b484227"
     },
     "https://developer.apple.com/documentation/coreml/mlmultiarray/init(_:)": {
       "etag": "\"6494-65d55da5bad36-df\"",
@@ -1615,6 +1935,11 @@
       "file_path": "documentation/CoreML/mlmultiarray/init(shape,datatype,strides).md",
       "hash": "bfcede6deebddc18f377c4f6e607b45d15a38cf86b33fb0b743999bcadc06fe7"
     },
+    "https://developer.apple.com/documentation/coreml/mlmultiarray/initwithshape:datatype:strides:": {
+      "etag": "\"34ef-65d55da5bad36-df\"",
+      "file_path": "documentation/CoreML/mlmultiarray/initwithshape_datatype_strides_.md",
+      "hash": "8ef5d9d404a2343fc25458ded142060522c20c02764cc5dd861375dd30eb6077"
+    },
     "https://developer.apple.com/documentation/coreml/mlmultiarray/mlmultiarray-implementations": {
       "etag": "\"150b-65902626d3a8d-df\"",
       "file_path": "documentation/CoreML/mlmultiarray/mlmultiarray-implementations.md",
@@ -1624,6 +1949,16 @@
       "etag": "\"31e5-65d55da5bad36-df\"",
       "file_path": "documentation/CoreML/mlmultiarray/pixelbuffer.md",
       "hash": "7c19270d12644601a07f2a69489a7ab39dd46578f489808300384c2e68a5ab79"
+    },
+    "https://developer.apple.com/documentation/coreml/mlmultiarray/setobject:atindexedsubscript:": {
+      "etag": "\"2bc2-65d55da5bad36-df\"",
+      "file_path": "documentation/CoreML/mlmultiarray/setobject_atindexedsubscript_.md",
+      "hash": "f5ff2720f7b2aac71dea13c6617b8db89c13e1fa588ee14a5dd27dc9e74e38a5"
+    },
+    "https://developer.apple.com/documentation/coreml/mlmultiarray/setobject:forkeyedsubscript:": {
+      "etag": "\"300f-65d55da5bad36-df\"",
+      "file_path": "documentation/CoreML/mlmultiarray/setobject_forkeyedsubscript_.md",
+      "hash": "d12c7a5ad55d1a11b6f4507a276b474ba7a5c707ca019c794478163b10ab5eca"
     },
     "https://developer.apple.com/documentation/coreml/mlmultiarray/shape": {
       "etag": "\"2c16-65d55da5a1bca-df\"",
@@ -1820,6 +2155,21 @@
       "file_path": "documentation/CoreML/mlnumericconstraint/minnumber.md",
       "hash": "a0fc63a0f15c2ea1c470cf1465c77afe2320636c08ab005f916ad2d7e436e55b"
     },
+    "https://developer.apple.com/documentation/coreml/mloptimizationhints-c.class": {
+      "etag": "\"20b7-65d55da520e30-df\"",
+      "file_path": "documentation/CoreML/mloptimizationhints-c.class.md",
+      "hash": "9d31f5e14471848689330654bf9c99a0fcb82983b9f69d7b894c4cbf7e915e06"
+    },
+    "https://developer.apple.com/documentation/coreml/mloptimizationhints-c.class/reshapefrequency": {
+      "etag": "\"136c-65d55da5edd26-df\"",
+      "file_path": "documentation/CoreML/mloptimizationhints-c.class/reshapefrequency.md",
+      "hash": "dad010f71d06d8b150dba67f9e14c7091c9892cec58b7e599fbfb87ad3feb822"
+    },
+    "https://developer.apple.com/documentation/coreml/mloptimizationhints-c.class/specializationstrategy": {
+      "etag": "\"139f-65d55da5edd26-df\"",
+      "file_path": "documentation/CoreML/mloptimizationhints-c.class/specializationstrategy.md",
+      "hash": "d3da60c1d199cd0ee0e86c52a1b794eacb186db2a5796cc8263041ddda3aa7d0"
+    },
     "https://developer.apple.com/documentation/coreml/mloptimizationhints-swift.struct": {
       "etag": "\"2f44-65d55da520e30-df\"",
       "file_path": "documentation/CoreML/mloptimizationhints-swift.struct.md",
@@ -1989,6 +2339,21 @@
       "etag": "\"2033-65d55da5bad36-df\"",
       "file_path": "documentation/CoreML/mlpredictionoptions/usescpuonly.md",
       "hash": "33bae928ed6be311c8758b58482eec34e0b4de9a171a5556d40d7146ac313800"
+    },
+    "https://developer.apple.com/documentation/coreml/mlreshapefrequencyhint": {
+      "etag": "\"1930-65d55da639861-df\"",
+      "file_path": "documentation/CoreML/mlreshapefrequencyhint.md",
+      "hash": "03f2ab0206ce86fde6ab6227668499a83907f1c39fd216a21e77a64eda1a5292"
+    },
+    "https://developer.apple.com/documentation/coreml/mlreshapefrequencyhint/mlreshapefrequencyhintfrequent": {
+      "etag": "\"14f7-65d55da66b852-df\"",
+      "file_path": "documentation/CoreML/mlreshapefrequencyhint/mlreshapefrequencyhintfrequent.md",
+      "hash": "5e3d92b9f2c2cb9dc82420914f09fc4a8871bf4dd2aceed0d24b3e81a6a0dfcf"
+    },
+    "https://developer.apple.com/documentation/coreml/mlreshapefrequencyhint/mlreshapefrequencyhintinfrequent": {
+      "etag": "\"149e-65d55da66b852-df\"",
+      "file_path": "documentation/CoreML/mlreshapefrequencyhint/mlreshapefrequencyhintinfrequent.md",
+      "hash": "251ff4cbd54abad1d0dc22b8f4d0dc1527740aa8833736497d65b490da643a46"
     },
     "https://developer.apple.com/documentation/coreml/mlsendablefeaturevalue": {
       "etag": "\"6cb6-65d55da684625-df\"",
@@ -2380,10 +2745,50 @@
       "file_path": "documentation/CoreML/mlshapedarrayprotocol/subscript(_).md",
       "hash": "3b312dd66cf0eaa9777ff20b98303751c95f63db97418075fb4081bbc87b6583"
     },
+    "https://developer.apple.com/documentation/coreml/mlshapedarrayprotocol/subscript(_:)-23n4b": {
+      "etag": "\"2059-65d55da5d4145-df\"",
+      "file_path": "documentation/CoreML/mlshapedarrayprotocol/subscript(_)-23n4b.md",
+      "hash": "3b3ebfe076854b3e02ffd604136e596849322ba95a6f965012f8cd38db8a9548"
+    },
+    "https://developer.apple.com/documentation/coreml/mlshapedarrayprotocol/subscript(_:)-2cxk1": {
+      "etag": "\"1f8a-65d55da5d4145-df\"",
+      "file_path": "documentation/CoreML/mlshapedarrayprotocol/subscript(_)-2cxk1.md",
+      "hash": "342846d250887b1d9af832fcff4579423d7e428bc081fa5d1af926cad9a7b72b"
+    },
+    "https://developer.apple.com/documentation/coreml/mlshapedarrayprotocol/subscript(_:)-2hc37": {
+      "etag": "\"2040-65d55da5d4145-df\"",
+      "file_path": "documentation/CoreML/mlshapedarrayprotocol/subscript(_)-2hc37.md",
+      "hash": "316a8eee57be5a357c364cfb23bb24979ad2717f42d67001127a3b50b1393991"
+    },
+    "https://developer.apple.com/documentation/coreml/mlshapedarrayprotocol/subscript(_:)-3ao6n": {
+      "etag": "\"201d-65d55da5d4145-df\"",
+      "file_path": "documentation/CoreML/mlshapedarrayprotocol/subscript(_)-3ao6n.md",
+      "hash": "4fa4ec0f69bb170c502a70723da32218eff2b0fb325e8c607fdb7eff2991c9e8"
+    },
+    "https://developer.apple.com/documentation/coreml/mlshapedarrayprotocol/subscript(_:)-5r9r3": {
+      "etag": "\"1d9a-65d55da5d4145-df\"",
+      "file_path": "documentation/CoreML/mlshapedarrayprotocol/subscript(_)-5r9r3.md",
+      "hash": "696ceefd9c9769f9c3dd9a737179801a88325c0ec2cc40a34809a3193d0f20d6"
+    },
+    "https://developer.apple.com/documentation/coreml/mlshapedarrayprotocol/subscript(_:)-70104": {
+      "etag": "\"2743-65d55da5d4145-df\"",
+      "file_path": "documentation/CoreML/mlshapedarrayprotocol/subscript(_)-70104.md",
+      "hash": "71840ab73aa8a00401ddd2011396381c6051ae043ec2ecee564012eb23c83851"
+    },
+    "https://developer.apple.com/documentation/coreml/mlshapedarrayprotocol/subscript(_:)-79cx4": {
+      "etag": "\"1b2b-65d55da5d4145-df\"",
+      "file_path": "documentation/CoreML/mlshapedarrayprotocol/subscript(_)-79cx4.md",
+      "hash": "ee4611fc9c59959cbd2d712a8270ab9a13aad6b846bd605d3da343814b19dbb1"
+    },
     "https://developer.apple.com/documentation/coreml/mlshapedarrayprotocol/subscript(scalarat:)": {
       "etag": "\"289d-65d55da5d4145-df\"",
       "file_path": "documentation/CoreML/mlshapedarrayprotocol/subscript(scalarat).md",
       "hash": "8ea70c0187c8069e78c0d3ec7d9bdb6b7a474e40e6b79522ca578c7f624cd40b"
+    },
+    "https://developer.apple.com/documentation/coreml/mlshapedarrayprotocol/subscript(scalarat:)-6yvwm": {
+      "etag": "\"1a69-65d55da5d4145-df\"",
+      "file_path": "documentation/CoreML/mlshapedarrayprotocol/subscript(scalarat)-6yvwm.md",
+      "hash": "8fba14367395f9d20efce5c2df5b12e0fb2da3cf2983f7c0709f62eb6c2a9e0d"
     },
     "https://developer.apple.com/documentation/coreml/mlshapedarrayprotocol/withunsafemutableshapedbufferpointer(_:)": {
       "etag": "\"28d5-65d55da5d4145-df\"",
@@ -2515,10 +2920,30 @@
       "file_path": "documentation/CoreML/mlshapedarrayslice/withunsafemutableshapedbufferpointer(using,_).md",
       "hash": "8c3361c9a0c8223119fe3f60d0871a098fb5f90c938ccf7a0127a6e9bd50c33d"
     },
+    "https://developer.apple.com/documentation/coreml/mlspecializationstrategy": {
+      "etag": "\"177e-65d55da684625-df\"",
+      "file_path": "documentation/CoreML/mlspecializationstrategy.md",
+      "hash": "282365718a2550c69035c2435123a9eeeb4924dbabaf1292619fe8b8b45b6f33"
+    },
+    "https://developer.apple.com/documentation/coreml/mlspecializationstrategy/mlspecializationstrategydefault": {
+      "etag": "\"11bc-65d55da5bad36-df\"",
+      "file_path": "documentation/CoreML/mlspecializationstrategy/mlspecializationstrategydefault.md",
+      "hash": "2dc72cd9fd3ac27757c910c4f0e7490cf1b3615614fae41cb0ea1cfd9a1620c3"
+    },
+    "https://developer.apple.com/documentation/coreml/mlspecializationstrategy/mlspecializationstrategyfastprediction": {
+      "etag": "\"1243-65d55da5bad36-df\"",
+      "file_path": "documentation/CoreML/mlspecializationstrategy/mlspecializationstrategyfastprediction.md",
+      "hash": "b0b006e11d3aff28b5335af0f19266ce89908048c53ec445f4d96abdd5036d3d"
+    },
     "https://developer.apple.com/documentation/coreml/mlstate": {
       "etag": "\"4833-65d55da4a47bc-df\"",
       "file_path": "documentation/CoreML/mlstate.md",
       "hash": "6544e11a3eefd03f518939873f31aca9d23b3baea69cdd6808c2dffb431a601b"
+    },
+    "https://developer.apple.com/documentation/coreml/mlstate/getmultiarrayforstatenamed:handler:": {
+      "etag": "\"1ca2-65d55da66b852-df\"",
+      "file_path": "documentation/CoreML/mlstate/getmultiarrayforstatenamed_handler_.md",
+      "hash": "b0a085a59bafa905d1a0fba87e61dbbb1f05af8f762374bdedff84b4613ea8bd"
     },
     "https://developer.apple.com/documentation/coreml/mlstate/withmultiarray(_:)": {
       "etag": "\"1e04-65d55da66b852-df\"",
@@ -2539,6 +2964,11 @@
       "etag": "\"18b4-65d55da54085a-df\"",
       "file_path": "documentation/CoreML/mlstateconstraint/buffershape-4zb3w.md",
       "hash": "f8dadd33a58ce40480a9c5ed2aa0304b737e12bc5bd2143bc5e9f22cb8baf652"
+    },
+    "https://developer.apple.com/documentation/coreml/mlstateconstraint/buffershape-6o5vn": {
+      "etag": "\"15b0-65d55da54085a-df\"",
+      "file_path": "documentation/CoreML/mlstateconstraint/buffershape-6o5vn.md",
+      "hash": "cac8f2651959a0da144a2df9a994fc3e83da7e25068721c3c3e4f3f1ea026378"
     },
     "https://developer.apple.com/documentation/coreml/mlstateconstraint/datatype": {
       "etag": "\"25a0-65d55da54085a-df\"",
@@ -3485,6 +3915,11 @@
       "file_path": "documentation/CoreML/model-personalization.md",
       "hash": "b153c9a3c20e6416d8af1f1c60b2fc803489c64aa1054cb438bef29619d2872a"
     },
+    "https://developer.apple.com/documentation/coreml/modelcollection_sunset": {
+      "etag": "\"c84-65d55da60817b-df\"",
+      "file_path": "documentation/CoreML/modelcollection_sunset.md",
+      "hash": "72e776287b49356ff911f7d80bb26705fd113cdcd1e86acfcbe95cc6ae09553b"
+    },
     "https://developer.apple.com/documentation/coreml/personalizing-a-model-with-on-device-updates": {
       "etag": "\"83ac-65d55da639861-df\"",
       "file_path": "documentation/CoreML/personalizing-a-model-with-on-device-updates.md",
@@ -3599,6 +4034,16 @@
       "etag": "\"66a8-65d55da54085a-df\"",
       "file_path": "documentation/CoreML/making-predictions-with-a-sequence-of-inputs.md",
       "hash": "cc1805cad614608e9294179c008a4289ef587b0091bddadf9d326e0e82df28d6"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/coreml/ml_export.json": {
+      "etag": "\"c17-65d55da5bad36-df\"",
+      "file_path": "documentation/CoreML/ml_export.md",
+      "hash": "df9145bc4b5b48a9d4c4befed36bc2ea9bca7cb6a6c240ce872f44c298086af0"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/coreml/mlallcomputedevices.json": {
+      "etag": "\"1f2e-65d55da5bad36-df\"",
+      "file_path": "documentation/CoreML/mlallcomputedevices.md",
+      "hash": "bbb68bed3fb7594f51954612ebde780d7476e24d5eb960712c9928c72a82a7c3"
     },
     "https://developer.apple.com/tutorials/data/documentation/coreml/mlarraybatchprovider.json": {
       "etag": "\"611b-65d55da5bad36-df\"",
@@ -3734,6 +4179,66 @@
       "etag": "\"123d-65d55da54085a-df\"",
       "file_path": "documentation/CoreML/mlcomputeplan-1w21n/modelstructure.md",
       "hash": "0a20654fa05a553778e43f9059812744dd55da2759b56efdfadef96b7a40a24f"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/coreml/mlcomputeplan-85vdw.json": {
+      "etag": "\"2f10-65d55da66b852-df\"",
+      "file_path": "documentation/CoreML/mlcomputeplan-85vdw.md",
+      "hash": "68fd98daade79b90d6761252ac5df7125ecbe6dcbf066f3d906d2a915fda8c79"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/coreml/mlcomputeplan-85vdw/computedeviceusageformlprogramoperation:.json": {
+      "etag": "\"1b1d-65d55da4a47bc-df\"",
+      "file_path": "documentation/CoreML/mlcomputeplan-85vdw/computedeviceusageformlprogramoperation_.md",
+      "hash": "5ec1a7087d3599d962fb384603c3a1b496efbd02c4ea448bad25550aaeb9731c"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/coreml/mlcomputeplan-85vdw/computedeviceusageforneuralnetworklayer:.json": {
+      "etag": "\"1b1f-65d55da4a47bc-df\"",
+      "file_path": "documentation/CoreML/mlcomputeplan-85vdw/computedeviceusageforneuralnetworklayer_.md",
+      "hash": "e267a6a2316c99f2f7b24257f6a1ae50d1960b47086ea8bcdcb80ee02260dd0e"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/coreml/mlcomputeplan-85vdw/estimatedcostofmlprogramoperation:.json": {
+      "etag": "\"16eb-65d55da4a47bc-df\"",
+      "file_path": "documentation/CoreML/mlcomputeplan-85vdw/estimatedcostofmlprogramoperation_.md",
+      "hash": "2edebcf71bbd8862ff619a3e97f96e7b612fff58e1baf67243ec947ade833e80"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/coreml/mlcomputeplan-85vdw/loadcontentsofurl:configuration:completionhandler:.json": {
+      "etag": "\"25ce-65d55da4a47bc-df\"",
+      "file_path": "documentation/CoreML/mlcomputeplan-85vdw/loadcontentsofurl_configuration_completionhandler_.md",
+      "hash": "799ee1f00d9c298cc108a72626828ed46ff3e20ab88c813cfdb58821cc729aa3"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/coreml/mlcomputeplan-85vdw/loadmodelasset:configuration:completionhandler:.json": {
+      "etag": "\"267d-65d55da4a47bc-df\"",
+      "file_path": "documentation/CoreML/mlcomputeplan-85vdw/loadmodelasset_configuration_completionhandler_.md",
+      "hash": "452e0043b46bf5cb9e8ea9d1e04b3d0663e29d49b4a7da326095b2e575e76f48"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/coreml/mlcomputeplan-85vdw/modelstructure.json": {
+      "etag": "\"108b-65d55da4a47bc-df\"",
+      "file_path": "documentation/CoreML/mlcomputeplan-85vdw/modelstructure.md",
+      "hash": "b3d0ac81fd28bbd7c2d80e6837ffb239c2cd87ef7e1d77dbb43a9a75546a4d11"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/coreml/mlcomputeplancost.json": {
+      "etag": "\"179c-65d55da5edd26-df\"",
+      "file_path": "documentation/CoreML/mlcomputeplancost.md",
+      "hash": "a5823dc7b09a8a4dc759f29c898c9d619c9ece0595318ae9512d9910b99cc9c5"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/coreml/mlcomputeplancost/weight.json": {
+      "etag": "\"ec7-65d55da639861-df\"",
+      "file_path": "documentation/CoreML/mlcomputeplancost/weight.md",
+      "hash": "63ff72ff31efb418d1fccdcf5a02d60c1abe4efe03233dded74d079273c2ddc8"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/coreml/mlcomputeplandeviceusage.json": {
+      "etag": "\"1aa9-65d55da5edd26-df\"",
+      "file_path": "documentation/CoreML/mlcomputeplandeviceusage.md",
+      "hash": "e3c62dda3e280bee0f597b89902083894bd28f649e7d3f45cd78e8be9408d30e"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/coreml/mlcomputeplandeviceusage/preferredcomputedevice.json": {
+      "etag": "\"12c9-65d55da60817b-df\"",
+      "file_path": "documentation/CoreML/mlcomputeplandeviceusage/preferredcomputedevice.md",
+      "hash": "fa7206bd12e0750c17cb71d1e2a892d68668888982fa113f42a5f6d0ec5bafd5"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/coreml/mlcomputeplandeviceusage/supportedcomputedevices.json": {
+      "etag": "\"12b4-65d55da60817b-df\"",
+      "file_path": "documentation/CoreML/mlcomputeplandeviceusage/supportedcomputedevices.md",
+      "hash": "807f22d4237226933d2c73a753355fda4424674376e22d83976613b1f110ac79"
     },
     "https://developer.apple.com/tutorials/data/documentation/coreml/mlcomputepolicy.json": {
       "etag": "\"3e96-65d55da639861-df\"",
@@ -4066,7 +4571,7 @@
       "hash": "fba48cf97576fa8b0730211a075a2db21bb76b5b5299e86e90bdb6b4b1b1ebdc"
     },
     "https://developer.apple.com/tutorials/data/documentation/coreml/mlfeaturevalue/imageoption/croprect.json": {
-      "etag": "\"3863-65d55da64e9a9\"",
+      "etag": "\"3863-65d55da64e9a9-df\"",
       "file_path": "documentation/CoreML/mlfeaturevalue/imageoption/croprect.md",
       "hash": "7b18aa737a6943849c05ccbc3055eebfab824d505d9f68538193e3f41870f0a1"
     },
@@ -4420,6 +4925,11 @@
       "file_path": "documentation/CoreML/mlmodel.md",
       "hash": "46219e0130a895e252d2534a49d8c03932831a40bbc02d874987eadc04cdab82"
     },
+    "https://developer.apple.com/tutorials/data/documentation/coreml/mlmodel/availablecomputedevices-42uzt.json": {
+      "etag": "\"29b8-65d55da55a532-df\"",
+      "file_path": "documentation/CoreML/mlmodel/availablecomputedevices-42uzt.md",
+      "hash": "7caf1b105c80e94ab1ebd08f5e9524aeafcb04a3868ddc3a6e345b9e16068ddd"
+    },
     "https://developer.apple.com/tutorials/data/documentation/coreml/mlmodel/availablecomputedevices-6klyt.json": {
       "etag": "\"2dae-65d55da55a532-df\"",
       "file_path": "documentation/CoreML/mlmodel/availablecomputedevices-6klyt.md",
@@ -4475,6 +4985,11 @@
       "file_path": "documentation/CoreML/mlmodel/load(contentsof,configuration,completionhandler).md",
       "hash": "2415074e9de86b1c2c3d7060e4965a0c04c7b86522dd30dd4e8f969149eb382b"
     },
+    "https://developer.apple.com/tutorials/data/documentation/coreml/mlmodel/loadcontentsofurl:configuration:completionhandler:.json": {
+      "etag": "\"4085-65d55da55a532-df\"",
+      "file_path": "documentation/CoreML/mlmodel/loadcontentsofurl_configuration_completionhandler_.md",
+      "hash": "9517e38182835b5b0ba25c6e981c79a99c353727365a8decaa3915da78f08341"
+    },
     "https://developer.apple.com/tutorials/data/documentation/coreml/mlmodel/makestate().json": {
       "etag": "\"18fd-65d55da55a532-df\"",
       "file_path": "documentation/CoreML/mlmodel/makestate().md",
@@ -4484,6 +4999,11 @@
       "etag": "\"3692-65d55da55a532-df\"",
       "file_path": "documentation/CoreML/mlmodel/modeldescription.md",
       "hash": "e3460774daafcbb131d934b37b0135e172900b0a00c7b2b16f9c4c6c65b08e1a"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/coreml/mlmodel/newstate.json": {
+      "etag": "\"1913-65d55da55a532-df\"",
+      "file_path": "documentation/CoreML/mlmodel/newstate.md",
+      "hash": "0add5b2d1154f2c1ca53348ceb37bcfc11c15f16f27cbb85480fff59de662eae"
     },
     "https://developer.apple.com/tutorials/data/documentation/coreml/mlmodel/parametervalue(for:).json": {
       "etag": "\"3e91-65d55da55a532-df\"",
@@ -4509,6 +5029,21 @@
       "etag": "\"49ad-65d55da55a532-df\"",
       "file_path": "documentation/CoreML/mlmodel/prediction(from,using,options).md",
       "hash": "ea90a89db0d0893a29f0c7626ec0ca3f232b37cc86f17aaa2dc2dff948575491"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/coreml/mlmodel/predictionfromfeatures:completionhandler:.json": {
+      "etag": "\"227b-65d55da55a532-df\"",
+      "file_path": "documentation/CoreML/mlmodel/predictionfromfeatures_completionhandler_.md",
+      "hash": "2aa31483992f0abd2f04e6e754379226bceeef7830be4d1945a657d4aaa5001b"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/coreml/mlmodel/predictionfromfeatures:options:completionhandler:.json": {
+      "etag": "\"28f7-65d55da55a532-df\"",
+      "file_path": "documentation/CoreML/mlmodel/predictionfromfeatures_options_completionhandler_.md",
+      "hash": "2636b44b6529c9684c092e4aa0d2681b6da70f9a6614107ee7669afee70bd12e"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/coreml/mlmodel/predictionfromfeatures:usingstate:options:completionhandler:.json": {
+      "etag": "\"2f81-65d55da55a532-df\"",
+      "file_path": "documentation/CoreML/mlmodel/predictionfromfeatures_usingstate_options_completionhandler_.md",
+      "hash": "2edbbde592e9e3d623b5c027d7f376a923933f5da61b988e25cc37d3258b9d65"
     },
     "https://developer.apple.com/tutorials/data/documentation/coreml/mlmodel/predictions(from:options:).json": {
       "etag": "\"4e22-65d55da55a532-df\"",
@@ -4564,6 +5099,11 @@
       "etag": "\"60fe-65d55da520e30-df\"",
       "file_path": "documentation/CoreML/mlmodelcollection.md",
       "hash": "a416028ccef4ec1c8612707d59b6c9a7aad9849085fca68b03dcdf1d393fa173"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/coreml/mlmodelcollection/beginaccessingmodelcollectionwithidentifier:completionhandler:.json": {
+      "etag": "\"548f-65d55da55a532-df\"",
+      "file_path": "documentation/CoreML/mlmodelcollection/beginaccessingmodelcollectionwithidentifier_completionhandler_.md",
+      "hash": "96f59312232b55845a2ba7c4a7776f90dff17303e72f8628d22fe25dcbb4404c"
     },
     "https://developer.apple.com/tutorials/data/documentation/coreml/mlmodelcollection/deploymentid.json": {
       "etag": "\"2ea8-65d55da55a532-df\"",
@@ -4644,6 +5184,11 @@
       "etag": "\"158a-65d55da5edd26-df\"",
       "file_path": "documentation/CoreML/mlmodelconfiguration/optimizationhints-1oq0g.md",
       "hash": "30ac75283411cb57df145f7297b6deae13af43e5100caa11c5bfd55e83362e2f"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/coreml/mlmodelconfiguration/optimizationhints-81u6f.json": {
+      "etag": "\"13ed-65d55da5edd26-df\"",
+      "file_path": "documentation/CoreML/mlmodelconfiguration/optimizationhints-81u6f.md",
+      "hash": "cc28993081406341a09404633d4ce86a34a4bb6ebeef83c43b24babf0393b32a"
     },
     "https://developer.apple.com/tutorials/data/documentation/coreml/mlmodelconfiguration/parameters.json": {
       "etag": "\"2cf1-65d55da5d4145-df\"",
@@ -4885,6 +5430,36 @@
       "file_path": "documentation/CoreML/mlmodelmetadatakey/versionstring.md",
       "hash": "9f979b93b491c4a65d25fbd7a3d4a65c980914fd1a9869b0bb641d4ed4ad442c"
     },
+    "https://developer.apple.com/tutorials/data/documentation/coreml/mlmodelstructure-c.class.json": {
+      "etag": "\"3d22-65d55da5bad36-df\"",
+      "file_path": "documentation/CoreML/mlmodelstructure-c.class.md",
+      "hash": "a754ab6f113c549c9b67e4b4ed213e5cebd2574f7fcd68d9031c5652441c037d"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/coreml/mlmodelstructure-c.class/loadcontentsofurl:completionhandler:.json": {
+      "etag": "\"1ee6-65d55da60817b-df\"",
+      "file_path": "documentation/CoreML/mlmodelstructure-c.class/loadcontentsofurl_completionhandler_.md",
+      "hash": "84c3f400b0eab51d38f55e2ffba79e9f810638fc8ec9e57c18a11eb91a89a8ec"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/coreml/mlmodelstructure-c.class/loadmodelasset:completionhandler:.json": {
+      "etag": "\"1f96-65d55da60817b-df\"",
+      "file_path": "documentation/CoreML/mlmodelstructure-c.class/loadmodelasset_completionhandler_.md",
+      "hash": "77e702db6b15d34000dd1f0c75444a63e5e72a6a7f231ed5defe3efe0feaf7b0"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/coreml/mlmodelstructure-c.class/neuralnetwork.json": {
+      "etag": "\"17c0-65d55da5edd26-df\"",
+      "file_path": "documentation/CoreML/mlmodelstructure-c.class/neuralnetwork.md",
+      "hash": "8068bf59eb85593ba96bd2b7f8d781452368420998c578c087c1c2c3d792d21e"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/coreml/mlmodelstructure-c.class/pipeline.json": {
+      "etag": "\"176b-65d55da60817b-df\"",
+      "file_path": "documentation/CoreML/mlmodelstructure-c.class/pipeline.md",
+      "hash": "5809b7cac37175ac2eca1df1001e130ce6a4e718f3000f332dd008f29d72093d"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/coreml/mlmodelstructure-c.class/program.json": {
+      "etag": "\"1764-65d55da5edd26-df\"",
+      "file_path": "documentation/CoreML/mlmodelstructure-c.class/program.md",
+      "hash": "28ff8bf9b344a011e1976c2b7724d78860d94ecc1c8b05870950db0fdc08a142"
+    },
     "https://developer.apple.com/tutorials/data/documentation/coreml/mlmodelstructure-swift.enum.json": {
       "etag": "\"44a5-65d55da639861-df\"",
       "file_path": "documentation/CoreML/mlmodelstructure-swift.enum.md",
@@ -5090,6 +5665,176 @@
       "file_path": "documentation/CoreML/mlmodelstructure-swift.enum/unsupported.md",
       "hash": "dd2ecc83a5d04818a779b834396ddc6ba0dc4c4778f2aaa2bef928a19183d123"
     },
+    "https://developer.apple.com/tutorials/data/documentation/coreml/mlmodelstructureneuralnetwork.json": {
+      "etag": "\"2e99-65d55da60817b-df\"",
+      "file_path": "documentation/CoreML/mlmodelstructureneuralnetwork.md",
+      "hash": "ed08b89b00d4043887eb695abfe14e51ed9393e7bc8abd084f3d771993b1090d"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/coreml/mlmodelstructureneuralnetwork/layers.json": {
+      "etag": "\"f03-65d55da639861-df\"",
+      "file_path": "documentation/CoreML/mlmodelstructureneuralnetwork/layers.md",
+      "hash": "7ea1695275c4c82eaca800aad6139878fcfeb01fbeb140efeb0c5fcd7ca5ffc8"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/coreml/mlmodelstructureneuralnetworklayer.json": {
+      "etag": "\"355c-65d55da64e9a9-df\"",
+      "file_path": "documentation/CoreML/mlmodelstructureneuralnetworklayer.md",
+      "hash": "165690ac9f74c670cc67abe4b04e56481810b501594cecb1bb803f91ecae93d3"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/coreml/mlmodelstructureneuralnetworklayer/inputnames.json": {
+      "etag": "\"161f-65d55da684625-df\"",
+      "file_path": "documentation/CoreML/mlmodelstructureneuralnetworklayer/inputnames.md",
+      "hash": "0029744deb2a22eae348826f8811ab1e5b072f0fdcc79746013773bdf7affef3"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/coreml/mlmodelstructureneuralnetworklayer/name.json": {
+      "etag": "\"193c-65d55da684625-df\"",
+      "file_path": "documentation/CoreML/mlmodelstructureneuralnetworklayer/name.md",
+      "hash": "84e06c98a75a8480d62f74bb1923e46f0e71a51e17de0d5e94c9802bd334c226"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/coreml/mlmodelstructureneuralnetworklayer/outputnames.json": {
+      "etag": "\"1626-65d55da684625-df\"",
+      "file_path": "documentation/CoreML/mlmodelstructureneuralnetworklayer/outputnames.md",
+      "hash": "a3526b40753a9baf9ae76f5c29560e95d3cd82350987faa1d9c6b83005431dab"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/coreml/mlmodelstructureneuralnetworklayer/type.json": {
+      "etag": "\"196f-65d55da684625-df\"",
+      "file_path": "documentation/CoreML/mlmodelstructureneuralnetworklayer/type.md",
+      "hash": "aa09f598df5869a32c32aaf171e8db873c682336997a24dee9f87fdc2f6120e1"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/coreml/mlmodelstructurepipeline.json": {
+      "etag": "\"30c7-65d55da5bad36-df\"",
+      "file_path": "documentation/CoreML/mlmodelstructurepipeline.md",
+      "hash": "7e2bc1d7ea59213b633ce33cc28adc8cede5d55211b7acd3900e3a5f3500f72d"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/coreml/mlmodelstructurepipeline/submodelnames.json": {
+      "etag": "\"11a4-65d55da639861-df\"",
+      "file_path": "documentation/CoreML/mlmodelstructurepipeline/submodelnames.md",
+      "hash": "444869ad9ebefef25f5ffb1b18755f8c5e3ba81e0acfd91fe8b3359e7e766f03"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/coreml/mlmodelstructurepipeline/submodels.json": {
+      "etag": "\"1198-65d55da639861-df\"",
+      "file_path": "documentation/CoreML/mlmodelstructurepipeline/submodels.md",
+      "hash": "b7e77d899c9e2fd070f7309146706694e80cb2acfcb8f42e22c422c4c8aa8734"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/coreml/mlmodelstructureprogram.json": {
+      "etag": "\"2e6b-65d55da54085a-df\"",
+      "file_path": "documentation/CoreML/mlmodelstructureprogram.md",
+      "hash": "409bd3666ca40bb2099b6f69be24ecda4308d5849c5870419e7a872624d4a605"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/coreml/mlmodelstructureprogram/functions.json": {
+      "etag": "\"ebf-65d55da60817b-df\"",
+      "file_path": "documentation/CoreML/mlmodelstructureprogram/functions.md",
+      "hash": "d975e128e8b9bd71dc39a48867719a4ff65f280789bbe7bd997d82f1418ce27e"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/coreml/mlmodelstructureprogramargument.json": {
+      "etag": "\"2e92-65d55da66b852-df\"",
+      "file_path": "documentation/CoreML/mlmodelstructureprogramargument.md",
+      "hash": "b207e9af95ea2e31e2eba947b11e03b4fd566a65b0caada9b53c8ba2b4eae33f"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/coreml/mlmodelstructureprogramargument/bindings.json": {
+      "etag": "\"ee5-65d55da60817b-df\"",
+      "file_path": "documentation/CoreML/mlmodelstructureprogramargument/bindings.md",
+      "hash": "eba618059758a2d176f3082cbf74928a8037cd8c6ccef1e4df997af0f87d29ac"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/coreml/mlmodelstructureprogrambinding.json": {
+      "etag": "\"31c8-65d55da55a532-df\"",
+      "file_path": "documentation/CoreML/mlmodelstructureprogrambinding.md",
+      "hash": "81f5a45ce45d450f9810e4e1c150390949664507102e8d32cfa1ba8ebddb0950"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/coreml/mlmodelstructureprogrambinding/name.json": {
+      "etag": "\"14f8-65d55da520e30-df\"",
+      "file_path": "documentation/CoreML/mlmodelstructureprogrambinding/name.md",
+      "hash": "76f2ccbf7fdeda4de689d5c0e24ac0d4604e7db22c6d6803712073ae0ea150d6"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/coreml/mlmodelstructureprogrambinding/value.json": {
+      "etag": "\"1420-65d55da520e30-df\"",
+      "file_path": "documentation/CoreML/mlmodelstructureprogrambinding/value.md",
+      "hash": "3475437ed57991dd1cbc06a4893aff1cbff089426c5a518ea2f3e5a4968384bc"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/coreml/mlmodelstructureprogramblock.json": {
+      "etag": "\"32f0-65d55da60817b-df\"",
+      "file_path": "documentation/CoreML/mlmodelstructureprogramblock.md",
+      "hash": "2704e4adf5d014694d168a0d7e1ed6959de3c80b12efe40389c2a0e90606deda"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/coreml/mlmodelstructureprogramblock/inputs.json": {
+      "etag": "\"13ba-65d55da54085a-df\"",
+      "file_path": "documentation/CoreML/mlmodelstructureprogramblock/inputs.md",
+      "hash": "bf10950bea512bef2f700f65c3ccaa54f0636667d7568f1df220056f5084f8c9"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/coreml/mlmodelstructureprogramblock/operations.json": {
+      "etag": "\"13e8-65d55da54085a-df\"",
+      "file_path": "documentation/CoreML/mlmodelstructureprogramblock/operations.md",
+      "hash": "2bebad90c362b807e3d87561ad44e2bc150d829112c0da5548bf4b4b8650564b"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/coreml/mlmodelstructureprogramblock/outputnames.json": {
+      "etag": "\"13ae-65d55da54085a-df\"",
+      "file_path": "documentation/CoreML/mlmodelstructureprogramblock/outputnames.md",
+      "hash": "ec5f32add515ae186d464255c70725a7b0ff551f0337fe6a561cdd8b8ca8d1d6"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/coreml/mlmodelstructureprogramfunction.json": {
+      "etag": "\"30cf-65d55da4a47bc-df\"",
+      "file_path": "documentation/CoreML/mlmodelstructureprogramfunction.md",
+      "hash": "4a9d86d79442932ab165599e44620190b99641158d574708bc373fb98f55709b"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/coreml/mlmodelstructureprogramfunction/block.json": {
+      "etag": "\"13d5-65d55da66b852-df\"",
+      "file_path": "documentation/CoreML/mlmodelstructureprogramfunction/block.md",
+      "hash": "b1ede3388f576cf219550d24ba361b35e40dd0889e1d24e8c26fd8a673b2224f"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/coreml/mlmodelstructureprogramfunction/inputs.json": {
+      "etag": "\"11a2-65d55da684625-df\"",
+      "file_path": "documentation/CoreML/mlmodelstructureprogramfunction/inputs.md",
+      "hash": "e8c5dda693a449554733f12b885ec6eb9e6e97de4e3382775bfd819dc2484db2"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/coreml/mlmodelstructureprogramnamedvaluetype.json": {
+      "etag": "\"30fd-65d55da5edd26-df\"",
+      "file_path": "documentation/CoreML/mlmodelstructureprogramnamedvaluetype.md",
+      "hash": "12d14da32be155a966ee472932d24cb4cfea6f0839657947674cbc57079b7dea"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/coreml/mlmodelstructureprogramnamedvaluetype/name.json": {
+      "etag": "\"14ee-65d55da5a1bca-df\"",
+      "file_path": "documentation/CoreML/mlmodelstructureprogramnamedvaluetype/name.md",
+      "hash": "8b1f7d87e1d62e8cee6aec9abbadc1642f3451fec72b8fa5965deb492976308d"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/coreml/mlmodelstructureprogramnamedvaluetype/type.json": {
+      "etag": "\"143c-65d55da5a1bca-df\"",
+      "file_path": "documentation/CoreML/mlmodelstructureprogramnamedvaluetype/type.md",
+      "hash": "ba0ccecd6c1073c359f53b1c7455e2a0fffa317449ccd74d9de967a69d0b0d32"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/coreml/mlmodelstructureprogramoperation.json": {
+      "etag": "\"35b7-65d55da6219fd-df\"",
+      "file_path": "documentation/CoreML/mlmodelstructureprogramoperation.md",
+      "hash": "27edada4bea9e2609e1ef1b266ce7d4f6b475dba459034b7a29501765017be14"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/coreml/mlmodelstructureprogramoperation/blocks.json": {
+      "etag": "\"16c1-65d55da639861-df\"",
+      "file_path": "documentation/CoreML/mlmodelstructureprogramoperation/blocks.md",
+      "hash": "a82e12402c4526f9bf2c8b282ef3451068e1a3bb866e1fbee9a48609c0c5bb4e"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/coreml/mlmodelstructureprogramoperation/inputs.json": {
+      "etag": "\"1699-65d55da639861-df\"",
+      "file_path": "documentation/CoreML/mlmodelstructureprogramoperation/inputs.md",
+      "hash": "005934f82e08848938470be54f1c27fc9e5268b64b456e14672480a93d88a48f"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/coreml/mlmodelstructureprogramoperation/operatorname.json": {
+      "etag": "\"19ff-65d55da639861-df\"",
+      "file_path": "documentation/CoreML/mlmodelstructureprogramoperation/operatorname.md",
+      "hash": "4edd6176265e949700242c609c4ef37f724800c1cd3018b9470ecbc533e3791e"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/coreml/mlmodelstructureprogramoperation/outputs.json": {
+      "etag": "\"168e-65d55da639861-df\"",
+      "file_path": "documentation/CoreML/mlmodelstructureprogramoperation/outputs.md",
+      "hash": "68ae372aae5db8669435da323bd71ffd18936fe75d6993ea893944e555216133"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/coreml/mlmodelstructureprogramvalue.json": {
+      "etag": "\"2bfe-65d55da5edd26-df\"",
+      "file_path": "documentation/CoreML/mlmodelstructureprogramvalue.md",
+      "hash": "9fd771342b8df0ea6e8ab3c5688911a81015cc3f99a1541eae8d775a4efcf92e"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/coreml/mlmodelstructureprogramvaluetype.json": {
+      "etag": "\"2c27-65d55da5edd26-df\"",
+      "file_path": "documentation/CoreML/mlmodelstructureprogramvaluetype.md",
+      "hash": "dac8e5741f4bcc041a48224f560127c0b91b0ccb0967dfd8e5a5b961901670e3"
+    },
     "https://developer.apple.com/tutorials/data/documentation/coreml/mlmultiarray.json": {
       "etag": "\"1079a-65d55da66b852-df\"",
       "file_path": "documentation/CoreML/mlmultiarray.md",
@@ -5109,6 +5854,16 @@
       "etag": "\"2dd1-65d55da5bad36-df\"",
       "file_path": "documentation/CoreML/mlmultiarray/datatype.md",
       "hash": "649268f2017caa5034b1c0d1bfa21ab62bfd150bb175e73bafd426d8d12c7e1e"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/coreml/mlmultiarray/getbyteswithhandler:.json": {
+      "etag": "\"3091-65d55da5bad36-df\"",
+      "file_path": "documentation/CoreML/mlmultiarray/getbyteswithhandler_.md",
+      "hash": "603e791e9453585c6d98d81dc825444c97c5e01271409b16490cd3f1e3ba6074"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/coreml/mlmultiarray/getmutablebyteswithhandler:.json": {
+      "etag": "\"2e26-65d55da5bad36-df\"",
+      "file_path": "documentation/CoreML/mlmultiarray/getmutablebyteswithhandler_.md",
+      "hash": "0bf45520e141a534db9c3c00e51fffc0a1f8070ae49e7461d38d2bb50b484227"
     },
     "https://developer.apple.com/tutorials/data/documentation/coreml/mlmultiarray/init(_:).json": {
       "etag": "\"6494-65d55da5bad36-df\"",
@@ -5150,6 +5905,11 @@
       "file_path": "documentation/CoreML/mlmultiarray/init(shape,datatype,strides).md",
       "hash": "bfcede6deebddc18f377c4f6e607b45d15a38cf86b33fb0b743999bcadc06fe7"
     },
+    "https://developer.apple.com/tutorials/data/documentation/coreml/mlmultiarray/initwithshape:datatype:strides:.json": {
+      "etag": "\"34ef-65d55da5bad36-df\"",
+      "file_path": "documentation/CoreML/mlmultiarray/initwithshape_datatype_strides_.md",
+      "hash": "8ef5d9d404a2343fc25458ded142060522c20c02764cc5dd861375dd30eb6077"
+    },
     "https://developer.apple.com/tutorials/data/documentation/coreml/mlmultiarray/mlmultiarray-implementations.json": {
       "etag": "\"150b-65902626d3a8d-df\"",
       "file_path": "documentation/CoreML/mlmultiarray/mlmultiarray-implementations.md",
@@ -5159,6 +5919,16 @@
       "etag": "\"31e5-65d55da5bad36-df\"",
       "file_path": "documentation/CoreML/mlmultiarray/pixelbuffer.md",
       "hash": "7c19270d12644601a07f2a69489a7ab39dd46578f489808300384c2e68a5ab79"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/coreml/mlmultiarray/setobject:atindexedsubscript:.json": {
+      "etag": "\"2bc2-65d55da5bad36-df\"",
+      "file_path": "documentation/CoreML/mlmultiarray/setobject_atindexedsubscript_.md",
+      "hash": "f5ff2720f7b2aac71dea13c6617b8db89c13e1fa588ee14a5dd27dc9e74e38a5"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/coreml/mlmultiarray/setobject:forkeyedsubscript:.json": {
+      "etag": "\"300f-65d55da5bad36-df\"",
+      "file_path": "documentation/CoreML/mlmultiarray/setobject_forkeyedsubscript_.md",
+      "hash": "d12c7a5ad55d1a11b6f4507a276b474ba7a5c707ca019c794478163b10ab5eca"
     },
     "https://developer.apple.com/tutorials/data/documentation/coreml/mlmultiarray/shape.json": {
       "etag": "\"2c16-65d55da5a1bca-df\"",
@@ -5355,6 +6125,21 @@
       "file_path": "documentation/CoreML/mlnumericconstraint/minnumber.md",
       "hash": "a0fc63a0f15c2ea1c470cf1465c77afe2320636c08ab005f916ad2d7e436e55b"
     },
+    "https://developer.apple.com/tutorials/data/documentation/coreml/mloptimizationhints-c.class.json": {
+      "etag": "\"20b7-65d55da520e30-df\"",
+      "file_path": "documentation/CoreML/mloptimizationhints-c.class.md",
+      "hash": "9d31f5e14471848689330654bf9c99a0fcb82983b9f69d7b894c4cbf7e915e06"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/coreml/mloptimizationhints-c.class/reshapefrequency.json": {
+      "etag": "\"136c-65d55da5edd26-df\"",
+      "file_path": "documentation/CoreML/mloptimizationhints-c.class/reshapefrequency.md",
+      "hash": "dad010f71d06d8b150dba67f9e14c7091c9892cec58b7e599fbfb87ad3feb822"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/coreml/mloptimizationhints-c.class/specializationstrategy.json": {
+      "etag": "\"139f-65d55da5edd26-df\"",
+      "file_path": "documentation/CoreML/mloptimizationhints-c.class/specializationstrategy.md",
+      "hash": "d3da60c1d199cd0ee0e86c52a1b794eacb186db2a5796cc8263041ddda3aa7d0"
+    },
     "https://developer.apple.com/tutorials/data/documentation/coreml/mloptimizationhints-swift.struct.json": {
       "etag": "\"2f44-65d55da520e30-df\"",
       "file_path": "documentation/CoreML/mloptimizationhints-swift.struct.md",
@@ -5524,6 +6309,21 @@
       "etag": "\"2033-65d55da5bad36-df\"",
       "file_path": "documentation/CoreML/mlpredictionoptions/usescpuonly.md",
       "hash": "33bae928ed6be311c8758b58482eec34e0b4de9a171a5556d40d7146ac313800"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/coreml/mlreshapefrequencyhint.json": {
+      "etag": "\"1930-65d55da639861-df\"",
+      "file_path": "documentation/CoreML/mlreshapefrequencyhint.md",
+      "hash": "03f2ab0206ce86fde6ab6227668499a83907f1c39fd216a21e77a64eda1a5292"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/coreml/mlreshapefrequencyhint/mlreshapefrequencyhintfrequent.json": {
+      "etag": "\"14f7-65d55da66b852-df\"",
+      "file_path": "documentation/CoreML/mlreshapefrequencyhint/mlreshapefrequencyhintfrequent.md",
+      "hash": "5e3d92b9f2c2cb9dc82420914f09fc4a8871bf4dd2aceed0d24b3e81a6a0dfcf"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/coreml/mlreshapefrequencyhint/mlreshapefrequencyhintinfrequent.json": {
+      "etag": "\"149e-65d55da66b852-df\"",
+      "file_path": "documentation/CoreML/mlreshapefrequencyhint/mlreshapefrequencyhintinfrequent.md",
+      "hash": "251ff4cbd54abad1d0dc22b8f4d0dc1527740aa8833736497d65b490da643a46"
     },
     "https://developer.apple.com/tutorials/data/documentation/coreml/mlsendablefeaturevalue.json": {
       "etag": "\"6cb6-65d55da684625-df\"",
@@ -5910,10 +6710,50 @@
       "file_path": "documentation/CoreML/mlshapedarrayprotocol/strides.md",
       "hash": "b1a1f079d84612efdc270823881ab8dc6e345eb09eefc259e24b7d2a2d852749"
     },
+    "https://developer.apple.com/tutorials/data/documentation/coreml/mlshapedarrayprotocol/subscript(_:)-23n4b.json": {
+      "etag": "\"2059-65d55da5d4145-df\"",
+      "file_path": "documentation/CoreML/mlshapedarrayprotocol/subscript(_)-23n4b.md",
+      "hash": "3b3ebfe076854b3e02ffd604136e596849322ba95a6f965012f8cd38db8a9548"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/coreml/mlshapedarrayprotocol/subscript(_:)-2cxk1.json": {
+      "etag": "\"1f8a-65d55da5d4145-df\"",
+      "file_path": "documentation/CoreML/mlshapedarrayprotocol/subscript(_)-2cxk1.md",
+      "hash": "342846d250887b1d9af832fcff4579423d7e428bc081fa5d1af926cad9a7b72b"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/coreml/mlshapedarrayprotocol/subscript(_:)-2hc37.json": {
+      "etag": "\"2040-65d55da5d4145-df\"",
+      "file_path": "documentation/CoreML/mlshapedarrayprotocol/subscript(_)-2hc37.md",
+      "hash": "316a8eee57be5a357c364cfb23bb24979ad2717f42d67001127a3b50b1393991"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/coreml/mlshapedarrayprotocol/subscript(_:)-3ao6n.json": {
+      "etag": "\"201d-65d55da5d4145-df\"",
+      "file_path": "documentation/CoreML/mlshapedarrayprotocol/subscript(_)-3ao6n.md",
+      "hash": "4fa4ec0f69bb170c502a70723da32218eff2b0fb325e8c607fdb7eff2991c9e8"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/coreml/mlshapedarrayprotocol/subscript(_:)-5r9r3.json": {
+      "etag": "\"1d9a-65d55da5d4145-df\"",
+      "file_path": "documentation/CoreML/mlshapedarrayprotocol/subscript(_)-5r9r3.md",
+      "hash": "696ceefd9c9769f9c3dd9a737179801a88325c0ec2cc40a34809a3193d0f20d6"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/coreml/mlshapedarrayprotocol/subscript(_:)-70104.json": {
+      "etag": "\"2743-65d55da5d4145-df\"",
+      "file_path": "documentation/CoreML/mlshapedarrayprotocol/subscript(_)-70104.md",
+      "hash": "71840ab73aa8a00401ddd2011396381c6051ae043ec2ecee564012eb23c83851"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/coreml/mlshapedarrayprotocol/subscript(_:)-79cx4.json": {
+      "etag": "\"1b2b-65d55da5d4145-df\"",
+      "file_path": "documentation/CoreML/mlshapedarrayprotocol/subscript(_)-79cx4.md",
+      "hash": "ee4611fc9c59959cbd2d712a8270ab9a13aad6b846bd605d3da343814b19dbb1"
+    },
     "https://developer.apple.com/tutorials/data/documentation/coreml/mlshapedarrayprotocol/subscript(_:).json": {
       "etag": "\"56a0-65d55da5d4145-df\"",
       "file_path": "documentation/CoreML/mlshapedarrayprotocol/subscript(_).md",
       "hash": "3b312dd66cf0eaa9777ff20b98303751c95f63db97418075fb4081bbc87b6583"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/coreml/mlshapedarrayprotocol/subscript(scalarat:)-6yvwm.json": {
+      "etag": "\"1a69-65d55da5d4145-df\"",
+      "file_path": "documentation/CoreML/mlshapedarrayprotocol/subscript(scalarat)-6yvwm.md",
+      "hash": "8fba14367395f9d20efce5c2df5b12e0fb2da3cf2983f7c0709f62eb6c2a9e0d"
     },
     "https://developer.apple.com/tutorials/data/documentation/coreml/mlshapedarrayprotocol/subscript(scalarat:).json": {
       "etag": "\"289d-65d55da5d4145-df\"",
@@ -6050,10 +6890,30 @@
       "file_path": "documentation/CoreML/mlshapedarrayslice/withunsafemutableshapedbufferpointer(using,_).md",
       "hash": "8c3361c9a0c8223119fe3f60d0871a098fb5f90c938ccf7a0127a6e9bd50c33d"
     },
+    "https://developer.apple.com/tutorials/data/documentation/coreml/mlspecializationstrategy.json": {
+      "etag": "\"177e-65d55da684625-df\"",
+      "file_path": "documentation/CoreML/mlspecializationstrategy.md",
+      "hash": "282365718a2550c69035c2435123a9eeeb4924dbabaf1292619fe8b8b45b6f33"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/coreml/mlspecializationstrategy/mlspecializationstrategydefault.json": {
+      "etag": "\"11bc-65d55da5bad36-df\"",
+      "file_path": "documentation/CoreML/mlspecializationstrategy/mlspecializationstrategydefault.md",
+      "hash": "2dc72cd9fd3ac27757c910c4f0e7490cf1b3615614fae41cb0ea1cfd9a1620c3"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/coreml/mlspecializationstrategy/mlspecializationstrategyfastprediction.json": {
+      "etag": "\"1243-65d55da5bad36-df\"",
+      "file_path": "documentation/CoreML/mlspecializationstrategy/mlspecializationstrategyfastprediction.md",
+      "hash": "b0b006e11d3aff28b5335af0f19266ce89908048c53ec445f4d96abdd5036d3d"
+    },
     "https://developer.apple.com/tutorials/data/documentation/coreml/mlstate.json": {
       "etag": "\"4833-65d55da4a47bc-df\"",
       "file_path": "documentation/CoreML/mlstate.md",
       "hash": "6544e11a3eefd03f518939873f31aca9d23b3baea69cdd6808c2dffb431a601b"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/coreml/mlstate/getmultiarrayforstatenamed:handler:.json": {
+      "etag": "\"1ca2-65d55da66b852-df\"",
+      "file_path": "documentation/CoreML/mlstate/getmultiarrayforstatenamed_handler_.md",
+      "hash": "b0a085a59bafa905d1a0fba87e61dbbb1f05af8f762374bdedff84b4613ea8bd"
     },
     "https://developer.apple.com/tutorials/data/documentation/coreml/mlstate/withmultiarray(_:).json": {
       "etag": "\"1e04-65d55da66b852-df\"",
@@ -6074,6 +6934,11 @@
       "etag": "\"18b4-65d55da54085a-df\"",
       "file_path": "documentation/CoreML/mlstateconstraint/buffershape-4zb3w.md",
       "hash": "f8dadd33a58ce40480a9c5ed2aa0304b737e12bc5bd2143bc5e9f22cb8baf652"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/coreml/mlstateconstraint/buffershape-6o5vn.json": {
+      "etag": "\"15b0-65d55da54085a-df\"",
+      "file_path": "documentation/CoreML/mlstateconstraint/buffershape-6o5vn.md",
+      "hash": "cac8f2651959a0da144a2df9a994fc3e83da7e25068721c3c3e4f3f1ea026378"
     },
     "https://developer.apple.com/tutorials/data/documentation/coreml/mlstateconstraint/datatype.json": {
       "etag": "\"25a0-65d55da54085a-df\"",
@@ -7020,6 +7885,11 @@
       "file_path": "documentation/CoreML/model-personalization.md",
       "hash": "b153c9a3c20e6416d8af1f1c60b2fc803489c64aa1054cb438bef29619d2872a"
     },
+    "https://developer.apple.com/tutorials/data/documentation/coreml/modelcollection_sunset.json": {
+      "etag": "\"c84-65d55da60817b-df\"",
+      "file_path": "documentation/CoreML/modelcollection_sunset.md",
+      "hash": "72e776287b49356ff911f7d80bb26705fd113cdcd1e86acfcbe95cc6ae09553b"
+    },
     "https://developer.apple.com/tutorials/data/documentation/coreml/personalizing-a-model-with-on-device-updates.json": {
       "etag": "\"83ac-65d55da639861-df\"",
       "file_path": "documentation/CoreML/personalizing-a-model-with-on-device-updates.md",
@@ -7073,8 +7943,8 @@
   },
   "metadata": {
     "render": {
-      "version": 1
+      "version": 2
     },
-    "total_pages": 1414
+    "total_pages": 1588
   }
 }

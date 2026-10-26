@@ -50,6 +50,8 @@ typedef struct { ... } SPEulerAngles;
 ### Supporting types
 - [EulerAngles.Order](./eulerangles/order-swift.typealias.md)
   A type that specifies the order of the angles.
+- [SPEulerAngleOrder](./speulerangleorder.md)
+  Constants that describe the order of Euler angles.
 
 ## Relationships
 
@@ -84,6 +86,15 @@ typedef struct { ... } SPEulerAngles;
   Creates a rotation with the specified forward and up vectors.
 - [init(forward: Vector3D, up: Vector3D)](./rotation3d/init%28forward,up%29.md)
   Creates a rotation with the specified forward and up vectors.
+- [SPRotation3DMakeWithQuaternion](./sprotation3dmakewithquaternion.md)
+- [SPRotation3DMake](./sprotation3dmake-2i9jt.md)
+  Creates a rotation structure.
+- [SPRotation3DMakeLookAt](./sprotation3dmakelookat-6ypo8.md)
+  Creates a rotation structure that’s the look-at direction from a position to a target.
+- [SPRotation3DMakeLookAt](./sprotation3dmakelookat-4xrh6.md)
+- [SPRotationAxis3DMakeWithVector](./sprotationaxis3dmakewithvector-1n9ib.md)
+  Creates a rotation axis from the specified double-precision vector.
+- [SPRotationAxis3DMakeWithVector](./sprotationaxis3dmakewithvector-kk1p.md)
 
 
 ---

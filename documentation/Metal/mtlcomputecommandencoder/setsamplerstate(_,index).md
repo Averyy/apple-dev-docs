@@ -39,6 +39,10 @@ func setSamplerState(_ sampler: (any MTLSamplerState)?, index: Int)
   Encodes multiple texture samplers to the sampler argument table, allowing compute kernels to use them for sampling textures on the GPU.
 - [func setSamplerStates([(any MTLSamplerState)?], lodMinClamps: [Float], lodMaxClamps: [Float], range: Range<Int>)](./setsamplerstates%28_,lodminclamps,lodmaxclamps,range%29.md)
   Encodes multiple texture samplers for the compute function, specifying clamp values for the level of detail of each sampler.
+- [- setSamplerStates:withRange:](./setsamplerstates_withrange_.md)
+  Encodes multiple texture samplers, allowing compute kernels to use them for sampling textures on the GPU.
+- [- setSamplerStates:lodMinClamps:lodMaxClamps:withRange:](./setsamplerstates_lodminclamps_lodmaxclamps_withrange_.md)
+  Encodes multiple texture samplers with custom levels of detail clamping, allowing compute kernels to use them for sampling textures on the GPU.
 
 
 ---

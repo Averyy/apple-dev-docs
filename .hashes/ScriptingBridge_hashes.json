@@ -15,6 +15,21 @@
       "file_path": "documentation/ScriptingBridge/sbapplication/activate().md",
       "hash": "0412e4d1e489a6d2f6ae55d500e307de41035572be349484a86c4bcd03992214"
     },
+    "https://developer.apple.com/documentation/scriptingbridge/sbapplication/applicationwithbundleidentifier:": {
+      "etag": "\"2b4f-65d560cce1aaf-df\"",
+      "file_path": "documentation/ScriptingBridge/sbapplication/applicationwithbundleidentifier_.md",
+      "hash": "d9e837ab3fcf59803b610c7a76a7abae623c2dabfdab3cd1dfd0fe5c9c5d51a3"
+    },
+    "https://developer.apple.com/documentation/scriptingbridge/sbapplication/applicationwithprocessidentifier:": {
+      "etag": "\"3209-65d560cce1aaf-df\"",
+      "file_path": "documentation/ScriptingBridge/sbapplication/applicationwithprocessidentifier_.md",
+      "hash": "dda0b7a146d7a2ed9d965c30248e85f041b1b7af8cae3ae56b1f64813e1f2008"
+    },
+    "https://developer.apple.com/documentation/scriptingbridge/sbapplication/applicationwithurl:": {
+      "etag": "\"2fa7-65d560cce1aaf-df\"",
+      "file_path": "documentation/ScriptingBridge/sbapplication/applicationwithurl_.md",
+      "hash": "9abd01c50dd8371e674a6e40a7105b6fa7be6108e622e24a7e8bfc9a09f756ed"
+    },
     "https://developer.apple.com/documentation/scriptingbridge/sbapplication/class(forscriptingclass:)": {
       "etag": "\"3588-65d560cce1aaf-df\"",
       "file_path": "documentation/ScriptingBridge/sbapplication/class(forscriptingclass).md",
@@ -170,6 +185,11 @@
       "file_path": "documentation/ScriptingBridge/sbobject/property(withcode).md",
       "hash": "419252607813b496143e280432569f7ad071c9e0507ae33440677c5717bc7a07"
     },
+    "https://developer.apple.com/documentation/scriptingbridge/sbobject/sendevent:id:parameters:": {
+      "etag": "\"2e39-65d560cce1aaf-df\"",
+      "file_path": "documentation/ScriptingBridge/sbobject/sendevent_id_parameters_.md",
+      "hash": "26f3ebfe5288155822995c887c59a236a3ab310631251c3e82932cf18f33eee3"
+    },
     "https://developer.apple.com/documentation/scriptingbridge/sbobject/setto(_:)": {
       "etag": "\"2e66-65d560cce1aaf-df\"",
       "file_path": "documentation/ScriptingBridge/sbobject/setto(_).md",
@@ -189,6 +209,21 @@
       "etag": "\"3060-65d560cce1aaf-df\"",
       "file_path": "documentation/ScriptingBridge/sbapplication/activate().md",
       "hash": "0412e4d1e489a6d2f6ae55d500e307de41035572be349484a86c4bcd03992214"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/scriptingbridge/sbapplication/applicationwithbundleidentifier:.json": {
+      "etag": "\"2b4f-65d560cce1aaf-df\"",
+      "file_path": "documentation/ScriptingBridge/sbapplication/applicationwithbundleidentifier_.md",
+      "hash": "d9e837ab3fcf59803b610c7a76a7abae623c2dabfdab3cd1dfd0fe5c9c5d51a3"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/scriptingbridge/sbapplication/applicationwithprocessidentifier:.json": {
+      "etag": "\"3209-65d560cce1aaf-df\"",
+      "file_path": "documentation/ScriptingBridge/sbapplication/applicationwithprocessidentifier_.md",
+      "hash": "dda0b7a146d7a2ed9d965c30248e85f041b1b7af8cae3ae56b1f64813e1f2008"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/scriptingbridge/sbapplication/applicationwithurl:.json": {
+      "etag": "\"2fa7-65d560cce1aaf-df\"",
+      "file_path": "documentation/ScriptingBridge/sbapplication/applicationwithurl_.md",
+      "hash": "9abd01c50dd8371e674a6e40a7105b6fa7be6108e622e24a7e8bfc9a09f756ed"
     },
     "https://developer.apple.com/tutorials/data/documentation/scriptingbridge/sbapplication/class(forscriptingclass:).json": {
       "etag": "\"3588-65d560cce1aaf-df\"",
@@ -345,6 +380,11 @@
       "file_path": "documentation/ScriptingBridge/sbobject/property(withcode).md",
       "hash": "419252607813b496143e280432569f7ad071c9e0507ae33440677c5717bc7a07"
     },
+    "https://developer.apple.com/tutorials/data/documentation/scriptingbridge/sbobject/sendevent:id:parameters:.json": {
+      "etag": "\"2e39-65d560cce1aaf-df\"",
+      "file_path": "documentation/ScriptingBridge/sbobject/sendevent_id_parameters_.md",
+      "hash": "26f3ebfe5288155822995c887c59a236a3ab310631251c3e82932cf18f33eee3"
+    },
     "https://developer.apple.com/tutorials/data/documentation/scriptingbridge/sbobject/setto(_:).json": {
       "etag": "\"2e66-65d560cce1aaf-df\"",
       "file_path": "documentation/ScriptingBridge/sbobject/setto(_).md",
@@ -353,8 +393,8 @@
   },
   "metadata": {
     "render": {
-      "version": 1
+      "version": 2
     },
-    "total_pages": 70
+    "total_pages": 78
   }
 }

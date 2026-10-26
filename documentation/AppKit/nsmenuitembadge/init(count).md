@@ -28,6 +28,8 @@ init(count itemCount: Int)
 ### Creating menu item badges
 - [init(string: String)](./init%28string%29.md)
   Creates a badge with the provided custom string.
+- [- initWithCount:type:](./initwithcount_type_.md)
+  Initializes the badge with a count and a pre-defined badge type.
 
 
 ---

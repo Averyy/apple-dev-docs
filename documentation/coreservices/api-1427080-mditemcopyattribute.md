@@ -35,6 +35,8 @@ A CFTypeRef, or `NULL` if there was a failure reading the attribute or the attri
   Returns the values of the specified attributes in the metadata item.
 - [func MDItemCopyAttributeNames(MDItem!) -> CFArray!](./api-1427066-mditemcopyattributenames.md)
   Returns an array containing the attribute names existing in the metadata item.
+- [MDItemCopyAttributeList](./api-1427028-mditemcopyattributelist.md)
+  Returns the values of the specified attributes in the metadata item.
 
 
 ---

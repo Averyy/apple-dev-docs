@@ -29,6 +29,14 @@ func keyImage() -> INImage?
 
 An image associated with a named parameter or another image defined in the intent.
 
+## See Also
+
+### Associating an Image
+- [- imageForParameterNamed:](./imageforparameternamed_.md)
+  Returns the image associated with the specified parameter.
+- [- setImage:forParameterNamed:](./setimage_forparameternamed_.md)
+  Sets the image to use for the specified parameter.
+
 
 ---
 

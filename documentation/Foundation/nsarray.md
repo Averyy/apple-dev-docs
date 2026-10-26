@@ -110,6 +110,14 @@ If the behavior you want to add supplements that of the existing class, you coul
   Creates and returns an array containing a given object.
 - [convenience init(objects: UnsafePointer<AnyObject>, count: Int)](./nsarray/init%28objects,count%29-7dct1.md)
   Creates and returns an array that includes a given number of objects from a given C array.
+- [+ array](./nsarray/array.md)
+  Creates and returns an empty array.
+- [+ arrayWithArray:](./nsarray/arraywitharray_.md)
+  Creates and returns an array containing the objects in another given array.
+- [+ arrayWithContentsOfFile:](./nsarray/arraywithcontentsoffile_.md)
+  Creates and returns an array containing the contents of the file specified by a given path.
+- [+ arrayWithObjects:](./nsarray/arraywithobjects_.md)
+  Creates and returns an array containing the objects in the argument list.
 ### Initializing an Array
 - [init()](./nsarray/init%28%29.md)
   Initializes a newly allocated array.
@@ -121,6 +129,8 @@ If the behavior you want to add supplements that of the existing class, you coul
   Initializes a newly allocated array with the contents of the file specified by a given path.
 - [init(objects: UnsafePointer<AnyObject>?, count: Int)](./nsarray/init%28objects,count%29-5odxv.md)
   Initializes a newly allocated array to include a given number of objects from a given C array.
+- [- initWithObjects:](./nsarray/initwithobjects_.md)
+  Initializes a newly allocated array by placing in it the objects in the argument list.
 ### Querying an Array
 - [func contains(Any) -> Bool](./nsarray/contains%28_%29.md)
   Returns a Boolean value that indicates whether a given object is present in the array.
@@ -140,6 +150,10 @@ If the behavior you want to add supplements that of the existing class, you coul
   Returns an enumerator object that lets you access each object in the array.
 - [func reverseObjectEnumerator() -> NSEnumerator](./nsarray/reverseobjectenumerator%28%29.md)
   Returns an enumerator object that lets you access each object in the array, in reverse order.
+- [- getObjects:](./nsarray/getobjects_.md)
+  Copies all the objects contained in the array to `aBuffer`.
+- [- getObjects:range:](./nsarray/getobjects_range_.md)
+  Copies references to objects contained in the array that fall within the specified range to `aBuffer`.
 ### Finding Objects in an Array
 - [func index(of: Any) -> Int](./nsarray/index%28of%29.md)
   Returns the lowest index whose corresponding array value is equal to a given object.
@@ -170,6 +184,10 @@ If the behavior you want to add supplements that of the existing class, you coul
   Executes a given closure or block using each object in the array with the specified options.
 - [func enumerateObjects(at: IndexSet, options: NSEnumerationOptions, using: (Any, Int, UnsafeMutablePointer<ObjCBool>) -> Void)](./nsarray/enumerateobjects%28at,options,using%29.md)
   Executes a given block using the objects in the array at the specified indexes.
+- [- makeObjectsPerformSelector:](./nsarray/makeobjectsperformselector_.md)
+  Sends to each object in the array the message identified by a given selector, starting with the first object and continuing through the array to the last object.
+- [- makeObjectsPerformSelector:withObject:](./nsarray/makeobjectsperformselector_withobject_.md)
+  Sends the `aSelector` message to each object in the array, starting with the first object and continuing through the array to the last object.
 ### Comparing Arrays
 - [func firstObjectCommon(with: [Any]) -> Any?](./nsarray/firstobjectcommon%28with%29.md)
   Returns the first object contained in the receiving array that’s equal to an object in another given array.
@@ -247,6 +265,12 @@ If the behavior you want to add supplements that of the existing class, you coul
   An object representing the difference between two ordered collections.
 - [struct NSOrderedCollectionDifferenceCalculationOptions](./nsorderedcollectiondifferencecalculationoptions.md)
   Constants that specify the options to use when creating an ordered collection difference.
+- [- differenceFromArray:](./nsarray/differencefromarray_.md)
+  Compares two arrays to create a difference object that represents the changes between them.
+- [- differenceFromArray:withOptions:](./nsarray/differencefromarray_withoptions_.md)
+  Compares two arrays, with options, to create a difference object that represents the changes between them.
+- [- differenceFromArray:withOptions:usingEquivalenceTest:](./nsarray/differencefromarray_withoptions_usingequivalencetest_.md)
+  Compares two arrays, using the provided block and with options, to create a difference object that represents the changes between them.
 ### New Methods
 - [init?(coder: NSCoder)](./nsarray/init%28coder%29.md)
 ### Constants
@@ -261,10 +285,16 @@ If the behavior you want to add supplements that of the existing class, you coul
 - [convenience init(objects: Any...)](./nsarray/init%28objects%29.md)
 ### Instance Methods
 - [func write(to: URL) throws](./nsarray/write%28to%29.md)
+- [- arrayByApplyingDifference:](./nsarray/arraybyapplyingdifference_.md)
+  Creates a new array by applying a difference object to an existing array.
 ### Default Implementations
 - [ExpressibleByArrayLiteral Implementations](./nsarray/expressiblebyarrayliteral-implementations.md)
 - [NSArray Implementations](./nsarray/nsarray-implementations.md)
 - [Sequence Implementations](./nsarray/sequence-implementations.md)
+### Type Methods
+- [+ arrayWithContentsOfURL:](./nsarray/arraywithcontentsofurl_.md)
+  Creates and returns an array containing the contents specified by a given URL.
+- [+ arrayWithContentsOfURL:error:](./nsarray/arraywithcontentsofurl_error_.md)
 
 ## Relationships
 
@@ -291,6 +321,20 @@ If the behavior you want to add supplements that of the existing class, you coul
 - [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 - [NSSecureCoding](./nssecurecoding.md)
 - [Sequence](../Swift/sequence.md)
+
+## See Also
+
+### Basic Collections
+- [NSMutableArray](./nsmutablearray.md)
+  A dynamic ordered collection of objects.
+- [NSDictionary](./nsdictionary.md)
+  A static collection of objects associated with unique keys.
+- [NSMutableDictionary](./nsmutabledictionary.md)
+  A dynamic collection of objects associated with unique keys.
+- [NSSet](./nsset.md)
+  A static, unordered collection of unique objects.
+- [NSMutableSet](./nsmutableset.md)
+  A dynamic unordered collection of unique objects.
 
 
 ---

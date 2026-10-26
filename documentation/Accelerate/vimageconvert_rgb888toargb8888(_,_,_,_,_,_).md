@@ -55,6 +55,10 @@ If you specify `premultiply` as `true`, the function uses the following calculat
   Combines an 8-bit-per-channel, 3-channel RGB buffer and either an 8-bit alpha buffer or constant alpha value to produce a BGRA result.
 - [func vImageConvert_RGB888toRGBA8888(UnsafePointer<vImage_Buffer>, UnsafePointer<vImage_Buffer>!, Pixel_8, UnsafePointer<vImage_Buffer>, Bool, vImage_Flags) -> vImage_Error](./vimageconvert_rgb888torgba8888%28_,_,_,_,_,_%29.md)
   Combines an 8-bit-per-channel, 3-channel RGB buffer and either an 8-bit alpha buffer or constant alpha value to produce an RGBA result.
+- [vImageConvert_BGR888toBGRA8888](./vimageconvert_bgr888tobgra8888.md)
+  Combines an 8-bit-per-channel, 3-channel BGR buffer and either an 8-bit alpha buffer or constant alpha value to produce a BGRA result.
+- [vImageConvert_BGR888toRGBA8888](./vimageconvert_bgr888torgba8888.md)
+  Combines an 8-bit-per-channel, 3-channel BGR buffer and either an 8-bit alpha buffer or constant alpha value to produce an RGBA result.
 
 
 ---

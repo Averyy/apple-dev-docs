@@ -45,6 +45,8 @@ Instead of providing multiple images with different resolutions, you can provide
 ### Creating the Template
 - [init(imageProvider: CLKImageProvider)](./clkcomplicationtemplateutilitariansmallsquare/init%28imageprovider%29.md)
   Creates a new template that has a square image.
+- [+ templateWithImageProvider:](./clkcomplicationtemplateutilitariansmallsquare/templatewithimageprovider_.md)
+  Returns a new template that has a square image.
 ### Setting the Complication Data
 - [var imageProvider: CLKImageProvider](./clkcomplicationtemplateutilitariansmallsquare/imageprovider.md)
   The image to display.

@@ -23,6 +23,8 @@ static simd_uchar4 simd_make_uchar4(unsigned char x, unsigned char y, unsigned c
   Returns a new vector with the first element set to a scalar value, and other elements set to zero.
 - [func simd_make_uchar4_undef(UInt8) -> simd_uchar4](./simd_make_uchar4_undef%28_%29-7uno.md)
   Returns a new vector with the first element set to a scalar value, and other elements undefined.
+- [vector4](./vector4-7c8o4.md)
+  Returns a new vector from the specified scalar values.
 
 
 ---

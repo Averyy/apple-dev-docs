@@ -27,6 +27,8 @@ static simd_double2 simd_make_double2(simd_double3 other);
   Returns a new vector by truncating the specified eight-element vector.
 - [func simd_make_double2(Double, Double) -> simd_double2](./simd_make_double2%28_,_%29.md)
   Returns a new vector from the specified vectors.
+- [vector2](./vector2-8cpbh.md)
+  Returns a new vector from the specified vectors.
 
 
 ---

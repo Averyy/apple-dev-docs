@@ -45,6 +45,8 @@ Instead of providing multiple images with different resolutions, you can provide
 ### Creating the Template
 - [init(imageProvider: CLKImageProvider)](./clkcomplicationtemplateextralargesimpleimage/init%28imageprovider%29.md)
   Creates a new template from the provided image.
+- [+ templateWithImageProvider:](./clkcomplicationtemplateextralargesimpleimage/templatewithimageprovider_.md)
+  Returns a new template from the provided image.
 ### Setting the Complication Data
 - [var imageProvider: CLKImageProvider](./clkcomplicationtemplateextralargesimpleimage/imageprovider.md)
   The image to display in the complication.

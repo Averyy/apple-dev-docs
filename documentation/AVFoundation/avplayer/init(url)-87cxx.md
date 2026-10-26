@@ -45,6 +45,10 @@ This method implicitly creates an [`AVPlayerItem`](../avplayeritem.md) object. Y
   Creates a new player to play the specified player item.
 - [init()](./init%28%29.md)
   Creates a player object.
+- [+ playerWithURL:](./playerwithurl_.md)
+  Returns a new player to play a single audiovisual resource referenced by a given URL.
+- [+ playerWithPlayerItem:](./playerwithplayeritem_.md)
+  Returns a new player initialized to play the specified player item.
 
 
 ---

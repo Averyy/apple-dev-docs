@@ -62,6 +62,12 @@ In macOS, however, the system supports an arbitrary number of keychains. You typ
   Retrieves a keychain search list.
 - [class SecKeychainSearch](./seckeychainsearch.md)
   An opaque type that contains information about a keychain search.
+- [SecKeychainSearchGetTypeID](./seckeychainsearchgettypeid.md)
+  Returns the unique identifier of the opaque type to which a keychain search object belongs.
+- [SecKeychainSearchCreateFromAttributes](./seckeychainsearchcreatefromattributes.md)
+  Creates a search object matching a list of zero or more attributes.
+- [SecKeychainSearchCopyNext](./seckeychainsearchcopynext.md)
+  Finds the next keychain item matching the given search criteria.
 ### User Interaction
 - [func SecKeychainSetUserInteractionAllowed(Bool) -> OSStatus](./seckeychainsetuserinteractionallowed%28_%29.md)
   Enables or disables the user interface for keychain services functions that automatically display a user interface.
@@ -100,6 +106,15 @@ In macOS, however, the system supports an arbitrary number of keychains. You typ
   Sets the application access for a keychain.
 - [func SecKeychainCopyAccess(SecKeychain?, UnsafeMutablePointer<SecAccess?>) -> OSStatus](./seckeychaincopyaccess%28_,_%29.md)
   Retrieves the application access of a keychain.
+### Legacy Symbols
+- [SecKeychainGetCSPHandle](./seckeychaingetcsphandle.md)
+  Returns the CSSM CSP handle for the given keychain object.
+- [SecKeychainGetDLDBHandle](./seckeychaingetdldbhandle.md)
+  Returns the CSSM database handle for a given keychain object.
+- [SecKeychainItemGetDLDBHandle](./seckeychainitemgetdldbhandle.md)
+  Returns the CSSM database handle for a given keychain item object.
+- [SecKeychainItemGetUniqueRecordID](./seckeychainitemgetuniquerecordid.md)
+  Returns a CSSM unique record for the given keychain item object.
 
 
 ---

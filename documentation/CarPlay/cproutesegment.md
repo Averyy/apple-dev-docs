@@ -45,6 +45,13 @@ class CPRouteSegment
   origin is a CPNavigationWaypoint, describing the origin of the segment.
 - [var tripTravelEstimates: CPTravelEstimates](./cproutesegment/triptravelestimates.md)
   tripTravelEstimates is a CPTravelEstimates object, describing the travel estimates for the current trip.
+- [coordinates](./cproutesegment/coordinates-9mw42.md)
+  coordinates is an array of CPLocationCoordinate3D, describing coordinates along the segment.
+- [coordinatesCount](./cproutesegment/coordinatescount.md)
+  coordinatesCount is an integer, describing the number of coordinates along the segment.
+### Instance Methods
+- [- initWithOrigin:destination:maneuvers:laneGuidances:currentManeuvers:currentLaneGuidance:tripTravelEstimates:maneuverTravelEstimates:coordinates:coordinatesCount:](./cproutesegment/initwithorigin_destination_maneuvers_laneguidances_currentmaneuvers_currentlaneguidance_triptravelestimates_maneuvertravelestimates_coordinates_coordinatescount_.md)
+  Initialize a CPRouteSegment object with maneuvers, lane guidances, the current maneuvers, the current lane guidance, trip travel estimates, the current maneuver travel estimates, the origin and the destination. If the current trip supports route sharing, also provide coordinates along the current segment.
 
 ## Relationships
 

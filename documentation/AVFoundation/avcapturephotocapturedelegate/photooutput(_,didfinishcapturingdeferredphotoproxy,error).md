@@ -23,7 +23,7 @@ optional func photoOutput(_ output: AVCapturePhotoOutput, didFinishCapturingDefe
 
 #### Discussion
 
-You can use the output’s [`fileDataRepresentation()`](../avcapturephoto/filedatarepresentation%28%29.md) with [`PHAssetCreationRequest`](https://developer.apple.com/documentation/photos/phassetcreationrequest) to eventually produce the final, processed photo into the user’s Photo Library. Add the in-memory proxy file data representation to the photo library as quickly as possible after this call to ensure that the photo library can begin background processing. It’s also important so that the intermediates aren’t removed by a periodic clean-up job looking for abandoned intermediates produced by using the deferred photo processing APIs.
+You can use the output’s [`fileDataRepresentation()`](../avcapturephoto/filedatarepresentation%28%29.md) with [`PHAssetCreationRequest`](../../Photos/phassetcreationrequest.md) to eventually produce the final, processed photo into the user’s Photo Library. Add the in-memory proxy file data representation to the photo library as quickly as possible after this call to ensure that the photo library can begin background processing. It’s also important so that the intermediates aren’t removed by a periodic clean-up job looking for abandoned intermediates produced by using the deferred photo processing APIs.
 
 Your delegate implementation must adopt this method to opt into deferred photo processing, otherwise calling [`capturePhoto(with:delegate:)`](../avcapturephotooutput/capturephoto%28with,delegate%29.md) throws an exception.
 

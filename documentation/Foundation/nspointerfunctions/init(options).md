@@ -37,6 +37,9 @@ The `NSPointerFunctions` object, initialized with the given options.
 
 ### Related Documentation
 - [Collections Programming Topics](https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/Collections/Collections.html#//apple_ref/doc/uid/10000034i)
+### Creating and Initializing an NSPointerFunctions Object
+- [+ pointerFunctionsWithOptions:](./pointerfunctionswithoptions_.md)
+  Returns a new `NSPointerFunctions` object initialized with the given options.
 
 
 ---

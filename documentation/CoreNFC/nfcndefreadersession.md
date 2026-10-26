@@ -67,6 +67,8 @@ As with the [`NFCReaderSession`](./nfcreadersession-swift.class.md) base class, 
   A general interface for interacting with a reader session.
 - [Near Field Communication Tag Reader Session Formats Entitlement](../BundleResources/entitlements/com.apple.developer.nfc.readersession.formats.md)
   The Near Field Communication data formats an app can read.
+- [NFCReaderSessionDelegate](./nfcreadersessiondelegate.md)
+  A collection of callbacks that provide information about the status of an NFC reader session.
 
 
 ---

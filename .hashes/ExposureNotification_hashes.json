@@ -30,6 +30,36 @@
       "file_path": "documentation/ExposureNotification/configuring-exposure-notifications.md",
       "hash": "771b7d9ac4c3fdecac0ec8f2077fc8b708581fce87f67bac25a4e072f439d85a"
     },
+    "https://developer.apple.com/documentation/exposurenotification/en_api_available": {
+      "etag": "\"aa5-65d560a54abc6-df\"",
+      "file_path": "documentation/ExposureNotification/en_api_available.md",
+      "hash": "4b7a6af5f49529d6bf983a99ef6f63fd4cebe432915fe85bee3fcbd0ae5c22e0"
+    },
+    "https://developer.apple.com/documentation/exposurenotification/en_api_available_export": {
+      "etag": "\"af9-65d560a563722-df\"",
+      "file_path": "documentation/ExposureNotification/en_api_available_export.md",
+      "hash": "6c6c885c97504ff488e160e808b6b3f42b2697509b68e3c9228e7b9438d62ad3"
+    },
+    "https://developer.apple.com/documentation/exposurenotification/en_api_available_export_v2": {
+      "etag": "\"b1d-65d560a527cfc-df\"",
+      "file_path": "documentation/ExposureNotification/en_api_available_export_v2.md",
+      "hash": "842668be1c748a1da256a759c1665ac0e590b9781a8828eebcdc0100d619cd62"
+    },
+    "https://developer.apple.com/documentation/exposurenotification/en_api_available_v2": {
+      "etag": "\"ac9-65d560a50fda3-df\"",
+      "file_path": "documentation/ExposureNotification/en_api_available_v2.md",
+      "hash": "80b87c6d3923ad1b3296877282698f0fac360dc786cf3118c9935c57e39040c2"
+    },
+    "https://developer.apple.com/documentation/exposurenotification/en_api_available_v3": {
+      "etag": "\"ac9-65d560a527cfc-df\"",
+      "file_path": "documentation/ExposureNotification/en_api_available_v3.md",
+      "hash": "fb40e9e365aaa3282c5ccfcb0da628702e75c445583742fa43b6a50196b157a9"
+    },
+    "https://developer.apple.com/documentation/exposurenotification/en_api_available_v5": {
+      "etag": "\"ac9-65d560a50fda3-df\"",
+      "file_path": "documentation/ExposureNotification/en_api_available_v5.md",
+      "hash": "d4be0ca673cc496454ec96ef81cf6cd40d189664b1b7dfb93220a098fcd4d090"
+    },
     "https://developer.apple.com/documentation/exposurenotification/en_feature_general": {
       "etag": "\"1665-65d560a50fda3-df\"",
       "file_path": "documentation/ExposureNotification/en_feature_general.md",
@@ -1010,6 +1040,16 @@
       "file_path": "documentation/ExposureNotification/enstatus/unknown.md",
       "hash": "83aab3760ef25ac40eb6753a24322a305575e4a7740c857b5c4467a5a1f07617"
     },
+    "https://developer.apple.com/documentation/exposurenotification/enstringify": {
+      "etag": "\"ac3-65d560a50fda3-df\"",
+      "file_path": "documentation/ExposureNotification/enstringify.md",
+      "hash": "3e6386486692fad512083716de4fa38038c3992feb9bff125c81403a95131ff8"
+    },
+    "https://developer.apple.com/documentation/exposurenotification/enstringifyexpansion": {
+      "etag": "\"b2f-65d560a57d7d1-df\"",
+      "file_path": "documentation/ExposureNotification/enstringifyexpansion.md",
+      "hash": "6f10695b38fbba23f23b1f5ac444c3185b6289fc3fb495ddb82d4f75ba2ef31a"
+    },
     "https://developer.apple.com/documentation/exposurenotification/entemporaryexposurekey": {
       "etag": "\"6090-65d560a50fda3-df\"",
       "file_path": "documentation/ExposureNotification/entemporaryexposurekey.md",
@@ -1154,6 +1194,36 @@
       "etag": "\"baae-6590235688804-df\"",
       "file_path": "documentation/ExposureNotification/configuring-exposure-notifications.md",
       "hash": "771b7d9ac4c3fdecac0ec8f2077fc8b708581fce87f67bac25a4e072f439d85a"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/exposurenotification/en_api_available.json": {
+      "etag": "\"aa5-65d560a54abc6-df\"",
+      "file_path": "documentation/ExposureNotification/en_api_available.md",
+      "hash": "4b7a6af5f49529d6bf983a99ef6f63fd4cebe432915fe85bee3fcbd0ae5c22e0"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/exposurenotification/en_api_available_export.json": {
+      "etag": "\"af9-65d560a563722-df\"",
+      "file_path": "documentation/ExposureNotification/en_api_available_export.md",
+      "hash": "6c6c885c97504ff488e160e808b6b3f42b2697509b68e3c9228e7b9438d62ad3"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/exposurenotification/en_api_available_export_v2.json": {
+      "etag": "\"b1d-65d560a527cfc-df\"",
+      "file_path": "documentation/ExposureNotification/en_api_available_export_v2.md",
+      "hash": "842668be1c748a1da256a759c1665ac0e590b9781a8828eebcdc0100d619cd62"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/exposurenotification/en_api_available_v2.json": {
+      "etag": "\"ac9-65d560a50fda3-df\"",
+      "file_path": "documentation/ExposureNotification/en_api_available_v2.md",
+      "hash": "80b87c6d3923ad1b3296877282698f0fac360dc786cf3118c9935c57e39040c2"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/exposurenotification/en_api_available_v3.json": {
+      "etag": "\"ac9-65d560a527cfc-df\"",
+      "file_path": "documentation/ExposureNotification/en_api_available_v3.md",
+      "hash": "fb40e9e365aaa3282c5ccfcb0da628702e75c445583742fa43b6a50196b157a9"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/exposurenotification/en_api_available_v5.json": {
+      "etag": "\"ac9-65d560a50fda3-df\"",
+      "file_path": "documentation/ExposureNotification/en_api_available_v5.md",
+      "hash": "d4be0ca673cc496454ec96ef81cf6cd40d189664b1b7dfb93220a098fcd4d090"
     },
     "https://developer.apple.com/tutorials/data/documentation/exposurenotification/en_feature_general.json": {
       "etag": "\"1665-65d560a50fda3-df\"",
@@ -2135,6 +2205,16 @@
       "file_path": "documentation/ExposureNotification/enstatus/unknown.md",
       "hash": "83aab3760ef25ac40eb6753a24322a305575e4a7740c857b5c4467a5a1f07617"
     },
+    "https://developer.apple.com/tutorials/data/documentation/exposurenotification/enstringify.json": {
+      "etag": "\"ac3-65d560a50fda3-df\"",
+      "file_path": "documentation/ExposureNotification/enstringify.md",
+      "hash": "3e6386486692fad512083716de4fa38038c3992feb9bff125c81403a95131ff8"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/exposurenotification/enstringifyexpansion.json": {
+      "etag": "\"b2f-65d560a57d7d1-df\"",
+      "file_path": "documentation/ExposureNotification/enstringifyexpansion.md",
+      "hash": "6f10695b38fbba23f23b1f5ac444c3185b6289fc3fb495ddb82d4f75ba2ef31a"
+    },
     "https://developer.apple.com/tutorials/data/documentation/exposurenotification/entemporaryexposurekey.json": {
       "etag": "\"6090-65d560a50fda3-df\"",
       "file_path": "documentation/ExposureNotification/entemporaryexposurekey.md",
@@ -2253,8 +2333,8 @@
   },
   "metadata": {
     "render": {
-      "version": 1
+      "version": 2
     },
-    "total_pages": 450
+    "total_pages": 466
   }
 }

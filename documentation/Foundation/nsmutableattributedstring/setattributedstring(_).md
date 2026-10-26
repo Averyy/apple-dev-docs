@@ -38,6 +38,8 @@ func setAttributedString(_ attrString: NSAttributedString)
   Inserts the characters and attributes of the given attributed string into the receiver at the given index.
 - [func replaceCharacters(in: NSRange, with: NSAttributedString)](./replacecharacters%28in,with%29-1uaw7.md)
   Replaces the characters and attributes in a given range with the characters and attributes of the given attributed string.
+- [- appendLocalizedFormat:](./appendlocalizedformat_.md)
+  Formats the specified string and arguments with the current locale, then appends the result to the receiver.
 
 
 ---

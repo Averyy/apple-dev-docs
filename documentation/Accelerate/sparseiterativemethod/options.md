@@ -25,6 +25,18 @@ var options: SparseIterativeMethod.__Unnamed_union_options
 union { ... } options;
 ```
 
+## Topics
+
+### Instance Properties
+- [base](./options/base.md)
+- [cg](./options/cg.md)
+  Conjugate Gradient Options.
+- [gmres](./options/gmres.md)
+  Right-preconditioned (F/DQ)GMRES Parameters Options.
+- [lsmr](./options/lsmr.md)
+  LSMR is MINRES specialised for solving least squares.
+- [padding](./options/padding.md)
+
 ## See Also
 
 ### Instance Properties

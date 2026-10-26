@@ -48,6 +48,12 @@ enum ILMessageFilterError : NSInteger;
 - [Sendable](../../Swift/sendable.md)
 - [SendableMetatype](../../Swift/sendablemetatype.md)
 
+## See Also
+
+### Errors
+- [ILMessageFilterErrorDomain](../ilmessagefiltererrordomain.md)
+  The error domain for errors associated with the IdentityLookup APIs.
+
 
 ---
 

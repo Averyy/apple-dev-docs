@@ -35,6 +35,9 @@ The Screen Time framework gives you the tools you need to help parents and guard
 ### Web-Usage data deletion
 - [class STWebHistory](./stwebhistory.md)
   The object you use to delete web-usage data.
+### Type Aliases
+- [STWebHistoryProfileIdentifier](./stwebhistory/profileidentifier.md)
+  An identifier representing a web history profile.
 
 
 ---

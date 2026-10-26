@@ -38,6 +38,10 @@ On its own, a time interval does not specify a unique point in time, or even a s
   A specific point in time, independent of any calendar or time zone.
 - [struct DateInterval](./dateinterval.md)
   The span of time between a specific start date and end date.
+- [NSDate](./nsdate.md)
+  A representation of a specific point in time, independent of any calendar or time zone.
+- [NSDateInterval](./nsdateinterval.md)
+  An object representing the span of time between a specific start date and end date.
 
 
 ---

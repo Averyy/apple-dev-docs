@@ -59,6 +59,10 @@ If you invoke one of the `decode`-prefixed methods of this class using a key tha
   Decodes and returns the object graph previously encoded by `NSKeyedArchiver` and stored in a given `NSData` object.
 - [class func unarchiveObject(withFile: String) -> Any?](./nskeyedunarchiver/unarchiveobject%28withfile%29.md)
   Decodes and returns the object graph previously encoded by `NSKeyedArchiver` written to the file at a given path.
+- [+ unarchivedObjectOfClass:fromData:error:](./nskeyedunarchiver/unarchivedobjectofclass_fromdata_error_.md)
+  Decodes a previously-archived object graph, that returns the root object as the specified type.
+- [+ unarchiveTopLevelObjectWithData:error:](./nskeyedunarchiver/unarchivetoplevelobjectwithdata_error_.md)
+  Decodes a previously-archived object graph, returning the root object.
 ### Decoding Data
 - [func containsValue(forKey: String) -> Bool](./nskeyedunarchiver/containsvalue%28forkey%29.md)
   Returns a Boolean value that indicates whether the archive contains a value for a given key within the current decoding scope.
@@ -84,6 +88,8 @@ If you invoke one of the `decode`-prefixed methods of this class using a key tha
   Tells the receiver that you are finished decoding objects.
 - [var decodingFailurePolicy: NSCoder.DecodingFailurePolicy](./nskeyedunarchiver/decodingfailurepolicy.md)
   The action to take when this unarchiver fails to decode an entry.
+- [- decodeIntForKey:](./nskeyedunarchiver/decodeintforkey_.md)
+  Decodes an integer value associated with a given key.
 ### Managing the Delegate
 - [var delegate: (any NSKeyedUnarchiverDelegate)?](./nskeyedunarchiver/delegate.md)
   The receiver’s delegate.
@@ -107,6 +113,14 @@ If you invoke one of the `decode`-prefixed methods of this class using a key tha
 - [static func unarchivedArrayOfObjects(ofClasses: [AnyClass], from: Data) throws -> [Any]?](./nskeyedunarchiver/unarchivedarrayofobjects%28ofclasses,from%29.md)
 - [static func unarchivedDictionary(keysOfClasses: [AnyClass], objectsOfClasses: [AnyClass], from: Data) throws -> [AnyHashable : Any]?](./nskeyedunarchiver/unarchiveddictionary%28keysofclasses,objectsofclasses,from%29.md)
 - [static func unarchivedDictionary<DecodedKey, DecodedObject>(ofKeyClass: DecodedKey.Type, objectClass: DecodedObject.Type, from: Data) throws -> [DecodedKey : DecodedObject]?](./nskeyedunarchiver/unarchiveddictionary%28ofkeyclass,objectclass,from%29.md)
+- [+ unarchivedArrayOfObjectsOfClass:fromData:error:](./nskeyedunarchiver/unarchivedarrayofobjectsofclass_fromdata_error_.md)
+  Decodes the \c NSArray root object from \c data which should be an \c NSArray containing the given non-collection class (no nested arrays or arrays of dictionaries, etc) from the given archive, previously encoded by \c NSKeyedArchiver.
+- [+ unarchivedArrayOfObjectsOfClasses:fromData:error:](./nskeyedunarchiver/unarchivedarrayofobjectsofclasses_fromdata_error_.md)
+  Decodes the \c NSArray root object from \c data which should be an \c NSArray, containing the given non-collection classes in \c classes  (no nested arrays or arrays of dictionaries, etc) from the given archive, previously encoded by \c NSKeyedArchiver.
+- [+ unarchivedDictionaryWithKeysOfClass:objectsOfClass:fromData:error:](./nskeyedunarchiver/unarchiveddictionarywithkeysofclass_objectsofclass_fromdata_error_.md)
+  Decodes the \c NSDictionary root object from \c data which should be an \c NSDictionary<keyCls,objectCls>  with keys of type given in \c keyCls and objects of the given non-collection class \c objectCls (no nested dictionaries or other dictionaries contained in the dictionary, etc) from the given archive, previously encoded by \c NSKeyedArchiver.
+- [+ unarchivedDictionaryWithKeysOfClasses:objectsOfClasses:fromData:error:](./nskeyedunarchiver/unarchiveddictionarywithkeysofclasses_objectsofclasses_fromdata_error_.md)
+  Decodes the \c NSDictionary root object from \c data which should be an \c NSDictionary, with keys of the types given in \c keyClasses and objects of the given non-collection classes in \c objectClasses (no nested dictionaries or other dictionaries contained in the dictionary, etc) from the given archive, previously encoded by \c NSKeyedArchiver.
 
 ## Relationships
 

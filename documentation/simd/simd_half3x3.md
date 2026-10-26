@@ -34,6 +34,37 @@ typedef struct { ... } simd_half3x3;
   Returns a new matrix with the specified columns.
 - [func simd_matrix_from_rows(simd_half3, simd_half3, simd_half3) -> simd_half3x3](./simd_matrix_from_rows%28_,_,_%29-60h5f.md)
   Returns a new matrix with the specified rows.
+- [simd_diagonal_matrix](./simd_diagonal_matrix-2nygl.md)
+  Returns a new matrix with the specified vector on the main diagonal.
+### Math functions
+- [simd_add](./simd_add-6lf10.md)
+  Returns the sum of two matrices.
+- [simd_sub](./simd_sub-5pv8e.md)
+  Returns the difference of two matrices.
+### Matrix-scalar multiplication functions
+- [matrix_scale](./matrix_scale-7i2z6.md)
+  Returns the product of a scalar value and a matrix.
+### Matrix-vector multiplication functions
+- [matrix_multiply](./matrix_multiply-7d4xh.md)
+  Returns the product of a vector and a matrix.
+### Equality functions
+- [simd_equal](./simd_equal-75e79.md)
+  Returns true if every element in a matrix is exactly equal to the corresponding element in a second matrix.
+- [simd_almost_equal_elements](./simd_almost_equal_elements-9mm59.md)
+  Returns true if every element in a matrix is within a specified tolerance to the corresponding element in a second matrix.
+- [simd_almost_equal_elements_relative](./simd_almost_equal_elements_relative-2mbzd.md)
+  Returns true if every element in a matrix is within a specified single-precision relative tolerance to the corresponding element in a second matrix.
+### Determinant and inverse functions
+- [simd_determinant](./simd_determinant-62ip1.md)
+  Returns the determinant of the specified matrix.
+- [simd_inverse](./simd_inverse-7h4e5.md)
+  Returns the inverse of the specified matrix.
+### Linear combination function
+- [simd_linear_combination](./simd_linear_combination-9ties.md)
+  Returns the linear combination of two scalar values and two matrices.
+### Transpose function
+- [simd_transpose](./simd_transpose-8n4rp.md)
+  Returns the transpose of a matrix.
 
 ## Relationships
 

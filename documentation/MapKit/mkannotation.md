@@ -36,6 +36,8 @@ An object that adopts this protocol needs to implement the [`coordinate`](./mkan
 ### Position attributes
 - [var coordinate: CLLocationCoordinate2D](./mkannotation/coordinate.md)
   The center point (specified as a map coordinate) of the annotation.
+- [- setCoordinate:](./mkannotation/setcoordinate_.md)
+  Sets the new center point of the annotation.
 ### Title attributes
 - [var title: String?](./mkannotation/title.md)
   The string containing the annotation’s title.

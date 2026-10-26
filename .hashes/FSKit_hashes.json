@@ -10,6 +10,11 @@
       "file_path": "documentation/FSKit/building-a-passthrough-file-system.md",
       "hash": "a45b343dcf34a3505b4bb1a4725dbb69dad2b253b4f89c394b555087e2b6a2d4"
     },
+    "https://developer.apple.com/documentation/fskit/fs_always_export": {
+      "etag": "\"13f5-65d55e228b06a-df\"",
+      "file_path": "documentation/FSKit/fs_always_export.md",
+      "hash": "91581fd959447e1c7f0c83f96f4991995ac079d18a4c419094b7fa0c740b8f63"
+    },
     "https://developer.apple.com/documentation/fskit/fs_errorforcocoaerror(_:)": {
       "etag": "\"353e-65d55e228b06a-df\"",
       "file_path": "documentation/FSKit/fs_errorforcocoaerror(_).md",
@@ -24,6 +29,26 @@
       "etag": "\"34ee-65d55e23e71f5-df\"",
       "file_path": "documentation/FSKit/fs_errorforposixerror(_).md",
       "hash": "3a8d31ef3a67a5a9f9cb1b22e9628f1552626a46bec408b6af7cced80960ce43"
+    },
+    "https://developer.apple.com/documentation/fskit/fs_export": {
+      "etag": "\"13cb-65d55e228b06a-df\"",
+      "file_path": "documentation/FSKit/fs_export.md",
+      "hash": "00da85a1e08baa2ad223bda96f2a6cba55b80c2adb54a93be70d68c4d5df7949"
+    },
+    "https://developer.apple.com/documentation/fskit/fs_export_internal": {
+      "etag": "\"1401-65d55e22c4991-df\"",
+      "file_path": "documentation/FSKit/fs_export_internal.md",
+      "hash": "7108468459b879a4c98200017ef4dc336ec51ee408d5a239ee9545852f4b95fb"
+    },
+    "https://developer.apple.com/documentation/fskit/fs_extern": {
+      "etag": "\"13cb-65d55e228b06a-df\"",
+      "file_path": "documentation/FSKit/fs_extern.md",
+      "hash": "9c45a341d0b7f9ae768107c599897e583a7f6bde05ab23c028f1a4fbabd83d37"
+    },
+    "https://developer.apple.com/documentation/fskit/fs_supported_visibility": {
+      "etag": "\"141f-65d55e231280b-df\"",
+      "file_path": "documentation/FSKit/fs_supported_visibility.md",
+      "hash": "21d1acdf6cf8ca5df418367f98199c86ecfbadae333bcba2cb03fce15baca830"
     },
     "https://developer.apple.com/documentation/fskit/fsactivateresult": {
       "etag": "\"4379-65d55e23f4f9f-df\"",
@@ -65,6 +90,11 @@
       "file_path": "documentation/FSKit/fsblockdeviceresource/delayedmetadatawrite(from,startingat,length).md",
       "hash": "578806a486c05d263b6c9162a3db48325c93dda2a3219f1f6e0d5a9d2d64b7cd"
     },
+    "https://developer.apple.com/documentation/fskit/fsblockdeviceresource/delayedmetadatawritefrom:startingat:length:error:": {
+      "etag": "\"4b85-65d55e23e71f5-df\"",
+      "file_path": "documentation/FSKit/fsblockdeviceresource/delayedmetadatawritefrom_startingat_length_error_.md",
+      "hash": "f2298acb905129ef70b89bea5885c73ecee85ef957a7a9f6271132efac35b023"
+    },
     "https://developer.apple.com/documentation/fskit/fsblockdeviceresource/iswritable": {
       "etag": "\"30da-65d55e23e71f5-df\"",
       "file_path": "documentation/FSKit/fsblockdeviceresource/iswritable.md",
@@ -90,10 +120,20 @@
       "file_path": "documentation/FSKit/fsblockdeviceresource/metadataread(into,startingat,length).md",
       "hash": "840970ee6cb168bdd31c33c09c38e11f6920353256d45289049ad8263392453f"
     },
+    "https://developer.apple.com/documentation/fskit/fsblockdeviceresource/metadatareadinto:startingat:length:error:": {
+      "etag": "\"4599-65d55e23e71f5-df\"",
+      "file_path": "documentation/FSKit/fsblockdeviceresource/metadatareadinto_startingat_length_error_.md",
+      "hash": "f99850f28048461387b377c5ab67d9b718015bd7d57a71ef7173a8ecbbbef950"
+    },
     "https://developer.apple.com/documentation/fskit/fsblockdeviceresource/metadatawrite(from:startingat:length:)": {
       "etag": "\"496e-65d55e23e71f5-df\"",
       "file_path": "documentation/FSKit/fsblockdeviceresource/metadatawrite(from,startingat,length).md",
       "hash": "9fd77586f1bcb84fd9b449c07c8f666ac094bf53ac8c95944a8566f5326a2932"
+    },
+    "https://developer.apple.com/documentation/fskit/fsblockdeviceresource/metadatawritefrom:startingat:length:error:": {
+      "etag": "\"45a3-65d55e23e71f5-df\"",
+      "file_path": "documentation/FSKit/fsblockdeviceresource/metadatawritefrom_startingat_length_error_.md",
+      "hash": "fd78b872ebafe268fc3b5b85ab392e14b93b5577a34dcbb615245091db36e6c5"
     },
     "https://developer.apple.com/documentation/fskit/fsblockdeviceresource/physicalblocksize": {
       "etag": "\"30c7-65d55e23e71f5-df\"",
@@ -115,6 +155,16 @@
       "file_path": "documentation/FSKit/fsblockdeviceresource/read(into,startingat,length,completionhandler).md",
       "hash": "d317f14e386dd64ca2be5d6312ebe524830d5e97262ee73d889bf211a4a26088"
     },
+    "https://developer.apple.com/documentation/fskit/fsblockdeviceresource/readinto:startingat:length:completionhandler:": {
+      "etag": "\"2d36-65d55e23e71f5-df\"",
+      "file_path": "documentation/FSKit/fsblockdeviceresource/readinto_startingat_length_completionhandler_.md",
+      "hash": "56f952319c2406669c8ea2ff4ccad5661809793167bc55fe09bd1b1d6443e4b2"
+    },
+    "https://developer.apple.com/documentation/fskit/fsblockdeviceresource/readinto:startingat:length:error:": {
+      "etag": "\"2b92-65d55e23e71f5-df\"",
+      "file_path": "documentation/FSKit/fsblockdeviceresource/readinto_startingat_length_error_.md",
+      "hash": "35575b47a958028d30e252943b66a7726a224eabf146b05dd433786afde7ae58"
+    },
     "https://developer.apple.com/documentation/fskit/fsblockdeviceresource/write(from:startingat:length:)-2fmgt": {
       "etag": "\"47f5-65d55e23f4f9f-df\"",
       "file_path": "documentation/FSKit/fsblockdeviceresource/write(from,startingat,length)-2fmgt.md",
@@ -129,6 +179,16 @@
       "etag": "\"4d40-65d55e23e71f5-df\"",
       "file_path": "documentation/FSKit/fsblockdeviceresource/write(from,startingat,length,completionhandler).md",
       "hash": "0f75cd85b7a2887a0872f8d80d8b829d6a24f8c714304fbfb11f6f2340c94466"
+    },
+    "https://developer.apple.com/documentation/fskit/fsblockdeviceresource/writefrom:startingat:length:completionhandler:": {
+      "etag": "\"2d48-65d55e23e71f5-df\"",
+      "file_path": "documentation/FSKit/fsblockdeviceresource/writefrom_startingat_length_completionhandler_.md",
+      "hash": "6f0c1c63c3e6509762b130452fa959a26b338e02dd153860fed0b36074b066ad"
+    },
+    "https://developer.apple.com/documentation/fskit/fsblockdeviceresource/writefrom:startingat:length:error:": {
+      "etag": "\"2bcf-65d55e23e71f5-df\"",
+      "file_path": "documentation/FSKit/fsblockdeviceresource/writefrom_startingat_length_error_.md",
+      "hash": "e268f16795697fc0a5dcda0ff1ade42ede449b94d725f4c92ce798a9dd22b139"
     },
     "https://developer.apple.com/documentation/fskit/fsblockmapflags": {
       "etag": "\"5659-65d55e22e0ccd-df\"",
@@ -760,10 +820,45 @@
       "file_path": "documentation/FSKit/fsfilename/init(string).md",
       "hash": "45adc4c5bae9f3d4fc6896fe52eaa495d2e14121190128fc9204b19f72161e7f"
     },
+    "https://developer.apple.com/documentation/fskit/fsfilename/initwithbytes:length:": {
+      "etag": "\"2d37-65d55e228b06a-df\"",
+      "file_path": "documentation/FSKit/fsfilename/initwithbytes_length_.md",
+      "hash": "a11de27584f218ac28fd045a48a323fc82a3dea3d88b37e230f697362e532140"
+    },
+    "https://developer.apple.com/documentation/fskit/fsfilename/initwithcstring:": {
+      "etag": "\"2844-65d55e228b06a-df\"",
+      "file_path": "documentation/FSKit/fsfilename/initwithcstring_.md",
+      "hash": "09c3f307137756860debc93beebf738e45e153d454a65c599c5cfc5e10183362"
+    },
+    "https://developer.apple.com/documentation/fskit/fsfilename/namewithbytes:length:": {
+      "etag": "\"2b60-65d55e228b06a-df\"",
+      "file_path": "documentation/FSKit/fsfilename/namewithbytes_length_.md",
+      "hash": "e10424c15e1786d6d78a6ae0a18bc1351e17443f8109ba6a2012c24cd0d8e2b8"
+    },
+    "https://developer.apple.com/documentation/fskit/fsfilename/namewithcstring:": {
+      "etag": "\"2608-65d55e228b06a-df\"",
+      "file_path": "documentation/FSKit/fsfilename/namewithcstring_.md",
+      "hash": "027949c92dce4924c0cfb8b3477c8ca64cdde5aa68a930488ab2befd5c3f57c2"
+    },
+    "https://developer.apple.com/documentation/fskit/fsfilename/namewithdata:": {
+      "etag": "\"2b10-65d55e228b06a-df\"",
+      "file_path": "documentation/FSKit/fsfilename/namewithdata_.md",
+      "hash": "79dc48dac2d4f8a9ffbc006eb404445e86fa575ee97295cd3345bd5b93c40ed5"
+    },
+    "https://developer.apple.com/documentation/fskit/fsfilename/namewithstring:": {
+      "etag": "\"2b28-65d55e228b06a-df\"",
+      "file_path": "documentation/FSKit/fsfilename/namewithstring_.md",
+      "hash": "a2760e4ae994f6ce8aca0d19634a083a089723e755e439cfb388539b61fedd55"
+    },
     "https://developer.apple.com/documentation/fskit/fsfilename/string": {
       "etag": "\"2847-65d55e228b06a-df\"",
       "file_path": "documentation/FSKit/fsfilename/string.md",
       "hash": "7c38cec48f3332d0f5febc19b88b7fcead200da5280acbe0ac2b1ead6480d128"
+    },
+    "https://developer.apple.com/documentation/fskit/fsfilesystem": {
+      "etag": "\"29ba-659026e9b7633-df\"",
+      "file_path": "documentation/FSKit/fsfilesystem.md",
+      "hash": "4d7c1e0cb495b689b274b1994bf116e01506aa09aeca8c1686d4b68054be91fe"
     },
     "https://developer.apple.com/documentation/fskit/fsfilesystembase": {
       "etag": "\"3509-65d55e22ab31c-df\"",
@@ -1179,10 +1274,60 @@
       "file_path": "documentation/FSKit/fsitem/tryreclaim(_).md",
       "hash": "d52154a6dbc2f6c0330ed163a88033c8b262874cd32f39e5294bf0b2463ee1f6"
     },
+    "https://developer.apple.com/documentation/fskit/fsitemdeactivationoptions/fsitemdeactivationnever": {
+      "etag": "\"286e-65d55e23f4f9f-df\"",
+      "file_path": "documentation/FSKit/fsitemdeactivationoptions/fsitemdeactivationnever.md",
+      "hash": "e4838fa16092e57b3d85e6327562ec63d7da1a480d9c131acf5369747b32a7b4"
+    },
+    "https://developer.apple.com/documentation/fskit/fskit_api_availability_v1": {
+      "etag": "\"142b-65d55e22744c0-df\"",
+      "file_path": "documentation/FSKit/fskit_api_availability_v1.md",
+      "hash": "0ed5cd2c8df3b011b082b2e40bcc279414edf2d4f65bd093469070800e49ac9d"
+    },
+    "https://developer.apple.com/documentation/fskit/fskit_api_availability_v2": {
+      "etag": "\"ae9-65d55e23e71f5-df\"",
+      "file_path": "documentation/FSKit/fskit_api_availability_v2.md",
+      "hash": "4d6805c593069650818131b6ddedb3b4a0ee24465eeacf005f42a75077423015"
+    },
+    "https://developer.apple.com/documentation/fskit/fskit_api_availability_v2_4": {
+      "etag": "\"b01-65d55e22e0ccd-df\"",
+      "file_path": "documentation/FSKit/fskit_api_availability_v2_4.md",
+      "hash": "3115b0da008ae385b1d046e09383addd6617478164a15c06b138da465131b6a0"
+    },
+    "https://developer.apple.com/documentation/fskit/fskit_api_availability_v3": {
+      "etag": "\"ae9-65d55e23e71f5-df\"",
+      "file_path": "documentation/FSKit/fskit_api_availability_v3.md",
+      "hash": "787c08dd6626b1c25753128ab1de8d32d46ef468ea60454e6bba0d7cf03197a2"
+    },
+    "https://developer.apple.com/documentation/fskit/fskit_api_introduced_v1_deprecated_v3_with_replacement": {
+      "etag": "\"ca9-65d55e228b06a-df\"",
+      "file_path": "documentation/FSKit/fskit_api_introduced_v1_deprecated_v3_with_replacement.md",
+      "hash": "41c80fd82ecb183fd4063f0477715ebe4033ff7965a5973dce034c543698ec9e"
+    },
+    "https://developer.apple.com/documentation/fskit/fskit_api_unavailable_v1": {
+      "etag": "\"1425-65d55e22ab31c-df\"",
+      "file_path": "documentation/FSKit/fskit_api_unavailable_v1.md",
+      "hash": "418a39bed2d90c126a9066d2b54dd1eb0d9a04ca5a39abe7be248e2de2293f61"
+    },
+    "https://developer.apple.com/documentation/fskit/fskit_called_once": {
+      "etag": "\"a89-65d55e22e0ccd-df\"",
+      "file_path": "documentation/FSKit/fskit_called_once.md",
+      "hash": "2503d1c313155a918b0ab79b8d111584237bac5aa728f923c4defecc65236ccb"
+    },
     "https://developer.apple.com/documentation/fskit/fskiterrordomain": {
       "etag": "\"31eb-65d55e22744c0-df\"",
       "file_path": "documentation/FSKit/fskiterrordomain.md",
       "hash": "5686227cd79f6521bd08236751470b2549183e486ef547664b9b59b324b31f6e"
+    },
+    "https://developer.apple.com/documentation/fskit/fskitversionnumber": {
+      "etag": "\"db1-65d55e22f8299-df\"",
+      "file_path": "documentation/FSKit/fskitversionnumber.md",
+      "hash": "259573c757c72857a2dc28cc4bf7d2dd5c00bf3f8d30dd7c395c7832b8cbf1ab"
+    },
+    "https://developer.apple.com/documentation/fskit/fskitversionstring": {
+      "etag": "\"df7-65d55e22ab31c-df\"",
+      "file_path": "documentation/FSKit/fskitversionstring.md",
+      "hash": "49def8de852159b40e79c898d88cbe0b05db86b517f1d17317d8babf6da3b580"
     },
     "https://developer.apple.com/documentation/fskit/fslistxattrsresult": {
       "etag": "\"697f-65d55e22744c0-df\"",
@@ -1264,6 +1409,11 @@
       "file_path": "documentation/FSKit/fsmetadatarange/init(offset,segmentlength,segmentcount).md",
       "hash": "d440b6a3e47ef2c11ccf718e43f298651fe71fd2306dacd17571dc12c6b2fb4e"
     },
+    "https://developer.apple.com/documentation/fskit/fsmetadatarange/rangewithoffset:segmentlength:segmentcount:": {
+      "etag": "\"25e7-65d55e22c4991-df\"",
+      "file_path": "documentation/FSKit/fsmetadatarange/rangewithoffset_segmentlength_segmentcount_.md",
+      "hash": "16215cd3e0769045b96f99fdab0e0da9ac3a8264c7ac0537f8fb470fdf8f7270"
+    },
     "https://developer.apple.com/documentation/fskit/fsmetadatarange/segmentcount": {
       "etag": "\"25e1-65d55e22c4991-df\"",
       "file_path": "documentation/FSKit/fsmetadatarange/segmentcount.md",
@@ -1313,6 +1463,11 @@
       "etag": "\"2532-65d55e231280b-df\"",
       "file_path": "documentation/FSKit/fsmutablefiledatabuffer/length.md",
       "hash": "dcf2c9ba70211834c97ceb307fdbf545c91e560bcd2a1d1c2f8af0cf63051a71"
+    },
+    "https://developer.apple.com/documentation/fskit/fsmutablefiledatabuffer/mutablebytes": {
+      "etag": "\"14f6-65d55e231280b-df\"",
+      "file_path": "documentation/FSKit/fsmutablefiledatabuffer/mutablebytes.md",
+      "hash": "d213595e8c37abc97dc71aa99f54e9fd9d2a375937cfd1668db231c03d6a78e5"
     },
     "https://developer.apple.com/documentation/fskit/fsmutablefiledatabuffer/withunsafemutablebytes(_:)": {
       "etag": "\"24f3-65d55e231280b-df\"",
@@ -2864,6 +3019,11 @@
       "file_path": "documentation/FSKit/building-a-passthrough-file-system.md",
       "hash": "a45b343dcf34a3505b4bb1a4725dbb69dad2b253b4f89c394b555087e2b6a2d4"
     },
+    "https://developer.apple.com/tutorials/data/documentation/fskit/fs_always_export.json": {
+      "etag": "\"13f5-65d55e228b06a-df\"",
+      "file_path": "documentation/FSKit/fs_always_export.md",
+      "hash": "91581fd959447e1c7f0c83f96f4991995ac079d18a4c419094b7fa0c740b8f63"
+    },
     "https://developer.apple.com/tutorials/data/documentation/fskit/fs_errorforcocoaerror(_:).json": {
       "etag": "\"353e-65d55e228b06a-df\"",
       "file_path": "documentation/FSKit/fs_errorforcocoaerror(_).md",
@@ -2878,6 +3038,26 @@
       "etag": "\"34ee-65d55e23e71f5-df\"",
       "file_path": "documentation/FSKit/fs_errorforposixerror(_).md",
       "hash": "3a8d31ef3a67a5a9f9cb1b22e9628f1552626a46bec408b6af7cced80960ce43"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/fskit/fs_export.json": {
+      "etag": "\"13cb-65d55e228b06a-df\"",
+      "file_path": "documentation/FSKit/fs_export.md",
+      "hash": "00da85a1e08baa2ad223bda96f2a6cba55b80c2adb54a93be70d68c4d5df7949"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/fskit/fs_export_internal.json": {
+      "etag": "\"1401-65d55e22c4991-df\"",
+      "file_path": "documentation/FSKit/fs_export_internal.md",
+      "hash": "7108468459b879a4c98200017ef4dc336ec51ee408d5a239ee9545852f4b95fb"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/fskit/fs_extern.json": {
+      "etag": "\"13cb-65d55e228b06a-df\"",
+      "file_path": "documentation/FSKit/fs_extern.md",
+      "hash": "9c45a341d0b7f9ae768107c599897e583a7f6bde05ab23c028f1a4fbabd83d37"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/fskit/fs_supported_visibility.json": {
+      "etag": "\"141f-65d55e231280b-df\"",
+      "file_path": "documentation/FSKit/fs_supported_visibility.md",
+      "hash": "21d1acdf6cf8ca5df418367f98199c86ecfbadae333bcba2cb03fce15baca830"
     },
     "https://developer.apple.com/tutorials/data/documentation/fskit/fsactivateresult.json": {
       "etag": "\"4379-65d55e23f4f9f-df\"",
@@ -2919,6 +3099,11 @@
       "file_path": "documentation/FSKit/fsblockdeviceresource/delayedmetadatawrite(from,startingat,length).md",
       "hash": "578806a486c05d263b6c9162a3db48325c93dda2a3219f1f6e0d5a9d2d64b7cd"
     },
+    "https://developer.apple.com/tutorials/data/documentation/fskit/fsblockdeviceresource/delayedmetadatawritefrom:startingat:length:error:.json": {
+      "etag": "\"4b85-65d55e23e71f5-df\"",
+      "file_path": "documentation/FSKit/fsblockdeviceresource/delayedmetadatawritefrom_startingat_length_error_.md",
+      "hash": "f2298acb905129ef70b89bea5885c73ecee85ef957a7a9f6271132efac35b023"
+    },
     "https://developer.apple.com/tutorials/data/documentation/fskit/fsblockdeviceresource/iswritable.json": {
       "etag": "\"30da-65d55e23e71f5-df\"",
       "file_path": "documentation/FSKit/fsblockdeviceresource/iswritable.md",
@@ -2944,10 +3129,20 @@
       "file_path": "documentation/FSKit/fsblockdeviceresource/metadataread(into,startingat,length).md",
       "hash": "840970ee6cb168bdd31c33c09c38e11f6920353256d45289049ad8263392453f"
     },
+    "https://developer.apple.com/tutorials/data/documentation/fskit/fsblockdeviceresource/metadatareadinto:startingat:length:error:.json": {
+      "etag": "\"4599-65d55e23e71f5-df\"",
+      "file_path": "documentation/FSKit/fsblockdeviceresource/metadatareadinto_startingat_length_error_.md",
+      "hash": "f99850f28048461387b377c5ab67d9b718015bd7d57a71ef7173a8ecbbbef950"
+    },
     "https://developer.apple.com/tutorials/data/documentation/fskit/fsblockdeviceresource/metadatawrite(from:startingat:length:).json": {
       "etag": "\"496e-65d55e23e71f5-df\"",
       "file_path": "documentation/FSKit/fsblockdeviceresource/metadatawrite(from,startingat,length).md",
       "hash": "9fd77586f1bcb84fd9b449c07c8f666ac094bf53ac8c95944a8566f5326a2932"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/fskit/fsblockdeviceresource/metadatawritefrom:startingat:length:error:.json": {
+      "etag": "\"45a3-65d55e23e71f5-df\"",
+      "file_path": "documentation/FSKit/fsblockdeviceresource/metadatawritefrom_startingat_length_error_.md",
+      "hash": "fd78b872ebafe268fc3b5b85ab392e14b93b5577a34dcbb615245091db36e6c5"
     },
     "https://developer.apple.com/tutorials/data/documentation/fskit/fsblockdeviceresource/physicalblocksize.json": {
       "etag": "\"30c7-65d55e23e71f5-df\"",
@@ -2969,6 +3164,16 @@
       "file_path": "documentation/FSKit/fsblockdeviceresource/read(into,startingat,length,completionhandler).md",
       "hash": "d317f14e386dd64ca2be5d6312ebe524830d5e97262ee73d889bf211a4a26088"
     },
+    "https://developer.apple.com/tutorials/data/documentation/fskit/fsblockdeviceresource/readinto:startingat:length:completionhandler:.json": {
+      "etag": "\"2d36-65d55e23e71f5-df\"",
+      "file_path": "documentation/FSKit/fsblockdeviceresource/readinto_startingat_length_completionhandler_.md",
+      "hash": "56f952319c2406669c8ea2ff4ccad5661809793167bc55fe09bd1b1d6443e4b2"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/fskit/fsblockdeviceresource/readinto:startingat:length:error:.json": {
+      "etag": "\"2b92-65d55e23e71f5-df\"",
+      "file_path": "documentation/FSKit/fsblockdeviceresource/readinto_startingat_length_error_.md",
+      "hash": "35575b47a958028d30e252943b66a7726a224eabf146b05dd433786afde7ae58"
+    },
     "https://developer.apple.com/tutorials/data/documentation/fskit/fsblockdeviceresource/write(from:startingat:length:)-2fmgt.json": {
       "etag": "\"47f5-65d55e23f4f9f-df\"",
       "file_path": "documentation/FSKit/fsblockdeviceresource/write(from,startingat,length)-2fmgt.md",
@@ -2983,6 +3188,16 @@
       "etag": "\"4d40-65d55e23e71f5-df\"",
       "file_path": "documentation/FSKit/fsblockdeviceresource/write(from,startingat,length,completionhandler).md",
       "hash": "0f75cd85b7a2887a0872f8d80d8b829d6a24f8c714304fbfb11f6f2340c94466"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/fskit/fsblockdeviceresource/writefrom:startingat:length:completionhandler:.json": {
+      "etag": "\"2d48-65d55e23e71f5-df\"",
+      "file_path": "documentation/FSKit/fsblockdeviceresource/writefrom_startingat_length_completionhandler_.md",
+      "hash": "6f0c1c63c3e6509762b130452fa959a26b338e02dd153860fed0b36074b066ad"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/fskit/fsblockdeviceresource/writefrom:startingat:length:error:.json": {
+      "etag": "\"2bcf-65d55e23e71f5-df\"",
+      "file_path": "documentation/FSKit/fsblockdeviceresource/writefrom_startingat_length_error_.md",
+      "hash": "e268f16795697fc0a5dcda0ff1ade42ede449b94d725f4c92ce798a9dd22b139"
     },
     "https://developer.apple.com/tutorials/data/documentation/fskit/fsblockmapflags.json": {
       "etag": "\"5659-65d55e22e0ccd-df\"",
@@ -3614,10 +3829,45 @@
       "file_path": "documentation/FSKit/fsfilename/init(string).md",
       "hash": "45adc4c5bae9f3d4fc6896fe52eaa495d2e14121190128fc9204b19f72161e7f"
     },
+    "https://developer.apple.com/tutorials/data/documentation/fskit/fsfilename/initwithbytes:length:.json": {
+      "etag": "\"2d37-65d55e228b06a-df\"",
+      "file_path": "documentation/FSKit/fsfilename/initwithbytes_length_.md",
+      "hash": "a11de27584f218ac28fd045a48a323fc82a3dea3d88b37e230f697362e532140"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/fskit/fsfilename/initwithcstring:.json": {
+      "etag": "\"2844-65d55e228b06a-df\"",
+      "file_path": "documentation/FSKit/fsfilename/initwithcstring_.md",
+      "hash": "09c3f307137756860debc93beebf738e45e153d454a65c599c5cfc5e10183362"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/fskit/fsfilename/namewithbytes:length:.json": {
+      "etag": "\"2b60-65d55e228b06a-df\"",
+      "file_path": "documentation/FSKit/fsfilename/namewithbytes_length_.md",
+      "hash": "e10424c15e1786d6d78a6ae0a18bc1351e17443f8109ba6a2012c24cd0d8e2b8"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/fskit/fsfilename/namewithcstring:.json": {
+      "etag": "\"2608-65d55e228b06a-df\"",
+      "file_path": "documentation/FSKit/fsfilename/namewithcstring_.md",
+      "hash": "027949c92dce4924c0cfb8b3477c8ca64cdde5aa68a930488ab2befd5c3f57c2"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/fskit/fsfilename/namewithdata:.json": {
+      "etag": "\"2b10-65d55e228b06a-df\"",
+      "file_path": "documentation/FSKit/fsfilename/namewithdata_.md",
+      "hash": "79dc48dac2d4f8a9ffbc006eb404445e86fa575ee97295cd3345bd5b93c40ed5"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/fskit/fsfilename/namewithstring:.json": {
+      "etag": "\"2b28-65d55e228b06a-df\"",
+      "file_path": "documentation/FSKit/fsfilename/namewithstring_.md",
+      "hash": "a2760e4ae994f6ce8aca0d19634a083a089723e755e439cfb388539b61fedd55"
+    },
     "https://developer.apple.com/tutorials/data/documentation/fskit/fsfilename/string.json": {
       "etag": "\"2847-65d55e228b06a-df\"",
       "file_path": "documentation/FSKit/fsfilename/string.md",
       "hash": "7c38cec48f3332d0f5febc19b88b7fcead200da5280acbe0ac2b1ead6480d128"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/fskit/fsfilesystem.json": {
+      "etag": "\"29ba-659026e9b7633-df\"",
+      "file_path": "documentation/FSKit/fsfilesystem.md",
+      "hash": "4d7c1e0cb495b689b274b1994bf116e01506aa09aeca8c1686d4b68054be91fe"
     },
     "https://developer.apple.com/tutorials/data/documentation/fskit/fsfilesystembase.json": {
       "etag": "\"3509-65d55e22ab31c-df\"",
@@ -4033,10 +4283,60 @@
       "file_path": "documentation/FSKit/fsitem/tryreclaim(_).md",
       "hash": "d52154a6dbc2f6c0330ed163a88033c8b262874cd32f39e5294bf0b2463ee1f6"
     },
+    "https://developer.apple.com/tutorials/data/documentation/fskit/fsitemdeactivationoptions/fsitemdeactivationnever.json": {
+      "etag": "\"286e-65d55e23f4f9f-df\"",
+      "file_path": "documentation/FSKit/fsitemdeactivationoptions/fsitemdeactivationnever.md",
+      "hash": "e4838fa16092e57b3d85e6327562ec63d7da1a480d9c131acf5369747b32a7b4"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/fskit/fskit_api_availability_v1.json": {
+      "etag": "\"142b-65d55e22744c0-df\"",
+      "file_path": "documentation/FSKit/fskit_api_availability_v1.md",
+      "hash": "0ed5cd2c8df3b011b082b2e40bcc279414edf2d4f65bd093469070800e49ac9d"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/fskit/fskit_api_availability_v2.json": {
+      "etag": "\"ae9-65d55e23e71f5-df\"",
+      "file_path": "documentation/FSKit/fskit_api_availability_v2.md",
+      "hash": "4d6805c593069650818131b6ddedb3b4a0ee24465eeacf005f42a75077423015"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/fskit/fskit_api_availability_v2_4.json": {
+      "etag": "\"b01-65d55e22e0ccd-df\"",
+      "file_path": "documentation/FSKit/fskit_api_availability_v2_4.md",
+      "hash": "3115b0da008ae385b1d046e09383addd6617478164a15c06b138da465131b6a0"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/fskit/fskit_api_availability_v3.json": {
+      "etag": "\"ae9-65d55e23e71f5-df\"",
+      "file_path": "documentation/FSKit/fskit_api_availability_v3.md",
+      "hash": "787c08dd6626b1c25753128ab1de8d32d46ef468ea60454e6bba0d7cf03197a2"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/fskit/fskit_api_introduced_v1_deprecated_v3_with_replacement.json": {
+      "etag": "\"ca9-65d55e228b06a-df\"",
+      "file_path": "documentation/FSKit/fskit_api_introduced_v1_deprecated_v3_with_replacement.md",
+      "hash": "41c80fd82ecb183fd4063f0477715ebe4033ff7965a5973dce034c543698ec9e"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/fskit/fskit_api_unavailable_v1.json": {
+      "etag": "\"1425-65d55e22ab31c-df\"",
+      "file_path": "documentation/FSKit/fskit_api_unavailable_v1.md",
+      "hash": "418a39bed2d90c126a9066d2b54dd1eb0d9a04ca5a39abe7be248e2de2293f61"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/fskit/fskit_called_once.json": {
+      "etag": "\"a89-65d55e22e0ccd-df\"",
+      "file_path": "documentation/FSKit/fskit_called_once.md",
+      "hash": "2503d1c313155a918b0ab79b8d111584237bac5aa728f923c4defecc65236ccb"
+    },
     "https://developer.apple.com/tutorials/data/documentation/fskit/fskiterrordomain.json": {
       "etag": "\"31eb-65d55e22744c0-df\"",
       "file_path": "documentation/FSKit/fskiterrordomain.md",
       "hash": "5686227cd79f6521bd08236751470b2549183e486ef547664b9b59b324b31f6e"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/fskit/fskitversionnumber.json": {
+      "etag": "\"db1-65d55e22f8299-df\"",
+      "file_path": "documentation/FSKit/fskitversionnumber.md",
+      "hash": "259573c757c72857a2dc28cc4bf7d2dd5c00bf3f8d30dd7c395c7832b8cbf1ab"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/fskit/fskitversionstring.json": {
+      "etag": "\"df7-65d55e22ab31c-df\"",
+      "file_path": "documentation/FSKit/fskitversionstring.md",
+      "hash": "49def8de852159b40e79c898d88cbe0b05db86b517f1d17317d8babf6da3b580"
     },
     "https://developer.apple.com/tutorials/data/documentation/fskit/fslistxattrsresult.json": {
       "etag": "\"697f-65d55e22744c0-df\"",
@@ -4118,6 +4418,11 @@
       "file_path": "documentation/FSKit/fsmetadatarange/init(offset,segmentlength,segmentcount).md",
       "hash": "d440b6a3e47ef2c11ccf718e43f298651fe71fd2306dacd17571dc12c6b2fb4e"
     },
+    "https://developer.apple.com/tutorials/data/documentation/fskit/fsmetadatarange/rangewithoffset:segmentlength:segmentcount:.json": {
+      "etag": "\"25e7-65d55e22c4991-df\"",
+      "file_path": "documentation/FSKit/fsmetadatarange/rangewithoffset_segmentlength_segmentcount_.md",
+      "hash": "16215cd3e0769045b96f99fdab0e0da9ac3a8264c7ac0537f8fb470fdf8f7270"
+    },
     "https://developer.apple.com/tutorials/data/documentation/fskit/fsmetadatarange/segmentcount.json": {
       "etag": "\"25e1-65d55e22c4991-df\"",
       "file_path": "documentation/FSKit/fsmetadatarange/segmentcount.md",
@@ -4167,6 +4472,11 @@
       "etag": "\"2532-65d55e231280b-df\"",
       "file_path": "documentation/FSKit/fsmutablefiledatabuffer/length.md",
       "hash": "dcf2c9ba70211834c97ceb307fdbf545c91e560bcd2a1d1c2f8af0cf63051a71"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/fskit/fsmutablefiledatabuffer/mutablebytes.json": {
+      "etag": "\"14f6-65d55e231280b-df\"",
+      "file_path": "documentation/FSKit/fsmutablefiledatabuffer/mutablebytes.md",
+      "hash": "d213595e8c37abc97dc71aa99f54e9fd9d2a375937cfd1668db231c03d6a78e5"
     },
     "https://developer.apple.com/tutorials/data/documentation/fskit/fsmutablefiledatabuffer/withunsafemutablebytes(_:).json": {
       "etag": "\"24f3-65d55e231280b-df\"",
@@ -5711,8 +6021,8 @@
   },
   "metadata": {
     "render": {
-      "version": 1
+      "version": 2
     },
-    "total_pages": 1142
+    "total_pages": 1204
   }
 }

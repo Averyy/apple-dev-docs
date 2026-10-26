@@ -64,6 +64,23 @@ This is a convenience function that adds a rectangle to a path, starting by movi
   Returns a path object built from the current path information in a graphics context.
 - [func replacePathWithStrokedPath()](./replacepathwithstrokedpath%28%29.md)
   Replaces the path in the graphics context with the stroked version of the path.
+- [CGContextMoveToPoint](../cgcontextmovetopoint.md)
+  Begins a new subpath at the point you specify.
+- [CGContextAddLineToPoint](../cgcontextaddlinetopoint.md)
+  Appends a straight line segment from the current point to the provided point .
+- [CGContextAddLines](../cgcontextaddlines.md)
+  Adds a sequence of connected straight-line segments to the current path.
+- [CGContextAddArc](../cgcontextaddarc.md)
+  Adds an arc of a circle to the current path, possibly preceded by a straight line segment
+- [CGContextAddArcToPoint](../cgcontextaddarctopoint.md)
+  Adds an arc of a circle to the current path, using a radius and tangent points.
+- [CGContextAddCurveToPoint](../cgcontextaddcurvetopoint.md)
+  Appends a cubic Bézier curve from the current point, using the provided control points and end point .
+- [CGContextAddQuadCurveToPoint](../cgcontextaddquadcurvetopoint.md)
+  Appends a quadratic Bézier curve from the current point, using a control point and an end point you specify.
+### Related Documentation
+- [CGContextAddRects](../cgcontextaddrects.md)
+  Adds a set of rectangular paths to the current path.
 
 
 ---

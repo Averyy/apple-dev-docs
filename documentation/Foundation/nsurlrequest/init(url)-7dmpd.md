@@ -42,6 +42,10 @@ The request is created with the with the default cache policy ([`NSURLRequest.Ca
 ### Creating requests
 - [init(url: URL, cachePolicy: NSURLRequest.CachePolicy, timeoutInterval: TimeInterval)](./init%28url,cachepolicy,timeoutinterval%29-2giyj.md)
   Creates a URL request with the specified URL, cache policy, and timeout values.
+- [+ requestWithURL:](./requestwithurl_.md)
+  Creates and returns a URL request for a specified URL.
+- [+ requestWithURL:cachePolicy:timeoutInterval:](./requestwithurl_cachepolicy_timeoutinterval_.md)
+  Creates and returns an initialized URL request with specified URL, cache policy, and timeout values.
 
 
 ---

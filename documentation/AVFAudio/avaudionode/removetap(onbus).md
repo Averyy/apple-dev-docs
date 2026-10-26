@@ -38,6 +38,7 @@ func removeTap(onBus bus: AVAudioNodeBus)
   Installs an audio tap on a bus you specify to record, monitor, and observe the output of the node.
 - [typealias AVAudioNodeTapBlock](../avaudionodetapblock.md)
   The block that receives copies of the output of an audio node.
+- [- installTapOnBus:bufferSize:format:error:block:](./installtaponbus_buffersize_format_error_block_.md)
 
 
 ---

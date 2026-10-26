@@ -45,6 +45,8 @@ For example, if the user maps a physical press of A button , B button, and X but
   Returns the name of the input element to which the user remaps the given physical element.
 - [static let GCControllerUserCustomizationsDidChange: NSNotification.Name](../../Foundation/nsnotification/name-swift.struct/gccontrollerusercustomizationsdidchange.md)
   A notification that posts when the user customizes the button mappings or other settings of a controller.
+- [GCControllerUserCustomizationsDidChangeNotification](../gccontrollerusercustomizationsdidchangenotification.md)
+  A notification that posts when the user customizes the button mappings or other settings of a controller.
 
 
 ---

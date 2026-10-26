@@ -35,6 +35,9 @@ The class object for the receiver’s superclass.
 ### Related Documentation
 - [class func superclass() -> AnyClass?](../nsobject-swift.class/superclass%28%29.md)
   Returns the class object for the receiver’s superclass.
+### Identifying Classes
+- [- class](../nsobject-c.protocol/class.md)
+  Returns the class object for the receiver’s class.
 
 
 ---

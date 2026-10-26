@@ -170,6 +170,16 @@
       "file_path": "documentation/BrowserKit/bebrowserdataexportmanager/exportbrowserdata(_).md",
       "hash": "6efade8a52d74923702ae222637bdb8e0febc864fcf8831c96529031613424b8"
     },
+    "https://developer.apple.com/documentation/browserkit/bebrowserdataexportmanager/exportbrowserdata:completionhandler:": {
+      "etag": "\"3de2-65d55d0b2e76b-df\"",
+      "file_path": "documentation/BrowserKit/bebrowserdataexportmanager/exportbrowserdata_completionhandler_.md",
+      "hash": "dc72b52944c635d0b5e090b397843fcdac479b95ebf60750258a3f2fb4fea8ea"
+    },
+    "https://developer.apple.com/documentation/browserkit/bebrowserdataexportmanager/exportfinishedwithcompletionhandler:": {
+      "etag": "\"23aa-65d55d0b2e76b-df\"",
+      "file_path": "documentation/BrowserKit/bebrowserdataexportmanager/exportfinishedwithcompletionhandler_.md",
+      "hash": "440f168cebb44bc3f48b2f80b26de86ed548e2eb1a070c4c135eeb13528ca34d"
+    },
     "https://developer.apple.com/documentation/browserkit/bebrowserdataexportmanager/exporttokenuserinfokey-1y5l1": {
       "etag": "\"28e9-65d55d0b2e76b-df\"",
       "file_path": "documentation/BrowserKit/bebrowserdataexportmanager/exporttokenuserinfokey-1y5l1.md",
@@ -304,6 +314,11 @@
       "etag": "\"3eee-65d55d0b5e9f1-df\"",
       "file_path": "documentation/BrowserKit/bebrowserdataimportmanager/importbrowserdata(token).md",
       "hash": "0a91b28499bc11664b67a549ffda361636a47155ed568e76f9e97935228cfb09"
+    },
+    "https://developer.apple.com/documentation/browserkit/bebrowserdataimportmanager/importbrowserdatawithtoken:importblock:": {
+      "etag": "\"3a6d-65d55d0b5e9f1-df\"",
+      "file_path": "documentation/BrowserKit/bebrowserdataimportmanager/importbrowserdatawithtoken_importblock_.md",
+      "hash": "7875bbb6437d6a8cb82063114a119db638584959877014118918d79d432ae588"
     },
     "https://developer.apple.com/documentation/browserkit/bebrowserdataimportmanager/importtokenuserinfokey-3bqve": {
       "etag": "\"2f8c-65d55d0b5e9f1-df\"",
@@ -680,6 +695,16 @@
       "file_path": "documentation/BrowserKit/bebrowserdataexportmanager/exportbrowserdata(_).md",
       "hash": "6efade8a52d74923702ae222637bdb8e0febc864fcf8831c96529031613424b8"
     },
+    "https://developer.apple.com/tutorials/data/documentation/browserkit/bebrowserdataexportmanager/exportbrowserdata:completionhandler:.json": {
+      "etag": "\"3de2-65d55d0b2e76b-df\"",
+      "file_path": "documentation/BrowserKit/bebrowserdataexportmanager/exportbrowserdata_completionhandler_.md",
+      "hash": "dc72b52944c635d0b5e090b397843fcdac479b95ebf60750258a3f2fb4fea8ea"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/browserkit/bebrowserdataexportmanager/exportfinishedwithcompletionhandler:.json": {
+      "etag": "\"23aa-65d55d0b2e76b-df\"",
+      "file_path": "documentation/BrowserKit/bebrowserdataexportmanager/exportfinishedwithcompletionhandler_.md",
+      "hash": "440f168cebb44bc3f48b2f80b26de86ed548e2eb1a070c4c135eeb13528ca34d"
+    },
     "https://developer.apple.com/tutorials/data/documentation/browserkit/bebrowserdataexportmanager/exporttokenuserinfokey-1y5l1.json": {
       "etag": "\"28e9-65d55d0b2e76b-df\"",
       "file_path": "documentation/BrowserKit/bebrowserdataexportmanager/exporttokenuserinfokey-1y5l1.md",
@@ -814,6 +839,11 @@
       "etag": "\"3eee-65d55d0b5e9f1-df\"",
       "file_path": "documentation/BrowserKit/bebrowserdataimportmanager/importbrowserdata(token).md",
       "hash": "0a91b28499bc11664b67a549ffda361636a47155ed568e76f9e97935228cfb09"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/browserkit/bebrowserdataimportmanager/importbrowserdatawithtoken:importblock:.json": {
+      "etag": "\"3a6d-65d55d0b5e9f1-df\"",
+      "file_path": "documentation/BrowserKit/bebrowserdataimportmanager/importbrowserdatawithtoken_importblock_.md",
+      "hash": "7875bbb6437d6a8cb82063114a119db638584959877014118918d79d432ae588"
     },
     "https://developer.apple.com/tutorials/data/documentation/browserkit/bebrowserdataimportmanager/importtokenuserinfokey-3bqve.json": {
       "etag": "\"2f8c-65d55d0b5e9f1-df\"",
@@ -1023,8 +1053,8 @@
   },
   "metadata": {
     "render": {
-      "version": 1
+      "version": 2
     },
-    "total_pages": 204
+    "total_pages": 210
   }
 }

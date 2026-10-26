@@ -42,6 +42,10 @@ If present, [`Progress`](../progress.md) presents additional information in its 
   The number of completed files for a file progress object.
 - [Progress.FileOperationKind](./fileoperationkind-swift.struct.md)
   The kind of file operation.
+- [fileTotalCount](../nsprogress/filetotalcount.md)
+  The total number of files for a file progress object.
+- [fileCompletedCount](../nsprogress/filecompletedcount.md)
+  The number of completed files for a file progress object.
 
 
 ---

@@ -62,6 +62,8 @@ typedef struct MPSDimensionSlice { ... } MPSDimensionSlice;
   An intersection result that contains the origin-intersection distance, and intersected primitive and instance indices.
 - [struct MPSIntersectionDistancePrimitiveIndexInstanceIndexCoordinates](./mpsintersectiondistanceprimitiveindexinstanceindexcoordinates.md)
   An intersection result that contains the origin-intersection distance, intersected primitive and instance indices, and intersection point coordinates.
+- [MPSAxisAlignedBoundingBox](./mpsaxisalignedboundingbox-c.struct.md)
+  An axis-aligned bounding box.
 
 
 ---

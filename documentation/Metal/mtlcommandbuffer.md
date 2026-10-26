@@ -74,6 +74,8 @@ For example, a multithreaded app might set the GPU’s execution order for a seq
   Applies a residency set to a command buffer.
 - [func useResidencySets([any MTLResidencySet])](./mtlcommandbuffer/useresidencysets%28_%29.md)
   Applies multiple residency sets to a command buffer.
+- [- useResidencySets:count:](./mtlcommandbuffer/useresidencysets_count_.md)
+  Applies multiple residency sets to a command buffer.
 ### Synchronizing passes with events
 - [func encodeWaitForEvent(any MTLEvent, value: UInt64)](./mtlcommandbuffer/encodewaitforevent%28_,value%29.md)
   Encodes a command into the command buffer that pauses the GPU from running the buffer’s subsequent passes until the event equals or exceeds a value.
@@ -134,6 +136,11 @@ For example, a multithreaded app might set the GPU’s execution order for a seq
   The command buffer error codes that indicate why the GPU doesn’t finish executing a command buffer.
 - [protocol MTLCommandEncoder](./mtlcommandencoder.md)
   An encoder that writes GPU commands into a command buffer.
+### Submitting work to a GPU
+- [MTLCommandBufferErrorDomain](./mtlcommandbuffererrordomain.md)
+  The domain for Metal command buffer errors.
+- [MTLCommandBufferError](./mtlcommandbuffererror-swift.struct/code.md)
+  Error codes that indicate why a GPU is unable to finish running a command buffer.
 
 
 ---

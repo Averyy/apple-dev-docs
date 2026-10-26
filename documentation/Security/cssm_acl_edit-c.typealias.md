@@ -1,0 +1,19 @@
+# CSSM_ACL_EDIT
+
+**Framework**: Security  
+**Kind**: typealias  
+**Role**: Type Alias
+
+**Availability**:
+- macOS 10.0+ - Deprecated in 10.7
+
+## Declaration
+
+```c
+typedef struct cssm_acl_edit CSSM_ACL_EDIT;
+```
+
+
+---
+
+*[View on Apple Developer](https://developer.apple.com/documentation/security/cssm_acl_edit-c.typealias)*

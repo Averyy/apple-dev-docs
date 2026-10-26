@@ -49,6 +49,10 @@ var colors: [NSColor] { get }
   Sets the macOS colors and corresponding unit distance values to create gradients.
 - [var locations: [CGFloat]](./locations-7k6qz.md)
   An array of location indexes that correspond to their respective colors.
+- [- setColors:atLocations:](./setcolors_atlocations_.md)
+  Sets the colors and corresponding unit distance values to create gradients.
+- [locations](./locations-50knt.md)
+  An array of location indices corresponding to their respective colors.
 
 
 ---

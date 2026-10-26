@@ -126,6 +126,10 @@ Table views communicate the location of cells to you using the [`row`](../Founda
   An advanced interface for managing a data source object.
 - [class UIRefreshControl](./uirefreshcontrol.md)
   A standard control that can initiate the refreshing of a scroll view’s contents.
+- [UITableViewDiffableDataSource](./uitableviewdiffabledatasourcereference.md)
+  The object you use to manage data and provide cells for a table view.
+- [NSDiffableDataSourceSnapshot](./nsdiffabledatasourcesnapshotreference.md)
+  A representation of the state of the data in a view at a specific point in time.
 
 
 ---

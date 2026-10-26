@@ -171,6 +171,8 @@ For more information about GPU memory bandwidth, see [Adjusting for GPU memory b
   A Swift closure or an Objective-C block that Metal calls when the system adds or removes a GPU device.
 - [struct MTLDeviceNotificationName](./mtldevicenotificationname.md)
   A notification that represents a change to a GPU device in the system.
+- [MTLCopyAllDevicesWithObserver](./mtlcopyalldeviceswithobserver.md)
+  Returns an array of all the Metal GPU devices in the system and registers a notification handler that Metal calls when the device list changes.
 
 
 ---

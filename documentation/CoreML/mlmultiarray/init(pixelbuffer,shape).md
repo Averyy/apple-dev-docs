@@ -53,6 +53,8 @@ The pixel buffer’s pixel format type must be [`kCVPixelFormatType_OneComponent
   Merges an array of multiarrays into one multiarray along an axis.
 - [enum MLMultiArrayDataType](../mlmultiarraydatatype.md)
   Constants that define the underlying element types a multiarray can store.
+- [- initWithShape:dataType:strides:](./initwithshape_datatype_strides_.md)
+  Creates the object with specified strides.
 
 
 ---

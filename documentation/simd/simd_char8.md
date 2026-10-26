@@ -41,6 +41,8 @@ typedef char __attribute__((ext_vector_type(8))) simd_char8;
   Returns a new vector from the specified three-element vector, and other elements undefined.
 - [func simd_make_char8_undef(simd_char4) -> simd_char8](./simd_make_char8_undef%28_%29-5kqwe.md)
   Returns a new vector from the specified four-element vector, and other elements undefined.
+- [vector8](./vector8-73z2d.md)
+  Returns a new vector from the specified vectors.
 ### Functions to Create Eight-Element Vectors From Scalar Values
 - [func simd_make_char8(CChar) -> simd_char8](./simd_make_char8%28_%29-2wraz.md)
   Returns a new vector with the first element set to a scalar value, and other elements set to zero.
@@ -72,6 +74,48 @@ typedef char __attribute__((ext_vector_type(8))) simd_char8;
   Returns a vector that contains elements from either the first or second parameter, based on the corresponding element in the third parameter.
 ### Alternative Type Alias
 - [typealias vector_char8](./vector_char8.md)
+### Functions to Create Eight-Element Vectors From Vectors of Other Types
+- [simd_char](./simd_char-7azp6.md)
+  Returns a new vector from the specified vector of 8-bit, signed integer elements.
+- [simd_char](./simd_char-7apve.md)
+  Returns a new vector from the specified vector of 8-bit, unsigned integer elements.
+- [simd_char](./simd_char-7b4ze.md)
+  Returns a new vector from the specified vector of 16-bit, signed integer elements.
+- [simd_char](./simd_char-7aure.md)
+  Returns a new vector from the specified vector of 16-bit, unsigned integer elements.
+- [simd_char](./simd_char-7b2w6.md)
+  Returns a new vector from the specified vector of 32-bit, signed integer elements.
+- [simd_char](./simd_char-7at2e.md)
+  Returns a new vector from the specified vector of 32-bit, unsigned integer elements.
+- [simd_char](./simd_char-7b3y6.md)
+  Returns a new vector from the specified vector of 64-bit, signed integer elements.
+- [simd_char](./simd_char-7au4e.md)
+  Returns a new vector from the specified vector of 64-bit, unsigned integer elements.
+- [simd_char](./simd_char-7aqw2.md)
+  Returns a new vector from the specified vector of 32-bit, floating-point elements.
+- [simd_char](./simd_char-7arha.md)
+  Returns a new vector from the specified vector of 64-bit, floating-point elements.
+### Functions to Perform Saturating Conversion From Vectors of Other Types
+- [simd_char_sat](./simd_char_sat-1k3vb.md)
+  Returns a new vector from the specified vector of 8-bit, signed integer elements.
+- [simd_char_sat](./simd_char_sat-1kdqv.md)
+  Returns a new vector from the specified vector of 8-bit, unsigned integer elements.
+- [simd_char_sat](./simd_char_sat-1jyvr.md)
+  Returns a new vector from the specified vector of 16-bit, signed integer elements.
+- [simd_char_sat](./simd_char_sat-1k8uv.md)
+  Returns a new vector from the specified vector of 16-bit, unsigned integer elements.
+- [simd_char_sat](./simd_char_sat-1k1zv.md)
+  Returns a new vector from the specified vector of 32-bit, signed integer elements.
+- [simd_char_sat](./simd_char_sat-1kbyz.md)
+  Returns a new vector from the specified vector of 32-bit, unsigned integer elements.
+- [simd_char_sat](./simd_char_sat-1k125.md)
+  Returns a new vector from the specified vector of 64-bit, signed integer elements.
+- [simd_char_sat](./simd_char_sat-1kb19.md)
+  Returns a new vector from the specified vector of 64-bit, unsigned integer elements.
+- [simd_char_sat](./simd_char_sat-1kcv9.md)
+  Returns a new vector from the specified vector of 32-bit, floating-point elements.
+- [simd_char_sat](./simd_char_sat-1kdj1.md)
+  Returns a new vector from the specified vector of 64-bit, floating-point elements.
 
 ## See Also
 

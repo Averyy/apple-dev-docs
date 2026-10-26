@@ -53,6 +53,8 @@ Implement your app extension by providing a subclass of `FSUnaryFileSystem` as a
   A protocol containing functionality supplied by FSKit to file system implementations.
 - [class FSFileName](./fsfilename.md)
   The name of a file, expressed as a data buffer.
+- [FSFileSystem](./fsfilesystem.md)
+  An abstract base class for implementing a full-featured file system.
 
 
 ---

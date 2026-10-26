@@ -120,6 +120,10 @@ To store custom information that belongs in printing presets you should use the 
   Constants that specify page orientations.
 - [Deprecated Printing Keys](./deprecated-printing-keys.md)
   These keys refer to older printing properties that are no longer used.
+- [+ setDefaultPrinter:](./nsprintinfo/setdefaultprinter_.md)
+  Deprecated.
+- [+ sizeForPaperName:](./nsprintinfo/sizeforpapername_.md)
+  Deprecated.
 
 ## Relationships
 

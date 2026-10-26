@@ -58,6 +58,8 @@ A single item provider may use custom blocks to provide its data in many differe
   Creates an empty item provider to which you can later register a data or file representation.
 - [convenience init(object: any NSItemProviderWriting)](./nsitemprovider/init%28object%29.md)
   Creates a new item provider, employing a specified object’s type identifiers to specify the data representations eligible for the provider to load.
+- [- initWithContentsOfURL:contentType:openInPlace:coordinated:visibility:](./nsitemprovider/initwithcontentsofurl_contenttype_openinplace_coordinated_visibility_.md)
+  Provides data-backed content from an existing file with the specified parameters.
 ### Configuring the provider
 - [var preferredPresentationSize: CGSize](./nsitemprovider/preferredpresentationsize.md)
   The ideal presentation size of the item.
@@ -101,6 +103,10 @@ A single item provider may use custom blocks to provide its data in many differe
   Asynchronously loads an object of a specified class to an item provider, returning a progress object.
 - [func loadTransferable<T>(type: T.Type, completionHandler: (Result<T, any Error>) -> Void) -> Progress](./nsitemprovider/loadtransferable%28type,completionhandler%29.md)
   Asynchronously loads an object of a specified transferable type to an item provider, returning a progress object.
+- [- loadDataRepresentationForContentType:completionHandler:](./nsitemprovider/loaddatarepresentationforcontenttype_completionhandler_.md)
+  Asynchronously copies the provided, typed data into a generic data object, returning a progress object.
+- [- loadFileRepresentationForContentType:openInPlace:completionHandler:](./nsitemprovider/loadfilerepresentationforcontenttype_openinplace_completionhandler_.md)
+  Asynchronously copies the content type data into a generic data object with the specified parameters.
 ### Loading a preview image
 - [func loadPreviewImage(options: [AnyHashable : Any]!, completionHandler: NSItemProvider.CompletionHandler!)](./nsitemprovider/loadpreviewimage%28options,completionhandler%29.md)
   Loads the preview image for the item that the item provider represents.
@@ -114,6 +120,10 @@ A single item provider may use custom blocks to provide its data in many differe
 - [func registerCKShare(CKShare, container: CKContainer, allowedSharingOptions: CKAllowedSharingOptions)](./nsitemprovider/registerckshare%28_,container,allowedsharingoptions%29.md)
   Registers an existing collaboration object on a server.
 - [func registerCKShare(container: CKContainer, allowedSharingOptions: CKAllowedSharingOptions, preparationHandler: () async throws -> CKShare)](./nsitemprovider/registerckshare%28container,allowedsharingoptions,preparationhandler%29.md)
+  Creates and registers a new collaboration object using a collection of records to share.
+- [- registerCKShare:container:allowedSharingOptions:](./nsitemprovider/registerckshare_container_allowedsharingoptions_.md)
+  Registers an existing collaboration object on a server.
+- [- registerCKShareWithContainer:allowedSharingOptions:preparationHandler:](./nsitemprovider/registercksharewithcontainer_allowedsharingoptions_preparationhandler_.md)
   Creates and registers a new collaboration object using a collection of records to share.
 ### Registering content types
 - [var registeredContentTypes: [UTType]](./nsitemprovider/registeredcontenttypes.md)
@@ -129,10 +139,14 @@ A single item provider may use custom blocks to provide its data in many differe
   Registers a data-backed representation for an item, specifiying item visibility and a load handler.
 - [func registerItem(forTypeIdentifier: String, loadHandler: NSItemProvider.LoadHandler)](./nsitemprovider/registeritem%28fortypeidentifier,loadhandler%29.md)
   Lazily registers an item, according to the item provider type coercion policy.
+- [- registerDataRepresentationForContentType:visibility:loadHandler:](./nsitemprovider/registerdatarepresentationforcontenttype_visibility_loadhandler_.md)
+  Lazily registers an item, according to the item provider type coercion policy.
 ### Registering files
 - [func registerFileRepresentation(forTypeIdentifier: String, fileOptions: NSItemProviderFileOptions, visibility: NSItemProviderRepresentationVisibility, loadHandler: ((URL?, Bool, (any Error)?) -> Void) -> Progress?)](./nsitemprovider/registerfilerepresentation%28fortypeidentifier,fileoptions,visibility,loadhandler%29.md)
   Registers a file-backed representation for an item, specifying file options, item visibility, and a load handler.
 - [func registerFileRepresentation(for: UTType, visibility: NSItemProviderRepresentationVisibility, openInPlace: Bool, loadHandler: ((URL?, Bool, (any Error)?) -> Void) -> Progress?)](./nsitemprovider/registerfilerepresentation%28for,visibility,openinplace,loadhandler%29.md)
+  Registers a file-backed representation for an item with item visibility, an open-in-place option, and a load handler.
+- [- registerFileRepresentationForContentType:visibility:openInPlace:loadHandler:](./nsitemprovider/registerfilerepresentationforcontenttype_visibility_openinplace_loadhandler_.md)
   Registers a file-backed representation for an item with item visibility, an open-in-place option, and a load handler.
 ### Registering group activities
 - [func registerGroupActivity<ActivityType>(ActivityType)](./nsitemprovider/registergroupactivity%28_%29.md)

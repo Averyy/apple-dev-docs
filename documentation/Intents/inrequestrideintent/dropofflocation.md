@@ -47,6 +47,8 @@ When booking the ride, you can communicate this information to the driver.
   The user’s starting location.
 - [var scheduledPickupTime: INDateComponentsRange?](./scheduledpickuptime.md)
   The time at which to pick up the user.
+- [partySize](./partysize-64kfc.md)
+  The number of passengers that the ride must accommodate.
 
 
 ---

@@ -96,6 +96,17 @@ class DOMDocument
 - [func url(withAttributeString: String!) -> URL!](./domdocument/url%28withattributestring%29.md)
   Constructs a URL given an attribute string.
 - [func webkitCancelFullScreen()](./domdocument/webkitcancelfullscreen%28%29.md)
+- [- createAttributeNS::](./domdocument/createattributens__.md)
+- [- createElementNS::](./domdocument/createelementns__.md)
+- [- createExpression::](./domdocument/createexpression__.md)
+- [- createNodeIterator::::](./domdocument/createnodeiterator____.md)
+- [- createProcessingInstruction::](./domdocument/createprocessinginstruction__.md)
+- [- createTreeWalker::::](./domdocument/createtreewalker____.md)
+- [- evaluate:::::](./domdocument/evaluate_____.md)
+- [- getComputedStyle::](./domdocument/getcomputedstyle__.md)
+- [- getElementsByTagNameNS::](./domdocument/getelementsbytagnamens__.md)
+- [- getOverrideStyle::](./domdocument/getoverridestyle__.md)
+- [- importNode::](./domdocument/importnode__.md)
 
 ## Relationships
 

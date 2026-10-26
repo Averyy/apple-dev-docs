@@ -36,6 +36,10 @@ The created [`NSGraphicsContext`](../nsgraphicscontext.md) object, or `nil` if t
   Creates a new graphics context from the specified graphics port.
 - [class func setGraphicsState(Int)](./setgraphicsstate%28_%29.md)
   Makes the graphics context of the specified graphics state current, and resets graphics state.
+- [- focusStack](./focusstack.md)
+  Returns the object used by the context to track the hierarchy of views with locked focus.
+- [- setFocusStack:](./setfocusstack_.md)
+  Sets the object used by the receiver to track the hierarchy of views with locked focus.
 
 
 ---

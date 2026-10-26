@@ -23,6 +23,8 @@ Used in the `mChannelFlags` field of an [`AudioChannelDescription`](./audiochann
   A flag that indicates the channel uses the speaker position’s spherical coordinates.
 - [static var meters: AudioChannelFlags](./audiochannelflags/meters.md)
   A flag that indicates that unit values are in meters.
+- [kAudioChannelFlags_AllOff](./audiochannelflags/kaudiochannelflags_alloff.md)
+  All flags are clear.
 
 ## See Also
 

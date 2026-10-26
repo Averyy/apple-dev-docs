@@ -66,6 +66,8 @@ The participant properties provide the current user’s acceptance status, permi
   The share’s permissions for the user who retrieves the metadata.
 - [var participantStatus: CKShare.ParticipantAcceptanceStatus](./metadata/participantstatus.md)
   The share’s participation status for the user who retrieves the metadata.
+- [participantType](../cksharemetadata/participanttype.md)
+  The share’s participation type for the user who retrieves the metadata.
 ### Initializers
 - [init?(coder: NSCoder)](./metadata/init%28coder%29.md)
 

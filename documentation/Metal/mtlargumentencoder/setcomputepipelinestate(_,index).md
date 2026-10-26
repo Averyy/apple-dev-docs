@@ -43,6 +43,10 @@ func setComputePipelineState(_ pipeline: (any MTLComputePipelineState)?, index: 
   Encodes a reference to a compute pipeline state into the argument buffer.
 - [func setComputePipelineStates([(any MTLComputePipelineState)?], range: Range<Int>)](./setcomputepipelinestates%28_,range%29.md)
   Encodes references to an array of compute pipeline states into the argument buffer.
+- [- setRenderPipelineStates:withRange:](./setrenderpipelinestates_withrange_.md)
+  Encodes references to an array of render pipeline states into the argument buffer.
+- [- setComputePipelineStates:withRange:](./setcomputepipelinestates_withrange_.md)
+  Encodes references to an array of compute pipeline states into the argument buffer.
 
 
 ---

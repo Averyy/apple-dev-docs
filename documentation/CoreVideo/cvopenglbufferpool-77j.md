@@ -18,6 +18,10 @@ A utility object for managing a set of recyclable OpenGL buffer objects.
   Returns the attributes of OpenGL buffers that will be created from a buffer pool.
 - [func CVOpenGLBufferPoolGetTypeID() -> CFTypeID](./cvopenglbufferpoolgettypeid%28%29.md)
   Obtains the Core Foundation ID for the OpenGL buffer pool type.
+- [CVOpenGLBufferPoolRetain](./cvopenglbufferpoolretain.md)
+  Retains an OpenGL buffer pool.
+- [CVOpenGLBufferPoolRelease](./cvopenglbufferpoolrelease.md)
+  Releases an OpenGL buffer pool.
 ### Data Types
 - [class CVOpenGLBufferPool](./cvopenglbufferpool.md)
   A reference to an OpenGL buffer pool object.

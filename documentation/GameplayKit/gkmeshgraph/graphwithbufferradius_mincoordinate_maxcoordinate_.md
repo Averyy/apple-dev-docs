@@ -1,0 +1,52 @@
+# graphWithBufferRadius:minCoordinate:maxCoordinate:
+
+**Framework**: GameplayKit  
+**Kind**: method  
+**Role**: Type Method
+
+Creates a graph to cover the specified area.
+
+**Availability**:
+- iOS 10.0+
+- iPadOS 10.0+
+- Mac Catalyst 13.1+
+- macOS 10.12+
+- tvOS 10.0+
+- visionOS 1.0+
+
+## Declaration
+
+```objc
++ (instancetype) graphWithBufferRadius:(float) bufferRadius minCoordinate:(vector_float2) min maxCoordinate:(vector_float2) max;
+```
+
+#### Return Value
+
+A new mesh graph.
+
+#### Discussion
+
+A newly created graph contains no obstacles and no graph nodes. First, use the [`addObstacles(_:)`](./addobstacles%28_%29.md) method to add obstacles. Next, use the [`triangulate()`](./triangulate%28%29.md) method to fill the open space between obstacles with a web of graph nodes, allowing pathfinding operations to result in smooth paths around obstacles.
+
+Use the `bufferRadius` parameter to take the size of potential travelers into account when determining navigability. For example, if a game character that will use pathfinding has a radius of 20 units (in the same coordinate space you use to define obstacles), specify a buffer radius of 20. As a result, the graph will consider any points within 20 units of an obstacle non-navigable—that is, pathfinding in the graph will not result in any positions that lie inside this buffer region, so you can safely set the character’s center point to the location of a node returned from the [`findPath(from:to:)`](../gkgraph/findpath%28from,to%29.md) method without the character overlapping any obstacles.
+
+## Parameters
+
+- `bufferRadius`: The distance from obstacle edges that should also be considered impassable.
+- `min`: The minimum coordinate of the space to be covered by the graph.
+- `max`: The maximum coordinate of the space to be covered by the graph.
+
+## See Also
+
+### Creating a Graph
+- [init(bufferRadius: Float, minCoordinate: vector_float2, maxCoordinate: vector_float2, nodeClass: AnyClass)](./init%28bufferradius,mincoordinate,maxcoordinate,nodeclass%29.md)
+  Initializes a graph to cover the specified area, using the specified node class.
+- [+ graphWithBufferRadius:minCoordinate:maxCoordinate:nodeClass:](./graphwithbufferradius_mincoordinate_maxcoordinate_nodeclass_.md)
+  Creates a graph to cover the specified area, using the specified node class.
+- [init(bufferRadius: Float, minCoordinate: vector_float2, maxCoordinate: vector_float2)](./init%28bufferradius,mincoordinate,maxcoordinate%29.md)
+  Initializes a graph to cover the specified area.
+
+
+---
+
+*[View on Apple Developer](https://developer.apple.com/documentation/gameplaykit/gkmeshgraph/graphwithbufferradius:mincoordinate:maxcoordinate:)*

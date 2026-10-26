@@ -38,6 +38,8 @@ Use `CTCellularPlanProperties` to set the capabilities of your eSIMs.
   A type that contains lifecycle details for a time-limited cellular plan.
 - [var lifecycleProperties: CTCellularPlanProperties.lifecycle?](./ctcellularplanproperties/lifecycleproperties.md)
   The lifecycle details for a time-limited cellular plan.
+- [supportedRegionCodes](./ctcellularplanproperties/supportedregioncodes-5elox.md)
+  The available regions that your eSIM supports.
 ### Initializers
 - [init?(coder: NSCoder)](./ctcellularplanproperties/init%28coder%29.md)
 

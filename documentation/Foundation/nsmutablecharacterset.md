@@ -117,6 +117,14 @@ Mutable character sets are less efficient to use than immutable character sets. 
 - [Sendable](../Swift/sendable.md)
 - [SendableMetatype](../Swift/sendablemetatype.md)
 
+## See Also
+
+### Characters
+- [NSCharacterSet](./nscharacterset.md)
+  An object representing a fixed set of Unicode character values for use in search operations.
+- [unichar](./unichar.md)
+  Type for UTF-16 code units.
+
 
 ---
 

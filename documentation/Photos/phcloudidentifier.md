@@ -120,6 +120,14 @@ let mappedAssets = PHAsset.fetchAssets(withLocalIdentifiers: localIdentifiers,
   Retrieves the equivalent local identifiers for the list of iCloud identifiers.
 - [let PHLocalIdentifierNotFound: String](./phlocalidentifiernotfound.md)
   A constant value that indicates that the system can’t resolve a local object from a global identifier.
+- [- cloudIdentifierMappingsForLocalIdentifiers:](./phphotolibrary/cloudidentifiermappingsforlocalidentifiers_.md)
+  Retrieves the cloud identifier mappings for the list of local identifiers.
+- [- localIdentifierMappingsForCloudIdentifiers:](./phphotolibrary/localidentifiermappingsforcloudidentifiers_.md)
+  Retrieves the local identifier mappings for the list of cloud identifiers.
+- [PHCloudIdentifierMapping](./phcloudidentifiermapping.md)
+  An object that contains the cloud identifier result from looking up a local identifier, or an error indicating why the lookup failed.
+- [PHLocalIdentifierMapping](./phlocalidentifiermapping.md)
+  An object that contains the local identifier result from looking up a cloud identifier, or an error indicating why the lookup failed.
 
 
 ---

@@ -24,10 +24,15 @@ Vertex shaders share argument tables for each resource type, such as buffers, te
 - [func setVertexBufferOffset(Int, index: Int)](./mtlrendercommandencoder/setvertexbufferoffset%28_,index%29.md)
   Updates an entry in the vertex shader argument table with a new location within the entry’s current buffer.
 - [func setVertexBufferOffset(offset: Int, attributeStride: Int, index: Int)](./mtlrendercommandencoder/setvertexbufferoffset%28offset,attributestride,index%29.md)
+- [- setVertexBuffers:offsets:withRange:](./mtlrendercommandencoder/setvertexbuffers_offsets_withrange_.md)
+  Assigns multiple buffers to a range of entries in the vertex shader argument table.
+- [- setVertexBuffers:offsets:attributeStrides:withRange:](./mtlrendercommandencoder/setvertexbuffers_offsets_attributestrides_withrange_.md)
 ### Assigning textures
 - [func setVertexTexture((any MTLTexture)?, index: Int)](./mtlrendercommandencoder/setvertextexture%28_,index%29.md)
   Assigns a texture to an entry in the vertex shader argument table.
 - [func setVertexTextures([(any MTLTexture)?], range: Range<Int>)](./mtlrendercommandencoder/setvertextextures%28_,range%29.md)
+  Assigns multiple textures to a range of entries in the vertex shader argument table.
+- [- setVertexTextures:withRange:](./mtlrendercommandencoder/setvertextextures_withrange_.md)
   Assigns multiple textures to a range of entries in the vertex shader argument table.
 ### Assigning sampler states
 - [func setVertexSamplerState((any MTLSamplerState)?, index: Int)](./mtlrendercommandencoder/setvertexsamplerstate%28_,index%29.md)
@@ -38,6 +43,10 @@ Vertex shaders share argument tables for each resource type, such as buffers, te
   Assigns multiple sampler states to a range of entries in the vertex shader argument table.
 - [func setVertexSamplerStates([(any MTLSamplerState)?], lodMinClamps: [Float], lodMaxClamps: [Float], range: Range<Int>)](./mtlrendercommandencoder/setvertexsamplerstates%28_,lodminclamps,lodmaxclamps,range%29.md)
   Assigns multiple sampler states and clamp values to a range of entries in the vertex shader argument table.
+- [- setVertexSamplerStates:withRange:](./mtlrendercommandencoder/setvertexsamplerstates_withrange_.md)
+  Assigns multiple sampler states to a range of entries in the vertex shader argument table.
+- [- setVertexSamplerStates:lodMinClamps:lodMaxClamps:withRange:](./mtlrendercommandencoder/setvertexsamplerstates_lodminclamps_lodmaxclamps_withrange_.md)
+  Assigns multiple sampler states and clamp values to a range of entries in the vertex shader argument table.
 ### Assigning acceleration structures
 - [func setVertexAccelerationStructure((any MTLAccelerationStructure)?, bufferIndex: Int)](./mtlrendercommandencoder/setvertexaccelerationstructure%28_,bufferindex%29.md)
   Assigns an acceleration structure to an entry in the vertex shader argument table.
@@ -46,10 +55,14 @@ Vertex shaders share argument tables for each resource type, such as buffers, te
   Assigns a visible function table to an entry in the vertex shader argument table.
 - [func setVertexVisibleFunctionTables([(any MTLVisibleFunctionTable)?], bufferRange: Range<Int>)](./mtlrendercommandencoder/setvertexvisiblefunctiontables%28_,bufferrange%29.md)
   Assigns multiple visible function tables to a range of entries in the vertex shader argument table.
+- [- setVertexVisibleFunctionTables:withBufferRange:](./mtlrendercommandencoder/setvertexvisiblefunctiontables_withbufferrange_.md)
+  Assigns multiple visible function tables to a range of entries in the vertex shader argument table.
 ### Assigning intersection function tables
 - [func setVertexIntersectionFunctionTable((any MTLIntersectionFunctionTable)?, bufferIndex: Int)](./mtlrendercommandencoder/setvertexintersectionfunctiontable%28_,bufferindex%29.md)
   Assigns an intersection function table to an entry in the vertex shader argument table.
 - [func setVertexIntersectionFunctionTables([(any MTLIntersectionFunctionTable)?], bufferRange: Range<Int>)](./mtlrendercommandencoder/setvertexintersectionfunctiontables%28_,bufferrange%29.md)
+  Assigns multiple intersection function tables to a range of entries in the vertex shader argument table.
+- [- setVertexIntersectionFunctionTables:withBufferRange:](./mtlrendercommandencoder/setvertexintersectionfunctiontables_withbufferrange_.md)
   Assigns multiple intersection function tables to a range of entries in the vertex shader argument table.
 
 ## See Also

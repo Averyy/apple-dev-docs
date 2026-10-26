@@ -1,0 +1,36 @@
+# copyResourceViewsFromPool:sourceRange:destinationIndex:
+
+**Framework**: Metal  
+**Kind**: method  
+**Role**: Instance Method
+
+Copies a range of resource views from a source view pool to a destination location in this view pool.
+
+**Availability**:
+- iOS 26.0+
+- iPadOS 26.0+
+- Mac Catalyst 26.0+
+- macOS 26.0+
+- tvOS 26.0+
+- visionOS 26.0+
+
+## Declaration
+
+```objc
+- (MTLResourceID) copyResourceViewsFromPool:(id<MTLResourceViewPool>) sourcePool sourceRange:(NSRange) sourceRange destinationIndex:(NSUInteger) destinationIndex;
+```
+
+#### Return Value
+
+The [`MTLResourceID`](../mtlresourceid.md) of the resource view corresponding to `destinationIndex` of the copy in this resource view pool.
+
+## Parameters
+
+- `sourcePool`: Resource view pool from which to copy resource views.
+- `sourceRange`: The range in the source resource view pool to copy.
+- `destinationIndex`: The starting index in this destination view pool into which to copy the source range of resource views.
+
+
+---
+
+*[View on Apple Developer](https://developer.apple.com/documentation/metal/mtlresourceviewpool/copyresourceviewsfrompool:sourcerange:destinationindex:)*

@@ -64,6 +64,8 @@ Only sessions that run a [`NIDLTDOAConfiguration`](./nidltdoaconfiguration.md) r
   Indicates the raw reception timestamp (in units of 15.65 picoseconds).
 - [var rawTransmitTime: UInt64](./nidltdoameasurement/rawtransmittime.md)
   Indicates the raw transmission timestamp (in units of 15.65 picoseconds).
+- [responderClockFrequencyOffset](./nidltdoameasurement/responderclockfrequencyoffset-899dj.md)
+  Indicates the clock frequency offset (CFO) fraction of the responder anchor relative to the initiator anchor (dimensionless). For example, a positive value means for every 1 clock cycle, the responder runs fewer cycles than initiator. Returns nil when measurementType is not NIDLTDOAMeasurementTypeResponse, or when the value is not available.
 
 ## Relationships
 

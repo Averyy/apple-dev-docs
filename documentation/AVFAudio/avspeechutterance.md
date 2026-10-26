@@ -46,6 +46,12 @@ Set and use the [`AVSpeechSynthesizerDelegate`](./avspeechsynthesizerdelegate.md
   A string that contains International Phonetic Alphabet (IPA) symbols the speech synthesizer uses to control pronunciation of certain words or phrases.
 - [init?(ssmlRepresentation: String)](./avspeechutterance/init%28ssmlrepresentation%29-8zam9.md)
   Creates a speech utterance with an Speech Synthesis Markup Language (SSML) string.
+- [+ speechUtteranceWithString:](./avspeechutterance/speechutterancewithstring_.md)
+  Creates an utterance with the text string that you specify for the speech synthesizer to speak.
+- [+ speechUtteranceWithAttributedString:](./avspeechutterance/speechutterancewithattributedstring_.md)
+  Creates an utterance with the attributed text string that you specify for the speech synthesizer to speak.
+- [+ speechUtteranceWithSSMLRepresentation:](./avspeechutterance/speechutterancewithssmlrepresentation_.md)
+  Returns a new speech utterance with an Speech Synthesis Markup Language (SSML) string.
 ### Configuring an utterance
 - [var voice: AVSpeechSynthesisVoice?](./avspeechutterance/voice.md)
   The voice the speech synthesizer uses when speaking the utterance.

@@ -33,6 +33,14 @@ simd_double3 vector;
 - [var z: Double](./z.md)
   The z-coordinate value.
 - [var magnitudeSquared: Double](./magnitudesquared.md)
+- [x](../sppoint3d/x.md)
+  The x-coordinate value.
+- [y](../sppoint3d/y.md)
+  The y-coordinate value.
+- [z](../sppoint3d/z.md)
+  The z-coordinate value.
+- [SPPoint3DGetVector](../sppoint3dgetvector.md)
+  A simd three-element vector that contains the x-, y-, and z-coordinate values.
 
 
 ---

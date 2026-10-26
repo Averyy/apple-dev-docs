@@ -19,6 +19,12 @@ Play and edit Cinematic mode video with an adjustable depth of field and focus p
 ### Essentials
 - [class CNScript](./cnscript-1ispe.md)
   A collection of focus decisions, focus transitions, detections, and detection tracks associated with a movie captured in Cinematic mode and methods to change them.
+- [CNScript](./cnscript-9e1zn.md)
+  A collection of focus decisions, focus transitions, detections, and detection tracks associated with a movie captured in Cinematic mode and methods to change them.
+- [CNScriptChanges](./cnscriptchanges.md)
+  An object that represents a snapshot of the changes made to a movie script, including the added user decisions and detection tracks.
+- [CNScriptFrame](./cnscriptframe.md)
+  An object that represents what to focus on, and where to focus, in a given movie frame.
 
 
 ---

@@ -32,6 +32,8 @@ Use this object to create a disbursement (payment) request from a merchant to a 
 ### Initializers
 - [convenience init(merchantIdentifier: String, currency: Locale.Currency, region: Locale.Region, supportedNetworks: [PKPaymentNetwork], merchantCapabilities: PKMerchantCapability, summaryItems: [PKPaymentSummaryItem])](./pkdisbursementrequest/init%28merchantidentifier,currency,region,supportednetworks,merchantcapabilities,summaryitems%29.md)
   Creates a disbursement request with the parameters you specify.
+- [- initWithMerchantIdentifier:currencyCode:regionCode:supportedNetworks:merchantCapabilities:summaryItems:](./pkdisbursementrequest/initwithmerchantidentifier_currencycode_regioncode_supportednetworks_merchantcapabilities_summaryitems_.md)
+  Creates a new instance of a disbursement request with the merchant identifier, currency and region codes, and other parameters you specify.
 ### Setting currency and region information
 - [var currency: Locale.Currency](./pkdisbursementrequest/currency.md)
   The currency to use for this disbursement.
@@ -39,6 +41,12 @@ Use this object to create a disbursement (payment) request from a merchant to a 
   The geographic region that describes the location for this disbursement.
 - [var supportedRegions: [Locale.Region]?](./pkdisbursementrequest/supportedregions-1cl0f.md)
   An array of regions that describe the locations to support.
+- [currencyCode](./pkdisbursementrequest/currencycode.md)
+  The currency code string for this disbursement.
+- [regionCode](./pkdisbursementrequest/regioncode.md)
+  The merchant’s country code string.
+- [supportedRegions](./pkdisbursementrequest/supportedregions-j9ug.md)
+  An array of two-letter region codes that describes the regions to support.
 ### Setting the summary items
 - [var summaryItems: [PKPaymentSummaryItem]](./pkdisbursementrequest/summaryitems.md)
   An array of payment summary item objects that the framework presents to people.

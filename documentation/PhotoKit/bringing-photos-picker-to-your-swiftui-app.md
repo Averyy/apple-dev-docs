@@ -28,7 +28,7 @@ You must use a physical device when building the watchOS target in Xcode.
 
 ##### Add a Photos picker view
 
-To display the picker, the sample adds a [`PhotosPicker`](https://developer.apple.com/documentation/photosui/photospicker) view as an overlay to a profile image. The view provides a label that describes the action of choosing an item from the photo library. The sample displays assets that match the image type. In iOS 16 or later, [`PHPickerFilter`](https://developer.apple.com/documentation/photosui/phpickerfilter-swift.struct) contains new filters for [`bursts`](https://developer.apple.com/documentation/photosui/phpickerfilter-swift.struct/bursts), [`cinematicVideos`](https://developer.apple.com/documentation/photosui/phpickerfilter-swift.struct/cinematicvideos), and [`depthEffectPhotos`](https://developer.apple.com/documentation/photosui/phpickerfilter-swift.struct/deptheffectphotos).
+To display the picker, the sample adds a [`PhotosPicker`](../PhotosUI/photospicker.md) view as an overlay to a profile image. The view provides a label that describes the action of choosing an item from the photo library. The sample displays assets that match the image type. In iOS 16 or later, [`PHPickerFilter`](../PhotosUI/phpickerfilter-swift.struct.md) contains new filters for [`bursts`](../PhotosUI/phpickerfilter-swift.struct/bursts.md), [`cinematicVideos`](../PhotosUI/phpickerfilter-swift.struct/cinematicvideos.md), and [`depthEffectPhotos`](../PhotosUI/phpickerfilter-swift.struct/deptheffectphotos.md).
 
 ```swift
 CircularProfileImage(imageState: viewModel.imageState)
@@ -47,7 +47,7 @@ CircularProfileImage(imageState: viewModel.imageState)
 
 ##### Load an image from the selection
 
-The sample contains an [`PhotosPickerItem`](https://developer.apple.com/documentation/photosui/photospickeritem) that contains the selection. The selection only contains a placeholder object. Some large files may take a long time to download, so the sample shows an inline loading indicator instead of an indicator that blocks execution.
+The sample contains an [`PhotosPickerItem`](../PhotosUI/photospickeritem.md) that contains the selection. The selection only contains a placeholder object. Some large files may take a long time to download, so the sample shows an inline loading indicator instead of an indicator that blocks execution.
 
 ```swift
 @Published var imageSelection: PhotosPickerItem? = nil {
@@ -62,7 +62,7 @@ The sample contains an [`PhotosPickerItem`](https://developer.apple.com/document
 }
 ```
 
-To load the asset data, [`PhotosPickerItem`](https://developer.apple.com/documentation/photosui/photospickeritem) adopts [`Transferable`](../CoreTransferable/transferable.md). The sample attempts to retrieve the SwiftUI [`Image`](../SwiftUI/image.md) from the item. A failure can occur when the system attempts to retrieve the data. For example, if the picker tries to download data from iCloud Photos without a network connection.
+To load the asset data, [`PhotosPickerItem`](../PhotosUI/photospickeritem.md) adopts [`Transferable`](../CoreTransferable/transferable.md). The sample attempts to retrieve the SwiftUI [`Image`](../SwiftUI/image.md) from the item. A failure can occur when the system attempts to retrieve the data. For example, if the picker tries to download data from iCloud Photos without a network connection.
 
 ```swift
 private func loadTransferable(from imageSelection: PhotosPickerItem) -> Progress {

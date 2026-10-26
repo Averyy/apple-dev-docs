@@ -38,6 +38,8 @@ protocol MTLResourceViewPool : NSObjectProtocol
 ### Instance Methods
 - [func copyResourceViews(sourcePool: any MTLResourceViewPool, sourceRange: Range<Int>, destinationIndex: Int) -> MTLResourceID](./mtlresourceviewpool/copyresourceviews%28sourcepool,sourcerange,destinationindex%29.md)
   Copies a range of resource views from a source view pool to a destination location in this view pool.
+- [- copyResourceViewsFromPool:sourceRange:destinationIndex:](./mtlresourceviewpool/copyresourceviewsfrompool_sourcerange_destinationindex_.md)
+  Copies a range of resource views from a source view pool to a destination location in this view pool.
 
 ## Relationships
 

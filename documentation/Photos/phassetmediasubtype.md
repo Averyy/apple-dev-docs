@@ -54,6 +54,8 @@ Media subtypes are [`OptionSet`](../Swift/optionset.md) values, so you can combi
   The asset is a time-lapse video.
 - [static var photoDepthEffect: PHAssetMediaSubtype](./phassetmediasubtype/photodeptheffect.md)
   The asset is a photo captured with the Camera app’s Portrait mode depth effect.
+- [PHAssetMediaSubtypeNone](./phassetmediasubtype/phassetmediasubtypenone.md)
+  The asset has no subtype.
 ### Type Properties
 - [static var photoAnimation: PHAssetMediaSubtype](./phassetmediasubtype/photoanimation.md)
 - [static var spatialMedia: PHAssetMediaSubtype](./phassetmediasubtype/spatialmedia.md)

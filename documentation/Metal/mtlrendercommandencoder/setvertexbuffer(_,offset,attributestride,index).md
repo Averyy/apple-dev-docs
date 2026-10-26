@@ -37,6 +37,9 @@ func setVertexBuffer(_ buffer: (any MTLBuffer)?, offset: Int, attributeStride st
 - [func setVertexBufferOffset(Int, index: Int)](./setvertexbufferoffset%28_,index%29.md)
   Updates an entry in the vertex shader argument table with a new location within the entry’s current buffer.
 - [func setVertexBufferOffset(offset: Int, attributeStride: Int, index: Int)](./setvertexbufferoffset%28offset,attributestride,index%29.md)
+- [- setVertexBuffers:offsets:withRange:](./setvertexbuffers_offsets_withrange_.md)
+  Assigns multiple buffers to a range of entries in the vertex shader argument table.
+- [- setVertexBuffers:offsets:attributeStrides:withRange:](./setvertexbuffers_offsets_attributestrides_withrange_.md)
 
 
 ---

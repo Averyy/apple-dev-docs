@@ -97,8 +97,14 @@ if([[NSUserDefaults standardUserDefaults]
   Creates a named subscription for all records in a database.
 - [init(coder: NSCoder)](./ckdatabasesubscription/init%28coder%29.md)
   Creates a database subscription from a serialized instance.
+- [- initWithSubscriptionID:](./ckdatabasesubscription/initwithsubscriptionid_.md)
+  Creates a named subscription for all records in a database.
+- [+ new](./ckdatabasesubscription/new.md)
+  Creates an empty database subscription.
 ### Accessing the Subscription Metadata
 - [var recordType: CKRecord.RecordType?](./ckdatabasesubscription/recordtype-46v7a.md)
+  The type of record that the subscription queries.
+- [recordType](./ckdatabasesubscription/recordtype-1y7dv.md)
   The type of record that the subscription queries.
 
 ## Relationships

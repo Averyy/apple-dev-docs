@@ -26,6 +26,10 @@ class var defaultPrinter: NSPrinter? { get }
   Constants that specify page orientations.
 - [Deprecated Printing Keys](../deprecated-printing-keys.md)
   These keys refer to older printing properties that are no longer used.
+- [+ setDefaultPrinter:](./setdefaultprinter_.md)
+  Deprecated.
+- [+ sizeForPaperName:](./sizeforpapername_.md)
+  Deprecated.
 
 
 ---

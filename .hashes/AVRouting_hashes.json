@@ -160,6 +160,11 @@
       "file_path": "documentation/AVRouting/avcustomroutingpartialip/mask.md",
       "hash": "b807c720cf1af74ac32d91967c06fbfe9a2c22f7b1309efd3f4989ed39c0ee7b"
     },
+    "https://developer.apple.com/documentation/avrouting/avrouting_extern": {
+      "etag": "\"9ad-65d5607622ac4-df\"",
+      "file_path": "documentation/AVRouting/avrouting_extern.md",
+      "hash": "5e4f151f0c49f793933d97bd82647f2aea7014ee5ca944ee5c445333580e28eb"
+    },
     "https://developer.apple.com/documentation/avrouting/avroutingplaybackarbiter": {
       "etag": "\"49e9-65d5607622ac4-df\"",
       "file_path": "documentation/AVRouting/avroutingplaybackarbiter.md",
@@ -345,6 +350,11 @@
       "file_path": "documentation/AVRouting/avcustomroutingpartialip/mask.md",
       "hash": "b807c720cf1af74ac32d91967c06fbfe9a2c22f7b1309efd3f4989ed39c0ee7b"
     },
+    "https://developer.apple.com/tutorials/data/documentation/avrouting/avrouting_extern.json": {
+      "etag": "\"9ad-65d5607622ac4-df\"",
+      "file_path": "documentation/AVRouting/avrouting_extern.md",
+      "hash": "5e4f151f0c49f793933d97bd82647f2aea7014ee5ca944ee5c445333580e28eb"
+    },
     "https://developer.apple.com/tutorials/data/documentation/avrouting/avroutingplaybackarbiter.json": {
       "etag": "\"49e9-65d5607622ac4-df\"",
       "file_path": "documentation/AVRouting/avroutingplaybackarbiter.md",
@@ -373,8 +383,8 @@
   },
   "metadata": {
     "render": {
-      "version": 1
+      "version": 2
     },
-    "total_pages": 74
+    "total_pages": 76
   }
 }

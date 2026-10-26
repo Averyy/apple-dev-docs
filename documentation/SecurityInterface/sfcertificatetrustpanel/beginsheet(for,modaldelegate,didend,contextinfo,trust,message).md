@@ -53,6 +53,8 @@ The delegate method may dismiss the keychain settings sheet itself; if it does n
   Creates a trust management object based on certificates and policies.
 - [func runModal(for: SecTrust!, message: String!) -> Int](./runmodal%28for,message%29.md)
   Displays a modal panel that shows the results of a certificate trust evaluation and that allows the user to edit trust settings.
+- [SecTrustGetResult](../../Security/sectrustgetresult.md)
+  Retrieves details on the outcome of a call to the function `SecTrustEvaluate`.
 ### Displaying a Sheet or Panel
 - [func runModal(for: SecTrust!, message: String!) -> Int](./runmodal%28for,message%29.md)
   Displays a modal panel that shows the results of a certificate trust evaluation and that allows the user to edit trust settings.

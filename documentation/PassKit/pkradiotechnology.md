@@ -34,6 +34,9 @@ enum PKRadioTechnology : NSUInteger;
 ### Creating a radio technology object
 - [init(rawValue: UInt)](./pkradiotechnology/init%28rawvalue%29.md)
   Creates a radio technology object of the specified type.
+### Enumeration Cases
+- [PKRadioTechnologyNone](./pkradiotechnology/pkradiotechnologynone.md)
+  An identifier that indicates the pass doesn’t use radio frequency communication.
 
 ## Relationships
 

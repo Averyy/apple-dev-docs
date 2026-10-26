@@ -31,6 +31,9 @@ The method adds the newly created objects to the list of `NSDocument` objects ma
   An action method called by the New menu command, this method creates a new `NSDocument` object and adds it to the list of such objects managed by the document controller.
 - [func saveAllDocuments(Any?)](./savealldocuments%28_%29.md)
   As the action method called by the Save All command, saves all open documents of the application that need to be saved.
+### Related Documentation
+- [- fileNamesFromRunningOpenPanel](./filenamesfromrunningopenpanel.md)
+  Returns a selection of files chosen by the user in the Open panel.
 
 
 ---

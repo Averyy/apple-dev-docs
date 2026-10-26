@@ -33,6 +33,12 @@ A mutable input parameters object with no volume ramps and [`trackID`](./trackid
 
 - `track`: The track to associate with the input parameters object.
 
+## See Also
+
+### Creating input parameters
+- [+ audioMixInputParameters](./audiomixinputparameters.md)
+  Creates a mutable input parameters object.
+
 
 ---
 

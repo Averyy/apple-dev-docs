@@ -40,6 +40,10 @@ class var maxTensorDimensions: Int { get }
   Creates a tensor descriptor with the sizing, number of feature channels, and data type you specify.
 - [convenience init?(convolutionBiasesWithFeatureChannelCount: Int, dataType: MLCDataType)](./init%28convolutionbiaseswithfeaturechannelcount,datatype%29.md)
   Creates a tensor descriptor with the number of feature channels and data type you specify.
+- [+ descriptorWithShape:dataType:](./descriptorwithshape_datatype_.md)
+  Creates a tensor descriptor with the shape and data type you specify.
+- [+ descriptorWithShape:sequenceLengths:sortedSequences:dataType:](./descriptorwithshape_sequencelengths_sortedsequences_datatype_.md)
+  Creates a tensor descriptor with the shape, variable sequence lengths, sorting indicator, and data type you specify.
 
 
 ---

@@ -24,6 +24,22 @@ Apply clipping, limit, or threshold rules to the elements in a vector.
   Calculates a double-precision vector that’s inverted-clipped to the specified range.
 - [static func invertedClip<U, V>(U, to: ClosedRange<Float>, result: inout V)](./vdsp/invertedclip%28_,to,result%29-3q12m.md)
   Calculates a single-precision vector that’s inverted-clipped to the specified range.
+- [vDSP_vclip](./vdsp_vclip.md)
+  Calculates the elements of a single-precision vector clipped to the specified range.
+- [vDSP_vclipD](./vdsp_vclipd.md)
+  Calculates the elements of a double-precision vector clipped to the specified range.
+- [vDSP_vclipc](./vdsp_vclipc.md)
+  Calculates and counts the elements of a single-precision vector clipped to the specified range.
+- [vDSP_vclipcD](./vdsp_vclipcd.md)
+  Calculates and counts the elements of a double-precision vector clipped to the specified range.
+- [vDSP_viclip](./vdsp_viclip.md)
+  Calculates the elements of a single-precision vector inverted-clipped to the specified range using the specified stride.
+- [vDSP_viclipD](./vdsp_viclipd.md)
+  Calculates the elements of a double-precision vector inverted-clipped to the specified range using the specified stride.
+- [vDSP_vthr](./vdsp_vthr.md)
+  Calculates single-precision vector threshold to the specified range.
+- [vDSP_vthrD](./vdsp_vthrd.md)
+  Calculates double-precision vector threshold to the specified range.
 ### Limit Operations
 - [static func limit<U>(U, limit: Double, withOutputConstant: Double) -> [Double]](./vdsp/limit%28_,limit,withoutputconstant%29-2d9u6.md)
   Returns the double-precision vector test limit.
@@ -33,6 +49,10 @@ Apply clipping, limit, or threshold rules to the elements in a vector.
   Calculates the double-precision vector test limit.
 - [static func limit<U, V>(U, limit: Float, withOutputConstant: Float, result: inout V)](./vdsp/limit%28_,limit,withoutputconstant,result%29-9v33v.md)
   Calculates the single-precision vector test limit.
+- [vDSP_vlim](./vdsp_vlim.md)
+  Calculates the single-precision vector test limit using the specified stride.
+- [vDSP_vlimD](./vdsp_vlimd.md)
+  Calculates the double-precision vector test limit using the specified stride.
 ### Threshold Operations
 - [static func threshold<U>(U, to: Double, with: vDSP.ThresholdRule<Double>) -> [Double]](./vdsp/threshold%28_,to,with%29-77g7l.md)
   Returns the elements of the supplied double-precision vector after applying a specified thresholding rule.
@@ -44,6 +64,14 @@ Apply clipping, limit, or threshold rules to the elements in a vector.
   Calculates the elements of the supplied single-precision vector after applying a specified thresholding rule.
 - [vDSP.ThresholdRule](./vdsp/thresholdrule.md)
   Constants that specify vector threshold rules.
+- [vDSP_vthres](./vdsp_vthres.md)
+  Calculates single-precision vector threshold with zero fill to the specified range.
+- [vDSP_vthresD](./vdsp_vthresd.md)
+  Calculates double-precision vector threshold with zero fill to the specified range.
+- [vDSP_vthrsc](./vdsp_vthrsc.md)
+  Calculates single-precision vector threshold with signed constant to the specified range.
+- [vDSP_vthrscD](./vdsp_vthrscd.md)
+  Calculates double-precision vector threshold with signed constant to the specified range.
 
 ## See Also
 

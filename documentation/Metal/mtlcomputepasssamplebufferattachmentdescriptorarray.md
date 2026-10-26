@@ -33,6 +33,8 @@ The number of elements in the array is at least the number of elements in an [`M
 ### Accessing a sample buffer attachment
 - [subscript(Int) -> MTLComputePassSampleBufferAttachmentDescriptor!](./mtlcomputepasssamplebufferattachmentdescriptorarray/subscript%28_%29.md)
   Returns the descriptor object for the specified sample buffer attachment.
+- [- setObject:atIndexedSubscript:](./mtlcomputepasssamplebufferattachmentdescriptorarray/setobject_atindexedsubscript_.md)
+  Sets the descriptor object for the specified sample buffer attachment.
 
 ## Relationships
 

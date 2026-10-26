@@ -42,6 +42,10 @@ func changePassword(_ oldPassword: String!, toPassword newPassword: String!) thr
   Verifies the credentials for interaction with the record’s node using other types of authentication available to Open Directory.
 - [func verifyPassword(String!) throws](./verifypassword%28_%29.md)
   Verifies the password for interaction with the record.
+- [- passwordPolicyAndReturnError:](./passwordpolicyandreturnerror_.md)
+  Returns a dictionary containing the password policy for the record.
+- [- setNodeCredentialsUsingKerberosCache:error:](./setnodecredentialsusingkerberoscache_error_.md)
+  Sets the credentials for interaction with the record’s node using a Kerberos cache.
 
 
 ---

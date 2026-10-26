@@ -50,6 +50,10 @@ The source and destination buffers need to have the same height and width.
   Interleaves three 32-bit planar buffers into an 8-bit-per-channel, 4-channel interleaved XRGB buffer with the specified constant alpha value.
 - [func vImageConvert_PlanarFToXRGBFFFF(Pixel_F, UnsafePointer<vImage_Buffer>, UnsafePointer<vImage_Buffer>, UnsafePointer<vImage_Buffer>, UnsafePointer<vImage_Buffer>, vImage_Flags) -> vImage_Error](./vimageconvert_planarftoxrgbffff%28_,_,_,_,_,_%29.md)
   Interleaves three 32-bit planar buffers into a floating-point 32-bit-per-channel, 4-channel interleaved XRGB buffer with the specified constant alpha value.
+- [vImageConvert_PlanarFToRGBX8888](./vimageconvert_planarftorgbx8888.md)
+  Interleaves three 32-bit planar buffers into an 8-bit-per-channel, 4-channel interleaved RGBX buffer with the specified constant alpha value.
+- [vImageConvert_PlanarFToRGBXFFFF](./vimageconvert_planarftorgbxffff.md)
+  Interleaves three 32-bit planar buffers into a floating-point 32-bit-per-channel, 4-channel interleaved RGBX buffer with the specified constant alpha value.
 
 
 ---

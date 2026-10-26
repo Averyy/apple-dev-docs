@@ -78,6 +78,8 @@ Apps on a user’s device can share the recording function, with each app having
   Stops buffering a clip recording.
 - [func exportClip(to: URL, duration: TimeInterval, completionHandler: (((any Error)?) -> Void)?)](./rpscreenrecorder/exportclip%28to,duration,completionhandler%29.md)
   Exports a clip recording to a file.
+### Instance Methods
+- [- init](./rpscreenrecorder/init.md)
 
 ## Relationships
 

@@ -116,6 +116,41 @@ For a discussion of all the methods you can use to create `CIImage` objects on i
   Initializes an image with the contents of an IOSurface.
 - [init(ioSurface: IOSurfaceRef, options: [CIImageOption : Any]?)](./ciimage/init%28iosurface,options%29-48cta.md)
   Initializes, using the specified options, an image with the contents of an IOSurface.
+- [+ imageWithContentsOfURL:](./ciimage/imagewithcontentsofurl_.md)
+  Creates and returns an image object from the contents of a file.
+- [+ imageWithContentsOfURL:options:](./ciimage/imagewithcontentsofurl_options_.md)
+  Creates and returns an image object from the contents of a file, using the specified options.
+- [+ imageWithCGImage:](./ciimage/imagewithcgimage_.md)
+  Creates and returns an image object from a Quartz 2D image.
+- [+ imageWithCGImage:options:](./ciimage/imagewithcgimage_options_.md)
+  Creates and returns an image object from a Quartz 2D image using the specified options.
+- [+ imageWithCGImageSource:index:options:](./ciimage/imagewithcgimagesource_index_options_.md)
+- [+ imageWithData:](./ciimage/imagewithdata_.md)
+  Creates and returns an image object initialized with the supplied image data.
+- [+ imageWithData:options:](./ciimage/imagewithdata_options_.md)
+  Creates and returns an image object initialized with the supplied image data, using the specified options.
+- [+ imageWithBitmapData:bytesPerRow:size:format:colorSpace:](./ciimage/imagewithbitmapdata_bytesperrow_size_format_colorspace_.md)
+  Creates and returns an image object from bitmap data.
+- [+ imageWithImageProvider:size::format:colorSpace:options:](./ciimage/imagewithimageprovider_size__format_colorspace_options_.md)
+  Create an image object based on pixels from an image provider object.
+- [+ imageWithDepthData:](./ciimage/imagewithdepthdata_.md)
+- [+ imageWithDepthData:options:](./ciimage/imagewithdepthdata_options_.md)
+- [+ imageWithPortaitEffectsMatte:](./ciimage/imagewithportaiteffectsmatte_.md)
+- [+ imageWithPortaitEffectsMatte:options:](./ciimage/imagewithportaiteffectsmatte_options_.md)
+- [+ imageWithSemanticSegmentationMatte:](./ciimage/imagewithsemanticsegmentationmatte_.md)
+- [+ imageWithSemanticSegmentationMatte:options:](./ciimage/imagewithsemanticsegmentationmatte_options_.md)
+- [+ imageWithCVImageBuffer:](./ciimage/imagewithcvimagebuffer_.md)
+  Creates and returns an image object from the contents of  `CVImageBuffer` object.
+- [+ imageWithCVImageBuffer:options:](./ciimage/imagewithcvimagebuffer_options_.md)
+  Creates and returns an image object from the contents of  `CVImageBuffer` object, using the specified options.
+- [+ imageWithCVPixelBuffer:](./ciimage/imagewithcvpixelbuffer_.md)
+  Creates and returns an image object from the contents of  `CVPixelBuffer` object.
+- [+ imageWithCVPixelBuffer:options:](./ciimage/imagewithcvpixelbuffer_options_.md)
+  Creates and returns an image object from the contents of  `CVPixelBuffer` object, using the specified options.
+- [+ imageWithMTLTexture:options:](./ciimage/imagewithmtltexture_options_.md)
+  Creates and returns an image object with data supplied by a Metal texture.
+- [+ imageWithIOSurface:](./ciimage/imagewithiosurface_.md)
+  Creates and returns an image from the contents of an IOSurface.
 ### Creating an Image by Modifying an Existing Image
 - [func applyingFilter(String, parameters: [String : Any]) -> CIImage](./ciimage/applyingfilter%28_,parameters%29.md)
   Returns a new image created by applying a filter to the original image with the specified name and parameters.
@@ -167,6 +202,8 @@ For a discussion of all the methods you can use to create `CIImage` objects on i
 - [class var red: CIImage](./ciimage/red.md)
 - [class var white: CIImage](./ciimage/white.md)
 - [class var yellow: CIImage](./ciimage/yellow.md)
+- [+ imageWithColor:](./ciimage/imagewithcolor_.md)
+  Creates and returns an image of infinite extent whose entire content is the specified color.
 ### Getting Image Information
 - [var definition: CIFilterShape](./ciimage/definition.md)
   Returns a filter shape object that represents the domain of definition of the image.
@@ -234,6 +271,16 @@ For a discussion of all the methods you can use to create `CIImage` objects on i
   The key for an OpenGL texture target.
 - [static let textureFormat: CIImageOption](./ciimageoption/textureformat.md)
   The key for an OpenGL texture format.
+- [+ imageWithCGLayer:](./ciimage/imagewithcglayer_.md)
+  Creates and returns an image object from the contents supplied by a `CGLayer` object.
+- [+ imageWithCGLayer:options:](./ciimage/imagewithcglayer_options_.md)
+  Creates and returns an image object  from the contents supplied by a `CGLayer` object, using the  specified options.
+- [+ imageWithTexture:size:flipped:colorSpace:](./ciimage/imagewithtexture_size_flipped_colorspace_.md)
+  Creates and returns an image object initialized with data supplied by an OpenGL texture.
+- [+ imageWithTexture:size:flipped:options:](./ciimage/imagewithtexture_size_flipped_options_.md)
+  Creates and returns an image object initialized with data supplied by an OpenGL texture.
+- [+ imageWithIOSurface:options:](./ciimage/imagewithiosurface_options_.md)
+  Creates, using the specified options, and returns an image from the contents of an IOSurface.
 ### Instance Properties
 - [var contentHeadroom: Float](./ciimage/contentheadroom.md)
   Returns the content headroom of the image.

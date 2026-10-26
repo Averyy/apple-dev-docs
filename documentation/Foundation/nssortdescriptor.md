@@ -52,6 +52,12 @@ You can use sort descriptors for the following:
   Creates a sort descriptor by decoding from the coder you specify.
 - [convenience init<Compared>(SortDescriptor<Compared>)](./nssortdescriptor/init%28_%29-7qf91.md)
   Creates a sort descriptor using a sort descriptor you specify.
+- [+ sortDescriptorWithKey:ascending:](./nssortdescriptor/sortdescriptorwithkey_ascending_.md)
+  Creates and returns a sort descriptor with the specified key path and ordering.
+- [+ sortDescriptorWithKey:ascending:selector:](./nssortdescriptor/sortdescriptorwithkey_ascending_selector_.md)
+  Creates a sort descriptor with the specified key path, ordering, and comparison selector.
+- [+ sortDescriptorWithKey:ascending:comparator:](./nssortdescriptor/sortdescriptorwithkey_ascending_comparator_.md)
+  Creates and returns a sort descriptor initialized with the specified key path and ordering, and a comparator block.
 ### Getting Information About a Sort Descriptor
 - [var ascending: Bool](./nssortdescriptor/ascending.md)
   A Boolean value that indicates whether the receiver specifies sorting in ascending order.

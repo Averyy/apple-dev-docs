@@ -38,6 +38,8 @@ A four-element SceneKit vector structure representing the same vector as the inp
 ### Converting Vector Types
 - [func SCNVector4ToGLKVector4(SCNVector4) -> GLKVector4](./scnvector4toglkvector4%28_%29.md)
   Returns a four-element GLKit vector structure corresponding to a SceneKit vector structure.
+- [SCNVector4FromFloat4](./scnvector4fromfloat4.md)
+- [SCNVector4ToFloat4](./scnvector4tofloat4.md)
 
 
 ---

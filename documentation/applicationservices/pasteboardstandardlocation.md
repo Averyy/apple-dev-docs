@@ -24,6 +24,9 @@ typedef enum PasteboardStandardLocation : OSType {
 ### Enumeration Cases
 - [PasteboardStandardLocation.trash](./pasteboardstandardlocation/trash.md)
 - [PasteboardStandardLocation.unknown](./pasteboardstandardlocation/unknown.md)
+### Constants
+- [kPasteboardStandardLocationTrash](./pasteboardstandardlocation/kpasteboardstandardlocationtrash.md)
+- [kPasteboardStandardLocationUnknown](./pasteboardstandardlocation/kpasteboardstandardlocationunknown.md)
 
 ## Relationships
 

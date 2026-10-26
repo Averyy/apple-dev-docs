@@ -46,6 +46,8 @@ Subclasses must override the [`dominantScript`](./nsorthography/dominantscript.m
   Creates and returns an orthography object with the default language map for the specified language.
 - [init(dominantScript: String, languageMap: [String : [String]])](./nsorthography/init%28dominantscript,languagemap%29.md)
   Creates an orthography object with the specified dominant script and language map.
+- [+ orthographyWithDominantScript:languageMap:](./nsorthography/orthographywithdominantscript_languagemap_.md)
+  Creates and returns an orthography object with the specified dominant script and language map.
 ### Determining Correspondences Between Languages and Scripts
 - [var languageMap: [String : [String]]](./nsorthography/languagemap.md)
   A dictionary that maps script tags to arrays of language tags.
@@ -92,6 +94,16 @@ Subclasses must override the [`dominantScript`](./nsorthography/dominantscript.m
   A type that provides an out-of-process localizable description.
 - [struct URLResource](./urlresource.md)
   A resource located at a particular file URL within a bundle.
+- [NSLocale](./nslocale.md)
+  Information about linguistic, cultural, and technological conventions for use in formatting data for presentation.
+- [NSLocalizedString](./nslocalizedstring.md)
+  Returns a localized version of a string from the default table, which Xcode autogenerates when exporting localizations.
+- [NSLocalizedStringFromTable](./nslocalizedstringfromtable.md)
+  Returns a localized version of a string from the table that you specify, which Xcode autogenerates when exporting localizations.
+- [NSLocalizedStringFromTableInBundle](./nslocalizedstringfromtableinbundle.md)
+  Returns a localized version of a string from the table and bundle that you specify, which Xcode autogenerates when exporting localizations.
+- [NSLocalizedStringWithDefaultValue](./nslocalizedstringwithdefaultvalue.md)
+  Returns a localized version of a string identified by a key in the table that you specify, which Xcode autogenerates when exporting localizations.
 
 
 ---

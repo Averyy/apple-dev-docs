@@ -69,6 +69,14 @@ By the time this method is called, the [`interfaceOrientation`](./interfaceorien
   Returns a Boolean value indicating whether rotation methods are forwarded to child view controllers.
 - [func willRotate(to: UIInterfaceOrientation, duration: TimeInterval)](./willrotate%28to,duration%29.md)
   Sent to the view controller just before the user interface begins rotating.
+- [- automaticallyForwardAppearanceAndRotationMethodsToChildViewControllers](./automaticallyforwardappearanceandrotationmethodstochildviewcontrollers.md)
+  Returns a Boolean value that indicates whether appearance and rotation methods are forwarded.
+- [- didAnimateFirstHalfOfRotationToInterfaceOrientation:](./didanimatefirsthalfofrotationtointerfaceorientation_.md)
+  Sent to the view controller after the completion of the first half of the user interface rotation.
+- [- dismissModalViewControllerAnimated:](./dismissmodalviewcontrolleranimated_.md)
+  Dismisses the view controller that was presented by the receiver.
+- [- presentModalViewController:animated:](./presentmodalviewcontroller_animated_.md)
+  Presents a modal view managed by the given view controller to the user.
 
 
 ---

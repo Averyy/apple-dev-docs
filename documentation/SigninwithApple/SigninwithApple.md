@@ -17,7 +17,7 @@ Sign in with Apple at Work & School provides the same ease of use for users with
 
 > **Note**:  Administrators can configure Access Management controls for Sign in with Apple at Work & School within Apple Business Manager and Apple School Manager.
 
-To support Sign in with Apple for iOS, macOS, tvOS, and watchOS apps, see [Implementing User Authentication with Sign in with Apple](../AuthenticationServices/implementing-user-authentication-with-sign-in-with-apple.md). For website support, see [Sign in with Apple JS](https://developer.apple.com/documentation/signinwithapplejs), and use the [Sign in with Apple REST API](https://developer.apple.com/documentation/signinwithapplerestapi) to communicate with Apple servers.
+To support Sign in with Apple for iOS, macOS, tvOS, and watchOS apps, see [Implementing User Authentication with Sign in with Apple](../AuthenticationServices/implementing-user-authentication-with-sign-in-with-apple.md). For website support, see [Sign in with Apple JS](../SigninwithAppleJS/SigninwithAppleJS.md), and use the [Sign in with Apple REST API](../SigninwithAppleRESTAPI/SigninwithAppleRESTAPI.md) to communicate with Apple servers.
 
 ## Topics
 
@@ -27,9 +27,9 @@ To support Sign in with Apple for iOS, macOS, tvOS, and watchOS apps, see [Imple
 - [Displaying Sign in with Apple buttons in your app](./displaying-sign-in-with-apple-buttons-in-your-app.md)
   Configure the appearance of Sign in with Apple buttons programatically.
 ### Web support
-- [Sign in with Apple JS](https://developer.apple.com/documentation/signinwithapplejs)
+- [Sign in with Apple JS](../SigninwithAppleJS/SigninwithAppleJS.md)
   Provide users a fast, secure way to sign in to your web service with their Apple Account.
-- [Sign in with Apple REST API](https://developer.apple.com/documentation/signinwithapplerestapi)
+- [Sign in with Apple REST API](../SigninwithAppleRESTAPI/SigninwithAppleRESTAPI.md)
   Communicate between your app servers and Apple’s authentication servers.
 - [Displaying Sign in with Apple buttons on the web](./displaying-sign-in-with-apple-buttons-on-the-web.md)
   Configure the appearance of Sign in with Apple buttons with CSS styles.

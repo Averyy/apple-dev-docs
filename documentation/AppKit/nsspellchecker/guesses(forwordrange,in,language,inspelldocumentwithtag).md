@@ -45,6 +45,8 @@ An array of strings containing possible replacement words.
   Requests unified text checking for the given range of the given string.
 - [func requestChecking(of: String, range: NSRange, types: NSTextCheckingTypes, options: [NSSpellChecker.OptionKey : Any]?, inSpellDocumentWithTag: Int, completionHandler: ((Int, [NSTextCheckingResult], NSOrthography, Int) -> Void)?) -> Int](./requestchecking%28of,range,types,options,inspelldocumentwithtag,completionhandler%29.md)
   Requests that the string be checked in the background.
+- [- guessesForWord:](./guessesforword_.md)
+  Returns an array of suggested spellings for the misspelled word.
 
 
 ---

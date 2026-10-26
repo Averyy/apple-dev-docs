@@ -94,6 +94,15 @@ CFCalendar is “toll-free bridged” with its Cocoa Foundation counterpart, NSC
   CFCalendarUnit constants are used to specify calendrical units, such as day or month, in various calendar calculations.
 - [Component Wrapping Options](./api-1533520-component-wrapping-options.md)
   The wrapping option specifies overflow behavior for calendar components in calendrical calculations
+### Calendrical Calculations
+- [CFCalendarAddComponents](./cfcalendaraddcomponents.md)
+  Computes the absolute time when specified components are added to a given absolute time.
+- [CFCalendarComposeAbsoluteTime](./cfcalendarcomposeabsolutetime.md)
+  Computes the absolute time from components in a description string.
+- [CFCalendarDecomposeAbsoluteTime](./cfcalendardecomposeabsolutetime.md)
+  Computes the components which are indicated by the componentDesc description string for the given absolute time.
+- [CFCalendarGetComponentDifference](./cfcalendargetcomponentdifference.md)
+  Computes the difference between the two absolute times, in terms of specified calendrical components.
 
 ## Relationships
 

@@ -32,6 +32,8 @@ class MPSCNNDropoutGradientNode
 - [var keepProbability: Float](./mpscnndropoutgradientnode/keepprobability.md)
 - [var maskStrideInPixels: MTLSize](./mpscnndropoutgradientnode/maskstrideinpixels.md)
 - [var seed: Int](./mpscnndropoutgradientnode/seed.md)
+### Type Methods
+- [+ nodeWithSourceGradient:sourceImage:gradientState:keepProbability:seed:maskStrideInPixels:](./mpscnndropoutgradientnode/nodewithsourcegradient_sourceimage_gradientstate_keepprobability_seed_maskstrideinpixels_.md)
 
 ## Relationships
 

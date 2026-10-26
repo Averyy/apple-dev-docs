@@ -18,6 +18,8 @@ Learn about the objects that you use to interact with the system.
   Called by the main function to create and run the application.
 - [Managing ongoing background processes in your Mac](./managing-ongoing-background-processes-in-your-mac.md)
   Configure your app to help people understand when background processes may continue after they close your app.
+- [NSApplicationMain](./nsapplicationmain.md)
+  Called by the main function to create and run the application.
 ### Environment
 - [class NSWorkspace](./nsworkspace.md)
   A workspace that can launch other apps and perform a variety of file-handling services.

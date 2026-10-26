@@ -35,6 +35,12 @@ var numberOfDroppedFrames: Int { get }
   The accumulated amount of time between the prescribed presentation times of displayed video frames and their actual time of display.
 - [var totalNumberOfFrames: Int](./totalnumberofframes.md)
   The total number of frames that display if no frames drop.
+- [numberOfCorruptedVideoFrames](./numberofcorruptedvideoframes.md)
+- [numberOfDisplayCompositedVideoFrames](./numberofdisplaycompositedvideoframes.md)
+- [numberOfDroppedVideoFrames](./numberofdroppedvideoframes.md)
+- [numberOfNonDisplayCompositedVideoFrames](./numberofnondisplaycompositedvideoframes.md)
+- [totalFrameDelay](./totalframedelay.md)
+- [totalNumberOfVideoFrames](./totalnumberofvideoframes.md)
 
 
 ---

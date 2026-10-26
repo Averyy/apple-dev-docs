@@ -39,6 +39,10 @@ This convenience initializer is equivalent to creating a [`GKNoise`](../gknoise.
   Initializes a noise map by sampling from the specified noise object.
 - [init(GKNoise, size: vector_double2, origin: vector_double2, sampleCount: vector_int2, seamless: Bool)](./init%28_,size,origin,samplecount,seamless%29.md)
   Creates a noise map by sampling from the specified noise object.
+- [+ noiseMapWithNoise:](./noisemapwithnoise_.md)
+  Creates a noise map by sampling from the specified noise object.
+- [+ noiseMapWithNoise:size:origin:sampleCount:seamless:](./noisemapwithnoise_size_origin_samplecount_seamless_.md)
+  Creates a noise map by sampling from the specified noise object.
 
 
 ---

@@ -41,6 +41,10 @@ func verifyPassword(_ inPassword: String!) throws
   Sets the credentials for interaction with the record’s node using other types of authentication available to Open Directory.
 - [func verifyExtended(withAuthenticationType: String!, authenticationItems: [Any]!, continueItems: AutoreleasingUnsafeMutablePointer<NSArray?>!, context: AutoreleasingUnsafeMutablePointer<AnyObject?>!) throws](./verifyextended%28withauthenticationtype,authenticationitems,continueitems,context%29.md)
   Verifies the credentials for interaction with the record’s node using other types of authentication available to Open Directory.
+- [- passwordPolicyAndReturnError:](./passwordpolicyandreturnerror_.md)
+  Returns a dictionary containing the password policy for the record.
+- [- setNodeCredentialsUsingKerberosCache:error:](./setnodecredentialsusingkerberoscache_error_.md)
+  Sets the credentials for interaction with the record’s node using a Kerberos cache.
 
 
 ---

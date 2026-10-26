@@ -40,6 +40,7 @@ You can only set this value when Center Stage is under app or cooperative contro
   A value that indicates the current mode of Center Stage control.
 - [AVCaptureDevice.CenterStageControlMode](./centerstagecontrolmode-swift.enum.md)
   Constants that indicate the current Center Stage control mode.
+- [centerStageRectOfInterestSupported](./centerstagerectofinterestsupported.md)
 
 
 ---

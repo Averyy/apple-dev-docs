@@ -65,6 +65,8 @@ In iOS and in a full-screen app on iPad, the value reflects whether the app itse
   Constants that indicate whether the user interface has an active appearance.
 - [var toolbarItemPresentationSize: UINSToolbarItemPresentationSize](./toolbaritempresentationsize.md)
   The presentation size of a toolbar item in an AppKit toolbar.
+- [resolvesNaturalAlignmentWithBaseWritingDirection](./resolvesnaturalalignmentwithbasewritingdirection-97osy.md)
+  Specifies the behavior for resolving `NSTextAlignment.natural` to the visual alignment.
 
 
 ---

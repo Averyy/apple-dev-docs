@@ -51,6 +51,10 @@ This initializer provides a convenient way for you to configure NCHW tensors use
   Creates a tensor descriptor with the number of feature channels and data type you specify.
 - [class var maxTensorDimensions: Int](./maxtensordimensions.md)
   The maximum number of tensor dimensions.
+- [+ descriptorWithShape:dataType:](./descriptorwithshape_datatype_.md)
+  Creates a tensor descriptor with the shape and data type you specify.
+- [+ descriptorWithShape:sequenceLengths:sortedSequences:dataType:](./descriptorwithshape_sequencelengths_sortedsequences_datatype_.md)
+  Creates a tensor descriptor with the shape, variable sequence lengths, sorting indicator, and data type you specify.
 
 
 ---

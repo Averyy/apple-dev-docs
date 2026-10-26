@@ -40,6 +40,10 @@ Use this method when a property of the intent object is missing a value that you
   Creates an object whose resolution indicates that you don’t need the value of the parameter.
 - [class func unsupported() -> Self](./unsupported%28%29.md)
   Creates an object whose resolution indicates that your app doesn’t support the specified value.
+- [+ confirmationRequiredWithItemToConfirm:forReason:](./confirmationrequiredwithitemtoconfirm_forreason_.md)
+  Creates an object whose resolution indicates that your app requires confirmation of the specified value.
+- [+ unsupportedWithReason:](./unsupportedwithreason_.md)
+  Creates an object whose resolution indicates that your app doesn’t support the specified value.
 
 
 ---

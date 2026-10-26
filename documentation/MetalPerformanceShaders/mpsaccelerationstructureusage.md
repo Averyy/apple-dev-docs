@@ -35,6 +35,8 @@ enum MPSAccelerationStructureUsage : NSUInteger;
 - [static var preferGPUBuild: MPSAccelerationStructureUsage](./mpsaccelerationstructureusage/prefergpubuild.md)
 - [static var refit: MPSAccelerationStructureUsage](./mpsaccelerationstructureusage/refit.md)
   Option that enables support for refitting the acceleration structure after it has been built.
+### Enumeration Cases
+- [MPSAccelerationStructureUsageNone](./mpsaccelerationstructureusage/mpsaccelerationstructureusagenone.md)
 
 ## Relationships
 

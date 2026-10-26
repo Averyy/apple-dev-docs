@@ -58,6 +58,30 @@ Accepts a null-terminated array of pointers to pasteboard types and returns a nu
   Returns a pasteboard type based on the passed file type.
 - [var representedPathExtension: String?](./representedpathextension.md)
   A file type based on the passed pasteboard type.
+- [NSOpenGLGetOption](../../nsopenglgetoption.md)
+  Returns global OpenGL options.
+- [NSOpenGLGetVersion](../../nsopenglgetversion.md)
+  Returns the NSOpenGL version numbers.
+- [NSOpenGLSetOption](../../nsopenglsetoption.md)
+  Sets global OpenGL options.
+- [NSBeginAlertSheet](../../nsbeginalertsheet.md)
+  Creates and runs an alert sheet.
+- [NSBeginCriticalAlertSheet](../../nsbegincriticalalertsheet.md)
+  Creates and runs a critical alert sheet.
+- [NSBeginInformationalAlertSheet](../../nsbegininformationalalertsheet.md)
+  Creates and runs an informational alert sheet.
+- [NSGetAlertPanel](../../nsgetalertpanel.md)
+  Returns an alert panel.
+- [NSGetCriticalAlertPanel](../../nsgetcriticalalertpanel.md)
+  Returns an alert panel to display a critical message.
+- [NSGetInformationalAlertPanel](../../nsgetinformationalalertpanel.md)
+  Returns an alert panel to display an informational message.
+- [NSRunAlertPanel](../../nsrunalertpanel.md)
+  Creates an alert panel.
+- [NSRunCriticalAlertPanel](../../nsruncriticalalertpanel.md)
+  Creates and runs a critical alert panel.
+- [NSRunInformationalAlertPanel](../../nsruninformationalalertpanel.md)
+  Creates and runs an informational alert panel.
 
 
 ---

@@ -19,6 +19,12 @@ var isSectionHeader: Bool { get }
 @property (readonly, getter=isSectionHeader) BOOL sectionHeader;
 ```
 
+## See Also
+
+### Managing the section header
+- [+ sectionHeaderWithTitle:](./sectionheaderwithtitle_.md)
+  Returns a menu item representing a section header for a logical grouping of menu commands.
+
 
 ---
 

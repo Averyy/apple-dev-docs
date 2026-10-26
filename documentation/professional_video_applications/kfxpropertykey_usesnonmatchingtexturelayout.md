@@ -26,6 +26,8 @@ var kFxPropertyKey_UsesNonmatchingTextureLayout: String { get }
   A Boolean value, encoded as an `NSNumber` object, indicating whether or not this plug-in may try to sample its input image(s) at any time other than the output time.
 - [var kFxPropertyKey_PixelTransformSupport: String](./kfxpropertykey_pixeltransformsupport.md)
   A key in the `properties` dictionary in the `FXBaseEffect` Class that corresponds to an `NSNumber` containing one of the `FxImage` values. The default value is [`kFxPixelTransform_ScaleTranslate`](./kfxpixeltransform_scaletranslate.md)
+- [PluginManagerVersionNumber](./pluginmanagerversionnumber.md)
+- [PluginManagerVersionString](./pluginmanagerversionstring.md)
 
 
 ---

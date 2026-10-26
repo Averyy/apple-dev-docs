@@ -38,6 +38,12 @@ For more information, see [GameplayKit Programming Guide](https://developer.appl
 
 - `nodes`: An array of graph node objects—instances of [`GKGraphNode`](../gkgraphnode.md) or of one of its subclasses containing geometry information.
 
+## See Also
+
+### Creating a Graph
+- [+ graphWithNodes:](./graphwithnodes_.md)
+  Creates a graph with the specified list of nodes.
+
 
 ---
 

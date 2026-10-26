@@ -19,11 +19,11 @@ Next, configure your `Info.plist` file. Include the [`NSSiriUsageDescription`](.
 
 ##### Request User Authorization
 
-Call the [`requestSiriAuthorization(_:)`](https://developer.apple.com/documentation/intents/inpreferences/requestsiriauthorization(_:)) class method of [`INPreferences`](https://developer.apple.com/documentation/intents/inpreferences) at some point during your iOS app’s execution.
+Call the [`requestSiriAuthorization(_:)`](../Intents/inpreferences/requestsiriauthorization%28_%29.md) class method of [`INPreferences`](../Intents/inpreferences.md) at some point during your iOS app’s execution.
 
-Your app’s authorization status is [`INSiriAuthorizationStatus.notDetermined`](https://developer.apple.com/documentation/intents/insiriauthorizationstatus/notdetermined) until the user authorizes or denies access. When your app requests authorization and its status is undetermined, the system prompts the user to authorize your app. The alert includes the usage description string you provided in the [`NSSiriUsageDescription`](../BundleResources/information-property-list/nssiriusagedescription.md) key of your app’s `Info.plist` file.
+Your app’s authorization status is [`INSiriAuthorizationStatus.notDetermined`](../Intents/insiriauthorizationstatus/notdetermined.md) until the user authorizes or denies access. When your app requests authorization and its status is undetermined, the system prompts the user to authorize your app. The alert includes the usage description string you provided in the [`NSSiriUsageDescription`](../BundleResources/information-property-list/nssiriusagedescription.md) key of your app’s `Info.plist` file.
 
-The user can approve or deny your app’s request for authorization, and can change your app’s authorization status later in the Settings app. The system remembers your app’s authorization status so that subsequent calls to the [`requestSiriAuthorization(_:)`](https://developer.apple.com/documentation/intents/inpreferences/requestsiriauthorization(_:)) method don’t prompt the user again.
+The user can approve or deny your app’s request for authorization, and can change your app’s authorization status later in the Settings app. The system remembers your app’s authorization status so that subsequent calls to the [`requestSiriAuthorization(_:)`](../Intents/inpreferences/requestsiriauthorization%28_%29.md) method don’t prompt the user again.
 
 > **Note**:  Siri and Maps may assist in authorizing your app or Intents app extension when the user first tries to use an intent you support. Specifically, if the user interacts with your app or app extension and your app’s authorization status isn’t yet determined, Maps requests authorization automatically on your extension’s behalf.
 

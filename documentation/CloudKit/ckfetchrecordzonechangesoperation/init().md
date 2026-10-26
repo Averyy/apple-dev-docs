@@ -30,6 +30,8 @@ init()
 ### Creating a Zone Change Operation
 - [convenience init(recordZoneIDs: [CKRecordZone.ID]?, configurationsByRecordZoneID: [CKRecordZone.ID : CKFetchRecordZoneChangesOperation.ZoneConfiguration]?)](./init%28recordzoneids,configurationsbyrecordzoneid%29.md)
   Creates an operation for fetching record zone changes.
+- [- initWithRecordZoneIDs:configurationsByRecordZoneID:](./initwithrecordzoneids_configurationsbyrecordzoneid_.md)
+  Creates an operation for fetching record zone changes.
 
 
 ---

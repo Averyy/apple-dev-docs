@@ -38,6 +38,9 @@ See [Property List Mutability Options](./property_list_mutability_options.md) fo
   Specifies that the property list should have mutable containers but immutable leaves.
 - [static var mutableContainersAndLeaves: CFPropertyListMutabilityOptions](./cfpropertylistmutabilityoptions/mutablecontainersandleaves.md)
   Specifies that the property list should have mutable containers and mutable leaves.
+### Enumeration Cases
+- [kCFPropertyListImmutable](./cfpropertylistmutabilityoptions/kcfpropertylistimmutable.md)
+  Specifies that the property list should be immutable.
 
 ## Relationships
 

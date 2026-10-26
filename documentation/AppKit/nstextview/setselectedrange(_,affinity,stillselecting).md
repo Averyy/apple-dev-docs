@@ -59,6 +59,9 @@ In macOS 10.4 and later, if there are multiple selections, this method acts on t
 - [func characterIndexForInsertion(at: NSPoint) -> Int](./characterindexforinsertion%28at%29.md)
   Returns a character index appropriate for placing a zero-length selection for an insertion point associated with the mouse at the given point.
 - [func updateCandidates()](./updatecandidates%28%29.md)
+### Related Documentation
+- [- selectedRange](../nstextinput/selectedrange.md)
+  Returns the range of selected text.
 
 
 ---

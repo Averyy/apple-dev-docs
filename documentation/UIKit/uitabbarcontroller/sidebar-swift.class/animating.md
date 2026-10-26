@@ -45,6 +45,7 @@ protocol Animating : NSObjectProtocol
   An object for managing and configuring the sidebar.
 - [class UITabSidebarItem](../../uitabsidebaritem.md)
 - [UITabSidebarItem.Request](../../uitabsidebaritem/request.md)
+- [UITabSidebarScrollTarget](../../uitabsidebarscrolltarget.md)
 
 
 ---

@@ -31,9 +31,9 @@ To display branding or other customized content in Siri and Maps after you fulfi
 ## Topics
 
 ### Frameworks
-- [Intents](https://developer.apple.com/documentation/intents)
+- [Intents](../Intents/Intents.md)
   Empower people to customize interactions for your app on their device.
-- [IntentsUI](https://developer.apple.com/documentation/intentsui)
+- [IntentsUI](../IntentsUI/IntentsUI.md)
   Customize content in the interface for Siri and Maps.
 ### Sample code
 - [Adding Shortcuts for Wind Down](./adding-shortcuts-for-wind-down.md)

@@ -39,6 +39,12 @@ To make use of this noise source, create a [`GKNoise`](../gknoise.md) object fro
 - `lacunarity`: The initial value for the [`lacunarity`](../gkcoherentnoisesource/lacunarity.md) property, which determines the increase in frequency between octaves and thus the gradation between coarseness and uniformity in generated noise.
 - `seed`: The initial value for the [`seed`](../gkcoherentnoisesource/seed.md) property, which determines the overall structure of generated noise.
 
+## See Also
+
+### Creating a Noise Source
+- [+ ridgedNoiseSourceWithFrequency:octaveCount:lacunarity:seed:](./ridgednoisesourcewithfrequency_octavecount_lacunarity_seed_.md)
+  Creates a ridged noise source with the specified parameters.
+
 
 ---
 

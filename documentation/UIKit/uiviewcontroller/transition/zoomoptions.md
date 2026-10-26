@@ -34,6 +34,8 @@ class ZoomOptions
   The dimming color.
 - [var dimmingVisualEffect: UIBlurEffect?](./zoomoptions/dimmingvisualeffect.md)
   The dimming visual effect.
+- [alignmentRectProvider](../../uizoomtransitionoptions/alignmentrectprovider.md)
+  A block that returns the alignment rectangle for the starting and ending views.
 ### Accessing the animation state
 - [var interactiveDismissShouldBegin: ((UIViewController.Transition.ZoomOptions.InteractionContext) -> Bool)?](./zoomoptions/interactivedismissshouldbegin.md)
   A closure that determines whether an interactive dismissal can begin.
@@ -60,6 +62,8 @@ class ZoomOptions
   Creates a zoom transition from the view that the source provider specifies.
 - [UIViewController.Transition.ZoomSourceViewProviderContext](./zoomsourceviewprovidercontext.md)
   A context object that contains references to the view controllers from a zoom transition.
+- [+ zoomWithOptions:sourceViewProvider:](../../uiviewcontrollertransition/zoomwithoptions_sourceviewprovider_.md)
+  Creates a zoom transition from the view specified by the source provider.
 
 
 ---

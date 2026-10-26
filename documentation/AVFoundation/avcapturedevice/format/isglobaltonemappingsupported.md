@@ -27,6 +27,8 @@ var isGlobalToneMappingSupported: Bool { get }
 ### Determining color support
 - [var supportedColorSpaces: [AVCaptureColorSpace]](./supportedcolorspaces.md)
   The list of the device’s supported color spaces.
+- [supportedColorSpaces](../../avcapturedeviceformat/supportedcolorspaces.md)
+  The list of color spaces the format supports for image and video capture.
 
 
 ---

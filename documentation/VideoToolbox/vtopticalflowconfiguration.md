@@ -57,6 +57,9 @@ class VTOpticalFlowConfiguration
   A boolean value that indicates whether the processor supported on the current configuration.
 - [var frameSupportedPixelFormats: [NSNumber]](./vtopticalflowconfiguration/framesupportedpixelformats-gm6u.md)
   A list of source frame supported pixel formats for the current configuration.
+### Instance Properties
+- [frameSupportedPixelFormats](./vtopticalflowconfiguration/framesupportedpixelformats-85kob.md)
+  Supported pixel formats for source frames for current configuration.
 
 ## Relationships
 

@@ -43,6 +43,8 @@ kPDFTextArea
   The mouse is over a popup menu.
 - [static var imageArea: PDFAreaOfInterest](./imagearea.md)
   The mouse is over an image.
+- [kPDFNoArea](./kpdfnoarea.md)
+  The mouse is over an undefined area.
 
 
 ---

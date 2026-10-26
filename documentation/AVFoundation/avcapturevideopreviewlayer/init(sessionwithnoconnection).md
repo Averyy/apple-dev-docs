@@ -36,6 +36,10 @@ Only use this initializer if you intend to manually connect the layer to a parti
 ### Creating a preview layer
 - [init(session: AVCaptureSession)](./init%28session%29.md)
   Creates a layer to preview the visual output of a capture session.
+- [+ layerWithSession:](./layerwithsession_.md)
+  Returns a new layer to preview the visual output of a capture session.
+- [+ layerWithSessionWithNoConnection:](./layerwithsessionwithnoconnection_.md)
+  Returns a new layer to preview the visual output of a capture session, without making connections to eligible video inputs.
 
 
 ---

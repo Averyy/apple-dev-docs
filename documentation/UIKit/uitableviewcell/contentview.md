@@ -39,6 +39,10 @@ The content view of a [`UITableViewCell`](../uitableviewcell.md) object is the d
   The current content configuration of the cell.
 - [var automaticallyUpdatesContentConfiguration: Bool](./automaticallyupdatescontentconfiguration.md)
   A Boolean value that determines whether the cell automatically updates its content configuration when its state changes.
+- [- defaultContentConfiguration](./defaultcontentconfiguration.md)
+  Retrieves a default list content configuration for the cell’s style.
+- [contentConfiguration](./contentconfiguration-2lzvp.md)
+  The current content configuration of the cell.
 
 
 ---

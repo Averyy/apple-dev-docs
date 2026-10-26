@@ -84,7 +84,7 @@ movieFileOutput.setOutputSettings([AVVideoCodecKey : AVVideoCodecType.proRes422.
 
 #### Recording and saving with AVCaptureMovieFileOutput
 
-Use the [`startRecording(to:recordingDelegate:)`](../AVFoundation/avcapturefileoutput/startrecording%28to,recordingdelegate%29.md) method to set a recording delegate and start recording to a file. When recording is stopped, you will receive the output file in [`fileOutput(_:didFinishRecordingTo:from:error:)`](../AVFoundation/avcapturefileoutputrecordingdelegate/fileoutput%28_,didfinishrecordingto,from,error%29.md). You can save this movie file directly to the Photo Library using the [`creationRequestForAssetFromVideo(atFileURL:)`](https://developer.apple.com/documentation/photos/phassetchangerequest/creationrequestforassetfromvideo(atfileurl:)) method. Once saved, you can view the video in the Photos app, where you will notice that the asset has a “ProRes” badge in the upper-left corner.
+Use the [`startRecording(to:recordingDelegate:)`](../AVFoundation/avcapturefileoutput/startrecording%28to,recordingdelegate%29.md) method to set a recording delegate and start recording to a file. When recording is stopped, you will receive the output file in [`fileOutput(_:didFinishRecordingTo:from:error:)`](../AVFoundation/avcapturefileoutputrecordingdelegate/fileoutput%28_,didfinishrecordingto,from,error%29.md). You can save this movie file directly to the Photo Library using the [`creationRequestForAssetFromVideo(atFileURL:)`](../Photos/phassetchangerequest/creationrequestforassetfromvideo%28atfileurl%29.md) method. Once saved, you can view the video in the Photos app, where you will notice that the asset has a “ProRes” badge in the upper-left corner.
 
 #### Recording and saving with AVCaptureVideoDataOutput and AVAssetWriter
 
@@ -128,7 +128,7 @@ if writerVideoInput.isReadyForMoreMediaData {
 }
 ```
 
-When you decide to stop recording, call [`finishWriting(completionHandler:)`](../AVFoundation/avassetwriter/finishwriting%28completionhandler%29.md). In the completion handler, you can save the movie file directly to the Photo Library using the [`creationRequestForAssetFromVideo(atFileURL:)`](https://developer.apple.com/documentation/photos/phassetchangerequest/creationrequestforassetfromvideo(atfileurl:)) method, passing in the [`outputURL`](../AVFoundation/avassetwriter/outputurl.md) of the asset writer. Once saved, you can view the video in the Photos app, where you will notice that the asset has a “ProRes” badge in the upper-left corner.
+When you decide to stop recording, call [`finishWriting(completionHandler:)`](../AVFoundation/avassetwriter/finishwriting%28completionhandler%29.md). In the completion handler, you can save the movie file directly to the Photo Library using the [`creationRequestForAssetFromVideo(atFileURL:)`](../Photos/phassetchangerequest/creationrequestforassetfromvideo%28atfileurl%29.md) method, passing in the [`outputURL`](../AVFoundation/avassetwriter/outputurl.md) of the asset writer. Once saved, you can view the video in the Photos app, where you will notice that the asset has a “ProRes” badge in the upper-left corner.
 
 #### Revision History
 

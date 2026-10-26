@@ -780,6 +780,11 @@
       "file_path": "documentation/PassKit/pkaddpassbutton/addpassbuttonstyle.md",
       "hash": "250a495aa80991cfa82c80d3edf4e1a7668c095eb1eecb2092ba8d58a6b79553"
     },
+    "https://developer.apple.com/documentation/passkit/pkaddpassbutton/addpassbuttonwithstyle:": {
+      "etag": "\"1fbc-65d55e271b5da-df\"",
+      "file_path": "documentation/PassKit/pkaddpassbutton/addpassbuttonwithstyle_.md",
+      "hash": "d6e43fb84afa7dd2046b0e47d4fc1f5395fc259a6f30501ac2807db9828078e3"
+    },
     "https://developer.apple.com/documentation/passkit/pkaddpassbutton/init(addpassbuttonstyle:)": {
       "etag": "\"2a89-65d55e271b5da-df\"",
       "file_path": "documentation/PassKit/pkaddpassbutton/init(addpassbuttonstyle).md",
@@ -884,6 +889,11 @@
       "etag": "\"3285-65d55e282ae93-df\"",
       "file_path": "documentation/PassKit/pkaddpassmetadatapreview/passthumbnailimage.md",
       "hash": "e974d82848931598f6662b00efd2b17ae6463026ada29f60d7da4ed297c05c38"
+    },
+    "https://developer.apple.com/documentation/passkit/pkaddpassmetadatapreview/previewwithpassthumbnail:localizeddescription:": {
+      "etag": "\"2fb6-65d55e282ae93-df\"",
+      "file_path": "documentation/PassKit/pkaddpassmetadatapreview/previewwithpassthumbnail_localizeddescription_.md",
+      "hash": "403a98b3e36aff61015dd6c278752ecf604d5dc0db48a5e1dbcd94c697f89222"
     },
     "https://developer.apple.com/documentation/passkit/pkaddpaymentpasserror": {
       "etag": "\"711c-65d55e27ce93b-df\"",
@@ -1085,6 +1095,11 @@
       "file_path": "documentation/PassKit/pkaddressfield/phone.md",
       "hash": "171f587c1473dc3fb82de4bdc0c7ed20ea4c65f950606b60243b3ca5baf45467"
     },
+    "https://developer.apple.com/documentation/passkit/pkaddressfield/pkaddressfieldnone": {
+      "etag": "\"101d-65d55e27ce93b-df\"",
+      "file_path": "documentation/PassKit/pkaddressfield/pkaddressfieldnone.md",
+      "hash": "0bbca381ef8409d7712de15459a27fde672f384621f87bcd22edaf87a01c926e"
+    },
     "https://developer.apple.com/documentation/passkit/pkaddressfield/postaladdress": {
       "etag": "\"331a-65d55e27ce93b-df\"",
       "file_path": "documentation/PassKit/pkaddressfield/postaladdress.md",
@@ -1204,6 +1219,11 @@
       "etag": "\"2ec9-65d55e26694ff-df\"",
       "file_path": "documentation/PassKit/pkaddsecureelementpasserror/usercancelederror.md",
       "hash": "bb60c15dffbd552ea93ef9ae100126b3a0fbaab2deb74acfc77ce28904c8cbe0"
+    },
+    "https://developer.apple.com/documentation/passkit/pkaddsecureelementpasserrorcode/pkaddsecureelementpassunknownerror": {
+      "etag": "\"1275-65d55e27ce93b-df\"",
+      "file_path": "documentation/PassKit/pkaddsecureelementpasserrorcode/pkaddsecureelementpassunknownerror.md",
+      "hash": "67fed67fba98a1b23240e4288295fb1ae64140fad640d78ab4d04b0c15d6b3d9"
     },
     "https://developer.apple.com/documentation/passkit/pkaddsecureelementpasserrordomain": {
       "etag": "\"55be-65d55e271b5da-df\"",
@@ -1390,6 +1410,11 @@
       "file_path": "documentation/PassKit/pkautomaticreloadpaymentrequest/tokennotificationurl.md",
       "hash": "6f314a7661167ef75a7dba66b928eddf07341c40c3bc8f4f3dc8c924c05e8ecc"
     },
+    "https://developer.apple.com/documentation/passkit/pkautomaticreloadpaymentrequest_h": {
+      "etag": "\"12b1-65d55e289aca7-df\"",
+      "file_path": "documentation/PassKit/pkautomaticreloadpaymentrequest_h.md",
+      "hash": "c4268bfbb7f937a04bfab0befcfb8050b8df48d61b1d3dd36d20f2aecf042288"
+    },
     "https://developer.apple.com/documentation/passkit/pkautomaticreloadpaymentsummaryitem": {
       "etag": "\"56a9-65d55e27025af-df\"",
       "file_path": "documentation/PassKit/pkautomaticreloadpaymentsummaryitem.md",
@@ -1399,6 +1424,11 @@
       "etag": "\"2732-65d55e289aca7-df\"",
       "file_path": "documentation/PassKit/pkautomaticreloadpaymentsummaryitem/thresholdamount.md",
       "hash": "2e2f91280e60062b845c48f9f38e8e4de19b8fceb532cd3e014641ff6c7cb109"
+    },
+    "https://developer.apple.com/documentation/passkit/pkautomaticreloadpaymentsummaryitem_h": {
+      "etag": "\"12c9-65d55e2848542-df\"",
+      "file_path": "documentation/PassKit/pkautomaticreloadpaymentsummaryitem_h.md",
+      "hash": "d162ec1eea331c34082a3c1270bbc12d6af7a0243580f9369d41fdc3460c28eb"
     },
     "https://developer.apple.com/documentation/passkit/pkbarcodeeventconfigurationdatatype": {
       "etag": "\"4a0d-65d55e2649b3c-df\"",
@@ -1544,6 +1574,11 @@
       "etag": "\"1d69-65d55e289aca7-df\"",
       "file_path": "documentation/PassKit/pkbarcodeeventsignatureresponse/signeddata.md",
       "hash": "3b69c1eaf2d8a121122bf5615fc0fb2ccd379e427558b24cbc1281359ed19813"
+    },
+    "https://developer.apple.com/documentation/passkit/pkconstants_h": {
+      "etag": "\"1239-65d55e27e875a-df\"",
+      "file_path": "documentation/PassKit/pkconstants_h.md",
+      "hash": "f6a9a423a03dee00f07312f1289a29713ae8eb783bfcd66ae86db0d0a978749d"
     },
     "https://developer.apple.com/documentation/passkit/pkcontact": {
       "etag": "\"5b32-65d55e282ae93-df\"",
@@ -1780,6 +1815,11 @@
       "file_path": "documentation/PassKit/pkdisbursementrequest/currency.md",
       "hash": "c9dfdeafd923a53a12e5df936e74dc764b56f6ac74b6bec1ee2511d22a76627e"
     },
+    "https://developer.apple.com/documentation/passkit/pkdisbursementrequest/currencycode": {
+      "etag": "\"1cc3-65d55e2848542-df\"",
+      "file_path": "documentation/PassKit/pkdisbursementrequest/currencycode.md",
+      "hash": "98862912620126193b48a5388ce5d72ba574e2f18af6574489da9595bf429ba1"
+    },
     "https://developer.apple.com/documentation/passkit/pkdisbursementrequest/disbursementcardunsupportederror()": {
       "etag": "\"3042-65d55e2848542-df\"",
       "file_path": "documentation/PassKit/pkdisbursementrequest/disbursementcardunsupportederror().md",
@@ -1794,6 +1834,11 @@
       "etag": "\"47b9-65d55e2848542-df\"",
       "file_path": "documentation/PassKit/pkdisbursementrequest/init(merchantidentifier,currency,region,supportednetworks,merchantcapabilities,summaryitems).md",
       "hash": "4a7c031abac1858d30054c2db965a1b592dfae011813afab5ec064b77a8117e8"
+    },
+    "https://developer.apple.com/documentation/passkit/pkdisbursementrequest/initwithmerchantidentifier:currencycode:regioncode:supportednetworks:merchantcapabilities:summaryitems:": {
+      "etag": "\"36b1-65d55e2848542-df\"",
+      "file_path": "documentation/PassKit/pkdisbursementrequest/initwithmerchantidentifier_currencycode_regioncode_supportednetworks_merchantcapabilities_summaryitems_.md",
+      "hash": "de5233f1ea246cb84786c9d7f47dcc5e531570873ae8f7db66ca17e7deb3551b"
     },
     "https://developer.apple.com/documentation/passkit/pkdisbursementrequest/isdelegatedrequest": {
       "etag": "\"2451-65d55e2848542-df\"",
@@ -1820,6 +1865,11 @@
       "file_path": "documentation/PassKit/pkdisbursementrequest/region.md",
       "hash": "dbc9eb2cbfc830560a08745e62d9944aa177c7409626d6595211e651ac99828f"
     },
+    "https://developer.apple.com/documentation/passkit/pkdisbursementrequest/regioncode": {
+      "etag": "\"21f6-65d55e2848542-df\"",
+      "file_path": "documentation/PassKit/pkdisbursementrequest/regioncode.md",
+      "hash": "1faca7a50c10ba101ee1634daf3688b7a3b5c04a2e56e3bb36da9b8f36bcda94"
+    },
     "https://developer.apple.com/documentation/passkit/pkdisbursementrequest/requiredrecipientcontactfields": {
       "etag": "\"29db-65d55e2848542-df\"",
       "file_path": "documentation/PassKit/pkdisbursementrequest/requiredrecipientcontactfields.md",
@@ -1839,6 +1889,11 @@
       "etag": "\"2830-65d55e2848542-df\"",
       "file_path": "documentation/PassKit/pkdisbursementrequest/supportedregions-1cl0f.md",
       "hash": "277c7b05f2dca38c54bd3627e0a5771a4e6786436c82e4b19470b97c016c3f56"
+    },
+    "https://developer.apple.com/documentation/passkit/pkdisbursementrequest/supportedregions-j9ug": {
+      "etag": "\"1d67-65d55e2848542-df\"",
+      "file_path": "documentation/PassKit/pkdisbursementrequest/supportedregions-j9ug.md",
+      "hash": "7524cb4d381eb9d0119679deb3a757fe0be8a5d9bbce0db2004282bd1af6a6d8"
     },
     "https://developer.apple.com/documentation/passkit/pkdisbursementrequest/unsupportedprimaryaccountidentifiers": {
       "etag": "\"26eb-65d55e2848542-df\"",
@@ -1909,6 +1964,11 @@
       "etag": "\"bba2-65d55e26af7ea-df\"",
       "file_path": "documentation/PassKit/pkidentitybutton.md",
       "hash": "b2156541067d307c76784ee648bdec1665ff8402142e7f53c82c00fde97659f3"
+    },
+    "https://developer.apple.com/documentation/passkit/pkidentitybutton/buttonwithlabel:style:": {
+      "etag": "\"247f-65d55e27025af-df\"",
+      "file_path": "documentation/PassKit/pkidentitybutton/buttonwithlabel_style_.md",
+      "hash": "baf067464d8d790de227bb1d4532426a968be7b7e1097cf825c3a7d2c6bb26bd"
     },
     "https://developer.apple.com/documentation/passkit/pkidentitybutton/cornerradius": {
       "etag": "\"284a-65d55e27025af-df\"",
@@ -2325,6 +2385,11 @@
       "file_path": "documentation/PassKit/pkidentitynationalidcarddescriptor/region.md",
       "hash": "c7014643f611f0569c671ed56b89afe30b133464600a61b48f24746f90bf5f20"
     },
+    "https://developer.apple.com/documentation/passkit/pkidentitynationalidcarddescriptor/regioncode": {
+      "etag": "\"14f4-65d55e271b5da-df\"",
+      "file_path": "documentation/PassKit/pkidentitynationalidcarddescriptor/regioncode.md",
+      "hash": "c2edce881f3265dfaaa9ab37bdcac2eaca1b7c2207e9c3240b3dda2f06c75db6"
+    },
     "https://developer.apple.com/documentation/passkit/pkidentityphotoiddescriptor": {
       "etag": "\"8caa-65d55e27af271-df\"",
       "file_path": "documentation/PassKit/pkidentityphotoiddescriptor.md",
@@ -2584,6 +2649,16 @@
       "etag": "\"3077-65d55e2632ede-df\"",
       "file_path": "documentation/PassKit/pkmerchantcapability/threedsecure.md",
       "hash": "62f391ee780b0dd744bdb118752b24aa575a33a46e7701d35c138391be4cafdd"
+    },
+    "https://developer.apple.com/documentation/passkit/pkmerchantcategorycode": {
+      "etag": "\"216e-65d55e27e875a-df\"",
+      "file_path": "documentation/PassKit/pkmerchantcategorycode.md",
+      "hash": "2c345eba39aad2412b419828388fff9fcdca4723e9dedc0472f89da32a27d73d"
+    },
+    "https://developer.apple.com/documentation/passkit/pkmerchantcategorycodenone": {
+      "etag": "\"2037-65d55e26e6a21-df\"",
+      "file_path": "documentation/PassKit/pkmerchantcategorycodenone.md",
+      "hash": "a6260998c62940d28f336a2f2b8dadcee3a6af43fab679f7dbb38721808e6fa9"
     },
     "https://developer.apple.com/documentation/passkit/pkobject": {
       "etag": "\"50a5-65d55e26c9366-df\"",
@@ -3185,6 +3260,11 @@
       "file_path": "documentation/PassKit/pkpaylaterdisplaystyle/standard.md",
       "hash": "1911d192df9816a709df395eaeba69625c807c2b98882604eec53557edc3fb20"
     },
+    "https://developer.apple.com/documentation/passkit/pkpaylatervalidateamount": {
+      "etag": "\"1bd4-65d55e2863c87-df\"",
+      "file_path": "documentation/PassKit/pkpaylatervalidateamount.md",
+      "hash": "9d9fdfa8077d9a5267646c60f2fea464dd48bd502750d3588d8d3b889b53d8e1"
+    },
     "https://developer.apple.com/documentation/passkit/pkpaylaterview": {
       "etag": "\"b746-65d55e2914470-df\"",
       "file_path": "documentation/PassKit/pkpaylaterview.md",
@@ -3195,6 +3275,11 @@
       "file_path": "documentation/PassKit/pkpaylaterview/action.md",
       "hash": "7a0a2651f44f2e1522ef08c960fad209c65e7898ecb34c7d27e5b535f7622542"
     },
+    "https://developer.apple.com/documentation/passkit/pkpaylaterview/amount-1jzg2": {
+      "etag": "\"17ff-65d55e280ed52-df\"",
+      "file_path": "documentation/PassKit/pkpaylaterview/amount-1jzg2.md",
+      "hash": "3bb3a348fb0e28f5b5c1d6fe8cae30f13a8f70de568984f33522c089f578c51a"
+    },
     "https://developer.apple.com/documentation/passkit/pkpaylaterview/amount-f3gs": {
       "etag": "\"1e47-65d55e280ed52-df\"",
       "file_path": "documentation/PassKit/pkpaylaterview/amount-f3gs.md",
@@ -3204,6 +3289,11 @@
       "etag": "\"2346-65d55e280ed52-df\"",
       "file_path": "documentation/PassKit/pkpaylaterview/currency.md",
       "hash": "4c093d52bf2d82cfa39bf9af5113b6c4205833d27f53e0fd3bb2ed4965e7558c"
+    },
+    "https://developer.apple.com/documentation/passkit/pkpaylaterview/currencycode": {
+      "etag": "\"1a74-65d55e280ed52-df\"",
+      "file_path": "documentation/PassKit/pkpaylaterview/currencycode.md",
+      "hash": "353133fbfa1b3ab1a16f65cc908a63e19c883e237959e4542844c0de8f492c65"
     },
     "https://developer.apple.com/documentation/passkit/pkpaylaterview/delegate": {
       "etag": "\"22a2-65d55e280ed52-df\"",
@@ -3219,6 +3309,11 @@
       "etag": "\"2790-65d55e280ed52-df\"",
       "file_path": "documentation/PassKit/pkpaylaterview/init(amount,currency).md",
       "hash": "b6c26d6f79e83a8a7ad87dbdf7c92edcb67dab0ba765e20ed3b3553d943ae349"
+    },
+    "https://developer.apple.com/documentation/passkit/pkpaylaterview/initwithamount:currencycode:": {
+      "etag": "\"1d40-65d55e280ed52-df\"",
+      "file_path": "documentation/PassKit/pkpaylaterview/initwithamount_currencycode_.md",
+      "hash": "95fe007b1a796e80ab5bfb4af7d9b1f8c80243977c7d7801311f828dabdc3c29"
     },
     "https://developer.apple.com/documentation/passkit/pkpaylaterviewdelegate": {
       "etag": "\"2af5-65d55e276271c-df\"",
@@ -3594,6 +3689,16 @@
       "etag": "\"f877-65d55e280ed52-df\"",
       "file_path": "documentation/PassKit/pkpaymentbutton.md",
       "hash": "2eefcd2c5d913898edc232878f4e218d20237fb281eba644597ccb0211fd65d5"
+    },
+    "https://developer.apple.com/documentation/passkit/pkpaymentbutton/buttonwithtype:style:": {
+      "etag": "\"38a2-65d55e280ed52-df\"",
+      "file_path": "documentation/PassKit/pkpaymentbutton/buttonwithtype_style_.md",
+      "hash": "c1d4ab7b95789621fa31c6efdaba06167555f1c45d9fa07f9c54325d617e3790"
+    },
+    "https://developer.apple.com/documentation/passkit/pkpaymentbutton/buttonwithtype:style:disablecardart:": {
+      "etag": "\"1f43-65d55e280ed52-df\"",
+      "file_path": "documentation/PassKit/pkpaymentbutton/buttonwithtype_style_disablecardart_.md",
+      "hash": "d17595c2cabba4a38c94b1a00efd4a297c6d10d9758743453df27164d7eef199"
     },
     "https://developer.apple.com/documentation/passkit/pkpaymentbutton/cornerradius": {
       "etag": "\"2a2f-65d55e280ed52-df\"",
@@ -4285,6 +4390,11 @@
       "file_path": "documentation/PassKit/pkpaymentrequest/applepaylateravailability-3dxrt.md",
       "hash": "5e9af876cc37b8ed5588530b1a062b847303fd1644298b2b6a3d72fb645811a1"
     },
+    "https://developer.apple.com/documentation/passkit/pkpaymentrequest/applepaylateravailability-inpf": {
+      "etag": "\"2105-65dd3788fd82f-df\"",
+      "file_path": "documentation/PassKit/pkpaymentrequest/applepaylateravailability-inpf.md",
+      "hash": "233fea533659e735dfa0c928e5331ad184724997154f59a5f88e2ceead0b7786"
+    },
     "https://developer.apple.com/documentation/passkit/pkpaymentrequest/applepaylateravailability-swift.enum": {
       "etag": "\"2c50-65dd3788fd82f-df\"",
       "file_path": "documentation/PassKit/pkpaymentrequest/applepaylateravailability-swift.enum.md",
@@ -4375,6 +4485,11 @@
       "file_path": "documentation/PassKit/pkpaymentrequest/merchantcapabilities.md",
       "hash": "5269440fa52d3d4a5a0a4bd5b0dfd51ce7c80ce4799e75046d3563758a96dc21"
     },
+    "https://developer.apple.com/documentation/passkit/pkpaymentrequest/merchantcategorycode-7vg6z": {
+      "etag": "\"2613-65d55e2649b3c-df\"",
+      "file_path": "documentation/PassKit/pkpaymentrequest/merchantcategorycode-7vg6z.md",
+      "hash": "479391749674889ecdd229607a7532e962b6ead8c0488aea3073f385d7d8e855"
+    },
     "https://developer.apple.com/documentation/passkit/pkpaymentrequest/merchantcategorycode-9kcn6": {
       "etag": "\"18d3-65d55e2649b3c-df\"",
       "file_path": "documentation/PassKit/pkpaymentrequest/merchantcategorycode-9kcn6.md",
@@ -4410,10 +4525,20 @@
       "file_path": "documentation/PassKit/pkpaymentrequest/paymentcouponcodeexpirederror(localizeddescription).md",
       "hash": "8291a6e39c4d5649e4f2e804a67a2065f517f87fb9c4c690c2c7034ce9865b4e"
     },
+    "https://developer.apple.com/documentation/passkit/pkpaymentrequest/paymentcouponcodeexpirederrorwithlocalizeddescription:": {
+      "etag": "\"43bb-65d55e2649b3c-df\"",
+      "file_path": "documentation/PassKit/pkpaymentrequest/paymentcouponcodeexpirederrorwithlocalizeddescription_.md",
+      "hash": "f9cb6082ba5b21c0fd831b87154cc804bdfe870905b29702075ad09280e3e926"
+    },
     "https://developer.apple.com/documentation/passkit/pkpaymentrequest/paymentcouponcodeinvaliderror(localizeddescription:)": {
       "etag": "\"48ac-65d55e26694ff-df\"",
       "file_path": "documentation/PassKit/pkpaymentrequest/paymentcouponcodeinvaliderror(localizeddescription).md",
       "hash": "8a5fa80d2ef6173af3db7c52077825a65eef726fc3677ba70a0122c253d96719"
+    },
+    "https://developer.apple.com/documentation/passkit/pkpaymentrequest/paymentcouponcodeinvaliderrorwithlocalizeddescription:": {
+      "etag": "\"43ba-65d55e2649b3c-df\"",
+      "file_path": "documentation/PassKit/pkpaymentrequest/paymentcouponcodeinvaliderrorwithlocalizeddescription_.md",
+      "hash": "944fe484f7259ec88f1a45de9bc59e0d63a309e77442a5d3d8d3b619441802e7"
     },
     "https://developer.apple.com/documentation/passkit/pkpaymentrequest/paymentshippingaddressinvaliderror(withkey:localizeddescription:)": {
       "etag": "\"7796-65d55e2649b3c-df\"",
@@ -4735,6 +4860,11 @@
       "file_path": "documentation/PassKit/pkpaymenttokencontext/merchantname.md",
       "hash": "0b4ca4e5582f3b02f8219f3a2414dce20986e52d8d2574752d5f042470e3425f"
     },
+    "https://developer.apple.com/documentation/passkit/pkpaymenttokencontext_h": {
+      "etag": "\"1275-65d55e2737da4-df\"",
+      "file_path": "documentation/PassKit/pkpaymenttokencontext_h.md",
+      "hash": "68db09cc4da6932e03d9749023b213f75605e2ec592680249a903d637dedeb7d"
+    },
     "https://developer.apple.com/documentation/passkit/pkradiotechnology": {
       "etag": "\"41b8-65d55e271b5da-df\"",
       "file_path": "documentation/PassKit/pkradiotechnology.md",
@@ -4754,6 +4884,11 @@
       "etag": "\"214f-65d55e28cc7b5-df\"",
       "file_path": "documentation/PassKit/pkradiotechnology/nfc.md",
       "hash": "5ad1f0d7e481e3078011b021dc2239429a2270086a46bce0f8448b984f39e899"
+    },
+    "https://developer.apple.com/documentation/passkit/pkradiotechnology/pkradiotechnologynone": {
+      "etag": "\"10ba-65d55e28cc7b5-df\"",
+      "file_path": "documentation/PassKit/pkradiotechnology/pkradiotechnologynone.md",
+      "hash": "80a22ad0412477bf1bc9ad64f2b465faacc7fdeaf88d7fadbb99d92a738913dc"
     },
     "https://developer.apple.com/documentation/passkit/pkrecurringpaymentrequest": {
       "etag": "\"7f7e-65d55e27983d3-df\"",
@@ -4794,6 +4929,11 @@
       "etag": "\"2ac4-65d55e2848542-df\"",
       "file_path": "documentation/PassKit/pkrecurringpaymentrequest/trialbilling.md",
       "hash": "f1e378a0ec5e9d24a4df5bbef8a77b2602a91bb1855482b670a3dbd74fe94180"
+    },
+    "https://developer.apple.com/documentation/passkit/pkrecurringpaymentrequest_h": {
+      "etag": "\"128d-65d55e27e875a-df\"",
+      "file_path": "documentation/PassKit/pkrecurringpaymentrequest_h.md",
+      "hash": "ad8eb839e18a982501fd267d78a46f04c7f84954a4ce2ac6e93eb9f491d66854"
     },
     "https://developer.apple.com/documentation/passkit/pkrecurringpaymentsummaryitem": {
       "etag": "\"7cb9-65d55e27025af-df\"",
@@ -5010,6 +5150,11 @@
       "file_path": "documentation/PassKit/pkshareablepassmetadata/templateidentifier.md",
       "hash": "e654f69c5856e56cc6a804aa79d5afcae33806f43efdf60c3c784657dd2cb037"
     },
+    "https://developer.apple.com/documentation/passkit/pkshareablepassmetadatapreview/previewwithtemplateidentifier:": {
+      "etag": "\"157b-65d55e276271c-df\"",
+      "file_path": "documentation/PassKit/pkshareablepassmetadatapreview/previewwithtemplateidentifier_.md",
+      "hash": "ad9e507222717e546941ccd9432d1a0c326550d554f6f16a9ff00140b74beb2a"
+    },
     "https://developer.apple.com/documentation/passkit/pksharesecureelementpasserror": {
       "etag": "\"5fb7-65d55e27025af-df\"",
       "file_path": "documentation/PassKit/pksharesecureelementpasserror.md",
@@ -5210,6 +5355,11 @@
       "file_path": "documentation/PassKit/pkstoredvaluepassbalance/amount-2nwf5.md",
       "hash": "682e801ea4448801c88d3fdf38413f37f50e9db4608ef08137886a116878dd13"
     },
+    "https://developer.apple.com/documentation/passkit/pkstoredvaluepassbalance/amount-2vfd3": {
+      "etag": "\"2a27-65d55e289aca7-df\"",
+      "file_path": "documentation/PassKit/pkstoredvaluepassbalance/amount-2vfd3.md",
+      "hash": "8204ff7c1b2fc4ffdcf5124878a928f5491c935f541cdc08da1081a85aae0a61"
+    },
     "https://developer.apple.com/documentation/passkit/pkstoredvaluepassbalance/balancetype-swift.property": {
       "etag": "\"3583-65d55e289aca7-df\"",
       "file_path": "documentation/PassKit/pkstoredvaluepassbalance/balancetype-swift.property.md",
@@ -5245,6 +5395,11 @@
       "file_path": "documentation/PassKit/pkstoredvaluepassbalance/expirydate.md",
       "hash": "6bb396ccf10def40913bc5343509c9ae3e18be1fce28a3a06ee2c68b862900c3"
     },
+    "https://developer.apple.com/documentation/passkit/pkstoredvaluepassbalance/isequaltobalance:": {
+      "etag": "\"16f5-65d55e289aca7-df\"",
+      "file_path": "documentation/PassKit/pkstoredvaluepassbalance/isequaltobalance_.md",
+      "hash": "9a3cdc0d61032f15279914a8945b441ee7a34cb10090242816231d9658ad8a55"
+    },
     "https://developer.apple.com/documentation/passkit/pkstoredvaluepassproperties": {
       "etag": "\"5f2f-65d55e280ed52-df\"",
       "file_path": "documentation/PassKit/pkstoredvaluepassproperties.md",
@@ -5254,6 +5409,11 @@
       "etag": "\"32b3-65d55e282ae93-df\"",
       "file_path": "documentation/PassKit/pkstoredvaluepassproperties/balances.md",
       "hash": "dacfe93e4b18dc315a5083ea7a9ef3a48b7236e389431bad0ff10840f2803518"
+    },
+    "https://developer.apple.com/documentation/passkit/pkstoredvaluepassproperties/blocked": {
+      "etag": "\"2559-65d55e282ae93-df\"",
+      "file_path": "documentation/PassKit/pkstoredvaluepassproperties/blocked.md",
+      "hash": "90020bec80dade323aa7e72e5049d576f65ad555960669cee85d24b375747c9e"
     },
     "https://developer.apple.com/documentation/passkit/pkstoredvaluepassproperties/expirationdate": {
       "etag": "\"2fdb-65d55e282ae93-df\"",
@@ -5344,6 +5504,11 @@
       "etag": "\"5bcc-65d55e2863c87-df\"",
       "file_path": "documentation/PassKit/pktransitpassproperties.md",
       "hash": "202b04c55a014de921ef2ac1a5c0dd2c9fcc336129704d97c47d69dabcc7fc46"
+    },
+    "https://developer.apple.com/documentation/passkit/pktransitpassproperties/blocked": {
+      "etag": "\"26f8-65d55e27af271-df\"",
+      "file_path": "documentation/PassKit/pktransitpassproperties/blocked.md",
+      "hash": "2006c2db04700ac7ca8498ca29f9ad4a26749349a39e1b0fe658b0566c8cfb75"
     },
     "https://developer.apple.com/documentation/passkit/pktransitpassproperties/expirationdate": {
       "etag": "\"2ff0-65d55e27af271-df\"",
@@ -6340,6 +6505,11 @@
       "file_path": "documentation/PassKit/pkaddpassbutton/addpassbuttonstyle.md",
       "hash": "250a495aa80991cfa82c80d3edf4e1a7668c095eb1eecb2092ba8d58a6b79553"
     },
+    "https://developer.apple.com/tutorials/data/documentation/passkit/pkaddpassbutton/addpassbuttonwithstyle:.json": {
+      "etag": "\"1fbc-65d55e271b5da-df\"",
+      "file_path": "documentation/PassKit/pkaddpassbutton/addpassbuttonwithstyle_.md",
+      "hash": "d6e43fb84afa7dd2046b0e47d4fc1f5395fc259a6f30501ac2807db9828078e3"
+    },
     "https://developer.apple.com/tutorials/data/documentation/passkit/pkaddpassbutton/init(addpassbuttonstyle:).json": {
       "etag": "\"2a89-65d55e271b5da-df\"",
       "file_path": "documentation/PassKit/pkaddpassbutton/init(addpassbuttonstyle).md",
@@ -6444,6 +6614,11 @@
       "etag": "\"3285-65d55e282ae93-df\"",
       "file_path": "documentation/PassKit/pkaddpassmetadatapreview/passthumbnailimage.md",
       "hash": "e974d82848931598f6662b00efd2b17ae6463026ada29f60d7da4ed297c05c38"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/passkit/pkaddpassmetadatapreview/previewwithpassthumbnail:localizeddescription:.json": {
+      "etag": "\"2fb6-65d55e282ae93-df\"",
+      "file_path": "documentation/PassKit/pkaddpassmetadatapreview/previewwithpassthumbnail_localizeddescription_.md",
+      "hash": "403a98b3e36aff61015dd6c278752ecf604d5dc0db48a5e1dbcd94c697f89222"
     },
     "https://developer.apple.com/tutorials/data/documentation/passkit/pkaddpaymentpasserror.json": {
       "etag": "\"711c-65d55e27ce93b-df\"",
@@ -6645,6 +6820,11 @@
       "file_path": "documentation/PassKit/pkaddressfield/phone.md",
       "hash": "171f587c1473dc3fb82de4bdc0c7ed20ea4c65f950606b60243b3ca5baf45467"
     },
+    "https://developer.apple.com/tutorials/data/documentation/passkit/pkaddressfield/pkaddressfieldnone.json": {
+      "etag": "\"101d-65d55e27ce93b-df\"",
+      "file_path": "documentation/PassKit/pkaddressfield/pkaddressfieldnone.md",
+      "hash": "0bbca381ef8409d7712de15459a27fde672f384621f87bcd22edaf87a01c926e"
+    },
     "https://developer.apple.com/tutorials/data/documentation/passkit/pkaddressfield/postaladdress.json": {
       "etag": "\"331a-65d55e27ce93b-df\"",
       "file_path": "documentation/PassKit/pkaddressfield/postaladdress.md",
@@ -6764,6 +6944,11 @@
       "etag": "\"2ec9-65d55e26694ff-df\"",
       "file_path": "documentation/PassKit/pkaddsecureelementpasserror/usercancelederror.md",
       "hash": "bb60c15dffbd552ea93ef9ae100126b3a0fbaab2deb74acfc77ce28904c8cbe0"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/passkit/pkaddsecureelementpasserrorcode/pkaddsecureelementpassunknownerror.json": {
+      "etag": "\"1275-65d55e27ce93b-df\"",
+      "file_path": "documentation/PassKit/pkaddsecureelementpasserrorcode/pkaddsecureelementpassunknownerror.md",
+      "hash": "67fed67fba98a1b23240e4288295fb1ae64140fad640d78ab4d04b0c15d6b3d9"
     },
     "https://developer.apple.com/tutorials/data/documentation/passkit/pkaddsecureelementpasserrordomain.json": {
       "etag": "\"55be-65d55e271b5da-df\"",
@@ -6950,6 +7135,11 @@
       "file_path": "documentation/PassKit/pkautomaticreloadpaymentrequest/tokennotificationurl.md",
       "hash": "6f314a7661167ef75a7dba66b928eddf07341c40c3bc8f4f3dc8c924c05e8ecc"
     },
+    "https://developer.apple.com/tutorials/data/documentation/passkit/pkautomaticreloadpaymentrequest_h.json": {
+      "etag": "\"12b1-65d55e289aca7-df\"",
+      "file_path": "documentation/PassKit/pkautomaticreloadpaymentrequest_h.md",
+      "hash": "c4268bfbb7f937a04bfab0befcfb8050b8df48d61b1d3dd36d20f2aecf042288"
+    },
     "https://developer.apple.com/tutorials/data/documentation/passkit/pkautomaticreloadpaymentsummaryitem.json": {
       "etag": "\"56a9-65d55e27025af-df\"",
       "file_path": "documentation/PassKit/pkautomaticreloadpaymentsummaryitem.md",
@@ -6959,6 +7149,11 @@
       "etag": "\"2732-65d55e289aca7-df\"",
       "file_path": "documentation/PassKit/pkautomaticreloadpaymentsummaryitem/thresholdamount.md",
       "hash": "2e2f91280e60062b845c48f9f38e8e4de19b8fceb532cd3e014641ff6c7cb109"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/passkit/pkautomaticreloadpaymentsummaryitem_h.json": {
+      "etag": "\"12c9-65d55e2848542-df\"",
+      "file_path": "documentation/PassKit/pkautomaticreloadpaymentsummaryitem_h.md",
+      "hash": "d162ec1eea331c34082a3c1270bbc12d6af7a0243580f9369d41fdc3460c28eb"
     },
     "https://developer.apple.com/tutorials/data/documentation/passkit/pkbarcodeeventconfigurationdatatype.json": {
       "etag": "\"4a0d-65d55e2649b3c-df\"",
@@ -7104,6 +7299,11 @@
       "etag": "\"1d69-65d55e289aca7-df\"",
       "file_path": "documentation/PassKit/pkbarcodeeventsignatureresponse/signeddata.md",
       "hash": "3b69c1eaf2d8a121122bf5615fc0fb2ccd379e427558b24cbc1281359ed19813"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/passkit/pkconstants_h.json": {
+      "etag": "\"1239-65d55e27e875a-df\"",
+      "file_path": "documentation/PassKit/pkconstants_h.md",
+      "hash": "f6a9a423a03dee00f07312f1289a29713ae8eb783bfcd66ae86db0d0a978749d"
     },
     "https://developer.apple.com/tutorials/data/documentation/passkit/pkcontact.json": {
       "etag": "\"5b32-65d55e282ae93-df\"",
@@ -7340,6 +7540,11 @@
       "file_path": "documentation/PassKit/pkdisbursementrequest/currency.md",
       "hash": "c9dfdeafd923a53a12e5df936e74dc764b56f6ac74b6bec1ee2511d22a76627e"
     },
+    "https://developer.apple.com/tutorials/data/documentation/passkit/pkdisbursementrequest/currencycode.json": {
+      "etag": "\"1cc3-65d55e2848542-df\"",
+      "file_path": "documentation/PassKit/pkdisbursementrequest/currencycode.md",
+      "hash": "98862912620126193b48a5388ce5d72ba574e2f18af6574489da9595bf429ba1"
+    },
     "https://developer.apple.com/tutorials/data/documentation/passkit/pkdisbursementrequest/disbursementcardunsupportederror().json": {
       "etag": "\"3042-65d55e2848542-df\"",
       "file_path": "documentation/PassKit/pkdisbursementrequest/disbursementcardunsupportederror().md",
@@ -7354,6 +7559,11 @@
       "etag": "\"47b9-65d55e2848542-df\"",
       "file_path": "documentation/PassKit/pkdisbursementrequest/init(merchantidentifier,currency,region,supportednetworks,merchantcapabilities,summaryitems).md",
       "hash": "4a7c031abac1858d30054c2db965a1b592dfae011813afab5ec064b77a8117e8"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/passkit/pkdisbursementrequest/initwithmerchantidentifier:currencycode:regioncode:supportednetworks:merchantcapabilities:summaryitems:.json": {
+      "etag": "\"36b1-65d55e2848542-df\"",
+      "file_path": "documentation/PassKit/pkdisbursementrequest/initwithmerchantidentifier_currencycode_regioncode_supportednetworks_merchantcapabilities_summaryitems_.md",
+      "hash": "de5233f1ea246cb84786c9d7f47dcc5e531570873ae8f7db66ca17e7deb3551b"
     },
     "https://developer.apple.com/tutorials/data/documentation/passkit/pkdisbursementrequest/isdelegatedrequest.json": {
       "etag": "\"2451-65d55e2848542-df\"",
@@ -7380,6 +7590,11 @@
       "file_path": "documentation/PassKit/pkdisbursementrequest/region.md",
       "hash": "dbc9eb2cbfc830560a08745e62d9944aa177c7409626d6595211e651ac99828f"
     },
+    "https://developer.apple.com/tutorials/data/documentation/passkit/pkdisbursementrequest/regioncode.json": {
+      "etag": "\"21f6-65d55e2848542-df\"",
+      "file_path": "documentation/PassKit/pkdisbursementrequest/regioncode.md",
+      "hash": "1faca7a50c10ba101ee1634daf3688b7a3b5c04a2e56e3bb36da9b8f36bcda94"
+    },
     "https://developer.apple.com/tutorials/data/documentation/passkit/pkdisbursementrequest/requiredrecipientcontactfields.json": {
       "etag": "\"29db-65d55e2848542-df\"",
       "file_path": "documentation/PassKit/pkdisbursementrequest/requiredrecipientcontactfields.md",
@@ -7399,6 +7614,11 @@
       "etag": "\"2830-65d55e2848542-df\"",
       "file_path": "documentation/PassKit/pkdisbursementrequest/supportedregions-1cl0f.md",
       "hash": "277c7b05f2dca38c54bd3627e0a5771a4e6786436c82e4b19470b97c016c3f56"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/passkit/pkdisbursementrequest/supportedregions-j9ug.json": {
+      "etag": "\"1d67-65d55e2848542-df\"",
+      "file_path": "documentation/PassKit/pkdisbursementrequest/supportedregions-j9ug.md",
+      "hash": "7524cb4d381eb9d0119679deb3a757fe0be8a5d9bbce0db2004282bd1af6a6d8"
     },
     "https://developer.apple.com/tutorials/data/documentation/passkit/pkdisbursementrequest/unsupportedprimaryaccountidentifiers.json": {
       "etag": "\"26eb-65d55e2848542-df\"",
@@ -7469,6 +7689,11 @@
       "etag": "\"bba2-65d55e26af7ea-df\"",
       "file_path": "documentation/PassKit/pkidentitybutton.md",
       "hash": "b2156541067d307c76784ee648bdec1665ff8402142e7f53c82c00fde97659f3"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/passkit/pkidentitybutton/buttonwithlabel:style:.json": {
+      "etag": "\"247f-65d55e27025af-df\"",
+      "file_path": "documentation/PassKit/pkidentitybutton/buttonwithlabel_style_.md",
+      "hash": "baf067464d8d790de227bb1d4532426a968be7b7e1097cf825c3a7d2c6bb26bd"
     },
     "https://developer.apple.com/tutorials/data/documentation/passkit/pkidentitybutton/cornerradius.json": {
       "etag": "\"284a-65d55e27025af-df\"",
@@ -7885,6 +8110,11 @@
       "file_path": "documentation/PassKit/pkidentitynationalidcarddescriptor/region.md",
       "hash": "c7014643f611f0569c671ed56b89afe30b133464600a61b48f24746f90bf5f20"
     },
+    "https://developer.apple.com/tutorials/data/documentation/passkit/pkidentitynationalidcarddescriptor/regioncode.json": {
+      "etag": "\"14f4-65d55e271b5da-df\"",
+      "file_path": "documentation/PassKit/pkidentitynationalidcarddescriptor/regioncode.md",
+      "hash": "c2edce881f3265dfaaa9ab37bdcac2eaca1b7c2207e9c3240b3dda2f06c75db6"
+    },
     "https://developer.apple.com/tutorials/data/documentation/passkit/pkidentityphotoiddescriptor.json": {
       "etag": "\"8caa-65d55e27af271-df\"",
       "file_path": "documentation/PassKit/pkidentityphotoiddescriptor.md",
@@ -8144,6 +8374,16 @@
       "etag": "\"3077-65d55e2632ede-df\"",
       "file_path": "documentation/PassKit/pkmerchantcapability/threedsecure.md",
       "hash": "62f391ee780b0dd744bdb118752b24aa575a33a46e7701d35c138391be4cafdd"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/passkit/pkmerchantcategorycode.json": {
+      "etag": "\"216e-65d55e27e875a-df\"",
+      "file_path": "documentation/PassKit/pkmerchantcategorycode.md",
+      "hash": "2c345eba39aad2412b419828388fff9fcdca4723e9dedc0472f89da32a27d73d"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/passkit/pkmerchantcategorycodenone.json": {
+      "etag": "\"2037-65d55e26e6a21-df\"",
+      "file_path": "documentation/PassKit/pkmerchantcategorycodenone.md",
+      "hash": "a6260998c62940d28f336a2f2b8dadcee3a6af43fab679f7dbb38721808e6fa9"
     },
     "https://developer.apple.com/tutorials/data/documentation/passkit/pkobject.json": {
       "etag": "\"50a5-65d55e26c9366-df\"",
@@ -8745,6 +8985,11 @@
       "file_path": "documentation/PassKit/pkpaylaterdisplaystyle/standard.md",
       "hash": "1911d192df9816a709df395eaeba69625c807c2b98882604eec53557edc3fb20"
     },
+    "https://developer.apple.com/tutorials/data/documentation/passkit/pkpaylatervalidateamount.json": {
+      "etag": "\"1bd4-65d55e2863c87-df\"",
+      "file_path": "documentation/PassKit/pkpaylatervalidateamount.md",
+      "hash": "9d9fdfa8077d9a5267646c60f2fea464dd48bd502750d3588d8d3b889b53d8e1"
+    },
     "https://developer.apple.com/tutorials/data/documentation/passkit/pkpaylaterview.json": {
       "etag": "\"b746-65d55e2914470-df\"",
       "file_path": "documentation/PassKit/pkpaylaterview.md",
@@ -8755,6 +9000,11 @@
       "file_path": "documentation/PassKit/pkpaylaterview/action.md",
       "hash": "7a0a2651f44f2e1522ef08c960fad209c65e7898ecb34c7d27e5b535f7622542"
     },
+    "https://developer.apple.com/tutorials/data/documentation/passkit/pkpaylaterview/amount-1jzg2.json": {
+      "etag": "\"17ff-65d55e280ed52-df\"",
+      "file_path": "documentation/PassKit/pkpaylaterview/amount-1jzg2.md",
+      "hash": "3bb3a348fb0e28f5b5c1d6fe8cae30f13a8f70de568984f33522c089f578c51a"
+    },
     "https://developer.apple.com/tutorials/data/documentation/passkit/pkpaylaterview/amount-f3gs.json": {
       "etag": "\"1e47-65d55e280ed52-df\"",
       "file_path": "documentation/PassKit/pkpaylaterview/amount-f3gs.md",
@@ -8764,6 +9014,11 @@
       "etag": "\"2346-65d55e280ed52-df\"",
       "file_path": "documentation/PassKit/pkpaylaterview/currency.md",
       "hash": "4c093d52bf2d82cfa39bf9af5113b6c4205833d27f53e0fd3bb2ed4965e7558c"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/passkit/pkpaylaterview/currencycode.json": {
+      "etag": "\"1a74-65d55e280ed52-df\"",
+      "file_path": "documentation/PassKit/pkpaylaterview/currencycode.md",
+      "hash": "353133fbfa1b3ab1a16f65cc908a63e19c883e237959e4542844c0de8f492c65"
     },
     "https://developer.apple.com/tutorials/data/documentation/passkit/pkpaylaterview/delegate.json": {
       "etag": "\"22a2-65d55e280ed52-df\"",
@@ -8779,6 +9034,11 @@
       "etag": "\"2790-65d55e280ed52-df\"",
       "file_path": "documentation/PassKit/pkpaylaterview/init(amount,currency).md",
       "hash": "b6c26d6f79e83a8a7ad87dbdf7c92edcb67dab0ba765e20ed3b3553d943ae349"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/passkit/pkpaylaterview/initwithamount:currencycode:.json": {
+      "etag": "\"1d40-65d55e280ed52-df\"",
+      "file_path": "documentation/PassKit/pkpaylaterview/initwithamount_currencycode_.md",
+      "hash": "95fe007b1a796e80ab5bfb4af7d9b1f8c80243977c7d7801311f828dabdc3c29"
     },
     "https://developer.apple.com/tutorials/data/documentation/passkit/pkpaylaterviewdelegate.json": {
       "etag": "\"2af5-65d55e276271c-df\"",
@@ -9154,6 +9414,16 @@
       "etag": "\"f877-65d55e280ed52-df\"",
       "file_path": "documentation/PassKit/pkpaymentbutton.md",
       "hash": "2eefcd2c5d913898edc232878f4e218d20237fb281eba644597ccb0211fd65d5"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/passkit/pkpaymentbutton/buttonwithtype:style:.json": {
+      "etag": "\"38a2-65d55e280ed52-df\"",
+      "file_path": "documentation/PassKit/pkpaymentbutton/buttonwithtype_style_.md",
+      "hash": "c1d4ab7b95789621fa31c6efdaba06167555f1c45d9fa07f9c54325d617e3790"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/passkit/pkpaymentbutton/buttonwithtype:style:disablecardart:.json": {
+      "etag": "\"1f43-65d55e280ed52-df\"",
+      "file_path": "documentation/PassKit/pkpaymentbutton/buttonwithtype_style_disablecardart_.md",
+      "hash": "d17595c2cabba4a38c94b1a00efd4a297c6d10d9758743453df27164d7eef199"
     },
     "https://developer.apple.com/tutorials/data/documentation/passkit/pkpaymentbutton/cornerradius.json": {
       "etag": "\"2a2f-65d55e280ed52-df\"",
@@ -9845,6 +10115,11 @@
       "file_path": "documentation/PassKit/pkpaymentrequest/applepaylateravailability-3dxrt.md",
       "hash": "5e9af876cc37b8ed5588530b1a062b847303fd1644298b2b6a3d72fb645811a1"
     },
+    "https://developer.apple.com/tutorials/data/documentation/passkit/pkpaymentrequest/applepaylateravailability-inpf.json": {
+      "etag": "\"2105-65dd3788fd82f-df\"",
+      "file_path": "documentation/PassKit/pkpaymentrequest/applepaylateravailability-inpf.md",
+      "hash": "233fea533659e735dfa0c928e5331ad184724997154f59a5f88e2ceead0b7786"
+    },
     "https://developer.apple.com/tutorials/data/documentation/passkit/pkpaymentrequest/applepaylateravailability-swift.enum.json": {
       "etag": "\"2c50-65dd3788fd82f-df\"",
       "file_path": "documentation/PassKit/pkpaymentrequest/applepaylateravailability-swift.enum.md",
@@ -9935,6 +10210,11 @@
       "file_path": "documentation/PassKit/pkpaymentrequest/merchantcapabilities.md",
       "hash": "5269440fa52d3d4a5a0a4bd5b0dfd51ce7c80ce4799e75046d3563758a96dc21"
     },
+    "https://developer.apple.com/tutorials/data/documentation/passkit/pkpaymentrequest/merchantcategorycode-7vg6z.json": {
+      "etag": "\"2613-65d55e2649b3c-df\"",
+      "file_path": "documentation/PassKit/pkpaymentrequest/merchantcategorycode-7vg6z.md",
+      "hash": "479391749674889ecdd229607a7532e962b6ead8c0488aea3073f385d7d8e855"
+    },
     "https://developer.apple.com/tutorials/data/documentation/passkit/pkpaymentrequest/merchantcategorycode-9kcn6.json": {
       "etag": "\"18d3-65d55e2649b3c-df\"",
       "file_path": "documentation/PassKit/pkpaymentrequest/merchantcategorycode-9kcn6.md",
@@ -9970,10 +10250,20 @@
       "file_path": "documentation/PassKit/pkpaymentrequest/paymentcouponcodeexpirederror(localizeddescription).md",
       "hash": "8291a6e39c4d5649e4f2e804a67a2065f517f87fb9c4c690c2c7034ce9865b4e"
     },
+    "https://developer.apple.com/tutorials/data/documentation/passkit/pkpaymentrequest/paymentcouponcodeexpirederrorwithlocalizeddescription:.json": {
+      "etag": "\"43bb-65d55e2649b3c-df\"",
+      "file_path": "documentation/PassKit/pkpaymentrequest/paymentcouponcodeexpirederrorwithlocalizeddescription_.md",
+      "hash": "f9cb6082ba5b21c0fd831b87154cc804bdfe870905b29702075ad09280e3e926"
+    },
     "https://developer.apple.com/tutorials/data/documentation/passkit/pkpaymentrequest/paymentcouponcodeinvaliderror(localizeddescription:).json": {
       "etag": "\"48ac-65d55e26694ff-df\"",
       "file_path": "documentation/PassKit/pkpaymentrequest/paymentcouponcodeinvaliderror(localizeddescription).md",
       "hash": "8a5fa80d2ef6173af3db7c52077825a65eef726fc3677ba70a0122c253d96719"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/passkit/pkpaymentrequest/paymentcouponcodeinvaliderrorwithlocalizeddescription:.json": {
+      "etag": "\"43ba-65d55e2649b3c-df\"",
+      "file_path": "documentation/PassKit/pkpaymentrequest/paymentcouponcodeinvaliderrorwithlocalizeddescription_.md",
+      "hash": "944fe484f7259ec88f1a45de9bc59e0d63a309e77442a5d3d8d3b619441802e7"
     },
     "https://developer.apple.com/tutorials/data/documentation/passkit/pkpaymentrequest/paymentshippingaddressinvaliderror(withkey:localizeddescription:).json": {
       "etag": "\"7796-65d55e2649b3c-df\"",
@@ -10295,6 +10585,11 @@
       "file_path": "documentation/PassKit/pkpaymenttokencontext/merchantname.md",
       "hash": "0b4ca4e5582f3b02f8219f3a2414dce20986e52d8d2574752d5f042470e3425f"
     },
+    "https://developer.apple.com/tutorials/data/documentation/passkit/pkpaymenttokencontext_h.json": {
+      "etag": "\"1275-65d55e2737da4-df\"",
+      "file_path": "documentation/PassKit/pkpaymenttokencontext_h.md",
+      "hash": "68db09cc4da6932e03d9749023b213f75605e2ec592680249a903d637dedeb7d"
+    },
     "https://developer.apple.com/tutorials/data/documentation/passkit/pkradiotechnology.json": {
       "etag": "\"41b8-65d55e271b5da-df\"",
       "file_path": "documentation/PassKit/pkradiotechnology.md",
@@ -10314,6 +10609,11 @@
       "etag": "\"214f-65d55e28cc7b5-df\"",
       "file_path": "documentation/PassKit/pkradiotechnology/nfc.md",
       "hash": "5ad1f0d7e481e3078011b021dc2239429a2270086a46bce0f8448b984f39e899"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/passkit/pkradiotechnology/pkradiotechnologynone.json": {
+      "etag": "\"10ba-65d55e28cc7b5-df\"",
+      "file_path": "documentation/PassKit/pkradiotechnology/pkradiotechnologynone.md",
+      "hash": "80a22ad0412477bf1bc9ad64f2b465faacc7fdeaf88d7fadbb99d92a738913dc"
     },
     "https://developer.apple.com/tutorials/data/documentation/passkit/pkrecurringpaymentrequest.json": {
       "etag": "\"7f7e-65d55e27983d3-df\"",
@@ -10354,6 +10654,11 @@
       "etag": "\"2ac4-65d55e2848542-df\"",
       "file_path": "documentation/PassKit/pkrecurringpaymentrequest/trialbilling.md",
       "hash": "f1e378a0ec5e9d24a4df5bbef8a77b2602a91bb1855482b670a3dbd74fe94180"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/passkit/pkrecurringpaymentrequest_h.json": {
+      "etag": "\"128d-65d55e27e875a-df\"",
+      "file_path": "documentation/PassKit/pkrecurringpaymentrequest_h.md",
+      "hash": "ad8eb839e18a982501fd267d78a46f04c7f84954a4ce2ac6e93eb9f491d66854"
     },
     "https://developer.apple.com/tutorials/data/documentation/passkit/pkrecurringpaymentsummaryitem.json": {
       "etag": "\"7cb9-65d55e27025af-df\"",
@@ -10570,6 +10875,11 @@
       "file_path": "documentation/PassKit/pkshareablepassmetadata/templateidentifier.md",
       "hash": "e654f69c5856e56cc6a804aa79d5afcae33806f43efdf60c3c784657dd2cb037"
     },
+    "https://developer.apple.com/tutorials/data/documentation/passkit/pkshareablepassmetadatapreview/previewwithtemplateidentifier:.json": {
+      "etag": "\"157b-65d55e276271c-df\"",
+      "file_path": "documentation/PassKit/pkshareablepassmetadatapreview/previewwithtemplateidentifier_.md",
+      "hash": "ad9e507222717e546941ccd9432d1a0c326550d554f6f16a9ff00140b74beb2a"
+    },
     "https://developer.apple.com/tutorials/data/documentation/passkit/pksharesecureelementpasserror.json": {
       "etag": "\"5fb7-65d55e27025af-df\"",
       "file_path": "documentation/PassKit/pksharesecureelementpasserror.md",
@@ -10770,6 +11080,11 @@
       "file_path": "documentation/PassKit/pkstoredvaluepassbalance/amount-2nwf5.md",
       "hash": "682e801ea4448801c88d3fdf38413f37f50e9db4608ef08137886a116878dd13"
     },
+    "https://developer.apple.com/tutorials/data/documentation/passkit/pkstoredvaluepassbalance/amount-2vfd3.json": {
+      "etag": "\"2a27-65d55e289aca7-df\"",
+      "file_path": "documentation/PassKit/pkstoredvaluepassbalance/amount-2vfd3.md",
+      "hash": "8204ff7c1b2fc4ffdcf5124878a928f5491c935f541cdc08da1081a85aae0a61"
+    },
     "https://developer.apple.com/tutorials/data/documentation/passkit/pkstoredvaluepassbalance/balancetype-swift.property.json": {
       "etag": "\"3583-65d55e289aca7-df\"",
       "file_path": "documentation/PassKit/pkstoredvaluepassbalance/balancetype-swift.property.md",
@@ -10805,6 +11120,11 @@
       "file_path": "documentation/PassKit/pkstoredvaluepassbalance/expirydate.md",
       "hash": "6bb396ccf10def40913bc5343509c9ae3e18be1fce28a3a06ee2c68b862900c3"
     },
+    "https://developer.apple.com/tutorials/data/documentation/passkit/pkstoredvaluepassbalance/isequaltobalance:.json": {
+      "etag": "\"16f5-65d55e289aca7-df\"",
+      "file_path": "documentation/PassKit/pkstoredvaluepassbalance/isequaltobalance_.md",
+      "hash": "9a3cdc0d61032f15279914a8945b441ee7a34cb10090242816231d9658ad8a55"
+    },
     "https://developer.apple.com/tutorials/data/documentation/passkit/pkstoredvaluepassproperties.json": {
       "etag": "\"5f2f-65d55e280ed52-df\"",
       "file_path": "documentation/PassKit/pkstoredvaluepassproperties.md",
@@ -10814,6 +11134,11 @@
       "etag": "\"32b3-65d55e282ae93-df\"",
       "file_path": "documentation/PassKit/pkstoredvaluepassproperties/balances.md",
       "hash": "dacfe93e4b18dc315a5083ea7a9ef3a48b7236e389431bad0ff10840f2803518"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/passkit/pkstoredvaluepassproperties/blocked.json": {
+      "etag": "\"2559-65d55e282ae93-df\"",
+      "file_path": "documentation/PassKit/pkstoredvaluepassproperties/blocked.md",
+      "hash": "90020bec80dade323aa7e72e5049d576f65ad555960669cee85d24b375747c9e"
     },
     "https://developer.apple.com/tutorials/data/documentation/passkit/pkstoredvaluepassproperties/expirationdate.json": {
       "etag": "\"2fdb-65d55e282ae93-df\"",
@@ -10904,6 +11229,11 @@
       "etag": "\"5bcc-65d55e2863c87-df\"",
       "file_path": "documentation/PassKit/pktransitpassproperties.md",
       "hash": "202b04c55a014de921ef2ac1a5c0dd2c9fcc336129704d97c47d69dabcc7fc46"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/passkit/pktransitpassproperties/blocked.json": {
+      "etag": "\"26f8-65d55e27af271-df\"",
+      "file_path": "documentation/PassKit/pktransitpassproperties/blocked.md",
+      "hash": "2006c2db04700ac7ca8498ca29f9ad4a26749349a39e1b0fe658b0566c8cfb75"
     },
     "https://developer.apple.com/tutorials/data/documentation/passkit/pktransitpassproperties/expirationdate.json": {
       "etag": "\"2ff0-65d55e27af271-df\"",
@@ -11123,8 +11453,8 @@
   },
   "metadata": {
     "render": {
-      "version": 1
+      "version": 2
     },
-    "total_pages": 2224
+    "total_pages": 2290
   }
 }

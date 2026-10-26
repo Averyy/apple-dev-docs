@@ -29,6 +29,8 @@ Create an instance of this object to manage the device’s property state.
 ### Creating Device Properties
 - [init(dictionary: [CMIOExtensionProperty : CMIOExtensionPropertyState<AnyObject>])](./cmioextensiondeviceproperties/init%28dictionary%29.md)
   Creates a properties object with a dictionary of property states.
+- [+ devicePropertiesWithDictionary:](./cmioextensiondeviceproperties/devicepropertieswithdictionary_.md)
+  Returns a new properties object with a dictionary of property states.
 ### Configuring Device Properties
 - [var model: String?](./cmioextensiondeviceproperties/model.md)
   A device model string.
@@ -42,6 +44,10 @@ Create an instance of this object to manage the device’s property state.
   Sets the value of a device property.
 - [var propertiesDictionary: [CMIOExtensionProperty : CMIOExtensionPropertyState<AnyObject>]](./cmioextensiondeviceproperties/propertiesdictionary.md)
   A dictionary of properties for a device.
+- [transportType](./cmioextensiondeviceproperties/transporttype-25qzh.md)
+  The transport type of the device, such as USB or HDMI.
+- [suspended](./cmioextensiondeviceproperties/suspended-2ja7h.md)
+  A Boolean value that indicates whether the device is in a suspended state.
 
 ## Relationships
 

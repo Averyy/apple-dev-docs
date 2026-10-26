@@ -42,6 +42,8 @@ To use this class, create a mutable texture using either one of its creation met
   Initializes an empty texture with a specific size and format.
 - [init(size: CGSize)](./skmutabletexture/init%28size%29.md)
   Initializes an empty texture with a specific size.
+- [+ mutableTextureWithSize:](./skmutabletexture/mutabletexturewithsize_.md)
+  Creates an empty texture with a specific size.
 ### Modifying a Mutable Texture’s Contents
 - [func modifyPixelData((UnsafeMutableRawPointer?, Int) -> Void)](./skmutabletexture/modifypixeldata%28_%29.md)
   Modifies the contents of a mutable texture.

@@ -42,6 +42,8 @@ Use `CVPixelBufferCreateResolvedAttributesDictionary` to combine this dictionary
 - [var sourcePixelBufferAttributes: [String : any Sendable]](./sourcepixelbufferattributes.md)
   Pixel buffer attributes dictionary that describes requirements for pixel buffers which represent source frames and reference frames.
 - [var supportedPixelFormats: [OSType]](./supportedpixelformats.md)
+- [frameSupportedPixelFormats](./framesupportedpixelformats.md)
+  Available supported pixel formats for current configuration.
 
 
 ---

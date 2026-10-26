@@ -43,6 +43,10 @@ This method provides your completion handler with an object that describes the t
 ### Exporting browser data
 - [func exportBrowserData(AsyncStream<BEBrowserData>) async throws](./exportbrowserdata%28_%29.md)
   Exports the given browser data.
+- [- exportBrowserData:completionHandler:](./exportbrowserdata_completionhandler_.md)
+  Exports the given browser data with the given completion handler.
+- [- exportFinishedWithCompletionHandler:](./exportfinishedwithcompletionhandler_.md)
+  A callback the system invokes when an export of browsing data completes.
 
 
 ---

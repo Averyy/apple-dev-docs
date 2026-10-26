@@ -56,6 +56,10 @@ A noise map is finite and two-dimensional, but the the noise you sample to creat
   Creates a noise map by sampling from the specified noise object.
 - [convenience init()](./gknoisemap/init%28%29.md)
   Initializes a noise map with a constant noise value of zero throughout.
+- [+ noiseMapWithNoise:](./gknoisemap/noisemapwithnoise_.md)
+  Creates a noise map by sampling from the specified noise object.
+- [+ noiseMapWithNoise:size:origin:sampleCount:seamless:](./gknoisemap/noisemapwithnoise_size_origin_samplecount_seamless_.md)
+  Creates a noise map by sampling from the specified noise object.
 ### Accessing Noise Values
 - [func value(at: vector_int2) -> Float](./gknoisemap/value%28at%29.md)
   Returns the value at the specified position in the noise map’s discrete sample grid.

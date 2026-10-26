@@ -30,6 +30,11 @@ class CBIdentityAuthority
   Returns the identity authority that contains all the identities in bound network directory servers.
 - [class func `default`() -> CBIdentityAuthority](./cbidentityauthority/default%28%29.md)
   Returns an identity authority that contains the identities in both the local and the network-bound authorities.
+### Interacting with the Core Services Identity API
+- [CSIdentityAuthority](./cbidentityauthority/csidentityauthority.md)
+  Returns an identity authority for use with the Core Services Identity API.
+- [+ identityAuthorityWithCSIdentityAuthority:](./cbidentityauthority/identityauthoritywithcsidentityauthority_.md)
+  Returns an identity authority specified by a given Core Services Identity authority object.
 
 ## Relationships
 

@@ -47,6 +47,14 @@ typedef struct { ... } vDSP_uint24;
 ### 24-bit integer to floating point conversion
 - [struct vDSP_int24](./vdsp_int24.md)
   A data structure that holds a 24-bit signed integer value.
+- [vDSP_vflt24](./vdsp_vflt24.md)
+  Converts a vector of signed 24-bit integers to single-precision floating-point values.
+- [vDSP_vfltu24](./vdsp_vfltu24.md)
+  Converts a vector of unsigned 24-bit integers to single-precision floating-point values.
+- [vDSP_vfltsm24](./vdsp_vfltsm24.md)
+  Converts and scales a vector of signed 24-bit integers to single-precision floating-point values.
+- [vDSP_vfltsmu24](./vdsp_vfltsmu24.md)
+  Converts and scales a vector of unsigned 24-bit integers to single-precision floating-point values.
 
 
 ---

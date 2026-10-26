@@ -39,6 +39,8 @@ team = properties["gc"]["team"]
 ### Matchmaking using rules
 - [var playerProperties: [GKPlayer : [String : Any]]?](./playerproperties.md)
   The properties for other players that matchmaking rules uses to find players, with some additions.
+- [GKMatchProperties](../gkmatchproperties.md)
+  A type for game-specific properties that Game Center uses to find players when using matchmaking rules.
 
 
 ---

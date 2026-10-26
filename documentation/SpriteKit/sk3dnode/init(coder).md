@@ -34,6 +34,8 @@ Do not call this function directly; it is called by the system when you should i
 ### Creating 3D Nodes
 - [init(viewportSize: CGSize)](./init%28viewportsize%29.md)
   Initializes a new 3D node.
+- [+ nodeWithViewportSize:](./nodewithviewportsize_.md)
+  Creates and initializes a new 3D node.
 
 
 ---

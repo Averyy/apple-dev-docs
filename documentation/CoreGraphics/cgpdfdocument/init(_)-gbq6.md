@@ -41,6 +41,7 @@ Distributing individual pages of a PDF document to separate threads is not suppo
 
 ### Related Documentation
 - [Quartz 2D Programming Guide](https://developer.apple.com/library/archive/documentation/GraphicsImaging/Conceptual/drawingwithquartz2d/Introduction/Introduction.html#//apple_ref/doc/uid/TP30001066)
+- [CGContextDrawPDFDocument](../cgcontextdrawpdfdocument.md)
 ### Creating PDF Documents
 - [init?(CFURL)](./init%28_%29-2gtsd.md)
   Creates a Core Graphics PDF document using data specified by a URL.

@@ -43,6 +43,8 @@ An asset that models the media resource found at `URL`.
   Creates an asset that models the media at the specified URL.
 - [Initialization options](../avurlasset-initialization-options.md)
   Specify options to configure the initialization of a media asset.
+- [+ URLAssetWithURL:options:](./urlassetwithurl_options_.md)
+  Returns an asset that models the media resource found at the specified URL.
 
 
 ---

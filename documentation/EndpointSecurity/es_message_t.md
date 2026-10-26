@@ -71,6 +71,9 @@ A message can be an authorization request, or a notification of an event that ha
   The thread that took the action defined in a message.
 - [struct es_thread_t](./es_thread_t.md)
   A structure that represents a thread in a process.
+### Reserved Properties
+- [opaque](./es_message_t/opaque.md)
+  An opaque storage field.
 
 
 ---

@@ -28,6 +28,8 @@ class MPSNNPadNode
 - [init(source: MPSNNImageNode, paddingSizeBefore: MPSImageCoordinate, paddingSizeAfter: MPSImageCoordinate, edgeMode: MPSImageEdgeMode)](./mpsnnpadnode/init%28source,paddingsizebefore,paddingsizeafter,edgemode%29.md)
 ### Instance Properties
 - [var fillValue: Float](./mpsnnpadnode/fillvalue.md)
+### Type Methods
+- [+ nodeWithSource:paddingSizeBefore:paddingSizeAfter:edgeMode:](./mpsnnpadnode/nodewithsource_paddingsizebefore_paddingsizeafter_edgemode_.md)
 
 ## Relationships
 

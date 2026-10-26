@@ -34,6 +34,8 @@ enum AVCaptureSystemPressureFactors : NSUInteger;
   The module capturing depth information is operating at an elevated temperature.
 - [static var cameraTemperature: AVCaptureDevice.SystemPressureState.Factors](./factors-swift.struct/cameratemperature.md)
   The camera module is operating at an elevated temperature.
+- [AVCaptureSystemPressureFactorNone](../../avcapturesystempressurefactors/avcapturesystempressurefactornone.md)
+  System pressure is currently nominal.
 ### Initializers
 - [init(rawValue: UInt)](./factors-swift.struct/init%28rawvalue%29.md)
   Creates a system pressure factor from its raw string value.

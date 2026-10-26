@@ -31,6 +31,10 @@ class func hidden() -> Self
   Morphs the pointer into the provided shape when hovering over the current region.
 - [class func system() -> Self](./system%28%29.md)
   Morphs the pointer into a default system-style pointer.
+- [+ styleWithEffect:shape:](./stylewitheffect_shape_.md)
+  Applies the provided content effect and pointer shape to the current region.
+- [+ styleWithShape:constrainedAxes:](./stylewithshape_constrainedaxes_.md)
+  Morphs the pointer into the provided shape when it moves over the current region.
 
 
 ---

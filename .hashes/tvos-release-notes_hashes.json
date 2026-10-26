@@ -86,7 +86,7 @@
       "hash": "e27014889c40f9f73798d5a25468f796ca3b6e3d29cd30db460fbad78f57613d"
     },
     "https://developer.apple.com/documentation/tvos-release-notes/tvos-14_4-release-notes": {
-      "etag": "\"18b6-65ce6cafcb5c7-df\"",
+      "etag": "\"18b6-65ce6cafcb5c7\"",
       "file_path": "documentation/tvos-release-notes/tvos-14_4-release-notes.md",
       "hash": "7a2efc1568924d047341835c56d660391188a81cec6d367d60d244e3b21da436"
     },
@@ -381,7 +381,7 @@
       "hash": "e27014889c40f9f73798d5a25468f796ca3b6e3d29cd30db460fbad78f57613d"
     },
     "https://developer.apple.com/tutorials/data/documentation/tvos-release-notes/tvos-14_4-release-notes.json": {
-      "etag": "\"18b6-65ce6cafcb5c7-df\"",
+      "etag": "\"18b6-65ce6cafcb5c7\"",
       "file_path": "documentation/tvos-release-notes/tvos-14_4-release-notes.md",
       "hash": "7a2efc1568924d047341835c56d660391188a81cec6d367d60d244e3b21da436"
     },
@@ -593,7 +593,7 @@
   },
   "metadata": {
     "render": {
-      "version": 1
+      "version": 2
     },
     "total_pages": 118
   }

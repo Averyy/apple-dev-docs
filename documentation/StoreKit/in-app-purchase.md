@@ -159,6 +159,8 @@ To support a store in your app, implement the following functionality:
   Use the latest API to support Apple In-App Purchases in new or existing apps, or the original API to support Apple In-App Purchases in earlier operating systems.
 - [Original API for Apple In-App Purchase](./original-api-for-in-app-purchase.md)
   Offer additional content and services in your app using the Original Apple In-App Purchase API.
+### Macros
+- [Macros](./macros.md)
 
 ## See Also
 

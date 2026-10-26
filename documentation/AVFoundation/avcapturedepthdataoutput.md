@@ -33,6 +33,8 @@ This object always provides depth data in the format expressed by the source [`A
 ### Creating a depth data output
 - [init()](./avcapturedepthdataoutput/init%28%29.md)
   Initializes a depth data output object.
+- [+ new](./avcapturedepthdataoutput/new.md)
+  Creates a depth data output object.
 ### Configuring depth data capture
 - [var alwaysDiscardsLateDepthData: Bool](./avcapturedepthdataoutput/alwaysdiscardslatedepthdata.md)
   A Boolean value that determines whether the capture output should discard any depth data that is not processed before the next depth data is captured.

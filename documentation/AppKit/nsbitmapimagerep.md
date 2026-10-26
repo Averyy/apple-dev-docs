@@ -52,6 +52,8 @@ For this reason, you should not use an [`NSBitmapImageRep`](./nsbitmapimagerep.m
   Initializes a newly allocated bitmap image representation for incremental loading.
 - [init?(focusedViewRect: NSRect)](./nsbitmapimagerep/init%28focusedviewrect%29.md)
   Initializes a newly allocated bitmap image representation with bitmap data from a rendered image.
+- [+ imageRepWithData:](./nsbitmapimagerep/imagerepwithdata_.md)
+  Creates and returns a bitmap image representation with the first image in the specified data.
 ### Getting Information About Images
 - [var bitmapFormat: NSBitmapImageRep.Format](./nsbitmapimagerep/bitmapformat.md)
   The format of the bitmap image representation.

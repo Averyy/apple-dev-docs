@@ -161,7 +161,7 @@ For more information, see [Technology-specific views](./technology-specific-view
 - [func groupActivityAssociation(GroupActivityAssociationKind?) -> some View](./view/groupactivityassociation%28_%29.md)
   Specifies how a view should be associated with the current SharePlay group activity.
 ### Selecting photos
-- [struct PhotosPicker](https://developer.apple.com/documentation/photosui/photospicker)
+- [struct PhotosPicker](../PhotosUI/photospicker.md)
   A view that displays a Photos picker for choosing assets from the photo library.
 - [func photosPicker(isPresented: Binding<Bool>, selection: Binding<PhotosPickerItem?>, matching: PHPickerFilter?, preferredItemEncoding: PhotosPickerItem.EncodingDisambiguationPolicy) -> some View](./view/photospicker%28ispresented,selection,matching,preferreditemencoding%29.md)
   Presents a Photos picker that selects a `PhotosPickerItem`.

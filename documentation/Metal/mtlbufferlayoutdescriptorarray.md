@@ -33,6 +33,8 @@ An [`MTLBufferLayoutDescriptorArray`](./mtlbufferlayoutdescriptorarray.md) defin
 ### Array accessors
 - [subscript(Int) -> MTLBufferLayoutDescriptor!](./mtlbufferlayoutdescriptorarray/subscript%28_%29.md)
   Returns the state of the specified buffer layout.
+- [- setObject:atIndexedSubscript:](./mtlbufferlayoutdescriptorarray/setobject_atindexedsubscript_.md)
+  Sets the state of the specified buffer layout.
 
 ## Relationships
 

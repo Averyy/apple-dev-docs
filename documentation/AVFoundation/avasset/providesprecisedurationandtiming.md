@@ -29,6 +29,14 @@ var providesPreciseDurationAndTiming: Bool { get }
 @property (nonatomic, readonly) BOOL providesPreciseDurationAndTiming;
 ```
 
+## See Also
+
+### Accessing duration and timing
+- [duration](./duration.md)
+  A time value that indicates the asset’s duration.
+- [minimumTimeOffsetFromLive](./minimumtimeoffsetfromlive.md)
+  A time value that indicates how closely playback follows the latest live stream content.
+
 
 ---
 

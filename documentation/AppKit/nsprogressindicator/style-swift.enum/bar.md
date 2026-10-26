@@ -24,6 +24,10 @@ NSProgressIndicatorStyleBar
 ### Constants
 - [NSProgressIndicator.Style.spinning](./spinning.md)
   A small circular indicator that can be determinate or indeterminate.
+- [NSProgressIndicatorBarStyle](../../nsprogressindicatorbarstyle.md)
+  A rectangular indicator that can be determinate or indeterminate.
+- [NSProgressIndicatorSpinningStyle](../../nsprogressindicatorspinningstyle.md)
+  A small circular indicator that can be determinate or indeterminate.
 
 
 ---

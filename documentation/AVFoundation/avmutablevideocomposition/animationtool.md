@@ -39,6 +39,8 @@ This attribute may be `nil`. Set an animation tool if you are using the composit
   The size at which the video composition should render.
 - [var renderScale: Float](./renderscale.md)
   The scale at which the video composition should render.
+- [outputBufferDescription](./outputbufferdescription.md)
+  The output buffers of the video composition can be specified with the outputBufferDescription. The value is an array of CMTagCollectionRef objects that describes the output buffers.
 
 
 ---

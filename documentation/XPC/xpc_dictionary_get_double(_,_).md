@@ -67,6 +67,8 @@ The underlying `double` value for the specified key. NAN if the value for the sp
   Gets a date value from a dictionary directly.
 - [func xpc_dictionary_get_dictionary(xpc_object_t, UnsafePointer<CChar>) -> xpc_object_t?](./xpc_dictionary_get_dictionary%28_,_%29.md)
   Returns the dictionary value for the specified key.
+- [xpc_dictionary_get_int64](./xpc_dictionary_get_int64%28_,_%29.md)
+  Gets a 64-bit integer primitive value from a dictionary directly.
 
 
 ---

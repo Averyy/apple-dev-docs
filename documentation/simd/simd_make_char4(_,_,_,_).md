@@ -23,6 +23,8 @@ static simd_char4 simd_make_char4(char x, char y, char z, char w);
   Returns a new vector with the first element set to a scalar value, and other elements set to zero.
 - [func simd_make_char4_undef(CChar) -> simd_char4](./simd_make_char4_undef%28_%29-99pql.md)
   Returns a new vector with the first element set to a scalar value, and other elements undefined.
+- [vector4](./vector4-2lql7.md)
+  Returns a new vector from the specified scalar values.
 
 
 ---

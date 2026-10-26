@@ -32,6 +32,12 @@ class UITextFormattingViewController
   Defines grouping of text formatting components in view.
 - [UITextFormattingViewController.Configuration](./uitextformattingviewcontroller/configuration-swift.class.md)
   Text formatting view controller configuration object.
+- [UITextFormattingViewControllerChangeValue](./uitextformattingviewcontrollerchangevalue.md)
+  Describes text formatting change that is a result of user action. Contains type of change, any associated value that may be applicable to that change.
+- [UITextFormattingViewControllerFormattingDescriptor](./uitextformattingviewcontrollerformattingdescriptor.md)
+  Object that represents current text formatting state. This can apply to formatting state of some selected range of text or currently applicable input formatting.
+- [UITextFormattingViewControllerFormattingStyle](./uitextformattingviewcontrollerformattingstyle.md)
+  Type that defines formatting style presented in text formatting view.
 ### Global variables
 - [static let fontAttributes: UITextFormattingViewController.ComponentKey](./uitextformattingviewcontroller/componentkey/fontattributes.md)
 - [static let fontPicker: UITextFormattingViewController.ComponentKey](./uitextformattingviewcontroller/componentkey/fontpicker.md)
@@ -63,6 +69,7 @@ class UITextFormattingViewController
 - [static let other: UITextFormattingViewController.TextList](./uitextformattingviewcontroller/textlist/other.md)
 ### Protocols
 - [UITextFormattingViewController.Delegate](./uitextformattingviewcontroller/delegate-swift.protocol.md)
+- [UITextFormattingViewControllerDelegate](./uitextformattingviewcontrollerdelegate.md)
 ### Structures
 - [UITextFormattingViewController.FormattingDescriptor](./uitextformattingviewcontroller/formattingdescriptor-swift.struct.md)
 - [UITextFormattingViewController.FormattingStyle](./uitextformattingviewcontroller/formattingstyle.md)
@@ -74,6 +81,8 @@ class UITextFormattingViewController
   Current text formatting configuration object.
 - [var delegate: (any UITextFormattingViewController.Delegate)?](./uitextformattingviewcontroller/delegate-52zfw.md)
 - [var formattingDescriptor: UITextFormattingViewController.FormattingDescriptor?](./uitextformattingviewcontroller/formattingdescriptor-9sir9.md)
+- [delegate](./uitextformattingviewcontroller/delegate-1mkbi.md)
+- [formattingDescriptor](./uitextformattingviewcontroller/formattingdescriptor-7nlvc.md)
 ### Enumerations
 - [UITextFormattingViewController.ChangeValue](./uitextformattingviewcontroller/changevalue.md)
 

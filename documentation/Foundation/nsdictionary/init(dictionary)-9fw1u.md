@@ -40,6 +40,9 @@ An initialized dictionaryâ€”which might be different than the original receiverâ
   Initializes a newly allocated dictionary using the objects contained in another given dictionary.
 - [convenience init(dictionaryLiteral: (Any, Any)...)](./init%28dictionaryliteral%29.md)
   Initializes a newly allocated dictionary from the given key-value pairs.
+### Related Documentation
+- [+ dictionaryWithDictionary:](./dictionarywithdictionary_.md)
+  Creates a dictionary containing the keys and values from another given dictionary.
 
 
 ---

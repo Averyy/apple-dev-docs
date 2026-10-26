@@ -23,7 +23,7 @@ CPAssistantCellActionTypeStartCall
 
 #### Discussion
 
-> **Note**:  This action is only available in communication apps that include an Intents Extension capable of handling [`INStartCallIntent`](https://developer.apple.com/documentation/intents/instartcallintent). For more information, see [Creating an Intents App Extension](../../SiriKit/creating-an-intents-app-extension.md).
+> **Note**:  This action is only available in communication apps that include an Intents Extension capable of handling [`INStartCallIntent`](../../Intents/instartcallintent.md). For more information, see [Creating an Intents App Extension](../../SiriKit/creating-an-intents-app-extension.md).
 
 The system provides the user’s response to your app’s Intents Extension. Your app must respond by identifying the requested person, group, or business and start a voice call with them.
 

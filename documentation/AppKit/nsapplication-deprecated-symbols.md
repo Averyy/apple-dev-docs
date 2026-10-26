@@ -22,6 +22,12 @@ Although these symbols are available for use, Apple is no longer actively develo
   Ends a document modal session by specifying the sheet window.
 - [func endSheet(NSWindow, returnCode: Int)](./nsapplication/endsheet%28_,returncode%29.md)
   Ends a document modal session by specifying the sheet window.
+- [- beginModalSessionForWindow:relativeToWindow:](./nsapplication/beginmodalsessionforwindow_relativetowindow_.md)
+- [- runModalForWindow:relativeToWindow:](./nsapplication/runmodalforwindow_relativetowindow_.md)
+- [- application:printFiles:](./nsapplication/application_printfiles_.md)
+  Use the delegate method [`application:printFiles:withSettings:showPrintPanels:`](./nsapplicationdelegate/application%28_,printfiles,withsettings,showprintpanels%29.md) instead.
+- [- application:delegateHandlesKey:](../ObjectiveC/nsobject-swift.class/application_delegatehandleskey_.md)
+  Sent by Cocoa’s built-in scripting support during execution of `get` or `set` script commands to find out if the delegate can handle operations on the specified key-value key.
 
 
 ---

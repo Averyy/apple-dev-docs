@@ -24,6 +24,12 @@ var sourceFrame: VTFrameProcessorFrame { get }
 @property (nonatomic, readonly) VTFrameProcessorFrame * sourceFrame;
 ```
 
+## See Also
+
+### Inspecting the parameters
+- [destinationFrame](./destinationframe.md)
+  Destination frame that contains user-allocated pixel buffer that receives the scaled processor output.
+
 
 ---
 

@@ -29,6 +29,10 @@ UIStatusBarStyleLightContent
   A style that automatically selects an appearance for the status bar and updates it dynamically to maintain contrast with the content below it.
 - [UIStatusBarStyle.darkContent](./darkcontent.md)
   A dark status bar, intended for use on light backgrounds.
+- [UIStatusBarStyleBlackTranslucent](./uistatusbarstyleblacktranslucent.md)
+  A transparent black style.
+- [UIStatusBarStyleBlackOpaque](./uistatusbarstyleblackopaque.md)
+  An opaque black style.
 
 
 ---

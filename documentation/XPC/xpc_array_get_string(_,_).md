@@ -67,6 +67,8 @@ The underlying C string at the specified index. NULL if the value at the specifi
   Gets a date interval from an array directly.
 - [func xpc_array_get_dictionary(xpc_object_t, Int) -> xpc_object_t?](./xpc_array_get_dictionary%28_,_%29.md)
   Returns the dictionary at the specified index in the array.
+- [xpc_array_get_double](./xpc_array_get_double%28_,_%29.md)
+  Gets a double-precision floating point primitive value from an array directly.
 
 
 ---

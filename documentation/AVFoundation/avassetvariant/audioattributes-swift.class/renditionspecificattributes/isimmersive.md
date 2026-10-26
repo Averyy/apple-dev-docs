@@ -38,6 +38,8 @@ If a variant audio redition is immersive it’s eligible for rendering to headph
   A Boolean value that indicates the variant is best suited for delivery to headphones.
 - [var isDownmix: Bool](./isdownmix.md)
   A Boolean value that indicates whether the variant is a downmix derivative of other media of greater channel count.
+- [channelCount](../../../avassetvariantaudiorenditionspecificattributes/channelcount.md)
+  The count of audio channels in the rendition.
 
 
 ---

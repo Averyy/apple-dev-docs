@@ -60,6 +60,9 @@ class VTFrameRateConversionConfiguration
   A Boolean value that indicates whether the processor supported on the current configuration.
 - [var frameSupportedPixelFormats: [NSNumber]](./vtframerateconversionconfiguration/framesupportedpixelformats-54soi.md)
   A list of source frame supported pixel formats for the current configuration.
+### Instance Properties
+- [frameSupportedPixelFormats](./vtframerateconversionconfiguration/framesupportedpixelformats-9w7f9.md)
+  Supported pixel formats available for source frames for current configuration.
 
 ## Relationships
 

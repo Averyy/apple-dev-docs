@@ -39,6 +39,8 @@ Use this property to configure the launch scene’s document browser.
   A configuration that describes the launch scene’s background.
 - [var documentTargetView: UIView?](./documenttargetview.md)
   The document target view.
+- [background](../../uidocumentviewcontrollerlaunchoptions/background.md)
+  A configuration that describes the launch scene’s background.
 
 
 ---

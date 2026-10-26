@@ -37,6 +37,11 @@ An instance of a class corresponding to this protocol is passed to [`processWith
   [`VTFrameProcessorFrame`](./vtframeprocessorframe.md) that contains the destination frame for processors which output a single processed frame.
 - [var destinationFrames: [VTFrameProcessorFrame]?](./vtframeprocessorparameters/destinationframes-46ken.md)
   Array of [`VTFrameProcessorFrame`](./vtframeprocessorframe.md) that contains the destination frames for processors which may output more than one processed frame.
+### Instance Properties
+- [destinationFrame](./vtframeprocessorparameters/destinationframe-3im3l.md)
+  Destination frame that contains the destination frame for processors which output a single processed frame.
+- [destinationFrames](./vtframeprocessorparameters/destinationframes-8yges.md)
+  Array of destination frames for processors which may output more than one processed frame.
 
 ## Relationships
 

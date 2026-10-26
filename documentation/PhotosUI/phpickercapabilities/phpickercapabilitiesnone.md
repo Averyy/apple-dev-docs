@@ -1,0 +1,39 @@
+# PHPickerCapabilitiesNone
+
+**Framework**: PhotosUI  
+**Kind**: case  
+**Role**: Enumeration Case
+
+An option that represents no capabilities.
+
+**Availability**:
+- iOS 17.0+
+- iPadOS 17.0+
+- Mac Catalyst 17.0+
+- macOS 14.0+
+- visionOS 1.0+
+
+## Declaration
+
+```c
+PHPickerCapabilitiesNone
+```
+
+## See Also
+
+### Specifying features
+- [static var collectionNavigation: PHPickerCapabilities](./collectionnavigation.md)
+  A capability that corresponds to a sidebar or the Albums tab.
+- [static var selectionActions: PHPickerCapabilities](./selectionactions.md)
+  A cabability that represents the Cancel and Add buttons.
+- [static var search: PHPickerCapabilities](./search.md)
+  A capability that corresponds to the search bar.
+- [static var sensitivityAnalysisIntervention: PHPickerCapabilities](./sensitivityanalysisintervention.md)
+  A capability that prompts for confirmation if a person selects a photo that contains nudity.
+- [static var stagingArea: PHPickerCapabilities](./stagingarea.md)
+  A capability that corresponds to an area in which the selected photos display.
+
+
+---
+
+*[View on Apple Developer](https://developer.apple.com/documentation/photosui/phpickercapabilities/phpickercapabilitiesnone)*

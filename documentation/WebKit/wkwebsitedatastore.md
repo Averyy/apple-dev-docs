@@ -77,6 +77,7 @@ To implement profile browsing, create a persistent data store using the [`init(f
 - [init?(coder: NSCoder)](./wkwebsitedatastore/init%28coder%29.md)
 ### Instance Properties
 - [var proxyConfigurations: [ProxyConfiguration]](./wkwebsitedatastore/proxyconfigurations-cdc1.md)
+- [proxyConfigurations](./wkwebsitedatastore/proxyconfigurations-6g21z.md)
 ### Instance Methods
 - [func fetchData(of: Set<String>, completionHandler: (Data?, (any Error)?) -> Void)](./wkwebsitedatastore/fetchdata%28of,completionhandler%29.md)
 - [func restoreData(Data, completionHandler: ((any Error)?) -> Void)](./wkwebsitedatastore/restoredata%28_,completionhandler%29.md)
@@ -109,6 +110,9 @@ To implement profile browsing, create a persistent data store using the [`init(f
   An interface that WebKit uses to request custom resources from your app.
 - [static let readAccessURL: NSAttributedString.DocumentReadingOptionKey](../Foundation/nsattributedstring/documentreadingoptionkey/readaccessurl.md)
   The local files WebKit can access when loading content.
+- [NSReadAccessURLDocumentOption](./nsreadaccessurldocumentoption.md)
+- [WKCookiePolicy](./wkhttpcookiestore/cookiepolicy.md)
+  An enumeration with cases that indicate whether a cookie store allows cookie storage.
 
 
 ---

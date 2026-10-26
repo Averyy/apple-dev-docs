@@ -24,6 +24,12 @@ var nodeInteraction: AUNodeInteraction.__Unnamed_union_nodeInteraction
 union { ... } nodeInteraction;
 ```
 
+## Topics
+
+### Instance Properties
+- [connection](./nodeinteraction/connection.md)
+- [inputCallback](./nodeinteraction/inputcallback.md)
+
 
 ---
 

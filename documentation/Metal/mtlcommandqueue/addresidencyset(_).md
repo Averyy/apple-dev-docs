@@ -42,6 +42,8 @@ Each command queue can maintain a list of up to 32 different residency sets. See
 ### Attaching residency sets
 - [func addResidencySets([any MTLResidencySet])](./addresidencysets%28_%29.md)
   Applies multiple residency sets to a queue, which Metal applies to the queue’s command buffers as you commit them.
+- [- addResidencySets:count:](./addresidencysets_count_.md)
+  Applies multiple residency sets to a queue, which Metal applies to the queue’s command buffers as you commit them.
 
 
 ---

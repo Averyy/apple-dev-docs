@@ -42,6 +42,8 @@ This is the class’s designated initializer method.
 ### Creating a Scene Programmatically
 - [var size: CGSize](./size.md)
   The dimensions of the scene, in points.
+- [+ sceneWithSize:](./scenewithsize_.md)
+  Creates and returns a new scene object.
 
 
 ---

@@ -29,6 +29,8 @@ MPMediaPlaylistAttributeSmart
   A playlist created on a device rather than synced from the Music app.
 - [static var genius: MPMediaPlaylistAttribute](./genius.md)
   A Genius playlist includes items related to other items in your Music library.
+- [MPMediaPlaylistAttributeNone](./mpmediaplaylistattributenone.md)
+  A playlist with no attributes.
 
 
 ---

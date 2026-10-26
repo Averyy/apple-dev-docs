@@ -54,6 +54,10 @@ This method raises an [`invalidArgumentException`](../nsexceptionname/invalidarg
   Indicates whether the receiver requires all unarchived classes to conform to [`NSSecureCoding`](../nssecurecoding.md).
 - [class func unarchiveObject(with: Data) -> Any?](./unarchiveobject%28with%29.md)
   Decodes and returns the object graph previously encoded by `NSKeyedArchiver` and stored in a given `NSData` object.
+- [+ unarchivedObjectOfClass:fromData:error:](./unarchivedobjectofclass_fromdata_error_.md)
+  Decodes a previously-archived object graph, that returns the root object as the specified type.
+- [+ unarchiveTopLevelObjectWithData:error:](./unarchivetoplevelobjectwithdata_error_.md)
+  Decodes a previously-archived object graph, returning the root object.
 
 
 ---

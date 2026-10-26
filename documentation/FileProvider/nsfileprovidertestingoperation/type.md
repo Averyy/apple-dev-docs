@@ -24,6 +24,26 @@ var type: NSFileProviderTestingOperationType { get }
 @property (nonatomic, readonly) NSFileProviderTestingOperationType type;
 ```
 
+## See Also
+
+### Access the Operation Type
+- [- asChildrenEnumeration](./aschildrenenumeration.md)
+  Returns the operation if it enumerates contained items.
+- [- asCollisionResolution](./ascollisionresolution.md)
+  Returns the operation if it resolves a collision by renaming the new item.
+- [- asContentFetch](./ascontentfetch.md)
+  Returns the operation if it fetches an item’s content.
+- [- asCreation](./ascreation.md)
+  Returns the operation if it propagates the creation of an item.
+- [- asDeletion](./asdeletion.md)
+  Returns the operation if it propagates the deletion of an item.
+- [- asIngestion](./asingestion.md)
+  Returns the operation if it alerts the system to changes.
+- [- asLookup](./aslookup.md)
+  Returns the operation if it looks up an item.
+- [- asModification](./asmodification.md)
+  Returns the operation if it propagates a change.
+
 
 ---
 

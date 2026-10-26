@@ -40,6 +40,8 @@ var restaurantLocation: CLPlacemark { get }
   The date and time range that defines beginning and end of the restaurant reservation.
 - [var partySize: Int?](./partysize-9ux0p.md)
   The number of people in the party.
+- [partySize](./partysize-9mtpk.md)
+  The number of people in the party.
 
 
 ---

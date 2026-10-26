@@ -23,6 +23,9 @@ Browse debugging utilities and constants to use with the XPC APIs.
   Encapsulate data in objects that represent primitive types, collections, and more.
 - [XPC connections](./xpc-connections.md)
   Create and manage connections to services using connection-based APIs.
+### Additional types
+- [launchd](./launchd.md)
+  Browse APIs for interacting with `launchd`.
 
 
 ---

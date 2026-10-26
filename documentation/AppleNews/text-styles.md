@@ -23,24 +23,24 @@ With Apple News Format, you can determine every detail about the appearance of y
   Define and apply custom, default, and inline text styles, or use HTML tags or Markdown syntax to style your text.
 - [Applying Apple News Format Fonts](./applying-apple-news-format-fonts.md)
   Choose a font family for Apple News Format that’s supported in iOS, iPadOS, and macOS.
-- [object TextStyle](https://developer.apple.com/documentation/applenewsformat/textstyle)
+- [object TextStyle](../AppleNewsFormat/textstyle.md)
   The object for defining the text style, such as font family, size, and color, that you can apply to ranges of text.
-- [object ComponentTextStyle](https://developer.apple.com/documentation/applenewsformat/componenttextstyle)
+- [object ComponentTextStyle](../AppleNewsFormat/componenttextstyle.md)
   The object for defining the style for a text component, including spacing, alignment, and drop caps.
-- [object DropCapStyle](https://developer.apple.com/documentation/applenewsformat/dropcapstyle)
+- [object DropCapStyle](../AppleNewsFormat/dropcapstyle.md)
   The object for defining the drop cap text style to use in the first paragraph in a text component.
-- [object ListItemStyle](https://developer.apple.com/documentation/applenewsformat/listitemstyle)
+- [object ListItemStyle](../AppleNewsFormat/listitemstyle.md)
   The object for defining the style for bulleted or numbered lists in an article.
-- [object InlineTextStyle](https://developer.apple.com/documentation/applenewsformat/inlinetextstyle)
+- [object InlineTextStyle](../AppleNewsFormat/inlinetextstyle.md)
   The object for applying text styling when not using HTML or Markdown formatting.
 ### Text Effects
-- [object TextShadow](https://developer.apple.com/documentation/applenewsformat/textshadow)
+- [object TextShadow](../AppleNewsFormat/textshadow.md)
   The object for creating a text shadow.
-- [object TextShadowOffset](https://developer.apple.com/documentation/applenewsformat/textshadowoffset)
+- [object TextShadowOffset](../AppleNewsFormat/textshadowoffset.md)
   The object for setting an offset value to use with a text shadow.
-- [object TextStrokeStyle](https://developer.apple.com/documentation/applenewsformat/textstrokestyle)
+- [object TextStrokeStyle](../AppleNewsFormat/textstrokestyle.md)
   The object for defining the stroke to use for an outline on text.
-- [object TextDecoration](https://developer.apple.com/documentation/applenewsformat/textdecoration)
+- [object TextDecoration](../AppleNewsFormat/textdecoration.md)
   The object for defining color for text underline or strikethrough.
 
 ## See Also
@@ -53,13 +53,13 @@ With Apple News Format, you can determine every detail about the appearance of y
   Improve the appearance of the text and components in your article by using Apple News Format styles.
 - [Supporting Dark Mode for Your Article](./supporting-dark-mode-for-your-article.md)
   Update your article template so that your article adapts when Dark Mode is active.
-- [object DocumentStyle](https://developer.apple.com/documentation/applenewsformat/documentstyle)
+- [object DocumentStyle](../AppleNewsFormat/documentstyle.md)
   The object for setting the background color for your article.
 - [Component Styles](./component-styles.md)
   Learn to use component styles to add borders, set background colors, and apply background images to components and to set the styling for tables.
 - [Supported Color Names](./supported-color-names.md)
   Learn the color names supported in Apple News Format.
-- [type Color](https://developer.apple.com/documentation/applenewsformat/color)
+- [type Color](../AppleNewsFormat/color.md)
   The strings for defining colors in Apple News Format.
 
 

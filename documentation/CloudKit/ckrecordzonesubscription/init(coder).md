@@ -36,6 +36,8 @@ init(coder aDecoder: NSCoder)
   Creates a subscription for all records in the specified record zone.
 - [convenience init(zoneID: CKRecordZone.ID, subscriptionID: CKSubscription.ID)](./init%28zoneid,subscriptionid%29.md)
   Creates a named subscription for all records in the specified record zone.
+- [- initWithZoneID:subscriptionID:](./initwithzoneid_subscriptionid_.md)
+  Creates a named subscription for all records in the specified record zone.
 
 
 ---

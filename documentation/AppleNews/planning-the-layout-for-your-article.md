@@ -35,7 +35,7 @@ The News app doesn’t scale up. The number of columns decreases on narrower dis
 
 ##### Set Up the Layout for Your Article
 
-To set the layout for your article, use a [`Layout`](https://developer.apple.com/documentation/applenewsformat/layout) object to specify the following:
+To set the layout for your article, use a [`Layout`](../AppleNewsFormat/layout.md) object to specify the following:
 
 - `columns`. Default: 7. Number of columns in the article.
 - `width`. Default: 1024 pts. Width the article is designed for in points (iPad in landscape orientation).
@@ -60,17 +60,17 @@ Your next step is to position each component. See [Positioning the Content in Yo
   Align article components with columns in your layout.
 - [Wrapping Text Around a Component](./wrapping-text-around-a-component.md)
   Define the layout of a text component to wrap around another component.
-- [object Layout](https://developer.apple.com/documentation/applenewsformat/layout)
+- [object Layout](../AppleNewsFormat/layout.md)
   The object for defining columns, gutters, and margins for your article’s designed width.
-- [object ComponentLayout](https://developer.apple.com/documentation/applenewsformat/componentlayout)
+- [object ComponentLayout](../AppleNewsFormat/componentlayout.md)
   The object for defining the positioning for a specific component within the article’s column system.
-- [object Anchor](https://developer.apple.com/documentation/applenewsformat/anchor)
+- [object Anchor](../AppleNewsFormat/anchor.md)
   The object for anchoring one component to another component in your article’s layout.
-- [object Margin](https://developer.apple.com/documentation/applenewsformat/margin)
+- [object Margin](../AppleNewsFormat/margin.md)
   The object for defining the space above and below a component.
-- [object AutoPlacementLayout](https://developer.apple.com/documentation/applenewsformat/autoplacementlayout)
+- [object AutoPlacementLayout](../AppleNewsFormat/autoplacementlayout.md)
   The object for defining the margin above and below advertising components.
-- [object AdvertisingLayout](https://developer.apple.com/documentation/applenewsformat/advertisinglayout)
+- [object AdvertisingLayout](../AppleNewsFormat/advertisinglayout.md)
   The object for defining the margin above and below advertising components.
 
 

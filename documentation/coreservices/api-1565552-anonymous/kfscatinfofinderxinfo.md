@@ -1,0 +1,20 @@
+# kFSCatInfoFinderXInfo
+
+**Framework**: Core Services  
+**Kind**: econst  
+**Role**: Enumeration Case
+
+**Availability**:
+- Mac Catalyst 17.0+
+- macOS 10.0+
+
+## Declaration
+
+```c
+kFSCatInfoFinderXInfo = 0x00001000
+```
+
+
+---
+
+*[View on Apple Developer](https://developer.apple.com/documentation/coreservices/1565552-anonymous/kfscatinfofinderxinfo)*

@@ -36,6 +36,12 @@ simd_double3 vector;
   The distance to the origin.
 - [var customMirror: Mirror](./custommirror.md)
   The custom mirror for this instance.
+- [azimuth](../spsphericalcoordinates3d/azimuth.md)
+  The azimuthal angle, in radians.
+- [inclination](../spsphericalcoordinates3d/inclination.md)
+  The inclination angle, in radians.
+- [radius](../spsphericalcoordinates3d/radius.md)
+  The distance to the origin.
 
 
 ---

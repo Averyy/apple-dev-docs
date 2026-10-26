@@ -59,6 +59,20 @@ Extract information from various USB descriptors using helper methods.
 - [func IOUSBGetEndpointMaxStreams(UInt32, UnsafePointer<IOUSBEndpointDescriptor>!, UnsafePointer<IOUSBSuperSpeedEndpointCompanionDescriptor>!) -> UInt32](./iousbgetendpointmaxstreams%28_,_,_%29.md)
   Obtains the number of supported streams.
 
+## See Also
+
+### Retrieving Base Class Descriptors
+- [- descriptorWithType:length:index:languageID:requestType:requestRecipient:error:](./iousbhostobject/descriptorwithtype_length_index_languageid_requesttype_requestrecipient_error_.md)
+  Retrieves a descriptor from the cache or the device.
+- [- descriptorWithType:length:error:](./iousbhostobject/descriptorwithtype_length_error_.md)
+  Retrieves a descriptor with default arguments from the cache or the device.
+- [- descriptorWithType:length:index:languageID:error:](./iousbhostobject/descriptorwithtype_length_index_languageid_error_.md)
+  Retrieves a string descriptor from the cache or the device.
+- [- stringWithIndex:languageID:error:](./iousbhostobject/stringwithindex_languageid_error_.md)
+  Retrieves a string from a string descriptor.
+- [- stringWithIndex:error:](./iousbhostobject/stringwithindex_error_.md)
+  Retrieves an English-language string from a string descriptor.
+
 
 ---
 

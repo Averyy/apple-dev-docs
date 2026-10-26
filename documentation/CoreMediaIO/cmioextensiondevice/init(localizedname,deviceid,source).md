@@ -31,6 +31,10 @@ convenience init(localizedName: String, deviceID: UUID, source: any CMIOExtensio
 ### Creating a Device
 - [init(localizedName: String, deviceID: UUID, legacyDeviceID: String?, source: any CMIOExtensionDeviceSource)](./init%28localizedname,deviceid,legacydeviceid,source%29.md)
   Creates an extension device with an optional legacy device identifier.
+- [+ deviceWithLocalizedName:deviceID:source:](./devicewithlocalizedname_deviceid_source_.md)
+  Returns a new extension device.
+- [+ deviceWithLocalizedName:deviceID:legacyDeviceID:source:](./devicewithlocalizedname_deviceid_legacydeviceid_source_.md)
+  Returns a new extension device with an optional legacy device identifier.
 
 
 ---

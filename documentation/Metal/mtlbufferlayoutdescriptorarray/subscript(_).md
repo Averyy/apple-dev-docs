@@ -32,6 +32,12 @@ The buffer layout descriptor for the buffer bound to the given attribute table i
 
 - `index`: A specified index in the array of buffer layouts.
 
+## See Also
+
+### Array accessors
+- [- setObject:atIndexedSubscript:](./setobject_atindexedsubscript_.md)
+  Sets the state of the specified buffer layout.
+
 
 ---
 

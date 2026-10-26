@@ -87,6 +87,26 @@ Configure your app’s drawing environment using colors, renderers, draw paths, 
   Returns a string formatted to contain the data from a size data structure.
 - [class func string(for: CGVector) -> String](../Foundation/nscoder/string%28for%29-4omzv.md)
   Returns a string formatted to contain the data from a vector data structure.
+- [CGAffineTransformFromString](./cgaffinetransformfromstring.md)
+  Returns a Core Graphics affine transform structure corresponding to the data in a given string.
+- [CGPointFromString](./cgpointfromstring.md)
+  Returns a Core Graphics point structure corresponding to the data in a given string.
+- [CGRectFromString](./cgrectfromstring.md)
+  Returns a Core Graphics rectangle structure corresponding to the data in a given string.
+- [CGSizeFromString](./cgsizefromstring.md)
+  Returns a Core Graphics size structure corresponding to the data in a given string.
+- [CGVectorFromString](./cgvectorfromstring.md)
+  Returns a Core Graphics vector corresponding to the data in a given string.
+- [NSStringFromCGAffineTransform](./nsstringfromcgaffinetransform.md)
+  Returns a string formatted to contain the data from an affine transform.
+- [NSStringFromCGPoint](./nsstringfromcgpoint.md)
+  Returns a string formatted to contain the data from a point.
+- [NSStringFromCGRect](./nsstringfromcgrect.md)
+  Returns a string formatted to contain the data from a rectangle.
+- [NSStringFromCGSize](./nsstringfromcgsize.md)
+  Returns a string formatted to contain the data from a size data structure.
+- [NSStringFromCGVector](./nsstringfromcgvector.md)
+  Returns a string formatted to contain the data from a vector data structure.
 ### Deprecated
 - [Deprecated symbols](./drawing-deprecated-symbols.md)
   Review symbols that are no longer in active development, and their recommended replacements.

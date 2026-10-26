@@ -39,6 +39,8 @@ The default value of this property is [`true`](../../Swift/true.md).
   The supported handle types.
 - [var supportsVideo: Bool](./supportsvideo.md)
   A Boolean value that indicates whether the provider supports video in addition to audio.
+- [supportedHandleTypes](./supportedhandletypes-995uh.md)
+  The supported handle types.
 
 
 ---

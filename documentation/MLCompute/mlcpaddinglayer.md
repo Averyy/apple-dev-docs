@@ -34,6 +34,14 @@ class MLCPaddingLayer
   Creates a padding layer with the zero padding sizes you specify.
 - [convenience init(constantPadding: [Int], constantValue: Float)](./mlcpaddinglayer/init%28constantpadding,constantvalue%29.md)
   Creates a padding layer with the constant padding sizes and constant value you specify.
+- [+ layerWithReflectionPadding:](./mlcpaddinglayer/layerwithreflectionpadding_.md)
+  Creates a padding layer with the reflection padding sizes you specify.
+- [+ layerWithSymmetricPadding:](./mlcpaddinglayer/layerwithsymmetricpadding_.md)
+  Creates a padding layer with the symmetric padding sizes you specify.
+- [+ layerWithZeroPadding:](./mlcpaddinglayer/layerwithzeropadding_.md)
+  Creates a padding layer with the zero padding sizes you specify.
+- [+ layerWithConstantPadding:constantValue:](./mlcpaddinglayer/layerwithconstantpadding_constantvalue_.md)
+  Creates a padding layer with the constant padding sizes and constant valu you specify.
 ### Inspecting Padding Layers
 - [var paddingType: MLCPaddingType](./mlcpaddinglayer/paddingtype.md)
   The padding type.

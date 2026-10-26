@@ -36,6 +36,9 @@ class Pipe
   The receiver’s read file handle.
 - [var fileHandleForWriting: FileHandle](./pipe/filehandleforwriting.md)
   The receiver’s write file handle.
+### Creating an NSPipe Object
+- [+ pipe](./nspipe/pipe.md)
+  Returns an `NSPipe` object.
 
 ## Relationships
 

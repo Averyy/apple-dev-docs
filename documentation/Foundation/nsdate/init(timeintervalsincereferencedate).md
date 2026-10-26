@@ -48,6 +48,9 @@ This method is a designated initializer for the `NSDate` class and is declared p
   Returns a date object initialized relative to 00:00:00 UTC on 1 January 1970 by a given number of seconds.
 - [init?(coder: NSCoder)](./init%28coder%29.md)
   Returns a date object initialized from data in the given unarchiver.
+### Related Documentation
+- [+ dateWithTimeIntervalSinceReferenceDate:](./datewithtimeintervalsincereferencedate_.md)
+  Creates and returns a date object set to a given number of seconds from 00:00:00 UTC on 1 January 2001.
 
 
 ---

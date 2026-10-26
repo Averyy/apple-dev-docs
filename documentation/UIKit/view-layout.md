@@ -34,6 +34,8 @@ When you design your app’s interface, you position views and other interface e
   The relationship between two user interface objects that must be satisfied by the constraint-based layout system.
 - [protocol UILayoutSupport](./uilayoutsupport.md)
   A set of methods that provide layout support and access to layout anchors.
+- [NSDictionaryOfVariableBindings](./nsdictionaryofvariablebindings.md)
+  Creates a dictionary wherein the keys are string representations of the corresponding values’ variable names.
 ### Layout guides
 - [class UILayoutGuide](./uilayoutguide.md)
   A rectangular area that can interact with Auto Layout.

@@ -55,6 +55,12 @@ To create a custom [`SCNGeometry`](../scngeometry.md) object from the geometry s
   Creates a geometry source from an array of normal vectors.
 - [convenience init(textureCoordinates: [CGPoint])](./init%28texturecoordinates%29.md)
   Creates a geometry source from an array of texture coordinate points.
+- [+ geometrySourceWithVertices:count:](./geometrysourcewithvertices_count_.md)
+  Creates a geometry source from an array of vertex positions.
+- [+ geometrySourceWithNormals:count:](./geometrysourcewithnormals_count_.md)
+  Creates a geometry source from an array of normal vectors.
+- [+ geometrySourceWithTextureCoordinates:count:](./geometrysourcewithtexturecoordinates_count_.md)
+  Creates a geometry source from an array of texture coordinate points.
 
 
 ---

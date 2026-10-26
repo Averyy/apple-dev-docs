@@ -92,6 +92,14 @@ When configuring map tables, note that only the options listed in [`NSMapTableOp
   An instance of `NSPointerFunctions` defines callout functions appropriate for managing a pointer reference held somewhere else.
 ### Deprecated
 - [Legacy Map Table Implementation](./legacy-map-table-implementation.md)
+- [+ mapTableWithStrongToStrongObjects](./nsmaptable/maptablewithstrongtostrongobjects.md)
+  Returns a new map table object which has strong references to the keys and values.
+- [+ mapTableWithWeakToStrongObjects](./nsmaptable/maptablewithweaktostrongobjects.md)
+  Returns a new map table object which has weak references to the keys and strong references to the values.
+- [+ mapTableWithStrongToWeakObjects](./nsmaptable/maptablewithstrongtoweakobjects.md)
+  Returns a new map table object which has strong references to the keys and weak references to the values.
+- [+ mapTableWithWeakToWeakObjects](./nsmaptable/maptablewithweaktoweakobjects.md)
+  Returns a new map table object which has weak references to the keys and values.
 ### Initializers
 - [init?(coder: NSCoder)](./nsmaptable/init%28coder%29.md)
 

@@ -288,6 +288,10 @@ Access network services and handle changes in network configurations. Build on a
   Unschedules a CFNetService from a run loop.
 - [func CFNetServiceScheduleWithRunLoop(CFNetService, CFRunLoop, CFString)](./cfnetserviceschedulewithrunloop%28_,_,_%29.md)
   Schedules a CFNetService on a run loop.
+- [CFNetServiceRegister](./cfnetserviceregister.md)
+  Makes a CFNetService available on the network.
+- [CFNetServiceResolve](./cfnetserviceresolve.md)
+  This function updates the specified CFNetService with the IP address or addresses associated with the service. Call [`CFNetServiceGetAddressing`](./cfnetservicegetaddressing%28_%29.md) to get the addresses.
 ### Streams
 - [func CFReadStreamCreateForHTTPRequest(CFAllocator?, CFHTTPMessage) -> Unmanaged<CFReadStream>](./cfreadstreamcreateforhttprequest%28_,_%29.md)
   Creates a read stream for a CFHTTP request message.

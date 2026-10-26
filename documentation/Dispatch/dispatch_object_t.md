@@ -25,6 +25,11 @@ typealias dispatch_object_t = DispatchObject
 typedef NSObject<OS_dispatch_object> * dispatch_object_t;
 ```
 
+## Topics
+
+### Object Type
+- [OS_dispatch_object](./os_dispatch_object.md)
+
 ## See Also
 
 ### Data Types

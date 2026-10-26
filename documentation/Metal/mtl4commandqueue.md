@@ -62,6 +62,22 @@ protocol MTL4CommandQueue : NSObjectProtocol, Sendable
   Schedules a wait operation on the command queue to ensure the display is no longer using a specific Metal drawable.
 - [func waitForEvent(any MTLEvent, value: UInt64)](./mtl4commandqueue/waitforevent%28_,value%29.md)
   Schedules an operation to wait for a GPU event of a specific value before continuing to execute any future GPU work.
+- [- addResidencySets:count:](./mtl4commandqueue/addresidencysets_count_.md)
+  Applies multiple residency sets to a queue, which Metal applies to the queue’s command buffers as you commit them.
+- [- commit:count:](./mtl4commandqueue/commit_count_.md)
+  Enqueues an array of command buffers for execution.
+- [- commit:count:options:](./mtl4commandqueue/commit_count_options_.md)
+  Enqueues an array of command buffer instances for execution with a set of options.
+- [- copyBufferMappingsFromBuffer:toBuffer:operations:count:](./mtl4commandqueue/copybuffermappingsfrombuffer_tobuffer_operations_count_.md)
+  Copies multiple offsets within a source placement sparse buffer to a destination placement sparse buffer.
+- [- copyTextureMappingsFromTexture:toTexture:operations:count:](./mtl4commandqueue/copytexturemappingsfromtexture_totexture_operations_count_.md)
+  Copies multiple regions within a source placement sparse texture to a destination placement sparse texture.
+- [- removeResidencySets:count:](./mtl4commandqueue/removeresidencysets_count_.md)
+  Removes multiple residency sets from a command queue’s list, which means Metal doesn’t apply them to the queue’s command buffers as you commit them.
+- [- updateBufferMappings:heap:operations:count:](./mtl4commandqueue/updatebuffermappings_heap_operations_count_.md)
+  Updates multiple regions within a placement sparse buffer to alias specific tiles from a Metal heap.
+- [- updateTextureMappings:heap:operations:count:](./mtl4commandqueue/updatetexturemappings_heap_operations_count_.md)
+  Updates multiple regions within a placement sparse texture to alias specific tiles of a Metal heap.
 
 ## Relationships
 
@@ -101,6 +117,8 @@ protocol MTL4CommandQueue : NSObjectProtocol, Sendable
   Describes an object containing debug information from Metal to your app after completing a workload.
 - [typealias MTL4CommitFeedbackHandler](./mtl4commitfeedbackhandler.md)
   Defines the block signature for a callback Metal invokes to provide your app feedback after completing a workload.
+- [MTL4CounterHeap](./mtl4counterheap.md)
+  Represents an opaque, driver-controlled section of memory that can store GPU counter data.
 
 
 ---

@@ -5,6 +5,11 @@
 
 Defines the encoding type for window sharing values.
 
+## Topics
+
+### Constants
+- [kCGWindowSharingCFNumberType](./kcgwindowsharingcfnumbertype.md)
+
 ## See Also
 
 ### Constants

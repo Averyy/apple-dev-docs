@@ -29,6 +29,8 @@ class MTLRenderPassColorAttachmentDescriptorArray
 ### Accessing the description of a color attachment
 - [subscript(Int) -> MTLRenderPassColorAttachmentDescriptor!](./mtlrenderpasscolorattachmentdescriptorarray/subscript%28_%29.md)
   Returns the descriptor object for the specified color attachment.
+- [- setObject:atIndexedSubscript:](./mtlrenderpasscolorattachmentdescriptorarray/setobject_atindexedsubscript_.md)
+  Sets the descriptor for the specified color attachment.
 
 ## Relationships
 

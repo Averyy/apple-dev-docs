@@ -46,6 +46,10 @@ This property is mutually exclusive with a content configuration. Setting a non-
   The content view of the header or footer.
 - [var detailTextLabel: UILabel?](./detailtextlabel.md)
   A detail text label for the view.
+- [- defaultContentConfiguration](./defaultcontentconfiguration.md)
+  Retrieves a default list content configuration for the view’s style.
+- [contentConfiguration](./contentconfiguration-r49e.md)
+  The current content configuration of the view.
 
 
 ---

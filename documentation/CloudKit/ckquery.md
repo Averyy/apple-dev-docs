@@ -204,6 +204,8 @@ Queries always run asynchronously and deliver results to a completion handler th
   Creates a query from a serialized instance.
 - [convenience init(recordType: CKRecord.RecordType, predicate: NSPredicate)](./ckquery/init%28recordtype,predicate%29.md)
   Creates a query with the specified record type and predicate.
+- [- initWithRecordType:predicate:](./ckquery/initwithrecordtype_predicate_.md)
+  Creates a query with the specified record type and predicate.
 ### Accessing the Query Parameters
 - [var recordType: CKRecord.RecordType](./ckquery/recordtype-6ajii.md)
   The record type to search.
@@ -211,6 +213,8 @@ Queries always run asynchronously and deliver results to a completion handler th
   The predicate to use for matching records.
 - [var sortDescriptors: [NSSortDescriptor]?](./ckquery/sortdescriptors.md)
   The sort descriptors for organizing the query’s results.
+- [recordType](./ckquery/recordtype-3clp.md)
+  The record type to search.
 
 ## Relationships
 

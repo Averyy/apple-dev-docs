@@ -36,6 +36,10 @@ init(coder aDecoder: NSCoder)
   Creates an empty database subscription.
 - [convenience init(subscriptionID: CKSubscription.ID)](./init%28subscriptionid%29.md)
   Creates a named subscription for all records in a database.
+- [- initWithSubscriptionID:](./initwithsubscriptionid_.md)
+  Creates a named subscription for all records in a database.
+- [+ new](./new.md)
+  Creates an empty database subscription.
 
 
 ---

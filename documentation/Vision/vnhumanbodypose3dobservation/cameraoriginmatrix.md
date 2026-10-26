@@ -33,6 +33,8 @@ var cameraOriginMatrix: simd_float4x4 { get }
 ### Getting the Camera Position
 - [func cameraRelativePosition(VNHumanBodyPose3DObservation.JointName) throws -> simd_float4x4](./camerarelativeposition%28_%29.md)
   Returns a position relative to the camera for the body joint you specify.
+- [- getCameraRelativePosition:forJointName:error:](./getcamerarelativeposition_forjointname_error_.md)
+  Gets a position relative to the camera for the body joint you specify.
 
 
 ---

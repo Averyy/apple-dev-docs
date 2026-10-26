@@ -36,6 +36,8 @@ typedef float __attribute__((ext_vector_type(2))) simd_float2;
   Returns a new vector from the specified scalar values.
 - [func simd_make_float2_undef(Float) -> simd_float2](./simd_make_float2_undef%28_%29.md)
   Returns a new vector with the first element set to a scalar value, and other elements undefined.
+- [vector2](./vector2-25p9a.md)
+  Returns a new vector from the specified scalar values.
 ### Common Functions
 - [func simd_abs(simd_float2) -> simd_float2](./simd_abs%28_%29-886vq.md)
   Returns the absolute value of each element in a vector.
@@ -136,6 +138,22 @@ typedef float __attribute__((ext_vector_type(2))) simd_float2;
   Returns the base 10 logarithm of each element in a vector.
 - [func log1p(simd_float2) -> simd_float2](./log1p%28_%29-15zc7.md)
   Returns *log(1+x)* of each element in a vector.
+- [exp](./exp.md)
+  Returns *e* raised to the power of each element in a vector.
+- [exp2](./exp2.md)
+  Returns 2 raised to the power of each element in a vector.
+- [exp10](./exp10.md)
+  Returns 10 raised to the power of each element in a vector.
+- [expm1](./expm1.md)
+  Returns *eˣ-1* for each element in a vector.
+- [log](./log.md)
+  Returns the natural logarithm of each element in a vector.
+- [log2](./log2.md)
+  Returns the base 2 logarithm of each element in a vector.
+- [log10](./log10.md)
+  Returns the base 10 logarithm of each element in a vector.
+- [log1p](./log1p.md)
+  Returns *log(1+x)* for each element in a vector.
 ### Geometry Functions
 - [func cross(SIMD2<Float>, SIMD2<Float>) -> SIMD3<Float>](./cross%28_,_%29-53xk2.md)
   Returns the cross product of two vectors.
@@ -149,10 +167,40 @@ typedef float __attribute__((ext_vector_type(2))) simd_float2;
   Returns the reflection direction of an incident vector and a unit normal vector.
 - [func refract(SIMD2<Float>, n: SIMD2<Float>, eta: Float) -> SIMD2<Float>](./refract%28_,n,eta%29-5bv79.md)
   Returns the refraction direction of an incident vector, a unit normal vector, and an index of refraction eta.
+- [simd_cross](./simd_cross-3ukic.md)
+  Returns the cross product of two vectors.
+- [simd_dot](./simd_dot-3pmfs.md)
+  Returns the dot product of two vectors.
+- [simd_incircle](./simd_incircle-1bi0y.md)
+  Tests if a single-precision point lies inside, on, or outside a circle.
+- [simd_normalize](./simd_normalize-9fok8.md)
+  Returns a vector pointing in the same direction of the supplied vector, with a length of 1.
+- [simd_fast_normalize](./simd_fast_normalize-9wxm2.md)
+  Returns the fast normalized vector.
+- [simd_precise_normalize](./simd_precise_normalize-54d5a.md)
+  Returns the precise normalized vector.
+- [simd_orient](./simd_orient-8wej6.md)
+  Tests the orientation of the two supplied vectors.
+- [simd_orient](./simd_orient-6wf24.md)
+  Tests the orientation of the three supplied vectors.
+- [simd_project](./simd_project-39liq.md)
+  Returns the first vector projected onto the second vector.
+- [simd_precise_project](./simd_precise_project-4ei25.md)
+  Returns the precise projected vector.
+- [simd_fast_project](./simd_fast_project-4chm1.md)
+  Returns the fast projected vector.
+- [simd_reflect](./simd_reflect-7dnri.md)
+  Returns the reflection direction of an incident vector and a unit normal vector.
+- [simd_refract](./simd_refract-4vcf3.md)
+  Returns the refraction direction of an incident vector, a unit normal vector, and an index of refraction eta.
 ### Vector Norm Functions
 - [func norm_one(SIMD2<Float>) -> Float](./norm_one%28_%29-2y0m.md)
   Returns the sum of the absolute values of a vector.
 - [func norm_inf(SIMD2<Float>) -> Float](./norm_inf%28_%29-9lj66.md)
+  Returns the maximum absolute value of a vector.
+- [simd_norm_one](./simd_norm_one-10vvt.md)
+  Returns the sum of the absolute values of a vector.
+- [simd_norm_inf](./simd_norm_inf-91b24.md)
   Returns the maximum absolute value of a vector.
 ### Length and Distance Functions
 - [func length(SIMD2<Float>) -> Float](./length%28_%29-6g7q5.md)
@@ -162,6 +210,22 @@ typedef float __attribute__((ext_vector_type(2))) simd_float2;
 - [func distance(SIMD2<Float>, SIMD2<Float>) -> Float](./distance%28_,_%29-1p8ae.md)
   Returns the distance between two vectors.
 - [func distance_squared(SIMD2<Float>, SIMD2<Float>) -> Float](./distance_squared%28_,_%29-9nmpe.md)
+  Returns the square of the distance between two vectors.
+- [simd_length](./simd_length-3ob5d.md)
+  Returns the length of a vector.
+- [simd_fast_length](./simd_fast_length-59ep6.md)
+  Returns the fast length of a vector.
+- [simd_precise_length](./simd_precise_length-77xwk.md)
+  Returns the precise length of a vector.
+- [simd_length_squared](./simd_length_squared-3e32j.md)
+  Returns the square of the length of a vector.
+- [simd_distance](./simd_distance-598wa.md)
+  Returns the distance between two vectors.
+- [simd_fast_distance](./simd_fast_distance-2jlix.md)
+  Returns the fast distance between two vectors.
+- [simd_precise_distance](./simd_precise_distance-8hrn8.md)
+  Returns the precise distance between two vectors.
+- [simd_distance_squared](./simd_distance_squared-7zevh.md)
   Returns the square of the distance between two vectors.
 ### Hyperbolic Functions
 - [func acosh(simd_float2) -> simd_float2](./acosh%28_%29-16wup.md)
@@ -175,6 +239,18 @@ typedef float __attribute__((ext_vector_type(2))) simd_float2;
 - [func sinh(simd_float2) -> simd_float2](./sinh%28_%29-2ft5c.md)
   Returns the hyperbolic sine of each element in a vector.
 - [func tanh(simd_float2) -> simd_float2](./tanh%28_%29-8avnx.md)
+  Returns the hyperbolic tangent of each element in a vector.
+- [acosh](./acosh.md)
+  Returns the inverse hyperbolic cosine of each element in a vector.
+- [asinh](./asinh.md)
+  Returns the inverse hyperbolic sine of each element in a vector.
+- [atanh](./atanh.md)
+  Returns the inverse hyperbolic tangent of each element in a vector.
+- [cosh](./cosh.md)
+  Returns the hyperbolic cosine of each element in a vector.
+- [sinh](./sinh.md)
+  Returns the hyperbolic sine of each element in a vector.
+- [tanh](./tanh.md)
   Returns the hyperbolic tangent of each element in a vector.
 ### Logic Functions
 - [func simd_select(simd_float2, simd_float2, simd_int2) -> simd_float2](./simd_select%28_,_,_%29-9jdc0.md)
@@ -214,6 +290,38 @@ typedef float __attribute__((ext_vector_type(2))) simd_float2;
   Returns the gamma function for each element in a vector.
 - [func trunc(SIMD2<Float>) -> SIMD2<Float>](./trunc%28_%29-6neoe.md)
   Returns each element in a vector rounded toward zero to the nearest integer.
+- [cbrt](./cbrt.md)
+  Returns the cube root of each element in a vector.
+- [copysign](./copysign.md)
+  Returns each element of a vector, with the sign of the corresponding element in a second vector.
+- [erf](./erf.md)
+  Returns the error function for each element in a vector.
+- [erfc](./erfc.md)
+  Returns the complementary error function for each element in a vector.
+- [fabs](./fabs.md)
+  Returns the absolute value of each element in a vector.
+- [fdim](./fdim.md)
+  Returns the positive difference between corresponding elements in two vectors.
+- [fma](./fma.md)
+  Returns the multiply-add result for corresponding elements in three vectors.
+- [fmod](./fmod.md)
+  Returns the modulus after dividing each element in a vector by the corresponding element in a second vector.
+- [hypot](./hypot.md)
+  Returns the hypotenuse of a right-angled triangle with the sides that are adjacent to the right angle that two vectors define.
+- [nextafter](./nextafter.md)
+  Returns the next representable value of each element in a vector in the direction of the corresponding element in a second vector.
+- [pow](./pow.md)
+  Returns each element in a vector raised to the power of the corresponding element in a second vector.
+- [remainder](./remainder.md)
+  Returns the remainder after dividing each element in an array by the corresponding element in a second array of double-precision values.
+- [rint](./rint.md)
+  Returns each element in a vector rounded to the nearest integer in the specified direction.
+- [round](./round.md)
+  Returns each element in a vector rounded to the nearest integer.
+- [sqrt](./sqrt.md)
+  Returns the square root of each element in a vector.
+- [tgamma](./tgamma.md)
+  Returns the gamma function for each element in a vector.
 ### Trigonometric Functions
 - [func acos(simd_float2) -> simd_float2](./acos%28_%29-1ya4v.md)
   Returns the arccosine of each element in a vector.
@@ -239,6 +347,26 @@ typedef float __attribute__((ext_vector_type(2))) simd_float2;
   Returns the tangent of each element in a vector.
 - [func tanpi(simd_float2) -> simd_float2](./tanpi%28_%29-3a1w1.md)
   Returns the tangent of each element in a vector multiplied by pi.
+- [acos](./acos.md)
+  Returns the arccosine of each element in a vector.
+- [asin](./asin.md)
+  Returns the arcsine of each element in a vector.
+- [atan](./atan.md)
+  Returns the arctangent of each element in a vector.
+- [atan2](./atan2.md)
+  Returns the arctangent of each pair of corresponding elements in two vectors.
+- [cos](./cos.md)
+  Returns the cosine of each element in a vector.
+- [cospi](./cospi.md)
+  Returns the cosine of each element in a vector multiplied by pi.
+- [sin](./sin.md)
+  Returns the sine of each element in a vector.
+- [sinpi](./sinpi.md)
+  Returns the sine of each element in a vector multiplied by pi.
+- [tan](./tan.md)
+  Returns the tangent of each element in a vector.
+- [tanpi](./tanpi.md)
+  Returns the tangent of each element in a vector multiplied by pi.
 ### Classification Functions
 - [func isfinite(simd_float2) -> simd_int2](./isfinite%28_%29-zthr.md)
   Returns true for each element that is finite in a vector.
@@ -251,6 +379,27 @@ typedef float __attribute__((ext_vector_type(2))) simd_float2;
 ### Alternative Type Alias
 - [typealias vector_float2](./vector_float2.md)
 - [typealias float2](./float2.md)
+### Functions to Create Two-Element Vectors From Vectors of Other Types
+- [simd_float](./simd_float-14iup.md)
+  Returns a new vector from the specified vector of 8-bit, signed-integer elements.
+- [simd_float](./simd_float-148tt.md)
+  Returns a new vector from the specified vector of 8-bit, unsigned-integer elements.
+- [simd_float](./simd_float-14nqp.md)
+  Returns a new vector from the specified vector of 16-bit, signed-integer elements.
+- [simd_float](./simd_float-14dwx.md)
+  Returns a new vector from the specified vector of 16-bit, unsigned-integer elements.
+- [simd_float](./simd_float-14lvd.md)
+  Returns a new vector from the specified vector of 32-bit, signed-integer elements.
+- [simd_float](./simd_float-14c1l.md)
+  Returns a new vector from the specified vector of 32-bit, unsigned-integer elements.
+- [simd_float](./simd_float-14mw7.md)
+  Returns a new vector from the specified vector of 64-bit, signed-integer elements.
+- [simd_float](./simd_float-14cvb.md)
+  Returns a new vector from the specified vector of 64-bit, unsigned-integer elements.
+- [simd_float](./simd_float-149uz.md)
+  Returns a new vector from the specified vector of 32-bit, floating-point elements.
+- [simd_float](./simd_float-14afr.md)
+  Returns a new vector from the specified vector of 64-bit, floating-point elements.
 
 ## See Also
 

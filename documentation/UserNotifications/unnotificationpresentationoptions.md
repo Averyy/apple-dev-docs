@@ -59,6 +59,8 @@ enum UNNotificationPresentationOptions : NSUInteger;
 ### Receiving Notifications
 - [func userNotificationCenter(UNUserNotificationCenter, willPresent: UNNotification, withCompletionHandler: (UNNotificationPresentationOptions) -> Void)](./unusernotificationcenterdelegate/usernotificationcenter%28_,willpresent,withcompletionhandler%29.md)
   Asks the delegate how to handle a notification that arrived while the app was running in the foreground.
+- [UNNotificationPresentationOptionNone](./unnotificationpresentationoptionnone.md)
+  No alert.
 
 
 ---

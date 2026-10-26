@@ -53,6 +53,13 @@ To detect QR codes in an image or video, choose [`CIDetectorTypeQRCode`](./cidet
   The image coordinate of the upper-right corner of the detected QR code.
 ### Initializers
 - [init?(coder: NSCoder)](./ciqrcodefeature/init%28coder%29.md)
+### Instance Variables
+- [bottomLeft](./ciqrcodefeature/bottomleft-c.ivar.md)
+- [bottomRight](./ciqrcodefeature/bottomright-c.ivar.md)
+- [bounds](./ciqrcodefeature/bounds-c.ivar.md)
+- [symbolDescriptor](./ciqrcodefeature/symboldescriptor-c.ivar.md)
+- [topLeft](./ciqrcodefeature/topleft-c.ivar.md)
+- [topRight](./ciqrcodefeature/topright-c.ivar.md)
 
 ## Relationships
 

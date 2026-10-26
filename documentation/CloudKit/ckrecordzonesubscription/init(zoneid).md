@@ -40,6 +40,8 @@ The subscription that this method returns is a zone-based subscription that gene
   Creates a named subscription for all records in the specified record zone.
 - [init(coder: NSCoder)](./init%28coder%29.md)
   Creates a zone-based subscription from a serialized instance.
+- [- initWithZoneID:subscriptionID:](./initwithzoneid_subscriptionid_.md)
+  Creates a named subscription for all records in the specified record zone.
 
 
 ---

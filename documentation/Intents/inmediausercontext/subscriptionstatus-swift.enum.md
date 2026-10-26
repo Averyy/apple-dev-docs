@@ -53,6 +53,8 @@ enum INMediaUserContextSubscriptionStatus : NSInteger;
   An approximate number of relevant items available in the users library.
 - [var subscriptionStatus: INMediaUserContext.SubscriptionStatus](./subscriptionstatus-swift.property.md)
   The user’s current subscription status.
+- [numberOfLibraryItems](./numberoflibraryitems-881cf.md)
+  An approximate number of relevant items available in the users library.
 
 
 ---

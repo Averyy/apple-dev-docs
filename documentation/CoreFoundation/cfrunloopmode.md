@@ -57,6 +57,12 @@ typedef CFStringRef CFRunLoopMode;
 - [struct CFStreamPropertyKey](./cfstreampropertykey.md)
 - [typealias CFTypeRef](./cftyperef.md)
   An untyped “generic” reference to any Core Foundation object.
+- [CGFloat](./cgfloat-c.typealias.md)
+  The basic type for all floating-point values.
+- [HRESULT](./hresult.md)
+- [LPVOID](./lpvoid.md)
+- [REFIID](./refiid.md)
+- [ULONG](./ulong.md)
 
 
 ---

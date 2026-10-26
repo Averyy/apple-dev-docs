@@ -48,6 +48,8 @@ The render pass’s default clip mode is [`MTLDepthClipMode.clip`](../mtldepthcl
   Configures the same comparison value for front- and back-facing primitives.
 - [func setStencilReferenceValues(front: UInt32, back: UInt32)](./setstencilreferencevalues%28front,back%29.md)
   Configures different comparison values for front- and back-facing primitives.
+- [- setDepthTestMinBound:maxBound:](./setdepthtestminbound_maxbound_.md)
+  Configures the minimum and maximum bounds for depth bounds testing.
 
 
 ---

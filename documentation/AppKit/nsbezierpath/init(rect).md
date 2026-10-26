@@ -40,6 +40,8 @@ The path is constructed by starting at the origin of `aRect` and adding line seg
   Strokes the path of the specified rectangle using the current stroke color and the default drawing attributes.
 - [func appendRect(NSRect)](./appendrect%28_%29.md)
   Appends a rectangular path to the path.
+- [+ bezierPath](./bezierpath.md)
+  Creates and returns a new Bézier path object.
 ### Creating a Bézier Path
 - [init(ovalIn: NSRect)](./init%28ovalin%29.md)
   Creates and returns a new Bézier path object initialized with an oval path inscribed in the specified rectangle.

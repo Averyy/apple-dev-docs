@@ -67,6 +67,18 @@ Create a tensor with or without data. For example, create a tensor with data for
   Creates a tensor with the sizes and number of feature channels, and filled with the data and type you specify.
 - [convenience init(width: Int, height: Int, featureChannelCount: Int, batchSize: Int, randomInitializerType: MLCRandomInitializerType)](./mlctensor/init%28width,height,featurechannelcount,batchsize,randominitializertype%29.md)
   Creates a tensor with the sizes, number of feature channels, and random data using the random initializer type you specify.
+- [+ tensorWithShape:](./mlctensor/tensorwithshape_.md)
+  Creates a tensor without data, with the shape you specify.
+- [+ tensorWithShape:dataType:](./mlctensor/tensorwithshape_datatype_.md)
+  Creates a tensor without data, with the shape and data type you specify.
+- [+ tensorWithShape:data:dataType:](./mlctensor/tensorwithshape_data_datatype_.md)
+  Creates a tensor with the shape, data, and data type you specify.
+- [+ tensorWithShape:fillWithData:dataType:](./mlctensor/tensorwithshape_fillwithdata_datatype_.md)
+  Creates a tensor with the shape, scalar value, and data type you specify.
+- [+ tensorWithShape:randomInitializerType:](./mlctensor/tensorwithshape_randominitializertype_.md)
+  Creates a tensor with the shape and random initializer type you specify.
+- [+ tensorWithShape:randomInitializerType:dataType:](./mlctensor/tensorwithshape_randominitializertype_datatype_.md)
+  Creates a tensor with the shape, random initializer, and data type you specify.
 ### Creating Tensors by Specifying Sequence Lengths
 - [convenience init(sequenceLength: Int, featureChannelCount: Int, batchSize: Int)](./mlctensor/init%28sequencelength,featurechannelcount,batchsize%29.md)
   Creates a tensor without data, with the sequence length, number of feature channels, and batch size you specify.
@@ -77,6 +89,10 @@ Create a tensor with or without data. For example, create a tensor with data for
 - [convenience init(sequenceLength: Int, featureChannelCount: Int, batchSize: Int, randomInitializerType: MLCRandomInitializerType)](./mlctensor/init%28sequencelength,featurechannelcount,batchsize,randominitializertype%29.md)
   Creates a tensor with the sequence length, number of feature channels, batch size, and random initializer type you specify.
 - [convenience init?(sequenceLengths: [Int], sortedSequences: Bool, featureChannelCount: Int, batchSize: Int, randomInitializerType: MLCRandomInitializerType)](./mlctensor/init%28sequencelengths,sortedsequences,featurechannelcount,batchsize,randominitializertype%29.md)
+  Creates a tensor with the sequence lengths, sorting indicator, number of feature channels, batch size, and random initializer type you specify.
+- [+ tensorWithSequenceLengths:sortedSequences:featureChannelCount:batchSize:data:](./mlctensor/tensorwithsequencelengths_sortedsequences_featurechannelcount_batchsize_data_.md)
+  Creates a tensor with the sequence lengths, sorting indicator, number of feature channels, batch size, and data you specify.
+- [+ tensorWithSequenceLengths:sortedSequences:featureChannelCount:batchSize:randomInitializerType:](./mlctensor/tensorwithsequencelengths_sortedsequences_featurechannelcount_batchsize_randominitializertype_.md)
   Creates a tensor with the sequence lengths, sorting indicator, number of feature channels, batch size, and random initializer type you specify.
 ### Inspecting Tensors
 - [var tensorID: Int](./mlctensor/tensorid.md)

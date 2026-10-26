@@ -53,6 +53,8 @@ kODErrorCredentialsPasswordNeedsDigit
   The password has expired and must be changed.
 - [var kODErrorCredentialsPasswordNeedsLetter: ODFrameworkErrors](./koderrorcredentialspasswordneedsletter.md)
   The provided password needs at least one letter.
+- [kODErrorCredentialsContactMaster](./odframeworkerrors/koderrorcredentialscontactmaster.md)
+  The authentication server contacted is not the primary server, and the requested operation requires the primary server.
 
 
 ---

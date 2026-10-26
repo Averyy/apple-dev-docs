@@ -30,6 +30,7 @@ CPPanDirectionUp
   The user panned the map to the left.
 - [static var right: CPMapTemplate.PanDirection](./right.md)
   The user panned the map to the right.
+- [CPPanDirectionNone](../../cppandirection/cppandirectionnone.md)
 
 
 ---

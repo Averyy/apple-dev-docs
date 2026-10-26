@@ -89,11 +89,23 @@ You work with code objects that represent uniquely identified elements of runnin
   Specify attributes of guest code.
 - [typealias SecGuestRef](./secguestref.md)
   A reference to a guest object, which identifies a particular block of guest code in the context of its code signing host.
+- [SecHostCreateGuest](./sechostcreateguest.md)
+  Creates a new guest and describes its initial properties.
+- [SecHostSetGuestStatus](./sechostsetgueststatus.md)
+  Updates the status and attributes of a particular guest.
 ### Guest Management
 - [func SecCodeCopyHost(SecCode, SecCSFlags, UnsafeMutablePointer<SecCode?>) -> OSStatus](./seccodecopyhost%28_,_,_%29.md)
   Retrieves the code object for the host of specified guest code.
 - [func SecCodeMapMemory(SecStaticCode, SecCSFlags) -> OSStatus](./seccodemapmemory%28_,_%29.md)
   Asks the kernel to accept the signing information currently attached to a code object and uses it to validate memory page-ins.
+- [SecHostRemoveGuest](./sechostremoveguest.md)
+  Removes a guest from a host.
+- [SecHostSelectGuest](./sechostselectguest.md)
+  Makes the calling thread the proxy for a specified guest.
+- [SecHostSelectedGuest](./sechostselectedguest.md)
+  Retrieves the handle for the guest currently selected for the calling thread.
+- [SecHostSetHostingPort](./sechostsethostingport.md)
+  Tells code signing services that the calling code will directly respond to hosting inquiries over the given port.
 ### Tasks
 - [func SecTaskCreateFromSelf(CFAllocator?) -> SecTask?](./sectaskcreatefromself%28_%29.md)
   Creates a task object for the current task.

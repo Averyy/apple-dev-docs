@@ -23,6 +23,21 @@ Interact with the Objective-C runtime.
 ### Serialization
 - [func NSGetSizeAndAlignment(UnsafePointer<CChar>, UnsafeMutablePointer<Int>?, UnsafeMutablePointer<Int>?) -> UnsafePointer<CChar>](./nsgetsizeandalignment%28_,_,_%29.md)
   Obtains the actual size and the aligned size of an encoded type.
+### Object Allocation and Deallocation
+- [NSAllocateObject](./nsallocateobject.md)
+  Creates and returns a new instance of a given class.
+- [NSCopyObject](./nscopyobject.md)
+  Creates an exact copy of an object.
+- [NSDeallocateObject](./nsdeallocateobject.md)
+  Destroys an existing object.
+- [NSDecrementExtraRefCountWasZero](./nsdecrementextrarefcountwaszero.md)
+  Decrements the specified object’s reference count.
+- [NSExtraRefCount](./nsextrarefcount.md)
+  Returns the specified object’s reference count.
+- [NSIncrementExtraRefCount](./nsincrementextrarefcount.md)
+  Increments the specified object’s reference count.
+- [NSShouldRetainWithZone](./nsshouldretainwithzone.md)
+  Indicates whether an object should be retained.
 
 
 ---

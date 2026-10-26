@@ -34,6 +34,8 @@ Multiple calls to this function for the same event stream will result in undefin
 ### Event handling
 - [let XPC_EVENT_KEY_NAME: UnsafePointer<CChar>](./xpc_event_key_name-swift.var.md)
   A key for querying an XPC event dictionary to retrieve a string that identifies the event.
+- [XPC_EVENT_KEY_NAME](./xpc_event_key_name-c.macro.md)
+  A key for querying an XPC event dictionary to retrieve a string that identifies the event.
 
 
 ---

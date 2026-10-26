@@ -30,6 +30,7 @@ AVAudioSessionInterruptionReasonSceneWasBackgrounded
   The system interrupts the audio session due to a disconnection of an audio route.
 - [AVAudioSession.InterruptionReason.appWasSuspended](./appwassuspended.md)
   The system suspends the app and interrupts the audio session.
+- [AVAudioSessionInterruptionReasonDeviceUnauthenticated](../../avaudiosessioninterruptionreason/avaudiosessioninterruptionreasondeviceunauthenticated.md)
 
 
 ---

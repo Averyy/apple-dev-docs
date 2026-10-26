@@ -34,6 +34,8 @@ class MPSCNNSpatialNormalizationGradientNode
 - [var delta: Float](./mpscnnspatialnormalizationgradientnode/delta.md)
 - [var kernelHeight: Int](./mpscnnspatialnormalizationgradientnode/kernelheight.md)
 - [var kernelWidth: Int](./mpscnnspatialnormalizationgradientnode/kernelwidth.md)
+### Type Methods
+- [+ nodeWithSourceGradient:sourceImage:gradientState:kernelSize:](./mpscnnspatialnormalizationgradientnode/nodewithsourcegradient_sourceimage_gradientstate_kernelsize_.md)
 
 ## Relationships
 

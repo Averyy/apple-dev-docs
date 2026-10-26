@@ -86,6 +86,11 @@ You can use EventKit to set up alarms and create recurring events. And if a chan
   Error codes for EventKit errors.
 - [let EKErrorDomain: String](./ekerrordomain.md)
   A string that identifies the EventKit error domain.
+### Macros
+- [DATETIME_COMPONENTS](./datetime_components.md)
+- [DATE_COMPONENTS](./date_components.md)
+- [EK_LOSE_FRACTIONAL_SECONDS](./ek_lose_fractional_seconds.md)
+- [EVENTKIT_EXTERN](./eventkit_extern.md)
 
 
 ---

@@ -29,6 +29,21 @@
 - [var LA_SUCCESS: Int32](./la_success.md)
 - [var LA_WARNING_POORLY_CONDITIONED: Int32](./la_warning_poorly_conditioned.md)
 - [var USE_NON_APPLE_STANDARD_DATATYPES: Int32](./use_non_apple_standard_datatypes.md)
+- [LA_AVAILABILITY](./la_availability.md)
+- [LA_CONST](./la_const.md)
+- [LA_EXPORT](./la_export.md)
+- [LA_FUNCTION](./la_function.md)
+- [LA_NONNULL](./la_nonnull.md)
+- [LA_NONNULL1](./la_nonnull1.md)
+- [LA_NOTHROW](./la_nothrow.md)
+- [LA_RETURNS_RETAINED](./la_returns_retained.md)
+- [la_release](./la_release-c.macro.md)
+- [la_retain](./la_retain-c.macro.md)
+- [la_vector_from_double_buffer](./la_vector_from_double_buffer.md)
+- [la_vector_from_double_buffer_nocopy](./la_vector_from_double_buffer_nocopy.md)
+- [la_vector_from_float_buffer](./la_vector_from_float_buffer.md)
+- [la_vector_from_float_buffer_nocopy](./la_vector_from_float_buffer_nocopy.md)
+- [la_vector_reverse](./la_vector_reverse.md)
 
 
 ---

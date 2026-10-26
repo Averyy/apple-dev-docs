@@ -18,6 +18,8 @@ Review unsupported symbols and their replacements.
 ### Deprecated type properties
 - [static let NSPersistentStoreDidImportUbiquitousContentChanges: NSNotification.Name](../Foundation/nsnotification/name-swift.struct/nspersistentstoredidimportubiquitouscontentchanges.md)
   Posted after records are imported from the ubiquitous content store.
+- [NSPersistentStoreDidImportUbiquitousContentChangesNotification](./nspersistentstoredidimportubiquitouscontentchangesnotification.md)
+  Posted after records are imported from the ubiquitous content store.
 ### Deprecated type methods
 - [class func elementsDerived(fromExternalRecordAt: URL) -> [AnyHashable : Any]](./nspersistentstorecoordinator/elementsderived%28fromexternalrecordat%29.md)
   Returns a dictionary containing the parsed elements derived from the Spotlight external record file that is specified by the given URL.

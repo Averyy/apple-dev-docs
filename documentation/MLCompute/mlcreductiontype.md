@@ -48,6 +48,8 @@ enum MLCReductionType : int32_t;
   A reduction operation that applies a lasso regularization penalty.
 - [var debugDescription: String](./mlcreductiontype/debugdescription.md)
   A textual description of the reduction operation you use for debugging.
+- [MLCReductionTypeCount](./mlcreductiontype/mlcreductiontypecount.md)
+  The total number of reduction operations.
 ### Initializers
 - [init?(rawValue: Int32)](./mlcreductiontype/init%28rawvalue%29.md)
 
@@ -67,6 +69,8 @@ enum MLCReductionType : int32_t;
 - [convenience init?(reductionType: MLCReductionType, dimension: Int)](./mlcreductionlayer/init%28reductiontype,dimension%29.md)
   Creates a reduction layer using the reduction type and dimension you specify.
 - [convenience init?(reductionType: MLCReductionType, dimensions: [Int])](./mlcreductionlayer/init%28reductiontype,dimensions%29.md)
+  Creates a reduction layer using the reduction type and dimensions you specify.
+- [+ layerWithReductionType:dimensions:](./mlcreductionlayer/layerwithreductiontype_dimensions_.md)
   Creates a reduction layer using the reduction type and dimensions you specify.
 
 

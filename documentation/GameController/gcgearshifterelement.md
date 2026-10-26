@@ -48,6 +48,8 @@ class GCGearShifterElement
   The common properties of inputs that provide absolute values along an axis with a fixed origin.
 - [protocol GCRelativeInput](./gcrelativeinput.md)
   The common properties of inputs that provide positions along an axis that are relative to the previous position.
+- [GCInputAxisName](./gcinputaxisname.md)
+  The Objective-C type for an input axis name.
 
 
 ---

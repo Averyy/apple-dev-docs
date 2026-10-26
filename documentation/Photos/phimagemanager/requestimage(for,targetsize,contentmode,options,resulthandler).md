@@ -74,6 +74,8 @@ You can use this method for both photo and video assets—for a video asset, an 
   Requests the largest represented image as data bytes and Exif orientation for the specified asset.
 - [let PHImageManagerMaximumSize: CGSize](../phimagemanagermaximumsize.md)
   A special value for requesting original image data or the largest rendered image available. .
+- [- requestImageDataForAsset:options:resultHandler:](./requestimagedataforasset_options_resulthandler_.md)
+  Requests full-sized image data for the specified asset.
 
 
 ---

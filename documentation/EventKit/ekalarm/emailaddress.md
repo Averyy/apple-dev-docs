@@ -36,6 +36,8 @@ Assigning this property a value will set the [`soundName`](./soundname.md) and [
   The type of action to trigger when the alarm fires.
 - [var soundName: String?](./soundname.md)
   The name of the sound to play when the alarm triggers.
+- [url](./url.md)
+  The URL to open when the alarm triggers.
 
 
 ---

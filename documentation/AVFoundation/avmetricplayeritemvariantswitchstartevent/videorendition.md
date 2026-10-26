@@ -35,6 +35,7 @@ Contains information corresponding to the currently selected video rendition.
 - [var toVariant: AVAssetVariant](./tovariant.md)
 - [var audioRendition: AVMetricMediaRendition](./audiorendition.md)
 - [var subtitleRendition: AVMetricMediaRendition](./subtitlerendition.md)
+- [loadedTimeRanges](./loadedtimeranges-3svh3.md)
 
 
 ---

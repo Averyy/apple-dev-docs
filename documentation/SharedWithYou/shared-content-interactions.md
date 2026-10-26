@@ -27,10 +27,13 @@ Use highlights and attribution views to manage participants and trigger events f
 - [class SWHighlightPersistenceEvent](./swhighlightpersistenceevent.md)
   An object that represents persistence activity for a highlight.
 ### Participants
-- [class SWPerson](https://developer.apple.com/documentation/sharedwithyoucore/swperson)
+- [class SWPerson](../SharedWithYouCore/swperson.md)
   An object that tracks participants in a collaboration.
 - [class SWRemoveParticipantAlert](./swremoveparticipantalert.md)
   An alert that prompts the user to remove a participant from a Messages group.
+### Pasteboard Types
+- [NSPasteboardTypeCollaborationMetadata](./nspasteboardtypecollaborationmetadata.md)
+  An object you use for conveying data during a collaboration.
 
 ## See Also
 

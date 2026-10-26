@@ -1,0 +1,36 @@
+# simd_fast_length
+
+**Framework**: simd  
+**Kind**: func  
+**Role**: Function
+
+Returns the fast length of a vector.
+
+## Declaration
+
+```c
+static double simd_fast_length(simd_double3 __x);
+```
+
+## See Also
+
+### Length and Distance Functions
+- [simd_length](./simd_length-3r7wy.md)
+  Returns the length of a vector.
+- [simd_precise_length](./simd_precise_length-7aygj.md)
+  Returns the precise length of a vector.
+- [simd_length_squared](./simd_length_squared-3hijo.md)
+  Returns the square of the length of a vector.
+- [simd_distance](./simd_distance-30257.md)
+  Returns the distance between two vectors.
+- [simd_fast_distance](./simd_fast_distance-9625l.md)
+  Returns the fast distance between two vectors.
+- [simd_precise_distance](./simd_precise_distance-274w4.md)
+  Returns the precise distance between two vectors.
+- [simd_distance_squared](./simd_distance_squared-89twb.md)
+  Returns the square of the distance between two vectors.
+
+
+---
+
+*[View on Apple Developer](https://developer.apple.com/documentation/simd/simd_fast_length-56j8x)*

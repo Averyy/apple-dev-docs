@@ -61,6 +61,10 @@ If you’re sampling data from a timestamp counter set ([`timestamp`](./mtlcommo
 ### Counter sample buffer errors
 - [struct MTLCounterSampleBufferError](./mtlcountersamplebuffererror-swift.struct.md)
   The error codes that indicate why a GPU driver can’t create a counter sample buffer.
+- [MTLCounterSampleBufferError](./mtlcountersamplebuffererror-swift.struct/code.md)
+  The underlying error code type that indicates why a GPU driver can’t create a counter sample buffer.
+- [MTLCounterErrorDomain](./mtlcountererrordomain.md)
+  The domain for Metal counter sample buffer errors.
 
 ## See Also
 

@@ -33,6 +33,10 @@ var minISO: Float { get }
   A time value that indicates the minimum supported exposure duration.
 - [var maxExposureDuration: CMTime](./maxexposureduration.md)
   A time value that indicates the maximum supported exposure duration.
+- [systemRecommendedExposureBiasRange](../../avcapturedeviceformat/systemrecommendedexposurebiasrange.md)
+  The system’s recommended exposure bias range for this device format.
+- [AVExposureBiasRange](../../avexposurebiasrange.md)
+  An object that expresses an inclusive range of supported exposure bias values, in EV units.
 
 
 ---

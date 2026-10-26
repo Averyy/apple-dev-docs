@@ -67,6 +67,10 @@ You typically work with system time zones rather than creating time zones by ide
   Returns an array of strings listing the IDs of all the time zones known to the system.
 - [class var abbreviationDictionary: [String : String]](./nstimezone/abbreviationdictionary.md)
   Returns a dictionary holding the mappings of time zone abbreviations to time zone names.
+- [+ timeZoneWithName:](./nstimezone/timezonewithname_.md)
+  Returns the time zone object identified by a given identifier.
+- [+ timeZoneWithName:data:](./nstimezone/timezonewithname_data_.md)
+  Returns the time zone with a given identifier whose data has been initialized using given data.
 ### Getting Time Zone Information
 - [var name: String](./nstimezone/name.md)
   The geopolitical region ID that identifies the receiver.
@@ -129,6 +133,14 @@ You typically work with system time zones rather than creating time zones by ide
 - [NSSecureCoding](./nssecurecoding.md)
 - [Sendable](../Swift/sendable.md)
 - [SendableMetatype](../Swift/sendablemetatype.md)
+
+## See Also
+
+### Calendrical Calculations
+- [NSDateComponents](./nsdatecomponents.md)
+  An object that specifies a date or time in terms of units (such as year, month, day, hour, and minute) to be evaluated in a calendar system and time zone.
+- [NSCalendar](./nscalendar.md)
+  A definition of the relationships between calendar units and absolute points in time, providing features for calculation and comparison of dates.
 
 
 ---

@@ -27,6 +27,8 @@ static simd_long4 simd_make_long4(simd_long1 x, simd_long3 yzw);
   Returns a new vector from a vector and scalar values.
 - [func simd_make_long4(simd_long3, simd_long1) -> simd_long4](./simd_make_long4%28_,_%29-270ke.md)
   Returns a new vector from a vector and a scalar value.
+- [vector4](./vector4-5gopv.md)
+  Returns a new vector from a vector and a scalar value.
 
 
 ---

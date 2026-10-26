@@ -46,6 +46,8 @@ If the track’s [`asset`](./asset.md) property value for [`providesPreciseDurat
   Creates a sample cursor and positions it at the track’s first media sample in decode order.
 - [func makeSampleCursorAtLastSampleInDecodeOrder() -> AVSampleCursor?](./makesamplecursoratlastsampleindecodeorder%28%29.md)
   Creates a sample cursor and positions it at the track’s last media sample in decode order.
+- [canProvideSampleCursors](./canprovidesamplecursors.md)
+  A Boolean value that indicates whether the track can provide instances of sample cursors to traverse its media samples and discover information.
 
 
 ---

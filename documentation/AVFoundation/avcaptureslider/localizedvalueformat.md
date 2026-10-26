@@ -40,6 +40,8 @@ Examples of valid format strings are:
   The current value of the slider.
 - [var prominentValues: [Float]](./prominentvalues-199dz.md)
   Values in this array may receive unique visual representations or behaviors.
+- [prominentValues](./prominentvalues-7usgc.md)
+  Values in this array may receive unique visual representations or behaviors.
 
 
 ---

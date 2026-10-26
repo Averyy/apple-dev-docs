@@ -36,6 +36,7 @@ var MTLResourceCPUCacheModeMask: UInt { get }
   The default performance profile for a device.
 - [static let sustained: NSProcessPerformanceProfile](./nsprocessperformanceprofile/sustained.md)
   The performance profile for a device representing sustained performance.
+- [NSProcessInfoPerformanceProfileDidChangeNotification](./nsprocessinfoperformanceprofiledidchangenotification.md)
 
 
 ---

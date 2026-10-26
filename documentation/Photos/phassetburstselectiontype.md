@@ -34,6 +34,8 @@ enum PHAssetBurstSelectionType : NSUInteger;
   Photos has automatically identified the asset as a potential user favorite.
 - [static var userPick: PHAssetBurstSelectionType](./phassetburstselectiontype/userpick.md)
   The user has marked the asset as a favorite member of its burst sequence.
+- [PHAssetBurstSelectionTypeNone](./phassetburstselectiontype/phassetburstselectiontypenone.md)
+  The asset is not marked as a favorite member of its burst sequence or is not a member of a burst sequence.
 
 ## Relationships
 

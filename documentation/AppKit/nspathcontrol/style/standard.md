@@ -25,6 +25,7 @@ The standard display style and behavior. All path component cells are displayed 
 
 ### Constants
 - [NSPathControl.Style.popUp](./popup.md)
+- [NSPathStyleNavigationBar](../../nspathstyle/nspathstylenavigationbar.md)
 
 
 ---

@@ -26,7 +26,7 @@ extern VNImageOption const VNImageOptionCameraIntrinsics;
 
 #### Discussion
 
-The camera intrinsics matrix is a [`CFData`](../../CoreFoundation/cfdata.md) instance containing a [`matrix_float3x3`](https://developer.apple.com/documentation/simd/matrix_float3x3), which is a column-major matrix:
+The camera intrinsics matrix is a [`CFData`](../../CoreFoundation/cfdata.md) instance containing a [`matrix_float3x3`](../../simd/matrix_float3x3.md), which is a column-major matrix:
 
 ![The camera intrinsics matrix with focal length along the main diagonal](https://developer.apple.com/tutorials/images/Vision/media-2954520@2x.png)
 

@@ -69,6 +69,8 @@ view.addInteraction(bandSelectionInteraction)
 ### Getting the selection rectangle
 - [var selectionRect: CGRect?](./uibandselectioninteraction/selectionrect-2us5d.md)
   The selection rectangle for an in-progress interaction.
+- [selectionRect](./uibandselectioninteraction/selectionrect-1fj7p.md)
+  The selection rectangle for an in-progress interaction.
 ### Getting the interaction state
 - [var isEnabled: Bool](./uibandselectioninteraction/isenabled.md)
   A Boolean value that specifies whether the object is ready to detect interactions.

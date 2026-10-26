@@ -40,6 +40,8 @@ If the file doesn’t exist — either because it’s awaiting authorization or 
 ### Instance Properties
 - [var acl: acl_t?](./es_event_create_t/acl-6m1ze.md)
 - [var reserved: (UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8)](./es_event_create_t/reserved-fmi7.md)
+- [acl](./es_event_create_t/acl-2erry.md)
+- [reserved](./es_event_create_t/reserved-4oqh.md)
 
 ## Relationships
 

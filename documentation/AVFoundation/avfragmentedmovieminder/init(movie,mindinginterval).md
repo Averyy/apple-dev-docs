@@ -33,6 +33,12 @@ A new `AVFragmentedMovieMinder` instance.
 - `movie`: The fragmented movie object added to the movie minder.
 - `mindingInterval`: The initial minding interval for the movie minder.
 
+## See Also
+
+### Creating a movie minder
+- [+ fragmentedMovieMinderWithMovie:mindingInterval:](./fragmentedmovieminderwithmovie_mindinginterval_.md)
+  Creates a movie minder and adds a movie with a minding interval.
+
 
 ---
 

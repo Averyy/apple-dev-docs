@@ -25,6 +25,14 @@ var kCMFormatDescriptionError_ValueNotAvailable: OSStatus { get }
 kCMFormatDescriptionError_ValueNotAvailable
 ```
 
+## See Also
+
+### Errors
+- [kCMFormatDescriptionError_InvalidParameter](./kcmformatdescriptionerror_invalidparameter.md)
+  An error that indicates that the function recieves an empty value for a parameter it requires.
+- [kCMFormatDescriptionError_AllocationFailed](./kcmformatdescriptionerror_allocationfailed.md)
+  An error that indicates when an allocation fails.
+
 
 ---
 

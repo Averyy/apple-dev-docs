@@ -59,6 +59,8 @@ enum UINavigationItemLargeTitleDisplayMode : NSInteger;
   String to be used as the large title.
 - [var largeTitleDisplayMode: UINavigationItem.LargeTitleDisplayMode](./largetitledisplaymode-swift.property.md)
   The mode for displaying the title of the navigation bar.
+- [attributedTitle](./attributedtitle-9l8p2.md)
+  An attributed string that is rendered as the title in the navigation bar.
 
 
 ---

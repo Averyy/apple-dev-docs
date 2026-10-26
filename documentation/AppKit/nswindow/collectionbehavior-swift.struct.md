@@ -56,6 +56,8 @@ Not all collection behaviors apply to all windowing management technologies, and
   The window can appear in all spaces.
 - [static var moveToActiveSpace: NSWindow.CollectionBehavior](./collectionbehavior-swift.struct/movetoactivespace.md)
   When the window becomes active, move it to the active space instead of switching spaces.
+- [NSWindowCollectionBehaviorDefault](../nswindowcollectionbehavior/nswindowcollectionbehaviordefault.md)
+  The window appears in only one space at a time.
 ### Mission Control
 - [static var stationary: NSWindow.CollectionBehavior](./collectionbehavior-swift.struct/stationary.md)
   Mission Control doesn’t affect the window, so it stays visible and stationary, like the desktop window.

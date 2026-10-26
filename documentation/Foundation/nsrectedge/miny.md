@@ -33,6 +33,14 @@ This is equivalent to [`CGRectEdge.minYEdge`](../../CoreFoundation/cgrectedge/mi
   The maximum Y edge.
 - [NSRectEdge.minX](./minx.md)
   The minimum X edge.
+- [NSMaxXEdge](./nsmaxxedge.md)
+  The maximum X edge.
+- [NSMaxYEdge](./nsmaxyedge.md)
+  The maximum Y edge.
+- [NSMinXEdge](./nsminxedge.md)
+  The minimum X edge.
+- [NSMinYEdge](./nsminyedge.md)
+  The minimum Y edge.
 
 
 ---

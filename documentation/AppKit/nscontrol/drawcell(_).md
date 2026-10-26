@@ -46,6 +46,12 @@ This method is provided primarily to support a consistent set of methods between
   Marks the specified cell as in need of redrawing.
 - [func updateCellInside(NSCell)](./updatecellinside%28_%29.md)
   Marks the inside of the specified cell as in need of redrawing.
+- [- controlTextDidBeginEditing:](../../ObjectiveC/nsobject-swift.class/controltextdidbeginediting_.md)
+  Sent when a control with editable text begins an editing session.
+- [- controlTextDidChange:](../../ObjectiveC/nsobject-swift.class/controltextdidchange_.md)
+  Sent when the text in the receiving control changes.
+- [- controlTextDidEndEditing:](../../ObjectiveC/nsobject-swift.class/controltextdidendediting_.md)
+  Sent when a control with editable text ends an editing session.
 
 
 ---

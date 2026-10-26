@@ -70,6 +70,12 @@ protocol WebUIDelegate : NSObjectProtocol
   Displays an open panel for a file input control.
 - [func webView(WebView!, runBeforeUnloadConfirmPanelWithMessage: String!, initiatedBy: WebFrame!) -> Bool](./webuidelegate/webview%28_,runbeforeunloadconfirmpanelwithmessage,initiatedby%29.md)
   Displays a confirmation panel containing the specified message before a window closes.
+- [- webView:runJavaScriptAlertPanelWithMessage:](./webuidelegate/webview_runjavascriptalertpanelwithmessage_.md)
+  Displays a JavaScript alert panel.
+- [- webView:runJavaScriptConfirmPanelWithMessage:](./webuidelegate/webview_runjavascriptconfirmpanelwithmessage_.md)
+  Displays a JavaScript confirm panel.
+- [- webView:runJavaScriptTextInputPanelWithPrompt:defaultText:](./webuidelegate/webview_runjavascripttextinputpanelwithprompt_defaulttext_.md)
+  Displays a JavaScript text input panel and returns the entered text.
 ### Displaying Status Messages
 - [func webView(WebView!, setStatusText: String!)](./webuidelegate/webview%28_,setstatustext%29.md)
   Sets the status message displayed by a web view’s window, if any, to the specified text.
@@ -116,6 +122,11 @@ protocol WebUIDelegate : NSObjectProtocol
   Actions that the destination object of a drag operation can perform.
 - [struct WebDragSourceAction](./webdragsourceaction.md)
   Actions that the source object of a drag operation can perform.
+### Moving and Resizing Content Views
+- [- webView:setContentRect:](./webuidelegate/webview_setcontentrect_.md)
+  Sets the window’s content view frame to the specified content rectangle.
+- [- webViewContentRect:](./webuidelegate/webviewcontentrect_.md)
+  Returns a web view window’s content rectangle.
 
 ## Relationships
 

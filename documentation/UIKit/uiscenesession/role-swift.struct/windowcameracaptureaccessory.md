@@ -43,6 +43,9 @@ The system assigns this role automatically to scenes created from a camera captu
   A scene that displays navigation content on the CarPlay Instruments Cluster.
 - [static let windowExternalDisplay: UISceneSession.Role](./windowexternaldisplay.md)
   A scene that displays noninteractive windows on an externally connected display.
+- [CPTemplateApplicationSceneSessionRoleApplication](../../../CarPlay/cptemplateapplicationscenesessionroleapplication.md)
+- [CPTemplateApplicationDashboardSceneSessionRoleApplication](../../../CarPlay/cptemplateapplicationdashboardscenesessionroleapplication.md)
+- [CPTemplateApplicationInstrumentClusterSceneSessionRoleApplication](../../../CarPlay/cptemplateapplicationinstrumentclusterscenesessionroleapplication.md)
 
 
 ---

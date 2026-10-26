@@ -26,7 +26,7 @@ extern UIImagePickerControllerInfoKey const UIImagePickerControllerMediaMetadata
 
 This key is valid only when using an image picker whose source type is set to [`UIImagePickerController.SourceType.camera`](../sourcetype-swift.enum/camera.md), and applies only to still images.
 
-The value for this key is an [`NSDictionary`](../../../Foundation/nsdictionary.md) object that contains the metadata of the photo that was just captured. To store the metadata along with the image in the Camera Roll, use the [`PHAssetChangeRequest`](https://developer.apple.com/documentation/photos/phassetchangerequest) class from the Photos framework.
+The value for this key is an [`NSDictionary`](../../../Foundation/nsdictionary.md) object that contains the metadata of the photo that was just captured. To store the metadata along with the image in the Camera Roll, use the [`PHAssetChangeRequest`](../../../Photos/phassetchangerequest.md) class from the Photos framework.
 
 ## See Also
 

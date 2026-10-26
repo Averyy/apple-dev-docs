@@ -47,6 +47,14 @@ The locale of items that don’t contain chapter titles doesn’t need to match 
 - `locale`: The locale of the metadata items carrying chapter titles.
 - `commonKeys`: An array of common keys of [`AVMetadataItem`](../avmetadataitem.md) to include in the returned array. The framework currently only supports the [`commonKeyArtwork`](../avmetadatakey/commonkeyartwork.md) key.
 
+## See Also
+
+### Accessing chapter metadata
+- [availableChapterLocales](./availablechapterlocales.md)
+  The locales of the asset’s chapter metadata.
+- [- chapterMetadataGroupsBestMatchingPreferredLanguages:](./chaptermetadatagroups%28bestmatchingpreferredlanguages%29.md)
+  Returns an array of chapters with a locale that best matches the list of preferred languages.
+
 
 ---
 

@@ -33,6 +33,10 @@ init(localizedName: String, streamID: UUID, direction: CMIOExtensionStream.Direc
 ### Creating a Stream
 - [init(localizedName: String, streamID: UUID, direction: CMIOExtensionStream.Direction, clockType: CMIOExtensionStream.ClockType, source: any CMIOExtensionStreamSource)](./init%28localizedname,streamid,direction,clocktype,source%29.md)
   Creates a stream.
+- [+ streamWithLocalizedName:streamID:direction:clockType:source:](./streamwithlocalizedname_streamid_direction_clocktype_source_.md)
+  Returns a new stream.
+- [+ streamWithLocalizedName:streamID:direction:customClockConfiguration:source:](./streamwithlocalizedname_streamid_direction_customclockconfiguration_source_.md)
+  Returns a new stream that uses a custom clock configuration.
 
 
 ---

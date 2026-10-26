@@ -38,6 +38,8 @@ typedef struct _NSModalSession * NSModalSession;
   The modal window displayed by the app.
 - [NSApplication.ModalResponse](./modalresponse.md)
   A set of button return values for modal dialogs.
+- [NSModalPanelRunLoopMode](../nsmodalpanelrunloopmode.md)
+  The mode set when waiting for input from a modal panel, such as a save or open panel.
 
 
 ---

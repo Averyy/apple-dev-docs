@@ -34,6 +34,7 @@ MLCLossTypeSoftmaxCrossEntropy
 - [MLCLossType.sigmoidCrossEntropy](./sigmoidcrossentropy.md)
 - [var debugDescription: String](./debugdescription.md)
   A textual description of the loss type, suitable for debugging.
+- [MLCLossTypeCount](./mlclosstypecount.md)
 
 
 ---

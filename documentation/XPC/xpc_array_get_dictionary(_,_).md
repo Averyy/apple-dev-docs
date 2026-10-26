@@ -67,6 +67,8 @@ The object at the specified index within the array or `NULL` if the given object
   Gets a date interval from an array directly.
 - [func xpc_array_get_double(xpc_object_t, Int) -> Double](./xpc_array_get_double%28_,_%29.md)
   Gets a double-precision floating point primitive value from an array directly.
+- [xpc_array_get_int64](./xpc_array_get_int64%28_,_%29.md)
+  Gets a 64-bit integer primitive value from an array directly.
 
 
 ---

@@ -23,6 +23,7 @@ This framework provides the ability for developer tools to manage execution poli
 - [class EPExecutionPolicy](./epexecutionpolicy.md)
 ### Reference
 - [ExecutionPolicy Constants](./executionpolicy-constants.md)
+- [ExecutionPolicy Enumerations](./executionpolicy-enumerations.md)
 
 
 ---

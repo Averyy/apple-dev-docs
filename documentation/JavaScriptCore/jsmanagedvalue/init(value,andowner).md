@@ -42,6 +42,8 @@ Calling this method is equivalent to creating a managed value and then reporting
 ### Creating a Managed Value
 - [init!(value: JSValue!)](./init%28value%29.md)
   Initializes a managed value with the specified JavaScript value.
+- [+ managedValueWithValue:](./managedvaluewithvalue_.md)
+  Creates a managed value with the specified JavaScript value.
 
 
 ---

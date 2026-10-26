@@ -34,6 +34,10 @@ SPRotation3D rotation;
   The pose’s position.
 - [var inverse: Pose3D](./inverse.md)
   The pose’s inverse.
+- [SPPose3DGet4x4Matrix](../sppose3dget4x4matrix.md)
+  Returns the pose’s underlying matrix.
+- [SPPose3DGetInverse](../sppose3dgetinverse.md)
+  Returns the affine pose’s inverse.
 
 
 ---

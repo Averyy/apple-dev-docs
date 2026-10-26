@@ -44,6 +44,24 @@ Although these symbols are available for use, Apple is no longer actively develo
   Sent to the view controller before performing a one-step user interface rotation.
 - [func willRotate(to: UIInterfaceOrientation, duration: TimeInterval)](./uiviewcontroller/willrotate%28to,duration%29.md)
   Sent to the view controller just before the user interface begins rotating.
+- [- automaticallyForwardAppearanceAndRotationMethodsToChildViewControllers](./uiviewcontroller/automaticallyforwardappearanceandrotationmethodstochildviewcontrollers.md)
+  Returns a Boolean value that indicates whether appearance and rotation methods are forwarded.
+- [- didAnimateFirstHalfOfRotationToInterfaceOrientation:](./uiviewcontroller/didanimatefirsthalfofrotationtointerfaceorientation_.md)
+  Sent to the view controller after the completion of the first half of the user interface rotation.
+- [- dismissModalViewControllerAnimated:](./uiviewcontroller/dismissmodalviewcontrolleranimated_.md)
+  Dismisses the view controller that was presented by the receiver.
+- [- presentModalViewController:animated:](./uiviewcontroller/presentmodalviewcontroller_animated_.md)
+  Presents a modal view managed by the given view controller to the user.
+- [- shouldAutorotateToInterfaceOrientation:](./uiviewcontroller/shouldautorotatetointerfaceorientation_.md)
+  Returns a Boolean value indicating whether the view controller supports the specified orientation.
+- [- viewDidUnload](./uiviewcontroller/viewdidunload.md)
+  Called when the controller’s view is released from memory.
+- [- viewWillUnload](./uiviewcontroller/viewwillunload.md)
+  Called just before releasing the controller’s view from memory.
+- [- willAnimateFirstHalfOfRotationToInterfaceOrientation:duration:](./uiviewcontroller/willanimatefirsthalfofrotationtointerfaceorientation_duration_.md)
+  Sent to the view controller before performing the first half of a user interface rotation.
+- [- willAnimateSecondHalfOfRotationFromInterfaceOrientation:duration:](./uiviewcontroller/willanimatesecondhalfofrotationfrominterfaceorientation_duration_.md)
+  Sent to the view controller before the second half of the user interface rotates.
 ### Deprecated properties
 - [var shouldAutorotate: Bool](./uiviewcontroller/shouldautorotate.md)
   A Boolean value that indicates whether the view controller’s contents should autorotate.
@@ -61,6 +79,12 @@ Although these symbols are available for use, Apple is no longer actively develo
   The search display controller associated with the view controller.
 - [var topLayoutGuide: any UILayoutSupport](./uiviewcontroller/toplayoutguide.md)
   Indicates the highest vertical extent for your onscreen content, for use with Auto Layout constraints.
+- [contentSizeForViewInPopover](./uiviewcontroller/contentsizeforviewinpopover.md)
+  The size of the view controller’s view while displayed in a popover.
+- [modalViewController](./uiviewcontroller/modalviewcontroller.md)
+  The controller for the active presented view’that is, the view that is temporarily displayed on top of the view managed by the receiver.
+- [wantsFullScreenLayout](./uiviewcontroller/wantsfullscreenlayout.md)
+  A Boolean value indicating whether the view should underlap the status bar.
 
 
 ---

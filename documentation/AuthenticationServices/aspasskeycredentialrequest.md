@@ -34,6 +34,12 @@ class ASPasskeyCredentialRequest
   Initializes a passkey credential request, providing additional passkey assertion data.
 - [convenience init(credentialIdentity: ASPasskeyCredentialIdentity, clientDataHash: Data, userVerificationPreference: ASAuthorizationPublicKeyCredentialUserVerificationPreference, supportedAlgorithms: [ASCOSEAlgorithmIdentifier], extensionInput: ASPasskeyRegistrationCredentialExtensionInput?)](./aspasskeycredentialrequest/init%28credentialidentity,clientdatahash,userverificationpreference,supportedalgorithms,extensioninput%29-1258o.md)
   Initializes a passkey credential request, providing additional passkey registration data.
+- [- initWithCredentialIdentity:clientDataHash:userVerificationPreference:supportedAlgorithms:](./aspasskeycredentialrequest/initwithcredentialidentity_clientdatahash_userverificationpreference_supportedalgorithms_.md)
+  Initializes a passkey credential request.
+- [- initWithCredentialIdentity:clientDataHash:userVerificationPreference:supportedAlgorithms:assertionExtensionInput:](./aspasskeycredentialrequest/initwithcredentialidentity_clientdatahash_userverificationpreference_supportedalgorithms_assertionextensioninput_.md)
+  Initializes a passkey credential request, providing additional passkey registration data.
+- [- initWithCredentialIdentity:clientDataHash:userVerificationPreference:supportedAlgorithms:registrationExtensionInput:](./aspasskeycredentialrequest/initwithcredentialidentity_clientdatahash_userverificationpreference_supportedalgorithms_registrationextensioninput_.md)
+  Initializes a passkey credential request, providing additional passkey registration data.
 ### Viewing passkey challenge information
 - [var clientDataHash: Data](./aspasskeycredentialrequest/clientdatahash.md)
   The hash of the client data for this assertion.
@@ -45,6 +51,16 @@ class ASPasskeyCredentialRequest
   An input for WebAuthn extensions.
 - [enum ASPasskeyCredentialExtensionInput](./aspasskeycredentialextensioninput.md)
   A type for WebAuthn extension inputs.
+- [supportedAlgorithms](./aspasskeycredentialrequest/supportedalgorithms-27z68.md)
+  A list of cryptographic signature algorithms that the relying party supports.
+- [assertionExtensionInput](./aspasskeycredentialrequest/assertionextensioninput.md)
+  An input for WebAuthn extensions.
+- [ASPasskeyAssertionCredentialExtensionInput](./aspasskeyassertioncredentialextensioninput-c.class.md)
+  A type that encapsulates input for various WebAuthn extensions during passkey assertion.
+- [registrationExtensionInput](./aspasskeycredentialrequest/registrationextensioninput.md)
+  An input for WebAuthn extensions.
+- [ASPasskeyRegistrationCredentialExtensionInput](./aspasskeyregistrationcredentialextensioninput-c.class.md)
+  A type that encapsulates input for various WebAuthn extensions during passkey registration.
 ### Initializers
 - [init?(coder: NSCoder)](./aspasskeycredentialrequest/init%28coder%29.md)
 ### Instance Properties

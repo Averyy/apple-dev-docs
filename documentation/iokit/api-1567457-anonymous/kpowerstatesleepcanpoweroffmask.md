@@ -1,0 +1,20 @@
+# kPowerStateSleepCanPowerOffMask
+
+**Framework**: IOKit  
+**Kind**: econst  
+**Role**: Enumeration Case
+
+**Availability**:
+- Mac Catalyst 18.4+
+- macOS 10.0+
+
+## Declaration
+
+```c
+kPowerStateSleepCanPowerOffMask = (1 << kPowerStateSleepCanPowerOffBit)
+```
+
+
+---
+
+*[View on Apple Developer](https://developer.apple.com/documentation/iokit/1567457-anonymous/kpowerstatesleepcanpoweroffmask)*

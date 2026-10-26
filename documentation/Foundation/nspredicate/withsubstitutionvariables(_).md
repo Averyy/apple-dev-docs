@@ -54,6 +54,8 @@ The predicate itself is not modified by this method, so you can reuse it for any
   Creates a predicate that evaluates using a specified block object and bindings dictionary.
 - [init?(fromMetadataQueryString: String)](./init%28frommetadataquerystring%29.md)
   Creates a predicate with a metadata query string.
+- [+ predicateWithFormat:](./predicatewithformat_.md)
+  Creates and returns a new predicate formed by creating a new string with a specified format and parsing the result.
 
 
 ---

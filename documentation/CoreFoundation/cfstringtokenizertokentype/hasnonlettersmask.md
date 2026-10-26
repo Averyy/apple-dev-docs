@@ -42,6 +42,8 @@ Given the way Unicode word break works, this means it is a standalone punctuatio
   Appears to contain a number.
 - [static var isCJWordMask: CFStringTokenizerTokenType](./iscjwordmask.md)
   Contains kana and/or ideographs.
+- [kCFStringTokenizerTokenNone](./kcfstringtokenizertokennone.md)
+  Has no token.
 
 
 ---

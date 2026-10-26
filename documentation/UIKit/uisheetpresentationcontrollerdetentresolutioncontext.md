@@ -46,6 +46,12 @@ A context of this type is available in the `resolver` closure of [`custom(identi
   Creates a custom detent for a sheet by computing its value according to the properties of the provided context.
 - [func resolvedValue(in: any UISheetPresentationControllerDetentResolutionContext) -> CGFloat?](./uisheetpresentationcontroller/detent/resolvedvalue%28in%29.md)
   Resolves a detent to its value.
+- [+ customDetentWithIdentifier:resolver:](./uisheetpresentationcontrollerdetent/customdetentwithidentifier_resolver_.md)
+  Creates a custom detent for a sheet by computing its value according to the properties of the provided context.
+- [- resolvedValueInContext:](./uisheetpresentationcontrollerdetent/resolvedvalueincontext_.md)
+  Resolves a detent to its value.
+- [UISheetPresentationControllerDetentInactive](./uisheetpresentationcontrollerdetentinactive.md)
+  A value that represents an inactive detent.
 
 
 ---

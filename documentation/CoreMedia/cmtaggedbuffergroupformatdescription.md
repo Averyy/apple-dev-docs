@@ -30,6 +30,8 @@ typedef CMFormatDescriptionRef CMTaggedBufferGroupFormatDescriptionRef;
 ### Types
 - [typealias CMTaggedBufferGroupFormatType](./cmtaggedbuffergroupformattype.md)
   A type for tagged buffer format information.
+- [CMTaggedBufferGroupRef](./cmtaggedbuffergroupref.md)
+  A reference to a tagged buffer group instance.
 
 
 ---

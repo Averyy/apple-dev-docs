@@ -5,6 +5,14 @@
 
 Compute the element-wise sum of the squares of the real and imaginary parts of a complex vector.
 
+## Topics
+
+### Vector-to-Vector Spectra Computation
+- [vDSP_zaspec](./vdsp_zaspec.md)
+  Computes the autospectrum of a complex single-precision vector.
+- [vDSP_zaspecD](./vdsp_zaspecd.md)
+  Computes the autospectrum of a complex double-precision vector.
+
 ## See Also
 
 ### Vector-to-vector spectra and coherence computation

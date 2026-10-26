@@ -46,6 +46,10 @@ enum NSPrintingOrientation : NSUInteger;
   Deprecated.
 - [Deprecated Printing Keys](../deprecated-printing-keys.md)
   These keys refer to older printing properties that are no longer used.
+- [+ setDefaultPrinter:](./setdefaultprinter_.md)
+  Deprecated.
+- [+ sizeForPaperName:](./sizeforpapername_.md)
+  Deprecated.
 
 
 ---

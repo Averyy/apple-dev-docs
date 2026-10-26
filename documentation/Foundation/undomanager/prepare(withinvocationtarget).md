@@ -42,6 +42,8 @@ A proxy object that forwards messages to the undo manager for recording as undo 
   Registers the specified closure to implement a single undo operation that the target receives.
 - [func registerUndo(withTarget: Any, selector: Selector, object: Any?)](./registerundo%28withtarget,selector,object%29.md)
   Registers the selector of the specified target to implement a single undo operation that the target receives.
+- [- registerUndoWithTarget:handler:](../nsundomanager/registerundowithtarget_handler_.md)
+  Records a single undo operation for a given target so that when the manager performs an undo, it executes the specified block.
 
 
 ---

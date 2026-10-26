@@ -118,6 +118,16 @@ This class reads and parses the `manifest.json` file along with the supporting r
   Returns the extension’s icon image for the specified size.
 - [func supportsManifestVersion(Double) -> Bool](./wkwebextension/supportsmanifestversion%28_%29.md)
   Checks if a manifest version is supported by the extension.
+### Errors
+- [WKWebExtensionError](./wkwebextension/error/code.md)
+  Constants that indicate errors in the [`WKWebExtension`](./wkwebextension.md) domain.
+- [WKWebExtensionErrorDomain](./wkwebextension/errordomain.md)
+  Indicates a web extension error.
+### Type Methods
+- [+ extensionWithAppExtensionBundle:completionHandler:](./wkwebextension/extensionwithappextensionbundle_completionhandler_.md)
+  Returns a web extension initialized with a specified app extension bundle.
+- [+ extensionWithResourceBaseURL:completionHandler:](./wkwebextension/extensionwithresourcebaseurl_completionhandler_.md)
+  Returns a web extension initialized with a specified resource base URL, which can point to either a directory or a ZIP archive.
 
 ## Relationships
 

@@ -50,6 +50,11 @@ A transition from one scene to another in a storyboard is called a *segue*. This
   Creates the specified window controller from the storyboard and initializes it using your custom initialization code.
 - [NSStoryboard.SceneIdentifier](./nsstoryboard/sceneidentifier.md)
   A string that uniquely identifies a view controller or window controller in your storyboard file.
+- [NSStoryboardControllerCreator](./nsstoryboardcontrollercreator.md)
+  A block that you use to handle the custom creation of controller objects from your storyboard file.
+### Instance Methods
+- [- instantiateControllerWithIdentifier:creator:](./nsstoryboard/instantiatecontrollerwithidentifier_creator_.md)
+- [- instantiateInitialControllerWithCreator:](./nsstoryboard/instantiateinitialcontrollerwithcreator_.md)
 
 ## Relationships
 

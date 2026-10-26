@@ -83,6 +83,10 @@ Use the `haptics` property to get the haptics profile of the stylus.  A spatial 
 ### Accessing the styli
 - [class var styli: [GCStylus]](./gcstylus/styli.md)
   Get the collection of stylus accessories currently connected to the device.
+- [GCStylusDidConnectNotification](./gcstylusdidconnectnotification.md)
+  A notification that posts after a stylus accessory connects to the device.
+- [GCStylusDidDisconnectNotification](./gcstylusdiddisconnectnotification.md)
+  A notification that posts after a stylus accessory disconnects from the device.
 ### Getting input values and haptics
 - [var input: (any GCDevicePhysicalInput)?](./gcstylus/input.md)
   Gets the input profile for the stylus.

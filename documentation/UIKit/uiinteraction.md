@@ -70,6 +70,7 @@ protocol UIInteraction : NSObjectProtocol
 - [UIWindowScene.ActivationInteraction](./uiwindowscene/activationinteraction.md)
 - [UIWindowSceneDragInteraction](./uiwindowscenedraginteraction.md)
 - [UIWritingToolsCoordinator](./uiwritingtoolscoordinator.md)
+- [UIIndirectScribbleInteraction](./uiindirectscribbleinteraction-2dap8.md)
 
 ## See Also
 

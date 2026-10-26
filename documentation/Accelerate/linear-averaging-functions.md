@@ -5,6 +5,14 @@
 
 Calculate the element-wise linear average of two vectors.
 
+## Topics
+
+### Vector linear average recalculation
+- [vDSP_vavlin](./vdsp_vavlin.md)
+  Recalculates the element-wise single-precision linear average of an existing vector to include a second vector.
+- [vDSP_vavlinD](./vdsp_vavlind.md)
+  Recalculates the element-wise double-precision linear average of an existing vector to include a second vector.
+
 ## See Also
 
 ### Vector-vector arithmetic

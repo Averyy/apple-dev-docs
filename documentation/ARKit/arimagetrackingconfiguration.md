@@ -39,6 +39,8 @@ To use [`ARImageTrackingConfiguration`](./arimagetrackingconfiguration.md), defi
 ### Creating a Configuration
 - [init()](./arimagetrackingconfiguration/init%28%29.md)
   Initializes a new image-tracking configuration.
+- [+ new](./arimagetrackingconfiguration/new.md)
+  Creates a new image-tracking configuration.
 ### Choosing Images to Track
 - [var trackingImages: Set<ARReferenceImage>](./arimagetrackingconfiguration/trackingimages.md)
   A set of images that ARKit searches for and tracks in the user’s environment.
