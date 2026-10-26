@@ -14,6 +14,7 @@ file couldn't be saved or loaded) and that --frameworks names one of which
 matches no framework scrape nothing.
 """
 
+import dataclasses
 import hashlib
 import json
 import os
@@ -35,6 +36,7 @@ import scrape_all_frameworks
 from cleanup_orphans_at_end import CleanupReport
 from scraper.config import Config
 from scraper.json_scraper import PERSISTENT_FAILURE_RUNS, AppleJSONDocumentationScraper, FrameworkOutcome
+from scraper.site import APPLE, DocCSite
 from scraper.utils.hash_manager import HashManager
 from scraper.utils.rate_limiter import AdaptiveRateLimiter
 from tests.test_fetch_results import TIMEOUT, FakeApple, Spec, doc_url, json_url, ok, page, status
@@ -52,6 +54,9 @@ Site = Dict[str, List[str]]
 
 # root -> alpha (-> alpha/child), beta, gamma: 5 files, so 2 orphans stay under the valve
 SITE: Site = {ROOT: [ALPHA, BETA, GAMMA], ALPHA: [ALPHA_CHILD], ALPHA_CHILD: [], BETA: [], GAMMA: []}
+
+# Apple's URLs with an SPI package's page_gone_runs: a page's 404/410 removes it on its 2nd run in a row
+CONFIRMING = dataclasses.replace(APPLE, page_gone_runs=2)
 
 
 class Apple(FakeApple):
@@ -98,9 +103,10 @@ class Runs:
         self.last: Optional[AppleJSONDocumentationScraper] = None  # the last run's scraper
         self.apple: Optional[Apple] = None  # the last run's fake Apple (its requests)
 
-    async def run(self, routes: Dict[str, List[Spec]], fw: str = FW) -> AppleJSONDocumentationScraper:
+    async def run(self, routes: Dict[str, List[Spec]], fw: str = FW,
+                  site: DocCSite = APPLE) -> AppleJSONDocumentationScraper:
         apple = Apple(routes)
-        scraper = AppleJSONDocumentationScraper(fw, fw.title())
+        scraper = AppleJSONDocumentationScraper(fw, fw.title(), site=site)
         with capture_logs() as events:
             async with scraper:
                 assert scraper.session is not None
@@ -411,8 +417,9 @@ class TestD8:
     async def test_404_on_a_good_page_is_removed_in_the_same_run(self, runs: Runs) -> None:
         await seeded(runs)
         scraper = await runs.run(routes_for(SITE, {ALPHA: [status(404)]}))
-        assert not scraper.outcome.skip_cleanup
+        assert not scraper.outcome.skip_cleanup and scraper.outcome.gone_pending == {}
         assert [e["url"] for e in runs.logged("page_gone")] == [json_url(ALPHA)]
+        assert not runs.logged("page_gone_pending")
         assert counters(runs.entry(ALPHA)) == {}
         assert runs.orphans() == {file_of(ALPHA), file_of(ALPHA_CHILD)}
 
@@ -425,6 +432,82 @@ class TestD8:
         assert not scraper.outcome.skip_cleanup
         assert counters(runs.entry(ALPHA)) == {}
         assert runs.orphans() == {file_of(ALPHA), file_of(ALPHA_CHILD)}
+
+
+class TestPageGoneRuns:
+    """A site whose page_gone_runs is 2 (SPI's): a page we have that answers 404/410 is
+    removed on its 2nd run in a row; on the 1st it is kept, with the pages only it links."""
+
+    async def test_a_good_pages_404_waits_one_run_then_removes_it(self, runs: Runs) -> None:
+        await seeded(runs)
+        gone = routes_for(SITE, {ALPHA: [status(404)]})
+        scraper = await runs.run(gone, site=CONFIRMING)
+        outcome = scraper.outcome
+        # Pending: kept and touched; its cleanup skipped, which is no error
+        assert outcome.gone_pending == {json_url(ALPHA): 1} and outcome.page_gone_runs == 2
+        assert outcome.skip_cleanup and not outcome.blocked and not outcome.failure_storm
+        assert scrape_all_frameworks.framework_errors([outcome]) == []
+        assert cleanup_orphans_at_end.describe_skip(outcome) == "page 404/410, run 1 of 2 x1"
+        assert [e["url"] for e in runs.logged("page_gone_pending")] == [json_url(ALPHA)]
+        assert not runs.logged("page_gone")
+        entry = runs.entry(ALPHA)
+        assert counters(entry) == {"consecutive_gone": 1} and entry["file_path"] == str(file_of(ALPHA))
+        # Its unreached child would be an orphan, but the cleanup is skipped
+        assert runs.orphans() == {file_of(ALPHA_CHILD)} and would_delete(scraper) == {}
+
+        # The 2nd 404 in a row removes it, as Apple's first does
+        scraper = await runs.run(gone, site=CONFIRMING)
+        assert scraper.outcome.gone_pending == {} and not scraper.outcome.skip_cleanup
+        assert [e["url"] for e in runs.logged("page_gone")] == [json_url(ALPHA)]
+        assert runs.entry(ALPHA) == {"status": "error", "error": "HTTP 404"}
+        assert would_delete(scraper) == {FW: sorted([file_of(ALPHA), file_of(ALPHA_CHILD)])}
+
+        # Removed, it has no live entry: a 404 is a removal at once
+        scraper = await runs.run(gone, site=CONFIRMING)
+        assert scraper.outcome.gone_pending == {} and not runs.logged("page_gone_pending")
+
+    async def test_the_root_and_never_good_pages_are_removed_at_once(self, runs: Runs) -> None:
+        await seeded(runs)
+        linked: Site = {**SITE, ROOT: [*SITE[ROOT], NEW]}
+        scraper = await runs.run(routes_for(linked, {NEW: [status(404)]}), site=CONFIRMING)
+        assert scraper.outcome.gone_pending == {} and not scraper.outcome.skip_cleanup
+        assert [e["url"] for e in runs.logged("page_gone")] == [json_url(NEW)]
+        assert runs.entry(NEW) == {"status": "error", "error": "HTTP 404"}
+        # The root keeps its own 2-run count (root_gone_runs)
+        scraper = await runs.run(routes_for(SITE, {ROOT: [status(404)]}), site=CONFIRMING)
+        assert scraper.outcome.root_gone_runs == 1 and scraper.outcome.gone_pending == {}
+        assert not runs.logged("page_gone_pending")
+
+    async def test_any_other_outcome_resets_the_count(self, runs: Runs) -> None:
+        """A 200, a fetch failure (which blocks and counts toward D8 as ever) or a run that doesn't reach it."""
+        await seeded(runs)
+        gone = routes_for(SITE, {ALPHA: [status(404)]})
+        for between in (routes_for(SITE), routes_for(SITE, {ALPHA: [status(503)]})):
+            await runs.run(gone, site=CONFIRMING)
+            assert counters(runs.entry(ALPHA)) == {"consecutive_gone": 1}
+            await runs.run(between, site=CONFIRMING)
+            assert "consecutive_gone" not in runs.entry(ALPHA)
+        assert counters(runs.entry(ALPHA)) == {"consecutive_failures": 1}
+        # Pending ends the D8 streak: a 404 is no fetch failure
+        scraper = await runs.run(gone, site=CONFIRMING)
+        assert counters(runs.entry(ALPHA)) == {"consecutive_gone": 1} and scraper.outcome.blocks == {}
+        assert file_of(ALPHA).exists()
+        # Its child pending, then a run that doesn't reach it (its parent fails)
+        await runs.run(routes_for(SITE, {ALPHA_CHILD: [status(410)]}), site=CONFIRMING)
+        assert counters(runs.entry(ALPHA_CHILD)) == {"consecutive_gone": 1}
+        await runs.run(routes_for(SITE, {ALPHA: [status(502)]}), site=CONFIRMING)
+        assert counters(runs.entry(ALPHA_CHILD)) == {}
+        assert file_of(ALPHA_CHILD).exists()
+
+    async def test_pending_pages_are_no_failure_storm(self, runs: Runs) -> None:
+        leaves = [f"{FW}/leaf{n}" for n in range(10)]
+        wide: Site = {ROOT: leaves, **{leaf: [] for leaf in leaves}}
+        await seeded(runs, wide)
+        scraper = await runs.run(routes_for(wide, {leaf: [status(404)] for leaf in leaves[:7]}), site=CONFIRMING)
+        outcome = scraper.outcome
+        assert len(outcome.gone_pending) == 7 and outcome.blocks == {} and not outcome.failure_storm
+        assert not runs.logged("failure_storm") and "failure_storm_runs" not in runs.saved()["metadata"]
+        assert cleanup_orphans_at_end.describe_skip(outcome) == "page 404/410, run 1 of 2 x7"
 
 
 class TestNeverGood:
@@ -1287,6 +1370,13 @@ class TestRenderVersion:
         self.bump(monkeypatch)
         scraper = await runs.run(routes_for(SITE, {ROOT: [status(404)]}))
         assert scraper.outcome.root_gone_runs == 1 and not scraper.outcome.blocked
+        assert self.stored() == {"version": RENDER_OLD}
+
+    async def test_a_pending_404_run_stores_nothing(self, runs: Runs, monkeypatch: pytest.MonkeyPatch) -> None:
+        await seeded(runs)
+        self.bump(monkeypatch)
+        scraper = await runs.run(routes_for(SITE, {BETA: [status(404)]}), site=CONFIRMING)
+        assert scraper.outcome.gone_pending and not scraper.outcome.blocked
         assert self.stored() == {"version": RENDER_OLD}
 
     async def test_a_persistent_local_error_keeps_the_version_unstored(

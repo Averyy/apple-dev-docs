@@ -110,6 +110,8 @@ class Sink:
         fetch_failures: JSON URL -> the fetch failure that counts toward D8
         fetch_ok: answered 200 with a JSON body
         gone: answered 404/410: Apple removed the page
+        gone_pending: a page we have answered 404/410 on fewer consecutive
+            runs than its site's page_gone_runs: kept this run
         local_errors: JSON URL -> convert/save error
         saved_ok: pages processed without a local error
         known_pages: Its previously good pages, the storm threshold's base
@@ -126,7 +128,8 @@ class Sink:
             page whose links are kept: a dedup hit on it waits for it
         raised: Pages whose processing raised
         dedup_jobs: JSON URL -> the jobs a dedup hit recorded on the page
-            because its fetch failed (they take its block or persistent flag)
+            because its fetch failed (they take its block or persistent
+            flag) or its 404/410 is pending (their cleanup is skipped too)
         decisions: JSON URL -> what the failure policy made of the page's
             fetch failure this run: "block" or "persistent"
         persistent_local_errors: A page's local error reached
@@ -177,6 +180,7 @@ class Sink:
         self.fetch_failures: Dict[str, "PageFetchFailure"] = {}
         self.fetch_ok: Set[str] = set()
         self.gone: Set[str] = set()
+        self.gone_pending: Set[str] = set()
         self.local_errors: Dict[str, str] = {}
         self.saved_ok: Set[str] = set()
         self.known_pages = sum(
@@ -265,6 +269,7 @@ class Sink:
             # other writers' are counted again, at the end of the run
             self.fetch_ok = {url for url in self.fetch_ok if url in self.writer}
             self.gone = {url for url in self.gone if url in self.writer}
+            self.gone_pending = {url for url in self.gone_pending if url in self.writer}
             self.saved_ok = {url for url in self.saved_ok if url in self.writer}
             self.local_errors = {url: error for url, error in self.local_errors.items() if url in self.writer}
         return True

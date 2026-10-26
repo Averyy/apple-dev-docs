@@ -8,12 +8,12 @@ import time
 from collections import Counter
 from dataclasses import dataclass, field
 from pathlib import Path
-from typing import Any, Callable, Deque, Dict, Final, List, Literal, Optional, Sequence, Set, Tuple, Union
+from typing import Any, Callable, Deque, Dict, Final, List, Literal, Mapping, Optional, Sequence, Set, Tuple, Union
 from urllib.parse import urljoin, urlparse
 
 from scraper.base import NOT_MODIFIED, BaseAppleScraper, FetchFailed
 from scraper.config import Config
-from scraper.sink import HANDOFF_KEY, MODULE_KEY, Sink, SinkRegistry, metadata_ids, module_parents
+from scraper.sink import HASH_FILE_SUFFIX, HANDOFF_KEY, MODULE_KEY, Sink, SinkRegistry, metadata_ids, module_parents
 from scraper.site import APPLE, DocCSite
 from scraper.utils.assets import hosting_root, variant_url
 from scraper.utils.hash_manager import COUNTER_FIELDS, HashManager, same_name_any_case, write_text_atomic
@@ -282,6 +282,11 @@ class FrameworkOutcome:
             this run and never answered 200 (else 0); cleanup skips the
             framework, which isn't our failure, until the end-of-run pass
             deletes it at 2
+        gone_pending: The pages of its run (or that a dedup hit gave it)
+            whose 404/410 is pending (DocCSite.page_gone_runs), URL -> their
+            consecutive 404/410 runs: cleanup skips the framework this run,
+            which isn't our failure, so the pages only they link are kept too
+        page_gone_runs: Its site's page_gone_runs
         failure_storm: Too many fetch failures this run (see FAILURE_STORM_*)
         raised: The error, if the framework's scrape raised
         stats: The scraper's stats
@@ -304,6 +309,8 @@ class FrameworkOutcome:
     filename_clashes: List[str] = field(default_factory=list)
     root_fetch_failed: bool = False
     root_gone_runs: int = 0
+    gone_pending: Dict[str, int] = field(default_factory=dict)
+    page_gone_runs: int = 1
     failure_storm: bool = False
     raised: Optional[str] = None
     stats: Dict[str, Any] = field(default_factory=dict)
@@ -347,7 +354,7 @@ class FrameworkOutcome:
     @property
     def skip_cleanup(self) -> bool:
         """Orphan cleanup must leave this framework alone this run."""
-        return self.blocked or self.root_gone_runs > 0
+        return self.blocked or self.root_gone_runs > 0 or bool(self.gone_pending)
 
 
 @dataclass
@@ -530,6 +537,7 @@ class AppleJSONDocumentationScraper(BaseAppleScraper):
             framework_id=self.framework_id,
             site=self.site.name,
             namespace=self.site.namespace,
+            page_gone_runs=self.site.page_gone_runs,
             output_dir=self.sink.output_dir,
             hash_file=self.sink.hash_file,
         )
@@ -898,7 +906,9 @@ class AppleJSONDocumentationScraper(BaseAppleScraper):
         (dedup_jobs): the end-of-run failure policy gives it the page's
         block or persistent flag. The pages in its scope reachable only
         through that page go untouched this run, and that block keeps its
-        cleanup from orphaning them. A page Apple removed (404/410) gives
+        cleanup from orphaning them. A page whose 404/410 is pending
+        (DocCSite.page_gone_runs) records the job the same way: the policy
+        skips its cleanup this run. A page Apple removed (404/410) gives
         nothing: what only it linked to is removed too.
         """
         links = sink.links.get(json_url)
@@ -906,7 +916,7 @@ class AppleJSONDocumentationScraper(BaseAppleScraper):
             self._enqueue(self._in_scope(links), url_queue)
         elif json_url in sink.raised:
             self.outcome.block("exception", json_url)
-        elif json_url in sink.fetch_failures:
+        elif json_url in sink.fetch_failures or json_url in sink.gone_pending:
             sink.dedup_jobs.setdefault(json_url, set()).add(self.job_id)
 
     async def _process_queued_url(self, sink: Sink, json_url: str, url_queue: Deque[str]) -> None:
@@ -1178,6 +1188,12 @@ class AppleJSONDocumentationScraper(BaseAppleScraper):
         - 404/410: Apple removed the page. Its JSON-URL key becomes an error
           entry, so its file (and any subtree no longer reachable) is orphaned
           and cleaned. Never blocks.
+        - 404/410 on a live page (not the root) of a site whose
+          page_gone_runs is over 1 (SPI's), for fewer consecutive runs than
+          that: pending. The entry is kept and touched, and the job's cleanup
+          is skipped this run (not an error), which keeps the pages only it
+          links; the policy counts the run (consecutive_gone). On the
+          page_gone_runs-th run in a row it is removed as above.
         - Any other failure of a live page: keep the entry and touch it, so
           its file isn't orphaned; it blocks cleanup and counts toward D8.
         - A URL with no live entry: an error entry. A transient failure blocks
@@ -1199,6 +1215,14 @@ class AppleJSONDocumentationScraper(BaseAppleScraper):
         """
         hm = sink.hash_manager
         if failure.status in GONE_STATUSES:
+            gone_runs = hm.get_counter(json_url, "consecutive_gone") + 1
+            if (gone_runs < sink.site.page_gone_runs and not self._is_root(json_url)
+                    and self._is_previously_good(hm.hashes.get(json_url))):
+                hm.touch(json_url)
+                logger.warning("page_gone_pending", url=json_url, status=failure.status, gone_runs=gone_runs,
+                               page_gone_runs=sink.site.page_gone_runs)
+                sink.gone_pending.add(json_url)
+                return
             if not (self._is_root(json_url) and self._root_ok):
                 hm.mark_error(json_url, failure.error)
                 logger.info("page_gone", url=json_url, status=failure.status)
@@ -1370,9 +1394,10 @@ class AppleJSONDocumentationScraper(BaseAppleScraper):
         """Store RENDER_VERSION in a sink's hash file (metadata.render) after a clean run.
 
         Clean: cleanup isn't skipped (no failure of ours blocked it, nothing
-        raised, the root isn't gone) and no page's local error is persistent,
-        so every page this run reached was rendered by this version, with or
-        without --cleanup-orphans. Otherwise the stored version stays and
+        raised, the root isn't gone, no page's 404/410 is pending) and no
+        page's local error is persistent, so every page this run reached was
+        rendered by this version, with or without --cleanup-orphans.
+        Otherwise the stored version stays and
         the next run renders the framework again: a framework whose root
         404'd, or a page whose rendering keeps failing (its file kept, its
         etag still matching), would else never be rendered again. A filename
@@ -1402,7 +1427,8 @@ class AppleJSONDocumentationScraper(BaseAppleScraper):
         Fills self.outcome for the end-of-run cleanup, so neither the scraper
         nor its hash manager has to be kept until then:
         - A root that answered 404/410 this run: no cleanup (the end-of-run
-          pass deletes the framework at 2 runs).
+          pass deletes the framework at 2 runs). Neither for a page whose
+          404/410 is pending (DocCSite.page_gone_runs).
         - Zero-touched guard: a framework where this run touched no entry is
           never cleaned. It logs framework_zero_touched and blocks, as a
           failure of ours (every file it has would look orphaned).
@@ -1415,7 +1441,7 @@ class AppleJSONDocumentationScraper(BaseAppleScraper):
         to this run.
         """
         outcome = self.outcome
-        if outcome.root_gone_runs or sink.deferred:
+        if outcome.root_gone_runs or outcome.gone_pending or sink.deferred:
             return
         if not outcome.blocked and not sink.hash_manager.touched:
             logger.error("framework_zero_touched", framework=self.framework_name, framework_id=self.framework_id)
@@ -3267,12 +3293,14 @@ def apply_sink_failure_policy(
     """Count a sink's page failures of this run once, and send each its block or flag.
 
     The per-entry counters of the pages the given writers processed (all of
-    them by default): consecutive_failures (D8) and consecutive_local_errors.
-    Each failure's block ("fetch_failed", "local_error") or persistent flag
-    goes to the outcome of the job that processed the page, and of each job a
-    dedup hit recorded on it (Sink.dedup_jobs). Runs once for a framework
-    job's own pages, after its discovery (_apply_failure_policy), and once
-    for a multi-writer sink's, after its last writer (finish_run).
+    them by default): consecutive_failures (D8), consecutive_local_errors
+    and consecutive_gone (DocCSite.page_gone_runs). Each failure's block
+    ("fetch_failed", "local_error") or persistent flag, and each pending
+    404/410 (FrameworkOutcome.gone_pending), goes to the outcome of the job
+    that processed the page, and of each job a dedup hit recorded on it
+    (Sink.dedup_jobs). Runs once for a framework job's own pages, after its
+    discovery (_apply_failure_policy), and once for a multi-writer sink's,
+    after its last writer (finish_run).
 
     - Failure storm (storm): more failures than max(5, 1% of the sink's
       pages) block but aren't counted, unless the storm lasts
@@ -3281,7 +3309,11 @@ def apply_sink_failure_policy(
       (a removal, not a failure) or a run that never fetched the URL (no
       writer processed it this run) ends the streak, so a stale count can't
       lift the never-good block on our first new failure. A page processed
-      without a local error resets that count.
+      without a local error resets that count. The 404/410 count is of
+      pending runs in a row: any other outcome (a 200, a removal, a fetch
+      failure) or a run that never fetched the URL ends it.
+    - A pending 404/410 never counts as a fetch failure (D8, the storm): it
+      ends that streak, and skips its jobs' cleanup without blocking it.
     - At PERSISTENT_FAILURE_RUNS a failure stops blocking and flags the run;
       a previously good page is then treated as removed (D8: both keys
       become error entries, so its file is orphaned and cleaned).
@@ -3331,11 +3363,24 @@ def apply_sink_failure_policy(
         url for url, entry in hm.hashes.items()
         if "consecutive_failures" in entry and url not in sink.processed_urls
     }
-    fetched = {url for url in sink.fetch_ok | sink.gone if counted(url)}
+    fetched = {url for url in sink.fetch_ok | sink.gone | sink.gone_pending if counted(url)}
     for url in (fetched | unfetched) - sink.fetch_failures.keys():
         hm.set_counter(url, "consecutive_failures", 0)
     for url in {url for url in sink.saved_ok if counted(url)} - sink.local_errors.keys():
         hm.set_counter(url, "consecutive_local_errors", 0)
+
+    pending = {url for url in sink.gone_pending if counted(url)}
+    unfetched_gone = {
+        url for url, entry in hm.hashes.items()
+        if "consecutive_gone" in entry and url not in sink.processed_urls
+    }
+    for url in (fetched | failures.keys() | unfetched_gone) - pending:
+        hm.set_counter(url, "consecutive_gone", 0)
+    for url in sorted(pending):
+        runs = hm.get_counter(url, "consecutive_gone") + 1
+        hm.set_counter(url, "consecutive_gone", runs)
+        for outcome in outcomes(url):
+            outcome.gone_pending[url] = runs
 
     for url, page_failure in failures.items():
         runs = hm.get_counter(url, "consecutive_failures")
@@ -3476,7 +3521,8 @@ def sink_runs_clean(sink: Sink, outcome_of: Callable[[str], Optional[FrameworkOu
 
 
 def finish_run(
-    sinks: SinkRegistry, outcomes: Sequence[FrameworkOutcome], cleanup_orphans: bool
+    sinks: SinkRegistry, outcomes: Sequence[FrameworkOutcome], cleanup_orphans: bool,
+    run: Optional[RunSinks] = None,
 ) -> List[ModuleScan]:
     """The end of a run for its multi-writer sinks (D6), once every job has finished.
 
@@ -3497,6 +3543,8 @@ def finish_run(
        handoff-only sink (its primary didn't run) is never cleaned.
     4. Every sink saved (SinkRegistry.save_all), with or without
        cleanup_orphans: the cleanup then works on saved files.
+    5. With the run's sinks (run), the run counters of the modules no
+       parent routed a page to this run (reset_unreached_modules).
     framework_errors and the cleanup read the outcomes after this.
 
     Returns:
@@ -3542,8 +3590,60 @@ def finish_run(
                     _rescan(sink, primary)
         sinks.release_if_idle(sink)
 
+    # (save_all drops the sinks)
+    loaded = {(sink.site.name, sink.dir_name.lower()) for sink in sinks.all()}
     sinks.save_all()
+    if run is not None:
+        reset_unreached_modules(loaded, run, by_job)
     return modules
+
+
+def reset_unreached_modules(
+    loaded: Set[Tuple[str, str]], run: RunSinks, by_job: Mapping[Tuple[str, str], FrameworkOutcome]
+) -> None:
+    """End the fetch streaks of the pages of the modules this run had no sink for.
+
+    A module no parent routed a page to this run (e.g. the page linking it
+    failed) has no sink, so apply_sink_failure_policy never sees its pages:
+    as any page this run didn't fetch, each loses its consecutive_failures
+    (D8) and consecutive_gone (page_gone_runs) counts, else a stale count
+    would remove a page on fewer failed or 404/410 runs in a row. Only for a
+    module one of whose parents ran this run without raising (its discovery
+    ran to its end, as a job's own unfetched pages are reset only then); a
+    module whose parents didn't run (a subset run, a skipped site) neither
+    counts nor resets. consecutive_local_errors, which only a save resets,
+    stays. Its hash file is written only when a count was dropped; a failed
+    write fails the parents that ran, as a sink's does.
+
+    Args:
+        loaded: The (site name, dir name lowercased) of the run's sinks
+        run: The run's sinks (its module files on disk at run start)
+        by_job: The run's outcomes, by (site name, job id)
+    """
+    for path in dict.fromkeys(run.module_files):
+        site, namespace = run.site_of(path)
+        name = path.name[: -len(HASH_FILE_SUFFIX)]
+        if (site, name.lower()) in loaded or not path.is_file():
+            continue
+        hm = HashManager(path, Config.get_framework_output_dir(name, namespace=namespace))
+        if hm.load_error is not None:
+            continue
+        ran = [outcome for parent in module_parents(hm.get_metadata(MODULE_KEY))
+               if (outcome := by_job.get((site, parent))) is not None and outcome.raised is None]
+        if not ran:
+            continue
+        reset = 0
+        for url, entry in list(hm.hashes.items()):
+            for counter in ("consecutive_failures", "consecutive_gone"):
+                if counter in entry:
+                    hm.set_counter(url, counter, 0)
+                    reset += 1
+        if not reset:
+            continue
+        logger.info("unreached_module_counts_reset", module=name, site=site, counts=reset)
+        if not hm.save():
+            for outcome in ran:
+                outcome.raised = f"failed to save hash file {path}"
 
 
 def _rescan(sink: Sink, primary: FrameworkOutcome) -> None:
@@ -3554,7 +3654,8 @@ def _rescan(sink: Sink, primary: FrameworkOutcome) -> None:
     A deferred sink gets Batch 2's zero-touched guard here; a sink whose
     primary's cleanup is skipped gets no scan.
     """
-    if primary.root_gone_runs:
+    if primary.root_gone_runs or primary.gone_pending:
+        primary.orphan_scan = None
         return
     if sink.deferred and not primary.blocked and not sink.hash_manager.touched:
         logger.error("framework_zero_touched", framework=sink.framework_name, framework_id=sink.dir_name)

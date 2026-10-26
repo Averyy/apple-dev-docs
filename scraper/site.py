@@ -64,6 +64,10 @@ class DocCSite:
         max_jobs: At most this many jobs of its host's sites run at once
             (0: no cap), the others waiting outside the run's job slots, so
             a host whose rate is low never holds the Apple jobs' slots
+        page_gone_runs: A page we have (not a root) is removed once it
+            answers 404/410 on this many consecutive runs; on the runs
+            before, it is kept and its job's cleanup skipped, with no error
+            (1: removed on its first 404/410, as Apple's are)
     """
 
     name: str
@@ -80,6 +84,7 @@ class DocCSite:
     max_retries: Optional[int] = None
     retry_backoff: Optional[float] = None
     max_jobs: int = 0
+    page_gone_runs: int = 1
 
     @property
     def doc_prefix(self) -> str:
@@ -204,8 +209,18 @@ def spi_package(owner: str, repo: str, excludes: Tuple[str, ...] = ()) -> DocCSi
         # 2 at +36 s and 1 at +60 s, none failed
         max_retries=4,
         retry_backoff=6.0,
-        # Its jobs share one limiter, which ~4 jobs keep busy
-        max_jobs=4,
+        # Its jobs share one limiter, but each fetches one page at a time and
+        # its pages take ~0.7 s on average (median 0.3 s, measured
+        # 2026-10-26), so 4 jobs reached only ~4.5 requests/s and made it
+        # the run's longest step; 8 reach ~9-11/s, under the limiter's
+        # 20/s (its 503 rate was the same at ~1.2 and ~3.7 requests/s)
+        max_jobs=8,
+        # It answers 404 for pages we have while it rebuilds a package's
+        # docs: on 2026-10-26 two mlx-swift-lm pages did for one run, one a
+        # parent whose 5 children went with it, and all 7 were back the run
+        # after. So a page goes on its 2nd 404/410 in a row, and its first
+        # keeps it and the pages only it links for that run
+        page_gone_runs=2,
     )
 
 

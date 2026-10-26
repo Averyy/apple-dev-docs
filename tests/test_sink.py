@@ -43,8 +43,9 @@ import json
 import os
 import re
 import sys
+from collections import deque
 from pathlib import Path
-from typing import Any, Dict, Iterator, List, Optional, Sequence, Set, Tuple
+from typing import Any, Deque, Dict, Iterator, List, Optional, Sequence, Set, Tuple
 from urllib.parse import unquote
 
 import httpx
@@ -58,10 +59,12 @@ sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..',
 import scrape_all_frameworks
 from cleanup_orphans_at_end import MODULE_UNLINKED_RUNS, remove_framework
 from scraper import json_scraper
+from scraper.base import FetchFailed
 from scraper.config import Config
 from scraper.json_scraper import AppleJSONDocumentationScraper, OccViewError, PageLink
 from scraper.sink import Sink, SinkRegistry
 from scraper.site import APPLE, DocCSite
+from scraper.utils.hash_manager import COUNTER_FIELDS
 from scraper.utils.naming import DOC_URL_PREFIX, JSON_URL_PREFIX, page_path
 from tests.test_failure_policy import FW, SITE, Apple, FrameworkList, Runs, Site, file_of, routes_for, sandbox_runs
 from tests.test_fetch_results import Spec, doc_url, json_url, ok, status
@@ -624,6 +627,25 @@ class TestModules:
             assert module_of("ModKit")["parents"] == {
                 "otherbrella": {"unlinked_clean_runs": 0}, "umbrella": {"unlinked_clean_runs": 0}}
 
+    def test_a_dedup_hit_on_a_page_whose_404_is_pending_skips_both_jobs_cleanup(self, dirs: Path) -> None:
+        """Its links aren't read this run: the pages only it links stay untouched in either job's scope."""
+        site = dataclasses.replace(APPLE, page_gone_runs=2)
+        sinks = SinkRegistry(top_level={APPLE.name: ["Umbrella", "Otherbrella"]})
+        first = AppleJSONDocumentationScraper("Umbrella", sinks=sinks, site=site)
+        second = AppleJSONDocumentationScraper("Otherbrella", sinks=sinks, site=site)
+        url = json_url("umbrella/guide")
+        first.hash_manager.update_hash(url, "content", file_path=doc_file("Umbrella/guide"))
+        first._handle_fetch_failure(first.sink, url, FetchFailed(404, "HTTP 404", False))
+        assert first.sink.gone_pending == {url} and url in first.hash_manager.touched
+        queue: Deque[str] = deque()
+        second._take_links(first.sink, url, queue)
+        assert not queue and first.sink.dedup_jobs == {url: {"otherbrella"}}
+        outcomes = {"umbrella": first.outcome, "otherbrella": second.outcome}
+        json_scraper.apply_sink_failure_policy(first.sink, outcomes.get, "Umbrella")
+        for outcome in outcomes.values():
+            assert outcome.gone_pending == {url: 1} and outcome.skip_cleanup and not outcome.blocked
+        assert first.hash_manager.get_counter(url, "consecutive_gone") == 1
+
     async def test_a_module_pages_failure_blocks_its_parent_and_is_counted_in_the_modules_file(
         self, d6: D6Runs
     ) -> None:
@@ -643,6 +665,26 @@ class TestModules:
             # Unclean runs don't count
             assert module_of("ModKit")["parents"] == {"umbrella": {"unlinked_clean_runs": 0}}
             assert docs() == files
+
+    async def test_a_module_no_parent_reached_loses_its_counts_only_when_a_parent_ran(self, d6: D6Runs) -> None:
+        """A run that doesn't fetch a page ends its streaks (D8, a pending 404/410), its module unreached too;
+        a run whose parents didn't run (a subset run) neither counts nor resets."""
+        pages: Pages = {**UMBRELLA, **OTHERKIT}
+        assert await d6.scrape(pages, ["Umbrella", "Otherkit"]) == 0
+        hash_file = Config.get_hash_file("ModKit")
+        data = json.loads(hash_file.read_text())
+        thing = json_url("modkit/thing")
+        data["hashes"][thing].update(consecutive_failures=2, consecutive_gone=1, consecutive_local_errors=1)
+        hash_file.write_text(json.dumps(data))
+        before = hash_file.read_bytes()
+        # Its only parent didn't run: kept as they are
+        assert await d6.scrape(pages, ["Umbrella", "Otherkit"], "Otherkit") == 0
+        assert hash_file.read_bytes() == before and not d6.logged("unreached_module_counts_reset")
+        # Its parent ran and didn't route it a page: the fetch streaks end, the local-error count stays
+        assert await d6.scrape(without(pages, "Umbrella", "ModKit"), ["Umbrella", "Otherkit"], "Umbrella") == 0
+        entry = json.loads(hash_file.read_text())["hashes"][thing]
+        assert {k: v for k, v in entry.items() if k.startswith("consecutive_")} == {"consecutive_local_errors": 1}
+        assert [e["counts"] for e in d6.logged("unreached_module_counts_reset")] == [2]
 
     async def test_a_parent_unlisted_for_one_run_keeps_its_modules(self, d6: D6Runs) -> None:
         pages: Pages = {**UMBRELLA, **OTHERKIT}
@@ -1132,6 +1174,17 @@ class TestStaleErrorEntries:
         assert not {*stale, flaky} & set(hashes)
         assert hashes[local] == {"status": "error", "error": "local error: x", "consecutive_local_errors": 1}
         assert [e["dropped"] for e in d6.logged("dropped_stale_error_entries")] == [3]
+
+    def test_an_error_entry_with_a_run_count_is_never_stale(self, dirs: Path) -> None:
+        """Every run counter keeps its error entry, the 404/410 count (consecutive_gone) too."""
+        write_hash_file("Umbrella", {
+            **{json_url(f"umbrella/{counter}"): {"status": "error", "error": "HTTP 404", counter: 1}
+               for counter in COUNTER_FIELDS},
+            json_url("umbrella/plain"): {"status": "error", "error": "HTTP 404"},
+        })
+        sink = SinkRegistry().get(APPLE, "Umbrella", "Umbrella", None)
+        assert "consecutive_gone" in COUNTER_FIELDS
+        assert json_scraper.stale_error_entries(sink) == [json_url("umbrella/plain")]
 
     async def test_a_blocked_run_drops_nothing(self, d6: D6Runs) -> None:
         assert await d6.scrape(UMBRELLA, ["Umbrella"]) == 0

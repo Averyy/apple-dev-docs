@@ -36,8 +36,11 @@ the allow-list goes with its dir, at the end of the next run that covers the
 site (config_removals), and a site that left the config goes whole, its
 namespace's docs dir and hash dir (gone_sites). A root that answers 404/410
 on 2 consecutive runs goes as an Apple root does (root_gone_runs); other
-failures follow the 2.1 policy. Module sinks under a namespace (D6) are only
-ever removed by the module rules.
+failures follow the 2.1 policy. A page we have that answers 404/410 goes at
+once, as an Apple page does, except on a site whose page_gone_runs is over 1
+(a package's, 2: SPI answers 404 while it rebuilds its docs), where it goes
+on that many consecutive 404/410 runs (consecutive_gone). Module sinks under
+a namespace (D6) are only ever removed by the module rules.
 """
 
 import json

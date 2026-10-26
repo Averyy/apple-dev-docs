@@ -26,6 +26,7 @@ package's index is gone (row 3).
 
 import shutil
 import sys
+from collections import Counter
 from dataclasses import dataclass, field
 from pathlib import Path
 from typing import TYPE_CHECKING, Dict, Final, List, Mapping, Optional, Sequence, Set, Tuple
@@ -404,9 +405,12 @@ def describe_skip(outcome: "FrameworkOutcome") -> str:
     """Why orphan cleanup skips a framework this run, for the console."""
     if outcome.raised is not None:
         return "raised"
-    if outcome.blocks:
-        return ", ".join(f"{reason} x{len(details)}" for reason, details in outcome.blocks.items())
-    return f"root gone, run {outcome.root_gone_runs}"
+    reasons = [f"{reason} x{len(details)}" for reason, details in outcome.blocks.items()]
+    # A page whose 404/410 is pending (page_gone_runs), by its consecutive runs
+    pending = Counter(outcome.gone_pending.values())
+    reasons += [f"page 404/410, run {runs} of {outcome.page_gone_runs} x{count}"
+                for runs, count in sorted(pending.items())]
+    return ", ".join(reasons) if reasons else f"root gone, run {outcome.root_gone_runs}"
 
 
 def _print_summary(report: CleanupReport, skipped: Sequence["FrameworkOutcome"],
@@ -720,7 +724,9 @@ def cleanup_after_scrape(outcomes: Sequence["FrameworkOutcome"], interactive: bo
     zero-touched guard and the valve. With neither left (a still-listed
     framework after its removal), its root_gone_runs isn't saved
     (HashManager.save), so it stays at 1 and the summary says there is
-    nothing left to remove.
+    nothing left to remove. Nor is one cleaned in a run with a page whose
+    404/410 is pending (DocCSite.page_gone_runs): the page, and the pages
+    only it links, are kept until it answers 404/410 again.
 
     With the run's sinks (run), the D6 rules, in this order: the
     framework deletions first (rule 7(a): the DocC docs that left the

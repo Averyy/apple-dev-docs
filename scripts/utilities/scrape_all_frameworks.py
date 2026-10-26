@@ -231,8 +231,9 @@ def framework_errors(outcomes: Sequence[FrameworkOutcome]) -> List[str]:
     error reached PERSISTENT_FAILURE_RUNS (it no longer blocks, but still
     flags the run), and one with a filename clash (two pages named alike:
     the newcomer was written under a hashed stem; it never blocks). A root
-    that returned 404/410 and a mass removal the valve holds for
-    confirmation aren't errors.
+    that returned 404/410, a page whose 404/410 is pending (its site's
+    page_gone_runs) and a mass removal the valve holds for confirmation
+    aren't errors.
     """
     errors = []
     for outcome in outcomes:
@@ -512,8 +513,9 @@ async def scrape_frameworks(
             print(f"❌ Unexpected error: {result}")
 
     # D6: the multi-writer sinks' failure policy (its blocks go to the jobs'
-    # outcomes), their render versions, then every sink saved
-    run_sinks.modules = finish_run(sinks, outcomes, cleanup_orphans)
+    # outcomes), their render versions, then every sink saved, and the
+    # counts of the modules no parent reached reset
+    run_sinks.modules = finish_run(sinks, outcomes, cleanup_orphans, run_sinks)
     for result in results:
         if isinstance(result, tuple):
             fw, outcome = result

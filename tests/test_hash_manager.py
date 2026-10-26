@@ -13,7 +13,7 @@ from unittest import mock
 # Add project root to path
 sys.path.insert(0, str(Path(__file__).parent.parent))
 
-from scraper.utils.hash_manager import HashManager, write_text_atomic
+from scraper.utils.hash_manager import COUNTER_FIELDS, HashManager, write_text_atomic
 
 
 def test_new_url_is_changed():
@@ -327,6 +327,26 @@ def test_counters_survive_update_hash_mark_error_and_save() -> None:
         reloaded.set_counter("missing", "consecutive_failures", 0)  # no entry, nothing to drop
         assert "missing" not in reloaded.hashes
     print("PASS: counters_survive_update_hash_mark_error_and_save")
+
+
+def test_the_404_count_is_a_run_counter() -> None:
+    """consecutive_gone (a site's page_gone_runs) is carried over by update_hash and mark_error, and persisted."""
+    assert COUNTER_FIELDS == ("consecutive_failures", "consecutive_local_errors", "consecutive_gone")
+    with tempfile.TemporaryDirectory() as d:
+        cache = Path(d) / "fw_hashes.json"
+        hm = HashManager(cache)
+        hm.update_hash("u", "content", file_path=Path("documentation/fw/u.md"))
+        hm.set_counter("u", "consecutive_gone", 1)
+        hm.update_hash("u", "content", file_path=Path("documentation/fw/u.md"))
+        assert hm.hashes["u"]["consecutive_gone"] == 1
+        hm.mark_error("u", "HTTP 404")
+        assert hm.hashes["u"] == {"status": "error", "error": "HTTP 404", "consecutive_gone": 1}
+        assert hm.save() is True
+        reloaded = HashManager(cache)
+        assert reloaded.hashes["u"] == {"status": "error", "error": "HTTP 404", "consecutive_gone": 1}
+        reloaded.set_counter("u", "consecutive_gone", 0)
+        assert reloaded.hashes["u"] == {"status": "error", "error": "HTTP 404"}
+    print("PASS: the_404_count_is_a_run_counter")
 
 
 def test_touch_only_records_the_url() -> None:
@@ -728,6 +748,7 @@ def main():
         test_legacy_fields_are_dropped_on_load,
         test_a_second_save_of_the_same_entries_is_byte_identical,
         test_counters_survive_update_hash_mark_error_and_save,
+        test_the_404_count_is_a_run_counter,
         test_touch_only_records_the_url,
         test_update_hash_marks_modified_only_on_a_change,
         test_set_file_path_sets_only_the_path,

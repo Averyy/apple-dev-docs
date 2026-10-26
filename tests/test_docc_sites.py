@@ -285,6 +285,8 @@ class TestPerSiteNaming:
         assert not SITE.excluded("stdlibx") and not SITE.excluded("kit/proposal") and not SITE.excluded("kit")
         assert DocCSite("spi", "s", "d", "j", "b", namespace="SPI/swift-log").framework_label("Logging") == \
             "swift-log/Logging"
+        # A page's first 404/410 removes it, as Apple's does (an SPI package waits for a 2nd)
+        assert SITE.page_gone_runs == APPLE.page_gone_runs == site_config.SWIFT_ORG.page_gone_runs == 1
 
     def test_docs_swift_orgs_config(self) -> None:
         swift_org = site_config.SWIFT_ORG

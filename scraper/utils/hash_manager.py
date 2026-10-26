@@ -12,7 +12,8 @@ logger = get_logger(__name__)
 
 # Per-entry run counters, kept on an entry's JSON-URL key only while > 0.
 # update_hash, mark_error and keep_file carry them over; callers reset them explicitly.
-COUNTER_FIELDS: Final = ("consecutive_failures", "consecutive_local_errors")
+# consecutive_gone: the 404/410 runs of a page its site keeps (DocCSite.page_gone_runs)
+COUNTER_FIELDS: Final = ("consecutive_failures", "consecutive_local_errors", "consecutive_gone")
 
 # Metadata keys dropped on load: total_pages, which every save rewrites, and
 # the ones no longer written (last_updated, session_id, partial_session). Any
