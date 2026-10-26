@@ -1646,7 +1646,7 @@
       "hash": "ce520a60ae9379f1cef3503d836d45f44f5a901160009b707e1ecbc6cd32d610"
     },
     "https://developer.apple.com/documentation/metal/mtl4compiler/makecomputepipelinestate(descriptor:dynamiclinkingdescriptor:compilertaskoptions:)-7dqdm": {
-      "etag": "\"3514-65d55e2e17f83-df\"",
+      "etag": "\"3514-65d55e2e17f83\"",
       "file_path": "documentation/Metal/mtl4compiler/makecomputepipelinestate(descriptor,dynamiclinkingdescriptor,compilertaskoptions)-7dqdm.md",
       "hash": "f475a7ce582bb5fd5e6824c9a270e29f2abf3c20a313f55e96ca8d1380516cc6"
     },
@@ -22261,7 +22261,7 @@
       "hash": "ce520a60ae9379f1cef3503d836d45f44f5a901160009b707e1ecbc6cd32d610"
     },
     "https://developer.apple.com/tutorials/data/documentation/metal/mtl4compiler/makecomputepipelinestate(descriptor:dynamiclinkingdescriptor:compilertaskoptions:)-7dqdm.json": {
-      "etag": "\"3514-65d55e2e17f83-df\"",
+      "etag": "\"3514-65d55e2e17f83\"",
       "file_path": "documentation/Metal/mtl4compiler/makecomputepipelinestate(descriptor,dynamiclinkingdescriptor,compilertaskoptions)-7dqdm.md",
       "hash": "f475a7ce582bb5fd5e6824c9a270e29f2abf3c20a313f55e96ca8d1380516cc6"
     },

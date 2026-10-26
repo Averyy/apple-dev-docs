@@ -26,9 +26,9 @@
       "hash": "14c3183cc9863fb1e87df35940241b1cec14e3fe2eea27762ace7e43428830e2"
     },
     "https://developer.apple.com/documentation/gamecontroller/discovering-game-controllers": {
-      "etag": "\"a87e-65dc7c05649d0-df\"",
+      "etag": "\"a87d-65d55d18e7627-df\"",
       "file_path": "documentation/GameController/discovering-game-controllers.md",
-      "hash": "a9f4a04afcbb82ad5a99246369cecee2d3873d1f494cb62f16be485c80740aa3"
+      "hash": "cf2bd91978b0d18d317d464bc901ef71d8ce28ee825e82d3a3cac8f6601ac55f"
     },
     "https://developer.apple.com/documentation/gamecontroller/dualshock-controller-input-names": {
       "etag": "\"5ec8-6590258541501-df\"",
@@ -5996,9 +5996,9 @@
       "hash": "14c3183cc9863fb1e87df35940241b1cec14e3fe2eea27762ace7e43428830e2"
     },
     "https://developer.apple.com/tutorials/data/documentation/gamecontroller/discovering-game-controllers.json": {
-      "etag": "\"a87e-65dc7c05649d0-df\"",
+      "etag": "\"a87d-65d55d18e7627-df\"",
       "file_path": "documentation/GameController/discovering-game-controllers.md",
-      "hash": "a9f4a04afcbb82ad5a99246369cecee2d3873d1f494cb62f16be485c80740aa3"
+      "hash": "cf2bd91978b0d18d317d464bc901ef71d8ce28ee825e82d3a3cac8f6601ac55f"
     },
     "https://developer.apple.com/tutorials/data/documentation/gamecontroller/dualshock-controller-input-names.json": {
       "etag": "\"5ec8-6590258541501-df\"",

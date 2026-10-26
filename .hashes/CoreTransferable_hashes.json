@@ -1,9 +1,9 @@
 {
   "hashes": {
     "https://developer.apple.com/documentation/CoreTransferable": {
-      "etag": "\"6365-65e7b5fd698af-df\"",
+      "etag": "\"6364-65d560d99d561-df\"",
       "file_path": "documentation/CoreTransferable/CoreTransferable.md",
-      "hash": "ed4c31b5c06797c244c12b618ce8c473b4f499f2e2943bfa540ffc872ffad7a2"
+      "hash": "384b8fcace5783f356ec80e03477c4d2016699034d57c668d5d1d5f62533239d"
     },
     "https://developer.apple.com/documentation/coretransferable/choosing-a-transfer-representation-for-a-model-type": {
       "etag": "\"48fb-65d560d98fa81-df\"",
@@ -346,9 +346,9 @@
       "hash": "489e4d4662f27ac60574a392158172d9ca3ae092630418d2877ba009f0f9a731"
     },
     "https://developer.apple.com/tutorials/data/documentation/CoreTransferable.json": {
-      "etag": "\"6365-65e7b5fd698af-df\"",
+      "etag": "\"6364-65d560d99d561-df\"",
       "file_path": "documentation/CoreTransferable/CoreTransferable.md",
-      "hash": "ed4c31b5c06797c244c12b618ce8c473b4f499f2e2943bfa540ffc872ffad7a2"
+      "hash": "384b8fcace5783f356ec80e03477c4d2016699034d57c668d5d1d5f62533239d"
     },
     "https://developer.apple.com/tutorials/data/documentation/coretransferable/choosing-a-transfer-representation-for-a-model-type.json": {
       "etag": "\"48fb-65d560d98fa81-df\"",

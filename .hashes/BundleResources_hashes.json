@@ -146,9 +146,9 @@
       "hash": "1ec4d38298d0c8883358b624dc4980a4f5157887ac13b6a866c7b897d59bcd25"
     },
     "https://developer.apple.com/documentation/bundleresources/entitlements": {
-      "etag": "\"341eb-65e5a1559ff64-df\"",
+      "etag": "\"346c9-65e8ee2a0ad05-df\"",
       "file_path": "documentation/BundleResources/entitlements.md",
-      "hash": "2b59c39c0025e8a6c698510acd512c43f44072ee30f9eac51276a6437402750f"
+      "hash": "49ace88ea5e7eff3d0d69c3aa1154f71a56ad7d92fe64e735fa08131128e4c3d"
     },
     "https://developer.apple.com/documentation/bundleresources/entitlements/aps-environment": {
       "etag": "\"2ec2-65d55a414770e-df\"",
@@ -1094,6 +1094,11 @@
       "etag": "\"1924-65d55a417de4c-df\"",
       "file_path": "documentation/BundleResources/entitlements/com.apple.developer.suggested-actions.md",
       "hash": "ed3cb20591701b6edd17b3430ea57863d0d632f75ef6e0f6f7cbac23611d2980"
+    },
+    "https://developer.apple.com/documentation/bundleresources/entitlements/com.apple.developer.superseded-application-identifiers": {
+      "etag": "\"263e-65e8ee2ba9970-df\"",
+      "file_path": "documentation/BundleResources/entitlements/com.apple.developer.superseded-application-identifiers.md",
+      "hash": "328dd92609df1c4e30567f4fe39f46627173533a747ede367fa22875fd9725ef"
     },
     "https://developer.apple.com/documentation/bundleresources/entitlements/com.apple.developer.sustained-execution": {
       "etag": "\"1af7-65d55a414770e-df\"",
@@ -4786,9 +4791,9 @@
       "hash": "1ec4d38298d0c8883358b624dc4980a4f5157887ac13b6a866c7b897d59bcd25"
     },
     "https://developer.apple.com/tutorials/data/documentation/bundleresources/entitlements.json": {
-      "etag": "\"341eb-65e5a1559ff64-df\"",
+      "etag": "\"346c9-65e8ee2a0ad05-df\"",
       "file_path": "documentation/BundleResources/entitlements.md",
-      "hash": "2b59c39c0025e8a6c698510acd512c43f44072ee30f9eac51276a6437402750f"
+      "hash": "49ace88ea5e7eff3d0d69c3aa1154f71a56ad7d92fe64e735fa08131128e4c3d"
     },
     "https://developer.apple.com/tutorials/data/documentation/bundleresources/entitlements/aps-environment.json": {
       "etag": "\"2ec2-65d55a414770e-df\"",
@@ -5734,6 +5739,11 @@
       "etag": "\"1924-65d55a417de4c-df\"",
       "file_path": "documentation/BundleResources/entitlements/com.apple.developer.suggested-actions.md",
       "hash": "ed3cb20591701b6edd17b3430ea57863d0d632f75ef6e0f6f7cbac23611d2980"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/bundleresources/entitlements/com.apple.developer.superseded-application-identifiers.json": {
+      "etag": "\"263e-65e8ee2ba9970-df\"",
+      "file_path": "documentation/BundleResources/entitlements/com.apple.developer.superseded-application-identifiers.md",
+      "hash": "328dd92609df1c4e30567f4fe39f46627173533a747ede367fa22875fd9725ef"
     },
     "https://developer.apple.com/tutorials/data/documentation/bundleresources/entitlements/com.apple.developer.sustained-execution.json": {
       "etag": "\"1af7-65d55a414770e-df\"",
@@ -9285,6 +9295,6 @@
     "render": {
       "version": 3
     },
-    "total_pages": 1856
+    "total_pages": 1858
   }
 }

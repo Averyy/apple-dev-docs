@@ -24706,9 +24706,9 @@
       "hash": "60fb633668439eebe807f49d5b27f6d8f6c4e21e3d5dd1a3ac34a375bb467da3"
     },
     "https://developer.apple.com/documentation/uikit/uidragpreviewparameters": {
-      "etag": "\"459f-65e02671837af-df\"",
+      "etag": "\"4b51-65d55db0898a6-df\"",
       "file_path": "documentation/UIKit/uidragpreviewparameters.md",
-      "hash": "0cbdaeadc60ea4fa120ef1f538f449b8e0b6a96ce4d493fe0d8ed9ac53e6438f"
+      "hash": "f931f60e45fe754833cb0fc7b7dcaf653915f92bac0ebf6c9c96d306d0f8aefa"
     },
     "https://developer.apple.com/documentation/uikit/uidragpreviewtarget": {
       "etag": "\"484d-65d55dbded3b0-df\"",
@@ -58676,9 +58676,9 @@
       "hash": "8d3fc167e9bf480de6ffbe42d3828f33cfb156430e9a6ac99984077f7e65b535"
     },
     "https://developer.apple.com/documentation/uikit/uiview": {
-      "etag": "\"6450b-65dda5efe0898-df\"",
+      "etag": "\"64abd-65dda174146fc-df\"",
       "file_path": "documentation/UIKit/uiview.md",
-      "hash": "6754fc3f75440dc695f048daa8b5155fb05ae276aeda8c4f82ea7cda525cea11"
+      "hash": "d3369c9b310aec47179d69e65912ebbcdb2a1ab5a3da54d4c6f4c41710c016c1"
     },
     "https://developer.apple.com/documentation/uikit/uiview-deprecated-symbols": {
       "etag": "\"6dab-65dda16c85485-df\"",
@@ -88756,9 +88756,9 @@
       "hash": "60fb633668439eebe807f49d5b27f6d8f6c4e21e3d5dd1a3ac34a375bb467da3"
     },
     "https://developer.apple.com/tutorials/data/documentation/uikit/uidragpreviewparameters.json": {
-      "etag": "\"459f-65e02671837af-df\"",
+      "etag": "\"4b51-65d55db0898a6-df\"",
       "file_path": "documentation/UIKit/uidragpreviewparameters.md",
-      "hash": "0cbdaeadc60ea4fa120ef1f538f449b8e0b6a96ce4d493fe0d8ed9ac53e6438f"
+      "hash": "f931f60e45fe754833cb0fc7b7dcaf653915f92bac0ebf6c9c96d306d0f8aefa"
     },
     "https://developer.apple.com/tutorials/data/documentation/uikit/uidragpreviewtarget.json": {
       "etag": "\"484d-65d55dbded3b0-df\"",
@@ -122731,9 +122731,9 @@
       "hash": "09eeecb1ddc96aaf003ea903c295bd573780740ab18be352adfd575be0081b3b"
     },
     "https://developer.apple.com/tutorials/data/documentation/uikit/uiview.json": {
-      "etag": "\"6450b-65dda5efe0898-df\"",
+      "etag": "\"64abd-65dda174146fc-df\"",
       "file_path": "documentation/UIKit/uiview.md",
-      "hash": "6754fc3f75440dc695f048daa8b5155fb05ae276aeda8c4f82ea7cda525cea11"
+      "hash": "d3369c9b310aec47179d69e65912ebbcdb2a1ab5a3da54d4c6f4c41710c016c1"
     },
     "https://developer.apple.com/tutorials/data/documentation/uikit/uiview/accessibilityignoresinvertcolors.json": {
       "etag": "\"3ecc-65d55db88a159-df\"",

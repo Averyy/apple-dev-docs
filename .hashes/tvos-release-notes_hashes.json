@@ -1,9 +1,9 @@
 {
   "hashes": {
     "https://developer.apple.com/documentation/tvos-release-notes": {
-      "etag": "\"8c11-65e2e83f20852-df\"",
+      "etag": "\"8c0e-65ebf023a1e0d-df\"",
       "file_path": "documentation/tvos-release-notes/tvos-release-notes.md",
-      "hash": "fccc9bb6d30d60a77e8ed09f59d1736a910c4b582cfff8f3497ba1d28d8c5e37"
+      "hash": "aedf551d613acc912a7ad7e034fd1f58b9af99bf6b07e99a85c252a72e0dd00b"
     },
     "https://developer.apple.com/documentation/tvos-release-notes/apple-tv-software-7_3-release-notes": {
       "etag": "\"121a-659022450e4b7-df\"",
@@ -286,19 +286,19 @@
       "hash": "1d5d0634a05b4a48375d4b91948c7ca25c7aae0a9028b824dc4f4a21c9a9d7ba"
     },
     "https://developer.apple.com/documentation/tvos-release-notes/tvos-27-release-notes": {
-      "etag": "\"a984-65e2e83f19bea-df\"",
+      "etag": "\"a981-65ebf023661a9-df\"",
       "file_path": "documentation/tvos-release-notes/tvos-27-release-notes.md",
-      "hash": "8730dd9631ed6028e37fdf6f3f477c7dc436b9d5a4f9ad26d99af3dfe853d55d"
+      "hash": "b4edf4841aefd50d87ed6c11c54d5bb73a516783a7bb068cbb21d4d4a0cc9d86"
     },
     "https://developer.apple.com/documentation/tvos-release-notes/tvos-27_2-release-notes": {
-      "etag": "\"12ad-65e2e83f19bea-df\"",
+      "etag": "\"12e0-65ebf023661a9-df\"",
       "file_path": "documentation/tvos-release-notes/tvos-27_2-release-notes.md",
-      "hash": "8fa6845c9ed6fd377807d5ebb7034beddd0ead524b2a569452588433aeec7bdc"
+      "hash": "04b3dfbdac67a4ec2b0dab0dd0cbb3495359838f2e46a7836e7c308f289c3dac"
     },
     "https://developer.apple.com/tutorials/data/documentation/tvos-release-notes.json": {
-      "etag": "\"8c11-65e2e83f20852-df\"",
+      "etag": "\"8c0e-65ebf023a1e0d-df\"",
       "file_path": "documentation/tvos-release-notes/tvos-release-notes.md",
-      "hash": "fccc9bb6d30d60a77e8ed09f59d1736a910c4b582cfff8f3497ba1d28d8c5e37"
+      "hash": "aedf551d613acc912a7ad7e034fd1f58b9af99bf6b07e99a85c252a72e0dd00b"
     },
     "https://developer.apple.com/tutorials/data/documentation/tvos-release-notes/apple-tv-software-7_3-release-notes.json": {
       "etag": "\"121a-659022450e4b7-df\"",
@@ -581,14 +581,14 @@
       "hash": "1d5d0634a05b4a48375d4b91948c7ca25c7aae0a9028b824dc4f4a21c9a9d7ba"
     },
     "https://developer.apple.com/tutorials/data/documentation/tvos-release-notes/tvos-27-release-notes.json": {
-      "etag": "\"a984-65e2e83f19bea-df\"",
+      "etag": "\"a981-65ebf023661a9-df\"",
       "file_path": "documentation/tvos-release-notes/tvos-27-release-notes.md",
-      "hash": "8730dd9631ed6028e37fdf6f3f477c7dc436b9d5a4f9ad26d99af3dfe853d55d"
+      "hash": "b4edf4841aefd50d87ed6c11c54d5bb73a516783a7bb068cbb21d4d4a0cc9d86"
     },
     "https://developer.apple.com/tutorials/data/documentation/tvos-release-notes/tvos-27_2-release-notes.json": {
-      "etag": "\"12ad-65e2e83f19bea-df\"",
+      "etag": "\"12e0-65ebf023661a9-df\"",
       "file_path": "documentation/tvos-release-notes/tvos-27_2-release-notes.md",
-      "hash": "8fa6845c9ed6fd377807d5ebb7034beddd0ead524b2a569452588433aeec7bdc"
+      "hash": "04b3dfbdac67a4ec2b0dab0dd0cbb3495359838f2e46a7836e7c308f289c3dac"
     }
   },
   "metadata": {

@@ -103,8 +103,6 @@ The compose view controller gets items for the content and preview areas from th
 - [NSTouchBarProvider](../AppKit/nstouchbarprovider.md)
 - [NSUserActivityRestoring](../AppKit/nsuseractivityrestoring.md)
 - [NSUserInterfaceItemIdentification](../AppKit/nsuserinterfaceitemidentification.md)
-- [Sendable](../Swift/sendable.md)
-- [SendableMetatype](../Swift/sendablemetatype.md)
 - [UIActivityItemsConfigurationProviding](../UIKit/uiactivityitemsconfigurationproviding.md)
 - [UIAppearanceContainer](../UIKit/uiappearancecontainer.md)
 - [UIContentContainer](../UIKit/uicontentcontainer.md)

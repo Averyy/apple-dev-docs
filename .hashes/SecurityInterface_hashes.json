@@ -136,9 +136,9 @@
       "hash": "9970220d548fcaf9ac1d37fd02d5e73bd906f1abfe7595ba03e495ed2851abde"
     },
     "https://developer.apple.com/documentation/securityinterface/sfauthorizationview": {
-      "etag": "\"12411-65dad4b59164c-df\"",
+      "etag": "\"129c3-65d55f6646095-df\"",
       "file_path": "documentation/SecurityInterface/sfauthorizationview.md",
-      "hash": "39121a223af2031045ebcc5fcf9c6fcba178b4951ae4780515fef7b5154a18da"
+      "hash": "921f770608303df12952889fcc7411a095aba3131a1b2e80a83077ff0ed4e781"
     },
     "https://developer.apple.com/documentation/securityinterface/sfauthorizationview/authorization()": {
       "etag": "\"399a-65d55f6646095-df\"",
@@ -806,9 +806,9 @@
       "hash": "9970220d548fcaf9ac1d37fd02d5e73bd906f1abfe7595ba03e495ed2851abde"
     },
     "https://developer.apple.com/tutorials/data/documentation/securityinterface/sfauthorizationview.json": {
-      "etag": "\"12411-65dad4b59164c-df\"",
+      "etag": "\"129c3-65d55f6646095-df\"",
       "file_path": "documentation/SecurityInterface/sfauthorizationview.md",
-      "hash": "39121a223af2031045ebcc5fcf9c6fcba178b4951ae4780515fef7b5154a18da"
+      "hash": "921f770608303df12952889fcc7411a095aba3131a1b2e80a83077ff0ed4e781"
     },
     "https://developer.apple.com/tutorials/data/documentation/securityinterface/sfauthorizationview/authorization().json": {
       "etag": "\"399a-65d55f6646095-df\"",

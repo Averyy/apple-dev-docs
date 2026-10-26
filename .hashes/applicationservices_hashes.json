@@ -12946,7 +12946,7 @@
       "hash": "0872d12e8e48b2cb21d52ee002159ee63f72c67a7acd7377b9cd416d38ccc435"
     },
     "https://developer.apple.com/documentation/applicationservices/cmcs1trctag": {
-      "etag": "\"1488-65b3a4632efd6-df\"",
+      "etag": "\"1488-65b3a4632efd6\"",
       "file_path": "documentation/applicationservices/cmcs1trctag.md",
       "hash": "027bcc30d0d085e77b863b84b696cf50bd285a787ee774dca3179293d68200f1"
     },
@@ -19581,7 +19581,7 @@
       "hash": "66dcb8d902992768ebb6600c03842759c4619df5e36d5d45025826d79a73155d"
     },
     "https://developer.apple.com/documentation/applicationservices/gdevice/1459113-gdpmap": {
-      "etag": "\"29e0-65b3a46219fb2\"",
+      "etag": "\"29e0-65b3a46219fb2-df\"",
       "file_path": "documentation/applicationservices/gdevice/api-1459113-gdpmap.md",
       "hash": "4eaf0435e92f40106bceb2524656d160b4591e834eeec5a83fbe9db0a636467e"
     },
@@ -26496,7 +26496,7 @@
       "hash": "74f574b3e87b5a572f642c9913b67641f4b0aa2f4fac04540fb49762a5bbd3a4"
     },
     "https://developer.apple.com/documentation/applicationservices/ktransformlabel4": {
-      "etag": "\"1411-65b3a4608fa08-df\"",
+      "etag": "\"1411-65b3a4608fa08\"",
       "file_path": "documentation/applicationservices/ktransformlabel4.md",
       "hash": "4449a727ba002d5cf6abd05c6858646cd8926645c5608d9226ac21f51566a72b"
     },
@@ -42206,7 +42206,7 @@
       "hash": "0872d12e8e48b2cb21d52ee002159ee63f72c67a7acd7377b9cd416d38ccc435"
     },
     "https://developer.apple.com/tutorials/data/documentation/applicationservices/cmcs1trctag.json": {
-      "etag": "\"1488-65b3a4632efd6-df\"",
+      "etag": "\"1488-65b3a4632efd6\"",
       "file_path": "documentation/applicationservices/cmcs1trctag.md",
       "hash": "027bcc30d0d085e77b863b84b696cf50bd285a787ee774dca3179293d68200f1"
     },
@@ -48841,7 +48841,7 @@
       "hash": "66dcb8d902992768ebb6600c03842759c4619df5e36d5d45025826d79a73155d"
     },
     "https://developer.apple.com/tutorials/data/documentation/applicationservices/gdevice/1459113-gdpmap.json": {
-      "etag": "\"29e0-65b3a46219fb2\"",
+      "etag": "\"29e0-65b3a46219fb2-df\"",
       "file_path": "documentation/applicationservices/gdevice/api-1459113-gdpmap.md",
       "hash": "4eaf0435e92f40106bceb2524656d160b4591e834eeec5a83fbe9db0a636467e"
     },
@@ -55756,7 +55756,7 @@
       "hash": "74f574b3e87b5a572f642c9913b67641f4b0aa2f4fac04540fb49762a5bbd3a4"
     },
     "https://developer.apple.com/tutorials/data/documentation/applicationservices/ktransformlabel4.json": {
-      "etag": "\"1411-65b3a4608fa08-df\"",
+      "etag": "\"1411-65b3a4608fa08\"",
       "file_path": "documentation/applicationservices/ktransformlabel4.md",
       "hash": "4449a727ba002d5cf6abd05c6858646cd8926645c5608d9226ac21f51566a72b"
     },

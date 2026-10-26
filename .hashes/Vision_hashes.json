@@ -3165,7 +3165,7 @@
       "hash": "fec3b5c67bfb5bb7f54413c1ba50c3adffbc144b7b2c3d0fd2a3c072b0f18c99"
     },
     "https://developer.apple.com/documentation/vision/imagetranslationalignmentobservation": {
-      "etag": "\"367e-65d55e155576b-df\"",
+      "etag": "\"367e-65d55e155576b\"",
       "file_path": "documentation/Vision/imagetranslationalignmentobservation.md",
       "hash": "50986f6ba54bf2fbdb1b52b60c3c646b15d8e5c207bd36790ed1e514693fa9a5"
     },
@@ -12719,7 +12719,7 @@
       "hash": "fec3b5c67bfb5bb7f54413c1ba50c3adffbc144b7b2c3d0fd2a3c072b0f18c99"
     },
     "https://developer.apple.com/tutorials/data/documentation/vision/imagetranslationalignmentobservation.json": {
-      "etag": "\"367e-65d55e155576b-df\"",
+      "etag": "\"367e-65d55e155576b\"",
       "file_path": "documentation/Vision/imagetranslationalignmentobservation.md",
       "hash": "50986f6ba54bf2fbdb1b52b60c3c646b15d8e5c207bd36790ed1e514693fa9a5"
     },

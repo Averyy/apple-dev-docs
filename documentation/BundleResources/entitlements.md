@@ -87,6 +87,9 @@ You typically let Xcode manage the entitlements file for you. For information on
 ### AppMigrationKit
 - [com.apple.developer.app-migration.data-container-access](./entitlements/com.apple.developer.app-migration.data-container-access.md)
   An entitlement required for app extensions to perform a one-time transfer of on-device data to or from another platform.
+### App replacement
+- [App Replacement](./entitlements/com.apple.developer.superseded-application-identifiers.md)
+  An entitlement that allows an app to offer the ability to migrate settings and data from and replace an older app with a specified app identifier.
 ### Authentication
 - [Account Creation Requires Phone Number](./entitlements/com.apple.developer.authentication-services.account-creation-requires-phone-number.md)
   A Boolean value that indicates whether an app requires someone to provide a phone number to create an account.

@@ -531,9 +531,9 @@
       "hash": "7c1606d2aef7b952708fef5efd32b67370643eb667fb98aa760bab98572e12ea"
     },
     "https://developer.apple.com/documentation/journalingsuggestions/receiving-journaling-suggestions-from-system-notifications": {
-      "etag": "\"7b16-65d55bfb4fbb4-df\"",
+      "etag": "\"7b18-65d9e136bb39e-df\"",
       "file_path": "documentation/JournalingSuggestions/receiving-journaling-suggestions-from-system-notifications.md",
-      "hash": "3962ee4a23e68142c101506915ffa0068ecacab81c242a2417c26f56bbe3fcee"
+      "hash": "e352364f6af557c0b48fc12c8a482e4dbd445d13a4c10d8ad24bd9a41a889193"
     },
     "https://developer.apple.com/tutorials/data/documentation/JournalingSuggestions.json": {
       "etag": "\"324a-65d55bfb31e75-df\"",
@@ -1066,9 +1066,9 @@
       "hash": "7c1606d2aef7b952708fef5efd32b67370643eb667fb98aa760bab98572e12ea"
     },
     "https://developer.apple.com/tutorials/data/documentation/journalingsuggestions/receiving-journaling-suggestions-from-system-notifications.json": {
-      "etag": "\"7b16-65d55bfb4fbb4-df\"",
+      "etag": "\"7b18-65d9e136bb39e-df\"",
       "file_path": "documentation/JournalingSuggestions/receiving-journaling-suggestions-from-system-notifications.md",
-      "hash": "3962ee4a23e68142c101506915ffa0068ecacab81c242a2417c26f56bbe3fcee"
+      "hash": "e352364f6af557c0b48fc12c8a482e4dbd445d13a4c10d8ad24bd9a41a889193"
     }
   },
   "metadata": {

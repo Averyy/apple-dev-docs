@@ -1,9 +1,9 @@
 {
   "hashes": {
     "https://developer.apple.com/documentation/FoveatedStreaming": {
-      "etag": "\"4e49-65d560a5c0dd1-df\"",
+      "etag": "\"4e4a-65d9df81ad64e-df\"",
       "file_path": "documentation/FoveatedStreaming/FoveatedStreaming.md",
-      "hash": "4394538c395c8d5280696b8cc904a1ba503dcf9bb2c1a9a637483a86958db717"
+      "hash": "02edbca67ce8c67533a82889c5290c55e625654ea5bb045b0bf3484857a8680a"
     },
     "https://developer.apple.com/documentation/foveatedstreaming/analyzing-the-performance-of-a-foveated-streaming-session": {
       "etag": "\"4d19-65902859961b9-df\"",
@@ -11,9 +11,9 @@
       "hash": "6ed3cd7f64d621a0fa685ad5ff0f2a2e4e359bcc008e1942b0104f9418449552"
     },
     "https://developer.apple.com/documentation/foveatedstreaming/creating-a-foveated-streaming-client-on-visionos": {
-      "etag": "\"18c2f-65d560a5c0dd1-df\"",
+      "etag": "\"18c31-65dab57039156-df\"",
       "file_path": "documentation/FoveatedStreaming/creating-a-foveated-streaming-client-on-visionos.md",
-      "hash": "14da62ab195f74c378803855ab1dba89852a10c4bb8d702bab7e5992eb77abd7"
+      "hash": "edc4cbae188fb073137ad7b8dc7e64de1054cecec2e0717636c6d89b21013045"
     },
     "https://developer.apple.com/documentation/foveatedstreaming/establishing-foveated-streaming-sessions-with-apple-vision-pro": {
       "etag": "\"89bf-65d560a5c0dd1-df\"",
@@ -616,9 +616,9 @@
       "hash": "c4eafd0de81f62bb3a7766e3045019f1b87b7ec20cc33844ea27d8e599670877"
     },
     "https://developer.apple.com/tutorials/data/documentation/FoveatedStreaming.json": {
-      "etag": "\"4e49-65d560a5c0dd1-df\"",
+      "etag": "\"4e4a-65d9df81ad64e-df\"",
       "file_path": "documentation/FoveatedStreaming/FoveatedStreaming.md",
-      "hash": "4394538c395c8d5280696b8cc904a1ba503dcf9bb2c1a9a637483a86958db717"
+      "hash": "02edbca67ce8c67533a82889c5290c55e625654ea5bb045b0bf3484857a8680a"
     },
     "https://developer.apple.com/tutorials/data/documentation/foveatedstreaming/analyzing-the-performance-of-a-foveated-streaming-session.json": {
       "etag": "\"4d19-65902859961b9-df\"",
@@ -626,9 +626,9 @@
       "hash": "6ed3cd7f64d621a0fa685ad5ff0f2a2e4e359bcc008e1942b0104f9418449552"
     },
     "https://developer.apple.com/tutorials/data/documentation/foveatedstreaming/creating-a-foveated-streaming-client-on-visionos.json": {
-      "etag": "\"18c2f-65d560a5c0dd1-df\"",
+      "etag": "\"18c31-65dab57039156-df\"",
       "file_path": "documentation/FoveatedStreaming/creating-a-foveated-streaming-client-on-visionos.md",
-      "hash": "14da62ab195f74c378803855ab1dba89852a10c4bb8d702bab7e5992eb77abd7"
+      "hash": "edc4cbae188fb073137ad7b8dc7e64de1054cecec2e0717636c6d89b21013045"
     },
     "https://developer.apple.com/tutorials/data/documentation/foveatedstreaming/establishing-foveated-streaming-sessions-with-apple-vision-pro.json": {
       "etag": "\"89bf-65d560a5c0dd1-df\"",

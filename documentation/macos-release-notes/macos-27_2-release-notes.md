@@ -1,4 +1,4 @@
-# macOS 27.2 Golden Gate RC Release Notes
+# macOS 27.2 Golden Gate Release Notes
 
 **Framework**: macOS Release Notes  
 **Role**: Article
@@ -7,7 +7,7 @@ Update your apps to use new features, and test your apps against API changes.
 
 #### Overview
 
-The macOS 27.2 SDK provides support to develop apps for Mac computers running macOS 27.2 Golden Gate RC. The SDK comes bundled with Xcode 27.2. For information on the compatibility requirements for Xcode 27.2, see [Xcode 27.2 Release Notes](../Xcode-Release-Notes/xcode-27_2-release-notes.md).
+The macOS 27.2 SDK provides support to develop apps for Mac computers running macOS 27.2 Golden Gate. The SDK comes bundled with Xcode 27.2. For information on the compatibility requirements for Xcode 27.2, see [Xcode 27.2 Release Notes](../Xcode-Release-Notes/xcode-27_2-release-notes.md).
 
 ##### General
 
@@ -47,7 +47,7 @@ The macOS 27.2 SDK provides support to develop apps for Mac computers running ma
 
 - Fixed: Intro offer eligibility does not reset immediately after calling `SKTestSession.clearTransactions()`. (183933307) (FB24137836)
 - Fixed: Changing the storefront or locale using `SKTestSession` doesn’t propagate through `Storefront.updates`. (184155259)
-- Fixed: Failed purchases using `SKTestSession` might display error dialogs even when `dialogsDisabled` is set to true. (184255116)
+- Fixed: Failed purchases using `SKTestSession` might display error dialogs even when `dialogsDisabled` is set to `true`. (184255116)
 
 ###### Known Issues
 

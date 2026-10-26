@@ -11,9 +11,9 @@
       "hash": "716920b75048083f2066708870fafc975053d645afca9d6a8a27a8e4893c6306"
     },
     "https://developer.apple.com/documentation/tvuikit/tvcaptionbuttonview": {
-      "etag": "\"b6ba-65db1e2e57cee-df\"",
+      "etag": "\"bc6c-65d55c1de6ecc-df\"",
       "file_path": "documentation/TVUIKit/tvcaptionbuttonview.md",
-      "hash": "821a799052bb87de1515dfac28540a723d3e3b91f2de960f64fa4ed5b9498b0f"
+      "hash": "b0a606ff83ac8c4683e84e1bab42649ab6f7dc01f4687b772e98417636ad71ef"
     },
     "https://developer.apple.com/documentation/tvuikit/tvcaptionbuttonview/contentimage": {
       "etag": "\"2df0-65d55c1de6ecc-df\"",
@@ -71,9 +71,9 @@
       "hash": "4a83dd149513ab89a517542dab52b540220fd9bac17a13b8218f177db954c92b"
     },
     "https://developer.apple.com/documentation/tvuikit/tvcardview": {
-      "etag": "\"99dd-65d6156418542-df\"",
+      "etag": "\"942b-65d55c1dceb71-df\"",
       "file_path": "documentation/TVUIKit/tvcardview.md",
-      "hash": "3071ffa8c0aed791da4545330622e686d2b03ee4181c51a62afeb2c4c25034a7"
+      "hash": "ef6df60353fcea6eaa257e66729637d0fbcf81689d4d82ee2137b150add803ac"
     },
     "https://developer.apple.com/documentation/tvuikit/tvcardview/cardbackgroundcolor": {
       "etag": "\"1c75-65d55c1dfd632-df\"",
@@ -851,9 +851,9 @@
       "hash": "716920b75048083f2066708870fafc975053d645afca9d6a8a27a8e4893c6306"
     },
     "https://developer.apple.com/tutorials/data/documentation/tvuikit/tvcaptionbuttonview.json": {
-      "etag": "\"b6ba-65db1e2e57cee-df\"",
+      "etag": "\"bc6c-65d55c1de6ecc-df\"",
       "file_path": "documentation/TVUIKit/tvcaptionbuttonview.md",
-      "hash": "821a799052bb87de1515dfac28540a723d3e3b91f2de960f64fa4ed5b9498b0f"
+      "hash": "b0a606ff83ac8c4683e84e1bab42649ab6f7dc01f4687b772e98417636ad71ef"
     },
     "https://developer.apple.com/tutorials/data/documentation/tvuikit/tvcaptionbuttonview/contentimage.json": {
       "etag": "\"2df0-65d55c1de6ecc-df\"",
@@ -911,9 +911,9 @@
       "hash": "4a83dd149513ab89a517542dab52b540220fd9bac17a13b8218f177db954c92b"
     },
     "https://developer.apple.com/tutorials/data/documentation/tvuikit/tvcardview.json": {
-      "etag": "\"99dd-65d6156418542-df\"",
+      "etag": "\"942b-65d55c1dceb71-df\"",
       "file_path": "documentation/TVUIKit/tvcardview.md",
-      "hash": "3071ffa8c0aed791da4545330622e686d2b03ee4181c51a62afeb2c4c25034a7"
+      "hash": "ef6df60353fcea6eaa257e66729637d0fbcf81689d4d82ee2137b150add803ac"
     },
     "https://developer.apple.com/tutorials/data/documentation/tvuikit/tvcardview/cardbackgroundcolor.json": {
       "etag": "\"1c75-65d55c1dfd632-df\"",

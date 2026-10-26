@@ -1,9 +1,9 @@
 {
   "hashes": {
     "https://developer.apple.com/documentation/macos-release-notes": {
-      "etag": "\"a199-65e2e83e35762-df\"",
+      "etag": "\"a196-65ebf022b4977-df\"",
       "file_path": "documentation/macos-release-notes/macos-release-notes.md",
-      "hash": "dbe0c95ac3044aea46f48e9e4c80294945a18d3d0ed642ffd5e91d151aee6ab5"
+      "hash": "3f0517ef8969136e1d0ab951846867aac71ef8476f5172866e672a758bcb8fdc"
     },
     "https://developer.apple.com/documentation/macos-release-notes/appkit-release-notes-for-macos-10_14": {
       "etag": "\"4dd09-65d55a472557d-df\"",
@@ -66,9 +66,9 @@
       "hash": "6bf5ab034b3d82a3cd5fbdcf45a0627f26156a3f3458f823fea998f736930e4f"
     },
     "https://developer.apple.com/documentation/macos-release-notes/macos-13-release-notes": {
-      "etag": "\"99d4-65defd9dbff72-df\"",
+      "etag": "\"99d3-65b8a28a9285f-df\"",
       "file_path": "documentation/macos-release-notes/macos-13-release-notes.md",
-      "hash": "59fc7eaa4d752b8d9d52148e6d1f0e944f2837eef338e454a9d9504626e7ffd9"
+      "hash": "969759ac64a4c3affc38fae5c8ba83450c6c20497bd7f8c1f1bde80328a3c5ad"
     },
     "https://developer.apple.com/documentation/macos-release-notes/macos-13_1-release-notes": {
       "etag": "\"265b-65d55a472557d-df\"",
@@ -201,14 +201,14 @@
       "hash": "af41e00ee36ffddae9a67a537cbced8da8fbc44e8de55cffeb40ced745b7c163"
     },
     "https://developer.apple.com/documentation/macos-release-notes/macos-27-release-notes": {
-      "etag": "\"23e24-65e2e83e2b3f4-df\"",
+      "etag": "\"23e21-65ebf022aa98f-df\"",
       "file_path": "documentation/macos-release-notes/macos-27-release-notes.md",
-      "hash": "eb03b4cbd293b1f8b1a0164d6fe6da56eb59b0ad6e5d92a3dd50530aafe1220c"
+      "hash": "6899864283f1a5d3d7d8f91c4564c39ba2bcefdc3e921faab2762c5e132517f3"
     },
     "https://developer.apple.com/documentation/macos-release-notes/macos-27_2-release-notes": {
-      "etag": "\"1c70-65e2e83e35762-df\"",
+      "etag": "\"1ca3-65ebf022b4977-df\"",
       "file_path": "documentation/macos-release-notes/macos-27_2-release-notes.md",
-      "hash": "895522204e4cdc11d3efabc404c03b8f51e0353d87633ec95d6be30b84b28e4e"
+      "hash": "4917aa71bf71970383288d983bce369f338804ea3e81247dd355c12d64364019"
     },
     "https://developer.apple.com/documentation/macos-release-notes/macos-big-sur-11_0_1-ios-ipados-apps-on-mac-release-notes": {
       "etag": "\"5949-6590224a25353-df\"",
@@ -316,9 +316,9 @@
       "hash": "3cd9bf93eb21239fa4c6ee2bbd857fbe374974d5a85d5e7edc62c3b3542e2701"
     },
     "https://developer.apple.com/tutorials/data/documentation/macos-release-notes.json": {
-      "etag": "\"a199-65e2e83e35762-df\"",
+      "etag": "\"a196-65ebf022b4977-df\"",
       "file_path": "documentation/macos-release-notes/macos-release-notes.md",
-      "hash": "dbe0c95ac3044aea46f48e9e4c80294945a18d3d0ed642ffd5e91d151aee6ab5"
+      "hash": "3f0517ef8969136e1d0ab951846867aac71ef8476f5172866e672a758bcb8fdc"
     },
     "https://developer.apple.com/tutorials/data/documentation/macos-release-notes/appkit-release-notes-for-macos-10_14.json": {
       "etag": "\"4dd09-65d55a472557d-df\"",
@@ -381,9 +381,9 @@
       "hash": "6bf5ab034b3d82a3cd5fbdcf45a0627f26156a3f3458f823fea998f736930e4f"
     },
     "https://developer.apple.com/tutorials/data/documentation/macos-release-notes/macos-13-release-notes.json": {
-      "etag": "\"99d4-65defd9dbff72-df\"",
+      "etag": "\"99d3-65b8a28a9285f-df\"",
       "file_path": "documentation/macos-release-notes/macos-13-release-notes.md",
-      "hash": "59fc7eaa4d752b8d9d52148e6d1f0e944f2837eef338e454a9d9504626e7ffd9"
+      "hash": "969759ac64a4c3affc38fae5c8ba83450c6c20497bd7f8c1f1bde80328a3c5ad"
     },
     "https://developer.apple.com/tutorials/data/documentation/macos-release-notes/macos-13_1-release-notes.json": {
       "etag": "\"265b-65d55a472557d-df\"",
@@ -516,14 +516,14 @@
       "hash": "af41e00ee36ffddae9a67a537cbced8da8fbc44e8de55cffeb40ced745b7c163"
     },
     "https://developer.apple.com/tutorials/data/documentation/macos-release-notes/macos-27-release-notes.json": {
-      "etag": "\"23e24-65e2e83e2b3f4-df\"",
+      "etag": "\"23e21-65ebf022aa98f-df\"",
       "file_path": "documentation/macos-release-notes/macos-27-release-notes.md",
-      "hash": "eb03b4cbd293b1f8b1a0164d6fe6da56eb59b0ad6e5d92a3dd50530aafe1220c"
+      "hash": "6899864283f1a5d3d7d8f91c4564c39ba2bcefdc3e921faab2762c5e132517f3"
     },
     "https://developer.apple.com/tutorials/data/documentation/macos-release-notes/macos-27_2-release-notes.json": {
-      "etag": "\"1c70-65e2e83e35762-df\"",
+      "etag": "\"1ca3-65ebf022b4977-df\"",
       "file_path": "documentation/macos-release-notes/macos-27_2-release-notes.md",
-      "hash": "895522204e4cdc11d3efabc404c03b8f51e0353d87633ec95d6be30b84b28e4e"
+      "hash": "4917aa71bf71970383288d983bce369f338804ea3e81247dd355c12d64364019"
     },
     "https://developer.apple.com/tutorials/data/documentation/macos-release-notes/macos-big-sur-11_0_1-ios-ipados-apps-on-mac-release-notes.json": {
       "etag": "\"5949-6590224a25353-df\"",

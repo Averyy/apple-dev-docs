@@ -3810,7 +3810,7 @@
       "hash": "0417ad87df8080fa9c4f071bb4dc99b352211e74e992ccf2e05d5723c2ece35d"
     },
     "https://developer.apple.com/documentation/audiotoolbox/audioindependentpackettranslation/init()": {
-      "etag": "\"fe6-65d55ede2684f-df\"",
+      "etag": "\"fe6-65d55ede2684f\"",
       "file_path": "documentation/AudioToolbox/audioindependentpackettranslation/init().md",
       "hash": "5a79392123cdef9b6193f706059ccca55af89f2e042e20bf4320adb06b6170d9"
     },
@@ -22469,7 +22469,7 @@
       "hash": "0417ad87df8080fa9c4f071bb4dc99b352211e74e992ccf2e05d5723c2ece35d"
     },
     "https://developer.apple.com/tutorials/data/documentation/audiotoolbox/audioindependentpackettranslation/init().json": {
-      "etag": "\"fe6-65d55ede2684f-df\"",
+      "etag": "\"fe6-65d55ede2684f\"",
       "file_path": "documentation/AudioToolbox/audioindependentpackettranslation/init().md",
       "hash": "5a79392123cdef9b6193f706059ccca55af89f2e042e20bf4320adb06b6170d9"
     },

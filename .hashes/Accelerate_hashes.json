@@ -876,7 +876,7 @@
       "hash": "cacbb0856d537c9d1bbbbf61e8727a9b624b84103bf83793fa7bc5d122cdaf48"
     },
     "https://developer.apple.com/documentation/accelerate/bnns/arithmeticternaryfunction/bnnsarithmeticfunction": {
-      "etag": "\"195a-65d560ea01524-df\"",
+      "etag": "\"195a-65d560ea01524\"",
       "file_path": "documentation/Accelerate/bnns/arithmeticternaryfunction/bnnsarithmeticfunction.md",
       "hash": "7cfafd83c2f8b05c7c0aaaa8f3a6f97ba2ffc0e31d354fc91bebd792213ef26f"
     },
@@ -20991,7 +20991,7 @@
       "hash": "6877c0dfc88721bec32eec12c9bc351aff330d0ea3e05606c87c53fc7abd2251"
     },
     "https://developer.apple.com/documentation/accelerate/sorgqr_(_:_:_:_:_:_:_:_:_:)": {
-      "etag": "\"de42-65d560f20902f-df\"",
+      "etag": "\"de42-65d560f20902f\"",
       "file_path": "documentation/Accelerate/sorgqr_(_,_,_,_,_,_,_,_,_).md",
       "hash": "47c92309ba7f04d966a8f93f8ef8f6154ff324933692047af1cb22647c5b10f4"
     },
@@ -45371,7 +45371,7 @@
       "hash": "cacbb0856d537c9d1bbbbf61e8727a9b624b84103bf83793fa7bc5d122cdaf48"
     },
     "https://developer.apple.com/tutorials/data/documentation/accelerate/bnns/arithmeticternaryfunction/bnnsarithmeticfunction.json": {
-      "etag": "\"195a-65d560ea01524-df\"",
+      "etag": "\"195a-65d560ea01524\"",
       "file_path": "documentation/Accelerate/bnns/arithmeticternaryfunction/bnnsarithmeticfunction.md",
       "hash": "7cfafd83c2f8b05c7c0aaaa8f3a6f97ba2ffc0e31d354fc91bebd792213ef26f"
     },
@@ -65486,7 +65486,7 @@
       "hash": "6877c0dfc88721bec32eec12c9bc351aff330d0ea3e05606c87c53fc7abd2251"
     },
     "https://developer.apple.com/tutorials/data/documentation/accelerate/sorgqr_(_:_:_:_:_:_:_:_:_:).json": {
-      "etag": "\"de42-65d560f20902f-df\"",
+      "etag": "\"de42-65d560f20902f\"",
       "file_path": "documentation/Accelerate/sorgqr_(_,_,_,_,_,_,_,_,_).md",
       "hash": "47c92309ba7f04d966a8f93f8ef8f6154ff324933692047af1cb22647c5b10f4"
     },

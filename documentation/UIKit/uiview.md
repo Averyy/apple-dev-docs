@@ -707,6 +707,8 @@ override func viewDidLoad() {
 - [NSCoding](../Foundation/nscoding.md)
 - [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 - [NSTouchBarProvider](../AppKit/nstouchbarprovider.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 - [UIAccessibilityIdentification](./uiaccessibilityidentification.md)
 - [UIActivityItemsConfigurationProviding](./uiactivityitemsconfigurationproviding.md)
 - [UIAppearance](./uiappearance.md)

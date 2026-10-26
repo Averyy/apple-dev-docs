@@ -5451,9 +5451,9 @@
       "hash": "aa45e930d7d515eb081ad37e3bede64b671f4016c2c08f109ac7bef37b5a1400"
     },
     "https://developer.apple.com/documentation/carplay/cpvoicecontroltemplate": {
-      "etag": "\"86a1-65dbfd5dbe00c-df\"",
+      "etag": "\"8c53-65d55edb6fcf4-df\"",
       "file_path": "documentation/CarPlay/cpvoicecontroltemplate.md",
-      "hash": "a023264085a08c2d6d66dfcf367c4985aebfba3828143dbbb5bb2d881e9c02cb"
+      "hash": "4fd2ab50dd9dd06a6600f7f7ea7103d8c7d4e6354ec10c34d2c23ff2a3f14269"
     },
     "https://developer.apple.com/documentation/carplay/cpvoicecontroltemplate/activatevoicecontrolstate(withidentifier:)": {
       "etag": "\"38f3-65d55edbd3087-df\"",
@@ -11021,9 +11021,9 @@
       "hash": "aa45e930d7d515eb081ad37e3bede64b671f4016c2c08f109ac7bef37b5a1400"
     },
     "https://developer.apple.com/tutorials/data/documentation/carplay/cpvoicecontroltemplate.json": {
-      "etag": "\"86a1-65dbfd5dbe00c-df\"",
+      "etag": "\"8c53-65d55edb6fcf4-df\"",
       "file_path": "documentation/CarPlay/cpvoicecontroltemplate.md",
-      "hash": "a023264085a08c2d6d66dfcf367c4985aebfba3828143dbbb5bb2d881e9c02cb"
+      "hash": "4fd2ab50dd9dd06a6600f7f7ea7103d8c7d4e6354ec10c34d2c23ff2a3f14269"
     },
     "https://developer.apple.com/tutorials/data/documentation/carplay/cpvoicecontroltemplate/activatevoicecontrolstate(withidentifier:).json": {
       "etag": "\"38f3-65d55edbd3087-df\"",

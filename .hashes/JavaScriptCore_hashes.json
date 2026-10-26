@@ -1621,7 +1621,7 @@
       "hash": "62345644e10be823ccc738634ed12abe4b581809505d48d718993e31ab3bfeb6"
     },
     "https://developer.apple.com/documentation/javascriptcore/jsvaluemakesymbol(_:_:)": {
-      "etag": "\"4d19-65d55e0019d4c-df\"",
+      "etag": "\"4d19-65d55e0019d4c\"",
       "file_path": "documentation/JavaScriptCore/jsvaluemakesymbol(_,_).md",
       "hash": "cbb0679c50d026780b08db2ae37f40fb24b6859c574a1c7c748b492cf5031b54"
     },
@@ -3476,7 +3476,7 @@
       "hash": "62345644e10be823ccc738634ed12abe4b581809505d48d718993e31ab3bfeb6"
     },
     "https://developer.apple.com/tutorials/data/documentation/javascriptcore/jsvaluemakesymbol(_:_:).json": {
-      "etag": "\"4d19-65d55e0019d4c-df\"",
+      "etag": "\"4d19-65d55e0019d4c\"",
       "file_path": "documentation/JavaScriptCore/jsvaluemakesymbol(_,_).md",
       "hash": "cbb0679c50d026780b08db2ae37f40fb24b6859c574a1c7c748b492cf5031b54"
     },

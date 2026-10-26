@@ -31,9 +31,9 @@
       "hash": "c77eb3884d11f40f80d62de666c7fdb50bc3c405eb7770f3db10d482a0586d17"
     },
     "https://developer.apple.com/documentation/avkit/adopting-the-system-player-interface-in-visionos": {
-      "etag": "\"c0a5-65da4fdcdc297-df\"",
+      "etag": "\"c0a4-65d55ee33f4ec-df\"",
       "file_path": "documentation/AVKit/adopting-the-system-player-interface-in-visionos.md",
-      "hash": "0665a8888936b7abbb49b803f7e3c4ad623ad4f25e18dd59d1d6b4cff966cca3"
+      "hash": "ad8fcb72f07f41ab597f257c40e9a8ded24520eae0387f824183796c68fc1cea"
     },
     "https://developer.apple.com/documentation/avkit/avaudiosessionrouteselection": {
       "etag": "\"25cc-65d55ee369bd6-df\"",
@@ -136,9 +136,9 @@
       "hash": "db7f12f6c0fe41297ed21653aafe0d216d30fa2cf13857a5d06cf53c169f9838"
     },
     "https://developer.apple.com/documentation/avkit/avcaptureeventinteraction": {
-      "etag": "\"7c15-65e7b4d623c04-df\"",
+      "etag": "\"7c14-65d55ee310052-df\"",
       "file_path": "documentation/AVKit/avcaptureeventinteraction.md",
-      "hash": "04b42df980bb1f79fd497d7c4cb86e313739e59318d54462dace50321a0d10ee"
+      "hash": "5d694d848528366a80537df858f02d983b5ebfd37c9fbaddc1bbd9552a5982ba"
     },
     "https://developer.apple.com/documentation/avkit/avcaptureeventinteraction/defaultcapturesounddisabled": {
       "etag": "\"2dfc-65d55ee33f4ec-df\"",
@@ -3561,9 +3561,9 @@
       "hash": "c77eb3884d11f40f80d62de666c7fdb50bc3c405eb7770f3db10d482a0586d17"
     },
     "https://developer.apple.com/tutorials/data/documentation/avkit/adopting-the-system-player-interface-in-visionos.json": {
-      "etag": "\"c0a5-65da4fdcdc297-df\"",
+      "etag": "\"c0a4-65d55ee33f4ec-df\"",
       "file_path": "documentation/AVKit/adopting-the-system-player-interface-in-visionos.md",
-      "hash": "0665a8888936b7abbb49b803f7e3c4ad623ad4f25e18dd59d1d6b4cff966cca3"
+      "hash": "ad8fcb72f07f41ab597f257c40e9a8ded24520eae0387f824183796c68fc1cea"
     },
     "https://developer.apple.com/tutorials/data/documentation/avkit/avaudiosessionrouteselection.json": {
       "etag": "\"25cc-65d55ee369bd6-df\"",
@@ -3666,9 +3666,9 @@
       "hash": "db7f12f6c0fe41297ed21653aafe0d216d30fa2cf13857a5d06cf53c169f9838"
     },
     "https://developer.apple.com/tutorials/data/documentation/avkit/avcaptureeventinteraction.json": {
-      "etag": "\"7c15-65e7b4d623c04-df\"",
+      "etag": "\"7c14-65d55ee310052-df\"",
       "file_path": "documentation/AVKit/avcaptureeventinteraction.md",
-      "hash": "04b42df980bb1f79fd497d7c4cb86e313739e59318d54462dace50321a0d10ee"
+      "hash": "5d694d848528366a80537df858f02d983b5ebfd37c9fbaddc1bbd9552a5982ba"
     },
     "https://developer.apple.com/tutorials/data/documentation/avkit/avcaptureeventinteraction/defaultcapturesounddisabled.json": {
       "etag": "\"2dfc-65d55ee33f4ec-df\"",

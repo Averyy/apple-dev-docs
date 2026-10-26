@@ -50731,7 +50731,7 @@
       "hash": "93adef4270b44b3747a9d2714ca7bd373c0a61f8060ecc9a210d8781fad0227b"
     },
     "https://developer.apple.com/documentation/kernel/1646411-anonymous/kioaudiocontrolusageoutput": {
-      "etag": "\"de6-6593d14160848-df\"",
+      "etag": "\"de6-6593d14160848\"",
       "file_path": "documentation/kernel/api-1646411-anonymous/kioaudiocontrolusageoutput.md",
       "hash": "f6a0da20dffa600ebffc5637997f2950c7cc7a0bcd2bd54c14a0e3fc1af77728"
     },
@@ -114761,7 +114761,7 @@
       "hash": "c043be7847de7dc6644514d023d6cd0472186c9cd5ef26378fc8eabce631d944"
     },
     "https://developer.apple.com/documentation/kernel/iofirewireserialbusprotocoltransport/1550703-allocateresources": {
-      "etag": "\"14a4-6593d129f91a7\"",
+      "etag": "\"14a4-6593d129f91a7-df\"",
       "file_path": "documentation/kernel/iofirewireserialbusprotocoltransport/api-1550703-allocateresources.md",
       "hash": "6934e3977a4f3f32aa2e026ea0c065cc2d75a4f227dae645da697bfabf1b02e1"
     },
@@ -119871,7 +119871,7 @@
       "hash": "3162e9ae2e8c2425a7de01b38154e2cb392466eeabce7a1d437111bcf6865f14"
     },
     "https://developer.apple.com/documentation/kernel/iohidelementtype/kiohidelementtypeinput_scancodes": {
-      "etag": "\"11db-6593d12e6e01a-df\"",
+      "etag": "\"11db-6593d12e6e01a\"",
       "file_path": "documentation/kernel/iohidelementtype/kiohidelementtypeinput_scancodes.md",
       "hash": "11dc6f3fe73444288f73684d3632784b7e94235e7d79be0a92cdef32eb6eb40c"
     },
@@ -124161,7 +124161,7 @@
       "hash": "15650d54816a1e708021792676c0fe64524e553b833d9c48f05cea345f0a492a"
     },
     "https://developer.apple.com/documentation/kernel/iomedia/1420264-isejectable": {
-      "etag": "\"11bf-6593d13f8912a\"",
+      "etag": "\"11bf-6593d13f8912a-df\"",
       "file_path": "documentation/kernel/iomedia/api-1420264-isejectable.md",
       "hash": "a613a8d4d54afe5ea64ca22a6fc6f552f27d987939298f63ef3c87cc21ddf77d"
     },
@@ -169041,7 +169041,7 @@
       "hash": "7b5ef54f0e441456d81262b092a95fbe6252a98ecac8c7edd147bd966eea4c95"
     },
     "https://developer.apple.com/documentation/kernel/sbcmodepageflexibledisk/1476394-starting_cylinder_reduced_write_": {
-      "etag": "\"f16-6593d1346c643-df\"",
+      "etag": "\"f16-6593d1346c643\"",
       "file_path": "documentation/kernel/sbcmodepageflexibledisk/api-1476394-starting_cylinder_reduced_write_.md",
       "hash": "9ed5797295a97eb91232e52a685e67b2e79a61a35405f35e29f008a267ea9964"
     },
@@ -249591,7 +249591,7 @@
       "hash": "93adef4270b44b3747a9d2714ca7bd373c0a61f8060ecc9a210d8781fad0227b"
     },
     "https://developer.apple.com/tutorials/data/documentation/kernel/1646411-anonymous/kioaudiocontrolusageoutput.json": {
-      "etag": "\"de6-6593d14160848-df\"",
+      "etag": "\"de6-6593d14160848\"",
       "file_path": "documentation/kernel/api-1646411-anonymous/kioaudiocontrolusageoutput.md",
       "hash": "f6a0da20dffa600ebffc5637997f2950c7cc7a0bcd2bd54c14a0e3fc1af77728"
     },
@@ -313621,7 +313621,7 @@
       "hash": "c043be7847de7dc6644514d023d6cd0472186c9cd5ef26378fc8eabce631d944"
     },
     "https://developer.apple.com/tutorials/data/documentation/kernel/iofirewireserialbusprotocoltransport/1550703-allocateresources.json": {
-      "etag": "\"14a4-6593d129f91a7\"",
+      "etag": "\"14a4-6593d129f91a7-df\"",
       "file_path": "documentation/kernel/iofirewireserialbusprotocoltransport/api-1550703-allocateresources.md",
       "hash": "6934e3977a4f3f32aa2e026ea0c065cc2d75a4f227dae645da697bfabf1b02e1"
     },
@@ -318731,7 +318731,7 @@
       "hash": "3162e9ae2e8c2425a7de01b38154e2cb392466eeabce7a1d437111bcf6865f14"
     },
     "https://developer.apple.com/tutorials/data/documentation/kernel/iohidelementtype/kiohidelementtypeinput_scancodes.json": {
-      "etag": "\"11db-6593d12e6e01a-df\"",
+      "etag": "\"11db-6593d12e6e01a\"",
       "file_path": "documentation/kernel/iohidelementtype/kiohidelementtypeinput_scancodes.md",
       "hash": "11dc6f3fe73444288f73684d3632784b7e94235e7d79be0a92cdef32eb6eb40c"
     },
@@ -323021,7 +323021,7 @@
       "hash": "15650d54816a1e708021792676c0fe64524e553b833d9c48f05cea345f0a492a"
     },
     "https://developer.apple.com/tutorials/data/documentation/kernel/iomedia/1420264-isejectable.json": {
-      "etag": "\"11bf-6593d13f8912a\"",
+      "etag": "\"11bf-6593d13f8912a-df\"",
       "file_path": "documentation/kernel/iomedia/api-1420264-isejectable.md",
       "hash": "a613a8d4d54afe5ea64ca22a6fc6f552f27d987939298f63ef3c87cc21ddf77d"
     },
@@ -367901,7 +367901,7 @@
       "hash": "7b5ef54f0e441456d81262b092a95fbe6252a98ecac8c7edd147bd966eea4c95"
     },
     "https://developer.apple.com/tutorials/data/documentation/kernel/sbcmodepageflexibledisk/1476394-starting_cylinder_reduced_write_.json": {
-      "etag": "\"f16-6593d1346c643-df\"",
+      "etag": "\"f16-6593d1346c643\"",
       "file_path": "documentation/kernel/sbcmodepageflexibledisk/api-1476394-starting_cylinder_reduced_write_.md",
       "hash": "9ed5797295a97eb91232e52a685e67b2e79a61a35405f35e29f008a267ea9964"
     },

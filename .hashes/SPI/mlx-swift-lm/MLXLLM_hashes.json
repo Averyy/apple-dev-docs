@@ -2633,8 +2633,8 @@
       "hash": "909aa744a222cf0af2517d6e72c580ce181ff45fc13028e689d75fbc919dde34"
     },
     "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/data/documentation/mlxllm/gemmamodel/perform(with:perform:)-8v1zh.json": {
-      "error": "HTTP 404",
-      "status": "error"
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXLLM/gemmamodel/perform(with,perform)-8v1zh.md",
+      "hash": "181a2a7f4b84d08928b5b13e1b210a95443e01324466906e3afe31aace86d6df"
     },
     "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/data/documentation/mlxllm/gemmamodel/prepare().json": {
       "file_path": "documentation/SPI/mlx-swift-lm/MLXLLM/gemmamodel/prepare().md",
@@ -13340,6 +13340,10 @@
       "file_path": "documentation/SPI/mlx-swift-lm/MLXLLM/gemmamodel/perform(with,perform)-2x5ua.md",
       "hash": "909aa744a222cf0af2517d6e72c580ce181ff45fc13028e689d75fbc919dde34"
     },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/documentation/mlxllm/gemmamodel/perform(with:perform:)-8v1zh": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXLLM/gemmamodel/perform(with,perform)-8v1zh.md",
+      "hash": "181a2a7f4b84d08928b5b13e1b210a95443e01324466906e3afe31aace86d6df"
+    },
     "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/documentation/mlxllm/gemmamodel/prepare()": {
       "file_path": "documentation/SPI/mlx-swift-lm/MLXLLM/gemmamodel/prepare().md",
       "hash": "96f9c641c7852367c6a244823a1369694d94083ecaa35d4fbcc7536eb4c899b4"
@@ -21417,6 +21421,6 @@
     "render": {
       "version": 3
     },
-    "total_pages": 5353
+    "total_pages": 5354
   }
 }

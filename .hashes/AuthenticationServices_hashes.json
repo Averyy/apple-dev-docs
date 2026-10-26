@@ -4581,9 +4581,9 @@
       "hash": "9af007caebe36ccbb8d6e1b5764aacd565ed80ab7da0b7b07b3bec128703954d"
     },
     "https://developer.apple.com/documentation/authenticationservices/asimportablecredential": {
-      "etag": "\"bb94-65d6197a45495-df\"",
+      "etag": "\"bb96-65d560ab57df4-df\"",
       "file_path": "documentation/AuthenticationServices/asimportablecredential.md",
-      "hash": "031cd1171b10ec0770d92f560ec33a71fbe90bc7f578358f6717231ce35093ea"
+      "hash": "40cc8baf7b7905dd3a06d99da48b6241c8fde8802de10ec238435273e3ad59c6"
     },
     "https://developer.apple.com/documentation/authenticationservices/asimportablecredential/address": {
       "etag": "\"40ae-65d560abeb693-df\"",
@@ -11851,9 +11851,9 @@
       "hash": "9af007caebe36ccbb8d6e1b5764aacd565ed80ab7da0b7b07b3bec128703954d"
     },
     "https://developer.apple.com/tutorials/data/documentation/authenticationservices/asimportablecredential.json": {
-      "etag": "\"bb94-65d6197a45495-df\"",
+      "etag": "\"bb96-65d560ab57df4-df\"",
       "file_path": "documentation/AuthenticationServices/asimportablecredential.md",
-      "hash": "031cd1171b10ec0770d92f560ec33a71fbe90bc7f578358f6717231ce35093ea"
+      "hash": "40cc8baf7b7905dd3a06d99da48b6241c8fde8802de10ec238435273e3ad59c6"
     },
     "https://developer.apple.com/tutorials/data/documentation/authenticationservices/asimportablecredential/address(_:).json": {
       "etag": "\"18a6-65d560abd5f27-df\"",

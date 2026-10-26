@@ -3141,7 +3141,7 @@
       "hash": "5ffba864f136303027f390888dc4f5f01f877a074d0b7a32eb9eef7ca7938ef1"
     },
     "https://developer.apple.com/documentation/coreservices/1400188-unicode_and_iso_ucs_text_encodin/ktextencodingunicodev11_0": {
-      "etag": "\"2ca8-65b3a468a6763-df\"",
+      "etag": "\"2ca8-65b3a468a6763\"",
       "file_path": "documentation/coreservices/api-1400188-unicode_and_iso_ucs_text_encodin/ktextencodingunicodev11_0.md",
       "hash": "f12ecfa7349b10840440c1d164180e029698967ea2784dd16d16ec97695e4e66"
     },
@@ -84076,7 +84076,7 @@
       "hash": "5ffba864f136303027f390888dc4f5f01f877a074d0b7a32eb9eef7ca7938ef1"
     },
     "https://developer.apple.com/tutorials/data/documentation/coreservices/1400188-unicode_and_iso_ucs_text_encodin/ktextencodingunicodev11_0.json": {
-      "etag": "\"2ca8-65b3a468a6763-df\"",
+      "etag": "\"2ca8-65b3a468a6763\"",
       "file_path": "documentation/coreservices/api-1400188-unicode_and_iso_ucs_text_encodin/ktextencodingunicodev11_0.md",
       "hash": "f12ecfa7349b10840440c1d164180e029698967ea2784dd16d16ec97695e4e66"
     },

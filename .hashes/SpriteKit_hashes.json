@@ -2111,9 +2111,9 @@
       "hash": "9f98b0ba2a00f6305a2ab8b8ea75bb0d6d99076e70563a1ae17360569e45578b"
     },
     "https://developer.apple.com/documentation/spritekit/sknode": {
-      "etag": "\"26b15-65d757820fe45-df\"",
+      "etag": "\"26563-65d55d080f560-df\"",
       "file_path": "documentation/SpriteKit/sknode.md",
-      "hash": "a9f7c28d160c3e5c659e3303f5ac3d67ad11fa3f003f976e08402abab7bf1c26"
+      "hash": "c9a435124e73ba6608d700518eec5b8f33f1a77579edc6cbb52c831f6b803948"
     },
     "https://developer.apple.com/documentation/spritekit/sknode/accessibilitychildren": {
       "etag": "\"4c89-65d55d05b7bf1-df\"",
@@ -7861,9 +7861,9 @@
       "hash": "9f98b0ba2a00f6305a2ab8b8ea75bb0d6d99076e70563a1ae17360569e45578b"
     },
     "https://developer.apple.com/tutorials/data/documentation/spritekit/sknode.json": {
-      "etag": "\"26b15-65d757820fe45-df\"",
+      "etag": "\"26563-65d55d080f560-df\"",
       "file_path": "documentation/SpriteKit/sknode.md",
-      "hash": "a9f7c28d160c3e5c659e3303f5ac3d67ad11fa3f003f976e08402abab7bf1c26"
+      "hash": "c9a435124e73ba6608d700518eec5b8f33f1a77579edc6cbb52c831f6b803948"
     },
     "https://developer.apple.com/tutorials/data/documentation/spritekit/sknode/accessibilitychildren.json": {
       "etag": "\"4c89-65d55d05b7bf1-df\"",

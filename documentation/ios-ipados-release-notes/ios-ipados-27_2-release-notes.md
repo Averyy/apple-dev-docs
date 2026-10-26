@@ -1,4 +1,4 @@
-# iOS & iPadOS 27.2 RC Release Notes
+# iOS & iPadOS 27.2 Release Notes
 
 **Framework**: iOS & iPadOS Release Notes  
 **Role**: Article
@@ -7,18 +7,18 @@ Update your apps to use new features, and test your apps against API changes.
 
 #### Overview
 
-The iOS & iPadOS 27.2 SDK provides support to develop apps for iPhone and iPad running iOS & iPadOS 27.2 RC. The SDK comes bundled with Xcode 27.2. For information on the compatibility requirements for Xcode 27.2, see [Xcode 27.2 Release Notes](../Xcode-Release-Notes/xcode-27_2-release-notes.md).
+The iOS & iPadOS 27.2 SDK provides support to develop apps for iPhone and iPad running iOS & iPadOS 27.2. The SDK comes bundled with Xcode 27.2. For information on the compatibility requirements for Xcode 27.2, see [Xcode 27.2 Release Notes](../Xcode-Release-Notes/xcode-27_2-release-notes.md).
 
 ##### App Tracking Transparency
 
 ###### New Features
 
-- `AppTrackingTransparency` ([ATT](../AppTrackingTransparency/AppTrackingTransparency.md)) now supports an alternative expanded prompt and re-prompting on a yearly basis for EU users. The alternative prompt is required for users in France, Germany, Italy, Poland, and Romania. (179504171)
+- `AppTrackingTransparency` ([ATT](../AppTrackingTransparency/AppTrackingTransparency.md)) now supports an alternative expanded prompt and reprompting on a yearly basis for EU users. The alternative prompt is required for users in France, Germany, Italy, Poland, and Romania. (179504171)
 
 ###### Resolved Issues
 
 - Fixed: The new `requestTrackingAuthorization(usingExpandedInterface:additionalInformationAction:completionHandler:)` API is renamed to `requestTrackingAuthorization(preferExpandedInterface:...)`. (187149729)
-- Fixed: The new requestTrackingAuthorizationPreferExpandedInterface:… API is renamed to requestTrackingAuthorizationPreferringExpandedInterface:… (187610745)
+- Fixed: The new `requestTrackingAuthorizationPreferExpandedInterface:...` API is renamed to `requestTrackingAuthorizationPreferringExpandedInterface:...`. (187610745)
 
 ##### Health
 
@@ -39,7 +39,7 @@ The iOS & iPadOS 27.2 SDK provides support to develop apps for iPhone and iPad r
 
 ###### Known Issues
 
-- If you have an upcoming lab appointment, wait to update iOS versions until you receive your results. Contact [Quest](http://support.exp.questdiagnostics.com) directly to reschedule your appointment if you run into any issues. (184530996)
+- If you have an upcoming lab appointment, wait to update iOS versions until you receive your results. Contact [Quest](https://support.exp.questdiagnostics.com) directly to reschedule your appointment if you run into any issues. (184530996)
 
   **Workaround:** Lab results are also available under Browse > Lab Results.
 
@@ -63,7 +63,7 @@ The iOS & iPadOS 27.2 SDK provides support to develop apps for iPhone and iPad r
 
 - Fixed: Intro offer eligibility does not reset immediately after calling `SKTestSession.clearTransactions()`. (183933307) (FB24137836)
 - Fixed: Changing the storefront or locale using `SKTestSession` doesn’t propagate through `Storefront.updates`. (184155259)
-- Fixed: Failed purchases using `SKTestSession` might display error dialogs even when `dialogsDisabled` is set to true. (184255116)
+- Fixed: Failed purchases using `SKTestSession` might display error dialogs even when `dialogsDisabled` is set to `true`. (184255116)
 
 ###### Known Issues
 

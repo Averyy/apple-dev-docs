@@ -3466,7 +3466,7 @@
       "hash": "dd829fdad45bd41bc4a8b7bf92f47d2e07a621991b3f67fd8a3cef1b1641b5f3"
     },
     "https://developer.apple.com/documentation/matter/mtrattributeidtype/clustercolorcontrolattributecurrentsaturationid": {
-      "etag": "\"1d2c-65d560e44cabe-df\"",
+      "etag": "\"1d2c-65d560e44cabe\"",
       "file_path": "documentation/Matter/mtrattributeidtype/clustercolorcontrolattributecurrentsaturationid.md",
       "hash": "49c8728396da1c7944063df5c6cb455bdfd0a6f156b8fa704ec8bd3231426095"
     },
@@ -24571,7 +24571,7 @@
       "hash": "51ee27bbd14d56f0b220560d29ab6efa12fdb534585e38bf14ddc29b59f26ede"
     },
     "https://developer.apple.com/documentation/matter/mtrbaseclustercolorcontrol/readattributecurrenty(completionhandler:)": {
-      "etag": "\"3146-65d5610d6aaac\"",
+      "etag": "\"3146-65d5610d6aaac-df\"",
       "file_path": "documentation/Matter/mtrbaseclustercolorcontrol/readattributecurrenty(completionhandler).md",
       "hash": "c110c269a21b361a624bb9985ca8ed5b99a9fe16858a1fc9129ca3804298d261"
     },
@@ -125366,7 +125366,7 @@
       "hash": "dd829fdad45bd41bc4a8b7bf92f47d2e07a621991b3f67fd8a3cef1b1641b5f3"
     },
     "https://developer.apple.com/tutorials/data/documentation/matter/mtrattributeidtype/clustercolorcontrolattributecurrentsaturationid.json": {
-      "etag": "\"1d2c-65d560e44cabe-df\"",
+      "etag": "\"1d2c-65d560e44cabe\"",
       "file_path": "documentation/Matter/mtrattributeidtype/clustercolorcontrolattributecurrentsaturationid.md",
       "hash": "49c8728396da1c7944063df5c6cb455bdfd0a6f156b8fa704ec8bd3231426095"
     },
@@ -146471,7 +146471,7 @@
       "hash": "51ee27bbd14d56f0b220560d29ab6efa12fdb534585e38bf14ddc29b59f26ede"
     },
     "https://developer.apple.com/tutorials/data/documentation/matter/mtrbaseclustercolorcontrol/readattributecurrenty(completionhandler:).json": {
-      "etag": "\"3146-65d5610d6aaac\"",
+      "etag": "\"3146-65d5610d6aaac-df\"",
       "file_path": "documentation/Matter/mtrbaseclustercolorcontrol/readattributecurrenty(completionhandler).md",
       "hash": "c110c269a21b361a624bb9985ca8ed5b99a9fe16858a1fc9129ca3804298d261"
     },

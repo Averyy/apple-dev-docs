@@ -2301,7 +2301,7 @@
       "hash": "74b71d2924747f18d3a2ceed9b94a93a58571003289d1bbd5a1234b71879031b"
     },
     "https://developer.apple.com/documentation/avfaudio/avaudioplayer/play()": {
-      "etag": "\"400a-65d55dd1675b0-df\"",
+      "etag": "\"400a-65d55dd1675b0\"",
       "file_path": "documentation/AVFAudio/avaudioplayer/play().md",
       "hash": "202dbd18f75578210e1b85f1848c37887f2e6f021ea94201349273f30356c434"
     },
@@ -10176,7 +10176,7 @@
       "hash": "74b71d2924747f18d3a2ceed9b94a93a58571003289d1bbd5a1234b71879031b"
     },
     "https://developer.apple.com/tutorials/data/documentation/avfaudio/avaudioplayer/play().json": {
-      "etag": "\"400a-65d55dd1675b0-df\"",
+      "etag": "\"400a-65d55dd1675b0\"",
       "file_path": "documentation/AVFAudio/avaudioplayer/play().md",
       "hash": "202dbd18f75578210e1b85f1848c37887f2e6f021ea94201349273f30356c434"
     },

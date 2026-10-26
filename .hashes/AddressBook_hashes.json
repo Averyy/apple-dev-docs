@@ -938,9 +938,9 @@
       "hash": "502f38938d5dd5c63f8a5ff2404a3b5e0e1808a3cd6213d3aaaa909cc5d68f14"
     },
     "https://developer.apple.com/documentation/addressbook/abpeoplepickerview": {
-      "etag": "\"11471-65d55dfbc8513-df\"",
+      "etag": "\"10ebf-65d759e430879-df\"",
       "file_path": "documentation/AddressBook/abpeoplepickerview.md",
-      "hash": "0134c1a0a55f5cbf28a1f3c7ed1140d74ef3dbe5f60ddb9c23d656f8b61ad575"
+      "hash": "ebb37c83b2198b5f307afe11cd63a9a62f7c1efc0d72731e93f4cd42597415e8"
     },
     "https://developer.apple.com/documentation/addressbook/abpeoplepickerview/accessoryview": {
       "etag": "\"1ef3-65d55dfbc8513-df\"",
@@ -4342,9 +4342,9 @@
       "hash": "502f38938d5dd5c63f8a5ff2404a3b5e0e1808a3cd6213d3aaaa909cc5d68f14"
     },
     "https://developer.apple.com/tutorials/data/documentation/addressbook/abpeoplepickerview.json": {
-      "etag": "\"11471-65d55dfbc8513-df\"",
+      "etag": "\"10ebf-65d759e430879-df\"",
       "file_path": "documentation/AddressBook/abpeoplepickerview.md",
-      "hash": "0134c1a0a55f5cbf28a1f3c7ed1140d74ef3dbe5f60ddb9c23d656f8b61ad575"
+      "hash": "ebb37c83b2198b5f307afe11cd63a9a62f7c1efc0d72731e93f4cd42597415e8"
     },
     "https://developer.apple.com/tutorials/data/documentation/addressbook/abpeoplepickerview/accessoryview.json": {
       "etag": "\"1ef3-65d55dfbc8513-df\"",

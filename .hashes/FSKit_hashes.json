@@ -841,7 +841,7 @@
       "hash": "027949c92dce4924c0cfb8b3477c8ca64cdde5aa68a930488ab2befd5c3f57c2"
     },
     "https://developer.apple.com/documentation/fskit/fsfilename/namewithdata:": {
-      "etag": "\"2b10-65d55e228b06a-df\"",
+      "etag": "\"2b10-65d55e228b06a\"",
       "file_path": "documentation/FSKit/fsfilename/namewithdata_.md",
       "hash": "79dc48dac2d4f8a9ffbc006eb404445e86fa575ee97295cd3345bd5b93c40ed5"
     },
@@ -3850,7 +3850,7 @@
       "hash": "027949c92dce4924c0cfb8b3477c8ca64cdde5aa68a930488ab2befd5c3f57c2"
     },
     "https://developer.apple.com/tutorials/data/documentation/fskit/fsfilename/namewithdata:.json": {
-      "etag": "\"2b10-65d55e228b06a-df\"",
+      "etag": "\"2b10-65d55e228b06a\"",
       "file_path": "documentation/FSKit/fsfilename/namewithdata_.md",
       "hash": "79dc48dac2d4f8a9ffbc006eb404445e86fa575ee97295cd3345bd5b93c40ed5"
     },
