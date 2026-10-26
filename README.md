@@ -77,6 +77,8 @@ This project provides a complete, searchable mirror of Apple's documentation in 
 
 - **400+ frameworks** - SwiftUI, UIKit, Metal, ARKit, Core ML, and more
 - **Nested modules** - Intents, Photos, simd, Apple News Format and the other modules Apple nests under an umbrella framework, each in its own folder
+- **Objective-C and C APIs** - the pages Apple lists only in a framework's Objective-C view (IOKit, Core Services, Application Services, Security and ~190 more), plus default implementations
+- **Deprecation markers** - deprecated APIs are marked in results with what to use instead, and rank below current APIs when only their deprecation note matches
 - **Human Interface Guidelines** - Apple's design documentation for all platforms
 - **Swift Language Guide** - The Swift Programming Language book, C++ Interop
 - **docs.swift.org** - the Swift 6 migration guide, Swift Package Manager and PackagePlugin, compiler diagnostics, Embedded Swift, Wasm, Android and Linux guides, swiftly, the VS Code extension, swift-java, C++ interop (Cxx, CxxStdlib), DocC and the API Design Guidelines

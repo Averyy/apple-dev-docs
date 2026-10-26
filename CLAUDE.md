@@ -162,8 +162,11 @@ uv pip install -r requirements.txt -r requirements-scrape.txt
 ## Core Commands
 
 ```bash
-# Scrape Apple framework docs
+# Scrape Apple framework docs and the DocC sites (docs.swift.org, the SPI packages)
 python scrape.py --all --yes
+
+# Only some DocC sites (names in scraper/site.py: swift-org, spi-carekit, spi-swift-log, ...)
+python scrape.py --sites swift-org spi-carekit --yes
 
 # Scrape Swift language docs (from GitHub)
 python scripts/scrape_swift_docs.py
@@ -276,13 +279,16 @@ docker compose -f docker-compose.local.yml down -v  # -v removes volumes
 
 ```
 apple-dev-docs/
-├── scrape.py                      # Apple framework documentation scraper
+├── scrape.py                      # Apple frameworks + the DocC sites (docs.swift.org, SPI packages) scraper
+├── scraper/site.py, scraper/sink.py  # DocCSite configs; Sink/SinkRegistry route pages to their docs dir (modules, sites)
 ├── documentation/                 # Scraped markdown files
 │   ├── HIG/                      # Human Interface Guidelines (design docs)
 │   ├── Swift-Book/               # Swift language docs (from GitHub)
 │   ├── MLX/, MLX-Swift/, coremltools/  # MLX & CoreML Tools docs
 │   ├── apple-fm-sdk/, container/, sourcekit-lsp/, swift-format/, game-porting-toolkit/  # other Apple Sphinx/GitHub docs
-│   └── App-Store/                # App Store Review Guidelines and privacy pages
+│   ├── App-Store/                # App Store Review Guidelines and privacy pages
+│   ├── Swift-Org/<Root>/         # docs.swift.org DocC site (migration guide, SwiftPM, Embedded Swift, DocC…)
+│   └── SPI/<package>/<Module>/   # Swift Package Index packages (CareKit, MLX Swift, swift-log, …)
 ├── scripts/
 │   ├── index_to_meilisearch.py   # Indexer
 │   ├── scrape_swift_docs.py      # Swift language docs scraper
