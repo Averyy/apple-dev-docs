@@ -56,7 +56,7 @@ def page(sections: Optional[List[Dict[str, Any]]] = None, **top: Any) -> Dict[st
 
 
 def render(scraper: AppleJSONDocumentationScraper, json_page: Dict[str, Any], url: str = URL) -> str:
-    return scraper.markdown_converter.convert_page(scraper._extract_from_json(json_page, url))
+    return scraper.markdown_converter.convert_page(scraper._extract_from_json(scraper.sink, json_page, url))
 
 
 def content(*blocks: Dict[str, Any]) -> Dict[str, Any]:

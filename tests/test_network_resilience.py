@@ -33,7 +33,6 @@ class TestETagIntegration:
         self.hash_manager = HashManager(hash_file)
         
         self.scraper = AppleJSONDocumentationScraper("testframework")
-        self.scraper.hash_manager = self.hash_manager
     
     def teardown_method(self):
         """Clean up test environment"""

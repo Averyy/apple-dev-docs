@@ -10,6 +10,7 @@ from typing import Any, ClassVar, Dict, Final, Optional, Tuple, Union
 import httpx
 
 from scraper.config import Config
+from scraper.sink import Sink
 from scraper.utils.hash_manager import HashManager
 from scraper.utils.logger import get_logger
 from scraper.utils.rate_limiter import AdaptiveRateLimiter
@@ -77,16 +78,8 @@ class BaseAppleScraper(ABC):
         self.framework_name = framework_name
         self.base_url = base_url or f"{Config.DOCUMENTATION_URL}/{framework_id}"
         
-        # Set up paths - use framework_name for proper case in directory.
-        # The output dir is created lazily on the first file write, so a
-        # framework that produces no file (e.g. its root returns 404) leaves
-        # no empty dir behind.
-        self.output_dir = Config.get_framework_output_dir(framework_id, framework_name)
-        
-        # Initialize components - use framework_name for proper case in hash file
-        self.hash_manager = HashManager(
-            Config.get_hash_file(framework_id, framework_name), self.output_dir, render_version=self.RENDER_VERSION
-        )
+        # Initialize components. The framework's docs dir and hash file are
+        # its primary sink's, which the subclass sets up (hash_manager)
         self.rate_limiter = AdaptiveRateLimiter(initial_delay=Config.RATE_LIMIT_DELAY)
         self.session: Optional[httpx.AsyncClient] = None
         
@@ -106,6 +99,11 @@ class BaseAppleScraper(ABC):
             base_url=self.base_url
         )
     
+    @property
+    @abstractmethod
+    def hash_manager(self) -> HashManager:
+        """The framework's own hash file (its primary sink's): saved on exit."""
+
     @staticmethod
     def _canonical_framework_id(framework_id: str) -> str:
         """Reconcile framework id casing with any existing hash file.
@@ -163,7 +161,9 @@ class BaseAppleScraper(ABC):
         if not self.hash_manager.save() and exc_type is None:
             raise OSError(f"failed to save hash file {self.hash_manager.cache_file}")
     
-    async def fetch_page_with_etag(self, url: str, use_etag: bool = True) -> FetchResult:
+    async def fetch_page_with_etag(
+        self, url: str, use_etag: bool = True, hash_manager: Optional[HashManager] = None
+    ) -> FetchResult:
         """Fetch a page with ETag support for efficient caching.
         
         Never writes the URL's hash entry: callers decide what a failure
@@ -172,6 +172,8 @@ class BaseAppleScraper(ABC):
         Args:
             url: URL to fetch
             use_etag: Whether to use ETag for conditional requests
+            hash_manager: The hash file whose stored ETag is sent (the
+                page's sink's); the framework's own by default
             
         Returns:
             Tuple of (content, etag) on success, NOT_MODIFIED on 304 Not
@@ -186,7 +188,7 @@ class BaseAppleScraper(ABC):
         # Prepare headers with ETag if available
         headers = {}
         if use_etag:
-            stored_etag = self.hash_manager.get_etag(url)
+            stored_etag = (hash_manager if hash_manager is not None else self.hash_manager).get_etag(url)
             if stored_etag:
                 headers["If-None-Match"] = stored_etag
         
@@ -282,10 +284,11 @@ class BaseAppleScraper(ABC):
         return FetchFailed(status=status, error=str(last_error), transient=True)
     
     @abstractmethod
-    async def save_page_data(self, url: str, data: Dict[str, Any]) -> bool:
+    async def save_page_data(self, sink: Sink, url: str, data: Dict[str, Any]) -> bool:
         """Save extracted data to disk.
         
         Args:
+            sink: The page's sink
             url: Source URL
             data: Extracted data
 

@@ -8,13 +8,15 @@ import time
 from collections import Counter
 from dataclasses import dataclass, field
 from pathlib import Path
-from typing import Any, Deque, Dict, Final, List, Literal, Mapping, Optional, Set, Tuple, Union
+from typing import Any, Deque, Dict, Final, List, Literal, Optional, Set, Tuple, Union
 from urllib.parse import urlparse
 
 from scraper.base import NOT_MODIFIED, BaseAppleScraper, FetchFailed
 from scraper.config import Config
+from scraper.sink import Sink, SinkRegistry
+from scraper.site import APPLE
 from scraper.utils.assets import hosting_root, variant_url
-from scraper.utils.hash_manager import same_name_any_case, write_text_atomic
+from scraper.utils.hash_manager import HashManager, same_name_any_case, write_text_atomic
 from scraper.utils.links import doc_link, link_base
 from scraper.utils.logger import get_logger
 from scraper.utils.markdown_converter import AppleDocMarkdownConverter, join_blocks, labeled, quote_blocks
@@ -267,8 +269,9 @@ class FrameworkOutcome:
 class AppleJSONDocumentationScraper(BaseAppleScraper):
     """Scraper that uses Apple's JSON data endpoints instead of HTML pages."""
     
-    # Base URL for JSON data
-    JSON_BASE_URL = "https://developer.apple.com/tutorials/data/documentation"
+    # Base URL for JSON data: Apple's (site.APPLE), as the scripts that read
+    # Apple hash files use it
+    JSON_BASE_URL = APPLE.json_base
     # Root-relative image and video URLs ("/images/…") are served under it
     ASSET_ROOT = hosting_root(JSON_BASE_URL)
     # The converter's output version (BaseAppleScraper.RENDER_VERSION): bump
@@ -278,27 +281,30 @@ class AppleJSONDocumentationScraper(BaseAppleScraper):
     RENDER_VERSION = 1
     
     def __init__(self, framework_id: str, framework_name: Optional[str] = None, 
-                 include_cross_refs: bool = False, known_dirs: Optional[Mapping[str, str]] = None) -> None:
+                 include_cross_refs: bool = False, sinks: Optional[SinkRegistry] = None) -> None:
         """Initialize JSON-based scraper.
         
         Args:
             framework_id: Framework identifier (e.g., 'swiftui', 'uikit')
             framework_name: Human-readable name (defaults to framework_id)
             include_cross_refs: Whether to include cross-framework references
-            known_dirs: The docs dirs whose pages are linked locally,
-                {name.lower(): name}: the Apple framework dirs with a hash
-                file (naming.dirmap) and the run's frameworks. This one is
-                always known; any other framework's pages get their Apple URL
+            sinks: The run's sinks, shared by its framework jobs; they
+                hold the docs dirs linked locally (SinkRegistry.known_dirs).
+                A scraper on its own has its own, which knows no other dir
         """
         super().__init__(
             framework_id=framework_id,
             framework_name=framework_name or framework_id.replace('-', ' ').title()
         )
-        self.known_dirs: Dict[str, str] = {**(known_dirs or {}), self.framework_id.lower(): self.framework_id}
-        self.markdown_converter = AppleDocMarkdownConverter(self.output_dir, self.known_dirs)
-        # The page being converted (_extract_from_json): its links are relative to its file
+        # The framework's DocC site: every URL the scraper builds comes from it
+        self.site = APPLE
+        self.sinks = sinks if sinks is not None else SinkRegistry()
+        # The primary sink: the framework's own docs dir and hash file
+        self.sink = self.sinks.get(self.site, self.framework_id, self.framework_name, self.RENDER_VERSION)
+        # The page being converted (_extract_from_json) and its sink: its
+        # links are relative to its file
         self._current_scraping_url = ''
-        self.processed_urls: Set[str] = set()
+        self._current_sink = self.sink
         self.include_cross_refs = include_cross_refs
         self.cross_framework_refs: Dict[str, Set[str]] = {}  # Track cross-framework references
         # JSON the converter doesn't know, (what, name) -> count, logged at the end
@@ -306,29 +312,32 @@ class AppleJSONDocumentationScraper(BaseAppleScraper):
         self._unknown_examples: Dict[Tuple[str, str], str] = {}  # (what, name) -> a page's URL
 
         # Failure policy state for this run, applied once by scrape_framework
-        self.root_json_url = f"{self.JSON_BASE_URL}/{self.framework_id}.json"
+        # (the pages' own state is their sink's)
+        self.root_json_url = f"{self.site.json_prefix}{self.framework_id}.json"
         self.outcome = FrameworkOutcome(framework_id=self.framework_id)
-        self._fetch_failures: Dict[str, PageFetchFailure] = {}  # JSON URL -> D8 failure
-        self._fetch_ok: Set[str] = set()  # a 200, or a 304 whose discovery refetch succeeded
-        self._gone: Set[str] = set()  # answered 404/410: Apple removed the page
-        self._local_errors: Dict[str, str] = {}  # JSON URL -> convert/save error
-        self._saved_ok: Set[str] = set()  # pages processed without a local error
         self._root_ok = False  # the root answered 200 or 304
         self._root_gone = False  # the root answered 404/410
-        # Previously good pages, the storm threshold's base when a run's
-        # failures cut discovery short
-        self._known_pages = sum(
-            1 for url, entry in self.hash_manager.hashes.items()
-            if url.startswith(self.JSON_BASE_URL) and entry.get('file_path')
-        )
-        # The write-time tripwire's map, seeded on first use (_path_owners)
-        self._path_owner_map: Optional[Dict[str, str]] = None
         if self.hash_manager.load_error is not None:
             # The hash file exists but loaded nothing, so this run can't tell
             # the pages we have from new ones. This run's save replaces the
             # file, so the block lasts one run.
             self.outcome.block("hash_load_failed", str(self.hash_manager.cache_file))
     
+    @property
+    def hash_manager(self) -> HashManager:
+        """The framework's own hash file (its primary sink's)."""
+        return self.sink.hash_manager
+
+    @property
+    def output_dir(self) -> Path:
+        """The framework's own docs dir (its primary sink's)."""
+        return self.sink.output_dir
+
+    @property
+    def markdown_converter(self) -> AppleDocMarkdownConverter:
+        """The converter of the framework's own pages (its primary sink's)."""
+        return self.sink.markdown_converter
+
     def _convert_doc_url_to_json_url(self, doc_url: str) -> str:
         """Convert a documentation URL to its JSON data URL.
         
@@ -349,7 +358,7 @@ class AppleJSONDocumentationScraper(BaseAppleScraper):
         if not path.endswith('.json'):
             path += '.json'
         
-        return f"{self.JSON_BASE_URL}/{path}"
+        return f"{self.site.json_prefix}{path}"
     
     def _convert_json_url_to_doc_url(self, json_url: str) -> str:
         """Convert a JSON data URL back to documentation URL.
@@ -361,13 +370,13 @@ class AppleJSONDocumentationScraper(BaseAppleScraper):
             Documentation URL
         """
         # Extract path from JSON URL
-        path = json_url.replace(self.JSON_BASE_URL + '/', '')
+        path = json_url.replace(self.site.json_prefix, '')
         
         # Remove .json extension
         if path.endswith('.json'):
             path = path[:-5]
         
-        return f"https://developer.apple.com/documentation/{path}"
+        return self.site.doc_url(path)
     
     async def scrape_framework(self) -> Dict[str, Any]:
         """Override base scrape_framework to use streaming approach."""
@@ -385,8 +394,8 @@ class AppleJSONDocumentationScraper(BaseAppleScraper):
             )
 
         await self.discover_and_scrape_streaming()
-        self._apply_failure_policy()
-        self._store_render_version()
+        self._apply_failure_policy(self.sink)
+        self._store_render_version(self.sink)
         
         self.stats["end_time"] = time.time()
         self.stats["duration"] = self.stats["end_time"] - self.stats["start_time"]
@@ -413,8 +422,8 @@ class AppleJSONDocumentationScraper(BaseAppleScraper):
         framework_json_url = self.root_json_url
         
         # Scrape the main framework page first
-        main_doc_url = f"https://developer.apple.com/documentation/{self.framework_id}"
-        await self._scrape_and_save_url(main_doc_url)
+        main_doc_url = self.site.doc_url(self.framework_id)
+        await self._scrape_and_save_url(self.sink, main_doc_url)
         
         # Use iterative approach instead of recursion to avoid stack overflow
         try:
@@ -429,10 +438,10 @@ class AppleJSONDocumentationScraper(BaseAppleScraper):
                 pages_failed=self.stats['pages_failed']
             )
         
-    async def _scrape_and_save_url(self, url: str) -> bool:
+    async def _scrape_and_save_url(self, sink: Sink, url: str) -> bool:
         """Scrape a single URL and save it immediately (via scrape_page)."""
         try:
-            return await self.scrape_page(url) is not None
+            return await self.scrape_page(sink, url) is not None
         except Exception as e:
             # Raised outside the page's own convert/save step: block, don't count
             logger.error("failed_to_scrape_url", url=url, error=str(e))
@@ -456,8 +465,9 @@ class AppleJSONDocumentationScraper(BaseAppleScraper):
         
         # Worker pool: process up to INTRA_FRAMEWORK_CONCURRENCY pages of this
         # framework at once (see todo-concurrency.md). asyncio is single-threaded,
-        # so shared state (queue, processed_urls, stats, hash_manager) is safe;
-        # URLs are marked processed before any await, preventing duplicates.
+        # so shared state (queue, the sinks' processed_urls and hash managers,
+        # stats) is safe; URLs are marked processed before any await,
+        # preventing duplicates.
         in_flight: Set[asyncio.Task] = set()
 
         while url_queue or in_flight:
@@ -465,9 +475,11 @@ class AppleJSONDocumentationScraper(BaseAppleScraper):
             while url_queue and len(in_flight) < Config.INTRA_FRAMEWORK_CONCURRENCY:
                 max_queue_size = max(max_queue_size, len(url_queue))
                 json_url = url_queue.popleft()
-                if json_url in self.processed_urls:
+                # The page's sink: the framework's own
+                sink = self.sink
+                if json_url in sink.processed_urls:
                     continue
-                self.processed_urls.add(json_url)
+                sink.processed_urls.add(json_url)
                 processed_count += 1
                 if processed_count % 100 == 0:
                     logger.info(
@@ -477,7 +489,7 @@ class AppleJSONDocumentationScraper(BaseAppleScraper):
                         max_queue_size=max_queue_size,
                     )
                 in_flight.add(asyncio.create_task(
-                    self._process_queued_url(json_url, url_queue)
+                    self._process_queued_url(sink, json_url, url_queue)
                 ))
 
             if not in_flight:
@@ -497,14 +509,21 @@ class AppleJSONDocumentationScraper(BaseAppleScraper):
             framework=self.framework_name,
         )
 
-    async def _process_queued_url(self, json_url: str, url_queue: Deque[str]) -> None:
-        """Process a single discovered URL: fetch, enqueue children, save if changed."""
+    async def _process_queued_url(self, sink: Sink, json_url: str, url_queue: Deque[str]) -> None:
+        """Process a single discovered URL: fetch, enqueue children, save if changed.
+
+        Args:
+            sink: The page's sink
+            json_url: The page's JSON URL
+            url_queue: The discovery queue its links go to
+        """
+        hm = sink.hash_manager
         try:
             # OPTIMIZED: Fetch JSON with ETag support for discovery
-            result = await self.fetch_page_with_etag(json_url, use_etag=True)
+            result = await self.fetch_page_with_etag(json_url, use_etag=True, hash_manager=hm)
             if isinstance(result, FetchFailed):
                 # Never treated as a 304, and never refetched for discovery
-                self._handle_fetch_failure(json_url, result)
+                self._handle_fetch_failure(sink, json_url, result)
                 return
 
             if result is NOT_MODIFIED:
@@ -520,16 +539,16 @@ class AppleJSONDocumentationScraper(BaseAppleScraper):
                 # gave a hashed stem keeps that file (recomputing the path
                 # from its URL would record the other page's file of its
                 # clash). Only an entry without one gets the tripwire's path.
-                if json_url in self.hash_manager.hashes:
-                    if not self.hash_manager.hashes[json_url].get('file_path'):
-                        self.hash_manager.set_file_path(
-                            json_url, self._claim_path(json_url, self._get_organized_file_path(doc_url, {}))
+                if json_url in hm.hashes:
+                    if not hm.hashes[json_url].get('file_path'):
+                        hm.set_file_path(
+                            json_url, self._claim_path(sink, json_url, self._get_organized_file_path(sink, doc_url, {}))
                         )
-                    self.hash_manager.touch(json_url)
+                    hm.touch(json_url)
 
                 # IMPORTANT: Still need to discover child pages!
                 # The main page might be unchanged but children could be new/updated.
-                if json_url in self.hash_manager.hashes:
+                if json_url in hm.hashes:
                     # We've seen this page before - need to rediscover its children
                     # Fetch without ETag to get content for discovery
                     discovery_result = await self.fetch_page_with_etag(json_url, use_etag=False)
@@ -549,10 +568,10 @@ class AppleJSONDocumentationScraper(BaseAppleScraper):
                             new_urls = self._extract_urls_from_json_data(data)
                             self._enqueue(new_urls, url_queue)
                             logger.debug("rediscovered_child_urls", parent=json_url, count=len(new_urls))
-                            self._fetch_ok.add(json_url)
+                            sink.fetch_ok.add(json_url)
                     if isinstance(discovery_result, FetchFailed):
                         # The 304 proved the page live; only its links are missing
-                        self._handle_fetch_failure(json_url, discovery_result, after_304=True)
+                        self._handle_fetch_failure(sink, json_url, discovery_result, after_304=True)
                 return
 
             # Got 200 OK - content is new or changed
@@ -563,9 +582,9 @@ class AppleJSONDocumentationScraper(BaseAppleScraper):
                 data = json.loads(response_text)
             except json.JSONDecodeError:
                 logger.warning("failed_to_parse_json", url=json_url)
-                self._handle_fetch_failure(json_url, self._invalid_json_failure())
+                self._handle_fetch_failure(sink, json_url, self._invalid_json_failure())
                 return
-            self._fetch_ok.add(json_url)
+            sink.fetch_ok.add(json_url)
             if self._is_root(json_url):
                 self._root_ok = True
 
@@ -581,16 +600,16 @@ class AppleJSONDocumentationScraper(BaseAppleScraper):
             # Only this inner try counts as a local error (the links are queued)
             try:
                 # Check if we need to process based on content hash
-                if self.hash_manager.has_changed(json_url, response_text, etag):
+                if hm.has_changed(json_url, response_text, etag):
                     # Extract and save page data
-                    page_data = self._extract_from_json(data, doc_url)
+                    page_data = self._extract_from_json(sink, data, doc_url)
                     if page_data:
                         # Calculate file path for hash updates
-                        file_path = self._get_organized_file_path(doc_url, page_data)
+                        file_path = self._get_organized_file_path(sink, doc_url, page_data)
 
                         # Write the file first, then both hash keys
                         saved = await self._save_and_record(
-                            json_url, doc_url, page_data, file_path, response_text, etag
+                            sink, json_url, doc_url, page_data, file_path, response_text, etag
                         )
                 else:
                     # Content hasn't changed according to hash
@@ -600,22 +619,22 @@ class AppleJSONDocumentationScraper(BaseAppleScraper):
                     # Still need to update hash with file path for orphan detection.
                     # Reuse the stored file path, as the 304 branch does; compute
                     # one only when none is stored, and then write the file first.
-                    stored_path = self.hash_manager.hashes[json_url].get('file_path')
+                    stored_path = hm.hashes[json_url].get('file_path')
                     if stored_path:
                         file_path = Path(stored_path)
                         # Touch both keys and record the new etag
-                        self.hash_manager.update_hash(json_url, response_text, etag, file_path)
-                        self.hash_manager.update_hash(doc_url, response_text, etag, file_path)
+                        hm.update_hash(json_url, response_text, etag, file_path)
+                        hm.update_hash(doc_url, response_text, etag, file_path)
                     else:
-                        page_data = self._extract_from_json(data, doc_url)
-                        file_path = self._get_organized_file_path(doc_url, page_data)
+                        page_data = self._extract_from_json(sink, data, doc_url)
+                        file_path = self._get_organized_file_path(sink, doc_url, page_data)
                         await self._save_and_record(
-                            json_url, doc_url, page_data, file_path, response_text, etag
+                            sink, json_url, doc_url, page_data, file_path, response_text, etag
                         )
             except Exception as e:
-                self._handle_local_error(json_url, e, file_path)
+                self._handle_local_error(sink, json_url, e, file_path)
                 return
-            self._saved_ok.add(json_url)
+            sink.saved_ok.add(json_url)
 
             if saved:
                 self.stats['pages_scraped'] += 1
@@ -636,9 +655,9 @@ class AppleJSONDocumentationScraper(BaseAppleScraper):
             self.outcome.block("exception", json_url)
 
     def _enqueue(self, urls: List[str], url_queue: Deque[str]) -> None:
-        """Queue the URLs this run hasn't processed yet."""
+        """Queue the URLs this run hasn't processed yet (in the framework's own sink)."""
         for new_url in urls:
-            if new_url not in self.processed_urls:
+            if new_url not in self.sink.processed_urls:
                 url_queue.append(new_url)
 
     def _is_root(self, json_url: str) -> bool:
@@ -652,6 +671,7 @@ class AppleJSONDocumentationScraper(BaseAppleScraper):
 
     async def _save_and_record(
         self,
+        sink: Sink,
         json_url: str,
         doc_url: str,
         page_data: Dict[str, Any],
@@ -668,55 +688,55 @@ class AppleJSONDocumentationScraper(BaseAppleScraper):
         elsewhere loses its old file (_remove_moved_clash_file).
 
         Args:
+            sink: The page's sink
             file_path: The page's path (_get_organized_file_path)
 
         Returns:
             True if the file was written. A file that is never written (an
             unsafe path) gets an error entry instead, so no key records it.
         """
-        target = self._tripwire_path(json_url, file_path)
+        target = self._tripwire_path(sink, json_url, file_path)
         if target != file_path:
             logger.error(
                 "filename_clash",
                 url=json_url,
                 path=str(file_path),
-                other_url=self._path_owners.get(self._path_key(file_path)),
+                other_url=self._path_owners(sink).get(self._path_key(file_path)),
                 written_to=str(target),
             )
             if json_url not in self.outcome.filename_clashes:
                 self.outcome.filename_clashes.append(json_url)
-        if not await self.save_page_data(doc_url, page_data, target):
-            self.hash_manager.mark_error(json_url, "unsafe file path")
+        if not await self.save_page_data(sink, doc_url, page_data, target):
+            sink.hash_manager.mark_error(json_url, "unsafe file path")
             return False
-        self._remove_moved_clash_file(json_url, target)
-        self.hash_manager.update_hash(json_url, content, etag, target)
-        self.hash_manager.update_hash(doc_url, content, etag, target)
-        self._path_owners[self._path_key(target)] = json_url.lower()
+        self._remove_moved_clash_file(sink, json_url, target)
+        sink.hash_manager.update_hash(json_url, content, etag, target)
+        sink.hash_manager.update_hash(doc_url, content, etag, target)
+        self._path_owners(sink)[self._path_key(target)] = json_url.lower()
         return True
 
-    @property
-    def _path_owners(self) -> Dict[str, str]:
-        """The write-time tripwire's map (_tripwire_path): the page each file is.
+    def _path_owners(self, sink: Sink) -> Dict[str, str]:
+        """A sink's write-time tripwire map (_tripwire_path): the page each file is.
 
         Lowercased path -> lowercased JSON URL (URL space is
         case-insensitive). Seeded on first use from the live JSON-URL keys'
         recorded files (a page answering 304 keeps its file), then every file
         this run records.
         """
-        if self._path_owner_map is None:
-            self._path_owner_map = {
+        if sink.path_owner_map is None:
+            sink.path_owner_map = {
                 self._path_key(entry['file_path']): url.lower()
-                for url, entry in self.hash_manager.hashes.items()
-                if url.startswith(self.JSON_BASE_URL + '/') and self._is_previously_good(entry)
+                for url, entry in sink.hash_manager.hashes.items()
+                if url.startswith(sink.site.json_prefix) and self._is_previously_good(entry)
             }
-        return self._path_owner_map
+        return sink.path_owner_map
 
     @staticmethod
     def _path_key(file_path: Union[str, Path]) -> str:
         """A file's key in the tripwire's map: its path, lowercased."""
         return str(Path(file_path)).lower()
 
-    def _tripwire_path(self, json_url: str, file_path: Path) -> Path:
+    def _tripwire_path(self, sink: Sink, json_url: str, file_path: Path) -> Path:
         """Where the page's file goes: file_path, unless it is another page's file.
 
         Two pages whose URLs give the same file name (the naming isn't
@@ -726,28 +746,28 @@ class AppleJSONDocumentationScraper(BaseAppleScraper):
         children keep their folder). Its old name comes back once the other
         page is gone (its error entry seeds no file).
         """
-        owner = self._path_owners.get(self._path_key(file_path))
+        owner = self._path_owners(sink).get(self._path_key(file_path))
         if owner is None or owner == json_url.lower():
             return file_path
         return file_path.with_name(f"{file_path.stem}{clash_suffix(json_url)}.md")
 
-    def _claim_path(self, json_url: str, file_path: Path) -> Path:
+    def _claim_path(self, sink: Sink, json_url: str, file_path: Path) -> Path:
         """The tripwire's path for a page whose file is recorded without a write; now the page's."""
-        target = self._tripwire_path(json_url, file_path)
-        self._path_owners[self._path_key(target)] = json_url.lower()
+        target = self._tripwire_path(sink, json_url, file_path)
+        self._path_owners(sink)[self._path_key(target)] = json_url.lower()
         return target
 
-    def _remove_moved_clash_file(self, json_url: str, file_path: Path) -> None:
+    def _remove_moved_clash_file(self, sink: Sink, json_url: str, file_path: Path) -> None:
         """Delete the page's hashed-stem file once its file was written at file_path instead.
 
         Its keys are about to record file_path, so no entry would record the
         old file, and no cleanup would ever remove it. Only a recorded file
-        named with this page's clash_suffix, inside the framework dir.
+        named with this page's clash_suffix, inside the sink's dir.
         """
         suffix = clash_suffix(json_url)
-        output_root = self.output_dir.resolve()
+        output_root = sink.output_dir.resolve()
         recorded = {
-            (self.hash_manager.hashes.get(key) or {}).get('file_path')
+            (sink.hash_manager.hashes.get(key) or {}).get('file_path')
             for key in (json_url, self._convert_json_url_to_doc_url(json_url))
         }
         for old_path in sorted(path for path in recorded if path):
@@ -758,7 +778,9 @@ class AppleJSONDocumentationScraper(BaseAppleScraper):
                 old.unlink(missing_ok=True)
                 logger.info("clash_file_removed", url=json_url, file=old_path, now=str(file_path))
 
-    def _handle_fetch_failure(self, json_url: str, failure: FetchFailed, after_304: bool = False) -> None:
+    def _handle_fetch_failure(
+        self, sink: Sink, json_url: str, failure: FetchFailed, after_304: bool = False
+    ) -> None:
         """Apply the failure policy to a fetch that gave no usable page.
 
         - 404/410: Apple removed the page. Its JSON-URL key becomes an error
@@ -780,16 +802,17 @@ class AppleJSONDocumentationScraper(BaseAppleScraper):
         Counting is done once per run by _apply_failure_policy.
 
         Args:
+            sink: The page's sink
             json_url: The page's JSON URL
             failure: The failed fetch
             after_304: The failure is the discovery refetch after a 304
         """
-        hm = self.hash_manager
+        hm = sink.hash_manager
         if failure.status in GONE_STATUSES:
             if not (self._is_root(json_url) and self._root_ok):
                 hm.mark_error(json_url, failure.error)
                 logger.info("page_gone", url=json_url, status=failure.status)
-                self._gone.add(json_url)
+                sink.gone.add(json_url)
                 if self._is_root(json_url):
                     self._root_gone = True
                 return
@@ -802,7 +825,7 @@ class AppleJSONDocumentationScraper(BaseAppleScraper):
         elif self._is_previously_good(hm.hashes.get(json_url)):
             hm.touch(json_url)
             kind = "previously_good"
-        elif self._kept_unrecorded_file(json_url):
+        elif self._kept_unrecorded_file(sink, json_url):
             kind = "previously_good"
         else:
             hm.mark_error(json_url, failure.error)
@@ -821,10 +844,11 @@ class AppleJSONDocumentationScraper(BaseAppleScraper):
         logger.warning(
             "page_fetch_failed", url=json_url, kind=kind, status=failure.status, error=failure.error
         )
-        self._fetch_failures[json_url] = PageFetchFailure(kind, failure)
+        sink.fetch_failures[json_url] = PageFetchFailure(kind, failure)
 
     def _handle_local_error(
         self,
+        sink: Sink,
         json_url: str,
         error: Exception,
         file_path: Optional[Path] = None,
@@ -843,19 +867,20 @@ class AppleJSONDocumentationScraper(BaseAppleScraper):
         counts toward D8; counted once per run by _apply_failure_policy.
 
         Args:
+            sink: The page's sink
             json_url: The page's JSON URL
             error: The convert or save error
             file_path: The path this run computed for the page's file, if it got that far
         """
         logger.error("page_save_failed", url=json_url, error=str(error))
-        hm = self.hash_manager
+        hm = sink.hash_manager
         if self._is_previously_good(hm.hashes.get(json_url)):
             hm.touch(json_url)
-        elif not self._keep_file(json_url, self._page_file_path(json_url, file_path)):
+        elif not self._keep_file(sink, json_url, self._page_file_path(sink, json_url, file_path)):
             hm.mark_error(json_url, f"local error: {error}")
-        self._local_errors[json_url] = str(error)
+        sink.local_errors[json_url] = str(error)
 
-    def _page_file_path(self, json_url: str, file_path: Optional[Path]) -> Optional[Path]:
+    def _page_file_path(self, sink: Sink, json_url: str, file_path: Optional[Path]) -> Optional[Path]:
         """Where the file of a page without a live JSON-URL entry would be.
 
         Its doc-URL key's recorded path if that key is live; else the path
@@ -864,29 +889,29 @@ class AppleJSONDocumentationScraper(BaseAppleScraper):
         (never another page's file, see _tripwire_path). None if that fails.
         """
         doc_url = self._convert_json_url_to_doc_url(json_url)
-        doc_entry = self.hash_manager.hashes.get(doc_url)
+        doc_entry = sink.hash_manager.hashes.get(doc_url)
         if doc_entry is not None and self._is_previously_good(doc_entry):
             return Path(doc_entry['file_path'])
         try:
             if file_path is None:
-                file_path = self._get_organized_file_path(doc_url, {})
-            return self._tripwire_path(json_url, file_path)
+                file_path = self._get_organized_file_path(sink, doc_url, {})
+            return self._tripwire_path(sink, json_url, file_path)
         except Exception as e:
             logger.warning("page_file_path_failed", url=json_url, error=str(e))
             return None
 
-    def _keep_file(self, json_url: str, file_path: Optional[Path]) -> bool:
+    def _keep_file(self, sink: Sink, json_url: str, file_path: Optional[Path]) -> bool:
         """HashManager.keep_file for a page's file found on disk; the file is then the page's.
 
         Returns:
             True if the file was found and is now recorded
         """
-        if file_path is None or not self.hash_manager.keep_file(json_url, file_path):
+        if file_path is None or not sink.hash_manager.keep_file(json_url, file_path):
             return False
-        self._path_owners[self._path_key(file_path)] = json_url.lower()
+        self._path_owners(sink)[self._path_key(file_path)] = json_url.lower()
         return True
 
-    def _kept_unrecorded_file(self, json_url: str) -> bool:
+    def _kept_unrecorded_file(self, sink: Sink, json_url: str) -> bool:
         """Keep a failed page that no entry records but whose file is on disk.
 
         The file shows we have the page; only its entry was lost, by a
@@ -905,18 +930,19 @@ class AppleJSONDocumentationScraper(BaseAppleScraper):
         Returns:
             True if the file was found and is now recorded
         """
-        if json_url in self.hash_manager.hashes:
+        if json_url in sink.hash_manager.hashes:
             return False
-        return self._keep_file(json_url, self._page_file_path(json_url, None))
+        return self._keep_file(sink, json_url, self._page_file_path(sink, json_url, None))
 
-    def _apply_failure_policy(self) -> None:
+    def _apply_failure_policy(self, sink: Sink) -> None:
         """Count this run's failures once, and decide whether cleanup is blocked.
 
-        Runs once per framework run, after discovery. Updates the per-entry
-        consecutive_failures / consecutive_local_errors counters and the
-        root_gone_runs / failure_storm_runs metadata, and fills self.outcome.
+        Runs once per framework run, after discovery, for its primary sink.
+        Updates the per-entry consecutive_failures / consecutive_local_errors
+        counters and the root_gone_runs / failure_storm_runs metadata of the
+        sink's hash file, and fills self.outcome.
         """
-        hm = self.hash_manager
+        hm = sink.hash_manager
         outcome = self.outcome
 
         # Root: a 404/410 counts toward root_gone_runs once per run, any 200/304 resets it
@@ -937,10 +963,10 @@ class AppleJSONDocumentationScraper(BaseAppleScraper):
                 logger.warning("root_gone", framework=self.framework_name, root_gone_runs=runs)
 
         # Failure storm: too many fetch failures at once aren't counted
-        pages = max(self._known_pages, len(self.processed_urls))
+        pages = max(sink.known_pages, len(sink.processed_urls))
         limit = max(FAILURE_STORM_MIN, FAILURE_STORM_SHARE * pages)
         counting = True
-        if len(self._fetch_failures) > limit:
+        if len(sink.fetch_failures) > limit:
             storm_runs = int(hm.get_metadata("failure_storm_runs", 0)) + 1
             hm.set_metadata("failure_storm_runs", storm_runs)
             counting = storm_runs >= FAILURE_STORM_RUNS
@@ -948,7 +974,7 @@ class AppleJSONDocumentationScraper(BaseAppleScraper):
             logger.warning(
                 "failure_storm",
                 framework=self.framework_name,
-                failures=len(self._fetch_failures),
+                failures=len(sink.fetch_failures),
                 limit=limit,
                 failure_storm_runs=storm_runs,
                 counting=counting,
@@ -964,14 +990,14 @@ class AppleJSONDocumentationScraper(BaseAppleScraper):
         # resets that count.
         unfetched = {
             url for url, entry in hm.hashes.items()
-            if "consecutive_failures" in entry and url not in self.processed_urls
+            if "consecutive_failures" in entry and url not in sink.processed_urls
         }
-        for url in (self._fetch_ok | self._gone | unfetched) - self._fetch_failures.keys():
+        for url in (sink.fetch_ok | sink.gone | unfetched) - sink.fetch_failures.keys():
             hm.set_counter(url, "consecutive_failures", 0)
-        for url in self._saved_ok - self._local_errors.keys():
+        for url in sink.saved_ok - sink.local_errors.keys():
             hm.set_counter(url, "consecutive_local_errors", 0)
 
-        for url, page_failure in self._fetch_failures.items():
+        for url, page_failure in sink.fetch_failures.items():
             runs = hm.get_counter(url, "consecutive_failures")
             if counting:
                 runs += 1
@@ -996,7 +1022,7 @@ class AppleJSONDocumentationScraper(BaseAppleScraper):
                 hm.mark_error(url, page_failure.failure.error)
                 hm.mark_error(self._convert_json_url_to_doc_url(url), page_failure.failure.error)
 
-        for url, error in self._local_errors.items():
+        for url, error in sink.local_errors.items():
             runs = hm.get_counter(url, "consecutive_local_errors") + 1
             hm.set_counter(url, "consecutive_local_errors", runs)
             if runs < PERSISTENT_FAILURE_RUNS:
@@ -1013,8 +1039,8 @@ class AppleJSONDocumentationScraper(BaseAppleScraper):
                 reasons={reason: len(details) for reason, details in outcome.blocks.items()},
             )
 
-    def _store_render_version(self) -> None:
-        """Store RENDER_VERSION in the hash file's metadata.render after a clean run.
+    def _store_render_version(self, sink: Sink) -> None:
+        """Store RENDER_VERSION in a sink's hash file (metadata.render) after a clean run.
 
         Clean: cleanup isn't skipped (no failure of ours blocked it, nothing
         raised, the root isn't gone) and no page's local error is persistent,
@@ -1034,18 +1060,18 @@ class AppleJSONDocumentationScraper(BaseAppleScraper):
         outcome = self.outcome
         if outcome.skip_cleanup or outcome.persistent_local_errors:
             return
-        if self.hash_manager.stale:
-            not_rendered = self.hash_manager.forget_untouched_renderings()
+        if sink.hash_manager.stale:
+            not_rendered = sink.hash_manager.forget_untouched_renderings()
             logger.info(
                 "render_version_stored",
                 framework=self.framework_name,
                 version=self.RENDER_VERSION,
                 not_rendered=not_rendered,
             )
-        self.hash_manager.mark_rendered()
+        sink.hash_manager.mark_rendered()
 
-    def scan_orphans(self) -> None:
-        """Find this framework's orphan candidates, right after its hash file was saved.
+    def scan_orphans(self, sink: Sink) -> None:
+        """Find the orphan candidates of the framework's own sink, right after its hash file was saved.
 
         Fills self.outcome for the end-of-run cleanup, so neither the scraper
         nor its hash manager has to be kept until then:
@@ -1061,7 +1087,7 @@ class AppleJSONDocumentationScraper(BaseAppleScraper):
         outcome = self.outcome
         if outcome.root_gone_runs:
             return
-        hm = self.hash_manager
+        hm = sink.hash_manager
         if not outcome.blocked and not hm.touched:
             logger.error("framework_zero_touched", framework=self.framework_name, framework_id=self.framework_id)
             outcome.block("zero_touched", self.framework_id)
@@ -1070,7 +1096,7 @@ class AppleJSONDocumentationScraper(BaseAppleScraper):
 
         # The output dir, or that dir in another casing
         framework_dir = next(
-            (path for path in same_name_any_case(self.output_dir) if path.is_dir()), self.output_dir
+            (path for path in same_name_any_case(sink.output_dir) if path.is_dir()), sink.output_dir
         )
         existing = hm.framework_files(framework_dir)
         pending = hm.get_metadata("pending_orphans")
@@ -1166,19 +1192,20 @@ class AppleJSONDocumentationScraper(BaseAppleScraper):
             # Escape path segments starting with dots (e.g. range operators)
             path_lower = self._escape_dot_path_segments(path_lower)
 
-            return f"{self.JSON_BASE_URL}/{path_lower}.json"
+            return f"{self.site.json_prefix}{path_lower}.json"
             
         except Exception as e:
             logger.error(f"Error converting identifier {identifier}: {e}")
             return None
     
-    async def scrape_page(self, url: str) -> Optional[Dict[str, Any]]:
+    async def scrape_page(self, sink: Sink, url: str) -> Optional[Dict[str, Any]]:
         """Fetch the framework root page and save it if it changed.
         
         Writes the file first, then both hash keys. A failed fetch is never
         treated as a 304: it goes through the failure policy.
         
         Args:
+            sink: The page's sink
             url: Documentation URL to scrape
             
         Returns:
@@ -1188,12 +1215,13 @@ class AppleJSONDocumentationScraper(BaseAppleScraper):
         json_url = self._convert_doc_url_to_json_url(url)
         
         # Check if we have an ETag for this JSON URL
-        stored_etag = self.hash_manager.get_etag(json_url)
+        hm = sink.hash_manager
+        stored_etag = hm.get_etag(json_url)
         
         # Fetch JSON data with ETag support
-        result = await self.fetch_page_with_etag(json_url)
+        result = await self.fetch_page_with_etag(json_url, hash_manager=hm)
         if isinstance(result, FetchFailed):
-            self._handle_fetch_failure(json_url, result)
+            self._handle_fetch_failure(sink, json_url, result)
             return None
         if result is NOT_MODIFIED:
             # 304 Not Modified (content unchanged)
@@ -1204,18 +1232,18 @@ class AppleJSONDocumentationScraper(BaseAppleScraper):
                 logger.debug("content_unchanged_via_etag", url=url, json_url=json_url)
                 
                 # Reuse the stored file_path (skip expensive recalculation)
-                existing = self.hash_manager.hashes.get(json_url) or self.hash_manager.hashes.get(url) or {}
-                file_path = Path(existing['file_path']) if existing.get('file_path') else self._get_organized_file_path(url, {})
+                existing = hm.hashes.get(json_url) or hm.hashes.get(url) or {}
+                file_path = Path(existing['file_path']) if existing.get('file_path') else self._get_organized_file_path(sink, url, {})
                 
                 # Touch both URLs' entries, so orphan detection keeps the file,
                 # and record the file on both. Only a missing file_path or a
                 # missing key (created with the stored etag) changes an entry,
                 # so a 304 alone leaves the hash file as it is.
                 for key in (json_url, url):
-                    if key not in self.hash_manager.hashes:
-                        self.hash_manager.hashes[key] = {'etag': stored_etag}
-                    self.hash_manager.touch(key)
-                    self.hash_manager.set_file_path(key, file_path)
+                    if key not in hm.hashes:
+                        hm.hashes[key] = {'etag': stored_etag}
+                    hm.touch(key)
+                    hm.set_file_path(key, file_path)
                 
                 self.stats["pages_skipped"] += 1
             return None
@@ -1226,24 +1254,24 @@ class AppleJSONDocumentationScraper(BaseAppleScraper):
             json_data = json.loads(response_text)
         except json.JSONDecodeError as e:
             logger.error("json_parse_error", url=json_url, error=str(e))
-            self._handle_fetch_failure(json_url, self._invalid_json_failure())
+            self._handle_fetch_failure(sink, json_url, self._invalid_json_failure())
             return None
-        self._fetch_ok.add(json_url)
+        sink.fetch_ok.add(json_url)
         if self._is_root(json_url):
             self._root_ok = True
         
         # Check hash to avoid re-processing unchanged content
-        if not self.hash_manager.has_changed(json_url, response_text, etag) and not self.hash_manager.has_changed(url, response_text, etag):
+        if not hm.has_changed(json_url, response_text, etag) and not hm.has_changed(url, response_text, etag):
             logger.debug("content_unchanged", url=url)
             
             # Content unchanged, but both keys are still touched for orphan detection
             try:
-                page_data = self._extract_from_json(json_data, url)
+                page_data = self._extract_from_json(sink, json_data, url)
                 if page_data:
-                    file_path = self._get_organized_file_path(url, page_data)
+                    file_path = self._get_organized_file_path(sink, url, page_data)
                     # Touch both keys and record the new etag
-                    self.hash_manager.update_hash(json_url, response_text, etag, file_path)
-                    self.hash_manager.update_hash(url, response_text, etag, file_path)
+                    hm.update_hash(json_url, response_text, etag, file_path)
+                    hm.update_hash(url, response_text, etag, file_path)
             except Exception as e:
                 logger.warning("failed_to_touch_unchanged_root", url=url, error=str(e))
             
@@ -1260,7 +1288,7 @@ class AppleJSONDocumentationScraper(BaseAppleScraper):
         # try counts as a local error: the root's links are enqueued when it
         # is processed again as the first queued URL.
         try:
-            data = self._extract_from_json(json_data, url)
+            data = self._extract_from_json(sink, json_data, url)
             
             if not data:
                 logger.warning("no_data_extracted", url=url)
@@ -1268,14 +1296,14 @@ class AppleJSONDocumentationScraper(BaseAppleScraper):
                 return None
                 
             # Calculate file path for hash updates
-            file_path = self._get_organized_file_path(url, data)
+            file_path = self._get_organized_file_path(sink, url, data)
             
             # Write the file first, then both hash keys
-            saved = await self._save_and_record(json_url, url, data, file_path, response_text, etag)
+            saved = await self._save_and_record(sink, json_url, url, data, file_path, response_text, etag)
         except Exception as e:
-            self._handle_local_error(json_url, e)
+            self._handle_local_error(sink, json_url, e)
             return None
-        self._saved_ok.add(json_url)
+        sink.saved_ok.add(json_url)
         if not saved:
             return None
         self.stats["pages_scraped"] += 1
@@ -1286,23 +1314,25 @@ class AppleJSONDocumentationScraper(BaseAppleScraper):
         self.stats["pages_failed"] += 1
         return FetchFailed(status=200, error=INVALID_JSON, transient=True)
     
-    def _extract_from_json(self, json_data: Dict[str, Any], doc_url: str) -> Dict[str, Any]:
+    def _extract_from_json(self, sink: Sink, json_data: Dict[str, Any], doc_url: str) -> Dict[str, Any]:
         """Extract structured data from Apple's JSON format.
         
         Args:
+            sink: The page's sink (its framework, and the dir its links are relative to)
             json_data: Parsed JSON data
             doc_url: Original documentation URL
             
         Returns:
             Extracted data in our format
         """
-        # Store current URL for relative path calculation
+        # Store current URL and sink for relative path calculation
         self._current_scraping_url = doc_url
+        self._current_sink = sink
         
         data: Dict[str, Any] = {
             'source_url': doc_url,
-            'framework': self.framework_name,
-            'framework_id': self.framework_id
+            'framework': sink.framework_name,
+            'framework_id': sink.dir_name
         }
         
         for key in json_data:
@@ -1517,15 +1547,15 @@ class AppleJSONDocumentationScraper(BaseAppleScraper):
                 example=self._unknown_examples.get((what, name), '')
             )
 
-    @staticmethod
-    def _reference_url(url_path: str) -> str:
-        """A reference's URL as linked: Apple's path under https://developer.apple.com,
-        an absolute URL (an external link's) as it is, "" for a reference without one."""
+    def _reference_url(self, url_path: str) -> str:
+        """A reference's URL as linked: the site's root-relative path made
+        absolute (self.site.url), an absolute URL (an external link's) as it
+        is, "" for a reference without one."""
         if not url_path:
             return ''
         if urlparse(url_path).scheme:
             return url_path
-        return f"https://developer.apple.com{url_path}"
+        return self.site.url(url_path)
 
     @staticmethod
     def _is_symbol_reference(ref_data: Dict[str, Any]) -> bool:
@@ -1585,11 +1615,11 @@ class AppleJSONDocumentationScraper(BaseAppleScraper):
                 else:
                     # Fallback for identifiers not in references
                     name = identifier.split('/')[-1] if '/' in identifier else identifier
-                    if identifier.startswith('doc://com.apple.'):
+                    if self.site.is_own_identifier(identifier):
                         parts = identifier.split('/documentation/')
                         if len(parts) == 2:
                             path = parts[1]
-                            url = f"https://developer.apple.com/documentation/{path}"
+                            url = self.site.doc_url(path)
                         else:
                             url = identifier
                     else:
@@ -1739,10 +1769,13 @@ class AppleJSONDocumentationScraper(BaseAppleScraper):
         if not urlparse(url).scheme:
             url = f"{DOCS_ASSETS_URL}{url.lstrip('/')}"
         return {'name': url.rstrip('/').rsplit('/', 1)[-1], 'url': url}
-    async def save_page_data(self, url: str, data: Dict[str, Any], file_path: Optional[Path] = None) -> bool:
+    async def save_page_data(
+        self, sink: Sink, url: str, data: Dict[str, Any], file_path: Optional[Path] = None
+    ) -> bool:
         """Save extracted data as markdown with organized folder structure.
         
         Args:
+            sink: The page's sink
             url: Source URL
             data: Extracted data
             file_path: Optional pre-calculated file path
@@ -1751,17 +1784,17 @@ class AppleJSONDocumentationScraper(BaseAppleScraper):
             True if the file was written, False if its path was unsafe
         """
         # Convert to markdown
-        markdown_content = self.markdown_converter.convert_page(data)
+        markdown_content = sink.markdown_converter.convert_page(data)
         
         # Determine organized file path if not provided
         if file_path is None:
-            file_path = self._get_organized_file_path(url, data)
+            file_path = self._get_organized_file_path(sink, url, data)
 
-        # Containment guard: never write outside the framework output dir
+        # Containment guard: never write outside the sink's output dir
         # (mirrors the MLX scraper's is_safe_path; traversal is neutralized
         # upstream, this is defense in depth at the write sink).
         resolved = file_path.resolve()
-        output_root = self.output_dir.resolve()
+        output_root = sink.output_dir.resolve()
         if resolved != output_root and output_root not in resolved.parents:
             logger.error("unsafe_file_path_skipped", url=url, path=str(file_path))
             return False
@@ -1786,7 +1819,7 @@ class AppleJSONDocumentationScraper(BaseAppleScraper):
         )
         return True
     
-    def _get_organized_file_path(self, url: str, data: Dict[str, Any]) -> Path:
+    def _get_organized_file_path(self, sink: Sink, url: str, data: Dict[str, Any]) -> Path:
         """The page's file: the docs root (Config.OUTPUT_DIR) / naming.page_path.
 
         The path is a function of the URL alone (data isn't read), so the
@@ -1796,33 +1829,34 @@ class AppleJSONDocumentationScraper(BaseAppleScraper):
         space itself is case-insensitive.
 
         Args:
+            sink: The page's sink (its dir names the framework segment)
             url: The page's documentation URL
             data: The page's extracted data (unused)
 
         Returns:
-            The file's path, documentation/<framework_id>/….md by default
+            The file's path, documentation/<dir_name>/….md by default
         """
-        relative = page_path(self.framework_id, url)
+        relative = page_path(sink.dir_name, url)
         if relative is None:
             # Not a page of this framework (never crawled): a file named
-            # after the whole URL in the framework dir
-            logger.warning("failed_to_parse_url_path", url=url, framework_id=self.framework_id)
+            # after the whole URL in the sink's dir
+            logger.warning("failed_to_parse_url_path", url=url, framework_id=sink.dir_name)
             safe_url = url.replace('https://', '').replace('http://', '').replace('/', '-')
-            return self.output_dir / f"{seg_name(safe_url)}.md"
+            return sink.output_dir / f"{seg_name(safe_url)}.md"
         return Config.OUTPUT_DIR / relative
 
     def _convert_apple_url_to_local_path(self, apple_url: str) -> str:
         """The link to a referenced page from the page being converted (self._current_scraping_url).
 
         links.doc_link: the referenced page's file relative to this page's
-        file, when its framework is a known dir (self.known_dirs); else its
-        URL as it is.
+        file in its sink's dir (self._current_sink), when its framework is a
+        known dir (the sink's known_dirs); else its URL as it is.
 
         Args:
             apple_url: The referenced page's URL (_reference_url)
         """
-        base = link_base(self.framework_id, self._current_scraping_url)
-        return doc_link(apple_url, base, self.known_dirs)
+        base = link_base(self._current_sink.dir_name, self._current_scraping_url)
+        return doc_link(apple_url, base, self._current_sink.known_dirs)
     
     def _format_declaration_from_tokens(self, tokens: List[Dict[str, Any]]) -> str:
         """Format declaration tokens with proper Swift formatting.
@@ -1972,10 +2006,9 @@ class AppleJSONDocumentationScraper(BaseAppleScraper):
         
         return ''.join(resolved_parts)
     
-    @staticmethod
-    def _rewrite_doc_literals(text: str) -> str:
-        """A doc://<bundle>/<rest> link written as text, as its web URL:
-        https://developer.apple.com/documentation/<rest without a leading
+    def _rewrite_doc_literals(self, text: str) -> str:
+        """A doc://<bundle>/<rest> link written as text, as its web URL: the
+        site's page (self.site.doc_url) at <rest without a leading
         "documentation" and its slash>. A trailing ".", "," or ";" stays outside."""
         if 'doc://' not in text:
             return text
@@ -1988,7 +2021,7 @@ class AppleJSONDocumentationScraper(BaseAppleScraper):
                 rest = rest[len('documentation'):]
             if rest.startswith('/'):
                 rest = rest[1:]
-            return f"https://developer.apple.com/documentation/{rest}{literal[len(stripped):]}"
+            return f"{self.site.doc_url(rest)}{literal[len(stripped):]}"
 
         return DOC_LITERAL.sub(web_url, text)
 

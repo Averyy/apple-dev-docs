@@ -4,13 +4,15 @@ import os
 from pathlib import Path
 from typing import Optional
 
+from scraper.site import APPLE
+
 
 class Config:
     """Centralized configuration for the scraper."""
     
-    # Base URLs
-    BASE_URL = "https://developer.apple.com"
-    DOCUMENTATION_URL = f"{BASE_URL}/documentation"
+    # Base URLs (developer.apple.com's, site.APPLE)
+    BASE_URL = APPLE.site_url
+    DOCUMENTATION_URL = APPLE.doc_base
     TECHNOLOGIES_URL = f"{DOCUMENTATION_URL}/technologies"
     
     # Rate limiting (optimized for JSON API endpoints)

@@ -16,14 +16,15 @@ import re
 from pathlib import Path
 from typing import Dict, Final, Match, Optional, Set
 
+from scraper.site import APPLE
 from scraper.utils.hash_manager import read_hash_file
 from scraper.utils.logger import get_logger
 
 logger = get_logger(__name__)
 
-# Apple's documentation pages, and their JSON (the hash files' keys)
-DOC_URL_PREFIX: Final = "https://developer.apple.com/documentation/"
-JSON_URL_PREFIX: Final = "https://developer.apple.com/tutorials/data/documentation/"
+# Apple's documentation pages, and their JSON (the hash files' keys): site.APPLE's
+DOC_URL_PREFIX: Final = APPLE.doc_prefix
+JSON_URL_PREFIX: Final = APPLE.json_prefix
 HASH_FILE_SUFFIX: Final = "_hashes.json"
 
 # The longest segment, in UTF-8 bytes with ".md". It leaves room under the

@@ -16,6 +16,7 @@ sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspa
 
 from scraper.config import Config
 from scraper.json_scraper import AppleJSONDocumentationScraper, FrameworkOutcome
+from scraper.sink import SinkRegistry
 from scraper.utils.naming import dirmap
 from framework_list_scraper import AppleFrameworkListScraper
 from cleanup_removed_frameworks import framework_hash_files
@@ -166,8 +167,9 @@ async def scrape_frameworks(framework_list=None, resume_from=None, max_concurren
 
     print(f"\n📊 Will scrape {len(frameworks)} frameworks")
 
-    # Local links reach every framework dir we have and every one this run scrapes
-    link_dirs = known_dirs(frameworks)
+    # The run's sinks. Local links reach every framework dir we have and
+    # every one this run scrapes
+    sinks = SinkRegistry(known_dirs(frameworks))
 
     # Track progress
     total = len(frameworks)
@@ -185,7 +187,7 @@ async def scrape_frameworks(framework_list=None, resume_from=None, max_concurren
                 scraper = AppleJSONDocumentationScraper(
                     framework_id=fw['id'],
                     framework_name=fw['title'],
-                    known_dirs=link_dirs,
+                    sinks=sinks,
                 )
                 outcome = await scrape_single_framework(scraper, fw, index, total, cleanup_orphans)
                 return fw, outcome
@@ -247,7 +249,8 @@ async def scrape_single_framework(scraper, framework, current, total, cleanup_or
     With cleanup_orphans, the outcome also carries the framework's orphan
     candidates, found right after its hash file was saved, so the end-of-run
     cleanup keeps neither the scraper nor its hash manager (every entry of
-    the framework) in memory.
+    the framework) in memory. Either way, the framework's sink then leaves
+    the run's sinks (SinkRegistry.evict).
     """
     try:
         async with scraper:
@@ -262,8 +265,11 @@ async def scrape_single_framework(scraper, framework, current, total, cleanup_or
         # A framework-level exception (or a failed hash save): its cleanup is blocked this run
         scraper.outcome.raised = str(e) or type(e).__name__
 
-    if cleanup_orphans:
-        scraper.scan_orphans()
+    try:
+        if cleanup_orphans:
+            scraper.scan_orphans(scraper.sink)
+    finally:
+        scraper.sinks.evict(scraper.sink)
 
     # Return the outcome (with its stats) for aggregation
     return scraper.outcome

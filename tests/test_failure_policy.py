@@ -138,7 +138,7 @@ class Runs:
         after the framework's save.
         """
         for scraper in scrapers:
-            scraper.scan_orphans()
+            scraper.scan_orphans(scraper.sink)
         return cleanup_orphans_at_end.cleanup_after_scrape([s.outcome for s in scrapers], interactive)
 
 
@@ -148,7 +148,7 @@ def would_delete(scraper: AppleJSONDocumentationScraper) -> Dict[str, List[Path]
     The framework's result as scrape_single_framework computes it right after
     the save, then confirm-then-delete's decision (plan_cleanup).
     """
-    scraper.scan_orphans()
+    scraper.scan_orphans(scraper.sink)
     outcome = scraper.outcome
     if outcome.skip_cleanup or outcome.orphan_scan is None:
         return {}

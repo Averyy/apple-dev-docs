@@ -208,7 +208,7 @@ def load(plan: Plan) -> Dict[str, str]:
                 doc_url=doc_url,
                 keys=its_keys,
                 old=os.path.normpath(manager.hashes[json_url]['file_path']),
-                new=str(scraper._get_organized_file_path(doc_url, {})),
+                new=str(scraper._get_organized_file_path(scraper.sink, doc_url, {})),
             ))
 
     disk = files_on_disk(frameworks, plan)

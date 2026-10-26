@@ -30,6 +30,7 @@ sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..')
 from scraper.base import NOT_MODIFIED, FetchFailed, NotModified
 from scraper.config import Config
 from scraper.json_scraper import AppleJSONDocumentationScraper
+from scraper.sink import Sink
 from scraper.utils.hash_manager import RENDER_KEY
 from scraper.utils.naming import clash_suffix
 
@@ -145,7 +146,7 @@ class Rig:
     def seed_good(self, path: str, body: str, etag: str) -> Path:
         """Record `path` as a previously good page (both keys, file on disk)."""
         url = doc_url(path)
-        file_path = self.scraper._get_organized_file_path(url, {})
+        file_path = self.scraper._get_organized_file_path(self.scraper.sink, url, {})
         file_path.parent.mkdir(parents=True, exist_ok=True)
         file_path.write_text(f"# {path}\n", encoding="utf-8")
         entry = {
@@ -279,7 +280,7 @@ def assert_touched_only(rig: Rig, url: str, before: Dict[str, Any]) -> None:
 
 def recorded(rig: Rig) -> Dict[str, Tuple[str, FetchFailed]]:
     """The fetch failures recorded this run for the end-of-run count."""
-    return {url: (f.kind, f.failure) for url, f in rig.scraper._fetch_failures.items()}
+    return {url: (f.kind, f.failure) for url, f in rig.scraper.sink.fetch_failures.items()}
 
 
 class TestProcessQueuedUrl:
@@ -289,7 +290,7 @@ class TestProcessQueuedUrl:
     async def process(rig: Rig, tmp_path: Path) -> List[str]:
         queue: Deque[str] = deque()
         with capture_logs() as events:
-            await rig.scraper._process_queued_url(json_url(ALPHA), queue)
+            await rig.scraper._process_queued_url(rig.scraper.sink, json_url(ALPHA), queue)
         rig.events = events
         # Every outcome is handled where it happens; none may reach the
         # function's catch-all, which would hide a broken branch.
@@ -309,8 +310,8 @@ class TestProcessQueuedUrl:
             assert key in rig.touched
             assert rig.hashes[key]["file_path"] == str(file_path)
         assert "The testkit/alpha page." in file_path.read_text(encoding="utf-8")
-        assert rig.scraper._fetch_ok == {json_url(ALPHA)}
-        assert rig.scraper._saved_ok == {json_url(ALPHA)}
+        assert rig.scraper.sink.fetch_ok == {json_url(ALPHA)}
+        assert rig.scraper.sink.saved_ok == {json_url(ALPHA)}
         assert recorded(rig) == {}
         assert rig.scraper.stats["pages_scraped"] == 1
 
@@ -375,7 +376,7 @@ class TestProcessQueuedUrl:
         assert_touched_only(rig, json_url(ALPHA), before)
         assert rig.scraper.hash_manager.save() and not rig.scraper.hash_manager.cache_file.exists()
         assert rig.scraper.stats["pages_skipped"] == 1
-        assert rig.scraper._fetch_ok == {json_url(ALPHA)}
+        assert rig.scraper.sink.fetch_ok == {json_url(ALPHA)}
         assert recorded(rig) == {}
 
     async def test_304_backfills_a_missing_file_path(self, make_rig: Callable[..., Rig], tmp_path: Path) -> None:
@@ -404,7 +405,7 @@ class TestProcessQueuedUrl:
         kind, failure = recorded(rig)[json_url(ALPHA)]
         assert kind == "after_304"
         assert failure.status == 304 and failure.transient
-        assert rig.scraper._fetch_ok == set()
+        assert rig.scraper.sink.fetch_ok == set()
 
     @pytest.mark.parametrize("code", [404, 410])
     async def test_404_410_on_good_page_is_a_removal(
@@ -422,7 +423,7 @@ class TestProcessQueuedUrl:
         assert_error_entry(rig.hashes[json_url(ALPHA)], error)
         assert rig.hashes[doc_url(ALPHA)] == doc_entry
         assert [(e["url"], e["status"]) for e in rig.logged("page_gone")] == [(json_url(ALPHA), code)]
-        assert rig.scraper._gone == {json_url(ALPHA)}
+        assert rig.scraper.sink.gone == {json_url(ALPHA)}
         assert queue == []
         assert recorded(rig) == {}
         assert rig.scraper.outcome.blocks == {}
@@ -502,7 +503,7 @@ class TestProcessQueuedUrl:
         kind, failure = recorded(rig)[json_url(ALPHA)]
         assert kind == "after_304"
         assert failure.error == (error or http_status_error(refetch["code"], json_url(ALPHA)))
-        assert rig.scraper._fetch_ok == set()
+        assert rig.scraper.sink.fetch_ok == set()
 
     @pytest.mark.parametrize("code", [404, 410])
     async def test_304_then_refetch_404_410_is_a_removal(
@@ -553,7 +554,7 @@ class TestProcessQueuedUrl:
         assert recorded(rig)[json_url(ALPHA)] == (
             "previously_good", FetchFailed(status=200, error="invalid json", transient=True)
         )
-        assert rig.scraper._fetch_ok == set()
+        assert rig.scraper.sink.fetch_ok == set()
 
     async def test_200_invalid_json_on_new_url_counts(self, make_rig: Callable[..., Rig], tmp_path: Path) -> None:
         rig = make_rig({json_url(ALPHA): [ok("not json {", "E-BAD")]})
@@ -599,11 +600,11 @@ class TestProcessQueuedUrl:
         assert file_path.read_text(encoding="utf-8") == f"# {ALPHA}\n"
         assert not list(file_path.parent.glob("*.tmp"))
         assert rig.mark_error_calls == []
-        assert list(rig.scraper._local_errors) == [json_url(ALPHA)]
+        assert list(rig.scraper.sink.local_errors) == [json_url(ALPHA)]
         assert [e["url"] for e in rig.logged("page_save_failed")] == [json_url(ALPHA)]
-        assert rig.scraper._saved_ok == set()
+        assert rig.scraper.sink.saved_ok == set()
         # A 200 still counts as a good fetch (resets consecutive_failures)
-        assert rig.scraper._fetch_ok == {json_url(ALPHA)}
+        assert rig.scraper.sink.fetch_ok == {json_url(ALPHA)}
         assert recorded(rig) == {}
         assert rig.scraper.stats["pages_scraped"] == 0
 
@@ -620,7 +621,7 @@ class TestProcessQueuedUrl:
         assert queue == [ALPHA_CHILD]
         assert_error_entry(rig.hashes[json_url(ALPHA)], "local error: bad table")
         assert doc_url(ALPHA) not in rig.hashes
-        assert list(rig.scraper._local_errors) == [json_url(ALPHA)]
+        assert list(rig.scraper.sink.local_errors) == [json_url(ALPHA)]
 
     @pytest.mark.parametrize("target", ["save", "convert", "extract"])
     @pytest.mark.parametrize("keys", ["both-errors", "doc-live"])
@@ -664,7 +665,7 @@ class TestProcessQueuedUrl:
         assert rig.hashes[doc_url(ALPHA)] == doc_entry
         assert file_path.read_text(encoding="utf-8") == f"# {ALPHA}\n"
         assert rig.mark_error_calls == []
-        assert list(rig.scraper._local_errors) == [json_url(ALPHA)]
+        assert list(rig.scraper.sink.local_errors) == [json_url(ALPHA)]
 
     async def test_local_error_while_extracting_finds_the_file_of_a_page_named_like_its_framework(
         self, make_rig: Callable[..., Rig], tmp_path: Path, monkeypatch: pytest.MonkeyPatch
@@ -682,7 +683,7 @@ class TestProcessQueuedUrl:
             raise ValueError("unsupported block")
 
         monkeypatch.setattr(rig.scraper, "_extract_from_json", boom)
-        await rig.scraper._process_queued_url(json_url(path), deque())
+        await rig.scraper._process_queued_url(rig.scraper.sink, json_url(path), deque())
         entry = rig.hashes[json_url(path)]
         assert entry["file_path"] == str(file_path) and json_url(path) in rig.touched
         assert rig.mark_error_calls == []
@@ -698,9 +699,9 @@ class TestProcessQueuedUrl:
         computed.write_text(f"# {ALPHA}\n", encoding="utf-8")
         real_path = rig.scraper._get_organized_file_path
 
-        def path_of(url: str, data: Dict[str, Any]) -> Path:
+        def path_of(sink: Sink, url: str, data: Dict[str, Any]) -> Path:
             # Only the fully extracted data gives this run's path
-            return computed if "title" in data else real_path(url, data)
+            return computed if "title" in data else real_path(sink, url, data)
 
         def boom(data: Dict[str, Any]) -> str:
             raise ValueError("bad table")
@@ -726,7 +727,7 @@ class TestProcessQueuedUrl:
         queue = await self.process(rig, tmp_path)
         assert queue == [ALPHA_CHILD]
         assert_error_entry(rig.hashes[json_url(ALPHA)], "local error: bad path")
-        assert list(rig.scraper._local_errors) == [json_url(ALPHA)]
+        assert list(rig.scraper.sink.local_errors) == [json_url(ALPHA)]
         assert [e["url"] for e in rig.logged("page_file_path_failed")] == [json_url(ALPHA)]
 
     async def test_local_error_saving_a_path_too_long_writes_an_error_entry(
@@ -742,7 +743,7 @@ class TestProcessQueuedUrl:
         rig = make_rig({json_url(path): [ok(page(path, ["testkit/alpha/child"]), "E-L")]})
         queue: Deque[str] = deque()
         with capture_logs() as events:
-            await rig.scraper._process_queued_url(json_url(path), queue)
+            await rig.scraper._process_queued_url(rig.scraper.sink, json_url(path), queue)
         rig.events = events
         assert list(queue) == [ALPHA_CHILD]
         assert rig.logged("error_processing_url") == []
@@ -750,7 +751,7 @@ class TestProcessQueuedUrl:
         [(url, error)] = rig.mark_error_calls
         assert url == json_url(path) and error.startswith("local error: ")
         assert_error_entry(rig.hashes[json_url(path)], error)
-        assert list(rig.scraper._local_errors) == [json_url(path)]
+        assert list(rig.scraper.sink.local_errors) == [json_url(path)]
         assert [e["url"] for e in rig.logged("page_save_failed")] == [json_url(path)]
 
     async def test_unsafe_path_writes_an_error_entry(
@@ -758,14 +759,14 @@ class TestProcessQueuedUrl:
     ) -> None:
         rig = make_rig({json_url(ALPHA): [ok(ALPHA_BODY, "E-A")]})
         outside = tmp_path / "outside.md"
-        monkeypatch.setattr(rig.scraper, "_get_organized_file_path", lambda url, data: outside)
+        monkeypatch.setattr(rig.scraper, "_get_organized_file_path", lambda sink, url, data: outside)
         queue = await self.process(rig, tmp_path)
         assert queue == [ALPHA_CHILD]
         assert not outside.exists()
         assert_error_entry(rig.hashes[json_url(ALPHA)], "unsafe file path")
         assert doc_url(ALPHA) not in rig.hashes
         # Never-good and no block: not a local error, not a fetch failure
-        assert rig.scraper._local_errors == {}
+        assert rig.scraper.sink.local_errors == {}
         assert recorded(rig) == {}
         assert [e["url"] for e in rig.logged("unsafe_file_path_skipped")] == [doc_url(ALPHA)]
 
@@ -781,10 +782,10 @@ class TestProcessQueuedUrl:
         monkeypatch.setattr(rig.scraper, "_extract_urls_from_json_data", boom)
         queue: Deque[str] = deque()
         with capture_logs() as events:
-            await rig.scraper._process_queued_url(json_url(ALPHA), queue)
+            await rig.scraper._process_queued_url(rig.scraper.sink, json_url(ALPHA), queue)
         assert [e["event"] for e in events if e["event"] == "error_processing_url"] == ["error_processing_url"]
         assert rig.scraper.outcome.blocks == {"exception": [json_url(ALPHA)]}
-        assert rig.scraper._local_errors == {}
+        assert rig.scraper.sink.local_errors == {}
         assert recorded(rig) == {}
 
 
@@ -798,7 +799,7 @@ class TestTripwire:
     @staticmethod
     async def process(rig: Rig) -> None:
         with capture_logs() as events:
-            await rig.scraper._process_queued_url(json_url(ALPHA), deque())
+            await rig.scraper._process_queued_url(rig.scraper.sink, json_url(ALPHA), deque())
         rig.events = events
         assert rig.logged("error_processing_url") == []
 
@@ -817,8 +818,8 @@ class TestTripwire:
 
     def test_the_two_pages_are_named_alike(self, make_rig: Callable[..., Rig]) -> None:
         rig = make_rig({})
-        path = rig.scraper._get_organized_file_path
-        assert path(doc_url(OTHER), {}) == path(doc_url(ALPHA), {}) == rig.scraper.output_dir / "alpha.md"
+        path, sink = rig.scraper._get_organized_file_path, rig.scraper.sink
+        assert path(sink, doc_url(OTHER), {}) == path(sink, doc_url(ALPHA), {}) == rig.scraper.output_dir / "alpha.md"
         assert self.hashed(rig).name == f"alpha-{hashlib.sha256(json_url(ALPHA).lower().encode()).hexdigest()[:8]}.md"
 
     async def test_a_clash_writes_a_hashed_stem_and_flags_the_run_without_blocking(
@@ -840,7 +841,7 @@ class TestTripwire:
         )
         assert rig.scraper.outcome.filename_clashes == [json_url(ALPHA)]
         assert rig.scraper.outcome.blocks == {} and not rig.scraper.outcome.skip_cleanup
-        assert rig.scraper._saved_ok == {json_url(ALPHA)}
+        assert rig.scraper.sink.saved_ok == {json_url(ALPHA)}
         assert {json_url(ALPHA), doc_url(ALPHA)} <= rig.touched
 
     async def test_a_page_rewritten_under_its_own_name_is_no_clash(self, make_rig: Callable[..., Rig]) -> None:
@@ -926,7 +927,7 @@ class TestTripwire:
         assert_error_entry(rig.hashes[json_url(ALPHA)], "local error: bad table")
         assert rig.hashes[json_url(OTHER)]["file_path"] == str(theirs)
         assert rig.scraper.outcome.filename_clashes == [json_url(ALPHA)]
-        assert list(rig.scraper._local_errors) == [json_url(ALPHA)]
+        assert list(rig.scraper.sink.local_errors) == [json_url(ALPHA)]
 
     async def test_a_304_backfill_never_records_the_other_pages_file(self, make_rig: Callable[..., Rig]) -> None:
         """The backfilled path is the hashed one: missing, so the next run writes it."""
@@ -943,7 +944,7 @@ class TestScrapePage:
 
     async def test_200_saves_and_records_both_keys(self, make_rig: Callable[..., Rig]) -> None:
         rig = make_rig({json_url(FW): [ok(ROOT_BODY, "E-ROOT")]})
-        data = await rig.scraper.scrape_page(doc_url(FW))
+        data = await rig.scraper.scrape_page(rig.scraper.sink, doc_url(FW))
         assert data is not None and data["title"] == FW
         assert rig.mark_error_calls == []
         file_path = rig.scraper.output_dir / f"{FW}.md"
@@ -959,7 +960,7 @@ class TestScrapePage:
         rig = make_rig({json_url(FW): [ok(ROOT_BODY, "E-ROOT")]})
         rig.seed_good(FW, ROOT_BODY, "E-ROOT")
         before = {key: dict(rig.hashes[key]) for key in (json_url(FW), doc_url(FW))}
-        assert await rig.scraper.scrape_page(doc_url(FW)) is None
+        assert await rig.scraper.scrape_page(rig.scraper.sink, doc_url(FW)) is None
         assert rig.mark_error_calls == []
         for key, entry in before.items():
             assert_touched_only(rig, key, entry)
@@ -979,7 +980,7 @@ class TestScrapePage:
             del rig.hashes[doc_url(FW)]
         else:
             del rig.hashes[json_url(FW)]["file_path"]
-        assert await rig.scraper.scrape_page(doc_url(FW)) is None
+        assert await rig.scraper.scrape_page(rig.scraper.sink, doc_url(FW)) is None
         for key in (json_url(FW), doc_url(FW)):
             assert rig.hashes[key]["file_path"] == str(file_path) and rig.hashes[key]["etag"] == "E-ROOT"
             assert key in rig.touched
@@ -999,7 +1000,7 @@ class TestScrapePage:
         if stored:
             rig.seed_good(FW, ROOT_BODY, "E-ROOT")
         doc_entry = rig.hashes.get(doc_url(FW))
-        assert await rig.scraper.scrape_page(doc_url(FW)) is None
+        assert await rig.scraper.scrape_page(rig.scraper.sink, doc_url(FW)) is None
         assert rig.mark_error_calls == [(json_url(FW), f"HTTP {code}")]
         assert_error_entry(rig.hashes[json_url(FW)], f"HTTP {code}")
         assert rig.hashes.get(doc_url(FW)) == doc_entry
@@ -1023,7 +1024,7 @@ class TestScrapePage:
         json_entry = dict(rig.hashes[json_url(FW)])
         doc_entry = dict(rig.hashes[doc_url(FW)])
         with capture_logs() as events:
-            assert await rig.scraper.scrape_page(doc_url(FW)) is None
+            assert await rig.scraper.scrape_page(rig.scraper.sink, doc_url(FW)) is None
         assert rig.mark_error_calls == []
         assert_touched_only(rig, json_url(FW), json_entry)
         assert rig.hashes[doc_url(FW)] == doc_entry
@@ -1041,7 +1042,7 @@ class TestScrapePage:
         self, make_rig: Callable[..., Rig], spec: Spec
     ) -> None:
         rig = make_rig({json_url(FW): [spec]})
-        assert await rig.scraper.scrape_page(doc_url(FW)) is None
+        assert await rig.scraper.scrape_page(rig.scraper.sink, doc_url(FW)) is None
         assert [url for url, _ in rig.mark_error_calls] == [json_url(FW)]
         assert doc_url(FW) not in rig.hashes
         assert rig.scraper.outcome.blocks == {"root_fetch_failed": [json_url(FW)]}
@@ -1058,10 +1059,10 @@ class TestScrapePage:
             raise ValueError("bad aside")
 
         monkeypatch.setattr(rig.scraper.markdown_converter, "convert_page", boom)
-        assert await rig.scraper.scrape_page(doc_url(FW)) is None
+        assert await rig.scraper.scrape_page(rig.scraper.sink, doc_url(FW)) is None
         assert_touched_only(rig, json_url(FW), json_entry)
         assert rig.hashes[doc_url(FW)] == doc_entry
-        assert list(rig.scraper._local_errors) == [json_url(FW)]
+        assert list(rig.scraper.sink.local_errors) == [json_url(FW)]
         assert rig.scraper.outcome.blocks == {}
         assert rig.scraper._root_ok
 
@@ -1078,21 +1079,21 @@ class TestScrapePage:
             raise ValueError("unsupported block")
 
         monkeypatch.setattr(rig.scraper, "_extract_from_json", boom)
-        assert await rig.scraper.scrape_page(doc_url(FW)) is None
+        assert await rig.scraper.scrape_page(rig.scraper.sink, doc_url(FW)) is None
         assert rig.hashes[json_url(FW)] == {"hash": "", "file_path": str(file_path)}
         assert json_url(FW) in rig.touched
         assert doc_url(FW) not in rig.hashes
         assert rig.mark_error_calls == []
-        assert list(rig.scraper._local_errors) == [json_url(FW)]
+        assert list(rig.scraper.sink.local_errors) == [json_url(FW)]
 
     async def test_scrape_and_save_url_blocks_on_an_unexpected_exception(
         self, make_rig: Callable[..., Rig], monkeypatch: pytest.MonkeyPatch
     ) -> None:
         rig = make_rig({json_url(FW): [ok(ROOT_BODY, "E-ROOT")]})
 
-        async def boom(url: str) -> None:
+        async def boom(sink: Sink, url: str) -> None:
             raise RuntimeError("bug")
 
         monkeypatch.setattr(rig.scraper, "scrape_page", boom)
-        assert await rig.scraper._scrape_and_save_url(doc_url(FW)) is False
+        assert await rig.scraper._scrape_and_save_url(rig.scraper.sink, doc_url(FW)) is False
         assert rig.scraper.outcome.blocks == {"exception": [doc_url(FW)]}

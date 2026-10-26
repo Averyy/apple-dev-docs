@@ -27,6 +27,7 @@ sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..',
 import scrape_all_frameworks
 from scraper.config import Config
 from scraper.json_scraper import AppleJSONDocumentationScraper
+from scraper.sink import SinkRegistry
 from scraper.utils.links import doc_link, link_base
 from scraper.utils.naming import page_path
 from tests.test_exit_codes import CI, scrape
@@ -115,7 +116,7 @@ class TestConverterLinks:
         """A page two folders down links each reference the same way in its prose and in its Topics."""
         monkeypatch.setattr(Config, "OUTPUT_DIR", tmp_path / "documentation")
         monkeypatch.setattr(Config, "CACHE_DIR", tmp_path / ".hashes")
-        scraper = AppleJSONDocumentationScraper("TestKit", known_dirs={"swiftui": "SwiftUI", "swift": "Swift"})
+        scraper = AppleJSONDocumentationScraper("TestKit", sinks=SinkRegistry({"swiftui": "SwiftUI", "swift": "Swift"}))
         targets = {
             "doc://t/documentation/TestKit/Widget/Color": ("Color", "/documentation/testkit/widget/color", "./color.md"),
             "doc://t/documentation/TestKit/TestKit": ("TestKit", "/documentation/testkit/testkit", "../testkit-page.md"),
@@ -134,7 +135,7 @@ class TestConverterLinks:
                 {"type": "paragraph", "inlineContent": [ref(identifier) for identifier in targets]}]}],
             "topicSections": [{"title": "Links", "identifiers": list(targets)}],
         }
-        md = scraper.markdown_converter.convert_page(scraper._extract_from_json(json_page, PAGE))
+        md = scraper.markdown_converter.convert_page(scraper._extract_from_json(scraper.sink, json_page, PAGE))
         for title, _, link in targets.values():
             assert f"[{title}]({link})" in md.split("## Topics")[0], title
             assert f"- [{title}]({link})" in md.split("## Topics")[1], title

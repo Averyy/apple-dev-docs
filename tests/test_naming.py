@@ -152,9 +152,10 @@ class TestPagePath:
         monkeypatch.setattr(Config, "CACHE_DIR", tmp_path / ".hashes")
         scraper = AppleJSONDocumentationScraper("XCTest")
         url = "https://developer.apple.com/documentation/xctest/xctest/init()"
-        assert scraper._get_organized_file_path(url, {}) == tmp_path / "docs" / "XCTest/xctest-page/init().md"
+        sink = scraper.sink
+        assert scraper._get_organized_file_path(sink, url, {}) == tmp_path / "docs" / "XCTest/xctest-page/init().md"
         # The path depends on the URL alone
-        assert scraper._get_organized_file_path(url, {"symbol_kind": "class"}) == scraper._get_organized_file_path(url, {})
+        assert scraper._get_organized_file_path(sink, url, {"symbol_kind": "class"}) == scraper._get_organized_file_path(sink, url, {})
 
     def test_the_doc_url_and_json_url_give_the_same_path(self, tmp_path: Path, monkeypatch: pytest.MonkeyPatch) -> None:
         monkeypatch.setattr(Config, "CACHE_DIR", tmp_path / ".hashes")

@@ -37,7 +37,7 @@ class TestCriticalPathGeneration:
         url = "https://developer.apple.com/documentation/watchkit/enabling-background-sessions"
         data = {"title": "Test"}
         
-        file_path = self.scraper._get_organized_file_path(url, data)
+        file_path = self.scraper._get_organized_file_path(self.scraper.sink, url, data)
         
         # Must be watchkit/enabling-background-sessions.md
         assert str(file_path) == "documentation/watchkit/enabling-background-sessions.md"
@@ -49,7 +49,7 @@ class TestCriticalPathGeneration:
         url = "https://developer.apple.com/documentation/WatchKit/WKApplication"
         data = {"title": "WKApplication"}
         
-        file_path = self.scraper._get_organized_file_path(url, data)
+        file_path = self.scraper._get_organized_file_path(self.scraper.sink, url, data)
         
         # Should not fail or create wrong path
         assert "watchkit" in str(file_path).lower()
