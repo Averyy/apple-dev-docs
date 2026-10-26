@@ -181,8 +181,14 @@ class PageFetchFailure:
     failure: FetchFailed
 
 
-# The sections whose identifiers a page links its child pages through
-LINK_SECTIONS: Final = ('topicSections', 'relationshipsSections', 'seeAlsoSections', 'diffAvailability', 'variants')
+# The sections whose identifiers a page links its child pages through. A
+# protocol requirement's defaultImplementationsSections list its default
+# implementations, which no other section links (1.4); those in another
+# top-level technology of the bundle are handed off to its sink (_route)
+LINK_SECTIONS: Final = (
+    'topicSections', 'relationshipsSections', 'seeAlsoSections', 'defaultImplementationsSections',
+    'diffAvailability', 'variants',
+)
 
 
 @dataclass(frozen=True)

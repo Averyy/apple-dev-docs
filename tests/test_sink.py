@@ -23,6 +23,11 @@ Step 1b (the behavior), through whole scrape.py runs against a fake Apple:
   deletes nothing, the subset runs never clean a module whose other parent
   didn't run; the namespace_collision check; the stale error entries
   (section anchors, item 8) leave through the normal cleanup.
+
+Item 2 (1.4): a protocol requirement's default implementations
+(defaultImplementationsSections) are crawled like its other links: its own
+framework's, a module's, and a same-bundle sibling's (a handoff), each
+removed by its sink's normal orphan cleanup once no longer listed.
 """
 
 import asyncio
@@ -30,9 +35,11 @@ import dataclasses
 import hashlib
 import json
 import os
+import re
 import sys
 from pathlib import Path
 from typing import Any, Dict, Iterator, List, Optional, Sequence, Set, Tuple
+from urllib.parse import unquote
 
 import httpx
 import pytest
@@ -264,10 +271,15 @@ Link = Tuple[str, str]
 Pages = Dict[str, Tuple[str, List[Link]]]
 
 
-def topic_page(path: str, bundle: str, links: Sequence[Link] = ()) -> str:
-    """A page whose links resolve through their references (url /documentation/<path, lowercased>)."""
+def topic_page(path: str, bundle: str, links: Sequence[Link] = (), implementations: Sequence[Link] = ()) -> str:
+    """A page whose links resolve through their references (url /documentation/<path, lowercased>).
+
+    implementations: a protocol requirement's default implementations
+    (defaultImplementationsSections, 1.4), linked by no other section
+    """
     identifiers = [f"doc://{link_bundle}/documentation/{link}" for link, link_bundle in links]
-    return json.dumps({
+    implementation_ids = [f"doc://{link_bundle}/documentation/{link}" for link, link_bundle in implementations]
+    body: Dict[str, Any] = {
         "identifier": {"url": f"doc://{bundle}/documentation/{path}", "interfaceLanguage": "swift"},
         "metadata": {"title": path.split("/")[-1], "symbolKind": "class", "roleHeading": "Class"},
         "abstract": [{"type": "text", "text": f"The {path} page."}],
@@ -275,16 +287,27 @@ def topic_page(path: str, bundle: str, links: Sequence[Link] = ()) -> str:
         "references": {
             identifier: {"type": "topic", "url": f"/documentation/{link.lower()}", "title": link.split("/")[-1],
                          "identifier": identifier, "kind": "symbol", "role": "symbol"}
-            for identifier, (link, _) in zip(identifiers, links)
+            for identifier, (link, _) in zip(identifiers + implementation_ids, [*links, *implementations])
         },
-    })
+    }
+    if implementations:
+        body["defaultImplementationsSections"] = [
+            {"anchor": "Proto-Implementations", "title": "Proto Implementations", "identifiers": implementation_ids}]
+    return json.dumps(body)
 
 
-def d6_routes(pages: Pages, overrides: Optional[Dict[str, List[Spec]]] = None) -> Dict[str, List[Spec]]:
-    """Each page answers 200 with an etag of its body (304 on a match), unless overridden."""
+def d6_routes(
+    pages: Pages,
+    overrides: Optional[Dict[str, List[Spec]]] = None,
+    implementations: Optional[Dict[str, List[Link]]] = None,
+) -> Dict[str, List[Spec]]:
+    """Each page answers 200 with an etag of its body (304 on a match), unless overridden.
+
+    implementations: a page's path -> its default implementations
+    """
     routes: Dict[str, List[Spec]] = {}
     for path, (bundle, links) in pages.items():
-        body = topic_page(path, bundle, links)
+        body = topic_page(path, bundle, links, (implementations or {}).get(path, ()))
         routes[json_url(path.lower())] = [ok(body, "E-" + hashlib.sha256(body.encode()).hexdigest()[:12])]
     for path, specs in (overrides or {}).items():
         routes[json_url(path.lower())] = specs
@@ -355,12 +378,14 @@ class D6Runs:
         overrides: Optional[Dict[str, List[Spec]]] = None,
         concurrent: int = 20,
         delays: Optional[Dict[str, float]] = None,
+        implementations: Optional[Dict[str, List[Link]]] = None,
     ) -> int:
         """One run: technologies.json lists `listed`; --frameworks names, else --all.
 
         delays: a URL fragment -> seconds its response waits (a page in flight)
+        implementations: a page's path -> its default implementations
         """
-        apple = Apple(d6_routes(pages, overrides))
+        apple = Apple(d6_routes(pages, overrides, implementations))
 
         async def handler(request: httpx.Request) -> httpx.Response:
             for fragment, seconds in (delays or {}).items():
@@ -722,6 +747,90 @@ class TestHandoff:
         # Unlinked, with both jobs clean: removed by the normal orphan cleanup
         assert await d6.scrape(without(SIBLINGS, "SibkitUI", "Sibkit/hidden"), listed) == 0
         assert not doc_file("Sibkit/hidden").exists() and doc_file("Sibkit/a").exists()
+
+
+def implementation_files(path: str) -> List[Path]:
+    """The files a page's ## Default Implementations section links, each resolved from the page's own file."""
+    file = doc_file(path)
+    section = file.read_text().split("\n## Default Implementations\n", 1)[1].split("\n## ", 1)[0]
+    return [Path(os.path.normpath(file.parent / unquote(href))) for href in re.findall(r"\]\(([^)\s]+\.md)\)", section)]
+
+
+# A protocol requirement and its default implementations, which only its
+# defaultImplementationsSections link (1.4): one in Umbrella, one in its module ModKit
+REQUIREMENT: Pages = {
+    **UMBRELLA,
+    "Umbrella/guide": (A, [("Umbrella/Proto", A)]),
+    "Umbrella/Proto": (A, [("Umbrella/Proto/run()", A)]),
+    "Umbrella/Proto/run()": (A, []),
+    "Umbrella/Proto/run()-1xq7p": (A, []),
+    "ModKit/Thing/run()-3ngto": (A, []),
+}
+IMPLEMENTATIONS: Dict[str, List[Link]] = {
+    "Umbrella/Proto/run()": [("Umbrella/Proto/run()-1xq7p", A), ("ModKit/Thing/run()-3ngto", A)],
+}
+
+
+class TestDefaultImplementations:
+    """A protocol requirement's default implementations are crawled (1.4): its own, a module's, a sibling's."""
+
+    async def test_they_are_discovered_written_and_removed_once_no_longer_listed(self, d6: D6Runs) -> None:
+        assert await d6.scrape(REQUIREMENT, ["Umbrella"], implementations=IMPLEMENTATIONS) == 0
+        assert docs() == {doc_file(path) for path in REQUIREMENT}
+        assert "**Framework**: ModKit" in doc_file("ModKit/Thing/run()-3ngto").read_text()
+        # The requirement's own file keeps its name, and its link reaches its own default
+        # implementation; ModKit's dir is new this run, so its page is linked by URL (known
+        # dirs are taken at run start: local after the next RENDER_VERSION bump, todo-3:199)
+        assert doc_file("Umbrella/Proto/run()") == Path("documentation/Umbrella/proto/run().md")
+        assert implementation_files("Umbrella/Proto/run()") == [doc_file("Umbrella/Proto/run()-1xq7p")]
+        assert f"]({doc_url('modkit/thing/run()-3ngto')})" in doc_file("Umbrella/Proto/run()").read_text()
+        assert json_url("umbrella/proto/run()-1xq7p") in Config.get_hash_file("Umbrella").read_text()
+        before = sandbox_bytes()
+        assert await d6.scrape(REQUIREMENT, ["Umbrella"], implementations=IMPLEMENTATIONS) == 0
+        assert sandbox_bytes() == before
+        # No longer listed: each leaves through its sink's normal orphan cleanup
+        assert await d6.scrape(REQUIREMENT, ["Umbrella"], implementations={
+            "Umbrella/Proto/run()": [("ModKit/Thing/run()-3ngto", A)]}) == 0
+        assert docs() == {doc_file(path) for path in REQUIREMENT} - {doc_file("Umbrella/Proto/run()-1xq7p")}
+        assert await d6.scrape(REQUIREMENT, ["Umbrella"]) == 0
+        assert docs() == {doc_file(path) for path in UMBRELLA} | {
+            doc_file("Umbrella/Proto"), doc_file("Umbrella/Proto/run()")}
+        assert "## Default Implementations" not in doc_file("Umbrella/Proto/run()").read_text()
+
+    async def test_one_in_a_bundle_sibling_is_handed_off_and_cleaned_only_when_its_writer_ran(
+        self, d6: D6Runs
+    ) -> None:
+        """Swift's Equatable.==(_:_:) lists Distributed's DistributedActor.==(_:_:), which no Distributed page links."""
+        listed = ["Sibkit", "SibkitUI"]
+        pages: Pages = {
+            "Sibkit": (S, [("Sibkit/a", S)]),
+            "Sibkit/a": (S, []),
+            "Sibkit/a/run()-6673q": (S, [("Sibkit/a/run()-6673q/deeper", S)]),
+            "Sibkit/a/run()-6673q/deeper": (S, []),
+            "SibkitUI": (S, [("SibkitUI/b", S)]),
+            "SibkitUI/b": (S, [("SibkitUI/b/run()", S)]),
+            "SibkitUI/b/run()": (S, []),
+        }
+        implementations: Dict[str, List[Link]] = {"SibkitUI/b/run()": [("Sibkit/a/run()-6673q", S)]}
+        assert await d6.scrape(pages, listed, implementations=implementations) == 0
+        handed_off = doc_file("Sibkit/a/run()-6673q")
+        assert handed_off.exists() and "**Framework**: Sibkit" in handed_off.read_text()
+        assert implementation_files("SibkitUI/b/run()") == [handed_off]
+        # One hop: the handed-off page's own links are Sibkit's job's to follow
+        assert json_url("sibkit/a/run()-6673q/deeper") not in d6.requests
+        assert metadata("Sibkit")["handoff_from"] == {"sibkitui": {}}
+        assert json_url("sibkit/a/run()-6673q") in Config.get_hash_file("Sibkit").read_text()
+        assert json_url("sibkit/a/run()-6673q") not in Config.get_hash_file("SibkitUI").read_text()
+        before = sandbox_bytes()
+        assert await d6.scrape(pages, listed, implementations=implementations) == 0
+        assert sandbox_bytes() == before
+        # Sibkit alone: its handoff writer didn't run, so the page it alone reaches stays (rule 1)
+        assert await d6.scrape(pages, listed, "Sibkit") == 0
+        assert handed_off.exists()
+        assert d6.logged("orphans_deleted") == []
+        # No longer listed, with both jobs clean: removed by the normal orphan cleanup
+        assert await d6.scrape(pages, listed) == 0
+        assert not handed_off.exists() and doc_file("Sibkit/a").exists()
 
 
 class TestNamespaceCollision:
