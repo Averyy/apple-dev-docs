@@ -1,0 +1,110 @@
+{
+  "hashes": {
+    "https://docs.swift.org/latest/data/documentation/swiftlydocs.json": {
+      "etag": "\"1445-659e1dc6e6540\"",
+      "file_path": "documentation/Swift-Org/SwiftlyDocs/SwiftlyDocs.md",
+      "hash": "d9979df88e88fd47710853f147982126449875a7587157a08c1299800befa3f0"
+    },
+    "https://docs.swift.org/latest/data/documentation/swiftlydocs/automated-install.json": {
+      "etag": "\"2c3b-659e1dc6e6540\"",
+      "file_path": "documentation/Swift-Org/SwiftlyDocs/automated-install.md",
+      "hash": "407fd0cc5ccd42632c0ea336ddb104a8d5f2a286940e3dd5cfe92eca1ff3eecf"
+    },
+    "https://docs.swift.org/latest/data/documentation/swiftlydocs/getting-started.json": {
+      "etag": "\"1f1e-659e1dc6e6540\"",
+      "file_path": "documentation/Swift-Org/SwiftlyDocs/getting-started.md",
+      "hash": "a477efac94509d6e82994cfb5471db7030fa9f1f85d51fc3c5afd147349fdbd7"
+    },
+    "https://docs.swift.org/latest/data/documentation/swiftlydocs/install-toolchains.json": {
+      "etag": "\"1e9e-659e1dc6e6540\"",
+      "file_path": "documentation/Swift-Org/SwiftlyDocs/install-toolchains.md",
+      "hash": "b8ffcf5eeb29bc81e4c240dd8ed82b1927e50d99ea61ac8374bf6a2bec231913"
+    },
+    "https://docs.swift.org/latest/data/documentation/swiftlydocs/shell-autocompletion.json": {
+      "etag": "\"1fd1-659e1dc6e6540\"",
+      "file_path": "documentation/Swift-Org/SwiftlyDocs/shell-autocompletion.md",
+      "hash": "1f93d1f4c2a13cc2077db30ad5528545145b480f1305cf7acee474ca950ac3d7"
+    },
+    "https://docs.swift.org/latest/data/documentation/swiftlydocs/swiftly-cli-reference.json": {
+      "etag": "\"9877-659e1dc6e6540\"",
+      "file_path": "documentation/Swift-Org/SwiftlyDocs/swiftly-cli-reference.md",
+      "hash": "fca2a89fbdce6abe715e4ba374a44c726dd4b712402d762b77a031121b29fd60"
+    },
+    "https://docs.swift.org/latest/data/documentation/swiftlydocs/trouble.json": {
+      "etag": "\"11df-659e1dc6e6540\"",
+      "file_path": "documentation/Swift-Org/SwiftlyDocs/trouble.md",
+      "hash": "ed687672398630dbc8baec05decb0c0d59044d76217ac78bdba577d502a8af33"
+    },
+    "https://docs.swift.org/latest/data/documentation/swiftlydocs/uninstall-toolchains.json": {
+      "etag": "\"15a6-659e1dc6e6540\"",
+      "file_path": "documentation/Swift-Org/SwiftlyDocs/uninstall-toolchains.md",
+      "hash": "4009bee26d2895a834d7bf97bc10dd4e48327eedd372762bf0ea674f57772640"
+    },
+    "https://docs.swift.org/latest/data/documentation/swiftlydocs/update-toolchain.json": {
+      "etag": "\"1909-659e1dc6e6540\"",
+      "file_path": "documentation/Swift-Org/SwiftlyDocs/update-toolchain.md",
+      "hash": "88817755440b2c4ad9186c66fa4d567a760d482f42b9763e586ce0b6915eeba5"
+    },
+    "https://docs.swift.org/latest/data/documentation/swiftlydocs/use-toolchains.json": {
+      "etag": "\"2be3-659e1dc6e6540\"",
+      "file_path": "documentation/Swift-Org/SwiftlyDocs/use-toolchains.md",
+      "hash": "02b7100e3f36c2d1795c0e4af0c69865202ade7f8619d51044e1deb0027689ef"
+    },
+    "https://docs.swift.org/latest/documentation/swiftlydocs": {
+      "etag": "\"1445-659e1dc6e6540\"",
+      "file_path": "documentation/Swift-Org/SwiftlyDocs/SwiftlyDocs.md",
+      "hash": "d9979df88e88fd47710853f147982126449875a7587157a08c1299800befa3f0"
+    },
+    "https://docs.swift.org/latest/documentation/swiftlydocs/automated-install": {
+      "etag": "\"2c3b-659e1dc6e6540\"",
+      "file_path": "documentation/Swift-Org/SwiftlyDocs/automated-install.md",
+      "hash": "407fd0cc5ccd42632c0ea336ddb104a8d5f2a286940e3dd5cfe92eca1ff3eecf"
+    },
+    "https://docs.swift.org/latest/documentation/swiftlydocs/getting-started": {
+      "etag": "\"1f1e-659e1dc6e6540\"",
+      "file_path": "documentation/Swift-Org/SwiftlyDocs/getting-started.md",
+      "hash": "a477efac94509d6e82994cfb5471db7030fa9f1f85d51fc3c5afd147349fdbd7"
+    },
+    "https://docs.swift.org/latest/documentation/swiftlydocs/install-toolchains": {
+      "etag": "\"1e9e-659e1dc6e6540\"",
+      "file_path": "documentation/Swift-Org/SwiftlyDocs/install-toolchains.md",
+      "hash": "b8ffcf5eeb29bc81e4c240dd8ed82b1927e50d99ea61ac8374bf6a2bec231913"
+    },
+    "https://docs.swift.org/latest/documentation/swiftlydocs/shell-autocompletion": {
+      "etag": "\"1fd1-659e1dc6e6540\"",
+      "file_path": "documentation/Swift-Org/SwiftlyDocs/shell-autocompletion.md",
+      "hash": "1f93d1f4c2a13cc2077db30ad5528545145b480f1305cf7acee474ca950ac3d7"
+    },
+    "https://docs.swift.org/latest/documentation/swiftlydocs/swiftly-cli-reference": {
+      "etag": "\"9877-659e1dc6e6540\"",
+      "file_path": "documentation/Swift-Org/SwiftlyDocs/swiftly-cli-reference.md",
+      "hash": "fca2a89fbdce6abe715e4ba374a44c726dd4b712402d762b77a031121b29fd60"
+    },
+    "https://docs.swift.org/latest/documentation/swiftlydocs/trouble": {
+      "etag": "\"11df-659e1dc6e6540\"",
+      "file_path": "documentation/Swift-Org/SwiftlyDocs/trouble.md",
+      "hash": "ed687672398630dbc8baec05decb0c0d59044d76217ac78bdba577d502a8af33"
+    },
+    "https://docs.swift.org/latest/documentation/swiftlydocs/uninstall-toolchains": {
+      "etag": "\"15a6-659e1dc6e6540\"",
+      "file_path": "documentation/Swift-Org/SwiftlyDocs/uninstall-toolchains.md",
+      "hash": "4009bee26d2895a834d7bf97bc10dd4e48327eedd372762bf0ea674f57772640"
+    },
+    "https://docs.swift.org/latest/documentation/swiftlydocs/update-toolchain": {
+      "etag": "\"1909-659e1dc6e6540\"",
+      "file_path": "documentation/Swift-Org/SwiftlyDocs/update-toolchain.md",
+      "hash": "88817755440b2c4ad9186c66fa4d567a760d482f42b9763e586ce0b6915eeba5"
+    },
+    "https://docs.swift.org/latest/documentation/swiftlydocs/use-toolchains": {
+      "etag": "\"2be3-659e1dc6e6540\"",
+      "file_path": "documentation/Swift-Org/SwiftlyDocs/use-toolchains.md",
+      "hash": "02b7100e3f36c2d1795c0e4af0c69865202ade7f8619d51044e1deb0027689ef"
+    }
+  },
+  "metadata": {
+    "render": {
+      "version": 2
+    },
+    "total_pages": 20
+  }
+}

@@ -6296,7 +6296,7 @@
       "hash": "096a5e57d2a302863fd58a65e2c99f5bf7361f553290571783684b510b617be6"
     },
     "https://developer.apple.com/documentation/coremedia/cmsamplebuffergettotalsamplesize(_:)": {
-      "etag": "\"3ce6-65d55c82e116d-df\"",
+      "etag": "\"3ce6-65d55c82e116d\"",
       "file_path": "documentation/CoreMedia/cmsamplebuffergettotalsamplesize(_).md",
       "hash": "9d7f8ed5d9b7388991cce158931b99d48aa20c79638a22bcd9c4fd2c55f6d8ae"
     },
@@ -19101,7 +19101,7 @@
       "hash": "096a5e57d2a302863fd58a65e2c99f5bf7361f553290571783684b510b617be6"
     },
     "https://developer.apple.com/tutorials/data/documentation/coremedia/cmsamplebuffergettotalsamplesize(_:).json": {
-      "etag": "\"3ce6-65d55c82e116d-df\"",
+      "etag": "\"3ce6-65d55c82e116d\"",
       "file_path": "documentation/CoreMedia/cmsamplebuffergettotalsamplesize(_).md",
       "hash": "9d7f8ed5d9b7388991cce158931b99d48aa20c79638a22bcd9c4fd2c55f6d8ae"
     },

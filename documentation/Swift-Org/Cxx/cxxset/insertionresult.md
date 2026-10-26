@@ -1,0 +1,22 @@
+---
+url: "https://docs.swift.org/latest/documentation/cxx/cxxset/insertionresult"
+framework: "Swift-Org/Cxx"
+---
+
+# InsertionResult
+
+**Framework**: Swift-Org/Cxx  
+**Kind**: associatedtype  
+**Role**: Associated Type  
+**Required**: Yes
+
+## Declaration
+
+```swift
+associatedtype InsertionResult
+```
+
+
+---
+
+*[View on docs.swift.org](https://docs.swift.org/latest/documentation/cxx/cxxset/insertionresult)*

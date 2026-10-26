@@ -1,0 +1,60 @@
+{
+  "hashes": {
+    "https://docs.swift.org/latest/data/documentation/swiftandroid.json": {
+      "etag": "\"b43-659e1dc6e6540\"",
+      "file_path": "documentation/Swift-Org/SwiftAndroid/SwiftAndroid.md",
+      "hash": "9e1e2bb0a0693d1c17da1b8dfe27ef1965027ffb293e30c962baa5f295811fbc"
+    },
+    "https://docs.swift.org/latest/data/documentation/swiftandroid/buildingforandroid.json": {
+      "etag": "\"c75-659e1dc6e6540\"",
+      "file_path": "documentation/Swift-Org/SwiftAndroid/buildingforandroid.md",
+      "hash": "2f5de719394d6048863f305841eff3ecf0c092c09522a4a8bd29e210d29d87d4"
+    },
+    "https://docs.swift.org/latest/data/documentation/swiftandroid/gettingstarted.json": {
+      "etag": "\"1313-659e1dc6e6540\"",
+      "file_path": "documentation/Swift-Org/SwiftAndroid/gettingstarted.md",
+      "hash": "c40341cca22ff78afa5347017d4c4370e13699450046ba5d95fadc1803c1d882"
+    },
+    "https://docs.swift.org/latest/data/documentation/swiftandroid/integration.json": {
+      "etag": "\"115a-659e1dc6e6540\"",
+      "file_path": "documentation/Swift-Org/SwiftAndroid/integration.md",
+      "hash": "73d5dde386574bb659256f6d22af4d4d2e92dc4ec16aace67f080b3012d18a5d"
+    },
+    "https://docs.swift.org/latest/data/documentation/swiftandroid/portingpackages.json": {
+      "etag": "\"a54-659e1dc6e6540\"",
+      "file_path": "documentation/Swift-Org/SwiftAndroid/portingpackages.md",
+      "hash": "7a8237061d2b13363730c31a286d14562b1f1d2cf21685a306200327ec972983"
+    },
+    "https://docs.swift.org/latest/documentation/swiftandroid": {
+      "etag": "\"b43-659e1dc6e6540\"",
+      "file_path": "documentation/Swift-Org/SwiftAndroid/SwiftAndroid.md",
+      "hash": "9e1e2bb0a0693d1c17da1b8dfe27ef1965027ffb293e30c962baa5f295811fbc"
+    },
+    "https://docs.swift.org/latest/documentation/swiftandroid/buildingforandroid": {
+      "etag": "\"c75-659e1dc6e6540\"",
+      "file_path": "documentation/Swift-Org/SwiftAndroid/buildingforandroid.md",
+      "hash": "2f5de719394d6048863f305841eff3ecf0c092c09522a4a8bd29e210d29d87d4"
+    },
+    "https://docs.swift.org/latest/documentation/swiftandroid/gettingstarted": {
+      "etag": "\"1313-659e1dc6e6540\"",
+      "file_path": "documentation/Swift-Org/SwiftAndroid/gettingstarted.md",
+      "hash": "c40341cca22ff78afa5347017d4c4370e13699450046ba5d95fadc1803c1d882"
+    },
+    "https://docs.swift.org/latest/documentation/swiftandroid/integration": {
+      "etag": "\"115a-659e1dc6e6540\"",
+      "file_path": "documentation/Swift-Org/SwiftAndroid/integration.md",
+      "hash": "73d5dde386574bb659256f6d22af4d4d2e92dc4ec16aace67f080b3012d18a5d"
+    },
+    "https://docs.swift.org/latest/documentation/swiftandroid/portingpackages": {
+      "etag": "\"a54-659e1dc6e6540\"",
+      "file_path": "documentation/Swift-Org/SwiftAndroid/portingpackages.md",
+      "hash": "7a8237061d2b13363730c31a286d14562b1f1d2cf21685a306200327ec972983"
+    }
+  },
+  "metadata": {
+    "render": {
+      "version": 2
+    },
+    "total_pages": 10
+  }
+}

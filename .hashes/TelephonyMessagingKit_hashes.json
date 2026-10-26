@@ -349,7 +349,7 @@
       "hash": "b57f7a7fbc64533c6ba5bd9faa5c2081793f911e4f17de72545ac7a4ef9c7c45"
     },
     "https://developer.apple.com/documentation/telephonymessagingkit/mmsservice/sendmessage(_:)": {
-      "etag": "\"266b-65d55d67985d7\"",
+      "etag": "\"266b-65d55d67985d7-df\"",
       "file_path": "documentation/TelephonyMessagingKit/mmsservice/sendmessage(_).md",
       "hash": "0a86543de54b63df0c3eefc578b2eef88d9722a7e0ff0305eacf986a429307f0"
     },
@@ -3623,7 +3623,7 @@
       "hash": "b57f7a7fbc64533c6ba5bd9faa5c2081793f911e4f17de72545ac7a4ef9c7c45"
     },
     "https://developer.apple.com/tutorials/data/documentation/telephonymessagingkit/mmsservice/sendmessage(_:).json": {
-      "etag": "\"266b-65d55d67985d7\"",
+      "etag": "\"266b-65d55d67985d7-df\"",
       "file_path": "documentation/TelephonyMessagingKit/mmsservice/sendmessage(_).md",
       "hash": "0a86543de54b63df0c3eefc578b2eef88d9722a7e0ff0305eacf986a429307f0"
     },

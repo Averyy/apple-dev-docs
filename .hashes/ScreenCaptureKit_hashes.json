@@ -111,7 +111,7 @@
       "hash": "c24d77248781ff719d3ba8e5b458655bd76ddff9352468bf697c11b4d46dd9d5"
     },
     "https://developer.apple.com/documentation/screencapturekit/sccontentfilter/contentrect": {
-      "etag": "\"33ba-65d55edc047ac\"",
+      "etag": "\"33ba-65d55edc047ac-df\"",
       "file_path": "documentation/ScreenCaptureKit/sccontentfilter/contentrect.md",
       "hash": "17f1a9c1563d8b12eebc234ee6867deb47fd1d5498ff1f27e85ae280a751a4c7"
     },
@@ -1796,7 +1796,7 @@
       "hash": "c24d77248781ff719d3ba8e5b458655bd76ddff9352468bf697c11b4d46dd9d5"
     },
     "https://developer.apple.com/tutorials/data/documentation/screencapturekit/sccontentfilter/contentrect.json": {
-      "etag": "\"33ba-65d55edc047ac\"",
+      "etag": "\"33ba-65d55edc047ac-df\"",
       "file_path": "documentation/ScreenCaptureKit/sccontentfilter/contentrect.md",
       "hash": "17f1a9c1563d8b12eebc234ee6867deb47fd1d5498ff1f27e85ae280a751a4c7"
     },

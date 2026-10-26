@@ -45996,7 +45996,7 @@
       "hash": "4493e8499ddd0640190a9ff51c44cab185670cce7065c7be10524e78e9f05295"
     },
     "https://developer.apple.com/documentation/iokit/ioframebufferinformation/1505236-pixeltype": {
-      "etag": "\"2602-65b3a474f6326-df\"",
+      "etag": "\"2602-65b3a474f6326\"",
       "file_path": "documentation/iokit/ioframebufferinformation/api-1505236-pixeltype.md",
       "hash": "d0522028275d3123f6d1bc9c619dcd5efcaf90825603049b77f6be0ff61d0c3f"
     },
@@ -65991,7 +65991,7 @@
       "hash": "e5e0a84b97faa417b7607c1a91bb7e22cfeec748cfd599370ef316f52f3178d2"
     },
     "https://developer.apple.com/documentation/iokit/scsi_sense_data/1587971-command_specific_information_4": {
-      "etag": "\"2754-65b3a47c60eff\"",
+      "etag": "\"2754-65b3a47c60eff-df\"",
       "file_path": "documentation/iokit/scsi_sense_data/api-1587971-command_specific_information_4.md",
       "hash": "fa12f450b9962a2cfa0e4effb14d83ee7fa06aff5e2cb42b262099c44df36655"
     },
@@ -66121,7 +66121,7 @@
       "hash": "d921addbae4bdf153e4ce380095babaa7b1d10f3a7a8829d9a500a9d555f7676"
     },
     "https://developer.apple.com/documentation/iokit/scsicmd_inquiry_page80_header_spc_16/1572945-page_length": {
-      "etag": "\"2954-65b3a47aaa42e-df\"",
+      "etag": "\"2954-65b3a47aaa42e\"",
       "file_path": "documentation/iokit/scsicmd_inquiry_page80_header_spc_16/api-1572945-page_length.md",
       "hash": "bfcd385ae1b200c2ddcbe19ad6077d41ffa56c01604a4b37c5e61b75ba5bbaf0"
     },
@@ -117831,7 +117831,7 @@
       "hash": "4493e8499ddd0640190a9ff51c44cab185670cce7065c7be10524e78e9f05295"
     },
     "https://developer.apple.com/tutorials/data/documentation/iokit/ioframebufferinformation/1505236-pixeltype.json": {
-      "etag": "\"2602-65b3a474f6326-df\"",
+      "etag": "\"2602-65b3a474f6326\"",
       "file_path": "documentation/iokit/ioframebufferinformation/api-1505236-pixeltype.md",
       "hash": "d0522028275d3123f6d1bc9c619dcd5efcaf90825603049b77f6be0ff61d0c3f"
     },
@@ -137826,7 +137826,7 @@
       "hash": "e5e0a84b97faa417b7607c1a91bb7e22cfeec748cfd599370ef316f52f3178d2"
     },
     "https://developer.apple.com/tutorials/data/documentation/iokit/scsi_sense_data/1587971-command_specific_information_4.json": {
-      "etag": "\"2754-65b3a47c60eff\"",
+      "etag": "\"2754-65b3a47c60eff-df\"",
       "file_path": "documentation/iokit/scsi_sense_data/api-1587971-command_specific_information_4.md",
       "hash": "fa12f450b9962a2cfa0e4effb14d83ee7fa06aff5e2cb42b262099c44df36655"
     },
@@ -137956,7 +137956,7 @@
       "hash": "d921addbae4bdf153e4ce380095babaa7b1d10f3a7a8829d9a500a9d555f7676"
     },
     "https://developer.apple.com/tutorials/data/documentation/iokit/scsicmd_inquiry_page80_header_spc_16/1572945-page_length.json": {
-      "etag": "\"2954-65b3a47aaa42e-df\"",
+      "etag": "\"2954-65b3a47aaa42e\"",
       "file_path": "documentation/iokit/scsicmd_inquiry_page80_header_spc_16/api-1572945-page_length.md",
       "hash": "bfcd385ae1b200c2ddcbe19ad6077d41ffa56c01604a4b37c5e61b75ba5bbaf0"
     },

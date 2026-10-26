@@ -1,0 +1,750 @@
+{
+  "hashes": {
+    "https://docs.swift.org/latest/data/documentation/diagnostics.json": {
+      "etag": "\"7b7-659e1d5569980\"",
+      "file_path": "documentation/Swift-Org/diagnostics/diagnostics.md",
+      "hash": "333ab2fc59d4a900728f70c9ff5da3ff2563a37b47dea572116bde9c80349f2a"
+    },
+    "https://docs.swift.org/latest/data/documentation/diagnostics/actor-isolated-call.json": {
+      "etag": "\"41a8-659e1d5569980\"",
+      "file_path": "documentation/Swift-Org/diagnostics/actor-isolated-call.md",
+      "hash": "9ffb434f281edcc74456c3dbaf36d0ceff1b214c0b6a8d28b2b7f1782c24ddc6"
+    },
+    "https://docs.swift.org/latest/data/documentation/diagnostics/actor-isolated-mutating-async.json": {
+      "etag": "\"590e-659e1d5569980\"",
+      "file_path": "documentation/Swift-Org/diagnostics/actor-isolated-mutating-async.md",
+      "hash": "a0ff6120f43c0c169c9c7621666320092092fca66fc09b7bf2ca440ff88ad78c"
+    },
+    "https://docs.swift.org/latest/data/documentation/diagnostics/add-preconcurrency-import.json": {
+      "etag": "\"36ac-659e1d5569980\"",
+      "file_path": "documentation/Swift-Org/diagnostics/add-preconcurrency-import.md",
+      "hash": "84d26db2a58f1ae4184f5f9460e1c77392257f9f21b7254923a2449e1d167e0a"
+    },
+    "https://docs.swift.org/latest/data/documentation/diagnostics/always-available-domain.json": {
+      "etag": "\"3133-659e1d5569980\"",
+      "file_path": "documentation/Swift-Org/diagnostics/always-available-domain.md",
+      "hash": "0c157ad21ac73ea786b12ae9d416a84333e097698224aa1f58c5fc0d5a28801a"
+    },
+    "https://docs.swift.org/latest/data/documentation/diagnostics/availability-unrecognized-name.json": {
+      "etag": "\"327e-659e1d5569980\"",
+      "file_path": "documentation/Swift-Org/diagnostics/availability-unrecognized-name.md",
+      "hash": "a0f61dfb37a4dd050ecf24e6e088b8d384ed775181a492641e9bd5a4f1982cfa"
+    },
+    "https://docs.swift.org/latest/data/documentation/diagnostics/clang-declaration-import.json": {
+      "etag": "\"2fee-659e1d5569980\"",
+      "file_path": "documentation/Swift-Org/diagnostics/clang-declaration-import.md",
+      "hash": "1c7b453929dbbd7be75326a207bfc4a93acff43ddcbab4c28dd93f874cec5e99"
+    },
+    "https://docs.swift.org/latest/data/documentation/diagnostics/compilation-caching.json": {
+      "etag": "\"3989-659e1d5569980\"",
+      "file_path": "documentation/Swift-Org/diagnostics/compilation-caching.md",
+      "hash": "999aa0972894322487919d8801caf4a2b2c7d5c8d2b10b6c342714010a638b39"
+    },
+    "https://docs.swift.org/latest/data/documentation/diagnostics/conformance-isolation.json": {
+      "etag": "\"4dac-659e1d5569980\"",
+      "file_path": "documentation/Swift-Org/diagnostics/conformance-isolation.md",
+      "hash": "213f145a173dccbfb2291cb519bce1dda240bd616add5f2f5a76688ed3a0c98f"
+    },
+    "https://docs.swift.org/latest/data/documentation/diagnostics/conversion-from-isolated-any-to-synchronous.json": {
+      "etag": "\"39d6-659e1d5569980\"",
+      "file_path": "documentation/Swift-Org/diagnostics/conversion-from-isolated-any-to-synchronous.md",
+      "hash": "2307429a4a0e060076d18a07bc391873ba5b384f51c65ff169f98969bf6b9e45"
+    },
+    "https://docs.swift.org/latest/data/documentation/diagnostics/deprecated-declaration.json": {
+      "etag": "\"4480-659e1d5569980\"",
+      "file_path": "documentation/Swift-Org/diagnostics/deprecated-declaration.md",
+      "hash": "5363b067f15e8fef30f9b0c303db369325e71989fedf6a8c992e1c41cf6cf773"
+    },
+    "https://docs.swift.org/latest/data/documentation/diagnostics/diagnostic-groups.json": {
+      "etag": "\"10af2-659e1d5569980\"",
+      "file_path": "documentation/Swift-Org/diagnostics/diagnostic-groups.md",
+      "hash": "75cdcd6860b5aafa6983f118c078c2b85d50b5720f439d331b1afdbb2c03e160"
+    },
+    "https://docs.swift.org/latest/data/documentation/diagnostics/dynamic-callable-requirements.json": {
+      "etag": "\"5257-659e1d5569980\"",
+      "file_path": "documentation/Swift-Org/diagnostics/dynamic-callable-requirements.md",
+      "hash": "5e11325a1faaecd6159bf821ade62fed17b50e982138dbbfd884ceb266d84aae"
+    },
+    "https://docs.swift.org/latest/data/documentation/diagnostics/dynamic-exclusivity.json": {
+      "etag": "\"2aab-659e1d5569980\"",
+      "file_path": "documentation/Swift-Org/diagnostics/dynamic-exclusivity.md",
+      "hash": "3a155c26b14474d9db1dbf0563667e35f0aa1469395c57997445463f357102df"
+    },
+    "https://docs.swift.org/latest/data/documentation/diagnostics/embedded-restrictions.json": {
+      "etag": "\"45bd-659e1d5569980\"",
+      "file_path": "documentation/Swift-Org/diagnostics/embedded-restrictions.md",
+      "hash": "8665d58f1c8cb67dea38e7edf6af112e5b00cdee1153fa2030c37b775bf59e3a"
+    },
+    "https://docs.swift.org/latest/data/documentation/diagnostics/error-in-future-swift-version.json": {
+      "etag": "\"371f-659e1d5569980\"",
+      "file_path": "documentation/Swift-Org/diagnostics/error-in-future-swift-version.md",
+      "hash": "fcee5b4d92a1542c245f3699e2184bd46a07c608c27cb40a0a904f9fcc531d28"
+    },
+    "https://docs.swift.org/latest/data/documentation/diagnostics/exclusivity-violation.json": {
+      "etag": "\"4d1f-659e1d5569980\"",
+      "file_path": "documentation/Swift-Org/diagnostics/exclusivity-violation.md",
+      "hash": "4b0bd7a1867f1fcf1fe6b824b833578076719b14851df23d83dfe8caef822198"
+    },
+    "https://docs.swift.org/latest/data/documentation/diagnostics/existential-any.json": {
+      "etag": "\"23ef-659e1d5569980\"",
+      "file_path": "documentation/Swift-Org/diagnostics/existential-any.md",
+      "hash": "dc20998820ab20f6ed0186e0d2ecef165c5cab30966736b3297bf3b4e267e4d2"
+    },
+    "https://docs.swift.org/latest/data/documentation/diagnostics/existential-member-access-limitations.json": {
+      "etag": "\"512f-659e1d5569980\"",
+      "file_path": "documentation/Swift-Org/diagnostics/existential-member-access-limitations.md",
+      "hash": "be885d228ced4a83a41bb84bcdd95c23c84dbe668855fcf1fcf20d2f366313da"
+    },
+    "https://docs.swift.org/latest/data/documentation/diagnostics/existential-type.json": {
+      "etag": "\"ab32-659e1d5569980\"",
+      "file_path": "documentation/Swift-Org/diagnostics/existential-type.md",
+      "hash": "6712d02355b682e802ef3089f535c43625d78aaa2f79963a78ceedf6f50ff53b"
+    },
+    "https://docs.swift.org/latest/data/documentation/diagnostics/explicit-sendable-annotations.json": {
+      "etag": "\"390f-659e1d5569980\"",
+      "file_path": "documentation/Swift-Org/diagnostics/explicit-sendable-annotations.md",
+      "hash": "0fde5ed3143e2f2e9b087e1a4fc830052ea4ff223c55897a15d4cd0092a1c9c1"
+    },
+    "https://docs.swift.org/latest/data/documentation/diagnostics/foreign-reference-type.json": {
+      "etag": "\"4175-659e1d5569980\"",
+      "file_path": "documentation/Swift-Org/diagnostics/foreign-reference-type.md",
+      "hash": "8140a0723cf634993d7285d3fdb36b3121f0b1927be0d733ffbd7a4f65031f1d"
+    },
+    "https://docs.swift.org/latest/data/documentation/diagnostics/getting-non-sendable-values-out-of-actors.json": {
+      "etag": "\"4a60-659e1d5569980\"",
+      "file_path": "documentation/Swift-Org/diagnostics/getting-non-sendable-values-out-of-actors.md",
+      "hash": "d934bbaa0ca5236968a55de5da1ed963f137455ae4881fbc574a5cfa30d7453f"
+    },
+    "https://docs.swift.org/latest/data/documentation/diagnostics/implementation-only-deprecated.json": {
+      "etag": "\"439e-659e1d5569980\"",
+      "file_path": "documentation/Swift-Org/diagnostics/implementation-only-deprecated.md",
+      "hash": "9b35112a0d80255b9a92a43894a6ef59464e819f7cb0dd0875fe4c4674ea652a"
+    },
+    "https://docs.swift.org/latest/data/documentation/diagnostics/implicit-strong-capture.json": {
+      "etag": "\"3c02-659e1d5569980\"",
+      "file_path": "documentation/Swift-Org/diagnostics/implicit-strong-capture.md",
+      "hash": "3e1758a858481b4d90d7977d8cc835fb5c8ef854d7626c548d2eaf79963fbab5"
+    },
+    "https://docs.swift.org/latest/data/documentation/diagnostics/inconsistent-import-access.json": {
+      "etag": "\"2e45-659e1d5569980\"",
+      "file_path": "documentation/Swift-Org/diagnostics/inconsistent-import-access.md",
+      "hash": "2f3a72a91448867c8e96ed00ea2502033b7fb495e3850cdf2f8c30023626682a"
+    },
+    "https://docs.swift.org/latest/data/documentation/diagnostics/isolated-conformances.json": {
+      "etag": "\"3b78-659e1d5569980\"",
+      "file_path": "documentation/Swift-Org/diagnostics/isolated-conformances.md",
+      "hash": "299dd829c9330f14bb04c55de0e55a3fd9117bb438cb924464c88dd17cfe0f66"
+    },
+    "https://docs.swift.org/latest/data/documentation/diagnostics/member-import-visibility.json": {
+      "etag": "\"1d41-659e1d5569980\"",
+      "file_path": "documentation/Swift-Org/diagnostics/member-import-visibility.md",
+      "hash": "8d3b0bedd51b33e8d22ac4e74652bbdfd244ecfd6ea0947743c56787d4af266e"
+    },
+    "https://docs.swift.org/latest/data/documentation/diagnostics/missing-module-on-known-paths.json": {
+      "etag": "\"3886-659e1d5569980\"",
+      "file_path": "documentation/Swift-Org/diagnostics/missing-module-on-known-paths.md",
+      "hash": "e8613c3973ca7f6f810cd88d44d71af6c0a7852a470421ffd3c7ee6be3c6abfd"
+    },
+    "https://docs.swift.org/latest/data/documentation/diagnostics/module-not-testable.json": {
+      "etag": "\"31d7-659e1d5569980\"",
+      "file_path": "documentation/Swift-Org/diagnostics/module-not-testable.md",
+      "hash": "d22bf1e3593d9c504418ae8f0a0e43e664888497605d2cb9b1a17d222297ad95"
+    },
+    "https://docs.swift.org/latest/data/documentation/diagnostics/module-self-import.json": {
+      "etag": "\"2d68-659e1d5569980\"",
+      "file_path": "documentation/Swift-Org/diagnostics/module-self-import.md",
+      "hash": "14fcbf653cf7d9e9f9c1e8badf1a6d4a7f5b485ec5dc56903a1ca2e76784342a"
+    },
+    "https://docs.swift.org/latest/data/documentation/diagnostics/module-version-missing.json": {
+      "etag": "\"35a1-659e1d5569980\"",
+      "file_path": "documentation/Swift-Org/diagnostics/module-version-missing.md",
+      "hash": "550769c51790f339cfafba332b20e0e9332abada742ba3a89d3ee7b1f982fb8d"
+    },
+    "https://docs.swift.org/latest/data/documentation/diagnostics/multiple-inheritance.json": {
+      "etag": "\"41ee-659e1d5569980\"",
+      "file_path": "documentation/Swift-Org/diagnostics/multiple-inheritance.md",
+      "hash": "e3ba8057cb6f2ae694ebb7486967e28c335bf207345c84578737911894395f0f"
+    },
+    "https://docs.swift.org/latest/data/documentation/diagnostics/mutable-global-variable.json": {
+      "etag": "\"45dd-659e1d5569980\"",
+      "file_path": "documentation/Swift-Org/diagnostics/mutable-global-variable.md",
+      "hash": "9cfb8d22daa98aea0143080fd34b0950f5aebd408c3b674094ecb3970bb6cfb6"
+    },
+    "https://docs.swift.org/latest/data/documentation/diagnostics/no-usage.json": {
+      "etag": "\"3e5c-659e1d5569980\"",
+      "file_path": "documentation/Swift-Org/diagnostics/no-usage.md",
+      "hash": "a5daa9dc2b00e4717fe2efe13bc8a16feca04fbdf60fab509932e6fc93ae55e6"
+    },
+    "https://docs.swift.org/latest/data/documentation/diagnostics/no-use-throwing-unstructured-task.json": {
+      "etag": "\"3ab9-659e1d5569980\"",
+      "file_path": "documentation/Swift-Org/diagnostics/no-use-throwing-unstructured-task.md",
+      "hash": "cf1854e9e33e574bcb38d7ee25146da9e03fd0f684481dce516711fe9fdae533"
+    },
+    "https://docs.swift.org/latest/data/documentation/diagnostics/nominal-types.json": {
+      "etag": "\"3cdc-659e1d5569980\"",
+      "file_path": "documentation/Swift-Org/diagnostics/nominal-types.md",
+      "hash": "ab6e410b296a7b45a1b18a3bf6d12cb9c62c834fee6a888f5b0d3c17e96a6217"
+    },
+    "https://docs.swift.org/latest/data/documentation/diagnostics/non-sendable-superclass.json": {
+      "etag": "\"62d2-659e1d5569980\"",
+      "file_path": "documentation/Swift-Org/diagnostics/non-sendable-superclass.md",
+      "hash": "347af5755012783afcd40c7d71fb3904cfd9d7200b930cf5a9b1f0817ca39002"
+    },
+    "https://docs.swift.org/latest/data/documentation/diagnostics/non-sendable-types-and-objective-c-interoperability.json": {
+      "etag": "\"590d-659e1d5569980\"",
+      "file_path": "documentation/Swift-Org/diagnostics/non-sendable-types-and-objective-c-interoperability.md",
+      "hash": "cc7d91c994c324c004efb57f3b28e60bc2996309d22e356b4277b09a295aba3a"
+    },
+    "https://docs.swift.org/latest/data/documentation/diagnostics/non-sendable-values-in-async-conformances-and-overrides.json": {
+      "etag": "\"6049-659e1d5569980\"",
+      "file_path": "documentation/Swift-Org/diagnostics/non-sendable-values-in-async-conformances-and-overrides.md",
+      "hash": "c07e964ef957d036306e878e1951a440cefcc78ef6f0bb8acbf09fb6a20bde7c"
+    },
+    "https://docs.swift.org/latest/data/documentation/diagnostics/nonisolated-nonsending-by-default.json": {
+      "etag": "\"31b0-659e1d5569980\"",
+      "file_path": "documentation/Swift-Org/diagnostics/nonisolated-nonsending-by-default.md",
+      "hash": "280b76027d10316f64405909d6ff4008a55ae50600f14b2a40f0659833966990"
+    },
+    "https://docs.swift.org/latest/data/documentation/diagnostics/old-suppressed-associatedtypes.json": {
+      "etag": "\"6cb1-659e1d5569980\"",
+      "file_path": "documentation/Swift-Org/diagnostics/old-suppressed-associatedtypes.md",
+      "hash": "609a6cf9ad0374c9aed0f29795a50a9de39e8d15343c24d7305af5a58ee6d1c4"
+    },
+    "https://docs.swift.org/latest/data/documentation/diagnostics/opaque-type-inference.json": {
+      "etag": "\"48c4-659e1d5569980\"",
+      "file_path": "documentation/Swift-Org/diagnostics/opaque-type-inference.md",
+      "hash": "be399fc1ea63ebf1d29888cfa811d45274f64a6efc9e6ea96d65d35522111b14"
+    },
+    "https://docs.swift.org/latest/data/documentation/diagnostics/option-obsoleted-by-module-selectors.json": {
+      "etag": "\"31df-659e1d5569980\"",
+      "file_path": "documentation/Swift-Org/diagnostics/option-obsoleted-by-module-selectors.md",
+      "hash": "753f8f9c9c5e7a3b8506edbff53044d58754a2a7c0a78fe89969b1f520497a56"
+    },
+    "https://docs.swift.org/latest/data/documentation/diagnostics/oslog.json": {
+      "etag": "\"2f0e-659e1d5569980\"",
+      "file_path": "documentation/Swift-Org/diagnostics/oslog.md",
+      "hash": "071e7c24a5ac367c46cf3776e12c335f1d0d418acfeff446f5854c1f68a2642d"
+    },
+    "https://docs.swift.org/latest/data/documentation/diagnostics/performance-hints.json": {
+      "etag": "\"5316-659e1d5569980\"",
+      "file_path": "documentation/Swift-Org/diagnostics/performance-hints.md",
+      "hash": "b916ac7c561134b3fb48db85b225398d1e12cb4a48fc931485b377acc8d62afc"
+    },
+    "https://docs.swift.org/latest/data/documentation/diagnostics/preconcurrency-import.json": {
+      "etag": "\"2b8e-659e1d5569980\"",
+      "file_path": "documentation/Swift-Org/diagnostics/preconcurrency-import.md",
+      "hash": "16522e24900cdcddb0ffe381a6f8000d275c3263cb732bdd01def959f9dc48b4"
+    },
+    "https://docs.swift.org/latest/data/documentation/diagnostics/property-wrapper-requirements.json": {
+      "etag": "\"3348-659e1d5569980\"",
+      "file_path": "documentation/Swift-Org/diagnostics/property-wrapper-requirements.md",
+      "hash": "7049f9fc8e8533efe6eba7f21930592cb80488d402311df9013ffe2052b89d1b"
+    },
+    "https://docs.swift.org/latest/data/documentation/diagnostics/protocol-type-non-conformance.json": {
+      "etag": "\"6570-659e1d5569980\"",
+      "file_path": "documentation/Swift-Org/diagnostics/protocol-type-non-conformance.md",
+      "hash": "77ad29a853e362b6f5d88b8a2bc5c3aec2578279ccc36c479e1b6d448518049f"
+    },
+    "https://docs.swift.org/latest/data/documentation/diagnostics/result-builder-methods.json": {
+      "etag": "\"3d62-659e1d5569980\"",
+      "file_path": "documentation/Swift-Org/diagnostics/result-builder-methods.md",
+      "hash": "c6cf030a0dae10da0ad4f960c349572dd1927210595e242de190efd2559590e6"
+    },
+    "https://docs.swift.org/latest/data/documentation/diagnostics/return-type-implicit-copy.json": {
+      "etag": "\"8469-659e1d5569980\"",
+      "file_path": "documentation/Swift-Org/diagnostics/return-type-implicit-copy.md",
+      "hash": "4128b630c50149dd9daa5df028871606640c0ec59019b67f2519b9df2332bd41"
+    },
+    "https://docs.swift.org/latest/data/documentation/diagnostics/semantic-copies.json": {
+      "etag": "\"29aa-659e1d5569980\"",
+      "file_path": "documentation/Swift-Org/diagnostics/semantic-copies.md",
+      "hash": "e1ad97e8a21cf06ad16f310171afbee4758b245c39fe0dadf704b7124fb63dba"
+    },
+    "https://docs.swift.org/latest/data/documentation/diagnostics/sendable-closure-captures.json": {
+      "etag": "\"4ea5-659e1d5569980\"",
+      "file_path": "documentation/Swift-Org/diagnostics/sendable-closure-captures.md",
+      "hash": "d8539cec00aec7a1b044537d5ed1c1ec3af8473b1bd71fc92b54a33080728b1b"
+    },
+    "https://docs.swift.org/latest/data/documentation/diagnostics/sendable-metatypes.json": {
+      "etag": "\"4567-659e1d5569980\"",
+      "file_path": "documentation/Swift-Org/diagnostics/sendable-metatypes.md",
+      "hash": "ea2a9b9ff33c81ef602c54866381a77c10cb475aca9722cdc17c2ca917500114"
+    },
+    "https://docs.swift.org/latest/data/documentation/diagnostics/sending-closure-risks-data-race.json": {
+      "etag": "\"4722-659e1d5569980\"",
+      "file_path": "documentation/Swift-Org/diagnostics/sending-closure-risks-data-race.md",
+      "hash": "9427576dae0bd2ed736bef7a28ab7843cbd77af4646394a2acbc3480c15f9408"
+    },
+    "https://docs.swift.org/latest/data/documentation/diagnostics/sending-risks-data-race.json": {
+      "etag": "\"45da-659e1d5569980\"",
+      "file_path": "documentation/Swift-Org/diagnostics/sending-risks-data-race.md",
+      "hash": "660e8c1ca9a31ddaa93967ffe68f64a65ff2a1ddca96bc4873b70c0b68af37e4"
+    },
+    "https://docs.swift.org/latest/data/documentation/diagnostics/spi-import-ignored.json": {
+      "etag": "\"3469-659e1d5569980\"",
+      "file_path": "documentation/Swift-Org/diagnostics/spi-import-ignored.md",
+      "hash": "5aedec0b11e59092189fa7b5dee504d5fb08df747e340e3a3dcbf38e1c4b9bd4"
+    },
+    "https://docs.swift.org/latest/data/documentation/diagnostics/strict-language-features.json": {
+      "etag": "\"328f-659e1d5569980\"",
+      "file_path": "documentation/Swift-Org/diagnostics/strict-language-features.md",
+      "hash": "08b467244410ac5c5d06ee9c2047d9e0b5fe98f8f472105e9c6bf6fad3f32202"
+    },
+    "https://docs.swift.org/latest/data/documentation/diagnostics/strict-memory-safety.json": {
+      "etag": "\"4ee8-659e1d5569980\"",
+      "file_path": "documentation/Swift-Org/diagnostics/strict-memory-safety.md",
+      "hash": "61dd17a270ae8cf37e284c18e734727c9869cf3ecc8fb90fa94d87f7177d2bc5"
+    },
+    "https://docs.swift.org/latest/data/documentation/diagnostics/string-interpolation-conformance.json": {
+      "etag": "\"4bd5-659e1d5569980\"",
+      "file_path": "documentation/Swift-Org/diagnostics/string-interpolation-conformance.md",
+      "hash": "d28fdb48050eaa11ecce15044f8639e1a827b65e6c960a689cd71f73d2dc62b6"
+    },
+    "https://docs.swift.org/latest/data/documentation/diagnostics/temporary-pointers.json": {
+      "etag": "\"58c9-659e1d5569980\"",
+      "file_path": "documentation/Swift-Org/diagnostics/temporary-pointers.md",
+      "hash": "0b5a0e5eedecf1088c242c1aa8b37983f30c8b559ed731cfd54b4fb88d773d75"
+    },
+    "https://docs.swift.org/latest/data/documentation/diagnostics/trailing-closure-matching.json": {
+      "etag": "\"73ce-659e1d5569980\"",
+      "file_path": "documentation/Swift-Org/diagnostics/trailing-closure-matching.md",
+      "hash": "ac8f0c8d6ef6b72b236e2a98f08e452e47d10328b43157237cb9142640c28c28"
+    },
+    "https://docs.swift.org/latest/data/documentation/diagnostics/unavailable-sendable-conformance.json": {
+      "etag": "\"605e-659e1d5569980\"",
+      "file_path": "documentation/Swift-Org/diagnostics/unavailable-sendable-conformance.md",
+      "hash": "a296cb5d9b39eb2481d3f1934d96a1f152d70413880996a5f54607832c109097"
+    },
+    "https://docs.swift.org/latest/data/documentation/diagnostics/unknown-warning-group.json": {
+      "etag": "\"2f36-659e1d5569980\"",
+      "file_path": "documentation/Swift-Org/diagnostics/unknown-warning-group.md",
+      "hash": "35bcfc0d0e9568e26071478a18e30a5cba75186a825a4f3ce634252250dd66b3"
+    },
+    "https://docs.swift.org/latest/data/documentation/diagnostics/unnecessary-effect-marker.json": {
+      "etag": "\"4386-659e1d5569980\"",
+      "file_path": "documentation/Swift-Org/diagnostics/unnecessary-effect-marker.md",
+      "hash": "a6e60393de294602183c38a94c8d1b687956ae98460dba0df2ce0eda219a9a74"
+    },
+    "https://docs.swift.org/latest/data/documentation/diagnostics/unnecessary-unsafe.json": {
+      "etag": "\"4132-659e1d5569980\"",
+      "file_path": "documentation/Swift-Org/diagnostics/unnecessary-unsafe.md",
+      "hash": "7fe70267717b09c53347e59fe2077da74e30b75aa184bb251a975eee3c064c00"
+    },
+    "https://docs.swift.org/latest/data/documentation/diagnostics/unsupported-scoped-import.json": {
+      "etag": "\"314e-659e1d5569980\"",
+      "file_path": "documentation/Swift-Org/diagnostics/unsupported-scoped-import.md",
+      "hash": "f2c935d2f763bc7b9f4084820383ea2b01aae2057830feddae31afd11f882261"
+    },
+    "https://docs.swift.org/latest/data/documentation/diagnostics/untyped-throws.json": {
+      "etag": "\"3293-659e1d5569980\"",
+      "file_path": "documentation/Swift-Org/diagnostics/untyped-throws.md",
+      "hash": "ccbcb12caaaaa444d8303f541a0686396be36abb362d10b444f856908092e135"
+    },
+    "https://docs.swift.org/latest/data/documentation/diagnostics/unused-import-access.json": {
+      "etag": "\"3598-659e1d5569980\"",
+      "file_path": "documentation/Swift-Org/diagnostics/unused-import-access.md",
+      "hash": "3016c4bbd3bc089e829a2810ed4388a30846cade6e9d64f2e16f50038a3ae65a"
+    },
+    "https://docs.swift.org/latest/data/documentation/diagnostics/upcoming-language-features.json": {
+      "etag": "\"1708-659e1d5569980\"",
+      "file_path": "documentation/Swift-Org/diagnostics/upcoming-language-features.md",
+      "hash": "ce81dec926092e5e055043d1cc33472463b5a036f537531ea0aabaabccae539c"
+    },
+    "https://docs.swift.org/latest/data/documentation/diagnostics/use-any-apple-os-availability.json": {
+      "etag": "\"3a57-659e1d5569980\"",
+      "file_path": "documentation/Swift-Org/diagnostics/use-any-apple-os-availability.md",
+      "hash": "6518aec52812e6ab41c62ac3e15d02975c1390548e9d32a8d2d306f72aee9264"
+    },
+    "https://docs.swift.org/latest/data/documentation/diagnostics/useless-availability-check.json": {
+      "etag": "\"3562-659e1d5569980\"",
+      "file_path": "documentation/Swift-Org/diagnostics/useless-availability-check.md",
+      "hash": "36d40b308d83b963795fff80967339d1728f332e87837ea401239b602a9e8c3b"
+    },
+    "https://docs.swift.org/latest/data/documentation/diagnostics/useless-conditional-statement.json": {
+      "etag": "\"40f5-659e1d5569980\"",
+      "file_path": "documentation/Swift-Org/diagnostics/useless-conditional-statement.md",
+      "hash": "45725230b805a764d0d6f0635a05134f7f84ead122f3defd6f73da1992ec7572"
+    },
+    "https://docs.swift.org/latest/data/documentation/diagnostics/variable-never-mutated.json": {
+      "etag": "\"3e12-659e1d5569980\"",
+      "file_path": "documentation/Swift-Org/diagnostics/variable-never-mutated.md",
+      "hash": "51e597cc1db04ca8e047cba845d0b034f11512bf6440a557e0e96a2932f6e1f4"
+    },
+    "https://docs.swift.org/latest/documentation/diagnostics": {
+      "etag": "\"7b7-659e1d5569980\"",
+      "file_path": "documentation/Swift-Org/diagnostics/diagnostics.md",
+      "hash": "333ab2fc59d4a900728f70c9ff5da3ff2563a37b47dea572116bde9c80349f2a"
+    },
+    "https://docs.swift.org/latest/documentation/diagnostics/actor-isolated-call": {
+      "etag": "\"41a8-659e1d5569980\"",
+      "file_path": "documentation/Swift-Org/diagnostics/actor-isolated-call.md",
+      "hash": "9ffb434f281edcc74456c3dbaf36d0ceff1b214c0b6a8d28b2b7f1782c24ddc6"
+    },
+    "https://docs.swift.org/latest/documentation/diagnostics/actor-isolated-mutating-async": {
+      "etag": "\"590e-659e1d5569980\"",
+      "file_path": "documentation/Swift-Org/diagnostics/actor-isolated-mutating-async.md",
+      "hash": "a0ff6120f43c0c169c9c7621666320092092fca66fc09b7bf2ca440ff88ad78c"
+    },
+    "https://docs.swift.org/latest/documentation/diagnostics/add-preconcurrency-import": {
+      "etag": "\"36ac-659e1d5569980\"",
+      "file_path": "documentation/Swift-Org/diagnostics/add-preconcurrency-import.md",
+      "hash": "84d26db2a58f1ae4184f5f9460e1c77392257f9f21b7254923a2449e1d167e0a"
+    },
+    "https://docs.swift.org/latest/documentation/diagnostics/always-available-domain": {
+      "etag": "\"3133-659e1d5569980\"",
+      "file_path": "documentation/Swift-Org/diagnostics/always-available-domain.md",
+      "hash": "0c157ad21ac73ea786b12ae9d416a84333e097698224aa1f58c5fc0d5a28801a"
+    },
+    "https://docs.swift.org/latest/documentation/diagnostics/availability-unrecognized-name": {
+      "etag": "\"327e-659e1d5569980\"",
+      "file_path": "documentation/Swift-Org/diagnostics/availability-unrecognized-name.md",
+      "hash": "a0f61dfb37a4dd050ecf24e6e088b8d384ed775181a492641e9bd5a4f1982cfa"
+    },
+    "https://docs.swift.org/latest/documentation/diagnostics/clang-declaration-import": {
+      "etag": "\"2fee-659e1d5569980\"",
+      "file_path": "documentation/Swift-Org/diagnostics/clang-declaration-import.md",
+      "hash": "1c7b453929dbbd7be75326a207bfc4a93acff43ddcbab4c28dd93f874cec5e99"
+    },
+    "https://docs.swift.org/latest/documentation/diagnostics/compilation-caching": {
+      "etag": "\"3989-659e1d5569980\"",
+      "file_path": "documentation/Swift-Org/diagnostics/compilation-caching.md",
+      "hash": "999aa0972894322487919d8801caf4a2b2c7d5c8d2b10b6c342714010a638b39"
+    },
+    "https://docs.swift.org/latest/documentation/diagnostics/conformance-isolation": {
+      "etag": "\"4dac-659e1d5569980\"",
+      "file_path": "documentation/Swift-Org/diagnostics/conformance-isolation.md",
+      "hash": "213f145a173dccbfb2291cb519bce1dda240bd616add5f2f5a76688ed3a0c98f"
+    },
+    "https://docs.swift.org/latest/documentation/diagnostics/conversion-from-isolated-any-to-synchronous": {
+      "etag": "\"39d6-659e1d5569980\"",
+      "file_path": "documentation/Swift-Org/diagnostics/conversion-from-isolated-any-to-synchronous.md",
+      "hash": "2307429a4a0e060076d18a07bc391873ba5b384f51c65ff169f98969bf6b9e45"
+    },
+    "https://docs.swift.org/latest/documentation/diagnostics/deprecated-declaration": {
+      "etag": "\"4480-659e1d5569980\"",
+      "file_path": "documentation/Swift-Org/diagnostics/deprecated-declaration.md",
+      "hash": "5363b067f15e8fef30f9b0c303db369325e71989fedf6a8c992e1c41cf6cf773"
+    },
+    "https://docs.swift.org/latest/documentation/diagnostics/diagnostic-groups": {
+      "etag": "\"10af2-659e1d5569980\"",
+      "file_path": "documentation/Swift-Org/diagnostics/diagnostic-groups.md",
+      "hash": "75cdcd6860b5aafa6983f118c078c2b85d50b5720f439d331b1afdbb2c03e160"
+    },
+    "https://docs.swift.org/latest/documentation/diagnostics/dynamic-callable-requirements": {
+      "etag": "\"5257-659e1d5569980\"",
+      "file_path": "documentation/Swift-Org/diagnostics/dynamic-callable-requirements.md",
+      "hash": "5e11325a1faaecd6159bf821ade62fed17b50e982138dbbfd884ceb266d84aae"
+    },
+    "https://docs.swift.org/latest/documentation/diagnostics/dynamic-exclusivity": {
+      "etag": "\"2aab-659e1d5569980\"",
+      "file_path": "documentation/Swift-Org/diagnostics/dynamic-exclusivity.md",
+      "hash": "3a155c26b14474d9db1dbf0563667e35f0aa1469395c57997445463f357102df"
+    },
+    "https://docs.swift.org/latest/documentation/diagnostics/embedded-restrictions": {
+      "etag": "\"45bd-659e1d5569980\"",
+      "file_path": "documentation/Swift-Org/diagnostics/embedded-restrictions.md",
+      "hash": "8665d58f1c8cb67dea38e7edf6af112e5b00cdee1153fa2030c37b775bf59e3a"
+    },
+    "https://docs.swift.org/latest/documentation/diagnostics/error-in-future-swift-version": {
+      "etag": "\"371f-659e1d5569980\"",
+      "file_path": "documentation/Swift-Org/diagnostics/error-in-future-swift-version.md",
+      "hash": "fcee5b4d92a1542c245f3699e2184bd46a07c608c27cb40a0a904f9fcc531d28"
+    },
+    "https://docs.swift.org/latest/documentation/diagnostics/exclusivity-violation": {
+      "etag": "\"4d1f-659e1d5569980\"",
+      "file_path": "documentation/Swift-Org/diagnostics/exclusivity-violation.md",
+      "hash": "4b0bd7a1867f1fcf1fe6b824b833578076719b14851df23d83dfe8caef822198"
+    },
+    "https://docs.swift.org/latest/documentation/diagnostics/existential-any": {
+      "etag": "\"23ef-659e1d5569980\"",
+      "file_path": "documentation/Swift-Org/diagnostics/existential-any.md",
+      "hash": "dc20998820ab20f6ed0186e0d2ecef165c5cab30966736b3297bf3b4e267e4d2"
+    },
+    "https://docs.swift.org/latest/documentation/diagnostics/existential-member-access-limitations": {
+      "etag": "\"512f-659e1d5569980\"",
+      "file_path": "documentation/Swift-Org/diagnostics/existential-member-access-limitations.md",
+      "hash": "be885d228ced4a83a41bb84bcdd95c23c84dbe668855fcf1fcf20d2f366313da"
+    },
+    "https://docs.swift.org/latest/documentation/diagnostics/existential-type": {
+      "etag": "\"ab32-659e1d5569980\"",
+      "file_path": "documentation/Swift-Org/diagnostics/existential-type.md",
+      "hash": "6712d02355b682e802ef3089f535c43625d78aaa2f79963a78ceedf6f50ff53b"
+    },
+    "https://docs.swift.org/latest/documentation/diagnostics/explicit-sendable-annotations": {
+      "etag": "\"390f-659e1d5569980\"",
+      "file_path": "documentation/Swift-Org/diagnostics/explicit-sendable-annotations.md",
+      "hash": "0fde5ed3143e2f2e9b087e1a4fc830052ea4ff223c55897a15d4cd0092a1c9c1"
+    },
+    "https://docs.swift.org/latest/documentation/diagnostics/foreign-reference-type": {
+      "etag": "\"4175-659e1d5569980\"",
+      "file_path": "documentation/Swift-Org/diagnostics/foreign-reference-type.md",
+      "hash": "8140a0723cf634993d7285d3fdb36b3121f0b1927be0d733ffbd7a4f65031f1d"
+    },
+    "https://docs.swift.org/latest/documentation/diagnostics/getting-non-sendable-values-out-of-actors": {
+      "etag": "\"4a60-659e1d5569980\"",
+      "file_path": "documentation/Swift-Org/diagnostics/getting-non-sendable-values-out-of-actors.md",
+      "hash": "d934bbaa0ca5236968a55de5da1ed963f137455ae4881fbc574a5cfa30d7453f"
+    },
+    "https://docs.swift.org/latest/documentation/diagnostics/implementation-only-deprecated": {
+      "etag": "\"439e-659e1d5569980\"",
+      "file_path": "documentation/Swift-Org/diagnostics/implementation-only-deprecated.md",
+      "hash": "9b35112a0d80255b9a92a43894a6ef59464e819f7cb0dd0875fe4c4674ea652a"
+    },
+    "https://docs.swift.org/latest/documentation/diagnostics/implicit-strong-capture": {
+      "etag": "\"3c02-659e1d5569980\"",
+      "file_path": "documentation/Swift-Org/diagnostics/implicit-strong-capture.md",
+      "hash": "3e1758a858481b4d90d7977d8cc835fb5c8ef854d7626c548d2eaf79963fbab5"
+    },
+    "https://docs.swift.org/latest/documentation/diagnostics/inconsistent-import-access": {
+      "etag": "\"2e45-659e1d5569980\"",
+      "file_path": "documentation/Swift-Org/diagnostics/inconsistent-import-access.md",
+      "hash": "2f3a72a91448867c8e96ed00ea2502033b7fb495e3850cdf2f8c30023626682a"
+    },
+    "https://docs.swift.org/latest/documentation/diagnostics/isolated-conformances": {
+      "etag": "\"3b78-659e1d5569980\"",
+      "file_path": "documentation/Swift-Org/diagnostics/isolated-conformances.md",
+      "hash": "299dd829c9330f14bb04c55de0e55a3fd9117bb438cb924464c88dd17cfe0f66"
+    },
+    "https://docs.swift.org/latest/documentation/diagnostics/member-import-visibility": {
+      "etag": "\"1d41-659e1d5569980\"",
+      "file_path": "documentation/Swift-Org/diagnostics/member-import-visibility.md",
+      "hash": "8d3b0bedd51b33e8d22ac4e74652bbdfd244ecfd6ea0947743c56787d4af266e"
+    },
+    "https://docs.swift.org/latest/documentation/diagnostics/missing-module-on-known-paths": {
+      "etag": "\"3886-659e1d5569980\"",
+      "file_path": "documentation/Swift-Org/diagnostics/missing-module-on-known-paths.md",
+      "hash": "e8613c3973ca7f6f810cd88d44d71af6c0a7852a470421ffd3c7ee6be3c6abfd"
+    },
+    "https://docs.swift.org/latest/documentation/diagnostics/module-not-testable": {
+      "etag": "\"31d7-659e1d5569980\"",
+      "file_path": "documentation/Swift-Org/diagnostics/module-not-testable.md",
+      "hash": "d22bf1e3593d9c504418ae8f0a0e43e664888497605d2cb9b1a17d222297ad95"
+    },
+    "https://docs.swift.org/latest/documentation/diagnostics/module-self-import": {
+      "etag": "\"2d68-659e1d5569980\"",
+      "file_path": "documentation/Swift-Org/diagnostics/module-self-import.md",
+      "hash": "14fcbf653cf7d9e9f9c1e8badf1a6d4a7f5b485ec5dc56903a1ca2e76784342a"
+    },
+    "https://docs.swift.org/latest/documentation/diagnostics/module-version-missing": {
+      "etag": "\"35a1-659e1d5569980\"",
+      "file_path": "documentation/Swift-Org/diagnostics/module-version-missing.md",
+      "hash": "550769c51790f339cfafba332b20e0e9332abada742ba3a89d3ee7b1f982fb8d"
+    },
+    "https://docs.swift.org/latest/documentation/diagnostics/multiple-inheritance": {
+      "etag": "\"41ee-659e1d5569980\"",
+      "file_path": "documentation/Swift-Org/diagnostics/multiple-inheritance.md",
+      "hash": "e3ba8057cb6f2ae694ebb7486967e28c335bf207345c84578737911894395f0f"
+    },
+    "https://docs.swift.org/latest/documentation/diagnostics/mutable-global-variable": {
+      "etag": "\"45dd-659e1d5569980\"",
+      "file_path": "documentation/Swift-Org/diagnostics/mutable-global-variable.md",
+      "hash": "9cfb8d22daa98aea0143080fd34b0950f5aebd408c3b674094ecb3970bb6cfb6"
+    },
+    "https://docs.swift.org/latest/documentation/diagnostics/no-usage": {
+      "etag": "\"3e5c-659e1d5569980\"",
+      "file_path": "documentation/Swift-Org/diagnostics/no-usage.md",
+      "hash": "a5daa9dc2b00e4717fe2efe13bc8a16feca04fbdf60fab509932e6fc93ae55e6"
+    },
+    "https://docs.swift.org/latest/documentation/diagnostics/no-use-throwing-unstructured-task": {
+      "etag": "\"3ab9-659e1d5569980\"",
+      "file_path": "documentation/Swift-Org/diagnostics/no-use-throwing-unstructured-task.md",
+      "hash": "cf1854e9e33e574bcb38d7ee25146da9e03fd0f684481dce516711fe9fdae533"
+    },
+    "https://docs.swift.org/latest/documentation/diagnostics/nominal-types": {
+      "etag": "\"3cdc-659e1d5569980\"",
+      "file_path": "documentation/Swift-Org/diagnostics/nominal-types.md",
+      "hash": "ab6e410b296a7b45a1b18a3bf6d12cb9c62c834fee6a888f5b0d3c17e96a6217"
+    },
+    "https://docs.swift.org/latest/documentation/diagnostics/non-sendable-superclass": {
+      "etag": "\"62d2-659e1d5569980\"",
+      "file_path": "documentation/Swift-Org/diagnostics/non-sendable-superclass.md",
+      "hash": "347af5755012783afcd40c7d71fb3904cfd9d7200b930cf5a9b1f0817ca39002"
+    },
+    "https://docs.swift.org/latest/documentation/diagnostics/non-sendable-types-and-objective-c-interoperability": {
+      "etag": "\"590d-659e1d5569980\"",
+      "file_path": "documentation/Swift-Org/diagnostics/non-sendable-types-and-objective-c-interoperability.md",
+      "hash": "cc7d91c994c324c004efb57f3b28e60bc2996309d22e356b4277b09a295aba3a"
+    },
+    "https://docs.swift.org/latest/documentation/diagnostics/non-sendable-values-in-async-conformances-and-overrides": {
+      "etag": "\"6049-659e1d5569980\"",
+      "file_path": "documentation/Swift-Org/diagnostics/non-sendable-values-in-async-conformances-and-overrides.md",
+      "hash": "c07e964ef957d036306e878e1951a440cefcc78ef6f0bb8acbf09fb6a20bde7c"
+    },
+    "https://docs.swift.org/latest/documentation/diagnostics/nonisolated-nonsending-by-default": {
+      "etag": "\"31b0-659e1d5569980\"",
+      "file_path": "documentation/Swift-Org/diagnostics/nonisolated-nonsending-by-default.md",
+      "hash": "280b76027d10316f64405909d6ff4008a55ae50600f14b2a40f0659833966990"
+    },
+    "https://docs.swift.org/latest/documentation/diagnostics/old-suppressed-associatedtypes": {
+      "etag": "\"6cb1-659e1d5569980\"",
+      "file_path": "documentation/Swift-Org/diagnostics/old-suppressed-associatedtypes.md",
+      "hash": "609a6cf9ad0374c9aed0f29795a50a9de39e8d15343c24d7305af5a58ee6d1c4"
+    },
+    "https://docs.swift.org/latest/documentation/diagnostics/opaque-type-inference": {
+      "etag": "\"48c4-659e1d5569980\"",
+      "file_path": "documentation/Swift-Org/diagnostics/opaque-type-inference.md",
+      "hash": "be399fc1ea63ebf1d29888cfa811d45274f64a6efc9e6ea96d65d35522111b14"
+    },
+    "https://docs.swift.org/latest/documentation/diagnostics/option-obsoleted-by-module-selectors": {
+      "etag": "\"31df-659e1d5569980\"",
+      "file_path": "documentation/Swift-Org/diagnostics/option-obsoleted-by-module-selectors.md",
+      "hash": "753f8f9c9c5e7a3b8506edbff53044d58754a2a7c0a78fe89969b1f520497a56"
+    },
+    "https://docs.swift.org/latest/documentation/diagnostics/oslog": {
+      "etag": "\"2f0e-659e1d5569980\"",
+      "file_path": "documentation/Swift-Org/diagnostics/oslog.md",
+      "hash": "071e7c24a5ac367c46cf3776e12c335f1d0d418acfeff446f5854c1f68a2642d"
+    },
+    "https://docs.swift.org/latest/documentation/diagnostics/performance-hints": {
+      "etag": "\"5316-659e1d5569980\"",
+      "file_path": "documentation/Swift-Org/diagnostics/performance-hints.md",
+      "hash": "b916ac7c561134b3fb48db85b225398d1e12cb4a48fc931485b377acc8d62afc"
+    },
+    "https://docs.swift.org/latest/documentation/diagnostics/preconcurrency-import": {
+      "etag": "\"2b8e-659e1d5569980\"",
+      "file_path": "documentation/Swift-Org/diagnostics/preconcurrency-import.md",
+      "hash": "16522e24900cdcddb0ffe381a6f8000d275c3263cb732bdd01def959f9dc48b4"
+    },
+    "https://docs.swift.org/latest/documentation/diagnostics/property-wrapper-requirements": {
+      "etag": "\"3348-659e1d5569980\"",
+      "file_path": "documentation/Swift-Org/diagnostics/property-wrapper-requirements.md",
+      "hash": "7049f9fc8e8533efe6eba7f21930592cb80488d402311df9013ffe2052b89d1b"
+    },
+    "https://docs.swift.org/latest/documentation/diagnostics/protocol-type-non-conformance": {
+      "etag": "\"6570-659e1d5569980\"",
+      "file_path": "documentation/Swift-Org/diagnostics/protocol-type-non-conformance.md",
+      "hash": "77ad29a853e362b6f5d88b8a2bc5c3aec2578279ccc36c479e1b6d448518049f"
+    },
+    "https://docs.swift.org/latest/documentation/diagnostics/result-builder-methods": {
+      "etag": "\"3d62-659e1d5569980\"",
+      "file_path": "documentation/Swift-Org/diagnostics/result-builder-methods.md",
+      "hash": "c6cf030a0dae10da0ad4f960c349572dd1927210595e242de190efd2559590e6"
+    },
+    "https://docs.swift.org/latest/documentation/diagnostics/return-type-implicit-copy": {
+      "etag": "\"8469-659e1d5569980\"",
+      "file_path": "documentation/Swift-Org/diagnostics/return-type-implicit-copy.md",
+      "hash": "4128b630c50149dd9daa5df028871606640c0ec59019b67f2519b9df2332bd41"
+    },
+    "https://docs.swift.org/latest/documentation/diagnostics/semantic-copies": {
+      "etag": "\"29aa-659e1d5569980\"",
+      "file_path": "documentation/Swift-Org/diagnostics/semantic-copies.md",
+      "hash": "e1ad97e8a21cf06ad16f310171afbee4758b245c39fe0dadf704b7124fb63dba"
+    },
+    "https://docs.swift.org/latest/documentation/diagnostics/sendable-closure-captures": {
+      "etag": "\"4ea5-659e1d5569980\"",
+      "file_path": "documentation/Swift-Org/diagnostics/sendable-closure-captures.md",
+      "hash": "d8539cec00aec7a1b044537d5ed1c1ec3af8473b1bd71fc92b54a33080728b1b"
+    },
+    "https://docs.swift.org/latest/documentation/diagnostics/sendable-metatypes": {
+      "etag": "\"4567-659e1d5569980\"",
+      "file_path": "documentation/Swift-Org/diagnostics/sendable-metatypes.md",
+      "hash": "ea2a9b9ff33c81ef602c54866381a77c10cb475aca9722cdc17c2ca917500114"
+    },
+    "https://docs.swift.org/latest/documentation/diagnostics/sending-closure-risks-data-race": {
+      "etag": "\"4722-659e1d5569980\"",
+      "file_path": "documentation/Swift-Org/diagnostics/sending-closure-risks-data-race.md",
+      "hash": "9427576dae0bd2ed736bef7a28ab7843cbd77af4646394a2acbc3480c15f9408"
+    },
+    "https://docs.swift.org/latest/documentation/diagnostics/sending-risks-data-race": {
+      "etag": "\"45da-659e1d5569980\"",
+      "file_path": "documentation/Swift-Org/diagnostics/sending-risks-data-race.md",
+      "hash": "660e8c1ca9a31ddaa93967ffe68f64a65ff2a1ddca96bc4873b70c0b68af37e4"
+    },
+    "https://docs.swift.org/latest/documentation/diagnostics/spi-import-ignored": {
+      "etag": "\"3469-659e1d5569980\"",
+      "file_path": "documentation/Swift-Org/diagnostics/spi-import-ignored.md",
+      "hash": "5aedec0b11e59092189fa7b5dee504d5fb08df747e340e3a3dcbf38e1c4b9bd4"
+    },
+    "https://docs.swift.org/latest/documentation/diagnostics/strict-language-features": {
+      "etag": "\"328f-659e1d5569980\"",
+      "file_path": "documentation/Swift-Org/diagnostics/strict-language-features.md",
+      "hash": "08b467244410ac5c5d06ee9c2047d9e0b5fe98f8f472105e9c6bf6fad3f32202"
+    },
+    "https://docs.swift.org/latest/documentation/diagnostics/strict-memory-safety": {
+      "etag": "\"4ee8-659e1d5569980\"",
+      "file_path": "documentation/Swift-Org/diagnostics/strict-memory-safety.md",
+      "hash": "61dd17a270ae8cf37e284c18e734727c9869cf3ecc8fb90fa94d87f7177d2bc5"
+    },
+    "https://docs.swift.org/latest/documentation/diagnostics/string-interpolation-conformance": {
+      "etag": "\"4bd5-659e1d5569980\"",
+      "file_path": "documentation/Swift-Org/diagnostics/string-interpolation-conformance.md",
+      "hash": "d28fdb48050eaa11ecce15044f8639e1a827b65e6c960a689cd71f73d2dc62b6"
+    },
+    "https://docs.swift.org/latest/documentation/diagnostics/temporary-pointers": {
+      "etag": "\"58c9-659e1d5569980\"",
+      "file_path": "documentation/Swift-Org/diagnostics/temporary-pointers.md",
+      "hash": "0b5a0e5eedecf1088c242c1aa8b37983f30c8b559ed731cfd54b4fb88d773d75"
+    },
+    "https://docs.swift.org/latest/documentation/diagnostics/trailing-closure-matching": {
+      "etag": "\"73ce-659e1d5569980\"",
+      "file_path": "documentation/Swift-Org/diagnostics/trailing-closure-matching.md",
+      "hash": "ac8f0c8d6ef6b72b236e2a98f08e452e47d10328b43157237cb9142640c28c28"
+    },
+    "https://docs.swift.org/latest/documentation/diagnostics/unavailable-sendable-conformance": {
+      "etag": "\"605e-659e1d5569980\"",
+      "file_path": "documentation/Swift-Org/diagnostics/unavailable-sendable-conformance.md",
+      "hash": "a296cb5d9b39eb2481d3f1934d96a1f152d70413880996a5f54607832c109097"
+    },
+    "https://docs.swift.org/latest/documentation/diagnostics/unknown-warning-group": {
+      "etag": "\"2f36-659e1d5569980\"",
+      "file_path": "documentation/Swift-Org/diagnostics/unknown-warning-group.md",
+      "hash": "35bcfc0d0e9568e26071478a18e30a5cba75186a825a4f3ce634252250dd66b3"
+    },
+    "https://docs.swift.org/latest/documentation/diagnostics/unnecessary-effect-marker": {
+      "etag": "\"4386-659e1d5569980\"",
+      "file_path": "documentation/Swift-Org/diagnostics/unnecessary-effect-marker.md",
+      "hash": "a6e60393de294602183c38a94c8d1b687956ae98460dba0df2ce0eda219a9a74"
+    },
+    "https://docs.swift.org/latest/documentation/diagnostics/unnecessary-unsafe": {
+      "etag": "\"4132-659e1d5569980\"",
+      "file_path": "documentation/Swift-Org/diagnostics/unnecessary-unsafe.md",
+      "hash": "7fe70267717b09c53347e59fe2077da74e30b75aa184bb251a975eee3c064c00"
+    },
+    "https://docs.swift.org/latest/documentation/diagnostics/unsupported-scoped-import": {
+      "etag": "\"314e-659e1d5569980\"",
+      "file_path": "documentation/Swift-Org/diagnostics/unsupported-scoped-import.md",
+      "hash": "f2c935d2f763bc7b9f4084820383ea2b01aae2057830feddae31afd11f882261"
+    },
+    "https://docs.swift.org/latest/documentation/diagnostics/untyped-throws": {
+      "etag": "\"3293-659e1d5569980\"",
+      "file_path": "documentation/Swift-Org/diagnostics/untyped-throws.md",
+      "hash": "ccbcb12caaaaa444d8303f541a0686396be36abb362d10b444f856908092e135"
+    },
+    "https://docs.swift.org/latest/documentation/diagnostics/unused-import-access": {
+      "etag": "\"3598-659e1d5569980\"",
+      "file_path": "documentation/Swift-Org/diagnostics/unused-import-access.md",
+      "hash": "3016c4bbd3bc089e829a2810ed4388a30846cade6e9d64f2e16f50038a3ae65a"
+    },
+    "https://docs.swift.org/latest/documentation/diagnostics/upcoming-language-features": {
+      "etag": "\"1708-659e1d5569980\"",
+      "file_path": "documentation/Swift-Org/diagnostics/upcoming-language-features.md",
+      "hash": "ce81dec926092e5e055043d1cc33472463b5a036f537531ea0aabaabccae539c"
+    },
+    "https://docs.swift.org/latest/documentation/diagnostics/use-any-apple-os-availability": {
+      "etag": "\"3a57-659e1d5569980\"",
+      "file_path": "documentation/Swift-Org/diagnostics/use-any-apple-os-availability.md",
+      "hash": "6518aec52812e6ab41c62ac3e15d02975c1390548e9d32a8d2d306f72aee9264"
+    },
+    "https://docs.swift.org/latest/documentation/diagnostics/useless-availability-check": {
+      "etag": "\"3562-659e1d5569980\"",
+      "file_path": "documentation/Swift-Org/diagnostics/useless-availability-check.md",
+      "hash": "36d40b308d83b963795fff80967339d1728f332e87837ea401239b602a9e8c3b"
+    },
+    "https://docs.swift.org/latest/documentation/diagnostics/useless-conditional-statement": {
+      "etag": "\"40f5-659e1d5569980\"",
+      "file_path": "documentation/Swift-Org/diagnostics/useless-conditional-statement.md",
+      "hash": "45725230b805a764d0d6f0635a05134f7f84ead122f3defd6f73da1992ec7572"
+    },
+    "https://docs.swift.org/latest/documentation/diagnostics/variable-never-mutated": {
+      "etag": "\"3e12-659e1d5569980\"",
+      "file_path": "documentation/Swift-Org/diagnostics/variable-never-mutated.md",
+      "hash": "51e597cc1db04ca8e047cba845d0b034f11512bf6440a557e0e96a2932f6e1f4"
+    }
+  },
+  "metadata": {
+    "render": {
+      "version": 2
+    },
+    "total_pages": 148
+  }
+}

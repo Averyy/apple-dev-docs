@@ -1,0 +1,48 @@
+---
+url: "https://docs.swift.org/latest/documentation/packagemanagerdocs/5.8"
+framework: "Swift-Org/PackageManagerDocs"
+---
+
+# SwiftPM 5.8 Release Notes
+
+**Framework**: Swift-Org/PackageManagerDocs  
+**Role**: Article
+
+#### Package manifest changes
+
+SwiftPM targets can now specify the upcoming language features they require. `Package.swift` manifest syntax has been expanded with an API to include setting `enableUpcomingFeature` and `enableExperimentalFeature` flags at the target level, as specified by [SE-0362](https://github.com/swiftlang/swift-evolution/blob/main/proposals/0362-piecemeal-future-features.md).
+
+SwiftPM now allows exposing an executable product that consists solely of a binary target that is backed by an artifact bundle. This allows vending binary executables as their own separate package, independently of plugins that are using them.
+
+In packages using tools version 5.8 or later, `Foundation` is no longer implicitly imported into package manifests. If `Foundation` APIs are used, the module needs to be imported explicitly.
+
+#### Package Registry Support
+
+SwiftPM now supports token authentication when interacting with a package registry. The `swift package-registry` command has two new subcommands `login` and `logout` as defined in [SE-0378](https://github.com/swiftlang/swift-evolution/blob/main/proposals/0378-package-registry-auth.md) for adding/removing registry credentials.
+
+#### Other improvements
+
+Improved handling of offline behavior when a compatible cached version of a dependency exists on disk in either the per-package or shared cache. SwiftPM will check for network availability status to determine if it should attempt to update a checked version of a dependency, and when offline will use the cached version without an update.
+
+New `--pkg-config-path` option on `build`, `test`, and `run` commands has been introduced as an alternative to passing `PKG_CONFIG_PATH` environment variable. It allows specifying alternative path to search for `.pc` files used by `pkg-config`. Use the option multiple times to specify more than one path.
+
+Added new `--emit-extension-block-symbols` and `--omit-extension-block-symbols` via `swift package dump-symbol-graph`. `--emit-extension-block-symbols` dumps symbol graph files that are extension block symbol format. The default behavior does not change. The `--omit-extension-block-symbols` flag will be used to explicitly disable the feature once the default behavior has been changed to `--emit-extension-block-symbols` in the future.
+
+## See Also
+
+- [SwiftPM 6.4 Release Notes](./api-6.4.md)
+  Swift Package Manager 6.4 makes Swift Build the new default build system, providing a unified build experience across all platforms Swift supports. This release also adds first-class support for generating Software Bill of Materials (SBOM) documents.
+- [SwiftPM 6.3 Release Notes](./api-6.3.md)
+- [SwiftPM 5.9 Release Notes](./api-5.9.md)
+- [SwiftPM 5.7 Release Notes](./api-5.7.md)
+- [SwiftPM 5.6 Release Notes](./api-5.6.md)
+- [SwiftPM 5.5 Release Notes](./api-5.5.md)
+- [SwiftPM 5.4 Release Notes](./api-5.4.md)
+  SwiftPM 5.4 includes several improvements, all of which are opt-in based on specifying a tools version of 5.4.
+- [SwiftPM 5.3 Release Notes](./api-5.3.md)
+  SwiftPM brings several new features in version 5.3, all of which are opt-in based on the tools-version.
+
+
+---
+
+*[View on docs.swift.org](https://docs.swift.org/latest/documentation/packagemanagerdocs/5.8)*

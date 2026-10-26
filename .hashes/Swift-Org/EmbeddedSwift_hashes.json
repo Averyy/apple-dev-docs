@@ -1,0 +1,400 @@
+{
+  "hashes": {
+    "https://docs.swift.org/latest/data/documentation/embeddedswift.json": {
+      "etag": "\"2e5f-659e1d5751e00\"",
+      "file_path": "documentation/Swift-Org/EmbeddedSwift/EmbeddedSwift.md",
+      "hash": "6f6d078c72baa140c65a0565c719b390be2c7cde3805d483d73a29360afca239"
+    },
+    "https://docs.swift.org/latest/data/documentation/embeddedswift/abi.json": {
+      "etag": "\"4bc4-659e1d5751e00\"",
+      "file_path": "documentation/Swift-Org/EmbeddedSwift/abi.md",
+      "hash": "5d753334297b41ed8351d5b70ec26acbfbb53bb89165507f9cc697c89eb9af1b"
+    },
+    "https://docs.swift.org/latest/data/documentation/embeddedswift/baremetal.json": {
+      "etag": "\"859a-659e1d5751e00\"",
+      "file_path": "documentation/Swift-Org/EmbeddedSwift/baremetal.md",
+      "hash": "8088072aee19024582728ebeaf64e8460c64360ffaca521bf0a569f1b207abe4"
+    },
+    "https://docs.swift.org/latest/data/documentation/embeddedswift/basics.json": {
+      "etag": "\"500c-659e1d5751e00\"",
+      "file_path": "documentation/Swift-Org/EmbeddedSwift/basics.md",
+      "hash": "284ac24cfc6c260f58448834a05b0b3eac54b8c56e5d0a5848f1b3e40e1793cc"
+    },
+    "https://docs.swift.org/latest/data/documentation/embeddedswift/conditionalcompilation.json": {
+      "etag": "\"19ee-659e1d5751e00\"",
+      "file_path": "documentation/Swift-Org/EmbeddedSwift/conditionalcompilation.md",
+      "hash": "cbc2d24309a7f3cb26585b2dc2a7751f578ba1a0966575d7348b166de5ff896f"
+    },
+    "https://docs.swift.org/latest/data/documentation/embeddedswift/esp32guide.json": {
+      "etag": "\"422d-659e1d5751e00\"",
+      "file_path": "documentation/Swift-Org/EmbeddedSwift/esp32guide.md",
+      "hash": "44338be7212fb180f646748273adbb1d48ddd50cfbd1b9bb363f8eec97e6ce7b"
+    },
+    "https://docs.swift.org/latest/data/documentation/embeddedswift/esp32ledstripguide.json": {
+      "etag": "\"43b1-659e1d5751e00\"",
+      "file_path": "documentation/Swift-Org/EmbeddedSwift/esp32ledstripguide.md",
+      "hash": "05ec70baf524491c2ef6abbbe33141c245fa064afd65c8d5decac533a4b77d9c"
+    },
+    "https://docs.swift.org/latest/data/documentation/embeddedswift/esp32uartechoguide.json": {
+      "etag": "\"4361-659e1d5751e00\"",
+      "file_path": "documentation/Swift-Org/EmbeddedSwift/esp32uartechoguide.md",
+      "hash": "24364f12312f28a4560587703cc4ef922cefc917f48f11da0a7298d7e38a3958"
+    },
+    "https://docs.swift.org/latest/data/documentation/embeddedswift/examples.json": {
+      "etag": "\"54e4-659e1d5751e00\"",
+      "file_path": "documentation/Swift-Org/EmbeddedSwift/examples.md",
+      "hash": "c8bfccafaac94484cf1951c009e09c061b9a263aa27bd078b2b2cdb8649a2ae8"
+    },
+    "https://docs.swift.org/latest/data/documentation/embeddedswift/existentials.json": {
+      "etag": "\"3f72-659e1d5751e00\"",
+      "file_path": "documentation/Swift-Org/EmbeddedSwift/existentials.md",
+      "hash": "802fb56c5bf3f4cc5c950b86b26e7840811d8696ea58ba5efac0ae0daba38e13"
+    },
+    "https://docs.swift.org/latest/data/documentation/embeddedswift/externaldependencies.json": {
+      "etag": "\"7316-659e1d5751e00\"",
+      "file_path": "documentation/Swift-Org/EmbeddedSwift/externaldependencies.md",
+      "hash": "c2b1d13bc7a1f3b026baf6fd2d7749e259640bd59d43aa9a4382b3c268c64879"
+    },
+    "https://docs.swift.org/latest/data/documentation/embeddedswift/harmonyguide.json": {
+      "etag": "\"4f83-659e1d5751e00\"",
+      "file_path": "documentation/Swift-Org/EmbeddedSwift/harmonyguide.md",
+      "hash": "d76a769bd8070898c048f951de51e3b4fd72a6ca4121c7098c5998bb6dd882f3"
+    },
+    "https://docs.swift.org/latest/data/documentation/embeddedswift/installembeddedswift.json": {
+      "etag": "\"1b93-659e1d5751e00\"",
+      "file_path": "documentation/Swift-Org/EmbeddedSwift/installembeddedswift.md",
+      "hash": "bd54d1d0116aec22c51c6512a2f3949ca5ccbc6cea879a26c56da5412815be39"
+    },
+    "https://docs.swift.org/latest/data/documentation/embeddedswift/integratewithpico.json": {
+      "etag": "\"415d-659e1d5751e00\"",
+      "file_path": "documentation/Swift-Org/EmbeddedSwift/integratewithpico.md",
+      "hash": "ac36f7b63e68e81f45ec66f515d984ea10085a2afd41db25f36fd519246ecab7"
+    },
+    "https://docs.swift.org/latest/data/documentation/embeddedswift/integratewithzephyr.json": {
+      "etag": "\"ec6e-659e1d5751e00\"",
+      "file_path": "documentation/Swift-Org/EmbeddedSwift/integratewithzephyr.md",
+      "hash": "095c6d8df0d8b69568fd15c789f9e7dc397ecca958ed99214440eaa32f669f60"
+    },
+    "https://docs.swift.org/latest/data/documentation/embeddedswift/integratingwithplatforms.json": {
+      "etag": "\"7cc1-659e1d5751e00\"",
+      "file_path": "documentation/Swift-Org/EmbeddedSwift/integratingwithplatforms.md",
+      "hash": "002fb8a38ec7560b00e3eb66c98045d483b9145272998c700881a8b452421576"
+    },
+    "https://docs.swift.org/latest/data/documentation/embeddedswift/introduction.json": {
+      "etag": "\"810e-659e1d5751e00\"",
+      "file_path": "documentation/Swift-Org/EmbeddedSwift/introduction.md",
+      "hash": "b3cd990309108755284d1c7ea91ea4bf2ee59642350c47bbdb4f99778a02b905"
+    },
+    "https://docs.swift.org/latest/data/documentation/embeddedswift/languagesubset.json": {
+      "etag": "\"438d-659e1d5751e00\"",
+      "file_path": "documentation/Swift-Org/EmbeddedSwift/languagesubset.md",
+      "hash": "7adf5d4c71ab6e7d3c763d8fe299d037e51815cc7f9eeb2fbd41732cdf53a4c4"
+    },
+    "https://docs.swift.org/latest/data/documentation/embeddedswift/libraries.json": {
+      "etag": "\"1ff9-659e1d5751e00\"",
+      "file_path": "documentation/Swift-Org/EmbeddedSwift/libraries.md",
+      "hash": "d5ee66765a73cf3426740e9a19c1e09ef9ff710bc62bf97c8f60fc26e057550b"
+    },
+    "https://docs.swift.org/latest/data/documentation/embeddedswift/macosguide.json": {
+      "etag": "\"3f12-659e1d5751e00\"",
+      "file_path": "documentation/Swift-Org/EmbeddedSwift/macosguide.md",
+      "hash": "fc96fa9a22e9004bcc14b059a67ce9acee2da26a4dce99c90bcfd104738adc76"
+    },
+    "https://docs.swift.org/latest/data/documentation/embeddedswift/nonfinalgenericmethods.json": {
+      "etag": "\"367b-659e1d5751e00\"",
+      "file_path": "documentation/Swift-Org/EmbeddedSwift/nonfinalgenericmethods.md",
+      "hash": "9726da03e275743dab030dc20844392916a467cb1687d39f0095369310c9a5e1"
+    },
+    "https://docs.swift.org/latest/data/documentation/embeddedswift/nrfblinkguide.json": {
+      "etag": "\"3af0-659e1d5751e00\"",
+      "file_path": "documentation/Swift-Org/EmbeddedSwift/nrfblinkguide.md",
+      "hash": "f006a3681acf1e6313c0e116683658863dea1ad8611d33f5b27660e08bbe6486"
+    },
+    "https://docs.swift.org/latest/data/documentation/embeddedswift/nuttxriscvblinkguide.json": {
+      "etag": "\"43d0-659e1d5751e00\"",
+      "file_path": "documentation/Swift-Org/EmbeddedSwift/nuttxriscvblinkguide.md",
+      "hash": "4623396cca76c0301ee61ec3fe6101b5d5f09f8ea1a061b3fe8c45ece604b40e"
+    },
+    "https://docs.swift.org/latest/data/documentation/embeddedswift/portingtonewplatforms.json": {
+      "etag": "\"9c16-659e1d5751e00\"",
+      "file_path": "documentation/Swift-Org/EmbeddedSwift/portingtonewplatforms.md",
+      "hash": "12a534359d0ccb23e4df7a4feccea89ce017ef919dfd9edf1c9d21e54d97b542"
+    },
+    "https://docs.swift.org/latest/data/documentation/embeddedswift/rpi4bblinkguide.json": {
+      "etag": "\"42b6-659e1d5751e00\"",
+      "file_path": "documentation/Swift-Org/EmbeddedSwift/rpi4bblinkguide.md",
+      "hash": "1fef61a8d01765a4c3b06bcb7ff13a18abb0365f872d2fa7911832cd78a77492"
+    },
+    "https://docs.swift.org/latest/data/documentation/embeddedswift/rpi5blinkguide.json": {
+      "etag": "\"45d9-659e1d5751e00\"",
+      "file_path": "documentation/Swift-Org/EmbeddedSwift/rpi5blinkguide.md",
+      "hash": "f4385988c9ef1c9ae983d15c3f6cf51afc0b72d13cf8657a038cc7b6f9161387"
+    },
+    "https://docs.swift.org/latest/data/documentation/embeddedswift/rpipico2neopixelguide.json": {
+      "etag": "\"3f65-659e1d5751e00\"",
+      "file_path": "documentation/Swift-Org/EmbeddedSwift/rpipico2neopixelguide.md",
+      "hash": "a4cd2c47cccbb1df4029b382b04d4c226775a215b4c5e1af1a0ab0e3b301a478"
+    },
+    "https://docs.swift.org/latest/data/documentation/embeddedswift/rpipicoblinkguide.json": {
+      "etag": "\"44be-659e1d5751e00\"",
+      "file_path": "documentation/Swift-Org/EmbeddedSwift/rpipicoblinkguide.md",
+      "hash": "13f80107e9170cc4b5fcc96c70175fe539634b34e47c9dfce4d144a2d65b24d3"
+    },
+    "https://docs.swift.org/latest/data/documentation/embeddedswift/rpipicoguide.json": {
+      "etag": "\"5f6f-659e1d5751e00\"",
+      "file_path": "documentation/Swift-Org/EmbeddedSwift/rpipicoguide.md",
+      "hash": "ea357b3ca7a47ebfd4d5102a37caabb2a0fea54f593986e78f43229c61b6f4e9"
+    },
+    "https://docs.swift.org/latest/data/documentation/embeddedswift/rpipicowblinkguide.json": {
+      "etag": "\"5bb3-659e1d5751e00\"",
+      "file_path": "documentation/Swift-Org/EmbeddedSwift/rpipicowblinkguide.md",
+      "hash": "a52595808a0459824bada04db47eb9b2dee77cd9de90bbf06aea006790c4875b"
+    },
+    "https://docs.swift.org/latest/data/documentation/embeddedswift/status.json": {
+      "etag": "\"9f25-659e1d5751e00\"",
+      "file_path": "documentation/Swift-Org/EmbeddedSwift/status.md",
+      "hash": "a9c400cd0b4a2a2ec03dc4bc43ed22c053acfd9845788d2b3141d9af490d4793"
+    },
+    "https://docs.swift.org/latest/data/documentation/embeddedswift/stm32baremetalguide.json": {
+      "etag": "\"cdfd-659e1d5751e00\"",
+      "file_path": "documentation/Swift-Org/EmbeddedSwift/stm32baremetalguide.md",
+      "hash": "db433ac53bc9a1d4d93269dd5a2ffd0cc18bb902200ee455ce2a201147bcaaf4"
+    },
+    "https://docs.swift.org/latest/data/documentation/embeddedswift/stm32blinkguide.json": {
+      "etag": "\"484a-659e1d5751e00\"",
+      "file_path": "documentation/Swift-Org/EmbeddedSwift/stm32blinkguide.md",
+      "hash": "ad289e6439cd5fc1941b117486ef7286030b13158e656d9fdb8d77b0e32a67ff"
+    },
+    "https://docs.swift.org/latest/data/documentation/embeddedswift/stm32lcdlogoguide.json": {
+      "etag": "\"409c-659e1d5751e00\"",
+      "file_path": "documentation/Swift-Org/EmbeddedSwift/stm32lcdlogoguide.md",
+      "hash": "366973596fa74bb64df6365df948c42a759d043568a82212cd4c247b45550013"
+    },
+    "https://docs.swift.org/latest/data/documentation/embeddedswift/stm32lvglguide.json": {
+      "etag": "\"42b5-659e1d5751e00\"",
+      "file_path": "documentation/Swift-Org/EmbeddedSwift/stm32lvglguide.md",
+      "hash": "3dcdaf6f78b128f0d7b75b9dc7ecf5ab1809067b3c49a31bd1d046d4c1a6673f"
+    },
+    "https://docs.swift.org/latest/data/documentation/embeddedswift/stm32neopixelguide.json": {
+      "etag": "\"3f44-659e1d5751e00\"",
+      "file_path": "documentation/Swift-Org/EmbeddedSwift/stm32neopixelguide.md",
+      "hash": "e7d5f21dbf24e66ea073b7c9a294a03b04a2004807482fbda1961641cde3acdc"
+    },
+    "https://docs.swift.org/latest/data/documentation/embeddedswift/stm32uartechoguide.json": {
+      "etag": "\"3f80-659e1d5751e00\"",
+      "file_path": "documentation/Swift-Org/EmbeddedSwift/stm32uartechoguide.md",
+      "hash": "8afbd707bb5cfc8058886e0188f8820c5cd6fc3c76dc54462d70861ccce77261"
+    },
+    "https://docs.swift.org/latest/data/documentation/embeddedswift/strings.json": {
+      "etag": "\"417d-659e1d5751e00\"",
+      "file_path": "documentation/Swift-Org/EmbeddedSwift/strings.md",
+      "hash": "dba922da9cf588ed106cd58c54f95fc809921c241f291a2fa70e39b87092d7d7"
+    },
+    "https://docs.swift.org/latest/data/documentation/embeddedswift/svd2lldbguide.json": {
+      "etag": "\"19d9a-659e1d5751e00\"",
+      "file_path": "documentation/Swift-Org/EmbeddedSwift/svd2lldbguide.md",
+      "hash": "e127b24c1a6fe29d17352460137707dc4c67b9343972a920c01fb420571f7c24"
+    },
+    "https://docs.swift.org/latest/documentation/embeddedswift": {
+      "etag": "\"2e5f-659e1d5751e00\"",
+      "file_path": "documentation/Swift-Org/EmbeddedSwift/EmbeddedSwift.md",
+      "hash": "6f6d078c72baa140c65a0565c719b390be2c7cde3805d483d73a29360afca239"
+    },
+    "https://docs.swift.org/latest/documentation/embeddedswift/abi": {
+      "etag": "\"4bc4-659e1d5751e00\"",
+      "file_path": "documentation/Swift-Org/EmbeddedSwift/abi.md",
+      "hash": "5d753334297b41ed8351d5b70ec26acbfbb53bb89165507f9cc697c89eb9af1b"
+    },
+    "https://docs.swift.org/latest/documentation/embeddedswift/baremetal": {
+      "etag": "\"859a-659e1d5751e00\"",
+      "file_path": "documentation/Swift-Org/EmbeddedSwift/baremetal.md",
+      "hash": "8088072aee19024582728ebeaf64e8460c64360ffaca521bf0a569f1b207abe4"
+    },
+    "https://docs.swift.org/latest/documentation/embeddedswift/basics": {
+      "etag": "\"500c-659e1d5751e00\"",
+      "file_path": "documentation/Swift-Org/EmbeddedSwift/basics.md",
+      "hash": "284ac24cfc6c260f58448834a05b0b3eac54b8c56e5d0a5848f1b3e40e1793cc"
+    },
+    "https://docs.swift.org/latest/documentation/embeddedswift/conditionalcompilation": {
+      "etag": "\"19ee-659e1d5751e00\"",
+      "file_path": "documentation/Swift-Org/EmbeddedSwift/conditionalcompilation.md",
+      "hash": "cbc2d24309a7f3cb26585b2dc2a7751f578ba1a0966575d7348b166de5ff896f"
+    },
+    "https://docs.swift.org/latest/documentation/embeddedswift/esp32guide": {
+      "etag": "\"422d-659e1d5751e00\"",
+      "file_path": "documentation/Swift-Org/EmbeddedSwift/esp32guide.md",
+      "hash": "44338be7212fb180f646748273adbb1d48ddd50cfbd1b9bb363f8eec97e6ce7b"
+    },
+    "https://docs.swift.org/latest/documentation/embeddedswift/esp32ledstripguide": {
+      "etag": "\"43b1-659e1d5751e00\"",
+      "file_path": "documentation/Swift-Org/EmbeddedSwift/esp32ledstripguide.md",
+      "hash": "05ec70baf524491c2ef6abbbe33141c245fa064afd65c8d5decac533a4b77d9c"
+    },
+    "https://docs.swift.org/latest/documentation/embeddedswift/esp32uartechoguide": {
+      "etag": "\"4361-659e1d5751e00\"",
+      "file_path": "documentation/Swift-Org/EmbeddedSwift/esp32uartechoguide.md",
+      "hash": "24364f12312f28a4560587703cc4ef922cefc917f48f11da0a7298d7e38a3958"
+    },
+    "https://docs.swift.org/latest/documentation/embeddedswift/examples": {
+      "etag": "\"54e4-659e1d5751e00\"",
+      "file_path": "documentation/Swift-Org/EmbeddedSwift/examples.md",
+      "hash": "c8bfccafaac94484cf1951c009e09c061b9a263aa27bd078b2b2cdb8649a2ae8"
+    },
+    "https://docs.swift.org/latest/documentation/embeddedswift/existentials": {
+      "etag": "\"3f72-659e1d5751e00\"",
+      "file_path": "documentation/Swift-Org/EmbeddedSwift/existentials.md",
+      "hash": "802fb56c5bf3f4cc5c950b86b26e7840811d8696ea58ba5efac0ae0daba38e13"
+    },
+    "https://docs.swift.org/latest/documentation/embeddedswift/externaldependencies": {
+      "etag": "\"7316-659e1d5751e00\"",
+      "file_path": "documentation/Swift-Org/EmbeddedSwift/externaldependencies.md",
+      "hash": "c2b1d13bc7a1f3b026baf6fd2d7749e259640bd59d43aa9a4382b3c268c64879"
+    },
+    "https://docs.swift.org/latest/documentation/embeddedswift/harmonyguide": {
+      "etag": "\"4f83-659e1d5751e00\"",
+      "file_path": "documentation/Swift-Org/EmbeddedSwift/harmonyguide.md",
+      "hash": "d76a769bd8070898c048f951de51e3b4fd72a6ca4121c7098c5998bb6dd882f3"
+    },
+    "https://docs.swift.org/latest/documentation/embeddedswift/installembeddedswift": {
+      "etag": "\"1b93-659e1d5751e00\"",
+      "file_path": "documentation/Swift-Org/EmbeddedSwift/installembeddedswift.md",
+      "hash": "bd54d1d0116aec22c51c6512a2f3949ca5ccbc6cea879a26c56da5412815be39"
+    },
+    "https://docs.swift.org/latest/documentation/embeddedswift/integratewithpico": {
+      "etag": "\"415d-659e1d5751e00\"",
+      "file_path": "documentation/Swift-Org/EmbeddedSwift/integratewithpico.md",
+      "hash": "ac36f7b63e68e81f45ec66f515d984ea10085a2afd41db25f36fd519246ecab7"
+    },
+    "https://docs.swift.org/latest/documentation/embeddedswift/integratewithzephyr": {
+      "etag": "\"ec6e-659e1d5751e00\"",
+      "file_path": "documentation/Swift-Org/EmbeddedSwift/integratewithzephyr.md",
+      "hash": "095c6d8df0d8b69568fd15c789f9e7dc397ecca958ed99214440eaa32f669f60"
+    },
+    "https://docs.swift.org/latest/documentation/embeddedswift/integratingwithplatforms": {
+      "etag": "\"7cc1-659e1d5751e00\"",
+      "file_path": "documentation/Swift-Org/EmbeddedSwift/integratingwithplatforms.md",
+      "hash": "002fb8a38ec7560b00e3eb66c98045d483b9145272998c700881a8b452421576"
+    },
+    "https://docs.swift.org/latest/documentation/embeddedswift/introduction": {
+      "etag": "\"810e-659e1d5751e00\"",
+      "file_path": "documentation/Swift-Org/EmbeddedSwift/introduction.md",
+      "hash": "b3cd990309108755284d1c7ea91ea4bf2ee59642350c47bbdb4f99778a02b905"
+    },
+    "https://docs.swift.org/latest/documentation/embeddedswift/languagesubset": {
+      "etag": "\"438d-659e1d5751e00\"",
+      "file_path": "documentation/Swift-Org/EmbeddedSwift/languagesubset.md",
+      "hash": "7adf5d4c71ab6e7d3c763d8fe299d037e51815cc7f9eeb2fbd41732cdf53a4c4"
+    },
+    "https://docs.swift.org/latest/documentation/embeddedswift/libraries": {
+      "etag": "\"1ff9-659e1d5751e00\"",
+      "file_path": "documentation/Swift-Org/EmbeddedSwift/libraries.md",
+      "hash": "d5ee66765a73cf3426740e9a19c1e09ef9ff710bc62bf97c8f60fc26e057550b"
+    },
+    "https://docs.swift.org/latest/documentation/embeddedswift/macosguide": {
+      "etag": "\"3f12-659e1d5751e00\"",
+      "file_path": "documentation/Swift-Org/EmbeddedSwift/macosguide.md",
+      "hash": "fc96fa9a22e9004bcc14b059a67ce9acee2da26a4dce99c90bcfd104738adc76"
+    },
+    "https://docs.swift.org/latest/documentation/embeddedswift/nonfinalgenericmethods": {
+      "etag": "\"367b-659e1d5751e00\"",
+      "file_path": "documentation/Swift-Org/EmbeddedSwift/nonfinalgenericmethods.md",
+      "hash": "9726da03e275743dab030dc20844392916a467cb1687d39f0095369310c9a5e1"
+    },
+    "https://docs.swift.org/latest/documentation/embeddedswift/nrfblinkguide": {
+      "etag": "\"3af0-659e1d5751e00\"",
+      "file_path": "documentation/Swift-Org/EmbeddedSwift/nrfblinkguide.md",
+      "hash": "f006a3681acf1e6313c0e116683658863dea1ad8611d33f5b27660e08bbe6486"
+    },
+    "https://docs.swift.org/latest/documentation/embeddedswift/nuttxriscvblinkguide": {
+      "etag": "\"43d0-659e1d5751e00\"",
+      "file_path": "documentation/Swift-Org/EmbeddedSwift/nuttxriscvblinkguide.md",
+      "hash": "4623396cca76c0301ee61ec3fe6101b5d5f09f8ea1a061b3fe8c45ece604b40e"
+    },
+    "https://docs.swift.org/latest/documentation/embeddedswift/portingtonewplatforms": {
+      "etag": "\"9c16-659e1d5751e00\"",
+      "file_path": "documentation/Swift-Org/EmbeddedSwift/portingtonewplatforms.md",
+      "hash": "12a534359d0ccb23e4df7a4feccea89ce017ef919dfd9edf1c9d21e54d97b542"
+    },
+    "https://docs.swift.org/latest/documentation/embeddedswift/rpi4bblinkguide": {
+      "etag": "\"42b6-659e1d5751e00\"",
+      "file_path": "documentation/Swift-Org/EmbeddedSwift/rpi4bblinkguide.md",
+      "hash": "1fef61a8d01765a4c3b06bcb7ff13a18abb0365f872d2fa7911832cd78a77492"
+    },
+    "https://docs.swift.org/latest/documentation/embeddedswift/rpi5blinkguide": {
+      "etag": "\"45d9-659e1d5751e00\"",
+      "file_path": "documentation/Swift-Org/EmbeddedSwift/rpi5blinkguide.md",
+      "hash": "f4385988c9ef1c9ae983d15c3f6cf51afc0b72d13cf8657a038cc7b6f9161387"
+    },
+    "https://docs.swift.org/latest/documentation/embeddedswift/rpipico2neopixelguide": {
+      "etag": "\"3f65-659e1d5751e00\"",
+      "file_path": "documentation/Swift-Org/EmbeddedSwift/rpipico2neopixelguide.md",
+      "hash": "a4cd2c47cccbb1df4029b382b04d4c226775a215b4c5e1af1a0ab0e3b301a478"
+    },
+    "https://docs.swift.org/latest/documentation/embeddedswift/rpipicoblinkguide": {
+      "etag": "\"44be-659e1d5751e00\"",
+      "file_path": "documentation/Swift-Org/EmbeddedSwift/rpipicoblinkguide.md",
+      "hash": "13f80107e9170cc4b5fcc96c70175fe539634b34e47c9dfce4d144a2d65b24d3"
+    },
+    "https://docs.swift.org/latest/documentation/embeddedswift/rpipicoguide": {
+      "etag": "\"5f6f-659e1d5751e00\"",
+      "file_path": "documentation/Swift-Org/EmbeddedSwift/rpipicoguide.md",
+      "hash": "ea357b3ca7a47ebfd4d5102a37caabb2a0fea54f593986e78f43229c61b6f4e9"
+    },
+    "https://docs.swift.org/latest/documentation/embeddedswift/rpipicowblinkguide": {
+      "etag": "\"5bb3-659e1d5751e00\"",
+      "file_path": "documentation/Swift-Org/EmbeddedSwift/rpipicowblinkguide.md",
+      "hash": "a52595808a0459824bada04db47eb9b2dee77cd9de90bbf06aea006790c4875b"
+    },
+    "https://docs.swift.org/latest/documentation/embeddedswift/status": {
+      "etag": "\"9f25-659e1d5751e00\"",
+      "file_path": "documentation/Swift-Org/EmbeddedSwift/status.md",
+      "hash": "a9c400cd0b4a2a2ec03dc4bc43ed22c053acfd9845788d2b3141d9af490d4793"
+    },
+    "https://docs.swift.org/latest/documentation/embeddedswift/stm32baremetalguide": {
+      "etag": "\"cdfd-659e1d5751e00\"",
+      "file_path": "documentation/Swift-Org/EmbeddedSwift/stm32baremetalguide.md",
+      "hash": "db433ac53bc9a1d4d93269dd5a2ffd0cc18bb902200ee455ce2a201147bcaaf4"
+    },
+    "https://docs.swift.org/latest/documentation/embeddedswift/stm32blinkguide": {
+      "etag": "\"484a-659e1d5751e00\"",
+      "file_path": "documentation/Swift-Org/EmbeddedSwift/stm32blinkguide.md",
+      "hash": "ad289e6439cd5fc1941b117486ef7286030b13158e656d9fdb8d77b0e32a67ff"
+    },
+    "https://docs.swift.org/latest/documentation/embeddedswift/stm32lcdlogoguide": {
+      "etag": "\"409c-659e1d5751e00\"",
+      "file_path": "documentation/Swift-Org/EmbeddedSwift/stm32lcdlogoguide.md",
+      "hash": "366973596fa74bb64df6365df948c42a759d043568a82212cd4c247b45550013"
+    },
+    "https://docs.swift.org/latest/documentation/embeddedswift/stm32lvglguide": {
+      "etag": "\"42b5-659e1d5751e00\"",
+      "file_path": "documentation/Swift-Org/EmbeddedSwift/stm32lvglguide.md",
+      "hash": "3dcdaf6f78b128f0d7b75b9dc7ecf5ab1809067b3c49a31bd1d046d4c1a6673f"
+    },
+    "https://docs.swift.org/latest/documentation/embeddedswift/stm32neopixelguide": {
+      "etag": "\"3f44-659e1d5751e00\"",
+      "file_path": "documentation/Swift-Org/EmbeddedSwift/stm32neopixelguide.md",
+      "hash": "e7d5f21dbf24e66ea073b7c9a294a03b04a2004807482fbda1961641cde3acdc"
+    },
+    "https://docs.swift.org/latest/documentation/embeddedswift/stm32uartechoguide": {
+      "etag": "\"3f80-659e1d5751e00\"",
+      "file_path": "documentation/Swift-Org/EmbeddedSwift/stm32uartechoguide.md",
+      "hash": "8afbd707bb5cfc8058886e0188f8820c5cd6fc3c76dc54462d70861ccce77261"
+    },
+    "https://docs.swift.org/latest/documentation/embeddedswift/strings": {
+      "etag": "\"417d-659e1d5751e00\"",
+      "file_path": "documentation/Swift-Org/EmbeddedSwift/strings.md",
+      "hash": "dba922da9cf588ed106cd58c54f95fc809921c241f291a2fa70e39b87092d7d7"
+    },
+    "https://docs.swift.org/latest/documentation/embeddedswift/svd2lldbguide": {
+      "etag": "\"19d9a-659e1d5751e00\"",
+      "file_path": "documentation/Swift-Org/EmbeddedSwift/svd2lldbguide.md",
+      "hash": "e127b24c1a6fe29d17352460137707dc4c67b9343972a920c01fb420571f7c24"
+    }
+  },
+  "metadata": {
+    "render": {
+      "version": 2
+    },
+    "total_pages": 78
+  }
+}

@@ -4971,7 +4971,7 @@
       "hash": "2a4971326a2302dd79542a2ed437218c578b0317ca673ba6b6a7b84c42583d59"
     },
     "https://developer.apple.com/documentation/arkit/aranchor/init(name:transform:)": {
-      "etag": "\"3c5f-65d55d376a21a-df\"",
+      "etag": "\"3c5f-65d55d376a21a\"",
       "file_path": "documentation/ARKit/aranchor/init(name,transform).md",
       "hash": "9f1fa823300f4c96c960f9bf62475131095a2e335319328ae8b899e399f5347b"
     },
@@ -17741,7 +17741,7 @@
       "hash": "2a4971326a2302dd79542a2ed437218c578b0317ca673ba6b6a7b84c42583d59"
     },
     "https://developer.apple.com/tutorials/data/documentation/arkit/aranchor/init(name:transform:).json": {
-      "etag": "\"3c5f-65d55d376a21a-df\"",
+      "etag": "\"3c5f-65d55d376a21a\"",
       "file_path": "documentation/ARKit/aranchor/init(name,transform).md",
       "hash": "9f1fa823300f4c96c960f9bf62475131095a2e335319328ae8b899e399f5347b"
     },

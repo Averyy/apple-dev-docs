@@ -1,0 +1,1350 @@
+{
+  "hashes": {
+    "https://docs.swift.org/latest/data/documentation/cxx.json": {
+      "etag": "\"3749-659e1d5475740\"",
+      "file_path": "documentation/Swift-Org/Cxx/Cxx.md",
+      "hash": "a9e2ff662a9233bda08a95767f141bd75cfea89f2129e03058b554530a043c22"
+    },
+    "https://docs.swift.org/latest/data/documentation/cxx/cxxborrowingiterator.json": {
+      "etag": "\"28ff-659e1d5475740\"",
+      "file_path": "documentation/Swift-Org/Cxx/cxxborrowingiterator.md",
+      "hash": "5c5140b9394b56a1cde89aa430c5644f21dfc7f4dc2ffcb72df2f00873288558"
+    },
+    "https://docs.swift.org/latest/data/documentation/cxx/cxxborrowingiterator/borrowingiteratorprotocol-implementations.json": {
+      "etag": "\"1280-659e1d5475740\"",
+      "file_path": "documentation/Swift-Org/Cxx/cxxborrowingiterator/borrowingiteratorprotocol-implementations.md",
+      "hash": "88f7123229666e6048d7ec4a4da2e4833ed6159792d88b5c8f78507722bc3803"
+    },
+    "https://docs.swift.org/latest/data/documentation/cxx/cxxborrowingiterator/count.json": {
+      "etag": "\"edb-659e1d5475740\"",
+      "file_path": "documentation/Swift-Org/Cxx/cxxborrowingiterator/count.md",
+      "hash": "abc017e380e00e228972ed2dcc06f0d8cd235548a02ee76ee07052b2d321da7e"
+    },
+    "https://docs.swift.org/latest/data/documentation/cxx/cxxborrowingiterator/init(begin:end:sequence:).json": {
+      "etag": "\"162d-659e1d5475740\"",
+      "file_path": "documentation/Swift-Org/Cxx/cxxborrowingiterator/init(begin,end,sequence).md",
+      "hash": "85084f6c4e29264738a2dc1d3e4d0fdf1ce4b007ff822b4e9d1fb82278f7a5fb"
+    },
+    "https://docs.swift.org/latest/data/documentation/cxx/cxxborrowingiterator/nextspan()-7x8ui.json": {
+      "etag": "\"186d-659e1d5475740\"",
+      "file_path": "documentation/Swift-Org/Cxx/cxxborrowingiterator/nextspan()-7x8ui.md",
+      "hash": "2036a5eac6b56b98b16b2fd2087c0ce23b90524d703bcfa5ad06cb1b701fece9"
+    },
+    "https://docs.swift.org/latest/data/documentation/cxx/cxxborrowingiterator/nextspan().json": {
+      "etag": "\"122d-659e1d5475740\"",
+      "file_path": "documentation/Swift-Org/Cxx/cxxborrowingiterator/nextspan().md",
+      "hash": "98399b6fd050513bec3f552d818c9955d895d2a731e47842f08178b3119d5d99"
+    },
+    "https://docs.swift.org/latest/data/documentation/cxx/cxxborrowingiterator/nextspan(maxcount:)-5n5j9.json": {
+      "etag": "\"1585-659e1d5475740\"",
+      "file_path": "documentation/Swift-Org/Cxx/cxxborrowingiterator/nextspan(maxcount)-5n5j9.md",
+      "hash": "16fda522d0c01ebfde400ba7f7589e75747756a2e890639f5d95f4716a225b11"
+    },
+    "https://docs.swift.org/latest/data/documentation/cxx/cxxborrowingiterator/nextspan(maxcount:)-9yg0c.json": {
+      "etag": "\"1662-659e1d5475740\"",
+      "file_path": "documentation/Swift-Org/Cxx/cxxborrowingiterator/nextspan(maxcount)-9yg0c.md",
+      "hash": "7bf4d9c69c49c7985c74bdc0a396383494fba160a260882bac508916b071b55c"
+    },
+    "https://docs.swift.org/latest/data/documentation/cxx/cxxborrowingiterator/skip(by:).json": {
+      "etag": "\"14b3-659e1d5475740\"",
+      "file_path": "documentation/Swift-Org/Cxx/cxxborrowingiterator/skip(by).md",
+      "hash": "3b1c9652f8035d814cdd323fe4569025a536029647ac91ec3f2bdab6d40c985d"
+    },
+    "https://docs.swift.org/latest/data/documentation/cxx/cxxconvertibletobool.json": {
+      "etag": "\"7e1-659e1d5475740\"",
+      "file_path": "documentation/Swift-Org/Cxx/cxxconvertibletobool.md",
+      "hash": "0c250b597a4c20c54aa073c1f4cd5c217f402b2a5bb9e5993adf5f9e823192b3"
+    },
+    "https://docs.swift.org/latest/data/documentation/cxx/cxxconvertibletocollection.json": {
+      "etag": "\"29c2-659e1d5475740\"",
+      "file_path": "documentation/Swift-Org/Cxx/cxxconvertibletocollection.md",
+      "hash": "f8834e30b0d9b96d439eae34dfb26a4f65fe73c607d6bb28bbe7ccb1b5385974"
+    },
+    "https://docs.swift.org/latest/data/documentation/cxx/cxxconvertibletocollection/element.json": {
+      "etag": "\"1072-659e1d5475740\"",
+      "file_path": "documentation/Swift-Org/Cxx/cxxconvertibletocollection/element.md",
+      "hash": "bf961b15dce26b3604d5827ea13010d971fd36cc80d26e6302eb18a68b81484f"
+    },
+    "https://docs.swift.org/latest/data/documentation/cxx/cxxconvertibletocollection/foreach(_:)-5ds8r.json": {
+      "etag": "\"1426-659e1d5475740\"",
+      "file_path": "documentation/Swift-Org/Cxx/cxxconvertibletocollection/foreach(_)-5ds8r.md",
+      "hash": "004fda0672cbcfb17008089e0bcca201cb840a3804a468d44fb6a8cf748c9d13"
+    },
+    "https://docs.swift.org/latest/data/documentation/cxx/cxxconvertibletocollection/foreach(_:)-7bkbm.json": {
+      "etag": "\"16f8-659e1d5475740\"",
+      "file_path": "documentation/Swift-Org/Cxx/cxxconvertibletocollection/foreach(_)-7bkbm.md",
+      "hash": "52d4f0f7d91b4b54e736a662ed341567650db1f7121c112c7715a92beb8511bf"
+    },
+    "https://docs.swift.org/latest/data/documentation/cxx/cxxconvertibletocollection/rawiterator.json": {
+      "etag": "\"d21-659e1d5475740\"",
+      "file_path": "documentation/Swift-Org/Cxx/cxxconvertibletocollection/rawiterator.md",
+      "hash": "b7c41efd2287ffd8967b1798ac26e2352602e04be6598ca99daea1484dcd505a"
+    },
+    "https://docs.swift.org/latest/data/documentation/cxx/cxxdictionary.json": {
+      "etag": "\"9637-659e1d5475740\"",
+      "file_path": "documentation/Swift-Org/Cxx/cxxdictionary.md",
+      "hash": "5e9f7e62c8e21a84c6e9052827db7ed1bfefd504f30c1eab6d62ded5e37534bb"
+    },
+    "https://docs.swift.org/latest/data/documentation/cxx/cxxdictionary/compactmapvalues(_:)-218g4.json": {
+      "etag": "\"182c-659e1d5475740\"",
+      "file_path": "documentation/Swift-Org/Cxx/cxxdictionary/compactmapvalues(_)-218g4.md",
+      "hash": "15fe7790b21dcef5f8cd1e3266f89c8f3ec118697e8cc3a09045dc424fa6438f"
+    },
+    "https://docs.swift.org/latest/data/documentation/cxx/cxxdictionary/compactmapvalues(_:)-9wz36.json": {
+      "etag": "\"25c2-659e1d5475740\"",
+      "file_path": "documentation/Swift-Org/Cxx/cxxdictionary/compactmapvalues(_)-9wz36.md",
+      "hash": "464ef04a1b6bcb4adcc747acd61f0b97ede5797d171d5a474f09e366b07983dd"
+    },
+    "https://docs.swift.org/latest/data/documentation/cxx/cxxdictionary/element.json": {
+      "etag": "\"20a3-659e1d5475740\"",
+      "file_path": "documentation/Swift-Org/Cxx/cxxdictionary/element.md",
+      "hash": "3a47b7fcde351bcf5b9dd4b89c6d24b71166d444a9f75807c42216ecd1f31717"
+    },
+    "https://docs.swift.org/latest/data/documentation/cxx/cxxdictionary/erase(_:).json": {
+      "etag": "\"1032-659e1d5475740\"",
+      "file_path": "documentation/Swift-Org/Cxx/cxxdictionary/erase(_).md",
+      "hash": "74c9887f232a23ccbded5f1e49ffdfcec4acd98ec380ef0272c4783a28acedf7"
+    },
+    "https://docs.swift.org/latest/data/documentation/cxx/cxxdictionary/expressiblebydictionaryliteral-implementations.json": {
+      "etag": "\"c35-659e1d5475740\"",
+      "file_path": "documentation/Swift-Org/Cxx/cxxdictionary/expressiblebydictionaryliteral-implementations.md",
+      "hash": "439fd42ac1b269983b6ee9c8aa2f73997715f5c23a9881588f8dadf6f95618c7"
+    },
+    "https://docs.swift.org/latest/data/documentation/cxx/cxxdictionary/filter(_:).json": {
+      "etag": "\"17bc-659e1d5475740\"",
+      "file_path": "documentation/Swift-Org/Cxx/cxxdictionary/filter(_).md",
+      "hash": "aef5ed24642c9c2af6f571698ca2a94c11967bf7ae6336364028afb78eaf3c81"
+    },
+    "https://docs.swift.org/latest/data/documentation/cxx/cxxdictionary/init().json": {
+      "etag": "\"71e-659e1d5475740\"",
+      "file_path": "documentation/Swift-Org/Cxx/cxxdictionary/init().md",
+      "hash": "fa4c08251db7e62ab191b7db383e8d8c8816add6634ff10d857cc3819317f1ef"
+    },
+    "https://docs.swift.org/latest/data/documentation/cxx/cxxdictionary/init(_:).json": {
+      "etag": "\"1b16-659e1d5475740\"",
+      "file_path": "documentation/Swift-Org/Cxx/cxxdictionary/init(_).md",
+      "hash": "9f6e3932138e0f07e8670340f402a47e3747d9ff8a745e6ab0148dd8919bfb9a"
+    },
+    "https://docs.swift.org/latest/data/documentation/cxx/cxxdictionary/init(dictionaryliteral:).json": {
+      "etag": "\"1003-659e1d5475740\"",
+      "file_path": "documentation/Swift-Org/Cxx/cxxdictionary/init(dictionaryliteral).md",
+      "hash": "253620ca76735c73fd904277eb4640030230b9c1ee67b89c735ff62acfdd40d2"
+    },
+    "https://docs.swift.org/latest/data/documentation/cxx/cxxdictionary/init(grouping:by:).json": {
+      "etag": "\"2498-659e1d5475740\"",
+      "file_path": "documentation/Swift-Org/Cxx/cxxdictionary/init(grouping,by).md",
+      "hash": "87c7f78ebb50521c21a8dc316c3567841e4e7a165b9293d33c43637a95adea62"
+    },
+    "https://docs.swift.org/latest/data/documentation/cxx/cxxdictionary/insertionresult.json": {
+      "etag": "\"812-659e1d5475740\"",
+      "file_path": "documentation/Swift-Org/Cxx/cxxdictionary/insertionresult.md",
+      "hash": "1b364a0c136ad7d2e2e43470851187a861f244b4f88ce8b166b2552a4dd2f3fc"
+    },
+    "https://docs.swift.org/latest/data/documentation/cxx/cxxdictionary/key.json": {
+      "etag": "\"7d9-659e1d5475740\"",
+      "file_path": "documentation/Swift-Org/Cxx/cxxdictionary/key.md",
+      "hash": "1c976a9fba47c50a139806b343d155d76c980b22c622903deb182e01830faf48"
+    },
+    "https://docs.swift.org/latest/data/documentation/cxx/cxxdictionary/mapvalues(_:)-46s22.json": {
+      "etag": "\"24fe-659e1d5475740\"",
+      "file_path": "documentation/Swift-Org/Cxx/cxxdictionary/mapvalues(_)-46s22.md",
+      "hash": "13893c9678de51f1617e3bdc9b9ab2c81be16c8503370fc53c19bccde8643ae4"
+    },
+    "https://docs.swift.org/latest/data/documentation/cxx/cxxdictionary/mapvalues(_:)-9bek8.json": {
+      "etag": "\"17a4-659e1d5475740\"",
+      "file_path": "documentation/Swift-Org/Cxx/cxxdictionary/mapvalues(_)-9bek8.md",
+      "hash": "ef0157644e230fc03a961d98580908fe529202556f5b90555e93a7b18b44b695"
+    },
+    "https://docs.swift.org/latest/data/documentation/cxx/cxxdictionary/merge(_:uniquingkeyswith:)-5agb4.json": {
+      "etag": "\"29c1-659e1d5475740\"",
+      "file_path": "documentation/Swift-Org/Cxx/cxxdictionary/merge(_,uniquingkeyswith)-5agb4.md",
+      "hash": "5b526728433691e9873db92719d90b893108935f04bb3b5f8cf123ee04854e55"
+    },
+    "https://docs.swift.org/latest/data/documentation/cxx/cxxdictionary/merge(_:uniquingkeyswith:)-7h62.json": {
+      "etag": "\"294d-659e1d5475740\"",
+      "file_path": "documentation/Swift-Org/Cxx/cxxdictionary/merge(_,uniquingkeyswith)-7h62.md",
+      "hash": "bafdde6577f8a3b3b585d328aa767fcc5a773df4383a9dc22efff54969ccdd7a"
+    },
+    "https://docs.swift.org/latest/data/documentation/cxx/cxxdictionary/merge(_:uniquingkeyswith:)-885ha.json": {
+      "etag": "\"2bb6-659e1d5475740\"",
+      "file_path": "documentation/Swift-Org/Cxx/cxxdictionary/merge(_,uniquingkeyswith)-885ha.md",
+      "hash": "09a01a3127cd0db615a94128134c20878b347e71726a8505fa0690ba37a0e949"
+    },
+    "https://docs.swift.org/latest/data/documentation/cxx/cxxdictionary/merging(_:uniquingkeyswith:)-2gsmu.json": {
+      "etag": "\"29d5-659e1d5475740\"",
+      "file_path": "documentation/Swift-Org/Cxx/cxxdictionary/merging(_,uniquingkeyswith)-2gsmu.md",
+      "hash": "0568a55a917bfb79887fdf6ddf47792de814cff5ab45e4a971cedea3be585135"
+    },
+    "https://docs.swift.org/latest/data/documentation/cxx/cxxdictionary/merging(_:uniquingkeyswith:)-5ehky.json": {
+      "etag": "\"2c3a-659e1d5475740\"",
+      "file_path": "documentation/Swift-Org/Cxx/cxxdictionary/merging(_,uniquingkeyswith)-5ehky.md",
+      "hash": "8f6c68196869a30ec872757ffa292d253f36c263987bb7f5aae6e384373ae13b"
+    },
+    "https://docs.swift.org/latest/data/documentation/cxx/cxxdictionary/merging(_:uniquingkeyswith:)-6epld.json": {
+      "etag": "\"2a3f-659e1d5475740\"",
+      "file_path": "documentation/Swift-Org/Cxx/cxxdictionary/merging(_,uniquingkeyswith)-6epld.md",
+      "hash": "b2a997f11f375db6195f3f3148ac53551ee5a5c1f5d5f5d255709f83f369e515"
+    },
+    "https://docs.swift.org/latest/data/documentation/cxx/cxxdictionary/rawiterator.json": {
+      "etag": "\"1565-659e1d5475740\"",
+      "file_path": "documentation/Swift-Org/Cxx/cxxdictionary/rawiterator.md",
+      "hash": "49fe5958214c689376e09a5928499323ee8d9af0389d700a35929850434a0ed3"
+    },
+    "https://docs.swift.org/latest/data/documentation/cxx/cxxdictionary/rawmutableiterator.json": {
+      "etag": "\"c6e-659e1d5475740\"",
+      "file_path": "documentation/Swift-Org/Cxx/cxxdictionary/rawmutableiterator.md",
+      "hash": "182ab7bb571d9b5b2d47907fe2789402796704e221865a02d8cf65d8e9392ad6"
+    },
+    "https://docs.swift.org/latest/data/documentation/cxx/cxxdictionary/removevalue(forkey:).json": {
+      "etag": "\"106f-659e1d5475740\"",
+      "file_path": "documentation/Swift-Org/Cxx/cxxdictionary/removevalue(forkey).md",
+      "hash": "6681b70496422f89ea9abe1496882506bf679cc452596f6fe371fd74cf5e39de"
+    },
+    "https://docs.swift.org/latest/data/documentation/cxx/cxxdictionary/size.json": {
+      "etag": "\"b29-659e1d5475740\"",
+      "file_path": "documentation/Swift-Org/Cxx/cxxdictionary/size.md",
+      "hash": "adf06efc0215a3fc4f0bc8bb677f1cfd436f6ecf97bfa620e268679cfbd09b8b"
+    },
+    "https://docs.swift.org/latest/data/documentation/cxx/cxxdictionary/subscript(_:).json": {
+      "etag": "\"e99-659e1d5475740\"",
+      "file_path": "documentation/Swift-Org/Cxx/cxxdictionary/subscript(_).md",
+      "hash": "1c2d2712281ab9baab45043ea3a61723a1a6e6379a471f0a73324813802259a0"
+    },
+    "https://docs.swift.org/latest/data/documentation/cxx/cxxdictionary/subscript(_:default:).json": {
+      "etag": "\"1259-659e1d5475740\"",
+      "file_path": "documentation/Swift-Org/Cxx/cxxdictionary/subscript(_,default).md",
+      "hash": "244d43f1b90ec9762f29a3956f4f57240128fc5329fc68448e71cd0a2b033a67"
+    },
+    "https://docs.swift.org/latest/data/documentation/cxx/cxxdictionary/value.json": {
+      "etag": "\"7ed-659e1d5475740\"",
+      "file_path": "documentation/Swift-Org/Cxx/cxxdictionary/value.md",
+      "hash": "a9205ad80f7917b06de299f79c2b1680c59b2c5ea13c4469fb603f71860d4b21"
+    },
+    "https://docs.swift.org/latest/data/documentation/cxx/cxxiterable.json": {
+      "etag": "\"1bd2-659e1d5475740\"",
+      "file_path": "documentation/Swift-Org/Cxx/cxxiterable.md",
+      "hash": "6db49a39fd5974217bfc67886fad71f12b300fa809051acd3bcf85302de78df3"
+    },
+    "https://docs.swift.org/latest/data/documentation/cxx/cxxiterable/borrowingiterator.json": {
+      "etag": "\"dfe-659e1d5475740\"",
+      "file_path": "documentation/Swift-Org/Cxx/cxxiterable/borrowingiterator.md",
+      "hash": "1fe2ea7afbaa6c041d51ac81c9b6f7d792857ff86d34e515e7da29afcb40f989"
+    },
+    "https://docs.swift.org/latest/data/documentation/cxx/cxxiterable/element.json": {
+      "etag": "\"1066-659e1d5475740\"",
+      "file_path": "documentation/Swift-Org/Cxx/cxxiterable/element.md",
+      "hash": "500bfdbc9745b315c9babca57bf12cda8d16776b205316ea19a15b8646de5620"
+    },
+    "https://docs.swift.org/latest/data/documentation/cxx/cxxiterable/rawiterator.json": {
+      "etag": "\"180a-659e1d5475740\"",
+      "file_path": "documentation/Swift-Org/Cxx/cxxiterable/rawiterator.md",
+      "hash": "fc9bb406d98de7e8bfa5a32e9c4c1205dc0de9d23c7725b20b75338961357ecc"
+    },
+    "https://docs.swift.org/latest/data/documentation/cxx/cxxiterator.json": {
+      "etag": "\"29d5-659e1d5475740\"",
+      "file_path": "documentation/Swift-Org/Cxx/cxxiterator.md",
+      "hash": "e1df6dac996afa4d6ad54e6a9c2c10788e4c26252cb779e7507da3ea61258946"
+    },
+    "https://docs.swift.org/latest/data/documentation/cxx/cxxiterator/element.json": {
+      "etag": "\"f0d-659e1d5475740\"",
+      "file_path": "documentation/Swift-Org/Cxx/cxxiterator/element.md",
+      "hash": "4f78dcdee667cb8aa6b2ce6dfcde836f4ab555c8f1ff66c59401f415da58ed38"
+    },
+    "https://docs.swift.org/latest/data/documentation/cxx/cxxiterator/init(sequence:).json": {
+      "etag": "\"907-659e1d5475740\"",
+      "file_path": "documentation/Swift-Org/Cxx/cxxiterator/init(sequence).md",
+      "hash": "914bc9d5c48ffc67c22ffffb45114a37982082d3339cbdad155346c9366bc7d2"
+    },
+    "https://docs.swift.org/latest/data/documentation/cxx/cxxiterator/next().json": {
+      "etag": "\"bb8-659e1d5475740\"",
+      "file_path": "documentation/Swift-Org/Cxx/cxxiterator/next().md",
+      "hash": "64fcc72d59ffa012b04020c6860f8d8d76bddd40b8f817b0ea3515e9d02e9313"
+    },
+    "https://docs.swift.org/latest/data/documentation/cxx/cxxmutablerandomaccesscollection.json": {
+      "etag": "\"2e50-659e1d5475740\"",
+      "file_path": "documentation/Swift-Org/Cxx/cxxmutablerandomaccesscollection.md",
+      "hash": "1aceb009d1ece2d66880fb1eeab859676abf4a46c3f03cb14b88f145d29b52a4"
+    },
+    "https://docs.swift.org/latest/data/documentation/cxx/cxxmutablerandomaccesscollection/rawmutableiterator.json": {
+      "etag": "\"14e8-659e1d5475740\"",
+      "file_path": "documentation/Swift-Org/Cxx/cxxmutablerandomaccesscollection/rawmutableiterator.md",
+      "hash": "dccc60058e996c0a3a6b400ec4a1148d36db71d2287c469f142c1abc685c894a"
+    },
+    "https://docs.swift.org/latest/data/documentation/cxx/cxxmutablespan.json": {
+      "etag": "\"30d4-659e1d5475740\"",
+      "file_path": "documentation/Swift-Org/Cxx/cxxmutablespan.md",
+      "hash": "6988572150ec2722e344de7b3dc0bf75e5620d43bffafe9f2f31d18c186092fc"
+    },
+    "https://docs.swift.org/latest/data/documentation/cxx/cxxmutablespan/element.json": {
+      "etag": "\"7fe-659e1d5475740\"",
+      "file_path": "documentation/Swift-Org/Cxx/cxxmutablespan/element.md",
+      "hash": "35984b457cfe6db5bba792435f1abf9092160101dc8cd5c16bf7649e9eeb21ff"
+    },
+    "https://docs.swift.org/latest/data/documentation/cxx/cxxmutablespan/init().json": {
+      "etag": "\"6e9-659e1d5475740\"",
+      "file_path": "documentation/Swift-Org/Cxx/cxxmutablespan/init().md",
+      "hash": "8a38e0dc0e1c737f2afd34061f7764b565b3ea13bae57c0be51a0df2c266e669"
+    },
+    "https://docs.swift.org/latest/data/documentation/cxx/cxxmutablespan/init(_:)-2yxw9.json": {
+      "etag": "\"1055-659e1d5475740\"",
+      "file_path": "documentation/Swift-Org/Cxx/cxxmutablespan/init(_)-2yxw9.md",
+      "hash": "c6540051543b167343d87e892e51393b261d0f3639357a58ff966733ab85d07d"
+    },
+    "https://docs.swift.org/latest/data/documentation/cxx/cxxmutablespan/init(_:)-6j9kz.json": {
+      "etag": "\"104a-659e1d5475740\"",
+      "file_path": "documentation/Swift-Org/Cxx/cxxmutablespan/init(_)-6j9kz.md",
+      "hash": "bc004543d65752beb4dbf893c50d4f6ce5d7cefebb245350f1005031bcba74d6"
+    },
+    "https://docs.swift.org/latest/data/documentation/cxx/cxxmutablespan/init(_:_:).json": {
+      "etag": "\"1370-659e1d5475740\"",
+      "file_path": "documentation/Swift-Org/Cxx/cxxmutablespan/init(_,_).md",
+      "hash": "f25a278034d53441a543a3a163402977840526fa06ff8d0049e4e38731584b29"
+    },
+    "https://docs.swift.org/latest/data/documentation/cxx/cxxmutablespan/size().json": {
+      "etag": "\"b11-659e1d5475740\"",
+      "file_path": "documentation/Swift-Org/Cxx/cxxmutablespan/size().md",
+      "hash": "bf1a8e6793bbfb6588363b9c6298f3c12b54c795a32827bae89fe9ead40b48cc"
+    },
+    "https://docs.swift.org/latest/data/documentation/cxx/cxxmutablespan/size.json": {
+      "etag": "\"af4-659e1d5475740\"",
+      "file_path": "documentation/Swift-Org/Cxx/cxxmutablespan/size.md",
+      "hash": "2a106e3ee9755bce930d916bc8e5a0fd2c4ee845530162687be9bc1792e3b7b9"
+    },
+    "https://docs.swift.org/latest/data/documentation/cxx/cxxoptional.json": {
+      "etag": "\"1a31-659e1d5475740\"",
+      "file_path": "documentation/Swift-Org/Cxx/cxxoptional.md",
+      "hash": "32322c97b9d33c5ee597d7e415ab356bf8ec9482faa286b21c9b101f5225a297"
+    },
+    "https://docs.swift.org/latest/data/documentation/cxx/cxxoptional/expressiblebynilliteral-implementations.json": {
+      "etag": "\"ab5-659e1d5475740\"",
+      "file_path": "documentation/Swift-Org/Cxx/cxxoptional/expressiblebynilliteral-implementations.md",
+      "hash": "3d51f8dec1c5075a3d1e904b9014ee597695756cef7642c1f6083773311719a3"
+    },
+    "https://docs.swift.org/latest/data/documentation/cxx/cxxoptional/hasvalue.json": {
+      "etag": "\"b43-659e1d5475740\"",
+      "file_path": "documentation/Swift-Org/Cxx/cxxoptional/hasvalue.md",
+      "hash": "07b807d2f5495ff56f8e7dd5f10fb90c2fd5f5b3f66132b58d8323de2f6ae3ef"
+    },
+    "https://docs.swift.org/latest/data/documentation/cxx/cxxoptional/init().json": {
+      "etag": "\"6c4-659e1d5475740\"",
+      "file_path": "documentation/Swift-Org/Cxx/cxxoptional/init().md",
+      "hash": "250e430b2c06e844d5f062fb0905559e101acee50edf07c1d31b5f1af5edd18a"
+    },
+    "https://docs.swift.org/latest/data/documentation/cxx/cxxoptional/init(_:).json": {
+      "etag": "\"aa4-659e1d5475740\"",
+      "file_path": "documentation/Swift-Org/Cxx/cxxoptional/init(_).md",
+      "hash": "f6b5d68c19733abaf591b696b970d2c1d9e65fa34f0ce604f42bf97d479d137c"
+    },
+    "https://docs.swift.org/latest/data/documentation/cxx/cxxoptional/init(nilliteral:).json": {
+      "etag": "\"889-659e1d5475740\"",
+      "file_path": "documentation/Swift-Org/Cxx/cxxoptional/init(nilliteral).md",
+      "hash": "7f3fe6c9e7d7968e2566ad276d0dfcfddb240f96067f09fa973ebcaa6f6cac09"
+    },
+    "https://docs.swift.org/latest/data/documentation/cxx/cxxoptional/pointee.json": {
+      "etag": "\"af2-659e1d5475740\"",
+      "file_path": "documentation/Swift-Org/Cxx/cxxoptional/pointee.md",
+      "hash": "c3ae39b7bebea512a9f66155d5fe56011cc8fb42d17d1a4d005c96463104d00f"
+    },
+    "https://docs.swift.org/latest/data/documentation/cxx/cxxoptional/value.json": {
+      "etag": "\"b4c-659e1d5475740\"",
+      "file_path": "documentation/Swift-Org/Cxx/cxxoptional/value.md",
+      "hash": "cacd265ab7653796200659aeb91b21ab17658e06e2251bf5cc15f3fb552aee48"
+    },
+    "https://docs.swift.org/latest/data/documentation/cxx/cxxoptional/wrapped.json": {
+      "etag": "\"767-659e1d5475740\"",
+      "file_path": "documentation/Swift-Org/Cxx/cxxoptional/wrapped.md",
+      "hash": "30bf690d75be1f0940cda4dab150d9859e63273ed8af174ea044af22132dca61"
+    },
+    "https://docs.swift.org/latest/data/documentation/cxx/cxxpair.json": {
+      "etag": "\"274a-659e1d5475740\"",
+      "file_path": "documentation/Swift-Org/Cxx/cxxpair.md",
+      "hash": "848f19be4533c6c1a252362066891cfff28b30aac0194b05641a9e26b7ae6dca"
+    },
+    "https://docs.swift.org/latest/data/documentation/cxx/cxxpair/first-swift.associatedtype.json": {
+      "etag": "\"832-659e1d5475740\"",
+      "file_path": "documentation/Swift-Org/Cxx/cxxpair/first-swift.associatedtype.md",
+      "hash": "1de559e3ed704e72d6dbc4b7afe13a8a64820cda405e75f8ff1eff044978bf3f"
+    },
+    "https://docs.swift.org/latest/data/documentation/cxx/cxxpair/first-swift.property.json": {
+      "etag": "\"bb2-659e1d5475740\"",
+      "file_path": "documentation/Swift-Org/Cxx/cxxpair/first-swift.property.md",
+      "hash": "0ad9394d64dd716097ba866880d7d131219863903d800b7f124dca3c72c282ef"
+    },
+    "https://docs.swift.org/latest/data/documentation/cxx/cxxpair/init(first:second:).json": {
+      "etag": "\"1197-659e1d5475740\"",
+      "file_path": "documentation/Swift-Org/Cxx/cxxpair/init(first,second).md",
+      "hash": "b2bfa0dae3e7cb6a2b33d5e3adc0c85d71f6fc42ef5a43e7f360f581915d3997"
+    },
+    "https://docs.swift.org/latest/data/documentation/cxx/cxxpair/second-swift.associatedtype.json": {
+      "etag": "\"83c-659e1d5475740\"",
+      "file_path": "documentation/Swift-Org/Cxx/cxxpair/second-swift.associatedtype.md",
+      "hash": "39432cc94b3e5834ce1734066121709f4ea835b108525936bf25058dc08ab0a3"
+    },
+    "https://docs.swift.org/latest/data/documentation/cxx/cxxpair/second-swift.property.json": {
+      "etag": "\"bc9-659e1d5475740\"",
+      "file_path": "documentation/Swift-Org/Cxx/cxxpair/second-swift.property.md",
+      "hash": "10ba82fbc0ddd60bad511a560d1063ee05120d51f441a58720e5b28a1c12d470"
+    },
+    "https://docs.swift.org/latest/data/documentation/cxx/cxxrandomaccesscollection.json": {
+      "etag": "\"3e27-659e1d5475740\"",
+      "file_path": "documentation/Swift-Org/Cxx/cxxrandomaccesscollection.md",
+      "hash": "570208d2e267f3849ab23779f68773c6ba88ab04f8f9b2b1a296da83d2e1fd7f"
+    },
+    "https://docs.swift.org/latest/data/documentation/cxx/cxxrandomaccesscollection/element.json": {
+      "etag": "\"850-659e1d5475740\"",
+      "file_path": "documentation/Swift-Org/Cxx/cxxrandomaccesscollection/element.md",
+      "hash": "bdba60d4164ef4806d38f9ae71d56eac3a4d96074c05900862fe6f9db6e4688c"
+    },
+    "https://docs.swift.org/latest/data/documentation/cxx/cxxrandomaccesscollection/index.json": {
+      "etag": "\"b4b-659e1d5475740\"",
+      "file_path": "documentation/Swift-Org/Cxx/cxxrandomaccesscollection/index.md",
+      "hash": "881a32fe54c857a2db368526e5b1a368aaa5fed8b78db6643c37c013aa3db320"
+    },
+    "https://docs.swift.org/latest/data/documentation/cxx/cxxrandomaccesscollection/indices.json": {
+      "etag": "\"f36-659e1d5475740\"",
+      "file_path": "documentation/Swift-Org/Cxx/cxxrandomaccesscollection/indices.md",
+      "hash": "d784efbedb797668be91fd9a997b80f7dd14aee08f615b1823b0f250fe68e6e2"
+    },
+    "https://docs.swift.org/latest/data/documentation/cxx/cxxrandomaccesscollection/iterator.json": {
+      "etag": "\"cc0-659e1d5475740\"",
+      "file_path": "documentation/Swift-Org/Cxx/cxxrandomaccesscollection/iterator.md",
+      "hash": "189a637d0c0e13f4b91e84da567678c6ec490b69caa7de6830ba91dc8fab1534"
+    },
+    "https://docs.swift.org/latest/data/documentation/cxx/cxxrandomaccesscollection/rawiterator.json": {
+      "etag": "\"879-659e1d5475740\"",
+      "file_path": "documentation/Swift-Org/Cxx/cxxrandomaccesscollection/rawiterator.md",
+      "hash": "b7b9dee66548527520d34417aa72d59161e94498a1caceab1f5f169fab5afbe2"
+    },
+    "https://docs.swift.org/latest/data/documentation/cxx/cxxrandomaccesscollection/subsequence.json": {
+      "etag": "\"ce8-659e1d5475740\"",
+      "file_path": "documentation/Swift-Org/Cxx/cxxrandomaccesscollection/subsequence.md",
+      "hash": "b4d20e165625f53f3dd2ddf62fedae7b9c9b054a6942aac7e712dd125285b5f0"
+    },
+    "https://docs.swift.org/latest/data/documentation/cxx/cxxsequence.json": {
+      "etag": "\"3483-659e1d5475740\"",
+      "file_path": "documentation/Swift-Org/Cxx/cxxsequence.md",
+      "hash": "5149d176a9b07dece62bfa54a4108f7c261415e3050b345cb0275af9f5d39b8e"
+    },
+    "https://docs.swift.org/latest/data/documentation/cxx/cxxsequence/element.json": {
+      "etag": "\"873-659e1d5475740\"",
+      "file_path": "documentation/Swift-Org/Cxx/cxxsequence/element.md",
+      "hash": "899fa075a798927407c6d506a19beb1bac02b97a2c57f1076e95e247269eb645"
+    },
+    "https://docs.swift.org/latest/data/documentation/cxx/cxxsequence/iterator.json": {
+      "etag": "\"ce3-659e1d5475740\"",
+      "file_path": "documentation/Swift-Org/Cxx/cxxsequence/iterator.md",
+      "hash": "44a6ca78aa28f9276ff4b7f2d0fc4ccc9263798d105c47a08f8fdd3a14bd4dfa"
+    },
+    "https://docs.swift.org/latest/data/documentation/cxx/cxxsequence/rawiterator.json": {
+      "etag": "\"89c-659e1d5475740\"",
+      "file_path": "documentation/Swift-Org/Cxx/cxxsequence/rawiterator.md",
+      "hash": "94092db5bdf19258c071893c4a25457c2c38db59ffb058e824672361cbaad917"
+    },
+    "https://docs.swift.org/latest/data/documentation/cxx/cxxset.json": {
+      "etag": "\"3414-659e1d5475740\"",
+      "file_path": "documentation/Swift-Org/Cxx/cxxset.md",
+      "hash": "143decc9e04c1c39f115c36bebd541a5b8e328f8e5ddbd70b9335bdb47200e08"
+    },
+    "https://docs.swift.org/latest/data/documentation/cxx/cxxset/contains(_:).json": {
+      "etag": "\"1030-659e1d5475740\"",
+      "file_path": "documentation/Swift-Org/Cxx/cxxset/contains(_).md",
+      "hash": "56ee228a1117fb71622751f15c69bcff0069365f742d28f3f3b92aa573240ccb"
+    },
+    "https://docs.swift.org/latest/data/documentation/cxx/cxxset/count(_:).json": {
+      "etag": "\"e9c-659e1d5475740\"",
+      "file_path": "documentation/Swift-Org/Cxx/cxxset/count(_).md",
+      "hash": "1f7739edfb85019900501c0ec15b74ddb084cc883a2be96a4d36f2244b8432fd"
+    },
+    "https://docs.swift.org/latest/data/documentation/cxx/cxxset/element.json": {
+      "etag": "\"f01-659e1d5475740\"",
+      "file_path": "documentation/Swift-Org/Cxx/cxxset/element.md",
+      "hash": "87a9859b71608ee7b71b99174351dd9b3d01ce574720cbe61dab52815564d628"
+    },
+    "https://docs.swift.org/latest/data/documentation/cxx/cxxset/init().json": {
+      "etag": "\"6e6-659e1d5475740\"",
+      "file_path": "documentation/Swift-Org/Cxx/cxxset/init().md",
+      "hash": "71e176f78bbb8cd7e78ed036117c586bce3ebc98140802ca0d07235654c1c05b"
+    },
+    "https://docs.swift.org/latest/data/documentation/cxx/cxxset/init(_:).json": {
+      "etag": "\"15ba-659e1d5475740\"",
+      "file_path": "documentation/Swift-Org/Cxx/cxxset/init(_).md",
+      "hash": "588ba2291d720533117a7246e9b9d70d6279eee7645781ddb20bf98be9540df3"
+    },
+    "https://docs.swift.org/latest/data/documentation/cxx/cxxset/insertionresult.json": {
+      "etag": "\"7da-659e1d5475740\"",
+      "file_path": "documentation/Swift-Org/Cxx/cxxset/insertionresult.md",
+      "hash": "5a6b5c6907e22872389893b9e02004ac4643a17117dc3347e18af09b90c44daa"
+    },
+    "https://docs.swift.org/latest/data/documentation/cxx/cxxset/rawiterator.json": {
+      "etag": "\"14ec-659e1d5475740\"",
+      "file_path": "documentation/Swift-Org/Cxx/cxxset/rawiterator.md",
+      "hash": "9455f13edcdb300b3ddab87a3278c224952d167bad918aeafbab0b858371d334"
+    },
+    "https://docs.swift.org/latest/data/documentation/cxx/cxxset/rawmutableiterator.json": {
+      "etag": "\"c84-659e1d5475740\"",
+      "file_path": "documentation/Swift-Org/Cxx/cxxset/rawmutableiterator.md",
+      "hash": "251091109a4c104dab751ae8fe4dd651a60691308747190acc60eaa449fd83a1"
+    },
+    "https://docs.swift.org/latest/data/documentation/cxx/cxxset/size.json": {
+      "etag": "\"af1-659e1d5475740\"",
+      "file_path": "documentation/Swift-Org/Cxx/cxxset/size.md",
+      "hash": "3f901e707a08a9f9bb6acd0f900aab7cef04b61d4b75ee0d75e2e730132f74aa"
+    },
+    "https://docs.swift.org/latest/data/documentation/cxx/cxxspan.json": {
+      "etag": "\"336c-659e1d5475740\"",
+      "file_path": "documentation/Swift-Org/Cxx/cxxspan.md",
+      "hash": "a110fbc1859752d2fe1cc7ba867bd7420e8752a433a819b907c3c13a798df8dd"
+    },
+    "https://docs.swift.org/latest/data/documentation/cxx/cxxspan/element.json": {
+      "etag": "\"812-659e1d5475740\"",
+      "file_path": "documentation/Swift-Org/Cxx/cxxspan/element.md",
+      "hash": "a32563055d6221207336643e93e1e161e5e9104e4dbddc208670e304d3c24297"
+    },
+    "https://docs.swift.org/latest/data/documentation/cxx/cxxspan/init().json": {
+      "etag": "\"6fd-659e1d5475740\"",
+      "file_path": "documentation/Swift-Org/Cxx/cxxspan/init().md",
+      "hash": "ffd4e089c04c5c4010ee0659746f1492b2860b305e91161580ec69d8ec2d04c3"
+    },
+    "https://docs.swift.org/latest/data/documentation/cxx/cxxspan/init(_:)-1orx7.json": {
+      "etag": "\"f81-659e1d5475740\"",
+      "file_path": "documentation/Swift-Org/Cxx/cxxspan/init(_)-1orx7.md",
+      "hash": "73824134ae4da3b67baba1fec930e035051cf9e217ee5c84e2c089d0a5de983d"
+    },
+    "https://docs.swift.org/latest/data/documentation/cxx/cxxspan/init(_:)-73hp6.json": {
+      "etag": "\"fd2-659e1d5475740\"",
+      "file_path": "documentation/Swift-Org/Cxx/cxxspan/init(_)-73hp6.md",
+      "hash": "ab92742c8cdd9523867214fe447f5c138ba1e099366ece031add0c1901187c2f"
+    },
+    "https://docs.swift.org/latest/data/documentation/cxx/cxxspan/init(_:)-749nt.json": {
+      "etag": "\"f01-659e1d5475740\"",
+      "file_path": "documentation/Swift-Org/Cxx/cxxspan/init(_)-749nt.md",
+      "hash": "8c59ef0a50351d42a1bfd9834b9d28fa36a4b0724ee89767137d0efa49a77650"
+    },
+    "https://docs.swift.org/latest/data/documentation/cxx/cxxspan/init(_:_:).json": {
+      "etag": "\"128a-659e1d5475740\"",
+      "file_path": "documentation/Swift-Org/Cxx/cxxspan/init(_,_).md",
+      "hash": "9f1e63dabb34fc8c47428cf9c07b22172d12acbf2d5261cfc1573a9d44a2b3f1"
+    },
+    "https://docs.swift.org/latest/data/documentation/cxx/cxxspan/size().json": {
+      "etag": "\"af1-659e1d5475740\"",
+      "file_path": "documentation/Swift-Org/Cxx/cxxspan/size().md",
+      "hash": "31f0bbb394d4c9630a27861b1e4685f4d7985aa50d131d993170e0e5547d9f7f"
+    },
+    "https://docs.swift.org/latest/data/documentation/cxx/cxxspan/size.json": {
+      "etag": "\"b08-659e1d5475740\"",
+      "file_path": "documentation/Swift-Org/Cxx/cxxspan/size.md",
+      "hash": "81a49caf349cb910536c9bfc433829330bbc629a8824fcdbaa888a9b1817a760"
+    },
+    "https://docs.swift.org/latest/data/documentation/cxx/cxxuniqueset.json": {
+      "etag": "\"3986-659e1d5475740\"",
+      "file_path": "documentation/Swift-Org/Cxx/cxxuniqueset.md",
+      "hash": "e102ff5af42f132729b6faa27d33d28aadd6884f692fdc19776ced47aa8eca47"
+    },
+    "https://docs.swift.org/latest/data/documentation/cxx/cxxuniqueset/insert(_:).json": {
+      "etag": "\"18f9-659e1d5475740\"",
+      "file_path": "documentation/Swift-Org/Cxx/cxxuniqueset/insert(_).md",
+      "hash": "0e36d588d3006dd6d8f58d67f4197e12dd513d8b54eb05377263b7dafe4b7aa1"
+    },
+    "https://docs.swift.org/latest/data/documentation/cxx/cxxuniqueset/insertionresult.json": {
+      "etag": "\"84f-659e1d5475740\"",
+      "file_path": "documentation/Swift-Org/Cxx/cxxuniqueset/insertionresult.md",
+      "hash": "bfdede32b4d7944b1f4224e3f482899857899fa9895e7317c232270f59ccd791"
+    },
+    "https://docs.swift.org/latest/data/documentation/cxx/cxxuniqueset/remove(_:).json": {
+      "etag": "\"f18-659e1d5475740\"",
+      "file_path": "documentation/Swift-Org/Cxx/cxxuniqueset/remove(_).md",
+      "hash": "7ca0eb97291fce1459dcfe71349deb3c49ed5f026e3af660aa11527f98e6ac8d"
+    },
+    "https://docs.swift.org/latest/data/documentation/cxx/cxxvector.json": {
+      "etag": "\"2fb7-659e1d5475740\"",
+      "file_path": "documentation/Swift-Org/Cxx/cxxvector.md",
+      "hash": "007ccaaa80708a776c3cc07b279981dd5226ee2a2dfe41c7efbe7eaf54284b53"
+    },
+    "https://docs.swift.org/latest/data/documentation/cxx/cxxvector/element.json": {
+      "etag": "\"f31-659e1d5475740\"",
+      "file_path": "documentation/Swift-Org/Cxx/cxxvector/element.md",
+      "hash": "b72ac8922e081f4b93cd493af4b81dde1e8631b54c93247ef016734fb0479b9a"
+    },
+    "https://docs.swift.org/latest/data/documentation/cxx/cxxvector/init().json": {
+      "etag": "\"6f3-659e1d5475740\"",
+      "file_path": "documentation/Swift-Org/Cxx/cxxvector/init().md",
+      "hash": "04f4d9467790c83dec54d3036517adc8f1577a122ae3f6029c63f3196af0b750"
+    },
+    "https://docs.swift.org/latest/data/documentation/cxx/cxxvector/init(_:).json": {
+      "etag": "\"15e8-659e1d5475740\"",
+      "file_path": "documentation/Swift-Org/Cxx/cxxvector/init(_).md",
+      "hash": "daf9e1ed64944e390d697ce03c32d73cc447c4ecaa47234301e9b35d659a1cfb"
+    },
+    "https://docs.swift.org/latest/data/documentation/cxx/cxxvector/push_back(_:).json": {
+      "etag": "\"bf9-659e1d5475740\"",
+      "file_path": "documentation/Swift-Org/Cxx/cxxvector/push_back(_).md",
+      "hash": "871b422356365eed86995d261d3602a5c03756040f46e0a579b1e15e1d845583"
+    },
+    "https://docs.swift.org/latest/data/documentation/cxx/cxxvector/rawiterator.json": {
+      "etag": "\"cd8-659e1d5475740\"",
+      "file_path": "documentation/Swift-Org/Cxx/cxxvector/rawiterator.md",
+      "hash": "17e05f90709b19e6868c19aa638f6f1a82e48484b6fb292ca2d3cee2a967ec85"
+    },
+    "https://docs.swift.org/latest/data/documentation/cxx/cxxvector/size().json": {
+      "etag": "\"af5-659e1d5475740\"",
+      "file_path": "documentation/Swift-Org/Cxx/cxxvector/size().md",
+      "hash": "cfb6455b3de86aa308c6a386844c29a39f19233af53ff7c0dbb315693ec72076"
+    },
+    "https://docs.swift.org/latest/data/documentation/cxx/cxxvector/size.json": {
+      "etag": "\"afe-659e1d5475740\"",
+      "file_path": "documentation/Swift-Org/Cxx/cxxvector/size.md",
+      "hash": "1c48d9e4098a8d97c38740af3235473b86a41a0ed470369a291134ebbc7f7fdc"
+    },
+    "https://docs.swift.org/latest/data/documentation/cxx/cxxvector/span.json": {
+      "etag": "\"f28-659e1d5475740\"",
+      "file_path": "documentation/Swift-Org/Cxx/cxxvector/span.md",
+      "hash": "56a61aafb28e324a9137214ed42acd789ab0ea2c161833634cb58adcc84f4059"
+    },
+    "https://docs.swift.org/latest/data/documentation/cxx/unsafecxxcontiguousiterator.json": {
+      "etag": "\"25a2-659e1d5475740\"",
+      "file_path": "documentation/Swift-Org/Cxx/unsafecxxcontiguousiterator.md",
+      "hash": "1a7de32295d1d3a0a0f7506bcdab35c477956431a62cab287560bafa061ccead"
+    },
+    "https://docs.swift.org/latest/data/documentation/cxx/unsafecxxinputiterator.json": {
+      "etag": "\"3c7a-659e1d5475740\"",
+      "file_path": "documentation/Swift-Org/Cxx/unsafecxxinputiterator.md",
+      "hash": "77ca092237f493d61a7ad64b8f25e0c0cfa988d6c9797c72e297aea600539841"
+    },
+    "https://docs.swift.org/latest/data/documentation/cxx/unsafecxxinputiterator/dereferenceresult.json": {
+      "etag": "\"8fb-659e1d5475740\"",
+      "file_path": "documentation/Swift-Org/Cxx/unsafecxxinputiterator/dereferenceresult.md",
+      "hash": "20f34a36cc303d702fc412f2fd8a4eac888382f6c635b6f34b279e02002cf75e"
+    },
+    "https://docs.swift.org/latest/data/documentation/cxx/unsafecxxinputiterator/pointee-swift.associatedtype.json": {
+      "etag": "\"95c-659e1d5475740\"",
+      "file_path": "documentation/Swift-Org/Cxx/unsafecxxinputiterator/pointee-swift.associatedtype.md",
+      "hash": "53b16c081ebc64734d871dd09d85b43f5a96a41f48dc56ccaf3b313b18790bfa"
+    },
+    "https://docs.swift.org/latest/data/documentation/cxx/unsafecxxinputiterator/pointee-swift.property.json": {
+      "etag": "\"fab-659e1d5475740\"",
+      "file_path": "documentation/Swift-Org/Cxx/unsafecxxinputiterator/pointee-swift.property.md",
+      "hash": "357d3661497f4597ceece7c24bff7870d4fee4d5c7f82067a83f2445b81e48cb"
+    },
+    "https://docs.swift.org/latest/data/documentation/cxx/unsafecxxinputiterator/successor().json": {
+      "etag": "\"ba3-659e1d5475740\"",
+      "file_path": "documentation/Swift-Org/Cxx/unsafecxxinputiterator/successor().md",
+      "hash": "4c872da5407c168bfb6d701fe4f22a7c58874578083de61fe382ac4c8b7f53b2"
+    },
+    "https://docs.swift.org/latest/data/documentation/cxx/unsafecxxmutablecontiguousiterator.json": {
+      "etag": "\"23e3-659e1d5475740\"",
+      "file_path": "documentation/Swift-Org/Cxx/unsafecxxmutablecontiguousiterator.md",
+      "hash": "f1451125e11faaf0fbbb074435b63ced1a8b5b71dfc203ca1719bf72a0e90890"
+    },
+    "https://docs.swift.org/latest/data/documentation/cxx/unsafecxxmutableinputiterator.json": {
+      "etag": "\"29c9-659e1d5475740\"",
+      "file_path": "documentation/Swift-Org/Cxx/unsafecxxmutableinputiterator.md",
+      "hash": "2b24ace6f72ade6222a6fe0f378e1048d6fd234e135b3e2ee3f958827b6344c6"
+    },
+    "https://docs.swift.org/latest/data/documentation/cxx/unsafecxxmutableinputiterator/pointee.json": {
+      "etag": "\"d14-659e1d5475740\"",
+      "file_path": "documentation/Swift-Org/Cxx/unsafecxxmutableinputiterator/pointee.md",
+      "hash": "17ee8476cf56e2a8582bdff7ed551f34edec2497250099ba8b02722fbaf131b7"
+    },
+    "https://docs.swift.org/latest/data/documentation/cxx/unsafecxxmutablerandomaccessiterator.json": {
+      "etag": "\"2829-659e1d5475740\"",
+      "file_path": "documentation/Swift-Org/Cxx/unsafecxxmutablerandomaccessiterator.md",
+      "hash": "a7c6c4d6031b57e310cadd05a15d71bdd2680296feb66186c4617072cd195261"
+    },
+    "https://docs.swift.org/latest/data/documentation/cxx/unsafecxxrandomaccessiterator.json": {
+      "etag": "\"37da-659e1d5569980\"",
+      "file_path": "documentation/Swift-Org/Cxx/unsafecxxrandomaccessiterator.md",
+      "hash": "a3c584f54d5f3d84ce13cbc1675243da79a2a3e641d997e8a3d59ca69c1d091d"
+    },
+    "https://docs.swift.org/latest/data/documentation/cxx/unsafecxxrandomaccessiterator/+=(_:_:).json": {
+      "etag": "\"1096-659e1d5475740\"",
+      "file_path": "documentation/Swift-Org/Cxx/unsafecxxrandomaccessiterator/pluseq(_,_).md",
+      "hash": "f4119a106f430b036f8c8e3dd9d8dac6e0c86d16ffd3079155f147a22f8f07d9"
+    },
+    "https://docs.swift.org/latest/data/documentation/cxx/unsafecxxrandomaccessiterator/-(_:_:).json": {
+      "etag": "\"1058-659e1d5475740\"",
+      "file_path": "documentation/Swift-Org/Cxx/unsafecxxrandomaccessiterator/minus(_,_).md",
+      "hash": "b66ead038c05653842826a4170b58303c106f57277c1a36da4579069120f0e16"
+    },
+    "https://docs.swift.org/latest/data/documentation/cxx/unsafecxxrandomaccessiterator/distance.json": {
+      "etag": "\"cac-659e1d5569980\"",
+      "file_path": "documentation/Swift-Org/Cxx/unsafecxxrandomaccessiterator/distance.md",
+      "hash": "21634bf46d8634fb909cc4d60b01499a9a7d8338d0e603d018a16da987915d87"
+    },
+    "https://docs.swift.org/latest/documentation/cxx": {
+      "etag": "\"3749-659e1d5475740\"",
+      "file_path": "documentation/Swift-Org/Cxx/Cxx.md",
+      "hash": "a9e2ff662a9233bda08a95767f141bd75cfea89f2129e03058b554530a043c22"
+    },
+    "https://docs.swift.org/latest/documentation/cxx/cxxborrowingiterator": {
+      "etag": "\"28ff-659e1d5475740\"",
+      "file_path": "documentation/Swift-Org/Cxx/cxxborrowingiterator.md",
+      "hash": "5c5140b9394b56a1cde89aa430c5644f21dfc7f4dc2ffcb72df2f00873288558"
+    },
+    "https://docs.swift.org/latest/documentation/cxx/cxxborrowingiterator/borrowingiteratorprotocol-implementations": {
+      "etag": "\"1280-659e1d5475740\"",
+      "file_path": "documentation/Swift-Org/Cxx/cxxborrowingiterator/borrowingiteratorprotocol-implementations.md",
+      "hash": "88f7123229666e6048d7ec4a4da2e4833ed6159792d88b5c8f78507722bc3803"
+    },
+    "https://docs.swift.org/latest/documentation/cxx/cxxborrowingiterator/count": {
+      "etag": "\"edb-659e1d5475740\"",
+      "file_path": "documentation/Swift-Org/Cxx/cxxborrowingiterator/count.md",
+      "hash": "abc017e380e00e228972ed2dcc06f0d8cd235548a02ee76ee07052b2d321da7e"
+    },
+    "https://docs.swift.org/latest/documentation/cxx/cxxborrowingiterator/init(begin:end:sequence:)": {
+      "etag": "\"162d-659e1d5475740\"",
+      "file_path": "documentation/Swift-Org/Cxx/cxxborrowingiterator/init(begin,end,sequence).md",
+      "hash": "85084f6c4e29264738a2dc1d3e4d0fdf1ce4b007ff822b4e9d1fb82278f7a5fb"
+    },
+    "https://docs.swift.org/latest/documentation/cxx/cxxborrowingiterator/nextspan()": {
+      "etag": "\"122d-659e1d5475740\"",
+      "file_path": "documentation/Swift-Org/Cxx/cxxborrowingiterator/nextspan().md",
+      "hash": "98399b6fd050513bec3f552d818c9955d895d2a731e47842f08178b3119d5d99"
+    },
+    "https://docs.swift.org/latest/documentation/cxx/cxxborrowingiterator/nextspan()-7x8ui": {
+      "etag": "\"186d-659e1d5475740\"",
+      "file_path": "documentation/Swift-Org/Cxx/cxxborrowingiterator/nextspan()-7x8ui.md",
+      "hash": "2036a5eac6b56b98b16b2fd2087c0ce23b90524d703bcfa5ad06cb1b701fece9"
+    },
+    "https://docs.swift.org/latest/documentation/cxx/cxxborrowingiterator/nextspan(maxcount:)-5n5j9": {
+      "etag": "\"1585-659e1d5475740\"",
+      "file_path": "documentation/Swift-Org/Cxx/cxxborrowingiterator/nextspan(maxcount)-5n5j9.md",
+      "hash": "16fda522d0c01ebfde400ba7f7589e75747756a2e890639f5d95f4716a225b11"
+    },
+    "https://docs.swift.org/latest/documentation/cxx/cxxborrowingiterator/nextspan(maxcount:)-9yg0c": {
+      "etag": "\"1662-659e1d5475740\"",
+      "file_path": "documentation/Swift-Org/Cxx/cxxborrowingiterator/nextspan(maxcount)-9yg0c.md",
+      "hash": "7bf4d9c69c49c7985c74bdc0a396383494fba160a260882bac508916b071b55c"
+    },
+    "https://docs.swift.org/latest/documentation/cxx/cxxborrowingiterator/skip(by:)": {
+      "etag": "\"14b3-659e1d5475740\"",
+      "file_path": "documentation/Swift-Org/Cxx/cxxborrowingiterator/skip(by).md",
+      "hash": "3b1c9652f8035d814cdd323fe4569025a536029647ac91ec3f2bdab6d40c985d"
+    },
+    "https://docs.swift.org/latest/documentation/cxx/cxxconvertibletobool": {
+      "etag": "\"7e1-659e1d5475740\"",
+      "file_path": "documentation/Swift-Org/Cxx/cxxconvertibletobool.md",
+      "hash": "0c250b597a4c20c54aa073c1f4cd5c217f402b2a5bb9e5993adf5f9e823192b3"
+    },
+    "https://docs.swift.org/latest/documentation/cxx/cxxconvertibletocollection": {
+      "etag": "\"29c2-659e1d5475740\"",
+      "file_path": "documentation/Swift-Org/Cxx/cxxconvertibletocollection.md",
+      "hash": "f8834e30b0d9b96d439eae34dfb26a4f65fe73c607d6bb28bbe7ccb1b5385974"
+    },
+    "https://docs.swift.org/latest/documentation/cxx/cxxconvertibletocollection/element": {
+      "etag": "\"1072-659e1d5475740\"",
+      "file_path": "documentation/Swift-Org/Cxx/cxxconvertibletocollection/element.md",
+      "hash": "bf961b15dce26b3604d5827ea13010d971fd36cc80d26e6302eb18a68b81484f"
+    },
+    "https://docs.swift.org/latest/documentation/cxx/cxxconvertibletocollection/foreach(_:)-5ds8r": {
+      "etag": "\"1426-659e1d5475740\"",
+      "file_path": "documentation/Swift-Org/Cxx/cxxconvertibletocollection/foreach(_)-5ds8r.md",
+      "hash": "004fda0672cbcfb17008089e0bcca201cb840a3804a468d44fb6a8cf748c9d13"
+    },
+    "https://docs.swift.org/latest/documentation/cxx/cxxconvertibletocollection/foreach(_:)-7bkbm": {
+      "etag": "\"16f8-659e1d5475740\"",
+      "file_path": "documentation/Swift-Org/Cxx/cxxconvertibletocollection/foreach(_)-7bkbm.md",
+      "hash": "52d4f0f7d91b4b54e736a662ed341567650db1f7121c112c7715a92beb8511bf"
+    },
+    "https://docs.swift.org/latest/documentation/cxx/cxxconvertibletocollection/rawiterator": {
+      "etag": "\"d21-659e1d5475740\"",
+      "file_path": "documentation/Swift-Org/Cxx/cxxconvertibletocollection/rawiterator.md",
+      "hash": "b7c41efd2287ffd8967b1798ac26e2352602e04be6598ca99daea1484dcd505a"
+    },
+    "https://docs.swift.org/latest/documentation/cxx/cxxdictionary": {
+      "etag": "\"9637-659e1d5475740\"",
+      "file_path": "documentation/Swift-Org/Cxx/cxxdictionary.md",
+      "hash": "5e9f7e62c8e21a84c6e9052827db7ed1bfefd504f30c1eab6d62ded5e37534bb"
+    },
+    "https://docs.swift.org/latest/documentation/cxx/cxxdictionary/compactmapvalues(_:)-218g4": {
+      "etag": "\"182c-659e1d5475740\"",
+      "file_path": "documentation/Swift-Org/Cxx/cxxdictionary/compactmapvalues(_)-218g4.md",
+      "hash": "15fe7790b21dcef5f8cd1e3266f89c8f3ec118697e8cc3a09045dc424fa6438f"
+    },
+    "https://docs.swift.org/latest/documentation/cxx/cxxdictionary/compactmapvalues(_:)-9wz36": {
+      "etag": "\"25c2-659e1d5475740\"",
+      "file_path": "documentation/Swift-Org/Cxx/cxxdictionary/compactmapvalues(_)-9wz36.md",
+      "hash": "464ef04a1b6bcb4adcc747acd61f0b97ede5797d171d5a474f09e366b07983dd"
+    },
+    "https://docs.swift.org/latest/documentation/cxx/cxxdictionary/element": {
+      "etag": "\"20a3-659e1d5475740\"",
+      "file_path": "documentation/Swift-Org/Cxx/cxxdictionary/element.md",
+      "hash": "3a47b7fcde351bcf5b9dd4b89c6d24b71166d444a9f75807c42216ecd1f31717"
+    },
+    "https://docs.swift.org/latest/documentation/cxx/cxxdictionary/erase(_:)": {
+      "etag": "\"1032-659e1d5475740\"",
+      "file_path": "documentation/Swift-Org/Cxx/cxxdictionary/erase(_).md",
+      "hash": "74c9887f232a23ccbded5f1e49ffdfcec4acd98ec380ef0272c4783a28acedf7"
+    },
+    "https://docs.swift.org/latest/documentation/cxx/cxxdictionary/expressiblebydictionaryliteral-implementations": {
+      "etag": "\"c35-659e1d5475740\"",
+      "file_path": "documentation/Swift-Org/Cxx/cxxdictionary/expressiblebydictionaryliteral-implementations.md",
+      "hash": "439fd42ac1b269983b6ee9c8aa2f73997715f5c23a9881588f8dadf6f95618c7"
+    },
+    "https://docs.swift.org/latest/documentation/cxx/cxxdictionary/filter(_:)": {
+      "etag": "\"17bc-659e1d5475740\"",
+      "file_path": "documentation/Swift-Org/Cxx/cxxdictionary/filter(_).md",
+      "hash": "aef5ed24642c9c2af6f571698ca2a94c11967bf7ae6336364028afb78eaf3c81"
+    },
+    "https://docs.swift.org/latest/documentation/cxx/cxxdictionary/init()": {
+      "etag": "\"71e-659e1d5475740\"",
+      "file_path": "documentation/Swift-Org/Cxx/cxxdictionary/init().md",
+      "hash": "fa4c08251db7e62ab191b7db383e8d8c8816add6634ff10d857cc3819317f1ef"
+    },
+    "https://docs.swift.org/latest/documentation/cxx/cxxdictionary/init(_:)": {
+      "etag": "\"1b16-659e1d5475740\"",
+      "file_path": "documentation/Swift-Org/Cxx/cxxdictionary/init(_).md",
+      "hash": "9f6e3932138e0f07e8670340f402a47e3747d9ff8a745e6ab0148dd8919bfb9a"
+    },
+    "https://docs.swift.org/latest/documentation/cxx/cxxdictionary/init(dictionaryliteral:)": {
+      "etag": "\"1003-659e1d5475740\"",
+      "file_path": "documentation/Swift-Org/Cxx/cxxdictionary/init(dictionaryliteral).md",
+      "hash": "253620ca76735c73fd904277eb4640030230b9c1ee67b89c735ff62acfdd40d2"
+    },
+    "https://docs.swift.org/latest/documentation/cxx/cxxdictionary/init(grouping:by:)": {
+      "etag": "\"2498-659e1d5475740\"",
+      "file_path": "documentation/Swift-Org/Cxx/cxxdictionary/init(grouping,by).md",
+      "hash": "87c7f78ebb50521c21a8dc316c3567841e4e7a165b9293d33c43637a95adea62"
+    },
+    "https://docs.swift.org/latest/documentation/cxx/cxxdictionary/insertionresult": {
+      "etag": "\"812-659e1d5475740\"",
+      "file_path": "documentation/Swift-Org/Cxx/cxxdictionary/insertionresult.md",
+      "hash": "1b364a0c136ad7d2e2e43470851187a861f244b4f88ce8b166b2552a4dd2f3fc"
+    },
+    "https://docs.swift.org/latest/documentation/cxx/cxxdictionary/key": {
+      "etag": "\"7d9-659e1d5475740\"",
+      "file_path": "documentation/Swift-Org/Cxx/cxxdictionary/key.md",
+      "hash": "1c976a9fba47c50a139806b343d155d76c980b22c622903deb182e01830faf48"
+    },
+    "https://docs.swift.org/latest/documentation/cxx/cxxdictionary/mapvalues(_:)-46s22": {
+      "etag": "\"24fe-659e1d5475740\"",
+      "file_path": "documentation/Swift-Org/Cxx/cxxdictionary/mapvalues(_)-46s22.md",
+      "hash": "13893c9678de51f1617e3bdc9b9ab2c81be16c8503370fc53c19bccde8643ae4"
+    },
+    "https://docs.swift.org/latest/documentation/cxx/cxxdictionary/mapvalues(_:)-9bek8": {
+      "etag": "\"17a4-659e1d5475740\"",
+      "file_path": "documentation/Swift-Org/Cxx/cxxdictionary/mapvalues(_)-9bek8.md",
+      "hash": "ef0157644e230fc03a961d98580908fe529202556f5b90555e93a7b18b44b695"
+    },
+    "https://docs.swift.org/latest/documentation/cxx/cxxdictionary/merge(_:uniquingkeyswith:)-5agb4": {
+      "etag": "\"29c1-659e1d5475740\"",
+      "file_path": "documentation/Swift-Org/Cxx/cxxdictionary/merge(_,uniquingkeyswith)-5agb4.md",
+      "hash": "5b526728433691e9873db92719d90b893108935f04bb3b5f8cf123ee04854e55"
+    },
+    "https://docs.swift.org/latest/documentation/cxx/cxxdictionary/merge(_:uniquingkeyswith:)-7h62": {
+      "etag": "\"294d-659e1d5475740\"",
+      "file_path": "documentation/Swift-Org/Cxx/cxxdictionary/merge(_,uniquingkeyswith)-7h62.md",
+      "hash": "bafdde6577f8a3b3b585d328aa767fcc5a773df4383a9dc22efff54969ccdd7a"
+    },
+    "https://docs.swift.org/latest/documentation/cxx/cxxdictionary/merge(_:uniquingkeyswith:)-885ha": {
+      "etag": "\"2bb6-659e1d5475740\"",
+      "file_path": "documentation/Swift-Org/Cxx/cxxdictionary/merge(_,uniquingkeyswith)-885ha.md",
+      "hash": "09a01a3127cd0db615a94128134c20878b347e71726a8505fa0690ba37a0e949"
+    },
+    "https://docs.swift.org/latest/documentation/cxx/cxxdictionary/merging(_:uniquingkeyswith:)-2gsmu": {
+      "etag": "\"29d5-659e1d5475740\"",
+      "file_path": "documentation/Swift-Org/Cxx/cxxdictionary/merging(_,uniquingkeyswith)-2gsmu.md",
+      "hash": "0568a55a917bfb79887fdf6ddf47792de814cff5ab45e4a971cedea3be585135"
+    },
+    "https://docs.swift.org/latest/documentation/cxx/cxxdictionary/merging(_:uniquingkeyswith:)-5ehky": {
+      "etag": "\"2c3a-659e1d5475740\"",
+      "file_path": "documentation/Swift-Org/Cxx/cxxdictionary/merging(_,uniquingkeyswith)-5ehky.md",
+      "hash": "8f6c68196869a30ec872757ffa292d253f36c263987bb7f5aae6e384373ae13b"
+    },
+    "https://docs.swift.org/latest/documentation/cxx/cxxdictionary/merging(_:uniquingkeyswith:)-6epld": {
+      "etag": "\"2a3f-659e1d5475740\"",
+      "file_path": "documentation/Swift-Org/Cxx/cxxdictionary/merging(_,uniquingkeyswith)-6epld.md",
+      "hash": "b2a997f11f375db6195f3f3148ac53551ee5a5c1f5d5f5d255709f83f369e515"
+    },
+    "https://docs.swift.org/latest/documentation/cxx/cxxdictionary/rawiterator": {
+      "etag": "\"1565-659e1d5475740\"",
+      "file_path": "documentation/Swift-Org/Cxx/cxxdictionary/rawiterator.md",
+      "hash": "49fe5958214c689376e09a5928499323ee8d9af0389d700a35929850434a0ed3"
+    },
+    "https://docs.swift.org/latest/documentation/cxx/cxxdictionary/rawmutableiterator": {
+      "etag": "\"c6e-659e1d5475740\"",
+      "file_path": "documentation/Swift-Org/Cxx/cxxdictionary/rawmutableiterator.md",
+      "hash": "182ab7bb571d9b5b2d47907fe2789402796704e221865a02d8cf65d8e9392ad6"
+    },
+    "https://docs.swift.org/latest/documentation/cxx/cxxdictionary/removevalue(forkey:)": {
+      "etag": "\"106f-659e1d5475740\"",
+      "file_path": "documentation/Swift-Org/Cxx/cxxdictionary/removevalue(forkey).md",
+      "hash": "6681b70496422f89ea9abe1496882506bf679cc452596f6fe371fd74cf5e39de"
+    },
+    "https://docs.swift.org/latest/documentation/cxx/cxxdictionary/size": {
+      "etag": "\"b29-659e1d5475740\"",
+      "file_path": "documentation/Swift-Org/Cxx/cxxdictionary/size.md",
+      "hash": "adf06efc0215a3fc4f0bc8bb677f1cfd436f6ecf97bfa620e268679cfbd09b8b"
+    },
+    "https://docs.swift.org/latest/documentation/cxx/cxxdictionary/subscript(_:)": {
+      "etag": "\"e99-659e1d5475740\"",
+      "file_path": "documentation/Swift-Org/Cxx/cxxdictionary/subscript(_).md",
+      "hash": "1c2d2712281ab9baab45043ea3a61723a1a6e6379a471f0a73324813802259a0"
+    },
+    "https://docs.swift.org/latest/documentation/cxx/cxxdictionary/subscript(_:default:)": {
+      "etag": "\"1259-659e1d5475740\"",
+      "file_path": "documentation/Swift-Org/Cxx/cxxdictionary/subscript(_,default).md",
+      "hash": "244d43f1b90ec9762f29a3956f4f57240128fc5329fc68448e71cd0a2b033a67"
+    },
+    "https://docs.swift.org/latest/documentation/cxx/cxxdictionary/value": {
+      "etag": "\"7ed-659e1d5475740\"",
+      "file_path": "documentation/Swift-Org/Cxx/cxxdictionary/value.md",
+      "hash": "a9205ad80f7917b06de299f79c2b1680c59b2c5ea13c4469fb603f71860d4b21"
+    },
+    "https://docs.swift.org/latest/documentation/cxx/cxxiterable": {
+      "etag": "\"1bd2-659e1d5475740\"",
+      "file_path": "documentation/Swift-Org/Cxx/cxxiterable.md",
+      "hash": "6db49a39fd5974217bfc67886fad71f12b300fa809051acd3bcf85302de78df3"
+    },
+    "https://docs.swift.org/latest/documentation/cxx/cxxiterable/borrowingiterator": {
+      "etag": "\"dfe-659e1d5475740\"",
+      "file_path": "documentation/Swift-Org/Cxx/cxxiterable/borrowingiterator.md",
+      "hash": "1fe2ea7afbaa6c041d51ac81c9b6f7d792857ff86d34e515e7da29afcb40f989"
+    },
+    "https://docs.swift.org/latest/documentation/cxx/cxxiterable/element": {
+      "etag": "\"1066-659e1d5475740\"",
+      "file_path": "documentation/Swift-Org/Cxx/cxxiterable/element.md",
+      "hash": "500bfdbc9745b315c9babca57bf12cda8d16776b205316ea19a15b8646de5620"
+    },
+    "https://docs.swift.org/latest/documentation/cxx/cxxiterable/rawiterator": {
+      "etag": "\"180a-659e1d5475740\"",
+      "file_path": "documentation/Swift-Org/Cxx/cxxiterable/rawiterator.md",
+      "hash": "fc9bb406d98de7e8bfa5a32e9c4c1205dc0de9d23c7725b20b75338961357ecc"
+    },
+    "https://docs.swift.org/latest/documentation/cxx/cxxiterator": {
+      "etag": "\"29d5-659e1d5475740\"",
+      "file_path": "documentation/Swift-Org/Cxx/cxxiterator.md",
+      "hash": "e1df6dac996afa4d6ad54e6a9c2c10788e4c26252cb779e7507da3ea61258946"
+    },
+    "https://docs.swift.org/latest/documentation/cxx/cxxiterator/element": {
+      "etag": "\"f0d-659e1d5475740\"",
+      "file_path": "documentation/Swift-Org/Cxx/cxxiterator/element.md",
+      "hash": "4f78dcdee667cb8aa6b2ce6dfcde836f4ab555c8f1ff66c59401f415da58ed38"
+    },
+    "https://docs.swift.org/latest/documentation/cxx/cxxiterator/init(sequence:)": {
+      "etag": "\"907-659e1d5475740\"",
+      "file_path": "documentation/Swift-Org/Cxx/cxxiterator/init(sequence).md",
+      "hash": "914bc9d5c48ffc67c22ffffb45114a37982082d3339cbdad155346c9366bc7d2"
+    },
+    "https://docs.swift.org/latest/documentation/cxx/cxxiterator/next()": {
+      "etag": "\"bb8-659e1d5475740\"",
+      "file_path": "documentation/Swift-Org/Cxx/cxxiterator/next().md",
+      "hash": "64fcc72d59ffa012b04020c6860f8d8d76bddd40b8f817b0ea3515e9d02e9313"
+    },
+    "https://docs.swift.org/latest/documentation/cxx/cxxmutablerandomaccesscollection": {
+      "etag": "\"2e50-659e1d5475740\"",
+      "file_path": "documentation/Swift-Org/Cxx/cxxmutablerandomaccesscollection.md",
+      "hash": "1aceb009d1ece2d66880fb1eeab859676abf4a46c3f03cb14b88f145d29b52a4"
+    },
+    "https://docs.swift.org/latest/documentation/cxx/cxxmutablerandomaccesscollection/rawmutableiterator": {
+      "etag": "\"14e8-659e1d5475740\"",
+      "file_path": "documentation/Swift-Org/Cxx/cxxmutablerandomaccesscollection/rawmutableiterator.md",
+      "hash": "dccc60058e996c0a3a6b400ec4a1148d36db71d2287c469f142c1abc685c894a"
+    },
+    "https://docs.swift.org/latest/documentation/cxx/cxxmutablespan": {
+      "etag": "\"30d4-659e1d5475740\"",
+      "file_path": "documentation/Swift-Org/Cxx/cxxmutablespan.md",
+      "hash": "6988572150ec2722e344de7b3dc0bf75e5620d43bffafe9f2f31d18c186092fc"
+    },
+    "https://docs.swift.org/latest/documentation/cxx/cxxmutablespan/element": {
+      "etag": "\"7fe-659e1d5475740\"",
+      "file_path": "documentation/Swift-Org/Cxx/cxxmutablespan/element.md",
+      "hash": "35984b457cfe6db5bba792435f1abf9092160101dc8cd5c16bf7649e9eeb21ff"
+    },
+    "https://docs.swift.org/latest/documentation/cxx/cxxmutablespan/init()": {
+      "etag": "\"6e9-659e1d5475740\"",
+      "file_path": "documentation/Swift-Org/Cxx/cxxmutablespan/init().md",
+      "hash": "8a38e0dc0e1c737f2afd34061f7764b565b3ea13bae57c0be51a0df2c266e669"
+    },
+    "https://docs.swift.org/latest/documentation/cxx/cxxmutablespan/init(_:)-2yxw9": {
+      "etag": "\"1055-659e1d5475740\"",
+      "file_path": "documentation/Swift-Org/Cxx/cxxmutablespan/init(_)-2yxw9.md",
+      "hash": "c6540051543b167343d87e892e51393b261d0f3639357a58ff966733ab85d07d"
+    },
+    "https://docs.swift.org/latest/documentation/cxx/cxxmutablespan/init(_:)-6j9kz": {
+      "etag": "\"104a-659e1d5475740\"",
+      "file_path": "documentation/Swift-Org/Cxx/cxxmutablespan/init(_)-6j9kz.md",
+      "hash": "bc004543d65752beb4dbf893c50d4f6ce5d7cefebb245350f1005031bcba74d6"
+    },
+    "https://docs.swift.org/latest/documentation/cxx/cxxmutablespan/init(_:_:)": {
+      "etag": "\"1370-659e1d5475740\"",
+      "file_path": "documentation/Swift-Org/Cxx/cxxmutablespan/init(_,_).md",
+      "hash": "f25a278034d53441a543a3a163402977840526fa06ff8d0049e4e38731584b29"
+    },
+    "https://docs.swift.org/latest/documentation/cxx/cxxmutablespan/size": {
+      "etag": "\"af4-659e1d5475740\"",
+      "file_path": "documentation/Swift-Org/Cxx/cxxmutablespan/size.md",
+      "hash": "2a106e3ee9755bce930d916bc8e5a0fd2c4ee845530162687be9bc1792e3b7b9"
+    },
+    "https://docs.swift.org/latest/documentation/cxx/cxxmutablespan/size()": {
+      "etag": "\"b11-659e1d5475740\"",
+      "file_path": "documentation/Swift-Org/Cxx/cxxmutablespan/size().md",
+      "hash": "bf1a8e6793bbfb6588363b9c6298f3c12b54c795a32827bae89fe9ead40b48cc"
+    },
+    "https://docs.swift.org/latest/documentation/cxx/cxxoptional": {
+      "etag": "\"1a31-659e1d5475740\"",
+      "file_path": "documentation/Swift-Org/Cxx/cxxoptional.md",
+      "hash": "32322c97b9d33c5ee597d7e415ab356bf8ec9482faa286b21c9b101f5225a297"
+    },
+    "https://docs.swift.org/latest/documentation/cxx/cxxoptional/expressiblebynilliteral-implementations": {
+      "etag": "\"ab5-659e1d5475740\"",
+      "file_path": "documentation/Swift-Org/Cxx/cxxoptional/expressiblebynilliteral-implementations.md",
+      "hash": "3d51f8dec1c5075a3d1e904b9014ee597695756cef7642c1f6083773311719a3"
+    },
+    "https://docs.swift.org/latest/documentation/cxx/cxxoptional/hasvalue": {
+      "etag": "\"b43-659e1d5475740\"",
+      "file_path": "documentation/Swift-Org/Cxx/cxxoptional/hasvalue.md",
+      "hash": "07b807d2f5495ff56f8e7dd5f10fb90c2fd5f5b3f66132b58d8323de2f6ae3ef"
+    },
+    "https://docs.swift.org/latest/documentation/cxx/cxxoptional/init()": {
+      "etag": "\"6c4-659e1d5475740\"",
+      "file_path": "documentation/Swift-Org/Cxx/cxxoptional/init().md",
+      "hash": "250e430b2c06e844d5f062fb0905559e101acee50edf07c1d31b5f1af5edd18a"
+    },
+    "https://docs.swift.org/latest/documentation/cxx/cxxoptional/init(_:)": {
+      "etag": "\"aa4-659e1d5475740\"",
+      "file_path": "documentation/Swift-Org/Cxx/cxxoptional/init(_).md",
+      "hash": "f6b5d68c19733abaf591b696b970d2c1d9e65fa34f0ce604f42bf97d479d137c"
+    },
+    "https://docs.swift.org/latest/documentation/cxx/cxxoptional/init(nilliteral:)": {
+      "etag": "\"889-659e1d5475740\"",
+      "file_path": "documentation/Swift-Org/Cxx/cxxoptional/init(nilliteral).md",
+      "hash": "7f3fe6c9e7d7968e2566ad276d0dfcfddb240f96067f09fa973ebcaa6f6cac09"
+    },
+    "https://docs.swift.org/latest/documentation/cxx/cxxoptional/pointee": {
+      "etag": "\"af2-659e1d5475740\"",
+      "file_path": "documentation/Swift-Org/Cxx/cxxoptional/pointee.md",
+      "hash": "c3ae39b7bebea512a9f66155d5fe56011cc8fb42d17d1a4d005c96463104d00f"
+    },
+    "https://docs.swift.org/latest/documentation/cxx/cxxoptional/value": {
+      "etag": "\"b4c-659e1d5475740\"",
+      "file_path": "documentation/Swift-Org/Cxx/cxxoptional/value.md",
+      "hash": "cacd265ab7653796200659aeb91b21ab17658e06e2251bf5cc15f3fb552aee48"
+    },
+    "https://docs.swift.org/latest/documentation/cxx/cxxoptional/wrapped": {
+      "etag": "\"767-659e1d5475740\"",
+      "file_path": "documentation/Swift-Org/Cxx/cxxoptional/wrapped.md",
+      "hash": "30bf690d75be1f0940cda4dab150d9859e63273ed8af174ea044af22132dca61"
+    },
+    "https://docs.swift.org/latest/documentation/cxx/cxxpair": {
+      "etag": "\"274a-659e1d5475740\"",
+      "file_path": "documentation/Swift-Org/Cxx/cxxpair.md",
+      "hash": "848f19be4533c6c1a252362066891cfff28b30aac0194b05641a9e26b7ae6dca"
+    },
+    "https://docs.swift.org/latest/documentation/cxx/cxxpair/first-swift.associatedtype": {
+      "etag": "\"832-659e1d5475740\"",
+      "file_path": "documentation/Swift-Org/Cxx/cxxpair/first-swift.associatedtype.md",
+      "hash": "1de559e3ed704e72d6dbc4b7afe13a8a64820cda405e75f8ff1eff044978bf3f"
+    },
+    "https://docs.swift.org/latest/documentation/cxx/cxxpair/first-swift.property": {
+      "etag": "\"bb2-659e1d5475740\"",
+      "file_path": "documentation/Swift-Org/Cxx/cxxpair/first-swift.property.md",
+      "hash": "0ad9394d64dd716097ba866880d7d131219863903d800b7f124dca3c72c282ef"
+    },
+    "https://docs.swift.org/latest/documentation/cxx/cxxpair/init(first:second:)": {
+      "etag": "\"1197-659e1d5475740\"",
+      "file_path": "documentation/Swift-Org/Cxx/cxxpair/init(first,second).md",
+      "hash": "b2bfa0dae3e7cb6a2b33d5e3adc0c85d71f6fc42ef5a43e7f360f581915d3997"
+    },
+    "https://docs.swift.org/latest/documentation/cxx/cxxpair/second-swift.associatedtype": {
+      "etag": "\"83c-659e1d5475740\"",
+      "file_path": "documentation/Swift-Org/Cxx/cxxpair/second-swift.associatedtype.md",
+      "hash": "39432cc94b3e5834ce1734066121709f4ea835b108525936bf25058dc08ab0a3"
+    },
+    "https://docs.swift.org/latest/documentation/cxx/cxxpair/second-swift.property": {
+      "etag": "\"bc9-659e1d5475740\"",
+      "file_path": "documentation/Swift-Org/Cxx/cxxpair/second-swift.property.md",
+      "hash": "10ba82fbc0ddd60bad511a560d1063ee05120d51f441a58720e5b28a1c12d470"
+    },
+    "https://docs.swift.org/latest/documentation/cxx/cxxrandomaccesscollection": {
+      "etag": "\"3e27-659e1d5475740\"",
+      "file_path": "documentation/Swift-Org/Cxx/cxxrandomaccesscollection.md",
+      "hash": "570208d2e267f3849ab23779f68773c6ba88ab04f8f9b2b1a296da83d2e1fd7f"
+    },
+    "https://docs.swift.org/latest/documentation/cxx/cxxrandomaccesscollection/element": {
+      "etag": "\"850-659e1d5475740\"",
+      "file_path": "documentation/Swift-Org/Cxx/cxxrandomaccesscollection/element.md",
+      "hash": "bdba60d4164ef4806d38f9ae71d56eac3a4d96074c05900862fe6f9db6e4688c"
+    },
+    "https://docs.swift.org/latest/documentation/cxx/cxxrandomaccesscollection/index": {
+      "etag": "\"b4b-659e1d5475740\"",
+      "file_path": "documentation/Swift-Org/Cxx/cxxrandomaccesscollection/index.md",
+      "hash": "881a32fe54c857a2db368526e5b1a368aaa5fed8b78db6643c37c013aa3db320"
+    },
+    "https://docs.swift.org/latest/documentation/cxx/cxxrandomaccesscollection/indices": {
+      "etag": "\"f36-659e1d5475740\"",
+      "file_path": "documentation/Swift-Org/Cxx/cxxrandomaccesscollection/indices.md",
+      "hash": "d784efbedb797668be91fd9a997b80f7dd14aee08f615b1823b0f250fe68e6e2"
+    },
+    "https://docs.swift.org/latest/documentation/cxx/cxxrandomaccesscollection/iterator": {
+      "etag": "\"cc0-659e1d5475740\"",
+      "file_path": "documentation/Swift-Org/Cxx/cxxrandomaccesscollection/iterator.md",
+      "hash": "189a637d0c0e13f4b91e84da567678c6ec490b69caa7de6830ba91dc8fab1534"
+    },
+    "https://docs.swift.org/latest/documentation/cxx/cxxrandomaccesscollection/rawiterator": {
+      "etag": "\"879-659e1d5475740\"",
+      "file_path": "documentation/Swift-Org/Cxx/cxxrandomaccesscollection/rawiterator.md",
+      "hash": "b7b9dee66548527520d34417aa72d59161e94498a1caceab1f5f169fab5afbe2"
+    },
+    "https://docs.swift.org/latest/documentation/cxx/cxxrandomaccesscollection/subsequence": {
+      "etag": "\"ce8-659e1d5475740\"",
+      "file_path": "documentation/Swift-Org/Cxx/cxxrandomaccesscollection/subsequence.md",
+      "hash": "b4d20e165625f53f3dd2ddf62fedae7b9c9b054a6942aac7e712dd125285b5f0"
+    },
+    "https://docs.swift.org/latest/documentation/cxx/cxxsequence": {
+      "etag": "\"3483-659e1d5475740\"",
+      "file_path": "documentation/Swift-Org/Cxx/cxxsequence.md",
+      "hash": "5149d176a9b07dece62bfa54a4108f7c261415e3050b345cb0275af9f5d39b8e"
+    },
+    "https://docs.swift.org/latest/documentation/cxx/cxxsequence/element": {
+      "etag": "\"873-659e1d5475740\"",
+      "file_path": "documentation/Swift-Org/Cxx/cxxsequence/element.md",
+      "hash": "899fa075a798927407c6d506a19beb1bac02b97a2c57f1076e95e247269eb645"
+    },
+    "https://docs.swift.org/latest/documentation/cxx/cxxsequence/iterator": {
+      "etag": "\"ce3-659e1d5475740\"",
+      "file_path": "documentation/Swift-Org/Cxx/cxxsequence/iterator.md",
+      "hash": "44a6ca78aa28f9276ff4b7f2d0fc4ccc9263798d105c47a08f8fdd3a14bd4dfa"
+    },
+    "https://docs.swift.org/latest/documentation/cxx/cxxsequence/rawiterator": {
+      "etag": "\"89c-659e1d5475740\"",
+      "file_path": "documentation/Swift-Org/Cxx/cxxsequence/rawiterator.md",
+      "hash": "94092db5bdf19258c071893c4a25457c2c38db59ffb058e824672361cbaad917"
+    },
+    "https://docs.swift.org/latest/documentation/cxx/cxxset": {
+      "etag": "\"3414-659e1d5475740\"",
+      "file_path": "documentation/Swift-Org/Cxx/cxxset.md",
+      "hash": "143decc9e04c1c39f115c36bebd541a5b8e328f8e5ddbd70b9335bdb47200e08"
+    },
+    "https://docs.swift.org/latest/documentation/cxx/cxxset/contains(_:)": {
+      "etag": "\"1030-659e1d5475740\"",
+      "file_path": "documentation/Swift-Org/Cxx/cxxset/contains(_).md",
+      "hash": "56ee228a1117fb71622751f15c69bcff0069365f742d28f3f3b92aa573240ccb"
+    },
+    "https://docs.swift.org/latest/documentation/cxx/cxxset/count(_:)": {
+      "etag": "\"e9c-659e1d5475740\"",
+      "file_path": "documentation/Swift-Org/Cxx/cxxset/count(_).md",
+      "hash": "1f7739edfb85019900501c0ec15b74ddb084cc883a2be96a4d36f2244b8432fd"
+    },
+    "https://docs.swift.org/latest/documentation/cxx/cxxset/element": {
+      "etag": "\"f01-659e1d5475740\"",
+      "file_path": "documentation/Swift-Org/Cxx/cxxset/element.md",
+      "hash": "87a9859b71608ee7b71b99174351dd9b3d01ce574720cbe61dab52815564d628"
+    },
+    "https://docs.swift.org/latest/documentation/cxx/cxxset/init()": {
+      "etag": "\"6e6-659e1d5475740\"",
+      "file_path": "documentation/Swift-Org/Cxx/cxxset/init().md",
+      "hash": "71e176f78bbb8cd7e78ed036117c586bce3ebc98140802ca0d07235654c1c05b"
+    },
+    "https://docs.swift.org/latest/documentation/cxx/cxxset/init(_:)": {
+      "etag": "\"15ba-659e1d5475740\"",
+      "file_path": "documentation/Swift-Org/Cxx/cxxset/init(_).md",
+      "hash": "588ba2291d720533117a7246e9b9d70d6279eee7645781ddb20bf98be9540df3"
+    },
+    "https://docs.swift.org/latest/documentation/cxx/cxxset/insertionresult": {
+      "etag": "\"7da-659e1d5475740\"",
+      "file_path": "documentation/Swift-Org/Cxx/cxxset/insertionresult.md",
+      "hash": "5a6b5c6907e22872389893b9e02004ac4643a17117dc3347e18af09b90c44daa"
+    },
+    "https://docs.swift.org/latest/documentation/cxx/cxxset/rawiterator": {
+      "etag": "\"14ec-659e1d5475740\"",
+      "file_path": "documentation/Swift-Org/Cxx/cxxset/rawiterator.md",
+      "hash": "9455f13edcdb300b3ddab87a3278c224952d167bad918aeafbab0b858371d334"
+    },
+    "https://docs.swift.org/latest/documentation/cxx/cxxset/rawmutableiterator": {
+      "etag": "\"c84-659e1d5475740\"",
+      "file_path": "documentation/Swift-Org/Cxx/cxxset/rawmutableiterator.md",
+      "hash": "251091109a4c104dab751ae8fe4dd651a60691308747190acc60eaa449fd83a1"
+    },
+    "https://docs.swift.org/latest/documentation/cxx/cxxset/size": {
+      "etag": "\"af1-659e1d5475740\"",
+      "file_path": "documentation/Swift-Org/Cxx/cxxset/size.md",
+      "hash": "3f901e707a08a9f9bb6acd0f900aab7cef04b61d4b75ee0d75e2e730132f74aa"
+    },
+    "https://docs.swift.org/latest/documentation/cxx/cxxspan": {
+      "etag": "\"336c-659e1d5475740\"",
+      "file_path": "documentation/Swift-Org/Cxx/cxxspan.md",
+      "hash": "a110fbc1859752d2fe1cc7ba867bd7420e8752a433a819b907c3c13a798df8dd"
+    },
+    "https://docs.swift.org/latest/documentation/cxx/cxxspan/element": {
+      "etag": "\"812-659e1d5475740\"",
+      "file_path": "documentation/Swift-Org/Cxx/cxxspan/element.md",
+      "hash": "a32563055d6221207336643e93e1e161e5e9104e4dbddc208670e304d3c24297"
+    },
+    "https://docs.swift.org/latest/documentation/cxx/cxxspan/init()": {
+      "etag": "\"6fd-659e1d5475740\"",
+      "file_path": "documentation/Swift-Org/Cxx/cxxspan/init().md",
+      "hash": "ffd4e089c04c5c4010ee0659746f1492b2860b305e91161580ec69d8ec2d04c3"
+    },
+    "https://docs.swift.org/latest/documentation/cxx/cxxspan/init(_:)-1orx7": {
+      "etag": "\"f81-659e1d5475740\"",
+      "file_path": "documentation/Swift-Org/Cxx/cxxspan/init(_)-1orx7.md",
+      "hash": "73824134ae4da3b67baba1fec930e035051cf9e217ee5c84e2c089d0a5de983d"
+    },
+    "https://docs.swift.org/latest/documentation/cxx/cxxspan/init(_:)-73hp6": {
+      "etag": "\"fd2-659e1d5475740\"",
+      "file_path": "documentation/Swift-Org/Cxx/cxxspan/init(_)-73hp6.md",
+      "hash": "ab92742c8cdd9523867214fe447f5c138ba1e099366ece031add0c1901187c2f"
+    },
+    "https://docs.swift.org/latest/documentation/cxx/cxxspan/init(_:)-749nt": {
+      "etag": "\"f01-659e1d5475740\"",
+      "file_path": "documentation/Swift-Org/Cxx/cxxspan/init(_)-749nt.md",
+      "hash": "8c59ef0a50351d42a1bfd9834b9d28fa36a4b0724ee89767137d0efa49a77650"
+    },
+    "https://docs.swift.org/latest/documentation/cxx/cxxspan/init(_:_:)": {
+      "etag": "\"128a-659e1d5475740\"",
+      "file_path": "documentation/Swift-Org/Cxx/cxxspan/init(_,_).md",
+      "hash": "9f1e63dabb34fc8c47428cf9c07b22172d12acbf2d5261cfc1573a9d44a2b3f1"
+    },
+    "https://docs.swift.org/latest/documentation/cxx/cxxspan/size": {
+      "etag": "\"b08-659e1d5475740\"",
+      "file_path": "documentation/Swift-Org/Cxx/cxxspan/size.md",
+      "hash": "81a49caf349cb910536c9bfc433829330bbc629a8824fcdbaa888a9b1817a760"
+    },
+    "https://docs.swift.org/latest/documentation/cxx/cxxspan/size()": {
+      "etag": "\"af1-659e1d5475740\"",
+      "file_path": "documentation/Swift-Org/Cxx/cxxspan/size().md",
+      "hash": "31f0bbb394d4c9630a27861b1e4685f4d7985aa50d131d993170e0e5547d9f7f"
+    },
+    "https://docs.swift.org/latest/documentation/cxx/cxxuniqueset": {
+      "etag": "\"3986-659e1d5475740\"",
+      "file_path": "documentation/Swift-Org/Cxx/cxxuniqueset.md",
+      "hash": "e102ff5af42f132729b6faa27d33d28aadd6884f692fdc19776ced47aa8eca47"
+    },
+    "https://docs.swift.org/latest/documentation/cxx/cxxuniqueset/insert(_:)": {
+      "etag": "\"18f9-659e1d5475740\"",
+      "file_path": "documentation/Swift-Org/Cxx/cxxuniqueset/insert(_).md",
+      "hash": "0e36d588d3006dd6d8f58d67f4197e12dd513d8b54eb05377263b7dafe4b7aa1"
+    },
+    "https://docs.swift.org/latest/documentation/cxx/cxxuniqueset/insertionresult": {
+      "etag": "\"84f-659e1d5475740\"",
+      "file_path": "documentation/Swift-Org/Cxx/cxxuniqueset/insertionresult.md",
+      "hash": "bfdede32b4d7944b1f4224e3f482899857899fa9895e7317c232270f59ccd791"
+    },
+    "https://docs.swift.org/latest/documentation/cxx/cxxuniqueset/remove(_:)": {
+      "etag": "\"f18-659e1d5475740\"",
+      "file_path": "documentation/Swift-Org/Cxx/cxxuniqueset/remove(_).md",
+      "hash": "7ca0eb97291fce1459dcfe71349deb3c49ed5f026e3af660aa11527f98e6ac8d"
+    },
+    "https://docs.swift.org/latest/documentation/cxx/cxxvector": {
+      "etag": "\"2fb7-659e1d5475740\"",
+      "file_path": "documentation/Swift-Org/Cxx/cxxvector.md",
+      "hash": "007ccaaa80708a776c3cc07b279981dd5226ee2a2dfe41c7efbe7eaf54284b53"
+    },
+    "https://docs.swift.org/latest/documentation/cxx/cxxvector/element": {
+      "etag": "\"f31-659e1d5475740\"",
+      "file_path": "documentation/Swift-Org/Cxx/cxxvector/element.md",
+      "hash": "b72ac8922e081f4b93cd493af4b81dde1e8631b54c93247ef016734fb0479b9a"
+    },
+    "https://docs.swift.org/latest/documentation/cxx/cxxvector/init()": {
+      "etag": "\"6f3-659e1d5475740\"",
+      "file_path": "documentation/Swift-Org/Cxx/cxxvector/init().md",
+      "hash": "04f4d9467790c83dec54d3036517adc8f1577a122ae3f6029c63f3196af0b750"
+    },
+    "https://docs.swift.org/latest/documentation/cxx/cxxvector/init(_:)": {
+      "etag": "\"15e8-659e1d5475740\"",
+      "file_path": "documentation/Swift-Org/Cxx/cxxvector/init(_).md",
+      "hash": "daf9e1ed64944e390d697ce03c32d73cc447c4ecaa47234301e9b35d659a1cfb"
+    },
+    "https://docs.swift.org/latest/documentation/cxx/cxxvector/push_back(_:)": {
+      "etag": "\"bf9-659e1d5475740\"",
+      "file_path": "documentation/Swift-Org/Cxx/cxxvector/push_back(_).md",
+      "hash": "871b422356365eed86995d261d3602a5c03756040f46e0a579b1e15e1d845583"
+    },
+    "https://docs.swift.org/latest/documentation/cxx/cxxvector/rawiterator": {
+      "etag": "\"cd8-659e1d5475740\"",
+      "file_path": "documentation/Swift-Org/Cxx/cxxvector/rawiterator.md",
+      "hash": "17e05f90709b19e6868c19aa638f6f1a82e48484b6fb292ca2d3cee2a967ec85"
+    },
+    "https://docs.swift.org/latest/documentation/cxx/cxxvector/size": {
+      "etag": "\"afe-659e1d5475740\"",
+      "file_path": "documentation/Swift-Org/Cxx/cxxvector/size.md",
+      "hash": "1c48d9e4098a8d97c38740af3235473b86a41a0ed470369a291134ebbc7f7fdc"
+    },
+    "https://docs.swift.org/latest/documentation/cxx/cxxvector/size()": {
+      "etag": "\"af5-659e1d5475740\"",
+      "file_path": "documentation/Swift-Org/Cxx/cxxvector/size().md",
+      "hash": "cfb6455b3de86aa308c6a386844c29a39f19233af53ff7c0dbb315693ec72076"
+    },
+    "https://docs.swift.org/latest/documentation/cxx/cxxvector/span": {
+      "etag": "\"f28-659e1d5475740\"",
+      "file_path": "documentation/Swift-Org/Cxx/cxxvector/span.md",
+      "hash": "56a61aafb28e324a9137214ed42acd789ab0ea2c161833634cb58adcc84f4059"
+    },
+    "https://docs.swift.org/latest/documentation/cxx/unsafecxxcontiguousiterator": {
+      "etag": "\"25a2-659e1d5475740\"",
+      "file_path": "documentation/Swift-Org/Cxx/unsafecxxcontiguousiterator.md",
+      "hash": "1a7de32295d1d3a0a0f7506bcdab35c477956431a62cab287560bafa061ccead"
+    },
+    "https://docs.swift.org/latest/documentation/cxx/unsafecxxinputiterator": {
+      "etag": "\"3c7a-659e1d5475740\"",
+      "file_path": "documentation/Swift-Org/Cxx/unsafecxxinputiterator.md",
+      "hash": "77ca092237f493d61a7ad64b8f25e0c0cfa988d6c9797c72e297aea600539841"
+    },
+    "https://docs.swift.org/latest/documentation/cxx/unsafecxxinputiterator/dereferenceresult": {
+      "etag": "\"8fb-659e1d5475740\"",
+      "file_path": "documentation/Swift-Org/Cxx/unsafecxxinputiterator/dereferenceresult.md",
+      "hash": "20f34a36cc303d702fc412f2fd8a4eac888382f6c635b6f34b279e02002cf75e"
+    },
+    "https://docs.swift.org/latest/documentation/cxx/unsafecxxinputiterator/pointee-swift.associatedtype": {
+      "etag": "\"95c-659e1d5475740\"",
+      "file_path": "documentation/Swift-Org/Cxx/unsafecxxinputiterator/pointee-swift.associatedtype.md",
+      "hash": "53b16c081ebc64734d871dd09d85b43f5a96a41f48dc56ccaf3b313b18790bfa"
+    },
+    "https://docs.swift.org/latest/documentation/cxx/unsafecxxinputiterator/pointee-swift.property": {
+      "etag": "\"fab-659e1d5475740\"",
+      "file_path": "documentation/Swift-Org/Cxx/unsafecxxinputiterator/pointee-swift.property.md",
+      "hash": "357d3661497f4597ceece7c24bff7870d4fee4d5c7f82067a83f2445b81e48cb"
+    },
+    "https://docs.swift.org/latest/documentation/cxx/unsafecxxinputiterator/successor()": {
+      "etag": "\"ba3-659e1d5475740\"",
+      "file_path": "documentation/Swift-Org/Cxx/unsafecxxinputiterator/successor().md",
+      "hash": "4c872da5407c168bfb6d701fe4f22a7c58874578083de61fe382ac4c8b7f53b2"
+    },
+    "https://docs.swift.org/latest/documentation/cxx/unsafecxxmutablecontiguousiterator": {
+      "etag": "\"23e3-659e1d5475740\"",
+      "file_path": "documentation/Swift-Org/Cxx/unsafecxxmutablecontiguousiterator.md",
+      "hash": "f1451125e11faaf0fbbb074435b63ced1a8b5b71dfc203ca1719bf72a0e90890"
+    },
+    "https://docs.swift.org/latest/documentation/cxx/unsafecxxmutableinputiterator": {
+      "etag": "\"29c9-659e1d5475740\"",
+      "file_path": "documentation/Swift-Org/Cxx/unsafecxxmutableinputiterator.md",
+      "hash": "2b24ace6f72ade6222a6fe0f378e1048d6fd234e135b3e2ee3f958827b6344c6"
+    },
+    "https://docs.swift.org/latest/documentation/cxx/unsafecxxmutableinputiterator/pointee": {
+      "etag": "\"d14-659e1d5475740\"",
+      "file_path": "documentation/Swift-Org/Cxx/unsafecxxmutableinputiterator/pointee.md",
+      "hash": "17ee8476cf56e2a8582bdff7ed551f34edec2497250099ba8b02722fbaf131b7"
+    },
+    "https://docs.swift.org/latest/documentation/cxx/unsafecxxmutablerandomaccessiterator": {
+      "etag": "\"2829-659e1d5475740\"",
+      "file_path": "documentation/Swift-Org/Cxx/unsafecxxmutablerandomaccessiterator.md",
+      "hash": "a7c6c4d6031b57e310cadd05a15d71bdd2680296feb66186c4617072cd195261"
+    },
+    "https://docs.swift.org/latest/documentation/cxx/unsafecxxrandomaccessiterator": {
+      "etag": "\"37da-659e1d5569980\"",
+      "file_path": "documentation/Swift-Org/Cxx/unsafecxxrandomaccessiterator.md",
+      "hash": "a3c584f54d5f3d84ce13cbc1675243da79a2a3e641d997e8a3d59ca69c1d091d"
+    },
+    "https://docs.swift.org/latest/documentation/cxx/unsafecxxrandomaccessiterator/+=(_:_:)": {
+      "etag": "\"1096-659e1d5475740\"",
+      "file_path": "documentation/Swift-Org/Cxx/unsafecxxrandomaccessiterator/pluseq(_,_).md",
+      "hash": "f4119a106f430b036f8c8e3dd9d8dac6e0c86d16ffd3079155f147a22f8f07d9"
+    },
+    "https://docs.swift.org/latest/documentation/cxx/unsafecxxrandomaccessiterator/-(_:_:)": {
+      "etag": "\"1058-659e1d5475740\"",
+      "file_path": "documentation/Swift-Org/Cxx/unsafecxxrandomaccessiterator/minus(_,_).md",
+      "hash": "b66ead038c05653842826a4170b58303c106f57277c1a36da4579069120f0e16"
+    },
+    "https://docs.swift.org/latest/documentation/cxx/unsafecxxrandomaccessiterator/distance": {
+      "etag": "\"cac-659e1d5569980\"",
+      "file_path": "documentation/Swift-Org/Cxx/unsafecxxrandomaccessiterator/distance.md",
+      "hash": "21634bf46d8634fb909cc4d60b01499a9a7d8338d0e603d018a16da987915d87"
+    }
+  },
+  "metadata": {
+    "render": {
+      "version": 2
+    },
+    "total_pages": 268
+  }
+}

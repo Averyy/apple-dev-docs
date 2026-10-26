@@ -1,0 +1,340 @@
+{
+  "hashes": {
+    "https://docs.swift.org/latest/data/documentation/apiguidelines.json": {
+      "etag": "\"5234-65e3d33d6e000\"",
+      "file_path": "documentation/Swift-Org/APIGuidelines/APIGuidelines.md",
+      "hash": "bcf74147e3cf5e6f3dcfc99750d4ecc3ff3da3696bdfbb68864f2fb790e62302"
+    },
+    "https://docs.swift.org/latest/data/documentation/apiguidelines/avoid-abbreviations.json": {
+      "etag": "\"bce-65e3d33d6e000\"",
+      "file_path": "documentation/Swift-Org/APIGuidelines/avoid-abbreviations.md",
+      "hash": "d12bd8c94e0457f5190c9e3111e316896fa3a6268cd0a864bc54bf3c066b0de7"
+    },
+    "https://docs.swift.org/latest/data/documentation/apiguidelines/avoid-ambiguity.json": {
+      "etag": "\"f08-65e3d33d6e000\"",
+      "file_path": "documentation/Swift-Org/APIGuidelines/avoid-ambiguity.md",
+      "hash": "fa3eeba3e55c578cedb7c2c1177e0f7e6da064f84b7ea1f67c56927c2555c1ba"
+    },
+    "https://docs.swift.org/latest/data/documentation/apiguidelines/avoid-obscure-terms.json": {
+      "etag": "\"ce8-65e3d33d6e000\"",
+      "file_path": "documentation/Swift-Org/APIGuidelines/avoid-obscure-terms.md",
+      "hash": "e17e3b7a68deb1c7cce7ef25ceb574e13844445eb933a2f4c127678192c4cd5b"
+    },
+    "https://docs.swift.org/latest/data/documentation/apiguidelines/boolean-assertions.json": {
+      "etag": "\"150a-65e3d33d6e000\"",
+      "file_path": "documentation/Swift-Org/APIGuidelines/boolean-assertions.md",
+      "hash": "1eacba345ff3fa5229d1ab9ea7f9c1b92d06f382b807cd00f1802c27c8fdb354"
+    },
+    "https://docs.swift.org/latest/data/documentation/apiguidelines/case-conventions.json": {
+      "etag": "\"fa6-65e3d33d6e000\"",
+      "file_path": "documentation/Swift-Org/APIGuidelines/case-conventions.md",
+      "hash": "990d9f866f403a794685ddb8ab4505122aa683eba91d45ed30908a902fe42301"
+    },
+    "https://docs.swift.org/latest/data/documentation/apiguidelines/computed-property-complexity.json": {
+      "etag": "\"c06-65e3d33d6e000\"",
+      "file_path": "documentation/Swift-Org/APIGuidelines/computed-property-complexity.md",
+      "hash": "3c6f4a22f683ab0d6fa88b3a23996dae5cf5c1865a5ae5d5b5866f2c7f018fe3"
+    },
+    "https://docs.swift.org/latest/data/documentation/apiguidelines/default-parameter-order.json": {
+      "etag": "\"bbc-65e3d33d6e000\"",
+      "file_path": "documentation/Swift-Org/APIGuidelines/default-parameter-order.md",
+      "hash": "7d3180e3d465f6e73f995317b423dd1e555ab7b38a47104a5395f138ece626e3"
+    },
+    "https://docs.swift.org/latest/data/documentation/apiguidelines/defaulted-parameters.json": {
+      "etag": "\"1724-65e3d33d6e000\"",
+      "file_path": "documentation/Swift-Org/APIGuidelines/defaulted-parameters.md",
+      "hash": "11af059759c32c1da5ae9f338a08b9565d5b57277451697c59b7cedeb2c7f170"
+    },
+    "https://docs.swift.org/latest/data/documentation/apiguidelines/documentation-comments.json": {
+      "etag": "\"4400-65e3d33d6e000\"",
+      "file_path": "documentation/Swift-Org/APIGuidelines/documentation-comments.md",
+      "hash": "1ab01cddf564c2a6e2186197bb3ac5334affc3ae420e7827cdc67e5d9842e2fb"
+    },
+    "https://docs.swift.org/latest/data/documentation/apiguidelines/embrace-precedent.json": {
+      "etag": "\"12d0-65e3d33d6e000\"",
+      "file_path": "documentation/Swift-Org/APIGuidelines/embrace-precedent.md",
+      "hash": "b59e0bc63d0f3b800f17013d663ff489170f9145eb4ce16c14b01db95ebdfc11"
+    },
+    "https://docs.swift.org/latest/data/documentation/apiguidelines/established-meaning.json": {
+      "etag": "\"e7d-65e3d33d6e000\"",
+      "file_path": "documentation/Swift-Org/APIGuidelines/established-meaning.md",
+      "hash": "fdd3562f614d46b82cf857b6ac7b57a73fedeaab693a64c83020f8ffea102c90"
+    },
+    "https://docs.swift.org/latest/data/documentation/apiguidelines/factory-methods.json": {
+      "etag": "\"14c8-65e3d33d6e000\"",
+      "file_path": "documentation/Swift-Org/APIGuidelines/factory-methods.md",
+      "hash": "3f65325c7859c448f21a2a2c37b1b857f678c9b469bc19e49e02106262ab5052"
+    },
+    "https://docs.swift.org/latest/data/documentation/apiguidelines/grammatical-phrase-arguments.json": {
+      "etag": "\"13bb-65e3d33d6e000\"",
+      "file_path": "documentation/Swift-Org/APIGuidelines/grammatical-phrase-arguments.md",
+      "hash": "b69b1a83b243b0d816695e148cadb18203d9d5ecd7aa79944c56fde488f25098"
+    },
+    "https://docs.swift.org/latest/data/documentation/apiguidelines/grammatical-phrases.json": {
+      "etag": "\"1853-65e3d33d6e000\"",
+      "file_path": "documentation/Swift-Org/APIGuidelines/grammatical-phrases.md",
+      "hash": "6da2455ec9ea9c9e49177fcbd9715ef89d218177421d613b4bdd3b584999bf65"
+    },
+    "https://docs.swift.org/latest/data/documentation/apiguidelines/indistinguishable-arguments.json": {
+      "etag": "\"f3f-65e3d33d6e000\"",
+      "file_path": "documentation/Swift-Org/APIGuidelines/indistinguishable-arguments.md",
+      "hash": "98966d977a5363628de2965b9825e4de872a3932a0fb1c97876e107853ab0595"
+    },
+    "https://docs.swift.org/latest/data/documentation/apiguidelines/initializer-first-arguments.json": {
+      "etag": "\"216c-65e3d33d6e000\"",
+      "file_path": "documentation/Swift-Org/APIGuidelines/initializer-first-arguments.md",
+      "hash": "edc527cb71ae0aff6d3ba0f533824edeae71ff83dbeb71954097faa946c170aa"
+    },
+    "https://docs.swift.org/latest/data/documentation/apiguidelines/label-other-arguments.json": {
+      "etag": "\"cda-65e3d33d6e000\"",
+      "file_path": "documentation/Swift-Org/APIGuidelines/label-other-arguments.md",
+      "hash": "8b3d410fd0b776b7195f745de0c2eac1b1b8280edfc6b4a7a48313b06176d65e"
+    },
+    "https://docs.swift.org/latest/data/documentation/apiguidelines/methods-over-free-functions.json": {
+      "etag": "\"d5c-65e3d33d6e000\"",
+      "file_path": "documentation/Swift-Org/APIGuidelines/methods-over-free-functions.md",
+      "hash": "2e704b3116557fa5575f0c870af68b0e2ea3fd7dca0779a1513edef26ee8fa12"
+    },
+    "https://docs.swift.org/latest/data/documentation/apiguidelines/name-according-to-roles.json": {
+      "etag": "\"1052-65e3d33d6e000\"",
+      "file_path": "documentation/Swift-Org/APIGuidelines/name-according-to-roles.md",
+      "hash": "5c916b7cda2ce46e813b232291048bbf89c223d17e7c13acd5d3754e91850b6f"
+    },
+    "https://docs.swift.org/latest/data/documentation/apiguidelines/noun-names.json": {
+      "etag": "\"13c2-65e3d33d6e000\"",
+      "file_path": "documentation/Swift-Org/APIGuidelines/noun-names.md",
+      "hash": "0468a34e7bb965b2a4624c240f642b91237559d260da38fe1f5fea5cfa3cb4f2"
+    },
+    "https://docs.swift.org/latest/data/documentation/apiguidelines/omit-needless-words.json": {
+      "etag": "\"107a-65e3d33d6e000\"",
+      "file_path": "documentation/Swift-Org/APIGuidelines/omit-needless-words.md",
+      "hash": "94520186291a837838a5706435f68a600cd76e117de7d98c71eb7373df247cca"
+    },
+    "https://docs.swift.org/latest/data/documentation/apiguidelines/parameter-names-for-documentation.json": {
+      "etag": "\"10eb-65e3d33d6e000\"",
+      "file_path": "documentation/Swift-Org/APIGuidelines/parameter-names-for-documentation.md",
+      "hash": "0cc32b4884d3996601719e025a786159013eedbcd32b2b10f8b6990be96c274a"
+    },
+    "https://docs.swift.org/latest/data/documentation/apiguidelines/prefer-fileid.json": {
+      "etag": "\"d90-65e3d33d6e000\"",
+      "file_path": "documentation/Swift-Org/APIGuidelines/prefer-fileid.md",
+      "hash": "306c7aff48929f25789230024e5d695a562d410c58a28b80cd8bf6aad8fbf1b7"
+    },
+    "https://docs.swift.org/latest/data/documentation/apiguidelines/prepositional-phrase-labels.json": {
+      "etag": "\"15cf-65e3d33d6e000\"",
+      "file_path": "documentation/Swift-Org/APIGuidelines/prepositional-phrase-labels.md",
+      "hash": "54edf75d332c50b88aa942d91c6635b258e2f65e4395a42ea138fcea720c39c0"
+    },
+    "https://docs.swift.org/latest/data/documentation/apiguidelines/protocol-capability-suffixes.json": {
+      "etag": "\"14e6-65e3d33d6e000\"",
+      "file_path": "documentation/Swift-Org/APIGuidelines/protocol-capability-suffixes.md",
+      "hash": "eabfa7e3b706c61f46283607084d200ba9340af60ffd66a9a9cb4593fd327f6f"
+    },
+    "https://docs.swift.org/latest/data/documentation/apiguidelines/protocol-nouns.json": {
+      "etag": "\"14c5-65e3d33d6e000\"",
+      "file_path": "documentation/Swift-Org/APIGuidelines/protocol-nouns.md",
+      "hash": "7f514ff19e580e664577ec1c4c7cd76ca76fb64466ee24745f5935e57ae16b94"
+    },
+    "https://docs.swift.org/latest/data/documentation/apiguidelines/shared-base-names.json": {
+      "etag": "\"13a4-65e3d33d6e000\"",
+      "file_path": "documentation/Swift-Org/APIGuidelines/shared-base-names.md",
+      "hash": "5164131a9a9b2a206c755801597e1c14bc517b5b0bb8cf23bf2a332891050c71"
+    },
+    "https://docs.swift.org/latest/data/documentation/apiguidelines/side-effect-naming.json": {
+      "etag": "\"26ec-65e3d33d6e000\"",
+      "file_path": "documentation/Swift-Org/APIGuidelines/side-effect-naming.md",
+      "hash": "857c0fe2a13fb065eacfb3fa933bcbfce4c71434e37a3af3f1fa602c154284f3"
+    },
+    "https://docs.swift.org/latest/data/documentation/apiguidelines/tuple-and-closure-labels.json": {
+      "etag": "\"eb5-65e3d33d6e000\"",
+      "file_path": "documentation/Swift-Org/APIGuidelines/tuple-and-closure-labels.md",
+      "hash": "c136ef2fccad52ab78203b3f1532f12a4cf59dffb7a47a0f7d610b42e364f66a"
+    },
+    "https://docs.swift.org/latest/data/documentation/apiguidelines/unconstrained-polymorphism.json": {
+      "etag": "\"1136-65e3d33d6e000\"",
+      "file_path": "documentation/Swift-Org/APIGuidelines/unconstrained-polymorphism.md",
+      "hash": "45c888e5a0e3cac355b237dca6274637ca408d7701dfe550228bc393c174f2c1"
+    },
+    "https://docs.swift.org/latest/data/documentation/apiguidelines/value-preserving-conversions.json": {
+      "etag": "\"1a08-65e3d33d6e000\"",
+      "file_path": "documentation/Swift-Org/APIGuidelines/value-preserving-conversions.md",
+      "hash": "ef4f1f174ba924ff9f32c4c40fa362f214ec0ac9801d2b3070ae5621e947e879"
+    },
+    "https://docs.swift.org/latest/data/documentation/apiguidelines/weak-type-information.json": {
+      "etag": "\"10e2-65e3d33d6e000\"",
+      "file_path": "documentation/Swift-Org/APIGuidelines/weak-type-information.md",
+      "hash": "91c7bd6b292a0f06f63337911117ab59114f52782fa9ca195f6df2b803bca0e2"
+    },
+    "https://docs.swift.org/latest/documentation/apiguidelines": {
+      "etag": "\"5234-65e3d33d6e000\"",
+      "file_path": "documentation/Swift-Org/APIGuidelines/APIGuidelines.md",
+      "hash": "bcf74147e3cf5e6f3dcfc99750d4ecc3ff3da3696bdfbb68864f2fb790e62302"
+    },
+    "https://docs.swift.org/latest/documentation/apiguidelines/avoid-abbreviations": {
+      "etag": "\"bce-65e3d33d6e000\"",
+      "file_path": "documentation/Swift-Org/APIGuidelines/avoid-abbreviations.md",
+      "hash": "d12bd8c94e0457f5190c9e3111e316896fa3a6268cd0a864bc54bf3c066b0de7"
+    },
+    "https://docs.swift.org/latest/documentation/apiguidelines/avoid-ambiguity": {
+      "etag": "\"f08-65e3d33d6e000\"",
+      "file_path": "documentation/Swift-Org/APIGuidelines/avoid-ambiguity.md",
+      "hash": "fa3eeba3e55c578cedb7c2c1177e0f7e6da064f84b7ea1f67c56927c2555c1ba"
+    },
+    "https://docs.swift.org/latest/documentation/apiguidelines/avoid-obscure-terms": {
+      "etag": "\"ce8-65e3d33d6e000\"",
+      "file_path": "documentation/Swift-Org/APIGuidelines/avoid-obscure-terms.md",
+      "hash": "e17e3b7a68deb1c7cce7ef25ceb574e13844445eb933a2f4c127678192c4cd5b"
+    },
+    "https://docs.swift.org/latest/documentation/apiguidelines/boolean-assertions": {
+      "etag": "\"150a-65e3d33d6e000\"",
+      "file_path": "documentation/Swift-Org/APIGuidelines/boolean-assertions.md",
+      "hash": "1eacba345ff3fa5229d1ab9ea7f9c1b92d06f382b807cd00f1802c27c8fdb354"
+    },
+    "https://docs.swift.org/latest/documentation/apiguidelines/case-conventions": {
+      "etag": "\"fa6-65e3d33d6e000\"",
+      "file_path": "documentation/Swift-Org/APIGuidelines/case-conventions.md",
+      "hash": "990d9f866f403a794685ddb8ab4505122aa683eba91d45ed30908a902fe42301"
+    },
+    "https://docs.swift.org/latest/documentation/apiguidelines/computed-property-complexity": {
+      "etag": "\"c06-65e3d33d6e000\"",
+      "file_path": "documentation/Swift-Org/APIGuidelines/computed-property-complexity.md",
+      "hash": "3c6f4a22f683ab0d6fa88b3a23996dae5cf5c1865a5ae5d5b5866f2c7f018fe3"
+    },
+    "https://docs.swift.org/latest/documentation/apiguidelines/default-parameter-order": {
+      "etag": "\"bbc-65e3d33d6e000\"",
+      "file_path": "documentation/Swift-Org/APIGuidelines/default-parameter-order.md",
+      "hash": "7d3180e3d465f6e73f995317b423dd1e555ab7b38a47104a5395f138ece626e3"
+    },
+    "https://docs.swift.org/latest/documentation/apiguidelines/defaulted-parameters": {
+      "etag": "\"1724-65e3d33d6e000\"",
+      "file_path": "documentation/Swift-Org/APIGuidelines/defaulted-parameters.md",
+      "hash": "11af059759c32c1da5ae9f338a08b9565d5b57277451697c59b7cedeb2c7f170"
+    },
+    "https://docs.swift.org/latest/documentation/apiguidelines/documentation-comments": {
+      "etag": "\"4400-65e3d33d6e000\"",
+      "file_path": "documentation/Swift-Org/APIGuidelines/documentation-comments.md",
+      "hash": "1ab01cddf564c2a6e2186197bb3ac5334affc3ae420e7827cdc67e5d9842e2fb"
+    },
+    "https://docs.swift.org/latest/documentation/apiguidelines/embrace-precedent": {
+      "etag": "\"12d0-65e3d33d6e000\"",
+      "file_path": "documentation/Swift-Org/APIGuidelines/embrace-precedent.md",
+      "hash": "b59e0bc63d0f3b800f17013d663ff489170f9145eb4ce16c14b01db95ebdfc11"
+    },
+    "https://docs.swift.org/latest/documentation/apiguidelines/established-meaning": {
+      "etag": "\"e7d-65e3d33d6e000\"",
+      "file_path": "documentation/Swift-Org/APIGuidelines/established-meaning.md",
+      "hash": "fdd3562f614d46b82cf857b6ac7b57a73fedeaab693a64c83020f8ffea102c90"
+    },
+    "https://docs.swift.org/latest/documentation/apiguidelines/factory-methods": {
+      "etag": "\"14c8-65e3d33d6e000\"",
+      "file_path": "documentation/Swift-Org/APIGuidelines/factory-methods.md",
+      "hash": "3f65325c7859c448f21a2a2c37b1b857f678c9b469bc19e49e02106262ab5052"
+    },
+    "https://docs.swift.org/latest/documentation/apiguidelines/grammatical-phrase-arguments": {
+      "etag": "\"13bb-65e3d33d6e000\"",
+      "file_path": "documentation/Swift-Org/APIGuidelines/grammatical-phrase-arguments.md",
+      "hash": "b69b1a83b243b0d816695e148cadb18203d9d5ecd7aa79944c56fde488f25098"
+    },
+    "https://docs.swift.org/latest/documentation/apiguidelines/grammatical-phrases": {
+      "etag": "\"1853-65e3d33d6e000\"",
+      "file_path": "documentation/Swift-Org/APIGuidelines/grammatical-phrases.md",
+      "hash": "6da2455ec9ea9c9e49177fcbd9715ef89d218177421d613b4bdd3b584999bf65"
+    },
+    "https://docs.swift.org/latest/documentation/apiguidelines/indistinguishable-arguments": {
+      "etag": "\"f3f-65e3d33d6e000\"",
+      "file_path": "documentation/Swift-Org/APIGuidelines/indistinguishable-arguments.md",
+      "hash": "98966d977a5363628de2965b9825e4de872a3932a0fb1c97876e107853ab0595"
+    },
+    "https://docs.swift.org/latest/documentation/apiguidelines/initializer-first-arguments": {
+      "etag": "\"216c-65e3d33d6e000\"",
+      "file_path": "documentation/Swift-Org/APIGuidelines/initializer-first-arguments.md",
+      "hash": "edc527cb71ae0aff6d3ba0f533824edeae71ff83dbeb71954097faa946c170aa"
+    },
+    "https://docs.swift.org/latest/documentation/apiguidelines/label-other-arguments": {
+      "etag": "\"cda-65e3d33d6e000\"",
+      "file_path": "documentation/Swift-Org/APIGuidelines/label-other-arguments.md",
+      "hash": "8b3d410fd0b776b7195f745de0c2eac1b1b8280edfc6b4a7a48313b06176d65e"
+    },
+    "https://docs.swift.org/latest/documentation/apiguidelines/methods-over-free-functions": {
+      "etag": "\"d5c-65e3d33d6e000\"",
+      "file_path": "documentation/Swift-Org/APIGuidelines/methods-over-free-functions.md",
+      "hash": "2e704b3116557fa5575f0c870af68b0e2ea3fd7dca0779a1513edef26ee8fa12"
+    },
+    "https://docs.swift.org/latest/documentation/apiguidelines/name-according-to-roles": {
+      "etag": "\"1052-65e3d33d6e000\"",
+      "file_path": "documentation/Swift-Org/APIGuidelines/name-according-to-roles.md",
+      "hash": "5c916b7cda2ce46e813b232291048bbf89c223d17e7c13acd5d3754e91850b6f"
+    },
+    "https://docs.swift.org/latest/documentation/apiguidelines/noun-names": {
+      "etag": "\"13c2-65e3d33d6e000\"",
+      "file_path": "documentation/Swift-Org/APIGuidelines/noun-names.md",
+      "hash": "0468a34e7bb965b2a4624c240f642b91237559d260da38fe1f5fea5cfa3cb4f2"
+    },
+    "https://docs.swift.org/latest/documentation/apiguidelines/omit-needless-words": {
+      "etag": "\"107a-65e3d33d6e000\"",
+      "file_path": "documentation/Swift-Org/APIGuidelines/omit-needless-words.md",
+      "hash": "94520186291a837838a5706435f68a600cd76e117de7d98c71eb7373df247cca"
+    },
+    "https://docs.swift.org/latest/documentation/apiguidelines/parameter-names-for-documentation": {
+      "etag": "\"10eb-65e3d33d6e000\"",
+      "file_path": "documentation/Swift-Org/APIGuidelines/parameter-names-for-documentation.md",
+      "hash": "0cc32b4884d3996601719e025a786159013eedbcd32b2b10f8b6990be96c274a"
+    },
+    "https://docs.swift.org/latest/documentation/apiguidelines/prefer-fileid": {
+      "etag": "\"d90-65e3d33d6e000\"",
+      "file_path": "documentation/Swift-Org/APIGuidelines/prefer-fileid.md",
+      "hash": "306c7aff48929f25789230024e5d695a562d410c58a28b80cd8bf6aad8fbf1b7"
+    },
+    "https://docs.swift.org/latest/documentation/apiguidelines/prepositional-phrase-labels": {
+      "etag": "\"15cf-65e3d33d6e000\"",
+      "file_path": "documentation/Swift-Org/APIGuidelines/prepositional-phrase-labels.md",
+      "hash": "54edf75d332c50b88aa942d91c6635b258e2f65e4395a42ea138fcea720c39c0"
+    },
+    "https://docs.swift.org/latest/documentation/apiguidelines/protocol-capability-suffixes": {
+      "etag": "\"14e6-65e3d33d6e000\"",
+      "file_path": "documentation/Swift-Org/APIGuidelines/protocol-capability-suffixes.md",
+      "hash": "eabfa7e3b706c61f46283607084d200ba9340af60ffd66a9a9cb4593fd327f6f"
+    },
+    "https://docs.swift.org/latest/documentation/apiguidelines/protocol-nouns": {
+      "etag": "\"14c5-65e3d33d6e000\"",
+      "file_path": "documentation/Swift-Org/APIGuidelines/protocol-nouns.md",
+      "hash": "7f514ff19e580e664577ec1c4c7cd76ca76fb64466ee24745f5935e57ae16b94"
+    },
+    "https://docs.swift.org/latest/documentation/apiguidelines/shared-base-names": {
+      "etag": "\"13a4-65e3d33d6e000\"",
+      "file_path": "documentation/Swift-Org/APIGuidelines/shared-base-names.md",
+      "hash": "5164131a9a9b2a206c755801597e1c14bc517b5b0bb8cf23bf2a332891050c71"
+    },
+    "https://docs.swift.org/latest/documentation/apiguidelines/side-effect-naming": {
+      "etag": "\"26ec-65e3d33d6e000\"",
+      "file_path": "documentation/Swift-Org/APIGuidelines/side-effect-naming.md",
+      "hash": "857c0fe2a13fb065eacfb3fa933bcbfce4c71434e37a3af3f1fa602c154284f3"
+    },
+    "https://docs.swift.org/latest/documentation/apiguidelines/tuple-and-closure-labels": {
+      "etag": "\"eb5-65e3d33d6e000\"",
+      "file_path": "documentation/Swift-Org/APIGuidelines/tuple-and-closure-labels.md",
+      "hash": "c136ef2fccad52ab78203b3f1532f12a4cf59dffb7a47a0f7d610b42e364f66a"
+    },
+    "https://docs.swift.org/latest/documentation/apiguidelines/unconstrained-polymorphism": {
+      "etag": "\"1136-65e3d33d6e000\"",
+      "file_path": "documentation/Swift-Org/APIGuidelines/unconstrained-polymorphism.md",
+      "hash": "45c888e5a0e3cac355b237dca6274637ca408d7701dfe550228bc393c174f2c1"
+    },
+    "https://docs.swift.org/latest/documentation/apiguidelines/value-preserving-conversions": {
+      "etag": "\"1a08-65e3d33d6e000\"",
+      "file_path": "documentation/Swift-Org/APIGuidelines/value-preserving-conversions.md",
+      "hash": "ef4f1f174ba924ff9f32c4c40fa362f214ec0ac9801d2b3070ae5621e947e879"
+    },
+    "https://docs.swift.org/latest/documentation/apiguidelines/weak-type-information": {
+      "etag": "\"10e2-65e3d33d6e000\"",
+      "file_path": "documentation/Swift-Org/APIGuidelines/weak-type-information.md",
+      "hash": "91c7bd6b292a0f06f63337911117ab59114f52782fa9ca195f6df2b803bca0e2"
+    }
+  },
+  "metadata": {
+    "render": {
+      "version": 2
+    },
+    "total_pages": 66
+  }
+}

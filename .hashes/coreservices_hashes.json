@@ -24521,7 +24521,7 @@
       "hash": "dcf1f39da218f60e600b6be29eb60660fa772206dfef1cd8f096adb3217bd999"
     },
     "https://developer.apple.com/documentation/coreservices/1556370-keyaesuiteid/keyaetransfermode": {
-      "etag": "\"2fae-65b3a47545b93\"",
+      "etag": "\"2fae-65b3a47545b93-df\"",
       "file_path": "documentation/coreservices/api-1556370-keyaesuiteid/keyaetransfermode.md",
       "hash": "552cacced4743f6709db36b2e0c670097577cd3d9a7a6ca3377bb617e67e306f"
     },
@@ -105456,7 +105456,7 @@
       "hash": "dcf1f39da218f60e600b6be29eb60660fa772206dfef1cd8f096adb3217bd999"
     },
     "https://developer.apple.com/tutorials/data/documentation/coreservices/1556370-keyaesuiteid/keyaetransfermode.json": {
-      "etag": "\"2fae-65b3a47545b93\"",
+      "etag": "\"2fae-65b3a47545b93-df\"",
       "file_path": "documentation/coreservices/api-1556370-keyaesuiteid/keyaetransfermode.md",
       "hash": "552cacced4743f6709db36b2e0c670097577cd3d9a7a6ca3377bb617e67e306f"
     },

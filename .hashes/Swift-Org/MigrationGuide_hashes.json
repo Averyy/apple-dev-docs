@@ -1,0 +1,23 @@
+{
+  "hashes": {
+    "https://docs.swift.org/latest/data/documentation/migrationguide.json": {
+      "etag": "\"56a9-659e1d5751e00\"",
+      "file_path": "documentation/Swift-Org/MigrationGuide/MigrationGuide.md",
+      "hash": "e8e3cde8b38d572a11db755d30ff0fda829ca73c8ea7848b22ce971e8d8d5de6"
+    },
+    "https://docs.swift.org/latest/documentation/migrationguide": {
+      "etag": "\"56a9-659e1d5751e00\"",
+      "file_path": "documentation/Swift-Org/MigrationGuide/MigrationGuide.md",
+      "hash": "e8e3cde8b38d572a11db755d30ff0fda829ca73c8ea7848b22ce971e8d8d5de6"
+    }
+  },
+  "metadata": {
+    "child_modules": {
+      "swift-6-concurrency-migration-guide": {}
+    },
+    "render": {
+      "version": 2
+    },
+    "total_pages": 2
+  }
+}

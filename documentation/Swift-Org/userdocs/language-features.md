@@ -1,0 +1,42 @@
+---
+url: "https://docs.swift.org/latest/documentation/userdocs/language-features"
+framework: "Swift-Org/userdocs"
+---
+
+# Language Features
+
+**Framework**: Swift-Org/userdocs  
+**Role**: Article
+
+Navigate and write your Swift code more easily with Language features.
+
+#### Overview
+
+The Swift extension provides language features such as code completion and jump to definition via [SourceKit-LSP](https://github.com/apple/sourcekit-lsp).
+
+> **⚠️ Important**: With Swift toolchains prior to 6.1 you will need to build your project at least once for SourceKit-LSP to function correcly. Whenever you add a new dependency to your project, make sure to rebuild it so that SourceKit-LSP can update its information.
+
+SourceKit-LSP provides background indexing in Swift toolchain 6.1 which will automatically index your project on startup. All indexing results are cached in the `.build/index-build` folder within your workspace.
+
+Language features are common to all VS Code extensions. See the [VS Code documentation about navigating code](https://code.visualstudio.com/docs/editing/editingevolved) for a more in-depth overview.
+
+SourceKit-LSP can be configured via extension settings. See [Extension Settings](./settings.md) for more information.
+
+## See Also
+
+### Features
+- [Automatic Task Creation](./automatic-task-creation.md)
+  Add tasks for common operations with your Package.
+- [Debugging](./debugging.md)
+  Debug your Swift executables using LLDB.
+- [Swift Project View](./project-view.md)
+  Use this view to get a high level view of your Swift project.
+- [Running and Debugging Tests](./test-explorer.md)
+  View test results in the Test Explorer.
+- [Documentation Live Preview](./docc-live-preview.md)
+  Show a live preview of your Swift documentation while editing.
+
+
+---
+
+*[View on docs.swift.org](https://docs.swift.org/latest/documentation/userdocs/language-features)*

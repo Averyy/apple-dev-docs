@@ -1,0 +1,88 @@
+---
+url: "https://docs.swift.org/latest/documentation/embeddedswift/externaldependencies"
+framework: "Swift-Org/EmbeddedSwift"
+---
+
+# Managing external dependencies
+
+**Framework**: Swift-Org/EmbeddedSwift  
+**Role**: Article
+
+Learn what external system dependencies to expect from Embedded Swift compilations.
+
+#### Overview
+
+Embedded Swift minimizes external dependencies (that is, functions that need to be available at link-time), but they still exist. There are generally two categories of dependencies: (1) functions that the Swift standard library or Embedded Swift runtime need to call, and (2) functions/symbols that are implicitly added by LLVM and the compiler pipeline.
+
+For (1), external dependencies are only used based on actual usage of the program under compilation:
+
+- instantiating a class, or using UnsafeMutablePointer.allocate()
+
+  - dependency: `int posix_memalign(void **, size_t, size_t);`
+  - dependency: `void free(void *);`
+- using print()
+
+  - dependency: `int putchar(int);`
+- using Hashable, Set, Dictionary, or random-number generating APIs
+
+  - dependency: `void arc4random_buf(void *, size_t);`
+- **dynamic exclusivity checking** (enabled with `-enforce-exclusivity=checked`)
+
+  - for single-threaded environments, link `swiftExclusivitySingleThreaded` library
+  - for multi-threaded environments that support C++11 thread-local storage, link `swiftExclusivityC11ThreadLocal`
+  - for environments where neither of the above will suffice
+
+    - dependency: `void * _swift_getExclusivityTLS()`
+    - dependency: void `_swift_setExclusivityTLS(void *newValue)`
+- using `Synchronization.Mutex`, one of:
+
+  - implement the `_swift_mutex_*` functions documented in the [platform abstraction header](https://github.com/swiftlang/swift/blob/main/stdlib/public/EmbeddedPlatform/swift/EmbeddedPlatform.h), or
+  - for single-threaded, link swiftEmbeddedPlatformSingleThreaded
+  - for multi-threaded link swiftEmbeddedPlatformMultiThreadedPOSIX (POSIX libc) or swiftEmbeddedPlatformMultiThreadedDarwin (for Apple platforms)
+
+For (2), external dependencies are also triggered by specific code needing them, but they are somewhat lower-level patterns where it might not be obvious that such patterns should cause external dependencies:
+
+- **basic memory copying and zeroing functions**
+
+  - usage added for a variety of reasons (for example, using structs on the stack)
+  - dependency: `void *memset(void *, int, size_t);`
+  - dependency: `void *memcpy(void *, const void *, size_t);`
+- **stack protectors** (aka stack cookies or stack canaries)
+
+  - dependency: `void *__stack_chk_guard;`
+  - dependency: `void __stack_chk_fail(void);`
+  - stack protectors can be disabled with `-disable-stack-protector` swiftc flag
+- **atomics intrinsics**
+
+  - on CPU architectures that don’t have direct load-acquire/store-release support in the ISA, LLVM calls helper functions for atomic operations
+  - needed by refcounting in the Embedded Swift runtime (so any class usage will trigger this dependency)
+  - also needed when using atomics from the Synchronization module
+- **multiplication/division/modulo intrinsics**
+
+  - on CPU architectures that don’t have direct support for the math operations in the ISA
+  - dependency (on Mach-O): `__divti3`
+  - dependency (on Mach-O): `__modti3`
+  - dependency (with EABI): `__aeabi_ldivmod`
+
+The user and/or the platform (through basic libraries like libc or compiler builtins) is expected to provide these APIs.
+
+## See Also
+
+### Language features
+- [Reviewing the language subset](./languagesubset.md)
+  Learn about the Embedded Swift language subset compared to full Swift.
+- [Using strings](./strings.md)
+  Enable full Unicode-compliant string support in Embedded Swift.
+- [Conditionalizing compilation for Embedded Swift](./conditionalcompilation.md)
+  Share code between Embedded Swift and full Swift using conditional compilation.
+- [Using libraries and modules in Embedded Swift](./libraries.md)
+  Learn about the library setup and linkage model of Embedded Swift.
+- [Working with existentials](./existentials.md)
+  Learn about restrictions on existentials that apply in Embedded Swift.
+- [Restricting non-final generic methods](./nonfinalgenericmethods.md)
+  Learn why unbound generic methods aren’t allowed in Embedded Swift.
+
+
+---
+
+*[View on docs.swift.org](https://docs.swift.org/latest/documentation/embeddedswift/externaldependencies)*

@@ -6296,7 +6296,7 @@
       "hash": "8b21edf384d7889f492f509f71db9d8142bcfe4de0f6d2b85e74aa2c8a0e146a"
     },
     "https://developer.apple.com/documentation/accelerate/bnnsgraphcompileoptionssetoutputpath(_:_:)": {
-      "etag": "\"896e-65d560f07e702-df\"",
+      "etag": "\"896e-65d560f07e702\"",
       "file_path": "documentation/Accelerate/bnnsgraphcompileoptionssetoutputpath(_,_).md",
       "hash": "001a1b752179253a2cb53c2d27b25fbd6f67aab06139c4567bee8a9ba7c150b9"
     },
@@ -50791,7 +50791,7 @@
       "hash": "8b21edf384d7889f492f509f71db9d8142bcfe4de0f6d2b85e74aa2c8a0e146a"
     },
     "https://developer.apple.com/tutorials/data/documentation/accelerate/bnnsgraphcompileoptionssetoutputpath(_:_:).json": {
-      "etag": "\"896e-65d560f07e702-df\"",
+      "etag": "\"896e-65d560f07e702\"",
       "file_path": "documentation/Accelerate/bnnsgraphcompileoptionssetoutputpath(_,_).md",
       "hash": "001a1b752179253a2cb53c2d27b25fbd6f67aab06139c4567bee8a9ba7c150b9"
     },

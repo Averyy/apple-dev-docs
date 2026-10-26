@@ -1,0 +1,140 @@
+{
+  "hashes": {
+    "https://docs.swift.org/latest/data/documentation/userdocs.json": {
+      "etag": "\"28d1-659e1dcc9f2c0\"",
+      "file_path": "documentation/Swift-Org/userdocs/userdocs.md",
+      "hash": "07a00d7902d7b4adfdd1bc79476489cb029b779d58b1255e3e4bca74351bb422"
+    },
+    "https://docs.swift.org/latest/data/documentation/userdocs/automatic-task-creation.json": {
+      "etag": "\"4734-659e1dcc9f2c0\"",
+      "file_path": "documentation/Swift-Org/userdocs/automatic-task-creation.md",
+      "hash": "7ef6ad4d2816c28b075fa0d1bd006df6dad108fe66929b26007fc097c155099e"
+    },
+    "https://docs.swift.org/latest/data/documentation/userdocs/commands.json": {
+      "etag": "\"867e-659e1dcc9f2c0\"",
+      "file_path": "documentation/Swift-Org/userdocs/commands.md",
+      "hash": "5c369539dfeaa9fe9ab9d0782b09cf9502c641f9320182fcb868e460d90f6fbf"
+    },
+    "https://docs.swift.org/latest/data/documentation/userdocs/debugging.json": {
+      "etag": "\"950e-659e1dcc9f2c0\"",
+      "file_path": "documentation/Swift-Org/userdocs/debugging.md",
+      "hash": "6d6bbac6bb8a44049bd795b5260bb9d534d74727a846d6d388c76c3d5305bd87"
+    },
+    "https://docs.swift.org/latest/data/documentation/userdocs/docc-live-preview.json": {
+      "etag": "\"1be6-659e1dcc9f2c0\"",
+      "file_path": "documentation/Swift-Org/userdocs/docc-live-preview.md",
+      "hash": "3ae3ef486a72f44d0c7d8557a4a8ed944810680b0fdfd5164da69eea4de97eeb"
+    },
+    "https://docs.swift.org/latest/data/documentation/userdocs/install-pre-release.json": {
+      "etag": "\"e45-659e1dcc9f2c0\"",
+      "file_path": "documentation/Swift-Org/userdocs/install-pre-release.md",
+      "hash": "fa43b2fe4619d4b6fc92ed97cfc7194cb8b417cbf36323b087463bb896818768"
+    },
+    "https://docs.swift.org/latest/data/documentation/userdocs/installation.json": {
+      "etag": "\"1c73-659e1dcc9f2c0\"",
+      "file_path": "documentation/Swift-Org/userdocs/installation.md",
+      "hash": "2e2e9d8ae422a43ecfba334fbead1d2ca43d13b398038a0fd712185d962c4055"
+    },
+    "https://docs.swift.org/latest/data/documentation/userdocs/language-features.json": {
+      "etag": "\"1e88-659e1dcc9f2c0\"",
+      "file_path": "documentation/Swift-Org/userdocs/language-features.md",
+      "hash": "056c4ffbde683408de011a4414c6582da3ab0398007bb2549318d32b2e11b4e4"
+    },
+    "https://docs.swift.org/latest/data/documentation/userdocs/project-view.json": {
+      "etag": "\"14b7-659e1dcc9f2c0\"",
+      "file_path": "documentation/Swift-Org/userdocs/project-view.md",
+      "hash": "f2862c90a92d6e97e821882722991a81ddc6a76c33f8fa12e0aeb298715a589f"
+    },
+    "https://docs.swift.org/latest/data/documentation/userdocs/remote-dev.json": {
+      "etag": "\"601a-659e1dcc9f2c0\"",
+      "file_path": "documentation/Swift-Org/userdocs/remote-dev.md",
+      "hash": "9c3af88109ad2e6443a1904d1aa5e782ba6fec3b03ec3a93ac4c638ea1f8e2ca"
+    },
+    "https://docs.swift.org/latest/data/documentation/userdocs/settings.json": {
+      "etag": "\"62b8-659e1dcc9f2c0\"",
+      "file_path": "documentation/Swift-Org/userdocs/settings.md",
+      "hash": "434cf5a5d8569f787c5eadcd62ea8a4ebdeddc97324b8f99792a17a84351e15d"
+    },
+    "https://docs.swift.org/latest/data/documentation/userdocs/supported-toolchains.json": {
+      "etag": "\"51f2-659e1dcc9f2c0\"",
+      "file_path": "documentation/Swift-Org/userdocs/supported-toolchains.md",
+      "hash": "9eb257e546f4eefb56d54aa0a4958a2d19566ffee765469d4dd30a3e94eb0038"
+    },
+    "https://docs.swift.org/latest/data/documentation/userdocs/test-explorer.json": {
+      "etag": "\"2a7d-659e1dcc9f2c0\"",
+      "file_path": "documentation/Swift-Org/userdocs/test-explorer.md",
+      "hash": "513884dc36ef0d0da3adb6028bfba0c2516f25218836c625f9ef63339678d129"
+    },
+    "https://docs.swift.org/latest/documentation/userdocs": {
+      "etag": "\"28d1-659e1dcc9f2c0\"",
+      "file_path": "documentation/Swift-Org/userdocs/userdocs.md",
+      "hash": "07a00d7902d7b4adfdd1bc79476489cb029b779d58b1255e3e4bca74351bb422"
+    },
+    "https://docs.swift.org/latest/documentation/userdocs/automatic-task-creation": {
+      "etag": "\"4734-659e1dcc9f2c0\"",
+      "file_path": "documentation/Swift-Org/userdocs/automatic-task-creation.md",
+      "hash": "7ef6ad4d2816c28b075fa0d1bd006df6dad108fe66929b26007fc097c155099e"
+    },
+    "https://docs.swift.org/latest/documentation/userdocs/commands": {
+      "etag": "\"867e-659e1dcc9f2c0\"",
+      "file_path": "documentation/Swift-Org/userdocs/commands.md",
+      "hash": "5c369539dfeaa9fe9ab9d0782b09cf9502c641f9320182fcb868e460d90f6fbf"
+    },
+    "https://docs.swift.org/latest/documentation/userdocs/debugging": {
+      "etag": "\"950e-659e1dcc9f2c0\"",
+      "file_path": "documentation/Swift-Org/userdocs/debugging.md",
+      "hash": "6d6bbac6bb8a44049bd795b5260bb9d534d74727a846d6d388c76c3d5305bd87"
+    },
+    "https://docs.swift.org/latest/documentation/userdocs/docc-live-preview": {
+      "etag": "\"1be6-659e1dcc9f2c0\"",
+      "file_path": "documentation/Swift-Org/userdocs/docc-live-preview.md",
+      "hash": "3ae3ef486a72f44d0c7d8557a4a8ed944810680b0fdfd5164da69eea4de97eeb"
+    },
+    "https://docs.swift.org/latest/documentation/userdocs/install-pre-release": {
+      "etag": "\"e45-659e1dcc9f2c0\"",
+      "file_path": "documentation/Swift-Org/userdocs/install-pre-release.md",
+      "hash": "fa43b2fe4619d4b6fc92ed97cfc7194cb8b417cbf36323b087463bb896818768"
+    },
+    "https://docs.swift.org/latest/documentation/userdocs/installation": {
+      "etag": "\"1c73-659e1dcc9f2c0\"",
+      "file_path": "documentation/Swift-Org/userdocs/installation.md",
+      "hash": "2e2e9d8ae422a43ecfba334fbead1d2ca43d13b398038a0fd712185d962c4055"
+    },
+    "https://docs.swift.org/latest/documentation/userdocs/language-features": {
+      "etag": "\"1e88-659e1dcc9f2c0\"",
+      "file_path": "documentation/Swift-Org/userdocs/language-features.md",
+      "hash": "056c4ffbde683408de011a4414c6582da3ab0398007bb2549318d32b2e11b4e4"
+    },
+    "https://docs.swift.org/latest/documentation/userdocs/project-view": {
+      "etag": "\"14b7-659e1dcc9f2c0\"",
+      "file_path": "documentation/Swift-Org/userdocs/project-view.md",
+      "hash": "f2862c90a92d6e97e821882722991a81ddc6a76c33f8fa12e0aeb298715a589f"
+    },
+    "https://docs.swift.org/latest/documentation/userdocs/remote-dev": {
+      "etag": "\"601a-659e1dcc9f2c0\"",
+      "file_path": "documentation/Swift-Org/userdocs/remote-dev.md",
+      "hash": "9c3af88109ad2e6443a1904d1aa5e782ba6fec3b03ec3a93ac4c638ea1f8e2ca"
+    },
+    "https://docs.swift.org/latest/documentation/userdocs/settings": {
+      "etag": "\"62b8-659e1dcc9f2c0\"",
+      "file_path": "documentation/Swift-Org/userdocs/settings.md",
+      "hash": "434cf5a5d8569f787c5eadcd62ea8a4ebdeddc97324b8f99792a17a84351e15d"
+    },
+    "https://docs.swift.org/latest/documentation/userdocs/supported-toolchains": {
+      "etag": "\"51f2-659e1dcc9f2c0\"",
+      "file_path": "documentation/Swift-Org/userdocs/supported-toolchains.md",
+      "hash": "9eb257e546f4eefb56d54aa0a4958a2d19566ffee765469d4dd30a3e94eb0038"
+    },
+    "https://docs.swift.org/latest/documentation/userdocs/test-explorer": {
+      "etag": "\"2a7d-659e1dcc9f2c0\"",
+      "file_path": "documentation/Swift-Org/userdocs/test-explorer.md",
+      "hash": "513884dc36ef0d0da3adb6028bfba0c2516f25218836c625f9ef63339678d129"
+    }
+  },
+  "metadata": {
+    "render": {
+      "version": 2
+    },
+    "total_pages": 26
+  }
+}

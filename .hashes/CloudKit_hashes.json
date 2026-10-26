@@ -2676,7 +2676,7 @@
       "hash": "d8c7aed0e4200c5c3b70400bcced18213dcf7abadd212af1d0564749a6d98d43"
     },
     "https://developer.apple.com/documentation/cloudkit/ckoperationgroup/operationgroupid": {
-      "etag": "\"42ae-65d55e69c9544\"",
+      "etag": "\"42ae-65d55e69c9544-df\"",
       "file_path": "documentation/CloudKit/ckoperationgroup/operationgroupid.md",
       "hash": "15f0983e54e76f802ad73648337c43d9bb7efd2c37eb0e9baa728a5a91d4488f"
     },
@@ -9176,7 +9176,7 @@
       "hash": "d8c7aed0e4200c5c3b70400bcced18213dcf7abadd212af1d0564749a6d98d43"
     },
     "https://developer.apple.com/tutorials/data/documentation/cloudkit/ckoperationgroup/operationgroupid.json": {
-      "etag": "\"42ae-65d55e69c9544\"",
+      "etag": "\"42ae-65d55e69c9544-df\"",
       "file_path": "documentation/CloudKit/ckoperationgroup/operationgroupid.md",
       "hash": "15f0983e54e76f802ad73648337c43d9bb7efd2c37eb0e9baa728a5a91d4488f"
     },

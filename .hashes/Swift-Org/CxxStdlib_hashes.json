@@ -1,0 +1,210 @@
+{
+  "hashes": {
+    "https://docs.swift.org/latest/data/documentation/cxxstdlib.json": {
+      "etag": "\"3ff9-659e1d5569980\"",
+      "file_path": "documentation/Swift-Org/CxxStdlib/CxxStdlib.md",
+      "hash": "45386399a6a5e44e7f619a24bb4c134e2529f8282e945137d38f0394a4474296"
+    },
+    "https://docs.swift.org/latest/data/documentation/cxxstdlib/!=(_:_:).json": {
+      "etag": "\"1162-659e1d5475740\"",
+      "file_path": "documentation/Swift-Org/CxxStdlib/noteq(_,_).md",
+      "hash": "d41be1e6e1f669e0a2bf214b0d734808a72f828466e2b6fa2b22531d5bd88c94"
+    },
+    "https://docs.swift.org/latest/data/documentation/cxxstdlib/==(_:_:)-1rtwd.json": {
+      "etag": "\"1571-659e1d5569980\"",
+      "file_path": "documentation/Swift-Org/CxxStdlib/eqeq(_,_)-1rtwd.md",
+      "hash": "b2d21d48b3093b4ea8425ed364c32d22db8ecd32a95261755030d9c30bb71dc5"
+    },
+    "https://docs.swift.org/latest/data/documentation/cxxstdlib/==(_:_:)-77wg5.json": {
+      "etag": "\"117a-659e1d5569980\"",
+      "file_path": "documentation/Swift-Org/CxxStdlib/eqeq(_,_)-77wg5.md",
+      "hash": "4faee6ba2fa2d846212c3fced88e38f1a66628de54a4c7770dc1aab21412955f"
+    },
+    "https://docs.swift.org/latest/data/documentation/cxxstdlib/==(_:_:)-8oiha.json": {
+      "etag": "\"167e-659e1d5569980\"",
+      "file_path": "documentation/Swift-Org/CxxStdlib/eqeq(_,_)-8oiha.md",
+      "hash": "e8e5fd0625edb1682d244ab0246633d8832d3092ea92ec61603c4b917453dbc4"
+    },
+    "https://docs.swift.org/latest/data/documentation/cxxstdlib/_(_:_:)-5dkhi.json": {
+      "etag": "\"1170-659e1d5569980\"",
+      "file_path": "documentation/Swift-Org/CxxStdlib/op(_,_)-5dkhi.md",
+      "hash": "37575722cfc3b077ea431be81d52d6bc02acffb54ddd450755d3c2db2b68d563"
+    },
+    "https://docs.swift.org/latest/data/documentation/cxxstdlib/_(_:_:)-7wjz6.json": {
+      "etag": "\"1170-659e1d5569980\"",
+      "file_path": "documentation/Swift-Org/CxxStdlib/op(_,_)-7wjz6.md",
+      "hash": "bdb891d726fe24440a98c6ebb4eb8ae09e6825871f4b847442d4863409fe9b43"
+    },
+    "https://docs.swift.org/latest/data/documentation/cxxstdlib/_=(_:_:)-85ier.json": {
+      "etag": "\"117a-659e1d5569980\"",
+      "file_path": "documentation/Swift-Org/CxxStdlib/opeq(_,_)-85ier.md",
+      "hash": "3b047ac058401fa12a7c250df6439982daf1243f8e13e519e494888312243587"
+    },
+    "https://docs.swift.org/latest/data/documentation/cxxstdlib/_=(_:_:)-949pf.json": {
+      "etag": "\"117a-659e1d5569980\"",
+      "file_path": "documentation/Swift-Org/CxxStdlib/opeq(_,_)-949pf.md",
+      "hash": "839c48f757b8e64a3e1d656fbc236e4e894b5416997471fd31ab4a4c7fe1501c"
+    },
+    "https://docs.swift.org/latest/data/documentation/cxxstdlib/atomic_bool_lock_free.json": {
+      "etag": "\"98b-659e1d5569980\"",
+      "file_path": "documentation/Swift-Org/CxxStdlib/atomic_bool_lock_free.md",
+      "hash": "4c205d303da60e025d4bc11532c289caec1bc1156223f42710874dfa4bd6c519"
+    },
+    "https://docs.swift.org/latest/data/documentation/cxxstdlib/atomic_char16_t_lock_free.json": {
+      "etag": "\"9b3-659e1d5569980\"",
+      "file_path": "documentation/Swift-Org/CxxStdlib/atomic_char16_t_lock_free.md",
+      "hash": "afaba6f1d33e0562368585853ffe521465d86d8dc3baec4b496d541e88de61a2"
+    },
+    "https://docs.swift.org/latest/data/documentation/cxxstdlib/atomic_char32_t_lock_free.json": {
+      "etag": "\"9b3-659e1d5569980\"",
+      "file_path": "documentation/Swift-Org/CxxStdlib/atomic_char32_t_lock_free.md",
+      "hash": "74bca7a8166851283374dcfe7f6161297d6de28a795ca9e8ef9733307dcc5303"
+    },
+    "https://docs.swift.org/latest/data/documentation/cxxstdlib/atomic_char_lock_free.json": {
+      "etag": "\"98b-659e1d5569980\"",
+      "file_path": "documentation/Swift-Org/CxxStdlib/atomic_char_lock_free.md",
+      "hash": "3e3b023b4d5499d3e85c0108bc303a38515c86e1f0b64ceb09ccdf4c5f7ca710"
+    },
+    "https://docs.swift.org/latest/data/documentation/cxxstdlib/atomic_int_lock_free.json": {
+      "etag": "\"981-659e1d5569980\"",
+      "file_path": "documentation/Swift-Org/CxxStdlib/atomic_int_lock_free.md",
+      "hash": "1df285107548f39de810b47219c3435fc3286669584f96b3230889d1dc126b9a"
+    },
+    "https://docs.swift.org/latest/data/documentation/cxxstdlib/atomic_llong_lock_free.json": {
+      "etag": "\"995-659e1d5569980\"",
+      "file_path": "documentation/Swift-Org/CxxStdlib/atomic_llong_lock_free.md",
+      "hash": "31810d7be40148a0682e1b63d70df1795439d38478723f9c1c268542ba02a462"
+    },
+    "https://docs.swift.org/latest/data/documentation/cxxstdlib/atomic_long_lock_free.json": {
+      "etag": "\"98b-659e1d5569980\"",
+      "file_path": "documentation/Swift-Org/CxxStdlib/atomic_long_lock_free.md",
+      "hash": "c9bf5417def1593e1e8fff1e16db1906da11b15a6f46c91ba4496839afae1ca8"
+    },
+    "https://docs.swift.org/latest/data/documentation/cxxstdlib/atomic_pointer_lock_free.json": {
+      "etag": "\"9a9-659e1d5569980\"",
+      "file_path": "documentation/Swift-Org/CxxStdlib/atomic_pointer_lock_free.md",
+      "hash": "f78a1e60dba3e6a467aa54a10b3deac00a8706387b3d578b94b6b4e799b709aa"
+    },
+    "https://docs.swift.org/latest/data/documentation/cxxstdlib/atomic_short_lock_free.json": {
+      "etag": "\"995-659e1d5569980\"",
+      "file_path": "documentation/Swift-Org/CxxStdlib/atomic_short_lock_free.md",
+      "hash": "6428fa96207b6c6c5d543abb5898c438a7b15a95f8e1cd664beec134c45ac1d1"
+    },
+    "https://docs.swift.org/latest/data/documentation/cxxstdlib/atomic_wchar_t_lock_free.json": {
+      "etag": "\"9a9-659e1d5569980\"",
+      "file_path": "documentation/Swift-Org/CxxStdlib/atomic_wchar_t_lock_free.md",
+      "hash": "016cc3333e4f6fe54ccc0a9cc47f224b0b4bb535e5d86ad278fdb1726cbe744e"
+    },
+    "https://docs.swift.org/latest/data/documentation/cxxstdlib/std.json": {
+      "etag": "\"a88-659e1d5569980\"",
+      "file_path": "documentation/Swift-Org/CxxStdlib/std.md",
+      "hash": "8bef450721aec47afb07b4f5495ae84e94c1433c792226c92d5940314f7f387c"
+    },
+    "https://docs.swift.org/latest/documentation/cxxstdlib": {
+      "etag": "\"3ff9-659e1d5569980\"",
+      "file_path": "documentation/Swift-Org/CxxStdlib/CxxStdlib.md",
+      "hash": "45386399a6a5e44e7f619a24bb4c134e2529f8282e945137d38f0394a4474296"
+    },
+    "https://docs.swift.org/latest/documentation/cxxstdlib/!=(_:_:)": {
+      "etag": "\"1162-659e1d5475740\"",
+      "file_path": "documentation/Swift-Org/CxxStdlib/noteq(_,_).md",
+      "hash": "d41be1e6e1f669e0a2bf214b0d734808a72f828466e2b6fa2b22531d5bd88c94"
+    },
+    "https://docs.swift.org/latest/documentation/cxxstdlib/==(_:_:)-1rtwd": {
+      "etag": "\"1571-659e1d5569980\"",
+      "file_path": "documentation/Swift-Org/CxxStdlib/eqeq(_,_)-1rtwd.md",
+      "hash": "b2d21d48b3093b4ea8425ed364c32d22db8ecd32a95261755030d9c30bb71dc5"
+    },
+    "https://docs.swift.org/latest/documentation/cxxstdlib/==(_:_:)-77wg5": {
+      "etag": "\"117a-659e1d5569980\"",
+      "file_path": "documentation/Swift-Org/CxxStdlib/eqeq(_,_)-77wg5.md",
+      "hash": "4faee6ba2fa2d846212c3fced88e38f1a66628de54a4c7770dc1aab21412955f"
+    },
+    "https://docs.swift.org/latest/documentation/cxxstdlib/==(_:_:)-8oiha": {
+      "etag": "\"167e-659e1d5569980\"",
+      "file_path": "documentation/Swift-Org/CxxStdlib/eqeq(_,_)-8oiha.md",
+      "hash": "e8e5fd0625edb1682d244ab0246633d8832d3092ea92ec61603c4b917453dbc4"
+    },
+    "https://docs.swift.org/latest/documentation/cxxstdlib/_(_:_:)-5dkhi": {
+      "etag": "\"1170-659e1d5569980\"",
+      "file_path": "documentation/Swift-Org/CxxStdlib/op(_,_)-5dkhi.md",
+      "hash": "37575722cfc3b077ea431be81d52d6bc02acffb54ddd450755d3c2db2b68d563"
+    },
+    "https://docs.swift.org/latest/documentation/cxxstdlib/_(_:_:)-7wjz6": {
+      "etag": "\"1170-659e1d5569980\"",
+      "file_path": "documentation/Swift-Org/CxxStdlib/op(_,_)-7wjz6.md",
+      "hash": "bdb891d726fe24440a98c6ebb4eb8ae09e6825871f4b847442d4863409fe9b43"
+    },
+    "https://docs.swift.org/latest/documentation/cxxstdlib/_=(_:_:)-85ier": {
+      "etag": "\"117a-659e1d5569980\"",
+      "file_path": "documentation/Swift-Org/CxxStdlib/opeq(_,_)-85ier.md",
+      "hash": "3b047ac058401fa12a7c250df6439982daf1243f8e13e519e494888312243587"
+    },
+    "https://docs.swift.org/latest/documentation/cxxstdlib/_=(_:_:)-949pf": {
+      "etag": "\"117a-659e1d5569980\"",
+      "file_path": "documentation/Swift-Org/CxxStdlib/opeq(_,_)-949pf.md",
+      "hash": "839c48f757b8e64a3e1d656fbc236e4e894b5416997471fd31ab4a4c7fe1501c"
+    },
+    "https://docs.swift.org/latest/documentation/cxxstdlib/atomic_bool_lock_free": {
+      "etag": "\"98b-659e1d5569980\"",
+      "file_path": "documentation/Swift-Org/CxxStdlib/atomic_bool_lock_free.md",
+      "hash": "4c205d303da60e025d4bc11532c289caec1bc1156223f42710874dfa4bd6c519"
+    },
+    "https://docs.swift.org/latest/documentation/cxxstdlib/atomic_char16_t_lock_free": {
+      "etag": "\"9b3-659e1d5569980\"",
+      "file_path": "documentation/Swift-Org/CxxStdlib/atomic_char16_t_lock_free.md",
+      "hash": "afaba6f1d33e0562368585853ffe521465d86d8dc3baec4b496d541e88de61a2"
+    },
+    "https://docs.swift.org/latest/documentation/cxxstdlib/atomic_char32_t_lock_free": {
+      "etag": "\"9b3-659e1d5569980\"",
+      "file_path": "documentation/Swift-Org/CxxStdlib/atomic_char32_t_lock_free.md",
+      "hash": "74bca7a8166851283374dcfe7f6161297d6de28a795ca9e8ef9733307dcc5303"
+    },
+    "https://docs.swift.org/latest/documentation/cxxstdlib/atomic_char_lock_free": {
+      "etag": "\"98b-659e1d5569980\"",
+      "file_path": "documentation/Swift-Org/CxxStdlib/atomic_char_lock_free.md",
+      "hash": "3e3b023b4d5499d3e85c0108bc303a38515c86e1f0b64ceb09ccdf4c5f7ca710"
+    },
+    "https://docs.swift.org/latest/documentation/cxxstdlib/atomic_int_lock_free": {
+      "etag": "\"981-659e1d5569980\"",
+      "file_path": "documentation/Swift-Org/CxxStdlib/atomic_int_lock_free.md",
+      "hash": "1df285107548f39de810b47219c3435fc3286669584f96b3230889d1dc126b9a"
+    },
+    "https://docs.swift.org/latest/documentation/cxxstdlib/atomic_llong_lock_free": {
+      "etag": "\"995-659e1d5569980\"",
+      "file_path": "documentation/Swift-Org/CxxStdlib/atomic_llong_lock_free.md",
+      "hash": "31810d7be40148a0682e1b63d70df1795439d38478723f9c1c268542ba02a462"
+    },
+    "https://docs.swift.org/latest/documentation/cxxstdlib/atomic_long_lock_free": {
+      "etag": "\"98b-659e1d5569980\"",
+      "file_path": "documentation/Swift-Org/CxxStdlib/atomic_long_lock_free.md",
+      "hash": "c9bf5417def1593e1e8fff1e16db1906da11b15a6f46c91ba4496839afae1ca8"
+    },
+    "https://docs.swift.org/latest/documentation/cxxstdlib/atomic_pointer_lock_free": {
+      "etag": "\"9a9-659e1d5569980\"",
+      "file_path": "documentation/Swift-Org/CxxStdlib/atomic_pointer_lock_free.md",
+      "hash": "f78a1e60dba3e6a467aa54a10b3deac00a8706387b3d578b94b6b4e799b709aa"
+    },
+    "https://docs.swift.org/latest/documentation/cxxstdlib/atomic_short_lock_free": {
+      "etag": "\"995-659e1d5569980\"",
+      "file_path": "documentation/Swift-Org/CxxStdlib/atomic_short_lock_free.md",
+      "hash": "6428fa96207b6c6c5d543abb5898c438a7b15a95f8e1cd664beec134c45ac1d1"
+    },
+    "https://docs.swift.org/latest/documentation/cxxstdlib/atomic_wchar_t_lock_free": {
+      "etag": "\"9a9-659e1d5569980\"",
+      "file_path": "documentation/Swift-Org/CxxStdlib/atomic_wchar_t_lock_free.md",
+      "hash": "016cc3333e4f6fe54ccc0a9cc47f224b0b4bb535e5d86ad278fdb1726cbe744e"
+    },
+    "https://docs.swift.org/latest/documentation/cxxstdlib/std": {
+      "etag": "\"a88-659e1d5569980\"",
+      "file_path": "documentation/Swift-Org/CxxStdlib/std.md",
+      "hash": "8bef450721aec47afb07b4f5495ae84e94c1433c792226c92d5940314f7f387c"
+    }
+  },
+  "metadata": {
+    "render": {
+      "version": 2
+    },
+    "total_pages": 40
+  }
+}

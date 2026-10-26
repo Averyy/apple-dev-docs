@@ -46946,7 +46946,7 @@
       "hash": "4b770cb0b30e3fdfc8a0ee3a6463cdaccd3a18635ee6f2ccc0b5bb7b5ac3c086"
     },
     "https://developer.apple.com/documentation/kernel/1646100-anonymous": {
-      "etag": "\"1a7b-6593d12fdb345\"",
+      "etag": "\"1a7b-6593d12fdb345-df\"",
       "file_path": "documentation/kernel/api-1646100-anonymous.md",
       "hash": "e502375497a6cc733249a7b9e019c874d510defb89480c44737e09737f145e3f"
     },
@@ -80801,7 +80801,7 @@
       "hash": "d27eb4262b9fc1bb8ce114e34463c7323f362cd629a5ae4cb4c1b08e16875a0f"
     },
     "https://developer.apple.com/documentation/kernel/embedded_panic_header/2915843-eph_version": {
-      "etag": "\"e73-6593d11c3fb53\"",
+      "etag": "\"e73-6593d11c3fb53-df\"",
       "file_path": "documentation/kernel/embedded_panic_header/api-2915843-eph_version.md",
       "hash": "2fa252136f8801e1d6cd433efb222cf51bb2c814f3e0b7fe25999303166de347"
     },
@@ -142271,7 +142271,7 @@
       "hash": "6d99e00ba112851ef2563a04f3030cce8c5d44856b0dc94da5316af0c8c5ad51"
     },
     "https://developer.apple.com/documentation/kernel/iousbdevrequest/1546579-windex": {
-      "etag": "\"2399-6593d12cd556a-df\"",
+      "etag": "\"2399-6593d12cd556a\"",
       "file_path": "documentation/kernel/iousbdevrequest/api-1546579-windex.md",
       "hash": "7d2080be88cce4e6377eb0e732f61e94c0bdfe4bee241baa75a668dbbbf19283"
     },
@@ -151256,7 +151256,7 @@
       "hash": "44e2108d9b4da8f8837de11e7fb32b5555bb1003c3dd55425f2c0bd42f58b3ad"
     },
     "https://developer.apple.com/documentation/kernel/kiointerfacenameprefix": {
-      "etag": "\"10a3-659023492a6d7\"",
+      "etag": "\"10a3-659023492a6d7-df\"",
       "file_path": "documentation/kernel/kiointerfacenameprefix.md",
       "hash": "55808b024930a8415fc40c5daadd458e10f3d3477c69a616bffc01655665345b"
     },
@@ -245806,7 +245806,7 @@
       "hash": "4b770cb0b30e3fdfc8a0ee3a6463cdaccd3a18635ee6f2ccc0b5bb7b5ac3c086"
     },
     "https://developer.apple.com/tutorials/data/documentation/kernel/1646100-anonymous.json": {
-      "etag": "\"1a7b-6593d12fdb345\"",
+      "etag": "\"1a7b-6593d12fdb345-df\"",
       "file_path": "documentation/kernel/api-1646100-anonymous.md",
       "hash": "e502375497a6cc733249a7b9e019c874d510defb89480c44737e09737f145e3f"
     },
@@ -279661,7 +279661,7 @@
       "hash": "d27eb4262b9fc1bb8ce114e34463c7323f362cd629a5ae4cb4c1b08e16875a0f"
     },
     "https://developer.apple.com/tutorials/data/documentation/kernel/embedded_panic_header/2915843-eph_version.json": {
-      "etag": "\"e73-6593d11c3fb53\"",
+      "etag": "\"e73-6593d11c3fb53-df\"",
       "file_path": "documentation/kernel/embedded_panic_header/api-2915843-eph_version.md",
       "hash": "2fa252136f8801e1d6cd433efb222cf51bb2c814f3e0b7fe25999303166de347"
     },
@@ -341131,7 +341131,7 @@
       "hash": "6d99e00ba112851ef2563a04f3030cce8c5d44856b0dc94da5316af0c8c5ad51"
     },
     "https://developer.apple.com/tutorials/data/documentation/kernel/iousbdevrequest/1546579-windex.json": {
-      "etag": "\"2399-6593d12cd556a-df\"",
+      "etag": "\"2399-6593d12cd556a\"",
       "file_path": "documentation/kernel/iousbdevrequest/api-1546579-windex.md",
       "hash": "7d2080be88cce4e6377eb0e732f61e94c0bdfe4bee241baa75a668dbbbf19283"
     },
@@ -350116,7 +350116,7 @@
       "hash": "44e2108d9b4da8f8837de11e7fb32b5555bb1003c3dd55425f2c0bd42f58b3ad"
     },
     "https://developer.apple.com/tutorials/data/documentation/kernel/kiointerfacenameprefix.json": {
-      "etag": "\"10a3-659023492a6d7\"",
+      "etag": "\"10a3-659023492a6d7-df\"",
       "file_path": "documentation/kernel/kiointerfacenameprefix.md",
       "hash": "55808b024930a8415fc40c5daadd458e10f3d3477c69a616bffc01655665345b"
     },

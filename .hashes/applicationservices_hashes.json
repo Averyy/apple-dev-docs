@@ -11956,7 +11956,7 @@
       "hash": "ef3fa5d0cde0a9555703a6f40918b19036b5abd2e455ca5a602f19f66d34dbcd"
     },
     "https://developer.apple.com/documentation/applicationservices/axvaluetype/kaxvaluetypecfrange": {
-      "etag": "\"25f2-65b3a463c3f07-df\"",
+      "etag": "\"25f2-65b3a463c3f07\"",
       "file_path": "documentation/applicationservices/axvaluetype/kaxvaluetypecfrange.md",
       "hash": "3ee92dae607e4230c80fe88f57548c30120cc099024f97aed61a07673ff5ee38"
     },
@@ -22246,7 +22246,7 @@
       "hash": "2c2e42715db7593efd30d819d178c1f8103789af147e5f57d663823033021648"
     },
     "https://developer.apple.com/documentation/applicationservices/kaxincrementbuttonattribute": {
-      "etag": "\"332d-65b3a464b8e67-df\"",
+      "etag": "\"332d-65b3a464b8e67\"",
       "file_path": "documentation/applicationservices/kaxincrementbuttonattribute.md",
       "hash": "a7a5d553a36cbe61d9b12293b07f02776b8dfa81c26b3b01ac4e0183af31a111"
     },
@@ -41216,7 +41216,7 @@
       "hash": "ef3fa5d0cde0a9555703a6f40918b19036b5abd2e455ca5a602f19f66d34dbcd"
     },
     "https://developer.apple.com/tutorials/data/documentation/applicationservices/axvaluetype/kaxvaluetypecfrange.json": {
-      "etag": "\"25f2-65b3a463c3f07-df\"",
+      "etag": "\"25f2-65b3a463c3f07\"",
       "file_path": "documentation/applicationservices/axvaluetype/kaxvaluetypecfrange.md",
       "hash": "3ee92dae607e4230c80fe88f57548c30120cc099024f97aed61a07673ff5ee38"
     },
@@ -51506,7 +51506,7 @@
       "hash": "2c2e42715db7593efd30d819d178c1f8103789af147e5f57d663823033021648"
     },
     "https://developer.apple.com/tutorials/data/documentation/applicationservices/kaxincrementbuttonattribute.json": {
-      "etag": "\"332d-65b3a464b8e67-df\"",
+      "etag": "\"332d-65b3a464b8e67\"",
       "file_path": "documentation/applicationservices/kaxincrementbuttonattribute.md",
       "hash": "a7a5d553a36cbe61d9b12293b07f02776b8dfa81c26b3b01ac4e0183af31a111"
     },

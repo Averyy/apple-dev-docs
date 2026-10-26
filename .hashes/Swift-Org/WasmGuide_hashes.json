@@ -1,0 +1,90 @@
+{
+  "hashes": {
+    "https://docs.swift.org/latest/data/documentation/wasmguide.json": {
+      "etag": "\"229f-659e1dcc9f2c0\"",
+      "file_path": "documentation/Swift-Org/WasmGuide/WasmGuide.md",
+      "hash": "878f9bf8ffceaaa757dac6106e0b5acec9868ce3e62e43ab997e7b16c68e3691"
+    },
+    "https://docs.swift.org/latest/data/documentation/wasmguide/concurrency.json": {
+      "etag": "\"31aa-659e1dcc9f2c0\"",
+      "file_path": "documentation/Swift-Org/WasmGuide/concurrency.md",
+      "hash": "9b3d39e32f81b3d668305350e373c35b35b6939f6cf0e8c6a0675d1cbf6ee08a"
+    },
+    "https://docs.swift.org/latest/data/documentation/wasmguide/debugging.json": {
+      "etag": "\"2095-659e1dcc9f2c0\"",
+      "file_path": "documentation/Swift-Org/WasmGuide/debugging.md",
+      "hash": "d7fecaeb65a16706b8435bcadd603989223748d35f6eee295912c43824d5a1fe"
+    },
+    "https://docs.swift.org/latest/data/documentation/wasmguide/importingexportingfunctions.json": {
+      "etag": "\"3509-659e1dcc9f2c0\"",
+      "file_path": "documentation/Swift-Org/WasmGuide/importingexportingfunctions.md",
+      "hash": "37a0baaa35e6502f61afb20b09e6f252089d095d45c764031dd4390a969253bd"
+    },
+    "https://docs.swift.org/latest/data/documentation/wasmguide/multithreading.json": {
+      "etag": "\"2d40-659e1dcc9f2c0\"",
+      "file_path": "documentation/Swift-Org/WasmGuide/multithreading.md",
+      "hash": "aaac191430b08847fe9cbe15605444d465f6fcf3a4e6be843f460e3df23c86af"
+    },
+    "https://docs.swift.org/latest/data/documentation/wasmguide/porting.json": {
+      "etag": "\"4453-659e1dcc9f2c0\"",
+      "file_path": "documentation/Swift-Org/WasmGuide/porting.md",
+      "hash": "b8ca302d72f7543098e912ece5e0b875a8258d3e3959918c81e0a9e992d3716c"
+    },
+    "https://docs.swift.org/latest/data/documentation/wasmguide/testing.json": {
+      "etag": "\"338a-659e1dcc9f2c0\"",
+      "file_path": "documentation/Swift-Org/WasmGuide/testing.md",
+      "hash": "8f4456393b4ae4ba80d267cbd7db3c16f7e3e55368e8a2f6054dd530f440bd65"
+    },
+    "https://docs.swift.org/latest/data/documentation/wasmguide/troubleshooting.json": {
+      "etag": "\"21f9-659e1dcc9f2c0\"",
+      "file_path": "documentation/Swift-Org/WasmGuide/troubleshooting.md",
+      "hash": "f6df5bcd505b05358c761cf31d7ad41d077b346b935f55b8e5959833e0651f08"
+    },
+    "https://docs.swift.org/latest/documentation/wasmguide": {
+      "etag": "\"229f-659e1dcc9f2c0\"",
+      "file_path": "documentation/Swift-Org/WasmGuide/WasmGuide.md",
+      "hash": "878f9bf8ffceaaa757dac6106e0b5acec9868ce3e62e43ab997e7b16c68e3691"
+    },
+    "https://docs.swift.org/latest/documentation/wasmguide/concurrency": {
+      "etag": "\"31aa-659e1dcc9f2c0\"",
+      "file_path": "documentation/Swift-Org/WasmGuide/concurrency.md",
+      "hash": "9b3d39e32f81b3d668305350e373c35b35b6939f6cf0e8c6a0675d1cbf6ee08a"
+    },
+    "https://docs.swift.org/latest/documentation/wasmguide/debugging": {
+      "etag": "\"2095-659e1dcc9f2c0\"",
+      "file_path": "documentation/Swift-Org/WasmGuide/debugging.md",
+      "hash": "d7fecaeb65a16706b8435bcadd603989223748d35f6eee295912c43824d5a1fe"
+    },
+    "https://docs.swift.org/latest/documentation/wasmguide/importingexportingfunctions": {
+      "etag": "\"3509-659e1dcc9f2c0\"",
+      "file_path": "documentation/Swift-Org/WasmGuide/importingexportingfunctions.md",
+      "hash": "37a0baaa35e6502f61afb20b09e6f252089d095d45c764031dd4390a969253bd"
+    },
+    "https://docs.swift.org/latest/documentation/wasmguide/multithreading": {
+      "etag": "\"2d40-659e1dcc9f2c0\"",
+      "file_path": "documentation/Swift-Org/WasmGuide/multithreading.md",
+      "hash": "aaac191430b08847fe9cbe15605444d465f6fcf3a4e6be843f460e3df23c86af"
+    },
+    "https://docs.swift.org/latest/documentation/wasmguide/porting": {
+      "etag": "\"4453-659e1dcc9f2c0\"",
+      "file_path": "documentation/Swift-Org/WasmGuide/porting.md",
+      "hash": "b8ca302d72f7543098e912ece5e0b875a8258d3e3959918c81e0a9e992d3716c"
+    },
+    "https://docs.swift.org/latest/documentation/wasmguide/testing": {
+      "etag": "\"338a-659e1dcc9f2c0\"",
+      "file_path": "documentation/Swift-Org/WasmGuide/testing.md",
+      "hash": "8f4456393b4ae4ba80d267cbd7db3c16f7e3e55368e8a2f6054dd530f440bd65"
+    },
+    "https://docs.swift.org/latest/documentation/wasmguide/troubleshooting": {
+      "etag": "\"21f9-659e1dcc9f2c0\"",
+      "file_path": "documentation/Swift-Org/WasmGuide/troubleshooting.md",
+      "hash": "f6df5bcd505b05358c761cf31d7ad41d077b346b935f55b8e5959833e0651f08"
+    }
+  },
+  "metadata": {
+    "render": {
+      "version": 2
+    },
+    "total_pages": 16
+  }
+}

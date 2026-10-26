@@ -1,0 +1,34 @@
+---
+url: "https://docs.swift.org/latest/documentation/apiguidelines/embrace-precedent"
+framework: "Swift-Org/APIGuidelines"
+---
+
+# Embrace precedent
+
+**Framework**: Swift-Org/APIGuidelines  
+**Role**: Article
+
+Embrace precedent.
+
+#### Overview
+
+Don’t optimize terms for the total beginner at the expense of conformance to existing culture.
+
+It is better to name a contiguous data structure `Array` than to use a simplified term such as `List`, even though a beginner might grasp the meaning of `List` more easily.  Arrays are fundamental in modern computing, so every programmer knows—or will soon learn—what an array is.  Use a term that most programmers are familiar with, and their web searches and questions will be rewarded.
+
+Within a particular programming *domain*, such as mathematics, a widely precedented term such as `sin(x)` is preferable to an explanatory phrase such as `verticalPositionOnUnitCircleAtOriginOfEndOfRadiusWithAngle(x)`. Note that in this case, precedent outweighs the guideline to avoid abbreviations: although the complete word is `sine`, “sin(*x*)” has been in common use among programmers for decades, and among mathematicians for centuries.
+
+## See Also
+
+### Naming — Use Terminology Well
+- [Avoid obscure terms](./avoid-obscure-terms.md)
+  Avoid obscure terms if a more common word conveys meaning just as well.
+- [Stick to the established meaning](./established-meaning.md)
+  Stick to the established meaning if you do use a term of art.
+- [Avoid abbreviations](./avoid-abbreviations.md)
+  Avoid abbreviations.
+
+
+---
+
+*[View on docs.swift.org](https://docs.swift.org/latest/documentation/apiguidelines/embrace-precedent)*

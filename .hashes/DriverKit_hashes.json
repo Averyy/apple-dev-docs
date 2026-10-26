@@ -7066,7 +7066,7 @@
       "hash": "2d56c63ea4f9180eb1b110fe7591bfb2a8bdc5f94091511621ffd93b826bbdce"
     },
     "https://developer.apple.com/documentation/driverkit/kmmccmd_send_diagnostics": {
-      "etag": "\"2838-65d560b0f2582-df\"",
+      "etag": "\"2838-65d560b0f2582\"",
       "file_path": "documentation/DriverKit/kmmccmd_send_diagnostics.md",
       "hash": "a09ea4981c8b211a66cb22f64479a5c3c5983b2d9e7e775ebf90b895e650a095"
     },
@@ -21876,7 +21876,7 @@
       "hash": "2d56c63ea4f9180eb1b110fe7591bfb2a8bdc5f94091511621ffd93b826bbdce"
     },
     "https://developer.apple.com/tutorials/data/documentation/driverkit/kmmccmd_send_diagnostics.json": {
-      "etag": "\"2838-65d560b0f2582-df\"",
+      "etag": "\"2838-65d560b0f2582\"",
       "file_path": "documentation/DriverKit/kmmccmd_send_diagnostics.md",
       "hash": "a09ea4981c8b211a66cb22f64479a5c3c5983b2d9e7e775ebf90b895e650a095"
     },
