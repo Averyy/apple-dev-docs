@@ -68,6 +68,8 @@ class BaseAppleScraper(ABC):
         base_url: Optional[str] = None,
         hash_dir: Optional[Path] = None,
         rate_limiter: Optional[AdaptiveRateLimiter] = None,
+        max_retries: Optional[int] = None,
+        retry_backoff: Optional[float] = None,
     ) -> None:
         """Initialize base scraper.
         
@@ -80,6 +82,12 @@ class BaseAppleScraper(ABC):
             rate_limiter: A limiter shared with other jobs (a DocC site's
                 jobs share one, so the site sees one job's rate); its own by
                 default
+            max_retries: A request's retries after a 5xx, 429 or network
+                error (its site's, DocCSite.max_retries); Config.MAX_RETRIES
+                by default
+            retry_backoff: The wait before a request's n-th retry is n times
+                this (ten times after a 429; its site's,
+                DocCSite.retry_backoff); Config.RETRY_BACKOFF_FACTOR by default
         """
         framework_id = self._canonical_framework_id(framework_id, hash_dir)
         self.framework_id = framework_id
@@ -89,6 +97,8 @@ class BaseAppleScraper(ABC):
         # Initialize components. The framework's docs dir and hash file are
         # its primary sink's, which the subclass sets up (hash_manager)
         self.rate_limiter = rate_limiter or AdaptiveRateLimiter(initial_delay=Config.RATE_LIMIT_DELAY)
+        self.max_retries = max_retries
+        self.retry_backoff = retry_backoff
         self.session: Optional[httpx.AsyncClient] = None
         
         # Statistics
@@ -210,7 +220,9 @@ class BaseAppleScraper(ABC):
         retries = 0
         last_error: Optional[Exception] = None
         
-        while retries <= Config.MAX_RETRIES:
+        max_retries = self.max_retries if self.max_retries is not None else Config.MAX_RETRIES
+        backoff = self.retry_backoff if self.retry_backoff is not None else Config.RETRY_BACKOFF_FACTOR
+        while retries <= max_retries:
             try:
                 response = await self.session.get(url, headers=headers)
                 
@@ -244,7 +256,7 @@ class BaseAppleScraper(ABC):
                 last_error = e
                 if e.response.status_code == 429:  # Rate limited
                     self.rate_limiter.record_error("rate_limit")
-                    wait_time = (retries + 1) * Config.RETRY_BACKOFF_FACTOR * 10
+                    wait_time = (retries + 1) * backoff * 10
                     logger.warning(
                         "rate_limited",
                         url=url,
@@ -254,7 +266,7 @@ class BaseAppleScraper(ABC):
                     await asyncio.sleep(wait_time)
                 elif e.response.status_code >= 500:  # Server error
                     self.rate_limiter.record_error("server_error")
-                    wait_time = (retries + 1) * Config.RETRY_BACKOFF_FACTOR
+                    wait_time = (retries + 1) * backoff
                     logger.warning(
                         "server_error",
                         url=url,
@@ -286,8 +298,8 @@ class BaseAppleScraper(ABC):
                     retry=retries
                 )
                 
-                if retries < Config.MAX_RETRIES:
-                    wait_time = (retries + 1) * Config.RETRY_BACKOFF_FACTOR
+                if retries < max_retries:
+                    wait_time = (retries + 1) * backoff
                     await asyncio.sleep(wait_time)
             
             retries += 1

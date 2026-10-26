@@ -23,6 +23,7 @@ Examples:
 
     # Only a DocC site (scraper/site.py DOCC_SITES; --all includes them all):
     python3 scrape.py --sites swift-org --yes
+    python3 scrape.py --sites spi-carekit spi-swift-log --yes   # Swift Package Index packages
 
 Exit code: 0 for a clean run, 1 for an error of ours (e.g. a failed request
 that blocked a framework's cleanup), 2 if it stopped before scraping (a

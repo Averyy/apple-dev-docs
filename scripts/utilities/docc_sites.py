@@ -15,6 +15,22 @@ The site's top-level set is its allow-list, its excludes and its index roots,
 so a page of a top-level segment it doesn't crawl (e.g. docs.swift.org's 14
 private stdlib modules) is never crawled, as a root or as a module.
 
+A site whose index is a navigator index (a Swift Package Index package's
+index/index.json, DocCSite.roots_from_index) has no allow-list: the first
+segments of the documentation paths it lists are its roots, each a job, and
+its top-level set. They are persisted as index_roots too, and its loads
+differ (load_site, row 3):
+- a 404/410 index is the package's removal: on the 1st such run the
+  persisted roots run normally (metadata.root_gone_runs = 1 in _site.json,
+  reset by a 200); on the 2nd the package goes whole and runs nothing; with
+  no roots persisted (its first run, or after that removal) a 404/410 runs
+  nothing, writes nothing and is no error;
+- a root its index stops listing is counted in its hash file's
+  metadata.unlisted_runs on each successful load (reset once listed again),
+  and goes with its dir on the 2nd (unlisted_removals): SPI keeps serving a
+  removed target's JSON, so its root never 404s;
+- any other failure is ours, as above, and counts nothing.
+
 Its removals are automatic (rule 7): a top-level hash file whose root left
 the allow-list goes with its dir, at the end of the next run that covers the
 site (config_removals), and a site that left the config goes whole, its
@@ -35,12 +51,14 @@ sys.path.insert(0, str(Path(__file__).resolve().parent.parent.parent))
 from scraper.base import NOT_MODIFIED, BaseAppleScraper, FetchFailed
 from scraper.config import Config
 from scraper.json_scraper import AppleJSONDocumentationScraper, SiteRemoval
-from scraper.sink import CHILD_MODULES_KEY, HASH_FILE_SUFFIX, MODULE_KEY, Sink, metadata_ids
+from scraper.sink import CHILD_MODULES_KEY, HASH_FILE_SUFFIX, MODULE_KEY, Sink, apple_top_level, metadata_ids
 from scraper.site import DocCSite
 from scraper.utils.hash_manager import HashManager, read_hash_file
 from scraper.utils.logger import get_logger
 from scraper.utils.naming import dirmap
 from scraper.utils.rate_limiter import AdaptiveRateLimiter
+from cleanup_orphans_at_end import INDEX_GONE, NOT_CONFIGURED, ROOT_GONE_REMOVAL_RUNS, UNLISTED
+from cleanup_removed_frameworks import UNLISTED_REMOVAL_RUNS
 
 logger = get_logger(__name__)
 
@@ -49,6 +67,11 @@ logger = get_logger(__name__)
 SITE_FILE: Final = "_site.json"
 SITE_KEY: Final = "site"
 INDEX_ROOTS_KEY: Final = "index_roots"
+# A navigator-index site's consecutive runs whose index answered 404/410 (in
+# _site.json), and a root's consecutive loads of it that didn't list the
+# root (in the root's hash file); each present only while > 0
+ROOT_GONE_KEY: Final = "root_gone_runs"
+UNLISTED_KEY: Final = "unlisted_runs"
 GONE_STATUSES: Final = (404, 410)
 
 
@@ -94,6 +117,48 @@ def index_roots(site: DocCSite, body: str) -> List[str]:
     return sorted(roots.values(), key=str.lower)
 
 
+def navigator_roots(site: DocCSite, body: str) -> List[str]:
+    """The roots a navigator index (DocC's index/index.json) lists: the first segments of its documentation paths.
+
+    Each as its root node's title cases it when that is the segment in
+    another casing (/documentation/carekitstore, "CareKitStore"), else as
+    the path does. A path outside the site's documentation (a /tutorials/
+    page, OD5) is none. Raises ValueError for a body that isn't such an
+    index (no JSON, no interfaceLanguages, or no documentation path).
+    """
+    data = json.loads(body)
+    languages = data.get("interfaceLanguages") if isinstance(data, dict) else None
+    if not isinstance(languages, dict):
+        raise ValueError("no interfaceLanguages")
+    roots: Dict[str, str] = {}
+    stack: List[Any] = list(languages.values())
+    while stack:
+        node = stack.pop()
+        if isinstance(node, list):
+            stack.extend(node)
+            continue
+        if not isinstance(node, dict):
+            continue
+        children = node.get("children")
+        if isinstance(children, list):
+            stack.extend(children)
+        path = node.get("path")
+        if not (isinstance(path, str) and path.startswith(site.doc_path)):
+            continue
+        rest = path[len(site.doc_path):].split("#", 1)[0].strip("/")
+        segment = rest.split("/", 1)[0]
+        if not segment:
+            continue
+        title = node.get("title")
+        if "/" not in rest and isinstance(title, str) and title.lower() == segment.lower():
+            roots[segment.lower()] = title
+        else:
+            roots.setdefault(segment.lower(), segment)
+    if not roots:
+        raise ValueError("no documentation path")
+    return sorted(roots.values(), key=str.lower)
+
+
 class SiteIndexLoader(BaseAppleScraper):
     """Loads a DocC site's index root through the scraper's HTTP client (its retries and rate limit).
 
@@ -109,6 +174,8 @@ class SiteIndexLoader(BaseAppleScraper):
             base_url=site.index_url,
             hash_dir=Config.get_hash_dir(site.namespace),
             rate_limiter=rate_limiter,
+            max_retries=site.max_retries,
+            retry_backoff=site.retry_backoff,
         )
 
     @property
@@ -134,7 +201,7 @@ class SiteIndexLoader(BaseAppleScraper):
         if result is NOT_MODIFIED:
             return "failed", [], f"{self.site.index_url}: HTTP 304 without a conditional request"
         try:
-            roots = index_roots(self.site, result[0])
+            roots = (navigator_roots if self.site.roots_from_index else index_roots)(self.site, result[0])
         except ValueError as e:
             return "failed", [], f"{self.site.index_url}: not the site's index ({e})"
         self._site_file.set_metadata(INDEX_ROOTS_KEY, roots)
@@ -153,6 +220,12 @@ class SiteRun:
             excludes' first segments and its index roots
         known_dirs: Its docs dirs linked locally, {name.lower(): name}: those
             its hash dir shows (naming.dirmap) and its jobs'
+        listed: The roots its config or index lists this run (lowercased):
+            its allow-list, or a navigator-index site's index roots (none
+            when its index failed or is gone for good)
+        removals: A navigator-index site's removals this run (rule 7(a)):
+            its roots unlisted on UNLISTED_REMOVAL_RUNS loads, or the whole
+            package once its index is gone on ROOT_GONE_REMOVAL_RUNS runs
         error: Why its jobs are skipped this run (7(f)): an error for the run
     """
 
@@ -160,6 +233,8 @@ class SiteRun:
     jobs: List[Tuple[str, str]] = field(default_factory=list)
     top_level: Set[str] = field(default_factory=set)
     known_dirs: Dict[str, str] = field(default_factory=dict)
+    listed: Set[str] = field(default_factory=set)
+    removals: List[SiteRemoval] = field(default_factory=list)
     error: Optional[str] = None
 
 
@@ -173,37 +248,154 @@ async def load_site(site: DocCSite, rate_limiter: Optional[AdaptiveRateLimiter] 
         site: The site
         rate_limiter: The limiter its jobs share
     """
-    run = SiteRun(site=site)
+    run = SiteRun(site=site, listed={root.lower() for root in site.roots})
     roots: List[str] = []
+    state = "ok"
     async with SiteIndexLoader(site, rate_limiter) as index:
         assert isinstance(index, SiteIndexLoader)
-        index.hash_manager.set_metadata(SITE_KEY, site.name)
         if site.index_url:
             state, roots, why = await index.load()
             if state == "gone":
                 logger.warning("index_root_gone", site=site.name, url=site.index_url, error=why)
                 roots = persisted_index_roots(site)
-                if not roots:
+                if site.roots_from_index:
+                    roots = _index_gone(index, roots, run)
+                elif not roots:
                     run.error = f"{site.name}: index root gone (404/410) with no index_roots persisted: {why}"
             elif state == "failed":
                 run.error = f"{site.name}: index root failed: {why}"
+            elif site.roots_from_index:
+                index.hash_manager.set_metadata(ROOT_GONE_KEY, None)
+        if not (site.roots_from_index and state == "gone" and not roots):
+            # (A navigator-index site whose index is gone with nothing to run writes nothing)
+            index.hash_manager.set_metadata(SITE_KEY, site.name)
     if run.error is not None:
         logger.error("index_root_failed", site=site.name, url=site.index_url, error=run.error)
         return run
 
     hash_dir = Config.get_hash_dir(site.namespace)
     cased = {root.lower(): root for root in roots}
+    if site.roots_from_index:
+        listed = [root for root in sorted(cased) if not site.excluded(root)]
+        if state == "ok":
+            run.removals += unlisted_removals(site, set(listed))
+        run.listed = set(listed)
+    else:
+        listed = list(site.roots)
     run.top_level = (
-        {root.lower() for root in site.roots}
+        set(listed)
         | {exclude.split("/", 1)[0].lower() for exclude in site.excludes}
         | set(cased)
     )
+    if site.roots_from_index and hash_dir.exists():
+        # A root its index no longer lists stays top-level (never crawled as a module) until it is removed
+        run.top_level |= apple_top_level(hash_dir, site)
     run.known_dirs = dirmap(hash_dir, site.json_prefix) if hash_dir.exists() else {}
-    for root in site.roots:
+    for root in listed:
         dir_name = AppleJSONDocumentationScraper._canonical_framework_id(cased.get(root, root), hash_dir)
         run.jobs.append((root, dir_name))
         run.known_dirs[dir_name.lower()] = dir_name
     return run
+
+
+def _index_gone(index: SiteIndexLoader, roots: List[str], run: SiteRun) -> List[str]:
+    """A navigator-index site's index answered 404/410 (row 3): the roots it runs this run.
+
+    With roots persisted, the run is counted in _site.json's root_gone_runs:
+    below ROOT_GONE_REMOVAL_RUNS the persisted roots run normally; at it the
+    package is removed whole (run.removals) and runs nothing, so a later run
+    that still finds it in the config re-creates nothing. With none
+    persisted (its first run, or after that removal) it runs nothing.
+    """
+    site = index.site
+    if not roots:
+        logger.info("index_gone_nothing_persisted", site=site.name)
+        return []
+    previous = index.hash_manager.get_metadata(ROOT_GONE_KEY)
+    gone_runs = (previous if isinstance(previous, int) and previous > 0 else 0) + 1
+    index.hash_manager.set_metadata(ROOT_GONE_KEY, gone_runs)
+    if gone_runs < ROOT_GONE_REMOVAL_RUNS:
+        logger.warning("index_gone_pending", site=site.name, root_gone_runs=gone_runs)
+        return roots
+    logger.warning("index_gone_removal", site=site.name, root_gone_runs=gone_runs)
+    run.removals.append(SiteRemoval(
+        site=site.name,
+        namespace=site.namespace,
+        framework_id="",
+        output_dir=Config.get_docs_dir(site.namespace),
+        hash_file=Config.get_hash_dir(site.namespace),
+        reason=INDEX_GONE,
+    ))
+    return []
+
+
+def unlisted_removals(site: DocCSite, listed: Set[str]) -> List[SiteRemoval]:
+    """Rule 7(a) for a navigator-index site whose index loaded: its top-level roots the index no longer lists.
+
+    Each top-level hash file (no metadata.module) of the site counts this
+    load in its metadata.unlisted_runs if its root isn't listed, and drops
+    the count if it is. One counted to UNLISTED_REMOVAL_RUNS is removed with
+    its dir (returned). One that can't be read counts as top-level unless a
+    readable file of the site lists it in child_modules, and is replaced by
+    a file holding only its count (as the Apple unlisted rule does).
+
+    Args:
+        site: The site
+        listed: The roots its index lists (lowercased)
+    """
+    hash_dir = Config.get_hash_dir(site.namespace)
+    if not hash_dir.is_dir():
+        return []
+    candidates: List[Tuple[Path, str, Optional[Dict[str, Any]]]] = []
+    children: Set[str] = set()
+    for path in sorted(hash_dir.glob(f"*{HASH_FILE_SUFFIX}")):
+        name = path.name[: -len(HASH_FILE_SUFFIX)]
+        try:
+            _, metadata = read_hash_file(path)
+        except (OSError, ValueError):
+            candidates.append((path, name, None))
+            continue
+        children |= {str(child).lower() for child in metadata_ids(metadata.get(CHILD_MODULES_KEY))}
+        if not metadata.get(MODULE_KEY):
+            candidates.append((path, name, metadata))
+    removals = []
+    for path, name, loaded in candidates:
+        if loaded is None and name.lower() in children:
+            continue
+        previous = loaded.get(UNLISTED_KEY) if loaded is not None else None
+        runs = previous if isinstance(previous, int) and previous > 0 else 0
+        if name.lower() in listed:
+            if runs:
+                _write_unlisted(path, 0)
+            continue
+        runs += 1
+        if runs < UNLISTED_REMOVAL_RUNS:
+            logger.warning("root_unlisted_pending", site=site.name, root=name, unlisted_runs=runs)
+            _write_unlisted(path, runs)
+            continue
+        logger.warning("root_unlisted", site=site.name, root=name, unlisted_runs=runs)
+        _write_unlisted(path, runs)
+        removals.append(SiteRemoval(
+            site=site.name,
+            namespace=site.namespace,
+            framework_id=name,
+            output_dir=Config.get_framework_output_dir(name, namespace=site.namespace),
+            hash_file=Config.get_hash_file(name, namespace=site.namespace),
+            reason=UNLISTED,
+        ))
+    return removals
+
+
+def _write_unlisted(path: Path, runs: int) -> None:
+    """Write a root's unlisted_runs into its hash file (0 drops it), every other key as it is.
+
+    A file that can't be loaded is replaced by one holding only the count.
+    A failed save is logged by the save; the count is then counted again
+    from the old value on the next load.
+    """
+    manager = HashManager(path)
+    manager.set_metadata(UNLISTED_KEY, runs or None)
+    manager.save()
 
 
 def config_removals(site: DocCSite) -> List[SiteRemoval]:
@@ -240,6 +432,7 @@ def config_removals(site: DocCSite) -> List[SiteRemoval]:
             framework_id=name,
             output_dir=Config.get_framework_output_dir(name, namespace=site.namespace),
             hash_file=Config.get_hash_file(name, namespace=site.namespace),
+            reason=NOT_CONFIGURED,
         ))
     return removals
 

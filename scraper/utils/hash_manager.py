@@ -134,7 +134,6 @@ class HashManager:
         self.cache_file = cache_file
         self.output_dir = output_dir
         self.render_version = render_version
-        self.cache_file.parent.mkdir(parents=True, exist_ok=True)
         # Why the cache file exists but couldn't be loaded (the manager then
         # starts empty), else None
         self.load_error: Optional[str] = None
@@ -305,6 +304,9 @@ class HashManager:
             
         temp_file = self.cache_file.with_name(f"{self.cache_file.name}.tmp")
         try:
+            # Its dir is made only by a save that writes (a removed DocC
+            # package that is still configured re-creates no hash dir)
+            self.cache_file.parent.mkdir(parents=True, exist_ok=True)
             data = {
                 "metadata": {
                     "total_pages": len(self.hashes),

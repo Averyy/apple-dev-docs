@@ -12,6 +12,7 @@ import json
 from dataclasses import dataclass, field
 from pathlib import Path
 from typing import Any, Dict, Final, List, Optional, Sequence, Set, Tuple
+from urllib.parse import urlsplit
 
 # Add parent directories to path for imports
 sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__)))))
@@ -268,16 +269,33 @@ def site_job_outcome(fw: Dict[str, str], site: DocCSite, **fields: Any) -> Frame
     return FrameworkOutcome(framework_id=fw['id'], site=site.name, namespace=site.namespace, **fields)
 
 
+def site_host(site: DocCSite) -> str:
+    """A DocC site's host (its sites share a rate limiter and job slots)."""
+    return urlsplit(site.site_url).netloc.lower()
+
+
+def host_max_jobs(sites: Sequence[DocCSite], host: str) -> int:
+    """The smallest max_jobs of a host's sites (0: no cap)."""
+    caps = [site.max_jobs for site in sites if site_host(site) == host and site.max_jobs]
+    return min(caps) if caps else 0
+
+
 async def load_sites(sites: Sequence[DocCSite]) -> Tuple[List["docc_sites.SiteRun"], Dict[str, AdaptiveRateLimiter]]:
     """Each DocC site's share of the run (docc_sites.load_site), and the rate limiter its jobs share.
 
-    A site whose index root fails (7(f)), or whose load raises, runs no job
-    this run; its error is the run's.
+    The sites of one host share one limiter (the Swift Package Index
+    packages are all on swiftpackageindex.com), so each host sees about one
+    framework's rate. A site whose index root fails (7(f)), or whose load
+    raises, runs no job this run; its error is the run's.
     """
     runs = []
     limiters: Dict[str, AdaptiveRateLimiter] = {}
+    by_host: Dict[str, AdaptiveRateLimiter] = {}
     for site in sites:
-        limiter = limiters[site.name] = AdaptiveRateLimiter(initial_delay=Config.RATE_LIMIT_DELAY)
+        host = site_host(site)
+        if host not in by_host:
+            by_host[host] = AdaptiveRateLimiter(initial_delay=Config.RATE_LIMIT_DELAY)
+        limiter = limiters[site.name] = by_host[host]
         try:
             site_run = await docc_sites.load_site(site, limiter)
         except Exception as e:
@@ -303,10 +321,11 @@ async def scrape_frameworks(
             is the full list's, so a selected framework never crawls a
             bundle sibling's pages as its modules
         sites: The DocC sites to scrape too (site.DOCC_SITES): each root of
-            a site's allow-list is a job of this run, with the Apple ones
-            (docc_sites). With cleanup_orphans, their roots and sites that
-            left the config are removed (rule 7(a)); a site whose index
-            root fails runs no job (7(f))
+            a site's allow-list, or of a package's navigator index, is a job
+            of this run, with the Apple ones (docc_sites). With
+            cleanup_orphans, their roots and sites that left the config, or
+            their package's index, are removed (rule 7(a)); a site whose
+            index root fails runs no job (7(f))
 
     After every job: the multi-writer sinks' failure policy, render versions
     and save (finish_run), with or without cleanup_orphans.
@@ -389,9 +408,12 @@ async def scrape_frameworks(
         site = site_run.site
         hash_dir = Config.get_hash_dir(site.namespace)
         run_sinks.hash_dirs[str(hash_dir).lower()] = (site.name, site.namespace)
-        run_sinks.listed |= {(site.name, root) for root in site.roots}
+        run_sinks.listed |= {(site.name, root) for root in site_run.listed}
         if cleanup_orphans:
-            run_sinks.removals += docc_sites.config_removals(site)
+            # Its roots that left the allow-list, or a package's roots its
+            # index stopped listing and the package whose index is gone
+            run_sinks.removals += (site_run.removals if site.roots_from_index
+                                   else docc_sites.config_removals(site))
         if hash_dir.exists():
             site_scan = scan_hash_dir(hash_dir, site)
             page_counts.update({(site.name, dir_id): count for dir_id, count in site_scan.page_counts.items()})
@@ -403,7 +425,7 @@ async def scrape_frameworks(
             run_errors.append(site_run.error)
             print(f"❌ {site.name}: its jobs are skipped this run ({site_run.error})")
             continue
-        sinks.add_site(site, site_run.known_dirs, site_run.top_level, site.roots)
+        sinks.add_site(site, site_run.known_dirs, site_run.top_level, site_run.listed)
         jobs += [{'id': dir_name, 'title': site.framework_label(dir_name), 'site': site.name, 'root': root}
                  for root, dir_name in site_run.jobs]
     if cleanup_orphans and {site.name for site in sites} == {site.name for site in site_config.DOCC_SITES}:
@@ -433,10 +455,25 @@ async def scrape_frameworks(
     
     # Use semaphore for proper rolling concurrency
     semaphore = asyncio.Semaphore(max_concurrent)
-    
+    # A host with a job cap (DocCSite.max_jobs) runs at most that many of
+    # its jobs at once, each waiting for its turn before it takes one of the
+    # run's slots (so its queued jobs never hold the Apple jobs' slots)
+    host_slots = {host: asyncio.Semaphore(cap)
+                  for host in {site_host(site) for site in sites}
+                  if (cap := host_max_jobs(sites, host))}
+
     async def scrape_with_semaphore(fw, index):
+        site = site_of_job[fw.get('site', APPLE.name)]
+        host_slot = host_slots.get(site_host(site))
+        if host_slot is None:
+            return await scrape_job(fw, index, site)
+        async with host_slot:
+            return await scrape_job(fw, index, site)
+
+    async def scrape_job(
+        fw: Dict[str, str], index: int, site: DocCSite
+    ) -> Tuple[Dict[str, str], FrameworkOutcome]:
         async with semaphore:
-            site = site_of_job[fw.get('site', APPLE.name)]
             print(f"\n[{index}/{total}] 🚀 Starting: {fw['title']} ({fw['id']})")
             if sinks.refuses(fw['id'], site):
                 # Another scraper's top-level dir, or a DocC namespace: never scraped into
@@ -649,8 +686,8 @@ async def scrape_everything() -> int:
         elif site_names and '--all' not in sys.argv:
             frameworks = []
         for site in sites:
-            print(f"🌐 Would scrape {site.name} ({site.doc_base}): {len(site.roots)} roots under "
-                  f"documentation/{site.namespace}/")
+            roots = "the roots its index lists" if site.roots_from_index else f"{len(site.roots)} roots"
+            print(f"🌐 Would scrape {site.name} ({site.doc_base}): {roots} under documentation/{site.namespace}/")
         
         print(f"\n📋 Would scrape {len(frameworks)} frameworks:")
         for i, fw in enumerate(frameworks[:20], 1):

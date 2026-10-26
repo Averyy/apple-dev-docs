@@ -9,7 +9,7 @@ from collections import Counter
 from dataclasses import dataclass, field
 from pathlib import Path
 from typing import Any, Callable, Deque, Dict, Final, List, Literal, Optional, Sequence, Set, Tuple, Union
-from urllib.parse import urlparse
+from urllib.parse import urljoin, urlparse
 
 from scraper.base import NOT_MODIFIED, BaseAppleScraper, FetchFailed
 from scraper.config import Config
@@ -387,6 +387,9 @@ class SiteRemoval:
             whole site)
         hash_file: The hash file to delete (the namespace's hash dir for a
             whole site)
+        reason: Why, for the log and the summary: the root or site left the
+            config ("not_configured"), its package's index stopped listing
+            the root ("unlisted") or is gone ("index_gone"; the whole package)
     """
 
     site: str
@@ -394,6 +397,7 @@ class SiteRemoval:
     framework_id: str
     output_dir: Path
     hash_file: Path
+    reason: str = "not_configured"
 
     @property
     def name(self) -> str:
@@ -456,8 +460,10 @@ class AppleJSONDocumentationScraper(BaseAppleScraper):
     # it when a change to the conversion, the file names or the links changes
     # the files of pages whose JSON didn't change, so every framework is
     # rendered again on its next clean run. 2: pages list the Objective-C
-    # links of their occ variant (1.5), and link the D6 module dirs locally
-    RENDER_VERSION = 2
+    # links of their occ variant (1.5), and link the D6 module dirs locally.
+    # 3: relative link references resolve against the page's own URL (33
+    # files' 64 links pointed at a wrong path)
+    RENDER_VERSION = 3
     
     def __init__(self, framework_id: str, framework_name: Optional[str] = None, 
                  include_cross_refs: bool = False, sinks: Optional[SinkRegistry] = None,
@@ -485,6 +491,8 @@ class AppleJSONDocumentationScraper(BaseAppleScraper):
             base_url=site.doc_url(root_id) if root_id else None,
             hash_dir=Config.get_hash_dir(site.namespace),
             rate_limiter=rate_limiter,
+            max_retries=site.max_retries,
+            retry_backoff=site.retry_backoff,
         )
         # The framework's DocC site: every URL the scraper builds comes from it
         self.site = site
@@ -2066,12 +2074,18 @@ class AppleJSONDocumentationScraper(BaseAppleScraper):
     def _reference_url(self, url_path: str) -> str:
         """A reference's URL as linked: the site's root-relative path made
         absolute (self.site.url), an absolute URL (an external link's) as it
-        is, "" for a reference without one."""
+        is, any other relative URL resolved against the page's own URL as a
+        browser resolves it (a "#section" of the page, a sibling such as
+        SPI's "mlx" from …/documentation/mlxnn), "" for a reference without
+        one. Byte-order marks and spaces around it are dropped."""
+        url_path = url_path.strip().strip('\ufeff').strip()
         if not url_path:
             return ''
         if urlparse(url_path).scheme:
             return url_path
-        return self.site.url(url_path)
+        if url_path.startswith('/') or not self._current_scraping_url:
+            return self.site.url(url_path)
+        return urljoin(self._current_scraping_url, url_path)
 
     @staticmethod
     def _is_symbol_reference(ref_data: Dict[str, Any]) -> bool:

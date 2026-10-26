@@ -87,12 +87,44 @@ documentation/MLX/mlx-onnx
     https://github.com/ml-explore/mlx-onnx (MIT)
 
 documentation/MLX-Swift/mlx-swift
-    MLX Swift documentation
+    MLX Swift README
     https://github.com/ml-explore/mlx-swift (MIT)
 
 documentation/MLX-Swift/mlx-swift-lm
-    MLX Swift LM documentation
+    MLX Swift LM README, MLXHuggingFace and MLXRerankers documentation
     https://github.com/ml-explore/mlx-swift-lm (MIT)
+
+documentation/SPI/CareKit
+    Swift Package Index: CareKit (CareKit, CareKitStore, CareKitUI)
+    https://github.com/carekit-apple/CareKit (BSD-3-Clause (its LICENSE: the BSD 3-clause text, plus a sentence granting no licence to the copyright holders' trademarks))
+
+documentation/SPI/mlx-swift
+    Swift Package Index: MLX Swift (MLX, MLXNN, MLXOptimizers, MLXRandom, MLXLinalg, MLXFFT, MLXFast)
+    https://github.com/ml-explore/mlx-swift (MIT)
+
+documentation/SPI/mlx-swift-lm
+    Swift Package Index: MLX Swift LM (MLXLLM, MLXVLM, MLXLMCommon, MLXEmbedders, MLXScriptedLM)
+    https://github.com/ml-explore/mlx-swift-lm (MIT)
+
+documentation/SPI/swift-argument-parser
+    Swift Package Index: Swift Argument Parser
+    https://github.com/apple/swift-argument-parser (Apache-2.0)
+
+documentation/SPI/swift-log
+    Swift Package Index: SwiftLog (Logging)
+    https://github.com/apple/swift-log (Apache-2.0)
+
+documentation/SPI/swift-async-algorithms
+    Swift Package Index: Swift Async Algorithms
+    https://github.com/apple/swift-async-algorithms (Apache-2.0)
+
+documentation/SPI/swift-openapi-generator
+    Swift Package Index: Swift OpenAPI Generator
+    https://github.com/apple/swift-openapi-generator (Apache-2.0)
+
+documentation/SPI/swift-configuration
+    Swift Package Index: Swift Configuration
+    https://github.com/apple/swift-configuration (Apache-2.0)
 
 documentation/coremltools
     Core ML Tools guides
@@ -119,7 +151,7 @@ documentation/swift-format
     https://github.com/swiftlang/swift-format (Apache-2.0)
 
 ===============================================================================
-LICENCE TEXT (Apache-2.0), used by: swiftlang/docs, swiftlang/swift-migration-guide, swiftlang/swift, swiftlang/swift-package-manager, swiftlang/swift-docc, swiftlang/swift-embedded-examples, swiftlang/swift-for-wasm-examples, swiftlang/swift-java, swiftlang/swift-book, swiftlang/sourcekit-lsp, swiftlang/swift-format
+LICENCE TEXT (Apache-2.0), used by: swiftlang/docs, swiftlang/swift-migration-guide, swiftlang/swift, swiftlang/swift-package-manager, swiftlang/swift-docc, swiftlang/swift-embedded-examples, swiftlang/swift-for-wasm-examples, swiftlang/swift-java, swiftlang/swift-book, apple/swift-argument-parser, apple/swift-async-algorithms, swiftlang/sourcekit-lsp, swiftlang/swift-format
 ===============================================================================
 
                                  Apache License
@@ -551,7 +583,7 @@ LICENCE TEXT (Apache-2.0), used by: swiftlang/swift-android-examples, swiftlang/
     otherwise be required by Sections 4(a), 4(b) and 4(d) of the License.
 
 ===============================================================================
-LICENCE TEXT (Apache-2.0), used by: swiftlang/vscode-swift, swiftlang/swiftly, apple/python-apple-fm-sdk, apple/container
+LICENCE TEXT (Apache-2.0), used by: swiftlang/vscode-swift, swiftlang/swiftly, apple/swift-log, apple/swift-openapi-generator, apple/swift-configuration, apple/python-apple-fm-sdk, apple/container
 ===============================================================================
 
                                  Apache License
@@ -859,6 +891,38 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
+
+===============================================================================
+LICENCE TEXT (BSD-3-Clause (its LICENSE: the BSD 3-clause text, plus a sentence granting no licence to the copyright holders' trademarks)), used by: carekit-apple/CareKit
+===============================================================================
+
+Copyright (c) 2016-2025, Apple Inc. All rights reserved.
+ 
+Redistribution and use in source and binary forms, with or without modification,
+are permitted provided that the following conditions are met:
+ 
+1.  Redistributions of source code must retain the above copyright notice, this
+list of conditions and the following disclaimer.
+ 
+2.  Redistributions in binary form must reproduce the above copyright notice,
+this list of conditions and the following disclaimer in the documentation and/or
+other materials provided with the distribution.
+ 
+3. Neither the name of the copyright holder(s) nor the names of any contributors
+may be used to endorse or promote products derived from this software without
+specific prior written permission. No license is granted to the trademarks of
+the copyright holders even if such marks are included in this software.
+ 
+THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
+AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
+IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE
+ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS BE LIABLE
+FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL
+DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR
+SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER
+CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY,
+OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
+OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 ===============================================================================
 LICENCE TEXT (BSD-3-Clause), used by: apple/coremltools
@@ -1353,6 +1417,300 @@ following third party libraries:
     * https://raw.githubusercontent.com/libarchive/libarchive/release/COPYING
   * HOMEPAGE:
     * http://www.libarchive.org/
+
+===============================================================================
+NOTICE: apple/swift-log (NOTICE.txt)
+===============================================================================
+
+
+                            The SwiftLog Project
+                            ========================
+
+Please visit the SwiftLog web site for more information:
+
+  * https://github.com/apple/swift-log
+
+Copyright 2018, 2019 The SwiftLog Project
+
+The SwiftLog Project licenses this file to you under the Apache License,
+version 2.0 (the "License"); you may not use this file except in compliance
+with the License. You may obtain a copy of the License at:
+
+  https://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS, WITHOUT
+WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the
+License for the specific language governing permissions and limitations
+under the License.
+
+Also, please refer to each LICENSE.<component>.txt file, which is located in
+the 'license' directory of the distribution file, for the license terms of the
+components that this product depends on.
+
+-------------------------------------------------------------------------------
+
+This product contains a derivation of the lock implementation and various
+scripts from SwiftNIO.
+
+  * LICENSE (Apache License 2.0):
+    * https://www.apache.org/licenses/LICENSE-2.0
+  * HOMEPAGE:
+    * https://github.com/apple/swift-nio
+
+===============================================================================
+NOTICE: apple/swift-openapi-generator (NOTICE.txt)
+===============================================================================
+
+
+                       The SwiftOpenAPIGenerator Project
+                       =================================
+
+Please visit the SwiftOpenAPIGenerator web site for more information:
+
+  * https://github.com/apple/swift-openapi-generator
+
+Copyright 2023 The SwiftOpenAPIGenerator Project
+
+The SwiftOpenAPIGenerator Project licenses this file to you under the Apache
+License, version 2.0 (the "License"); you may not use this file except in
+compliance with the License. You may obtain a copy of the License at:
+
+  https://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS, WITHOUT
+WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the
+License for the specific language governing permissions and limitations
+under the License.
+
+Also, please refer to each LICENSE.txt file, which is located in
+the 'license' directory of the distribution file, for the license terms of the
+components that this product depends on.
+
+-------------------------------------------------------------------------------
+
+This product contains derivations of various scripts and templates from SwiftNIO.
+
+  * LICENSE (Apache License 2.0):
+    * https://www.apache.org/licenses/LICENSE-2.0
+  * HOMEPAGE:
+    * https://github.com/apple/swift-nio
+
+-------------------------------------------------------------------------------
+
+This product contains derivations of templates and proposal workflows from Swift.
+
+  * LICENSE (Apache License 2.0):
+    * https://swift.org/LICENSE.txt
+  * HOMEPAGE:
+    * https://github.com/apple/swift
+
+-------------------------------------------------------------------------------
+
+This product contains derivations of examples from the OpenAPI project.
+
+  * LICENSE (Apache License 2.0):
+    * https://github.com/OAI/OpenAPI-Specification/blob/main/LICENSE
+  * HOMEPAGE:
+    * https://github.com/OAI/OpenAPI-Specification
+
+-------------------------------------------------------------------------------
+
+This product contains OpenAPI document(s) for compatibility testing from:
+
+  * AWS Lambda for .NET Core
+    * LICENSE (Apache License 2.0):
+      * https://www.apache.org/licenses/LICENSE-2.0
+    * HOMEPAGE:
+      * https://github.com/aws/aws-lambda-dotnet
+
+  * Azure IoT Identity Service
+    * LICENSE (MIT License):
+      * https://mit-license.org
+    * HOMEPAGE:
+      * https://github.com/Azure/iot-identity-service
+
+  * OpenAPI 3.0 Specification for the Box APIs
+    * LICENSE (Apache License 2.0):
+      * https://www.apache.org/licenses/LICENSE-2.0
+    * HOMEPAGE:
+      * https://github.com/box/box-openapi
+
+  * MindMeld Conversational AI Platform
+    * LICENSE (Apache License 2.0):
+      * https://www.apache.org/licenses/LICENSE-2.0
+    * HOMEPAGE:
+      * https://github.com/cisco/mindmeld
+
+  * Cloud Hypervisor
+    * LICENSE (Apache License 2.0):
+      * https://www.apache.org/licenses/LICENSE-2.0
+    * HOMEPAGE:
+      * https://github.com/cloud-hypervisor/cloud-hypervisor
+
+  * Discourse API Documentation
+    * LICENSE (MIT License):
+      * https://mit-license.org
+    * HOMEPAGE:
+      * https://github.com/discourse/discourse_api_docs
+
+  * GitHub's REST API OpenAPI Description
+    * LICENSE (MIT License):
+      * https://mit-license.org
+    * HOMEPAGE:
+      * https://github.com/github/rest-api-description
+
+  * Kubernetes (K8s)
+    * LICENSE (Apache License 2.0):
+      * https://www.apache.org/licenses/LICENSE-2.0
+    * HOMEPAGE:
+      * https://github.com/kubernetes/kubernetes
+
+  * ConsoleMe
+    * LICENSE (Apache License 2.0):
+      * https://www.apache.org/licenses/LICENSE-2.0
+    * HOMEPAGE:
+      * https://github.com/Netflix/consoleme
+
+  * OpenAPI spec for the OpenAI API
+    * LICENSE (MIT License):
+      * https://mit-license.org
+    * HOMEPAGE:
+      * https://github.com/openai/openai-openapi
+
+  * The OpenAPI Specification
+    * LICENSE (Apache License 2.0):
+      * https://www.apache.org/licenses/LICENSE-2.0
+    * HOMEPAGE:
+      * https://github.com/OAI/OpenAPI-Specification
+
+  * Swift Package Manager Project
+    * LICENSE (Apache License 2.0):
+      * https://www.apache.org/licenses/LICENSE-2.0
+    * HOMEPAGE:
+      * https://github.com/apple/swift-package-manager
+
+-------------------------------------------------------------------------------
+
+This product contains samples of how to use Swift OpenAPI Generator with the
+following other projects:
+
+  * AsyncHTTPClient
+    * LICENSE (Apache License 2.0):
+      * https://www.apache.org/licenses/LICENSE-2.0
+    * HOMEPAGE:
+      * https://github.com/swift-server/swift-openapi-async-http-client
+
+  * Hummingbird
+    * LICENSE (Apache License 2.0):
+      * https://www.apache.org/licenses/LICENSE-2.0
+    * HOMEPAGE:
+      * https://github.com/hummingbird-project/hummingbird
+
+  * Swagger UI
+    * LICENSE (Apache License 2.0):
+      * https://www.apache.org/licenses/LICENSE-2.0
+    * HOMEPAGE:
+      * https://github.com/swagger-api/swagger-ui
+
+  * Swift Argument Parser
+    * LICENSE (Apache License 2.0):
+      * https://www.apache.org/licenses/LICENSE-2.0
+    * HOMEPAGE:
+      * https://github.com/apple/swift-argument-parser
+
+  * Swift Distributed Tracing
+    * LICENSE (Apache License 2.0):
+      * https://www.apache.org/licenses/LICENSE-2.0
+    * HOMEPAGE:
+      * https://github.com/apple/swift-distributed-tracing
+
+  * Swift Logging API
+    * LICENSE (Apache License 2.0):
+      * https://www.apache.org/licenses/LICENSE-2.0
+    * HOMEPAGE:
+      * https://github.com/apple/swift-log
+
+  * Swift Metrics
+    * LICENSE (Apache License 2.0):
+      * https://www.apache.org/licenses/LICENSE-2.0
+    * HOMEPAGE:
+      * https://github.com/apple/swift-metrics
+
+  * SwiftNIO
+    * LICENSE (Apache License 2.0):
+      * https://www.apache.org/licenses/LICENSE-2.0
+    * HOMEPAGE:
+      * https://github.com/apple/swift-nio
+
+  * Swift OTel
+    * LICENSE (Apache License 2.0):
+      * https://www.apache.org/licenses/LICENSE-2.0
+    * HOMEPAGE:
+      * https://github.com/slashmo/swift-otel
+
+  * SwiftPrometheus
+    * LICENSE (Apache License 2.0):
+      * https://www.apache.org/licenses/LICENSE-2.0
+    * HOMEPAGE:
+      * https://github.com/swift-server/swift-prometheus
+
+  * Vapor
+    * LICENSE (MIT License):
+      * https://mit-license.org
+    * HOMEPAGE:
+      * https://github.com/vapor/vapor
+
+===============================================================================
+NOTICE: apple/swift-configuration (NOTICE.txt)
+===============================================================================
+
+
+                       The SwiftConfiguration Project
+                       =================================
+
+Please visit the SwiftConfiguration web site for more information:
+
+  * https://github.com/apple/swift-configuration
+
+Copyright 2025 The SwiftConfiguration Project
+
+The SwiftConfiguration Project licenses this file to you under the Apache
+License, version 2.0 (the "License"); you may not use this file except in
+compliance with the License. You may obtain a copy of the License at:
+
+  https://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS, WITHOUT
+WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the
+License for the specific language governing permissions and limitations
+under the License.
+
+Also, please refer to each LICENSE.txt file, which is located in
+the 'license' directory of the distribution file, for the license terms of the
+components that this product depends on.
+
+-------------------------------------------------------------------------------
+
+This repository contains the gyb script from the swiftlang/swift repository.
+
+  * LICENSE (Apache License 2.0):
+    * https://www.apache.org/licenses/LICENSE-2.0
+  * HOMEPAGE:
+    * https://github.com/swiftlang/swift
+
+---
+
+This repository contains a modified copy of the test-examples.sh script the apple/swift-openapi-generator repository.
+
+  * LICENSE (Apache License 2.0):
+    * https://www.apache.org/licenses/LICENSE-2.0
+  * HOMEPAGE:
+    * https://github.com/apple/swift-openapi-generator
+
+---
 
 ===============================================================================
 NOTICE: apple/coremltools (NOTICE.txt)

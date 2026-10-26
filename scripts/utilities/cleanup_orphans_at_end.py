@@ -20,7 +20,8 @@ The DocC sites' docs (documentation/<namespace>/) follow the same rules, each
 on its own site's paths (.hashes/<namespace>/), with outcomes keyed by (site,
 id). Before anything else, the docs that left the config are removed
 (rule 7(a)): a top-level hash file whose root the site no longer lists, with
-its dir, and a whole namespace whose site left the config.
+its dir, and a whole namespace whose site left the config, or whose
+package's index is gone (row 3).
 """
 
 import shutil
@@ -58,8 +59,17 @@ MODULE_UNLINKED_RUNS: Final = 2
 # Why a framework or module is removed (FrameworkCleanup.reason), for the log
 # and the summary
 ROOT_GONE: Final = "root_gone"
-# A DocC root or site that left the config (rule 7(a))
+# A DocC root or site that left the config (rule 7(a)); a navigator-index
+# site's root its index stopped listing, or the whole package once its index
+# is gone (row 3). Each is a SiteRemoval's reason
 NOT_CONFIGURED: Final = "not_configured"
+UNLISTED: Final = "unlisted"
+INDEX_GONE: Final = "index_gone"
+SITE_REASONS: Final = {
+    NOT_CONFIGURED: "its root left the config",
+    UNLISTED: "its package's index hasn't listed it on 2 consecutive loads",
+    INDEX_GONE: "its package's index returned 404/410 on 2 consecutive runs",
+}
 MODULE_REASONS: Final = {
     "module_parentless": "no parent left",
     "module_unlinked": f"unlinked by every parent for {MODULE_UNLINKED_RUNS} clean runs",
@@ -85,7 +95,7 @@ class FrameworkCleanup:
         remove: Remove the whole framework, every casing of its docs dir and
             hash file: its root returned 404/410 on 2 consecutive runs, a
             DocC root that left the config, or a D6 module rule 4 deletes
-        reason: Why it is removed: ROOT_GONE, NOT_CONFIGURED, or one of MODULE_REASONS
+        reason: Why it is removed: ROOT_GONE, one of SITE_REASONS, or one of MODULE_REASONS
         drop: The error entries no page links to any more
             (json_scraper.stale_error_entries), dropped from its hash file
     """
@@ -113,8 +123,8 @@ class CleanupReport:
         held: framework -> (orphans the valve holds in pending_orphans, the
             framework's files once the confirmed ones are deleted)
         removed: framework -> .md files in the removed framework's docs dir
-        unconfigured: DocC root or whole site that left the config (rule
-            7(a)) -> .md files its removed docs dir held
+        unconfigured: DocC root or whole site that left the config, or its
+            package's index (rule 7(a)) -> .md files its removed docs dir held
         removed_modules: D6 module -> (.md files its docs dir held, why: a
             MODULE_REASONS key)
         parents_pruned: D6 module -> the parents pruned from it (rule 3)
@@ -247,7 +257,7 @@ def _remove_framework(cleanup: FrameworkCleanup, report: CleanupReport) -> None:
         return
     if cleanup.reason == ROOT_GONE:
         report.removed[cleanup.framework] = files
-    elif cleanup.reason == NOT_CONFIGURED:
+    elif cleanup.reason in SITE_REASONS:
         report.unconfigured[cleanup.framework] = files
     else:
         report.removed_modules[cleanup.framework] = (files, cleanup.reason)
@@ -317,7 +327,7 @@ def _approved(cleanups: Sequence[FrameworkCleanup]) -> bool:
     for cleanup in sorted(cleanups, key=lambda c: c.framework):
         if cleanup.remove:
             why = (f"its root returned 404/410 on {ROOT_GONE_REMOVAL_RUNS} runs" if cleanup.reason == ROOT_GONE
-                   else "its root left the config" if cleanup.reason == NOT_CONFIGURED
+                   else SITE_REASONS[cleanup.reason] if cleanup.reason in SITE_REASONS
                    else f"a module with {MODULE_REASONS[cleanup.reason]}")
             print(f"\n📁 {cleanup.framework}: {why}; its docs dir and hash file will be removed")
             continue
@@ -432,7 +442,8 @@ def _print_summary(report: CleanupReport, skipped: Sequence["FrameworkOutcome"],
               f"{ROOT_GONE_REMOVAL_RUNS} runs (docs dir and hash file): "
               + ", ".join(f"{framework} ({files} files)" for framework, files in sorted(report.removed.items())))
     if report.unconfigured:
-        print(f"🗑️  Removed {len(report.unconfigured)} DocC roots or sites that left the config (docs and hash files): "
+        print(f"🗑️  Removed {len(report.unconfigured)} DocC roots or sites that left the config or their package's "
+              f"index (docs and hash files): "
               + ", ".join(f"{name} ({files} files)" for name, files in sorted(report.unconfigured.items())))
     if report.removed_modules:
         print(f"🗑️  Removed {len(report.removed_modules)} modules (docs dir and hash file): "
@@ -678,8 +689,8 @@ def remove_empty_modules(states: Sequence[ModuleState], report: CleanupReport) -
 
 
 def remove_namespace(removal: "SiteRemoval", report: CleanupReport) -> None:
-    """Rule 7(a) for a DocC site that left the config: its whole namespace goes,
-    docs dir and hash dir (every top-level and module hash file, and _site.json)."""
+    """Rule 7(a) for a DocC site that left the config, or a package whose index is gone: its
+    whole namespace goes, docs dir and hash dir (every top-level and module hash file, and _site.json)."""
     files = len(HashManager.framework_files(removal.output_dir)) if removal.output_dir.is_dir() else 0
     try:
         for path in (removal.output_dir, removal.hash_file):
@@ -689,7 +700,7 @@ def remove_namespace(removal: "SiteRemoval", report: CleanupReport) -> None:
         logger.error("site_removal_failed", site=removal.name, error=str(e))
         report.failures.append(f"{removal.name}: removal failed: {e}")
         return
-    logger.warning("site_removed", site=removal.name, reason=NOT_CONFIGURED, files=files,
+    logger.warning("site_removed", site=removal.name, reason=removal.reason, files=files,
                    dirs=[str(removal.output_dir), str(removal.hash_file)])
     report.unconfigured[removal.name] = files
 
@@ -735,14 +746,14 @@ def cleanup_after_scrape(outcomes: Sequence["FrameworkOutcome"], interactive: bo
     for removal in (run.removals if run is not None else []):
         if removal.framework_id:
             removals.append(FrameworkCleanup(removal.name, removal.output_dir, removal.hash_file,
-                                             remove=True, reason=NOT_CONFIGURED))
+                                             remove=True, reason=removal.reason))
             removal_keys.setdefault(removal.name, set()).add((removal.site, removal.framework_id.lower()))
         else:
             # A whole site: every top-level id of its namespace is removed with it
             ids = {path.name[: -len(HASH_FILE_SUFFIX)].lower()
                    for path in removal.hash_file.glob(f"*{HASH_FILE_SUFFIX}")} if removal.hash_file.is_dir() else set()
             if interactive and not _approved([FrameworkCleanup(removal.name, removal.output_dir, removal.hash_file,
-                                                               remove=True, reason=NOT_CONFIGURED)]):
+                                                               remove=True, reason=removal.reason)]):
                 report.cancelled = True
                 continue
             remove_namespace(removal, report)

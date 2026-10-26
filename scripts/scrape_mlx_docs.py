@@ -14,7 +14,7 @@ GitHub Markdown:
 - mlx-lm - LLM inference and fine-tuning, its server and model management
 - mlx-c - C API bindings
 - mlx-onnx - ONNX support
-- mlx-swift, mlx-swift-lm - MLX Swift (DocC catalogs and READMEs)
+- mlx-swift, mlx-swift-lm - MLX Swift (READMEs, and the DocC catalogs the Swift Package Index has no rendering of)
 - game-porting-toolkit - Metal shader converter docs
 - container, sourcekit-lsp, swift-format - their docs directories
 
@@ -271,8 +271,9 @@ GITHUB_SOURCES: List[GitHubDocSource] = [
         branch="main",
         output_dir="MLX-Swift/mlx-swift",
         framework="MLX-Swift",
+        # Its DocC catalogs (MLX, MLXNN, MLXOptimizers…) come rendered from
+        # the Swift Package Index (scraper/site.py SPI_PACKAGES)
         files=["README.md"],
-        directories=["Source/MLX/Documentation.docc"],  # Full DocC documentation
     ),
     GitHubDocSource(
         name="mlx-swift-lm",
@@ -281,8 +282,11 @@ GITHUB_SOURCES: List[GitHubDocSource] = [
         output_dir="MLX-Swift/mlx-swift-lm",
         framework="MLX-Swift",
         files=["README.md"],
-        directories=[  # Full DocC documentation
-            "Libraries/MLXLMCommon/Documentation.docc",
+        # The catalogs of the libraries that aren't documentation targets on
+        # the Swift Package Index, whose rendering of the others (MLXLLM,
+        # MLXVLM, MLXLMCommon, MLXEmbedders, MLXScriptedLM) is scraped from
+        # there (scraper/site.py SPI_PACKAGES)
+        directories=[
             "Libraries/MLXHuggingFace/Documentation.docc",
             "Libraries/MLXRerankers/Documentation.docc",
         ],

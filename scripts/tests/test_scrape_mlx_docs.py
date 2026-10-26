@@ -13,6 +13,7 @@ directory, Lib-Swift/lib-swift); web pages "site" (three configured pages,
 its own top-level dir Web, like App-Store).
 """
 
+import dataclasses
 import errno
 import json
 from pathlib import Path
@@ -745,6 +746,38 @@ async def test_a_nested_source_dropped_from_the_config(site: FakeUpstream, monke
     assert await run() == 0
     assert docs() == ALL - {"Lib/lib-lm/README.md", "Lib/lib-lm/pkg/LORA.md"}
     assert "lib-lm" not in metadata()["sources"]
+
+
+async def test_a_directory_dropped_from_a_source_that_stays(site: FakeUpstream,
+                                                            monkeypatch: pytest.MonkeyPatch) -> None:
+    """A DocC catalog dropped from a source's directories (row 5 / OD4: mlx-swift's
+    Source/MLX and mlx-swift-lm's MLXLMCommon, which the Swift Package Index now
+    renders) while the source stays for its README: the catalog's files leave
+    through the normal cleanup (3 of Lib-Swift's 4 files: held by the valve,
+    then deleted), the README stays, and nothing is missing in between."""
+    assert await run() == 0
+    catalog = {path for path in GITHUB_DOCS if "/Docs/" in path}
+    monkeypatch.setattr(scrape_mlx_docs, "GITHUB_SOURCES", [GITHUB[0], dataclasses.replace(GITHUB[1], directories=[])])
+    assert await run() == 0
+    assert docs() == ALL
+    assert sorted(metadata()["pending_orphans"]) == sorted(catalog)
+    assert await run() == 0
+    assert docs() == ALL - catalog
+    assert "Lib-Swift/lib-swift/README.md" in docs()
+    assert not any(k.startswith("github:org/lib-swift:Docs/") for k in hash_file()["hashes"])
+    assert "pending_orphans" not in metadata()
+
+
+def test_the_catalogs_the_swift_package_index_renders_are_not_imported() -> None:
+    """Row 5 / OD4 (a): mlx-swift's and mlx-swift-lm's documentation targets come
+    from the Swift Package Index (scraper/site.py SPI_PACKAGES), so their
+    catalogs aren't imported again; only the READMEs and mlx-swift-lm's two
+    libraries that aren't SPI targets are."""
+    sources = {source.name: source for source in scrape_mlx_docs.GITHUB_SOURCES}
+    assert sources["mlx-swift"].files == ["README.md"] and not sources["mlx-swift"].directories
+    assert sources["mlx-swift-lm"].files == ["README.md"]
+    assert sources["mlx-swift-lm"].directories == [
+        "Libraries/MLXHuggingFace/Documentation.docc", "Libraries/MLXRerankers/Documentation.docc"]
 
 
 def moved_tools(site: FakeUpstream, output_dir: str) -> List[SphinxDocSource]:

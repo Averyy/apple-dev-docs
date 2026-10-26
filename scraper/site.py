@@ -11,13 +11,23 @@ A site other than Apple's (DOCC_SITES) also has a namespace: its docs dirs
 are documentation/<namespace>/<Dir>/ and its hash files
 .hashes/<namespace>/<Dir>_hashes.json, so none of them is a top-level dir
 of another scraper or an Apple framework, and no glob of .hashes/*_hashes.json
-sees them. Its roots are an explicit allow-list (each a job, as an Apple
-technology is), and its top-level set is the allow-list, its excludes and
-the first segments its index root lists (scrape_all_frameworks.load_site).
+sees them. Its roots (each a job, as an Apple technology is) are either an
+explicit allow-list, its top-level set then being the allow-list, its
+excludes and the first segments its index root lists (docs.swift.org), or
+the first segments of the paths its navigator index lists (a Swift Package
+Index package: SPI_PACKAGES), as docc_sites.load_site reads them.
 """
 
 from dataclasses import dataclass
 from typing import Final, Optional, Tuple
+
+# What a DocC site's index (DocCSite.index_url) is. A page index is a DocC
+# page whose references list the site's top-level pages; its roots are the
+# site's allow-list (docs.swift.org's documentation.json). A navigator index
+# is DocC's index/index.json: the first segments of the documentation paths
+# it lists are the site's roots, each a job (a Swift Package Index package)
+INDEX_PAGE: Final = "page"
+INDEX_NAVIGATOR: Final = "navigator"
 
 
 @dataclass(frozen=True)
@@ -37,12 +47,23 @@ class DocCSite:
         namespace: The dir its docs dirs and hash files are under
             (documentation/<namespace>/, .hashes/<namespace>/); "" for
             Apple's, which are top-level
-        index_url: Its index root, the JSON page whose references list the
-            site's top-level pages (load_site), if it has one
+        index_url: Its index, if it has one (load_site): the JSON page
+            whose references list the site's top-level pages, or its
+            navigator index (index_kind)
+        index_kind: What its index is: INDEX_PAGE or INDEX_NAVIGATOR
         roots: The root ids (lowercased) it crawls, each a job; empty for
-            Apple, whose roots are technologies.json's
+            Apple, whose roots are technologies.json's, and for a site whose
+            navigator index lists them
         excludes: Documentation paths (lowercased, without "/documentation/")
             never fetched: a root id, or a page with every page under it
+        max_retries: Its requests' retries after a 5xx, 429 or network
+            error (None: Config.MAX_RETRIES, Apple's)
+        retry_backoff: The wait before the n-th retry after a 5xx or a
+            network error is n times this many seconds (None:
+            Config.RETRY_BACKOFF_FACTOR, Apple's)
+        max_jobs: At most this many jobs of its host's sites run at once
+            (0: no cap), the others waiting outside the run's job slots, so
+            a host whose rate is low never holds the Apple jobs' slots
     """
 
     name: str
@@ -53,8 +74,12 @@ class DocCSite:
     label: str = "Apple Developer"
     namespace: str = ""
     index_url: Optional[str] = None
+    index_kind: str = INDEX_PAGE
     roots: Tuple[str, ...] = ()
     excludes: Tuple[str, ...] = ()
+    max_retries: Optional[int] = None
+    retry_backoff: Optional[float] = None
+    max_jobs: int = 0
 
     @property
     def doc_prefix(self) -> str:
@@ -70,6 +95,11 @@ class DocCSite:
     def doc_path(self) -> str:
         """A reference's root-relative URL of a documentation page, up to its path ("/documentation/")."""
         return self.doc_prefix[len(self.site_url):]
+
+    @property
+    def roots_from_index(self) -> bool:
+        """Whether its roots are those its navigator index lists (not an allow-list)."""
+        return self.index_kind == INDEX_NAVIGATOR
 
     @property
     def namespace_top(self) -> str:
@@ -139,5 +169,60 @@ SWIFT_ORG: Final = DocCSite(
     ),
 )
 
+SPI_URL: Final = "https://swiftpackageindex.com"
+
+
+def spi_package(owner: str, repo: str, excludes: Tuple[str, ...] = ()) -> DocCSite:
+    """A Swift Package Index package's documentation (Phase 5 rows 2-3), from its main branch.
+
+    The packages share one host, so each is its own namespace under SPI
+    (documentation/SPI/<repo>/<Module>/, .hashes/SPI/<repo>/), and its pages
+    name their framework <repo>/<Module>. Its roots are the first segments
+    of the paths its navigator index (index/index.json) lists: SPI builds
+    each documentation target as its own bundle, so each is a top-level root.
+    """
+    base = f"{SPI_URL}/{owner}/{repo}/main"
+    return DocCSite(
+        name=f"spi-{repo.lower()}",
+        site_url=base,
+        doc_base=f"{base}/documentation",
+        json_base=f"{base}/data/documentation",
+        bundle_prefix="doc://",
+        label="Swift Package Index",
+        namespace=f"SPI/{repo}",
+        index_url=f"{base}/index/index.json",
+        index_kind=INDEX_NAVIGATOR,
+        excludes=excludes,
+        # Measured 2026-10-26: ~2% of its requests answer 503, at ~3.7 or
+        # ~1.2 requests/s alike, and a URL that did answers the same 503 for
+        # ~10 s (its CDN keeps it): of 406 such URLs in an 18.7K-request
+        # run, every retry at +2 and +6 s failed, 392 succeeded at +12 s,
+        # and the 14 that failed again failed at +20 s too (each answered
+        # 200 when fetched later). So its retries wait 6, 12, 18 and 24 s
+        # (at +6, +18, +36 and +60 s), each but the first past that window:
+        # in a 6.9K-request run, of 160 such URLs 157 succeeded at +18 s,
+        # 2 at +36 s and 1 at +60 s, none failed
+        max_retries=4,
+        retry_backoff=6.0,
+        # Its jobs share one limiter, which ~4 jobs keep busy
+        max_jobs=4,
+    )
+
+
+# The Swift Package Index packages: CareKit (OD2), the 6 Apple and MLX
+# packages that host no DocC of their own, and mlx-swift-lm (OD4). Their
+# design proposals aren't documentation (OD3): each proposals collection is
+# excluded, and with it the proposals only it lists
+SPI_PACKAGES: Final[Tuple[DocCSite, ...]] = (
+    spi_package("carekit-apple", "CareKit"),
+    spi_package("ml-explore", "mlx-swift"),
+    spi_package("apple", "swift-argument-parser"),
+    spi_package("apple", "swift-log", excludes=("logging/proposals",)),
+    spi_package("apple", "swift-async-algorithms"),
+    spi_package("apple", "swift-openapi-generator", excludes=("swift-openapi-generator/proposals",)),
+    spi_package("apple", "swift-configuration", excludes=("configuration/proposals",)),
+    spi_package("ml-explore", "mlx-swift-lm"),
+)
+
 # The DocC sites other than Apple's, scraped in the Apple process (scrape.py)
-DOCC_SITES: Final[Tuple[DocCSite, ...]] = (SWIFT_ORG,)
+DOCC_SITES: Final[Tuple[DocCSite, ...]] = (SWIFT_ORG, *SPI_PACKAGES)
