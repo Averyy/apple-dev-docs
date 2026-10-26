@@ -38,9 +38,9 @@ curl -X POST https://xdocs.dev/mcp \
 - Caddy needs volume mount: `/var/www/xdocs:/var/www/xdocs:ro`
 
 **Health endpoint status codes:**
-- `200 OK` with `status: healthy` - Ready for use (322K+ docs indexed)
+- `200 OK` with `status: healthy` - Ready for use (400K+ docs indexed)
 - `503 Service Unavailable` with `status: indexing` - The live index was just updated: an incremental update, or a rebuild's swap (<3.5 min after its last add); it serves every search. A rebuild in progress never shows as `indexing`: `/health` reports only the live `apple-docs` index, with its old `documents` count, until the swap
-- `503 Service Unavailable` with `status: degraded` - Partial index (<290K docs); on a fresh volume, 0 docs until its first build is renamed in
+- `503 Service Unavailable` with `status: degraded` - Partial index (<363K docs); on a fresh volume, 0 docs until its first build is renamed in
 - `503 Service Unavailable` with `status: unhealthy` - Meilisearch unavailable
 
 **Container healthcheck:** Docker health curls the MCP app itself (`localhost:$HTTP_PORT/health`) with `Host: ${ALLOWED_HOSTS%%,*}`, so app-level failures (e.g. Host header rejection) show as `unhealthy` in `docker ps`. A rebuild over a live index doesn't turn the container unhealthy (it is built beside the live index and swapped in); only the short `indexing` window after an update or a swap can. A fresh volume's first build still does, since there is no live index yet: 0 docs, `degraded` (503) until the rename-swap and through the short `indexing` window after it — that's intentional, not a bug.
@@ -91,7 +91,7 @@ If issues persist, consider:
 
 ## Project Overview
 
-MCP server for Apple Developer Documentation with Meilisearch backend. 390+ frameworks, 322K+ documents, ~16 ms median search.
+MCP server for Apple Developer Documentation with Meilisearch backend. 400+ frameworks and modules, 400K+ documents, ~16 ms median search.
 
 ## Critical Rules
 
@@ -100,7 +100,7 @@ MCP server for Apple Developer Documentation with Meilisearch backend. 390+ fram
 - **NEVER replace existing code with simplified versions** - fix the actual problem
 - **ALWAYS find root cause** - don't create workarounds
 - **NEVER dismiss issues as "pre-existing"** - All issues must be fixed when discovered. No issue is someone else's problem. If you find a bug during unrelated work, fix it or flag it clearly — never wave it away as "pre-existing" or "out of scope"
-- **NEVER SUGGEST SPECIAL HANDLING FOR SPECIFIC PATTERNS** - 390+ frameworks means no special cases
+- **NEVER SUGGEST SPECIAL HANDLING FOR SPECIFIC PATTERNS** - 400+ frameworks means no special cases
 - Update existing files, don't create new ones unless necessary
 - Use relative paths in scripts
 - Follow MCP spec from https://modelcontextprotocol.io/specification/
@@ -220,10 +220,10 @@ docker stop apple-docs-mcp && docker rm apple-docs-mcp
 
 The landing page and health API show slightly different document counts - this is expected:
 
-- **Landing page** (`find` count): Number of markdown files on disk (~324.7K)
-- **Health API** (Meilisearch count): Number of indexed documents (~325.2K)
+- **Landing page** (`find` count): Number of markdown files on disk (~403.2K)
+- **Health API** (Meilisearch count): Number of indexed documents (~403.7K)
 
-The difference (~430) is because `DocumentProcessor` chunks large files (>50KB) into multiple Meilisearch documents, each with its own id (`<sha1 of file_path>_chunk_<n>`; an unchunked file's id is the bare sha1): on 2026-10-19 the 86 files over 50KB gave 518 documents, 324,740 files 325,172. One markdown file can produce multiple indexed documents. This is intentional for search performance.
+The difference (~490) is because `DocumentProcessor` chunks large files (>50KB) into multiple Meilisearch documents, each with its own id (`<sha1 of file_path>_chunk_<n>`; an unchunked file's id is the bare sha1): on 2026-10-26 the 98 files over 50KB gave 592 documents, 403,243 files 403,737. One markdown file can produce multiple indexed documents. This is intentional for search performance.
 
 ## Local Testing
 

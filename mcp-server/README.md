@@ -2,7 +2,7 @@
 
 This directory contains the MCP server implementation for Apple Developer Documentation search.
 
-**Current Version:** 3.4.1 (`SERVER_VERSION` in `apple_docs_mcp.py`; CI derives the image version label from it)
+**Current Version:** 3.4.2 (`SERVER_VERSION` in `apple_docs_mcp.py`; CI derives the image version label from it)
 
 ## Architecture
 
@@ -52,6 +52,9 @@ docker-compose up -d
 ```
 
 ## Changelog
+
+### v3.4.2
+- `/health`'s defaults follow the corpus after Batch 4 (~404K documents): `healthy` from 363,000 documents (`MIN_EXPECTED_DOCS`, ~90%), and indexing progress counted against 404,000 (`EXPECTED_FULL_INDEX_SIZE`)
 
 ### v3.4.1
 - Equally relevant pages go the shallower path within its framework first, then the shorter: a type at its framework's root before another source's page one folder down (`LanguageModelSession`: Foundation Models' class before the Python SDK's `api/session`)

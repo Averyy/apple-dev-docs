@@ -304,14 +304,14 @@ class TestConfiguration:
     """Test configuration is read correctly from environment."""
 
     def test_minimum_docs_defaults_to_290k(self):
-        """Without env var, MINIMUM_EXPECTED_DOCS should be 290000 (~90% of corpus)."""
+        """Without env var, MINIMUM_EXPECTED_DOCS should be 363000 (~90% of corpus)."""
         with patch.dict(os.environ, {}, clear=False):
             env_val = os.environ.pop("MIN_EXPECTED_DOCS", None)
             try:
                 import importlib
                 import apple_docs_mcp
                 importlib.reload(apple_docs_mcp)
-                assert apple_docs_mcp.MINIMUM_EXPECTED_DOCS == 290000
+                assert apple_docs_mcp.MINIMUM_EXPECTED_DOCS == 363000
             finally:
                 if env_val:
                     os.environ["MIN_EXPECTED_DOCS"] = env_val

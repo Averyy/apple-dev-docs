@@ -1,11 +1,11 @@
 ---
 name: searching-apple-docs
-description: Searches Apple developer documentation for Swift, SwiftUI, UIKit, AppKit, and 390+ frameworks. Useful for looking up iOS/macOS/visionOS APIs, checking method signatures, finding platform availability, or debugging Apple framework issues.
+description: Searches Apple developer documentation for Swift, SwiftUI, UIKit, AppKit, and 400+ frameworks. Useful for looking up iOS/macOS/visionOS APIs, checking method signatures, finding platform availability, or debugging Apple framework issues.
 ---
 
 # Searching Apple Documentation
 
-322K pre-indexed Apple developer documents.
+400K+ pre-indexed Apple developer documents.
 
 ## Default Workflow
 

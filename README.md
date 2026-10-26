@@ -2,10 +2,10 @@
 
 > **Note:** This is an independent project not affiliated with, endorsed by, or sponsored by Apple Inc. Documentation content is © Apple Inc. and provided for development use only.
 
-An MCP server that gives Claude and other AI assistants instant access to Apple's complete developer documentation. 390+ frameworks, 322K+ documents, ~16 ms median search.
+An MCP server that gives Claude and other AI assistants instant access to Apple's complete developer documentation. 400+ frameworks and modules, 400K+ documents, ~16 ms median search.
 
 [![Frameworks](https://img.shields.io/badge/frameworks-390%2B-blue)](https://xdocs.dev)
-[![Documents](https://img.shields.io/badge/documents-322K%2B-green)](https://xdocs.dev)
+[![Documents](https://img.shields.io/badge/documents-400K%2B-green)](https://xdocs.dev)
 [![License](https://img.shields.io/badge/license-MIT-brightgreen)](LICENSE)
 [![Twice Weekly Scrape](https://github.com/Averyy/apple-dev-docs/actions/workflows/scheduled-scrape.yml/badge.svg)](https://github.com/Averyy/apple-dev-docs/actions/workflows/scheduled-scrape.yml)
 
@@ -75,7 +75,7 @@ This project provides a complete, searchable mirror of Apple's documentation in 
 
 ## Features
 
-- **390+ frameworks** - SwiftUI, UIKit, Metal, ARKit, Core ML, and more
+- **400+ frameworks** - SwiftUI, UIKit, Metal, ARKit, Core ML, and more
 - **Nested modules** - Intents, Photos, simd, Apple News Format and the other modules Apple nests under an umbrella framework, each in its own folder
 - **Human Interface Guidelines** - Apple's design documentation for all platforms
 - **Swift Language Guide** - The Swift Programming Language book, C++ Interop
@@ -112,7 +112,7 @@ part: 5 (optional, the part of a long page to start from)
 ```
 
 ### `list_frameworks`
-Browse all 390+ frameworks with document counts.
+Browse all 400+ frameworks with document counts.
 
 ```
 query: "UI" (optional filter)
@@ -136,7 +136,7 @@ cd mcp-server
 docker compose up -d
 
 # Server available at http://localhost:8000/mcp
-# First run indexes ~322K docs (~15-20 minutes)
+# First run indexes ~404K docs (~20 minutes)
 ```
 
 ### Local Development
@@ -169,8 +169,8 @@ cd ../mcp-server && python3 apple_docs_mcp.py
 | `MEILI_TIMEOUT` | No | Meilisearch connection timeout in seconds (default: 10) |
 | `MEILI_MAX_RETRIES` | No | Max retries for transient errors (default: 2) |
 | `RATE_LIMIT_REQUESTS` | No | Requests per minute per IP (default: 60) |
-| `MIN_EXPECTED_DOCS` | No | Minimum docs for "healthy" status (default: 290000) |
-| `EXPECTED_FULL_INDEX_SIZE` | No | Expected full index size for progress calc (default: 322000) |
+| `MIN_EXPECTED_DOCS` | No | Minimum docs for "healthy" status (default: 363000) |
+| `EXPECTED_FULL_INDEX_SIZE` | No | Expected full index size for progress calc (default: 404000) |
 
 ## Updating Documentation
 
