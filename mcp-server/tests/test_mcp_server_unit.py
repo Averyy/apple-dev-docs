@@ -594,6 +594,18 @@ class TestRanking(ToolTestCase):
         paths = re.findall(r"^Path: `([^`]+)`$", result, re.MULTILINE)
         self.assertEqual(paths, [foundation["file_path"], js["file_path"], member["file_path"]])
 
+    def test_equal_scores_go_to_the_shallower_path_before_the_shorter(self) -> None:
+        # A type at its framework's root before another source's page one folder down,
+        # though that page's path is shorter
+        swift = symbol_doc("documentation/FoundationModels/languagemodelsession.md", "LanguageModelSession",
+                           "FoundationModels", platforms=ALL_PLATFORMS)
+        python = symbol_doc("documentation/apple-fm-sdk/api/session.md", "LanguageModelSession", "apple-fm-sdk",
+                            kind="article")
+        self.use_index([python, swift])
+        result = search_apple_docs("LanguageModelSession", summary_mode=True)
+        paths = re.findall(r"^Path: `([^`]+)`$", result, re.MULTILINE)
+        self.assertEqual(paths, [swift["file_path"], python["file_path"]])
+
     def test_a_type_past_the_top_matches_joins_them(self) -> None:
         # Meilisearch ranks every page titled "data" alike, in index order: the top matches
         # are all properties, and Foundation's Data comes after them

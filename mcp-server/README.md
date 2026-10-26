@@ -2,7 +2,7 @@
 
 This directory contains the MCP server implementation for Apple Developer Documentation search.
 
-**Current Version:** 3.4.0 (`SERVER_VERSION` in `apple_docs_mcp.py`; CI derives the image version label from it)
+**Current Version:** 3.4.1 (`SERVER_VERSION` in `apple_docs_mcp.py`; CI derives the image version label from it)
 
 ## Architecture
 
@@ -52,6 +52,9 @@ docker-compose up -d
 ```
 
 ## Changelog
+
+### v3.4.1
+- Equally relevant pages go the shallower path within its framework first, then the shorter: a type at its framework's root before another source's page one folder down (`LanguageModelSession`: Foundation Models' class before the Python SDK's `api/session`)
 
 ### v3.4.0
 - Results mark a deprecated page (`Type: method | Deprecated`) and say what to use instead (`Deprecated: Use UNNotificationRequest instead.`, its links as hints). The indexer flags a page deprecated when it has Apple's deprecation summary or every platform it lists is deprecated (`deprecated`, `deprecation`; `PROCESSOR_VERSION` 3, so the first start rebuilds the index by swap)

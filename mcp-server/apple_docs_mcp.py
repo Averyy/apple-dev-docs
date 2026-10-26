@@ -58,7 +58,7 @@ from mcp.types import ToolAnnotations
 MEILISEARCH_URL = os.getenv("MEILI_HTTP_ADDR", "http://localhost:7700")
 MEILISEARCH_API_KEY = os.getenv("MEILI_SEARCH_KEY", os.getenv("MEILI_MASTER_KEY", ""))
 INDEX_NAME = "apple-docs"
-SERVER_VERSION = "3.4.0"
+SERVER_VERSION = "3.4.1"
 HTTP_PORT = int(os.getenv("HTTP_PORT", "8000"))
 BUILD_TIME = os.getenv("BUILD_TIME", "unknown")
 DOCS_UPDATED = os.getenv("DOCS_UPDATED", "unknown")
@@ -669,14 +669,15 @@ def symbol_candidates(name: str, framework: str = "") -> Tuple[List[Dict[str, An
     return candidates, frameworks
 
 
-def generality(hit: Dict[str, Any]) -> Tuple[int, int]:
-    """A sort key for pages that otherwise tie, the more general first: the shorter path
-    within its framework (a type before its members, a base class's method before a
-    subclass's override), then the page available on more platforms (Foundation's
-    UserDefaults before TVMLKit JS's, UIKit's viewDidLoad() before AppKit's). The whole
-    path would favor the framework with the shorter directory name."""
+def generality(hit: Dict[str, Any]) -> Tuple[int, int, int]:
+    """A sort key for pages that otherwise tie, the more general first: the shallower path
+    within its framework, then the shorter (a type before its members, a base class's
+    method before a subclass's override; Foundation Models' LanguageModelSession before
+    the Python SDK's api/session), then the page available on more platforms
+    (Foundation's UserDefaults before TVMLKit JS's, UIKit's viewDidLoad() before
+    AppKit's). The whole path would favor the framework with the shorter directory name."""
     in_framework = str(hit.get("file_path", "")).split("/", 2)[-1]
-    return len(in_framework), -len(hit.get("platforms") or [])
+    return in_framework.count("/"), len(in_framework), -len(hit.get("platforms") or [])
 
 
 def pick_symbol(candidates: List[Dict[str, Any]], name: str) -> Optional[Dict[str, Any]]:
