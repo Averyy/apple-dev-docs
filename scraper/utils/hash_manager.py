@@ -508,7 +508,9 @@ class HashManager:
         """Update hash and ETag for a URL, and touch it.
         
         The entry holds only content fields (hash, etag, file_path) and the
-        run counters it had.
+        run counters it had. Marks the manager modified only when the entry
+        changes, so a run whose pages are all unchanged (each fetched, its
+        entry recorded as it was) saves nothing.
 
         Args:
             url: URL of the content
@@ -527,9 +529,11 @@ class HashManager:
         if file_path:
             entry["file_path"] = str(file_path)
 
-        self.hashes[url] = self._with_counters(url, entry)
-        self.touched.add(url)
-        self._modified = True
+        entry = self._with_counters(url, entry)
+        if self.hashes.get(url) != entry:
+            self.hashes[url] = entry
+            self._modified = True
+        self.touch(url)
 
         if etag:
             logger.debug("updated_hash_and_etag", url=url, hash=current_hash[:8], etag=etag[:8])
@@ -541,15 +545,18 @@ class HashManager:
         
         The entry holds only status "error" and the error: it loses its
         hash, etag and file_path but keeps its run counters, so a failure
-        count survives the error entry.
+        count survives the error entry. Marks the manager modified only when
+        the entry changes (a URL that keeps answering 404 every run, e.g. a
+        removed module's root, leaves the hash file as it is).
 
         Args:
             url: URL that failed
             error: Error message
         """
-        entry: Dict[str, Any] = {"status": "error", "error": error}
-        self.hashes[url] = self._with_counters(url, entry)
-        self._modified = True
+        entry = self._with_counters(url, {"status": "error", "error": error})
+        if self.hashes.get(url) != entry:
+            self.hashes[url] = entry
+            self._modified = True
         logger.debug("marked_error", url=url, error=error)
 
     def _with_counters(self, url: str, entry: Dict[str, Any]) -> Dict[str, Any]:
@@ -565,7 +572,7 @@ class HashManager:
 
         Adds the URL to the touched set, so orphan detection keeps the
         entry's file. Nothing is written: a run that only touches entries
-        (all 304s) saves nothing.
+        saves nothing.
         """
         self.touched.add(url)
 
@@ -596,7 +603,7 @@ class HashManager:
         """Record the URL's file at a path, leaving its hash, etag and counters alone.
 
         Marks the manager modified when the path changes, so save() writes
-        it (e.g. the 304 backfill of a missing file_path, or a renamed file).
+        it (e.g. a renamed file).
 
         Raises:
             KeyError: The URL has no entry

@@ -318,7 +318,7 @@ def d6_routes(
     implementations: Optional[Dict[str, List[Link]]] = None,
     occ: Optional[Dict[str, List[Dict[str, Any]]]] = None,
 ) -> Dict[str, List[Spec]]:
-    """Each page answers 200 with an etag of its body (304 on a match), unless overridden.
+    """Each page answers 200 with an etag of its body (304 on a match, never asked for), unless overridden.
 
     implementations: a page's path -> its default implementations
     occ: a page's path -> its Objective-C/C variant's patch
@@ -619,8 +619,8 @@ class TestModules:
         for run in (1, 2):
             assert await d6.scrape(pages, ["Umbrella", "Otherbrella"], concurrent=concurrent, delays=delays) == 0
             assert doc_file("Otherbrella/hidden").exists(), run
-            # The module's pages are fetched once a run, by one parent (their 304's discovery refetch aside)
-            assert d6.requests.count(json_url("modkit/thing")) == (1 if run == 1 else 2)
+            # The module's pages are fetched once a run, by one parent
+            assert d6.requests.count(json_url("modkit/thing")) == 1
             assert module_of("ModKit")["parents"] == {
                 "otherbrella": {"unlinked_clean_runs": 0}, "umbrella": {"unlinked_clean_runs": 0}}
 
@@ -1022,7 +1022,7 @@ class TestObjectiveCCuration:
 
     async def test_a_view_that_cant_be_built_keeps_its_objc_pages_through_3_runs(self, d6: D6Runs) -> None:
         """A local error: it blocks 2 runs, then flags the 3rd, whose cleanup runs; the
-        pages only its occ variant links are kept every run. A later clean 304 resets its count."""
+        pages only its occ variant links are kept every run. A later clean run, the page unchanged, resets its count."""
         assert await d6.scrape(OBJC, ["Umbrella"], occ={"Umbrella/guide": occ_curation(OBJC_LINKS)}) == 0
         stray = Path("documentation/Umbrella/stray.md")
         stray.write_text("# stray\n")
@@ -1039,16 +1039,16 @@ class TestObjectiveCCuration:
             # Blocked twice; the 3rd run's cleanup runs
             assert stray.exists() == (run < 3)
         assert [e["url"] for e in d6.logged("persistent_local_error")] == [guide]
-        # Apple's variant is fine again (the page as stored: a 304)
+        # Apple's variant is fine again (the page as stored: unchanged)
         assert await d6.scrape(OBJC, ["Umbrella"], occ={"Umbrella/guide": occ_curation(OBJC_LINKS)}) == 0
         entry = json.loads(Config.get_hash_file("Umbrella").read_text())["hashes"][guide]
         assert "consecutive_local_errors" not in entry and entry["etag"] == etag
         assert docs() == {doc_file(path) for path in OBJC}
 
-    async def test_a_stored_page_whose_view_cant_be_built_is_a_local_error_after_its_304(
+    async def test_a_stored_unchanged_page_whose_view_cant_be_built_is_a_local_error(
         self, d6: D6Runs, monkeypatch: pytest.MonkeyPatch
     ) -> None:
-        """Saved before 1.5, unchanged since: its 304's discovery refetch reads the links."""
+        """Saved before 1.5, unchanged since: its one request reads the links."""
         broken = {"Umbrella/guide": occ_curation(OBJC_LINKS, broken=True)}
         with monkeypatch.context() as before_d1:
             before_d1.setattr(AppleJSONDocumentationScraper, "_occ_view", lambda self, data: None)
@@ -1057,7 +1057,7 @@ class TestObjectiveCCuration:
         guide = json_url("umbrella/guide")
         for run in (1, 2, 3):
             assert await d6.scrape(OBJC, ["Umbrella"], occ=broken) == 1
-            assert d6.requests.count(guide) == 2  # its 304, then the discovery refetch
+            assert d6.requests.count(guide) == 1  # one unconditional GET
             assert d6.logged("error_processing_url") == []
             entry = json.loads(Config.get_hash_file("Umbrella").read_text())["hashes"][guide]
             assert entry["consecutive_local_errors"] == run

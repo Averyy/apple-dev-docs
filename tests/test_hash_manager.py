@@ -175,10 +175,12 @@ def test_legacy_fields_are_dropped_on_load() -> None:
 
 
 def test_a_second_save_of_the_same_entries_is_byte_identical() -> None:
-    """Sorted keys and no timestamps: a run that rewrites what a file holds writes the same bytes.
+    """Sorted keys and no timestamps: a save of what a file holds writes the same bytes.
 
-    E.g. a page re-marked as a 404 every run (mark_error always marks the
-    manager modified), or an unchanged page whose hash and etag are written again.
+    Re-recording the same entries (a page re-marked as a 404 every run, an
+    unchanged page whose hash and etag are recorded again) doesn't even mark
+    the manager modified; a forced save (normalize_hash_files) writes the
+    same bytes.
     """
     with tempfile.TemporaryDirectory() as d:
         cache = Path(d) / "fw_hashes.json"
@@ -197,6 +199,8 @@ def test_a_second_save_of_the_same_entries_is_byte_identical() -> None:
                 again.mark_error("c", "HTTP 404")
             else:
                 again.update_hash("b", "content", etag="E", file_path=Path("documentation/fw/b.md"))
+            assert not again._modified, rewrite
+            again._modified = True
             assert again.save() is True
             assert cache.read_bytes() == first, rewrite
     print("PASS: a_second_save_of_the_same_entries_is_byte_identical")
@@ -339,6 +343,42 @@ def test_touch_only_records_the_url() -> None:
         cache.unlink()
         assert later.save() is True and not cache.exists()  # not modified: nothing written
     print("PASS: touch_only_records_the_url")
+
+
+def test_update_hash_marks_modified_only_on_a_change() -> None:
+    """An unchanged page's update_hash touches it and writes nothing; any changed field is saved."""
+    with tempfile.TemporaryDirectory() as d:
+        cache = Path(d) / "fw_hashes.json"
+        hm = HashManager(cache)
+        hm.update_hash("u", "content", etag="E", file_path=Path("documentation/fw/u.md"))
+        hm.set_counter("u", "consecutive_local_errors", 1)
+        assert hm.save() is True
+        saved = cache.read_text()
+        same = HashManager(cache)
+        same.update_hash("u", "content", etag="E", file_path=Path("documentation/fw/u.md"))
+        assert same.touched == {"u"} and not same._modified
+        cache.unlink()
+        assert same.save() is True and not cache.exists()  # not modified: nothing written
+        for content, etag, file_path in (
+            ("content", "E2", "documentation/fw/u.md"),  # an etag rotation
+            ("new content", "E", "documentation/fw/u.md"),
+            ("content", "E", "documentation/fw/v.md"),
+            ("content", None, "documentation/fw/u.md"),
+        ):
+            cache.write_text(saved)
+            changed = HashManager(cache)
+            changed.update_hash("u", content, etag=etag, file_path=Path(file_path))
+            assert changed._modified, (content, etag, file_path)
+            assert changed.save() is True
+            assert json.loads(cache.read_text())["hashes"]["u"] == {
+                "hash": changed.get_content_hash(content), **({"etag": etag} if etag else {}),
+                "file_path": file_path, "consecutive_local_errors": 1,
+            }
+        cache.write_text(saved)
+        new_key = HashManager(cache)
+        new_key.update_hash("v", "content", etag="E", file_path=Path("documentation/fw/u.md"))
+        assert new_key._modified
+    print("PASS: update_hash_marks_modified_only_on_a_change")
 
 
 def test_set_file_path_sets_only_the_path() -> None:
@@ -689,6 +729,7 @@ def main():
         test_a_second_save_of_the_same_entries_is_byte_identical,
         test_counters_survive_update_hash_mark_error_and_save,
         test_touch_only_records_the_url,
+        test_update_hash_marks_modified_only_on_a_change,
         test_set_file_path_sets_only_the_path,
         test_keep_file_records_a_file_on_disk_only,
         test_keep_file_alone_is_saved,

@@ -280,7 +280,7 @@ def check(plan: Plan, disk: Dict[str, str]) -> None:
             else:
                 plan.fail("non-owners whose new path is a file that stays", f"{page.json_url}: {page.new}")
     # A file-less page records its new path: a file there must move away, or
-    # the page would take it as its own (a 304 would keep that content)
+    # the page would take it as its own (an unchanged page keeps that content)
     for page in plan.file_less:
         target = page.new.lower()
         if target in disk and target not in moving_old:

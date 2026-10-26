@@ -20,6 +20,7 @@
 import json
 import os
 import sys
+from collections import Counter
 from pathlib import Path
 from typing import Any, Dict, Iterator, List, Optional, Sequence, Set, Tuple
 
@@ -160,6 +161,7 @@ class SiteRuns:
         self.monkeypatch = monkeypatch
         self.events: List[EventDict] = []
         self.requests: List[str] = []
+        self.conditional: List[str] = []  # the requests that sent If-None-Match
         self.configure(SITE)
 
     def configure(self, *sites: DocCSite) -> None:
@@ -205,6 +207,7 @@ class SiteRuns:
             code: int = await scrape_all_frameworks.scrape_everything()
         self.events = events
         self.requests = [url for url, _ in fake.requests] + fake.unrouted
+        self.conditional = [url for url, if_none_match in fake.requests if if_none_match is not None]
         return code
 
     def logged(self, event: str) -> List[EventDict]:
@@ -356,6 +359,14 @@ class TestSiteScrape:
         assert await site_runs.scrape(site_routes()) == 0
         assert sandbox_bytes() == before
         assert not site_runs.logged("file_saved")
+        # One unconditional GET per page; a root twice (scrape_page, then its
+        # queued copy, which reads its links), the index once
+        requests = Counter(site_runs.requests)
+        assert site_runs.conditional == []
+        assert requests.pop(SITE.index_url) == 1
+        assert {url for url, count in requests.items() if count != 1} == {
+            site_json(root) for root in ("Guide", "Kit", "OtherKit")}
+        assert set(requests.values()) == {1, 2}
 
     async def test_the_namespace_check(self, site_runs: SiteRuns) -> None:
         # A namespace another scraper's dir, or an Apple hash file's id: the run aborts before scraping

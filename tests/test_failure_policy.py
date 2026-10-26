@@ -18,6 +18,7 @@ import hashlib
 import json
 import os
 import sys
+from collections import Counter
 from pathlib import Path
 from typing import Any, Dict, Iterator, List, Optional, Set
 
@@ -68,7 +69,7 @@ class Apple(FakeApple):
 
 
 def routes_for(site: Site, overrides: Optional[Dict[str, List[Spec]]] = None, version: int = 1) -> Dict[str, List[Spec]]:
-    """Each page answers 200 with an etag of its body (304 on a match), unless overridden."""
+    """Each page answers 200 with an etag of its body (304 on a match, never asked for), unless overridden."""
     routes: Dict[str, List[Spec]] = {}
     for path, children in site.items():
         body = page(path, children)
@@ -95,6 +96,7 @@ class Runs:
         self.monkeypatch = monkeypatch
         self.events: List[EventDict] = []
         self.last: Optional[AppleJSONDocumentationScraper] = None  # the last run's scraper
+        self.apple: Optional[Apple] = None  # the last run's fake Apple (its requests)
 
     async def run(self, routes: Dict[str, List[Spec]], fw: str = FW) -> AppleJSONDocumentationScraper:
         apple = Apple(routes)
@@ -108,7 +110,14 @@ class Runs:
         self.events = events
         assert apple.unrouted == []
         self.last = scraper
+        self.apple = apple
         return scraper
+
+    def requests(self) -> Counter[str]:
+        """The last run's requests per URL; asserts none was conditional (If-None-Match)."""
+        assert self.apple is not None
+        assert [url for url, if_none_match in self.apple.requests if if_none_match is not None] == []
+        return Counter(url for url, _ in self.apple.requests)
 
     def logged(self, event: str) -> List[EventDict]:
         return [e for e in self.events if e["event"] == event]
@@ -222,16 +231,41 @@ class TestCleanRuns:
         # No unconditional root fetch before scrape_page (the old topic-hierarchy fetch)
         assert not hasattr(scraper, "topic_hierarchy")
 
-    async def test_a_304_only_run_saves_nothing(self, runs: Runs) -> None:
-        """Every page answers 304: its entries are only touched, so the hash file isn't rewritten."""
+    async def test_an_unchanged_run_saves_nothing(self, runs: Runs) -> None:
+        """Every page answers 200 as stored: its entries are only touched, so the hash file isn't rewritten."""
         await seeded(runs)
         hash_file = Config.get_hash_file(FW)
         before = hash_file.read_bytes()
         mtime = hash_file.stat().st_mtime_ns
+        files = {path: file_of(path).stat().st_mtime_ns for path in SITE}
         scraper = await runs.run(routes_for(SITE))
-        assert scraper.hash_manager.touched >= {json_url(path) for path in SITE}
+        assert scraper.hash_manager.touched >= {json_url(path) for path in SITE} | {doc_url(path) for path in SITE}
+        assert scraper.stats["pages_scraped"] == 0
+        assert {path: file_of(path).stat().st_mtime_ns for path in SITE} == files
         assert hash_file.read_bytes() == before and hash_file.stat().st_mtime_ns == mtime
         assert runs.orphans() == set() and would_delete(scraper) == {}
+
+    async def test_a_page_that_keeps_answering_404_saves_nothing(self, runs: Runs) -> None:
+        """Its error entry is recorded again as it is: once removed, a run changes nothing."""
+        await seeded(runs)
+        routes = routes_for(SITE, {ALPHA_CHILD: [status(404)]})
+        await runs.run(routes)
+        assert runs.entry(ALPHA_CHILD) == {"status": "error", "error": "HTTP 404"}
+        hash_file = Config.get_hash_file(FW)
+        before, mtime = hash_file.read_bytes(), hash_file.stat().st_mtime_ns
+        await runs.run(routes)
+        assert hash_file.read_bytes() == before and hash_file.stat().st_mtime_ns == mtime
+
+    async def test_one_unconditional_request_per_page(self, runs: Runs) -> None:
+        """A page is fetched once a run, without If-None-Match: its links come from that body.
+        The root alone is fetched twice (scrape_page saves it, its queued copy reads its links)."""
+        seeded_run = await runs.run(routes_for(SITE))
+        assert runs.requests() == {json_url(path): 2 if path == ROOT else 1 for path in SITE}
+        assert seeded_run.stats["pages_scraped"] >= len(SITE)
+        # Unchanged, changed: the same requests
+        for routes in (routes_for(SITE), routes_for(SITE, version=2)):
+            await runs.run(routes)
+            assert runs.requests() == {json_url(path): 2 if path == ROOT else 1 for path in SITE}
 
     async def test_an_etag_rotation_changes_only_the_etags(self, runs: Runs) -> None:
         """The same content under new etags (e.g. a CDN redeploy): only the etag values change."""
@@ -331,27 +365,48 @@ class TestD8:
         assert not scraper.outcome.skip_cleanup
         assert counters(runs.entry(ALPHA)) == {}
 
-    async def test_a_304_whose_refetch_succeeds_resets_the_count(self, runs: Runs) -> None:
+    async def test_an_unchanged_200_resets_the_count(self, runs: Runs) -> None:
         await seeded(runs)
         await runs.run(routes_for(SITE, {ALPHA: [status(502)]}))
         await runs.run(routes_for(SITE))
         assert counters(runs.entry(ALPHA)) == {}
 
-    async def test_304_then_failed_refetch_x3_keeps_the_file(self, runs: Runs) -> None:
+    async def test_an_unchanged_page_failing_x3_is_purged(self, runs: Runs) -> None:
+        """D1: a once-good page whose single request fails 3 runs in a row is treated as removed.
+
+        Each run fetches it once (its retries aside): no conditional request
+        proves it live first, so nothing exempts it from D8.
+        """
         await seeded(runs)
-        good = routes_for(SITE)[json_url(ALPHA)][0]
-        fault = [good] + [status(502)] * (MAX_RETRIES + 1)
+        await runs.run(routes_for(SITE))  # unchanged: one request, nothing written
+        assert runs.requests()[json_url(ALPHA)] == 1
+        fault = [status(502)] * (MAX_RETRIES + 1)
         for run in (1, 2):
             scraper = await runs.run(routes_for(SITE, {ALPHA: fault}))
+            assert runs.requests()[json_url(ALPHA)] == MAX_RETRIES + 1
             assert scraper.outcome.blocks == {"fetch_failed": [json_url(ALPHA)]}
-            assert runs.entry(ALPHA)["consecutive_failures"] == run
+            entry = runs.entry(ALPHA)
+            assert entry["consecutive_failures"] == run and entry["file_path"] == str(file_of(ALPHA))
+            assert would_delete(scraper) == {}
         scraper = await runs.run(routes_for(SITE, {ALPHA: fault}))
+        assert runs.requests()[json_url(ALPHA)] == MAX_RETRIES + 1
         assert scraper.outcome.blocks == {}
         assert scraper.outcome.persistent_fetch_failures == [json_url(ALPHA)]
-        entry = runs.entry(ALPHA)
-        # The 304 proved it live: no mark_error, still touched, file kept
-        assert entry.get("status") != "error" and entry["consecutive_failures"] == 3
-        assert runs.orphans() == {file_of(ALPHA_CHILD)}
+        assert [e["kind"] for e in runs.logged("persistent_fetch_failure")] == ["previously_good"]
+        saved = runs.saved()["hashes"]
+        for key in (json_url(ALPHA), doc_url(ALPHA)):
+            assert saved[key]["status"] == "error" and "file_path" not in saved[key], key
+        assert saved[json_url(ALPHA)]["consecutive_failures"] == 3
+        assert would_delete(scraper) == {FW: sorted([file_of(ALPHA), file_of(ALPHA_CHILD)])}
+
+    async def test_a_page_answering_then_failing_within_a_run_is_not_a_failure(self, runs: Runs) -> None:
+        """Its one request got the page: the answers after it are never asked for."""
+        await seeded(runs)
+        good = routes_for(SITE)[json_url(ALPHA)][0]
+        scraper = await runs.run(routes_for(SITE, {ALPHA: [good] + [status(502)] * (MAX_RETRIES + 1)}))
+        assert runs.requests()[json_url(ALPHA)] == 1
+        assert scraper.outcome.blocks == {} and not scraper.outcome.skip_cleanup
+        assert counters(runs.entry(ALPHA)) == {}
 
     async def test_404_on_a_good_page_is_removed_in_the_same_run(self, runs: Runs) -> None:
         await seeded(runs)
@@ -630,11 +685,11 @@ class TestRoot:
             assert runs.saved()["metadata"]["root_gone_runs"] == 1
             assert file_of(ROOT) not in runs.orphans()
 
-    async def test_root_304_then_failed_refetch_never_reaches_d8(self, runs: Runs) -> None:
+    async def test_root_200_then_failed_queued_fetch_never_reaches_d8(self, runs: Runs) -> None:
         await seeded(runs)
         good = routes_for(SITE)[json_url(ROOT)][0]
-        # scrape_page and the queued fetch get a 304; the discovery refetch fails
-        fault = [good, good] + [status(502)] * (MAX_RETRIES + 1)
+        # scrape_page gets the root unchanged; its queued fetch, which reads its links, fails
+        fault = [good] + [status(502)] * (MAX_RETRIES + 1)
         for _ in range(4):
             scraper = await runs.run(routes_for(SITE, {ROOT: fault}))
             outcome = scraper.outcome
@@ -665,8 +720,8 @@ class TestRoot:
         scraper = await runs.run(routes_for(site, {ROOT: [status(404)]}))
         assert scraper.outcome.root_gone_runs == 1
 
-    @pytest.mark.parametrize("answers", ["200-then-404", "304-then-404", "304-then-refetch-404"])
-    async def test_root_404_after_a_200_or_304_blocks_and_resets(self, runs: Runs, answers: str) -> None:
+    @pytest.mark.parametrize("answers", ["changed-then-404", "unchanged-then-404"])
+    async def test_root_404_after_a_200_blocks_and_resets(self, runs: Runs, answers: str) -> None:
         await seeded(runs)
         hash_file = Config.get_hash_file(FW)
         data = json.loads(hash_file.read_text())
@@ -675,9 +730,8 @@ class TestRoot:
         good = routes_for(SITE)[json_url(ROOT)][0]
         changed = routes_for(SITE, version=2)[json_url(ROOT)][0]
         fault = {
-            "200-then-404": [changed, status(404)],
-            "304-then-404": [good, status(404)],
-            "304-then-refetch-404": [good, good, status(404)],
+            "changed-then-404": [changed, status(404)],
+            "unchanged-then-404": [good, status(404)],
         }[answers]
         scraper = await runs.run(routes_for(SITE, {ROOT: fault}))
         outcome = scraper.outcome
@@ -1148,7 +1202,7 @@ class TestRenderVersion:
     def stored() -> Any:
         return Runs.saved()["metadata"].get("render")
 
-    async def test_a_stale_framework_is_rendered_again_then_answers_304(
+    async def test_a_stale_framework_is_rendered_again_then_is_unchanged(
         self, runs: Runs, monkeypatch: pytest.MonkeyPatch
     ) -> None:
         await seeded(runs)
@@ -1165,12 +1219,13 @@ class TestRenderVersion:
         saved = runs.saved()
         assert saved["metadata"]["render"] == {"version": RENDER_NEW}
         assert saved["hashes"] == hashes_before  # same JSON, same etags and files
-        # The next run of the same version: every page answers 304, nothing is written
+        # The next run of the same version: every page is unchanged, nothing is written
         hash_file = Config.get_hash_file(FW)
-        before = hash_file.read_bytes()
+        before, mtime = hash_file.read_bytes(), hash_file.stat().st_mtime_ns
         scraper = await runs.run(routes_for(SITE))
         assert scraper.stats["pages_scraped"] == 0 and scraper.stats["pages_skipped"] >= len(SITE)
-        assert hash_file.read_bytes() == before and not runs.logged("render_version_stale")
+        assert hash_file.read_bytes() == before and hash_file.stat().st_mtime_ns == mtime
+        assert not runs.logged("render_version_stale")
 
     async def test_pages_the_storing_run_didnt_reach_are_rendered_when_back(
         self, runs: Runs, monkeypatch: pytest.MonkeyPatch
@@ -1205,14 +1260,14 @@ class TestRenderVersion:
         before = hash_file.read_bytes()
         await runs.run(root_only)
         assert hash_file.read_bytes() == before and not runs.logged("render_version_stale")
-        # Linked again, JSON unchanged: fetched without an etag and rendered; nothing is orphaned
+        # Linked again, JSON unchanged: its hash "" differs, so it is rendered; nothing is orphaned
         scraper = await runs.run(routes_for(SITE))
         for path in SITE:
             assert f"The {path} page." in file_of(path).read_text(encoding="utf-8"), path
         report = runs.cleanup(scraper)
         assert report.deleted == {} and report.held == {} and "pending_orphans" not in runs.saved()["metadata"]
         assert all(runs.entry(path)["hash"] and runs.entry(path)["etag"] for path in unreached)
-        # Then every page answers 304 and nothing is written
+        # Then every page is unchanged and nothing is written
         before = hash_file.read_bytes()
         scraper = await runs.run(routes_for(SITE))
         assert scraper.stats["pages_scraped"] == 0 and hash_file.read_bytes() == before

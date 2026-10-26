@@ -430,7 +430,7 @@ async def test_root_5xx_four_runs_deletes_nothing(runs: Runs) -> None:
 
 
 async def test_a_zero_touched_framework_is_never_cleaned(runs: Runs, monkeypatch: pytest.MonkeyPatch) -> None:
-    """A touch-tracking bug: this run touched no entry (here every page answers 304)."""
+    """A touch-tracking bug: this run touched no entry (here every page is unchanged)."""
     await seeded(runs)
     monkeypatch.setattr(HashManager, "touch", lambda self, url: None)
     scraper = await runs.run(routes_for(SITE))

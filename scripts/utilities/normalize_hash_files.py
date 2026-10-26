@@ -7,7 +7,7 @@ error on an error entry; the run counters while > 0) with sorted keys, and
 drops the legacy fields on load (last_checked, session_id, a status other
 than "error", an error entry's hash; metadata last_updated, session_id,
 partial_session). save() writes only a modified manager, and a run whose
-pages all answer 304 modifies nothing, so no scrape would ever rewrite a
+pages are all unchanged modifies nothing, so no scrape would ever rewrite a
 file in the new format: this script loads every Apple framework hash file
 (one with a key under the JSON data URL) through HashManager, marks it
 modified and saves it.

@@ -108,7 +108,7 @@ class Sink:
         writer: JSON URL -> the job that processed it, for the pages a job
             other than the sink's primary processed (writer_of)
         fetch_failures: JSON URL -> the fetch failure that counts toward D8
-        fetch_ok: a 200, or a 304 whose discovery refetch succeeded
+        fetch_ok: answered 200 with a JSON body
         gone: answered 404/410: Apple removed the page
         local_errors: JSON URL -> convert/save error
         saved_ok: pages processed without a local error

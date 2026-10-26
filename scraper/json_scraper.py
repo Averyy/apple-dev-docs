@@ -169,9 +169,8 @@ FAILURE_STORM_RUNS: Final = 3
 
 # How a page's fetch failed this run (see _handle_fetch_failure):
 # previously_good: a page with a live entry failed; it is kept and touched.
-# after_304: a 304 proved the page live, then its discovery refetch failed.
 # never_good: a transient failure on a URL with no live entry.
-FailureKind = Literal["previously_good", "after_304", "never_good"]
+FailureKind = Literal["previously_good", "never_good"]
 
 
 @dataclass(frozen=True)
@@ -277,10 +276,10 @@ class FrameworkOutcome:
             each was written under a hashed stem. They flag the run but
             never block cleanup, since a clash recurs every run
         root_fetch_failed: The root failed with something other than 404/410,
-            or with a 404/410 after it answered 200/304 in this run (our
+            or with a 404/410 after it answered 200 in this run (our
             failure: it blocks cleanup and never reaches D8)
         root_gone_runs: Consecutive runs the root returned 404/410, if it did
-            this run and never answered 200/304 (else 0); cleanup skips the
+            this run and never answered 200 (else 0); cleanup skips the
             framework, which isn't our failure, until the end-of-run pass
             deletes it at 2
         failure_storm: Too many fetch failures this run (see FAILURE_STORM_*)
@@ -535,7 +534,7 @@ class AppleJSONDocumentationScraper(BaseAppleScraper):
             hash_file=self.sink.hash_file,
         )
         self.sinks.outcomes[self.outcome.key] = self.outcome
-        self._root_ok = False  # the root answered 200 or 304
+        self._root_ok = False  # the root answered 200
         self._root_gone = False  # the root answered 404/410
         if self.sink.load_error is not None:
             # The hash file exists but loaded nothing, so this run can't tell
@@ -672,7 +671,7 @@ class AppleJSONDocumentationScraper(BaseAppleScraper):
             return False
     
     async def _discover_and_scrape_iterative(self, initial_json_urls) -> None:
-        """Iterative version of discovery to avoid recursion depth issues with optimized ETag usage.
+        """Iterative version of discovery to avoid recursion depth issues.
 
         Each URL goes to its sink (_route), and a sink's page is processed
         once per run, by the first job that reaches it (dedup per sink). A
@@ -920,66 +919,14 @@ class AppleJSONDocumentationScraper(BaseAppleScraper):
         """
         hm = sink.hash_manager
         try:
-            # OPTIMIZED: Fetch JSON with ETag support for discovery
-            result = await self.fetch_page_with_etag(json_url, use_etag=True, hash_manager=hm)
+            # One unconditional GET: the body gives the page's links every
+            # run, and has_changed tells an unchanged page from a changed one
+            result = await self._fetch_page(json_url)
             if isinstance(result, FetchFailed):
-                # Never treated as a 304, and never refetched for discovery
                 self._handle_fetch_failure(sink, json_url, result)
                 return
 
-            if result is NOT_MODIFIED:
-                # Got 304 Not Modified - content unchanged
-                if self._is_root(json_url):
-                    self._root_ok = True
-                doc_url = self._convert_json_url_to_doc_url(json_url)
-                logger.debug("content_unchanged_skip_scrape", json_url=json_url, doc_url=doc_url)
-                self.stats['pages_skipped'] += 1
-
-                # Touch the entry for orphan detection even though content
-                # unchanged. KEEP the recorded file path: a page the tripwire
-                # gave a hashed stem keeps that file (recomputing the path
-                # from its URL would record the other page's file of its
-                # clash). Only an entry without one gets the tripwire's path.
-                if json_url in hm.hashes:
-                    if not hm.hashes[json_url].get('file_path'):
-                        hm.set_file_path(
-                            json_url, self._claim_path(sink, json_url, self._get_organized_file_path(sink, doc_url, {}))
-                        )
-                    hm.touch(json_url)
-
-                # IMPORTANT: Still need to discover child pages!
-                # The main page might be unchanged but children could be new/updated.
-                if json_url in hm.hashes:
-                    # We've seen this page before - need to rediscover its children
-                    # Fetch without ETag to get content for discovery
-                    discovery_result = await self.fetch_page_with_etag(json_url, use_etag=False)
-                    if discovery_result is NOT_MODIFIED:
-                        # No body to read the links from: a failed refetch
-                        discovery_result = FetchFailed(
-                            status=304, error="HTTP 304 on discovery refetch", transient=True
-                        )
-                    elif not isinstance(discovery_result, FetchFailed):
-                        try:
-                            data = json.loads(discovery_result[0])
-                        except json.JSONDecodeError:
-                            logger.warning("failed_to_parse_json_for_rediscovery", url=json_url)
-                            discovery_result = self._invalid_json_failure()
-                        else:
-                            # Extract URLs for discovery
-                            _, occ_error = self._discover_links(sink, json_url, data, url_queue)
-                            sink.fetch_ok.add(json_url)
-                            if occ_error is not None:
-                                # Its links are queued; its occ view failed (ours)
-                                self._handle_local_error(sink, json_url, occ_error)
-                            else:
-                                # Read without a local error: its count of them ends
-                                sink.saved_ok.add(json_url)
-                    if isinstance(discovery_result, FetchFailed):
-                        # The 304 proved the page live; only its links are missing
-                        self._handle_fetch_failure(sink, json_url, discovery_result, after_304=True)
-                return
-
-            # Got 200 OK - content is new or changed
+            # Got 200 OK - content is new, changed or unchanged
             response_text, etag = result
 
             # Parse JSON for discovery
@@ -1027,12 +974,16 @@ class AppleJSONDocumentationScraper(BaseAppleScraper):
                     self.stats['pages_skipped'] += 1
 
                     # Still need to update hash with file path for orphan detection.
-                    # Reuse the stored file path, as the 304 branch does; compute
-                    # one only when none is stored, and then write the file first.
+                    # KEEP the stored file path: a page the tripwire gave a
+                    # hashed stem keeps that file (recomputing the path from
+                    # its URL would record the other page's file of its
+                    # clash). Compute one only when none is stored, and then
+                    # write the file first.
                     stored_path = hm.hashes[json_url].get('file_path')
                     if stored_path:
                         file_path = Path(stored_path)
-                        # Touch both keys and record the new etag
+                        # Touch both keys and record a new etag; an entry
+                        # that doesn't change leaves the hash file as it is
                         hm.update_hash(json_url, response_text, etag, file_path)
                         hm.update_hash(doc_url, response_text, etag, file_path)
                     else:
@@ -1169,7 +1120,7 @@ class AppleJSONDocumentationScraper(BaseAppleScraper):
 
         Lowercased path -> lowercased JSON URL (URL space is
         case-insensitive). Seeded on first use from the live JSON-URL keys'
-        recorded files (a page answering 304 keeps its file), then every file
+        recorded files (an unchanged page keeps its file), then every file
         this run records.
         """
         if sink.path_owner_map is None:
@@ -1200,12 +1151,6 @@ class AppleJSONDocumentationScraper(BaseAppleScraper):
             return file_path
         return file_path.with_name(f"{file_path.stem}{clash_suffix(json_url)}.md")
 
-    def _claim_path(self, sink: Sink, json_url: str, file_path: Path) -> Path:
-        """The tripwire's path for a page whose file is recorded without a write; now the page's."""
-        target = self._tripwire_path(sink, json_url, file_path)
-        self._path_owners(sink)[self._path_key(target)] = json_url.lower()
-        return target
-
     def _remove_moved_clash_file(self, sink: Sink, json_url: str, file_path: Path) -> None:
         """Delete the page's hashed-stem file once its file was written at file_path instead.
 
@@ -1227,17 +1172,14 @@ class AppleJSONDocumentationScraper(BaseAppleScraper):
                 old.unlink(missing_ok=True)
                 logger.info("clash_file_removed", url=json_url, file=old_path, now=str(file_path))
 
-    def _handle_fetch_failure(
-        self, sink: Sink, json_url: str, failure: FetchFailed, after_304: bool = False
-    ) -> None:
+    def _handle_fetch_failure(self, sink: Sink, json_url: str, failure: FetchFailed) -> None:
         """Apply the failure policy to a fetch that gave no usable page.
 
         - 404/410: Apple removed the page. Its JSON-URL key becomes an error
           entry, so its file (and any subtree no longer reachable) is orphaned
           and cleaned. Never blocks.
-        - Any other failure of a live page, or of a discovery refetch after a
-          304: keep the entry and touch it, so its file isn't orphaned; it
-          blocks cleanup and counts toward D8.
+        - Any other failure of a live page: keep the entry and touch it, so
+          its file isn't orphaned; it blocks cleanup and counts toward D8.
         - A URL with no live entry: an error entry. A transient failure blocks
           and counts (it may be the new parent of a moved page); a 4xx doesn't.
           A URL that no entry records but whose file is on disk, though, is a
@@ -1245,7 +1187,7 @@ class AppleJSONDocumentationScraper(BaseAppleScraper):
           load): it is handled as a live page.
         - The root never reaches D8: any failure other than 404/410 keeps it
           and blocks cleanup, every run until it recovers. So does a 404/410
-          after the root answered 200/304 in this run: the root is live, and
+          after the root answered 200 in this run: the root is live, and
           this fetch, which reads its links, failed.
 
         Counting is done once per run by _apply_failure_policy.
@@ -1254,7 +1196,6 @@ class AppleJSONDocumentationScraper(BaseAppleScraper):
             sink: The page's sink
             json_url: The page's JSON URL
             failure: The failed fetch
-            after_304: The failure is the discovery refetch after a 304
         """
         hm = sink.hash_manager
         if failure.status in GONE_STATUSES:
@@ -1268,10 +1209,7 @@ class AppleJSONDocumentationScraper(BaseAppleScraper):
             logger.warning("root_fetch_conflict", url=json_url, status=failure.status)
 
         kind: FailureKind
-        if after_304:
-            # The 304 already touched the entry
-            kind = "after_304"
-        elif self._is_previously_good(hm.hashes.get(json_url)):
+        if self._is_previously_good(hm.hashes.get(json_url)):
             hm.touch(json_url)
             kind = "previously_good"
         elif self._kept_unrecorded_file(sink, json_url):
@@ -1305,15 +1243,16 @@ class AppleJSONDocumentationScraper(BaseAppleScraper):
         """A convert or save error of ours: keep the page, block cleanup, count it.
 
         Never deletes: the page answered 200, so its file is kept. A live
-        entry keeps its hash, etag and file_path (the old etag makes the next
-        run refetch) and is touched, so its file is never orphaned. Without
-        one, the page's file can still be on disk with no live JSON-URL key
-        recording it: its JSON-URL key answered 404/410 (e.g. the root's first
-        fetch this run), or D8 marked both keys, in a run whose cleanup didn't
-        delete the file, or the hash file was lost. Then the JSON-URL key
-        records that file again (HashManager.keep_file), so it is kept.
-        Otherwise the URL gets an error entry, so its count persists. Never
-        counts toward D8; counted once per run by _apply_failure_policy.
+        entry keeps its hash, etag and file_path (the old etag and hash make
+        the next run convert it again) and is touched, so its file is never
+        orphaned. Without one, the page's file can still be on disk with no
+        live JSON-URL key recording it: its JSON-URL key answered 404/410
+        (e.g. the root's first fetch this run), or D8 marked both keys, in a
+        run whose cleanup didn't delete the file, or the hash file was lost.
+        Then the JSON-URL key records that file again (HashManager.keep_file),
+        so it is kept. Otherwise the URL gets an error entry, so its count
+        persists. Never counts toward D8; counted once per run by
+        _apply_failure_policy.
 
         Args:
             sink: The page's sink
@@ -1397,10 +1336,10 @@ class AppleJSONDocumentationScraper(BaseAppleScraper):
         hm = sink.hash_manager
         outcome = self.outcome
 
-        # Root: a 404/410 counts toward root_gone_runs once per run, any 200/304 resets it
+        # Root: a 404/410 counts toward root_gone_runs once per run, any 200 resets it
         if self._root_ok:
             if self._root_gone:
-                # A 404/410, then a 200/304 on the fetch that reads the root's
+                # A 404/410, then a 200 on the fetch that reads the root's
                 # links: the root is live (had that fetch failed, it blocked
                 # as root_fetch_failed)
                 logger.warning("root_fetch_conflict", framework=self.framework_name, url=self.root_json_url)
@@ -1442,7 +1381,7 @@ class AppleJSONDocumentationScraper(BaseAppleScraper):
         their hash and etag (forget_untouched_renderings): their files keep
         the old rendering (a file the valve holds, or a page no longer
         reached), and such a page that comes back unchanged would else
-        answer 304 and never be rendered again.
+        match its stored etag or hash and never be rendered again.
         Saved by __aexit__.
 
         A multi-writer sink stores it at the end of the run instead
@@ -1656,7 +1595,7 @@ class AppleJSONDocumentationScraper(BaseAppleScraper):
         known dirs are computed at its start), so without these a page
         linking a module first reached this run (docs.swift.org's migration
         guide, a new Apple module) would link it by URL, and keep doing so
-        while it answers 304. A link of the page's bundle to a segment that
+        while it is unchanged. A link of the page's bundle to a segment that
         is no top-level page (and isn't excluded or refused) routes to that
         module's sink, whose dir its identifier cases (_route): a function
         of the page alone, so its rendering doesn't depend on the run's order.
@@ -1730,8 +1669,10 @@ class AppleJSONDocumentationScraper(BaseAppleScraper):
     async def scrape_page(self, sink: Sink, url: str) -> Optional[Dict[str, Any]]:
         """Fetch the framework root page and save it if it changed.
         
-        Writes the file first, then both hash keys. A failed fetch is never
-        treated as a 304: it goes through the failure policy.
+        Writes the file first, then both hash keys. One unconditional GET,
+        as for every page (_fetch_page); a failed fetch goes through the
+        failure policy. Its links are read when its queued copy is processed
+        (_process_queued_url), which fetches it again.
         
         Args:
             sink: The page's sink
@@ -1742,39 +1683,11 @@ class AppleJSONDocumentationScraper(BaseAppleScraper):
         """
         # Convert to JSON URL
         json_url = self._convert_doc_url_to_json_url(url)
-        
-        # Check if we have an ETag for this JSON URL
         hm = sink.hash_manager
-        stored_etag = hm.get_etag(json_url)
         
-        # Fetch JSON data with ETag support
-        result = await self.fetch_page_with_etag(json_url, hash_manager=hm)
+        result = await self._fetch_page(json_url)
         if isinstance(result, FetchFailed):
             self._handle_fetch_failure(sink, json_url, result)
-            return None
-        if result is NOT_MODIFIED:
-            # 304 Not Modified (content unchanged)
-            if self._is_root(json_url):
-                self._root_ok = True
-            if stored_etag:
-                # 304 response - content unchanged - touch the entries
-                logger.debug("content_unchanged_via_etag", url=url, json_url=json_url)
-                
-                # Reuse the stored file_path (skip expensive recalculation)
-                existing = hm.hashes.get(json_url) or hm.hashes.get(url) or {}
-                file_path = Path(existing['file_path']) if existing.get('file_path') else self._get_organized_file_path(sink, url, {})
-                
-                # Touch both URLs' entries, so orphan detection keeps the file,
-                # and record the file on both. Only a missing file_path or a
-                # missing key (created with the stored etag) changes an entry,
-                # so a 304 alone leaves the hash file as it is.
-                for key in (json_url, url):
-                    if key not in hm.hashes:
-                        hm.hashes[key] = {'etag': stored_etag}
-                    hm.touch(key)
-                    hm.set_file_path(key, file_path)
-                
-                self.stats["pages_skipped"] += 1
             return None
         
         response_text, etag = result
@@ -1793,16 +1706,14 @@ class AppleJSONDocumentationScraper(BaseAppleScraper):
         if not hm.has_changed(json_url, response_text, etag) and not hm.has_changed(url, response_text, etag):
             logger.debug("content_unchanged", url=url)
             
-            # Content unchanged, but both keys are still touched for orphan detection
-            try:
-                page_data = self._extract_from_json(sink, json_data, url, self._occ_view(json_data))
-                if page_data:
-                    file_path = self._get_organized_file_path(sink, url, page_data)
-                    # Touch both keys and record the new etag
-                    hm.update_hash(json_url, response_text, etag, file_path)
-                    hm.update_hash(url, response_text, etag, file_path)
-            except Exception as e:
-                logger.warning("failed_to_touch_unchanged_root", url=url, error=str(e))
+            # Content unchanged, but both keys are still touched for orphan
+            # detection. Reuse the stored file_path (the path is a function
+            # of the URL alone, computed only when none is stored); an entry
+            # that doesn't change leaves the hash file as it is.
+            stored_path = hm.hashes[json_url].get('file_path') or hm.hashes[url].get('file_path')
+            file_path = Path(stored_path) if stored_path else self._get_organized_file_path(sink, url, {})
+            hm.update_hash(json_url, response_text, etag, file_path)
+            hm.update_hash(url, response_text, etag, file_path)
             
             self.stats["pages_skipped"] += 1
             return None
@@ -1838,6 +1749,22 @@ class AppleJSONDocumentationScraper(BaseAppleScraper):
         self.stats["pages_scraped"] += 1
         return data
     
+    async def _fetch_page(self, json_url: str) -> Union[Tuple[str, Optional[str]], FetchFailed]:
+        """Fetch a page unconditionally (no If-None-Match): its body is read every run.
+
+        Its links come from the body, so a 304 would need a second request
+        to read them; has_changed decides whether the page is written. A
+        304 to this request, which asked for none, has no body: a transient
+        failure.
+
+        Returns:
+            (content, etag) on 200, or FetchFailed
+        """
+        result = await self.fetch_page_with_etag(json_url, use_etag=False)
+        if result is NOT_MODIFIED:
+            return FetchFailed(status=304, error="HTTP 304 without a conditional request", transient=True)
+        return result
+
     def _invalid_json_failure(self) -> FetchFailed:
         """A 200 whose body isn't JSON, as the transient failure it is treated as."""
         self.stats["pages_failed"] += 1
@@ -3350,11 +3277,11 @@ def apply_sink_failure_policy(
     - Failure storm (storm): more failures than max(5, 1% of the sink's
       pages) block but aren't counted, unless the storm lasts
       FAILURE_STORM_RUNS runs (the sink's metadata.failure_storm_runs).
-    - Resets. The D8 count is of failed runs in a row: a 200, a 304 whose
-      refetch succeeded, a 404/410 (a removal, not a failure) or a run that
-      never fetched the URL (no writer processed it this run) ends the
-      streak, so a stale count can't lift the never-good block on our first
-      new failure. A page processed without a local error resets that count.
+    - Resets. The D8 count is of failed runs in a row: a 200, a 404/410
+      (a removal, not a failure) or a run that never fetched the URL (no
+      writer processed it this run) ends the streak, so a stale count can't
+      lift the never-good block on our first new failure. A page processed
+      without a local error resets that count.
     - At PERSISTENT_FAILURE_RUNS a failure stops blocking and flags the run;
       a previously good page is then treated as removed (D8: both keys
       become error entries, so its file is orphaned and cleaned).
@@ -3434,8 +3361,7 @@ def apply_sink_failure_policy(
         if page_failure.kind == "previously_good":
             # D8: treat the page as removed. Both keys become error
             # entries (keeping the count), so its file and any subtree no
-            # longer reachable are orphaned and cleaned in this run. After
-            # a 304 the page is live and stays touched, so its file is kept.
+            # longer reachable are orphaned and cleaned in this run.
             hm.mark_error(url, page_failure.failure.error)
             hm.mark_error(doc_url_of(sink.site, url), page_failure.failure.error)
 
@@ -3461,7 +3387,7 @@ def store_render_version(sink: Sink, label: str) -> None:
     When it stores a new version, the entries this run didn't touch lose
     their hash and etag (forget_untouched_renderings): their files keep the
     old rendering, and such a page that comes back unchanged would else
-    answer 304 and never be rendered again.
+    match its stored etag or hash and never be rendered again.
     """
     hm = sink.hash_manager
     if hm.stale:
