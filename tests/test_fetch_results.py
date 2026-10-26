@@ -776,7 +776,7 @@ class TestProcessQueuedUrl:
         rig = make_rig({json_url(ALPHA): [ok(ALPHA_BODY, "E-A2")]})
         rig.seed_good(ALPHA, ALPHA_BODY, "E-A")
 
-        def boom(data: Dict[str, Any]) -> List[str]:
+        def boom(data: Dict[str, Any], occ_view: Optional[Dict[str, Any]] = None) -> List[str]:
             raise RuntimeError("parser bug")
 
         monkeypatch.setattr(rig.scraper, "_page_links", boom)

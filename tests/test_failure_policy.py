@@ -1131,12 +1131,17 @@ class TestLostEntries:
         assert would_delete(scraper) == {FW: [file_of(BETA)]}
 
 
+# The scraper's RENDER_VERSION, and the one a test bumps it to
+RENDER_OLD = AppleJSONDocumentationScraper.RENDER_VERSION
+RENDER_NEW = RENDER_OLD + 1
+
+
 class TestRenderVersion:
     """4.13: a framework rendered by another RENDER_VERSION is rendered again whole (every page
     fetched without its etag and written), and the new version is stored only after a clean run."""
 
     @staticmethod
-    def bump(monkeypatch: pytest.MonkeyPatch, version: int = 2) -> None:
+    def bump(monkeypatch: pytest.MonkeyPatch, version: int = RENDER_NEW) -> None:
         monkeypatch.setattr(AppleJSONDocumentationScraper, "RENDER_VERSION", version)
 
     @staticmethod
@@ -1158,7 +1163,7 @@ class TestRenderVersion:
             assert f"The {path} page." in file_of(path).read_text(encoding="utf-8"), path
         assert runs.logged("render_version_stale") and runs.logged("render_version_stored")
         saved = runs.saved()
-        assert saved["metadata"]["render"] == {"version": 2}
+        assert saved["metadata"]["render"] == {"version": RENDER_NEW}
         assert saved["hashes"] == hashes_before  # same JSON, same etags and files
         # The next run of the same version: every page answers 304, nothing is written
         hash_file = Config.get_hash_file(FW)
@@ -1187,7 +1192,7 @@ class TestRenderVersion:
         hash_file.write_text(json.dumps(data, indent=2, sort_keys=True))
         self.bump(monkeypatch)
         scraper = await runs.run(root_only)  # clean, 4 of 5 files unreached
-        assert self.stored() == {"version": 2}
+        assert self.stored() == {"version": RENDER_NEW}
         for path in unreached:
             entry = runs.entry(path)
             assert entry["hash"] == "" and "etag" not in entry and entry["file_path"] == str(file_of(path)), path
@@ -1217,17 +1222,17 @@ class TestRenderVersion:
         self.bump(monkeypatch)
         scraper = await runs.run(routes_for(SITE, {BETA: [status(502)]}))
         assert scraper.outcome.blocked
-        assert self.stored() == {"version": 1}
+        assert self.stored() == {"version": RENDER_OLD}
         # Still stale: the next (clean) run renders every page again and stores it
         scraper = await runs.run(routes_for(SITE))
-        assert scraper.stats["pages_skipped"] == 0 and self.stored() == {"version": 2}
+        assert scraper.stats["pages_skipped"] == 0 and self.stored() == {"version": RENDER_NEW}
 
     async def test_a_root_gone_run_stores_nothing(self, runs: Runs, monkeypatch: pytest.MonkeyPatch) -> None:
         await seeded(runs)
         self.bump(monkeypatch)
         scraper = await runs.run(routes_for(SITE, {ROOT: [status(404)]}))
         assert scraper.outcome.root_gone_runs == 1 and not scraper.outcome.blocked
-        assert self.stored() == {"version": 1}
+        assert self.stored() == {"version": RENDER_OLD}
 
     async def test_a_persistent_local_error_keeps_the_version_unstored(
         self, runs: Runs, monkeypatch: pytest.MonkeyPatch
@@ -1239,7 +1244,7 @@ class TestRenderVersion:
         for run in range(1, PERSISTENT_FAILURE_RUNS + 1):
             scraper = await runs.run(routes_for(SITE))
             assert scraper.outcome.blocked == (run < PERSISTENT_FAILURE_RUNS), run
-            assert self.stored() == {"version": 1}, run
+            assert self.stored() == {"version": RENDER_OLD}, run
         assert scraper.outcome.persistent_local_errors == [json_url(ALPHA)]
 
     async def test_a_filename_clash_doesnt_keep_the_framework_stale(
@@ -1251,7 +1256,7 @@ class TestRenderVersion:
         site: Site = {**SITE, ROOT: [*SITE[ROOT], clashing], clashing: []}
         scraper = await runs.run(routes_for(site))
         assert scraper.outcome.filename_clashes == [json_url(clashing)] and not scraper.outcome.skip_cleanup
-        assert self.stored() == {"version": 2}
+        assert self.stored() == {"version": RENDER_NEW}
 
     async def test_the_end_of_run_prune_keeps_the_stored_version(
         self, runs: Runs, monkeypatch: pytest.MonkeyPatch
@@ -1264,4 +1269,4 @@ class TestRenderVersion:
         report = runs.cleanup(scraper)
         assert report.failures == [] and report.pruned > 0
         assert not stray.exists() and not file_of(GAMMA).exists()
-        assert self.stored() == {"version": 1}
+        assert self.stored() == {"version": RENDER_OLD}

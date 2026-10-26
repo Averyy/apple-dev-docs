@@ -28,6 +28,12 @@ Item 2 (1.4): a protocol requirement's default implementations
 (defaultImplementationsSections) are crawled like its other links: its own
 framework's, a module's, and a same-bundle sibling's (a handoff), each
 removed by its sink's normal orphan cleanup once no longer listed.
+
+Item 3 (1.5, D1): the pages only a page's Objective-C/C variant curates (its
+occ variantOverrides) are crawled through its occ view, built once per page
+with the patched references and shared with its conversion, which lists them
+in their occ groups; an occ view that can't be built is a local error that
+still queues the links its operations list.
 """
 
 import asyncio
@@ -51,8 +57,9 @@ sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..',
 
 import scrape_all_frameworks
 from cleanup_orphans_at_end import MODULE_UNLINKED_RUNS, remove_framework
+from scraper import json_scraper
 from scraper.config import Config
-from scraper.json_scraper import AppleJSONDocumentationScraper, PageLink
+from scraper.json_scraper import AppleJSONDocumentationScraper, OccViewError, PageLink
 from scraper.sink import Sink, SinkRegistry
 from scraper.site import APPLE, DocCSite
 from scraper.utils.naming import DOC_URL_PREFIX, JSON_URL_PREFIX, page_path
@@ -163,7 +170,7 @@ class TestSink:
         assert scraper.output_dir == sink.output_dir == Config.OUTPUT_DIR / "TestKit"
         assert scraper.markdown_converter is sink.markdown_converter
         page = {"metadata": {"title": "A"}, "references": {}}
-        data = scraper._extract_from_json(sink, page, f"{APPLE.doc_prefix}testkit/a")
+        data = scraper._extract_from_json(sink, page, f"{APPLE.doc_prefix}testkit/a", None)
         assert (data["framework"], data["framework_id"]) == ("Test Kit", "TestKit")
         assert scraper._get_organized_file_path(sink, f"{APPLE.doc_prefix}testkit/a", {}) == sink.output_dir / "a.md"
 
@@ -271,11 +278,18 @@ Link = Tuple[str, str]
 Pages = Dict[str, Tuple[str, List[Link]]]
 
 
-def topic_page(path: str, bundle: str, links: Sequence[Link] = (), implementations: Sequence[Link] = ()) -> str:
+def topic_page(
+    path: str,
+    bundle: str,
+    links: Sequence[Link] = (),
+    implementations: Sequence[Link] = (),
+    occ: Optional[List[Dict[str, Any]]] = None,
+) -> str:
     """A page whose links resolve through their references (url /documentation/<path, lowercased>).
 
     implementations: a protocol requirement's default implementations
     (defaultImplementationsSections, 1.4), linked by no other section
+    occ: its Objective-C/C variant's patch (variantOverrides, 1.5)
     """
     identifiers = [f"doc://{link_bundle}/documentation/{link}" for link, link_bundle in links]
     implementation_ids = [f"doc://{link_bundle}/documentation/{link}" for link, link_bundle in implementations]
@@ -293,6 +307,8 @@ def topic_page(path: str, bundle: str, links: Sequence[Link] = (), implementatio
     if implementations:
         body["defaultImplementationsSections"] = [
             {"anchor": "Proto-Implementations", "title": "Proto Implementations", "identifiers": implementation_ids}]
+    if occ is not None:
+        body["variantOverrides"] = [{"traits": [{"interfaceLanguage": "occ"}], "patch": occ}]
     return json.dumps(body)
 
 
@@ -300,14 +316,16 @@ def d6_routes(
     pages: Pages,
     overrides: Optional[Dict[str, List[Spec]]] = None,
     implementations: Optional[Dict[str, List[Link]]] = None,
+    occ: Optional[Dict[str, List[Dict[str, Any]]]] = None,
 ) -> Dict[str, List[Spec]]:
     """Each page answers 200 with an etag of its body (304 on a match), unless overridden.
 
     implementations: a page's path -> its default implementations
+    occ: a page's path -> its Objective-C/C variant's patch
     """
     routes: Dict[str, List[Spec]] = {}
     for path, (bundle, links) in pages.items():
-        body = topic_page(path, bundle, links, (implementations or {}).get(path, ()))
+        body = topic_page(path, bundle, links, (implementations or {}).get(path, ()), (occ or {}).get(path))
         routes[json_url(path.lower())] = [ok(body, "E-" + hashlib.sha256(body.encode()).hexdigest()[:12])]
     for path, specs in (overrides or {}).items():
         routes[json_url(path.lower())] = specs
@@ -379,13 +397,15 @@ class D6Runs:
         concurrent: int = 20,
         delays: Optional[Dict[str, float]] = None,
         implementations: Optional[Dict[str, List[Link]]] = None,
+        occ: Optional[Dict[str, List[Dict[str, Any]]]] = None,
     ) -> int:
         """One run: technologies.json lists `listed`; --frameworks names, else --all.
 
         delays: a URL fragment -> seconds its response waits (a page in flight)
         implementations: a page's path -> its default implementations
+        occ: a page's path -> its Objective-C/C variant's patch
         """
-        apple = Apple(d6_routes(pages, overrides, implementations))
+        apple = Apple(d6_routes(pages, overrides, implementations, occ))
 
         async def handler(request: httpx.Request) -> httpx.Response:
             for fragment, seconds in (delays or {}).items():
@@ -831,6 +851,216 @@ class TestDefaultImplementations:
         # No longer listed, with both jobs clean: removed by the normal orphan cleanup
         assert await d6.scrape(pages, listed) == 0
         assert not handed_off.exists() and doc_file("Sibkit/a").exists()
+
+
+def occ_curation(
+    links: Sequence[Link], references: str = "per-key", broken: bool = False, title: str = "Functions"
+) -> List[Dict[str, Any]]:
+    """An occ variant's patch, as Apple's: its own curation (/topicSections, replaced
+    wholesale) and references, and operations on keys the view leaves out (1.5).
+
+    Each link's reference is titled "<name>Ref", the Objective-C/C name only the
+    occ variant has. references: how they reach it: per key (CGContext, Network)
+    or in a whole /references (IOKit's root); broken: an operation on a reference
+    that doesn't exist (the view can't be built)
+    """
+    identifiers = [f"doc://{bundle}/documentation/{path}" for path, bundle in links]
+    refs = {
+        identifier: {"type": "topic", "url": f"/documentation/{path.lower()}", "title": f"{path.split('/')[-1]}Ref",
+                     "identifier": identifier, "kind": "symbol", "role": "symbol"}
+        for identifier, (path, _) in zip(identifiers, links)
+    }
+    ops: List[Dict[str, Any]] = [
+        {"op": "replace", "path": "/identifier/interfaceLanguage", "value": "occ"},
+        # Keys the view leaves out: these would fail it
+        {"op": "replace", "path": "/hierarchy/paths/0", "value": []},
+        {"op": "replace", "path": "/variants/3/paths", "value": []},
+        {"op": "replace", "path": "/topicSections", "value": [{"title": title, "identifiers": identifiers}]},
+    ]
+    if references == "whole":
+        ops.append({"op": "replace", "path": "/references", "value": refs})
+    else:
+        ops.extend({"op": "add", "path": "/references/" + identifier.replace("~", "~0").replace("/", "~1"), "value": ref}
+                   for identifier, ref in refs.items())
+    if broken:
+        ops.append({"op": "replace", "path": "/references/doc:~1~1com.apple.umbrella~1documentation~1Gone/title",
+                    "value": "Gone"})
+    return ops
+
+
+# Umbrella/guide lists Umbrella/shared in both curations; only its Objective-C/C
+# curation lists Umbrella/CThing and its module's ModKit/CThing (1.5)
+OBJC: Pages = {
+    **UMBRELLA,
+    "Umbrella/guide": (A, [("Umbrella/shared", A)]),
+    "Umbrella/shared": (A, []),
+    "Umbrella/CThing": (A, []),
+    "ModKit/CThing": (A, []),
+}
+OBJC_LINKS: List[Link] = [("Umbrella/shared", A), ("Umbrella/CThing", A), ("ModKit/CThing", A)]
+OBJC_ONLY = {doc_file("Umbrella/CThing"), doc_file("ModKit/CThing")}
+OBJC_ID = "doc://com.apple.umbrella/documentation/Umbrella/CThing"
+
+
+class TestObjectiveCCuration:
+    """1.5 (D1): the pages only a page's Objective-C/C variant (occ) curates are crawled through
+    its occ view, built once per page; a view that can't be built is a local error that keeps them."""
+
+    def test_the_links_are_the_union_of_both_curations_through_the_patched_references(self, dirs: Path) -> None:
+        scraper = AppleJSONDocumentationScraper("Umbrella")
+        for references in ("per-key", "whole"):
+            page = json.loads(topic_page("Umbrella/guide", A, [("Umbrella/shared", A)],
+                                         occ=occ_curation(OBJC_LINKS, references)))
+            # Without the view: the Swift curation only
+            assert scraper._extract_urls_from_json_data(page) == [json_url("umbrella/shared")]
+            view = scraper._occ_view(page)
+            assert view is not None and view["references"] is not page["references"]
+            # The Swift links first, then the occ-only ones, each once; the page is never changed
+            links = scraper._page_links(page, view)
+            assert [link.json_url for link in links.links] == [
+                json_url("umbrella/shared"), json_url("umbrella/cthing"), json_url("modkit/cthing")]
+            assert page["topicSections"][0]["identifiers"] == ["doc://com.apple.umbrella/documentation/Umbrella/shared"]
+            assert "doc://com.apple.umbrella/documentation/Umbrella/CThing" not in page["references"]
+        # No occ operation on the view's keys: no view (its curation is the Swift one)
+        page = json.loads(topic_page("Umbrella/guide", A, [("Umbrella/shared", A)], occ=[
+            {"op": "replace", "path": "/metadata/title", "value": "guideRef"}]))
+        assert scraper._occ_view(page) is None
+        # A whole-document replace (76 pages, e.g. IOKit's root): its curation and references
+        whole = json.loads(topic_page("Umbrella/guide", A, [("Umbrella/CThing", A)]))
+        page = json.loads(topic_page("Umbrella/guide", A, [("Umbrella/shared", A)], occ=[
+            {"op": "replace", "path": "", "value": whole},
+            {"op": "replace", "path": "/metadata/missing/title", "value": "x"}]))
+        assert [link.json_url for link in scraper._page_links(page, scraper._occ_view(page)).links] == [
+            json_url("umbrella/shared"), json_url("umbrella/cthing")]
+
+    def test_a_view_that_cant_be_built_still_gives_the_links_its_operations_list(self, dirs: Path) -> None:
+        scraper = AppleJSONDocumentationScraper("Umbrella")
+        for references in ("per-key", "whole"):
+            page = json.loads(topic_page("Umbrella/guide", A, [("Umbrella/shared", A)],
+                                         occ=occ_curation(OBJC_LINKS, references, broken=True)))
+            with pytest.raises(OccViewError, match="^occ view: KeyError"):
+                scraper._occ_view(page)
+            # Read from the operations' values, resolved through the references their values update
+            links = scraper._page_links(page, scraper._occ_fallback(page))
+            assert [link.json_url for link in links.links] == [
+                json_url("umbrella/shared"), json_url("umbrella/cthing"), json_url("modkit/cthing")]
+            assert scraper.reference_fallbacks == 0
+        # A section's identifiers added one by one, a reference's url patched field by field
+        cthing = "doc://com.apple.umbrella/documentation/Umbrella/CThing"
+        page = json.loads(topic_page("Umbrella/guide", A, [("Umbrella/CThing", A)], occ=[
+            {"op": "add", "path": "/topicSections/0/identifiers/-", "value": "doc://com.apple.umbrella/documentation/X"},
+            {"op": "replace", "path": "/references/" + cthing.replace("/", "~1") + "/url",
+             "value": "/documentation/umbrella/cthing-objc"},
+            "not an operation",
+            {"op": "remove", "path": "/topicSections/1"},
+        ]))
+        with pytest.raises(OccViewError):
+            scraper._occ_view(page)
+        assert [link.json_url for link in scraper._page_links(page, scraper._occ_fallback(page)).links] == [
+            json_url("umbrella/cthing"), json_url("x")]
+        assert scraper._occ_fallback({"variantOverrides": "occ"}) == {
+            "topicSections": [{"identifiers": []}], "references": {}}
+
+    def test_the_occ_only_links_are_rendered_in_their_occ_groups(self, dirs: Path) -> None:
+        scraper = AppleJSONDocumentationScraper("Umbrella")
+        page = json.loads(topic_page("Umbrella/guide", A, [("Umbrella/shared", A)]))
+        page["topicSections"][0]["title"] = "Functions"
+        shared = "doc://com.apple.umbrella/documentation/Umbrella/shared"
+        page["relationshipsSections"] = [{"title": "Conforms To", "type": "conformsTo", "identifiers": [shared]}]
+        occ = occ_curation(OBJC_LINKS)
+        macro = "doc://com.apple.umbrella/documentation/Umbrella/MACRO"
+        occ[3]["value"].append({"title": "Macros", "identifiers": [macro, shared]})
+        occ.append({"op": "add", "path": "/references/" + macro.replace("/", "~1"), "value": {
+            "type": "topic", "url": "/documentation/umbrella/macro", "title": "MACRO", "kind": "symbol",
+            "role": "symbol", "abstract": [{"type": "text", "text": "A macro."}]}})
+        occ.append({"op": "replace", "path": "/relationshipsSections", "value": [
+            {"title": "Conforms To", "type": "conformsTo", "identifiers": [shared, macro]},
+            {"title": "Inherits From", "type": "inheritsFrom", "identifiers": [macro, OBJC_ID]}]})
+        page["variantOverrides"] = [{"traits": [{"interfaceLanguage": "occ"}], "patch": occ}]
+        data = scraper._extract_from_json(scraper.sink, page, doc_url("umbrella/guide"), scraper._occ_view(page))
+        # Swift's group first; the occ-only links join the group of the same title, the others follow
+        assert [(group["title"], [item["name"] for item in group["items"]]) for group in data["topics"]] == [
+            ("Functions", ["shared", "CThingRef", "CThingRef"]), ("Macros", ["MACRO"])]
+        assert data["topics"][1]["items"][0]["description"] == "A macro."
+        assert [(group["title"], [item["name"] for item in group["items"]]) for group in data["relationships"]] == [
+            ("Conforms To", ["shared", "MACRO"]), ("Inherits From", ["CThingRef"])]
+        assert data["see_also"] == [] and data["default_implementations"] == []
+        # Without its view, the page shows its Swift curation only
+        data = scraper._extract_from_json(scraper.sink, page, doc_url("umbrella/guide"), None)
+        assert [len(group["items"]) for group in data["topics"]] == [1]
+
+    async def test_objc_only_pages_are_added_rendered_and_removed_with_the_curation(
+        self, d6: D6Runs, monkeypatch: pytest.MonkeyPatch
+    ) -> None:
+        patched: List[Any] = []
+        real = json_scraper.apply_json_patch
+
+        def counted(document: Any, patch: List[Dict[str, Any]]) -> Any:
+            patched.append(document)
+            return real(document, patch)
+
+        monkeypatch.setattr(json_scraper, "apply_json_patch", counted)
+        occ = {"Umbrella/guide": occ_curation(OBJC_LINKS)}
+        assert await d6.scrape(OBJC, ["Umbrella"], occ=occ) == 0
+        assert docs() == {doc_file(path) for path in OBJC}
+        assert "**Framework**: ModKit" in doc_file("ModKit/CThing").read_text()
+        # The guide's one fetch built its occ view once, for its links and its file
+        assert len(patched) == 1
+        guide = doc_file("Umbrella/guide").read_text()
+        topics = guide.split("## Topics", 1)[1]
+        assert topics.count("(./shared.md)") == 1 and topics.index("### Topics") < topics.index("### Functions")
+        assert "- [CThingRef](./cthing.md)" in topics
+        assert d6.logged("page_save_failed") == []
+        before = sandbox_bytes()
+        assert await d6.scrape(OBJC, ["Umbrella"], occ=occ) == 0
+        assert sandbox_bytes() == before
+        # Apple drops the Objective-C/C curation: its pages leave through the normal orphan cleanup
+        assert await d6.scrape(OBJC, ["Umbrella"]) == 0
+        assert docs() == {doc_file(path) for path in OBJC} - OBJC_ONLY
+        assert "CThing" not in doc_file("Umbrella/guide").read_text()
+
+    async def test_a_view_that_cant_be_built_keeps_its_objc_pages_through_3_runs(self, d6: D6Runs) -> None:
+        """A local error: it blocks 2 runs, then flags the 3rd, whose cleanup runs; the
+        pages only its occ variant links are kept every run. A later clean 304 resets its count."""
+        assert await d6.scrape(OBJC, ["Umbrella"], occ={"Umbrella/guide": occ_curation(OBJC_LINKS)}) == 0
+        stray = Path("documentation/Umbrella/stray.md")
+        stray.write_text("# stray\n")
+        broken = {"Umbrella/guide": occ_curation(OBJC_LINKS, broken=True)}
+        guide = json_url("umbrella/guide")
+        etag = json.loads(Config.get_hash_file("Umbrella").read_text())["hashes"][guide]["etag"]
+        for run in (1, 2, 3):
+            assert await d6.scrape(OBJC, ["Umbrella"], occ=broken) == 1
+            assert [e["url"] for e in d6.logged("page_save_failed")] == [guide]
+            assert d6.logged("error_processing_url") == []
+            entry = json.loads(Config.get_hash_file("Umbrella").read_text())["hashes"][guide]
+            assert entry["consecutive_local_errors"] == run and entry["etag"] == etag
+            assert docs() >= OBJC_ONLY
+            # Blocked twice; the 3rd run's cleanup runs
+            assert stray.exists() == (run < 3)
+        assert [e["url"] for e in d6.logged("persistent_local_error")] == [guide]
+        # Apple's variant is fine again (the page as stored: a 304)
+        assert await d6.scrape(OBJC, ["Umbrella"], occ={"Umbrella/guide": occ_curation(OBJC_LINKS)}) == 0
+        entry = json.loads(Config.get_hash_file("Umbrella").read_text())["hashes"][guide]
+        assert "consecutive_local_errors" not in entry and entry["etag"] == etag
+        assert docs() == {doc_file(path) for path in OBJC}
+
+    async def test_a_stored_page_whose_view_cant_be_built_is_a_local_error_after_its_304(
+        self, d6: D6Runs, monkeypatch: pytest.MonkeyPatch
+    ) -> None:
+        """Saved before 1.5, unchanged since: its 304's discovery refetch reads the links."""
+        broken = {"Umbrella/guide": occ_curation(OBJC_LINKS, broken=True)}
+        with monkeypatch.context() as before_d1:
+            before_d1.setattr(AppleJSONDocumentationScraper, "_occ_view", lambda self, data: None)
+            assert await d6.scrape(OBJC, ["Umbrella"], occ=broken) == 0
+        assert not docs() & OBJC_ONLY
+        guide = json_url("umbrella/guide")
+        for run in (1, 2, 3):
+            assert await d6.scrape(OBJC, ["Umbrella"], occ=broken) == 1
+            assert d6.requests.count(guide) == 2  # its 304, then the discovery refetch
+            assert d6.logged("error_processing_url") == []
+            entry = json.loads(Config.get_hash_file("Umbrella").read_text())["hashes"][guide]
+            assert entry["consecutive_local_errors"] == run
+            assert docs() == {doc_file(path) for path in OBJC}
 
 
 class TestNamespaceCollision:

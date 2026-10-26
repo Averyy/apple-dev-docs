@@ -13,7 +13,7 @@ import pytest
 
 from scraper.config import Config
 from scraper.json_scraper import (
-    KNOWN_BLOCK_TYPES, KNOWN_INLINE_TYPES, AppleJSONDocumentationScraper, apply_json_patch)
+    KNOWN_BLOCK_TYPES, KNOWN_INLINE_TYPES, AppleJSONDocumentationScraper, OccViewError, apply_json_patch)
 from scraper.utils import assets
 from scraper.utils.markdown_converter import join_blocks, labeled, quote_blocks
 
@@ -56,7 +56,8 @@ def page(sections: Optional[List[Dict[str, Any]]] = None, **top: Any) -> Dict[st
 
 
 def render(scraper: AppleJSONDocumentationScraper, json_page: Dict[str, Any], url: str = URL) -> str:
-    return scraper.markdown_converter.convert_page(scraper._extract_from_json(scraper.sink, json_page, url))
+    data = scraper._extract_from_json(scraper.sink, json_page, url, scraper._occ_view(json_page))
+    return scraper.markdown_converter.convert_page(data)
 
 
 def content(*blocks: Dict[str, Any]) -> Dict[str, Any]:
@@ -209,6 +210,7 @@ class TestDeclarations:
         json_page = page([{"kind": "declarations", "declarations": [declaration("func read()")]}],
                          variantOverrides=[{"traits": [{"interfaceLanguage": "occ"}],
                                             "patch": [{"op": "replace", "path": "/references/x/title", "value": "y"}]}])
+        json_page["references"] = {"x": {"title": "x"}}
         md = render(scraper, json_page)
         assert md.count("```") == 2
 
@@ -216,24 +218,32 @@ class TestDeclarations:
         # A patch path that doesn't exist
         {"traits": [{"interfaceLanguage": "occ"}],
          "patch": [{"op": "replace", "path": "/primaryContentSections/5", "value": {}}]},
-        # A patched declaration whose token has no text
-        {"traits": [{"interfaceLanguage": "occ"}],
-         "patch": [{"op": "replace", "path": "/primaryContentSections/0", "value": {
-             "kind": "declarations", "declarations": [
-                 {"languages": ["occ"], "platforms": ["iOS"], "tokens": [{"kind": "text", "text": None}]}]}}]},
         # An operation without a path, an override that isn't one
         {"traits": [{"interfaceLanguage": "occ"}], "patch": [{"op": "replace", "path": None, "value": {}}]},
         "occ",
     ])
-    def test_failed_occ_patch_renders_swift_only(
-        self, scraper: AppleJSONDocumentationScraper, monkeypatch: pytest.MonkeyPatch, override: Any
+    def test_an_occ_view_that_cant_be_built_is_our_error(
+        self, scraper: AppleJSONDocumentationScraper, override: Any
     ) -> None:
-        warnings = warnings_of(monkeypatch)
+        """Never a Swift-only fallback: the scrape records it as a local error (1.5, tests/test_sink.py)."""
         json_page = page([{"kind": "declarations", "declarations": [declaration("func read()")]}],
                          variantOverrides=[override])
+        with pytest.raises(OccViewError, match="^occ view: "):
+            scraper._occ_view(json_page)
+
+    def test_an_occ_declaration_that_cant_be_formatted_renders_swift_only(
+        self, scraper: AppleJSONDocumentationScraper, monkeypatch: pytest.MonkeyPatch
+    ) -> None:
+        warnings = warnings_of(monkeypatch)
+        # A patched declaration whose token has no text
+        json_page = page([{"kind": "declarations", "declarations": [declaration("func read()")]}], variantOverrides=[{
+            "traits": [{"interfaceLanguage": "occ"}],
+            "patch": [{"op": "replace", "path": "/primaryContentSections/0", "value": {
+                "kind": "declarations", "declarations": [
+                    {"languages": ["occ"], "platforms": ["iOS"], "tokens": [{"kind": "text", "text": None}]}]}}]}])
         md = render(scraper, json_page)
         assert "## Declaration\n\n```swift\nfunc read()\n```\n\n" in md and md.count("```") == 2
-        assert [(w["event"], w["url"]) for w in warnings] == [("occ_variant_patch_failed", URL)]
+        assert [(w["event"], w["url"]) for w in warnings] == [("occ_declarations_failed", URL)]
 
     def test_occ_override_with_null_traits_or_patch_is_no_variant(
         self, scraper: AppleJSONDocumentationScraper, monkeypatch: pytest.MonkeyPatch

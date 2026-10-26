@@ -181,14 +181,24 @@ class PageFetchFailure:
     failure: FetchFailed
 
 
-# The sections whose identifiers a page links its child pages through. A
-# protocol requirement's defaultImplementationsSections list its default
-# implementations, which no other section links (1.4); those in another
-# top-level technology of the bundle are handed off to its sink (_route)
-LINK_SECTIONS: Final = (
+# The sections a page curates its child pages in. A protocol requirement's
+# defaultImplementationsSections list its default implementations, which no
+# other section links (1.4); those in another top-level technology of the
+# bundle are handed off to its sink (_route)
+CURATION_SECTIONS: Final = (
     'topicSections', 'relationshipsSections', 'seeAlsoSections', 'defaultImplementationsSections',
-    'diffAvailability', 'variants',
 )
+# The sections whose identifiers a page links its child pages through
+LINK_SECTIONS: Final = (*CURATION_SECTIONS, 'diffAvailability', 'variants')
+# What a page's occ view holds (_occ_view, 1.5): its Objective-C/C curation,
+# the references its links resolve through, and its declarations. The occ
+# variant's operations on any other key (metadata, hierarchy, variants…) are
+# never applied, so they can't fail the view
+OCC_VIEW_KEYS: Final = (*CURATION_SECTIONS, 'references', 'primaryContentSections')
+
+
+class OccViewError(Exception):
+    """A page's occ view can't be built (_occ_view): a local error of ours, never a Swift-only fallback."""
 
 
 @dataclass(frozen=True)
@@ -374,8 +384,9 @@ class AppleJSONDocumentationScraper(BaseAppleScraper):
     # The converter's output version (BaseAppleScraper.RENDER_VERSION): bump
     # it when a change to the conversion, the file names or the links changes
     # the files of pages whose JSON didn't change, so every framework is
-    # rendered again on its next clean run
-    RENDER_VERSION = 1
+    # rendered again on its next clean run. 2: pages list the Objective-C
+    # links of their occ variant (1.5), and link the D6 module dirs locally
+    RENDER_VERSION = 2
     
     def __init__(self, framework_id: str, framework_name: Optional[str] = None, 
                  include_cross_refs: bool = False, sinks: Optional[SinkRegistry] = None) -> None:
@@ -846,9 +857,14 @@ class AppleJSONDocumentationScraper(BaseAppleScraper):
                             discovery_result = self._invalid_json_failure()
                         else:
                             # Extract URLs for discovery
-                            count = self._discover_links(sink, json_url, data, url_queue)
-                            logger.debug("rediscovered_child_urls", parent=json_url, count=count)
+                            _, occ_error = self._discover_links(sink, json_url, data, url_queue)
                             sink.fetch_ok.add(json_url)
+                            if occ_error is not None:
+                                # Its links are queued; its occ view failed (ours)
+                                self._handle_local_error(sink, json_url, occ_error)
+                            else:
+                                # Read without a local error: its count of them ends
+                                sink.saved_ok.add(json_url)
                     if isinstance(discovery_result, FetchFailed):
                         # The 304 proved the page live; only its links are missing
                         self._handle_fetch_failure(sink, json_url, discovery_result, after_304=True)
@@ -870,7 +886,12 @@ class AppleJSONDocumentationScraper(BaseAppleScraper):
 
             # Links first: enqueue the children before, and independently of,
             # the save, so a convert or save error can never orphan them
-            self._discover_links(sink, json_url, data, url_queue)
+            occ_view, occ_error = self._discover_links(sink, json_url, data, url_queue)
+            if occ_error is not None:
+                # A local error, as a convert error: its links (the occ
+                # variant's read from its operations) are queued, its save skipped
+                self._handle_local_error(sink, json_url, occ_error)
+                return
 
             # Process and save this page
             doc_url = self._convert_json_url_to_doc_url(json_url)
@@ -882,7 +903,7 @@ class AppleJSONDocumentationScraper(BaseAppleScraper):
                 # Check if we need to process based on content hash
                 if hm.has_changed(json_url, response_text, etag):
                     # Extract and save page data
-                    page_data = self._extract_from_json(sink, data, doc_url)
+                    page_data = self._extract_from_json(sink, data, doc_url, occ_view)
                     if page_data:
                         # Calculate file path for hash updates
                         file_path = self._get_organized_file_path(sink, doc_url, page_data)
@@ -906,7 +927,7 @@ class AppleJSONDocumentationScraper(BaseAppleScraper):
                         hm.update_hash(json_url, response_text, etag, file_path)
                         hm.update_hash(doc_url, response_text, etag, file_path)
                     else:
-                        page_data = self._extract_from_json(sink, data, doc_url)
+                        page_data = self._extract_from_json(sink, data, doc_url, occ_view)
                         file_path = self._get_organized_file_path(sink, doc_url, page_data)
                         await self._save_and_record(
                             sink, json_url, doc_url, page_data, file_path, response_text, etag
@@ -935,21 +956,36 @@ class AppleJSONDocumentationScraper(BaseAppleScraper):
             self.outcome.block("exception", json_url)
             sink.raised.add(json_url)
 
-    def _discover_links(self, sink: Sink, json_url: str, data: Dict[str, Any], url_queue: Deque[str]) -> int:
+    def _discover_links(
+        self, sink: Sink, json_url: str, data: Dict[str, Any], url_queue: Deque[str]
+    ) -> Tuple[Optional[Dict[str, Any]], Optional[OccViewError]]:
         """Read a fetched page's links: kept for the run if another job may need
         them (Sink.stores_links), queued if the job follows them (_follows).
 
+        Its links are those of its Swift curation and of its occ variant's
+        (_occ_view, built here once for the page, and passed on to its
+        conversion). An occ view that can't be built is a local error of
+        ours, which the caller records (_handle_local_error); the page still
+        links what its occ variant's operations list (_occ_fallback), so a
+        run that no longer blocks on it (PERSISTENT_FAILURE_RUNS) never
+        orphans its Objective-C-only pages.
+
         Returns:
-            How many links were queued
+            (the page's occ view, None if it has none; the error, if it can't be built)
         """
-        page_links = self._page_links(data)
+        occ_error: Optional[OccViewError] = None
+        try:
+            occ_view = self._occ_view(data)
+        except OccViewError as e:
+            occ_view, occ_error = None, e
+        page_links = self._page_links(data, occ_view if occ_error is None else self._occ_fallback(data))
         if sink.stores_links(self.job_id):
             sink.links[json_url] = page_links
-        if not self._follows(sink):
-            return 0
-        urls = self._in_scope(page_links)
-        self._enqueue(urls, url_queue)
-        return len(urls)
+        if self._follows(sink):
+            urls = self._in_scope(page_links)
+            self._enqueue(urls, url_queue)
+            logger.debug("discovered_child_urls", parent=json_url, count=len(urls))
+        return occ_view, occ_error
 
     def _enqueue(self, urls: List[str], url_queue: Deque[str]) -> None:
         """Queue the URLs this job hasn't queued yet; each sink deduplicates at pop time.
@@ -1351,33 +1387,52 @@ class AppleJSONDocumentationScraper(BaseAppleScraper):
             return ''
         return identifier[len('doc://'):].split('/', 1)[0].lower()
 
-    def _page_links(self, data: Dict[str, Any]) -> PageLinks:
-        """A page's links to documentation pages, resolved (_resolve), and its own bundle."""
+    def _page_links(self, data: Dict[str, Any], occ_view: Optional[Dict[str, Any]] = None) -> PageLinks:
+        """A page's links to documentation pages, resolved (_resolve), and its own bundle.
+
+        The union of its Swift curation's links and its occ view's (1.5):
+        the links only the occ variant lists come after the page's own, each
+        resolved through the occ view's (patched) references.
+        """
         identifier = data.get('identifier')
         page_identifier = identifier.get('url', '') if isinstance(identifier, dict) else ''
-        references = data.get('references')
+        links: List[PageLink] = []
+        seen: Set[str] = set()
+        self._section_links(data, links, seen)
+        if occ_view is not None:
+            self._section_links(occ_view, links, seen)
+        return PageLinks(bundle=self._bundle_of(page_identifier if isinstance(page_identifier, str) else ''),
+                         links=tuple(links))
+
+    def _section_links(self, document: Dict[str, Any], links: List[PageLink], seen: Set[str]) -> None:
+        """Add a page view's links (its LINK_SECTIONS' identifiers, resolved through
+        its references) that the identifiers in seen and the links already found don't give."""
+        references = document.get('references')
         if not isinstance(references, dict):
             references = {}
-        links: List[PageLink] = []
+        found = {link.json_url for link in links}
 
         # Extract related documentation from various sections
         for section_name in LINK_SECTIONS:
-            if section_name in data and isinstance(data[section_name], list):
-                logger.debug(f"Extracting URLs from {section_name} with {len(data[section_name])} items")
-                
-                for section in data[section_name]:
+            if section_name in document and isinstance(document[section_name], list):
+                logger.debug(f"Extracting URLs from {section_name} with {len(document[section_name])} items")
+
+                for section in document[section_name]:
                     if isinstance(section, dict) and 'identifiers' in section:
-                        identifiers = section.get('identifiers', [])
+                        identifiers = section.get('identifiers') or []
                         section_title = section.get('title', 'Unknown')
                         logger.info(f"Found section '{section_title}' with {len(identifiers)} identifiers")
-                        
+
                         for link_identifier in identifiers:
-                            if isinstance(link_identifier, str) and link_identifier.startswith('doc://'):
-                                link = self._resolve(link_identifier, references)
-                                if link is not None:
-                                    links.append(link)
-        return PageLinks(bundle=self._bundle_of(page_identifier if isinstance(page_identifier, str) else ''),
-                         links=tuple(links))
+                            if not (isinstance(link_identifier, str) and link_identifier.startswith('doc://')):
+                                continue
+                            if link_identifier in seen:
+                                continue
+                            seen.add(link_identifier)
+                            link = self._resolve(link_identifier, references)
+                            if link is not None and link.json_url not in found:
+                                found.add(link.json_url)
+                                links.append(link)
 
     def _resolve(self, identifier: str, references: Dict[str, Any]) -> Optional[PageLink]:
         """The page a doc:// identifier links to, through its reference (1.1).
@@ -1581,7 +1636,7 @@ class AppleJSONDocumentationScraper(BaseAppleScraper):
             
             # Content unchanged, but both keys are still touched for orphan detection
             try:
-                page_data = self._extract_from_json(sink, json_data, url)
+                page_data = self._extract_from_json(sink, json_data, url, self._occ_view(json_data))
                 if page_data:
                     file_path = self._get_organized_file_path(sink, url, page_data)
                     # Touch both keys and record the new etag
@@ -1603,7 +1658,7 @@ class AppleJSONDocumentationScraper(BaseAppleScraper):
         # try counts as a local error: the root's links are enqueued when it
         # is processed again as the first queued URL.
         try:
-            data = self._extract_from_json(sink, json_data, url)
+            data = self._extract_from_json(sink, json_data, url, self._occ_view(json_data))
             
             if not data:
                 logger.warning("no_data_extracted", url=url)
@@ -1629,13 +1684,18 @@ class AppleJSONDocumentationScraper(BaseAppleScraper):
         self.stats["pages_failed"] += 1
         return FetchFailed(status=200, error=INVALID_JSON, transient=True)
     
-    def _extract_from_json(self, sink: Sink, json_data: Dict[str, Any], doc_url: str) -> Dict[str, Any]:
+    def _extract_from_json(
+        self, sink: Sink, json_data: Dict[str, Any], doc_url: str, occ_view: Optional[Dict[str, Any]]
+    ) -> Dict[str, Any]:
         """Extract structured data from Apple's JSON format.
         
         Args:
             sink: The page's sink (its framework, and the dir its links are relative to)
             json_data: Parsed JSON data
             doc_url: Original documentation URL
+            occ_view: The page's occ view (_occ_view, built once for the
+                page): its Objective-C/C declarations, and the links only its
+                Objective-C/C curation lists
             
         Returns:
             Extracted data in our format
@@ -1743,7 +1803,7 @@ class AppleJSONDocumentationScraper(BaseAppleScraper):
         # Extract declarations: one fence each, Swift first, then the
         # Objective-C/C variant; a symbol's other overloads after them
         primary_content = json_data.get('primaryContentSections', [])
-        data['declaration'], data['other_declarations'] = self._extract_declarations(json_data, primary_content)
+        data['declaration'], data['other_declarations'] = self._extract_declarations(primary_content, occ_view)
 
         # The constraints a symbol is available under ("Available when …")
         conformance = metadata.get('conformance')
@@ -1774,36 +1834,21 @@ class AppleJSONDocumentationScraper(BaseAppleScraper):
         
         data['parameters'] = parameters
         
-        # Extract topics with complete signatures and descriptions from references
-        data['topics'] = self._topic_groups(json_data.get('topicSections', []), references)
+        # Extract topics with complete signatures and descriptions from
+        # references; each curation section with the links only its
+        # Objective-C/C variant lists (_curation_groups)
+        data['topics'] = self._curation_groups('topicSections', json_data, occ_view, self._topic_groups)
 
         # The default implementations of a protocol requirement
-        data['default_implementations'] = self._topic_groups(
-            json_data.get('defaultImplementationsSections') or [], references)
+        data['default_implementations'] = self._curation_groups(
+            'defaultImplementationsSections', json_data, occ_view, self._topic_groups)
 
         # Extract see also, by group, with complete signatures
-        data['see_also'] = self._topic_groups(json_data.get('seeAlsoSections', []), references)
+        data['see_also'] = self._curation_groups('seeAlsoSections', json_data, occ_view, self._topic_groups)
 
         # Extract relationships (Inherited By, Conforming Types, etc.)
-        relationships = []
-        for section in json_data.get('relationshipsSections', []):
-            relationship = {
-                'title': section.get('title', ''),
-                'type': section.get('type', ''),
-                'items': []
-            }
-            for identifier in section.get('identifiers', []):
-                if identifier in references:
-                    ref_data = references[identifier]
-                    name = ref_data.get('title', identifier.split('/')[-1])
-                    relationship['items'].append({
-                        'name': name,
-                        'url': self._reference_url(ref_data.get('url', ''))
-                    })
-            if relationship['items']:
-                relationships.append(relationship)
-
-        data['relationships'] = relationships
+        data['relationships'] = self._curation_groups(
+            'relationshipsSections', json_data, occ_view, self._relationship_groups)
 
         # Extract mentions (related documentation links)
         mentions = []
@@ -1949,16 +1994,93 @@ class AppleJSONDocumentationScraper(BaseAppleScraper):
                 groups.append(group)
         return groups
 
+    def _relationship_groups(self, sections: List[Dict[str, Any]], references: Dict[str, Any]) -> List[Dict[str, Any]]:
+        """Relationship sections (Inherits From, Conforming Types, …): per group its
+        title, type and items, each with its name and URL (identifiers with a reference only)."""
+        relationships = []
+        for section in sections:
+            relationship: Dict[str, Any] = {
+                'title': section.get('title', ''),
+                'type': section.get('type', ''),
+                'items': []
+            }
+            for identifier in section.get('identifiers', []):
+                if identifier in references:
+                    ref_data = references[identifier]
+                    name = ref_data.get('title', identifier.split('/')[-1])
+                    relationship['items'].append({
+                        'name': name,
+                        'url': self._reference_url(ref_data.get('url', ''))
+                    })
+            if relationship['items']:
+                relationships.append(relationship)
+        return relationships
+
+    def _curation_groups(
+        self,
+        key: str,
+        json_data: Dict[str, Any],
+        occ_view: Optional[Dict[str, Any]],
+        groups_of: Callable[[List[Dict[str, Any]], Dict[str, Any]], List[Dict[str, Any]]],
+    ) -> List[Dict[str, Any]]:
+        """A curation section's groups (groups_of: _topic_groups or _relationship_groups).
+
+        The page's own, then the links only its Objective-C/C curation lists
+        (1.5): the occ view's identifiers in that section that the page's own
+        section doesn't list, in their occ groups, each built with the occ
+        view's (patched) references. An occ group whose title one of the
+        page's groups has adds its items to that group; any other comes after
+        the page's groups, in occ order.
+        """
+        sections = json_data.get(key) or []
+        groups = groups_of(sections, json_data.get('references', {}))
+        occ_sections = self._occ_only_sections(sections, occ_view.get(key) if occ_view is not None else None)
+        if not occ_sections:
+            return groups
+        occ_references = occ_view.get('references') if occ_view is not None else None
+        by_title = {group['title']: group for group in groups}
+        for group in groups_of(occ_sections, occ_references if isinstance(occ_references, dict) else {}):
+            same = by_title.get(group['title'])
+            if same is None:
+                by_title[group['title']] = group
+                groups.append(group)
+            else:
+                same['items'].extend(group['items'])
+        return groups
+
+    @staticmethod
+    def _occ_only_sections(sections: List[Dict[str, Any]], occ_sections: Any) -> List[Dict[str, Any]]:
+        """The occ view's sections, each with only the identifiers the page's own
+        sections don't list (each once); sections left with none are dropped."""
+        if not isinstance(occ_sections, list):
+            return []
+        listed = {
+            identifier for section in sections if isinstance(section, dict)
+            for identifier in section.get('identifiers') or [] if isinstance(identifier, str)
+        }
+        found = []
+        for section in occ_sections:
+            if not isinstance(section, dict):
+                continue
+            identifiers = []
+            for identifier in section.get('identifiers') or []:
+                if isinstance(identifier, str) and identifier not in listed:
+                    listed.add(identifier)
+                    identifiers.append(identifier)
+            if identifiers:
+                found.append({**section, 'identifiers': identifiers})
+        return found
+
     def _extract_declarations(
-        self, json_data: Dict[str, Any], primary_content: List[Dict[str, Any]]
+        self, primary_content: List[Dict[str, Any]], occ_view: Optional[Dict[str, Any]]
     ) -> Tuple[List[Dict[str, Any]], List[Dict[str, Any]]]:
         """The page's declarations, one fence each, and its other overloads.
 
         Each declaration's language is in its languages: swift, occ (the
         Objective-C/C variant, fenced page-wide as objc, cpp or c), data (no
         tag). Swift comes first, then the page's own declarations in other
-        languages, then the occ variant's: its declarations from the occ
-        variantOverrides patch that the page doesn't show already. When one
+        languages, then the occ variant's: its declarations in the occ view
+        (_occ_declarations) that the page doesn't show already. When one
         language has several declarations on different platforms, each is
         labeled with them (*DriverKit*).
 
@@ -1971,7 +2093,7 @@ class AppleJSONDocumentationScraper(BaseAppleScraper):
             for section in primary_content if section.get('kind') == 'declarations'
             for dec in section.get('declarations', [])
         ]
-        for declaration in declarations + self._occ_declarations(json_data):
+        for declaration in declarations + self._occ_declarations(occ_view):
             if declaration and not any(item['code'] == declaration['code'] for item in found):
                 found.append(declaration)
         found.sort(key=lambda item: DECLARATION_ORDER.get(item['language'], 1))
@@ -2017,38 +2139,135 @@ class AppleJSONDocumentationScraper(BaseAppleScraper):
             'others': [other for other in others if other],
         }
 
-    def _occ_declarations(self, json_data: Dict[str, Any]) -> List[Optional[Dict[str, Any]]]:
-        """The Objective-C/C declarations of the page's occ variant
-        (_declaration_item): its variantOverrides patches for
-        interfaceLanguage occ applied to a copy of the page (only their
-        operations on primaryContentSections, the only part read), and of its
-        declarations sections only the declarations whose languages contain
-        occ. The variant is optional: when its data can't be read, patched or
-        formatted, an occ_variant_patch_failed WARN and none (the page shows
-        its own declarations)."""
+    @staticmethod
+    def _occ_operations(json_data: Dict[str, Any]) -> List[Any]:
+        """The operations of the page's variantOverrides for interfaceLanguage
+        occ (its Objective-C/C variant), in order. Raises on malformed data."""
+        return [
+            operation
+            for override in json_data.get('variantOverrides') or []
+            if any(isinstance(trait, dict) and trait.get('interfaceLanguage') == 'occ'
+                   for trait in override.get('traits') or [])
+            for operation in override.get('patch') or []
+        ]
+
+    @staticmethod
+    def _occ_path_key(path: str) -> str:
+        """The top-level key an operation's JSON pointer is on ("" for the whole document)."""
+        if path == '':
+            return ''
+        if not path.startswith('/'):
+            raise ValueError(f"patch path {path!r} isn't a JSON pointer")
+        return path[1:].split('/', 1)[0].replace('~1', '/').replace('~0', '~')
+
+    def _occ_view(self, json_data: Dict[str, Any]) -> Optional[Dict[str, Any]]:
+        """The page's occ view (1.5): its Objective-C/C variant's curation, references and declarations.
+
+        Its occ operations on the whole document ("") and on OCC_VIEW_KEYS,
+        applied in order to a copy of those keys of the page
+        (apply_json_patch, which never changes json_data); its operations on
+        any other key are left out. Built once per fetched page, for its
+        links (_page_links) and its conversion (_extract_from_json).
+
+        Returns:
+            The view, or None if the page has no occ operation on these keys
+            (its Objective-C/C curation is its Swift one)
+
+        Raises:
+            OccViewError: The view can't be built (malformed variant data, a
+                path that doesn't exist): a local error of ours
+        """
         try:
-            operations = [
-                operation
-                for override in json_data.get('variantOverrides') or []
-                if any(isinstance(trait, dict) and trait.get('interfaceLanguage') == 'occ'
-                       for trait in override.get('traits') or [])
-                for operation in override.get('patch') or []
-                if operation.get('path', '') in ('', '/primaryContentSections')
-                or operation.get('path', '').startswith('/primaryContentSections/')
-            ]
+            operations = []
+            for operation in self._occ_operations(json_data):
+                path = operation.get('path', '')
+                if not isinstance(path, str):
+                    raise TypeError(f"patch path {path!r} isn't a string")
+                if self._occ_path_key(path) in ('', *OCC_VIEW_KEYS):
+                    operations.append(operation)
             if not operations:
-                return []
-            patched = apply_json_patch(
-                {'primaryContentSections': json_data.get('primaryContentSections', [])}, operations)
-            sections = patched.get('primaryContentSections') if isinstance(patched, dict) else None
+                return None
+            view = apply_json_patch({key: json_data[key] for key in OCC_VIEW_KEYS if key in json_data}, operations)
+            if not isinstance(view, dict):
+                raise TypeError(f"the occ variant is a {type(view).__name__}")
+            return view
+        except Exception as e:  # malformed variant data: any error, ours to fix
+            raise OccViewError(f"occ view: {type(e).__name__}: {e}") from e
+
+    def _occ_fallback(self, json_data: Dict[str, Any]) -> Dict[str, Any]:
+        """What a page whose occ view can't be built (_occ_view) links in its occ variant.
+
+        Every doc:// identifier in the values of its occ operations on the
+        whole document ("") and on CURATION_SECTIONS, read from the values
+        (never applied), as one section; and the page's references updated
+        with the values of its occ operations on references (whole, per key,
+        or a key's field) and of a whole-document one, so the identifiers
+        resolve as in the view. Malformed parts are skipped: it never raises.
+        """
+        references = dict(json_data['references']) if isinstance(json_data.get('references'), dict) else {}
+        identifiers: List[str] = []
+
+        def collect(value: Any) -> None:
+            if isinstance(value, str):
+                if value.startswith('doc://'):
+                    identifiers.append(value)
+            elif isinstance(value, list):
+                for item in value:
+                    collect(item)
+            elif isinstance(value, dict):
+                collect(value.get('identifiers'))
+
+        overrides = json_data.get('variantOverrides')
+        for override in overrides if isinstance(overrides, list) else []:
+            if not isinstance(override, dict) or not isinstance(override.get('traits'), list):
+                continue
+            if not any(isinstance(trait, dict) and trait.get('interfaceLanguage') == 'occ'
+                       for trait in override['traits']):
+                continue
+            patch = override.get('patch')
+            for operation in patch if isinstance(patch, list) else []:
+                if not isinstance(operation, dict) or operation.get('op') not in ('add', 'replace'):
+                    continue
+                path, value = operation.get('path'), operation.get('value')
+                if not isinstance(path, str) or not (path == '' or path.startswith('/')):
+                    continue
+                tokens = [t.replace('~1', '/').replace('~0', '~') for t in path.split('/')[1:]] if path else []
+                if not tokens:
+                    if isinstance(value, dict):
+                        for key in CURATION_SECTIONS:
+                            collect(value.get(key))
+                        if isinstance(value.get('references'), dict):
+                            references.update(value['references'])
+                elif tokens[0] in CURATION_SECTIONS:
+                    collect(value)
+                elif tokens[0] == 'references':
+                    if len(tokens) == 1:
+                        if isinstance(value, dict):
+                            references.update(value)
+                    elif len(tokens) == 2:
+                        references[tokens[1]] = value
+                    elif len(tokens) == 3 and isinstance(references.get(tokens[1]), dict):
+                        references[tokens[1]] = {**references[tokens[1]], tokens[2]: value}
+        return {'topicSections': [{'identifiers': identifiers}], 'references': references}
+
+    def _occ_declarations(self, occ_view: Optional[Dict[str, Any]]) -> List[Optional[Dict[str, Any]]]:
+        """The Objective-C/C declarations of the page's occ view (_occ_view):
+        of its declarations sections, only the declarations whose languages
+        contain occ (_declaration_item). A declaration that can't be read or
+        formatted gives an occ_declarations_failed WARN and none (the page
+        shows its own declarations)."""
+        if occ_view is None:
+            return []
+        try:
+            sections = occ_view.get('primaryContentSections')
             return [
                 self._declaration_item(dec)
                 for section in sections or [] if isinstance(section, dict) and section.get('kind') == 'declarations'
                 for dec in section.get('declarations', [])
                 if 'occ' in (dec.get('languages') or [])
             ]
-        except Exception as e:  # malformed variant data: any error, as the variant is optional
-            logger.warning("occ_variant_patch_failed", url=getattr(self, '_current_scraping_url', ''),
+        except Exception as e:  # malformed variant data: any error, as the declarations are optional
+            logger.warning("occ_declarations_failed", url=getattr(self, '_current_scraping_url', ''),
                            error=f"{type(e).__name__}: {e}")
             return []
 

@@ -135,7 +135,7 @@ class TestConverterLinks:
                 {"type": "paragraph", "inlineContent": [ref(identifier) for identifier in targets]}]}],
             "topicSections": [{"title": "Links", "identifiers": list(targets)}],
         }
-        md = scraper.markdown_converter.convert_page(scraper._extract_from_json(scraper.sink, json_page, PAGE))
+        md = scraper.markdown_converter.convert_page(scraper._extract_from_json(scraper.sink, json_page, PAGE, None))
         for title, _, link in targets.values():
             assert f"[{title}]({link})" in md.split("## Topics")[0], title
             assert f"- [{title}]({link})" in md.split("## Topics")[1], title
