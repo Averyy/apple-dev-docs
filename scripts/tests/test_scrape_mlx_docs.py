@@ -1271,3 +1271,19 @@ def test_link_normalization() -> None:
     }
     for href, expected in cases.items():
         assert scrape_mlx_docs.normalize_link(page, href, source) == expected, href
+
+
+def test_a_superseded_catalog_is_crawled_until_its_copy_exists(tmp_path: Path) -> None:
+    """mlx-swift's DocC catalog comes from the Swift Package Index once the Apple
+    scrape has written it; until then (or if that copy is ever gone) from GitHub."""
+    source = GitHubDocSource(name="x", repo="o/x", branch="main", output_dir="X", framework="X",
+                             directories=["Docs"], superseded_directories={"Source/X.docc": "SPI/x/X"})
+    assert scrape_mlx_docs.active_directories(source, tmp_path) == ["Docs", "Source/X.docc"]
+    copy = tmp_path / "SPI" / "x" / "X"
+    copy.mkdir(parents=True)
+    assert scrape_mlx_docs.active_directories(source, tmp_path) == ["Docs", "Source/X.docc"]
+    (copy / "X.md").write_text("# X\n")
+    assert scrape_mlx_docs.active_directories(source, tmp_path) == ["Docs"]
+    configured = {s.name: s.superseded_directories for s in scrape_mlx_docs.GITHUB_SOURCES}
+    assert configured["mlx-swift"] == {"Source/MLX/Documentation.docc": "SPI/mlx-swift/MLX"}
+    assert configured["mlx-swift-lm"] == {"Libraries/MLXLMCommon/Documentation.docc": "SPI/mlx-swift-lm/MLXLMCommon"}

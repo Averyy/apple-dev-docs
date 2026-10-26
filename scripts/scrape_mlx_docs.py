@@ -184,6 +184,22 @@ class GitHubDocSource:
     # Take only the README.md files the directory crawls find (e.g. an
     # examples tree whose other .md files are test data, not docs)
     readme_only: bool = False
+    # Directories another scraper's copy replaces, each with that copy's docs
+    # dir (under documentation/): crawled only while the copy has no file, so
+    # the docs are never missing (active_directories)
+    superseded_directories: Dict[str, str] = field(default_factory=dict)
+
+
+def active_directories(source: "GitHubDocSource", docs_root: Optional[Path] = None) -> List[str]:
+    """The directories a GitHub source crawls this run: its directories, and each
+    superseded one whose replacement (under docs_root, OUTPUT_BASE by default) holds
+    no file yet. Once the replacement exists, the directory isn't crawled and its
+    files leave through the normal cleanup; were it ever gone, it is crawled again."""
+    root = docs_root or OUTPUT_BASE
+    return [*source.directories, *(
+        directory for directory, copy in source.superseded_directories.items()
+        if not ((root / copy).is_dir() and any((root / copy).rglob("*.md")))
+    )]
 
 
 @dataclass
@@ -272,8 +288,10 @@ GITHUB_SOURCES: List[GitHubDocSource] = [
         output_dir="MLX-Swift/mlx-swift",
         framework="MLX-Swift",
         # Its DocC catalogs (MLX, MLXNN, MLXOptimizers…) come rendered from
-        # the Swift Package Index (scraper/site.py SPI_PACKAGES)
+        # the Swift Package Index (scraper/site.py SPI_PACKAGES) once the
+        # Apple scrape has written them; until then from here
         files=["README.md"],
+        superseded_directories={"Source/MLX/Documentation.docc": "SPI/mlx-swift/MLX"},
     ),
     GitHubDocSource(
         name="mlx-swift-lm",
@@ -290,6 +308,7 @@ GITHUB_SOURCES: List[GitHubDocSource] = [
             "Libraries/MLXHuggingFace/Documentation.docc",
             "Libraries/MLXRerankers/Documentation.docc",
         ],
+        superseded_directories={"Libraries/MLXLMCommon/Documentation.docc": "SPI/mlx-swift-lm/MLXLMCommon"},
     ),
     GitHubDocSource(
         name="game-porting-toolkit",
@@ -1016,15 +1035,16 @@ async def scrape_github_source(
     files_to_fetch: Dict[str, bool] = {file_path: True for file_path in source.files}
 
     # Discover files in directories (in parallel)
-    if source.directories:
+    directories = active_directories(source)
+    if directories:
         results = await asyncio.gather(*(
             discover_github_markdown(
                 session, source.repo, source.branch, directory,
                 skip_dir_suffixes=XCODE_DIR_SUFFIXES, delay=REQUEST_DELAY, timeout=HTTP_TIMEOUT,
             )
-            for directory in source.directories
+            for directory in directories
         ))
-        for directory, (discovered, failures) in zip(source.directories, results, strict=True):
+        for directory, (discovered, failures) in zip(directories, results, strict=True):
             directory_key = github_directory_key(source.repo, directory)
             # The configured directory itself: on failure nothing of it was found
             root_failure = failures.pop(directory, None)
