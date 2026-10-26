@@ -622,3 +622,19 @@ def test_a_root_relative_link_in_code_is_kept() -> None:
     assert resolved == ('See [the guide](https://swift.example/guide) and `](/inline)`.\n'
                         '```html\n<a href="/fenced">x</a>\n```\n'
                         '<a href="https://swift.example/prose">y</a>')
+
+
+def test_a_superseded_source_is_imported_until_its_copy_exists(tmp_path: Path) -> None:
+    """The API Design Guidelines come from docs.swift.org once the Apple scrape has
+    written them; until then (or if that copy is ever gone) from swift-org-website."""
+    guidelines = DocSource(repo="swiftlang/swift-org-website", branch="main",
+                           path="documentation/api-design-guidelines", output_subdir="APIDesignGuidelines",
+                           superseded_by="Swift-Org/APIGuidelines")
+    book = DocSource(repo="swiftlang/swift-book", branch="main", path="TSPL.docc", output_subdir="Book")
+    assert scrape_swift_docs.active_sources([book, guidelines], tmp_path) == [book, guidelines]
+    copy = tmp_path / "Swift-Org" / "APIGuidelines"
+    copy.mkdir(parents=True)
+    assert scrape_swift_docs.active_sources([book, guidelines], tmp_path) == [book, guidelines]
+    (copy / "APIGuidelines.md").write_text("# API Design Guidelines\n")
+    assert scrape_swift_docs.active_sources([book, guidelines], tmp_path) == [book]
+    assert any(s.superseded_by == "Swift-Org/APIGuidelines" for s in scrape_swift_docs.ALL_SOURCES)

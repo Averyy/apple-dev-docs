@@ -105,10 +105,14 @@ class DocSource:
     path: str  # e.g., "TSPL.docc/LanguageGuide"
     output_subdir: str  # e.g., "LanguageGuide"
     file_pattern: str = "*.md"
+    # The docs dir (under documentation/) of another scraper's copy of the same
+    # docs: the source is imported only while that copy has no file, so the
+    # docs are never missing (active_sources)
+    superseded_by: str = ""
 
 
-# Documentation sources to fetch
-SOURCES: List[DocSource] = [
+# Documentation sources to fetch (SOURCES: those active this run)
+ALL_SOURCES: List[DocSource] = [
     # The Swift Programming Language book
     DocSource(
         repo="swiftlang/swift-book",
@@ -132,7 +136,14 @@ SOURCES: List[DocSource] = [
     # as it's just a table of contents with internal links
     # Swift.org website documentation. The API Design Guidelines come from
     # docs.swift.org's DocC copy (scraper/site.py SWIFT_ORG, root
-    # apiguidelines), so documentation/api-design-guidelines isn't imported
+    # apiguidelines) once the Apple scrape has written it; until then from here
+    DocSource(
+        repo="swiftlang/swift-org-website",
+        branch="main",
+        path="documentation/api-design-guidelines",
+        output_subdir="APIDesignGuidelines",
+        superseded_by="Swift-Org/APIGuidelines",
+    ),
     # Note: Skipping documentation/server - niche content with broken swift.org links
     DocSource(
         repo="swiftlang/swift-org-website",
@@ -141,6 +152,20 @@ SOURCES: List[DocSource] = [
         output_subdir="CxxInterop",
     ),
 ]
+
+
+def active_sources(sources: List[DocSource], docs_root: Path) -> List[DocSource]:
+    """The sources imported this run: each except one whose superseded_by dir
+    (under docs_root) holds a file. Once that copy exists, the source is no
+    longer configured and its files leave through the dropped-source cleanup;
+    were the copy ever gone, the source is imported again."""
+    def superseded(source: DocSource) -> bool:
+        copy = docs_root / source.superseded_by
+        return bool(source.superseded_by) and copy.is_dir() and any(copy.rglob("*.md"))
+    return [source for source in sources if not superseded(source)]
+
+
+SOURCES: List[DocSource] = active_sources(ALL_SOURCES, OUTPUT_DIR.parent)
 
 
 # =============================================================================
