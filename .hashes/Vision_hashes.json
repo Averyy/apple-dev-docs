@@ -5500,7 +5500,7 @@
       "hash": "e69d5bb303146b5711712e4b031ae55dd79eb08e2b38457d37530df2587f8560"
     },
     "https://developer.apple.com/documentation/vision/vnbarcodesymbology/gs1databarlimited": {
-      "etag": "\"6735-65d55e1367c08\"",
+      "etag": "\"6735-65d55e1367c08-df\"",
       "file_path": "documentation/Vision/vnbarcodesymbology/gs1databarlimited.md",
       "hash": "cb9363f8abfa457ca636ee9619110ec4447d67e19dbdb3ea1499cd23da32c9ab"
     },
@@ -15054,7 +15054,7 @@
       "hash": "e69d5bb303146b5711712e4b031ae55dd79eb08e2b38457d37530df2587f8560"
     },
     "https://developer.apple.com/tutorials/data/documentation/vision/vnbarcodesymbology/gs1databarlimited.json": {
-      "etag": "\"6735-65d55e1367c08\"",
+      "etag": "\"6735-65d55e1367c08-df\"",
       "file_path": "documentation/Vision/vnbarcodesymbology/gs1databarlimited.md",
       "hash": "cb9363f8abfa457ca636ee9619110ec4447d67e19dbdb3ea1499cd23da32c9ab"
     },
@@ -19111,7 +19111,7 @@
   },
   "metadata": {
     "render": {
-      "version": 2
+      "version": 3
     },
     "total_pages": 3822
   }

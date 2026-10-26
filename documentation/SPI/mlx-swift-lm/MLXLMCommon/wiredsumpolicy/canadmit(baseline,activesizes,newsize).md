@@ -1,0 +1,23 @@
+---
+url: "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/documentation/mlxlmcommon/wiredsumpolicy/canadmit(baseline:activesizes:newsize:)"
+framework: "mlx-swift-lm/MLXLMCommon"
+---
+
+# canAdmit(baseline:activeSizes:newSize:)
+
+**Framework**: mlx-swift-lm/MLXLMCommon  
+**Kind**: method  
+**Role**: Instance Method
+
+Admission is denied if the projected limit would exceed the cap.
+
+## Declaration
+
+```swift
+func canAdmit(baseline: Int, activeSizes: [Int], newSize: Int) -> Bool
+```
+
+
+---
+
+*[View on Swift Package Index](https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/documentation/mlxlmcommon/wiredsumpolicy/canadmit(baseline:activesizes:newsize:))*

@@ -256,7 +256,7 @@
       "hash": "1573b7403d080bd3a5908cf629fe677920893caced66806f1663193d59cae4e5"
     },
     "https://developer.apple.com/documentation/appintentstesting/appentitydefinition/suggestedentitiesquery()": {
-      "etag": "\"1a2d-65d55c9b69a02\"",
+      "etag": "\"1a2d-65d55c9b69a02-df\"",
       "file_path": "documentation/AppIntentsTesting/appentitydefinition/suggestedentitiesquery().md",
       "hash": "bd6a3d064da6f0b19f722d1356700baeed3bf92165ef9b7c66d4d0e8b3790c75"
     },
@@ -846,7 +846,7 @@
       "hash": "1573b7403d080bd3a5908cf629fe677920893caced66806f1663193d59cae4e5"
     },
     "https://developer.apple.com/tutorials/data/documentation/appintentstesting/appentitydefinition/suggestedentitiesquery().json": {
-      "etag": "\"1a2d-65d55c9b69a02\"",
+      "etag": "\"1a2d-65d55c9b69a02-df\"",
       "file_path": "documentation/AppIntentsTesting/appentitydefinition/suggestedentitiesquery().md",
       "hash": "bd6a3d064da6f0b19f722d1356700baeed3bf92165ef9b7c66d4d0e8b3790c75"
     },
@@ -1183,7 +1183,7 @@
   },
   "metadata": {
     "render": {
-      "version": 2
+      "version": 3
     },
     "total_pages": 236
   }

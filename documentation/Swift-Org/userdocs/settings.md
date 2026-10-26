@@ -57,7 +57,7 @@ Additionally you can exclude individual packages from initializing:
 
 ##### Multi-root Workspaces
 
-As an alternative to opening [a single workspace folder with multiple packages in it](https://docs.swift.org/latest#multiple-packages-in-workspace-folder), VS Code has a concept of [multi-root workspaces](https://code.visualstudio.com/docs/editing/workspaces/multi-root-workspaces) which the Swift extension supports.
+As an alternative to opening [a single workspace folder with multiple packages in it](./settings.md#multiple-packages-in-workspace-folder), VS Code has a concept of [multi-root workspaces](https://code.visualstudio.com/docs/editing/workspaces/multi-root-workspaces) which the Swift extension supports.
 
 Ex. myProj.code-workspace
 

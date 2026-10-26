@@ -30821,7 +30821,7 @@
       "hash": "40c0df37efb97865b55b26de6aa04e1172430fd04c27573638f0163844a712a2"
     },
     "https://developer.apple.com/documentation/appkit/nsinputservermousetracker": {
-      "etag": "\"3145-65dda250db34a\"",
+      "etag": "\"3145-65dda250db34a-df\"",
       "file_path": "documentation/AppKit/nsinputservermousetracker.md",
       "hash": "9bb8df96bbce5d64088197f072e7ecddeae369c14e613552c0ffb2bb43f06c5c"
     },
@@ -42006,7 +42006,7 @@
       "hash": "61f97da87ec05277ac17993846294e5dded913e31da3ec506f2e21a8fac843d5"
     },
     "https://developer.apple.com/documentation/appkit/nsresponder/useractivity": {
-      "etag": "\"3405-65d55e4cfc77a\"",
+      "etag": "\"3405-65d55e4cfc77a-df\"",
       "file_path": "documentation/AppKit/nsresponder/useractivity.md",
       "hash": "99f9d5a4cd7ace3e3d0a4adc961d8d552000b4fc39dae254a9c5dc68c10aa2e5"
     },
@@ -50601,7 +50601,7 @@
       "hash": "a20eb87a19a6542493b59799ee29cd99a511e4689d9ab986ba10f17dee2de4f8"
     },
     "https://developer.apple.com/documentation/appkit/nstableview/autosavename-swift.property": {
-      "etag": "\"2e2e-65d55e5d7c3ef\"",
+      "etag": "\"2e2e-65d55e5d7c3ef-df\"",
       "file_path": "documentation/AppKit/nstableview/autosavename-swift.property.md",
       "hash": "97f89c3338fa3849f21a990fac037d727d60ee59fa3a6d972fef7bfaee3aaae9"
     },
@@ -100596,7 +100596,7 @@
       "hash": "40c0df37efb97865b55b26de6aa04e1172430fd04c27573638f0163844a712a2"
     },
     "https://developer.apple.com/tutorials/data/documentation/appkit/nsinputservermousetracker.json": {
-      "etag": "\"3145-65dda250db34a\"",
+      "etag": "\"3145-65dda250db34a-df\"",
       "file_path": "documentation/AppKit/nsinputservermousetracker.md",
       "hash": "9bb8df96bbce5d64088197f072e7ecddeae369c14e613552c0ffb2bb43f06c5c"
     },
@@ -111781,7 +111781,7 @@
       "hash": "61f97da87ec05277ac17993846294e5dded913e31da3ec506f2e21a8fac843d5"
     },
     "https://developer.apple.com/tutorials/data/documentation/appkit/nsresponder/useractivity.json": {
-      "etag": "\"3405-65d55e4cfc77a\"",
+      "etag": "\"3405-65d55e4cfc77a-df\"",
       "file_path": "documentation/AppKit/nsresponder/useractivity.md",
       "hash": "99f9d5a4cd7ace3e3d0a4adc961d8d552000b4fc39dae254a9c5dc68c10aa2e5"
     },
@@ -120376,7 +120376,7 @@
       "hash": "a20eb87a19a6542493b59799ee29cd99a511e4689d9ab986ba10f17dee2de4f8"
     },
     "https://developer.apple.com/tutorials/data/documentation/appkit/nstableview/autosavename-swift.property.json": {
-      "etag": "\"2e2e-65d55e5d7c3ef\"",
+      "etag": "\"2e2e-65d55e5d7c3ef-df\"",
       "file_path": "documentation/AppKit/nstableview/autosavename-swift.property.md",
       "hash": "97f89c3338fa3849f21a990fac037d727d60ee59fa3a6d972fef7bfaee3aaae9"
     },
@@ -139553,7 +139553,7 @@
   },
   "metadata": {
     "render": {
-      "version": 2
+      "version": 3
     },
     "total_pages": 27910
   }

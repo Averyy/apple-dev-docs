@@ -17,8 +17,8 @@ Both certificates are valid for 25 months and must be renewed before they expire
 | --- | --- | --- |
 | Merchant Identifier | A unique identifier representing a merchant within Apple Pay. Can be associated with multiple apps and websites. See [Create a merchant identifier](https://developer.apple.com/help/account/capabilities/configure-apple-pay#create-a-merchant-identifier) for the setup steps. | No |
 | Payment Platform Integrator Identifier | A unique identifier representing a payment platform within Apple Pay. Used with [Apple Pay Web Merchant Registration API](../ApplePayWebMerchantRegistrationAPI/ApplePayWebMerchantRegistrationAPI.md). | No |
-| Payment Processing Certificate | Encrypts payment data. Apple Pay servers use the certificate’s public key to encrypt payment data; the corresponding private key is used to decrypt it. See [Create a payment processing certificate](https://developer.apple.com#Create-a-payment-processing-certificate) for the setup steps. | Yes; 25 months |
-| Identity Certificate | A TLS certificate that authenticates requests with Apple Pay servers. Required for Apple Pay on the Web. Can be linked to either a Merchant Identifier or a Payment Platform Integrator Identifier. See [Create an identity certificate](https://developer.apple.com#Create-an-identity-certificate) for the setup steps. | Yes; 25 months |
+| Payment Processing Certificate | Encrypts payment data. Apple Pay servers use the certificate’s public key to encrypt payment data; the corresponding private key is used to decrypt it. See [Create a payment processing certificate](./tn3206-updating-apple-pay-certificates.md#Create-a-payment-processing-certificate) for the setup steps. | Yes; 25 months |
+| Identity Certificate | A TLS certificate that authenticates requests with Apple Pay servers. Required for Apple Pay on the Web. Can be linked to either a Merchant Identifier or a Payment Platform Integrator Identifier. See [Create an identity certificate](./tn3206-updating-apple-pay-certificates.md#Create-an-identity-certificate) for the setup steps. | Yes; 25 months |
 
 #### Payment processing certificates
 

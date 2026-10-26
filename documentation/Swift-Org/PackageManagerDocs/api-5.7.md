@@ -10,11 +10,11 @@ framework: "Swift-Org/PackageManagerDocs"
 
 ##### Package Plugins
 
-[SE-0303: Build tool plugins](https://github.com/swiftlang/swift-evolution/blob/main/proposals/0303-swiftpm-extensible-build-tools.md) and [SE-0332: Command Plugins](https://github.com/swiftlang/swift-evolution/blob/main/proposals/0332-swiftpm-command-plugins.md) which were first introduced in Swift 5.6 have been further refined, with support for generating resources and improved diagnostics. To learn more, refer to the [Getting Started with Plugins](https://docs.swift.org/latest../Plugins.md) guide.
+[SE-0303: Build tool plugins](https://github.com/swiftlang/swift-evolution/blob/main/proposals/0303-swiftpm-extensible-build-tools.md) and [SE-0332: Command Plugins](https://github.com/swiftlang/swift-evolution/blob/main/proposals/0332-swiftpm-command-plugins.md) which were first introduced in Swift 5.6 have been further refined, with support for generating resources and improved diagnostics. To learn more, refer to the [Getting Started with Plugins](https://docs.swift.org/latest/documentation/Plugins.md) guide.
 
 ##### Package Registry Support
 
-SwiftPM now supports package registry related capabilities introduced by [SE-0292](https://github.com/swiftlang/swift-evolution/blob/main/proposals/0292-package-registry-service.md) and the corresponding [service specification](https://docs.swift.org/latest../Registry.md). With the exception of package publishing, SwiftPM can resolve and download dependencies from any compliant registry using the defined APIs.
+SwiftPM now supports package registry related capabilities introduced by [SE-0292](https://github.com/swiftlang/swift-evolution/blob/main/proposals/0292-package-registry-service.md) and the corresponding [service specification](https://docs.swift.org/latest/documentation/Registry.md). With the exception of package publishing, SwiftPM can resolve and download dependencies from any compliant registry using the defined APIs.
 
 To get started, users will need to specify their package registry by running the `swift package-registry set` subcommand or editing the `registries.json` configuration file. `swift package` tool’s `--use-registry-identity-for-scm` and `--replace-scm-with-registry` options might also be of interest.
 

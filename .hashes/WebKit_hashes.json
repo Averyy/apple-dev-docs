@@ -11586,7 +11586,7 @@
       "hash": "34a74e3a0e64592bcbd7b5afc59afdcfbd54b07cd80da9c408f1e6439d11d666"
     },
     "https://developer.apple.com/documentation/webkit/wkforminfo/formvalues": {
-      "etag": "\"1d43-65d55c86cea4d\"",
+      "etag": "\"1d43-65d55c86cea4d-df\"",
       "file_path": "documentation/WebKit/wkforminfo/formvalues.md",
       "hash": "46730a7b8dd6cc9d0d5e84d4c1355e7f8415a84a799a1690c21471cc199e592e"
     },
@@ -27521,7 +27521,7 @@
       "hash": "34a74e3a0e64592bcbd7b5afc59afdcfbd54b07cd80da9c408f1e6439d11d666"
     },
     "https://developer.apple.com/tutorials/data/documentation/webkit/wkforminfo/formvalues.json": {
-      "etag": "\"1d43-65d55c86cea4d\"",
+      "etag": "\"1d43-65d55c86cea4d-df\"",
       "file_path": "documentation/WebKit/wkforminfo/formvalues.md",
       "hash": "46730a7b8dd6cc9d0d5e84d4c1355e7f8415a84a799a1690c21471cc199e592e"
     },
@@ -31885,7 +31885,7 @@
   },
   "metadata": {
     "render": {
-      "version": 2
+      "version": 3
     },
     "total_pages": 6377
   }

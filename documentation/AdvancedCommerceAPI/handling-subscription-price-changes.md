@@ -70,7 +70,7 @@ Several conditions may affect your ability to change or update a subscription, i
   - Add an item
   - Remove an item
   - Change an item
-  - Resubscribe using the [Subscription Modification API](./AdvancedCommerceAPI.md#Subscription-modification-in-the-app)  or the [Subscription Reactivation API](https://developer.apple.comcom.apple.documentation/documentation/advancedcommerceapi#Subscription-reactivation-in-the-app)
+  - Resubscribe using the [Subscription Modification API](./AdvancedCommerceAPI.md#Subscription-modification-in-the-app)  or the [Subscription Reactivation API](./com.apple.documentation/documentation/advancedcommerceapi.md#Subscription-reactivation-in-the-app)
 - If the subscription status is auto-renew = `false` or if the subscription is in a grace period or billing retry state, you can’t call the [`Change Subscription Price`](./change-subscription-price.md) endpoint.
 - If the `SubscriptionPriceChangeItem` is currently in the offer period, you can’t call [`Change Subscription Price`](./change-subscription-price.md).
 

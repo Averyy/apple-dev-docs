@@ -1,0 +1,156 @@
+---
+url: "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/documentation/mlxllm/evaluation"
+framework: "mlx-swift-lm/MLXLLM"
+---
+
+# Evaluation
+
+**Framework**: mlx-swift-lm/MLXLLM  
+**Role**: Article
+
+The simplified LLM/VLM API allows you to load a model and evaluate prompts with only a few lines of code.
+
+#### Overview
+
+For example, this loads a model and asks a question and a follow-on question:
+
+```swift
+import Foundation
+import MLXLLM
+import MLXLMCommon
+import MLXHuggingFace  // macros: #hubDownloader / #huggingFaceTokenizerLoader
+import HuggingFace
+import Tokenizers
+
+let model = try await loadModel(
+    from: #hubDownloader(),
+    using: #huggingFaceTokenizerLoader(),
+    id: "mlx-community/Qwen3-4B-4bit"
+)
+let session = ChatSession(model)
+print(try await session.respond(to: "What are two things to see in San Francisco?"))
+print(try await session.respond(to: "How about a great place to eat?"))
+```
+
+The second question actually refers to information (the location) from the first question – this context is maintained inside the `ChatSession` object.
+
+If you need a one-shot prompt/response simply create a `ChatSession`, evaluate the prompt and discard.  Multiple `ChatSession` instances could also be used (at the cost of the memory in the `KVCache`) to handle multiple streams of context.
+
+#### Streaming Output
+
+The previous example produced the entire response in one call.  Often users want to see the text as it is generated – you can do this with a stream:
+
+```swift
+let model = try await loadModel(
+    from: #hubDownloader(),
+    using: #huggingFaceTokenizerLoader(),
+    id: "mlx-community/Qwen3-4B-4bit"
+)
+let session = ChatSession(model)
+
+for try await item in session.streamResponse(to: "Why is the sky blue?") {
+    print(item, terminator: "")
+}
+print()
+```
+
+#### Structured Chat Continuation
+
+`ChatSession` can also continue from structured `Chat.Message` values. This is useful for agent loops that consume tool calls from `streamDetails(to:role:images:videos:)` and then append one or more `.tool` messages without rebuilding the whole conversation history:
+
+```swift
+var pendingToolCalls: [ToolCall] = []
+var rejectedToolCall: RejectedToolCall?
+
+for try await item in session.streamDetails(
+    to: "What is the weather in Paris?",
+    images: [],
+    videos: []
+) {
+    if case .toolCall(let toolCall) = item {
+        pendingToolCalls.append(toolCall)
+    }
+    if case .rejectedToolCall(let rejection) = item {
+        rejectedToolCall = rejection
+    }
+}
+
+if let rejectedToolCall {
+    throw RejectedToolCallError(rejectedToolCall)
+}
+
+var toolResults: [Chat.Message] = []
+for toolCall in pendingToolCalls {
+    let toolResult = try await callTool(toolCall)
+    toolResults.append(.tool(toolResult))
+}
+
+if !toolResults.isEmpty {
+    let answer = try await session.respond(to: toolResults)
+    print(answer)
+}
+```
+
+When tool schemas are supplied, `Generation.toolCall` contains only parsed and authorized calls that may be considered for dispatch. Tool-call-shaped output that is malformed, incomplete, exceeds the parser’s bounded safety limit, or names an undeclared function is emitted separately as `Generation.rejectedToolCall`; rejected protocol is never returned as a normal response chunk. `rawTextPreview` is bounded for diagnostics but can contain sensitive argument values, so applications should not log or persist it automatically.
+
+Cross-dialect recovery defaults to `ToolCallRecoveryPolicy.conservative`. It accepts only structurally complete calls naming an exactly declared tool and keeps syntax inside reasoning spans, Markdown code, and ordinary JSON data inert. Set `GenerateParameters.toolCallPolicy.recovery` to `.disabled` to permit only the selected native dialect, or `.permissive` to allow the documented end-of-stream outer-close repair. `GenerateCompletionInfo` reports both `recoveredToolCallCount` and `rejectedToolCallCount` for production telemetry.
+
+`GenerateParameters.toolCallPolicy.validation` defaults to `.permissive`, leaving schema validation to the application. Set it to `.strict` to reject proven schema violations, including missing required arguments. Declared-tool authorization and native parser requirements apply in both modes.
+
+The example buffers accepted calls until the generation finishes. This makes dispatch atomic at the turn level: if a later call in the same model output is rejected, no earlier call has already caused an external side effect. `ChatSession` automatic dispatch also fails closed when tool schemas are absent or empty: no model-emitted call can reach the dispatch callback without an exactly matching declaration.
+
+When `ChatSession` builds its cache from messages, it retains the structured transcript and renders the complete conversation for every continuation, as required by conversation-aware chat templates. When the rendered tokens extend the tokens already represented by the session’s KV cache, only the new suffix is prefilled. Both the string-and-role overloads and the structured-message overloads use this same retained-conversation and cache-reuse path. If a template rewrites an earlier part of the prompt, the session rewinds to a verified common prefix when the cache and input can be trimmed safely. Otherwise, it rebuilds the cache rather than combining stale model state with a mismatched prompt.
+
+The low-level initializers that accept an existing raw KV cache cannot recover the messages used to create it. Those initializers preserve fragment-based continuation behavior; use the history initializer when a structured conversation must be resumed.
+
+When a session is initialized with history, the first generation must prefill that history to create a KV cache. Reuse the same `ChatSession` so later tool turns can take the suffix-only fast path.
+
+#### VLMs (Vision Language Models)
+
+This same API supports VLMs as well.  Simply present the image or video to the `ChatSession`:
+
+```swift
+let model = try await loadModel(
+    from: #hubDownloader(),
+    using: #huggingFaceTokenizerLoader(),
+    id: "mlx-community/Qwen2.5-VL-3B-Instruct-4bit"
+)
+let session = ChatSession(model)
+
+let answer1 = try await session.respond(
+    to: "what kind of creature is in the picture?",
+    image: .url(URL(fileURLWithPath: "support/test.jpg"))
+)
+print(answer1)
+
+// we can ask a followup question referring back to the previous image
+let answer2 = try await session.respond(
+    to: "What is behind the dog?"
+)
+print(answer2)
+```
+
+#### Advanced Usage
+
+The `ChatSession` has a number of parameters you can supply when creating it:
+
+- **instructions**: optional instructions to the chat session, e.g. describing what type of responses to give
+
+  - for example you might instruct the language model to respond in rhyme or talking like a famous character from a movie
+  - or that the responses should be very brief
+- **generateParameters**: parameters that control the generation of output, e.g. token limits and temperature
+
+  - see `GenerateParameters`
+- **processing**: optional media processing instructions
+
+## See Also
+
+- [Adding a Model](./adding-model.md)
+  If the model follows the typical LLM pattern you can add a new model in a few steps.
+- [Using a Model](./using-model.md)
+  Using a model is easy:  load the weights, tokenize and evaluate.
+
+
+---
+
+*[View on Swift Package Index](https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/documentation/mlxllm/evaluation)*

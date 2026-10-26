@@ -1,19 +1,19 @@
 {
   "hashes": {
     "https://developer.apple.com/documentation/technologies": {
-      "etag": "\"43504-65e5a14bfb685-df\"",
+      "etag": "\"43504-65e5a14bfb685\"",
       "file_path": "documentation/technologies/technologies.md",
       "hash": "92259ab23febdb458dfadf8369d9ae1c85fef1f67d76b047e9e1ee4325984651"
     },
     "https://developer.apple.com/tutorials/data/documentation/technologies.json": {
-      "etag": "\"43504-65e5a14bfb685-df\"",
+      "etag": "\"43504-65e5a14bfb685\"",
       "file_path": "documentation/technologies/technologies.md",
       "hash": "92259ab23febdb458dfadf8369d9ae1c85fef1f67d76b047e9e1ee4325984651"
     }
   },
   "metadata": {
     "render": {
-      "version": 2
+      "version": 3
     },
     "total_pages": 2
   }

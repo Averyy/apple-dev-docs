@@ -1,0 +1,32 @@
+---
+url: "https://swiftpackageindex.com/carekit-apple/CareKit/main/documentation/carekitui/linkview/scrolldisabled(_:)"
+framework: "CareKit/CareKitUI"
+---
+
+# scrollDisabled(_:)
+
+**Framework**: CareKit/CareKitUI  
+**Kind**: method  
+**Role**: Instance Method
+
+Inherited from `View.scrollDisabled(_:)`.
+
+**Availability**:
+- iOS 16.0+
+- iPadOS 16.0+
+- Mac Catalyst 16.0+
+- macOS 13.0+
+- tvOS 16.0+
+- watchOS 9.0+
+
+## Declaration
+
+```swift
+nonisolated
+func scrollDisabled(_ disabled: Bool) -> some View
+```
+
+
+---
+
+*[View on Swift Package Index](https://swiftpackageindex.com/carekit-apple/CareKit/main/documentation/carekitui/linkview/scrolldisabled(_:))*

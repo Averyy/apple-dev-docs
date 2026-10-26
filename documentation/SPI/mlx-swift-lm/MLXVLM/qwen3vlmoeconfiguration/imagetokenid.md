@@ -1,0 +1,21 @@
+---
+url: "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/documentation/mlxvlm/qwen3vlmoeconfiguration/imagetokenid"
+framework: "mlx-swift-lm/MLXVLM"
+---
+
+# imageTokenId
+
+**Framework**: mlx-swift-lm/MLXVLM  
+**Kind**: property  
+**Role**: Instance Property
+
+## Declaration
+
+```swift
+var imageTokenId: Int { get }
+```
+
+
+---
+
+*[View on Swift Package Index](https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/documentation/mlxvlm/qwen3vlmoeconfiguration/imagetokenid)*

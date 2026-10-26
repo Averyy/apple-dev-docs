@@ -121,7 +121,7 @@ hasContentPendingObservation = WCSession.default.observe(\.hasContentPending) { 
 }
 ```
 
-On watchOS, the system suspends an  app when a person stops using the app and lowers their wrist. Later, when watchOS triggers a background task for the app, watchOS wakes the app from the suspended state. Using Xcode to run an app prevents the system from completing the suspension process, and may lead to different app behaviors. When encountering an issue related to background tasks, consider debugging it by launching the app directly from the Home Screen and analyzing the app logs. This sample uses [Logger](https://developer.apple.comShared/Logger.swift) to write logs into a file, and transfers the file to the iOS app when a person taps the file transfer button in the watchOS app.
+On watchOS, the system suspends an  app when a person stops using the app and lowers their wrist. Later, when watchOS triggers a background task for the app, watchOS wakes the app from the suspended state. Using Xcode to run an app prevents the system from completing the suspension process, and may lead to different app behaviors. When encountering an issue related to background tasks, consider debugging it by launching the app directly from the Home Screen and analyzing the app logs. This sample uses [Logger](./shared/logger.swift.md) to write logs into a file, and transfers the file to the iOS app when a person taps the file transfer button in the watchOS app.
 
 
 ---

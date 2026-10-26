@@ -1,0 +1,21 @@
+---
+url: "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/documentation/mlxlmcommon/intorintarray/init(_:)-131pz"
+framework: "mlx-swift-lm/MLXLMCommon"
+---
+
+# init(_:)
+
+**Framework**: mlx-swift-lm/MLXLMCommon  
+**Kind**: init  
+**Role**: Initializer
+
+## Declaration
+
+```swift
+init(_ values: [Int])
+```
+
+
+---
+
+*[View on Swift Package Index](https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/documentation/mlxlmcommon/intorintarray/init(_:)-131pz)*

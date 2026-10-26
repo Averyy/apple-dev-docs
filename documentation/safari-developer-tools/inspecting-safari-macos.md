@@ -31,7 +31,7 @@ Extensions can run script or create webpages in several places, and how you insp
 
 ##### Content scripts
 
-To debug the scripts that web extensions have injected into webpages, first [inspect the webpage](https://developer.apple.com#Inspectingawebpage). Once Web Inspector is opened, click the Sources tab, and select your content script file from the Extension Scripts folder at the lower left. Then select your extension’s execution context by using the selector in the lower-right corner of the inspector. Set breakpoints by clicking the gutter with line numbers in the source view. Inspect other source files for your extension, such as style sheets, in the Sources area at the lower left.
+To debug the scripts that web extensions have injected into webpages, first [inspect the webpage](./inspecting-safari-macos.md#Inspectingawebpage). Once Web Inspector is opened, click the Sources tab, and select your content script file from the Extension Scripts folder at the lower left. Then select your extension’s execution context by using the selector in the lower-right corner of the inspector. Set breakpoints by clicking the gutter with line numbers in the source view. Inspect other source files for your extension, such as style sheets, in the Sources area at the lower left.
 
 ##### Background scripts
 

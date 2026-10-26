@@ -4686,7 +4686,7 @@
       "hash": "8b7ab8366fad816c7bbf74986e8d2360fe283faaa8358c968fd756d88d0bc429"
     },
     "https://developer.apple.com/documentation/authenticationservices/asimportablecredential/basicauthentication/init(username:password:)": {
-      "etag": "\"1bd1-65d560abd5f27\"",
+      "etag": "\"1bd1-65d560abd5f27-df\"",
       "file_path": "documentation/AuthenticationServices/asimportablecredential/basicauthentication/init(username,password).md",
       "hash": "2c3120c551ea5334389c548a9ceda4597dfa274b876775846b9768e589c61304"
     },
@@ -11956,7 +11956,7 @@
       "hash": "3a6f5a910d655e27edef58de8b82285d39bdb02512a1a1c700b65f8f79bc1f5c"
     },
     "https://developer.apple.com/tutorials/data/documentation/authenticationservices/asimportablecredential/basicauthentication/init(username:password:).json": {
-      "etag": "\"1bd1-65d560abd5f27\"",
+      "etag": "\"1bd1-65d560abd5f27-df\"",
       "file_path": "documentation/AuthenticationServices/asimportablecredential/basicauthentication/init(username,password).md",
       "hash": "2c3120c551ea5334389c548a9ceda4597dfa274b876775846b9768e589c61304"
     },
@@ -14543,7 +14543,7 @@
   },
   "metadata": {
     "render": {
-      "version": 2
+      "version": 3
     },
     "total_pages": 2908
   }

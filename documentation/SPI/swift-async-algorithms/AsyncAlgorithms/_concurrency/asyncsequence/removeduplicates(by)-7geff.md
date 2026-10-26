@@ -1,0 +1,29 @@
+---
+url: "https://swiftpackageindex.com/apple/swift-async-algorithms/main/documentation/asyncalgorithms/_concurrency/asyncsequence/removeduplicates(by:)-7geff"
+framework: "swift-async-algorithms/AsyncAlgorithms"
+---
+
+# removeDuplicates(by:)
+
+**Framework**: swift-async-algorithms/AsyncAlgorithms  
+**Kind**: method  
+**Role**: Instance Method
+
+Creates an asynchronous sequence that omits repeated elements by testing them with a predicate.
+
+**Availability**:
+- iOS 13.0+
+- macOS 10.15+
+- tvOS 13.0+
+- watchOS 6.0+
+
+## Declaration
+
+```swift
+func removeDuplicates(by predicate: @escaping @Sendable (Self.Element, Self.Element) async -> Bool) -> AsyncRemoveDuplicatesSequence<Self>
+```
+
+
+---
+
+*[View on Swift Package Index](https://swiftpackageindex.com/apple/swift-async-algorithms/main/documentation/asyncalgorithms/_concurrency/asyncsequence/removeduplicates(by:)-7geff)*

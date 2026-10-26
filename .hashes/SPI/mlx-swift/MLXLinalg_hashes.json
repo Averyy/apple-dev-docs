@@ -1,0 +1,162 @@
+{
+  "hashes": {
+    "https://swiftpackageindex.com/ml-explore/mlx-swift/main/data/documentation/mlxlinalg.json": {
+      "file_path": "documentation/SPI/mlx-swift/MLXLinalg/MLXLinalg.md",
+      "hash": "a60245cc087df0a06a1647efa3e8c6ba4b4690dcb12db1814e1fadb1124d9d1f"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift/main/data/documentation/mlxlinalg/cholesky(_:upper:stream:).json": {
+      "file_path": "documentation/SPI/mlx-swift/MLXLinalg/cholesky(_,upper,stream).md",
+      "hash": "0b8d4538cafc9c22364d79494c46d9abc2fa07b8ddd21fc3fad176ce90b656c7"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift/main/data/documentation/mlxlinalg/choleskyinv(_:upper:stream:).json": {
+      "file_path": "documentation/SPI/mlx-swift/MLXLinalg/choleskyinv(_,upper,stream).md",
+      "hash": "06a0809bcae336c83aae5f313265d0399237b446e9f76edd769655b2c322ca60"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift/main/data/documentation/mlxlinalg/cross(_:_:axis:stream:).json": {
+      "file_path": "documentation/SPI/mlx-swift/MLXLinalg/cross(_,_,axis,stream).md",
+      "hash": "e4cb0bc5b15a36a2e3f25b4befff38dd00335e17832b8fa16dbfc244f4526001"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift/main/data/documentation/mlxlinalg/deprecationwarning.json": {
+      "file_path": "documentation/SPI/mlx-swift/MLXLinalg/deprecationwarning.md",
+      "hash": "e0e64516a28ff9cdbc9118f57b3a397787fabc3c58e043b16e138cb25dd58247"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift/main/data/documentation/mlxlinalg/inv(_:stream:).json": {
+      "file_path": "documentation/SPI/mlx-swift/MLXLinalg/inv(_,stream).md",
+      "hash": "3b5cdffede3fb7d4606af0a76dfbb6952437aeab19edd7103ed758000f75fb77"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift/main/data/documentation/mlxlinalg/lu(_:stream:).json": {
+      "file_path": "documentation/SPI/mlx-swift/MLXLinalg/lu(_,stream).md",
+      "hash": "b45965e2f912cf2d6c0ffd7ff2b41f0d186e22cac56f09c92b40ff491691c8e2"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift/main/data/documentation/mlxlinalg/lu_factor(_:stream:).json": {
+      "file_path": "documentation/SPI/mlx-swift/MLXLinalg/lu_factor(_,stream).md",
+      "hash": "a318f219649afe3fac96b75d76c3774652091010a85164ef6bffb3bc9b81cf47"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift/main/data/documentation/mlxlinalg/norm(_:ord:axes:keepdims:stream:)-3t3ay.json": {
+      "file_path": "documentation/SPI/mlx-swift/MLXLinalg/norm(_,ord,axes,keepdims,stream)-3t3ay.md",
+      "hash": "20bab35134eaeba5906de1dc08e1bbb51a6d4a9626d1a1d5258395971d3b229c"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift/main/data/documentation/mlxlinalg/norm(_:ord:axes:keepdims:stream:)-ugz6.json": {
+      "file_path": "documentation/SPI/mlx-swift/MLXLinalg/norm(_,ord,axes,keepdims,stream)-ugz6.md",
+      "hash": "6fc0edfb61c30996bff5bcc2e9221ee15de6a54c827dec374f838f7894cf36da"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift/main/data/documentation/mlxlinalg/norm(_:ord:axis:keepdims:stream:)-2cn9x.json": {
+      "file_path": "documentation/SPI/mlx-swift/MLXLinalg/norm(_,ord,axis,keepdims,stream)-2cn9x.md",
+      "hash": "bda29924f9ee79d89568345c3b91b388e1e9f03b7b67dcfcc3f43c0d2c0dcf7a"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift/main/data/documentation/mlxlinalg/norm(_:ord:axis:keepdims:stream:)-6eux3.json": {
+      "file_path": "documentation/SPI/mlx-swift/MLXLinalg/norm(_,ord,axis,keepdims,stream)-6eux3.md",
+      "hash": "a9eded00ecfbaf515a5eca35f5df497eab370b8723862851b86dac5888c4feb9"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift/main/data/documentation/mlxlinalg/norm(_:ord:axis:keepdims:stream:)-7fnqw.json": {
+      "file_path": "documentation/SPI/mlx-swift/MLXLinalg/norm(_,ord,axis,keepdims,stream)-7fnqw.md",
+      "hash": "4499f2b50569d565b14821a2e7de68efa2425506cdec4356e5dd36f0a6c925f8"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift/main/data/documentation/mlxlinalg/norm(_:ord:axis:keepdims:stream:)-92jgz.json": {
+      "file_path": "documentation/SPI/mlx-swift/MLXLinalg/norm(_,ord,axis,keepdims,stream)-92jgz.md",
+      "hash": "6757f06b7e0739e9b9a21c331831a38105c8a4b4a005ba65bc68e17574c49d06"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift/main/data/documentation/mlxlinalg/qr(_:stream:).json": {
+      "file_path": "documentation/SPI/mlx-swift/MLXLinalg/qr(_,stream).md",
+      "hash": "16fb0cb1b6b6c19c702fcb6c192df4bba5ca79e9025a6483136edcbd5ea61e41"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift/main/data/documentation/mlxlinalg/solve(_:_:stream:).json": {
+      "file_path": "documentation/SPI/mlx-swift/MLXLinalg/solve(_,_,stream).md",
+      "hash": "7caca69cad842ae237243b6f1be3803da083ef81946a21931546b8bbdd4411bb"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift/main/data/documentation/mlxlinalg/solvetriangular(_:_:upper:stream:).json": {
+      "file_path": "documentation/SPI/mlx-swift/MLXLinalg/solvetriangular(_,_,upper,stream).md",
+      "hash": "c73d0c447d6ea6906a0a2bca3ca71c321f5786aa00042560067df405e9f9058e"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift/main/data/documentation/mlxlinalg/svd(_:stream:).json": {
+      "file_path": "documentation/SPI/mlx-swift/MLXLinalg/svd(_,stream).md",
+      "hash": "22d810ae5b26e97613c8a6fa73e78490ab05ee33d6115cba63dfb0e3c52b3d9b"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift/main/data/documentation/mlxlinalg/triinv(_:upper:stream:).json": {
+      "file_path": "documentation/SPI/mlx-swift/MLXLinalg/triinv(_,upper,stream).md",
+      "hash": "5857c4e06920e74eda3636752d2134b5fd003e67478c8d73bab5b957f9007c75"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift/main/documentation/mlxlinalg": {
+      "file_path": "documentation/SPI/mlx-swift/MLXLinalg/MLXLinalg.md",
+      "hash": "a60245cc087df0a06a1647efa3e8c6ba4b4690dcb12db1814e1fadb1124d9d1f"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift/main/documentation/mlxlinalg/cholesky(_:upper:stream:)": {
+      "file_path": "documentation/SPI/mlx-swift/MLXLinalg/cholesky(_,upper,stream).md",
+      "hash": "0b8d4538cafc9c22364d79494c46d9abc2fa07b8ddd21fc3fad176ce90b656c7"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift/main/documentation/mlxlinalg/choleskyinv(_:upper:stream:)": {
+      "file_path": "documentation/SPI/mlx-swift/MLXLinalg/choleskyinv(_,upper,stream).md",
+      "hash": "06a0809bcae336c83aae5f313265d0399237b446e9f76edd769655b2c322ca60"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift/main/documentation/mlxlinalg/cross(_:_:axis:stream:)": {
+      "file_path": "documentation/SPI/mlx-swift/MLXLinalg/cross(_,_,axis,stream).md",
+      "hash": "e4cb0bc5b15a36a2e3f25b4befff38dd00335e17832b8fa16dbfc244f4526001"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift/main/documentation/mlxlinalg/deprecationwarning": {
+      "file_path": "documentation/SPI/mlx-swift/MLXLinalg/deprecationwarning.md",
+      "hash": "e0e64516a28ff9cdbc9118f57b3a397787fabc3c58e043b16e138cb25dd58247"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift/main/documentation/mlxlinalg/inv(_:stream:)": {
+      "file_path": "documentation/SPI/mlx-swift/MLXLinalg/inv(_,stream).md",
+      "hash": "3b5cdffede3fb7d4606af0a76dfbb6952437aeab19edd7103ed758000f75fb77"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift/main/documentation/mlxlinalg/lu(_:stream:)": {
+      "file_path": "documentation/SPI/mlx-swift/MLXLinalg/lu(_,stream).md",
+      "hash": "b45965e2f912cf2d6c0ffd7ff2b41f0d186e22cac56f09c92b40ff491691c8e2"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift/main/documentation/mlxlinalg/lu_factor(_:stream:)": {
+      "file_path": "documentation/SPI/mlx-swift/MLXLinalg/lu_factor(_,stream).md",
+      "hash": "a318f219649afe3fac96b75d76c3774652091010a85164ef6bffb3bc9b81cf47"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift/main/documentation/mlxlinalg/norm(_:ord:axes:keepdims:stream:)-3t3ay": {
+      "file_path": "documentation/SPI/mlx-swift/MLXLinalg/norm(_,ord,axes,keepdims,stream)-3t3ay.md",
+      "hash": "20bab35134eaeba5906de1dc08e1bbb51a6d4a9626d1a1d5258395971d3b229c"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift/main/documentation/mlxlinalg/norm(_:ord:axes:keepdims:stream:)-ugz6": {
+      "file_path": "documentation/SPI/mlx-swift/MLXLinalg/norm(_,ord,axes,keepdims,stream)-ugz6.md",
+      "hash": "6fc0edfb61c30996bff5bcc2e9221ee15de6a54c827dec374f838f7894cf36da"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift/main/documentation/mlxlinalg/norm(_:ord:axis:keepdims:stream:)-2cn9x": {
+      "file_path": "documentation/SPI/mlx-swift/MLXLinalg/norm(_,ord,axis,keepdims,stream)-2cn9x.md",
+      "hash": "bda29924f9ee79d89568345c3b91b388e1e9f03b7b67dcfcc3f43c0d2c0dcf7a"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift/main/documentation/mlxlinalg/norm(_:ord:axis:keepdims:stream:)-6eux3": {
+      "file_path": "documentation/SPI/mlx-swift/MLXLinalg/norm(_,ord,axis,keepdims,stream)-6eux3.md",
+      "hash": "a9eded00ecfbaf515a5eca35f5df497eab370b8723862851b86dac5888c4feb9"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift/main/documentation/mlxlinalg/norm(_:ord:axis:keepdims:stream:)-7fnqw": {
+      "file_path": "documentation/SPI/mlx-swift/MLXLinalg/norm(_,ord,axis,keepdims,stream)-7fnqw.md",
+      "hash": "4499f2b50569d565b14821a2e7de68efa2425506cdec4356e5dd36f0a6c925f8"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift/main/documentation/mlxlinalg/norm(_:ord:axis:keepdims:stream:)-92jgz": {
+      "file_path": "documentation/SPI/mlx-swift/MLXLinalg/norm(_,ord,axis,keepdims,stream)-92jgz.md",
+      "hash": "6757f06b7e0739e9b9a21c331831a38105c8a4b4a005ba65bc68e17574c49d06"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift/main/documentation/mlxlinalg/qr(_:stream:)": {
+      "file_path": "documentation/SPI/mlx-swift/MLXLinalg/qr(_,stream).md",
+      "hash": "16fb0cb1b6b6c19c702fcb6c192df4bba5ca79e9025a6483136edcbd5ea61e41"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift/main/documentation/mlxlinalg/solve(_:_:stream:)": {
+      "file_path": "documentation/SPI/mlx-swift/MLXLinalg/solve(_,_,stream).md",
+      "hash": "7caca69cad842ae237243b6f1be3803da083ef81946a21931546b8bbdd4411bb"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift/main/documentation/mlxlinalg/solvetriangular(_:_:upper:stream:)": {
+      "file_path": "documentation/SPI/mlx-swift/MLXLinalg/solvetriangular(_,_,upper,stream).md",
+      "hash": "c73d0c447d6ea6906a0a2bca3ca71c321f5786aa00042560067df405e9f9058e"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift/main/documentation/mlxlinalg/svd(_:stream:)": {
+      "file_path": "documentation/SPI/mlx-swift/MLXLinalg/svd(_,stream).md",
+      "hash": "22d810ae5b26e97613c8a6fa73e78490ab05ee33d6115cba63dfb0e3c52b3d9b"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift/main/documentation/mlxlinalg/triinv(_:upper:stream:)": {
+      "file_path": "documentation/SPI/mlx-swift/MLXLinalg/triinv(_,upper,stream).md",
+      "hash": "5857c4e06920e74eda3636752d2134b5fd003e67478c8d73bab5b957f9007c75"
+    }
+  },
+  "metadata": {
+    "render": {
+      "version": 3
+    },
+    "total_pages": 38
+  }
+}

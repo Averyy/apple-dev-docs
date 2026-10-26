@@ -39,7 +39,7 @@ In release builds:
 - Xcode also combines any mergeable pre-built XCFrameworks listed in your target’s Link Binary with Libraries build phase.
 - Xcode embeds mergeable target products in either the merged binary product or into a product, such as an app, that contains the merged binary product. Xcode does *not* include the binaries from the libraries in the embedded copy.
 
-> **Note**: Xcode does not automatically build indirect dependencies as mergeable in release builds. To configure indirect dependencies for merging, see the [Manually configure merging](https://developer.apple.com#Manually-configure-merging) section below.
+> **Note**: Xcode does not automatically build indirect dependencies as mergeable in release builds. To configure indirect dependencies for merging, see the [Manually configure merging](./configuring-your-project-to-use-mergeable-libraries.md#Manually-configure-merging) section below.
 
 In debug builds:
 

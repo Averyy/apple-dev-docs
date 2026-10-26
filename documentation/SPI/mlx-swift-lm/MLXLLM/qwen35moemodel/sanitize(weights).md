@@ -1,0 +1,21 @@
+---
+url: "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/documentation/mlxllm/qwen35moemodel/sanitize(weights:)"
+framework: "mlx-swift-lm/MLXLLM"
+---
+
+# sanitize(weights:)
+
+**Framework**: mlx-swift-lm/MLXLLM  
+**Kind**: method  
+**Role**: Instance Method
+
+## Declaration
+
+```swift
+override func sanitize(weights: [String : MLXArray]) throws -> [String : MLXArray]
+```
+
+
+---
+
+*[View on Swift Package Index](https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/documentation/mlxllm/qwen35moemodel/sanitize(weights:))*

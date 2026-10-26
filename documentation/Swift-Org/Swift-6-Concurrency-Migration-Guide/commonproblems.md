@@ -530,7 +530,7 @@ The `background` property is protected by manual synchronization, while the `for
 
 Actor-isolated types can present a problem when they are initialized in a non-isolated context. This frequently occurs when the type is used in a default value expression or as a property initializer.
 
-> **Note**: These problems could also be a symptom of [latent isolation](https://docs.swift.org/latest#Latent-Isolation) or an [under-specified protocol](https://docs.swift.org/latest#Under-Specified-Protocol).
+> **Note**: These problems could also be a symptom of [latent isolation](./commonproblems.md#Latent-Isolation) or an [under-specified protocol](./commonproblems.md#Under-Specified-Protocol).
 
 Here the non-isolated `Stylers` type is making a call to a `MainActor`-isolated initializer.
 

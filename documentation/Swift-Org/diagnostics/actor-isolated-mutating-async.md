@@ -88,7 +88,7 @@ func getReady() async {
 #### See also
 
 - [In-Out Parameters](https://docs.swift.org/swift-book/documentation/the-swift-programming-language/declarations#In-Out-Parameters)
-- [Overlapping accesses, but operation requires exclusive access (ExclusivityViolation)](https://docs.swift.org/latestexclusivity-violation.md)
+- [Overlapping accesses, but operation requires exclusive access (ExclusivityViolation)](./exclusivity-violation.md.md)
 
 ## See Also
 

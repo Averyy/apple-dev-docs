@@ -17,7 +17,7 @@ Understand, use, and preview the next-generation build system for Package Manage
 
 Swift Package Manager is previewing a new build system [Swift Build](https://github.com/swiftlang/swift-build) as a replacement for the current native build system. This document outlines the current state of the preview, key differences, and known issues.
 
-We encourage you to [try](https://docs.swift.org/latest#How-to-use-the-Swift-Build-build-system) the new build system in your project and [report any issues](https://docs.swift.org/latest#Reporting-issues) you encounter.
+We encourage you to [try](./swiftbuildpreview.md#How-to-use-the-Swift-Build-build-system) the new build system in your project and [report any issues](./swiftbuildpreview.md#Reporting-issues) you encounter.
 
 For more information about the migration to Swift Build, see [this forum post](https://forums.swift.org/t/evolving-swiftpm-builds-with-swift-build/77596).
 
@@ -121,7 +121,7 @@ swift run --build-system swiftbuild
 
 Please follow these steps when reporting issues:
 
-1. Review the [known issues](https://docs.swift.org/latest#Known-issues) listed above to ensure your issue has not already been identified.
+1. Review the [known issues](./swiftbuildpreview.md#Known-issues) listed above to ensure your issue has not already been identified.
 2. If your issue is not listed, [submit a new issue](https://github.com/swiftlang/swift-package-manager/issues) on GitHub.
 3. Include the following information in your report:
 

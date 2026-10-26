@@ -66,7 +66,7 @@ swift test --build-system native
 swift run --build-system native
 ```
 
-If your build passes using the native build system but fails using Swift Build, please [report the issue](https://docs.swift.org/latest#Report-an-issue).
+If your build passes using the native build system but fails using Swift Build, please [report the issue](./api-6.4.md#Report-an-issue).
 
 #### Software Bill of Materials (SBOM) support
 
@@ -96,7 +96,7 @@ When adding or removing a mirror configuration using `swift package config <comm
 
 Please follow these steps when reporting issues:
 
-1. Review the [known issues](https://docs.swift.org/latest#Known-issues) listed above to ensure your issue has not already been identified.
+1. Review the [known issues](./api-6.4.md#Known-issues) listed above to ensure your issue has not already been identified.
 2. If your issue is not listed, [submit a new issue](https://github.com/swiftlang/swift-package-manager/issues) on GitHub.
 3. Include the following information in your report:
 

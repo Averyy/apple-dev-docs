@@ -24571,7 +24571,7 @@
       "hash": "51ee27bbd14d56f0b220560d29ab6efa12fdb534585e38bf14ddc29b59f26ede"
     },
     "https://developer.apple.com/documentation/matter/mtrbaseclustercolorcontrol/readattributecurrenty(completionhandler:)": {
-      "etag": "\"3146-65d5610d6aaac-df\"",
+      "etag": "\"3146-65d5610d6aaac\"",
       "file_path": "documentation/Matter/mtrbaseclustercolorcontrol/readattributecurrenty(completionhandler).md",
       "hash": "c110c269a21b361a624bb9985ca8ed5b99a9fe16858a1fc9129ca3804298d261"
     },
@@ -69971,7 +69971,7 @@
       "hash": "397d4ba2b40534bacabda3cbab00780aa7e524f360f3f498eecbe5b3c0089b68"
     },
     "https://developer.apple.com/documentation/matter/mtrclusterbasicinformation/readattributeproducturl(with:)": {
-      "etag": "\"2659-65d5610341ce6\"",
+      "etag": "\"2659-65d5610341ce6-df\"",
       "file_path": "documentation/Matter/mtrclusterbasicinformation/readattributeproducturl(with).md",
       "hash": "6b46eb7a93c6fd1736822e06079959805c221f232def181c6cb5cd7fe1112fdc"
     },
@@ -146471,7 +146471,7 @@
       "hash": "51ee27bbd14d56f0b220560d29ab6efa12fdb534585e38bf14ddc29b59f26ede"
     },
     "https://developer.apple.com/tutorials/data/documentation/matter/mtrbaseclustercolorcontrol/readattributecurrenty(completionhandler:).json": {
-      "etag": "\"3146-65d5610d6aaac-df\"",
+      "etag": "\"3146-65d5610d6aaac\"",
       "file_path": "documentation/Matter/mtrbaseclustercolorcontrol/readattributecurrenty(completionhandler).md",
       "hash": "c110c269a21b361a624bb9985ca8ed5b99a9fe16858a1fc9129ca3804298d261"
     },
@@ -191871,7 +191871,7 @@
       "hash": "397d4ba2b40534bacabda3cbab00780aa7e524f360f3f498eecbe5b3c0089b68"
     },
     "https://developer.apple.com/tutorials/data/documentation/matter/mtrclusterbasicinformation/readattributeproducturl(with:).json": {
-      "etag": "\"2659-65d5610341ce6\"",
+      "etag": "\"2659-65d5610341ce6-df\"",
       "file_path": "documentation/Matter/mtrclusterbasicinformation/readattributeproducturl(with).md",
       "hash": "6b46eb7a93c6fd1736822e06079959805c221f232def181c6cb5cd7fe1112fdc"
     },
@@ -243803,7 +243803,7 @@
   },
   "metadata": {
     "render": {
-      "version": 2
+      "version": 3
     },
     "total_pages": 48760
   }

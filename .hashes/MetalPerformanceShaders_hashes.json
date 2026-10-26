@@ -14661,7 +14661,7 @@
       "hash": "d075caeeec2f20542219c311bb9de4b3c20a8d7ac3132751245c64bb31ca0085"
     },
     "https://developer.apple.com/documentation/metalperformanceshaders/mpsrnnmatrixid/lstmforgetgatebiasterms": {
-      "etag": "\"1aff-65d55dabd69dc-df\"",
+      "etag": "\"1aff-65d55dabd69dc\"",
       "file_path": "documentation/MetalPerformanceShaders/mpsrnnmatrixid/lstmforgetgatebiasterms.md",
       "hash": "765eac2290d9a1e0ba608b599697c7f7c43f3f241ded81d4fcc3c45604b801c8"
     },
@@ -30601,7 +30601,7 @@
       "hash": "d075caeeec2f20542219c311bb9de4b3c20a8d7ac3132751245c64bb31ca0085"
     },
     "https://developer.apple.com/tutorials/data/documentation/metalperformanceshaders/mpsrnnmatrixid/lstmforgetgatebiasterms.json": {
-      "etag": "\"1aff-65d55dabd69dc-df\"",
+      "etag": "\"1aff-65d55dabd69dc\"",
       "file_path": "documentation/MetalPerformanceShaders/mpsrnnmatrixid/lstmforgetgatebiasterms.md",
       "hash": "765eac2290d9a1e0ba608b599697c7f7c43f3f241ded81d4fcc3c45604b801c8"
     },
@@ -31883,7 +31883,7 @@
   },
   "metadata": {
     "render": {
-      "version": 2
+      "version": 3
     },
     "total_pages": 6376
   }

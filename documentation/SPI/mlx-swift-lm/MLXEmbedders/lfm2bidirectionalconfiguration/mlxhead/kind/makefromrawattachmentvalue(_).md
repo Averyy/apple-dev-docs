@@ -1,0 +1,34 @@
+---
+url: "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/documentation/mlxembedders/lfm2bidirectionalconfiguration/mlxhead/kind/makefromrawattachmentvalue(_:)"
+framework: "mlx-swift-lm/MLXEmbedders"
+---
+
+# makeFromRawAttachmentValue(_:)
+
+**Framework**: mlx-swift-lm/MLXEmbedders  
+**Kind**: method  
+**Role**: Type Method
+
+Inherited from `RawRepresentable.makeFromRawAttachmentValue(_:)`.
+
+**Availability**:
+- iOS 27.0+
+- iPadOS 27.0+
+- Mac Catalyst 27.0+
+- macOS 27.0+
+- tvOS 27.0+
+- visionOS 27.0+
+- watchOS 27.0+
+
+## Declaration
+
+```swift
+static func makeFromRawAttachmentValue(_ repr: CVAttachmentRawValue) -> Self?
+```
+
+Available when `RawValue` conforms to `CVAttachmentValueRepresentable`.
+
+
+---
+
+*[View on Swift Package Index](https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/documentation/mlxembedders/lfm2bidirectionalconfiguration/mlxhead/kind/makefromrawattachmentvalue(_:))*

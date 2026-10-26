@@ -28,7 +28,7 @@ For object tracking to work best in your app, make sure your object is *rigid*. 
 
 By default, object tracking delivers pose updates at a lower frequency and consumes less power. This works well for stationary objects, or cases where virtual content doesn’t need to match the object’s exact position on every frame.
 
-For moving or handheld objects, like surgical instruments or power tools, set [`highFrameRateTrackingEnabled`](../ARKit/referenceobject/configuration/highframeratetrackingenabled.md) when you create the object tracking session in visionOS, or assign the object to [`trackingObjects`](../ARKit/arworldtrackingconfiguration/trackingobjects.md) in iOS. This gives you a precise pose update on every frame. For best results, train your reference object in extended mode. For more information, see [Train a machine learning model with the 3D model asset in Create ML](https://developer.apple.com#Train-a-machine-learning-model-with-the-3D-model-asset-in-Create-ML) later in this article.
+For moving or handheld objects, like surgical instruments or power tools, set [`highFrameRateTrackingEnabled`](../ARKit/referenceobject/configuration/highframeratetrackingenabled.md) when you create the object tracking session in visionOS, or assign the object to [`trackingObjects`](../ARKit/arworldtrackingconfiguration/trackingobjects.md) in iOS. This gives you a precise pose update on every frame. For best results, train your reference object in extended mode. For more information, see [Train a machine learning model with the 3D model asset in Create ML](./implementing-object-tracking-in-your-app.md#Train-a-machine-learning-model-with-the-3D-model-asset-in-Create-ML) later in this article.
 
 #### Obtain a 3D model of your object
 
@@ -119,7 +119,7 @@ To use extended training mode, pass the `-m` option with the mode specified as `
 % xcrun createml objecttracker -s source.usdz -o tracker.referenceobject -m extended --all-angles
 ```
 
-For more information on training modes, see [Train a machine learning model with the 3D model asset in Create ML](https://developer.apple.com#Train-a-machine-learning-model-with-the-3D-model-asset-in-Create-ML) earlier in this article.
+For more information on training modes, see [Train a machine learning model with the 3D model asset in Create ML](./implementing-object-tracking-in-your-app.md#Train-a-machine-learning-model-with-the-3D-model-asset-in-Create-ML) earlier in this article.
 
 After you run the tool, it starts training your object. Use the help option (`-h`) for more information on training and topics like viewing angles, objects to avoid, and redirection to alternative pipes:
 

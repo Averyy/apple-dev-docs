@@ -38,7 +38,7 @@ let analyzer = SpeechAnalyzer(modules: modules)
 
 The transcriber module defines presets that bundle common configuration options together. The app uses the [`progressiveLongDictation`](./dictationtranscriber/preset/progressivelongdictation.md) preset, which provides immediate preliminary transcriptions followed by more refined and accurate transcriptions as they become available.
 
-The app also configures the transcriber with a content hint. Content hints help the transcriber understand the type of content being dictated, improving transcription accuracy. The [`customizedLanguage(modelConfiguration:)`](./dictationtranscriber/contenthint/customizedlanguage%28modelconfiguration%29.md) hint provides the transcriber with the specialized chess vocabulary described in the [Customize the language model](https://developer.apple.com#customize-the-language-model) section below, helping to ensure that the app transcribes that vocabulary correctly.
+The app also configures the transcriber with a content hint. Content hints help the transcriber understand the type of content being dictated, improving transcription accuracy. The [`customizedLanguage(modelConfiguration:)`](./dictationtranscriber/contenthint/customizedlanguage%28modelconfiguration%29.md) hint provides the transcriber with the specialized chess vocabulary described in the [Customize the language model](./recognizing-speech-in-live-audio.md#customize-the-language-model) section below, helping to ensure that the app transcribes that vocabulary correctly.
 
 ```swift
 let preset = DictationTranscriber.Preset.progressiveLongDictation

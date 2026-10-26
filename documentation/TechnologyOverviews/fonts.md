@@ -100,7 +100,7 @@ The set of pre-installed document fonts varies by platform: macOS ships the full
 
 Some fonts in Apple’s document font library don’t come installed by default, but you can download them on demand. These are the same Apple-provided fonts listed at [System Fonts](https://developer.apple.com/fonts/system-fonts/) — you identify them by PostScript name. To make one available to your app, create a font descriptor for it and pass it to the font matching APIs in [Core Text](../CoreText/CoreText.md). After the download completes, the font behaves like any other installed font, and you can retrieve it by name. Downloadable fonts aren’t supported in watchOS or tvOS.
 
-> ❗ **Important**: To use or enumerate downloaded fonts in iOS, your app must add the Fonts capability with the Use Installed Fonts option enabled. See [Add the Fonts capability for iOS](https://developer.apple.com#Add-the-Fonts-capability-for-iOS) for details.
+> ❗ **Important**: To use or enumerate downloaded fonts in iOS, your app must add the Fonts capability with the Use Installed Fonts option enabled. See [Add the Fonts capability for iOS](./fonts.md#Add-the-Fonts-capability-for-iOS) for details.
 
 The following example requests a download for a specific font and retrieves it on completion:
 
@@ -125,7 +125,7 @@ When the system and document fonts don’t include the typeface your design call
 
 Place your font files in your app’s bundle, an asset catalog, or an Apple-hosted asset pack, and register them at launch as described in [Applying custom fonts to text](../SwiftUI/applying-custom-fonts-to-text.md) for SwiftUI or [Adding a custom font to your app](../UIKit/adding-a-custom-font-to-your-app.md) for UIKit. After registration, you retrieve a bundled font by its PostScript name using the standard font APIs, and the font appears in system-provided pickers like the macOS Font Panel and [`UIFontPickerViewController`](../UIKit/uifontpickerviewcontroller.md) in iOS.
 
-To register a bundled font manually, use the font manager in Core Text at launch time, and pass the font file URL with `.process` scope. If your app downloads fonts itself, register them as soon as the download finishes. In macOS, you can also install a font your app downloads itself at the system level, as described in [Install fonts for systemwide use](https://developer.apple.com#Install-fonts-for-systemwide-use); that option isn’t available in iOS or visionOS.
+To register a bundled font manually, use the font manager in Core Text at launch time, and pass the font file URL with `.process` scope. If your app downloads fonts itself, register them as soon as the download finishes. In macOS, you can also install a font your app downloads itself at the system level, as described in [Install fonts for systemwide use](./fonts.md#Install-fonts-for-systemwide-use); that option isn’t available in iOS or visionOS.
 
 ```swift
 if let fontURL = Bundle.main.url(forResource: "MyFont-Regular", withExtension: "ttf") {
@@ -193,7 +193,7 @@ Alternatively, put the font in a framework that both your app and your widget ex
 
 You can install a custom font at the system level to make it available to other, unrelated apps (for example, if you distribute a suite of apps that share a common typeface). Font management apps like Font Book in macOS and the Fonts pane in iOS Settings let people install fonts this way.
 
-> 💡 **Tip**: To share a bundled font with your own widget extension, you don’t need to install it systemwide. See [Share a bundled font with your widget extension](https://developer.apple.com#Share-a-bundled-font-with-your-widget-extension) instead.
+> 💡 **Tip**: To share a bundled font with your own widget extension, you don’t need to install it systemwide. See [Share a bundled font with your widget extension](./fonts.md#Share-a-bundled-font-with-your-widget-extension) instead.
 
 Use the same Core Text registration API your app uses for bundled fonts, but change the scope from [`CTFontManagerScope.process`](../CoreText/ctfontmanagerscope/process.md) to [`CTFontManagerScope.persistent`](../CoreText/ctfontmanagerscope/persistent.md):
 

@@ -37,7 +37,7 @@ Could affect code involving multiple, defaulted closure parameters.
 
 Will introduce errors for any code that risks data races.
 
-> **Note**: This feature implicitly also enables [IsolatedDefaultValues](https://docs.swift.org/latest#Isolated-default-value-expressions), [GlobalConcurrency](https://docs.swift.org/latest#Strict-concurrency-for-global-variables), and [RegionBasedIsolation](https://docs.swift.org/latest#Region-based-Isolation).
+> **Note**: This feature implicitly also enables [IsolatedDefaultValues](./sourcecompatibility.md#Isolated-default-value-expressions), [GlobalConcurrency](./sourcecompatibility.md#Strict-concurrency-for-global-variables), and [RegionBasedIsolation](./sourcecompatibility.md#Region-based-Isolation).
 
 #### Implicitly Opened Existentials
 

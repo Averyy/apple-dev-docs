@@ -41,7 +41,7 @@
       "hash": "df68d5fb105f62b95b7762adc2139a034cf4b7da29f7392c03405bb0c3768ae7"
     },
     "https://developer.apple.com/documentation/findersync/fifindersynccontroller/setbadgeidentifier(_:for:)": {
-      "etag": "\"500a-65d560caee8f5-df\"",
+      "etag": "\"500a-65d560caee8f5\"",
       "file_path": "documentation/FinderSync/fifindersynccontroller/setbadgeidentifier(_,for).md",
       "hash": "1c7e909c95e516e1075833a058d61c4238c60c9ab6c5f2a35568ad3c5eacd9be"
     },
@@ -206,7 +206,7 @@
       "hash": "df68d5fb105f62b95b7762adc2139a034cf4b7da29f7392c03405bb0c3768ae7"
     },
     "https://developer.apple.com/tutorials/data/documentation/findersync/fifindersynccontroller/setbadgeidentifier(_:for:).json": {
-      "etag": "\"500a-65d560caee8f5-df\"",
+      "etag": "\"500a-65d560caee8f5\"",
       "file_path": "documentation/FinderSync/fifindersynccontroller/setbadgeidentifier(_,for).md",
       "hash": "1c7e909c95e516e1075833a058d61c4238c60c9ab6c5f2a35568ad3c5eacd9be"
     },
@@ -333,7 +333,7 @@
   },
   "metadata": {
     "render": {
-      "version": 2
+      "version": 3
     },
     "total_pages": 66
   }

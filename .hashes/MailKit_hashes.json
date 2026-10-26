@@ -66,7 +66,7 @@
       "hash": "c9f7c5e1ec8e42cc9628619bfeaced14db39a43cf9a4c36790e3d6e9f4f26eb0"
     },
     "https://developer.apple.com/documentation/mailkit/mecomposecontext/issigned": {
-      "etag": "\"34af-65d55e19c056e-df\"",
+      "etag": "\"34af-65d55e19c056e\"",
       "file_path": "documentation/MailKit/mecomposecontext/issigned.md",
       "hash": "6fc39d2e00f8e75653188e1607f726c00bdb6a2107dfef8e33add2ab0941d9da"
     },
@@ -1031,7 +1031,7 @@
       "hash": "c9f7c5e1ec8e42cc9628619bfeaced14db39a43cf9a4c36790e3d6e9f4f26eb0"
     },
     "https://developer.apple.com/tutorials/data/documentation/mailkit/mecomposecontext/issigned.json": {
-      "etag": "\"34af-65d55e19c056e-df\"",
+      "etag": "\"34af-65d55e19c056e\"",
       "file_path": "documentation/MailKit/mecomposecontext/issigned.md",
       "hash": "6fc39d2e00f8e75653188e1607f726c00bdb6a2107dfef8e33add2ab0941d9da"
     },
@@ -1933,7 +1933,7 @@
   },
   "metadata": {
     "render": {
-      "version": 2
+      "version": 3
     },
     "total_pages": 386
   }

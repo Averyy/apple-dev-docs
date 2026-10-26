@@ -411,7 +411,7 @@ The visionOS SDK provides support for developing apps for Apple Vision Pro devic
 - Fixed: Calling [display](../StoreKit/message/api-3963915-display.md) on a [message](../StoreKit/message.md) might not display the message.  (106523068)
 - Fixed: Loading animation for [`StoreView`](../StoreKit/storeview.md) instances displaying a single product.  (110414023)
 - Fixed: The following StoreKitTest APIs are now available when testing on iOS 17 beta, watchOS 10 beta, tvOS 17 beta, and visionOS beta: [setSimulatedError(_:forAPI:)](../StoreKitTest/sktestsession/api-4196369-setsimulatederror.md), [simulatedError(forAPI:)](../StoreKitTest/sktestsession/api-4196370-simulatederror.md), and [buyProduct(identifier:options:)](../StoreKitTest/sktestsession/api-4196368-buyproduct.md).  (110547289)
-- Fixed: [StoreView](https://developer.apple.com﻿﻿https://developer.apple.com/documentation/storekit/storeview) or [`SubscriptionStoreView`](../StoreKit/subscriptionstoreview.md) content might appear in English, or show a localization key, instead of showing localized text for the App Store storefront.  (110734447)
+- Fixed: [StoreView](../StoreKit/storeview.md) or [`SubscriptionStoreView`](../StoreKit/subscriptionstoreview.md) content might appear in English, or show a localization key, instead of showing localized text for the App Store storefront.  (110734447)
 
 ##### SwiftData
 

@@ -4935,7 +4935,7 @@
       "hash": "3e8970d2e0b227f773b62307cd35131abb53e4ff3b624a84ab3ef06b14e64e29"
     },
     "https://developer.apple.com/documentation/realitykit/blendshapeweightsset/init()": {
-      "etag": "\"d41-65d55e73695f5-df\"",
+      "etag": "\"d41-65d55e73695f5\"",
       "file_path": "documentation/RealityKit/blendshapeweightsset/init().md",
       "hash": "a49c57c6cfd81aa010fc5ceb6af61be4c5ff9bd3d0d3165f4a2f56963144d459"
     },
@@ -23407,7 +23407,7 @@
       "hash": "adc0fa46e1f42a8ceb08a4cdf501bfd1dbe70d362c4df31abdb67fe0abfaf7cd"
     },
     "https://developer.apple.com/documentation/realitykit/physicallybasedmaterial/init()": {
-      "etag": "\"11ae-65d55e6ce0b7d\"",
+      "etag": "\"11ae-65d55e6ce0b7d-df\"",
       "file_path": "documentation/RealityKit/physicallybasedmaterial/init().md",
       "hash": "2c0355a2113393760bbbe9212baceb749cf09b1ba14aa82379f3085572fec03e"
     },
@@ -36050,7 +36050,7 @@
       "hash": "3e8970d2e0b227f773b62307cd35131abb53e4ff3b624a84ab3ef06b14e64e29"
     },
     "https://developer.apple.com/tutorials/data/documentation/realitykit/blendshapeweightsset/init().json": {
-      "etag": "\"d41-65d55e73695f5-df\"",
+      "etag": "\"d41-65d55e73695f5\"",
       "file_path": "documentation/RealityKit/blendshapeweightsset/init().md",
       "hash": "a49c57c6cfd81aa010fc5ceb6af61be4c5ff9bd3d0d3165f4a2f56963144d459"
     },
@@ -54542,7 +54542,7 @@
       "hash": "adc0fa46e1f42a8ceb08a4cdf501bfd1dbe70d362c4df31abdb67fe0abfaf7cd"
     },
     "https://developer.apple.com/tutorials/data/documentation/realitykit/physicallybasedmaterial/init().json": {
-      "etag": "\"11ae-65d55e6ce0b7d\"",
+      "etag": "\"11ae-65d55e6ce0b7d-df\"",
       "file_path": "documentation/RealityKit/physicallybasedmaterial/init().md",
       "hash": "2c0355a2113393760bbbe9212baceb749cf09b1ba14aa82379f3085572fec03e"
     },
@@ -62253,7 +62253,7 @@
   },
   "metadata": {
     "render": {
-      "version": 2
+      "version": 3
     },
     "total_pages": 12453
   }

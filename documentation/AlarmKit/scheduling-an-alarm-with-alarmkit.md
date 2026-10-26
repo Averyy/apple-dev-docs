@@ -160,7 +160,7 @@ Task {
 
 #### Create a Widget Extension for Live Activities
 
-The sample app adds a widget extension target to customize non-alerting presentations in the Dynamic Island, Lock Screen, and StandBy. The widget extension receives the same [`AlarmAttributes`](./alarmattributes.md) structure that you provide to [`shared`](./alarmmanager/shared.md) when scheduling alarms. It includes the metadata provided in the [Configure the alarm’s UI attributes](https://developer.apple.com#Configure-the-alarms-UI-attributes) section above.
+The sample app adds a widget extension target to customize non-alerting presentations in the Dynamic Island, Lock Screen, and StandBy. The widget extension receives the same [`AlarmAttributes`](./alarmattributes.md) structure that you provide to [`shared`](./alarmmanager/shared.md) when scheduling alarms. It includes the metadata provided in the [Configure the alarm’s UI attributes](./scheduling-an-alarm-with-alarmkit.md#Configure-the-alarms-UI-attributes) section above.
 
 > ❗ **Important**: AlarmKit expects a widget extension if an app supports a countdown presentation. Otherwise, the system may unexpectedly dismiss alarms and fail to alert. For more information, see [ActivityKit](../ActivityKit/ActivityKit.md).
 

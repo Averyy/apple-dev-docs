@@ -40,7 +40,7 @@ To work with just the conversation *turns* — the prompts and responses a perso
 
 #### Recover from a full context window
 
-Every language model has a fixed context window. To check the context size of Apple Intelligence models, use [SystemLanguageModel.contextSize](https://developer.apple.com``SystemLanguageModel/contextSize``) or [PrivateCloudComputeLanguageModel.contextSize](https://developer.apple.com``PrivateCloudComputeLanguageModel/contextSize``). When a session exceeds the window, the framework throws [`LanguageModelError.contextSizeExceeded(_:)`](./languagemodelerror/contextsizeexceeded%28_%29.md) and the session stops responding. Recover by reducing the transcript to only the entries that still matter and retry the request.
+Every language model has a fixed context window. To check the context size of Apple Intelligence models, use [SystemLanguageModel.contextSize](./__systemlanguagemodel/contextsize__.md) or [PrivateCloudComputeLanguageModel.contextSize](./__privatecloudcomputelanguagemodel/contextsize__.md). When a session exceeds the window, the framework throws [`LanguageModelError.contextSizeExceeded(_:)`](./languagemodelerror/contextsizeexceeded%28_%29.md) and the session stops responding. Recover by reducing the transcript to only the entries that still matter and retry the request.
 
 Because [`transcript`](./languagemodelsession/transcript.md) is mutable, trim it in place before reaching the context size. Build a condensed [`Transcript`](./transcript.md) from a selection of the original entries. For example, the first and last entries are a good choice because you carry forward your instructions and the latest context. Assign the result back to the session, as shown here:
 

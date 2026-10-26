@@ -108,7 +108,7 @@ Blocked time indicates that your renderer finished submitting its draw commands 
 By contrast, if your rendering threads don’t show much blocked time, it’s likely that your app is overutilizing the CPU. To identify whether your app is overutilizing the CPU, and to determine the reason, perform the following steps:
 
 1. Observe a stutter, as identified by a display duration longer than 16.67 ms. 
-2. Ensure that shader code isn’t the cause of the low frame rate. For more information, see [Check GPU utilization](https://developer.apple.com#Check-GPU-utilization) above.
+2. Ensure that shader code isn’t the cause of the low frame rate. For more information, see [Check GPU utilization](./analyzing-the-performance-of-your-metal-app.md#Check-GPU-utilization) above.
 3. Check the thread states for Running that are blue in color.
 4. Click the thread’s track to select it.
 5. Choose Profile from the View Selection menu.

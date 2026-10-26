@@ -1,0 +1,226 @@
+{
+  "hashes": {
+    "https://swiftpackageindex.com/ml-explore/mlx-swift/main/data/documentation/mlxrandom.json": {
+      "file_path": "documentation/SPI/mlx-swift/MLXRandom/MLXRandom.md",
+      "hash": "bc89ecc43d8bdc13de1370db831e921770fe11364bdd95359c8d91678e05bfba"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift/main/data/documentation/mlxrandom/bernoulli(_:_:key:stream:).json": {
+      "file_path": "documentation/SPI/mlx-swift/MLXRandom/bernoulli(_,_,key,stream).md",
+      "hash": "bd4cf8182ffcbaf437b35ea57a9f2ee301a00ed30b322aed0bac39e2b856b4a9"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift/main/data/documentation/mlxrandom/bernoulli(_:key:stream:).json": {
+      "file_path": "documentation/SPI/mlx-swift/MLXRandom/bernoulli(_,key,stream).md",
+      "hash": "071fc0d235bb11af3a6d87c09f080d2dce14e3cee512dc7f675bd8e7e48b4dd1"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift/main/data/documentation/mlxrandom/categorical(_:axis:count:key:stream:).json": {
+      "file_path": "documentation/SPI/mlx-swift/MLXRandom/categorical(_,axis,count,key,stream).md",
+      "hash": "ab905f827d648a2923a8a4e2abba81e8aa521dc50464ffce66131ada58c2a7fc"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift/main/data/documentation/mlxrandom/categorical(_:axis:shape:key:stream:).json": {
+      "file_path": "documentation/SPI/mlx-swift/MLXRandom/categorical(_,axis,shape,key,stream).md",
+      "hash": "cbfec2b60e23f911a25629b84fc56d6c810115b5d46b664fbde8056570778b27"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift/main/data/documentation/mlxrandom/deprecationwarning.json": {
+      "file_path": "documentation/SPI/mlx-swift/MLXRandom/deprecationwarning.md",
+      "hash": "7fafd39e8a69145938cda720ba4582c060a1212e0ab74113cdcb21fbec5b169a"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift/main/data/documentation/mlxrandom/gumbel(_:dtype:key:stream:).json": {
+      "file_path": "documentation/SPI/mlx-swift/MLXRandom/gumbel(_,dtype,key,stream).md",
+      "hash": "066b302004004f25b8d199f05796aafa11f12d6d90d647704bef37e3a2ca66fb"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift/main/data/documentation/mlxrandom/gumbel(_:type:key:stream:).json": {
+      "file_path": "documentation/SPI/mlx-swift/MLXRandom/gumbel(_,type,key,stream).md",
+      "hash": "1d7f10ac01e1c416f123fe8957dcba0aa30dc9ca2b3aaa27cfbef3a66a46d89f"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift/main/data/documentation/mlxrandom/key(_:).json": {
+      "file_path": "documentation/SPI/mlx-swift/MLXRandom/key(_).md",
+      "hash": "1d71d1acdc808f2991aacb9b8f0cbd890f07474487d6425f1695f1ca88d057d0"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift/main/data/documentation/mlxrandom/laplace(_:dtype:loc:scale:key:stream:).json": {
+      "file_path": "documentation/SPI/mlx-swift/MLXRandom/laplace(_,dtype,loc,scale,key,stream).md",
+      "hash": "8dfd951a1fa101c39bbc11754993986781b7075d25f44595d44f30e962a7b426"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift/main/data/documentation/mlxrandom/multivariatenormal(mean:covariance:shape:dtype:key:stream:).json": {
+      "file_path": "documentation/SPI/mlx-swift/MLXRandom/multivariatenormal(mean,covariance,shape,dtype,key,stream).md",
+      "hash": "726e58d7fbbfd5888eb1669725360f3460ee7fe11c7f02e8abaec3167b679e52"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift/main/data/documentation/mlxrandom/normal(_:dtype:loc:scale:key:stream:).json": {
+      "file_path": "documentation/SPI/mlx-swift/MLXRandom/normal(_,dtype,loc,scale,key,stream).md",
+      "hash": "31d5244660edc544a8685e1b0fa61a5a0d897a6bb37896954dbda4950f59bfee"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift/main/data/documentation/mlxrandom/normal(_:type:loc:scale:key:stream:).json": {
+      "file_path": "documentation/SPI/mlx-swift/MLXRandom/normal(_,type,loc,scale,key,stream).md",
+      "hash": "aeededd96e5c5de4ca02f8047b2b2d86f1bf13b332f93f4ed45d44e511121a4c"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift/main/data/documentation/mlxrandom/randint(_:_:key:stream:).json": {
+      "file_path": "documentation/SPI/mlx-swift/MLXRandom/randint(_,_,key,stream).md",
+      "hash": "30e4101164f68b3cbe40a9801be299b43a567e703ac42cafb9cbf2cf57526fbb"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift/main/data/documentation/mlxrandom/randint(low:high:_:key:stream:).json": {
+      "file_path": "documentation/SPI/mlx-swift/MLXRandom/randint(low,high,_,key,stream).md",
+      "hash": "51de7f3864487ac750faac141170081f365c9889f773cb6e91cec25c228e5ebb"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift/main/data/documentation/mlxrandom/randint(low:high:_:type:key:stream:).json": {
+      "file_path": "documentation/SPI/mlx-swift/MLXRandom/randint(low,high,_,type,key,stream).md",
+      "hash": "69feaf0bac5af408da4762561f5bd080e6507ea82e6beb282456fa9412de7d0b"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift/main/data/documentation/mlxrandom/seed(_:).json": {
+      "file_path": "documentation/SPI/mlx-swift/MLXRandom/seed(_).md",
+      "hash": "9ef4ece6fe02066b69391e52e23422b637e4aaf324d7cd0338a8054bfe3d4b24"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift/main/data/documentation/mlxrandom/split(key:into:stream:).json": {
+      "file_path": "documentation/SPI/mlx-swift/MLXRandom/split(key,into,stream).md",
+      "hash": "96d8262f79aa9d0c63c7919ca264f96c19ee9723379256d075263fb4a82942f4"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift/main/data/documentation/mlxrandom/split(key:stream:).json": {
+      "file_path": "documentation/SPI/mlx-swift/MLXRandom/split(key,stream).md",
+      "hash": "8fc3a00f604621648252b56ae810fe9e59de65e11572a49baae8165d9bd42419"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift/main/data/documentation/mlxrandom/truncatednormal(_:_:type:key:stream:)-62jwe.json": {
+      "file_path": "documentation/SPI/mlx-swift/MLXRandom/truncatednormal(_,_,type,key,stream)-62jwe.md",
+      "hash": "f0639b0406c0d3c116dca0454bf6fe6bc80552aea9575d4f757ff02a13acbf55"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift/main/data/documentation/mlxrandom/truncatednormal(_:_:type:key:stream:)-8vjij.json": {
+      "file_path": "documentation/SPI/mlx-swift/MLXRandom/truncatednormal(_,_,type,key,stream)-8vjij.md",
+      "hash": "dbbce387a8e18edef02235590dea597a08cad779aff406d3babf74fa7e944b1f"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift/main/data/documentation/mlxrandom/truncatednormal(low:high:_:dtype:key:stream:).json": {
+      "file_path": "documentation/SPI/mlx-swift/MLXRandom/truncatednormal(low,high,_,dtype,key,stream).md",
+      "hash": "27ce059f2f10db598f038f91f07f67b30c6cdb72c21db3cdd43f0079e244176e"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift/main/data/documentation/mlxrandom/truncatednormal(low:high:_:type:key:stream:).json": {
+      "file_path": "documentation/SPI/mlx-swift/MLXRandom/truncatednormal(low,high,_,type,key,stream).md",
+      "hash": "87a03226fd172db19c87368ceb78195dfd792c1da54196cfe4ec81f41399ac5c"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift/main/data/documentation/mlxrandom/uniform(_:_:type:key:stream:)-10gj2.json": {
+      "file_path": "documentation/SPI/mlx-swift/MLXRandom/uniform(_,_,type,key,stream)-10gj2.md",
+      "hash": "c27da9568c3972cde432505936a662702be18d88bd8a291569b7be58dc72e72c"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift/main/data/documentation/mlxrandom/uniform(_:_:type:key:stream:)-4d6d2.json": {
+      "file_path": "documentation/SPI/mlx-swift/MLXRandom/uniform(_,_,type,key,stream)-4d6d2.md",
+      "hash": "49fc7f6eb3311341c9bb769ee37cd0aaab9fa8726069bfedcf9e58e72458456d"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift/main/data/documentation/mlxrandom/uniform(low:high:_:dtype:key:stream:).json": {
+      "file_path": "documentation/SPI/mlx-swift/MLXRandom/uniform(low,high,_,dtype,key,stream).md",
+      "hash": "9ee8fbac8a3fc47058a9358844194e3a8aaff9180c68350cbf38d5e775175fa0"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift/main/data/documentation/mlxrandom/uniform(low:high:_:type:key:stream:).json": {
+      "file_path": "documentation/SPI/mlx-swift/MLXRandom/uniform(low,high,_,type,key,stream).md",
+      "hash": "f9112fe4b6d2142d54a61f46bf4eec1271a1ca4552799f1c7b23971cfe500d08"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift/main/documentation/mlxrandom": {
+      "file_path": "documentation/SPI/mlx-swift/MLXRandom/MLXRandom.md",
+      "hash": "bc89ecc43d8bdc13de1370db831e921770fe11364bdd95359c8d91678e05bfba"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift/main/documentation/mlxrandom/bernoulli(_:_:key:stream:)": {
+      "file_path": "documentation/SPI/mlx-swift/MLXRandom/bernoulli(_,_,key,stream).md",
+      "hash": "bd4cf8182ffcbaf437b35ea57a9f2ee301a00ed30b322aed0bac39e2b856b4a9"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift/main/documentation/mlxrandom/bernoulli(_:key:stream:)": {
+      "file_path": "documentation/SPI/mlx-swift/MLXRandom/bernoulli(_,key,stream).md",
+      "hash": "071fc0d235bb11af3a6d87c09f080d2dce14e3cee512dc7f675bd8e7e48b4dd1"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift/main/documentation/mlxrandom/categorical(_:axis:count:key:stream:)": {
+      "file_path": "documentation/SPI/mlx-swift/MLXRandom/categorical(_,axis,count,key,stream).md",
+      "hash": "ab905f827d648a2923a8a4e2abba81e8aa521dc50464ffce66131ada58c2a7fc"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift/main/documentation/mlxrandom/categorical(_:axis:shape:key:stream:)": {
+      "file_path": "documentation/SPI/mlx-swift/MLXRandom/categorical(_,axis,shape,key,stream).md",
+      "hash": "cbfec2b60e23f911a25629b84fc56d6c810115b5d46b664fbde8056570778b27"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift/main/documentation/mlxrandom/deprecationwarning": {
+      "file_path": "documentation/SPI/mlx-swift/MLXRandom/deprecationwarning.md",
+      "hash": "7fafd39e8a69145938cda720ba4582c060a1212e0ab74113cdcb21fbec5b169a"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift/main/documentation/mlxrandom/gumbel(_:dtype:key:stream:)": {
+      "file_path": "documentation/SPI/mlx-swift/MLXRandom/gumbel(_,dtype,key,stream).md",
+      "hash": "066b302004004f25b8d199f05796aafa11f12d6d90d647704bef37e3a2ca66fb"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift/main/documentation/mlxrandom/gumbel(_:type:key:stream:)": {
+      "file_path": "documentation/SPI/mlx-swift/MLXRandom/gumbel(_,type,key,stream).md",
+      "hash": "1d7f10ac01e1c416f123fe8957dcba0aa30dc9ca2b3aaa27cfbef3a66a46d89f"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift/main/documentation/mlxrandom/key(_:)": {
+      "file_path": "documentation/SPI/mlx-swift/MLXRandom/key(_).md",
+      "hash": "1d71d1acdc808f2991aacb9b8f0cbd890f07474487d6425f1695f1ca88d057d0"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift/main/documentation/mlxrandom/laplace(_:dtype:loc:scale:key:stream:)": {
+      "file_path": "documentation/SPI/mlx-swift/MLXRandom/laplace(_,dtype,loc,scale,key,stream).md",
+      "hash": "8dfd951a1fa101c39bbc11754993986781b7075d25f44595d44f30e962a7b426"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift/main/documentation/mlxrandom/multivariatenormal(mean:covariance:shape:dtype:key:stream:)": {
+      "file_path": "documentation/SPI/mlx-swift/MLXRandom/multivariatenormal(mean,covariance,shape,dtype,key,stream).md",
+      "hash": "726e58d7fbbfd5888eb1669725360f3460ee7fe11c7f02e8abaec3167b679e52"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift/main/documentation/mlxrandom/normal(_:dtype:loc:scale:key:stream:)": {
+      "file_path": "documentation/SPI/mlx-swift/MLXRandom/normal(_,dtype,loc,scale,key,stream).md",
+      "hash": "31d5244660edc544a8685e1b0fa61a5a0d897a6bb37896954dbda4950f59bfee"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift/main/documentation/mlxrandom/normal(_:type:loc:scale:key:stream:)": {
+      "file_path": "documentation/SPI/mlx-swift/MLXRandom/normal(_,type,loc,scale,key,stream).md",
+      "hash": "aeededd96e5c5de4ca02f8047b2b2d86f1bf13b332f93f4ed45d44e511121a4c"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift/main/documentation/mlxrandom/randint(_:_:key:stream:)": {
+      "file_path": "documentation/SPI/mlx-swift/MLXRandom/randint(_,_,key,stream).md",
+      "hash": "30e4101164f68b3cbe40a9801be299b43a567e703ac42cafb9cbf2cf57526fbb"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift/main/documentation/mlxrandom/randint(low:high:_:key:stream:)": {
+      "file_path": "documentation/SPI/mlx-swift/MLXRandom/randint(low,high,_,key,stream).md",
+      "hash": "51de7f3864487ac750faac141170081f365c9889f773cb6e91cec25c228e5ebb"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift/main/documentation/mlxrandom/randint(low:high:_:type:key:stream:)": {
+      "file_path": "documentation/SPI/mlx-swift/MLXRandom/randint(low,high,_,type,key,stream).md",
+      "hash": "69feaf0bac5af408da4762561f5bd080e6507ea82e6beb282456fa9412de7d0b"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift/main/documentation/mlxrandom/seed(_:)": {
+      "file_path": "documentation/SPI/mlx-swift/MLXRandom/seed(_).md",
+      "hash": "9ef4ece6fe02066b69391e52e23422b637e4aaf324d7cd0338a8054bfe3d4b24"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift/main/documentation/mlxrandom/split(key:into:stream:)": {
+      "file_path": "documentation/SPI/mlx-swift/MLXRandom/split(key,into,stream).md",
+      "hash": "96d8262f79aa9d0c63c7919ca264f96c19ee9723379256d075263fb4a82942f4"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift/main/documentation/mlxrandom/split(key:stream:)": {
+      "file_path": "documentation/SPI/mlx-swift/MLXRandom/split(key,stream).md",
+      "hash": "8fc3a00f604621648252b56ae810fe9e59de65e11572a49baae8165d9bd42419"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift/main/documentation/mlxrandom/truncatednormal(_:_:type:key:stream:)-62jwe": {
+      "file_path": "documentation/SPI/mlx-swift/MLXRandom/truncatednormal(_,_,type,key,stream)-62jwe.md",
+      "hash": "f0639b0406c0d3c116dca0454bf6fe6bc80552aea9575d4f757ff02a13acbf55"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift/main/documentation/mlxrandom/truncatednormal(_:_:type:key:stream:)-8vjij": {
+      "file_path": "documentation/SPI/mlx-swift/MLXRandom/truncatednormal(_,_,type,key,stream)-8vjij.md",
+      "hash": "dbbce387a8e18edef02235590dea597a08cad779aff406d3babf74fa7e944b1f"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift/main/documentation/mlxrandom/truncatednormal(low:high:_:dtype:key:stream:)": {
+      "file_path": "documentation/SPI/mlx-swift/MLXRandom/truncatednormal(low,high,_,dtype,key,stream).md",
+      "hash": "27ce059f2f10db598f038f91f07f67b30c6cdb72c21db3cdd43f0079e244176e"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift/main/documentation/mlxrandom/truncatednormal(low:high:_:type:key:stream:)": {
+      "file_path": "documentation/SPI/mlx-swift/MLXRandom/truncatednormal(low,high,_,type,key,stream).md",
+      "hash": "87a03226fd172db19c87368ceb78195dfd792c1da54196cfe4ec81f41399ac5c"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift/main/documentation/mlxrandom/uniform(_:_:type:key:stream:)-10gj2": {
+      "file_path": "documentation/SPI/mlx-swift/MLXRandom/uniform(_,_,type,key,stream)-10gj2.md",
+      "hash": "c27da9568c3972cde432505936a662702be18d88bd8a291569b7be58dc72e72c"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift/main/documentation/mlxrandom/uniform(_:_:type:key:stream:)-4d6d2": {
+      "file_path": "documentation/SPI/mlx-swift/MLXRandom/uniform(_,_,type,key,stream)-4d6d2.md",
+      "hash": "49fc7f6eb3311341c9bb769ee37cd0aaab9fa8726069bfedcf9e58e72458456d"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift/main/documentation/mlxrandom/uniform(low:high:_:dtype:key:stream:)": {
+      "file_path": "documentation/SPI/mlx-swift/MLXRandom/uniform(low,high,_,dtype,key,stream).md",
+      "hash": "9ee8fbac8a3fc47058a9358844194e3a8aaff9180c68350cbf38d5e775175fa0"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift/main/documentation/mlxrandom/uniform(low:high:_:type:key:stream:)": {
+      "file_path": "documentation/SPI/mlx-swift/MLXRandom/uniform(low,high,_,type,key,stream).md",
+      "hash": "f9112fe4b6d2142d54a61f46bf4eec1271a1ca4552799f1c7b23971cfe500d08"
+    }
+  },
+  "metadata": {
+    "render": {
+      "version": 3
+    },
+    "total_pages": 54
+  }
+}

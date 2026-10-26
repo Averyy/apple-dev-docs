@@ -521,7 +521,7 @@
       "hash": "a121649e3e8cc09233c22acb0eb860696e5cd371279a5a48ed3fec21885ea162"
     },
     "https://developer.apple.com/documentation/os/os_breadcrumb_t": {
-      "etag": "\"1480-65d55c0473524\"",
+      "etag": "\"1480-65d55c0473524-df\"",
       "file_path": "documentation/os/os_breadcrumb_t.md",
       "hash": "754a3fb75e13018ba520b3a53fce58a453e758982a406818fd40dea5e71dfdd4"
     },
@@ -3511,7 +3511,7 @@
       "hash": "a121649e3e8cc09233c22acb0eb860696e5cd371279a5a48ed3fec21885ea162"
     },
     "https://developer.apple.com/tutorials/data/documentation/os/os_breadcrumb_t.json": {
-      "etag": "\"1480-65d55c0473524\"",
+      "etag": "\"1480-65d55c0473524-df\"",
       "file_path": "documentation/os/os_breadcrumb_t.md",
       "hash": "754a3fb75e13018ba520b3a53fce58a453e758982a406818fd40dea5e71dfdd4"
     },
@@ -5995,7 +5995,7 @@
   },
   "metadata": {
     "render": {
-      "version": 2
+      "version": 3
     },
     "total_pages": 1199
   }

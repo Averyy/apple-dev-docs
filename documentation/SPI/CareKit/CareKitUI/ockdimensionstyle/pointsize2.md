@@ -1,0 +1,23 @@
+---
+url: "https://swiftpackageindex.com/carekit-apple/CareKit/main/documentation/carekitui/ockdimensionstyle/pointsize2"
+framework: "CareKit/CareKitUI"
+---
+
+# pointSize2
+
+**Framework**: CareKit/CareKitUI  
+**Kind**: property  
+**Role**: Instance Property
+
+Inherited from `OCKDimensionStyler.pointSize2`.
+
+## Declaration
+
+```swift
+var pointSize2: CGFloat { get }
+```
+
+
+---
+
+*[View on Swift Package Index](https://swiftpackageindex.com/carekit-apple/CareKit/main/documentation/carekitui/ockdimensionstyle/pointsize2)*

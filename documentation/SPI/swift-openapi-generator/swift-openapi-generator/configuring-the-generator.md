@@ -1,0 +1,206 @@
+---
+url: "https://swiftpackageindex.com/apple/swift-openapi-generator/main/documentation/swift-openapi-generator/configuring-the-generator"
+framework: "swift-openapi-generator/swift-openapi-generator"
+---
+
+# Configuring the generator
+
+**Framework**: swift-openapi-generator/swift-openapi-generator  
+**Role**: Article
+
+Create a configuration file to control the behavior of the generator.
+
+#### Overview
+
+Swift OpenAPI Generator build plugin requires a configuration file that controls what files are generated.
+
+The command-line tool also uses the same configuration file.
+
+##### Create a configuration file
+
+The configuration file is named `openapi-generator-config.yaml` or `openapi-generator-config.yml` and must exist in the target source directory.
+
+> **Note**: In the following tutorial, we will use `openapi-generator-config.yaml` as an example.
+
+```text
+.
+├── Package.swift
+└── Sources
+    └── MyTarget
+        ├── MyCode.swift
+        ├── openapi-generator-config.yaml <-- place the file here
+        └── openapi.yaml
+```
+
+The configuration file has the following keys:
+
+- `generate` (required): array of strings. Each string value is a mode for the generator invocation, which is one of:
+
+  - `types`: Common types and abstractions used by generated client and server code.
+  - `client`: Client code that can be used with any client transport (depends on code from `types`).
+  - `server`: Server code that can be used with any server transport (depends on code from `types`).
+- `accessModifier` (optional): a string. Customizes the visibility of the API of the generated code.
+
+  - `public`: Generated API is accessible from other modules and other packages (if included in a product).
+  - `package`: Generated API is accessible from other modules within the same package or project.
+  - `internal` (default): Generated API is accessible from the containing module only.
+- `additionalImports` (optional): array of strings. Each string value is a Swift module name. An import statement will be added to the generated source files for each module.
+- `additionalFileComments` (optional): array of strings. Each string value is a comment that will be added to the top of each generated file (after the do-not-edit comment). Useful for adding directives like `swift-format-ignore-file` or `swiftlint:disable all`.
+- `filter` (optional): Filters to apply to the OpenAPI document before generation.
+
+  - `operations`: Operations with these operation IDs will be included in the filter.
+  - `tags`: Operations tagged with these tags will be included in the filter.
+  - `paths`: Operations for these paths will be included in the filter.
+  - `schemas`: These (additional) schemas will be included in the filter.
+- `namingStrategy` (optional): a string. The strategy of converting OpenAPI identifiers into Swift identifiers.
+
+  - `defensive` (default): Produces non-conflicting Swift identifiers for any OpenAPI identifiers. Check out [SOAR-0001](https://swiftpackageindex.com/apple/swift-openapi-generator/documentation/swift-openapi-generator/soar-0001) for details.
+  - `idiomatic`: Produces more idiomatic Swift identifiers for OpenAPI identifiers. Might produce name conflicts (in that case, switch back to `defensive`). Check out [SOAR-0013](https://swiftpackageindex.com/apple/swift-openapi-generator/documentation/swift-openapi-generator/soar-0013) for details.
+- `nameOverrides` (optional): a string to string dictionary. Allows customizing how individual OpenAPI identifiers get converted to Swift identifiers.
+- `typeOverrides` (optional): Allows replacing a generated type with a custom type.
+
+  - `schemas` (optional): a string to string dictionary. The key is the name of the schema, the last component of `#/components/schemas/Foo` (here, `Foo`). The value is the custom type name, such as `CustomFoo`. Check out details in [SOAR-0014](https://swiftpackageindex.com/apple/swift-openapi-generator/documentation/swift-openapi-generator/soar-0014).
+- `featureFlags` (optional): array of strings. Each string must be a valid feature flag to enable. For a list of currently supported feature flags, check out [FeatureFlags.swift](https://github.com/apple/swift-openapi-generator/blob/main/Sources/_OpenAPIGeneratorCore/FeatureFlags.swift).
+
+##### Editor support
+
+A JSON Schema for the configuration file is available at `https://raw.githubusercontent.com/apple/swift-openapi-generator/main/Public/openapi-generator-config.schema.json`. Editors that use the YAML language server, such as Visual Studio Code with the [YAML extension](https://github.com/redhat-developer/vscode-yaml), provide validation and autocompletion when you add this line to the top of your configuration file:
+
+```yaml
+# yaml-language-server: $schema=https://raw.githubusercontent.com/apple/swift-openapi-generator/main/Public/openapi-generator-config.schema.json
+```
+
+##### Example config files
+
+To generate client code in a single target:
+
+```yaml
+generate:
+  - types
+  - client
+namingStrategy: idiomatic
+```
+
+To generate server code in a single target:
+
+```yaml
+generate:
+  - types
+  - server
+namingStrategy: idiomatic
+```
+
+If you are generating client *and* server code, you can generate the types in a shared target using the following config:
+
+```yaml
+generate:
+  - types
+namingStrategy: idiomatic
+```
+
+Then, to generate client code that depends on the module from this target, use the following config (where `APITypes` is the name of the library target that contains the generated `types`):
+
+```yaml
+generate:
+  - client
+namingStrategy: idiomatic
+additionalImports:
+  - APITypes
+```
+
+To use the generated code from other packages, also customize the access modifier:
+
+```yaml
+generate:
+  - client
+namingStrategy: idiomatic
+additionalImports:
+  - APITypes
+accessModifier: public
+```
+
+To add file comments to exclude generated files from formatting tools:
+
+```yaml
+generate:
+  - types
+  - client
+namingStrategy: idiomatic
+additionalFileComments:
+  - "swift-format-ignore-file"
+  - "swiftlint:disable all"
+```
+
+Types generation emits a fixed set of files organized by generated namespace:
+
+- `Types.swift`
+- `Types+Components.swift`
+- `Types+Operations.swift`
+- `Types+Components+Schemas.swift`
+- `Types+Components+Parameters.swift`
+- `Types+Components+RequestBodies.swift`
+- `Types+Components+Responses.swift`
+- `Types+Components+Headers.swift`
+
+> ❗ **Important**: The number and names of generated files are *not* considered to be stable, and can change at any time. For details, check out [API stability of the generator](./api-stability-of-the-generator.md).
+
+##### Document filtering
+
+The generator supports filtering the OpenAPI document prior to generation, which can be useful when generating client code for a subset of a large API, or splitting an implementation of a server across multiple modules.
+
+For example, to generate client code for only the operations with a given tag, use the following config:
+
+```yaml
+generate:
+  - types
+  - client
+namingStrategy: idiomatic
+
+filter:
+  tags:
+    - myTag
+```
+
+When multiple filters are specified, their union will be considered for inclusion.
+
+In all cases, the transitive closure of dependencies from the components object will be included.
+
+The CLI also provides a `filter` command that takes the same configuration file as the `generate` command, which can be used to inspect the filtered document:
+
+```console
+% swift-openapi-generator filter --config path/to/openapi-generator-config.yaml path/to/openapi.yaml
+```
+
+To use this command as a standalone filtering tool, use the following config and redirect stdout to a new file:
+
+```yaml
+generate: []
+filter:
+  tags:
+    - myTag
+```
+
+##### Type overrides
+
+Type Overrides can be used used to replace the default generated type with a custom type.
+
+```yaml
+typeOverrides:
+  schemas:
+    UUID: Foundation.UUID
+```
+
+Check out [SOAR-0014](https://swiftpackageindex.com/apple/swift-openapi-generator/documentation/swift-openapi-generator/soar-0014) for details.
+
+## See Also
+
+### Generator plugin and CLI
+- [Manually invoking the generator CLI](./manually-invoking-the-generator-cli.md)
+  Manually invoke the command-line tool to generate code as an alternative to the Swift package build plugin.
+- [Frequently asked questions](./frequently-asked-questions.md)
+  Review some frequently asked questions below.
+
+
+---
+
+*[View on Swift Package Index](https://swiftpackageindex.com/apple/swift-openapi-generator/main/documentation/swift-openapi-generator/configuring-the-generator)*

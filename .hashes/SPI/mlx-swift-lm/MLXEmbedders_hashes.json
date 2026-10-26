@@ -1,0 +1,2202 @@
+{
+  "hashes": {
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/data/documentation/mlxembedders.json": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/MLXEmbedders.md",
+      "hash": "4c5a9109bab861c426b7db203c6d37666157b75e7911ce76e76d02b8e799d1c7"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/data/documentation/mlxembedders/bertconfiguration.json": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/bertconfiguration.md",
+      "hash": "d9100d5e7aafa14d1c3349d427ef5729077bcd7481112c5114f867607e84af5f"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/data/documentation/mlxembedders/bertconfiguration/init(from:).json": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/bertconfiguration/init(from).md",
+      "hash": "ee41b7d0434fb65a96858bd30d48c2d806a87f56542ad5aab6a4470be1d97b08"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/data/documentation/mlxembedders/bertmodel.json": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/bertmodel.md",
+      "hash": "9d8e041c36934c1f5302814ab80c603cc7fcb6a6df59a9623c68dfbc23fae286"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/data/documentation/mlxembedders/bertmodel/baselanguagemodel-implementations.json": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/bertmodel/baselanguagemodel-implementations.md",
+      "hash": "16e5b77a3fed3235a1bd6cc84546e7a1a7bd01fc287f75339067499abefe8613"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/data/documentation/mlxembedders/bertmodel/callasfunction(_:positionids:tokentypeids:attentionmask:).json": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/bertmodel/callasfunction(_,positionids,tokentypeids,attentionmask).md",
+      "hash": "7cee84413a0ef3a9c0c40fc4986ebc88c2cdf898049010fc3530cee14a5cb493"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/data/documentation/mlxembedders/bertmodel/embeddingmodel-implementations.json": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/bertmodel/embeddingmodel-implementations.md",
+      "hash": "c279f01c05d87247772af58d7f02024472fd17d0657eac59e739f939b1480834"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/data/documentation/mlxembedders/bertmodel/excludedcheckpointnamespaces.json": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/bertmodel/excludedcheckpointnamespaces.md",
+      "hash": "52d6fff8328575efdbf9fa56a6dbb0ef27eef38798400c8f40a1b3c35bd6a4c6"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/data/documentation/mlxembedders/bertmodel/init(_:lmhead:).json": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/bertmodel/init(_,lmhead).md",
+      "hash": "1074229006f09689d78009e30b94e664514387c965a7755efc793efc372116d6"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/data/documentation/mlxembedders/bertmodel/maxpositionembeddings.json": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/bertmodel/maxpositionembeddings.md",
+      "hash": "3626fb23952776b9f17eaf79f6da5ce8482709419a65b0981bf1c424c23e5db6"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/data/documentation/mlxembedders/bertmodel/poolingstrategy.json": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/bertmodel/poolingstrategy.md",
+      "hash": "29855feadf1acfddd923db9acf1a78f190625e6c8df5a4d5bdceb5017b77f00d"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/data/documentation/mlxembedders/bertmodel/preparecheckpoint(_:).json": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/bertmodel/preparecheckpoint(_).md",
+      "hash": "87a004b4b4293c815d6175735918309cbcbd886688dffe2c1561514276217df4"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/data/documentation/mlxembedders/bertmodel/sanitize(weights:).json": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/bertmodel/sanitize(weights).md",
+      "hash": "84c3e96cdccb530b3201cf2bace8b49c58cf1c7267fd6a4205d5e0dcb43b955c"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/data/documentation/mlxembedders/bertmodel/sanitize(weights:metadata:).json": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/bertmodel/sanitize(weights,metadata).md",
+      "hash": "a9a384f92dc5cdb3d54fd204f3237c0aafd36fd5dd7d52896cae017dd671d580"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/data/documentation/mlxembedders/bertmodel/vocabularysize.json": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/bertmodel/vocabularysize.md",
+      "hash": "c1a8ec8af18c9635f648daae753940c49b7f2b4d59972c0973d1a59917517327"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/data/documentation/mlxembedders/bertrerankermodel.json": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/bertrerankermodel.md",
+      "hash": "53a2e4f812a58b16bce821e21ea38ddf600ee58dc7a0cd40a29603cba5b51049"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/data/documentation/mlxembedders/bertrerankermodel/baselanguagemodel-implementations.json": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/bertrerankermodel/baselanguagemodel-implementations.md",
+      "hash": "bf30084caa466b94a3125ca6d0d370f92b832530ceda8f06b322f19c63e97dc0"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/data/documentation/mlxembedders/bertrerankermodel/callasfunction(_:positionids:tokentypeids:attentionmask:).json": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/bertrerankermodel/callasfunction(_,positionids,tokentypeids,attentionmask).md",
+      "hash": "2caf077f71feda6dc1c260184d5103deea13e986aad7913b1f020db7e68b896a"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/data/documentation/mlxembedders/bertrerankermodel/embeddingmodel-implementations.json": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/bertrerankermodel/embeddingmodel-implementations.md",
+      "hash": "8d2d76013bf6308aa5d3225c0cf13ebf2228e2a9742512b47238616651506de3"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/data/documentation/mlxembedders/bertrerankermodel/excludedcheckpointnamespaces.json": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/bertrerankermodel/excludedcheckpointnamespaces.md",
+      "hash": "0500722046b4c0e8a5c02c0cc22ca04285bde39cb9d281f9843e5b6a4f20346d"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/data/documentation/mlxembedders/bertrerankermodel/init(_:).json": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/bertrerankermodel/init(_).md",
+      "hash": "da651d974b39ee5199baf793564442b7a4dba841257618bda09bef6f09d79261"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/data/documentation/mlxembedders/bertrerankermodel/maxpositionembeddings.json": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/bertrerankermodel/maxpositionembeddings.md",
+      "hash": "4d7439a3524d01f0aad64210c280d567ad0c70249582432484bea097c64ce11b"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/data/documentation/mlxembedders/bertrerankermodel/poolingstrategy.json": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/bertrerankermodel/poolingstrategy.md",
+      "hash": "64780dfe9f49b18449239b22711f5c89c0f7eaf5a1c5707513d9f1f77c5503c6"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/data/documentation/mlxembedders/bertrerankermodel/preparecheckpoint(_:).json": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/bertrerankermodel/preparecheckpoint(_).md",
+      "hash": "52e44e854068f8f192351b41f64865b8b59f417a6df8bc2640f6d4d568009d59"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/data/documentation/mlxembedders/bertrerankermodel/sanitize(weights:).json": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/bertrerankermodel/sanitize(weights).md",
+      "hash": "2341861ee27fcd4e0ec134c2e61a96921d25a1a33567d8e45cb554f58e4100f6"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/data/documentation/mlxembedders/bertrerankermodel/sanitize(weights:metadata:).json": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/bertrerankermodel/sanitize(weights,metadata).md",
+      "hash": "1aec5bba107ff9063df14844d648a56470b2c59aff257d49e25edcd2de1dfeae"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/data/documentation/mlxembedders/bertrerankermodel/score(_:positionids:tokentypeids:attentionmask:).json": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/bertrerankermodel/score(_,positionids,tokentypeids,attentionmask).md",
+      "hash": "12d1da035c1bba092e451bca51662fd92fba7117e281503d3ab4b9bffde8d883"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/data/documentation/mlxembedders/bertrerankermodel/vocabularysize.json": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/bertrerankermodel/vocabularysize.md",
+      "hash": "48076528f7e5ec54c7856278138343a19f7d80e38d9b5208d34c73a1a527eeb4"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/data/documentation/mlxembedders/bertsequenceclassificationrerankermodel.json": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/bertsequenceclassificationrerankermodel.md",
+      "hash": "83ab4cd9ad5a9775abd4998fe373e3e61c323ac6c94e190b2347bca58165ba33"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/data/documentation/mlxembedders/bertsequenceclassificationrerankermodel/baselanguagemodel-implementations.json": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/bertsequenceclassificationrerankermodel/baselanguagemodel-implementations.md",
+      "hash": "a90244838d0c6e03c150f6710a8d409fc428e24e1f846dc1095a805cf5fec011"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/data/documentation/mlxembedders/bertsequenceclassificationrerankermodel/callasfunction(_:positionids:tokentypeids:attentionmask:).json": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/bertsequenceclassificationrerankermodel/callasfunction(_,positionids,tokentypeids,attentionmask).md",
+      "hash": "1f73902acd2205016368514fc9cc0999f0f559abc2f463102677495c3603c2f7"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/data/documentation/mlxembedders/bertsequenceclassificationrerankermodel/embeddingmodel-implementations.json": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/bertsequenceclassificationrerankermodel/embeddingmodel-implementations.md",
+      "hash": "146b726715d209a9a576822dce2ddfc60968a0b96c9e2198f7d638fff7293603"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/data/documentation/mlxembedders/bertsequenceclassificationrerankermodel/excludedcheckpointnamespaces.json": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/bertsequenceclassificationrerankermodel/excludedcheckpointnamespaces.md",
+      "hash": "58b425362263b4a14978a6137194c791784d9782998076ac6c3d506908074d71"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/data/documentation/mlxembedders/bertsequenceclassificationrerankermodel/init(_:).json": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/bertsequenceclassificationrerankermodel/init(_).md",
+      "hash": "933be7908f4543f7e9d4a6b7d428bb428ff15e50f5b1a5c0be71a72b171b2d88"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/data/documentation/mlxembedders/bertsequenceclassificationrerankermodel/maxpositionembeddings.json": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/bertsequenceclassificationrerankermodel/maxpositionembeddings.md",
+      "hash": "0c92c7e64d97137c78160e2c61a5b82fcd387ff8040b85f6fadc1455ccd33a9f"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/data/documentation/mlxembedders/bertsequenceclassificationrerankermodel/poolingstrategy.json": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/bertsequenceclassificationrerankermodel/poolingstrategy.md",
+      "hash": "2990515cfbc7f7ee4426989f68c80222904eb049a8b2eacf0cd2f227b8521462"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/data/documentation/mlxembedders/bertsequenceclassificationrerankermodel/preparecheckpoint(_:).json": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/bertsequenceclassificationrerankermodel/preparecheckpoint(_).md",
+      "hash": "526cd221fe4d0f0057dccf8fc313bb8313e066f18f80f0fec3cc5f9fe0fc873f"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/data/documentation/mlxembedders/bertsequenceclassificationrerankermodel/sanitize(weights:).json": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/bertsequenceclassificationrerankermodel/sanitize(weights).md",
+      "hash": "99b3ad850c196102a58c8f06eda17d7e2dbca7e77f8b067aad1a64d6d5aa84ce"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/data/documentation/mlxembedders/bertsequenceclassificationrerankermodel/sanitize(weights:metadata:).json": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/bertsequenceclassificationrerankermodel/sanitize(weights,metadata).md",
+      "hash": "aaab40fc3d08c303239ecded5769acca7893ff3b9f4e55e53d557c305e64d35d"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/data/documentation/mlxembedders/bertsequenceclassificationrerankermodel/score(_:positionids:tokentypeids:attentionmask:).json": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/bertsequenceclassificationrerankermodel/score(_,positionids,tokentypeids,attentionmask).md",
+      "hash": "3f20791a0ebfc6bee2e53df329a0d8f15ab5e2f6b4aefc14c3174aaa8642cd47"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/data/documentation/mlxembedders/bertsequenceclassificationrerankermodel/vocabularysize.json": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/bertsequenceclassificationrerankermodel/vocabularysize.md",
+      "hash": "634ce4f7a84e08b3215bc6325b284d2b17c392d73d154d8d32d342da6ffd00fb"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/data/documentation/mlxembedders/distilbertmodel.json": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/distilbertmodel.md",
+      "hash": "e806e48d761ea6509834869c292dd9a54b9e5a54629f2450c09f29ce0500f481"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/data/documentation/mlxembedders/distilbertmodel/sanitize(weights:).json": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/distilbertmodel/sanitize(weights).md",
+      "hash": "94ce2bb747b02c9fb307a925eb5675915470131c7fe6755ba42586770fb8bd51"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/data/documentation/mlxembedders/embeddermodelcontainer.json": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/embeddermodelcontainer.md",
+      "hash": "5b6bfcc83a1b1b0cb25750fec81ce86e55ed69c5b64a92e9f59e8c05cfe73cf7"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/data/documentation/mlxembedders/embeddermodelcontainer/configuration.json": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/embeddermodelcontainer/configuration.md",
+      "hash": "6a1420237c31bf3d371b765bb2a03ee85a69f84098edcb8fab515ee199cba296"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/data/documentation/mlxembedders/embeddermodelcontainer/init(context:).json": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/embeddermodelcontainer/init(context).md",
+      "hash": "c6b243dea63ba262e767f21663e14af393e570938874196e584c4114b171fd50"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/data/documentation/mlxembedders/embeddermodelcontainer/modeldirectory.json": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/embeddermodelcontainer/modeldirectory.md",
+      "hash": "7726473496f31dd6ad6bc4c5d548338c0bb6ad07075f3f234cd7cc033315a536"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/data/documentation/mlxembedders/embeddermodelcontainer/perform(_:)-37clz.json": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/embeddermodelcontainer/perform(_)-37clz.md",
+      "hash": "9bd2d50dd1d822633127ad71d2bc2256580d6acacfcae67ffea01f7767222c69"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/data/documentation/mlxembedders/embeddermodelcontainer/perform(_:)-52sj4.json": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/embeddermodelcontainer/perform(_)-52sj4.md",
+      "hash": "b35ba24530b25b67cbb260a8d255aa8d77cb35368195de313069bddc2e5a0d9a"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/data/documentation/mlxembedders/embeddermodelcontainer/perform(nonsendable:_:).json": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/embeddermodelcontainer/perform(nonsendable,_).md",
+      "hash": "9a54d0b00baa04429e3b33293440617c3697b7dc3766d8ad244ed7fd92d720b5"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/data/documentation/mlxembedders/embeddermodelcontainer/poolingstrategy.json": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/embeddermodelcontainer/poolingstrategy.md",
+      "hash": "d5e9b8d80a0be11927da87362f770c6d4f0d0c645d125e90b04331fde40263aa"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/data/documentation/mlxembedders/embeddermodelcontainer/tokenizer.json": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/embeddermodelcontainer/tokenizer.md",
+      "hash": "e9a2fbead1221f4ae238b808e563e77a10992625c51f4193bda6a17d51e23da1"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/data/documentation/mlxembedders/embeddermodelcontainer/tokenizerdirectory.json": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/embeddermodelcontainer/tokenizerdirectory.md",
+      "hash": "d078593f9c3c4e2766c29b445ec5637324c6b5783c5667b47c39dbce3cf34822"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/data/documentation/mlxembedders/embeddermodelcontainer/update(_:).json": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/embeddermodelcontainer/update(_).md",
+      "hash": "010f4e820c9da27b51ec92b9d002e6bf0c7ab6a23af0cba7d6ae25176947f857"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/data/documentation/mlxembedders/embeddermodelcontext.json": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/embeddermodelcontext.md",
+      "hash": "64ca86cdabecf1e41b4412ef28f2fdf15d354874ae37c6d5b76995a42e8d0440"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/data/documentation/mlxembedders/embeddermodelcontext/configuration.json": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/embeddermodelcontext/configuration.md",
+      "hash": "07748de84dace8255dfca314d66e5dff103e7ce68cfcbe31704885dab9218535"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/data/documentation/mlxembedders/embeddermodelcontext/init(configuration:model:tokenizer:pooling:).json": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/embeddermodelcontext/init(configuration,model,tokenizer,pooling).md",
+      "hash": "72f4856f0092161289d7da809b503dd9f7c59b833ed28e1a8d899e953bc854f6"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/data/documentation/mlxembedders/embeddermodelcontext/model.json": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/embeddermodelcontext/model.md",
+      "hash": "ada2dc2973e0b4c51641733aea71b00b42594de3ab7160d3848e6602eda53215"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/data/documentation/mlxembedders/embeddermodelcontext/pooling.json": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/embeddermodelcontext/pooling.md",
+      "hash": "7399a70222f00bde2ef0f4dc61bdb09eab75dbaab6be6025963cc6eac6e7c93a"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/data/documentation/mlxembedders/embeddermodelcontext/tokenizer.json": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/embeddermodelcontext/tokenizer.md",
+      "hash": "2adfd8679e0174828dd9dcf17e5b05824d5915996f71a2b2ccca7e8aed4f8393"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/data/documentation/mlxembedders/embeddermodelfactory.json": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/embeddermodelfactory.md",
+      "hash": "8ddb66d748612dab3e0b492b75f15f5cf7f6b0297871e074410ab31074568b1f"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/data/documentation/mlxembedders/embeddermodelfactory/configuration(id:).json": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/embeddermodelfactory/configuration(id).md",
+      "hash": "6e8fe7666624dfe0ca884f42f35960a4136a6e22e51f3b95819c9b98c59df123"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/data/documentation/mlxembedders/embeddermodelfactory/containertype.json": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/embeddermodelfactory/containertype.md",
+      "hash": "b241f72cbfd283e655ae9bf5b61886a28d836fd7c714debfa03d8ea71f8a8400"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/data/documentation/mlxembedders/embeddermodelfactory/contains(id:).json": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/embeddermodelfactory/contains(id).md",
+      "hash": "f25acc6f982b54832b1ca9dbabbb117c3af000c02a54fe62e78cbf9758441e5c"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/data/documentation/mlxembedders/embeddermodelfactory/contexttype.json": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/embeddermodelfactory/contexttype.md",
+      "hash": "80993359930350edf5ebed44c8fa6ca14ddbc5a0825e5a5ae3d2549c5da79861"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/data/documentation/mlxembedders/embeddermodelfactory/genericmodelfactory-implementations.json": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/embeddermodelfactory/genericmodelfactory-implementations.md",
+      "hash": "b00e11cda7642461fe9c2df599e3ba2e195dc3f99b60cda1808730ce6e6818fb"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/data/documentation/mlxembedders/embeddermodelfactory/init(typeregistry:modelregistry:).json": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/embeddermodelfactory/init(typeregistry,modelregistry).md",
+      "hash": "f5381ec2785dbc9687656498b1d73f31bd19e8f0b50f445a41423f9b6a30d1d9"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/data/documentation/mlxembedders/embeddermodelfactory/load(from:using:).json": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/embeddermodelfactory/load(from,using).md",
+      "hash": "a43e3a3625119fdfd6467e94e5a9fd3f514cbc3c8066afe374aba01428575ecc"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/data/documentation/mlxembedders/embeddermodelfactory/load(from:using:configuration:uselatest:progresshandler:).json": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/embeddermodelfactory/load(from,using,configuration,uselatest,progresshandler).md",
+      "hash": "3e27cfbdc603a91dea181e43736b496684774ef10d570f2e2e5e79acb6e8fe77"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/data/documentation/mlxembedders/embeddermodelfactory/loadcontainer(from:using:).json": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/embeddermodelfactory/loadcontainer(from,using).md",
+      "hash": "73492b28b64d14bcdb04c123e71f503fbbb5d3650389d132e25b42ae5deb54b9"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/data/documentation/mlxembedders/embeddermodelfactory/loadcontainer(from:using:configuration:uselatest:progresshandler:).json": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/embeddermodelfactory/loadcontainer(from,using,configuration,uselatest,progresshandler).md",
+      "hash": "743218037d502b849d285206d2dbe08a885b1453170d2d173874835e85e95d88"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/data/documentation/mlxembedders/embeddermodelfactory/modelregistry.json": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/embeddermodelfactory/modelregistry.md",
+      "hash": "d4847ff96214b3603e2f718b1fcc6786fa272fc20446856524efb3d3b2615750"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/data/documentation/mlxembedders/embeddermodelfactory/shared.json": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/embeddermodelfactory/shared.md",
+      "hash": "8ae77ee4330a82c2d40892e9bad66b20d7d4b126bf78ce390ea39f37953a7264"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/data/documentation/mlxembedders/embeddermodelfactory/typeregistry.json": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/embeddermodelfactory/typeregistry.md",
+      "hash": "5607c8938e3ba726b3b149a14e2667d80b3b985be3e884967de5d77e8702892f"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/data/documentation/mlxembedders/embedderregistry.json": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/embedderregistry.md",
+      "hash": "768905fd2c34dde3cc25ff06098c3743101c795ed22925d519bc4789aa98aa05"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/data/documentation/mlxembedders/embedderregistry/bge_base.json": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/embedderregistry/bge_base.md",
+      "hash": "528ce49d4732cae85b87edcf290b59d4d3b04e2744bbf78dab11b59553e5915e"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/data/documentation/mlxembedders/embedderregistry/bge_large.json": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/embedderregistry/bge_large.md",
+      "hash": "ffa2d9067b276937bffd95e1ba4d3d7dcf1b7f20c3702924153fa77d1f887d77"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/data/documentation/mlxembedders/embedderregistry/bge_m3.json": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/embedderregistry/bge_m3.md",
+      "hash": "4e08cd8aac122b2ac445af31211a5c45f29dbab5df59b487207c8f94677d9f4f"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/data/documentation/mlxembedders/embedderregistry/bge_micro.json": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/embedderregistry/bge_micro.md",
+      "hash": "cdaba393c2658451581571301b7604565090ad5b166aa751a97a9c7e3bb4bd7f"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/data/documentation/mlxembedders/embedderregistry/bge_reranker_v2_m3.json": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/embedderregistry/bge_reranker_v2_m3.md",
+      "hash": "a1543f67b0255febf66160bc906458b309dcf7163a24403edc544821da67b0fa"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/data/documentation/mlxembedders/embedderregistry/bge_small.json": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/embedderregistry/bge_small.md",
+      "hash": "2df5af384c952f49cb8b521ad7f585c280ce3f70a22a5af3b39bf93bd1972c91"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/data/documentation/mlxembedders/embedderregistry/embeddinggemma2.json": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/embedderregistry/embeddinggemma2.md",
+      "hash": "6f0a972f574548792e025f08a986e44fb704bbd1696bd9cf58cbe4cb18f01eed"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/data/documentation/mlxembedders/embedderregistry/gte_tiny.json": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/embedderregistry/gte_tiny.md",
+      "hash": "340209e4c68f4bfec9ac81c61a6bc370cc2013a2bc3c48aa3051fc0586494bc4"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/data/documentation/mlxembedders/embedderregistry/lfm2_colbert_350m.json": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/embedderregistry/lfm2_colbert_350m.md",
+      "hash": "b32272b1ac5de56b8a800f158aafbdfa8dcca517cb22dbab08cb2554b25eec27"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/data/documentation/mlxembedders/embedderregistry/lfm2_colbert_350m_4bit.json": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/embedderregistry/lfm2_colbert_350m_4bit.md",
+      "hash": "8ce63f7e6a1834ec4e93522ad58afc28bcf05039920f1c6829a13fd78a216fa0"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/data/documentation/mlxembedders/embedderregistry/lfm2_colbert_350m_8bit.json": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/embedderregistry/lfm2_colbert_350m_8bit.md",
+      "hash": "cc52a7ebde35b9d3cf5dcecccc82452a3c8b8e53412b11af1d12c5e2be8706e6"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/data/documentation/mlxembedders/embedderregistry/lfm2_embedding_350m.json": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/embedderregistry/lfm2_embedding_350m.md",
+      "hash": "cad257e50bcb910d9a4d1c569257a033dd7126cc34e8868c71bad5d9ca55e0cd"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/data/documentation/mlxembedders/embedderregistry/lfm2_embedding_350m_4bit.json": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/embedderregistry/lfm2_embedding_350m_4bit.md",
+      "hash": "3085bc46e0f9f2ebea70f40724acaeb1346cf5e3ce6937d90e568b1f25a5c74c"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/data/documentation/mlxembedders/embedderregistry/lfm2_embedding_350m_8bit.json": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/embedderregistry/lfm2_embedding_350m_8bit.md",
+      "hash": "7010c9100afeaa3f5a3c61a0edab981be978f19789683882fd197e4e194dccc5"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/data/documentation/mlxembedders/embedderregistry/minilm_l12.json": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/embedderregistry/minilm_l12.md",
+      "hash": "354dde3b8db0a3176c154d4fa635a61d8f99384a4f440d7063f0c0938a5a0e2e"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/data/documentation/mlxembedders/embedderregistry/minilm_l6.json": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/embedderregistry/minilm_l6.md",
+      "hash": "769436be21b13d4cdafd2f23e15d7e9aa6e3a3d9bf48141e08b612e6ebcd2bf9"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/data/documentation/mlxembedders/embedderregistry/mixedbread_large.json": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/embedderregistry/mixedbread_large.md",
+      "hash": "5ec7b800174f03ae42a1188e12305b31a02700cce32f6eb1b1cd775c26629857"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/data/documentation/mlxembedders/embedderregistry/multilingual_e5_small.json": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/embedderregistry/multilingual_e5_small.md",
+      "hash": "83b637224cf872776dce7af0279ebc461bb537ff8af6d0e611d9473bc209e6d6"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/data/documentation/mlxembedders/embedderregistry/nomic_text_v1.json": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/embedderregistry/nomic_text_v1.md",
+      "hash": "af1123cff634ccc06e3a42b11d90422aa4bc6fedcad4b9272371a66d277fb520"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/data/documentation/mlxembedders/embedderregistry/nomic_text_v1_5.json": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/embedderregistry/nomic_text_v1_5.md",
+      "hash": "0bf39ade99b2ed41f2772799335d201498ed4e64433ff367d16ad1aed64a54aa"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/data/documentation/mlxembedders/embedderregistry/qwen3_embedding.json": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/embedderregistry/qwen3_embedding.md",
+      "hash": "3734e31725481ecafbbf409db476575c34f6af281c04353fc9bcec530d2fc955"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/data/documentation/mlxembedders/embedderregistry/shared.json": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/embedderregistry/shared.md",
+      "hash": "751ab53d5de1bd49f73f6575cd227397f55d901d8927390f3bec3853f2a81cd1"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/data/documentation/mlxembedders/embedderregistry/snowflake_lg.json": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/embedderregistry/snowflake_lg.md",
+      "hash": "4c74e80be91ab20c959ce4a956f78801619988e4e86ef1d217c1a3d22dec530f"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/data/documentation/mlxembedders/embedderregistry/snowflake_xs.json": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/embedderregistry/snowflake_xs.md",
+      "hash": "e376e316ce2561794319c9d40ff5d858416b098a973f2224786f7fe1ff8173a8"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/data/documentation/mlxembedders/embeddertyperegistry.json": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/embeddertyperegistry.md",
+      "hash": "759318f4d6cb25b0fa84286288de36605791ce2e46c0d31cdc3b4d08310c15c6"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/data/documentation/mlxembedders/embeddertyperegistry/shared.json": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/embeddertyperegistry/shared.md",
+      "hash": "ed154543e3dca4413e59f2cedc0f9193657fa9c8497a8960aa29669e3e535e60"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/data/documentation/mlxembedders/embeddinggemma.json": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/embeddinggemma.md",
+      "hash": "92b410f56351c376b7c8ba8ae1a3df02084267887072831db5cf7d1e2e0ecaa0"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/data/documentation/mlxembedders/embeddinggemma/baselanguagemodel-implementations.json": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/embeddinggemma/baselanguagemodel-implementations.md",
+      "hash": "9511162206f5c0dc327125aa003d8096a5158df97f508be5e5d14ab8998ef35d"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/data/documentation/mlxembedders/embeddinggemma/callasfunction(_:positionids:tokentypeids:attentionmask:).json": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/embeddinggemma/callasfunction(_,positionids,tokentypeids,attentionmask).md",
+      "hash": "eda3a7528e4d918f8a06b03158ceccafc799421cdc86d40ae704a11353d00832"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/data/documentation/mlxembedders/embeddinggemma/config.json": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/embeddinggemma/config.md",
+      "hash": "38c4f78d8e309d63bf47460f0eaff67a9185b661bb8b01ea4d2f06e85c46cb20"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/data/documentation/mlxembedders/embeddinggemma/embeddingmodel-implementations.json": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/embeddinggemma/embeddingmodel-implementations.md",
+      "hash": "e06a673848c438782eed50cd7ab97462e1dbd1fd56d595b388a68aac14cd80e7"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/data/documentation/mlxembedders/embeddinggemma/excludedcheckpointnamespaces.json": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/embeddinggemma/excludedcheckpointnamespaces.md",
+      "hash": "a2f87af82899332d665f1be9bdf6ad1d61cf5ef8d50dc36bf2f82740e5b3b20d"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/data/documentation/mlxembedders/embeddinggemma/init(_:).json": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/embeddinggemma/init(_).md",
+      "hash": "bc979b66fb4f19e14fad9c12804003facfd8cdec5bad31bdaad07748283ec539"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/data/documentation/mlxembedders/embeddinggemma/maxpositionembeddings.json": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/embeddinggemma/maxpositionembeddings.md",
+      "hash": "595c3dbf5b0fc04395517051bc02267d2eb4693cb323598026f8f03dee16a245"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/data/documentation/mlxembedders/embeddinggemma/poolingstrategy.json": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/embeddinggemma/poolingstrategy.md",
+      "hash": "779fea4db087c591614dcaa8eb1c20d96845921fd3e43eca84f34b5bcf2af335"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/data/documentation/mlxembedders/embeddinggemma/preparecheckpoint(_:).json": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/embeddinggemma/preparecheckpoint(_).md",
+      "hash": "c0f03aa22057ba84e6212f22567e5358299b81b0929127d6f252c7d47872a2e8"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/data/documentation/mlxembedders/embeddinggemma/sanitize(weights:).json": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/embeddinggemma/sanitize(weights).md",
+      "hash": "0f189f920f57749f99fe2d99676f5b3909c62a1e56984c1a29d718144dab509c"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/data/documentation/mlxembedders/embeddinggemma/sanitize(weights:metadata:).json": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/embeddinggemma/sanitize(weights,metadata).md",
+      "hash": "3ca916db920621d41f4286d3ab406fd66288ade60d067198b71eadb357e9c917"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/data/documentation/mlxembedders/embeddinggemma/vocabularysize.json": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/embeddinggemma/vocabularysize.md",
+      "hash": "4ee44e368e3bc7bc0b73841acd872307719b4abf674655310bc899a07c268a09"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/data/documentation/mlxembedders/embeddingmodel.json": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/embeddingmodel.md",
+      "hash": "ffaec34a1b463834094cf75705d02707f504be9e72918064298f7c6e04969c82"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/data/documentation/mlxembedders/embeddingmodel/callasfunction(_:positionids:tokentypeids:attentionmask:).json": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/embeddingmodel/callasfunction(_,positionids,tokentypeids,attentionmask).md",
+      "hash": "aaf0c76a010bdc6f326b861b2a0743b19828eb681aedce6fa4bf685d7ced8c8b"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/data/documentation/mlxembedders/embeddingmodel/maxpositionembeddings-92l06.json": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/embeddingmodel/maxpositionembeddings-92l06.md",
+      "hash": "1c645b743ad36e4002eebb8be67a3ebcc38d9b85d39bcb7b621f9adf5a6b7af0"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/data/documentation/mlxembedders/embeddingmodel/maxpositionembeddings.json": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/embeddingmodel/maxpositionembeddings.md",
+      "hash": "3dcf4a7c35dab37f86530c9f4fce03433701cbc1a063ec568e1bba2d5984ecb8"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/data/documentation/mlxembedders/embeddingmodel/poolingstrategy-3gza.json": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/embeddingmodel/poolingstrategy-3gza.md",
+      "hash": "3cb67b4992bf09ff921f6b2c264fe6faab0a19f3e44a8ae4b532b7bf6600dbb2"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/data/documentation/mlxembedders/embeddingmodel/poolingstrategy.json": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/embeddingmodel/poolingstrategy.md",
+      "hash": "4a7aa96ae9f7a4b1c67ae38644352d51d29f968ac7bea205ad59f8af17344560"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/data/documentation/mlxembedders/embeddingmodel/vocabularysize.json": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/embeddingmodel/vocabularysize.md",
+      "hash": "cf11ac4a73fbb3e7141ae189b77b30a8612528de3d878fcb637c6516ed67f4f3"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/data/documentation/mlxembedders/embeddingmodeloutput.json": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/embeddingmodeloutput.md",
+      "hash": "cf4721c8122e286e7bab7b02945f23a995cdd6d49b8de815a8095e2ebba6dc52"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/data/documentation/mlxembedders/embeddingmodeloutput/hiddenstates.json": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/embeddingmodeloutput/hiddenstates.md",
+      "hash": "0ae07cc8598c1462c56b5e22619411b6838a1e443ec26e0228588e5ffd8ed077"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/data/documentation/mlxembedders/embeddingmodeloutput/pooledoutput.json": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/embeddingmodeloutput/pooledoutput.md",
+      "hash": "389424b073da8b46a76e266d101e8262611889bee3e759ea53c6fce3dffce179"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/data/documentation/mlxembedders/gemma3configuration.json": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/gemma3configuration.md",
+      "hash": "e7d3456641abd7d4ccea356954a12dc8ccd7b9e33984eddd9f5bbf61ab7d6a41"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/data/documentation/mlxembedders/gemma3configuration/attentionheads.json": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/gemma3configuration/attentionheads.md",
+      "hash": "6ee7cc6c35503c4cd09e74545ba80b4dc65e6ba5c6f9c575b0e0df126b2dcccc"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/data/documentation/mlxembedders/gemma3configuration/encodable-implementations.json": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/gemma3configuration/encodable-implementations.md",
+      "hash": "87f1e1923f1e316cc97a9c492832da53a73ec66785c7c04459a3c543df81cf1c"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/data/documentation/mlxembedders/gemma3configuration/headdim.json": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/gemma3configuration/headdim.md",
+      "hash": "e01ee093a191ebb3328ed3542ccbe044197c0b73c8b88d0f48fafd5cdce69c15"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/data/documentation/mlxembedders/gemma3configuration/hiddenlayers.json": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/gemma3configuration/hiddenlayers.md",
+      "hash": "7d9210e38fa5f7d3a94ade27de1525d2945fab10b245c8e5b886aaff7a093762"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/data/documentation/mlxembedders/gemma3configuration/hiddensize.json": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/gemma3configuration/hiddensize.md",
+      "hash": "768b5b8e8ce324125968b70892c01064002d16254ede881ff2d5598f040c7d5a"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/data/documentation/mlxembedders/gemma3configuration/init(from:).json": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/gemma3configuration/init(from).md",
+      "hash": "ae5edf058c938fce36a0e19b671ec490aeec7aee34db4d5a753248a6cfb41edf"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/data/documentation/mlxembedders/gemma3configuration/intermediatesize.json": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/gemma3configuration/intermediatesize.md",
+      "hash": "71b2804d251eb76179e5b529da6138805756ae9a0835323c89db1009a046baef"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/data/documentation/mlxembedders/gemma3configuration/kvheads.json": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/gemma3configuration/kvheads.md",
+      "hash": "283af073b927acf0ef8391f59dcbc888962eef8f3793037c923f5122dd93dc59"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/data/documentation/mlxembedders/gemma3configuration/maxpositionembeddings.json": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/gemma3configuration/maxpositionembeddings.md",
+      "hash": "c6f47631aacba7dc40800ca755b6ba8efb87ef410513b2b0f072ea91d2977153"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/data/documentation/mlxembedders/gemma3configuration/modeltype.json": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/gemma3configuration/modeltype.md",
+      "hash": "e73032425fd06c2e676371c3c02a72f7d7ea0aaa60e38888ad2a330b89db9585"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/data/documentation/mlxembedders/gemma3configuration/querypreattnscalar.json": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/gemma3configuration/querypreattnscalar.md",
+      "hash": "515f91c8726dc8b2a6a9ac886f073ce599b4ebf3dd65aa6af27c46299c9b3cae"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/data/documentation/mlxembedders/gemma3configuration/rmsnormeps.json": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/gemma3configuration/rmsnormeps.md",
+      "hash": "9f9e0e50bfdcec33be27803b46dc5f8c258288396f8327ddba4c053f2f739fab"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/data/documentation/mlxembedders/gemma3configuration/ropelocalbasefreq.json": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/gemma3configuration/ropelocalbasefreq.md",
+      "hash": "8b2953588a0e9c6a2e148c7905e757dbc83da607a31739376135edc813806e43"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/data/documentation/mlxembedders/gemma3configuration/ropescaling.json": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/gemma3configuration/ropescaling.md",
+      "hash": "d2a8b9108f03790ac2fdde7af50472bfba0934c60f7dd58d9538655e72cb1ab6"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/data/documentation/mlxembedders/gemma3configuration/ropetheta.json": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/gemma3configuration/ropetheta.md",
+      "hash": "74cb543aa551aab7ee493ab3dc3be43c7b3d61c58899f725a2834cd12dd278bb"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/data/documentation/mlxembedders/gemma3configuration/ropetraditional.json": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/gemma3configuration/ropetraditional.md",
+      "hash": "9a2229e4fdb25b39046bcc2551fd2da3a93e1be6b3cd4a0d6fa5cc0a83280353"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/data/documentation/mlxembedders/gemma3configuration/slidingwindow.json": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/gemma3configuration/slidingwindow.md",
+      "hash": "ccdc0eca0e048d0a34d0bafd26b11b1e19195f94c1e8b9f045fdf6ff8dfc0e0f"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/data/documentation/mlxembedders/gemma3configuration/slidingwindowpattern.json": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/gemma3configuration/slidingwindowpattern.md",
+      "hash": "ac0a9214ba01ce0bb35264f59639fd9c4cc5e53d9694bf6da49979de7c56f8be"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/data/documentation/mlxembedders/gemma3configuration/toolresult.json": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/gemma3configuration/toolresult.md",
+      "hash": "46b5a7eddfce3fd836e8d8d1408b5781a327890597152e4434d678ad10030dcc"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/data/documentation/mlxembedders/gemma3configuration/usebidirectionalattention.json": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/gemma3configuration/usebidirectionalattention.md",
+      "hash": "103491525cda5f31389cf0e3006849fd915e56fbe2e4567cd304723d0dc69468"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/data/documentation/mlxembedders/gemma3configuration/vocabularysize.json": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/gemma3configuration/vocabularysize.md",
+      "hash": "2ea3d62725a43d7e6ff1ce9849064b7d0b2f304a5913b28634cfec4a025af24a"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/data/documentation/mlxembedders/gemma3modelbackbone.json": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/gemma3modelbackbone.md",
+      "hash": "76a0b238e1960c1f660d80f8477d894cf6b19a9ba8e2da2595cf4b5849c145ae"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/data/documentation/mlxembedders/gemma3modelbackbone/callasfunction(_:attentionmask:).json": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/gemma3modelbackbone/callasfunction(_,attentionmask).md",
+      "hash": "d7139d67d8a1f90cd2a2590f88d8d7acace042c6a2cf06bda9ac7bcb7690821e"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/data/documentation/mlxembedders/gemma3modelbackbone/init(_:).json": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/gemma3modelbackbone/init(_).md",
+      "hash": "b397fa292853570275a14a71ebda42f7a17b6eaf0ebd759df6a31830fcb839a3"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/data/documentation/mlxembedders/lfm2bidirectionalconfiguration.json": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/lfm2bidirectionalconfiguration.md",
+      "hash": "361ed17f94f2fc04cc4d349cf8b15be545c526a2621dd228d64510cb83a2f56c"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/data/documentation/mlxembedders/lfm2bidirectionalconfiguration/attnlayeridxs.json": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/lfm2bidirectionalconfiguration/attnlayeridxs.md",
+      "hash": "f60986f85eddc2f0fb1e646a8bf28d24899384be5721be837d543b8957bb4b7c"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/data/documentation/mlxembedders/lfm2bidirectionalconfiguration/blockautoadjustffdim.json": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/lfm2bidirectionalconfiguration/blockautoadjustffdim.md",
+      "hash": "4bfb77c4606b576ed1d0085a43fec73f3a2372d898e42f08dd58375411ec55df"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/data/documentation/mlxembedders/lfm2bidirectionalconfiguration/blockffdim.json": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/lfm2bidirectionalconfiguration/blockffdim.md",
+      "hash": "29c55fae0735420320d4b8bc3bcb2a1e3ec2f6e7fdaf782d054fbf02e8b2095a"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/data/documentation/mlxembedders/lfm2bidirectionalconfiguration/blockffndimmultiplier.json": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/lfm2bidirectionalconfiguration/blockffndimmultiplier.md",
+      "hash": "57149cfb618f51ddff63b6682c0dd0687ae206ea176918ac31f358e2e2e655be"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/data/documentation/mlxembedders/lfm2bidirectionalconfiguration/blockmultipleof.json": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/lfm2bidirectionalconfiguration/blockmultipleof.md",
+      "hash": "716c826e5b15194f0cbd4f58b973a6dc99dae8ff171a0573d7d22ec755288497"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/data/documentation/mlxembedders/lfm2bidirectionalconfiguration/convbias.json": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/lfm2bidirectionalconfiguration/convbias.md",
+      "hash": "ac4a5080367fc399f955600fbc566ea7c5c55378f12728fbe1c2a92c1ab691e5"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/data/documentation/mlxembedders/lfm2bidirectionalconfiguration/convlcache.json": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/lfm2bidirectionalconfiguration/convlcache.md",
+      "hash": "4f4162111341a94d3de2671dcd541a101ad657f7eda2da67e3049fe02af49825"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/data/documentation/mlxembedders/lfm2bidirectionalconfiguration/headdim.json": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/lfm2bidirectionalconfiguration/headdim.md",
+      "hash": "c70cb361d596f1a85c789ccf165d2e03e9656931faa8c474b9f6df37299d3c66"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/data/documentation/mlxembedders/lfm2bidirectionalconfiguration/hiddensize.json": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/lfm2bidirectionalconfiguration/hiddensize.md",
+      "hash": "79905871bb7f9c490297d46b9e7605606d432c306802272b503505a348a1b9b1"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/data/documentation/mlxembedders/lfm2bidirectionalconfiguration/init(from:).json": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/lfm2bidirectionalconfiguration/init(from).md",
+      "hash": "bdc8d83957d835cd6f0c584d8e6a93829b40ae16c19ebd1e3ab51a4547d8db95"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/data/documentation/mlxembedders/lfm2bidirectionalconfiguration/layertypes.json": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/lfm2bidirectionalconfiguration/layertypes.md",
+      "hash": "5148e5be48990819370e40a3274ed6a7bfa620a4fecde870587d66c221651c24"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/data/documentation/mlxembedders/lfm2bidirectionalconfiguration/maxpositionembeddings.json": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/lfm2bidirectionalconfiguration/maxpositionembeddings.md",
+      "hash": "f4eb9bd04db41907eb3981f7802deb876372fc62d78f982289d849513277194a"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/data/documentation/mlxembedders/lfm2bidirectionalconfiguration/mlx.json": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/lfm2bidirectionalconfiguration/mlx.md",
+      "hash": "66b4e4bf7dbf12872507d5a9afd5b34507d5f1c495b28bd2bf265686738613fd"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/data/documentation/mlxembedders/lfm2bidirectionalconfiguration/mlxhead.json": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/lfm2bidirectionalconfiguration/mlxhead.md",
+      "hash": "44f28172c68e040aa65b4931f346890afd5efd42666d914d8bbf1b771bff129d"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/data/documentation/mlxembedders/lfm2bidirectionalconfiguration/mlxhead/documentlength.json": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/lfm2bidirectionalconfiguration/mlxhead/documentlength.md",
+      "hash": "61fbf3255922e428cc0d191e9c56b1f8f0a2e93b4332ae414292530a74671281"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/data/documentation/mlxembedders/lfm2bidirectionalconfiguration/mlxhead/documentprefix.json": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/lfm2bidirectionalconfiguration/mlxhead/documentprefix.md",
+      "hash": "ef9b0cdc0b8dc65147f8198282f607e8b1987c182a075f1ff79dffd153d6c4c6"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/data/documentation/mlxembedders/lfm2bidirectionalconfiguration/mlxhead/encodable-implementations.json": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/lfm2bidirectionalconfiguration/mlxhead/encodable-implementations.md",
+      "hash": "faed0932b6cd0a5830dd33eaeda9e06560a6586bfee24f42e488010085dc488e"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/data/documentation/mlxembedders/lfm2bidirectionalconfiguration/mlxhead/head.json": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/lfm2bidirectionalconfiguration/mlxhead/head.md",
+      "hash": "e68dce386cfe0e2a733ad86865e138f67df6862d561e58483fceb0e0255431ed"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/data/documentation/mlxembedders/lfm2bidirectionalconfiguration/mlxhead/init(from:).json": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/lfm2bidirectionalconfiguration/mlxhead/init(from).md",
+      "hash": "0fb1d47c31c5300e1c0a9204946d4db8ee1713bcd6a0660a8751323c22dc2abe"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/data/documentation/mlxembedders/lfm2bidirectionalconfiguration/mlxhead/kind.json": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/lfm2bidirectionalconfiguration/mlxhead/kind.md",
+      "hash": "9a24f375a255d9cdf46019d73ec4a2453f0f72bc38c1d98205d0ac2aa3b3a872"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/data/documentation/mlxembedders/lfm2bidirectionalconfiguration/mlxhead/kind/!=(_:_:).json": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/lfm2bidirectionalconfiguration/mlxhead/kind/noteq(_,_).md",
+      "hash": "738593f1364a4f6c0ac80f1deb194bca3cbfa9c908a1fe3b214408d4a318cb1e"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/data/documentation/mlxembedders/lfm2bidirectionalconfiguration/mlxhead/kind/colbert.json": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/lfm2bidirectionalconfiguration/mlxhead/kind/colbert.md",
+      "hash": "7991f0e5d4b9e4250ac43e0d55ea29d8e4bdb39b7153b3648cbea526ae174e8a"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/data/documentation/mlxembedders/lfm2bidirectionalconfiguration/mlxhead/kind/embedding.json": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/lfm2bidirectionalconfiguration/mlxhead/kind/embedding.md",
+      "hash": "b861b5b0904879ee1d0a81b64cad8bd7fe4a2120720188f9d473f3387585e54e"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/data/documentation/mlxembedders/lfm2bidirectionalconfiguration/mlxhead/kind/encodable-implementations.json": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/lfm2bidirectionalconfiguration/mlxhead/kind/encodable-implementations.md",
+      "hash": "03fad141444c447f16c86ce6a918fe699588a2da37c60934fdc09aa21189fd48"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/data/documentation/mlxembedders/lfm2bidirectionalconfiguration/mlxhead/kind/encode(to:).json": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/lfm2bidirectionalconfiguration/mlxhead/kind/encode(to).md",
+      "hash": "19e1ad879fc76154ad2eb96ce5b898d941b4b732425e7908aa6c8eb51df79155"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/data/documentation/mlxembedders/lfm2bidirectionalconfiguration/mlxhead/kind/equatable-implementations.json": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/lfm2bidirectionalconfiguration/mlxhead/kind/equatable-implementations.md",
+      "hash": "12ba7487082942fbb41133855a7ab745fd638cb484f934cab40fa46a414720e3"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/data/documentation/mlxembedders/lfm2bidirectionalconfiguration/mlxhead/kind/hash(into:).json": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/lfm2bidirectionalconfiguration/mlxhead/kind/hash(into).md",
+      "hash": "9d725c3f93193523dd4435b0808cfd0751c36efb786087bb6e2e7a7c3a9b83b6"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/data/documentation/mlxembedders/lfm2bidirectionalconfiguration/mlxhead/kind/hashvalue.json": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/lfm2bidirectionalconfiguration/mlxhead/kind/hashvalue.md",
+      "hash": "b051a4973345ac350d04bf6c3159129fb5a7b55d38078c87940692221bc423dd"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/data/documentation/mlxembedders/lfm2bidirectionalconfiguration/mlxhead/kind/init(from:).json": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/lfm2bidirectionalconfiguration/mlxhead/kind/init(from).md",
+      "hash": "6a2afb15d63b3e31b4020a811194b34e79ec71889de898ecd44b4e965e6ecc9e"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/data/documentation/mlxembedders/lfm2bidirectionalconfiguration/mlxhead/kind/init(rawvalue:).json": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/lfm2bidirectionalconfiguration/mlxhead/kind/init(rawvalue).md",
+      "hash": "f43be23cb078ff4843da1bbd06ddd9e78f7529cec737529011428f6b7817804d"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/data/documentation/mlxembedders/lfm2bidirectionalconfiguration/mlxhead/kind/makefromrawattachmentvalue(_:).json": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/lfm2bidirectionalconfiguration/mlxhead/kind/makefromrawattachmentvalue(_).md",
+      "hash": "3e429fd4b7335d0abb40ca21f9b35d27eb8835850c34e74118ae93495188ca71"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/data/documentation/mlxembedders/lfm2bidirectionalconfiguration/mlxhead/kind/rawattachmentvaluerepresentation.json": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/lfm2bidirectionalconfiguration/mlxhead/kind/rawattachmentvaluerepresentation.md",
+      "hash": "19339a73a5408cf7bdd1457e026fd4db9e8b167d4e5c244dfd4c8fb3e1e5be37"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/data/documentation/mlxembedders/lfm2bidirectionalconfiguration/mlxhead/kind/rawrepresentable-implementations.json": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/lfm2bidirectionalconfiguration/mlxhead/kind/rawrepresentable-implementations.md",
+      "hash": "88942a6c0795b40433b66154acc84de15c4d3d5ea510d58dfd3998a69493204a"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/data/documentation/mlxembedders/lfm2bidirectionalconfiguration/mlxhead/kind/toolresult.json": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/lfm2bidirectionalconfiguration/mlxhead/kind/toolresult.md",
+      "hash": "16b3b8ff23062f3a698128f9bc1301845faa7f871f2b06c0877707b67a06903c"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/data/documentation/mlxembedders/lfm2bidirectionalconfiguration/mlxhead/pooling.json": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/lfm2bidirectionalconfiguration/mlxhead/pooling.md",
+      "hash": "da52f705e378a0130c07f21aecef3e54d509defc5e5941b0d66d059517edff40"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/data/documentation/mlxembedders/lfm2bidirectionalconfiguration/mlxhead/projdim.json": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/lfm2bidirectionalconfiguration/mlxhead/projdim.md",
+      "hash": "ac90b9f1e801e13cdb3ec76a532f809d5c7064e587887218b2c5f842423dcd5f"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/data/documentation/mlxembedders/lfm2bidirectionalconfiguration/mlxhead/prompts.json": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/lfm2bidirectionalconfiguration/mlxhead/prompts.md",
+      "hash": "a428e7612e27c667d0eae9b881de19757497cf5cdf3c2b04a24d613266e0c2d1"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/data/documentation/mlxembedders/lfm2bidirectionalconfiguration/mlxhead/querylength.json": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/lfm2bidirectionalconfiguration/mlxhead/querylength.md",
+      "hash": "4ffed69b52c8d7c611a0c3cc5aa4cb05b3e5c941cc9164ab8bc7576c7680a109"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/data/documentation/mlxembedders/lfm2bidirectionalconfiguration/mlxhead/queryprefix.json": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/lfm2bidirectionalconfiguration/mlxhead/queryprefix.md",
+      "hash": "c6384eda8deb9a0e867ce077fec7416ef92134111093654e23ae7810a242caa4"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/data/documentation/mlxembedders/lfm2bidirectionalconfiguration/mlxhead/toolresult.json": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/lfm2bidirectionalconfiguration/mlxhead/toolresult.md",
+      "hash": "f6e8510ab5bf526e761265bd4a5908baa286709659416b22d7b134a3e5b81ed8"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/data/documentation/mlxembedders/lfm2bidirectionalconfiguration/normeps.json": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/lfm2bidirectionalconfiguration/normeps.md",
+      "hash": "172e57af3991bbef62780486865caaaa31f916741ddc86f503105f902bbdaee7"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/data/documentation/mlxembedders/lfm2bidirectionalconfiguration/numattentionheads.json": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/lfm2bidirectionalconfiguration/numattentionheads.md",
+      "hash": "47ebfd3cf6e444889426320cfa1693cffdae8f2444efcb3f95ec492cc1174767"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/data/documentation/mlxembedders/lfm2bidirectionalconfiguration/numhiddenlayers.json": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/lfm2bidirectionalconfiguration/numhiddenlayers.md",
+      "hash": "71c10b74a1e5e7f9d0b101fefc7f39afb2b705a76c341cc64e381d40a6a24d51"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/data/documentation/mlxembedders/lfm2bidirectionalconfiguration/numkeyvalueheads.json": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/lfm2bidirectionalconfiguration/numkeyvalueheads.md",
+      "hash": "5164565ef40a2c59e61e0022922617b20fa0685d37e3ef7ae2a43e69f28615f0"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/data/documentation/mlxembedders/lfm2bidirectionalconfiguration/ropetheta.json": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/lfm2bidirectionalconfiguration/ropetheta.md",
+      "hash": "85bfcfc968b91e621ab95b0e368d5ac877f62f7ce8ab137869aed23b3c01cbf8"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/data/documentation/mlxembedders/lfm2bidirectionalconfiguration/vocabsize.json": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/lfm2bidirectionalconfiguration/vocabsize.md",
+      "hash": "4ed0cc119cdef735b3cfb273243f0ff9c44971de0286dc501f8dc2094b813685"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/data/documentation/mlxembedders/lfm2bidirectionalmodel.json": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/lfm2bidirectionalmodel.md",
+      "hash": "90e9029fd8e19067507a3da7aa600903068be81ffb1d3b7752d0ee6fdb8da9a3"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/data/documentation/mlxembedders/lfm2bidirectionalmodel/baselanguagemodel-implementations.json": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/lfm2bidirectionalmodel/baselanguagemodel-implementations.md",
+      "hash": "3aeb37d0aa0c1616b390be8fd798c686bf9bb1ab4d5f9dcf3203d7635aa0f90e"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/data/documentation/mlxembedders/lfm2bidirectionalmodel/callasfunction(_:positionids:tokentypeids:attentionmask:).json": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/lfm2bidirectionalmodel/callasfunction(_,positionids,tokentypeids,attentionmask).md",
+      "hash": "6b50ed2f5837350fab3bed7020809284ec6ad3c8ca177c6650a4e0056ff68cd4"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/data/documentation/mlxembedders/lfm2bidirectionalmodel/configuration.json": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/lfm2bidirectionalmodel/configuration.md",
+      "hash": "9826ca5ce567aa10e94334e40d268067430cae8d86ec695861a7d2592481cff3"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/data/documentation/mlxembedders/lfm2bidirectionalmodel/embeddingmodel-implementations.json": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/lfm2bidirectionalmodel/embeddingmodel-implementations.md",
+      "hash": "e068e7f21a34b9e7557e53ebc5c013fb3be39192fc281140aa378d8ad22df36b"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/data/documentation/mlxembedders/lfm2bidirectionalmodel/excludedcheckpointnamespaces.json": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/lfm2bidirectionalmodel/excludedcheckpointnamespaces.md",
+      "hash": "d603393cb35e5ed83e1621efc6a7825f4525d929e36498ed452181a6cd04bed9"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/data/documentation/mlxembedders/lfm2bidirectionalmodel/init(_:).json": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/lfm2bidirectionalmodel/init(_).md",
+      "hash": "50345a85591cd47c338734606f3fba9823639698f7df9f884d42607a789ee1a7"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/data/documentation/mlxembedders/lfm2bidirectionalmodel/maxpositionembeddings.json": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/lfm2bidirectionalmodel/maxpositionembeddings.md",
+      "hash": "c71009c42f21d7922ec897a799139779a959de5113c6946f271536cbd54622eb"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/data/documentation/mlxembedders/lfm2bidirectionalmodel/poolingstrategy.json": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/lfm2bidirectionalmodel/poolingstrategy.md",
+      "hash": "1f98467c6ec40b6645911abf7677737fb624fe6a83445f73a2be6c11aeba6ba5"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/data/documentation/mlxembedders/lfm2bidirectionalmodel/preparecheckpoint(_:).json": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/lfm2bidirectionalmodel/preparecheckpoint(_).md",
+      "hash": "ec359271338d4b3888744eec514aac6703f694bde9dee3996d4b38541b3a0f96"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/data/documentation/mlxembedders/lfm2bidirectionalmodel/sanitize(weights:).json": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/lfm2bidirectionalmodel/sanitize(weights).md",
+      "hash": "0b1891e53779c7a7c60161a80027346fc3bcc2b050c16dee3dffc889be95fb4b"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/data/documentation/mlxembedders/lfm2bidirectionalmodel/sanitize(weights:metadata:).json": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/lfm2bidirectionalmodel/sanitize(weights,metadata).md",
+      "hash": "cfaeccb454d6b49819daa42acc6aa8e7de391e2ef3973623c65e9bc06d5784b9"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/data/documentation/mlxembedders/lfm2bidirectionalmodel/vocabularysize.json": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/lfm2bidirectionalmodel/vocabularysize.md",
+      "hash": "76f2a6433df3e5daa03d42cf639ee7ff56a697302099e6ffdf2fe14b949ab70a"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/data/documentation/mlxembedders/mlx.json": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/mlx.md",
+      "hash": "b6071dd432602b7a7072d7ebf56a91265486b4340c3346a7baff2626b25fdd94"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/data/documentation/mlxembedders/mlx/mlxarray.json": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/mlx/mlxarray.md",
+      "hash": "605f19f98ece5aada8d892bbc00e426ef8578c8779c38ce8d0432bae78e84ae0"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/data/documentation/mlxembedders/mlx/mlxarray/l2normalized(axis:eps:).json": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/mlx/mlxarray/l2normalized(axis,eps).md",
+      "hash": "654f5d5bdd46792dc2d7bcc4626a2c0cc0766fda097ff0b980a36d3316fff5b9"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/data/documentation/mlxembedders/mlxlmcommon.json": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/mlxlmcommon.md",
+      "hash": "fa574e5cc4548646c1b4663facff37e516b4cba57e3bcf5da41117b14d8811fd"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/data/documentation/mlxembedders/mlxlmcommon/embeddinggemma2.json": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/mlxlmcommon/embeddinggemma2.md",
+      "hash": "ec7b084255100f37066f9908e4a5218eee278ca3eccb2d8a3b7499790a23a55c"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/data/documentation/mlxembedders/mlxlmcommon/embeddinggemma2/callasfunction(_:positionids:tokentypeids:attentionmask:).json": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/mlxlmcommon/embeddinggemma2/callasfunction(_,positionids,tokentypeids,attentionmask).md",
+      "hash": "7cd7d27df5d57c3ad2418324035e25f82e9791eb1155af877b4ddbd1d13ebeef"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/data/documentation/mlxembedders/mlxlmcommon/embeddinggemma2/embeddingmodel-implementations.json": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/mlxlmcommon/embeddinggemma2/embeddingmodel-implementations.md",
+      "hash": "73f2f667639b88c96aba3b5e89e506753b8d9319efb09b76714191982797d875"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/data/documentation/mlxembedders/mlxlmcommon/embeddinggemma2/maxpositionembeddings.json": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/mlxlmcommon/embeddinggemma2/maxpositionembeddings.md",
+      "hash": "d83f909dfc0d2e93189b782b07f374a386d87822acce07addd45974044be2ea2"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/data/documentation/mlxembedders/mlxlmcommon/embeddinggemma2/poolingstrategy.json": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/mlxlmcommon/embeddinggemma2/poolingstrategy.md",
+      "hash": "4949823fc462fed4535860e6da742669e6e45594e4fa93740fc3ddaa40ca733a"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/data/documentation/mlxembedders/mlxlmcommon/embeddinggemma2/vocabularysize.json": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/mlxlmcommon/embeddinggemma2/vocabularysize.md",
+      "hash": "4b43281593eecdbece32f7fd535d557e8221d08d01c92b7393aded111f57e0e8"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/data/documentation/mlxembedders/nomicbertconfiguration.json": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/nomicbertconfiguration.md",
+      "hash": "b16253619f23a57196524cc67182449462a5e490e7681b71335e4a166306f39f"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/data/documentation/mlxembedders/nomicbertconfiguration/init(from:).json": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/nomicbertconfiguration/init(from).md",
+      "hash": "c8847d59f4e22c68e83b608fcc9948f6ff81a261c08048c5e254da9f46b3a71e"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/data/documentation/mlxembedders/nomicbertmodel.json": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/nomicbertmodel.md",
+      "hash": "c53de1f5892d8d066ffd192eb86329c08e6f4830b1ae007db5ed0fa0d1cd1c56"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/data/documentation/mlxembedders/nomicbertmodel/baselanguagemodel-implementations.json": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/nomicbertmodel/baselanguagemodel-implementations.md",
+      "hash": "0b58934d65f5b410724b0b3fe85478206c142179e1c072ab4b1396ebc3533ff5"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/data/documentation/mlxembedders/nomicbertmodel/callasfunction(_:positionids:tokentypeids:attentionmask:).json": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/nomicbertmodel/callasfunction(_,positionids,tokentypeids,attentionmask).md",
+      "hash": "bf76841e73aea3fe0ebeb260db4454721f6667fcfcf79a9880247fea7fa71d7b"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/data/documentation/mlxembedders/nomicbertmodel/embeddingmodel-implementations.json": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/nomicbertmodel/embeddingmodel-implementations.md",
+      "hash": "51a86f207d763d61e0d2900486df029f4e79e1849f16cae68d29418225f55464"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/data/documentation/mlxembedders/nomicbertmodel/excludedcheckpointnamespaces.json": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/nomicbertmodel/excludedcheckpointnamespaces.md",
+      "hash": "1b0de360c3712a0e6808b13cb78206516ab0d6cfd5f9db8daf0de2a2fd3902a6"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/data/documentation/mlxembedders/nomicbertmodel/init(_:pooler:lmhead:).json": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/nomicbertmodel/init(_,pooler,lmhead).md",
+      "hash": "61c54d4f36dcb251a78a2e25a8540b69cbc3b01dd38f6d0018906904c495eb29"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/data/documentation/mlxembedders/nomicbertmodel/maxpositionembeddings.json": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/nomicbertmodel/maxpositionembeddings.md",
+      "hash": "29bdd673831217cdd84cbe43a4f8fba2082ca8dd68ddc91b0a6f5b9c411c2f54"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/data/documentation/mlxembedders/nomicbertmodel/poolingstrategy.json": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/nomicbertmodel/poolingstrategy.md",
+      "hash": "ed632ebd9609efc8ac8bd3aaa537b46971cc00f938a22ec9b0d3bf322fe9a6a7"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/data/documentation/mlxembedders/nomicbertmodel/preparecheckpoint(_:).json": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/nomicbertmodel/preparecheckpoint(_).md",
+      "hash": "b6b42bc848b34341bf2a8ea1d04a0cfc95a23b5305f1f14915a5d759a432ff17"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/data/documentation/mlxembedders/nomicbertmodel/sanitize(weights:).json": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/nomicbertmodel/sanitize(weights).md",
+      "hash": "f1e1213f9e75918c74ae6b8a9af9bcb4a4dc94744ee249fa2022e0c3e9b70090"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/data/documentation/mlxembedders/nomicbertmodel/sanitize(weights:metadata:).json": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/nomicbertmodel/sanitize(weights,metadata).md",
+      "hash": "3dd8e8b4ff6c10552b4691c5aba9aaf8cbc61ef5fee1ee100fa3cb15a9df1917"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/data/documentation/mlxembedders/nomicbertmodel/vocabularysize.json": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/nomicbertmodel/vocabularysize.md",
+      "hash": "9c9f7920c98c6290bf7fc3e74eb104781042aa2192a84d02a320fdb66d6e6b0b"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/data/documentation/mlxembedders/pooling.json": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/pooling.md",
+      "hash": "d2cb555e0151b9649d4628fac5ea0ecc01a1642973178e9fe8c0929e040ae8fa"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/data/documentation/mlxembedders/pooling/callasfunction(_:mask:normalize:applylayernorm:).json": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/pooling/callasfunction(_,mask,normalize,applylayernorm).md",
+      "hash": "cb272b7dde8955d14dd47ec66f3bcfa359a933ffeaf0ec2a66726fe250e04f8d"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/data/documentation/mlxembedders/pooling/dimension.json": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/pooling/dimension.md",
+      "hash": "1b62b3f638de236eb229d59f4c84274c5af2cfa5773ddcb81409affdbcbd8715"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/data/documentation/mlxembedders/pooling/init(config:).json": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/pooling/init(config).md",
+      "hash": "ccad12351f6cebd30debc920d7072f2fbfb3f79f11d374014a6197c73f9060bb"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/data/documentation/mlxembedders/pooling/init(strategy:dimension:).json": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/pooling/init(strategy,dimension).md",
+      "hash": "7915224efbf4af112ccf05a65263892b860659a0c2d782d2d66fea41f90e38f7"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/data/documentation/mlxembedders/pooling/strategy-swift.enum.json": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/pooling/strategy-swift.enum.md",
+      "hash": "c7d3c37b166834e7bc35bd75317b024318a932d80ea4e3fcc9d22e2919c313b4"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/data/documentation/mlxembedders/pooling/strategy-swift.enum/!=(_:_:).json": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/pooling/strategy-swift.enum/noteq(_,_).md",
+      "hash": "888489081a7068593606742663319d9a03d8c63e38675629bfd225f50ae4e570"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/data/documentation/mlxembedders/pooling/strategy-swift.enum/cls.json": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/pooling/strategy-swift.enum/cls.md",
+      "hash": "b9f582dcaca824382c59835d9af1c6773f93fcf1b324eb2e1ed1f2ae4de20561"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/data/documentation/mlxembedders/pooling/strategy-swift.enum/equatable-implementations.json": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/pooling/strategy-swift.enum/equatable-implementations.md",
+      "hash": "d094af4b91c2eda1025f23f0b7fa5f5b0e64fbf033671ff8fd027f55d4efb0c4"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/data/documentation/mlxembedders/pooling/strategy-swift.enum/first.json": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/pooling/strategy-swift.enum/first.md",
+      "hash": "713de75628ed593ced7ff742c01944ab1640de568fb34935931105de35be5a3a"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/data/documentation/mlxembedders/pooling/strategy-swift.enum/last.json": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/pooling/strategy-swift.enum/last.md",
+      "hash": "569920ee8e8caa725db5ffef8fe775ae415830bb8d5b1b930c86001e13cf63ef"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/data/documentation/mlxembedders/pooling/strategy-swift.enum/max.json": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/pooling/strategy-swift.enum/max.md",
+      "hash": "01dfd8afb2aacb9747f2ea27e89ee330ce91c128f52061d0db8d6ce39df5efea"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/data/documentation/mlxembedders/pooling/strategy-swift.enum/mean.json": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/pooling/strategy-swift.enum/mean.md",
+      "hash": "be3ecb24df487a6c344e1242c09611cdbf461d172c543a1829826145adb774e9"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/data/documentation/mlxembedders/pooling/strategy-swift.enum/none.json": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/pooling/strategy-swift.enum/none.md",
+      "hash": "8a2cd139abe5f94b70088b229ce5b19649c3e09089b76fb219db06bf3b3a9b03"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/data/documentation/mlxembedders/pooling/strategy-swift.property.json": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/pooling/strategy-swift.property.md",
+      "hash": "50060ab2a5da8ad58068ae45ea4147fffd019bcdfc8d86731d06e17b577bc439"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/data/documentation/mlxembedders/poolingconfiguration.json": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/poolingconfiguration.md",
+      "hash": "d5054bbdde37943a5597910fdcd93032b510573d7ba129dd4f2e7b97c7a94f13"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/data/documentation/mlxembedders/poolingconfiguration/dimension.json": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/poolingconfiguration/dimension.md",
+      "hash": "0ad04a00d798c223863b0166a0d7e8c113aa89b1a37fd020ead35c6dcfd6acfa"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/data/documentation/mlxembedders/poolingconfiguration/encodable-implementations.json": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/poolingconfiguration/encodable-implementations.md",
+      "hash": "579569fe7397a6d69ce57f8ba628b264af9130e25f24305f499001f83f045b99"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/data/documentation/mlxembedders/poolingconfiguration/init(from:).json": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/poolingconfiguration/init(from).md",
+      "hash": "16448993292731421dc43a89fa887da1a875131f0fb29308a352ab0b58961300"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/data/documentation/mlxembedders/poolingconfiguration/poolingmodeclstoken.json": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/poolingconfiguration/poolingmodeclstoken.md",
+      "hash": "1116c18702aad9cf7b357dede45edf94389421d7c65b29b8ebce051cd41d177c"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/data/documentation/mlxembedders/poolingconfiguration/poolingmodelasttoken.json": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/poolingconfiguration/poolingmodelasttoken.md",
+      "hash": "33cf77983959e7b793aec016f6acc4e776b7c2189039803a48ef44e9410ff085"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/data/documentation/mlxembedders/poolingconfiguration/poolingmodemaxtokens.json": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/poolingconfiguration/poolingmodemaxtokens.md",
+      "hash": "8b180ab39fc01225da6bcbfea63ab4d7e3b4744ca77aeacd17c3483a87895923"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/data/documentation/mlxembedders/poolingconfiguration/poolingmodemeantokens.json": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/poolingconfiguration/poolingmodemeantokens.md",
+      "hash": "e2af3ba6ad580169ef558ee286c55eb3d5e45a2e00d3f8ba9c722c4fd439d59c"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/data/documentation/mlxembedders/poolingconfiguration/toolresult.json": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/poolingconfiguration/toolresult.md",
+      "hash": "ebc0ade3b65b48641f08bd99cc6cb9687ee4fb3294629fd2e23c99d26d2dfdb4"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/data/documentation/mlxembedders/qwen3configuration.json": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/qwen3configuration.md",
+      "hash": "598c834592e9252e2f207154f8d7707369693aefd47e3097610db321f5b94f77"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/data/documentation/mlxembedders/qwen3configuration/encodable-implementations.json": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/qwen3configuration/encodable-implementations.md",
+      "hash": "d32387a384cec12f34aa6ee9ad5865077d164fe29a1741fba76732d8f37e7730"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/data/documentation/mlxembedders/qwen3configuration/init(from:).json": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/qwen3configuration/init(from).md",
+      "hash": "d1497c8f15ccf690e67d148cfd0fdd3593afff5ae55fc6880010b3f486d376ef"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/data/documentation/mlxembedders/qwen3configuration/toolresult.json": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/qwen3configuration/toolresult.md",
+      "hash": "d2d01855ff0a3281d2fa8e67d796a049bc17227361d68a9279ac3ee7e3c8877f"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/data/documentation/mlxembedders/qwen3model.json": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/qwen3model.md",
+      "hash": "a3005fa992b3f34429e4141a612a791e310b8a644c8499036e320b69d3b9267e"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/data/documentation/mlxembedders/qwen3model/baselanguagemodel-implementations.json": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/qwen3model/baselanguagemodel-implementations.md",
+      "hash": "4c2cdeb65107df65abed3afe9d2e5ac9331a400ba2492ed0ce8f1a67b53ce8f4"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/data/documentation/mlxembedders/qwen3model/callasfunction(_:positionids:tokentypeids:attentionmask:).json": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/qwen3model/callasfunction(_,positionids,tokentypeids,attentionmask).md",
+      "hash": "ba512613a73bba3f91241eb250ba2f471683ce4c9cfdf05199e2c38dca5cdaf4"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/data/documentation/mlxembedders/qwen3model/embeddingmodel-implementations.json": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/qwen3model/embeddingmodel-implementations.md",
+      "hash": "13addc318fb1868e44887b67c02e2a782f5ea9bdc163fa234761eed4d92fed02"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/data/documentation/mlxembedders/qwen3model/excludedcheckpointnamespaces.json": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/qwen3model/excludedcheckpointnamespaces.md",
+      "hash": "7df4f182b1caf3b93e9fc70b65d42bbe500f24d556467fc88c4dbfe88d25da22"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/data/documentation/mlxembedders/qwen3model/init(_:).json": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/qwen3model/init(_).md",
+      "hash": "b23715c8a21d88eb3972560c859218d966bff0722b4d72db1b27b646da97a875"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/data/documentation/mlxembedders/qwen3model/kvheads.json": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/qwen3model/kvheads.md",
+      "hash": "9e08a9e55c674b5855ea755b766ee38391f181c732b5e9c3e25da634b2716586"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/data/documentation/mlxembedders/qwen3model/maxpositionembeddings.json": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/qwen3model/maxpositionembeddings.md",
+      "hash": "751d620b618a9c4fa38f0c0e8c0a9ce4261aee69d1f4195f1f46b8c732600de9"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/data/documentation/mlxembedders/qwen3model/poolingstrategy.json": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/qwen3model/poolingstrategy.md",
+      "hash": "5c983cf14450ca8fc39ea4e2f7a1f7ed89464ef7407c63a9e1dae45ca235f063"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/data/documentation/mlxembedders/qwen3model/preparecheckpoint(_:).json": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/qwen3model/preparecheckpoint(_).md",
+      "hash": "ff0678cdd7805e941c9c0d52209f8de60ed6c0978ce1d12852be11e414576bc1"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/data/documentation/mlxembedders/qwen3model/sanitize(weights:).json": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/qwen3model/sanitize(weights).md",
+      "hash": "c8f2839c43732572d08eeb2136c781b82f11137678cbf77b1b3d58812381392c"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/data/documentation/mlxembedders/qwen3model/sanitize(weights:metadata:).json": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/qwen3model/sanitize(weights,metadata).md",
+      "hash": "8aa49e20ec2b1fa0f1769d81d2044047fa592d3dac5fbbbfc64799093ab5c469"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/data/documentation/mlxembedders/qwen3model/vocabularysize.json": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/qwen3model/vocabularysize.md",
+      "hash": "0efc4ed2a961ed603937b8c7bb4888e078126c9d1bc6162d618a066753cba58b"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/documentation/mlxembedders": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/MLXEmbedders.md",
+      "hash": "4c5a9109bab861c426b7db203c6d37666157b75e7911ce76e76d02b8e799d1c7"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/documentation/mlxembedders/bertconfiguration": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/bertconfiguration.md",
+      "hash": "d9100d5e7aafa14d1c3349d427ef5729077bcd7481112c5114f867607e84af5f"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/documentation/mlxembedders/bertconfiguration/init(from:)": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/bertconfiguration/init(from).md",
+      "hash": "ee41b7d0434fb65a96858bd30d48c2d806a87f56542ad5aab6a4470be1d97b08"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/documentation/mlxembedders/bertmodel": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/bertmodel.md",
+      "hash": "9d8e041c36934c1f5302814ab80c603cc7fcb6a6df59a9623c68dfbc23fae286"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/documentation/mlxembedders/bertmodel/baselanguagemodel-implementations": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/bertmodel/baselanguagemodel-implementations.md",
+      "hash": "16e5b77a3fed3235a1bd6cc84546e7a1a7bd01fc287f75339067499abefe8613"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/documentation/mlxembedders/bertmodel/callasfunction(_:positionids:tokentypeids:attentionmask:)": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/bertmodel/callasfunction(_,positionids,tokentypeids,attentionmask).md",
+      "hash": "7cee84413a0ef3a9c0c40fc4986ebc88c2cdf898049010fc3530cee14a5cb493"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/documentation/mlxembedders/bertmodel/embeddingmodel-implementations": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/bertmodel/embeddingmodel-implementations.md",
+      "hash": "c279f01c05d87247772af58d7f02024472fd17d0657eac59e739f939b1480834"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/documentation/mlxembedders/bertmodel/excludedcheckpointnamespaces": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/bertmodel/excludedcheckpointnamespaces.md",
+      "hash": "52d6fff8328575efdbf9fa56a6dbb0ef27eef38798400c8f40a1b3c35bd6a4c6"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/documentation/mlxembedders/bertmodel/init(_:lmhead:)": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/bertmodel/init(_,lmhead).md",
+      "hash": "1074229006f09689d78009e30b94e664514387c965a7755efc793efc372116d6"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/documentation/mlxembedders/bertmodel/maxpositionembeddings": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/bertmodel/maxpositionembeddings.md",
+      "hash": "3626fb23952776b9f17eaf79f6da5ce8482709419a65b0981bf1c424c23e5db6"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/documentation/mlxembedders/bertmodel/poolingstrategy": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/bertmodel/poolingstrategy.md",
+      "hash": "29855feadf1acfddd923db9acf1a78f190625e6c8df5a4d5bdceb5017b77f00d"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/documentation/mlxembedders/bertmodel/preparecheckpoint(_:)": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/bertmodel/preparecheckpoint(_).md",
+      "hash": "87a004b4b4293c815d6175735918309cbcbd886688dffe2c1561514276217df4"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/documentation/mlxembedders/bertmodel/sanitize(weights:)": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/bertmodel/sanitize(weights).md",
+      "hash": "84c3e96cdccb530b3201cf2bace8b49c58cf1c7267fd6a4205d5e0dcb43b955c"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/documentation/mlxembedders/bertmodel/sanitize(weights:metadata:)": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/bertmodel/sanitize(weights,metadata).md",
+      "hash": "a9a384f92dc5cdb3d54fd204f3237c0aafd36fd5dd7d52896cae017dd671d580"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/documentation/mlxembedders/bertmodel/vocabularysize": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/bertmodel/vocabularysize.md",
+      "hash": "c1a8ec8af18c9635f648daae753940c49b7f2b4d59972c0973d1a59917517327"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/documentation/mlxembedders/bertrerankermodel": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/bertrerankermodel.md",
+      "hash": "53a2e4f812a58b16bce821e21ea38ddf600ee58dc7a0cd40a29603cba5b51049"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/documentation/mlxembedders/bertrerankermodel/baselanguagemodel-implementations": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/bertrerankermodel/baselanguagemodel-implementations.md",
+      "hash": "bf30084caa466b94a3125ca6d0d370f92b832530ceda8f06b322f19c63e97dc0"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/documentation/mlxembedders/bertrerankermodel/callasfunction(_:positionids:tokentypeids:attentionmask:)": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/bertrerankermodel/callasfunction(_,positionids,tokentypeids,attentionmask).md",
+      "hash": "2caf077f71feda6dc1c260184d5103deea13e986aad7913b1f020db7e68b896a"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/documentation/mlxembedders/bertrerankermodel/embeddingmodel-implementations": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/bertrerankermodel/embeddingmodel-implementations.md",
+      "hash": "8d2d76013bf6308aa5d3225c0cf13ebf2228e2a9742512b47238616651506de3"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/documentation/mlxembedders/bertrerankermodel/excludedcheckpointnamespaces": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/bertrerankermodel/excludedcheckpointnamespaces.md",
+      "hash": "0500722046b4c0e8a5c02c0cc22ca04285bde39cb9d281f9843e5b6a4f20346d"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/documentation/mlxembedders/bertrerankermodel/init(_:)": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/bertrerankermodel/init(_).md",
+      "hash": "da651d974b39ee5199baf793564442b7a4dba841257618bda09bef6f09d79261"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/documentation/mlxembedders/bertrerankermodel/maxpositionembeddings": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/bertrerankermodel/maxpositionembeddings.md",
+      "hash": "4d7439a3524d01f0aad64210c280d567ad0c70249582432484bea097c64ce11b"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/documentation/mlxembedders/bertrerankermodel/poolingstrategy": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/bertrerankermodel/poolingstrategy.md",
+      "hash": "64780dfe9f49b18449239b22711f5c89c0f7eaf5a1c5707513d9f1f77c5503c6"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/documentation/mlxembedders/bertrerankermodel/preparecheckpoint(_:)": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/bertrerankermodel/preparecheckpoint(_).md",
+      "hash": "52e44e854068f8f192351b41f64865b8b59f417a6df8bc2640f6d4d568009d59"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/documentation/mlxembedders/bertrerankermodel/sanitize(weights:)": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/bertrerankermodel/sanitize(weights).md",
+      "hash": "2341861ee27fcd4e0ec134c2e61a96921d25a1a33567d8e45cb554f58e4100f6"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/documentation/mlxembedders/bertrerankermodel/sanitize(weights:metadata:)": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/bertrerankermodel/sanitize(weights,metadata).md",
+      "hash": "1aec5bba107ff9063df14844d648a56470b2c59aff257d49e25edcd2de1dfeae"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/documentation/mlxembedders/bertrerankermodel/score(_:positionids:tokentypeids:attentionmask:)": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/bertrerankermodel/score(_,positionids,tokentypeids,attentionmask).md",
+      "hash": "12d1da035c1bba092e451bca51662fd92fba7117e281503d3ab4b9bffde8d883"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/documentation/mlxembedders/bertrerankermodel/vocabularysize": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/bertrerankermodel/vocabularysize.md",
+      "hash": "48076528f7e5ec54c7856278138343a19f7d80e38d9b5208d34c73a1a527eeb4"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/documentation/mlxembedders/bertsequenceclassificationrerankermodel": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/bertsequenceclassificationrerankermodel.md",
+      "hash": "83ab4cd9ad5a9775abd4998fe373e3e61c323ac6c94e190b2347bca58165ba33"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/documentation/mlxembedders/bertsequenceclassificationrerankermodel/baselanguagemodel-implementations": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/bertsequenceclassificationrerankermodel/baselanguagemodel-implementations.md",
+      "hash": "a90244838d0c6e03c150f6710a8d409fc428e24e1f846dc1095a805cf5fec011"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/documentation/mlxembedders/bertsequenceclassificationrerankermodel/callasfunction(_:positionids:tokentypeids:attentionmask:)": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/bertsequenceclassificationrerankermodel/callasfunction(_,positionids,tokentypeids,attentionmask).md",
+      "hash": "1f73902acd2205016368514fc9cc0999f0f559abc2f463102677495c3603c2f7"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/documentation/mlxembedders/bertsequenceclassificationrerankermodel/embeddingmodel-implementations": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/bertsequenceclassificationrerankermodel/embeddingmodel-implementations.md",
+      "hash": "146b726715d209a9a576822dce2ddfc60968a0b96c9e2198f7d638fff7293603"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/documentation/mlxembedders/bertsequenceclassificationrerankermodel/excludedcheckpointnamespaces": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/bertsequenceclassificationrerankermodel/excludedcheckpointnamespaces.md",
+      "hash": "58b425362263b4a14978a6137194c791784d9782998076ac6c3d506908074d71"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/documentation/mlxembedders/bertsequenceclassificationrerankermodel/init(_:)": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/bertsequenceclassificationrerankermodel/init(_).md",
+      "hash": "933be7908f4543f7e9d4a6b7d428bb428ff15e50f5b1a5c0be71a72b171b2d88"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/documentation/mlxembedders/bertsequenceclassificationrerankermodel/maxpositionembeddings": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/bertsequenceclassificationrerankermodel/maxpositionembeddings.md",
+      "hash": "0c92c7e64d97137c78160e2c61a5b82fcd387ff8040b85f6fadc1455ccd33a9f"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/documentation/mlxembedders/bertsequenceclassificationrerankermodel/poolingstrategy": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/bertsequenceclassificationrerankermodel/poolingstrategy.md",
+      "hash": "2990515cfbc7f7ee4426989f68c80222904eb049a8b2eacf0cd2f227b8521462"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/documentation/mlxembedders/bertsequenceclassificationrerankermodel/preparecheckpoint(_:)": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/bertsequenceclassificationrerankermodel/preparecheckpoint(_).md",
+      "hash": "526cd221fe4d0f0057dccf8fc313bb8313e066f18f80f0fec3cc5f9fe0fc873f"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/documentation/mlxembedders/bertsequenceclassificationrerankermodel/sanitize(weights:)": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/bertsequenceclassificationrerankermodel/sanitize(weights).md",
+      "hash": "99b3ad850c196102a58c8f06eda17d7e2dbca7e77f8b067aad1a64d6d5aa84ce"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/documentation/mlxembedders/bertsequenceclassificationrerankermodel/sanitize(weights:metadata:)": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/bertsequenceclassificationrerankermodel/sanitize(weights,metadata).md",
+      "hash": "aaab40fc3d08c303239ecded5769acca7893ff3b9f4e55e53d557c305e64d35d"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/documentation/mlxembedders/bertsequenceclassificationrerankermodel/score(_:positionids:tokentypeids:attentionmask:)": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/bertsequenceclassificationrerankermodel/score(_,positionids,tokentypeids,attentionmask).md",
+      "hash": "3f20791a0ebfc6bee2e53df329a0d8f15ab5e2f6b4aefc14c3174aaa8642cd47"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/documentation/mlxembedders/bertsequenceclassificationrerankermodel/vocabularysize": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/bertsequenceclassificationrerankermodel/vocabularysize.md",
+      "hash": "634ce4f7a84e08b3215bc6325b284d2b17c392d73d154d8d32d342da6ffd00fb"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/documentation/mlxembedders/distilbertmodel": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/distilbertmodel.md",
+      "hash": "e806e48d761ea6509834869c292dd9a54b9e5a54629f2450c09f29ce0500f481"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/documentation/mlxembedders/distilbertmodel/sanitize(weights:)": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/distilbertmodel/sanitize(weights).md",
+      "hash": "94ce2bb747b02c9fb307a925eb5675915470131c7fe6755ba42586770fb8bd51"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/documentation/mlxembedders/embeddermodelcontainer": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/embeddermodelcontainer.md",
+      "hash": "5b6bfcc83a1b1b0cb25750fec81ce86e55ed69c5b64a92e9f59e8c05cfe73cf7"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/documentation/mlxembedders/embeddermodelcontainer/configuration": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/embeddermodelcontainer/configuration.md",
+      "hash": "6a1420237c31bf3d371b765bb2a03ee85a69f84098edcb8fab515ee199cba296"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/documentation/mlxembedders/embeddermodelcontainer/init(context:)": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/embeddermodelcontainer/init(context).md",
+      "hash": "c6b243dea63ba262e767f21663e14af393e570938874196e584c4114b171fd50"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/documentation/mlxembedders/embeddermodelcontainer/modeldirectory": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/embeddermodelcontainer/modeldirectory.md",
+      "hash": "7726473496f31dd6ad6bc4c5d548338c0bb6ad07075f3f234cd7cc033315a536"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/documentation/mlxembedders/embeddermodelcontainer/perform(_:)-37clz": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/embeddermodelcontainer/perform(_)-37clz.md",
+      "hash": "9bd2d50dd1d822633127ad71d2bc2256580d6acacfcae67ffea01f7767222c69"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/documentation/mlxembedders/embeddermodelcontainer/perform(_:)-52sj4": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/embeddermodelcontainer/perform(_)-52sj4.md",
+      "hash": "b35ba24530b25b67cbb260a8d255aa8d77cb35368195de313069bddc2e5a0d9a"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/documentation/mlxembedders/embeddermodelcontainer/perform(nonsendable:_:)": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/embeddermodelcontainer/perform(nonsendable,_).md",
+      "hash": "9a54d0b00baa04429e3b33293440617c3697b7dc3766d8ad244ed7fd92d720b5"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/documentation/mlxembedders/embeddermodelcontainer/poolingstrategy": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/embeddermodelcontainer/poolingstrategy.md",
+      "hash": "d5e9b8d80a0be11927da87362f770c6d4f0d0c645d125e90b04331fde40263aa"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/documentation/mlxembedders/embeddermodelcontainer/tokenizer": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/embeddermodelcontainer/tokenizer.md",
+      "hash": "e9a2fbead1221f4ae238b808e563e77a10992625c51f4193bda6a17d51e23da1"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/documentation/mlxembedders/embeddermodelcontainer/tokenizerdirectory": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/embeddermodelcontainer/tokenizerdirectory.md",
+      "hash": "d078593f9c3c4e2766c29b445ec5637324c6b5783c5667b47c39dbce3cf34822"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/documentation/mlxembedders/embeddermodelcontainer/update(_:)": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/embeddermodelcontainer/update(_).md",
+      "hash": "010f4e820c9da27b51ec92b9d002e6bf0c7ab6a23af0cba7d6ae25176947f857"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/documentation/mlxembedders/embeddermodelcontext": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/embeddermodelcontext.md",
+      "hash": "64ca86cdabecf1e41b4412ef28f2fdf15d354874ae37c6d5b76995a42e8d0440"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/documentation/mlxembedders/embeddermodelcontext/configuration": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/embeddermodelcontext/configuration.md",
+      "hash": "07748de84dace8255dfca314d66e5dff103e7ce68cfcbe31704885dab9218535"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/documentation/mlxembedders/embeddermodelcontext/init(configuration:model:tokenizer:pooling:)": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/embeddermodelcontext/init(configuration,model,tokenizer,pooling).md",
+      "hash": "72f4856f0092161289d7da809b503dd9f7c59b833ed28e1a8d899e953bc854f6"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/documentation/mlxembedders/embeddermodelcontext/model": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/embeddermodelcontext/model.md",
+      "hash": "ada2dc2973e0b4c51641733aea71b00b42594de3ab7160d3848e6602eda53215"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/documentation/mlxembedders/embeddermodelcontext/pooling": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/embeddermodelcontext/pooling.md",
+      "hash": "7399a70222f00bde2ef0f4dc61bdb09eab75dbaab6be6025963cc6eac6e7c93a"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/documentation/mlxembedders/embeddermodelcontext/tokenizer": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/embeddermodelcontext/tokenizer.md",
+      "hash": "2adfd8679e0174828dd9dcf17e5b05824d5915996f71a2b2ccca7e8aed4f8393"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/documentation/mlxembedders/embeddermodelfactory": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/embeddermodelfactory.md",
+      "hash": "8ddb66d748612dab3e0b492b75f15f5cf7f6b0297871e074410ab31074568b1f"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/documentation/mlxembedders/embeddermodelfactory/configuration(id:)": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/embeddermodelfactory/configuration(id).md",
+      "hash": "6e8fe7666624dfe0ca884f42f35960a4136a6e22e51f3b95819c9b98c59df123"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/documentation/mlxembedders/embeddermodelfactory/containertype": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/embeddermodelfactory/containertype.md",
+      "hash": "b241f72cbfd283e655ae9bf5b61886a28d836fd7c714debfa03d8ea71f8a8400"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/documentation/mlxembedders/embeddermodelfactory/contains(id:)": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/embeddermodelfactory/contains(id).md",
+      "hash": "f25acc6f982b54832b1ca9dbabbb117c3af000c02a54fe62e78cbf9758441e5c"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/documentation/mlxembedders/embeddermodelfactory/contexttype": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/embeddermodelfactory/contexttype.md",
+      "hash": "80993359930350edf5ebed44c8fa6ca14ddbc5a0825e5a5ae3d2549c5da79861"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/documentation/mlxembedders/embeddermodelfactory/genericmodelfactory-implementations": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/embeddermodelfactory/genericmodelfactory-implementations.md",
+      "hash": "b00e11cda7642461fe9c2df599e3ba2e195dc3f99b60cda1808730ce6e6818fb"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/documentation/mlxembedders/embeddermodelfactory/init(typeregistry:modelregistry:)": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/embeddermodelfactory/init(typeregistry,modelregistry).md",
+      "hash": "f5381ec2785dbc9687656498b1d73f31bd19e8f0b50f445a41423f9b6a30d1d9"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/documentation/mlxembedders/embeddermodelfactory/load(from:using:)": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/embeddermodelfactory/load(from,using).md",
+      "hash": "a43e3a3625119fdfd6467e94e5a9fd3f514cbc3c8066afe374aba01428575ecc"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/documentation/mlxembedders/embeddermodelfactory/load(from:using:configuration:uselatest:progresshandler:)": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/embeddermodelfactory/load(from,using,configuration,uselatest,progresshandler).md",
+      "hash": "3e27cfbdc603a91dea181e43736b496684774ef10d570f2e2e5e79acb6e8fe77"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/documentation/mlxembedders/embeddermodelfactory/loadcontainer(from:using:)": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/embeddermodelfactory/loadcontainer(from,using).md",
+      "hash": "73492b28b64d14bcdb04c123e71f503fbbb5d3650389d132e25b42ae5deb54b9"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/documentation/mlxembedders/embeddermodelfactory/loadcontainer(from:using:configuration:uselatest:progresshandler:)": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/embeddermodelfactory/loadcontainer(from,using,configuration,uselatest,progresshandler).md",
+      "hash": "743218037d502b849d285206d2dbe08a885b1453170d2d173874835e85e95d88"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/documentation/mlxembedders/embeddermodelfactory/modelregistry": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/embeddermodelfactory/modelregistry.md",
+      "hash": "d4847ff96214b3603e2f718b1fcc6786fa272fc20446856524efb3d3b2615750"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/documentation/mlxembedders/embeddermodelfactory/shared": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/embeddermodelfactory/shared.md",
+      "hash": "8ae77ee4330a82c2d40892e9bad66b20d7d4b126bf78ce390ea39f37953a7264"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/documentation/mlxembedders/embeddermodelfactory/typeregistry": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/embeddermodelfactory/typeregistry.md",
+      "hash": "5607c8938e3ba726b3b149a14e2667d80b3b985be3e884967de5d77e8702892f"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/documentation/mlxembedders/embedderregistry": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/embedderregistry.md",
+      "hash": "768905fd2c34dde3cc25ff06098c3743101c795ed22925d519bc4789aa98aa05"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/documentation/mlxembedders/embedderregistry/bge_base": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/embedderregistry/bge_base.md",
+      "hash": "528ce49d4732cae85b87edcf290b59d4d3b04e2744bbf78dab11b59553e5915e"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/documentation/mlxembedders/embedderregistry/bge_large": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/embedderregistry/bge_large.md",
+      "hash": "ffa2d9067b276937bffd95e1ba4d3d7dcf1b7f20c3702924153fa77d1f887d77"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/documentation/mlxembedders/embedderregistry/bge_m3": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/embedderregistry/bge_m3.md",
+      "hash": "4e08cd8aac122b2ac445af31211a5c45f29dbab5df59b487207c8f94677d9f4f"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/documentation/mlxembedders/embedderregistry/bge_micro": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/embedderregistry/bge_micro.md",
+      "hash": "cdaba393c2658451581571301b7604565090ad5b166aa751a97a9c7e3bb4bd7f"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/documentation/mlxembedders/embedderregistry/bge_reranker_v2_m3": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/embedderregistry/bge_reranker_v2_m3.md",
+      "hash": "a1543f67b0255febf66160bc906458b309dcf7163a24403edc544821da67b0fa"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/documentation/mlxembedders/embedderregistry/bge_small": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/embedderregistry/bge_small.md",
+      "hash": "2df5af384c952f49cb8b521ad7f585c280ce3f70a22a5af3b39bf93bd1972c91"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/documentation/mlxembedders/embedderregistry/embeddinggemma2": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/embedderregistry/embeddinggemma2.md",
+      "hash": "6f0a972f574548792e025f08a986e44fb704bbd1696bd9cf58cbe4cb18f01eed"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/documentation/mlxembedders/embedderregistry/gte_tiny": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/embedderregistry/gte_tiny.md",
+      "hash": "340209e4c68f4bfec9ac81c61a6bc370cc2013a2bc3c48aa3051fc0586494bc4"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/documentation/mlxembedders/embedderregistry/lfm2_colbert_350m": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/embedderregistry/lfm2_colbert_350m.md",
+      "hash": "b32272b1ac5de56b8a800f158aafbdfa8dcca517cb22dbab08cb2554b25eec27"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/documentation/mlxembedders/embedderregistry/lfm2_colbert_350m_4bit": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/embedderregistry/lfm2_colbert_350m_4bit.md",
+      "hash": "8ce63f7e6a1834ec4e93522ad58afc28bcf05039920f1c6829a13fd78a216fa0"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/documentation/mlxembedders/embedderregistry/lfm2_colbert_350m_8bit": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/embedderregistry/lfm2_colbert_350m_8bit.md",
+      "hash": "cc52a7ebde35b9d3cf5dcecccc82452a3c8b8e53412b11af1d12c5e2be8706e6"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/documentation/mlxembedders/embedderregistry/lfm2_embedding_350m": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/embedderregistry/lfm2_embedding_350m.md",
+      "hash": "cad257e50bcb910d9a4d1c569257a033dd7126cc34e8868c71bad5d9ca55e0cd"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/documentation/mlxembedders/embedderregistry/lfm2_embedding_350m_4bit": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/embedderregistry/lfm2_embedding_350m_4bit.md",
+      "hash": "3085bc46e0f9f2ebea70f40724acaeb1346cf5e3ce6937d90e568b1f25a5c74c"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/documentation/mlxembedders/embedderregistry/lfm2_embedding_350m_8bit": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/embedderregistry/lfm2_embedding_350m_8bit.md",
+      "hash": "7010c9100afeaa3f5a3c61a0edab981be978f19789683882fd197e4e194dccc5"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/documentation/mlxembedders/embedderregistry/minilm_l12": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/embedderregistry/minilm_l12.md",
+      "hash": "354dde3b8db0a3176c154d4fa635a61d8f99384a4f440d7063f0c0938a5a0e2e"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/documentation/mlxembedders/embedderregistry/minilm_l6": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/embedderregistry/minilm_l6.md",
+      "hash": "769436be21b13d4cdafd2f23e15d7e9aa6e3a3d9bf48141e08b612e6ebcd2bf9"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/documentation/mlxembedders/embedderregistry/mixedbread_large": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/embedderregistry/mixedbread_large.md",
+      "hash": "5ec7b800174f03ae42a1188e12305b31a02700cce32f6eb1b1cd775c26629857"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/documentation/mlxembedders/embedderregistry/multilingual_e5_small": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/embedderregistry/multilingual_e5_small.md",
+      "hash": "83b637224cf872776dce7af0279ebc461bb537ff8af6d0e611d9473bc209e6d6"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/documentation/mlxembedders/embedderregistry/nomic_text_v1": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/embedderregistry/nomic_text_v1.md",
+      "hash": "af1123cff634ccc06e3a42b11d90422aa4bc6fedcad4b9272371a66d277fb520"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/documentation/mlxembedders/embedderregistry/nomic_text_v1_5": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/embedderregistry/nomic_text_v1_5.md",
+      "hash": "0bf39ade99b2ed41f2772799335d201498ed4e64433ff367d16ad1aed64a54aa"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/documentation/mlxembedders/embedderregistry/qwen3_embedding": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/embedderregistry/qwen3_embedding.md",
+      "hash": "3734e31725481ecafbbf409db476575c34f6af281c04353fc9bcec530d2fc955"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/documentation/mlxembedders/embedderregistry/shared": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/embedderregistry/shared.md",
+      "hash": "751ab53d5de1bd49f73f6575cd227397f55d901d8927390f3bec3853f2a81cd1"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/documentation/mlxembedders/embedderregistry/snowflake_lg": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/embedderregistry/snowflake_lg.md",
+      "hash": "4c74e80be91ab20c959ce4a956f78801619988e4e86ef1d217c1a3d22dec530f"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/documentation/mlxembedders/embedderregistry/snowflake_xs": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/embedderregistry/snowflake_xs.md",
+      "hash": "e376e316ce2561794319c9d40ff5d858416b098a973f2224786f7fe1ff8173a8"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/documentation/mlxembedders/embeddertyperegistry": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/embeddertyperegistry.md",
+      "hash": "759318f4d6cb25b0fa84286288de36605791ce2e46c0d31cdc3b4d08310c15c6"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/documentation/mlxembedders/embeddertyperegistry/shared": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/embeddertyperegistry/shared.md",
+      "hash": "ed154543e3dca4413e59f2cedc0f9193657fa9c8497a8960aa29669e3e535e60"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/documentation/mlxembedders/embeddinggemma": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/embeddinggemma.md",
+      "hash": "92b410f56351c376b7c8ba8ae1a3df02084267887072831db5cf7d1e2e0ecaa0"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/documentation/mlxembedders/embeddinggemma/baselanguagemodel-implementations": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/embeddinggemma/baselanguagemodel-implementations.md",
+      "hash": "9511162206f5c0dc327125aa003d8096a5158df97f508be5e5d14ab8998ef35d"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/documentation/mlxembedders/embeddinggemma/callasfunction(_:positionids:tokentypeids:attentionmask:)": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/embeddinggemma/callasfunction(_,positionids,tokentypeids,attentionmask).md",
+      "hash": "eda3a7528e4d918f8a06b03158ceccafc799421cdc86d40ae704a11353d00832"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/documentation/mlxembedders/embeddinggemma/config": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/embeddinggemma/config.md",
+      "hash": "38c4f78d8e309d63bf47460f0eaff67a9185b661bb8b01ea4d2f06e85c46cb20"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/documentation/mlxembedders/embeddinggemma/embeddingmodel-implementations": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/embeddinggemma/embeddingmodel-implementations.md",
+      "hash": "e06a673848c438782eed50cd7ab97462e1dbd1fd56d595b388a68aac14cd80e7"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/documentation/mlxembedders/embeddinggemma/excludedcheckpointnamespaces": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/embeddinggemma/excludedcheckpointnamespaces.md",
+      "hash": "a2f87af82899332d665f1be9bdf6ad1d61cf5ef8d50dc36bf2f82740e5b3b20d"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/documentation/mlxembedders/embeddinggemma/init(_:)": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/embeddinggemma/init(_).md",
+      "hash": "bc979b66fb4f19e14fad9c12804003facfd8cdec5bad31bdaad07748283ec539"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/documentation/mlxembedders/embeddinggemma/maxpositionembeddings": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/embeddinggemma/maxpositionembeddings.md",
+      "hash": "595c3dbf5b0fc04395517051bc02267d2eb4693cb323598026f8f03dee16a245"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/documentation/mlxembedders/embeddinggemma/poolingstrategy": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/embeddinggemma/poolingstrategy.md",
+      "hash": "779fea4db087c591614dcaa8eb1c20d96845921fd3e43eca84f34b5bcf2af335"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/documentation/mlxembedders/embeddinggemma/preparecheckpoint(_:)": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/embeddinggemma/preparecheckpoint(_).md",
+      "hash": "c0f03aa22057ba84e6212f22567e5358299b81b0929127d6f252c7d47872a2e8"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/documentation/mlxembedders/embeddinggemma/sanitize(weights:)": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/embeddinggemma/sanitize(weights).md",
+      "hash": "0f189f920f57749f99fe2d99676f5b3909c62a1e56984c1a29d718144dab509c"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/documentation/mlxembedders/embeddinggemma/sanitize(weights:metadata:)": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/embeddinggemma/sanitize(weights,metadata).md",
+      "hash": "3ca916db920621d41f4286d3ab406fd66288ade60d067198b71eadb357e9c917"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/documentation/mlxembedders/embeddinggemma/vocabularysize": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/embeddinggemma/vocabularysize.md",
+      "hash": "4ee44e368e3bc7bc0b73841acd872307719b4abf674655310bc899a07c268a09"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/documentation/mlxembedders/embeddingmodel": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/embeddingmodel.md",
+      "hash": "ffaec34a1b463834094cf75705d02707f504be9e72918064298f7c6e04969c82"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/documentation/mlxembedders/embeddingmodel/callasfunction(_:positionids:tokentypeids:attentionmask:)": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/embeddingmodel/callasfunction(_,positionids,tokentypeids,attentionmask).md",
+      "hash": "aaf0c76a010bdc6f326b861b2a0743b19828eb681aedce6fa4bf685d7ced8c8b"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/documentation/mlxembedders/embeddingmodel/maxpositionembeddings": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/embeddingmodel/maxpositionembeddings.md",
+      "hash": "3dcf4a7c35dab37f86530c9f4fce03433701cbc1a063ec568e1bba2d5984ecb8"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/documentation/mlxembedders/embeddingmodel/maxpositionembeddings-92l06": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/embeddingmodel/maxpositionembeddings-92l06.md",
+      "hash": "1c645b743ad36e4002eebb8be67a3ebcc38d9b85d39bcb7b621f9adf5a6b7af0"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/documentation/mlxembedders/embeddingmodel/poolingstrategy": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/embeddingmodel/poolingstrategy.md",
+      "hash": "4a7aa96ae9f7a4b1c67ae38644352d51d29f968ac7bea205ad59f8af17344560"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/documentation/mlxembedders/embeddingmodel/poolingstrategy-3gza": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/embeddingmodel/poolingstrategy-3gza.md",
+      "hash": "3cb67b4992bf09ff921f6b2c264fe6faab0a19f3e44a8ae4b532b7bf6600dbb2"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/documentation/mlxembedders/embeddingmodel/vocabularysize": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/embeddingmodel/vocabularysize.md",
+      "hash": "cf11ac4a73fbb3e7141ae189b77b30a8612528de3d878fcb637c6516ed67f4f3"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/documentation/mlxembedders/embeddingmodeloutput": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/embeddingmodeloutput.md",
+      "hash": "cf4721c8122e286e7bab7b02945f23a995cdd6d49b8de815a8095e2ebba6dc52"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/documentation/mlxembedders/embeddingmodeloutput/hiddenstates": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/embeddingmodeloutput/hiddenstates.md",
+      "hash": "0ae07cc8598c1462c56b5e22619411b6838a1e443ec26e0228588e5ffd8ed077"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/documentation/mlxembedders/embeddingmodeloutput/pooledoutput": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/embeddingmodeloutput/pooledoutput.md",
+      "hash": "389424b073da8b46a76e266d101e8262611889bee3e759ea53c6fce3dffce179"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/documentation/mlxembedders/gemma3configuration": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/gemma3configuration.md",
+      "hash": "e7d3456641abd7d4ccea356954a12dc8ccd7b9e33984eddd9f5bbf61ab7d6a41"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/documentation/mlxembedders/gemma3configuration/attentionheads": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/gemma3configuration/attentionheads.md",
+      "hash": "6ee7cc6c35503c4cd09e74545ba80b4dc65e6ba5c6f9c575b0e0df126b2dcccc"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/documentation/mlxembedders/gemma3configuration/encodable-implementations": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/gemma3configuration/encodable-implementations.md",
+      "hash": "87f1e1923f1e316cc97a9c492832da53a73ec66785c7c04459a3c543df81cf1c"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/documentation/mlxembedders/gemma3configuration/headdim": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/gemma3configuration/headdim.md",
+      "hash": "e01ee093a191ebb3328ed3542ccbe044197c0b73c8b88d0f48fafd5cdce69c15"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/documentation/mlxembedders/gemma3configuration/hiddenlayers": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/gemma3configuration/hiddenlayers.md",
+      "hash": "7d9210e38fa5f7d3a94ade27de1525d2945fab10b245c8e5b886aaff7a093762"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/documentation/mlxembedders/gemma3configuration/hiddensize": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/gemma3configuration/hiddensize.md",
+      "hash": "768b5b8e8ce324125968b70892c01064002d16254ede881ff2d5598f040c7d5a"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/documentation/mlxembedders/gemma3configuration/init(from:)": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/gemma3configuration/init(from).md",
+      "hash": "ae5edf058c938fce36a0e19b671ec490aeec7aee34db4d5a753248a6cfb41edf"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/documentation/mlxembedders/gemma3configuration/intermediatesize": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/gemma3configuration/intermediatesize.md",
+      "hash": "71b2804d251eb76179e5b529da6138805756ae9a0835323c89db1009a046baef"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/documentation/mlxembedders/gemma3configuration/kvheads": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/gemma3configuration/kvheads.md",
+      "hash": "283af073b927acf0ef8391f59dcbc888962eef8f3793037c923f5122dd93dc59"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/documentation/mlxembedders/gemma3configuration/maxpositionembeddings": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/gemma3configuration/maxpositionembeddings.md",
+      "hash": "c6f47631aacba7dc40800ca755b6ba8efb87ef410513b2b0f072ea91d2977153"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/documentation/mlxembedders/gemma3configuration/modeltype": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/gemma3configuration/modeltype.md",
+      "hash": "e73032425fd06c2e676371c3c02a72f7d7ea0aaa60e38888ad2a330b89db9585"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/documentation/mlxembedders/gemma3configuration/querypreattnscalar": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/gemma3configuration/querypreattnscalar.md",
+      "hash": "515f91c8726dc8b2a6a9ac886f073ce599b4ebf3dd65aa6af27c46299c9b3cae"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/documentation/mlxembedders/gemma3configuration/rmsnormeps": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/gemma3configuration/rmsnormeps.md",
+      "hash": "9f9e0e50bfdcec33be27803b46dc5f8c258288396f8327ddba4c053f2f739fab"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/documentation/mlxembedders/gemma3configuration/ropelocalbasefreq": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/gemma3configuration/ropelocalbasefreq.md",
+      "hash": "8b2953588a0e9c6a2e148c7905e757dbc83da607a31739376135edc813806e43"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/documentation/mlxembedders/gemma3configuration/ropescaling": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/gemma3configuration/ropescaling.md",
+      "hash": "d2a8b9108f03790ac2fdde7af50472bfba0934c60f7dd58d9538655e72cb1ab6"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/documentation/mlxembedders/gemma3configuration/ropetheta": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/gemma3configuration/ropetheta.md",
+      "hash": "74cb543aa551aab7ee493ab3dc3be43c7b3d61c58899f725a2834cd12dd278bb"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/documentation/mlxembedders/gemma3configuration/ropetraditional": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/gemma3configuration/ropetraditional.md",
+      "hash": "9a2229e4fdb25b39046bcc2551fd2da3a93e1be6b3cd4a0d6fa5cc0a83280353"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/documentation/mlxembedders/gemma3configuration/slidingwindow": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/gemma3configuration/slidingwindow.md",
+      "hash": "ccdc0eca0e048d0a34d0bafd26b11b1e19195f94c1e8b9f045fdf6ff8dfc0e0f"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/documentation/mlxembedders/gemma3configuration/slidingwindowpattern": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/gemma3configuration/slidingwindowpattern.md",
+      "hash": "ac0a9214ba01ce0bb35264f59639fd9c4cc5e53d9694bf6da49979de7c56f8be"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/documentation/mlxembedders/gemma3configuration/toolresult": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/gemma3configuration/toolresult.md",
+      "hash": "46b5a7eddfce3fd836e8d8d1408b5781a327890597152e4434d678ad10030dcc"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/documentation/mlxembedders/gemma3configuration/usebidirectionalattention": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/gemma3configuration/usebidirectionalattention.md",
+      "hash": "103491525cda5f31389cf0e3006849fd915e56fbe2e4567cd304723d0dc69468"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/documentation/mlxembedders/gemma3configuration/vocabularysize": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/gemma3configuration/vocabularysize.md",
+      "hash": "2ea3d62725a43d7e6ff1ce9849064b7d0b2f304a5913b28634cfec4a025af24a"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/documentation/mlxembedders/gemma3modelbackbone": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/gemma3modelbackbone.md",
+      "hash": "76a0b238e1960c1f660d80f8477d894cf6b19a9ba8e2da2595cf4b5849c145ae"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/documentation/mlxembedders/gemma3modelbackbone/callasfunction(_:attentionmask:)": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/gemma3modelbackbone/callasfunction(_,attentionmask).md",
+      "hash": "d7139d67d8a1f90cd2a2590f88d8d7acace042c6a2cf06bda9ac7bcb7690821e"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/documentation/mlxembedders/gemma3modelbackbone/init(_:)": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/gemma3modelbackbone/init(_).md",
+      "hash": "b397fa292853570275a14a71ebda42f7a17b6eaf0ebd759df6a31830fcb839a3"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/documentation/mlxembedders/lfm2bidirectionalconfiguration": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/lfm2bidirectionalconfiguration.md",
+      "hash": "361ed17f94f2fc04cc4d349cf8b15be545c526a2621dd228d64510cb83a2f56c"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/documentation/mlxembedders/lfm2bidirectionalconfiguration/attnlayeridxs": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/lfm2bidirectionalconfiguration/attnlayeridxs.md",
+      "hash": "f60986f85eddc2f0fb1e646a8bf28d24899384be5721be837d543b8957bb4b7c"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/documentation/mlxembedders/lfm2bidirectionalconfiguration/blockautoadjustffdim": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/lfm2bidirectionalconfiguration/blockautoadjustffdim.md",
+      "hash": "4bfb77c4606b576ed1d0085a43fec73f3a2372d898e42f08dd58375411ec55df"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/documentation/mlxembedders/lfm2bidirectionalconfiguration/blockffdim": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/lfm2bidirectionalconfiguration/blockffdim.md",
+      "hash": "29c55fae0735420320d4b8bc3bcb2a1e3ec2f6e7fdaf782d054fbf02e8b2095a"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/documentation/mlxembedders/lfm2bidirectionalconfiguration/blockffndimmultiplier": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/lfm2bidirectionalconfiguration/blockffndimmultiplier.md",
+      "hash": "57149cfb618f51ddff63b6682c0dd0687ae206ea176918ac31f358e2e2e655be"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/documentation/mlxembedders/lfm2bidirectionalconfiguration/blockmultipleof": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/lfm2bidirectionalconfiguration/blockmultipleof.md",
+      "hash": "716c826e5b15194f0cbd4f58b973a6dc99dae8ff171a0573d7d22ec755288497"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/documentation/mlxembedders/lfm2bidirectionalconfiguration/convbias": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/lfm2bidirectionalconfiguration/convbias.md",
+      "hash": "ac4a5080367fc399f955600fbc566ea7c5c55378f12728fbe1c2a92c1ab691e5"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/documentation/mlxembedders/lfm2bidirectionalconfiguration/convlcache": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/lfm2bidirectionalconfiguration/convlcache.md",
+      "hash": "4f4162111341a94d3de2671dcd541a101ad657f7eda2da67e3049fe02af49825"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/documentation/mlxembedders/lfm2bidirectionalconfiguration/headdim": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/lfm2bidirectionalconfiguration/headdim.md",
+      "hash": "c70cb361d596f1a85c789ccf165d2e03e9656931faa8c474b9f6df37299d3c66"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/documentation/mlxembedders/lfm2bidirectionalconfiguration/hiddensize": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/lfm2bidirectionalconfiguration/hiddensize.md",
+      "hash": "79905871bb7f9c490297d46b9e7605606d432c306802272b503505a348a1b9b1"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/documentation/mlxembedders/lfm2bidirectionalconfiguration/init(from:)": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/lfm2bidirectionalconfiguration/init(from).md",
+      "hash": "bdc8d83957d835cd6f0c584d8e6a93829b40ae16c19ebd1e3ab51a4547d8db95"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/documentation/mlxembedders/lfm2bidirectionalconfiguration/layertypes": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/lfm2bidirectionalconfiguration/layertypes.md",
+      "hash": "5148e5be48990819370e40a3274ed6a7bfa620a4fecde870587d66c221651c24"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/documentation/mlxembedders/lfm2bidirectionalconfiguration/maxpositionembeddings": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/lfm2bidirectionalconfiguration/maxpositionembeddings.md",
+      "hash": "f4eb9bd04db41907eb3981f7802deb876372fc62d78f982289d849513277194a"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/documentation/mlxembedders/lfm2bidirectionalconfiguration/mlx": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/lfm2bidirectionalconfiguration/mlx.md",
+      "hash": "66b4e4bf7dbf12872507d5a9afd5b34507d5f1c495b28bd2bf265686738613fd"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/documentation/mlxembedders/lfm2bidirectionalconfiguration/mlxhead": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/lfm2bidirectionalconfiguration/mlxhead.md",
+      "hash": "44f28172c68e040aa65b4931f346890afd5efd42666d914d8bbf1b771bff129d"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/documentation/mlxembedders/lfm2bidirectionalconfiguration/mlxhead/documentlength": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/lfm2bidirectionalconfiguration/mlxhead/documentlength.md",
+      "hash": "61fbf3255922e428cc0d191e9c56b1f8f0a2e93b4332ae414292530a74671281"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/documentation/mlxembedders/lfm2bidirectionalconfiguration/mlxhead/documentprefix": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/lfm2bidirectionalconfiguration/mlxhead/documentprefix.md",
+      "hash": "ef9b0cdc0b8dc65147f8198282f607e8b1987c182a075f1ff79dffd153d6c4c6"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/documentation/mlxembedders/lfm2bidirectionalconfiguration/mlxhead/encodable-implementations": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/lfm2bidirectionalconfiguration/mlxhead/encodable-implementations.md",
+      "hash": "faed0932b6cd0a5830dd33eaeda9e06560a6586bfee24f42e488010085dc488e"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/documentation/mlxembedders/lfm2bidirectionalconfiguration/mlxhead/head": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/lfm2bidirectionalconfiguration/mlxhead/head.md",
+      "hash": "e68dce386cfe0e2a733ad86865e138f67df6862d561e58483fceb0e0255431ed"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/documentation/mlxembedders/lfm2bidirectionalconfiguration/mlxhead/init(from:)": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/lfm2bidirectionalconfiguration/mlxhead/init(from).md",
+      "hash": "0fb1d47c31c5300e1c0a9204946d4db8ee1713bcd6a0660a8751323c22dc2abe"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/documentation/mlxembedders/lfm2bidirectionalconfiguration/mlxhead/kind": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/lfm2bidirectionalconfiguration/mlxhead/kind.md",
+      "hash": "9a24f375a255d9cdf46019d73ec4a2453f0f72bc38c1d98205d0ac2aa3b3a872"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/documentation/mlxembedders/lfm2bidirectionalconfiguration/mlxhead/kind/!=(_:_:)": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/lfm2bidirectionalconfiguration/mlxhead/kind/noteq(_,_).md",
+      "hash": "738593f1364a4f6c0ac80f1deb194bca3cbfa9c908a1fe3b214408d4a318cb1e"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/documentation/mlxembedders/lfm2bidirectionalconfiguration/mlxhead/kind/colbert": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/lfm2bidirectionalconfiguration/mlxhead/kind/colbert.md",
+      "hash": "7991f0e5d4b9e4250ac43e0d55ea29d8e4bdb39b7153b3648cbea526ae174e8a"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/documentation/mlxembedders/lfm2bidirectionalconfiguration/mlxhead/kind/embedding": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/lfm2bidirectionalconfiguration/mlxhead/kind/embedding.md",
+      "hash": "b861b5b0904879ee1d0a81b64cad8bd7fe4a2120720188f9d473f3387585e54e"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/documentation/mlxembedders/lfm2bidirectionalconfiguration/mlxhead/kind/encodable-implementations": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/lfm2bidirectionalconfiguration/mlxhead/kind/encodable-implementations.md",
+      "hash": "03fad141444c447f16c86ce6a918fe699588a2da37c60934fdc09aa21189fd48"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/documentation/mlxembedders/lfm2bidirectionalconfiguration/mlxhead/kind/encode(to:)": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/lfm2bidirectionalconfiguration/mlxhead/kind/encode(to).md",
+      "hash": "19e1ad879fc76154ad2eb96ce5b898d941b4b732425e7908aa6c8eb51df79155"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/documentation/mlxembedders/lfm2bidirectionalconfiguration/mlxhead/kind/equatable-implementations": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/lfm2bidirectionalconfiguration/mlxhead/kind/equatable-implementations.md",
+      "hash": "12ba7487082942fbb41133855a7ab745fd638cb484f934cab40fa46a414720e3"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/documentation/mlxembedders/lfm2bidirectionalconfiguration/mlxhead/kind/hash(into:)": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/lfm2bidirectionalconfiguration/mlxhead/kind/hash(into).md",
+      "hash": "9d725c3f93193523dd4435b0808cfd0751c36efb786087bb6e2e7a7c3a9b83b6"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/documentation/mlxembedders/lfm2bidirectionalconfiguration/mlxhead/kind/hashvalue": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/lfm2bidirectionalconfiguration/mlxhead/kind/hashvalue.md",
+      "hash": "b051a4973345ac350d04bf6c3159129fb5a7b55d38078c87940692221bc423dd"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/documentation/mlxembedders/lfm2bidirectionalconfiguration/mlxhead/kind/init(from:)": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/lfm2bidirectionalconfiguration/mlxhead/kind/init(from).md",
+      "hash": "6a2afb15d63b3e31b4020a811194b34e79ec71889de898ecd44b4e965e6ecc9e"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/documentation/mlxembedders/lfm2bidirectionalconfiguration/mlxhead/kind/init(rawvalue:)": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/lfm2bidirectionalconfiguration/mlxhead/kind/init(rawvalue).md",
+      "hash": "f43be23cb078ff4843da1bbd06ddd9e78f7529cec737529011428f6b7817804d"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/documentation/mlxembedders/lfm2bidirectionalconfiguration/mlxhead/kind/makefromrawattachmentvalue(_:)": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/lfm2bidirectionalconfiguration/mlxhead/kind/makefromrawattachmentvalue(_).md",
+      "hash": "3e429fd4b7335d0abb40ca21f9b35d27eb8835850c34e74118ae93495188ca71"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/documentation/mlxembedders/lfm2bidirectionalconfiguration/mlxhead/kind/rawattachmentvaluerepresentation": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/lfm2bidirectionalconfiguration/mlxhead/kind/rawattachmentvaluerepresentation.md",
+      "hash": "19339a73a5408cf7bdd1457e026fd4db9e8b167d4e5c244dfd4c8fb3e1e5be37"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/documentation/mlxembedders/lfm2bidirectionalconfiguration/mlxhead/kind/rawrepresentable-implementations": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/lfm2bidirectionalconfiguration/mlxhead/kind/rawrepresentable-implementations.md",
+      "hash": "88942a6c0795b40433b66154acc84de15c4d3d5ea510d58dfd3998a69493204a"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/documentation/mlxembedders/lfm2bidirectionalconfiguration/mlxhead/kind/toolresult": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/lfm2bidirectionalconfiguration/mlxhead/kind/toolresult.md",
+      "hash": "16b3b8ff23062f3a698128f9bc1301845faa7f871f2b06c0877707b67a06903c"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/documentation/mlxembedders/lfm2bidirectionalconfiguration/mlxhead/pooling": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/lfm2bidirectionalconfiguration/mlxhead/pooling.md",
+      "hash": "da52f705e378a0130c07f21aecef3e54d509defc5e5941b0d66d059517edff40"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/documentation/mlxembedders/lfm2bidirectionalconfiguration/mlxhead/projdim": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/lfm2bidirectionalconfiguration/mlxhead/projdim.md",
+      "hash": "ac90b9f1e801e13cdb3ec76a532f809d5c7064e587887218b2c5f842423dcd5f"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/documentation/mlxembedders/lfm2bidirectionalconfiguration/mlxhead/prompts": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/lfm2bidirectionalconfiguration/mlxhead/prompts.md",
+      "hash": "a428e7612e27c667d0eae9b881de19757497cf5cdf3c2b04a24d613266e0c2d1"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/documentation/mlxembedders/lfm2bidirectionalconfiguration/mlxhead/querylength": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/lfm2bidirectionalconfiguration/mlxhead/querylength.md",
+      "hash": "4ffed69b52c8d7c611a0c3cc5aa4cb05b3e5c941cc9164ab8bc7576c7680a109"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/documentation/mlxembedders/lfm2bidirectionalconfiguration/mlxhead/queryprefix": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/lfm2bidirectionalconfiguration/mlxhead/queryprefix.md",
+      "hash": "c6384eda8deb9a0e867ce077fec7416ef92134111093654e23ae7810a242caa4"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/documentation/mlxembedders/lfm2bidirectionalconfiguration/mlxhead/toolresult": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/lfm2bidirectionalconfiguration/mlxhead/toolresult.md",
+      "hash": "f6e8510ab5bf526e761265bd4a5908baa286709659416b22d7b134a3e5b81ed8"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/documentation/mlxembedders/lfm2bidirectionalconfiguration/normeps": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/lfm2bidirectionalconfiguration/normeps.md",
+      "hash": "172e57af3991bbef62780486865caaaa31f916741ddc86f503105f902bbdaee7"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/documentation/mlxembedders/lfm2bidirectionalconfiguration/numattentionheads": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/lfm2bidirectionalconfiguration/numattentionheads.md",
+      "hash": "47ebfd3cf6e444889426320cfa1693cffdae8f2444efcb3f95ec492cc1174767"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/documentation/mlxembedders/lfm2bidirectionalconfiguration/numhiddenlayers": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/lfm2bidirectionalconfiguration/numhiddenlayers.md",
+      "hash": "71c10b74a1e5e7f9d0b101fefc7f39afb2b705a76c341cc64e381d40a6a24d51"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/documentation/mlxembedders/lfm2bidirectionalconfiguration/numkeyvalueheads": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/lfm2bidirectionalconfiguration/numkeyvalueheads.md",
+      "hash": "5164565ef40a2c59e61e0022922617b20fa0685d37e3ef7ae2a43e69f28615f0"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/documentation/mlxembedders/lfm2bidirectionalconfiguration/ropetheta": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/lfm2bidirectionalconfiguration/ropetheta.md",
+      "hash": "85bfcfc968b91e621ab95b0e368d5ac877f62f7ce8ab137869aed23b3c01cbf8"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/documentation/mlxembedders/lfm2bidirectionalconfiguration/vocabsize": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/lfm2bidirectionalconfiguration/vocabsize.md",
+      "hash": "4ed0cc119cdef735b3cfb273243f0ff9c44971de0286dc501f8dc2094b813685"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/documentation/mlxembedders/lfm2bidirectionalmodel": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/lfm2bidirectionalmodel.md",
+      "hash": "90e9029fd8e19067507a3da7aa600903068be81ffb1d3b7752d0ee6fdb8da9a3"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/documentation/mlxembedders/lfm2bidirectionalmodel/baselanguagemodel-implementations": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/lfm2bidirectionalmodel/baselanguagemodel-implementations.md",
+      "hash": "3aeb37d0aa0c1616b390be8fd798c686bf9bb1ab4d5f9dcf3203d7635aa0f90e"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/documentation/mlxembedders/lfm2bidirectionalmodel/callasfunction(_:positionids:tokentypeids:attentionmask:)": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/lfm2bidirectionalmodel/callasfunction(_,positionids,tokentypeids,attentionmask).md",
+      "hash": "6b50ed2f5837350fab3bed7020809284ec6ad3c8ca177c6650a4e0056ff68cd4"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/documentation/mlxembedders/lfm2bidirectionalmodel/configuration": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/lfm2bidirectionalmodel/configuration.md",
+      "hash": "9826ca5ce567aa10e94334e40d268067430cae8d86ec695861a7d2592481cff3"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/documentation/mlxembedders/lfm2bidirectionalmodel/embeddingmodel-implementations": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/lfm2bidirectionalmodel/embeddingmodel-implementations.md",
+      "hash": "e068e7f21a34b9e7557e53ebc5c013fb3be39192fc281140aa378d8ad22df36b"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/documentation/mlxembedders/lfm2bidirectionalmodel/excludedcheckpointnamespaces": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/lfm2bidirectionalmodel/excludedcheckpointnamespaces.md",
+      "hash": "d603393cb35e5ed83e1621efc6a7825f4525d929e36498ed452181a6cd04bed9"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/documentation/mlxembedders/lfm2bidirectionalmodel/init(_:)": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/lfm2bidirectionalmodel/init(_).md",
+      "hash": "50345a85591cd47c338734606f3fba9823639698f7df9f884d42607a789ee1a7"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/documentation/mlxembedders/lfm2bidirectionalmodel/maxpositionembeddings": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/lfm2bidirectionalmodel/maxpositionembeddings.md",
+      "hash": "c71009c42f21d7922ec897a799139779a959de5113c6946f271536cbd54622eb"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/documentation/mlxembedders/lfm2bidirectionalmodel/poolingstrategy": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/lfm2bidirectionalmodel/poolingstrategy.md",
+      "hash": "1f98467c6ec40b6645911abf7677737fb624fe6a83445f73a2be6c11aeba6ba5"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/documentation/mlxembedders/lfm2bidirectionalmodel/preparecheckpoint(_:)": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/lfm2bidirectionalmodel/preparecheckpoint(_).md",
+      "hash": "ec359271338d4b3888744eec514aac6703f694bde9dee3996d4b38541b3a0f96"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/documentation/mlxembedders/lfm2bidirectionalmodel/sanitize(weights:)": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/lfm2bidirectionalmodel/sanitize(weights).md",
+      "hash": "0b1891e53779c7a7c60161a80027346fc3bcc2b050c16dee3dffc889be95fb4b"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/documentation/mlxembedders/lfm2bidirectionalmodel/sanitize(weights:metadata:)": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/lfm2bidirectionalmodel/sanitize(weights,metadata).md",
+      "hash": "cfaeccb454d6b49819daa42acc6aa8e7de391e2ef3973623c65e9bc06d5784b9"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/documentation/mlxembedders/lfm2bidirectionalmodel/vocabularysize": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/lfm2bidirectionalmodel/vocabularysize.md",
+      "hash": "76f2a6433df3e5daa03d42cf639ee7ff56a697302099e6ffdf2fe14b949ab70a"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/documentation/mlxembedders/mlx": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/mlx.md",
+      "hash": "b6071dd432602b7a7072d7ebf56a91265486b4340c3346a7baff2626b25fdd94"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/documentation/mlxembedders/mlx/mlxarray": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/mlx/mlxarray.md",
+      "hash": "605f19f98ece5aada8d892bbc00e426ef8578c8779c38ce8d0432bae78e84ae0"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/documentation/mlxembedders/mlx/mlxarray/l2normalized(axis:eps:)": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/mlx/mlxarray/l2normalized(axis,eps).md",
+      "hash": "654f5d5bdd46792dc2d7bcc4626a2c0cc0766fda097ff0b980a36d3316fff5b9"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/documentation/mlxembedders/mlxlmcommon": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/mlxlmcommon.md",
+      "hash": "fa574e5cc4548646c1b4663facff37e516b4cba57e3bcf5da41117b14d8811fd"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/documentation/mlxembedders/mlxlmcommon/embeddinggemma2": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/mlxlmcommon/embeddinggemma2.md",
+      "hash": "ec7b084255100f37066f9908e4a5218eee278ca3eccb2d8a3b7499790a23a55c"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/documentation/mlxembedders/mlxlmcommon/embeddinggemma2/callasfunction(_:positionids:tokentypeids:attentionmask:)": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/mlxlmcommon/embeddinggemma2/callasfunction(_,positionids,tokentypeids,attentionmask).md",
+      "hash": "7cd7d27df5d57c3ad2418324035e25f82e9791eb1155af877b4ddbd1d13ebeef"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/documentation/mlxembedders/mlxlmcommon/embeddinggemma2/embeddingmodel-implementations": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/mlxlmcommon/embeddinggemma2/embeddingmodel-implementations.md",
+      "hash": "73f2f667639b88c96aba3b5e89e506753b8d9319efb09b76714191982797d875"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/documentation/mlxembedders/mlxlmcommon/embeddinggemma2/maxpositionembeddings": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/mlxlmcommon/embeddinggemma2/maxpositionembeddings.md",
+      "hash": "d83f909dfc0d2e93189b782b07f374a386d87822acce07addd45974044be2ea2"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/documentation/mlxembedders/mlxlmcommon/embeddinggemma2/poolingstrategy": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/mlxlmcommon/embeddinggemma2/poolingstrategy.md",
+      "hash": "4949823fc462fed4535860e6da742669e6e45594e4fa93740fc3ddaa40ca733a"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/documentation/mlxembedders/mlxlmcommon/embeddinggemma2/vocabularysize": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/mlxlmcommon/embeddinggemma2/vocabularysize.md",
+      "hash": "4b43281593eecdbece32f7fd535d557e8221d08d01c92b7393aded111f57e0e8"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/documentation/mlxembedders/nomicbertconfiguration": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/nomicbertconfiguration.md",
+      "hash": "b16253619f23a57196524cc67182449462a5e490e7681b71335e4a166306f39f"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/documentation/mlxembedders/nomicbertconfiguration/init(from:)": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/nomicbertconfiguration/init(from).md",
+      "hash": "c8847d59f4e22c68e83b608fcc9948f6ff81a261c08048c5e254da9f46b3a71e"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/documentation/mlxembedders/nomicbertmodel": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/nomicbertmodel.md",
+      "hash": "c53de1f5892d8d066ffd192eb86329c08e6f4830b1ae007db5ed0fa0d1cd1c56"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/documentation/mlxembedders/nomicbertmodel/baselanguagemodel-implementations": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/nomicbertmodel/baselanguagemodel-implementations.md",
+      "hash": "0b58934d65f5b410724b0b3fe85478206c142179e1c072ab4b1396ebc3533ff5"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/documentation/mlxembedders/nomicbertmodel/callasfunction(_:positionids:tokentypeids:attentionmask:)": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/nomicbertmodel/callasfunction(_,positionids,tokentypeids,attentionmask).md",
+      "hash": "bf76841e73aea3fe0ebeb260db4454721f6667fcfcf79a9880247fea7fa71d7b"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/documentation/mlxembedders/nomicbertmodel/embeddingmodel-implementations": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/nomicbertmodel/embeddingmodel-implementations.md",
+      "hash": "51a86f207d763d61e0d2900486df029f4e79e1849f16cae68d29418225f55464"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/documentation/mlxembedders/nomicbertmodel/excludedcheckpointnamespaces": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/nomicbertmodel/excludedcheckpointnamespaces.md",
+      "hash": "1b0de360c3712a0e6808b13cb78206516ab0d6cfd5f9db8daf0de2a2fd3902a6"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/documentation/mlxembedders/nomicbertmodel/init(_:pooler:lmhead:)": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/nomicbertmodel/init(_,pooler,lmhead).md",
+      "hash": "61c54d4f36dcb251a78a2e25a8540b69cbc3b01dd38f6d0018906904c495eb29"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/documentation/mlxembedders/nomicbertmodel/maxpositionembeddings": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/nomicbertmodel/maxpositionembeddings.md",
+      "hash": "29bdd673831217cdd84cbe43a4f8fba2082ca8dd68ddc91b0a6f5b9c411c2f54"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/documentation/mlxembedders/nomicbertmodel/poolingstrategy": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/nomicbertmodel/poolingstrategy.md",
+      "hash": "ed632ebd9609efc8ac8bd3aaa537b46971cc00f938a22ec9b0d3bf322fe9a6a7"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/documentation/mlxembedders/nomicbertmodel/preparecheckpoint(_:)": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/nomicbertmodel/preparecheckpoint(_).md",
+      "hash": "b6b42bc848b34341bf2a8ea1d04a0cfc95a23b5305f1f14915a5d759a432ff17"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/documentation/mlxembedders/nomicbertmodel/sanitize(weights:)": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/nomicbertmodel/sanitize(weights).md",
+      "hash": "f1e1213f9e75918c74ae6b8a9af9bcb4a4dc94744ee249fa2022e0c3e9b70090"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/documentation/mlxembedders/nomicbertmodel/sanitize(weights:metadata:)": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/nomicbertmodel/sanitize(weights,metadata).md",
+      "hash": "3dd8e8b4ff6c10552b4691c5aba9aaf8cbc61ef5fee1ee100fa3cb15a9df1917"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/documentation/mlxembedders/nomicbertmodel/vocabularysize": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/nomicbertmodel/vocabularysize.md",
+      "hash": "9c9f7920c98c6290bf7fc3e74eb104781042aa2192a84d02a320fdb66d6e6b0b"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/documentation/mlxembedders/pooling": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/pooling.md",
+      "hash": "d2cb555e0151b9649d4628fac5ea0ecc01a1642973178e9fe8c0929e040ae8fa"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/documentation/mlxembedders/pooling/callasfunction(_:mask:normalize:applylayernorm:)": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/pooling/callasfunction(_,mask,normalize,applylayernorm).md",
+      "hash": "cb272b7dde8955d14dd47ec66f3bcfa359a933ffeaf0ec2a66726fe250e04f8d"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/documentation/mlxembedders/pooling/dimension": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/pooling/dimension.md",
+      "hash": "1b62b3f638de236eb229d59f4c84274c5af2cfa5773ddcb81409affdbcbd8715"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/documentation/mlxembedders/pooling/init(config:)": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/pooling/init(config).md",
+      "hash": "ccad12351f6cebd30debc920d7072f2fbfb3f79f11d374014a6197c73f9060bb"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/documentation/mlxembedders/pooling/init(strategy:dimension:)": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/pooling/init(strategy,dimension).md",
+      "hash": "7915224efbf4af112ccf05a65263892b860659a0c2d782d2d66fea41f90e38f7"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/documentation/mlxembedders/pooling/strategy-swift.enum": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/pooling/strategy-swift.enum.md",
+      "hash": "c7d3c37b166834e7bc35bd75317b024318a932d80ea4e3fcc9d22e2919c313b4"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/documentation/mlxembedders/pooling/strategy-swift.enum/!=(_:_:)": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/pooling/strategy-swift.enum/noteq(_,_).md",
+      "hash": "888489081a7068593606742663319d9a03d8c63e38675629bfd225f50ae4e570"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/documentation/mlxembedders/pooling/strategy-swift.enum/cls": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/pooling/strategy-swift.enum/cls.md",
+      "hash": "b9f582dcaca824382c59835d9af1c6773f93fcf1b324eb2e1ed1f2ae4de20561"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/documentation/mlxembedders/pooling/strategy-swift.enum/equatable-implementations": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/pooling/strategy-swift.enum/equatable-implementations.md",
+      "hash": "d094af4b91c2eda1025f23f0b7fa5f5b0e64fbf033671ff8fd027f55d4efb0c4"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/documentation/mlxembedders/pooling/strategy-swift.enum/first": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/pooling/strategy-swift.enum/first.md",
+      "hash": "713de75628ed593ced7ff742c01944ab1640de568fb34935931105de35be5a3a"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/documentation/mlxembedders/pooling/strategy-swift.enum/last": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/pooling/strategy-swift.enum/last.md",
+      "hash": "569920ee8e8caa725db5ffef8fe775ae415830bb8d5b1b930c86001e13cf63ef"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/documentation/mlxembedders/pooling/strategy-swift.enum/max": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/pooling/strategy-swift.enum/max.md",
+      "hash": "01dfd8afb2aacb9747f2ea27e89ee330ce91c128f52061d0db8d6ce39df5efea"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/documentation/mlxembedders/pooling/strategy-swift.enum/mean": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/pooling/strategy-swift.enum/mean.md",
+      "hash": "be3ecb24df487a6c344e1242c09611cdbf461d172c543a1829826145adb774e9"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/documentation/mlxembedders/pooling/strategy-swift.enum/none": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/pooling/strategy-swift.enum/none.md",
+      "hash": "8a2cd139abe5f94b70088b229ce5b19649c3e09089b76fb219db06bf3b3a9b03"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/documentation/mlxembedders/pooling/strategy-swift.property": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/pooling/strategy-swift.property.md",
+      "hash": "50060ab2a5da8ad58068ae45ea4147fffd019bcdfc8d86731d06e17b577bc439"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/documentation/mlxembedders/poolingconfiguration": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/poolingconfiguration.md",
+      "hash": "d5054bbdde37943a5597910fdcd93032b510573d7ba129dd4f2e7b97c7a94f13"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/documentation/mlxembedders/poolingconfiguration/dimension": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/poolingconfiguration/dimension.md",
+      "hash": "0ad04a00d798c223863b0166a0d7e8c113aa89b1a37fd020ead35c6dcfd6acfa"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/documentation/mlxembedders/poolingconfiguration/encodable-implementations": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/poolingconfiguration/encodable-implementations.md",
+      "hash": "579569fe7397a6d69ce57f8ba628b264af9130e25f24305f499001f83f045b99"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/documentation/mlxembedders/poolingconfiguration/init(from:)": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/poolingconfiguration/init(from).md",
+      "hash": "16448993292731421dc43a89fa887da1a875131f0fb29308a352ab0b58961300"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/documentation/mlxembedders/poolingconfiguration/poolingmodeclstoken": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/poolingconfiguration/poolingmodeclstoken.md",
+      "hash": "1116c18702aad9cf7b357dede45edf94389421d7c65b29b8ebce051cd41d177c"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/documentation/mlxembedders/poolingconfiguration/poolingmodelasttoken": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/poolingconfiguration/poolingmodelasttoken.md",
+      "hash": "33cf77983959e7b793aec016f6acc4e776b7c2189039803a48ef44e9410ff085"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/documentation/mlxembedders/poolingconfiguration/poolingmodemaxtokens": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/poolingconfiguration/poolingmodemaxtokens.md",
+      "hash": "8b180ab39fc01225da6bcbfea63ab4d7e3b4744ca77aeacd17c3483a87895923"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/documentation/mlxembedders/poolingconfiguration/poolingmodemeantokens": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/poolingconfiguration/poolingmodemeantokens.md",
+      "hash": "e2af3ba6ad580169ef558ee286c55eb3d5e45a2e00d3f8ba9c722c4fd439d59c"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/documentation/mlxembedders/poolingconfiguration/toolresult": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/poolingconfiguration/toolresult.md",
+      "hash": "ebc0ade3b65b48641f08bd99cc6cb9687ee4fb3294629fd2e23c99d26d2dfdb4"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/documentation/mlxembedders/qwen3configuration": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/qwen3configuration.md",
+      "hash": "598c834592e9252e2f207154f8d7707369693aefd47e3097610db321f5b94f77"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/documentation/mlxembedders/qwen3configuration/encodable-implementations": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/qwen3configuration/encodable-implementations.md",
+      "hash": "d32387a384cec12f34aa6ee9ad5865077d164fe29a1741fba76732d8f37e7730"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/documentation/mlxembedders/qwen3configuration/init(from:)": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/qwen3configuration/init(from).md",
+      "hash": "d1497c8f15ccf690e67d148cfd0fdd3593afff5ae55fc6880010b3f486d376ef"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/documentation/mlxembedders/qwen3configuration/toolresult": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/qwen3configuration/toolresult.md",
+      "hash": "d2d01855ff0a3281d2fa8e67d796a049bc17227361d68a9279ac3ee7e3c8877f"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/documentation/mlxembedders/qwen3model": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/qwen3model.md",
+      "hash": "a3005fa992b3f34429e4141a612a791e310b8a644c8499036e320b69d3b9267e"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/documentation/mlxembedders/qwen3model/baselanguagemodel-implementations": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/qwen3model/baselanguagemodel-implementations.md",
+      "hash": "4c2cdeb65107df65abed3afe9d2e5ac9331a400ba2492ed0ce8f1a67b53ce8f4"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/documentation/mlxembedders/qwen3model/callasfunction(_:positionids:tokentypeids:attentionmask:)": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/qwen3model/callasfunction(_,positionids,tokentypeids,attentionmask).md",
+      "hash": "ba512613a73bba3f91241eb250ba2f471683ce4c9cfdf05199e2c38dca5cdaf4"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/documentation/mlxembedders/qwen3model/embeddingmodel-implementations": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/qwen3model/embeddingmodel-implementations.md",
+      "hash": "13addc318fb1868e44887b67c02e2a782f5ea9bdc163fa234761eed4d92fed02"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/documentation/mlxembedders/qwen3model/excludedcheckpointnamespaces": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/qwen3model/excludedcheckpointnamespaces.md",
+      "hash": "7df4f182b1caf3b93e9fc70b65d42bbe500f24d556467fc88c4dbfe88d25da22"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/documentation/mlxembedders/qwen3model/init(_:)": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/qwen3model/init(_).md",
+      "hash": "b23715c8a21d88eb3972560c859218d966bff0722b4d72db1b27b646da97a875"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/documentation/mlxembedders/qwen3model/kvheads": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/qwen3model/kvheads.md",
+      "hash": "9e08a9e55c674b5855ea755b766ee38391f181c732b5e9c3e25da634b2716586"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/documentation/mlxembedders/qwen3model/maxpositionembeddings": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/qwen3model/maxpositionembeddings.md",
+      "hash": "751d620b618a9c4fa38f0c0e8c0a9ce4261aee69d1f4195f1f46b8c732600de9"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/documentation/mlxembedders/qwen3model/poolingstrategy": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/qwen3model/poolingstrategy.md",
+      "hash": "5c983cf14450ca8fc39ea4e2f7a1f7ed89464ef7407c63a9e1dae45ca235f063"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/documentation/mlxembedders/qwen3model/preparecheckpoint(_:)": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/qwen3model/preparecheckpoint(_).md",
+      "hash": "ff0678cdd7805e941c9c0d52209f8de60ed6c0978ce1d12852be11e414576bc1"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/documentation/mlxembedders/qwen3model/sanitize(weights:)": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/qwen3model/sanitize(weights).md",
+      "hash": "c8f2839c43732572d08eeb2136c781b82f11137678cbf77b1b3d58812381392c"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/documentation/mlxembedders/qwen3model/sanitize(weights:metadata:)": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/qwen3model/sanitize(weights,metadata).md",
+      "hash": "8aa49e20ec2b1fa0f1769d81d2044047fa592d3dac5fbbbfc64799093ab5c469"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/documentation/mlxembedders/qwen3model/vocabularysize": {
+      "file_path": "documentation/SPI/mlx-swift-lm/MLXEmbedders/qwen3model/vocabularysize.md",
+      "hash": "0efc4ed2a961ed603937b8c7bb4888e078126c9d1bc6162d618a066753cba58b"
+    }
+  },
+  "metadata": {
+    "render": {
+      "version": 3
+    },
+    "total_pages": 548
+  }
+}

@@ -1,0 +1,74 @@
+{
+  "hashes": {
+    "https://swiftpackageindex.com/ml-explore/mlx-swift/main/data/documentation/mlxfast.json": {
+      "file_path": "documentation/SPI/mlx-swift/MLXFast/MLXFast.md",
+      "hash": "37edc7351d54fd57c15581a8ebe81c6f205dd6d7960395d3035a7dae1e2b700b"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift/main/data/documentation/mlxfast/deprecationwarning.json": {
+      "file_path": "documentation/SPI/mlx-swift/MLXFast/deprecationwarning.md",
+      "hash": "6a30e49d355d16c6ab99b0cc6b48d1402f976c4914a4680df845c987d2a34a20"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift/main/data/documentation/mlxfast/layernorm(_:weight:bias:eps:stream:).json": {
+      "file_path": "documentation/SPI/mlx-swift/MLXFast/layernorm(_,weight,bias,eps,stream).md",
+      "hash": "8fb034c65b15479746d6e266a61b833c60553e1fccd37dc8b81bae4badee1c3a"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift/main/data/documentation/mlxfast/metalkernel(name:inputnames:outputnames:source:header:ensurerowcontiguous:atomicoutputs:).json": {
+      "file_path": "documentation/SPI/mlx-swift/MLXFast/metalkernel(name,inputnames,outputnames,source,header,ensurerowcontiguous,atomicoutputs).md",
+      "hash": "2f44a0b1ef8ce44aa969a11b4aaa5df79622802e66d17eaff9e05ab5849c711a"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift/main/data/documentation/mlxfast/mlxfastkernel.json": {
+      "file_path": "documentation/SPI/mlx-swift/MLXFast/mlxfastkernel.md",
+      "hash": "f996f22764ed79428092406ce0d0056ad3700c516d468f584124f907f80abcad"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift/main/data/documentation/mlxfast/rmsnorm(_:weight:eps:stream:).json": {
+      "file_path": "documentation/SPI/mlx-swift/MLXFast/rmsnorm(_,weight,eps,stream).md",
+      "hash": "06ca1108141abbd35e2d31f61f3c5cbb126d5efdb3e83f55cb926fcb19e69412"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift/main/data/documentation/mlxfast/rope(_:dimensions:traditional:base:scale:offset:freqs:stream:).json": {
+      "file_path": "documentation/SPI/mlx-swift/MLXFast/rope(_,dimensions,traditional,base,scale,offset,freqs,stream).md",
+      "hash": "4a116491eae3101e70454e0b13591c5c0f42c8fbff24eda535a836955a231d99"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift/main/data/documentation/mlxfast/scaleddotproductattention(queries:keys:values:scale:mask:memoryefficientthreshold:stream:).json": {
+      "file_path": "documentation/SPI/mlx-swift/MLXFast/scaleddotproductattention(queries,keys,values,scale,mask,memoryefficientthreshold,stream).md",
+      "hash": "473f493f3b4bcffd251f88e5aaca4c9b070d92143d553c85a07d9dfe54af1c60"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift/main/documentation/mlxfast": {
+      "file_path": "documentation/SPI/mlx-swift/MLXFast/MLXFast.md",
+      "hash": "37edc7351d54fd57c15581a8ebe81c6f205dd6d7960395d3035a7dae1e2b700b"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift/main/documentation/mlxfast/deprecationwarning": {
+      "file_path": "documentation/SPI/mlx-swift/MLXFast/deprecationwarning.md",
+      "hash": "6a30e49d355d16c6ab99b0cc6b48d1402f976c4914a4680df845c987d2a34a20"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift/main/documentation/mlxfast/layernorm(_:weight:bias:eps:stream:)": {
+      "file_path": "documentation/SPI/mlx-swift/MLXFast/layernorm(_,weight,bias,eps,stream).md",
+      "hash": "8fb034c65b15479746d6e266a61b833c60553e1fccd37dc8b81bae4badee1c3a"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift/main/documentation/mlxfast/metalkernel(name:inputnames:outputnames:source:header:ensurerowcontiguous:atomicoutputs:)": {
+      "file_path": "documentation/SPI/mlx-swift/MLXFast/metalkernel(name,inputnames,outputnames,source,header,ensurerowcontiguous,atomicoutputs).md",
+      "hash": "2f44a0b1ef8ce44aa969a11b4aaa5df79622802e66d17eaff9e05ab5849c711a"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift/main/documentation/mlxfast/mlxfastkernel": {
+      "file_path": "documentation/SPI/mlx-swift/MLXFast/mlxfastkernel.md",
+      "hash": "f996f22764ed79428092406ce0d0056ad3700c516d468f584124f907f80abcad"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift/main/documentation/mlxfast/rmsnorm(_:weight:eps:stream:)": {
+      "file_path": "documentation/SPI/mlx-swift/MLXFast/rmsnorm(_,weight,eps,stream).md",
+      "hash": "06ca1108141abbd35e2d31f61f3c5cbb126d5efdb3e83f55cb926fcb19e69412"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift/main/documentation/mlxfast/rope(_:dimensions:traditional:base:scale:offset:freqs:stream:)": {
+      "file_path": "documentation/SPI/mlx-swift/MLXFast/rope(_,dimensions,traditional,base,scale,offset,freqs,stream).md",
+      "hash": "4a116491eae3101e70454e0b13591c5c0f42c8fbff24eda535a836955a231d99"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift/main/documentation/mlxfast/scaleddotproductattention(queries:keys:values:scale:mask:memoryefficientthreshold:stream:)": {
+      "file_path": "documentation/SPI/mlx-swift/MLXFast/scaleddotproductattention(queries,keys,values,scale,mask,memoryefficientthreshold,stream).md",
+      "hash": "473f493f3b4bcffd251f88e5aaca4c9b070d92143d553c85a07d9dfe54af1c60"
+    }
+  },
+  "metadata": {
+    "render": {
+      "version": 3
+    },
+    "total_pages": 16
+  }
+}

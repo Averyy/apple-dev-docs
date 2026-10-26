@@ -1,0 +1,23 @@
+---
+url: "https://swiftpackageindex.com/ml-explore/mlx-swift/main/documentation/mlx/loglevel/_=(_:_:)-6gaif"
+framework: "mlx-swift/MLX"
+---
+
+# <=(_:_:)
+
+**Framework**: mlx-swift/MLX  
+**Kind**: op  
+**Role**: Operator
+
+Inherited from `Comparable.<=(_:_:)`.
+
+## Declaration
+
+```swift
+static func <= (lhs: Self, rhs: Self) -> Bool
+```
+
+
+---
+
+*[View on Swift Package Index](https://swiftpackageindex.com/ml-explore/mlx-swift/main/documentation/mlx/loglevel/_=(_:_:)-6gaif)*

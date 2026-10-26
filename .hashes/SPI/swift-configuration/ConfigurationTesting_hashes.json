@@ -1,0 +1,66 @@
+{
+  "hashes": {
+    "https://swiftpackageindex.com/apple/swift-configuration/main/data/documentation/configurationtesting.json": {
+      "file_path": "documentation/SPI/swift-configuration/ConfigurationTesting/ConfigurationTesting.md",
+      "hash": "443375819f536c5a571549817ec36f7e8979c4aa4c6ffcd30470c7a832824f17"
+    },
+    "https://swiftpackageindex.com/apple/swift-configuration/main/data/documentation/configurationtesting/providercompattest.json": {
+      "file_path": "documentation/SPI/swift-configuration/ConfigurationTesting/providercompattest.md",
+      "hash": "b8929c19f2d3715f2bb0f466a176d1cc4d5bcfc6f07bd9e67e1edac873adc627"
+    },
+    "https://swiftpackageindex.com/apple/swift-configuration/main/data/documentation/configurationtesting/providercompattest/init(provider:configuration:).json": {
+      "file_path": "documentation/SPI/swift-configuration/ConfigurationTesting/providercompattest/init(provider,configuration).md",
+      "hash": "91e7fd702e4bbc7486e58bd4a77f2760c48781dc67fee6853123280dfdb55e39"
+    },
+    "https://swiftpackageindex.com/apple/swift-configuration/main/data/documentation/configurationtesting/providercompattest/runtest().json": {
+      "file_path": "documentation/SPI/swift-configuration/ConfigurationTesting/providercompattest/runtest().md",
+      "hash": "f4e03be1df90b7a1539110317a0fc95dca4973bb4f336d8052f9de5cf2ad8d1c"
+    },
+    "https://swiftpackageindex.com/apple/swift-configuration/main/data/documentation/configurationtesting/providercompattest/testconfiguration.json": {
+      "file_path": "documentation/SPI/swift-configuration/ConfigurationTesting/providercompattest/testconfiguration.md",
+      "hash": "28796f0a64f85d26b900431e819e70ed5407e4286179f3a103904374b8e8bc48"
+    },
+    "https://swiftpackageindex.com/apple/swift-configuration/main/data/documentation/configurationtesting/providercompattest/testconfiguration/init(overrides:).json": {
+      "file_path": "documentation/SPI/swift-configuration/ConfigurationTesting/providercompattest/testconfiguration/init(overrides).md",
+      "hash": "0f28fada27649c6640a9a16f0bdbc815afd34e5b2fa7fa1250cf5537f53e9804"
+    },
+    "https://swiftpackageindex.com/apple/swift-configuration/main/data/documentation/configurationtesting/providercompattest/testconfiguration/overrides.json": {
+      "file_path": "documentation/SPI/swift-configuration/ConfigurationTesting/providercompattest/testconfiguration/overrides.md",
+      "hash": "a480d10e91f57459f3456bff9c44af2eedfae7fcc8ef7849807425419498d467"
+    },
+    "https://swiftpackageindex.com/apple/swift-configuration/main/documentation/configurationtesting": {
+      "file_path": "documentation/SPI/swift-configuration/ConfigurationTesting/ConfigurationTesting.md",
+      "hash": "443375819f536c5a571549817ec36f7e8979c4aa4c6ffcd30470c7a832824f17"
+    },
+    "https://swiftpackageindex.com/apple/swift-configuration/main/documentation/configurationtesting/providercompattest": {
+      "file_path": "documentation/SPI/swift-configuration/ConfigurationTesting/providercompattest.md",
+      "hash": "b8929c19f2d3715f2bb0f466a176d1cc4d5bcfc6f07bd9e67e1edac873adc627"
+    },
+    "https://swiftpackageindex.com/apple/swift-configuration/main/documentation/configurationtesting/providercompattest/init(provider:configuration:)": {
+      "file_path": "documentation/SPI/swift-configuration/ConfigurationTesting/providercompattest/init(provider,configuration).md",
+      "hash": "91e7fd702e4bbc7486e58bd4a77f2760c48781dc67fee6853123280dfdb55e39"
+    },
+    "https://swiftpackageindex.com/apple/swift-configuration/main/documentation/configurationtesting/providercompattest/runtest()": {
+      "file_path": "documentation/SPI/swift-configuration/ConfigurationTesting/providercompattest/runtest().md",
+      "hash": "f4e03be1df90b7a1539110317a0fc95dca4973bb4f336d8052f9de5cf2ad8d1c"
+    },
+    "https://swiftpackageindex.com/apple/swift-configuration/main/documentation/configurationtesting/providercompattest/testconfiguration": {
+      "file_path": "documentation/SPI/swift-configuration/ConfigurationTesting/providercompattest/testconfiguration.md",
+      "hash": "28796f0a64f85d26b900431e819e70ed5407e4286179f3a103904374b8e8bc48"
+    },
+    "https://swiftpackageindex.com/apple/swift-configuration/main/documentation/configurationtesting/providercompattest/testconfiguration/init(overrides:)": {
+      "file_path": "documentation/SPI/swift-configuration/ConfigurationTesting/providercompattest/testconfiguration/init(overrides).md",
+      "hash": "0f28fada27649c6640a9a16f0bdbc815afd34e5b2fa7fa1250cf5537f53e9804"
+    },
+    "https://swiftpackageindex.com/apple/swift-configuration/main/documentation/configurationtesting/providercompattest/testconfiguration/overrides": {
+      "file_path": "documentation/SPI/swift-configuration/ConfigurationTesting/providercompattest/testconfiguration/overrides.md",
+      "hash": "a480d10e91f57459f3456bff9c44af2eedfae7fcc8ef7849807425419498d467"
+    }
+  },
+  "metadata": {
+    "render": {
+      "version": 3
+    },
+    "total_pages": 14
+  }
+}

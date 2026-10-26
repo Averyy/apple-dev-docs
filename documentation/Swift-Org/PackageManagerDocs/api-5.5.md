@@ -24,7 +24,7 @@ Then, to see which packages are included in that collection and can now be impor
 swift package-collection describe https://developer.apple.com/swift/packages/collections/apple.json
 ```
 
-For more information about usage and how to publish your own package collections, see the [Package Collections documentation](https://docs.swift.org/latest../PackageCollections.md).
+For more information about usage and how to publish your own package collections, see the [Package Collections documentation](https://docs.swift.org/latest/documentation/PackageCollections.md).
 
 ##### Executable target testing
 

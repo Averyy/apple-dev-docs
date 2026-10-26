@@ -1061,7 +1061,7 @@
       "hash": "93334627040dcbc0f51df165c397064a85a905ba03da3e3acf450658d87f1df0"
     },
     "https://developer.apple.com/documentation/homekit/hmcamerastream/init()": {
-      "etag": "\"1c2f-65d55fa877f4c\"",
+      "etag": "\"1c2f-65d55fa877f4c-df\"",
       "file_path": "documentation/HomeKit/hmcamerastream/init().md",
       "hash": "c42c2bc1129d472a7b1868ba5da70c9903f471cfd895818a782aa3e268536b11"
     },
@@ -7831,7 +7831,7 @@
       "hash": "93334627040dcbc0f51df165c397064a85a905ba03da3e3acf450658d87f1df0"
     },
     "https://developer.apple.com/tutorials/data/documentation/homekit/hmcamerastream/init().json": {
-      "etag": "\"1c2f-65d55fa877f4c\"",
+      "etag": "\"1c2f-65d55fa877f4c-df\"",
       "file_path": "documentation/HomeKit/hmcamerastream/init().md",
       "hash": "c42c2bc1129d472a7b1868ba5da70c9903f471cfd895818a782aa3e268536b11"
     },
@@ -13543,7 +13543,7 @@
   },
   "metadata": {
     "render": {
-      "version": 2
+      "version": 3
     },
     "total_pages": 2708
   }

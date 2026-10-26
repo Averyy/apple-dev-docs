@@ -33,7 +33,7 @@ To run the unit tests in your environment with your settings, you’ll need the 
   - Set the `publicKey` variable in the sample code project to your public key.
   - For more information on generating a private and public key pair for signing ads, visit [Registering an ad network](../StoreKit/skadnetwork/registering_an_ad_network.md).
 - A local or remote server to listen for postbacks. Specify your server’s URL when you create test postbacks as shown in the sample code’s `testAddingPostbacks()` method.
-- A device running iOS 16.4 or later. iOS Simulator doesn’t support [SKAdNetwork](https://developer.apple.comskadnetwork_linkid).
+- A device running iOS 16.4 or later. iOS Simulator doesn’t support [SKAdNetwork](./skadnetwork_linkid.md).
 
 ##### Create and validate the ad impression
 

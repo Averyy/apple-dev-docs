@@ -1,0 +1,818 @@
+{
+  "hashes": {
+    "https://swiftpackageindex.com/ml-explore/mlx-swift/main/data/documentation/mlxoptimizers.json": {
+      "file_path": "documentation/SPI/mlx-swift/MLXOptimizers/MLXOptimizers.md",
+      "hash": "9b963ababceb20f70fd9242c38e226877e7bb5a441cb3fe84680bc333834ebff"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift/main/data/documentation/mlxoptimizers/adadelta.json": {
+      "file_path": "documentation/SPI/mlx-swift/MLXOptimizers/adadelta.md",
+      "hash": "e02d1aff36be4aea52f4b73d597d7e589177ef5b4003f38993a41453af8af80e"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift/main/data/documentation/mlxoptimizers/adadelta/applysingle(gradient:parameter:state:).json": {
+      "file_path": "documentation/SPI/mlx-swift/MLXOptimizers/adadelta/applysingle(gradient,parameter,state).md",
+      "hash": "8b79cfcbd97fb73c9cfa8aa6579cabcf33cfdb8cb659f513046850a3c4d14493"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift/main/data/documentation/mlxoptimizers/adadelta/eps.json": {
+      "file_path": "documentation/SPI/mlx-swift/MLXOptimizers/adadelta/eps.md",
+      "hash": "fbc68656219905272a3c4d9e44d9bebe3c2dcb1dc7beb9b569502effd4711eb2"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift/main/data/documentation/mlxoptimizers/adadelta/init(learningrate:rho:eps:).json": {
+      "file_path": "documentation/SPI/mlx-swift/MLXOptimizers/adadelta/init(learningrate,rho,eps).md",
+      "hash": "3a3a949bf8b3f6b115620d85cd374f4d6ed7dafe1e253db3ee1f242898d82d8a"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift/main/data/documentation/mlxoptimizers/adadelta/learningrate.json": {
+      "file_path": "documentation/SPI/mlx-swift/MLXOptimizers/adadelta/learningrate.md",
+      "hash": "ac5203a76be4a6f4e38ddc83ca3ccb6e57dcf5371c468587e5951027f8164158"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift/main/data/documentation/mlxoptimizers/adadelta/newstate(parameter:).json": {
+      "file_path": "documentation/SPI/mlx-swift/MLXOptimizers/adadelta/newstate(parameter).md",
+      "hash": "6e0bd8902c570284b6d6cb2ca6a03992c1553c2283d01fa71c63eaf75ae490dc"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift/main/data/documentation/mlxoptimizers/adadelta/rho.json": {
+      "file_path": "documentation/SPI/mlx-swift/MLXOptimizers/adadelta/rho.md",
+      "hash": "79313d5b4bb65975c9e1b3b3a0f76ceb9d03032e6ea4dc744b20c1a045ec343f"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift/main/data/documentation/mlxoptimizers/adafactor.json": {
+      "file_path": "documentation/SPI/mlx-swift/MLXOptimizers/adafactor.md",
+      "hash": "bad79cc14cd4c7a074e93a3d54349c54c9e90bcebc90508738a422c47bd0a09c"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift/main/data/documentation/mlxoptimizers/adafactor/applysingle(gradient:parameter:state:).json": {
+      "file_path": "documentation/SPI/mlx-swift/MLXOptimizers/adafactor/applysingle(gradient,parameter,state).md",
+      "hash": "ecf4fde6c1e4f6a881fbf8a37462336d0f72a50c1a2f8528bc564112e40a30f3"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift/main/data/documentation/mlxoptimizers/adafactor/beta1.json": {
+      "file_path": "documentation/SPI/mlx-swift/MLXOptimizers/adafactor/beta1.md",
+      "hash": "f96d831ff6847bf9e8843551d0fb418cae686cad44c1c9a04c49524f6caf3e93"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift/main/data/documentation/mlxoptimizers/adafactor/clipthreshold.json": {
+      "file_path": "documentation/SPI/mlx-swift/MLXOptimizers/adafactor/clipthreshold.md",
+      "hash": "9e648b268cf1306bf040cb6bf2a9b6757259e987266345f3b899e477d1c15bf0"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift/main/data/documentation/mlxoptimizers/adafactor/decayrate.json": {
+      "file_path": "documentation/SPI/mlx-swift/MLXOptimizers/adafactor/decayrate.md",
+      "hash": "4d2274ece4f46d5e8e7dc3ae369d2b7c31d8b9113cd134abb31f053e122e4c9e"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift/main/data/documentation/mlxoptimizers/adafactor/eps.json": {
+      "file_path": "documentation/SPI/mlx-swift/MLXOptimizers/adafactor/eps.md",
+      "hash": "cd8e5c966be1893859d35b6582090edab1f593a6ee319ccaf5956069dc2a3c8f"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift/main/data/documentation/mlxoptimizers/adafactor/init(learningrate:eps:clipthreshold:decayrate:beta1:weightdecay:scaleparameter:relativestep:warmupinit:).json": {
+      "file_path": "documentation/SPI/mlx-swift/MLXOptimizers/adafactor/init(learningrate,eps,clipthreshold,decayrate,beta1,weightdecay,scaleparameter,relativestep,warmupinit).md",
+      "hash": "b8df68aa908a95f81b24d81ba4afad1af89f3a625c56ea0f236c1a4f67c83831"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift/main/data/documentation/mlxoptimizers/adafactor/learningrate.json": {
+      "file_path": "documentation/SPI/mlx-swift/MLXOptimizers/adafactor/learningrate.md",
+      "hash": "9805fb658e26e211ab28b9a797a06a990dbb87dcd827f631288c6cf771b06f4b"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift/main/data/documentation/mlxoptimizers/adafactor/newstate(parameter:).json": {
+      "file_path": "documentation/SPI/mlx-swift/MLXOptimizers/adafactor/newstate(parameter).md",
+      "hash": "bb11fd92fdfa16d5db9779fc5084510e8fd1f6c655986aa99d9a856021d813be"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift/main/data/documentation/mlxoptimizers/adafactor/relativestep.json": {
+      "file_path": "documentation/SPI/mlx-swift/MLXOptimizers/adafactor/relativestep.md",
+      "hash": "ee049c0b90744c6b3cf2079ecda1c97e790b62a5317c6916ab2291914450050f"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift/main/data/documentation/mlxoptimizers/adafactor/scaleparameter.json": {
+      "file_path": "documentation/SPI/mlx-swift/MLXOptimizers/adafactor/scaleparameter.md",
+      "hash": "3e8bea77b2dd3e53ed1b94c943e7d2cd16c5406c678dff09cb43da50971bd792"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift/main/data/documentation/mlxoptimizers/adafactor/state.json": {
+      "file_path": "documentation/SPI/mlx-swift/MLXOptimizers/adafactor/state.md",
+      "hash": "3aa7130a59d3230115a0044cb5f828d8e185db5bf0dcd311c7267c9115b77e69"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift/main/data/documentation/mlxoptimizers/adafactor/state/innerstate().json": {
+      "file_path": "documentation/SPI/mlx-swift/MLXOptimizers/adafactor/state/innerstate().md",
+      "hash": "263bd01627a95d53fc4c9ed9cfb07a2a4bc697c2029cf65a21723bfebb975695"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift/main/data/documentation/mlxoptimizers/adafactor/warmupinit.json": {
+      "file_path": "documentation/SPI/mlx-swift/MLXOptimizers/adafactor/warmupinit.md",
+      "hash": "4b2f3ea1b2fd73ae3527777de2f9ddfeccbdc36a6ac4bbc1f1f558738c4a96d4"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift/main/data/documentation/mlxoptimizers/adafactor/weightdecay.json": {
+      "file_path": "documentation/SPI/mlx-swift/MLXOptimizers/adafactor/weightdecay.md",
+      "hash": "0e7fe83de86735b99ffb1ec3fcaf4579a1f204651055170cdc631b6116c96fb7"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift/main/data/documentation/mlxoptimizers/adagrad.json": {
+      "file_path": "documentation/SPI/mlx-swift/MLXOptimizers/adagrad.md",
+      "hash": "7ebef0ef65ade2e701f05c8bcf2e12f2cb09cf92ee312ed427d997fd0622fdeb"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift/main/data/documentation/mlxoptimizers/adagrad/applysingle(gradient:parameter:state:).json": {
+      "file_path": "documentation/SPI/mlx-swift/MLXOptimizers/adagrad/applysingle(gradient,parameter,state).md",
+      "hash": "0b95e8e78be41788df97ac976d9fb20d9b3316428069c9b82710651616172fee"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift/main/data/documentation/mlxoptimizers/adagrad/eps.json": {
+      "file_path": "documentation/SPI/mlx-swift/MLXOptimizers/adagrad/eps.md",
+      "hash": "81b461a11f899f6116d39cce17810c5ea298ca6e9042b75e0181f0d2ee060d27"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift/main/data/documentation/mlxoptimizers/adagrad/init(learningrate:eps:).json": {
+      "file_path": "documentation/SPI/mlx-swift/MLXOptimizers/adagrad/init(learningrate,eps).md",
+      "hash": "563da8e3c45719836f6239bb8afef9a958ef5844cc8e09b4246b872fe0b62fed"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift/main/data/documentation/mlxoptimizers/adagrad/learningrate.json": {
+      "file_path": "documentation/SPI/mlx-swift/MLXOptimizers/adagrad/learningrate.md",
+      "hash": "c57019a646b734036b0029da6d3f06eae190ef43323d77b37359c2bbbd9f0dc7"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift/main/data/documentation/mlxoptimizers/adam.json": {
+      "file_path": "documentation/SPI/mlx-swift/MLXOptimizers/adam.md",
+      "hash": "e72ba5370c95c267afc77cef768f98d24d7bf934d2c68961dcc647a9acc01df5"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift/main/data/documentation/mlxoptimizers/adam/applysingle(gradient:parameter:state:).json": {
+      "file_path": "documentation/SPI/mlx-swift/MLXOptimizers/adam/applysingle(gradient,parameter,state).md",
+      "hash": "f9c5c7175cae6040fba123c00ffb0880901d4d4e02334adcbba42bcf82b12743"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift/main/data/documentation/mlxoptimizers/adam/betas.json": {
+      "file_path": "documentation/SPI/mlx-swift/MLXOptimizers/adam/betas.md",
+      "hash": "96eb93a1857d18fde50d76425cb54eb32d6e08bcf1630b5aa4047828cf23f4db"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift/main/data/documentation/mlxoptimizers/adam/biascorrection.json": {
+      "file_path": "documentation/SPI/mlx-swift/MLXOptimizers/adam/biascorrection.md",
+      "hash": "6da686271bc683451456a52dce3f816a24952a67a826f30b720e7f94a623717e"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift/main/data/documentation/mlxoptimizers/adam/eps.json": {
+      "file_path": "documentation/SPI/mlx-swift/MLXOptimizers/adam/eps.md",
+      "hash": "2143678c1a5430aef6237cbecdc1b65aa1ce9141fabcdc488d34bc93cc855c11"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift/main/data/documentation/mlxoptimizers/adam/init(learningrate:betas:eps:biascorrection:).json": {
+      "file_path": "documentation/SPI/mlx-swift/MLXOptimizers/adam/init(learningrate,betas,eps,biascorrection).md",
+      "hash": "00dc8f4e95d56dc9d6f8b8a8225a47f8f111c1607660962bda966eb8d8dcffb1"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift/main/data/documentation/mlxoptimizers/adam/learningrate.json": {
+      "file_path": "documentation/SPI/mlx-swift/MLXOptimizers/adam/learningrate.md",
+      "hash": "abc36e32247359ee9274e0d28ae86a50372ce51c916c7b094e254c367ff75462"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift/main/data/documentation/mlxoptimizers/adam/newstate(parameter:).json": {
+      "file_path": "documentation/SPI/mlx-swift/MLXOptimizers/adam/newstate(parameter).md",
+      "hash": "3239e1bf4283ceb10f1bead4b62ee5d297d50b6b554c852231975f8883ddba39"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift/main/data/documentation/mlxoptimizers/adamax.json": {
+      "file_path": "documentation/SPI/mlx-swift/MLXOptimizers/adamax.md",
+      "hash": "1728b42dc861e2dbb187f35c8ff34d83f9748edddd8d086d2eae2a2fb9209f25"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift/main/data/documentation/mlxoptimizers/adamax/applysingle(gradient:parameter:state:).json": {
+      "file_path": "documentation/SPI/mlx-swift/MLXOptimizers/adamax/applysingle(gradient,parameter,state).md",
+      "hash": "bef871b93fbd83b35e76818230540f018089f41bc03e2d074c319ae1933b2d46"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift/main/data/documentation/mlxoptimizers/adamax/betas.json": {
+      "file_path": "documentation/SPI/mlx-swift/MLXOptimizers/adamax/betas.md",
+      "hash": "555726601285898a4fce63d491564927cb04c77bedc1ca884b5c10d867ad8b04"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift/main/data/documentation/mlxoptimizers/adamax/eps.json": {
+      "file_path": "documentation/SPI/mlx-swift/MLXOptimizers/adamax/eps.md",
+      "hash": "ac2c3374992a43e63f4e0ac584c838b1d330764ec37f35833ccd5463757030e7"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift/main/data/documentation/mlxoptimizers/adamax/init(learningrate:betas:eps:).json": {
+      "file_path": "documentation/SPI/mlx-swift/MLXOptimizers/adamax/init(learningrate,betas,eps).md",
+      "hash": "952df779fb8d71841952b9720a540bc5b2fe8f37c36dc5d07b0ec443ca35a076"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift/main/data/documentation/mlxoptimizers/adamax/learningrate.json": {
+      "file_path": "documentation/SPI/mlx-swift/MLXOptimizers/adamax/learningrate.md",
+      "hash": "252b8b37bda9bd60d5c9aa0d5c633b0848f818d7c34a85cbc4e4930cfeb0f033"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift/main/data/documentation/mlxoptimizers/adamax/newstate(parameter:).json": {
+      "file_path": "documentation/SPI/mlx-swift/MLXOptimizers/adamax/newstate(parameter).md",
+      "hash": "fb8322a5f7d5a1d1b5e7941cfcce3a67c4309d17c00cf239bbe768a8df28a636"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift/main/data/documentation/mlxoptimizers/adamstate.json": {
+      "file_path": "documentation/SPI/mlx-swift/MLXOptimizers/adamstate.md",
+      "hash": "b90f28ab397e8ebace51775fe27bb1d65d3b5d5e891452ef52a3bafb3148cc3f"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift/main/data/documentation/mlxoptimizers/adamstate/innerstate().json": {
+      "file_path": "documentation/SPI/mlx-swift/MLXOptimizers/adamstate/innerstate().md",
+      "hash": "c86ad764fd5ed7b8ec7029d60274fb4490af45deeed5e7839329caf226dbdc41"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift/main/data/documentation/mlxoptimizers/adamw.json": {
+      "file_path": "documentation/SPI/mlx-swift/MLXOptimizers/adamw.md",
+      "hash": "36cc377e7a117d0ae6e3b2784956636030cf997f3e5b55d5f0b71452f8603462"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift/main/data/documentation/mlxoptimizers/adamw/applysingle(gradient:parameter:state:).json": {
+      "file_path": "documentation/SPI/mlx-swift/MLXOptimizers/adamw/applysingle(gradient,parameter,state).md",
+      "hash": "e2014efbeeea7d37b1b7c6a3521786f98daf01ac3a7868481ce84c26884b832f"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift/main/data/documentation/mlxoptimizers/adamw/init(learningrate:betas:eps:weightdecay:biascorrection:).json": {
+      "file_path": "documentation/SPI/mlx-swift/MLXOptimizers/adamw/init(learningrate,betas,eps,weightdecay,biascorrection).md",
+      "hash": "bac435f9a105bef4ce9288a1add43b89c1d8e11940eec4cd54e8742b59b767b5"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift/main/data/documentation/mlxoptimizers/adamw/weightdecay.json": {
+      "file_path": "documentation/SPI/mlx-swift/MLXOptimizers/adamw/weightdecay.md",
+      "hash": "a317de10a393cff929523b1c5a20e51ba97594e1f46f60248bfa821d0c5e7d45"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift/main/data/documentation/mlxoptimizers/clipgradnorm(gradients:maxnorm:)-878zr.json": {
+      "file_path": "documentation/SPI/mlx-swift/MLXOptimizers/clipgradnorm(gradients,maxnorm)-878zr.md",
+      "hash": "55437a8de71e93f998fb41822aafb6d5997e3ca4aeea2d8e71983eefbcd54e90"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift/main/data/documentation/mlxoptimizers/clipgradnorm(gradients:maxnorm:)-94rdm.json": {
+      "file_path": "documentation/SPI/mlx-swift/MLXOptimizers/clipgradnorm(gradients,maxnorm)-94rdm.md",
+      "hash": "8e8f3fce25d0f7622c7428f2d828117ce671e0857edf49460fbcaafe8fd022da"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift/main/data/documentation/mlxoptimizers/cosinedecay(_:decaysteps:end:).json": {
+      "file_path": "documentation/SPI/mlx-swift/MLXOptimizers/cosinedecay(_,decaysteps,end).md",
+      "hash": "c0c669dbc0e5aca10489492e00b41ffdbc091756405b3aa299984e67d92296fd"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift/main/data/documentation/mlxoptimizers/exponentialdecay(_:decayrate:).json": {
+      "file_path": "documentation/SPI/mlx-swift/MLXOptimizers/exponentialdecay(_,decayrate).md",
+      "hash": "adee2363229b5e1da8506357e97b178ac98a2dd489e5c8baf735a3318ed4affe"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift/main/data/documentation/mlxoptimizers/joinschedules(_:boundaries:).json": {
+      "file_path": "documentation/SPI/mlx-swift/MLXOptimizers/joinschedules(_,boundaries).md",
+      "hash": "fb90c4bc884454e4d57ef35f78aa1ce5bc4779bd31f67ed7b8fae004b94d33ee"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift/main/data/documentation/mlxoptimizers/linearschedule(_:end:steps:).json": {
+      "file_path": "documentation/SPI/mlx-swift/MLXOptimizers/linearschedule(_,end,steps).md",
+      "hash": "9cb1d13880a540a73ee7182f007ed99151fef0e8452c0980819c142a071cc292"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift/main/data/documentation/mlxoptimizers/lion.json": {
+      "file_path": "documentation/SPI/mlx-swift/MLXOptimizers/lion.md",
+      "hash": "65b8dfee9002e4701842766c39e4a14eb06f897e05d22fc22d38cf0155a829a3"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift/main/data/documentation/mlxoptimizers/lion/applysingle(gradient:parameter:state:).json": {
+      "file_path": "documentation/SPI/mlx-swift/MLXOptimizers/lion/applysingle(gradient,parameter,state).md",
+      "hash": "af4fb55b0f2323a9d88a2d09b8bf7517d06dd42bd020f710b2889887b99b5109"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift/main/data/documentation/mlxoptimizers/lion/betas.json": {
+      "file_path": "documentation/SPI/mlx-swift/MLXOptimizers/lion/betas.md",
+      "hash": "a4474c9f3841a72dc7aeacf8bce96c4fa105d0311323950175da8aa85d7d184d"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift/main/data/documentation/mlxoptimizers/lion/init(learningrate:betas:weightdecay:).json": {
+      "file_path": "documentation/SPI/mlx-swift/MLXOptimizers/lion/init(learningrate,betas,weightdecay).md",
+      "hash": "6eeb09902d5afbd616fac84225495561505cdb09f30f1837f9a77d55001638fe"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift/main/data/documentation/mlxoptimizers/lion/learningrate.json": {
+      "file_path": "documentation/SPI/mlx-swift/MLXOptimizers/lion/learningrate.md",
+      "hash": "6c188f507a7df1a949ea45cd4dbf8e300143de1a46aadc9d084e6ca55572b4bc"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift/main/data/documentation/mlxoptimizers/lion/weightdecay.json": {
+      "file_path": "documentation/SPI/mlx-swift/MLXOptimizers/lion/weightdecay.md",
+      "hash": "deba98731d4c57e3325a9743f608024170388fc6092f9a4a6d624fa8446e209a"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift/main/data/documentation/mlxoptimizers/multioptimizer.json": {
+      "file_path": "documentation/SPI/mlx-swift/MLXOptimizers/multioptimizer.md",
+      "hash": "84245ff2bd4c62749dcaf30b6b3587d3a3c3bc20546ad35e09076dbabc84fa9e"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift/main/data/documentation/mlxoptimizers/multioptimizer/init(optimizers:filters:).json": {
+      "file_path": "documentation/SPI/mlx-swift/MLXOptimizers/multioptimizer/init(optimizers,filters).md",
+      "hash": "4d69ce3416b2f8884f44a3cd443dda9c0c4ae3634ca97d6b6acff986f0ab0e29"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift/main/data/documentation/mlxoptimizers/multioptimizer/innerstate().json": {
+      "file_path": "documentation/SPI/mlx-swift/MLXOptimizers/multioptimizer/innerstate().md",
+      "hash": "60b28aad76c99c746d1e35856f5d4396877f0ad5f183e65d229fa744000cd085"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift/main/data/documentation/mlxoptimizers/multioptimizer/optimizers.json": {
+      "file_path": "documentation/SPI/mlx-swift/MLXOptimizers/multioptimizer/optimizers.md",
+      "hash": "903ae241656675df4c2f66590c9af0a5b452f5ae0b2c8dc3e9cf35979d8f6f4d"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift/main/data/documentation/mlxoptimizers/multioptimizer/update(model:gradients:).json": {
+      "file_path": "documentation/SPI/mlx-swift/MLXOptimizers/multioptimizer/update(model,gradients).md",
+      "hash": "52b15ca2f1b357819282ee94487eee42c4bdaff4371c38bdeefac9a87f24b414"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift/main/data/documentation/mlxoptimizers/muon.json": {
+      "file_path": "documentation/SPI/mlx-swift/MLXOptimizers/muon.md",
+      "hash": "2f97499eceaf286293fb462f581653b0e340768d806716a591aca88ae625ca0b"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift/main/data/documentation/mlxoptimizers/muon/applysingle(gradient:parameter:state:).json": {
+      "file_path": "documentation/SPI/mlx-swift/MLXOptimizers/muon/applysingle(gradient,parameter,state).md",
+      "hash": "196f18b7d4423a0f3107f3364c386e3074a5500c579feba95a5387768d5b4e9c"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift/main/data/documentation/mlxoptimizers/muon/init(learningrate:momentum:weightdecay:nesterov:nssteps:).json": {
+      "file_path": "documentation/SPI/mlx-swift/MLXOptimizers/muon/init(learningrate,momentum,weightdecay,nesterov,nssteps).md",
+      "hash": "40ea41e00610bdc31ffb86c8853fcad07e7489d358ed9059100691ea7ac2b9e9"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift/main/data/documentation/mlxoptimizers/muon/learningrate.json": {
+      "file_path": "documentation/SPI/mlx-swift/MLXOptimizers/muon/learningrate.md",
+      "hash": "df7ef0a34a4136e328c562cc2676a87e528e153be7b587d65e1956ec3ae54797"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift/main/data/documentation/mlxoptimizers/muon/momentum.json": {
+      "file_path": "documentation/SPI/mlx-swift/MLXOptimizers/muon/momentum.md",
+      "hash": "999e8b39b05ea026f4f7300678f0ff1e4517929951f0fd452478c589ddd44864"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift/main/data/documentation/mlxoptimizers/muon/nesterov.json": {
+      "file_path": "documentation/SPI/mlx-swift/MLXOptimizers/muon/nesterov.md",
+      "hash": "d2e2192429ece3a336a5406324426954f93e162f01ec48f52b3d0bff67db2431"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift/main/data/documentation/mlxoptimizers/muon/nssteps.json": {
+      "file_path": "documentation/SPI/mlx-swift/MLXOptimizers/muon/nssteps.md",
+      "hash": "13e646e1d4849d10ff03f785aedf73acbe4571a41d2a0f960765f4ebb5edb764"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift/main/data/documentation/mlxoptimizers/muon/weightdecay.json": {
+      "file_path": "documentation/SPI/mlx-swift/MLXOptimizers/muon/weightdecay.md",
+      "hash": "65bcc90b4e778c12d87ac4c4c36f18f9db70813af913f9bd1659b35acc8c418a"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift/main/data/documentation/mlxoptimizers/optimizer.json": {
+      "file_path": "documentation/SPI/mlx-swift/MLXOptimizers/optimizer.md",
+      "hash": "d29f1b0c59ace69dc584b6712510986a53de9acc5c340b406078f20fe2bc7eca"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift/main/data/documentation/mlxoptimizers/optimizer/update(model:gradients:).json": {
+      "file_path": "documentation/SPI/mlx-swift/MLXOptimizers/optimizer/update(model,gradients).md",
+      "hash": "390393f3faa1fc7a4564ee4b9be8cf55324d40d9984349640f9eeb5066633061"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift/main/data/documentation/mlxoptimizers/optimizerbase.json": {
+      "file_path": "documentation/SPI/mlx-swift/MLXOptimizers/optimizerbase.md",
+      "hash": "552003ce7a6e66b076da36b3613f39f5f3fcd2094dfae806fa30022bb0370427"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift/main/data/documentation/mlxoptimizers/optimizerbase/applysingle(gradient:parameter:state:).json": {
+      "file_path": "documentation/SPI/mlx-swift/MLXOptimizers/optimizerbase/applysingle(gradient,parameter,state).md",
+      "hash": "8d039f4a8acd454ec41f5c7a68259f2020857cdbfdc6d2b5e449c784aa7a904c"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift/main/data/documentation/mlxoptimizers/optimizerbase/innerstate().json": {
+      "file_path": "documentation/SPI/mlx-swift/MLXOptimizers/optimizerbase/innerstate().md",
+      "hash": "5e0e3f0d9ae46428bf4ecb3f1bfa238dc3e3d9f744afeeae4559b05c5f9f3f11"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift/main/data/documentation/mlxoptimizers/optimizerbase/newstate(parameter:).json": {
+      "file_path": "documentation/SPI/mlx-swift/MLXOptimizers/optimizerbase/newstate(parameter).md",
+      "hash": "1ec2be68176ad0d6cc1d31cad619673d773634acaee87736aaeb99ae5c07be11"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift/main/data/documentation/mlxoptimizers/optimizerbase/update(model:gradients:).json": {
+      "file_path": "documentation/SPI/mlx-swift/MLXOptimizers/optimizerbase/update(model,gradients).md",
+      "hash": "159dfaeefb63e538f0496297dc21e6540ad269fe8206d59f4cdb181847572d6d"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift/main/data/documentation/mlxoptimizers/optimizerbasearraystate.json": {
+      "file_path": "documentation/SPI/mlx-swift/MLXOptimizers/optimizerbasearraystate.md",
+      "hash": "13cfe42e3edd9a92d03bfe30d14af6f6fd1ceb4ed7c540dcd79b6d4464894490"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift/main/data/documentation/mlxoptimizers/optimizerbasearraystate/newstate(parameter:).json": {
+      "file_path": "documentation/SPI/mlx-swift/MLXOptimizers/optimizerbasearraystate/newstate(parameter).md",
+      "hash": "be7ee301cdafbab6ea8f4232cc43aa5d8ddbe08ac703d0cbeaac014586fe8886"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift/main/data/documentation/mlxoptimizers/rmsprop.json": {
+      "file_path": "documentation/SPI/mlx-swift/MLXOptimizers/rmsprop.md",
+      "hash": "220a858adb0ef47003bd46c68baaf95bef53ba2c2b2e76cc043c5b31670c52fb"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift/main/data/documentation/mlxoptimizers/rmsprop/alpha.json": {
+      "file_path": "documentation/SPI/mlx-swift/MLXOptimizers/rmsprop/alpha.md",
+      "hash": "3490e5d9215dde966d7bd08692fbfd2d9c0f58e8314a01dc19d3ab8e2ea02936"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift/main/data/documentation/mlxoptimizers/rmsprop/applysingle(gradient:parameter:state:).json": {
+      "file_path": "documentation/SPI/mlx-swift/MLXOptimizers/rmsprop/applysingle(gradient,parameter,state).md",
+      "hash": "159b85e28e51e1c1984d1ae06abda47e7190754e71a79b00e5d45fa590696dcb"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift/main/data/documentation/mlxoptimizers/rmsprop/eps.json": {
+      "file_path": "documentation/SPI/mlx-swift/MLXOptimizers/rmsprop/eps.md",
+      "hash": "9cd076269623e4141f5fe6f33a9779a624b0383fec39c1715469e3c9888fd59d"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift/main/data/documentation/mlxoptimizers/rmsprop/init(learningrate:alpha:eps:).json": {
+      "file_path": "documentation/SPI/mlx-swift/MLXOptimizers/rmsprop/init(learningrate,alpha,eps).md",
+      "hash": "a04fbc32b610d696ea6ad6fdaad82f80bdf2b36c9b240599e62fb8388a257ffe"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift/main/data/documentation/mlxoptimizers/rmsprop/learningrate.json": {
+      "file_path": "documentation/SPI/mlx-swift/MLXOptimizers/rmsprop/learningrate.md",
+      "hash": "98e4c7d3648cad702398d0cd4883455755659c57d66187c033ba6c6f7b6e65fc"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift/main/data/documentation/mlxoptimizers/sgd.json": {
+      "file_path": "documentation/SPI/mlx-swift/MLXOptimizers/sgd.md",
+      "hash": "a1ddc6d8020cb523698bff5f4d2fa35d0bd1fd499358ace51949e40f0a842c93"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift/main/data/documentation/mlxoptimizers/sgd/applysingle(gradient:parameter:state:).json": {
+      "file_path": "documentation/SPI/mlx-swift/MLXOptimizers/sgd/applysingle(gradient,parameter,state).md",
+      "hash": "60e6638f8bfc493b29f156ee683a4f45fea0ca1193515b6ac073c1a612d7480b"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift/main/data/documentation/mlxoptimizers/sgd/dampening.json": {
+      "file_path": "documentation/SPI/mlx-swift/MLXOptimizers/sgd/dampening.md",
+      "hash": "656df3384bf1f7137b922d4c294472e8d3941916f72084f8bc4611d412a2ba64"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift/main/data/documentation/mlxoptimizers/sgd/init(learningrate:momentum:weightdecay:dampening:nesterov:).json": {
+      "file_path": "documentation/SPI/mlx-swift/MLXOptimizers/sgd/init(learningrate,momentum,weightdecay,dampening,nesterov).md",
+      "hash": "e2592c21b30e5598028ecc0c8deff9e248d6bc16624ff32b3f75fcaf61c81828"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift/main/data/documentation/mlxoptimizers/sgd/learningrate.json": {
+      "file_path": "documentation/SPI/mlx-swift/MLXOptimizers/sgd/learningrate.md",
+      "hash": "59495f49a4d056fadaed00ad52bdaca5f1cf5467daaa678bcadc576bf92a9f01"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift/main/data/documentation/mlxoptimizers/sgd/momentum.json": {
+      "file_path": "documentation/SPI/mlx-swift/MLXOptimizers/sgd/momentum.md",
+      "hash": "aaee3f9dcab5661ec95a73c305386d7c6aeb17e316fcfcfefa3b1562eb0395f0"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift/main/data/documentation/mlxoptimizers/sgd/nesterov.json": {
+      "file_path": "documentation/SPI/mlx-swift/MLXOptimizers/sgd/nesterov.md",
+      "hash": "478ed809a614fc12e2e2c680b0f00ffa3b1834df2ed4bc1d2bdbe9c629613dff"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift/main/data/documentation/mlxoptimizers/sgd/newstate(parameter:).json": {
+      "file_path": "documentation/SPI/mlx-swift/MLXOptimizers/sgd/newstate(parameter).md",
+      "hash": "19f71514ed4ff4bc450ed236febcc9c76759c4360436265cef914e2f1acf8049"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift/main/data/documentation/mlxoptimizers/sgd/weightdecay.json": {
+      "file_path": "documentation/SPI/mlx-swift/MLXOptimizers/sgd/weightdecay.md",
+      "hash": "cecde8b23db2af5ea6951eb1807c1c45d7a957654953e7ab98db64deb0be3a62"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift/main/data/documentation/mlxoptimizers/stepdecay(_:decayrate:stepsize:).json": {
+      "file_path": "documentation/SPI/mlx-swift/MLXOptimizers/stepdecay(_,decayrate,stepsize).md",
+      "hash": "b294ef97e38ac35d704a657e067eda14a4f44ce0e3d3fd0a6693b0ccab9f55d9"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift/main/data/documentation/mlxoptimizers/tuplestate.json": {
+      "file_path": "documentation/SPI/mlx-swift/MLXOptimizers/tuplestate.md",
+      "hash": "27ca600ceac283693b6c13c1ec85813ddaeb022ac35775cb4e6ec9153abda80f"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift/main/data/documentation/mlxoptimizers/tuplestate/innerstate().json": {
+      "file_path": "documentation/SPI/mlx-swift/MLXOptimizers/tuplestate/innerstate().md",
+      "hash": "7e83fbbdf4577e30470a29c3a190ea5acb76d4caf1814a1a869782bb792e5c5b"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift/main/documentation/mlxoptimizers": {
+      "file_path": "documentation/SPI/mlx-swift/MLXOptimizers/MLXOptimizers.md",
+      "hash": "9b963ababceb20f70fd9242c38e226877e7bb5a441cb3fe84680bc333834ebff"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift/main/documentation/mlxoptimizers/adadelta": {
+      "file_path": "documentation/SPI/mlx-swift/MLXOptimizers/adadelta.md",
+      "hash": "e02d1aff36be4aea52f4b73d597d7e589177ef5b4003f38993a41453af8af80e"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift/main/documentation/mlxoptimizers/adadelta/applysingle(gradient:parameter:state:)": {
+      "file_path": "documentation/SPI/mlx-swift/MLXOptimizers/adadelta/applysingle(gradient,parameter,state).md",
+      "hash": "8b79cfcbd97fb73c9cfa8aa6579cabcf33cfdb8cb659f513046850a3c4d14493"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift/main/documentation/mlxoptimizers/adadelta/eps": {
+      "file_path": "documentation/SPI/mlx-swift/MLXOptimizers/adadelta/eps.md",
+      "hash": "fbc68656219905272a3c4d9e44d9bebe3c2dcb1dc7beb9b569502effd4711eb2"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift/main/documentation/mlxoptimizers/adadelta/init(learningrate:rho:eps:)": {
+      "file_path": "documentation/SPI/mlx-swift/MLXOptimizers/adadelta/init(learningrate,rho,eps).md",
+      "hash": "3a3a949bf8b3f6b115620d85cd374f4d6ed7dafe1e253db3ee1f242898d82d8a"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift/main/documentation/mlxoptimizers/adadelta/learningrate": {
+      "file_path": "documentation/SPI/mlx-swift/MLXOptimizers/adadelta/learningrate.md",
+      "hash": "ac5203a76be4a6f4e38ddc83ca3ccb6e57dcf5371c468587e5951027f8164158"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift/main/documentation/mlxoptimizers/adadelta/newstate(parameter:)": {
+      "file_path": "documentation/SPI/mlx-swift/MLXOptimizers/adadelta/newstate(parameter).md",
+      "hash": "6e0bd8902c570284b6d6cb2ca6a03992c1553c2283d01fa71c63eaf75ae490dc"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift/main/documentation/mlxoptimizers/adadelta/rho": {
+      "file_path": "documentation/SPI/mlx-swift/MLXOptimizers/adadelta/rho.md",
+      "hash": "79313d5b4bb65975c9e1b3b3a0f76ceb9d03032e6ea4dc744b20c1a045ec343f"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift/main/documentation/mlxoptimizers/adafactor": {
+      "file_path": "documentation/SPI/mlx-swift/MLXOptimizers/adafactor.md",
+      "hash": "bad79cc14cd4c7a074e93a3d54349c54c9e90bcebc90508738a422c47bd0a09c"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift/main/documentation/mlxoptimizers/adafactor/applysingle(gradient:parameter:state:)": {
+      "file_path": "documentation/SPI/mlx-swift/MLXOptimizers/adafactor/applysingle(gradient,parameter,state).md",
+      "hash": "ecf4fde6c1e4f6a881fbf8a37462336d0f72a50c1a2f8528bc564112e40a30f3"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift/main/documentation/mlxoptimizers/adafactor/beta1": {
+      "file_path": "documentation/SPI/mlx-swift/MLXOptimizers/adafactor/beta1.md",
+      "hash": "f96d831ff6847bf9e8843551d0fb418cae686cad44c1c9a04c49524f6caf3e93"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift/main/documentation/mlxoptimizers/adafactor/clipthreshold": {
+      "file_path": "documentation/SPI/mlx-swift/MLXOptimizers/adafactor/clipthreshold.md",
+      "hash": "9e648b268cf1306bf040cb6bf2a9b6757259e987266345f3b899e477d1c15bf0"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift/main/documentation/mlxoptimizers/adafactor/decayrate": {
+      "file_path": "documentation/SPI/mlx-swift/MLXOptimizers/adafactor/decayrate.md",
+      "hash": "4d2274ece4f46d5e8e7dc3ae369d2b7c31d8b9113cd134abb31f053e122e4c9e"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift/main/documentation/mlxoptimizers/adafactor/eps": {
+      "file_path": "documentation/SPI/mlx-swift/MLXOptimizers/adafactor/eps.md",
+      "hash": "cd8e5c966be1893859d35b6582090edab1f593a6ee319ccaf5956069dc2a3c8f"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift/main/documentation/mlxoptimizers/adafactor/init(learningrate:eps:clipthreshold:decayrate:beta1:weightdecay:scaleparameter:relativestep:warmupinit:)": {
+      "file_path": "documentation/SPI/mlx-swift/MLXOptimizers/adafactor/init(learningrate,eps,clipthreshold,decayrate,beta1,weightdecay,scaleparameter,relativestep,warmupinit).md",
+      "hash": "b8df68aa908a95f81b24d81ba4afad1af89f3a625c56ea0f236c1a4f67c83831"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift/main/documentation/mlxoptimizers/adafactor/learningrate": {
+      "file_path": "documentation/SPI/mlx-swift/MLXOptimizers/adafactor/learningrate.md",
+      "hash": "9805fb658e26e211ab28b9a797a06a990dbb87dcd827f631288c6cf771b06f4b"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift/main/documentation/mlxoptimizers/adafactor/newstate(parameter:)": {
+      "file_path": "documentation/SPI/mlx-swift/MLXOptimizers/adafactor/newstate(parameter).md",
+      "hash": "bb11fd92fdfa16d5db9779fc5084510e8fd1f6c655986aa99d9a856021d813be"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift/main/documentation/mlxoptimizers/adafactor/relativestep": {
+      "file_path": "documentation/SPI/mlx-swift/MLXOptimizers/adafactor/relativestep.md",
+      "hash": "ee049c0b90744c6b3cf2079ecda1c97e790b62a5317c6916ab2291914450050f"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift/main/documentation/mlxoptimizers/adafactor/scaleparameter": {
+      "file_path": "documentation/SPI/mlx-swift/MLXOptimizers/adafactor/scaleparameter.md",
+      "hash": "3e8bea77b2dd3e53ed1b94c943e7d2cd16c5406c678dff09cb43da50971bd792"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift/main/documentation/mlxoptimizers/adafactor/state": {
+      "file_path": "documentation/SPI/mlx-swift/MLXOptimizers/adafactor/state.md",
+      "hash": "3aa7130a59d3230115a0044cb5f828d8e185db5bf0dcd311c7267c9115b77e69"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift/main/documentation/mlxoptimizers/adafactor/state/innerstate()": {
+      "file_path": "documentation/SPI/mlx-swift/MLXOptimizers/adafactor/state/innerstate().md",
+      "hash": "263bd01627a95d53fc4c9ed9cfb07a2a4bc697c2029cf65a21723bfebb975695"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift/main/documentation/mlxoptimizers/adafactor/warmupinit": {
+      "file_path": "documentation/SPI/mlx-swift/MLXOptimizers/adafactor/warmupinit.md",
+      "hash": "4b2f3ea1b2fd73ae3527777de2f9ddfeccbdc36a6ac4bbc1f1f558738c4a96d4"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift/main/documentation/mlxoptimizers/adafactor/weightdecay": {
+      "file_path": "documentation/SPI/mlx-swift/MLXOptimizers/adafactor/weightdecay.md",
+      "hash": "0e7fe83de86735b99ffb1ec3fcaf4579a1f204651055170cdc631b6116c96fb7"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift/main/documentation/mlxoptimizers/adagrad": {
+      "file_path": "documentation/SPI/mlx-swift/MLXOptimizers/adagrad.md",
+      "hash": "7ebef0ef65ade2e701f05c8bcf2e12f2cb09cf92ee312ed427d997fd0622fdeb"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift/main/documentation/mlxoptimizers/adagrad/applysingle(gradient:parameter:state:)": {
+      "file_path": "documentation/SPI/mlx-swift/MLXOptimizers/adagrad/applysingle(gradient,parameter,state).md",
+      "hash": "0b95e8e78be41788df97ac976d9fb20d9b3316428069c9b82710651616172fee"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift/main/documentation/mlxoptimizers/adagrad/eps": {
+      "file_path": "documentation/SPI/mlx-swift/MLXOptimizers/adagrad/eps.md",
+      "hash": "81b461a11f899f6116d39cce17810c5ea298ca6e9042b75e0181f0d2ee060d27"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift/main/documentation/mlxoptimizers/adagrad/init(learningrate:eps:)": {
+      "file_path": "documentation/SPI/mlx-swift/MLXOptimizers/adagrad/init(learningrate,eps).md",
+      "hash": "563da8e3c45719836f6239bb8afef9a958ef5844cc8e09b4246b872fe0b62fed"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift/main/documentation/mlxoptimizers/adagrad/learningrate": {
+      "file_path": "documentation/SPI/mlx-swift/MLXOptimizers/adagrad/learningrate.md",
+      "hash": "c57019a646b734036b0029da6d3f06eae190ef43323d77b37359c2bbbd9f0dc7"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift/main/documentation/mlxoptimizers/adam": {
+      "file_path": "documentation/SPI/mlx-swift/MLXOptimizers/adam.md",
+      "hash": "e72ba5370c95c267afc77cef768f98d24d7bf934d2c68961dcc647a9acc01df5"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift/main/documentation/mlxoptimizers/adam/applysingle(gradient:parameter:state:)": {
+      "file_path": "documentation/SPI/mlx-swift/MLXOptimizers/adam/applysingle(gradient,parameter,state).md",
+      "hash": "f9c5c7175cae6040fba123c00ffb0880901d4d4e02334adcbba42bcf82b12743"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift/main/documentation/mlxoptimizers/adam/betas": {
+      "file_path": "documentation/SPI/mlx-swift/MLXOptimizers/adam/betas.md",
+      "hash": "96eb93a1857d18fde50d76425cb54eb32d6e08bcf1630b5aa4047828cf23f4db"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift/main/documentation/mlxoptimizers/adam/biascorrection": {
+      "file_path": "documentation/SPI/mlx-swift/MLXOptimizers/adam/biascorrection.md",
+      "hash": "6da686271bc683451456a52dce3f816a24952a67a826f30b720e7f94a623717e"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift/main/documentation/mlxoptimizers/adam/eps": {
+      "file_path": "documentation/SPI/mlx-swift/MLXOptimizers/adam/eps.md",
+      "hash": "2143678c1a5430aef6237cbecdc1b65aa1ce9141fabcdc488d34bc93cc855c11"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift/main/documentation/mlxoptimizers/adam/init(learningrate:betas:eps:biascorrection:)": {
+      "file_path": "documentation/SPI/mlx-swift/MLXOptimizers/adam/init(learningrate,betas,eps,biascorrection).md",
+      "hash": "00dc8f4e95d56dc9d6f8b8a8225a47f8f111c1607660962bda966eb8d8dcffb1"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift/main/documentation/mlxoptimizers/adam/learningrate": {
+      "file_path": "documentation/SPI/mlx-swift/MLXOptimizers/adam/learningrate.md",
+      "hash": "abc36e32247359ee9274e0d28ae86a50372ce51c916c7b094e254c367ff75462"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift/main/documentation/mlxoptimizers/adam/newstate(parameter:)": {
+      "file_path": "documentation/SPI/mlx-swift/MLXOptimizers/adam/newstate(parameter).md",
+      "hash": "3239e1bf4283ceb10f1bead4b62ee5d297d50b6b554c852231975f8883ddba39"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift/main/documentation/mlxoptimizers/adamax": {
+      "file_path": "documentation/SPI/mlx-swift/MLXOptimizers/adamax.md",
+      "hash": "1728b42dc861e2dbb187f35c8ff34d83f9748edddd8d086d2eae2a2fb9209f25"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift/main/documentation/mlxoptimizers/adamax/applysingle(gradient:parameter:state:)": {
+      "file_path": "documentation/SPI/mlx-swift/MLXOptimizers/adamax/applysingle(gradient,parameter,state).md",
+      "hash": "bef871b93fbd83b35e76818230540f018089f41bc03e2d074c319ae1933b2d46"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift/main/documentation/mlxoptimizers/adamax/betas": {
+      "file_path": "documentation/SPI/mlx-swift/MLXOptimizers/adamax/betas.md",
+      "hash": "555726601285898a4fce63d491564927cb04c77bedc1ca884b5c10d867ad8b04"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift/main/documentation/mlxoptimizers/adamax/eps": {
+      "file_path": "documentation/SPI/mlx-swift/MLXOptimizers/adamax/eps.md",
+      "hash": "ac2c3374992a43e63f4e0ac584c838b1d330764ec37f35833ccd5463757030e7"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift/main/documentation/mlxoptimizers/adamax/init(learningrate:betas:eps:)": {
+      "file_path": "documentation/SPI/mlx-swift/MLXOptimizers/adamax/init(learningrate,betas,eps).md",
+      "hash": "952df779fb8d71841952b9720a540bc5b2fe8f37c36dc5d07b0ec443ca35a076"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift/main/documentation/mlxoptimizers/adamax/learningrate": {
+      "file_path": "documentation/SPI/mlx-swift/MLXOptimizers/adamax/learningrate.md",
+      "hash": "252b8b37bda9bd60d5c9aa0d5c633b0848f818d7c34a85cbc4e4930cfeb0f033"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift/main/documentation/mlxoptimizers/adamax/newstate(parameter:)": {
+      "file_path": "documentation/SPI/mlx-swift/MLXOptimizers/adamax/newstate(parameter).md",
+      "hash": "fb8322a5f7d5a1d1b5e7941cfcce3a67c4309d17c00cf239bbe768a8df28a636"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift/main/documentation/mlxoptimizers/adamstate": {
+      "file_path": "documentation/SPI/mlx-swift/MLXOptimizers/adamstate.md",
+      "hash": "b90f28ab397e8ebace51775fe27bb1d65d3b5d5e891452ef52a3bafb3148cc3f"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift/main/documentation/mlxoptimizers/adamstate/innerstate()": {
+      "file_path": "documentation/SPI/mlx-swift/MLXOptimizers/adamstate/innerstate().md",
+      "hash": "c86ad764fd5ed7b8ec7029d60274fb4490af45deeed5e7839329caf226dbdc41"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift/main/documentation/mlxoptimizers/adamw": {
+      "file_path": "documentation/SPI/mlx-swift/MLXOptimizers/adamw.md",
+      "hash": "36cc377e7a117d0ae6e3b2784956636030cf997f3e5b55d5f0b71452f8603462"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift/main/documentation/mlxoptimizers/adamw/applysingle(gradient:parameter:state:)": {
+      "file_path": "documentation/SPI/mlx-swift/MLXOptimizers/adamw/applysingle(gradient,parameter,state).md",
+      "hash": "e2014efbeeea7d37b1b7c6a3521786f98daf01ac3a7868481ce84c26884b832f"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift/main/documentation/mlxoptimizers/adamw/init(learningrate:betas:eps:weightdecay:biascorrection:)": {
+      "file_path": "documentation/SPI/mlx-swift/MLXOptimizers/adamw/init(learningrate,betas,eps,weightdecay,biascorrection).md",
+      "hash": "bac435f9a105bef4ce9288a1add43b89c1d8e11940eec4cd54e8742b59b767b5"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift/main/documentation/mlxoptimizers/adamw/weightdecay": {
+      "file_path": "documentation/SPI/mlx-swift/MLXOptimizers/adamw/weightdecay.md",
+      "hash": "a317de10a393cff929523b1c5a20e51ba97594e1f46f60248bfa821d0c5e7d45"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift/main/documentation/mlxoptimizers/clipgradnorm(gradients:maxnorm:)-878zr": {
+      "file_path": "documentation/SPI/mlx-swift/MLXOptimizers/clipgradnorm(gradients,maxnorm)-878zr.md",
+      "hash": "55437a8de71e93f998fb41822aafb6d5997e3ca4aeea2d8e71983eefbcd54e90"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift/main/documentation/mlxoptimizers/clipgradnorm(gradients:maxnorm:)-94rdm": {
+      "file_path": "documentation/SPI/mlx-swift/MLXOptimizers/clipgradnorm(gradients,maxnorm)-94rdm.md",
+      "hash": "8e8f3fce25d0f7622c7428f2d828117ce671e0857edf49460fbcaafe8fd022da"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift/main/documentation/mlxoptimizers/cosinedecay(_:decaysteps:end:)": {
+      "file_path": "documentation/SPI/mlx-swift/MLXOptimizers/cosinedecay(_,decaysteps,end).md",
+      "hash": "c0c669dbc0e5aca10489492e00b41ffdbc091756405b3aa299984e67d92296fd"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift/main/documentation/mlxoptimizers/exponentialdecay(_:decayrate:)": {
+      "file_path": "documentation/SPI/mlx-swift/MLXOptimizers/exponentialdecay(_,decayrate).md",
+      "hash": "adee2363229b5e1da8506357e97b178ac98a2dd489e5c8baf735a3318ed4affe"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift/main/documentation/mlxoptimizers/joinschedules(_:boundaries:)": {
+      "file_path": "documentation/SPI/mlx-swift/MLXOptimizers/joinschedules(_,boundaries).md",
+      "hash": "fb90c4bc884454e4d57ef35f78aa1ce5bc4779bd31f67ed7b8fae004b94d33ee"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift/main/documentation/mlxoptimizers/linearschedule(_:end:steps:)": {
+      "file_path": "documentation/SPI/mlx-swift/MLXOptimizers/linearschedule(_,end,steps).md",
+      "hash": "9cb1d13880a540a73ee7182f007ed99151fef0e8452c0980819c142a071cc292"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift/main/documentation/mlxoptimizers/lion": {
+      "file_path": "documentation/SPI/mlx-swift/MLXOptimizers/lion.md",
+      "hash": "65b8dfee9002e4701842766c39e4a14eb06f897e05d22fc22d38cf0155a829a3"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift/main/documentation/mlxoptimizers/lion/applysingle(gradient:parameter:state:)": {
+      "file_path": "documentation/SPI/mlx-swift/MLXOptimizers/lion/applysingle(gradient,parameter,state).md",
+      "hash": "af4fb55b0f2323a9d88a2d09b8bf7517d06dd42bd020f710b2889887b99b5109"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift/main/documentation/mlxoptimizers/lion/betas": {
+      "file_path": "documentation/SPI/mlx-swift/MLXOptimizers/lion/betas.md",
+      "hash": "a4474c9f3841a72dc7aeacf8bce96c4fa105d0311323950175da8aa85d7d184d"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift/main/documentation/mlxoptimizers/lion/init(learningrate:betas:weightdecay:)": {
+      "file_path": "documentation/SPI/mlx-swift/MLXOptimizers/lion/init(learningrate,betas,weightdecay).md",
+      "hash": "6eeb09902d5afbd616fac84225495561505cdb09f30f1837f9a77d55001638fe"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift/main/documentation/mlxoptimizers/lion/learningrate": {
+      "file_path": "documentation/SPI/mlx-swift/MLXOptimizers/lion/learningrate.md",
+      "hash": "6c188f507a7df1a949ea45cd4dbf8e300143de1a46aadc9d084e6ca55572b4bc"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift/main/documentation/mlxoptimizers/lion/weightdecay": {
+      "file_path": "documentation/SPI/mlx-swift/MLXOptimizers/lion/weightdecay.md",
+      "hash": "deba98731d4c57e3325a9743f608024170388fc6092f9a4a6d624fa8446e209a"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift/main/documentation/mlxoptimizers/multioptimizer": {
+      "file_path": "documentation/SPI/mlx-swift/MLXOptimizers/multioptimizer.md",
+      "hash": "84245ff2bd4c62749dcaf30b6b3587d3a3c3bc20546ad35e09076dbabc84fa9e"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift/main/documentation/mlxoptimizers/multioptimizer/init(optimizers:filters:)": {
+      "file_path": "documentation/SPI/mlx-swift/MLXOptimizers/multioptimizer/init(optimizers,filters).md",
+      "hash": "4d69ce3416b2f8884f44a3cd443dda9c0c4ae3634ca97d6b6acff986f0ab0e29"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift/main/documentation/mlxoptimizers/multioptimizer/innerstate()": {
+      "file_path": "documentation/SPI/mlx-swift/MLXOptimizers/multioptimizer/innerstate().md",
+      "hash": "60b28aad76c99c746d1e35856f5d4396877f0ad5f183e65d229fa744000cd085"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift/main/documentation/mlxoptimizers/multioptimizer/optimizers": {
+      "file_path": "documentation/SPI/mlx-swift/MLXOptimizers/multioptimizer/optimizers.md",
+      "hash": "903ae241656675df4c2f66590c9af0a5b452f5ae0b2c8dc3e9cf35979d8f6f4d"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift/main/documentation/mlxoptimizers/multioptimizer/update(model:gradients:)": {
+      "file_path": "documentation/SPI/mlx-swift/MLXOptimizers/multioptimizer/update(model,gradients).md",
+      "hash": "52b15ca2f1b357819282ee94487eee42c4bdaff4371c38bdeefac9a87f24b414"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift/main/documentation/mlxoptimizers/muon": {
+      "file_path": "documentation/SPI/mlx-swift/MLXOptimizers/muon.md",
+      "hash": "2f97499eceaf286293fb462f581653b0e340768d806716a591aca88ae625ca0b"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift/main/documentation/mlxoptimizers/muon/applysingle(gradient:parameter:state:)": {
+      "file_path": "documentation/SPI/mlx-swift/MLXOptimizers/muon/applysingle(gradient,parameter,state).md",
+      "hash": "196f18b7d4423a0f3107f3364c386e3074a5500c579feba95a5387768d5b4e9c"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift/main/documentation/mlxoptimizers/muon/init(learningrate:momentum:weightdecay:nesterov:nssteps:)": {
+      "file_path": "documentation/SPI/mlx-swift/MLXOptimizers/muon/init(learningrate,momentum,weightdecay,nesterov,nssteps).md",
+      "hash": "40ea41e00610bdc31ffb86c8853fcad07e7489d358ed9059100691ea7ac2b9e9"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift/main/documentation/mlxoptimizers/muon/learningrate": {
+      "file_path": "documentation/SPI/mlx-swift/MLXOptimizers/muon/learningrate.md",
+      "hash": "df7ef0a34a4136e328c562cc2676a87e528e153be7b587d65e1956ec3ae54797"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift/main/documentation/mlxoptimizers/muon/momentum": {
+      "file_path": "documentation/SPI/mlx-swift/MLXOptimizers/muon/momentum.md",
+      "hash": "999e8b39b05ea026f4f7300678f0ff1e4517929951f0fd452478c589ddd44864"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift/main/documentation/mlxoptimizers/muon/nesterov": {
+      "file_path": "documentation/SPI/mlx-swift/MLXOptimizers/muon/nesterov.md",
+      "hash": "d2e2192429ece3a336a5406324426954f93e162f01ec48f52b3d0bff67db2431"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift/main/documentation/mlxoptimizers/muon/nssteps": {
+      "file_path": "documentation/SPI/mlx-swift/MLXOptimizers/muon/nssteps.md",
+      "hash": "13e646e1d4849d10ff03f785aedf73acbe4571a41d2a0f960765f4ebb5edb764"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift/main/documentation/mlxoptimizers/muon/weightdecay": {
+      "file_path": "documentation/SPI/mlx-swift/MLXOptimizers/muon/weightdecay.md",
+      "hash": "65bcc90b4e778c12d87ac4c4c36f18f9db70813af913f9bd1659b35acc8c418a"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift/main/documentation/mlxoptimizers/optimizer": {
+      "file_path": "documentation/SPI/mlx-swift/MLXOptimizers/optimizer.md",
+      "hash": "d29f1b0c59ace69dc584b6712510986a53de9acc5c340b406078f20fe2bc7eca"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift/main/documentation/mlxoptimizers/optimizer/update(model:gradients:)": {
+      "file_path": "documentation/SPI/mlx-swift/MLXOptimizers/optimizer/update(model,gradients).md",
+      "hash": "390393f3faa1fc7a4564ee4b9be8cf55324d40d9984349640f9eeb5066633061"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift/main/documentation/mlxoptimizers/optimizerbase": {
+      "file_path": "documentation/SPI/mlx-swift/MLXOptimizers/optimizerbase.md",
+      "hash": "552003ce7a6e66b076da36b3613f39f5f3fcd2094dfae806fa30022bb0370427"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift/main/documentation/mlxoptimizers/optimizerbase/applysingle(gradient:parameter:state:)": {
+      "file_path": "documentation/SPI/mlx-swift/MLXOptimizers/optimizerbase/applysingle(gradient,parameter,state).md",
+      "hash": "8d039f4a8acd454ec41f5c7a68259f2020857cdbfdc6d2b5e449c784aa7a904c"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift/main/documentation/mlxoptimizers/optimizerbase/innerstate()": {
+      "file_path": "documentation/SPI/mlx-swift/MLXOptimizers/optimizerbase/innerstate().md",
+      "hash": "5e0e3f0d9ae46428bf4ecb3f1bfa238dc3e3d9f744afeeae4559b05c5f9f3f11"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift/main/documentation/mlxoptimizers/optimizerbase/newstate(parameter:)": {
+      "file_path": "documentation/SPI/mlx-swift/MLXOptimizers/optimizerbase/newstate(parameter).md",
+      "hash": "1ec2be68176ad0d6cc1d31cad619673d773634acaee87736aaeb99ae5c07be11"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift/main/documentation/mlxoptimizers/optimizerbase/update(model:gradients:)": {
+      "file_path": "documentation/SPI/mlx-swift/MLXOptimizers/optimizerbase/update(model,gradients).md",
+      "hash": "159dfaeefb63e538f0496297dc21e6540ad269fe8206d59f4cdb181847572d6d"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift/main/documentation/mlxoptimizers/optimizerbasearraystate": {
+      "file_path": "documentation/SPI/mlx-swift/MLXOptimizers/optimizerbasearraystate.md",
+      "hash": "13cfe42e3edd9a92d03bfe30d14af6f6fd1ceb4ed7c540dcd79b6d4464894490"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift/main/documentation/mlxoptimizers/optimizerbasearraystate/newstate(parameter:)": {
+      "file_path": "documentation/SPI/mlx-swift/MLXOptimizers/optimizerbasearraystate/newstate(parameter).md",
+      "hash": "be7ee301cdafbab6ea8f4232cc43aa5d8ddbe08ac703d0cbeaac014586fe8886"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift/main/documentation/mlxoptimizers/rmsprop": {
+      "file_path": "documentation/SPI/mlx-swift/MLXOptimizers/rmsprop.md",
+      "hash": "220a858adb0ef47003bd46c68baaf95bef53ba2c2b2e76cc043c5b31670c52fb"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift/main/documentation/mlxoptimizers/rmsprop/alpha": {
+      "file_path": "documentation/SPI/mlx-swift/MLXOptimizers/rmsprop/alpha.md",
+      "hash": "3490e5d9215dde966d7bd08692fbfd2d9c0f58e8314a01dc19d3ab8e2ea02936"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift/main/documentation/mlxoptimizers/rmsprop/applysingle(gradient:parameter:state:)": {
+      "file_path": "documentation/SPI/mlx-swift/MLXOptimizers/rmsprop/applysingle(gradient,parameter,state).md",
+      "hash": "159b85e28e51e1c1984d1ae06abda47e7190754e71a79b00e5d45fa590696dcb"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift/main/documentation/mlxoptimizers/rmsprop/eps": {
+      "file_path": "documentation/SPI/mlx-swift/MLXOptimizers/rmsprop/eps.md",
+      "hash": "9cd076269623e4141f5fe6f33a9779a624b0383fec39c1715469e3c9888fd59d"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift/main/documentation/mlxoptimizers/rmsprop/init(learningrate:alpha:eps:)": {
+      "file_path": "documentation/SPI/mlx-swift/MLXOptimizers/rmsprop/init(learningrate,alpha,eps).md",
+      "hash": "a04fbc32b610d696ea6ad6fdaad82f80bdf2b36c9b240599e62fb8388a257ffe"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift/main/documentation/mlxoptimizers/rmsprop/learningrate": {
+      "file_path": "documentation/SPI/mlx-swift/MLXOptimizers/rmsprop/learningrate.md",
+      "hash": "98e4c7d3648cad702398d0cd4883455755659c57d66187c033ba6c6f7b6e65fc"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift/main/documentation/mlxoptimizers/sgd": {
+      "file_path": "documentation/SPI/mlx-swift/MLXOptimizers/sgd.md",
+      "hash": "a1ddc6d8020cb523698bff5f4d2fa35d0bd1fd499358ace51949e40f0a842c93"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift/main/documentation/mlxoptimizers/sgd/applysingle(gradient:parameter:state:)": {
+      "file_path": "documentation/SPI/mlx-swift/MLXOptimizers/sgd/applysingle(gradient,parameter,state).md",
+      "hash": "60e6638f8bfc493b29f156ee683a4f45fea0ca1193515b6ac073c1a612d7480b"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift/main/documentation/mlxoptimizers/sgd/dampening": {
+      "file_path": "documentation/SPI/mlx-swift/MLXOptimizers/sgd/dampening.md",
+      "hash": "656df3384bf1f7137b922d4c294472e8d3941916f72084f8bc4611d412a2ba64"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift/main/documentation/mlxoptimizers/sgd/init(learningrate:momentum:weightdecay:dampening:nesterov:)": {
+      "file_path": "documentation/SPI/mlx-swift/MLXOptimizers/sgd/init(learningrate,momentum,weightdecay,dampening,nesterov).md",
+      "hash": "e2592c21b30e5598028ecc0c8deff9e248d6bc16624ff32b3f75fcaf61c81828"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift/main/documentation/mlxoptimizers/sgd/learningrate": {
+      "file_path": "documentation/SPI/mlx-swift/MLXOptimizers/sgd/learningrate.md",
+      "hash": "59495f49a4d056fadaed00ad52bdaca5f1cf5467daaa678bcadc576bf92a9f01"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift/main/documentation/mlxoptimizers/sgd/momentum": {
+      "file_path": "documentation/SPI/mlx-swift/MLXOptimizers/sgd/momentum.md",
+      "hash": "aaee3f9dcab5661ec95a73c305386d7c6aeb17e316fcfcfefa3b1562eb0395f0"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift/main/documentation/mlxoptimizers/sgd/nesterov": {
+      "file_path": "documentation/SPI/mlx-swift/MLXOptimizers/sgd/nesterov.md",
+      "hash": "478ed809a614fc12e2e2c680b0f00ffa3b1834df2ed4bc1d2bdbe9c629613dff"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift/main/documentation/mlxoptimizers/sgd/newstate(parameter:)": {
+      "file_path": "documentation/SPI/mlx-swift/MLXOptimizers/sgd/newstate(parameter).md",
+      "hash": "19f71514ed4ff4bc450ed236febcc9c76759c4360436265cef914e2f1acf8049"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift/main/documentation/mlxoptimizers/sgd/weightdecay": {
+      "file_path": "documentation/SPI/mlx-swift/MLXOptimizers/sgd/weightdecay.md",
+      "hash": "cecde8b23db2af5ea6951eb1807c1c45d7a957654953e7ab98db64deb0be3a62"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift/main/documentation/mlxoptimizers/stepdecay(_:decayrate:stepsize:)": {
+      "file_path": "documentation/SPI/mlx-swift/MLXOptimizers/stepdecay(_,decayrate,stepsize).md",
+      "hash": "b294ef97e38ac35d704a657e067eda14a4f44ce0e3d3fd0a6693b0ccab9f55d9"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift/main/documentation/mlxoptimizers/tuplestate": {
+      "file_path": "documentation/SPI/mlx-swift/MLXOptimizers/tuplestate.md",
+      "hash": "27ca600ceac283693b6c13c1ec85813ddaeb022ac35775cb4e6ec9153abda80f"
+    },
+    "https://swiftpackageindex.com/ml-explore/mlx-swift/main/documentation/mlxoptimizers/tuplestate/innerstate()": {
+      "file_path": "documentation/SPI/mlx-swift/MLXOptimizers/tuplestate/innerstate().md",
+      "hash": "7e83fbbdf4577e30470a29c3a190ea5acb76d4caf1814a1a869782bb792e5c5b"
+    }
+  },
+  "metadata": {
+    "render": {
+      "version": 3
+    },
+    "total_pages": 202
+  }
+}

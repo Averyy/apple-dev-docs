@@ -1,0 +1,23 @@
+---
+url: "https://swiftpackageindex.com/ml-explore/mlx-swift/main/documentation/mlx/stream/==(_:_:)"
+framework: "mlx-swift/MLX"
+---
+
+# ==(_:_:)
+
+**Framework**: mlx-swift/MLX  
+**Kind**: op  
+**Role**: Operator
+
+Inherited from `Equatable.==(_:_:)`.
+
+## Declaration
+
+```swift
+static func == (lhs: Stream, rhs: Stream) -> Bool
+```
+
+
+---
+
+*[View on Swift Package Index](https://swiftpackageindex.com/ml-explore/mlx-swift/main/documentation/mlx/stream/==(_:_:))*

@@ -138,7 +138,7 @@ set(CMAKE_Swift_COMPILATION_MODE wholemodule)
 project(SwiftZephyrProject Swift)
 ```
 
-Next, set the compiler target to the arch you are building for. For this example we use `armv6m-none-none-eabi` which is compatible with the [Cortex-M0](https://docs.zephyrproject.org/latest/boards/qemu/cortex_m0/doc/index.html) which we will compile for in a later step. If you are targeting a different architecture, see the [Zephyr Target Architecture Compatibility](https://docs.swift.org/latest#zephyr-target-architecture-compatibility) to see which target triple to use.
+Next, set the compiler target to the arch you are building for. For this example we use `armv6m-none-none-eabi` which is compatible with the [Cortex-M0](https://docs.zephyrproject.org/latest/boards/qemu/cortex_m0/doc/index.html) which we will compile for in a later step. If you are targeting a different architecture, see the [Zephyr Target Architecture Compatibility](./integratewithzephyr.md#zephyr-target-architecture-compatibility) to see which target triple to use.
 
 ```cmake
 # Use the armv6m-none-none-eabi target triple for Swift
@@ -341,7 +341,7 @@ Loop
 
 This setup may also be desirable since `west flash` is also available and can be used instead of invoking the flashing tools manually.
 
-If compiling a firmware for a real/physical board such as the `nrf52840dk/nrf52840`, `west flash` will work if the SEGGER J-Link host tools are installed. As an example, with the [nrfx-blink-sdk](https://docs.swift.org/latest../../../../nrfx-blink-sdk/) project:
+If compiling a firmware for a real/physical board such as the `nrf52840dk/nrf52840`, `west flash` will work if the SEGGER J-Link host tools are installed. As an example, with the [nrfx-blink-sdk](https://docs.swift.org/nrfx-blink-sdk/) project:
 
 ```console
 > cd nrfx-blink-sdk

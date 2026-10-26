@@ -14001,7 +14001,7 @@
       "hash": "3407b8404d505702b06f98c47424bfae270e5ada16c5336a54760cce4f0dd1ae"
     },
     "https://developer.apple.com/documentation/webkitjs/svgfecompositeelement/1629284-svg_fecomposite_operator_xor": {
-      "etag": "\"1fb4-6593d10e6b0e7-df\"",
+      "etag": "\"1fb4-6593d10e6b0e7\"",
       "file_path": "documentation/webkitjs/svgfecompositeelement/api-1629284-svg_fecomposite_operator_xor.md",
       "hash": "ec6f598394eb9d7d505a525dbf4cc95999054e2fbfcc2a25686b65bce773bf36"
     },
@@ -38726,7 +38726,7 @@
       "hash": "3407b8404d505702b06f98c47424bfae270e5ada16c5336a54760cce4f0dd1ae"
     },
     "https://developer.apple.com/tutorials/data/documentation/webkitjs/svgfecompositeelement/1629284-svg_fecomposite_operator_xor.json": {
-      "etag": "\"1fb4-6593d10e6b0e7-df\"",
+      "etag": "\"1fb4-6593d10e6b0e7\"",
       "file_path": "documentation/webkitjs/svgfecompositeelement/api-1629284-svg_fecomposite_operator_xor.md",
       "hash": "ec6f598394eb9d7d505a525dbf4cc95999054e2fbfcc2a25686b65bce773bf36"
     },
@@ -49460,7 +49460,7 @@
       "tvmljs": {}
     },
     "render": {
-      "version": 2
+      "version": 3
     },
     "total_pages": 9891
   }

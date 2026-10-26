@@ -187,7 +187,7 @@ The system sends an update POST to your endpoint, such as:
 }
 ```
 
-The request contains the same fields as the POST for serving a restore request. For more information see the table above in [Serve a restore request](https://developer.apple.com#Serve-a-restore-request).
+The request contains the same fields as the POST for serving a restore request. For more information see the table above in [Serve a restore request](./installing-apps-from-an-alternative-marketplace.md#Serve-a-restore-request).
 
 In response, your endpoint gives the alternative distribution package(s) in the `updates` element for apps matching the request criteria:
 

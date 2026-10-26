@@ -114761,7 +114761,7 @@
       "hash": "c043be7847de7dc6644514d023d6cd0472186c9cd5ef26378fc8eabce631d944"
     },
     "https://developer.apple.com/documentation/kernel/iofirewireserialbusprotocoltransport/1550703-allocateresources": {
-      "etag": "\"14a4-6593d129f91a7-df\"",
+      "etag": "\"14a4-6593d129f91a7\"",
       "file_path": "documentation/kernel/iofirewireserialbusprotocoltransport/api-1550703-allocateresources.md",
       "hash": "6934e3977a4f3f32aa2e026ea0c065cc2d75a4f227dae645da697bfabf1b02e1"
     },
@@ -124161,7 +124161,7 @@
       "hash": "15650d54816a1e708021792676c0fe64524e553b833d9c48f05cea345f0a492a"
     },
     "https://developer.apple.com/documentation/kernel/iomedia/1420264-isejectable": {
-      "etag": "\"11bf-6593d13f8912a-df\"",
+      "etag": "\"11bf-6593d13f8912a\"",
       "file_path": "documentation/kernel/iomedia/api-1420264-isejectable.md",
       "hash": "a613a8d4d54afe5ea64ca22a6fc6f552f27d987939298f63ef3c87cc21ddf77d"
     },
@@ -142271,7 +142271,7 @@
       "hash": "6d99e00ba112851ef2563a04f3030cce8c5d44856b0dc94da5316af0c8c5ad51"
     },
     "https://developer.apple.com/documentation/kernel/iousbdevrequest/1546579-windex": {
-      "etag": "\"2399-6593d12cd556a\"",
+      "etag": "\"2399-6593d12cd556a-df\"",
       "file_path": "documentation/kernel/iousbdevrequest/api-1546579-windex.md",
       "hash": "7d2080be88cce4e6377eb0e732f61e94c0bdfe4bee241baa75a668dbbbf19283"
     },
@@ -313621,7 +313621,7 @@
       "hash": "c043be7847de7dc6644514d023d6cd0472186c9cd5ef26378fc8eabce631d944"
     },
     "https://developer.apple.com/tutorials/data/documentation/kernel/iofirewireserialbusprotocoltransport/1550703-allocateresources.json": {
-      "etag": "\"14a4-6593d129f91a7-df\"",
+      "etag": "\"14a4-6593d129f91a7\"",
       "file_path": "documentation/kernel/iofirewireserialbusprotocoltransport/api-1550703-allocateresources.md",
       "hash": "6934e3977a4f3f32aa2e026ea0c065cc2d75a4f227dae645da697bfabf1b02e1"
     },
@@ -323021,7 +323021,7 @@
       "hash": "15650d54816a1e708021792676c0fe64524e553b833d9c48f05cea345f0a492a"
     },
     "https://developer.apple.com/tutorials/data/documentation/kernel/iomedia/1420264-isejectable.json": {
-      "etag": "\"11bf-6593d13f8912a-df\"",
+      "etag": "\"11bf-6593d13f8912a\"",
       "file_path": "documentation/kernel/iomedia/api-1420264-isejectable.md",
       "hash": "a613a8d4d54afe5ea64ca22a6fc6f552f27d987939298f63ef3c87cc21ddf77d"
     },
@@ -341131,7 +341131,7 @@
       "hash": "6d99e00ba112851ef2563a04f3030cce8c5d44856b0dc94da5316af0c8c5ad51"
     },
     "https://developer.apple.com/tutorials/data/documentation/kernel/iousbdevrequest/1546579-windex.json": {
-      "etag": "\"2399-6593d12cd556a\"",
+      "etag": "\"2399-6593d12cd556a-df\"",
       "file_path": "documentation/kernel/iousbdevrequest/api-1546579-windex.md",
       "hash": "7d2080be88cce4e6377eb0e732f61e94c0bdfe4bee241baa75a668dbbbf19283"
     },
@@ -397726,7 +397726,7 @@
       "iokit": {}
     },
     "render": {
-      "version": 2
+      "version": 3
     },
     "total_pages": 79544
   }

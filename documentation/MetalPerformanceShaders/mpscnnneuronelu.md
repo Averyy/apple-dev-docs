@@ -28,7 +28,7 @@ class MPSCNNNeuronELU
 
 For each pixel in an image, the filter applies the following function:
 
-![f(x) = a * (exp(x) - 1) if x <  0 | f(x) = [ a * (exp(x) - 1) if x <  0](https://developer.apple.commedia-2903539)
+![f(x) = a * (exp(x) - 1) if x <  0 | f(x) = [ a * (exp(x) - 1) if x <  0](./media-2903539.md)
 
 ## Topics
 

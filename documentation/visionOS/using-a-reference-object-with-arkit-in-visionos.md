@@ -166,7 +166,7 @@ Use `TrackingConfiguration` to adjust the values of these properties in your app
 trackingConfiguration.maximumInstancesPerReferenceObject = 2
 ```
 
-Pass the `trackingConfiguration` to [`ObjectTrackingProvider`](../ARKit/objecttrackingprovider.md) alongside your reference objects, then run the session as described earlier in the section, [Run object tracking on a session](https://developer.apple.com#Run-object-tracking-on-a-session).
+Pass the `trackingConfiguration` to [`ObjectTrackingProvider`](../ARKit/objecttrackingprovider.md) alongside your reference objects, then run the session as described earlier in the section, [Run object tracking on a session](./using-a-reference-object-with-arkit-in-visionos.md#Run-object-tracking-on-a-session).
 
 ```swift
 dataProvider = ObjectTrackingProvider(referenceObjects: referenceObjects,

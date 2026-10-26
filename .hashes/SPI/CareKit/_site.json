@@ -1,0 +1,12 @@
+{
+  "hashes": {},
+  "metadata": {
+    "index_roots": [
+      "CareKit",
+      "CareKitStore",
+      "CareKitUI"
+    ],
+    "site": "spi-carekit",
+    "total_pages": 0
+  }
+}

@@ -376,7 +376,7 @@
       "hash": "69d5f9e8de90e1990aad5d7bea54279134d3d541d0b45ffa369a0277b11afb16"
     },
     "https://developer.apple.com/documentation/mediaextension/mefileinfo/fragmentsstatus-swift.enum": {
-      "etag": "\"5341-65d55cb2c6f85\"",
+      "etag": "\"5341-65d55cb2c6f85-df\"",
       "file_path": "documentation/MediaExtension/mefileinfo/fragmentsstatus-swift.enum.md",
       "hash": "e8b7f1e122063f1c2b6a7e6b9fa8cf3a0b96058ede9604c70c4e2a54fe11af1a"
     },
@@ -1746,7 +1746,7 @@
       "hash": "69d5f9e8de90e1990aad5d7bea54279134d3d541d0b45ffa369a0277b11afb16"
     },
     "https://developer.apple.com/tutorials/data/documentation/mediaextension/mefileinfo/fragmentsstatus-swift.enum.json": {
-      "etag": "\"5341-65d55cb2c6f85\"",
+      "etag": "\"5341-65d55cb2c6f85-df\"",
       "file_path": "documentation/MediaExtension/mefileinfo/fragmentsstatus-swift.enum.md",
       "hash": "e8b7f1e122063f1c2b6a7e6b9fa8cf3a0b96058ede9604c70c4e2a54fe11af1a"
     },
@@ -2743,7 +2743,7 @@
   },
   "metadata": {
     "render": {
-      "version": 2
+      "version": 3
     },
     "total_pages": 548
   }

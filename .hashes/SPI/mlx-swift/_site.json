@@ -1,0 +1,16 @@
+{
+  "hashes": {},
+  "metadata": {
+    "index_roots": [
+      "MLX",
+      "MLXFast",
+      "MLXFFT",
+      "MLXLinalg",
+      "MLXNN",
+      "MLXOptimizers",
+      "MLXRandom"
+    ],
+    "site": "spi-mlx-swift",
+    "total_pages": 0
+  }
+}
