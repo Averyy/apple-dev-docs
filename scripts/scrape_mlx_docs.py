@@ -8,31 +8,38 @@ Sphinx HTML Sites:
 - MLX (ml-explore/mlx) - Array framework for Apple silicon
 - MLX-Data (ml-explore/mlx-data) - Data loading utilities
 - coremltools (apple/coremltools) - Core ML model conversion tools
+- apple-fm-sdk (apple/python-apple-fm-sdk) - Foundation Models SDK for Python
 
 GitHub Markdown:
-- mlx-lm - LLM inference and fine-tuning
+- mlx-lm - LLM inference and fine-tuning, its server and model management
 - mlx-c - C API bindings
 - mlx-onnx - ONNX support
-- mlx-swift, mlx-swift-lm, mlx-swift-examples - MLX Swift (DocC catalogs and READMEs)
-- ml-stable-diffusion - Stable Diffusion on Core ML
+- mlx-swift, mlx-swift-lm - MLX Swift (DocC catalogs and READMEs)
+- game-porting-toolkit - Metal shader converter docs
+- container, sourcekit-lsp, swift-format - their docs directories
+
+Web Pages (configured one by one, no crawl):
+- App-Store - App Review Guidelines, App privacy details, User privacy and data use
 
 A GitHub file in a DocC catalog (a *.docc dir) has its DocC markup converted
 (utilities/docc.py): its <doc:> links point to the articles of its own catalog.
 
-The Sphinx pages are fetched with wafer-py, one at a time so its per-host
-rate limit spaces them, with its retries; so this script needs Python 3.12
-and requirements-scrape.txt on top of requirements.txt (the scheduled scrape
-workflow installs both). The GitHub fetches use aiohttp, with retries.
+The Sphinx pages and web pages are fetched with wafer-py, one at a time so
+its per-host rate limit spaces them, with its retries; so this script needs
+Python 3.12 and requirements-scrape.txt on top of requirements.txt (the
+scheduled scrape workflow installs both). The GitHub fetches use aiohttp,
+with retries.
 
 Failures follow the policy shared with the HIG and Swift scrapers
 (utilities/source_policy.py): a configured Sphinx root, GitHub directory or
-file that returns 404/410 keeps its files for that run and is removed on the
-2nd consecutive run; any other failure of a configured root, directory or
-file keeps its files until it recovers (it never reaches D8); a page that is
-no longer linked or listed, or returns 404/410, is removed at once; other
-failures and convert/save errors keep the file of a page we have (its key,
-or its file on disk) and block the orphan cleanup for up to 3 runs; a page
-whose links can't be read keeps its file and blocks it, uncounted. The
+file, or web page, that returns 404/410 keeps its files for that run and is
+removed on the 2nd consecutive run; any other failure of a configured root,
+directory, file or web page keeps its files until it recovers (it never
+reaches D8); a page that is no longer linked or listed, or returns 404/410,
+is removed at once; other failures and convert/save errors keep the file of
+a page we have (its key, or its file on disk) and block the orphan cleanup
+for up to 3 runs; a page whose links can't be read keeps its file and
+blocks it, uncounted. The
 orphan cleanup scans each configured source's top-level dir, plus every
 output dir no longer configured (a source dropped from the config, or a
 source's old dir after its output_dir changed; metadata.sources) until its
@@ -109,13 +116,13 @@ OUTPUT_BASE = Path(__file__).parent.parent / "documentation"
 HASH_FILE = Path(__file__).parent.parent / ".hashes" / "mlx_docs_hashes.json"
 
 # Rate limiting
-REQUEST_DELAY = 0.15  # seconds between requests (Sphinx pages: wafer's per-host rate_limit)
+REQUEST_DELAY = 0.15  # seconds between requests (Sphinx and web pages: wafer's per-host rate_limit)
 MAX_CONCURRENT = 10  # max concurrent requests (GitHub)
 
 # HTTP timeout (GitHub, per attempt)
 HTTP_TIMEOUT = aiohttp.ClientTimeout(total=30)
 
-# Sphinx pages (wafer): the total budget per page, all retries included, and
+# Sphinx and web pages (wafer): the total budget per page, all retries included, and
 # the cap on each attempt (so a hung attempt is retried instead of eating the budget)
 SPHINX_TIMEOUT = 120.0
 SPHINX_ATTEMPT_TIMEOUT = 30.0
@@ -123,6 +130,11 @@ SPHINX_MAX_RETRIES = 3  # wafer's retries for 5xx, connection errors and empty b
 
 # GitHub directories that can't contain markdown (Xcode-specific)
 XCODE_DIR_SUFFIXES = ('.xcassets', '.xcworkspace', '.xcodeproj', '.playground')
+
+# HTML conversion: heading levels, and the blocks of a list item converted
+# block by block (list_item_markdown)
+HEADING_TAGS = ('h1', 'h2', 'h3', 'h4', 'h5', 'h6')
+BLOCK_TAGS = ('p', 'ul', 'ol', 'pre', 'table', 'blockquote', 'dl', 'div', 'section', 'figure', *HEADING_TAGS)
 
 # Hash-file metadata: each configured source's output dir ({name: output_dir}),
 # plus every output dir no longer configured until its files are deleted: a
@@ -135,7 +147,7 @@ POLICY_KEYS = (FAILURE_COUNTS_KEY, PENDING_ORPHANS_KEY, SOURCES_KEY, RENDER_KEY)
 # The converter's output version: bump it when a change to the conversion
 # changes the files of pages that didn't change, so the next clean run
 # renders every page again (source_policy's metadata.render)
-RENDER_VERSION = 1
+RENDER_VERSION = 2
 
 
 @dataclass
@@ -149,7 +161,9 @@ class SphinxDocSource:
     # first: the theme's header bar, with its theme switcher and source
     # links, is in main but outside the article)
     content_selector: str = "article, .body, [role='main'], main"
-    # Paths to skip (relative to base_url)
+    # Paths to skip (relative to base_url), each matched where a path
+    # segment starts: "search.html" skips search.html and api/search.html,
+    # never CharTrie.search.html; "_modules/" everything under _modules
     skip_paths: List[str] = field(default_factory=list)
     # Only include paths matching these patterns (empty = include all)
     include_patterns: List[str] = field(default_factory=list)
@@ -170,6 +184,25 @@ class GitHubDocSource:
     # Take only the README.md files the directory crawls find (e.g. an
     # examples tree whose other .md files are test data, not docs)
     readme_only: bool = False
+
+
+@dataclass
+class WebPageSource:
+    """Represents web pages configured one by one (no crawl), each converted
+    from its HTML as a Sphinx page is."""
+    name: str  # e.g., "App-Store"
+    base_url: str  # e.g., "https://developer.apple.com/app-store/"
+    output_dir: str  # e.g., "App-Store"
+    framework: str  # e.g., "App-Store"
+    # The pages, relative to base_url (e.g. "review/guidelines/"); each is
+    # saved under its path without the trailing slash (review/guidelines.md)
+    pages: List[str] = field(default_factory=list)
+    # CSS selectors for content extraction, the first match wins
+    content_selector: str = "main"
+
+
+# The sources whose pages are converted from HTML (html_to_markdown)
+HTMLSource = Union[SphinxDocSource, WebPageSource]
 
 
 # Sphinx documentation sites
@@ -195,6 +228,14 @@ SPHINX_SOURCES: List[SphinxDocSource] = [
         framework="coremltools",
         skip_paths=["genindex.html", "search.html"],
     ),
+    SphinxDocSource(
+        name="apple-fm-sdk",
+        base_url="https://apple.github.io/python-apple-fm-sdk/",
+        output_dir="apple-fm-sdk",
+        framework="apple-fm-sdk",
+        # _modules/: the viewcode source pages every API page links as [source]
+        skip_paths=["genindex.html", "search.html", "_modules/"],
+    ),
 ]
 
 # GitHub markdown sources
@@ -205,7 +246,8 @@ GITHUB_SOURCES: List[GitHubDocSource] = [
         branch="main",
         output_dir="MLX/mlx-lm",
         framework="MLX",
-        files=["README.md", "mlx_lm/LORA.md"],
+        files=["README.md", "mlx_lm/LORA.md", "mlx_lm/SERVER.md", "mlx_lm/MANAGE.md",
+               "mlx_lm/LEARNED_QUANTS.md", "mlx_lm/BENCHMARKS.md"],
     ),
     GitHubDocSource(
         name="mlx-c",
@@ -239,25 +281,54 @@ GITHUB_SOURCES: List[GitHubDocSource] = [
         output_dir="MLX-Swift/mlx-swift-lm",
         framework="MLX-Swift",
         files=["README.md"],
-        directories=["Libraries/MLXLMCommon/Documentation.docc"],  # Full DocC documentation
+        directories=[  # Full DocC documentation
+            "Libraries/MLXLMCommon/Documentation.docc",
+            "Libraries/MLXHuggingFace/Documentation.docc",
+            "Libraries/MLXRerankers/Documentation.docc",
+        ],
     ),
     GitHubDocSource(
-        name="mlx-swift-examples",
-        repo="ml-explore/mlx-swift-examples",
+        name="game-porting-toolkit",
+        repo="apple/game-porting-toolkit",
         branch="main",
-        output_dir="MLX-Swift/mlx-swift-examples",
-        framework="MLX-Swift",
-        files=["README.md"],
-        directories=["Applications"],
-        readme_only=True,  # the apps' other .md files are test prompts (LLMEval/Models)
+        output_dir="game-porting-toolkit",
+        framework="game-porting-toolkit",
+        directories=["docs"],  # Metal shader converter
     ),
     GitHubDocSource(
-        name="ml-stable-diffusion",
-        repo="apple-aiml-research/ml-stable-diffusion",
+        name="container",
+        repo="apple/container",
         branch="main",
-        output_dir="ml-stable-diffusion",
-        framework="ml-stable-diffusion",
-        files=["README.md"],
+        output_dir="container",
+        framework="container",
+        directories=["docs"],
+    ),
+    GitHubDocSource(
+        name="sourcekit-lsp",
+        repo="swiftlang/sourcekit-lsp",
+        branch="main",
+        output_dir="sourcekit-lsp",
+        framework="sourcekit-lsp",
+        directories=["Documentation"],
+    ),
+    GitHubDocSource(
+        name="swift-format",
+        repo="swiftlang/swift-format",
+        branch="main",
+        output_dir="swift-format",
+        framework="swift-format",
+        directories=["Documentation"],
+    ),
+]
+
+# Web pages, configured one by one
+WEB_SOURCES: List[WebPageSource] = [
+    WebPageSource(
+        name="App-Store",
+        base_url="https://developer.apple.com/app-store/",
+        output_dir="App-Store",
+        framework="App-Store",
+        pages=["review/guidelines/", "app-privacy-details/", "user-privacy-and-data-use/"],
     ),
 ]
 
@@ -289,15 +360,47 @@ def configured_sources() -> Dict[str, str]:
     """Every configured source's output dir, {name: output_dir} (metadata.sources).
 
     Raises:
-        ValueError: Two sources share a name (their files couldn't be told apart)
+        ValueError: Two sources share a name (their files couldn't be told
+            apart), or a web source's pages aren't distinct pages under its
+            base URL (web_page_paths)
     """
     sources: Dict[str, str] = {}
-    all_sources: List[Union[SphinxDocSource, GitHubDocSource]] = [*SPHINX_SOURCES, *GITHUB_SOURCES]
+    all_sources: List[Union[SphinxDocSource, GitHubDocSource, WebPageSource]] = [
+        *SPHINX_SOURCES, *GITHUB_SOURCES, *WEB_SOURCES,
+    ]
     for source in all_sources:
         if source.name in sources:
             raise ValueError(f"Duplicate MLX source name: {source.name}")
         sources[source.name] = source.output_dir
+    for web_source in WEB_SOURCES:
+        web_page_paths(web_source)
     return sources
+
+
+def web_page_paths(source: WebPageSource) -> Dict[str, Path]:
+    """A web source's pages, {url: file}: each page's path under the base
+    URL without its trailing slash, as a .md file (review/guidelines/ ->
+    review/guidelines.md).
+
+    Raises:
+        ValueError: A page outside the base URL, with an unsafe path, or
+            whose file another page has (in any casing)
+    """
+    output_dir = OUTPUT_BASE / source.output_dir
+    paths: Dict[str, Path] = {}
+    folded: Dict[str, str] = {}
+    for page in source.pages:
+        url = urljoin(source.base_url, page)
+        filepath = None
+        if page and url.startswith(source.base_url) and url != source.base_url:
+            filepath = url_to_filepath(url.rstrip('/'), source.base_url, output_dir)
+        if filepath is None:
+            raise ValueError(f"Web source {source.name}: {page!r} is not a page under {source.base_url}")
+        other = folded.setdefault(str(filepath).lower(), url)
+        if other != url:
+            raise ValueError(f"Web source {source.name}: {other} and {url} both map to {filepath}")
+        paths[url] = filepath
+    return paths
 
 
 def valid_output_dir(output_dir: Any) -> bool:
@@ -378,9 +481,9 @@ def normalize_link(page_url: str, href: str, source: SphinxDocSource) -> Optiona
     if not normalized.startswith(source.base_url):
         return None
 
-    # Check skip paths
+    # Check skip paths (where a path segment starts)
     rel_path = normalized[len(source.base_url):]
-    if any(skip in rel_path for skip in source.skip_paths):
+    if any(f"/{skip}" in f"/{rel_path}" for skip in source.skip_paths):
         return None
 
     # Only include .html pages
@@ -438,8 +541,29 @@ def url_to_filepath(url: str, base_url: str, output_dir: Path) -> Optional[Path]
     return filepath
 
 
-def html_to_markdown(html: str, source: SphinxDocSource, url: str) -> str:
-    """Convert Sphinx HTML to clean markdown."""
+def heading_text(heading: Tag) -> str:
+    """A heading's text on one line, without its pilcrow/link symbol: its
+    words kept apart as rendered ("5. Legal", not "5.Legal"), a
+    non-breaking space as a space (a title is matched as typed)."""
+    text = ' '.join(heading.get_text().split())
+    return re.sub(r'[¶#]$', '', text).strip()
+
+
+def raise_headings(content: Tag) -> None:
+    """Raise the content's headings so that its top level is h2, under the
+    page's title (# is the title only): e.g. the App Review Guidelines'
+    sections are h3. The indexer splits a large page at its ## headings."""
+    headings = [heading for heading in content.find_all(HEADING_TAGS) if heading_text(heading)]
+    if not headings:
+        return
+    shift = min(int(heading.name[1]) for heading in headings) - 2
+    if shift > 0:
+        for heading in content.find_all(HEADING_TAGS):
+            heading.name = f"h{int(heading.name[1]) - shift}"
+
+
+def html_to_markdown(html: str, source: HTMLSource, url: str) -> str:
+    """Convert Sphinx HTML (or a web page's) to clean markdown."""
     soup = BeautifulSoup(html, 'html.parser')
 
     # Find main content area
@@ -453,11 +577,14 @@ def html_to_markdown(html: str, source: SphinxDocSource, url: str) -> str:
         content = soup.body or soup
 
     # Remove navigation, sidebar, footer elements
+    # (a:has(.viewcode-link): a Sphinx [source] link, to a page's Python
+    # source, which isn't documentation)
     for selector in ['nav', '.sidebar', '.sphinxsidebar', '.related',
                      '.footer', 'footer', '.headerlink', '.toctree-wrapper',
-                     'script', 'style', '.skip-link', '#searchbox']:
+                     'script', 'style', '.skip-link', '#searchbox', 'a:has(.viewcode-link)']:
         for elem in content.select(selector):
             elem.decompose()
+    resolve_links(content, source, url)
 
     # Convert to markdown
     md_lines = []
@@ -466,13 +593,11 @@ def html_to_markdown(html: str, source: SphinxDocSource, url: str) -> str:
     # isn't converted a second time (else the page's first h1, outside it)
     content_title = content.find('h1')
     title = content_title or soup.find('h1')
-    if title:
-        title_text = title.get_text(strip=True)
-        # Remove pilcrow/link symbols
-        title_text = re.sub(r'[¶#]$', '', title_text).strip()
-        md_lines.append(f"# {title_text}\n")
+    if isinstance(title, Tag):
+        md_lines.append(f"# {heading_text(title)}\n")
     if isinstance(content_title, Tag):
         content_title.decompose()
+    raise_headings(content)
 
     # Process content
     md_content = convert_element_to_markdown(content, url)
@@ -492,6 +617,31 @@ url: {url}
     result = re.sub(r'\n{3,}', '\n\n', result)
 
     return result.strip() + '\n'
+
+
+def absolute_url(url: str, href: str) -> str:
+    """href resolved against the page's URL (url); as it is when urllib
+    rejects its host part (e.g. a placeholder like "//[your-host]/x")."""
+    try:
+        return urljoin(url, href)
+    except ValueError:
+        return href
+
+
+def resolve_links(content: Tag, source: HTMLSource, url: str) -> None:
+    """Make absolute (against the page's URL) every link that can't point
+    to one of our docs: one from the host's root (/path, //host/path; the
+    docs don't mirror it), and a relative one to anything but a page of the
+    source (a Sphinx index or search page, an image, a download; a web
+    page's other pages, which aren't crawled). local_href then leaves them
+    as they are."""
+    for link in content.find_all('a', href=True):
+        href = attribute(link, 'href')
+        if not href or href.startswith(('#', 'http://', 'https://', 'mailto:')):
+            continue
+        if (href.startswith('/') or not isinstance(source, SphinxDocSource)
+                or normalize_link(url, href, source) is None):
+            link['href'] = absolute_url(url, href)
 
 
 def local_href(href: str) -> str:
@@ -522,7 +672,7 @@ def image_markdown(img: Tag, url: str) -> str:
     src = attribute(img, 'src')
     if not src:
         return ''
-    return f"![{attribute(img, 'alt')}]({urljoin(url, src)})"
+    return f"![{attribute(img, 'alt')}]({absolute_url(url, src)})"
 
 
 def only_image(link: Tag) -> Optional[Tag]:
@@ -540,7 +690,7 @@ def linked_image_markdown(image: Tag, href: str, url: str) -> str:
     full-size file), else the image linked to the link's target (e.g. a
     badge, [![alt](src)](href))."""
     markdown = image_markdown(image, url)
-    if markdown and href and urljoin(url, href) != urljoin(url, attribute(image, 'src')):
+    if markdown and href and absolute_url(url, href) != absolute_url(url, attribute(image, 'src')):
         return f"[{markdown}]({local_href(href)})"
     return markdown
 
@@ -579,10 +729,9 @@ def convert_element_to_markdown(element: PageElement, url: str) -> str:
     # Handle specific tags
     tag = element.name.lower()
 
-    if tag in ['h1', 'h2', 'h3', 'h4', 'h5', 'h6']:
+    if tag in HEADING_TAGS:
         level = int(tag[1])
-        text = element.get_text(strip=True)
-        text = re.sub(r'[¶#]$', '', text).strip()  # Remove anchor symbols
+        text = heading_text(element)
         if text:
             result.append(f"\n{'#' * level} {text}\n")
 
@@ -611,10 +760,12 @@ def convert_element_to_markdown(element: PageElement, url: str) -> str:
     elif tag in ['ul', 'ol']:
         for i, li in enumerate(element.find_all('li', recursive=False)):
             prefix = '- ' if tag == 'ul' else f"{i+1}. "
-            # A code block in the item is indented under it
-            li_text = process_inline_elements(li, url, indent=' ' * len(prefix))
-            if li_text.strip():
-                result.append(f"{prefix}{li_text.strip()}\n")
+            # The item's lines after the first (a code block, its other
+            # blocks) are indented under it
+            li_text = list_item_markdown(li, url, indent=' ' * len(prefix))
+            if li_text:
+                # An item of several blocks is set apart from the next one
+                result.append(f"{prefix}{li_text}\n" + ('\n' if holds_blocks(li) else ''))
         result.append('\n')
 
     elif tag == 'dl':
@@ -662,14 +813,66 @@ def convert_element_to_markdown(element: PageElement, url: str) -> str:
     return ''.join(result)
 
 
+def holds_blocks(item: Tag) -> bool:
+    """Whether a list item is converted block by block (list_item_markdown):
+    it holds a nested list, a table, a quote or a definition list (inline
+    conversion has no case for them), more than one paragraph, or a
+    paragraph and inline content beside it (e.g. a rule's title before its
+    text)."""
+    names = [child.name for child in item.children if isinstance(child, Tag)]
+    if any(name in names for name in ('ul', 'ol', 'table', 'blockquote', 'dl')) or names.count('p') > 1:
+        return True
+    return 'p' in names and any(
+        child.get_text(strip=True) if isinstance(child, Tag) else str(child).strip()
+        for child in item.children
+        if not (isinstance(child, Tag) and child.name in BLOCK_TAGS)
+    )
+
+
+def list_item_markdown(item: Tag, url: str, indent: str) -> str:
+    """A list item's text, its lines after the first indented by indent (its
+    bullet's width), so that all of it stays inside the item.
+
+    An item that holds blocks (holds_blocks; e.g. an App Review Guidelines
+    rule: its title, its text, its sub-rules in a nested list) is converted
+    block by block: each block (a paragraph, a nested list, a code block, a
+    table) and each run of inline content between them is a paragraph of
+    the item, so the nested list keeps its items. Any other item is one run
+    of inline content.
+    """
+    if not holds_blocks(item):
+        return process_inline_elements(item, url, indent=indent).strip()
+    parts: List[str] = []
+    run: List[PageElement] = []
+    for child in [*item.children, None]:
+        if child is not None and not (isinstance(child, Tag) and child.name in BLOCK_TAGS):
+            run.append(child)
+            continue
+        text = inline_markdown(run, url).strip()
+        if text:
+            parts.append(text)
+        run = []
+        if child is not None:
+            text = convert_element_to_markdown(child, url).strip()
+            if text:
+                parts.append(text)
+    first, _, rest = '\n\n'.join(parts).partition('\n')
+    return first + ('\n' + textwrap.indent(rest, indent) if rest else '')
+
+
 def process_inline_elements(element: Tag, url: str, indent: str = '') -> str:
     """Process inline elements within a block (url: the page's URL).
 
     A code block inside it is fenced on its own lines, each prefixed with
     indent (a list item's: the block stays inside the item).
     """
+    return inline_markdown(element.children, url, indent)
+
+
+def inline_markdown(nodes: Iterable[PageElement], url: str, indent: str = '') -> str:
+    """Inline content (process_inline_elements), from a sequence of nodes."""
     result = []
-    for child in element.children:
+    for child in nodes:
         if not isinstance(child, Tag):  # Text node
             result.append(str(child))
         elif child.name in ['code']:
@@ -1094,6 +1297,18 @@ def plan_paths(urls: Iterable[str], source: SphinxDocSource, output_dir: Path) -
     return planned
 
 
+def write_page(run: ScrapeRun, filepath: Path, markdown: str) -> None:
+    """Write a converted page under exactly its name (a failed write keeps the old doc)."""
+    filepath.parent.mkdir(parents=True, exist_ok=True)
+    if filepath.is_file() and not has_file_named(filepath):
+        # A case-insensitive filesystem: a file named in another
+        # casing is this same path, and writing would overwrite it
+        # but keep its name, so it is replaced by one with this name
+        logger.info(f"case_twin_replaced: {run.rel(filepath)} was held by a file named in another casing")
+        filepath.unlink()
+    write_text_atomic(filepath, markdown)
+
+
 async def scrape_source(
     session: AsyncSession,
     source: SphinxDocSource,
@@ -1202,18 +1417,75 @@ async def scrape_source(
             if dry_run:
                 console.print(f"  [dim]Would write:[/dim] {filepath}")
             else:
-                filepath.parent.mkdir(parents=True, exist_ok=True)
-                if filepath.is_file() and not has_file_named(filepath):
-                    # A case-insensitive filesystem: a file named in another
-                    # casing is this same path, and writing would overwrite it
-                    # but keep its name, so it is replaced by one with this name
-                    logger.info(f"case_twin_replaced: {run.rel(filepath)} was held by a file named in another casing")
-                    filepath.unlink()
-                write_text_atomic(filepath, markdown)  # a failed write keeps the old doc
+                write_page(run, filepath, markdown)
                 hashes[hash_key] = content_hash
         except Exception as e:
             run.local_error(hash_key, filepath, f"{type(e).__name__}: {e}")
             keep_unwritten_page(run, url, filepath, source, output_dir)
+            stats["failed"] += 1
+            continue
+
+        run.page_saved(hash_key)
+        stats["downloaded"] += 1
+
+    return stats
+
+
+# =============================================================================
+# WEB PAGES
+# =============================================================================
+
+async def scrape_web_source(
+    session: AsyncSession,
+    source: WebPageSource,
+    hashes: Dict[str, str],
+    run: ScrapeRun,
+    dry_run: bool = False,
+    force: bool = False
+) -> Dict[str, int]:
+    """Scrape a source's configured web pages, reporting every outcome to run.
+
+    Nothing is crawled: each page is a configured file (it may be all its
+    source has), so a 404/410 keeps its file for that run and removes it on
+    the 2nd consecutive run, and any other failure keeps it until it
+    recovers (ScrapeRun.configured_file_failed).
+    """
+    stats = {"downloaded": 0, "skipped": 0, "gone": 0, "failed": 0}
+
+    console.print(f"  {len(source.pages)} configured pages")
+
+    for url, filepath in web_page_paths(source).items():
+        hash_key = f"{source.name}:{url}"
+        html = await fetch_page(session, url)
+        if isinstance(html, FetchFailed):
+            stats["gone" if html.gone else "failed"] += 1
+            if run.configured_file_failed(hash_key, html, filepath):
+                run.keep_file(hash_key, filepath)
+            continue
+        run.page_ok(hash_key, filepath)
+
+        # Convert and save; an error here is ours: the file is kept, never deleted
+        try:
+            markdown = html_to_markdown(html, source, url)
+
+            # Check if content changed: the markdown is hashed, not the HTML,
+            # which changes between requests in parts the conversion drops
+            # (e.g. a script URL's cache-busting query). Re-written if the
+            # file isn't there under exactly its name.
+            content_hash = compute_hash(markdown)
+            if (not force and hash_key in hashes and hashes[hash_key] == content_hash
+                    and has_file_named(filepath)):
+                run.page_saved(hash_key)
+                stats["skipped"] += 1
+                continue
+
+            if dry_run:
+                console.print(f"  [dim]Would write:[/dim] {filepath}")
+            else:
+                write_page(run, filepath, markdown)
+                hashes[hash_key] = content_hash
+        except Exception as e:
+            run.local_error(hash_key, filepath, f"{type(e).__name__}: {e}")
             stats["failed"] += 1
             continue
 
@@ -1317,6 +1589,19 @@ def prune_hashes(hashes: Dict[str, str], run: ScrapeRun, cleanup: CleanupResult)
     return len(stale)
 
 
+def add_stats(total_stats: Dict[str, Any], stats: Dict[str, int]) -> None:
+    """Add a source's stats to the run's totals, and print them."""
+    for name in ("downloaded", "skipped", "gone", "failed"):
+        total_stats[name] += stats[name]
+
+    console.print(f"  [green]Downloaded:[/green] {stats['downloaded']}")
+    console.print(f"  [dim]Skipped:[/dim] {stats['skipped']}")
+    if stats["gone"] > 0:
+        console.print(f"  [yellow]Gone (404/410):[/yellow] {stats['gone']}")
+    if stats["failed"] > 0:
+        console.print(f"  [red]Failed:[/red] {stats['failed']}")
+
+
 async def scrape_all(dry_run: bool = False, force: bool = False) -> Dict[str, Any]:
     """Scrape all configured documentation sources.
 
@@ -1345,7 +1630,7 @@ async def scrape_all(dry_run: bool = False, force: bool = False) -> Dict[str, An
     total_stats: Dict[str, Any] = {"downloaded": 0, "skipped": 0, "gone": 0, "failed": 0, "deleted": 0, "pruned": 0}
 
     connector = aiohttp.TCPConnector(limit=MAX_CONCURRENT)
-    async with AsyncSession(rate_limit=REQUEST_DELAY, max_retries=SPHINX_MAX_RETRIES) as sphinx_session, \
+    async with AsyncSession(rate_limit=REQUEST_DELAY, max_retries=SPHINX_MAX_RETRIES) as wafer_session, \
             aiohttp.ClientSession(connector=connector) as session:
         # Scrape Sphinx HTML documentation sites
         console.print("[bold cyan]═══ Sphinx HTML Documentation ═══[/bold cyan]")
@@ -1353,19 +1638,11 @@ async def scrape_all(dry_run: bool = False, force: bool = False) -> Dict[str, An
             console.print(f"\n[bold]{sphinx_source.name}[/bold] ({sphinx_source.base_url})")
 
             stats = await scrape_source(
-                sphinx_session, sphinx_source, hashes, run,
+                wafer_session, sphinx_source, hashes, run,
                 source_location(sphinx_source.output_dir, all_output_dirs), dry_run=dry_run, force=force
             )
 
-            for name in ("downloaded", "skipped", "gone", "failed"):
-                total_stats[name] += stats[name]
-
-            console.print(f"  [green]Downloaded:[/green] {stats['downloaded']}")
-            console.print(f"  [dim]Skipped:[/dim] {stats['skipped']}")
-            if stats["gone"] > 0:
-                console.print(f"  [yellow]Gone (404/410):[/yellow] {stats['gone']}")
-            if stats["failed"] > 0:
-                console.print(f"  [red]Failed:[/red] {stats['failed']}")
+            add_stats(total_stats, stats)
 
         # Scrape GitHub markdown documentation
         console.print("\n[bold cyan]═══ GitHub Markdown Documentation ═══[/bold cyan]")
@@ -1376,15 +1653,18 @@ async def scrape_all(dry_run: bool = False, force: bool = False) -> Dict[str, An
                 session, github_source, hashes, run, dry_run=dry_run, force=force
             )
 
-            for name in ("downloaded", "skipped", "gone", "failed"):
-                total_stats[name] += stats[name]
+            add_stats(total_stats, stats)
 
-            console.print(f"  [green]Downloaded:[/green] {stats['downloaded']}")
-            console.print(f"  [dim]Skipped:[/dim] {stats['skipped']}")
-            if stats["gone"] > 0:
-                console.print(f"  [yellow]Gone (404/410):[/yellow] {stats['gone']}")
-            if stats["failed"] > 0:
-                console.print(f"  [red]Failed:[/red] {stats['failed']}")
+        # Scrape the configured web pages
+        console.print("\n[bold cyan]═══ Web Pages ═══[/bold cyan]")
+        for web_source in WEB_SOURCES:
+            console.print(f"\n[bold]{web_source.name}[/bold] ({web_source.base_url})")
+
+            stats = await scrape_web_source(
+                wafer_session, web_source, hashes, run, dry_run=dry_run, force=force
+            )
+
+            add_stats(total_stats, stats)
 
     # Clean up orphaned files, unless a failure of ours blocks it: in each
     # scanned dir, every .md file this run neither produced nor keeps

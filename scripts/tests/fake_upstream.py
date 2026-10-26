@@ -4,6 +4,7 @@ One local aiohttp server serves everything those scrapers fetch, so the tests
 drive their real HTTP clients (aiohttp, httpx and wafer):
 
 - Sphinx pages under /sphinx/... (HTML with links);
+- web pages under /web/... (HTML, the MLX scraper's configured pages);
 - GitHub raw files under /raw/<repo>/<branch>/<path>, and contents-API
   listings under /api/repos/<repo>/contents/<dir>, built from those files;
 - HIG JSON pages under /hig/tutorials/data/design/human-interface-guidelines/...
@@ -109,6 +110,15 @@ class FakeUpstream:
 
     def sphinx_url(self, path: str = "") -> str:
         return f"{self.base_url}/sphinx/{path}"
+
+    # -- Web pages ----------------------------------------------------------
+
+    def web_page(self, path: str, html: str) -> None:
+        """A web page at /web/<path> (path as configured, e.g. "guide/rules/")."""
+        self.files[f"/web/{path}"] = ("text/html", html)
+
+    def web_url(self, path: str = "") -> str:
+        return f"{self.base_url}/web/{path}"
 
     # -- GitHub -------------------------------------------------------------
 

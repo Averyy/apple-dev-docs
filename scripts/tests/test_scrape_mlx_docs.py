@@ -9,7 +9,8 @@ docs dir and hash file. wafer needs Python 3.12 and requirements-scrape.txt
 The config: Sphinx "Lib" (output Lib), "Lib-Data" (Lib/lib-data, nested in
 Lib) and "tools" (its own top-level dir, like coremltools); GitHub "lib-lm"
 (two configured files, Lib/lib-lm) and "lib-swift" (a README plus the Docs
-directory, Lib-Swift/lib-swift).
+directory, Lib-Swift/lib-swift); web pages "site" (three configured pages,
+its own top-level dir Web, like App-Store).
 """
 
 import errno
@@ -24,7 +25,7 @@ pytest.importorskip("wafer", reason="needs wafer-py: Python 3.12 + requirements-
 import scrape_mlx_docs  # noqa: E402
 import utilities.source_policy as source_policy  # noqa: E402
 from fake_upstream import DROP, FakeUpstream, case_sensitive  # noqa: E402
-from scrape_mlx_docs import GitHubDocSource, SphinxDocSource  # noqa: E402
+from scrape_mlx_docs import GitHubDocSource, SphinxDocSource, WebPageSource  # noqa: E402
 
 # Lib: every way of spelling a page (directory, fragment, query, extensionless)
 LIB_PAGES = {
@@ -61,7 +62,10 @@ LIB_DOCS = {"Lib/index.md", "Lib/guide.md", "Lib/api/index.md", "Lib/api/funcs.m
 DATA_DOCS = {"Lib/lib-data/index.md", "Lib/lib-data/x.md"}
 TOOLS_DOCS = {"tools/index.md", "tools/a.md", "tools/b.md", "tools/c.md"}
 GITHUB_DOCS = set(GITHUB_FILES.values())
-ALL = LIB_DOCS | DATA_DOCS | TOOLS_DOCS | GITHUB_DOCS
+# The configured web pages (each links to another page of the site, never crawled)
+WEB_PAGES = {"guide/rules/": "Web/guide/rules.md", "privacy/": "Web/privacy.md", "data-use/": "Web/data-use.md"}
+WEB_DOCS = set(WEB_PAGES.values())
+ALL = LIB_DOCS | DATA_DOCS | TOOLS_DOCS | GITHUB_DOCS | WEB_DOCS
 
 
 def sphinx_sources(site: FakeUpstream) -> List[SphinxDocSource]:
@@ -82,6 +86,23 @@ GITHUB = [
 ]
 
 
+def web_sources(site: FakeUpstream) -> List[WebPageSource]:
+    return [WebPageSource(name="site", base_url=site.web_url(), output_dir="Web", framework="Web",
+                          pages=list(WEB_PAGES))]
+
+
+def web_html(title: str, body: str = "") -> str:
+    """A web page: its content in main, between the site's nav and footer;
+    by default a paragraph linking to another page of the site."""
+    content = body or f'<p>{title} text, see <a href="/web/other/">other</a>.</p>'
+    return (f'<html><body><nav><a href="/web/other/">Other</a></nav><main><h1>{title}</h1>{content}</main>'
+            '<footer>Footer</footer></body></html>')
+
+
+def web_key(site: FakeUpstream, path: str) -> str:
+    return f"site:{site.web_url(path)}"
+
+
 @pytest.fixture
 async def site(tmp_path: Path, monkeypatch: pytest.MonkeyPatch) -> AsyncIterator[FakeUpstream]:
     upstream = FakeUpstream()
@@ -92,6 +113,7 @@ async def site(tmp_path: Path, monkeypatch: pytest.MonkeyPatch) -> AsyncIterator
     monkeypatch.setattr(scrape_mlx_docs, "SPHINX_MAX_RETRIES", 0)
     monkeypatch.setattr(scrape_mlx_docs, "SPHINX_SOURCES", sphinx_sources(upstream))
     monkeypatch.setattr(scrape_mlx_docs, "GITHUB_SOURCES", list(GITHUB))
+    monkeypatch.setattr(scrape_mlx_docs, "WEB_SOURCES", web_sources(upstream))
     monkeypatch.setattr(source_policy, "GITHUB_RAW", f"{base}/raw")
     monkeypatch.setattr(source_policy, "GITHUB_API", f"{base}/api")
     monkeypatch.setattr(source_policy, "RETRY_BASE_DELAY", 0)
@@ -100,6 +122,8 @@ async def site(tmp_path: Path, monkeypatch: pytest.MonkeyPatch) -> AsyncIterator
             upstream.sphinx_page(f"{prefix}/{path}", f"{prefix} {path}", links)
     for (repo, path), _ in GITHUB_FILES.items():
         upstream.github_file(repo, path, f"# {path}\n\nFrom {repo}.\n")
+    for path in WEB_PAGES:
+        upstream.web_page(path, web_html(f"web {path}"))
     yield upstream
     await upstream.stop()
 
@@ -132,19 +156,20 @@ def key(site: FakeUpstream, source: str, path: str) -> str:
 async def test_a_new_render_version_renders_every_page_once(site: FakeUpstream,
                                                              monkeypatch: pytest.MonkeyPatch) -> None:
     """Stale behaves as --force; a blocked run keeps the stored version, a clean one stores it."""
+    version = scrape_mlx_docs.RENDER_VERSION
     assert await run() == 0
-    assert metadata()["render"] == {"version": scrape_mlx_docs.RENDER_VERSION}
+    assert metadata()["render"] == {"version": version}
     guide = scrape_mlx_docs.OUTPUT_BASE / "Lib" / "guide.md"
     readme = scrape_mlx_docs.OUTPUT_BASE / "Lib" / "lib-lm" / "README.md"
     for path in (guide, readme):
         path.write_text("# an older rendering\n")
-    monkeypatch.setattr(scrape_mlx_docs, "RENDER_VERSION", 2)
+    monkeypatch.setattr(scrape_mlx_docs, "RENDER_VERSION", version + 1)
     site.faults["/sphinx/tools/a.html"] = 502
     assert await run() == 1
-    assert metadata()["render"] == {"version": 1}
+    assert metadata()["render"] == {"version": version}
     site.faults.clear()
     assert await run() == 0
-    assert metadata()["render"] == {"version": 2}
+    assert metadata()["render"] == {"version": version + 1}
     assert all("an older rendering" not in path.read_text() for path in (guide, readme))
     before = scrape_mlx_docs.HASH_FILE.read_text()
     assert await run() == 0 and scrape_mlx_docs.HASH_FILE.read_text() == before
@@ -158,10 +183,10 @@ async def test_pages_the_storing_run_didnt_render_are_rendered_when_back(site: F
     keys = set(hash_file()["hashes"])
     for path in ALL:
         (scrape_mlx_docs.OUTPUT_BASE / path).write_text("# an older rendering\n")
-    monkeypatch.setattr(scrape_mlx_docs, "RENDER_VERSION", 2)
+    monkeypatch.setattr(scrape_mlx_docs, "RENDER_VERSION", scrape_mlx_docs.RENDER_VERSION + 1)
     site.sphinx_page("lib/index.html", "lib index.html", ("guide.html",))  # 6 of Lib's 12 files unlinked
     assert await run() == 0 and docs() == ALL and len(metadata()["pending_orphans"]) == 6
-    assert metadata()["render"] == {"version": 2}
+    assert metadata()["render"] == {"version": scrape_mlx_docs.RENDER_VERSION}
     hashes = hash_file()["hashes"]
     assert set(hashes) == keys and len([key for key in keys if hashes[key] == ""]) == 6
     site.sphinx_page("lib/index.html", "lib index.html", LIB_PAGES["index.html"])  # linked again, unchanged
@@ -182,7 +207,7 @@ async def test_full_scrape_normalizes_links(site: FakeUpstream) -> None:
     assert site.count("/sphinx/lib/") == 0 and site.count("/sphinx/lib/ops") == 0
     assert site.count("/sphinx/lib/genindex.html") == 0 and site.count("/sphinx/lib/logo.png") == 0
     assert metadata()["sources"] == {"Lib": "Lib", "Lib-Data": "Lib/lib-data", "tools": "tools",
-                                     "lib-lm": "Lib/lib-lm", "lib-swift": "Lib-Swift/lib-swift"}
+                                     "lib-lm": "Lib/lib-lm", "lib-swift": "Lib-Swift/lib-swift", "site": "Web"}
     assert "failure_counts" not in metadata() and "pending_orphans" not in metadata()
     assert len(hash_file()["hashes"]) == len(ALL)
 
@@ -813,7 +838,7 @@ async def test_unsafe_stored_sources_are_never_cleaned(site: FakeUpstream, tmp_p
     for _ in range(2):
         assert await run() == 0
         assert loose.exists() and (elsewhere / "keep.md").exists() and docs() == ALL
-    assert set(metadata()["sources"]) == {"Lib", "Lib-Data", "tools", "lib-lm", "lib-swift"}
+    assert set(metadata()["sources"]) == {"Lib", "Lib-Data", "tools", "lib-lm", "lib-swift", "site"}
     assert "pending_orphans" not in metadata()
 
 
@@ -910,6 +935,179 @@ async def test_doc_links_resolve_in_their_own_catalog(site: FakeUpstream, monkey
     assert "See <doc:memory>." in (out / "README.md").read_text()
 
 
+async def test_web_pages_are_fetched_one_by_one_never_crawled(site: FakeUpstream) -> None:
+    """Each configured page is fetched once and saved under its path without
+    the trailing slash, from its main; a link to another page of the site is
+    never followed. A page whose markdown is unchanged is skipped (no
+    hash-file churn), also when its HTML changed outside its content; a
+    changed one is rewritten."""
+    assert await run() == 0 and docs() == ALL
+    for path in WEB_PAGES:
+        assert site.count(f"/web/{path}") == 1, path
+    assert site.count("/web/other/") == 0
+    rules = (scrape_mlx_docs.OUTPUT_BASE / "Web/guide/rules.md").read_text()
+    assert rules.startswith(f"---\nsource: site\nframework: Web\nurl: {site.web_url('guide/rules/')}\n---\n")
+    assert "Footer" not in rules and f"[other]({site.web_url('other/')})" in rules  # made absolute
+    assert {web_key(site, path) for path in WEB_PAGES} <= set(hash_file()["hashes"])
+    before = scrape_mlx_docs.HASH_FILE.read_text()
+    site.web_page("data-use/", web_html("web data-use/").replace("<html>", '<html><script src="/x.js?2">'
+                                                                          '</script>'))
+    stats = await scrape_mlx_docs.scrape_all()
+    assert stats["exit_code"] == 0 and stats["downloaded"] == 0 and docs() == ALL
+    assert scrape_mlx_docs.HASH_FILE.read_text() == before
+    site.web_page("privacy/", web_html("web privacy/", "<p>Changed.</p>"))
+    stats = await scrape_mlx_docs.scrape_all()
+    assert stats["exit_code"] == 0 and stats["downloaded"] == 1
+    assert "Changed." in (scrape_mlx_docs.OUTPUT_BASE / "Web/privacy.md").read_text()
+
+
+async def test_a_web_page_404_x2_is_removed(site: FakeUpstream) -> None:
+    """A configured page is a source: its 1st 404 keeps it (source_gone_pending,
+    not an error), its 2nd removes it (source_gone); back, it is written again."""
+    assert await run() == 0
+    site.faults["/web/privacy/"] = 404
+    assert await run() == 0 and docs() == ALL
+    assert metadata()["failure_counts"] == {web_key(site, "privacy/"): {"gone": 1}}
+    assert await run() == 0  # 1 of Web's 3 files: deleted at once
+    assert docs() == ALL - {"Web/privacy.md"}
+    assert web_key(site, "privacy/") not in hash_file()["hashes"]
+    site.faults.clear()
+    assert await run() == 0 and docs() == ALL and "failure_counts" not in metadata()
+
+
+async def test_a_web_page_failing_is_kept_every_run(site: FakeUpstream) -> None:
+    """Any other failure keeps the page and its key every run, never reaching
+    D8 (source_fetch_failed, exit 1), while the rest is cleaned."""
+    assert await run() == 0
+    site.faults["/web/privacy/"] = 503
+    site.faults["/web/data-use/"] = DROP  # a connection error, never answered
+    site.sphinx_page("tools/index.html", "tools", ("a.html", "b.html"))  # c unlinked: a real removal
+    for run_number in range(1, source_policy.PERSISTENT_FAILURE_RUNS + 2):
+        assert await run() == 1, run_number
+        assert docs() == ALL - {"tools/c.md"}, run_number
+        assert {web_key(site, "privacy/"), web_key(site, "data-use/")} <= set(hash_file()["hashes"])
+    site.faults.clear()
+    assert await run() == 0 and docs() == ALL - {"tools/c.md"}
+
+
+async def test_a_web_page_failing_to_convert_keeps_its_file(site: FakeUpstream,
+                                                           monkeypatch: pytest.MonkeyPatch) -> None:
+    """A convert error is ours: the page keeps its file and blocks the cleanup."""
+    assert await run() == 0
+    site.web_page("privacy/", web_html("web privacy/", "<p>Changed.</p>"))
+    site.sphinx_page("tools/index.html", "tools", ("a.html", "b.html"))  # c unlinked: waits for the cleanup
+    convert = scrape_mlx_docs.html_to_markdown
+
+    def failing(html: str, source: Any, url: str) -> str:
+        if url == site.web_url("privacy/"):
+            raise ValueError("conversion bug")
+        return convert(html, source, url)
+
+    monkeypatch.setattr(scrape_mlx_docs, "html_to_markdown", failing)
+    assert await run() == 1 and docs() == ALL
+    assert metadata()["failure_counts"] == {web_key(site, "privacy/"): {"local": 1}}
+    monkeypatch.setattr(scrape_mlx_docs, "html_to_markdown", convert)
+    assert await run() == 0 and docs() == ALL - {"tools/c.md"} and "failure_counts" not in metadata()
+    assert "Changed." in (scrape_mlx_docs.OUTPUT_BASE / "Web/privacy.md").read_text()
+
+
+async def test_a_web_page_dropped_from_the_config(site: FakeUpstream, monkeypatch: pytest.MonkeyPatch) -> None:
+    """Its file is an orphan of its source's dir (1 of 3: deleted at once), its key pruned."""
+    assert await run() == 0
+    sources = web_sources(site)
+    sources[0].pages.remove("privacy/")
+    monkeypatch.setattr(scrape_mlx_docs, "WEB_SOURCES", sources)
+    assert await run() == 0 and docs() == ALL - {"Web/privacy.md"}
+    assert web_key(site, "privacy/") not in hash_file()["hashes"]
+
+
+async def test_a_web_source_dropped_from_the_config(site: FakeUpstream, monkeypatch: pytest.MonkeyPatch) -> None:
+    """As any dropped source: its own dir is all orphans, held one clean run,
+    deleted on the next with its keys and its metadata.sources entry."""
+    assert await run() == 0
+    monkeypatch.setattr(scrape_mlx_docs, "WEB_SOURCES", [])
+    assert await run() == 0 and docs() == ALL
+    assert metadata()["sources"]["site"] == "Web"
+    assert sorted(metadata()["pending_orphans"]) == sorted(WEB_DOCS)
+    assert await run() == 0 and docs() == ALL - WEB_DOCS
+    assert not (scrape_mlx_docs.OUTPUT_BASE / "Web").exists()
+    assert "site" not in metadata()["sources"] and "pending_orphans" not in metadata()
+    assert not any(k.startswith("site:") for k in hash_file()["hashes"])
+
+
+def test_web_page_paths(tmp_path: Path, monkeypatch: pytest.MonkeyPatch) -> None:
+    monkeypatch.setattr(scrape_mlx_docs, "OUTPUT_BASE", tmp_path)
+    source = WebPageSource(name="X", base_url="https://h.test/app-store/", output_dir="X", framework="X",
+                           pages=["review/guidelines/", "app-privacy-details/", "terms.html"])
+    assert scrape_mlx_docs.web_page_paths(source) == {
+        "https://h.test/app-store/review/guidelines/": tmp_path / "X/review/guidelines.md",
+        "https://h.test/app-store/app-privacy-details/": tmp_path / "X/app-privacy-details.md",
+        "https://h.test/app-store/terms.html": tmp_path / "X/terms.md",
+    }
+    # Outside the base URL, the base URL itself, two pages on one file (in any casing)
+    for pages in (["../other/"], ["https://elsewhere.test/x/"], ["//elsewhere.test/x/"], [""], ["./"],
+                  ["Review/", "review/"]):
+        with pytest.raises(ValueError):
+            scrape_mlx_docs.web_page_paths(WebPageSource(name="X", base_url=source.base_url, output_dir="X",
+                                                         framework="X", pages=pages))
+
+
+def test_the_configured_sources() -> None:
+    """The real config loads (unique names, valid web pages); the App Store pages' files."""
+    assert scrape_mlx_docs.configured_sources()["App-Store"] == "App-Store"
+    (app_store,) = scrape_mlx_docs.WEB_SOURCES
+    assert {path.relative_to(scrape_mlx_docs.OUTPUT_BASE).as_posix()
+            for path in scrape_mlx_docs.web_page_paths(app_store).values()} == {
+        "App-Store/review/guidelines.md", "App-Store/app-privacy-details.md",
+        "App-Store/user-privacy-and-data-use.md"}
+
+
+WEB_PAGE = """<html><body><nav><a href="/app-store/">App Store</a></nav><main>
+<header><h1>Review Rules</h1><p>Read them all.</p></header>
+<h3 id="intro">Introduction</h3>
+<p>See the <a href="/app-store/privacy/">privacy page</a>, <a href="#safety">safety</a> and
+<a href="//cdn.example/x">the CDN</a>.</p>
+<h3 id="safety"><span id="1"></span>1.<span><img alt="key" src="/app-store/key.svg"/></span> Safety</h3>
+<ul>
+<li id="1.1"><strong>1.1 Content</strong>
+<p>Apps should not include:</p>
+<ul><li><strong>1.1.1</strong> Mean content.</li>
+<li><strong>1.1.2</strong> Violence.</li></ul>
+Unless it is satire.</li>
+<li><strong>1.2 Info</strong>
+<p>Include a way to contact you.</p></li>
+<li><strong>1.3 Kids</strong><p>First rule.</p><p>Second rule.</p></li>
+<li>A plain item, <a href="/help/">help</a>.</li>
+</ul>
+<h4>Notes</h4>
+<p>Last.</p>
+</main><footer>Copyright</footer></body></html>"""
+
+
+def test_web_page_conversion() -> None:
+    source = WebPageSource(name="X", base_url="https://h.test/app-store/", output_dir="X", framework="X")
+    url = "https://h.test/app-store/review/guidelines/"
+    markdown = scrape_mlx_docs.html_to_markdown(WEB_PAGE, source, url)
+    assert markdown.startswith(f"---\nsource: X\nframework: X\nurl: {url}\n---\n")
+    body = markdown.split("---\n", 2)[2]
+    # The main only; the title with a plain space
+    assert "App Store" not in body and "Copyright" not in body
+    assert body.startswith("\n# Review Rules\n\nRead them all.\n")
+    # h3 sections become ## (the indexer splits a large page at ##), the levels below follow;
+    # a heading's words kept apart
+    assert [line for line in body.split("\n") if line.startswith("#")] == [
+        "# Review Rules", "## Introduction", "## 1. Safety", "### Notes"]
+    # Links from the host's root made absolute; a fragment kept
+    assert ("See the [privacy page](https://h.test/app-store/privacy/), [safety](#safety) and\n"
+            "[the CDN](https://cdn.example/x).") in body
+    # An item of several blocks: its title, text, nested list and trailing text each a paragraph
+    assert ("- **1.1 Content**\n\n  Apps should not include:\n\n  - **1.1.1** Mean content.\n"
+            "  - **1.1.2** Violence.\n\n  Unless it is satire.\n\n"
+            "- **1.2 Info**\n\n  Include a way to contact you.\n\n"
+            "- **1.3 Kids**\n\n  First rule.\n\n  Second rule.\n\n"
+            "- A plain item, [help](https://h.test/help/).\n") in body
+
+
 SPHINX_PAGE = """<html><body><main>
 <div class="header"><a href="../_sources/api/page.rst">.rst</a>
 <ul><li><button>System Settings</button></li><li><button>Light</button></li></ul></div>
@@ -970,6 +1168,47 @@ def test_sphinx_conversion() -> None:
     assert not [line for line in body.split("\n") if line.startswith("# ") and line != "# mlx.core.thing"]
 
 
+def test_sphinx_lists_headings_and_links() -> None:
+    """A Sphinx item's nested list keeps its items (they ran into the item's
+    text before), and a heading's words are kept apart around its code. A
+    link that can't point to one of our docs is made absolute (from the
+    host's root; a skipped page, a file); a page's [source] link goes."""
+    page = """<html><body><article><h1>Guide</h1>
+<h2>Using <code class="docutils literal"><span class="pre">nn.average</span></code> well<a class="headerlink"
+href="#using">¶</a></h2>
+<ol><li><p>Download the assets:</p>
+<ul><li><p>The utilities</p></li><li><p>The weights</p></li></ul>
+</li><li><p>Install it.</p></li></ol>
+<p>See <a href="/doc/html/index.html">the root</a>, <a href="../genindex.html">the index</a>,
+<a href="../_downloads/x.py">the script</a> and <a href="ops.html#add">add</a>.</p>
+<dl><dt>average(<em>x</em>)<a class="reference internal" href="../_modules/nn.html#average"><span
+class="viewcode-link"><span class="pre">[source]</span></span></a></dt><dd><p>Averages.</p></dd></dl>
+</article></body></html>"""
+    source = SphinxDocSource(name="X", base_url="https://h.test/doc/html/", output_dir="X", framework="X",
+                             skip_paths=["genindex.html", "_modules/"])
+    markdown = scrape_mlx_docs.html_to_markdown(page, source, "https://h.test/doc/html/usage/guide.html")
+    body = markdown.split("---\n", 2)[2]
+    assert "\n## Using nn.average well\n" in body
+    assert "1. Download the assets:\n\n   - The utilities\n   - The weights\n\n2. Install it.\n" in body
+    assert ("See [the root](https://h.test/doc/html/index.html), [the index](https://h.test/doc/html/genindex.html),\n"
+            "[the script](https://h.test/doc/html/_downloads/x.py) and [add](ops.md#add).") in body
+    assert "\n**average(*x*)**\n: Averages.\n" in body and "[source]" not in body and "_modules" not in body
+
+
+def test_a_list_item_with_a_table_keeps_the_table() -> None:
+    """A list item holding a paragraph and a table is converted block by block:
+    inline conversion would run the table's cells into the item's text."""
+    page = """<html><body><article><h1>Guide</h1>
+<ul><li><p>The options:</p>
+<table><thead><tr><th>Name</th><th>Use</th></tr></thead><tbody><tr><td>fast</td><td>speed</td></tr></tbody></table>
+</li></ul>
+</article></body></html>"""
+    source = SphinxDocSource(name="X", base_url="https://h.test/doc/html/", output_dir="X", framework="X")
+    body = scrape_mlx_docs.html_to_markdown(page, source, "https://h.test/doc/html/guide.html").split("---\n", 2)[2]
+    assert "- The options:\n\n  | Name | Use |" in body
+    assert "| fast | speed |" in body
+
+
 def test_link_normalization() -> None:
     source = SphinxDocSource(name="X", base_url="https://h.test/doc/html/", output_dir="X",
                              skip_paths=["genindex.html"])
@@ -984,6 +1223,8 @@ def test_link_normalization() -> None:
         "../..": None,  # outside the base
         "https://h.test/doc/html": "https://h.test/doc/html/index.html",
         "../genindex.html#A": None,
+        "genindex.html": None,  # a skip path matches where a segment starts, at any depth
+        "mlx.data.CharTrie.genindex.html": "https://h.test/doc/html/api/mlx.data.CharTrie.genindex.html",
         "#top": None,
         "mailto:a@b.c": None,
         "img.png": None,
